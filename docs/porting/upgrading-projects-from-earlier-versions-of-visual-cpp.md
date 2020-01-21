@@ -17,23 +17,23 @@ If you choose **Yes**, then the project gets converted. It can't be converted ba
 
 When you upgrade a project, you get an upgrade report. The report is also saved in your project folder as UpgradeLog.htm. The upgrade report shows a summary of what problems were found during conversion. It lists some information about changes that were made, including:
 
-1. Project properties.
+- Project properties.
 
-1. Include files.
+- Include files.
 
-1. Code that no longer compiles cleanly due to compiler conformance improvements or changes in the standard.
+- Code that no longer compiles cleanly due to compiler conformance improvements or changes in the standard.
 
-1. Code that relies on Visual Studio or Windows features that are no longer available. Or, header files that either aren't included in a default installation of Visual Studio, or were removed from the product.
+- Code that relies on Visual Studio or Windows features that are no longer available. Or, header files that either aren't included in a default installation of Visual Studio, or were removed from the product.
 
-1. Code that no longer compiles due to changes in APIs such as renamed APIs, changed function signatures, or deprecated functions.
+- Code that no longer compiles due to changes in APIs such as renamed APIs, changed function signatures, or deprecated functions.
 
-1. Code that no longer compiles because of changes in diagnostics, such as a warning becoming an error
+- Code that no longer compiles because of changes in diagnostics, such as a warning becoming an error
 
-1. Linker errors due to libraries that were changed, especially when /NODEFAULTLIB is used.
+- Linker errors due to libraries that were changed, especially when /NODEFAULTLIB is used.
 
-1. Runtime errors or unexpected results because of behavior changes.
+- Runtime errors or unexpected results because of behavior changes.
 
-1. Errors that were introduced in the tools. If you find an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) page.
+- Errors that were introduced in the tools. If you find an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) page.
 
 Some upgraded projects and solutions can be built successfully without modification. However, most projects will likely require changes to both project settings and your source code. There's no single correct way to go about fixing these issues, but we recommend using a phased approach. Before you start, review [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md) for more information on many kinds of common errors.
 
@@ -47,7 +47,7 @@ Some upgraded projects and solutions can be built successfully without modificat
 
 1. Fix any remaining errors that prevent compilation. Refer to [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md) for fixes for common errors.
 
-1. Turn **permissive-** back on and fix any new errors caused by non-conformant code that previously compiled in MSVC.
+1. Turn **/permissive-** back on and fix any new errors caused by non-conformant code that previously compiled in MSVC.
 
 1. Turn on code analysis to identify potential problems or outdated coding patterns that are no longer considered acceptable. If code analysis flags many errors, you can turn off some of the warnings to focus on the most important ones first. The IDE can help with Quick Fixes for some kinds of issues.
 
