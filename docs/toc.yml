@@ -692,6 +692,8 @@
                           href: build/reference/qifist-suppress-ftol.md
                         - name: /Qimprecise_fwaits (Remove fwaits inside try blocks)
                           href: build/reference/qimprecise-fwaits-remove-fwaits-inside-try-blocks.md
+                        - name: /QIntel-jcc-erratum
+                          href: build/reference/qintel-jcc-erratum.md
                         - name: /Qpar (Auto-parallelizer)
                           href: build/reference/qpar-auto-parallelizer.md
                         - name: /Qpar-report (Auto-parallelizer reporting level)
