@@ -7,7 +7,7 @@ ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
 ---
 # How to: Use the Windows 10 SDK in a Windows Desktop application
 
-When you create a new classic Windows desktop project in Visual Studio, it targets the Windows 10 SDK by default. Visual Studio installs a version of the Windows 10 SDK when you install the C++ Desktop workload. This version of the Windows SDK is compatible with Windows 7 SP1 and later. For more information about targeting specific versions of Windows, see [Using the Windows Headers](/windows/win32/WinProg/using-the-windows-headers).
+When you create a new classic Windows desktop project in Visual Studio, it targets the Windows 10 SDK by default. Visual Studio installs a version of this SDK when you install the C++ Desktop workload. The Windows 10 SDK supports writing code for Windows 7 SP1 and later. For more information about targeting specific versions of Windows, see [Using the Windows Headers](/windows/win32/WinProg/using-the-windows-headers) and [Update WINVER and _WIN32_WINNT](../porting/modifying-winver-and-win32-winnt.md).
 
 When you upgrade an existing project, you have a choice: You can keep using the target Windows SDK specified in your project. Or, you can retarget your project to use the Windows 10 SDK. With the Windows 10 SDK, you get the advantages of support for the latest operating systems and language standards.
 
