@@ -25,7 +25,7 @@ Specifies that the compiler generates instructions to mitigate the performance i
 
 Under **/QIntel-jcc-erratum**, the compiler detects jump and macro-fused jump instructions that cross or end on a 32-byte boundary. It aligns these instructions to the boundary. This change mitigates the performance impact of microcode updates that prevent the JCC erratum in certain Intel processors. For more information about the erratum, see [Mitigations for Jump Conditional Code Erratum](https://www.intel.com/content/dam/support/us/en/documents/processors/mitigations-jump-conditional-code-erratum.pdf) on the Intel website.
 
-The **/QIntel-jcc-erratum** option is available in Visual Studio 2019 version 16.5 and later. This option is only available in compilers that target x86 and x64. It isn't available in compilers that target ARM.
+The **/QIntel-jcc-erratum** option is available in Visual Studio 2019 version 16.5 and later. This option is only available in compilers that target x86 and x64. The option isn't available in compilers that target ARM processors.
 
 The **/QIntel-jcc-erratum** option is off by default, and works only in optimized builds. This option can increase code size.
 
