@@ -15,7 +15,7 @@ The **/DEPENDENTLOADFLAG** option requires Visual Studio 2017 or later.
 
 ::: moniker range=">=vs-2017"
 
-Sets the default load flags used when the imports of the module are resolved.
+Sets the default load flags used when the operating system resolves the statically linked imports of a module.
 
 ## Syntax
 
@@ -24,13 +24,15 @@ Sets the default load flags used when the imports of the module are resolved.
 ### Arguments
 
 *load_flags*<br/>
-An optional integer value that specifies the load flags to apply when resolving import dependencies of the module. The default value is 0. For a list of supported flag values, see the `LOAD_LIBRARY_SEARCH_*` entries in [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw).
+An optional integer value that specifies the load flags to apply when resolving statically linked import dependencies of the module. The default value is 0. For a list of supported flag values, see the `LOAD_LIBRARY_SEARCH_*` entries in [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw).
 
 ## Remarks
 
-When the operating system resolves the imports of a module, it uses the [default search order](/windows/win32/dlls/dynamic-link-library-search-order). This behavior is similar to the behavior of [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya). Use the **/DEPENDENTLOADFLAG** option to specify a *load_flags* value that changes the search path used to resolve imports. On supported operating systems, it makes import resolution behave more like [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa) when using the *load_flags* parameter. For information on the search order set by *load_flags*, see [Search order using LOAD_LIBRARY_SEARCH flags](/windows/win32/dlls/dynamic-link-library-search-order#search-order-using-load_library_search-flags).
+When the operating system resolves the statically linked imports of a module, it uses the [default search order](/windows/win32/dlls/dynamic-link-library-search-order). Use the **/DEPENDENTLOADFLAG** option to specify a *load_flags* value that changes the search path used to resolve these imports. On supported operating systems, it changes the static import resolution search order, similar to what [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa) does when using `LOAD_LIBRARY_SEARCH` parameters. For information on the search order set by *load_flags*, see [Search order using LOAD_LIBRARY_SEARCH flags](/windows/win32/dlls/dynamic-link-library-search-order#search-order-using-load_library_search-flags).
 
-This flag can be used to make [DLL planting attacks](/windows/win32/dlls/dynamic-link-library-security) more difficult. For example, consider an app that imports a dependent DLL by name. An attacker could plant a DLL with the same name earlier in the import resolution search path, such as the application directory. If you specify the link option `/DEPENDENTLOADFLAG:0x800` (the value of the flag `LOAD_LIBRARY_SEARCH_SYSTEM32`), then the module search path is limited to the %windows%\system32 directory. Protected directories are more difficult - but not impossible - for an attacker to change. For more information, see [Dynamic-Link Library Security](/windows/win32/dlls/dynamic-link-library-security).
+This flag can be used to make [DLL planting attacks](/windows/win32/dlls/dynamic-link-library-security) more difficult. For example, consider an app that has static imports from a DLL. An attacker could plant a DLL with the same name earlier in the import resolution search path, such as the application directory. If you specify the link option `/DEPENDENTLOADFLAG:0x800` (the value of the flag `LOAD_LIBRARY_SEARCH_SYSTEM32`), then the module search path is limited to the %windows%\system32 directory. Protected directories are more difficult - but not impossible - for an attacker to change. For more information, see [Dynamic-Link Library Security](/windows/win32/dlls/dynamic-link-library-security).
+
+To see the value set by the **/DEPENDENTLOADFLAG** option in any DLL, use the [DUMPBIN](dumpbin-reference.md) command with the [/LOADCONFIG](loadconfig.md) option.
 
 The **/DEPENDENTLOADFLAG** option is new in Visual Studio 2017. It applies only to apps running on Windows 10 RS1 and later versions. This option is ignored by other operating systems that run the app.
 
