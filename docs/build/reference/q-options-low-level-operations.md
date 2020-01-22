@@ -1,6 +1,6 @@
 ---
 title: "/Q Options (Low-Level Operations)"
-ms.date: "01/23/2018"
+ms.date: "01/08/2020"
 f1_keywords: ["/q"]
 helpviewer_keywords: ["Q compiler option [C++]", "-Q compiler option [C++]", "/Q compiler option [C++]"]
 ---
@@ -13,6 +13,8 @@ You can use the **/Q** compiler options to perform the following low-level compi
 - [/QIfist (Suppress _ftol)](qifist-suppress-ftol.md): Suppresses `_ftol` when a conversion from a floating-point type to an integer type is required (x86 only).
 
 - [/Qimprecise_fwaits (Remove fwaits Inside Try Blocks)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): Removes `fwait` commands inside `try` blocks.
+
+- [/QIntel-jcc-erratum](qintel-jcc-erratum.md): Mitigates the performance impact caused by the Intel Jump Conditional Code (JCC) erratum microcode update.
 
 - [/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md): Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive.
 
