@@ -95,7 +95,7 @@ A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B
        }
    }
 
-   void main() {
+   int main() {
        MultiplyWithOutAMP();
        getchar();
    }
@@ -158,7 +158,7 @@ A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B
 1. Modify the `main` method to call the `MultiplyWithAMP` method.
 
    ```cpp
-   void main() {
+   int main() {
        MultiplyWithOutAMP();
        MultiplyWithAMP();
        getchar();
@@ -302,7 +302,7 @@ To implement this algorithm, the code:
 1. Modify the main method to call the `MultiplyWithTiling` method, as shown.
 
    ```cpp
-   void main() {
+   int main() {
        MultiplyWithOutAMP();
        MultiplyWithAMP();
        MultiplyWithTiling();

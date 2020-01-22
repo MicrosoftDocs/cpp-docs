@@ -114,7 +114,7 @@ The **wcsrtombs_s** function is multithread safe as long as no function in the c
 
 #define MB_BUFFER_SIZE 100
 
-void main()
+int main()
 {
     const wchar_t   wcString[] =
                     {L"Every good boy does fine."};

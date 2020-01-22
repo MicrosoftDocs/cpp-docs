@@ -128,7 +128,7 @@ void TilingDescription() {
     }
 }
 
-void main() {
+int main() {
     TilingDescription();
     char wait;
     std::cin >> wait;

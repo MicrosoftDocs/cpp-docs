@@ -48,7 +48,7 @@ Non-exported names are not visible to code that imports the module:
 
 import module ModuleA;
 
-void main() {
+int main() {
   Bar::f(); // OK
   Bar::d(); // OK
   Bar::internal_f(); // Ill-formed: error C2065: 'internal_f': undeclared identifier
