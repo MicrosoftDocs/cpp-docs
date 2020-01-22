@@ -1,12 +1,13 @@
 ---
-title: "this Pointer"
-ms.date: "11/04/2016"
+title: "this pointer"
+description: "The this pointer is a compiler-generated pointer to the current object in nonstatic member functions."
+ms.date: "01/22/2020"
 f1_keywords: ["this_cpp"]
 helpviewer_keywords: ["nonstatic member functions [C++]", "pointers, to class instance", "this pointer"]
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
 no-loc: [this, class, struct, union, sizeof, const, volatile]
 ---
-# this Pointer
+# this pointer
 
 The **this** pointer is a pointer accessible only within the nonstatic member functions of a **class**, **struct**, or **union** type. It points to the object for which the member function is called. Static member functions don't have a **this** pointer.
 
