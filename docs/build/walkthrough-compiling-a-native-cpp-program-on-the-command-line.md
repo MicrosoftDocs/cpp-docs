@@ -68,7 +68,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
    ```cpp
    #include <iostream>
    using namespace std;
-   void main()
+   int main()
    {
        cout << "Hello, world, from Visual C++!" << endl;
    }

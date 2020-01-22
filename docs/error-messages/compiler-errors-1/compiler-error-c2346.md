@@ -37,7 +37,7 @@ struct S
    virtual __clrcall ~S() { }
 };
 
-void main()
+int main()
 {
    S s;
 }
