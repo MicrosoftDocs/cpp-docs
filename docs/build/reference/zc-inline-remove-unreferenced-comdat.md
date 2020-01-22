@@ -7,7 +7,7 @@ ms.assetid: a4c94224-1d73-4bea-a9d5-4fa73dc924df
 ---
 # /Zc:inline (Remove unreferenced COMDAT)
 
-Removes unreferenced functions or data that are COMDATs or only have internal linkage. When **/Zc:inline** is specified, the compiler requires that translation units that use inline data or inline functions must also include the definitions for the data or functions.
+Removes unreferenced data or functions that are COMDATs, or that only have internal linkage. Under **/Zc:inline**, the compiler specifies that translation units with inline data or functions must also include their definitions.
 
 ## Syntax
 
@@ -15,9 +15,9 @@ Removes unreferenced functions or data that are COMDATs or only have internal li
 
 ## Remarks
 
-When **/Zc:inline** is specified, the compiler does not emit symbol information for unreferenced COMDAT functions or data, or for functions or data that have internal linkage only. This optimization simplifies some of the work performed by the linker in release builds or when the linker option [/OPT:REF](opt-optimizations.md) is specified. When the compiler performs this optimization, it can significantly reduce .obj file size and improve linker speeds. This compiler option is not enabled when optimizations are disabled ([/Od](od-disable-debug.md)) or when [/GL (Whole Program Optimization)](gl-whole-program-optimization.md) is specified.
+When **/Zc:inline** is specified, the compiler doesn't emit symbol information for unreferenced COMDAT functions or data. Or, for data or functions that have internal linkage only. This optimization simplifies some of the work the linker does in release builds, or when you specify the [/OPT:REF](opt-optimizations.md) linker option. This compiler optimization can significantly reduce .obj file size and improve linker speeds. The compiler option isn't enabled when you disable optimizations ([/Od](od-disable-debug.md)). Or, when you specify [/GL (Whole Program Optimization)](gl-whole-program-optimization.md).
 
-By default, this option is off (**/Zc:inline-**) in command-line builds. The [/permissive-](permissive-standards-conformance.md) option does not enable **/Zc:inline**. In MSBuild projects, the option is set by the **Configuration Properties** > **C/C++** > **Language** > **Remove unreferenced code and data** property, which is set to **Yes** by default.
+By default, this option is off (**/Zc:inline-**) in command-line builds. The [/permissive-](permissive-standards-conformance.md) option doesn't enable **/Zc:inline**. In MSBuild projects, the option is set by the **Configuration Properties** > **C/C++** > **Language** > **Remove unreferenced code and data** property, which is set to **Yes** by default.
 
 If **/Zc:inline** is specified, the compiler enforces the C++11 requirement that all functions declared `inline` must have a definition available in the same translation unit if they are used. When the option is not specified, the Microsoft compiler allows non-conformant code that invokes functions declared `inline` even if no definition is visible. For more information, see the C++11 standard, in section 3.2 and section 7.1.2. This compiler option was introduced in Visual Studio 2013 Update 2.
 

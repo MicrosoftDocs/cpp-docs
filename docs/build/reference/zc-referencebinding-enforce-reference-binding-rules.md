@@ -7,7 +7,7 @@ ms.assetid: 0c6cfaac-9c2a-41a3-aa94-64ca8ef261fc
 ---
 # /Zc:referenceBinding (Enforce reference binding rules)
 
-When the **/Zc:referenceBinding** option is specified, the compiler does not allow a non-const lvalue reference to bind to a temporary.
+When the **/Zc:referenceBinding** option is specified, the compiler doesn't allow a non-const lvalue reference to bind to a temporary.
 
 ## Syntax
 
@@ -15,7 +15,7 @@ When the **/Zc:referenceBinding** option is specified, the compiler does not all
 
 ## Remarks
 
-If **/Zc:referenceBinding** is specified, the compiler follows section 8.5.3 of the C++11 standard and does not allow expressions that bind a user-defined type temporary to a non-const lvalue reference. By default, or if **/Zc:referenceBinding-** is specified, the compiler allows such expressions as a Microsoft extension, but a level 4 warning is issued. For code security, portability and conformance, we recommend that you use **/Zc:referenceBinding**.
+If **/Zc:referenceBinding** is specified, the compiler follows section 8.5.3 of the C++11 standard: It doesn't allow expressions that bind a user-defined type temporary to a non-const lvalue reference. By default, or if **/Zc:referenceBinding-** is specified, the compiler allows such expressions as a Microsoft extension, but a level 4 warning is issued. For code security, portability and conformance, we recommend you use **/Zc:referenceBinding**.
 
 The **/Zc:referenceBinding** option is off by default. The [/permissive-](permissive-standards-conformance.md) compiler option implicitly sets this option, but it can be overridden by using **/Zc:referenceBinding-**.
 
