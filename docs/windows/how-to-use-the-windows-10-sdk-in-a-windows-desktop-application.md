@@ -1,11 +1,11 @@
 ---
-title: "How to: Use the Windows 10 SDK in a Windows Desktop Application"
+title: "How to: Use the Windows 10 SDK in a Windows Desktop application"
 description: "How to set the target SDK version in a Windows Desktop application project to use the Windows 10 SDK."
 ms.custom: "get-started-article"
 ms.date: "01/22/2020"
 ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
 ---
-# How to: Use the Windows 10 SDK in a Windows Desktop Application
+# How to: Use the Windows 10 SDK in a Windows Desktop application
 
 When you create a new classic Windows desktop project in Visual Studio, it targets the Windows 10 SDK by default. Visual Studio installs a version of the Windows 10 SDK when you install the C++ Desktop workload. This version of the Windows SDK is compatible with Windows 7 SP1 and later. For more information about targeting specific versions of Windows, see [Using the Windows Headers](/windows/win32/WinProg/using-the-windows-headers).
 
@@ -17,7 +17,7 @@ Starting with Visual Studio 2015, the C Runtime (CRT) library was separated into
 
 The UCRT is now a system component that's installed on every version of Windows 10. It's also available as an installable component for all earlier supported versions of Windows. You can use the Windows 10 SDK to target all the supported versions of Windows. For a complete list of supported operating systems, see [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-To update your projects to use the UCRT when you upgrade from a project version before Visual Studio 2015, follow these steps:
+To retarget your projects to use the Windows 10 SDK when you upgrade from a project version before Visual Studio 2015, follow these steps:
 
 ### To target the Windows 10 SDK
 
@@ -35,7 +35,7 @@ To update your projects to use the UCRT when you upgrade from a project version 
 
    `Retargeting End: 1 completed, 0 failed, 0 skipped`
 
-1. Open the project properties, and in the **Configuration Properties, General** section, notice the values of **Windows Target Platform Version**. Changing the value here has the same effect as following this procedure. See [General Property Page (Project)](../build/reference/general-property-page-project.md).
+1. Open the project properties dialog. In the **Configuration Properties** > **General** section, notice the values of **Windows Target Platform Version**. Changing the value here has the same effect as following this procedure. For more information, see [General Property Page (Project)](../build/reference/general-property-page-project.md).
 
    ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
 
@@ -47,9 +47,7 @@ To update your projects to use the UCRT when you upgrade from a project version 
 
    ![Windows SDK Macros](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
 
-1. Repeat for other solution projects, as needed, and rebuild the solution.
-
-You can also *target*, or use, an earlier version of the SDK in a project. Open **Project** > **Properties**. Choose from the other SDK versions available on your computer in the **Windows SDK Version** dropdown.
+1. Repeat the retargeting procedure for other solution projects, as needed, and rebuild the solution.
 
 ### To target the Windows 8.1 SDK
 
