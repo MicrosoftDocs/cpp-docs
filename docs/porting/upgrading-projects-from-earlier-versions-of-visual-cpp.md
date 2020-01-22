@@ -9,9 +9,9 @@ ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 
 To upgrade a project created in an earlier version of Visual Studio, just open the project in the latest version of Visual Studio. Visual Studio offers to upgrade the project to the current schema.
 
-If you choose **No**, the project doesn't get upgraded. You can still use the project in the newer version of Visual Studio, though. Just set your project properties to continue to target the older toolset. If you leave the older version of Visual Studio on your computer, its toolset is available in later versions. For example, if your project must continue to run on Windows XP, you can upgrade to Visual Studio 2019. You then specify the toolset as v141 or earlier in your project properties. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
+If you choose **No**, the project doesn't get upgraded. For projects created in Visual Studio 2010 and later, you can still use the project in the newer version of Visual Studio. Just set your project properties to continue to target the older toolset. If you leave the older version of Visual Studio on your computer, its toolset is available in later versions. For example, if your project must continue to run on Windows XP, you can upgrade to Visual Studio 2019. You then specify the toolset as v141_xp or earlier in your project properties. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
 
-If you choose **Yes**, then the project gets converted. It can't be converted back to the earlier version. In upgrade scenarios, that's why it's good practice to make a copy of the existing project and solution files.
+If you choose **Yes**, then the project gets upgraded in place. It can't be converted back to the earlier version. In upgrade scenarios, that's why it's good practice to make a backup copy of the existing project and solution files.
 
 ## Upgrade reports
 
@@ -21,15 +21,15 @@ When you upgrade a project, you get an upgrade report. The report is also saved 
 
 - Include files.
 
-- Code that no longer compiles cleanly due to compiler conformance improvements or changes in the standard.
+- Code that no longer compiles cleanly because of compiler conformance improvements or changes in the standard.
 
 - Code that relies on Visual Studio or Windows features that are no longer available. Or, header files that either aren't included in a default installation of Visual Studio, or were removed from the product.
 
-- Code that no longer compiles due to changes in APIs such as renamed APIs, changed function signatures, or deprecated functions.
+- Code that no longer compiles because of changes in APIs such as renamed APIs, changed function signatures, or deprecated functions.
 
 - Code that no longer compiles because of changes in diagnostics, such as a warning becoming an error
 
-- Linker errors due to libraries that were changed, especially when /NODEFAULTLIB is used.
+- Linker errors because of libraries that were changed, especially when /NODEFAULTLIB is used.
 
 - Runtime errors or unexpected results because of behavior changes.
 
