@@ -57,7 +57,7 @@ Attributes represent a standardized alternative to vendor-specific extensions su
 - `[[gsl::suppress(rules)]]` This Microsoft-specific attribute is used for suppressing warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. For example, consider this code snippet:
 
     ```cpp
-    void main()
+    int main()
     {
         int arr[10]; // GSL warning 26494 will be fired
         int* p = arr; // GSL warning 26485 will be fired
@@ -78,3 +78,4 @@ Attributes represent a standardized alternative to vendor-specific extensions su
   - 26481 (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
 
   The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing [[gsl::suppress(bounds)]] without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they are not wanted.
+  

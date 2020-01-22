@@ -37,7 +37,7 @@ struct Derived : Base
     }
 };
 
-void main()
+int main()
 {
     Derived d;
     Base* p = &d;

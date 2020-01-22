@@ -35,7 +35,7 @@ S g() {
     return S{};
 }
 
-void main() {
+int main() {
     S& s = g();         // warning C4239 at /W4
     const S& cs = g();  // okay, bound to const ref
     f(g());             // Extension: error C2664 only if /Zc:referenceBinding

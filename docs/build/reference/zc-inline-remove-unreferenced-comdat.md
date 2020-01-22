@@ -59,7 +59,7 @@ void Example::normal_call() {
 // Compile by using: cl /W4 /EHsc /O2 zcinline.cpp example.cpp
 #include "example.h"
 
-void main() {
+int main() {
    Example example;
    example.inline_call(); // normal call when definition unavailable
 }
@@ -101,7 +101,7 @@ void Example2::normal_call() {
 // Compile by using: cl /W4 /EHsc /O2 zcinline2.cpp example2.cpp
 #include "example2.h"
 
-void main() {
+int main() {
    Example2 example2;
    example2.inline_call(); // normal call when definition unavailable
 }
