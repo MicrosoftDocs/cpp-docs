@@ -30,7 +30,13 @@ An optional integer value that specifies the load flags to apply when resolving 
 
 When the operating system resolves the statically linked imports of a module, it uses the [default search order](/windows/win32/dlls/dynamic-link-library-search-order). Use the **/DEPENDENTLOADFLAG** option to specify a *load_flags* value that changes the search path used to resolve these imports. On supported operating systems, it changes the static import resolution search order, similar to what [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa) does when using `LOAD_LIBRARY_SEARCH` parameters. For information on the search order set by *load_flags*, see [Search order using LOAD_LIBRARY_SEARCH flags](/windows/win32/dlls/dynamic-link-library-search-order#search-order-using-load_library_search-flags).
 
-This flag can be used to make one [DLL planting attack](/windows/win32/dlls/dynamic-link-library-security) vector more difficult. For example, consider an app that has static imports from a DLL. An attacker could plant a DLL with the same name earlier in the import resolution search path, such as the application directory. If you specify the link option `/DEPENDENTLOADFLAG:0x800` (the value of the flag `LOAD_LIBRARY_SEARCH_SYSTEM32`), then the module search path is limited to the %windows%\system32 directory. Protected directories are more difficult - but not impossible - for an attacker to change. For more information, see [Dynamic-Link Library Security](/windows/win32/dlls/dynamic-link-library-security).
+This flag can be used to make one [DLL planting attack](/windows/win32/dlls/dynamic-link-library-security) vector more difficult. For example, consider an app that has statically linked a DLL:
+
+- An attacker could plant a DLL with the same name earlier in the import resolution search path, such as the application directory. Protected directories are more difficult - but not impossible - for an attacker to change.
+
+- If the DLL is missing from the application, %windows%\system32, and %windows% directories, import resolution falls through to the current directory. An attacker could plant a DLL there.
+
+In both cases, if you specify the link option `/DEPENDENTLOADFLAG:0x800` (the value of the flag `LOAD_LIBRARY_SEARCH_SYSTEM32`), then the module search path is limited to the %windows%\system32 directory. It offers some protection from planting attacks on the other directories. For more information, see [Dynamic-Link Library Security](/windows/win32/dlls/dynamic-link-library-security).
 
 To see the value set by the **/DEPENDENTLOADFLAG** option in any DLL, use the [DUMPBIN](dumpbin-reference.md) command with the [/LOADCONFIG](loadconfig.md) option.
 
