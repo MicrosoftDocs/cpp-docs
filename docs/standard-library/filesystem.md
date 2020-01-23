@@ -14,8 +14,7 @@ Include the header &lt;filesystem> for access to classes and functions that mani
 
 ```cpp
 #include <filesystem> // C++17 standard header file name
-
-#include <experimental/filesystem> // C++ experimental TS header file name
+#include <experimental/filesystem> // Header file for pre-standard implementation
 using namespace std::experimental::filesystem::v1;
 ```
 
@@ -75,9 +74,9 @@ Common to both systems is the structure imposed on a pathname once you get past 
 
 - The extension is `.ext`.
 
-A minor difference is the *preferred separator* between the sequence of directories in a pathname. Both operating systems let you write a forward slash `/`, but in some contexts Windows prefers a backslash `\`.
+A minor difference is the preferred separator between the sequence of directories in a pathname. Both operating systems let you write a forward slash `/`, but in some contexts Windows prefers a backslash `\`. The implementation stores its preferred separator in the static constexpr data member `preferred_separator` in `path`.
 
-Finally, `path` objects have an important feature: You can use them wherever a filename argument is required in the classes defined in the header \<fstream>.
+Finally, `path` objects have an important feature: You can use them wherever a filename argument is required in the classes defined in the header [\<fstream>](fstream.md).
 
 For more information and code examples, see [File system navigation (C++)](../standard-library/file-system-navigation.md).
 
