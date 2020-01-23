@@ -74,7 +74,7 @@ Common to both systems is the structure imposed on a pathname once you get past 
 
 - The extension is `.ext`.
 
-A minor difference is the preferred separator between the sequence of directories in a pathname. Both operating systems let you write a forward slash `/`, but in some contexts Windows prefers a backslash `\`. The implementation stores its preferred separator in the static constexpr data member `preferred_separator` in `path`.
+A minor difference is the preferred separator between the sequence of directories in a pathname. Both operating systems let you write a forward slash `/`, but in some contexts Windows prefers a backslash `\`. The implementation stores its preferred separator in the data member `preferred_separator` in `path`.
 
 Finally, `path` objects have an important feature: You can use them wherever a filename argument is required in the classes defined in the header [\<fstream>](fstream.md).
 
