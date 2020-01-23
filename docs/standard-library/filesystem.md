@@ -53,9 +53,9 @@ Another significant difference is the native representation of pathnames:
 
 Another difference is the detail with which each operating system lets you specify file or directory access permissions:
 
-1. Windows records whether a file is read-only or writable, an attribute that has no meaning for directories.
+- Windows records whether a file is read-only or writable, an attribute that has no meaning for directories.
 
-1. POSIX records whether a file can be read, written, or executed (scanned, if a directory). And, whether each operation is allowed for the owner, the owner's group, or for everybody, plus a few other permissions.
+- POSIX records whether a file can be read, written, or executed (scanned, if a directory). And, whether each operation is allowed for the owner, the owner's group, or for everybody, plus a few other permissions.
 
 Common to both systems is the structure imposed on a pathname once you get past the root name. For the pathname `c:/abc/xyz/def.ext`:
 
