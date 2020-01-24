@@ -201,7 +201,7 @@ namespace concurrency;
 |Name|Description|
 |----------|-----------------|
 |[operator!=](concurrency-namespace-operators.md#operator_neq)|Tests if the `concurrent_vector` object on the left side of the operator is not equal to the `concurrent_vector` object on the right side.|
-|[operator&&](concurrency-namespace-operators.md#operator_amp_amp)|Overloaded. Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.|
+|[operator&&](concurrency-namespace-operators.md#operator_amp_amp)|Overloaded. Creates a task that will complete successfully when both of the tasks supplied as arguments complete successfully.|
 |[operator&#124;&#124;](concurrency-namespace-operators.md#operator_lor)|Overloaded. Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.|
 |[operator<](concurrency-namespace-operators.md#operator_lt)|Tests if the `concurrent_vector` object on the left side of the operator is less than the `concurrent_vector` object on the right side.|
 |[operator<=](concurrency-namespace-operators.md#operator_lt_eq)|Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.|
