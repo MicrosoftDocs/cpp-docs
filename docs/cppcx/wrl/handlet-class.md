@@ -20,7 +20,7 @@ class HandleT;
 ### Parameters
 
 *HandleTraits*<br/>
-An instance of the [HandleTraits](handletraits-structure.md) stucture that defines common characteristics of a handle.
+An instance of the [HandleTraits](handletraits-structure.md) structure that defines common characteristics of a handle.
 
 ## Members
 
