@@ -7,7 +7,7 @@ ms.assetid: dbc177d7-7ee4-45f2-b563-d578a467ca93
 ---
 # CComApartment Class
 
-This class provides support for managing an appartment in a thread-pooled EXE module.
+This class provides support for managing an apartment in a thread-pooled EXE module.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
