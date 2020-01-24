@@ -293,7 +293,7 @@ The type of the sixth event handler argument.
 The type of the seventh event handler argument.
 
 *T8*<br/>
-The type of the eigth event handler argument.
+The type of the eighth event handler argument.
 
 *T9*<br/>
 The type of the ninth event handler argument.
@@ -323,7 +323,7 @@ The sixth event handler argument.
 The seventh event handler argument.
 
 *arg8*<br/>
-The eigth event handler argument.
+The eighth event handler argument.
 
 *arg9*<br/>
 The ninth event handler argument.

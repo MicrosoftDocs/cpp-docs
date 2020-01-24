@@ -35,7 +35,7 @@ The *most-general-representation* argument specifies the smallest pointer repres
 | **virtual_inheritance** | The most general representation is virtual-inheritance, pointer to a member function. Never causes an error. **virtual_inheritance** is the default argument when `#pragma pointers_to_members(full_generality)` is used. |
 
 > [!CAUTION]
-> We advise you to put the **pointers_to_members** pragma only in the source code file that you want to affect, and only after any `#include` directives. This practice lessens the risk that the pragma will affect other files, and that you will accidently specify multiple definitions for the same variable, function, or class name.
+> We advise you to put the **pointers_to_members** pragma only in the source code file that you want to affect, and only after any `#include` directives. This practice lessens the risk that the pragma will affect other files, and that you will accidentally specify multiple definitions for the same variable, function, or class name.
 
 ## Example
 

@@ -147,7 +147,7 @@ The type of the sixth argument of the `Invoke` method.
 The type of the seventh argument of the `Invoke` method.
 
 *TArg8*<br/>
-The type of the eigth argument of the `Invoke` method.
+The type of the eighth argument of the `Invoke` method.
 
 *TArg9*<br/>
 The type of the ninth argument of the `Invoke` method.

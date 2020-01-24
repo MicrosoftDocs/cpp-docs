@@ -7,5 +7,5 @@ m_TreeCtrl.Create(WS_VISIBLE | WS_TABSTOP | WS_CHILD | WS_BORDER |
                       TVS_DISABLEDRAGDROP | TVS_NOTOOLTIPS | TVS_EDITLABELS,
                   CRect(10, 10, 300, 100), this, ID_MYTREE);
 
-// The control will have the appropiate window styles, and the tree
+// The control will have the appropriate window styles, and the tree
 // control styles specified are those most commonly used.

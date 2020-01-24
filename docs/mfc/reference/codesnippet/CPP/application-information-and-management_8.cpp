@@ -23,4 +23,4 @@ if (!pDocTemplate)
    return FALSE;
 AddDocTemplate(pDocTemplate);
 
-// Standard Application Wizard generated initalization excluded.
+// Standard Application Wizard generated initialization excluded.
