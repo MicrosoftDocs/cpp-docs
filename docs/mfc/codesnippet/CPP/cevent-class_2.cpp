@@ -1,6 +1,6 @@
 // This example builds upon the previous one.
 // A second thread is created to calculate prime numbers.
-// The main thread will signal the second thread to calulate the next
+// The main thread will signal the second thread to calculate the next
 // prime number in the series.  The second thread signals the first
 // after each number is calculated. Finally, after several iterations
 // the worker thread is signaled to terminate.
