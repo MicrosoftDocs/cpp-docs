@@ -228,7 +228,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **FILE Encapsulation**
 
-   In previous versions, the complete FILE type was defined publically in \<stdio.h>, so it was possible for user code to reach into a FILE and modify its internals. The library has been changed to hide implementation details. As part of this change, FILE as defined in \<stdio.h> is now an opaque type and its members are inaccessible from outside of the CRT itself.
+   In previous versions, the complete FILE type was defined publicly in \<stdio.h>, so it was possible for user code to reach into a FILE and modify its internals. The library has been changed to hide implementation details. As part of this change, FILE as defined in \<stdio.h> is now an opaque type and its members are inaccessible from outside of the CRT itself.
 
 - **_outp and _inp**
 
