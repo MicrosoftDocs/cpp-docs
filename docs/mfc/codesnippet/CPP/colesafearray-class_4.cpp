@@ -35,7 +35,7 @@ for (long r = lowRow; r <= lNumRows; r++)
          TRACE(_T("%s\n"), (CString)val.bstrVal);
          break;
 
-         // other cases ommitted
+         // other cases omitted
 
       case VT_EMPTY:
          TRACE(_T("<empty>\n"));

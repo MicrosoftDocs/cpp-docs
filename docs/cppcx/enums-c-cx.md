@@ -5,7 +5,7 @@ ms.assetid: 99fbbe28-c1cd-43af-9ead-60f90eba6e68
 ---
 # Enums (C++/CX)
 
-C++/CX supports the `public enum class` keyword, which is analagous to a standard C++ `scoped  enum`. When you use an enumerator that's declared by using the `public enum class` keyword, you must use the enumeration identifier to scope each enumerator value.
+C++/CX supports the `public enum class` keyword, which is analogous to a standard C++ `scoped  enum`. When you use an enumerator that's declared by using the `public enum class` keyword, you must use the enumeration identifier to scope each enumerator value.
 
 ### Remarks
 

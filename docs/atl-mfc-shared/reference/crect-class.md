@@ -299,7 +299,7 @@ CRect rect(0, 0, 100, 50);
 ASSERT(rect.Width() == 100);
 ASSERT(rect.Height() == 50);
 
-// Initialize from RECT stucture
+// Initialize from RECT structure
 RECT sdkRect;
 sdkRect.left = 0;
 sdkRect.top = 0;

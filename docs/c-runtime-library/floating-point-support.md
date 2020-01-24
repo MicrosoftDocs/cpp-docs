@@ -62,7 +62,7 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [floor, floorf, floorl](../c-runtime-library/reference/floor-floorf-floorl.md)|Computes the floor
 [fma, fmaf, fmal](../c-runtime-library/reference/fma-fmaf-fmal.md)|Computes a fused multiply-add
 [fmax, fmaxf, fmaxl](../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)|Computes the maximum of the arguments
-[fmin, fminf, fminl](../c-runtime-library/reference/fmin-fminf-fminl.md)|Computes the minumum of the arguments
+[fmin, fminf, fminl](../c-runtime-library/reference/fmin-fminf-fminl.md)|Computes the minimum of the arguments
 [fmod, fmodf, fmodl](../c-runtime-library/reference/fmod-fmodf.md)|Computes the floating-point remainder
 [_fpclass, _fpclassf](../c-runtime-library/reference/fpclass-fpclassf.md)|Returns the classification of a floating-point value
 [fpclassify](../c-runtime-library/reference/fpclassify.md)|Returns the classification of a floating-point value

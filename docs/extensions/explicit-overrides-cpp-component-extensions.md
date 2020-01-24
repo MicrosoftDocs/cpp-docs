@@ -34,7 +34,7 @@ The function body statements that define the overriding function.
 
 ### Remarks
 
-Use explicit overrides to create an alias for a method signature, or to provide different implementations for methods witht the same signature.
+Use explicit overrides to create an alias for a method signature, or to provide different implementations for methods with the same signature.
 
 For information about modifying the behavior of inherited types and inherited type members, see [Override Specifiers](override-specifiers-cpp-component-extensions.md).
 
