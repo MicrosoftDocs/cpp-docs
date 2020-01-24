@@ -11,7 +11,7 @@ public:
       // your service
       // Suggested - PKT Level Authentication, 
       // Impersonation Level of RPC_C_IMP_LEVEL_IDENTIFY 
-      // and an appropiate Non NULL Security Descriptor.
+      // and an appropriate Non NULL Security Descriptor.
 
       return S_OK;
    }
