@@ -24,6 +24,10 @@ You can use the **/Q** compiler options to perform the following low-level compi
 
 - [/Qspectre](qspectre.md): Generates instructions to mitigate certain Spectre security vulnerabilities.
 
+- [/Qspectre-load](qspectre-load.md): Generates instructions to mitigate certain Spectre security vulnerabilities.
+
+- [/Qspectre-load-cf](qspectre-load-cf.md): Generates instructions to mitigate certain Spectre security vulnerabilities.
+
 - [/Qvec-report (Auto-Vectorizer Reporting Level)](qvec-report-auto-vectorizer-reporting-level.md): Enables reporting levels for automatic vectorization.
 
 ## See also

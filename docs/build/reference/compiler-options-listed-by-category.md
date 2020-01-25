@@ -62,6 +62,8 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|Enables reporting levels for automatic parallelization.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
 |[/Qspectre](qspectre.md)|Enable mitigations for CVE 2017-5753, for a class of Spectre attacks.|
+|[/Qspectre-load](qspectre-load.md)|TODO.|
+|[/Qspectre-load-cf](qspectre-load-cf.md)|TODO.|
 |[/Qvec-report](qvec-report-auto-vectorizer-reporting-level.md)|Enables reporting levels for automatic vectorization.|
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|Selects how the volatile keyword is interpreted.|

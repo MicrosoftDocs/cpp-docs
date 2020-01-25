@@ -702,6 +702,10 @@
                           href: build/reference/qsafe-fp-loads.md
                         - name: /Qspectre
                           href: build/reference/qspectre.md
+                        - name: /Qspectre-load
+                          href: build/reference/qspectre-load.md
+                        - name: /Qspectre
+                          href: build/reference/qspectre-load-cf.md
                         - name: /Qvec-report (Auto-vectorizer reporting level)
                           href: build/reference/qvec-report-auto-vectorizer-reporting-level.md
                     - name: /RTC (Run-time error checks)
