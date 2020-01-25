@@ -106,8 +106,8 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
 |[/Qspectre](qspectre.md)|Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.|
-|[/Qspectre-load](qspectre-load.md)|TODO.|
-|[/Qspectre-load-cf](qspectre-load-cf.md)|TODO.|
+|[/Qspectre-load](qspectre-load.md)|Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on load instructions.|
+|[/Qspectre-load-cf](qspectre-load-cf.md)|Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on control flow instructions which load memory.|
 |[/Qvec-report (Auto-Vectorizer Reporting Level)](qvec-report-auto-vectorizer-reporting-level.md)|Enables reporting levels for automatic vectorization.|
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/sdl](sdl-enable-additional-security-checks.md)|Enables additional security features and warnings.|
