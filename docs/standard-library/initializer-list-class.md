@@ -19,9 +19,8 @@ class initializer_list
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Type*|The element data type to be stored in the `initializer_list`.|
+*Type*\
+The element data type to be stored in the `initializer_list`.
 
 ## Remarks
 
@@ -72,7 +71,7 @@ Returns a pointer to the first element in an `initializer_list`.
 constexpr const InputIterator* begin() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A pointer to the first element of the `initializer_list`. If the list is empty, the pointer is the same for the beginning and end of the list.
 
@@ -84,7 +83,7 @@ Returns a pointer to one past the last element in an `initializer list`.
 constexpr const InputIterator* end() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A pointer to one past the last element in the list. If the list is empty, it's the same as the pointer to the first element in the list.
 
@@ -156,11 +155,6 @@ int main()
         cout << " " << c;
     cout << endl;
 
-    cout << "c4 =";
-    for (auto c : c4)
-        cout << " " << c;
-    cout << endl;
-
     cout << "c5 =";
     for (auto c : c5)
         cout << " " << c;
@@ -172,7 +166,6 @@ int main()
 c1 = 3
 c2 = 5 4 3 2 1
 c3 = 5 4 3 2 1
-c4 = 5 4
 c5 = 5 4
 ```
 
@@ -184,7 +177,7 @@ Returns the number of elements in the list.
 constexpr size_t size() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 The number of elements in the list.
 
