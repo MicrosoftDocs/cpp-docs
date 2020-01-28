@@ -16,7 +16,7 @@ Specifies compiler generation of serializing instructions for every control-flow
 
 The **/Qspectre-load-cf** option is available in Visual Studio 2019 version 16.5 and later. This option is only available in compilers that target x86 and x64 processors. It's not available in compilers that target ARM processors. 
 
-**/Qspectre-load-cf** causes the compiler to detect control-flow instructions which load from memory, and to insert serializing instructions after the load. Where possible, these instructions are split into a load and a control flow transfer, followed by an `lfence` to ensure the load is protected. There are cases where the compiler can't split instructions, such as the `JMP` instruction, so it uses an alternate mitigation technique.  
+**/Qspectre-load-cf** causes the compiler to detect control-flow instructions that load from memory, and to insert serializing instructions after the load. Where possible, these instructions are split into a load and a control flow transfer, followed by an `lfence` to ensure the load is protected. There are cases where the compiler can't split instructions, such as the `JMP` instruction, so it uses an alternate mitigation technique.  
 
 The **/Qspectre-load-cf** option is off by default, and supports all optimization levels.
 
