@@ -106,7 +106,7 @@ Returns the result of [CComCriticalSection::Lock](../../atl/reference/ccomcritic
 
 ### Remarks
 
-This method assumes the [m_bInitialized](#m_binitialized) data member is set to TRUE upon entry. An assertion is generated in Debug builds if this condidtion is not met.
+This method assumes the [m_bInitialized](#m_binitialized) data member is set to TRUE upon entry. An assertion is generated in Debug builds if this condition is not met.
 
 For more information on the behavior of the function, refer to [CComCriticalSection::Lock](../../atl/reference/ccomcriticalsection-class.md#lock).
 

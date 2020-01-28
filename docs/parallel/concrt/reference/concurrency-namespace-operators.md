@@ -50,7 +50,7 @@ The second task to combine into the resulting task.
 
 ### Return Value
 
-A task that completes sucessfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
 
 ### Remarks
 
@@ -58,7 +58,7 @@ If both of the tasks are canceled or throw exceptions, the returned task will co
 
 ##  <a name="operator_amp_amp"></a>  operator&amp;&amp; Operator
 
-Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.
+Creates a task that will complete successfully when both of the tasks supplied as arguments complete successfully.
 
 ```
 template<typename ReturnType>

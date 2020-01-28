@@ -1,5 +1,5 @@
 // The following code snippet shows a caret when the left
-// mouse button is pressed, and sets the caret's positon to
+// mouse button is pressed, and sets the caret's position to
 // the cursor's position.
 void CMyView::OnLButtonDown(UINT nFlags, CPoint point)
 {

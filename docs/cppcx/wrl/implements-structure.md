@@ -85,7 +85,7 @@ The sixth interface ID. (Optional)
 The seventh interface ID. (Optional)
 
 *I8*<br/>
-The eigth interface ID. (Optional)
+The eighth interface ID. (Optional)
 
 *I9*<br/>
 The ninth interface ID. (Optional)
