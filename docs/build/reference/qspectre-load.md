@@ -23,7 +23,7 @@ Specifies compiler generation of serializing instructions for every load instruc
     jmp [rax]
 ```
 
-Because **/Qspectre-load** stops speculation of all loads, the performance impact is high. The mitigation isn't appropriate everywhere. If there are performance critical blocks of code that do not require protection, you can disable these mitigations by using `__declspec(spectre(nomitigation))`. For more information, see [__declspec spectre](../../cpp/spectre.md).
+Because **/Qspectre-load** stops speculation of all loads, the performance impact is high. The mitigation isn't appropriate everywhere. If there are performance critical blocks of code that don't require protection, you can disable these mitigations by using `__declspec(spectre(nomitigation))`. For more information, see [__declspec spectre](../../cpp/spectre.md).
 
 The **/Qspectre-load** option is off by default, and supports all optimization levels.
 
