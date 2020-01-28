@@ -24,7 +24,7 @@ Specifies compiler generation of serializing instructions for every control-flow
     jmp [rax]
 ```
 
-Because **/Qspectre-load-cf** stops speculation of all loads in control-flow instructions, the performance impact is high. The mitigation isn't appropriate everywhere. If there are performance critical blocks of code that do not require protection, you can disable these mitigations by using `__declspec(spectre(nomitigation))`.
+Because **/Qspectre-load-cf** stops speculation of all loads in control-flow instructions, the performance impact is high. The mitigation isn't appropriate everywhere. If there are performance critical blocks of code that don't require protection, you can disable these mitigations by using `__declspec(spectre(nomitigation))`.
 
 The **/Qspectre-load-cf** option is off by default, and supports all optimization levels.
 
