@@ -16,7 +16,7 @@ Specifies compiler generation of serializing instructions for every load instruc
 
 The **/Qspectre-load** option is available in Visual Studio 2019 version 16.5 and later. This option is only available in compilers that target x86 and x64 processors. It's not available in compilers that target ARM processors.
 
-**/Qspectre-load** causes the compiler to detect loads from memory, and insert serializing instructions after them. Control flow instructions which load memory, including `ret` and `call`, are split into a load and a control flow transfer to ensure the load is protected. There are cases where the compiler can't split control flow instructions, such as the `jmp` instruction, so it uses an alternate mitigation technique.  
+**/Qspectre-load** causes the compiler to detect loads from memory, and insert serializing instructions after them. Control flow instructions that load memory, including `ret` and `call`, are split into a load and a control flow transfer to ensure the load is protected. There are cases where the compiler can't split control flow instructions, such as the `jmp` instruction, so it uses an alternate mitigation technique.  
 
 The **/Qspectre-load** option is off by default, and supports all optimization levels.
 
