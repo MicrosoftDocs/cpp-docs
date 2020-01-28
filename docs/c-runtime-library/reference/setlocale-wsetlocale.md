@@ -103,27 +103,35 @@ LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
 
 which is the string that's associated with the **LC_ALL** category.
 
-The following examples pertain to the **LC_ALL** category. Either of the strings ".OCP" and ".ACP" can be used instead of a code page number to specify use of the user-default OEM code page and user-default ANSI code page, respectively.
+The following examples pertain to the **LC_ALL** category. Either of the strings ".OCP" and ".ACP" can be used instead of a code page number to specify use of the user-default OEM code page and user-default ANSI code page for that locale name, respectively.
 
 - `setlocale( LC_ALL, "" );`
 
    Sets the locale to the default, which is the user-default ANSI code page obtained from the operating system.
+   The locale name is set to the value returned from [GetUserDefaultLocaleName](https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getuserdefaultlocalename).
+   The code page is set to the value returned from [GetACP](https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getacp).
 
 - `setlocale( LC_ALL, ".OCP" );`
 
-   Explicitly sets the locale to the current OEM code page obtained from the operating system.
+   Sets the locale to the current OEM code page obtained from the operating system.
+   The locale name is set to the value returned from [GetUserDefaultLocaleName](https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getuserdefaultlocalename). 
+   The code page is set to the [LOCALE_IDEFAULTCODEPAGE](https://docs.microsoft.com/en-us/windows/win32/intl/locale-idefault-constants) for the user-default locale name, via [GetLocaleInfoEx](https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getlocaleinfoex).
 
 - `setlocale( LC_ALL, ".ACP" );`
 
    Sets the locale to the ANSI code page obtained from the operating system.
+   The locale name is set to the value returned from [GetUserDefaultLocaleName](https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getuserdefaultlocalename). 
+   The code page is set to the [LOCALE_IDEFAULTANSICODEPAGE](https://docs.microsoft.com/en-us/windows/win32/intl/locale-idefault-constants) for the user-default locale name, via [GetLocaleInfoEx](https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getlocaleinfoex).
 
 - `setlocale( LC_ALL, "<localename>" );`
 
    Sets the locale to the locale name that's indicated by *\<localename>*.
+   The code page is set to the [LOCALE_IDEFAULTANSICODEPAGE](https://docs.microsoft.com/en-us/windows/win32/intl/locale-idefault-constants) for the specified locale name, via [GetLocaleInfoEx](https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getlocaleinfoex).
 
 - `setlocale( LC_ALL, "<language>_<country>" );`
 
    Sets the locale to the language and country/region indicated by *\<language>* and *\<country>*, together with the default code page obtained from the host operating system.
+   The code page is set to the [LOCALE_IDEFAULTANSICODEPAGE](https://docs.microsoft.com/en-us/windows/win32/intl/locale-idefault-constants) for the specified locale name, via [GetLocaleInfoEx](https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getlocaleinfoex).
 
 - `setlocale( LC_ALL, "<language>_<country>.<code_page>" );`
 
