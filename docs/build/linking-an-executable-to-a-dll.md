@@ -78,7 +78,7 @@ The operating system must be able to locate the DLL file when it loads the calli
 
 To use a DLL by explicit linking, applications must make a function call to explicitly load the DLL at run time. To explicitly link to a DLL, an application must:
 
-- Call [LoadLibrary](loadlibrary-and-afxloadlibrary.md), `LoadLibraryEx`, or a similar function to load the DLL and obtain a module handle.
+- Call [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) or a similar function to load the DLL and obtain a module handle.
 
 - Call [GetProcAddress](getprocaddress.md) to obtain a function pointer to each exported function that the application calls. Because applications call the DLL functions through a pointer, the compiler doesn't generate external references, so there's no need to link with an import library. However, you must have a `typedef` or `using` statement that defines the call signature of the exported functions that you call.
 
