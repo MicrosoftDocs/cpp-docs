@@ -4,6 +4,7 @@ description: "How to create a resource-only DLL in Visual Studio."
 ms.date: "01/27/2020"
 helpviewer_keywords: ["resource-only DLLs [C++], creating", "DLLs [C++], creating"]
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
+no-loc: [noentry]
 ---
 # Creating a resource-only DLL
 
@@ -13,17 +14,36 @@ A resource-only DLL is a DLL that contains nothing but resources, such as icons,
 
 To create a resource-only DLL, you create a new Windows DLL (non-MFC) project, and add your resources to the project:
 
+::: moniker range="vs-2015"
+
+1. Select **Win32 Project** in the **New Project** dialog box. Enter the project and solution names, and choose **OK**.
+
+1. In the **Win32 Application Wizard**, select **Application Settings**. Choose an **Application type** of **DLL**. Under **Additional options**, select **Empty project**. Choose **Finish** to create your project.
+
+1. Create a new resource script that contains the resources for the DLL (such as a string or a menu). Save the `.rc` file.
+
+1. On the **Project** menu, select **Add Existing Item**, and then insert the new `.rc` file into the project.
+
+1. Specify the [/NOENTRY](reference/noentry-no-entry-point.md) linker option. `/NOENTRY` prevents the linker from linking a reference to `_main` into the DLL; this option is required to create a resource-only DLL.
+
+1. Build the DLL.
+
+::: moniker-end
+::: moniker range=">=vs-2017"
+
 1. Select **Windows Desktop Wizard** in the **New Project** dialog box and choose **Next**. In the **Configure your new project** page, enter the project and solution names, and choose **Create**.
 
 1. In the **Windows Desktop Project** dialog box, select an **Application type** of **Dynamic Link Library**. Under **Additional options**, select **Empty project**. Choose **OK** to create your project.
 
 1. Create a new resource script that contains the resources for the DLL (such as a string or a menu). Save the `.rc` file.
 
-1. On the **Project** menu, click **Add Existing Item**, and then insert the new `.rc` file into the project.
+1. On the **Project** menu, select **Add Existing Item**, and then insert the new `.rc` file into the project.
 
-1. Specify the [/NOENTRY](reference/noentry-no-entry-point.md) linker option. /NOENTRY prevents the linker from linking a reference to `_main` into the DLL; this option is required to create a resource-only DLL.
+1. Specify the [/NOENTRY](reference/noentry-no-entry-point.md) linker option. `/NOENTRY` prevents the linker from linking a reference to `_main` into the DLL; this option is required to create a resource-only DLL.
 
 1. Build the DLL.
+
+::: moniker-end
 
 ## Use a resource-only DLL
 
