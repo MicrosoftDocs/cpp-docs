@@ -15,11 +15,11 @@ To create a resource-only DLL, you create a new Windows DLL (non-MFC) project, a
 
 1. Select **Windows Desktop Wizard** in the **New Project** dialog box and choose **Next**. In the **Configure your new project** page, enter the project and solution names, and choose **Create**.
 
-1. In the **Win32 Project Wizard**, select an **Application type** of **Dynamic Link Library**. Under **Additional options**, select **Empty project**. Choose **OK** to create your project.
+1. In the **Windows Desktop Project** dialog box, select an **Application type** of **Dynamic Link Library**. Under **Additional options**, select **Empty project**. Choose **OK** to create your project.
 
-1. Create a new resource script that contains the resources for the DLL (such as a string or a menu). Save the .rc file.
+1. Create a new resource script that contains the resources for the DLL (such as a string or a menu). Save the `.rc` file.
 
-1. On the **Project** menu, click **Add Existing Item**, and then insert the new .rc file into the project.
+1. On the **Project** menu, click **Add Existing Item**, and then insert the new `.rc` file into the project.
 
 1. Specify the [/NOENTRY](reference/noentry-no-entry-point.md) linker option. /NOENTRY prevents the linker from linking a reference to `_main` into the DLL; this option is required to create a resource-only DLL.
 
