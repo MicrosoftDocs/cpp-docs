@@ -1,6 +1,7 @@
 ---
 title: "setlocale, _wsetlocale"
-ms.date: "11/04/2016"
+description: "Describes the Microsoft C runtime (CRT) library functions setlocale and _wsetlocale."
+ms.date: "01/28/2020"
 api_name: ["_wsetlocale", "setlocale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -8,6 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_wsetlocale", "_tsetlocale", "setlocale"]
 helpviewer_keywords: ["wsetlocale function", "setlocale function", "tsetlocale function", "locales, defining", "_tsetlocale function", "defining locales", "_wsetlocale function"]
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
+no-loc: [setlocale, _wsetlocale]
 ---
 # setlocale, _wsetlocale
 
@@ -28,15 +30,15 @@ wchar_t *_wsetlocale(
 
 ### Parameters
 
-*category*<br/>
+*category*\
 Category affected by locale.
 
-*locale*<br/>
+*locale*\
 Locale specifier.
 
-## Return Value
+## Return value
 
-If a valid *locale* and *category* are given, returns a pointer to the string associated with the specified *locale* and *category*. If the *locale* or *category* is not valid, returns a null pointer and the current locale settings of the program are not changed.
+If a valid *locale* and *category* are given, returns a pointer to the string associated with the specified *locale* and *category*. If the *locale* or *category* isn't valid, returns a null pointer, and the current locale settings of the program are unchanged.
 
 For example, the call
 
@@ -75,7 +77,7 @@ The *category* argument specifies the parts of a program's locale information th
 | **LC_NUMERIC** | Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md). |
 | **LC_TIME** | The **strftime** and **wcsftime** functions. |
 
-This function validates the category parameter. If the category parameter is not one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL** and returns **NULL**.
+This function validates the category parameter. If the category parameter isn't one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL** and returns **NULL**.
 
 The *locale* argument is a pointer to a string that specifies the locale. For information about the format of the *locale* argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). If *locale* points to an empty string, the locale is the implementation-defined native environment. A value of **C** specifies the minimal ANSI conforming environment for C translation. The **C** locale assumes that all **char** data types are 1 byte and that their value is always less than 256.
 
@@ -85,7 +87,7 @@ At program startup, the equivalent of the following statement is executed:
 
 The *locale* argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The set of available locale names, languages, country/region codes, and code pages includes all those supported by the Windows NLS API except code pages that require more than two bytes per character, such as UTF-7 and UTF-8. If you provide a code page value of UTF-7 or UTF-8, **setlocale** will fail, returning **NULL**. The set of locale names supported by **setlocale** are described in [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by **setlocale** are listed in [Language Strings](../../c-runtime-library/language-strings.md) and [Country/Region Strings](../../c-runtime-library/country-region-strings.md). We recommend the locale name form for performance and for maintainability of locale strings embedded in code or serialized to storage. The locale name strings are less likely to be changed by an operating system update than the language and country/region name form.
 
-A null pointer that's passed as the *locale* argument tells **setlocale** to query instead of to set the international environment. If the *locale* argument is a null pointer, the program's current locale setting is not changed. Instead, **setlocale** returns a pointer to the string that's associated with the *category* of the thread's current locale. If the *category* argument is **LC_ALL**, the function returns a string that indicates the current setting of each category, separated by semicolons. For example, the sequence of calls
+A null pointer that's passed as the *locale* argument tells **setlocale** to query instead of to set the international environment. If the *locale* argument is a null pointer, the program's current locale setting isn't changed. Instead, **setlocale** returns a pointer to the string that's associated with the *category* of the thread's current locale. If the *category* argument is **LC_ALL**, the function returns a string that indicates the current setting of each category, separated by semicolons. For example, the sequence of calls
 
 ```C
 // Set all categories and return "en-US"
@@ -103,27 +105,27 @@ LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
 
 which is the string that's associated with the **LC_ALL** category.
 
-The following examples pertain to the **LC_ALL** category. Either of the strings ".OCP" and ".ACP" can be used instead of a code page number to specify use of the user-default OEM code page and user-default ANSI code page, respectively.
+The following examples pertain to the **LC_ALL** category. Either of the strings ".OCP" and ".ACP" can be used instead of a code page number to specify use of the user-default OEM code page and user-default ANSI code page for that locale name, respectively.
 
 - `setlocale( LC_ALL, "" );`
 
-   Sets the locale to the default, which is the user-default ANSI code page obtained from the operating system.
+   Sets the locale to the default, which is the user-default ANSI code page obtained from the operating system. The locale name is set to the value returned by [GetUserDefaultLocaleName](/windows/win32/api/winnls/nf-winnls-getuserdefaultlocalename). The code page is set to the value returned by [GetACP](/windows/win32/api/winnls/nf-winnls-getacp).
 
 - `setlocale( LC_ALL, ".OCP" );`
 
-   Explicitly sets the locale to the current OEM code page obtained from the operating system.
+   Sets the locale to the current OEM code page obtained from the operating system. The locale name is set to the value returned by [GetUserDefaultLocaleName](/windows/win32/api/winnls/nf-winnls-getuserdefaultlocalename). The code page is set to the [LOCALE_IDEFAULTCODEPAGE](/windows/win32/intl/locale-idefault-constants) value for the user-default locale name by [GetLocaleInfoEx](/windows/win32/api/winnls/nf-winnls-getlocaleinfoex).
 
 - `setlocale( LC_ALL, ".ACP" );`
 
-   Sets the locale to the ANSI code page obtained from the operating system.
+   Sets the locale to the ANSI code page obtained from the operating system. The locale name is set to the value returned by [GetUserDefaultLocaleName](/windows/win32/api/winnls/nf-winnls-getuserdefaultlocalename). The code page is set to the [LOCALE_IDEFAULTANSICODEPAGE](/windows/win32/intl/locale-idefault-constants) value for the user-default locale name by [GetLocaleInfoEx](/windows/win32/api/winnls/nf-winnls-getlocaleinfoex).
 
 - `setlocale( LC_ALL, "<localename>" );`
 
-   Sets the locale to the locale name that's indicated by *\<localename>*.
+   Sets the locale to the locale name that's indicated by *\<localename>*. The code page is set to the [LOCALE_IDEFAULTANSICODEPAGE](/windows/win32/intl/locale-idefault-constants) value for the specified locale name by [GetLocaleInfoEx](/windows/win32/api/winnls/nf-winnls-getlocaleinfoex).
 
 - `setlocale( LC_ALL, "<language>_<country>" );`
 
-   Sets the locale to the language and country/region indicated by *\<language>* and *\<country>*, together with the default code page obtained from the host operating system.
+   Sets the locale to the language and country/region indicated by *\<language>* and *\<country>*, together with the default code page obtained from the host operating system. The code page is set to the [LOCALE_IDEFAULTANSICODEPAGE](/windows/win32/intl/locale-idefault-constants) value for the specified locale name by [GetLocaleInfoEx](/windows/win32/api/winnls/nf-winnls-getlocaleinfoex).
 
 - `setlocale( LC_ALL, "<language>_<country>.<code_page>" );`
 
@@ -280,18 +282,18 @@ The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'
 
 ## See also
 
-[Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[_configthreadlocale](configthreadlocale.md)<br/>
-[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[localeconv](localeconv.md)<br/>
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
-[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
+[Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)\
+[_configthreadlocale](configthreadlocale.md)\
+[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)\
+[Locale](../../c-runtime-library/locale.md)\
+[localeconv](localeconv.md)\
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)\
+[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)\
+[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)\
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)\
+[_setmbcp](setmbcp.md)\
+[strcoll Functions](../../c-runtime-library/strcoll-functions.md)\
+[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)\
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)\
+[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)\
+[wctomb, _wctomb_l](wctomb-wctomb-l.md)
