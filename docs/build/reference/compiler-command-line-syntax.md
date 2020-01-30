@@ -1,6 +1,7 @@
 ---
 title: "MSVC Compiler Command-Line Syntax"
 ms.date: "11/04/2016"
+f1_keywords: ["VC.Project.AdditionalOptionsPage"]
 helpviewer_keywords: ["syntax, CL compiler command line", "cl.exe compiler, command-line syntax"]
 ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
 ---
