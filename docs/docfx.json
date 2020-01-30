@@ -143,6 +143,7 @@
         "windows/**.md": "cpp-windows"
       },
       "author": {
+        "index.md": "corob-msft",
         "assembler/**.md": "corob-msft",
         "attributes/**.md": "corob-msft",
         "atl/**.md": "corob-msft",
@@ -176,6 +177,7 @@
         "windows/**.md": "corob-msft"
       },
       "ms.author": {
+        "index.md": "corob",
         "assembler/**.md": "corob",
         "atl/**.md": "corob",
         "atl-mfc-shared/**.md": "corob",
