@@ -1,11 +1,12 @@
 ---
-title: "initializer_list Class"
-ms.date: "11/04/2016"
+title: "initializer_list class"
+description: "A reference for the initializer_list class in the C++ Standard library, as implemented by Microsoft in Visual Studio."
+ms.date: "01/28/2020"
 f1_keywords: ["initializer_list/std::initializer_list::initializer_list", "initializer_list/std::initializer_list::begin", "initializer_list/std::initializer_list::end", "initializer_list/std::initializer_list::size"]
 ms.assetid: 1f2c0ff4-5636-4f79-b008-e75426e3d2ab
 helpviewer_keywords: ["std::initializer_list::initializer_list", "std::initializer_list::begin", "std::initializer_list::end", "std::initializer_list::size"]
 ---
-# initializer_list Class
+# initializer_list class
 
 Provides access to an array of elements in which each member is of the specified type.
 
@@ -18,9 +19,8 @@ class initializer_list
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Type*|The element data type to be stored in the `initializer_list`.|
+*Type*\
+The element data type to be stored in the `initializer_list`.
 
 ## Remarks
 
@@ -30,24 +30,24 @@ An `initializer_list` can be constructed using a braced initializer list:
 initializer_list<int> i1{ 1, 2, 3, 4 };
 ```
 
-The compiler transforms braced initializer lists with homogeneous elements into an `initializer_list` whenever the function signature requires an `initializer_list`. For more details on using `initializer_list`, see [Uniform Initialization and Delegating Constructors](../cpp/uniform-initialization-and-delegating-constructors.md)
+The compiler transforms braced initializer lists with homogeneous elements into an `initializer_list` whenever the function signature requires an `initializer_list`. For more information about using `initializer_list`, see [Uniform initialization and delegating constructors](../cpp/uniform-initialization-and-delegating-constructors.md)
 
 ### Constructors
 
 |Constructor|Description|
 |-|-|
-|[initializer_list](../standard-library/forward-list-class.md#forward_list)|Constructs an object of type `initializer_list`.|
+|[initializer_list](#initializer_list)|Constructs an object of type `initializer_list`.|
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|value_type|The type of the elements in the `initializer_list`.|
-|reference|A type that provides a reference to an element in the `initializer_list`.|
-|const_reference|A type that provides a constant reference to an element in the `initializer_list`.|
-|size_type|A type that represents the number of elements in the `initializer_list`.|
-|iterator|A type that provides an iterator for the `initializer_list`.|
-|const_iterator|A type that provides a constant iterator for the `initializer_list`.|
+|`value_type`|The type of the elements in the `initializer_list`.|
+|`reference`|A type that provides a reference to an element in the `initializer_list`.|
+|`const_reference`|A type that provides a constant reference to an element in the `initializer_list`.|
+|`size_type`|A type that represents the number of elements in the `initializer_list`.|
+|`iterator`|A type that provides an iterator for the `initializer_list`.|
+|`const_iterator`|A type that provides a constant iterator for the `initializer_list`.|
 
 ### Member functions
 
@@ -71,11 +71,9 @@ Returns a pointer to the first element in an `initializer_list`.
 constexpr const InputIterator* begin() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A pointer to the first element of the `initializer_list`. If the list is empty, the pointer is the same for the beginning and end of the list.
-
-### Remarks
 
 ## <a name="end"></a>  initializer_list::end
 
@@ -85,9 +83,9 @@ Returns a pointer to one past the last element in an `initializer list`.
 constexpr const InputIterator* end() const noexcept;
 ```
 
-### Return Value
+### Return value
 
-A pointer to one past the last element in the list. If the list is empty, this is the same as the pointer to the first element in the list.
+A pointer to one past the last element in the list. If the list is empty, it's the same as the pointer to the first element in the list.
 
 ## <a name="initializer_list"></a>  initializer_list::initializer_list
 
@@ -100,14 +98,15 @@ initializer_list(const InputIterator First, const InputIterator Last);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
 
 ### Remarks
 
-An `initializer_list` is based on an array of objects of the specified type. Copying an `initializer_list` creates a second instance of a list pointing to the same objects; the underlying objects are not copied.
+An `initializer_list` is based on an array of objects of the specified type. Copying an `initializer_list` creates a second instance of a list pointing to the same objects; the underlying objects aren't copied.
 
 ### Example
 
@@ -156,11 +155,6 @@ int main()
         cout << " " << c;
     cout << endl;
 
-    cout << "c4 =";
-    for (auto c : c4)
-        cout << " " << c;
-    cout << endl;
-
     cout << "c5 =";
     for (auto c : c5)
         cout << " " << c;
@@ -169,7 +163,10 @@ int main()
 ```
 
 ```Output
-c1 = 3c2 = 5 4 3 2 1c3 = 5 4 3 2 1c4 = 5 4c5 = 5 4
+c1 = 3
+c2 = 5 4 3 2 1
+c3 = 5 4 3 2 1
+c5 = 5 4
 ```
 
 ## <a name="size"></a>  initializer_list::size
@@ -180,11 +177,9 @@ Returns the number of elements in the list.
 constexpr size_t size() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 The number of elements in the list.
-
-### Remarks
 
 ## See also
 
