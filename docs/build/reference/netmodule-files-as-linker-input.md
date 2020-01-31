@@ -12,7 +12,7 @@ link.exe accepts MSIL *`.obj`* and *`.netmodule`* files as input. The output fil
 
 ## Remarks
 
-.netmodule files are created by the MSVC compiler with [/LN (Create MSIL Module)](ln-create-msil-module.md) or by the linker with [/NOASSEMBLY (Create a MSIL Module)](noassembly-create-a-msil-module.md). *`.obj`* files are always created in a C++ compilation. For other Visual Studio compilers, use the **/target:module** compiler option.
+*`.netmodule`* files are created by the MSVC compiler with [/LN (Create MSIL Module)](ln-create-msil-module.md) or by the linker with [/NOASSEMBLY (Create a MSIL Module)](noassembly-create-a-msil-module.md). *`.obj`* files are always created in a C++ compilation. For other Visual Studio compilers, use the **/target:module** compiler option.
 
 The linker must be passed the *`.obj`* file from the C++ compilation that created the *`.netmodule`*. Passing in a *`.netmodule`* is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
