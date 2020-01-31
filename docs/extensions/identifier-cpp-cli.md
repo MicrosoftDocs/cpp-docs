@@ -34,7 +34,7 @@ Compiler option: `/ZW`
 
 In the following example, a class named **template** is created in C# and distributed as a DLL. In the C++/CLI program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.
 
-```cs
+```csharp
 // identifier_template.cs
 // compile with: /target:library
 public class template {
@@ -66,7 +66,7 @@ Compiler option: `/clr`
 
 In the following example, a class named **template** is created in C# and distributed as a DLL. In the C++/CLI program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.
 
-```cs
+```csharp
 // identifier_template.cs
 // compile with: /target:library
 public class template {

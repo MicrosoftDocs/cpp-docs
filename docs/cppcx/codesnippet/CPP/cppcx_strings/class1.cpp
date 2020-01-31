@@ -8,7 +8,7 @@ using namespace Strings;
 //<snippet02>
 using namespace Platform;
 String^ str = L"hello"; 
-void main(){} 
+int main(){} 
 //</snippet02>
 
 
