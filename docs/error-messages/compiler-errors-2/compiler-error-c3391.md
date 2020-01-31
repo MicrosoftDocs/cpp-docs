@@ -15,7 +15,7 @@ A generic type was instantiated incorrectly. Check the type definition. For more
 
 The following sample uses C# to create a component that contains a generic type that has certain constraints that are not supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
 
-```cs
+```csharp
 // C3391.cs
 // Compile by using: csc /target:library C3391.cs
 // a C# program

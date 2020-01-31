@@ -30,7 +30,7 @@ public value struct TestStruct {
 
 This is a C# client that consumes the Visual C++ component created in the previous example.
 
-```
+```csharp
 // cpp_out_param_2.cs
 // compile with: /reference:cpp_out_param.dll
 using System;

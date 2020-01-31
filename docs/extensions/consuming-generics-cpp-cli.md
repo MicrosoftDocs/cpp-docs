@@ -17,7 +17,7 @@ This example shows a generic class defined in C#.
 
 ### Code
 
-```cs
+```csharp
 // consuming_generics_from_other_NET_languages.cs
 // compile with: /target:library
 // a C# program
