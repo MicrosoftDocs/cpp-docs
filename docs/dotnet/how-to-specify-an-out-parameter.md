@@ -1,23 +1,23 @@
 ---
-title: "How to: Specify an out Parameter"
+title: "How to: Specify an out parameter"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function parameters", "out parameters"]
 ms.assetid: 02862448-603c-4e9d-a5c5-b45fe38446e3
 ---
-# How to: Specify an out Parameter
+# How to: Specify an out parameter
 
-This sample shows how to specify that a function parameter is an out parameter and how to call that function from a C# program.
+This sample shows how to specify that a function parameter is an `out` parameter, and how to call that function from a C# program.
 
-An out parameter is specified in Visual C++ with <xref:System.Runtime.InteropServices.OutAttribute> .
+An `out` parameter is specified in C++ by using <xref:System.Runtime.InteropServices.OutAttribute> .
 
 ## Example
 
-The first part of this sample is a Visual C++ DLL with a type that contains a function with an out parameter.
+The first part of this sample creates a C++ DLL. It defines a type that contains a function with an `out` parameter.
 
 ```cpp
 // cpp_out_param.cpp
-// compile with: /LD /clr:safe
+// compile with: /LD /clr
 using namespace System;
 public value struct TestStruct {
    static void Test([Runtime::InteropServices::Out] String^ %s) {
@@ -26,9 +26,7 @@ public value struct TestStruct {
 };
 ```
 
-## Example
-
-This is a C# client that consumes the Visual C++ component created in the previous example.
+This source file is a C# client that consumes the C++ component created in the previous example.
 
 ```csharp
 // cpp_out_param_2.cs

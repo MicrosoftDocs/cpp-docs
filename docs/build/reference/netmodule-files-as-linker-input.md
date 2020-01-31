@@ -8,29 +8,29 @@ no-loc: [obj, netmodule, clr, pure, safe]
 ---
 # .netmodule files as linker input
 
-link.exe accepts MSIL .obj and .netmodule files as input. The output file produced by the linker is an assembly or a .netmodule with no run-time dependency on any of the .obj or .netmodule files that were input to the linker.
+link.exe accepts MSIL *`.obj`* and *`.netmodule`* files as input. The output file produced by the linker is an assembly or a *`.netmodule`* file with no run-time dependency on any of the *`.obj`* or *`.netmodule`* files that were input to the linker.
 
 ## Remarks
 
-.netmodule files are created by the MSVC compiler with [/LN (Create MSIL Module)](ln-create-msil-module.md) or by the linker with [/NOASSEMBLY (Create a MSIL Module)](noassembly-create-a-msil-module.md). .obj files are always created in a C++ compilation. For other Visual Studio compilers, use the **/target:module** compiler option.
+.netmodule files are created by the MSVC compiler with [/LN (Create MSIL Module)](ln-create-msil-module.md) or by the linker with [/NOASSEMBLY (Create a MSIL Module)](noassembly-create-a-msil-module.md). *`.obj`* files are always created in a C++ compilation. For other Visual Studio compilers, use the **/target:module** compiler option.
 
-The linker must be passed the .obj file from the C++ compilation that created the .netmodule. Passing in a .netmodule is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
+The linker must be passed the *`.obj`* file from the C++ compilation that created the *`.netmodule`*. Passing in a *`.netmodule`* is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
 For information on how to invoke the linker from the command line, see [Linker command-line syntax](linking.md), [Use the MSVC toolset from the command line](../building-on-the-command-line.md), and [Set the path and environment variables for command-line builds](../setting-the-path-and-environment-variables-for-command-line-builds.md).
 
-Passing a .netmodule or .dll file to the linker that was compiled by the MSVC compiler with **/clr** can result in a linker error. For more information, see [Choosing the format of .netmodule input files](choosing-the-format-of-netmodule-input-files.md).
+Passing a *`.netmodule`* or *`.dll`* file to the linker that was compiled by the MSVC compiler with **/clr** can result in a linker error. For more information, see [Choosing the format of .netmodule input files](choosing-the-format-of-netmodule-input-files.md).
 
-The linker accepts both native .obj files and MSIL .obj files compiled with **/clr**. You can pass mixed .obj files in the same build. The resulting output file's default verifiability is the same as the lowest input module's verifiability.
+The linker accepts both native *`.obj`* files and MSIL *`.obj`* files compiled with **/clr**. You can pass mixed *`.obj`* files in the same build. The resulting output file's default verifiability is the same as the lowest input module's verifiability.
 
-You can change an application that's composed of two or more assemblies to be contained in one assembly. Recompile the assemblies' sources, and then link the .obj files or .netmodule files to produce a single assembly.
+You can change an application that's composed of two or more assemblies to be contained in one assembly. Recompile the assemblies' sources, and then link the *`.obj`* files or *`.netmodule`* files to produce a single assembly.
 
 Specify an entry point using [/ENTRY (Entry-point symbol)](entry-entry-point-symbol.md) when creating an executable image.
 
-When linking with an MSIL .obj or .netmodule file, use [/LTCG (Link-time code generation)](ltcg-link-time-code-generation.md), otherwise when the linker encounters the MSIL .obj or .netmodule, it will restart the link with **/LTCG**. You'll see an informational message that the link is restarting. You can ignore this message, but to improve linker performance, explicitly specify **/LTCG**.
+When linking with an MSIL *`.obj`* or *`.netmodule`* file, use [/LTCG (Link-time code generation)](ltcg-link-time-code-generation.md), otherwise when the linker encounters the MSIL *`.obj`* or *`.netmodule`*, it will restart the link with **/LTCG**. You'll see an informational message that the link is restarting. You can ignore this message, but to improve linker performance, explicitly specify **/LTCG**.
 
 MSIL *`.obj`* or *`.netmodule`* files can also be passed to cl.exe.
 
-Input MSIL .obj or .netmodule files can't have embedded resources. Embed resources in an output module or assembly file by using the [/ASSEMBLYRESOURCE (Embed a managed resource)](assemblyresource-embed-a-managed-resource.md) linker option. Or, use the **/resource** compiler option in other Visual Studio compilers.
+Input MSIL *`.obj`* or *`.netmodule`* files can't have embedded resources. Embed resources in an output module or assembly file by using the [/ASSEMBLYRESOURCE (Embed a managed resource)](assemblyresource-embed-a-managed-resource.md) linker option. Or, use the **/resource** compiler option in other Visual Studio compilers.
 
 ## Examples
 
