@@ -4,7 +4,7 @@ description: "Describes how to use mixed .obj and .netmodule files as linker inp
 ms.date: "01/30/2020"
 helpviewer_keywords: ["MSIL linking", "linking [C++], modules", ".netmodule files", "modules, Visual C++"]
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
-no-loc: [obj, netmodule, clr, pure, safe, catch, try]
+no-loc: [obj, netmodule, clr, pure, safe]
 ---
 # .netmodule files as linker input
 
@@ -28,13 +28,13 @@ Specify an entry point using [/ENTRY (Entry-point symbol)](entry-entry-point-sym
 
 When linking with an MSIL .obj or .netmodule file, use [/LTCG (Link-time code generation)](ltcg-link-time-code-generation.md), otherwise when the linker encounters the MSIL .obj or .netmodule, it will restart the link with **/LTCG**. You'll see an informational message that the link is restarting. You can ignore this message, but to improve linker performance, explicitly specify **/LTCG**.
 
-MSIL .obj or .netmodule files can also be passed to cl.exe.
+MSIL *`.obj`* or *`.netmodule`* files can also be passed to cl.exe.
 
 Input MSIL .obj or .netmodule files can't have embedded resources. Embed resources in an output module or assembly file by using the [/ASSEMBLYRESOURCE (Embed a managed resource)](assemblyresource-embed-a-managed-resource.md) linker option. Or, use the **/resource** compiler option in other Visual Studio compilers.
 
 ## Examples
 
-In C++ code, the **catch** block of a corresponding **try** will be invoked for a non-`System` exception. However, by default, the CLR wraps non-`System` exceptions with <xref:System.Runtime.CompilerServices.RuntimeWrappedException>. When an assembly is created from C++ and non-C++ modules, and you want a **catch** block in C++ code to be invoked from its corresponding **try** clause when the **try** block throws a non-`System` exception, you must add the `[assembly:System::Runtime::CompilerServices::RuntimeCompatibility(WrapNonExceptionThrows=false)]` attribute to the source code for the non-C++ modules.
+In C++ code, the **`catch`** block of a corresponding **`try`** will be invoked for a non-`System` exception. However, by default, the CLR wraps non-`System` exceptions with <xref:System.Runtime.CompilerServices.RuntimeWrappedException>. When an assembly is created from C++ and non-C++ modules, and you want a **`catch`** block in C++ code to be invoked from its corresponding **`try`** clause when the **`try`** block throws a non-`System` exception, you must add the `[assembly:System::Runtime::CompilerServices::RuntimeCompatibility(WrapNonExceptionThrows=false)]` attribute to the source code for the non-C++ modules.
 
 ```cpp
 // MSIL_linking.cpp
