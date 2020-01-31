@@ -1,8 +1,10 @@
 ---
 title: ".netmodule files as linker input"
-ms.date: "05/16/2019"
+description: "Describes how to use mixed .obj and .netmodule files as linker input when creating .NET assemblies."
+ms.date: "01/30/2020"
 helpviewer_keywords: ["MSIL linking", "linking [C++], modules", ".netmodule files", "modules, Visual C++"]
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
+no-loc: [obj, netmodule, clr, pure, safe, catch, try]
 ---
 # .netmodule files as linker input
 
@@ -20,7 +22,7 @@ Passing a .netmodule or .dll file to the linker that was compiled by the MSVC co
 
 The linker accepts both native .obj files and MSIL .obj files compiled with **/clr**. You can pass mixed .obj files in the same build. The resulting output file's default verifiability is the same as the lowest input module's verifiability.
 
-You can change an application that's composed of two or more assemblies to be contained in one assembly. Recompile the assemblies, and then link the .obj files or .netmodule files to produce a single assembly.
+You can change an application that's composed of two or more assemblies to be contained in one assembly. Recompile the assemblies' sources, and then link the .obj files or .netmodule files to produce a single assembly.
 
 Specify an entry point using [/ENTRY (Entry-point symbol)](entry-entry-point-symbol.md) when creating an executable image.
 
@@ -56,8 +58,6 @@ int main() {
 }
 */
 ```
-
-## Example
 
 By changing the `Boolean` value of the `WrapNonExceptionThrows` attribute, you modify the ability of the C++ code to catch a non-`System` exception.
 
