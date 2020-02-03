@@ -1,7 +1,7 @@
 ---
 title: "Command Line Property Pages"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.project.AdditionalOptionsPage"]
+f1_keywords: ["vc.project.AdditionalOptionsPage", "vc.project.CommandLinePage"]
 helpviewer_keywords: ["Command Line property pages"]
 ms.assetid: e1721b6c-8b39-4b44-a41e-69b5bb470cc9
 ---
