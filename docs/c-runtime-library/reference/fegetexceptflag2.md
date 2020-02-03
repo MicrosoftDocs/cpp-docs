@@ -45,7 +45,7 @@ The **fegetexceptflag** function stores the current state of the floating-point 
 |FE_INVALID|A domain error occurred in an earlier floating-point operation.|
 |FE_OVERFLOW|A range error occurred; an earlier floating-point operation result was too large to be represented.|
 |FE_UNDERFLOW|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
-|FE_ALLEXCEPT|The bitwise OR of all supported floating-point exceptions.|
+|FE_ALL_EXCEPT|The bitwise OR of all supported floating-point exceptions.|
 
 The *excepts* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
 
