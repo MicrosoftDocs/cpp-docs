@@ -20,7 +20,7 @@ The following table lists options for LINK.exe. For more information about LINK,
 
 - [Reserved Words](reserved-words.md)
 
-On the command line, linker options are not case-sensitive; for example, /base and /BASE mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
+On the command line, linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
 
 You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify some linker options.
 
@@ -30,7 +30,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |------------|-------------|
 |[@](at-specify-a-linker-response-file.md)|Specifies a response file.|
 |[/ALIGN](align-section-alignment.md)|Specifies the alignment of each section.|
-|[/ALLOWBIND](allowbind-prevent-dll-binding.md)|Specifies that a DLL cannot be bound.|
+|[/ALLOWBIND](allowbind-prevent-dll-binding.md)|Specifies that a DLL can't be bound.|
 |[/ALLOWISOLATION](allowisolation-manifest-lookup.md)|Specifies behavior for manifest lookup.|
 |[/APPCONTAINER](appcontainer-windows-store-app.md)|Specifies whether the app must run within an appcontainer process environment.|
 |[/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)|Adds the <xref:System.Diagnostics.DebuggableAttribute> to a managed image.|
@@ -53,7 +53,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/DEPENDENTLOADFLAG](dependentloadflag.md)|Sets default flags on dependent DLL loads.|
 |[/DLL](dll-build-a-dll.md)|Builds a DLL.|
 |[/DRIVER](driver-windows-nt-kernel-mode-driver.md)|Creates a kernel mode driver.|
-|[/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)|Specifies whether to generate an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature.|
+|[/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)|Specifies whether to generate an executable image that's rebased at load time by using the address space layout randomization (ASLR) feature.|
 |[/ENTRY](entry-entry-point-symbol.md)|Sets the starting address.|
 |[/errorReport](errorreport-report-internal-linker-errors.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 |[/EXPORT](export-exports-a-function.md)|Exports a function.|
@@ -61,13 +61,13 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/FIXED](fixed-fixed-base-address.md)|Creates a program that can be loaded only at its preferred base address.|
 |[/FORCE](force-force-file-output.md)|Forces a link to complete even with unresolved symbols or symbols defined more than once.|
 |[/FUNCTIONPADMIN](functionpadmin-create-hotpatchable-image.md)|Creates an image that can be hot patched.|
-|[/GENPROFILE, /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|Both of these options specify generation of a .pgd file by the linker to support profile-guided optimization (PGO). /GENPROFILE and /FASTGENPROFILE use different default parameters.|
+|[/GENPROFILE, /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|Both of these options specify generation of a *`.pgd`* file by the linker to support profile-guided optimization (PGO). /GENPROFILE and /FASTGENPROFILE use different default parameters.|
 |[/GUARD](guard-enable-guard-checks.md)|Enables Control Flow Guard protection.|
 |[/HEAP](heap-set-heap-size.md)|Sets the size of the heap, in bytes.|
 |[/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)|Specifies support for high-entropy 64-bit address space layout randomization (ASLR).|
-|[/IDLOUT](idlout-name-midl-output-files.md)|Specifies the name of the .idl file and other MIDL output files.|
+|[/IDLOUT](idlout-name-midl-output-files.md)|Specifies the name of the *`.idl`* file and other MIDL output files.|
 |[/IGNORE](ignore-ignore-specific-warnings.md)|Suppresses output of specified linker warnings.|
-|[/IGNOREIDL](ignoreidl-don-t-process-attributes-into-midl.md)|Prevents the processing of attribute information into an .idl file.|
+|[/IGNOREIDL](ignoreidl-don-t-process-attributes-into-midl.md)|Prevents the processing of attribute information into an *`.idl`* file.|
 |[/IMPLIB](implib-name-import-library.md)|Overrides the default import library name.|
 |[/INCLUDE](include-force-symbol-references.md)|Forces symbol references.|
 |[/INCREMENTAL](incremental-link-incrementally.md)|Controls incremental linking.|
@@ -89,7 +89,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/MAPINFO](mapinfo-include-information-in-mapfile.md)|Includes the specified information in the mapfile.|
 |[/MERGE](merge-combine-sections.md)|Combines sections.|
 |[/MIDL](midl-specify-midl-command-line-options.md)|Specifies MIDL command-line options.|
-|[/NATVIS](natvis-add-natvis-to-pdb.md)|Adds debugger visualizers from a Natvis file to the PDB.|
+|[/NATVIS](natvis-add-natvis-to-pdb.md)|Adds debugger visualizers from a Natvis file to the program database (PDB).|
 |[/NOASSEMBLY](noassembly-create-a-msil-module.md)|Suppresses the creation of a .NET Framework assembly.|
 |[/NODEFAULTLIB](nodefaultlib-ignore-libraries.md)|Ignores all (or the specified) default libraries when external references are resolved.|
 |[/NOENTRY](noentry-no-entry-point.md)|Creates a resource-only DLL.|
@@ -98,22 +98,22 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/OPT](opt-optimizations.md)|Controls LINK optimizations.|
 |[/ORDER](order-put-functions-in-order.md)|Places COMDATs into the image in a predetermined order.|
 |[/OUT](out-output-file-name.md)|Specifies the output file name.|
-|[/PDB](pdb-use-program-database.md)|Creates a program database (PDB) file.|
+|[/PDB](pdb-use-program-database.md)|Creates a PDB file.|
 |[/PDBALTPATH](pdbaltpath-use-alternate-pdb-path.md)|Uses an alternate location to save a PDB file.|
-|[/PDBSTRIPPED](pdbstripped-strip-private-symbols.md)|Creates a program database (PDB) file that has no private symbols.|
-|[/PGD](pgd-specify-database-for-profile-guided-optimizations.md)|Specifies a .pgd file for profile-guided optimizations.|
+|[/PDBSTRIPPED](pdbstripped-strip-private-symbols.md)|Creates a PDB file that has no private symbols.|
+|[/PGD](pgd-specify-database-for-profile-guided-optimizations.md)|Specifies a *`.pgd`* file for profile-guided optimizations.|
 |[/POGOSAFEMODE](pogosafemode-linker-option.md)|**Obsolete** Creates a thread-safe PGO instrumented build.|
 |[/PROFILE](profile-performance-tools-profiler.md)|Produces an output file that can be used with the Performance Tools profiler.|
-|[/RELEASE](release-set-the-checksum.md)|Sets the Checksum in the .exe header.|
+|[/RELEASE](release-set-the-checksum.md)|Sets the Checksum in the *`.exe`* header.|
 |[/SAFESEH](safeseh-image-has-safe-exception-handlers.md)|Specifies that the image will contain a table of safe exception handlers.|
 |[/SECTION](section-specify-section-attributes.md)|Overrides the attributes of a section.|
 |[/SOURCELINK](sourcelink.md)|Specifies a SourceLink file to add to the PDB.|
 |[/STACK](stack-stack-allocations.md)|Sets the size of the stack in bytes.|
 |[/STUB](stub-ms-dos-stub-file-name.md)|Attaches an MS-DOS stub program to a Win32 program.|
-|[/SUBSYSTEM](subsystem-specify-subsystem.md)|Tells the operating system how to run the .exe file.|
-|[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md)|Tells the operating system to copy the linker output to a swap file before it is run.|
+|[/SUBSYSTEM](subsystem-specify-subsystem.md)|Tells the operating system how to run the *`.exe`* file.|
+|[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md)|Tells the operating system to copy the linker output to a swap file before it's run.|
 |[/TLBID](tlbid-specify-resource-id-for-typelib.md)|Specifies the resource ID of the linker-generated type library.|
-|[/TLBOUT](tlbout-name-dot-tlb-file.md)|Specifies the name of the .tlb file and other MIDL output files.|
+|[/TLBOUT](tlbout-name-dot-tlb-file.md)|Specifies the name of the *`.tlb`* file and other MIDL output files.|
 |[/TSAWARE](tsaware-create-terminal-server-aware-application.md)|Creates an application that is designed specifically to run under Terminal Server.|
 |[/USEPROFILE](useprofile.md)|Uses profile-guided optimization training data to create an optimized image.|
 |[/VERBOSE](verbose-print-progress-messages.md)|Prints linker progress messages.|

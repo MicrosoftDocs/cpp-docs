@@ -8,7 +8,7 @@ ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
 ---
 # ML and ML64 command-line reference
 
-Assembles and links one or more assembly-language source files. The command-line options are case sensitive.
+Assembles and links one or more assembly-language source files. The command-line options are case-sensitive.
 
 For more information on ml64.exe, see [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md).
 
@@ -16,7 +16,7 @@ For more information on ml64.exe, see [MASM for x64 (ml64.exe)](masm-for-x64-ml6
 
 > ML \[*options*] *filename* \[ \[*options*]  *filename*]
 >
-> ML64 \[*options*] *filename* \[ \[*options*]  *filename*] ... \[/link *linkoptions*]
+> ML64 \[*options*] *filename* \[ \[*options*]  *filename*] ... \[/link *link_options*]
 
 ### Parameters
 
@@ -25,21 +25,21 @@ The options listed in the following table.
 
 |Option|Action|
 |------------|------------|
-|**/AT**|Enables tiny-memory-model support. Enables error messages for code constructs that violate the requirements for .com format files. Note that this is not equivalent to the [.MODEL](dot-model.md) **TINY** directive.<br /><br /> Not available in ml64.exe.|
+|**/AT**|Enables tiny-memory-model support. Enables error messages for code constructs that violate the requirements for .com format files. This option isn't equivalent to the [.MODEL](dot-model.md) **TINY** directive.<br /><br /> Not available in ml64.exe.|
 |**/Bl** *filename*|Selects an alternate linker.|
-|**/c**|Assembles only. Does not link.|
-|**/coff**|Generates common object file format (COFF) type of object module. Generally required for Win32 assembly language development.<br /><br /> Not available in ml64.exe.|
+|**/c**|Assembles only. Does no linking.|
+|**/coff**|Generates common object file format (COFF) type of object module. Required for Win32 assembly language development.<br /><br /> Not available in ml64.exe.|
 |**/Cp**|Preserves case of all user identifiers.|
 |**/Cu**|Maps all identifiers to upper case (default).<br /><br /> Not available in ml64.exe.|
 |**/Cx**|Preserves case in public and extern symbols.|
-|**/D** *symbol*⟦=*value*⟧|Defines a text macro with the given name. If *value* is missing, it is blank. Multiple tokens separated by spaces must be enclosed in quotation marks.|
+|**/D** *symbol*⟦=*value*⟧|Defines a text macro with the given name. If *value* is missing, it's blank. Multiple tokens separated by spaces must be enclosed in quotation marks.|
 |**/EP**|Generates a preprocessed source listing (sent to STDOUT). See **/Sf**.|
 |**/ERRORREPORT** [ **NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND** ]| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
-|**/F** *hexnum*|Sets stack size to *hexnum* bytes (this is the same as **/link/STACK**:*number*). The value must be expressed in hexadecimal notation. There must be a space between **/F** and *hexnum*.|
+|**/F** *hexnum*|Sets stack size to *hexnum* bytes (the same as **/link /STACK**:*number*). The value must be expressed in hexadecimal notation. There must be a space between **/F** and *hexnum*.|
 |**/Fe** *filename*|Names the executable file.|
 |**/Fl**⟦*filename*⟧|Generates an assembled code listing. See **/Sf**.|
 |**/Fm**⟦*filename*⟧|Creates a linker map file.|
-|**/Fo** *filename*|Names an object file. See Remarks section for more information.|
+|**/Fo** *filename*|Names an object file. For more information, see [Remarks](#remarks).|
 |**/FPi**|Generates emulator fix-ups for floating-point arithmetic (mixed language only).<br /><br /> Not available in ml64.exe.|
 |**/Fr**⟦*filename*⟧|Generates a source browser .sbr file.|
 |**/FR**⟦*filename*⟧|Generates an extended form of a source browser .sbr file.|
@@ -50,7 +50,7 @@ The options listed in the following table.
 |**/help**|Calls QuickHelp for help on ML.|
 |**/I** *pathname*|Sets path for include file. A maximum of 10 **/I** options is allowed.|
 |**/nologo**|Suppresses messages for successful assembly.|
-|**/omf**|Generates object module file format (OMF) type of object module.  **/omf** implies **/c**; ML.exe does not support linking OMF objects.<br /><br /> Not available in ml64.exe.|
+|**/omf**|Generates object module file format (OMF) type of object module.  **/omf** implies **/c**; ML.exe doesn't support linking OMF objects.<br /><br /> Not available in ml64.exe.|
 |**/Sa**|Turns on listing of all available information.|
 |**/safeseh**|Marks the object as either containing no exception handlers or containing exception handlers that are all declared with [.SAFESEH](dot-safeseh.md).<br /><br /> Not available in ml64.exe.|
 |**/Sf**|Adds first-pass listing to listing file.|
@@ -60,7 +60,7 @@ The options listed in the following table.
 |**/Ss** *text*|Specifies text for source listing. Same as [SUBTITLE](subtitle.md) text.|
 |**/St** *text*|Specifies title for source listing. Same as [TITLE](title.md) text.|
 |**/Sx**|Turns on false conditionals in listing.|
-|**/Ta** *filename*|Assembles source file whose name does not end with the .asm extension.|
+|**/Ta** *filename*|Assembles source file whose name doesn't end with the .asm extension.|
 |**/w**|Same as **/W0/WX**.|
 |**/W** *level*|Sets the warning level, where *level* = 0, 1, 2, or 3.|
 |**/WX**|Returns an error code if warnings are generated.|
@@ -76,14 +76,16 @@ The options listed in the following table.
 *filename*\
 The name of the file.
 
-*linkoptions*\
-The link options.  See [Linker Options](../../build/reference/linker-options.md) for more information.
+*link_options*\
+The link options. For more information, see [Linker options](../../build/reference/linker-options.md).
 
 ## Remarks
 
 Some command-line options to ML and ML64 are placement-sensitive. For example, because ML and ML64 can accept several **/c** options, any corresponding **/Fo** options must be specified before **/c**. The following command-line example illustrates an object file specification for each assembly file specification:
 
-**ml.exe /Fo a1.obj /c a.asm /Fo b1.obj /c b.asm**
+```cmd
+ml.exe /Fo a1.obj /c a.asm /Fo b1.obj /c b.asm
+```
 
 ## Environment Variables
 

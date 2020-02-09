@@ -1,6 +1,6 @@
 ---
 title: "Running NMAKE"
-description: "Reference guide to the Microsoft NMAKE build tool command-line options."
+description: "Reference guide to the Microsoft NMAKE command-line options."
 ms.date: "02/09/2020"
 helpviewer_keywords: ["targets, building", "response files, NMAKE", "targets", "command files", "NMAKE program, targets", "NMAKE program, running", "command files, NMAKE"]
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
@@ -37,7 +37,7 @@ NMAKE options are described in the following table. Options are preceded by eith
 | **/N** | Displays but doesn't execute commands; preprocessing commands are executed. Doesn't display commands in recursive NMAKE calls. Useful for debugging makefiles and checking timestamps. To set or clear **/N** for part of a makefile, use `!CMDSWITCHES`. |
 | **/NOLOGO** | Suppresses the NMAKE copyright message. |
 | **/P** | Displays information (macro definitions, inference rules, targets, [`.SUFFIXES`](dot-directives.md) list) to standard output, and then runs the build. If no makefile or command-line target exists, it displays information only. Use with **/D** to debug a makefile. |
-| **/Q** | Checks timestamps of targets; doesn't run the build. Returns a zero exit code if all targets are up-to-date, and a nonzero exit code if any target is out of date. Preprocessing commands are executed. Useful when running NMAKE from a batch file. |
+| **/Q** | Checks timestamps of targets; doesn't run the build. Returns a zero exit code if all targets are up to date, and a nonzero exit code if any target is out of date. Preprocessing commands are executed. Useful when running NMAKE from a batch file. |
 | **/R** | Clears the `.SUFFIXES` list and ignores inference rules and macros that are defined in the Tools.ini file or that are predefined. |
 | **/S** | Suppresses display of executed commands. To suppress display in part of a makefile, use the **\@** command modifier or [`.SILENT`](dot-directives.md). To set or clear **/S** for part of a makefile, use `!CMDSWITCHES`. |
 | **/T** | Updates timestamps of command-line targets (or first makefile target) and executes preprocessing commands but doesn't run the build. |
@@ -59,7 +59,7 @@ NMAKE returns the following exit codes:
 | 1 | Incomplete build (issued only when **/K** is used) |
 | 2 | Program error, possibly caused by one of these issues:<br /> - A syntax error in the makefile<br /> - An error or exit code from a command<br /> - An interruption by the user |
 | 4 | System error — out of memory |
-| 255 | Target isn't up-to-date (issued only when **/Q** is used) |
+| 255 | Target isn't up to date (issued only when **/Q** is used) |
 
 ## See also
 

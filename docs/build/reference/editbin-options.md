@@ -10,7 +10,7 @@ ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
 
 You can use EDITBIN to modify object files, executable files, and dynamic-link libraries (DLLs). Options specify the changes that EDITBIN makes.
 
-An option consists of an option specifier, which is either a dash ( - ) or a forward slash ( / ), followed by the name of the option. Option names cannot be abbreviated. Some options take arguments that are specified after a colon ( : ). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword arguments or file name arguments are not case-sensitive. For example, -bind and /BIND mean the same thing.
+An option consists of an option specifier, which is either a dash (`-`) or a forward slash (`/`), followed by the name of the option. Option names can't be abbreviated. Some options take arguments that are specified after a colon (`:`). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword arguments or file name arguments aren't case-sensitive. For example, `-bind` and `/BIND` mean the same thing.
 
 EDITBIN has the following options:
 
@@ -33,11 +33,11 @@ EDITBIN has the following options:
 |[/SECTION](section-editbin.md)|Overrides the attributes of a section.|
 |[/STACK](stack.md)|Sets the size of the executable image’s stack in bytes.|
 |[/SUBSYSTEM](subsystem.md)|Specifies the execution environment.|
-|[/SWAPRUN](swaprun.md)|Specifies that the executable image must be copied to the swap file, and then run from there.|
+|[/SWAPRUN](swaprun.md)|Specifies that the executable image is copied to the swap file, and then run from there.|
 |[/TSAWARE](tsaware.md)|Specifies that the app is designed to run in a multi-user environment.|
 |[/VERSION](version.md)|Sets the version number in the header.|
 
 ## See also
 
-[Additional MSVC Build Tools](c-cpp-build-tools.md)\
+[Additional MSVC build tools](c-cpp-build-tools.md)\
 [EDITBIN Reference](editbin-reference.md)

@@ -1,6 +1,6 @@
 ---
 title: "/ERRORREPORT (Report internal linker errors)"
-description: "Reference guide to the Microsoft NMAKE build tool command-line options."
+description: "Reference guide to the Microsoft NMAKE command-line options."
 ms.date: "02/09/2020"
 f1_keywords: ["/ERRORREPORT", "VC.Project.VCLinkerTool.ErrorReporting"]
 helpviewer_keywords: ["/ERRORREPORT linker option", "ERRORREPORT linker option", "-ERRORREPORT linker option"]

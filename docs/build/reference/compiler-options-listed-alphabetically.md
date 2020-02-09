@@ -6,7 +6,9 @@ helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
 
-The following is a comprehensive alphabetical list of compiler options. For a categorical list, see the [Compiler options listed by category](compiler-options-listed-by-category.md).
+This table contains an alphabetical list of compiler options. For a list of compiler options by category, see the [Compiler options listed by category](compiler-options-listed-by-category.md) article.
+
+## Compiler options
 
 |Option|Purpose|
 |------------|-------------|
@@ -21,7 +23,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/c](c-compile-without-linking.md)|Compiles without linking.|
 |[/cgthreads](cgthreads-code-generation-threads.md)|Specifies number of cl.exe threads to use for optimization and code generation.|
 |[/clr](clr-common-language-runtime-compilation.md)|Produces an output file to run on the common language runtime.|
-|[/constexpr](constexpr-control-constexpr-evaluation.md)|Control constexpr evaluation at compile-time.|
+|[/constexpr](constexpr-control-constexpr-evaluation.md)|Control **constexpr** evaluation at compile time.|
 |[/D](d-preprocessor-definitions.md)|Defines constants and macros.|
 |[/diagnostics](diagnostics-compiler-diagnostic-options.md)|Controls the format of diagnostic messages.|
 |[/doc](doc-process-documentation-comments-c-cpp.md)|Process documentation comments to an XML file.|
@@ -29,11 +31,11 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/EH](eh-exception-handling-model.md)|Specifies the model of exception handling.|
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to standard output.|
 |[/errorReport](errorreport-report-internal-compiler-errors.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
-|[/execution-charset](execution-charset-set-execution-character-set.md)|Set execution character set.|
+|[/execution-charset](execution-charset-set-execution-character-set.md)|Set the execution character set.|
 |[/experimental:module](experimental-module.md)|Enables experimental module support.|
 |[/experimental:preprocessor](experimental-preprocessor.md)|Enables experimental conforming preprocessor support.|
 |[/F](f-set-stack-size.md)|Sets stack size.|
-|[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specific x64 architecture or for the specifics of micro-architectures in both the AMD64 and Extended Memory 64 Technology (EM64T) architectures.|
+|[/favor](favor-optimize-for-architecture-specifics.md)|Produces code optimized for a specific x64 architecture. Or, for the specific micro-architectures in both the AMD64 and EM64T architectures.|
 |[/FA](fa-fa-listing-file.md)|Creates a listing file.|
 |[/Fa](fa-fa-listing-file.md)|Sets the listing file name.|
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Display full path of source code files passed to cl.exe in diagnostic text.|
@@ -46,7 +48,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/fp](fp-specify-floating-point-behavior.md)|Specify floating-point behavior.|
 |[/Fp](fp-name-dot-pch-file.md)|Specifies a precompiled header file name.|
 |[/FR](fr-fr-create-dot-sbr-file.md)<br /><br /> [/Fr](fr-fr-create-dot-sbr-file.md)|Generates browser files. **/Fr** is deprecated.|
-|[/FS](fs-force-synchronous-pdb-writes.md)|Forces writes to the program database (PDB) file to be serialized through MSPDBSRV.EXE.|
+|[/FS](fs-force-synchronous-pdb-writes.md)|Forces serialization of all writes to the program database (PDB) file through MSPDBSRV.EXE.|
 |[/FU](fu-name-forced-hash-using-file.md)|Forces the use of a file name as if it had been passed to the [#using](../../preprocessor/hash-using-directive-cpp.md) directive.|
 |[/Fx](fx-merge-injected-code.md)|Merges injected code with source file.|
 |[/GA](ga-optimize-for-windows-application.md)|Optimizes code for Windows application.|
@@ -108,7 +110,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
 |[/Qspectre](qspectre.md)|Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.|
 |[/Qspectre-load](qspectre-load.md)|Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on load instructions.|
-|[/Qspectre-load-cf](qspectre-load-cf.md)|Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on control flow instructions which load memory.|
+|[/Qspectre-load-cf](qspectre-load-cf.md)|Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on control flow instructions that load memory.|
 |[/Qvec-report (Auto-Vectorizer Reporting Level)](qvec-report-auto-vectorizer-reporting-level.md)|Enables reporting levels for automatic vectorization.|
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/sdl](sdl-enable-additional-security-checks.md)|Enables additional security features and warnings.|
