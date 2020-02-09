@@ -1,6 +1,7 @@
 ---
 title: "EDITBIN Options"
-ms.date: "11/04/2016"
+description: "Reference guide to the Microsoft EDITBIN utility command-line options."
+ms.date: "02/09/2020"
 f1_keywords: ["editbin"]
 helpviewer_keywords: ["EDITBIN program, options"]
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
@@ -20,7 +21,7 @@ EDITBIN has the following options:
 |[/APPCONTAINER](appcontainer.md)|Specifies whether the app must run within an AppContainer—for example, a UWP app.|
 |[/BIND](bind.md)|Sets the addresses for the entry points in the specified objects to speed load time.|
 |[/DYNAMICBASE](dynamicbase.md)|Specifies whether the DLL or executable image can be randomly rebased at load-time by using address space layout randomization (ASLR).|
-|[/ERRORREPORT](errorreport-editbin-exe.md)|Reports internal errors to Microsoft.|
+|[/ERRORREPORT](errorreport-editbin-exe.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 |[/HEAP](heap.md)|Sets the size of the executable image’s heap in bytes.|
 |[/HIGHENTROPYVA](highentropyva.md)|Specifies whether the DLL or executable image supports high entropy (64-bit) address space layout randomization (ASLR).|
 |[/INTEGRITYCHECK](integritycheck.md)|Specifies whether to check the digital signature at load time.|
@@ -38,5 +39,5 @@ EDITBIN has the following options:
 
 ## See also
 
-[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)\
 [EDITBIN Reference](editbin-reference.md)

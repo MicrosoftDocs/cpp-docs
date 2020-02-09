@@ -1,11 +1,12 @@
 ---
-title: "Compiler Options Listed Alphabetically"
-ms.date: "01/08/2020"
+title: "Compiler options listed alphabetically"
+description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
+ms.date: "02/09/2020"
 helpviewer_keywords: ["compiler options, C++"]
 ---
-# Compiler Options Listed Alphabetically
+# Compiler options listed alphabetically
 
-The following is a comprehensive alphabetical list of compiler options. For a categorical list, see the [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
+The following is a comprehensive alphabetical list of compiler options. For a categorical list, see the [Compiler options listed by category](compiler-options-listed-by-category.md).
 
 |Option|Purpose|
 |------------|-------------|
@@ -27,7 +28,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/E](e-preprocess-to-stdout.md)|Copies preprocessor output to standard output.|
 |[/EH](eh-exception-handling-model.md)|Specifies the model of exception handling.|
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to standard output.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|Allows you to provide internal compiler error (ICE) information directly to the Microsoft C++ team.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 |[/execution-charset](execution-charset-set-execution-character-set.md)|Set execution character set.|
 |[/experimental:module](experimental-module.md)|Enables experimental module support.|
 |[/experimental:preprocessor](experimental-preprocessor.md)|Enables experimental conforming preprocessor support.|
@@ -165,5 +166,5 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 
 ## See also
 
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+[MSVC compiler options](compiler-options.md)\
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)

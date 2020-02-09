@@ -1,9 +1,10 @@
 ---
-title: "ARM Assembler Command-Line Reference"
-ms.date: "08/30/2018"
+title: "ARM Assembler command-line reference"
+description: "Reference guide to the Microsoft ARM assembler command-line options."
+ms.date: "02/09/2020"
 ms.assetid: f7b89478-1ab5-4995-8cde-a805f0462c45
 ---
-# ARM Assembler Command-Line Reference
+# ARM Assembler command-line reference
 
 This article provides command-line information about the Microsoft ARM assembler, *armasm*, which compiles ARMv7 Thumb assembly language into the Microsoft implementation of the Common Object File Format (COFF). The linker can link COFF code with object code that is produced by the ARM assembler or by the C compiler, together with object libraries that are created by the librarian.
 
@@ -58,11 +59,7 @@ A combination of zero or more of the following:
    Generate debugging information.
 
 - **-errorReport:** *option*<br/>
-   Specify how internal assembler errors are reported to Microsoft.  Possible values for *option* are:<br/>
-   **none**—Do not send reports.<br/>
-   **prompt**—Prompt the user to send reports immediately.<br/>
-   **queue**—Prompt the user to send reports at the next admin logon. This is the default.<br/>
-   **send**—Send reports automatically.
+   This option is deprecated, and has no effect. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 *sourcefile*<br/>
 The name of the source file.
@@ -74,11 +71,12 @@ The name of the object (output) file.
 
 The following example demonstrates how to use armasm in a typical scenario. First, use armasm to build an assembly language source (.asm) file to an object (.obj) file. Then, use the CL command-line C compiler to compile a source (.c) file, and also specify the linker option to link the ARM object file.
 
-**armasm myasmcode.asm -o myasmcode.obj**
-
-**cl myccode.c /link myasmcode.obj**
+```cmd
+armasm myasmcode.asm -o myasmcode.obj
+cl myccode.c /link myasmcode.obj
+```
 
 ## See also
 
 [ARM Assembler Diagnostic Messages](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>
-[ARM Assembler Directives](../../assembler/arm/arm-assembler-directives.md)<br/>
+[ARM Assembler Directives](../../assembler/arm/arm-assembler-directives.md)

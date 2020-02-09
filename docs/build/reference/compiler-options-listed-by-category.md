@@ -1,12 +1,13 @@
 ---
 title: "Compiler Options Listed by Category"
-ms.date: "01/08/2020"
+description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
+ms.date: "02/09/2020"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
 # Compiler options listed by category
 
-This article contains a categorical list of compiler options. For an alphabetical list, see [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md).
+This article contains a categorical list of compiler options. For an alphabetical list, see [Compiler options listed alphabetically](compiler-options-listed-alphabetically.md).
 
 ## Optimization
 
@@ -150,7 +151,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md)|Increases the number of addressable sections in an .obj file.|
 |[/c](c-compile-without-linking.md)|Compiles without linking.|
 |[/cgthreads](cgthreads-code-generation-threads.md)|Specifies number of cl.exe threads to use for optimization and code generation.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|Enables you to provide internal compiler error (ICE) information directly to the Microsoft C++ team.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Displays the full path of source code files passed to cl.exe in diagnostic text.|
 |[/FS](fs-force-synchronous-pdb-writes.md)|Forces writes to the program database (PDB) file to be serialized through MSPDBSRV.EXE.|
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
@@ -206,6 +207,7 @@ Experimental options may only be supported by certain versions of the compiler, 
 |Option|Purpose|
 |------------|-------------|
 |[/clr:noAssembly](clr-common-language-runtime-compilation.md)|Deprecated. Use [/LN (Create MSIL Module)](ln-create-msil-module.md) instead.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 |[/Fr](fr-fr-create-dot-sbr-file.md)|Deprecated. Creates a browse information file without local variables.|
 |[/Ge](ge-enable-stack-probes.md)|Deprecated. Activates stack probes. On by default.|
 |[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
@@ -223,6 +225,6 @@ Experimental options may only be supported by certain versions of the compiler, 
 
 ## See also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[C/C++ building reference](c-cpp-building-reference.md)\
+[MSVC compiler options](compiler-options.md)\
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)

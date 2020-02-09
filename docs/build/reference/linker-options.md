@@ -1,7 +1,7 @@
 ---
 title: "MSVC Linker options"
-description: A list of the options supported by the Microsoft LINK linker.
-ms.date: "09/24/2019"
+description: "A list of the options supported by the Microsoft LINK linker."
+ms.date: "02/09/2020"
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
@@ -55,7 +55,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/DRIVER](driver-windows-nt-kernel-mode-driver.md)|Creates a kernel mode driver.|
 |[/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)|Specifies whether to generate an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature.|
 |[/ENTRY](entry-entry-point-symbol.md)|Sets the starting address.|
-|[/errorReport](errorreport-report-internal-linker-errors.md)|Reports internal linker errors to Microsoft.|
+|[/errorReport](errorreport-report-internal-linker-errors.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 |[/EXPORT](export-exports-a-function.md)|Exports a function.|
 |[/FILEALIGN](filealign.md)|Aligns sections within the output file on multiples of a specified value.|
 |[/FIXED](fixed-fixed-base-address.md)|Creates a program that can be loaded only at its preferred base address.|

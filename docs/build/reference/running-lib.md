@@ -1,7 +1,7 @@
 ---
 title: "Running LIB"
-description: Describes the command-line options you can use with lib.exe.
-ms.date: "09/25/2019"
+description: "Describes the command-line options you can use with lib.exe."
+ms.date: "02/09/2020"
 f1_keywords: ["VC.Project.VCLibrarianTool.TargetMachine", "Lib", "VC.Project.VCLibrarianTool.PrintProgress", "VC.Project.VCLibrarianTool.SuppressStartupBanner"]
 helpviewer_keywords: ["-MACHINE target platform option", "command files, LIB", "MACHINE target platform option", "colon command files", "VERBOSE library manager option", "/NOLOGO library manager option", "dash option specifier", "/MACHINE target platform option", "forward slash option specifier", "-NOLOGO library manager option", "LIB [C++], running LIB", "-VERBOSE library manager option", "/VERBOSE library manager option", "command files", "NOLOGO library manager option", "slash (/)", "semicolon, command files", "/ command files"]
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
@@ -34,9 +34,7 @@ The following options apply to all modes of LIB:
 
 > **/ERRORREPORT** \[**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
 
-If lib.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
-
-For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
+The /ERRORREPORT option is deprecated, and has no effect. Its arguments are ignored. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 > **/LINKREPRO:**_directory-path_ \
 > **/LINKREPROTARGET:**_filename_

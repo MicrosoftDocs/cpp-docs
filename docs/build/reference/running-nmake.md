@@ -1,6 +1,7 @@
 ---
 title: "Running NMAKE"
-ms.date: "10/29/2019"
+description: "Reference guide to the Microsoft NMAKE build tool command-line options."
+ms.date: "02/09/2020"
 helpviewer_keywords: ["targets, building", "response files, NMAKE", "targets", "command files", "NMAKE program, targets", "NMAKE program, running", "command files, NMAKE"]
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
 ---
@@ -27,7 +28,7 @@ NMAKE options are described in the following table. Options are preceded by eith
 | **/C** | Suppresses default output, including nonfatal NMAKE errors or warnings, timestamps, and NMAKE copyright message. Suppresses warnings issued by **/K**. |
 | **/D** | Displays timestamps of each evaluated target and dependent and a message when a target doesn't exist. Useful with **/P** for debugging a makefile. Use `!CMDSWITCHES` to set or clear **/D** for part of a makefile. |
 | **/E** | Causes environment variables to override makefile macro definitions. |
-| **/ERRORREPORT** [ **NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND** ] | If nmake.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.<br /><br /> For more information, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md). |
+| **/ERRORREPORT** [ **NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND** ] | Deprecated. [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings control reporting. |
 | **/F** *filename* | Specifies *filename* as a makefile. Spaces or tabs can precede *filename*. Specify **/F** once for each makefile. To supply a makefile from standard input, specify a dash (`-`) for *filename*, and end keyboard input with either **F6** or **CTRL+Z**. |
 | **/G** | Displays the makefiles included with the `!INCLUDE` directive. For more information, see [Makefile Preprocessing Directives](makefile-preprocessing-directives.md). |
 | **/HELP**, **/?** | Displays a brief summary of NMAKE command-line syntax. |

@@ -1,6 +1,7 @@
 ---
 title: "DUMPBIN options"
-ms.date: "10/24/2019"
+description: "Reference guide to the Microsoft DUMPBIN utility command-line options."
+ms.date: "02/09/2020"
 f1_keywords: ["dumpbin"]
 helpviewer_keywords: ["DUMPBIN program, options"]
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
@@ -25,7 +26,7 @@ DUMPBIN has the following options:
 
 - [/DISASM\[:{BYTES\|NOBYTES}\]](disasm.md)
 
-- [/ERRORREPORT:{NONE|PROMPT|QUEUE|SEND}](errorreport-dumpbin-exe.md)
+- [/ERRORREPORT:{NONE|PROMPT|QUEUE|SEND}](errorreport-dumpbin-exe.md) (Deprecated)
 
 - [/EXPORTS](dash-exports.md)
 
