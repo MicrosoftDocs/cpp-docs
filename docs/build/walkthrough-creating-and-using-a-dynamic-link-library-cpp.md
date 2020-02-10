@@ -525,9 +525,7 @@ To fix this issue, you could copy the library file directly into your client app
 
    `..\..\MathLibrary\$(IntDir)`
 
-   If your DLL and client projects are in the same solution, the relative path should look like this:
-
-   `..\$(IntDir)`
+   If your DLL and client projects are in other locations, adjust the relative path to match.
 
    ![Add the library directory](media/mathclient-additional-library-directories.png "Add the library directory")
 
@@ -551,9 +549,7 @@ One way to avoid this issue is to copy the DLL to the directory that contains yo
 
    `xcopy /y /d "..\..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`
 
-   If your DLL and client projects are in the same solution directory, then enter this command:
-
-   `xcopy /y /d "..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`
+   If your DLL and client projects are in other directories, change the relative path to the DLL to match.
 
    ![Add the post-build command](media/mathclient-post-build-command-line.png "Add the post-build command")
 
