@@ -125,7 +125,7 @@ An `extent` object on which the new `extent` object is based.
 
 ## Remarks
 
-The parameterless constructor initializes an `extent` object that has a rank of three.
+The default constructor initializes an `extent` object that has a rank of three.
 
 If an array is used to construct an `extent` object, the length of the array must match the rank of the `extent` object.
 

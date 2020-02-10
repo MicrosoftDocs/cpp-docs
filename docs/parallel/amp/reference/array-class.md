@@ -398,7 +398,7 @@ The next-to-most-significant component of the extent of this section.
 The least significant component of the extent of this section.
 
 *_InputIterator*<br/>
-The type of the input interator.
+The type of the input iterator.
 
 *_Src*<br/>
 To object to copy.

@@ -552,7 +552,7 @@ An `array_view` object or a const `array_view` object that is based on this `arr
 
 Sometimes it is convenient to view a multi-dimensional array as a linear, one-dimensional array, which may have a different value type than the source array. You can achieve this on an `array_view` by using this method.
 
-**Warning** Reinterpeting an array_view object by using a different value type is a potentially unsafe operation. This functionality should be used with care.
+**Warning** Reinterpreting an array_view object by using a different value type is a potentially unsafe operation. This functionality should be used with care.
 
 Here's an example:
 

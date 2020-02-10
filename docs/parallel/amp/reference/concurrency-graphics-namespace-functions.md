@@ -126,7 +126,7 @@ The type of the destination object.
 The offset into the destination at which to begin copying.
 
 *InputIterator*<br/>
-The type of the input interator.
+The type of the input iterator.
 
 *OutputIterator*<br/>
 The type of the output iterator.
@@ -261,7 +261,7 @@ The type of the destination object.
 The offset into the destination at which to begin copying.
 
 *InputIterator*<br/>
-The type of the input interator.
+The type of the input iterator.
 
 *OutputIterator*<br/>
 The type of the output iterator.

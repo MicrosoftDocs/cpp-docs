@@ -144,7 +144,7 @@ class int_3;
 
 Default constructor, initializes all elements with 0.
 
-## Syntax
+### Syntax
 
 ```cpp
 int_3() restrict(amp,cpu);
@@ -195,7 +195,7 @@ The object used to initialize.
 
 ## <a name="size"></a> size
 
-## Syntax
+### Syntax
 
 ```cpp
 static const int size = 3;

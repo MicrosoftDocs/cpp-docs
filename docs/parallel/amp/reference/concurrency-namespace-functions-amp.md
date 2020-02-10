@@ -31,7 +31,7 @@ A `tile_barrier` object.
 
 ## <a name="amp_uninitialize"></a>  amp_uninitialize
 
-Uninitializes the C++ AMP runtime. It is legal to call this function multiple times during an applications lifetime. Calling any C++ AMP API afer calling this function will reinitialize the C++ AMP runtime. Note that it is illegal to use C++ AMP objects across calls to this function and doing so will result in undefined behavior. Also, concurrently calling this function and any other AMP APIs is illegal and would result in undefined behavior.
+Uninitializes the C++ AMP runtime. It is legal to call this function multiple times during an applications lifetime. Calling any C++ AMP API after calling this function will reinitialize the C++ AMP runtime. Note that it is illegal to use C++ AMP objects across calls to this function and doing so will result in undefined behavior. Also, concurrently calling this function and any other AMP APIs is illegal and would result in undefined behavior.
 
 ```cpp
 void __cdecl amp_uninitialize();
@@ -94,7 +94,7 @@ inline float atomic_exchange(
 ### Parameters
 
 *_Dest*<br/>
-Pointer to the destionation location.
+Pointer to the destination location.
 
 *value*<br/>
 The new value.
@@ -301,7 +301,7 @@ inline unsigned int atomic_fetch_sub(
 ### Parameters
 
 *_Dest*<br/>
-Pointer to the destionation location.
+Pointer to the destination location.
 
 *value*<br/>
 The value to be subtracted.
@@ -312,7 +312,7 @@ The original value of the memory location.
 
 ## <a name="atomic_fetch_xor"></a>  atomic_fetch_xor Function (C++ AMP)
 
-Atomically peforms an bitwise XOR operation of a value and a memory location.
+Atomically performs an bitwise XOR operation of a value and a memory location.
 
 ```cpp
 inline int atomic_fetch_xor(
@@ -415,7 +415,7 @@ The object to copy to.
 An output iterator to the beginning position at destination.
 
 *InputIterator*<br/>
-The type of the input interator.
+The type of the input iterator.
 
 *OutputIterator*<br/>
 The type of the output iterator.
@@ -504,7 +504,7 @@ The object to copy to.
 An output iterator to the beginning position at destination.
 
 *InputIterator*<br/>
-The type of the input interator.
+The type of the input iterator.
 
 *OutputIterator*<br/>
 The type of the output iterator.

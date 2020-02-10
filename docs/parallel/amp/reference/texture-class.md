@@ -545,7 +545,7 @@ The next-to-most-significant component of the texture.
 The least significant component of the extent of the texture.
 
 *_Input_iterator*<br/>
-The type of the input interator.
+The type of the input iterator.
 
 *_Mipmap_levels*<br/>
 The number of mipmap levels in the underlying texture. If 0 is specified, the texture will have the full range of mipmap levels down to the smallest possible size for the specified extent.

@@ -6,7 +6,7 @@ ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
 ---
 # short_vector_traits Structure
 
-short_vector_traits allows retrival of the underlying vector length and scalar type of a short vector type or a scalar type
+short_vector_traits allows retrieval of the underlying vector length and scalar type of a short vector type or a scalar type
 
 ## Syntax
 

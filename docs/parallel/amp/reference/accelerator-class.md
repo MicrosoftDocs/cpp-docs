@@ -472,7 +472,7 @@ The path to the accelerator.
 
 ## <a name="set_default_cpu_access_type"></a> set_default_cpu_access_type
 
-Set the default cpu access_type for arrays created on this accelerator or for implicit memory allocations as part of array_views accessed on this accelerator. This method only succeeds if the default_cpu_access_type for the accelerator has not already been overriden by a previous call to this method and the runtime selected default_cpu_access_type for this accelerator has not yet been used for allocating an array or for an implicit memory allocation backing an array_view accessed on this accelerator.
+Set the default cpu access_type for arrays created on this accelerator or for implicit memory allocations as part of array_views accessed on this accelerator. This method only succeeds if the default_cpu_access_type for the accelerator has not already been overridden by a previous call to this method and the runtime selected default_cpu_access_type for this accelerator has not yet been used for allocating an array or for an implicit memory allocation backing an array_view accessed on this accelerator.
 
 ```cpp
 bool set_default_cpu_access_type(access_type _Default_cpu_access_type);
