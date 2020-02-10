@@ -11,7 +11,7 @@ The `direct3d` namespace provides functions that support D3D interoperability. I
 
 ## Syntax
 
-```
+```cpp
 namespace direct3d;
 ```
 

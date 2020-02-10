@@ -10,11 +10,11 @@ ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
 |-|-|
 |[access_type Enumeration](#access_type)|[queuing_mode Enumeration](#queuing_mode)|
 
-##  <a name="access_type"></a>  access_type Enumeration
+## <a name="access_type"></a>  access_type Enumeration
 
 Enumeration type used to denote the various types of access to data.
 
-```
+```cpp
 enum access_type;
 ```
 
@@ -28,11 +28,11 @@ enum access_type;
 |`access_type_read_write`|Shared. The allocation is accessible on the accelerator and is writable on the CPU.|
 |`access_type_write`|Shared. The allocation is accessible on the accelerator and is both readable and writable on the CPU.|
 
-##  <a name="queuing_mode"></a>  queuing_mode Enumeration
+## <a name="queuing_mode"></a>  queuing_mode Enumeration
 
 Specifies the queuing modes that are supported on the accelerator.
 
-```
+```cpp
 enum queuing_mode;
 ```
 

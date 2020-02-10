@@ -10,12 +10,12 @@ A texture is a data aggregate on an `accelerator_view` in the extent domain. It 
 
 ## Syntax
 
-```
+```cpp
 template <typename value_type,  int _Rank>
 class texture;
 ```
 
-#### Parameters
+### Parameters
 
 *value_type*<br/>
 The type of the elements in the texture.
@@ -85,27 +85,27 @@ The rank of the texture.
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="dtor"></a> ~texture
+## <a name="dtor"></a> ~texture
 
 Destroys the `texture` object.
 
-```
+```cpp
 ~texture() restrict(cpu);
 ```
 
-##  <a name="associated_accelerator_view"></a> associated_accelerator_view
+## <a name="associated_accelerator_view"></a> associated_accelerator_view
 
 Gets the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.
 
-```
+```cpp
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;
 ```
 
-##  <a name="copy_to"></a> copy_to
+## <a name="copy_to"></a> copy_to
 
 Copies the `texture` object to the destination, by doing a deep copy.
 
-```
+```cpp
 void copy_to(texture& _Dest) const;
 void copy_to(writeonly_texture_view<value_type, _Rank>& _Dest) const;
 ```
@@ -121,11 +121,11 @@ The rank of the texture.
 *value_type*<br/>
 The type of the elements in the texture.
 
-##  <a name="data"></a> data
+## <a name="data"></a> data
 
 Returns a CPU pointer to the raw data of this texture.
 
-```
+```cpp
 void* data() restrict(cpu);
 
 const void* data() const restrict(cpu);
@@ -135,19 +135,19 @@ const void* data() const restrict(cpu);
 
 A pointer to the raw data of the texture.
 
-##  <a name="depth_pitch"></a> depth_pitch
+## <a name="depth_pitch"></a> depth_pitch
 
 Gets the number of bytes between each depth slice in a 3D staging texture on the CPU.
 
-```
+```cpp
 __declspec(property(get= get_depth_pitch)) unsigned int depth_pitch;
 ```
 
-##  <a name="get"></a> get
+## <a name="get"></a> get
 
 Returns the value of the element at the specified index.
 
-```
+```cpp
 const value_type get(const index<_Rank>& _Index) const restrict(amp);
 ```
 
@@ -160,11 +160,11 @@ The index of the element.
 
 The value of the element at the specified index.
 
-##  <a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
+## <a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
 
 Returns the accelerator_view that is the preferred target for this texture to be copied to.
 
-```
+```cpp
 Concurrency::accelerator_view get_associated_accelerator_view() const restrict(cpu);
 ```
 
@@ -172,11 +172,11 @@ Concurrency::accelerator_view get_associated_accelerator_view() const restrict(c
 
 The [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.
 
-##  <a name="get_depth_pitch"></a> get_depth_pitch
+## <a name="get_depth_pitch"></a> get_depth_pitch
 
 Returns the number of bytes between each depth slice in a 3D staging texture on the CPU.
 
-```
+```cpp
 unsigned int get_depth_pitch() const restrict(cpu);
 ```
 
@@ -184,11 +184,11 @@ unsigned int get_depth_pitch() const restrict(cpu);
 
 The number of bytes between each depth slice in a 3D staging texture on the CPU.
 
-##  <a name="get_row_pitch"></a> get_row_pitch
+## <a name="get_row_pitch"></a> get_row_pitch
 
 Returns the number of bytes between each row in a 2-dimensional staging texture, or between each row of a depth slice in 3-dimensional staging texture.
 
-```
+```cpp
 unsigned int get_row_pitch() const restrict(cpu);
 ```
 
@@ -196,11 +196,11 @@ unsigned int get_row_pitch() const restrict(cpu);
 
 The number of bytes between each row in a 2-dimensional staging texture, or between each row of a depth slice in 3-dimensional staging texture.
 
-##  <a name="operator_call"></a> operator()
+## <a name="operator_call"></a> operator()
 
 Returns the element value that is specified by the parameters.
 
-```
+```cpp
 const value_type operator() (
     const index<_Rank>& _Index) const restrict(amp);
 
@@ -238,11 +238,11 @@ The rank of the index.
 
 The element value that is specified by the parameters.
 
-##  <a name="operator_at"></a> operator[]
+## <a name="operator_at"></a> operator[]
 
 Returns the element that is at the specified index.
 
-```
+```cpp
 const value_type operator[] (const index<_Rank>& _Index) const restrict(amp);
 
 const value_type operator[] (int _I0) const restrict(amp);
@@ -260,11 +260,11 @@ The index.
 
 The element that is at the specified index.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Copies the specified [texture](texture-class.md) object to this one.
 
-```
+```cpp
 texture& operator= (
     const texture& _Other);
 
@@ -281,27 +281,27 @@ The `texture` object to copy from.
 
 A reference to this `texture` object.
 
-##  <a name="rank"></a> rank
+## <a name="rank"></a> rank
 
 Gets the rank of the `texture` object.
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
-##  <a name="row_pitch"></a> row_pitch
+## <a name="row_pitch"></a> row_pitch
 
 Gets the number of bytes between each row in a 2D or 3D staging texture on the CPU.
 
-```
+```cpp
 __declspec(property(get= get_row_pitch)) unsigned int row_pitch;
 ```
 
-##  <a name="set"></a> set
+## <a name="set"></a> set
 
 Sets the value of the element at the specified index.
 
-```
+```cpp
 void set(
     const index<_Rank>& _Index,
     const value_type& value) restrict(amp);
@@ -318,11 +318,11 @@ The rank of the index.
 *value*<br/>
 The new value of the element.
 
-##  <a name="ctor"></a> texture
+## <a name="ctor"></a> texture
 
 Initializes a new instance of the `texture` class.
 
-```
+```cpp
 texture(const Concurrency::extent<_Rank>& _Ext) restrict(cpu);
 
 texture(int _E0) restrict(cpu);

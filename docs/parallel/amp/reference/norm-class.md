@@ -10,7 +10,7 @@ Represent a norm number. Each element is a floating point number in the range of
 
 ## Syntax
 
-```
+```cpp
 class norm;
 ```
 
@@ -46,11 +46,11 @@ class norm;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> norm
+## <a name="ctor"></a> norm
 
 Default constructor. Initialize to 0.0f.
 
-```
+```cpp
 norm(
     void) restrict(amp,
     cpu);

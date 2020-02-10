@@ -9,9 +9,9 @@ ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
 
 Represents a vector of *N* integer values that specify the bounds of an *N*-dimensional space that has an origin of 0. The values in the vector are ordered from most significant to least significant.
 
-### Syntax
+## Syntax
 
-```
+```cpp
 template <int _Rank>
 class extent;
 ```
@@ -75,7 +75,7 @@ Indicates whether the specified [index](index-class.md) value is contained withi
 
 ### Syntax
 
-```
+```cpp
 bool contains(const index<rank>& _Index) const restrict(amp,cpu);
 ```
 
@@ -88,13 +88,13 @@ The `index` value to test.
 
 **true** if the specified *index* value is contained in the `extent` object; otherwise, **false**.
 
-##  <a name="ctor"></a> extent
+## <a name="ctor"></a> extent
 
 Initializes a new instance of the `extent' class.
 
 ### Syntax
 
-```
+```cpp
 extent() restrict(amp,cpu);
 extent(const extent<_Rank>& _Other) restrict(amp,cpu);
 explicit extent(int _I) restrict(amp,cpu);
@@ -129,13 +129,13 @@ The parameterless constructor initializes an `extent` object that has a rank of 
 
 If an array is used to construct an `extent` object, the length of the array must match the rank of the `extent` object.
 
-##  <a name="operator_mod_eq"></a> operator%=
+## <a name="operator_mod_eq"></a> operator%=
 
 Calculates the modulus (remainder) of each element in the `extent' when that element is divided by a number.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank>& operator%=(int _Rhs) restrict(cpu, direct3d);
 ```
 
@@ -148,13 +148,13 @@ The number to find the modulus of.
 
 The `extent` object.
 
-##  <a name="operator_star_eq"></a> operator*=
+## <a name="operator_star_eq"></a> operator*=
 
 Multiplies each element in the `extent' object by the specified number.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank>& operator*=(int _Rhs) restrict(amp,cpu);
 ```
 
@@ -173,7 +173,7 @@ Returns a new `extent` object created by adding the corresponding `index` and `e
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank> operator+(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```
 
@@ -186,13 +186,13 @@ The `index` object that contains the elements to add.
 
 The new `extent` object.
 
-##  <a name="operator_add_add"></a> operator++
+## <a name="operator_add_add"></a> operator++
 
 Increments each element of the `extent' object.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank>& operator++() restrict(amp,cpu);
 extent<_Rank> operator++(int)restrict(amp,cpu);
 ```
@@ -201,13 +201,13 @@ extent<_Rank> operator++(int)restrict(amp,cpu);
 
 For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.
 
-##  <a name="operator_add_eq"></a> operator+=
+## <a name="operator_add_eq"></a> operator+=
 
 Adds the specified number to each element of the `extent' object.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank>& operator+=(const extent<_Rank>& _Rhs) restrict(amp,cpu);
 extent<_Rank>& operator+=(const index<_Rank>& _Rhs) restrict(amp,cpu);
 extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);
@@ -222,13 +222,13 @@ The number, index, or extent to add.
 
 The resulting `extent` object.
 
-##  <a name="operator_min"></a> operator-
+## <a name="operator_min"></a> operator-
 
 Creates a new `extent` object by subtracting each element in the specified `index` object from the corresponding element in this `extent` object.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank> operator-(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```
 
@@ -241,13 +241,13 @@ The `index` object that contains the elements to subtract.
 
 The new `extent` object.
 
-##  <a name="operator_min_min"></a> operator--
+## <a name="operator_min_min"></a> operator--
 
 Decrements each element in the `extent' object.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank>& operator--() restrict(amp,cpu);
 extent<_Rank> operator--(int)restrict(amp,cpu);
 ```
@@ -256,13 +256,13 @@ extent<_Rank> operator--(int)restrict(amp,cpu);
 
 For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.
 
-##  <a name="operator_div_eq"></a> operator/=
+## <a name="operator_div_eq"></a> operator/=
 
 Divides each element in the `extent' object by the specified number.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank>& operator/=(int _Rhs) restrict(amp,cpu);
 ```
 
@@ -275,13 +275,13 @@ The number to divide by.
 
 The `extent` object.
 
-##  <a name="operator_min_eq"></a> operator-=
+## <a name="operator_min_eq"></a> operator-=
 
 Subtracts the specified number from each element of the `extent' object.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank>& operator-=(const extent<_Rank>& _Rhs) restrict(amp,cpu);
 extent<_Rank>& operator-=(const index<_Rank>& _Rhs) restrict(amp,cpu);
 extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);
@@ -296,13 +296,13 @@ The number to subtract.
 
 The resulting `extent` object.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Copies the contents of another `extent' object into this one.
 
 ### Syntax
 
-```
+```cpp
 extent<_Rank>& operator=(const extent<_Rank>& _Other) restrict(amp,cpu);
 ```
 
@@ -315,13 +315,13 @@ The `extent` object to copy from.
 
 A reference to this `extent` object.
 
-##  <a name="operator_at"></a> extent::operator \[\]
+## <a name="operator_at"></a> extent::operator \[\]
 
 Returns the element that's at the specified index.
 
 ### Syntax
 
-```
+```cpp
 int operator[](unsigned int _Index) const restrict(amp,cpu);
 int& operator[](unsigned int _Index) restrict(amp,cpu);
 ```
@@ -335,23 +335,23 @@ An integer from 0 through the rank minus 1.
 
 The element that's at the specified index.
 
-##  <a name="rank_constant"></a> rank
+## <a name="rank_constant"></a> rank
 
 Stores the rank of the `extent' object.
 
 ### Syntax
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
-##  <a name="size"></a> size
+## <a name="size"></a> size
 
 Returns the total linear size of the `extent` object (in units of elements).
 
 ### Syntax
 
-```
+```cpp
 unsigned int size() const restrict(amp,cpu);
 ```
 
@@ -359,7 +359,7 @@ unsigned int size() const restrict(amp,cpu);
 
 Produces a tiled_extent object with the specified tile dimensions.
 
-```
+```cpp
 template <int _Dim0>
 tiled_extent<_Dim0> tile() const ;
 

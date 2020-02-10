@@ -14,7 +14,7 @@ Functions in the `precise_math` namespace are C99 compliant. Both single precisi
 namespace precise_math;
 ```
 
-#### Parameters
+### Parameters
 
 ## Members
 

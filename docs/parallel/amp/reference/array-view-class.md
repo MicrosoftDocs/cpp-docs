@@ -11,7 +11,7 @@ Represents an N-dimensional view over the data held in another container.
 
 ## Syntax
 
-```
+```cpp
 template <
     typename value_type,
     int _Rank = 1
@@ -25,7 +25,7 @@ template <
 class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeof(value_type)/sizeof(int)>;
 ```
 
-#### Parameters
+### Parameters
 
 *value_type*<br/>
 The data type of the elements in the `array_view` object.
@@ -125,19 +125,19 @@ Either action notifies the `array_view` object that the underlying native memory
 
 **Namespace:** Concurrency
 
-##  <a name="dtor"></a> ~array_view
+## <a name="dtor"></a> ~array_view
 
 Destroys the `array_view` object.
 
-```
+```cpp
 ~array_view()restrict(amp,cpu);
 ```
 
-##  <a name="ctor"></a> array_view
+## <a name="ctor"></a> array_view
 
 Initializes a new instance of the `array_view` class.
 
-```
+```cpp
 array_view(
     array<value_type, _Rank>& _Src)restrict(amp,cpu);
 
@@ -326,11 +326,11 @@ The size of a C-style array from which data is supplied.
 *_Src*<br/>
 A pointer to the source data that will be copied into the new array.
 
-##  <a name="copy_to"></a> copy_to
+## <a name="copy_to"></a> copy_to
 
 Copies the contents of the `array_view` object to the specified destination object by calling `copy(*this, dest)`.
 
-```
+```cpp
 void copy_to(
     array<value_type, _Rank>& _Dest) const;
 
@@ -343,11 +343,11 @@ void copy_to(
 *_Dest*<br/>
 The object to copy to.
 
-##  <a name="data"></a> data
+## <a name="data"></a> data
 
 Returns a pointer to the raw data of the `array_view`.
 
-```
+```cpp
 value_type* data() const restrict(amp,
     cpu);
 
@@ -359,27 +359,27 @@ const value_type* data() const restrict(amp,
 
 A pointer to the raw data of the `array_view`.
 
-##  <a name="discard_data"></a> discard_data
+## <a name="discard_data"></a> discard_data
 
 Discards the current data underlying this view. This is an optimization hint to the runtime used to avoid copying the current contents of the view to a target `accelerator_view` that it is accessed on, and its use is recommended if the existing content is not needed. This method is a no-op when used in a restrict(amp) context
 
-```
+```cpp
 void discard_data() const restrict(cpu);
 ```
 
-##  <a name="extent"></a> extent
+## <a name="extent"></a> extent
 
 Gets the `extent` object that defines the shape of the `array_view` object.
 
-```
+```cpp
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
 ```
 
-##  <a name="get_extent"></a> get_extent
+## <a name="get_extent"></a> get_extent
 
 Returns the [extent](extent-class.md) object of the `array_view` object.
 
-```
+```cpp
 Concurrency::extent<_Rank> get_extent() const restrict(cpu, amp);
 ```
 
@@ -387,11 +387,11 @@ Concurrency::extent<_Rank> get_extent() const restrict(cpu, amp);
 
 The `extent` object of the `array_view` object
 
-##  <a name="get_ref"></a> get_ref
+## <a name="get_ref"></a> get_ref
 
 Get a reference to the element indexed by _Index. Unlike the other indexing operators for accessing the array_view on the CPU, this method does not implicitly synchronize this array_view's contents to the CPU. After accessing the array_view on a remote location or performing a copy operation involving this array_view users are responsible to explicitly synchronize the array_view to the CPU before calling this method. Failure to do so results in undefined behavior.
 
-```
+```cpp
 value_type& get_ref(
     const index<_Rank>& _Index) const restrict(amp, cpu);
 ```
@@ -405,21 +405,21 @@ The index.
 
 Reference to the element indexed by _Index
 
-##  <a name="get_source_accelerator_view"></a> get_source_accelerator_view
+## <a name="get_source_accelerator_view"></a> get_source_accelerator_view
 
 Returns the accelerator_view where the data source of the array_view is located. If the array_view does not have a data source, this API throws a runtime_exception
 
-```
+```cpp
 accelerator_view get_source_accelerator_view() const;
 ```
 
 ### Return Value
 
-##  <a name="operator_call"></a> operator()
+## <a name="operator_call"></a> operator()
 
 Returns the value of the element that is specified by the parameter or parameters.
 
-```
+```cpp
 value_type& operator() (
     const index<_Rank>& _Index) const restrict(amp,cpu);
 
@@ -460,11 +460,11 @@ The location of the element.
 
 The value of the element that is specified by the parameter or parameters.
 
-##  <a name="operator_at"></a> operator[]
+## <a name="operator_at"></a> operator[]
 
 Returns the element that is specified by the parameters.
 
-```
+```cpp
 typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type operator[] (
     int _I) const restrict(amp,cpu);
 
@@ -484,11 +484,11 @@ The index.
 
 The value of the element at the index, or an `array_view` projected on the most-significant dimension.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Copies the contents of the specified `array_view` object to this one.
 
-```
+```cpp
 array_view& operator= (
     const array_view& _Other) restrict(amp,cpu);
 
@@ -505,19 +505,19 @@ The `array_view` object to copy from.
 
 A reference to this `array_view` object.
 
-##  <a name="rank"></a> rank
+## <a name="rank"></a> rank
 
 Stores the rank of the `array_view` object.
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
-##  <a name="refresh"></a> refresh
+## <a name="refresh"></a> refresh
 
 Notifies the `array_view` object that its bound memory has been modified outside the `array_view` interface. A call to this method renders all cached information stale.
 
-```
+```cpp
 void refresh() const restrict(cpu);
 ```
 
@@ -527,7 +527,7 @@ Reinterprets the array_view through a one-dimensional array_view, which as an op
 
 ### Syntax
 
-```
+```cpp
 template <
     typename _Value_type2
 >
@@ -565,11 +565,11 @@ array_view<float,1> v = a.reinterpret_as<float>();
 assert(v.extent == 3*a.extent);
 ```
 
-##  <a name="section"></a> section
+## <a name="section"></a> section
 
 Returns a subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent.
 
-```
+```cpp
 array_view section(
     const Concurrency::index<_Rank>& _Section_origin,
     const Concurrency::extent<_Rank>& _Section_extent) const restrict(amp,cpu);
@@ -638,19 +638,19 @@ The [index](index-class.md) object that specifies the location of the origin.
 
 A subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent. When only the `index` object is specified, the subsection contains all elements in the associated extent that have indexes that are larger than the indexes of the elements in the `index` object.
 
-##  <a name="source_accelerator_view"></a> source_accelerator_view
+## <a name="source_accelerator_view"></a> source_accelerator_view
 
 Gets the source accelerator_view that this array_view is associated with.
 
-```
+```cpp
 __declspec(property(get= get_source_accelerator_view)) accelerator_view source_accelerator_view;
 ```
 
-##  <a name="synchronize"></a> synchronize
+## <a name="synchronize"></a> synchronize
 
 Synchronizes any modifications made to the `array_view` object back to its source data.
 
-```
+```cpp
 void synchronize(access_type _Access_type = access_type_read) const restrict(cpu);
 
 void synchronize() const restrict(cpu);
@@ -661,11 +661,11 @@ void synchronize() const restrict(cpu);
 *_Access_type*<br/>
 The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.
 
-##  <a name="synchronize_async"></a> synchronize_async
+## <a name="synchronize_async"></a> synchronize_async
 
 Asynchronously synchronizes any modifications made to the `array_view` object back to its source data.
 
-```
+```cpp
 concurrency::completion_future synchronize_async(access_type _Access_type = access_type_read) const restrict(cpu);
 
 concurrency::completion_future synchronize_async() const restrict(cpu);
@@ -680,11 +680,11 @@ The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on th
 
 A future upon which to wait for the operation to complete.
 
-##  <a name="synchronize_to"></a> synchronize_to
+## <a name="synchronize_to"></a> synchronize_to
 
 Synchronizes any modifications made to this array_view to the specified accelerator_view.
 
-```
+```cpp
 void synchronize_to(
     const accelerator_view& _Accl_view,
     access_type _Access_type = access_type_read) const restrict(cpu);
@@ -701,11 +701,11 @@ The target accelerator_view to synchronize to.
 *_Access_type*<br/>
 The desired access_type on the target accelerator_view. This parameter has a default value of access_type_read.
 
-##  <a name="synchronize_to_async"></a> synchronize_to_async
+## <a name="synchronize_to_async"></a> synchronize_to_async
 
 Asynchronously synchronizes any modifications made to this array_view to the specified accelerator_view.
 
-```
+```cpp
 concurrency::completion_future synchronize_to_async(
     const accelerator_view& _Accl_view,
     access_type _Access_type = access_type_read) const restrict(cpu);
@@ -726,19 +726,19 @@ The desired access_type on the target accelerator_view. This parameter has a def
 
 A future upon which to wait for the operation to complete.
 
-##  <a name="value_type"></a> value_type
+## <a name="value_type"></a> value_type
 
 The value type of the array_view and the bound array.
 
-```
+```cpp
 typedef typenamevalue_type value_type;
 ```
 
-##  <a name="view_as"></a> view_as
+## <a name="view_as"></a> view_as
 
 Reinterprets this `array_view` as an `array_view` of a different rank.
 
-```
+```cpp
 template <
     int _New_rank
 >
