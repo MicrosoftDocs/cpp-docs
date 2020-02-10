@@ -9,9 +9,9 @@ ms.assetid: 9f298c21-bf62-46e0-88b8-01c5c78ef144
 
 Represents a virtual device abstraction on a C++ AMP data-parallel accelerator.
 
-### Syntax
+## Syntax
 
-```
+```cpp
 class accelerator_view;
 ```
 
@@ -79,7 +79,7 @@ Gets the accelerator object for the accelerator_view object.
 
 ### Syntax
 
-```
+```cpp
 __declspec(property(get= get_accelerator)) Concurrency::accelerator accelerator;
 ```
 
@@ -89,7 +89,7 @@ Initializes a new instance of the accelerator_view class by copying an existing 
 
 ### Syntax
 
-```
+```cpp
 accelerator_view( const accelerator_view & other );
 ```
 
@@ -104,7 +104,7 @@ Returns a future to track the completion of all commands submitted so far to thi
 
 ### Syntax
 
-```
+```cpp
 concurrency::completion_future create_marker();
 ```
 
@@ -118,7 +118,7 @@ Submits all pending commands queued to the accelerator_view object to the accele
 
 ### Syntax
 
-```
+```cpp
 void flush();
 ```
 
@@ -129,9 +129,10 @@ Returns `void`.
 ## <a name="get_accelerator"></a>get_accelerator
 
 Returns the accelerator object for the accelerator_view object.
+
 ### Syntax
 
-```
+```cpp
 accelerator get_accelerator() const;
 ```
 
@@ -145,7 +146,7 @@ Returns a Boolean value that indicates whether the runtime will automatically se
 
 ### Syntax
 
-```
+```cpp
 bool get_is_auto_selection() const;
 ```
 
@@ -159,7 +160,7 @@ Returns a Boolean value that indicates whether the accelerator_view object has t
 
 ### Syntax
 
-```
+```cpp
 bool get_is_debug() const;
 ```
 
@@ -173,7 +174,7 @@ Returns the queuing mode for the accelerator_view object.
 
 ### Syntax
 
-```
+```cpp
 queuing_mode get_queuing_mode() const;
 ```
 
@@ -187,7 +188,7 @@ Returns the version of the accelerator_view.
 
 ### Syntax
 
-```
+```cpp
 unsigned int get_version() const;
 ```
 
@@ -201,17 +202,17 @@ Gets a Boolean value that indicates whether the runtime will automatically selec
 
 ### Syntax
 
-```
+```cpp
 __declspec(property(get= get_is_auto_selection)) bool is_auto_selection;
 ```
 
-## <a name="is_debug"></a>is_debug
+## <a name="is_debug"></a> is_debug
 
 Gets a Boolean value that indicates whether the accelerator_view object has the  DEBUG layer enabled for extensive error reporting.
 
 ### Syntax
 
-```
+```cpp
 __declspec(property(get= get_is_debug)) bool is_debug;
 ```
 
@@ -221,7 +222,7 @@ Compares this accelerator_view object with another and returns **false** if they
 
 ### Syntax
 
-```
+```cpp
 bool operator!= ( const accelerator_view & other ) const;
 ```
 
@@ -240,7 +241,7 @@ Copies the contents of the specified accelerator_view object into this one.
 
 ### Syntax
 
-```
+```cpp
 accelerator_view & operator= ( const accelerator_view & other );
 ```
 
@@ -259,7 +260,7 @@ Compares this accelerator_view object with another and returns **true** if they 
 
 ### Syntax
 
-```
+```cpp
 bool operator== ( const accelerator_view & other ) const;
 ```
 
@@ -278,7 +279,7 @@ Gets the queuing mode for the accelerator_view object.
 
 ### Syntax
 
-```
+```cpp
 __declspec(property(get= get_queuing_mode)) Concurrency::queuing_mode queuing_mode;
 ```
 
@@ -288,7 +289,7 @@ Gets the version of the accelerator_view.
 
 ### Syntax
 
-```
+```cpp
 __declspec(property(get= get_version)) unsigned int version;
 ```
 
@@ -298,7 +299,7 @@ Waits for all commands submitted to the accelerator_view object to finish.
 
 ### Syntax
 
-```
+```cpp
 void wait();
 ```
 
@@ -310,13 +311,13 @@ Returns `void`.
 
 If the [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) is `immediate`, this method returns immediately without blocking.
 
-##  <a name="dtor"></a> ~accelerator_view
+## <a name="dtor"></a> ~accelerator_view
 
 Destroys the accelerator_view object.
 
 ### Syntax
 
-```
+```cpp
 ~accelerator_view();
 ```
 

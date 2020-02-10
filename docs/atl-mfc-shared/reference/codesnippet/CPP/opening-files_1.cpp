@@ -7,4 +7,4 @@
          {
             TRACE( _T("Can't open file %s, error = %u\n"),
                pszFileName, fileException.m_cause );
-         }	
+         }

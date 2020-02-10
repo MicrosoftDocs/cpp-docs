@@ -8,9 +8,9 @@ ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
 
 A `tiled_extent` object is an `extent` object of one to three dimensions that subdivides the extent space into one-, two-, or three-dimensional tiles.
 
-### Syntax
+## Syntax
 
-```
+```cpp
 template <
     int _Dim0,
     int _Dim1,
@@ -95,7 +95,7 @@ Initializes a new instance of the `tiled_extent` class.
 
 ### Syntax
 
-```
+```cpp
 tiled_extent();
 
 tiled_extent(
@@ -116,7 +116,7 @@ Returns an `extent` object that captures the values of the `tiled_extent` templa
 
 ### Syntax
 
-```
+```cpp
 Concurrency::extent<rank> get_tile_extent() const restrict(amp,cpu);
 ```
 
@@ -130,7 +130,7 @@ Returns a new `tiled_extent` object with extents adjusted up to be evenly divisi
 
 ### Syntax
 
-```
+```cpp
 tiled_extent pad() const;
 ```
 
@@ -143,7 +143,7 @@ Returns a new `tiled_extent` object with extents adjusted down to be evenly divi
 
 ### Syntax
 
-```
+```cpp
 tiled_extent truncate() const;
 ```
 
@@ -157,7 +157,7 @@ Copies the contents of the specified `tiled_index` object into this one.
 
 ### Syntax
 
-```
+```cpp
 tiled_extent&  operator= (
     const tiled_extent& _Other ) restrict (amp, cpu);
 ```
@@ -177,7 +177,7 @@ Stores the length of the most significant dimension.
 
 ### Syntax
 
-```
+```cpp
 static const int tile_dim0 = _Dim0;
 ```
 
@@ -187,7 +187,7 @@ Stores the length of the next-to-most significant dimension.
 
 ### Syntax
 
-```
+```cpp
 static const int tile_dim1 = _Dim1;
 ```
 
@@ -197,7 +197,7 @@ Stores the length of the least significant dimension.
 
 ### Syntax
 
-```
+```cpp
 static const int tile_dim2 = _Dim2;
 ```
 
@@ -206,7 +206,7 @@ static const int tile_dim2 = _Dim2;
 
 ### Syntax
 
-```
+```cpp
 __declspec(property(get= get_tile_extent)) Concurrency::extent<rank> tile_extent;
 ```
 

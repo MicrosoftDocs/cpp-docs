@@ -11,7 +11,7 @@ Represents a short vector of three floats.
 
 ## Syntax
 
-```
+```cpp
 class float_3;
 ```
 
@@ -134,11 +134,11 @@ class float_3;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> float_3
+## <a name="ctor"></a> float_3
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 float_3() restrict(amp,
     cpu);
 
@@ -194,9 +194,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="float_3__size"></a> size
+## <a name="float_3__size"></a> size
 
-```
+```cpp
 static const int size = 3;
 ```
 

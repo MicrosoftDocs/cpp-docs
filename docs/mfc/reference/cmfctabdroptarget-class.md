@@ -39,7 +39,7 @@ class CMFCTabDropTarget : public COleDropTarget
 
 This class provides drag-and-drop support to the `CMFCBaseTabCtrl` class. If your application initializes the OLE libraries by using the [AfxOleInit](ole-initialization.md#afxoleinit) function, `CMFCBaseTabCtrl` objects register themselves for drag-and-drop operations.
 
-The `CMFCTabDropTarget` class extends its base class by making the tab that is under the cursor when a drag operation occurs active. For more information about drag-and-drop operations, see [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).
+The `CMFCTabDropTarget` class extends its base class by making the tab that is under the cursor when a drag operation occurs active. For more information about drag-and-drop operations, see [OLE drag and drop](../../mfc/drag-and-drop-ole.md).
 
 ## Example
 
@@ -235,4 +235,4 @@ This method calls [COleDropTarget::Register](../../mfc/reference/coledroptarget-
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
-[Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md)
+[OLE drag and drop](../../mfc/drag-and-drop-ole.md)

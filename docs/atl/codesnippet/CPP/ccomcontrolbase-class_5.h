@@ -17,9 +17,9 @@
       SetTextAlign(di.hdcDraw, TA_CENTER|TA_BASELINE);
       LPCTSTR pszText = _T("ATL 8.0 : MyControl");
 
-	  // For security reasons, we recommend that you use the lstrlen function
-	  // with caution. Here, we can guarantee that pszText is NULL terminated,
-	  // and therefore it is safe to use this function.
+      // For security reasons, we recommend that you use the lstrlen function
+      // with caution. Here, we can guarantee that pszText is NULL terminated,
+      // and therefore it is safe to use this function.
       TextOut(di.hdcDraw, 
          (rc.left + rc.right) / 2, 
          (rc.top + rc.bottom) / 2, 

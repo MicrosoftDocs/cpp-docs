@@ -48,7 +48,7 @@ You may also want to support some of the following features in your container ap
 
 - Creation of OLE items by dragging and dropping a selection from a server application.
 
-   For more information, see [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md).
+   For more information, see [OLE drag and drop](../mfc/drag-and-drop-ole.md).
 
 - Links to embedded objects or combination container/server applications.
 

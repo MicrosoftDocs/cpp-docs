@@ -10,7 +10,7 @@ Represents a short vector of four doubles.
 
 ## Syntax
 
-```
+```cpp
 class double_4;
 ```
 
@@ -335,7 +335,7 @@ class double_4;
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 double_4() restrict(amp,
     cpu);
 
@@ -397,7 +397,7 @@ The object used to initialize.
 
 ##  <a name="double_4__size"></a> size
 
-```
+```cpp
 static const int size = 4;
 ```
 

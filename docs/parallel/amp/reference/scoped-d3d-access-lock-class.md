@@ -8,9 +8,9 @@ ms.assetid: 0ad333e6-9839-4736-a722-16d95d70c4b1
 
 RAII wrapper for a D3D access lock on an accelerator_view object.
 
-### Syntax
+## Syntax
 
-```
+```cpp
 class scoped_d3d_access_lock;
 ```
 
@@ -39,11 +39,11 @@ class scoped_d3d_access_lock;
 
 **Namespace:** concurrency::direct3d
 
-##  <a name="ctor"></a> scoped_d3d_access_lock
+## <a name="ctor"></a> scoped_d3d_access_lock
 
 Constructs a `scoped_d3d_access_lock` object. The lock is released when this object goes out of scope.
 
-```
+```cpp
 explicit scoped_d3d_access_lock(// [1] constructor
     accelerator_view& _Av);
 
@@ -77,11 +77,11 @@ Adopt a D3D access lock from the given [accelerator_view](accelerator-view-class
 [3] Move Constructor
 Takes an existing D3D access lock from another `scoped_d3d_access_lock` object. Construction does not block.
 
-##  <a name="dtor"></a> ~scoped_d3d_access_lock
+## <a name="dtor"></a> ~scoped_d3d_access_lock
 
 Releases the D3D access lock on the associated `accelerator_view` object.
 
-```
+```cpp
 ~scoped_d3d_access_lock();
 ```
 
@@ -89,7 +89,7 @@ Releases the D3D access lock on the associated `accelerator_view` object.
 
 Takes ownership of a D3D access lock from another `scoped_d3d_access_lock` object, releasing the previous lock.
 
-```
+```cpp
 scoped_d3d_access_lock& operator= (scoped_d3d_access_lock&& _Other);
 ```
 

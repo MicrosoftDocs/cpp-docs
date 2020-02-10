@@ -11,7 +11,7 @@ The exception that's thrown when the runtime can't start a kernel by using the c
 
 ## Syntax
 
-```
+```cpp
 class invalid_compute_domain : public runtime_exception;
 ```
 
@@ -43,7 +43,7 @@ Initializes a new instance of the class.
 
 ## Syntax
 
-```
+```cpp
 explicit invalid_compute_domain(
     const char * _Message ) throw();
 

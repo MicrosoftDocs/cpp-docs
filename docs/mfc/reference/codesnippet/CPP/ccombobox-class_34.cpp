@@ -6,8 +6,8 @@
 CString str;
 for (int i = 1; i <= 20; i++)
 {
-	str.Format(_T("Item %2d"), i);
-	m_combobox.AddString(str);
+    str.Format(_T("Item %2d"), i);
+    m_combobox.AddString(str);
 }
 // Set the minimum visible item
 m_combobox.SetMinVisibleItems(10);

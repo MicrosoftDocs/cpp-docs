@@ -10,7 +10,7 @@ Represent a unorm number. Each element is a floating point number in the range o
 
 ## Syntax
 
-```
+```cpp
 class unorm;
 ```
 
@@ -45,11 +45,11 @@ class unorm;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> unorm
+## <a name="ctor"></a> unorm
 
 Default constructor. Initialize to 0.0f.
 
-```
+```cpp
 unorm(
     void) restrict(amp,
     cpu);

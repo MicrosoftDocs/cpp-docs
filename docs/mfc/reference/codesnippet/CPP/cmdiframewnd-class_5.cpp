@@ -2,7 +2,7 @@
 // CMainFrame class, which is a CMDIFrameWnd-derived
 // class. It handles menu commands for the Windows pop-up menu.
 // Its entries in the message map are of the following form:
-// 	ON_COMMAND_EX(ID_WINDOW_ARRANGE, &CMainFrame::OnWindowCommand)
+//    ON_COMMAND_EX(ID_WINDOW_ARRANGE, &CMainFrame::OnWindowCommand)
 BOOL CMainFrame::OnWindowCommand(UINT nID)
 {
    switch (nID)

@@ -141,15 +141,15 @@ using namespace std;
 
 int main()
 {
-	string_view sv1 { "ABA" };
-	string_view sv2{ "ABAC" };
-	string_view sv3{ "ABAD" };
-	string_view sv4{ "ABACE" };
+    string_view sv1 { "ABA" };
+    string_view sv2{ "ABAC" };
+    string_view sv3{ "ABAD" };
+    string_view sv4{ "ABACE" };
 
-	bool result = sv2 > sv1; // true
-	result = sv3 > sv2; // true
-	result = sv3 != sv1; // true
-	result = sv4 < sv3; // true because `C` < `D`
+    bool result = sv2 > sv1; // true
+    result = sv3 > sv2; // true
+    result = sv3 != sv1; // true
+    result = sv4 < sv3; // true because `C` < `D`
 }
 ```
 
@@ -197,7 +197,7 @@ Writes a string_view into an output stream.
 ```cpp
 template <class CharType, class Traits>
 inline basic_ostream<CharType, Traits>& operator<<(
-	basic_ostream<CharType, Traits>& Ostr, const basic_string_view<CharType, Traits> Str);
+    basic_ostream<CharType, Traits>& Ostr, const basic_string_view<CharType, Traits> Str);
 ```
 
 ### Parameters
@@ -301,10 +301,10 @@ Constructs a string_view from a string literal. Requires namespace `std::literal
 using namespace std;
 using namespace literals::string_view_literals;
 
-	string_view sv{ "Hello"sv };
-	wstring_view wsv{ L"Hello"sv };
-	u16string_view sv16{ u"Hello"sv };
-	u32string_view sv32{ U"Hello"sv };
+    string_view sv{ "Hello"sv };
+    wstring_view wsv{ L"Hello"sv };
+    u16string_view sv16{ u"Hello"sv };
+    u32string_view sv32{ U"Hello"sv };
 ```
 
 ## See also

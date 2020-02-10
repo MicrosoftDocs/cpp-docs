@@ -11,7 +11,7 @@ The exception that is thrown when an unsupported feature is used.
 
 ## Syntax
 
-```
+```cpp
 class unsupported_feature : public runtime_exception;
 ```
 
@@ -37,7 +37,7 @@ class unsupported_feature : public runtime_exception;
 
 ### Syntax
 
-```
+```cpp
 explicit unsupported_feature(
     const char * _Message ) throw();
 

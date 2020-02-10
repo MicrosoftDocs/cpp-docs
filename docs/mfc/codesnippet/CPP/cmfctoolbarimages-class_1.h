@@ -1,1 +1,1 @@
-	CMFCToolBarImages m_Image;
+    CMFCToolBarImages m_Image;

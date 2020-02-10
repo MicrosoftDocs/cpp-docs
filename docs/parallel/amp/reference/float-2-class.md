@@ -10,7 +10,7 @@ Represents a short vector of two floats.
 
 ## Syntax
 
-```
+```cpp
 class float_2;
 ```
 
@@ -87,11 +87,11 @@ class float_2;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> float_2
+## <a name="ctor"></a> float_2
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 float_2() restrict(amp,
     cpu);
 
@@ -143,9 +143,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="float_2__size"></a> size
+## <a name="float_2__size"></a> size
 
-```
+```cpp
 static const int size = 2;
 ```
 

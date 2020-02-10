@@ -11,7 +11,7 @@ Provides an index into a [tiled_extent](tiled-extent-class.md) object. This clas
 
 ## Syntax
 
-```
+```cpp
 template <
     int _Dim0,
     int _Dim1 = 0,
@@ -31,7 +31,7 @@ template <
 class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 ```
 
-#### Parameters
+### Parameters
 
 *_Dim0*<br/>
 The length of the most significant dimension.
@@ -95,7 +95,7 @@ Initializes a new instance of the `tiled_index` class.
 
 ## Syntax
 
-```
+```cpp
 tiled_index(
     const index<rank>& _Global,
     const index<rank>& _Local,
@@ -141,7 +141,7 @@ Returns an [extent](extent-class.md) object that has the values of the `tiled_in
 
 ## Syntax
 
-```
+```cpp
 extent<rank> get_tile_extent()restrict(amp,cpu);
 ```
 
@@ -155,7 +155,7 @@ Stores a [tile_barrier](tile-barrier-class.md) object that represents a barrier 
 
 ## Syntax
 
-```
+```cpp
 const tile_barrier barrier;
 ```
 
@@ -165,7 +165,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 
 ## Syntax
 
-```
+```cpp
 const index<rank> global;
 ```
 
@@ -175,7 +175,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 
 ## Syntax
 
-```
+```cpp
 const index<rank> local;
 ```
 
@@ -185,7 +185,7 @@ Stores the rank of the `tiled_index` object.
 
 ## Syntax
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
@@ -195,7 +195,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 
 ## Syntax
 
-```
+```cpp
 const index<rank> tile;
 ```
 
@@ -205,7 +205,7 @@ Stores the length of the most significant dimension.
 
 ## Syntax
 
-```
+```cpp
 static const int tile_dim0 = _Dim0;
 ```
 
@@ -215,7 +215,7 @@ Stores the length of the next-to-most significant dimension.
 
 ## Syntax
 
-```
+```cpp
 static const int tile_dim1 = _Dim1;
 ```
 
@@ -225,7 +225,7 @@ Stores the length of the least significant dimension.
 
 ## Syntax
 
-```
+```cpp
 static const int tile_dim2 = _Dim2;
 ```
 
@@ -235,7 +235,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 
 ## Syntax
 
-```
+```cpp
 const index<rank> tile_origin
 ```
 
@@ -244,7 +244,7 @@ const index<rank> tile_origin
 
 ## Syntax
 
-```
+```cpp
 __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
 ```
 
