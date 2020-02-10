@@ -272,7 +272,7 @@ The delay time is specified by a registry key setting. You can change the delay 
 
 For more information about how drag delay information is stored in either the registry or the .INI file, see [WriteProfileString](/windows/win32/api/winbase/nf-winbase-writeprofilestringw) in the Windows SDK.
 
-For more information, see the article [Drag and Drop: Implementing a Drop Source](../../mfc/drag-and-drop-implementing-a-drop-source.md).
+For more information, see the article [OLE drag and drop](../../mfc/drag-and-drop-ole.md).
 
 ##  <a name="empty"></a>  COleDataSource::Empty
 
