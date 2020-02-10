@@ -9,9 +9,9 @@ ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
 
 Synchronizes the execution of threads that are running in the thread group (the tile) by using `wait` methods. Only the runtime can instantiate this class.
 
-### Syntax
+## Syntax
 
-```
+```cpp
 class tile_barrier;
 ```
 
@@ -48,7 +48,7 @@ Initializes a new instance of the class by copying an existing one.
 
 ### Syntax
 
-```
+```cpp
 tile_barrier(
     const tile_barrier& _Other ) restrict(amp,cpu);
 ```
@@ -64,7 +64,7 @@ Instructs all threads in the thread group (tile) to stop execution until all thr
 
 ### Syntax
 
-```
+```cpp
 void wait() const restrict(amp);
 ```
 
@@ -74,7 +74,7 @@ Blocks execution of all threads in a tile until all threads in a tile have reach
 
 ### Syntax
 
-```
+```cpp
 void wait_with_all_memory_fence() const restrict(amp);
 ```
 
@@ -84,7 +84,7 @@ Blocks execution of all threads in a tile until all threads in a tile have reach
 
 ### Syntax
 
-```
+```cpp
 void wait_with_global_memory_fence() const  restrict(amp);
 ```
 
@@ -94,7 +94,7 @@ Blocks execution of all threads in a tile until all threads in a tile have reach
 
 ### Syntax
 
-```
+```cpp
 void wait_with_tile_static_memory_fence() const restrict(amp);
 ```
 

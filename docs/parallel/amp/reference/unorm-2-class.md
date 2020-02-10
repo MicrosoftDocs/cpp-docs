@@ -10,7 +10,7 @@ Represents a short vector of two unsigned normal numbers.
 
 ## Syntax
 
-```
+```cpp
 class unorm_2;
 ```
 
@@ -86,11 +86,11 @@ class unorm_2;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> unorm_2
+## <a name="ctor"></a> unorm_2
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 unorm_2() restrict(amp,
     cpu);
 
@@ -151,9 +151,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="unorm_2__size"></a> size
+## <a name="unorm_2__size"></a> size
 
-```
+```cpp
 static const int size = 2;
 ```
 

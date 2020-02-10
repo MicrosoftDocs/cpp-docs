@@ -23,11 +23,11 @@ ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
 **Header:** amp.h
 **Namespace:** Concurrency
 
-##  <a name="abs"></a>  abs
+## <a name="abs"></a>  abs
 
 Returns the absolute value of the argument
 
-```
+```cpp
 inline int abs(int _X) restrict(amp);
 ```
 
@@ -40,11 +40,11 @@ Integer value
 
 Returns the absolute value of the argument.
 
-##  <a name="clamp"></a>  clamp
+## <a name="clamp"></a>  clamp
 
 Computes the value of the first specified argument clamped to a range defined by the second and third specified arguments.
 
-```
+```cpp
 inline float clamp(
     float _X,
     float _Min,
@@ -71,11 +71,11 @@ The upper bound of the clamping range.
 
 The clamped value of `_X`.
 
-##  <a name="countbits"></a>  countbits
+## <a name="countbits"></a>  countbits
 
 Counts the number of set bits in _X
 
-```
+```cpp
 inline unsigned int countbits(unsigned int _X) restrict(amp);
 ```
 
@@ -94,7 +94,7 @@ Creates an [accelerator_view](accelerator-view-class.md) object from a pointer t
 
 ## Syntax
 
-```
+```cpp
 accelerator_view create_accelerator_view(
     IUnknown * _D3D_device
     queuing_mode _Qmode = queuing_mode_automatic);
@@ -105,7 +105,7 @@ accelerator_view create_accelerator_view(
     queuing_mode _Qmode = queuing_mode_automatic);
 ```
 
-#### Parameters
+### Parameters
 
 *_Accelerator*<br/>
 The accelerator on which the new accelerator_view is to be created.
@@ -131,11 +131,11 @@ The `accelerator_view` object that you create by using this function is thread s
 
 The C++ AMP runtime provides detailed error information in debug mode by using the D3D Debug layer if you use the `D3D11_CREATE_DEVICE_DEBUG` flag.
 
-##  <a name="d3d_access_lock"></a>  d3d_access_lock
+## <a name="d3d_access_lock"></a>  d3d_access_lock
 
 Acquire a lock on an accelerator_view for the purpose of safely performing D3D operations on resources shared with the accelerator_view. The accelerator_view and all C++ AMP resources associated with this accelerator_view internally take this lock when performing operations and will block while another thread holds the D3D access lock. This lock is non-recursive: It is undefined behavior to call this function from a thread that already holds the lock. It is undefined behavior to perform operations on the accelerator_view or any data container associated with the accelerator_view from the thread that holds the D3D access lock. See also scoped_d3d_access_lock, a RAII-style class for a scope-based D3D access lock.
 
-```
+```cpp
 void __cdecl d3d_access_lock(accelerator_view& _Av);
 ```
 
@@ -144,11 +144,11 @@ void __cdecl d3d_access_lock(accelerator_view& _Av);
 *_Av*<br/>
 The accelerator_view to lock.
 
-##  <a name="d3d_access_try_lock"></a>  d3d_access_try_lock
+## <a name="d3d_access_try_lock"></a>  d3d_access_try_lock
 
 Attempt to acquire the D3D access lock on an accelerator_view without blocking.
 
-```
+```cpp
 bool __cdecl d3d_access_try_lock(accelerator_view& _Av);
 ```
 
@@ -161,11 +161,11 @@ The accelerator_view to lock.
 
 true if the lock was acquired, or false if it is currently held by another thread.
 
-##  <a name="d3d_access_unlock"></a>  d3d_access_unlock
+## <a name="d3d_access_unlock"></a>  d3d_access_unlock
 
 Release the D3D access lock on the given accelerator_view. If the calling thread does not hold the lock on the accelerator_view the results are undefined.
 
-```
+```cpp
 void __cdecl d3d_access_unlock(accelerator_view& _Av);
 ```
 
@@ -174,11 +174,11 @@ void __cdecl d3d_access_unlock(accelerator_view& _Av);
 *_Av*<br/>
 The accelerator_view for which the lock is to be released.
 
-##  <a name="firstbithigh"></a>  firstbithigh
+## <a name="firstbithigh"></a>  firstbithigh
 
 Gets the location of the first set bit in _X, beginning with the highest-order bit and moving towards the lowest-order bit.
 
-```
+```cpp
 inline int firstbithigh(int _X) restrict(amp);
 ```
 
@@ -191,11 +191,11 @@ Integer value
 
 The location of the first set bit
 
-##  <a name="firstbitlow"></a>  firstbitlow
+## <a name="firstbitlow"></a>  firstbitlow
 
 Gets the location of the first set bit in _X, beginning with the lowest-order bit and working toward the highest-order bit.
 
-```
+```cpp
 inline int firstbitlow(int _X) restrict(amp);
 ```
 
@@ -208,11 +208,11 @@ Integer value
 
 Returns The location of the first set bit
 
-##  <a name="get_buffer"></a>  get_buffer
+## <a name="get_buffer"></a>  get_buffer
 
 Get the Direct3D buffer interface underlying the specified array.
 
-```
+```cpp
 template<
     typename value_type,
     int _Rank
@@ -240,7 +240,7 @@ The IUnknown interface pointer corresponding to the Direct3D buffer underlying t
 
 Get the D3D device interface underlying a accelerator_view.
 
-```
+```cpp
 IUnknown* get_device(const accelerator_view Av);
 ```
 
@@ -253,11 +253,11 @@ The D3D accelerator_view for which the underlying D3D device interface is return
 
 The `IUnknown` interface pointer of the D3D device underlying the accelerator_view.
 
-##  <a name="imax"></a>  imax
+## <a name="imax"></a>  imax
 
 Determine the maximum numeric value of the arguments
 
-```
+```cpp
 inline int imax(
     int _X,
     int _Y) restrict(amp);
@@ -275,11 +275,11 @@ Integer value
 
 Return the maximum numeric value of the arguments
 
-##  <a name="imin"></a>  imin
+## <a name="imin"></a>  imin
 
 Determine the minimum numeric value of the arguments
 
-```
+```cpp
 inline int imin(
     int _X,
     int _Y) restrict(amp);
@@ -297,11 +297,11 @@ Integer value
 
 Return the minimum numeric value of the arguments
 
-##  <a name="is_timeout_disabled"></a>  is_timeout_disabled
+## <a name="is_timeout_disabled"></a>  is_timeout_disabled
 
 Returns a boolean flag indicating if timeout is disabled for the specified accelerator_view. This corresponds to the D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT flag for Direct3D device creation.
 
-```
+```cpp
 bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
 ```
 
@@ -314,11 +314,11 @@ The accelerator_view for which the timeout disabled setting is to be queried.
 
 A boolean flag indicating if timeout is disabled for the specified accelerator_view.
 
-##  <a name="mad"></a>  mad
+## <a name="mad"></a>  mad
 
 Computes the product of the first and second specified argument, then adds the third specified argument.
 
-```
+```cpp
 inline float mad(
     float _X,
     float _Y,
@@ -355,11 +355,11 @@ The third specified argument.
 
 The result of `_X` \* `_Y` + `_Z`.
 
-##  <a name="make_array"></a>  make_array
+## <a name="make_array"></a>  make_array
 
 Create an array from a Direct3D buffer interface pointer.
 
-```
+```cpp
 template<
     typename value_type,
     int _Rank
@@ -391,11 +391,11 @@ IUnknown interface pointer of the D3D buffer to create the array from.
 
 An array created using the provided Direct3D buffer.
 
-##  <a name="noise"></a>  noise
+## <a name="noise"></a>  noise
 
 Generates a random value using the Perlin noise algorithm
 
-```
+```cpp
 inline float noise(float _X) restrict(amp);
 ```
 
@@ -408,11 +408,11 @@ Floating-point value from which to generate Perlin noise
 
 Returns The Perlin noise value within a range between -1 and 1
 
-##  <a name="radians"></a>  radians
+## <a name="radians"></a>  radians
 
 Converts _X from degrees to radians
 
-```
+```cpp
 inline float radians(float _X) restrict(amp);
 ```
 
@@ -425,11 +425,11 @@ Floating-point value
 
 Returns _X converted from degrees to radians
 
-##  <a name="rcp"></a>  rcp
+## <a name="rcp"></a>  rcp
 
 Computes the reciprocal of the specified argument by using a fast approximation.
 
-```
+```cpp
 inline float rcp(float _X) restrict(amp);
 
 inline double rcp(double _X) restrict(amp);
@@ -444,11 +444,11 @@ The value for which to compute the reciprocal.
 
 The reciprocal of the specified argument.
 
-##  <a name="reversebits"></a>  reversebits
+## <a name="reversebits"></a>  reversebits
 
 Reverses the order of the bits in _X
 
-```
+```cpp
 inline unsigned int reversebits(unsigned int _X) restrict(amp);
 ```
 
@@ -461,11 +461,11 @@ Unsigned integer value
 
 Returns the value with the bit order reversed in _X
 
-##  <a name="saturate"></a>  saturate
+## <a name="saturate"></a>  saturate
 
 Clamps _X within the range of 0 to 1
 
-```
+```cpp
 inline float saturate(float _X) restrict(amp);
 ```
 
@@ -478,11 +478,11 @@ Floating-point value
 
 Returns _X clamped within the range of 0 to 1
 
-##  <a name="sign"></a>  sign
+## <a name="sign"></a>  sign
 
 Determines the sign of the specified argument.
 
-```
+```cpp
 inline int sign(int _X) restrict(amp);
 ```
 
@@ -495,11 +495,11 @@ Integer value
 
 The sign of the argument.
 
-##  <a name="smoothstep"></a>  smoothstep
+## <a name="smoothstep"></a>  smoothstep
 
 Returns a smooth Hermite interpolation between 0 and 1, if _X is in the range [_Min, _Max].
 
-```
+```cpp
 inline float smoothstep(
     float _Min,
     float _Max,
@@ -521,11 +521,11 @@ Floating-point value
 
 Returns 0 if _X is less than _Min; 1 if _X is greater than _Max; otherwise, a value between 0 and 1 if _X is in the range [_Min, _Max]
 
-##  <a name="step"></a>  step
+## <a name="step"></a>  step
 
 Compares two values, returning 0 or 1 based on which value is greater
 
-```
+```cpp
 inline float step(
     float _Y,
     float _X) restrict(amp);
@@ -543,11 +543,11 @@ Floating-point value
 
 Returns 1 if the _X is greater than or equal to _Y; otherwise, 0
 
-##  <a name="umax"></a>  umax
+## <a name="umax"></a>  umax
 
 Determine the maximum numeric value of the arguments
 
-```
+```cpp
 inline unsigned int umax(
     unsigned int _X,
     unsigned int _Y) restrict(amp);
@@ -565,11 +565,11 @@ Integer value
 
 Return the maximum numeric value of the arguments
 
-##  <a name="umin"></a>  umin
+## <a name="umin"></a>  umin
 
 Determine the minimum numeric value of the arguments
 
-```
+```cpp
 inline unsigned int umin(
     unsigned int _X,
     unsigned int _Y) restrict(amp);

@@ -10,7 +10,7 @@ Represents a short vector of four unsigned integers.
 
 ## Syntax
 
-```
+```cpp
 class uint_4;
 ```
 
@@ -337,7 +337,7 @@ Default constructor, initializes all elements with 0.
 
 ### Syntax
 
-```
+```cpp
 uint_4() restrict(amp,cpu);
 uint_4(
    unsigned int _V0,
@@ -392,7 +392,7 @@ The object used to initialize.
 
 ### Syntax
 
-```
+```cpp
 static const int size = 4;
 ```
 

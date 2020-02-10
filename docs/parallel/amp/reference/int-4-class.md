@@ -10,7 +10,7 @@ Represents a short vector of four integers.
 
 ## Syntax
 
-```
+```cpp
 class int_4;
 ```
 
@@ -338,11 +338,11 @@ class int_4;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> int_4
+## <a name="ctor"></a> int_4
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 int_4() restrict(amp,
     cpu);
 
@@ -402,9 +402,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="int_4__size"></a> size
+## <a name="int_4__size"></a> size
 
-```
+```cpp
 static const int size = 4;
 ```
 

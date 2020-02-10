@@ -10,7 +10,7 @@ Represents a short vector of two unsigned integers.
 
 ## Syntax
 
-```
+```cpp
 class uint_2;
 ```
 
@@ -93,11 +93,11 @@ class uint_2;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> uint_2
+## <a name="ctor"></a> uint_2
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 uint_2() restrict(amp,
     cpu);
 
@@ -149,9 +149,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="uint_2__size"></a> size
+## <a name="uint_2__size"></a> size
 
-```
+```cpp
 static const int size = 2;
 ```
 
