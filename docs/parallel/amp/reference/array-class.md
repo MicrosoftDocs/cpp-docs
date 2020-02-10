@@ -11,12 +11,12 @@ Represents a data container used to move data to an accelerator.
 
 ## Syntax
 
-```
+```cpp
 template <typename value_type, int _Rank>
 friend class array;
 ```
 
-#### Parameters
+### Parameters
 
 *value_type*<br/>
 The element type of the data.
@@ -99,27 +99,27 @@ The `array<T,N>` type is used in several scenarios:
 
 **Namespace:** Concurrency
 
-##  <a name="dtor"></a> ~array
+## <a name="dtor"></a> ~array
 
 Destroys the `array` object.
 
-```
+```cpp
 ~array() restrict(cpu);
 ```
 
-##  <a name="accelerator_view"></a> accelerator_view
+## <a name="accelerator_view"></a> accelerator_view
 
 Gets the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.
 
-```
+```cpp
 __declspec(property(get= get_accelerator_view)) Concurrency::accelerator_view accelerator_view;
 ```
 
-##  <a name="ctor"></a> array
+## <a name="ctor"></a> array
 
 Initializes a new instance of the [array class](array-class.md). There is no default constructor for `array<T,N>`. All constructors are run on the CPU only. They cannot be executed on a Direct3D target.
 
-```
+```cpp
 explicit array(
     const Concurrency::extent<_Rank>& _Extent) restrict(cpu);
 
@@ -398,7 +398,7 @@ The next-to-most-significant component of the extent of this section.
 The least significant component of the extent of this section.
 
 *_InputIterator*<br/>
-The type of the input interator.
+The type of the input iterator.
 
 *_Src*<br/>
 To object to copy.
@@ -418,19 +418,19 @@ The rank of the section.
 *value_type*<br/>
 The data type of the elements that are copied.
 
-##  <a name="associated_accelerator_view"></a> associated_accelerator_view
+## <a name="associated_accelerator_view"></a> associated_accelerator_view
 
 Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.
 
-```
+```cpp
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;
 ```
 
-##  <a name="copy_to"></a> copy_to
+## <a name="copy_to"></a> copy_to
 
 Copies the contents of the `array` to another `array`.
 
-```
+```cpp
 void copy_to(
     array<value_type, _Rank>& _Dest) const ;
 
@@ -443,19 +443,19 @@ void copy_to(
 *_Dest*<br/>
 The [array_view](array-view-class.md) object to copy to.
 
-##  <a name="cpu_access_type"></a> cpu_access_type
+## <a name="cpu_access_type"></a> cpu_access_type
 
 Gets the CPU access_type allowed for this array.
 
-```
+```cpp
 __declspec(property(get= get_cpu_access_type)) access_type cpu_access_type;
 ```
 
-##  <a name="data"></a> data
+## <a name="data"></a> data
 
 Returns a pointer to the raw data of the `array`.
 
-```
+```cpp
 value_type* data() restrict(amp, cpu);
 
 const value_type* data() const restrict(amp, cpu);
@@ -465,19 +465,19 @@ const value_type* data() const restrict(amp, cpu);
 
 A pointer to the raw data of the array.
 
-##  <a name="extent"></a> extent
+## <a name="extent"></a> extent
 
 Gets the [extent](extent-class.md) object that defines the shape of the `array`.
 
-```
+```cpp
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
 ```
 
-##  <a name="get_accelerator_view"></a> get_accelerator_view
+## <a name="get_accelerator_view"></a> get_accelerator_view
 
 Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the `array` object is allocated. This property can be accessed only on the CPU.
 
-```
+```cpp
 Concurrency::accelerator_view get_accelerator_view() const;
 ```
 
@@ -485,11 +485,11 @@ Concurrency::accelerator_view get_accelerator_view() const;
 
 The `accelerator_view` object that represents the location where the `array` object is allocated.
 
-##  <a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
+## <a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
 
 Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.
 
-```
+```cpp
 Concurrency::accelerator_view get_associated_accelerator_view() const ;
 ```
 
@@ -497,21 +497,21 @@ Concurrency::accelerator_view get_associated_accelerator_view() const ;
 
 The second [accelerator_view](accelerator-view-class.md) object passed to the staging constructor.
 
-##  <a name="get_cpu_access_type"></a> get_cpu_access_type
+## <a name="get_cpu_access_type"></a> get_cpu_access_type
 
 Returns the CPU access_type that's allowed for this array.
 
-```
+```cpp
 access_type get_cpu_access_type() const restrict(cpu);
 ```
 
 ### Return Value
 
-##  <a name="get_extent"></a> get_extent
+## <a name="get_extent"></a> get_extent
 
 Returns the [extent](extent-class.md) object of the `array`.
 
-```
+```cpp
 Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 ```
 
@@ -519,11 +519,11 @@ Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 
 The `extent` object of the `array`.
 
-##  <a name="operator_vec"></a> operator std::vector&lt;value_type&gt;
+## <a name="operator_vec"></a> operator std::vector&lt;value_type&gt;
 
 Uses `copy(*this, vector)` to implicitly convert the array to a std::vector object.
 
-```
+```cpp
 operator std::vector<value_type>() const restrict(cpu);
 ```
 
@@ -536,11 +536,11 @@ The data type of the elements of the vector.
 
 An object of type `vector<T>` that contains a copy of the data that is contained in the array.
 
-##  <a name="operator_call"></a> operator()
+## <a name="operator_call"></a> operator()
 
 Returns the element value that is specified by the parameters.
 
-```
+```cpp
 value_type& operator() (const index<_Rank>& _Index) restrict(amp,cpu);
 
 const value_type& operator() (const index<_Rank>& _Index) cons  t restrict(amp,cpu);
@@ -579,11 +579,11 @@ The location of the element.
 
 The element value specified by the parameters.
 
-##  <a name="operator_at"></a> operator[]
+## <a name="operator_at"></a> operator[]
 
 Returns the element that is at the specified index.
 
-```
+```cpp
 value_type& operator[](const index<_Rank>& _Index) restrict(amp,cpu);
 
 const value_type& operator[]
@@ -606,11 +606,11 @@ The index.
 
 The element that is at the specified index.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Copies the contents of the specified `array` object.
 
-```
+```cpp
 array& operator= (const array& _Other) restrict(cpu);
 
 array& operator= (array&& _Other) restrict(cpu);
@@ -631,11 +631,11 @@ The `array` object to copy from.
 
 A reference to this `array` object.
 
-##  <a name="rank"></a> rank
+## <a name="rank"></a> rank
 
 Stores the rank of the `array`.
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
@@ -645,7 +645,7 @@ Reinterprets the array through a one-dimensional array_view, which optionally ma
 
 ### Syntax
 
-```
+```cpp
 template <typename _Value_type2>
 array_view<_Value_type2,1> reinterpret_as() restrict(amp,cpu);
 
@@ -678,11 +678,11 @@ array_view<float,1> v = a.reinterpret_as<float>();
 assert(v.extent == 3*a.extent);
 ```
 
-##  <a name="section"></a> section
+## <a name="section"></a> section
 
 Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent.
 
-```
+```cpp
 array_view<value_type,_Rank> section(
     const Concurrency::index<_Rank>& _Section_origin,
     const Concurrency::extent<_Rank>& _Section_extent) restrict(amp,cpu);
@@ -782,11 +782,11 @@ The data type of the elements that are copied.
 
 Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent. When only the `index` object is specified, the subsection contains all elements in the associated grid that have indexes that are larger than the indexes of the elements in the `index` object.
 
-##  <a name="view_as"></a> view_as
+## <a name="view_as"></a> view_as
 
 Reinterprets this array as an [array_view](array-view-class.md) of a different rank.
 
-```
+```cpp
 template <int _New_rank>
 array_view<value_type,_New_rank> view_as(
     const Concurrency::extent<_New_rank>& _View_extent) restrict(amp,cpu);

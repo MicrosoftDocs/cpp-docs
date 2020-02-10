@@ -7536,6 +7536,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/mfc/drag-and-drop-customizing.md",
+      "redirect_url": "/cpp/mfc/drag-and-drop-ole#customize-drag-and-drop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/mfc/drag-and-drop-implementing-a-drop-source.md",
+      "redirect_url": "/cpp/mfc/drag-and-drop-ole#implement-a-drop-source",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/mfc/drag-and-drop-implementing-a-drop-target.md",
+      "redirect_url": "/cpp/mfc/drag-and-drop-ole#implement-a-drop-target",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/mfc/automatic-linking-of-mfc-library-version.md",
       "redirect_url": "/cpp/mfc/mfc-library-versions",
       "redirect_document_id": false

@@ -293,9 +293,9 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
                      LPTSTR    lpCmdLine,
                      int       nCmdShow)
 {
-	UNREFERENCED_PARAMETER(hInstance);
+   UNREFERENCED_PARAMETER(hInstance);
    UNREFERENCED_PARAMETER(hPrevInstance);
-	
+
    g_UseMethod = _ttoi(lpCmdLine);
 
    if (ValidateUseMethod())

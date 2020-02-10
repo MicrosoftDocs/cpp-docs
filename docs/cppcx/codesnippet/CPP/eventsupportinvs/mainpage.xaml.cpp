@@ -23,7 +23,7 @@ using namespace Windows::UI::Xaml::Navigation;
 
 MainPage::MainPage()
 {
-	InitializeComponent();
+    InitializeComponent();
 }
 
 /// <summary>
@@ -33,7 +33,7 @@ MainPage::MainPage()
 /// property is typically used to configure the page.</param>
 void MainPage::OnNavigatedTo(NavigationEventArgs^ e)
 {
-	(void) e;	// Unused parameter
+    (void) e;    // Unused parameter
 }
 
 

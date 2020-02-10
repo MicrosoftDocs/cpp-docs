@@ -10,7 +10,7 @@ short_vector provides metaprogramming definitions which are useful for programmi
 
 ## Syntax
 
-```
+```cpp
 template<
     typename _Scalar_type,
     int _Size
@@ -66,7 +66,7 @@ template<>
 struct short_vector<double, 4>;
 ```
 
-#### Parameters
+### Parameters
 
 *_Scalar_type*<br/>
 
@@ -96,9 +96,9 @@ struct short_vector<double, 4>;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a>  short_vector::short_vector Constructor
+## <a name="ctor"></a>  short_vector::short_vector Constructor
 
-```
+```cpp
 short_vector();
 ```
 

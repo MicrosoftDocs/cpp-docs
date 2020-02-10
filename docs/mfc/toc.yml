@@ -428,17 +428,8 @@
               href: data-objects-and-data-sources-creation-and-destruction.md
             - name: "Data objects and data sources: Manipulation"
               href: data-objects-and-data-sources-manipulation.md
-        - name: Drag and drop (OLE)
-          expanded: false
-          items: 
-            - name: Drag and drop (OLE)
-              href: drag-and-drop-ole.md
-            - name: "Drag and drop: Implementing a drop source"
-              href: drag-and-drop-implementing-a-drop-source.md
-            - name: "Drag and drop: Implementing a drop target"
-              href: drag-and-drop-implementing-a-drop-target.md
-            - name: "Drag and drop: Customizing"
-              href: drag-and-drop-customizing.md
+        - name: OLE drag and drop
+          href: drag-and-drop-ole.md
         - name: Menus and resources (OLE)
           expanded: false
           items: 

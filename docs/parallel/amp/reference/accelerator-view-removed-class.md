@@ -11,7 +11,7 @@ The exception that is thrown when an underlying DirectX call fails due to the Wi
 
 ## Syntax
 
-```
+```cpp
 class accelerator_view_removed : public runtime_exception;
 ```
 
@@ -49,7 +49,7 @@ Initializes a new instance of the [accelerator_view_removed](accelerator-view-re
 
 ### Syntax
 
-```
+```cpp
 explicit accelerator_view_removed(
     const char * message,
     HRESULT view_removed_reason ) throw();
@@ -76,7 +76,7 @@ Returns an HRESULT error code indicating the cause of the `accelerator_view` obj
 
 ### Syntax
 
-```
+```cpp
 HRESULT get_view_removed_reason() const throw();
 ```
 

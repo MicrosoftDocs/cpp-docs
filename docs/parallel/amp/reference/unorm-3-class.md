@@ -10,7 +10,7 @@ Represents a short vector of three unsigned normal numbers.
 
 ## Syntax
 
-```
+```cpp
 class unorm_3;
 ```
 
@@ -132,11 +132,11 @@ class unorm_3;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> unorm_3
+## <a name="ctor"></a> unorm_3
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 unorm_3() restrict(amp,
     cpu);
 
@@ -202,9 +202,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="unorm_3__size"></a> size
+## <a name="unorm_3__size"></a> size
 
-```
+```cpp
 static const int size = 3;
 ```
 

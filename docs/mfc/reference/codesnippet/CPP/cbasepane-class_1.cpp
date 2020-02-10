@@ -4,9 +4,9 @@
 CBasePane *pBar = GetPane(ID_VIEW_FORMATBAR);
 if (pBar != NULL)
 {
-	// Set the docking mode, the pane alignment, and the pane style.
-	pBar->SetDockingMode(DT_STANDARD);
-	pBar->SetPaneAlignment(CBRS_ALIGN_LEFT);
-	pBar->SetPaneStyle(pBar->GetCurrentAlignment() | CBRS_TOOLTIPS);
-	pBar->ShowPane(TRUE, FALSE, FALSE);
+    // Set the docking mode, the pane alignment, and the pane style.
+    pBar->SetDockingMode(DT_STANDARD);
+    pBar->SetPaneAlignment(CBRS_ALIGN_LEFT);
+    pBar->SetPaneStyle(pBar->GetCurrentAlignment() | CBRS_TOOLTIPS);
+    pBar->ShowPane(TRUE, FALSE, FALSE);
 }

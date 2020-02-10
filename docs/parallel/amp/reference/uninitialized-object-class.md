@@ -11,7 +11,7 @@ The exception that is thrown when an uninitialized object is used.
 
 ## Syntax
 
-```
+```cpp
 class uninitialized_object : public runtime_exception;
 ```
 
@@ -43,7 +43,7 @@ Constructs a new instance of the `uninitialized_object` exception.
 
 ### Syntax
 
-```
+```cpp
 explicit uninitialized_object(
     const char * _Message ) throw();
 

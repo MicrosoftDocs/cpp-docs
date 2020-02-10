@@ -26,14 +26,14 @@ ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
 
     ```cpp
     short get_Sides();
-	void set_Sides(short value);
+    void set_Sides(short value);
     ```
 
     with
 
     ```cpp
     [propget, id(1), helpstring("property Sides")] HRESULT Sides([out, retval] short *pVal);
-	[propput, id(1), helpstring("property Sides")] HRESULT Sides([in] short newVal);
+    [propput, id(1), helpstring("property Sides")] HRESULT Sides([in] short newVal);
     ```
 
 1. From **Solution Explorer**, open PolyCtl.h and add the following lines after the definition of `m_clrFillColor`:

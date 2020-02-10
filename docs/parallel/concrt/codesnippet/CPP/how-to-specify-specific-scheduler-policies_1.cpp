@@ -88,7 +88,7 @@ int wmain()
 
    // Release the final reference to the scheduler. This causes the scheduler
    // to shut down.
-	scheduler->Release();
+   scheduler->Release();
 
    // Wait for the scheduler to shut down and destroy itself.
    WaitForSingleObject(hShutdownEvent, INFINITE);

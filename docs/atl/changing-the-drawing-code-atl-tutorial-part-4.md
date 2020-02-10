@@ -37,14 +37,14 @@ Start by adding support for the math functions `sin` and `cos`, which will be us
 
     ```cpp
     public CComControl<CPolyCtl>,
-	public IProvideClassInfo2Impl<&CLSID_PolyCtl, &DIID__IPolyCtlEvents, &LIBID_PolygonLib>
+    public IProvideClassInfo2Impl<&CLSID_PolyCtl, &DIID__IPolyCtlEvents, &LIBID_PolygonLib>
     ```
 
     and in `BEGIN_COM_MAP(CPolyCtl)`, add the lines:
 
     ```cpp
     COM_INTERFACE_ENTRY(IProvideClassInfo)
-	COM_INTERFACE_ENTRY(IProvideClassInfo2)
+    COM_INTERFACE_ENTRY(IProvideClassInfo2)
     ```
 
 1. Once the polygon points are calculated, they will be stored in an array of type `POINT`, so add the array after the definition statement `short m_nSides;` in PolyCtl.h:

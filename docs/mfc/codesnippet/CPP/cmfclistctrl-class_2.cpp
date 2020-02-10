@@ -1,4 +1,4 @@
-	// DWORD dwStyle
+    // DWORD dwStyle
     // CRect rectDummy
     m_wndWatch.Create(dwStyle, rectDummy, this, ID_LIST_1);
     m_wndWatch.SendMessage(LVM_SETEXTENDEDLISTVIEWSTYLE, 0, LVS_EX_FULLROWSELECT | LVS_EX_GRIDLINES);

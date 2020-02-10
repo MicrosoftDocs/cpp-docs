@@ -14,4 +14,4 @@
             // Open the file with the Create flag
             bOpenOK = theFile.Open( szFileName, 
                CFile::modeCreate | CFile::modeWrite );
-         }		
+         }

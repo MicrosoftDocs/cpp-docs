@@ -7,7 +7,7 @@
     vector<shared_ptr<Song>> v2;
     remove_copy_if(v.begin(), v.end(), back_inserter(v2), [] (shared_ptr<Song> s) 
     {
-        return s->artist.compare(L"Bob Dylan") == 0;		
+        return s->artist.compare(L"Bob Dylan") == 0;
     });
 
     for (const auto& s : v2)

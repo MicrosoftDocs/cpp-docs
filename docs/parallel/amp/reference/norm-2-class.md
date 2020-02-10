@@ -10,7 +10,7 @@ Represents a short vector of two normal numbers.
 
 ## Syntax
 
-```
+```cpp
 class norm_2;
 ```
 
@@ -87,11 +87,11 @@ class norm_2;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> norm_2
+## <a name="ctor"></a> norm_2
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 norm_2() restrict(amp,
     cpu);
 
@@ -157,9 +157,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="norm_2__size"></a> size
+## <a name="norm_2__size"></a> size
 
-```
+```cpp
 static const int size = 2;
 ```
 

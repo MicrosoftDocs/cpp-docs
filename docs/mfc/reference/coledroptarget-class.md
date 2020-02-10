@@ -42,7 +42,7 @@ Creating an object of this class allows a window to accept data through the OLE 
 
 To get a window to accept drop commands, you should first create an object of the `COleDropTarget` class, and then call the [Register](#register) function with a pointer to the desired `CWnd` object as the only parameter.
 
-For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).
+For more information on drag-and-drop operations using OLE, see the article [OLE drag and drop](../../mfc/drag-and-drop-ole.md).
 
 ## Inheritance Hierarchy
 

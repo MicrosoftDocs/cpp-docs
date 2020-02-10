@@ -10,7 +10,7 @@ Represents a short vector of three integers.
 
 ## Syntax
 
-```
+```cpp
 class int_3;
 ```
 
@@ -144,9 +144,9 @@ class int_3;
 
 Default constructor, initializes all elements with 0.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 int_3() restrict(amp,cpu);
 int_3(
    int _V0,
@@ -195,9 +195,9 @@ The object used to initialize.
 
 ## <a name="size"></a> size
 
-## Syntax
+### Syntax
 
-```
+```cpp
 static const int size = 3;
 ```
 

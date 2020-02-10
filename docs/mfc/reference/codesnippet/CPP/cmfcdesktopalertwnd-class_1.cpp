@@ -9,10 +9,10 @@ pPopup->SetAnimationSpeed(m_nAnimationSpeed);
 // int m_nTransparency
 pPopup->SetTransparency((BYTE)m_nTransparency);
 
-// BOOL	m_bSmallCaption
+// BOOL m_bSmallCaption
 pPopup->SetSmallCaption(m_bSmallCaption);
 
-// BOOL	m_bAutoClose, int m_nAutoCloseTime
+// BOOL m_bAutoClose, int m_nAutoCloseTime
 pPopup->SetAutoCloseTime(m_bAutoClose ? m_nAutoCloseTime * 1000 : 0);
 
 // int m_nPopupSource
