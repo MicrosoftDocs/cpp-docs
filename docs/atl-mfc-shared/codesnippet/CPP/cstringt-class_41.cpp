@@ -8,5 +8,5 @@
    
    // Output:
    // --------------------------
-   // Before:		****Soccer is best!
+   // Before:     ****Soccer is best!
    // After: Soccer is best!

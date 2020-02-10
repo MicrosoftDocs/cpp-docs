@@ -1,1 +1,1 @@
-	EnableAutoHidePanes(CBRS_ALIGN_ANY);
+    EnableAutoHidePanes(CBRS_ALIGN_ANY);

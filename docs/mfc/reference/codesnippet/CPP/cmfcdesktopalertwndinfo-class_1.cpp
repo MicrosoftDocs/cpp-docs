@@ -6,8 +6,8 @@ if (m_nIcon > 0)
    params.m_hIcon = m_Icons.ExtractIcon(m_nIcon - 1);
 }
 
-// CString	m_strText
+// CString m_strText
 params.m_strText = m_strText;
-// CString	m_strLink
+// CString m_strLink
 params.m_strURL = m_strLink;
 params.m_nURLCmdID = 101;

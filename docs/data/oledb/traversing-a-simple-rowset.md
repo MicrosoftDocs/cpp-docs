@@ -21,7 +21,7 @@ int main()
     CTable<CAccessor<CArtists>> artists;
 
     LPCSTR clsid; // Initialize CLSID_MSDASQL here
-	LPCTSTR pName = L"NWind";
+    LPCTSTR pName = L"NWind";
 
     // Open the connection, session, and table, specifying authentication
     // using Windows NT integrated security. Hard-coding a password is a major
