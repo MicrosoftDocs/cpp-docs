@@ -7,7 +7,7 @@ ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
 ---
 # CDaoWorkspace Class
 
-Manages a named, password-protected database session from login to logoff, by a single user.
+Manages a named, password-protected database session from login to logoff, by a single user. DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 

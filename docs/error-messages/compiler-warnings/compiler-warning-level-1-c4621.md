@@ -13,7 +13,7 @@ There was no postfix decrement operator defined for the given type. The compiler
 
 This warning can be avoided by defining a postfix `--` operator. Create a two-argument version of the `--` operator as shown below:
 
-```
+```cpp
 // C4621.cpp
 // compile with: /W1
 class A

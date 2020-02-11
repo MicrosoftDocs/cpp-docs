@@ -13,7 +13,7 @@ The tracking handle (^) was applied to a qualifier for which it was not designed
 
 The following sample generates C3697:
 
-```
+```cpp
 // C3697.cpp
 // compile with: /clr
 using namespace System;

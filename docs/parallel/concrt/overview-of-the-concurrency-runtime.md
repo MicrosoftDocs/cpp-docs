@@ -8,7 +8,7 @@ ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
 
 This document provides an overview of the Concurrency Runtime. It describes the benefits of the Concurrency Runtime, when to use it, and how its components interact with each other and with the operating system and applications.
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This document contains the following sections:
 
@@ -34,7 +34,7 @@ In Visual Studio 2010 through 2013, the Concurrency Runtime was incorporated wit
 
 In Visual Studio 2015 and later, the Concurrency Runtime Task Scheduler is no longer the scheduler for the task class and related types in ppltasks.h. Those types now use the Windows ThreadPool for better performance and interoperability with Windows synchronization primitives.
 
-##  <a name="runtime"></a> Why a Runtime for Concurrency is Important
+## <a name="runtime"></a> Why a Runtime for Concurrency is Important
 
 A runtime for concurrency provides uniformity and predictability to applications and application components that run simultaneously. Two examples of the benefits of the Concurrency Runtime are *cooperative task scheduling* and *cooperative blocking*.
 
@@ -44,7 +44,7 @@ The Concurrency Runtime also provides synchronization primitives that use cooper
 
 [[Top](#top)]
 
-##  <a name="architecture"></a> Architecture
+## <a name="architecture"></a> Architecture
 
 The Concurrency Runtime is divided into four components: the Parallel Patterns Library (PPL), the Asynchronous Agents Library, the Task Scheduler, and the Resource Manager. These components reside between the operating system and applications. The following illustration shows how the Concurrency Runtime components interact among the operating system and applications:
 
@@ -93,7 +93,7 @@ The Resource Manager serves as an abstraction over computing resources and prima
 
 [[Top](#top)]
 
-##  <a name="lambda"></a> C++ Lambda Expressions
+## <a name="lambda"></a> C++ Lambda Expressions
 
 Many of the types and algorithms that are defined by the Concurrency Runtime are implemented as C++ templates. Some of these types and algorithms take as a parameter a routine that performs work. This parameter can be a lambda function, a function object, or a function pointer. These entities are also referred to as *work functions* or *work routines*.
 
@@ -117,7 +117,7 @@ For more information about lambda functions in C++, see [Lambda Expressions](../
 
 [[Top](#top)]
 
-##  <a name="requirements"></a> Requirements
+## <a name="requirements"></a> Requirements
 
 The following table shows the header files that are associated with each component of the Concurrency Runtime:
 

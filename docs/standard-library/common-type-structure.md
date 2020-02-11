@@ -6,7 +6,7 @@ ms.assetid: 2b42722c-c3dc-4d62-8613-0271e52b6f00
 ---
 # common_type Structure
 
-Describes specializations of template class [common_type](../standard-library/common-type-class.md) for instantiations of [duration](../standard-library/duration-class.md) and [time_point](../standard-library/time-point-class.md).
+Describes specializations of class template [common_type](../standard-library/common-type-class.md) for instantiations of [duration](../standard-library/duration-class.md) and [time_point](../standard-library/time-point-class.md).
 
 ## Syntax
 

@@ -13,7 +13,7 @@ A C function was declared a second time with a different parameter list. C does 
 
 The following sample generates C2192:
 
-```
+```c
 // C2192.c
 // compile with: /Za /c
 void func( float, int );

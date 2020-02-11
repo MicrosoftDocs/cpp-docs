@@ -15,7 +15,7 @@ To use the operator, you must overload it for the specified type or define a con
 
 The following sample generates C2676.
 
-```
+```cpp
 // C2676.cpp
 // C2676 expected
 struct C {
@@ -51,7 +51,7 @@ The `this` pointer is of type handle in a reference type. For more information, 
 
 The following sample generates C2676.
 
-```
+```cpp
 // C2676_a.cpp
 // compile with: /clr
 using namespace System;

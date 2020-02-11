@@ -13,7 +13,7 @@ A function was declared and then defined but the definition used the [noreturn](
 
 The following sample generates C2381:
 
-```
+```cpp
 // C2381.cpp
 // compile with: /c
 void f1();

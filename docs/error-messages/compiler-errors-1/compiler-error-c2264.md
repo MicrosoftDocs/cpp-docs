@@ -13,7 +13,7 @@ The function cannot be called due to an incorrect definition or declaration.
 
 The following sample generates C2264:
 
-```
+```cpp
 // C2264.cpp
 struct C {
    // Delete the following line to resolve.

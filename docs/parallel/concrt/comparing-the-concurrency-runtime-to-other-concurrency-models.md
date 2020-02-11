@@ -12,7 +12,7 @@ If you are currently using another programming model, such as the Windows thread
 
 You can use the features and productivity benefits of the Concurrency Runtime to complement your existing application that uses another concurrency model. The Concurrency Runtime cannot guarantee load balancing when multiple task schedulers compete for the same computing resources. However, when workloads do not overlap, this effect is minimal.
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 - [Comparing Preemptive Scheduling to Cooperative Scheduling](#models)
 
@@ -20,7 +20,7 @@ You can use the features and productivity benefits of the Concurrency Runtime to
 
 - [Comparing the Concurrency Runtime to OpenMP](#openmp)
 
-##  <a name="models"></a> Comparing Preemptive Scheduling to Cooperative Scheduling
+## <a name="models"></a> Comparing Preemptive Scheduling to Cooperative Scheduling
 
 The preemptive model and cooperative scheduling models are two common ways to enable multiple tasks to share computing resources, for example, processors or hardware threads.
 
@@ -44,7 +44,7 @@ Cooperative scheduling does not solve all scheduling problems. For example, task
 
 [[Top](#top)]
 
-##  <a name="winapi"></a> Comparing the Concurrency Runtime to the Windows API
+## <a name="winapi"></a> Comparing the Concurrency Runtime to the Windows API
 
 The Microsoft Windows application programming interface, which is typically referred to as the Windows API (and formerly known as Win32), provides a programming model that enables concurrency in your applications. The Concurrency Runtime builds on the Windows API to provide additional programming models that are not available from the underlying operating system.
 
@@ -74,7 +74,7 @@ In Windows 7 and Windows Server 2008 R2, the operating system further supports c
 
 [[Top](#top)]
 
-##  <a name="openmp"></a> Comparing the Concurrency Runtime to OpenMP
+## <a name="openmp"></a> Comparing the Concurrency Runtime to OpenMP
 
 The Concurrency Runtime enables a variety of programming models. These models may overlap or complement the models of other libraries. This section compares the Concurrency Runtime to [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp).
 

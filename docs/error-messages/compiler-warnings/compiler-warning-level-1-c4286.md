@@ -13,7 +13,7 @@ The specified exception type is handled by a previous handler. The type for the 
 
 ## Example
 
-```
+```cpp
 //C4286.cpp
 // compile with: /W1
 #include <eh.h>

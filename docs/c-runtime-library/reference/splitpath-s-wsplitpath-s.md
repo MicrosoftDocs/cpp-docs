@@ -1,9 +1,10 @@
 ---
 title: "_splitpath_s, _wsplitpath_s"
 ms.date: "11/04/2016"
-apiname: ["_wsplitpath_s", "_splitpath_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["_wsplitpath_s", "_splitpath_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_wsplitpath_s", "splitpath_s", "_splitpath_s", "wsplitpath_s"]
 helpviewer_keywords: ["splitpath_s function", "pathnames", "_splitpath_s function", "_wsplitpath_s function", "path names", "wsplitpath_s function"]
 ms.assetid: 30fff3e2-cd00-4eb6-b5a2-65db79cb688b
@@ -131,7 +132,7 @@ If the full path does not contain a component (for example, a filename), **_spli
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ## Requirements
 

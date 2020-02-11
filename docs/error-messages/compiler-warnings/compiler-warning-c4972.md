@@ -17,7 +17,7 @@ For more information, see [Boxing](../../extensions/boxing-cpp-component-extensi
 
 The following sample generates C4972.
 
-```
+```cpp
 // C4972.cpp
 // compile with: /clr:safe
 using namespace System;

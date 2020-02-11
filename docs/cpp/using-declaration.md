@@ -1,12 +1,12 @@
 ---
-title: "using Declaration"
+title: "using declaration"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["using declaration", "declaring namespaces, unqualified names in namespaces", "declarations [C++], using-declaration", "namespaces [C++], unqualified names in", "using keyword [C++]", "declarations [C++], namespaces"]
+helpviewer_keywords: ["using declaration", "declarations [C++], using-declaration", "namespaces [C++], unqualified names in", "using keyword [C++]"]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
 ---
-# using Declaration
+# using declaration
 
-The using declaration introduces a name into the declarative region in which the using declaration appears.
+The **using** declaration introduces a name into the declarative region in which the using declaration appears.
 
 ## Syntax
 

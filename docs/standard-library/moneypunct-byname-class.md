@@ -7,7 +7,7 @@ ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416
 ---
 # moneypunct_byname Class
 
-A derived template class that describes an object that can serve as a `moneypunct` facet of a given locale, enabling the formatting monetary input field or monetary output fields.
+A derived class template that describes an object that can serve as a `moneypunct` facet of a given locale, enabling the formatting monetary input field or monetary output fields.
 
 ## Syntax
 

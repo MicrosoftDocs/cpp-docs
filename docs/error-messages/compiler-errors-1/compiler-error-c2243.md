@@ -13,7 +13,7 @@ Access protection (`protected` or `private`) prevented conversion from a pointer
 
 The following sample generates C2243:
 
-```
+```cpp
 // C2243.cpp
 // compile with: /c
 class B {};

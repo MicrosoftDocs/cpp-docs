@@ -15,7 +15,7 @@ When building an assembly, a file other than a module or assembly compiled with 
 
 The following sample created the .obj file.
 
-```
+```cpp
 // LNK1312.cpp
 // compile with: /clr /LD
 public ref class A {
@@ -28,7 +28,7 @@ public:
 
 The following sample generates LNK1312.
 
-```
+```cpp
 // LNK1312_b.cpp
 // compile with: /clr /LD /link /assemblymodule:LNK1312.obj
 // LNK1312 error expected

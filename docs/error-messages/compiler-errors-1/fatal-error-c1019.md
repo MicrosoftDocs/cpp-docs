@@ -13,7 +13,7 @@ The `#else` directive appears outside an `#if`, `#ifdef`, or `#ifndef` construct
 
 The following sample generates C1019:
 
-```
+```cpp
 // C1019.cpp
 #else   // C1019
 #endif
@@ -23,7 +23,7 @@ int main() {}
 
 Possible resolution:
 
-```
+```cpp
 // C1019b.cpp
 #if 1
 #else

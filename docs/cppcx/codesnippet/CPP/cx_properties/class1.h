@@ -17,7 +17,7 @@ namespace cx_properties
         Platform::String^ m_doctor;
         int quantity;
     public:
-		Prescription(Platform::String^ name, Platform::String^ d) : m_doctor(d)
+        Prescription(Platform::String^ name, Platform::String^ d) : m_doctor(d)
         {
             // Trivial properties can't be initialized in member list.
             Name = name;
@@ -47,19 +47,19 @@ namespace cx_properties
         }
     };
     
-	public ref class PropertyConsumer sealed
-	{
-	private:
-		void GetPrescriptions()
-		{
-			Prescription^ p = ref new Prescription("Louis", "Dr. Who");
-			p->Quantity = 5;
-			Platform::String^ s = p->Doctor;
-			int32 i = p->Quantity;
+    public ref class PropertyConsumer sealed
+    {
+    private:
+        void GetPrescriptions()
+        {
+            Prescription^ p = ref new Prescription("Louis", "Dr. Who");
+            p->Quantity = 5;
+            Platform::String^ s = p->Doctor;
+            int32 i = p->Quantity;
 
-			Prescription p2("JR", "Dr. Dat");
-			p2.Quantity = 10;
-		}
-	};
-	//</snippet01>
+            Prescription p2("JR", "Dr. Dat");
+            p2.Quantity = 10;
+        }
+    };
+    //</snippet01>
 }

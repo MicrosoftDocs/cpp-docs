@@ -13,7 +13,7 @@ You cannot apply the [typeid](../../cpp/typeid-operator.md) operator to a manage
 
 The following sample generates C3185 and shows how to fix it:
 
-```
+```cpp
 // C3185a.cpp
 // compile with: /clr
 ref class Base {};

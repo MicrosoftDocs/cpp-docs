@@ -13,7 +13,7 @@ The identifier is already declared.
 
 The following sample generates C2371:
 
-```
+```cpp
 // C2371.cpp
 int main() {
    int i;

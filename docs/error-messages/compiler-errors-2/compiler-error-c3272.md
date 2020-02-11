@@ -13,7 +13,7 @@ When `StructLayout(LayoutKind::Explicit)` is in effect, fields must be marked wi
 
 The following sample generates C3272:
 
-```
+```cpp
 // C3272_2.cpp
 // compile with: /clr /c
 using namespace System;

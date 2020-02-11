@@ -1,18 +1,19 @@
 ---
 title: "SUBTTL"
-ms.date: "08/30/2018"
+ms.date: "12/16/2019"
 f1_keywords: ["SUBTTL"]
 helpviewer_keywords: ["SUBTTL directive"]
 ms.assetid: 927efadd-ec99-4de9-b64d-229bb2df3bf4
 ---
 # SUBTTL
 
-See [SUBTITLE](../../assembler/masm/subtitle.md).
+See [SUBTITLE](subtitle.md).
 
 ## Syntax
 
-> SUBTTL
+> **SUBTTL**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)
+[MASM BNF Grammar](masm-bnf-grammar.md)

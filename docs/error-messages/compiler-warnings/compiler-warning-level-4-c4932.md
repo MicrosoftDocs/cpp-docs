@@ -13,7 +13,7 @@ The compiler is unable to distinguish between **_finally** and `__finally` or `_
 
 The following sample generates C4932:
 
-```
+```cpp
 // C4932.cpp
 // compile with: /clr /W4 /WX
 int main() {

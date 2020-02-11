@@ -7,7 +7,7 @@ ms.assetid: d78b04bb-9ac0-4adb-8ffe-3aefb9b14c2d
 ---
 # &lt;cvt/wstring&gt;
 
-The header `<cvt/wstring>` in previous versions of Visual Studio defined the template class [wstring_convert Class](../standard-library/wstring-convert-class.md) in the stdext::cvt namespace. The header is maintained for backward compatibility. New code should use the version of the class that is defined in [\<locale>](../standard-library/locale.md) in the `std` namespace
+The header `<cvt/wstring>` in previous versions of Visual Studio defined the class template [wstring_convert Class](../standard-library/wstring-convert-class.md) in the stdext::cvt namespace. The header is maintained for backward compatibility. New code should use the version of the class that is defined in [\<locale>](../standard-library/locale.md) in the `std` namespace
 
 ## Syntax
 

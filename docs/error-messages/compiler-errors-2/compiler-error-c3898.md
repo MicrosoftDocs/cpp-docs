@@ -13,7 +13,7 @@ An [initonly](../../dotnet/initonly-cpp-cli.md) data member was declared in a na
 
 The following sample generates C3898:
 
-```
+```cpp
 // C3898.cpp
 // compile with: /clr
 struct Y1 {
@@ -24,7 +24,7 @@ struct Y1 {
 
 Possible resolution:
 
-```
+```cpp
 // C3898b.cpp
 // compile with: /clr /c
 ref struct Y1 {

@@ -19,7 +19,7 @@ Under strict ANSI compatibility ([/Za](../../build/reference/za-ze-disable-langu
 
 To disable warning, uncomment [#pragma warning(disable:4001)](../../preprocessor/warning.md).
 
-```
+```cpp
 // C4001.cpp
 // compile with: /W4 /Za /TC
 // #pragma warning(disable:4001)

@@ -80,7 +80,7 @@ Optional parts of a function declaration are:
 
     ```
 
-   For more information, see [Program and Linkage](../cpp/program-and-linkage-cpp.md).
+   For more information, see [Translation units and linkage](../cpp/program-and-linkage-cpp.md).
 
 1. **inline**, which instructs the compiler to replace every call to the function with the function code itself. inlining can help performance in scenarios where a function executes quickly and is invoked repeatedly in a performance-critical section of code.
 
@@ -246,7 +246,7 @@ When **auto** is used in conjunction with a trailing return type, it just serves
 
 ## Function local variables
 
-A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they are declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the return value optimization to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.
+A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they are declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the *named return value optimization* to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.
 
 In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit`. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
 
@@ -281,7 +281,6 @@ template<typename F, typename Tuple = tuple<T...>,
     apply(F&& f, Tuple&& args)
 {
     return apply_(std::forward<F>(f), std::forward<Tuple>(args), Indices());
-}
 }
 ```
 
@@ -352,7 +351,7 @@ There are various ways to return more than one value from a function:
     }
     ```
 
-1. **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and intialize names that are in scope for the entire function block.
+1. **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and initialize names that are in scope for the entire function block.
 
     ```cpp
     #include <tuple>

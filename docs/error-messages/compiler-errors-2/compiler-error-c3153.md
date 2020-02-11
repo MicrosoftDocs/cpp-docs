@@ -13,7 +13,7 @@ An interface cannot be instantiated. To use the members of an interface, derive 
 
 The following sample generates C3153:
 
-```
+```cpp
 // C3153.cpp
 // compile with: /clr
 interface class A {

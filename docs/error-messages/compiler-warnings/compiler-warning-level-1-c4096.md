@@ -15,7 +15,7 @@ See [Interface Attributes](../../windows/attributes/interface-attributes.md) for
 
 The following sample generates C4096:
 
-```
+```cpp
 // C4096.cpp
 // compile with: /W1 /LD
 #include "windows.h"

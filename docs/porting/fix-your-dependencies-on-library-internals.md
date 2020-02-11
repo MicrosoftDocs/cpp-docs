@@ -1,10 +1,10 @@
 ---
-title: "Fix your dependencies on library internals"
+title: "Fix your dependencies on C++ library internals"
 ms.date: "05/24/2017"
 helpviewer_keywords: ["library internals in an upgraded Visual Studio C++ project", "_Hash_seq in an upgraded Visual Studio C++ project"]
 ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
 ---
-# Fix your dependencies on library internals
+# Fix your dependencies on C++ library internals
 
 Microsoft has published the source code for the Standard Library, most of the C Runtime Library, and other Microsoft libraries in many versions of Visual Studio. The intent is to help you understand library behavior and to debug your code. One side-effect of publishing the library source code is that some internal values, data structures, and functions are exposed, even though they are not part of the library interface. They usually have names that begin with two underscores, or an underscore followed by a capital letter, names that the C++ Standard reserves to implementations. These values, structures, and functions are implementation details that may change as the libraries evolve over time, and so we strongly recommend against taking any dependencies on them. If you do, you risk non-portable code and issues when you try to migrate your code to new versions of the libraries.
 
@@ -68,6 +68,6 @@ inline size_t fnv1a_hash_bytes(const unsigned char * first, size_t count) {
 
 ## See also
 
-[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Upgrading projects from earlier versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md)

@@ -1,6 +1,6 @@
 ---
 title: "IFB"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["IFB"]
 helpviewer_keywords: ["IFB directive"]
 ms.assetid: 6395e313-e590-41b3-824c-577f200faf80
@@ -11,12 +11,13 @@ Grants assembly if *textitem* is blank.
 
 ## Syntax
 
-> IFB *textitem*
+> **IFB** *textitem*
 
 ## Remarks
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+See [IF](if-masm.md) for complete syntax.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

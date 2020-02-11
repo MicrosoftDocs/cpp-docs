@@ -1,9 +1,11 @@
 ---
 title: "strerror, _strerror, _wcserror, __wcserror"
-ms.date: "11/04/2016"
-apiname: ["strerror", "_strerror", "_wcserror", "__wcserror"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+description: "Describes the Microsoft C Runtime Library (CRT) functions strerror, _strerror, _wcserror, and __wcserror."
+ms.date: "01/07/2020"
+api_name: ["strerror", "_strerror", "_wcserror", "__wcserror"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["__sys_errlist", "wcserror", "_strerror", "__wcserror", "strerror", "__sys_nerr", "_tcserror", "_wcserror", "tcserror"]
 helpviewer_keywords: ["strerror function", "_strerror function", "__sys_errlist", "wcserror function", "error messages, printing", "__sys_nerr", "tcserror function", "printing error messages", "_wcserror function", "_tcserror function", "__wcserror function", "error messages, getting"]
 ms.assetid: 27b72255-f627-43c0-8836-bcda8b003e14
@@ -15,52 +17,51 @@ Gets a system error message string (**strerror**, **_wcserror**) or formats a us
 ## Syntax
 
 ```C
-char *strerror(
-   int errnum
-);
-char *_strerror(
-   const char *strErrMsg
-);
+char * strerror(
+   int errnum );
+
+char * _strerror(
+   const char *strErrMsg );
+
 wchar_t * _wcserror(
-   int errnum
-);
+   int errnum );
+
 wchar_t * __wcserror(
-   const wchar_t *strErrMsg
-);
+   const wchar_t *strErrMsg );
 ```
 
 ### Parameters
 
-*errnum*<br/>
+*errnum*\
 Error number.
 
-*strErrMsg*<br/>
+*strErrMsg*\
 User-supplied message.
 
-## Return Value
+## Return value
 
-All of these functions return a pointer to the error-message string. Subsequent calls can overwrite the string.
+All of these functions return a pointer to an error-message string, in a thread-local storage buffer owned by the runtime. Later calls on the same thread can overwrite this string.
 
 ## Remarks
 
-The **strerror** function maps *errnum* to an error-message string and returns a pointer to the string. Neither **strerror** nor **_strerror** actually prints the message: For that, you have to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+The **strerror** function maps *errnum* to an error-message string and returns a pointer to the string. The **strerror** and **_strerror** functions don't actually print the message. To print, call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
 ```C
-if (( _access( "datafile",2 )) == -1 )
+if (( _access( "datafile", 2 )) == -1 )
    fprintf( stderr, _strerror(NULL) );
 ```
 
-If *strErrMsg* is passed as **NULL**, **_strerror** returns a pointer to a string that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then **_strerror** returns a pointer to a string that contains (in order) your string message, a colon, a space, the system error message for the last library call that produces an error, and a newline character. Your string message can be, at most, 94 characters long.
+If *strErrMsg* is passed as **NULL**, **_strerror** returns a pointer to a string. It contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). When *strErrMsg* isn't **NULL**, the string contains, in order: your *strErrMsg* string, a colon, a space, the system error message, and a newline character. Your string message can be, at most, 94 characters long, in either narrow (**_strerror**) or wide (**__wcserror**) characters.
 
-The actual error number for **_strerror** is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call **_strerror** immediately after a library routine returns with an error. Otherwise, subsequent calls to **strerror** or **_strerror** can overwrite the **errno** value.
+The actual error number for **_strerror** is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call **_strerror** immediately after a library routine returns an error. Otherwise, later calls to library routines may overwrite the **errno** value.
 
 **_wcserror** and **__wcserror** are wide-character versions of **strerror** and **_strerror**, respectively.
 
-**_strerror**, **_wcserror**, and **__wcserror** are not part of the ANSI definition; they are Microsoft extensions and we recommend that you do not use them where you want portable code. For ANSI compatibility, use **strerror** instead.
+**_strerror**, **_wcserror**, and **__wcserror** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **strerror** instead.
 
 To get error strings, we recommend **strerror** or **_wcserror** instead of the deprecated macros [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and the deprecated internal functions **__sys_errlist** and **__sys_nerr**.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -82,7 +83,7 @@ See the example for [perror](perror-wperror.md).
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[String manipulation](../../c-runtime-library/string-manipulation-crt.md)\
+[clearerr](clearerr.md)\
+[ferror](ferror.md)\
+[perror, _wperror](perror-wperror.md)

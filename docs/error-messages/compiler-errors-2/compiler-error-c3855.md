@@ -13,7 +13,7 @@ The compiler found nontype template or generic parameters with different names. 
 
 The following sample generates C3855:
 
-```
+```cpp
 // C3855.cpp
 template <int N>
 struct C {
@@ -26,7 +26,7 @@ void C<N>::f() {}   // C3855
 
 Possible resolution:
 
-```
+```cpp
 // C3855b.cpp
 // compile with: /c
 template <int N>
@@ -40,7 +40,7 @@ void C<N>::f() {}
 
 C3855 can also occur when using generics:
 
-```
+```cpp
 // C3855c.cpp
 // compile with: /clr
 generic <class T>
@@ -57,7 +57,7 @@ ref struct GC1<T>::GC2 { };   // C3855
 
 Possible resolution:
 
-```
+```cpp
 // C3855d.cpp
 // compile with: /clr /c
 generic <class T>

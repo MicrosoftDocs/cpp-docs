@@ -13,7 +13,7 @@ You tried to [explicitly override](../../cpp/explicit-overrides-cpp.md) a member
 
 The following sample generates C3243:
 
-```
+```cpp
 // C3243.cpp
 #pragma warning(disable:4199)
 __interface IX14A {

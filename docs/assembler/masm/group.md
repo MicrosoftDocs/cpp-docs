@@ -1,18 +1,19 @@
 ---
 title: "GROUP"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: ["group"]
 helpviewer_keywords: ["GROUP directive"]
 ms.assetid: 55dc9548-154e-486d-849a-135e4631eca9
 ---
 # GROUP
 
-Add the specified *segments* to the group called *name*.
+(32-bit MASM only.) Add the specified *segments* to the group called *name*.
 
 ## Syntax
 
-> name GROUP segment [[, segment]]...
+> *name* **GROUP** *segment* ⟦__,__ *segment* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

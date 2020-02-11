@@ -10,16 +10,16 @@
 
 namespace ClientApp
 {
-	/// <summary>
-	/// Provides application-specific behavior to supplement the default Application class.
-	/// </summary>
-	ref class App sealed
-	{
-	public:
-		App();
-		virtual void OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ pArgs) override;
+    /// <summary>
+    /// Provides application-specific behavior to supplement the default Application class.
+    /// </summary>
+    ref class App sealed
+    {
+    public:
+        App();
+        virtual void OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ pArgs) override;
 
-	private:
-		void OnSuspending(Object^ sender, Windows::ApplicationModel::SuspendingEventArgs^ e);
-	};
+    private:
+        void OnSuspending(Object^ sender, Windows::ApplicationModel::SuspendingEventArgs^ e);
+    };
 }

@@ -164,7 +164,7 @@ A const_reference to the character at the position specified by the parameter in
 
 The first element has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string_view of length *n* has an *n*th element indexed by the number *n -* 1. **at** throws an exception for invalid indices, unlike [operator\[\]](#op_at). 
 
-In general, we recomend that **at** for sequences such as `std::vector` and string_view should never be used. An invalid index passed to a sequence is a logic error that should be discovered and fixed during development. If a program isn't absolutely certain that its indices are valid, it should test them, not call at() and rely on exceptions to defend against careless programming.
+In general, we recommend that **at** for sequences such as `std::vector` and string_view should never be used. An invalid index passed to a sequence is a logic error that should be discovered and fixed during development. If a program isn't absolutely certain that its indices are valid, it should test them, not call at() and rely on exceptions to defend against careless programming.
 
 See [basic_string_view::operator\[\]](#op_at) for more information.
 

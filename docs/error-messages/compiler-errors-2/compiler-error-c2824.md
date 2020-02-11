@@ -13,7 +13,7 @@ With non-based pointers, overloads of operator `new` must return `void *`.
 
 The following sample generates C2824:
 
-```
+```cpp
 // C2824.cpp
 // compile with: /c
 class   A {

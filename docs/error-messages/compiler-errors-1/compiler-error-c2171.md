@@ -15,7 +15,7 @@ A unary operator is used with an invalid operand type.
 
 The following sample generates C2171.
 
-```
+```cpp
 // C2171.cpp
 int main() {
    double d, d1;
@@ -31,7 +31,7 @@ int main() {
 
 The following sample generates C2171.
 
-```
+```cpp
 // C2171_b.cpp
 // compile with: /c
 class A {

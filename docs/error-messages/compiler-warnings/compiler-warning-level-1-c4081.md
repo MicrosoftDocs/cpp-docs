@@ -13,7 +13,7 @@ The compiler expected a different token in this context.
 
 ## Example
 
-```
+```cpp
 // C4081.cpp
 // compile with: /W1 /LD
 #pragma optimize) "l", on )   // C4081

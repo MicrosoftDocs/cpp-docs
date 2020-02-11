@@ -15,7 +15,7 @@ The [typeid](../../extensions/typeid-cpp-component-extensions.md) operator was u
 
 The following sample generates C3363.
 
-```
+```cpp
 // C3363.cpp
 // compile with: /clr
 int main() {

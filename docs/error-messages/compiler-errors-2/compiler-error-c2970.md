@@ -13,7 +13,7 @@ You cannot use the name or address of a static variable as a template argument. 
 
 The following sample generates C2970:
 
-```
+```cpp
 // C2970.cpp
 // compile with: /c
 static int si;

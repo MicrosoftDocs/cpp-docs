@@ -1,6 +1,6 @@
 ---
 title: "operator PTR"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["PTR", "operator PTR"]
 helpviewer_keywords: ["PTR operator", "operator PTR"]
 ms.assetid: df280f36-ca06-4578-b99d-0aa139b2b969
@@ -11,10 +11,11 @@ The first operator forces the *expression* to be treated as having the specified
 
 ## Syntax
 
-> *type* PTR *expression*
+> *type* **PTR** *expression*
 >
-> \[*distance*] PTR *type*
+> \[*distance*] **PTR** *type*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

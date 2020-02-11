@@ -13,7 +13,7 @@ A keyword was used incorrectly.
 
 The following sample generates C3626:
 
-```
+```cpp
 // C3626.cpp
 // compile with: /c
 struct A {

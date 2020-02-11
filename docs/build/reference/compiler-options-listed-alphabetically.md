@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed Alphabetically"
-ms.date: "08/08/2019"
+ms.date: "01/08/2020"
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler Options Listed Alphabetically
@@ -102,9 +102,12 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Generates fast transcendentals.|
 |[/QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses `_ftol` when a conversion from a floating-point type to an integral type is required (x86 only).|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|
+|[/QIntel-jcc-erratum](qintel-jcc-erratum.md)|Mitigates the performance impact of the Intel JCC erratum microcode update.|
 |[/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
 |[/Qspectre](qspectre.md)|Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.|
+|[/Qspectre-load](qspectre-load.md)|Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on load instructions.|
+|[/Qspectre-load-cf](qspectre-load-cf.md)|Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on control flow instructions which load memory.|
 |[/Qvec-report (Auto-Vectorizer Reporting Level)](qvec-report-auto-vectorizer-reporting-level.md)|Enables reporting levels for automatic vectorization.|
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/sdl](sdl-enable-additional-security-checks.md)|Enables additional security features and warnings.|
@@ -150,6 +153,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|
 |[/Zf](zf.md)|Improves PDB generation time in parallel builds.|
 |[/Zg](zg-generate-function-prototypes.md)|Removed in Visual Studio 2015. Generates function prototypes.|
+|[/ZH](zh.md)|Specifies MD5, SHA-1, or SHA-256 for checksums in debug info.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
 |[/Zl](zl-omit-default-library-name.md)|Removes default library name from .obj file (x86 only).|

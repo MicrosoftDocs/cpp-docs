@@ -1,10 +1,10 @@
 ---
-title: "C++ Type System (Modern C++)"
-ms.date: "11/19/2018"
+title: "C++ type system"
+ms.date: "11/19/2019"
 ms.topic: "conceptual"
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
 ---
-# C++ Type System (Modern C++)
+# C++ type system
 
 The concept of *type* is very important in C++. Every variable, function argument, and function return value must have a type in order to be compiled. Also, every expression (including literal values) is implicitly given a type by the compiler before it is evaluated. Some examples of types include **int** to store integral values, **double** to store floating-point values (also known as *scalar* data types), or the Standard Library class [std::basic_string](../standard-library/basic-string-class.md) to store text. You can create your own type by defining a **class** or **struct**. The type specifies the amount of memory that will be allocated for the variable (or expression result), the kinds of values that may be stored in that variable, how those values (as bit patterns) are interpreted, and the operations that can be performed on it. This article contains an informal overview of the major features of the C++ type system.
 
@@ -18,9 +18,7 @@ The concept of *type* is very important in C++. Every variable, function argumen
 
 ## Specifying variable and function types
 
-C++ is a *strongly typed* language and it is also *statically-typed*; every object has a type and that type never changes (not to be confused with static data objects).
-**When you declare a variable** in your code, you must either specify its type explicitly, or use the **auto** keyword to instruct the compiler to deduce the type from the initializer.
-**When you declare a function** in your code, you must specify the type of each argument and its return value, or **void** if no value is returned by the function. The exception is when you are using function templates, which allow for arguments of arbitrary types.
+C++ is a *strongly typed* language and it is also *statically-typed*; every object has a type and that type never changes (not to be confused with static data objects). When you declare a variable in your code, you must either specify its type explicitly, or use the **auto** keyword to instruct the compiler to deduce the type from the initializer. When you declare a function in your code, you must specify the type of each argument and its return value, or **void** if no value is returned by the function. The exception is when you are using function templates, which allow for arguments of arbitrary types.
 
 After you first declare a variable, you cannot change its type at some later point. However, you can copy the variable’s value or a function’s return value into another variable of a different type. Such operations are called *type conversions*, which are sometimes necessary but are also potential sources of data loss or incorrectness.
 
@@ -49,7 +47,7 @@ int maxValue;                // Not recommended! maxValue contains
 
 Unlike some languages, C++ has no universal base type from which all other types are derived. The language includes many *fundamental types*, also known as *built-in types*. This includes numeric types such as **int**, **double**, **long**, **bool**, plus the **char** and **wchar_t** types for ASCII and UNICODE characters, respectively. Most fundamental types (except **bool**, **double**, **wchar_t** and related types) all have unsigned versions, which modify the range of values that the variable can store. For example, an **int**, which stores a 32-bit signed integer, can represent a value from -2,147,483,648 to 2,147,483,647. An **unsigned int**, which is also stored as 32-bits, can store a value from 0 to 4,294,967,295. The total number of possible values in each case is the same; only the range is different.
 
-The fundamental types are recognized by the compiler, which has built-in rules that govern what operations you can perform on them, and how they can be converted to other fundamental types. For a complete list of built-in types and their size and numeric limits, see [Fundamental Types](../cpp/fundamental-types-cpp.md).
+The fundamental types are recognized by the compiler, which has built-in rules that govern what operations you can perform on them, and how they can be converted to other fundamental types. For a complete list of built-in types and their size and numeric limits, see [Built-in types](../cpp/fundamental-types-cpp.md).
 
 The following illustration shows the relative sizes of the built-in types:
 
@@ -162,6 +160,6 @@ For more information about the C++ type system, see the following topics.
 
 ## See also
 
-[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

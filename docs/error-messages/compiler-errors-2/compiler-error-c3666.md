@@ -15,7 +15,7 @@ An override specifier was used on a constructor, and that is not allowed. For mo
 
 The following sample generates C3666.
 
-```
+```cpp
 // C3666.cpp
 // compile with: /clr /c
 ref struct R {

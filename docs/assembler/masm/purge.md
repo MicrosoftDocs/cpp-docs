@@ -1,6 +1,6 @@
 ---
 title: "PURGE"
-ms.date: "08/30/2018"
+ms.date: "12/16/2019"
 f1_keywords: ["PURGE"]
 helpviewer_keywords: ["PURGE directive"]
 ms.assetid: 1e7ec2bf-f123-4ff9-97de-28b512ade2f9
@@ -11,8 +11,9 @@ Deletes the specified macros from memory.
 
 ## Syntax
 
-> PURGE macroname [[, macroname]]...
+> **PURGE** *macronameId* ⟦__,__ *macronameId* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)
+[MASM BNF Grammar](masm-bnf-grammar.md)

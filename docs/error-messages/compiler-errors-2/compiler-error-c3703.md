@@ -13,7 +13,7 @@ An [event](../../cpp/event-handling.md) has a different storage class than the e
 
 The following sample generates C3703:
 
-```
+```cpp
 // C3703.cpp
 // C3703 expected
 #include <stdio.h>

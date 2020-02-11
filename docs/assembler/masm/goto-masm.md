@@ -1,11 +1,11 @@
 ---
 title: "GOTO (MASM)"
-ms.date: "08/30/2018"
+ms.date: "12/16/2019"
 f1_keywords: ["goto"]
 helpviewer_keywords: ["GOTO directive"]
 ms.assetid: 6a5f73e7-6784-4eae-ac52-4fc77a7f369f
 ---
-# GOTO (MASM)
+# GOTO
 
 Transfers assembly to the line marked **:**_macrolabel_.
 
@@ -19,4 +19,5 @@ Transfers assembly to the line marked **:**_macrolabel_.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

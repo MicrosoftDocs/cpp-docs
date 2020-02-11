@@ -10,7 +10,7 @@ Represents a short vector of three doubles.
 
 ## Syntax
 
-```
+```cpp
 class double_3;
 ```
 
@@ -133,11 +133,11 @@ class double_3;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> double_3
+## <a name="ctor"></a> double_3
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 double_3() restrict(amp,
     cpu);
 
@@ -193,9 +193,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="double_3__size"></a> size
+## <a name="double_3__size"></a> size
 
-```
+```cpp
 static const int size = 3;
 ```
 

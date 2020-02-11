@@ -19,7 +19,7 @@ A lambda must specify its return type unless it contains a single return stateme
 
 The following example generates C3487 because the return types of the lambda do not match:
 
-```
+```cpp
 // C3487.cpp
 // Compile by using: cl /c /W4 C3487.cpp
 

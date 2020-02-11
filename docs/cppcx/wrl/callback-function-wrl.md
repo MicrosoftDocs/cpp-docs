@@ -215,7 +215,7 @@ A template parameter that specifies the type of the sixth callback method argume
 A template parameter that specifies the type of the seventh callback method argument.
 
 *TArg8*<br/>
-A template parameter that specifies the type of the eigth callback method argument.
+A template parameter that specifies the type of the eighth callback method argument.
 
 *TArg9*<br/>
 A template parameter that specifies the type of the ninth callback method argument.

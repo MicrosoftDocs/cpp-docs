@@ -1,6 +1,6 @@
 ---
 title: "TEXTEQU"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["TEXTEQU"]
 helpviewer_keywords: ["TEXTEQU directive"]
 ms.assetid: 7c01df77-10d6-4555-8fe0-c5f7762df86d
@@ -11,8 +11,9 @@ Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant
 
 ## Syntax
 
-> name TEXTEQU [[textitem]]
+> *name* **TEXTEQU** ⟦*textitem*⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

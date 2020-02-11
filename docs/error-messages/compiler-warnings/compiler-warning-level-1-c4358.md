@@ -13,7 +13,7 @@ Two delegates were combined and the return value is not void. If two delegates w
 
 The following sample generates C4358:
 
-```
+```cpp
 // C4358.cpp
 // compile with: /clr /W1
 delegate int D();

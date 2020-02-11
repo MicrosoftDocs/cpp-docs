@@ -13,14 +13,14 @@ The `#` sign of a preprocessor directive must be the first character on a line t
 
 The following sample generates C2014:
 
-```
+```cpp
 // C2014.cpp
 int k; #include <stdio.h>   // C2014
 ```
 
 Possible resolution:
 
-```
+```cpp
 // C2014b.cpp
 // compile with: /c
 int k;

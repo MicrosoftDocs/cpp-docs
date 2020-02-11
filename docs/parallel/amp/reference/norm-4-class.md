@@ -10,7 +10,7 @@ Represents a short vector of four normal numbers.
 
 ## Syntax
 
-```
+```cpp
 class norm_4;
 ```
 
@@ -331,11 +331,11 @@ class norm_4;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> norm_4
+## <a name="ctor"></a> norm_4
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 norm_4() restrict(amp,
     cpu);
 
@@ -413,9 +413,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="norm_4__size"></a> size
+## <a name="norm_4__size"></a> size
 
-```
+```cpp
 static const int size = 4;
 ```
 

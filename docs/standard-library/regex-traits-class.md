@@ -23,7 +23,7 @@ The character element type to describe.
 
 ## Remarks
 
-The template class describes various regular expression traits for type *Elem*. The template class [basic_regex Class](../standard-library/basic-regex-class.md) uses this information to manipulate elements of type *Elem*.
+The class template describes various regular expression traits for type *Elem*. The class template [basic_regex Class](../standard-library/basic-regex-class.md) uses this information to manipulate elements of type *Elem*.
 
 Each `regex_traits` object holds an object of type `regex_traits::locale` which is used by some of its member functions. The default locale is a copy of `regex_traits::locale()`. The member function `imbue` replaces the locale object, and the member function `getloc` returns a copy of the locale object.
 

@@ -26,7 +26,7 @@ The type to modify.
 
 ## Remarks
 
-Use the decay template to produce the resulting type as if the type was passed by value as an argument. The template class member typedef `type` holds a modified type that is defined in the following stages:
+Use the decay template to produce the resulting type as if the type was passed by value as an argument. The class template member typedef `type` holds a modified type that is defined in the following stages:
 
 - The type `U` is defined as `remove_reference<T>::type`.
 

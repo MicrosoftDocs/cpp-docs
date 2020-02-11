@@ -13,7 +13,7 @@ The declaration causes the same item to be defined twice.
 
 The following sample generates C2875:
 
-```
+```cpp
 // C2875.cpp
 struct A {
    void f(int*);

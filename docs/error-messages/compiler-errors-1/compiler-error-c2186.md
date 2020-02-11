@@ -13,7 +13,7 @@ The operator has a `void` operand.
 
 The following sample generates C2186:
 
-```
+```cpp
 // C2186.cpp
 // compile with: /c
 void func1( void );

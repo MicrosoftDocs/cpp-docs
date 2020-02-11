@@ -17,7 +17,7 @@ For more information, see [Explicit Overrides](../../extensions/explicit-overrid
 
 The following sample generates C3662.
 
-```
+```cpp
 // C3662.cpp
 // compile with: /clr /c
 struct S {

@@ -1,17 +1,17 @@
 ---
 title: "INCLUDE (MASM)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["include"]
 helpviewer_keywords: ["INCLUDE directive"]
 ms.assetid: 1c7964ee-715c-414e-a45e-74af93476eb4
 ---
-# INCLUDE (MASM)
+# INCLUDE
 
 Inserts source code from the source file given by *filename* into the current source file during assembly.
 
 ## Syntax
 
-> INCLUDE filename
+> **INCLUDE** *filename*
 
 ## Remarks
 
@@ -19,4 +19,5 @@ The *filename* must be enclosed in angle brackets if it includes a backslash, se
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

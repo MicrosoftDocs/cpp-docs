@@ -15,7 +15,7 @@ For more information, see [appdomain](../../cpp/appdomain.md) and [process](../.
 
 The following sample generates C2505:
 
-```
+```cpp
 // C2505.cpp
 // compile with: /clr
 

@@ -15,7 +15,7 @@ This error can be caused if braces are improperly matched.
 
 The following sample generates C2935:
 
-```
+```cpp
 // C2935.cpp
 // compile with: /c
 template<class T>
@@ -29,7 +29,7 @@ void TC2() {}
 
 C2935 can also occur when using generics:
 
-```
+```cpp
 // C2935b.cpp
 // compile with: /clr /c
 generic<class T>

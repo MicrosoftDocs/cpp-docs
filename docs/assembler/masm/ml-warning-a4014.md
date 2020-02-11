@@ -1,7 +1,7 @@
 ---
 title: "ML Warning A4014"
-ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.date: "12/17/2019"
+ms.custom: "error-reference"
 f1_keywords: ["A4014"]
 helpviewer_keywords: ["A4014"]
 ms.assetid: 11bc8920-3255-4ac8-999a-b9ea9c15bc81
@@ -14,4 +14,4 @@ An attempt was made to define initialized data within a BSS section.  A BSS sect
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

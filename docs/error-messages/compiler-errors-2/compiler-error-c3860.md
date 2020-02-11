@@ -13,7 +13,7 @@ A generic or template argument list was ill formed.
 
 The following sample generates C3860:
 
-```
+```cpp
 // C3860.cpp
 // compile with: /LD
 template <class T1, class T2>
@@ -27,7 +27,7 @@ void A<T1, T2>::f() {}   // C3860
 
 Possible resolution:
 
-```
+```cpp
 // C3860b.cpp
 // compile with: /c
 template <class T1, class T2>
@@ -41,7 +41,7 @@ void A<T2, T1>::f() {}
 
 C3860 can also occur when using generics:
 
-```
+```cpp
 // C3860c.cpp
 // compile with: /clr
 generic<class T,class U>
@@ -55,7 +55,7 @@ void GC<T,T>::f() {}   // C3860
 
 Possible resolution:
 
-```
+```cpp
 // C3860d.cpp
 // compile with: /clr /c
 generic<class T,class U>

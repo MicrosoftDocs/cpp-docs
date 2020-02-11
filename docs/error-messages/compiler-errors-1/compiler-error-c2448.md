@@ -15,7 +15,7 @@ This error can be caused by an old-style C-language formal list.
 
 The following sample generates C2448:
 
-```
+```cpp
 // C2448.cpp
 void func(c)
    int c;

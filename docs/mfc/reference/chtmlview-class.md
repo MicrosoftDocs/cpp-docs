@@ -998,7 +998,7 @@ A pointer to a string that evaluates to the URL, UNC file name, or a PIDL (a poi
 
 Not every frame will fire this event, but each frame that fires an [OnDownloadBegin](#ondownloadbegin) event will fire a corresponding `OnDocumentComplete` event.
 
-The URL indicated by *lpszURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of "www.microsoft.com" in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be "<http://www.microsoft.com/>". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
+The URL indicated by *lpszURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of `"www.microsoft.com"` in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be `"<https://www.microsoft.com/>"`. Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
 
 ##  <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate
 
@@ -1262,7 +1262,7 @@ A string expression that evaluates to the URL, UNC file name, or PIDL (a pointer
 
 The URL parameter can be a PIDL in the case of a shell name space entity for which there is no URL representation.
 
-Note that the URL contained in *strURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of "www.microsoft.com" in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be "<http://www.microsoft.com/>". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
+Note that the URL contained in *strURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of `"www.microsoft.com"` in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be `"<https://www.microsoft.com/>"`. Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
 
 ##  <a name="onnavigateerror"></a>  CHtmlView::OnNavigateError
 

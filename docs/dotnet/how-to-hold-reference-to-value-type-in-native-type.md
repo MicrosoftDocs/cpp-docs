@@ -11,7 +11,7 @@ Use `gcroot` on the boxed type to hold a reference to a value type in a native t
 
 ## Example
 
-```
+```cpp
 // reference_to_value_in_native.cpp
 // compile with: /clr
 #using <mscorlib.dll>

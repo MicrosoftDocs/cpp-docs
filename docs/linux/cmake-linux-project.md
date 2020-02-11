@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a Linux CMake project in Visual Studio"
 description: "How to create, configure, edit, and compile a Linux CMake project in Visual Studio"
-ms.date: "06/12/2019"
+ms.date: "10/04/2019"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
 
@@ -20,13 +20,13 @@ To create a new Linux CMake project in Visual Studio 2019:
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**.
 1. Set the **Language** to **C++** and search for "CMake". Then choose **Next**. Enter a **Name** and **Location**, and choose **Create**.
 
-Visual Studio creates a minimal CMakeLists.txt file with only the name of the executable and the minimum CMake version required. You can manually edit this file however you like; Visual Studio will never overwrite your changes. You can specify CMake command-line arguments and environment variables by right-clicking on the CMakeLists.txt file in **Solution Explorer** and choosing **CMake settings for project**. To specify options for debugging, right-click on the project node and choose **Debug and launch settings**.
+Visual Studio creates a minimal CMakeLists.txt file with only the name of the executable and the minimum CMake version required. You can manually edit this file however you like; Visual Studio will never overwrite your changes. You can specify CMake command-line arguments and environment variables by right-clicking on the root CMakeLists.txt file in **Solution Explorer** and choosing **CMake settings for project**. To specify options for debugging, right-click on the project node and choose **Debug and launch settings**.
 
 ::: moniker-end
 
-When you open a folder that contains an existing CMake project, Visual Studio uses the metadata that CMake produces to configure IntelliSense and builds automatically. Local configuration and debugging settings are stored in JSON files that can optionally be shared with others who are using Visual Studio. 
+When you open a folder that contains an existing CMake project, Visual Studio uses variables in the CMake cache to configure IntelliSense and builds automatically. Local configuration and debugging settings are stored in JSON files that can optionally be shared with others who are using Visual Studio.
 
-Visual Studio does not modify the CMakeLists.txt files, so that others working on the same project can continue to use whatever tools they are already using. Visual Studio does regenerate the cache when you make edits to CMakeLists.txt or in some cases to CMakeSettings.json. But if you are using an **Existing Cache** configuration, then Visual Studio does not modify the cache.
+Visual Studio does not modify the CMakeLists.txt files, so that others working on the same project can continue to use whatever tools they are already using. Visual Studio does regenerate the cache when you save edits to CMakeLists.txt or in some cases to CMakeSettings.json. But if you are using an **Existing Cache** configuration, then Visual Studio does not modify the cache.
 
 For general information about CMake support in Visual Studio, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md). Read that first before continuing here.
 

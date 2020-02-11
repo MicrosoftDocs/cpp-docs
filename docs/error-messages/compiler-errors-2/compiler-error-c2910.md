@@ -13,7 +13,7 @@ The compiler detected an attempt to explicitly specialize a function twice.
 
 The following sample generates C2910:
 
-```
+```cpp
 // C2910.cpp
 // compile with: /c
 template <class T>
@@ -27,7 +27,7 @@ C2910 can also be generated if you try to explicitly specialize a non-template m
 
 The following sample generates C2910:
 
-```
+```cpp
 // C2910b.cpp
 // compile with: /c
 template <class T> struct A {
@@ -52,7 +52,7 @@ For code will be valid in the Visual Studio .NET 2003 and Visual Studio .NET ver
 
 The following sample generates C2910:
 
-```
+```cpp
 // C2910c.cpp
 // compile with: /c
 template <class T> class A {

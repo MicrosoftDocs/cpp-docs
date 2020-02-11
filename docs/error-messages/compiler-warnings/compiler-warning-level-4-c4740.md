@@ -13,7 +13,7 @@ When there is a jump in to or out of an `asm` block, global optimizations are di
 
 The following sample generates C4740:
 
-```
+```cpp
 // C4740.cpp
 // compile with: /O2 /W4
 // processor: x86

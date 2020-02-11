@@ -7,7 +7,7 @@ ms.assetid: 24fcf350-eb0e-48cf-9fef-978be1aeda1f
 ---
 # &lt;queue&gt;
 
-Defines the template classes priority_queue and queue and several supporting templates.
+Defines the class templates priority_queue and queue and several supporting templates.
 
 ## Requirements
 

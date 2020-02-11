@@ -1,6 +1,6 @@
 ---
 title: "OpenMP Library Reference"
-ms.date: "07/30/2019"
+ms.date: "12/02/2019"
 ms.assetid: a25188c6-edde-43d0-84b5-780e797b08fc
 ---
 # OpenMP Library Reference
@@ -20,10 +20,10 @@ The Visual C++ OpenMP run-time library functions are contained in the following 
 
 |OpenMP run-time library|Characteristics|
 |------------------------------|---------------------|
-|VCOMP.LIB|Multithreaded, dynamic link (import library for VCOMP.LIB).|
-|VCOMPD.LIB|Multithreaded, dynamic link (import library for VCOMPD.LID) (debug)|
+|VCOMP.LIB|Multithreaded, dynamic link (import library for VCOMP140.DLL).|
+|VCOMPD.LIB|Multithreaded, dynamic link (import library for VCOMP140D.DLL) (debug)|
 
-If _DEBUG is defined in a compilation and if `#include omp.h` is in source code, VCOMPD.LIB will be the default lib, otherwise, VCOMP.LIB will be used.
+If _DEBUG is defined in a compilation and if `#include <omp.h>` is in source code, VCOMPD.LIB will be the default lib, otherwise, VCOMP.LIB will be used.
 
 You can use [/NODEFAULTLIB (ignore libraries)](../../../build/reference/nodefaultlib-ignore-libraries.md) to remove the default lib and explicitly link with the lib of your choice.
 

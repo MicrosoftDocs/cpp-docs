@@ -19,7 +19,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 The following sample generates C3342.
 
-```
+```cpp
 // C3342.cpp
 // compile with: /clr /c
 using namespace System;

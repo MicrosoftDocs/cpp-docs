@@ -2,8 +2,8 @@
    class GenericCopy
    {
    public :
-      typedef DestinationType	destination_type;
-      typedef SourceType		source_type;
+      typedef DestinationType destination_type;
+      typedef SourceType      source_type;
 
       static void init(destination_type* p)
       {

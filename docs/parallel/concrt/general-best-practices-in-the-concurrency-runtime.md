@@ -8,7 +8,7 @@ ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
 
 This document describes best practices that apply to multiple areas of the Concurrency Runtime.
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This document contains the following sections:
 
@@ -26,13 +26,13 @@ This document contains the following sections:
 
 - [Do Not Use Concurrency Objects in Shared Data Segments](#shared-data)
 
-##  <a name="synchronization"></a> Use Cooperative Synchronization Constructs When Possible
+## <a name="synchronization"></a> Use Cooperative Synchronization Constructs When Possible
 
-The Concurrency Runtime provides many concurrency-safe constructs that do not require an external synchronization object. For example, the [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class provides concurrency-safe append and element access operations. However, for cases where you require exclusive access to a resource, the runtime provides the [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md), and [concurrency::event](../../parallel/concrt/reference/event-class.md) classes. These types behave cooperatively; therefore, the task scheduler can reallocate processing resources to another context as the first task waits for data. When possible, use these synchronization types instead of other synchronization mechanisms, such as those provided by the Windows API, which do not behave cooperatively. For more information about these synchronization types and a code example, see [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md) and [Comparing Synchronization Data Structures to the Windows API](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).
+The Concurrency Runtime provides many concurrency-safe constructs that do not require an external synchronization object. For example, the [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class provides concurrency-safe append and element access operations. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. However, for cases where you require exclusive access to a resource, the runtime provides the [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md), and [concurrency::event](../../parallel/concrt/reference/event-class.md) classes. These types behave cooperatively; therefore, the task scheduler can reallocate processing resources to another context as the first task waits for data. When possible, use these synchronization types instead of other synchronization mechanisms, such as those provided by the Windows API, which do not behave cooperatively. For more information about these synchronization types and a code example, see [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md) and [Comparing Synchronization Data Structures to the Windows API](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).
 
 [[Top](#top)]
 
-##  <a name="yield"></a> Avoid Lengthy Tasks That Do Not Yield
+## <a name="yield"></a> Avoid Lengthy Tasks That Do Not Yield
 
 Because the task scheduler behaves cooperatively, it does not provide fairness among tasks. Therefore, a task can prevent other tasks from starting. Although this is acceptable in some cases, in other cases this can cause deadlock or starvation.
 
@@ -67,7 +67,7 @@ There are other ways to enable cooperation among long-running tasks. You can bre
 
 [[Top](#top)]
 
-##  <a name="oversubscription"></a> Use Oversubscription to Offset Operations That Block or Have High Latency
+## <a name="oversubscription"></a> Use Oversubscription to Offset Operations That Block or Have High Latency
 
 The Concurrency Runtime provides synchronization primitives, such as [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), that enable tasks to cooperatively block and yield to each other. When one task cooperatively blocks or yields, the task scheduler can reallocate processing resources to another context as the first task waits for data.
 
@@ -81,7 +81,7 @@ Because the `GetHttpFile` function performs a potentially latent operation, over
 
 [[Top](#top)]
 
-##  <a name="memory"></a> Use Concurrent Memory Management Functions When Possible
+## <a name="memory"></a> Use Concurrent Memory Management Functions When Possible
 
 Use the memory management functions, [concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc) and [concurrency::Free](reference/concurrency-namespace-functions.md#free), when you have fine-grained tasks that frequently allocate small objects that have a relatively short lifetime. The Concurrency Runtime holds a separate memory cache for each running thread. The `Alloc` and `Free` functions allocate and free memory from these caches without the use of locks or memory barriers.
 
@@ -89,7 +89,7 @@ For more information about these memory management functions, see [Task Schedule
 
 [[Top](#top)]
 
-##  <a name="raii"></a> Use RAII to Manage the Lifetime of Concurrency Objects
+## <a name="raii"></a> Use RAII to Manage the Lifetime of Concurrency Objects
 
 The Concurrency Runtime uses exception handling to implement features such as cancellation. Therefore, write exception-safe code when you call into the runtime or call another library that calls into the runtime.
 
@@ -121,7 +121,7 @@ For additional examples that use the RAII pattern to manage the lifetime of conc
 
 [[Top](#top)]
 
-##  <a name="global-scope"></a> Do Not Create Concurrency Objects at Global Scope
+## <a name="global-scope"></a> Do Not Create Concurrency Objects at Global Scope
 
 When you create a concurrency object at global scope you can cause issues such as deadlock or memory access violations to occur in your application.
 
@@ -135,7 +135,7 @@ For examples of the correct way to create `Scheduler` objects, see [Task Schedul
 
 [[Top](#top)]
 
-##  <a name="shared-data"></a> Do Not Use Concurrency Objects in Shared Data Segments
+## <a name="shared-data"></a> Do Not Use Concurrency Objects in Shared Data Segments
 
 The Concurrency Runtime does not support the use of concurrency objects in a shared data section, for example, a data section that is created by the [data_seg](../../preprocessor/data-seg.md)`#pragma` directive. A concurrency object that is shared across process boundaries could put the runtime in an inconsistent or invalid state.
 

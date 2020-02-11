@@ -13,7 +13,7 @@ The first parameter in the copy constructor has the same type as the class, stru
 
 The following sample generates C2651:
 
-```
+```cpp
 // C2652.cpp
 // compile with: /c
 class A {

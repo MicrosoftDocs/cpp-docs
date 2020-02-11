@@ -1,6 +1,6 @@
 ---
 title: "operator ;"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator %3B", "%3B"]
 helpviewer_keywords: ["operator ;", "semicolon operator", "; operator"]
 ms.assetid: 8369b28c-1fee-4e9a-a4a6-7db627e21075
@@ -11,8 +11,9 @@ Treats *text* as a comment.
 
 ## Syntax
 
-> ; *text*
+> __;__ *text*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

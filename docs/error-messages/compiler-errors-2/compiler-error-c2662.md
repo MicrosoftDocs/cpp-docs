@@ -19,7 +19,7 @@ This error can be caused by invoking a non-`const` member function on a `const` 
 
 The following sample generates C2662:
 
-```
+```cpp
 // C2662.cpp
 class C {
 public:
@@ -35,7 +35,7 @@ int main() {
 
 When compiling with **/clr**, you cannot call a function on a `const` or `volatile` qualified managed type. You cannot declare a const member function of a managed class, so you cannot call methods on const managed objects.
 
-```
+```cpp
 // C2662_b.cpp
 // compile with: /c /clr
 ref struct M {
@@ -61,7 +61,7 @@ ref struct N {
 
 The following sample generates C2662:
 
-```
+```cpp
 // C2662_c.cpp
 // compile with: /c
 // C2662 expected

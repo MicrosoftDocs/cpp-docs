@@ -17,7 +17,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 The following sample generates C3114.
 
-```
+```cpp
 // C3114.cpp
 // compile with: /clr /c
 public ref class A : System::Attribute {

@@ -1,9 +1,10 @@
 ---
 title: "_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l"
 ms.date: "11/04/2016"
-apiname: ["_wcsset_s", "_wcsset_s_l", "_strset_s", "_mbsset_s_l", "_strset_s_l", "_mbsset_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["_wcsset_s", "_wcsset_s_l", "_strset_s", "_mbsset_s_l", "_strset_s_l", "_mbsset_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_wcsset_s_l", "strset_s", "_mbsset_s", "mbsset_s", "_strset_s", "_mbsset_s_l", "strset_s_l", "_wcsset_s", "mbsset_s_l", "wcsset_s_l", "wcsset_s", "_strset_s_l", "_tcsset_s_l", "_tcsset_s"]
 helpviewer_keywords: ["mbsset_s_l function", "wcsset_s function", "_mbsset_s function", "tcsset_s function", "strset_s_l function", "characters [C++], setting", "_wcsset_s_l function", "_strset_s function", "strset_s function", "wcsset_s_l function", "strings [C++], setting characters", "_strset_s_l function", "_mbsset_s_l function", "_wcsset_s function", "tcsset_s_l function", "_tcsset_s_l function", "_tcsset_s function", "mbsset_s function"]
 ms.assetid: dceb2909-6b41-4792-acb7-888e45bb8b35
@@ -79,7 +80,7 @@ The **_strset_s** function sets all the characters of *str* to *c* (converted to
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### Generic-Text Routine Mappings
 

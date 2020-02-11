@@ -19,7 +19,7 @@ A type specifier is used with the `auto` keyword.
 
 The following example yields C3530 because variable `x` is declared with both the `auto` keyword and type `int`, and because the example is compiled with **/Zc:auto**.
 
-```
+```cpp
 // C3530.cpp
 // Compile with /Zc:auto
 int main()

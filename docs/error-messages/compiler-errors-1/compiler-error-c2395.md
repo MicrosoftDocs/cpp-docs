@@ -13,7 +13,7 @@ An operator in a Windows Runtime or managed type did not have at least one param
 
 The following sample generates C2395 and shows how to fix it:
 
-```
+```cpp
 // C2395.cpp
 // compile with: /clr /c
 value struct V {

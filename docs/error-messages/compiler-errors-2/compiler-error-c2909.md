@@ -13,7 +13,7 @@ An explicit instantiation of a function template requires explicit specification
 
 The following sample generates C2909:
 
-```
+```cpp
 // C2909.cpp
 // compile with: /c
 template<class T> int f(T);

@@ -1,11 +1,11 @@
 ---
-title: "bad_typeid Exception"
-ms.date: "11/04/2016"
+title: "bad_typeid exception"
+ms.date: "10/04/2019"
 f1_keywords: ["bad_typeid", "bad_typeid_cpp"]
 helpviewer_keywords: ["bad_typeid exception", "exceptions [C++], bad_typeid"]
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
 ---
-# bad_typeid Exception
+# bad_typeid exception
 
 The **bad_typeid** exception is thrown by the [typeid operator](../cpp/typeid-operator.md) when the operand for **typeid** is a NULL pointer.
 
@@ -39,7 +39,7 @@ The following example shows the **typeid** operator throwing a **bad_typeid** ex
 ```cpp
 // expre_bad_typeid.cpp
 // compile with: /EHsc /GR
-#include <typeinfo.h>
+#include <typeinfo>
 #include <iostream>
 
 class A{
@@ -70,5 +70,5 @@ Object is NULL
 
 ## See also
 
-[Run-Time Type Information](../cpp/run-time-type-information.md)<br/>
+[Run-Time Type Information](../cpp/run-time-type-information.md)\
 [Keywords](../cpp/keywords-cpp.md)

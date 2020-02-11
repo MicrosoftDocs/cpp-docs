@@ -7,7 +7,7 @@ ms.assetid: 4365b25c-5831-488b-b9c2-867bfe961b89
 ---
 # &lt;streambuf&gt;
 
-Include the iostreams standard header \<streambuf> to define the template class [basic_streambuf](../standard-library/basic-streambuf-class.md), which is basic to the operation of the iostreams classes. This header is typically included for you by another of the iostreams headers; you rarely need to include it directly.
+Include the iostreams standard header \<streambuf> to define the class template [basic_streambuf](../standard-library/basic-streambuf-class.md), which is basic to the operation of the iostreams classes. This header is typically included for you by another of the iostreams headers; you rarely need to include it directly.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ Include the iostreams standard header \<streambuf> to define the template class 
 
 |Class|Description|
 |-|-|
-|[basic_streambuf Class](basic-streambuf-class.md)|The template class describes an abstract base class for deriving a stream buffer, which controls the transmission of elements to and from a specific representation of a stream.|
+|[basic_streambuf Class](basic-streambuf-class.md)|The class template describes an abstract base class for deriving a stream buffer, which controls the transmission of elements to and from a specific representation of a stream.|
 
 ## See also
 

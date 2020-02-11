@@ -4,8 +4,6 @@ description: "Visual C++ is the name for the Microsoft C++ compiler, code editor
 ms.date: "07/02/2019"
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
-author: "mikeblome"
-ms.author: "mblome"
 ---
 
 # C++ in Visual Studio
@@ -30,7 +28,7 @@ Find out what was new in C++ for each version of Visual Studio from 2003 through
 [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)<br/>
 Learn about C++ conformance improvements in Visual Studio.
 
-[Visual C++ language conformance](visual-cpp-language-conformance.md)<br/>
+[Microsoft C++ language conformance table](visual-cpp-language-conformance.md)<br/>
 A list of conformance status by feature in the MSVC C++ compiler.
 
 [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>

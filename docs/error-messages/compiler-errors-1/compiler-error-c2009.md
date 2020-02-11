@@ -15,7 +15,7 @@ The formal parameter list of a macro definition uses the identifier more than on
 
 The following sample generates C2009:
 
-```
+```cpp
 // C2009.cpp
 #include <stdio.h>
 
@@ -31,7 +31,7 @@ int main()
 
 Possible resolution:
 
-```
+```cpp
 // C2009b.cpp
 #include <stdio.h>
 

@@ -13,7 +13,7 @@ Indirection operator ( `*` ) is applied to a nonpointer value.
 
 The following sample generates C2100:
 
-```
+```cpp
 // C2100.cpp
 int main() {
    int r = 0, *s = 0;

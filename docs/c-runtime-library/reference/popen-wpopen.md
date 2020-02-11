@@ -1,12 +1,15 @@
 ---
 title: "_popen, _wpopen"
-ms.date: "11/04/2016"
-apiname: ["_popen", "_wpopen"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+description: "A reference for the Microsoft C runtime (CRT) library functions _popen and _wpopen."
+ms.date: "01/28/2020"
+api_name: ["_popen", "_wpopen"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["tpopen", "popen", "wpopen", "_popen", "_wpopen", "_tpopen"]
 helpviewer_keywords: ["tpopen function", "pipes, creating", "_popen function", "_tpopen function", "popen function", "wpopen function", "_wpopen function"]
 ms.assetid: eb718ff2-c87d-4bd4-bd2e-ba317c3d6973
+no-loc: [_popen, _wpopen, _tpopen, _doserrno, errno, _sys_errlist, _sys_nerr, EINVAL]
 ---
 # _popen, _wpopen
 
@@ -30,21 +33,21 @@ FILE *_wpopen(
 
 ### Parameters
 
-*command*<br/>
+*command*\
 Command to be executed.
 
-*mode*<br/>
+*mode*\
 Mode of the returned stream.
 
-## Return Value
+## Return value
 
-Returns a stream associated with one end of the created pipe. The other end of the pipe is associated with the spawned command's standard input or standard output. The functions return **NULL** on an error. If the error is an invalid parameter, such as if *command* or *mode* is a null pointer, or *mode* is not a valid mode, **errno** is set to **EINVAL**. See the Remarks section for valid modes.
+Returns a stream associated with one end of the created pipe. The other end of the pipe is associated with the spawned command's standard input or standard output. The functions return **NULL** on an error. If the error is caused by an invalid parameter, **errno** is set to **EINVAL**. See the Remarks section for valid modes.
 
 For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_popen** function creates a pipe and asynchronously executes a spawned copy of the command processor with the specified string *command*. The character string *mode* specifies the type of access requested, as follows.
+The **_popen** function creates a pipe. It then asynchronously executes a spawned copy of the command processor, and uses *command* as the command line. The character string *mode* specifies the type of access requested, as follows.
 
 |Access mode|Description|
 |-|-|
@@ -106,7 +109,7 @@ int main( void )
 
    while(fgets(psBuffer, 128, pPipe))
    {
-      printf(psBuffer);
+      puts(psBuffer);
    }
 
    /* Close pipe and print return value of pPipe. */
@@ -121,9 +124,7 @@ int main( void )
 }
 ```
 
-### Sample Output
-
-This output assumes that there is only one file in the current directory with a .c file name extension.
+This output assumes there's only one file in the current directory that has a `.c` file name extension.
 
 ```Output
 Volume in drive C is CDRIVE
@@ -140,6 +141,6 @@ Process returned 0
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_pclose](pclose.md)<br/>
-[_pipe](pipe.md)<br/>
+[Process and environment control](../../c-runtime-library/process-and-environment-control.md)\
+[_pclose](pclose.md)\
+[_pipe](pipe.md)

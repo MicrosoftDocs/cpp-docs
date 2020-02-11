@@ -13,7 +13,7 @@ The compiler requires certain functions to be defined.
 
 The following sample generates C3640:
 
-```
+```cpp
 // C3640.cpp
 void f()
 {

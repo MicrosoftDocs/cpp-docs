@@ -13,7 +13,7 @@ The compiler could not process the syntax used in the template definition.
 
 The following sample generates C2998:
 
-```
+```cpp
 // C2998.cpp
 // compile with: /c
 template <class T> int x = 1018; // C2998

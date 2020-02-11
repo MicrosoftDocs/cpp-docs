@@ -13,7 +13,7 @@ A **const** global or static instance of a non-trivial class is initialized with
 
 ## Example
 
-```
+```cpp
 // C4268.cpp
 // compile with: /c /LD /W4
 class X {

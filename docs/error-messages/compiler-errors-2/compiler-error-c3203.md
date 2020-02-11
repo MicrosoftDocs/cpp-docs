@@ -13,7 +13,7 @@ You passed an invalid argument to a class template or generic. The class templat
 
 This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: an unspecialized class template can't be used as a template argument in a base class list. To resolve C3203, explicitly add the template type parameter(s) to the template class name when using it as a template parameter in a base class list.
 
-```
+```cpp
 // C3203.cpp
 template< typename T >
 struct X {
@@ -34,7 +34,7 @@ int main() {
 
 The following sample generates C3203 and shows how to fix it:
 
-```
+```cpp
 // C3203_b.cpp
 // compile with: /c
 template <class T>
@@ -59,7 +59,7 @@ typedef C3<S1<int> > MyC12;
 
 C3203 can also occur when using generics:
 
-```
+```cpp
 // C3203_c.cpp
 // compile with: /clr /c
 generic <class T>

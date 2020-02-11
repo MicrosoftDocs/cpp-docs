@@ -11,7 +11,7 @@ unknown pragma
 
 The compiler ignored an unrecognized [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md). Be sure the **pragma** is allowed by the compiler you are using. The following sample generates C4068:
 
-```
+```cpp
 // C4068.cpp
 // compile with: /W1
 #pragma NotAValidPragmaName   // C4068, use valid name to resolve

@@ -13,7 +13,7 @@ The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type 
 
 The following sample generates C2787:
 
-```
+```cpp
 // C2787.cpp
 #include <windows.h>
 struct F {};

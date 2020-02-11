@@ -1,12 +1,12 @@
 ---
 title: "Visual Studio Projects - C++"
-ms.date: "12/12/2018"
+ms.date: "10/25/2019"
 helpviewer_keywords: ["ATL projects, creating", "Visual Studio C++ projects, creating", "projects [C++], creating", "Visual Studio C++ projects", "ATL projects"]
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
 ---
 # Visual Studio projects - C++
 
-A *Visual Studio project* is a project based on the MSBuild build system. MSBuild is the native build system for Visual Studio and is generally the best build system to use for UWP apps as well as Desktop applications that use MFC or ATL libraries, COM components, and other Windows-specific programs. MSBuild is tightly integrated with Visual Studio, but you can also use it from the command line. 
+A *Visual Studio project* is a project based on the MSBuild build system. MSBuild is the native build system for Visual Studio and is generally the best build system to use for Windows-specific programs. MSBuild is tightly integrated with Visual Studio, but you can also use it from the command line. For cross-platform projects, or projects that use open-source libraries, we recommend using [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md) in Visual Studio 2017 and later. For information about upgrading MSBuild projects from older versions of Visual Studio, see the [Microsoft C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md).
 
 ## Create a project
 
@@ -76,3 +76,4 @@ How to create a new Visual Studio project from a loose collection of source file
 ## See also
 
 [Projects and build systems](projects-and-build-systems-cpp.md)<br>
+[Microsoft C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)

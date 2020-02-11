@@ -30,7 +30,7 @@ void Func(int) {}   // C2084 second definition
 
 To correct this error, remove the duplicate definition:
 
-```
+```cpp
 // C2084b.cpp
 // compile with: /c
 void Func(int);

@@ -1,9 +1,10 @@
 ---
 title: "_heapadd"
 ms.date: "11/04/2016"
-apiname: ["_heapadd"]
-apilocation: ["msvcr100.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr80.dll", "msvcrt.dll", "msvcr110.dll", "msvcr90.dll"]
-apitype: "DLLExport"
+api_name: ["_heapadd"]
+api_location: ["msvcr100.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr80.dll", "msvcrt.dll", "msvcr110.dll", "msvcr90.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["heapadd", "_heapadd"]
 helpviewer_keywords: ["_heapadd function", "memory, adding to heaps", "heaps, adding memory", "heapadd function"]
 ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff

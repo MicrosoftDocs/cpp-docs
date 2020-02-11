@@ -15,7 +15,7 @@ A right shift operation was too large an amount.  All significant bits are shift
 
 The following sample generates C4333.
 
-```
+```cpp
 // C4333.cpp
 // compile with: /c /W1
 unsigned shift8 (unsigned char c) {

@@ -52,9 +52,10 @@ The example can run faster when oversubscription is enabled because additional t
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `download-oversubscription.cpp` and then run one of the following commands in a **Visual Studio Command Prompt** window.
 
-**cl.exe /EHsc /MD /D "_AFXDLL" download-oversubscription.cpp**
-
-**cl.exe /EHsc /MT download-oversubscription.cpp**
+```cmd
+cl.exe /EHsc /MD /D "_AFXDLL" download-oversubscription.cpp
+cl.exe /EHsc /MT download-oversubscription.cpp
+```
 
 ## Robust Programming
 

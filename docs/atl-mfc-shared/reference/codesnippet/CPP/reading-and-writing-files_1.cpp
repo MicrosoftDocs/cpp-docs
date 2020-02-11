@@ -1,6 +1,6 @@
-         TCHAR	szBuffer[256]; 
+         TCHAR   szBuffer[256]; 
          UINT    nActual = 0; 
-         CFile	myFile;
+         CFile   myFile;
 
          if ( myFile.Open( _T("c:\\test\\myfile.dat"), CFile::modeCreate |   
             CFile::modeReadWrite ) )

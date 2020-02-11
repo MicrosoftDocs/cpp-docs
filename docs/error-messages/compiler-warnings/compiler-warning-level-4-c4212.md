@@ -13,7 +13,7 @@ The function prototype has a variable number of arguments. The function definiti
 
 The following sample generates C4212:
 
-```
+```c
 // C4212.c
 // compile with: /W4 /Ze /c
 void f(int , ...);

@@ -13,7 +13,7 @@ The token caused a syntax error.
 
 The following example generates an error message for the line that declares `j`.
 
-```
+```cpp
 // C2059e.cpp
 // compile with: /c
 // C2143 expected
@@ -31,14 +31,14 @@ C2059 is raised when a preprocessor symbol name is re-used as an identifier. In 
 #define ONE 1
 
 enum class DIGITS {
-	ZERO,
-	ONE // error C2059
+    ZERO,
+    ONE // error C2059
 };
 ```
 
 You may get C2059 if a symbol evaluates to nothing, as can occur when **/D**_symbol_**=** is used to compile.
 
-```
+```cpp
 // C2059a.cpp
 // compile with: /DTEST=
 #include <stdio.h>
@@ -56,7 +56,7 @@ Another case in which C2059 can occur is when you compile an application that sp
 
 The following example generates C2059:
 
-```
+```cpp
 // C2059b.cpp
 // compile with: /c
 struct ag_type {
@@ -74,7 +74,7 @@ C2059 can occur for an ill-formed cast.
 
 The following sample generates C2059:
 
-```
+```cpp
 // C2059c.cpp
 // compile with: /clr
 using namespace System;
@@ -92,7 +92,7 @@ C2059 can also occur if you attempt to create a namespace name that contains a p
 
 The following sample generates C2059:
 
-```
+```cpp
 // C2059d.cpp
 // compile with: /c
 namespace A.B {}   // C2059

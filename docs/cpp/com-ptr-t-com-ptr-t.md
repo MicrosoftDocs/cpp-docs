@@ -13,7 +13,7 @@ Constructs a **_com_ptr_t** object.
 
 ## Syntax
 
-```
+```cpp
 // Default constructor.
 // Constructs a NULL smart pointer.
 _com_ptr_t() throw();
@@ -125,7 +125,7 @@ explicit _com_ptr_t(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *pInterface*<br/>
 A raw interface pointer.
@@ -153,6 +153,8 @@ A multibyte string that holds either a `CLSID` (starting with "**{**") or a `Pro
 
 *pOuter*<br/>
 The outer unknown for [aggregation](/windows/win32/com/aggregation).
+
+**END Microsoft Specific**
 
 ## See also
 

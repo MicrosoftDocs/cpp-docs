@@ -1,9 +1,10 @@
 ---
 title: "lrint, lrintf, lrintl, llrint, llrintf, llrintl"
 ms.date: "04/05/2018"
-apiname: ["lrint", "lrintl", "lrintf", "llrint", "llrintf", "llrintl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["lrint", "lrintl", "lrintf", "llrint", "llrintf", "llrintl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["lrint", "lrintf", "lrintl", "llrint", "llrintf", "llrintl", "math/lrint", "math/lrintf", "math/lrintl", "math/llrint", "math/llrintf", "math/llrintl"]
 helpviewer_keywords: ["lrint function", "lrintf function", "lrintl function", "llrint function", "llrintf function", "llrintl function"]
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
@@ -75,7 +76,7 @@ Because C++ allows overloading, you can call overloads of **lrint** and **llrint
 
 If *x* does not represent the floating-point equivalent of an integral value, these functions raise **FE_INEXACT**.
 
-**Microsoft specific**: When the result is outside the range of the return type, or when the parameter is a NaN or infinity, the return value is implementation defined. The Microsoft compiler returns a zero (0) value.
+**Microsoft-specific**: When the result is outside the range of the return type, or when the parameter is a NaN or infinity, the return value is implementation defined. The Microsoft compiler returns a zero (0) value.
 
 ## Requirements
 

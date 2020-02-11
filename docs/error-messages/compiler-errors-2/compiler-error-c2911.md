@@ -13,7 +13,7 @@ Inside a namespace, class, or function, you can only define a member of the same
 
 The following sample generates C2911:
 
-```
+```cpp
 // C2911.cpp
 struct A;
 

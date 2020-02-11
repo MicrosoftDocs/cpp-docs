@@ -13,7 +13,7 @@ You cannot use a qualified name as a function parameter.
 
 The following sample generates C2751:
 
-```
+```cpp
 // C2751.cpp
 namespace std {
    template<typename T>

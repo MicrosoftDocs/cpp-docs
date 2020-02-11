@@ -11,7 +11,7 @@ This class describes an exception thrown when an unsupported operating system is
 
 ## Syntax
 
-```
+```cpp
 class unsupported_os : public std::exception;
 ```
 
@@ -35,11 +35,13 @@ class unsupported_os : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> unsupported_os
+## <a name="ctor"></a> unsupported_os
 
 Constructs an `unsupported_os` object.
 
-```
+### Syntax
+
+```cpp
 explicit _CRTIMP unsupported_os(_In_z_ const char* _Message) throw();
 
 unsupported_os() throw();

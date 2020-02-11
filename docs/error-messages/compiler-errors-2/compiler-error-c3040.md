@@ -13,7 +13,7 @@ A variable in a [reduction](../../parallel/openmp/reference/reduction.md) clause
 
 The following sample generates C3040:
 
-```
+```cpp
 // C3040.cpp
 // compile with: /openmp /c
 #include "omp.h"

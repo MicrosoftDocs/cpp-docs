@@ -13,7 +13,7 @@ A case constant in a `switch` expression does not fit in the type to which it is
 
 ## Example
 
-```
+```cpp
 // C4178.cpp
 // compile with: /W1
 int main()

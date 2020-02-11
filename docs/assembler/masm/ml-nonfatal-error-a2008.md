@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2008"
-ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.date: "12/17/2019"
+ms.custom: "error-reference"
 f1_keywords: ["A2008"]
 helpviewer_keywords: ["A2008"]
 ms.assetid: ca24157f-c88a-4678-ae06-3bc3cd956001
@@ -20,7 +20,7 @@ One of the following may have occurred:
 
 - An instruction was used that was not available with the current processor or coprocessor selection.
 
-- A comparison run-time operator (such as `==`) was used in a conditional assembly statement instead of a relational operator (such as [EQ](../../assembler/masm/operator-eq.md)).
+- A comparison run-time operator (such as `==`) was used in a conditional assembly statement instead of a relational operator (such as [EQ](operator-eq.md)).
 
 - An instruction or directive was given too few operands.
 
@@ -28,4 +28,4 @@ One of the following may have occurred:
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

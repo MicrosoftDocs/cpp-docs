@@ -15,7 +15,7 @@ Redesign the function so that it does not return the address of a local object.
 
 The following sample generates C4172:
 
-```
+```cpp
 // C4172.cpp
 // compile with: /W1 /LD
 float f = 10;

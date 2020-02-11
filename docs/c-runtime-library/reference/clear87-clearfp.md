@@ -1,9 +1,10 @@
 ---
 title: "_clear87, _clearfp"
 ms.date: "04/05/2018"
-apiname: ["_clearfp", "_clear87"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_clearfp", "_clear87"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["clearfp", "_clearfp", "_clear87", "clear87"]
 helpviewer_keywords: ["clearing floating point status word", "clearfp function", "_clear87 function", "_clearfp function", "clear87 function"]
 ms.assetid: 72d24a70-7688-4793-ae09-c96d33fcca52

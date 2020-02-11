@@ -13,7 +13,7 @@ A reference cannot be reinitialized. Dereferencing a reference to a function yie
 
 The following sample generates C3854:
 
-```
+```cpp
 // C3854.cpp
 int afunc(int i)
 {

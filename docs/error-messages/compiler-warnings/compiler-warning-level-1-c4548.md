@@ -15,7 +15,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 The following sample generates C4548:
 
-```
+```cpp
 // C4548.cpp
 // compile with: /W1
 #pragma warning (default : 4548)

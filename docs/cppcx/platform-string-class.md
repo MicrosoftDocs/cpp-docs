@@ -1,6 +1,6 @@
 ---
 title: "Platform::String Class"
-ms.date: "12/30/2016"
+ms.date: "10/16/2019"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::String::String", "VCCORLIB/Platform::String::Begin", "VCCORLIB/Platform::String::CompareOrdinal", "VCCORLIB/Platform::String::Concat", "VCCORLIB/Platform::String::Data", "VCCORLIB/Platform::String::Dispose", "VCCORLIB/Platform::String::End", "VCCORLIB/Platform::String::Equals", "VCCORLIB/Platform::String::GetHashCode", "VCCORLIB/Platform::String::IsEmpty", "VCCORLIB/Platform::String::IsFastPass", "VCCORLIB/Platform::String::Length", "VCCORLIB/Platform::String::ToString"]
 helpviewer_keywords: ["Platform::String"]
@@ -98,12 +98,12 @@ A pointer to the beginning of the current string.
 
 ## <a name="compareordinal"></a>  String::CompareOrdinal Method
 
-Compares two `String` objects by evaluating the numeric values of the corresponding characters in the two string values represented by the objects.
+Static method that compares two `String` objects by evaluating the numeric values of the corresponding characters in the two string values represented by the objects.
 
 ### Syntax
 
 ```cpp
-int CompareOrdinal( String^ str1, String^ str2 );
+static int CompareOrdinal( String^ str1, String^ str2 );
 ```
 
 ### Parameters
@@ -216,7 +216,7 @@ The object to compare.
 
 ### Remarks
 
-This method is equivalent to the [String::CompareOrdinal](#compareordinal). In the first overload, it is expected the `str` parameter can be cast to a String^ object.
+This method is equivalent to the static [String::CompareOrdinal](#compareordinal). In the first overload, it is expected the `str` parameter can be cast to a String^ object.
 
 ## <a name="gethashcode"></a>  String::GetHashCode Method
 

@@ -13,7 +13,7 @@ Templated member functions are not valid in a class that is defined in a functio
 
 The following sample generates C2892:
 
-```
+```cpp
 // C2892.cpp
 int main() {
    struct local {

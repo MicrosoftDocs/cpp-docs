@@ -15,7 +15,7 @@ For more information about events, see [event](../../extensions/event-cpp-compon
 
 The following sample generates C3919:
 
-```
+```cpp
 // C3919.cpp
 // compile with: /clr /c
 using namespace System;

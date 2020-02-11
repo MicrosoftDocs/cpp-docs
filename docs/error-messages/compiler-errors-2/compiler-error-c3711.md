@@ -13,7 +13,7 @@ You defined a method in the event source that did not return void or an integral
 
 The following sample generates C3711:
 
-```
+```cpp
 // C3711.cpp
 #include <atlbase.h>
 #include <atlcom.h>

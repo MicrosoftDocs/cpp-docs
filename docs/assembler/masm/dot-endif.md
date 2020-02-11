@@ -1,20 +1,21 @@
 ---
 title: ".ENDIF"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".ENDIF"]
 helpviewer_keywords: [".ENDIF directive"]
 ms.assetid: b9f25ed5-6634-40f7-bcbc-d3135f09cce6
 ---
-# .ENDIF
+# .ENDIF (32-bit MASM)
 
 ## Syntax
 
-> .ENDIF
+> **.ENDIF**
 
 ## Remarks
 
-See [.IF](../../assembler/masm/dot-if.md).
+(32-bit MASM only.) See [.IF](dot-if.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

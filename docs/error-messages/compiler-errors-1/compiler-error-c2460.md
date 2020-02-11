@@ -13,7 +13,7 @@ A class or structure (`identifier2`) is declared as a member of itself (`identif
 
 The following sample generates C2460:
 
-```
+```cpp
 // C2460.cpp
 class C {
    C aC;    // C2460
@@ -22,7 +22,7 @@ class C {
 
 Instead, use a pointer reference in the class.
 
-```
+```cpp
 // C2460.cpp
 class C {
    C * aC;    // OK

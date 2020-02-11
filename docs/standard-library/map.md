@@ -7,7 +7,7 @@ ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
 ---
 # &lt;map&gt;
 
-Defines the container template classes map and multimap and their supporting templates.
+Defines the container class templates map and multimap and their supporting templates.
 
 ## Requirements
 

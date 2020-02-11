@@ -83,7 +83,7 @@ Notice the difference in the metadata for `sc` and `lit`: the `modopt` directive
 
 The following sample, authored in C#, references the metadata created in the previous sample and shows the affect of **literal** and **static const** variables:
 
-```cs
+```csharp
 // mcppv2_literal3.cs
 // compile with: /reference:mcppv2_literal2.dll
 // A C# program

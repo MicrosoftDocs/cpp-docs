@@ -13,7 +13,7 @@ The operand to the left of the `->` operator is not a pointer. Use the period (.
 
 The following sample generates C2232:
 
-```
+```c
 // C2232.c
 struct X {
     int member;

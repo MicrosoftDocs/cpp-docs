@@ -15,7 +15,7 @@ ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
 
 The following sample generates C2584.
 
-```
+```cpp
 // C2584.cpp
 // compile with: /c
 struct A1 {

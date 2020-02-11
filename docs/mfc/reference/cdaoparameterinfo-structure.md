@@ -1,13 +1,13 @@
 ---
 title: "CDaoParameterInfo Structure"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 f1_keywords: ["CDaoParameterInfo"]
 helpviewer_keywords: ["CDaoParameterInfo structure [MFC]", "DAO (Data Access Objects), Parameters collection"]
 ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
 ---
 # CDaoParameterInfo Structure
 
-The `CDaoParameterInfo` structure contains information about a parameter object defined for data access objects (DAO).
+The `CDaoParameterInfo` structure contains information about a parameter object defined for data access objects (DAO). DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 

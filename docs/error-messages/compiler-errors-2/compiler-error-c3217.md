@@ -13,7 +13,7 @@ A constraint was ill formed; the constraint generic parameter must agree with th
 
 The following sample generates C3217:
 
-```
+```cpp
 // C3217.cpp
 // compile with: /clr
 interface struct A {};
@@ -28,7 +28,7 @@ ref class C {
 
 The following sample demonstrates a possible resolution:
 
-```
+```cpp
 // C3217b.cpp
 // compile with: /clr /c
 interface struct A {};

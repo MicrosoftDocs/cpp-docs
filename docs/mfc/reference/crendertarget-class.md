@@ -775,7 +775,7 @@ When this method returns, textRenderingParamscontains the address of a pointer t
 
 ##  <a name="gettransform"></a>  CRenderTarget::GetTransform
 
-Applies the specified transform to the render target, replacing the existing transformation. All subsequent drawing operations occur in the transformed space.
+Gets the current transform of the render target.
 
 ```
 void GetTransform(D2D1_MATRIX_3X2_F* transform);
@@ -784,7 +784,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform);
 ### Parameters
 
 *transform*<br/>
-The transform to apply to the render target.
+When this returns, contains the current transform of the render target. This parameter is passed uninitialized.
 
 ##  <a name="issupported"></a>  CRenderTarget::IsSupported
 

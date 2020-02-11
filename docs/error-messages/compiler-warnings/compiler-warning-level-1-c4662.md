@@ -13,7 +13,7 @@ The specified template-class was declared, but not defined.
 
 ## Example
 
-```
+```cpp
 // C4662.cpp
 // compile with: /W1 /LD
 template<class T, int i> class MyClass; // no definition

@@ -13,7 +13,7 @@ A local class cannot have a template function as a friend function.
 
 The following sample generates C2701:
 
-```
+```cpp
 // C2701.cpp
 // compile with: /c
 template<typename T>   // OK

@@ -15,7 +15,7 @@ The following code examples use the [managed, unmanaged](../preprocessor/managed
 
 The following example demonstrates how to pass a managed array to an unmanaged function. The managed function uses [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) to suppress garbage collection for the array before calling the unmanaged function. By providing the unmanaged function with a pinned pointer into the GC heap, the overhead of making a copy of the array can be avoided. To demonstrate that the unmanaged function is accessing GC heap memory, it modifies the contents of the array and the changes are reflected when the managed function resumes control.
 
-```
+```cpp
 // PassArray1.cpp
 // compile with: /clr
 #ifndef _CRT_RAND_S
@@ -74,7 +74,7 @@ int main() {
 
 The following example demonstrates passing an unmanaged array to a managed function. The managed function accesses the array memory directly (as opposed to creating a managed array and copying the array content), which allows changes made by the managed function to be reflected in the unmanaged function when it regains control.
 
-```
+```cpp
 // PassArray2.cpp
 // compile with: /clr
 #include <iostream>

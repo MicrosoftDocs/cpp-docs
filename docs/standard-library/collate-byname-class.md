@@ -7,7 +7,7 @@ ms.assetid: 3dc380df-867c-4763-b60e-ba62a8e63ca7
 ---
 # collate_byname Class
 
-A derived template class that describes an object that can serve as a collate facet of a given locale, enabling the retrieval of information specific to a cultural area concerning string sorting conventions.
+A derived class template that describes an object that can serve as a collate facet of a given locale, enabling the retrieval of information specific to a cultural area concerning string sorting conventions.
 
 ## Syntax
 
@@ -39,7 +39,7 @@ An initial reference count.
 
 ## Remarks
 
-The template class describes an object that can serve as a [locale facet](../standard-library/locale-class.md#facet_class) of type [collate](../standard-library/collate-class.md#collate)\<CharType>. Its behavior is determined by the [named](../standard-library/locale-class.md#name) locale *_Locname*. Each constructor initializes its base object with [collate](../standard-library/collate-class.md#collate)\<CharType>( `_Refs`).
+The class template describes an object that can serve as a [locale facet](../standard-library/locale-class.md#facet_class) of type [collate](../standard-library/collate-class.md#collate)\<CharType>. Its behavior is determined by the [named](../standard-library/locale-class.md#name) locale *_Locname*. Each constructor initializes its base object with [collate](../standard-library/collate-class.md#collate)\<CharType>( `_Refs`).
 
 ## Requirements
 

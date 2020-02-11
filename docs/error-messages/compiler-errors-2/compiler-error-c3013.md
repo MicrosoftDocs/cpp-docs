@@ -13,7 +13,7 @@ A clause appeared twice on the same directive. Delete one occurrence of the clau
 
 The following sample generates C3013:
 
-```
+```cpp
 // C3013.cpp
 // compile with: /openmp
 int main() {

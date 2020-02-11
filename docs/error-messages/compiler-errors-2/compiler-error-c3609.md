@@ -13,7 +13,7 @@ The [sealed](../../extensions/sealed-cpp-component-extensions.md) and [final](..
 
 The following sample generates C3609:
 
-```
+```cpp
 // C3609.cpp
 // compile with: /clr /c
 ref class C {

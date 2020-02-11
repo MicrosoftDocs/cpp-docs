@@ -7,7 +7,7 @@ ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
 ---
 # binder2nd Class
 
-A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
+A class template providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 
@@ -20,7 +20,7 @@ class binder2nd
     typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder2nd(
-        const Operation& Func,
+        const Operation& func,
         const typename Operation::second_argument_type& right);
 
     result_type operator()(const argument_type& left) const;
@@ -30,7 +30,7 @@ class binder2nd
 
 ### Parameters
 
-*Func*\
+*func*\
 The binary function object to be converted to a unary function object.
 
 *right*\
@@ -39,15 +39,15 @@ The value to which the second argument of the binary function object is to be bo
 *left*\
 The value of the argument that the adapted binary object compares to the fixed value of the second argument.
 
-## Return Value
+## Return value
 
 The unary function object that results from binding the second argument of the binary function object to the value *right*.
 
 ## Remarks
 
-The template class stores a copy of a binary function object _ *Func* in `op`, and a copy of *right* in `value`. It defines its member function `operator()` as returning **op**(`left`, **value**).
+The class template stores a copy of a binary function object *func* in `op`, and a copy of *right* in `value`. It defines its member function `operator()` as returning `op(left, value)`.
 
-If `Func` is an object of type `Operation` and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`, `c`) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> (`Func`, `c`) and more convenient.
+If *func* is an object of type `Operation` and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd)`(func, c)` is equivalent to the `binder2nd` class constructor `binder2nd<Operation>(func, c)`, and more convenient.
 
 ## Example
 

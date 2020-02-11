@@ -6,7 +6,7 @@ ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
 # Compiler warnings that are off by default
 
-The compiler supports warnings that are turned off by default, because most developers don't find them useful. In some cases, they warn about a stylistic choice, or about common idioms in older code. Other warnings are about use of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. If enabled, some of these warnings may appear many times in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).
+The compiler supports warnings that are turned off by default, because most developers don't find them useful. In some cases, they warn about a stylistic choice, or about common idioms in older code. Other warnings are about use of a Microsoft extension to the language. Some warnings indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. If all of these warnings are enabled, some of them may appear many times in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).
 
 ## Enable warnings that are off by default
 
@@ -81,7 +81,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C4587 (level 1)|'*anonymous_structure*': behavior change: constructor is no longer implicitly called|
 |C4588 (level 1)|'*anonymous_structure*': behavior change: destructor is no longer implicitly called|
 |[C4596](../error-messages/compiler-warnings/c4596.md) (level 4)|'*identifier*': illegal qualified name in member declaration <sup>14.3</sup> <sup>Perm</sup>|
-|C4598 (level 1 and level 3)|'#include "*header*"': header number *number* in the precompiled header does not match current compilation at that position <sup>14.3</sup>|
+|C4598 (level 1 and level 3)|'#include "*header*"': header number *header-number* in the precompiled header does not match current compilation at that position <sup>14.3</sup>|
 |C4599 (level 3)|'*option* *path*': command-line argument number *number* does not match pre-compiled header <sup>14.3</sup>|
 |C4605 (level 1)|'/D*macro*' specified on current command line, but was not specified when precompiled header was built|
 |[C4608](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md) (level 3)|'*union_member*' has already been initialized by another union member in the initializer list, '*union_member*' <sup>Perm</sup>|
@@ -134,8 +134,8 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C5029 (level 4)|nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only|
 |C5031 (level 4)|#pragma warning(pop): likely mismatch, popping warning state pushed in different file <sup>14.1</sup>|
 |C5032 (level 4)|detected #pragma warning(push) with no corresponding #pragma warning(pop) <sup>14.1</sup>|
-|C5034|use of intrinsic '*intrinsic*' causes function *function* to be compiled as guest code <sup>15.3</sup>|
-|C5035|use of feature '*feature*' causes function *function* to be compiled as guest code <sup>15.3</sup>|
+|C5034|use of intrinsic '*intrinsic*' causes function *function-name* to be compiled as guest code <sup>15.3</sup>|
+|C5035|use of feature '*feature*' causes function *function-name* to be compiled as guest code <sup>15.3</sup>|
 |C5036 (level 1)|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*' <sup>15.3</sup>|
 |[C5038](../error-messages/compiler-warnings/c5038.md) (level 4)|data member '*member1*' will be initialized after data member '*member2*' <sup>15.3</sup>|
 |C5039 (level 4)|'*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception. <sup>15.5</sup>|

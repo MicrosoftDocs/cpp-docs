@@ -17,7 +17,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 The following sample generates C3915.
 
-```
+```cpp
 // C3915.cpp
 // compile with: /clr
 ref class X {
@@ -44,7 +44,7 @@ C3915 can also occur if you attempt to consume a default indexer in the same com
 
 The following sample generates C3915.
 
-```
+```cpp
 // C3915_b.cpp
 // compile with: /clr
 using namespace System;

@@ -13,7 +13,7 @@ The [module](../../windows/module-cpp.md) attribute can only be defined once per
 
 The following sample generates C3140:
 
-```
+```cpp
 // C3140.cpp
 // compile with: /c
 [emitidl];

@@ -1,9 +1,10 @@
 ---
 title: "_cgets, _cgetws"
 ms.date: "11/04/2016"
-apiname: ["_cgetws", "_cgets"]
-apilocation: ["msvcr100.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_cgetws", "_cgets"]
+api_location: ["msvcr100.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["cgetws", "_cgetws", "_cgets"]
 helpviewer_keywords: ["_cgetws function", "strings [C++], getting from console", "console, getting strings from", "_cgets function", "cgetws function", "cgets function"]
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
@@ -71,7 +72,7 @@ For more compatibility information, see [Compatibility](../c-runtime-library/com
 
 ## Example
 
-```
+```c
 // crt_cgets.c
 // compile with: /c /W3
 // This program creates a buffer and initializes

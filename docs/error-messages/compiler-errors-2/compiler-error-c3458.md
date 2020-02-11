@@ -15,7 +15,7 @@ Two attributes that are mutually exclusive were specified for the same construct
 
 The following sample generates C3458
 
-```
+```cpp
 // C3458.cpp
 // compile with: /clr /c
 [System::Reflection::DefaultMember("Chars")]

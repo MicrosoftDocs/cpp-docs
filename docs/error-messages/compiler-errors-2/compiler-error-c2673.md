@@ -13,7 +13,7 @@ A global function tried to access `this`.
 
 The following sample generates C2673:
 
-```
+```cpp
 // C2673.cpp
 int main() {
    this = 0;   // C2673

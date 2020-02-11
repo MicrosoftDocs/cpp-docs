@@ -17,7 +17,7 @@ For more information, see [C++ Stack Semantics for Reference Types](../../dotnet
 
 The following sample generates C3073.
 
-```
+```cpp
 // C3073.cpp
 // compile with: /clr
 ref class R {

@@ -141,6 +141,8 @@
       href: compiler-errors-1/fatal-error-c1046.md
     - name: fatal error C1047
       href: compiler-errors-1/fatal-error-c1047.md
+    - name: fatal error C1049
+      href: compiler-errors-1/fatal-error-c1049.md
     - name: fatal error C1051
       href: compiler-errors-1/fatal-error-c1051.md
     - name: fatal error C1052
@@ -3852,6 +3854,8 @@
           href: compiler-warnings/compiler-warning-level-4-c4571.md
         - name: Compiler warning (level 1) C4572
           href: compiler-warnings/compiler-warning-level-1-c4572.md
+        - name: Compiler warning (level 1) C4577
+          href: compiler-warnings/compiler-warning-level-1-c4577.md
         - name: Compiler warning (level 3) C4580
           href: compiler-warnings/compiler-warning-level-3-c4580.md
         - name: Compiler warning (level 1) C4581
@@ -4246,8 +4250,10 @@
           href: compiler-warnings/c5038.md
         - name: Compiler warning C5045
           href: compiler-warnings/c5045.md
-        - name: Compiler warning (level2) C5046
+        - name: Compiler warning (level 2) C5046
           href: compiler-warnings/c5046.md
+        - name: Compiler warning (level 1) C5105
+          href: compiler-warnings/c5105.md
 - name: Compiler warnings by compiler version
   href: compiler-warnings/compiler-warnings-by-compiler-version.md
 - name: Compiler warnings that are off by default
@@ -4554,6 +4560,8 @@
       href: tool-errors/linker-tools-error-lnk1318.md
     - name: Linker tools error LNK1332
       href: tool-errors/linker-tools-error-lnk1332.md
+    - name: Linker tools error LNK1352
+      href: tool-errors/linker-tools-error-lnk1352.md
     - name: Linker tools error LNK1561
       href: tool-errors/linker-tools-error-lnk1561.md
     - name: Linker tools error LNK2001

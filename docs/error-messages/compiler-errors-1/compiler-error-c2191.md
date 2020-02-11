@@ -15,7 +15,7 @@ A C function was declared a second time with a longer parameter list. C does not
 
 The following sample generates C2191:
 
-```
+```c
 // C2191.c
 // compile with: /Za /c
 void func( int );

@@ -22,7 +22,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
 
 - The runtime does not manage exceptions for lightweight tasks and agents.
 
-##  <a name="top"></a> In this Document
+## <a name="top"></a> In this Document
 
 - [Tasks and Continuations](#tasks)
 
@@ -38,7 +38,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
 
 - [Asynchronous Agents](#agents)
 
-##  <a name="tasks"></a> Tasks and Continuations
+## <a name="tasks"></a> Tasks and Continuations
 
 This section describes how the runtime handles exceptions that are thrown by [concurrency::task](../../parallel/concrt/reference/task-class.md) objects and their continuations. For more information about the task and continuation model, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
@@ -57,12 +57,12 @@ We recommend that you catch the most specific exceptions that you can. You can o
 [!code-cpp[concrt-eh-task-chain#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_3.cpp)]
 
 > [!TIP]
->  You can use the [concurrency::task_completion_event::set_exception](../../parallel/concrt/reference/task-completion-event-class.md) method to associate an exception with a task completion event. The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md) describes the [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) class in greater detail.
+> You can use the [concurrency::task_completion_event::set_exception](../../parallel/concrt/reference/task-completion-event-class.md) method to associate an exception with a task completion event. The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md) describes the [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) class in greater detail.
 
 [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) is an important runtime exception type that relates to `task`. The runtime throws `task_canceled` when you call `task::get` and that task is canceled. (Conversely, `task::wait` returns [task_status::canceled](reference/concurrency-namespace-enums.md#task_group_status) and does not throw.) You can catch and handle this exception from a task-based continuation or when you call `task::get`. For more information about task cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).
 
 > [!CAUTION]
->  Never throw `task_canceled` from your code. Call [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) instead.
+> Never throw `task_canceled` from your code. Call [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) instead.
 
 The runtime terminates the app if a task throws an exception and that exception is not caught by the task, one of its continuations, or the main app. If your application crashes, you can configure Visual Studio to break when C++ exceptions are thrown. After you diagnose the location of the unhandled exception, use a task-based continuation to handle it.
 
@@ -70,12 +70,12 @@ The section [Exceptions Thrown by the Runtime](#runtime) in this document descri
 
 [[Top](#top)]
 
-##  <a name="task_groups"></a> Task Groups and Parallel Algorithms
+## <a name="task_groups"></a> Task Groups and Parallel Algorithms
 
 This section describes how the runtime handles exceptions that are thrown by task groups. This section also applies to parallel algorithms such as [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), because these algorithms build on task groups.
 
 > [!CAUTION]
->  Make sure that you understand the effects that exceptions have on dependent tasks. For recommended practices about how to use exception handling with tasks or parallel algorithms, see the [Understand how Cancellation and Exception Handling Affect Object Destruction](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) section in the Best Practices in the Parallel Patterns Library topic.
+> Make sure that you understand the effects that exceptions have on dependent tasks. For recommended practices about how to use exception handling with tasks or parallel algorithms, see the [Understand how Cancellation and Exception Handling Affect Object Destruction](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) section in the Best Practices in the Parallel Patterns Library topic.
 
 For more information about task groups, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md). For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
@@ -95,7 +95,7 @@ For a complete example that uses exception handling in a task group, see [How to
 
 [[Top](#top)]
 
-##  <a name="runtime"></a> Exceptions Thrown by the Runtime
+## <a name="runtime"></a> Exceptions Thrown by the Runtime
 
 An exception can result from a call to the runtime. Most exception types, except for [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) and [concurrency::operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md), indicate a programming error. These errors are typically unrecoverable, and therefore should not be caught or handled by application code. We suggest that you only catch or handle unrecoverable errors in your application code when you need to diagnose programming errors. However, understanding the exception types that are defined by the runtime can help you diagnose programming errors.
 
@@ -115,7 +115,7 @@ To prevent abnormal termination of your application, make sure that your code ha
 
 [[Top](#top)]
 
-##  <a name="multiple"></a> Multiple Exceptions
+## <a name="multiple"></a> Multiple Exceptions
 
 If a task or parallel algorithm receives multiple exceptions, the runtime marshals only one of those exceptions to the calling context. The runtime does not guarantee which exception it marshals.
 
@@ -131,19 +131,19 @@ The following shows sample output for this example.
 
 [[Top](#top)]
 
-##  <a name="cancellation"></a> Cancellation
+## <a name="cancellation"></a> Cancellation
 
 Not all exceptions indicate an error. For example, a search algorithm might use exception handling to stop its associated task when it finds the result. For more information about how to use cancellation mechanisms in your code, see [Cancellation in the PPL](../../parallel/concrt/cancellation-in-the-ppl.md).
 
 [[Top](#top)]
 
-##  <a name="lwts"></a> Lightweight Tasks
+## <a name="lwts"></a> Lightweight Tasks
 
 A lightweight task is a task that you schedule directly from a [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) object. Lightweight tasks carry less overhead than ordinary tasks. However, the runtime does not catch exceptions that are thrown by lightweight tasks. Instead, the exception is caught by the unhandled exception handler, which by default terminates the process. Therefore, use an appropriate error-handling mechanism in your application. For more information about lightweight tasks, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
 [[Top](#top)]
 
-##  <a name="agents"></a> Asynchronous Agents
+## <a name="agents"></a> Asynchronous Agents
 
 Like lightweight tasks, the runtime does not manage exceptions that are thrown by asynchronous agents.
 
@@ -170,7 +170,7 @@ For more information about asynchronous agents, see [Asynchronous Agents](../../
 
 [[Top](#top)]
 
-##  <a name="summary"></a> Summary
+## <a name="summary"></a> Summary
 
 [[Top](#top)]
 

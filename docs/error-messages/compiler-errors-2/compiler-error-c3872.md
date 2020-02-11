@@ -15,7 +15,7 @@ The range of characters allowed in an identifier is less restrictive when compil
 
 The following sample generates C3872:
 
-```
+```cpp
 // C3872.cpp
 int main() {
    int abc_\u0040;   // C3872, U+0040 is in base char set

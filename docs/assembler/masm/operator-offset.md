@@ -1,6 +1,6 @@
 ---
 title: "operator OFFSET"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["Offset", "operator OFFSET"]
 helpviewer_keywords: ["OFFSET operator", "operator OFFSET"]
 ms.assetid: d93ca835-cd25-4b26-9bdf-8cc43185e03c
@@ -11,8 +11,9 @@ Returns the offset into the relevant segment of *expression*.
 
 ## Syntax
 
-> OFFSET expression
+> **OFFSET** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

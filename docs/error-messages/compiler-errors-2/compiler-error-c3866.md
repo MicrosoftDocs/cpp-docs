@@ -13,7 +13,7 @@ Inside a nonstatic member function, a destructor or finalizer call did not have 
 
 The following sample generates C3866:
 
-```
+```cpp
 // C3866.cpp
 // compile with: /c
 class C {

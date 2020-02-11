@@ -34,7 +34,7 @@ void CMyView::OnBeginDlgRestore()
 // the pair of calls to BeginWaitCursor and EndWaitCursor.
 // Sometimes it may not be clear whether the dialog is invoked
 // in between a pair of calls to BeginWaitCursor and EndWaitCursor.
-// It is permissable to call RestoreWaitCursor, even if
+// It is permissible to call RestoreWaitCursor, even if
 // BeginWaitCursor was not previously called.  This case is
 // illustrated below, where CMyView::AnotherFunction does not
 // need to know whether it was called in the context of an

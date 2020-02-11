@@ -13,7 +13,7 @@ Local variables are not allowed as default parameters.
 
 The following sample generates C2587:
 
-```
+```cpp
 // C2587.cpp
 // compile with: /c
 int i;

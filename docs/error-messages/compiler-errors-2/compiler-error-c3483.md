@@ -19,7 +19,7 @@ You passed the same variable to the capture list of a lambda expression more tha
 
 The following example generates C3483 because the variable `n` appears more than one time in the capture list of the lambda expression:
 
-```
+```cpp
 // C3483.cpp
 
 int main()

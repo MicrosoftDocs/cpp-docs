@@ -11,7 +11,7 @@ A non-reentrant mutex which is explicitly aware of the Concurrency Runtime.
 
 ## Syntax
 
-```
+```cpp
 class critical_section;
 ```
 
@@ -60,19 +60,19 @@ For more information, see [Synchronization Data Structures](../../../parallel/co
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> critical_section
+## <a name="ctor"></a> critical_section
 
 Constructs a new critical section.
 
-```
+```cpp
 critical_section();
 ```
 
-##  <a name="dtor"></a> ~critical_section
+## <a name="dtor"></a> ~critical_section
 
 Destroys a critical section.
 
-```
+```cpp
 ~critical_section();
 ```
 
@@ -80,11 +80,11 @@ Destroys a critical section.
 
 It is expected that the lock is no longer held when the destructor runs. Allowing the critical section to destruct with the lock still held results in undefined behavior.
 
-##  <a name="lock"></a> lock
+## <a name="lock"></a> lock
 
 Acquires this critical section.
 
-```
+```cpp
 void lock();
 ```
 
@@ -94,11 +94,11 @@ It is often safer to utilize the [scoped_lock](#critical_section__scoped_lock_cl
 
 If the lock is already held by the calling context, an [improper_lock](improper-lock-class.md) exception will be thrown.
 
-##  <a name="native_handle"></a> native_handle
+## <a name="native_handle"></a> native_handle
 
 Returns a platform specific native handle, if one exists.
 
-```
+```cpp
 native_handle_type native_handle();
 ```
 
@@ -110,19 +110,19 @@ A reference to the critical section.
 
 A `critical_section` object is not associated with a platform specific native handle for the Windows operating system. The method simply returns a reference to the object itself.
 
-##  <a name="critical_section__scoped_lock_class"></a>  critical_section::scoped_lock Class
+## <a name="critical_section__scoped_lock_class"></a>  critical_section::scoped_lock Class
 
 An exception safe RAII wrapper for a `critical_section` object.
 
-```
+```cpp
 class scoped_lock;
 ```
 
-##  <a name="critical_section__scoped_lock_ctor"></a> scoped_lock::scoped_lock
+## <a name="critical_section__scoped_lock_ctor"></a> scoped_lock::scoped_lock
 
 Constructs a `scoped_lock` object and acquires the `critical_section` object passed in the `_Critical_section` parameter. If the critical section is held by another thread, this call will block.
 
-```
+```cpp
 explicit _CRTIMP scoped_lock(critical_section& _Critical_section);
 ```
 
@@ -131,19 +131,19 @@ explicit _CRTIMP scoped_lock(critical_section& _Critical_section);
 *_Critical_section*<br/>
 The critical section to lock.
 
-##  <a name="critical_section__scoped_lock_dtor"></a> scoped_lock::~scoped_lock
+## <a name="critical_section__scoped_lock_dtor"></a> scoped_lock::~scoped_lock
 
 Destroys a `scoped_lock` object and releases the critical section supplied in its constructor.
 
-```
+```cpp
 ~scoped_lock();
 ```
 
-##  <a name="try_lock"></a> try_lock
+## <a name="try_lock"></a> try_lock
 
 Tries to acquire the lock without blocking.
 
-```
+```cpp
 bool try_lock();
 ```
 
@@ -151,11 +151,11 @@ bool try_lock();
 
 If the lock was acquired, the value **true**; otherwise, the value **false**.
 
-##  <a name="try_lock_for"></a> try_lock_for
+## <a name="try_lock_for"></a> try_lock_for
 
 Tries to acquire the lock without blocking for a specific number of milliseconds.
 
-```
+```cpp
 bool try_lock_for(unsigned int _Timeout);
 ```
 
@@ -168,11 +168,11 @@ The number of milliseconds to wait before timing out.
 
 If the lock was acquired, the value **true**; otherwise, the value **false**.
 
-##  <a name="unlock"></a> unlock
+## <a name="unlock"></a> unlock
 
 Unlocks the critical section.
 
-```
+```cpp
 void unlock();
 ```
 

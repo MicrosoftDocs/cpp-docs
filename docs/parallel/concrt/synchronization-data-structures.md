@@ -8,7 +8,7 @@ ms.assetid: d612757d-e4b7-4019-a627-f853af085b8b
 
 The Concurrency Runtime provides several data structures that let you synchronize access to shared data from multiple threads. These data structures are useful when you have shared data that you modify infrequently. A synchronization object, for example, a critical section, causes other threads to wait until the shared resource is available. Therefore, if you use such an object to synchronize access to data that is used frequently, you can lose scalability in your application. The [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) provides the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class, which enables you to share a resource among several threads or tasks without the need for synchronization. For more information about the `combinable` class, see [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md).
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This topic describes the following asynchronous message block types in detail:
 
@@ -20,7 +20,7 @@ This topic describes the following asynchronous message block types in detail:
 
 - [event](#event)
 
-##  <a name="critical_section"></a> critical_section
+## <a name="critical_section"></a> critical_section
 
 The [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) class represents a cooperative mutual exclusion object that yields to other tasks instead of preempting them. Critical sections are useful when multiple threads require exclusive read and write access to shared data.
 
@@ -38,7 +38,7 @@ The following table shows the important methods that are defined by the `critica
 
 [[Top](#top)]
 
-##  <a name="reader_writer_lock"></a> reader_writer_lock
+## <a name="reader_writer_lock"></a> reader_writer_lock
 
 The [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) class provides thread-safe read/write operations to shared data. Use reader/writer locks when multiple threads require concurrent read access to a shared resource but rarely write to that shared resource. This class gives only one thread write access to an object at any time.
 
@@ -51,7 +51,7 @@ When a thread that must write to a shared resource acquires a reader/writer lock
 Like the `critical_section` class, the `reader_writer_lock` class is non-reentrant. The [concurrency::reader_writer_lock::lock](reference/reader-writer-lock-class.md#lock) and [concurrency::reader_writer_lock::lock_read](reference/reader-writer-lock-class.md#lock_read) methods throw an exception of type `improper_lock` if they are called by a thread that already owns the lock.
 
 > [!NOTE]
->  Because the `reader_writer_lock` class is non-reentrant, you cannot upgrade a read-only lock to a reader/writer lock or downgrade a reader/writer lock to a read-only lock. Performing either of these operations produces unspecified behavior.
+> Because the `reader_writer_lock` class is non-reentrant, you cannot upgrade a read-only lock to a reader/writer lock or downgrade a reader/writer lock to a read-only lock. Performing either of these operations produces unspecified behavior.
 
 ### Methods and Features
 
@@ -67,7 +67,7 @@ The following table shows the important methods that are defined by the `reader_
 
 [[Top](#top)]
 
-##  <a name="scoped_lock"></a> scoped_lock and scoped_lock_read
+## <a name="scoped_lock"></a> scoped_lock and scoped_lock_read
 
 The `critical_section` and `reader_writer_lock` classes provide nested helper classes that simplify the way you work with mutual exclusion objects. These helper classes are known as *scoped locks*.
 
@@ -76,9 +76,9 @@ The `critical_section` class contains the [concurrency::critical_section::scoped
 Scoped locks provide several benefits when you are working with `critical_section` and `reader_writer_lock` objects manually. Typically, you allocate a scoped lock on the stack. A scoped lock releases access to its mutual exclusion object automatically when it is destroyed; therefore, you do not manually unlock the underlying object. This is useful when a function contains multiple `return` statements. Scoped locks can also help you write exception-safe code. When a `throw` statement causes the stack to unwind, the destructor for any active scoped lock is called, and therefore the mutual exclusion object is always correctly released.
 
 > [!NOTE]
->  When you use the `critical_section::scoped_lock`, `reader_writer_lock::scoped_lock`, and `reader_writer_lock::scoped_lock_read` classes, do not manually release access to the underlying mutual exclusion object. This can put the runtime in an invalid state.
+> When you use the `critical_section::scoped_lock`, `reader_writer_lock::scoped_lock`, and `reader_writer_lock::scoped_lock_read` classes, do not manually release access to the underlying mutual exclusion object. This can put the runtime in an invalid state.
 
-##  <a name="event"></a> event
+## <a name="event"></a> event
 
 The [concurrency::event](../../parallel/concrt/reference/event-class.md) class represents a synchronization object whose state can be signaled or non-signaled. Unlike synchronization objects, such as critical sections, whose purpose is to protect access to shared data, events synchronize flow of execution.
 

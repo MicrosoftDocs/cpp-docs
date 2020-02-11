@@ -6,7 +6,7 @@ helpviewer_keywords: ["optional/std::optional", "optional/std::optional::has_val
 ---
 # optional Class
 
-The template class `optional<T>` describes an object that may or may not contain a value of type `T`, known as the *contained value*.
+The class template `optional<T>` describes an object that may or may not contain a value of type `T`, known as the *contained value*.
 
 When an instance of `optional<T>` contains a value, the contained value is allocated within the storage of the `optional` object, in a region suitably aligned for type `T`. When an `optional<T>` is converted to `bool`, the result is `true` if the object contains a value; otherwise, it's `false`.
 

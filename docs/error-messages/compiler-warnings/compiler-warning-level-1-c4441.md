@@ -15,7 +15,7 @@ Member functions in managed user-defined types and global function generics must
 
 The following sample generates C4441.
 
-```
+```cpp
 // C4441.cpp
 // compile with: /clr /W1 /c
 generic <class ItemType>

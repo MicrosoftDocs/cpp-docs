@@ -70,7 +70,7 @@ The types of the tuple elements.
 
 ## Remarks
 
-The template class has a member `value` that is an integral constant expression whose value is the extent of the tuple type *Tuple*.
+The class template has a member `value` that is an integral constant expression whose value is the extent of the tuple type *Tuple*.
 
 The template specialization for arrays has a member `value` that is an integral constant expression whose value is *Size*, which is the size of the array.
 

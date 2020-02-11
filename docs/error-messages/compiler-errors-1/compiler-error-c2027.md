@@ -15,7 +15,7 @@ A type cannot be used until it is defined. To resolve the error, be sure the typ
 
 The following sample generates C2027.
 
-```
+```cpp
 // C2027.cpp
 class C;
 class D {
@@ -39,7 +39,7 @@ It is possible to declare a pointer to a declared but undefined type. But C++ do
 
 The following sample generates C2027.
 
-```
+```cpp
 // C2027_b.cpp
 class A;
 A& CreateA();

@@ -17,7 +17,7 @@ For more information, see [Boxing](../../extensions/boxing-cpp-component-extensi
 
 The following sample generates C4965.
 
-```
+```cpp
 // C4965.cpp
 // compile with: /clr /W1
 int main() {

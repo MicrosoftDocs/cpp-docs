@@ -13,7 +13,7 @@ A keyword was used in a declaration but is only valid in a definition.
 
 The following sample generates C3197:
 
-```
+```cpp
 // C3197.cpp
 // compile with: /clr /c
 ref struct R abstract;   // C3197

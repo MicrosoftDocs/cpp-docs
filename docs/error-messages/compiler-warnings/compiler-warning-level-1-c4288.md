@@ -15,7 +15,7 @@ See [/Zc:forScope](../../build/reference/zc-forscope-force-conformance-in-for-lo
 
 The following sample generates C4288:
 
-```
+```cpp
 // C4288.cpp
 // compile with: /W1 /c /Zc:forScope-
 int main() {

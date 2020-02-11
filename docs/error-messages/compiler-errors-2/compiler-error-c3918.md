@@ -15,7 +15,7 @@ C3918 can occur for several reasons related to events.
 
 C3918 can occur because a class member is required in the current context. The following sample generates C3918.
 
-```
+```cpp
 // C3918.cpp
 // compile with: /clr /c
 public ref class C {
@@ -39,7 +39,7 @@ C3918 is also caused if you try to check a trivial event for null (the event nam
 
 The following sample generates C3918.
 
-```
+```cpp
 // C3918_2.cpp
 // compile with: /clr /c
 using namespace System;
@@ -62,7 +62,7 @@ ref struct EventSource : public IEFace {
 
 C3918 can also occur if you incorrectly subscribe to an event. The following sample generates C3918.
 
-```
+```cpp
 // C3918_3.cpp
 // compile with: /clr /c
 using namespace System;

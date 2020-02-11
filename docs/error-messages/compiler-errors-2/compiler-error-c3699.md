@@ -15,7 +15,7 @@ An attempt was made to use indirection that is not allowed on `type`.
 
 The following sample generates C3699.
 
-```
+```cpp
 // C3699.cpp
 // compile with: /clr /c
 using namespace System;
@@ -30,7 +30,7 @@ int main() {
 
 A trivial property cannot have reference type. See [property](../../extensions/property-cpp-component-extensions.md) for more information. The following sample generates C3699.
 
-```
+```cpp
 // C3699_b.cpp
 // compile with: /clr /c
 ref struct C {
@@ -43,7 +43,7 @@ ref struct C {
 
 The equivalent of a "pointer to a pointer" syntax is a handle to a tracking reference. The following sample generates C3699.
 
-```
+```cpp
 // C3699_c.cpp
 // compile with: /clr /c
 using namespace System;

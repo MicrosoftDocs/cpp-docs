@@ -13,7 +13,7 @@ The values passed to a clause were not valid.
 
 The following sample generates C3023:
 
-```
+```cpp
 // C3023.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

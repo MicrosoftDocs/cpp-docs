@@ -7,13 +7,13 @@ ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
 ---
 # ios_base Class
 
-The class describes the storage and member functions common to both input and output streams that do not depend on the template parameters. (The template class [basic_ios](../standard-library/basic-ios-class.md) describes what is common and is dependent on template parameters.)
+The class describes the storage and member functions common to both input and output streams that do not depend on the template parameters. (The class template [basic_ios](../standard-library/basic-ios-class.md) describes what is common and is dependent on template parameters.)
 
 An object of class ios_base stores formatting information, which consists of:
 
-- Format flags in an object of type [fmtflags](#fmtflags).
+- Format flags in an object of type [`fmtflags`](#fmtflags).
 
-- An exception mask in an object of type [iostate](#iostate).
+- An exception mask in an object of type [`iostate`](#iostate).
 
 - A field width in an object of type **int**.
 
@@ -23,7 +23,7 @@ An object of class ios_base stores formatting information, which consists of:
 
 - Two extensible arrays, with elements of type **long** and **void** pointer.
 
-An object of class ios_base also stores stream state information, in an object of type [iostate](#iostate), and a callback stack.
+An object of class ios_base also stores stream state information, in an object of type [`iostate`](#iostate), and a callback stack.
 
 ## Members
 
@@ -38,8 +38,8 @@ An object of class ios_base also stores stream state information, in an object o
 |||
 |-|-|
 |[event_callback](#event_callback)|Describes a function passed to [register_call](#register_callback).|
-|[fmtflags](#fmtflags)|Constants to specify the appearance of output.|
-|[iostate](#iostate)|Defines constants describing the state of a stream.|
+|[`fmtflags`](#fmtflags)|Constants to specify the appearance of output.|
+|[`iostate`](#iostate)|Defines constants describing the state of a stream.|
 |[openmode](#openmode)|Describes how to interact with a stream.|
 |[seekdir](#seekdir)|Specifies starting point for offset operations.|
 
@@ -89,17 +89,17 @@ An object of class ios_base also stores stream state information, in an object o
 
 |||
 |-|-|
-|[failure](#failure)|The member class serves as the base class for all exceptions thrown by the member function [clear](../standard-library/basic-ios-class.md#clear) in template class [basic_ios](../standard-library/basic-ios-class.md).|
+|[failure](#failure)|The member class serves as the base class for all exceptions thrown by the member function [clear](../standard-library/basic-ios-class.md#clear) in class template [basic_ios](../standard-library/basic-ios-class.md).|
 |[flags](#flags)|Sets or returns the current flag settings.|
 |[getloc](#getloc)|Returns the stored locale object.|
 |[imbue](#imbue)|Changes the locale.|
-|[Init](#init)|Creates the standard iostream objects when constructed.|
+|[Init](#init)|Creates the standard `iostream` objects when constructed.|
 |[iword](#iword)|Assigns a value to be stored as an `iword`.|
 |[precision](#precision)|Specifies the number of digits to display in a floating-point number.|
 |[pword](#pword)|Assigns a value to be stored as a `pword`.|
 |[register_callback](#register_callback)|Specifies a callback function.|
 |[setf](#setf)|Sets the specified flags.|
-|[sync_with_stdio](#sync_with_stdio)|Ensures that iostream and C run-time library operations occur in the order that they appear in source code.|
+|[sync_with_stdio](#sync_with_stdio)|Ensures that `iostream` and C run-time library operations occur in the order that they appear in source code.|
 |[unsetf](#unsetf)|Causes the specified flags to be off.|
 |[width](#width)|Sets the length of the output stream.|
 |[xalloc](#xalloc)|Specifies that a variable shall be part of the stream.|
@@ -313,7 +313,7 @@ The type is a bitmask type that describes an object that can store format flags.
 
 - `showbase`, to insert a prefix that reveals the base of a generated integer field.
 
-- `internal`, to pad to a field width as needed by inserting fill characters at a point internal to a generated numeric field. (For information on setting the field width, see [setw](../standard-library/iomanip-functions.md#setw)).
+- `internal`, to pad to a field width as needed by inserting fill characters at a point internal to a generated numeric field. (For information on setting the field width, see [`setw`](../standard-library/iomanip-functions.md#setw)).
 
 - `left`, to pad to a field width as needed by inserting fill characters at the end of a generated field (left justification).
 
@@ -402,7 +402,7 @@ See [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue) for a sampl
 
 ## <a name="init"></a> Init
 
-Creates the standard iostream objects when constructed.
+Creates the standard `iostream` objects when constructed.
 
 ```cpp
 class Init { };
@@ -410,7 +410,7 @@ class Init { };
 
 ### Remarks
 
-The nested class describes an object whose construction ensures that the standard iostreams objects are properly constructed, even before the execution of a constructor for an arbitrary static object.
+The nested class describes an object whose construction ensures that the standard `iostream` objects are properly constructed, even before the execution of a constructor for an arbitrary static object.
 
 ## <a name="ios_base"></a> ios_base
 
@@ -422,7 +422,7 @@ ios_base();
 
 ### Remarks
 
-The (protected) constructor does nothing. A later call to **basic_ios::**[init](../standard-library/basic-ios-class.md#init) must initialize the object before it can be safely destroyed. Thus, the only safe use for class ios_base is as a base class for template class [basic_ios](../standard-library/basic-ios-class.md).
+The (protected) constructor does nothing. A later call to `basic_ios::`[init](../standard-library/basic-ios-class.md#init) must initialize the object before it can be safely destroyed. Thus, the only safe use for class ios_base is as a base class for class template [basic_ios](../standard-library/basic-ios-class.md).
 
 ## <a name="iostate"></a> iostate
 
@@ -467,15 +467,15 @@ The index of the value to store as an `iword`.
 
 ### Remarks
 
-The member function returns a reference to element *idx* of the extensible array with elements of type **long**. All elements are effectively present and initially store the value zero. The returned reference is invalid after the next call to `iword` for the object, after the object is altered by a call to **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt), or after the object is destroyed.
+The member function returns a reference to element *idx* of the extensible array with elements of type **long**. All elements are effectively present and initially store the value zero. The returned reference is invalid after the next call to `iword` for the object, after the object is altered by a call to `basic_ios::`[copyfmt](../standard-library/basic-ios-class.md#copyfmt), or after the object is destroyed.
 
-If *idx* is negative or if unique storage is unavailable for the element, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** and returns a reference that might not be unique.
+If *idx* is negative or if unique storage is unavailable for the element, the function calls [`setstate`](../standard-library/basic-ios-class.md#setstate)`(badbit)` and returns a reference that might not be unique.
 
-To obtain a unique index, for use across all objects of type `ios_base`, call [xalloc](#xalloc).
+To obtain a unique index, for use across all objects of type `ios_base`, call [`xalloc`](#xalloc).
 
 ### Example
 
-See [xalloc](#xalloc) for a sample of how to use `iword`.
+See [`xalloc`](#xalloc) for a sample of how to use `iword`.
 
 ## <a name="openmode"></a> openmode
 
@@ -495,7 +495,7 @@ public:
 
 ### Remarks
 
-The type is a `bitmask type` that describes an object that can store the opening mode for several iostreams objects. The distinct flag values (elements) are:
+The type is a `bitmask type` that describes an object that can store the opening mode for several `iostream` objects. The distinct flag values (elements) are:
 
 - `app`, to seek to the end of a stream before each insertion.
 
@@ -601,25 +601,25 @@ int main( )
 Assigns a value to be stored as a `pword`.
 
 ```cpp
-void *& pword(int _Idx);
+void *& pword(int index);
 ```
 
 ### Parameters
 
-*_Idx*\
+*index*\
 The index of the value to store as a `pword`.
 
 ### Remarks
 
-The member function returns a reference to element _ *Idx* of the extensible array with elements of type **void** pointer. All elements are effectively present and initially store the null pointer. The returned reference is invalid after the next call to `pword` for the object, after the object is altered by a call to **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt), or after the object is destroyed.
+The member function returns a reference to element *index* of the extensible array with elements of type **void** pointer. All elements are effectively present and initially store the null pointer. The returned reference is invalid after the next call to `pword` for the object, after the object is altered by a call to `basic_ios::`[copyfmt](../standard-library/basic-ios-class.md#copyfmt), or after the object is destroyed.
 
-If _ *Idx* is negative, or if unique storage is unavailable for the element, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** and returns a reference that might not be unique.
+If *index* is negative, or if unique storage is unavailable for the element, the function calls [`setstate`](../standard-library/basic-ios-class.md#setstate)`(badbit)` and returns a reference that might not be unique.
 
-To obtain a unique index, for use across all objects of type `ios_base`, call [xalloc](#xalloc).
+To obtain a unique index, for use across all objects of type `ios_base`, call [`xalloc`](#xalloc).
 
 ### Example
 
-See [xalloc](#xalloc) for an example of using `pword`.
+See [`xalloc`](#xalloc) for an example of using `pword`.
 
 ## <a name="register_callback"></a> register_callback
 
@@ -748,7 +748,7 @@ namespace std {
 
 ### Remarks
 
-The type is an enumerated type that describes an object that can store the seek mode used as an argument to the member functions of several iostream classes. The distinct flag values are:
+The type is an enumerated type that describes an object that can store the seek mode used as an argument to the member functions of several `iostream` classes. The distinct flag values are:
 
 - `beg`,
     to seek (alter the current read or write position) relative to the beginning of a sequence (array,
@@ -811,7 +811,7 @@ The previous format flags
 
 ### Remarks
 
-The first member function effectively calls [flags](#flags)( *\_Mask* &#124; *\_Flags*) (set selected bits) and then returns the previous format flags. The second member function effectively calls `flags(_Mask & fmtfl, flags & ~_Mask)` (replace selected bits under a mask) and then returns the previous format flags.
+The first member function effectively calls [flags](#flags)`(_Mask | _Flags)` (set selected bits) and then returns the previous format flags. The second member function effectively calls `flags(_Mask & fmtfl, flags & ~_Mask)` (replace selected bits under a mask) and then returns the previous format flags.
 
 ### Example
 
@@ -839,7 +839,7 @@ int main( )
 
 ## <a name="sync_with_stdio"></a> sync_with_stdio
 
-Ensures that iostream and C run-time library operations occur in the order that they appear in source code.
+Ensures that `iostream` and C run-time library operations occur in the order that they appear in source code.
 
 ```cpp
 static bool sync_with_stdio(
@@ -858,7 +858,7 @@ Previous setting for this function.
 
 ### Remarks
 
-The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
+The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [`iostreams`](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
 
 ## <a name="unsetf"></a> unsetf
 
@@ -942,7 +942,7 @@ The static member function returns a stored static value, which it increments on
 
 ### Remarks
 
-You can use the return value as a unique index argument when calling the member functions [iword](#iword) or [pword](#pword).
+You can use the return value as a unique index argument when calling the member functions [`iword`](#iword) or [`pword`](#pword).
 
 ### Example
 

@@ -7,7 +7,7 @@ ms.assetid: 10e1eaea-ba5a-405c-a25e-7bdd3eee7fc7
 ---
 # indirect_array Class
 
-An internal, auxiliary template class that supports objects that are subsets of valarrays by providing operations between subset arrays defined by specifying a subset of indices of a parent valarray.
+An internal, auxiliary class template that supports objects that are subsets of valarrays by providing operations between subset arrays defined by specifying a subset of indices of a parent valarray.
 
 ## Syntax
 

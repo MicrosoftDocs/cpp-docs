@@ -17,7 +17,7 @@ A CLR type requires CLR operators, not native (or standard) operators.  For more
 
 The following sample generates C3072.
 
-```
+```cpp
 // C3072.cpp
 // compile with: /clr
 ref class R {};

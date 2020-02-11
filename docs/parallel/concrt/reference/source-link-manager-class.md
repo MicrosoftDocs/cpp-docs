@@ -11,12 +11,12 @@ The `source_link_manager` object manages messaging block network links to `ISour
 
 ## Syntax
 
-```
+```cpp
 template<class _LinkRegistry>
 class source_link_manager;
 ```
 
-#### Parameters
+### Parameters
 
 *_LinkRegistry*<br/>
 The network link registry.
@@ -67,11 +67,11 @@ Currently, the source blocks are reference counted. This is a wrapper on a `netw
 
 **Namespace:** concurrency
 
-##  <a name="add"></a> add
+## <a name="add"></a> add
 
 Adds a source link to the `source_link_manager` object.
 
-```
+```cpp
 void add(_EType _Link);
 ```
 
@@ -80,11 +80,11 @@ void add(_EType _Link);
 *_Link*<br/>
 A pointer to a block to be added.
 
-##  <a name="begin"></a> begin
+## <a name="begin"></a> begin
 
 Returns an iterator to the first element in the `source_link_manager` object.
 
-```
+```cpp
 iterator begin();
 ```
 
@@ -96,11 +96,11 @@ An iterator addressing the first element in the `source_link_manager` object.
 
 The end state of the iterator is indicated by a `NULL` link.
 
-##  <a name="contains"></a> contains
+## <a name="contains"></a> contains
 
 Searches the `network_link_registry` within this `source_link_manager` object for a specified block.
 
-```
+```cpp
 bool contains(_EType _Link);
 ```
 
@@ -113,11 +113,11 @@ A pointer to a block that is to be searched for in the `source_link_manager` obj
 
 **true** if the specified block was found, **false** otherwise.
 
-##  <a name="count"></a> count
+## <a name="count"></a> count
 
 Counts the number of linked blocks in the `source_link_manager` object.
 
-```
+```cpp
 size_t count();
 ```
 
@@ -125,19 +125,19 @@ size_t count();
 
 The number of linked blocks in the `source_link_manager` object.
 
-##  <a name="reference"></a> reference
+## <a name="reference"></a> reference
 
 Acquires a reference on the `source_link_manager` object.
 
-```
+```cpp
 void reference();
 ```
 
-##  <a name="register_target_block"></a> register_target_block
+## <a name="register_target_block"></a> register_target_block
 
 Registers the target block that holds this `source_link_manager` object.
 
-```
+```cpp
 void register_target_block(_Inout_ ITarget<typename _Block::source_type>* _PTarget);
 ```
 
@@ -146,19 +146,19 @@ void register_target_block(_Inout_ ITarget<typename _Block::source_type>* _PTarg
 *_PTarget*<br/>
 The target block holding this `source_link_manager` object.
 
-##  <a name="release"></a> release
+## <a name="release"></a> release
 
 Releases the reference on the `source_link_manager` object.
 
-```
+```cpp
 void release();
 ```
 
-##  <a name="remove"></a> remove
+## <a name="remove"></a> remove
 
 Removes a link from the `source_link_manager` object.
 
-```
+```cpp
 bool remove(_EType _Link);
 ```
 
@@ -171,11 +171,11 @@ A pointer to a block to be removed, if found.
 
 **true** if the link was found and removed, **false** otherwise.
 
-##  <a name="set_bound"></a> set_bound
+## <a name="set_bound"></a> set_bound
 
 Sets the maximum number of source links that can be added to this `source_link_manager` object.
 
-```
+```cpp
 void set_bound(size_t _MaxLinks);
 ```
 
@@ -184,19 +184,19 @@ void set_bound(size_t _MaxLinks);
 *_MaxLinks*<br/>
 The maximum number of links.
 
-##  <a name="ctor"></a> source_link_manager
+## <a name="ctor"></a> source_link_manager
 
 Constructs a `source_link_manager` object.
 
-```
+```cpp
 source_link_manager();
 ```
 
-##  <a name="dtor"></a> ~source_link_manager
+## <a name="dtor"></a> ~source_link_manager
 
 Destroys the `source_link_manager` object.
 
-```
+```cpp
 ~source_link_manager();
 ```
 

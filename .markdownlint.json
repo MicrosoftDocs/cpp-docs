@@ -1,0 +1,12 @@
+{
+    "default": true,
+    "MD002": false,
+    "DOCSMD006": false,
+    "MD013": false,
+    "MD024": { "siblings_only": true },
+    "MD025": { "front_matter_title": "" },
+    "MD026": false,
+    "MD028": false,
+    "MD038": false,
+    "MD033": { "allowed_elements": ["a", "br", "em", "strong", "sub", "sup"] }
+}

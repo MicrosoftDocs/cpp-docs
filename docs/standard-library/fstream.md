@@ -32,10 +32,10 @@ Defines several classes that support iostreams operations on sequences stored in
 
 |Class|Description|
 |-|-|
-|[basic_filebuf](../standard-library/basic-filebuf-class.md)|The template class describes a stream buffer that controls the transmission of elements of type `Elem`, whose character traits are determined by the class `Tr`, to and from a sequence of elements stored in an external file.|
-|[basic_fstream](../standard-library/basic-fstream-class.md)|The template class describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**, **Tr**>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.|
-|[basic_ifstream](../standard-library/basic-ifstream-class.md)|The template class describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**, **Tr**>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.|
-|[basic_ofstream](../standard-library/basic-ofstream-class.md)|The template class describes an object that controls insertion of elements and encoded objects into a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**, **Tr**>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.|
+|[basic_filebuf](../standard-library/basic-filebuf-class.md)|The class template describes a stream buffer that controls the transmission of elements of type `Elem`, whose character traits are determined by the class `Tr`, to and from a sequence of elements stored in an external file.|
+|[basic_fstream](../standard-library/basic-fstream-class.md)|The class template describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**, **Tr**>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.|
+|[basic_ifstream](../standard-library/basic-ifstream-class.md)|The class template describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**, **Tr**>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.|
+|[basic_ofstream](../standard-library/basic-ofstream-class.md)|The class template describes an object that controls insertion of elements and encoded objects into a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**, **Tr**>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.|
 
 ## See also
 

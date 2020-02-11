@@ -15,7 +15,7 @@ For a list of the operators that you can define in a managed type, see [User-def
 
 The following sample generates C2833:
 
-```
+```cpp
 // C2833.cpp
 // compile with: /c
 class A {};

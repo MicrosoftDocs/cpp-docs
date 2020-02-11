@@ -13,7 +13,7 @@ Certain kinds of data members, for example [literal](../../extensions/literal-cp
 
 The following sample generates C3895:
 
-```
+```cpp
 // C3895.cpp
 // compile with: /clr
 ref struct Y1 {

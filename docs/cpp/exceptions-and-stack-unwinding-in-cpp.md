@@ -1,6 +1,6 @@
 ---
-title: "Exceptions and Stack Unwinding in C++"
-ms.date: "11/04/2016"
+title: "Exceptions and stack unwinding in C++"
+ms.date: "11/19/2019"
 ms.assetid: a1a57eae-5fc5-4c49-824f-3ce2eb8129ed
 ---
 # Exceptions and Stack Unwinding in C++
@@ -17,7 +17,7 @@ In the C++ exception mechanism, control moves from the throw statement to the fi
 
 1. If a matching **catch** handler is found, and it catches by value, its formal parameter is initialized by copying the exception object. If it catches by reference, the parameter is initialized to refer to the exception object. After the formal parameter is initialized, the process of unwinding the stack begins. This involves the destruction of all automatic objects that were fully constructed—but not yet destructed—between the beginning of the **try** block that is associated with the **catch** handler and the throw site of the exception. Destruction occurs in reverse order of construction. The **catch** handler is executed and the program resumes execution after the last handler—that is, at the first statement or construct that is not a **catch** handler. Control can only enter a **catch** handler through a thrown exception, never through a **goto** statement or a **case** label in a **switch** statement.
 
-## Stack Unwinding Example
+## Stack unwinding example
 
 The following example demonstrates how the stack is unwound when an exception is thrown. Execution on the thread jumps from the throw statement in `C` to the catch statement in `main`, and unwinds each function along the way. Notice the order in which the `Dummy` objects are created and then destroyed as they go out of scope. Also notice that no function completes except `main`, which contains the catch statement. Function `A` never returns from its call to `B()`, and `B` never returns from its call to `C()`. If you uncomment the definition of the `Dummy` pointer and the corresponding delete statement, and then run the program, notice that the pointer is never deleted. This shows what can happen when functions do not provide an exception guarantee. For more information, see How to: Design for Exceptions. If you comment out the catch statement, you can observe what happens when a program terminates because of an unhandled exception.
 

@@ -13,7 +13,7 @@ The compiler detected an operator definition using the Managed Extensions for C+
 
 The following sample generates C3195 and shows how to fix it:
 
-```
+```cpp
 // C3195.cpp
 // compile with: /clr /LD
 #using <mscorlib.dll>

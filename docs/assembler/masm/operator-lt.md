@@ -1,6 +1,6 @@
 ---
 title: "operator LT"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["LT", "operator LT"]
 helpviewer_keywords: ["LT operator", "operator LT"]
 ms.assetid: 6a7b43cc-2f38-49e9-b42e-8e5b5c41b965
@@ -11,8 +11,9 @@ Returns true (-1) if *expression1* is less than *expression2*, or returns false 
 
 ## Syntax
 
-> expression1 LT expression2
+> *expression1* **LT** *expression2*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

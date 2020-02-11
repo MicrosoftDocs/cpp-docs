@@ -17,7 +17,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 The following sample generates C3133.
 
-```
+```cpp
 // C3133.cpp
 // compile with: /clr /c
 ref struct MyAttr: System::Attribute {};

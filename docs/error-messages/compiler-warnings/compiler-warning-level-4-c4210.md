@@ -11,7 +11,7 @@ nonstandard extension used : function given file scope
 
 With the default Microsoft extensions ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)), function declarations have file scope.
 
-```
+```c
 // C4210.c
 // compile with: /W4 /c
 void func1()

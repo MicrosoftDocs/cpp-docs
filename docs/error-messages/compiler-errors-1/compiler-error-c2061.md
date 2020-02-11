@@ -17,7 +17,7 @@ This error could also be caused when the compiler detects an expression as a cla
 
 The following sample generates C2061:
 
-```
+```cpp
 // C2061.cpp
 // compile with: /c
 template < A a >   // C2061
@@ -28,7 +28,7 @@ class c{};
 
 C2061 can occur if you pass an instance name to [typeid](../../extensions/typeid-cpp-component-extensions.md):
 
-```
+```cpp
 // C2061b.cpp
 // compile with: /clr
 ref struct G {

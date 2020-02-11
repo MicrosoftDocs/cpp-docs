@@ -13,7 +13,7 @@ An array must have a constant bound.
 
 The following sample generates C2540:
 
-```
+```cpp
 // C2540.cpp
 void func(int n, int pC[]) {
    int i = ((int [n])pC)[1];   // C2540

@@ -15,17 +15,11 @@ Linux projects are supported in Visual Studio 2017 and later.
 
 ::: moniker range=">=vs-2017"
 
-You can use the Visual Studio IDE in Windows to create, edit and debug C++ projects that execute on a Linux physical computer, virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about). 
+You can use the Visual Studio IDE on Windows to create, edit and debug C++ projects that execute on a remote Linux system, virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about). 
 
-You can work on your existing code base that uses CMake or any other build system without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio. For example, you can edit, debug and profile your code on Windows using Visual Studio, then quickly retarget the project for Linux to do further testing. The Linux header files are automatically copied to your local machine where Visual Studio uses them to provide full IntelliSense support (Statement Completion, Go to Definition, and so on). 
+You can work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio. For example, you can edit, build, and debug your code on Windows using Visual Studio, then quickly retarget the project for Linux to build and debug in a Linux environment. Linux header files are automatically copied to your local machine, where Visual Studio uses them to provide full IntelliSense support (Statement Completion, Go to Definition, and so on). 
  
 For any of these scenarios, the **Linux development with C++** workload is required. 
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-In Visual Studio 2019 you can specify separate targets for building and debugging. When targeting WSL, it is no longer necessary to add a remote connection or configure SSH.
 
 ::: moniker-end
 
@@ -41,7 +35,7 @@ In Visual Studio 2019 you can specify separate targets for building and debuggin
 
    ![Visual C++ for Linux Development workload](media/linuxworkload.png)
 
-1. If you are targeting IoT or embedded platforms, go to the **Installation details** pane on the right, under **Linux development with C++**, expand **Optional Components** and choose the components you need. CMake support for Linux is selected by default.
+1. If you are targeting IoT or embedded platforms, go to the **Installation details** pane on the right. Under **Linux development with C++**, expand **Optional Components**, and choose the components you need. CMake support for Linux is selected by default.
 
 1. Click **Modify** to continue with the installation.
 
@@ -49,7 +43,35 @@ In Visual Studio 2019 you can specify separate targets for building and debuggin
 
 If you don't already have a Linux machine, you can create a Linux Virtual Machine on Azure. For more information, see [Quickstart: Create a Linux virtual machine in the Azure portal](/azure/virtual-machines/linux/quick-create-portal).
 
-On Windows 10, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10). WSL is a convenient console environment but is not recommended for graphical applications. 
+On Windows 10, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10). If you're unable to access the Windows Store, you can [manually download the WSL distro packages](/windows/wsl/install-manual). WSL is a convenient console environment, but is not recommended for graphical applications.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL:
+
+- **A compiler** - Visual Studio 2019 has out-of-the-box support for GCC and [Clang](/cpp/build/clang-support-cmake?view=vs-2019).
+- **gdb** - Visual Studio automatically launches gdb on the Linux system, and uses the front-end of the Visual Studio debugger to provide a full-fidelity debugging experience on Linux.
+- **rsync** and **zip** - the inclusion of rsync and zip allows Visual Studio to extract header files from your Linux system to the Windows filesystem for use by IntelliSense.
+- **make**
+- **openssh-server** (remote Linux systems only) - Visual Studio connects to remote Linux systems over a secure SSH connection.
+- **CMake** (CMake projects only) - You can install Microsoft's [statically linked CMake binaries for Linux](https://github.com/microsoft/CMake/releases).
+
+The following commands assume you are using g++ instead of clang.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL:
+
+- **gcc** - Visual Studio 2017 has out-of-the-box support for GCC.
+- **gdb** - Visual Studio automatically launches gdb on the Linux system and uses the front-end of the Visual Studio debugger to provide a full-fidelity debugging experience on Linux.
+- **rsync** and **zip** - the inclusion of rsync and zip allows Visual Studio to extract header files from your Linux system to the Windows filesystem to use for IntelliSense.
+- **make**
+- **openssh-server** - Visual Studio connects to remote Linux systems over a secure SSH connection.
+- **CMake** (CMake projects only) - You can install Microsoft's [statically linked CMake binaries for Linux](https://github.com/microsoft/CMake/releases).
 
 ::: moniker-end
 
@@ -62,18 +84,19 @@ When you are targeting WSL, there is no need to add a remote connection or confi
 ```bash
 sudo apt-get install g++ gdb make rsync zip
 ```
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
 ## Ubuntu on remote Linux systems
 
-The target Linux system must have **openssh-server**, **g++**, **gdb**, and **gdbserver** installed, and the ssh daemon must be running. **zip** is required for automatic syncing of remote headers with your local machine for Intellisense support. If these applications are not already present, you can install them as follows:
+The target Linux system must have **openssh-server**, **g++**, **gdb**, and **make** installed, and the ssh daemon must be running. **zip** and **rsync** are required for automatic syncing of remote headers with your local machine for Intellisense support. If these applications are not already present, you can install them as follows:
 
 1. At a shell prompt on your Linux computer, run:
 
    ```bash
-   sudo apt-get install openssh-server g++ gdb gdbserver zip
+   sudo apt-get install openssh-server g++ gdb make rsync zip
    ```
 
    You may be prompted for your root password due to the sudo command.  If so, enter it and continue. Once complete, the required services and tools are installed.
@@ -83,6 +106,7 @@ The target Linux system must have **openssh-server**, **g++**, **gdb**, and **gd
    ```bash
    sudo service ssh start
    ```
+
    This starts the service and runs it in the background, ready to accept connections.
 
 ::: moniker-end
@@ -91,10 +115,10 @@ The target Linux system must have **openssh-server**, **g++**, **gdb**, and **gd
 
 ## Fedora on WSL
 
-Fedora uses the **dnf** package installer. To download **g++**, **gdb**, **rsync** and **zip**, run:
+Fedora uses the **dnf** package installer. To download **g++**, **gdb**, **make**, **rsync** and **zip**, run:
 
    ```bash
-   sudo dnf install gcc-g++ gdb rsync zip
+   sudo dnf install gcc-g++ gdb rsync make zip
    ```
 
 **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support.
@@ -105,13 +129,14 @@ Fedora uses the **dnf** package installer. To download **g++**, **gdb**, **rsync
 
 ## Fedora on remote Linux systems
 
-The target machine running Fedora uses the **dnf** package installer. To download **openssh-server**, **g++**, **gdb**, **gdbserver** and **zip**, and restart the ssh daemon, follow these instructions:
+The target machine running Fedora uses the **dnf** package installer. To download **openssh-server**, **g++**, **gdb**, **make**, **rsync**, and **zip**, and restart the ssh daemon, follow these instructions:
 
 1. At a shell prompt on your Linux computer, run:
 
    ```bash
-   sudo dnf install openssh-server gcc-g++ gdb gdb-gdbserver zip
+   sudo dnf install openssh-server gcc-g++ gdb make rsync zip
    ```
+
    You may be prompted for your root password due to the sudo command.  If so, enter it and continue. Once complete, the required services and tools are installed.
 
 1. Ensure the ssh service is running on your Linux computer by running:

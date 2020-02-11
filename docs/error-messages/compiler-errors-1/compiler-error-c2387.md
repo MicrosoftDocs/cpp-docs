@@ -15,7 +15,7 @@ To resolve this error, either remove one of the base classes from the inheritanc
 
 The following sample generates C2387:
 
-```
+```cpp
 // C2387.cpp
 namespace N1 {
    struct B {

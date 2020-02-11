@@ -13,7 +13,7 @@ A member was defined in code that is also defined in a referenced assembly.
 
 The following sample generates C3414:
 
-```
+```cpp
 // C3414a2.cpp
 // compile with: /clr /LD
 public ref class MyClass {
@@ -24,7 +24,7 @@ public:
 
 and then:
 
-```
+```cpp
 // C3414b2.cpp
 // compile with: /clr
 #using <C3414a2.dll>

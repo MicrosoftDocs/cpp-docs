@@ -25,7 +25,7 @@ The macro identifier is defined twice. The compiler uses the second macro defini
 
 The following sample generates C4005:
 
-```
+```cpp
 // C4005.cpp
 // compile with: /W1 /EHsc
 #include <iostream>

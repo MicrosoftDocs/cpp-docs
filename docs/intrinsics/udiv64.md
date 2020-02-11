@@ -6,7 +6,7 @@ helpviewer_keywords: ["_udiv64 intrinsic"]
 ---
 # _udiv64
 
-The `_udiv64` intrinsic divides a 64-bit unsigned integer by a 32-bit unsigned integer. The return value holds the quotient, and the intrinsic returns the remainder through a pointer parameter. `_udiv64` is **Microsoft specific**.
+The `_udiv64` intrinsic divides a 64-bit unsigned integer by a 32-bit unsigned integer. The return value holds the quotient, and the intrinsic returns the remainder through a pointer parameter. `_udiv64` is **Microsoft-specific**.
 
 ## Syntax
 

@@ -13,7 +13,7 @@ You declared an interface in a non-COM context.
 
 The following sample generates C3719:
 
-```
+```cpp
 // C3719a.cpp
 #define _ATL_ATTRIBUTES 1
 #include "atlbase.h"
@@ -40,7 +40,7 @@ int main() {
 
 To fix this error, apply the [object](../../windows/object-cpp.md), [coclass](../../windows/coclass.md), [event_source](../../windows/event-source.md), and [event_receiver](../../windows/event-receiver.md) attributes appropriately to make the classes in which you are using the interface COM classes. For example:
 
-```
+```cpp
 // C3719b.cpp
 #define _ATL_ATTRIBUTES 1
 #include <atlbase.h>

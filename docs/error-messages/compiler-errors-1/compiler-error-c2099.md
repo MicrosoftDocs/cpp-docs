@@ -15,7 +15,7 @@ This error is issued only by the C compiler and occurs only for non-automatic va
 
 The following sample generates C2099.
 
-```
+```c
 // C2099.c
 int j;
 int *p;
@@ -34,7 +34,7 @@ For more information, see [/fp (Specify Floating-Point Behavior)](../../build/re
 
 The following sample generates C2099.
 
-```
+```c
 // C2099_2.c
 // compile with: /fp:strict /c
 float X = 2.0 - 1.0;   // C2099

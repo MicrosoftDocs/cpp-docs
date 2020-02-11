@@ -9,12 +9,12 @@ ms.assetid: 9aba278c-e0c9-4ede-b7c6-fedf7a365d90
 The topics in this part of the documentation describe the important features of the Concurrency Runtime Task Scheduler. The Task Scheduler is useful when you want fine-tune the performance of your existing code that uses the Concurrency Runtime.
 
 > [!IMPORTANT]
->  The Task Scheduler is not available from a Universal Windows Platform (UWP) app. For more information, see [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
+> The Task Scheduler is not available from a Universal Windows Platform (UWP) app. For more information, see [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
 >
->  In Visual Studio 2015 and later, the [concurrency::task](../../parallel/concrt/reference/task-class.md) class and related types in ppltasks.h use the Windows ThreadPool as their scheduler. This topic no longer applies to types that are defined in ppltasks.h. Parallel algorithms such as parallel_for continue to use the Concurrency Runtime as the default scheduler.
+> In Visual Studio 2015 and later, the [concurrency::task](../../parallel/concrt/reference/task-class.md) class and related types in ppltasks.h use the Windows ThreadPool as their scheduler. This topic no longer applies to types that are defined in ppltasks.h. Parallel algorithms such as parallel_for continue to use the Concurrency Runtime as the default scheduler.
 
 > [!TIP]
->  The Concurrency Runtime provides a default scheduler, and therefore you are not required to create one in your application. Because the Task Scheduler helps you fine-tune the performance of your applications, we recommend that you start with the [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) if you are new to the Concurrency Runtime.
+> The Concurrency Runtime provides a default scheduler, and therefore you are not required to create one in your application. Because the Task Scheduler helps you fine-tune the performance of your applications, we recommend that you start with the [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) if you are new to the Concurrency Runtime.
 
 The Task Scheduler schedules and coordinates tasks at run time. A *task* is a unit of work that performs a specific job. A task can typically run in parallel with other tasks. The work that is performed by task group items, parallel algorithms, and asynchronous agents are all examples of tasks.
 

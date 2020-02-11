@@ -1,6 +1,6 @@
 ---
 title: "CCmdUI Class"
-ms.date: "11/04/2016"
+ms.date: "09/06/2019"
 f1_keywords: ["CCmdUI", "AFXWIN/CCmdUI", "AFXWIN/CCmdUI::ContinueRouting", "AFXWIN/CCmdUI::Enable", "AFXWIN/CCmdUI::SetCheck", "AFXWIN/CCmdUI::SetRadio", "AFXWIN/CCmdUI::SetText", "AFXWIN/CCmdUI::m_nID", "AFXWIN/CCmdUI::m_nIndex", "AFXWIN/CCmdUI::m_pMenu", "AFXWIN/CCmdUI::m_pOther", "AFXWIN/CCmdUI::m_pSubMenu"]
 helpviewer_keywords: ["CCmdUI [MFC], ContinueRouting", "CCmdUI [MFC], Enable", "CCmdUI [MFC], SetCheck", "CCmdUI [MFC], SetRadio", "CCmdUI [MFC], SetText", "CCmdUI [MFC], m_nID", "CCmdUI [MFC], m_nIndex", "CCmdUI [MFC], m_pMenu", "CCmdUI [MFC], m_pOther", "CCmdUI [MFC], m_pSubMenu"]
 ms.assetid: 04eaaaf5-f510-48ab-b425-94665ba24766
@@ -41,7 +41,7 @@ class CCmdUI
 
 `CCmdUI` does not have a base class.
 
-When a user of your application pulls down a menu, each menu item needs to know whether it should be displayed as enabled or disabled. The target of a menu command provides this information by implementing an ON_UPDATE_COMMAND_UI handler. For each of the command user-interface objects in your application, use the Properties window to create a message-map entry and function prototype for each handler.
+When a user of your application pulls down a menu, each menu item needs to know whether it should be displayed as enabled or disabled. The target of a menu command provides this information by implementing an ON_UPDATE_COMMAND_UI handler. For each of the command user-interface objects in your application, use the [Class Wizard](mfc-class-wizard.md) or **Properties** window (in **Class View**) to create a message-map entry and function prototype for each handler.
 
 When the menu is pulled down, the framework searches for and calls each ON_UPDATE_COMMAND_UI handler, each handler calls `CCmdUI` member functions such as `Enable` and `Check`, and the framework then appropriately displays each menu item.
 

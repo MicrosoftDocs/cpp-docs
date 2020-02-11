@@ -13,7 +13,7 @@ The event source and event receiver must have the same type (for example `native
 
 The following sample generates C3731:
 
-```
+```cpp
 // C3731.cpp
 // compile with: /clr
 #using <mscorlib.dll>

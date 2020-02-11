@@ -26,7 +26,7 @@ If you choose to manually edit a .vcxproj file, be aware of these facts:
    <ClCompile Include="$(IntDir)\generated.cpp"/>
    ```
 
-   "Not supported" means that macros are not guaranteed to work for all operations in the IDE. Macros which don’t change their value in different configurations should work, but might not be preserved if an item is moved to a different filter or project. Macros which change their value for different configurations will cause problems because the IDE doesn't expect project item paths to be different for different project configurations.
+   "Not supported" means that macros are not guaranteed to work for all operations in the IDE. Macros which don't change their value in different configurations should work, but might not be preserved if an item is moved to a different filter or project. Macros which change their value for different configurations will cause problems because the IDE doesn't expect project item paths to be different for different project configurations.
 
 1. In order to have project properties correctly added, removed, or modified when edited in the **Project Properties** dialog, the file must contain separate groups for each project configuration, and the conditions must be in this form:
 
@@ -48,7 +48,7 @@ The first thing to notice is that the top-level elements appear in a particular 
 
 - There are multiple property groups, each with a unique label, and they occur in a particular order.
 
-The order of elements in the project file is very important, because MSBuild is based on a sequential evaluation model.  If your project file, including all the imported .props and .targets files, consists of multiple definitions of a property, the last definition overrides the preceding ones. In the following example, the value "xyz” will be set during compilation because the MSBUild engine encounters it last during its evaluation.
+The order of elements in the project file is very important, because MSBuild is based on a sequential evaluation model.  If your project file, including all the imported .props and .targets files, consists of multiple definitions of a property, the last definition overrides the preceding ones. In the following example, the value "xyz" will be set during compilation because the MSBUild engine encounters it last during its evaluation.
 
 ```xml
   <MyProperty>abc</MyProperty>
@@ -146,8 +146,8 @@ The **Microsoft.Cpp.default.props** property sheet comes with Visual Studio and 
 <PropertyGroup Label="Configuration" />
 ```
 
-A `Configuration` property group has an attached configuration condition (such as `Condition=”'$(Configuration)|$(Platform)'=='Debug|Win32'”`) and comes in multiple copies, one per configuration. This property group hosts the properties that are set for a specific configuration. Configuration properties include PlatformToolset and also control the inclusion of system property sheets in **Microsoft.Cpp.props**. For example, if you define the property `<CharacterSet>Unicode</CharacterSet>`, then the system property sheet **microsoft.Cpp.unicodesupport.props** will be included. If you inspect **Microsoft.Cpp.props**, you will see the line:
-`<Import Condition=”'$(CharacterSet)' == 'Unicode'”   Project=”$(VCTargetsPath)\microsoft.Cpp.unicodesupport.props”/>`.
+A `Configuration` property group has an attached configuration condition (such as `Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"`) and comes in multiple copies, one per configuration. This property group hosts the properties that are set for a specific configuration. Configuration properties include PlatformToolset and also control the inclusion of system property sheets in **Microsoft.Cpp.props**. For example, if you define the property `<CharacterSet>Unicode</CharacterSet>`, then the system property sheet **microsoft.Cpp.unicodesupport.props** will be included. If you inspect **Microsoft.Cpp.props**, you will see the line:
+`<Import Condition="'$(CharacterSet)' == 'Unicode'" Project="$(VCTargetsPath)\microsoft.Cpp.unicodesupport.props" />`.
 
 ### Microsoft.Cpp.props Import element
 
@@ -189,7 +189,7 @@ The `PropertySheets` group contains the imports for user property sheets. These 
 
 There are multiple instances of this property group, one per configuration for all project configurations. Each property group must have one configuration condition attached. If any configurations are missing, the **Project Properties** dialog won't work correctly. Unlike the property groups above, this one does not have a label. This group contains project configuration-level settings. These settings apply to all files that are part of the specified item group. Build customization item definition metadata is initialized here.
 
-This PropertyGroup must come after `<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />` and there must be no other PropertyGroup without a Label before it (otherwise Project Properties editing won’t work correctly).
+This PropertyGroup must come after `<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />` and there must be no other PropertyGroup without a Label before it (otherwise Project Properties editing won't work correctly).
 
 ### Per-configuration ItemDefinitionGroup elements
 
@@ -212,8 +212,8 @@ The metadata should have configuration conditions for each configuration, even i
 ```xml
 <ItemGroup>
   <ClCompile Include="stdafx.cpp">
-    <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
-    <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|x64’">true</TreatWarningAsError>
+    <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatWarningAsError>
+    <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatWarningAsError>
   </ClCompile>
 </ItemGroup>
 ```

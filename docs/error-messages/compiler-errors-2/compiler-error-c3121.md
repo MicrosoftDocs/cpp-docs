@@ -13,7 +13,7 @@ You attempted to change the class ID with [__declspec(uuid)](../../cpp/uuid-cpp.
 
 For example, the following code generates C3121:
 
-```
+```cpp
 // C3121.cpp
 [emitidl];
 [module(name="MyLibrary")];

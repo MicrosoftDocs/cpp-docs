@@ -24,14 +24,14 @@ These steps vary depending on which version of Visual Studio you are using. Make
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. In the search box at the top, type **MFC** and then choose **MFC App** from the results list. 
+1. In the search box at the top, type **MFC** and then choose **MFC App** from the results list.
 
 1. Click **Next**. In the next page, enter a name for the project, and specify the project location if desired.
 
 1. Choose the **Create** button to create the project.
 
    After **MFC Application Wizard** displays, use the following options:
- 
+
    1. Choose **Application Type** on the left. Then select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
 
    1. On the **Compound Document Support** pane, select **None**.
@@ -52,7 +52,7 @@ These steps vary depending on which version of Visual Studio you are using. Make
 
 1. Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.
 
-1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. 
+1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**.
 
    After **MFC Application Wizard** displays, use the following options:
 
@@ -123,7 +123,7 @@ The wizard automatically creates an application that has a standard menu bar, a 
 
 1. Now we update the `CMFCShellControlsView` class to handle the `WM_CREATE` windows message. Open the **Class View** window and select the `CMFCShellControlsView` class. Right-click and select **Properties**.
 
-   Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
+   Next, in [Class Wizard](reference/mfc-class-wizard.md), click the **Messages** tab. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
 
    In the `OnCreate` method, we'll now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:
 

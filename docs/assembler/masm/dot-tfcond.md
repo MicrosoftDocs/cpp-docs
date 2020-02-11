@@ -1,6 +1,6 @@
 ---
 title: ".TFCOND"
-ms.date: "08/30/2018"
+ms.date: "12/16/2019"
 f1_keywords: [".TFCOND"]
 helpviewer_keywords: [".TFCOND directive"]
 ms.assetid: e3c0fe44-bf68-4397-bf31-61995c69c4c2
@@ -11,8 +11,9 @@ Toggles listing of false conditional blocks.
 
 ## Syntax
 
-> .TFCOND
+> **.TFCOND**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

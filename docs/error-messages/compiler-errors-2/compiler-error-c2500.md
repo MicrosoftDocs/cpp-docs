@@ -17,7 +17,7 @@ A class cannot be specified as a direct base class more than once. A class can b
 
 The following sample generates C2500:
 
-```
+```cpp
 // C2500.cpp
 // compile with: /c
 class A {};

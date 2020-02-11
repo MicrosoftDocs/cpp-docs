@@ -15,7 +15,7 @@ A trivial property cannot be named `default`. See [property](../../extensions/pr
 
 The following sample generates C3291.
 
-```
+```cpp
 // C3291.cpp
 // compile with: /clr /c
 ref struct C {

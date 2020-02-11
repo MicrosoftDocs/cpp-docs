@@ -1,6 +1,6 @@
 ---
 title: "/Q Options (Low-Level Operations)"
-ms.date: "1/23/2018"
+ms.date: "01/08/2020"
 f1_keywords: ["/q"]
 helpviewer_keywords: ["Q compiler option [C++]", "-Q compiler option [C++]", "/Q compiler option [C++]"]
 ---
@@ -14,6 +14,8 @@ You can use the **/Q** compiler options to perform the following low-level compi
 
 - [/Qimprecise_fwaits (Remove fwaits Inside Try Blocks)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): Removes `fwait` commands inside `try` blocks.
 
+- [/QIntel-jcc-erratum](qintel-jcc-erratum.md): Mitigates the performance impact caused by the Intel Jump Conditional Code (JCC) erratum microcode update.
+
 - [/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md): Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive.
 
 - [/Qpar-report (Auto-Parallelizer Reporting Level)](qpar-report-auto-parallelizer-reporting-level.md): Enables reporting levels for automatic parallelization.
@@ -21,6 +23,10 @@ You can use the **/Q** compiler options to perform the following low-level compi
 - [/Qsafe_fp_loads](qsafe-fp-loads.md): Suppresses optimizations for floating-point register loads and for moves between memory and MMX registers.
 
 - [/Qspectre](qspectre.md): Generates instructions to mitigate certain Spectre security vulnerabilities.
+
+- [/Qspectre-load](qspectre-load.md): Generates instructions to mitigate Spectre security vulnerabilities based on loads.
+
+- [/Qspectre-load-cf](qspectre-load-cf.md): Generates instructions to mitigate Spectre security vulnerabilities based on control flow instructions which load.
 
 - [/Qvec-report (Auto-Vectorizer Reporting Level)](qvec-report-auto-vectorizer-reporting-level.md): Enables reporting levels for automatic vectorization.
 

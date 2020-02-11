@@ -17,7 +17,7 @@ For more information, see [Inheritance Keywords](../../cpp/inheritance-keywords.
 
 The following sample generates C2286:
 
-```
+```cpp
 // C2286.cpp
 // compile with: /c
 class __single_inheritance X;

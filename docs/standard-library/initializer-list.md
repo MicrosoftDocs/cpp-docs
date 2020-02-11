@@ -5,7 +5,7 @@ ms.assetid: 820b6448-fb01-49a4-aeaa-546ad7576ea4
 ---
 # &lt;initializer_list&gt;
 
-Defines the container template class `initializer_list` and several supporting templates.
+Defines the container class template `initializer_list` and several supporting templates.
 
 ## Syntax
 

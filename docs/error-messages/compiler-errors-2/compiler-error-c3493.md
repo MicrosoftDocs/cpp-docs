@@ -21,7 +21,7 @@ The empty lambda expression capture, `[]`, specifies that the lambda expression 
 
 The following example generates C3493 because it modifies an external variable but specifies the empty capture clause:
 
-```
+```cpp
 // C3493a.cpp
 
 int main()
@@ -35,7 +35,7 @@ int main()
 
 The following example resolves C3493 by specifying by-reference as the default capture mode.
 
-```
+```cpp
 // C3493b.cpp
 
 int main()

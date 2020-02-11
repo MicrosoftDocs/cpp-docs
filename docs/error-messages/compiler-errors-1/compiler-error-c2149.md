@@ -13,7 +13,7 @@ Bit fields can have zero width only if unnamed.
 
 The following sample generates C2149:
 
-```
+```cpp
 // C2149.cpp
 // compile with: /c
 struct C {

@@ -15,7 +15,7 @@ Instance (non-static) initonly data members can only be used as l-values at thei
 
 The following sample generates C3894:
 
-```
+```cpp
 // C3894.cpp
 // compile with: /clr
 ref struct Y1 {

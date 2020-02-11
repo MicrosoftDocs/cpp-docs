@@ -1,11 +1,13 @@
 ---
 title: "_CrtSetDebugFillThreshold"
-ms.date: "03/21/2018"
-apiname: ["_CrtSetDebugFillThreshold"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+description: "Use the _CrtSetDebugFillThreshold function to set the maximum amount of buffer to fill in secure CRT functions."
+ms.date: "10/31/2019"
+api_name: ["_CrtSetDebugFillThreshold"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_CrtSetDebugFillThreshold", "CrtSetDebugFillThreshold"]
-helpviewer_keywords: ["debug, buffer-filling behavior", "CrtSetDebugFillThreshold function", "_CrtSetDebugFillThreshold function", "buffer-filling behavior", "0xFD"]
+helpviewer_keywords: ["debug, buffer-filling behavior", "CrtSetDebugFillThreshold function", "_CrtSetDebugFillThreshold function", "buffer-filling behavior", "0xFE"]
 ms.assetid: 6cb360e8-56ae-4248-b17f-e28aee3e0ed7
 ---
 # _CrtSetDebugFillThreshold
@@ -29,11 +31,17 @@ The previous threshold value.
 
 ## Remarks
 
-The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **_CrtSetDebugFillThreshold** to disable buffer-filling for buffers larger than the *newThreshold* threshold. A *newThreshold* value of 0 disables it for all buffers.
+The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This fill character helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **_CrtSetDebugFillThreshold** to disable buffer-filling for buffers larger than the *newThreshold* threshold. A *newThreshold* value of 0 disables it for all buffers.
 
 The default threshold is **SIZE_T_MAX**.
 
 Here is a list of the affected functions.
+
+- [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)
+
+- [_cgets_s, _cgetws_s](cgets-s-cgetws-s.md)
+
+- [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)
 
 - [_ecvt_s](ecvt-s.md)
 
@@ -51,11 +59,15 @@ Here is a list of the affected functions.
 
 - [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md)
 
+- [_mktemp_s, _wmktemp_s](makepath-s-wmakepath-s.md)
+
 - [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md)
 
 - [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md)
 
 - [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)
+
+- [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md)
 
 - [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](strerror-s-strerror-s-wcserror-s-wcserror-s.md)
 
@@ -68,6 +80,8 @@ Here is a list of the affected functions.
 - [_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l](strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md)
 
 - [_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l](strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md)
+
+- [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md)
 
 - [_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l](strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md)
 

@@ -1,13 +1,13 @@
 ---
 title: "Porting to the Universal Windows Platform (C++)"
-ms.date: "11/04/2016"
+ms.date: "10/23/2019"
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
 ---
 # Porting to the Universal Windows Platform (C++)
 
-In this topic, you can find information on how to port existing C++ code to the Windows 10 app platform, the Universal Windows Platform. What is meant by the term *universal* is that your code can run on any of the devices that run Windows 10, including desktop, phone, tablets, and future devices that run Windows 10. You create a single project and a single XAML-base user interface that works well on any device that runs Windows 10. You can use dynamic layout features in XAML to allow the app's UI to adapt to different display sizes.
+In this topic, you can find information on how to port existing C++ code to the Windows 10 app platform, the Universal Windows Platform. What is meant by the term *universal* is that your code can run on any of the devices that run Windows 10. You create a single project and a single XAML-base user interface that works well on any device that runs Windows 10. You can use dynamic layout features in XAML to allow the app's UI to adapt to different display sizes.
 
-The Windows Dev Center documentation contains a guide for porting Windows 8.1 apps to the Universal Windows Platform. See [Move from Windows Runtime 8 to UWP](/windows/uwp/porting/w8x-to-uwp-root). Although the guide focuses mostly on C# code, most of the guidance is applicable to C++. The following procedures contain more detailed information.
+The Windows Dev Center documentation contains a guide for porting Windows 8.1 apps to the Universal Windows Platform. See [Move from Windows Runtime 8 to UWP](/windows/uwp/porting/w8x-to-uwp-root). Although the guide focuses mostly on C# code, most of the guidance is applicable to C++. The following procedures contain more detailed information. See also [Move from a desktop application to UWP](/windows/uwp/porting/desktop-to-uwp-migrate).
 
 This topic contains the following procedures for porting code to the UWP.
 
@@ -15,11 +15,11 @@ This topic contains the following procedures for porting code to the UWP.
 
 - [Porting a Windows 8.1 Runtime Component to the UWP](#BK_81Component)
 
-If you have a classic desktop Win32 DLL and you want to call it from a UWP application, you can do that as well. Using such procedures, you can create a UWP user interface layer for an existing classic Windows desktop C++ application, or your cross-platform standard C++ code. See [How to: Use Existing C++ Code in a Universal Windows Platform App](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
+If you have a classic desktop Win32 DLL and you want to call it from a UWP application, you can do that as well. Using such procedures, you can create a UWP user interface layer for an existing classic Windows desktop C++ application, or your cross-platform standard C++ code. See [How to: Use Existing C++ Code in a Universal Windows Platform App](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md). 
 
 ## <a name="BK_81StoreApp"></a> Porting a Windows 8.1 Store App to the UWP
 
-If you have a Windows 8.1 Store App, you can use this procedure to get it working on the UWP and any device that runs Windows 10.  It's a good idea to first build the project with Visual Studio 2017 as a Windows 8.1 project, to first eliminate any issues that arise from changes in the compiler and libraries. Once you've done that, there are two ways to convert this to a Windows 10 UWP project. The easiest way (as explained in the following procedure) is to create a Universal Windows project, and copy your existing code into it. If you were using a Universal project for Windows 8.1 desktop and Windows 8.1 Phone, your project will start with two different layouts in XAML but end with a single dynamic layout that adjusts to the display size.
+If you have a Windows 8.1 Store App, you can use this procedure to get it working on the UWP and any device that runs Windows 10.  It's a good idea to first build the project with Visual Studio 2019 as a Windows 8.1 project, to first eliminate any issues that arise from changes in the compiler and libraries. Once you've done that, there are two ways to convert this to a Windows 10 UWP project. The easiest way (as explained in the following procedure) is to create a Universal Windows project, and copy your existing code into it. If you were using a Universal project for Windows 8.1 desktop and Windows 8.1 Phone, your project will start with two different layouts in XAML but end with a single dynamic layout that adjusts to the display size.
 
 ### To port a Windows 8.1 Store App to the UWP
 

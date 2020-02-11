@@ -36,7 +36,7 @@ This list illustrates the rules above by showing the interpreted result passed t
 
 ### Code
 
-```
+```c
 // Parsing_C_Commandline_args.c
 // ARGS.C illustrates the following variables used for accessing
 // command-line arguments and environment variables:

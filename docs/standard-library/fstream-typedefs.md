@@ -22,7 +22,7 @@ typedef basic_filebuf<char, char_traits<char>> filebuf;
 
 ### Remarks
 
-The type is a synonym for template class [basic_filebuf](../standard-library/basic-filebuf-class.md), specialized for elements of type **char** with default character traits.
+The type is a synonym for class template [basic_filebuf](../standard-library/basic-filebuf-class.md), specialized for elements of type **char** with default character traits.
 
 ## <a name="fstream"></a>  fstream
 
@@ -34,11 +34,11 @@ typedef basic_fstream<char, char_traits<char>> fstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_fstream](../standard-library/basic-fstream-class.md), specialized for elements of type **char** with default character traits.
+The type is a synonym for class template [basic_fstream](../standard-library/basic-fstream-class.md), specialized for elements of type **char** with default character traits.
 
 ## <a name="ifstream"></a>  ifstream
 
-Defines a stream to be used to read single-byte character data serially from a file. `ifstream` is a typedef that specializes the template class `basic_ifstream` for **char**.
+Defines a stream to be used to read single-byte character data serially from a file. `ifstream` is a typedef that specializes the class template `basic_ifstream` for **char**.
 
 There is also `wifstream`, a typedef that specializes `basic_ifstream` to read **wchar_t** double-wide characters. For more information, see [wifstream](../standard-library/fstream-typedefs.md#wifstream).
 
@@ -48,7 +48,7 @@ typedef basic_ifstream<char, char_traits<char>> ifstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ifstream](../standard-library/basic-ifstream-class.md), specialized for elements of type char with default character traits. An example is
+The type is a synonym for class template [basic_ifstream](../standard-library/basic-ifstream-class.md), specialized for elements of type char with default character traits. An example is
 
 ```cpp
 using namespace std;
@@ -72,7 +72,7 @@ typedef basic_ofstream<char, char_traits<char>> ofstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ofstream](../standard-library/basic-ofstream-class.md), specialized for elements of type **char** with default character traits.
+The type is a synonym for class template [basic_ofstream](../standard-library/basic-ofstream-class.md), specialized for elements of type **char** with default character traits.
 
 ## <a name="wfstream"></a>  wfstream
 
@@ -84,7 +84,7 @@ typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_fstream](../standard-library/basic-fstream-class.md), specialized for elements of type **wchar_t** with default character traits.
+The type is a synonym for class template [basic_fstream](../standard-library/basic-fstream-class.md), specialized for elements of type **wchar_t** with default character traits.
 
 ## <a name="wifstream"></a>  wifstream
 
@@ -96,7 +96,7 @@ typedef basic_ifstream<wchar_t, char_traits<wchar_t>> wifstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ifstream](../standard-library/basic-ifstream-class.md), specialized for elements of type **wchar_t** with default character traits.
+The type is a synonym for class template [basic_ifstream](../standard-library/basic-ifstream-class.md), specialized for elements of type **wchar_t** with default character traits.
 
 ## <a name="wofstream"></a>  wofstream
 
@@ -108,7 +108,7 @@ typedef basic_ofstream<wchar_t, char_traits<wchar_t>> wofstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ofstream](../standard-library/basic-ofstream-class.md), specialized for elements of type **wchar_t** with default character traits.
+The type is a synonym for class template [basic_ofstream](../standard-library/basic-ofstream-class.md), specialized for elements of type **wchar_t** with default character traits.
 
 ## <a name="wfilebuf"></a>  wfilebuf
 
@@ -120,7 +120,7 @@ typedef basic_filebuf<wchar_t, char_traits<wchar_t>> wfilebuf;
 
 ### Remarks
 
-The type is a synonym for template class [basic_filebuf](../standard-library/basic-filebuf-class.md), specialized for elements of type **wchar_t** with default character traits.
+The type is a synonym for class template [basic_filebuf](../standard-library/basic-filebuf-class.md), specialized for elements of type **wchar_t** with default character traits.
 
 ## See also
 

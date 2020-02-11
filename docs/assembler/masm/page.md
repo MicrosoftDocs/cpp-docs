@@ -1,6 +1,6 @@
 ---
 title: "PAGE"
-ms.date: "08/30/2018"
+ms.date: "12/16/2019"
 f1_keywords: ["PAGE"]
 helpviewer_keywords: ["Page directive"]
 ms.assetid: 6654c094-c1f7-4d10-8d9d-902ddd1ac27e
@@ -11,9 +11,11 @@ The first directive sets line *length* and character *width* of the program list
 
 ## Syntax
 
-> PAGE [[*length*]][[, *width*]]<br/><br/>
-> PAGE +
+> **PAGE** ⟦*length*⟧⟦__,__ *width*⟧
+
+> **PAGE +**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

@@ -13,7 +13,7 @@ A required argument was not passed to the [idl_module](../../windows/idl-module.
 
 The following sample generates C3347:
 
-```
+```cpp
 // C3347.cpp
 // compile with: /c
 [module(name="xx")];

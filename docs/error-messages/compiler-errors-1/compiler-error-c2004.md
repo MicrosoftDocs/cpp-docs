@@ -17,7 +17,7 @@ This error can also be generated as a result of compiler conformance work that w
 
 The following sample generates C2004:
 
-```
+```cpp
 // C2004.cpp
 // compile with: /DDEBUG
 #include <stdio.h>
@@ -34,7 +34,7 @@ int main()
 
 Possible resolution:
 
-```
+```cpp
 // C2004b.cpp
 // compile with: /DDEBUG
 #include <stdio.h>

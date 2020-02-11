@@ -15,7 +15,7 @@ The class is preceded by a `template` or **generic** keyword with missing or inv
 
 The following sample generates C2992:
 
-```
+```cpp
 // C2992.cpp
 // compile with: /c
 template <class T>

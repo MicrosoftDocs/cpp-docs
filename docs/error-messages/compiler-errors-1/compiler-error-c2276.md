@@ -13,7 +13,7 @@ The compiler found a problem with the syntax to create a pointer-to-member.
 
 The following sample generates C2276:
 
-```
+```cpp
 // C2276.cpp
 class A {
 public:

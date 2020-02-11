@@ -1,9 +1,10 @@
 ---
 title: "_strtime_s, _wstrtime_s"
 ms.date: "11/04/2016"
-apiname: ["_wstrtime_s", "_strtime_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wstrtime_s", "_strtime_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_wstrtime_s", "strtime_s", "wstrtime_s", "_strtime_s"]
 helpviewer_keywords: ["wstrtime_s function", "copying time to buffers", "strtime_s function", "_wstrtime_s function", "time, copying", "_strtime_s function"]
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
@@ -69,6 +70,8 @@ These functions provide more secure versions of [_strtime](strtime-wstrtime.md) 
 **_wstrtime** is a wide-character version of **_strtime**; the argument and return value of **_wstrtime** are wide-character strings. These functions behave identically otherwise.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### Generic-Text Routine Mapping:
 

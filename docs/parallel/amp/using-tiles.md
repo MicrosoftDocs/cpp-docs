@@ -9,7 +9,7 @@ You can use tiling to maximize the acceleration of your app. Tiling divides thre
 
 - `tile_static` variables. The primary benefit of tiling is the performance gain from `tile_static` access. Access to data in `tile_static` memory can be significantly faster than access to data in the global space (`array` or `array_view` objects). An instance of a `tile_static` variable is created for each tile, and all threads in the tile have access to the variable. In a typical tiled algorithm, data is copied into `tile_static` memory once from global memory and then accessed many times from the `tile_static` memory.
 
-- [tile_barrier::wait Method](reference/tile-barrier-class.md#wait). A call to `tile_barrier::wait` suspends execution of the current thread until all of the threads in the same tile reach the call to `tile_barrier::wait`. You cannot guarantee the order that the threads will run in, only that no threads in the tile will execute past the call to `tile_barrier::wait` until all of the threads have reached the call. This means that by using the `tile_barrier::wait` method, you can perform tasks on a tile-by-tile basis rather than a thread-by-thread basis. A typical tiling algorithm has code to initialize the `tile_static` memory for the whole tile followed by a call to `tile_barrer::wait`. Code that follows `tile_barrier::wait` contains computations that require access to all the `tile_static` values.
+- [tile_barrier::wait Method](reference/tile-barrier-class.md#wait). A call to `tile_barrier::wait` suspends execution of the current thread until all of the threads in the same tile reach the call to `tile_barrier::wait`. You cannot guarantee the order that the threads will run in, only that no threads in the tile will execute past the call to `tile_barrier::wait` until all of the threads have reached the call. This means that by using the `tile_barrier::wait` method, you can perform tasks on a tile-by-tile basis rather than a thread-by-thread basis. A typical tiling algorithm has code to initialize the `tile_static` memory for the whole tile followed by a call to `tile_barrier::wait`. Code that follows `tile_barrier::wait` contains computations that require access to all the `tile_static` values.
 
 - Local and global indexing. You have access to the index of the thread relative to the entire `array_view` or `array` object and the index relative to the tile. Using the local index can make your code easier to read and debug. Typically, you use local indexing to access `tile_static` variables, and global indexing to access `array` and `array_view` variables.
 
@@ -128,7 +128,7 @@ void TilingDescription() {
     }
 }
 
-void main() {
+int main() {
     TilingDescription();
     char wait;
     std::cin >> wait;
@@ -228,7 +228,7 @@ void SamplingExample() {
         }
         std::cout << "\n";
     }
-    // Output for SAMPLESSIZE = 2 is:
+    // Output for SAMPLESIZE = 2 is:
     //  4.5  6.5  8.5 10.5
     // 20.5 22.5 24.5 26.5
     // 36.5 38.5 40.5 42.5

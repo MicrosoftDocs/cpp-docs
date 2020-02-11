@@ -15,7 +15,7 @@ You cannot use generic parameters with `*`, `^`, or `&`.
 
 The following sample generates C3229.
 
-```
+```cpp
 // C3229.cpp
 // compile with: /clr /c
 generic <class T>
@@ -34,7 +34,7 @@ ref class D {
 
 The following sample generates C3229.
 
-```
+```cpp
 // C3229_b.cpp
 // compile with: /clr /c
 generic <class T>   // OK

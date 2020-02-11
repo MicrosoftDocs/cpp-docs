@@ -13,7 +13,7 @@ The use of bit fields is not permitted on variables in a managed or WinRT class.
 
 The following sample generates C3623:
 
-```
+```cpp
 // C3623.cpp
 // compile with: /clr
 using namespace System;

@@ -13,7 +13,7 @@ Values passed to certain clauses cannot be `const` variables.
 
 The following sample generates C3033:
 
-```
+```cpp
 // C3033.cpp
 // compile with: /openmp /link vcomps.lib
 int main() {

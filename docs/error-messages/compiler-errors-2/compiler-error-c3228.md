@@ -13,7 +13,7 @@ An incorrect type was passed as a generic type argument.
 
 The following sample generates C3228:
 
-```
+```cpp
 // C3228.cpp
 // compile with: /clr
 class A {};

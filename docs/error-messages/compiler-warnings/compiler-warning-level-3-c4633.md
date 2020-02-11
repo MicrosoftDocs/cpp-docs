@@ -13,7 +13,7 @@ A name passed to the [\<param>](../../build/reference/param-visual-cpp.md) tag w
 
 The following sample generates C4633:
 
-```
+```cpp
 // C4633.cpp
 // compile with: /clr /doc /LD /W3
 

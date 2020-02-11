@@ -13,7 +13,7 @@ A function definition contains a parameter type list instead of a formal paramet
 
 The following sample generates C2055:
 
-```
+```c
 // C2055.c
 // compile with: /c
 void func(int, char) {}  // C2055

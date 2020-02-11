@@ -55,7 +55,7 @@ The arguments of the function passed to `call_in_appdomain` must not be CLR type
 
 ## Example
 
-```
+```cpp
 // msl_call_in_appdomain.cpp
 // compile with: /clr
 

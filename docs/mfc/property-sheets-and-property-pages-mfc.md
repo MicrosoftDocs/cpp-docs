@@ -17,7 +17,7 @@ For information on creating and working with property sheets, see the topic [Pro
 ## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Property Sheets and Property Pages in MFC](../mfc/property-sheets-and-property-pages-in-mfc.md)<br/>
 [Exchanging Data](../mfc/exchanging-data.md)<br/>
 [Creating a Modeless Property Sheet](../mfc/creating-a-modeless-property-sheet.md)<br/>

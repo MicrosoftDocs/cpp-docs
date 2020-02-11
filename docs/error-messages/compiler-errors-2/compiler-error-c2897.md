@@ -17,7 +17,7 @@ The following sample generates C2897:
 
 The following sample generates C2897.
 
-```
+```cpp
 // C2897.cpp
 // compile with: /c
 class X {
@@ -30,7 +30,7 @@ public:
 
 The following sample generates C2897.
 
-```
+```cpp
 // C2897_b.cpp
 // compile with: /c /clr
 ref struct R2 {

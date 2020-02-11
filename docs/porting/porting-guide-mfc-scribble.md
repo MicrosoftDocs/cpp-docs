@@ -1,6 +1,6 @@
 ---
 title: "Porting Guide: MFC Scribble"
-ms.date: "11/19/2018"
+ms.date: "10/23/2019"
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
 ---
 # Porting Guide: MFC Scribble
@@ -17,13 +17,13 @@ Before attempting to upgrade, make sure that you have the Windows Desktop worklo
 
 Next, back up the entire solution and all its contents.
 
-Finally, we needed to decide on the specific method of upgrade. For more complex solutions and projects that haven't been upgraded for a long time, you should consider upgrading one version of Visual Studio at a time. That way, you can narrow down which version of Visual Studio introduced a problem. For a simple project, it's worth trying to open it in the latest version of Visual Studio and allowing the wizard to convert the project. If that doesn't work, you can try upgrading one version at a time, if you have access to the appropriate versions of Visual Studio.
+Finally, open the solution in the latest version of Visual Studio and allow the wizard to convert the project. 
 
 Note that you can also run devenv at the command line, using the `/Upgrade` option, instead of using the wizard to upgrade your projects. See [/Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe). That could be helpful in automating the upgrade process for a large number of projects.
 
 ### Step 1. Converting the Project File
 
-When you open an old project file in Visual Studio 2017, Visual Studio offers to convert the project file to the most recent version, which we accepted. The following dialog box appeared:
+When you open an old project file in Visual Studio, Visual Studio offers to convert the project file to the most recent version, which we accepted. The following dialog box appeared:
 
 ![Review Project and Solution Changes](../porting/media/scribbleprojectupgrade.PNG "Review Project and Solution Changes")
 
@@ -43,7 +43,7 @@ In this case, the issues were all warnings, and Visual Studio made the appropria
 
 ### Step 2. Getting it to build
 
-Before building, we check the platform toolset so we know what compiler version the project system is using. In the project properties dialog, under **Configuration Properties**, in the **General** category, look at the **Platform Toolset** property. It contains the version of Visual Studio and the platform tool version number, which in this case is v141 for the Visual Studio 2017 version of the tools. When you convert a project that was originally compiled with Visual Studio 2010, 2012, 2013 or 2015, the toolset is not automatically updated to the Visual Studio 2017 toolset.
+Before building, we check the platform toolset so we know what compiler version the project system is using. In the project properties dialog, under **Configuration Properties**, in the **General** category, look at the **Platform Toolset** property. It contains the version of Visual Studio and the platform tool version number, which in this case is v141 for the Visual Studio 2017 version of the tools. When you convert a project that was originally compiled with Visual Studio 2010, 2012, 2013 or 2015, the toolset is not automatically updated to the latest toolset.
 
 To make the switch to Unicode, open the project's properties, under **Configuration Properties**, choose the **General** section, and locate the **Character Set** property. Change this from **Use Multi-Byte Character Set** to **Use Unicode Character Set**. The effect of this change is that now the _UNICODE and UNICODE macros are defined and _MBCS is not, which you can verify in the properties dialog under the **C/C++** category at the **Command Line** property.
 

@@ -13,7 +13,7 @@ A nested user-defined type was declared. This is an error when compiling C sourc
 
 The following sample generates C2467:
 
-```
+```c
 //C2467.c
 // compile with: /Za
 int main() {

@@ -13,7 +13,7 @@ When compiling with [/Za](../../build/reference/za-ze-disable-language-extension
 
 The following sample generates C2093:
 
-```
+```c
 // C2093.c
 // compile with: /Za /c
 void func() {

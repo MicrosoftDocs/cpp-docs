@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2039"
-ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.date: "12/17/2019"
+ms.custom: "error-reference"
 f1_keywords: ["A2039"]
 helpviewer_keywords: ["A2039"]
 ms.assetid: ad8cdaae-b20d-45f0-acb1-79880979c6b7
@@ -16,4 +16,4 @@ If multiple physical lines are concatenated with the line-continuation character
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

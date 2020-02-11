@@ -15,7 +15,7 @@ To fix this error, provide an appropriate member function. You cannot execute a 
 
 The following samples generate C3849:
 
-```
+```cpp
 // C3849.cpp
 void glbFunc3(int i, char c)
 {

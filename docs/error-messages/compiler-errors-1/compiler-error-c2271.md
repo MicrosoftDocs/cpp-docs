@@ -13,7 +13,7 @@ The operator (`new` or `delete`) is declared with a memory-model specifier.
 
 The following sample generates C2271:
 
-```
+```cpp
 // C2271.cpp
 // compile with: /c
 void* operator new(size_t) const {   // C2271

@@ -1,9 +1,10 @@
 ---
 title: "fegetexceptflag"
 ms.date: "04/05/2018"
-apiname: ["fegetexceptflag"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["fegetexceptflag"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["fegetexceptflag", "fenv/fegetexceptflag"]
 helpviewer_keywords: ["fegetexceptflag function"]
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
@@ -44,7 +45,7 @@ The **fegetexceptflag** function stores the current state of the floating-point 
 |FE_INVALID|A domain error occurred in an earlier floating-point operation.|
 |FE_OVERFLOW|A range error occurred; an earlier floating-point operation result was too large to be represented.|
 |FE_UNDERFLOW|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
-|FE_ALLEXCEPT|The bitwise OR of all supported floating-point exceptions.|
+|FE_ALL_EXCEPT|The bitwise OR of all supported floating-point exceptions.|
 
 The *excepts* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
 

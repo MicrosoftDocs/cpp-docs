@@ -27,15 +27,11 @@ An instance of the type predicate holds true if the type *Ty* is a class that ha
 
 A move assignment operator for a class *Ty* is trivial if:
 
-it is implicitly provided
-
-the class *Ty* has no virtual functions
-
-the class *Ty* has no virtual bases
-
-the classes of all the non-static data members of class type have trivial move assignment operators
-
-the classes of all the non-static data members of type array of class have trivial move assignment operators
+- it is implicitly provided
+- the class *Ty* has no virtual functions
+- the class *Ty* has no virtual bases
+- the classes of all the non-static data members of class type have trivial move assignment operators
+- the classes of all the non-static data members of type array of class have trivial move assignment operators
 
 ## Requirements
 

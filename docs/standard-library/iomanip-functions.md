@@ -20,20 +20,20 @@ Extracts a monetary value from a stream using the desired format, and returns th
 
 ```cpp
 template <class Money>
-T7 get_money(Money& _Amount, bool _Intl);
+T7 get_money(Money& amount, bool use_intl);
 ```
 
 ### Parameters
 
-*_Amount*\
+*amount*\
 The extracted monetary value.
 
-*_Intl*\
+*use_intl*\
 If **true**, use international format. The default value is **false**.
 
 ### Remarks
 
-The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `money_get` associated with `str`, using *_Intl* to indicate international format. If successful, the call stores in *_Amount* the extracted monetary value. The manipulator then returns `str`.
+The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `money_get` associated with `str`, using *use_intl* to indicate international format. If successful, the call stores in *amount* the extracted monetary value. The manipulator then returns `str`.
 
 `Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.
 
@@ -43,15 +43,15 @@ Extracts a time value from a stream using a desired format. Returns the value in
 
 ```cpp
 template <class Elem>
-T10 put_time(struct tm *_Tptr, const Elem *_Fmt);
+T10 put_time(struct tm *time_ptr, const Elem *time_format);
 ```
 
 ### Parameters
 
-*_Tptr*\
+*time_ptr*\
 The time in the form of a time structure.
 
-*_Fmt*\
+*time_format*\
 The desired format to use to obtain the time value.
 
 ### Remarks
@@ -64,15 +64,15 @@ Inserts a monetary amount using the desired format into a stream.
 
 ```cpp
 template <class Money>
-T8 put_money(const Money& _Amount, bool _Intl);
+T8 put_money(const Money& amount, bool use_intl);
 ```
 
 ### Parameters
 
-*_Amount*\
+*amount*\
 The monetary amount to insert into the stream.
 
-*_Intl*\
+*use_intl*\
 Set to **true** if manipulator should use international format, **false** if it should not.
 
 ### Return Value
@@ -81,7 +81,7 @@ Returns `str`.
 
 ### Remarks
 
-The manipulator returns an object that, when inserted into the stream `str`, behaves as a formatted output function that calls the member function `put` for the locale facet `money_put` associated with `str`. If successful, the call inserts `amount` suitably formatted, using *_Intl` to indicate international format and `str.fill()`, as the fill element. The manipulator then returns `str`.
+The manipulator returns an object that, when inserted into the stream `str`, behaves as a formatted output function that calls the member function `put` for the locale facet `money_put` associated with `str`. If successful, the call inserts `amount` suitably formatted, using *use_intl* to indicate international format and `str.fill()`, as the fill element. The manipulator then returns `str`.
 
 `Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.
 
@@ -91,20 +91,20 @@ Writes a time value from a time structure to a stream by using a specified forma
 
 ```cpp
 template <class Elem>
-T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
+T10 put_time(struct tm* time_ptr, const Elem* time_format);
 ```
 
 ### Parameters
 
-*_Tptr*\
+*time_ptr*\
 The time value to write to the stream, provided in a time structure.
 
-*_Fmt*\
+*time_format*\
 The desired format to write the time value.
 
 ### Remarks
 
-The manipulator returns an object that, when inserted into the stream `str`, behaves as a `formatted output function`. The output function calls the member function `put` for the locale facet `time_put` associated with `str`. The output function uses *_Tptr* to indicate the time structure and *_Fmt* to indicate the beginning of a null-terminated format string. If successful, the call inserts literal text from the format string and converted values from the time structure. The manipulator then returns `str`.
+The manipulator returns an object that, when inserted into the stream `str`, behaves as a `formatted output function`. The output function calls the member function `put` for the locale facet `time_put` associated with `str`. The output function uses *time_ptr* to indicate the time structure and *time_format* to indicate the beginning of a null-terminated format string. If successful, the call inserts literal text from the format string and converted values from the time structure. The manipulator then returns `str`.
 
 ## <a name="quoted"></a>  quoted
 
@@ -167,7 +167,7 @@ void show_quoted_v_nonquoted()
     cout << "Quoted          : " << extracted_quoted << endl;
 }
 
-void main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     show_quoted_v_nonquoted();
 
@@ -243,7 +243,7 @@ void show_custom_escape()
     // after round-tripping.
 }
 
-void main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     cout << "Custom delimiter:" << endl;
     show_custom_delimiter();
@@ -278,17 +278,17 @@ Press Enter to exit
 Clears the specified flags.
 
 ```cpp
-T1 resetiosflags(ios_base::fmtflags Mask);
+T1 resetiosflags(ios_base::fmtflags mask);
 ```
 
 ### Parameters
 
-*Mask*\
+*mask*\
 The flags to clear.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls **str**. [setf](../standard-library/ios-base-class.md#setf)( `ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags), _ *Mask*), and then returns `str`.
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags)`, mask)`, and then returns `str`.
 
 ### Example
 
@@ -299,25 +299,25 @@ See [setw](../standard-library/iomanip-functions.md#setw) for an example of usin
 Set base for integers.
 
 ```cpp
-T3 setbase(int _Base);
+T3 setbase(int base);
 ```
 
 ### Parameters
 
-*_Base*\
+*base*\
 The number base.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls **str**. `setf`( **mask**, [ios_base::basefield](../standard-library/ios-base-class.md#fmtflags)), and then returns `str`. Here, `mask` is determined as follows:
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.setf(mask, `[ios_base::basefield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns `str`. Here, `mask` is determined as follows:
 
-- If _ *Base* is 8, then `mask` is `ios_base::`[oct](../standard-library/ios-functions.md#oct).
+- If *base* is 8, then `mask` is `ios_base::`[oct](../standard-library/ios-functions.md#oct).
 
-- If _ *Base* is 10, then mask is `ios_base::`[dec](../standard-library/ios-functions.md#dec).
+- If *base* is 10, then mask is `ios_base::`[dec](../standard-library/ios-functions.md#dec).
 
-- If _ *Base* is 16, then `mask` is `ios_base::`[hex](../standard-library/ios-functions.md#hex).
+- If *base* is 16, then `mask` is `ios_base::`[hex](../standard-library/ios-functions.md#hex).
 
-- If _ *Base* is any other value, then mask is `ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags)(0).
+- If *base* is any other value, then mask is `ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags)`(0)`.
 
 ### Example
 
@@ -339,7 +339,7 @@ The character that will be used to fill spaces in a right-justified display.
 
 ### Return Value
 
-The template manipulator returns an object that, when extracted from or inserted into the stream `str`, calls **str**. [fill](../standard-library/basic-ios-class.md#fill)(`Ch`), and then returns `str`. The type `Elem` must be the same as the element type for the stream `str`.
+The template manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[fill](../standard-library/basic-ios-class.md#fill)`(Ch)`, and then returns `str`. The type `Elem` must be the same as the element type for the stream `str`.
 
 ### Example
 
@@ -350,17 +350,17 @@ See [setw](../standard-library/iomanip-functions.md#setw) for an example of usin
 Sets the specified flags.
 
 ```cpp
-T2 setiosflags(ios_base::fmtflags Mask);
+T2 setiosflags(ios_base::fmtflags mask);
 ```
 
 ### Parameters
 
-*Mask*\
+*mask*\
 The flags to set.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls **str**. [setf](../standard-library/ios-base-class.md#setf)(_ *Mask*), and then returns `str`.
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(mask)`, and then returns `str`.
 
 ### Example
 
@@ -381,7 +381,7 @@ The precision for floating-point values.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls **str**. [precision](../standard-library/ios-base-class.md#precision)(`Prec`), and then returns `str`.
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[precision](../standard-library/ios-base-class.md#precision)`(Prec)`, and then returns `str`.
 
 ### Example
 
@@ -402,7 +402,7 @@ The width of the display field.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls **str**. [width](../standard-library/ios-base-class.md#width)(_ *Wide*), then returns `str`.
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[width](../standard-library/ios-base-class.md#width)`(Wide)`, then returns `str`.
 
 ### Remarks
 

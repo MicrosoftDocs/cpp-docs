@@ -1,14 +1,16 @@
 ---
-title: "C++ Integer Limits"
-ms.date: "01/29/2018"
+title: "C and C++ Integer Limits"
+ms.date: "10/21/2019"
 helpviewer_keywords: ["limits, integer", "limits, integer constants", "integer limits"]
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
 ---
-# C++ Integer Limits
+# C and C++ Integer Limits
 
 **Microsoft Specific**
 
-The limits for integer types are listed in the following table. These limits are defined in the standard header file LIMITS.H. Microsoft C also permits the declaration of sized integer variables, which are integral types of size 8-, 16-, or 32-bits. For more information on sized integers, see [Sized Integer Types](../c-language/c-sized-integer-types.md).
+The limits for integer types in C and C++ are listed in the following table. These limits are defined in the C standard header file `<limits.h>`. The C++ Standard Library header `<limits>` includes `<climits>`, which includes `<limits.h>`.
+
+Microsoft C also permits the declaration of sized integer variables, which are integral types of size 8-, 16-, 32- or 64-bits. For more information on sized integers in C, see [Sized Integer Types](../c-language/c-sized-integer-types.md).
 
 ## Limits on Integer Constants
 
@@ -30,6 +32,9 @@ The limits for integer types are listed in the following table. These limits are
 |**LONG_MIN**|Minimum value for a variable of type **long**.|-2147483647 - 1|
 |**LONG_MAX**|Maximum value for a variable of type **long**.|2147483647|
 |**ULONG_MAX**|Maximum value for a variable of type **unsigned long**.|4294967295 (0xffffffff)|
+|**LLONG_MIN**|Minimum value for a variable of type **long long**.|-9,223,372,036,854,775,807 - 1|
+|**LLONG_MAX**|Maximum value for a variable of type **long long**.|9,223,372,036,854,775,807|
+|**ULLONG_MAX**|Maximum value for a variable of type **unsigned long long**.|18,446,744,073,709,551,615 (0xffffffffffffffff)|
 
 If a value exceeds the largest integer representation, the Microsoft compiler generates an error.
 

@@ -1,6 +1,6 @@
 ---
 title: ".LISTALL"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".LISTALL"]
 helpviewer_keywords: [".LISTALL directive"]
 ms.assetid: fccb5117-542d-4ae3-869b-40cc2ab55ecb
@@ -11,12 +11,13 @@ Starts listing of all statements.
 
 ## Syntax
 
-> .LISTALL
+> **.LISTALL**
 
 ## Remarks
 
-Equivalent to the combination of [.LIST](../../assembler/masm/dot-list.md), [.LISTIF](../../assembler/masm/dot-listif.md), and [.LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
+Equivalent to the combination of [.LIST](dot-list.md), [.LISTIF](dot-listif.md), and [.LISTMACROALL](dot-listmacroall.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

@@ -13,7 +13,7 @@ The character is used incorrectly in the formal parameter list of a macro defini
 
 The following sample generates C2010:
 
-```
+```cpp
 // C2010.cpp
 // compile with: /c
 #define mymacro(a|) (2*a)   // C2010

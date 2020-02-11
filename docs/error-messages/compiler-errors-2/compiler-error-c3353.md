@@ -13,7 +13,7 @@ Delegates, declared with the [delegate](../../extensions/delegate-cpp-component-
 
 The following sample generates C3353:
 
-```
+```cpp
 // C3353.cpp
 // compile with: /clr
 delegate int f;   // C3353

@@ -13,7 +13,7 @@ A function template with a variable parameter list has too few arguments.
 
 The following sample generates C2781:
 
-```
+```cpp
 // C2781.cpp
 template<typename T>
 void f(T, T, ...){}

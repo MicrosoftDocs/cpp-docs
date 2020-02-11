@@ -19,7 +19,7 @@ C4485 is always issued as an error. Use the [warning](../../preprocessor/warning
 
 The following sample generates C4485
 
-```
+```cpp
 // C4485.cpp
 // compile with: /clr
 delegate void Del();

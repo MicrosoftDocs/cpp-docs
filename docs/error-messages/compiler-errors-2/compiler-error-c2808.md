@@ -13,7 +13,7 @@ The unary operator has a nonvoid parameter list.
 
 The following sample generates C2808:
 
-```
+```cpp
 // C2808.cpp
 // compile with: /c
 class X {

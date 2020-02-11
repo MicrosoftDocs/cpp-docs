@@ -9,9 +9,9 @@ ms.assetid: 4819365f-ef99-49cc-963e-50a2a35a8d6b
 This document describes the role of scheduler instances in the Concurrency Runtime and how to use the [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) and [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) classes to create and manage scheduler instances. Scheduler instances are useful when you want to associate explicit scheduling policies with specific types of workloads. For example, you can create one scheduler instance to run some tasks at an elevated thread priority and use the default scheduler to run other tasks at the normal thread priority.
 
 > [!TIP]
->  The Concurrency Runtime provides a default scheduler, and therefore you are not required to create one in your application. Because the Task Scheduler helps you fine-tune the performance of your applications, we recommend that you start with the [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) if you are new to the Concurrency Runtime.
+> The Concurrency Runtime provides a default scheduler, and therefore you are not required to create one in your application. Because the Task Scheduler helps you fine-tune the performance of your applications, we recommend that you start with the [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) if you are new to the Concurrency Runtime.
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 - [The Scheduler and CurrentScheduler Classes](#classes)
 
@@ -23,7 +23,7 @@ This document describes the role of scheduler instances in the Concurrency Runti
 
 - [Example](#example)
 
-##  <a name="classes"></a> The Scheduler and CurrentScheduler Classes
+## <a name="classes"></a> The Scheduler and CurrentScheduler Classes
 
 The Task Scheduler enables applications to use one or more *scheduler instances* to schedule work. The [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) class represents a scheduler instance and encapsulates the functionality that is related to scheduling tasks.
 
@@ -35,7 +35,7 @@ The following sections describe how to create and manage a scheduler instance. F
 
 [[Top](#top)]
 
-##  <a name="creating"></a> Creating a Scheduler Instance
+## <a name="creating"></a> Creating a Scheduler Instance
 
 There are these three ways to create a `Scheduler` object:
 
@@ -49,7 +49,7 @@ Allowing the runtime to create a default scheduler enables all concurrent tasks 
 
 [[Top](#top)]
 
-##  <a name="managing"></a> Managing the Lifetime of a Scheduler Instance
+## <a name="managing"></a> Managing the Lifetime of a Scheduler Instance
 
 The runtime uses a reference-counting mechanism to control the lifetime of `Scheduler` objects.
 
@@ -76,7 +76,7 @@ Because the runtime does not destroy a `Scheduler` object before all tasks have 
 
 [[Top](#top)]
 
-##  <a name="features"></a> Methods and Features
+## <a name="features"></a> Methods and Features
 
 This section summarizes the important methods of the `CurrentScheduler` and `Scheduler` classes.
 
@@ -111,7 +111,7 @@ The following table shows the important methods that are defined by the `Schedul
 
 [[Top](#top)]
 
-##  <a name="example"></a> Example
+## <a name="example"></a> Example
 
 For basic examples of how to create and manage a scheduler instance, see [How to: Manage a Scheduler Instance](../../parallel/concrt/how-to-manage-a-scheduler-instance.md).
 

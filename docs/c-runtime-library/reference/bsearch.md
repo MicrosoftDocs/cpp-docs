@@ -1,9 +1,10 @@
 ---
 title: "bsearch"
-ms.date: "11/04/2016"
-apiname: ["bsearch"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+ms.date: "10/22/2019"
+api_name: ["bsearch"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["bsearch"]
 helpviewer_keywords: ["arrays [CRT], binary search", "bsearch function"]
 ms.assetid: e0ad2f47-e7dd-49ed-8288-870457a14a2c
@@ -26,28 +27,28 @@ void *bsearch(
 
 ### Parameters
 
-*key*<br/>
-Object to search for.
+*key*\
+Pointer to the key to search for.
 
-*base*<br/>
-Pointer to base of search data.
+*base*\
+Pointer to the base of the search data.
 
-*number*<br/>
+*number*\
 Number of elements.
 
-*width*<br/>
+*width*\
 Width of elements.
 
-*compare*<br/>
-Callback function that compares two elements. The first is a pointer to the key for the search and the second is a pointer to the array element to be compared with the key.
+*compare*\
+Callback function that compares two elements. The first is a pointer to the key for the search, and the second is a pointer to the array element to be compared with the key.
 
-## Return Value
+## Return value
 
 **bsearch** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* is not found, the function returns **NULL**. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
 ## Remarks
 
-The **bsearch** function performs a binary search of a sorted array of *number* elements, each of *width* bytes in size. The *base* value is a pointer to the base of the array to be searched, and *key* is the value being sought. The *compare* parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:
+The **bsearch** function performs a binary search of a sorted array of *number* elements, each of *width* bytes in size. The *base* value is a pointer to the base of the array to be searched, and *key* is the value being sought. The *compare* parameter is a pointer to a user-supplied routine that compares the requested key to an array element. It returns one of the following values that specify their relationship:
 
 |Value returned by *compare* routine|Description|
 |-----------------------------------------|-----------------|
@@ -55,7 +56,7 @@ The **bsearch** function performs a binary search of a sorted array of *number* 
 |0|Key is equal to array element.|
 |> 0|Key is greater than array element.|
 
-This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is **NULL** and *number* is nonzero, or if *width* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to `EINVAL` and the function returns **NULL**.
+This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is **NULL** and *number* is nonzero, or if *width* is zero, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to `EINVAL` and the function returns **NULL**.
 
 ## Requirements
 
@@ -112,7 +113,7 @@ cat found at 002F0F04
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind](lfind.md)<br/>
-[_lsearch](lsearch.md)<br/>
-[qsort](qsort.md)<br/>
+[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)\
+[_lfind](lfind.md)\
+[_lsearch](lsearch.md)\
+[qsort](qsort.md)

@@ -13,7 +13,7 @@ An explicit override keyword can only be specified once. For more information, s
 
 The following sample generates C3656:
 
-```
+```cpp
 // C3656.cpp
 // compile with: /clr /c
 public interface struct O {

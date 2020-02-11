@@ -1,20 +1,21 @@
 ---
 title: "WHILE (MASM)"
-ms.date: "08/30/2018"
+ms.date: "12/16/2019"
 f1_keywords: ["while"]
 helpviewer_keywords: ["WHILE directive"]
 ms.assetid: ff9d908e-7e7f-4983-9f6b-31ff51ef0fad
 ---
-# WHILE (MASM)
+# WHILE
 
-Repeats assembly of block *statements* as long as *expression* remains true.
+Repeats assembly of block *statements* as long as *constantExpression* remains true.
 
 ## Syntax
 
-> WHILE *expression*<br/>
-> *statements*<br/>
-> ENDM
+> **WHILE** *constantExpression*\
+> *statements*\
+> **ENDM**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

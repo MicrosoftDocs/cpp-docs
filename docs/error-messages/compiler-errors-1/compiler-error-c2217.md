@@ -21,7 +21,7 @@ The first function attribute requires the second attribute.
 
 C2217 can also occur if you attempt to bind a delegate to a CLR function that takes a variable number of arguments. If the function also has e param array overload, use that instead. The following sample generates C2217.
 
-```
+```cpp
 // C2217.cpp
 // compile with: /clr
 using namespace System;

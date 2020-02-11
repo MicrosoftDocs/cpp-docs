@@ -13,7 +13,7 @@ The compiler did not expect a type name.
 
 The following sample generates C2062:
 
-```
+```cpp
 // C2062.cpp
 // compile with: /c
 struct A {  : int l; };   // C2062

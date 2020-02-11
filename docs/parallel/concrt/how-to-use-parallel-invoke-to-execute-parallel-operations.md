@@ -66,7 +66,7 @@ You can use the `parallel_invoke` algorithm instead of the [concurrency::task_gr
 
 To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `parallel-word-mining.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc /MD /DUNICODE /D_AFXDLL parallel-word-mining.cpp**
+> **cl.exe /EHsc /MD /DUNICODE /D_AFXDLL parallel-word-mining.cpp**
 
 ## See also
 

@@ -26,14 +26,14 @@ The stored allocator object that encapsulates details about the  forward_list al
 
 ## Remarks
 
-A `forward_list` object allocates and frees storage for the sequence it controls through a stored object of class *Allocator* that is based on [allocator Class](../standard-library/allocator-class.md) (commonly known as `std::allocator)`. For more information, see [Allocators](../standard-library/allocators.md). An allocator object must have the same external interface as an object of template class `allocator`.
+A `forward_list` object allocates and frees storage for the sequence it controls through a stored object of class *Allocator* that is based on [allocator Class](../standard-library/allocator-class.md) (commonly known as `std::allocator)`. For more information, see [Allocators](../standard-library/allocators.md). An allocator object must have the same external interface as an object of type `allocator`.
 
 > [!NOTE]
 > The stored allocator object is not copied when the container object is assigned.
 
 Iterators, pointers and references might become invalid when elements of their controlled sequence are erased through `forward_list`. Insertions and splices performed on the controlled sequence through `forward_list` do not invalidate iterators.
 
-Additions to the controlled sequence might occur by calls to [forward_list::insert_after](#insert_after), which is the only member function that calls the constructor `Type(const  T&)`. `forward_list` might also call move constructors. If such an expression throws an exception, the container object inserts no new elements and rethrows the exception. Thus, an object of template class `forward_list` is left in a known state when such exceptions occur.
+Additions to the controlled sequence might occur by calls to [forward_list::insert_after](#insert_after), which is the only member function that calls the constructor `Type(const  T&)`. `forward_list` might also call move constructors. If such an expression throws an exception, the container object inserts no new elements and rethrows the exception. Thus, an object of type `forward_list` is left in a known state when such exceptions occur.
 
 ## Members
 
@@ -962,4 +962,4 @@ typedef typename Allocator::value_type value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter _ `Ty`.
+The type is a synonym for the template parameter `Type`.

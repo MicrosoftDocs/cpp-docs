@@ -13,7 +13,7 @@ A semicolon may be missing.
 
 The following sample generates C2628:
 
-```
+```cpp
 // C2628.cpp
 class CMyClass {}
 int main(){}   // C2628 error
@@ -21,7 +21,7 @@ int main(){}   // C2628 error
 
 Possible resolution:
 
-```
+```cpp
 // C2628b.cpp
 class CMyClass {};
 int main(){}

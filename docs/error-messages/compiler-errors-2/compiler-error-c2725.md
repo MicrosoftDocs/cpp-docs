@@ -15,7 +15,7 @@ The type of a managed or WinRT exception was not correct.
 
 The following sample generates C2725 and shows how to fix it.
 
-```
+```cpp
 // C2725.cpp
 // compile with: /clr
 ref class R {
@@ -36,7 +36,7 @@ int main() {
 
 The following sample generates C2725 and shows how to fix it.
 
-```
+```cpp
 // C2725b.cpp
 // compile with: /clr
 using namespace System;

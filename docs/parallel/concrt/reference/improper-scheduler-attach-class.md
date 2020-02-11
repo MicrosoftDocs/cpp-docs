@@ -11,7 +11,7 @@ This class describes an exception thrown when the `Attach` method is called on a
 
 ## Syntax
 
-```
+```cpp
 class improper_scheduler_attach : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class improper_scheduler_attach : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> improper_scheduler_attach
+## <a name="ctor"></a> improper_scheduler_attach
 
 Constructs an `improper_scheduler_attach` object.
 
-```
+```cpp
 explicit _CRTIMP improper_scheduler_attach(_In_z_ const char* _Message) throw();
 
 improper_scheduler_attach() throw();

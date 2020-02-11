@@ -15,7 +15,7 @@ Or, there may be an extra brace in your source code before the location of the C
 
 The following sample generates C2601:
 
-```
+```cpp
 // C2601.cpp
 int main() {
    int i = 0;

@@ -13,7 +13,7 @@ The [selectany](../../cpp/selectany.md) attribute can be applied only to externa
 
 The following sample generates C2496:
 
-```
+```cpp
 // C2496.cpp
 // compile with: /c
 __declspec(selectany) int x1 = 1;

@@ -1,6 +1,6 @@
 ---
 title: "PROTO"
-ms.date: "10/22/2018"
+ms.date: "12/06/2019"
 f1_keywords: ["PROTO"]
 helpviewer_keywords: ["PROTO directive"]
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
@@ -11,27 +11,27 @@ Prototypes a function or procedure. You can call the function prototyped by the 
 
 ## Syntax
 
-> *label* **PROTO** \[*distance*] \[*langtype*] \[__,__ \[*parameter*]__:__*tag*] ...
+> *label* **PROTO** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦__,__ ⟦*parameter*⟧__:__*tag* ...⟧
 
 ### Parameters
 
-*label*<br/>
+*label*\
 The name of the prototyped function.
 
-*distance*<br/>
+*distance* (32-bit MASM only.)\
 (Optional) Used in 16-bit memory models to override the default and indicate **NEAR** or **FAR** calls.
 
-*langtype*<br/>
+*language-type* (32-bit MASM only.)\
 (Optional) Sets the calling and naming convention for procedures and public symbols. Supported conventions are:
 
 - 32-bit **FLAT** model: **C**, **STDCALL**
 
 - 16-bit models: **C**, **BASIC**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**
 
-*parameter*<br/>
+*parameter*\
 The optional name for a function parameter.
 
-*tag*<br/>
+*tag*\
 The type of a function parameter.
 
 The *parameter* and *tag* parameters may appear multiple times, once for each passed argument.
@@ -46,5 +46,6 @@ addup3 PROTO NEAR C, argcount:WORD, arg1:VARARG
 
 ## See also
 
-[Directives Reference](directives-reference.md)<br/>
-[.MODEL Reference](dot-model.md)<br/>
+[Directives Reference](directives-reference.md)\
+[.MODEL Reference](dot-model.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

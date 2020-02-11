@@ -13,7 +13,7 @@ You used `dynamic_cast` to convert from one type to another. The compiler determ
 
 The following shows an example of this warning. Class **B** is derived from class **A**. The program uses `dynamic_cast` to cast from class **B** (the derived class) to class **A**, which will always fail because class **B** is `private` and thus inaccessible. Changing the access of **A** to **public** will resolve the warning.
 
-```
+```cpp
 // C4540.cpp
 // compile with: /W1
 

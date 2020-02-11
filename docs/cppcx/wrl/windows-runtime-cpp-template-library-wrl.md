@@ -1,7 +1,7 @@
 ---
 title: "Windows Runtime C++ Template Library (WRL)"
 ms.date: "11/04/2016"
-ms.topic: "landing-page"
+ms.topic: "overview"
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
 ---
 # Windows Runtime C++ Template Library (WRL)
@@ -67,7 +67,7 @@ Uses the `HttpRequest` class that's defined in [Walkthrough: Connecting Using Ta
 [Creating a Windows Runtime DLL component with C++ sample](https://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
 Shows how to use the Windows Runtime C++ Template Library to create an in-process DLL component and consume it from C++/CX, JavaScript, and C#.
 
-[DirectX marble maze game sample](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
+[DirectX marble maze game sample](https://docs.microsoft.com/samples/microsoft/windows-appsample-marble-maze/directx-marble-maze-game-sample/)<br/>
 Demonstrates how to use the Windows Runtime C++ Template Library to manage the lifetime of COM components such as DirectX and Media Foundation in the context of a complete 3-D game.
 
 [Sending toast notifications from desktop apps sample](https://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
@@ -141,5 +141,5 @@ A `WeakRef` object typically represents an object whose existence is controlled 
 |-|-|
 |[Key APIs by Category](key-wrl-apis-by-category.md)|Highlights the primary Windows Runtime C++ Template Library types, functions, and macros.|
 |[Reference](wrl-reference.md)|Contains reference information for the Windows Runtime C++ Template Library.|
-|[Quick Reference C++/CX)](../../cppcx/quick-reference-c-cx.md)|Briefly describes the C++/CX features that support the Windows Runtime.|
+|[Quick Reference (C++/CX)](../../cppcx/quick-reference-c-cx.md)|Briefly describes the C++/CX features that support the Windows Runtime.|
 |[Using Windows Runtime Components in Visual C++](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Shows how to use C++/CX to create a basic Windows Runtime component.|

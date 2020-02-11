@@ -13,7 +13,7 @@ An incorrect GUID is supplied to the [uuid](../../cpp/uuid-cpp.md) extended attr
 
 The GUID must be a string of hexadecimal numbers with the following format:
 
-```
+```cpp
 // C2778a.cpp
 // compile with: /c
 struct __declspec(uuid("00000000-0000-0000-0000-000000000000")) A {};
@@ -24,7 +24,7 @@ The `uuid` extended attribute accepts strings recognized by [CLSIDFromString](/w
 
 The following sample generates C2778:
 
-```
+```cpp
 // C2778b.cpp
 struct __declspec(uuid(" 00000000-0000-0000-0000-000000000000 ")) C { };   // C2778
 struct __declspec(uuid("00000000000000000000000000000000")) D { };   // C2778

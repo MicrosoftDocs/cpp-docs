@@ -90,13 +90,9 @@ int omp_get_max_threads(void);
 
 The following expresses a lower bound on the value of `omp_get_max_threads`:
 
-```
+> *threads-used-for-next-team* <= `omp_get_max_threads`
 
-threads-used-for-next-team
-<= omp_get_max_threads
-```
-
-Note that if another parallel region uses the `num_threads` clause to request a specific number of threads, the guarantee on the lower bound of the result of `omp_get_max_threads` no long holds.
+Note that if another parallel region uses the `num_threads` clause to request a specific number of threads, the guarantee on the lower bound of the result of `omp_get_max_threads` no longer holds.
 
 The `omp_get_max_threads` function's return value can be used to dynamically allocate sufficient storage for all threads in the team formed at the next parallel region.
 
@@ -163,9 +159,9 @@ A call to `omp_set_dynamic` has precedence over the `OMP_DYNAMIC` environment va
 
 The default for the dynamic adjustment of threads is implementation-defined. As a result, user codes that depend on a specific number of threads for correct execution should explicitly disable dynamic threads. Implementations aren't required to provide the ability to dynamically adjust the number of threads, but they're required to provide the interface to support portability across all platforms.
 
-#### Microsoft specific
+#### Microsoft-specific
 
-The current support of `omp_get_dynamic` and `omp_set_dynamic` is as follows: 
+The current support of `omp_get_dynamic` and `omp_set_dynamic` is as follows:
 
 The input parameter to `omp_set_dynamic` does not affect the threading policy and does not change the number of threads. `omp_get_num_threads` always returns either the user-defined number, if that is set, or the default thread number. In the current Microsoft implementation, `omp_set_dynamic(0)` turns off dynamic threading so that the existing set of threads can be reused for the following parallel region. `omp_set_dynamic(1)` turns on dynamic threading by discarding the existing set of threads and creating a new set for the upcoming parallel region. The number of threads in the new set is the same as the old set, and is based on the return value of `omp_get_num_threads`. Therefore, for best performance, use `omp_set_dynamic(0)` to reuse the existing threads.
 

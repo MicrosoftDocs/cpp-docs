@@ -20,7 +20,7 @@ In the following example, the class `MyClass` (and the property `m_nCount`) is m
 
 ### Code
 
-```
+```cpp
 // serialization_and_mcpp.cpp
 // compile with: /LD /clr
 using namespace System;

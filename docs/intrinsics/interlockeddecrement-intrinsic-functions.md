@@ -151,6 +151,8 @@ void __cdecl SimpleThread(void* pParam) {
 }
 ```
 
+**END Microsoft Specific**
+
 ## See also
 
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\

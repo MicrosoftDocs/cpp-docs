@@ -13,7 +13,7 @@ A function defined as [naked](../../cpp/naked-cpp.md) cannot use structured exce
 
 The following sample generates C2490:
 
-```
+```cpp
 // C2490.cpp
 // processor: x86
 __declspec( naked ) int func() {

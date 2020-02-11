@@ -23,7 +23,7 @@ To resolve the error, be sure that the exception-handling intrinsics are placed 
 
 The following sample generates C2707.
 
-```
+```cpp
 // C2707.cpp
 #include <windows.h>
 #include <stdio.h>

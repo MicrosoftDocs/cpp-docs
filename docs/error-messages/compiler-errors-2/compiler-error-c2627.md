@@ -13,7 +13,7 @@ An [anonymous union](../../cpp/unions.md#anonymous_unions) cannot have member fu
 
 The following sample generates C2627:
 
-```
+```cpp
 // C2627.cpp
 int main() {
    union { void f(){} };   // C2627

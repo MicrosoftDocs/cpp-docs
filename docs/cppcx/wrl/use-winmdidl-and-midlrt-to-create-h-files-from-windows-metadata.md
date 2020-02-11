@@ -63,7 +63,7 @@ The next example shows the console display from winmdidl that indicates that the
 
 Next, midlrt is run on the generated IDL file. Notice that the **metadata_dir** argument is specified after the name of the .idl file. The path of \WinMetadata\ is required—it's the location for windows.winmd.
 
-`C:\Program Files (x86)\Microsoft Visual Studio 12.0> midlrt "c:\users\mblome\documents\test_for_winmdidl.idl" /metadata_dir "C:\Windows\System32\WinMetadata"`
+`C:\Program Files (x86)\Microsoft Visual Studio 12.0> midlrt "c:\users\username\documents\test_for_winmdidl.idl" /metadata_dir "C:\Windows\System32\WinMetadata"`
 
 ## Remarks
 

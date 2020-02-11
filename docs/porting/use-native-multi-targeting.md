@@ -1,6 +1,6 @@
 ---
 title: "Use native multi-targeting in Visual Studio to build old projects"
-ms.date: "11/04/2016"
+ms.date: "10/25/2019"
 helpviewer_keywords: ["C++ native multi-targeting", "upgrading Visual C++ applications, retargeting"]
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
 ---
@@ -36,11 +36,14 @@ If you choose not to upgrade, Visual Studio makes no changes to your solution or
 
 ## Instructions for Visual Studio 2008
 
-Visual Studio 2008 had its own dedicated build system for C++ called **VCBuild**. Starting in Visual Studio 2010, Visual Studio C++ projects were changed to use **MSBuild**. This means that you must go through an update step to build your Visual Studio 2008 projects in the latest version of Visual Studio. Your updated project still generates binaries that are fully compatible with binaries created using the Visual Studio 2008 IDE.
+Visual Studio 2008 had its own dedicated build system for C++ called **VCBuild**. Starting in Visual Studio 2010, Visual Studio C++ projects were changed to use **MSBuild**. This means that whether upgrading permanently or multi-targeting you must go through an update step to build your Visual Studio 2008 projects in the latest version of Visual Studio. Your updated project still generates binaries that are fully compatible with binaries created using the Visual Studio 2008 IDE.
 
 First, in addition to the current version of Visual Studio, you must install Visual Studio 2010 on the same computer as Visual Studio 2008. Only Visual Studio 2010 installs the **MSBuild** scripts that are required to target Visual Studio 2008 projects.
 
 Next, you must update your Visual Studio 2008 solution and projects to the current version of Visual Studio. We recommend you create a backup of your projects and solution files before the upgrade. To start the upgrade process, open the solution in the current version of Visual Studio. When you get the upgrade prompt, review the information presented, and then choose **OK** to start the upgrade. If you have more than one project in the solution, you must update The wizard creates new .vcxproj project files side-by-side with the existing .vcproj files. As long as you also have a copy of the original .sln file, the upgrade has no other impact on your existing Visual Studio 2008 projects.
+
+> [!NOTE]
+> The following steps apply to multi-targeting scenarios only. If you intend to permanently upgrade the project to a later toolset, then your next step is to save the project, open it in Visual Studio 2019, and address the build issues that appear there.
 
 When the upgrade completes, if the log report has errors or warnings for any of your projects, review them carefully. The conversion from **VCBuild** to **MSBuild** can cause issues. Make sure you understand and implement any action items listed in the report. For more information on the upgrade log report and issues that may occur when converting **VCBuild** to **MSBuild**, see this [C++ Native Multi-Targeting](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) blog post.
 
@@ -58,5 +61,5 @@ When these products are installed, the **Platform Toolset** property drop-down i
 
 ## See also
 
-[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Upgrading projects from earlier versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)

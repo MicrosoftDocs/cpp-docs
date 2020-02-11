@@ -28,7 +28,7 @@ Before you start this walkthrough:
 
 - Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).
 
-- Make sure you are running at least Windows 8 or Windows Server 2012 to support debugging on the software emulator. 
+- Make sure you are running at least Windows 8 or Windows Server 2012 to support debugging on the software emulator.
 
 [!INCLUDE[note_settings_general](../../mfc/includes/note_settings_general_md.md)]
 
@@ -42,7 +42,7 @@ The instructions for creating a project vary depending on which version of Visua
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `AMPMapReduce` in the **Name** box to specify a name for the project, and specify the project location if desired.
 
@@ -74,7 +74,7 @@ The instructions for creating a project vary depending on which version of Visua
 
 Next:
 
-8. Open AMPMapReduce.cpp and replace its content with the following code.
+1. Open AMPMapReduce.cpp and replace its content with the following code.
 
 ```cpp
     // AMPMapReduce.cpp defines the entry point for the program.
@@ -193,15 +193,15 @@ Next:
     }
 ```
 
-9. On the menu bar, choose **File** > **Save All**.
+1. On the menu bar, choose **File** > **Save All**.
 
-10. In **Solution Explorer**, open the shortcut menu for **AMPMapReduce**, and then choose **Properties**.
+1. In **Solution Explorer**, open the shortcut menu for **AMPMapReduce**, and then choose **Properties**.
 
-11. In the **Property Pages** dialog box, under **Configuration Properties**, choose **C/C++** > **Precompiled Headers**.
+1. In the **Property Pages** dialog box, under **Configuration Properties**, choose **C/C++** > **Precompiled Headers**.
 
-12. For the **Precompiled Header** property, select **Not Using Precompiled Headers**, and then choose the **OK** button.
+1. For the **Precompiled Header** property, select **Not Using Precompiled Headers**, and then choose the **OK** button.
 
-13. On the menu bar, choose **Build** > **Build Solution**.
+1. On the menu bar, choose **Build** > **Build Solution**.
 
 ## Debugging the CPU Code
 

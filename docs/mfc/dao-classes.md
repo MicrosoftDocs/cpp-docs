@@ -1,11 +1,13 @@
 ---
 title: "DAO Classes"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 f1_keywords: ["vc.classes.data"]
 helpviewer_keywords: ["database classes [MFC], DAO", "DAO [MFC], classes"]
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
 ---
 # DAO Classes
+
+DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 
 These classes work with the other application framework classes to give easy access to Data Access Object (DAO) databases, which use the same database engine as Microsoft Visual Basic and Microsoft Access. The DAO classes can also access a wide variety of databases for which Open Database Connectivity (ODBC) drivers are available.
 

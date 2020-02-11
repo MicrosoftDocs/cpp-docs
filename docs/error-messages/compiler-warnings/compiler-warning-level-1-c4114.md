@@ -13,7 +13,7 @@ A type declaration or definition uses a type qualifier (**const**, **volatile**,
 
 The following sample generates C4114:
 
-```
+```cpp
 // C4114.cpp
 // compile with: /W1 /c
 volatile volatile int i;   // C4114
@@ -21,7 +21,7 @@ volatile volatile int i;   // C4114
 
 The following sample generates C4114:
 
-```
+```cpp
 // C4114_b.cpp
 // compile with: /W1 /c
 static const int const * ii;   // C4114

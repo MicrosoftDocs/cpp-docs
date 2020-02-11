@@ -19,7 +19,7 @@ The indicated template argument type cannot contain a usage of the `auto` keywor
 
 The following example yields C3539.
 
-```
+```cpp
 // C3539.cpp
 // Compile with /Zc:auto
 template<class T> class C{};

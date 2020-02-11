@@ -13,7 +13,7 @@ You tried to use [super](../../cpp/super.md) to call a nonexistent member functi
 
 The following sample generates C2794
 
-```
+```cpp
 // C2794.cpp
 struct B {
    void mf();

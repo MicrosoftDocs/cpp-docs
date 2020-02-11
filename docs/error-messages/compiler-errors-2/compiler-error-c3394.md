@@ -15,7 +15,7 @@ A constraint was ill formed.  For more information, see [Constraints on Generic 
 
 The following sample generates C3394:
 
-```
+```cpp
 // C3394.cpp
 // compile with: /clr /c
 ref class MyClass {};

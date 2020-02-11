@@ -15,7 +15,7 @@ You cannot apply [typeid](../../extensions/typeid-cpp-component-extensions.md) t
 
 The following sample generates C3223.
 
-```
+```cpp
 // C3223.cpp
 // compile with: /clr
 ref class R {

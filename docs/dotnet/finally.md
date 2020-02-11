@@ -18,7 +18,7 @@ The purpose of the `finally` block is to clean up any resources left after the e
 
 The following example demonstrates a simple `finally` block:
 
-```
+```cpp
 // keyword__finally.cpp
 // compile with: /clr
 using namespace System;

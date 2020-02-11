@@ -13,7 +13,7 @@ The <xref:System.ParamArrayAttribute> attribute was applied to a parameter that 
 
 The following sample generates C3132:
 
-```
+```cpp
 // C3132.cpp
 // compile with: /clr /c
 using namespace System;

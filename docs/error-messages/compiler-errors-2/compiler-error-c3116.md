@@ -13,7 +13,7 @@ You used `typedef`, `register`, or `static` as the storage class for an interfac
 
 The following sample generates C3116:
 
-```
+```cpp
 // C3116.cpp
 __interface ImyInterface
 {

@@ -1,6 +1,6 @@
 ---
 title: "Compiler Warning (level 4) C4295"
-ms.date: "1/09/2018"
+ms.date: "01/09/2018"
 f1_keywords: ["C4295"]
 helpviewer_keywords: ["C4295"]
 ms.assetid: 20dbff85-9f62-4ca3-8fe9-079d4512006d

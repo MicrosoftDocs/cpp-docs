@@ -1,18 +1,19 @@
 ---
 title: "@fardata?"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["@fardata?"]
 helpviewer_keywords: ["@fardata? symbol"]
 ms.assetid: 5184ac8d-c433-4136-81b2-3e7f6082415d
 ---
-# @fardata?
+# \@fardata?
 
-The name of the segment defined by the [.FARDATA?](../../assembler/masm/dot-fardata-q.md) directive (text macro).
+The name of the segment defined by the [.FARDATA?](dot-fardata-q.md) directive (text macro).
 
 ## Syntax
 
-> @fardata?
+> **\@fardata?**
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

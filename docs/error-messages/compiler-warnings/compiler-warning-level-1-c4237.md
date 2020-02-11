@@ -13,7 +13,7 @@ A keyword in the C++ specification is not implemented in the Microsoft C++ compi
 
 The following sample generates C4237:
 
-```
+```cpp
 // C4237.cpp
 // compile with: /W1 /c
 int export;   // C4237

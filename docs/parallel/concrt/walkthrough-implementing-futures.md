@@ -9,7 +9,7 @@ ms.assetid: 82ea75cc-aaec-4452-b10d-8abce0a87e5b
 This topic shows how to implement futures in your application. The topic demonstrates how to combine existing functionality in the Concurrency Runtime into something that does more.
 
 > [!IMPORTANT]
->  This topic illustrates the concept of futures for demonstration purposes. We recommend that you use [std::future](../../standard-library/future-class.md) or [concurrency::task](../../parallel/concrt/reference/task-class.md) when you require an asynchronous task that computes a value for later use.
+> This topic illustrates the concept of futures for demonstration purposes. We recommend that you use [std::future](../../standard-library/future-class.md) or [concurrency::task](../../parallel/concrt/reference/task-class.md) when you require an asynchronous task that computes a value for later use.
 
 A *task* is a computation that can be decomposed into additional, more fine-grained, computations. A *future* is an asynchronous task that computes a value for later use.
 

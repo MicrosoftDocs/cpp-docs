@@ -22,7 +22,7 @@ The Visual C++ implementation of the OpenMP standard includes the following envi
 
 Specifies whether the OpenMP run time can adjust the number of threads in a parallel region.
 
-```
+```cmd
 set OMP_DYNAMIC[=TRUE | =FALSE]
 ```
 
@@ -38,13 +38,13 @@ For more information, see [4.3 OMP_DYNAMIC](../../../parallel/openmp/4-3-omp-dyn
 
 The following command sets the `OMP_DYNAMIC` environment variable to TRUE:
 
-```
+```cmd
 set OMP_DYNAMIC=TRUE
 ```
 
 The following command displays the current setting of the `OMP_DYNAMIC` environment variable:
 
-```
+```cmd
 set OMP_DYNAMIC
 ```
 
@@ -52,7 +52,7 @@ set OMP_DYNAMIC
 
 Specifies whether nested parallelism is enabled, unless nested parallelism is enabled or disabled with `omp_set_nested`.
 
-```
+```cmd
 set OMP_NESTED[=TRUE | =FALSE]
 ```
 
@@ -68,13 +68,13 @@ For more information, see [4.4 OMP_NESTED](../../../parallel/openmp/4-4-omp-nest
 
 The following command sets the `OMP_NESTED` environment variable to TRUE:
 
-```
+```cmd
 set OMP_NESTED=TRUE
 ```
 
 The following command displays the current setting of the `OMP_NESTED` environment variable:
 
-```
+```cmd
 set OMP_NESTED
 ```
 
@@ -82,7 +82,7 @@ set OMP_NESTED
 
 Sets the maximum number of threads in the parallel region, unless overridden by [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) or [num_threads](openmp-clauses.md#num-threads).
 
-```
+```cmd
 set OMP_NUM_THREADS[=num]
 ```
 
@@ -103,13 +103,13 @@ For more information, see [4.2 OMP_NUM_THREADS](../../../parallel/openmp/4-2-omp
 
 The following command sets the `OMP_NUM_THREADS` environment variable to `16`:
 
-```
+```cmd
 set OMP_NUM_THREADS=16
 ```
 
 The following command displays the current setting of the `OMP_NUM_THREADS` environment variable:
 
-```
+```cmd
 set OMP_NUM_THREADS
 ```
 
@@ -117,7 +117,7 @@ set OMP_NUM_THREADS
 
 Modifies the behavior of the [schedule](openmp-clauses.md#schedule) clause when `schedule(runtime)` is specified in a `for` or `parallel for` directive.
 
-```
+```cmd
 set OMP_SCHEDULE[=type[,size]]
 ```
 
@@ -139,12 +139,12 @@ For more information, see [4.1 OMP_SCHEDULE](../../../parallel/openmp/4-1-omp-sc
 
 The following command sets the `OMP_SCHEDULE` environment variable:
 
-```
+```cmd
 set OMP_SCHEDULE="guided,2"
 ```
 
 The following command displays the current setting of the `OMP_SCHEDULE` environment variable:
 
-```
+```cmd
 set OMP_SCHEDULE
 ```

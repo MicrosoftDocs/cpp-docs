@@ -8,7 +8,7 @@ ms.assetid: f261ad79-e25b-4afa-9f8a-909ce697e0d8
 
 ## <a name="cv_status"></a> cv_status
 
-Supplies symbolic names for the return values of the methods of template class [condition_variable](../standard-library/condition-variable-class.md).
+Supplies symbolic names for the return values of the methods of class template [condition_variable](../standard-library/condition-variable-class.md).
 
 class cv_status {
    no_timeout

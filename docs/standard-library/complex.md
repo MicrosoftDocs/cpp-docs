@@ -7,7 +7,7 @@ ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
 ---
 # &lt;complex&gt;
 
-Defines the container template class `complex` and its supporting templates.
+Defines the container class template `complex` and its supporting templates.
 
 ## Requirements
 
@@ -112,10 +112,10 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 |||
 |-|-|
-|[complex\<double>](../standard-library/complex-double.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **double**, where the first represents the real part of a complex number and the second represents the imaginary part.|
-|[complex\<float>](../standard-library/complex-float.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **float**, where the first represents the real part of a complex number and the second represents the imaginary part.|
-|[complex\<long double>](../standard-library/complex-long-double.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **long double**, where the first represents the real part of a complex number and the second represents the imaginary part.|
-|[complex](../standard-library/complex-class.md)|The template class describes an object used to represent the complex number system and perform complex arithmetic operations.|
+|[complex\<double>](../standard-library/complex-double.md)|The explicitly specialized class template describes an object that stores an ordered pair of objects, both of type **double**, where the first represents the real part of a complex number and the second represents the imaginary part.|
+|[complex\<float>](../standard-library/complex-float.md)|The explicitly specialized class template describes an object that stores an ordered pair of objects, both of type **float**, where the first represents the real part of a complex number and the second represents the imaginary part.|
+|[complex\<long double>](../standard-library/complex-long-double.md)|The explicitly specialized class template describes an object that stores an ordered pair of objects, both of type **long double**, where the first represents the real part of a complex number and the second represents the imaginary part.|
+|[complex](../standard-library/complex-class.md)|The class template describes an object used to represent the complex number system and perform complex arithmetic operations.|
 
 ### Literals
 

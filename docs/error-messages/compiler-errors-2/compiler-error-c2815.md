@@ -13,7 +13,7 @@ Any user-defined [operator delete](../../standard-library/new-operators.md#op_de
 
 The following sample generates C2815:
 
-```
+```cpp
 // C2815.cpp
 // compile with: /c
 class CMyClass {

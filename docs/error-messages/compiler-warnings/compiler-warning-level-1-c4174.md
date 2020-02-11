@@ -11,7 +11,7 @@ ms.assetid: 63301e51-24bc-43c4-bb11-252f7d513e9e
 
 ## Example
 
-```
+```cpp
 // C4174.cpp
 // compile with: /W1
 #pragma component(info)  // C4174; unknown

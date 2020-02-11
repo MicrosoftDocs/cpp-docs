@@ -15,7 +15,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 The following sample generates C1190:
 
-```
+```cpp
 // C1190.cpp
 // compile with: /c
 __gc class A {};   // C1190

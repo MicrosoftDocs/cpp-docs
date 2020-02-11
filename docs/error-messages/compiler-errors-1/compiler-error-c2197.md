@@ -13,7 +13,7 @@ The compiler detected too many parameters for a call to the function, or an inco
 
 The following sample generates C2197:
 
-```
+```c
 // C2197.c
 // compile with: /Za /c
 void func( int );

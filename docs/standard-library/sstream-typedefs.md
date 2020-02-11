@@ -22,7 +22,7 @@ typedef basic_istringstream<char> istringstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_istringstream](../standard-library/basic-istringstream-class.md), specialized for elements of type **char**.
+The type is a synonym for class template [basic_istringstream](../standard-library/basic-istringstream-class.md), specialized for elements of type **char**.
 
 ## <a name="ostringstream"></a>  ostringstream
 
@@ -34,7 +34,7 @@ typedef basic_ostringstream<char> ostringstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ostringstream](../standard-library/basic-ostringstream-class.md), specialized for elements of type **char**.
+The type is a synonym for class template [basic_ostringstream](../standard-library/basic-ostringstream-class.md), specialized for elements of type **char**.
 
 ## <a name="stringbuf"></a>  stringbuf
 
@@ -46,7 +46,7 @@ typedef basic_stringbuf<char> stringbuf;
 
 ### Remarks
 
-The type is a synonym for template class [basic_stringbuf](../standard-library/basic-stringbuf-class.md), specialized for elements of type **char**.
+The type is a synonym for class template [basic_stringbuf](../standard-library/basic-stringbuf-class.md), specialized for elements of type **char**.
 
 ## <a name="stringstream"></a>  stringstream
 
@@ -58,7 +58,7 @@ typedef basic_stringstream<char> stringstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_stringstream](../standard-library/basic-stringstream-class.md), specialized for elements of type **char**.
+The type is a synonym for class template [basic_stringstream](../standard-library/basic-stringstream-class.md), specialized for elements of type **char**.
 
 ## <a name="wistringstream"></a>  wistringstream
 
@@ -70,7 +70,7 @@ typedef basic_istringstream<wchar_t> wistringstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_istringstream](../standard-library/basic-istringstream-class.md), specialized for elements of type **wchar_t**.
+The type is a synonym for class template [basic_istringstream](../standard-library/basic-istringstream-class.md), specialized for elements of type **wchar_t**.
 
 ## <a name="wostringstream"></a>  wostringstream
 
@@ -82,7 +82,7 @@ typedef basic_ostringstream<wchar_t> wostringstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ostringstream](../standard-library/basic-ostringstream-class.md), specialized for elements of type **wchar_t**.
+The type is a synonym for class template [basic_ostringstream](../standard-library/basic-ostringstream-class.md), specialized for elements of type **wchar_t**.
 
 ## <a name="wstringbuf"></a>  wstringbuf
 
@@ -94,7 +94,7 @@ typedef basic_stringbuf<wchar_t> wstringbuf;
 
 ### Remarks
 
-The type is a synonym for template class [basic_stringbuf](../standard-library/basic-stringbuf-class.md), specialized for elements of type **wchar_t**.
+The type is a synonym for class template [basic_stringbuf](../standard-library/basic-stringbuf-class.md), specialized for elements of type **wchar_t**.
 
 ## <a name="wstringstream"></a>  wstringstream
 
@@ -106,7 +106,7 @@ typedef basic_stringstream<wchar_t> wstringstream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_stringstream](../standard-library/basic-stringstream-class.md), specialized for elements of type **wchar_t**.
+The type is a synonym for class template [basic_stringstream](../standard-library/basic-stringstream-class.md), specialized for elements of type **wchar_t**.
 
 ## See also
 

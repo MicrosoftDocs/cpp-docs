@@ -1,6 +1,6 @@
 ---
 title: "ENDP"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["ENDP"]
 helpviewer_keywords: ["ENDP directive"]
 ms.assetid: 31fc8040-8c49-43e2-8885-a20ba3b69551
@@ -11,12 +11,13 @@ Marks the end of procedure *name* previously begun with **PROC**.
 
 ## Syntax
 
-> *name* ENDP
+> *name* **ENDP**
 
 ## Remarks
 
-See [PROC](../../assembler/masm/proc.md).
+See [PROC](proc.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

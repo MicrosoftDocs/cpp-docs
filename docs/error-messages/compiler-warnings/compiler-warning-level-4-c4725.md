@@ -13,7 +13,7 @@ Your code contains an inline assembly instruction that may not produce accurate 
 
 The following sample generates C4725:
 
-```
+```cpp
 // C4725.cpp
 // compile with: /W4
 // processor: x86

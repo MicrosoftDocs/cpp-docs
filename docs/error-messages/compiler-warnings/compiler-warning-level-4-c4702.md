@@ -17,7 +17,7 @@ For code that is valid in both the Visual Studio .NET 2003 and Visual Studio .NE
 
 The following sample generates C4702.
 
-```
+```cpp
 // C4702.cpp
 // compile with: /W4
 #include <stdio.h>
@@ -36,7 +36,7 @@ For more information, see [/EH (Exception Handling Model)](../../build/reference
 
 The following sample generates C4702.
 
-```
+```cpp
 // C4702b.cpp
 // compile with: /W4 /EHsc
 #include <iostream>

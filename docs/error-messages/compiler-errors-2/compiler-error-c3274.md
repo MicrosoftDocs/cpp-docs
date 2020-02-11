@@ -13,7 +13,7 @@ A [__finally](../../cpp/try-finally-statement.md) or [finally](../../dotnet/fina
 
 The following sample generates C3274:
 
-```
+```cpp
 // C3274.cpp
 // compile with: /clr
 // C3274 expected

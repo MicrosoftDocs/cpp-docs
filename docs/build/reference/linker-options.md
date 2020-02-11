@@ -1,11 +1,12 @@
 ---
-title: "MSVC Linker Options"
-ms.date: "08/20/2018"
+title: "MSVC Linker options"
+description: A list of the options supported by the Microsoft LINK linker.
+ms.date: "09/24/2019"
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
 ---
-# Linker Options
+# Linker options
 
 LINK.exe links Common Object File Format (COFF) object files and libraries to create an executable (.exe) file or a dynamic-link library (DLL).
 
@@ -22,6 +23,8 @@ The following table lists options for LINK.exe. For more information about LINK,
 On the command line, linker options are not case-sensitive; for example, /base and /BASE mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
 
 You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify some linker options.
+
+## Linker options listed alphabetically
 
 |Option|Purpose|
 |------------|-------------|
@@ -73,6 +76,8 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)|Specifies a key or key pair to sign an assembly.|
 |[/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)|Tells the compiler that the application supports addresses larger than two gigabytes|
 |[/LIBPATH](libpath-additional-libpath.md)|Specifies a path to search before the environmental library path.|
+|[/LINKREPRO](linkrepro.md)|Specifies a path to generate link repro artifacts in.|
+|[/LINKREPROTARGET](linkreprotarget.md)|Generates a link repro only when producing the specified target.<sup>16.1</sup>|
 |[/LTCG](ltcg-link-time-code-generation.md)|Specifies link-time code generation.|
 |[/MACHINE](machine-specify-target-platform.md)|Specifies the target platform.|
 |[/MANIFEST](manifest-create-side-by-side-assembly-manifest.md)|Creates a side-by-side manifest file and optionally embeds it in the binary.|
@@ -121,9 +126,9 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/WINMDDELAYSIGN](winmddelaysign-partially-sign-a-winmd.md)|Partially signs a Windows Runtime Metadata (.winmd) file by placing the public key in the winmd file.|
 |[/WX](wx-treat-linker-warnings-as-errors.md)|Treats linker warnings as errors.|
 
-For more information, see [Compiler-Controlled LINK Options](compiler-controlled-link-options.md).
+<sup>16.1</sup> This option is available starting in Visual Studio 2019 version 16.1.
 
 ## See also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
+[C/C++ Building Reference](c-cpp-building-reference.md)\
 [MSVC linker reference](linking.md)

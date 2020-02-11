@@ -13,7 +13,7 @@ Type `void` cannot be used as an argument type with other arguments.
 
 The following sample generates C2860:
 
-```
+```cpp
 // C2860.cpp
 // compile with: /c
 void profunc1(void, int i);   // C2860

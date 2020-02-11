@@ -1,19 +1,40 @@
 ---
 title: "Configure CMake debugging sessions in Visual Studio"
-ms.date: "03/21/2019"
+description: "Describes how to use Visual Studio to configure CMake debugger settings"
+ms.date: "01/13/2020"
 helpviewer_keywords: ["CMake debugging"]
 ---
 # Configure CMake debugging sessions
+
+::: moniker range="vs-2015"
+
+Native CMake support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 All executable CMake targets are shown in the **Startup Item** dropdown in the **General** toolbar. To start a debugging session, just select one and launch the debugger.
 
 ![CMake startup item dropdown](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
 
-You can also start a debug session from the CMake menus.
+You can also start a debug session from Solution Explorer. First, switch to **CMake Targets View** in the **Solution Explorer** window.
+
+![CMake targets view button](media/cmake-targets-view.png  "CMake Targets View menu item")
+
+Then, right-click on any executable and select **Debug** or **Debug and Launch Settings**. **Debug** automatically starts debugging the selected target, based on your active configuration. **Debug and Launch Settings** opens the *launch.vs.json* file and adds a new debug configuration for the selected target.
 
 ## Customize debugger settings
 
-To customize the debugger settings for any executable CMake target in your project, right-click on the specific CMakeLists.txt file and select **Debug and Launch Settings**. (Or select a target in **Targets View** in **Solution Explorer**.) When you select a CMake target in the submenu, a file called **launch.vs.json** is created. This file is pre-populated with information about the CMake target you have selected and allows you to specify additional parameters such as program arguments or debugger type. To reference any key in a **CMakeSettings.json** file, preface it with `cmake.` in **launch.vs.json**. The following example shows a simple **launch.vs.json** file that pulls in the value of the `remoteCopySources` key in the **CMakeSettings.json** file for the currently selected configuration:
+You can customize the debugger settings for any executable CMake target in your project in a file called *launch.vs.json*. There are three entry points to this file:
+
+- Select **Debug > Debug and Launch Settings for ${activeDebugTarget}** from the main menu to edit the debug configuration specific to your active debug target. If you don't have an active target selected, this option will be grayed out.
+
+- Navigate to **Targets View** in Solution Explorer. Then, right-click on a debug target and select **Debug and Launch Settings** to edit the debug configuration specific to your selected target.
+
+- Right-click on a root CMakeLists.txt and select **Debug and Launch Settings** to open the **Select a Debugger** dialog box. The dialog allows you to add any debug configuration, but you must manually specify the CMake target to invoke via the `projectTarget` property.
+
+To reference any key in a *CMakeSettings.json* file, preface it with `cmake.` in *launch.vs.json*. The following example shows a simple *launch.vs.json* file that pulls in the value of the `remoteCopySources` key in the *CMakeSettings.json* file for the currently selected configuration:
 
 ```json
 {
@@ -31,40 +52,141 @@ To customize the debugger settings for any executable CMake target in your proje
 }
 ```
 
-As soon as you save the  **launch.vs.json** file, an entry is created in the **Startup Item** dropdown with the new name. By editing the  **launch.vs.json** file, you can create as many debug configurations as you like for any number of CMake targets.
+When you save the *launch.vs.json* file, Visual Studio creates an entry for the new name in the **Startup Item** dropdown. You can edit the *launch.vs.json* file to create multiple debug configurations, for any number of CMake targets.
 
-## Support for CMakeSettings variables
+## Launch.vs.json reference
 
- **Launch.vs.json** supports variables that are declared in **CMakeSettings.json** (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app for a local project:
+There are many *launch.vs.json* properties to support all your debugging scenarios. The following properties are common to all debug configurations, both remote and local:
+
+- `projectTarget`: Specifies the CMake target to invoke when building the project. Visual Studio autopopulates this property if you enter *launch.vs.json* from **Debug > Debug and Launch Settings for ${activeDebugTarget}** or **Targets View**.
+
+- `program`: Full path to the program executable on the remote system. You can use the macro `${debugInfo.fullTargetPath}` here.
+
+- `args`: Command-line arguments passed to the program to debug.
+
+## Launch.vs.json reference for remote Linux projects
+
+The following properties are specific to **remote debug configurations**. You can also [execute custom gdb commands](https://github.com/microsoft/MIEngine/wiki/Executing-custom-gdb-lldb-commands) to send commands directly to the underlying debugger, and [enable MIEngine logging](https://github.com/microsoft/MIEngine/wiki/Logging) to see what commands get sent to gdb, what output gdb returns, and how long each command takes.
+
+- `cwd`: Current working directory for finding dependencies and other files on the remote machine. The macro `${debugInfo.defaultWorkingDirectory}` can be used. The default value is the remote workspace root unless overridden in *CMakeLists.txt*. This property is only used for remote configurations; `currentDir` is used to set the current directory of the launching app for a local project.
+
+- `environment`: Additional environment variables to add to the environment for the program with this syntax:
 
 ```json
-{
-  "type": "default",
-  "project": "CMakeLists.txt",
-  "projectTarget": "CMakeHelloWorld1.exe (C:\\Users\\satyan\\CMakeBuilds\\Test\\Debug\\CMakeHelloWorld1.exe)",
-  "name": "CMakeHelloWorld1.exe (C:\\Users\\satyan\\CMakeBuilds\\Test\\Debug\\CMakeHelloWorld1.exe)",
-  "currentDir": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}"
-}
+  "environment": [
+      {
+        "name": "ENV1",
+        "value": "envvalue1"
+      },
+      {
+        "name": "ENV2",
+        "value": "envvalue2"
+      }
+    ]
 ```
 
-When you run the app, the value of `currentDir` is something similar to
+- `pipeArgs`: Command-line arguments passed to the pipe program to configure the connection. The pipe program is used to relay standard input/output between Visual Studio and gdb. The command `${debuggerCommand}` launches gdb on the remote system, and can be modified to:
 
-```cmd
-C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
-```
+  - Export the value of the environment variable DISPLAY on your Linux system. In the following example, this value is `:1`.
 
-The key 'cwd' sets the current directory of the launching app for a remote project. The default value is '${debugInfo.defaultWorkingDirectory}' which evaluates to 
+  ```json
+  "pipeArgs": [
+      "/s",
+      "${debugInfo.remoteMachineId}",
+      "/p",
+      "${debugInfo.parentProcessId}",
+      "/c",
+      "export DISPLAY=:1;${debuggerCommand}",
+      "--tty=${debugInfo.tty}"
+    ],
+  ```
 
-```cmd
-/var/tmp/src/bfc6f7f4-4f0f-8b35-80d7-9198fa973fb9/Linux-Debug
-```
+  - Run a script before the execution of gdb. Ensure execute permissions are set on your script.
+
+    ```json
+    "pipeArgs": [
+        "/s",
+        "${debugInfo.remoteMachineId}",
+        "/p",
+        "${debugInfo.parentProcessId}",
+        "/c",
+        "/path/to/script.sh;${debuggerCommand}",
+        "--tty=${debugInfo.tty}"
+      ],
+    ```
+
+- `stopOnEntry`: A boolean that specifies whether to break as soon as the process is launched. The default is false.
+
+- `visualizerFile`: A [.natvis file](/visualstudio/debugger/create-custom-views-of-native-objects) to use when debugging this process. This option is incompatible with gdb pretty printing. Also set `showDisplayString` when you set this property.
+
+- `showDisplayString`: A boolean that enables the display string when a `visualizerFile` is specified. Setting this option to `true` can cause slower performance during debugging.
+
+- `setupCommands`: One or more gdb command(s) to execute, to set up the underlying debugger.
+
+- `externalConsole`: A boolean that specifies whether a console is launched for the debuggee.
+
+- `miDebuggerPath`: The full path to gdb. When unspecified, Visual Studio searches PATH first for the debugger.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- `remoteMachineName`: The remote Linux system that hosts gdb and the program to debug.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+The following properties can be used to separate your **remote build system** from your **remote debug system**. For more information, see [Specify different machines for building and debugging](../linux/deploy-run-and-debug-your-linux-project.md#cmake-projects).
+
+- `remoteMachineName`: The remote Linux system that hosts gdb and the program to debug. This entry doesn't need to match the remote Linux system used for build specified in *CMakeSettings.json*. Press **Ctrl+Space** to view a list of all remote connections stored in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md).
+
+- `disableDeploy`: Indicates whether build/debug separation is disabled. When enabled, this feature allows build and debug to occur on two separate machines.
+
+- `deployDirectory`: The directory on the remote debug machine (specified by `remoteMachineName`) that the executable will be copied to.
+
+- `deploy`: An array of advanced deployment settings. You only need to configure these settings when you want more granular control over the deployment process. By default, only the files necessary for the process to debug will be deployed to the remote debug machine.
+
+  - `sourceMachine`: The machine from which the file or directory will be copied. Press **Ctrl+Space** to view a list of all the remote connections stored in the Connection Manager.
+
+  - `targetMachine`: The machine to which the file or directory will be copied. Press **Ctrl+Space** to view a list of all the remote connections stored in the Connection Manager.
+
+  - `sourcePath`: The file or directory location on `sourceMachine`.
+
+  - `targetPath`: The file or directory location on `targetMachine`.
+
+  - `deploymentType`: A description of the deployment type. `LocalRemote` and `RemoteRemote` are supported. `LocalRemote` means copying from the local file system to the remote system specified by `remoteMachineName` in *launch.vs.json*. `RemoteRemote` means copying from the remote build system specified in *CMakeSettings.json* to the different remote system specified in *launch.vs.json*.
+
+  - `executable`: Indicates whether the deployed file is an executable.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
+## Attach to a remote process
+
+You can attach to a process running on your Linux system by setting `processId` to the Process ID to attach the debugger to. For more information, see [Troubleshoot attaching to processes using GDB](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+## Debug on Linux using gdbserver
+
+Visual Studio 2019 version 16.5 Preview 1 or later supports the remote debugging of CMake projects with gdbserver. For more information, see [debugging Linux CMake projects with gdbserver](https://devblogs.microsoft.com/cppblog/debugging-linux-cmake-projects-with-gdbserver/).
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 ## See also
 
-[CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>
-[Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>
-[Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)<br/>
-[Customize CMake build settings](customize-cmake-settings.md)<br/>
-[Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/>
-[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
-[CMake predefined configuration reference](cmake-predefined-configuration-reference.md)<br/>
+[CMake projects in Visual Studio](cmake-projects-in-visual-studio.md)\
+[Configure a Linux CMake project](../linux/cmake-linux-project.md)\
+[Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)\
+[Customize CMake build settings](customize-cmake-settings.md)\
+[Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)\
+[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)\
+[CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
+
+::: moniker-end

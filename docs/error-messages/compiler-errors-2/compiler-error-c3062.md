@@ -15,7 +15,7 @@ For more information on enums, see [enum class](../../extensions/enum-class-cpp-
 
 The following sample generates C3062:
 
-```
+```cpp
 // C3062.cpp
 // compile with: /clr
 

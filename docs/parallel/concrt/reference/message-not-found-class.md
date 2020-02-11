@@ -11,7 +11,7 @@ This class describes an exception thrown when a messaging block is unable to fin
 
 ## Syntax
 
-```
+```cpp
 class message_not_found : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class message_not_found : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> message_not_found
+## <a name="ctor"></a> message_not_found
 
 Constructs a `message_not_found` object.
 
-```
+```cpp
 explicit _CRTIMP message_not_found(_In_z_ const char* _Message) throw();
 
 message_not_found() throw();

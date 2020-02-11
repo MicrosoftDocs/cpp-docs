@@ -1,13 +1,13 @@
 ---
 title: "CDaoDatabaseInfo Structure"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 f1_keywords: ["CDaoDatabaseInfo"]
 helpviewer_keywords: ["CDaoDatabaseInfo structure [MFC]", "DAO (Data Access Objects), Databases collection"]
 ms.assetid: 68e9e0da-8382-4fc6-8115-1b1519392ddb
 ---
 # CDaoDatabaseInfo Structure
 
-The `CDaoDatabaseInfo` structure contains information about a database object defined for data access objects (DAO).
+The `CDaoDatabaseInfo` structure contains information about a database object defined for data access objects (DAO). DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 

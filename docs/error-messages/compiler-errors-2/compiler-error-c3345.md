@@ -19,7 +19,7 @@ The *identifier* for a module contains one or more unacceptable characters. An i
 
 The following code example causes error message C3345 because the `name` parameter of the `module` attribute contains a blank.
 
-```
+```cpp
 // cpp_attr_name_module.cpp
 // compile with: /LD /link /OPT:NOREF
 #include <atlbase.h>

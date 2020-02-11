@@ -27,7 +27,7 @@ Configuration information for the locale facet.
 
 ## Remarks
 
-This template class converts between wide characters encoded as UCS-2 or UCS-4 and a byte stream encoded as UTF-16LE, if Mode & little_endian, or UTF-16BE otherwise.
+This class template converts between wide characters encoded as UCS-2 or UCS-4 and a byte stream encoded as UTF-16LE, if Mode & little_endian, or UTF-16BE otherwise.
 
 The byte stream should be written to a binary file; it can be corrupted if written to a text file.
 

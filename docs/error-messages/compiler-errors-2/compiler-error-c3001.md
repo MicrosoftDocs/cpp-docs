@@ -13,7 +13,7 @@ The `omp` pragma must be followed by a directive.
 
 The following sample generates C3001:
 
-```
+```c
 // C3001.c
 // compile with: /openmp
 int main()

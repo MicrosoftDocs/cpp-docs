@@ -13,7 +13,7 @@ You cannot reuse a name already used as a namespace.
 
 The following sample generates C2869:
 
-```
+```cpp
 // C2869.cpp
 // compile with: /c
 namespace A { int i; };

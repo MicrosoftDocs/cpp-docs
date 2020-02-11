@@ -8,7 +8,7 @@ ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
 
 Structured exception handling (SEH) is a Microsoft extension to C to handle certain exceptional code situations, such as hardware faults, gracefully. Although Windows and Microsoft C++ support SEH, we recommend that you use ISO-standard C++ exception handling because it makes your code more portable and flexible. Nevertheless, to maintain existing code or for particular kinds of programs, you still might have to use SEH.
 
-**Microsoft specific:**
+**Microsoft-specific:**
 
 ## Grammar
 
@@ -46,9 +46,9 @@ As it unwinds the stack, the operating system calls any termination handlers tha
 
 ## Next steps
 
-- [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)
+- [Writing an exception handler](../cpp/writing-an-exception-handler.md)
 
-- [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)
+- [Writing a termination handler](../cpp/writing-a-termination-handler.md)
 
 - [Handle structured exceptions in C++](../cpp/exception-handling-differences.md)
 
@@ -128,7 +128,7 @@ Executing SEH __except block
 
 For more information, see [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md).
 
-**END Microsoft Specific**
+**END Microsoft-specific**
 
 ## See also
 

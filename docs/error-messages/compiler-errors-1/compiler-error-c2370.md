@@ -15,7 +15,7 @@ The identifier is already declared with a different storage class.
 
 The following sample generates C2370:
 
-```
+```cpp
 // C2370.cpp
 // compile with: /Za /c
 extern int i;
@@ -27,7 +27,7 @@ int i;   // OK
 
 The following sample generates C2370:
 
-```
+```cpp
 // C2370b.cpp
 #define Thread __declspec( thread )
 extern int tls_i;

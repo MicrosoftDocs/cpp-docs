@@ -1,6 +1,6 @@
 ---
 title: "Compiler Warning (level 4) C4127"
-ms.date: "09/13/2018"
+ms.date: "10/16/2019"
 f1_keywords: ["C4127"]
 helpviewer_keywords: ["C4127"]
 ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
@@ -33,5 +33,34 @@ int main() {
       printf("test\n");
       break;
    }
+}
+```
+
+This warning can also be generated when a compile-time constant is used in a conditional expression:
+
+
+```cpp
+#include <string>
+
+using namespace std;
+
+template<size_t S, class T>
+void MyFunc()
+{
+   if (sizeof(T) >= S) // C4127. "Consider using 'if constexpr' statement instead"
+   {
+   }
+}
+
+class Foo
+{
+   int i;
+   string s;
+};
+
+int main()
+{
+   Foo f;
+   MyFunc<4, Foo>();
 }
 ```

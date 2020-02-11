@@ -1,9 +1,10 @@
 ---
 title: "rename, _wrename"
 ms.date: "11/04/2016"
-apiname: ["rename", "_wrename"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["rename", "_wrename"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_wrename", "_trename", "Rename"]
 helpviewer_keywords: ["trename function", "directories [C++], renaming", "renaming directories", "names [C++], changing file", "_trename function", "rename function", "wrename function", "files [C++], renaming", "_wrename function", "names [C++], changing directory", "renaming files"]
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a

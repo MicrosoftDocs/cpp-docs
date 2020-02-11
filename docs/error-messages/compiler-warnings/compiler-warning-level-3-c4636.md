@@ -15,7 +15,7 @@ A tag, such as `cref`, did not have a value.
 
 The following sample generates C4636.
 
-```
+```cpp
 // C4636.cpp
 // compile with: /clr /doc /W3 /c
 /// <see cref=''/>

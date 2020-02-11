@@ -11,7 +11,7 @@ ms.assetid: 155c64d6-58ae-4455-b61f-ccd711c5da96
 
 A word reserved for inline assembly is used as a variable name. This may cause unpredictable results. To fix this warning, avoid naming variables with words reserved for inline assembly. The following sample generates C4405:
 
-```
+```cpp
 // C4405.cpp
 // compile with: /W1
 // processor: x86

@@ -15,7 +15,7 @@ A class that inherits from an interface must implement the interface members.
 
 The following sample generates C3766.
 
-```
+```cpp
 // C3766.cpp
 // compile with: /clr /c
 

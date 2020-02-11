@@ -13,7 +13,7 @@ Code cannot jump into or out of an OpenMP block.
 
 The following sample generates C3009:
 
-```
+```c
 // C3009.c
 // compile with: /openmp
 int main() {

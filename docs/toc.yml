@@ -111,6 +111,17 @@
           href: build/cmake-predefined-configuration-reference.md
     - name: "vcpkg: A package manager for C++"
       href: build/vcpkg.md
+    - name: "C++ Build Insights"
+      expanded: false
+      items:
+        - name: "Get started with C++ Build Insights"
+          href: build-insights/get-started-with-cpp-build-insights.md
+        - name: "Windows Performance Analyzer basics"
+          href: build-insights/wpa-basics.md
+        - name: "vcperf.exe reference"
+          href: build-insights/vcperf-reference.md
+        - name: "Windows Performance Analyzer views reference"
+          href: build-insights/wpa-views-reference.md
     - name: Precompiled header files
       href: build/creating-precompiled-header-files.md
     - name: C++ release builds
@@ -409,6 +420,8 @@
                   href: build/reference/vcxproj-file-structure.md
                 - name: Example project file
                   href: build/reference/project-files.md
+                - name: .vcxproj.filters file structure
+                  href: build/reference/vcxproj-filters-files.md
             - name: C++ project property pages
               expanded: false
               items: 
@@ -679,6 +692,8 @@
                           href: build/reference/qifist-suppress-ftol.md
                         - name: /Qimprecise_fwaits (Remove fwaits inside try blocks)
                           href: build/reference/qimprecise-fwaits-remove-fwaits-inside-try-blocks.md
+                        - name: /QIntel-jcc-erratum
+                          href: build/reference/qintel-jcc-erratum.md
                         - name: /Qpar (Auto-parallelizer)
                           href: build/reference/qpar-auto-parallelizer.md
                         - name: /Qpar-report (Auto-parallelizer reporting level)
@@ -687,6 +702,10 @@
                           href: build/reference/qsafe-fp-loads.md
                         - name: /Qspectre
                           href: build/reference/qspectre.md
+                        - name: /Qspectre-load
+                          href: build/reference/qspectre-load.md
+                        - name: /Qspectre-load-cf
+                          href: build/reference/qspectre-load-cf.md
                         - name: /Qvec-report (Auto-vectorizer reporting level)
                           href: build/reference/qvec-report-auto-vectorizer-reporting-level.md
                     - name: /RTC (Run-time error checks)
@@ -794,6 +813,8 @@
                       href: build/reference/zf.md
                     - name: /Zg (Generate function prototypes)
                       href: build/reference/zg-generate-function-prototypes.md
+                    - name: "/ZH (Hash algorithm for checksum in debug info)"
+                      href: build/reference/zh.md
                     - name: /Zl (Omit default library name)
                       href: build/reference/zl-omit-default-library-name.md
                     - name: /Zm (Specify precompiled header memory allocation limit)
@@ -952,6 +973,10 @@
                   href: build/reference/largeaddressaware-handle-large-addresses.md
                 - name: /LIBPATH (Additional libpath)
                   href: build/reference/libpath-additional-libpath.md
+                - name: /LINKREPRO (Link repro directory name)
+                  href: build/reference/linkrepro.md
+                - name: /LINKREPROTARGET (Link repro file name)
+                  href: build/reference/linkreprotarget.md
                 - name: /LTCG (Link-time code generation)
                   href: build/reference/ltcg-link-time-code-generation.md
                 - name: /MACHINE (Specify target platform)
@@ -1096,7 +1121,7 @@
                       href: build/reference/notification-hooks.md
                     - name: Failure hooks
                       href: build/reference/failure-hooks.md
-                    - name: Exceptions (C/C++)
+                    - name: DLL load exception codes (C/C++)
                       href: build/reference/exceptions-c-cpp.md
                 - name: Dumping delay-loaded imports
                   href: build/reference/dumping-delay-loaded-imports.md
@@ -1149,34 +1174,7 @@
                     - name: Sample makefile
                       href: build/reference/sample-makefile.md
                 - name: Description blocks
-                  expanded: false
-                  items: 
-                    - name: Description blocks
-                      href: build/reference/description-blocks.md
-                    - name: Targets
-                      expanded: false
-                      items: 
-                        - name: Targets
-                          href: build/reference/targets.md
-                        - name: Pseudotargets
-                          href: build/reference/pseudotargets.md
-                        - name: Multiple targets
-                          href: build/reference/multiple-targets.md
-                        - name: Cumulative dependencies
-                          href: build/reference/cumulative-dependencies.md
-                        - name: Targets in multiple description blocks
-                          href: build/reference/targets-in-multiple-description-blocks.md
-                        - name: Dependency side effects
-                          href: build/reference/dependency-side-effects.md
-                    - name: Dependents
-                      expanded: false
-                      items: 
-                        - name: Dependents
-                          href: build/reference/dependents.md
-                        - name: Inferred dependents
-                          href: build/reference/inferred-dependents.md
-                        - name: Search paths for dependents
-                          href: build/reference/search-paths-for-dependents.md
+                  href: build/reference/description-blocks.md
                 - name: Commands in a makefile
                   expanded: false
                   items: 
@@ -1402,6 +1400,8 @@
                       href: build/reference/linkermember.md
                     - name: /LOADCONFIG
                       href: build/reference/loadconfig.md
+                    - name: /NOPDB
+                      href: build/reference/nopdb.md
                     - name: /OUT (DUMPBIN)
                       href: build/reference/out-dumpbin.md
                     - name: /PDATA
@@ -1521,6 +1521,8 @@
           href: ide/writing-and-refactoring-code-cpp.md
         - name: Navigate C++ code
           href: ide/navigate-code-cpp.md
+        - name: Set your C++ coding preferences
+          href: ide/how-to-set-preferences.md
         - name: Collaborate using Live Share for C++
           href: ide/live-share-cpp.md
         - name: Change signature
@@ -1700,7 +1702,7 @@
               href: atl-mfc-shared/reference/csimplestringt-class.md
             - name: CTime class
               href: atl-mfc-shared/reference/ctime-class.md
-    - name: Text and strings
+    - name: Text and Strings
       expanded: false
       items: 
         - name: Text and strings in MSVC
@@ -2826,20 +2828,40 @@
 - name: Port and upgrade C++ code
   expanded: false
   items:
-    - name: Visual C++ Porting and Upgrade Guide
+    - name: Microsoft C++ Porting and Upgrade Guide
       href: porting/visual-cpp-porting-and-upgrading-guide.md
+    - name: Upgrade projects from earlier versions
+      items: 
+        - name: Upgrade projects from earlier versions
+          href: porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md
+        - name: Overview of potential upgrade issues
+          href: porting/overview-of-potential-upgrade-issues-visual-cpp.md
+        - name: Upgrade your code to the Universal CRT
+          href: porting/upgrade-your-code-to-the-universal-crt.md
+        - name: Update WINVER and _WIN32_WINNT
+          href: porting/modifying-winver-and-win32-winnt.md
+        - name: Fix your dependencies on library internals
+          href: porting/fix-your-dependencies-on-library-internals.md
+        - name: Floating-point migration issues
+          href: porting/floating-point-migration-issues.md
+        - name: Use native multi-targeting in Visual Studio to build old projects
+          href: porting/use-native-multi-targeting.md
+        - name: C++ features deprecated in Visual Studio 2019
+          href: porting/features-deprecated-in-visual-studio.md
+        - name: VCBuild vs. MSBuild
+          href: porting/build-system-changes.md
+        - name: Port 3rd-party libraries
+          href: porting/porting-third-party-libraries.md
+        - name: Port data applications
+          href: data/data-access-programming-mfc-atl.md
+    - name: IDE tools for upgrading C++ code
+      href: porting/ide-tools-for-upgrading-code.md
     - name: Visual C++ change history 2003 - 2015
       href: porting/visual-cpp-change-history-2003-2015.md
     - name: Visual C++ What's New 2003 through 2015
       href: porting/visual-cpp-what-s-new-2003-through-2015.md
-    - name: C++ Binary Compatibility between 2015 and 2017
+    - name: C++ binary compatibility 2015-2019
       href: porting/binary-compat-2015-2017.md
-    - name: Overview of potential upgrade issues (Visual C++)
-      href: porting/overview-of-potential-upgrade-issues-visual-cpp.md
-    - name: Port 3rd-party libraries
-      href: porting/porting-third-party-libraries.md
-    - name: Port data applications
-      href: data/data-access-programming-mfc-atl.md
     - name: "Port and upgrade: examples and case studies"
       items: 
         - name: "Examples and case studies"
@@ -2850,27 +2872,9 @@
           href: porting/porting-guide-com-spy.md
         - name: "Porting guide: Spy++"
           href: porting/porting-guide-spy-increment.md
-    - name: Upgrade projects from earlier versions
-      items: 
-        - name: Upgrade projects from earlier versions
-          href: porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md
-        - name: Upgrade your code to the Universal CRT
-          href: porting/upgrade-your-code-to-the-universal-crt.md
-        - name: Modify WINVER and _WIN32_WINNT
-          href: porting/modifying-winver-and-win32-winnt.md
-        - name: Fix your dependencies on library internals
-          href: porting/fix-your-dependencies-on-library-internals.md
-        - name: Floating-point migration issues
-          href: porting/floating-point-migration-issues.md
-        - name: Use native multi-targeting in Visual Studio to build old projects
-          href: porting/use-native-multi-targeting.md
-        - name: Visual C++ features deprecated in Visual Studio 2019
-          href: porting/features-deprecated-in-visual-studio.md
-        - name: Build system changes
-          href: porting/build-system-changes.md
-    - name: Introduction to Visual C++ for UNIX Users
+    - name: Introduction to Microsoft C++ for UNIX Users
       href: porting/introduction-to-visual-cpp-for-unix-users.md
-    - name: Port from UNIX to Win32
+    - name: Running Linux programs on Windows
       href: porting/porting-from-unix-to-win32.md
     - name: Port to the Universal Windows Platform (C++)
       items: 
@@ -2959,7 +2963,7 @@
                           href: c-language/c-integer-constants.md
                         - name: Integer types
                           href: c-language/integer-types.md
-                        - name: C++ integer limits
+                        - name: C and C++ integer limits
                           href: c-language/cpp-integer-limits.md
                     - name: C character constants
                       expanded: false
@@ -3650,79 +3654,20 @@
             - name: C++ language reference
               href: cpp/cpp-language-reference.md
             - name: Welcome back to C++ (Modern C++)
-              expanded: false
-              items: 
-                - name: Welcome back to C++ (Modern C++)
-                  href: cpp/welcome-back-to-cpp-modern-cpp.md
-                - name: Type system (Modern C++)
-                  expanded: false
-                  items: 
-                    - name: Type system (Modern C++)
-                      href: cpp/cpp-type-system-modern-cpp.md
-                    - name: Value types (Modern C++)
-                      href: cpp/value-types-modern-cpp.md
-                    - name: Type conversions and type safety (Modern C++)
-                      href: cpp/type-conversions-and-type-safety-modern-cpp.md
-                - name: Uniform initialization and delegating constructors
-                  href: cpp/uniform-initialization-and-delegating-constructors.md
-                - name: Object lifetime and resource management (Modern C++)
-                  href: cpp/object-lifetime-and-resource-management-modern-cpp.md
-                - name: Objects own resources (RAII)
-                  href: cpp/objects-own-resources-raii.md
-                - name: Smart pointers (Modern C++)
-                  expanded: false
-                  items: 
-                    - name: Smart pointers (Modern C++)
-                      href: cpp/smart-pointers-modern-cpp.md
-                    - name: "How to: Create and use unique_ptr instances"
-                      href: cpp/how-to-create-and-use-unique-ptr-instances.md
-                    - name: "How to: Create and use shared_ptr instances"
-                      href: cpp/how-to-create-and-use-shared-ptr-instances.md
-                    - name: "How to: Create and use weak_ptr instances"
-                      href: cpp/how-to-create-and-use-weak-ptr-instances.md
-                    - name: "How to: Create and use CComPtr and CComQIPtr instances"
-                      href: cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
-                - name: Pimpl for compile-time encapsulation (Modern C++)
-                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
-                - name: Containers (Modern C++)
-                  href: cpp/containers-modern-cpp.md
-                - name: Algorithms (Modern C++)
-                  href: cpp/algorithms-modern-cpp.md
-                - name: String and I/O formatting (Modern C++)
-                  href: cpp/string-and-i-o-formatting-modern-cpp.md
-                - name: Errors and exception handling (Modern C++)
-                  expanded: false
-                  items: 
-                    - name: Errors and exception handling (Modern C++)
-                      href: cpp/errors-and-exception-handling-modern-cpp.md
-                    - name: "How to: Design for exception safety"
-                      href: cpp/how-to-design-for-exception-safety.md
-                    - name: "How to: Interface between exceptional and non-exceptional code"
-                      href: cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md
-                - name: Portability at ABI boundaries (Modern C++)
-                  href: cpp/portability-at-abi-boundaries-modern-cpp.md
+              href: cpp/welcome-back-to-cpp-modern-cpp.md
             - name: Lexical conventions
               expanded: false
               items: 
                 - name: Lexical conventions
                   href: cpp/lexical-conventions.md
-                - name: Overview of file translation
-                  href: cpp/overview-of-file-translation.md
-                - name: Character sets
+                - name: Tokens and character sets
                   href: cpp/character-sets.md
-                - name: Tokens
-                  href: cpp/tokens-cpp.md
                 - name: Comments
                   href: cpp/comments-cpp.md
                 - name: Identifiers
                   href: cpp/identifiers-cpp.md
                 - name: Keywords
-                  expanded: false
-                  items: 
-                    - name: Keywords
-                      href: cpp/keywords-cpp.md
-                    - name: auto keyword
-                      href: cpp/auto-keyword.md
+                  href: cpp/keywords-cpp.md
                 - name: Punctuators
                   href: cpp/punctuators-cpp.md
                 - name: Numeric, boolean, and pointer literals
@@ -3736,114 +3681,36 @@
               items: 
                 - name: Basic concepts
                   href: cpp/basic-concepts-cpp.md
-                - name: Declarations and definitions
-                  expanded: false
-                  items: 
-                    - name: Declarations and definitions
-                      href: cpp/declarations-and-definitions-cpp.md
-                    - name: Overview of declarators
-                      href: cpp/overview-of-declarators.md
-                    - name: Specifiers
-                      href: cpp/specifiers.md
-                    - name: extern
-                      href: cpp/extern-cpp.md
-                    - name: Header files
-                      href: cpp/header-files-cpp.md
-                    - name: Point of declaration in C++
-                      href: cpp/point-of-declaration-in-cpp.md
-                    - name: Initializers
-                      href: cpp/initializers.md
-                    - name: Aliases and typedefs
-                      href: cpp/aliases-and-typedefs-cpp.md
-                    - name: using declaration
-                      href: cpp/using-declaration.md
-                    - name: Resolving ambiguous declarations
-                      href: cpp/resolving-ambiguous-declarations-cpp.md
-                    - name: Storage classes
-                      href: cpp/storage-classes-cpp.md
-                    - name: const
-                      href: cpp/const-cpp.md
-                    - name: constexpr
-                      href: cpp/constexpr-cpp.md
-                    - name: volatile
-                      href: cpp/volatile-cpp.md
-                    - name: auto
-                      href: cpp/auto-cpp.md
-                    - name: decltype
-                      href: cpp/decltype-cpp.md
-                    - name: Attributes
-                      href: cpp/attributes.md
+                - name: C++ type system
+                  href: cpp/cpp-type-system-modern-cpp.md
                 - name: Scope
                   href: cpp/scope-visual-cpp.md
                 - name: Header files
                   href: cpp/header-files-cpp.md
-                - name: Program and linkage
-                  expanded: false
-                  items: 
-                    - name: Program and linkage
-                      href: cpp/program-and-linkage-cpp.md
-                    - name: extern
-                      href: cpp/using-extern-to-specify-linkage.md
-                - name: Startup and termination
-                  expanded: false
-                  items: 
-                    - name: Startup and termination
-                      href: cpp/startup-and-termination-cpp.md
-                    - name: "main: program startup"
-                      expanded: false
-                      items: 
-                        - name: "main: program startup"
-                          href: cpp/main-program-startup.md
-                        - name: Using wmain instead of main
-                          href: cpp/using-wmain-instead-of-main.md
-                        - name: Argument definitions
-                          href: cpp/argument-definitions.md
-                        - name: Wildcard expansion
-                          href: cpp/wildcard-expansion.md
-                        - name: Parsing C++ command-line arguments
-                          href: cpp/parsing-cpp-command-line-arguments.md
-                        - name: Customizing C++ command-line processing
-                          href: cpp/customizing-cpp-command-line-processing.md
-                        - name: main function restrictions
-                          href: cpp/main-function-restrictions.md
-                    - name: Program termination
-                      expanded: false
-                      items: 
-                        - name: Program termination
-                          href: cpp/program-termination.md
-                        - name: exit function
-                          href: cpp/exit-function.md
-                        - name: abort function
-                          href: cpp/abort-function.md
-                        - name: return statement in program termination
-                          href: cpp/return-statement-in-program-termination-cpp.md
-                    - name: Additional startup considerations
-                      href: cpp/additional-startup-considerations.md
-                    - name: Additional termination considerations
-                      expanded: false
-                      items: 
-                        - name: Additional termination considerations
-                          href: cpp/additional-termination-considerations.md
-                        - name: Using exit or return
-                          href: cpp/using-exit-or-return.md
-                        - name: Using atexit
-                          href: cpp/using-atexit.md
-                        - name: Using abort
-                          href: cpp/using-abort.md
+                - name: Translation units and linkage
+                  href: cpp/program-and-linkage-cpp.md
+                - name: main function and command-line arguments
+                  href: cpp/main-function-command-line-args.md
+                - name: Program termination
+                  href: cpp/program-termination.md
                 - name: Lvalues and rvalues
                   href: cpp/lvalues-and-rvalues-visual-cpp.md
                 - name: Temporary objects
                   href: cpp/temporary-objects.md
-                - name: Alignment (C++ declarations)
+                - name: Alignment
                   href: cpp/alignment-cpp-declarations.md
-                - name: alignof and alignas
-                  href: cpp/alignof-and-alignas-cpp.md
                 - name: Trivial, standard-layout, and POD types
                   href: cpp/trivial-standard-layout-and-pod-types.md
-            - name: Fundamental types
+                - name: Value types
+                  href: cpp/value-types-modern-cpp.md
+                - name: Type conversions and type safety
+                  href: cpp/type-conversions-and-type-safety-modern-cpp.md
+                - name: Standard conversions
+                  href: cpp/standard-conversions.md
+            - name: Built-in types
               expanded: false
               items: 
-                - name: Fundamental types
+                - name: Built-in types
                   href: cpp/fundamental-types-cpp.md
                 - name: Data type ranges
                   href: cpp/data-type-ranges.md
@@ -3880,8 +3747,33 @@
                       href: cpp/integer-limits.md
                     - name: Floating limits
                       href: cpp/floating-limits.md
-                - name: Standard conversions
-                  href: cpp/standard-conversions.md
+            - name: Declarations and definitions
+              expanded: false
+              items: 
+                - name: Declarations and definitions
+                  href: cpp/declarations-and-definitions-cpp.md
+                - name: Storage classes
+                  href: cpp/storage-classes-cpp.md
+                - name: auto
+                  href: cpp/auto-cpp.md
+                - name: const
+                  href: cpp/const-cpp.md
+                - name: constexpr
+                  href: cpp/constexpr-cpp.md
+                - name: extern
+                  href: cpp/extern-cpp.md
+                - name: Initializers
+                  href: cpp/initializers.md
+                - name: Aliases and typedefs
+                  href: cpp/aliases-and-typedefs-cpp.md
+                - name: using declaration
+                  href: cpp/using-declaration.md
+                - name: volatile
+                  href: cpp/volatile-cpp.md
+                - name: decltype
+                  href: cpp/decltype-cpp.md
+                - name: Attributes
+                  href: cpp/attributes.md
             - name: Built-in operators, precedence, and associativity
               expanded: false
               items: 
@@ -4136,8 +4028,14 @@
                       href: cpp/protected-cpp.md
                     - name: public
                       href: cpp/public-cpp.md
-                - name: Initializing classes and structs without constructors
+                - name: Brace initialization
                   href: cpp/initializing-classes-and-structs-without-constructors-cpp.md
+                - name: Object lifetime and resource management (RAII)
+                  href: cpp/object-lifetime-and-resource-management-modern-cpp.md
+                - name: Pimpl idiom for compile-time encapsulation
+                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
+                - name: Portability at ABI boundaries
+                  href: cpp/portability-at-abi-boundaries-modern-cpp.md 
                 - name: Constructors
                   expanded: false
                   items: 
@@ -4147,6 +4045,8 @@
                       href: cpp/copy-constructors-and-copy-assignment-operators-cpp.md
                     - name: Move constructors and move assignment operators
                       href: cpp/move-constructors-and-move-assignment-operators-cpp.md
+                    - name: Delegating constructors
+                      href: cpp/delegating-constructors.md
                 - name: Destructors
                   href: cpp/destructors-cpp.md
                 - name: Overview of member functions
@@ -4191,6 +4091,8 @@
                   href: cpp/special-member-functions.md
                 - name: Static members
                   href: cpp/static-members-cpp.md
+                - name: C++ classes as value types
+                  href: cpp/value-types-modern-cpp.md
                 - name: User-defined type conversions
                   href: cpp/user-defined-type-conversions-cpp.md
                 - name: Mutable data members
@@ -4217,22 +4119,7 @@
                 - name: constexpr lambda expressions
                   href: cpp/lambda-expressions-constexpr.md
             - name: Arrays
-              expanded: false
-              items: 
-                - name: Arrays
-                  href: cpp/arrays-cpp.md
-                - name: Using arrays
-                  href: cpp/using-arrays-cpp.md
-                - name: Initializing arrays
-                  href: cpp/initializing-arrays.md
-                - name: Arrays in expressions
-                  href: cpp/arrays-in-expressions.md
-                - name: Interpretation of subscript operator
-                  href: cpp/interpretation-of-subscript-operator.md
-                - name: Indirection on array types
-                  href: cpp/indirection-on-array-types.md
-                - name: Ordering of C++ arrays
-                  href: cpp/ordering-of-cpp-arrays.md
+              href: cpp/arrays-cpp.md
             - name: References
               expanded: false
               items: 
@@ -4253,41 +4140,56 @@
               items: 
                 - name: Pointers
                   href: cpp/pointers-cpp.md
+                - name: Raw pointers
+                  href: cpp/raw-pointers.md
                 - name: const and volatile pointers
                   href: cpp/const-and-volatile-pointers.md
                 - name: new and delete operators
                   href: cpp/new-and-delete-operators.md
+                - name: Smart pointers
+                  href: cpp/smart-pointers-modern-cpp.md
+                - name: "How to: Create and use unique_ptr instances"
+                  href: cpp/how-to-create-and-use-unique-ptr-instances.md
+                - name: "How to: Create and use shared_ptr instances"
+                  href: cpp/how-to-create-and-use-shared-ptr-instances.md
+                - name: "How to: Create and use weak_ptr instances"
+                  href: cpp/how-to-create-and-use-weak-ptr-instances.md
+                - name: "How to: Create and use CComPtr and CComQIPtr instances"
+                  href: cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
+                - name: Pimpl for compile-time encapsulation
+                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md  
             - name: Exception handling in C++
               expanded: false
               items: 
                 - name: Exception handling in C++
                   href: cpp/exception-handling-in-visual-cpp.md
-                - name: Exception handling
+                - name: Modern C++ best practices
+                  href: cpp/errors-and-exception-handling-modern-cpp.md
+                - name: How to design for exception safety
+                  href: cpp/how-to-design-for-exception-safety.md
+                - name: How to interface between exceptional and non-exceptional code
+                  href: cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md
+                - name: try, throw, and catch statements
+                  href: cpp/try-throw-and-catch-statements-cpp.md
+                - name: How catch blocks are evaluated
+                  href: cpp/how-catch-blocks-are-evaluated-cpp.md
+                - name: Exceptions and stack unwinding
+                  href: cpp/exceptions-and-stack-unwinding-in-cpp.md
+                - name: Exception specifications (throw)
+                  href: cpp/exception-specifications-throw-cpp.md
+                - name: noexcept
+                  href: cpp/noexcept-cpp.md
+                - name: Unhandled C++ exceptions
+                  href: cpp/unhandled-cpp-exceptions.md
+                - name: Mixing C (Structured) and C++ exceptions
                   expanded: false
                   items: 
-                    - name: Exception handling
-                      href: cpp/cpp-exception-handling.md
-                    - name: try, throw, and catch statements
-                      href: cpp/try-throw-and-catch-statements-cpp.md
-                    - name: How catch blocks are evaluated
-                      href: cpp/how-catch-blocks-are-evaluated-cpp.md
-                    - name: Exceptions and stack unwinding in C++
-                      href: cpp/exceptions-and-stack-unwinding-in-cpp.md
-                    - name: Exception specifications (throw)
-                      href: cpp/exception-specifications-throw-cpp.md
-                    - name: noexcept
-                      href: cpp/noexcept-cpp.md
-                    - name: Unhandled C++ exceptions
-                      href: cpp/unhandled-cpp-exceptions.md
                     - name: Mixing C (Structured) and C++ exceptions
-                      expanded: false
-                      items: 
-                        - name: Mixing C (Structured) and C++ exceptions
-                          href: cpp/mixing-c-structured-and-cpp-exceptions.md
-                        - name: Using setjmp-longjmp
-                          href: cpp/using-setjmp-longjmp.md
-                        - name: Handle structured exceptions in C++
-                          href: cpp/exception-handling-differences.md
+                      href: cpp/mixing-c-structured-and-cpp-exceptions.md
+                    - name: Using setjmp-longjmp
+                      href: cpp/using-setjmp-longjmp.md
+                    - name: Handle structured exceptions in C++
+                      href: cpp/exception-handling-differences.md
                 - name: Structured Exception Handling (SEH) (C/C++)
                   expanded: false
                   items: 
@@ -4718,6 +4620,8 @@
               items: 
                 - name: Preprocessor
                   href: preprocessor/preprocessor.md
+                - name: Experimental preprocessor overview
+                  href: preprocessor/preprocessor-experimental-overview.md                  
                 - name: Phases of translation
                   href: preprocessor/phases-of-translation.md
                 - name: Preprocessor directives
@@ -4824,17 +4728,8 @@
                       href: preprocessor/variadic-macros.md
                     - name: Predefined preprocessor macros
                       href: preprocessor/predefined-macros.md
-            - name: Grammar summary (C/C++)
-              expanded: false
-              items: 
-                - name: Grammar summary (C/C++)
-                  href: preprocessor/grammar-summary-c-cpp.md
-                - name: Definitions for the grammar summary
-                  href: preprocessor/definitions-for-the-grammar-summary.md
-                - name: Grammar conventions
-                  href: preprocessor/conventions.md
-                - name: Preprocessor grammar
-                  href: preprocessor/preprocessor-grammar.md
+            - name: Preprocessor grammar summary (C/C++)
+              href: preprocessor/grammar-summary-c-cpp.md
             - name: Pragma directives and the __pragma keyword
               expanded: false
               items: 
@@ -4931,6 +4826,8 @@
               href: intrinsics/compiler-intrinsics.md
             - name: ARM intrinsics
               href: intrinsics/arm-intrinsics.md
+            - name: ARM64 intrinsics
+              href: intrinsics/arm64-intrinsics.md
             - name: x86 intrinsics list
               href: intrinsics/x86-intrinsics-list.md
             - name: x64 (amd64) intrinsics list
@@ -5289,10 +5186,10 @@
               href: assembler/masm/masm-for-x64-ml64-exe.md
             - name: ML and ML64 command-line reference
               href: assembler/masm/ml-and-ml64-command-line-reference.md
-            - name: Directives reference
+            - name: Directives reference (MASM)
               expanded: false
               items: 
-                - name: Directives reference
+                - name: Directives reference (MASM)
                   href: assembler/masm/directives-reference.md
                 - name: "="
                   href: assembler/masm/equal.md
@@ -5314,9 +5211,9 @@
                   href: assembler/masm/dot-686.md
                 - name: ".686P"
                   href: assembler/masm/dot-686p.md
-                - name: ALIAS (MASM)
+                - name: ALIAS
                   href: assembler/masm/alias-masm.md
-                - name: ALIGN (MASM)
+                - name: ALIGN
                   href: assembler/masm/align-masm.md
                 - name: .ALLOCSTACK
                   href: assembler/masm/dot-allocstack.md
@@ -5326,7 +5223,7 @@
                   href: assembler/masm/assume.md
                 - name: .BREAK
                   href: assembler/masm/dot-break.md
-                - name: BYTE (MASM)
+                - name: BYTE
                   href: assembler/masm/byte-masm.md
                 - name: CATSTR
                   href: assembler/masm/catstr.md
@@ -5334,7 +5231,7 @@
                   href: assembler/masm/dot-code.md
                 - name: COMM
                   href: assembler/masm/comm.md
-                - name: COMMENT (MASM)
+                - name: COMMENT
                   href: assembler/masm/comment-masm.md
                 - name: .CONST
                   href: assembler/masm/dot-const.md
@@ -5368,13 +5265,13 @@
                   href: assembler/masm/echo.md
                 - name: .ELSE
                   href: assembler/masm/dot-else.md
-                - name: ELSE (MASM)
+                - name: ELSE
                   href: assembler/masm/else-masm.md
-                - name: ELSEIF (MASM)
+                - name: ELSEIF
                   href: assembler/masm/elseif-masm.md
                 - name: ELSEIF2
                   href: assembler/masm/elseif2.md
-                - name: END (MASM)
+                - name: END
                   href: assembler/masm/end-masm.md
                 - name: .ENDIF
                   href: assembler/masm/dot-endif.md
@@ -5384,7 +5281,7 @@
                   href: assembler/masm/endp.md
                 - name: .ENDPROLOG
                   href: assembler/masm/dot-endprolog.md
-                - name: ENDS (MASM)
+                - name: ENDS
                   href: assembler/masm/ends-masm.md
                 - name: .ENDW
                   href: assembler/masm/dot-endw.md
@@ -5416,7 +5313,7 @@
                   href: assembler/masm/dot-exit.md
                 - name: EXITM
                   href: assembler/masm/exitm.md
-                - name: EXTERN (MASM)
+                - name: EXTERN
                   href: assembler/masm/extern-masm.md
                 - name: EXTERNDEF
                   href: assembler/masm/externdef.md
@@ -5426,7 +5323,7 @@
                   href: assembler/masm/dot-fardata.md
                 - name: .FARDATA?
                   href: assembler/masm/dot-fardata-q.md
-                - name: FOR (MASM)
+                - name: FOR
                   href: assembler/masm/for-masm.md
                 - name: FORC
                   href: assembler/masm/forc.md
@@ -5434,13 +5331,13 @@
                   href: assembler/masm/dot-fpo.md
                 - name: FWORD
                   href: assembler/masm/fword.md
-                - name: GOTO (MASM)
+                - name: GOTO
                   href: assembler/masm/goto-masm.md
                 - name: GROUP
                   href: assembler/masm/group.md
                 - name: .IF
                   href: assembler/masm/dot-if.md
-                - name: IF (MASM)
+                - name: IF
                   href: assembler/masm/if-masm.md
                 - name: IF2
                   href: assembler/masm/if2.md
@@ -5458,9 +5355,9 @@
                   href: assembler/masm/ifnb.md
                 - name: IFNDEF
                   href: assembler/masm/ifndef.md
-                - name: INCLUDE (MASM)
+                - name: INCLUDE
                   href: assembler/masm/include-masm.md
-                - name: INCLUDELIB (MASM)
+                - name: INCLUDELIB
                   href: assembler/masm/includelib-masm.md
                 - name: INSTR
                   href: assembler/masm/instr.md
@@ -5472,7 +5369,7 @@
                   href: assembler/masm/irpc.md
                 - name: .K3D
                   href: assembler/masm/dot-k3d.md
-                - name: LABEL (MASM)
+                - name: LABEL
                   href: assembler/masm/label-masm.md
                 - name: .LALL
                   href: assembler/masm/dot-lall.md
@@ -5488,7 +5385,7 @@
                   href: assembler/masm/dot-listmacro.md
                 - name: .LISTMACROALL
                   href: assembler/masm/dot-listmacroall.md
-                - name: LOCAL (MASM)
+                - name: LOCAL
                   href: assembler/masm/local-masm.md
                 - name: MACRO
                   href: assembler/masm/macro.md
@@ -5498,7 +5395,7 @@
                   href: assembler/masm/dot-mmx.md
                 - name: .MODEL
                   href: assembler/masm/dot-model.md
-                - name: NAME (MASM)
+                - name: NAME
                   href: assembler/masm/name-masm.md
                 - name: .NOCREF
                   href: assembler/masm/dot-nocref.md
@@ -5508,7 +5405,7 @@
                   href: assembler/masm/dot-nolistif.md
                 - name: .NOLISTMACRO
                   href: assembler/masm/dot-nolistmacro.md
-                - name: OPTION (MASM)
+                - name: OPTION
                   href: assembler/masm/option-masm.md
                 - name: ORG
                   href: assembler/masm/org.md
@@ -5524,7 +5421,7 @@
                   href: assembler/masm/proc.md
                 - name: PROTO
                   href: assembler/masm/proto.md
-                - name: PUBLIC (MASM)
+                - name: PUBLIC
                   href: assembler/masm/public-masm.md
                 - name: PURGE
                   href: assembler/masm/purge.md
@@ -5544,7 +5441,7 @@
                   href: assembler/masm/real4.md
                 - name: REAL8
                   href: assembler/masm/real8.md
-                - name: RECORD (MASM)
+                - name: RECORD
                   href: assembler/masm/record-masm.md
                 - name: .REPEAT
                   href: assembler/masm/dot-repeat.md
@@ -5560,7 +5457,7 @@
                   href: assembler/masm/dot-savereg.md
                 - name: .SAVEXMM128
                   href: assembler/masm/dot-savexmm128.md
-                - name: SBYTE (MASM)
+                - name: SBYTE
                   href: assembler/masm/sbyte-masm.md
                 - name: SDWORD
                   href: assembler/masm/sdword.md
@@ -5582,7 +5479,7 @@
                   href: assembler/masm/dot-startup.md
                 - name: STRUC
                   href: assembler/masm/struc.md
-                - name: STRUCT (MASM)
+                - name: STRUCT
                   href: assembler/masm/struct-masm.md
                 - name: SUBSTR
                   href: assembler/masm/substr.md
@@ -5600,7 +5497,7 @@
                   href: assembler/masm/dot-tfcond.md
                 - name: TITLE
                   href: assembler/masm/title.md
-                - name: TYPEDEF (MASM)
+                - name: TYPEDEF
                   href: assembler/masm/typedef-masm.md
                 - name: UNION
                   href: assembler/masm/union.md
@@ -5610,7 +5507,7 @@
                   href: assembler/masm/dot-untilcxz.md
                 - name: .WHILE
                   href: assembler/masm/dot-while.md
-                - name: WHILE (MASM)
+                - name: WHILE
                   href: assembler/masm/while-masm.md
                 - name: WORD
                   href: assembler/masm/word.md
@@ -5969,6 +5866,8 @@
                       href: assembler/masm/ml-warning-a4012.md
                     - name: ML warning A4014
                       href: assembler/masm/ml-warning-a4014.md
+            - name: MASM BNF grammar
+              href: assembler/masm/masm-bnf-grammar.md
         - name: Component extensions for .NET and UWP
           expanded: false
           items: 
@@ -9815,6 +9714,8 @@
               items: 
                 - name: iostream programming
                   href: standard-library/iostream-programming.md
+                - name: String and I/O formatting
+                  href: text/string-and-i-o-formatting-modern-cpp.md
                 - name: What a stream is
                   expanded: false
                   items: 

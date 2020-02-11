@@ -17,7 +17,7 @@ This warning is only valid for C source code.
 
 The following sample generates C4028.
 
-```
+```c
 // C4028.c
 // compile with: /W1 /Za
 void f(int , ...);

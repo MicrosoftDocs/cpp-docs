@@ -11,14 +11,14 @@ A `choice` messaging block is a multi-source, single-target block that represent
 
 ## Syntax
 
-```
+```cpp
 template<
     class T
 >
 class choice: public ISource<size_t>;
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 A `tuple`-based type representing the payloads of the input sources.
@@ -73,11 +73,11 @@ For more information, see [Asynchronous Message Blocks](../../../parallel/concrt
 
 **Namespace:** concurrency
 
-##  <a name="accept"></a> accept
+## <a name="accept"></a> accept
 
 Accepts a message that was offered by this `choice` block, transferring ownership to the caller.
 
-```
+```cpp
 virtual message<size_t>* accept(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<size_t>* _PTarget);
@@ -95,11 +95,11 @@ A pointer to the target block that is calling the `accept` method.
 
 A pointer to the message that the caller now has ownership of.
 
-##  <a name="acquire_ref"></a> acquire_ref
+## <a name="acquire_ref"></a> acquire_ref
 
 Acquires a reference count on this `choice` messaging block, to prevent deletion.
 
-```
+```cpp
 virtual void acquire_ref(_Inout_ ITarget<size_t>* _PTarget);
 ```
 
@@ -112,11 +112,11 @@ A pointer to the target block that is calling this method.
 
 This method is called by an `ITarget` object that is being linked to this source during the `link_target` method.
 
-##  <a name="ctor"></a> choice
+## <a name="ctor"></a> choice
 
 Constructs a `choice` messaging block.
 
-```
+```cpp
 explicit choice(
     T _Tuple);
 
@@ -152,19 +152,19 @@ The runtime uses the default scheduler if you do not specify the `_PScheduler` o
 
 Move construction is not performed under a lock, which means that it is up to the user to make sure that there are no light-weight tasks in flight at the time of moving. Otherwise, numerous races can occur, leading to exceptions or inconsistent state.
 
-##  <a name="dtor"></a> ~choice
+## <a name="dtor"></a> ~choice
 
 Destroys the `choice` messaging block.
 
-```
+```cpp
 ~choice();
 ```
 
-##  <a name="consume"></a> consume
+## <a name="consume"></a> consume
 
 Consumes a message previously offered by this `choice` messaging block and successfully reserved by the target, transferring ownership to the caller.
 
-```
+```cpp
 virtual message<size_t>* consume(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<size_t>* _PTarget);
@@ -186,11 +186,11 @@ A pointer to the `message` object that the caller now has ownership of.
 
 The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **true**.
 
-##  <a name="has_value"></a> has_value
+## <a name="has_value"></a> has_value
 
 Checks whether this `choice` messaging block has been initialized with a value yet.
 
-```
+```cpp
 bool has_value() const;
 ```
 
@@ -198,11 +198,11 @@ bool has_value() const;
 
 **true** if the block has received a value, **false** otherwise.
 
-##  <a name="index"></a> index
+## <a name="index"></a> index
 
 Returns an index into the `tuple` representing the element selected by the `choice` messaging block.
 
-```
+```cpp
 size_t index();
 ```
 
@@ -214,11 +214,11 @@ The message index.
 
 The message payload can be extracted using the `get` method.
 
-##  <a name="link_target"></a> link_target
+## <a name="link_target"></a> link_target
 
 Links a target block to this `choice` messaging block.
 
-```
+```cpp
 virtual void link_target(_Inout_ ITarget<size_t>* _PTarget);
 ```
 
@@ -227,11 +227,11 @@ virtual void link_target(_Inout_ ITarget<size_t>* _PTarget);
 *_PTarget*<br/>
 A pointer to an `ITarget` block to link to this `choice` messaging block.
 
-##  <a name="release"></a> release
+## <a name="release"></a> release
 
 Releases a previous successful message reservation.
 
-```
+```cpp
 virtual void release(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<size_t>* _PTarget);
@@ -245,11 +245,11 @@ The `runtime_object_identity` of the `message` object being released.
 *_PTarget*<br/>
 A pointer to the target block that is calling the `release` method.
 
-##  <a name="release_ref"></a> release_ref
+## <a name="release_ref"></a> release_ref
 
 Releases a reference count on this `choice` messaging block.
 
-```
+```cpp
 virtual void release_ref(_Inout_ ITarget<size_t>* _PTarget);
 ```
 
@@ -262,11 +262,11 @@ A pointer to the target block that is calling this method.
 
 This method is called by an `ITarget` object that is being unlinked from this source. The source block is allowed to release any resources reserved for the target block.
 
-##  <a name="reserve"></a> reserve
+## <a name="reserve"></a> reserve
 
 Reserves a message previously offered by this `choice` messaging block.
 
-```
+```cpp
 virtual bool reserve(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<size_t>* _PTarget);
@@ -288,11 +288,11 @@ A pointer to the target block that is calling the `reserve` method.
 
 After you call `reserve`, if it succeeds, you must call either `consume` or `release` in order to take or give up possession of the message, respectively.
 
-##  <a name="unlink_target"></a> unlink_target
+## <a name="unlink_target"></a> unlink_target
 
 Unlinks a target block from this `choice` messaging block.
 
-```
+```cpp
 virtual void unlink_target(_Inout_ ITarget<size_t>* _PTarget);
 ```
 
@@ -301,11 +301,11 @@ virtual void unlink_target(_Inout_ ITarget<size_t>* _PTarget);
 *_PTarget*<br/>
 A pointer to an `ITarget` block to unlink from this `choice` messaging block.
 
-##  <a name="unlink_targets"></a> unlink_targets
+## <a name="unlink_targets"></a> unlink_targets
 
 Unlinks all targets from this `choice` messaging block.
 
-```
+```cpp
 virtual void unlink_targets();
 ```
 
@@ -313,11 +313,11 @@ virtual void unlink_targets();
 
 This method does not need to be called from the destructor because destructor for the internal `single_assignment` block will unlink properly.
 
-##  <a name="value"></a> value
+## <a name="value"></a> value
 
 Gets the message whose index was selected by the `choice` messaging block.
 
-```
+```cpp
 template <
     typename _Payload_type
 >

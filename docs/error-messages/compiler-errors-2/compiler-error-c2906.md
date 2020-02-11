@@ -13,7 +13,7 @@ You must use the new syntax for explicit specialization of templates.
 
 The following sample generates C2906:
 
-```
+```cpp
 // C2906.cpp
 // compile with: /c
 template<class T> class X{};   // primary template

@@ -27,14 +27,14 @@ You can define an open-ended set of these facets. You can also construct a local
 
 Predefined groups of these facets represent the [locale categories](#category) traditionally managed in the Standard C Library by the function `setlocale`.
 
-Category collate (LC_COLLATE) includes the facets:
+Category `collate` (LC_COLLATE) includes the facets:
 
 ```cpp
 collate<char>
 collate<wchar_t>
 ```
 
-Category ctype (LC_CTYPE) includes the facets:
+Category `ctype` (LC_CTYPE) includes the facets:
 
 ```cpp
 ctype<char>
@@ -45,7 +45,7 @@ codecvt<char16_t, char, mbstate_t>
 codecvt<char32_t, char, mbstate_t>
 ```
 
-Category monetary (LC_MONETARY) includes the facets:
+Category `monetary` (LC_MONETARY) includes the facets:
 
 ```cpp
 moneypunct<char, false>
@@ -58,7 +58,7 @@ money_put<char, ostreambuf_iterator<char>>
 money_put<wchar_t, ostreambuf_iterator<wchar_t>>
 ```
 
-Category numeric (LC_NUMERIC) includes the facets:
+Category `numeric` (LC_NUMERIC) includes the facets:
 
 ```cpp
 num_get<char, istreambuf_iterator<char>>
@@ -69,7 +69,7 @@ numpunct<char>
 numpunct<wchar_t>
 ```
 
-Category time (LC_TIME) includes the facets:
+Category `time` (LC_TIME) includes the facets:
 
 ```cpp
 time_get<char, istreambuf_iterator<char>>
@@ -78,18 +78,18 @@ time_put<char, ostreambuf_iterator<char>>
 time_put<wchar_t, ostreambuf_iterator<wchar_t>>
 ```
 
-Category messages (LC_MESSAGES) includes the facets:
+Category `messages` (LC_MESSAGES) includes the facets:
 
 ```cpp
 messages<char>
 messages<wchar_t>
 ```
 
-(The last category is required by Posix, but not the C Standard.)
+(The last category is required by POSIX, but not the C Standard.)
 
-Some of these predefined facets are used by the iostreams classes, to control the conversion of numeric values to and from text sequences.
+Some of these predefined facets are used by the `iostream` classes, to control the conversion of numeric values to and from text sequences.
 
-An object of class locale also stores a locale name as an object of class [string](../standard-library/string-typedefs.md#string). Using an invalid locale name to construct a locale facet or a locale object throws an object of class [runtime_error](../standard-library/runtime-error-class.md). The stored locale name is `"*"` if the locale object cannot be certain that a C-style locale corresponds exactly to that represented by the object. Otherwise, you can establish a matching locale within the Standard C Library, for the locale object `Loc`, by calling `setlocale`(LC_ALL `,` `Loc`. [name](#name)`().c_str()`).
+An object of class locale also stores a locale name as an object of class [string](../standard-library/string-typedefs.md#string). Using an invalid locale name to construct a locale facet or a locale object throws an object of class [runtime_error](../standard-library/runtime-error-class.md). The stored locale name is `"*"` if the locale object can't be certain that a C-style locale corresponds exactly to the one represented by the object. Otherwise, you can establish a matching locale within the Standard C Library, for some locale object `locale_object`, by calling `setlocale(LC_ALL , locale_object.`[name](#name)`().c_str())`.
 
 In this implementation, you can also call the static member function:
 
@@ -97,13 +97,13 @@ In this implementation, you can also call the static member function:
 static locale empty();
 ```
 
-to construct a locale object that has no facets. It is also a transparent locale; if the template functions [has_facet](../standard-library/locale-functions.md#has_facet) and [use_facet](../standard-library/locale-functions.md#use_facet) cannot find the requested facet in a transparent locale, they consult first the global locale and then, if that is transparent, the classic locale. Thus, you can write:
+to construct a locale object that has no facets. It's also a transparent locale. If the template functions [has_facet](../standard-library/locale-functions.md#has_facet) and [use_facet](../standard-library/locale-functions.md#use_facet) can't find the requested facet in a transparent locale, they consult first the global locale and then, if that is transparent, the classic locale. So, you can write:
 
 ```cpp
 cout.imbue(locale::empty());
 ```
 
-Subsequent insertions to [cout](../standard-library/iostream.md#cout) are mediated by the current state of the global locale. You can even write:
+Subsequent insertions to [`cout`](../standard-library/iostream.md#cout) are mediated by the current state of the global locale. You can even write:
 
 ```cpp
 locale loc(locale::empty(),
@@ -155,7 +155,7 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 |Class|Description|
 |-|-|
 |[facet](#facet_class)|A class that serves as the base class for all locale facets.|
-|[id](#id_class)|The member class provides a unique facet identification used as an index for looking up facets in a locale.|
+|[`id`](#id_class)|The member class provides a unique facet identification used as an index for looking up facets in a locale.|
 
 ## Requirements
 
@@ -193,9 +193,9 @@ The type is a synonym for an **int** type that can represent a group of distinct
 
 - `time`, corresponding to the C category LC_TIME
 
-- `messages`, corresponding to the Posix category LC_MESSAGES
+- `messages`, corresponding to the POSIX category LC_MESSAGES
 
-In addition, two useful values are:
+Two more useful values are:
 
 - `none`, corresponding to none of the C categories
 
@@ -217,7 +217,7 @@ A reference to the C locale.
 
 ### Remarks
 
-The classic C locale is the U.S. English ASCII locale within the Standard C Library that is implicitly used in programs that are not internationalized.
+The classic C locale is the U.S. English ASCII locale within the Standard C library. It's the locale that's used implicitly in programs that aren't internationalized.
 
 ### Example
 
@@ -264,17 +264,17 @@ Inserts a facet from a specified locale into a target locale.
 
 ```cpp
 template <class Facet>
-locale combine(const locale& Loc) const;
+locale combine(const locale& source_locale) const;
 ```
 
 ### Parameters
 
-*Loc*\
+*source_locale*\
 The locale containing the facet to be inserted into the target locale.
 
 ### Return Value
 
-The member function returns a locale object that replaces in or adds to **\*this** the facet `Facet` listed in *Loc*.
+The member function returns a locale object that replaces in or adds to **\*this** the facet `Facet` listed in *source_locale*.
 
 ### Example
 
@@ -313,32 +313,31 @@ A class that serves as the base class for all locale facets.
 ```cpp
 class facet {
 protected:
-    explicit facet(size_t _Refs = 0);
-   virtual ~facet();
+    explicit facet(size_t references = 0);
+    virtual ~facet();
 private:
-   facet(const facet&)
-   // not defined void operator=(const facet&)
-     // not defined
+    facet(const facet&) // not defined
+    void operator=(const facet&) // not defined
 };
 ```
 
 ### Remarks
 
-Note that you cannot copy or assign an object of class facet. You can construct and destroy objects derived from class `locale::facet` but not objects of the base class proper. Typically, you construct an object `_Myfac` derived from facet when you construct a locale, as in **localeloc**( `locale::classic`( ), **new**`_Myfac`);
+You can't copy or assign an object of class `facet`. You can construct and destroy objects derived from class `locale::facet` but not objects of the base class proper. Typically, you construct an object `_Myfac` derived from `facet` when you construct a `locale`, as in `locale loc(locale::classic(), new _Myfac);`
 
-In such cases, the constructor for the base class facet should have a zero `_Refs` argument. When the object is no longer needed, it is deleted. Thus, you supply a nonzero _ *Refs* argument only in those rare cases where you take responsibility for the lifetime of the object.
+In such cases, the constructor for the base class `facet` should have a zero *references* argument. When the object is no longer needed, it's deleted, so you supply a nonzero *references* argument only in those rare cases where you take responsibility for the lifetime of the object.
 
 ## <a name="global"></a>  locale::global
 
-Resets the default locale for the program. This affects the global locale for both C and C++.
+Resets the default locale for the program. This call affects the global locale for both C and C++.
 
 ```cpp
-static locale global(const locale& Loc);
+static locale global(const locale& new_default_locale);
 ```
 
 ### Parameters
 
-*Loc*\
+*new_default_locale*\
 The locale to be used as the default locale by the program.
 
 ### Return Value
@@ -382,16 +381,17 @@ The previous locale was: C
 The member class provides a unique facet identification used as an index for looking up facets in a locale.
 
 ```cpp
-class id 
+class id
 {
    protected:    id();
    private:      id(const id&)
-   void operator=(const id&)  // not defined    
+   void operator=(const id&)  // not defined
 };
 ```
+
 ### Remarks
 
-The member class describes the static member object required by each unique locale facet. Note that you cannot copy or assign an object of class `id`.
+The member class describes the static member object required by each unique locale facet. You can't copy or assign an object of class `id`.
 
 ## <a name="locale"></a>  locale::locale
 
@@ -400,54 +400,54 @@ Creates a locale, or a copy of a locale, or a copy of locale where a facet or a 
 ```cpp
 locale();
 
-explicit locale(const char* Locname, category Cat = all);
-explicit locale(const string& Locname);
-locale( const locale& Loc);
-locale(const locale& Loc, const locale& Other, category Cat);
-locale(const locale& Loc, const char* Locname, category Cat);
+explicit locale(const char* locale_name, category new_category = all);
+explicit locale(const string& locale_name);
+locale(const locale& from_locale);
+locale(const locale& from_locale, const locale& Other, category new_category);
+locale(const locale& from_locale, const char* locale_name, category new_category);
 
 template <class Facet>
-locale(const locale& Loc, const Facet* Fac);
+locale(const locale& from_locale, const Facet* new_facet);
 
 ~locale();
 ```
 
 ### Parameters
 
-*Locname*\
+*locale_name*\
 Name of a locale.
 
-*Loc*\
+*from_locale*\
 A locale that is to be copied in constructing the new locale.
 
 *Other*\
 A locale from which to select a category.
 
-*Cat*\
+*new_category*\
 The category to be substituted into the constructed locale.
 
-*Fac*\
+*new_facet*\
 The facet to be substituted into the constructed locale.
 
 ### Remarks
 
-The first constructor initializes the object to match the global locale. The second and third constructors initialize all the locale categories to have behavior consistent with the locale name *Locname*. The remaining constructors copy *Loc*, with the exceptions noted:
+The first constructor initializes the object to match the global locale. The second and third constructors initialize all the locale categories to have behavior consistent with the locale name *locale_name*. The remaining constructors copy *from_locale*, with the exceptions noted:
 
-`locale(const locale& Loc, const locale& Other, category Cat);`
+`locale(const locale& from_locale, const locale& Other, category new_category);`
 
-replaces from *Other* those facets corresponding to a category C for which C & *Cat* is nonzero.
+replaces from *Other* those facets corresponding to a category C for which C & *new_category* is nonzero.
 
-`locale(const locale& Loc, const char* Locname, category Cat);`
+`locale(const locale& from_locale, const char* locale_name, category new_category);`
 
-`locale(const locale& Loc, const string& Locname, category Cat);`
+`locale(const locale& from_locale, const string& locale_name, category new_category);`
 
-replaces from `locale(Locname, _All)` those facets corresponding to a category C for which C & *Cat* is nonzero.
+replaces from `locale(locale_name, all)` those facets corresponding to a category *replace_category* for which `replace_category & new_category` is nonzero.
 
-`template<class Facet> locale(const locale& Loc, Facet* Fac);`
+`template<class Facet> locale(const locale& from_locale, Facet* new_facet);`
 
-replaces in (or adds to) *Loc* the facet *Fac*, if *Fac* is not a null pointer.
+replaces in (or adds to) *from_locale* the facet *new_facet*, if *new_facet* isn't a null pointer.
 
-If a locale name *Locname* is a null pointer or otherwise invalid, the function throws [runtime_error](../standard-library/runtime-error-class.md).
+If locale name *locale_name* is a null pointer or otherwise invalid, the function throws [runtime_error](../standard-library/runtime-error-class.md).
 
 ### Example
 
@@ -551,11 +551,11 @@ One of the locales to be tested for inequality.
 
 ### Return Value
 
-A Boolean value that is **true** if the locales are not copies of the same locale; **false** if the locales are copies of the same locale.
+A Boolean value that is **true** if the locales aren't copies of the same locale. It's **false** if the locales are copies of the same locale.
 
 ### Remarks
 
-Two locales are equal if they are the same locale, if one is a copy of the other, or if they have identical names.
+Two locales are equal if they're the same locale, if one is a copy of the other, or if they have identical names.
 
 ### Example
 
@@ -636,7 +636,7 @@ const collate<CharType>& fac = use_fac<collate<CharType>>(*this);
 return (fac.compare(left.begin(), left.end(), right.begin(), right.end()) < 0);
 ```
 
-Thus, you can use a locale object as a function object.
+It means you can use a locale object as a function object.
 
 ### Example
 
@@ -684,11 +684,11 @@ One of the locales to be tested for equality.
 
 ### Return Value
 
-A Boolean value that is **true** if the locales are copies of the same locale; **false** if the locales are not copies of the same locale.
+A Boolean value that is **true** if the locales are copies of the same locale. It's **false** if the locales aren't copies of the same locale.
 
 ### Remarks
 
-Two locales are equal if they are the same locale, if one is a copy of the other, or if they have identical names.
+Two locales are equal if they're the same locale, if one is a copy of the other, or if they have identical names.
 
 ### Example
 

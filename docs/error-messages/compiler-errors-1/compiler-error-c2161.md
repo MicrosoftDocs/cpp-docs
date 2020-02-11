@@ -13,7 +13,7 @@ A macro definition ended with a token-pasting operator (##).
 
 The following sample generates C2161:
 
-```
+```cpp
 // C2161.cpp
 // compile with: /c
 #define mac(a,b) a   // OK

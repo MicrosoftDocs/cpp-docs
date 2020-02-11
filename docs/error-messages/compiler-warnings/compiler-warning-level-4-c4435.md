@@ -1,6 +1,8 @@
 ---
 title: "Compiler Warning (level 4) C4435"
 ms.date: "11/04/2016"
+f1_keywords: ["C4435"]
+helpviewer_keywords: ["C4435"]
 ms.assetid: a04524af-2b71-4ff9-9729-d9d1d1904ed7
 ---
 # Compiler Warning (level 4) C4435

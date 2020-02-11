@@ -1,6 +1,6 @@
 ---
 title: "C/C++ Project Properties (Visual Studio)"
-ms.date: "7/18/2019"
+ms.date: "07/18/2019"
 ms.topic: "article"
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
 ---

@@ -7,7 +7,7 @@ ms.assetid: cf2650da-3e6f-491c-95d5-23e57f582ee6
 ---
 # moneypunct Class
 
-The template class describes an object that can serve as a locale facet to describe the sequences of type *CharType* used to represent a monetary input field or a monetary output field. If the template parameter *Intl* is *true*, international conventions are observed.
+The class template describes an object that can serve as a locale facet to describe the sequences of type *CharType* used to represent a monetary input field or a monetary output field. If the template parameter *Intl* is *true*, international conventions are observed.
 
 ## Syntax
 
@@ -722,7 +722,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ### Remarks
 
-The type describes a specialization of template class [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the punctuation sequences.
+The type describes a specialization of class template [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the punctuation sequences.
 
 ## <a name="thousands_sep"></a>  moneypunct::thousands_sep
 

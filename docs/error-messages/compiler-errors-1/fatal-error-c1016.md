@@ -13,7 +13,7 @@ The conditional compilation directive ([#ifdef](../../preprocessor/hash-ifdef-an
 
 The following sample generates C1016:
 
-```
+```cpp
 // C1016.cpp
 #ifdef   // C1016
 #define FC1016
@@ -24,7 +24,7 @@ int main() {}
 
 Possible resolution:
 
-```
+```cpp
 // C1016b.cpp
 #ifdef X
 #define FC1016

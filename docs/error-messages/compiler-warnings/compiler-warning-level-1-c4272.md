@@ -13,7 +13,7 @@ It is an error to export a function marked with the [__clrcall](../../cpp/clrcal
 
 The following sample generates C4272:
 
-```
+```cpp
 // C4272.cpp
 // compile with: /c /W1 /clr
 __declspec(dllimport) void __clrcall Test();   // C4272

@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed by Category"
-ms.date: "08/08/2019"
+ms.date: "01/08/2020"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -57,10 +57,13 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Generates fast transcendentals.|
 |[/QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only)|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|
+|[/QIntel-jcc-erratum](qintel-jcc-erratum.md)|Mitigates the performance impact of the Intel JCC erratum microcode update.|
 |[/Qpar](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops.|
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|Enables reporting levels for automatic parallelization.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
 |[/Qspectre](qspectre.md)|Enable mitigations for CVE 2017-5753, for a class of Spectre attacks.|
+|[/Qspectre-load](qspectre-load.md)|Generate serializing instructions for every load instruction.|
+|[/Qspectre-load-cf](qspectre-load-cf.md)|Generate serializing instructions for every control flow instruction which loads memory.|
 |[/Qvec-report](qvec-report-auto-vectorizer-reporting-level.md)|Enables reporting levels for automatic vectorization.|
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|Selects how the volatile keyword is interpreted.|
@@ -115,6 +118,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Zc](zc-conformance.md)|Specifies standard behavior under [/Ze](za-ze-disable-language-extensions.md).|
 |[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables C89 language extensions.|
 |[/Zf](zf.md)|Improves PDB generation time in parallel builds.|
+|[/ZH](zh.md)|Specifies MD5, SHA-1, or SHA-256 for checksums in debug info.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue. (x86 only)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
 |[/Zl](zl-omit-default-library-name.md)|Removes the default library name from the .obj file.|

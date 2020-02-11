@@ -7,7 +7,7 @@ ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
 ---
 # complex Class
 
-The template class describes an object that stores two objects of type `Type`, one that represents the real part of a complex number and one that represents the imaginary part.
+The class template describes an object that stores two objects of type `Type`, one that represents the real part of a complex number and one that represents the imaginary part.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ An object of class `Type`:
 
 In particular, no subtle differences may exist between copy construction and default construction followed by assignment. None of the operations on objects of class `Type` may throw exceptions.
 
-Explicit specializations of template class complex exist for the three floating-point types. In this implementation, a value of any other type `Type` is typecast to **double** for actual calculations, with the **double** result assigned back to the stored object of type `Type`.
+Explicit specializations of class template complex exist for the three floating-point types. In this implementation, a value of any other type `Type` is typecast to **double** for actual calculations, with the **double** result assigned back to the stored object of type `Type`.
 
 ## Members
 

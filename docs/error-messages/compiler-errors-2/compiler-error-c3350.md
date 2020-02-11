@@ -13,7 +13,7 @@ When you create an instance of a delegate, you must pass two arguments, an insta
 
 The following sample generates C3350:
 
-```
+```cpp
 // C3350.cpp
 // compile with: /clr
 delegate void SumDelegate();

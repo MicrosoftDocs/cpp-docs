@@ -13,7 +13,7 @@ For more information, see [naked](../../cpp/naked-cpp.md).
 
 The following sample generates C2489:
 
-```
+```cpp
 // C2489.cpp
 // processor: x86
 __declspec( naked ) int func() {

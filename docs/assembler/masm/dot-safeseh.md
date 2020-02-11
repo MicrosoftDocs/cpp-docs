@@ -1,21 +1,21 @@
 ---
 title: ".SAFESEH"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".SAFESEH"]
 helpviewer_keywords: ["registering functions as exception handlers", "SAFESEH directive", ".SAFESEH directive"]
 ms.assetid: 6eaac8c4-c46f-47ae-8a66-f5cfeb267e43
 ---
-# .SAFESEH
+# .SAFESEH (32-bit MASM)
 
-Registers a function as a structured exception handler.
+Registers a function as a structured exception handler. (32-bit MASM only.)
 
 ## Syntax
 
-> .SAFESEH identifier
+> **.SAFESEH** *identifier*
 
 ## Remarks
 
-*identifier* must be the ID for a locally defined [PROC](../../assembler/masm/proc.md) or [EXTRN](../../assembler/masm/extrn.md) PROC. A [LABEL](../../assembler/masm/label-masm.md) is not allowed. The .SAFESEH directive requires the [/safeseh](../../assembler/masm/ml-and-ml64-command-line-reference.md) ml.exe command-line option.
+*identifier* must be the ID for a locally defined [PROC](proc.md) or [EXTRN](extrn.md) PROC. A [LABEL](label-masm.md) is not allowed. The .SAFESEH directive requires the [/safeseh](ml-and-ml64-command-line-reference.md) ml.exe command-line option.
 
 For more information about structured exception handlers, see [/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md).
 
@@ -31,4 +31,5 @@ end
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

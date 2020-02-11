@@ -1,9 +1,10 @@
 ---
 title: "asctime_s, _wasctime_s"
 ms.date: "11/04/2016"
-apiname: ["_wasctime_s", "asctime_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wasctime_s", "asctime_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["asctime_s", "_wasctime_s", "_tasctime_s"]
 helpviewer_keywords: ["tasctime_s function", "_tasctime_s function", "time structure conversion", "wasctime_s function", "time, converting", "_wasctime_s function", "asctime_s function"]
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
@@ -86,6 +87,8 @@ The converted character string is also adjusted according to the local time zone
 The string result produced by **asctime_s** contains exactly 26 characters and has the form `Wed Jan 02 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The new line character and the null character occupy the last two positions of the string. The value passed in as the second parameter should be at least this big. If it is less, an error code, **EINVAL**, will be returned.
 
 **_wasctime_s** is a wide-character version of **asctime_s**. **_wasctime_s** and **asctime_s** behave identically otherwise.
+
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### Generic-Text Routine Mapping
 

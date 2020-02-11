@@ -1,9 +1,10 @@
 ---
 title: "_msize_dbg"
 ms.date: "11/04/2016"
-apiname: ["_msize_dbg"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_msize_dbg"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_msize_dbg", "msize_dbg"]
 helpviewer_keywords: ["memory blocks", "_msize_dbg function", "msize_dbg function"]
 ms.assetid: a333f4b6-f8a2-4e61-bb69-cb34063b8cef

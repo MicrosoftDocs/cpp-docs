@@ -13,7 +13,7 @@ A data member declared with [property](../../cpp/property-cpp.md) has no `put` f
 
 The following sample generates C2774:
 
-```
+```cpp
 // C2774.cpp
 struct A {
    __declspec(property(get=GetProp)) int prop;

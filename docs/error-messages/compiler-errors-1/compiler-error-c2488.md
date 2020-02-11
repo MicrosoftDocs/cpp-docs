@@ -13,7 +13,7 @@ The [naked](../../cpp/naked-cpp.md) attribute was applied to a function declarat
 
 The following sample generates C2488:
 
-```
+```cpp
 // C2488.cpp
 // compile with: /c
 // processor: x86

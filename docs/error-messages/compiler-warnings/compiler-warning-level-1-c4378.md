@@ -15,7 +15,7 @@ Under **/clr**, initializer symbols contain function tokens, not functions point
 
 The following sample generates C4378.
 
-```
+```cpp
 // C4378.cpp
 // compile with: /W1 /clr /c
 typedef void (__cdecl *PF)(void);
@@ -59,7 +59,7 @@ int main () {
 
 The following sample shows how to resolve C4378.
 
-```
+```cpp
 // C4378_b.cpp
 // compile with: /clr
 #pragma warning(disable:4378)

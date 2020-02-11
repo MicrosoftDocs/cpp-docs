@@ -15,7 +15,7 @@ An [__interface](../../cpp/interface.md) can only appear at global scope or with
 
 The following sample generates C3161.
 
-```
+```cpp
 // C3161.cpp
 // compile with: /c
 __interface X {

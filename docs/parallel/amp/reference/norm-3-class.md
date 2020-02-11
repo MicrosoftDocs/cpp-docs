@@ -10,7 +10,7 @@ Represents a short vector of three normal numbers.
 
 ## Syntax
 
-```
+```cpp
 class norm_3;
 ```
 
@@ -137,9 +137,9 @@ class norm_3;
 
 Default constructor, initializes all elements with 0.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 norm_3() restrict(amp,cpu);
 norm_3(
    norm _V0,
@@ -182,7 +182,7 @@ explicit inline norm_3(
 ) restrict(amp,cpu);
 ```
 
-#### Parameters
+### Parameters
 
 *_V0*<br/>
 The value to initialize element 0.
@@ -203,7 +203,7 @@ The object used to initialize.
 
 ### Syntax
 
-```
+```cpp
 static const int size = 3;
 ```
 

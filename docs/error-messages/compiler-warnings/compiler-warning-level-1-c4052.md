@@ -13,7 +13,7 @@ One declaration of the function does not contain variable arguments. It is ignor
 
 The following sample generates C4052:
 
-```
+```c
 // C4052.c
 // compile with: /W4 /c
 int f();

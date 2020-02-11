@@ -7,7 +7,7 @@ ms.assetid: 6e54153e-da40-4bb9-a942-1a6ce57b30c9
 ---
 # time_get_byname Class
 
-The derived template class describes an object that can serve as a locale facet of type `time_get`\<CharType, InputIterator>.
+The derived class template describes an object that can serve as a locale facet of type `time_get`\<CharType, InputIterator>.
 
 ## Syntax
 

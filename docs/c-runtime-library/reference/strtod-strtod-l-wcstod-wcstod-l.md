@@ -1,9 +1,10 @@
 ---
 title: "strtod, _strtod_l, wcstod, _wcstod_l"
 ms.date: "10/20/2017"
-apiname: ["wcstod", "_wcstod_l", "_strtod_l", "strtod"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["wcstod", "_wcstod_l", "_strtod_l", "strtod"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_tcstod", "strtod", "wcstod", "_strtod_l", "_wcstod_l", "stdlib/strtod", "corecrt_wstdlib/wcstod", "stdlib/_strtod_l", "corecrt_wstdlib/_wcstod_l"]
 helpviewer_keywords: ["wcstod_l function", "tcstod_l function", "_tcstod_l function", "strtod function", "_wcstod_l function", "wcstod function", "strtod_l function", "tcstod function", "_tcstod function", "_strtod_l function", "string conversion, to floating point values"]
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed

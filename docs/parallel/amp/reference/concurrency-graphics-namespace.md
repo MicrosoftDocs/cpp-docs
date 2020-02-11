@@ -10,7 +10,7 @@ The graphics namespace provides types and functions that are designed for graphi
 
 ## Syntax
 
-```
+```cpp
 namespace graphics;
 ```
 

@@ -15,7 +15,7 @@ Covariant return types are not allowed for Windows Runtime member functions or w
 
 The following sample generates C2392 and shows how to fix it.
 
-```
+```cpp
 // C2392.cpp
 // compile with: /clr
 public ref struct B {

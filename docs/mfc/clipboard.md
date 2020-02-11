@@ -10,7 +10,7 @@ This family of articles explains how to implement support for the Windows Clipbo
 
 - Implementing standard Edit menu commands, such as Cut, Copy, and Paste.
 
-- Implementing uniform data transfer with drag and drop (OLE).
+- Implementing uniform data transfer with OLE drag and drop.
 
 The Clipboard is the standard Windows method of transferring data between a source and a destination. It can also be very useful in OLE operations. With the advent of OLE, there are two Clipboard mechanisms in Windows. The standard Windows Clipboard API is still available, but it has been supplemented with the OLE data transfer mechanism. OLE uniform data transfer (UDT) supports Cut, Copy, and Paste with the Clipboard and drag and drop.
 
@@ -30,7 +30,7 @@ The Clipboard is a system service shared by the entire Windows session, so it do
 
 - [The Windows Clipboard](/windows/win32/dataxchg/clipboard)
 
-- [Implementing drag and drop (OLE)](../mfc/drag-and-drop-ole.md)
+- [OLE drag and drop](../mfc/drag-and-drop-ole.md)
 
 ## See also
 

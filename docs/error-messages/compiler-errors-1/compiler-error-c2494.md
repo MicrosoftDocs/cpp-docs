@@ -13,7 +13,7 @@ You cannot use `keyword` in a `__finally` or finally block.
 
 The following sample generates C2494:
 
-```
+```cpp
 // C2494.cpp
 #include <malloc.h>
 
@@ -29,7 +29,7 @@ int main() {
 
 C2494 can also occur when using **/clr**.
 
-```
+```cpp
 // C2494b.cpp
 // compile with: /clr
 #include <malloc.h>

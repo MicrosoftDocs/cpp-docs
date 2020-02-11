@@ -15,7 +15,7 @@ The compiler ignores the pragma and leaves the stack checking unchanged.
 
 ## Example
 
-```
+```cpp
 // C4077.cpp
 // compile with: /W1 /LD
 #pragma check_stack yes // C4077

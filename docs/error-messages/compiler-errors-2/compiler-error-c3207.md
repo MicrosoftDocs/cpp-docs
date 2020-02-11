@@ -13,7 +13,7 @@ A template function is defined as taking a template template argument. However, 
 
 The following sample generates C3207:
 
-```
+```cpp
 // C3207.cpp
 template <template <class T> class TT>
 void f(){}

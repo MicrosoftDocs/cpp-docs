@@ -3,8 +3,6 @@ title: "What's new for C++ in Visual Studio"
 ms.date: "07/02/2019"
 ms.technology: "cpp-ide"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # What's new for C++ in Visual Studio
 
@@ -251,6 +249,10 @@ The compiler supports about 75% of the features that are new in C++17, including
 
 The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://devblogs.microsoft.com/cppblog/announcing-msvc-conforms-to-the-c-standard/) and [Microsoft C++ Language Conformance](../visual-cpp-language-conformance.md).
 
+##### Visual Studio 2017 version 15.8
+
+The [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch enables the new experimental MSVC preprocessor that will eventually be conformant with all applicable C and C++ standards. For more information, see [MSVC experimental preprocessor overview](../preprocessor/preprocessor-experimental-overview.md).
+
 ### New compiler options
 
 - [/permissive-](../build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio](cpp-conformance-improvements.md).
@@ -354,11 +356,11 @@ For a complete list of standard library improvements in Visual Studio 2017 RTM, 
 - Added \<optional\>, \<variant\>, `shared_ptr::weak_type`, and \<cstdalign\>.
 - Enabled C++14 `constexpr` in `min(initializer_list)`, `max(initializer_list)`, and `minmax(initializer_list)`, and `min_element()`, `max_element()`, and `minmax_element()`.
 
-For more information, see [Visual C++ language conformance](../visual-cpp-language-conformance.md).
+For more information, see [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md).
 
 ##### Visual Studio 2017 version 15.3
 
-- Several additional C++17 features have been implemented. For more information, see [Visual C++ Language Conformance](cpp-conformance-improvements.md#improvements_153).
+- Several additional C++17 features have been implemented. For more information, see [Microsoft C++ language conformance table](cpp-conformance-improvements.md#improvements_153).
 - Implemented P0602R0 "variant and optional should propagate copy/move triviality".
 - The standard library now officially tolerates dynamic RTTI being disabled via the [/GR-](../build/reference/gr-enable-run-time-type-information.md) option. Both `dynamic_pointer_cast()` and `rethrow_if_nested()` inherently require `dynamic_cast`, so the standard library now marks them as `=delete` under **/GR-**.
 - Even when dynamic RTTI has been disabled via **/GR-**, "static RTTI" in the form of `typeid(SomeType)` is still available, and powers several standard library components. The standard library now supports disabling this feature too, via **/D\_HAS\_STATIC\_RTTI=0**. This flag also disables `std::any`, the `target()` and `target_type()` member functions of `std::function`, and the `get_deleter()` friend member function of `std::shared_ptr` and `std::weak_ptr`.
@@ -416,7 +418,7 @@ For more information, see [Visual C++ language conformance](../visual-cpp-langua
 - `constexpr char_traits`
 - Deduction guides for the standard library
 
-For more information, see [Visual C++ language conformance](../visual-cpp-language-conformance.md).
+For more information, see [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md).
 
 ### Performance and throughput fixes
 

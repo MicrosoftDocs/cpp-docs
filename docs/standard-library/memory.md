@@ -81,12 +81,12 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 |||
 |-|-|
-|[allocator](../standard-library/allocator-class.md)|The template class describes an object that manages storage allocation and freeing for arrays of objects of type **Type**.|
+|[allocator](../standard-library/allocator-class.md)|The class template describes an object that manages storage allocation and freeing for arrays of objects of type **Type**.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Describes an object that determines all the information that is needed by an allocator-enabled container.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|The template class describes an object that stores a pointer to an allocated object of type **Type** <strong>\*</strong> that ensures the object to which it points gets deleted when its enclosing auto_ptr gets destroyed.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|The class template describes an object that stores a pointer to an allocated object of type **Type** <strong>\*</strong> that ensures the object to which it points gets deleted when its enclosing auto_ptr gets destroyed.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|Reports bad weak_ptr exception.|
 |[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|Helps generate a `shared_ptr`.|
-|[pointer_traits](../standard-library/pointer-traits-struct.md)|Supplies information that is needed by an object of template class `allocator_traits` to describe an allocator with pointer type `Ptr`.|
+|[pointer_traits](../standard-library/pointer-traits-struct.md)|Supplies information that is needed by an object of type `allocator_traits` to describe an allocator with pointer type `Ptr`.|
 |[raw_storage_iterator](../standard-library/raw-storage-iterator-class.md)|An adaptor class that is provided to enable algorithms to store their results into uninitialized memory.|
 |[shared_ptr](../standard-library/shared-ptr-class.md)|Wraps a reference-counted smart pointer around a dynamically allocated object.|
 |[unique_ptr](../standard-library/unique-ptr-class.md)|Stores a pointer to an owned object. The pointer is owned by no other `unique_ptr`. The `unique_ptr` is destroyed when the owner is destroyed.|
@@ -106,7 +106,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 |||
 |-|-|
-|[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the template class allocator to type **void**, defining only the member types that make sense in this specialized context.|
+|[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the class template allocator to type **void**, defining only the member types that make sense in this specialized context.|
 
 ## See also
 

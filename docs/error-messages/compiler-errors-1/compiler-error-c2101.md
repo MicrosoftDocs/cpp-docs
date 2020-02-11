@@ -13,7 +13,7 @@ The address-of operator ( `&` ) must have an l-value as operand.
 
 The following sample generates C2101:
 
-```
+```cpp
 // C2101.cpp
 int main() {
    char test;

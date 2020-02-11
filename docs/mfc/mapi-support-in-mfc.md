@@ -36,7 +36,7 @@ MAPI needs to read the file to send the attachment. If the application keeps its
 If mail support is available, MFC enables your menu item with `OnUpdateFileSendMail` and subsequently processes the command with `OnFileSendMail`. If mail support is not available, MFC automatically removes your menu item so the user will not see it.
 
 > [!TIP]
->  Rather than manually adding message map entries as previously described, you can use the class Properties window to map messages to functions. For more information, see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).
+>  Rather than manually adding message map entries as previously described, you can use the class [Class Wizard](reference/mfc-class-wizard.md) to map messages to functions. For more information, see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).
 
 For related information, see the [MAPI](../mfc/mapi.md) overview.
 

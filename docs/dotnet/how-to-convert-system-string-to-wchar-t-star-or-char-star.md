@@ -11,7 +11,7 @@ You can use `PtrToStringChars` in Vcclr.h to convert <xref:System.String> to nat
 
 ## Example
 
-```
+```cpp
 // convert_string_to_wchar.cpp
 // compile with: /clr
 #include < stdio.h >

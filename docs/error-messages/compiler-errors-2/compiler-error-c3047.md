@@ -13,7 +13,7 @@ Any code in a code block introduced by a [sections](../../parallel/openmp/refere
 
 The following sample generates C3047:
 
-```
+```cpp
 // C3047.cpp
 // compile with: /openmp /c
 #include "omp.h"

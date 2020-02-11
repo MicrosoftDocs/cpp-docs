@@ -1,8 +1,9 @@
 ---
 title: "to Functions"
 ms.date: "11/04/2016"
-apilocation: ["msvcr120.dll", "msvcr90.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll"]
-apitype: "DLLExport"
+api_location: ["msvcr120.dll", "msvcr90.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["To"]
 helpviewer_keywords: ["to functions", "string conversion, to different characters", "string conversion, case", "lowercase, converting strings", "uppercase, converting strings", "case, converting", "characters, converting"]
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
@@ -56,7 +57,7 @@ The `towlower` and `towupper` functions return a converted copy of `c` if and on
 
 ## Example
 
-```
+```c
 // crt_toupper.c
 /* This program uses toupper and tolower to
  * analyze all characters between 0x0 and 0x7F. It also

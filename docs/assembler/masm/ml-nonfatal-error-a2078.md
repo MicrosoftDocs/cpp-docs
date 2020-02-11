@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2078"
-ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.date: "12/17/2019"
+ms.custom: "error-reference"
 f1_keywords: ["A2078"]
 helpviewer_keywords: ["A2078"]
 ms.assetid: 42ac48fd-ac7f-4e74-a11e-20181d443faf
@@ -14,4 +14,4 @@ A conditional jump or loop cannot take a memory operand. It must be given a rela
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

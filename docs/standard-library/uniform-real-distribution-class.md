@@ -48,7 +48,7 @@ The floating-point result type, defaults to **double**. For possible types, see 
 
 ## Remarks
 
-The template class describes an inclusive-exclusive distribution that produces values of a user-specified integral floating point type with a distribution so that every value is equally probable. The following table links to articles about individual members.
+The class template describes an inclusive-exclusive distribution that produces values of a user-specified integral floating point type with a distribution so that every value is equally probable. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

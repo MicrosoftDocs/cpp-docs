@@ -7,7 +7,7 @@ ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
 ---
 # allocator Class
 
-The template class describes an object that manages storage allocation and freeing for arrays of objects of type `Type`. An object of class `allocator` is the default allocator object specified in the constructors for several container template classes in the C++ Standard Library.
+The class template describes an object that manages storage allocation and freeing for arrays of objects of type `Type`. An object of class `allocator` is the default allocator object specified in the constructors for several container class templates in the C++ Standard Library.
 
 ## Syntax
 
@@ -60,7 +60,7 @@ These `Type`s specify the form that pointers and references must take for alloca
 |[difference_type](#difference_type)|A signed integral type that can represent the difference between values of pointers to the type of object managed by the allocator.|
 |[pointer](#pointer)|A type that provides a pointer to the type of object managed by the allocator.|
 |[reference](#reference)|A type that provides a reference to the type of object managed by the allocator.|
-|[size_type](#size_type)|An unsigned integral type that can represent the length of any sequence that an object of template class `allocator` can allocate.|
+|[size_type](#size_type)|An unsigned integral type that can represent the length of any sequence that an object of type `allocator` can allocate.|
 |[value_type](#value_type)|A type that is managed by the allocator.|
 
 ### Functions
@@ -300,7 +300,7 @@ typedef const value_type *const_pointer;
 
 #### Remarks
 
-The pointer type describes an object `ptr` that can designate, through the expression `*ptr`, any const object that an object of template class allocator can allocate.
+The pointer type describes an object `ptr` that can designate, through the expression `*ptr`, any const object that an object of type `allocator` can allocate.
 
 #### Example
 
@@ -355,7 +355,7 @@ typedef const value_type& const_reference;
 
 #### Remarks
 
-The reference type describes an object that can designate any const object that an object of template class allocator can allocate.
+The reference type describes an object that can designate any const object that an object of type `allocator` can allocate.
 
 #### Example
 
@@ -583,7 +583,7 @@ typedef ptrdiff_t difference_type;
 
 #### Remarks
 
-The signed integer type describes an object that can represent the difference between the addresses of any two elements in a sequence that an object of template class allocator can allocate.
+The signed integer type describes an object that can represent the difference between the addresses of any two elements in a sequence that an object of type `allocator` can allocate.
 
 #### Example
 
@@ -776,7 +776,7 @@ typedef value_type *pointer;
 
 #### Remarks
 
-The pointer type describes an object `ptr` that can designate, through the expression **\*ptr**, any object that an object of template class allocator can allocate.
+The pointer type describes an object `ptr` that can designate, through the expression **\*ptr**, any object that an object of type `allocator` can allocate.
 
 #### Example
 
@@ -838,7 +838,7 @@ The type of element for which memory is being allocated.
 
 This structure is useful for allocating memory for type that differs from the element type of the container being implemented.
 
-The member template class defines the type other. Its sole purpose is to provide the type name **allocator**\<_ **Other**>, given the type name **allocator**\< **Type**>.
+The member class template defines the type other. Its sole purpose is to provide the type name **allocator**\<_ **Other**>, given the type name **allocator**\< **Type**>.
 
 For example, given an allocator object `al` of type `A`, you can allocate an object of type `_Other` with the expression:
 
@@ -887,7 +887,7 @@ typedef value_type& reference;
 
 #### Remarks
 
-The reference type describes an object that can designate any object that an object of template class allocator can allocate.
+The reference type describes an object that can designate any object that an object of type `allocator` can allocate.
 
 #### Example
 
@@ -939,7 +939,7 @@ The element referred to by vref after being modified is: 150.
 
 ### <a name="size_type"></a> size_type
 
-An unsigned integral type that can represent the length of any sequence that an object of template class allocator can allocate.
+An unsigned integral type that can represent the length of any sequence that an object of type `allocator` can allocate.
 
 ```cpp
 typedef size_t size_type;

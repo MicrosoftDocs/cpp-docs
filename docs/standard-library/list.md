@@ -7,7 +7,7 @@ ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
 ---
 # &lt;list&gt;
 
-Defines the container template class list and several supporting templates.
+Defines the container class template list and several supporting templates.
 
 ## Syntax
 
@@ -41,7 +41,7 @@ Defines the container template class list and several supporting templates.
 
 |||
 |-|-|
-|[list Class](../standard-library/list-class.md)|A template class of sequence containers that maintain their elements in a linear arrangement and allow efficient insertions and deletions at any location within the sequence.|
+|[list Class](../standard-library/list-class.md)|A class template of sequence containers that maintain their elements in a linear arrangement and allow efficient insertions and deletions at any location within the sequence.|
 
 ## See also
 

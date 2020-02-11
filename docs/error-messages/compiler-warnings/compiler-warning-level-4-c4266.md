@@ -15,7 +15,7 @@ This warning is off by default.  See [Compiler Warnings That Are Off by Default]
 
 The following sample generates C4266:
 
-```
+```cpp
 // C4266.cpp
 // compile with: /W4 /c
 #pragma warning (default : 4266)
@@ -32,7 +32,7 @@ class LocalBinding : private Engine {
 
 Possible resolution:
 
-```
+```cpp
 // C4266b.cpp
 // compile with: /W4 /c
 #pragma warning (default : 4266)
