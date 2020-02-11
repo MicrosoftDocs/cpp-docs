@@ -18,7 +18,7 @@ Read the following documents before you start this walkthrough:
 
 - [Message Passing Functions](../../parallel/concrt/message-passing-functions.md)
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This walkthrough contains the following sections:
 
@@ -28,7 +28,7 @@ This walkthrough contains the following sections:
 
 - [The Complete Example](#complete)
 
-##  <a name="design"></a> Designing a Custom Message Block
+## <a name="design"></a> Designing a Custom Message Block
 
 Message blocks participate in the act of sending and receiving messages. A message block that sends messages is known as a *source block*. A message block that receives messages is known as a *target block*. A message block that both sends and receives messages is known as a *propagator block*. The Agents Library uses the abstract class [concurrency::ISource](../../parallel/concrt/reference/isource-class.md) to represent source blocks and the abstract class [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) to represent target blocks. Message block types that act as sources derive from `ISource`; message block types that act as targets derive from `ITarget`.
 
@@ -52,7 +52,7 @@ The runtime calls the `propagate_message` method to asynchronously transfer a me
 
 [[Top](#top)]
 
-##  <a name="class"></a> Defining the priority_buffer Class
+## <a name="class"></a> Defining the priority_buffer Class
 
 The `priority_buffer` class is a custom message block type that orders incoming messages first by priority, and then by the order in which messages are received. The `priority_buffer` class resembles the [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) class because it holds a queue of messages, and also because it acts as both a source and a target message block and can have both multiple sources and multiple targets. However, `unbounded_buffer` bases message propagation only on the order in which it receives messages from its sources.
 
@@ -170,7 +170,7 @@ Because the `priority_buffer` class orders messages by priority and then by the 
 
 [[Top](#top)]
 
-##  <a name="complete"></a> The Complete Example
+## <a name="complete"></a> The Complete Example
 
 The following example shows the complete definition of the `priority_buffer` class.
 

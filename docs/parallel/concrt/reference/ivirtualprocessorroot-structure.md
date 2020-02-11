@@ -11,7 +11,7 @@ An abstraction for a hardware thread on which a thread proxy can execute.
 
 ## Syntax
 
-```
+```cpp
 struct IVirtualProcessorRoot : public IExecutionResource;
 ```
 
@@ -44,11 +44,11 @@ The Resource Manager grants virtual processor roots to schedulers in response to
 
 **Namespace:** concurrency
 
-##  <a name="activate"></a>  IVirtualProcessorRoot::Activate Method
+## <a name="activate"></a>  IVirtualProcessorRoot::Activate Method
 
 Causes the thread proxy associated with the execution context interface `pContext` to start executing on this virtual processor root.
 
-```
+```cpp
 virtual void Activate(_Inout_ IExecutionContext* pContext) = 0;
 ```
 
@@ -73,11 +73,11 @@ When you activate a virtual processor root, you signal to the Resource Manager t
 
 The act of activating a virtual processor root increases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-##  <a name="deactivate"></a>  IVirtualProcessorRoot::Deactivate Method
+## <a name="deactivate"></a>  IVirtualProcessorRoot::Deactivate Method
 
 Causes the thread proxy currently executing on this virtual processor root to stop dispatching the execution context. The thread proxy will resume executing on a call to the `Activate` method.
 
-```
+```cpp
 virtual bool Deactivate(_Inout_ IExecutionContext* pContext) = 0;
 ```
 
@@ -104,11 +104,11 @@ If a virtual processor root awakens and the return value from the `Deactivate` m
 
 The act of deactivating a virtual processor root decreases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-##  <a name="ensurealltasksvisible"></a>  IVirtualProcessorRoot::EnsureAllTasksVisible Method
+## <a name="ensurealltasksvisible"></a>  IVirtualProcessorRoot::EnsureAllTasksVisible Method
 
 Causes data stored in the memory hierarchy of individual processors to become visible to all processors on the system. It ensures that a full memory fence has been executed on all processors before the method returns.
 
-```
+```cpp
 virtual void EnsureAllTasksVisible(_Inout_ IExecutionContext* pContext) = 0;
 ```
 
@@ -127,11 +127,11 @@ A call to the `EnsureAllTasksVisibleThe` method must originate from within the `
 
 `invalid_operation` is thrown if the virtual processor root has never been activated, or the argument `pContext` does not represent the execution context that was most recently dispatched by this virtual processor root.
 
-##  <a name="getid"></a>  IVirtualProcessorRoot::GetId Method
+## <a name="getid"></a>  IVirtualProcessorRoot::GetId Method
 
 Returns a unique identifier for the virtual processor root.
 
-```
+```cpp
 virtual unsigned int GetId() const = 0;
 ```
 

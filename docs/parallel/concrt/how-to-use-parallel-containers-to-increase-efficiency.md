@@ -58,7 +58,7 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `carmichael-primes.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc carmichael-primes.cpp**
+> **cl.exe /EHsc carmichael-primes.cpp**
 
 ## See also
 

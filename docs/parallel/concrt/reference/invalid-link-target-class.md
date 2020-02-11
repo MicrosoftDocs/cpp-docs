@@ -11,7 +11,7 @@ This class describes an exception thrown when the `link_target` method of a mess
 
 ## Syntax
 
-```
+```cpp
 class invalid_link_target : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class invalid_link_target : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> invalid_link_target
+## <a name="ctor"></a> invalid_link_target
 
 Constructs an `invalid_link_target` object.
 
-```
+```cpp
 explicit _CRTIMP invalid_link_target(_In_z_ const char* _Message) throw();
 
 invalid_link_target() throw();

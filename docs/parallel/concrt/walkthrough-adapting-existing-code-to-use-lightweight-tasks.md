@@ -66,11 +66,11 @@ The following steps show how to adapt the code example to use the Concurrency Ru
 
 [!code-cpp[concrt-migration-lwt#8](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_8.cpp)]
 
-9. At the end of the `MyThreadFunction` function, call the [concurrency::event::set](reference/event-class.md#set) method to signal to the main application that the task has finished.
+1. At the end of the `MyThreadFunction` function, call the [concurrency::event::set](reference/event-class.md#set) method to signal to the main application that the task has finished.
 
 [!code-cpp[concrt-migration-lwt#9](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_9.cpp)]
 
-10. Remove the `return` statement from `MyThreadFunction`.
+1. Remove the `return` statement from `MyThreadFunction`.
 
 ## Example
 

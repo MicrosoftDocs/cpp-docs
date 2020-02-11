@@ -9,7 +9,7 @@ ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
 This document explains the role of cancellation in the Parallel Patterns Library (PPL), how to cancel parallel work, and how to determine when parallel work is canceled.
 
 > [!NOTE]
->  The runtime uses exception handling to implement cancellation. Do not catch or handle these exceptions in your code. In addition, we recommend that you write exception-safe code in the function bodies for your tasks. For instance, you can use the *Resource Acquisition Is Initialization* (RAII) pattern to ensure that resources are correctly handled when an exception is thrown in the body of a task. For a complete example that uses the RAII pattern to clean up a resource in a cancelable task, see [Walkthrough: Removing Work from a User-Interface Thread](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md).
+> The runtime uses exception handling to implement cancellation. Do not catch or handle these exceptions in your code. In addition, we recommend that you write exception-safe code in the function bodies for your tasks. For instance, you can use the *Resource Acquisition Is Initialization* (RAII) pattern to ensure that resources are correctly handled when an exception is thrown in the body of a task. For a complete example that uses the RAII pattern to clean up a resource in a cancelable task, see [Walkthrough: Removing Work from a User-Interface Thread](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md).
 
 ## Key Points
 
@@ -25,7 +25,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 
 - Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#none) method when you call a constructor or function that takes a `cancellation_token` object but you do not want the operation to be cancellable. Also, if you do not pass a cancellation token to the [concurrency::task](../../parallel/concrt/reference/task-class.md) constructor or the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) function, that task is not cancellable.
 
-##  <a name="top"></a> In this Document
+## <a name="top"></a> In this Document
 
 - [Parallel Work Trees](#trees)
 
@@ -41,7 +41,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 
 - [When Not to Use Cancellation](#when)
 
-##  <a name="trees"></a> Parallel Work Trees
+## <a name="trees"></a> Parallel Work Trees
 
 The PPL uses tasks and task groups to manage fine-grained tasks and computations. You can nest task groups to form *trees* of parallel work. The following illustration shows a parallel work tree. In this illustration, `tg1` and `tg2` represent task groups; `t1`, `t2`, `t3`, `t4`, and `t5` represent the work that the task groups perform.
 
@@ -55,13 +55,13 @@ You can also use the [concurrency::task_group](reference/task-group-class.md) cl
 
 [[Top](#top)]
 
-##  <a name="tasks"></a> Canceling Parallel Tasks
+## <a name="tasks"></a> Canceling Parallel Tasks
 
 There are multiple ways to cancel parallel work. The preferred way is to use a cancellation token. Task groups also support the [concurrency::task_group::cancel](reference/task-group-class.md#cancel) method and the [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) method. The final way is to throw an exception in the body of a task work function. No matter which method you choose, understand that cancellation does not occur immediately. Although new work is not started if a task or task group is canceled, active work must check for and respond to cancellation.
 
 For more examples that cancel parallel tasks, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), and [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
 
-###  <a name="tokens"></a> Using a Cancellation Token to Cancel Parallel Work
+### <a name="tokens"></a> Using a Cancellation Token to Cancel Parallel Work
 
 The `task`, `task_group`, and `structured_task_group` classes support cancellation through the use of cancellation tokens. The PPL defines the [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) and [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) classes for this purpose. When you use a cancellation token to cancel work, the runtime does not start new work that subscribes to that token. Work that is already active can use the [is_canceled](../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) member function to monitor the cancellation token and stop when it can.
 
@@ -130,7 +130,7 @@ The runtime chooses the cancellation token for the task that is returned from `w
 
 [[Top](#top)]
 
-###  <a name="cancel"></a> Using the cancel Method to Cancel Parallel Work
+### <a name="cancel"></a> Using the cancel Method to Cancel Parallel Work
 
 The [concurrency::task_group::cancel](reference/task-group-class.md#cancel) and [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) methods set a task group to the canceled state. After you call `cancel`, the task group does not start future tasks. The `cancel` methods can be called by multiple child tasks. A canceled task causes the [concurrency::task_group::wait](reference/task-group-class.md#wait) and [concurrency::structured_task_group::wait](reference/structured-task-group-class.md#wait) methods to return [concurrency::canceled](reference/concurrency-namespace-enums.md#task_group_status).
 
@@ -159,16 +159,16 @@ This second example resembles the first one, except that the task cancels task g
 The `structured_task_group` class is not thread-safe. Therefore, a child task that calls a method of its parent `structured_task_group` object produces unspecified behavior. The exceptions to this rule are the `structured_task_group::cancel` and [concurrency::structured_task_group::is_canceling](reference/structured-task-group-class.md#is_canceling) methods. A child task can call these methods to cancel the parent task group and check for cancellation.
 
 > [!CAUTION]
->  Although you can use a cancellation token to cancel work that is performed by a task group that runs as a child of a `task` object, you cannot use the `task_group::cancel` or `structured_task_group::cancel` methods to cancel `task` objects that run in a task group.
+> Although you can use a cancellation token to cancel work that is performed by a task group that runs as a child of a `task` object, you cannot use the `task_group::cancel` or `structured_task_group::cancel` methods to cancel `task` objects that run in a task group.
 
 [[Top](#top)]
 
-###  <a name="exceptions"></a> Using Exceptions to Cancel Parallel Work
+### <a name="exceptions"></a> Using Exceptions to Cancel Parallel Work
 
 The use of cancellation tokens and the `cancel` method are more efficient than exception handling at canceling a parallel work tree. Cancellation tokens and the `cancel` method cancel a task and any child tasks in a top-down manner. Conversely, exception handling works in a bottom-up manner and must cancel each child task group independently as the exception propagates upward. The topic [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md) explains how the Concurrency Runtime uses exceptions to communicate errors. However, not all exceptions indicate an error. For example, a search algorithm might cancel its associated task when it finds the result. However, as mentioned previously, exception handling is less efficient than using the `cancel` method to cancel parallel work.
 
 > [!CAUTION]
->  We recommend that you use exceptions to cancel parallel work only when necessary. Cancellation tokens and the task group `cancel` methods are more efficient and less prone to error.
+> We recommend that you use exceptions to cancel parallel work only when necessary. Cancellation tokens and the task group `cancel` methods are more efficient and less prone to error.
 
 When you throw an exception in the body of a work function that you pass to a task group, the runtime stores that exception and marshals the exception to the context that waits for the task group to finish. As with the `cancel` method, the runtime discards any tasks that have not yet started, and does not accept new tasks.
 
@@ -184,7 +184,7 @@ Because the `task_group::wait` and `structured_task_group::wait` methods throw w
 
 [[Top](#top)]
 
-##  <a name="algorithms"></a> Canceling Parallel Algorithms
+## <a name="algorithms"></a> Canceling Parallel Algorithms
 
 Parallel algorithms in the PPL, for example, `parallel_for`, build on task groups. Therefore, you can use many of the same techniques to cancel a parallel algorithm.
 
@@ -222,7 +222,7 @@ Each cancellation method has advantages over the others. Choose the method that 
 
 [[Top](#top)]
 
-##  <a name="when"></a> When Not to Use Cancellation
+## <a name="when"></a> When Not to Use Cancellation
 
 The use of cancellation is appropriate when each member of a group of related tasks can exit in a timely manner. However, there are some scenarios where cancellation may not be appropriate for your application. For example, because task cancellation is cooperative, the overall set of tasks will not cancel if any individual task is blocked. For example, if one task has not yet started, but it unblocks another active task, it will not start if the task group is canceled. This can cause deadlock to occur in your application. A second example of where the use of cancellation may not be appropriate is when a task is canceled, but its child task performs an important operation, such as freeing a resource. Because the overall set of tasks is canceled when the parent task is canceled, that operation will not execute. For an example that illustrates this point, see the [Understand how Cancellation and Exception Handling Affect Object Destruction](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) section in the Best Practices in the Parallel Patterns Library topic.
 

@@ -8,7 +8,7 @@ ms.assetid: b3a41cfa-0b64-485d-9e79-23407dca07ba
 
 ## Syntax
 
-```
+```cpp
 namespace std;
 ```
 

@@ -39,7 +39,7 @@ parallel: 1311
 
 To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `parallel-matrix-multiply.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc parallel-matrix-multiply.cpp**
+> **cl.exe /EHsc parallel-matrix-multiply.cpp**
 
 ## See also
 

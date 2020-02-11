@@ -11,7 +11,7 @@ This class describes an exception thrown by the PPL tasks layer in order to forc
 
 ## Syntax
 
-```
+```cpp
 class task_canceled : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class task_canceled : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> task_canceled
+## <a name="ctor"></a> task_canceled
 
 Constructs a `task_canceled` object.
 
-```
+```cpp
 explicit _CRTIMP task_canceled(_In_z_ const char* _Message) throw();
 
 task_canceled() throw();

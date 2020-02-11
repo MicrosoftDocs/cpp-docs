@@ -11,12 +11,12 @@ The basic message envelope containing the data payload being passed between mess
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class message : public ::Concurrency::details::_Runtime_object;
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The data type of the payload within the message.
@@ -64,11 +64,11 @@ For more information, see [Asynchronous Message Blocks](../../../parallel/concrt
 
 **Namespace:** concurrency
 
-##  <a name="add_ref"></a> add_ref
+## <a name="add_ref"></a> add_ref
 
 Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.
 
-```
+```cpp
 long add_ref();
 ```
 
@@ -76,11 +76,11 @@ long add_ref();
 
 The new value of the reference count.
 
-##  <a name="ctor"></a> message
+## <a name="ctor"></a> message
 
 Constructs a `message` object.
 
-```
+```cpp
 message(
     T const& _P);
 
@@ -110,19 +110,19 @@ A reference or pointer to a `message` object.
 
 The constructor that takes a pointer to a `message` object as an argument throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_Msg` is `NULL`.
 
-##  <a name="dtor"></a> ~message
+## <a name="dtor"></a> ~message
 
 Destroys the `message` object.
 
-```
+```cpp
 virtual ~message();
 ```
 
-##  <a name="msg_id"></a> msg_id
+## <a name="msg_id"></a> msg_id
 
 Returns the ID of the `message` object.
 
-```
+```cpp
 runtime_object_identity msg_id() const;
 ```
 
@@ -130,19 +130,19 @@ runtime_object_identity msg_id() const;
 
 The `runtime_object_identity` of the `message` object.
 
-##  <a name="payload"></a> payload
+## <a name="payload"></a> payload
 
 The payload of the `message` object.
 
-```
+```cpp
 T const payload;
 ```
 
-##  <a name="remove_ref"></a> remove_ref
+## <a name="remove_ref"></a> remove_ref
 
 Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.
 
-```
+```cpp
 long remove_ref();
 ```
 

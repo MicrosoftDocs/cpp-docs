@@ -11,7 +11,7 @@ This class describes an exception thrown when an invalid operation is performed 
 
 ## Syntax
 
-```
+```cpp
 class invalid_operation : public std::exception;
 ```
 
@@ -39,11 +39,11 @@ The various methods which throw this exception will generally document under wha
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> invalid_operation
+## <a name="ctor"></a> invalid_operation
 
 Constructs an `invalid_operation` object.
 
-```
+```cpp
 explicit _CRTIMP invalid_operation(_In_z_ const char* _Message) throw();
 
 invalid_operation() throw();

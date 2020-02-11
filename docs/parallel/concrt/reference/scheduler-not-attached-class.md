@@ -11,7 +11,7 @@ This class describes an exception thrown when an operation is performed which re
 
 ## Syntax
 
-```
+```cpp
 class scheduler_not_attached : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class scheduler_not_attached : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> scheduler_not_attached
+## <a name="ctor"></a> scheduler_not_attached
 
 Constructs a `scheduler_not_attached` object.
 
-```
+```cpp
 explicit _CRTIMP scheduler_not_attached(_In_z_ const char* _Message) throw();
 
 scheduler_not_attached() throw();

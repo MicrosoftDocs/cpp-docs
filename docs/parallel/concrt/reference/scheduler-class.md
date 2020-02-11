@@ -11,7 +11,7 @@ Represents an abstraction for a Concurrency Runtime scheduler.
 
 ## Syntax
 
-```
+```cpp
 class Scheduler;
 ```
 
@@ -58,11 +58,11 @@ The Concurrency Runtime will create a default scheduler per process to execute p
 
 **Namespace:** concurrency
 
-##  <a name="attach"></a> Attach
+## <a name="attach"></a> Attach
 
 Attaches the scheduler to the calling context. After this method returns, the calling context is managed by the scheduler and the scheduler becomes the current scheduler.
 
-```
+```cpp
 virtual void Attach() = 0;
 ```
 
@@ -76,11 +76,11 @@ If this method is called from a context that is already attached to a different 
 
 This method will throw an [improper_scheduler_attach](improper-scheduler-attach-class.md) exception if this scheduler is the current scheduler of the calling context.
 
-##  <a name="create"></a> Create
+## <a name="create"></a> Create
 
 Creates a new scheduler whose behavior is described by the `_Policy` parameter, places an initial reference on the scheduler, and returns a pointer to it.
 
-```
+```cpp
 static Scheduler* __cdecl Create(const SchedulerPolicy& _Policy);
 ```
 
@@ -101,11 +101,11 @@ A scheduler created with this method is not attached to the calling context. It 
 
 This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) and [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).
 
-##  <a name="createschedulegroup"></a> CreateScheduleGroup
+## <a name="createschedulegroup"></a> CreateScheduleGroup
 
 Creates a new schedule group within the scheduler. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.
 
-```
+```cpp
 virtual ScheduleGroup* CreateScheduleGroup() = 0;
 
 virtual ScheduleGroup* CreateScheduleGroup(location& _Placement) = 0;
@@ -126,11 +126,11 @@ You must invoke the [Release](schedulegroup-class.md#release) method on a schedu
 
 Note that if you explicitly created this scheduler, you must release all references to schedule groups within it, before you release your references on the scheduler.
 
-##  <a name="getnumberofvirtualprocessors"></a> GetNumberOfVirtualProcessors
+## <a name="getnumberofvirtualprocessors"></a> GetNumberOfVirtualProcessors
 
 Returns the current number of virtual processors for the scheduler.
 
-```
+```cpp
 virtual unsigned int GetNumberOfVirtualProcessors() const = 0;
 ```
 
@@ -138,11 +138,11 @@ virtual unsigned int GetNumberOfVirtualProcessors() const = 0;
 
 The current number of virtual processors for the scheduler.
 
-##  <a name="getpolicy"></a> GetPolicy
+## <a name="getpolicy"></a> GetPolicy
 
 Returns a copy of the policy that the scheduler was created with.
 
-```
+```cpp
 virtual SchedulerPolicy GetPolicy() const = 0;
 ```
 
@@ -150,11 +150,11 @@ virtual SchedulerPolicy GetPolicy() const = 0;
 
 A copy of the policy that the scheduler was created with.
 
-##  <a name="id"></a> Id
+## <a name="id"></a> Id
 
 Returns a unique identifier for the scheduler.
 
-```
+```cpp
 virtual unsigned int Id() const = 0;
 ```
 
@@ -162,11 +162,11 @@ virtual unsigned int Id() const = 0;
 
 A unique identifier for the scheduler.
 
-##  <a name="isavailablelocation"></a> IsAvailableLocation
+## <a name="isavailablelocation"></a> IsAvailableLocation
 
 Determines whether a given location is available on the scheduler.
 
-```
+```cpp
 virtual bool IsAvailableLocation(const location& _Placement) const = 0;
 ```
 
@@ -183,11 +183,11 @@ An indication of whether or not the location specified by the `_Placement` argum
 
 Note that the return value is an instantaneous sampling of whether the given location is available. In the presence of multiple schedulers, dynamic resource management can add or take away resources from schedulers at any point. Should this happen, the given location can change availability.
 
-##  <a name="reference"></a> Reference
+## <a name="reference"></a> Reference
 
 Increments the scheduler reference count.
 
-```
+```cpp
 virtual unsigned int Reference() = 0 ;
 ```
 
@@ -201,11 +201,11 @@ This is typically used to manage the lifetime of the scheduler for composition. 
 
 The method will throw an [improper_scheduler_reference](improper-scheduler-reference-class.md) exception if the reference count prior to calling the `Reference` method was zero and the call is made from a context that is not owned by the scheduler.
 
-##  <a name="registershutdownevent"></a> RegisterShutdownEvent
+## <a name="registershutdownevent"></a> RegisterShutdownEvent
 
 Causes the Windows event handle passed in the `_Event` parameter to be signaled when the scheduler shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.
 
-```
+```cpp
 virtual void RegisterShutdownEvent(HANDLE _Event) = 0;
 ```
 
@@ -214,11 +214,11 @@ virtual void RegisterShutdownEvent(HANDLE _Event) = 0;
 *_Event*<br/>
 A handle to a Windows event object which will be signaled by the runtime when the scheduler shuts down and destroys itself.
 
-##  <a name="release"></a> Release
+## <a name="release"></a> Release
 
 Decrements the scheduler reference count.
 
-```
+```cpp
 virtual unsigned int Release() = 0;
 ```
 
@@ -230,11 +230,11 @@ The newly decremented reference count.
 
 This is typically used to manage the lifetime of the scheduler for composition. When the reference count of a scheduler falls to zero, the scheduler will shut down and destruct itself after all work on the scheduler has completed.
 
-##  <a name="resetdefaultschedulerpolicy"></a> ResetDefaultSchedulerPolicy
+## <a name="resetdefaultschedulerpolicy"></a> ResetDefaultSchedulerPolicy
 
 Resets the default scheduler policy to the runtime default. The next time a default scheduler is created, it will use the runtime default policy settings.
 
-```
+```cpp
 static void __cdecl ResetDefaultSchedulerPolicy();
 ```
 
@@ -242,11 +242,11 @@ static void __cdecl ResetDefaultSchedulerPolicy();
 
 This method can be called while a default scheduler exists within the process. It will not affect the policy of the existing default scheduler. However, if the default scheduler were to shutdown, and a new default were to be created at a later point, the new scheduler would use the runtime default policy settings.
 
-##  <a name="ctor"></a> Scheduler
+## <a name="ctor"></a> Scheduler
 
 An object of the `Scheduler` class can only created using factory methods, or implicitly.
 
-```
+```cpp
 Scheduler();
 ```
 
@@ -256,19 +256,19 @@ The process' default scheduler is created implicitly when you utilize many of th
 
 You can also create a scheduler explicitly through either the `CurrentScheduler::Create` method or the `Scheduler::Create` method.
 
-##  <a name="dtor"></a> ~Scheduler
+## <a name="dtor"></a> ~Scheduler
 
 An object of the `Scheduler` class is implicitly destroyed when all external references to it cease to exist.
 
-```
+```cpp
 virtual ~Scheduler();
 ```
 
-##  <a name="scheduletask"></a> ScheduleTask
+## <a name="scheduletask"></a> ScheduleTask
 
 Schedules a light-weight task within the scheduler. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.
 
-```
+```cpp
 virtual void ScheduleTask(
     TaskProc _Proc,
     _Inout_opt_ void* _Data) = 0;
@@ -290,11 +290,11 @@ A void pointer to the data that will be passed as a parameter to the body of the
 *_Placement*<br/>
 A reference to a location where the light-weight task will be biased towards executing at.
 
-##  <a name="setdefaultschedulerpolicy"></a> SetDefaultSchedulerPolicy
+## <a name="setdefaultschedulerpolicy"></a> SetDefaultSchedulerPolicy
 
 Allows a user defined policy to be used to create the default scheduler. This method can be called only when no default scheduler exists within the process. After a default policy has been set, it remains in effect until the next valid call to either the `SetDefaultSchedulerPolicy` or the [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) method.
 
-```
+```cpp
 static void __cdecl SetDefaultSchedulerPolicy(const SchedulerPolicy& _Policy);
 ```
 

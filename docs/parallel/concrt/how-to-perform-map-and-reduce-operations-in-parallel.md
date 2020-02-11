@@ -20,7 +20,7 @@ The following example counts the occurrences of words in files. It uses [std::ve
 
 To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `parallel-map-reduce.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc parallel-map-reduce.cpp**
+> **cl.exe /EHsc parallel-map-reduce.cpp**
 
 ## Robust Programming
 

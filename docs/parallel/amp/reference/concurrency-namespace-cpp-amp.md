@@ -11,7 +11,7 @@ Provides classes and functions that accelerate the execution of C++ code on data
 
 ## Syntax
 
-```
+```cpp
 namespace Concurrency;
 ```
 
