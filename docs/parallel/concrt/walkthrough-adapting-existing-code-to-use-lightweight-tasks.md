@@ -16,15 +16,11 @@ Before you start this walkthrough, read the topic [Task Scheduler](../../paralle
 
 ## Example
 
-### Description
-
 The following example illustrates typical usage of the Windows API to create and execute a thread. This example uses the [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) function to call the `MyThreadFunction` on a separate thread.
 
-### Code
+### Initial code
 
 [!code-cpp[concrt-windows-threads#1](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_1.cpp)]
-
-### Comments
 
 This example produces the following output.
 
@@ -72,17 +68,11 @@ The following steps show how to adapt the code example to use the Concurrency Ru
 
 1. Remove the `return` statement from `MyThreadFunction`.
 
-## Example
-
-### Description
+### Completed code
 
 The following completed example shows code that uses a lightweight task to call the `MyThreadFunction` function.
 
-### Code
-
 [!code-cpp[concrt-migration-lwt#1](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_10.cpp)]
-
-### Comments
 
 ## See also
 
