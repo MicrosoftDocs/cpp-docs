@@ -1,49 +1,32 @@
 ---
 title: "/errorReport (Report Internal Compiler Errors)"
-ms.date: "11/04/2016"
+description: "Reference for the Microsoft C/C++ compiler /errorReport command-line option."
+ms.date: "02/09/2020"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ErrorReporting", "/errorreport"]
 helpviewer_keywords: ["/errorReport compiler option [C++]", "-errorReport compiler option [C++]"]
 ms.assetid: 819828f8-b0a5-412c-9c57-bf822f17e667
 ---
 # /errorReport (Report Internal Compiler Errors)
 
-Lets you provide internal compiler error (ICE) information directly to Microsoft.
+> [!NOTE]
+> The **/errorReport** option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 ## Syntax
 
-```
-/errorReport:[ none | prompt | queue | send ]
-```
-
-## Arguments
-
-**none**<br/>
-Reports about internal compiler errors will not be collected or sent to Microsoft.
-
-**prompt**<br/>
-Prompts you to send a report when you receive an internal compiler error. **prompt** is the default when an application is compiled in the development environment.
-
-**queue**<br/>
-Queues the error report. When you log in with administrator privileges, a window is displayed so that you can report any failures since the last time you were logged in (you will not be prompted to send reports for failures more than once every three days). **queue** is the default when an application is compiled at a command prompt.
-
-**send**<br/>
-Automatically sends reports of internal compiler errors to Microsoft if reporting is enabled by the Windows Error Reporting system settings.
+> **/errorReport:**\[**none** \| **prompt** \| **queue** \| **send** ]
 
 ## Remarks
 
-An internal compiler error (ICE) results when the compiler cannot process a source code file. When an ICE occurs, the compiler does not produce an output file or any useful diagnostic that you can use to fix your code.
+An internal compiler error (ICE) results when the compiler can't process a source code file. When an ICE occurs, the compiler doesn't produce an output file, or any useful diagnostic that you can use to fix your code.
 
-In earlier releases, when you got an ICE, you were encouraged to call Microsoft Product Support Services to report the problem. With **/errorReport**, you can provide ICE information directly to Microsoft. Your error reports can help improve future compiler releases.
+The **/errorReport** arguments are overridden by the Windows Error Reporting service settings. The compiler automatically sends reports of internal errors to Microsoft, if reporting is enabled by Windows Error Reporting. No report is sent if disabled by Windows Error Reporting.
 
-A user's ability to send reports depends on computer and user policy permissions.
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Advanced** property page.
+1. Open the **Configuration Properties** > **C/C++** > **Advanced** property page.
 
 1. Modify the **Error Reporting** property.
 
@@ -53,5 +36,5 @@ A user's ability to send reports depends on computer and user policy permissions
 
 ## See also
 
-[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)\
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

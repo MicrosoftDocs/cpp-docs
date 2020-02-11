@@ -1,7 +1,7 @@
 ---
 title: "Running LIB"
-description: Describes the command-line options you can use with lib.exe.
-ms.date: "09/25/2019"
+description: "Describes the command-line options you can use with lib.exe."
+ms.date: "02/09/2020"
 f1_keywords: ["VC.Project.VCLibrarianTool.TargetMachine", "Lib", "VC.Project.VCLibrarianTool.PrintProgress", "VC.Project.VCLibrarianTool.SuppressStartupBanner"]
 helpviewer_keywords: ["-MACHINE target platform option", "command files, LIB", "MACHINE target platform option", "colon command files", "VERBOSE library manager option", "/NOLOGO library manager option", "dash option specifier", "/MACHINE target platform option", "forward slash option specifier", "-NOLOGO library manager option", "LIB [C++], running LIB", "-VERBOSE library manager option", "/VERBOSE library manager option", "command files", "NOLOGO library manager option", "slash (/)", "semicolon, command files", "/ command files"]
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
@@ -12,7 +12,7 @@ Various command-line options can be used to control LIB.
 
 ## LIB Command Line
 
-To run LIB, type the command `lib` followed by the options and file names for the task you are using LIB to perform. LIB also accepts command-line input in command files, which are described in the following section. LIB does not use an environment variable.
+To run LIB, type the command `lib`, followed by the options and file names for the task you're using LIB for. LIB also accepts command-line input in command files, which are described in the following section. LIB doesn't use an environment variable.
 
 ## LIB Command Files
 
@@ -20,11 +20,11 @@ You can pass command-line arguments to LIB in a command file using the following
 
 > **LIB \@**<em>command-file</em>
 
-The file *command-file* is a text file. No spaces or tabs are allowed between the at sign (**\@**) and the file name. The *command-file* name has no default extension; you must specify the full file name, including any extension. Wildcards can't be used. You can specify an absolute or relative path with the file name.
+The file *command-file* is a text file. No spaces or tabs are allowed between the at sign (**\@**) and the file name. The *command-file* name has no default extension. Specify the full file name, including any extension. Wildcards can't be used. You may specify an absolute or relative path with the file name.
 
 In the command file, arguments can be separated by spaces or tabs, as they can on the command line. Arguments can also be separated by newline characters. Use a semicolon (**;**) to mark a comment. LIB ignores all text from the semicolon to the end of the line.
 
-You can specify either all or part of the command line in a command file, and you can use more than one command file in a LIB command. LIB accepts the command-file input as if it's specified in that location on the command line. Command files can't be nested. LIB echoes the contents of command files unless the **/NOLOGO** option is used.
+You can specify either all or part of the command line in a command file, and you may use more than one command file in a LIB command. LIB accepts the command-file input as if it's specified in that location on the command line. Command files can't be nested. LIB echoes the contents of command files unless the **/NOLOGO** option is used.
 
 ## Using LIB Options
 
@@ -34,20 +34,18 @@ The following options apply to all modes of LIB:
 
 > **/ERRORREPORT** \[**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
 
-If lib.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
-
-For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
+The /ERRORREPORT option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 > **/LINKREPRO:**_directory-path_ \
 > **/LINKREPROTARGET:**_filename_
 
-To help Microsoft diagnose lib.exe crashes and internal errors, you can use the [/LINKREPRO](linkrepro.md) option. It generates a *link repro*, a set of build artifacts that allow Microsoft to reproduce a problem that occurs during library operations. The [/LINKREPROTARGET](linkreprotarget.md) option can be used with the **/LINKREPRO** option. It only generates link repro artifacts when lib.exe produces the specified file. For more information, see [How to report a problem with the Microsoft C++ toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+To help Microsoft diagnose lib.exe crashes and internal errors, you can use the [/LINKREPRO](linkrepro.md) option. This option generates a *link repro*, a set of build artifacts that allow Microsoft to reproduce a problem that occurs during library operations. The [/LINKREPROTARGET](linkreprotarget.md) option can be used with the **/LINKREPRO** option. It only generates link repro artifacts when lib.exe produces the specified file. For more information, see [How to report a problem with the Microsoft C++ toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
 > **/LTCG**
 
-"LTCG" stands for *link-time code generation*. This feature requires cooperation between the compiler ([cl.exe](compiler-options.md)), LIB, and the linker ([LINK](linker-options.md)) in order to optimize code beyond what any component can do by itself.
+"LTCG" stands for *link-time code generation*. This feature requires cooperation between the compiler ([cl.exe](compiler-options.md)), LIB, and the linker ([LINK](linker-options.md)). Together they can optimize code beyond what any component can do by itself.
 
-For LIB, the **/LTCG** option specifies that the inputs from cl.exe include object files that were generated by using the [/GL](gl-whole-program-optimization.md) compiler option. If LIB encounters such inputs and **/LTCG** isn't specified, it will restart with /LTCG enabled after displaying an informational message. In other words, it isn't necessary to explicitly set this option, but it speeds up build performance to do so because LIB doesn't have to restart itself.
+The **/LTCG** option to LIB specifies that the inputs from cl.exe include object files  generated by using the [/GL](gl-whole-program-optimization.md) compiler option. If LIB encounters such inputs, and **/LTCG** isn't specified, it restarts with /LTCG enabled after displaying an informational message. In other words, it isn't necessary to set this option explicitly, but it speeds up build performance. That's because LIB doesn't have to restart itself.
 
 In the build process, the output from LIB is sent to LINK. LINK has its own separate **/LTCG** option. It's used to perform various optimizations, including whole-program optimization and profile-guided optimization (PGO) instrumentation. For more information about the LINK option, see [/LTCG](ltcg-link-time-code-generation.md).
 
