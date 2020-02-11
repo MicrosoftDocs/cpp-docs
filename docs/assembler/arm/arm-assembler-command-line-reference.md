@@ -59,7 +59,7 @@ A combination of zero or more of the following options:
    Generate debugging information.
 
 - **`-errorReport:`** *option*\
-   This option is deprecated, and has no effect. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
+   This option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 *source_file*\
 The name of the source file.

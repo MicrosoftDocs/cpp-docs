@@ -9,7 +9,7 @@ ms.assetid: eca66ac3-b754-4bd7-9dd4-e04fc79a71b6
 # /ERRORREPORT (editbin.exe)
 
 > [!NOTE]
-> The /ERRORREPORT option is deprecated, and has no effect. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
+> The /ERRORREPORT option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 ## Syntax
 

@@ -9,7 +9,7 @@ ms.assetid: 819828f8-b0a5-412c-9c57-bf822f17e667
 # /errorReport (Report Internal Compiler Errors)
 
 > [!NOTE]
-> The /errorReport option is deprecated, and has no effect. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
+> The **/errorReport** option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 ## Syntax
 

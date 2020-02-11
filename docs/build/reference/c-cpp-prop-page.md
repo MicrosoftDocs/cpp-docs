@@ -470,7 +470,7 @@ Doesn't include default library names in *`.obj`* files. Sets [/Zl](zl-omit-defa
 ### Internal Compiler Error Reporting
 
 > [!NOTE]
-> This option is deprecated, and has no effect. It will be removed in a future version of the product. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
+> This option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 ### Treat Specific Warnings As Errors
 

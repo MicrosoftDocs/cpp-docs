@@ -9,7 +9,7 @@ ms.assetid: 51178c43-4f95-4fda-8f97-50a257d1c948
 # /ERRORREPORT (dumpbin.exe)
 
 > [!NOTE]
-> The /ERRORREPORT option is deprecated, and has no effect. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
+> The /ERRORREPORT option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 ## Syntax
 

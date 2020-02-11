@@ -8,7 +8,7 @@ ms.assetid: f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28
 ---
 # /ERRORREPORT (Report Internal Linker Errors)
 
-The **/ERRORREPORT** option is deprecated, and has no effect. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
+The **/ERRORREPORT** option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 ## Syntax
 

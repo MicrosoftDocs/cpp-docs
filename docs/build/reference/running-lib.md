@@ -34,7 +34,7 @@ The following options apply to all modes of LIB:
 
 > **/ERRORREPORT** \[**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
 
-The /ERRORREPORT option is deprecated, and has no effect. Its arguments are ignored. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
+The /ERRORREPORT option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 > **/LINKREPRO:**_directory-path_ \
 > **/LINKREPROTARGET:**_filename_

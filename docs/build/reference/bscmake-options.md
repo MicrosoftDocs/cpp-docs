@@ -31,7 +31,7 @@ Excludes the specified symbols from the browse information file. To specify mult
 Excludes every include file specified with an absolute path, or found in an absolute path specified in the INCLUDE environment variable. (Usually, these files are the system include files, which contain much information you may not need in your browse information file.) This option doesn't exclude files specified without a path, or with relative paths, or files found in a relative path in INCLUDE. You can use the **/Ei** option along with **/Es** to exclude files that **/Es** doesn't exclude. If you want to exclude only some of the files, use **/Ei** instead of **/Es**, and list the files you want to exclude.
 
 **/errorreport:**[**none** &#124; **prompt** &#124; **queue** &#124; **send**]\
-This option is deprecated, and has no effect. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
+This option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 
 **/HELP**\
 Displays a summary of the BSCMAKE command-line syntax.
