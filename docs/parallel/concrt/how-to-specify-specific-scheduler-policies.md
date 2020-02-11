@@ -39,7 +39,7 @@ Although both sets of tasks produce the same result, the version that uses a cus
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `scheduler-policy.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc scheduler-policy.cpp**
+> **cl.exe /EHsc scheduler-policy.cpp**
 
 ## See also
 

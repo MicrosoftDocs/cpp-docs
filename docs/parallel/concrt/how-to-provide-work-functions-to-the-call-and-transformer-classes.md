@@ -46,7 +46,7 @@ You can also assign the result of the `bind1st` function to a [std::function](..
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `call.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc call.cpp**
+> **cl.exe /EHsc call.cpp**
 
 ## See also
 

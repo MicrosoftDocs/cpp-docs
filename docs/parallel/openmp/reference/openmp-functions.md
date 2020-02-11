@@ -57,7 +57,7 @@ For timing routines:
 
 Uninitializes a lock.
 
-```
+```cpp
 void omp_destroy_lock(
    omp_lock_t *lock
 );
@@ -80,7 +80,7 @@ See [omp_init_lock](#omp-init-lock) for an example of using `omp_destroy_lock`.
 
 Uninitializes a nestable lock.
 
-```
+```cpp
 void omp_destroy_nest_lock(
    omp_nest_lock_t *lock
 );
@@ -103,7 +103,7 @@ See [omp_init_nest_lock](#omp-init-nest-lock) for an example of using `omp_destr
 
 Returns a value that indicates if the number of threads available in upcoming parallel regions can be adjusted by the run time.
 
-```
+```cpp
 int omp_get_dynamic();
 ```
 
@@ -125,7 +125,7 @@ See [omp_set_dynamic](#omp-set-dynamic) for an example of using `omp_get_dynamic
 
 Returns an integer that is equal to or greater than the number of threads that would be available if a parallel region without [num_threads](openmp-clauses.md#num-threads) were defined at that point in the code.
 
-```
+```cpp
 int omp_get_max_threads( )
 ```
 
@@ -175,7 +175,7 @@ int main( )
 
 Returns a value that indicates if nested parallelism is enabled.
 
-```
+```cpp
 int omp_get_nested( );
 ```
 
@@ -197,7 +197,7 @@ See [omp_set_nested](#omp-set-nested) for an example of using `omp_get_nested`.
 
 Returns the number of processors that are available when the function is called.
 
-```
+```cpp
 int omp_get_num_procs();
 ```
 
@@ -234,7 +234,7 @@ int main( )
 
 Returns the number of threads in the parallel region.
 
-```
+```cpp
 int omp_get_num_threads( );
 ```
 
@@ -284,7 +284,7 @@ int main()
 
 Returns the thread number of the thread executing within its thread team.
 
-```
+```cpp
 int omp_get_thread_num( );
 ```
 
@@ -300,7 +300,7 @@ See [parallel](openmp-directives.md#parallel) for an example of using `omp_get_t
 
 Returns the number of seconds between processor clock ticks.
 
-```
+```cpp
 double omp_get_wtick( );
 ```
 
@@ -316,7 +316,7 @@ See [omp_get_wtime](#omp-get-wtime) for an example of using `omp_get_wtick`.
 
 Returns a value in seconds of the time elapsed from some point.
 
-```
+```cpp
 double omp_get_wtime( );
 ```
 
@@ -365,7 +365,7 @@ wtick = 2.793651148400146e-007
 
 Returns nonzero if called from within a parallel region.
 
-```
+```cpp
 int omp_in_parallel( );
 ```
 
@@ -403,7 +403,7 @@ int main( )
 
 Initializes a simple lock.
 
-```
+```cpp
 void omp_init_lock(
    omp_lock_t *lock
 );
@@ -495,7 +495,7 @@ Thread 3 - ending locked region
 
 Initializes a lock.
 
-```
+```cpp
 void omp_init_nest_lock(
    omp_nest_lock_t *lock
 );
@@ -580,7 +580,7 @@ Thread 0 - ending nested locked region
 
 Indicates that the number of threads available in upcoming parallel regions can be adjusted by the run time.
 
-```
+```cpp
 void omp_set_dynamic(
    int val
 );
@@ -631,7 +631,7 @@ int main()
 
 Blocks thread execution until a lock is available.
 
-```
+```cpp
 void omp_set_lock(
    omp_lock_t *lock
 );
@@ -654,7 +654,7 @@ See [omp_init_lock](#omp-init-lock) for an example of using `omp_set_lock`.
 
 Blocks thread execution until a lock is available.
 
-```
+```cpp
 void omp_set_nest_lock(
    omp_nest_lock_t *lock
 );
@@ -677,7 +677,7 @@ See [omp_init_nest_lock](#omp-init-nest-lock) for an example of using `omp_set_n
 
 Enables nested parallelism.
 
-```
+```cpp
 void omp_set_nested(
    int val
 );
@@ -730,7 +730,7 @@ int main( )
 
 Sets the number of threads in upcoming parallel regions, unless overridden by a [num_threads](openmp-clauses.md#num-threads) clause.
 
-```
+```cpp
 void omp_set_num_threads(
    int num_threads
 );
@@ -753,7 +753,7 @@ See [omp_get_num_threads](#omp-get-num-threads) for an example of using `omp_set
 
 Attempts to set a lock but doesn't block thread execution.
 
-```
+```cpp
 int omp_test_lock(
    omp_lock_t *lock
 );
@@ -826,7 +826,7 @@ Thread 3 - released simple_lock
 
 Attempts to set a nestable lock but doesn't block thread execution.
 
-```
+```cpp
 int omp_test_nest_lock(
    omp_nest_lock_t *lock
 );
@@ -917,7 +917,7 @@ Thread 2 - released nestable_lock
 
 Releases a lock.
 
-```
+```cpp
 void omp_unset_lock(
    omp_lock_t *lock
 );
@@ -940,7 +940,7 @@ See [omp_init_lock](#omp-init-lock) for an example of using `omp_unset_lock`.
 
 Releases a nestable lock.
 
-```
+```cpp
 void omp_unset_nest_lock(
    omp_nest_lock_t *lock
 );

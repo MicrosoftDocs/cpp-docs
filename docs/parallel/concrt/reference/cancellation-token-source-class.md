@@ -11,7 +11,7 @@ The `cancellation_token_source` class represents the ability to cancel some canc
 
 ## Syntax
 
-```
+```cpp
 class cancellation_token_source;
 ```
 
@@ -50,25 +50,25 @@ class cancellation_token_source;
 
 **Namespace:** concurrency
 
-##  <a name="dtor"></a> ~cancellation_token_source
+## <a name="dtor"></a> ~cancellation_token_source
 
-```
+```cpp
 ~cancellation_token_source();
 ```
 
-##  <a name="cancel"></a> cancel
+## <a name="cancel"></a> cancel
 
 Cancels the token. Any `task_group`, `structured_task_group`, or `task` which utilizes the token will be canceled upon this call and throw an exception at the next interruption point.
 
-```
+```cpp
 void cancel() const;
 ```
 
-##  <a name="ctor"></a> cancellation_token_source
+## <a name="ctor"></a> cancellation_token_source
 
 Constructs a new `cancellation_token_source`. The source can be used to flag cancellation of some cancelable operation.
 
-```
+```cpp
 cancellation_token_source();
 
 cancellation_token_source(const cancellation_token_source& _Src);
@@ -81,11 +81,11 @@ cancellation_token_source(cancellation_token_source&& _Src);
 *_Src*<br/>
 Object to copy or move.
 
-##  <a name="create_linked_source"></a> create_linked_source
+## <a name="create_linked_source"></a> create_linked_source
 
 Creates a `cancellation_token_source` which is canceled when the provided token is canceled.
 
-```
+```cpp
 static cancellation_token_source create_linked_source(
     cancellation_token& _Src);
 
@@ -111,11 +111,11 @@ The C++ Standard Library iterator corresponding to the ending of the range of to
 
 A `cancellation_token_source` which is canceled when the token provided by the `_Src` parameter is canceled.
 
-##  <a name="get_token"></a> get_token
+## <a name="get_token"></a> get_token
 
 Returns a cancellation token associated with this source. The returned token can be polled for cancellation or provide a callback if and when cancellation occurs.
 
-```
+```cpp
 cancellation_token get_token() const;
 ```
 
@@ -123,9 +123,9 @@ cancellation_token get_token() const;
 
 A cancellation token associated with this source.
 
-##  <a name="operator_neq"></a> operator!=
+## <a name="operator_neq"></a> operator!=
 
-```
+```cpp
 bool operator!= (const cancellation_token_source& _Src) const;
 ```
 
@@ -136,9 +136,9 @@ Operand.
 
 ### Return Value
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
-```
+```cpp
 cancellation_token_source& operator= (const cancellation_token_source& _Src);
 
 cancellation_token_source& operator= (cancellation_token_source&& _Src);
@@ -151,9 +151,9 @@ Operand.
 
 ### Return Value
 
-##  <a name="operator_eq_eq"></a> operator==
+## <a name="operator_eq_eq"></a> operator==
 
-```
+```cpp
 bool operator== (const cancellation_token_source& _Src) const;
 ```
 

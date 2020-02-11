@@ -11,14 +11,14 @@ A `join` messaging block is a single-target, multi-source, ordered `propagator_b
 
 ## Syntax
 
-```
+```cpp
 template<class T,
     join_type _Jtype = non_greedy>
 class join : public propagator_block<single_link_registry<ITarget<std::vector<T>>>,
     multi_link_registry<ISource<T>>>;
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The payload type of the messages joined and propagated by the block.
@@ -70,11 +70,11 @@ For more information, see [Asynchronous Message Blocks](../../../parallel/concrt
 
 **Namespace:** concurrency
 
-##  <a name="accept_message"></a> accept_message
+## <a name="accept_message"></a> accept_message
 
 Accepts a message that was offered by this `join` messaging block, transferring ownership to the caller.
 
-```
+```cpp
 virtual message<_OutputType>* accept_message(runtime_object_identity _MsgId);
 ```
 
@@ -87,11 +87,11 @@ The `runtime_object_identity` of the offered `message` object.
 
 A pointer to the `message` object that the caller now has ownership of.
 
-##  <a name="consume_message"></a> consume_message
+## <a name="consume_message"></a> consume_message
 
 Consumes a message previously offered by the `join` messaging block and reserved by the target, transferring ownership to the caller.
 
-```
+```cpp
 virtual message<_OutputType>* consume_message(runtime_object_identity _MsgId);
 ```
 
@@ -108,11 +108,11 @@ A pointer to the `message` object that the caller now has ownership of.
 
 Similar to `accept`, but is always preceded by a call to `reserve`.
 
-##  <a name="ctor"></a> join
+## <a name="ctor"></a> join
 
 Constructs a `join` messaging block.
 
-```
+```cpp
 join(
     size_t _NumInputs);
 
@@ -159,27 +159,27 @@ The runtime uses the default scheduler if you do not specify the `_PScheduler` o
 
 The type `filter_method` is a functor with signature `bool (T const &)` which is invoked by this `join` messaging block to determine whether or not it should accept an offered message.
 
-##  <a name="dtor"></a> ~join
+## <a name="dtor"></a> ~join
 
 Destroys the `join` block.
 
-```
+```cpp
 ~join();
 ```
 
-##  <a name="link_target_notification"></a> link_target_notification
+## <a name="link_target_notification"></a> link_target_notification
 
 A callback that notifies that a new target has been linked to this `join` messaging block.
 
-```
+```cpp
 virtual void link_target_notification(_Inout_ ITarget<std::vector<T>> *);
 ```
 
-##  <a name="propagate_message"></a> propagate_message
+## <a name="propagate_message"></a> propagate_message
 
 Asynchronously passes a message from an `ISource` block to this `join` messaging block. It is invoked by the `propagate` method, when called by a source block.
 
-```
+```cpp
 message_status propagate_message(
     _Inout_ message<T>* _PMessage,
     _Inout_ ISource<T>* _PSource);
@@ -197,19 +197,19 @@ A pointer to the source block offering the message.
 
 A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.
 
-##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 Constructs an output message containing an input message from each source when they have all propagated a message. Sends this output message out to each of its targets.
 
-```
+```cpp
 void propagate_to_any_targets(_Inout_opt_ message<_OutputType> *);
 ```
 
-##  <a name="release_message"></a> release_message
+## <a name="release_message"></a> release_message
 
 Releases a previous message reservation.
 
-```
+```cpp
 virtual void release_message(runtime_object_identity _MsgId);
 ```
 
@@ -218,11 +218,11 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 The `runtime_object_identity` of the `message` object being released.
 
-##  <a name="reserve_message"></a> reserve_message
+## <a name="reserve_message"></a> reserve_message
 
 Reserves a message previously offered by this `join` messaging block.
 
-```
+```cpp
 virtual bool reserve_message(runtime_object_identity _MsgId);
 ```
 
@@ -239,11 +239,11 @@ The `runtime_object_identity` of the offered `message` object.
 
 After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
 
-##  <a name="resume_propagation"></a> resume_propagation
+## <a name="resume_propagation"></a> resume_propagation
 
 Resumes propagation after a reservation has been released.
 
-```
+```cpp
 virtual void resume_propagation();
 ```
 

@@ -58,7 +58,7 @@ Did not find node with value 17522.
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `task-tree-search.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc task-tree-search.cpp**
+> **cl.exe /EHsc task-tree-search.cpp**
 
 ## See also
 

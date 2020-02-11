@@ -11,7 +11,7 @@ The `concurrent_unordered_multimap` class is an concurrency-safe container that 
 
 ## Syntax
 
-```
+```cpp
 template <typename K,
     typename _Element_type,
     typename _Hasher = std::hash<K>,
@@ -30,7 +30,7 @@ key_equality>,
 true>>;
 ```
 
-#### Parameters
+### Parameters
 
 *K*<br/>
 The key type.
@@ -110,11 +110,11 @@ For detailed information on the `concurrent_unordered_multimap` class, see [Para
 
 **Namespace:** concurrency
 
-##  <a name="begin"></a> begin
+## <a name="begin"></a> begin
 
 Returns an iterator pointing to the first element in the concurrent container. This method is concurrency safe.
 
-```
+```cpp
 iterator begin();
 
 const_iterator begin() const;
@@ -124,11 +124,11 @@ const_iterator begin() const;
 
 An iterator to the first element in the concurrent container.
 
-##  <a name="cbegin"></a> cbegin
+## <a name="cbegin"></a> cbegin
 
 Returns a const iterator pointing to the first element in the concurrent container. This method is concurrency safe.
 
-```
+```cpp
 const_iterator cbegin() const;
 ```
 
@@ -136,11 +136,11 @@ const_iterator cbegin() const;
 
 A const iterator to the first element in the concurrent container.
 
-##  <a name="cend"></a> cend
+## <a name="cend"></a> cend
 
 Returns a const iterator pointing to the location succeeding the last element in the concurrent container. This method is concurrency safe.
 
-```
+```cpp
 const_iterator cend() const;
 ```
 
@@ -148,19 +148,19 @@ const_iterator cend() const;
 
 A const iterator to the location succeeding the last element in the concurrent container.
 
-##  <a name="clear"></a> clear
+## <a name="clear"></a> clear
 
 Erases all the elements in the concurrent container. This function is not concurrency safe.
 
-```
+```cpp
 void clear();
 ```
 
-##  <a name="ctor"></a> concurrent_unordered_multimap
+## <a name="ctor"></a> concurrent_unordered_multimap
 
 Constructs a concurrent unordered multimap.
 
-```
+```cpp
 explicit concurrent_unordered_multimap(
     size_type _Number_of_buckets = 8,
     const hasher& _Hasher = hasher(),
@@ -229,11 +229,11 @@ The fourth and fifth constructors specify a copy of the concurrent unordered mul
 
 The last constructor specifies a move of the concurrent unordered multimap `_Umap`.
 
-##  <a name="count"></a> count
+## <a name="count"></a> count
 
 Counts the number of elements matching a specified key. This function is concurrency safe.
 
-```
+```cpp
 size_type count(const key_type& KVal) const;
 ```
 
@@ -246,11 +246,11 @@ The key to search for.
 
 The number of times number of times the key appears in the container.
 
-##  <a name="empty"></a> empty
+## <a name="empty"></a> empty
 
 Tests whether no elements are present. This method is concurrency safe.
 
-```
+```cpp
 bool empty() const;
 ```
 
@@ -262,11 +262,11 @@ bool empty() const;
 
 In the presence of concurrent inserts, whether or not the concurrent container is empty may change immediately after calling this function, before the return value is even read.
 
-##  <a name="end"></a> end
+## <a name="end"></a> end
 
 Returns an iterator pointing to the location succeeding the last element in the concurrent container. This method is concurrency safe.
 
-```
+```cpp
 iterator end();
 
 const_iterator end() const;
@@ -276,11 +276,11 @@ const_iterator end() const;
 
 An iterator to the location succeeding the last element in the concurrent container.
 
-##  <a name="equal_range"></a> equal_range
+## <a name="equal_range"></a> equal_range
 
 Finds a range that matches a specified key. This function is concurrency safe.
 
-```
+```cpp
 std::pair<iterator,
     iterator> equal_range(
     const key_type& KVal);
@@ -303,11 +303,11 @@ A [pair](../../../standard-library/pair-structure.md) where the first element is
 
 It is possible for concurrent inserts to cause additional keys to be inserted after the begin iterator and before the end iterator.
 
-##  <a name="find"></a> find
+## <a name="find"></a> find
 
 Finds an element that matches a specified key. This function is concurrency safe.
 
-```
+```cpp
 iterator find(const key_type& KVal);
 
 const_iterator find(const key_type& KVal) const;
@@ -322,11 +322,11 @@ The key value to search for.
 
 An iterator pointing to the location of the first element that matched the key provided, or the iterator `end()` if no such element exists.
 
-##  <a name="get_allocator"></a> get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 Returns the stored allocator object for this concurrent container. This method is concurrency safe.
 
-```
+```cpp
 allocator_type get_allocator() const;
 ```
 
@@ -334,11 +334,11 @@ allocator_type get_allocator() const;
 
 The stored allocator object for this concurrent container.
 
-##  <a name="hash_function"></a> hash_function
+## <a name="hash_function"></a> hash_function
 
 Returns the stored hash function object.
 
-```
+```cpp
 hasher hash_function() const;
 ```
 
@@ -346,11 +346,11 @@ hasher hash_function() const;
 
 The stored hash function object.
 
-##  <a name="insert"></a> insert
+## <a name="insert"></a> insert
 
 Adds elements to the `concurrent_unordered_multimap` object.
 
-```
+```cpp
 iterator insert(
     const value_type& value);
 
@@ -408,11 +408,11 @@ The third member function inserts the sequence of element values from the range 
 
 The last two member functions behave the same as the first two, except that `value` is used to construct the inserted value.
 
-##  <a name="key_eq"></a> key_eq
+## <a name="key_eq"></a> key_eq
 
 Returns the stored equality comparison function object.
 
-```
+```cpp
 key_equal key_eq() const;
 ```
 
@@ -420,11 +420,11 @@ key_equal key_eq() const;
 
 The stored equality comparison function object.
 
-##  <a name="load_factor"></a> load_factor
+## <a name="load_factor"></a> load_factor
 
 Computes and returns the current load factor of the container. The load factor is the number of elements in the container divided by the number of buckets.
 
-```
+```cpp
 float load_factor() const;
 ```
 
@@ -432,11 +432,11 @@ float load_factor() const;
 
 The load factor for the container.
 
-##  <a name="max_load_factor"></a> max_load_factor
+## <a name="max_load_factor"></a> max_load_factor
 
 Gets or sets the maximum load factor of the container. The maximum load factor is the largest number of elements than can be in any bucket before the container grows its internal table.
 
-```
+```cpp
 float max_load_factor() const;
 
 void max_load_factor(float _Newmax);
@@ -450,11 +450,11 @@ void max_load_factor(float _Newmax);
 
 The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid..
 
-##  <a name="max_size"></a> max_size
+## <a name="max_size"></a> max_size
 
 Returns the maximum size of the concurrent container, determined by the allocator. This method is concurrency safe.
 
-```
+```cpp
 size_type max_size() const;
 ```
 
@@ -466,11 +466,11 @@ The maximum number of elements that can be inserted into this concurrent contain
 
 This upper bound value may actually be higher than what the container can actually hold.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Assigns the contents of another `concurrent_unordered_multimap` object to this one. This method is not concurrency-safe.
 
-```
+```cpp
 concurrent_unordered_multimap& operator= (const concurrent_unordered_multimap& _Umap);
 
 concurrent_unordered_multimap& operator= (concurrent_unordered_multimap&& _Umap);
@@ -489,11 +489,11 @@ A reference to this `concurrent_unordered_multimap` object.
 
 After erasing any existing elements in a concurrent unordered multimap, `operator=` either copies or moves the contents of `_Umap` into the concurrent unordered multimap.
 
-##  <a name="rehash"></a> rehash
+## <a name="rehash"></a> rehash
 
 Rebuilds the hash table.
 
-```
+```cpp
 void rehash(size_type _Buckets);
 ```
 
@@ -508,11 +508,11 @@ The member function alters the number of buckets to be at least `_Buckets` and r
 
 It throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the number of buckets is invalid (either 0 or greater than the maximum number of buckets).
 
-##  <a name="size"></a> size
+## <a name="size"></a> size
 
 Returns the number of elements in this concurrent container. This method is concurrency safe.
 
-```
+```cpp
 size_type size() const;
 ```
 
@@ -524,11 +524,11 @@ The number of items in the container.
 
 In the presence of concurrent inserts, the number of elements in the concurrent container may change immediately after calling this function, before the return value is even read.
 
-##  <a name="swap"></a> swap
+## <a name="swap"></a> swap
 
 Swaps the contents of two `concurrent_unordered_multimap` objects. This method is not concurrency-safe.
 
-```
+```cpp
 void swap(concurrent_unordered_multimap& _Umap);
 ```
 
@@ -537,11 +537,11 @@ void swap(concurrent_unordered_multimap& _Umap);
 *_Umap*<br/>
 The `concurrent_unordered_multimap` object to swap with.
 
-##  <a name="unsafe_begin"></a> unsafe_begin
+## <a name="unsafe_begin"></a> unsafe_begin
 
 Returns an iterator to the first element in this container for a specific bucket.
 
-```
+```cpp
 local_iterator unsafe_begin(size_type _Bucket);
 
 const_local_iterator unsafe_begin(size_type _Bucket) const;
@@ -556,11 +556,11 @@ The bucket index.
 
 An iterator pointing to the beginning of the bucket.
 
-##  <a name="unsafe_bucket"></a> unsafe_bucket
+## <a name="unsafe_bucket"></a> unsafe_bucket
 
 Returns the bucket index that a specific key maps to in this container.
 
-```
+```cpp
 size_type unsafe_bucket(const key_type& KVal) const;
 ```
 
@@ -573,11 +573,11 @@ The element key being searched for.
 
 The bucket index for the key in this container.
 
-##  <a name="unsafe_bucket_count"></a> unsafe_bucket_count
+## <a name="unsafe_bucket_count"></a> unsafe_bucket_count
 
 Returns the current number of buckets in this container.
 
-```
+```cpp
 size_type unsafe_bucket_count() const;
 ```
 
@@ -585,11 +585,11 @@ size_type unsafe_bucket_count() const;
 
 The current number of buckets in this container.
 
-##  <a name="unsafe_bucket_size"></a> unsafe_bucket_size
+## <a name="unsafe_bucket_size"></a> unsafe_bucket_size
 
 Returns the number of items in a specific bucket of this container.
 
-```
+```cpp
 size_type unsafe_bucket_size(size_type _Bucket);
 ```
 
@@ -602,11 +602,11 @@ The bucket to search for.
 
 The current number of buckets in this container.
 
-##  <a name="unsafe_cbegin"></a> unsafe_cbegin
+## <a name="unsafe_cbegin"></a> unsafe_cbegin
 
 Returns an iterator to the first element in this container for a specific bucket.
 
-```
+```cpp
 const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 ```
 
@@ -619,11 +619,11 @@ The bucket index.
 
 An iterator pointing to the beginning of the bucket.
 
-##  <a name="unsafe_cend"></a> unsafe_cend
+## <a name="unsafe_cend"></a> unsafe_cend
 
 Returns an iterator to the location succeeding the last element in a specific bucket.
 
-```
+```cpp
 const_local_iterator unsafe_cend(size_type _Bucket) const;
 ```
 
@@ -636,11 +636,11 @@ The bucket index.
 
 An iterator pointing to the beginning of the bucket.
 
-##  <a name="unsafe_end"></a> unsafe_end
+## <a name="unsafe_end"></a> unsafe_end
 
 Returns an iterator to the last element in this container for a specific bucket.
 
-```
+```cpp
 local_iterator unsafe_end(size_type _Bucket);
 
 const_local_iterator unsafe_end(size_type _Bucket) const;
@@ -655,11 +655,11 @@ The bucket index.
 
 An iterator pointing to the end of the bucket.
 
-##  <a name="unsafe_erase"></a> unsafe_erase
+## <a name="unsafe_erase"></a> unsafe_erase
 
 Removes elements from the `concurrent_unordered_multimap` at specified positions. This method is not concurrency-safe.
 
-```
+```cpp
 iterator unsafe_erase(
     const_iterator _Where);
 
@@ -693,11 +693,11 @@ The first member function removes the element of the controlled sequence pointed
 
 The third member function removes the elements in the range delimited by `concurrent_unordered_multimap::equal_range`(KVal).
 
-##  <a name="unsafe_max_bucket_count"></a> unsafe_max_bucket_count
+## <a name="unsafe_max_bucket_count"></a> unsafe_max_bucket_count
 
 Returns the maximum number of buckets in this container.
 
-```
+```cpp
 size_type unsafe_max_bucket_count() const;
 ```
 

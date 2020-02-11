@@ -11,12 +11,12 @@ The `multi_link_registry` object is a `network_link_registry` that manages multi
 
 ## Syntax
 
-```
+```cpp
 template<class _Block>
 class multi_link_registry : public network_link_registry<_Block>;
 ```
 
-#### Parameters
+### Parameters
 
 *_Block*<br/>
 The block data type being stored in the `multi_link_registry` object.
@@ -53,11 +53,11 @@ The block data type being stored in the `multi_link_registry` object.
 
 **Namespace:** concurrency
 
-##  <a name="add"></a> add
+## <a name="add"></a> add
 
 Adds a link to the `multi_link_registry` object.
 
-```
+```cpp
 virtual void add(_EType _Link);
 ```
 
@@ -70,11 +70,11 @@ A pointer to a block to be added.
 
 The method throws an [invalid_link_target](invalid-link-target-class.md) exception if the link is already present in the registry, or if a bound has already been set with the `set_bound` function and a link has since been removed.
 
-##  <a name="begin"></a> begin
+## <a name="begin"></a> begin
 
 Returns an iterator to the first element in the `multi_link_registry` object.
 
-```
+```cpp
 virtual iterator begin();
 ```
 
@@ -86,11 +86,11 @@ An iterator addressing the first element in the `multi_link_registry` object.
 
 The end state is indicated by a `NULL` link.
 
-##  <a name="contains"></a> contains
+## <a name="contains"></a> contains
 
 Searches the `multi_link_registry` object for a specified block.
 
-```
+```cpp
 virtual bool contains(_EType _Link);
 ```
 
@@ -103,11 +103,11 @@ A pointer to a block that is to be searched for in the `multi_link_registry` obj
 
 **true** if the specified block was found, **false** otherwise.
 
-##  <a name="count"></a> count
+## <a name="count"></a> count
 
 Counts the number of items in the `multi_link_registry` object.
 
-```
+```cpp
 virtual size_t count();
 ```
 
@@ -115,19 +115,19 @@ virtual size_t count();
 
 The number of items in the `multi_link_registry` object.
 
-##  <a name="ctor"></a> multi_link_registry
+## <a name="ctor"></a> multi_link_registry
 
 Constructs a `multi_link_registry` object.
 
-```
+```cpp
 multi_link_registry();
 ```
 
-##  <a name="dtor"></a> ~multi_link_registry
+## <a name="dtor"></a> ~multi_link_registry
 
 Destroys the `multi_link_registry` object.
 
-```
+```cpp
 virtual ~multi_link_registry();
 ```
 
@@ -135,11 +135,11 @@ virtual ~multi_link_registry();
 
 The method throws an [invalid_operation](invalid-operation-class.md) exception if called before all links are removed.
 
-##  <a name="remove"></a> remove
+## <a name="remove"></a> remove
 
 Removes a link from the `multi_link_registry` object.
 
-```
+```cpp
 virtual bool remove(_EType _Link);
 ```
 
@@ -152,11 +152,11 @@ A pointer to a block to be removed, if found.
 
 **true** if the link was found and removed, **false** otherwise.
 
-##  <a name="set_bound"></a> set_bound
+## <a name="set_bound"></a> set_bound
 
 Sets an upper bound on the number of links that the `multi_link_registry` object can hold.
 
-```
+```cpp
 void set_bound(size_t _MaxLinks);
 ```
 

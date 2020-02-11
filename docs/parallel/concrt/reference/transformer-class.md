@@ -11,13 +11,13 @@ A `transformer` messaging block is a single-target, multi-source, ordered `propa
 
 ## Syntax
 
-```
+```cpp
 template<class _Input, class _Output>
 class transformer : public propagator_block<single_link_registry<ITarget<_Output>>,
     multi_link_registry<ISource<_Input>>>;
 ```
 
-#### Parameters
+### Parameters
 
 *_Input*<br/>
 The payload type of the messages accepted by the buffer.
@@ -71,11 +71,11 @@ For more information, see [Asynchronous Message Blocks](../../../parallel/concrt
 
 **Namespace:** concurrency
 
-##  <a name="accept_message"></a> accept_message
+## <a name="accept_message"></a> accept_message
 
 Accepts a message that was offered by this `transformer` messaging block, transferring ownership to the caller.
 
-```
+```cpp
 virtual message<_Output>* accept_message(runtime_object_identity _MsgId);
 ```
 
@@ -88,11 +88,11 @@ The `runtime_object_identity` of the offered `message` object.
 
 A pointer to the `message` object that the caller now has ownership of.
 
-##  <a name="consume_message"></a> consume_message
+## <a name="consume_message"></a> consume_message
 
 Consumes a message previously offered by the `transformer` and reserved by the target, transferring ownership to the caller.
 
-```
+```cpp
 virtual message<_Output>* consume_message(runtime_object_identity _MsgId);
 ```
 
@@ -109,19 +109,19 @@ A pointer to the `message` object that the caller now has ownership of.
 
 Similar to `accept`, but is always preceded by a call to `reserve`.
 
-##  <a name="link_target_notification"></a> link_target_notification
+## <a name="link_target_notification"></a> link_target_notification
 
 A callback that notifies that a new target has been linked to this `transformer` messaging block.
 
-```
+```cpp
 virtual void link_target_notification(_Inout_ ITarget<_Output> *);
 ```
 
-##  <a name="propagate_message"></a> propagate_message
+## <a name="propagate_message"></a> propagate_message
 
 Asynchronously passes a message from an `ISource` block to this `transformer` messaging block. It is invoked by the `propagate` method, when called by a source block.
 
-```
+```cpp
 virtual message_status propagate_message(
     _Inout_ message<_Input>* _PMessage,
     _Inout_ ISource<_Input>* _PSource);
@@ -139,19 +139,19 @@ A pointer to the source block offering the message.
 
 A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.
 
-##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 Executes the transformer function on the input messages.
 
-```
+```cpp
 virtual void propagate_to_any_targets(_Inout_opt_ message<_Output> *);
 ```
 
-##  <a name="release_message"></a> release_message
+## <a name="release_message"></a> release_message
 
 Releases a previous message reservation.
 
-```
+```cpp
 virtual void release_message(runtime_object_identity _MsgId);
 ```
 
@@ -160,11 +160,11 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 The `runtime_object_identity` of the `message` object being released.
 
-##  <a name="reserve_message"></a> reserve_message
+## <a name="reserve_message"></a> reserve_message
 
 Reserves a message previously offered by this `transformer` messaging block.
 
-```
+```cpp
 virtual bool reserve_message(runtime_object_identity _MsgId);
 ```
 
@@ -181,19 +181,19 @@ The `runtime_object_identity` of the `message` object being reserved.
 
 After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
 
-##  <a name="resume_propagation"></a> resume_propagation
+## <a name="resume_propagation"></a> resume_propagation
 
 Resumes propagation after a reservation has been released.
 
-```
+```cpp
 virtual void resume_propagation();
 ```
 
-##  <a name="send_message"></a> send_message
+## <a name="send_message"></a> send_message
 
 Synchronously passes a message from an `ISource` block to this `transformer` messaging block. It is invoked by the `send` method, when called by a source block.
 
-```
+```cpp
 virtual message_status send_message(
     _Inout_ message<_Input>* _PMessage,
     _Inout_ ISource<_Input>* _PSource);
@@ -211,11 +211,11 @@ A pointer to the source block offering the message.
 
 A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.
 
-##  <a name="supports_anonymous_source"></a> supports_anonymous_source
+## <a name="supports_anonymous_source"></a> supports_anonymous_source
 
 Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked.
 
-```
+```cpp
 virtual bool supports_anonymous_source();
 ```
 
@@ -223,11 +223,11 @@ virtual bool supports_anonymous_source();
 
 **true** because the block does not postpone offered messages.
 
-##  <a name="ctor"></a> transformer
+## <a name="ctor"></a> transformer
 
 Constructs a `transformer` messaging block.
 
-```
+```cpp
 transformer(
     _Transform_method const& _Func,
     _Inout_opt_ ITarget<_Output>* _PTarget = NULL);
@@ -285,11 +285,11 @@ The type `_Transform_method` is a functor with signature `_Output (_Input const 
 
 The type `filter_method` is a functor with signature `bool (_Input const &)` which is invoked by this `transformer` messaging block to determine whether or not it should accept an offered message.
 
-##  <a name="dtor"></a> ~transformer
+## <a name="dtor"></a> ~transformer
 
 Destroys the `transformer` messaging block.
 
-```
+```cpp
 ~transformer();
 ```
 

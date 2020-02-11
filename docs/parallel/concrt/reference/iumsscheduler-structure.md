@@ -11,7 +11,7 @@ An interface to an abstraction of a work scheduler that wants the Concurrency Ru
 
 ## Syntax
 
-```
+```cpp
 struct IUMSScheduler : public IScheduler;
 ```
 
@@ -43,11 +43,11 @@ The `IUMSScheduler` interface is one end of a two-way channel of communication b
 
 **Namespace:** concurrency
 
-##  <a name="setcompletionlist"></a>  IUMSScheduler::SetCompletionList Method
+## <a name="setcompletionlist"></a>  IUMSScheduler::SetCompletionList Method
 
 Assigns an `IUMSCompletionList` interface to a UMS thread scheduler.
 
-```
+```cpp
 virtual void SetCompletionList(_Inout_ IUMSCompletionList* pCompletionList) = 0;
 ```
 

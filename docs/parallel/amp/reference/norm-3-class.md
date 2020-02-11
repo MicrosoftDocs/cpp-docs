@@ -137,7 +137,7 @@ class norm_3;
 
 Default constructor, initializes all elements with 0.
 
-## Syntax
+### Syntax
 
 ```cpp
 norm_3() restrict(amp,cpu);
@@ -182,7 +182,7 @@ explicit inline norm_3(
 ) restrict(amp,cpu);
 ```
 
-#### Parameters
+### Parameters
 
 *_V0*<br/>
 The value to initialize element 0.

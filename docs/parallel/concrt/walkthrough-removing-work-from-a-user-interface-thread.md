@@ -26,7 +26,7 @@ Read the following topics before you start this walkthrough:
 
 We also recommend that you understand the basics of MFC application development and GDI+ before you start this walkthrough. For more information about MFC, see [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md). For more information about GDI+, see [GDI+](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This walkthrough contains the following sections:
 
@@ -40,7 +40,7 @@ This walkthrough contains the following sections:
 
 - [Adding Support for Cancellation](#cancellation)
 
-##  <a name="application"></a> Creating the MFC Application
+## <a name="application"></a> Creating the MFC Application
 
 This section describes how to create the basic MFC application.
 
@@ -56,7 +56,7 @@ This section describes how to create the basic MFC application.
 
    Verify that the application was created successfully by building and running it. To build the application, on the **Build** menu, click **Build Solution**. If the application builds successfully, run the application by clicking **Start Debugging** on the **Debug** menu.
 
-##  <a name="serial"></a> Implementing the Serial Version of the Mandelbrot Application
+## <a name="serial"></a> Implementing the Serial Version of the Mandelbrot Application
 
 This section describes how to draw the Mandelbrot fractal. This version draws the Mandelbrot fractal to a GDI+ [Bitmap](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) object and then copies the contents of that bitmap to the client window.
 
@@ -106,7 +106,7 @@ Because the computation for each pixel is computationally expensive, the UI thre
 
 [[Top](#top)]
 
-##  <a name="removing-work"></a> Removing Work from the UI Thread
+## <a name="removing-work"></a> Removing Work from the UI Thread
 
 This section shows how to remove the drawing work from the UI thread in the Mandelbrot application. By moving drawing work from the UI thread to a worker thread, the UI thread can process messages as the worker thread generates the image in the background.
 
@@ -144,7 +144,7 @@ The UI is now more responsive because the drawing work is performed in the backg
 
 [[Top](#top)]
 
-##  <a name="performance"></a> Improving Drawing Performance
+## <a name="performance"></a> Improving Drawing Performance
 
 The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer `for` loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm, as follows.
 
@@ -154,7 +154,7 @@ Because the computation of each bitmap element is independent, you do not have t
 
 [[Top](#top)]
 
-##  <a name="cancellation"></a> Adding Support for Cancellation
+## <a name="cancellation"></a> Adding Support for Cancellation
 
 This section describes how to handle window resizing and how to cancel any active drawing tasks when the window is destroyed.
 

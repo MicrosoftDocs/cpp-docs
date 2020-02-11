@@ -368,7 +368,7 @@ explicit inline uint_4(
 ) restrict(amp,cpu);
 ```
 
-#### Parameters
+### Parameters
 
 *_V0*<br/>
 The value to initialize element 0.

@@ -11,7 +11,7 @@ Represents a UMS completion list. When a UMS thread blocks, the scheduler's desi
 
 ## Syntax
 
-```
+```cpp
 struct IUMSCompletionList;
 ```
 
@@ -37,11 +37,11 @@ A scheduler must be extraordinarily careful about what actions are performed aft
 
 **Namespace:** concurrency
 
-##  <a name="getunblocknotifications"></a>  IUMSCompletionList::GetUnblockNotifications Method
+## <a name="getunblocknotifications"></a>  IUMSCompletionList::GetUnblockNotifications Method
 
 Retrieves a chain of `IUMSUnblockNotification` interfaces representing execution contexts whose associated thread proxies have unblocked since the last time this method was invoked.
 
-```
+```cpp
 virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
 ```
 

@@ -11,7 +11,7 @@ This class describes an exception thrown when the `Context::Oversubscribe` metho
 
 ## Syntax
 
-```
+```cpp
 class invalid_oversubscribe_operation : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class invalid_oversubscribe_operation : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> invalid_oversubscribe_operation
+## <a name="ctor"></a> invalid_oversubscribe_operation
 
 Constructs an `invalid_oversubscribe_operation` object.
 
-```
+```cpp
 explicit _CRTIMP invalid_oversubscribe_operation(_In_z_ const char* _Message) throw();
 
 invalid_oversubscribe_operation() throw();

@@ -41,7 +41,7 @@ For data environment:
 
 Specifies that a memory location that will be updated atomically.
 
-```
+```cpp
 #pragma omp atomic
    expression
 ```
@@ -86,7 +86,7 @@ Number of threads: 10
 
 Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.
 
-```
+```cpp
 #pragma omp barrier
 ```
 
@@ -104,7 +104,7 @@ For a sample of how to use `barrier`, see [master](#master).
 
 Specifies that code is only be executed on one thread at a time.
 
-```
+```cpp
 #pragma omp critical [(name)]
 {
    code_block
@@ -184,7 +184,7 @@ max = 29358
 
 Specifies that all threads have the same view of memory for all shared objects.
 
-```
+```cpp
 #pragma omp flush [(var)]
 ```
 
@@ -260,7 +260,7 @@ data = 2
 
 Causes the work done in a `for` loop inside a parallel region to be divided among threads.
 
-```
+```cpp
 #pragma omp [parallel] for [clauses]
    for_statement
 ```
@@ -357,7 +357,7 @@ The sum of 1 through 10 is 55
 
 Specifies that only the master thread should execute a section of the program.
 
-```
+```cpp
 #pragma omp master
 {
    code_block
@@ -419,7 +419,7 @@ a[4] = 16
 
 Specifies that code under a parallelized `for` loop should be executed like a sequential loop.
 
-```
+```cpp
 #pragma omp ordered
    structured-block
 ```
@@ -490,7 +490,7 @@ test2() iteration 4
 
 Defines a parallel region, which is code that will be executed by multiple threads in parallel.
 
-```
+```cpp
 #pragma omp parallel [clauses]
 {
    code_block
@@ -549,7 +549,7 @@ Hello from thread 3
 
 Identifies code sections to be divided among all threads.
 
-```
+```cpp
 #pragma omp [parallel] sections [clauses]
 {
    #pragma omp section
@@ -607,7 +607,7 @@ Hello from thread 0
 
 Lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.
 
-```
+```cpp
 #pragma omp single [clauses]
 {
    code_block
@@ -668,7 +668,7 @@ write output
 
 Specifies that a variable is private to a thread.
 
-```
+```cpp
 #pragma omp threadprivate(var)
 ```
 
@@ -687,7 +687,7 @@ You can use `threadprivate` in a DLL that is statically loaded at process startu
 
 A `threadprivate` variable of a *destructible* type isn't guaranteed to have its destructor called. For example:
 
-```
+```cpp
 struct MyType
 {
     ~MyType();

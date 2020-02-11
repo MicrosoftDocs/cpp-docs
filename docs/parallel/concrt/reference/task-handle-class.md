@@ -11,14 +11,14 @@ The `task_handle` class represents an individual parallel work item. It encapsul
 
 ## Syntax
 
-```
+```cpp
 template<
     typename _Function
 >
 class task_handle : public ::Concurrency::details::_UnrealizedChore;
 ```
 
-#### Parameters
+### Parameters
 
 *_Function*<br/>
 The type of the function object that will be invoked to execute the work represented by the `task_handle` object.
@@ -58,11 +58,11 @@ The runtime creates a copy of the work function that you pass to a `task_handle`
 
 **Namespace:** concurrency
 
-##  <a name="task_handle__operator_call"></a> operator()
+## <a name="task_handle__operator_call"></a> operator()
 
 The function call operator that the runtime invokes to perform the work of the task handle.
 
-```
+```cpp
 void operator()() const;
 ```
 
@@ -70,7 +70,7 @@ void operator()() const;
 
 Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.
 
-```
+```cpp
 task_handle(const _Function& _Func);
 ```
 
@@ -83,11 +83,11 @@ The function that will be invoked to execute the work represented by the `task_h
 
 The runtime creates a copy of the work function that you pass to the constructor. Therefore, any state changes that occur in a function object that you pass to a `task_handle` object will not appear in your copy of that function object.
 
-##  <a name="dtor"></a> ~task_handle
+## <a name="dtor"></a> ~task_handle
 
 Destroys the `task_handle` object.
 
-```
+```cpp
 ~task_handle();
 ```
 

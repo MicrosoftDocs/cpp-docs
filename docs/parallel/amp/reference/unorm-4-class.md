@@ -10,7 +10,7 @@ Represents a short vector of four unsigned normal numbers.
 
 ## Syntax
 
-```
+```cpp
 class unorm_4;
 ```
 
@@ -331,11 +331,11 @@ class unorm_4;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> unorm_4
+## <a name="ctor"></a> unorm_4
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 unorm_4() restrict(amp,
     cpu);
 
@@ -406,9 +406,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="unorm_4__size"></a> size
+## <a name="unorm_4__size"></a> size
 
-```
+```cpp
 static const int size = 4;
 ```
 

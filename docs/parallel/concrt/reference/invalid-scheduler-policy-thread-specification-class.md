@@ -11,7 +11,7 @@ This class describes an exception thrown when an attempt is made to set the conc
 
 ## Syntax
 
-```
+```cpp
 class invalid_scheduler_policy_thread_specification : public std::exception;
 ```
 
@@ -34,11 +34,12 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
 **Header:** concrt.h
 
 **Namespace:** concurrency
-##  <a name="ctor"></a> invalid_scheduler_policy_thread_specification
+
+## <a name="ctor"></a> invalid_scheduler_policy_thread_specification
 
 Constructs an `invalid_scheduler_policy_value` object.
 
-```
+```cpp
 explicit _CRTIMP invalid_scheduler_policy_thread_specification(_In_z_ const char* _Message) throw();
 
 invalid_scheduler_policy_thread_specification() throw();

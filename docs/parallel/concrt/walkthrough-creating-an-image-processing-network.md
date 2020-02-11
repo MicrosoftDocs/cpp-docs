@@ -24,7 +24,7 @@ Read the following documents before you start this walkthrough:
 
 We also recommend that you understand the basics of GDI+ before you start this walkthrough.
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This walkthrough contains the following sections:
 
@@ -34,7 +34,7 @@ This walkthrough contains the following sections:
 
 - [The Complete Example](#complete)
 
-##  <a name="functionality"></a> Defining Image Processing Functionality
+## <a name="functionality"></a> Defining Image Processing Functionality
 
 This section shows the support functions that the image processing network uses to work with images that are read from disk.
 
@@ -60,7 +60,7 @@ The following function, `GetEncoderClsid`, retrieves the class identifier for th
 
 [[Top](#top)]
 
-##  <a name="network"></a> Creating the Image Processing Network
+## <a name="network"></a> Creating the Image Processing Network
 
 This section describes how to create a network of asynchronous message blocks that perform image processing on every JPEG (.jpg) image in a given directory. The network performs the following image-processing operations:
 
@@ -136,7 +136,7 @@ The following example shows the `countdown_event` class:
 
 [[Top](#top)]
 
-##  <a name="complete"></a> The Complete Example
+## <a name="complete"></a> The Complete Example
 
 The following code shows the complete example. The `wmain` function manages the GDI+ library and calls the `ProcessImages` function to process the JPEG files in the `Sample Pictures` directory.
 

@@ -11,7 +11,7 @@ This class describes an exception thrown when an invalid or unknown key is passe
 
 ## Syntax
 
-```
+```cpp
 class invalid_scheduler_policy_key : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class invalid_scheduler_policy_key : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> invalid_scheduler_policy_key
+## <a name="ctor"></a> invalid_scheduler_policy_key
 
 Constructs an `invalid_scheduler_policy_key` object.
 
-```
+```cpp
 explicit _CRTIMP invalid_scheduler_policy_key(_In_z_ const char* _Message) throw();
 
 invalid_scheduler_policy_key() throw();
