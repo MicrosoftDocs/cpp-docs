@@ -11,7 +11,7 @@ This class describes an exception thrown when the `Scheduler::SetDefaultSchedule
 
 ## Syntax
 
-```
+```cpp
 class default_scheduler_exists : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class default_scheduler_exists : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> default_scheduler_exists
+## <a name="ctor"></a> default_scheduler_exists
 
 Constructs a `default_scheduler_exists` object.
 
-```
+```cpp
 explicit _CRTIMP default_scheduler_exists(_In_z_ const char* _Message) throw();
 
 default_scheduler_exists() throw();

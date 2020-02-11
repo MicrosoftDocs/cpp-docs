@@ -11,12 +11,12 @@ A `single_assignment` messaging block is a multi-target, multi-source, ordered `
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class single_assignment : public propagator_block<multi_link_registry<ITarget<T>>, multi_link_registry<ISource<T>>>;
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The payload type of the message stored and propagated by the buffer.
@@ -75,11 +75,11 @@ For more information, see [Asynchronous Message Blocks](../../../parallel/concrt
 
 **Namespace:** concurrency
 
-##  <a name="accept_message"></a> accept_message
+## <a name="accept_message"></a> accept_message
 
 Accepts a message that was offered by this `single_assignment` messaging block, returning a copy of the message to the caller.
 
-```
+```cpp
 virtual message<T>* accept_message(runtime_object_identity _MsgId);
 ```
 
@@ -96,11 +96,11 @@ A pointer to the `message` object that the caller now has ownership of.
 
 The `single_assignment` messaging block returns copies of the message to its targets, rather than transferring ownership of the currently held message.
 
-##  <a name="consume_message"></a> consume_message
+## <a name="consume_message"></a> consume_message
 
 Consumes a message previously offered by the `single_assignment` and reserved by the target, returning a copy of the message to the caller.
 
-```
+```cpp
 virtual message<T>* consume_message(runtime_object_identity _MsgId);
 ```
 
@@ -117,11 +117,11 @@ A pointer to the `message` object that the caller now has ownership of.
 
 Similar to `accept`, but is always preceded by a call to `reserve`.
 
-##  <a name="has_value"></a> has_value
+## <a name="has_value"></a> has_value
 
 Checks whether this `single_assignment` messaging block has been initialized with a value yet.
 
-```
+```cpp
 bool has_value() const;
 ```
 
@@ -129,11 +129,11 @@ bool has_value() const;
 
 **true** if the block has received a value, **false** otherwise.
 
-##  <a name="link_target_notification"></a> link_target_notification
+## <a name="link_target_notification"></a> link_target_notification
 
 A callback that notifies that a new target has been linked to this `single_assignment` messaging block.
 
-```
+```cpp
 virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 ```
 
@@ -142,11 +142,11 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 *_PTarget*<br/>
 A pointer to the newly linked target.
 
-##  <a name="propagate_message"></a> propagate_message
+## <a name="propagate_message"></a> propagate_message
 
 Asynchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `propagate` method, when called by a source block.
 
-```
+```cpp
 virtual message_status propagate_message(
     _Inout_ message<T>* _PMessage,
     _Inout_ ISource<T>* _PSource);
@@ -164,11 +164,11 @@ A pointer to the source block offering the message.
 
 A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.
 
-##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 Places the `message` `_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.
 
-```
+```cpp
 virtual void propagate_to_any_targets(_Inout_opt_ message<T>* _PMessage);
 ```
 
@@ -177,11 +177,11 @@ virtual void propagate_to_any_targets(_Inout_opt_ message<T>* _PMessage);
 *_PMessage*<br/>
 A pointer to a `message` that this `single_assignment` messaging block has taken ownership of.
 
-##  <a name="release_message"></a> release_message
+## <a name="release_message"></a> release_message
 
 Releases a previous message reservation.
 
-```
+```cpp
 virtual void release_message(runtime_object_identity _MsgId);
 ```
 
@@ -190,11 +190,11 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 The `runtime_object_identity` of the `message` object being released.
 
-##  <a name="reserve_message"></a> reserve_message
+## <a name="reserve_message"></a> reserve_message
 
 Reserves a message previously offered by this `single_assignment` messaging block.
 
-```
+```cpp
 virtual bool reserve_message(runtime_object_identity _MsgId);
 ```
 
@@ -211,19 +211,19 @@ The `runtime_object_identity` of the `message` object being reserved.
 
 After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
 
-##  <a name="resume_propagation"></a> resume_propagation
+## <a name="resume_propagation"></a> resume_propagation
 
 Resumes propagation after a reservation has been released.
 
-```
+```cpp
 virtual void resume_propagation();
 ```
 
-##  <a name="send_message"></a> send_message
+## <a name="send_message"></a> send_message
 
 Synchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `send` method, when called by a source block.
 
-```
+```cpp
 virtual message_status send_message(
     _Inout_ message<T>* _PMessage,
     _Inout_ ISource<T>* _PSource);
@@ -241,11 +241,11 @@ A pointer to the source block offering the message.
 
 A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.
 
-##  <a name="ctor"></a> single_assignment
+## <a name="ctor"></a> single_assignment
 
 Constructs a `single_assignment` messaging block.
 
-```
+```cpp
 single_assignment();
 
 single_assignment(
@@ -283,19 +283,19 @@ The runtime uses the default scheduler if you do not specify the `_PScheduler` o
 
 The type `filter_method` is a functor with signature `bool (T const &)` which is invoked by this `single_assignment` messaging block to determine whether or not it should accept an offered message.
 
-##  <a name="dtor"></a> ~single_assignment
+## <a name="dtor"></a> ~single_assignment
 
 Destroys the `single_assignment` messaging block.
 
-```
+```cpp
 ~single_assignment();
 ```
 
-##  <a name="value"></a> value
+## <a name="value"></a> value
 
 Gets a reference to the current payload of the message being stored in the `single_assignment` messaging block.
 
-```
+```cpp
 T const& value();
 ```
 

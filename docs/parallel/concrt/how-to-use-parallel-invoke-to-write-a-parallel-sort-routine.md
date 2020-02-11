@@ -11,9 +11,9 @@ This document describes how to use the [parallel_invoke](../../parallel/concrt/p
 Although the bitonic sort is an example of a *sorting network* that sorts all combinations of input sequences, this example sorts sequences whose lengths are a power of two.
 
 > [!NOTE]
->  This example uses a parallel sort routine for illustration. You can also use the built-in sorting algorithms that the PPL provides: [concurrency::parallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::parallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort), and [concurrency::parallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). For more information, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
+> This example uses a parallel sort routine for illustration. You can also use the built-in sorting algorithms that the PPL provides: [concurrency::parallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::parallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort), and [concurrency::parallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). For more information, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This document describes the following tasks:
 
@@ -21,7 +21,7 @@ This document describes the following tasks:
 
 - [Using parallel_invoke to Perform Bitonic Sort in Parallel](#parallel)
 
-##  <a name="serial"></a> Performing Bitonic Sort Serially
+## <a name="serial"></a> Performing Bitonic Sort Serially
 
 The following example shows the serial version of the bitonic sort algorithm. The `bitonic_sort` function divides the sequence into two partitions, sorts those partitions in opposite directions, and then merges the results. This function calls itself two times recursively to sort each partition.
 
@@ -29,13 +29,11 @@ The following example shows the serial version of the bitonic sort algorithm. Th
 
 [[Top](#top)]
 
-##  <a name="parallel"></a> Using parallel_invoke to Perform Bitonic Sort in Parallel
+## <a name="parallel"></a> Using parallel_invoke to Perform Bitonic Sort in Parallel
 
 This section describes how to use the `parallel_invoke` algorithm to perform the bitonic sort algorithm in parallel.
 
-### Procedures
-
-##### To perform the bitonic sort algorithm in parallel
+### To perform the bitonic sort algorithm in parallel
 
 1. Add a `#include` directive for the header file ppl.h.
 
@@ -74,11 +72,11 @@ parallel time: 1248
 
 [[Top](#top)]
 
-## Compiling the Code
+### Compiling the Code
 
 To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `parallel-bitonic-sort.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc parallel-bitonic-sort.cpp**
+> **cl.exe /EHsc parallel-bitonic-sort.cpp**
 
 ## Robust Programming
 

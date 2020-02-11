@@ -10,7 +10,7 @@ Represents a short vector of four floats.
 
 ## Syntax
 
-```
+```cpp
 class float_4;
 ```
 
@@ -331,11 +331,11 @@ class float_4;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> float_4
+## <a name="ctor"></a> float_4
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 float_4() restrict(amp,
     cpu);
 
@@ -395,9 +395,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="float_4__size"></a> size
+## <a name="float_4__size"></a> size
 
-```
+```cpp
 static const int size = 4;
 ```
 

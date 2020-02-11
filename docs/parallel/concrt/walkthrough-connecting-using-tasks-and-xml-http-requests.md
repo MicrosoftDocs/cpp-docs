@@ -9,7 +9,7 @@ ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
 This example shows how to use the [IXMLHTTPRequest2](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2) and [IXMLHTTPRequest2Callback](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2callback) interfaces together with tasks to send HTTP GET and POST requests to a web service in a Universal Windows Platform (UWP) app. By combining `IXMLHTTPRequest2` together with tasks, you can write code that composes with other tasks. For example, you can use the download task as part of a chain of tasks. The download task can also respond when work is canceled.
 
 > [!TIP]
->  You can also use the C++ REST SDK to perform HTTP requests from a UWP app using C++ app or from a desktop C++ app. For more info, see [C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk).
+> You can also use the C++ REST SDK to perform HTTP requests from a UWP app using C++ app or from a desktop C++ app. For more info, see [C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk).
 
 For more information about tasks, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md). For more information about how to use tasks in a UWP app, see [Asynchronous programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) and [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
 
@@ -18,7 +18,7 @@ This document first shows how to create `HttpRequest` and its supporting classes
 For an example that uses `IXMLHTTPRequest2` but does not use tasks, see [Quickstart: Connecting using XML HTTP Request (IXMLHTTPRequest2)](/previous-versions/windows/apps/hh770550\(v=win.10\)).
 
 > [!TIP]
->  `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` are the interfaces that we recommend for use in a UWP app. You can also adapt this example for use in a desktop app.
+> `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` are the interfaces that we recommend for use in a UWP app. You can also adapt this example for use in a desktop app.
 
 ## Prerequisites
 
@@ -34,9 +34,9 @@ Because the `IXMLHTTPRequest2` interfaces act asynchronously, this example uses 
 
 To support cancellation, the `HttpRequest`, `HttpRequestBuffersCallback`, and `HttpRequestStringCallback` classes use cancellation tokens. The `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes use the [concurrency::cancellation_token::register_callback](reference/cancellation-token-class.md#register_callback) method to enable the task completion event to respond to cancellation. This cancellation callback aborts the download. For more info about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).
 
-#### To Define the HttpRequest Class
+### To Define the HttpRequest Class
 
-1. From the main menu, choose **File** > **New** > **Project**. 
+1. From the main menu, choose **File** > **New** > **Project**.
 
 1. Use the C++ **Blank App (Universal Windows)** template to create a blank XAML app project. This example names the project `UsingIXMLHTTPRequest2`.
 
@@ -58,29 +58,29 @@ To support cancellation, the `HttpRequest`, `HttpRequestBuffersCallback`, and `H
 
 This section demonstrates how to use the `HttpRequest` class in a UWP app. The app provides an input box that defines a URL resource, and button commands that perform GET and POST operations, and a button command that cancels the current operation.
 
-#### To Use the HttpRequest Class
+### To Use the HttpRequest Class
 
 1. In MainPage.xaml, define the [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) element as follows.
 
    [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]
 
-2. In MainPage.xaml.h, add this `#include` directive:
+1. In MainPage.xaml.h, add this `#include` directive:
 
    [!code-cpp[concrt-using-ixhr2#A2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_5.h)]
 
-3. In MainPage.xaml.h, add these `private` member variables to the `MainPage` class:
+1. In MainPage.xaml.h, add these `private` member variables to the `MainPage` class:
 
    [!code-cpp[concrt-using-ixhr2#A3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_6.h)]
 
-4. In MainPage.xaml.h, declare the `private` method `ProcessHttpRequest`:
+1. In MainPage.xaml.h, declare the `private` method `ProcessHttpRequest`:
 
    [!code-cpp[concrt-using-ixhr2#A4](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_7.h)]
 
-5. In MainPage.xaml.cpp, add these `using` statements:
+1. In MainPage.xaml.cpp, add these `using` statements:
 
    [!code-cpp[concrt-using-ixhr2#A5](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_8.cpp)]
 
-6. In MainPage.xaml.cpp, implement the `GetButton_Click`, `PostButton_Click`, and `CancelButton_Click` methods of the `MainPage` class.
+1. In MainPage.xaml.cpp, implement the `GetButton_Click`, `PostButton_Click`, and `CancelButton_Click` methods of the `MainPage` class.
 
    [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]
 
@@ -91,7 +91,7 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
    [!code-cpp[concrt-using-ixhr2#A7](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_10.cpp)]
 
-8. In the project properties, under **Linker**, **Input**, specify `shcore.lib` and `msxml6.lib`.
+1. In the project properties, under **Linker**, **Input**, specify `shcore.lib` and `msxml6.lib`.
 
 Here is the running app:
 

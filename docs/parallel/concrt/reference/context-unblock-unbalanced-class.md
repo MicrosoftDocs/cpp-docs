@@ -11,7 +11,7 @@ This class describes an exception thrown when calls to the `Block` and `Unblock`
 
 ## Syntax
 
-```
+```cpp
 class context_unblock_unbalanced : public std::exception;
 ```
 
@@ -39,11 +39,11 @@ Calls to the `Block` and `Unblock` methods of a `Context` object must always be 
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> context_unblock_unbalanced
+## <a name="ctor"></a> context_unblock_unbalanced
 
 Constructs a `context_unblock_unbalanced` object.
 
-```
+```cpp
 explicit _CRTIMP context_unblock_unbalanced(_In_z_ const char* _Message) throw();
 
 context_unblock_unbalanced() throw();

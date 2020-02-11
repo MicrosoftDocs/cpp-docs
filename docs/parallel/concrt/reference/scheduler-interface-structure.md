@@ -10,7 +10,7 @@ Scheduler Interface
 
 ## Syntax
 
-```
+```cpp
 struct __declspec(novtable) scheduler_interface;
 ```
 
@@ -32,9 +32,9 @@ struct __declspec(novtable) scheduler_interface;
 
 **Namespace:** concurrency
 
-##  <a name="schedule"></a>  scheduler_interface::schedule Method
+## <a name="schedule"></a>  scheduler_interface::schedule Method
 
-```
+```cpp
 virtual void schedule(
     TaskProc_t,
 void*) = 0;

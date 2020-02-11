@@ -33,7 +33,7 @@ For more information about the `combinable` class, see [Parallel Containers and 
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `concrt-omp-fibonacci-reduction.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc /openmp concrt-omp-fibonacci-reduction.cpp**
+> **cl.exe /EHsc /openmp concrt-omp-fibonacci-reduction.cpp**
 
 ## See also
 

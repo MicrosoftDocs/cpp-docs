@@ -28,7 +28,7 @@ parallel time: 78 ms
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `parallel-combine-primes.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc parallel-combine-primes.cpp**
+> **cl.exe /EHsc parallel-combine-primes.cpp**
 
 ## See also
 

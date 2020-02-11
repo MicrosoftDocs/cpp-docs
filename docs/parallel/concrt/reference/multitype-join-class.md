@@ -11,7 +11,7 @@ A `multitype_join` messaging block is a multi-source, single-target messaging bl
 
 ## Syntax
 
-```
+```cpp
 template<
     typename T,
     join_type _Jtype = non_greedy
@@ -19,7 +19,7 @@ template<
 class multitype_join: public ISource<typename _Unwrap<T>::type>;
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The `tuple` payload type of the messages joined and propagated by the block.
@@ -72,11 +72,11 @@ For more information, see [Asynchronous Message Blocks](../../../parallel/concrt
 
 **Namespace:** concurrency
 
-##  <a name="accept"></a> accept
+## <a name="accept"></a> accept
 
 Accepts a message that was offered by this `multitype_join` block, transferring ownership to the caller.
 
-```
+```cpp
 virtual message<_Destination_type>* accept(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Destination_type>* _PTarget);
@@ -94,11 +94,11 @@ A pointer to the target block that is calling the `accept` method.
 
 A pointer to the message that the caller now has ownership of.
 
-##  <a name="acquire_ref"></a> acquire_ref
+## <a name="acquire_ref"></a> acquire_ref
 
 Acquires a reference count on this `multitype_join` messaging block, to prevent deletion.
 
-```
+```cpp
 virtual void acquire_ref(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```
 
@@ -111,11 +111,11 @@ A pointer to the target block that is calling this method.
 
 This method is called by an `ITarget` object that is being linked to this source during the `link_target` method.
 
-##  <a name="consume"></a> consume
+## <a name="consume"></a> consume
 
 Consumes a message previously offered by the `multitype_join` messaging block and successfully reserved by the target, transferring ownership to the caller.
 
-```
+```cpp
 virtual message<_Destination_type>* consume(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Destination_type>* _PTarget);
@@ -137,11 +137,11 @@ A pointer to the `message` object that the caller now has ownership of.
 
 The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **true**.
 
-##  <a name="link_target"></a> link_target
+## <a name="link_target"></a> link_target
 
 Links a target block to this `multitype_join` messaging block.
 
-```
+```cpp
 virtual void link_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```
 
@@ -150,11 +150,11 @@ virtual void link_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 *_PTarget*<br/>
 A pointer to an `ITarget` block to link to this `multitype_join` messaging block.
 
-##  <a name="ctor"></a> multitype_join
+## <a name="ctor"></a> multitype_join
 
 Constructs a `multitype_join` messaging block.
 
-```
+```cpp
 explicit multitype_join(
     T _Tuple);
 
@@ -190,19 +190,19 @@ The runtime uses the default scheduler if you do not specify the `_PScheduler` o
 
 Move construction is not performed under a lock, which means that it is up to the user to make sure that there are no light-weight tasks in flight at the time of moving. Otherwise, numerous races can occur, leading to exceptions or inconsistent state.
 
-##  <a name="dtor"></a> ~multitype_join
+## <a name="dtor"></a> ~multitype_join
 
 Destroys the `multitype_join` messaging block.
 
-```
+```cpp
 ~multitype_join();
 ```
 
-##  <a name="release"></a> release
+## <a name="release"></a> release
 
 Releases a previous successful message reservation.
 
-```
+```cpp
 virtual void release(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Destination_type>* _PTarget);
@@ -216,11 +216,11 @@ The `runtime_object_identity` of the `message` object being released.
 *_PTarget*<br/>
 A pointer to the target block that is calling the `release` method.
 
-##  <a name="release_ref"></a> release_ref
+## <a name="release_ref"></a> release_ref
 
 Releases a reference count on this `multiple_join` messaging block.
 
-```
+```cpp
 virtual void release_ref(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```
 
@@ -233,11 +233,11 @@ A pointer to the target block that is calling this method.
 
 This method is called by an `ITarget` object that is being unlinked from this source. The source block is allowed to release any resources reserved for the target block.
 
-##  <a name="reserve"></a> reserve
+## <a name="reserve"></a> reserve
 
 Reserves a message previously offered by this `multitype_join` messaging block.
 
-```
+```cpp
 virtual bool reserve(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Destination_type>* _PTarget);
@@ -259,11 +259,11 @@ A pointer to the target block that is calling the `reserve` method.
 
 After you call `reserve`, if it succeeds, you must call either `consume` or `release` in order to take or give up possession of the message, respectively.
 
-##  <a name="unlink_target"></a> unlink_target
+## <a name="unlink_target"></a> unlink_target
 
 Unlinks a target block from this `multitype_join` messaging block.
 
-```
+```cpp
 virtual void unlink_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```
 
@@ -272,11 +272,11 @@ virtual void unlink_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 *_PTarget*<br/>
 A pointer to an `ITarget` block to unlink from this `multitype_join` messaging block.
 
-##  <a name="unlink_targets"></a> unlink_targets
+## <a name="unlink_targets"></a> unlink_targets
 
 Unlinks all targets from this `multitype_join` messaging block.
 
-```
+```cpp
 virtual void unlink_targets();
 ```
 

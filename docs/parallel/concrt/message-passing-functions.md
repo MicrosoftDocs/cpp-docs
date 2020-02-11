@@ -10,7 +10,7 @@ The Asynchronous Agents Library provides several functions that let you pass mes
 
 These message-passing functions are used with the various message-block types. For more information about the message-block types that are defined by the Concurrency Runtime, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md).
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This topic describes the following message-passing functions:
 
@@ -20,7 +20,7 @@ This topic describes the following message-passing functions:
 
 - [Examples](#examples)
 
-##  <a name="send"></a> send and asend
+## <a name="send"></a> send and asend
 
 The [concurrency::send](reference/concurrency-namespace-functions.md#send) function sends a message to the specified target synchronously and the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function sends a message to the specified target asynchronously. Both the `send` and `asend` functions wait until the target indicates that it will eventually accept or decline the message.
 
@@ -30,7 +30,7 @@ Conversely, the `asend` function does not wait for the target to accept or decli
 
 [[Top](#top)]
 
-##  <a name="receive"></a> receive and try_receive
+## <a name="receive"></a> receive and try_receive
 
 The [concurrency::receive](reference/concurrency-namespace-functions.md#receive) and [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive) functions read data from a given source. The `receive` function waits for data to become available, whereas the `try_receive` function returns immediately.
 
@@ -38,7 +38,7 @@ Use the `receive` function when you must have the data to continue. Use the `try
 
 [[Top](#top)]
 
-##  <a name="examples"></a> Examples
+## <a name="examples"></a> Examples
 
 For examples that use the `send` and `asend`, and `receive` functions, see the following topics:
 

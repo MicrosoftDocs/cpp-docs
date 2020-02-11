@@ -42,7 +42,7 @@ The following code shows the complete example. The example calls both the `count
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `primes-filter.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc primes-filter.cpp**
+> **cl.exe /EHsc primes-filter.cpp**
 
 ## Robust Programming
 

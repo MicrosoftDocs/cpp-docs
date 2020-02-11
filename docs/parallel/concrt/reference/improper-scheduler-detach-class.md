@@ -11,7 +11,7 @@ This class describes an exception thrown when the `CurrentScheduler::Detach` met
 
 ## Syntax
 
-```
+```cpp
 class improper_scheduler_detach : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class improper_scheduler_detach : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> improper_scheduler_detach
+## <a name="ctor"></a> improper_scheduler_detach
 
 Constructs an `improper_scheduler_detach` object.
 
-```
+```cpp
 explicit _CRTIMP improper_scheduler_detach(_In_z_ const char* _Message) throw();
 
 improper_scheduler_detach() throw();

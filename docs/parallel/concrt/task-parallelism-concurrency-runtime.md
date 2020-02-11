@@ -57,7 +57,7 @@ You use tasks when you write asynchronous code and want some operation to occur 
 
 - [Robust Programming](#robust)
 
-##  <a name="lambdas"></a> Using Lambda Expressions
+## <a name="lambdas"></a> Using Lambda Expressions
 
 Because of their succinct syntax, lambda expressions are a common way to define the work that is performed by tasks and task groups. Here are some usage tips:
 
@@ -75,7 +75,7 @@ To solve this problem, use a smart pointer, such as [std::shared_ptr](../../stan
 
 For more information about lambda expressions, see [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md).
 
-##  <a name="task-class"></a> The task Class
+## <a name="task-class"></a> The task Class
 
 You can use the [concurrency::task](../../parallel/concrt/reference/task-class.md) class to compose tasks into a set of dependent operations. This composition model is supported by the notion of *continuations*. A continuation enables code to be executed when the previous, or *antecedent*, task completes. The result of the antecedent task is passed as the input to the one or more continuation tasks. When an antecedent task completes, any continuation tasks that are waiting on it are scheduled for execution. Each continuation task receives a copy of the result of the antecedent task. In turn, those continuation tasks may also be antecedent tasks for other continuations, thereby creating a chain of tasks. Continuations help you create arbitrary-length chains of tasks that have specific dependencies among them. In addition, a task can participate in cancellation either before a tasks starts or in a cooperative manner while it is running. For more information about this cancellation model, see [Cancellation in the PPL](cancellation-in-the-ppl.md).
 
@@ -100,9 +100,9 @@ If an exception is thrown during the execution of a task, the runtime marshals t
 For an example that uses `task`, [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), cancellation, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md). (The `task_completion_event` class is described later in this document.)
 
 > [!TIP]
->  To learn details that are specific to tasks in UWP apps, see [Asynchronous programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) and [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
+> To learn details that are specific to tasks in UWP apps, see [Asynchronous programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) and [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
 
-##  <a name="continuations"></a> Continuation Tasks
+## <a name="continuations"></a> Continuation Tasks
 
 In asynchronous programming, it is very common for one asynchronous operation, on completion, to invoke a second operation and pass data to it. Traditionally, this is done by using callback methods. In the Concurrency Runtime, the same functionality is provided by *continuation tasks*. A continuation task (also known just as a continuation) is an asynchronous task that is invoked by another task, which is known as the *antecedent*, when the antecedent completes. By using continuations, you can:
 
@@ -137,24 +137,24 @@ A continuation can also return another task. If there is no cancellation, then t
 [!code-cpp[concrt-async-unwrapping#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_7.cpp)]
 
 > [!IMPORTANT]
->  When a continuation of a task returns a nested task of type `N`, the resulting task has the type `N`, not `task<N>`, and completes when the nested task completes. In other words, the continuation performs the unwrapping of the nested task.
+> When a continuation of a task returns a nested task of type `N`, the resulting task has the type `N`, not `task<N>`, and completes when the nested task completes. In other words, the continuation performs the unwrapping of the nested task.
 
-##  <a name="value-versus-task"></a> Value-Based Versus Task-Based Continuations
+## <a name="value-versus-task"></a> Value-Based Versus Task-Based Continuations
 
 Given a `task` object whose return type is `T`, you can provide a value of type `T` or `task<T>` to its continuation tasks. A continuation that takes type `T` is known as a *value-based continuation*. A value-based continuation is scheduled for execution when the antecedent task completes without error and is not canceled. A continuation that takes type `task<T>` as its parameter is known as a *task-based continuation*. A task-based continuation is always scheduled for execution when the antecedent task finishes, even when the antecedent task is canceled or throws an exception. You can then call `task::get` to get the result of the antecedent task. If the antecedent task was canceled, `task::get` throws [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md). If the antecedent task threw an exception, `task::get` rethrows that exception. A task-based continuation is not marked as canceled when its antecedent task is canceled.
 
-##  <a name="composing-tasks"></a> Composing Tasks
+## <a name="composing-tasks"></a> Composing Tasks
 
 This section describes the [concurrency::when_all](reference/concurrency-namespace-functions.md#when_all) and [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) functions, which can help you compose multiple tasks to implement common patterns.
 
-###  <a name="when-all"></a> The when_all Function
+### <a name="when-all"></a> The when_all Function
 
 The `when_all` function produces a task that completes after a set of tasks complete. This function returns a std::[vector](../../standard-library/vector-class.md) object that contains the result of each task in the set. The following basic example uses `when_all` to create a task that represents the completion of three other tasks.
 
 [!code-cpp[concrt-join-tasks#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_8.cpp)]
 
 > [!NOTE]
->  The tasks that you pass to `when_all` must be uniform. In other words, they must all return the same type.
+> The tasks that you pass to `when_all` must be uniform. In other words, they must all return the same type.
 
 You can also use the `&&` syntax to produce a task that completes after a set of tasks complete, as shown in the following example.
 
@@ -195,7 +195,7 @@ Consider a UWP app that uses C++ and XAML and writes a set of files to disk. The
 > [!TIP]
 > `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](reference/task-class.md#wait), it is safe to call this function in a UWP app on the ASTA (Application STA) thread.
 
-###  <a name="when-any"></a> The when_any Function
+### <a name="when-any"></a> The when_any Function
 
 The `when_any` function produces a task that completes when the first task in a set of tasks completes. This function returns a [std::pair](../../standard-library/pair-structure.md) object that contains the result of the completed task and the index of that task in the set.
 
@@ -225,7 +225,7 @@ You can also use the `||` syntax to produce a task that completes after the firs
 > [!TIP]
 > As with `when_all`, `when_any` is non-blocking and is safe to call in a UWP app on the ASTA thread.
 
-##  <a name="delayed-tasks"></a> Delayed Task Execution
+## <a name="delayed-tasks"></a> Delayed Task Execution
 
 It is sometimes necessary to delay the execution of a task until a condition is satisfied, or to start a task in response to an external event. For example, in asynchronous programming, you might have to start a task in response to an I/O completion event.
 
@@ -235,7 +235,7 @@ The [concurrency::task_completion_event](../../parallel/concrt/reference/task-co
 
 For an example that uses `task_completion_event` to implement a task that completes after a delay, see [How to: Create a Task that Completes After a Delay](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md).
 
-##  <a name="task-groups"></a> Task Groups
+## <a name="task-groups"></a> Task Groups
 
 A *task group* organizes a collection of tasks. Task groups push tasks on to a work-stealing queue. The scheduler removes tasks from this queue and executes them on available computing resources. After you add tasks to a task group, you can wait for all tasks to finish or cancel tasks that have not yet started.
 
@@ -252,7 +252,7 @@ Task groups support the concept of cancellation. Cancellation enables you to sig
 
 The runtime also provides an exception-handling model that enables you to throw an exception from a task and handle that exception when you wait for the associated task group to finish. For more information about this exception-handling model, see [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 
-##  <a name="comparing-groups"></a> Comparing task_group to structured_task_group
+## <a name="comparing-groups"></a> Comparing task_group to structured_task_group
 
 Although we recommend that you use `task_group` or `parallel_invoke` instead of the `structured_task_group` class, there are cases where you want to use `structured_task_group`, for example, when you write a parallel algorithm that performs a variable number of tasks or requires support for cancellation. This section explains the differences between the `task_group` and `structured_task_group` classes.
 
@@ -272,7 +272,7 @@ To manage task handles for cases where you have a variable number of tasks, use 
 
 Both `task_group` and `structured_task_group` support cancellation. For more information about cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).
 
-##  <a name="example"></a> Example
+## <a name="example"></a> Example
 
 The following basic example shows how to work with task groups. This example uses the `parallel_invoke` algorithm to perform two tasks concurrently. Each task adds sub-tasks to a `task_group` object. Note that the `task_group` class allows for multiple tasks to add tasks to it concurrently.
 
@@ -290,7 +290,7 @@ Because the `parallel_invoke` algorithm runs tasks concurrently, the order of th
 
 For complete examples that show how to use the `parallel_invoke` algorithm, see [How to: Use parallel_invoke to Write a Parallel Sort Routine](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md) and [How to: Use parallel_invoke to Execute Parallel Operations](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md). For a complete example that uses the `task_group` class to implement asynchronous futures, see [Walkthrough: Implementing Futures](../../parallel/concrt/walkthrough-implementing-futures.md).
 
-##  <a name="robust"></a> Robust Programming
+## <a name="robust"></a> Robust Programming
 
 Make sure that you understand the role of cancellation and exception handling when you use tasks, task groups, and parallel algorithms. For example, in a tree of parallel work, a task that is canceled prevents child tasks from running. This can cause problems if one of the child tasks performs an operation that is important to your application, such as freeing a resource. In addition, if a child task throws an exception, that exception could propagate through an object destructor and cause undefined behavior in your application. For an example that illustrates these points, see the [Understand how Cancellation and Exception Handling Affect Object Destruction](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) section in the Best Practices in the Parallel Patterns Library document. For more information about the cancellation and exception-handling models in the PPL, see [Cancellation](../../parallel/concrt/cancellation-in-the-ppl.md) and [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 

@@ -11,7 +11,7 @@ The `cancellation_token_registration` class represents a callback notification f
 
 ## Syntax
 
-```
+```cpp
 class cancellation_token_registration;
 ```
 
@@ -42,15 +42,15 @@ class cancellation_token_registration;
 
 **Namespace:** concurrency
 
-##  <a name="dtor"></a> ~cancellation_token_registration
+## <a name="dtor"></a> ~cancellation_token_registration
 
-```
+```cpp
 ~cancellation_token_registration();
 ```
 
-##  <a name="ctor"></a> cancellation_token_registration
+## <a name="ctor"></a> cancellation_token_registration
 
-```
+```cpp
 cancellation_token_registration();
 
 cancellation_token_registration(const cancellation_token_registration& _Src);
@@ -63,9 +63,9 @@ cancellation_token_registration(cancellation_token_registration&& _Src);
 *_Src*<br/>
 The `cancellation_token_registration` to copy or move.
 
-##  <a name="operator_neq"></a> operator!=
+## <a name="operator_neq"></a> operator!=
 
-```
+```cpp
 bool operator!= (const cancellation_token_registration& _Rhs) const;
 ```
 
@@ -76,9 +76,9 @@ The `cancellation_token_registration` to compare.
 
 ### Return Value
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
-```
+```cpp
 cancellation_token_registration& operator= (const cancellation_token_registration& _Src);
 
 cancellation_token_registration& operator= (cancellation_token_registration&& _Src);
@@ -91,9 +91,9 @@ The `cancellation_token_registration` to assign.
 
 ### Return Value
 
-##  <a name="operator_eq_eq"></a> operator==
+## <a name="operator_eq_eq"></a> operator==
 
-```
+```cpp
 bool operator== (const cancellation_token_registration& _Rhs) const;
 ```
 

@@ -331,7 +331,7 @@ class double_4;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> double_4
+## <a name="ctor"></a> double_4
 
 Default constructor, initializes all elements with 0.
 
@@ -395,7 +395,7 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="double_4__size"></a> size
+## <a name="double_4__size"></a> size
 
 ```cpp
 static const int size = 4;
