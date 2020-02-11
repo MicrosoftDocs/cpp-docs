@@ -19,7 +19,8 @@ ms.assetid: 819828f8-b0a5-412c-9c57-bf822f17e667
 
 An internal compiler error (ICE) results when the compiler can't process a source code file. When an ICE occurs, the compiler doesn't produce an output file, or any useful diagnostic that you can use to fix your code.
 
-The compiler automatically sends reports of internal compiler errors to Microsoft, if reporting is enabled by the Windows Error Reporting service settings. The **/errorReport** option has no effect, and its arguments are ignored.
+The **/errorReport** arguments are overridden by the Windows Error Reporting service settings. The compiler automatically sends reports of internal errors to Microsoft, if reporting is enabled by Windows Error Reporting. No report is sent if disabled by Windows Error Reporting.
+
 
 ### To set this compiler option in the Visual Studio development environment
 

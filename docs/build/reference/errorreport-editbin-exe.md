@@ -17,7 +17,7 @@ ms.assetid: eca66ac3-b754-4bd7-9dd4-e04fc79a71b6
 
 ## Remarks
 
-EDITBIN automatically sends reports of internal errors to Microsoft, if reporting is enabled by the Windows Error Reporting service settings. The **/ERRORREPORT** option has no effect, and its arguments are ignored.
+The **/ERRORREPORT** arguments are overridden by the Windows Error Reporting service settings. EDITBIN automatically sends reports of internal errors to Microsoft, if reporting is enabled by Windows Error Reporting. No report is sent if disabled by Windows Error Reporting.
 
 ## See also
 

@@ -16,7 +16,7 @@ The **/ERRORREPORT** option is deprecated. Starting in Windows Vista, error repo
 
 ## Remarks
 
-The linker automatically sends reports of internal linker errors to Microsoft, if reporting is enabled by the Windows Error Reporting service settings. The **/ERRORREPORT** option has no effect, and its arguments are ignored.
+The **/ERRORREPORT** arguments are overridden by the Windows Error Reporting service settings. The linker automatically sends reports of internal errors to Microsoft, if reporting is enabled by Windows Error Reporting. No report is sent if disabled by Windows Error Reporting.
 
 ### To set this compiler option in the Visual Studio development environment
 
