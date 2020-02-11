@@ -11,7 +11,7 @@ The `simple_partitioner` class represents a static partitioning of the range ite
 
 ## Syntax
 
-```
+```cpp
 class simple_partitioner;
 ```
 
@@ -34,19 +34,19 @@ class simple_partitioner;
 
 **Namespace:** concurrency
 
-##  <a name="dtor"></a> ~simple_partitioner
+## <a name="dtor"></a> ~simple_partitioner
 
 Destroys a `simple_partitioner` object.
 
-```
+```cpp
 ~simple_partitioner();
 ```
 
-##  <a name="ctor"></a> simple_partitioner
+## <a name="ctor"></a> simple_partitioner
 
 Constructs a `simple_partitioner` object.
 
-```
+```cpp
 explicit simple_partitioner(_Size_type _Chunk_size);
 ```
 

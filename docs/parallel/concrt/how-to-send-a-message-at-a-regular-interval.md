@@ -24,7 +24,7 @@ Performing a lengthy operation..........done.
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `report-progress.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc report-progress.cpp**
+> **cl.exe /EHsc report-progress.cpp**
 
 ## See also
 

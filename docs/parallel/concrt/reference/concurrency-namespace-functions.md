@@ -24,11 +24,11 @@ ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
 |[task_from_result](#task_from_result)|[try_receive](#try_receive)|[wait](#wait)|
 |[when_all](#when_all)|[when_any](#when_any)|
 
-##  <a name="alloc"></a>  Alloc
+## <a name="alloc"></a>  Alloc
 
 Allocates a block of memory of the size specified from the Concurrency Runtime Caching Suballocator.
 
-```
+```cpp
 void* __cdecl Alloc(size_t _NumBytes);
 ```
 
@@ -45,11 +45,11 @@ A pointer to newly allocated memory.
 
 For more information about which scenarios in your application could benefit from using the Caching Suballocator, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
-##  <a name="asend"></a>  asend
+## <a name="asend"></a>  asend
 
 An asynchronous send operation, which schedules a task to propagate the data to the target block.
 
-```
+```cpp
 template <class T>
 bool asend(
     _Inout_ ITarget<T>* _Trg,
@@ -80,21 +80,21 @@ A reference to the data to be sent.
 
 For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).
 
-##  <a name="cancel_current_task"></a>  cancel_current_task
+## <a name="cancel_current_task"></a>  cancel_current_task
 
 Cancels the currently executing task. This function can be called from within the body of a task to abort the task's execution and cause it to enter the `canceled` state.
 
 It is not a supported scenario to call this function if you are not within the body of a `task`. Doing so will result in undefined behavior such as a crash or a hang in your application.
 
-```
+```cpp
 inline __declspec(noreturn) void __cdecl cancel_current_task();
 ```
 
-##  <a name="clear"></a>  clear
+## <a name="clear"></a>  clear
 
 Clears the concurrent queue, destroying any currently enqueued elements. This method is not concurrency-safe.
 
-```
+```cpp
 template<typename T, class _Ax>
 void concurrent_queue<T, _Ax>::clear();
 ```
@@ -105,11 +105,11 @@ void concurrent_queue<T, _Ax>::clear();
 
 *_Ax*<br/>
 
-##  <a name="create_async"></a>  create_async
+## <a name="create_async"></a>  create_async
 
 Creates a Windows Runtime asynchronous construct based on a user supplied lambda or function object. The return type of `create_async` is one of either `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, or `IAsyncOperationWithProgress<TResult, TProgress>^` based on the signature of the lambda passed to the method.
 
-```
+```cpp
 template<typename _Function>
 __declspec(noinline) auto create_async(const _Function& _Func)
     -> decltype(ref new details::_AsyncTaskGeneratorThunk<_Function>(_Func));
@@ -143,11 +143,11 @@ If the body of the lambda returns a task, the lamba executes inline, and by decl
 
 This function is only available to Windows Runtime apps.
 
-##  <a name="createresourcemanager"></a>  CreateResourceManager
+## <a name="createresourcemanager"></a>  CreateResourceManager
 
 Returns an interface that represents the singleton instance of the Concurrency Runtime's Resource Manager. The Resource Manager is responsible for assigning resources to schedulers that want to cooperate with each other.
 
-```
+```cpp
 IResourceManager* __cdecl CreateResourceManager();
 ```
 
@@ -161,11 +161,11 @@ Multiple subsequent calls to this method will return the same instance of the Re
 
 [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.
 
-##  <a name="create_task"></a>  create_task
+## <a name="create_task"></a>  create_task
 
 Creates a PPL [task](task-class.md) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.
 
-```
+```cpp
 template<typename T>
 __declspec(noinline) auto create_task(T _Param, const task_options& _TaskOptions = task_options())
     -> task<typename details::_TaskTypeFromParam<T>::T>;
@@ -205,11 +205,11 @@ The type of the returned task is inferred from the first parameter to the functi
 
 In a UWP app, if `_Param` is of type Windows::Foundation::IAsyncOperation\<T>^ or Windows::Foundation::IAsyncOperationWithProgress\<T,P>^, or a functor that returns either of those types, the created task will be of type `task<T>`. If `_Param` is of type Windows::Foundation::IAsyncAction^ or Windows::Foundation::IAsyncActionWithProgress\<P>^, or a functor that returns either of those types, the created task will have type `task<void>`.
 
-##  <a name="disabletracing"></a>  DisableTracing
+## <a name="disabletracing"></a>  DisableTracing
 
 Disables tracing in the Concurrency Runtime. This function is deprecated because ETW tracing is unregistered by default.
 
-```
+```cpp
 __declspec(deprecated("Concurrency::DisableTracing is a deprecated function.")) _CRTIMP HRESULT __cdecl DisableTracing();
 ```
 
@@ -217,11 +217,11 @@ __declspec(deprecated("Concurrency::DisableTracing is a deprecated function.")) 
 
 If tracing was correctly disabled, `S_OK` is returned. If tracing was not previously initiated, `E_NOT_STARTED` is returned
 
-##  <a name="enabletracing"></a>  EnableTracing
+## <a name="enabletracing"></a>  EnableTracing
 
 Enables tracing in the Concurrency Runtime. This function is deprecated because ETW tracing is now on by default.
 
-```
+```cpp
 __declspec(deprecated("Concurrency::EnableTracing is a deprecated function.")) _CRTIMP HRESULT __cdecl EnableTracing();
 ```
 
@@ -229,11 +229,11 @@ __declspec(deprecated("Concurrency::EnableTracing is a deprecated function.")) _
 
 If tracing was correctly initiated, `S_OK` is returned; otherwise, `E_NOT_STARTED` is returned.
 
-##  <a name="free"></a>  Free
+## <a name="free"></a>  Free
 
 Releases a block of memory previously allocated by the `Alloc` method to the Concurrency Runtime Caching Suballocator.
 
-```
+```cpp
 void __cdecl Free(_Pre_maybenull_ _Post_invalid_ void* _PAllocation);
 ```
 
@@ -246,19 +246,19 @@ A pointer to memory previously allocated by the `Alloc` method which is to be fr
 
 For more information about which scenarios in your application could benefit from using the Caching Suballocator, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
-##  <a name="get_ambient_scheduler"></a>  get_ambient_scheduler
+## <a name="get_ambient_scheduler"></a>  get_ambient_scheduler
 
-```
+```cpp
 inline std::shared_ptr<::Concurrency::scheduler_interface> get_ambient_scheduler();
 ```
 
 ### Return Value
 
-##  <a name="getexecutioncontextid"></a>  GetExecutionContextId
+## <a name="getexecutioncontextid"></a>  GetExecutionContextId
 
 Returns a unique identifier that can be assigned to an execution context that implements the `IExecutionContext` interface.
 
-```
+```cpp
 unsigned int __cdecl GetExecutionContextId();
 ```
 
@@ -270,11 +270,11 @@ A unique identifier for an execution context.
 
 Use this method to obtain an identifier for your execution context before you pass an `IExecutionContext` interface as a parameter to any of the methods offered by the Resource Manager.
 
-##  <a name="getosversion"></a>  GetOSVersion
+## <a name="getosversion"></a>  GetOSVersion
 
 Returns the operating system version.
 
-```
+```cpp
 IResourceManager::OSVersion __cdecl GetOSVersion();
 ```
 
@@ -286,11 +286,11 @@ An enumerated value representing the operating system.
 
 [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.
 
-##  <a name="getprocessorcount"></a>  GetProcessorCount
+## <a name="getprocessorcount"></a>  GetProcessorCount
 
 Returns the number of hardware threads on the underlying system.
 
-```
+```cpp
 unsigned int __cdecl GetProcessorCount();
 ```
 
@@ -302,11 +302,11 @@ The number of hardware threads.
 
 [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.
 
-##  <a name="getprocessornodecount"></a>  GetProcessorNodeCount
+## <a name="getprocessornodecount"></a>  GetProcessorNodeCount
 
 Returns the number of NUMA nodes or processor packages on the underlying system.
 
-```
+```cpp
 unsigned int __cdecl GetProcessorNodeCount();
 ```
 
@@ -320,11 +320,11 @@ If the system contains more NUMA nodes than processor packages, the number of NU
 
 [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.
 
-##  <a name="getschedulerid"></a>  GetSchedulerId
+## <a name="getschedulerid"></a>  GetSchedulerId
 
 Returns a unique identifier that can be assigned to a scheduler that implements the `IScheduler` interface.
 
-```
+```cpp
 unsigned int __cdecl GetSchedulerId();
 ```
 
@@ -336,9 +336,9 @@ A unique identifier for a scheduler.
 
 Use this method to obtain an identifier for your scheduler before you pass an `IScheduler` interface as a parameter to any of the methods offered by the Resource Manager.
 
-##  <a name="internal_assign_iterators"></a>  internal_assign_iterators
+## <a name="internal_assign_iterators"></a>  internal_assign_iterators
 
-```
+```cpp
 template<typename T, class _Ax>
 template<class _I>
 void concurrent_vector<T, _Ax>::internal_assign_iterators(
@@ -358,11 +358,11 @@ void concurrent_vector<T, _Ax>::internal_assign_iterators(
 
 *last*<br/>
 
-##  <a name="interruption_point"></a>  interruption_point
+## <a name="interruption_point"></a>  interruption_point
 
 Creates an interruption point for cancellation. If a cancellation is in progress in the context where this function is called, this will throw an internal exception that aborts the execution of the currently executing parallel work. If cancellation is not in progress, the function does nothing.
 
-```
+```cpp
 inline void interruption_point();
 ```
 
@@ -370,11 +370,11 @@ inline void interruption_point();
 
 You should not catch the internal cancellation exception thrown by the `interruption_point()` function. The exception will be caught and handled by the runtime, and catching it may cause your program to behave abnormally.
 
-##  <a name="is_current_task_group_canceling"></a>  is_current_task_group_canceling
+## <a name="is_current_task_group_canceling"></a>  is_current_task_group_canceling
 
 Returns an indication of whether the task group which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly). Note that if there is no task group currently executing inline on the current context, `false` will be returned.
 
-```
+```cpp
 bool __cdecl is_current_task_group_canceling();
 ```
 
@@ -386,11 +386,11 @@ bool __cdecl is_current_task_group_canceling();
 
 For more information, see [Cancellation](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).
 
-##  <a name="make_choice"></a>  make_choice
+## <a name="make_choice"></a>  make_choice
 
 Constructs a `choice` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.
 
-```
+```cpp
 template<typename T1, typename T2, typename... Ts>
 choice<std::tuple<T1, T2, Ts...>> make_choice(
     Scheduler& _PScheduler,
@@ -439,11 +439,11 @@ The `ScheduleGroup` object within which the propagation task for the `choice` me
 
 A `choice` message block with two or more input sources.
 
-##  <a name="make_greedy_join"></a>  make_greedy_join
+## <a name="make_greedy_join"></a>  make_greedy_join
 
 Constructs a `greedy multitype_join` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.
 
-```
+```cpp
 template<typename T1, typename T2, typename... Ts>
 multitype_join<std::tuple<T1, T2, Ts...>,greedy> make_greedy_join(
     Scheduler& _PScheduler,
@@ -492,11 +492,11 @@ The `ScheduleGroup` object within which the propagation task for the `multitype_
 
 A `greedy multitype_join` message block with two or more input sources.
 
-##  <a name="make_join"></a>  make_join
+## <a name="make_join"></a>  make_join
 
 Constructs a `non_greedy multitype_join` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.
 
-```
+```cpp
 template<typename T1, typename T2, typename... Ts>
 multitype_join<std::tuple<T1, T2, Ts...>>
     make_join(
@@ -546,11 +546,11 @@ The `ScheduleGroup` object within which the propagation task for the `multitype_
 
 A `non_greedy multitype_join` message block with two or more input sources.
 
-##  <a name="make_task"></a>  make_task
+## <a name="make_task"></a>  make_task
 
 A factory method for creating a `task_handle` object.
 
-```
+```cpp
 template <class _Function>
 task_handle<_Function> make_task(const _Function& _Func);
 ```
@@ -571,11 +571,11 @@ A `task_handle` object.
 
 This function is useful when you need to create a `task_handle` object with a lambda expression, because it allows you to create the object without knowing the true type of the lambda functor.
 
-##  <a name="parallel_buffered_sort"></a>  parallel_buffered_sort
+## <a name="parallel_buffered_sort"></a>  parallel_buffered_sort
 
-Arranges the elements in a specified range into a nondescending order, or according to an ordering criterion specified by a binary predicate, in parallel. This function is semantically similar to `std::sort` in that it is a compare-based, unstable, in-place sort except that it needs `O(n)` additional space, and requires default initialization for the elements being sorted.
+Arranges the elements in a specified range into a non-descending order, or according to an ordering criterion specified by a binary predicate, in parallel. This function is semantically similar to `std::sort` in that it is a compare-based, unstable, in-place sort except that it needs `O(n)` additional space, and requires default initialization for the elements being sorted.
 
-```
+```cpp
 template<typename _Random_iterator>
 inline void parallel_buffered_sort(
     const _Random_iterator& _Begin,
@@ -658,11 +658,11 @@ If you do not supply an allocator type or instance, the C++ Standard Library mem
 
 The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.
 
-##  <a name="parallel_for"></a>  parallel_for
+## <a name="parallel_for"></a>  parallel_for
 
 `parallel_for` iterates over a range of indices and executes a user-supplied function at each iteration, in parallel.
 
-```
+```cpp
 template <typename _Index_type, typename _Function, typename _Partitioner>
 void parallel_for(
     _Index_type first,
@@ -737,11 +737,11 @@ A reference to the partitioner object. The argument can be one of `const`[auto_p
 
 For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).
 
-##  <a name="parallel_for_each"></a>  parallel_for_each
+## <a name="parallel_for_each"></a>  parallel_for_each
 
 `parallel_for_each` applies a specified function to each element within a range, in parallel. It is semantically equivalent to the `for_each` function in the `std` namespace, except that iteration over the elements is performed in parallel, and the order of iteration is unspecified. The argument `_Func` must support a function call operator of the form `operator()(T)` where the parameter `T` is the item type of the container being iterated over.
 
-```
+```cpp
 template <typename _Iterator, typename _Function>
 void parallel_for_each(
     _Iterator first,
@@ -785,11 +785,11 @@ For iterators that do not support random access, only [auto_partitioner](auto-pa
 
 For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).
 
-##  <a name="parallel_invoke"></a>  parallel_invoke
+## <a name="parallel_invoke"></a>  parallel_invoke
 
 Executes the function objects supplied as parameters in parallel, and blocks until they have finished executing. Each function object could be a lambda expression, a pointer to function, or any object that supports the function call operator with the signature `void operator()()`.
 
-```
+```cpp
 template <typename _Function1, typename _Function2>
 void parallel_invoke(
     const _Function1& _Func1,
@@ -984,11 +984,11 @@ If one or more of the function objects passed as parameters to this function thr
 
 For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).
 
-##  <a name="parallel_radixsort"></a>  parallel_radixsort
+## <a name="parallel_radixsort"></a>  parallel_radixsort
 
 Arranges elements in a specified range into an non descending order using a radix sorting algorithm. This is a stable sort function which requires a projection function that can project elements to be sorted into unsigned integer-like keys. Default initialization is required for the elements being sorted.
 
-```
+```cpp
 template<typename _Random_iterator>
 inline void parallel_radixsort(
     const _Random_iterator& _Begin,
@@ -1067,11 +1067,11 @@ If you do not supply an allocator type or instance, the C++ Standard Library mem
 
 The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.
 
-##  <a name="parallel_reduce"></a>  parallel_reduce
+## <a name="parallel_reduce"></a>  parallel_reduce
 
 Computes the sum of all elements in a specified range by computing successive partial sums, or computes the result of successive partial results similarly obtained from using a specified binary operation other than sum, in parallel. `parallel_reduce` is semantically similar to `std::accumulate`, except that it requires the binary operation to be associative, and requires an identity value instead of an initial value.
 
-```
+```cpp
 template<typename _Forward_iterator>
 inline typename std::iterator_traits<_Forward_iterator>::value_type parallel_reduce(
     _Forward_iterator _Begin,
@@ -1140,11 +1140,11 @@ The second overload also requires that the iterator's `value_type` be the same a
 
 For the third overload, the identity value type must be the same as the reduction result type, but the iterator's `value_type` may be different from both. The range reduction function `_Range_fun` is used in the first phase with the identity value as the initial value, and the binary function `_Sym_reduce_fun` is applied to sub results in the second phase.
 
-##  <a name="parallel_sort"></a>  parallel_sort
+## <a name="parallel_sort"></a>  parallel_sort
 
-Arranges the elements in a specified range into a nondescending order, or according to an ordering criterion specified by a binary predicate, in parallel. This function is semantically similar to `std::sort` in that it is a compare-based, unstable, in-place sort.
+Arranges the elements in a specified range into a non-descending order, or according to an ordering criterion specified by a binary predicate, in parallel. This function is semantically similar to `std::sort` in that it is a compare-based, unstable, in-place sort.
 
-```
+```cpp
 template<typename _Random_iterator>
 inline void parallel_sort(
     const _Random_iterator& _Begin,
@@ -1176,7 +1176,7 @@ A random-access iterator addressing the position one past the final element in t
 A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
 
 *_Chunk_size*<br/>
-The mimimum size of a chunk that will be split into two for parallel execution.
+The minimum size of a chunk that will be split into two for parallel execution.
 
 ### Remarks
 
@@ -1186,11 +1186,11 @@ The second overloaded uses the supplied binary comparator that should have the s
 
 The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.
 
-##  <a name="parallel_transform"></a>  parallel_transform
+## <a name="parallel_transform"></a>  parallel_transform
 
 Applies a specified function object to each element in a source range, or to a pair of elements from two source ranges, and copies the return values of the function object into a destination range, in parallel. This functional is semantically equivalent to `std::transform`.
 
-```
+```cpp
 template <typename _Input_iterator1,
     typename _Output_iterator,
     typename _Unary_operator>
@@ -1313,11 +1313,11 @@ The overloads that take the argument `_Binary_op` transform two input ranges int
 
 For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).
 
-##  <a name="receive"></a>  receive
+## <a name="receive"></a>  receive
 
 A general receive implementation, allowing a context to wait for data from exactly one source and filter the values that are accepted.
 
-```
+```cpp
 template <class T>
 T receive(
     _Inout_ ISource<T>* _Src,
@@ -1365,11 +1365,11 @@ If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIM
 
 For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).
 
-##  <a name="run_with_cancellation_token"></a>  run_with_cancellation_token
+## <a name="run_with_cancellation_token"></a>  run_with_cancellation_token
 
 Executes a function object immediately and synchronously in the context of a given cancellation token.
 
-```
+```cpp
 template<typename _Function>
 void run_with_cancellation_token(
     const _Function& _Func,
@@ -1391,11 +1391,11 @@ The cancellation token which will control implicit cancellation of the function 
 
 Any interruption points in the function object will be triggered when the `cancellation_token` is canceled. The explicit token `_Ct` will isolate this `_Func` from parent cancellation if the parent has a different token or no token.
 
-##  <a name="send"></a>  send
+## <a name="send"></a>  send
 
 A synchronous send operation, which waits until the target either accepts or declines the message.
 
-```
+```cpp
 template <class T>
 bool send(_Inout_ ITarget<T>* _Trg, const T& _Data);
 
@@ -1422,9 +1422,9 @@ A reference to the data to be sent.
 
 For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).
 
-##  <a name="set_ambient_scheduler"></a>  set_ambient_scheduler
+## <a name="set_ambient_scheduler"></a>  set_ambient_scheduler
 
-```
+```cpp
 inline void set_ambient_scheduler(std::shared_ptr<::Concurrency::scheduler_interface> _Scheduler);
 ```
 
@@ -1433,7 +1433,7 @@ inline void set_ambient_scheduler(std::shared_ptr<::Concurrency::scheduler_inter
 *_Scheduler*<br/>
 The ambient scheduler to set.
 
-##  <a name="set_task_execution_resources"></a>  set_task_execution_resources
+## <a name="set_task_execution_resources"></a>  set_task_execution_resources
 
 Restricts the execution resources used by the Concurrency Runtime internal worker threads to the affinity set specified.
 
@@ -1441,7 +1441,7 @@ It is valid to call this method only before the Resource Manager has been create
 
 The affinity mask provided need not be a subset of the process affinity mask. The process affinity will be updated if necessary.
 
-```
+```cpp
 void __cdecl set_task_execution_resources(
     DWORD_PTR _ProcessAffinityMask);
 
@@ -1467,13 +1467,13 @@ The method will throw an [invalid_operation](invalid-operation-class.md) excepti
 
 The version of the method that takes an array of group affinities as a parameter should only be used on operating systems with version Windows 7 or higher. Otherwise, an [invalid_operation](invalid-operation-class.md) exception is thrown.
 
-Programatically modifying the process affinity after this method has been invoked will not cause the Resource Manager to re-evaluate the affinity it is restricted to. Therefore, all changes to process affinity should be made before calling this method.
+Programmatically modifying the process affinity after this method has been invoked will not cause the Resource Manager to re-evaluate the affinity it is restricted to. Therefore, all changes to process affinity should be made before calling this method.
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 Exchanges the elements of two `concurrent_vector` objects.
 
-```
+```cpp
 template<typename T, class _Ax>
 inline void swap(
     concurrent_vector<T, _Ax>& _A,
@@ -1500,9 +1500,9 @@ The template function is an algorithm specialized on the container class `concur
 
 This method is not concurrency-safe. You must ensure that no other threads are performing operations on either of the concurrent vectors when you call this method.
 
-##  <a name="task_from_exception"></a>  task_from_exception
+## <a name="task_from_exception"></a>  task_from_exception
 
-```
+```cpp
 template<typename _TaskType, typename _ExType>
 task<_TaskType> task_from_exception(
     _ExType _Exception,
@@ -1521,9 +1521,9 @@ task<_TaskType> task_from_exception(
 
 ### Return Value
 
-##  <a name="task_from_result"></a>  task_from_result
+## <a name="task_from_result"></a>  task_from_result
 
-```
+```cpp
 template<typename T>
 task<T> task_from_result(
     T _Param,
@@ -1545,11 +1545,11 @@ inline task<void> task_from_result(
 
 ### Return Value
 
-##  <a name="trace_agents_register_name"></a>  Trace_agents_register_name
+## <a name="trace_agents_register_name"></a>  Trace_agents_register_name
 
 Associates the given name to the message block or agent in the ETW trace.
 
-```
+```cpp
 template <class T>
 void Trace_agents_register_name(
     _Inout_ T* _PObject,
@@ -1567,11 +1567,11 @@ A pointer to the message block or agent that is being named in the trace.
 *_Name*<br/>
 The name for the given object.
 
-##  <a name="try_receive"></a>  try_receive
+## <a name="try_receive"></a>  try_receive
 
 A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return **false**.
 
-```
+```cpp
 template <class T>
 bool try_receive(_Inout_ ISource<T>* _Src, T& _value);
 
@@ -1613,11 +1613,11 @@ A `bool` value indicating whether or not a payload was placed in `_value`.
 
 For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).
 
-##  <a name="wait"></a>  wait
+## <a name="wait"></a>  wait
 
 Pauses the current context for a specified amount of time.
 
-```
+```cpp
 void __cdecl wait(unsigned int _Milliseconds);
 ```
 
@@ -1630,11 +1630,11 @@ The number of milliseconds the current context should be paused for. If the `_Mi
 
 If this method is called on a Concurrency Runtime scheduler context, the scheduler will find a different context to run on the underlying resource. Because the scheduler is cooperative in nature, this context cannot resume exactly after the number of milliseconds specified. If the scheduler is busy executing other tasks that do not cooperatively yield to the scheduler, the wait period could be indefinite.
 
-##  <a name="when_all"></a>  when_all
+## <a name="when_all"></a>  when_all
 
 Creates a task that will complete successfully when all of the tasks supplied as arguments complete successfully.
 
-```
+```cpp
 template <typename _Iterator>
 auto when_all(
     _Iterator _Begin,
@@ -1666,15 +1666,15 @@ A task that completes successfully when all of the input tasks have completed su
 
 `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](task-class.md#wait), it is safe to call this function in a UWP app on the ASTA (Application STA) thread.
 
-If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call [task::get](task-class.md#get) or `task::wait` on that task.
+If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one occurs, will be thrown if you call [task::get](task-class.md#get) or `task::wait` on that task.
 
 For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-##  <a name="when_any"></a>  when_any
+## <a name="when_any"></a>  when_any
 
 Creates a task that will complete successfully when any of the tasks supplied as arguments completes successfully.
 
-```
+```cpp
 template<typename _Iterator>
 auto when_any(
     _Iterator _Begin,

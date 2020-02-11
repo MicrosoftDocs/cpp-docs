@@ -11,7 +11,7 @@ The `affinity_partitioner` class is similar to the `static_partitioner` class, b
 
 ## Syntax
 
-```
+```cpp
 class affinity_partitioner;
 ```
 
@@ -34,19 +34,19 @@ class affinity_partitioner;
 
 **Namespace:** concurrency
 
-##  <a name="dtor"></a> ~affinity_partitioner
+## <a name="dtor"></a> ~affinity_partitioner
 
 Destroys an `affinity_partitioner` object.
 
-```
+```cpp
 ~affinity_partitioner();
 ```
 
-##  <a name="ctor"></a> affinity_partitioner
+## <a name="ctor"></a> affinity_partitioner
 
 Constructs an `affinity_partitioner` object.
 
-```
+```cpp
 affinity_partitioner();
 ```
 

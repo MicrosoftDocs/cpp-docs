@@ -10,7 +10,7 @@ This document describes how best to make effective use of the Parallel Patterns 
 
 For more information about the PPL, see [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md).
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This document contains the following sections:
 
@@ -34,7 +34,7 @@ This document contains the following sections:
 
 - [Make Sure That Variables Are Valid Throughout the Lifetime of a Task](#lifetime)
 
-##  <a name="small-loops"></a> Do Not Parallelize Small Loop Bodies
+## <a name="small-loops"></a> Do Not Parallelize Small Loop Bodies
 
 The parallelization of relatively small loop bodies can cause the associated scheduling overhead to outweigh the benefits of parallel processing. Consider the following example, which adds each pair of elements in two arrays.
 
@@ -44,7 +44,7 @@ The workload for each parallel loop iteration is too small to benefit from the o
 
 [[Top](#top)]
 
-##  <a name="highest"></a> Express Parallelism at the Highest Possible Level
+## <a name="highest"></a> Express Parallelism at the Highest Possible Level
 
 When you parallelize code only at the low level, you can introduce a fork-join construct that does not scale as the number of processors increases. A *fork-join* construct is a construct where one task divides its work into smaller parallel subtasks and waits for those subtasks to finish. Each subtask can recursively divide itself into additional subtasks.
 
@@ -70,7 +70,7 @@ For a similar example that uses a pipeline to perform image processing in parall
 
 [[Top](#top)]
 
-##  <a name="divide-and-conquer"></a> Use parallel_invoke to Solve Divide-and-Conquer Problems
+## <a name="divide-and-conquer"></a> Use parallel_invoke to Solve Divide-and-Conquer Problems
 
 A *divide-and-conquer* problem is a form of the fork-join construct that uses recursion to break a task into subtasks. In addition to the [concurrency::task_group](reference/task-group-class.md) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes, you can also use the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm to solve divide-and-conquer problems. The `parallel_invoke` algorithm has a more succinct syntax than task group objects, and is useful when you have a fixed number of parallel tasks.
 
@@ -84,7 +84,7 @@ For the complete version of this example, see [How to: Use parallel_invoke to Wr
 
 [[Top](#top)]
 
-##  <a name="breaking-loops"></a> Use Cancellation or Exception Handling to Break from a Parallel Loop
+## <a name="breaking-loops"></a> Use Cancellation or Exception Handling to Break from a Parallel Loop
 
 The PPL provides two ways to cancel the parallel work that is performed by a task group or parallel algorithm. One way is to use the cancellation mechanism that is provided by the [concurrency::task_group](reference/task-group-class.md) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes. The other way is to throw an exception in the body of a task work function. The cancellation mechanism is more efficient than exception handling at canceling a tree of parallel work. A *parallel work tree* is a group of related task groups in which some task groups contain other task groups. The cancellation mechanism cancels a task group and its child task groups in a top-down manner. Conversely, exception handling works in a bottom-up manner and must cancel each child task group independently as the exception propagates upward.
 
@@ -108,7 +108,7 @@ For more general information about the cancellation and exception-handling mecha
 
 [[Top](#top)]
 
-##  <a name="object-destruction"></a> Understand how Cancellation and Exception Handling Affect Object Destruction
+## <a name="object-destruction"></a> Understand how Cancellation and Exception Handling Affect Object Destruction
 
 In a tree of parallel work, a task that is canceled prevents child tasks from running. This can cause problems if one of the child tasks performs an operation that is important to your application, such as freeing a resource. In addition, task cancellation can cause an exception to propagate through an object destructor and cause undefined behavior in your application.
 
@@ -138,7 +138,7 @@ We recommend that you do not perform critical operations, such as the freeing of
 
 [[Top](#top)]
 
-##  <a name="repeated-blocking"></a> Do Not Block Repeatedly in a Parallel Loop
+## <a name="repeated-blocking"></a> Do Not Block Repeatedly in a Parallel Loop
 
 A parallel loop such as [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) or [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) that is dominated by blocking operations may cause the runtime to create many threads over a short time.
 
@@ -154,7 +154,7 @@ We recommend that you refactor your code to avoid this pattern. In this example,
 
 [[Top](#top)]
 
-##  <a name="blocking"></a> Do Not Perform Blocking Operations When You Cancel Parallel Work
+## <a name="blocking"></a> Do Not Perform Blocking Operations When You Cancel Parallel Work
 
 When possible, do not perform blocking operations before you call the [concurrency::task_group::cancel](reference/task-group-class.md#cancel) or [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) method to cancel parallel work.
 
@@ -172,7 +172,7 @@ The following example shows how to prevent unnecessary work, and thereby improve
 
 [[Top](#top)]
 
-##  <a name="shared-writes"></a> Do Not Write to Shared Data in a Parallel Loop
+## <a name="shared-writes"></a> Do Not Write to Shared Data in a Parallel Loop
 
 The Concurrency Runtime provides several data structures, for example, [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), that synchronize concurrent access to shared data. These data structures are useful in many cases, for example, when multiple tasks infrequently require shared access to a resource.
 
@@ -192,7 +192,7 @@ For the complete version of this example, see [How to: Use combinable to Improve
 
 [[Top](#top)]
 
-##  <a name="false-sharing"></a> When Possible, Avoid False Sharing
+## <a name="false-sharing"></a> When Possible, Avoid False Sharing
 
 *False sharing* occurs when multiple concurrent tasks that are running on separate processors write to variables that are located on the same cache line. When one task writes to one of the variables, the cache line for both variables is invalidated. Each processor must reload the cache line every time that the cache line is invalidated. Therefore, false sharing can cause decreased performance in your application.
 
@@ -214,7 +214,7 @@ We recommend that you use the [concurrency::combinable](../../parallel/concrt/re
 
 [[Top](#top)]
 
-##  <a name="lifetime"></a> Make Sure That Variables Are Valid Throughout the Lifetime of a Task
+## <a name="lifetime"></a> Make Sure That Variables Are Valid Throughout the Lifetime of a Task
 
 When you provide a lambda expression to a task group or parallel algorithm, the capture clause specifies whether the body of the lambda expression accesses variables in the enclosing scope by value or by reference. When you pass variables to a lambda expression by reference, you must guarantee that the lifetime of that variable persists until the task finishes.
 

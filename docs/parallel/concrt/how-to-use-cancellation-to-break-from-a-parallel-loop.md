@@ -20,7 +20,7 @@ The [concurrency::parallel_for](reference/concurrency-namespace-functions.md#par
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `parallel-array-search.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc parallel-array-search.cpp**
+> **cl.exe /EHsc parallel-array-search.cpp**
 
 ## See also
 

@@ -10,7 +10,7 @@ Provides the [get_texture](concurrency-graphics-direct3d-namespace-functions.md#
 
 ## Syntax
 
-```
+```cpp
 namespace direct3d;
 ```
 

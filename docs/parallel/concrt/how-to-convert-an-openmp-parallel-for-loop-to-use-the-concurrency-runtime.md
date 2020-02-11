@@ -8,7 +8,7 @@ ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
 
 This example demonstrates how to convert a basic loop that uses the OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) and [for](../../parallel/openmp/reference/for-openmp.md) directives to use the Concurrency Runtime [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm.
 
-## Example
+## Example - prime count
 
 This example uses both OpenMP and the Concurrency Runtime to compute the count of prime numbers in an array of random values.
 
@@ -29,7 +29,7 @@ The version of this example that uses the Concurrency Runtime also uses a [concu
 
 For more information about `parallel_for` and other parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md). For more information about the `combinable` class, see [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md).
 
-## Example
+## Example - use std::array
 
 This example modifies the previous one to act on an [std::array](../../standard-library/array-class-stl.md) object instead of on a native array. Because OpenMP versions 2.0 and 2.5 allow for signed integral index types only in a `parallel_for` construct, you cannot use iterators to access the elements of a C++ Standard Library container in parallel. The Parallel Patterns Library (PPL) provides the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm, which performs tasks, in parallel, on an iterative container such as those provided by the C++ Standard Library. It uses the same partitioning logic that the `parallel_for` algorithm uses. The `parallel_for_each` algorithm resembles the C++ Standard Library [std::for_each](../../standard-library/algorithm-functions.md#for_each) algorithm, except that the `parallel_for_each` algorithm executes the tasks concurrently.
 
@@ -39,7 +39,7 @@ This example modifies the previous one to act on an [std::array](../../standard-
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `concrt-omp-count-primes.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc /openmp concrt-omp-count-primes.cpp**
+> **cl.exe /EHsc /openmp concrt-omp-count-primes.cpp**
 
 ## See also
 

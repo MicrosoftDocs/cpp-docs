@@ -11,7 +11,7 @@ This class describes an exception thrown when the `Reference` method is called o
 
 ## Syntax
 
-```
+```cpp
 class improper_scheduler_reference : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class improper_scheduler_reference : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> improper_scheduler_reference
+## <a name="ctor"></a> improper_scheduler_reference
 
 Constructs an `improper_scheduler_reference` object.
 
-```
+```cpp
 explicit _CRTIMP improper_scheduler_reference(_In_z_ const char* _Message) throw();
 
 improper_scheduler_reference() throw();

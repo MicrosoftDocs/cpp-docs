@@ -11,7 +11,7 @@ This class describes an exception thrown when the `Unblock` method of a `Context
 
 ## Syntax
 
-```
+```cpp
 class context_self_unblock : public std::exception;
 ```
 
@@ -35,11 +35,11 @@ class context_self_unblock : public std::exception;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> context_self_unblock
+## <a name="ctor"></a> context_self_unblock
 
 Constructs a `context_self_unblock` object.
 
-```
+```cpp
 explicit _CRTIMP context_self_unblock(_In_z_ const char* _Message) throw();
 
 context_self_unblock() throw();

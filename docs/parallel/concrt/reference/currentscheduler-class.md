@@ -11,7 +11,7 @@ Represents an abstraction for the current scheduler associated with the calling 
 
 ## Syntax
 
-```
+```cpp
 class CurrentScheduler;
 ```
 
@@ -46,11 +46,11 @@ If there is no scheduler (see [Scheduler](scheduler-class.md)) associated with t
 
 **Namespace:** concurrency
 
-##  <a name="create"></a> Create
+## <a name="create"></a> Create
 
 Creates a new scheduler whose behavior is described by the `_Policy` parameter and attaches it to the calling context. The newly created scheduler will become the current scheduler for the calling context.
 
-```
+```cpp
 static void __cdecl Create(const SchedulerPolicy& _Policy);
 ```
 
@@ -69,11 +69,11 @@ If this method is called from a context that is already attached to a different 
 
 This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) and [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).
 
-##  <a name="createschedulegroup"></a> CreateScheduleGroup
+## <a name="createschedulegroup"></a> CreateScheduleGroup
 
 Creates a new schedule group within the scheduler associated with the calling context. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.
 
-```
+```cpp
 static ScheduleGroup* __cdecl CreateScheduleGroup();
 
 static ScheduleGroup* __cdecl CreateScheduleGroup(location& _Placement);
@@ -96,11 +96,11 @@ You must invoke the [Release](schedulegroup-class.md#release) method on a schedu
 
 Note that if you explicitly created this scheduler, you must release all references to schedule groups within it, before you release your reference on the scheduler, by detaching the current context from it.
 
-##  <a name="detach"></a> Detach
+## <a name="detach"></a> Detach
 
 Detaches the current scheduler from the calling context and restores the previously attached scheduler as the current scheduler, if one exists. After this method returns, the calling context is then managed by the scheduler that was previously attached to the context using either the `CurrentScheduler::Create` or `Scheduler::Attach` method.
 
-```
+```cpp
 static void __cdecl Detach();
 ```
 
@@ -112,11 +112,11 @@ If there is no scheduler attached to the calling context, calling this method wi
 
 Calling this method from a context that is internal to and managed by a scheduler, or a context that was attached using a method other than the [Scheduler::Attach](scheduler-class.md#attach) or [CurrentScheduler::Create](#create) methods, will result in an [improper_scheduler_detach](improper-scheduler-detach-class.md) exception being thrown.
 
-##  <a name="get"></a> Get
+## <a name="get"></a> Get
 
 Returns a pointer to the scheduler associated with the calling context, also referred to as the current scheduler.
 
-```
+```cpp
 static Scheduler* __cdecl Get();
 ```
 
@@ -128,11 +128,11 @@ A pointer to the scheduler associated with the calling context (the current sche
 
 This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context. No additional reference is placed on the `Scheduler` object returned by this method.
 
-##  <a name="getnumberofvirtualprocessors"></a> GetNumberOfVirtualProcessors
+## <a name="getnumberofvirtualprocessors"></a> GetNumberOfVirtualProcessors
 
 Returns the current number of virtual processors for the scheduler associated with the calling context.
 
-```
+```cpp
 static unsigned int __cdecl GetNumberOfVirtualProcessors();
 ```
 
@@ -146,11 +146,11 @@ This method will not result in scheduler attachment if the calling context is no
 
 The return value from this method is an instantaneous sampling of the number of virtual processors for the scheduler associated with the calling context. This value can be stale the moment it is returned.
 
-##  <a name="getpolicy"></a> GetPolicy
+## <a name="getpolicy"></a> GetPolicy
 
 Returns a copy of the policy that the current scheduler was created with.
 
-```
+```cpp
 static SchedulerPolicy __cdecl GetPolicy();
 ```
 
@@ -162,11 +162,11 @@ A copy of the policy that the current scheduler was created with.
 
 This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.
 
-##  <a name="id"></a> Id
+## <a name="id"></a> Id
 
 Returns a unique identifier for the current scheduler.
 
-```
+```cpp
 static unsigned int __cdecl Id();
 ```
 
@@ -178,11 +178,11 @@ If a scheduler is associated with the calling context, a unique identifier for t
 
 This method will not result in scheduler attachment if the calling context is not already associated with a scheduler.
 
-##  <a name="isavailablelocation"></a> IsAvailableLocation
+## <a name="isavailablelocation"></a> IsAvailableLocation
 
 Determines whether a given location is available on the current scheduler.
 
-```
+```cpp
 static bool __cdecl IsAvailableLocation(const location& _Placement);
 ```
 
@@ -201,11 +201,11 @@ This method will not result in scheduler attachment if the calling context is no
 
 Note that the return value is an instantaneous sampling of whether the given location is available. In the presence of multiple schedulers, dynamic resource management can add or take away resources from schedulers at any point. Should this happen, the given location can change availability.
 
-##  <a name="registershutdownevent"></a> RegisterShutdownEvent
+## <a name="registershutdownevent"></a> RegisterShutdownEvent
 
 Causes the Windows event handle passed in the `_ShutdownEvent` parameter to be signaled when the scheduler associated with the current context shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.
 
-```
+```cpp
 static void __cdecl RegisterShutdownEvent(HANDLE _ShutdownEvent);
 ```
 
@@ -218,11 +218,11 @@ A handle to a Windows event object which will be signaled by the runtime when th
 
 If there is no scheduler attached to the calling context, calling this method will result in a [scheduler_not_attached](scheduler-not-attached-class.md) exception being thrown.
 
-##  <a name="scheduletask"></a> ScheduleTask
+## <a name="scheduletask"></a> ScheduleTask
 
 Schedules a light-weight task within the scheduler associated with the calling context. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.
 
-```
+```cpp
 static void __cdecl ScheduleTask(
     TaskProc _Proc,
     _Inout_opt_ void* _Data);

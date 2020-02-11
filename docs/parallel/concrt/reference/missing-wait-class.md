@@ -11,7 +11,7 @@ This class describes an exception thrown when there are tasks still scheduled to
 
 ## Syntax
 
-```
+```cpp
 class missing_wait : public std::exception;
 ```
 
@@ -39,11 +39,11 @@ Absent exception flow, you are responsible for calling either the `wait` or `run
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> missing_wait
+## <a name="ctor"></a> missing_wait
 
 Constructs a `missing_wait` object.
 
-```
+```cpp
 explicit _CRTIMP missing_wait(_In_z_ const char* _Message) throw();
 
 missing_wait() throw();

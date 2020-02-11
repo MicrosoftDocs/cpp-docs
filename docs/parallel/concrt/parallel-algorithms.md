@@ -10,7 +10,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
 
 The parallel algorithms are composed from existing functionality in the Concurrency Runtime. For example, the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm uses a [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object to perform the parallel loop iterations. The `parallel_for` algorithm partitions work in an optimal way given the available number of computing resources.
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 - [The parallel_for Algorithm](#parallel_for)
 
@@ -32,7 +32,7 @@ The parallel algorithms are composed from existing functionality in the Concurre
 
     - [Choosing a Sorting Algorithm](#choose_sort)
 
-##  <a name="parallel_for"></a> The parallel_for Algorithm
+## <a name="parallel_for"></a> The parallel_for Algorithm
 
 The [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm repeatedly performs the same task in parallel. Each of these tasks is parameterized by an iteration value. This algorithm is useful when you have a loop body that does not share resources among iterations of that loop.
 
@@ -55,7 +55,7 @@ You can convert many `for` loops to use `parallel_for`. However, the `parallel_f
 Although the `parallel_for` algorithm does not support arbitrary termination conditions, you can use cancellation to stop all tasks. For more information about cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).
 
 > [!NOTE]
->  The scheduling cost that results from load balancing and support for features such as cancellation might not overcome the benefits of executing the loop body in parallel, especially when the loop body is relatively small. You can minimize this overhead by using a partitioner in your parallel loop. For more information, see [Partitioning Work](#partitions) later in this document.
+> The scheduling cost that results from load balancing and support for features such as cancellation might not overcome the benefits of executing the loop body in parallel, especially when the loop body is relatively small. You can minimize this overhead by using a partitioner in your parallel loop. For more information, see [Partitioning Work](#partitions) later in this document.
 
 ### Example
 
@@ -75,7 +75,7 @@ For a complete example that uses the `parallel_for` algorithm, see [How to: Writ
 
 [[Top](#top)]
 
-##  <a name="parallel_for_each"></a> The parallel_for_each Algorithm
+## <a name="parallel_for_each"></a> The parallel_for_each Algorithm
 
 The [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm performs tasks on an iterative container, such as those provided by the C++ Standard Library, in parallel. It uses the same partitioning logic that the `parallel_for` algorithm uses.
 
@@ -101,7 +101,7 @@ For a complete example that uses the `parallel_for_each` algorithm, see [How to:
 
 [[Top](#top)]
 
-##  <a name="parallel_invoke"></a> The parallel_invoke Algorithm
+## <a name="parallel_invoke"></a> The parallel_invoke Algorithm
 
 The [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm executes a set of tasks in parallel. It does not return until each task finishes. This algorithm is useful when you have several independent tasks that you want to execute at the same time.
 
@@ -125,14 +125,14 @@ For complete examples that use the `parallel_invoke` algorithm, see [How to: Use
 
 [[Top](#top)]
 
-##  <a name="parallel_transform_reduce"></a> The parallel_transform and parallel_reduce Algorithms
+## <a name="parallel_transform_reduce"></a> The parallel_transform and parallel_reduce Algorithms
 
 The [concurrency::parallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) and [concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) algorithms are parallel versions of the C++ Standard Library algorithms [std::transform](../../standard-library/algorithm-functions.md#transform) and [std::accumulate](../../standard-library/numeric-functions.md#accumulate), respectively. The Concurrency Runtime versions behave like the C++ Standard Library versions except that the operation order is not determined because they execute in parallel. Use these algorithms when you work with a set that is large enough to get performance and scalability benefits from being processed in parallel.
 
 > [!IMPORTANT]
->  The `parallel_transform` and `parallel_reduce` algorithms support only random access, bi-directional, and forward iterators because these iterators produce stable memory addresses. Also, these iterators must produce non-`const` l-values.
+> The `parallel_transform` and `parallel_reduce` algorithms support only random access, bi-directional, and forward iterators because these iterators produce stable memory addresses. Also, these iterators must produce non-`const` l-values.
 
-###  <a name="parallel_transform"></a> The parallel_transform Algorithm
+### <a name="parallel_transform"></a> The parallel_transform Algorithm
 
 You can use the `parallel transform` algorithm to perform many data parallelization operations. For example, you can:
 
@@ -147,16 +147,16 @@ The following example shows the basic structure that is used to call the `parall
 [!code-cpp[concrt-basic-parallel-transform#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_4.cpp)]
 
 > [!WARNING]
->  This example demonstrates the basic use of `parallel_transform`. Because the work function does not perform a significant amount of work, a significant increase in performance is not expected in this example.
+> This example demonstrates the basic use of `parallel_transform`. Because the work function does not perform a significant amount of work, a significant increase in performance is not expected in this example.
 
 The `parallel_transform` algorithm has two overloads. The first overload takes one input range and a unary function. The unary function can be a lambda expression that takes one argument, a function object, or a type that derives from `unary_function`. The second overload takes two input ranges and a binary function. The binary function can be a lambda expression that takes two arguments, a function object, or a type that derives from [std::binary_function](../../standard-library/binary-function-struct.md). The following example illustrates these differences.
 
 [!code-cpp[concrt-parallel-transform-vectors#2](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_5.cpp)]
 
 > [!IMPORTANT]
->  The iterator that you supply for the output of `parallel_transform` must completely overlap the input iterator or not overlap at all. The behavior of this algorithm is unspecified if the input and output iterators partially overlap.
+> The iterator that you supply for the output of `parallel_transform` must completely overlap the input iterator or not overlap at all. The behavior of this algorithm is unspecified if the input and output iterators partially overlap.
 
-###  <a name="parallel_reduce"></a> The parallel_reduce Algorithm
+### <a name="parallel_reduce"></a> The parallel_reduce Algorithm
 
 The `parallel_reduce` algorithm is useful when you have a sequence of operations that satisfy the associative property. (This algorithm does not require the commutative property.) Here are some of the operations that you can perform with `parallel_reduce`:
 
@@ -174,7 +174,7 @@ The following basic example shows how to use the `parallel_reduce` algorithm to 
 
 In many cases, you can think of `parallel_reduce` as shorthand for the use of the `parallel_for_each` algorithm together with the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class.
 
-###  <a name="map_reduce_example"></a> Example: Performing Map and Reduce in Parallel
+### <a name="map_reduce_example"></a> Example: Performing Map and Reduce in Parallel
 
 A *map* operation applies a function to each value in a sequence. A *reduce* operation combines the elements of a sequence into one value. You can use the C++ Standard Library [std::transform](../../standard-library/algorithm-functions.md#transform) and [std::accumulate](../../standard-library/numeric-functions.md#accumulate) functions to perform map and reduce operations. However, for many problems, you can use the `parallel_transform` algorithm to perform the map operation in parallel and the `parallel_reduce` algorithm perform the reduce operation in parallel.
 
@@ -186,7 +186,7 @@ For another example that performs a map and reduce operation in parallel, see [H
 
 [[Top](#top)]
 
-##  <a name="partitions"></a> Partitioning Work
+## <a name="partitions"></a> Partitioning Work
 
 To parallelize an operation on a data source, an essential step is to *partition* the source into multiple sections that can be accessed concurrently by multiple threads. A partitioner specifies how a parallel algorithm should partition ranges among threads. As explained previously in this document, the PPL uses a default partitioning mechanism that creates an initial workload and then uses a work-stealing algorithm and range stealing to balance these partitions when workloads are unbalanced. For example, when one loop iteration completes a range of iterations, the runtime redistributes work from other threads to that thread. However, for some scenarios, you might want to specify a different partitioning mechanism that is better suited to your problem.
 
@@ -205,7 +205,7 @@ Divides work into ranges such that each range has at least the number of iterati
 Divides work into a fixed number of ranges (typically the number of worker threads that are available to work on the loop). This partitioner type can improve performance because it does not use work-stealing and therefore has less overhead. Use this partitioner type when each iteration of a parallel loop performs a fixed and uniform amount of work and you do not require support for cancellation or forward cooperative blocking.
 
 > [!WARNING]
->  The `parallel_for_each` and `parallel_transform` algorithms support only containers that use random access iterators (such as std::[vector](../../standard-library/vector-class.md)) for the static, simple, and affinity partitioners. The use of containers that use bidirectional and forward iterators produces a compile-time error. The default partitioner, `auto_partitioner`, supports all three of these iterator types.
+> The `parallel_for_each` and `parallel_transform` algorithms support only containers that use random access iterators (such as std::[vector](../../standard-library/vector-class.md)) for the static, simple, and affinity partitioners. The use of containers that use bidirectional and forward iterators produces a compile-time error. The default partitioner, `auto_partitioner`, supports all three of these iterator types.
 
 Typically, these partitioners are used in the same way, except for `affinity_partitioner`. Most partitioner types do not maintain state and are not modified by the runtime. Therefore you can create these partitioner objects at the call site, as shown in the following example.
 
@@ -216,13 +216,13 @@ However, you must pass an `affinity_partitioner` object as a non-`const`, l-valu
 [!code-cpp[concrt-affinity-partitioner#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_9.cpp)]
 
 > [!CAUTION]
->  Use caution when you modify existing code that relies on cooperative blocking semantics to use `static_partitioner` or `affinity_partitioner`. These partitioner types do not use load balancing or range stealing, and therefore can alter the behavior of your application.
+> Use caution when you modify existing code that relies on cooperative blocking semantics to use `static_partitioner` or `affinity_partitioner`. These partitioner types do not use load balancing or range stealing, and therefore can alter the behavior of your application.
 
 The best way to determine whether to use a partitioner in any given scenario is to experiment and measure how long it takes operations to complete under representative loads and computer configurations. For example, static partitioning might provide significant speedup on a multi-core computer that has only a few cores, but it might result in slowdowns on computers that have relatively many cores.
 
 [[Top](#top)]
 
-##  <a name="parallel_sorting"></a> Parallel Sorting
+## <a name="parallel_sorting"></a> Parallel Sorting
 
 The PPL provides three sorting algorithms: [concurrency::parallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::parallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort), and [concurrency::parallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). These sorting algorithms are useful when you have a data set that can benefit from being sorted in parallel. In particular, sorting in parallel is useful when you have a large dataset or when you use a computationally-expensive compare operation to sort your data. Each of these algorithms sorts elements in place.
 
@@ -245,7 +245,7 @@ The following illustration  shows the important properties of the three parallel
 These parallel sorting algorithms follow the rules of cancellation and exception handling. For more information about cancellation and exception handling in the Concurrency Runtime, see [Canceling Parallel Algorithms](../../parallel/concrt/cancellation-in-the-ppl.md#algorithms) and [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 
 > [!TIP]
->  These parallel sorting algorithms support move semantics. You can define a move assignment operator to enable swap operations to occur more efficiently. For more information about move semantics and the move assignment operator, see [Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md), and [Move Constructors and Move Assignment Operators (C++)](../../cpp/move-constructors-and-move-assignment-operators-cpp.md). If you do not provide a move assignment operator or swap function, the sorting algorithms use the copy constructor.
+> These parallel sorting algorithms support move semantics. You can define a move assignment operator to enable swap operations to occur more efficiently. For more information about move semantics and the move assignment operator, see [Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md), and [Move Constructors and Move Assignment Operators (C++)](../../cpp/move-constructors-and-move-assignment-operators-cpp.md). If you do not provide a move assignment operator or swap function, the sorting algorithms use the copy constructor.
 
 The following basic example shows how to use `parallel_sort` to sort a `vector` of `int` values. By default, `parallel_sort` uses [std::less](../../standard-library/less-struct.md) to compare values.
 
@@ -269,7 +269,7 @@ This example uses a lambda expression as the hash function. You can also use one
 
 The hash function must return an integral type ([std::is_integral::value](../../standard-library/is-integral-class.md) must be **true**). This integral type must be convertible to type `size_t`.
 
-###  <a name="choose_sort"></a> Choosing a Sorting Algorithm
+### <a name="choose_sort"></a> Choosing a Sorting Algorithm
 
 In many cases, `parallel_sort` provides the best balance of speed and memory performance. However, as you increase the size of your data set, the number of available processors, or the complexity of your compare function, `parallel_buffered_sort` or `parallel_radixsort` can perform better. The best way to determine which sorting algorithm to use in any given scenario is to experiment and measure how long it takes to sort typical data under representative computer configurations. Keep the following guidelines in mind when you choose a sorting strategy.
 
@@ -292,7 +292,7 @@ Use `parallel_buffered_sort` to sort medium-sized datasets and when your applica
 Use `parallel_radixsort` to sort large datasets and when your application meets the additional O(N) space requirement. `parallel_radixsort` can be especially useful when the equivalent compare operation is more expensive or when both operations are expensive.
 
 > [!CAUTION]
->  Implementing a good hash function requires that you know the dataset range and how each element in the dataset is transformed to a corresponding unsigned value. Because the hash operation works on unsigned values, consider a different sorting strategy if unsigned hash values cannot be produced.
+> Implementing a good hash function requires that you know the dataset range and how each element in the dataset is transformed to a corresponding unsigned value. Because the hash operation works on unsigned values, consider a different sorting strategy if unsigned hash values cannot be produced.
 
 The following example compares the performance of `sort`, `parallel_sort`, `parallel_buffered_sort`, and `parallel_radixsort` against the same large set of random data.
 

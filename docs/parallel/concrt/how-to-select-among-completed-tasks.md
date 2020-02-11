@@ -41,7 +41,7 @@ This example uses the [concurrency::make_choice](reference/concurrency-namespace
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `find-employee.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc find-employee.cpp**
+> **cl.exe /EHsc find-employee.cpp**
 
 ## See also
 

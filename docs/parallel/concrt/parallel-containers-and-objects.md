@@ -12,7 +12,7 @@ A *concurrent container* provides concurrency-safe access to the most important 
 
 A *concurrent object* is shared concurrently among components. A process that computes the state of a concurrent object in parallel produces the same result as another process that computes the same state serially. The [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class is one example of a concurrent object type. The `combinable` class lets you perform computations in parallel, and then combine those computations into a final result. Use concurrent objects when you would otherwise use a synchronization mechanism, for example, a mutex, to synchronize access to a shared variable or resource.
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This topic describes the following parallel containers and objects in detail.
 
@@ -54,11 +54,11 @@ Concurrent objects:
 
    - [Examples](#combinable-examples)
 
-##  <a name="vector"></a> concurrent_vector Class
+## <a name="vector"></a> concurrent_vector Class
 
 The [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class is a sequence container class that, just like the [std::vector](../../standard-library/vector-class.md) class, lets you randomly access its elements. The `concurrent_vector` class enables concurrency-safe append and element access operations. Append operations do not invalidate existing pointers or iterators. Iterator access and traversal operations are also concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order.
 
-###  <a name="vector-differences"></a> Differences Between concurrent_vector and vector
+### <a name="vector-differences"></a> Differences Between concurrent_vector and vector
 
 The `concurrent_vector` class closely resembles the `vector` class. The complexity of append, element access, and iterator access operations on a `concurrent_vector` object are the same as for a `vector` object. The following points illustrate where `concurrent_vector` differs from `vector`:
 
@@ -78,7 +78,7 @@ The `concurrent_vector` class closely resembles the `vector` class. The complexi
 
 - The runtime does not define a specialized version of `concurrent_vector` for type `bool`.
 
-###  <a name="vector-safety"></a> Concurrency-Safe Operations
+### <a name="vector-safety"></a> Concurrency-Safe Operations
 
 All methods that append to or increase the size of a `concurrent_vector` object, or access an element in a `concurrent_vector` object, are concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. The exception to this rule is the `resize` method.
 
@@ -108,7 +108,7 @@ When you convert existing code that uses `vector` to use `concurrent_vector`, co
 
 Although the `end` method is concurrency-safe, a concurrent call to the [push_back](reference/concurrent-vector-class.md#push_back) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it. When the element type is non-trivial, it's possible for a race condition to exist between `push_back` and `end` calls. The `end` method may return an element that's allocated, but not fully initialized.
 
-###  <a name="vector-exceptions"></a> Exception Safety
+### <a name="vector-exceptions"></a> Exception Safety
 
 If a growth or assignment operation throws an exception, the state of the `concurrent_vector` object becomes invalid. The behavior of a `concurrent_vector` object that is in an invalid state is undefined unless stated otherwise. However, the destructor always frees the memory that the object allocates, even if the object is in an invalid state.
 
@@ -120,11 +120,11 @@ The data type of the vector elements, `T`, must meet the following requirements.
 
 [[Top](#top)]
 
-##  <a name="queue"></a> concurrent_queue Class
+## <a name="queue"></a> concurrent_queue Class
 
 The [concurrency::concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) class, just like the [std::queue](../../standard-library/queue-class.md) class, lets you access its front and back elements. The `concurrent_queue` class enables concurrency-safe enqueue and dequeue operations. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. The `concurrent_queue` class also provides iterator support that is not concurrency-safe.
 
-###  <a name="queue-differences"></a> Differences Between concurrent_queue and queue
+### <a name="queue-differences"></a> Differences Between concurrent_queue and queue
 
 The `concurrent_queue` class closely resembles the `queue` class. The following points illustrate where `concurrent_queue` differs from `queue`:
 
@@ -138,7 +138,7 @@ The `concurrent_queue` class closely resembles the `queue` class. The following 
 
 - The `concurrent_queue` class provides the [unsafe_size](reference/concurrent-queue-class.md#unsafe_size) method instead of the `size` method. The `unsafe_size` method is not concurrency-safe.
 
-###  <a name="queue-safety"></a> Concurrency-Safe Operations
+### <a name="queue-safety"></a> Concurrency-Safe Operations
 
 All methods that enqueue to or dequeue from a `concurrent_queue` object are concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order.
 
@@ -158,7 +158,7 @@ The following table shows the common methods and operators that are not concurre
 |[clear](reference/concurrent-queue-class.md#clear)|[unsafe_end](reference/concurrent-queue-class.md#unsafe_end)|
 |[unsafe_begin](reference/concurrent-queue-class.md#unsafe_begin)|[unsafe_size](reference/concurrent-queue-class.md#unsafe_size)|
 
-###  <a name="queue-iterators"></a> Iterator Support
+### <a name="queue-iterators"></a> Iterator Support
 
 The `concurrent_queue` provides iterators that are not concurrency-safe. We recommend that you use these iterators for debugging only.
 
@@ -172,7 +172,7 @@ A `concurrent_queue` iterator traverses elements in the forward direction only. 
 
 [[Top](#top)]
 
-##  <a name="unordered_map"></a> concurrent_unordered_map Class
+## <a name="unordered_map"></a> concurrent_unordered_map Class
 
 The [concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) class is an associative container class that, just like the [std::unordered_map](../../standard-library/unordered-map-class.md) class, controls a varying-length sequence of elements of type [std::pair\<const Key, Ty>](../../standard-library/pair-structure.md). Think of an unordered map as a dictionary that you can add a key and value pair to or look up a value by key. This class is useful when you have multiple threads or tasks that have to concurrently access a shared container, insert into it, or update it.
 
@@ -182,7 +182,7 @@ The following example shows the basic structure for using `concurrent_unordered_
 
 For an example that uses `concurrent_unordered_map` to perform a map and reduce operation in parallel, see [How to: Perform Map and Reduce Operations in Parallel](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md).
 
-###  <a name="map-differences"></a> Differences Between concurrent_unordered_map and unordered_map
+### <a name="map-differences"></a> Differences Between concurrent_unordered_map and unordered_map
 
 The `concurrent_unordered_map` class closely resembles the `unordered_map` class. The following points illustrate where `concurrent_unordered_map` differs from `unordered_map`:
 
@@ -196,7 +196,7 @@ The `concurrent_unordered_map` class closely resembles the `unordered_map` class
 
 To help avoid deadlock, no method of `concurrent_unordered_map` holds a lock when it calls the memory allocator, hash functions, or other user-defined code. Also, you must ensure that the hash function always evaluates equal keys to the same value. The best hash functions distribute keys uniformly across the hash code space.
 
-###  <a name="map-safety"></a> Concurrency-Safe Operations
+### <a name="map-safety"></a> Concurrency-Safe Operations
 
 The `concurrent_unordered_map` class enables concurrency-safe insert and element-access operations. Insert operations do not invalidate existing pointers or iterators. Iterator access and traversal operations are also concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. The following table shows the commonly used `concurrent_unordered_map` methods and operators that are concurrency-safe.
 
@@ -220,7 +220,7 @@ In addition to these methods, any method that begins with `unsafe_` is also not 
 
 [[Top](#top)]
 
-##  <a name="unordered_multimap"></a> concurrent_unordered_multimap Class
+## <a name="unordered_multimap"></a> concurrent_unordered_multimap Class
 
 The [concurrency::concurrent_unordered_multimap](../../parallel/concrt/reference/concurrent-unordered-multimap-class.md) class closely resembles the `concurrent_unordered_map` class except that it allows for multiple values to map to the same key. It also differs from `concurrent_unordered_map` in the following ways:
 
@@ -234,7 +234,7 @@ The following example shows the basic structure for using `concurrent_unordered_
 
 [[Top](#top)]
 
-##  <a name="unordered_set"></a> concurrent_unordered_set Class
+## <a name="unordered_set"></a> concurrent_unordered_set Class
 
 The [concurrency::concurrent_unordered_set](../../parallel/concrt/reference/concurrent-unordered-set-class.md) class closely resembles the `concurrent_unordered_map` class except that it manages values instead of key and value pairs. The `concurrent_unordered_set` class does not provide `operator[]` nor the `at` method.
 
@@ -244,7 +244,7 @@ The following example shows the basic structure for using `concurrent_unordered_
 
 [[Top](#top)]
 
-##  <a name="unordered_multiset"></a> concurrent_unordered_multiset Class
+## <a name="unordered_multiset"></a> concurrent_unordered_multiset Class
 
 The [concurrency::concurrent_unordered_multiset](../../parallel/concrt/reference/concurrent-unordered-multiset-class.md) class closely resembles the `concurrent_unordered_set` class except that it allows for duplicate values. It also differs from `concurrent_unordered_set` in the following ways:
 
@@ -258,13 +258,13 @@ The following example shows the basic structure for using `concurrent_unordered_
 
 [[Top](#top)]
 
-##  <a name="combinable"></a> combinable Class
+## <a name="combinable"></a> combinable Class
 
 The [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class provides reusable, thread-local storage that lets you perform fine-grained computations and then merge those computations into a final result. You can think of a `combinable` object as a reduction variable.
 
 The `combinable` class is useful when you have a resource that is shared among several threads or tasks. The `combinable` class helps you eliminate shared state by providing access to shared resources in a lock-free manner. Therefore, this class provides an alternative to using a synchronization mechanism, for example, a mutex, to synchronize access to shared data from multiple threads.
 
-###  <a name="combinable-features"></a> Methods and Features
+### <a name="combinable-features"></a> Methods and Features
 
 The following table shows some of the important methods of the `combinable` class. For more information about all the `combinable` class methods, see [combinable Class](../../parallel/concrt/reference/combinable-class.md).
 
@@ -278,7 +278,7 @@ The `combinable` class is a template class that is parameterized on the final me
 
 You can store additional data in a `combinable` object after you call the [combine](reference/combinable-class.md#combine) or [combine_each](reference/combinable-class.md#combine_each) methods. You can also call the `combine` and `combine_each` methods multiple times. If no local value in a `combinable` object changes, the `combine` and `combine_each` methods produce the same result every time that they are called.
 
-###  <a name="combinable-examples"></a> Examples
+### <a name="combinable-examples"></a> Examples
 
 For examples about how to use the `combinable` class, see the following topics:
 

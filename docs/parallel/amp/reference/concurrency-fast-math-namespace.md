@@ -10,7 +10,7 @@ Functions in the `fast_math` namespace have lower accuracy, support only single-
 
 ## Syntax
 
-```
+```cpp
 namespace fast_math;
 ```
 

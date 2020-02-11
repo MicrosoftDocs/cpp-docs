@@ -11,12 +11,12 @@ The progress reporter class allows reporting progress notifications of a specifi
 
 ## Syntax
 
-```
+```cpp
 template<typename _ProgressType>
 class progress_reporter;
 ```
 
-#### Parameters
+### Parameters
 
 *_ProgressType*<br/>
 The payload type of each progress notification reported through the progress reporter.
@@ -49,17 +49,17 @@ This type is only available to Windows Runtime apps.
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> progress_reporter
+## <a name="ctor"></a> progress_reporter
 
-```
+```cpp
 progress_reporter();
 ```
 
-##  <a name="report"></a> report
+## <a name="report"></a> report
 
 Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.
 
-```
+```cpp
 void report(const _ProgressType& val) const;
 ```
 
