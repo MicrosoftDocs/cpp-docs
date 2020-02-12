@@ -1480,7 +1480,7 @@ The member function throws an [out_of_range](../standard-library/out-of-range-cl
 
 Converts a bitset object to a string representation.
 
-```
+```cpp
 template <class charT = char, class traits = char_traits<charT>, class Allocator = allocator<charT> >
    basic_string<charT, traits, Allocator> to_string(charT zero = charT('0'), charT one = charT('1')) const;
 ```
@@ -1509,7 +1509,7 @@ int main( )
         << b1 << " )" << endl;
 
    string s1;
-   s1 =  b1.template to_string<char, 
+   s1 =  b1.template to_string<char,
    char_traits<char>, allocator<char> >( );
    cout << "The string returned from the bitset b1"
         << "\n  by the member function to_string( ) is: "
@@ -1528,7 +1528,7 @@ The string returned from the bitset b1
 
 Returns an **unsigned long long** value that contains the same bits set as the contents of the bitset object.
 
-```
+```cpp
 unsigned long long to_ullong() const;
 ```
 
@@ -1548,7 +1548,7 @@ Returns the sum of the bit values that are in the bit sequence as an **unsigned 
 
 Converts a bitset object to the integer that would generate the sequence of bits contained if used to initialize the bitset.
 
-```
+```cpp
 unsigned long to_ulong( ) const;
 ```
 
