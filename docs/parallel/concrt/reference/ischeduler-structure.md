@@ -11,7 +11,7 @@ An interface to an abstraction of a work scheduler. The Concurrency Runtime's Re
 
 ## Syntax
 
-```
+```cpp
 struct IScheduler;
 ```
 
@@ -43,11 +43,11 @@ If you are implementing a custom scheduler that communicates with the Resource M
 
 **Namespace:** concurrency
 
-##  <a name="addvirtualprocessors"></a>  IScheduler::AddVirtualProcessors Method
+## <a name="addvirtualprocessors"></a>  IScheduler::AddVirtualProcessors Method
 
 Provides a scheduler with a set of virtual processor roots for its use. Each `IVirtualProcessorRoot` interface represents the right to execute a single thread that can perform work on behalf of the scheduler.
 
-```
+```cpp
 virtual void AddVirtualProcessors(
     _In_reads_(count) IVirtualProcessorRoot** ppVirtualProcessorRoots,
     unsigned int count) = 0;
@@ -65,11 +65,11 @@ The number of `IVirtualProcessorRoot` interfaces in the array.
 
 The Resource Manager invokes the `AddVirtualProcessor` method to grant an initial set of virtual processor roots to a scheduler. It could also invoke the method to add virtual processor roots to the scheduler when it rebalances resources among schedulers.
 
-##  <a name="getid"></a>  IScheduler::GetId Method
+## <a name="getid"></a>  IScheduler::GetId Method
 
 Returns a unique identifier for the scheduler.
 
-```
+```cpp
 virtual unsigned int GetId() const = 0;
 ```
 
@@ -83,11 +83,11 @@ You should use the [GetSchedulerId](concurrency-namespace-functions.md) function
 
 An identifier obtained from a different source could result in undefined behavior.
 
-##  <a name="getpolicy"></a>  IScheduler::GetPolicy Method
+## <a name="getpolicy"></a>  IScheduler::GetPolicy Method
 
 Returns a copy of the scheduler's policy. For more information on scheduler policies, see [SchedulerPolicy](schedulerpolicy-class.md).
 
-```
+```cpp
 virtual SchedulerPolicy GetPolicy() const = 0;
 ```
 
@@ -95,11 +95,11 @@ virtual SchedulerPolicy GetPolicy() const = 0;
 
 A copy of the scheduler's policy.
 
-##  <a name="notifyresourcesexternallybusy"></a>  IScheduler::NotifyResourcesExternallyBusy Method
+## <a name="notifyresourcesexternallybusy"></a>  IScheduler::NotifyResourcesExternallyBusy Method
 
 Notifies this scheduler that the hardware threads represented by the set of virtual processor roots in the array `ppVirtualProcessorRoots` are now being used by other schedulers.
 
-```
+```cpp
 virtual void NotifyResourcesExternallyBusy(
     _In_reads_(count) IVirtualProcessorRoot** ppVirtualProcessorRoots,
     unsigned int count) = 0;
@@ -123,11 +123,11 @@ Notifications via this method are only sent to schedulers that have a policy whe
 
 A scheduler that qualifies for notifications gets a set of initial notifications when it is created, informing it whether the resources it was just assigned are externally busy or idle.
 
-##  <a name="notifyresourcesexternallyidle"></a>  IScheduler::NotifyResourcesExternallyIdle Method
+## <a name="notifyresourcesexternallyidle"></a>  IScheduler::NotifyResourcesExternallyIdle Method
 
 Notifies this scheduler that the hardware threads represented by the set of virtual processor roots in the array `ppVirtualProcessorRoots` are not being used by other schedulers.
 
-```
+```cpp
 virtual void NotifyResourcesExternallyIdle(
     _In_reads_(count) IVirtualProcessorRoot** ppVirtualProcessorRoots,
     unsigned int count) = 0;
@@ -151,11 +151,11 @@ Notifications via this method are only sent to schedulers that have a policy whe
 
 A scheduler that qualifies for notifications gets a set of initial notifications when it is created, informing it whether the resources it was just assigned are externally busy or idle.
 
-##  <a name="removevirtualprocessors"></a>  IScheduler::RemoveVirtualProcessors Method
+## <a name="removevirtualprocessors"></a>  IScheduler::RemoveVirtualProcessors Method
 
 Initiates the removal of virtual processor roots that were previously allocated to this scheduler.
 
-```
+```cpp
 virtual void RemoveVirtualProcessors(
     _In_reads_(count) IVirtualProcessorRoot** ppVirtualProcessorRoots,
     unsigned int count) = 0;
@@ -175,11 +175,11 @@ The Resource Manager invokes the `RemoveVirtualProcessors` method to take back a
 
 The parameter `ppVirtualProcessorRoots` points to an array of interfaces. Among the set of virtual processor roots to be removed, the roots have never been activated can be returned immediately using the `Remove` method. The roots that have been activated and are either executing work, or have been deactivated and are waiting for work to arrive, should be returned asynchronously. The scheduler must make every attempt to remove the virtual processor root as quickly as possible. Delaying removal of the virtual processor roots may result in unintentional oversubscription within the scheduler.
 
-##  <a name="statistics"></a>  IScheduler::Statistics Method
+## <a name="statistics"></a>  IScheduler::Statistics Method
 
 Provides information related to task arrival and completion rates, and change in queue length for a scheduler.
 
-```
+```cpp
 virtual void Statistics(
     _Out_ unsigned int* pTaskCompletionRate,
     _Out_ unsigned int* pTaskArrivalRate,

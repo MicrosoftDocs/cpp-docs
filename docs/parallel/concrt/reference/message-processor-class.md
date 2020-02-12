@@ -11,12 +11,12 @@ The `message_processor` class is the abstract base class for processing of `mess
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class message_processor;
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The data type of the payload within messages handled by this `message_processor` object.
@@ -53,11 +53,11 @@ The data type of the payload within messages handled by this `message_processor`
 
 **Namespace:** concurrency
 
-##  <a name="async_send"></a> async_send
+## <a name="async_send"></a> async_send
 
 When overridden in a derived class, places messages into the block asynchronously.
 
-```
+```cpp
 virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
 ```
 
@@ -70,11 +70,11 @@ A `message` object to send asynchronously.
 
 Processor implementations should override this method.
 
-##  <a name="process_incoming_message"></a> process_incoming_message
+## <a name="process_incoming_message"></a> process_incoming_message
 
 When overridden in a derived class, performs the forward processing of messages into the block. Called once every time a new message is added and the queue is found to be empty.
 
-```
+```cpp
 virtual void process_incoming_message() = 0;
 ```
 
@@ -82,11 +82,11 @@ virtual void process_incoming_message() = 0;
 
 Message block implementations should override this method.
 
-##  <a name="sync_send"></a> sync_send
+## <a name="sync_send"></a> sync_send
 
 When overridden in a derived class, places messages into the block synchronously.
 
-```
+```cpp
 virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
 ```
 
@@ -99,11 +99,11 @@ A `message` object to send synchronously.
 
 Processor implementations should override this method.
 
-##  <a name="wait"></a> wait
+## <a name="wait"></a> wait
 
 When overridden in a derived class, waits for all asynchronous operations to complete.
 
-```
+```cpp
 virtual void wait() = 0;
 ```
 

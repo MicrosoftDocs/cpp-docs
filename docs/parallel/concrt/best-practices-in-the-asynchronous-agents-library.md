@@ -10,7 +10,7 @@ This document describes how to make effective use of the Asynchronous Agents Lib
 
 For more information about the Agents Library, see [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md).
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This document contains the following sections:
 
@@ -24,7 +24,7 @@ This document contains the following sections:
 
 - [Use shared_ptr in a Data Network When Ownership Is Undefined](#ownership)
 
-##  <a name="isolation"></a> Use Agents to Isolate State
+## <a name="isolation"></a> Use Agents to Isolate State
 
 The Agents Library provides alternatives to shared state by letting you connect isolated components through an asynchronous message-passing mechanism. Asynchronous agents are most effective when they isolate their internal state from other components. By isolating state, multiple components do not typically act on shared data. State isolation can enable your application to scale because it reduces contention on shared memory. State isolation also reduces the chance of deadlock and race conditions because components do not have to synchronize access to shared data.
 
@@ -36,7 +36,7 @@ For complete examples about how to define and use agents, see [Walkthrough: Crea
 
 [[Top](#top)]
 
-##  <a name="throttling"></a> Use a Throttling Mechanism to Limit the Number of Messages in a Data Pipeline
+## <a name="throttling"></a> Use a Throttling Mechanism to Limit the Number of Messages in a Data Pipeline
 
 Many message-buffer types, such as [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md), can hold an unlimited number of messages. When a message producer sends messages to a data pipeline faster than the consumer can process these messages, the application can enter a low-memory or out-of-memory state. You can use a throttling mechanism, for example, a semaphore, to limit the number of messages that are concurrently active in a data pipeline.
 
@@ -52,7 +52,7 @@ For more information about how to create the semaphore class that is used in thi
 
 [[Top](#top)]
 
-##  <a name="fine-grained"></a> Do Not Perform Fine-Grained Work in a Data Pipeline
+## <a name="fine-grained"></a> Do Not Perform Fine-Grained Work in a Data Pipeline
 
 The Agents Library is most useful when the work that is performed by a data pipeline is fairly coarse-grained. For example, one application component might read data from a file or a network connection and occasionally send that data to another component. The protocol that the Agents Library uses to propagate messages causes the message-passing mechanism to have more overhead than the task parallel constructs that are provided by the [Parallel Patterns Library](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL). Therefore, make sure that the work that is performed by a data pipeline is long enough to offset this overhead.
 
@@ -60,7 +60,7 @@ Although a data pipeline is most effective when its tasks are coarse-grained, ea
 
 [[Top](#top)]
 
-##  <a name="large-payloads"></a> Do Not Pass Large Message Payloads by Value
+## <a name="large-payloads"></a> Do Not Pass Large Message Payloads by Value
 
 In some cases, the runtime creates a copy of every message that it passes from one message buffer to another message buffer. For example, the [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) class offers a copy of every message that it receives to each of its targets. The runtime also creates a copy of the message data when you use message-passing functions such as [concurrency::send](reference/concurrency-namespace-functions.md#send) and [concurrency::receive](reference/concurrency-namespace-functions.md#receive) to write messages to and read messages from a message buffer. Although this mechanism helps eliminate the risk of concurrently writing to shared data, it could lead to poor memory performance when the message payload is relatively large.
 
@@ -81,7 +81,7 @@ The version that uses pointers performs better because it eliminates the require
 
 [[Top](#top)]
 
-##  <a name="ownership"></a> Use shared_ptr in a Data Network When Ownership Is Undefined
+## <a name="ownership"></a> Use shared_ptr in a Data Network When Ownership Is Undefined
 
 When you send messages by pointer through a message-passing pipeline or network, you typically allocate the memory for each message at the front of the network and free that memory at the end of the network. Although this mechanism frequently works well, there are cases in which it is difficult or not possible to use it. For example, consider the case in which the data network contains multiple end nodes. In this case, there is no clear location to free the memory for the messages.
 

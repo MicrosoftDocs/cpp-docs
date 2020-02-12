@@ -8,12 +8,12 @@ ms.assetid: 8d81cf7a-818e-4b27-8d49-440ec3088609
 
 ## Syntax
 
-```
+```cpp
 template<class _E>
 exception_ptr make_exception_ptr(_E _Except);
 ```
 
-#### Parameters
+### Parameters
 
 *_E*<br/>
 Exception type.

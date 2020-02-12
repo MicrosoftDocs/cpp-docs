@@ -11,14 +11,14 @@ The `propagator_block` class is an abstract base class for message blocks that a
 
 ## Syntax
 
-```
+```cpp
 template<class _TargetLinkRegistry, class _SourceLinkRegistry, class _MessageProcessorType = ordered_message_processor<typename _TargetLinkRegistry::type::type>>
 class propagator_block : public source_block<_TargetLinkRegistry,
     _MessageProcessorType>,
 public ITarget<typename _SourceLinkRegistry::type::source_type>;
 ```
 
-#### Parameters
+### Parameters
 
 *_TargetLinkRegistry*<br/>
 The link registry to be used for holding the target links.
@@ -86,11 +86,11 @@ To avoid multiple inheritance, the `propagator_block` class inherits from the `s
 
 **Namespace:** concurrency
 
-##  <a name="decline_incoming_messages"></a> decline_incoming_messages
+## <a name="decline_incoming_messages"></a> decline_incoming_messages
 
 Indicates to the block that new messages should be declined.
 
-```
+```cpp
 void decline_incoming_messages();
 ```
 
@@ -98,11 +98,11 @@ void decline_incoming_messages();
 
 This method is called by the destructor to ensure that new messages are declined while destruction is in progress.
 
-##  <a name="initialize_source_and_target"></a> initialize_source_and_target
+## <a name="initialize_source_and_target"></a> initialize_source_and_target
 
 Initializes the base object. Specifically, the `message_processor` object needs to be initialized.
 
-```
+```cpp
 void initialize_source_and_target(
     _Inout_opt_ Scheduler* _PScheduler = NULL,
     _Inout_opt_ ScheduleGroup* _PScheduleGroup = NULL);
@@ -116,11 +116,11 @@ The scheduler to be used for scheduling tasks.
 *_PScheduleGroup*<br/>
 The schedule group to be used for scheduling tasks.
 
-##  <a name="link_source"></a> link_source
+## <a name="link_source"></a> link_source
 
 Links a specified source block to this `propagator_block` object.
 
-```
+```cpp
 virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 ```
 
@@ -129,11 +129,11 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 *_PSource*<br/>
 A pointer to the `ISource` block that is to be linked.
 
-##  <a name="process_input_messages"></a> process_input_messages
+## <a name="process_input_messages"></a> process_input_messages
 
 Process input messages. This is only useful for propagator blocks, which derive from source_block
 
-```
+```cpp
 virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 ```
 
@@ -142,11 +142,11 @@ virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 *_PMessage*<br/>
 A pointer to the message that is to be processed.
 
-##  <a name="propagate"></a> propagate
+## <a name="propagate"></a> propagate
 
 Asynchronously passes a message from a source block to this target block.
 
-```
+```cpp
 virtual message_status propagate(
     _Inout_opt_ message<_Source_type>* _PMessage,
     _Inout_opt_ ISource<_Source_type>* _PSource);
@@ -170,11 +170,11 @@ The `propagate` method is invoked on a target block by a linked source block. It
 
 The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.
 
-##  <a name="propagate_message"></a> propagate_message
+## <a name="propagate_message"></a> propagate_message
 
 When overridden in a derived class, this method asynchronously passes a message from an `ISource` block to this `propagator_block` object. It is invoked by the `propagate` method, when called by a source block.
 
-```
+```cpp
 virtual message_status propagate_message(
     _Inout_ message<_Source_type>* _PMessage,
     _Inout_ ISource<_Source_type>* _PSource) = 0;
@@ -192,27 +192,27 @@ A pointer to the source block offering the message.
 
 A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.
 
-##  <a name="ctor"></a> propagator_block
+## <a name="ctor"></a> propagator_block
 
 Constructs a `propagator_block` object.
 
-```
+```cpp
 propagator_block();
 ```
 
-##  <a name="dtor"></a> ~propagator_block
+## <a name="dtor"></a> ~propagator_block
 
 Destroys a `propagator_block` object.
 
-```
+```cpp
 virtual ~propagator_block();
 ```
 
-##  <a name="register_filter"></a> register_filter
+## <a name="register_filter"></a> register_filter
 
 Registers a filter method that will be invoked on every received message.
 
-```
+```cpp
 void register_filter(filter_method const& _Filter);
 ```
 
@@ -221,19 +221,19 @@ void register_filter(filter_method const& _Filter);
 *_Filter*<br/>
 The filter method.
 
-##  <a name="remove_network_links"></a> remove_network_links
+## <a name="remove_network_links"></a> remove_network_links
 
 Removes all the source and target network links from this `propagator_block` object.
 
-```
+```cpp
 void remove_network_links();
 ```
 
-##  <a name="send"></a> send
+## <a name="send"></a> send
 
 Synchronously initiates a message to this block. Called by an `ISource` block. When this function completes, the message will already have propagated into the block.
 
-```
+```cpp
 virtual message_status send(
     _Inout_ message<_Source_type>* _PMessage,
     _Inout_ ISource<_Source_type>* _PSource);
@@ -255,11 +255,11 @@ A [message_status](concurrency-namespace-enums.md) indication of what the target
 
 This method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.
 
-##  <a name="send_message"></a> send_message
+## <a name="send_message"></a> send_message
 
 When overridden in a derived class, this method synchronously passes a message from an `ISource` block to this `propagator_block` object. It is invoked by the `send` method, when called by a source block.
 
-```
+```cpp
 virtual message_status send_message(
     _Inout_ message<_Source_type> *,
     _Inout_ ISource<_Source_type> *);
@@ -273,11 +273,11 @@ A [message_status](concurrency-namespace-enums.md) indication of what the target
 
 By default, this block returns `declined` unless overridden by a derived class.
 
-##  <a name="unlink_source"></a> unlink_source
+## <a name="unlink_source"></a> unlink_source
 
 Unlinks a specified source block from this `propagator_block` object.
 
-```
+```cpp
 virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 ```
 
@@ -286,11 +286,11 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 *_PSource*<br/>
 A pointer to the `ISource` block that is to be unlinked.
 
-##  <a name="unlink_sources"></a> unlink_sources
+## <a name="unlink_sources"></a> unlink_sources
 
 Unlinks all source blocks from this `propagator_block` object.
 
-```
+```cpp
 virtual void unlink_sources();
 ```
 

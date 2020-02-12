@@ -11,7 +11,7 @@ The `concurrent_priority_queue` class is a container that allows multiple thread
 
 ## Syntax
 
-```
+```cpp
 template <typename T,
     typename _Compare= std::less<T>,
     typename _Ax = std::allocator<T>
@@ -19,7 +19,7 @@ template <typename T,
     typename _Ax = std::allocator<T>> class concurrent_priority_queue;
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The data type of the elements to be stored in the priority queue.
@@ -80,11 +80,11 @@ For detailed information on the `concurrent_priority_queue` class, see [Parallel
 
 **Namespace:** concurrency
 
-##  <a name="clear"></a> clear
+## <a name="clear"></a> clear
 
 Erases all elements in the concurrent priority. This method is not concurrency-safe.
 
-```
+```cpp
 void clear();
 ```
 
@@ -92,11 +92,11 @@ void clear();
 
 `clear` is not concurrency-safe. You must ensure that no other threads are invoking methods on the concurrent priority queue when you call this method. `clear` does not free memory.
 
-##  <a name="ctor"></a> concurrent_priority_queue
+## <a name="ctor"></a> concurrent_priority_queue
 
 Constructs a concurrent priority queue.
 
-```
+```cpp
 explicit concurrent_priority_queue(
     const allocator_type& _Al = allocator_type());
 
@@ -158,11 +158,11 @@ The fourth and fifth constructors specify a copy of the priority queue `_Src`.
 
 The sixth and seventh constructors specify a move of the priority queue `_Src`.
 
-##  <a name="empty"></a> empty
+## <a name="empty"></a> empty
 
 Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.
 
-```
+```cpp
 bool empty() const;
 ```
 
@@ -170,11 +170,11 @@ bool empty() const;
 
 **true** if the priority queue was empty at the moment the function was called, **false** otherwise.
 
-##  <a name="get_allocator"></a> get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.
 
-```
+```cpp
 allocator_type get_allocator() const;
 ```
 
@@ -182,11 +182,11 @@ allocator_type get_allocator() const;
 
 A copy of the allocator used to construct the `concurrent_priority_queue` object.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.
 
-```
+```cpp
 concurrent_priority_queue& operator= (const concurrent_priority_queue& _Src);
 
 concurrent_priority_queue& operator= (concurrent_priority_queue&& _Src);
@@ -201,11 +201,11 @@ The source `concurrent_priority_queue` object.
 
 A reference to this `concurrent_priority_queue` object.
 
-##  <a name="push"></a> push
+## <a name="push"></a> push
 
 Adds an element to the concurrent priority queue. This method is concurrency-safe.
 
-```
+```cpp
 void push(const value_type& _Elem);
 
 void push(value_type&& _Elem);
@@ -216,11 +216,11 @@ void push(value_type&& _Elem);
 *_Elem*<br/>
 The element to be added to the concurrent priority queue.
 
-##  <a name="size"></a> size
+## <a name="size"></a> size
 
 Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.
 
-```
+```cpp
 size_type size() const;
 ```
 
@@ -232,11 +232,11 @@ The number of elements in this `concurrent_priority_queue` object.
 
 The returned size is guaranteed to include all elements added by calls to the function `push`. However, it may not reflect results of pending concurrent operations.
 
-##  <a name="swap"></a> swap
+## <a name="swap"></a> swap
 
 Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.
 
-```
+```cpp
 void swap(concurrent_priority_queue& _Queue);
 ```
 
@@ -245,11 +245,11 @@ void swap(concurrent_priority_queue& _Queue);
 *_Queue*<br/>
 The `concurrent_priority_queue` object to swap contents with.
 
-##  <a name="try_pop"></a> try_pop
+## <a name="try_pop"></a> try_pop
 
 Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.
 
-```
+```cpp
 bool try_pop(reference _Elem);
 ```
 

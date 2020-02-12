@@ -11,12 +11,12 @@ The `network_link_registry` abstract base class manages the links between source
 
 ## Syntax
 
-```
+```cpp
 template<class _Block>
 class network_link_registry;
 ```
 
-#### Parameters
+### Parameters
 
 *_Block*<br/>
 The block data type being stored in the `network_link_registry`.
@@ -56,11 +56,11 @@ The `network link registry` is not safe for concurrent access.
 
 **Namespace:** concurrency
 
-##  <a name="add"></a> add
+## <a name="add"></a> add
 
 When overridden in a derived class, adds a link to the `network_link_registry` object.
 
-```
+```cpp
 virtual void add(_EType _Link) = 0;
 ```
 
@@ -69,11 +69,11 @@ virtual void add(_EType _Link) = 0;
 *_Link*<br/>
 A pointer to a block to be added.
 
-##  <a name="begin"></a> begin
+## <a name="begin"></a> begin
 
 When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.
 
-```
+```cpp
 virtual iterator begin() = 0;
 ```
 
@@ -85,11 +85,11 @@ An iterator addressing the first element in the `network_link_registry` object.
 
 The end state of the iterator is indicated by a `NULL` link.
 
-##  <a name="contains"></a> contains
+## <a name="contains"></a> contains
 
 When overridden in a derived class, searches the `network_link_registry` object for a specified block.
 
-```
+```cpp
 virtual bool contains(_EType _Link) = 0;
 ```
 
@@ -102,11 +102,11 @@ A pointer to a block that is being searched for in the `network_link_registry` o
 
 **true** if the block was found, **false** otherwise.
 
-##  <a name="count"></a> count
+## <a name="count"></a> count
 
 When overridden in a derived class, returns the number of items in the `network_link_registry` object.
 
-```
+```cpp
 virtual size_t count() = 0;
 ```
 
@@ -114,11 +114,11 @@ virtual size_t count() = 0;
 
 The number of items in the `network_link_registry` object.
 
-##  <a name="remove"></a> remove
+## <a name="remove"></a> remove
 
 When overridden in a derived class, removes a specified block from the `network_link_registry` object.
 
-```
+```cpp
 virtual bool remove(_EType _Link) = 0;
 ```
 

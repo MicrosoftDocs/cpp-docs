@@ -11,7 +11,7 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
 For reference documentation, see [Reference](../../parallel/concrt/reference/reference-concurrency-runtime.md).
 
 > [!TIP]
->  The Concurrency Runtime relies heavily on C++11 features and adopts the more modern C++ style. To learn more, read  [Welcome Back to C++](../../cpp/welcome-back-to-cpp-modern-cpp.md).
+> The Concurrency Runtime relies heavily on C++11 features and adopts the more modern C++ style. To learn more, read  [Welcome Back to C++](../../cpp/welcome-back-to-cpp-modern-cpp.md).
 
 ## Choosing Concurrency Runtime Features
 

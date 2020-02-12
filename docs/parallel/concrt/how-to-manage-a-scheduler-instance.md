@@ -10,7 +10,7 @@ Scheduler instances let you associate specific scheduling policies with various 
 
 The examples create schedulers that use the default scheduler policies. For an example that creates a scheduler that uses a custom policy, see [How to: Specify Specific Scheduler Policies](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md).
 
-### To manage a scheduler instance in your application
+## To manage a scheduler instance in your application
 
 1. Create a [concurrency::SchedulerPolicy](../../parallel/concrt/reference/schedulerpolicy-class.md) object that contains the policy values for the scheduler to use.
 
@@ -65,7 +65,7 @@ Current scheduler id: 0
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `scheduler-instance.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc scheduler-instance.cpp**
+> **cl.exe /EHsc scheduler-instance.cpp**
 
 ## See also
 

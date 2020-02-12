@@ -98,7 +98,7 @@ Both policies produce the same sequence of events. However, the policy that uses
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `scheduling-protocol.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc scheduling-protocol.cpp**
+> **cl.exe /EHsc scheduling-protocol.cpp**
 
 ## See also
 
