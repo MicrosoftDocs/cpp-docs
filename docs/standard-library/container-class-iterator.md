@@ -13,8 +13,7 @@ Describes an object that can serve as an iterator for the controlled sequence.
 
 ## Syntax
 
-```
-
+```cpp
 typedef T5 iterator;
 ```
 

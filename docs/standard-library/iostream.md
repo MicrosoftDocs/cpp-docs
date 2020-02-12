@@ -264,7 +264,7 @@ See [cerr](#cerr) for an example of using `wcout`.
 
 `CString` instances in a `wcout` statement must be cast to `const wchar_t*`, as shown in the following example.
 
-```
+```cpp
 CString cs("meow");
 
 wcout <<(const wchar_t*) cs <<endl;
