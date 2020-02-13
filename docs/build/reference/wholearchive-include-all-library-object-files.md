@@ -1,6 +1,6 @@
 ---
 title: "/WHOLEARCHIVE (Include All Library Object Files)"
-ms.date: "11/04/2016"
+ms.date: "02/12/2020"
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
 ---
 # /WHOLEARCHIVE (Include All Library Object Files)
@@ -9,7 +9,13 @@ Force the linker to include all object files in the static library in the linked
 
 ## Syntax
 
-> /WHOLEARCHIVE[:*library*]
+> **/WHOLEARCHIVE**\
+> **/WHOLEARCHIVE:**_library_
+
+### Arguments
+
+*library*\
+An optional pathname to a static library. The linker includes every object file from this library.
 
 ## Remarks
 
