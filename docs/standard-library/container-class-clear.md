@@ -13,8 +13,7 @@ Calls [erase](../standard-library/container-class-erase.md)([begin](../standard-
 
 ## Syntax
 
-```
-
+```cpp
 void clear();
 ```
 

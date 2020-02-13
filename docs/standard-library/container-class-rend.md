@@ -13,9 +13,8 @@ The member function returns a reverse iterator that points at the first element 
 
 ## Syntax
 
-```
-
-    const_reverse_iterator rend() const;
+```cpp
+const_reverse_iterator rend() const;
 
 reverse_iterator rend();
 ```

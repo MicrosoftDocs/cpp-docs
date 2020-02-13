@@ -13,8 +13,7 @@ Describes an object that can represent the length of any controlled sequence.
 
 ## Syntax
 
-```
-
+```cpp
 typedef T0 size_type;
 ```
 
