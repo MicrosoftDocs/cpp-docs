@@ -13,7 +13,7 @@ Defines the container class templates hash_map and hash_multimap and their suppo
 
 ## Syntax
 
-```
+```cpp
 #include <hash_map>
 ```
 

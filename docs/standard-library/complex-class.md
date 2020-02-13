@@ -61,8 +61,6 @@ Explicit specializations of class template complex exist for the three floating-
 |[operator/=](#op_div_eq)|Divides a target complex number by a divisor, which may be complex or be the same type as are the real and imaginary parts of the complex number.|
 |[operator=](#op_eq)|Assigns a number to a target complex number, where the number assigned may be complex or of the same type as are the real and imaginary parts of the complex number to which it is being assigned.|
 
-
-
 ## <a name="complex"></a> complex
 
 Constructs a complex number with specified real and imaginary parts or as a copy of some other complex number.
@@ -101,7 +99,7 @@ complex(const complex<Other>& right);
 
 is replaced with:
 
-```
+```cpp
 complex(const complex& right);
 ```
 
@@ -737,7 +735,7 @@ The imaginary part of c1 is c1.imag() = 3.
 
 A type that represents the data type used to represent the real and imaginary parts of a complex number.
 
-```
+```cpp
 typedef Type value_type;
 ```
 

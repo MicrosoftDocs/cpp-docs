@@ -13,9 +13,8 @@ Erases an element.
 
 ## Syntax
 
-```
-
-    iterator erase(
+```cpp
+iterator erase(
     iterator _Where);
 
 iterator erase(
