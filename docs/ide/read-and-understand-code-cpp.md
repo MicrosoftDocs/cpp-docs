@@ -13,9 +13,9 @@ Visual Studio colorizes syntax elements to differentiate between types of symbol
 
 ![Code colorization](../ide/media/code-outline-colorization.png "C++ colorization")
 
- Unused code (such as code under an #if 0) is more faded in color.
+Unused code (such as code under an #if 0) is more faded in color.
 
- ![Inactive code](../ide/media/inactive-code-cpp.png "C++ inactive code")
+![Inactive code](../ide/media/inactive-code-cpp.png "C++ inactive code")
 
 You can customize the colors by typing "Fonts" in **Quick Launch**, and then choosing **Fonts and Colors**. In the **Fonts and Colors** dialog scroll down to the C/C++ options and then choose a custom font and/or color.
 

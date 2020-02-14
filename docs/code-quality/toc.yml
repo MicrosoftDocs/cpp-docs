@@ -1,0 +1,798 @@
+- name: Code analysis documentation
+  href: index.yml
+- name: Analyze C/C++ code
+  items:
+  - name: Overview
+    displayName: "C++ code analysis"
+    href: code-analysis-for-c-cpp-overview.md
+  - name: Quickstart
+    href: quick-start-code-analysis-for-c-cpp.md
+  - name: Analyze C/C++ code for defects
+    href: walkthrough-analyzing-c-cpp-code-for-defects.md
+  - name: Sample project
+    href: demo-sample.md
+  - name: Use the C++ Core Guidelines checkers
+    href: using-the-cpp-core-guidelines-checkers.md
+  - name: Set code analysis properties
+    href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
+  - name: Rule sets for C++ code
+    href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+  - name: Use Clang-Tidy
+    href: clang-tidy.md
+  - name: Use SAL annotations to reduce code defects
+    items:
+    - name: Overview
+      displayName: SAL annotations
+      href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
+    - name: Understand SAL
+      href: understanding-sal.md
+    - name: Annotate function parameters and return values
+      href: annotating-function-parameters-and-return-values.md
+    - name: Annotate function behavior
+      href: annotating-function-behavior.md
+    - name: Annotate structs and classes
+      href: annotating-structs-and-classes.md
+    - name: Annotate locking behavior
+      href: annotating-locking-behavior.md
+    - name: Specify when and where an annotation applies
+      href: specifying-when-and-where-an-annotation-applies.md
+    - name: Intrinsic functions
+      href: intrinsic-functions.md
+    - name: Best practices and examples (SAL)
+      href: best-practices-and-examples-sal.md
+  - name: Specify additional code information by using _Analysis_assume
+    href: how-to-specify-additional-code-information-by-using-analysis-assume.md
+  - name: C++ Core Guidelines checker warnings
+    items:
+    - name: Overview
+      displayName: "C++ core guidelines checker warnings"
+      href: code-analysis-for-cpp-corecheck.md
+    - name: C26400
+      href: c26400.md
+    - name: C26401
+      href: c26401.md
+    - name: C26402
+      href: c26402.md
+    - name: C26403
+      href: c26403.md
+    - name: C26404
+      href: c26404.md
+    - name: C26405
+      href: c26405.md
+    - name: C26406
+      href: c26406.md
+    - name: C26407
+      href: c26407.md
+    - name: C26408
+      href: c26408.md
+    - name: C26409
+      href: c26409.md
+    - name: C26410
+      href: c26410.md
+    - name: C26411
+      href: c26411.md
+    - name: C26414
+      href: c26414.md
+    - name: C26415
+      href: c26415.md
+    - name: C26416
+      href: c26416.md
+    - name: C26417
+      href: c26417.md
+    - name: C26418
+      href: c26418.md
+    - name: C26426
+      href: c26426.md
+    - name: C26427
+      href: c26427.md
+    - name: C26429
+      href: c26429.md
+    - name: C26430
+      href: c26430.md
+    - name: C26431
+      href: c26431.md
+    - name: C26432
+      href: c26432.md
+    - name: C26433
+      href: c26433.md
+    - name: C26434
+      href: c26434.md
+    - name: C26435
+      href: c26435.md
+    - name: C26436
+      href: c26436.md
+    - name: C26437
+      href: c26437.md
+    - name: C26438
+      href: c26438.md
+    - name: C26439
+      href: c26439.md
+    - name: C26440
+      href: c26440.md
+    - name: C26441
+      href: c26441.md
+    - name: C26443
+      href: c26443.md
+    - name: C26444
+      href: c26444.md
+    - name: C26445
+      href: c26445.md
+    - name: C26446
+      href: c26446.md
+    - name: C26447
+      href: c26447.md
+    - name: C26448
+      href: c26448.md
+    - name: C26449
+      href: c26449.md
+    - name: C26450
+      href: c26450.md
+    - name: C26451
+      href: c26451.md
+    - name: C26452
+      href: c26452.md
+    - name: C26453
+      href: c26453.md
+    - name: C26454
+      href: c26454.md
+    - name: C26455
+      href: c26455.md
+    - name: C26456
+      href: c26456.md
+    - name: C26460
+      href: c26460.md
+    - name: C26461
+      href: c26461.md
+    - name: C26462
+      href: c26462.md
+    - name: C26463
+      href: c26463.md
+    - name: C26464
+      href: c26464.md
+    - name: C26465
+      href: c26465.md
+    - name: C26466
+      href: c26466.md
+    - name: C26471
+      href: c26471.md
+    - name: C26472
+      href: c26472.md
+    - name: C26473
+      href: c26473.md
+    - name: C26474
+      href: c26474.md
+    - name: C26475
+      href: c26475.md
+    - name: C26476
+      href: c26476.md
+    - name: C26477
+      href: c26477.md
+    - name: C26478
+      href: c26478.md
+    - name: C26481
+      href: c26481.md
+    - name: C26482
+      href: c26482.md
+    - name: C26483
+      href: c26483.md
+    - name: C26485
+      href: c26485.md
+    - name: C26486
+      href: c26486.md
+    - name: C26487
+      href: c26487.md
+    - name: C26488
+      href: c26488.md
+    - name: C26489
+      href: c26489.md
+    - name: C26490
+      href: c26490.md
+    - name: C26491
+      href: c26491.md
+    - name: C26492
+      href: c26492.md
+    - name: C26493
+      href: c26493.md
+    - name: C26494
+      href: c26494.md
+    - name: C26495
+      href: c26495.md
+    - name: C26496
+      href: c26496.md
+    - name: C26497
+      href: c26497.md
+    - name: C26498
+      href: c26498.md
+    - name: C26812
+      href: c26812.md
+    - name: C26814
+      href: c26814.md
+    - name: C26815
+      href: c26815.md
+    - name: C26816
+      href: c26816.md
+  - name: C/C++ warnings
+    items:
+    - name: Overview
+      displayName: "C++ warnings"
+      href: code-analysis-for-c-cpp-warnings.md
+    - name: C1250
+      href: c1250.md
+    - name: C1251
+      href: c1251.md
+    - name: C1252
+      href: c1252.md
+    - name: C1253
+      href: c1253.md
+    - name: C1254
+      href: c1254.md
+    - name: C1255
+      href: c1255.md
+    - name: C1256
+      href: c1256.md
+    - name: C1257
+      href: c1257.md
+    - name: C6001
+      href: c6001.md
+    - name: C6011
+      href: c6011.md
+    - name: C6014
+      href: c6014.md
+    - name: C6029
+      href: c6029.md
+    - name: C6031
+      href: c6031.md
+    - name: C6053
+      href: c6053.md
+    - name: C6054
+      href: c6054.md
+    - name: C6059
+      href: c6059.md
+    - name: C6063
+      href: c6063.md
+    - name: C6064
+      href: c6064.md
+    - name: C6066
+      href: c6066.md
+    - name: C6067
+      href: c6067.md
+    - name: C6101
+      href: c6101.md
+    - name: C6102
+      href: c6102.md
+    - name: C6103
+      href: c6103.md
+    - name: C6200
+      href: c6200.md
+    - name: C6201
+      href: c6201.md
+    - name: C6211
+      href: c6211.md
+    - name: C6214
+      href: c6214.md
+    - name: C6215
+      href: c6215.md
+    - name: C6216
+      href: c6216.md
+    - name: C6217
+      href: c6217.md
+    - name: C6219
+      href: c6219.md
+    - name: C6220
+      href: c6220.md
+    - name: C6221
+      href: c6221.md
+    - name: C6225
+      href: c6225.md
+    - name: C6226
+      href: c6226.md
+    - name: C6230
+      href: c6230.md
+    - name: C6235
+      href: c6235.md
+    - name: C6236
+      href: c6236.md
+    - name: C6237
+      href: c6237.md
+    - name: C6239
+      href: c6239.md
+    - name: C6240
+      href: c6240.md
+    - name: C6242
+      href: c6242.md
+    - name: C6244
+      href: c6244.md
+    - name: C6246
+      href: c6246.md
+    - name: C6248
+      href: c6248.md
+    - name: C6250
+      href: c6250.md
+    - name: C6255
+      href: c6255.md
+    - name: C6258
+      href: c6258.md
+    - name: C6259
+      href: c6259.md
+    - name: C6260
+      href: c6260.md
+    - name: C6262
+      href: c6262.md
+    - name: C6263
+      href: c6263.md
+    - name: C6268
+      href: c6268.md
+    - name: C6269
+      href: c6269.md
+    - name: C6270
+      href: c6270.md
+    - name: C6271
+      href: c6271.md
+    - name: C6272
+      href: c6272.md
+    - name: C6273
+      href: c6273.md
+    - name: C6274
+      href: c6274.md
+    - name: C6276
+      href: c6276.md
+    - name: C6277
+      href: c6277.md
+    - name: C6278
+      href: c6278.md
+    - name: C6279
+      href: c6279.md
+    - name: C6280
+      href: c6280.md
+    - name: C6281
+      href: c6281.md
+    - name: C6282
+      href: c6282.md
+    - name: C6283
+      href: c6283.md
+    - name: C6284
+      href: c6284.md
+    - name: C6285
+      href: c6285.md
+    - name: C6286
+      href: c6286.md
+    - name: C6287
+      href: c6287.md
+    - name: C6288
+      href: c6288.md
+    - name: C6289
+      href: c6289.md
+    - name: C6290
+      href: c6290.md
+    - name: C6291
+      href: c6291.md
+    - name: C6292
+      href: c6292.md
+    - name: C6293
+      href: c6293.md
+    - name: C6294
+      href: c6294.md
+    - name: C6295
+      href: c6295.md
+    - name: C6296
+      href: c6296.md
+    - name: C6297
+      href: c6297.md
+    - name: C6298
+      href: c6298.md
+    - name: C6299
+      href: c6299.md
+    - name: C6302
+      href: c6302.md
+    - name: C6303
+      href: c6303.md
+    - name: C6305
+      href: c6305.md
+    - name: C6306
+      href: c6306.md
+    - name: C6308
+      href: c6308.md
+    - name: C6310
+      href: c6310.md
+    - name: C6312
+      href: c6312.md
+    - name: C6313
+      href: c6313.md
+    - name: C6314
+      href: c6314.md
+    - name: C6315
+      href: c6315.md
+    - name: C6316
+      href: c6316.md
+    - name: C6317
+      href: c6317.md
+    - name: C6318
+      href: c6318.md
+    - name: C6319
+      href: c6319.md
+    - name: C6320
+      href: c6320.md
+    - name: C6322
+      href: c6322.md
+    - name: C6323
+      href: c6323.md
+    - name: C6324
+      href: c6324.md
+    - name: C6326
+      href: c6326.md
+    - name: C6328
+      href: c6328.md
+    - name: C6329
+      href: c6329.md
+    - name: C6330
+      href: c6330.md
+    - name: C6331
+      href: c6331.md
+    - name: C6332
+      href: c6332.md
+    - name: C6333
+      href: c6333.md
+    - name: C6334
+      href: c6334.md
+    - name: C6335
+      href: c6335.md
+    - name: C6336
+      href: c6336.md
+    - name: C6340
+      href: c6340.md
+    - name: C6381
+      href: c6381.md
+    - name: C6383
+      href: c6383.md
+    - name: C6384
+      href: c6384.md
+    - name: C6385
+      href: c6385.md
+    - name: C6386
+      href: c6386.md
+    - name: C6387
+      href: c6387.md
+    - name: C6388
+      href: c6388.md
+    - name: C6400
+      href: c6400.md
+    - name: C6401
+      href: c6401.md
+    - name: C6411
+      href: c6411.md
+    - name: C6412
+      href: c6412.md
+    - name: C6500
+      href: c6500.md
+    - name: C6501
+      href: c6501.md
+    - name: C6503
+      href: c6503.md
+    - name: C6504
+      href: c6504.md
+    - name: C6505
+      href: c6505.md
+    - name: C6506
+      href: c6506.md
+    - name: C6508
+      href: c6508.md
+    - name: C6509
+      href: c6509.md
+    - name: C6510
+      href: c6510.md
+    - name: C6511
+      href: c6511.md
+    - name: C6513
+      href: c6513.md
+    - name: C6514
+      href: c6514.md
+    - name: C6515
+      href: c6515.md
+    - name: C6516
+      href: c6516.md
+    - name: C6517
+      href: c6517.md
+    - name: C6518
+      href: c6518.md
+    - name: C6522
+      href: c6522.md
+    - name: C6525
+      href: c6525.md
+    - name: C6527
+      href: c6527.md
+    - name: C6530
+      href: c6530.md
+    - name: C6540
+      href: c6540.md
+    - name: C6551
+      href: c6551.md
+    - name: C6552
+      href: c6552.md
+    - name: C6701
+      href: c6701.md
+    - name: C6702
+      href: c6702.md
+    - name: C6703
+      href: c6703.md
+    - name: C6704
+      href: c6704.md
+    - name: C6705
+      href: c6705.md
+    - name: C6706
+      href: c6706.md
+    - name: C6707
+      href: c6707.md
+    - name: C6993
+      href: c6993.md
+    - name: C6995
+      href: c6995.md
+    - name: C6997
+      href: c6997.md
+    - name: C26100
+      href: c26100.md
+    - name: C26101
+      href: c26101.md
+    - name: C26105
+      href: c26105.md
+    - name: C26110
+      href: c26110.md
+    - name: C26111
+      href: c26111.md
+    - name: C26112
+      href: c26112.md
+    - name: C26115
+      href: c26115.md
+    - name: C26116
+      href: c26116.md
+    - name: C26117
+      href: c26117.md
+    - name: C26130
+      href: c26130.md
+    - name: C26135
+      href: c26135.md
+    - name: C26138
+      href: c26138.md
+    - name: C26140
+      href: c26140.md
+    - name: C26160
+      href: c26160.md
+    - name: C26165
+      href: c26165.md
+    - name: C26166
+      href: c26166.md
+    - name: C26167
+      href: c26167.md
+    - name: C26800
+      href: c26800.md
+    - name: C26810
+      href: c26810.md
+    - name: C26811
+      href: c26811.md
+    - name: C28020
+      href: c28020.md
+    - name: C28021
+      href: c28021.md
+    - name: C28022
+      href: c28022.md
+    - name: C28023
+      href: c28023.md
+    - name: C28024
+      href: c28024.md
+    - name: C28039
+      href: c28039.md
+    - name: C28103
+      href: c28103.md
+    - name: C28104
+      href: c28104.md
+    - name: C28105
+      href: c28105.md
+    - name: C28106
+      href: c28106.md
+    - name: C28107
+      href: c28107.md
+    - name: C28108
+      href: c28108.md
+    - name: C28109
+      href: c28109.md
+    - name: C28112
+      href: c28112.md
+    - name: C28113
+      href: c28113.md
+    - name: C28125
+      href: c28125.md
+    - name: C28137
+      href: c28137.md
+    - name: C28138
+      href: c28138.md
+    - name: C28159
+      href: c28159.md
+    - name: C28160
+      href: c28160.md
+    - name: C28163
+      href: c28163.md
+    - name: C28164
+      href: c28164.md
+    - name: C28182
+      href: c28182.md
+    - name: C28183
+      href: c28183.md
+    - name: C28193
+      href: c28193.md
+    - name: C28194
+      href: c28194.md
+    - name: C28195
+      href: c28195.md
+    - name: C28196
+      href: c28196.md
+    - name: C28197
+      href: c28197.md
+    - name: C28198
+      href: c28198.md
+    - name: C28199
+      href: c28199.md
+    - name: C28202
+      href: c28202.md
+    - name: C28203
+      href: c28203.md
+    - name: C28204
+      href: c28204.md
+    - name: C28205
+      href: c28205.md
+    - name: C28206
+      href: c28206.md
+    - name: C28207
+      href: c28207.md
+    - name: C28208
+      href: c28208.md
+    - name: C28209
+      href: c28209.md
+    - name: C28210
+      href: c28210.md
+    - name: C28211
+      href: c28211.md
+    - name: C28212
+      href: c28212.md
+    - name: C28213
+      href: c28213.md
+    - name: C28214
+      href: c28214.md
+    - name: C28215
+      href: c28215.md
+    - name: C28216
+      href: c28216.md
+    - name: C28217
+      href: c28217.md
+    - name: C28218
+      href: c28218.md
+    - name: C28219
+      href: c28219.md
+    - name: C28220
+      href: c28220.md
+    - name: C28221
+      href: c28221.md
+    - name: C28222
+      href: c28222.md
+    - name: C28223
+      href: c28223.md
+    - name: C28224
+      href: c28224.md
+    - name: C28225
+      href: c28225.md
+    - name: C28226
+      href: c28226.md
+    - name: C28227
+      href: c28227.md
+    - name: C28228
+      href: c28228.md
+    - name: C28229
+      href: c28229.md
+    - name: C28230
+      href: c28230.md
+    - name: C28231
+      href: c28231.md
+    - name: C28232
+      href: c28232.md
+    - name: C28233
+      href: c28233.md
+    - name: C28234
+      href: c28234.md
+    - name: C28235
+      href: c28235.md
+    - name: C28236
+      href: c28236.md
+    - name: C28237
+      href: c28237.md
+    - name: C28238
+      href: c28238.md
+    - name: C28239
+      href: c28239.md
+    - name: C28240
+      href: c28240.md
+    - name: C28241
+      href: c28241.md
+    - name: C28243
+      href: c28243.md
+    - name: C28244
+      href: c28244.md
+    - name: C28245
+      href: c28245.md
+    - name: C28246
+      href: c28246.md
+    - name: C28250
+      href: c28250.md
+    - name: C28251
+      href: c28251.md
+    - name: C28252
+      href: c28252.md
+    - name: C28253
+      href: c28253.md
+    - name: C28254
+      href: c28254.md
+    - name: C28262
+      href: c28262.md
+    - name: C28263
+      href: c28263.md
+    - name: C28267
+      href: c28267.md
+    - name: C28272
+      href: c28272.md
+    - name: C28273
+      href: c28273.md
+    - name: C28275
+      href: c28275.md
+    - name: C28278
+      href: c28278.md
+    - name: C28279
+      href: c28279.md
+    - name: C28280
+      href: c28280.md
+    - name: C28282
+      href: c28282.md
+    - name: C28283
+      href: c28283.md
+    - name: C28284
+      href: c28284.md
+    - name: C28285
+      href: c28285.md
+    - name: C28286
+      href: c28286.md
+    - name: C28287
+      href: c28287.md
+    - name: C28288
+      href: c28288.md
+    - name: C28289
+      href: c28289.md
+    - name: C28290
+      href: c28290.md
+    - name: C28291
+      href: c28291.md
+    - name: C28300
+      href: c28300.md
+    - name: C28301
+      href: c28301.md
+    - name: C28302
+      href: c28302.md
+    - name: C28303
+      href: c28303.md
+    - name: C28304
+      href: c28304.md
+    - name: C28305
+      href: c28305.md
+    - name: C28306
+      href: c28306.md
+    - name: C28307
+      href: c28307.md
+    - name: C28308
+      href: c28308.md
+    - name: C28309
+      href: c28309.md
+    - name: C28310
+      href: c28310.md
+    - name: C28311
+      href: c28311.md
+    - name: C28312
+      href: c28312.md
+    - name: C28350
+      href: c28350.md
+    - name: C28351
+      href: c28351.md

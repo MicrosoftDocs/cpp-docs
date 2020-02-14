@@ -52,7 +52,6 @@ The BackInsertIterator class implements the rules required by the [back_insert_i
 **Header:** collection.h
 
 **Namespace:** Platform::Collections
-
 ---
 ## <a name="ctor"></a>  BackInsertIterator::BackInsertIterator Constructor
 
