@@ -2876,7 +2876,7 @@ Although these differences can affect your source code or other build artifacts,
     };
     ```
 
-   To find places in your code that an earlier release would have tried to optimize, use a compiler from that release together with the `/W3` compiler option and turn on Warning 4370. For example:
+   To find places in your code that an earlier release would have tried to optimize, use a compiler from that release together with the `/W3` compiler option and turn on warning C4370. For example:
 
     ```cpp
     #pragma warning(default:4370)
