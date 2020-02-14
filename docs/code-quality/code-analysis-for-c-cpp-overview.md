@@ -47,7 +47,7 @@ Annotations improve the accuracy of the code analysis. Annotations provide addit
 
 ## Run analysis tool as part of check-in policy
 
-You might want to require that all source code check-ins satisfy certain policies. In particular, you want to make sure that analysis was run as a step of the most recent local build. For more information about enabling a code analysis check-in policy, see [Creating and Using Code Analysis Check-In Policies](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
+You might want to require that all source code check-ins satisfy certain policies. In particular, you want to make sure that analysis was run as a step of the most recent local build. For more information about enabling a code analysis check-in policy, see [Creating and Using Code Analysis Check-In Policies](/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies).
 
 ## Team Build integration
 
