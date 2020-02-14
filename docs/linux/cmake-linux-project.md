@@ -170,7 +170,7 @@ The following example shows the default configuration for Linux-Debug in Visual 
 
 ::: moniker range="vs-2019"
 
- The default Linux-Debug configuration in Visual Studio 2019 version 16.1 and later is as shown here:
+The default Linux-Debug configuration in Visual Studio 2019 version 16.1 and later is as shown here:
 
 ```json
 {
