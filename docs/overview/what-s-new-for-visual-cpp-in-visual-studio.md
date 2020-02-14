@@ -642,7 +642,7 @@ The Clang/C2 toolset that ships with Visual Studio 2017 now supports the **/bigo
 
 ## C++ code analysis
 
-The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are now distributed with Visual Studio. Simply enable the checkers in the **Code Analysis Extensions** page in the project's property pages and the extensions will be included when you run code analysis. For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
+The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are now distributed with Visual Studio. Simply enable the checkers in the **Code Analysis Extensions** page in the project's property pages and the extensions will be included when you run code analysis. For more information, see [Using the C++ Core Guidelines checkers](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck properties page")
 
@@ -663,7 +663,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 ##### Visual Studio 2017 version 15.7
 
 - Support added for [/analyze:ruleset](../build/reference/analyze-code-analysis.md), which lets you specify the code analysis rules to run.
-- Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
+- Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## Unit testing
 

@@ -495,7 +495,7 @@ The number of characters actually copied.
 
 A null character is not appended to the end of the copy.
 
- For more information, see [c-runtime-library/security-features-in-the-crt](../c-runtime-library/security-features-in-the-crt.md).
+For more information, see [c-runtime-library/security-features-in-the-crt](../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="crbegin"></a>  basic_string_view::crbegin
 
