@@ -33,7 +33,7 @@ The exception unwinding data conventions, and this description, are intended to:
 
 These assumptions are made in the exception handling description:
 
-1. Prologs and epilogs tend to mirror each other. By taking advantage of this common trait, the size of the metadata needed to describe unwinding can be greatly reduced by half. Within the body of the function, it doesn't matter whether the prolog's operations are undone, or the epilog's operations are done in a forward manner. Both should produce identical results.
+1. Prologs and epilogs tend to mirror each other. By taking advantage of this common trait, the size of the metadata needed to describe unwinding can be greatly reduced. Within the body of the function, it doesn't matter whether the prolog's operations are undone, or the epilog's operations are done in a forward manner. Both should produce identical results.
 
 1. Functions tend on the whole to be relatively small. Several optimizations for space rely on this fact to achieve the most efficient packing of data.
 
