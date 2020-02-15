@@ -15,7 +15,7 @@ template <class Callable, class... Args>
    struct invoke_result<Callable(Args...)>;
 
 // Helper type
-template<lass Callable, class... Args>
+template<class Callable, class... Args>
    using invoke_result_t = typename invoke_result<Callable, Args...>::type;
 ```
 
