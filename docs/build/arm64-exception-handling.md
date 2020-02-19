@@ -17,7 +17,7 @@ The exception unwinding data conventions, and this description, are intended to:
 
    - Analyzing the code is complex; the compiler must be careful to only generate instructions that the unwinder can decode.
 
-   - If unwinding can't be fully described through the use of unwind codes, then in some cases it must fall back to instruction decoding. This increases the overall complexity, and ideally would be avoided.
+   - If unwinding can't be fully described through the use of unwind codes, then in some cases it must fall back to instruction decoding. This increases the overall complexity, and ideally should be avoided.
 
 1. Support unwinding in mid-prolog and mid-epilog.
 
@@ -33,7 +33,7 @@ The exception unwinding data conventions, and this description, are intended to:
 
 These assumptions are made in the exception handling description:
 
-1. Prologs and epilogs tend to mirror either other. By taking advantage of this common trait, the size of the metadata needed to describe unwinding can be greatly reduced. Within the body of the function, it doesn't matter whether the prolog's operations are undone, or the epilog's operations are done in a forward manner. Both should produce identical results.
+1. Prologs and epilogs tend to mirror each other. By taking advantage of this common trait, the size of the metadata needed to describe unwinding can be greatly reduced. Within the body of the function, it doesn't matter whether the prolog's operations are undone, or the epilog's operations are done in a forward manner. Both should produce identical results.
 
 1. Functions tend on the whole to be relatively small. Several optimizations for space rely on this fact to achieve the most efficient packing of data.
 
