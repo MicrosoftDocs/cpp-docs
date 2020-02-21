@@ -38,11 +38,11 @@ Expanded project files can be large and difficult to understand unless you're fa
 
 1. Fundamental project properties, which aren't exposed in the IDE.
 
-1. Import of Microsoft.cpp.default.props, which defines some basic, toolset-independent properties.
+1. Import of *`Microsoft.cpp.default.props`*, which defines some basic, toolset-independent properties.
 
-1. Global Configuration properties (exposed as **PlatformToolset** and **Project** default properties on the **Configuration General** page. These properties determine which toolset and intrinsic property sheets are imported in Microsoft.cpp.props in the next step.
+1. Global Configuration properties (exposed as **PlatformToolset** and **Project** default properties on the **Configuration General** page. These properties determine which toolset and intrinsic property sheets are imported in *`Microsoft.cpp.props`* in the next step.
 
-1. Import of Microsoft.cpp.props, which sets most of the project defaults.
+1. Import of *`Microsoft.cpp.props`*, which sets most of the project defaults.
 
 1. Import of all property sheets, including *`.user`* files. These property sheets can override everything except the **PlatformToolset** and **Project** default properties.
 
@@ -56,7 +56,7 @@ For more information, see [MSBuild Properties](/visualstudio/msbuild/msbuild-pro
 
 A configuration is just an arbitrary group of properties that are given a name. Visual Studio provides Debug and Release configurations. Each sets various properties appropriately for a debug build or release build. You can use the **Configuration Manager** to define custom configurations. They're a convenient way to group properties for a specific flavor of build.
 
-To get a better idea of build configurations, open **Property Manager**. You can open it by choosing **View > Property Manager** or **View > Other Windows > Property Manager**, depending on your settings. **Property Manager** has nodes for each configuration and platform pair in the project. Under each of these nodes are nodes for property sheets (.props files) that set some specific properties for that configuration.
+To get a better idea of build configurations, open **Property Manager**. You can open it by choosing **View > Property Manager** or **View > Other Windows > Property Manager**, depending on your settings. **Property Manager** has nodes for each configuration and platform pair in the project. Under each of these nodes are nodes for property sheets (*`.props`* files) that set some specific properties for that configuration.
 
 ![Property Manager](media/property-manager.png "Property Manager")
 
