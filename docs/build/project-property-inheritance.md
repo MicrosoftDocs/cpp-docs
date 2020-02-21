@@ -56,7 +56,7 @@ For more information, see [MSBuild Properties](/visualstudio/msbuild/msbuild-pro
 
 A configuration is just an arbitrary group of properties that are given a name. Visual Studio provides Debug and Release configurations. Each sets various properties appropriately for a debug build or release build. You can use the **Configuration Manager** to define custom configurations. They're a convenient way to group properties for a specific flavor of build.
 
-To get a better idea of build configurations, open **Property Manager**. You can open in by choosing **View > Property Manager** or **View > Other Windows > Property Manager**, depending on your settings. **Property Manager** has nodes for each configuration and platform pair in the project. Under each of these nodes are nodes for property sheets (.props files) that set some specific properties for that configuration.
+To get a better idea of build configurations, open **Property Manager**. You can open it by choosing **View > Property Manager** or **View > Other Windows > Property Manager**, depending on your settings. **Property Manager** has nodes for each configuration and platform pair in the project. Under each of these nodes are nodes for property sheets (.props files) that set some specific properties for that configuration.
 
 ![Property Manager](media/property-manager.png "Property Manager")
 
