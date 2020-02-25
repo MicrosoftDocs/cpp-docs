@@ -24,7 +24,7 @@ The `configurations` array contains all the configurations for a CMake project. 
 
 A `configuration` has these properties:
 
-- `addressSDanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
+- `addressSanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
 - `addressSanitizerRuntimeFlags`: runtime flags passed to AddressSanitizer via the ASAN_OPTIONS environment variable. Format: flag1=value:flag2=value2.
 - `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
 - `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where *CMakeCache.txt* will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
