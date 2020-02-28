@@ -4,7 +4,6 @@ ms.date: "02/26/2020"
 helpviewer_keywords: ["MSBuild overview"]
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
 ---
-
 # MSBuild internals for C++ projects
 
 When you set project properties in the IDE and then save the project, Visual Studio writes the project settings to your project file. The project file contains settings that are unique to your project. However, it doesn't contain all the settings required to build your project. The project file contains `Import` elements that include a network of additional *support files.* The support files contain the remaining properties, targets, and settings required to build the project.
@@ -37,7 +36,7 @@ By default, the primary Visual Studio support files are located in the following
 | --------- | ----------- |
 | *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp (x86)\\v4.0\\*version*\\ | Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory. |
 | *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\*version*\\Platforms\\*platform*\\ | Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory.<br /><br /> The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. |
-| *drive*:\\Program Files *(x86)*\\MSBuild\Microsoft.Cpp\\v4.0\\*version*\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\ <br /><br />*drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\ |Contains the directories that enable the build to generate C++ applications by using the specified *toolset*.<br /><br />The *version* placeholder is V110 for Visual Studio 2012, V120 for Visual Studio 2013, and V140 for Visual Studio 2015. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory. For example, v140 for building Windows apps by using the Visual Studio 2015 toolset. Or, v120_xp to build for Windows XP using the Visual Studio 2013 toolset.<br /><br />The paths that enable the build to generate either Visual Studio 2008 or Visual Studio 2010 applications don't include the *version*. In those versions, the *platform* placeholder represents the Itanium, Win32, or x64 subdirectory. The *toolset* placeholder represents the v90 or v100 toolset subdirectory. |
+| *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\*version*\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\ <br /><br />*drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\ |Contains the directories that enable the build to generate C++ applications by using the specified *toolset*.<br /><br />The *version* placeholder is V110 for Visual Studio 2012, V120 for Visual Studio 2013, and V140 for Visual Studio 2015. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory. For example, v140 for building Windows apps by using the Visual Studio 2015 toolset. Or, v120_xp to build for Windows XP using the Visual Studio 2013 toolset.<br /><br />The paths that enable the build to generate either Visual Studio 2008 or Visual Studio 2010 applications don't include the *version*. In those versions, the *platform* placeholder represents the Itanium, Win32, or x64 subdirectory. The *toolset* placeholder represents the v90 or v100 toolset subdirectory. |
 
 ## Support Files
 
@@ -101,15 +100,15 @@ The following table lists several useful user-oriented targets.
 
 ## See also
 
-- [MSBuild Task Reference](/visualstudio/msbuild/msbuild-task-reference)
-- [BscMake Task](/visualstudio/msbuild/bscmake-task)
-- [CL Task](/visualstudio/msbuild/cl-task)
-- [CPPClean Task](/visualstudio/msbuild/cppclean-task)
-- [LIB Task](/visualstudio/msbuild/lib-task)
-- [Link Task](/visualstudio/msbuild/link-task)
-- [MIDL Task](/visualstudio/msbuild/midl-task)
-- [MT Task](/visualstudio/msbuild/mt-task)
-- [RC Task](/visualstudio/msbuild/rc-task)
-- [SetEnv Task](/visualstudio/msbuild/setenv-task)
-- [VCMessage Task](/visualstudio/msbuild/vcmessage-task)
-- [XDCMake Task](/visualstudio/msbuild/xdcmake-task)
+[MSBuild Task Reference](/visualstudio/msbuild/msbuild-task-reference)\
+[BscMake Task](/visualstudio/msbuild/bscmake-task)\
+[CL Task](/visualstudio/msbuild/cl-task)\
+[CPPClean Task](/visualstudio/msbuild/cppclean-task)\
+[LIB Task](/visualstudio/msbuild/lib-task)\
+[Link Task](/visualstudio/msbuild/link-task)\
+[MIDL Task](/visualstudio/msbuild/midl-task)\
+[MT Task](/visualstudio/msbuild/mt-task)\
+[RC Task](/visualstudio/msbuild/rc-task)\
+[SetEnv Task](/visualstudio/msbuild/setenv-task)\
+[VCMessage Task](/visualstudio/msbuild/vcmessage-task)\
+[XDCMake Task](/visualstudio/msbuild/xdcmake-task)
