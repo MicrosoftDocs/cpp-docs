@@ -64,6 +64,10 @@
         "linux/**.md": "Linux"
       },
       "ms.workload": {
+        "cross-platform/**.md": [
+          "cplusplus",
+          "xplat-cplusplus"
+        ],
         "data/**.md": [
           "cplusplus",
           "data-storage"
@@ -123,6 +127,7 @@
         "code-quality/**.md": "cpp-tools",
         "cpp/**.md": "cpp-language",
         "cppcx/**.md": "cpp-cx",
+        "cross-platform/**.md": "cpp-tools",
         "data/**.md": "cpp-data",
         "dotnet/**.md": "cpp-cli",
         "error-messages/**.md": "cpp-diagnostics",
@@ -158,6 +163,7 @@
         "code-quality/**.md": "corob-msft",
         "cpp/**.md": "corob-msft",
         "cppcx/**.md": "corob-msft",
+        "cross-platform/**.md": "corob-msft",
         "data/**.md": "corob-msft",
         "dotnet/**.md": "tylermsft",
         "error-messages/**.md": "corob-msft",
@@ -193,6 +199,7 @@
         "code-quality/**.md": "corob",
         "cpp/**.md": "corob",
         "cppcx/**.md": "corob",
+        "cross-platform/**.md": "corob",
         "data/**.md": "corob",
         "dotnet/**.md": "twhitney",
         "error-messages/**.md": "corob",
