@@ -16,27 +16,49 @@ By default, the primary Visual Studio support files are located in the following
 
 ### Visual Studio 2019
 
-| Directory | Description |
-| --------- | ----------- |
-| %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\ | Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory. The *version* placeholder refers to the Visual Studio version: v160 for Visual Studio 2019, v150 for Visual Studio 2017. |
-| %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\Platforms\\*platform*\\ | Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory.<br /><br /> The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. |
-| %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\ | Contains the directories that enable the build to generate C++ applications by using the specified *toolset*.<br /><br /> The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory. |
+- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\
+
+  Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory. The *version* placeholder refers to the Visual Studio version: v160 for Visual Studio 2019, v150 for Visual Studio 2017.
+
+- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\Platforms\\*platform*\\
+
+  Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory.
+
+- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\
+
+  Contains the directories that enable the build to generate C++ applications by using the specified *toolset*. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory.
 
 ### Visual Studio 2017
 
-| Directory | Description |
-| --------- | ----------- |
-| %VSINSTALLDIR%Common7\\IDE\\VC\\VCTargets\\ | Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory. |
-| %VSINSTALLDIR%Common7\\IDE\\VC\\VCTargets\\Platforms\\*platform*\\ | Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory.<br /><br /> The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. |
-| %VSINSTALLDIR%Common7\\IDE\\VC\\VCTargets\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\ | Contains the directories that enable the build to generate C++ applications by using the specified *toolset*.<br /><br /> The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory. |
+- %VSINSTALLDIR%Common7\\IDE\\VC\\VCTargets\\
+
+  Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory.
+
+- %VSINSTALLDIR%Common7\\IDE\\VC\\VCTargets\\Platforms\\*platform*\\
+
+  Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory.
+
+- %VSINSTALLDIR%Common7\\IDE\\VC\\VCTargets\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\
+
+  Contains the directories that enable the build to generate C++ applications by using the specified *toolset*. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory.
 
 ### Visual Studio 2015 and earlier
 
-| Directory | Description |
-| --------- | ----------- |
-| *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp (x86)\\v4.0\\*version*\\ | Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory. |
-| *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\*version*\\Platforms\\*platform*\\ | Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory.<br /><br /> The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. |
-| *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\*version*\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\ <br /><br />*drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\ |Contains the directories that enable the build to generate C++ applications by using the specified *toolset*.<br /><br />The *version* placeholder is V110 for Visual Studio 2012, V120 for Visual Studio 2013, and V140 for Visual Studio 2015. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory. For example, v140 for building Windows apps by using the Visual Studio 2015 toolset. Or, v120_xp to build for Windows XP using the Visual Studio 2013 toolset.<br /><br />The paths that enable the build to generate either Visual Studio 2008 or Visual Studio 2010 applications don't include the *version*. In those versions, the *platform* placeholder represents the Itanium, Win32, or x64 subdirectory. The *toolset* placeholder represents the v90 or v100 toolset subdirectory. |
+- *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp (x86)\\v4.0\\*version*\\
+
+  Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory.
+
+- *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\*version*\\Platforms\\*platform*\\
+
+  Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory.
+
+- *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\*version*\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\
+
+  Contains the directories that enable the build to generate C++ applications by using the specified *toolset*. The *version* placeholder is V110 for Visual Studio 2012, V120 for Visual Studio 2013, and V140 for Visual Studio 2015. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory. For example, it's v140 for building Windows apps by using the Visual Studio 2015 toolset. Or, v120_xp to build for Windows XP using the Visual Studio 2013 toolset.
+
+- *drive*:\\Program Files *(x86)*\\MSBuild\\Microsoft.Cpp\\v4.0\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\
+
+  The paths that enable the build to generate either Visual Studio 2008 or Visual Studio 2010 applications don't include the *version*. In those versions, the *platform* placeholder represents the Itanium, Win32, or x64 subdirectory. The *toolset* placeholder represents the v90 or v100 toolset subdirectory.
 
 ## Support Files
 
