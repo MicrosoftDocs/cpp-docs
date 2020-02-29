@@ -122,7 +122,7 @@ The result of the decrement.
 
 ##  <a name="increment"></a>  CComSingleThreadModel::Increment
 
-This static function decrements the value of the variable pointed to by *p*.
+This static function increments the value of the variable pointed to by *p*.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();
