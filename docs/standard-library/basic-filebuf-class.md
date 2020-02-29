@@ -300,7 +300,7 @@ bool is_open() const;
 
 ### Return Value
 
-**true** if the file pointer isn't a null pointer.
+**true** if the file pointer is not null.
 
 ### Example
 
@@ -370,6 +370,8 @@ One of the enumerations in [`ios_base::openmode`](../standard-library/ios-base-c
 The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Return Value
+
+If the buffer is already open, the function returns a null pointer.
 
 If the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **this**.
 
