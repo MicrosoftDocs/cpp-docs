@@ -1,6 +1,6 @@
 ---
 title: "CComSingleThreadModel Class"
-ms.date: "11/04/2016"
+ms.date: "2/29/2020"
 f1_keywords: ["CComSingleThreadModel", "ATLBASE/ATL::CComSingleThreadModel", "ATLBASE/ATL::CComSingleThreadModel::AutoCriticalSection", "ATLBASE/ATL::CComSingleThreadModel::CriticalSection", "ATLBASE/ATL::CComSingleThreadModel::ThreadModelNoCS", "ATLBASE/ATL::CComSingleThreadModel::Decrement", "ATLBASE/ATL::CComSingleThreadModel::Increment"]
 helpviewer_keywords: ["single-threaded applications", "CComSingleThreadModel class", "single-threaded applications, ATL"]
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
@@ -122,7 +122,7 @@ The result of the decrement.
 
 ##  <a name="increment"></a>  CComSingleThreadModel::Increment
 
-This static function decrements the value of the variable pointed to by *p*.
+This static function increments the value of the variable pointed to by *p*.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();
