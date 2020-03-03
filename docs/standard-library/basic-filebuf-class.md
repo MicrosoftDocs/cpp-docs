@@ -300,7 +300,7 @@ bool is_open() const;
 
 ### Return Value
 
-**true** if the file pointer isn’t null.
+**true** if the file pointer isn't null.
 
 ### Example
 
@@ -371,9 +371,7 @@ The default file opening protection, equivalent to the *shflag* parameter in [_f
 
 ### Return Value
 
-If the buffer is already open, the function returns a null pointer.
-
-If the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **this**.
+If the buffer is already open, or if the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **this**.
 
 ### Remarks
 
