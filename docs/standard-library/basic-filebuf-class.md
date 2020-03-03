@@ -300,7 +300,7 @@ bool is_open() const;
 
 ### Return Value
 
-**true** if the file pointer is not null.
+**true** if the file pointer isn’t null.
 
 ### Example
 
