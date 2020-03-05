@@ -1,10 +1,10 @@
 ---
-title: "C++ Build Insights: Windows Performance Analyzer basics"
+title: "Tutorial: Windows Performance Analyzer basics"
 description: "Tutorial on how to complete basic operations in Windows Performance Analyzer."
 ms.date: "11/03/2019"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
-# C++ Build Insights: Windows Performance Analyzer basics
+# Tutorial: Windows Performance Analyzer basics
 
 ::: moniker range="<=vs-2017"
 
@@ -48,9 +48,9 @@ This image shows an example bar graph of a link invocation. We use the gear icon
 
 ## See also
 
-[Get started with C++ Build Insights](get-started-with-cpp-build-insights.md)\
-[vcperf.exe reference](vcperf-reference.md)\
-[Windows Performance Analyzer views reference](wpa-views-reference.md)\
+[Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)\
+[Reference: vcperf commands](/cpp/build-insights/reference/vcperf-commands)\
+[Reference: Windows Performance Analyzer views](/cpp/build-insights/reference/wpa-views)\
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end
