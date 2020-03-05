@@ -1,10 +1,10 @@
 ---
-title: "C++ Build Insights: Windows Performance Analyzer views reference"
+title: "Reference: Windows Performance Analyzer views"
 description: "Reference for C++ Build Insights views available in Windows Performance Analyzer."
 ms.date: "11/03/2019"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
-# C++ Build Insights: Windows Performance Analyzer views reference
+# Reference: Windows Performance Analyzer views
 
 ::: moniker range="<=vs-2017"
 
@@ -18,7 +18,7 @@ This article provides details on each of the C++ Build Insights views available 
 - data column descriptions; and
 - available presets for each view, including their intended use and preferred viewing mode.
 
-If you're new to WPA, we recommend that you first familiarize yourself with the [basics of WPA for C++ Build Insights](wpa-basics.md).
+If you're new to WPA, we recommend that you first familiarize yourself with the [basics of WPA for C++ Build Insights](/cpp/build-insights/tutorials/wpa-basics).
 
 ## Build Explorer
 
@@ -120,9 +120,9 @@ The Functions view is used to identify functions with an excessively long code g
 
 ## See also
 
-[Get started with C++ Build Insights](get-started-with-cpp-build-insights.md)\
-[vcperf.exe reference](vcperf-reference.md)\
-[Windows Performance Analyzer basics](wpa-basics.md)\
+[Get started with C++ Build Insights](/cpp/build-insights/get-started-with-cpp-build-insights)\
+[Reference: vcperf commands](vcperf-commands.md)\
+[Tutorial: Windows Performance Analyzer basics](/cpp/build-insights/tutorials/wpa-basics)\
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end
