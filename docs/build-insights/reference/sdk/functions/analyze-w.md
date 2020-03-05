@@ -1,0 +1,38 @@
+---
+title: "AnalyzeW"
+description: "The C++ Build Insights SDK AnalyzeW function reference."
+ms.date: "02/12/2020"
+helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "AnalyzeW", "throughput analysis", "build time analysis", "vcperf.exe"]
+---
+# AnalyzeW
+
+::: moniker range="<=vs-2015"
+
+The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio version selector control for this article to Visual Studio 2017 or Visual Studio 2019.
+
+::: moniker-end
+::: moniker range=">=vs-2017"
+
+The `AnalyzeW` function is used to analyze MSVC events read from an input Event Tracing for Windows (ETW) trace.
+
+## Syntax
+
+```cpp
+enum RESULT_CODE AnalyzeW(
+    const wchar_t*             inputLogFile,
+    const ANALYSIS_DESCRIPTOR* analysisDescriptor);
+```
+
+### Parameters
+
+*inputLogFile*\
+The input ETW trace that you wish to read events from.
+
+*analysisDescriptor*\
+Pointer to an [ANALYSIS_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) object. Use this object to configure the analysis.
+
+### Return Value
+
+A result code from the [RESULT_CODE](../other-types/result-code-enum.md) enum.
+
+::: moniker-end
