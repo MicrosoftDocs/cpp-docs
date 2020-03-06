@@ -15,7 +15,7 @@ Linux support is available in Visual Studio 2017 and later.
 
 Property | Description | Choices
 --- | ---| ---
-Remote debug machine | **Visual Studio 2019 version 16.1**: Specifies the machine to debug the program on. Can be different than the remote build machine that's specified on the [General](general-linux.md) page.
+Remote debug machine | **Visual Studio 2019 version 16.1**: Specifies the machine to debug the program on. Can be different than the remote build machine that's specified on the [General](general-linux.md) page. You can add or edit a target machine connection by using **Tools** > **Options** > **Cross Platform** > **Connection Manager**.
 Pre-Launch Command | A command that's run on the shell before the debugger starts, that can be used to affect the debugging environment.
 Program | The full path on the remote system to the program to debug. If left empty or unchanged, it defaults to the current project output.
 Program Arguments | The command-line arguments to pass to the program being debugged.
