@@ -1,8 +1,8 @@
 ---
 title: "Compiler errors C2700 Through C2799"
 ms.date: "04/21/2019"
-f1_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
-helpviewer_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
+f1_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
+helpviewer_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
 ---
 # Compiler errors C2700 Through C2799
@@ -74,7 +74,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2756](compiler-error-c2756.md)|'*template*': default template arguments not allowed on a partial specialization|
 |[Compiler error C2757](compiler-error-c2757.md)|'*identifier*': a symbol with this name already exists and therefore this name cannot be used as a namespace name|
 |[Compiler error C2758](compiler-error-c2758.md)|'*member*': a member of reference type must be initialized|
-|[Compiler error C2759](compiler-error-c2759.md)|in-line assembler reports: *error_message*|
+|Compiler error C2759|in-line assembler reports: *error_message*|
 |[Compiler error C2760](compiler-error-c2760.md)|syntax error: expected '*token1*' not '*token2*'|
 |[Compiler error C2761](compiler-error-c2761.md)|'*function*': member function redeclaration not allowed|
 |[Compiler error C2762](compiler-error-c2762.md)|'*template*': invalid expression as a template argument for '*parameter*'|

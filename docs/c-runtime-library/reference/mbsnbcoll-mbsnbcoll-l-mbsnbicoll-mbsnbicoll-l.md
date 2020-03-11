@@ -5,8 +5,8 @@ api_name: ["_mbsnbicoll_l", "_mbsnbcoll_l", "_mbsnbcoll", "_mbsnbicoll"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["mbsnbicoll", "mbsnbcoll", "mbsnbicoll_l", "_mbsnbcoll", "_mbsnbicoll" "mbsnbcoll_l"]
-helpviewer_keywords: ["_mbsnbcoll_l function", "mbsnbcoll_l function", "_mbsnbcoll function", "_tcsnicoll function", "mbsnbcoll function", "mbsnbicoll_l function", "mbsnbicoll function", "_tcsncoll function", "_mbsnbicoll function", "_mbsnbicoll_l function", "tcsncoll function", "tcsnicoll function"]
+f1_keywords: ["_mbsnbcoll", "_mbsnbcoll_l", "_mbsnbicoll", "mbsnbcoll_l"]
+helpviewer_keywords: ["_mbsnbcoll_l function", "mbsnbcoll_l function", "_mbsnbcoll function", "_tcsnicoll function", "mbsnbcoll function", "mbsnbicoll_l function", "mbsnbicoll function", "_tcsncoll function", "_mbsnbicoll function", "_mbsnbicoll_l function", "_tcsncoll_l function", "_tcsnicoll_l function"]
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
 ---
 # _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
