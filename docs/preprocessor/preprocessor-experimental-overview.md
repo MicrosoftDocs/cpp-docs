@@ -1,27 +1,28 @@
 ---
 title: "MSVC experimental preprocessor overview"
 description: "The MSVC preprocessor is being updated for conformance with C/C++ standards."
-ms.date: "11/06/2019"
+ms.date: "02/09/2020"
 helpviewer_keywords: ["preprocessor, experimental"]
 ---
-
 # MSVC experimental preprocessor overview
 
-The Microsoft C++ preprocessor is currently being updated to improve standards conformance, fix longstanding bugs, and change some behaviors which are officially undefined. In addition, new diagnostics have been added to warn on errors in macro definitions.
+::: moniker range="vs-2015"
 
-These changes in their current state are available by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions.
+Visual Studio 2015 uses the traditional preprocessor, which doesn't conform with Standard C++. An experimental preprocessor is available in Visual Studio 2017 and Visual Studio 2019 by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. More information about using the new preprocessor in Visual Studio 2017 and Visual Studio 2019 is available. To see it, use the documentation version selector to select one of those versions.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
+We're updating the Microsoft C++ preprocessor to improve standards conformance, fix longstanding bugs, and change some behaviors that are officially undefined. We've also added new diagnostics to warn on errors in macro definitions.
+
+These changes are available by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions.
+
+Starting in Visual Studio 2019 version 16.5, experimental preprocessor support for the C++20 standard is feature-complete.
 
 ## New predefined macro
 
-You can detect which preprocessor is in use at compile time. Check the value of the predefined macro [\_MSVC\_TRADITIONAL](predefined-macros.md) to tell if the traditional preprocessor is in use. This macro is set unconditionally by versions of the compiler that support it, independent of which preprocessor is invoked. Its value is 1 for the traditional preprocessor. It's 0 for the conformant experimental preprocessor:
-
-```cpp
-#if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
-// Logic using the traditional preprocessor
-#else
-// Logic using cross-platform compatible preprocessor
-#endif
-```
+You can detect which preprocessor is in use at compile time. Check the value of the predefined macro [\_MSVC\_TRADITIONAL](predefined-macros.md) to tell if the traditional preprocessor is in use. This macro is set unconditionally by versions of the compiler that support it, independent of which preprocessor is invoked. Its value is 1 for the traditional preprocessor. It's 0 for the conforming preprocessor.
 
 ```cpp
 #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -33,11 +34,11 @@ You can detect which preprocessor is in use at compile time. Check the value of 
 
 ## Behavior changes in the experimental preprocessor
 
-The initial work on the experimental preprocessor has been focused on making all macro expansions conformant in order to enable the use of the MSVC compiler with libraries that are currently blocked due to traditional behaviors. Below is a list of some of the more common breaking changes that were run into when testing the updated preprocessor with real world projects.
+The initial work on the experimental preprocessor has been focused on making all macro expansions conform to the standard. It lets you use the MSVC compiler with libraries that are currently blocked by the traditional behaviors. We tested the updated preprocessor on real world projects. Here are some of the more common breaking changes we found:
 
 ### Macro comments
 
-The traditional preprocessor is based on character buffers rather than preprocessor tokens. This allows unusual behavior such as the following preprocessor comment trick which will not work under the conforming preprocessor:
+The traditional preprocessor is based on character buffers rather than preprocessor tokens. It allows unusual behavior such as the following preprocessor comment trick, which doesn't work under the conforming preprocessor:
 
 ```cpp
 #if DISAPPEAR
@@ -50,7 +51,7 @@ The traditional preprocessor is based on character buffers rather than preproces
 DISAPPEARING_TYPE myVal;
 ```
 
-The standards-conformant fix is to declare `int myVal` inside the appropriate `#ifdef/#endif` directives:
+The standards-conforming fix is to declare `int myVal` inside the appropriate `#ifdef/#endif` directives:
 
 ```cpp
 #define MYVAL 1
@@ -72,7 +73,7 @@ The traditional preprocessor incorrectly combines a string prefix to the result 
 const wchar_t *info = DEBUG_INFO(hello world);
 ```
 
-In this case the `L` prefix is unnecessary because the adjacent string literals are combined after macro expansion anyway. The backward-compatible fix is to change the definition to the following:
+In this case, the `L` prefix is unnecessary because the adjacent string literals are combined after macro expansion anyway. The backward-compatible fix is to change the definition:
 
 ```cpp
 #define DEBUG_INFO(val) L"debug prefix:" #val
@@ -89,7 +90,7 @@ The same issue is also found in convenience macros that "stringize" the argument
 
 You can fix the issue in various ways:
 
-- Use string concatenation of `L""` and `#str` to add prefix. This works because adjacent string literals are combined after macro expansion:
+- Use string concatenation of `L""` and `#str` to add prefix. Adjacent string literals are combined after macro expansion:
 
    ```cpp
    #define STRING1(str) L""#str
@@ -110,7 +111,7 @@ You can fix the issue in various ways:
 
 ### Warning on invalid \#\#
 
-When the [token-pasting operator (##)](token-pasting-operator-hash-hash.md) does not result in a single valid preprocessing token, the behavior is undefined. The traditional preprocessor will silently fail to combine the tokens. The new preprocessor will match the behavior of most other compilers and emit a diagnostic.
+When the [token-pasting operator (##)](token-pasting-operator-hash-hash.md) doesn't result in a single valid preprocessing token, the behavior is undefined. The traditional preprocessor silently fails to combine the tokens. The new preprocessor matches the behavior of most other compilers and emits a diagnostic.
 
 ```cpp
 // The ## is unnecessary and does not result in a single preprocessing token.
@@ -129,16 +130,19 @@ void func(int, int = 2, int = 3);
 #define FUNC(a, ...) func(a, __VA_ARGS__)
 int main()
 {
-    // In the traditional preprocessor, the following macro is replaced with:
+    // In the traditional preprocessor, the
+    // following macro is replaced with:
     // func(10,20,30)
     FUNC(10, 20, 30);
 
-    // A conforming preprocessor will replace the following macro with: func(1, ), which will result in a syntax error.
+    // A conforming preprocessor replaces the
+    // following macro with: func(1, ), which
+    // results in a syntax error.
     FUNC(1, );
 }
 ```
 
-In the following example, in the call to `FUNC2(1)` the variadic argument is missing in the macro being evoked. In the call to `FUNC2(1, )` the variadic argument is empty, but not missing (notice the comma in the argument list).
+In the following example, in the call to `FUNC2(1)` the variadic argument is missing in the macro being invoked. In the call to `FUNC2(1, )` the variadic argument is empty, but not missing (notice the comma in the argument list).
 
 ```cpp
 #define FUNC2(a, ...) func(a , ## __VA_ARGS__)
@@ -152,11 +156,26 @@ int main()
 }
 ```
 
-In the upcoming C++2a standard this issue has been addressed by adding `__VA_OPT__`, which is not yet implemented.
+In the upcoming C++20 standard, this issue has been addressed by adding `__VA_OPT__`. Experimental preprocessor support for  `__VA_OPT__` is available starting in Visual Studio 2019 version 16.5.
+
+### C++20 variadic macro extension
+
+The experimental preprocessor supports C++20 variadic macro argument elision:
+
+```cpp
+#define FUNC(a, ...) __VA_ARGS__ + a
+int main()
+  {
+  int ret = FUNC(0);
+  return ret;
+  }
+```
+
+This code isn't conforming before the C++20 standard. In MSVC, the experimental preprocessor extends this C++20 behavior to lower language standard modes (**`/std:c++14`**, **`/std:c++17`**). This extension matches the behavior of other major cross-platform C++ compilers.
 
 ### Macro arguments are "unpacked"
 
-In the traditional preprocessor, if a macro forwards one of its arguments to another dependent macro then the argument does not get "unpacked" when it is substituted. Usually this optimization goes unnoticed, but it can lead to unusual behavior:
+In the traditional preprocessor, if a macro forwards one of its arguments to another dependent macro then the argument doesn't get "unpacked" when it's inserted. Usually this optimization goes unnoticed, but it can lead to unusual behavior:
 
 ```cpp
 // Create a string out of the first argument, and the rest of the arguments.
@@ -164,18 +183,18 @@ In the traditional preprocessor, if a macro forwards one of its arguments to ano
 #define A( ... ) TWO_STRINGS(__VA_ARGS__)
 const char* c[2] = { A(1, 2) };
 
-// Conformant preprocessor results:
+// Conforming preprocessor results:
 // const char c[2] = { "1", "2" };
 
 // Traditional preprocessor results, all arguments are in the first string:
 // const char c[2] = { "1, 2", };
 ```
 
-When expanding `A()`, the traditional preprocessor forwards all of the arguments packaged in `__VA_ARGS__` to the first argument of TWO_STRINGS, which leaves the variadic argument of `TWO_STRINGS` empty. This causes the result of `#first` to be "1, 2" rather than just "1". If you are following along closely, then you may be wondering what happened to the result of `#__VA_ARGS__` in the traditional preprocessor expansion: if the variadic parameter is empty it should result in an empty string literal `""`. Due to a separate issue, the empty string literal token was not generated.
+When expanding `A()`, the traditional preprocessor forwards all of the arguments packaged in `__VA_ARGS__` to the first argument of TWO_STRINGS, which leaves the variadic argument of `TWO_STRINGS` empty. That causes the result of `#first` to be "1, 2" rather than just "1". If you're following along closely, then you may be wondering what happened to the result of `#__VA_ARGS__` in the traditional preprocessor expansion: if the variadic parameter is empty it should result in an empty string literal `""`. A separate issue kept the empty string literal token from being generated.
 
 ### Rescanning replacement list for macros
 
-After a macro is replaced, the resulting tokens are re-scanned for additional macro identifiers that need to be replaced. The algorithm used by the traditional preprocessor for doing the rescan is not conformant, as shown in this example based on actual code:
+After a macro is replaced, the resulting tokens are rescanned for additional macro identifiers to replace. The algorithm used by the traditional preprocessor for doing the rescan isn't conforming, as shown in this example based on actual code:
 
 ```cpp
 #define CAT(a,b) a ## b
@@ -190,20 +209,20 @@ DO_THING(1, "World");
 
 // Traditional preprocessor:
 // do_thing_one( "Hello", "World");
-// Conformant preprocessor:
+// Conforming preprocessor:
 // IMPL1 ( "Hello","World");
 ```
 
-Although this example seems a bit contrived, it has been found to occur real world code. To see what is going on we can break down the expansion starting with `DO_THING`:
+Although this example may seem a bit contrived, we've seen it in real world code. To see what's going on, we can break down the expansion starting with `DO_THING`:
 
 1. `DO_THING(1, "World")` expands to `CAT(IMPL, 1) ECHO(("Hello", "World"))`
-1. `CAT(IMPL, 1)` expands to `IMPL ## 1` which expands to `IMPL1`
+1. `CAT(IMPL, 1)` expands to `IMPL ## 1`, which expands to `IMPL1`
 1. Now the tokens are in this state: `IMPL1 ECHO(("Hello", "World"))`
-1. The preprocessor finds the function-like macro identifier `IMPL1`, but it is not followed by a `(`, so it is not considered a function-like macro invocation. 
-1. It moves on to the following tokens and finds the function-like macro `ECHO` being invoked: `ECHO(("Hello", "World"))`, which expands to `("Hello", "World")`
+1. The preprocessor finds the function-like macro identifier `IMPL1`. Since it's not followed by a `(`, it isn't considered a function-like macro invocation.
+1. The preprocessor moves on to the following tokens. It finds the function-like macro `ECHO` gets invoked: `ECHO(("Hello", "World"))`, which expands to `("Hello", "World")`
 1. `IMPL1` is never considered again for expansion, so the full result of the expansions is: `IMPL1("Hello", "World");`
 
-The macro can be modified to behave the same under the experimental preprocessor and the traditional preprocessor by adding in another layer of indirection:
+To modify the macro to behave the same way under both the experimental preprocessor and the traditional preprocessor, add another layer of indirection:
 
 ```cpp
 #define CAT(a,b) a##b
@@ -221,8 +240,10 @@ DO_THING_FIXED(1, "World");
 
 ## Incomplete features
 
-The experimental preprocessor is mostly complete, although some preprocessor directive logic still falls back to the traditional behavior. Here is a partial list of incomplete features:
+Starting in Visual Studio 2019 version 16.5, the experimental preprocessor is feature-complete for C++20. In previous versions of Visual Studio, the experimental preprocessor is mostly complete, although some preprocessor directive logic still falls back to the traditional behavior. Here's a partial list of incomplete features in Visual Studio versions before 16.5:
 
 - Support for `_Pragma`
 - C++20 features
-- Boost blocking bug: Logical operators in preprocessor constant expressions aren't fully implemented in the new preprocessor. On some `#if` directives, the new preprocessor can fall back to the traditional preprocessor. The effect is only noticeable when macros that are incompatible with the traditional preprocessor get expanded, which can happen when building Boost preprocessor slots.
+- Boost blocking bug: Logical operators in preprocessor constant expressions aren't fully implemented in the new preprocessor before version 16.5. On some `#if` directives, the new preprocessor can fall back to the traditional preprocessor. The effect is only noticeable when macros incompatible with the traditional preprocessor get expanded. It can happen when building Boost preprocessor slots.
+
+::: moniker-end
