@@ -1,7 +1,6 @@
 ---
 title: "Console and Port I/O"
 ms.date: "11/04/2016"
-f1_keywords: ["c.io"]
 helpviewer_keywords: ["routines, console and port I/O", "routines", "ports, I/O routines", "I/O [CRT], console", "I/O [CRT], port", "I/O routines, console and port I/O"]
 ms.assetid: 0eee1c92-9b3d-41e0-a43a-257e546eeec8
 ---

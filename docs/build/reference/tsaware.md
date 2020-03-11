@@ -1,7 +1,7 @@
 ---
 title: "/TSAWARE"
 ms.date: "11/04/2016"
-f1_keywords: ["/tsaware"]
+f1_keywords: ["/tsaware_editbin"]
 helpviewer_keywords: ["-TSAWARE editbin option", "/TSAWARE editbin option", "TSAWARE editbin option"]
 ms.assetid: 84715050-c907-4118-8cff-2973411ae931
 ---

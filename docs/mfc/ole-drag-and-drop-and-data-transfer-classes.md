@@ -1,7 +1,6 @@
 ---
 title: "OLE Drag-and-Drop and Data Transfer Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.ole"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "OLE drag and drop [MFC], and data transfer classes", "drag and drop [MFC], classes", "data transfer [MFC], OLE", "data transfer classes [MFC]"]
 ms.assetid: c8ab2825-ed69-4b88-8ae6-f368b94726b8
 ---

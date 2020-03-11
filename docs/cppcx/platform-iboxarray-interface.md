@@ -2,7 +2,7 @@
 title: "Platform::IBoxArray Interface"
 ms.date: "12/30/2016"
 ms.topic: "reference"
-f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Value"]
+f1_keywords: ["VCCORLIB/Platform::IBoxArray", "VCCORLIB/Platform::IBoxArray::Value"]
 helpviewer_keywords: ["Platform::IBoxArray"]
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
 ---

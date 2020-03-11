@@ -1,7 +1,6 @@
 ---
 title: "_DEBUG"
 ms.date: "11/04/2016"
-f1_keywords: ["_DEBUG", "DEBUG"]
 helpviewer_keywords: ["DEBUG macro", "_DEBUG macro"]
 ms.assetid: a9901568-4846-4731-a404-399d947e2e7a
 ---

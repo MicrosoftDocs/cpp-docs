@@ -1,8 +1,8 @@
 ---
 title: "CUIntArray Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CUIntArray", "AFXCOLL/CUIntArray", "AFXCOLL/CObArray::CObArray", "AFXCOLL/CObArray::Add", "AFXCOLL/CObArray::Append", "AFXCOLL/CObArray::Copy", "AFXCOLL/CObArray::ElementAt", "AFXCOLL/CObArray::FreeExtra", "AFXCOLL/CObArray::GetAt", "AFXCOLL/CObArray::GetCount", "AFXCOLL/CObArray::GetData", "AFXCOLL/CObArray::GetSize", "AFXCOLL/CObArray::GetUpperBound", "AFXCOLL/CObArray::InsertAt", "AFXCOLL/CObArray::IsEmpty", "AFXCOLL/CObArray::RemoveAll", "AFXCOLL/CObArray::RemoveAt", "AFXCOLL/CObArray::SetAt", "AFXCOLL/CObArray::SetAtGrow", "AFXCOLL/CObArray::SetSize"]
-helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
+f1_keywords: ["CUIntArray", "AFXCOLL/CUIntArray", "AFXCOLL/CUIntArray::CUIntArray", "AFXCOLL/CUIntArray::Add", "AFXCOLL/CUIntArray::Append", "AFXCOLL/CUIntArray::Copy", "AFXCOLL/CUIntArray::ElementAt", "AFXCOLL/CUIntArray::FreeExtra", "AFXCOLL/CUIntArray::GetAt", "AFXCOLL/CUIntArray::GetCount", "AFXCOLL/CUIntArray::GetData", "AFXCOLL/CUIntArray::GetSize", "AFXCOLL/CUIntArray::GetUpperBound", "AFXCOLL/CUIntArray::InsertAt", "AFXCOLL/CUIntArray::IsEmpty", "AFXCOLL/CUIntArray::RemoveAll", "AFXCOLL/CUIntArray::RemoveAt", "AFXCOLL/CUIntArray::SetAt", "AFXCOLL/CUIntArray::SetAtGrow", "AFXCOLL/CUIntArray::SetSize"]
+helpviewer_keywords: ["CUIntArray [MFC], CUIntArray", "CUIntArray [MFC], Add", "CUIntArray [MFC], Append", "CUIntArray [MFC], Copy", "CUIntArray [MFC], ElementAt", "CUIntArray [MFC], FreeExtra", "CUIntArray [MFC], GetAt", "CUIntArray [MFC], GetCount", "CUIntArray [MFC], GetData", "CUIntArray [MFC], GetSize", "CUIntArray [MFC], GetUpperBound", "CUIntArray [MFC], InsertAt", "CUIntArray [MFC], IsEmpty", "CUIntArray [MFC], RemoveAll", "CUIntArray [MFC], RemoveAt", "CUIntArray [MFC], SetAt", "CUIntArray [MFC], SetAtGrow", "CUIntArray [MFC], SetSize"]
 ms.assetid: d71f3d8f-ef9f-4e48-9b69-7782c0e2ddf7
 ---
 # CUIntArray Class
@@ -29,35 +29,35 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::CObArray](../../mfc/reference/cobarray-class.md#cobarray)|Constructs an empty array.|
+|[CUIntArray::CUIntArray](../../mfc/reference/cobarray-class.md#cobarray)|Constructs an empty array.|
 
 ### Public Methods
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::Add](../../mfc/reference/cobarray-class.md#add)|Adds an element to the end of the array; grows the array if necessary.|
-|[CObArray::Append](../../mfc/reference/cobarray-class.md#append)|Appends another array to the array; grows the array if necessary.|
-|[CObArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Copies another array to the array; grows the array if necessary.|
-|[CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Returns a temporary reference to the element pointer within the array.|
-|[CObArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Frees all unused memory above the current upper bound.|
-|[CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Returns the value at a given index.|
-|[CObArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Gets the number of elements in this array.|
-|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Allows access to elements in the array. Can be NULL.|
-|[CObArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Gets the number of elements in this array.|
-|[CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|Returns the largest valid index.|
-|[CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Inserts an element (or all the elements in another array) at a specified index.|
-|[CObArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Determines if the array is empty.|
-|[CObArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Removes all the elements from this array.|
-|[CObArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Removes an element at a specific index.|
-|[CObArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Sets the value for a given index; array not allowed to grow.|
-|[CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Sets the value for a given index; grows the array if necessary.|
-|[CObArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Sets the number of elements to be contained in this array.|
+|[CUIntArray::Add](../../mfc/reference/cobarray-class.md#add)|Adds an element to the end of the array; grows the array if necessary.|
+|[CUIntArray::Append](../../mfc/reference/cobarray-class.md#append)|Appends another array to the array; grows the array if necessary.|
+|[CUIntArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Copies another array to the array; grows the array if necessary.|
+|[CUIntArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Returns a temporary reference to the element pointer within the array.|
+|[CUIntArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Frees all unused memory above the current upper bound.|
+|[CUIntArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Returns the value at a given index.|
+|[CUIntArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Gets the number of elements in this array.|
+|[CUIntArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Allows access to elements in the array. Can be NULL.|
+|[CUIntArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Gets the number of elements in this array.|
+|[CUIntArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|Returns the largest valid index.|
+|[CUIntArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Inserts an element (or all the elements in another array) at a specified index.|
+|[CUIntArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Determines if the array is empty.|
+|[CUIntArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Removes all the elements from this array.|
+|[CUIntArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Removes an element at a specific index.|
+|[CUIntArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Sets the value for a given index; array not allowed to grow.|
+|[CUIntArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Sets the value for a given index; grows the array if necessary.|
+|[CUIntArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Sets the number of elements to be contained in this array.|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
+|[CUIntArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 

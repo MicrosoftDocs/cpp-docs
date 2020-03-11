@@ -1,7 +1,7 @@
 ---
 title: "vector&lt;bool&gt; Class"
 ms.date: "11/04/2016"
-f1_keywords: ["vector<bool>", "vector/std::vector::const_pointer", "vector/std::vector::const_reference", "vector/std::vector::pointer", "vector/std::vector::flip", "vector/std::vector::swap"]
+f1_keywords: ["vector<bool>", "vector/std::vector::flip"]
 helpviewer_keywords: ["std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
 ---

@@ -1,7 +1,7 @@
 ---
 title: "IDBPropertiesImpl Class"
 ms.date: "11/04/2016"
-f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl", "IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties", "GetProperties", "IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo", "IDBPropertiesImpl.SetProperties", "SetProperties", "IDBPropertiesImpl::SetProperties"]
+f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl", "IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties", "IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo", "IDBPropertiesImpl.SetProperties", "IDBPropertiesImpl::SetProperties"]
 helpviewer_keywords: ["IDBPropertiesImpl class", "GetProperties method", "GetPropertyInfo method", "SetProperties method"]
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
 ---

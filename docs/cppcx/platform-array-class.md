@@ -2,7 +2,7 @@
 title: "Platform::Array Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
-f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Array Constructors", "VCCORLIB/Namespace not found::Platform::Array::Value"]
+f1_keywords: ["VCCORLIB/Platform::Array", "VCCORLIB/Platform::Array::Value"]
 helpviewer_keywords: ["Platform::Array Class"]
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
 ---

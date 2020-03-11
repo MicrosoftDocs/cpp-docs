@@ -1,7 +1,7 @@
 ---
 title: "/LARGEADDRESSAWARE"
 ms.date: "11/04/2016"
-f1_keywords: ["/largeaddressaware"]
+f1_keywords: ["/largeaddressaware_editbin"]
 helpviewer_keywords: ["-LARGEADDRESSAWARE editbin option", "/LARGEADDRESSAWARE editbin option", "LARGEADDRESSAWARE editbin option"]
 ms.assetid: 5db58df3-4457-4808-adf7-2bee6ea97486
 ---

@@ -1,7 +1,7 @@
 ---
 title: "/NATVIS (Add Natvis to PDB)"
 ms.date: "08/10/2017"
-f1_keywords: ["/natvis", "VC.Project.VCLinkerTool.ImportLIbrary"]
+f1_keywords: ["/natvis"]
 helpviewer_keywords: ["NATVIS linker option", "/NATVIS linker option", "-NATVIS linker option", "Add Natvis file to PDB"]
 ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
 ---
