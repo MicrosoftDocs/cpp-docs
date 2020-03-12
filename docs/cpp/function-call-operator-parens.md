@@ -19,7 +19,7 @@ postfix-expression
 
 The arguments to the function-call operator are zero or more expressions separated by commas — the actual arguments to the function.
 
-The *postfix-expression* must evaluate to a function address (for example, a function identifier or the value of a function pointer), and *argument-expression-list* is a list of expressions (separated by commas) whose values (the arguments) are passed to the function. The *argument-expression-list* argument can be empty.
+The *postfix-expression* must unambiguously evaluate to a function address (for example, by matching a function identifier applicable to the parameters of the given function-call or by evaluating a function pointer), and *argument-expression-list* is a list of expressions (separated by commas) whose values (the arguments) will be passed to the function. The *argument-expression-list* argument can be empty.
 
 The *postfix-expression* must be of one of these types:
 
