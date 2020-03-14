@@ -1,7 +1,6 @@
 ---
 title: "Document-Template Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.document"]
 helpviewer_keywords: ["document templates [MFC], classes"]
 ms.assetid: 901749e9-8048-44a0-b5e2-361554650a73
 ---

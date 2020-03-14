@@ -1,7 +1,6 @@
 ---
 title: "ODBC Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.data"]
 helpviewer_keywords: ["database classes [MFC], ODBC", "ODBC classes [MFC]"]
 ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
 ---

@@ -1,8 +1,8 @@
 ---
 title: "CMapStringToString Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CMapStringToString", "AFXCOLL/CMapStringToString", "AFXCOLL/CMapStringToString::CPair", "AFXCOLL/CMapStringToOb::CMapStringToOb", "AFXCOLL/CMapStringToOb::GetCount", "AFXCOLL/CMapStringToOb::GetHashTableSize", "AFXCOLL/CMapStringToOb::GetNextAssoc", "AFXCOLL/CMapStringToOb::GetSize", "AFXCOLL/CMapStringToOb::GetStartPosition", "AFXCOLL/CMapStringToOb::HashKey", "AFXCOLL/CMapStringToOb::InitHashTable", "AFXCOLL/CMapStringToOb::IsEmpty", "AFXCOLL/CMapStringToOb::Lookup", "AFXCOLL/CMapStringToOb::LookupKey", "AFXCOLL/CMapStringToString::PGetFirstAssoc", "AFXCOLL/CMapStringToString::PGetNextAssoc", "AFXCOLL/CMapStringToString::PLookup", "AFXCOLL/CMapStringToOb::RemoveAll", "AFXCOLL/CMapStringToOb::RemoveKey", "AFXCOLL/CMapStringToOb::SetAt"]
-helpviewer_keywords: ["CMapStringToString [MFC], CPair", "CMapStringToOb [MFC], CMapStringToOb", "CMapStringToOb [MFC], GetCount", "CMapStringToOb [MFC], GetHashTableSize", "CMapStringToOb [MFC], GetNextAssoc", "CMapStringToOb [MFC], GetSize", "CMapStringToOb [MFC], GetStartPosition", "CMapStringToOb [MFC], HashKey", "CMapStringToOb [MFC], InitHashTable", "CMapStringToOb [MFC], IsEmpty", "CMapStringToOb [MFC], Lookup", "CMapStringToOb [MFC], LookupKey", "CMapStringToString [MFC], PGetFirstAssoc", "CMapStringToString [MFC], PGetNextAssoc", "CMapStringToString [MFC], PLookup", "CMapStringToOb [MFC], RemoveAll", "CMapStringToOb [MFC], RemoveKey", "CMapStringToOb [MFC], SetAt"]
+f1_keywords: ["CMapStringToString", "AFXCOLL/CMapStringToString", "AFXCOLL/CMapStringToString::CPair", "AFXCOLL/CMapStringToString::CMapStringToString", "AFXCOLL/CMapStringToString::GetCount", "AFXCOLL/CMapStringToString::GetHashTableSize", "AFXCOLL/CMapStringToString::GetNextAssoc", "AFXCOLL/CMapStringToString::GetSize", "AFXCOLL/CMapStringToString::GetStartPosition", "AFXCOLL/CMapStringToString::HashKey", "AFXCOLL/CMapStringToString::InitHashTable", "AFXCOLL/CMapStringToString::IsEmpty", "AFXCOLL/CMapStringToString::Lookup", "AFXCOLL/CMapStringToString::LookupKey", "AFXCOLL/CMapStringToString::PGetFirstAssoc", "AFXCOLL/CMapStringToString::PGetNextAssoc", "AFXCOLL/CMapStringToString::PLookup", "AFXCOLL/CMapStringToString::RemoveAll", "AFXCOLL/CMapStringToString::RemoveKey", "AFXCOLL/CMapStringToString::SetAt"]
+helpviewer_keywords: ["CMapStringToString [MFC], CPair", "CMapStringToString [MFC], CMapStringToString", "CMapStringToString [MFC], GetCount", "CMapStringToString [MFC], GetHashTableSize", "CMapStringToString [MFC], GetNextAssoc", "CMapStringToString [MFC], GetSize", "CMapStringToString [MFC], GetStartPosition", "CMapStringToString [MFC], HashKey", "CMapStringToString [MFC], InitHashTable", "CMapStringToString [MFC], IsEmpty", "CMapStringToString [MFC], Lookup", "CMapStringToString [MFC], LookupKey", "CMapStringToString [MFC], PGetFirstAssoc", "CMapStringToString [MFC], PGetNextAssoc", "CMapStringToString [MFC], PLookup", "CMapStringToString [MFC], RemoveAll", "CMapStringToString [MFC], RemoveKey", "CMapStringToString [MFC], SetAt"]
 ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
 ---
 # CMapStringToString Class
@@ -19,11 +19,11 @@ class CMapStringToString : public CObject
 
 The member functions of `CMapStringToString` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a return value or "output" function parameter, substitute a pointer to **char**. Wherever you see a `CObject` pointer as an "input" function parameter, substitute a pointer to **char**.
 
-`BOOL CMapStringToOb::Lookup(const char*<key>, CObject*&<rValue>) const;`
+`BOOL CMapStringToString::Lookup(LPCTSTR<key>, CString&<rValue>) const;`
 
 for example, translates to
 
-`BOOL CMapStringToString::Lookup(LPCTSTR<key>, CString&<rValue>) const;`
+`BOOL CMapStringToOb::Lookup(const char*<key>, CObject*&<rValue>) const;`
 
 ### Public Structures
 
@@ -35,34 +35,34 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CMapStringToOb::CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Constructor.|
+|[CMapStringToString::CMapStringToString](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Constructor.|
 
 ### Public Methods
 
 |Name|Description|
 |----------|-----------------|
-|[CMapStringToOb::GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Returns the number of elements in this map.|
-|[CMapStringToOb::GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Determines the current number of elements in the hash table.|
-|[CMapStringToOb::GetNextAssoc](../../mfc/reference/cmapstringtoob-class.md#getnextassoc)|Gets the next element for iterating.|
-|[CMapStringToOb::GetSize](../../mfc/reference/cmapstringtoob-class.md#getsize)|Returns the number of elements in this map.|
-|[CMapStringToOb::GetStartPosition](../../mfc/reference/cmapstringtoob-class.md#getstartposition)|Returns the position of the first element.|
-|[CMapStringToOb::HashKey](../../mfc/reference/cmapstringtoob-class.md#hashkey)|Calculates the hash value of a specified key.|
-|[CMapStringToOb::InitHashTable](../../mfc/reference/cmapstringtoob-class.md#inithashtable)|Initializes the hash table.|
-|[CMapStringToOb::IsEmpty](../../mfc/reference/cmapstringtoob-class.md#isempty)|Tests for the empty-map condition (no elements).|
-|[CMapStringToOb::Lookup](../../mfc/reference/cmapstringtoob-class.md#lookup)|Looks up a void pointer based on the void pointer key. The pointer value, not the entity it points to, is used for the key comparison.|
-|[CMapStringToOb::LookupKey](../../mfc/reference/cmapstringtoob-class.md#lookupkey)|Returns a reference to the key associated with the specified key value.|
+|[CMapStringToString::GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Returns the number of elements in this map.|
+|[CMapStringToString::GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Determines the current number of elements in the hash table.|
+|[CMapStringToString::GetNextAssoc](../../mfc/reference/cmapstringtoob-class.md#getnextassoc)|Gets the next element for iterating.|
+|[CMapStringToString::GetSize](../../mfc/reference/cmapstringtoob-class.md#getsize)|Returns the number of elements in this map.|
+|[CMapStringToString::GetStartPosition](../../mfc/reference/cmapstringtoob-class.md#getstartposition)|Returns the position of the first element.|
+|[CMapStringToString::HashKey](../../mfc/reference/cmapstringtoob-class.md#hashkey)|Calculates the hash value of a specified key.|
+|[CMapStringToString::InitHashTable](../../mfc/reference/cmapstringtoob-class.md#inithashtable)|Initializes the hash table.|
+|[CMapStringToString::IsEmpty](../../mfc/reference/cmapstringtoob-class.md#isempty)|Tests for the empty-map condition (no elements).|
+|[CMapStringToString::Lookup](../../mfc/reference/cmapstringtoob-class.md#lookup)|Looks up a void pointer based on the void pointer key. The pointer value, not the entity it points to, is used for the key comparison.|
+|[CMapStringToString::LookupKey](../../mfc/reference/cmapstringtoob-class.md#lookupkey)|Returns a reference to the key associated with the specified key value.|
 |[CMapStringToString::PGetFirstAssoc](#pgetfirstassoc)|Gets a pointer to the first `CString` in the map.|
 |[CMapStringToString::PGetNextAssoc](#pgetnextassoc)|Gets a pointer to the next `CString` for iterating.|
 |[CMapStringToString::PLookup](#plookup)|Returns a pointer to a `CString` whose value matches the specified value.|
-|[CMapStringToOb::RemoveAll](../../mfc/reference/cmapstringtoob-class.md#removeall)|Removes all the elements from this map.|
-|[CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)|Removes an element specified by a key.|
-|[CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)|Inserts an element into the map; replaces an existing element if a matching key is found.|
+|[CMapStringToString::RemoveAll](../../mfc/reference/cmapstringtoob-class.md#removeall)|Removes all the elements from this map.|
+|[CMapStringToString::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)|Removes an element specified by a key.|
+|[CMapStringToString::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)|Inserts an element into the map; replaces an existing element if a matching key is found.|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
-|[CMapStringToOb::operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
+|[CMapStringToString::operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
 
 ## Remarks
 

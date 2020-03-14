@@ -2,7 +2,7 @@
 title: "/errorReport (Report Internal Compiler Errors)"
 description: "Reference for the Microsoft C/C++ compiler /errorReport command-line option."
 ms.date: "02/09/2020"
-f1_keywords: ["VC.Project.VCCLCompilerTool.ErrorReporting", "/errorreport"]
+f1_keywords: ["VC.Project.VCCLCompilerTool.ErrorReporting"]
 helpviewer_keywords: ["/errorReport compiler option [C++]", "-errorReport compiler option [C++]"]
 ms.assetid: 819828f8-b0a5-412c-9c57-bf822f17e667
 ---

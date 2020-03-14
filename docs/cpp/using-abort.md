@@ -1,7 +1,6 @@
 ---
 title: "Using abort"
 ms.date: "11/04/2016"
-f1_keywords: ["Abort"]
 helpviewer_keywords: ["abort function"]
 ms.assetid: 3ba39b78-ef74-4a8d-8dee-2d62442de174
 ---

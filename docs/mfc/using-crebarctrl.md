@@ -1,7 +1,6 @@
 ---
 title: "Using CReBarCtrl"
 ms.date: "11/19/2018"
-f1_keywords: ["CReBarCtrl"]
 helpviewer_keywords: ["child windows [MFC], rebar controls", "combo boxes [MFC], in rebar controls", "rebar controls"]
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
 ---

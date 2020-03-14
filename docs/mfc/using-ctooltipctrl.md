@@ -1,7 +1,6 @@
 ---
 title: "Using CToolTipCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CToolTipCtrl"]
 helpviewer_keywords: ["CToolTipCtrl class [MFC], creating tool tips", "CToolTipCtrl class"]
 ms.assetid: 8fc58a04-4792-4223-a092-d349d11344da
 ---

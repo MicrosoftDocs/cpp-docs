@@ -1,7 +1,6 @@
 ---
 title: "Language Strings"
 ms.date: "11/04/2016"
-f1_keywords: ["c.strings"]
 helpviewer_keywords: ["language strings"]
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Add an event handler"
 ms.date: "11/12/2018"
-f1_keywords: ["vc.codewiz.eventhandler.overview", "vc.codewiz.eventhandler.overview"]
+f1_keywords: ["vc.codewiz.eventhandler.overview"]
 helpviewer_keywords: ["event handlers, adding", "properties [Visual Studio], MSBuild", "MSBuild, properties", "event handler wizard [C++]"]
 ms.assetid: 050bebf0-a9e0-474b-905c-796fe5ac8fc3
 ---

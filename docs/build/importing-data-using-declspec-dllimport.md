@@ -1,7 +1,6 @@
 ---
 title: "Importing Data Using __declspec(dllimport)"
 ms.date: "11/04/2016"
-f1_keywords: ["dllimport"]
 helpviewer_keywords: ["importing data [C++]", "dllimport attribute [C++], data imports", "__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]
 ms.assetid: 0ae70b39-87c7-4181-8be9-e786e0db60b0
 ---

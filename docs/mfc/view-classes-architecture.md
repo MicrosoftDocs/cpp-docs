@@ -1,7 +1,6 @@
 ---
 title: "View Classes (Architecture)"
 ms.date: "09/17/2019"
-f1_keywords: ["vc.classes.view"]
 helpviewer_keywords: ["form and record views [MFC]", "view classes [MFC]", "control views [MFC]", "view classes [MFC], architecture"]
 ms.assetid: 8894579a-1436-441e-b985-83711061e495
 ---

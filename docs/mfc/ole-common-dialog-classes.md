@@ -1,7 +1,6 @@
 ---
 title: "OLE Common Dialog Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.ole"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "dialog classes [MFC], OLE", "OLE common dialog classes [MFC]", "common dialog classes [MFC]"]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
 ---

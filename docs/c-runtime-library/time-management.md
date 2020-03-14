@@ -1,7 +1,6 @@
 ---
 title: "Time Management"
 ms.date: "11/04/2016"
-f1_keywords: ["c.memory"]
 helpviewer_keywords: ["dates, run-time library members", "time, time management", "date functions", "time functions"]
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
 ---

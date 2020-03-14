@@ -1,7 +1,6 @@
 ---
 title: "LIB Input Files"
 ms.date: "11/04/2016"
-f1_keywords: ["Lib"]
 helpviewer_keywords: ["input files, LIB"]
 ms.assetid: e1236f0d-cd90-446b-b900-f311f456085c
 ---

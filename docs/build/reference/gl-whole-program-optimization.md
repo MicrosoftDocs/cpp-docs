@@ -1,7 +1,7 @@
 ---
 title: "/GL (Whole Program Optimization)"
 ms.date: "11/04/2016"
-f1_keywords: ["/gl", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization"]
+f1_keywords: ["/gl"]
 helpviewer_keywords: ["/GL compiler option [C++]", "whole program optimizations and C++ compiler", "-GL compiler option [C++]", "GL compiler option [C++]"]
 ms.assetid: 09d51e2d-9728-4bd0-b5dc-3b8284aca1d1
 ---
