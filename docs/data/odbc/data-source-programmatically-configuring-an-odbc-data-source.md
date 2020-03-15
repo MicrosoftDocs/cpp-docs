@@ -83,7 +83,7 @@ One way to find the keynames and values for the *lpszAttributes* parameter is to
 
    - For 32 bit, find the key **HKEY_CURRENT_USER\Software\ODBC\ODBC.INI\ODBC Data Sources** in the left pane.
 
-      The right pane lists entries of the form: "pub: REG_SZ:*<data source name>*", where *<data source name>* is a data source that has already been configured with the desired settings for the driver you intend to use. Select the data source you want, for example, SQL Server. The items following the string "pub:" are, in order, the keyname and value to use in your *lpszAttributes* parameter.
+      The right pane lists entries of the form: "pub: REG_SZ:*\<data source name>*", where *\<data source name>* is a data source that has already been configured with the desired settings for the driver you intend to use. Select the data source you want, for example, SQL Server. The items following the string "pub:" are, in order, the keyname and value to use in your *lpszAttributes* parameter.
 
    - For 16 bit, find the section in the Odbc.ini file marked by [*\<data source name>*].
 

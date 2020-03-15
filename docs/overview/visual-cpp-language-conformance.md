@@ -183,14 +183,14 @@ For details on Visual Studio 2017 or Visual Studio 2019 MSVC conformance improve
 |&nbsp;&nbsp;[P0415R1 constexpr For \<complex> (Again)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0415r1.html)|No|
 |&nbsp;&nbsp;[P0439R0 enum class memory_order](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0439r0.html)|No|
 |&nbsp;&nbsp;[P0475R1 Guaranteed Copy Elision For Piecewise Construction](https://wg21.link/P0475R1)|No|
-|&nbsp;&nbsp;[P0476R2 <bit> bit_cast](https://wg21.link/P0476R2)|No|
+|&nbsp;&nbsp;[P0476R2 \<bit> bit_cast](https://wg21.link/P0476R2)|No|
 |&nbsp;&nbsp;[P0528R3 Atomic Compare-And-Exchange With Padding Bits](https://wg21.link/P0528R3)|No|
-|&nbsp;&nbsp;[P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()](https://wg21.link/P0556R3)|No|
+|&nbsp;&nbsp;[P0556R3 \<bit> ispow2(), ceil2(), floor2(), log2p1()](https://wg21.link/P0556R3)|No|
 |&nbsp;&nbsp;[P0591R4 Utility Functions For Uses-Allocator Construction](https://wg21.link/P0591R4)|No|
 |&nbsp;&nbsp;[P0608R3 Improving variant's Converting Constructor/Assignment](https://wg21.link/P0608R3)|No|
 |&nbsp;&nbsp;[P0619R4 Removing C++17-Deprecated Features In C++20](https://wg21.link/P0619R4)|No|
 |&nbsp;&nbsp;[P0653R2 to_address()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html)|No|
-|&nbsp;&nbsp;[P0655R1 visit<R>()](https://wg21.link/P0655R1)|No|
+|&nbsp;&nbsp;[P0655R1 visit\<R>()](https://wg21.link/P0655R1)|No|
 |&nbsp;&nbsp;[P0674R1 make_shared() For Arrays](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0674r1.html)|No|
 |&nbsp;&nbsp;[P0718R2 atomic\<shared_ptr\<T>>, atomic\<weak_ptr\<T>>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0718r2.html)|No|
 |&nbsp;&nbsp;[P0738R2 istream_iterator Cleanup](https://wg21.link/P0738R2)|No|
@@ -348,11 +348,11 @@ __VS 2019 16.4__ indicates features that are supported in Visual Studio 2019 ver
 
 <a name="note_A"></a>__A__ In [/std:c++14](../build/reference/std-specify-language-standard-version.md) mode, dynamic exception specifications remain unimplemented, and `throw()` is still treated as a synonym for `__declspec(nothrow)`. In C++17, dynamic exception specifications were mostly removed by P0003R5, leaving one vestige: `throw()` is deprecated and required to behave as a synonym for `noexcept`. In [/std:c++17](../build/reference/std-specify-language-standard-version.md) mode, MSVC now conforms to the Standard by giving `throw()` the same behavior as `noexcept`, that is, enforcement via termination.
 
-The compiler option [/Zc:noexceptTypes](../build/reference/zc-noexcepttypes.md) requests our old behavior of `__declspec(nothrow)`. It’s likely that `throw()` will be removed in C++20. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under [/std:c++17](../build/reference/std-specify-language-standard-version.md) and [/permissive-](../build/reference/permissive-standards-conformance.md).
+The compiler option [/Zc:noexceptTypes](../build/reference/zc-noexcepttypes.md) requests our old behavior of `__declspec(nothrow)`. It's likely that `throw()` will be removed in C++20. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under [/std:c++17](../build/reference/std-specify-language-standard-version.md) and [/permissive-](../build/reference/permissive-standards-conformance.md).
 
 <a name="note_B"></a>__B__ Supported in [/permissive-](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. For more information, see [Two-phase name lookup support comes to MSVC](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
 
-<a name="note_C"></a>__C__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. We're overhauling the preprocessor, and began shipping those changes in Visual Studio 2017 version 15.8 with the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch.
+<a name="note_C"></a>__C__ The compiler's support for C99 Preprocessor rules is incomplete in Visual Studio 2017. We're overhauling the preprocessor, and began shipping those changes in Visual Studio 2017 version 15.8 with the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch.
 
 <a name="note_D"></a>__D__ Supported under [/std:c++14](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
@@ -381,7 +381,7 @@ previous `std::experimental` version, made necessary by symlink support, bug fix
 - VS 2019 16.2: Floating-point `to_chars()` overloads for precision fixed and precision scientific.
 - VS 2019 16.4: The floating-point `to_chars()` overload for precision general.
 
-<a name ="note_parallel"></a> __parallel__ C++17’s parallel algorithms library is complete. Complete doesn’t mean every algorithm is parallelized in every case. The most important algorithms have been parallelized, and execution policy signatures are provided even where algorithms aren't parallelized. Our implementation’s central internal header, yvals_core.h, contains the following "Parallel Algorithms Notes": C++ allows an implementation to implement parallel algorithms as calls to the serial algorithms. This implementation parallelizes several common algorithm calls, but not all.
+<a name ="note_parallel"></a> __parallel__ C++17's parallel algorithms library is complete. Complete doesn't mean every algorithm is parallelized in every case. The most important algorithms have been parallelized, and execution policy signatures are provided even where algorithms aren't parallelized. Our implementation's central internal header, yvals_core.h, contains the following "Parallel Algorithms Notes": C++ allows an implementation to implement parallel algorithms as calls to the serial algorithms. This implementation parallelizes several common algorithm calls, but not all.
 
 The following algorithms are parallelized:
 

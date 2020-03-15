@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["native code [C++], Visual C# and", "classes [C++], Visual C# and"]
 ms.assetid: 988819ae-cc6a-4453-8ff5-be369210d962
 ---
-# How to: Wrap Native Class for Use by C#
+# How to: Wrap Native Class for Use by C\#
 
 This sample shows how to wrap a native C++ class so it can be consumed by code authored in C#, or other .NET language.
 
