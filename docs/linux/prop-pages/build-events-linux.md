@@ -68,5 +68,3 @@ Use In Build | Specifies whether this build event is excluded from the build for
 Additional files to copy | Specifies additional files to copy from the remote system. Optionally the list can be provided as a remote to local mapping pairs using a syntax like this: fullremotepath1:=fulllocalpath1;fullremotepath2:=fulllocalpath2, where a remote file can be copied to the specified location on the local machine.
 
 ::: moniker-end
-
-

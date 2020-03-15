@@ -41,4 +41,3 @@ A compile-time error is generated if the template parameter *T* doesn't derive f
 ## Requirements
 
 **Header:** client.h
-

@@ -92,7 +92,6 @@ An implicit conversion must exist from *convertible_string_type* to the string_v
 
 The comparison is based on a pairwise lexicographical comparison of the character sequences. If they have the same number of elements and the elements are all equal, the two objects are equal.
 
-
 ## <a name="op_lt"></a> operator&lt;
 
 Tests if the object on the left side of the operator is less than the object on the right sidestring_view

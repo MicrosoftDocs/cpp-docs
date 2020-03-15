@@ -132,7 +132,6 @@ Specifies the search path to use when updating the file hashes.
 
 Additional Options
 
-
 ## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)

@@ -21,7 +21,6 @@ An internal compiler error (ICE) results when the compiler can't process a sourc
 
 The **/errorReport** arguments are overridden by the Windows Error Reporting service settings. The compiler automatically sends reports of internal errors to Microsoft, if reporting is enabled by Windows Error Reporting. No report is sent if disabled by Windows Error Reporting.
 
-
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).

@@ -27,4 +27,3 @@ A macro function returns *value* to the calling statement.
 [GOTO (MASM)](goto-masm.md)\
 [ENDM](endm.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)
-

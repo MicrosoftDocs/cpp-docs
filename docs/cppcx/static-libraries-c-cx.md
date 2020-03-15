@@ -9,7 +9,6 @@ A static library that's used in a Universal Windows Platform (UWP) app can conta
 
 ## Creating static libraries
 
-
 Instructions for creating a new project vary depending on which version of Visual Studio you have installed. Make sure you have the version selector in the upper left set to the correct version.
 
 ::: moniker range="vs-2019"

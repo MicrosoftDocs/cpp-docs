@@ -161,7 +161,6 @@ Pointer to an **int** variable that receives the length of the data.
 
 A **const** pointer to the underlying string data.
 
-
 ## <a name="hstring"></a>HString::HString
 
 Initializes a new instance of the `HString` class.

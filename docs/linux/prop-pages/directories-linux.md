@@ -21,4 +21,3 @@ Source Directories | Path to use when searching for source files to use for Inte
 Exclude Directories | Path to skip when searching for scan dependencies.
 
 ::: moniker-end
-
