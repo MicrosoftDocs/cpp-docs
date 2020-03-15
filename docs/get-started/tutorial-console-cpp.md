@@ -98,7 +98,7 @@ Now let's turn the code in this template into a calculator app.
     int main()
     {
         cout << "Calculator Console Application" << endl << endl;
-        cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b"
+        cout << "Please enter the operation to perform. Format: a + b | a - b | a * b | a / b"
             << endl;
         return 0;
     }
