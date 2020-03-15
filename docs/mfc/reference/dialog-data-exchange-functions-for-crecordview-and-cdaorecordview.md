@@ -454,7 +454,8 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
   **Header** afxdao.h
 
-  ## <a name="ddx_fieldslider"></a>  DDX_FieldSlider
+## <a name="ddx_fieldslider"></a>  DDX_FieldSlider
+
 The `DDX_FieldSlider` function synchronizes the thumb position of a slider control in a record view and an **int** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
 
 ### Syntax

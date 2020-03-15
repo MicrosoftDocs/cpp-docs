@@ -614,7 +614,8 @@ To use this function successfully:
 - The file IMAGEHLP.DLL must be on your path. If you do not have this DLL, the function will display an error message. See [Image Help Library](/windows/win32/Debug/image-help-library) for information on the function set provided by IMAGEHLP.
 
 - The modules that have frames on the stack must include debugging information. If they do not contain debugging information, the function will still generate a stack trace, but the trace will be less detailed.
-  ### Requirements
+
+### Requirements
 
 **Header:** afx.h
 
