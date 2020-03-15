@@ -655,7 +655,7 @@ union S {
   int a;
   char b;
   auto operator<=>(const S&) const { ... }
-}; 
+};
 
 bool lt(const S& lhs, const S& rhs) {
   return lhs < rhs;

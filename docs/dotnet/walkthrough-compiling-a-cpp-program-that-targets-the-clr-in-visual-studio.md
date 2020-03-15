@@ -7,7 +7,7 @@ ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
 ---
 # Walkthrough: Compile a C++/CLI Program that Targets the CLR in Visual Studio
 
-By using C++/CLI you can create C++ programs that use .NET classes as well as native C++ types. C++/CLI is intended for use in console applications and in DLLs that wrap native C++ code and make it accessible from .NET programs. To create a Windows user interface based on .NET, use C# or Visual Basic. 
+By using C++/CLI you can create C++ programs that use .NET classes as well as native C++ types. C++/CLI is intended for use in console applications and in DLLs that wrap native C++ code and make it accessible from .NET programs. To create a Windows user interface based on .NET, use C# or Visual Basic.
 
 For this procedure, you can type your own C++ program or use one of the sample programs. The sample program that we use in this procedure creates a text file named textfile.txt, and saves it to the project directory.
 
@@ -26,7 +26,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 1. In **Solution Explorer**, right-click on the top  to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, type **CLR** in the search box and then choose **CLR Empty Project** from the results list. 
+1. At the top of the dialog, type **CLR** in the search box and then choose **CLR Empty Project** from the results list.
 
 1. Choose the **Create** button to create the project.
 

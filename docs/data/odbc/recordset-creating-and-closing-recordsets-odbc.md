@@ -6,7 +6,7 @@ ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
 ---
 # Recordset: Creating and Closing Recordsets (ODBC)
 
-> [!NOTE] 
+> [!NOTE]
 > The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.

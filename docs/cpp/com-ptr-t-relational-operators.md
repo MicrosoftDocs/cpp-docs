@@ -17,7 +17,7 @@ Compare the smart pointer object to another smart pointer, raw interface pointer
 template<typename _OtherIID>
 bool operator==( const _com_ptr_t<_OtherIID>& p );
 
-template<typename _OtherIID> 
+template<typename _OtherIID>
 bool operator==( _com_ptr_t<_OtherIID>& p );
 
 template<typename _InterfaceType>

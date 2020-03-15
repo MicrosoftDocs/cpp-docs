@@ -35,7 +35,7 @@ This tutorial walks you step-by-step through a non-attributed ATL project that c
 
     The location for the source code will usually default to \Users\\\<username>\source\repos, and a new folder will be created automatically.
 
-1. In Visual Studio 2019, accept the default values and click **OK**. 
+1. In Visual Studio 2019, accept the default values and click **OK**.
    In Visual Studio 2017, click **OK** to open the **ATL Project** wizard. Click **Application Settings** to see the options available. Because this project creates a control, and a control must be an in-process server, leave the **Application type** as a DLL. Click **OK**.
 
 Visual Studio will create the project by generating several files. You can view these files in **Solution Explorer** by expanding the `Polygon` object. The files are listed below.

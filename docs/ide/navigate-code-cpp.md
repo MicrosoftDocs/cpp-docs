@@ -25,7 +25,7 @@ You can navigate to the definition of a code symbol by right-clicking it in the 
 
 ## Go To
 
-**Go To** refers to a set of navigation features that each provide a specific kind of result based on filters you specify. 
+**Go To** refers to a set of navigation features that each provide a specific kind of result based on filters you specify.
 
 You can open **Go To** with **Ctrl+,**. This action creates a search box over the document you're editing.
 
@@ -76,7 +76,7 @@ You can run a text search for anything in your solution with **Find** (**Ctrl+F*
 
 ![C&#43;&#43; Find](../ide/media/find-cpp.png "Find")
 
-**Find in Files** is a more powerful version of **Find** that displays results in the **Find Results** window. You can search external code dependencies, filter by file types, and more. 
+**Find in Files** is a more powerful version of **Find** that displays results in the **Find Results** window. You can search external code dependencies, filter by file types, and more.
 
 ![C&#43;&#43; Find in Files](../ide/media/find-in-files-cpp.png "Find in Files")
 

@@ -10,7 +10,7 @@ Visual Studio includes C++ compilers, linkers, and other tools that you can use 
 
 ## Use a 64-bit hosted developer command prompt shortcut
 
-To access these command prompts on Windows 10, on the **Start** menu, open the folder for your version of Visual Studio, for example **Visual Studio 2019**, and then choose one of the x64 native or cross-tool developer command prompts. 
+To access these command prompts on Windows 10, on the **Start** menu, open the folder for your version of Visual Studio, for example **Visual Studio 2019**, and then choose one of the x64 native or cross-tool developer command prompts.
 
 ![x64 Native Tools Command Prompt](media/x64-native-tools-command-prompt.png "x64 Native Tools in Start Menu")
 

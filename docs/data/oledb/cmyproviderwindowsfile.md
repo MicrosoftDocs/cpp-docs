@@ -13,7 +13,7 @@ The wizard creates a class that has one row of data; in this case, it's called `
 /////////////////////////////////////////////////////////////////////
 // CustomRS.H
 
-class CCustomWindowsFile: 
+class CCustomWindowsFile:
    public WIN32_FIND_DATA
 {
 public:

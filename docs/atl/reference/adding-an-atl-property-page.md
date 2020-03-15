@@ -6,7 +6,7 @@ ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
 ---
 # Adding an ATL Property Page
 
-> [!NOTE] 
+> [!NOTE]
 > The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
 To add an Active Template Library (ATL) property page to your project, your project must have been created as an ATL application or as an MFC application that contains ATL support. You can use the [ATL Project Wizard](../../atl/reference/atl-project-wizard.md) to create an ATL application or [add an ATL object to your MFC application](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.

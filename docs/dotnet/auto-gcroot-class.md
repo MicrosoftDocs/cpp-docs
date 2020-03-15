@@ -23,35 +23,35 @@ class auto_gcroot;
 The managed type to be embedded.
 
 ## Members
- 
-### Public constructors 
- 
-|Name|Description| 
-|---------|-----------| 
-|[auto_gcroot::auto_gcroot](#auto-gcroot)|The `auto_gcroot` constructor.| 
+
+### Public constructors
+
+|Name|Description|
+|---------|-----------|
+|[auto_gcroot::auto_gcroot](#auto-gcroot)|The `auto_gcroot` constructor.|
 |[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|The `auto_gcroot` destructor.
-| 
+|
 
-### Public methods 
+### Public methods
 
-|Name|Description| 
-|---------|-----------| 
-|[auto_gcroot::attach](#attach)|Attach `auto_gcroot` to an object.| 
-|[auto_gcroot::get](#get)|Gets the contained object.| 
+|Name|Description|
+|---------|-----------|
+|[auto_gcroot::attach](#attach)|Attach `auto_gcroot` to an object.|
+|[auto_gcroot::get](#get)|Gets the contained object.|
 |[auto_gcroot::release](#release)|Releases the object from `auto_gcroot` management.|
 |[auto_gcroot::reset](#reset)|Destroy the current owned object and optionally take possession of a new object.|
-|[auto_gcroot::swap](#swap)|Swaps objects with another `auto_gcroot`.| 
+|[auto_gcroot::swap](#swap)|Swaps objects with another `auto_gcroot`.|
 
- 
+
 ### Public operators
- 
-|Name|Description| 
+
+|Name|Description|
 |---------|-----------|
 |[auto_gcroot::operator-&gt;](#operator-arrow)|The member access operator.|  
 |[auto_gcroot::operator=](#operator-assign)|Assignment operator.|
-|[auto_gcroot::operator&nbsp;auto_gcroot](#operator-auto-gcroot)|Type-cast operator between `auto_gcroot` and compatible types.| 
+|[auto_gcroot::operator&nbsp;auto_gcroot](#operator-auto-gcroot)|Type-cast operator between `auto_gcroot` and compatible types.|
 |[auto_gcroot::operator&nbsp;bool](#operator-bool)|Operator for using `auto_gcroot` in a conditional expression.|  
-|[auto_gcroot::operator!](#operator-logical-not)|Operator for using `auto_gcroot` in a conditional expression.| 
+|[auto_gcroot::operator!](#operator-logical-not)|Operator for using `auto_gcroot` in a conditional expression.|
 
 ## Requirements
 

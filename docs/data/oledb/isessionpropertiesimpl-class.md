@@ -14,7 +14,7 @@ Provides an implementation of the [ISessionProperties](/previous-versions/window
 ```cpp
 template <class T, class PropClass = T>
 class ATL_NO_VTABLE ISessionPropertiesImpl :
-   public ISessionProperties, 
+   public ISessionProperties,
    public CUtlProps<PropClass>
 ```
 

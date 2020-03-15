@@ -6,7 +6,7 @@ ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
 ---
 # Storing Strings in the OLE DB Provider
 
-> [!NOTE] 
+> [!NOTE]
 > The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 

@@ -8,7 +8,7 @@ ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db
 
 You can determine data types on a rowset at compile time or at run time.
 
-If you need to determine data types at compile time, use a static accessor (such as `CAccessor`). 
+If you need to determine data types at compile time, use a static accessor (such as `CAccessor`).
 
 If you need to determine the data types at run time, use a dynamic (`CDynamicAccessor` or its children) or manual accessor (`CManualAccessor`). In these cases, you can call `GetColumnInfo` on the rowset to return the column binding information, from which you can determine types.
 

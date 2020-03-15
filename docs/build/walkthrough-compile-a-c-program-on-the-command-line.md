@@ -53,7 +53,7 @@ If you're running a different version of Windows, look in your Start menu or Sta
 If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu, and then scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
 
 If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
-   
+
 ::: moniker-end
 
 
