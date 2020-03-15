@@ -47,7 +47,7 @@ You must have these components to complete this walkthrough:
 
       - Your MFC application (.exe file).
 
-      - vcredist_x86.exe. This file is located in \Program Files (x86)\Microsoft Visual Studio \<version>\SDK\Bootstrapper\Packages\. You can also download this file from [Microsoft](https://www.microsoft.com/download/confirmation.aspx?id=5555).
+      - vcredist_x86.exe. In Visual Studio 2015, this file is located in *%VCINSTALLDIR%redist\\1033\\*. In Visual Studio 2017 and Visual Studio 2019, this file is located in *%VCToolsRedistDir%*. You can also [download the latest supported redist file from Microsoft](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
 
       - The setup.bat file that you created in the earlier step.
 
@@ -76,7 +76,7 @@ You must have these components to complete this walkthrough:
       The self-extracting setup file installs the MFC application that is in the folder that you specified in step 2. The application runs successfully because the Visual C++ Redistributable Package installer is included in the self-extracting setup file.
 
       > [!IMPORTANT]
-      > To determine which version of the runtime is installed, the installer checks the registry key \HKLM\SOFTWARE\Microsoft\VisualStudio\\\<version>\VC\Runtimes\\<platform>. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
+      > To determine which version of the runtime is installed, the installer checks the registry key \\HKLM\\SOFTWARE\\Microsoft\\VisualStudio\\_version_\\VC\\Runtimes\\_platform_\\Version. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
 
 ## See also
 

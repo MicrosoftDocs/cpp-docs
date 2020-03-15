@@ -913,7 +913,7 @@ The iterator debugging feature has been taught to properly unwrap `std::move_ite
 
 ### Fixes for \<xkeycheck.h> keyword enforcement
 
-The standard library’s macro replacing a keyword enforcement \<xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
+The standard library's macro replacing a keyword enforcement \<xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
 
 ### Allocator types no longer deprecated
 
@@ -925,7 +925,7 @@ A spurious `static_cast` not called for by the standard that accidentally suppre
 
 ### Various \<filesystem> correctness fixes
 
-- Fixed `std::filesystem::last_write_time` failing when attempting to change a directory’s last write time.
+- Fixed `std::filesystem::last_write_time` failing when attempting to change a directory's last write time.
 - The `std::filesystem::directory_entry` constructor now stores a failed result, rather than throwing an exception, when supplied a nonexistent target path.
 - The `std::filesystem::create_directory` 2-parameter version was changed to call the 1-parameter version, as the underlying `CreateDirectoryExW` function would use `copy_symlink` when the `existing_p` was a symlink.
 - `std::filesystem::directory_iterator` no longer fails when a broken symlink is found.
@@ -963,7 +963,7 @@ The unordered container `reserve` function now actually reserves for N elements,
 
 - Many standard library internal container functions have been made private for an improved IntelliSense experience. Additional fixes to mark members as private are expected in later releases of MSVC.
 
-- Exception safety correctness problems wherein the node-based containers like `list`, `map`, and `unordered_map` would become corrupted were fixed. During a `propagate_on_container_copy_assignment` or `propagate_on_container_move_assignment` reassignment operation, we would free the container’s sentinel node with the old allocator, do the POCCA/POCMA assignment over the old allocator, and then try to acquire the sentinel node from the new allocator. If this allocation failed, the container was corrupted and couldn’t even be destroyed, as owning a sentinel node is a hard data structure invariant. This code was fixed to allocate the new sentinel node from the source container’s allocator before destroying the existing sentinel node.
+- Exception safety correctness problems wherein the node-based containers like `list`, `map`, and `unordered_map` would become corrupted were fixed. During a `propagate_on_container_copy_assignment` or `propagate_on_container_move_assignment` reassignment operation, we would free the container's sentinel node with the old allocator, do the POCCA/POCMA assignment over the old allocator, and then try to acquire the sentinel node from the new allocator. If this allocation failed, the container was corrupted and couldn't even be destroyed, as owning a sentinel node is a hard data structure invariant. This code was fixed to allocate the new sentinel node from the source container's allocator before destroying the existing sentinel node.
 
 - The containers were fixed to always copy/move/swap allocators according to `propagate_on_container_copy_assignment`, `propagate_on_container_move_assignment`, and `propagate_on_container_swap`, even for allocators declared `is_always_equal`.
 
@@ -2841,7 +2841,7 @@ int main()
 
 In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the compiler now requires the **template** keyword to precede a template-name when it comes after a dependent nested-name-specifier.
 
-The following code in [/permissive-](../build/reference/permissive-standards-conformance.md) mode now raises C7510: *'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled*:
+The following code in [/permissive-](../build/reference/permissive-standards-conformance.md) mode now raises C7510: *'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X\<T>' being compiled*:
 
 ```cpp
 template<typename T> struct Base

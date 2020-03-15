@@ -9,6 +9,8 @@ ms.topic: "landing-page"
 
 Use Visual Studio 2017 and later to create and debug applications running on Linux remote machines or Windows Subsystem for Linux.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsF">
     <li>
         <a href="/cpp/linux/download-install-and-setup-the-linux-development-workload">
