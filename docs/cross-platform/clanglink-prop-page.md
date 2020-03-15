@@ -41,7 +41,7 @@ f1_keywords:
 | Optimize For Memory Usage | Optimize for memory usage, by rereading the symbol tables as necessary. |
 | Ignore Specific Default Libraries | Specifies one or more names of default libraries to ignore. |
 | Force Symbol References | Force symbol to be entered in the output file as an undefined symbol. |
-| Debugger Symbol Information | Debugger symbol information from the output file. | **Include All**<br>**Omit Unneeded Symbols for Relocation Processing**<br>**Omit Debugger Symbol Information Only**<br>**Omit All Symbol Information**<br> |
+| Debugger Symbol Information | Debugger symbol information from the output file. | **Include All**<br /><br />**Omit Unneeded Symbols for Relocation Processing**<br /><br />**Omit Debugger Symbol Information Only**<br /><br />**Omit All Symbol Information** |
 | Package Debugger Symbol Information | Strip the Debugger Symbols Information before Packaging.  A copy of the original binary is used for debugging. |
 | Map File Name | The Map option tells the linker to create a map file with the user specified name. |
 | Mark Variables ReadOnly After Relocation | This option marks variables read-only after relocation. |
