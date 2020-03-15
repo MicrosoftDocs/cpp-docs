@@ -1,8 +1,8 @@
 ---
 title: "CByteArray Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CByteArray", "AFXCOLL/CByteArray", "AFXCOLL/CObArray::CObArray", "AFXCOLL/CObArray::Add", "AFXCOLL/CObArray::Append", "AFXCOLL/CObArray::Copy", "AFXCOLL/CObArray::ElementAt", "AFXCOLL/CObArray::FreeExtra", "AFXCOLL/CObArray::GetAt", "AFXCOLL/CObArray::GetCount", "AFXCOLL/CObArray::GetData", "AFXCOLL/CObArray::GetSize", "AFXCOLL/CObArray::GetUpperBound", "AFXCOLL/CObArray::InsertAt", "AFXCOLL/CObArray::IsEmpty", "AFXCOLL/CObArray::RemoveAll", "AFXCOLL/CObArray::RemoveAt", "AFXCOLL/CObArray::SetAt", "AFXCOLL/CObArray::SetAtGrow", "AFXCOLL/CObArray::SetSize"]
-helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
+f1_keywords: ["CByteArray", "AFXCOLL/CByteArray", "AFXCOLL/CByteArray::CByteArray", "AFXCOLL/CByteArray::Add", "AFXCOLL/CByteArray::Append", "AFXCOLL/CByteArray::Copy", "AFXCOLL/CByteArray::ElementAt", "AFXCOLL/CByteArray::FreeExtra", "AFXCOLL/CByteArray::GetAt", "AFXCOLL/CByteArray::GetCount", "AFXCOLL/CByteArray::GetData", "AFXCOLL/CByteArray::GetSize", "AFXCOLL/CByteArray::GetUpperBound", "AFXCOLL/CByteArray::InsertAt", "AFXCOLL/CByteArray::IsEmpty", "AFXCOLL/CByteArray::RemoveAll", "AFXCOLL/CByteArray::RemoveAt", "AFXCOLL/CByteArray::SetAt", "AFXCOLL/CByteArray::SetAtGrow", "AFXCOLL/CByteArray::SetSize"]
+helpviewer_keywords: ["CByteArray [MFC], CByteArray", "CByteArray [MFC], Add", "CByteArray [MFC], Append", "CByteArray [MFC], Copy", "CByteArray [MFC], ElementAt", "CByteArray [MFC], FreeExtra", "CByteArray [MFC], GetAt", "CByteArray [MFC], GetCount", "CByteArray [MFC], GetData", "CByteArray [MFC], GetSize", "CByteArray [MFC], GetUpperBound", "CByteArray [MFC], InsertAt", "CByteArray [MFC], IsEmpty", "CByteArray [MFC], RemoveAll", "CByteArray [MFC], RemoveAt", "CByteArray [MFC], SetAt", "CByteArray [MFC], SetAtGrow", "CByteArray [MFC], SetSize"]
 ms.assetid: 53d4a512-657c-4187-9609-e3f5339a78e0
 ---
 # CByteArray Class
@@ -29,35 +29,35 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::CObArray](../../mfc/reference/cobarray-class.md#cobarray)|Constructs an empty array.|
+|[CByteArray::CByteArray](../../mfc/reference/cobarray-class.md#cobarray)|Constructs an empty array.|
 
 ### Public Methods
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::Add](../../mfc/reference/cobarray-class.md#add)|Adds an element to the end of the array; grows the array if necessary.|
-|[CObArray::Append](../../mfc/reference/cobarray-class.md#append)|Appends another array to the array; grows the array if necessary.|
-|[CObArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Copies another array to the array; grows the array if necessary.|
-|[CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Returns a temporary reference to the byte within the array.|
-|[CObArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Frees all unused memory above the current upper bound.|
-|[CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Returns the value at a given index.|
-|[CObArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Gets the number of elements in this array.|
-|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Allows access to elements in the array. Can be NULL.|
-|[CObArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Gets the number of elements in this array.|
-|[CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|Returns the largest valid index.|
-|[CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Inserts an element (or all the elements in another array) at a specified index.|
-|[CObArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Determines if the array is empty.|
-|[CObArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Removes all the elements from this array.|
-|[CObArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Removes an element at a specific index.|
-|[CObArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Sets the value for a given index; array not allowed to grow.|
-|[CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Sets the value for a given index; grows the array if necessary.|
-|[CObArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Sets the number of elements to be contained in this array.|
+|[CByteArray::Add](../../mfc/reference/cobarray-class.md#add)|Adds an element to the end of the array; grows the array if necessary.|
+|[CByteArray::Append](../../mfc/reference/cobarray-class.md#append)|Appends another array to the array; grows the array if necessary.|
+|[CByteArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Copies another array to the array; grows the array if necessary.|
+|[CByteArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Returns a temporary reference to the byte within the array.|
+|[CByteArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Frees all unused memory above the current upper bound.|
+|[CByteArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Returns the value at a given index.|
+|[CByteArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Gets the number of elements in this array.|
+|[CByteArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Allows access to elements in the array. Can be NULL.|
+|[CByteArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Gets the number of elements in this array.|
+|[CByteArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|Returns the largest valid index.|
+|[CByteArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Inserts an element (or all the elements in another array) at a specified index.|
+|[CByteArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Determines if the array is empty.|
+|[CByteArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Removes all the elements from this array.|
+|[CByteArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Removes an element at a specific index.|
+|[CByteArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Sets the value for a given index; array not allowed to grow.|
+|[CByteArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Sets the value for a given index; grows the array if necessary.|
+|[CByteArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Sets the number of elements to be contained in this array.|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
+|[CByteArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 

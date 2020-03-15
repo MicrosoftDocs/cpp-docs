@@ -1,7 +1,6 @@
 ---
 title: "Accelerator Keys (C++)"
 ms.date: "02/14/2019"
-f1_keywords: ["vc.editors.accelerator"]
 helpviewer_keywords: ["accelerator keys", "keyboard shortcuts", "keyboard shortcuts [C++], predefined", "menus [C++], shortcut keys", "keyboard shortcuts [C++], menu association"]
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
 ---

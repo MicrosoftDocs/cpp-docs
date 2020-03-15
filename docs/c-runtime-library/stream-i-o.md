@@ -1,7 +1,6 @@
 ---
 title: "Stream I/O"
 ms.date: "11/04/2016"
-f1_keywords: ["c.io"]
 helpviewer_keywords: ["I/O routines, stream I/O", "I/O [CRT], stream", "stream I/O"]
 ms.assetid: dc7874d3-a91b-456a-9015-4748bb358217
 ---

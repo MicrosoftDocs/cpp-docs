@@ -1,7 +1,6 @@
 ---
 title: "Other LIB Output"
 ms.date: "11/04/2016"
-f1_keywords: ["Lib"]
 helpviewer_keywords: ["output files, LIB"]
 ms.assetid: 656864a6-0b7a-4633-8dc6-ee3b1766d836
 ---

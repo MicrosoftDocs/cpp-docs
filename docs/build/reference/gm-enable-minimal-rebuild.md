@@ -1,7 +1,7 @@
 ---
 title: "/Gm (Enable Minimal Rebuild)"
 ms.date: "11/12/2018"
-f1_keywords: ["VC.Project.VCCLCompilerTool.MinimalRebuild", "/Gm", "/FD", "VC.Project.VCCLWCECompilerTool.MinimalRebuild"]
+f1_keywords: ["VC.Project.VCCLCompilerTool.MinimalRebuild", "/Gm", "VC.Project.VCCLWCECompilerTool.MinimalRebuild"]
 helpviewer_keywords: ["/Gm compiler option [C++]", "minimal rebuild", "enable minimal rebuild compiler option [C++]", "Gm compiler option [C++]", "-Gm compiler option [C++]"]
 ms.assetid: d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59
 ---

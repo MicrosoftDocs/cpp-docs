@@ -1,7 +1,6 @@
 ---
 title: "Unicode: The Wide-Character Set"
 ms.date: "11/04/2016"
-f1_keywords: ["c.international"]
 helpviewer_keywords: ["Unicode [C++], wide character set", "wide characters [C++], Unicode"]
 ms.assetid: b6a05a21-59a5-4d30-8c85-2dbe185f7a74
 ---

@@ -1,7 +1,6 @@
 ---
 title: "TN071: MFC IOleCommandTarget Implementation"
 ms.date: "06/28/2018"
-f1_keywords: ["IOleCommandTarget"]
 helpviewer_keywords: ["TN071 [MFC]", "IOleCommandTarget interface [MFC]"]
 ms.assetid: 3eef571e-6357-444d-adbb-6f734a0c3161
 ---
