@@ -76,7 +76,7 @@ You must have these components to complete this walkthrough:
       The self-extracting setup file installs the MFC application that is in the folder that you specified in step 2. The application runs successfully because the Visual C++ Redistributable Package installer is included in the self-extracting setup file.
 
       > [!IMPORTANT]
-      > To determine which version of the runtime is installed, the installer checks the registry key \HKLM\SOFTWARE\Microsoft\VisualStudio\\\<version>\VC\Runtimes\\<platform>. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
+      > To determine which version of the runtime is installed, the installer checks the registry key \HKLM\SOFTWARE\Microsoft\VisualStudio\\\<version>\VC\Runtimes\\\<platform>. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
 
 ## See also
 

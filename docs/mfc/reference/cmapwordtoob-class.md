@@ -19,7 +19,7 @@ class CMapWordToOb : public CObject
 
 The member functions of `CMapWordToOb` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CString` or a **const** pointer to **char** as a function parameter or return value, substitute WORD.
 
-`BOOL CMapStringToOb::Lookup( const char* <key>,` CObject*& <rValue> ) const;`
+`BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`
 
 for example, translates to
 

@@ -34,7 +34,7 @@ The element data type to be stored in the hash_map.
 The type which includes two function objects, one of class compare able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and hash_compare<`Key`, less<`Key`> > is the default value.
 
 *Allocator*\
-The type that represents the stored allocator object that encapsulates details about the hash_map's allocation and deallocation of memory. This argument is optional, and the default value is allocator<pair <const `Key`, `Type`>>.
+The type that represents the stored allocator object that encapsulates details about the hash_map's allocation and deallocation of memory. This argument is optional, and the default value is allocator\<pair <const `Key`, `Type`>>.
 
 ## Remarks
 

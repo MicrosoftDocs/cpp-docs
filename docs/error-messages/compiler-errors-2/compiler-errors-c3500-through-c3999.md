@@ -466,10 +466,10 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3949|a pack expansion, '...', cannot appear in a parenthesized abstract declarator|
 |Compiler error C3950|Obsolete.|
 |Compiler error C3951|Cannot use pointer-to-member in projected WinRT type '*type*'. Use a delegate instead.|
-|Compiler error C3952|'*type*': WinRT does not support 'in/out' arrays. Use 'const Array<T>^' for 'in' and 'WriteOnlyArray<T>' or 'Array<T>^*' for 'out' on public APIs|
+|Compiler error C3952|'*type*': WinRT does not support 'in/out' arrays. Use 'const Array\<T>^' for 'in' and 'WriteOnlyArray\<T>' or 'Array\<T>^*' for 'out' on public APIs|
 |Compiler error C3953|Cannot use managed class '*type*' in WinRT module.|
-|Compiler error C3954|'*type*': An array returned from a published method on a WinRT type must use the form 'Array<T>^'|
-|Compiler error C3955|'*type*': A public constructor cannot contain an 'out' parameter or 'WriteOnlyArray<T>'|
+|Compiler error C3954|'*type*': An array returned from a published method on a WinRT type must use the form 'Array\<T>^'|
+|Compiler error C3955|'*type*': A public constructor cannot contain an 'out' parameter or 'WriteOnlyArray\<T>'|
 |Compiler error C3956|'*type*': Type is marked as Exclusive To '*type*' and cannot be used as a base of '*derived_type*'|
 |Compiler error C3957|'*type*': cannot use 'new' on a WinRT type; use 'ref new' instead|
 |Compiler error C3958|'*type*': cannot use 'gcnew' on a WinRT type; use 'ref new' instead|
