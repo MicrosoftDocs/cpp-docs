@@ -2675,7 +2675,7 @@ int main() {
 
 The compiler changes in Visual Studio 2017 version 15.8 all fall under the category of bug fixes and behavior changes, and are listed below:
 
-###**typename** on unqualified identifiers
+### **typename** on unqualified identifiers
 
 In [/permissive-](../build/reference/permissive-standards-conformance.md) mode,  spurious**typename** keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 *'T': 'typename' keyword must be followed by a qualified name*:
 
