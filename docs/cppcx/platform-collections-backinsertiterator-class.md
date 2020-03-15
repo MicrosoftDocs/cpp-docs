@@ -52,7 +52,7 @@ The BackInsertIterator class implements the rules required by the [back_insert_i
 **Header:** collection.h
 
 **Namespace:** Platform::Collections
----
+
 ## <a name="ctor"></a>  BackInsertIterator::BackInsertIterator Constructor
 
 Initializes a new instance of the `BackInsertIterator` class.
@@ -60,7 +60,6 @@ Initializes a new instance of the `BackInsertIterator` class.
 ## Syntax
 
 ```
-
 explicit BackInsertIterator(
    Windows::Foundation::Collections::IVector<T>^ v);
 ```
@@ -118,7 +117,6 @@ Returns a reference to the current BackInsertIterator. The iterator is unmodifie
 ## Syntax
 
 ```
-
 BackInsertIterator& operator++();
 
 BackInsertIterator operator++(int);
