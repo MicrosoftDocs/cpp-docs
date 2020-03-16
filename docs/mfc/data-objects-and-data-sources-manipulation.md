@@ -48,7 +48,7 @@ Before an application allows the user to paste data into it, it needs to know if
 
    - Call the data object's `IsDataAvailable` member function if there are only one or two formats you need. This will save you time in cases where the data on the Clipboard supports significantly more formats than your application.
 
-         -or-
+     \-or-
 
    - Call the data object's `BeginEnumFormats` member function to start enumerating the formats available on the Clipboard. Then call `GetNextFormat` until the Clipboard returns a format your application supports or there are no more formats.
 
