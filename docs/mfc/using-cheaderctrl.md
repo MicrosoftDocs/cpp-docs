@@ -1,7 +1,6 @@
 ---
 title: "Using CHeaderCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CHeaderCtrl"]
 helpviewer_keywords: ["header controls [MFC], using", "CHeaderCtrl class [MFC]"]
 ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
 ---

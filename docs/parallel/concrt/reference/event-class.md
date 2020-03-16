@@ -1,7 +1,7 @@
 ---
 title: "event Class"
 ms.date: "11/04/2016"
-f1_keywords: ["event", "CONCRT/concurrency::event", "CONCRT/concurrency::event::reset", "CONCRT/concurrency::event::set", "CONCRT/concurrency::event::wait", "CONCRT/concurrency::event::wait_for_multiple", "CONCRT/concurrency::event::timeout_infinite"]
+f1_keywords: ["CONCRT/concurrency::event", "CONCRT/concurrency::event::reset", "CONCRT/concurrency::event::set", "CONCRT/concurrency::event::wait", "CONCRT/concurrency::event::wait_for_multiple", "CONCRT/concurrency::event::timeout_infinite"]
 helpviewer_keywords: ["event class"]
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
 ---

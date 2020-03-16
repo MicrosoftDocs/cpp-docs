@@ -2,7 +2,7 @@
 title: "com::ptr"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["ptr"]
+f1_keywords: ["msclr/com/com::ptr"]
 helpviewer_keywords: ["com::ptr"]
 ms.assetid: ee302e3c-8fed-4875-a372-2e55003718d3
 ---

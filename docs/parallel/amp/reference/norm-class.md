@@ -1,7 +1,7 @@
 ---
 title: "norm Class"
 ms.date: "11/04/2016"
-f1_keywords: ["norm", "AMP_SHORT_VECTORS/norm", "AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor"]
+f1_keywords: ["AMP_SHORT_VECTORS/norm", "AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor"]
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
 ---
 # norm Class

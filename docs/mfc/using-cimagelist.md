@@ -1,7 +1,6 @@
 ---
 title: "Using CImageList"
 ms.date: "11/04/2016"
-f1_keywords: ["CImageList"]
 helpviewer_keywords: ["image list control", "CImageList class [MFC], using"]
 ms.assetid: 3d2a909e-d641-46b7-aada-81cab1a29b41
 ---

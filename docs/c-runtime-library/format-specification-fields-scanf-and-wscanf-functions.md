@@ -1,10 +1,6 @@
 ---
 title: "Format Specification Fields: scanf and wscanf Functions"
 ms.date: "11/04/2016"
-api_location: ["msvcr80.dll", "msvcr110.dll", "msvcr90.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr120.dll"]
-api_type: ["DLLExport"]
-topic_type: ["apiref"]
-f1_keywords: ["wscanf", "scanf"]
 helpviewer_keywords: ["width, specifications in scanf function", "scanf format specifications", "scanf width specifications", "scanf type field characters", "type fields, scanf function", "format specification fields for scanf function", "type fields"]
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
 ---

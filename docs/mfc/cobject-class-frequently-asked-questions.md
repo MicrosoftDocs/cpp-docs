@@ -1,7 +1,6 @@
 ---
 title: "CObject Class: Frequently Asked Questions"
 ms.date: "11/04/2016"
-f1_keywords: ["CObject"]
 helpviewer_keywords: ["CObject class [MFC], FAQ"]
 ms.assetid: 809a8b99-a2f8-4e16-8b4b-023c94f4125c
 ---

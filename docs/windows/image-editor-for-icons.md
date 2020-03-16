@@ -1,7 +1,7 @@
 ---
 title: "Image Editor for Icons (C++)"
 ms.date: "02/15/2019"
-f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1", "vc.editors.bitmap", "vc.editors.dialog.GridSettings", "vc.editors.gridsettings", "vc.editors.bitmap", "vc.editors.icon", "vc.editors.texttool", "vc.editors.bitmap", "vc.editors.icon"]
+f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1", "vc.editors.bitmap", "vc.editors.dialog.GridSettings", "vc.editors.gridsettings", "vc.editors.icon", "vc.editors.texttool"]
 helpviewer_keywords: ["editors, images", "resource editors [C++], graphics", "Image editor [C++]", "resource editors [C++], Image editor", "Image menu", "Grid Settings dialog box [C++]", "Graphics toolbar", "Image editor [C++], toolbar", "Image editor [C++], Option selector", "Properties window", "Option selector, Image editor", "toolbars [C++], showing", "toolbars [C++], hiding", "text, adding to an image", "Text Tool dialog box [C++]", "Text Tool Font dialog box [C++]", "fonts, changing on an image", "text, on images", "graphics editor [C++]", "Image editor [C++], panes", "Image editor [C++], magnification", "grids, pixel", "pixel grid, Image editor", "Image editor [C++], pixel grid", "Image editor [C++], grid settings", "grid settings, Image editor"]
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Memory Management with CStringT"
 ms.date: "11/04/2016"
-f1_keywords: ["CStringT", "ATL::CStringT", "ATL.CStringT"]
 helpviewer_keywords: ["CString objects, memory management", "memory [C++], usage", "IAtlStringMgr class, using", "strings [C++], custom memory management", "CFixedStringT class, description of", "strings [C++], memory management", "CStringT class, memory management"]
 ms.assetid: 88b8342d-19b5-48c4-9cf6-e4c44cece21e
 ---

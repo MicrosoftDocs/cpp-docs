@@ -1,7 +1,7 @@
 ---
 title: "CCustomRowset (CustomRS.H)"
 ms.date: "10/22/2018"
-f1_keywords: ["cmyproviderrowset", "myproviderrs.h", "ccustomrowset", "customrs.h"]
+f1_keywords: ["cmyproviderrowset", "ccustomrowset"]
 helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderRowset class in MyProviderRS.H", "CCustomRowset class in CustomRS.H"]
 ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
 ---

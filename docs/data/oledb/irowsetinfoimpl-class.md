@@ -1,7 +1,7 @@
 ---
 title: "IRowsetInfoImpl Class"
 ms.date: "11/04/2016"
-f1_keywords: ["ATL.IRowsetInfoImpl", "IRowsetInfoImpl", "ATL::IRowsetInfoImpl", "ATL.IRowsetInfoImpl.GetProperties", "IRowsetInfoImpl.GetProperties", "ATL::IRowsetInfoImpl::GetProperties", "IRowsetInfoImpl::GetProperties", "GetProperties", "ATL::IRowsetInfoImpl::GetReferencedRowset", "GetReferencedRowset", "ATL.IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl::GetReferencedRowset", "IRowsetInfoImpl::GetSpecification", "ATL.IRowsetInfoImpl.GetSpecification", "IRowsetInfoImpl.GetSpecification", "GetSpecification", "ATL::IRowsetInfoImpl::GetSpecification"]
+f1_keywords: ["ATL.IRowsetInfoImpl", "IRowsetInfoImpl", "ATL::IRowsetInfoImpl", "ATL.IRowsetInfoImpl.GetProperties", "IRowsetInfoImpl.GetProperties", "ATL::IRowsetInfoImpl::GetProperties", "IRowsetInfoImpl::GetProperties", "ATL::IRowsetInfoImpl::GetReferencedRowset", "GetReferencedRowset", "ATL.IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl::GetReferencedRowset", "IRowsetInfoImpl::GetSpecification", "ATL.IRowsetInfoImpl.GetSpecification", "IRowsetInfoImpl.GetSpecification", "GetSpecification", "ATL::IRowsetInfoImpl::GetSpecification"]
 helpviewer_keywords: ["IRowsetInfoImpl class", "GetProperties method", "GetReferencedRowset method", "GetSpecification method"]
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
 ---

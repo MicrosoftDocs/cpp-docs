@@ -1,7 +1,6 @@
 ---
 title: "Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object"
 ms.date: "11/04/2016"
-f1_keywords: ["CToolTipCtrl"]
 helpviewer_keywords: ["tool tips [MFC], creating", "CToolTipCtrl class [MFC], using"]
 ms.assetid: 0a34583f-f66d-46a1-a239-31b80ea395ad
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Directory Control"
 ms.date: "11/04/2016"
-f1_keywords: ["c.programs"]
 helpviewer_keywords: ["controls [C++], directory", "directory control routines"]
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
 ---
