@@ -34,6 +34,7 @@ For information about the attributes discussed in this topic, see [OLE DB Consum
 
 > [!NOTE]
 > The following `include` statements are required to compile the examples below:
+
 > ```cpp
 > #include <atlbase.h>
 > #include <atlplus.h>

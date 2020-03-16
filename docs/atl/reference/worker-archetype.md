@@ -72,6 +72,7 @@ A pointer to the [OVERLAPPED](/windows/win32/api/minwinbase/ns-minwinbase-overla
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 
 Called to initialize the worker object before any requests are passed to `WorkerArchetype::Execute`.
+
 ```
 BOOL Initialize(void* pvParam) throw();
 ```

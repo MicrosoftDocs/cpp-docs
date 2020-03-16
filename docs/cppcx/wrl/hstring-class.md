@@ -152,6 +152,7 @@ Retrieves a pointer to the underlying string data.
 ```cpp
 const wchar_t* GetRawBuffer(unsigned int* length) const;
 ```
+
 ### Parameters
 
 *length*
