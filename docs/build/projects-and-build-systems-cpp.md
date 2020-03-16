@@ -29,6 +29,7 @@ You can build simple programs by invoking the MSVC compiler (cl.exe) directly fr
 ```cmd
 cl /EHsc hello.cpp
 ```
+
 Note that here the compiler (cl.exe) automatically invokes the C++ preprocessor and the linker to produce the final output file.  For more information, see [Building on the command line](building-on-the-command-line.md).
 
 ## Build systems and projects
