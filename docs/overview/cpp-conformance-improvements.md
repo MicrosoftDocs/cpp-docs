@@ -601,15 +601,15 @@ The compiler no longer rewrites expressions using `operator==` if they involve a
 
 ```cpp
 struct U {
-  operator bool() const;
+    operator bool() const;
 };
 
 struct S {
-  U operator==(const S&) const;
+    U operator==(const S&) const;
 };
 
 bool neq(const S& lhs, const S& rhs) {
-  return lhs != rhs;
+    return lhs != rhs;
 }
 ```
 
@@ -652,13 +652,13 @@ To avoid the error, define a body for the operator:
 #include <compare>
 
 union S {
-  int a;
-  char b;
-  auto operator<=>(const S&) const { ... }
-}; 
+    int a;
+    char b;
+    auto operator<=>(const S&) const { ... }
+};
 
 bool lt(const S& lhs, const S& rhs) {
-  return lhs < rhs;
+    return lhs < rhs;
 }
 ```
 
@@ -788,13 +788,13 @@ The code in this example no longer compiles:
 #include <compare>
 
 struct S {
-  std::strong_equality operator<=>(const S&) const = default;
+    std::strong_equality operator<=>(const S&) const = default;
 };
 
 void f() {
-  nullptr<=>nullptr;
-  &f <=> &f;
-  &S::operator<=> <=> &S::operator<=>;
+    nullptr<=>nullptr;
+    &f <=> &f;
+    &S::operator<=> <=> &S::operator<=>;
 }
 ```
 
@@ -810,19 +810,19 @@ error C7546: binary operator '<=>': unsupported operand types 'void (__cdecl *)(
 error C7546: binary operator '<=>': unsupported operand types 'int (__thiscall S::* )(const S &) const' and 'int (__thiscall S::* )(const S &) const'
 ```
 
-To resolve the issue, update the `operator<=>` return types:
+To resolve the issue, update to prefer the built-in relational operators and replace the removed types:
 
 ```cpp
 #include <compare>
 
 struct S {
-  std::strong_ordering operator<=>(const S&) const = default; // prefer 'std::strong_ordering'
+    std::strong_ordering operator<=>(const S&) const = default; // prefer 'std::strong_ordering'
 };
 
 void f() {
-  nullptr != nullptr; // use pre-existing builtin operator != or ==.
-  &f != &f;
-  &S::operator<=> != &S::operator<=>;
+    nullptr != nullptr; // use pre-existing builtin operator != or ==.
+    &f != &f;
+    &S::operator<=> != &S::operator<=>;
 }
 ```
 
