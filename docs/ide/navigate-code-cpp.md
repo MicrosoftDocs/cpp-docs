@@ -51,7 +51,7 @@ You can open **Go To** with **Ctrl+,**. This action creates a search box over th
 
 When you first invoke **Go To** with **Ctrl +**, **Go To All** is activated (no filters on search results). You then can select the filter you want by using the buttons near the search box. You can invoke a specific filter using its corresponding keyboard shortcut. Doing so opens the **Go To** search box with that filter preselected. All keyboard shortcuts are configurable.
 
-To apply a text filter, start your search query with the filter’s corresponding character followed by a space. (**Go To Line** can optionally omit the space.) These text filters are available:
+To apply a text filter, start your search query with the filter's corresponding character followed by a space. (**Go To Line** can optionally omit the space.) These text filters are available:
 
 - Go To All: (no text filter)
 - Go To Line Number: :
@@ -100,7 +100,7 @@ You group results by the following categories:
 - Definition then Path
 - Definition, Project then Path
 
- #### Filter results
+#### Filter results
 
 To filter results, hover over a column and select the filtering icon that pops up. You can filter results from the first column to hide things like string and comment references that you might not want to see.
 
@@ -112,7 +112,7 @@ To filter results, hover over a column and select the filtering icon that pops u
 
 - **Unprocessed results**: **Find All References** operations can take time to complete on larger codebases, so the Results list shows "unprocessed" results here. Unprocessed results match the name of the symbol being searched for but haven't yet been confirmed as actual code references. You can turn on this filter to get faster results. Just be aware that some results might not be actual references.
 
- #### Sort results
+#### Sort results
 
 You can sort results by any column by selecting that column. You can swap between ascending or descending order by selecting the column again.
 
