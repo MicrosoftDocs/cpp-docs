@@ -1,7 +1,6 @@
 ---
 title: "IF (MASM)"
 ms.date: "12/17/2019"
-f1_keywords: ["if"]
 helpviewer_keywords: ["IF directive"]
 ms.assetid: 82e43712-4f0c-4bf6-90ce-0663e81af707
 ---

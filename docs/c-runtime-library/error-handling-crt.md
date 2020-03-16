@@ -1,7 +1,6 @@
 ---
 title: "Error handling (CRT)"
 ms.date: "11/04/2016"
-f1_keywords: ["c.errors"]
 helpviewer_keywords: ["error handling, C routines for", "logic errors", "error handling, library routines", "testing, for program errors"]
 ms.assetid: 125ac697-9eb0-4152-a440-b7842f23d97f
 ---

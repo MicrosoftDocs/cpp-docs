@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "12/04/2019"
+ms.date: "03/16/2020"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 ---
@@ -565,7 +565,7 @@ void f(T (&buffer)[Size], int& size_read)
 
 ### User-provided specializations of type traits
 
-In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified type_traits templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
+In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified `type_traits` templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
 
 ```cpp
 #include <type_traits>
@@ -577,7 +577,7 @@ struct std::is_fundamental<S> : std::true_type {};
 static_assert(std::is_fundamental<S>::value, "fail");
 ```
 
-To avoid the error, define a struct that inherits from the desired type_trait, and specialize that:
+To avoid the error, define a struct that inherits from the preferred `type_trait`, and specialize that:
 
 ```cpp
 #include <type_traits>
@@ -597,19 +597,19 @@ static_assert(my_is_fundamental<S>::value, "fail");
 
 The MSVC compiler now implements the following changes to comparison operators per [P1630R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1630r1.html) when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) option is enabled:
 
-The compiler will no longer rewrite expressions with `operator==` if they involve a return type that is not a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
+The compiler no longer rewrites expressions using `operator==` if they involve a return type that isn't a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
 
 ```cpp
 struct U {
-  operator bool() const;
+    operator bool() const;
 };
 
 struct S {
-  U operator==(const S&) const;
+    U operator==(const S&) const;
 };
 
 bool neq(const S& lhs, const S& rhs) {
-  return lhs != rhs;
+    return lhs != rhs;
 }
 ```
 
@@ -630,7 +630,7 @@ bool neq(const S& lhs, const S& rhs) {
 }
 ```
 
-The compiler will no longer define a defaulted comparison operator if it is a member of a union-like class. The following example now produces  *C2120: 'void' illegal with all types*:
+The compiler no longer defines a defaulted comparison operator if it's a member of a union-like class. The following example now produces *C2120: 'void' illegal with all types*:
 
 ```cpp
 #include <compare>
@@ -652,13 +652,13 @@ To avoid the error, define a body for the operator:
 #include <compare>
 
 union S {
-  int a;
-  char b;
-  auto operator<=>(const S&) const { ... }
-}; 
+    int a;
+    char b;
+    auto operator<=>(const S&) const { ... }
+};
 
 bool lt(const S& lhs, const S& rhs) {
-  return lhs < rhs;
+    return lhs < rhs;
 }
 ```
 
@@ -690,6 +690,197 @@ struct U {
 bool lt(const U& lhs, const U& rhs) {
     return lhs < rhs;
 }
+```
+
+## <a name="improvements_165"></a> Conformance improvements in Visual Studio 2019 version 16.5
+
+### Explicit specialization declaration without an initializer is not a definition
+
+Under `/permissive-`, MSVC now enforces a standard rule that explicit specialization declarations without initializers aren't definitions. Previously, the declaration would be considered a definition with a default-initializer. The effect is observable at link time, since a program depending on this behavior may now have unresolved symbols. This example now results in an error:
+
+```cpp
+template <typename> struct S {
+    static int a;
+};
+
+// In permissive-, this declaration is not a definition and the program will not link.
+template <> int S<char>::a;
+
+int main() {
+    return S<char>::a;
+}
+```
+
+```Output
+error LNK2019: unresolved external symbol "public: static int S<char>::a" (?a@?$S@D@@2HA) referenced in function _main
+at link time.
+```
+
+To resolve the issue, add an initializer:
+
+```cpp
+template <typename> struct S {
+    static int a;
+};
+
+// Add an initializer for the declaration to be a definition.
+template <> int S<char>::a{};
+
+int main() {
+    return S<char>::a;
+}
+```
+
+### Preprocessor output preserves newlines
+
+The experimental preprocessor now preserves newlines and whitespace when using `/P` or `/E` with `/experimental:preprocessor`. This change can be disabled by using `/d1experimental:preprocessor:oldWhitespace`.
+
+Given this example source,
+
+```cpp
+#define m()
+line m(
+) line
+```
+
+The previous output of `/E` was:
+
+```Output
+line line
+#line 2
+```
+
+The new output of `/E` is now:
+
+```Output
+line
+ line
+```
+
+### 'import' and 'module' keywords are context dependent
+
+Per P1857R1, import and module preprocessor directives have additional restrictions on their syntax. This example no longer compiles:
+
+```cpp
+import // Invalid
+m;
+```
+
+It produces the following error message:
+
+```Output
+error C2146: syntax error: missing ';' before identifier 'm'
+```
+
+To resolve the issue, keep the import on the same line:
+
+```cpp
+import m; // OK
+```
+
+### Removal of std::weak_equality and std::strong_equality
+
+The merge of P1959R0 requires the compiler to remove behavior and references to the `std::weak_equality` and `std::strong_equality` types.
+
+The code in this example no longer compiles:
+
+```cpp
+#include <compare>
+
+struct S {
+    std::strong_equality operator<=>(const S&) const = default;
+};
+
+void f() {
+    nullptr<=>nullptr;
+    &f <=> &f;
+    &S::operator<=> <=> &S::operator<=>;
+}
+```
+
+The example now leads to these errors:
+
+```Output
+error C2039: 'strong_equality': is not a member of 'std'
+error C2143: syntax error: missing ';' before '<=>'
+error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+error C7546: binary operator '<=>': unsupported operand types 'nullptr' and 'nullptr'
+error C7546: binary operator '<=>': unsupported operand types 'void (__cdecl *)(void)' and 'void (__cdecl *)(void)'
+error C7546: binary operator '<=>': unsupported operand types 'int (__thiscall S::* )(const S &) const' and 'int (__thiscall S::* )(const S &) const'
+```
+
+To resolve the issue, update to prefer the built-in relational operators and replace the removed types:
+
+```cpp
+#include <compare>
+
+struct S {
+    std::strong_ordering operator<=>(const S&) const = default; // prefer 'std::strong_ordering'
+};
+
+void f() {
+    nullptr != nullptr; // use pre-existing builtin operator != or ==.
+    &f != &f;
+    &S::operator<=> != &S::operator<=>;
+}
+```
+
+### TLS Guard changes
+
+Previously, thread-local variables in DLLs weren't correctly initialized before their first use on threads
+that existed before the DLL was loaded, other than the thread that loaded the DLL. This defect has now been corrected.
+Thread-local variables in such a DLL are initialized immediately before their first use on such threads.
+
+This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the
+`/Zc:tlsGuards-` compiler switch. Or, by adding the `[[msvc:no_tls_guard]]` attribute to particular thread local variables.
+
+### Better diagnosis of call to deleted functions
+
+Our compiler was more permissive about calls to deleted functions previously. For example, if the calls happened in the context of a template body, we wouldn't diagnose the call. Additionally, if there were multiple instances of calls to deleted functions, we would only issue one diagnostic. Now we issue a diagnostic for each of them.
+
+One consequence of the new behavior can produce a small breaking change: Code that called a deleted function wouldn't get diagnosed if it was never needed for code generation. Now we diagnose it up front.
+
+This example shows code that now produces an error:
+
+```cpp
+struct S {
+  S() = delete;
+  S(int) { }
+};
+
+struct U {
+  U() = delete;
+  U(int i): s{ i } { }
+
+  S s{};
+};
+
+U u{ 0 };
+```
+
+```Output
+error C2280: 'S::S(void)': attempting to reference a deleted function
+note: see declaration of 'S::S'
+note: 'S::S(void)': function was explicitly deleted
+```
+
+To resolve the issue, remove calls to deleted functions:
+
+```cpp
+struct S {
+  S() = delete;
+  S(int) { }
+};
+
+struct U {
+  U() = delete;
+  U(int i): s{ i } { }
+
+  S s;  // Do not call the deleted ctor of 'S'.
+};
+
+U u{ 0 };
 ```
 
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
@@ -913,7 +1104,7 @@ The iterator debugging feature has been taught to properly unwrap `std::move_ite
 
 ### Fixes for \<xkeycheck.h> keyword enforcement
 
-The standard library’s macro replacing a keyword enforcement \<xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
+The standard library's macro replacing a keyword enforcement \<xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
 
 ### Allocator types no longer deprecated
 
@@ -925,7 +1116,7 @@ A spurious `static_cast` not called for by the standard that accidentally suppre
 
 ### Various \<filesystem> correctness fixes
 
-- Fixed `std::filesystem::last_write_time` failing when attempting to change a directory’s last write time.
+- Fixed `std::filesystem::last_write_time` failing when attempting to change a directory's last write time.
 - The `std::filesystem::directory_entry` constructor now stores a failed result, rather than throwing an exception, when supplied a nonexistent target path.
 - The `std::filesystem::create_directory` 2-parameter version was changed to call the 1-parameter version, as the underlying `CreateDirectoryExW` function would use `copy_symlink` when the `existing_p` was a symlink.
 - `std::filesystem::directory_iterator` no longer fails when a broken symlink is found.
@@ -963,7 +1154,7 @@ The unordered container `reserve` function now actually reserves for N elements,
 
 - Many standard library internal container functions have been made private for an improved IntelliSense experience. Additional fixes to mark members as private are expected in later releases of MSVC.
 
-- Exception safety correctness problems wherein the node-based containers like `list`, `map`, and `unordered_map` would become corrupted were fixed. During a `propagate_on_container_copy_assignment` or `propagate_on_container_move_assignment` reassignment operation, we would free the container’s sentinel node with the old allocator, do the POCCA/POCMA assignment over the old allocator, and then try to acquire the sentinel node from the new allocator. If this allocation failed, the container was corrupted and couldn’t even be destroyed, as owning a sentinel node is a hard data structure invariant. This code was fixed to allocate the new sentinel node from the source container’s allocator before destroying the existing sentinel node.
+- Exception safety correctness problems wherein the node-based containers like `list`, `map`, and `unordered_map` would become corrupted were fixed. During a `propagate_on_container_copy_assignment` or `propagate_on_container_move_assignment` reassignment operation, we would free the container's sentinel node with the old allocator, do the POCCA/POCMA assignment over the old allocator, and then try to acquire the sentinel node from the new allocator. If this allocation failed, the container was corrupted and couldn't even be destroyed, as owning a sentinel node is a hard data structure invariant. This code was fixed to allocate the new sentinel node from the source container's allocator before destroying the existing sentinel node.
 
 - The containers were fixed to always copy/move/swap allocators according to `propagate_on_container_copy_assignment`, `propagate_on_container_move_assignment`, and `propagate_on_container_swap`, even for allocators declared `is_always_equal`.
 
@@ -2841,7 +3032,7 @@ int main()
 
 In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the compiler now requires the **template** keyword to precede a template-name when it comes after a dependent nested-name-specifier.
 
-The following code in [/permissive-](../build/reference/permissive-standards-conformance.md) mode now raises C7510: *'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled*:
+The following code in [/permissive-](../build/reference/permissive-standards-conformance.md) mode now raises C7510: *'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X\<T>' being compiled*:
 
 ```cpp
 template<typename T> struct Base

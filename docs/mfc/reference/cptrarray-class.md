@@ -1,8 +1,8 @@
 ---
 title: "CPtrArray Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CPtrArray", "AFXCOLL/CPtrArray", "AFXCOLL/CObArray::CObArray", "AFXCOLL/CObArray::Add", "AFXCOLL/CObArray::Append", "AFXCOLL/CObArray::Copy", "AFXCOLL/CObArray::ElementAt", "AFXCOLL/CObArray::FreeExtra", "AFXCOLL/CObArray::GetAt", "AFXCOLL/CObArray::GetCount", "AFXCOLL/CObArray::GetData", "AFXCOLL/CObArray::GetSize", "AFXCOLL/CObArray::GetUpperBound", "AFXCOLL/CObArray::InsertAt", "AFXCOLL/CObArray::IsEmpty", "AFXCOLL/CObArray::RemoveAll", "AFXCOLL/CObArray::RemoveAt", "AFXCOLL/CObArray::SetAt", "AFXCOLL/CObArray::SetAtGrow", "AFXCOLL/CObArray::SetSize"]
-helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
+f1_keywords: ["CPtrArray", "AFXCOLL/CPtrArray", "AFXCOLL/CPtrArray::CPtrArray", "AFXCOLL/CPtrArray::Add", "AFXCOLL/CPtrArray::Append", "AFXCOLL/CPtrArray::Copy", "AFXCOLL/CPtrArray::ElementAt", "AFXCOLL/CPtrArray::FreeExtra", "AFXCOLL/CPtrArray::GetAt", "AFXCOLL/CPtrArray::GetCount", "AFXCOLL/CPtrArray::GetData", "AFXCOLL/CPtrArray::GetSize", "AFXCOLL/CPtrArray::GetUpperBound", "AFXCOLL/CPtrArray::InsertAt", "AFXCOLL/CPtrArray::IsEmpty", "AFXCOLL/CPtrArray::RemoveAll", "AFXCOLL/CPtrArray::RemoveAt", "AFXCOLL/CPtrArray::SetAt", "AFXCOLL/CPtrArray::SetAtGrow", "AFXCOLL/CPtrArray::SetSize"]
+helpviewer_keywords: ["CPtrArray [MFC], CPtrArray", "CPtrArray [MFC], Add", "CPtrArray [MFC], Append", "CPtrArray [MFC], Copy", "CPtrArray [MFC], ElementAt", "CPtrArray [MFC], FreeExtra", "CPtrArray [MFC], GetAt", "CPtrArray [MFC], GetCount", "CPtrArray [MFC], GetData", "CPtrArray [MFC], GetSize", "CPtrArray [MFC], GetUpperBound", "CPtrArray [MFC], InsertAt", "CPtrArray [MFC], IsEmpty", "CPtrArray [MFC], RemoveAll", "CPtrArray [MFC], RemoveAt", "CPtrArray [MFC], SetAt", "CPtrArray [MFC], SetAtGrow", "CPtrArray [MFC], SetSize"]
 ms.assetid: c23b87a3-bf84-49d6-a66b-61e999d0938a
 ---
 # CPtrArray Class
@@ -29,35 +29,35 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::CObArray](../../mfc/reference/cobarray-class.md#cobarray)|Constructs an empty array.|
+|[CPtrArray::CPtrArray](../../mfc/reference/cobarray-class.md#cobarray)|Constructs an empty array.|
 
 ### Public Methods
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::Add](../../mfc/reference/cobarray-class.md#add)|Adds an element to the end of the array; grows the array if necessary.|
-|[CObArray::Append](../../mfc/reference/cobarray-class.md#append)|Appends another array to the array; grows the array if necessary.|
-|[CObArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Copies another array to the array; grows the array if necessary.|
-|[CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Returns a temporary reference to the element pointer within the array.|
-|[CObArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Frees all unused memory above the current upper bound.|
-|[CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Returns the value at a given index.|
-|[CObArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Gets the number of elements in this array.|
-|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Allows access to elements in the array. Can be `NULL`.|
-|[CObArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Gets the number of elements in this array.|
-|[CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|Returns the largest valid index.|
-|[CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Inserts an element (or all the elements in another array) at a specified index.|
-|[CObArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Determines if the array is empty.|
-|[CObArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Removes all the elements from this array.|
-|[CObArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Removes an element at a specific index.|
-|[CObArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Sets the value for a given index; array not allowed to grow.|
-|[CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Sets the value for a given index; grows the array if necessary.|
-|[CObArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Sets the number of elements to be contained in this array.|
+|[CPtrArray::Add](../../mfc/reference/cobarray-class.md#add)|Adds an element to the end of the array; grows the array if necessary.|
+|[CPtrArray::Append](../../mfc/reference/cobarray-class.md#append)|Appends another array to the array; grows the array if necessary.|
+|[CPtrArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Copies another array to the array; grows the array if necessary.|
+|[CPtrArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Returns a temporary reference to the element pointer within the array.|
+|[CPtrArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Frees all unused memory above the current upper bound.|
+|[CPtrArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Returns the value at a given index.|
+|[CPtrArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Gets the number of elements in this array.|
+|[CPtrArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Allows access to elements in the array. Can be `NULL`.|
+|[CPtrArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Gets the number of elements in this array.|
+|[CPtrArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|Returns the largest valid index.|
+|[CPtrArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Inserts an element (or all the elements in another array) at a specified index.|
+|[CPtrArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Determines if the array is empty.|
+|[CPtrArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Removes all the elements from this array.|
+|[CPtrArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Removes an element at a specific index.|
+|[CPtrArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Sets the value for a given index; array not allowed to grow.|
+|[CPtrArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Sets the value for a given index; grows the array if necessary.|
+|[CPtrArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Sets the number of elements to be contained in this array.|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
+|[CPtrArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 

@@ -1,7 +1,6 @@
 ---
 title: "Internationalization"
 ms.date: "11/04/2016"
-f1_keywords: ["c.international"]
 helpviewer_keywords: ["localization, routines for", "locale-dependent routines", "internationalization routines", "international applications, run-time routines for"]
 ms.assetid: ee536a04-3558-4729-8e10-6dabcde055fd
 ---

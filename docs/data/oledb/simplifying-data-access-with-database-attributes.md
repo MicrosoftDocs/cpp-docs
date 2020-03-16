@@ -1,7 +1,6 @@
 ---
 title: "Simplifying Data Access with Database Attributes"
 ms.date: "10/19/2018"
-f1_keywords: ["vc-attr.db_param", "vc-attr.db_column", "vc-attr.db_accessor", "vc-attr.db_command", "vc-attr.db_table", "vc-attr.db_source"]
 helpviewer_keywords: ["attributes [C++], database", "attributes [C++], data access", "databases [C++], attributes", "data [C++], simplifying access", "data access [C++], database attributes", "database attributes [C++]", "OLE DB consumers [C++], database attributes", "attributes [C++], OLE DB consumer"]
 ms.assetid: 560d2456-e307-4cb7-ba7b-4d0ed674697f
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Routine Mappings"
 ms.date: "11/04/2016"
-f1_keywords: ["c.mappings"]
 helpviewer_keywords: ["_tWinMain", "TCHAR.H data types, list of routine mappings", "generic-text mappings"]
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
 ---

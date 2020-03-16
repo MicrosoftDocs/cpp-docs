@@ -1,7 +1,7 @@
 ---
 title: "try-except Statement"
 ms.date: "10/09/2018"
-f1_keywords: ["_abnormal_termination_cpp", "_exception_code_cpp", "EXCEPTION_CONTINUE_SEARCH", "_exception_info", "__except", "_except", "EXCEPTION_CONTINUE_EXECUTION", "_exception_code", "__except_cpp", "_exception_info_cpp", "EXCEPTION_EXECUTE_HANDLER", "_abnormal_termination"]
+f1_keywords: ["_abnormal_termination_cpp", "_exception_code_cpp", "_exception_info", "__except", "_except", "_exception_code", "__except_cpp", "_exception_info_cpp"]
 helpviewer_keywords: ["__try keyword [C++]", "EXCEPTION_CONTINUE_EXECUTION macro", "EXCEPTION_CONTINUE_SEARCH macro", "EXCEPTION_EXECUTE_HANDLER macro", "GetExceptionCode function", "try-catch keyword [C++], try-except keyword [C++]", "_exception_code keyword [C++]", "try-except keyword [C++]", "_exception_info keyword [C++]", "_abnormal_termination keyword [C++]"]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
 ---

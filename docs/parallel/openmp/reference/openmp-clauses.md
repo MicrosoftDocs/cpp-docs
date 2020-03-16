@@ -1,7 +1,7 @@
 ---
 title: "OpenMP Clauses"
 ms.date: "03/20/2019"
-f1_keywords: ["OpenMP clauses", "copyin", "copyprivate", "default", "firstprivate", "if", "lastprivate", "nowait", "num_threads", "ordered", "private", "reduction", "schedule", "shared"]
+f1_keywords: ["OpenMP clauses", "copyin", "copyprivate", "default", "firstprivate", "lastprivate", "nowait", "num_threads", "ordered", "private", "reduction", "schedule", "shared"]
 helpviewer_keywords: ["OpenMP clauses", "copyin OpenMP clause", "copyprivate OpenMP clause", "default OpenMP clause", "defaults, OpenMP clause", "firstprivate OpenMP clause", "if OpenMP clause", "lastprivate OpenMP clause", "nowait OpenMP clause", "num_threads OpenMP clause", "ordered OpenMP clause", "private OpenMP clause", "reduction OpenMP clause", "schedule OpenMP clause", "shared OpenMP clause"]
 ms.assetid: 806e7d8f-b204-4e4c-a12c-273ab540a7ca
 ---

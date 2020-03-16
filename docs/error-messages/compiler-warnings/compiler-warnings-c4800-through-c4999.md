@@ -1,8 +1,8 @@
 ---
 title: "Compiler warnings C4800 Through C5999"
 ms.date: "04/21/2019"
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107"]
+f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107"]
+helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107"]
 ---
 # Compiler warnings C4800 Through C5999
 
@@ -111,7 +111,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1) C4974|'*symbol*': marked as deprecated|
 |Compiler warning (level 3) C4981|Warbird: function '*function*' marked as __forceinline not inlined because it contains exception semantics|
 |[Compiler warning C4984](compiler-warning-c4984.md)|'if constexpr' is a C++17 language extension|
-|Compiler warning (level 3) C4985|'*symbol_name*': attributes not present on previous declaration.|
+|[Compiler warning (level 4) C4985](compiler-warning-level-4-c4985.md)|'*symbol_name*': attributes not present on previous declaration.|
 |[Compiler warning C4986](compiler-warning-c4986.md)|'*declaration*': exception specification does not match previous declaration|
 |Compiler warning (level 4) C4987|nonstandard extension used: 'throw (...)'|
 |Compiler warning (level 4) C4988|'*variable*': variable declared outside class/function scope|

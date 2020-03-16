@@ -1,7 +1,6 @@
 ---
 title: "Code Pages"
 ms.date: "11/04/2016"
-f1_keywords: ["c.international"]
 helpviewer_keywords: ["character sets [C++], code pages", "ANSI [C++], code pages", "system-default code page", "multibyte code pages [C++]", "localization [C++], code pages", "code pages [C++], types of", "locale code pages [C++]"]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
 ---

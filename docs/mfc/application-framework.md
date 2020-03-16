@@ -1,7 +1,6 @@
 ---
 title: "Application Framework"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.mfc"]
 helpviewer_keywords: ["application framework [MFC], building applications", "applications [MFC]", "application framework [MFC]"]
 ms.assetid: 912684e6-4418-49dc-9877-a4cd19d69d20
 ---

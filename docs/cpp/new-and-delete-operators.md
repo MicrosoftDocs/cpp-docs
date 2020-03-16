@@ -1,7 +1,6 @@
 ---
 title: "new and delete Operators"
 ms.date: "11/19/2019"
-f1_keywords: ["delete_cpp", "new"]
 helpviewer_keywords: ["new keyword [C++]", "delete keyword [C++]"]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 ---

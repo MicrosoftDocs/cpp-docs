@@ -1,7 +1,7 @@
 ---
 title: "IOpenRowsetImpl Class"
 ms.date: "11/04/2016"
-f1_keywords: ["IOpenRowsetImpl", "IOpenRowsetImpl.CreateRowset", "IOpenRowsetImpl::CreateRowset", "CreateRowset", "OpenRowset", "IOpenRowsetImpl::OpenRowset", "IOpenRowsetImpl.OpenRowset"]
+f1_keywords: ["IOpenRowsetImpl", "IOpenRowsetImpl.CreateRowset", "IOpenRowsetImpl::CreateRowset", "OpenRowset", "IOpenRowsetImpl::OpenRowset", "IOpenRowsetImpl.OpenRowset"]
 helpviewer_keywords: ["IOpenRowsetImpl class", "CreateRowset method", "OpenRowset method"]
 ms.assetid: d259cedc-1db4-41cf-bc9f-5030907ab486
 ---

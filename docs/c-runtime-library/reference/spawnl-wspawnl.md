@@ -5,7 +5,7 @@ api_name: ["_wspawnl", "_spawnl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["spawnl", "wspawnl", "_wspawnl", "_spawnl"]
+f1_keywords: ["wspawnl", "_wspawnl", "_spawnl"]
 helpviewer_keywords: ["spawnl function", "processes, creating", "_spawnl function", "processes, executing new", "_wspawnl function", "wspawnl function", "process creation"]
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
 ---

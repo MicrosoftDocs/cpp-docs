@@ -22,7 +22,7 @@ A configuration may have any of the following properties:
 |`forcedInclude`|Header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
 |`undefines`|The list of macros to be undefined (maps to /U for MSVC)|
 |`intelliSenseMode`|The IntelliSense engine to be used. You can specify one of the predefined architecture-specific variants for MSVC, gcc, or Clang.|
-|`environments`|User-defined sets of variables that behave like environment variables in a command prompt and are accessed with the ${env.<VARIABLE>} macro.|
+|`environments`|User-defined sets of variables that behave like environment variables in a command prompt and are accessed with the ${env.\<VARIABLE>} macro.|
 
 ### intelliSenseMode values
 
