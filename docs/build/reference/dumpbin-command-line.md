@@ -1,7 +1,6 @@
 ---
 title: "DUMPBIN Command Line"
 ms.date: "11/04/2016"
-f1_keywords: ["dumpbin"]
 helpviewer_keywords: ["DUMPBIN program, command line"]
 ms.assetid: e6ad17d3-965d-41aa-9dfd-75bb073718d4
 ---

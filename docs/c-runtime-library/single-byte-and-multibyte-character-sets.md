@@ -1,7 +1,6 @@
 ---
 title: "Single-Byte and Multibyte Character Sets"
 ms.date: "11/04/2016"
-f1_keywords: ["c.character.multibyte"]
 helpviewer_keywords: ["SBCS (single byte character set)", "MBCS [C++], about MBCS", "character sets [C++], multibyte", "character sets [C++], single byte"]
 ms.assetid: 2cbc78ea-33c0-4cfb-b0df-7ce2458431ce
 ---

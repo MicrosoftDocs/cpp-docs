@@ -34,13 +34,13 @@ If your floating-point code does not depend on the order of operations and expre
 
 Under `/fp:strict`, the compiler generates code that allows the program to safely unmask floating-point exceptions, read or write floating-point status registers, or change rounding modes. It rounds to source code precision at four specific points during expression evaluation: at assignments, at typecasts, when a floating-point argument is passed to a function call, and when a floating-point value is returned from a function call. Intermediate computations may be performed at machine precision. Typecasts can be used to explicitly round intermediate computations. The compiler does not perform algebraic transformations on floating-point expressions, such as reassociation or distribution, unless the transformation is guaranteed to produce a bitwise identical result. Expressions that involve special values (NaN, +infinity, -infinity, -0.0) are processed according to IEEE-754 specifications. For example, `x != x` evaluates to **true** if x is NaN. Floating-point contractions are not generated under `/fp:strict`.
 
-`/fp:strict` is computationally more expensive than `/fp:precise` because the compiler must insert additional instructions to trap exceptions and allow programs to access or modify the floating-point environment at runtime. If your code doesn’t use this capability, but requires source code ordering and rounding, or relies on special values, use `/fp:precise`. Otherwise, consider using `/fp:fast`, which can produce faster and smaller code.
+`/fp:strict` is computationally more expensive than `/fp:precise` because the compiler must insert additional instructions to trap exceptions and allow programs to access or modify the floating-point environment at runtime. If your code doesn't use this capability, but requires source code ordering and rounding, or relies on special values, use `/fp:precise`. Otherwise, consider using `/fp:fast`, which can produce faster and smaller code.
 
 #### fast
 
 The `/fp:fast` option allows the compiler to reorder, combine, or simplify floating-point operations to optimize floating-point code for speed and space. The compiler may omit rounding at assignment statements, typecasts, or function calls. It may reorder operations or perform algebraic transforms, for example, by use of associative and distributive laws, even if such transformations result in observably different rounding behavior. Because of this enhanced optimization, the result of some floating-point computations may differ from those produced by other `/fp` options. Special values (NaN, +infinity, -infinity, -0.0) may not be propagated or behave strictly according to the IEEE-754 standard. Floating-point contractions may be generated under `/fp:fast`. The compiler is still bound by the underlying architecture under `/fp:fast`, and additional optimizations may be available through use of the [/arch](arch-minimum-cpu-architecture.md) option.
 
-Under `/fp:fast`, the compiler generates code intended to run in the default floating-point environment and assumes that the floating-point environment isn’t accessed or modified at runtime. That is, it assumes that the code does not unmask floating-point exceptions, read or write floating-point status registers, or change rounding modes.
+Under `/fp:fast`, the compiler generates code intended to run in the default floating-point environment and assumes that the floating-point environment isn't accessed or modified at runtime. That is, it assumes that the code does not unmask floating-point exceptions, read or write floating-point status registers, or change rounding modes.
 
 `/fp:fast` is intended for programs that do not require strict source code ordering and rounding of floating-point expressions, and do not rely on the standard rules for handling special values such as NaN. If your floating-point code requires preservation of source code ordering and rounding, or relies on standard behavior of special values, use [/fp:precise](#precise). If your code accesses or modifies the floating-point environment to change rounding modes, unmask floating-point exceptions, or check floating-point status, use [/fp:strict](#strict).
 
@@ -84,7 +84,7 @@ When your code accesses or modifies the floating-point environment, you must be 
 
 ### Floating-point rounding modes
 
-Under both `/fp:precise` and `/fp:fast` the compiler generates code intended to run in the default floating-point environment and assumes that the environment isn’t accessed or modified at runtime. That is, it assumes that the code does not unmask floating-point exceptions, read or write floating-point status registers, or change rounding modes.  However, some programs need to
+Under both `/fp:precise` and `/fp:fast` the compiler generates code intended to run in the default floating-point environment and assumes that the environment isn't accessed or modified at runtime. That is, it assumes that the code does not unmask floating-point exceptions, read or write floating-point status registers, or change rounding modes.  However, some programs need to
 alter the floating-point environment. For example, this sample computes error bounds of a floating-point multiplication by altering floating-point rounding modes:
 
 ```cpp
@@ -204,7 +204,7 @@ std::signbit(-0.0/-INFINITY): 0
 
 ### Floating-point algebraic transformations
 
-Under `/fp:precise` and `/fp:strict`, the compiler does not perform mathematical transformations unless the transformation is guaranteed to produce a bitwise identical result. The compiler may perform such transformations under `/fp:fast`. For example, the expression `a * b + a * c` in the sample function `algebraic_transformation` may be compiled into `a * (b + c)` under `/fp:fast`. Such transformations aren’t performed under `/fp:precise` or `/fp:strict`, and the compiler generates `a * b + a * c`.
+Under `/fp:precise` and `/fp:strict`, the compiler does not perform mathematical transformations unless the transformation is guaranteed to produce a bitwise identical result. The compiler may perform such transformations under `/fp:fast`. For example, the expression `a * b + a * c` in the sample function `algebraic_transformation` may be compiled into `a * (b + c)` under `/fp:fast`. Such transformations aren't performed under `/fp:precise` or `/fp:strict`, and the compiler generates `a * b + a * c`.
 
 ```cpp
 float algebraic_transformation (float a, float b, float c)
@@ -258,3 +258,4 @@ Under `/O2` `/fp:fast` the generated code is simplified, because all type casts 
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+ 

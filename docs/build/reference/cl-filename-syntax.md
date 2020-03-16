@@ -1,7 +1,6 @@
 ---
 title: "CL Filename Syntax"
 ms.date: "11/04/2016"
-f1_keywords: ["cl"]
 helpviewer_keywords: ["syntax, compiler filename", "paths, CL compiler filename syntax", "cl.exe compiler, filename syntax", "extensions, specifying to compiler", "file names [C++], CL compiler", "file names [C++]"]
 ms.assetid: 3ca72586-75be-4477-b323-a1be232e80d4
 ---

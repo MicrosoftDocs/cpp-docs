@@ -1,7 +1,6 @@
 ---
 title: "Settings for the CStatusBarCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CStatusBarCtrl"]
 helpviewer_keywords: ["status bar controls [MFC], settings", "CStatusBarCtrl class [MFC], settings"]
 ms.assetid: adeba0c3-17f3-435c-b140-a57845e9ce49
 ---

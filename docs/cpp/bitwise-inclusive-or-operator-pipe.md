@@ -1,7 +1,7 @@
 ---
 title: "Bitwise inclusive OR operator: |"
 ms.date: "06/14/2018"
-f1_keywords: ["bitor", "|"]
+f1_keywords: ["|"]
 helpviewer_keywords: ["OR operator [C++], bitwise inclusive", "bitwise operators [C++], OR operator", "inclusive OR operator", "| operator"]
 ms.assetid: 4c8a6a68-d828-447d-875a-aedb4ce3aa9a
 ---

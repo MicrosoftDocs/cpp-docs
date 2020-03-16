@@ -1,7 +1,6 @@
 ---
 title: "Windows Sockets Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.net"]
 helpviewer_keywords: ["sockets classes [MFC]", "Windows Sockets [MFC], classes"]
 ms.assetid: 58b9ab8d-9e44-4db3-8265-e04e713d2e9a
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How To: Add, Edit, or Delete Controls (C++)"
 ms.date: "02/15/2019"
-f1_keywords: ["vc.editors.dialog.dialog", "vc.controls.activex", "vc.editors.dialog.insertActiveXControls"]
+f1_keywords: ["vc.controls.activex", "vc.editors.dialog.insertActiveXControls"]
 helpviewer_keywords: ["Dialog Editor [C++], creating controls", "dialog boxes [C++], adding controls to", "Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes", "controls [C++], adding multiple", "dialog box controls [C++], size", "controls [C++], sizing", "dialog boxes [C++], adding ActiveX controls", "ActiveX controls [C++], adding to dialog boxes", "Insert ActiveX Control dialog box [C++]", "controls [C++], editing properties", "ActiveX controls [C++], properties", "controls [C++], undoing changes", "controls [C++], editing properties", "dialog box controls [C++], editing properties", "dialog box controls [C++], deleting", "controls [C++], deleting", "Dialog Editor [C++], default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls [C++], events", "member variables, defining for controls", "variables, dialog box control member variables", "controls [C++], member variables", "Dialog Editor [C++], defining member variables for controls", "controls [C++], troubleshooting", "Dialog Editor [C++], troubleshooting", "dialog boxes [C++], troubleshooting", "InitCommonControls", "RichEdit 1.0 control", "rich edit controls [C++], RichEdit 1.0"]
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 ---

@@ -1,7 +1,6 @@
 ---
 title: "/Zc (Conformance)"
 ms.date: "03/06/2018"
-f1_keywords: ["/zc"]
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 ---

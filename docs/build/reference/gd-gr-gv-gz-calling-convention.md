@@ -1,7 +1,7 @@
 ---
 title: "/Gd, /Gr, /Gv, /Gz (Calling Convention)"
 ms.date: "09/05/2018"
-f1_keywords: ["/gr", "/Gv", "/gz", "/Gd", "VC.Project.VCCLCompilerTool.CallingConvention"]
+f1_keywords: ["/Gr", "/Gv", "/Gd", "VC.Project.VCCLCompilerTool.CallingConvention"]
 helpviewer_keywords: ["-Gd compiler option [C++]", "-Gv compiler option [C++]", "/Gv compiler option [C++]", "-Gr compiler option [C++]", "Gd compiler option [C++]", "Gr compiler option [C++]", "/Gz compiler option [C++]", "-Gz compiler option [C++]", "/Gd compiler option [C++]", "Gz compiler option [C++]", "Gv compiler option [C++]", "/Gr compiler option [C++]"]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
 ---
@@ -68,7 +68,7 @@ For C, the `__stdcall` naming convention uses the function name preceded by an u
 
 ## __vectorcall Specifics
 
-A `__vectorcall` function’s integer arguments are passed by value, using up to two (on x86) or four (on x64) integer registers, and up to six XMM registers for floating-point and vector values, and the rest are passed on the stack from right to left. The called function cleans off the stack before it returns. Vector and floating-point return values are returned in XMM0.
+A `__vectorcall` function's integer arguments are passed by value, using up to two (on x86) or four (on x64) integer registers, and up to six XMM registers for floating-point and vector values, and the rest are passed on the stack from right to left. The called function cleans off the stack before it returns. Vector and floating-point return values are returned in XMM0.
 
 For C, the `__vectorcall` naming convention uses the function name followed by two at signs (**\@\@**) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:
 
@@ -90,3 +90,4 @@ For C, the `__vectorcall` naming convention uses the function name followed by t
 
 - [MSVC Compiler Options](compiler-options.md)
 - [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+ 
