@@ -13,11 +13,13 @@ Prior to C++17 there were two kinds of exception specification. The *noexcept sp
 ```cpp
 void MyFunction(int i) throw();
 ```
+
 tells the compiler that the function does not throw any exceptions. However, in **/std:c++14** mode this could lead to undefined behavior if the function does throw an exception. Therefore we recommend using the [noexcept](../cpp/noexcept-cpp.md) operator instead of the one above:
 
 ```cpp
 void MyFunction(int i) noexcept;
 ```
+
 The following table summarizes the Microsoft C++ implementation of exception specifications:
 
 |Exception specification|Meaning|

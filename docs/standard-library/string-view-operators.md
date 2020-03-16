@@ -96,6 +96,7 @@ The comparison is based on a pairwise lexicographical comparison of the characte
 ## <a name="op_lt"></a> operator&lt;
 
 Tests if the object on the left side of the operator is less than the object on the right sidestring_view
+
 ```cpp
 template <class CharType, class Traits>
 bool operator<(

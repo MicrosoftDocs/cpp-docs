@@ -1115,6 +1115,7 @@ public:
 ### Example
 
 The following code example demonstrates the `GetGroupInfoByIndex` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example retrieves information about the group whose index is 0, if such a group exists.
+
 ```cpp
     // GetGroupInfoByIndex
     const int GROUP_HEADER_BUFFER_SIZE = 40;
@@ -1191,6 +1192,7 @@ This method sends the [LVM_GETGROUPRECT](/windows/win32/Controls/lvm-getgrouprec
 ### Example
 
 The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
+
 ```cpp
 public:
     // Variable used to access the list control.
@@ -3974,6 +3976,7 @@ int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
 ```
+
 The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.
 
 The *lParam1* parameter is the 32-bit value associated with the first item that is compared, and the *lParam2* parameter is the value associated with the second item. These are the values that were specified in the *lParam* member of the items' [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure when they were inserted into the list. The *lParamSort* parameter is the same as the *dwData* value.
@@ -4034,6 +4037,7 @@ int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
 ```
+
 This message is like [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems), except for the type of information passed to the comparison function. In [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems), *lParam1* and *lParam2* are the values of the items to compare. In [LVM_SORTITEMSEX](/windows/win32/Controls/lvm-sortitemsex), *lParam1* is the current index of the first item to compare and *lParam2* is the current index of the second item. You can send an [LVM_GETITEMTEXT](/windows/win32/Controls/lvm-getitemtext) message to retrieve more information about an item.
 
 The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.
