@@ -52,7 +52,7 @@ The Links to Embedded Objects feature enables a user to create a document with a
 
    - Call `COleTemplateServer::UpdateRegistry`. The only parameter to `UpdateRegistry` should be *OAT_CONTAINER* if the application is not launched with the "/Embedded" switch. This registers the application as a container that can support links to embedded objects.
 
-         If the application is launched with the "/Embedded" switch, it should not show its main window, similar to a server application.
+      If the application is launched with the "/Embedded" switch, it should not show its main window, similar to a server application.
 
 The MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md) implements this feature. For an example of how this is done, see the `InitInstance` function in the *OCLIENT.CPP* file of this sample application.
 
