@@ -47,7 +47,7 @@ This wizard sets up an ODBC recordset class and the data bindings necessary to a
 
 - **Class**
 
-      The name of the consumer class, based by default on the name of the file or machine data source that you selected.
+   The name of the consumer class, based by default on the name of the file or machine data source that you selected.
 
 - **.h file**
 

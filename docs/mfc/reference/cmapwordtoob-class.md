@@ -23,7 +23,7 @@ The member functions of `CMapWordToOb` are similar to the member functions of cl
 
 for example, translates to
 
-`BOOL CMapStringToOb::Lookup( const char* <key>,` CObject*& <rValue> ) const;`
+`BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`
 
 ### Public Constructors
 

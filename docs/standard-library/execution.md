@@ -20,6 +20,7 @@ namespace std::execution {
     inline constexpr parallel_unsequenced_policy par_unseq { unspecified };
 }
 ```
+
 ### Classes and Structs
 
 |||

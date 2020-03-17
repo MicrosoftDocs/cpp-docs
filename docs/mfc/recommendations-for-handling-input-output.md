@@ -24,13 +24,13 @@ Whether you use file-based I/O or not depends on how you respond to the question
 
    - Yes, the data resides in an ODBC data source:
 
-         Use MFC's database support. The standard MFC implementation for this case includes a `CDatabase` object, as discussed in the article [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.
+      Use MFC's database support. The standard MFC implementation for this case includes a `CDatabase` object, as discussed in the article [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.
 
    - No, the data doesn't reside in an ODBC data source.
 
-         Examples of this case: the data resides in a non-ODBC DBMS; the data is read via some other mechanism, such as OLE or DDE.
+      Examples of this case: the data resides in a non-ODBC DBMS; the data is read via some other mechanism, such as OLE or DDE.
 
-         In such cases, you won't use serialization, and your application won't have Open and Save menu items. You might still want to use a `CDocument` as a home base, just as an MFC ODBC application uses the document to store `CRecordset` objects. But you won't use the framework's default File Open/Save document serialization.
+      In such cases, you won't use serialization, and your application won't have Open and Save menu items. You might still want to use a `CDocument` as a home base, just as an MFC ODBC application uses the document to store `CRecordset` objects. But you won't use the framework's default File Open/Save document serialization.
 
 To support the Open, Save, and Save As commands on the File menu, the framework provides document serialization. Serialization reads and writes data, including objects derived from class `CObject`, to permanent storage, normally a disk file. Serialization is easy to use and serves many of your needs, but it may be inappropriate in many data-access applications. Data-access applications typically update data on a per-transaction basis. They update the records affected by the transaction rather than reading and writing a whole data file at once.
 

@@ -478,6 +478,7 @@ TRUE if [Desktop Window Manager](/windows/win32/dwm/dwm-overview) (DWM) composit
 ## <a name="ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
 
 Indicates whether images are currently displayed in high contrast.
+
 ```
 BOOL IsHighContrastMode() const;
 ```

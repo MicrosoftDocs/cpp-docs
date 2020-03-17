@@ -197,6 +197,7 @@ The default Linux-Debug configuration in Visual Studio 2019 version 16.1 and lat
   ]
 }
 ```
+
 ::: moniker-end
 
 For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
