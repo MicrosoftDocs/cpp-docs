@@ -389,7 +389,7 @@ The compiler option [/Zc:noexceptTypes](../build/reference/zc-noexcepttypes.md) 
 
 <a name="note_D"></a>__D__ Supported under [/std:c++14](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
-<a name="note_E"></a>__E__ This is a completely new implementation, incompatible with the
+<a name="note_E"></a>__E__ This is a wholly new implementation, incompatible with the
 previous `std::experimental` version, made necessary by symlink support, bug fixes, and changes in standard-required behavior. Currently, including \<filesystem> provides the new `std::filesystem` and the previous `std::experimental::filesystem`, and including \<experimental/filesystem> provides only the old experimental implementation. The experimental implementation will be REMOVED in the next ABI-breaking release of the libraries.
 
 <a name="note_G"></a>__G__ Supported by a compiler intrinsic.
