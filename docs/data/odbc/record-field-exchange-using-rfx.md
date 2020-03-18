@@ -39,4 +39,3 @@ The following table shows your role in relation to what the framework does for y
 [CRecordset Class](../../mfc/reference/crecordset-class.md)<br/>
 [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)<br/>
 [Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)
-

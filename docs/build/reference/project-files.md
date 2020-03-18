@@ -22,7 +22,6 @@ The following sample .vcxproj file was produced by specifying a **Win32 Console 
 
 ::: moniker-end
 
-
 >[!NOTE]
 > For projects in Visual Studio 2017 and earlier, change `pch.h` to `stdafx.h` and `pch.cpp` to `stdafx.cpp`.
 

@@ -9,7 +9,6 @@ In a C++ project, the *linking* step is performed after the compiler has compile
 
 Linker options can be set inside or outside of Visual Studio. Within Visual Studio, you access linker options by right-clicking on a project node in **Solution Explorer** and choosing **Properties** to display the property pages. Choose **Linker** in the left pane to expand the node and see all the options. 
 
-
 ## Linker command-line syntax
 
 When you run LINK outside of Visual Studio, you can specify input in one or more ways:

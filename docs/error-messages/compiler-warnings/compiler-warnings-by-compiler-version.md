@@ -48,7 +48,6 @@ These warnings and all warnings in later versions are suppressed by using the co
 ::: moniker-end
 ::: moniker range=">= vs-2017"
 
-
 ## Warnings introduced in Visual Studio 2017 version 15.8 (compiler version 19.15.26726.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.14`.

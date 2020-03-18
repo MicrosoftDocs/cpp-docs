@@ -6,7 +6,6 @@ ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
 ---
 # Building Browse Information Files: Overview
 
-
 > [!WARNING]
 > Although BSCMAKE is still installed with Visual Studio, it is no longer used by the IDE. Since Visual Studio 2008, browse and symbol information is stored automatically in a SQL Server .sdf file in the solution folder.
 

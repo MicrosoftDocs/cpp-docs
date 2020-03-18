@@ -9,7 +9,6 @@ ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
 > [!NOTE] 
 > The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
-
 In *Custom*RS.h, the **ATL OLE DB Provider Wizard** creates a default user record called `CWindowsFile`. To handle the two strings, modify `CWindowsFile` as shown in the following code:
 
 ```cpp

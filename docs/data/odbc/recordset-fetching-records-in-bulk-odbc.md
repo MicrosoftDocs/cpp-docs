@@ -127,4 +127,3 @@ For more information about record field exchange (RFX), see [Record Field Exchan
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)<br/>
 [CRecordset::m_nParams](../../mfc/reference/crecordset-class.md#m_nparams)
-

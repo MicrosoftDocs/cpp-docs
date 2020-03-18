@@ -42,7 +42,6 @@ The managed type to be embedded.
 |[auto_gcroot::reset](#reset)|Destroy the current owned object and optionally take possession of a new object.|
 |[auto_gcroot::swap](#swap)|Swaps objects with another `auto_gcroot`.| 
 
- 
 ### Public operators
  
 |Name|Description| 
@@ -178,7 +177,6 @@ done
 ## <a name="tilde-auto-gcroot"></a>auto_gcroot::~auto_gcroot
 
 The `auto_gcroot` destructor.
-
 
 ```cpp
 ~auto_gcroot();

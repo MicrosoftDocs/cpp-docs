@@ -20,7 +20,6 @@ Once you have created a project, you will want to change or add to that project'
 - MFC class from ActiveX control
 - MFC class from Type Lib.
 
-
 > [!NOTE]
 >  You can add message handlers and map messages to them and override MFC virtual functions using the [MFC Class Wizard](../mfc/reference/mfc-class-wizard.md).
 

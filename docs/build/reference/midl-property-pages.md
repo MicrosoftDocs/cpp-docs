@@ -278,6 +278,3 @@ Redirects output from screen to a file ([/o](/windows/win32/midl/-o) file).
 ### Minimum Target System
 
 Set the minimum target system ([/target](/windows/win32/midl/-target) STRING).
-
-
-

@@ -181,8 +181,6 @@ int main() {
 
 **Namespace** msclr::com
 
- 
-
 ## <a name="ptr"></a>ptr::ptr
 
 Returns a pointer to the owned COM object.
