@@ -194,7 +194,6 @@ For details on Visual Studio 2017 or Visual Studio 2019 MSVC conformance improve
 | &nbsp;&nbsp;[P0898R3 Standard Library Concepts](https://wg21.link/P0898R3) | VS 2019 16.3 <sup>[20](#note_20)</sup> |
 | &nbsp;&nbsp;[P0919R3 Heterogeneous Lookup For Unordered Containers](https://wg21.link/P0919R3) | VS 2019 16.3 <sup>[20](#note_20)</sup> |
 | &nbsp;&nbsp;[P1754R1 Rename Concepts to standard_case](https://wg21.link/P1754R1) | VS 2019 16.4 <sup>[20](#note_20)</sup> |
-| &nbsp;&nbsp;[P0202R3 constexpr For \<algorithm> And exchange()](https://wg21.link/p0202r3) | No |
 | &nbsp;&nbsp;[P0325R4 to_array from LFTS with updates](https://wg21.link/P0325R4) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
 | &nbsp;&nbsp;[P0340R3 SFINAE-Friendly underlying_type](https://wg21.link/P0340R3) | VS 2019 16.5 <sup>[14](#note_14)</sup> |
 | &nbsp;&nbsp;[P0356R5 bind_front()](https://wg21.link/P0356R5) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
@@ -217,6 +216,7 @@ For details on Visual Studio 2017 or Visual Studio 2019 MSVC conformance improve
 | &nbsp;&nbsp;[P0019R8 atomic_ref](https://wg21.link/P0019R8) | No |
 | &nbsp;&nbsp;[P0053R7 \<syncstream>](https://wg21.link/p0053r7)<br/>&nbsp;&nbsp;[P0753R2 osyncstream Manipulators](https://wg21.link/p0753r2) | No |
 | &nbsp;&nbsp;[P0122R7 \<span>](https://wg21.link/p0122r7) | No |
+| &nbsp;&nbsp;[P0202R3 constexpr For \<algorithm> And exchange()](https://wg21.link/p0202r3) | No |
 | &nbsp;&nbsp;[P0339R6 polymorphic_allocator<>](https://wg21.link/P0339R6) | No |
 | &nbsp;&nbsp;[P0355R7 \<chrono> Calendars And Time Zones](https://wg21.link/p0355r7) | No |
 | &nbsp;&nbsp;[P0357R3 Supporting Incomplete Types In reference_wrapper](https://wg21.link/P0357R3) | No |
