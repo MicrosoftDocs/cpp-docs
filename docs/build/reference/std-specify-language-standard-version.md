@@ -18,15 +18,15 @@ The **/std** option is available in Visual Studio 2017 and later. It is used to 
 
 The default **/std:c++14** option enables the set of C++14 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are changed or new in more recent versions of the language standard, with the exception of some C++17 features already implemented in previous releases of the MSVC compiler. To avoid breaking changes for users who have already taken dependencies on the features available as of Visual Studio 2015 Update 2, these features remain enabled when the **/std:c++14** option is specified:
 
-- [Rules for auto with braced-init-lists](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3922.html)
+- [Rules for auto with braced-init-lists](https://wg21.link/n3922)
 
-- [typename in template template-parameters](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html)
+- [typename in template template-parameters](https://wg21.link/n4051)
 
-- [Removing trigraphs](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4086.html)
+- [Removing trigraphs](https://wg21.link/n4086)
 
-- [Attributes for namespaces and enumerators](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4266.html)
+- [Attributes for namespaces and enumerators](https://wg21.link/n4266)
 
-- [u8 character literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
+- [u8 character literals](https://wg21.link/n4267)
 
 For additional information on which C++14 and C++17 features are enabled when **/std:c++14** is specified, see the notes in [Microsoft C++ language conformance table](../../overview/visual-cpp-language-conformance.md).
 

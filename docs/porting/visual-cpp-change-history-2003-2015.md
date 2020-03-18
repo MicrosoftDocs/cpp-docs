@@ -71,7 +71,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **Floating point conformance**
 
-   Many changes to the math library have been made to improve conformance to the IEEE-754 and C11 Annex F specifications with respect to special case inputs such as NaNs and infinities. For example, quiet NaN inputs, which were often treated as errors in previous versions of the library, are no longer treated as errors. See [IEEE 754 Standard](https://standards.ieee.org/standard/754-2008.html) and Annex F of the [C11 Standard](http://www.iso-9899.info/wiki/The_Standard).
+   Many changes to the math library have been made to improve conformance to the IEEE-754 and C11 Annex F specifications with respect to special case inputs such as NaNs and infinities. For example, quiet NaN inputs, which were often treated as errors in previous versions of the library, are no longer treated as errors. See [IEEE 754 Standard](https://standards.ieee.org/standard/754-2008.html) and Annex F of the [C11 Standard](https://www.iso.org/standard/57853.html).
 
    These changes won't cause compile-time errors, but might cause programs to behave differently and more correctly according to the standard.
 
@@ -651,11 +651,11 @@ Although these differences can affect your source code or other build artifacts,
     enum class my_type : size_t {};
     ```
 
-   Then, change your definition of **placement new** and **delete** to use this type as the second argument instead of `size_t`. You’ll also need to update the calls to placement new to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **new** and **delete** to cast back to the integer type. You don’t need to use an **enum** for this; a class type with a `size_t` member would also work.
+   Then, change your definition of **placement new** and **delete** to use this type as the second argument instead of `size_t`. You'll also need to update the calls to placement new to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **new** and **delete** to cast back to the integer type. You don't need to use an **enum** for this; a class type with a `size_t` member would also work.
 
    An alternative solution is that you might be able to eliminate the **placement new** altogether. If your code uses **placement new** to implement a memory pool where the placement argument is the size of the object being allocated or deleted, then sized deallocation feature might be suitable to replace your own custom memory pool code, and you can get rid of the placement functions and just use your own two-argument **delete** operator instead of the placement functions.
 
-   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument delete functions don’t exist and won't cause a conflict with your **placement delete** operator.
+   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument delete functions don't exist and won't cause a conflict with your **placement delete** operator.
 
 - **Union data members**
 
@@ -2847,7 +2847,7 @@ Although these differences can affect your source code or other build artifacts,
 
    In Visual Studio 2012, the `E1` in expression `E1::b` resolved to `::E1` in the global scope. In Visual Studio 2013, `E1` in expression `E1::b` resolves to the `typedef E2` definition in `main()` and has type `::E2`.
 
-- Object layout has changed. On x64, the object layout of a class may change from previous releases. If it has a **virtual** function but it doesn’t have a base class that has a **virtual** function, the object model of the compiler inserts a pointer to a **virtual** function table after the data member layout. This means the layout may not be optimal in all cases. In previous releases, an optimization for x64 would try to improve the layout for you, but because it failed to work correctly in complex code situations, it was removed in Visual Studio 2013. For example, consider this code:
+- Object layout has changed. On x64, the object layout of a class may change from previous releases. If it has a **virtual** function but it doesn't have a base class that has a **virtual** function, the object model of the compiler inserts a pointer to a **virtual** function table after the data member layout. This means the layout may not be optimal in all cases. In previous releases, an optimization for x64 would try to improve the layout for you, but because it failed to work correctly in complex code situations, it was removed in Visual Studio 2013. For example, consider this code:
 
     ```cpp
     __declspec(align(16)) struct S1 {
@@ -2925,7 +2925,7 @@ The C++ compiler in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEV
 
 - You must use `#include <algorithm>` when you call `std::min()` or `std::max()`.
 
-- If your existing code uses the previous release’s simulated scoped enums—traditional unscoped enums wrapped in namespaces—you have to change it. For example, if you referred to the type `std::future_status::future_status`, now you have to say `std::future_status`. However, most code is unaffected—for example, `std::future_status::ready` still compiles.
+- If your existing code uses the previous release's simulated scoped enums—traditional unscoped enums wrapped in namespaces—you have to change it. For example, if you referred to the type `std::future_status::future_status`, now you have to say `std::future_status`. However, most code is unaffected—for example, `std::future_status::ready` still compiles.
 
 - `explicit operator bool()` is stricter than operator unspecified-bool-type(). `explicit operator bool()` permits explicit conversions to bool—for example, given `shared_ptr<X> sp`, both `static_cast<bool>(sp)` and `bool b(sp)` are valid—and Boolean-testable "contextual conversions" to bool—for example, `if (sp)`, `!sp`, `sp &&` whatever. However, `explicit operator bool()` forbids implicit conversions to bool, so you can't say `bool b = sp;` and given a bool return type, you can't say `return sp`.
 
@@ -3051,7 +3051,7 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 ### CRT
 
-- The C Runtime (CRT) heap, which is used for new and malloc(), is no longer private. The CRT now uses the process heap. This means that the heap isn't destroyed when a DLL is unloaded, so DLLs that link statically to the CRT must ensure memory that's allocated by the DLL code is cleaned up before it’s unloaded.
+- The C Runtime (CRT) heap, which is used for new and malloc(), is no longer private. The CRT now uses the process heap. This means that the heap isn't destroyed when a DLL is unloaded, so DLLs that link statically to the CRT must ensure memory that's allocated by the DLL code is cleaned up before it's unloaded.
 
 - The `iscsymf()` function asserts with negative values.
 

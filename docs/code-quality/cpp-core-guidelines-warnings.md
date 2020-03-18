@@ -10,7 +10,7 @@ The C++ Core Guidelines are a portable set of guidelines, rules, and best practi
 
 ## The C++ Core Guidelines Project
 
-Created by Bjarne Stroustrup and others, the C++ Core Guidelines are a guide to using modern C++ safely and effectively. The Guidelines emphasize static type safety and resource safety. They identify ways to eliminate or minimize the most error-prone parts of the language, and suggest how to make your code simpler and more performant in a reliable way. These guidelines are maintained by the Standard C++ Foundation. To learn more, see the documentation, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), and access the C++ Core Guidelines documentation project files on [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+Created by Bjarne Stroustrup and others, the C++ Core Guidelines are a guide to using modern C++ safely and effectively. The Guidelines emphasize static type safety and resource safety. They identify ways to eliminate or minimize the most error-prone parts of the language, and suggest how to make your code simpler and more performant in a reliable way. These guidelines are maintained by the Standard C++ Foundation. To learn more, see the documentation, [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), and access the C++ Core Guidelines documentation project files on [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
 ## Enable the C++ Core Check guidelines in Code Analysis
 
@@ -191,7 +191,7 @@ You can run the C++ Core Checker only on specified files by using the same appro
 </ItemGroup>
 ```
 
-If you don’t want to modify the project file, you can pass properties on the command line:
+If you don't want to modify the project file, you can pass properties on the command line:
 
 ```cmd
 msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSet=CppCoreCheckRules.ruleset ...
@@ -199,13 +199,13 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
 ### Non-MSBuild projects
 
-If you use a build system that doesn’t rely on MSBuild you can still run the checker, but you’ll need to get familiar with some internals of the Code Analysis engine configuration (which is not guaranteed to be supported in the future).
+If you use a build system that doesn't rely on MSBuild you can still run the checker, but you'll need to get familiar with some internals of the Code Analysis engine configuration (which is not guaranteed to be supported in the future).
 
-You will need to set a few environment variables and use proper command line options for the compiler. It is better to work under the "Native Tools Command Prompt" environment so that you don’t have to search for specific paths for the compiler, include directories, etc.
+You will need to set a few environment variables and use proper command line options for the compiler. It is better to work under the "Native Tools Command Prompt" environment so that you don't have to search for specific paths for the compiler, include directories, etc.
 
 1. **Environment variables**
    - `set esp.extensions=cppcorecheck.dll` This tells the engine to load the C++ Core Guidelines module.
-   - `set esp.annotationbuildlevel=ignore` This disables logic which processes SAL annotations. Annotations don’t affect code analysis in the C++ Core Guidelines Checker, yet their processing takes time (sometimes a lot of time). This setting is optional, but highly recommended.
+   - `set esp.annotationbuildlevel=ignore` This disables logic which processes SAL annotations. Annotations don't affect code analysis in the C++ Core Guidelines Checker, yet their processing takes time (sometimes a lot of time). This setting is optional, but highly recommended.
    - `set caexcludepath=%include%` We highly recommend that you disable warnings which fire on standard headers. You can add more paths here, for example the path to the common headers in your project.
 1. **Command line options**
    - `/analyze`  Enables code analysis (consider also using /analyze:only and /analyze:quiet).
@@ -213,7 +213,7 @@ You will need to set a few environment variables and use proper command line opt
 
 ## Use the Guideline Support Library
 
-The Guideline Support Library is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL is available at [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). The library is open source, so you can view the sources, make comments, or contribute. The project can be found at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+The Guideline Support Library is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL is available at [https://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). The library is open source, so you can view the sources, make comments, or contribute. The project can be found at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a> Use the C++ Core Check guidelines in Visual Studio 2015 projects
 
