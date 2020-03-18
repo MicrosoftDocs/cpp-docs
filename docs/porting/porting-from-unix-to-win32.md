@@ -13,4 +13,3 @@ To run a Linux program on Windows, you have these options:
 - Compile the program using gcc or clang in the [MinGW](http://MinGW.org/) or [MinGW-w64](https://MinGW-w64.org/doku.php) environments, which provide a translation layer from Linux to Windows system calls.
 - Compile and run the program using gcc or clang in the [Cygwin](https://www.cygwin.com/) environment, which provides a more complete Linux environment on Windows compared to MinGW or MinGW-w64.
 - Manually port your code from Linux and compile for Windows using Microsoft C++ (MSVC). This involves refactoring platform-independent code into separate libraries, and then re-writing the Linux-specific code to use Windows-specific code (for example, Win32 or DirectX APIs). For applications that require high performance graphics, this is probably the best option.
-

@@ -233,7 +233,6 @@ void f() {
 - `remove()`, `remove_if()`, and `unique()` for `list` and `forward_list` now return `size_type`.
 - `shift_left()` and `shift_right()` added to \<algorithm>.
 
-
 ## <a name="improvements_162"></a> Conformance improvements in 16.2
 
 ### noexcept constexpr functions

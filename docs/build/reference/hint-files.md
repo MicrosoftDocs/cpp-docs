@@ -235,4 +235,3 @@ These notes apply to the preceding list:
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
 [SAL Annotations](../../c-runtime-library/sal-annotations.md)<br>
-

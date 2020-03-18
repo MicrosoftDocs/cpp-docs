@@ -5,7 +5,6 @@ ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
 ---
 # Adding an ATL COM+ 1.0 Component
 
-
 ::: moniker range="vs-2019"
 
 The ATL COM+ 1.0 Component wizard is not available in Visual Studio 2019 and later.
@@ -30,5 +29,3 @@ This wizard adds an object to your project that supports COM+ 1.0 services, incl
 [Adding a Method](../../ide/adding-a-method-visual-cpp.md)
 
 ::: moniker-end
-
-

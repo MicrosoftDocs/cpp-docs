@@ -45,7 +45,6 @@ When you call a recordset object's [Open](../../mfc/reference/crecordset-class.m
 
 - The string returned by [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql). By default, this is the name of the table you specified for the recordset in the wizard, but you can change what the function returns. The framework calls `GetDefaultSQL` — if the string does not begin with "SELECT" or "{CALL", it is assumed to be a table name, which is used to construct a SQL string.
 
-
 - The field data members of the recordset, which are to be bound to specific columns of the table. The framework binds record columns to the addresses of these members, using them as buffers. The framework determines the correlation of field data members to table columns from the [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls in the recordset's [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) member function.
 
 - The [filter](../../data/odbc/recordset-filtering-records-odbc.md) for the recordset, if any, contained in the [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) data member. The framework uses this string to construct a SQL **WHERE** clause.
@@ -79,7 +78,6 @@ Besides supplying a filter, a sort order, or parameters, you can take the follow
    You can have `GetDefaultSQL` return any of the items that you can pass in the *lpszSQL* parameter to `Open`. If you do not pass a custom SQL string in *lpszSQL*, the framework uses the string that `GetDefaultSQL` returns. At a minimum, `GetDefaultSQL` must return a single table name. But you can have it return multiple table names, a full **SELECT** statement, an ODBC **CALL** statement, and so on. For a list of what you can pass to *lpszSQL* — or have `GetDefaultSQL` return — see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
    If you are performing a join of two or more tables, rewrite `GetDefaultSQL` to customize the table list used in the SQL **FROM** clause. For more information, see [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
-
 
 - Manually bind additional field data members, perhaps based on information you obtain about the schema of your data source at run time. You add field data members to the recordset class, [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls for them to the [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) member function, and initializations of the data members in the class constructor. For more information, see [Recordset: Dynamically Binding Data Columns (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
 

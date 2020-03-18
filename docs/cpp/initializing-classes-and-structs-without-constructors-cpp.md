@@ -162,7 +162,6 @@ string s{ 'a', 'b', 'c' };
 regex rgx{ 'x', 'y', 'z' };
 ```
 
-
 ## See also
 
 [Classes and Structs](../cpp/classes-and-structs-cpp.md)<br/>

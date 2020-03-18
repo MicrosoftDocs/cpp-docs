@@ -18,4 +18,3 @@ Visual Studio includes the following libraries when you install one or more of t
 [MFC/ATL](../mfc/mfc-and-atl.md)<br/>
 [Parallel Libraries](../parallel/parallel-programming-in-visual-cpp.md)<br/>
 [Data Access Libraries](../data/data-access-in-cpp.md)
-
