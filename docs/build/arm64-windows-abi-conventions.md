@@ -4,7 +4,7 @@ ms.date: "03/27/2019"
 ---
 # Overview of ARM64 ABI conventions
 
-The basic application binary interface (ABI) for Windows when compiled and run on ARM processors in 64-bit mode (ARMv8 or later architectures), for the most part, follows ARM's standard AArch64 EABI. This article highlights some of the key assumptions and changes from what is documented in the EABI. For information about the 32-bit ABI, see [Overview of ARM ABI conventions](overview-of-arm-abi-conventions.md). For more information about the standard ARM EABI, see [Application Binary Interface (ABI) for the ARM Architecture](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) (external link).
+The basic application binary interface (ABI) for Windows when compiled and run on ARM processors in 64-bit mode (ARMv8 or later architectures), for the most part, follows ARM's standard AArch64 EABI. This article highlights some of the key assumptions and changes from what is documented in the EABI. For information about the 32-bit ABI, see [Overview of ARM ABI conventions](overview-of-arm-abi-conventions.md). For more information about the standard ARM EABI, see [Application Binary Interface (ABI) for the ARM Architecture](https://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) (external link).
 
 ## Definitions
 
