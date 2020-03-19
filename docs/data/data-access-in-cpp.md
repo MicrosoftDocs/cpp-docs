@@ -41,7 +41,7 @@ Azure makes it easy to build C++ applications with increased flexibility, scalab
 [How to use Blob Storage from C++](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
 Azure Blob storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
 
-[ ODBC Programmer's Reference](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
+[ODBC Programmer's Reference](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
 The ODBC interface is designed for use with the C programming language. Use of the ODBC interface spans three areas: SQL statements, ODBC function calls, and C programming.
 
 ## See also
