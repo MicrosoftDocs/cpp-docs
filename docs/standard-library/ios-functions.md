@@ -239,7 +239,7 @@ A reference to the object from which *str* is derived.
 
 [showpos](../standard-library/ios-functions.md#showpos) causes the sign to display for positive numbers.
 
-The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::internal](../standard-library/ios-base-class.md#fmtflags)`, `[ios_base::adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::internal](../standard-library/ios-base-class.md#fmtflags)`,` [ios_base::adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
 
 ### Example
 

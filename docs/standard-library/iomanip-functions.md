@@ -309,7 +309,7 @@ The number base.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.setf(mask, `[ios_base::basefield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns `str`. Here, `mask` is determined as follows:
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.setf(mask,` [ios_base::basefield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns `str`. Here, `mask` is determined as follows:
 
 - If *base* is 8, then `mask` is `ios_base::`[oct](../standard-library/ios-functions.md#oct).
 
