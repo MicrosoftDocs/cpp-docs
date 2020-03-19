@@ -2,7 +2,6 @@
 title: "Alignment"
 description: "How data alignment is specified in modern C++."
 ms.date: "12/11/2019"
-f1_keywords: ["alignas_cpp", "alignof_cpp"]
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
 ---
 # Alignment

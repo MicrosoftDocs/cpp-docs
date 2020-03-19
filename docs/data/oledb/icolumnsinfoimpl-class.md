@@ -1,7 +1,7 @@
 ---
 title: "IColumnsInfoImpl Class"
 ms.date: "11/04/2016"
-f1_keywords: ["ATL.IColumnsInfoImpl<T>", "ATL::IColumnsInfoImpl", "IColumnsInfoImpl", "ATL.IColumnsInfoImpl", "ATL::IColumnsInfoImpl<T>", "GetColumnInfo", "ATL::IColumnsInfoImpl::GetColumnInfo", "ATL.IColumnsInfoImpl.GetColumnInfo", "ATL::IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl::GetColumnInfo", "IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl.GetColumnInfo", "IColumnsInfoImpl<T>::MapColumnIDs", "MapColumnIDs", "ATL::IColumnsInfoImpl::MapColumnIDs", "IColumnsInfoImpl.MapColumnIDs", "ATL::IColumnsInfoImpl<T>::MapColumnIDs", "IColumnsInfoImpl::MapColumnIDs", "ATL.IColumnsInfoImpl<T>.MapColumnIDs", "ATL.IColumnsInfoImpl.MapColumnIDs"]
+f1_keywords: ["ATL.IColumnsInfoImpl<T>", "ATL::IColumnsInfoImpl", "IColumnsInfoImpl", "ATL.IColumnsInfoImpl", "ATL::IColumnsInfoImpl<T>", "ATL::IColumnsInfoImpl::GetColumnInfo", "ATL.IColumnsInfoImpl.GetColumnInfo", "ATL::IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl::GetColumnInfo", "IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl.GetColumnInfo", "IColumnsInfoImpl<T>::MapColumnIDs", "MapColumnIDs", "ATL::IColumnsInfoImpl::MapColumnIDs", "IColumnsInfoImpl.MapColumnIDs", "ATL::IColumnsInfoImpl<T>::MapColumnIDs", "IColumnsInfoImpl::MapColumnIDs", "ATL.IColumnsInfoImpl<T>.MapColumnIDs", "ATL.IColumnsInfoImpl.MapColumnIDs"]
 helpviewer_keywords: ["IColumnsInfoImpl class", "GetColumnInfo method", "MapColumnIDs method"]
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
 ---

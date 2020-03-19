@@ -1,7 +1,6 @@
 ---
 title: "Windows Sockets: Using Class CAsyncSocket"
 ms.date: "11/04/2016"
-f1_keywords: ["CAsyncSocket"]
 helpviewer_keywords: ["CAsyncSocket class [MFC], programming model", "Windows Sockets [MFC], asynchronous", "sockets [MFC], converting between Unicode and MBCS strings", "SOCKET handle", "sockets [MFC], asynchronous operation", "Windows Sockets [MFC], converting Unicode and MBCS strings"]
 ms.assetid: 825dae17-7c1b-4b86-8d6c-da7f1afb5d8d
 ---
@@ -41,13 +40,13 @@ This article covers:
 
    - A "port": a short integer.
 
-         For a server socket, you must specify a port. For a client socket, you typically accept the default value for this parameter, which lets Windows Sockets select a port.
+      For a server socket, you must specify a port. For a client socket, you typically accept the default value for this parameter, which lets Windows Sockets select a port.
 
    - A socket type: **SOCK_STREAM** (the default) or **SOCK_DGRAM**.
 
    - A socket "address," such as "ftp.microsoft.com" or "128.56.22.8".
 
-         This is your Internet Protocol (IP) address on the network. You will probably always rely on the default value for this parameter.
+      This is your Internet Protocol (IP) address on the network. You will probably always rely on the default value for this parameter.
 
    The terms "port" and "socket address" are explained in [Windows Sockets: Ports and Socket Addresses](../mfc/windows-sockets-ports-and-socket-addresses.md).
 

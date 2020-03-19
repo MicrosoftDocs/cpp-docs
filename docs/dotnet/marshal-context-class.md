@@ -37,7 +37,6 @@ The same `marshal_context` can be used for numerous data conversions. Reusing th
 |---------|-----------|
 |[marshal_context::marshal_as](#marshal-as)|Performs the marshaling on a specific data object to convert it between a managed and a native data type.|
 
-
 ## Requirements
 
 **Header file:** \<msclr\marshal.h>, \<msclr\marshal_windows.h>, \<msclr\marshal_cppstd.h>, or \<msclr\marshal_atl.h>
@@ -59,7 +58,6 @@ Some data conversions require a marshal context. For more information about whic
 ### Example
 
 See the example for [marshal_context::marshal_as](../dotnet/marshal-context-marshal-as.md).
-
 
 ## <a name="tilde-marshal-context"></a>marshal_context::~marshal_context
 

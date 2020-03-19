@@ -321,7 +321,6 @@ done
 
 Destroy the current owned object and optionally take possession of a new object.
 
-
 ```cpp
 void reset(
    _element_type ^ _new_ptr
@@ -562,7 +561,6 @@ in ClassA destructor: second
 ## <a name="operator-auto-handle"></a>auto_handle::operator auto_handle
 
 Type-cast operator between `auto_handle` and compatible types.
-
 
 ```cpp
 template<typename _other_type>

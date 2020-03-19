@@ -782,12 +782,14 @@ Assigns a string_view or convertible string object to another string_view.
 ```cpp
 constexpr basic_string_view& operator=(const basic_string_view&) noexcept = default;
 ```
+
 ### Example
 
 ```cpp
    string_view s = "Hello";
    string_view s2 = s;
 ```
+
 ## <a name="op_at"></a>  basic_string_view::operator[]
 
 Provides a const_reference to the character with a specified index.

@@ -36,11 +36,13 @@ Be sure to follow the proper Markdown syntax. See the [style guide](./styleguide
 
 ### Example structure
 
-    docs
-        /standard-library
-            wstring-convert-class.md
-            /media
-                wstring-conversion.png
+```
+docs
+    /standard-library
+        wstring-convert-class.md
+        /media
+            wstring-conversion.png
+```
 
 **Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/master`.
 

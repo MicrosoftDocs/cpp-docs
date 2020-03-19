@@ -1,11 +1,11 @@
 ---
 title: "sequenced_policy Class"
 ms.date: "04/18/2019"
-f1_keywords: ["execution/std::execution::parallel_policy"]
+f1_keywords: ["execution/std::execution::sequenced_policy"]
 ---
 # sequenced_policy Class
 
-Used as a unique type to disambiguate parallel algorithm overloading and require that a parallel algorithm’s execution may not be parallelized.
+Used as a unique type to disambiguate parallel algorithm overloading and require that a parallel algorithm's execution may not be parallelized.
 
 ## Syntax
 

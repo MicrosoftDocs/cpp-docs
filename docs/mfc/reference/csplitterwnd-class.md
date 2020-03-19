@@ -448,17 +448,17 @@ A pointer to the view from which the scrolling message originates.
 *nScrollCode*<br/>
 A scroll-bar code that indicates the user's scrolling request. This parameter is composed of two parts: a low-order byte, which determines the type of scrolling occurring horizontally, and a high-order byte, which determines the type of scrolling occurring vertically:
 
-    - SB_BOTTOM Scrolls to bottom.
+- SB_BOTTOM Scrolls to bottom.
 
-    - SB_LINEDOWN Scrolls one line down.
+- SB_LINEDOWN Scrolls one line down.
 
-    - SB_LINEUP Scrolls one line up.
+- SB_LINEUP Scrolls one line up.
 
-    - SB_PAGEDOWN Scrolls one page down.
+- SB_PAGEDOWN Scrolls one page down.
 
-    - SB_PAGEUP Scrolls one page up.
+- SB_PAGEUP Scrolls one page up.
 
-    - SB_TOP Scrolls to top.
+- SB_TOP Scrolls to top.
 
 *bDoScroll*<br/>
 Determines whether the specified scrolling action occurs. If *bDoScroll* is TRUE (that is, if a child window exists, and if the split windows have a scroll range), then the specified scrolling action can take place; if *bDoScroll* is FALSE (that is, if no child window exists, or the split views have no scroll range), then scrolling does not occur.
@@ -635,9 +635,9 @@ DWORD GetScrollStyle() const;
 
 One or more of the following windows style flags, if successful:
 
-    - WS_HSCROLL If the splitter currently manages shared horizontal scroll bars.
+- WS_HSCROLL If the splitter currently manages shared horizontal scroll bars.
 
-    - WS_VSCROLL If the splitter currently manages shared vertical scroll bars.
+- WS_VSCROLL If the splitter currently manages shared vertical scroll bars.
 
 If zero, the splitter window does not currently manage any shared scroll bars.
 
@@ -736,13 +736,13 @@ A pointer to the device context in which to draw. If *pDC* is NULL, then [CWnd::
 *nType*<br/>
 A value of the `enum ESplitType`, which can be one of the following:
 
-    - `splitBox` The splitter drag box.
+- `splitBox` The splitter drag box.
 
-    - `splitBar` The bar that appears between the two split windows.
+- `splitBar` The bar that appears between the two split windows.
 
-    - `splitIntersection` The intersection of the split windows. This element will not be called when running on Windows 95/98.
+- `splitIntersection` The intersection of the split windows. This element will not be called when running on Windows 95/98.
 
-    - `splitBorder` The split window borders.
+- `splitBorder` The split window borders.
 
 *rect*<br/>
 A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object specifying the size and shape of the split windows.

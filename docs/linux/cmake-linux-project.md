@@ -197,10 +197,10 @@ The default Linux-Debug configuration in Visual Studio 2019 version 16.1 and lat
   ]
 }
 ```
+
 ::: moniker-end
 
 For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
-
 
 ## Optional Settings
 
@@ -215,8 +215,6 @@ You can use the following optional settings for more control:
 ```
 
 These options allow you to run commands on the Linux system before and after building, and before CMake generation. The values can be any command that is valid on the remote system. The output is piped back to Visual Studio.
-
-
 
 ## See also
 

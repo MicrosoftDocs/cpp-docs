@@ -1,7 +1,7 @@
 ---
 title: "bad_array_new_length Class"
 ms.date: "11/04/2016"
-f1_keywords: ["new/std::bad_alloc"]
+f1_keywords: ["new/std::bad_array_new_length"]
 helpviewer_keywords: ["bad_alloc class"]
 ms.assetid: 6429a8e6-5a49-4907-8d56-f4a4ec8131d0
 ---

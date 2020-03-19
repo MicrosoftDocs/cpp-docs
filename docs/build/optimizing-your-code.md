@@ -58,7 +58,6 @@ The following topics provide information about how to debug release builds.
 
 - [Why Floating-Point Numbers May Lose Precision](why-floating-point-numbers-may-lose-precision.md)
 
-
 The following topics provide information about how to optimize building, loading, and executing your code.
 
 - [Improving Compiler Throughput](improving-compiler-throughput.md)
@@ -70,7 +69,6 @@ The following topics provide information about how to optimize building, loading
 - [Specifying Compiler Optimization for an ATL Project](../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
 - [What optimization techniques should I use to improve the client application's performance when loading?](../build/dll-frequently-asked-questions.md#mfc_optimization)
-
 
 ## In this section
 

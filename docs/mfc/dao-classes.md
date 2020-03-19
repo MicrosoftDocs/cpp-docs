@@ -1,7 +1,6 @@
 ---
 title: "DAO Classes"
 ms.date: "09/17/2019"
-f1_keywords: ["vc.classes.data"]
 helpviewer_keywords: ["database classes [MFC], DAO", "DAO [MFC], classes"]
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
 ---

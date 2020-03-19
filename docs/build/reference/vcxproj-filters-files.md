@@ -100,4 +100,3 @@ To create nested logical folders, declare all nodes in filters `ItemGroup` as sh
     </Filter>
   </ItemGroup>
 ```
-

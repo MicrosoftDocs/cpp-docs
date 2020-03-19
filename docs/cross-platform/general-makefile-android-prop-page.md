@@ -8,12 +8,11 @@ f1_keywords:
   - VC.Project.VCConfiguration.Android.Makefile.BuildLogFile
   - VC.Project.VCConfiguration.Android.Makefile.ConfigurationType
 ---
-
 # General project properties (Android C++ Makefile)
 
-Property | Description | Choices
---- | ---| ---
-Output Directory | Specifies a relative path to the output file directory; can include environment variables.
-Intermediate Directory | Specifies a relative path to the intermediate file directory; can include environment variables.
-Build Log File | Specifies the build log file to write to when build logging is enabled.
-Configuration Type | Specifies the type of output this configuration generates. | **Dynamic Library (.so)** - Dynamic Library (*.so*)<br>**Static library (.a)** - Static Library (*.a*)<br>**Utility** - Utility<br>**Makefile** - Makefile<br>
+| Property | Description | Choices |
+|--|--|--|
+| Output Directory | Specifies a relative path to the output file directory; can include environment variables. |
+| Intermediate Directory | Specifies a relative path to the intermediate file directory; can include environment variables. |
+| Build Log File | Specifies the build log file to write to when build logging is enabled. |
+| Configuration Type | Specifies the type of output this configuration generates. | **Dynamic Library (.so)** - Dynamic Library (*.so*)<br>**Static library (.a)** - Static Library (*.a*)<br>**Utility** - Utility<br>**Makefile** - Makefile<br> |

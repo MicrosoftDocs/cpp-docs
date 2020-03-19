@@ -1,7 +1,6 @@
 ---
 title: "Global Variables and Standard Types"
 ms.date: "11/04/2016"
-f1_keywords: ["c.variables"]
 helpviewer_keywords: ["global variables, CRT", "standard types, CRT", "standard types", "types [CRT]"]
 ms.assetid: 8f8bad6f-2b78-4068-a0dc-77d58d978920
 ---

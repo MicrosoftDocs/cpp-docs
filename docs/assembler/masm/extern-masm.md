@@ -1,7 +1,6 @@
 ---
 title: "EXTERN (MASM)"
 ms.date: "12/06/2019"
-f1_keywords: ["extern"]
 helpviewer_keywords: ["EXTERN directive"]
 ms.assetid: 667d703d-3aaf-4139-a586-29bc5dab1aff
 ---

@@ -2,7 +2,7 @@
 title: "Platform::COMException Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
-f1_keywords: ["VCCORLIB/Platform::COMException", "VCCORLIB/Platform::Exception::HResult", "VCCORLIB/Platform::Exception::Message"]
+f1_keywords: ["VCCORLIB/Platform::COMException", "VCCORLIB/Platform::COMException::HResult", "VCCORLIB/Platform::COMException::Message"]
 helpviewer_keywords: ["Platform::COMException Class"]
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
 ---

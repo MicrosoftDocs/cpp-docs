@@ -1,7 +1,6 @@
 ---
 title: "CWinApp: The Application Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CWinApp"]
 helpviewer_keywords: ["application class [MFC]", "CWinApp class [MFC], CWinThread", "MFC, WinMain and", "CWinApp class [MFC], multithreading", "CWinThread class [MFC], and CWinApp", "InitApplication method [MFC]", "WinMain method [MFC]", "WinMain method [MFC], in MFC", "CWinApp class [MFC], WinMain"]
 ms.assetid: 935822bb-d463-481b-a5f6-9719d68ed1d5
 ---

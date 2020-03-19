@@ -1,7 +1,6 @@
 ---
 title: "Using CProgressCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CProgressCtrl"]
 helpviewer_keywords: ["progress controls [MFC]", "CProgressCtrl class [MFC], using", "progress controls [MFC], CProgressCtrl", "progress controls [MFC], using"]
 ms.assetid: 61473270-196b-41ab-bf2b-467f46673539
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Compiler COM Support Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["_com_raise_error"]
 helpviewer_keywords: ["cl.exe compiler, COM support", "COM, compiler support"]
 ms.assetid: 6d800d9b-b902-4033-9639-740a30b06f88
 ---

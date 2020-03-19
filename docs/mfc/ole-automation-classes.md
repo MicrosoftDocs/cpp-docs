@@ -1,7 +1,6 @@
 ---
 title: "OLE Automation Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.ole"]
 helpviewer_keywords: ["Automation, classes", "Automation classes [MFC], OLE classes", "OLE Automation [MFC], classes", "Automation classes [MFC]", "OLE Automation [MFC]"]
 ms.assetid: 96e5372b-ff8a-4da1-933b-4d9bbf4dceb3
 ---

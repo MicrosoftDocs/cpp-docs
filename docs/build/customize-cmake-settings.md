@@ -29,7 +29,6 @@ The following settings are available under the **General** heading:
 
 Corresponds to the **name** setting. This name appears in the C++ configuration dropdown. You can use the `${name}` macro to compose other property values such as paths.
 
-
 ### Configuration type
 
 Corresponds to the **configurationType** setting. Defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo". It maps to [CMAKE_BUILD_TYPE](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
@@ -57,7 +56,6 @@ Corresponds to **cmakeCommandArgs**. Specifies any additional [command line opti
 ### Build command arguments
 
 Corresponds to **buildCommandArgs**. Specifies additional switches to pass to the underlying build system. For example, passing `-v` when using the Ninja generator forces Ninja to output command lines.
-
 
 ### CTest command arguments
 

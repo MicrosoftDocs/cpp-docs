@@ -63,4 +63,3 @@ void CWebView::OnInitialUpdate()
 [Set compiler and build properties](../../build/working-with-project-properties.md)<br/>
 [Property Pages](../../build/reference/property-pages-visual-cpp.md)<br/>
 [Set compiler and build properties](../../build/working-with-project-properties.md)
-

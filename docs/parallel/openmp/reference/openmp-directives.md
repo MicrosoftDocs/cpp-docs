@@ -1,7 +1,7 @@
 ---
 title: "OpenMP Directives"
 ms.date: "03/20/2019"
-f1_keywords: ["OpenMP directives", "atomic", "barrier", "critical", "flush", "for", "master", "ordered", "parallel", "section", "SECTIONS", "single", "threadprivate"]
+f1_keywords: ["OpenMP directives", "atomic", "barrier", "critical", "flush", "for", "master", "parallel", "section", "single", "threadprivate"]
 helpviewer_keywords: ["OpenMP directives", "atomic OpenMP directive", "barrier OpenMP directive", "critical OpenMP directive", "flush OpenMP directive", "for OpenMP directive", "master OpenMP directive", "ordered OpenMP directive", "parallel OpenMP directive", "sections OpenMP directive", "single OpenMP directive", "threadprivate OpenMP directive"]
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
 ---

@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "12/04/2019"
+ms.date: "03/16/2020"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 ---
@@ -232,7 +232,6 @@ void f() {
 - `contains()` for associative containers.
 - `remove()`, `remove_if()`, and `unique()` for `list` and `forward_list` now return `size_type`.
 - `shift_left()` and `shift_right()` added to \<algorithm>.
-
 
 ## <a name="improvements_162"></a> Conformance improvements in 16.2
 
@@ -565,7 +564,7 @@ void f(T (&buffer)[Size], int& size_read)
 
 ### User-provided specializations of type traits
 
-In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified type_traits templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
+In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified `type_traits` templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
 
 ```cpp
 #include <type_traits>
@@ -577,7 +576,7 @@ struct std::is_fundamental<S> : std::true_type {};
 static_assert(std::is_fundamental<S>::value, "fail");
 ```
 
-To avoid the error, define a struct that inherits from the desired type_trait, and specialize that:
+To avoid the error, define a struct that inherits from the preferred `type_trait`, and specialize that:
 
 ```cpp
 #include <type_traits>
@@ -597,19 +596,19 @@ static_assert(my_is_fundamental<S>::value, "fail");
 
 The MSVC compiler now implements the following changes to comparison operators per [P1630R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1630r1.html) when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) option is enabled:
 
-The compiler will no longer rewrite expressions with `operator==` if they involve a return type that is not a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
+The compiler no longer rewrites expressions using `operator==` if they involve a return type that isn't a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
 
 ```cpp
 struct U {
-  operator bool() const;
+    operator bool() const;
 };
 
 struct S {
-  U operator==(const S&) const;
+    U operator==(const S&) const;
 };
 
 bool neq(const S& lhs, const S& rhs) {
-  return lhs != rhs;
+    return lhs != rhs;
 }
 ```
 
@@ -630,7 +629,7 @@ bool neq(const S& lhs, const S& rhs) {
 }
 ```
 
-The compiler will no longer define a defaulted comparison operator if it is a member of a union-like class. The following example now produces  *C2120: 'void' illegal with all types*:
+The compiler no longer defines a defaulted comparison operator if it's a member of a union-like class. The following example now produces *C2120: 'void' illegal with all types*:
 
 ```cpp
 #include <compare>
@@ -652,13 +651,13 @@ To avoid the error, define a body for the operator:
 #include <compare>
 
 union S {
-  int a;
-  char b;
-  auto operator<=>(const S&) const { ... }
+    int a;
+    char b;
+    auto operator<=>(const S&) const { ... }
 };
 
 bool lt(const S& lhs, const S& rhs) {
-  return lhs < rhs;
+    return lhs < rhs;
 }
 ```
 
@@ -690,6 +689,197 @@ struct U {
 bool lt(const U& lhs, const U& rhs) {
     return lhs < rhs;
 }
+```
+
+## <a name="improvements_165"></a> Conformance improvements in Visual Studio 2019 version 16.5
+
+### Explicit specialization declaration without an initializer is not a definition
+
+Under `/permissive-`, MSVC now enforces a standard rule that explicit specialization declarations without initializers aren't definitions. Previously, the declaration would be considered a definition with a default-initializer. The effect is observable at link time, since a program depending on this behavior may now have unresolved symbols. This example now results in an error:
+
+```cpp
+template <typename> struct S {
+    static int a;
+};
+
+// In permissive-, this declaration is not a definition and the program will not link.
+template <> int S<char>::a;
+
+int main() {
+    return S<char>::a;
+}
+```
+
+```Output
+error LNK2019: unresolved external symbol "public: static int S<char>::a" (?a@?$S@D@@2HA) referenced in function _main
+at link time.
+```
+
+To resolve the issue, add an initializer:
+
+```cpp
+template <typename> struct S {
+    static int a;
+};
+
+// Add an initializer for the declaration to be a definition.
+template <> int S<char>::a{};
+
+int main() {
+    return S<char>::a;
+}
+```
+
+### Preprocessor output preserves newlines
+
+The experimental preprocessor now preserves newlines and whitespace when using `/P` or `/E` with `/experimental:preprocessor`. This change can be disabled by using `/d1experimental:preprocessor:oldWhitespace`.
+
+Given this example source,
+
+```cpp
+#define m()
+line m(
+) line
+```
+
+The previous output of `/E` was:
+
+```Output
+line line
+#line 2
+```
+
+The new output of `/E` is now:
+
+```Output
+line
+ line
+```
+
+### 'import' and 'module' keywords are context dependent
+
+Per P1857R1, import and module preprocessor directives have additional restrictions on their syntax. This example no longer compiles:
+
+```cpp
+import // Invalid
+m;
+```
+
+It produces the following error message:
+
+```Output
+error C2146: syntax error: missing ';' before identifier 'm'
+```
+
+To resolve the issue, keep the import on the same line:
+
+```cpp
+import m; // OK
+```
+
+### Removal of std::weak_equality and std::strong_equality
+
+The merge of P1959R0 requires the compiler to remove behavior and references to the `std::weak_equality` and `std::strong_equality` types.
+
+The code in this example no longer compiles:
+
+```cpp
+#include <compare>
+
+struct S {
+    std::strong_equality operator<=>(const S&) const = default;
+};
+
+void f() {
+    nullptr<=>nullptr;
+    &f <=> &f;
+    &S::operator<=> <=> &S::operator<=>;
+}
+```
+
+The example now leads to these errors:
+
+```Output
+error C2039: 'strong_equality': is not a member of 'std'
+error C2143: syntax error: missing ';' before '<=>'
+error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+error C7546: binary operator '<=>': unsupported operand types 'nullptr' and 'nullptr'
+error C7546: binary operator '<=>': unsupported operand types 'void (__cdecl *)(void)' and 'void (__cdecl *)(void)'
+error C7546: binary operator '<=>': unsupported operand types 'int (__thiscall S::* )(const S &) const' and 'int (__thiscall S::* )(const S &) const'
+```
+
+To resolve the issue, update to prefer the built-in relational operators and replace the removed types:
+
+```cpp
+#include <compare>
+
+struct S {
+    std::strong_ordering operator<=>(const S&) const = default; // prefer 'std::strong_ordering'
+};
+
+void f() {
+    nullptr != nullptr; // use pre-existing builtin operator != or ==.
+    &f != &f;
+    &S::operator<=> != &S::operator<=>;
+}
+```
+
+### TLS Guard changes
+
+Previously, thread-local variables in DLLs weren't correctly initialized before their first use on threads
+that existed before the DLL was loaded, other than the thread that loaded the DLL. This defect has now been corrected.
+Thread-local variables in such a DLL are initialized immediately before their first use on such threads.
+
+This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the
+`/Zc:tlsGuards-` compiler switch. Or, by adding the `[[msvc:no_tls_guard]]` attribute to particular thread local variables.
+
+### Better diagnosis of call to deleted functions
+
+Our compiler was more permissive about calls to deleted functions previously. For example, if the calls happened in the context of a template body, we wouldn't diagnose the call. Additionally, if there were multiple instances of calls to deleted functions, we would only issue one diagnostic. Now we issue a diagnostic for each of them.
+
+One consequence of the new behavior can produce a small breaking change: Code that called a deleted function wouldn't get diagnosed if it was never needed for code generation. Now we diagnose it up front.
+
+This example shows code that now produces an error:
+
+```cpp
+struct S {
+  S() = delete;
+  S(int) { }
+};
+
+struct U {
+  U() = delete;
+  U(int i): s{ i } { }
+
+  S s{};
+};
+
+U u{ 0 };
+```
+
+```Output
+error C2280: 'S::S(void)': attempting to reference a deleted function
+note: see declaration of 'S::S'
+note: 'S::S(void)': function was explicitly deleted
+```
+
+To resolve the issue, remove calls to deleted functions:
+
+```cpp
+struct S {
+  S() = delete;
+  S(int) { }
+};
+
+struct U {
+  U() = delete;
+  U(int i): s{ i } { }
+
+  S s;  // Do not call the deleted ctor of 'S'.
+};
+
+U u{ 0 };
 ```
 
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
@@ -2675,7 +2865,7 @@ int main() {
 
 The compiler changes in Visual Studio 2017 version 15.8 all fall under the category of bug fixes and behavior changes, and are listed below:
 
-###**typename** on unqualified identifiers
+### **typename** on unqualified identifiers
 
 In [/permissive-](../build/reference/permissive-standards-conformance.md) mode,  spurious**typename** keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 *'T': 'typename' keyword must be followed by a qualified name*:
 

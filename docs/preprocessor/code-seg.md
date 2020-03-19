@@ -1,7 +1,7 @@
 ---
 title: "code_seg pragma"
 ms.date: "08/29/2019"
-f1_keywords: ["code_seg_CPP", "vc-pragma.code_seg"]
+f1_keywords: ["vc-pragma.code_seg"]
 helpviewer_keywords: ["pragmas, code_seg", "code_seg pragma"]
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
 ---

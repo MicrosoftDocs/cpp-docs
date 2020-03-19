@@ -11,18 +11,22 @@ This tutorial walks you step-by-step through a non-attributed ATL project that c
 > [!NOTE]
 > This tutorial creates the same source code as the Polygon sample. If you want to avoid entering the source code manually, you can download it from the [Polygon sample abstract](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon). You can then refer to the Polygon source code as you work through the tutorial, or use it to check for errors in your own project.
 > To compile, open *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) and replace:
+>
 > ```
 > #ifndef WINVER
 > #define WINVER 0x0400
 > #endif
 > ```
+>
 > with
+>
 > ```
 > #ifndef WINVER
 > #define WINVER 0x0500
 > #define _WIN32_WINNT 0x0500
 > #endif
 > ```
+>
 > The compiler will still complain about `regsvr32` not exiting correctly, but you should still have the control's DLL built and available for use.
 
 ### To create the initial ATL project using the ATL Project Wizard

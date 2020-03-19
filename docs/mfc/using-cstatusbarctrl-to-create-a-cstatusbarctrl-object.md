@@ -1,7 +1,6 @@
 ---
 title: "Using CStatusBarCtrl to Create a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
-f1_keywords: ["CStatusBarCtrl"]
 helpviewer_keywords: ["status bar controls [MFC], creating", "CStatusBarCtrl class [MFC], creating"]
 ms.assetid: 365c2b65-12de-49e6-9a2e-416c6ee10d60
 ---

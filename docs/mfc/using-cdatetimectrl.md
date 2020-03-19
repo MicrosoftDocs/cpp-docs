@@ -1,7 +1,6 @@
 ---
 title: "Using CDateTimeCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CDateTimeCtrl"]
 helpviewer_keywords: ["DateTimePicker control [MFC], CDateTimeCtrl class"]
 ms.assetid: cb2a8720-43f1-4c33-a3a4-def9a1622e00
 ---

@@ -6,9 +6,7 @@ ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
 # C++ Tools and Features in Visual Studio Editions
 
-
 ::: moniker range=">=vs-2019"
-
 
 The following C++ features are available in Visual Studio 2019. Unless stated otherwise, all features are available in all editions: Visual Studio Community, Visual Studio Professional, and Visual Studio Enterprise. Some features require specific workloads or optional components, which you can install with the Visual Studio Installer.
 
@@ -128,7 +126,6 @@ Optional Components:
 - Android NDK (R16B) (32bit)
 - C++ iOS development tools
 - IncrediBuild - Build Acceleration
-
 
 ## Individual components
 

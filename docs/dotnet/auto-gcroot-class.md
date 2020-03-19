@@ -179,7 +179,6 @@ done
 
 The `auto_gcroot` destructor.
 
-
 ```cpp
 ~auto_gcroot();
 ```

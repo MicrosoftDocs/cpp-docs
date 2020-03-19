@@ -56,7 +56,6 @@ If you're running a different version of Windows, look in your Start menu or Sta
 
 ::: moniker-end
 
-
 Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
 ```Output

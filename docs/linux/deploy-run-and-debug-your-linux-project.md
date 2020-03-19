@@ -46,7 +46,6 @@ There are several ways to interact with and debug your Linux project.
 
    ::: moniker-end
 
-
    - In **gdbserver** mode, GDB is run locally, which connects to gdbserver on the remote system.  Note that this is the only mode that the Linux Console window supports.
 
    - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system. This is a better option if the local version of GDB is not compatible with the version installed on the target computer. |
@@ -185,6 +184,7 @@ If you want complete control over your deployment, you can append the following 
 ]
 
 ```
+
 ::: moniker-end
 
 ## Next steps
