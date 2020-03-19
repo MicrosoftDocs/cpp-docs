@@ -42,7 +42,6 @@ The managed type to be embedded.
 |[auto_gcroot::reset](#reset)|Destroy the current owned object and optionally take possession of a new object.|
 |[auto_gcroot::swap](#swap)|Swaps objects with another `auto_gcroot`.|
 
-
 ### Public operators
 
 |Name|Description|
@@ -757,7 +756,7 @@ operator bool() const;
 
 ### Remarks
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+This operator actually converts to `_detail_class::_safe_bool`, which is safer than `bool` because it can't be converted to an integral type.
 
 ### Example
 
