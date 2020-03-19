@@ -1647,7 +1647,7 @@ Although these differences can affect your source code or other build artifacts,
     A::A(const A&) {}
 
     //b.cpp
-    // compile with cl.exe /nologo /LD /EHsc /Osx b.cpp
+    // compile with cl.exe /nologo /LD /EHsc /Osx b.cpp
     #pragma comment(lib, "A")
     class __declspec(dllimport) A
     {
@@ -1664,7 +1664,7 @@ Although these differences can affect your source code or other build artifacts,
     };
 
     //c.cpp
-    #pragma comment(lib, "A")
+    #pragma comment(lib, "A")
     #pragma comment(lib, "B")
     class __declspec(dllimport) A
     {

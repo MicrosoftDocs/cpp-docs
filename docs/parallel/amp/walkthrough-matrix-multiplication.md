@@ -27,7 +27,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Empty Project** then choose **Next**. In the next page, enter *MatrixMultiply* in the **Name** box to specify a name for the project, and specify the project location if desired.
 

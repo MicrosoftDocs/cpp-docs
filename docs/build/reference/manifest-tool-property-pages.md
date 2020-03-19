@@ -46,7 +46,7 @@ Uses the /identity option to specify an identity string, which comprises the att
 
 This is an example identity string: `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`
 
-## Input and Output Property Page     
+## Input and Output Property Page
 
 ###  Additional Manifest Files
 

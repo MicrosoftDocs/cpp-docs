@@ -29,7 +29,7 @@ There are several ways to interact with and debug your Linux project.
 ## Debug your Linux project
 
 1. Select debugging mode in the **Debugging** property page.
-   
+
    ::: moniker range="vs-2019"
 
    GDB is used to debug applications running on Linux. When debugging on a remote system (not WSL) GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:

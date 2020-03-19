@@ -5,9 +5,9 @@ ms.assetid: bb736587-d13b-4f3c-8982-3cc2c015c59c
 ---
 # Linking
 
-In a C++ project, the *linking* step is performed after the compiler has compiled the source code into object files (*.obj). The linker (link.exe) combines the object files into a single executable file. 
+In a C++ project, the *linking* step is performed after the compiler has compiled the source code into object files (*.obj). The linker (link.exe) combines the object files into a single executable file.
 
-Linker options can be set inside or outside of Visual Studio. Within Visual Studio, you access linker options by right-clicking on a project node in **Solution Explorer** and choosing **Properties** to display the property pages. Choose **Linker** in the left pane to expand the node and see all the options. 
+Linker options can be set inside or outside of Visual Studio. Within Visual Studio, you access linker options by right-clicking on a project node in **Solution Explorer** and choosing **Properties** to display the property pages. Choose **Linker** in the left pane to expand the node and see all the options.
 
 ## Linker command-line syntax
 

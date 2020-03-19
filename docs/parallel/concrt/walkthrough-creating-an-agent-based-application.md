@@ -40,7 +40,7 @@ This section shows how to create a C++ console application that references the h
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `BasicAgent` as the name for the project, and specify the project location if desired.
 

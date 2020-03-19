@@ -83,7 +83,7 @@ Before you create your recordset class, determine what parameters you need, what
 
 #### To parameterize a recordset class
 
-> [!NOTE] 
+> [!NOTE]
 > The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create this functionality manually.
 
 1. Run the [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) from **Add Class** to create the class.

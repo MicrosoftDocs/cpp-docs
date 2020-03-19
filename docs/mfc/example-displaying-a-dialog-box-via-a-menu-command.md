@@ -45,7 +45,7 @@ The procedures use the following names and values:
 
    ```cpp
    CTestDialog testdlg;
-   testdlg.DoModal(); 
+   testdlg.DoModal();
    ```
 
 ### To display a modeless dialog box

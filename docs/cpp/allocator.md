@@ -13,7 +13,7 @@ The **allocator** declaration specifier can be applied to custom memory-allocati
 ## Syntax
 
 ```
-   __declspec(allocator) 
+   __declspec(allocator)
 ```
 
 ## Remarks

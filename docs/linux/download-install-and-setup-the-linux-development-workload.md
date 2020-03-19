@@ -15,11 +15,11 @@ Linux projects are supported in Visual Studio 2017 and later.
 
 ::: moniker range=">=vs-2017"
 
-You can use the Visual Studio IDE on Windows to create, edit and debug C++ projects that execute on a remote Linux system, virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about). 
+You can use the Visual Studio IDE on Windows to create, edit and debug C++ projects that execute on a remote Linux system, virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about).
 
-You can work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio. For example, you can edit, build, and debug your code on Windows using Visual Studio, then quickly retarget the project for Linux to build and debug in a Linux environment. Linux header files are automatically copied to your local machine, where Visual Studio uses them to provide full IntelliSense support (Statement Completion, Go to Definition, and so on). 
- 
-For any of these scenarios, the **Linux development with C++** workload is required. 
+You can work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio. For example, you can edit, build, and debug your code on Windows using Visual Studio, then quickly retarget the project for Linux to build and debug in a Linux environment. Linux header files are automatically copied to your local machine, where Visual Studio uses them to provide full IntelliSense support (Statement Completion, Go to Definition, and so on).
+
+For any of these scenarios, the **Linux development with C++** workload is required.
 
 ::: moniker-end
 

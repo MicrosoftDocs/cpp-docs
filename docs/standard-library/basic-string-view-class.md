@@ -162,7 +162,7 @@ A const_reference to the character at the position specified by the parameter in
 
 ### Remarks
 
-The first element has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string_view of length *n* has an *n*th element indexed by the number *n -* 1. **at** throws an exception for invalid indices, unlike [operator\[\]](#op_at). 
+The first element has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string_view of length *n* has an *n*th element indexed by the number *n -* 1. **at** throws an exception for invalid indices, unlike [operator\[\]](#op_at).
 
 In general, we recommend that **at** for sequences such as `std::vector` and string_view should never be used. An invalid index passed to a sequence is a logic error that should be discovered and fixed during development. If a program isn't absolutely certain that its indices are valid, it should test them, not call at() and rely on exceptions to defend against careless programming.
 
@@ -211,7 +211,7 @@ A string_view that is constructed with a C string literal does not include the t
 char c[] = "Help"; // char[5]
 string_view sv{ c };
 cout << sv.size(); // size() == 4
-cout << sv.back() << endl; // p 
+cout << sv.back() << endl; // p
 ```
 
 Embedded nulls are treated as any other character:
@@ -324,7 +324,7 @@ A negative value if this string_view is less than *strv* or *ptr*; zero if the t
 
 ### Remarks
 
-The `compare` member functions perform a case-sensitive comparison of either all or part of each character sequence. 
+The `compare` member functions perform a case-sensitive comparison of either all or part of each character sequence.
 
 ### Example
 
@@ -362,11 +362,11 @@ int main()
    cout << "sv_C is: " << sv_C << endl;
    cout << "sv_D is: " << sv_D << endl;
    int comp2a = sv_C.compare(2, 3, sv_D);
-   cout << "The last three characters of sv_C are" 
+   cout << "The last three characters of sv_C are"
        << to_alpha(comp2a) << "sv_D.\n";
 
    int comp2b = sv_C.compare(0, 3, sv_D);
-   cout << "The first three characters of sv_C are" 
+   cout << "The first three characters of sv_C are"
        << to_alpha(comp2b) << "sv_D.\n";
 
    // The third member function compares part of
@@ -377,7 +377,7 @@ int main()
    cout << "sv_F is: " << sv_F << endl;
    int comp3a = sv_E.compare(2, 3, sv_F, 1, 3);
    cout << "The three characters from position 2 of sv_E are"
-       << to_alpha(comp3a) 
+       << to_alpha(comp3a)
        << "the 3 characters of sv_F from position 1.\n";
 
    // The fourth member function compares
@@ -507,11 +507,11 @@ constexpr const_reverse_iterator crbegin() const noexcept;
 
 ### Return Value
 
-A const_reverse_iterator that addresses the first element in a reversed string_view. 
+A const_reverse_iterator that addresses the first element in a reversed string_view.
 
 ## <a name="crend"></a>  basic_string_view::crend
 
-Same as [rend](#rend). 
+Same as [rend](#rend).
 
 ```cpp
 constexpr const_reverse_iterator crend() const noexcept;

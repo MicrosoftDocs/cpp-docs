@@ -28,7 +28,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter a name for the project, and specify the project location if desired.
 
@@ -64,9 +64,9 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 1. Click **OK** to create the project.
 
-1. Complete the **Win32 Application Wizard**. 
+1. Complete the **Win32 Application Wizard**.
 
-1. Click **Next**, then make sure **Console Application** is selected and uncheck the **Precompiled Headers** box. 
+1. Click **Next**, then make sure **Console Application** is selected and uncheck the **Precompiled Headers** box.
 
 1. Click **Finish**.
 
