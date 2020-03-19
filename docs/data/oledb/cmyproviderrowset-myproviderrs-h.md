@@ -10,10 +10,10 @@ ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
 The wizard generates an entry for the rowset object. In this case, it's called `CCustomRowset`. The `CCustomRowset` class inherits from an OLE DB provider class called `CRowsetImpl`, which implements all the necessary interfaces for the rowset object. The following code shows the inheritance chain for `CRowsetImpl`:
 
 ```cpp
-template <class T, class Storage, class CreatorClass, 
+template <class T, class Storage, class CreatorClass,
    class ArrayType = CAtlArray<Storage>>
 class CMyRowsetImpl:
-   public CRowsetImpl<T, Storage, CreatorClass, ArrayType, 
+   public CRowsetImpl<T, Storage, CreatorClass, ArrayType,
       CSimpleRow, IRowsetLocateImpl< T >>
 ```
 

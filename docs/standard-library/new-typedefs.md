@@ -19,7 +19,7 @@ This number is the maximum recommended size of contiguous memory occupied by two
 ### Example
 
 ```cpp
-struct together { 
+struct together {
     atomic<int> dog;
     int puppy;
 };

@@ -35,7 +35,7 @@ The **/std:c++17** option enables the full set of C++17 features implemented by 
 The **/std:c++latest** option enables the post-C++17 language and library features currently implemented in the compiler and libraries. These may include features from the C++20 Working Draft and defect updates of the C++ Standard that are not included in C++17, as well as experimental proposals for the draft standard. For a list of supported language and library features, see [What's New for Visual C++](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md). The **/std:c++latest** option does not enable features guarded by the **/experimental** switch, but may be required to enable them.
 
 > [!IMPORTANT]
-> The compiler and library features enabled by **/std:c++latest** represent features that may appear in a future C++ standard, as well as C++20 features that are approved. Features that have not been approved are subject to breaking changes or removal without notice and are provided on an as-is basis. 
+> The compiler and library features enabled by **/std:c++latest** represent features that may appear in a future C++ standard, as well as C++20 features that are approved. Features that have not been approved are subject to breaking changes or removal without notice and are provided on an as-is basis.
 
 The **/std** option in effect during a C++ compilation can be detected by use of the [\_MSVC\_LANG](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
 

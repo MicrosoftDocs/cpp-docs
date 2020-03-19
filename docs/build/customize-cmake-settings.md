@@ -7,13 +7,13 @@ helpviewer_keywords: ["CMake build settings"]
 
 ::: moniker range="vs-2019"
 
-In Visual Studio 2019 and later, you can add configurations and customize their settings by using the **CMake settings editor**. The editor is intended to be a simpler alternative to manually editing the *CMakeSettings.json* file, but if you prefer to edit the file directly, you can click the **Edit JSON** link in the upper right of the editor. 
+In Visual Studio 2019 and later, you can add configurations and customize their settings by using the **CMake settings editor**. The editor is intended to be a simpler alternative to manually editing the *CMakeSettings.json* file, but if you prefer to edit the file directly, you can click the **Edit JSON** link in the upper right of the editor.
 
 To open the editor, click on the **Configuration** drop-down in the main toolbar and choose **Manage Configurations**.
 
 ![CMake configurations drop-down](media/vs2019-cmake-manage-configurations.png)
 
-Now you see the **Settings Editor** with the installed configurations on the left. 
+Now you see the **Settings Editor** with the installed configurations on the left.
 
 ![CMake settings editor](media/cmake-settings-editor.png)
 
@@ -39,7 +39,7 @@ Corresponds to the **inheritedEnvironments** setting. Defines the compiler envir
 
 ### CMake toolchain file
 
-Path to the [CMake toolchain file](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html). This path is passed to CMake as "-DCMAKE_TOOLCHAIN_FILE = \<filepath>". Toolchain files specify locations of compilers and toolchain utilities, and other target platform and compiler related information. By default, Visual Studio uses the [vcpkg toolchain file](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md#cmake) if this setting is unspecified. 
+Path to the [CMake toolchain file](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html). This path is passed to CMake as "-DCMAKE_TOOLCHAIN_FILE = \<filepath>". Toolchain files specify locations of compilers and toolchain utilities, and other target platform and compiler related information. By default, Visual Studio uses the [vcpkg toolchain file](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md#cmake) if this setting is unspecified.
 
 ### Build root
 
@@ -67,11 +67,11 @@ For configurations such as Linux that use remote builds, the following settings 
 
 ### rsync command arguments
 
-Additional command line options passed to [rsync](https://download.samba.org/pub/rsync/rsync.html), a fast and versatile file-copying tool. 
+Additional command line options passed to [rsync](https://download.samba.org/pub/rsync/rsync.html), a fast and versatile file-copying tool.
 
 ## CMake variables and cache
 
-These settings enable you to set CMake variables and save them in *CMakeSettings.json*. They're passed to CMake at build time, and override whatever values are in the *CMakeLists.txt* file. You can use this section in the same way that you might use the CMakeGUI to view a list of all the CMake variables available to edit. Click the **Save and generate cache** button to view a list of all CMake variables available to edit, including advanced variables (per the CMakeGUI). You can filter the list by variable name. 
+These settings enable you to set CMake variables and save them in *CMakeSettings.json*. They're passed to CMake at build time, and override whatever values are in the *CMakeLists.txt* file. You can use this section in the same way that you might use the CMakeGUI to view a list of all the CMake variables available to edit. Click the **Save and generate cache** button to view a list of all CMake variables available to edit, including advanced variables (per the CMakeGUI). You can filter the list by variable name.
 
 Corresponds to **variables**. Contains a name-value pair of CMake variables passed as **-D** *_name_=_value_* to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, we recommend you add them here instead.
 
@@ -101,7 +101,7 @@ The IntelliSense mode used by the IntelliSense engine. If no mode is selected th
 
 ### Install directory
 
-The directory in which CMake installs targets. Maps to [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html). 
+The directory in which CMake installs targets. Maps to [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html).
 
 ### CMake executable
 
@@ -115,15 +115,15 @@ The directory on the remote machine that contains the root *CMakeLists.txt* file
 
 ### Remote install root
 
-The directory on the remote machine in which CMake installs targets. Maps to [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html). 
+The directory on the remote machine in which CMake installs targets. Maps to [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html).
 
 ### Remote copy sources
 
-Specifies whether to copy source files to the remote machine, and lets you specify whether to use rsync or sftp. 
+Specifies whether to copy source files to the remote machine, and lets you specify whether to use rsync or sftp.
 
 ## Directly edit CMakeSettings.json
 
-You can also directly edit *CMakeSettings.json* to create custom configurations. The **Settings Editor** has an **Edit JSON** button in the upper right that opens the file for editing. 
+You can also directly edit *CMakeSettings.json* to create custom configurations. The **Settings Editor** has an **Edit JSON** button in the upper right that opens the file for editing.
 
 The following example shows a sample configuration, which you can use as a starting point:
 
@@ -161,13 +161,13 @@ You can choose from the list of predefined configurations:
 
    ![CMake predefined configurations](media/cmake-configurations.png)
 
-The first time you select a configuration, Visual Studio creates a *CMakeSettings.json* file in your project's root folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation. 
+The first time you select a configuration, Visual Studio creates a *CMakeSettings.json* file in your project's root folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation.
 
-To add an additional configuration, right click *CMakeSettings.json* and choose **Add Configuration**. 
+To add an additional configuration, right click *CMakeSettings.json* and choose **Add Configuration**.
 
    ![CMake Add configuration](media/cmake-add-configuration.png "CMake Add Configuration")
 
-You can also edit the file using the **CMake Settings Editor**. Right-click on *CMakeSettings.json* in **Solution Explorer** and choose **Edit CMake Settings**. Or, select **Manage Configurations** from the configuration drop-down at the top of the editor window. 
+You can also edit the file using the **CMake Settings Editor**. Right-click on *CMakeSettings.json* in **Solution Explorer** and choose **Edit CMake Settings**. Or, select **Manage Configurations** from the configuration drop-down at the top of the editor window.
 
 You can also directly edit *CMakeSettings.json* to create custom configurations. The following example shows a sample configuration, which you can use as a starting point:
 

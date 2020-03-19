@@ -6,7 +6,7 @@ ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
 ---
 # Format specification syntax: printf and wprintf functions
 
-The various `printf` and `wprintf` functions take a format string and optional arguments and produce a formatted sequence of characters for output. The format string contains zero or more *directives*, which are either literal characters for output or encoded *conversion specifications* that describe how to format an argument in the output. This article describes the syntax used to encode conversion specifications in the format string. For a listing of these functions, see [Stream I/O](../c-runtime-library/stream-i-o.md). 
+The various `printf` and `wprintf` functions take a format string and optional arguments and produce a formatted sequence of characters for output. The format string contains zero or more *directives*, which are either literal characters for output or encoded *conversion specifications* that describe how to format an argument in the output. This article describes the syntax used to encode conversion specifications in the format string. For a listing of these functions, see [Stream I/O](../c-runtime-library/stream-i-o.md).
 
 A conversion specification consists of optional and required fields in this form:
 
@@ -27,7 +27,7 @@ A basic conversion specification contains only the percent sign and a *type* cha
 
 <a name="type"></a>
 
-> [!NOTE] 
+> [!NOTE]
 > In Visual Studio 2015 The `printf` and `scanf` family of functions were declared as **inline** and moved to the `<stdio.h>` and `<conio.h>` headers. If you are migrating older code you might see *LNK2019* in connection with these functions. For more information, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 ## Type conversion specifier

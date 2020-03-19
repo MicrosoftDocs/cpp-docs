@@ -6,7 +6,7 @@ ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
 ---
 # Recordset: How Recordsets Select Records (ODBC)
 
-> [!NOTE] 
+> [!NOTE]
 > The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.

@@ -17,7 +17,7 @@ Before attempting to upgrade, make sure that you have the Windows Desktop worklo
 
 Next, back up the entire solution and all its contents.
 
-Finally, open the solution in the latest version of Visual Studio and allow the wizard to convert the project. 
+Finally, open the solution in the latest version of Visual Studio and allow the wizard to convert the project.
 
 Note that you can also run devenv at the command line, using the `/Upgrade` option, instead of using the wizard to upgrade your projects. See [/Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe). That could be helpful in automating the upgrade process for a large number of projects.
 

@@ -12,7 +12,7 @@ A *Visual Studio project* is a project based on the MSBuild build system. MSBuil
 
 ::: moniker range="vs-2019"
 
-You can create C++ projects by choosing **File** > **New** > **Project**, then setting the **Language** to C++. In the results list you see a list of project templates which you can filter by setting the **Platform** or **Project Type** and by typing keywords into the search box. 
+You can create C++ projects by choosing **File** > **New** > **Project**, then setting the **Language** to C++. In the results list you see a list of project templates which you can filter by setting the **Platform** or **Project Type** and by typing keywords into the search box.
 
    ![Visual Studio 2019 Project Templates](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 New Project Dialog")
 
@@ -40,7 +40,7 @@ Add source code files, icons, or any other items to your project by right-clicki
 
 ## Add third party libraries
 
-To add third-party libraries, use the [vcpkg](vcpkg.md) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project. 
+To add third-party libraries, use the [vcpkg](vcpkg.md) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project.
 
 ## Set compiler options and other build properties
 
@@ -50,7 +50,7 @@ To configure build settings for a project, right-click on the project in **Solut
 
 To compile and run the new project, press **F5** or click the *debug dropdown* with the green arrow on the main toolbar. The *configuration dropdown* is where you choose whether to perform a *Debug* or *Release* build (or some other custom configuration).
 
-A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning does not. All errors and warnings will appear both in the Output Window and in the Error List when you build the project. 
+A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning does not. All errors and warnings will appear both in the Output Window and in the Error List when you build the project.
 
    ![Output window and error list](../overview/media/vs2017-output-error-list.png)
 
@@ -63,7 +63,7 @@ How to use Property Pages and Property Sheets to specify your project settings.
 
 [Reference libraries and components at build time](adding-references-in-visual-cpp-projects.md)<br/>
 How to include libs, DLLs, COM and .NET components in a project.
- 
+
 [Organize Project Output Files](how-to-organize-project-output-files-for-builds.md)<br/>
 How to customize the location of the executable files created in the build process.
 

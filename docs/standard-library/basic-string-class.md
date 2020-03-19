@@ -1557,7 +1557,7 @@ A pointer to the first element of the null-terminated array containing the conte
 
 The pointer returned by `data` points at a valid range `[data(), data() + size()]`. Each element in the range corresponds to the current data in the string. That is, for every valid offset *n* in the range, `data() + n == addressof(operator[](n))`.
 
-If you modify the contents of the string returned by the **const** overload of `data`, the behavior is undefined. You also get undefined behavior if the terminal null character is changed to any other value. The returned pointer may be invalidated if a non-const reference to the string is passed to a standard library function. It can also be invalidated by a call to a non-const member function. Calls to members `at`, `back`, `begin`, `end`, `front`, `rbegin`, `rend`, and `operator[]` don't invalidate the pointer. 
+If you modify the contents of the string returned by the **const** overload of `data`, the behavior is undefined. You also get undefined behavior if the terminal null character is changed to any other value. The returned pointer may be invalidated if a non-const reference to the string is passed to a standard library function. It can also be invalidated by a call to a non-const member function. Calls to members `at`, `back`, `begin`, `end`, `front`, `rbegin`, `rend`, and `operator[]` don't invalidate the pointer.
 
 Prior to C++11, `data` didn't guarantee the returned string was null-terminated. Since C++11, `data` and `c_str` both return a null-terminated string, and are effectively the same.
 

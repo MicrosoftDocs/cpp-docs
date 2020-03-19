@@ -6,7 +6,7 @@ helpviewer_keywords: ["std::basic_string_view::operator!=", "std::basic_string_v
 ---
 # &lt;string_view&gt; operators
 
-Use these operators to compare two string_view objects, or a string_view and some other string object (for example [std::string](basic-string-class.md), or **char\***) for which an implicit conversion is provided. 
+Use these operators to compare two string_view objects, or a string_view and some other string object (for example [std::string](basic-string-class.md), or **char\***) for which an implicit conversion is provided.
 
 ||||
 |-|-|-|
@@ -49,7 +49,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Remarks
 
-An implicit conversion must exist from *convertible_string_type* to the string_view on the other side. 
+An implicit conversion must exist from *convertible_string_type* to the string_view on the other side.
 
 The comparison is based on a pairwise lexicographical comparison of the character sequences. If they have the same number of elements and the elements are all equal, the two objects are equal. Otherwise, they are unequal.
 
@@ -88,7 +88,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Remarks
 
-An implicit conversion must exist from *convertible_string_type* to the string_view on the other side. 
+An implicit conversion must exist from *convertible_string_type* to the string_view on the other side.
 
 The comparison is based on a pairwise lexicographical comparison of the character sequences. If they have the same number of elements and the elements are all equal, the two objects are equal.
 
@@ -127,7 +127,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Remarks
 
-An implicit conversion must exist from *convertible_string_type* to the string_view on the other side. 
+An implicit conversion must exist from *convertible_string_type* to the string_view on the other side.
 
 The comparison is based on a pairwise lexicographical comparison of the character sequences. When the first unequal pair of characters is encountered, the result of that comparison is returned. If no unequal characters are found, but one sequence is shorter, the shorter sequence is less than the longer one. In other words, "cat" is less than "cats".
 
@@ -292,7 +292,7 @@ See [operator&lt;](#op_lt).
 
 ## <a name="op_sv"></a> operator"" sv (string_view literal)
 
-Constructs a string_view from a string literal. Requires namespace `std::literals::string_view_literals`. 
+Constructs a string_view from a string literal. Requires namespace `std::literals::string_view_literals`.
 
 ### Example
 

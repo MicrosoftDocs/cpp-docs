@@ -26,7 +26,7 @@ The following C++ features are available in Visual Studio 2019. Unless stated ot
 - Clang/LLVM
   - On Windows, Clang/LLVM 7.0, targeting x86 or x64 (CMake support only). Other Clang versions might work but are not officially supported.
   - On Linux, any Clang/LLVM installation supported by the distro.
- 
+
 ## C++ Workloads
 
 Visual Studio includes the following workloads for C++ development. You can install any or all of these, along with other workloads such as .NET Desktop Development, Python Development, Azure Development, Visual Studio Extension Development, and others.
@@ -188,11 +188,11 @@ Universal Windows Platform (C++/CX):
 - Blank App
 - DirectX 11 and XAML App
 - DirectX 11 App
-- DirectX 12 App 
-- Unit Test App 
-- DLL 
-- Windows Runtime Component 
-- Static Library 
+- DirectX 12 App
+- Unit Test App
+- DLL
+- Windows Runtime Component
+- Static Library
 - Windows Application Packaging Project
 
 Linux:
