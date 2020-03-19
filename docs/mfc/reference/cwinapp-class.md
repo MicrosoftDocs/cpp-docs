@@ -842,7 +842,7 @@ virtual void HtmlHelp(
 Specifies additional data. The value used depends on the value of the *nCmd* parameter. Defaults to `0x000F` which means [HH_HELP_CONTEXT](/previous-versions/windows/desktop/htmlhelp/hh-help-context-command).
 
 *nCmd*<br/>
-Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the *uCommand* parameter described in the [HtmlHelpW](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpw) or [HtmlHelpA](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpa) API functions in the Windows SDK. 
+Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the *uCommand* parameter described in the [HtmlHelpW](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpw) or [HtmlHelpA](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpa) API functions in the Windows SDK.
 
 ### Remarks
 

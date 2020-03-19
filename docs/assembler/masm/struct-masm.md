@@ -17,7 +17,7 @@ Declares a structure type having the specified *field-declarations*. Each field 
 
 ## Remarks
 
-The *name* argument must be the same in the opening and closing statement. 
+The *name* argument must be the same in the opening and closing statement.
 
 ## See also
 

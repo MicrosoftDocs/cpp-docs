@@ -78,7 +78,7 @@ Provides information about the COM functionality for the object.
 - **ProgID**
 
    Sets the name that containers can use instead of the CLSID of the object.
-   
+
 ::: moniker-end
 
 ## See also

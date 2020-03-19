@@ -7,7 +7,7 @@ ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
 ---
 # Windows Desktop Wizard
 
-The Windows Desktop Wizard replaces the Win32 Application Wizard in Visual Studio 2017 and later. The wizard allows you to create any of four types of C++ projects (listed in the heading in the table below). In each case, you can specify additional options that are appropriate for the type of project you open. 
+The Windows Desktop Wizard replaces the Win32 Application Wizard in Visual Studio 2017 and later. The wizard allows you to create any of four types of C++ projects (listed in the heading in the table below). In each case, you can specify additional options that are appropriate for the type of project you open.
 
    ![Windows Desktop Wizard](media/windows-desktop-wizard.png)
 

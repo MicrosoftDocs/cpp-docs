@@ -15,7 +15,7 @@ Use the **/await** compiler option to enable compiler support for coroutines.
 
 ## Remarks
 
-The **/await** compiler option enables compiler support for C++ coroutines and the keywords **co_await**, **co_yield**, and **co_return**. This option is off by default. For information about support for coroutines in Visual Studio, see the [Visual Studio Team Blog](https://blogs.msdn.microsoft.com/vcblog/category/coroutine/). For more information about the coroutines standard proposal, see [N4628 Working Draft, Technical Specification for C++ Extensions for Coroutines](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/n4628.pdf).
+The **/await** compiler option enables compiler support for C++ coroutines and the keywords **co_await**, **co_yield**, and **co_return**. This option is off by default. For information about support for coroutines in Visual Studio, see the [Visual Studio Team Blog](https://blogs.msdn.microsoft.com/vcblog/category/coroutine/). For more information about the coroutines standard proposal, see [N4628 Working Draft, Technical Specification for C++ Extensions for Coroutines](https://wg21.link/n4628).
 
 The **/await** option is available beginning in Visual Studio 2015.
 

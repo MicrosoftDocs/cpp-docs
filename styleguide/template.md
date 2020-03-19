@@ -239,7 +239,7 @@ Finally, you can use line numbers: `#L1-L10` would include lines 1 through 10. W
 because they are very brittle.
 
 Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
-system. However, if you need to show something that causes compile time or runtime errors, you can 
+system. However, if you need to show something that causes compile time or runtime errors, you can
 use inline code blocks.
 
 ### Inline code blocks with language identifier
@@ -254,7 +254,7 @@ namespace HelloWorld
 {
     class Hello
     {
-        static void Main() 
+        static void Main()
         {
             Console.WriteLine("Hello World!");
 
@@ -329,7 +329,7 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ## docs.microsoft extensions
 
-docs.microsoft provides a few additional extensions to GitHub Flavored Markdown. 
+docs.microsoft provides a few additional extensions to GitHub Flavored Markdown.
 
 ### Alerts
 
@@ -363,7 +363,7 @@ And they'll render like this:
 > [!div class="button"]
 [button links](../docs/core/index.md)
 
-You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
+You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices).
 
 ### Selectors
 

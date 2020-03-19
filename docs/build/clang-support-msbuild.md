@@ -19,7 +19,7 @@ You can use Visual Studio 2019 version 16.2 with Clang to edit, build, and debug
 
 ## Install
 
-For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. If you prefer to use an existing Clang installation on your machine, choose the **C++ Clang-cl for v142 build tools.** optional component. The Microsoft C++ Standard Library currently requires at least Clang 8.0.0; the bundled version of Clang will automatically be updated to stay current with updates in the Microsoft implementation of the Standard Library. 
+For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. If you prefer to use an existing Clang installation on your machine, choose the **C++ Clang-cl for v142 build tools.** optional component. The Microsoft C++ Standard Library currently requires at least Clang 8.0.0; the bundled version of Clang will automatically be updated to stay current with updates in the Microsoft implementation of the Standard Library.
 
 ![Clang component installation](media/clang-install-vs2019.png)
 
@@ -39,8 +39,8 @@ For Linux projects, Visual Studio uses the Clang GCC-compatible frontend. The pr
 
 To configure a Visual Studio Linux project to use Clang:
 
-1. Right-click on the project node in **Solution Explorer** and choose **Properties**. 
-1. Typically, you should first choose **All configurations** at the top of the dialog. 
+1. Right-click on the project node in **Solution Explorer** and choose **Properties**.
+1. Typically, you should first choose **All configurations** at the top of the dialog.
 1. Under **General** > **Platform Toolset**, choose **WSL_Clang_1_0** if you are using Windows Subsystem for Linux, or **Remote_Clang_1_0** if you are using a remote machine or VM.
 1. Press **OK**.
 

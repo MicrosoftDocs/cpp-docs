@@ -111,6 +111,6 @@ This function tests the error order.
 ## <a name="op_ostream"></a> operator&lt;&lt;
 
 ```cpp
-template <class charT, class traits> 
+template <class charT, class traits>
     basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
 ```

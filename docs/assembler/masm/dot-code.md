@@ -25,4 +25,3 @@ Optional parameter that specifies the name of the code segment. The default name
 [Directives Reference](directives-reference.md)\
 [.DATA](dot-data.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)
-

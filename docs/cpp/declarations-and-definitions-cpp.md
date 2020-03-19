@@ -34,9 +34,9 @@ namespace N {
 }
 ```
 
-On line 5, the `main` function is declared. On line 7, a **const** variable named `pi` is declared and *initialized*. On line 8, an integer `i` is declared and initialized with the value produced by the function `f`. The name `f` is visible to the compiler because of the *forward declaration* on line 3. 
+On line 5, the `main` function is declared. On line 7, a **const** variable named `pi` is declared and *initialized*. On line 8, an integer `i` is declared and initialized with the value produced by the function `f`. The name `f` is visible to the compiler because of the *forward declaration* on line 3.
 
-In line 9, a variable named `obj` of type `C` is declared. However, this declaration raises an error because `C` is not declared until later in the program, and is not forward-declared. To fix the error, you can either move the entire *definition* of `C` before `main` or else add a forward-declaration for it. This behavior is different from other languages such as C#, in which functions and classes can be used before their point of declaration in a source file. 
+In line 9, a variable named `obj` of type `C` is declared. However, this declaration raises an error because `C` is not declared until later in the program, and is not forward-declared. To fix the error, you can either move the entire *definition* of `C` before `main` or else add a forward-declaration for it. This behavior is different from other languages such as C#, in which functions and classes can be used before their point of declaration in a source file.
 
 In line 10, a variable named `str` of type `std::string` is declared. The name `std::string` is visible because it is introduced in the `string` [header file](header-files-cpp.md) which is merged into the source file in line 1. `std` is the namespace in which the `string` class is declared.
 

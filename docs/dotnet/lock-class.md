@@ -54,8 +54,6 @@ Internally, the lock class uses <xref:System.Threading.Monitor> to synchronize a
 
 **Namespace** msclr
 
-
-
 ## <a name="lock"></a>lock::lock
 
 Constructs a `lock` object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.

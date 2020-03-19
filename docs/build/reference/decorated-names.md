@@ -8,7 +8,7 @@ ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
 
 Functions, data, and objects in C and C++ programs are represented internally by their decorated names. A *decorated name* is an encoded string created by the compiler during compilation of an object, data, or function definition. It records calling conventions, types, function parameters and other information together with the name. This name decoration, also known as *name mangling*, helps the linker find the correct functions and objects when linking an executable.
 
-The decorated naming conventions have changed in various versions of Visual Studio, and can also be different on different target architectures. To link correctly with source files created by using Visual Studio, C and C++ DLLs and libraries should be compiled by using the same compiler toolset, flags, and target architecture. 
+The decorated naming conventions have changed in various versions of Visual Studio, and can also be different on different target architectures. To link correctly with source files created by using Visual Studio, C and C++ DLLs and libraries should be compiled by using the same compiler toolset, flags, and target architecture.
 
 > [!NOTE]
 > Libraries built with Visual Studio 2015 can be consumed by applications built with Visual Studio 2017 or Visual Studio 2019.

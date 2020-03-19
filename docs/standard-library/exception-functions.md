@@ -138,7 +138,7 @@ unexpected_handler get_unexpected();
 ## <a name="rethrow_if_nested"></a> rethrow_if_nested
 
 ```cpp
-template <class E> 
+template <class E>
     void rethrow_if_nested(const E& e);
 ```
 
