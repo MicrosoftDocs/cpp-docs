@@ -40,6 +40,7 @@ On the Linux system, make sure that the following are installed:
 - gdb
 - rsync
 - zip
+- ninja-build
 
 ::: moniker range="vs-2019"
 
