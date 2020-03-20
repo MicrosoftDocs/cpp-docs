@@ -802,7 +802,7 @@ The first member function performs an absolute seek, the second member function 
 > [!NOTE]
 > Do not use the second member function with text files, because Standard C++ does not support relative seeks in text files.
 
-If [`fail`](../standard-library/basic-ios-class.md#fail) is false, the first member function calls `newpos = `[`rdbuf`](../standard-library/basic-ios-class.md#rdbuf)`->`[`pubseekpos`](../standard-library/basic-streambuf-class.md#pubseekpos)`(pos)`, for some `pos_type` temporary object `newpos`. If `fail` is false, the second function calls `newpos = rdbuf->`[`pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff)`( off, way)`. In either case, if `(off_type)newpos == (off_type)(-1)` (the positioning operation fails), the function calls `istr.`[`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`. Both functions return __*this__.
+If [`fail`](../standard-library/basic-ios-class.md#fail) is false, the first member function calls `newpos =` [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf)`->`[`pubseekpos`](../standard-library/basic-streambuf-class.md#pubseekpos)`(pos)`, for some `pos_type` temporary object `newpos`. If `fail` is false, the second function calls `newpos = rdbuf->`[`pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff)`( off, way)`. In either case, if `(off_type)newpos == (off_type)(-1)` (the positioning operation fails), the function calls `istr.`[`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`. Both functions return __*this__.
 
 If [`fail`](../standard-library/basic-ios-class.md#fail) is true, the member functions do nothing.
 
@@ -847,7 +847,7 @@ If `_Istr.`[`good`](../standard-library/basic-ios-class.md#good) is true, the co
 
 - Calls `_Istr.`[`tie`](../standard-library/basic-ios-class.md#tie)`->`[`flush`](../standard-library/basic-ostream-class.md#flush) if `_Istr.tie` is not a null pointer.
 
-- Effectively calls [`ws`](../standard-library/istream-functions.md#ws)`(_Istr)` if `_Istr.`[`flags`](../standard-library/ios-base-class.md#flags)` & `[`skipws`](../standard-library/ios-functions.md#skipws) is nonzero.
+- Effectively calls [`ws`](../standard-library/istream-functions.md#ws)`(_Istr)` if `_Istr.`[`flags`](../standard-library/ios-base-class.md#flags) `&` [`skipws`](../standard-library/ios-functions.md#skipws) is nonzero.
 
 If after any such preparation, `_Istr.good` is false, the constructor calls `_Istr.`[`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`. In any case, the constructor stores the value returned by `_Istr.good` in `status`. A later call to `operator bool` delivers this stored value.
 

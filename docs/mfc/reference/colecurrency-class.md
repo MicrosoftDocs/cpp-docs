@@ -111,7 +111,7 @@ All of these constructors create new `COleCurrency` objects initialized to the s
 
 - COleCurrency(`varSrc`) Constructs a `COleCurrency` object. Attempts to convert a [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) structure or `COleVariant` object to a currency (VT_CY) value. If this conversion is successful, the converted value is copied into the new `COleCurrency` object. If it is not, the value of the `COleCurrency` object is set to zero (0) and its status to invalid.
 
-- `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency` object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.
+- COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency` object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.
 
 For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) and [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entries in the Windows SDK.
 

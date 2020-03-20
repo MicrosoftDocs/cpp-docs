@@ -456,7 +456,7 @@ The initializer_list to copy.
 
 ### Remarks
 
-All constructors store an [allocator](../standard-library/allocator-class.md) and initialize the controlled sequence. The allocator object is the argument *Al*, if present. For the copy constructor, it is ` right.get_allocator()`. Otherwise, it is `Allocator()`.
+All constructors store an [allocator](../standard-library/allocator-class.md) and initialize the controlled sequence. The allocator object is the argument *Al*, if present. For the copy constructor, it is `right.get_allocator()`. Otherwise, it is `Allocator()`.
 
 The first two constructors specify an empty initial controlled sequence.
 
@@ -713,7 +713,7 @@ The unary predicate which, if satisfied by an element, results in the deletion o
 
 ### Remarks
 
-The member function removes from the controlled sequence all elements, designated by the iterator `P`, for which ` pred(*P)` is true.
+The member function removes from the controlled sequence all elements, designated by the iterator `P`, for which `pred(*P)` is true.
 
 An exception occurs only if *pred* throws an exception. In that case, the controlled sequence is left in an unspecified state and the exception is rethrown.
 
@@ -948,7 +948,7 @@ Keeps the first of each unique element, and removes the rest. The elements must 
 
 The first member function removes from the controlled sequence every element that compares equal to its preceding element. For the iterators `Pi` and `Pj` designating elements at positions `i` and `j`, the second member function removes every element for which `i + 1 == j &&  comp(*Pi, *Pj)`.
 
-For a controlled sequence of length `N` (> 0), the predicate ` comp(*Pi, *Pj)` is evaluated `N - 1` times.
+For a controlled sequence of length `N` (> 0), the predicate `comp(*Pi, *Pj)` is evaluated `N - 1` times.
 
 An exception occurs only if `comp` throws an exception. In that case, the controlled sequence is left in an unspecified state and the exception is rethrown.
 
