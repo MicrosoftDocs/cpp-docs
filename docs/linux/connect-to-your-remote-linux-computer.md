@@ -144,7 +144,7 @@ In Visual Studio 2017, you use the same steps to connect to WSL as you use for a
 
 Visual Studio 2019 version 16.1 added native support for using C++ with the [Windows Subsystem for Linux (WSL)](/windows/wsl/about). That means you can build and debug on your local WSL installation directly. You no longer need to add a remote connection or configure SSH. You can find details on [how to install WSL](/windows/wsl/install-win10) here.
 
-To configure your WSL installation to work with Visual Studio, you need the following tools installed: gcc or clang, gdb, make, ninja-build (CMake projects only), rsync, and zip. You can install them on distros that use apt by using this command, which also installs the g++ compiler:
+To configure your WSL installation to work with Visual Studio, you need the following tools installed: gcc or clang, gdb, make, ninja-build (CMake projects only using Visual Studio 2019 version 16.6 or later), rsync, and zip. You can install them on distros that use apt by using this command, which also installs the g++ compiler:
 
 ```bash
 sudo apt install g++ gdb make ninja-build rsync zip
