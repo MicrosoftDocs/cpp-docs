@@ -57,7 +57,7 @@ Linux projects in Visual Studio require the following dependencies to be install
 - **make**
 - **openssh-server** (remote Linux systems only) - Visual Studio connects to remote Linux systems over a secure SSH connection.
 - **CMake** (CMake projects only) - You can install Microsoft's [statically linked CMake binaries for Linux](https://github.com/microsoft/CMake/releases).
-- **ninja-build** - [Ninja](https://ninja-build.org/) is the default generator for Linux and WSL configurations in Visual Studio 2019 version 16.6 or later.
+- **ninja-build** (CMake projects only)- [Ninja](https://ninja-build.org/) is the default generator for Linux and WSL configurations in Visual Studio 2019 version 16.6 or later.
 
 The following commands assume you are using g++ instead of clang.
 
@@ -80,7 +80,7 @@ Linux projects in Visual Studio require the following dependencies to be install
 
 ## Linux setup: Ubuntu on WSL
 
-When you are targeting WSL, there is no need to add a remote connection or configure SSH in order to build and debug. **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support. If the required applications are not already present, you can install them as follows:
+When you are targeting WSL, there is no need to add a remote connection or configure SSH in order to build and debug. **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support. If the required applications are not already present, you can install them as follows. **ninja-build** is only required for CMake projects.
 
 ```bash
 sudo apt-get install g++ gdb make ninja-build rsync zip
@@ -92,7 +92,7 @@ sudo apt-get install g++ gdb make ninja-build rsync zip
 
 ## Ubuntu on remote Linux systems
 
-The target Linux system must have **openssh-server**, **g++**, **gdb**, **ninja-build**, and **make** installed, and the ssh daemon must be running. **zip** and **rsync** are required for automatic syncing of remote headers with your local machine for Intellisense support. If these applications are not already present, you can install them as follows:
+The target Linux system must have **openssh-server**, **g++**, **gdb**, **ninja-build** (CMake projects only), and **make** installed, and the ssh daemon must be running. **zip** and **rsync** are required for automatic syncing of remote headers with your local machine for Intellisense support. If these applications are not already present, you can install them as follows:
 
 1. At a shell prompt on your Linux computer, run:
 
@@ -122,7 +122,7 @@ Fedora uses the **dnf** package installer. To download **g++**, **gdb**, **make*
    sudo dnf install gcc-g++ gdb rsync ninja-build make zip
    ```
 
-**zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support.
+**zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support. **ninja-build** is only required for CMake projects.
 
 ::: moniker-end
 
@@ -130,7 +130,7 @@ Fedora uses the **dnf** package installer. To download **g++**, **gdb**, **make*
 
 ## Fedora on remote Linux systems
 
-The target machine running Fedora uses the **dnf** package installer. To download **openssh-server**, **g++**, **gdb**, **make**, **ninja-build**, **rsync**, and **zip**, and restart the ssh daemon, follow these instructions:
+The target machine running Fedora uses the **dnf** package installer. To download **openssh-server**, **g++**, **gdb**, **make**, **ninja-build**, **rsync**, and **zip**, and restart the ssh daemon, follow these instructions. **ninja-build** is only required for CMake projects.
 
 1. At a shell prompt on your Linux computer, run:
 
