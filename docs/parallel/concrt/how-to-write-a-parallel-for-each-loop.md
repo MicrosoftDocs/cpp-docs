@@ -30,7 +30,7 @@ took 1653 ms
 
 To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `parallel-count-primes.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc parallel-count-primes.cpp**
+> **cl.exe /EHsc parallel-count-primes.cpp**
 
 ## Robust Programming
 

@@ -10,7 +10,7 @@ Represent a short vector of 2 double's.
 
 ## Syntax
 
-```
+```cpp
 class double_2;
 ```
 
@@ -87,11 +87,11 @@ class double_2;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> double_2
+## <a name="ctor"></a> double_2
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 double_2() restrict(amp,
     cpu);
 
@@ -143,9 +143,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="double_2__size"></a> size
+## <a name="double_2__size"></a> size
 
-```
+```cpp
 static const int size = 2;
 ```
 

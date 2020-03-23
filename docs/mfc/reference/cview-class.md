@@ -303,7 +303,7 @@ For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overv
 
 Default implementation is to do nothing and return DROPEFFECT_NONE.
 
-Override this function to prepare for future calls to the [OnDragOver](#ondragover) member function. Any data required from the data object should be retrieved at this time for later use in the `OnDragOver` member function. The view should also be updated at this time to give the user visual feedback. For more information, see the article [Drag and Drop: Implementing a Drop Target](../../mfc/drag-and-drop-implementing-a-drop-target.md).
+Override this function to prepare for future calls to the [OnDragOver](#ondragover) member function. Any data required from the data object should be retrieved at this time for later use in the `OnDragOver` member function. The view should also be updated at this time to give the user visual feedback. For more information, see the article [OLE drag and drop: Implement a drop target](../../mfc/drag-and-drop-ole.md#implement-a-drop-target).
 
 ##  <a name="ondragleave"></a>  CView::OnDragLeave
 
@@ -357,7 +357,7 @@ For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overv
 
 The default implementation is to do nothing and return DROPEFFECT_NONE.
 
-Override this function to give the user visual feedback during the drag operation. Since this function is called continuously, any code contained within it should be optimized as much as possible. For more information, see the article [Drag and Drop: Implementing a Drop Target](../../mfc/drag-and-drop-implementing-a-drop-target.md).
+Override this function to give the user visual feedback during the drag operation. Since this function is called continuously, any code contained within it should be optimized as much as possible. For more information, see the article [OLE drag and drop: Implement a drop target](../../mfc/drag-and-drop-ole.md#implement-a-drop-target).
 
 ##  <a name="ondragscroll"></a>  CView::OnDragScroll
 
@@ -395,7 +395,7 @@ For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overv
 
 ### Remarks
 
-Override this function when you want to provide special behavior for this event. The default implementation automatically scrolls windows when the cursor is dragged into the default scroll region inside the border of each window.For more information, see the article [Drag and Drop: Implementing a Drop Target](../../mfc/drag-and-drop-implementing-a-drop-target.md).
+Override this function when you want to provide special behavior for this event. The default implementation automatically scrolls windows when the cursor is dragged into the default scroll region inside the border of each window. For more information, see the article [OLE drag and drop: Implement a drop target](../../mfc/drag-and-drop-ole.md#implement-a-drop-target).
 
 ##  <a name="ondraw"></a>  CView::OnDraw
 

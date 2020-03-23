@@ -1,7 +1,6 @@
 ---
 title: "CTreeCtrl vs. CTreeView"
 ms.date: "11/04/2016"
-f1_keywords: ["CTreeCtrl", "CTreeView"]
 helpviewer_keywords: ["tree view controls", "CTreeCtrl class [MFC], vs. CTreeView class [MFC]", "CTreeView class [MFC], vs. CTreeCtrl class [MFC]", "tree controls [MFC], and tree view"]
 ms.assetid: bba5af25-103f-4b53-84d3-071bc9bd6494
 ---

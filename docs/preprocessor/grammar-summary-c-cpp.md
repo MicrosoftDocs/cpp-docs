@@ -117,7 +117,6 @@ In code syntax blocks, commas (`,`), periods (`.`), semi-colons (`;`), colons (`
 > [!NOTE]
 > The following nonterminals are expanded in the [Lexical conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*: *constant*, *constant-expression*, *identifier*, *keyword*, *operator*, and *punctuator*.
 
-
 ## See also
 
 [C/C++ preprocessor reference](../preprocessor/c-cpp-preprocessor-reference.md)

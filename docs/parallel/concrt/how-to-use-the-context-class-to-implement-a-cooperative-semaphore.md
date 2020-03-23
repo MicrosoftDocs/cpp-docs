@@ -8,6 +8,8 @@ ms.assetid: 22f4b9c0-ca22-4a68-90ba-39e99ea76696
 
 This topic shows how to use the concurrency::Context class to implement a cooperative semaphore class.
 
+## Remarks
+
 The `Context` class lets you block or yield the current execution context. Blocking or yielding the current context is useful when the current context cannot proceed because a resource is not available. A *semaphore* is an example of one situation where the current execution context must wait for a resource to become available. A semaphore, like a critical section object, is a synchronization object that enables code in one context to have exclusive access to a resource. However, unlike a critical section object, a semaphore enables more than one context to access the resource concurrently. If the maximum number of contexts holds a semaphore lock, each additional context must wait for another context to release the lock.
 
 ### To implement the semaphore class
@@ -65,7 +67,7 @@ For more information about the `concurrent_queue` class, see [Parallel Container
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `cooperative-semaphore.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc cooperative-semaphore.cpp**
+> **cl.exe /EHsc cooperative-semaphore.cpp**
 
 ## Robust Programming
 

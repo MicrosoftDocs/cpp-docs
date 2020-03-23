@@ -11,7 +11,7 @@ Provides an index into a [tiled_extent](tiled-extent-class.md) object. This clas
 
 ## Syntax
 
-```
+```cpp
 template <
     int _Dim0,
     int _Dim1 = 0,
@@ -31,7 +31,7 @@ template <
 class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 ```
 
-#### Parameters
+### Parameters
 
 *_Dim0*<br/>
 The length of the most significant dimension.
@@ -93,9 +93,9 @@ The length of the least significant dimension.
 
 Initializes a new instance of the `tiled_index` class.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 tiled_index(
     const index<rank>& _Global,
     const index<rank>& _Local,
@@ -107,7 +107,7 @@ tiled_index(
     const tiled_index& _Other ) restrict(amp,cpu);
 ```
 
-#### Parameters
+### Parameters
 
 *_Global*<br/>
 The global [index](index-class.md) of the constructed `tiled_index`.
@@ -127,7 +127,7 @@ The [tile_barrier](tile-barrier-class.md) object of the constructed `tiled_index
 *_Other*<br/>
 The `tile_index` object to be copied to the constructed `tiled_index`.
 
-## Overloads
+### Overloads
 
 |||
 |-|-|
@@ -139,13 +139,13 @@ The `tile_index` object to be copied to the constructed `tiled_index`.
 
 Returns an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 extent<rank> get_tile_extent()restrict(amp,cpu);
 ```
 
-## Return Value
+### Return Value
 
 An `extent` object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 
@@ -153,9 +153,9 @@ An `extent` object that has the values of the `tiled_index` template arguments `
 
 Stores a [tile_barrier](tile-barrier-class.md) object that represents a barrier in the current tile of threads.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 const tile_barrier barrier;
 ```
 
@@ -163,9 +163,9 @@ const tile_barrier barrier;
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the global index of an object.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 const index<rank> global;
 ```
 
@@ -173,9 +173,9 @@ const index<rank> global;
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](tiled-extent-class.md) object.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 const index<rank> local;
 ```
 
@@ -183,9 +183,9 @@ const index<rank> local;
 
 Stores the rank of the `tiled_index` object.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
@@ -193,9 +193,9 @@ static const int rank = _Rank;
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the coordinates of the current tile of a [tiled_extent](tiled-extent-class.md) object.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 const index<rank> tile;
 ```
 
@@ -203,9 +203,9 @@ const index<rank> tile;
 
 Stores the length of the most significant dimension.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 static const int tile_dim0 = _Dim0;
 ```
 
@@ -213,9 +213,9 @@ static const int tile_dim0 = _Dim0;
 
 Stores the length of the next-to-most significant dimension.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 static const int tile_dim1 = _Dim1;
 ```
 
@@ -223,9 +223,9 @@ static const int tile_dim1 = _Dim1;
 
 Stores the length of the least significant dimension.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 static const int tile_dim2 = _Dim2;
 ```
 
@@ -233,18 +233,19 @@ static const int tile_dim2 = _Dim2;
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile within a [tiled_extent](tiled-extent-class.md) object.
 
-## Syntax
+### Syntax
 
-```
+```cpp
 const index<rank> tile_origin
 ```
 
 ## <a name="tile_extent"></a>  tile_extent
-  Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 
-## Syntax
+Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 
-```
+### Syntax
+
+```cpp
 __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
 ```
 

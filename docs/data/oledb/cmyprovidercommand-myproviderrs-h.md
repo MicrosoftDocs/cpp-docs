@@ -1,7 +1,7 @@
 ---
 title: "CCustomCommand (CustomRS.H)"
 ms.date: "10/22/2018"
-f1_keywords: ["cmyprovidercommand", "myproviderrs.h", "ccustomcommand", "customrs.h"]
+f1_keywords: ["cmyprovidercommand", "ccustomcommand"]
 helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderCommand class in MyProviderRS.H", "CCustomCommand class in CustomRS.H"]
 ms.assetid: b30b956e-cc91-4cf5-9fe6-f8b1ce9cc2a5
 ---

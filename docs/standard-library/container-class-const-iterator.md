@@ -13,8 +13,7 @@ Describes an object that can serve as a constant iterator for the controlled seq
 
 ## Syntax
 
-```
-
+```cpp
 typedef T6 const_iterator;
 ```
 

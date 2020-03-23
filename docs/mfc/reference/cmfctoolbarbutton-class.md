@@ -179,7 +179,7 @@ This method returns TRUE.
 
 The framework uses this method to determine whether the button can participate in a drag-and-drop operation.
 
-The default implementation returns TRUE. Override this method if your button cannot be stored as part of a drag-and-drop operation. For more information about drag-and-drop operations, see [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).
+The default implementation returns TRUE. Override this method if your button cannot be stored as part of a drag-and-drop operation. For more information about drag-and-drop operations, see [OLE drag and drop](../../mfc/drag-and-drop-ole.md).
 
 ##  <a name="canbestretched"></a>  CMFCToolBarButton::CanBeStretched
 
@@ -1361,7 +1361,7 @@ The framework calls this method to prepare the toolbar button to store its state
 
 This method does nothing and returns TRUE if the button cannot be stored (the [CMFCToolBarButton::CanBeStored](#canbestored) method returns FALSE). It returns FALSE if an exception occurs during object serialization.
 
-For more information about OLE drag-and-drop operations, see [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).
+For more information about OLE drag-and-drop operations, see [OLE drag and drop](../../mfc/drag-and-drop-ole.md).
 
 ##  <a name="rect"></a>  CMFCToolBarButton::Rect
 

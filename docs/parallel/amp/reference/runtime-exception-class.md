@@ -11,7 +11,7 @@ The base type for exceptions in the C++ Accelerated Massive Parallelism (AMP) li
 
 ### Syntax
 
-```
+```cpp
 class runtime_exception : public std::exception;
 ```
 
@@ -54,7 +54,7 @@ Initializes a new instance of the class.
 
 ### Syntax
 
-```
+```cpp
 runtime_exception(
     const char * _Message,
     HRESULT _Hresult ) throw();
@@ -87,7 +87,7 @@ Destroys the object.
 
 ### Syntax
 
-```
+```cpp
 virtual ~runtime_exception() throw();
 ```
 
@@ -97,7 +97,7 @@ Returns the error code that caused the exception.
 
 ### Syntax
 
-```
+```cpp
 HRESULT get_error_code() const throw();
 ```
 
@@ -110,7 +110,7 @@ The HRESULT of error that caused the exception.
 
 ### Syntax
 
-```
+```cpp
 runtime_exception & operator= (    const runtime_exception & _Other ) throw();
 ```
 

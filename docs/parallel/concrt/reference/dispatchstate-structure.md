@@ -11,7 +11,7 @@ The `DispatchState` structure is used to transfer state to the `IExecutionContex
 
 ## Syntax
 
-```
+```cpp
 struct DispatchState;
 ```
 
@@ -41,35 +41,35 @@ struct DispatchState;
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a>  DispatchState::DispatchState Constructor
+## <a name="ctor"></a>  DispatchState::DispatchState Constructor
 
 Constructs a new `DispatchState` object.
 
-```
+```cpp
 DispatchState();
 ```
 
-##  <a name="m_dispatchstatesize"></a>  DispatchState::m_dispatchStateSize Data Member
+## <a name="m_dispatchstatesize"></a>  DispatchState::m_dispatchStateSize Data Member
 
 Size of this structure, which is used for versioning.
 
-```
+```cpp
 unsigned long m_dispatchStateSize;
 ```
 
-##  <a name="m_fispreviouscontextasynchronouslyblocked"></a>  DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member
+## <a name="m_fispreviouscontextasynchronouslyblocked"></a>  DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member
 
 Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.
 
-```
+```cpp
 unsigned int m_fIsPreviousContextAsynchronouslyBlocked : 1;
 ```
 
-##  <a name="m_reserved"></a>  DispatchState::m_reserved Data Member
+## <a name="m_reserved"></a>  DispatchState::m_reserved Data Member
 
 Bits reserved for future information passing.
 
-```
+```cpp
 unsigned int m_reserved : 31;
 ```
 

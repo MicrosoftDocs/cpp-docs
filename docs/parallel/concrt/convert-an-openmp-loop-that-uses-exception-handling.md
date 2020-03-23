@@ -48,7 +48,7 @@ For more information about `parallel_for` and other parallel algorithms, see [Pa
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `concrt-omp-exceptions.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc /openmp concrt-omp-exceptions.cpp**
+> **cl.exe /EHsc /openmp concrt-omp-exceptions.cpp**
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: "event Class"
 ms.date: "11/04/2016"
-f1_keywords: ["event", "CONCRT/concurrency::event", "CONCRT/concurrency::event::reset", "CONCRT/concurrency::event::set", "CONCRT/concurrency::event::wait", "CONCRT/concurrency::event::wait_for_multiple", "CONCRT/concurrency::event::timeout_infinite"]
+f1_keywords: ["CONCRT/concurrency::event", "CONCRT/concurrency::event::reset", "CONCRT/concurrency::event::set", "CONCRT/concurrency::event::wait", "CONCRT/concurrency::event::wait_for_multiple", "CONCRT/concurrency::event::timeout_infinite"]
 helpviewer_keywords: ["event class"]
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
 ---
@@ -11,7 +11,7 @@ A manual reset event which is explicitly aware of the Concurrency Runtime.
 
 ## Syntax
 
-```
+```cpp
 class event;
 ```
 
@@ -52,21 +52,21 @@ For more information, see [Synchronization Data Structures](../../../parallel/co
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> event
+## <a name="ctor"></a> event
 
 Constructs a new event.
 
-```
+```cpp
 _CRTIMP event();
 ```
 
 ### Remarks
 
-##  <a name="dtor"></a> ~event
+## <a name="dtor"></a> ~event
 
 Destroys an event.
 
-```
+```cpp
 ~event();
 ```
 
@@ -74,19 +74,19 @@ Destroys an event.
 
 It is expected that there are no threads waiting on the event when the destructor runs. Allowing the event to destruct with threads still waiting on it results in undefined behavior.
 
-##  <a name="reset"></a> reset
+## <a name="reset"></a> reset
 
 Resets the event to a non-signaled state.
 
-```
+```cpp
 void reset();
 ```
 
-##  <a name="set"></a> set
+## <a name="set"></a> set
 
 Signals the event.
 
-```
+```cpp
 void set();
 ```
 
@@ -94,19 +94,19 @@ void set();
 
 Signaling the event can cause an arbitrary number of contexts waiting on the event to become runnable.
 
-##  <a name="timeout_infinite"></a> timeout_infinite
+## <a name="timeout_infinite"></a> timeout_infinite
 
 Value indicating that a wait should never time out.
 
-```
+```cpp
 static const unsigned int timeout_infinite = COOPERATIVE_TIMEOUT_INFINITE;
 ```
 
-##  <a name="wait"></a> wait
+## <a name="wait"></a> wait
 
 Waits for the event to become signaled.
 
-```
+```cpp
 size_t wait(unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
 ```
 
@@ -120,13 +120,13 @@ Indicates the number of milliseconds before the wait times out. The value `COOPE
 If the wait was satisfied, the value `0` is returned; otherwise, the value `COOPERATIVE_WAIT_TIMEOUT` to indicate that the wait timed out without the event becoming signaled.
 
 > [!IMPORTANT]
->  In a Universal Windows Platform (UWP) app, do not call `wait` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.
+> In a Universal Windows Platform (UWP) app, do not call `wait` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.
 
-##  <a name="wait_for_multiple"></a> wait_for_multiple
+## <a name="wait_for_multiple"></a> wait_for_multiple
 
 Waits for multiple events to become signaled.
 
-```
+```cpp
 static size_t __cdecl wait_for_multiple(
     _In_reads_(count) event** _PPEvents,
     size_t count,

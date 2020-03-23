@@ -1,6 +1,7 @@
 ---
 title: "Events (C++/CX)"
-ms.date: "07/15/2019"
+description: "How to use C++/CX to create and use event handlers in the Windows Runtime."
+ms.date: "02/03/2020"
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
 ---
 # Events (C++/CX)
@@ -42,7 +43,7 @@ The next example shows how to add custom add, remove, and raise methods to an ev
 
 ## Removing an event handler from the subscriber side
 
-In some rare cases, you may want to remove an event handler for an event that you previously subscribed to. For example, you may want to replace it with another event handler or you may want to delete some resources that are held by it. To remove a handler, you must store the EventRegistrationToken that's returned from the `+=` operation. You can then use the `-=` operator on the token to remove an event handler.  However, the original handler could still be invoked even after it's removed. Therefore, if you intend to remove an event handler, create a member flag and set it if the event is removed, and then in the event handler, check the flag and return immediately if it's set. The next example shows the basic pattern.
+In some rare cases, you may want to remove an event handler for an event that you previously subscribed to. For example, you may want to replace it with another event handler or you may want to delete some resources that are held by it. To remove a handler, you must store the EventRegistrationToken that's returned from the `+=` operation. You can then use the `-=` operator on the token to remove an event handler.  However, the original handler could still be invoked even after it's removed. For example, a race condition may arise when the event source gets a list of handlers and starts to invoke them. If an event handler gets removed while this happens, the list becomes out of date. So, if you intend to remove an event handler, create a member flag. Set it if the event is removed, and then in the event handler, check the flag, and return immediately if it's set. The next example shows the basic pattern.
 
 [!code-cpp[cx_events#04](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#04)]
 

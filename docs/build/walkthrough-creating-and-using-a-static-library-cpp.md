@@ -37,7 +37,7 @@ The instructions for how to create the project vary depending on whether you are
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Library**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Library**.
 
 1. From the filtered list of project types, choose **Static Library** then choose **Next**. In the next page, enter *MathFuncsLib* in the **Name** box to specify a name for the project, and specify the project location if desired.
 
@@ -108,7 +108,7 @@ The instructions for how to create the project vary depending on whether you are
 
 1. In **Solution Explorer**, right-click on the top node for the solution and choose **Add** > **New Project** to open the **Add a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter *MyExecRefsLib* in the **Name** box to specify a name for the project, and specify the project location if desired.
 

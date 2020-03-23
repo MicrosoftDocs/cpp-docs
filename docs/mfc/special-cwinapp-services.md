@@ -34,7 +34,7 @@ Files can be dragged from the file view window in File Manager or File Explorer 
 To enable file drag and drop in your application, the MFC Application Wizard writes a call to the [CWnd](../mfc/reference/cwnd-class.md) member function [DragAcceptFiles](../mfc/reference/cwnd-class.md#dragacceptfiles) for your main frame window in your `InitInstance`. You can remove that call if you do not want to implement the drag-and-drop feature.
 
 > [!NOTE]
->  You can also implement more general drag-and-drop capabilities—dragging data between or within documents—with OLE. For information, see the article [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md).
+>  You can also implement more general drag-and-drop capabilities—dragging data between or within documents—with OLE. For information, see the article [OLE drag and drop](../mfc/drag-and-drop-ole.md).
 
 ##  <a name="_core_keeping_track_of_the_most_recently_used_documents"></a> Keeping Track of the Most Recently Used Documents
 

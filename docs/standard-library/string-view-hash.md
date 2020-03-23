@@ -19,6 +19,7 @@ struct hash<basic_string_view<CharType, Traits>>
         noexcept;
 };
 ```
+
 ### Remarks
 
 The hash of a string_view equals the hash of the underlying string object.
@@ -35,9 +36,9 @@ using namespace std;
 
 int main()
 {
-	string_view sv{ "Hello world" };
-	string s{ "Hello world" };
-	cout << boolalpha << (hash<string_view>{}(sv)
-		== hash<string>{}(s)); // true
+    string_view sv{ "Hello world" };
+    string s{ "Hello world" };
+    cout << boolalpha << (hash<string_view>{}(sv)
+        == hash<string>{}(s)); // true
 }
 ```

@@ -52,7 +52,7 @@ Data sources are created when an application needs to copy data to the Clipboard
 
 This scenario is implemented by the MFC OLE samples [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md). Look at the source for each application's `CView`-derived class for all but the `GetClipboardData` and `OnGetClipboardData` functions. These two functions are in either the `COleClientItem` or `COleServerItem`-derived class implementations. These sample programs provide a good example of how to implement these concepts.
 
-One other situation in which you might want to create a `COleDataSource` object occurs if you are modifying the default behavior of a drag-and-drop operation. For more information, see the [Drag and Drop: Customizing](../mfc/drag-and-drop-customizing.md) article.
+One other situation in which you might want to create a `COleDataSource` object occurs if you are modifying the default behavior of a drag-and-drop operation. For more information, see the [OLE Drag and drop: Customize drag and drop](../mfc/drag-and-drop-ole.md#customize-drag-and-drop) article.
 
 ##  <a name="_core_destroying_data_sources"></a> Destroying Data Sources
 

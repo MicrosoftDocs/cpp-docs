@@ -2,7 +2,7 @@
 title: "Storage classes (C++)"
 description: "In C++, the static, extern and thread_local keywords specify the lifetime, linkage, and memory location of a variable or function."
 ms.date: "12/11/2019"
-f1_keywords: ["thread_local_cpp", "extern_cpp", "static_cpp", "register_cpp"]
+f1_keywords: ["thread_local_cpp", "static_cpp", "register_cpp"]
 helpviewer_keywords: ["storage classes [C++], basic concepts"]
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
 ---

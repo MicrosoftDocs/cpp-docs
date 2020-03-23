@@ -87,7 +87,7 @@ class CWnd : public CCmdTarget
 |[CWnd::FlashWindow](#flashwindow)|Flashes the window once.|
 |[CWnd::FlashWindowEx](#flashwindowex)|Flashes the window with additional functionality.|
 |[CWnd::FromHandle](#fromhandle)|Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object is not attached to the handle, a temporary `CWnd` object is created and attached.|
-|[CWnd::FromHandlePermanent](#fromhandlepermanent)|Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object is not attached to the handle, a temporary `CWnd` object is created and attached.|
+|[CWnd::FromHandlePermanent](#fromhandlepermanent)|Returns a pointer to a `CWnd` object when given a handle to a window.|
 |[CWnd::get_accChild](#get_accchild)|Called by the framework to retrieve the address of an `IDispatch` interface for the specified child.|
 |[CWnd::get_accChildCount](#get_accchildcount)|Called by the framework to retrieve the number of children belonging to this object.|
 |[CWnd::get_accDefaultAction](#get_accdefaultaction)|Called by the framework to retrieve a string that describes the object's default action.|
@@ -1553,7 +1553,7 @@ If the window is the parent of any windows, these child windows are automaticall
 
 The `DestroyWindow` member function also destroys modeless dialog boxes created by [CDialog::Create](../../mfc/reference/cdialog-class.md#create).
 
-If the `CWnd` being destroyed is a child window and does not have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) style set, then the [WM_PARENTNOTIFY ](/previous-versions/windows/desktop/inputmsg/wm-parentnotify)       message is sent to the parent.
+If the `CWnd` being destroyed is a child window and does not have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) style set, then the [WM_PARENTNOTIFY](/previous-versions/windows/desktop/inputmsg/wm-parentnotify)       message is sent to the parent.
 
 ### Example
 

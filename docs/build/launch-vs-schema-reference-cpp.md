@@ -57,7 +57,6 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 externalConsole|boolean|If true, a console is launched for the debuggee. If `false`, no console is launched. Defaults to `false`. NOTE: This option is ignored in some cases for technical reasons.|
 |`pipeTransport`|string|When present, this tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options).|
 
-
 ## <a name="launch_setup_commands"></a> Launch setup commands
 
 Used with the `setupCommands` property:

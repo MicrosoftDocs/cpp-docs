@@ -23,4 +23,3 @@ pure virtual function call
 No object has been instantiated to handle the pure virtual function call.
 
 This error is caused by calling a virtual function in an abstract base class through a pointer which is created by a cast to the type of the derived class, but is actually a pointer to the base class. This can occur when casting from a **void**<strong>\*</strong> to a pointer to a class when the **void**<strong>\*</strong> was created during the construction of the base class.
-

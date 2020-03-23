@@ -54,7 +54,9 @@ The *codepage* argument can be set to any of the following values:
 
 - **_MB_CP_SBCS** Use single-byte code page. When the code page is set to **_MB_CP_SBCS**, a routine such as [_ismbblead](ismbblead-ismbblead-l.md) always returns false.
 
-- Any other valid code page value, regardless of whether the value is an ANSI, OEM, or other operating-system-supported code page (except UTF-7 and UTF-8, which are not supported).
+- **_MB_CP_UTF8** Use UTF-8.  When the code page is set to **_MB_CP_UTF8**, a routine such as [_ismbblead](ismbblead-ismbblead-l.md) always returns false.
+
+- Any other valid code page value, regardless of whether the value is an ANSI, OEM, or other operating-system-supported code page (except UTF-7, which is not supported).
 
 ## Requirements
 

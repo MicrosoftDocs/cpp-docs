@@ -11,7 +11,7 @@ The Parallel Patterns Library (PPL) `task` class. A `task` object represents wor
 
 ## Syntax
 
-```
+```cpp
 template <>
 class task<void>;
 
@@ -19,10 +19,10 @@ template<typename _ResultType>
 class task;
 ```
 
-#### Parameters
+### Parameters
 
 *_ResultType*<br/>
-The type of the result that the task produces. 
+The type of the result that the task produces.
 
 ## Members
 
@@ -71,11 +71,11 @@ For more information, see [Task Parallelism](../../../parallel/concrt/task-paral
 
 **Namespace:** concurrency
 
-##  <a name="get"></a> get
+## <a name="get"></a> get
 
 Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.
 
-```
+```cpp
 _ResultType get() const;
 
 void get() const;
@@ -90,13 +90,13 @@ The result of the task.
 If the task is canceled, a call to `get` will throw a [task_canceled](task-canceled-class.md) exception. If the task encountered an different exception or an exception was propagated to it from an antecedent task, a call to `get` will throw that exception.
 
 > [!IMPORTANT]
->  In a Universal Windows Platform (UWP) app, do not call [concurrency::task::wait](#wait) or `get` ( `wait` calls `get`) in code that runs on the user-interface thread. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.
+> In a Universal Windows Platform (UWP) app, do not call [concurrency::task::wait](#wait) or `get` ( `wait` calls `get`) in code that runs on the user-interface thread. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.
 
-##  <a name="is_apartment_aware"></a> is_apartment_aware
+## <a name="is_apartment_aware"></a> is_apartment_aware
 
 Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.
 
-```
+```cpp
 bool is_apartment_aware() const;
 ```
 
@@ -104,11 +104,11 @@ bool is_apartment_aware() const;
 
 **true** if the task unwraps an `IAsyncInfo` interface or is descended from such a task, **false** otherwise.
 
-##  <a name="is_done"></a>  task::is_done Method (Concurrency Runtime)
+## <a name="is_done"></a>  task::is_done Method (Concurrency Runtime)
 
 Determines if the task is completed.
 
-```
+```cpp
 bool is_done() const;
 ```
 
@@ -120,11 +120,11 @@ True if the task has completed, false otherwise.
 
 The function returns true if the task is completed or canceled (with or without user exception).
 
-##  <a name="operator_neq"></a> operator!=
+## <a name="operator_neq"></a> operator!=
 
 Determines whether two `task` objects represent different internal tasks.
 
-```
+```cpp
 bool operator!= (const task<_ResultType>& _Rhs) const;
 
 bool operator!= (const task<void>& _Rhs) const;
@@ -139,11 +139,11 @@ The task to compare.
 
 **true** if the objects refer to different underlying tasks, and **false** otherwise.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Replaces the contents of one `task` object with another.
 
-```
+```cpp
 task& operator= (const task& _Other);
 
 task& operator= (task&& _Other);
@@ -160,11 +160,11 @@ The source `task` object.
 
 As `task` behaves like a smart pointer, after a copy assignment, this `task` objects represents the same actual task as `_Other` does.
 
-##  <a name="operator_eq_eq"></a> operator==
+## <a name="operator_eq_eq"></a> operator==
 
 Determines whether two `task` objects represent the same internal task.
 
-```
+```cpp
 bool operator== (const task<_ResultType>& _Rhs) const;
 
 bool operator== (const task<void>& _Rhs) const;
@@ -179,11 +179,11 @@ The task to compare.
 
 **true** if the objects refer to the same underlying task, and **false** otherwise.
 
-##  <a name="scheduler"></a>  task::scheduler Method (Concurrency Runtime)
+## <a name="scheduler"></a>  task::scheduler Method (Concurrency Runtime)
 
 Returns the scheduler for this task
 
-```
+```cpp
 scheduler_ptr scheduler() const;
 ```
 
@@ -191,11 +191,11 @@ scheduler_ptr scheduler() const;
 
 A pointer to the scheduler
 
-##  <a name="ctor"></a> task
+## <a name="ctor"></a> task
 
 Constructs a `task` object.
 
-```
+```cpp
 task();
 
 template<typename T>
@@ -235,7 +235,7 @@ A task that is created from a `task_completion_event` will complete (and have it
 
 The version of the constructor that takes a cancellation token creates a task that can be canceled using the `cancellation_token_source` the token was obtained from. Tasks created without a cancellation token are not cancelable.
 
-Tasks created from a `Windows::Foundation::IAsyncInfo` interface or a lambda that returns an `IAsyncInfo` interface reach their terminal state when the enclosed Windows Runtime asynchronous operation or action completes. Similarly, tasks created from a lamda that returns a `task<result_type>` reach their terminal state when the inner task reaches its terminal state, and not when the lamda returns.
+Tasks created from a `Windows::Foundation::IAsyncInfo` interface or a lambda that returns an `IAsyncInfo` interface reach their terminal state when the enclosed Windows Runtime asynchronous operation or action completes. Similarly, tasks created from a lambda that returns a `task<result_type>` reach their terminal state when the inner task reaches its terminal state, and not when the lambda returns.
 
 `task` behaves like a smart pointer and is safe to pass around by value. It can be accessed by multiple threads without the need for locks.
 
@@ -243,11 +243,11 @@ The constructor overloads that take a Windows::Foundation::IAsyncInfo interface 
 
 For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-##  <a name="then"></a> then
+## <a name="then"></a> then
 
 Adds a continuation task to this task.
 
-```
+```cpp
 template<typename _Function>
 __declspec(
     noinline) auto then(const _Function& _Func) const -> typename details::_ContinuationTypeTraits<_Function,
@@ -307,11 +307,11 @@ The overloads of `then` that take a lambda or functor that returns a Windows::Fo
 
 For more information on how to use task continuations to compose asynchronous work, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-##  <a name="wait"></a> wait
+## <a name="wait"></a> wait
 
 Waits for this task to reach a terminal state. It is possible for `wait` to execute the task inline, if all of the tasks dependencies are satisfied, and it has not already been picked up for execution by a background worker.
 
-```
+```cpp
 task_status wait() const;
 ```
 
@@ -322,7 +322,7 @@ A `task_status` value which could be either `completed` or `canceled`. If the ta
 ### Remarks
 
 > [!IMPORTANT]
->  In a Universal Windows Platform (UWP) app, do not call `wait` in code that runs on the user-interface thread. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](#get) method to receive the result of the antecedent task in a task-based continuation.
+> In a Universal Windows Platform (UWP) app, do not call `wait` in code that runs on the user-interface thread. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](#get) method to receive the result of the antecedent task in a task-based continuation.
 
 ## See also
 

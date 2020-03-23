@@ -1,7 +1,6 @@
 ---
 title: "Overridable CWinApp Member Functions"
 ms.date: "11/04/2016"
-f1_keywords: ["CWinApp"]
 helpviewer_keywords: ["overriding [MFC], overridable functions in CWinApp", "application class [MFC]", "CWinApp class [MFC], overridables"]
 ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
 ---

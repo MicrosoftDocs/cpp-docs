@@ -1,7 +1,7 @@
 ---
 title: "/STACK"
 ms.date: "11/04/2016"
-f1_keywords: ["/stack"]
+f1_keywords: ["/stack_editbin"]
 helpviewer_keywords: ["-STACK editbin option", "STACK editbin option", "stack, setting size", "/STACK editbin option"]
 ms.assetid: a39bcff0-c945-4355-80cc-8e4f24a5f142
 ---

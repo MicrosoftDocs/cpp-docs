@@ -35,7 +35,7 @@ void functionUsingWidget () {
 ```
 
 In the following example, `w` owns a memory resource and so must have code in its destructor to delete the memory.
- 
+
 ```cpp
 class widget
 {

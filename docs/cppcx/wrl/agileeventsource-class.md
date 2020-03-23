@@ -2,7 +2,7 @@
 title: "AgileEventSource Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"
-f1_keywords: ["event/Microsoft::WRL::AgileEventSource", "event/Microsoft::WRL::InvokeModeOptions"]
+f1_keywords: ["event/Microsoft::WRL::AgileEventSource"]
 helpviewer_keywords: ["AgileEventSource class"]
 ---
 # AgileEventSource Class

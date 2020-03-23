@@ -1,7 +1,6 @@
 ---
 title: "Using CComboBoxEx"
 ms.date: "11/04/2016"
-f1_keywords: ["CComboBoxEx"]
 helpviewer_keywords: ["combo boxes [MFC], extended", "extended combo boxes [MFC], about extended combo boxes", "combo boxes [MFC], CComboBoxEx class", "CComboBox class [MFC], extended"]
 ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
 ---

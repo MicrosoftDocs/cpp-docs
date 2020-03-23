@@ -2,7 +2,6 @@
 title: "swap Function (auto_handle)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["msclr::swap", "msclr.swap"]
 helpviewer_keywords: ["swap function"]
 ms.assetid: 7dd91b5c-f0de-4634-a2e2-642626706e27
 ---

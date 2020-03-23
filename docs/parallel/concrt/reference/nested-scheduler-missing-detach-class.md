@@ -11,7 +11,7 @@ This class describes an exception thrown when the Concurrency Runtime detects th
 
 ## Syntax
 
-```
+```cpp
 class nested_scheduler_missing_detach : public std::exception;
 ```
 
@@ -39,11 +39,11 @@ This exception is thrown only when you nest one scheduler inside another by call
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> nested_scheduler_missing_detach
+## <a name="ctor"></a> nested_scheduler_missing_detach
 
 Constructs a `nested_scheduler_missing_detach` object.
 
-```
+```cpp
 explicit _CRTIMP nested_scheduler_missing_detach(_In_z_ const char* _Message) throw();
 
 nested_scheduler_missing_detach() throw();

@@ -15,7 +15,7 @@ This topic contains the following procedures for porting code to the UWP.
 
 - [Porting a Windows 8.1 Runtime Component to the UWP](#BK_81Component)
 
-If you have a classic desktop Win32 DLL and you want to call it from a UWP application, you can do that as well. Using such procedures, you can create a UWP user interface layer for an existing classic Windows desktop C++ application, or your cross-platform standard C++ code. See [How to: Use Existing C++ Code in a Universal Windows Platform App](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md). 
+If you have a classic desktop Win32 DLL and you want to call it from a UWP application, you can do that as well. Using such procedures, you can create a UWP user interface layer for an existing classic Windows desktop C++ application, or your cross-platform standard C++ code. See [How to: Use Existing C++ Code in a Universal Windows Platform App](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
 
 ## <a name="BK_81StoreApp"></a> Porting a Windows 8.1 Store App to the UWP
 

@@ -20,7 +20,6 @@ An MFC application is an executable application for Windows that is based on the
 
 The MFC Application Wizard generates the appropriate classes and files for any of these types of applications, depending on the options you select in the wizard.
 
-
 The easiest way to create an MFC application is to use the MFC Application Wizard (**MFC App project** in Visual Studio 2019). To create an MFC console application (a command-line program that uses MFC libraries but runs in the console window), use the Windows Desktop Wizard and choose the **Console Application** and **MFC Headers** options.
 
 ::: moniker range=">=vs-2019"

@@ -11,7 +11,7 @@ An abstraction of a physical location on hardware.
 
 ## Syntax
 
-```
+```cpp
 class location;
 ```
 
@@ -49,19 +49,19 @@ class location;
 
 **Namespace:** concurrency
 
-##  <a name="dtor"></a> ~location
+## <a name="dtor"></a> ~location
 
 Destroys a `location` object.
 
-```
+```cpp
 ~location();
 ```
 
-##  <a name="current"></a> current
+## <a name="current"></a> current
 
 Returns a `location` object representing the most specific place the calling thread is executing.
 
-```
+```cpp
 static location __cdecl current();
 ```
 
@@ -69,11 +69,11 @@ static location __cdecl current();
 
 A location representing the most specific place the calling thread is executing.
 
-##  <a name="from_numa_node"></a> from_numa_node
+## <a name="from_numa_node"></a> from_numa_node
 
 Returns a `location` object which represents a given NUMA node.
 
-```
+```cpp
 static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 ```
 
@@ -86,11 +86,11 @@ The NUMA node number to construct a location for.
 
 A location representing the NUMA node specified by the `_NumaNodeNumber` parameter.
 
-##  <a name="ctor"></a> location
+## <a name="ctor"></a> location
 
 Constructs a `location` object.
 
-```
+```cpp
 location();
 
 location(
@@ -120,11 +120,11 @@ location(
 
 A default constructed location represents the system as a whole.
 
-##  <a name="operator_neq"></a> operator!=
+## <a name="operator_neq"></a> operator!=
 
 Determines whether two `location` objects represent different location.
 
-```
+```cpp
 bool operator!= (const location& _Rhs) const;
 ```
 
@@ -137,11 +137,11 @@ Operand `location`.
 
 **true** if the two locations are different, **false** otherwise.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Assigns the contents of a different `location` object to this one.
 
-```
+```cpp
 location& operator= (const location& _Rhs);
 ```
 
@@ -152,11 +152,11 @@ The source `location` object.
 
 ### Return Value
 
-##  <a name="operator_eq_eq"></a> operator==
+## <a name="operator_eq_eq"></a> operator==
 
 Determines whether two `location` objects represent the same location.
 
-```
+```cpp
 bool operator== (const location& _Rhs) const;
 ```
 

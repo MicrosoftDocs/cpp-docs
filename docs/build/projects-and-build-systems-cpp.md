@@ -12,42 +12,43 @@ You can use Visual Studio to edit, compile and build any C++ code base with full
 
 ## C++ compilation
 
-To *build* a C++ program means to compile source code from one or more files and then link those files into an executable file (.exe), a dynamic-load library (.dll) or a static library (.lib). 
+To *build* a C++ program means to compile source code from one or more files and then link those files into an executable file (.exe), a dynamic-load library (.dll) or a static library (.lib).
 
 Basic C++ compilation involves three main steps:
 
 - The C++ preprocessor transforms all the #directives and macro definitions in each source file. This creates a *translation unit*.
 - The C++ compiler compiles each translation unit into object files (.obj), applying whatever compiler options have been set.
-- The *linker* merges the object files into a single executable, applying the linker options that have been set. 
+- The *linker* merges the object files into a single executable, applying the linker options that have been set.
 
 ## The MSVC toolset
 
 The Microsoft C++ compiler, linker, standard libraries, and related utilities comprise the MSVC compiler toolset (also called a toolchain or "build tools"). These are included in Visual Studio. You can also download and use the toolset as a standalone package for free from the [Build Tools for Visual Studio 2019 download location](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
 
-You can build simple programs by invoking the MSVC compiler (cl.exe) directly from the command line. The following command accepts a single source code file, and invokes cl.exe to build an executable called *hello.exe*: 
+You can build simple programs by invoking the MSVC compiler (cl.exe) directly from the command line. The following command accepts a single source code file, and invokes cl.exe to build an executable called *hello.exe*:
 
 ```cmd
 cl /EHsc hello.cpp
 ```
+
 Note that here the compiler (cl.exe) automatically invokes the C++ preprocessor and the linker to produce the final output file.  For more information, see [Building on the command line](building-on-the-command-line.md).
 
 ## Build systems and projects
 
-Most real-world programs use some kind of *build system* to manage complexities of compiling multiple source files for multiple configurations (i.e. debug vs. release), multiple platforms (x86, x64, ARM, and so on), custom build steps, and even multiple executables that must be compiled in a certain order. You make settings in a build configuration file(s), and the build system accepts that file as input before it invoke the compiler. The set of source code files and build configuration files needed to build an executable file is called a *project*. 
+Most real-world programs use some kind of *build system* to manage complexities of compiling multiple source files for multiple configurations (i.e. debug vs. release), multiple platforms (x86, x64, ARM, and so on), custom build steps, and even multiple executables that must be compiled in a certain order. You make settings in a build configuration file(s), and the build system accepts that file as input before it invoke the compiler. The set of source code files and build configuration files needed to build an executable file is called a *project*.
 
 The following list shows various options for Visual Studio Projects - C++:
 
 - create a Visual Studio project by using the Visual Studio IDE and configure it by using property pages. Visual Studio projects produce programs that run on Windows. For an overview, see [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio) in the Visual Studio documentation.
 
 - open a folder that contains a CMakeLists.txt file. CMake support is integrated into Visual Studio. You can use the IDE to edit, test and debug without modifying the CMake files in any way. This enables you to work in the same CMake project as others who might be using different editors. CMake is the recommended approach for cross-platform development. For more information, see [CMake projects](cmake-projects-in-visual-studio.md).
- 
+
 - open a loose folder of source files with no project file. Visual Studio will use heuristics to build the files. This is an easy way to compile and run small console applications. For more information, see [Open Folder projects](open-folder-projects-cpp.md).
 
 - open a folder that contains a makefile, or any other build system configuration file. You can configure Visual Studio to invoke any arbitrary build commands by adding JSON files to the folder. For more information, see [Open Folder projects](open-folder-projects-cpp.md).
- 
+
 - Open a Windows makefile in Visual Studio. For more information, see [NMAKE Reference](reference/nmake-reference.md).
 
-## MSBuild from the command line 
+## MSBuild from the command line
 
 You can invoke MSBuild from the command line by passing it a .vcxproj file along with command-line options. This approach requires a good understanding of MSBuild, and is recommended only when absolutely necessary. For more information, see [MSBuild](msbuild-visual-cpp.md).
 
@@ -60,7 +61,7 @@ How to create, configure, and build C++ projects in Visual Studio using its nati
 How to code, build, and deploy CMake projects in Visual Studio.
 
 [Open Folder projects](open-folder-projects-cpp.md)
-How to use Visual Studio to code, build and deploy C++ projects based on any arbitrary build system, or no build system. at all. 
+How to use Visual Studio to code, build and deploy C++ projects based on any arbitrary build system, or no build system. at all.
 
 [Release builds](release-builds.md)
 How to create and troubleshoot optimized release builds for deployment to end users.

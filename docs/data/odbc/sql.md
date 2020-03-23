@@ -29,7 +29,7 @@ The database classes are implemented with ODBC, which uses SQL in a call-level i
 
 ##  <a name="_core_the_database_classes"></a> Database Classes
 
-> [!NOTE] 
+> [!NOTE]
 > The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 The database classes are designed to let you manipulate and update data in an existing [data source](../../data/odbc/data-source-odbc.md). The [MFC Application Wizard](../../mfc/reference/database-support-mfc-application-wizard.md), the [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (accessed through **Add Class**), and the database classes construct most of the SQL statements for you.

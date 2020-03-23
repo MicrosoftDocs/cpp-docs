@@ -11,7 +11,7 @@ A class intended to be used as a base class for all independent agents. It is us
 
 ## Syntax
 
-```
+```cpp
 class agent;
 ```
 
@@ -57,11 +57,11 @@ For more information, see [Asynchronous Agents](../../../parallel/concrt/asynchr
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> agent
+## <a name="ctor"></a> agent
 
 Constructs an agent.
 
-```
+```cpp
 agent();
 
 agent(Scheduler& _PScheduler);
@@ -81,11 +81,11 @@ The `ScheduleGroup` object within which the execution task of the agent is sched
 
 The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PGroup` parameters.
 
-##  <a name="dtor"></a> ~agent
+## <a name="dtor"></a> ~agent
 
 Destroys the agent.
 
-```
+```cpp
 virtual ~agent();
 ```
 
@@ -93,11 +93,11 @@ virtual ~agent();
 
 It is an error to destroy an agent that is not in a terminal state (either `agent_done` or `agent_canceled`). This can be avoided by waiting for the agent to reach a terminal state in the destructor of a class that inherits from the `agent` class.
 
-##  <a name="cancel"></a> cancel
+## <a name="cancel"></a> cancel
 
 Moves an agent from either the `agent_created` or `agent_runnable` states to the `agent_canceled` state.
 
-```
+```cpp
 bool cancel();
 ```
 
@@ -105,11 +105,11 @@ bool cancel();
 
 **true** if the agent was canceled, **false** otherwise. An agent cannot be canceled if it has already started running or has already completed.
 
-##  <a name="done"></a> done
+## <a name="done"></a> done
 
 Moves an agent into the `agent_done` state, indicating that the agent has completed.
 
-```
+```cpp
 bool done();
 ```
 
@@ -121,11 +121,11 @@ bool done();
 
 This method should be called at the end of the `run` method, when you know the execution of your agent has completed.
 
-##  <a name="run"></a> run
+## <a name="run"></a> run
 
 Represents the main task of an agent. `run` should be overridden in a derived class, and specifies what the agent should do after it has been started.
 
-```
+```cpp
 virtual void run() = 0;
 ```
 
@@ -133,11 +133,11 @@ virtual void run() = 0;
 
 The agent status is changed to `agent_started` right before this method is invoked. The method should invoke `done` on the agent with an appropriate status before returning, and may not throw any exceptions.
 
-##  <a name="start"></a> start
+## <a name="start"></a> start
 
 Moves an agent from the `agent_created` state to the `agent_runnable` state, and schedules it for execution.
 
-```
+```cpp
 bool start();
 ```
 
@@ -145,11 +145,11 @@ bool start();
 
 **true** if the agent started correctly, **false** otherwise. An agent that has been canceled cannot be started.
 
-##  <a name="status"></a> status
+## <a name="status"></a> status
 
 A synchronous source of status information from the agent.
 
-```
+```cpp
 agent_status status();
 ```
 
@@ -157,11 +157,11 @@ agent_status status();
 
 Returns the current state of the agent. Note that this returned state could change immediately after being returned.
 
-##  <a name="status_port"></a> status_port
+## <a name="status_port"></a> status_port
 
 An asynchronous source of status information from the agent.
 
-```
+```cpp
 ISource<agent_status>* status_port();
 ```
 
@@ -169,11 +169,11 @@ ISource<agent_status>* status_port();
 
 Returns a message source that can send messages about the current state of the agent.
 
-##  <a name="wait"></a> wait
+## <a name="wait"></a> wait
 
 Waits for an agent to complete its task.
 
-```
+```cpp
 static agent_status __cdecl wait(
     _Inout_ agent* _PAgent,
     unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
@@ -197,11 +197,11 @@ An agent task is completed when the agent enters the `agent_canceled` or `agent_
 
 If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.
 
-##  <a name="wait_for_all"></a> wait_for_all
+## <a name="wait_for_all"></a> wait_for_all
 
 Waits for all of the specified agents to complete their tasks.
 
-```
+```cpp
 static void __cdecl wait_for_all(
     size_t count,
     _In_reads_(count) agent** _PAgents,
@@ -229,11 +229,11 @@ An agent task is completed when the agent enters the `agent_canceled` or `agent_
 
 If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.
 
-##  <a name="wait_for_one"></a> wait_for_one
+## <a name="wait_for_one"></a> wait_for_one
 
 Waits for any one of the specified agents to complete its task.
 
-```
+```cpp
 static void __cdecl wait_for_one(
     size_t count,
     _In_reads_(count) agent** _PAgents,

@@ -2,7 +2,6 @@
 title: "property  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
-f1_keywords: ["property_cpp", "property"]
 helpviewer_keywords: ["property keyword [C++]"]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
 ---

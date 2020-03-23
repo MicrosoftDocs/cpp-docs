@@ -10,7 +10,7 @@ Represents a short vector of three unsigned integers.
 
 ## Syntax
 
-```
+```cpp
 class uint_3;
 ```
 
@@ -139,11 +139,11 @@ class uint_3;
 
 **Namespace:** Concurrency::graphics
 
-##  <a name="ctor"></a> uint_3
+## <a name="ctor"></a> uint_3
 
 Default constructor, initializes all elements with 0.
 
-```
+```cpp
 uint_3() restrict(amp,
     cpu);
 
@@ -199,9 +199,9 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-##  <a name="uint_3__size"></a> size
+## <a name="uint_3__size"></a> size
 
-```
+```cpp
 static const int size = 3;
 ```
 

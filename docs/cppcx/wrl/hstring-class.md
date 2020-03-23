@@ -152,6 +152,7 @@ Retrieves a pointer to the underlying string data.
 ```cpp
 const wchar_t* GetRawBuffer(unsigned int* length) const;
 ```
+
 ### Parameters
 
 *length*
@@ -160,7 +161,6 @@ Pointer to an **int** variable that receives the length of the data.
 ### Return Value
 
 A **const** pointer to the underlying string data.
-
 
 ## <a name="hstring"></a>HString::HString
 

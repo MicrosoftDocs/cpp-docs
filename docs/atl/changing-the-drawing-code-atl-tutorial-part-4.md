@@ -37,14 +37,14 @@ Start by adding support for the math functions `sin` and `cos`, which will be us
 
     ```cpp
     public CComControl<CPolyCtl>,
-	public IProvideClassInfo2Impl<&CLSID_PolyCtl, &DIID__IPolyCtlEvents, &LIBID_PolygonLib>
+    public IProvideClassInfo2Impl<&CLSID_PolyCtl, &DIID__IPolyCtlEvents, &LIBID_PolygonLib>
     ```
 
     and in `BEGIN_COM_MAP(CPolyCtl)`, add the lines:
 
     ```cpp
     COM_INTERFACE_ENTRY(IProvideClassInfo)
-	COM_INTERFACE_ENTRY(IProvideClassInfo2)
+    COM_INTERFACE_ENTRY(IProvideClassInfo2)
     ```
 
 1. Once the polygon points are calculated, they will be stored in an array of type `POINT`, so add the array after the definition statement `short m_nSides;` in PolyCtl.h:
@@ -104,12 +104,15 @@ Rebuild the control. Make sure the PolyCtl.htm file is closed if it is still ope
     > [!NOTE]
     > For errors involving `ATL::CW2AEX`, in Script.Cpp, replace line `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` with `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`, and line `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` with `TRACE( "Source Text: %s\n", bstrSourceLineText );`.<br/>
     > For errors involving `HMONITOR`, open StdAfx.h in the `TCProps` project and replace:
+    >
     > ```
     > #ifndef WINVER
     > #define WINVER 0x0400
     > #endif
     > ```
+    >
     > with
+    >
     > ```
     > #ifndef WINVER
     > #define WINVER 0x0500

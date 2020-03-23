@@ -11,7 +11,7 @@ The exception that is thrown when a method fails because of a lack of system or 
 
 ## Syntax
 
-```
+```cpp
 class out_of_memory : public runtime_exception;
 ```
 
@@ -42,7 +42,7 @@ Initializes a new instance of the class.
 
 ### Syntax
 
-```
+```cpp
 explicit out_of_memory(
     const char * _Message ) throw();
 

@@ -1,7 +1,6 @@
 ---
 title: "General Class Design Philosophy"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.mfc"]
 helpviewer_keywords: ["designing classes [MFC]", "MFC, Windows API", "Visual C, Windows API calls", "classes [MFC], MFC class design", "Windows API [MFC], and MFC"]
 ms.assetid: e6861ae0-1581-4d9c-9ddf-63f9afcdb913
 ---

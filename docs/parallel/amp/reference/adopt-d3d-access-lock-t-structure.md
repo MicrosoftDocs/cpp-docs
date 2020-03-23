@@ -10,7 +10,7 @@ Tag type to indicate the D3D access lock should be adopted rather than acquired.
 
 ## Syntax
 
-```
+```cpp
 struct adopt_d3d_access_lock_t;
 ```
 

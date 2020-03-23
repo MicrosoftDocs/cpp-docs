@@ -30,8 +30,8 @@ using namespace Windows::UI::Xaml::Navigation;
 /// </summary>
 App::App()
 {
-	InitializeComponent();
-	Suspending += ref new SuspendingEventHandler(this, &App::OnSuspending);
+    InitializeComponent();
+    Suspending += ref new SuspendingEventHandler(this, &App::OnSuspending);
 }
 
 /// <summary>
@@ -42,19 +42,19 @@ App::App()
 /// <param name="args">Details about the launch request and process.</param>
 void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ pArgs)
 {
-	if (pArgs->PreviousExecutionState == ApplicationExecutionState::Terminated)
-	{
-		//TODO: Load state from previously suspended application
-	}
+    if (pArgs->PreviousExecutionState == ApplicationExecutionState::Terminated)
+    {
+        //TODO: Load state from previously suspended application
+    }
 
-	// Create a Frame to act navigation context and navigate to the first page
-	auto rootFrame = ref new Frame();
-	TypeName pageType = { MainPage::typeid->FullName, TypeKind::Metadata };
-	rootFrame->Navigate(pageType);
+    // Create a Frame to act navigation context and navigate to the first page
+    auto rootFrame = ref new Frame();
+    TypeName pageType = { MainPage::typeid->FullName, TypeKind::Metadata };
+    rootFrame->Navigate(pageType);
 
-	// Place the frame in the current Window and ensure that it is active
-	Window::Current->Content = rootFrame;
-	Window::Current->Activate();
+    // Place the frame in the current Window and ensure that it is active
+    Window::Current->Content = rootFrame;
+    Window::Current->Activate();
 }
 
 /// <summary>
@@ -66,5 +66,5 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 /// <param name="e">Details about the suspend request.</param>
 void App::OnSuspending(Object^ sender, SuspendingEventArgs^ e)
 {
-	//TODO: Save application state and stop any background activity
+    //TODO: Save application state and stop any background activity
 }

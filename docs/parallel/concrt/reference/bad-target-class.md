@@ -11,7 +11,7 @@ This class describes an exception thrown when a messaging block is given a point
 
 ## Syntax
 
-```
+```cpp
 class bad_target : public std::exception;
 ```
 
@@ -39,11 +39,11 @@ This exception is typically thrown for reasons such as a target attempting to co
 
 **Namespace:** concurrency
 
-##  <a name="ctor"></a> bad_target
+## <a name="ctor"></a> bad_target
 
 Constructs a `bad_target` object.
 
-```
+```cpp
 explicit _CRTIMP bad_target(_In_z_ const char* _Message) throw();
 
 bad_target() throw();

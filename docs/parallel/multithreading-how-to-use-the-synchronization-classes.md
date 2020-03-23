@@ -14,7 +14,7 @@ As an example, take an application that maintains a linked list of accounts. Thi
 
 This example application uses all three types of synchronization classes. Because it allows up to three accounts to be examined at one time, it uses [CSemaphore](../mfc/reference/csemaphore-class.md) to limit access to three view objects. When an attempt to view a fourth account occurs, the application either waits until one of the first three windows closes or it fails. When an account is updated, the application uses [CCriticalSection](../mfc/reference/ccriticalsection-class.md) to ensure that only one account is updated at a time. After the update succeeds, it signals [CEvent](../mfc/reference/cevent-class.md), which releases a thread waiting for the event to be signaled. This thread sends the new data to the data archive.
 
-##  <a name="_mfc_designing_a_thread.2d.safe_class"></a> Designing a Thread-Safe Class
+## <a name="_mfc_designing_a_thread.2d.safe_class"></a> Designing a Thread-Safe Class
 
 To make a class fully thread-safe, first add the appropriate synchronization class to the shared classes as a data member. In the previous account-management example, a `CSemaphore` data member would be added to the view class, a `CCriticalSection` data member would be added to the linked-list class, and a `CEvent` data member would be added to the data storage class.
 
@@ -24,7 +24,7 @@ Designing your thread-safe class in this fashion allows it to be used in a multi
 
 The following code example demonstrates this method by using a data member, `m_CritSection` (of type `CCriticalSection`), declared in the shared resource class and a `CSingleLock` object. The synchronization of the shared resource (derived from `CWinThread`) is attempted by creating a `CSingleLock` object using the address of the `m_CritSection` object. An attempt is made to lock the resource and, when obtained, work is done on the shared object. When the work is finished, the resource is unlocked with a call to `Unlock`.
 
-```
+```cpp
 CSingleLock singleLock(&m_CritSection);
 singleLock.Lock();
 // resource locked

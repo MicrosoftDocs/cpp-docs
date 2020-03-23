@@ -43,6 +43,7 @@ To use a `CMFCRibbonCheckBox` in your application, add the following constructor
 ```
 CMFCRibbonCheckBox (UINT nID, LPCTSTR lpszText)
 ```
+
 where *nID* is the check box command ID and *lpszText* is the text label of the check box.
 
 You can add a check box to a ribbon panel by using [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).

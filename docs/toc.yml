@@ -116,12 +116,257 @@
       items:
         - name: "Get started with C++ Build Insights"
           href: build-insights/get-started-with-cpp-build-insights.md
-        - name: "Windows Performance Analyzer basics"
-          href: build-insights/wpa-basics.md
-        - name: "vcperf.exe reference"
-          href: build-insights/vcperf-reference.md
-        - name: "Windows Performance Analyzer views reference"
-          href: build-insights/wpa-views-reference.md
+        - name: "Tutorials"
+          expanded: false
+          items:
+            - name: "vcperf and Windows Performance Analyzer"
+              href: build-insights/tutorials/vcperf-and-wpa.md
+            - name: "Windows Performance Analyzer basics"
+              href: build-insights/tutorials/wpa-basics.md
+        - name: "Reference"
+          expanded: false
+          items:
+            - name: "vcperf commands"
+              href: build-insights/reference/vcperf-commands.md
+            - name: "Windows Performance Analyzer views"
+              href: build-insights/reference/wpa-views.md
+            - name: "C++ Build Insights SDK"
+              expanded: false
+              items:
+                - name: "Overview"
+                  href: build-insights/reference/sdk/overview.md
+                - name: "Event table"
+                  href: build-insights/reference/sdk/event-table.md
+                - name: "Functions"
+                  expanded: false
+                  items: 
+                    - name: "Analyze"
+                      href: build-insights/reference/sdk/functions/analyze.md
+                    - name: "AnalyzeA"
+                      href: build-insights/reference/sdk/functions/analyze-a.md
+                    - name: "AnalyzeW"
+                      href: build-insights/reference/sdk/functions/analyze-w.md
+                    - name: "InjectEvent"
+                      href: build-insights/reference/sdk/functions/inject-event.md
+                    - name: "MakeDynamicAnalyzerGroup"
+                      href: build-insights/reference/sdk/functions/make-dynamic-analyzer-group.md
+                    - name: "MakeDynamicReloggerGroup"
+                      href: build-insights/reference/sdk/functions/make-dynamic-relogger-group.md
+                    - name: "MakeStaticAnalyzerGroup"
+                      href: build-insights/reference/sdk/functions/make-static-analyzer-group.md
+                    - name: "MakeStaticReloggerGroup"
+                      href: build-insights/reference/sdk/functions/make-static-relogger-group.md
+                    - name: "MatchEvent"
+                      href: build-insights/reference/sdk/functions/match-event.md
+                    - name: "MatchEventInMemberFunction"
+                      href: build-insights/reference/sdk/functions/match-event-in-member-function.md
+                    - name: "MatchEventStack"
+                      href: build-insights/reference/sdk/functions/match-event-stack.md
+                    - name: "MatchEventStackInMemberFunction"
+                      href: build-insights/reference/sdk/functions/match-event-stack-in-member-function.md
+                    - name: "Relog"
+                      href: build-insights/reference/sdk/functions/relog.md
+                    - name: "RelogA"
+                      href: build-insights/reference/sdk/functions/relog-a.md
+                    - name: "RelogW"
+                      href: build-insights/reference/sdk/functions/relog-w.md
+                    - name: "StartTracingSession"
+                      href: build-insights/reference/sdk/functions/start-tracing-session.md
+                    - name: "StartTracingSessionA"
+                      href: build-insights/reference/sdk/functions/start-tracing-session-a.md
+                    - name: "StartTracingSessionW"
+                      href: build-insights/reference/sdk/functions/start-tracing-session-w.md
+                    - name: "StopAndAnalyzeTracingSession"
+                      href: build-insights/reference/sdk/functions/stop-and-analyze-tracing-session.md
+                    - name: "StopAndAnalyzeTracingSessionA"
+                      href: build-insights/reference/sdk/functions/stop-and-analyze-tracing-session-a.md
+                    - name: "StopAndAnalyzeTracingSessionW"
+                      href: build-insights/reference/sdk/functions/stop-and-analyze-tracing-session-w.md
+                    - name: "StopAndRelogTracingSession"
+                      href: build-insights/reference/sdk/functions/stop-and-relog-tracing-session.md
+                    - name: "StopAndRelogTracingSessionA"
+                      href: build-insights/reference/sdk/functions/stop-and-relog-tracing-session-a.md
+                    - name: "StopAndRelogTracingSessionW"
+                      href: build-insights/reference/sdk/functions/stop-and-relog-tracing-session-w.md
+                    - name: "StopTracingSession"
+                      href: build-insights/reference/sdk/functions/stop-tracing-session.md
+                    - name: "StopTracingSessionA"
+                      href: build-insights/reference/sdk/functions/stop-tracing-session-a.md
+                    - name: "StopTracingSessionW"
+                      href: build-insights/reference/sdk/functions/stop-tracing-session-w.md
+                - name: "Event data types (C++)"
+                  expanded: false
+                  items:
+                    - name: "Activity"
+                      href: build-insights/reference/sdk/cpp-event-data-types/activity.md
+                    - name: "BackEndPass"
+                      href: build-insights/reference/sdk/cpp-event-data-types/back-end-pass.md
+                    - name: "BottomUp"
+                      href: build-insights/reference/sdk/cpp-event-data-types/bottom-up.md
+                    - name: "C1DLL"
+                      href: build-insights/reference/sdk/cpp-event-data-types/c1-dll.md
+                    - name: "C2DLL"
+                      href: build-insights/reference/sdk/cpp-event-data-types/c2-dll.md
+                    - name: "CodeGeneration"
+                      href: build-insights/reference/sdk/cpp-event-data-types/code-generation.md
+                    - name: "CommandLine"
+                      href: build-insights/reference/sdk/cpp-event-data-types/command-line.md
+                    - name: "Compiler"
+                      href: build-insights/reference/sdk/cpp-event-data-types/compiler.md
+                    - name: "CompilerPass"
+                      href: build-insights/reference/sdk/cpp-event-data-types/compiler-pass.md
+                    - name: "EnvironmentVariable"
+                      href: build-insights/reference/sdk/cpp-event-data-types/environment-variable.md
+                    - name: "Event"
+                      href: build-insights/reference/sdk/cpp-event-data-types/event.md
+                    - name: "EventGroup"
+                      href: build-insights/reference/sdk/cpp-event-data-types/event-group.md
+                    - name: "EventStack"
+                      href: build-insights/reference/sdk/cpp-event-data-types/event-stack.md
+                    - name: "ExecutableImageOutput"
+                      href: build-insights/reference/sdk/cpp-event-data-types/executable-image-output.md
+                    - name: "ExpOutput"
+                      href: build-insights/reference/sdk/cpp-event-data-types/exp-output.md
+                    - name: "FileInput"
+                      href: build-insights/reference/sdk/cpp-event-data-types/file-input.md
+                    - name: "FileOutput"
+                      href: build-insights/reference/sdk/cpp-event-data-types/file-output.md
+                    - name: "ForceInlinee"
+                      href: build-insights/reference/sdk/cpp-event-data-types/force-inlinee.md
+                    - name: "FrontEndFile"
+                      href: build-insights/reference/sdk/cpp-event-data-types/front-end-file.md
+                    - name: "FrontEndFileGroup"
+                      href: build-insights/reference/sdk/cpp-event-data-types/front-end-file-group.md
+                    - name: "FrontEndPass"
+                      href: build-insights/reference/sdk/cpp-event-data-types/front-end-pass.md
+                    - name: "Function"
+                      href: build-insights/reference/sdk/cpp-event-data-types/function.md
+                    - name: "ImpLibOutput"
+                      href: build-insights/reference/sdk/cpp-event-data-types/imp-lib-output.md
+                    - name: "Invocation"
+                      href: build-insights/reference/sdk/cpp-event-data-types/invocation.md
+                    - name: "InvocationGroup"
+                      href: build-insights/reference/sdk/cpp-event-data-types/invocation-group.md
+                    - name: "LibOutput"
+                      href: build-insights/reference/sdk/cpp-event-data-types/lib-output.md
+                    - name: "Linker"
+                      href: build-insights/reference/sdk/cpp-event-data-types/linker.md
+                    - name: "LinkerGroup"
+                      href: build-insights/reference/sdk/cpp-event-data-types/linker-group.md
+                    - name: "LinkerPass"
+                      href: build-insights/reference/sdk/cpp-event-data-types/linker-pass.md
+                    - name: "LTCG"
+                      href: build-insights/reference/sdk/cpp-event-data-types/ltcg.md
+                    - name: "ObjOutput"
+                      href: build-insights/reference/sdk/cpp-event-data-types/obj-output.md
+                    - name: "OptICF"
+                      href: build-insights/reference/sdk/cpp-event-data-types/opt-icf.md
+                    - name: "OptLBR"
+                      href: build-insights/reference/sdk/cpp-event-data-types/opt-lbr.md
+                    - name: "OptRef"
+                      href: build-insights/reference/sdk/cpp-event-data-types/opt-ref.md
+                    - name: "Pass1"
+                      href: build-insights/reference/sdk/cpp-event-data-types/pass1.md
+                    - name: "Pass2"
+                      href: build-insights/reference/sdk/cpp-event-data-types/pass2.md
+                    - name: "PreLTCGOptRef"
+                      href: build-insights/reference/sdk/cpp-event-data-types/pre-ltcg-opt-ref.md
+                    - name: "RawEvent"
+                      href: build-insights/reference/sdk/cpp-event-data-types/raw-event.md
+                    - name: "SimpleEvent"
+                      href: build-insights/reference/sdk/cpp-event-data-types/simple-event.md
+                    - name: "SymbolName"
+                      href: build-insights/reference/sdk/cpp-event-data-types/symbol-name.md
+                    - name: "TemplateInstantiation"
+                      href: build-insights/reference/sdk/cpp-event-data-types/template-instantiation.md
+                    - name: "TemplateInstantiationGroup"
+                      href: build-insights/reference/sdk/cpp-event-data-types/template-instantiation-group.md
+                    - name: "Thread"
+                      href: build-insights/reference/sdk/cpp-event-data-types/thread.md
+                    - name: "TopDown"
+                      href: build-insights/reference/sdk/cpp-event-data-types/top-down.md
+                    - name: "TraceInfo"
+                      href: build-insights/reference/sdk/cpp-event-data-types/trace-info.md
+                    - name: "WholeProgramAnalysis"
+                      href: build-insights/reference/sdk/cpp-event-data-types/whole-program-analysis.md
+                - name: "Event data types (C)"
+                  expanded: false
+                  items:
+                    - name: "CL_PASS_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/cl-pass-data-struct.md
+                    - name: "EVENT_COLLECTION_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/event-collection-data-struct.md
+                    - name: "EVENT_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/event-data-struct.md
+                    - name: "EVENT_ID"
+                      href: build-insights/reference/sdk/c-event-data-types/event-id-enum.md
+                    - name: "FILE_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/file-data-struct.md
+                    - name: "FILE_TYPE_CODE"
+                      href: build-insights/reference/sdk/c-event-data-types/file-type-code-enum.md
+                    - name: "FRONT_END_FILE_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/front-end-file-data-struct.md
+                    - name: "FUNCTION_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/function-data-struct.md
+                    - name: "FUNCTION_FORCE_INLINEE_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/function-force-inlinee-data-struct.md
+                    - name: "INVOCATION_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/invocation-data-struct.md
+                    - name: "INVOCATION_VERSION_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/invocation-version-data-struct.md
+                    - name: "MSVC_TOOL_CODE"
+                      href: build-insights/reference/sdk/c-event-data-types/msvc-tool-code-enum.md
+                    - name: "NAME_VALUE_PAIR_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/name-value-pair-data-struct.md
+                    - name: "SYMBOL_NAME_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/symbol-name-data-struct.md
+                    - name: "TEMPLATE_INSTANTIATION_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/template-instantiation-data-struct.md
+                    - name: "TEMPLATE_INSTANTIATION_KIND_CODE"
+                      href: build-insights/reference/sdk/c-event-data-types/template-instantiation-kind-code-enum.md
+                    - name: "TRACE_INFO_DATA"
+                      href: build-insights/reference/sdk/c-event-data-types/trace-info-data-struct.md
+                    - name: "TRANSLATION_UNIT_PASS_CODE"
+                      href: build-insights/reference/sdk/c-event-data-types/translation-unit-pass-code-enum.md
+                - name: "Other types"
+                  expanded: false
+                  items:
+                    - name: "ANALYSIS_CALLBACKS"
+                      href: build-insights/reference/sdk/other-types/analysis-callbacks-struct.md
+                    - name: "AnalysisControl"
+                      href: build-insights/reference/sdk/other-types/analysis-control-enum-class.md
+                    - name: "ANALYSIS_DESCRIPTOR"
+                      href: build-insights/reference/sdk/other-types/analysis-descriptor-struct.md
+                    - name: "CALLBACK_CODE"
+                      href: build-insights/reference/sdk/other-types/callback-code-enum.md
+                    - name: "IAnalyzer"
+                      href: build-insights/reference/sdk/other-types/ianalyzer-class.md
+                    - name: "IRelogger"
+                      href: build-insights/reference/sdk/other-types/irelogger-class.md
+                    - name: "OnAnalysisEventFunc"
+                      href: build-insights/reference/sdk/other-types/on-analysis-event-func-typedef.md
+                    - name: "OnBeginEndPassFunc"
+                      href: build-insights/reference/sdk/other-types/on-begin-end-pass-func-typedef.md
+                    - name: "OnRelogEventFunc"
+                      href: build-insights/reference/sdk/other-types/on-relog-event-func-typedef.md
+                    - name: "OnTraceInfoFunc"
+                      href: build-insights/reference/sdk/other-types/on-trace-info-func-typedef.md
+                    - name: "RELOG_CALLBACKS"
+                      href: build-insights/reference/sdk/other-types/relog-callbacks-struct.md
+                    - name: "RELOG_DESCRIPTOR"
+                      href: build-insights/reference/sdk/other-types/relog-descriptor-struct.md
+                    - name: "RELOG_RETENTION_SYSTEM_EVENT_FLAGS"
+                      href: build-insights/reference/sdk/other-types/relog-retention-system-event-flags-constants.md
+                    - name: "RESULT_CODE"
+                      href: build-insights/reference/sdk/other-types/result-code-enum.md
+                    - name: "TRACING_SESSION_MSVC_EVENT_FLAGS"
+                      href: build-insights/reference/sdk/other-types/tracing-session-msvc-event-flags-constants.md
+                    - name: "TRACING_SESSION_OPTIONS"
+                      href: build-insights/reference/sdk/other-types/tracing-session-options-struct.md
+                    - name: "TRACING_SESSION_STATISTICS"
+                      href: build-insights/reference/sdk/other-types/tracing-session-statistics-struct.md
+                    - name: "TRACING_SESSION_SYSTEM_EVENT_FLAGS"
+                      href: build-insights/reference/sdk/other-types/tracing-session-system-event-flags-constants.md
     - name: Precompiled header files
       href: build/creating-precompiled-header-files.md
     - name: C++ release builds
@@ -375,6 +620,8 @@
           href: build/arm64-exception-handling.md
     - name: Configuring programs for Windows XP
       href: build/configuring-programs-for-windows-xp.md
+    - name: Code analysis for C/C++
+      href: code-quality/
     - name: Compiler and build tools reference
       expanded: false
       items: 
@@ -702,6 +949,10 @@
                           href: build/reference/qsafe-fp-loads.md
                         - name: /Qspectre
                           href: build/reference/qspectre.md
+                        - name: /Qspectre-load
+                          href: build/reference/qspectre-load.md
+                        - name: /Qspectre-load-cf
+                          href: build/reference/qspectre-load-cf.md
                         - name: /Qvec-report (Auto-vectorizer reporting level)
                           href: build/reference/qvec-report-auto-vectorizer-reporting-level.md
                     - name: /RTC (Run-time error checks)
@@ -2449,7 +2700,7 @@
 - name: Linux development
   href: linux/
 - name: Cross-platform mobile development
-  href: /visualstudio/cross-platform/visual-cpp-for-cross-platform-mobile-development
+  href: cross-platform/
 - name: .NET development with C++/CLI
   expanded: false
   items: 

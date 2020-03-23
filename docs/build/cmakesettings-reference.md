@@ -14,17 +14,17 @@ CMake projects are supported in Visual Studio 2017 and later.
 
 ::: moniker range=">=vs-2017"
 
-The **CMakeSettings.json** file contains information that Visual Studio uses for IntelliSense and to construct the command-line arguments that it passes to cmake.exe for a specified *configuration* and compiler *environment*. A configuration specifies properties that apply to a specific platform and build-type, for example, `x86-Debug` or `Linux-Release`. Each configuration specifies an environment, which encapsulates information about the compiler toolset, for example MSVC, GCC, or Clang. CMake uses the command-line arguments to regenerate the root *CMakeCache.txt* file and other project files for the project. The values can be overridden in the *CMakeLists.txt* files. 
+The **CMakeSettings.json** file contains information that Visual Studio uses for IntelliSense and to construct the command-line arguments that it passes to cmake.exe for a specified *configuration* and compiler *environment*. A configuration specifies properties that apply to a specific platform and build-type, for example, `x86-Debug` or `Linux-Release`. Each configuration specifies an environment, which encapsulates information about the compiler toolset, for example MSVC, GCC, or Clang. CMake uses the command-line arguments to regenerate the root *CMakeCache.txt* file and other project files for the project. The values can be overridden in the *CMakeLists.txt* files.
 
 You can add or remove configurations in the IDE and then edit them directly in the JSON file or use the **CMake Settings editor** (Visual Studio 2019 and later). You can switch between the configurations easily in the IDE to generate the various project files. See [Customize CMake build settings in Visual Studio](customize-cmake-settings.md) for more information.
 
 ## Configurations
 
-The `configurations` array contains all the configurations for a CMake project. See [CMake predefined configuration reference](cmake-predefined-configuration-reference.md) for more information about the pre-defined configurations. You can add any number of pre-defined or custom configurations to the file. 
+The `configurations` array contains all the configurations for a CMake project. See [CMake predefined configuration reference](cmake-predefined-configuration-reference.md) for more information about the pre-defined configurations. You can add any number of pre-defined or custom configurations to the file.
 
 A `configuration` has these properties:
 
-- `addressSDanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
+- `addressSanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
 - `addressSanitizerRuntimeFlags`: runtime flags passed to AddressSanitizer via the ASAN_OPTIONS environment variable. Format: flag1=value:flag2=value2.
 - `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
 - `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where *CMakeCache.txt* will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
@@ -168,7 +168,7 @@ In  `CMakeSettings.json`, you can define custom environment variables globally o
 - `namespace`: names the environment so that its variables can be referenced from a configuration in the form `namespace.variable`. The default environment object is called `env` and is populated with certain system environment variables including `%USERPROFILE%`.
 - `environment`: uniquely identifies this group of variables. Allows the group to be inherited later in an `inheritEnvironments` entry.
 - `groupPriority`: An integer that specifies the priority of these variables when evaluating them. Higher number items are evaluated first.
-- `inheritEnvironments`: An array of values that specify the set of environments that are inherited by this group. This feature enables you to inherit default environments and create custom environment variables that are passed to CMake.exe when it runs. 
+- `inheritEnvironments`: An array of values that specify the set of environments that are inherited by this group. This feature enables you to inherit default environments and create custom environment variables that are passed to CMake.exe when it runs.
 
 **Visual Studio 2019 version 16.4 and later:** Debug targets are automatically launched with the environment you specify in *CMakeSettings.json*. You can override or add environment variables on a per-target or per-task basis in [launch.vs.json](launch-vs-schema-reference-cpp.md) and [tasks.vs.json](tasks-vs-json-schema-reference-cpp.md).
 

@@ -61,7 +61,6 @@ Name                                         | Description
 [AsyncBase::PutOnComplete](#putoncomplete)   | Sets the address of the completion event handler to the specified value.
 [AsyncBase::PutOnProgress](#putonprogress)   | Sets the address of the progress event handler to the specified value.
 
-
 ### Protected Methods
 
 Name                                                                         | Description

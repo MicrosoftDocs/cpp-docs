@@ -143,7 +143,7 @@ fib(12) = 144
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `parallel-scripts.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc parallel-scripts.cpp /link ole32.lib**
+> **cl.exe /EHsc parallel-scripts.cpp /link ole32.lib**
 
 ## See also
 

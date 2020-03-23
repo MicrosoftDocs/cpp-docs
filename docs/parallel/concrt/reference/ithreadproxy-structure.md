@@ -11,7 +11,7 @@ An abstraction for a thread of execution. Depending on the `SchedulerType` polic
 
 ## Syntax
 
-```
+```cpp
 struct IThreadProxy;
 ```
 
@@ -40,11 +40,11 @@ Thread proxies are coupled to execution contexts represented by the interface `I
 
 **Namespace:** concurrency
 
-##  <a name="getid"></a>  IThreadProxy::GetId Method
+## <a name="getid"></a>  IThreadProxy::GetId Method
 
 Returns a unique identifier for the thread proxy.
 
-```
+```cpp
 virtual unsigned int GetId() const = 0;
 ```
 
@@ -52,11 +52,11 @@ virtual unsigned int GetId() const = 0;
 
 A unique integer identifier.
 
-##  <a name="switchout"></a>  IThreadProxy::SwitchOut Method
+## <a name="switchout"></a>  IThreadProxy::SwitchOut Method
 
 Disassociates the context from the underlying virtual processor root.
 
-```
+```cpp
 virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
 ```
 
@@ -79,11 +79,11 @@ A reinitialized virtual processor root is no different from a brand new virtual 
 
 In the libraries and headers that shipped with Visual Studio 2010, this method did not take a parameter and did not reinitialize the virtual processor root. To preserve old behavior, the default parameter value of `Blocking` is supplied.
 
-##  <a name="switchto"></a>  IThreadProxy::SwitchTo Method
+## <a name="switchto"></a>  IThreadProxy::SwitchTo Method
 
 Performs a cooperative context switch from the currently executing context to a different one.
 
-```
+```cpp
 virtual void SwitchTo(
     _Inout_ IExecutionContext* pContext,
     SwitchingProxyState switchState) = 0;
@@ -109,11 +109,11 @@ Use the value `Nesting` when you want to temporarily detach this thread proxy fr
 
 `SwitchTo` must be called on the `IThreadProxy` interface that represents the currently executing thread or the results are undefined. The function throws `invalid_argument` if the parameter `pContext` is set to `NULL`.
 
-##  <a name="yieldtosystem"></a>  IThreadProxy::YieldToSystem Method
+## <a name="yieldtosystem"></a>  IThreadProxy::YieldToSystem Method
 
 Causes the calling thread to yield execution to another thread that is ready to run on the current processor. The operating system selects the next thread to be executed.
 
-```
+```cpp
 virtual void YieldToSystem() = 0;
 ```
 

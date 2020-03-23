@@ -76,7 +76,7 @@ How to use the productivity features in the C++ editor to refactor, navigate, un
 [Debugging Native Code](/visualstudio/debugger/debugging-native-code)<br/>
 Use the Visual Studio debugger with C++ projects.
 
-[Code analysis for C/C++ overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
+[Code analysis for C/C++ overview](/cpp/code-quality/code-analysis-for-c-cpp-overview)<br/>
 Use SAL annotations or the C++ Core Guidelines checkers to perform static analysis.
 
 [Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>

@@ -1,7 +1,6 @@
 ---
 title: "Two Ways to Create a CArchive Object"
 ms.date: "11/04/2016"
-f1_keywords: ["CArchive"]
 helpviewer_keywords: ["CArchive class [MFC], closing CArchive objects", "CArchive objects [MFC], closing", "I/O [MFC], creating CArchive objects", "serialization [MFC], CArchive class", "CArchive objects [MFC]", "storage [MFC], CArchive class [MFC]", "data storage [MFC], CArchive class", "CArchive class [MFC], constructor"]
 ms.assetid: aefa28ce-b55c-40dc-9e42-5f038030985d
 ---

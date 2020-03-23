@@ -9,7 +9,6 @@ A static library that's used in a Universal Windows Platform (UWP) app can conta
 
 ## Creating static libraries
 
-
 Instructions for creating a new project vary depending on which version of Visual Studio you have installed. Make sure you have the version selector in the upper left set to the correct version.
 
 ::: moniker range="vs-2019"
@@ -18,7 +17,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **UWP**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **UWP**.
 
 1. From the filtered list of project types, choose **Static Library (Universal Windows - C++/CX)** then choose **Next**. In the next page, give the project a name, and specify the project location if desired.
 

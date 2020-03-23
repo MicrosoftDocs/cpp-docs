@@ -37,7 +37,7 @@ For more information about `parallel_for_each` and other parallel algorithms, se
 
 Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `concrt-omp-parallel-any-of.cpp` and then run the following command in a Visual Studio Command Prompt window.
 
-**cl.exe /EHsc /openmp concrt-omp-parallel-any-of.cpp**
+> **cl.exe /EHsc /openmp concrt-omp-parallel-any-of.cpp**
 
 ## See also
 

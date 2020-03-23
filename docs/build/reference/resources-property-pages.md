@@ -54,7 +54,7 @@ Suppress the display of the startup banner and information message (/nologo)
 
 Specifies the name of the resource file (/fo[file])
 
-## Null Terminate Strings 
+## Null Terminate Strings
 
 Append null's to all strings in the string tables. (/n)
 

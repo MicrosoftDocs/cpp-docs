@@ -29,7 +29,7 @@ Produces an output file that can be used with the Performance Tools profiler.
 
 /PROFILE causes the linker to generate a relocation section in the program image.  A relocation section allows the profiler to transform the program image to get profile data.
 
-**/PROFILE** is only available only in Enterprise (team development) versions.  For more information on PREfast, see [Code Analysis for C/C++ Overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
+**/PROFILE** is only available only in Enterprise (team development) versions.  For more information on PREfast, see [Code Analysis for C/C++ Overview](/cpp/code-quality/code-analysis-for-c-cpp-overview).
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -65,4 +65,3 @@ SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/PROFILE")
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)
-

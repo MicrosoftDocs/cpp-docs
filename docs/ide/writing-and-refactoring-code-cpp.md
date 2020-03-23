@@ -15,9 +15,9 @@ IntelliSense is a powerful code completion tool that suggests symbols and code s
 
 ![C&#43;&#43; member list drop down](../ide/media/cpp-statement-completion.png)
 
-Some symbols are omitted automatically to help narrow down the results. For example, when accessing a class object’s members from outside the class, you will not be able to see private members by default, or protected members (if you are not in the context of a child class). You can adjust the filtering by using the buttons at the bottom.
+Some symbols are omitted automatically to help narrow down the results. For example, when accessing a class object's members from outside the class, you will not be able to see private members by default, or protected members (if you are not in the context of a child class). You can adjust the filtering by using the buttons at the bottom.
 
-After you choose the symbol from the drop-down list, you can autocomplete it with **Tab**, **Enter**, or one of the other commit characters (by default: {}[]().,:;+-*/%&|^!=?@#\). To add or remove characters from this list, 
+After you choose the symbol from the drop-down list, you can autocomplete it with **Tab**, **Enter**, or one of the other commit characters (by default: `{ } [ ] ( ) . , : ; + - * / % & | ^ ! = ? @ # \`). To add or remove characters from this list,
 search for "IntelliSense" in **Quick Launch** (Ctrl + Q) and choose the **Text Editor > C/C++ > Advanced** option. The **Member List Commit Characters** option enables you to customize the list with the changes you want.
 
 The **Member List Filter Mode** option controls what kinds of IntelliSense autocomplete suggestions you see. By default, it is set to **Fuzzy**. In a fuzzy search, if you have a symbol called *MyAwesomeClass*, you can type "MAC" and find the class in your autocomplete suggestions. The fuzzy algorithm sets a minimum threshold that symbols must meet to show up in the list. **Smart** filtering displays all symbols containing substrings that match what you typed. **Prefix** filtering searches for strings that begin with what you typed.
@@ -65,15 +65,15 @@ A button is displayed only if it is relevant to your current IntelliSense sessio
 
 ## Template IntelliSense
 
-When the caret is inside a template definition, a **Template Bar** appears, which enables you to provide sample template arguments for IntelliSense. 
+When the caret is inside a template definition, a **Template Bar** appears, which enables you to provide sample template arguments for IntelliSense.
 
 ![C&#43;&#43; Template IntelliSense Show Existing Instantiations](../ide/media/template-intellisense-cpp-1.png "Template IntelliSense Show Existing Instantiations")
 
-Click the **<T>** icon to expand/collapse the **Template Bar**. Click the pencil icon or double-click the **Template Bar** to open the **Edit** window. 
+Click the **\<T>** icon to expand/collapse the **Template Bar**. Click the pencil icon or double-click the **Template Bar** to open the **Edit** window.
 
 ![C&#43;&#43; Template IntelliSense](../ide/media/template-intellisense-cpp-3.png "Template IntelliSense")
 
-Edits that you make in the window are applied directly to the source code, so that you can see the effects in real time. 
+Edits that you make in the window are applied directly to the source code, so that you can see the effects in real time.
 
 The Template Bar can auto-populate candidates based on instantiations in your code. Click on **Add All Existing Instantiations** to see a list of all concrete arguments that have been used to instantiate the template throughout your code base.
 
@@ -89,13 +89,13 @@ A window at the bottom of the editor shows where each instantiation was found, a
 
 If the editor detects problems with your code, it will add colored squiggles under the problem. Red squiggles indicate code that won't compile. Green squiggles indicate other kinds of problems that might still be potentially serious. You can open the **Error List** window to get more information about the problems.
 
-For some kinds of errors, as well as common coding patterns, the editor will offer a **Quick Fix** in the form of a light bulb that appears when you hover over the squiggle. Click the down arrow to see the suggestions. 
+For some kinds of errors, as well as common coding patterns, the editor will offer a **Quick Fix** in the form of a light bulb that appears when you hover over the squiggle. Click the down arrow to see the suggestions.
 
 In the following example, a `vector` was declared but no definition was found, so the editor offers to include the necessary header file:
 
 ![C&#43;&#43; quick fix](../ide/media/quick-fix-for-header-cpp.png "C++ Quick Fix")
 
-The editor also offers Quick Fixes for some refactoring opportunities. For example, if you declare a class in a header file, Visual Studio will offer to create a definition for it in a separate .cpp file. 
+The editor also offers Quick Fixes for some refactoring opportunities. For example, if you declare a class in a header file, Visual Studio will offer to create a definition for it in a separate .cpp file.
 
 ![C&#43;&#43; quick fix](../ide/media/quick-fix.png "C++ Quick Fix")
 

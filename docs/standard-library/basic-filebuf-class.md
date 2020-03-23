@@ -300,7 +300,7 @@ bool is_open() const;
 
 ### Return Value
 
-**true** if the file pointer isn't a null pointer.
+**true** if the file pointer isn't null.
 
 ### Example
 
@@ -371,11 +371,11 @@ The default file opening protection, equivalent to the *shflag* parameter in [_f
 
 ### Return Value
 
-If the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **this**.
+If the buffer is already open, or if the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **this**.
 
 ### Remarks
 
-The member function opens the file with name *filename*, by calling [`fopen`](../c-runtime-library/reference/fopen-wfopen.md)`(filename, strmode)`. `strmode` is determined from `mode & ~(`[`ate`](../standard-library/ios-base-class.md#openmode)` | `[`binary`](../standard-library/ios-base-class.md#openmode)`)`:
+The member function opens the file with name *filename*, by calling [`fopen`](../c-runtime-library/reference/fopen-wfopen.md)`(filename, strmode)`. `strmode` is determined from `mode & ~(`[`ate`](../standard-library/ios-base-class.md#openmode) `|` [`binary`](../standard-library/ios-base-class.md#openmode)`)`:
 
 - `ios_base::in` becomes `"r"` (open existing file for reading).
 

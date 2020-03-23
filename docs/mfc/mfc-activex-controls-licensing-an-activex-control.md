@@ -1,7 +1,6 @@
 ---
 title: "MFC ActiveX Controls: Licensing an ActiveX Control"
 ms.date: "11/19/2018"
-f1_keywords: ["COleObjectFactory"]
 helpviewer_keywords: ["COleObjectFactory class [MFC], licensing controls", "MFC ActiveX controls [MFC], licensing", "VerifyLicenseKey method [MFC]", "VerifyUserLicense method [MFC]", "GetLicenseKey method [MFC]", "licensing ActiveX controls"]
 ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
 ---

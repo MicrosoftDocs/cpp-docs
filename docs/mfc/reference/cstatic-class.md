@@ -253,6 +253,7 @@ You can use various window and static control styles, including these:
 ```
 MyStaticControl.SetBitmap(HBITMAP(MyBitmap));
 ```
+
 The following example creates two `CStatic` objects on the heap. It then loads one with a system bitmap using `CBitmap::LoadOEMBitmap` and the other from a file using `CImage::Load`.
 
 ### Example

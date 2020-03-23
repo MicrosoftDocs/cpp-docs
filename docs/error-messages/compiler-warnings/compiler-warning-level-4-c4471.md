@@ -81,4 +81,3 @@ enum Example;    // C4471
 enum class Example { item = 0 };
 // ...
 ```
-

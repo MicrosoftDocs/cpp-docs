@@ -10,7 +10,7 @@
     {
         // Use dynamic_pointer_cast to test whether
         // element is a shared_ptr<Photo>.
-        shared_ptr<Photo> temp = dynamic_pointer_cast<Photo>(p);		
+        shared_ptr<Photo> temp = dynamic_pointer_cast<Photo>(p);
         return temp.get() != nullptr;
     });
 

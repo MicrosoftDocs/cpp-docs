@@ -1,7 +1,6 @@
 ---
 title: "Using the CArchive &lt;&lt; and &gt;&gt; Operators"
 ms.date: "11/04/2016"
-f1_keywords: ["CArchive"]
 helpviewer_keywords: ["objects [MFC], loading from previously stored values", "CArchive class [MFC], storing and loading objects", "CArchive class [MFC], operators"]
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
 ---

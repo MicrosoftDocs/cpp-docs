@@ -1,7 +1,7 @@
 ---
 title: "MFC Desktop Applications"
 ms.date: "07/28/2019"
-f1_keywords: ["MFC", "mfc"]
+f1_keywords: ["MFC"]
 helpviewer_keywords: ["libraries, MFC", "class libraries, MFC", "MFC, about MFC"]
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
 ---

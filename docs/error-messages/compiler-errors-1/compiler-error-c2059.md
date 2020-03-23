@@ -31,8 +31,8 @@ C2059 is raised when a preprocessor symbol name is re-used as an identifier. In 
 #define ONE 1
 
 enum class DIGITS {
-	ZERO,
-	ONE // error C2059
+    ZERO,
+    ONE // error C2059
 };
 ```
 

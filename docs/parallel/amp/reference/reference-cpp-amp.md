@@ -10,7 +10,7 @@ ms.assetid: 372a8aed-8a53-48c9-996f-9c3cf09c9fa8
 This section contains reference information for the C++ Accelerated Massive Parallelism (C++ AMP) runtime.
 
 > [!NOTE]
->  The C++ language standard reserves the use of identifiers that begin with an underscore (`_`) character for implementations such as libraries. Do not use names beginning with an underscore in your code. The behavior of code elements whose names follow this convention are not guaranteed and are subject to change in future releases. For these reasons, such code elements are omitted from this documentation.
+> The C++ language standard reserves the use of identifiers that begin with an underscore (`_`) character for implementations such as libraries. Do not use names beginning with an underscore in your code. The behavior of code elements whose names follow this convention are not guaranteed and are subject to change in future releases. For these reasons, such code elements are omitted from this documentation.
 
 ## In This Section
 

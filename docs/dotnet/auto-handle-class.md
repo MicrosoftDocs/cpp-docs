@@ -22,7 +22,7 @@ ref class auto_handle;
 *_element_type*<br/>
 The managed type to be embedded.
 
-## <a name="members"></a>Members 
+## <a name="members"></a>Members
 
 ### Public constructors  
 
@@ -37,17 +37,17 @@ The managed type to be embedded.
 |---------|-----------|  
 |[auto_handle::get](#get)|Gets the contained object.|  
 |[auto_handle::release](#release)|Releases the object from `auto_handle` management.|
-|[auto_handle::reset](#reset)|Destroy the current owned object and optionally take possession of a new object.| 
+|[auto_handle::reset](#reset)|Destroy the current owned object and optionally take possession of a new object.|
 |[auto_handle::swap](#swap)|Swaps objects with another `auto_handle`.|  
 
-### Public operators 
+### Public operators
 
 |Name|Description|  
-|---------|-----------| 
-|[auto_handle::operator-&gt;](#operator-arrow)|The member access operator.|   
-|[auto_handle::operator=](#operator-assign)|Assignment operator.| 
+|---------|-----------|
+|[auto_handle::operator-&gt;](#operator-arrow)|The member access operator.|
+|[auto_handle::operator=](#operator-assign)|Assignment operator.|
 |[auto_handle::operator auto_handle](#operator-auto-handle)|Type-cast operator between `auto_handle` and compatible types.|  
-|[auto_handle::operator bool](#operator-bool)|Operator for using `auto_handle` in a conditional expression.|   
+|[auto_handle::operator bool](#operator-bool)|Operator for using `auto_handle` in a conditional expression.|
 |[auto_handle::operator!](#operator-logical-not)|Operator for using `auto_handle` in a conditional expression.|  
 
 ## Requirements
@@ -321,7 +321,6 @@ done
 
 Destroy the current owned object and optionally take possession of a new object.
 
-
 ```cpp
 void reset(
    _element_type ^ _new_ptr
@@ -562,7 +561,6 @@ in ClassA destructor: second
 ## <a name="operator-auto-handle"></a>auto_handle::operator auto_handle
 
 Type-cast operator between `auto_handle` and compatible types.
-
 
 ```cpp
 template<typename _other_type>

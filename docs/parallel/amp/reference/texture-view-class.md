@@ -10,7 +10,7 @@ Provides read access and write access to a texture. `texture_view` can only be u
 
 ## Syntax
 
-```
+```cpp
 template<typename value_type,int _Rank>
 class texture_view;
 
@@ -23,7 +23,7 @@ class texture_view<const value_type, _Rank>
    : public details::_Texture_base<value_type, _Rank>;
 ```
 
-#### Parameters
+### Parameters
 
 *value_type*<br/>
 The type of the elements in the texture aggregate.
@@ -86,19 +86,19 @@ The rank of the `texture_view`.
 
 **Namespace:** concurrency::graphics
 
-##  <a name="dtor"></a> ~texture_view
+## <a name="dtor"></a> ~texture_view
 
 Destroys the `texture_view` instance.
 
-```
+```cpp
 ~texture_view() restrict(amp, cpu);
 ```
 
-##  <a name="ctor"></a> texture_view
+## <a name="ctor"></a> texture_view
 
 Constructs a `texture_view` instance.
 
-```
+```cpp
 texture_view(// [1] constructor
     texture<value_type, _Rank>& _Src) restrict(amp);
 
@@ -151,11 +151,11 @@ Top level (most detailed) mip level for the view, relative to the specified `tex
 *_Mip_levels*<br/>
 The number of mipmap levels accessible through the `texture_view`.
 
-##  <a name="gather_red"></a> gather_red
+## <a name="gather_red"></a> gather_red
 
 Samples the texture at the specified coordinates by using the specified sampling configuration and returns the red (x) components of the four sampled texels.
 
-```
+```cpp
 const gather_return_type gather_red(
     const sampler& _Sampler,
     const coordinates_type& _Coord) const restrict(amp);
@@ -182,11 +182,11 @@ The coordinates to take the sample from. Fractional coordinate values are used t
 
 A rank 4 short vector containing the red (x) component of the 4 sampled texel values.
 
-##  <a name="gather_green"></a> gather_green
+## <a name="gather_green"></a> gather_green
 
 Samples the texture at the specified coordinates by using the specified sampling configuration and returns the green (y) components of the four sampled texels.
 
-```
+```cpp
 const gather_return_type gather_green(
     const sampler& _Sampler,
     const coordinates_type& _Coord) const restrict(amp);
@@ -213,11 +213,11 @@ The coordinates to take the sample from. Fractional coordinate values are used t
 
 A rank 4 short vector containing the green (y) component of the 4 sampled texel values.
 
-##  <a name="gather_blue"></a> gather_blue
+## <a name="gather_blue"></a> gather_blue
 
 Samples the texture at the specified coordinates by using the specified sampling configuration and returns the blue (z) components of the four sampled texels.
 
-```
+```cpp
 const gather_return_type gather_blue(
     const sampler& _Sampler,
     const coordinates_type& _Coord) const restrict(amp);
@@ -244,11 +244,11 @@ The coordinates to take the sample from. Fractional coordinate values are used t
 
 A rank 4 short vector containing the red (x) component of the 4 sampled texel values.
 
-##  <a name="gather_alpha"></a> gather_alpha
+## <a name="gather_alpha"></a> gather_alpha
 
 Samples the texture at the specified coordinates by using the specified sampling configuration and returns the alpha (w) components of the four sampled texels.
 
-```
+```cpp
 const gather_return_type gather_alpha(
     const sampler& _Sampler,
     const coordinates_type& _Coord) const restrict(amp);
@@ -275,11 +275,11 @@ The coordinates to take the sample from. Fractional coordinate values are used t
 
 A rank 4 short vector containing the alpha (w) component of the 4 sampled texel values.
 
-##  <a name="get"></a> get
+## <a name="get"></a> get
 
 Gets the value of the element at the specified index.
 
-```
+```cpp
 const value_type get(
     const index<_Rank>& _Index) const restrict(amp);
 
@@ -300,11 +300,11 @@ The mipmap level from which we should get the value. The default value 0 represe
 
 The value of the element.
 
-##  <a name="operator_eq"></a> operator=
+## <a name="operator_eq"></a> operator=
 
 Assigns a view of the same texture as the specified `texture_view` to this `texture_view` instance.
 
-```
+```cpp
 texture_view<value_type, _Rank>& operator= (// [1] copy constructor
     const texture_view<value_type, _Rank>& _Other) restrict(amp, cpu);
 
@@ -328,11 +328,11 @@ A non-writable `texture_view` object.
 
 A reference to this `texture_view` instance.
 
-##  <a name="operator_at"></a> operator[]
+## <a name="operator_at"></a> operator[]
 
 Returns the element value by index.
 
-```
+```cpp
 const value_type operator[] (const index<_Rank>& _Index) const restrict(amp);
 
 const value_type operator[] (int _I0) const restrict(amp);
@@ -354,11 +354,11 @@ The one-dimensional index.
 
 The element value indexed by `_Index`.
 
-##  <a name="operator_call"></a> operator()
+## <a name="operator_call"></a> operator()
 
 Returns the element value by index.
 
-```
+```cpp
 const value_type operator() (
     const index<_Rank>& _Index) const restrict(amp);
 
@@ -407,11 +407,11 @@ The least-significant component of the index.
 
 The element value indexed by `_Index`.
 
-##  <a name="sample"></a> sample
+## <a name="sample"></a> sample
 
 Samples the texture at the specified coordinates and level of detail by using the specified sampling configuration.
 
-```
+```cpp
 value_type sample(
     const sampler& _Sampler,
     const coordinates_type& _Coord,
@@ -447,11 +447,11 @@ The value specifies the mipmap level to sample from. Fractional values are used 
 
 The interpolated sample value.
 
-##  <a name="set"></a> set
+## <a name="set"></a> set
 
 Sets the value of the element at the specified index to the specified value.
 
-```
+```cpp
 void set(
     const index<_Rank>& _Index,
     const value_type& value) const restrict(amp);
@@ -465,11 +465,11 @@ The index of the element to set, possibly multi-dimensional.
 *value*<br/>
 The value to set the element to.
 
-##  <a name="value_type"></a> value_type
+## <a name="value_type"></a> value_type
 
 The value type of the elements of the texture_view.
 
-```
+```cpp
 typedef typename const value_type value_type;
 ```
 

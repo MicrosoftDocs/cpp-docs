@@ -1,7 +1,6 @@
 ---
 title: "Low-Level I/O"
 ms.date: "11/04/2016"
-f1_keywords: ["c.io"]
 helpviewer_keywords: ["I/O [CRT], low-level", "I/O [CRT], functions", "low-level I/O routines", "file handles [C++]", "file handles [C++], I/O functions"]
 ms.assetid: 53e11bdd-6720-481c-8b2b-3a3a569ed534
 ---

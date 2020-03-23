@@ -18,7 +18,7 @@ Visual Studio helps you upgrade legacy C++ code with compiler options, code anal
 
 - Code that conforms to all versions of the standard but is no longer considered best practice in modern C++.
 
-   To identify code where changes are recommended, run [Code analysis](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
+   To identify code where changes are recommended, run [Code analysis](/cpp/code-quality/code-analysis-for-c-cpp-overview).
 
 ## Open and convert a legacy project
 
@@ -68,7 +68,7 @@ Code analysis errors and warnings also appear in the **Error List** just like co
 
 ![Code analysis warnings in Error List](media/code-analysis-error-list.png "Code analysis warnings in Error List")
 
-You can change which rules are active, and create custom rulesets. For more information about using Code Analysis, see [Code analysis for C/C++ overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
+You can change which rules are active, and create custom rulesets. For more information about using Code Analysis, see [Code analysis for C/C++ overview](/cpp/code-quality/code-analysis-for-c-cpp-overview).
 
 ## Use Quick Actions to modernize code
 

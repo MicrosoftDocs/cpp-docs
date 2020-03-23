@@ -252,6 +252,7 @@ The parameter structure used to construct the distribution.
 The default constructor sets the stored parameters such that there is one interval, 0 to 1, with a probability density of 1.
 
 The iterator range constructor
+
 ```cpp
 template <class InputIteratorI, class InputIteratorW>
 piecewise_constant_distribution(InputIteratorI firstI, InputIteratorI lastI,
@@ -261,6 +262,7 @@ piecewise_constant_distribution(InputIteratorI firstI, InputIteratorI lastI,
 constructs a distribution object with itnervals from iterators over the sequence [ `firstI`, `lastI`) and a matching weight sequence starting at `firstW`.
 
 The initializer list constructor
+
 ```cpp
 template <class UnaryOperation>
 piecewise_constant_distribution(initializer_list<result_type>
@@ -271,6 +273,7 @@ intervals,
 constructs a distribution object with intervals from the initializer list *intervals* and weights generated from the function *weightfunc*.
 
 The constructor defined as
+
 ```cpp
 template <class UnaryOperation>
 piecewise_constant_distribution(size_t count, result_type xmin, result_type xmax,
@@ -280,6 +283,7 @@ piecewise_constant_distribution(size_t count, result_type xmin, result_type xmax
 constructs a distribution object with *count* intervals distributed uniformly over [ `xmin,xmax`], assigning each interval weights according to the function *weightfunc*, and *weightfunc* must accept one parameter and have a return value, both of which are convertible to `double`. **Precondition:** `xmin < xmax`
 
 The constructor defined as
+
 ```cpp
 explicit piecewise_constant_distribution(const param_type& parm);
 ```

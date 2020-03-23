@@ -10,7 +10,6 @@ The Microsoft Foundation Classes (MFC) library supplies classes for programming 
 
 For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK in MSDN.
 
-
 ## In This Section
 
 - [ODBC](odbc-basics.md)—the Open Database Connectivity standard and API

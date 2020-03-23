@@ -20,7 +20,7 @@ You must understand the following topics to complete this walkthrough:
 
 - [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This walkthrough demonstrates how to perform the following tasks:
 
@@ -30,7 +30,7 @@ This walkthrough demonstrates how to perform the following tasks:
 
 - [Using the file_reader Class in the Application](#useagentclass)
 
-##  <a name="createapplication"></a> Creating the Console Application
+## <a name="createapplication"></a> Creating the Console Application
 
 This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. Make sure the version selector is set correctly in the upper left of this page.
 
@@ -40,7 +40,7 @@ This section shows how to create a C++ console application that references the h
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `BasicAgent` as the name for the project, and specify the project location if desired.
 
@@ -72,7 +72,7 @@ This section shows how to create a C++ console application that references the h
 
 [[Top](#top)]
 
-##  <a name="createagentclass"></a> Creating the file_reader Class
+## <a name="createagentclass"></a> Creating the file_reader Class
 
 This section shows how to create the `file_reader` class. The runtime schedules each agent to perform work in its own context. Therefore, you can create an agent that performs work synchronously, but interacts with other components asynchronously. The `file_reader` class reads data from a given input file and sends data from that file to a given target component.
 
@@ -120,7 +120,7 @@ The following example shows the complete contents of file_reader.h.
 
 [[Top](#top)]
 
-##  <a name="useagentclass"></a> Using the file_reader Class in the Application
+## <a name="useagentclass"></a> Using the file_reader Class in the Application
 
 This section shows how to use the `file_reader` class to read the contents of a text file. It also shows how to create a [concurrency::call](../../parallel/concrt/reference/call-class.md) object that receives this file data and calculates its Adler-32 checksum.
 

@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "12/04/2019"
+ms.date: "03/16/2020"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 ---
@@ -44,7 +44,7 @@ B b = { 1 }; // ill-formed in C++20, previously well-formed
 
 ### Partial support for `operator <=>`
 
-[P0515R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0515r3.pdf) C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in `/std:c++latest` mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under `/std:c++latest`:
+[P0515R3](https://wg21.link/p0515r3) C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in `/std:c++latest` mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under `/std:c++latest`:
 
 ```cpp
 struct S
@@ -128,7 +128,7 @@ To avoid the error, either remove the **constexpr** qualifier, or else change th
 
 ### `std::create_directory` failure codes
 
-Implemented [P1164](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1164r1.pdf) from C++20 unconditionally. This changes `std::create_directory` to check whether the target was already a directory on failure. Previously, all ERROR_ALREADY_EXISTS type errors were turned into success-but-directory-not-created codes.
+Implemented [P1164](https://wg21.link/p1164r1) from C++20 unconditionally. This changes `std::create_directory` to check whether the target was already a directory on failure. Previously, all ERROR_ALREADY_EXISTS type errors were turned into success-but-directory-not-created codes.
 
 ### `operator<<(std::ostream, nullptr_t)`
 
@@ -140,25 +140,25 @@ New parallel versions of `is_sorted`, `is_sorted_until`, `is_partitioned`, `set_
 
 ### atomic initialization
 
-[P0883 "Fixing atomic initialization"](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0883r1.pdf) changes `std::atomic` to value-initialize the contained T rather than default-initializing it. The fix is enabled when using Clang/LLVM with the Microsoft standard library. It's currently disabled for the Microsoft C++ compiler, as a workaround for a bug in **constexpr** processing.
+[P0883 "Fixing atomic initialization"](https://wg21.link/p0883r1) changes `std::atomic` to value-initialize the contained T rather than default-initializing it. The fix is enabled when using Clang/LLVM with the Microsoft standard library. It's currently disabled for the Microsoft C++ compiler, as a workaround for a bug in **constexpr** processing.
 
 ### `remove_cvref` and `remove_cvref_t`
 
-Implemented the `remove_cvref` and `remove_cvref_t` type traits from [P0550](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf). These remove reference-ness and cv-qualification from a type without decaying functions and arrays to pointers (unlike `std::decay` and `std::decay_t`).
+Implemented the `remove_cvref` and `remove_cvref_t` type traits from [P0550](https://wg21.link/p0550r2). These remove reference-ness and cv-qualification from a type without decaying functions and arrays to pointers (unlike `std::decay` and `std::decay_t`).
 
 ### Feature-test macros
 
-[P0941R2 - feature-test macros](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0941r2.html) is complete, with support for `__has_cpp_attribute`. Feature-test macros are supported in all standard modes.
+[P0941R2 - feature-test macros](https://wg21.link/p0941r2) is complete, with support for `__has_cpp_attribute`. Feature-test macros are supported in all standard modes.
 
 ### Prohibit aggregates with user-declared constructors
 
-[C++20 P1008R1 - prohibiting aggregates with user-declared constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1008r1.pdf) is complete.
+[C++20 P1008R1 - prohibiting aggregates with user-declared constructors](https://wg21.link/p1008r1) is complete.
 
 ## <a name="improvements_161"></a> Conformance improvements in 16.1
 
 ### char8_t
 
-[P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C++20 adds a new character type that is used to represent UTF-8 code units. `u8` string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C standard in [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Suggestions for `char8_t` backward compatibility remediation are given in [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). The Microsoft C++ compiler adds support for `char8_t` in Visual Studio 2019 version 16.1 when you specify the **/Zc:char8_t** compiler option. In the future, it will be supported with [/std:c++latest](../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **/Zc:char8_t-**. The EDG compiler that powers IntelliSense doesn't yet support it, so you'll see spurious IntelliSense-only errors that don't impact the actual compilation.
+[P0482r6](https://wg21.link/p0482r6). C++20 adds a new character type that is used to represent UTF-8 code units. `u8` string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C standard in [N2231](https://wg14.link/n2231). Suggestions for `char8_t` backward compatibility remediation are given in [P1423r3](https://wg21.link/p1423r3). The Microsoft C++ compiler adds support for `char8_t` in Visual Studio 2019 version 16.1 when you specify the **/Zc:char8_t** compiler option. In the future, it will be supported with [/std:c++latest](../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **/Zc:char8_t-**. The EDG compiler that powers IntelliSense doesn't yet support it, so you'll see spurious IntelliSense-only errors that don't impact the actual compilation.
 
 #### Example
 
@@ -169,7 +169,7 @@ const char8_t* s = u8"Hello"; // C++20
 
 ### std::type_identity metafunction and std::identity function object
 
-[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf). The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../build/reference/std-specify-language-standard-version.md).
+[P0887R1 type_identity](https://wg21.link/p0887r1). The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../build/reference/std-specify-language-standard-version.md).
 
 The following example produces deprecation warning C4996 for `std::identity` (defined in \<type_traits>) in Visual Studio 2017:
 
@@ -220,11 +220,11 @@ void f() {
 
 ### Argument-dependent lookup for function calls
 
-[P0846R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0846r0.html) (C++20) Increased ability to find function templates via argument-dependent lookup for function call expressions with explicit template arguments. Requires **/std:c++latest**.
+[P0846R0](https://wg21.link/p0846r0) (C++20) Increased ability to find function templates via argument-dependent lookup for function call expressions with explicit template arguments. Requires **/std:c++latest**.
 
 ### Designated initialization
 
-[P0329R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf) (C++20) Designated initialization allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **/std:c++latest**.
+[P0329R4](https://wg21.link/p0329r4) (C++20) Designated initialization allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **/std:c++latest**.
 
 ### New and updated standard library functions (C++20)
 
@@ -233,12 +233,11 @@ void f() {
 - `remove()`, `remove_if()`, and `unique()` for `list` and `forward_list` now return `size_type`.
 - `shift_left()` and `shift_right()` added to \<algorithm>.
 
-
 ## <a name="improvements_162"></a> Conformance improvements in 16.2
 
 ### noexcept constexpr functions
 
-Constexpr functions are no longer considered **noexcept** by default when used in a constant expression. This behavior change comes from the resolution of [CWG 1351](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#1351) and is enabled in [/permissive-](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
+Constexpr functions are no longer considered **noexcept** by default when used in a constant expression. This behavior change comes from the resolution of [CWG 1351](https://wg21.link/cwg1351) and is enabled in [/permissive-](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
 
 ```cpp
 constexpr int f() { return 0; }
@@ -372,19 +371,19 @@ bool neq(const S& lhs, const S& rhs) {
 ### Standard Library improvements
 
 - \<charconv> `to_chars()` with fixed/scientific precision. (General precision is currently planned for 16.4.)
-- [P0020R6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0020r6.html): atomic\<float>, atomic\<double>, atomic\<long double>
-- [P0463R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html): endian
-- [P0482R6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html): Library Support For char8_t
-- [P0600R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf): [\[nodiscard]] For The STL, Part 1
-- [P0653R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html): to_address()
-- [P0754R2](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0754r2.pdf): \<version>
-- [P0771R1](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0771r1.pdf): noexcept For std::function's move constructor
+- [P0020R6](https://wg21.link/p0020r6): atomic\<float>, atomic\<double>, atomic\<long double>
+- [P0463R1](https://wg21.link/p0463r1): endian
+- [P0482R6](https://wg21.link/p0482r6): Library Support For char8_t
+- [P0600R1](https://wg21.link/p0600r1): [\[nodiscard]] For The STL, Part 1
+- [P0653R2](https://wg21.link/p0653r2): to_address()
+- [P0754R2](https://wg21.link/p0754r2): \<version>
+- [P0771R1](https://wg21.link/p0771r1): noexcept For std::function's move constructor
 
 ## <a name="improvements_163"></a> Conformance improvements in Visual Studio 2019 version 16.3
 
 ### Stream extraction operators for char* removed
 
-Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0487r1.html)). WG21 considers the removed overloads to be unsafe. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C2679: binary '>>': no operator found which takes a right-hand operand of type 'char\*' (or there is no acceptable conversion)*:
+Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](https://wg21.link/p0487r1)). WG21 considers the removed overloads to be unsafe. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C2679: binary '>>': no operator found which takes a right-hand operand of type 'char\*' (or there is no acceptable conversion)*:
 
 ```cpp
    char x[42];
@@ -491,7 +490,7 @@ namespace N {
 
 ### Implicit conversion of integral constant expressions to null pointer
 
-The MSVC compiler now implements [CWG Issue 903](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#903) in conformance mode (/permissive-). This rule disallows implicit conversion of integral constant expressions (except for the integer literal '0') to null pointer constants. The following example produces C2440 in conformance mode:
+The MSVC compiler now implements [CWG Issue 903](https://wg21.link/cwg903) in conformance mode (/permissive-). This rule disallows implicit conversion of integral constant expressions (except for the integer literal '0') to null pointer constants. The following example produces C2440 in conformance mode:
 
 ```cpp
 int* f(bool* p) {
@@ -565,7 +564,7 @@ void f(T (&buffer)[Size], int& size_read)
 
 ### User-provided specializations of type traits
 
-In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified type_traits templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
+In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified `type_traits` templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
 
 ```cpp
 #include <type_traits>
@@ -577,7 +576,7 @@ struct std::is_fundamental<S> : std::true_type {};
 static_assert(std::is_fundamental<S>::value, "fail");
 ```
 
-To avoid the error, define a struct that inherits from the desired type_trait, and specialize that:
+To avoid the error, define a struct that inherits from the preferred `type_trait`, and specialize that:
 
 ```cpp
 #include <type_traits>
@@ -595,21 +594,21 @@ static_assert(my_is_fundamental<S>::value, "fail");
 
 ### Changes to compiler-provided comparison operators
 
-The MSVC compiler now implements the following changes to comparison operators per [P1630R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1630r1.html) when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) option is enabled:
+The MSVC compiler now implements the following changes to comparison operators per [P1630R1](https://wg21.link/p1630r1) when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) option is enabled:
 
-The compiler will no longer rewrite expressions with `operator==` if they involve a return type that is not a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
+The compiler no longer rewrites expressions using `operator==` if they involve a return type that isn't a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
 
 ```cpp
 struct U {
-  operator bool() const;
+    operator bool() const;
 };
 
 struct S {
-  U operator==(const S&) const;
+    U operator==(const S&) const;
 };
 
 bool neq(const S& lhs, const S& rhs) {
-  return lhs != rhs;
+    return lhs != rhs;
 }
 ```
 
@@ -630,7 +629,7 @@ bool neq(const S& lhs, const S& rhs) {
 }
 ```
 
-The compiler will no longer define a defaulted comparison operator if it is a member of a union-like class. The following example now produces  *C2120: 'void' illegal with all types*:
+The compiler no longer defines a defaulted comparison operator if it's a member of a union-like class. The following example now produces *C2120: 'void' illegal with all types*:
 
 ```cpp
 #include <compare>
@@ -652,13 +651,13 @@ To avoid the error, define a body for the operator:
 #include <compare>
 
 union S {
-  int a;
-  char b;
-  auto operator<=>(const S&) const { ... }
-}; 
+    int a;
+    char b;
+    auto operator<=>(const S&) const { ... }
+};
 
 bool lt(const S& lhs, const S& rhs) {
-  return lhs < rhs;
+    return lhs < rhs;
 }
 ```
 
@@ -690,6 +689,197 @@ struct U {
 bool lt(const U& lhs, const U& rhs) {
     return lhs < rhs;
 }
+```
+
+## <a name="improvements_165"></a> Conformance improvements in Visual Studio 2019 version 16.5
+
+### Explicit specialization declaration without an initializer is not a definition
+
+Under `/permissive-`, MSVC now enforces a standard rule that explicit specialization declarations without initializers aren't definitions. Previously, the declaration would be considered a definition with a default-initializer. The effect is observable at link time, since a program depending on this behavior may now have unresolved symbols. This example now results in an error:
+
+```cpp
+template <typename> struct S {
+    static int a;
+};
+
+// In permissive-, this declaration is not a definition and the program will not link.
+template <> int S<char>::a;
+
+int main() {
+    return S<char>::a;
+}
+```
+
+```Output
+error LNK2019: unresolved external symbol "public: static int S<char>::a" (?a@?$S@D@@2HA) referenced in function _main
+at link time.
+```
+
+To resolve the issue, add an initializer:
+
+```cpp
+template <typename> struct S {
+    static int a;
+};
+
+// Add an initializer for the declaration to be a definition.
+template <> int S<char>::a{};
+
+int main() {
+    return S<char>::a;
+}
+```
+
+### Preprocessor output preserves newlines
+
+The experimental preprocessor now preserves newlines and whitespace when using `/P` or `/E` with `/experimental:preprocessor`. This change can be disabled by using `/d1experimental:preprocessor:oldWhitespace`.
+
+Given this example source,
+
+```cpp
+#define m()
+line m(
+) line
+```
+
+The previous output of `/E` was:
+
+```Output
+line line
+#line 2
+```
+
+The new output of `/E` is now:
+
+```Output
+line
+ line
+```
+
+### 'import' and 'module' keywords are context dependent
+
+Per P1857R1, import and module preprocessor directives have additional restrictions on their syntax. This example no longer compiles:
+
+```cpp
+import // Invalid
+m;
+```
+
+It produces the following error message:
+
+```Output
+error C2146: syntax error: missing ';' before identifier 'm'
+```
+
+To resolve the issue, keep the import on the same line:
+
+```cpp
+import m; // OK
+```
+
+### Removal of std::weak_equality and std::strong_equality
+
+The merge of P1959R0 requires the compiler to remove behavior and references to the `std::weak_equality` and `std::strong_equality` types.
+
+The code in this example no longer compiles:
+
+```cpp
+#include <compare>
+
+struct S {
+    std::strong_equality operator<=>(const S&) const = default;
+};
+
+void f() {
+    nullptr<=>nullptr;
+    &f <=> &f;
+    &S::operator<=> <=> &S::operator<=>;
+}
+```
+
+The example now leads to these errors:
+
+```Output
+error C2039: 'strong_equality': is not a member of 'std'
+error C2143: syntax error: missing ';' before '<=>'
+error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+error C7546: binary operator '<=>': unsupported operand types 'nullptr' and 'nullptr'
+error C7546: binary operator '<=>': unsupported operand types 'void (__cdecl *)(void)' and 'void (__cdecl *)(void)'
+error C7546: binary operator '<=>': unsupported operand types 'int (__thiscall S::* )(const S &) const' and 'int (__thiscall S::* )(const S &) const'
+```
+
+To resolve the issue, update to prefer the built-in relational operators and replace the removed types:
+
+```cpp
+#include <compare>
+
+struct S {
+    std::strong_ordering operator<=>(const S&) const = default; // prefer 'std::strong_ordering'
+};
+
+void f() {
+    nullptr != nullptr; // use pre-existing builtin operator != or ==.
+    &f != &f;
+    &S::operator<=> != &S::operator<=>;
+}
+```
+
+### TLS Guard changes
+
+Previously, thread-local variables in DLLs weren't correctly initialized before their first use on threads
+that existed before the DLL was loaded, other than the thread that loaded the DLL. This defect has now been corrected.
+Thread-local variables in such a DLL are initialized immediately before their first use on such threads.
+
+This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the
+`/Zc:tlsGuards-` compiler switch. Or, by adding the `[[msvc:no_tls_guard]]` attribute to particular thread local variables.
+
+### Better diagnosis of call to deleted functions
+
+Our compiler was more permissive about calls to deleted functions previously. For example, if the calls happened in the context of a template body, we wouldn't diagnose the call. Additionally, if there were multiple instances of calls to deleted functions, we would only issue one diagnostic. Now we issue a diagnostic for each of them.
+
+One consequence of the new behavior can produce a small breaking change: Code that called a deleted function wouldn't get diagnosed if it was never needed for code generation. Now we diagnose it up front.
+
+This example shows code that now produces an error:
+
+```cpp
+struct S {
+  S() = delete;
+  S(int) { }
+};
+
+struct U {
+  U() = delete;
+  U(int i): s{ i } { }
+
+  S s{};
+};
+
+U u{ 0 };
+```
+
+```Output
+error C2280: 'S::S(void)': attempting to reference a deleted function
+note: see declaration of 'S::S'
+note: 'S::S(void)': function was explicitly deleted
+```
+
+To resolve the issue, remove calls to deleted functions:
+
+```cpp
+struct S {
+  S() = delete;
+  S(int) { }
+};
+
+struct U {
+  U() = delete;
+  U(int i): s{ i } { }
+
+  S s;  // Do not call the deleted ctor of 'S'.
+};
+
+U u{ 0 };
 ```
 
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
@@ -913,7 +1103,7 @@ The iterator debugging feature has been taught to properly unwrap `std::move_ite
 
 ### Fixes for \<xkeycheck.h> keyword enforcement
 
-The standard library’s macro replacing a keyword enforcement \<xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
+The standard library's macro replacing a keyword enforcement \<xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
 
 ### Allocator types no longer deprecated
 
@@ -925,7 +1115,7 @@ A spurious `static_cast` not called for by the standard that accidentally suppre
 
 ### Various \<filesystem> correctness fixes
 
-- Fixed `std::filesystem::last_write_time` failing when attempting to change a directory’s last write time.
+- Fixed `std::filesystem::last_write_time` failing when attempting to change a directory's last write time.
 - The `std::filesystem::directory_entry` constructor now stores a failed result, rather than throwing an exception, when supplied a nonexistent target path.
 - The `std::filesystem::create_directory` 2-parameter version was changed to call the 1-parameter version, as the underlying `CreateDirectoryExW` function would use `copy_symlink` when the `existing_p` was a symlink.
 - `std::filesystem::directory_iterator` no longer fails when a broken symlink is found.
@@ -963,11 +1153,11 @@ The unordered container `reserve` function now actually reserves for N elements,
 
 - Many standard library internal container functions have been made private for an improved IntelliSense experience. Additional fixes to mark members as private are expected in later releases of MSVC.
 
-- Exception safety correctness problems wherein the node-based containers like `list`, `map`, and `unordered_map` would become corrupted were fixed. During a `propagate_on_container_copy_assignment` or `propagate_on_container_move_assignment` reassignment operation, we would free the container’s sentinel node with the old allocator, do the POCCA/POCMA assignment over the old allocator, and then try to acquire the sentinel node from the new allocator. If this allocation failed, the container was corrupted and couldn’t even be destroyed, as owning a sentinel node is a hard data structure invariant. This code was fixed to allocate the new sentinel node from the source container’s allocator before destroying the existing sentinel node.
+- Exception safety correctness problems wherein the node-based containers like `list`, `map`, and `unordered_map` would become corrupted were fixed. During a `propagate_on_container_copy_assignment` or `propagate_on_container_move_assignment` reassignment operation, we would free the container's sentinel node with the old allocator, do the POCCA/POCMA assignment over the old allocator, and then try to acquire the sentinel node from the new allocator. If this allocation failed, the container was corrupted and couldn't even be destroyed, as owning a sentinel node is a hard data structure invariant. This code was fixed to allocate the new sentinel node from the source container's allocator before destroying the existing sentinel node.
 
 - The containers were fixed to always copy/move/swap allocators according to `propagate_on_container_copy_assignment`, `propagate_on_container_move_assignment`, and `propagate_on_container_swap`, even for allocators declared `is_always_equal`.
 
-- Added the overloads for container merge and extract member functions that accept rvalue containers per [P0083 "Splicing Maps And Sets"](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf)
+- Added the overloads for container merge and extract member functions that accept rvalue containers per [P0083 "Splicing Maps And Sets"](https://wg21.link/p0083r3)
 
 ### `std::basic_istream::read` processing of \\r\\n => \\n
 
@@ -1049,23 +1239,23 @@ The compiler continues to improve its support for expression SFINAE, which is re
 
 ### C++14: NSDMI for Aggregates
 
-An aggregate is an array or a class with no user-provided constructor, no private or protected non-static data members, no base classes, and no virtual functions. Beginning in C++14 aggregates may contain member initializers. For more information, see [Member initializers and aggregates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3605.html).
+An aggregate is an array or a class with no user-provided constructor, no private or protected non-static data members, no base classes, and no virtual functions. Beginning in C++14 aggregates may contain member initializers. For more information, see [Member initializers and aggregates](https://wg21.link/n3605).
 
 ### C++14: Extended **constexpr**
 
-Expressions declared as **constexpr** are now allowed to contain certain kinds of declarations, if and switch statements, loop statements, and mutation of objects whose lifetime began within the constexpr expression evaluation. Also, there is no longer a requirement that a **constexpr** non-static member function must be implicitly **const**. For more information, see [Relaxing constraints on constexpr functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html).
+Expressions declared as **constexpr** are now allowed to contain certain kinds of declarations, if and switch statements, loop statements, and mutation of objects whose lifetime began within the constexpr expression evaluation. Also, there is no longer a requirement that a **constexpr** non-static member function must be implicitly **const**. For more information, see [Relaxing constraints on constexpr functions](https://wg21.link/n3652).
 
 ### C++17: Terse `static_assert`
 
-the message parameter for `static_assert` is optional. For more information, see [Extending static_assert, v2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3928.pdf).
+the message parameter for `static_assert` is optional. For more information, see [Extending static_assert, v2](https://wg21.link/n3928).
 
 ### C++17: `[[fallthrough]]` attribute
 
-In **/std:c++17** mode, the `[[fallthrough]]` attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This attribute prevents the compiler from issuing warnings in such cases. For more information, see [Wording for \[\[fallthrough\]\] attribute](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0188r0.pdf).
+In **/std:c++17** mode, the `[[fallthrough]]` attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This attribute prevents the compiler from issuing warnings in such cases. For more information, see [Wording for \[\[fallthrough\]\] attribute](https://wg21.link/p0188r0).
 
 ### Generalized range-based for loops
 
-Range-based for loops no longer require that `begin()` and `end()` return objects of the same type. This change enables `end()` to return a sentinel as used by ranges in [range-v3](https://github.com/ericniebler/range-v3) and the completed-but-not-quite-published Ranges Technical Specification. For more information, see [Generalizing the Range-Based For Loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html).
+Range-based for loops no longer require that `begin()` and `end()` return objects of the same type. This change enables `end()` to return a sentinel as used by ranges in [range-v3](https://github.com/ericniebler/range-v3) and the completed-but-not-quite-published Ranges Technical Specification. For more information, see [Generalizing the Range-Based For Loop](https://wg21.link/p0184r0).
 
 ## <a name="improvements_153"></a> Conformance improvements in 15.3
 
@@ -1091,23 +1281,23 @@ New syntax to enable only a single namespace identifier in an attribute list. Fo
 
 ### Structured bindings
 
-It's now possible in a single declaration to store a value with individual names for its components, when the value is an array, a `std::tuple` or `std::pair`, or has all public non-static data members. For more information, see [Structured Bindings](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) and [Returning multiple values from a function](../cpp/functions-cpp.md#multi_val).
+It's now possible in a single declaration to store a value with individual names for its components, when the value is an array, a `std::tuple` or `std::pair`, or has all public non-static data members. For more information, see [Structured Bindings](https://wg21.link/p0144r0) and [Returning multiple values from a function](../cpp/functions-cpp.md#multi_val).
 
 ### Construction rules for **enum class** values
 
-There's now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf) and [Enumerations](../cpp/enumerations-cpp.md#no_enumerators).
+There's now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values](https://wg21.link/p0138r2) and [Enumerations](../cpp/enumerations-cpp.md#no_enumerators).
 
 ### Capturing `*this` by value
 
-The `*this` object in a lambda expression may now be captured by value. This change enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as \[=,\*this\]](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html).
+The `*this` object in a lambda expression may now be captured by value. This change enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as \[=,\*this\]](https://wg21.link/p0018r3).
 
 ### Removing `operator++` for **bool**
 
-`operator++` is no longer supported on **bool** types. For more information, see [Remove Deprecated operator++(bool)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html).
+`operator++` is no longer supported on **bool** types. For more information, see [Remove Deprecated operator++(bool)](https://wg21.link/p0002r1).
 
 ### Removing deprecated **register** keyword
 
-The **register** keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the register Keyword](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html).
+The **register** keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the register Keyword](https://wg21.link/p0001r1).
 
 ## <a name="improvements_155"></a> Conformance improvements in 15.5
 
@@ -1119,47 +1309,47 @@ In earlier versions of Visual Studio, the compiler always gave a **constexpr** v
 
 ### Removing dynamic exception specifications
 
-[P0003R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html) Dynamic exception specifications were deprecated in C++11. the feature is removed from C++17, but the (still) deprecated `throw()` specification is kept strictly as an alias for `noexcept(true)`. For more information, see [Dynamic exception specification removal and noexcept](#noexcept_removal).
+[P0003R5](https://wg21.link/p0003r5) Dynamic exception specifications were deprecated in C++11. the feature is removed from C++17, but the (still) deprecated `throw()` specification is kept strictly as an alias for `noexcept(true)`. For more information, see [Dynamic exception specification removal and noexcept](#noexcept_removal).
 
 ### `not_fn()`
 
-[P0005R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html) `not_fn` is a replacement of `not1` and `not2`.
+[P0005R4](https://wg21.link/p0005r4) `not_fn` is a replacement of `not1` and `not2`.
 
 ### Rewording `enable_shared_from_this`
 
-[P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html) `enable_shared_from_this` was added in C++11. The C++17 standard updates the specification to better handle certain corner cases. [14]
+[P0033R1](https://wg21.link/p0033r1) `enable_shared_from_this` was added in C++11. The C++17 standard updates the specification to better handle certain corner cases. [14]
 
 ### Splicing maps and sets
 
-[P0083R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf) This feature enables extraction of nodes from associative containers (that is, `map`, `set`, `unordered_map`, `unordered_set`) which can then be modified and inserted back into the same container or a different container that uses the same node type. (A common use case is to extract a node from a `std::map`, change the key, and reinsert.)
+[P0083R3](https://wg21.link/p0083r3) This feature enables extraction of nodes from associative containers (that is, `map`, `set`, `unordered_map`, `unordered_set`) which can then be modified and inserted back into the same container or a different container that uses the same node type. (A common use case is to extract a node from a `std::map`, change the key, and reinsert.)
 
 ### Deprecating vestigial library parts
 
-[P0174R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html) Several features of the C++ standard library have been superseded by newer features over the years, or else have been found not useful, or problematic. These features are officially deprecated in C++17.
+[P0174R2](https://wg21.link/p0174r2) Several features of the C++ standard library have been superseded by newer features over the years, or else have been found not useful, or problematic. These features are officially deprecated in C++17.
 
 ### Removing allocator support in `std::function`
 
-[P0302R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html) Prior to C++17, the class template `std::function` had several constructors that took an allocator argument. However, the use of allocators in this context was problematic, and the semantics were unclear. The problem contructors have been removed.
+[P0302R1](https://wg21.link/p0302r1) Prior to C++17, the class template `std::function` had several constructors that took an allocator argument. However, the use of allocators in this context was problematic, and the semantics were unclear. The problem contructors have been removed.
 
 ### Fixes for `not_fn()`
 
-[P0358R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html) New wording for `std::not_fn` provides support of propagation of value category when used in wrapper invocation.
+[P0358R1](https://wg21.link/p0358r1) New wording for `std::not_fn` provides support of propagation of value category when used in wrapper invocation.
 
 ### `shared_ptr<T[]>`, `shared_ptr<T[N]>`
 
-[P0414R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html) Merging `shared_ptr` changes from Library Fundamentals to C++17. [14]
+[P0414R2](https://wg21.link/p0414r2) Merging `shared_ptr` changes from Library Fundamentals to C++17. [14]
 
 ### Fixing `shared_ptr` for arrays
 
-[P0497R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html) Fixes to shared_ptr support for arrays. [14]
+[P0497R0](https://wg21.link/p0497r0) Fixes to shared_ptr support for arrays. [14]
 
 ### Clarifying `insert_return_type`
 
-[P0508R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html) The associative containers with unique keys, and the unordered containers with unique keys have a member function `insert` that returns a nested type `insert_return_type`. That return type is now defined as a specialization of a type that is parameterized on the Iterator and NodeType of the container.
+[P0508R0](https://wg21.link/p0508r0) The associative containers with unique keys, and the unordered containers with unique keys have a member function `insert` that returns a nested type `insert_return_type`. That return type is now defined as a specialization of a type that is parameterized on the Iterator and NodeType of the container.
 
 ### Inline variables for the standard library
 
-[P0607R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0607r0.html)
+[P0607R0](https://wg21.link/p0607r0)
 
 ### Annex D features deprecated
 
@@ -1177,17 +1367,17 @@ The standard library has been updated in response to C++17 compiler changes, inc
 
 ### C++17 Library Fundamentals V1
 
-[P0220R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) incorporates Library Fundamentals Technical Specification for C++17 into the standard. Covers updates to \<experimental/tuple>, \<experimental/optional>, \<experimental/functional>, \<experimental/any>, \<experimental/string_view>, \<experimental/memory>, \<experimental/memory_resource>, and \<experimental/algorithm>.
+[P0220R1](https://wg21.link/p0220r1) incorporates Library Fundamentals Technical Specification for C++17 into the standard. Covers updates to \<experimental/tuple>, \<experimental/optional>, \<experimental/functional>, \<experimental/any>, \<experimental/string_view>, \<experimental/memory>, \<experimental/memory_resource>, and \<experimental/algorithm>.
 
 ### C++17: Improving class template argument deduction for the standard library
 
-[P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html) Move `adopt_lock_t` to front of parameter list for `scoped_lock` to enable consistent use of `scoped_lock`. Allow `std::variant` constructor to participate in overload resolution in more cases, to enable copy assignment.
+[P0739R0](https://wg21.link/p0739r0) Move `adopt_lock_t` to front of parameter list for `scoped_lock` to enable consistent use of `scoped_lock`. Allow `std::variant` constructor to participate in overload resolution in more cases, to enable copy assignment.
 
 ## <a name="improvements_157"></a> Conformance improvements in 15.7
 
 ### C++17: Rewording inheriting constructors
 
-[P0136R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0136r1.html) specifies that a **using** declaration that names a constructor now makes the corresponding base class constructors visible to initializations of the derived class, rather than declaring additional derived class constructors. This rewording is a change from C++14. In Visual Studio 2017 version 15.7 and later, in **/std:c++17** mode, code that is valid in C++14 and uses inheriting constructors may not be valid, or may have different semantics.
+[P0136R1](https://wg21.link/p0136r1) specifies that a **using** declaration that names a constructor now makes the corresponding base class constructors visible to initializations of the derived class, rather than declaring additional derived class constructors. This rewording is a change from C++14. In Visual Studio 2017 version 15.7 and later, in **/std:c++17** mode, code that is valid in C++14 and uses inheriting constructors may not be valid, or may have different semantics.
 
 The following example shows C++14 behavior:
 
@@ -1231,7 +1421,7 @@ For more information, see [Constructors](../cpp/constructors-cpp.md#inheriting_c
 
 ### C++17: Extended aggregate initialization
 
-[P0017R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0017r1.html)
+[P0017R1](https://wg21.link/p0017r1)
 
 If the constructor of a base class is non-public, but accessible to a derived class, then under **/std:c++17** mode in Visual Studio 2017 version 15.7 you can no longer use empty braces to initialize an object of the derived type.
 The following example shows C++14 conformant behavior:
@@ -1271,7 +1461,7 @@ Derived d2 {}; // error C2248: 'Base::Base': cannot access
 
 ### C++17: Declaring non-type template parameters with auto
 
-[P0127R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0127r2.html)
+[P0127R2](https://wg21.link/p0127r2)
 
 In **/std:c++17** mode, the compiler can now deduce the type of a non-type template argument that is declared with **auto**:
 
@@ -1313,39 +1503,39 @@ void sample(A<0> *p)
 
 ### C++17: Elementary string conversions (partial)
 
-[P0067R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html) Low-level, locale-independent functions for conversions between integers and strings and between floating-point numbers and strings.
+[P0067R5](https://wg21.link/p0067r5) Low-level, locale-independent functions for conversions between integers and strings and between floating-point numbers and strings.
 
 ### C++20: Avoiding unnecessary decay (partial)
 
-[P0777R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers.  New type trait `remove_reference_t` replaces `decay_t` in some contexts. Support for `remove_cvref_t` is implemented in Visual Studio 2019.
+[P0777R1](https://wg21.link/p0777r1) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers.  New type trait `remove_reference_t` replaces `decay_t` in some contexts. Support for `remove_cvref_t` is implemented in Visual Studio 2019.
 
 ### C++17: Parallel algorithms
 
-[P0024R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html) The Parallelism TS is incorporated into the standard, with minor modifications.
+[P0024R2](https://wg21.link/p0024r2) The Parallelism TS is incorporated into the standard, with minor modifications.
 
 ### C++17: `hypot(x, y, z)`
 
-[P0030R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf) Adds three new overloads to `std::hypot`, for types **float**, **double**, and **long double**, each of which has three input parameters.
+[P0030R1](https://wg21.link/p0030r1) Adds three new overloads to `std::hypot`, for types **float**, **double**, and **long double**, each of which has three input parameters.
 
 ### C++17: \<filesystem>
 
-[P0218R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html) Adopts the File System TS into the standard with a few wording modifications.
+[P0218R1](https://wg21.link/p0218r1) Adopts the File System TS into the standard with a few wording modifications.
 
 ### C++17: Mathematical special functions
 
-[P0226R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) Adopts previous technical specifications for Mathematical Special Functions into the standard \<cmath> header.
+[P0226R1](https://wg21.link/p0220r1) Adopts previous technical specifications for Mathematical Special Functions into the standard \<cmath> header.
 
 ### C++17: Deduction guides for the standard library
 
-[P0433R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html) Updates to STL to take advantage of C++17 adoption of [P0091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html), which adds support for class template argument deduction.
+[P0433R2](https://wg21.link/p0433r2) Updates to STL to take advantage of C++17 adoption of [P0091R3](https://wg21.link/p0091r3), which adds support for class template argument deduction.
 
 ### C++17: Repairing elementary string conversions
 
-[P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header \<charconv> and make other improvements, including changing error handling to use `std::errc` instead of `std::error_code`.
+[P0682R1](https://wg21.link/p0682r1) Move the new elementary string conversion functions from P0067R5 into a new header \<charconv> and make other improvements, including changing error handling to use `std::errc` instead of `std::error_code`.
 
 ### C++17: **constexpr** for `char_traits` (partial)
 
-[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
+[P0426R1](https://wg21.link/p0426r1) Changes to `std::traits_type` member functions `length`, `compare`, and `find` to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
 ## <a name="improvements_159"></a> Conformance improvements in 15.9
 
@@ -2539,7 +2729,7 @@ int main()
 
 ### C++17: Default argument in the primary class template
 
-This behavior change is a precondition for [Template argument deduction for class templates - P0091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html).
+This behavior change is a precondition for [Template argument deduction for class templates - P0091R3](https://wg21.link/p0091r3).
 
 Previously, the compiler ignored the default argument in the primary class template:
 
@@ -2567,7 +2757,7 @@ void S<T>::f(int) {} // Default argument is used
 
 ### Dependent name resolution
 
-This behavior change is a precondition for [Template argument deduction for class templates - P0091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html).
+This behavior change is a precondition for [Template argument deduction for class templates - P0091R3](https://wg21.link/p0091r3).
 
 In the following example, the compiler in Visual Studio 15.6 and earlier resolves `D::type` to `B<T>::type` in the primary class template.
 
@@ -2675,7 +2865,7 @@ int main() {
 
 The compiler changes in Visual Studio 2017 version 15.8 all fall under the category of bug fixes and behavior changes, and are listed below:
 
-###**typename** on unqualified identifiers
+### **typename** on unqualified identifiers
 
 In [/permissive-](../build/reference/permissive-standards-conformance.md) mode,  spurious**typename** keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 *'T': 'typename' keyword must be followed by a qualified name*:
 
@@ -2841,7 +3031,7 @@ int main()
 
 In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the compiler now requires the **template** keyword to precede a template-name when it comes after a dependent nested-name-specifier.
 
-The following code in [/permissive-](../build/reference/permissive-standards-conformance.md) mode now raises C7510: *'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled*:
+The following code in [/permissive-](../build/reference/permissive-standards-conformance.md) mode now raises C7510: *'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X\<T>' being compiled*:
 
 ```cpp
 template<typename T> struct Base
