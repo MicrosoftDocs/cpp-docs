@@ -38,7 +38,7 @@ An object of type `hash_map`.
 
 The comparison between hash_map objects is based on a pairwise comparison of their elements. Two hash_maps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.
 
-Members of the [<hash_map>](hash-map.md) and [<hash_set>](hash-set.md) header files in the [ stdext Namespace](stdext-namespace.md).
+Members of the [<hash_map>](hash-map.md) and [<hash_set>](hash-set.md) header files in the [stdext Namespace](stdext-namespace.md).
 
 ### Example
 
