@@ -15,7 +15,7 @@ Opens an OLE DB table.
 [ db_table(db_table, name, source_name, hresult) ]
 ```
 
-#### Parameters
+### Parameters
 
 *db_table*<br/>
 A string specifying the name of a database table (such as "Products").
@@ -52,7 +52,7 @@ class CProducts {
 };
 ```
 
-For an example of this attribute used in an application, see the samples [AtlAgent](https://github.com/Microsoft/VCSamples) and [MultiRead](https://github.com/Microsoft/VCSamples).
+For an example of this attribute used in an application, see [MultiRead](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
 ## Requirements
 

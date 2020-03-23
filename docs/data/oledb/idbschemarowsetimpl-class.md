@@ -254,4 +254,4 @@ The implementation of this function requires the user to have a schema map in th
 [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)<br/>
 [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md)<br/>
 [SCHEMA_ENTRY](../../data/oledb/schema-entry.md)<br/>
-[UpdatePV](https://github.com/Microsoft/VCSamples)
+[UpdatePV](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider)

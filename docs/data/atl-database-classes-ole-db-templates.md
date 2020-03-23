@@ -28,4 +28,4 @@ For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.
 [Creating an OLE DB Provider](../data/oledb/creating-an-ole-db-provider.md)<br/>
 [OLE DB Consumer Templates Reference](../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [OLE DB Provider Templates Reference](../data/oledb/ole-db-provider-templates-reference.md)<br/>
-[OLE DB Templates Samples](https://github.com/Microsoft/VCSamples)
+[OLE DB Templates Samples](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB)

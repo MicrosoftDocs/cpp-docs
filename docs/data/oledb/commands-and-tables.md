@@ -19,7 +19,7 @@ The [ATL OLE DB Consumer Wizard](../../atl/reference/atl-ole-db-consumer-wizard.
 
 - For data sources that support commands, you can use the `CCommand` class instead. To execute a command, call [Open](../../data/oledb/ccommand-open.md) on this class. As an alternative, you can call `Prepare` to prepare a command that you want to execute more than once.
 
-   `CCommand` has three template arguments: an accessor type, a rowset type, and a result type (`CNoMultipleResults`, by default, or `CMultipleResults`). If you specify `CMultipleResults`, the `CCommand` class supports the `IMultipleResults` interface and handles multiple rowsets. The [DBVIEWER](https://github.com/Microsoft/VCSamples) sample shows how to handle the multiple results.
+   `CCommand` has three template arguments: an accessor type, a rowset type, and a result type (`CNoMultipleResults`, by default, or `CMultipleResults`). If you specify `CMultipleResults`, the `CCommand` class supports the `IMultipleResults` interface and handles multiple rowsets. The [DBVIEWER](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) sample shows how to handle the multiple results.
 
 ## See also
 

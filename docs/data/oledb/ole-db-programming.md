@@ -19,7 +19,7 @@ Also, you can use attributes to implement the OLE DB consumer templates.
 |OLE DB templates classes and macros|[OLE DB Templates Reference](../../data/oledb/ole-db-templates.md) (Visual C++)|
 |OLE DB consumer attributes|[OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)|
 |OLE DB interfaces|[OLE DB programmer's reference](/sql/connect/oledb/oledb-driver-for-sql-server) (in the Windows SDK)|
-|OLE DB templates samples|[OLE DB Templates Samples](https://github.com/Microsoft/VCSamples)|
+|OLE DB templates samples|[OLE DB Templates Samples](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB)|
 |Data access programming overview (Visual C++)|[Data Access Programming](../../data/data-access-programming-mfc-atl.md)|
 |ODBC conceptual topics|[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|
 

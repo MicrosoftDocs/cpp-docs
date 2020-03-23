@@ -34,7 +34,7 @@ To do these things with the OLE DB Consumer Templates, use the `CManualAccessor`
 
 1. Call `GetNextResult` to determine if more rowsets are available. Repeat steps 2 through 5.
 
-For an example of a manual accessor, see `CDBListView::CallProcedure` in the [DBVIEWER](https://github.com/Microsoft/VCSamples) sample.
+For an example of a manual accessor, see `CDBListView::CallProcedure` in the [DBVIEWER](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) sample.
 
 ## See also
 
