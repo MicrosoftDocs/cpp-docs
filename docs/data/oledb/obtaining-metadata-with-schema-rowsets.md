@@ -75,7 +75,7 @@ For the reference of the schema rowset, typedef classes provided in the OLE DB T
 
 For more information about OLE DB schema rowsets, including restriction columns, see [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921(v=vs.85)) in the **OLE DB Programmer's Reference**.
 
-For more complex examples of how to use schema rowset classes, see the [CatDB](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) and [DBViewer](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) samples.
+For more complex examples of how to use schema rowset classes, see the [CatDB](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) and [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) samples.
 
 For information about provider support for schema rowsets, see [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md).
 

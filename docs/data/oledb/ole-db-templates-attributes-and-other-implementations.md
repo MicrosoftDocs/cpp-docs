@@ -26,7 +26,7 @@ For more information, you can:
 
 - See the list of [OLE DB consumer classes](../../data/oledb/ole-db-consumer-templates-reference.md) or [OLE DB provider classes](../../data/oledb/ole-db-provider-templates-reference.md).
 
-- See the list of [OLE DB templates samples](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB).
+- See the list of [OLE DB templates samples](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB).
 
 - See [OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming) (in the Windows SDK).
 

@@ -52,7 +52,7 @@ class CProducts {
 };
 ```
 
-For an example of this attribute used in an application, see [MultiRead](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
+For an example of this attribute used in an application, see [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
 ## Requirements
 

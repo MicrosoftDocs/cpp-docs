@@ -58,7 +58,7 @@ void CWebView::OnInitialUpdate()
 
 ## See also
 
-[MFC Sample MFCIE](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/MFC/internet)<br/>
+[MFC Sample MFCIE](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/internet)<br/>
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
 [Set compiler and build properties](../../build/working-with-project-properties.md)<br/>
 [Property Pages](../../build/reference/property-pages-visual-cpp.md)<br/>

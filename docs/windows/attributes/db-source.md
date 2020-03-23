@@ -38,7 +38,7 @@ When you use **db_source** in a method, the injected code will be executed withi
 
 When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.
 
-For an example of this attribute used in an application, see [MultiRead](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
+For an example of this attribute used in an application, see [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
 ## Example
 

@@ -20,7 +20,7 @@ The following table lists the types of accessors provided in the consumer templa
 |`CDynamicAccessor`|Automatic.|No.|Useful if you don't know the type of data in a rowset.|
 |`CDynamicParameterAccessor`|Automatic, but can be [overridden](../../data/oledb/overriding-a-dynamic-accessor.md).|Yes, if the provider supports `ICommandWithParameters`. Parameters bound automatically.|Slower than `CDynamicAccessor` but useful for calling generic stored procedures.|
 |`CDynamicStringAccessor[A,W]`|Automatic.|No.|Retrieves data accessed from the data store as string data.|
-|`CManualAccessor`|Manual using `AddBindEntry`.|Manually using `AddParameterEntry`.|Fast; parameters and columns bound only once. You determine the type of data to use. (See [DBVIEWER](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) sample for an example.) Requires more code than `CDynamicAccessor` or `CAccessor`. It's more like calling OLE DB directly.|
+|`CManualAccessor`|Manual using `AddBindEntry`.|Manually using `AddParameterEntry`.|Fast; parameters and columns bound only once. You determine the type of data to use. (See [DBVIEWER](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) sample for an example.) Requires more code than `CDynamicAccessor` or `CAccessor`. It's more like calling OLE DB directly.|
 |`CXMLAccessor`|Automatic.|No.|Retrieves data accessed from the data store as string data and formats it as XML-tagged data.|
 
 ## See also
