@@ -294,6 +294,7 @@ The macro ENSURE_ARG acts like the ENSURE macro.
 ENSURE_VALID calls the ASSERT_VALID macro (which has an effect only in Debug builds). In addition, ENSURE_VALID throws an exception if the pointer is NULL. The NULL test is performed in both Debug and Release configurations.
 
 If any of these tests fails, an alert message is displayed in the same manner as ASSERT. The macro throws an invalid argument exception if needed.
+
 ### Requirements
 
 **Header:** afx.h

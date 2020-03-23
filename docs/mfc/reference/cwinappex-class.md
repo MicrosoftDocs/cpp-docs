@@ -10,6 +10,7 @@ ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
 `CWinAppEx` handles the application state, saves the state to the registry, loads the state from the registry, initializes application managers, and provides links to those same application managers.
 
    For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```

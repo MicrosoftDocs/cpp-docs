@@ -5,6 +5,7 @@ helpviewer_keywords: ["attributes [C++/CLI], database", "attributes [C++/CLI], d
 ms.assetid: 017b591f-8f9a-42b4-84d5-cc42a21ab0cc
 ---
 # OLE DB Consumer Attributes
+
 The OLE DB consumer attributes inject code, based on the [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-reference.md), to create a working OLE DB consumer that performs tasks such as opening tables, executing commands, and accessing data.
 
 |Attribute|Description|

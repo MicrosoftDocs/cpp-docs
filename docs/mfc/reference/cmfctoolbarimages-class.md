@@ -9,6 +9,7 @@ ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
 
 The images on a toolbar. The `CMFCToolBarImages` class manages toolbar images loaded from application resources or from files.
    For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```

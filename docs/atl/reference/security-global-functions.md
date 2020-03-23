@@ -97,6 +97,7 @@ Returns true on success, false on failure.
 ### Remarks
 
 In debug builds, an assertion error will occur if *hObject* is invalid, or if *dwInheritanceFlowControl* is not one of the three permitted values.
+
 ### Requirements
 
 **Header:** atlsecurity.h

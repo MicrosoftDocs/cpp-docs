@@ -137,6 +137,7 @@ tiled_extent pad() const;
 ### Return Value
 
 The new `tiled_extent` object, by value.
+
 ## <a name="truncate"> </a>  truncate
 
 Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.
@@ -202,6 +203,7 @@ static const int tile_dim2 = _Dim2;
 ```
 
 ## <a name="tile_extent"> </a>  tile_extent
+
   Gets an `extent` object that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 
 ### Syntax

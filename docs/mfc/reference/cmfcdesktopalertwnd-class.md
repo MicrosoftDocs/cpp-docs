@@ -10,6 +10,7 @@ ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
 The `CMFCDesktopAlertWnd` class implements the functionality of a modeless dialog box which appears on the screen to inform the user about an event.
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```

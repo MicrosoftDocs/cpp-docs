@@ -65,6 +65,7 @@ String^ FullName();
 ### Return Value
 
 The name of the type.
+
 ### Example
 
 ```

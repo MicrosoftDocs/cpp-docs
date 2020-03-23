@@ -189,6 +189,7 @@ See the example for [CATCH](#catch).
 ### Requirements
 
   **Header** afx.h
+
 ##  <a name="and_catch_all"></a>  AND_CATCH_ALL
 
 Defines a block of code for catching additional exception types thrown in a preceding **TRY** block.

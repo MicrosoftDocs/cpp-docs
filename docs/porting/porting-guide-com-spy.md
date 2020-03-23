@@ -12,6 +12,7 @@ This topic is the second in a series of articles that demonstrates the process o
 COMSpy is a program that monitors and logs the activity of serviced components on a machine. Serviced components are COM+ components that run on a system and can be used by computers on the same network. They're managed by the Component Services functionality in the Windows Control Panel.
 
 ### Step 1. Converting the project file.
+
 The project file converts easily and produces a migration report. There are a few entries in the report that let us know about issues we might need to deal with. Here's one issue that is reported (note that throughout this topic, error messages are sometimes shortened for readability, for example to remove the full paths):
 
 ```Output
@@ -21,6 +22,7 @@ ComSpyAudit\ComSpyAudit.vcproj: MSB8012: $(TargetPath) ('C:\Users\UserName\Deskt
 One of the frequent problems in upgrading projects is that the **Linker OutputFile** setting in the project properties dialog box might need to be reviewed. For projects prior to Visual Studio 2010, the OutputFile is one setting that the automatic conversion wizard has trouble with, if it's set to a non-standard value. In this case, the paths for the output files were set to a non-standard folder, XP32_DEBUG. To find out more about this error, we consulted a [blog post](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/) related to the Visual Studio 2010 project upgrade, which was the upgrade that involved the change from vcbuild to msbuild, a significant change. According to this information, the default value for the **Output File** setting when you create a new project is `$(OutDir)$(TargetName)$(TargetExt)`, but this isn't set during conversion since it's not possible for converted projects to verify that everything is correct. However, let's try putting that in for OutputFile and see if it works.  It does, so we can move on. If there is no particular reason for using a nonstandard output folder, we recommend using the standard location. In this case, we chose to leave the output location as the non-standard during the porting and upgrading process; `$(OutDir)` resolves to the XP32_DEBUG folder in the **Debug** configuration and the ReleaseU folder for the **Release** configuration.
 
 ### Step 2. Getting it to build
+
 Building the ported project, a number of errors and warnings occur.
 
 `ComSpyCtl` doesn't compile though due to this compiler error:
@@ -61,6 +63,7 @@ error MSB3073: The command "regsvr32 /s /c "C:\Users\username\Desktop\spy\spy\Co
 We don't need this post-build registration command anymore. Instead, we simply remove the custom build command, and specify in the **Linker** settings to register the output.
 
 ### Dealing with warnings
+
 The project produces the following linker warning.
 
 ```Output
@@ -116,6 +119,7 @@ for (i=0;i<static_cast<UINT>(lCount);i++)
 Those warnings are cases where a variable was declared in a function that has a parameter with the same name, leading to potentially confusing code. We fixed that by changing the names of the local variables.
 
 ### Step 3. Testing and debugging
+
 We tested the app first by running through the various menus and commands, and then closing the application. The only issue noted was a debug assertion upon closing down the app. The problem appeared in the destructor for `CWindowImpl`, a base class of the `CSpyCon` object, the application's main COM component. The assertion failure occurred in the following code in atlwin.h.
 
 ```cpp
