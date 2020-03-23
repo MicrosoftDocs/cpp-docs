@@ -11,10 +11,10 @@ The class template `basic_string_view<charT>` was added in C++17 to serve as a s
 
 The standard library defines several specializations based on the type of the elements:
 
--  `string_view`
--  `wstring_view`
--  `u16string_view`
--  `u32string_view`
+- `string_view`
+- `wstring_view`
+- `u16string_view`
+- `u32string_view`
 
 In this document, the term "string_view" refers generally to any of these typedefs.
 
