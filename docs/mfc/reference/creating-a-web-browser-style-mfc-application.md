@@ -9,7 +9,7 @@ ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
 
 A Web browser-style application can access information from the Internet (such as HTML or active documents) or an intranet, as well as folders in the local file system and on a network. By deriving the application's view class from [CHtmlView](../../mfc/reference/chtmlview-class.md), effectively you make the application a Web browser by providing the view with the WebBrowser control.
 
-### To create a Web browser application based on the MFC document/view architecture
+## To create a Web browser application based on the MFC document/view architecture
 
 1. Follow the directions in [Creating an MFC Application](../../mfc/reference/creating-an-mfc-application.md).
 
@@ -24,7 +24,7 @@ A Web browser-style application can access information from the Internet (such a
 The WebBrowser control supports Web browsing through hyperlinks and Uniform Resource Locator (URL) navigation. The control maintains a history list that allows the user to browse forward and backward through previously browsed sites, folders, and documents. The control directly handles the navigation, hyperlinks, history lists, favorites, and security. Applications can use the WebBrowser control as an active document container to host active documents as well. Thus, richly formatted documents such as Microsoft Excel spreadsheets or Word documents can be opened and edited in place from within the WebBrowser control. The WebBrowser control is also an ActiveX control container that can host any ActiveX control.
 
 > [!NOTE]
->  The WebBrowser ActiveX control (and therefore `CHtmlView`) is available only to applications running under Windows versions in which Internet Explorer 4.0 or later has been installed.
+> The WebBrowser ActiveX control (and therefore `CHtmlView`) is available only to applications running under Windows versions in which Internet Explorer 4.0 or later has been installed.
 
 Because `CHtmlView` simply implements the Microsoft Web browser control, its support for printing is not like other [CView](../../mfc/reference/cview-class.md)-derived classes. Rather, the WebBrowser control implements the printer user interface and printing. As a result, `CHtmlView` does not support print preview, and the framework does not provide for other printing support functions: for example, [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting), [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting), and [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting), which are available in other MFC applications.
 
@@ -58,7 +58,7 @@ void CWebView::OnInitialUpdate()
 
 ## See also
 
-[MFC Sample MFCIE](https://github.com/Microsoft/VCSamples)<br/>
+[MFC Sample MFCIE](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/internet)<br/>
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
 [Set compiler and build properties](../../build/working-with-project-properties.md)<br/>
 [Property Pages](../../build/reference/property-pages-visual-cpp.md)<br/>

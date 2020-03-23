@@ -49,7 +49,7 @@ The following figure, divided into parts a, b, and c, shows the three user-inter
 ![Multiple&#45;view user interfaces](../mfc/media/vc37a71.gif "Multiple&#45;view user interfaces") <br/>
 Multiple-View User Interfaces
 
-The framework provides these models by implementing the New Window command and by providing class [CSplitterWnd](../mfc/reference/csplitterwnd-class.md), as discussed in [Splitter Windows](#_core_splitter_windows). You can implement other models using these as your starting point. For sample programs that illustrate different configurations of views, frame windows, and splitters, see [MFC Samples](../overview/visual-cpp-samples.md).
+The framework provides these models by implementing the New Window command and by providing class [CSplitterWnd](../mfc/reference/csplitterwnd-class.md), as discussed in [Splitter Windows](#_core_splitter_windows). You can implement other models using these as your starting point. For sample programs that illustrate different configurations of views, frame windows, and splitters, see [MFC Samples](../overview/visual-cpp-samples.md#mfc-samples).
 
 For more information about `UpdateAllViews`, see class [CView](../mfc/reference/cview-class.md) in the *MFC Reference* and the [Scribble sample](../overview/visual-cpp-samples.md).
 
@@ -65,7 +65,7 @@ Dynamic splitter windows, with views of the same class, allow the user to split 
 
 Static splitter windows, with views of different classes, start with the window split into multiple panes, each with a different purpose. For example, in the Visual C++ bitmap editor, the image window shows two panes side by side. The left-hand pane displays a life-sized image of the bitmap. The right-hand pane displays a zoomed or magnified image of the same bitmap. The panes are separated by a "splitter bar" that the user can drag to change the relative sizes of the panes. A static splitter window is shown in part c of the figure Multiple-View User Interfaces.
 
-For more information, see class [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) in the *MFC Reference* and [MFC Samples](../overview/visual-cpp-samples.md).
+For more information, see class [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) in the *MFC Reference* and [MFC Samples](../overview/visual-cpp-samples.md#mfc-samples).
 
 ## See also
 
