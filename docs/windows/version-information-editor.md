@@ -27,9 +27,9 @@ Select the item once to choose it, then again to begin editing it. Make changes 
 
 When editing the `FILEFLAGS` key in the **Version Information Editor**, notice you can't set the **Debug**, **Private Build**, or **Special Build** properties in the **Properties** window for .rc files:
 
-   - The **Version Information Editor** sets the **Debug** property with a `#ifdef` in the resource script, based on the `_DEBUG` build flag.
+- The **Version Information Editor** sets the **Debug** property with a `#ifdef` in the resource script, based on the `_DEBUG` build flag.
 
-  - If the `Private Build` key has a **Value** set in the **Version Information** table, the corresponding **Private Build** property in the **Properties** window for the `FILEFLAGS` key will be **True**. If **Value** is empty, the property will be **False**. Likewise, the **Special Build** key in the **Version Information** table is tied to the **Special Build** property for the `FILEFLAGS` key.
+- If the `Private Build` key has a **Value** set in the **Version Information** table, the corresponding **Private Build** property in the **Properties** window for the `FILEFLAGS` key will be **True**. If **Value** is empty, the property will be **False**. Likewise, the **Special Build** key in the **Version Information** table is tied to the **Special Build** property for the `FILEFLAGS` key.
 
 You can sort the information sequence of the string block by selecting either the **Key** or the **Value** column headings. These headings automatically rearrange the information into the selected sequence.
 

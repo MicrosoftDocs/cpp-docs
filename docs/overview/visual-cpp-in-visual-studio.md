@@ -20,7 +20,7 @@ Visual Studio 2015, 2017 and 2019 can be installed side-by-side. You can use Vis
 ## What's New and Conformance History
 
 [What's New for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-Find out what’s new in Visual Studio.
+Find out what's new in Visual Studio.
 
 [What's New for C++ in Visual Studio 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 Find out what was new in C++ for each version of Visual Studio from 2003 through 2015.
@@ -59,7 +59,7 @@ Learn about C++, get an overview of Modern C++, and find links to books, article
 [Learn Visual C++](../build/vscpp-step-1-create.md)<br/>
 Start learning C++.
 
-[Visual C++ Samples](visual-cpp-samples.md)<br/>
+[Visual Studio C++ Samples](visual-cpp-samples.md)<br/>
 Information about samples.
 
 ## C++ development tools
