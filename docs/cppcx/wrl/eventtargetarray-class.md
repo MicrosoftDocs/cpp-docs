@@ -135,14 +135,14 @@ EventTargetArray(
 *hr*<br/>
 After this constructor operations, parameter *hr* indicates whether allocation of the array succeeded or failed. The following list shows the possible values for *hr*.
 
-+   S_OK<br/>
-    The operation succeeded.
+- S_OK<br/>
+  The operation succeeded.
 
-+   E_OUTOFMEMORY<br/>
-    Memory couldn't be allocated for the array.
+- E_OUTOFMEMORY<br/>
+  Memory couldn't be allocated for the array.
 
-+   S_FALSE<br/>
-    Parameter *items* is less than or equal to zero.
+- S_FALSE<br/>
+  Parameter *items* is less than or equal to zero.
 
 *items*<br/>
 The number of array elements to allocate.
