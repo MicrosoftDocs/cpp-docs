@@ -69,7 +69,7 @@ int main( )
 7
 ```
 
-## <a name="streamsize"></a>  streamsize
+## <a name="streamsize"></a> streamsize
 
 Denotes the size of the stream.
 
@@ -105,7 +105,7 @@ int main( )
 }
 ```
 
-## <a name="wios"></a>  wios
+## <a name="wios"></a> wios
 
 Supports the wios class from the old iostream library.
 

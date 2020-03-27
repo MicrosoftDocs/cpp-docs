@@ -23,7 +23,7 @@ These macros define event sink maps and entries.
 
 **Header:** atlcom.h
 
-##  <a name="begin_sink_map"></a>  BEGIN_SINK_MAP
+## <a name="begin_sink_map"></a> BEGIN_SINK_MAP
 
 Declares the beginning of the event sink map for the composite control.
 
@@ -44,7 +44,7 @@ BEGIN_SINK_MAP(_class)
 
 CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.
 
-##  <a name="end_sink_map"></a>  END_SINK_MAP
+## <a name="end_sink_map"></a> END_SINK_MAP
 
 Declares the end of the event sink map for the composite control.
 
@@ -60,7 +60,7 @@ END_SINK_MAP()
 
 CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.
 
-##  <a name="sink_entry"></a>  SINK_ENTRY
+## <a name="sink_entry"></a> SINK_ENTRY
 
 Declares the handler function (*fn*) for the specified event (*dispid*), of the control identified by *id*.
 
@@ -87,7 +87,7 @@ SINK_ENTRY( id, dispid, fn )
 
 CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.
 
-##  <a name="sink_entry_ex"></a>  SINK_ENTRY_EX and SINK_ENTRY_EX_P
+## <a name="sink_entry_ex"></a> SINK_ENTRY_EX and SINK_ENTRY_EX_P
 
 Declares the handler function (*fn*) for the specified event (*dispid*), of the dispatch interface (*iid*), for the control identified by *id*.
 
@@ -121,7 +121,7 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
 
 CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.
 
-##  <a name="sink_entry_info"></a>  SINK_ENTRY_INFO and SINK_ENTRY_INFO_P
+## <a name="sink_entry_info"></a> SINK_ENTRY_INFO and SINK_ENTRY_INFO_P
 
 Use the SINK_ENTRY_INFO macro within an event sink map to provide the information needed by [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) to route events to the relevant handler function.
 

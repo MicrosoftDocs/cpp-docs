@@ -16,7 +16,7 @@ Generating .sbr and .bsc files takes time, so Visual Studio turns these function
 Use [/FR](fr-fr-create-dot-sbr-file.md) or [/Fr](fr-fr-create-dot-sbr-file.md) to tell the compiler to create .sbr files. To create .bsc files, you can call [BSCMAKE](bscmake-command-line.md) from the command line. Using BSCMAKE from the command line gives you more precise control over the manipulation of browse information files. See [BSCMAKE Reference](bscmake-reference.md) for more information.
 
 > [!TIP]
->  You can turn on .sbr file generation but leave .bsc file generation turned off. This provides fast builds but also enables you to create a fresh .bsc file quickly by turning on .bsc file generation and building the project.
+> You can turn on .sbr file generation but leave .bsc file generation turned off. This provides fast builds but also enables you to create a fresh .bsc file quickly by turning on .bsc file generation and building the project.
 
 You can reduce the time, memory, and disk space required to build a .bsc file by reducing the size of the .bsc file.
 

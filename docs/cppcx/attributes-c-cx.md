@@ -19,19 +19,19 @@ You can also define custom attributes. Custom attributes must conform to these W
 
 - A field may be one of these types:
 
-   - int32 (int)
+  - int32 (int)
 
-   - uint32 (unsigned int)
+  - uint32 (unsigned int)
 
-   - bool
+  - bool
 
-   - Platform::String^
+  - Platform::String^
 
-   - Windows::Foundation::HResult
+  - Windows::Foundation::HResult
 
-   - Platform::Type^
+  - Platform::Type^
 
-   - public enum class (includes user-defined enums)
+  - public enum class (includes user-defined enums)
 
 The next example shows how to define a custom attribute and then initialize it when you use it.
 

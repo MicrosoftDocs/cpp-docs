@@ -41,7 +41,7 @@ Name                                              | Description
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="close"></a>HANDLETraits::Close
+## <a name="close"></a> HANDLETraits::Close
 
 Closes the specified handle.
 
@@ -60,7 +60,7 @@ The handle to close.
 
 **true** if handle *h* closed successfully; otherwise, **false**.
 
-## <a name="getinvalidvalue"></a>HANDLETraits::GetInvalidValue
+## <a name="getinvalidvalue"></a> HANDLETraits::GetInvalidValue
 
 Represents an invalid handle.
 

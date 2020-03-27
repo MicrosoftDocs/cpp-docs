@@ -10,7 +10,7 @@ ms.assetid: a2e0feb4-bc59-4adf-aab2-105457bbdbb4
 This class implements `IUnknown` and provides methods that enable a windowless control to receive window messages and to participate in drag-and-drop operations.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -55,7 +55,7 @@ The [IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) i
 
 **Header:** atlctl.h
 
-##  <a name="contextsensitivehelp"></a>  IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp
+## <a name="contextsensitivehelp"></a> IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp
 
 Returns E_NOTIMPL.
 
@@ -67,7 +67,7 @@ HRESULT ContextSensitiveHelp(BOOL fEnterMode);
 
 See [IOleWindow::ContextSensitiveHelp](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) in the Windows SDK.
 
-##  <a name="getdroptarget"></a>  IOleInPlaceObjectWindowlessImpl::GetDropTarget
+## <a name="getdroptarget"></a> IOleInPlaceObjectWindowlessImpl::GetDropTarget
 
 Returns E_NOTIMPL.
 
@@ -79,7 +79,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget);
 
 See [IOleInPlaceObjectWindowless::GetDropTarget](/windows/win32/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-getdroptarget) in the Windows SDK.
 
-##  <a name="getwindow"></a>  IOleInPlaceObjectWindowlessImpl::GetWindow
+## <a name="getwindow"></a> IOleInPlaceObjectWindowlessImpl::GetWindow
 
 The container calls this function to get the window handle of the control.
 
@@ -93,7 +93,7 @@ Some containers will not work with a control that has been windowless, even if i
 
 See [IOleWindow::GetWindow](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) in the Windows SDK.
 
-##  <a name="inplacedeactivate"></a>  IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate
+## <a name="inplacedeactivate"></a> IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate
 
 Called by the container to deactivate an in-place active control.
 
@@ -107,7 +107,7 @@ This method performs a full or partial deactivation depending on the state of th
 
 See [IOleInPlaceObject::InPlaceDeactivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-inplacedeactivate) in the Windows SDK.
 
-##  <a name="onwindowmessage"></a>  IOleInPlaceObjectWindowlessImpl::OnWindowMessage
+## <a name="onwindowmessage"></a> IOleInPlaceObjectWindowlessImpl::OnWindowMessage
 
 Dispatches a message from a container to a windowless control that is in-place active.
 
@@ -123,7 +123,7 @@ HRESULT OnWindowMessage(
 
 See [IOleInPlaceObjectWindowless::OnWindowMessage](/windows/win32/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-onwindowmessage) in the Windows SDK.
 
-##  <a name="reactivateandundo"></a>  IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo
+## <a name="reactivateandundo"></a> IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo
 
 Returns E_NOTIMPL.
 
@@ -135,7 +135,7 @@ HRESULT ReactivateAndUndo();
 
 See [IOleInPlaceObject::ReactivateAndUndo](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-reactivateandundo) in the Windows SDK.
 
-##  <a name="setobjectrects"></a>  IOleInPlaceObjectWindowlessImpl::SetObjectRects
+## <a name="setobjectrects"></a> IOleInPlaceObjectWindowlessImpl::SetObjectRects
 
 Called by the container to inform the control that its size and/or position has changed.
 
@@ -149,7 +149,7 @@ Updates the control's `m_rcPos` data member and the control display. Only the pa
 
 See [IOleInPlaceObject::SetObjectRects](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-setobjectrects) in the Windows SDK.
 
-##  <a name="uideactivate"></a>  IOleInPlaceObjectWindowlessImpl::UIDeactivate
+## <a name="uideactivate"></a> IOleInPlaceObjectWindowlessImpl::UIDeactivate
 
 Deactivates and removes the control's user interface that supports in-place activation.
 

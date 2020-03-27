@@ -14,7 +14,7 @@ ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
 Acquires a multi-thread lock.
 
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+> This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
 
 ## Syntax
 

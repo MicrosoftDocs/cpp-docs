@@ -44,7 +44,7 @@ This topic contains the following procedures:
 
 - [Porting a C++ Library to a Windows Runtime Component](#BK_WinRTComponent)
 
-##  <a name="BK_Win32DLL"></a> Using a Win32 DLL in a UWP App
+## <a name="BK_Win32DLL"></a> Using a Win32 DLL in a UWP App
 
 For better security and reliability, Universal Windows Apps run in a restricted runtime environment, so you can't just use any native DLL the way you would in a classic Windows desktop application. If you have source code for a DLL, you can port the code so that it runs on the UWP. You start by changing a few project settings and project file metadata to identify the project as a UWP project. You need to compile the library code using the `/ZW` option, which enables C++/CX. Certain API calls are not allowed in UWP apps due to stricter controls associated with that environment. See [Win32 and COM APIs for UWP apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps).
 
@@ -177,7 +177,7 @@ The following procedure applies to the case where you have a native DLL that exp
     }
     ```
 
-##  <a name="BK_StaticLib"></a> Using a native C++ static library in a UWP App
+## <a name="BK_StaticLib"></a> Using a native C++ static library in a UWP App
 
 You can use a native C++ static library in a UWP project, but there are some restrictions and limitations to be aware of. Start by reading about [static libraries in C++/CX](../cppcx/static-libraries-c-cx.md). You can access the native code in your static library from your UWP app, but it's not recommended to create public ref types in such a static library. If you compile a static library with the `/ZW` option, the librarian (actually the linker in disguise) warns:
 
@@ -197,7 +197,7 @@ However, you can use a static library in a UWP without recompiling it with `/ZW`
 
    Do not add a reference in the **References** node in **Solution Explorer**. That mechanism only works for Windows Runtime Components.
 
-##  <a name="BK_WinRTComponent"></a> Porting a C++ Library to a Windows Runtime Component
+## <a name="BK_WinRTComponent"></a> Porting a C++ Library to a Windows Runtime Component
 
 If you want to consume native APIs in a static library from a UWP app, and you have the source code for the native library, you can port the code to a Windows Runtime Component. It won't be a static library anymore, it will be a DLL. You can use it in any C++ UWP app, but unlike the case of static library, you can add ref types and other C++/CX constructs which are available to clients in any UWP app code, regardless of language. Therefore, you can access these types from C#, Visual Basic, or JavaScript.  The basic procedure is to create a Windows Runtime Component project, copy the code for your static library into it, and address any errors that arise from moving the code from a standard C++ compilation to a `/ZW` compilation.
 

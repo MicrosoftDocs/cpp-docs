@@ -43,7 +43,7 @@ The following example shows how `CMFCTabToolTipInfo` is used in the [MDITabsDemo
 
 **Header:** afxbasetabctrl.h
 
-##  <a name="m_ntabindex"></a>  CMFCTabToolTipInfo::m_nTabIndex
+## <a name="m_ntabindex"></a> CMFCTabToolTipInfo::m_nTabIndex
 
 Specifies the index of the tab control.
 
@@ -61,7 +61,7 @@ The following example shows how `m_nTabIndex` is used in the [MDITabsDemo Sample
 
 [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]
 
-##  <a name="m_ptabwnd"></a>  CMFCTabToolTipInfo::m_pTabWnd
+## <a name="m_ptabwnd"></a> CMFCTabToolTipInfo::m_pTabWnd
 
 A pointer to the tab control.
 
@@ -75,7 +75,7 @@ The following example shows how `m_pTabWnd` is used in the [MDITabsDemo Sample: 
 
 [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]
 
-##  <a name="m_strtext"></a>  CMFCTabToolTipInfo::m_strText
+## <a name="m_strtext"></a> CMFCTabToolTipInfo::m_strText
 
 The tooltip text.
 

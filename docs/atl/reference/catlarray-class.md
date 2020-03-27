@@ -76,7 +76,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="add"></a>  CAtlArray::Add
+## <a name="add"></a> CAtlArray::Add
 
 Call this method to add an element to the array object.
 
@@ -102,7 +102,7 @@ The new element is added to the end of the array. If no element is provided, an 
 
 [!code-cpp[NVC_ATL_Utilities#1](../../atl/codesnippet/cpp/catlarray-class_1.cpp)]
 
-##  <a name="append"></a>  CAtlArray::Append
+## <a name="append"></a> CAtlArray::Append
 
 Call this method to add the contents of one array to the end of another.
 
@@ -131,7 +131,7 @@ In debug builds, an ATLASSERT will be raised if the `CAtlArray` argument is not 
 
 [!code-cpp[NVC_ATL_Utilities#2](../../atl/codesnippet/cpp/catlarray-class_2.cpp)]
 
-##  <a name="assertvalid"></a>  CAtlArray::AssertValid
+## <a name="assertvalid"></a> CAtlArray::AssertValid
 
 Call this method to confirm that the array object is valid.
 
@@ -147,7 +147,7 @@ If the array object is not valid, ATLASSERT will throw an assertion. This method
 
 [!code-cpp[NVC_ATL_Utilities#3](../../atl/codesnippet/cpp/catlarray-class_3.cpp)]
 
-##  <a name="catlarray"></a>  CAtlArray::CAtlArray
+## <a name="catlarray"></a> CAtlArray::CAtlArray
 
 The constructor.
 
@@ -163,7 +163,7 @@ Initializes the array object.
 
 [!code-cpp[NVC_ATL_Utilities#4](../../atl/codesnippet/cpp/catlarray-class_4.cpp)]
 
-##  <a name="dtor"></a>  CAtlArray::~CAtlArray
+## <a name="dtor"></a> CAtlArray::~CAtlArray
 
 The destructor.
 
@@ -175,7 +175,7 @@ The destructor.
 
 Frees up any resources used by the array object.
 
-##  <a name="copy"></a>  CAtlArray::Copy
+## <a name="copy"></a> CAtlArray::Copy
 
 Call this method to copy the elements of one array to another.
 
@@ -203,7 +203,7 @@ In debug builds, an ATLASSERT will be raised if the existing `CAtlArray` object 
 
 [!code-cpp[NVC_ATL_Utilities#5](../../atl/codesnippet/cpp/catlarray-class_5.cpp)]
 
-##  <a name="freeextra"></a>  CAtlArray::FreeExtra
+## <a name="freeextra"></a> CAtlArray::FreeExtra
 
 Call this method to remove any empty elements from the array.
 
@@ -217,7 +217,7 @@ Any empty elements are removed, but the size and upper bound of the array remain
 
 In debug builds, an ATLASSERT will be raised if the CAtlArray object is not valid, or if the array would exceed its maximum size.
 
-##  <a name="getat"></a>  CAtlArray::GetAt
+## <a name="getat"></a> CAtlArray::GetAt
 
 Call this method to retrieves a single element from the array object.
 
@@ -243,7 +243,7 @@ In debug builds, an ATLASSERT will be raised if *iElement* exceeds the number of
 
 [!code-cpp[NVC_ATL_Utilities#6](../../atl/codesnippet/cpp/catlarray-class_6.cpp)]
 
-##  <a name="getcount"></a>  CAtlArray::GetCount
+## <a name="getcount"></a> CAtlArray::GetCount
 
 Call this method to return the number of elements stored in the array.
 
@@ -263,7 +263,7 @@ As the first element in the array is at position 0, the value returned by `GetCo
 
 See the example for [CAtlArray::GetAt](#getat).
 
-##  <a name="getdata"></a>  CAtlArray::GetData
+## <a name="getdata"></a> CAtlArray::GetData
 
 Call this method to return a pointer to the first element in the array.
 
@@ -280,7 +280,7 @@ Returns a pointer to the memory location storing the first element in the array.
 
 [!code-cpp[NVC_ATL_Utilities#7](../../atl/codesnippet/cpp/catlarray-class_7.cpp)]
 
-##  <a name="inargtype"></a>  CAtlArray::INARGTYPE
+## <a name="inargtype"></a> CAtlArray::INARGTYPE
 
 The data type to use for adding elements to the array.
 
@@ -288,7 +288,7 @@ The data type to use for adding elements to the array.
 typedef ETraits::INARGTYPE INARGTYPE;
 ```
 
-##  <a name="insertarrayat"></a>  CAtlArray::InsertArrayAt
+## <a name="insertarrayat"></a> CAtlArray::InsertArrayAt
 
 Call this method to insert one array into another.
 
@@ -317,7 +317,7 @@ In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not va
 
 [!code-cpp[NVC_ATL_Utilities#8](../../atl/codesnippet/cpp/catlarray-class_8.cpp)]
 
-##  <a name="insertat"></a>  CAtlArray::InsertAt
+## <a name="insertat"></a> CAtlArray::InsertAt
 
 Call this method to insert a new element (or multiple copies of an element) into the array object.
 
@@ -346,7 +346,7 @@ In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is invali
 
 [!code-cpp[NVC_ATL_Utilities#9](../../atl/codesnippet/cpp/catlarray-class_9.cpp)]
 
-##  <a name="isempty"></a>  CAtlArray::IsEmpty
+## <a name="isempty"></a> CAtlArray::IsEmpty
 
 Call this method to test if the array is empty.
 
@@ -366,7 +366,7 @@ The array is said to be empty if it contains no elements. Therefore, even if the
 
 [!code-cpp[NVC_ATL_Utilities#10](../../atl/codesnippet/cpp/catlarray-class_10.cpp)]
 
-##  <a name="operator_at"></a>  CAtlArray::operator []
+## <a name="operator_at"></a> CAtlArray::operator []
 
 Call this operator to return a reference to an element in the array.
 
@@ -390,7 +390,7 @@ Performs a similar function to [CAtlArray::GetAt](#getat). Unlike the MFC class 
 
 In debug builds, an ATLASSERT will be raised if *iElement* exceeds the total number of elements in the array. In retail builds, an invalid parameter may cause unpredictable results.
 
-##  <a name="outargtype"></a>  CAtlArray::OUTARGTYPE
+## <a name="outargtype"></a> CAtlArray::OUTARGTYPE
 
 The data type to use for retrieving elements from the array.
 
@@ -398,7 +398,7 @@ The data type to use for retrieving elements from the array.
 typedef ETraits::OUTARGTYPE OUTARGTYPE;
 ```
 
-##  <a name="removeall"></a>  CAtlArray::RemoveAll
+## <a name="removeall"></a> CAtlArray::RemoveAll
 
 Call this method to remove all elements from the array object.
 
@@ -416,7 +416,7 @@ This method calls [CAtlArray::SetCount](#setcount) to resize the array and subse
 
 See the example for [CAtlArray::IsEmpty](#isempty).
 
-##  <a name="removeat"></a>  CAtlArray::RemoveAt
+## <a name="removeat"></a> CAtlArray::RemoveAt
 
 Call this method to remove one or more elements from the array.
 
@@ -442,7 +442,7 @@ In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not va
 
 [!code-cpp[NVC_ATL_Utilities#11](../../atl/codesnippet/cpp/catlarray-class_11.cpp)]
 
-##  <a name="setat"></a>  CAtlArray::SetAt
+## <a name="setat"></a> CAtlArray::SetAt
 
 Call this method to set the value of an element in the array object.
 
@@ -466,7 +466,7 @@ In debug builds, an ATLASSERT will be raised if *iElement* exceeds the number of
 
 See the example for [CAtlArray::GetAt](#getat).
 
-##  <a name="setcount"></a>  CAtlArray::SetCount
+## <a name="setcount"></a> CAtlArray::SetCount
 
 Call this method to set the size of the array object.
 
@@ -496,7 +496,7 @@ Use this method to set the size of the array before using it. If `SetCount` is n
 
 See the example for [CAtlArray::GetData](#getdata).
 
-##  <a name="setatgrow"></a>  CAtlArray::SetAtGrow
+## <a name="setatgrow"></a> CAtlArray::SetAtGrow
 
 Call this method to set the value of an element in the array object, expanding the array as required.
 

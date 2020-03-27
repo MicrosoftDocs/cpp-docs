@@ -74,7 +74,7 @@ An example of a *Worker* class is [CNonStatelessWorker Class](../../atl/referenc
 
 **Header:** atlutil.h
 
-##  <a name="addref"></a>  CThreadPool::AddRef
+## <a name="addref"></a> CThreadPool::AddRef
 
 Implementation of `IUnknown::AddRef`.
 
@@ -90,7 +90,7 @@ Always returns 1.
 
 This class does not implement lifetime control using reference counting.
 
-##  <a name="cthreadpool"></a>  CThreadPool::CThreadPool
+## <a name="cthreadpool"></a> CThreadPool::CThreadPool
 
 The constructor for the thread pool.
 
@@ -102,7 +102,7 @@ CThreadPool() throw();
 
 Initializes the timeout value to ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT. The default time is 36 seconds. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.
 
-##  <a name="dtor"></a>  CThreadPool::~CThreadPool
+## <a name="dtor"></a> CThreadPool::~CThreadPool
 
 The destructor for the thread pool.
 
@@ -114,7 +114,7 @@ The destructor for the thread pool.
 
 Calls [CThreadPool::Shutdown](#shutdown).
 
-##  <a name="getnumthreads"></a>  CThreadPool::GetNumThreads
+## <a name="getnumthreads"></a> CThreadPool::GetNumThreads
 
 Call this method to get the number of threads in the pool.
 
@@ -126,7 +126,7 @@ int GetNumThreads() throw();
 
 Returns the number of threads in the pool.
 
-##  <a name="getqueuehandle"></a>  CThreadPool::GetQueueHandle
+## <a name="getqueuehandle"></a> CThreadPool::GetQueueHandle
 
 Call this method to get the handle of the IO completion port used to queue work items.
 
@@ -138,7 +138,7 @@ HANDLE GetQueueHandle() throw();
 
 Returns the queue handle or NULL if the thread pool has not been initialized.
 
-##  <a name="getsize"></a>  CThreadPool::GetSize
+## <a name="getsize"></a> CThreadPool::GetSize
 
 Call this method to get the number of threads in the pool.
 
@@ -155,7 +155,7 @@ HRESULT STDMETHODCALLTYPE GetSize(int* pnNumThreads) throw();
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="gettimeout"></a>  CThreadPool::GetTimeout
+## <a name="gettimeout"></a> CThreadPool::GetTimeout
 
 Call this method to get the maximum time in milliseconds that the thread pool will wait for a thread to shut down.
 
@@ -176,7 +176,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This timeout value is used by [CThreadPool::Shutdown](#shutdown) if no other value is supplied to that method.
 
-##  <a name="initialize"></a>  CThreadPool::Initialize
+## <a name="initialize"></a> CThreadPool::Initialize
 
 Call this method to initialize the thread pool.
 
@@ -210,7 +210,7 @@ The handle of an object to associate with the completion port.
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="queryinterface"></a>  CThreadPool::QueryInterface
+## <a name="queryinterface"></a> CThreadPool::QueryInterface
 
 Implementation of `IUnknown::QueryInterface`.
 
@@ -222,7 +222,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppv) throw();
 
 Objects of this class can be successfully queried for the `IUnknown` and [IThreadPoolConfig](../../atl/reference/ithreadpoolconfig-interface.md) interfaces.
 
-##  <a name="queuerequest"></a>  CThreadPool::QueueRequest
+## <a name="queuerequest"></a> CThreadPool::QueueRequest
 
 Call this method to queue a work item to be handled by a thread in the pool.
 
@@ -243,7 +243,7 @@ Returns TRUE on success, FALSE on failure.
 
 This method adds a work item to the queue. The threads in the pool pick items off the queue in the order in which they are received.
 
-##  <a name="release"></a>  CThreadPool::Release
+## <a name="release"></a> CThreadPool::Release
 
 Implementation of `IUnknown::Release`.
 
@@ -259,7 +259,7 @@ Always returns 1.
 
 This class does not implement lifetime control using reference counting.
 
-##  <a name="setsize"></a>  CThreadPool::SetSize
+## <a name="setsize"></a> CThreadPool::SetSize
 
 Call this method to set the number of threads in the pool.
 
@@ -284,7 +284,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 If the number of threads specified is less than the number of threads currently in the pool, the object puts a shutdown message on the queue to be picked up by a waiting thread. When a waiting thread pulls the message off the queue, it notifies the thread pool and exits the thread procedure. This process is repeated until the number of threads in the pool reaches the specified number or until no thread has exited within the period specified by [GetTimeout](#gettimeout)/ [SetTimeout](#settimeout). In this situation the method will return an HRESULT corresponding to WAIT_TIMEOUT and the pending shutdown message is canceled.
 
-##  <a name="settimeout"></a>  CThreadPool::SetTimeout
+## <a name="settimeout"></a> CThreadPool::SetTimeout
 
 Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.
 
@@ -307,7 +307,7 @@ The timeout is initialized to ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT. The defaul
 
 Note that *dwMaxWait* is the time that the pool will wait for a single thread to shut down. The maximum time that could be taken to remove multiple threads from the pool could be slightly less than *dwMaxWait* multiplied by the number of threads.
 
-##  <a name="shutdown"></a>  CThreadPool::Shutdown
+## <a name="shutdown"></a> CThreadPool::Shutdown
 
 Call this method to shut down the thread pool.
 

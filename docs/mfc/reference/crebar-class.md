@@ -38,7 +38,7 @@ A rebar object behaves similarly to a toolbar object. A rebar uses the click-and
 `CReBar` uses the [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) class to provide its implementation. You can access the rebar control through [GetReBarCtrl](#getrebarctrl) to take advantage of the control's customization options. For more information about rebar controls, see `CReBarCtrl`. For more information about using rebar controls, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).
 
 > [!CAUTION]
->  Rebar and rebar control objects do not support MFC control bar docking. If `CRebar::EnableDocking` is called, your application will assert.
+> Rebar and rebar control objects do not support MFC control bar docking. If `CRebar::EnableDocking` is called, your application will assert.
 
 ## Inheritance Hierarchy
 
@@ -56,7 +56,7 @@ A rebar object behaves similarly to a toolbar object. A rebar uses the click-and
 
 **Header:** afxext.h
 
-##  <a name="addbar"></a>  CReBar::AddBar
+## <a name="addbar"></a> CReBar::AddBar
 
 Call this member function to add a band to the rebar.
 
@@ -103,7 +103,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CReBarCtrl#1](../../mfc/reference/codesnippet/cpp/crebar-class_1.cpp)]
 
-##  <a name="create"></a>  CReBar::Create
+## <a name="create"></a> CReBar::Create
 
 Call this member function to create a rebar.
 
@@ -137,7 +137,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CReBar::AddBar](#addbar).
 
-##  <a name="getrebarctrl"></a>  CReBar::GetReBarCtrl
+## <a name="getrebarctrl"></a> CReBar::GetReBarCtrl
 
 This member function allows direct access to the underlying common control.
 

@@ -9,7 +9,7 @@ ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
 OLE is a mechanism that allows users to create and edit documents containing items or "objects" created by multiple applications.
 
 > [!NOTE]
->  OLE was originally an acronym for Object Linking and Embedding. However, it is now referred to as OLE. Parts of OLE not related to linking and embedding are now part of Active technology.
+> OLE was originally an acronym for Object Linking and Embedding. However, it is now referred to as OLE. Parts of OLE not related to linking and embedding are now part of Active technology.
 
 OLE documents, historically called compound documents, seamlessly integrate various types of data, or components. Sound clips, spreadsheets, and bitmaps are typical examples of components found in OLE documents. Supporting OLE in your application allows your users to use OLE documents without worrying about switching between the different applications; OLE does the switching for you.
 

@@ -32,7 +32,7 @@ LINK arguments
 The `arguments` include options and filenames and can be specified in any order. Options are processed first, then files. Use one or more spaces or tabs to separate arguments.
 
 > [!NOTE]
->  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
+> You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
 
 ## Command line
 

@@ -96,7 +96,7 @@ For more information on `CBitmapButton`, see [Controls](../../mfc/controls-mfc.m
 
 **Header:** afxext.h
 
-##  <a name="autoload"></a>  CBitmapButton::AutoLoad
+## <a name="autoload"></a> CBitmapButton::AutoLoad
 
 Associates a button in a dialog box with an object of the `CBitmapButton` class, loads the bitmap(s) by name, and sizes the button to fit the bitmap.
 
@@ -126,7 +126,7 @@ Use the `AutoLoad` function to initialize an owner-draw button in a dialog box a
 
 [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]
 
-##  <a name="cbitmapbutton"></a>  CBitmapButton::CBitmapButton
+## <a name="cbitmapbutton"></a> CBitmapButton::CBitmapButton
 
 Creates a `CBitmapButton` object.
 
@@ -142,7 +142,7 @@ After creating the C++ `CBitmapButton` object, call [CButton::Create](../../mfc/
 
 [!code-cpp[NVC_MFCControlLadenDialog#57](../../mfc/codesnippet/cpp/cbitmapbutton-class_2.cpp)]
 
-##  <a name="loadbitmaps"></a>  CBitmapButton::LoadBitmaps
+## <a name="loadbitmaps"></a> CBitmapButton::LoadBitmaps
 
 Use this function when you want to load bitmap images identified by their resource names or ID numbers, or when you cannot use the `AutoLoad` function because, for example, you are creating a bitmap button that is not part of a dialog box.
 
@@ -194,7 +194,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFCControlLadenDialog#58](../../mfc/codesnippet/cpp/cbitmapbutton-class_3.cpp)]
 
-##  <a name="sizetocontent"></a>  CBitmapButton::SizeToContent
+## <a name="sizetocontent"></a> CBitmapButton::SizeToContent
 
 Call this function to resize a bitmap button to the size of the bitmap.
 

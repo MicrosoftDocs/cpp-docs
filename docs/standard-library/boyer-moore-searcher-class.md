@@ -39,7 +39,7 @@ class boyer_moore_searcher
 | **Operators** | |
 | [operator()](#operator-call) | |
 
-## <a name="boyer-moore-searcher-constructor"></a>boyer_moore_searcher constructor
+## <a name="boyer-moore-searcher-constructor"></a> boyer_moore_searcher constructor
 
 Constructs a `boyer_moore_searcher` function object by using the sequence to search for, a hash function object, and an equality predicate.
 

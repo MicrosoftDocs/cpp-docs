@@ -41,7 +41,7 @@ The object stores an object of class `strstreambuf`.
 
 **Namespace:** std
 
-## <a name="istrstream"></a>  istrstream::istrstream
+## <a name="istrstream"></a> istrstream::istrstream
 
 Constructs an object of type `istrstream`.
 
@@ -73,7 +73,7 @@ The contents with which the buffer is initialized.
 
 All the constructors initialize the base class by calling [istream](../standard-library/istream-typedefs.md#istream)(**sb**), where `sb` is the stored object of class [strstreambuf](../standard-library/strstreambuf-class.md). The first two constructors also initialize `sb` by calling `strstreambuf`( ( **const**`char` \*) `ptr`, 0 ). The remaining two constructors instead call `strstreambuf`( ( **const**`char` *) `ptr`, `count` ).
 
-## <a name="rdbuf"></a>  istrstream::rdbuf
+## <a name="rdbuf"></a> istrstream::rdbuf
 
 Returns a pointer to the stream's associated strstreambuf object.
 
@@ -93,7 +93,7 @@ The member function returns the address of the stored stream buffer, of type poi
 
 See [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount) for a sample that uses `rdbuf`.
 
-## <a name="str"></a>  istrstream::str
+## <a name="str"></a> istrstream::str
 
 Calls [freeze](../standard-library/strstreambuf-class.md#freeze), and then returns a pointer to the beginning of the controlled sequence.
 

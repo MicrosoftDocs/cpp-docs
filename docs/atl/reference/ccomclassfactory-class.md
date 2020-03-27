@@ -48,7 +48,7 @@ ATL provides three other macros that declare a class factory:
 
 **Header:** atlcom.h
 
-##  <a name="createinstance"></a>  CComClassFactory::CreateInstance
+## <a name="createinstance"></a> CComClassFactory::CreateInstance
 
 Creates an object of the specified CLSID and retrieves an interface pointer to this object.
 
@@ -71,7 +71,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 A standard HRESULT value.
 
-##  <a name="lockserver"></a>  CComClassFactory::LockServer
+## <a name="lockserver"></a> CComClassFactory::LockServer
 
 Increments and decrements the module lock count by calling `_Module::Lock` and `_Module::Unlock`, respectively.
 

@@ -107,7 +107,7 @@ For more information about how to use `CPropertySheet` objects, see the article 
 
 **Header:** afxdlgs.h
 
-##  <a name="addpage"></a>  CPropertySheet::AddPage
+## <a name="addpage"></a> CPropertySheet::AddPage
 
 Adds the supplied page with the rightmost tab in the property sheet.
 
@@ -136,7 +136,7 @@ If you call `AddPage` after displaying the property page, the tab row will refle
 
 [!code-cpp[NVC_MFCDocView#129](../../mfc/codesnippet/cpp/cpropertysheet-class_1.cpp)]
 
-##  <a name="construct"></a>  CPropertySheet::Construct
+## <a name="construct"></a> CPropertySheet::Construct
 
 Constructs a `CPropertySheet` object.
 
@@ -205,7 +205,7 @@ The following example demonstrates under what circumstances you would call `Cons
 
 [!code-cpp[NVC_MFCDocView#130](../../mfc/codesnippet/cpp/cpropertysheet-class_2.cpp)]
 
-##  <a name="cpropertysheet"></a>  CPropertySheet::CPropertySheet
+## <a name="cpropertysheet"></a> CPropertySheet::CPropertySheet
 
 Constructs a `CPropertySheet` object.
 
@@ -274,7 +274,7 @@ You can display watermark and/or header images automatically if you use the thir
 
 [!code-cpp[NVC_MFCDocView#131](../../mfc/codesnippet/cpp/cpropertysheet-class_3.cpp)]
 
-##  <a name="create"></a>  CPropertySheet::Create
+## <a name="create"></a> CPropertySheet::Create
 
 Displays a modeless property sheet.
 
@@ -317,7 +317,7 @@ To display a modal property sheet, call [DoModal](#domodal) instead.
 
 [!code-cpp[NVC_MFCDocView#133](../../mfc/codesnippet/cpp/cpropertysheet-class_5.cpp)]
 
-##  <a name="domodal"></a>  CPropertySheet::DoModal
+## <a name="domodal"></a> CPropertySheet::DoModal
 
 Displays a modal property sheet.
 
@@ -338,7 +338,7 @@ To display a modeless property sheet, call [Create](#create) instead.
 When a property page is created from its corresponding dialog resource, it can cause a first-chance exception. This results from the property page changing the style of the dialog resource to the required style before the page is created. Because resources are generally read-only, this causes an exception. The system handles the exception, and makes a copy of the modified resource. The first-chance exception can therefore be ignored.
 
 > [!NOTE]
->  This exception must be handled by the operating system if you are compiling with the asynchronous exception handling model. For more information about exception handling models, see [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md). In this case, do not wrap calls to `CPropertySheet::DoModal` with a C++ try-catch block in which the catch handles all exceptions, for example, `catch (...)`. This block would handle the exception intended for the operating system, and cause unpredictable behavior. However, you can safely use C++ exception handling with specific exception types or structured exception handling where the Access Violation exception is passed through to the operating system.
+> This exception must be handled by the operating system if you are compiling with the asynchronous exception handling model. For more information about exception handling models, see [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md). In this case, do not wrap calls to `CPropertySheet::DoModal` with a C++ try-catch block in which the catch handles all exceptions, for example, `catch (...)`. This block would handle the exception intended for the operating system, and cause unpredictable behavior. However, you can safely use C++ exception handling with specific exception types or structured exception handling where the Access Violation exception is passed through to the operating system.
 
 To avoid generating this first-chance exception, you can manually guarantee that the property sheet has the correct [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). You need to set the following styles for a property sheet:
 
@@ -364,7 +364,7 @@ Disable all other Windows styles because they are not compatible with property s
 
 See the example for [CPropertySheet::AddPage](#addpage).
 
-##  <a name="enablestackedtabs"></a>  CPropertySheet::EnableStackedTabs
+## <a name="enablestackedtabs"></a> CPropertySheet::EnableStackedTabs
 
 Indicates whether to stack rows of tabs in a property sheet.
 
@@ -387,7 +387,7 @@ You must call `EnableStackedTabs` when you create a modal or a modeless property
 
 [!code-cpp[NVC_MFCDocView#134](../../mfc/codesnippet/cpp/cpropertysheet-class_6.cpp)]
 
-##  <a name="enddialog"></a>  CPropertySheet::EndDialog
+## <a name="enddialog"></a> CPropertySheet::EndDialog
 
 Terminates the property sheet.
 
@@ -410,7 +410,7 @@ This member function is only used with a modal dialog box.
 
 See the example for [CPropertySheet::PressButton](#pressbutton).
 
-##  <a name="getactiveindex"></a>  CPropertySheet::GetActiveIndex
+## <a name="getactiveindex"></a> CPropertySheet::GetActiveIndex
 
 Gets the index number of the property sheet window's active page and then uses the returned index number as the parameter for `GetPage`.
 
@@ -426,7 +426,7 @@ The index number of the active page.
 
 See the example for [CPropertySheet::GetActivePage](#getactivepage).
 
-##  <a name="getactivepage"></a>  CPropertySheet::GetActivePage
+## <a name="getactivepage"></a> CPropertySheet::GetActivePage
 
 Retrieves the property sheet window's active page.
 
@@ -446,7 +446,7 @@ Use this member function to perform some action on the active page.
 
 [!code-cpp[NVC_MFCDocView#135](../../mfc/codesnippet/cpp/cpropertysheet-class_7.cpp)]
 
-##  <a name="getpage"></a>  CPropertySheet::GetPage
+## <a name="getpage"></a> CPropertySheet::GetPage
 
 Returns a pointer to the specified page in this property sheet.
 
@@ -467,7 +467,7 @@ The pointer to the page corresponding to the *nPage* parameter.
 
 See the example for [CPropertyPage::OnWizardFinish](../../mfc/reference/cpropertypage-class.md#onwizardfinish).
 
-##  <a name="getpagecount"></a>  CPropertySheet::GetPageCount
+## <a name="getpagecount"></a> CPropertySheet::GetPageCount
 
 Determines the number of pages currently in the property sheet.
 
@@ -483,7 +483,7 @@ The number of pages in the property sheet.
 
 See the example for [CPropertyPage::OnWizardFinish](../../mfc/reference/cpropertypage-class.md#onwizardfinish).
 
-##  <a name="getpageindex"></a>  CPropertySheet::GetPageIndex
+## <a name="getpageindex"></a> CPropertySheet::GetPageIndex
 
 Retrieves the index number of the specified page in the property sheet.
 
@@ -508,7 +508,7 @@ For example, you would use `GetPageIndex` to get the page index in order to use 
 
 See the example for [CPropertySheet::GetActivePage](#getactivepage).
 
-##  <a name="gettabcontrol"></a>  CPropertySheet::GetTabControl
+## <a name="gettabcontrol"></a> CPropertySheet::GetTabControl
 
 Retrieves a pointer to a tab control to do something specific to the tab control (that is, to use any of the APIs in [CTabCtrl](../../mfc/reference/ctabctrl-class.md)).
 
@@ -528,7 +528,7 @@ For example, call this member function if you want to add bitmaps to each of the
 
 [!code-cpp[NVC_MFCDocView#136](../../mfc/codesnippet/cpp/cpropertysheet-class_8.cpp)]
 
-##  <a name="m_psh"></a>  CPropertySheet::m_psh
+## <a name="m_psh"></a> CPropertySheet::m_psh
 
 A structure whose members store the characteristics of [PROPSHEETHEADER](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2).
 
@@ -542,7 +542,7 @@ For more information on this structure, including a listing of its members, see 
 
 [!code-cpp[NVC_MFCDocView#143](../../mfc/codesnippet/cpp/cpropertysheet-class_9.cpp)]
 
-##  <a name="mapdialogrect"></a>  CPropertySheet::MapDialogRect
+## <a name="mapdialogrect"></a> CPropertySheet::MapDialogRect
 
 Converts the dialog-box units of a rectangle to screen units.
 
@@ -563,7 +563,7 @@ The [GetDialogBaseUnits](/windows/win32/api/winuser/nf-winuser-getdialogbaseunit
 
 The `MapDialogRect` member function replaces the dialog-box units in *lpRect* with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.
 
-##  <a name="oninitdialog"></a>  CPropertySheet::OnInitDialog
+## <a name="oninitdialog"></a> CPropertySheet::OnInitDialog
 
 Overrides to augment property sheet initialization.
 
@@ -583,7 +583,7 @@ Override this member function if you need to perform special processing when the
 
 You do not need a message-map entry for this member function.
 
-##  <a name="pressbutton"></a>  CPropertySheet::PressButton
+## <a name="pressbutton"></a> CPropertySheet::PressButton
 
 Simulates the choice of the specified button in a property sheet.
 
@@ -620,7 +620,7 @@ A call to `PressButton` will not send the [PSN_APPLY](/windows/win32/Controls/ps
 
 [!code-cpp[NVC_MFCDocView#137](../../mfc/codesnippet/cpp/cpropertysheet-class_10.cpp)]
 
-##  <a name="removepage"></a>  CPropertySheet::RemovePage
+## <a name="removepage"></a> CPropertySheet::RemovePage
 
 Removes a page from the property sheet and destroys the associated window.
 
@@ -641,7 +641,7 @@ Index of the page to be removed. Must be between 0 and one less than the number 
 
 The [CPropertyPage](../../mfc/reference/cpropertypage-class.md) object itself is not destroyed until the owner of the `CPropertySheet` window is closed.
 
-##  <a name="setactivepage"></a>  CPropertySheet::SetActivePage
+## <a name="setactivepage"></a> CPropertySheet::SetActivePage
 
 Changes the active page.
 
@@ -670,7 +670,7 @@ For example, use `SetActivePage` if a user's action on one page should cause ano
 
 See the example for [CPropertySheet::GetActivePage](#getactivepage).
 
-##  <a name="setfinishtext"></a>  CPropertySheet::SetFinishText
+## <a name="setfinishtext"></a> CPropertySheet::SetFinishText
 
 Sets the text in the Finish command button.
 
@@ -691,7 +691,7 @@ Call `SetFinishText` to display the text on the Finish command button and hide t
 
 [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/cpp/cpropertysheet-class_11.cpp)]
 
-##  <a name="settitle"></a>  CPropertySheet::SetTitle
+## <a name="settitle"></a> CPropertySheet::SetTitle
 
 Specifies the property sheet's caption (the text displayed in the title bar of a frame window).
 
@@ -717,7 +717,7 @@ By default, a property sheet uses the caption parameter in the property sheet co
 
 [!code-cpp[NVC_MFCDocView#139](../../mfc/codesnippet/cpp/cpropertysheet-class_12.cpp)]
 
-##  <a name="setwizardbuttons"></a>  CPropertySheet::SetWizardButtons
+## <a name="setwizardbuttons"></a> CPropertySheet::SetWizardButtons
 
 Enables or disables the Back, Next, or Finish button in a wizard property sheet.
 
@@ -754,7 +754,7 @@ A `CPropertySheet` has three wizard property pages: `CStylePage`, `CColorPage`, 
 
 [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/cpp/cpropertysheet-class_11.cpp)]
 
-##  <a name="setwizardmode"></a>  CPropertySheet::SetWizardMode
+## <a name="setwizardmode"></a> CPropertySheet::SetWizardMode
 
 Establishes a property page as a wizard.
 

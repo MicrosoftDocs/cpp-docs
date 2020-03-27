@@ -70,7 +70,7 @@ The following code example demonstrates how to use SimpleActivationFactory with 
 
 **Namespace:** Microsoft::WRL
 
-## <a name="activateinstance"></a>SimpleActivationFactory::ActivateInstance Method
+## <a name="activateinstance"></a> SimpleActivationFactory::ActivateInstance Method
 
 Creates an instance of the specified interface.
 
@@ -93,7 +93,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 If `__WRL_STRICT__` is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](runtimeclasstype-enumeration.md) enumeration value.
 
-## <a name="getruntimeclassname"></a>SimpleActivationFactory::GetRuntimeClassName Method
+## <a name="getruntimeclassname"></a> SimpleActivationFactory::GetRuntimeClassName Method
 
 Gets the runtime class name of an instance of the class specified by the `Base` class template parameter.
 
@@ -116,7 +116,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 If `__WRL_STRICT__` is defined, an assert error is emitted if the class specified by the `Base` class template parameter isn't derived from [RuntimeClass](runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](runtimeclasstype-enumeration.md) enumeration value.
 
-## <a name="gettrustlevel"></a>SimpleActivationFactory::GetTrustLevel Method
+## <a name="gettrustlevel"></a> SimpleActivationFactory::GetTrustLevel Method
 
 Gets the trust level of an instance of the class specified by the `Base` class template parameter.
 

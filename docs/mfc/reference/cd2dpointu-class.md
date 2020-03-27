@@ -39,7 +39,7 @@ class CD2DPointU : public D2D1_POINT_2U;
 
 **Header:** afxrendertarget.h
 
-##  <a name="cd2dpointu"></a>  CD2DPointU::CD2DPointU
+## <a name="cd2dpointu"></a> CD2DPointU::CD2DPointU
 
 Constructs a CD2DPointU object from CPoint object.
 
@@ -61,7 +61,7 @@ source X
 *uY*<br/>
 source Y
 
-##  <a name="operator_cpoint"></a>  CD2DPointU::operator CPoint
+## <a name="operator_cpoint"></a> CD2DPointU::operator CPoint
 
 Converts CD2DPointU to CPoint object.
 

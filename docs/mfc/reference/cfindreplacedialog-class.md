@@ -85,7 +85,7 @@ For more information on using `CFindReplaceDialog`, see [Common Dialog Classes](
 
 **Header:** afxdlgs.h
 
-##  <a name="cfindreplacedialog"></a>  CFindReplaceDialog::CFindReplaceDialog
+## <a name="cfindreplacedialog"></a> CFindReplaceDialog::CFindReplaceDialog
 
 Constructs a `CFindReplaceDialog` object.
 
@@ -105,7 +105,7 @@ For more information on the construction of `CFindReplaceDialog` objects, see th
 
 [!code-cpp[NVC_MFCDocView#170](../../mfc/codesnippet/cpp/cfindreplacedialog-class_1.cpp)]
 
-##  <a name="create"></a>  CFindReplaceDialog::Create
+## <a name="create"></a> CFindReplaceDialog::Create
 
 Creates and displays either a Find or Find/Replace dialog box object, depending on the value of `bFindDialogOnly`.
 
@@ -155,7 +155,7 @@ Within your `OnFindReplace` function, you interpret the intentions of the user b
 
   See the example for [CFindReplaceDialog::CFindReplaceDialog](#cfindreplacedialog).
 
-##  <a name="findnext"></a>  CFindReplaceDialog::FindNext
+## <a name="findnext"></a> CFindReplaceDialog::FindNext
 
 Call this function from your callback function to determine whether the user wants to find the next occurrence of the search string.
 
@@ -167,7 +167,7 @@ BOOL FindNext() const;
 
 Nonzero if the user wants to find the next occurrence of the search string; otherwise 0.
 
-##  <a name="getfindstring"></a>  CFindReplaceDialog::GetFindString
+## <a name="getfindstring"></a> CFindReplaceDialog::GetFindString
 
 Call this function from your callback function to retrieve the default string to find.
 
@@ -183,7 +183,7 @@ The default string to find.
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-##  <a name="getnotifier"></a>  CFindReplaceDialog::GetNotifier
+## <a name="getnotifier"></a> CFindReplaceDialog::GetNotifier
 
 Call this function to retrieve a pointer to the current Find Replace dialog box.
 
@@ -210,7 +210,7 @@ See [CFindReplaceDialog::Create](#create) for an example of how to register the 
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-##  <a name="getreplacestring"></a>  CFindReplaceDialog::GetReplaceString
+## <a name="getreplacestring"></a> CFindReplaceDialog::GetReplaceString
 
 Call this function to retrieve the current replace string.
 
@@ -226,7 +226,7 @@ The default string with which to replace found strings.
 
   See the example for [CFindReplaceDialog::GetFindString](#getfindstring).
 
-##  <a name="isterminating"></a>  CFindReplaceDialog::IsTerminating
+## <a name="isterminating"></a> CFindReplaceDialog::IsTerminating
 
 Call this function within your callback function to determine whether the user has decided to terminate the dialog box.
 
@@ -246,7 +246,7 @@ If this function returns nonzero, you should call the `DestroyWindow` member fun
 
   See the example for [CFindReplaceDialog::GetFindString](#getfindstring).
 
-##  <a name="m_fr"></a>  CFindReplaceDialog::m_fr
+## <a name="m_fr"></a> CFindReplaceDialog::m_fr
 
 Used to customize a `CFindReplaceDialog` object.
 
@@ -264,7 +264,7 @@ For more information on this structure, see the `FINDREPLACE` structure in the W
 
   See the example for [CFindReplaceDialog::CFindReplaceDialog](#cfindreplacedialog).
 
-##  <a name="matchcase"></a>  CFindReplaceDialog::MatchCase
+## <a name="matchcase"></a> CFindReplaceDialog::MatchCase
 
 Call this function to determine whether the user wants to match the case of the find string exactly.
 
@@ -276,7 +276,7 @@ BOOL MatchCase() const;
 
 Nonzero if the user wants to find occurrences of the search string that exactly match the case of the search string; otherwise 0.
 
-##  <a name="matchwholeword"></a>  CFindReplaceDialog::MatchWholeWord
+## <a name="matchwholeword"></a> CFindReplaceDialog::MatchWholeWord
 
 Call this function to determine whether the user wants to match entire words only.
 
@@ -288,7 +288,7 @@ BOOL MatchWholeWord() const;
 
 Nonzero if the user wants to match only the entire words of the search string; otherwise 0.
 
-##  <a name="replaceall"></a>  CFindReplaceDialog::ReplaceAll
+## <a name="replaceall"></a> CFindReplaceDialog::ReplaceAll
 
 Call this function to determine whether the user wants all occurrences of the string to be replaced.
 
@@ -300,7 +300,7 @@ BOOL ReplaceAll() const;
 
 Nonzero if the user has requested that all strings matching the replace string be replaced; otherwise 0.
 
-##  <a name="replacecurrent"></a>  CFindReplaceDialog::ReplaceCurrent
+## <a name="replacecurrent"></a> CFindReplaceDialog::ReplaceCurrent
 
 Call this function to determine whether the user wants the current word to be replaced.
 
@@ -312,7 +312,7 @@ BOOL ReplaceCurrent() const;
 
 Nonzero if the user has requested that the currently selected string be replaced with the replace string; otherwise 0.
 
-##  <a name="searchdown"></a>  CFindReplaceDialog::SearchDown
+## <a name="searchdown"></a> CFindReplaceDialog::SearchDown
 
 Call this function to determine whether the user wants the search to proceed in a downward direction.
 

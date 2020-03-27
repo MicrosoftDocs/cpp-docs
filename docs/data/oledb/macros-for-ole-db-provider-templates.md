@@ -137,7 +137,7 @@ CHAIN_PROPERTY_SET(ChainClass)
 You can chain a property set from another class to your own class, then access the properties directly from your class.
 
 > [!CAUTION]
->  Use this macro sparingly. Improper use can cause a consumer to fail the OLE DB conformance tests.
+> Use this macro sparingly. Improper use can cause a consumer to fail the OLE DB conformance tests.
 
 ### <a name="end_property_set"></a> END_PROPERTY_SET
 

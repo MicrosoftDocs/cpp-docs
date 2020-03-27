@@ -10,7 +10,7 @@ ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
 These functions provide support for modifying SID and ACL objects.
 
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
+> The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
 |||
 |-|-|
@@ -28,12 +28,12 @@ These functions provide support for modifying SID and ACL objects.
 
 **Header:** atlsecurity.h
 
-##  <a name="atlgetdacl"></a>  AtlGetDacl
+## <a name="atlgetdacl"></a> AtlGetDacl
 
 Call this function to retrieve the discretionary access-control list (DACL) information of a specified object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlGetDacl(
@@ -61,12 +61,12 @@ Returns true on success, false on failure.
 
 In debug builds, an assertion error will occur if either *hObject* or *pDacl* is invalid.
 
-##  <a name="atlsetdacl"></a>  AtlSetDacl
+## <a name="atlsetdacl"></a> AtlSetDacl
 
 Call this function to set the discretionary access-control list (DACL) information of a specified object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlSetDacl(
@@ -97,16 +97,17 @@ Returns true on success, false on failure.
 ### Remarks
 
 In debug builds, an assertion error will occur if *hObject* is invalid, or if *dwInheritanceFlowControl* is not one of the three permitted values.
+
 ### Requirements
 
 **Header:** atlsecurity.h
 
-##  <a name="atlgetgroupsid"></a>  AtlGetGroupSid
+## <a name="atlgetgroupsid"></a> AtlGetGroupSid
 
 Call this function to retrieve the group security identifier (SID) of an object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlGetGroupSid(
@@ -134,12 +135,12 @@ Returns true on success, false on failure.
 
 **Header:** atlsecurity.h
 
-##  <a name="atlsetgroupsid"></a>  AtlSetGroupSid
+## <a name="atlsetgroupsid"></a> AtlSetGroupSid
 
 Call this function to set the group security identifier (SID) of an object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlSetGroupSid(
@@ -167,12 +168,12 @@ Returns true on success, false on failure.
 
 **Header:** atlsecurity.h
 
-##  <a name="atlgetownersid"></a>  AtlGetOwnerSid
+## <a name="atlgetownersid"></a> AtlGetOwnerSid
 
 Call this function to retrieve the owner security identifier (SID) of an object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlGetOwnerSid(
@@ -200,12 +201,12 @@ Returns true on success, false on failure.
 
 **Header:** atlsecurity.h
 
-##  <a name="atlsetownersid"></a>  AtlSetOwnerSid
+## <a name="atlsetownersid"></a> AtlSetOwnerSid
 
 Call this function to set the owner security identifier (SID) of an object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlSetOwnerSid(
@@ -233,12 +234,12 @@ Returns true on success, false on failure.
 
 **Header:** atlsecurity.h
 
-##  <a name="atlgetsacl"></a>  AtlGetSacl
+## <a name="atlgetsacl"></a> AtlGetSacl
 
 Call this function to retrieve the system access-control list (SACL) information of a specified object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlGetSacl(
@@ -274,12 +275,12 @@ If `AtlGetSacl` is to be called many times on many different objects, it will be
 
 **Header:** atlsecurity.h
 
-##  <a name="atlsetsacl"></a>  AtlSetSacl
+## <a name="atlsetsacl"></a> AtlSetSacl
 
 Call this function to set the system access-control list (SACL) information of a specified object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlSetSacl(
@@ -321,12 +322,12 @@ If `AtlSetSacl` is to be called many times on many different objects, it will be
 
 **Header:** atlsecurity.h
 
-##  <a name="atlgetsecuritydescriptor"></a>  AtlGetSecurityDescriptor
+## <a name="atlgetsecuritydescriptor"></a> AtlGetSecurityDescriptor
 
 Call this function to retrieve the security descriptor of a given object.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 inline bool AtlGetSecurityDescriptor(

@@ -121,7 +121,7 @@ The following example demonstrates how to configure the properties of the button
 
 **Header:** afxbutton.h
 
-##  <a name="cleanup"></a>  CMFCButton::CleanUp
+## <a name="cleanup"></a> CMFCButton::CleanUp
 
 Resets internal variables and frees allocated resources such as images, bitmaps, and icons.
 
@@ -129,7 +129,7 @@ Resets internal variables and frees allocated resources such as images, bitmaps,
 virtual void CleanUp();
 ```
 
-##  <a name="enablefulltexttooltip"></a>  CMFCButton::EnableFullTextTooltip
+## <a name="enablefulltexttooltip"></a> CMFCButton::EnableFullTextTooltip
 
 Specifies whether to display the full text of a tooltip in a large tooltip window or a truncated version of the text in a small tooltip window.
 
@@ -144,7 +144,7 @@ void EnableFullTextTooltip(BOOL bOn=TRUE);
 
 ### Remarks
 
-##  <a name="enablemenufont"></a>  CMFCButton::EnableMenuFont
+## <a name="enablemenufont"></a> CMFCButton::EnableMenuFont
 
 Specifies whether the button text font is the same as the application menu font.
 
@@ -166,7 +166,7 @@ void EnableMenuFont(
 
 If you do not use this method to specify the button text font, you can specify the font with the [CWnd::SetFont](../../mfc/reference/cwnd-class.md#setfont) method. If you do not specify a font at all, the framework sets a default font.
 
-##  <a name="enablewindowstheming"></a>  CMFCButton::EnableWindowsTheming
+## <a name="enablewindowstheming"></a> CMFCButton::EnableWindowsTheming
 
 Specifies whether the style of the button border corresponds to the current Windows theme.
 
@@ -183,7 +183,7 @@ static void EnableWindowsTheming(BOOL bEnable = TRUE);
 
 This method affects all buttons in your application that are derived from the `CMFCButton` class.
 
-##  <a name="gettooltipctrl"></a>  CMFCButton::GetToolTipCtrl
+## <a name="gettooltipctrl"></a> CMFCButton::GetToolTipCtrl
 
 Returns a reference to the underlying tooltip control.
 
@@ -197,7 +197,7 @@ A reference to the underlying tooltip control.
 
 ### Remarks
 
-##  <a name="isautocheck"></a>  CMFCButton::IsAutoCheck
+## <a name="isautocheck"></a> CMFCButton::IsAutoCheck
 
 Indicates whether a check box or radio button is an automatic button.
 
@@ -211,7 +211,7 @@ TRUE if the button has style BS_AUTOCHECKBOX or BS_AUTORADIOBUTTON; otherwise, F
 
 ### Remarks
 
-##  <a name="isautorepeatcommandmode"></a>  CMFCButton::IsAutorepeatCommandMode
+## <a name="isautorepeatcommandmode"></a> CMFCButton::IsAutorepeatCommandMode
 
 Indicates whether a button is set to auto-repeat mode.
 
@@ -227,7 +227,7 @@ TRUE if the button is set to auto-repeat mode; otherwise, FALSE.
 
 Use the [CMFCButton::SetAutorepeatMode](#setautorepeatmode) method to set a button to auto-repeat mode.
 
-##  <a name="ischeckbox"></a>  CMFCButton::IsCheckBox
+## <a name="ischeckbox"></a> CMFCButton::IsCheckBox
 
 Indicates whether a button is a check box button.
 
@@ -241,7 +241,7 @@ TRUE if the button has either BS_CHECKBOX or BS_AUTOCHECKBOX style; otherwise, F
 
 ### Remarks
 
-##  <a name="ischecked"></a>  CMFCButton::IsChecked
+## <a name="ischecked"></a> CMFCButton::IsChecked
 
 Indicates whether the current button is checked.
 
@@ -257,7 +257,7 @@ TRUE if the current button is checked; otherwise, FALSE.
 
 The framework uses different ways to indicate that different kinds of buttons are checked. For example, a radio button is checked when it contains a dot; a check box is checked when it contains an **X**.
 
-##  <a name="ishighlighted"></a>  CMFCButton::IsHighlighted
+## <a name="ishighlighted"></a> CMFCButton::IsHighlighted
 
 Indicates whether a button is highlighted.
 
@@ -273,7 +273,7 @@ TRUE if the button is highlighted; otherwise, FALSE.
 
 A button becomes highlighted when the mouse hovers over the button.
 
-##  <a name="ispressed"></a>  CMFCButton::IsPressed
+## <a name="ispressed"></a> CMFCButton::IsPressed
 
 Indicates whether a button is pushed and highlighted.
 
@@ -287,7 +287,7 @@ TRUE if the button is pressed; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="ispushed"></a>  CMFCButton::IsPushed
+## <a name="ispushed"></a> CMFCButton::IsPushed
 
 Indicates whether a button is pushed.
 
@@ -301,7 +301,7 @@ TRUE if the button is pushed; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="isradiobutton"></a>  CMFCButton::IsRadioButton
+## <a name="isradiobutton"></a> CMFCButton::IsRadioButton
 
 Indicates whether a button is a radio button.
 
@@ -315,7 +315,7 @@ TRUE if the button style is BS_RADIOBUTTON or BS_AUTORADIOBUTTON; otherwise, FAL
 
 ### Remarks
 
-##  <a name="iswindowsthemingenabled"></a>  CMFCButton::IsWindowsThemingEnabled
+## <a name="iswindowsthemingenabled"></a> CMFCButton::IsWindowsThemingEnabled
 
 Indicates whether the style of the button border corresponds to the current Windows theme.
 
@@ -335,7 +335,7 @@ Specifies whether to use Windows XP themes when drawing the button.
 BOOL m_bDontUseWinXPTheme;
 ```
 
-##  <a name="m_bdrawfocus"></a>  CMFCButton::m_bDrawFocus
+## <a name="m_bdrawfocus"></a> CMFCButton::m_bDrawFocus
 
 Indicates whether to draw a focus rectangle around a button.
 
@@ -349,7 +349,7 @@ Set the `m_bDrawFocus` member to TRUE to specify that the framework will draw a 
 
 The `CMFCButton` constructor initializes this member to TRUE.
 
-##  <a name="m_bGrayDisabled"></a>  CMFCButton::m_bGrayDisabled
+## <a name="m_bGrayDisabled"></a> CMFCButton::m_bGrayDisabled
 
 When TRUE, enables a disabled button to be drawn as grayed-out.
 
@@ -357,7 +357,7 @@ When TRUE, enables a disabled button to be drawn as grayed-out.
 BOOL m_bGrayDisabled;
 ```
 
-##  <a name="m_bhighlightchecked"></a>  CMFCButton::m_bHighlightChecked
+## <a name="m_bhighlightchecked"></a> CMFCButton::m_bHighlightChecked
 
 Indicates whether to highlight a BS_CHECKBOX-style button when the cursor hovers over it.
 
@@ -369,7 +369,7 @@ BOOL m_bHighlightChecked;
 
 Set the `m_bHighlightChecked` member to TRUE to specify that the framework will highlight a BS_CHECKBOX-style button when the mouse hovers over it.
 
-##  <a name="m_bResponseOnButtonDown"></a> CMFCButton::m_bResponseOnButtonDown
+## <a name="m_bResponseOnButtonDown"></a> CMFCButton::m_bResponseOnButtonDown
 
 Indicates whether to respond to button down events.
 
@@ -377,7 +377,7 @@ Indicates whether to respond to button down events.
 BOOL m_bResponseOnButtonDown;
 ```
 
-##  <a name="m_brightimage"></a>  CMFCButton::m_bRightImage
+## <a name="m_brightimage"></a> CMFCButton::m_bRightImage
 
 Indicates whether to display an image on the right side of the button.
 
@@ -385,7 +385,7 @@ Indicates whether to display an image on the right side of the button.
 BOOL m_bRightImage;
 ```
 
-##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)
+## <a name="m_bTopImage"></a> CMFCButton::m_bTopImage](#m_bTopImage)
 
 Indicates whether the image is on top of the button.
 
@@ -397,7 +397,7 @@ BOOL m_bTopImage;
 
 Set the `m_bRightImage` member to TRUE to specify that the framework will display the button's image to the right of the button's text label.
 
-##  <a name="m_btransparent"></a>  CMFCButton::m_bTransparent
+## <a name="m_btransparent"></a> CMFCButton::m_bTransparent
 
 Indicates whether the button is transparent.
 
@@ -409,7 +409,7 @@ BOOL m_bTransparent;
 
 Set the `m_bTransparent` member to TRUE to specify that the framework will make the button transparent. The `CMFCButton` constructor initializes this member to FALSE.
 
-##  <a name="m_nalignstyle"></a>  CMFCButton::m_nAlignStyle
+## <a name="m_nalignstyle"></a> CMFCButton::m_nAlignStyle
 
 Specifies the alignment of the button text.
 
@@ -429,7 +429,7 @@ Use one of the following `CMFCButton::AlignStyle` enumeration values to specify 
 
 The `CMFCButton` constructor initializes this member to ALIGN_CENTER.
 
-##  <a name="m_bWasDblClk"></a>  CMFCButton::m_bWasDblClk](#m_bWasDblClk)|
+## <a name="m_bWasDblClk"></a> CMFCButton::m_bWasDblClk](#m_bWasDblClk)|
 
 Indicates whether the last click event was a double-click.|
 
@@ -437,7 +437,7 @@ Indicates whether the last click event was a double-click.|
 BOOL m_bWasDblClk;
 ```
 
-##  <a name="m_nflatstyle"></a>  CMFCButton::m_nFlatStyle
+## <a name="m_nflatstyle"></a> CMFCButton::m_nFlatStyle
 
 Specifies the style of the button, such as borderless, flat, semi-flat, or 3D.
 
@@ -465,7 +465,7 @@ The following example demonstrates how to set the values of the `m_nFlatStyle` m
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#29](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_5.cpp)]
 
-##  <a name="ondraw"></a>  CMFCButton::OnDraw
+## <a name="ondraw"></a> CMFCButton::OnDraw
 
 Called by the framework to draw a button.
 
@@ -491,7 +491,7 @@ virtual void OnDraw(
 
 Override this method to use your own code to draw a button.
 
-##  <a name="ondrawborder"></a>  CMFCButton::OnDrawBorder
+## <a name="ondrawborder"></a> CMFCButton::OnDrawBorder
 
 Called by the framework to draw the border of a button.
 
@@ -517,7 +517,7 @@ virtual void OnDrawBorder(
 
 Override this method to use your own code to draw the border.
 
-##  <a name="ondrawfocusrect"></a>  CMFCButton::OnDrawFocusRect
+## <a name="ondrawfocusrect"></a> CMFCButton::OnDrawFocusRect
 
 Called by the framework to draw the focus rectangle for a button.
 
@@ -539,7 +539,7 @@ virtual void OnDrawFocusRect(
 
 Override this method to use your own code to draw the focus rectangle.
 
-##  <a name="ondrawtext"></a>  CMFCButton::OnDrawText
+## <a name="ondrawtext"></a> CMFCButton::OnDrawText
 
 Called by the framework to draw the button text.
 
@@ -573,7 +573,7 @@ virtual void OnDrawText(
 
 Override this method to use your own code to draw the button text.
 
-##  <a name="onfillbackground"></a>  CMFCButton::OnFillBackground
+## <a name="onfillbackground"></a> CMFCButton::OnFillBackground
 
 Called by the framework to draw the background of the button text.
 
@@ -595,7 +595,7 @@ virtual void OnFillBackground(
 
 Override this method to use your own code to draw the background of a button.
 
-##  <a name="selectfont"></a>  CMFCButton::SelectFont
+## <a name="selectfont"></a> CMFCButton::SelectFont
 
 Retrieves the font that is associated with the specified device context.
 
@@ -614,7 +614,7 @@ Override this method to use your own code to retrieve the font.
 
 ### Remarks
 
-##  <a name="setautorepeatmode"></a>  CMFCButton::SetAutorepeatMode
+## <a name="setautorepeatmode"></a> CMFCButton::SetAutorepeatMode
 
 Sets a button to auto-repeat mode.
 
@@ -631,7 +631,7 @@ void SetAutorepeatMode(int nTimeDelay=500);
 
 This method causes the button to constantly send WM_COMMAND messages to the parent window until the button is released, or the *nTimeDelay* parameter is set to zero.
 
-##  <a name="setcheckedimage"></a>  CMFCButton::SetCheckedImage
+## <a name="setcheckedimage"></a> CMFCButton::SetCheckedImage
 
 Sets the image for a checked button.
 
@@ -696,7 +696,7 @@ void SetCheckedImage(
 
 ### Remarks
 
-##  <a name="setfacecolor"></a>  CMFCButton::SetFaceColor
+## <a name="setfacecolor"></a> CMFCButton::SetFaceColor
 
 Sets the background color for the button text.
 
@@ -718,7 +718,7 @@ void SetFaceColor(
 
 Use this method to define a new fill color for the button background (face). Note that the background is not filled when the [CMFCButton::m_bTransparent](#m_btransparent) member variable is TRUE.
 
-##  <a name="setimage"></a>  CMFCButton::SetImage
+## <a name="setimage"></a> CMFCButton::SetImage
 
 Sets the image for a button.
 
@@ -790,7 +790,7 @@ The following example demonstrates how to use various versions of the `SetImage`
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
 
-##  <a name="setmousecursor"></a>  CMFCButton::SetMouseCursor
+## <a name="setmousecursor"></a> CMFCButton::SetMouseCursor
 
 Sets the cursor image.
 
@@ -814,7 +814,7 @@ The following example demonstrates how to use the `SetMouseCursor` method in the
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#30](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_6.cpp)]
 
-##  <a name="setmousecursorhand"></a>  CMFCButton::SetMouseCursorHand
+## <a name="setmousecursorhand"></a> CMFCButton::SetMouseCursorHand
 
 Sets the cursor to the image of a hand.
 
@@ -826,7 +826,7 @@ void SetMouseCursorHand();
 
 Use this method to associate the cursor image of a hand with the button. The cursor is loaded from the application resources.
 
-##  <a name="setstdimage"></a>  CMFCButton::SetStdImage
+## <a name="setstdimage"></a> CMFCButton::SetStdImage
 
 Uses a `CMenuImages` object to set the button image.
 
@@ -850,7 +850,7 @@ void SetStdImage(
 
 ### Remarks
 
-##  <a name="settextcolor"></a>  CMFCButton::SetTextColor
+## <a name="settextcolor"></a> CMFCButton::SetTextColor
 
 Sets the color of the button text for a button that is not selected.
 
@@ -865,7 +865,7 @@ void SetTextColor(COLORREF clrText);
 
 ### Remarks
 
-##  <a name="settexthotcolor"></a>  CMFCButton::SetTextHotColor
+## <a name="settexthotcolor"></a> CMFCButton::SetTextHotColor
 
 Sets the color of the button text for a button that is selected.
 
@@ -880,7 +880,7 @@ void SetTextHotColor(COLORREF clrTextHot);
 
 ### Remarks
 
-##  <a name="settooltip"></a>  CMFCButton::SetTooltip
+## <a name="settooltip"></a> CMFCButton::SetTooltip
 
 Associates a tooltip with a button.
 
@@ -895,7 +895,7 @@ void SetTooltip(LPCTSTR lpszToolTipText);
 
 ### Remarks
 
-##  <a name="sizetocontent"></a>  CMFCButton::SizeToContent
+## <a name="sizetocontent"></a> CMFCButton::SizeToContent
 
 Resizes a button to contain its button text and image.
 

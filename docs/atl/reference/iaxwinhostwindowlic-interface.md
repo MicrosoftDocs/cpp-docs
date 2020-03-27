@@ -39,7 +39,7 @@ The definition of this interface is available as IDL or C++, as shown below.
 |IDL|ATLIFace.idl|
 |C++|ATLIFace.h (also included in ATLBase.h)|
 
-##  <a name="createcontrollic"></a>  IAxWinHostWindowLic::CreateControlLic
+## <a name="createcontrollic"></a> IAxWinHostWindowLic::CreateControlLic
 
 Creates a licensed control, initializes it, and hosts it in the window identified by `hWnd`.
 
@@ -66,7 +66,7 @@ Calling this method is equivalent to calling [IAxWinHostWindowLic::CreateControl
 
 See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `IAxWinHostWindowLic::CreateControlLic`.
 
-##  <a name="createcontrollicex"></a>  IAxWinHostWindowLic::CreateControlLicEx
+## <a name="createcontrollicex"></a> IAxWinHostWindowLic::CreateControlLicEx
 
 Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [IAxWinHostWindow::CreateControl](../../atl/reference/iaxwinhostwindow-interface.md#createcontrol).
 

@@ -11,7 +11,7 @@ The default position of a [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class
 You can specify the SBARS_SIZEGRIP style to include a sizing grip at the right end of the `CStatusBarCtrl` status window. A sizing grip is similar to a sizing border; it is a rectangular area that the user can click and drag to resize the parent window.
 
 > [!NOTE]
->  If you combine the CCS_TOP and SBARS_SIZEGRIP styles, the resulting sizing grip is not functional even though the system draws it in the status window.
+> If you combine the CCS_TOP and SBARS_SIZEGRIP styles, the resulting sizing grip is not functional even though the system draws it in the status window.
 
 The window procedure for the status window automatically sets the initial size and position of the control window. The width is the same as that of the parent window's client area. The height is based on the metrics of the font that is currently selected into the status window's device context and on the width of the window's borders.
 

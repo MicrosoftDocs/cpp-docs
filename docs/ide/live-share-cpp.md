@@ -3,7 +3,6 @@ title: "Collaborate with Live Share for C++ in Visual Studio"
 description: "Use Live Share for C++ in Visual Studio to collaborate and share code in real time."
 ms.date: "05/24/2019"
 ---
-
 # Collaborate using Live Share for C++
 
 In Visual Studio 2019 and Visual Studio Code, you can use **Live Share** to collaborate on C++ projects in real-time. With **Live Share** another person can edit and debug your code without having to install your project or any of its dependencies. You see each other's edits as they occur, and each edit is tagged with the name of the person who made it.

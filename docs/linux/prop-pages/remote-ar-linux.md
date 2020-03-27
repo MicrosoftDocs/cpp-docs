@@ -4,7 +4,6 @@ ms.date: "06/07/2019"
 ms.assetid: 5ee1e44c-8337-4c3a-b2f3-35e4be954f9f
 f1_keywords: []
 ---
-
 # Remote Archive Properties (C++ Linux)
 
 ::: moniker range="vs-2015"

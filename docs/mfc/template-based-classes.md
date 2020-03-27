@@ -22,11 +22,11 @@ The simple collection classes are all derived from class `CObject`, so they inhe
 
 For more information about C++ templates, see [Templates](../cpp/templates-cpp.md) in the *C++ Language Reference*.
 
-##  <a name="_core_using_simple_array.2c_.list.2c_.and_map_templates"></a> Using Simple Array, List, and Map Templates
+## <a name="_core_using_simple_array.2c_.list.2c_.and_map_templates"></a> Using Simple Array, List, and Map Templates
 
 To use the simple collection templates, you need to know what kind of data you can store in these collections and what parameters to use in your collection declarations.
 
-###  <a name="_core_simple_array_and_list_usage"></a> Simple Array and List Usage
+### <a name="_core_simple_array_and_list_usage"></a> Simple Array and List Usage
 
 The simple array and list classes, [CArray](../mfc/reference/carray-class.md) and [CList](../mfc/reference/clist-class.md), take two parameters: *TYPE* and `ARG_TYPE`. These classes can store any data type, which you specify in the *TYPE* parameter:
 
@@ -44,7 +44,7 @@ The first example declares an array collection, `myArray`, that contains **int**
 
 [!code-cpp[NVC_MFCCollections#2](../mfc/codesnippet/cpp/template-based-classes_2.cpp)]
 
-###  <a name="_core_simple_map_usage"></a> Simple Map Usage
+### <a name="_core_simple_map_usage"></a> Simple Map Usage
 
 The simple map class, [CMap](../mfc/reference/cmap-class.md), takes four parameters: *KEY*, *ARG_KEY*, *VALUE*, and *ARG_VALUE*. Like the array and list classes, the map classes can store any data type. Unlike arrays and lists, which index and order the data they store, maps associate keys and values: You access a value stored in a map by specifying the value's associated key. The *KEY* parameter specifies the data type of the keys used to access data stored in the map. If the type of *KEY* is a structure or class, the *ARG_KEY* parameter is typically a reference to the type specified in *KEY*. The *VALUE* parameter specifies the type of the items stored in the map. If the type of *ARG_VALUE* is a structure or class, the *ARG_VALUE* parameter is typically a reference to the type specified in *VALUE*. For example:
 
@@ -56,11 +56,11 @@ Because the *KEY* parameter is of type `CString` and the *KEY_TYPE* parameter is
 
 [!code-cpp[NVC_MFCCollections#4](../mfc/codesnippet/cpp/template-based-classes_4.cpp)]
 
-##  <a name="_core_using_typed.2d.pointer_collection_templates"></a> Using Typed-Pointer Collection Templates
+## <a name="_core_using_typed.2d.pointer_collection_templates"></a> Using Typed-Pointer Collection Templates
 
 To use the typed-pointer collection templates, you need to know what kinds of data you can store in these collections and what parameters to use in your collection declarations.
 
-###  <a name="_core_typed.2d.pointer_array_and_list_usage"></a> Typed-Pointer Array and List Usage
+### <a name="_core_typed.2d.pointer_array_and_list_usage"></a> Typed-Pointer Array and List Usage
 
 The typed-pointer array and list classes, [CTypedPtrArray](../mfc/reference/ctypedptrarray-class.md) and [CTypedPtrList](../mfc/reference/ctypedptrlist-class.md), take two parameters: *BASE_CLASS* and *TYPE*. These classes can store any data type, which you specify in the *TYPE* parameter. They are derived from one of the nontemplate collection classes that stores pointers; you specify this base class in *BASE_CLASS*. For arrays, use either `CObArray` or `CPtrArray`. For lists, use either `CObList` or `CPtrList`.
 
@@ -72,7 +72,7 @@ The first example declares a typed-pointer array, `myArray`, derived from `CObAr
 
 The second example declares a typed-pointer list, `myList`, derived from `CPtrList`. The list stores and returns pointers to `MY_STRUCT` objects. A class based on `CPtrList` is used for storing pointers to objects not derived from `CObject`. `CTypedPtrList` has a number of type-safe member functions: `GetHead`, `GetTail`, `RemoveHead`, `RemoveTail`, `GetNext`, `GetPrev`, and `GetAt`.
 
-###  <a name="_core_typed.2d.pointer_map_usage"></a> Typed-Pointer Map Usage
+### <a name="_core_typed.2d.pointer_map_usage"></a> Typed-Pointer Map Usage
 
 The typed-pointer map class, [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md), takes three parameters: *BASE_CLASS*, *KEY*, and *VALUE*. The *BASE_CLASS* parameter specifies the class from which to derive the new class: `CMapPtrToWord`, `CMapPtrToPtr`, `CMapStringToPtr`, `CMapWordToPtr`, `CMapStringToOb`, and so on. *KEY* is analogous to *KEY* in `CMap`: It specifies the type of the key used for lookups. *VALUE* is analogous to *VALUE* in `CMap`: It specifies the type of object stored in the map. For example:
 
@@ -83,7 +83,7 @@ The first example is a map based on `CMapPtrToPtr` — it uses `CString` keys ma
 The second example is a map based on `CMapStringToOb` — it uses string keys mapped to stored pointers to `CMyObject` objects. You can use the same type-safe members described in the previous paragraph, or you can call members of class `CMapStringToOb`.
 
 > [!NOTE]
->  If you specify a **class** or **struct** type for the *VALUE* parameter, rather than a pointer or reference to the type, the class or structure must have a copy constructor.
+> If you specify a **class** or **struct** type for the *VALUE* parameter, rather than a pointer or reference to the type, the class or structure must have a copy constructor.
 
 For more information, see [How to Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md).
 

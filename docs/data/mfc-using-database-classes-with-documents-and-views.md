@@ -16,7 +16,7 @@ You can use the MFC database classes with or without the document/view architect
 
 For alternatives, see [MFC: Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md).
 
-##  <a name="_core_writing_a_form.2d.based_application"></a> Writing a Form-Based Application
+## <a name="_core_writing_a_form.2d.based_application"></a> Writing a Form-Based Application
 
 Many data-access applications are based on forms. The user interface is a form containing controls in which the user examines, enters, or edits data. To make your application form based, use class `CRecordView`. When you run the MFC Application Wizard and select **ODBC** client type on the **Database Support** page, the project uses `CRecordView` for the view class.
 
@@ -26,7 +26,7 @@ To create a form-based application with the application wizard, see [Creating a 
 
 For a full discussion of forms, see [Record Views](../data/record-views-mfc-data-access.md).
 
-##  <a name="_core_using_recordsets_in_documents_and_views"></a> Using Recordsets in Documents and Views
+## <a name="_core_using_recordsets_in_documents_and_views"></a> Using Recordsets in Documents and Views
 
 Many simple form-based applications do not need documents. If your application is more complex, you probably want to use a document as a proxy for the database, storing a `CDatabase` object that connects to the data source. Form-based applications usually store a pointer to a recordset object in the view. Other kinds of database applications store recordsets and `CDatabase` object in the document. Here are some possibilities for using documents in database applications:
 
@@ -44,7 +44,7 @@ Many simple form-based applications do not need documents. If your application i
 
    The `CDatabase` object manages a connection to your data source. The object is constructed automatically during document construction, and you call its `Open` member function when you initialize the document. When you construct recordset objects in document member functions, you pass a pointer to the document's `CDatabase` object. This associates each recordset with its data source. The database object is usually destroyed when the document closes. The recordset objects are typically destroyed when they exit the scope of a function.
 
-##  <a name="_core_other_factors"></a> Other Factors
+## <a name="_core_other_factors"></a> Other Factors
 
 Form-based applications often do not have any use for the framework's document serialization mechanism, so you might want to remove, disable, or replace the **New** and **Open** commands on the **File** menu. See the article [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md).
 

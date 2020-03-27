@@ -20,11 +20,11 @@ Five main steps are required to make a class serializable. They are listed below
 
 If you call `Serialize` directly rather than through the >> and << operators of [CArchive](../mfc/reference/carchive-class.md), the last three steps are not required for serialization.
 
-##  <a name="_core_deriving_your_class_from_cobject"></a> Deriving Your Class from CObject
+## <a name="_core_deriving_your_class_from_cobject"></a> Deriving Your Class from CObject
 
 The basic serialization protocol and functionality are defined in the `CObject` class. By deriving your class from `CObject` (or from a class derived from `CObject`), as shown in the following declaration of class `CPerson`, you gain access to the serialization protocol and functionality of `CObject`.
 
-##  <a name="_core_overriding_the_serialize_member_function"></a> Overriding the Serialize Member Function
+## <a name="_core_overriding_the_serialize_member_function"></a> Overriding the Serialize Member Function
 
 The `Serialize` member function, which is defined in the `CObject` class, is responsible for actually serializing the data necessary to capture an object's current state. The `Serialize` function has a `CArchive` argument that it uses to read and write the object data. The [CArchive](../mfc/reference/carchive-class.md) object has a member function, `IsStoring`, which indicates whether `Serialize` is storing (writing data) or loading (reading data). Using the results of `IsStoring` as a guide, you either insert your object's data in the `CArchive` object with the insertion operator (**<\<**) or extract data with the extraction operator (**>>**).
 
@@ -44,22 +44,22 @@ Consider a class that is derived from `CObject` and has two new member variables
 
 You can also use the [CArchive::Read](../mfc/reference/carchive-class.md#read) and [CArchive::Write](../mfc/reference/carchive-class.md#write) member functions to read and write large amounts of untyped data.
 
-##  <a name="_core_using_the_declare_serial_macro"></a> Using the DECLARE_SERIAL Macro
+## <a name="_core_using_the_declare_serial_macro"></a> Using the DECLARE_SERIAL Macro
 
 The DECLARE_SERIAL macro is required in the declaration of classes that will support serialization, as shown here:
 
 [!code-cpp[NVC_MFCSerialization#3](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_3.h)]
 
-##  <a name="_core_defining_a_constructor_with_no_arguments"></a> Defining a Constructor with No Arguments
+## <a name="_core_defining_a_constructor_with_no_arguments"></a> Defining a Constructor with No Arguments
 
 MFC requires a default constructor when it re-creates your objects as they are deserialized (loaded from disk). The deserialization process will fill in all member variables with the values required to re-create the object.
 
 This constructor can be declared public, protected, or private. If you make it protected or private, you help make sure that it will only be used by the serialization functions. The constructor must put the object in a state that allows it to be deleted if necessary.
 
 > [!NOTE]
->  If you forget to define a constructor with no arguments in a class that uses the DECLARE_SERIAL and IMPLEMENT_SERIAL macros, you will get a "no default constructor available" compiler warning on the line where the IMPLEMENT_SERIAL macro is used.
+> If you forget to define a constructor with no arguments in a class that uses the DECLARE_SERIAL and IMPLEMENT_SERIAL macros, you will get a "no default constructor available" compiler warning on the line where the IMPLEMENT_SERIAL macro is used.
 
-##  <a name="_core_using_the_implement_serial_macro_in_the_implementation_file"></a> Using the IMPLEMENT_SERIAL Macro in the Implementation File
+## <a name="_core_using_the_implement_serial_macro_in_the_implementation_file"></a> Using the IMPLEMENT_SERIAL Macro in the Implementation File
 
 The IMPLEMENT_SERIAL macro is used to define the various functions needed when you derive a serializable class from `CObject`. You use this macro in the implementation file (.CPP) for your class. The first two arguments to the macro are the name of the class and the name of its immediate base class.
 

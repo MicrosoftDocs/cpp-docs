@@ -10,7 +10,7 @@ ms.assetid: 435d1b11-ec0e-4121-9e25-aaa6af812a3c
 One of the attributes of a month calendar control is the ability to store information, referred to as the day state of the control, for each day of the month. This information is used to emphasize certain dates for the month currently displayed.
 
 > [!NOTE]
->  The `CMonthCalCtrl` object must have the MCS_DAYSTATE style to display day state information.
+> The `CMonthCalCtrl` object must have the MCS_DAYSTATE style to display day state information.
 
 Day state information is expressed as a 32-bit data type, **MONTHDAYSTATE**. Each bit in a **MONTHDAYSTATE** bit field (1 through 31) represents the state of a day in a month. If a bit is on, the corresponding day will be displayed in bold; otherwise it will be displayed with no emphasis.
 
@@ -21,7 +21,7 @@ There are two methods for setting the day state of the month calendar control: e
 The MCN_GETDAYSTATE message is sent by the control to determine how the days within the visible months should be displayed.
 
 > [!NOTE]
->  Because the control caches the previous and following months, in respect to the visible month, you will receive this notification every time a new month is chosen.
+> Because the control caches the previous and following months, in respect to the visible month, you will receive this notification every time a new month is chosen.
 
 To properly handle this message, you must determine how many months day state information is being requested for, initialize an array of **MONTHDAYSTATE** structures with the proper values, and initialize the related structure member with the new information. The following procedure, detailing the necessary steps, assumes that you have a `CMonthCalCtrl` object called *m_monthcal* and an array of **MONTHDAYSTATE** objects, *mdState*.
 

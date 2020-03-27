@@ -27,7 +27,7 @@ This walkthrough covers these tasks:
 
 An understanding of the fundamentals of the C++ language.
 
-##  <a name="CreateLibProject"></a> Creating a static library project
+## <a name="CreateLibProject"></a> Creating a static library project
 
 The instructions for how to create the project vary depending on whether you are using Visual Studio 2019 or an earlier version. Make sure you have the correct version set in the upper left of this page.
 
@@ -79,7 +79,7 @@ The instructions for how to create the project vary depending on whether you are
 
 ::: moniker-end
 
-##  <a name="AddClassToLib"></a> Adding a class to the static library
+## <a name="AddClassToLib"></a> Adding a class to the static library
 
 ### To add a class to the static library
 
@@ -100,7 +100,7 @@ The instructions for how to create the project vary depending on whether you are
    > [!NOTE]
    > When you build on the Visual Studio command line, you must build the program in two steps. First, run `cl /c /EHsc MathFuncsLib.cpp` to compile the code and create an object file that's named `MathFuncsLib.obj`. (The `cl` command invokes the compiler, Cl.exe, and the `/c` option specifies compile without linking. For more information, see [/c (Compile Without Linking)](../build/reference/c-compile-without-linking.md).) Second, run `lib MathFuncsLib.obj` to link the code and create the static library `MathFuncsLib.lib`. (The `lib` command invokes the Library Manager, Lib.exe. For more information, see [LIB Reference](../build/reference/lib-reference.md).)
 
-##  <a name="CreateAppToRefTheLib"></a> Creating a C++ console app that references the static library
+## <a name="CreateAppToRefTheLib"></a> Creating a C++ console app that references the static library
 
 ::: moniker range="vs-2019"
 
@@ -150,7 +150,7 @@ The instructions for how to create the project vary depending on whether you are
 
 ::: moniker-end
 
-##  <a name="UseLibInApp"></a> Using the functionality from the static library in the app
+## <a name="UseLibInApp"></a> Using the functionality from the static library in the app
 
 ### To use the functionality from the static library in the app
 
@@ -170,7 +170,7 @@ The instructions for how to create the project vary depending on whether you are
 
 1. Build the executable by choosing **Build** > **Build Solution** on the menu bar.
 
-##  <a name="RunApp"></a> Running the app
+## <a name="RunApp"></a> Running the app
 
 ### To run the app
 

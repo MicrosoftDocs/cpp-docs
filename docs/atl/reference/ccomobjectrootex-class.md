@@ -77,7 +77,7 @@ If your object is not aggregated, `IUnknown` is implemented by `CComObject` or `
 
 **Header:** atlcom.h
 
-##  <a name="ccomobjectrootex"></a>  CComObjectRootEx::CComObjectRootEx
+## <a name="ccomobjectrootex"></a> CComObjectRootEx::CComObjectRootEx
 
 The constructor initializes the reference count to 0.
 
@@ -85,7 +85,7 @@ The constructor initializes the reference count to 0.
 CComObjectRootEx();
 ```
 
-##  <a name="finalconstruct"></a>  CComObjectRootEx::FinalConstruct
+## <a name="finalconstruct"></a> CComObjectRootEx::FinalConstruct
 
 You can override this method in your derived class to perform any initialization required for your object.
 
@@ -129,7 +129,7 @@ Here is a typical way to create an aggregate:
 
 - Override `FinalRelease` to release the `IUnknown` pointer.
 
-##  <a name="finalrelease"></a>  CComObjectRootEx::FinalRelease
+## <a name="finalrelease"></a> CComObjectRootEx::FinalRelease
 
 You can override this method in your derived class to perform any cleanup required for your object.
 
@@ -143,7 +143,7 @@ By default, `CComObjectRootEx::FinalRelease` does nothing.
 
 Performing cleanup in `FinalRelease` is preferable to adding code to the destructor of your class since the object is still fully constructed at the point at which `FinalRelease` is called. This enables you to safely access the methods provided by the most derived class. This is particularly important for freeing any aggregated objects before deletion.
 
-##  <a name="internaladdref"></a>  CComObjectRootEx::InternalAddRef
+## <a name="internaladdref"></a> CComObjectRootEx::InternalAddRef
 
 Increments the reference count of a nonaggregated object by 1.
 
@@ -159,7 +159,7 @@ A value that may be useful for diagnostics and testing.
 
 If the thread model is multithreaded, `InterlockedIncrement` is used to prevent more than one thread from changing the reference count at the same time.
 
-##  <a name="internalqueryinterface"></a>  CComObjectRootEx::InternalQueryInterface
+## <a name="internalqueryinterface"></a> CComObjectRootEx::InternalQueryInterface
 
 Retrieves a pointer to the requested interface.
 
@@ -193,7 +193,7 @@ One of the standard HRESULT values.
 
 `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) or one of its variants.
 
-##  <a name="internalrelease"></a>  CComObjectRootEx::InternalRelease
+## <a name="internalrelease"></a> CComObjectRootEx::InternalRelease
 
 Decrements the reference count of a nonaggregated object by 1.
 
@@ -209,7 +209,7 @@ In both non-debug and debug builds, this function returns a value which may be u
 
 If the thread model is multithreaded, `InterlockedDecrement` is used to prevent more than one thread from changing the reference count at the same time.
 
-##  <a name="lock"></a>  CComObjectRootEx::Lock
+## <a name="lock"></a> CComObjectRootEx::Lock
 
 If the thread model is multithreaded, this method calls the Win32 API function [EnterCriticalSection](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection), which waits until the thread can take ownership of the critical section object obtained through a private data member.
 
@@ -223,7 +223,7 @@ When the protected code finishes executing, the thread must call `Unlock` to rel
 
 If the thread model is single-threaded, this method does nothing.
 
-##  <a name="m_dwref"></a>  CComObjectRootEx::m_dwRef
+## <a name="m_dwref"></a> CComObjectRootEx::m_dwRef
 
 Part of a union that accesses four bytes of memory.
 
@@ -244,7 +244,7 @@ union {
 
 If the object is not aggregated, the reference count accessed by `AddRef` and `Release` is stored in `m_dwRef`. If the object is aggregated, the pointer to the outer unknown is stored in [m_pOuterUnknown](#m_pouterunknown).
 
-##  <a name="m_pouterunknown"></a>  CComObjectRootEx::m_pOuterUnknown
+## <a name="m_pouterunknown"></a> CComObjectRootEx::m_pOuterUnknown
 
 Part of a union that accesses four bytes of memory.
 
@@ -266,7 +266,7 @@ union {
 
 If the object is aggregated, the pointer to the outer unknown is stored in `m_pOuterUnknown`. If the object is not aggregated, the reference count accessed by `AddRef` and `Release` is stored in [m_dwRef](#m_dwref).
 
-##  <a name="objectmain"></a>  CComObjectRootEx::ObjectMain
+## <a name="objectmain"></a> CComObjectRootEx::ObjectMain
 
 For each class listed in the object map, this function is called once when the module is initialized, and again when it is terminated.
 
@@ -289,7 +289,7 @@ The value of the *bStarting* parameter indicates whether the module is being ini
 
 [!code-cpp[NVC_ATL_COM#41](../../atl/codesnippet/cpp/ccomobjectrootex-class_2.h)]
 
-##  <a name="outeraddref"></a>  CComObjectRootEx::OuterAddRef
+## <a name="outeraddref"></a> CComObjectRootEx::OuterAddRef
 
 Increments the reference count of the outer unknown of an aggregation.
 
@@ -301,7 +301,7 @@ ULONG OuterAddRef();
 
 A value that may be useful for diagnostics and testing.
 
-##  <a name="outerqueryinterface"></a>  CComObjectRootEx::OuterQueryInterface
+## <a name="outerqueryinterface"></a> CComObjectRootEx::OuterQueryInterface
 
 Retrieves an indirect pointer to the requested interface.
 
@@ -321,7 +321,7 @@ HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 
 One of the standard HRESULT values.
 
-##  <a name="outerrelease"></a>  CComObjectRootEx::OuterRelease
+## <a name="outerrelease"></a> CComObjectRootEx::OuterRelease
 
 Decrements the reference count of the outer unknown of an aggregation.
 
@@ -333,7 +333,7 @@ ULONG OuterRelease();
 
 In non-debug builds, always returns 0. In debug builds, returns a value that may be useful for diagnostics or testing.
 
-##  <a name="unlock"></a>  CComObjectRootEx::Unlock
+## <a name="unlock"></a> CComObjectRootEx::Unlock
 
 If the thread model is multithreaded, this method calls the Win32 API function [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection), which releases ownership of the critical section object obtained through a private data member.
 

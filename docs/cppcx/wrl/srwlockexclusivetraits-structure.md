@@ -41,7 +41,7 @@ Name                                                        | Description
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="getinvalidvalue"></a>SRWLockExclusiveTraits::GetInvalidValue
+## <a name="getinvalidvalue"></a> SRWLockExclusiveTraits::GetInvalidValue
 
 Retrieves an `SRWLockExclusiveTraits` object that is always invalid.
 
@@ -53,7 +53,7 @@ inline static Type GetInvalidValue();
 
 An empty `SRWLockExclusiveTraits` object.
 
-## <a name="unlock"></a>SRWLockExclusiveTraits::Unlock
+## <a name="unlock"></a> SRWLockExclusiveTraits::Unlock
 
 Releases exclusive control of the specified `SRWLock` object.
 

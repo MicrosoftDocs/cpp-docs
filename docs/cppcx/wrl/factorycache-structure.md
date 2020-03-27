@@ -39,7 +39,7 @@ Name                              | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="cookie"></a>FactoryCache::cookie
+## <a name="cookie"></a> FactoryCache::cookie
 
 Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.
 
@@ -54,7 +54,7 @@ union {
 
 Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.
 
-## <a name="factory"></a>FactoryCache::factory
+## <a name="factory"></a> FactoryCache::factory
 
 Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.
 

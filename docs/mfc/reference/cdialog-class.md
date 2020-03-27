@@ -97,7 +97,7 @@ For more information on `CDialog`, see [Dialog Boxes](../../mfc/dialog-boxes.md)
 
 **Header:** afxwin.h
 
-##  <a name="cdialog"></a>  CDialog::CDialog
+## <a name="cdialog"></a> CDialog::CDialog
 
 To construct a resource-based modal dialog box, call either public form of the constructor.
 
@@ -134,7 +134,7 @@ After you construct a modal dialog box with one of the above methods, call `DoMo
 
 To construct a modeless dialog box, use the protected form of the `CDialog` constructor. The constructor is protected because you must derive your own dialog-box class to implement a modeless dialog box. Construction of a modeless dialog box is a two-step process. First call the constructor; then call the `Create` member function to create a resource-based dialog box, or call `CreateIndirect` to create the dialog box from a template in memory.
 
-##  <a name="create"></a>  CDialog::Create
+## <a name="create"></a> CDialog::Create
 
 Call `Create` to create a modeless dialog box using a dialog-box template from a resource.
 
@@ -181,7 +181,7 @@ Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the `C
 
 [!code-cpp[NVC_MFCControlLadenDialog#62](../../mfc/codesnippet/cpp/cdialog-class_1.cpp)]
 
-##  <a name="createindirect"></a>  CDialog::CreateIndirect
+## <a name="createindirect"></a> CDialog::CreateIndirect
 
 Call this member function to create a modeless dialog box from a dialog-box template in memory.
 
@@ -224,7 +224,7 @@ Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the `C
 
 Dialog boxes that contain ActiveX controls require additional information provided in a DLGINIT resource.
 
-##  <a name="domodal"></a>  CDialog::DoModal
+## <a name="domodal"></a> CDialog::DoModal
 
 Call this member function to invoke the modal dialog box and return the dialog-box result when done.
 
@@ -249,7 +249,7 @@ If the user clicks one of the pushbuttons in the dialog box, such as OK or Cance
 
 [!code-cpp[NVC_MFCControlLadenDialog#63](../../mfc/codesnippet/cpp/cdialog-class_2.cpp)]
 
-##  <a name="enddialog"></a>  CDialog::EndDialog
+## <a name="enddialog"></a> CDialog::EndDialog
 
 Call this member function to terminate a modal dialog box.
 
@@ -276,7 +276,7 @@ You can call `EndDialog` at any time, even in [OnInitDialog](#oninitdialog), in 
 
 [!code-cpp[NVC_MFCControlLadenDialog#65](../../mfc/codesnippet/cpp/cdialog-class_4.cpp)]
 
-##  <a name="getdefid"></a>  CDialog::GetDefID
+## <a name="getdefid"></a> CDialog::GetDefID
 
 Call the `GetDefID` member function to get the ID of the default pushbutton control for a dialog box.
 
@@ -292,7 +292,7 @@ A 32-bit value ( `DWORD`). If the default pushbutton has an ID value, the high-o
 
 This is usually an OK button.
 
-##  <a name="gotodlgctrl"></a>  CDialog::GotoDlgCtrl
+## <a name="gotodlgctrl"></a> CDialog::GotoDlgCtrl
 
 Moves the focus to the specified control in the dialog box.
 
@@ -313,7 +313,7 @@ To get a pointer to the control (child window) to pass as *pWndCtrl*, call the `
 
   See the example for [CWnd::GetDlgItem](../../mfc/reference/cwnd-class.md#getdlgitem).
 
-##  <a name="initmodalindirect"></a>  CDialog::InitModalIndirect
+## <a name="initmodalindirect"></a> CDialog::InitModalIndirect
 
 Call this member function to initialize a modal dialog object using a dialog-box template that you construct in memory.
 
@@ -352,7 +352,7 @@ To create a modal dialog box indirectly, first allocate a global block of memory
 
 Dialog boxes that contain ActiveX controls require additional information provided in a DLGINIT resource.
 
-##  <a name="mapdialogrect"></a>  CDialog::MapDialogRect
+## <a name="mapdialogrect"></a> CDialog::MapDialogRect
 
 Call to convert the dialog-box units of a rectangle to screen units.
 
@@ -373,7 +373,7 @@ The `GetDialogBaseUnits` Windows function returns size information for the syste
 
 The `MapDialogRect` member function replaces the dialog-box units in *lpRect* with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.
 
-##  <a name="nextdlgctrl"></a>  CDialog::NextDlgCtrl
+## <a name="nextdlgctrl"></a> CDialog::NextDlgCtrl
 
 Moves the focus to the next control in the dialog box.
 
@@ -385,7 +385,7 @@ void NextDlgCtrl() const;
 
 If the focus is at the last control in the dialog box, it moves to the first control.
 
-##  <a name="oncancel"></a>  CDialog::OnCancel
+## <a name="oncancel"></a> CDialog::OnCancel
 
 The framework calls this method when the user clicks **Cancel** or presses the ESC key in a modal or modeless dialog box.
 
@@ -400,13 +400,13 @@ Override this method to perform actions (such as restoring old data) when a user
 If you implement the **Cancel** button in a modeless dialog box, you must override the `OnCancel` method and call [DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow) inside it. Do not call the base-class method, because it calls `EndDialog`, which will make the dialog box invisible but not destroy it.
 
 > [!NOTE]
->  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows XP. For more information about `CFileDialog`, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
+> You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows XP. For more information about `CFileDialog`, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
 
 ### Example
 
 [!code-cpp[NVC_MFCControlLadenDialog#66](../../mfc/codesnippet/cpp/cdialog-class_5.cpp)]
 
-##  <a name="oninitdialog"></a>  CDialog::OnInitDialog
+## <a name="oninitdialog"></a> CDialog::OnInitDialog
 
 This method is called in response to the `WM_INITDIALOG` message.
 
@@ -433,7 +433,7 @@ Windows calls the `OnInitDialog` function by using the standard global dialog-bo
 
 [!code-cpp[NVC_MFCControlLadenDialog#67](../../mfc/codesnippet/cpp/cdialog-class_6.cpp)]
 
-##  <a name="onok"></a>  CDialog::OnOK
+## <a name="onok"></a> CDialog::OnOK
 
 Called when the user clicks the **OK** button (the button with an ID of IDOK).
 
@@ -448,13 +448,13 @@ Override this method to perform actions when the **OK** button is activated. If 
 If you implement the **OK** button in a modeless dialog box, you must override the `OnOK` method and call [DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow) inside it. Do not call the base-class method, because it calls [EndDialog](#enddialog) which makes the dialog box invisible but does not destroy it.
 
 > [!NOTE]
->  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows XP. For more information about `CFileDialog`, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
+> You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows XP. For more information about `CFileDialog`, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
 
 ### Example
 
 [!code-cpp[NVC_MFCControlLadenDialog#68](../../mfc/codesnippet/cpp/cdialog-class_7.cpp)]
 
-##  <a name="onsetfont"></a>  CDialog::OnSetFont
+## <a name="onsetfont"></a> CDialog::OnSetFont
 
 Specifies the font a dialog-box control will use when drawing text.
 
@@ -476,7 +476,7 @@ The dialog editor typically sets the dialog-box font as part of the dialog-box t
 > [!NOTE]
 > You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows Vista or later operating systems. For more information about changes to `CFileDialog` under Windows Vista and later, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
 
-##  <a name="prevdlgctrl"></a>  CDialog::PrevDlgCtrl
+## <a name="prevdlgctrl"></a> CDialog::PrevDlgCtrl
 
 Sets the focus to the previous control in the dialog box.
 
@@ -488,7 +488,7 @@ void PrevDlgCtrl() const;
 
 If the focus is at the first control in the dialog box, it moves to the last control in the box.
 
-##  <a name="setdefid"></a>  CDialog::SetDefID
+## <a name="setdefid"></a> CDialog::SetDefID
 
 Changes the default pushbutton control for a dialog box.
 
@@ -501,7 +501,7 @@ void SetDefID(UINT nID);
 *nID*<br/>
 Specifies the ID of the pushbutton control that will become the default.
 
-##  <a name="sethelpid"></a>  CDialog::SetHelpID
+## <a name="sethelpid"></a> CDialog::SetHelpID
 
 Sets a context-sensitive help ID for the dialog box.
 

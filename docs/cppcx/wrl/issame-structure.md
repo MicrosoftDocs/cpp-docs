@@ -50,7 +50,7 @@ Name                    | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="value"></a>IsSame::value
+## <a name="value"></a> IsSame::value
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

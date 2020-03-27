@@ -38,7 +38,7 @@ Creating and using a dialog bar is similar to creating and using a `CFormView` o
 For more information on `CDialogBar`, see the article [Dialog Bars](../../mfc/dialog-bars.md) and [Technical Note 31](../../mfc/tn031-control-bars.md), Control Bars.
 
 > [!NOTE]
->  In the current release, a `CDialogBar` object cannot host Windows Forms controls. For more information about Windows Forms controls in Visual C++, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+> In the current release, a `CDialogBar` object cannot host Windows Forms controls. For more information about Windows Forms controls in Visual C++, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
 ## Inheritance Hierarchy
 
@@ -56,7 +56,7 @@ For more information on `CDialogBar`, see the article [Dialog Bars](../../mfc/di
 
 **Header:** afxext.h
 
-##  <a name="cdialogbar"></a>  CDialogBar::CDialogBar
+## <a name="cdialogbar"></a> CDialogBar::CDialogBar
 
 Constructs a `CDialogBar` object.
 
@@ -64,7 +64,7 @@ Constructs a `CDialogBar` object.
 CDialogBar();
 ```
 
-##  <a name="create"></a>  CDialogBar::Create
+## <a name="create"></a> CDialogBar::Create
 
 Loads the dialog-box resource template specified by `lpszTemplateName` or `nIDTemplate`, creates the dialog-bar window, sets its style, and associates it with the `CDialogBar` object.
 

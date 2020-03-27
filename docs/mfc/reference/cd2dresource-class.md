@@ -56,7 +56,7 @@ class CD2DResource : public CObject;
 
 **Header:** afxrendertarget.h
 
-##  <a name="_dtorcd2dresource"></a>  CD2DResource::~CD2DResource
+## <a name="_dtorcd2dresource"></a> CD2DResource::~CD2DResource
 
 The destructor. Called when a D2D resource object is being destroyed.
 
@@ -64,7 +64,7 @@ The destructor. Called when a D2D resource object is being destroyed.
 virtual ~CD2DResource();
 ```
 
-##  <a name="cd2dresource"></a>  CD2DResource::CD2DResource
+## <a name="cd2dresource"></a> CD2DResource::CD2DResource
 
 Constructs a CD2DResource object.
 
@@ -82,7 +82,7 @@ A pointer to the render target.
 *bAutoDestroy*<br/>
 Indicates that the object will be destroyed by owner (pParentTarget).
 
-##  <a name="create"></a>  CD2DResource::Create
+## <a name="create"></a> CD2DResource::Create
 
 Creates a CD2DResource.
 
@@ -99,7 +99,7 @@ A pointer to the render target.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="destroy"></a>  CD2DResource::Destroy
+## <a name="destroy"></a> CD2DResource::Destroy
 
 Destroys a CD2DResource object.
 
@@ -107,7 +107,7 @@ Destroys a CD2DResource object.
 virtual void Destroy() = 0;
 ```
 
-##  <a name="isautodestroy"></a>  CD2DResource::IsAutoDestroy
+## <a name="isautodestroy"></a> CD2DResource::IsAutoDestroy
 
 Check auto destroy flag.
 
@@ -119,7 +119,7 @@ BOOL IsAutoDestroy() const;
 
 TRUE if the object will be destroyed by its owner; otherwise FALSE.
 
-##  <a name="isvalid"></a>  CD2DResource::IsValid
+## <a name="isvalid"></a> CD2DResource::IsValid
 
 Checks resource validity
 
@@ -131,7 +131,7 @@ virtual BOOL IsValid() const = 0;
 
 TRUE if resource is valid; otherwise FALSE.
 
-##  <a name="m_bisautodestroy"></a>  CD2DResource::m_bIsAutoDestroy
+## <a name="m_bisautodestroy"></a> CD2DResource::m_bIsAutoDestroy
 
 Resource will be destroyed by owner (CRenderTarget)
 
@@ -139,7 +139,7 @@ Resource will be destroyed by owner (CRenderTarget)
 BOOL m_bIsAutoDestroy;
 ```
 
-##  <a name="m_pparenttarget"></a>  CD2DResource::m_pParentTarget
+## <a name="m_pparenttarget"></a> CD2DResource::m_pParentTarget
 
 Pointer to the parent CRenderTarget)
 
@@ -147,7 +147,7 @@ Pointer to the parent CRenderTarget)
 CRenderTarget* m_pParentTarget;
 ```
 
-##  <a name="recreate"></a>  CD2DResource::ReCreate
+## <a name="recreate"></a> CD2DResource::ReCreate
 
 Re-creates a CD2DResource.
 

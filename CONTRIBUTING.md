@@ -6,11 +6,11 @@ In this topic, you'll see the basic process for adding or updating content in th
 
 In this topic, we'll cover:
 
-* [Process for contributing](#process-for-contributing)
-* [DOs and DON'Ts](#dos-and-donts)
-* [Building the docs](#building-the-docs)
-* [Contributing to samples](#contributing-to-samples)
-* [Contributor license agreement](#contributor-license-agreement)
+- [Process for contributing](#process-for-contributing)
+- [DOs and DON'Ts](#dos-and-donts)
+- [Building the docs](#building-the-docs)
+- [Contributing to samples](#contributing-to-samples)
+- [Contributor license agreement](#contributor-license-agreement)
 
 ## Process for contributing
 

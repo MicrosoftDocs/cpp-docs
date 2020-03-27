@@ -17,7 +17,7 @@ For more information, see:
 The samples in this section just illustrate how `PInvoke` can be used. `PInvoke` can simplify customized data marshaling because you provide marshaling information declaratively in attributes instead of writing procedural marshaling code.
 
 > [!NOTE]
->  The marshaling library provides an alternative way to marshal data between native and managed environments in an optimized way. See [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md) for more information about the marshaling library. The marshaling library is usable for data only, and not for functions.
+> The marshaling library provides an alternative way to marshal data between native and managed environments in an optimized way. See [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md) for more information about the marshaling library. The marshaling library is usable for data only, and not for functions.
 
 ## PInvoke and the DllImport Attribute
 

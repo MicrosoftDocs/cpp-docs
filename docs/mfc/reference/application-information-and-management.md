@@ -45,7 +45,7 @@ The Microsoft Foundation Class Library provides the following global functions t
 |[AfxUserToolsManager](#afxusertoolsmanager)|Pointer to the global [user tools manager](cusertoolsmanager-class.md).|
 |[AfxWinInit](#afxwininit)|Called by the MFC-supplied `WinMain` function, as part of the [CWinApp](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC. Must be called directly for console applications that use MFC.|
 
-## <a name="afxbeginthread"></a>  AfxBeginThread
+## <a name="afxbeginthread"></a> AfxBeginThread
 
 Call this function to create a new thread.
 
@@ -131,7 +131,7 @@ CContextMenuManager* afxContextMenuManager;
 
 **Header:** afxcontextmenumanager.h
 
-## <a name="afxendthread"></a>  AfxEndThread
+## <a name="afxendthread"></a> AfxEndThread
 
 Call this function to terminate the currently executing thread.
 
@@ -200,7 +200,7 @@ The modules are searched in this order:
 
 **Header:** afxwin.h
 
-## <a name="afxfreelibrary"></a>  AfxFreeLibrary
+## <a name="afxfreelibrary"></a> AfxFreeLibrary
 
 Both `AfxFreeLibrary` and `AfxLoadLibrary` maintain a reference count for each loaded library module.
 
@@ -235,7 +235,7 @@ See the example for [AfxLoadLibrary](#afxloadlibrary).
 
   **Header** afxdll_.h
 
-## <a name="afxgetapp"></a>  AfxGetApp
+## <a name="afxgetapp"></a> AfxGetApp
 
 The pointer returned by this function can be used to access application information such as the main message-dispatch code or the topmost window.
 
@@ -259,7 +259,7 @@ If this method returns NULL, it might indicate that the application main window 
 
   **Header** afxwin.h
 
-## <a name="afxgetappname"></a>  AfxGetAppName
+## <a name="afxgetappname"></a> AfxGetAppName
 
 The string returned can be used for diagnostic messages, or as a root for temporary string names.
 
@@ -279,7 +279,7 @@ A null-terminated string containing the application's name.
 
   **Header** afxwin.h
 
-## <a name="afxgetinstancehandle"></a>  AfxGetInstanceHandle
+## <a name="afxgetinstancehandle"></a> AfxGetInstanceHandle
 
 This function allows you to retrieve the instance handle of the current application.
 
@@ -303,7 +303,7 @@ An HINSTANCE to the current instance of the application. If called from within a
 
   **Header** afxwin.h
 
-## <a name="afxgetmainwnd"></a>  AfxGetMainWnd
+## <a name="afxgetmainwnd"></a> AfxGetMainWnd
 
 If your application is an OLE server, call this function to retrieve a pointer to the active main window of the application. Use this result instead of directly referring to the [m_pMainWnd](../../mfc/reference/cwinthread-class.md#m_pmainwnd) member of the application object.
 
@@ -331,7 +331,7 @@ If your application isn't an OLE server, then calling this function is equivalen
 
   **Header** afxwin.h
 
-## <a name="afxgetperuserregistration"></a>  AfxGetPerUserRegistration
+## <a name="afxgetperuserregistration"></a> AfxGetPerUserRegistration
 
 Use this function to determine whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.
 
@@ -353,7 +353,7 @@ To change whether the application redirects registry access, use [AfxSetPerUserR
 
   **Header** afxstat_.h
 
-## <a name="afxgetresourcehandle"></a>  AfxGetResourceHandle
+## <a name="afxgetresourcehandle"></a> AfxGetResourceHandle
 
 Use the HINSTANCE handle returned by this function to access the application's resources directly, for example, in calls to the Windows function `FindResource`.
 
@@ -373,7 +373,7 @@ An HINSTANCE handle where the default resources of the application are loaded.
 
   **Header** afxwin.h
 
-## <a name="afxgetthread"></a>  AfxGetThread
+## <a name="afxgetthread"></a> AfxGetThread
 
 Call this function to get a pointer to the [CWinThread](../../mfc/reference/cwinthread-class.md) object representing the currently executing thread.
 
@@ -400,7 +400,7 @@ Must be called from within the thread.
 
   **Header** afxwin.h
 
-## <a name="afxinitrichedit"></a>  AfxInitRichEdit
+## <a name="afxinitrichedit"></a> AfxInitRichEdit
 
 Call this function to initialize the rich edit control (version 1.0) for the application.
 
@@ -422,7 +422,7 @@ This function also initializes the common controls library, if the library hasn'
 
   **Header** afxwin.h
 
-## <a name="afxinitrichedit2"></a>  AfxInitRichEdit2
+## <a name="afxinitrichedit2"></a> AfxInitRichEdit2
 
 Call this function to initialize the rich edit control (version 2.0 and later) for the application.
 
@@ -438,7 +438,7 @@ Call this function to load the RICHED20.DLL and initialize version 2.0 of the ri
 
   **Header** afxwin.h
 
-## <a name="afxisextendedframeclass"></a>  AfxIsExtendedFrameClass
+## <a name="afxisextendedframeclass"></a> AfxIsExtendedFrameClass
 
 Determines whether the given window is an extended frame object.
 
@@ -518,7 +518,7 @@ CKeyboardManager* afxKeyboardManager;
 
 **Header:** afxkeyboardmanager.h
 
-## <a name="afxloadlibrary"></a>  AfxLoadLibrary
+## <a name="afxloadlibrary"></a> AfxLoadLibrary
 
 Use `AfxLoadLibrary` to map a DLL module.
 
@@ -614,7 +614,7 @@ CMenuTearOffManager* g_pTearOffMenuManager;
 
 **Header:** afxmenutearoffmanager.h
 
-## <a name="afxmousemanager"></a>  AfxMouseManager
+## <a name="afxmousemanager"></a> AfxMouseManager
 
 Pointer to the global [mouse manager](cmousemanager-class.md).
 
@@ -628,7 +628,7 @@ CMouseManager* afxMouseManager;
 
 **Header:** afxmousemanager.h
 
-## <a name="afxregisterclass"></a>  AfxRegisterClass
+## <a name="afxregisterclass"></a> AfxRegisterClass
 
 Use this function to register window classes in a DLL that uses MFC.
 
@@ -659,7 +659,7 @@ In non-DLL builds, the `AfxRegisterClass` identifier is defined as a macro that 
 
   **Header** afxwin.h
 
-## <a name="afxregisterwndclass"></a>  AfxRegisterWndClass
+## <a name="afxregisterwndclass"></a> AfxRegisterWndClass
 
 Allows you to register your own window classes.
 
@@ -718,7 +718,7 @@ Refer to Technical Note [TN001: Window Class Registration](../../mfc/tn001-windo
 
   **Header** afxwin.h
 
-## <a name="afxsetperuserregistration"></a>  AfxSetPerUserRegistration
+## <a name="afxsetperuserregistration"></a> AfxSetPerUserRegistration
 
 Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.
 
@@ -745,7 +745,7 @@ The default implementation accesses the registry under HKCR.
 
   **Header** afxstat_.h
 
-## <a name="afxsetresourcehandle"></a>  AfxSetResourceHandle
+## <a name="afxsetresourcehandle"></a> AfxSetResourceHandle
 
 Use this function to set the HINSTANCE handle that determines where the default resources of the application are loaded.
 
@@ -766,7 +766,7 @@ The instance or module handle to an .EXE or DLL file from which the application'
 
   **Header** afxwin.h
 
-## <a name="afxshellmanager"></a>  AfxShellManager
+## <a name="afxshellmanager"></a> AfxShellManager
 
 Pointer to the global [shell manager](cshellmanager-class.md).
 
@@ -780,7 +780,7 @@ CShellManager* afxShellManager;
 
 **Header:** afxshellmanager.h
 
-## <a name="afxsocketinit"></a>  AfxSocketInit
+## <a name="afxsocketinit"></a> AfxSocketInit
 
 Call this function in your `CWinApp::InitInstance` override to initialize Windows Sockets.
 
@@ -805,7 +805,7 @@ When using MFC sockets in secondary threads in a statically linked MFC applicati
 
   **Header** afxsock.h
 
-## <a name="afxusertoolsmanager"></a>  AfxUserToolsManager
+## <a name="afxusertoolsmanager"></a> AfxUserToolsManager
 
 Pointer to the global [user tools manager](cusertoolsmanager-class.md).
 
@@ -819,7 +819,7 @@ CUserToolsManager* afxUserToolsManager;
 
 **Header:** afxusertoolsmanager.h
 
-## <a name="afxwininit"></a>  AfxWinInit
+## <a name="afxwininit"></a> AfxWinInit
 
 This function is called by the MFC-supplied `WinMain` function, as part of the [CWinApp](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC.
 

@@ -217,7 +217,7 @@ template<class T> complex<T> atan(const complex<T>&);
 template<class T> complex<T> atanh(const complex<T>&);
 ```
 
-## <a name="conj"></a>  conj
+## <a name="conj"></a> conj
 
 Returns the complex conjugate of a complex number.
 

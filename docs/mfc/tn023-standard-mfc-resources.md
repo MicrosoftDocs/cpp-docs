@@ -16,13 +16,13 @@ Clip-art resources are additional resources that the framework does not depend o
 
 - Common.rc: A single file of resources that contains:
 
-   - A large collection of icons that represent a variety of business and data-processing tasks.
+  - A large collection of icons that represent a variety of business and data-processing tasks.
 
-   - Several common cursors (see also Afxres.rc).
+  - Several common cursors (see also Afxres.rc).
 
-   - A toolbar bitmap that contains several toolbar buttons.
+  - A toolbar bitmap that contains several toolbar buttons.
 
-   - The bitmap and icon resources that are used by Commdlg.dll.
+  - The bitmap and icon resources that are used by Commdlg.dll.
 
 - Indicate.rc: Contains string resources for the status-bar key-state indicators, such as "CAP" for Caps Lock.
 
@@ -55,10 +55,10 @@ The following framework resources are contained in the MFC\INCLUDE directory:
 To use other clip-art resources, follow the same steps. The only difference is that you will open the appropriate .rc file instead of Common.rc.
 
 > [!NOTE]
->  Be careful not to unintentionally move resources out of Common.rc permanently. If you hold the CTRL key while you drag resources, you will create a copy. If you do not hold CTRL down while you drag, the resources will be moved. If you are concerned that you might have accidentally made changes to the Common.rc file, click "No" when you are asked whether to save the changes to Common.rc.
+> Be careful not to unintentionally move resources out of Common.rc permanently. If you hold the CTRL key while you drag resources, you will create a copy. If you do not hold CTRL down while you drag, the resources will be moved. If you are concerned that you might have accidentally made changes to the Common.rc file, click "No" when you are asked whether to save the changes to Common.rc.
 
 > [!NOTE]
->  The .rc resource files have a special TEXTINCLUDE resource in them that will prevent you from accidentally saving on top of the standard .rc files.
+> The .rc resource files have a special TEXTINCLUDE resource in them that will prevent you from accidentally saving on top of the standard .rc files.
 
 ### Customizing Standard Framework Resources
 
@@ -86,7 +86,7 @@ In some rare cases you might want to customize the contents of the standard fram
 1. Modify the copy of the standard resources in your application resource file.
 
 > [!NOTE]
->  Do not modify the resources directly in the standard .rc files. Doing so will modify the resources available in every application, not just in the one you are currently working on.
+> Do not modify the resources directly in the standard .rc files. Doing so will modify the resources available in every application, not just in the one you are currently working on.
 
 ## See also
 

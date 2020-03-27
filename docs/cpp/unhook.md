@@ -85,7 +85,7 @@ An alternative to using **__unhook** is to use the -= operator.
 For information on coding managed events in the new syntax, see [event](../extensions/event-cpp-component-extensions.md).
 
 > [!NOTE]
->  A templated class or struct cannot contain events.
+> A templated class or struct cannot contain events.
 
 ## Example
 

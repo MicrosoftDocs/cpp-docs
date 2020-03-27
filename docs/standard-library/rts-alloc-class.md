@@ -40,7 +40,7 @@ This class template holds multiple block allocator instances and determines whic
 
 **Namespace:** stdext
 
-## <a name="allocate"></a>  rts_alloc::allocate
+## <a name="allocate"></a> rts_alloc::allocate
 
 Allocates a block of memory.
 
@@ -62,7 +62,7 @@ A pointer to the allocated object.
 
 The member function returns `caches[_IDX].allocate(count)`, where the index `_IDX` is determined by the requested block size *count*, or, if *count* is too large, it returns `operator new(count)`. `cache`, which represents the cache object.
 
-## <a name="deallocate"></a>  rts_alloc::deallocate
+## <a name="deallocate"></a> rts_alloc::deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 
@@ -81,7 +81,7 @@ void deallocate(void* ptr, std::size_t count);
 
 The member function calls `caches[_IDX].deallocate(ptr, count)`, where the index `_IDX` is determined by the requested block size *count*, or, if *count* is too large, it returns `operator delete(ptr)`.
 
-## <a name="equals"></a>  rts_alloc::equals
+## <a name="equals"></a> rts_alloc::equals
 
 Compares two caches for equality.
 

@@ -13,9 +13,9 @@ This topic explains the RFX process. This is an advanced topic covering:
 - [The RFX process](#_core_the_record_field_exchange_process)
 
 > [!NOTE]
->  This topic applies to classes derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, bulk record field exchange (Bulk RFX) is implemented. Bulk RFX is similar to RFX. To understand the differences, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> This topic applies to classes derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, bulk record field exchange (Bulk RFX) is implemented. Bulk RFX is similar to RFX. To understand the differences, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="_core_rfx_and_the_recordset"></a> RFX and the Recordset
+## <a name="_core_rfx_and_the_recordset"></a> RFX and the Recordset
 
 The recordset object's field data members, taken together, constitute an edit buffer that holds the selected columns of one record. When the recordset is first opened and is about to read the first record, RFX binds (associates) each selected column to the address of the appropriate field data member. When the recordset updates a record, RFX calls ODBC API functions to send a SQL **UPDATE** or **INSERT** statement to the driver. RFX uses its knowledge of the field data members to specify the columns to write.
 
@@ -25,11 +25,11 @@ Besides exchanging data between the data source and the recordset's field data m
 
 Your recordset class's override of `DoFieldExchange` does all the work, moving data in both directions. Like dialog data exchange (DDX), RFX needs information about the data members of your class. The wizard provides the necessary information by writing a recordset-specific implementation of `DoFieldExchange` for you, based on the field data member names and data types you specify with the wizard.
 
-##  <a name="_core_the_record_field_exchange_process"></a> Record Field Exchange Process
+## <a name="_core_the_record_field_exchange_process"></a> Record Field Exchange Process
 
 This section describes the sequence of RFX events as a recordset object is opened and as you add, update, and delete records. The table [Sequence of RFX Operations During Recordset Open](#_core_sequence_of_rfx_operations_during_recordset_open) and the table [Sequence of RFX Operations During Scrolling](#_core_sequence_of_rfx_operations_during_scrolling) in this topic show the process as RFX processes a `Move` command in the recordset and as RFX manages an update. During these processes, [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) is called to perform many different operations. The `m_nOperation` data member of the [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) object determines which operation is requested. You might find it helpful to read [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) and [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) before you read this material.
 
-###  <a name="_mfc_rfx.3a_.initial_binding_of_columns_and_parameters"></a> RFX: Initial Binding of Columns and Parameters
+### <a name="_mfc_rfx.3a_.initial_binding_of_columns_and_parameters"></a> RFX: Initial Binding of Columns and Parameters
 
 The following RFX activities occur, in the order shown, when you call a recordset object's [Open](../../mfc/reference/crecordset-class.md#open) member function:
 
@@ -55,7 +55,7 @@ The following table shows the sequence of RFX operations when you open a records
 
 Recordsets use ODBC's prepared execution to allow for fast requerying with the same SQL statement. For more information about prepared execution, see the ODBC SDK *Programmer's Reference* in the MSDN Library.
 
-###  <a name="_mfc_rfx.3a_.scrolling"></a> RFX: Scrolling
+### <a name="_mfc_rfx.3a_.scrolling"></a> RFX: Scrolling
 
 When you scroll from one record to another, the framework calls `DoFieldExchange` to replace the values previously stored in the field data members with values for the new record.
 
@@ -69,7 +69,7 @@ The following table shows the sequence of RFX operations when the user moves fro
 |||2. ODBC does the move and fills in the data.|
 ||3. Fix up the data for C++.||
 
-###  <a name="_mfc_rfx.3a_.adding_new_records_and_editing_existing_records"></a> RFX: Adding New Records and Editing Existing Records
+### <a name="_mfc_rfx.3a_.adding_new_records_and_editing_existing_records"></a> RFX: Adding New Records and Editing Existing Records
 
 If you add a new record, the recordset operates as an edit buffer to build up the contents of the new record. As with adding records, editing records involves changing the values of the recordset's field data members. From the RFX perspective, the sequence is as follows:
 

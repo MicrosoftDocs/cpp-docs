@@ -10,7 +10,7 @@ ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
 This class implements the `IBindStatusCallback` interface.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -90,7 +90,7 @@ The asynchronous moniker uses the callback function `OnData` to call your applic
 
 **Header:** atlctl.h
 
-##  <a name="cbindstatuscallback"></a>  CBindStatusCallback::CBindStatusCallback
+## <a name="cbindstatuscallback"></a> CBindStatusCallback::CBindStatusCallback
 
 The constructor.
 
@@ -104,7 +104,7 @@ Creates an object to receive notifications concerning the asynchronous data tran
 
 The constructor also initializes [m_pT](#m_pt) and [m_pFunc](#m_pfunc) to NULL.
 
-##  <a name="dtor"></a>  CBindStatusCallback::~CBindStatusCallback
+## <a name="dtor"></a> CBindStatusCallback::~CBindStatusCallback
 
 The destructor.
 
@@ -116,7 +116,7 @@ The destructor.
 
 Frees all allocated resources.
 
-##  <a name="download"></a>  CBindStatusCallback::Download
+## <a name="download"></a> CBindStatusCallback::Download
 
 Creates a `CBindStatusCallback` object and calls `StartAsyncDownload` to start downloading data asynchronously from the specified URL.
 
@@ -156,7 +156,7 @@ One of the standard HRESULT values.
 
 Every time data is available it is sent to the object through `OnDataAvailable`. `OnDataAvailable` reads the data and calls the function pointed to by *pFunc* (for example, to store the data or print it to the screen).
 
-##  <a name="getbindinfo"></a>  CBindStatusCallback::GetBindInfo
+## <a name="getbindinfo"></a> CBindStatusCallback::GetBindInfo
 
 Called to tell the moniker how to bind.
 
@@ -190,7 +190,7 @@ One of the standard HRESULT values.
 
 The default implementation sets the binding to be asynchronous and to use the data-push model. In the data-push model, the moniker drives the asynchronous bind operation and continuously notifies the client whenever new data is available.
 
-##  <a name="getpriority"></a>  CBindStatusCallback::GetPriority
+## <a name="getpriority"></a> CBindStatusCallback::GetPriority
 
 Called by the asynchronous moniker to get the priority of the bind operation.
 
@@ -207,7 +207,7 @@ STDMETHOD(GetPriority)(LONG* pnPriority);
 
 Returns E_NOTIMPL.
 
-##  <a name="m_dwavailabletoread"></a>  CBindStatusCallback::m_dwAvailableToRead
+## <a name="m_dwavailabletoread"></a> CBindStatusCallback::m_dwAvailableToRead
 
 Can be used to store the number of bytes available to be read.
 
@@ -219,7 +219,7 @@ DWORD m_dwAvailableToRead;
 
 Initialized to zero in `StartAsyncDownload`.
 
-##  <a name="m_dwtotalread"></a>  CBindStatusCallback::m_dwTotalRead
+## <a name="m_dwtotalread"></a> CBindStatusCallback::m_dwTotalRead
 
 The cumulative total of bytes read in the asynchronous data transfer.
 
@@ -231,7 +231,7 @@ DWORD m_dwTotalRead;
 
 Incremented every time `OnDataAvailable` is called by the number of bytes actually read. Initialized to zero in `StartAsyncDownload`.
 
-##  <a name="m_pfunc"></a>  CBindStatusCallback::m_pFunc
+## <a name="m_pfunc"></a> CBindStatusCallback::m_pFunc
 
 The function pointed to by `m_pFunc` is called by `OnDataAvailable` after it reads the available data (for example, to store the data or print it to the screen).
 
@@ -251,7 +251,7 @@ void Function_Name(
    );
 ```
 
-##  <a name="m_pt"></a>  CBindStatusCallback::m_pT
+## <a name="m_pt"></a> CBindStatusCallback::m_pT
 
 A pointer to the object requesting the asynchronous data transfer.
 
@@ -263,7 +263,7 @@ T* m_pT;
 
 The `CBindStatusCallback` object is templatized on this object's class.
 
-##  <a name="m_spbindctx"></a>  CBindStatusCallback::m_spBindCtx
+## <a name="m_spbindctx"></a> CBindStatusCallback::m_spBindCtx
 
 A pointer to an [IBindCtx](/windows/win32/api/objidl/nn-objidl-ibindctx) interface that provides access to the bind context (an object that stores information about a particular moniker binding operation).
 
@@ -275,7 +275,7 @@ CComPtr<IBindCtx> m_spBindCtx;
 
 Initialized in `StartAsyncDownload`.
 
-##  <a name="m_spbinding"></a>  CBindStatusCallback::m_spBinding
+## <a name="m_spbinding"></a> CBindStatusCallback::m_spBinding
 
 A pointer to the `IBinding` interface of the current bind operation.
 
@@ -287,7 +287,7 @@ CComPtr<IBinding> m_spBinding;
 
 Initialized in `OnStartBinding` and released in `OnStopBinding`.
 
-##  <a name="m_spmoniker"></a>  CBindStatusCallback::m_spMoniker
+## <a name="m_spmoniker"></a> CBindStatusCallback::m_spMoniker
 
 A pointer to the [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker) interface for the URL to use.
 
@@ -299,7 +299,7 @@ CComPtr<IMoniker> m_spMoniker;
 
 Initialized in `StartAsyncDownload`.
 
-##  <a name="m_spstream"></a>  CBindStatusCallback::m_spStream
+## <a name="m_spstream"></a> CBindStatusCallback::m_spStream
 
 A pointer to the [IStream](/windows/win32/api/objidl/nn-objidl-istream) interface of the current bind operation.
 
@@ -311,7 +311,7 @@ CComPtr<IStream> m_spStream;
 
 Initialized in `OnDataAvailable` from the `STGMEDIUM` structure when the BCSF flag is BCSF_FIRSTDATANOTIFICATION and released when the BCSF flag is BCSF_LASTDATANOTIFICATION.
 
-##  <a name="ondataavailable"></a>  CBindStatusCallback::OnDataAvailable
+## <a name="ondataavailable"></a> CBindStatusCallback::OnDataAvailable
 
 The system-supplied asynchronous moniker calls `OnDataAvailable` to provide data to the object as it becomes available.
 
@@ -345,7 +345,7 @@ One of the standard HRESULT values.
 
 `OnDataAvailable` reads the data, then calls a method of your object's class (for example, to store the data or print it to the screen). See [CBindStatusCallback::StartAsyncDownload](#startasyncdownload) for details.
 
-##  <a name="onlowresource"></a>  CBindStatusCallback::OnLowResource
+## <a name="onlowresource"></a> CBindStatusCallback::OnLowResource
 
 Called when resources are low.
 
@@ -362,7 +362,7 @@ Reserved.
 
 Returns S_OK.
 
-##  <a name="onobjectavailable"></a>  CBindStatusCallback::OnObjectAvailable
+## <a name="onobjectavailable"></a> CBindStatusCallback::OnObjectAvailable
 
 Called by the asynchronous moniker to pass an object interface pointer to your application.
 
@@ -382,7 +382,7 @@ Address of the IUnknown interface. Unused.
 
 Returns S_OK.
 
-##  <a name="onprogress"></a>  CBindStatusCallback::OnProgress
+## <a name="onprogress"></a> CBindStatusCallback::OnProgress
 
 Called to indicate the progress of a data downloading process.
 
@@ -412,7 +412,7 @@ Address of a string value. Unused.
 
 Returns S_OK.
 
-##  <a name="onstartbinding"></a>  CBindStatusCallback::OnStartBinding
+## <a name="onstartbinding"></a> CBindStatusCallback::OnStartBinding
 
 Sets the data member [m_spBinding](#m_spbinding) to the `IBinding` pointer in *pBinding*.
 
@@ -428,7 +428,7 @@ Reserved for future use.
 *pBinding*<br/>
 [in] Address of the IBinding interface of the current bind operation. This cannot be NULL. The client should call AddRef on this pointer to keep a reference to the binding object.
 
-##  <a name="onstopbinding"></a>  CBindStatusCallback::OnStopBinding
+## <a name="onstopbinding"></a> CBindStatusCallback::OnStopBinding
 
 Releases the `IBinding` pointer in the data member [m_spBinding](#m_spbinding).
 
@@ -448,7 +448,7 @@ Address of a string value. Unused.
 
 Called by the system-supplied asynchronous moniker to indicate the end of the bind operation.
 
-##  <a name="startasyncdownload"></a>  CBindStatusCallback::StartAsyncDownload
+## <a name="startasyncdownload"></a> CBindStatusCallback::StartAsyncDownload
 
 Starts downloading data asynchronously from the specified URL.
 

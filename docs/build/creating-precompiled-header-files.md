@@ -115,7 +115,7 @@ This table lists compiler options that might trigger an inconsistency warning wh
 |/Zi|Generate complete debugging information|If this option is in effect when the precompiled header is created, subsequent compilations that use the precompilation can use that debugging information. If /Zi is not in effect when the precompiled header is created, subsequent compilations that use the precompilation and the /Zi option trigger a warning. The debugging information is placed in the current object file, and local symbols defined in the precompiled header are not available to the debugger.|
 
 > [!NOTE]
->  The precompiled header facility is intended for use only in C and C++ source files.
+> The precompiled header facility is intended for use only in C and C++ source files.
 
 ## Using Precompiled Headers in a Project
 

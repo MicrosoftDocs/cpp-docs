@@ -48,7 +48,7 @@ The base class, `CNoTrackObject`, is an undocumented base class (located in AFXT
 
 **Header:** afxocc.h
 
-##  <a name="createcontainer"></a>  COccManager::CreateContainer
+## <a name="createcontainer"></a> COccManager::CreateContainer
 
 Called by the framework to create a control container.
 
@@ -69,7 +69,7 @@ A pointer to the newly created container; otherwise NULL.
 
 For more information on creating custom sites, see [COleControlContainer::AttachControlSite](../../mfc/reference/colecontrolcontainer-class.md#attachcontrolsite).
 
-##  <a name="createdlgcontrols"></a>  COccManager::CreateDlgControls
+## <a name="createdlgcontrols"></a> COccManager::CreateDlgControls
 
 Call this function to create ActiveX controls specified by the *pOccDialogInfo* parameter.
 
@@ -103,7 +103,7 @@ A pointer to a resource.
 
 Nonzero if the control was created successfully; otherwise zero.
 
-##  <a name="createsite"></a>  COccManager::CreateSite
+## <a name="createsite"></a> COccManager::CreateSite
 
 Called by the framework to create a control site, hosted by the container pointed to by *pCtrlCont*.
 
@@ -126,7 +126,7 @@ Override this function to create a custom control site, using your [COleControlS
 
 Each control container can host multiple sites. Create additional sites with multiple calls to `CreateSite`.
 
-##  <a name="getdefbtncode"></a>  COccManager::GetDefBtnCode
+## <a name="getdefbtncode"></a> COccManager::GetDefBtnCode
 
 Call this function to determine if the control is a default push button.
 
@@ -149,7 +149,7 @@ One of the following values:
 
 - **0** Control is not a button.
 
-##  <a name="isdialogmessage"></a>  COccManager::IsDialogMessage
+## <a name="isdialogmessage"></a> COccManager::IsDialogMessage
 
 Called by the framework to determine whether a message is intended for the specified dialog box and, if it is, processes the message.
 
@@ -177,7 +177,7 @@ The default behavior of `IsDialogMessage` is to check for keyboard messages and 
 
 Override this function to provide custom behavior for messages sent to the specified dialog.
 
-##  <a name="islabelcontrol"></a>  COccManager::IsLabelControl
+## <a name="islabelcontrol"></a> COccManager::IsLabelControl
 
 Call this function to determine if the specified control is a label control.
 
@@ -199,7 +199,7 @@ Nonzero if the control is a label; otherwise zero
 
 A label control is one that acts like a label for whatever control is next in the ordering.
 
-##  <a name="ismatchingmnemonic"></a>  COccManager::IsMatchingMnemonic
+## <a name="ismatchingmnemonic"></a> COccManager::IsMatchingMnemonic
 
 Call this function to determine if the current mnemonic matches that represented by the control.
 
@@ -227,7 +227,7 @@ Nonzero if the mnemonic matches the control; otherwise zero
 
 ### Remarks
 
-##  <a name="onevent"></a>  COccManager::OnEvent
+## <a name="onevent"></a> COccManager::OnEvent
 
 Called by the framework to handle the specified event.
 
@@ -261,7 +261,7 @@ Nonzero if the event was handled, otherwise zero.
 
 Override this function to customize the default event-handling process.
 
-##  <a name="precreatedialog"></a>  COccManager::PreCreateDialog
+## <a name="precreatedialog"></a> COccManager::PreCreateDialog
 
 Called by the framework to process a dialog template for ActiveX controls before creating the actual dialog box.
 
@@ -289,7 +289,7 @@ The default behavior makes a call to `SplitDialogTemplate`, determining if there
 
 Override this function to customize the process of creating a dialog box hosting ActiveX controls.
 
-##  <a name="postcreatedialog"></a>  COccManager::PostCreateDialog
+## <a name="postcreatedialog"></a> COccManager::PostCreateDialog
 
 Called by the framework to free memory allocated for the dialog template.
 
@@ -308,7 +308,7 @@ This memory was allocated by a call to `SplitDialogTemplate`, and was used for a
 
 Override this function to customize the process of cleaning up any resources used by the dialog box object.
 
-##  <a name="setdefaultbutton"></a>  COccManager::SetDefaultButton
+## <a name="setdefaultbutton"></a> COccManager::SetDefaultButton
 
 Call this function to set the control as the default button.
 
@@ -333,9 +333,9 @@ Nonzero if successful; otherwise zero.
 ### Remarks
 
 > [!NOTE]
->  The control must have the OLEMISC_ACTSLIKEBUTTON status bit set. For more information on OLEMISC flags, see the [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc) topic in the Windows SDK.
+> The control must have the OLEMISC_ACTSLIKEBUTTON status bit set. For more information on OLEMISC flags, see the [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc) topic in the Windows SDK.
 
-##  <a name="splitdialogtemplate"></a>  COccManager::SplitDialogTemplate
+## <a name="splitdialogtemplate"></a> COccManager::SplitDialogTemplate
 
 Called by the framework to split the ActiveX controls from common dialog controls.
 
@@ -364,7 +364,7 @@ If any ActiveX controls are found, the template is analyzed and a new template, 
 If there are no ActiveX controls in the template, NULL is returned *.*
 
 > [!NOTE]
->  Memory allocated for the new template is freed in the `PostCreateDialog` function.
+> Memory allocated for the new template is freed in the `PostCreateDialog` function.
 
 Override this function to customize this process.
 

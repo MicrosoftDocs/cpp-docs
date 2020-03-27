@@ -18,7 +18,7 @@ The standard relationship among a document, its view, and its frame window is de
 
 - [Splitter windows](#_core_splitter_windows)
 
-##  <a name="_core_multiple_document_types"></a> Multiple Document Types
+## <a name="_core_multiple_document_types"></a> Multiple Document Types
 
 The MFC Application Wizard creates a single document class for you. In some cases, though, you may need to support more than one document type. For example, your application may need worksheet and chart documents. Each document type is represented by its own document class and probably by its own view class as well. When the user chooses the File New command, the framework displays a dialog box that lists the supported document types. Then it creates a document of the type that the user chooses. Each document type is managed by its own document-template object.
 
@@ -26,7 +26,7 @@ To create extra document classes, see [Adding a Class](../ide/adding-a-class-vis
 
 To let the framework know about your extra document class, you must add a second call to [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) in your application class's [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) override. For more information, see [Document Templates](../mfc/document-templates-and-the-document-view-creation-process.md).
 
-##  <a name="_core_multiple_views"></a> Multiple Views
+## <a name="_core_multiple_views"></a> Multiple Views
 
 Many documents require only a single view, but it is possible to support more than one view of a single document. To help you implement multiple views, a document object keeps a list of its views, provides member functions for adding and removing views, and supplies the [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) member function for letting multiple views know when the document's data has changed.
 
@@ -53,11 +53,11 @@ The framework provides these models by implementing the New Window command and b
 
 For more information about `UpdateAllViews`, see class [CView](../mfc/reference/cview-class.md) in the *MFC Reference* and the [Scribble sample](../overview/visual-cpp-samples.md).
 
-##  <a name="_core_multiple_frame_windows"></a> Multiple Frame Windows
+## <a name="_core_multiple_frame_windows"></a> Multiple Frame Windows
 
 You can use the New Window command on the Window menu for MDI applications to create a second frame window on the same document. For more information, see the first model in the figure Multiple-View User Interfaces.
 
-##  <a name="_core_splitter_windows"></a> Splitter Windows
+## <a name="_core_splitter_windows"></a> Splitter Windows
 
 In a splitter window, the window is, or can be, split into two or more scrollable panes. A splitter control (or "split box") in the window frame next to the scroll bars allows the user to adjust the relative sizes of the panes. Each pane is a view on the same document. In "dynamic" splitters, the views are of the same class, as shown in part b of the figure Multiple-View User Interfaces. In "static" splitters, the views can be of different classes. Splitter windows of both kinds are supported by class [CSplitterWnd](../mfc/reference/csplitterwnd-class.md).
 

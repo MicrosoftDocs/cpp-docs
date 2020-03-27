@@ -20,17 +20,17 @@ The parallel algorithms are composed from existing functionality in the Concurre
 
 - [The parallel_transform and parallel_reduce Algorithms](#parallel_transform_reduce)
 
-    - [The parallel_transform Algorithm](#parallel_transform)
+  - [The parallel_transform Algorithm](#parallel_transform)
 
-    - [The parallel_reduce Algorithm](#parallel_reduce)
+  - [The parallel_reduce Algorithm](#parallel_reduce)
 
-    - [Example: Performing Map and Reduce in Parallel](#map_reduce_example)
+  - [Example: Performing Map and Reduce in Parallel](#map_reduce_example)
 
 - [Partitioning Work](#partitions)
 
 - [Parallel Sorting](#parallel_sorting)
 
-    - [Choosing a Sorting Algorithm](#choose_sort)
+  - [Choosing a Sorting Algorithm](#choose_sort)
 
 ## <a name="parallel_for"></a> The parallel_for Algorithm
 

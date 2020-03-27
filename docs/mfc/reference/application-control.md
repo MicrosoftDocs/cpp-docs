@@ -23,7 +23,7 @@ OLE requires substantial control over applications and their objects. The OLE sy
 |[AfxOleRegisterServerClass](#afxoleregisterserverclass)|Registers a server in the OLE system registry.|
 |[AfxOleSetEditMenu](#afxoleseteditmenu)|Implements the user interface for the *typename* Object command.|
 
-##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp
+## <a name="afxolecanexitapp"></a> AfxOleCanExitApp
 
 Indicates whether the application can terminate.
 
@@ -47,7 +47,7 @@ An application should not terminate if there are outstanding references to its o
 
 **Header**: afxdisp.h
 
-##  <a name="afxolegetmessagefilter"></a>  AfxOleGetMessageFilter
+## <a name="afxolegetmessagefilter"></a> AfxOleGetMessageFilter
 
 Retrieves the application's current message filter.
 
@@ -73,7 +73,7 @@ Call this function to access the current `COleMessageFilter`-derived object, jus
 
 **Header**: afxwin.h
 
-##  <a name="afxolegetuserctrl"></a>  AfxOleGetUserCtrl
+## <a name="afxolegetuserctrl"></a> AfxOleGetUserCtrl
 
 Retrieves the current user-control flag.
 
@@ -93,7 +93,7 @@ The user is in control of the application when the user has explicitly opened or
 
 **Header**: afxdisp.h
 
-##  <a name="afxolesetuserctrl"></a>  AfxOleSetUserCtrl
+## <a name="afxolesetuserctrl"></a> AfxOleSetUserCtrl
 
 Sets or clears the user-control flag, which is explained in the reference for `AfxOleGetUserCtrl`.
 
@@ -116,7 +116,7 @@ Call this function if other actions in your application should put the user in c
 
 **Header**: afxdisp.h
 
-##  <a name="afxolelockapp"></a>  AfxOleLockApp
+## <a name="afxolelockapp"></a> AfxOleLockApp
 
 Increments the framework's global count of the number of active objects in the application.
 
@@ -140,7 +140,7 @@ Call `AfxOleLockApp` from any object that exposes OLE interfaces, if it would be
 
 **Header**: afxdisp.h
 
-##  <a name="afxoleunlockapp"></a>  AfxOleUnlockApp
+## <a name="afxoleunlockapp"></a> AfxOleUnlockApp
 
 Decrements the framework's count of active objects in the application.
 
@@ -203,7 +203,7 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
 
 **Header:** afxwin.h
 
-##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass
+## <a name="afxoleregisterserverclass"></a> AfxOleRegisterServerClass
 
 This function allows you to register your server in the OLE system registry.
 
@@ -273,7 +273,7 @@ The symbols are filled in as follows:
 
 **Header**: afxdisp.h
 
-##  <a name="afxoleseteditmenu"></a>  AfxOleSetEditMenu
+## <a name="afxoleseteditmenu"></a> AfxOleSetEditMenu
 
 Implements the user interface for the *typename* Object command.
 

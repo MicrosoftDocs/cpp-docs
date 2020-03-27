@@ -9,7 +9,7 @@ ms.assetid: fd8eb956-f4a0-4ffb-b401-328c73e66986
 Unless your Visual C++ application is self-contained and can be deployed by using a copy command, we recommend that you use Windows Installer for deployment. Windows Installer supports installation, repair, and uninstallation, and also supports atomic updating of application files, dependencies, and registry entries.
 
 > [!NOTE]
->  Although [ClickOnce](/visualstudio/deployment/clickonce-security-and-deployment) deployment for Visual C++ native applications is possible in Visual Studio, it requires extra steps. For more information, see [ClickOnce Deployment for Visual C++ Applications](clickonce-deployment-for-visual-cpp-applications.md).
+> Although [ClickOnce](/visualstudio/deployment/clickonce-security-and-deployment) deployment for Visual C++ native applications is possible in Visual Studio, it requires extra steps. For more information, see [ClickOnce Deployment for Visual C++ Applications](clickonce-deployment-for-visual-cpp-applications.md).
 
 ## Visual C++ Libraries are Shared DLLs
 

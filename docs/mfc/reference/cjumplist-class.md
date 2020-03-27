@@ -49,7 +49,7 @@ class CJumpList;
 
 **Header:** afxadv.h
 
-##  <a name="_dtorcjumplist"></a>  CJumpList::~CJumpList
+## <a name="_dtorcjumplist"></a> CJumpList::~CJumpList
 
 Destroys a `CJumpList` object.
 
@@ -57,7 +57,7 @@ Destroys a `CJumpList` object.
 ~CJumpList();
 ```
 
-##  <a name="abortlist"></a>  CJumpList::AbortList
+## <a name="abortlist"></a> CJumpList::AbortList
 
 Aborts a list-building transaction without committing.
 
@@ -69,7 +69,7 @@ void AbortList();
 
 Calling this method has the same effect as destroying `CJumpList` without calling `CommitList`.
 
-##  <a name="adddestination"></a>  CJumpList::AddDestination
+## <a name="adddestination"></a> CJumpList::AddDestination
 
 Adds destination to the list.
 
@@ -110,7 +110,7 @@ Specifies a Shell Link representing the destination being added.
 
 The instance of `CJumpList` internally accumulates added destinations and then commits them in `CommitList`.
 
-##  <a name="addknowncategory"></a>  CJumpList::AddKnownCategory
+## <a name="addknowncategory"></a> CJumpList::AddKnownCategory
 
 Appends a Known Category to the list.
 
@@ -129,7 +129,7 @@ Specifies a known category type. Can be either KDC_RECENT, or KDC_KNOWN.
 
 Known Categories are the Frequent and Recent categories that we will automatically calculate for every application that utilizes `SHAddToRecentDocs` (or indirectly uses it as the shell will call it on the application's behalf in some scenarios).
 
-##  <a name="addtask"></a>  CJumpList::AddTask
+## <a name="addtask"></a> CJumpList::AddTask
 
 Adds items to the canonical Tasks category.
 
@@ -170,7 +170,7 @@ Shell Link that represents a task to be added.
 
 The instance of `CJumpList` accumulates specified tasks and adds them to the Destination List during `CommitList`. Task items will appear in a category at the bottom of the application's destination menu. This category takes precedence over all other categories when it is filled in the UI.
 
-##  <a name="addtasks"></a>  CJumpList::AddTasks
+## <a name="addtasks"></a> CJumpList::AddTasks
 
 Adds items to the canonical Tasks category.
 
@@ -189,7 +189,7 @@ A collection of tasks to be added.
 
 The instance of CJumpList accumulates specified tasks and adds them to the Destination List during `CommitList`. Task items will appear in a category at the bottom of the application's destination menu. This category takes precedence over all other categories when it is filled in the UI.
 
-##  <a name="addtaskseparator"></a>  CJumpList::AddTaskSeparator
+## <a name="addtaskseparator"></a> CJumpList::AddTaskSeparator
 
 Adds a separator between tasks.
 
@@ -201,7 +201,7 @@ BOOL AddTaskSeparator();
 
 Nonzero if it is successful, 0 if it is not.
 
-##  <a name="cjumplist"></a>  CJumpList::CJumpList
+## <a name="cjumplist"></a> CJumpList::CJumpList
 
 Constructs a `CJumpList` object.
 
@@ -214,7 +214,7 @@ CJumpList(BOOL bAutoCommit = TRUE);
 *bAutoCommit*<br/>
 If this parameter is FALSE the list is not automatically committed in  destructor.
 
-##  <a name="clearall"></a>  CJumpList::ClearAll
+## <a name="clearall"></a> CJumpList::ClearAll
 
 Removes all tasks and destinations that have been added to the current instance of `CJumpList` so far.
 
@@ -226,7 +226,7 @@ void ClearAll();
 
 This method clears and releases all data and internal interfaces.
 
-##  <a name="clearalldestinations"></a>  CJumpList::ClearAllDestinations
+## <a name="clearalldestinations"></a> CJumpList::ClearAllDestinations
 
 Removes all destinations that have been added to the current instance of CJumpList so far.
 
@@ -238,7 +238,7 @@ void ClearAllDestinations();
 
 Call this function if you need to remove all destinations that have been added so far in the current session of destination list building and add other destinations again. If the internal `ICustomDestinationList` has been initialized, it's left alive.
 
-##  <a name="commitlist"></a>  CJumpList::CommitList
+## <a name="commitlist"></a> CJumpList::CommitList
 
 Ends a list-building transaction and commits the reported list to the associated store (the registry in this case).
 
@@ -252,7 +252,7 @@ BOOL CommitList();
 
 The commit is atomic. An error will be returned if the commit fails.  When `CommitList` is called, the current list of removed items will be cleaned up. Calling this method resets the object so that it does not have an active list-building transaction. To update the list, `BeginList` needs to be called again.
 
-##  <a name="getdestinationlist"></a>  CJumpList::GetDestinationList
+## <a name="getdestinationlist"></a> CJumpList::GetDestinationList
 
 Retrieves an interface pointer to destination list.
 
@@ -266,7 +266,7 @@ ICustomDestinationList* GetDestinationList();
 
 If the jump list has not been initialized, or has been committed or aborted, the returned value will be NULL.
 
-##  <a name="getmaxslots"></a>  CJumpList::GetMaxSlots
+## <a name="getmaxslots"></a> CJumpList::GetMaxSlots
 
 Retrieves the maximum number of items, including category headers that can display in the calling application's destination menu.
 
@@ -280,7 +280,7 @@ UINT GetMaxSlots() const;
 
 Applications may only report a number of items and category headers combined up to this value. If calls to `AppendCategory`, `AppendKnownCategory`, or `AddUserTasks` exceed this number, they will return failure.
 
-##  <a name="getremoveditems"></a>  CJumpList::GetRemovedItems
+## <a name="getremoveditems"></a> CJumpList::GetRemovedItems
 
 Returns array of items that represent removed destinations.
 
@@ -294,7 +294,7 @@ IObjectArray* GetRemovedItems();
 
 The removed destinations are retrieved during initialization of jump list. When generating a new destination list, applications are expected to first process the removed destinations list, clearing their tracking data for any item returned by the removed list enumerator. If an application attempts to provide an item that was just removed in the transaction that the current call to `BeginList` started, the method call that re-added that item will fail, to ensure that applications are respecting the removed list.
 
-##  <a name="initializelist"></a>  CJumpList::InitializeList
+## <a name="initializelist"></a> CJumpList::InitializeList
 
 Begins a list-building transaction.
 
@@ -308,7 +308,7 @@ BOOL InitializeList();
 
 You don't need to call this method explicitly unless you wish to retrieve a pointer to `ICustomDestinationList` using `GetDestinationList`, the number of available slots using `GetMaxSlots`, or list of removed items using `GetRemovedItems`.
 
-##  <a name="setappid"></a>  CJumpList::SetAppID
+## <a name="setappid"></a> CJumpList::SetAppID
 
 Sets the Application User Model ID for the list that will be built.
 

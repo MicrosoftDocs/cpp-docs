@@ -38,7 +38,7 @@ This interface is typically utilized to walk the topology of the system as obser
 
 **Namespace:** concurrency
 
-## <a name="getid"></a>  ITopologyExecutionResource::GetId Method
+## <a name="getid"></a> ITopologyExecutionResource::GetId Method
 
 Returns the Resource Manager's unique identifier for this execution resource.
 
@@ -50,7 +50,7 @@ virtual unsigned int GetId() const = 0;
 
 The Resource Manager's unique identifier for this execution resource.
 
-## <a name="getnext"></a>  ITopologyExecutionResource::GetNext Method
+## <a name="getnext"></a> ITopologyExecutionResource::GetNext Method
 
 Returns an interface to the next execution resource in enumeration order.
 

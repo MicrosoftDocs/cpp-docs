@@ -8,7 +8,7 @@ ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
 
 This article shows how to use lambda expressions in your programs. For an overview of lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md). For more information about the structure of a lambda expression, see [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md).
 
-##  <a name="declaringLambdaExpressions"></a> Declaring Lambda Expressions
+## <a name="declaringLambdaExpressions"></a> Declaring Lambda Expressions
 
 ### Example 1
 
@@ -92,7 +92,7 @@ int main()
 
 [[In This Article](#top)]
 
-##  <a name="callingLambdaExpressions"></a> Calling Lambda Expressions
+## <a name="callingLambdaExpressions"></a> Calling Lambda Expressions
 
 You can call a lambda expression immediately, as shown in the next code snippet. The second snippet shows how to pass a lambda as an argument to C++ Standard Library algorithms such as `find_if`.
 
@@ -172,7 +172,7 @@ For more information about the `find_if` function, see [find_if](../standard-lib
 
 [[In This Article](#top)]
 
-##  <a name="nestingLambdaExpressions"></a> Nesting Lambda Expressions
+## <a name="nestingLambdaExpressions"></a> Nesting Lambda Expressions
 
 ### Example
 
@@ -210,7 +210,7 @@ In this example, `[](int y) { return y * 2; }` is the nested lambda expression.
 
 [[In This Article](#top)]
 
-##  <a name="higherOrderLambdaExpressions"></a> Higher-Order Lambda Functions
+## <a name="higherOrderLambdaExpressions"></a> Higher-Order Lambda Functions
 
 ### Example
 
@@ -259,7 +259,7 @@ int main()
 
 [[In This Article](#top)]
 
-##  <a name="methodLambdaExpressions"></a> Using a Lambda Expression in a Function
+## <a name="methodLambdaExpressions"></a> Using a Lambda Expression in a Function
 
 ### Example
 
@@ -352,7 +352,7 @@ The `ApplyScale` function uses a lambda expression to print the product of the s
 
 [[In This Article](#top)]
 
-##  <a name="templateLambdaExpressions"></a> Using Lambda Expressions with Templates
+## <a name="templateLambdaExpressions"></a> Using Lambda Expressions with Templates
 
 ### Example
 
@@ -416,7 +416,7 @@ For more information about C++ templates, see [Templates](../cpp/templates-cpp.m
 
 [[In This Article](#top)]
 
-##  <a name="ehLambdaExpressions"></a> Handling Exceptions
+## <a name="ehLambdaExpressions"></a> Handling Exceptions
 
 ### Example
 
@@ -472,7 +472,7 @@ For more information about exception handling, see [Exception Handling](../cpp/e
 
 [[In This Article](#top)]
 
-##  <a name="managedLambdaExpressions"></a> Using Lambda Expressions with Managed Types (C++/CLI)
+## <a name="managedLambdaExpressions"></a> Using Lambda Expressions with Managed Types (C++/CLI)
 
 ### Example
 
@@ -508,7 +508,7 @@ Hello!
 You can also use lambda expressions with the STL/CLR library. For more information, see [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md).
 
 > [!IMPORTANT]
->  Lambdas are not supported in these common language runtime (CLR) managed entities: **ref class**, **ref struct**, **value class**, and **value struct**.
+> Lambdas are not supported in these common language runtime (CLR) managed entities: **ref class**, **ref struct**, **value class**, and **value struct**.
 
 [[In This Article](#top)]
 

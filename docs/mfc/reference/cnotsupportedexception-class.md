@@ -43,7 +43,7 @@ For more information on using `CNotSupportedException`, see the article [Excepti
 
 **Header:** afx.h
 
-##  <a name="cnotsupportedexception"></a>  CNotSupportedException::CNotSupportedException
+## <a name="cnotsupportedexception"></a> CNotSupportedException::CNotSupportedException
 
 Constructs a `CNotSupportedException` object.
 

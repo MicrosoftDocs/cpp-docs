@@ -9,10 +9,10 @@ ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
 The classes in the following list are included in the Microsoft Foundation Class (MFC) Library.
 
 > [!TIP]
->  For information about [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) and other classes that are common to both MFC and ATL programming, see [Classes Shared by MFC and ATL](../../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md).
+> For information about [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) and other classes that are common to both MFC and ATL programming, see [Classes Shared by MFC and ATL](../../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md).
 
 > [!IMPORTANT]
->  The MFC classes and their members cannot be used in applications that execute in the Windows Runtime.
+> The MFC classes and their members cannot be used in applications that execute in the Windows Runtime.
 
 ## In This Section
 

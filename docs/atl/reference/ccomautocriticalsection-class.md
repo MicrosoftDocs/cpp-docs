@@ -42,7 +42,7 @@ The `Init` and `Term` methods from [CComCriticalSection](../../atl/reference/cco
 
 **Header:** atlcore.h
 
-##  <a name="ccomautocriticalsection"></a>  CComAutoCriticalSection::CComAutoCriticalSection
+## <a name="ccomautocriticalsection"></a> CComAutoCriticalSection::CComAutoCriticalSection
 
 The constructor.
 
@@ -54,7 +54,7 @@ CComAutoCriticalSection();
 
 Calls the Win32 function [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection), which initializes the critical section object.
 
-##  <a name="dtor"></a>  CComAutoCriticalSection::~CComAutoCriticalSection
+## <a name="dtor"></a> CComAutoCriticalSection::~CComAutoCriticalSection
 
 The destructor.
 

@@ -55,7 +55,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 **Header:** atlsecurity.h
 
-##  <a name="converttoautoinherit"></a>  CPrivateObjectSecurityDesc::ConvertToAutoInherit
+## <a name="converttoautoinherit"></a> CPrivateObjectSecurityDesc::ConvertToAutoInherit
 
 Call this method to convert a security descriptor and its access-control lists (ACLs) to a format that supports automatic propagation of inheritable access-control entries (ACEs).
 
@@ -89,7 +89,7 @@ Returns true on success, false on failure.
 
 This method attempts to determine whether the ACEs in the discretionary access-control list (DACL) and system access-control list (SACL) of the current security descriptor were inherited from the parent security descriptor. It calls the [ConvertToAutoInheritPrivateObjectSecurity](/windows/win32/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) function.
 
-##  <a name="cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc
+## <a name="cprivateobjectsecuritydesc"></a> CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc
 
 The constructor.
 
@@ -101,7 +101,7 @@ CPrivateObjectSecurityDesc() throw();
 
 Initializes the `CPrivateObjectSecurityDesc` object.
 
-##  <a name="dtor"></a>  CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc
+## <a name="dtor"></a> CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc
 
 The destructor.
 
@@ -113,7 +113,7 @@ The destructor.
 
 The destructor frees all allocated resources and deletes the private object's security descriptor.
 
-##  <a name="create"></a>  CPrivateObjectSecurityDesc::Create
+## <a name="create"></a> CPrivateObjectSecurityDesc::Create
 
 Call this method to allocate and initialize a self-relative security descriptor for the private object created by the calling resource manager.
 
@@ -172,9 +172,9 @@ This method calls [CreatePrivateObjectSercurity](/windows/win32/api/securitybase
 The second method permits specifying the object type GUID of the new object or controlling how ACEs are inherited.
 
 > [!NOTE]
->  A self-relative security descriptor is a security descriptor that stores all of its security information in a contiguous block of memory.
+> A self-relative security descriptor is a security descriptor that stores all of its security information in a contiguous block of memory.
 
-##  <a name="get"></a>  CPrivateObjectSecurityDesc::Get
+## <a name="get"></a> CPrivateObjectSecurityDesc::Get
 
 Call this method to retrieve information from a private object's security descriptor.
 
@@ -200,7 +200,7 @@ Returns true on success, false on failure.
 
 The security descriptor is a structure and associated data that contains the security information for a securable object.
 
-##  <a name="operator_eq"></a>  CPrivateObjectSecurityDesc::operator =
+## <a name="operator_eq"></a> CPrivateObjectSecurityDesc::operator =
 
 Assignment operator.
 
@@ -217,7 +217,7 @@ The `CPrivateObjectSecurityDesc` object to assign to the current object.
 
 Returns the updated `CPrivateObjectSecurityDesc` object.
 
-##  <a name="set"></a>  CPrivateObjectSecurityDesc::Set
+## <a name="set"></a> CPrivateObjectSecurityDesc::Set
 
 Call this method to modify a private object's security descriptor.
 

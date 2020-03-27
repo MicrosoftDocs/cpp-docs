@@ -35,7 +35,7 @@ class default_searcher
 | **Operators** | |
 | [operator()](#operator-call) | |
 
-## <a name="default-searcher-constructor"></a>default_searcher constructor
+## <a name="default-searcher-constructor"></a> default_searcher constructor
 
 Constructs a `default_searcher` function object by using the sequence to search for and an equality predicate.
 

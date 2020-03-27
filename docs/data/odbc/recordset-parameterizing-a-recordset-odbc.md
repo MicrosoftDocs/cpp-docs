@@ -20,7 +20,7 @@ This topic explains:
 
 - [How to pass parameter information to a recordset object at run time](#_core_passing_parameter_values_at_run_time).
 
-##  <a name="_core_parameterized_recordsets"></a> Parameterized Recordsets
+## <a name="_core_parameterized_recordsets"></a> Parameterized Recordsets
 
 A parameterized recordset lets you pass parameter information at run time. This has two valuable effects:
 
@@ -30,7 +30,7 @@ A parameterized recordset lets you pass parameter information at run time. This 
 
 When you call `Open` to run the query, the recordset uses the parameter information to complete its **SQL SELECT** statement. You can parameterize any recordset.
 
-##  <a name="_core_when_to_use_parameters"></a> When to Use Parameters
+## <a name="_core_when_to_use_parameters"></a> When to Use Parameters
 
 Typical uses for parameters include:
 
@@ -74,7 +74,7 @@ Typical uses for parameters include:
 
 For more information about filters, see [Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
 
-##  <a name="_core_parameterizing_your_recordset_class"></a> Parameterizing Your Recordset Class
+## <a name="_core_parameterizing_your_recordset_class"></a> Parameterizing Your Recordset Class
 
 > [!NOTE]
 > This section applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, implementing parameters is a similar process. For more information, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
@@ -128,7 +128,7 @@ Before you create your recordset class, determine what parameters you need, what
 > [!TIP]
 > The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) data member, but some ODBC drivers might allow parameters in other SQL clauses.
 
-##  <a name="_core_passing_parameter_values_at_run_time"></a> Passing Parameter Values at Run Time
+## <a name="_core_passing_parameter_values_at_run_time"></a> Passing Parameter Values at Run Time
 
 You must specify parameter values before you call `Open` (for a new recordset object) or `Requery` (for an existing one).
 
@@ -164,7 +164,7 @@ if( !rsStudents.Requery( ) )
 The recordset contains records for those students whose records meet the conditions specified by the filter, which was constructed from run-time parameters. In this case, the recordset contains records for all senior students.
 
 > [!NOTE]
->  If needed, you can set the value of a parameter data member to Null, using [SetParamNull](../../mfc/reference/crecordset-class.md#setparamnull). You can likewise check whether a parameter data member is Null, using [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull).
+> If needed, you can set the value of a parameter data member to Null, using [SetParamNull](../../mfc/reference/crecordset-class.md#setparamnull). You can likewise check whether a parameter data member is Null, using [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull).
 
 ## See also
 

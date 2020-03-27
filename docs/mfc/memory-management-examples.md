@@ -14,7 +14,7 @@ This article describes how MFC performs frame allocations and heap allocations f
 
 - [An object](#_core_allocation_of_an_object)
 
-##  <a name="_core_allocation_of_an_array_of_bytes"></a> Allocation of an Array of Bytes
+## <a name="_core_allocation_of_an_array_of_bytes"></a> Allocation of an Array of Bytes
 
 #### To allocate an array of bytes on the frame
 
@@ -34,7 +34,7 @@ This article describes how MFC performs frame allocations and heap allocations f
 
    [!code-cpp[NVC_MFC_Utilities#3](../mfc/codesnippet/cpp/memory-management-examples_3.cpp)]
 
-##  <a name="_core_allocation_of_a_data_structure"></a> Allocation of a Data Structure
+## <a name="_core_allocation_of_a_data_structure"></a> Allocation of a Data Structure
 
 #### To allocate a data structure on the frame
 
@@ -50,7 +50,7 @@ This article describes how MFC performs frame allocations and heap allocations f
 
    [!code-cpp[NVC_MFC_Utilities#5](../mfc/codesnippet/cpp/memory-management-examples_5.cpp)]
 
-##  <a name="_core_allocation_of_an_object"></a> Allocation of an Object
+## <a name="_core_allocation_of_an_object"></a> Allocation of an Object
 
 #### To allocate an object on the frame
 

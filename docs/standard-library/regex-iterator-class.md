@@ -119,7 +119,7 @@ match == a
 match == a
 ```
 
-## <a name="difference_type"></a>  regex_iterator::difference_type
+## <a name="difference_type"></a> regex_iterator::difference_type
 
 The type of an iterator difference.
 
@@ -131,7 +131,7 @@ typedef std::ptrdiff_t difference_type;
 
 The type is a synonym for `std::ptrdiff_t`.
 
-## <a name="iterator_category"></a>  regex_iterator::iterator_category
+## <a name="iterator_category"></a> regex_iterator::iterator_category
 
 The type of the iterator category.
 
@@ -143,7 +143,7 @@ typedef std::forward_iterator_tag iterator_category;
 
 The type is a synonym for `std::forward_iterator_tag`.
 
-## <a name="op_neq"></a>  regex_iterator::operator!=
+## <a name="op_neq"></a> regex_iterator::operator!=
 
 Compares iterators for inequality.
 
@@ -160,7 +160,7 @@ The iterator to compare to.
 
 The member function returns `!(*this == right)`.
 
-## <a name="op_star"></a>  regex_iterator::operator*
+## <a name="op_star"></a> regex_iterator::operator*
 
 Accesses the designated match.
 
@@ -172,7 +172,7 @@ const match_results<BidIt>& operator*();
 
 The member function returns the stored value `match`.
 
-## <a name="op_add_add"></a>  regex_iterator::operator++
+## <a name="op_add_add"></a> regex_iterator::operator++
 
 Increments the iterator.
 
@@ -187,7 +187,7 @@ If the current match has no characters the first operator calls `regex_search(be
 
 The second operator makes a copy of the object, increments the object, then returns the copy.
 
-## <a name="op_eq"></a>  regex_iterator::operator=
+## <a name="op_eq"></a> regex_iterator::operator=
 
 Compares iterators for equality.
 
@@ -204,7 +204,7 @@ The iterator to compare to.
 
 The member function returns true if `*this` and *right* are both end-of-sequence iterators or if neither is an end-of-sequence iterator and `begin == right.begin`, `end == right.end`, `pregex == right.pregex`, and `flags == right.flags`. Otherwise it returns false.
 
-## <a name="op_arrow"></a>  regex_iterator::operator-&gt;
+## <a name="op_arrow"></a> regex_iterator::operator-&gt;
 
 Accesses the designated match.
 
@@ -216,7 +216,7 @@ const match_results<BidIt> * operator->();
 
 The member function returns the address of the stored value `match`.
 
-## <a name="pointer"></a>  regex_iterator::pointer
+## <a name="pointer"></a> regex_iterator::pointer
 
 The type of a pointer to a match.
 
@@ -228,7 +228,7 @@ typedef match_results<BidIt> *pointer;
 
 The type is a synonym for `match_results<BidIt>*`, where `BidIt` is the template parameter.
 
-## <a name="reference"></a>  regex_iterator::reference
+## <a name="reference"></a> regex_iterator::reference
 
 The type of a reference to a match.
 
@@ -240,7 +240,7 @@ typedef match_results<BidIt>& reference;
 
 The type is a synonym for `match_results<BidIt>&`, where `BidIt` is the template parameter.
 
-## <a name="regex_iterator"></a>  regex_iterator::regex_iterator
+## <a name="regex_iterator"></a> regex_iterator::regex_iterator
 
 Constructs the iterator.
 
@@ -271,7 +271,7 @@ Flags for matches.
 
 The first constructor constructs an end-of-sequence iterator. The second constructor initializes the stored value `begin` with *first*, the stored value `end` with *last*, the stored value `pregex` with `&re`, and the stored value `flags` with *f*. It then calls `regex_search(begin, end, match, *pregex, flags)`. If the search fails, the constructor sets the object to an end-of-sequence iterator.
 
-## <a name="regex_type"></a>  regex_iterator::regex_type
+## <a name="regex_type"></a> regex_iterator::regex_type
 
 The type of the regular expression to match.
 
@@ -283,7 +283,7 @@ typedef basic_regex<Elem, RXtraits> regex_type;
 
 The typedef is a synonym for `basic_regex<Elem, RXtraits>`.
 
-## <a name="value_type"></a>  regex_iterator::value_type
+## <a name="value_type"></a> regex_iterator::value_type
 
 The type of a match.
 

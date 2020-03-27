@@ -73,7 +73,7 @@ Primarily designed as a helper class, `CStrBufT` provides a convenient way for a
 
 **Header:** atlsimpstr.h
 
-##  <a name="auto_length"></a>  CStrBufT::AUTO_LENGTH
+## <a name="auto_length"></a> CStrBufT::AUTO_LENGTH
 
 Automatically determine the new length of the string at release.
 
@@ -85,7 +85,7 @@ static const DWORD AUTO_LENGTH = 0x01;
 
 Automatically determine the new length of the string at release. The string must be null-terminated.
 
-##  <a name="cstrbuft"></a>  CStrBufT::CStrBufT
+## <a name="cstrbuft"></a> CStrBufT::CStrBufT
 
 Constructs a buffer object.
 
@@ -115,7 +115,7 @@ Creates a string buffer for the associated string object. During construction, [
 
 Note that the copy constructor is **private**.
 
-##  <a name="operator_pcxstr"></a>  CStrBufT::operator PCXSTR
+## <a name="operator_pcxstr"></a> CStrBufT::operator PCXSTR
 
 Directly accesses characters stored in the associated string object as a C-style string.
 
@@ -131,7 +131,7 @@ A character pointer to the string's data.
 
 Call this function to return a pointer to the character buffer of a string object. The contents of the string object cannot be changed with this pointer.
 
-##  <a name="operator_pxstr"></a>  CStrBufT::operator PXSTR
+## <a name="operator_pxstr"></a> CStrBufT::operator PXSTR
 
 Directly accesses characters stored in the associated string object as a C-style string.
 
@@ -147,7 +147,7 @@ A character pointer to the string's data.
 
 Call this function to return a pointer to the character buffer of a string object. The developer may change the contents of the string object with this pointer.
 
-##  <a name="pcxstr"></a>  CStrBufT::PCXSTR
+## <a name="pcxstr"></a> CStrBufT::PCXSTR
 
 A pointer to a constant string.
 
@@ -155,7 +155,7 @@ A pointer to a constant string.
 typedef CSimpleStringT<TCharType>::PCXSTR PCXSTR;
 ```
 
-##  <a name="pxstr"></a>  CStrBufT::PXSTR
+## <a name="pxstr"></a> CStrBufT::PXSTR
 
 A pointer to a string.
 
@@ -163,7 +163,7 @@ A pointer to a string.
 typedef CSimpleStringT<TCharType>::PXSTR PXSTR;
 ```
 
-##  <a name="set_length"></a>  CStrBufT::SET_LENGTH
+## <a name="set_length"></a> CStrBufT::SET_LENGTH
 
 Set the length of the string object at `GetBuffer` time.
 
@@ -177,7 +177,7 @@ Set the length of the string object at GetBuffer time.
 
 Determines if [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) and [CSimpleStringT::GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) are called when the string buffer object is constructed.
 
-##  <a name="setlength"></a>  CStrBufT::SetLength
+## <a name="setlength"></a> CStrBufT::SetLength
 
 Sets the length of the character buffer.
 
@@ -191,13 +191,13 @@ void SetLength(int nLength);
 The new length of the character buffer of the string object.
 
 > [!NOTE]
->  Must be less than or equal to the minimum buffer length specified in the constructor of `CStrBufT`.
+> Must be less than or equal to the minimum buffer length specified in the constructor of `CStrBufT`.
 
 ### Remarks
 
 Call this function to set the length of the string represented by the buffer object.
 
-##  <a name="stringtype"></a>  CStrBufT::StringType
+## <a name="stringtype"></a> CStrBufT::StringType
 
 The string type whose buffer is to be manipulated by specializations of this class template.
 

@@ -479,7 +479,7 @@ For more information on using `CWnd`, see [Frame Windows](../../mfc/frame-window
 
 **Header:** afxwin.h
 
-##  <a name="accdodefaultaction"></a>  CWnd::accDoDefaultAction
+## <a name="accdodefaultaction"></a> CWnd::accDoDefaultAction
 
 Called by the framework to perform the object's default action.
 
@@ -502,7 +502,7 @@ This function is part of MFC's [Active Accessibility](/windows/win32/WinAuto/mic
 
 Override this function in your `CWnd`-derived class to perform your object's default action. For more information, see [IAccessible::accDoDefaultAction](/windows/win32/api/oleacc/nf-oleacc-iaccessible-accdodefaultaction) in the Windows SDK.
 
-##  <a name="acchittest"></a>  CWnd::accHitTest
+## <a name="acchittest"></a> CWnd::accHitTest
 
 Called by the framework to retrieve the child element or child object at a given point on the screen.
 
@@ -536,7 +536,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::accHitTest](/windows/win32/api/oleacc/nf-oleacc-iaccessible-acchittest) in the Windows SDK.
 
-##  <a name="acclocation"></a>  CWnd::accLocation
+## <a name="acclocation"></a> CWnd::accLocation
 
 Called by the framework to retrieve the specified object's current screen location.
 
@@ -576,7 +576,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see `IAccessible::accLocation` in the Windows SDK.
 
-##  <a name="accnavigate"></a>  CWnd::accNavigate
+## <a name="accnavigate"></a> CWnd::accNavigate
 
 Called by the framework to traverse to another user interface element within a container and if possible, retrieve the object.
 
@@ -610,7 +610,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::accNavigate](/windows/win32/api/oleacc/nf-oleacc-iaccessible-accnavigate) in the Windows SDK.
 
-##  <a name="accselect"></a>  CWnd::accSelect
+## <a name="accselect"></a> CWnd::accSelect
 
 Called by the framework to modify the selection or move the keyboard focus of the specified object.
 
@@ -640,7 +640,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::accSelect](/windows/win32/api/oleacc/nf-oleacc-iaccessible-accselect) in the Windows SDK.
 
-##  <a name="animatewindow"></a>  CWnd::AnimateWindow
+## <a name="animatewindow"></a> CWnd::AnimateWindow
 
 Produces special effects when showing or hiding windows.
 
@@ -666,7 +666,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [AnimateWindow](/windows/win32/api/winuser/nf-winuser-animatewindow), as described in the Windows SDK.
 
-##  <a name="arrangeiconicwindows"></a>  CWnd::ArrangeIconicWindows
+## <a name="arrangeiconicwindows"></a> CWnd::ArrangeIconicWindows
 
 Arranges all the minimized (iconic) child windows.
 
@@ -688,7 +688,7 @@ To arrange iconic MDI child windows in an MDI client window, call [CMDIFrameWnd:
 
 [!code-cpp[NVC_MFCWindowing#66](../../mfc/reference/codesnippet/cpp/cwnd-class_1.cpp)]
 
-##  <a name="attach"></a>  CWnd::Attach
+## <a name="attach"></a> CWnd::Attach
 
 Attaches a Windows window to a `CWnd` object.
 
@@ -715,7 +715,7 @@ This example shows how to use Attach and Detach to map to the MDI client window.
 
 [!code-cpp[NVC_MFCWindowing#69](../../mfc/reference/codesnippet/cpp/cwnd-class_4.cpp)]
 
-##  <a name="beginmodalstate"></a>  CWnd::BeginModalState
+## <a name="beginmodalstate"></a> CWnd::BeginModalState
 
 Call this member function to make a frame window modal.
 
@@ -723,7 +723,7 @@ Call this member function to make a frame window modal.
 virtual void BeginModalState();
 ```
 
-##  <a name="beginpaint"></a>  CWnd::BeginPaint
+## <a name="beginpaint"></a> CWnd::BeginPaint
 
 Prepares `CWnd` for painting and fills a `PAINTSTRUCT` data structure with information about the painting.
 
@@ -752,7 +752,7 @@ Do not call the `BeginPaint` member function except in response to a [WM_PAINT](
 
 [!code-cpp[NVC_MFCWindowing#70](../../mfc/reference/codesnippet/cpp/cwnd-class_5.cpp)]
 
-##  <a name="binddefaultproperty"></a>  CWnd::BindDefaultProperty
+## <a name="binddefaultproperty"></a> CWnd::BindDefaultProperty
 
 Binds the calling object's default simple bound property (such as an edit control), as marked in the type library, to the underlying cursor that is defined by the DataSource, UserName, Password, and SQL properties of the data-source control.
 
@@ -788,7 +788,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 [!code-cpp[NVC_MFC_AxDataBinding#2](../../mfc/reference/codesnippet/cpp/cwnd-class_7.cpp)]
 
-##  <a name="bindproperty"></a>  CWnd::BindProperty
+## <a name="bindproperty"></a> CWnd::BindProperty
 
 Binds a cursor-bound property on a data-bound control (such as a grid control) to a data-source control and registers that relationship with the MFC binding manager.
 
@@ -816,7 +816,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 [!code-cpp[NVC_MFC_AxDataBinding#4](../../mfc/reference/codesnippet/cpp/cwnd-class_9.cpp)]
 
-##  <a name="bringwindowtotop"></a>  CWnd::BringWindowToTop
+## <a name="bringwindowtotop"></a> CWnd::BringWindowToTop
 
 Brings `CWnd` to the top of a stack of overlapping windows.
 
@@ -834,7 +834,7 @@ This function just calls the Win32 [BringWindowToTop](/windows/win32/api/winuser
 
 [!code-cpp[NVC_MFCWindowing#71](../../mfc/reference/codesnippet/cpp/cwnd-class_10.cpp)]
 
-##  <a name="calcwindowrect"></a>  CWnd::CalcWindowRect
+## <a name="calcwindowrect"></a> CWnd::CalcWindowRect
 
 Calculates the window rectangle that can contain the specified client rectangle.
 
@@ -862,7 +862,7 @@ For more usage restrictions, see [AdjustWindowRectEx](/windows/win32/api/winuser
 
 [!code-cpp[NVC_MFCWindowing#72](../../mfc/reference/codesnippet/cpp/cwnd-class_11.cpp)]
 
-##  <a name="canceltooltips"></a>  CWnd::CancelToolTips
+## <a name="canceltooltips"></a> CWnd::CancelToolTips
 
 Call this member function to remove a tool tip from the screen if a tool tip is currently displayed.
 
@@ -884,7 +884,7 @@ TRUE to cancel tool tips when a key is pressed and set the status bar text to th
 
 [!code-cpp[NVC_MFCWindowing#73](../../mfc/reference/codesnippet/cpp/cwnd-class_12.cpp)]
 
-##  <a name="centerwindow"></a>  CWnd::CenterWindow
+## <a name="centerwindow"></a> CWnd::CenterWindow
 
 Centers a window relative to its parent.
 
@@ -905,7 +905,7 @@ Usually called from [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md
 
 [!code-cpp[NVC_MFCWindowing#74](../../mfc/reference/codesnippet/cpp/cwnd-class_13.cpp)]
 
-##  <a name="changeclipboardchain"></a>  CWnd::ChangeClipboardChain
+## <a name="changeclipboardchain"></a> CWnd::ChangeClipboardChain
 
 Removes `CWnd` from the chain of Clipboard viewers and makes the window specified by *hWndNext* the descendant of the `CWnd` ancestor in the chain.
 
@@ -922,7 +922,7 @@ Identifies the window that follows `CWnd` in the Clipboard-viewer chain.
 
 Nonzero if successful; otherwise 0.
 
-##  <a name="checkdlgbutton"></a>  CWnd::CheckDlgButton
+## <a name="checkdlgbutton"></a> CWnd::CheckDlgButton
 
 Selects (places a check mark next to) or clears (removes a check mark from) a button, or it changes the state of a three-state button.
 
@@ -948,7 +948,7 @@ The `CheckDlgButton` function sends a [BM_SETCHECK](/windows/win32/Controls/bm-s
 
 [!code-cpp[NVC_MFCWindowing#75](../../mfc/reference/codesnippet/cpp/cwnd-class_14.cpp)]
 
-##  <a name="checkradiobutton"></a>  CWnd::CheckRadioButton
+## <a name="checkradiobutton"></a> CWnd::CheckRadioButton
 
 Selects (adds a check mark to) a given radio button in a group and clears (removes a check mark from) all other radio buttons in the group.
 
@@ -978,7 +978,7 @@ The `CheckRadioButton` function sends a [BM_SETCHECK](/windows/win32/Controls/bm
 
 [!code-cpp[NVC_MFCWindowing#76](../../mfc/reference/codesnippet/cpp/cwnd-class_15.cpp)]
 
-##  <a name="childwindowfrompoint"></a>  CWnd::ChildWindowFromPoint
+## <a name="childwindowfrompoint"></a> CWnd::ChildWindowFromPoint
 
 Determines which, if any, of the child windows belonging to `CWnd` contains the specified point.
 
@@ -1019,7 +1019,7 @@ The `CWnd`* that is returned may be temporary and should not be stored for later
 
 [!code-cpp[NVC_MFCWindowing#77](../../mfc/reference/codesnippet/cpp/cwnd-class_16.cpp)]
 
-##  <a name="clienttoscreen"></a>  CWnd::ClientToScreen
+## <a name="clienttoscreen"></a> CWnd::ClientToScreen
 
 Converts the client coordinates of a given point or rectangle on the display to screen coordinates.
 
@@ -1045,7 +1045,7 @@ The `ClientToScreen` member function assumes that the given point or rectangle i
 
 [!code-cpp[NVC_MFCWindowing#78](../../mfc/reference/codesnippet/cpp/cwnd-class_17.cpp)]
 
-##  <a name="closewindow"></a>  CWnd::CloseWindow
+## <a name="closewindow"></a> CWnd::CloseWindow
 
 Minimizes the window.
 
@@ -1057,7 +1057,7 @@ void CloseWindow();
 
 This member function emulates the functionality of the function [CloseWindow](/windows/win32/api/winuser/nf-winuser-closewindow), as described in the Windows SDK.
 
-##  <a name="continuemodal"></a>  CWnd::ContinueModal
+## <a name="continuemodal"></a> CWnd::ContinueModal
 
 This member function is called by [RunModalLoop](#runmodalloop) to determine when the modal state should be exited.
 
@@ -1073,7 +1073,7 @@ Nonzero if modal loop is to be continued; 0 when [EndModalLoop](#endmodalloop) i
 
 By default, it returns non-zero until `EndModalLoop` is called.
 
-##  <a name="create"></a>  CWnd::Create
+## <a name="create"></a> CWnd::Create
 
 Creates the specified child window and attaches it to the [CWnd](../../mfc/reference/cwnd-class.md) object.
 
@@ -1130,7 +1130,7 @@ The [CWnd::OnCreate](#oncreate) method is called before the `Create` method retu
 
 [!code-cpp[NVC_MFCWindowing#79](../../mfc/reference/codesnippet/cpp/cwnd-class_18.cpp)]
 
-##  <a name="createaccessibleproxy"></a>  CWnd::CreateAccessibleProxy
+## <a name="createaccessibleproxy"></a> CWnd::CreateAccessibleProxy
 
 Creates an Active Accessibility proxy for the specified object.
 
@@ -1160,7 +1160,7 @@ A pointer to an LRESULT that stores the result code.
 
 Creates an Active Accessibility proxy for the specified object.
 
-##  <a name="createcaret"></a>  CWnd::CreateCaret
+## <a name="createcaret"></a> CWnd::CreateCaret
 
 Creates a new shape for the system caret and claims ownership of the caret.
 
@@ -1185,7 +1185,7 @@ The system caret is a shared resource. `CWnd` should create a caret only when it
 
 [!code-cpp[NVC_MFCWindowing#80](../../mfc/reference/codesnippet/cpp/cwnd-class_19.cpp)]
 
-##  <a name="createcontrol"></a>  CWnd::CreateControl
+## <a name="createcontrol"></a> CWnd::CreateControl
 
 Use this member function to create an ActiveX control that will be represented in the MFC program by a `CWnd` object.
 
@@ -1287,7 +1287,7 @@ Only a subset of the Windows *dwStyle* flags are supported for `CreateControl`:
 
 [!code-cpp[NVC_MFCWindowing#81](../../mfc/reference/codesnippet/cpp/cwnd-class_20.h)]
 
-##  <a name="createex"></a>  CWnd::CreateEx
+## <a name="createex"></a> CWnd::CreateEx
 
 Creates the specified window and attaches it to the `CWnd` object.
 
@@ -1383,7 +1383,7 @@ The [CWnd::OnCreate](#oncreate) method is called before the `CreateEx` method re
 
 [!code-cpp[NVC_MFCWindowing#82](../../mfc/reference/codesnippet/cpp/cwnd-class_21.cpp)]
 
-##  <a name="creategraycaret"></a>  CWnd::CreateGrayCaret
+## <a name="creategraycaret"></a> CWnd::CreateGrayCaret
 
 Creates a gray rectangle for the system caret and claims ownership of the caret.
 
@@ -1417,7 +1417,7 @@ The system caret is a shared resource. `CWnd` should create a caret only when it
 
 [!code-cpp[NVC_MFCWindowing#83](../../mfc/reference/codesnippet/cpp/cwnd-class_22.cpp)]
 
-##  <a name="createsolidcaret"></a>  CWnd::CreateSolidCaret
+## <a name="createsolidcaret"></a> CWnd::CreateSolidCaret
 
 Creates a solid rectangle for the system caret and claims ownership of the caret.
 
@@ -1451,7 +1451,7 @@ The system caret is a shared resource. `CWnd` should create a caret only when it
 
 [!code-cpp[NVC_MFCWindowing#84](../../mfc/reference/codesnippet/cpp/cwnd-class_23.cpp)]
 
-##  <a name="cwnd"></a>  CWnd::CWnd
+## <a name="cwnd"></a> CWnd::CWnd
 
 Constructs a `CWnd` object.
 
@@ -1463,7 +1463,7 @@ CWnd();
 
 The Windows window is not created and attached until the [CreateEx](#createex) or [Create](#create) member function is called.
 
-##  <a name="default"></a>  CWnd::Default
+## <a name="default"></a> CWnd::Default
 
 Calls the default window procedure.
 
@@ -1483,7 +1483,7 @@ The default window procedure provides default processing for any window message 
 
 [!code-cpp[NVC_MFCWindowing#85](../../mfc/reference/codesnippet/cpp/cwnd-class_24.cpp)]
 
-##  <a name="defwindowproc"></a>  CWnd::DefWindowProc
+## <a name="defwindowproc"></a> CWnd::DefWindowProc
 
 Calls the default window procedure, which provides default processing for any window message that an application does not process.
 
@@ -1513,7 +1513,7 @@ Depends on the message sent.
 
 This member function ensures that every message is processed. It should be called with the same parameters as those received by the window procedure.
 
-##  <a name="deletetempmap"></a>  CWnd::DeleteTempMap
+## <a name="deletetempmap"></a> CWnd::DeleteTempMap
 
 Called automatically by the idle time handler of the `CWinApp` object.
 
@@ -1529,7 +1529,7 @@ Deletes any temporary `CWnd` objects created by the `FromHandle` member function
 
 [!code-cpp[NVC_MFCWindowing#86](../../mfc/reference/codesnippet/cpp/cwnd-class_25.cpp)]
 
-##  <a name="destroywindow"></a>  CWnd::DestroyWindow
+## <a name="destroywindow"></a> CWnd::DestroyWindow
 
 Destroys the Windows window attached to the `CWnd` object.
 
@@ -1559,7 +1559,7 @@ If the `CWnd` being destroyed is a child window and does not have the [WS_EX_NOP
 
 [!code-cpp[NVC_MFCWindowing#87](../../mfc/reference/codesnippet/cpp/cwnd-class_26.cpp)]
 
-##  <a name="detach"></a>  CWnd::Detach
+## <a name="detach"></a> CWnd::Detach
 
 Detaches a Windows handle from a `CWnd` object and returns the handle.
 
@@ -1575,7 +1575,7 @@ A HWND to the Windows object.
 
   See the example for [CWnd::Attach](#attach).
 
-##  <a name="dlgdirlist"></a>  CWnd::DlgDirList
+## <a name="dlgdirlist"></a> CWnd::DlgDirList
 
 Fills a list box with a file or directory listing.
 
@@ -1643,7 +1643,7 @@ After the list box is filled, *lpPathSpec* is updated by removing the drive and/
 
 [!code-cpp[NVC_MFCWindowing#88](../../mfc/reference/codesnippet/cpp/cwnd-class_27.cpp)]
 
-##  <a name="dlgdirlistcombobox"></a>  CWnd::DlgDirListComboBox
+## <a name="dlgdirlistcombobox"></a> CWnd::DlgDirListComboBox
 
 Fills the list box of a combo box with a file or directory listing.
 
@@ -1711,7 +1711,7 @@ After the combo-box list box is filled, *lpPathSpec* is updated by removing the 
 
 [!code-cpp[NVC_MFCWindowing#89](../../mfc/reference/codesnippet/cpp/cwnd-class_28.cpp)]
 
-##  <a name="dlgdirselect"></a>  CWnd::DlgDirSelect
+## <a name="dlgdirselect"></a> CWnd::DlgDirSelect
 
 Retrieves the current selection from a list box.
 
@@ -1743,7 +1743,7 @@ The `DlgDirSelect` member function copies the selection to the buffer given by *
 
 It does not allow more than one filename to be returned from a list box. The list box must not be a multiple-selection list box.
 
-##  <a name="dlgdirselectcombobox"></a>  CWnd::DlgDirSelectComboBox
+## <a name="dlgdirselectcombobox"></a> CWnd::DlgDirSelectComboBox
 
 Retrieves the current selection from the list box of a combo box.
 
@@ -1775,7 +1775,7 @@ The `DlgDirSelectComboBox` member function copies the selection to the specified
 
 It does not allow more than one filename to be returned from a combo box.
 
-##  <a name="dodataexchange"></a>  CWnd::DoDataExchange
+## <a name="dodataexchange"></a> CWnd::DoDataExchange
 
 Called by the framework to exchange and validate dialog data.
 
@@ -1802,7 +1802,7 @@ The `DoDataExchange` overridden member function must precede the macro statement
 
 For more information on dialog data exchange and validation, see [Displaying and Manipulating Data in a Form](../../data/odbc/displaying-and-manipulating-data-in-a-form.md) and [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md). For a description of the DDX_ and DDV_ macros generated by the Add Variable wizard, see [Technical Note 26](../../mfc/tn026-ddx-and-ddv-routines.md).
 
-##  <a name="dragacceptfiles"></a>  CWnd::DragAcceptFiles
+## <a name="dragacceptfiles"></a> CWnd::DragAcceptFiles
 
 Call this member function from within a window, using a `CWnd` pointer, in your application's [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) function to indicate that the window accepts dropped files from the Windows File Manager or File Explorer.
 
@@ -1821,7 +1821,7 @@ Only the window that calls `DragAcceptFiles` with the *bAccept* parameter set to
 
 To discontinue receiving dragged files, call the member function with *bAccept* set to FALSE.
 
-##  <a name="dragdetect"></a>  CWnd::DragDetect
+## <a name="dragdetect"></a> CWnd::DragDetect
 
 Captures the mouse and tracks its movement until the user releases the left button, presses the ESC key, or moves the mouse outside the drag rectangle around the specified point.
 
@@ -1844,7 +1844,7 @@ If the user did not move the mouse outside of the drag rectangle while holding d
 
 This member function emulates the functionality of the function [DragDetect](/windows/win32/api/winuser/nf-winuser-dragdetect), as described in the Windows SDK.
 
-##  <a name="drawanimatedrects"></a>  CWnd::DrawAnimatedRects
+## <a name="drawanimatedrects"></a> CWnd::DrawAnimatedRects
 
 Draws a wire-frame rectangle and animates it to indicate the opening of an icon or the minimizing or maximizing of a window.
 
@@ -1874,7 +1874,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [DrawAnimatedRects](/windows/win32/api/winuser/nf-winuser-drawanimatedrects), as described in the Windows SDK.
 
-##  <a name="drawcaption"></a>  CWnd::DrawCaption
+## <a name="drawcaption"></a> CWnd::DrawCaption
 
 Draws a window caption.
 
@@ -1904,7 +1904,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [DrawCaption](/windows/win32/api/winuser/nf-winuser-drawcaption), as described in the Windows SDK.
 
-##  <a name="drawmenubar"></a>  CWnd::DrawMenuBar
+## <a name="drawmenubar"></a> CWnd::DrawMenuBar
 
 Redraws the menu bar.
 
@@ -1920,7 +1920,7 @@ If a menu bar is changed after Windows has created the window, call this functio
 
   See the example for [CWnd::GetMenu](#getmenu).
 
-##  <a name="enableactiveaccessibility"></a>  CWnd::EnableActiveAccessibility
+## <a name="enableactiveaccessibility"></a> CWnd::EnableActiveAccessibility
 
 Enables user-defined Active Accessibility functions.
 
@@ -1932,7 +1932,7 @@ void EnableActiveAccessibility();
 
 MFC's default Active Accessibility support is sufficient for standard windows and controls, including ActiveX controls; however, if your `CWnd`-derived class contains nonwindowed user interface elements, MFC has no way of knowing about them. In that case, you must override the appropriate [Active Accessibility member functions](/windows/win32/winauto/sdk-components) in your class, and you must call `EnableActiveAccessibility` in the class's constructor.
 
-##  <a name="enabledynamiclayout"></a>  CWnd::EnableDynamicLayout
+## <a name="enabledynamiclayout"></a> CWnd::EnableDynamicLayout
 
 Enables or disables the dynamic layout manager. When dynamic layout is enabled, the position and size of child windows can adjust dynamically when the user resizes the window.
 
@@ -1949,7 +1949,7 @@ TRUE to enable dynamic layout; FALSE to disable dynamic layout.
 
 If you want to enable dynamic layout, you have to do more than just call this method. You also have to provide dynamic layout information which species how the controls in the window respond to size changes. You can specify this information in the resource editor, or programmatically, for each control. See [Dynamic Layout](../../mfc/dynamic-layout.md).
 
-##  <a name="enabled2dsupport"></a>  CWnd::EnableD2DSupport
+## <a name="enabled2dsupport"></a> CWnd::EnableD2DSupport
 
 Enables or disables window D2D support. Call this method before the main window is initialized.
 
@@ -1967,7 +1967,7 @@ Specifies whether to turn on, or off D2D support.
 *bUseDCRenderTarget*<br/>
 Species whether to use the Device Context (DC) render target, CDCRenderTarget. If FALSE, CHwndRenderTarget is used.
 
-##  <a name="enablescrollbar"></a>  CWnd::EnableScrollBar
+## <a name="enablescrollbar"></a> CWnd::EnableScrollBar
 
 Enables or disables one or both arrows of a scroll bar.
 
@@ -2003,7 +2003,7 @@ Specifies whether the scroll-bar arrows are enabled or disabled and which arrows
 
 Nonzero if the arrows are enabled or disabled as specified. Otherwise it is 0, which indicates that the arrows are already in the requested state or that an error occurred.
 
-##  <a name="enablescrollbarctrl"></a>  CWnd::EnableScrollBarCtrl
+## <a name="enablescrollbarctrl"></a> CWnd::EnableScrollBarCtrl
 
 Enables or disables the scroll bar for this window.
 
@@ -2025,7 +2025,7 @@ Specifies whether the scroll bar is to be enabled or disabled.
 
 If the window has a sibling scroll-bar control, that scroll bar is used; otherwise the window's own scroll bar is used.
 
-##  <a name="enabletooltips"></a>  CWnd::EnableToolTips
+## <a name="enabletooltips"></a> CWnd::EnableToolTips
 
 Enables tool tips for the given window.
 
@@ -2061,7 +2061,7 @@ The default tool tips provided for your windows by `EnableToolTips` do not have 
 
 [!code-cpp[NVC_MFCWindowing#92](../../mfc/reference/codesnippet/cpp/cwnd-class_31.cpp)]
 
-##  <a name="enabletrackingtooltips"></a>  CWnd::EnableTrackingToolTips
+## <a name="enabletrackingtooltips"></a> CWnd::EnableTrackingToolTips
 
 Enables or disables tracking tooltips.
 
@@ -2082,7 +2082,7 @@ Indicates the state before the `EnableWindow` member function was called. The re
 
 Tracking tool tips are tool tip windows that you can dynamically position on the screen. By rapidly updating the position, the tool tip window appears to move smoothly, or "track." This functionality can be useful if you need tool tip text to follow the position of the pointer as it moves.
 
-##  <a name="enablewindow"></a>  CWnd::EnableWindow
+## <a name="enablewindow"></a> CWnd::EnableWindow
 
 Enables or disables mouse and keyboard input.
 
@@ -2117,7 +2117,7 @@ An application can use this function to enable or disable a control in a dialog 
 
 [!code-cpp[NVC_MFCWindowing#93](../../mfc/reference/codesnippet/cpp/cwnd-class_32.cpp)]
 
-##  <a name="endmodalloop"></a>  CWnd::EndModalLoop
+## <a name="endmodalloop"></a> CWnd::EndModalLoop
 
 Terminates a call to `RunModalLoop`.
 
@@ -2134,7 +2134,7 @@ Contains the value to be returned to the caller of [RunModalLoop](#runmodalloop)
 
 The *nResult* parameter is propagated to the return value from `RunModalLoop`.
 
-##  <a name="endmodalstate"></a>  CWnd::EndModalState
+## <a name="endmodalstate"></a> CWnd::EndModalState
 
 Call this member function to change a frame window from modal to modeless.
 
@@ -2142,7 +2142,7 @@ Call this member function to change a frame window from modal to modeless.
 virtual void EndModalState();
 ```
 
-##  <a name="endpaint"></a>  CWnd::EndPaint
+## <a name="endpaint"></a> CWnd::EndPaint
 
 Marks the end of painting in the given window.
 
@@ -2165,7 +2165,7 @@ If the caret was hidden by the `BeginPaint` member function, `EndPaint` restores
 
   See the example for [CWnd::BeginPaint](#beginpaint).
 
-##  <a name="executedlginit"></a>  CWnd::ExecuteDlgInit
+## <a name="executedlginit"></a> CWnd::ExecuteDlgInit
 
 Initiates a dialog resource.
 
@@ -2190,7 +2190,7 @@ TRUE if a dialog resource is executed; otherwise FALSE.
 
 `ExecuteDlgInit` will use resources bound to the executing module, or resources from other sources. To accomplish this, `ExecuteDlgInit` finds a resource handle by calling `AfxFindResourceHandle`. If your MFC application does not use the shared DLL (MFCx0[U][D].DLL), `AfxFindResourceHandle` calls [AfxGetResourceHandle](application-information-and-management.md#afxgetresourcehandle), which returns the current resource handle for the executable. If your MFC application that uses MFCx0[U][D].DLL, `AfxFindResourceHandle` traverses the `CDynLinkLibrary` object list of shared and MFC extension DLLs looking for the correct resource handle.
 
-##  <a name="filtertooltipmessage"></a>  CWnd::FilterToolTipMessage
+## <a name="filtertooltipmessage"></a> CWnd::FilterToolTipMessage
 
 Called by the framework to display tool tip messages.
 
@@ -2209,7 +2209,7 @@ In most MFC applications this method is called by the framework from [PreTransla
 
 However, in certain applications, for example some ActiveX controls, these methods might not be invoked by the framework, and you will need to call FilterToolTipMessage yourself. For more information, see [Methods of Creating Tool Tips](../../mfc/methods-of-creating-tool-tips.md).
 
-##  <a name="findwindow"></a>  CWnd::FindWindow
+## <a name="findwindow"></a> CWnd::FindWindow
 
 Returns the top-level `CWnd` whose window class is given by *lpszClassName* and whose window name, or title, is given by *lpszWindowName*.
 
@@ -2241,7 +2241,7 @@ This function does not search child windows.
 
 [!code-cpp[NVC_MFCWindowing#94](../../mfc/reference/codesnippet/cpp/cwnd-class_33.cpp)]
 
-##  <a name="findwindowex"></a>  CWnd::FindWindowEx
+## <a name="findwindowex"></a> CWnd::FindWindowEx
 
 Retrieves the window object whose class name and window name match the specified strings.
 
@@ -2275,7 +2275,7 @@ If the function succeeds, the return value is a pointer to the window object hav
 
 This member function emulates the functionality of the function [FindWindowEx](/windows/win32/api/winuser/nf-winuser-findwindowexw), as described in the Windows SDK.
 
-##  <a name="flashwindow"></a>  CWnd::FlashWindow
+## <a name="flashwindow"></a> CWnd::FlashWindow
 
 Flashes the given window once.
 
@@ -2306,7 +2306,7 @@ This function always returns nonzero for minimized windows. If the window is min
 
 [!code-cpp[NVC_MFCWindowing#95](../../mfc/reference/codesnippet/cpp/cwnd-class_34.cpp)]
 
-##  <a name="flashwindowex"></a>  CWnd::FlashWindowEx
+## <a name="flashwindowex"></a> CWnd::FlashWindowEx
 
 Flashes the given window.
 
@@ -2336,7 +2336,7 @@ The return value specifies the window's state before the call to the `FlashWindo
 
 This method emulates the functionality of the function [FlashWindowEx](/windows/win32/api/winuser/nf-winuser-flashwindowex), as described in the Windows SDK.
 
-##  <a name="fromhandle"></a>  CWnd::FromHandle
+## <a name="fromhandle"></a> CWnd::FromHandle
 
 Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object is not attached to the handle, a temporary `CWnd` object is created and attached.
 
@@ -2355,7 +2355,7 @@ Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd
 
 The pointer may be temporary and should not be stored for later use.
 
-##  <a name="fromhandlepermanent"></a>  CWnd::FromHandlePermanent
+## <a name="fromhandlepermanent"></a> CWnd::FromHandlePermanent
 
 Returns a pointer to a `CWnd` object when given a handle to a window.
 
@@ -2378,7 +2378,7 @@ If a `CWnd` object is not attached to the handle, NULL is returned.
 
 This function, unlike [FromHandle](#fromhandle), does not create temporary objects.
 
-##  <a name="get_accchild"></a>  CWnd::get_accChild
+## <a name="get_accchild"></a> CWnd::get_accChild
 
 Called by the framework to retrieve the address of an `IDispatch` interface for the specified child.
 
@@ -2408,7 +2408,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::get_accChild](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accchild) in the Windows SDK.
 
-##  <a name="get_accchildcount"></a>  CWnd::get_accChildCount
+## <a name="get_accchildcount"></a> CWnd::get_accChildCount
 
 Called by the framework to retrieve the number of children belonging to this object.
 
@@ -2433,7 +2433,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::get_accChildCount](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accchildcount) in the Windows SDK.
 
-##  <a name="get_accdefaultaction"></a>  CWnd::get_accDefaultAction
+## <a name="get_accdefaultaction"></a> CWnd::get_accDefaultAction
 
 Called by the framework to retrieve a string that describes the object's default action.
 
@@ -2463,7 +2463,7 @@ Override this function in your `CWnd`-derived class to describe your object's de
 
 For more information, see [IAccessible::get_accDefaultAction](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accdefaultaction) in the Windows SDK.
 
-##  <a name="get_accdescription"></a>  CWnd::get_accDescription
+## <a name="get_accdescription"></a> CWnd::get_accDescription
 
 Called by framework to retrieve a string that describes the visual appearance of the specified object.
 
@@ -2493,7 +2493,7 @@ Override this function in your `CWnd`-derived class to describe your object. Cal
 
 For more information, see [IAccessible::get_accDescription](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accdescription) in the Windows SDK.
 
-##  <a name="get_accfocus"></a>  CWnd::get_accFocus
+## <a name="get_accfocus"></a> CWnd::get_accFocus
 
 Called by the framework to retrieve the object that has the keyboard focus.
 
@@ -2518,7 +2518,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::get_accFocus](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accfocus) in the Windows SDK.
 
-##  <a name="get_acchelp"></a>  CWnd::get_accHelp
+## <a name="get_acchelp"></a> CWnd::get_accHelp
 
 Called by the framework to retrieve an object's **Help** property string.
 
@@ -2548,7 +2548,7 @@ Override this function in your `CWnd`-derived class to provide help text for you
 
 For more information, see [IAccessible::get_accHelp](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_acchelp) in the Windows SDK.
 
-##  <a name="get_acchelptopic"></a>  CWnd::get_accHelpTopic
+## <a name="get_acchelptopic"></a> CWnd::get_accHelpTopic
 
 Called by the framework to retrieve the full path of the **WinHelp** file associated with the specified object and the identifier of the appropriate topic within that file.
 
@@ -2582,7 +2582,7 @@ Override this function in your `CWnd`-derived class to provide help information 
 
 For more information, see [IAccessible::get_accHelpTopic](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_acchelptopic) in the Windows SDK.
 
-##  <a name="get_acckeyboardshortcut"></a>  CWnd::get_accKeyboardShortcut
+## <a name="get_acckeyboardshortcut"></a> CWnd::get_accKeyboardShortcut
 
 Called by the framework to retrieve the specified object's shortcut key or access key.
 
@@ -2612,7 +2612,7 @@ Override this function in your `CWnd`-derived class to identify the keyboard sho
 
 For more information, see [IAccessible::get_accKeyboardShortcut](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_acckeyboardshortcut) in the Windows SDK.
 
-##  <a name="get_accname"></a>  CWnd::get_accName
+## <a name="get_accname"></a> CWnd::get_accName
 
 Called by the framework to retrieve the name of the specified object.
 
@@ -2642,7 +2642,7 @@ Override this function in your `CWnd`-derived class to return the name of your o
 
 For more information, see [IAccessible::get_accName](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accname) in the Windows SDK.
 
-##  <a name="get_accparent"></a>  CWnd::get_accParent
+## <a name="get_accparent"></a> CWnd::get_accParent
 
 Called by the framework to retrieve the `IDispatch` interface of the object's parent.
 
@@ -2667,7 +2667,7 @@ In most cases you don't have to override this function.
 
 For more information, see [IAccessible::get_accParent](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accparent) in the Windows SDK.
 
-##  <a name="get_accrole"></a>  CWnd::get_accRole
+## <a name="get_accrole"></a> CWnd::get_accRole
 
 Called by the framework to retrieve information that describes the role of the specified object.
 
@@ -2697,7 +2697,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::get_accRole](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accrole) in the Windows SDK.
 
-##  <a name="get_accselection"></a>  CWnd::get_accSelection
+## <a name="get_accselection"></a> CWnd::get_accSelection
 
 Called by the framework to retrieve the selected children of this object.
 
@@ -2722,7 +2722,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::get_accSelection](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accselection) in the Windows SDK.
 
-##  <a name="get_accstate"></a>  CWnd::get_accState
+## <a name="get_accstate"></a> CWnd::get_accState
 
 Called by the framework to retrieve the current state of the specified object.
 
@@ -2752,7 +2752,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::get_accState](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accstate) in the Windows SDK.
 
-##  <a name="get_accvalue"></a>  CWnd::get_accValue
+## <a name="get_accvalue"></a> CWnd::get_accValue
 
 Called by the framework to retrieve the value of the specified object.
 
@@ -2782,7 +2782,7 @@ Override this function in your `CWnd`-derived class if you have nonwindowed user
 
 For more information, see [IAccessible::get_accValue](/windows/win32/api/oleacc/nf-oleacc-iaccessible-get_accvalue) in the Windows SDK.
 
-##  <a name="getactivewindow"></a>  CWnd::GetActiveWindow
+## <a name="getactivewindow"></a> CWnd::GetActiveWindow
 
 Retrieves a pointer to the active window.
 
@@ -2798,7 +2798,7 @@ The active window or NULL if no window was active at the time of the call. The p
 
 The active window is either the window that has the current input focus or the window explicitly made active by the [SetActiveWindow](#setactivewindow) member function.
 
-##  <a name="getancestor"></a>  CWnd::GetAncestor
+## <a name="getancestor"></a> CWnd::GetAncestor
 
 Retrieves the ancestor window object of the specified window.
 
@@ -2819,7 +2819,7 @@ If the function succeeds, the return value is a pointer to the ancestor window o
 
 This member function emulates the functionality of the function [GetAncestor](/windows/win32/api/winuser/nf-winuser-getancestor), as described in the Windows SDK.
 
-##  <a name="getcapture"></a>  CWnd::GetCapture
+## <a name="getcapture"></a> CWnd::GetCapture
 
 Retrieves the window that has the mouse capture.
 
@@ -2837,7 +2837,7 @@ The return value may be temporary and should not be stored for later use.
 
 Only one window has the mouse capture at any given time. A window receives the mouse capture when the [SetCapture](#setcapture) member function is called. This window receives mouse input whether or not the cursor is within its borders.
 
-##  <a name="getcaretpos"></a>  CWnd::GetCaretPos
+## <a name="getcaretpos"></a> CWnd::GetCaretPos
 
 Retrieves the client coordinates of the caret's current position and returns them as a `CPoint`.
 
@@ -2853,7 +2853,7 @@ static CPoint PASCAL GetCaretPos();
 
 The caret position is given in the client coordinates of the `CWnd` window.
 
-##  <a name="getcheckedradiobutton"></a>  CWnd::GetCheckedRadioButton
+## <a name="getcheckedradiobutton"></a> CWnd::GetCheckedRadioButton
 
 Retrieves the ID of the currently checked radio button in the specified group.
 
@@ -2875,7 +2875,7 @@ Specifies the integer identifier of the last radio button in the group.
 
 ID of the checked radio button, or 0 if none is selected.
 
-##  <a name="getclientrect"></a>  CWnd::GetClientRect
+## <a name="getclientrect"></a> CWnd::GetClientRect
 
 Copies the client coordinates of the `CWnd` client area into the structure pointed to by *lpRect*.
 
@@ -2896,7 +2896,7 @@ The client coordinates specify the upper-left and lower-right corners of the cli
 
   See the example for [CWnd::IsIconic](#isiconic).
 
-##  <a name="getclipboardowner"></a>  CWnd::GetClipboardOwner
+## <a name="getclipboardowner"></a> CWnd::GetClipboardOwner
 
 Retrieves the current owner of the Clipboard.
 
@@ -2914,7 +2914,7 @@ The returned pointer may be temporary and should not be stored for later use.
 
 The Clipboard can still contain data even if it is not currently owned.
 
-##  <a name="getclipboardviewer"></a>  CWnd::GetClipboardViewer
+## <a name="getclipboardviewer"></a> CWnd::GetClipboardViewer
 
 Retrieves the first window in the Clipboard-viewer chain.
 
@@ -2928,7 +2928,7 @@ Identifies the window currently responsible for displaying the Clipboard if succ
 
 The returned pointer may be temporary and should not be stored for later use.
 
-##  <a name="getcontrolunknown"></a>  CWnd::GetControlUnknown
+## <a name="getcontrolunknown"></a> CWnd::GetControlUnknown
 
 Call this member function to retrieve a pointer to an unknown OLE control.
 
@@ -2950,7 +2950,7 @@ The interface pointer returned by `GetControlUnknown` is not reference-counted. 
 
 [!code-cpp[NVC_MFCWindowing#96](../../mfc/reference/codesnippet/cpp/cwnd-class_35.cpp)]
 
-##  <a name="getcurrentmessage"></a>  CWnd::GetCurrentMessage
+## <a name="getcurrentmessage"></a> CWnd::GetCurrentMessage
 
 Returns a pointer to the message this window is currently processing. Should only be called when in an **On**<em>Message</em> message-handler member function.
 
@@ -2966,7 +2966,7 @@ Returns a pointer to the [MSG](/windows/win32/api/winuser/ns-winuser-msg) struct
 
   See the example for [CMDIFrameWnd::MDICascade](../../mfc/reference/cmdiframewnd-class.md#mdicascade).
 
-##  <a name="getdc"></a>  CWnd::GetDC
+## <a name="getdc"></a> CWnd::GetDC
 
 Retrieves a pointer to a common, class, or private device context for the client area depending on the class style specified for the `CWnd`.
 
@@ -2986,7 +2986,7 @@ Unless the device context belongs to a window class, the [ReleaseDC](#releasedc)
 
 A device context belonging to the `CWnd` class is returned by the `GetDC` member function if CS_CLASSDC, CS_OWNDC, or CS_PARENTDC was specified as a style in the `WNDCLASS` structure when the class was registered.
 
-##  <a name="getdcex"></a>  CWnd::GetDCEx
+## <a name="getdcex"></a> CWnd::GetDCEx
 
 Retrieves the handle of a device context for the `CWnd` window.
 
@@ -3038,7 +3038,7 @@ A device context with special characteristics is returned by the [GetDCEx](/wind
 
 For more information about these characteristics, see the description of the `WNDCLASS` structure in the Windows SDK.
 
-##  <a name="getdcrendertarget"></a>  CWnd::GetDCRenderTarget
+## <a name="getdcrendertarget"></a> CWnd::GetDCRenderTarget
 
 Retrieves the device context (DC) render target for the `CWnd` window.
 
@@ -3052,7 +3052,7 @@ The device context render target for the specified window if the function is suc
 
 ### Remarks
 
-##  <a name="getdescendantwindow"></a>  CWnd::GetDescendantWindow
+## <a name="getdescendantwindow"></a> CWnd::GetDescendantWindow
 
 Call this member function to find the descendant window specified by the given ID.
 
@@ -3078,7 +3078,7 @@ A pointer to a `CWnd` object, or NULL if no child window is found.
 
 This member function searches the entire tree of child windows, not only the windows that are immediate children.
 
-##  <a name="getdesktopwindow"></a>  CWnd::GetDesktopWindow
+## <a name="getdesktopwindow"></a> CWnd::GetDesktopWindow
 
 Returns the Windows desktop window.
 
@@ -3094,7 +3094,7 @@ Identifies the Windows desktop window. This pointer may be temporary and should 
 
 The desktop window covers the entire screen and is the area on top of which all icons and other windows are painted.
 
-##  <a name="getdlgctrlid"></a>  CWnd::GetDlgCtrlID
+## <a name="getdlgctrlid"></a> CWnd::GetDlgCtrlID
 
 Returns the window or control ID value for any child window, not only that of a control in a dialog box.
 
@@ -3114,7 +3114,7 @@ Since top-level windows do not have an ID value, the return value of this functi
 
   See the example for [CWnd::OnCtlColor](#onctlcolor).
 
-##  <a name="getdlgitem"></a>  CWnd::GetDlgItem
+## <a name="getdlgitem"></a> CWnd::GetDlgItem
 
 Retrieves a pointer to the specified control or child window in a dialog box or other window.
 
@@ -3148,7 +3148,7 @@ The pointer returned is usually cast to the type of control identified by *nID*.
 
 [!code-cpp[NVC_MFCWindowing#97](../../mfc/reference/codesnippet/cpp/cwnd-class_36.cpp)]
 
-##  <a name="getdlgitemint"></a>  CWnd::GetDlgItemInt
+## <a name="getdlgitemint"></a> CWnd::GetDlgItemInt
 
 Retrieves the text of the control identified by *nID*.
 
@@ -3186,7 +3186,7 @@ If *bSigned* is TRUE, `GetDlgItemInt` checks for a minus sign (-) at the beginni
 
 It sends a [WM_GETTEXT](/windows/win32/winmsg/wm-gettext) message to the control.
 
-##  <a name="getdlgitemtext"></a>  CWnd::GetDlgItemText
+## <a name="getdlgitemtext"></a> CWnd::GetDlgItemText
 
 Call this member function to retrieve the title or text associated with a control in a dialog box.
 
@@ -3223,7 +3223,7 @@ Specifies the actual number of characters copied to the buffer, not including th
 
 The `GetDlgItemText` member function copies the text to the location pointed to by *lpStr* and returns a count of the number of bytes it copies.
 
-##  <a name="getdsccursor"></a>  CWnd::GetDSCCursor
+## <a name="getdsccursor"></a> CWnd::GetDSCCursor
 
 Call this member function to retrieve a pointer to the underlying cursor that is defined by the DataSource, UserName, Password, and SQL properties of the data-source control.
 
@@ -3243,7 +3243,7 @@ Use the returned pointer to set the ICursor property of a complex data-bound con
 
 [!code-cpp[NVC_MFC_AxDataBinding#5](../../mfc/reference/codesnippet/cpp/cwnd-class_37.cpp)]
 
-##  <a name="getdynamiclayout"></a>  CWnd::GetDynamicLayout
+## <a name="getdynamiclayout"></a> CWnd::GetDynamicLayout
 
 Retrieves a pointer to the dynamic layout manager object.
 
@@ -3259,7 +3259,7 @@ A pointer to the dynamic layout manager object, or NULL if dynamic layout is not
 
 The window object owns and manages the lifetime of the returned pointer, so it should only be used to access the object; do not delete the pointer or store the pointer permanently.
 
-##  <a name="getexstyle"></a>  CWnd::GetExStyle
+## <a name="getexstyle"></a> CWnd::GetExStyle
 
 Returns the window's extended style.
 
@@ -3271,7 +3271,7 @@ DWORD GetExStyle() const;
 
 The window's extended style. For more information about the extended window styles used in MFC, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).
 
-##  <a name="getfocus"></a>  CWnd::GetFocus
+## <a name="getfocus"></a> CWnd::GetFocus
 
 Retrieves a pointer to the `CWnd` that currently has the input focus.
 
@@ -3285,7 +3285,7 @@ A pointer to the window that has the current focus, or NULL if there is no focus
 
 The pointer may be temporary and should not be stored for later use.
 
-##  <a name="getfont"></a>  CWnd::GetFont
+## <a name="getfont"></a> CWnd::GetFont
 
 Sends the WM_GETFONT message to the window to retrieve the current font.
 
@@ -3301,7 +3301,7 @@ Pointer to a [CFont](../../mfc/reference/cfont-class.md) object that is attached
 
 This method has no effect unless the window processes the WM_GETFONT message. Many MFC classes that derive from `CWnd` process this message because they are attached to a predefined window class that includes a message handler for the WM_GETFONT message. To use this method, classes that you derive from `CWnd` must define a method handler for the WM_GETFONT message.
 
-##  <a name="getforegroundwindow"></a>  CWnd::GetForegroundWindow
+## <a name="getforegroundwindow"></a> CWnd::GetForegroundWindow
 
 Returns a pointer to the foreground window (the window with which the user is currently working).
 
@@ -3317,7 +3317,7 @@ A pointer to the foreground window. This may be a temporary `CWnd` object.
 
 The foreground window applies only to top-level windows (frame windows or dialog boxes).
 
-##  <a name="geticon"></a>  CWnd::GetIcon
+## <a name="geticon"></a> CWnd::GetIcon
 
 Call this member function to get the handle to either a big (32x32) or the handle to a small (16x16) icon, as indicated by *bBigIcon*.
 
@@ -3334,7 +3334,7 @@ Specifies a 32 pixel by 32 pixel icon if TRUE; specifies a 16 pixel by 16 pixel 
 
 A handle to an icon. If unsuccessful, returns NULL.
 
-##  <a name="getlastactivepopup"></a>  CWnd::GetLastActivePopup
+## <a name="getlastactivepopup"></a> CWnd::GetLastActivePopup
 
 Determines which pop-up window owned by `CWnd` was most recently active.
 
@@ -3358,7 +3358,7 @@ The pointer may be temporary and should not be stored for later use.
 
   See the example for [CWnd::FindWindow](#findwindow).
 
-##  <a name="getlayeredwindowattributes"></a>  CWnd::GetLayeredWindowAttributes
+## <a name="getlayeredwindowattributes"></a> CWnd::GetLayeredWindowAttributes
 
 Retrieves the opacity and transparency color key of a layered window.
 
@@ -3388,7 +3388,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [GetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-getlayeredwindowattributes), as described in the Windows SDK.
 
-##  <a name="getmenu"></a>  CWnd::GetMenu
+## <a name="getmenu"></a> CWnd::GetMenu
 
 Retrieves a pointer to the menu for this window.
 
@@ -3410,7 +3410,7 @@ This function should not be used for child windows because they do not have a me
 
 [!code-cpp[NVC_MFCWindowing#98](../../mfc/reference/codesnippet/cpp/cwnd-class_38.cpp)]
 
-##  <a name="getmenubarinfo"></a>  CWnd::GetMenuBarInfo
+## <a name="getmenubarinfo"></a> CWnd::GetMenuBarInfo
 
 Retrieves information about the specified menu bar.
 
@@ -3440,7 +3440,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [GetMenuBarInfo](/windows/win32/api/winuser/nf-winuser-getmenubarinfo), as described in the Windows SDK.
 
-##  <a name="getnextdlggroupitem"></a>  CWnd::GetNextDlgGroupItem
+## <a name="getnextdlggroupitem"></a> CWnd::GetNextDlgGroupItem
 
 Searches for the previous or next control within a group of controls in a dialog box.
 
@@ -3485,7 +3485,7 @@ By default, the `GetNextDlgGroupItem` member function returns a pointer to the n
 |Windowless ActiveX control|Contains no HWND. The `m_pSite` member of `COleControlSiteOrWnd` points to the control's `COleControlSite`, and the `m_hWnd` member is NULL.|
 |Standard window|Contains just an HWND. The `m_hWnd` member of `COleControlSiteOrWnd` is set to the HWND of the window, and the `m_pSite` member is NULL.|
 
-##  <a name="getnextdlgtabitem"></a>  CWnd::GetNextDlgTabItem
+## <a name="getnextdlgtabitem"></a> CWnd::GetNextDlgTabItem
 
 Retrieves a pointer to the first control that was created with the [WS_TABSTOP](styles-used-by-mfc.md#window-styles) style and that precedes or follows the specified control.
 
@@ -3518,7 +3518,7 @@ The returned pointer may be temporary and should not be stored for later use.
 
 For more information about `COleControlSiteOrWnd`, see [CWnd::GetNextDlgGroupItem](#getnextdlggroupitem).
 
-##  <a name="getnextwindow"></a>  CWnd::GetNextWindow
+## <a name="getnextwindow"></a> CWnd::GetNextWindow
 
 Searches for the next (or previous) window in the window manager's list.
 
@@ -3543,7 +3543,7 @@ The window manager's list contains entries for all top-level windows, their asso
 
 If `CWnd` is a top-level window, the function searches for the next (or previous) top-level window; if `CWnd` is a child window, the function searches for the next (or previous) child window.
 
-##  <a name="getolecontrolsite"></a>  CWnd::GetOleControlSite
+## <a name="getolecontrolsite"></a> CWnd::GetOleControlSite
 
 Retrieves the custom site for the specified ActiveX control.
 
@@ -3556,7 +3556,7 @@ COleControlSite* GetOleControlSite(UINT idControl) const;
 *idControl*<br/>
 The ID of the ActiveX control.
 
-##  <a name="getopenclipboardwindow"></a>  CWnd::GetOpenClipboardWindow
+## <a name="getopenclipboardwindow"></a> CWnd::GetOpenClipboardWindow
 
 Retrieves the handle of the window that currently has the Clipboard open.
 
@@ -3568,7 +3568,7 @@ static CWnd* PASCAL GetOpenClipboardWindow();
 
 The handle of the window that currently has the Clipboard open if the function is successful; otherwise NULL.
 
-##  <a name="getowner"></a>  CWnd::GetOwner
+## <a name="getowner"></a> CWnd::GetOwner
 
 Retrieves a pointer to the owner of the window.
 
@@ -3586,7 +3586,7 @@ If the window has no owner, then a pointer to the parent window object is return
 
 The ownership concept of this function is different from the ownership concept of [GetWindow](/windows/win32/api/winuser/nf-winuser-getwindow).
 
-##  <a name="getparent"></a>  CWnd::GetParent
+## <a name="getparent"></a> CWnd::GetParent
 
 Call this function to get a pointer to a child window's parent window (if any).
 
@@ -3602,7 +3602,7 @@ See the Return Values section in [GetParent](/windows/win32/api/winuser/nf-winus
 
 The `GetParent` function returns a pointer to the immediate parent (if it exists). In contrast, the [GetParentOwner](#getparentowner) function returns a pointer to the most immediate parent or owner window that is not a child window (does not have the WS_CHILD style). If you have a child window within a child window `GetParent` and `GetParentOwner` return different results.
 
-##  <a name="getparentframe"></a>  CWnd::GetParentFrame
+## <a name="getparentframe"></a> CWnd::GetParentFrame
 
 Call this member function to retrieve the parent frame window.
 
@@ -3618,7 +3618,7 @@ A pointer to a frame window if successful; otherwise NULL.
 
 The member function searches up the parent chain until a [CFrameWnd](../../mfc/reference/cframewnd-class.md) (or derived class) object is found.
 
-##  <a name="getparentowner"></a>  CWnd::GetParentOwner
+## <a name="getparentowner"></a> CWnd::GetParentOwner
 
 Call this member function to get a pointer to a child window's parent window or owner window.
 
@@ -3636,7 +3636,7 @@ A pointer to a `CWnd` object. If a `CWnd` object is not attached to the handle, 
 
 In contrast, the [GetParent](#getparent) function returns a pointer to the immediate parent, whether it is a child window or not. If you have a child window within a child window `GetParent` and `GetParentOwner` return different results.
 
-##  <a name="getproperty"></a>  CWnd::GetProperty
+## <a name="getproperty"></a> CWnd::GetProperty
 
 Call this member function to get the ActiveX control property specified by *dwDispID*.
 
@@ -3667,7 +3667,7 @@ Address of the variable that will that will receive the property value. It must 
 
 For more information about using this member function with ActiveX Control Containers, see the article [ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
-##  <a name="getrendertarget"></a>  CWnd::GetRenderTarget
+## <a name="getrendertarget"></a> CWnd::GetRenderTarget
 
 Gets a render target that is associated with this window.
 
@@ -3679,7 +3679,7 @@ CHwndRenderTarget* GetRenderTarget();
 
 Pointer to the render target or NULL.
 
-##  <a name="getsafehwnd"></a>  CWnd::GetSafeHwnd
+## <a name="getsafehwnd"></a> CWnd::GetSafeHwnd
 
 Returns `m_hWnd`, or NULL if the **this** pointer is NULL.
 
@@ -3695,7 +3695,7 @@ Returns the window handle for a window. Returns NULL if the `CWnd` is not attach
 
   See the example for [CWnd::SubclassWindow](#subclasswindow).
 
-##  <a name="getsafeowner"></a>  CWnd::GetSafeOwner
+## <a name="getsafeowner"></a> CWnd::GetSafeOwner
 
 Call this member function to retrieve the owner window that should be used for dialog boxes or other modal windows.
 
@@ -3724,7 +3724,7 @@ The safe owner is the first non-child parent window of *pParent*. If *pParent* i
 > [!NOTE]
 > The framework itself uses this function to determine the correct owner window for dialog boxes and property sheets where the owner is not specified.
 
-##  <a name="getscrollbarctrl"></a>  CWnd::GetScrollBarCtrl
+## <a name="getscrollbarctrl"></a> CWnd::GetScrollBarCtrl
 
 Call this member function to obtain a pointer to the specified sibling scroll bar or splitter window.
 
@@ -3749,7 +3749,7 @@ A sibling scroll-bar control, or NULL if none.
 
 This member function does not operate on scroll bars created when the WS_HSCROLL or WS_VSCROLL bits are set during the creation of a window. The `CWnd` implementation of this function simply returns NULL. Derived classes, such as `CView`, implement the described functionality.
 
-##  <a name="getscrollbarinfo"></a>  CWnd::GetScrollBarInfo
+## <a name="getscrollbarinfo"></a> CWnd::GetScrollBarInfo
 
 Retrieves information about the specified scroll bar.
 
@@ -3775,7 +3775,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [GetScrollBarInfo](/windows/win32/api/winuser/nf-winuser-getscrollbarinfo), as described in the Windows SDK.
 
-##  <a name="getscrollinfo"></a>  CWnd::GetScrollInfo
+## <a name="getscrollinfo"></a> CWnd::GetScrollInfo
 
 Call this member function to retrieve the information that the `SCROLLINFO` structure maintains about a scroll bar.
 
@@ -3815,7 +3815,7 @@ The [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure con
 
 The MFC Windows message handlers that indicate scroll-bar position, [CWnd::OnHScroll](#onhscroll) and [CWnd::OnVScroll](#onvscroll), provide only 16 bits of position data. `GetScrollInfo` and `SetScrollInfo` provide 32 bits of scroll-bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll-bar position data.
 
-##  <a name="getscrolllimit"></a>  CWnd::GetScrollLimit
+## <a name="getscrolllimit"></a> CWnd::GetScrollLimit
 
 Call this member function to retrieve the maximum scrolling position of the scroll bar.
 
@@ -3836,7 +3836,7 @@ Specifies the type of scroll bar. The parameter can take one of the following va
 
 Specifies the maximum position of a scroll bar if successful; otherwise 0.
 
-##  <a name="getscrollpos"></a>  CWnd::GetScrollPos
+## <a name="getscrollpos"></a> CWnd::GetScrollPos
 
 Retrieves the current position of the scroll box of a scroll bar.
 
@@ -3861,7 +3861,7 @@ Specifies the current position of the scroll box in the scroll bar if successful
 
 The current position is a relative value that depends on the current scrolling range. For example, if the scrolling range is 50 to 100 and the scroll box is in the middle of the bar, the current position is 75.
 
-##  <a name="getscrollrange"></a>  CWnd::GetScrollRange
+## <a name="getscrollrange"></a> CWnd::GetScrollRange
 
 Copies the current minimum and maximum scroll-bar positions for the given scroll bar to the locations specified by *lpMinPos* and *lpMaxPos*.
 
@@ -3893,7 +3893,7 @@ If `CWnd` does not have a scroll bar, then the `GetScrollRange` member function 
 
 The default range for a standard scroll bar is 0 to 100. The default range for a scroll-bar control is empty (both values are 0).
 
-##  <a name="getstyle"></a>  CWnd::GetStyle
+## <a name="getstyle"></a> CWnd::GetStyle
 
 Returns the current window style.
 
@@ -3905,7 +3905,7 @@ DWORD GetStyle() const;
 
 The window's style. For more information about the window styles used in MFC, see [Window Styles](styles-used-by-mfc.md#window-styles).
 
-##  <a name="getsystemmenu"></a>  CWnd::GetSystemMenu
+## <a name="getsystemmenu"></a> CWnd::GetSystemMenu
 
 Allows the application to access the Control menu for copying and modification.
 
@@ -3938,7 +3938,7 @@ Windows may automatically make items unavailable on the standard Control menu. `
 
 [!code-cpp[NVC_MFCWindowing#99](../../mfc/reference/codesnippet/cpp/cwnd-class_39.cpp)]
 
-##  <a name="gettitlebarinfo"></a>  CWnd::GetTitleBarInfo
+## <a name="gettitlebarinfo"></a> CWnd::GetTitleBarInfo
 
 Retrieves information about the specified title bar.
 
@@ -3955,7 +3955,7 @@ Pointer to a [TITLEBARINFO](/windows/win32/api/winuser/ns-winuser-titlebarinfo) 
 
 This member function emulates the functionality of the function [GetTitleBarInfo](/windows/win32/api/winuser/nf-winuser-gettitlebarinfo), as described in the Windows SDK.
 
-##  <a name="gettoplevelframe"></a>  CWnd::GetTopLevelFrame
+## <a name="gettoplevelframe"></a> CWnd::GetTopLevelFrame
 
 Call this member function to retrieve the window's top level frame window, if any.
 
@@ -3973,7 +3973,7 @@ The returned pointer may be temporary and should not be stored for later use.
 
 If `CWnd` has no attached window, or its top-level parent is not a [CFrameWnd](../../mfc/reference/cframewnd-class.md)-derived object, this function returns NULL.
 
-##  <a name="gettoplevelowner"></a>  CWnd::GetTopLevelOwner
+## <a name="gettoplevelowner"></a> CWnd::GetTopLevelOwner
 
 Call this member function to retrieve the top-level window.
 
@@ -3989,7 +3989,7 @@ Identifies the top-level window. The returned pointer may be temporary and shoul
 
 The top-level window is the window that is a child of the desktop. If `CWnd` has no attached window, this function returns NULL.
 
-##  <a name="gettoplevelparent"></a>  CWnd::GetTopLevelParent
+## <a name="gettoplevelparent"></a> CWnd::GetTopLevelParent
 
 Call this member function to retrieve the window's top-level parent.
 
@@ -4007,7 +4007,7 @@ The returned pointer may be temporary and should not be stored for later use.
 
 `GetTopLevelParent` is similar to [GetTopLevelFrame](#gettoplevelframe) and [GetTopLevelOwner](#gettoplevelowner); however, it ignores the value set as the current owner window.
 
-##  <a name="gettopwindow"></a>  CWnd::GetTopWindow
+## <a name="gettopwindow"></a> CWnd::GetTopWindow
 
 Searches for the top-level child window that belongs to `CWnd`.
 
@@ -4025,7 +4025,7 @@ The returned pointer may be temporary and should not be stored for later use.
 
 If `CWnd` has no children, this function returns NULL.
 
-##  <a name="getupdaterect"></a>  CWnd::GetUpdateRect
+## <a name="getupdaterect"></a> CWnd::GetUpdateRect
 
 Retrieves the coordinates of the smallest rectangle that completely encloses the update region.
 
@@ -4061,7 +4061,7 @@ The update rectangle retrieved by the [BeginPaint](#beginpaint) member function 
 
 The `BeginPaint` member function automatically validates the update region, so any call to `GetUpdateRect` made immediately after a call to `BeginPaint` retrieves an empty update region.
 
-##  <a name="getupdatergn"></a>  CWnd::GetUpdateRgn
+## <a name="getupdatergn"></a> CWnd::GetUpdateRgn
 
 Retrieves the update region into a region identified by *pRgn*.
 
@@ -4097,7 +4097,7 @@ The coordinates of this region are relative to the upper-left corner (client coo
 
 The [BeginPaint](#beginpaint) member function automatically validates the update region, so any call to `GetUpdateRgn` made immediately after a call to `BeginPaint` retrieves an empty update region.
 
-##  <a name="getwindow"></a>  CWnd::GetWindow
+## <a name="getwindow"></a> CWnd::GetWindow
 
 Returns a pointer to the window requested, or NULL if none.
 
@@ -4126,7 +4126,7 @@ Specifies the relationship between `CWnd` and the returned window. It can take o
 
 The returned pointer may be temporary and should not be stored for later use.
 
-##  <a name="getwindowcontexthelpid"></a>  CWnd::GetWindowContextHelpId
+## <a name="getwindowcontexthelpid"></a> CWnd::GetWindowContextHelpId
 
 Call this member function to retrieve the help context identifier, if any, associated with the window.
 
@@ -4138,7 +4138,7 @@ DWORD GetWindowContextHelpId() const;
 
 The help context identifier. Returns 0 if the window has none.
 
-##  <a name="getwindowedchildcount"></a>  CWnd::GetWindowedChildCount
+## <a name="getwindowedchildcount"></a> CWnd::GetWindowedChildCount
 
 Call this member function to retrieve the number of associated child windows.
 
@@ -4150,7 +4150,7 @@ long GetWindowedChildCount();
 
 The number of child windows associated with the `CWnd` object.
 
-##  <a name="getwindowdc"></a>  CWnd::GetWindowDC
+## <a name="getwindowdc"></a> CWnd::GetWindowDC
 
 Retrieves the display context for the entire window, including caption bar, menus, and scroll bars.
 
@@ -4176,7 +4176,7 @@ The [GetSystemMetrics](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) W
 
 After painting is complete, the [ReleaseDC](#releasedc) member function must be called to release the display context. Failure to release the display context will seriously affect painting requested by applications due to limitations on the number of device contexts that can be open at the same time.
 
-##  <a name="getwindowinfo"></a>  CWnd::GetWindowInfo
+## <a name="getwindowinfo"></a> CWnd::GetWindowInfo
 
 Retrieves information about the window.
 
@@ -4193,7 +4193,7 @@ A pointer to a [WINDOWINFO](/windows/win32/api/winuser/ns-winuser-windowinfo) st
 
 This member function emulates the functionality of the function [GetWindowInfo](/windows/win32/api/winuser/nf-winuser-getwindowinfo), as described in the Windows SDK.
 
-##  <a name="getwindowlesschildcount"></a>  CWnd::GetWindowlessChildCount
+## <a name="getwindowlesschildcount"></a> CWnd::GetWindowlessChildCount
 
 Retrieves the number of associated windowless child windows.
 
@@ -4205,7 +4205,7 @@ long GetWindowlessChildCount();
 
 The number of windowless child windows associated with the `CWnd` object.
 
-##  <a name="getwindowplacement"></a>  CWnd::GetWindowPlacement
+## <a name="getwindowplacement"></a> CWnd::GetWindowPlacement
 
 Retrieves the show state and the normal (restored), minimized, and maximized positions of a window.
 
@@ -4226,7 +4226,7 @@ Nonzero if the function is successful; otherwise 0.
 
 The `flags` member of the [WINDOWPLACEMENT](/windows/win32/api/winuser/ns-winuser-windowplacement) structure retrieved by this function is always 0. If `CWnd` is maximized, the `showCmd` member of `WINDOWPLACEMENT` is SW_SHOWMAXIMIZED. If the window is minimized, it is SW_SHOWMINIMIZED. It is SW_SHOWNORMAL otherwise.
 
-##  <a name="getwindowrect"></a>  CWnd::GetWindowRect
+## <a name="getwindowrect"></a> CWnd::GetWindowRect
 
 Copies the dimensions of the bounding rectangle of the `CWnd` object to the structure pointed to by *lpRect*.
 
@@ -4243,7 +4243,7 @@ Points to a `CRect` object or a [RECT structure](/windows/win32/api/windef/ns-wi
 
 The dimensions are given in screen coordinates relative to the upper-left corner of the display screen. The dimensions of the caption, border, and scroll bars, if present, are included.
 
-##  <a name="getwindowrgn"></a>  CWnd::GetWindowRgn
+## <a name="getwindowrgn"></a> CWnd::GetWindowRgn
 
 Call this member function to get the window region of a window.
 
@@ -4276,7 +4276,7 @@ The coordinates of a window's window region are relative to the upper-left corne
 
 To set the window region of a window, call [CWnd::SetWindowRgn](#setwindowrgn).
 
-##  <a name="getwindowtext"></a>  CWnd::GetWindowText
+## <a name="getwindowtext"></a> CWnd::GetWindowText
 
 Copies the `CWnd` caption title (if it has one) into the buffer pointed to by *lpszStringBuf* or into the destination string *rString*.
 
@@ -4314,7 +4314,7 @@ This member function causes the [WM_GETTEXT](/windows/win32/winmsg/wm-gettext) m
 
   See the example for [CWnd::SetWindowText](#setwindowtext).
 
-##  <a name="getwindowtextlength"></a>  CWnd::GetWindowTextLength
+## <a name="getwindowtextlength"></a> CWnd::GetWindowTextLength
 
 Returns the length of the `CWnd` object caption title.
 
@@ -4336,7 +4336,7 @@ This member function causes the [WM_GETTEXTLENGTH](/windows/win32/winmsg/wm-gett
 
   See the example for [CWnd::SetWindowText](#setwindowtext).
 
-##  <a name="hidecaret"></a>  CWnd::HideCaret
+## <a name="hidecaret"></a> CWnd::HideCaret
 
 Hides the caret by removing it from the display screen.
 
@@ -4350,7 +4350,7 @@ Although the caret is no longer visible, it can be displayed again by using the 
 
 Hiding is cumulative. If `HideCaret` has been called five times in a row, the `ShowCaret` member function must be called five times before the caret will be shown.
 
-##  <a name="hilitemenuitem"></a>  CWnd::HiliteMenuItem
+## <a name="hilitemenuitem"></a> CWnd::HiliteMenuItem
 
 Highlights or removes the highlight from a top-level (menu-bar) menu item.
 
@@ -4388,7 +4388,7 @@ Specifies whether the menu item was highlighted. Nonzero if the item was highlig
 
 The MF_HILITE and MF_UNHILITE flags can be used only with this member function; they cannot be used with the [CMenu::ModifyMenu](../../mfc/reference/cmenu-class.md#modifymenu) member function.
 
-##  <a name="htmlhelp"></a>  CWnd::HtmlHelp
+## <a name="htmlhelp"></a> CWnd::HtmlHelp
 
 Call this member function to invoke the HTMLHelp application.
 
@@ -4410,7 +4410,7 @@ Specifies the type of help requested. For a list of possible values and how they
 
 See [CWinApp::HtmlHelp](../../mfc/reference/cwinapp-class.md#htmlhelp) for more information.
 
-##  <a name="initdynamiclayout"></a>  CWnd::InitDynamicLayout
+## <a name="initdynamiclayout"></a> CWnd::InitDynamicLayout
 
 Called by the framework to initialize dynamic layout for a window.
 
@@ -4422,7 +4422,7 @@ void InitDynamicLayout();
 
 Do not call this method directly.
 
-##  <a name="invalidate"></a>  CWnd::Invalidate
+## <a name="invalidate"></a> CWnd::Invalidate
 
 Invalidates the entire client area of `CWnd`.
 
@@ -4447,7 +4447,7 @@ Windows sends a [WM_PAINT](#onpaint) message whenever the `CWnd` update region i
 
   See the example for [CWnd::UpdateWindow](#updatewindow).
 
-##  <a name="invalidaterect"></a>  CWnd::InvalidateRect
+## <a name="invalidaterect"></a> CWnd::InvalidateRect
 
 Invalidates the client area within the given rectangle by adding that rectangle to the `CWnd` update region.
 
@@ -4473,7 +4473,7 @@ The *bErase* parameter specifies whether the background within the update area i
 
 Windows sends a [WM_PAINT](#onpaint) message whenever the `CWnd` update region is not empty and there are no other messages in the application queue for that window.
 
-##  <a name="invalidatergn"></a>  CWnd::InvalidateRgn
+## <a name="invalidatergn"></a> CWnd::InvalidateRgn
 
 Invalidates the client area within the given region by adding it to the current update region of `CWnd`.
 
@@ -4501,7 +4501,7 @@ Windows sends a [WM_PAINT](#onpaint) message whenever the `CWnd` update region i
 
 The given region must have been previously created by one of the region functions.
 
-##  <a name="invokehelper"></a>  CWnd::InvokeHelper
+## <a name="invokehelper"></a> CWnd::InvokeHelper
 
 Call this member function to invoke the ActiveX Control method or property specified by *dwDispID*, in the context specified by *wFlags*.
 
@@ -4546,7 +4546,7 @@ This function converts the parameters to VARIANTARG values, then invokes the `ID
 
 For more information about using this member function with ActiveX Control Containers, see the article [ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
-##  <a name="ischild"></a>  CWnd::IsChild
+## <a name="ischild"></a> CWnd::IsChild
 
 Indicates whether the window specified by *pWnd* is a child window or other direct descendant of `CWnd`.
 
@@ -4567,7 +4567,7 @@ Specifies the outcome of the function. The value is nonzero if the window identi
 
 A child window is the direct descendant of `CWnd` if the `CWnd` object is in the chain of parent windows that leads from the original pop-up window to the child window.
 
-##  <a name="isd2dsupportenabled"></a>  CWnd::IsD2DSupportEnabled
+## <a name="isd2dsupportenabled"></a> CWnd::IsD2DSupportEnabled
 
 Determines whether D2D support is enabled.
 
@@ -4579,7 +4579,7 @@ BOOL IsD2DSupportEnabled();
 
 TRUE if the feature is enabled; otherwise FALSE.
 
-##  <a name="isdialogmessage"></a>  CWnd::IsDialogMessage
+## <a name="isdialogmessage"></a> CWnd::IsDialogMessage
 
 Call this member function to determine whether the given message is intended for a modeless dialog box; if it is, this function processes the message.
 
@@ -4604,7 +4604,7 @@ When the `IsDialogMessage` function processes a message, it checks for keyboard 
 
 You must not pass a message processed by `IsDialogMessage` to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) or [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions, because it has already been processed.
 
-##  <a name="isdlgbuttonchecked"></a>  CWnd::IsDlgButtonChecked
+## <a name="isdlgbuttonchecked"></a> CWnd::IsDlgButtonChecked
 
 Determines whether a button control has a check mark next to it.
 
@@ -4625,7 +4625,7 @@ Nonzero if the given control is checked, and 0 if it is not checked. Only radio 
 
 If the button is a three-state control, the member function determines whether it is dimmed, checked, or neither.
 
-##  <a name="isdynamiclayoutenabled"></a>  CWnd::IsDynamicLayoutEnabled
+## <a name="isdynamiclayoutenabled"></a> CWnd::IsDynamicLayoutEnabled
 
 Determines whether dynamic layout is enabled on this window. If dynamic layout is enabled, the position and size of child windows can change when the user resizes the parent window.
 
@@ -4639,7 +4639,7 @@ TRUE if dynamic layout is enabled; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="isiconic"></a>  CWnd::IsIconic
+## <a name="isiconic"></a> CWnd::IsIconic
 
 Specifies whether `CWnd` is minimized (iconic).
 
@@ -4655,7 +4655,7 @@ Nonzero if `CWnd` is minimized; otherwise 0.
 
 [!code-cpp[NVC_MFCWindowing#101](../../mfc/reference/codesnippet/cpp/cwnd-class_41.cpp)]
 
-##  <a name="istouchwindow"></a>  CWnd::IsTouchWindow
+## <a name="istouchwindow"></a> CWnd::IsTouchWindow
 
 Specifies whether `CWnd` has touch support.
 
@@ -4669,7 +4669,7 @@ TRUE if `CWnd` has touch support; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="iswindowenabled"></a>  CWnd::IsWindowEnabled
+## <a name="iswindowenabled"></a> CWnd::IsWindowEnabled
 
 Specifies whether `CWnd` is enabled for mouse and keyboard input.
 
@@ -4685,7 +4685,7 @@ Nonzero if `CWnd` is enabled; otherwise 0.
 
 [!code-cpp[NVC_MFCWindowing#102](../../mfc/reference/codesnippet/cpp/cwnd-class_42.cpp)]
 
-##  <a name="iswindowvisible"></a>  CWnd::IsWindowVisible
+## <a name="iswindowvisible"></a> CWnd::IsWindowVisible
 
 Determines the visibility state of the given window.
 
@@ -4707,7 +4707,7 @@ Any drawing to a window that has the WS_VISIBLE style will not be displayed if t
 
 [!code-cpp[NVC_MFCWindowing#103](../../mfc/reference/codesnippet/cpp/cwnd-class_43.cpp)]
 
-##  <a name="iszoomed"></a>  CWnd::IsZoomed
+## <a name="iszoomed"></a> CWnd::IsZoomed
 
 Determines whether `CWnd` has been maximized.
 
@@ -4719,7 +4719,7 @@ BOOL IsZoomed() const;
 
 Nonzero if `CWnd` is maximized; otherwise 0.
 
-##  <a name="killtimer"></a>  CWnd::KillTimer
+## <a name="killtimer"></a> CWnd::KillTimer
 
 Kills the timer event identified by *nIDEvent* from the earlier call to `SetTimer`.
 
@@ -4744,7 +4744,7 @@ Pending [WM_TIMER](#ontimer) messages associated with the timer are not removed 
 
   See the example for [CWnd::SetTimer](#settimer).
 
-##  <a name="loaddynamiclayoutresource"></a>  CWnd::LoadDynamicLayoutResource
+## <a name="loaddynamiclayoutresource"></a> CWnd::LoadDynamicLayoutResource
 
 Called by the framework to load dynamic layout information from the resource file.
 
@@ -4765,7 +4765,7 @@ Nonzero if the function is successful. It is 0 if a failure occurs.
 
 Do not call this method directly.
 
-##  <a name="lockwindowupdate"></a>  CWnd::LockWindowUpdate
+## <a name="lockwindowupdate"></a> CWnd::LockWindowUpdate
 
 Disables drawing in the given window.
 
@@ -4787,7 +4787,7 @@ While window updates are locked, the system keeps track of the bounding rectangl
 
 The `LockWindowUpdate` member function does not make the given window invisible and does not clear the [WS_VISIBLE](styles-used-by-mfc.md#window-styles) style bit.
 
-##  <a name="m_hwnd"></a>  CWnd::m_hWnd
+## <a name="m_hwnd"></a> CWnd::m_hWnd
 
 The handle of the Windows window attached to this `CWnd`.
 
@@ -4799,7 +4799,7 @@ HWND m_hWnd;
 
 The `m_hWnd` data member is a public variable of type HWND.
 
-##  <a name="mapwindowpoints"></a>  CWnd::MapWindowPoints
+## <a name="mapwindowpoints"></a> CWnd::MapWindowPoints
 
 Converts (maps) a set of points from the coordinate space of the `CWnd` to the coordinate space of another window.
 
@@ -4828,7 +4828,7 @@ A pointer to an array of [POINT structure](/windows/win32/api/windef/ns-windef-p
 *nCount*<br/>
 Specifies the number of `POINT` structures in the array pointed to by *lpPoint*.
 
-##  <a name="messagebox"></a>  CWnd::MessageBox
+## <a name="messagebox"></a> CWnd::MessageBox
 
 Creates and displays a window that contains an application-supplied message and caption, plus a combination of the predefined icons and pushbuttons described in the [Message-Box Styles](../../mfc/reference/styles-used-by-mfc.md#message-box-styles) list.
 
@@ -4871,7 +4871,7 @@ The following shows the various system icons that can be used in a message box:
 
 [!code-cpp[NVC_MFCWindowing#104](../../mfc/reference/codesnippet/cpp/cwnd-class_44.cpp)]
 
-##  <a name="modifystyle"></a>  CWnd::ModifyStyle
+## <a name="modifystyle"></a> CWnd::ModifyStyle
 
 Call this member function to modify a window's style.
 
@@ -4920,7 +4920,7 @@ To modify a window's extended styles, see [ModifyStyleEx](#modifystyleex).
 
 [!code-cpp[NVC_MFCWindowing#105](../../mfc/reference/codesnippet/cpp/cwnd-class_45.cpp)]
 
-##  <a name="modifystyleex"></a>  CWnd::ModifyStyleEx
+## <a name="modifystyleex"></a> CWnd::ModifyStyleEx
 
 Call this member function to modify a window's extended style.
 
@@ -4966,7 +4966,7 @@ To modify windows using regular window styles, see [ModifyStyle](#modifystyle).
 
 [!code-cpp[NVC_MFCWindowing#106](../../mfc/reference/codesnippet/cpp/cwnd-class_46.cpp)]
 
-##  <a name="movewindow"></a>  CWnd::MoveWindow
+## <a name="movewindow"></a> CWnd::MoveWindow
 
 Changes the position and dimensions.
 
@@ -5013,7 +5013,7 @@ The `MoveWindow` function sends the [WM_GETMINMAXINFO](#ongetminmaxinfo) message
 
   See the example for [CWnd::ClientToScreen](#clienttoscreen).
 
-##  <a name="notifywinevent"></a>  CWnd::NotifyWinEvent
+## <a name="notifywinevent"></a> CWnd::NotifyWinEvent
 
 Signals the system that a predefined event occurred. If any client applications have registered a hook function for the event, the system calls the client's hook function.
 
@@ -5039,7 +5039,7 @@ Identifies whether the event was generated by an object or a child element of th
 
 This member function emulates the functionality of the function [NotifyWinEvent](/windows/win32/api/winuser/nf-winuser-notifywinevent), as described in the Windows SDK.
 
-##  <a name="onactivate"></a>  CWnd::OnActivate
+## <a name="onactivate"></a> CWnd::OnActivate
 
 The framework calls this member function when a `CWnd` object is being activated or deactivated.
 
@@ -5076,7 +5076,7 @@ If the `CWnd` object is activated with a mouse click, it will also receive an [O
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onactivateapp"></a>  CWnd::OnActivateApp
+## <a name="onactivateapp"></a> CWnd::OnActivateApp
 
 The framework calls this member function to all top-level windows of the task being activated and for all top-level windows of the task being deactivated.
 
@@ -5099,7 +5099,7 @@ Specifies the value of the thread ID. If *bActive* is TRUE, *dwThreadID* identif
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onambientproperty"></a>  CWnd::OnAmbientProperty
+## <a name="onambientproperty"></a> CWnd::OnAmbientProperty
 
 The framework calls this member function to obtain ambient property values from a window that contains OLE controls.
 
@@ -5129,7 +5129,7 @@ TRUE if the ambient property is supported; FALSE if not.
 
 Override this function to alter the default ambient property values returned by an OLE control container to its controls. Any ambient property requests not handled by an overriding function should be forwarded to the base class implementation.
 
-##  <a name="onappcommand"></a>  CWnd::OnAppCommand
+## <a name="onappcommand"></a> CWnd::OnAppCommand
 
 The framework calls this member function when the user generates an application command event. Such an event occurs when the user clicks an application command button or types an application command key.
 
@@ -5157,7 +5157,7 @@ This method receives the [WM_APPCOMMAND](/windows/win32/inputdev/wm-appcommand) 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onaskcbformatname"></a>  CWnd::OnAskCbFormatName
+## <a name="onaskcbformatname"></a> CWnd::OnAskCbFormatName
 
 The framework calls this member function when the Clipboard contains a data handle for the CF_OWNERDISPLAY format (that is, when the Clipboard owner will display the Clipboard contents).
 
@@ -5184,7 +5184,7 @@ Override this member function and copy the name of the CF_OWNERDISPLAY format in
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oncancelmode"></a>  CWnd::OnCancelMode
+## <a name="oncancelmode"></a> CWnd::OnCancelMode
 
 The framework calls this member function to inform `CWnd` to cancel any internal mode.
 
@@ -5198,7 +5198,7 @@ If the `CWnd` object has the focus, its `OnCancelMode` member function is called
 
 The default implementation responds by calling the [ReleaseCapture](/windows/win32/api/winuser/nf-winuser-releasecapture) Windows function. Override this member function in your derived class to handle other modes.
 
-##  <a name="oncapturechanged"></a>  CWnd::OnCaptureChanged
+## <a name="oncapturechanged"></a> CWnd::OnCaptureChanged
 
 The framework calls this member function to notify the window that is losing the mouse capture.
 
@@ -5220,7 +5220,7 @@ See the Windows SDK for information on the `ReleaseCapture` Windows function.
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onchangecbchain"></a>  CWnd::OnChangeCbChain
+## <a name="onchangecbchain"></a> CWnd::OnChangeCbChain
 
 The framework calls this member function for each window in the Clipboard-viewer chain to notify it that a window is being removed from the chain.
 
@@ -5245,7 +5245,7 @@ Each `CWnd` object that receives an `OnChangeCbChain` call should use the [SendM
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onchangeuistate"></a>  CWnd::OnChangeUIState
+## <a name="onchangeuistate"></a> CWnd::OnChangeUIState
 
 Called when the user interface (UI) state should be changed.
 
@@ -5279,7 +5279,7 @@ Specifies which UI state elements are affected or the style of the control. Can 
 
 This member function emulates the functionality of the [WM_CHANGEUISTATE](/windows/win32/menurc/wm-changeuistate) message, as described in the Windows SDK.
 
-##  <a name="onchar"></a>  CWnd::OnChar
+## <a name="onchar"></a> CWnd::OnChar
 
 The framework calls this member function when a keystroke translates to a nonsystem character.
 
@@ -5322,7 +5322,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onchartoitem"></a>  CWnd::OnCharToItem
+## <a name="onchartoitem"></a> CWnd::OnCharToItem
 
 Called when a list box with the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style sends its owner a [WM_CHARTOITEM](/windows/win32/Controls/wm-chartoitem) message in response to a [WM_CHAR](#onchar) message.
 
@@ -5353,7 +5353,7 @@ The framework calls this member function to specify the action that the applicat
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onchildactivate"></a>  CWnd::OnChildActivate
+## <a name="onchildactivate"></a> CWnd::OnChildActivate
 
 If the `CWnd` object is a multiple document interface (MDI) child window, `OnChildActivate` is called by the framework when the user clicks the window's title bar or when the window is activated, moved, or sized.
 
@@ -5361,7 +5361,7 @@ If the `CWnd` object is a multiple document interface (MDI) child window, `OnChi
 afx_msg void OnChildActivate();
 ```
 
-##  <a name="onchildnotify"></a>  CWnd::OnChildNotify
+## <a name="onchildnotify"></a> CWnd::OnChildNotify
 
 This member function is called by this window's parent window when it receives a notification message that applies to this window.
 
@@ -5399,7 +5399,7 @@ The default implementation of this member function returns 0, which means that t
 
 Override this member function to extend the manner in which a control responds to notification messages.
 
-##  <a name="onclipboardupdate"></a>  CWnd::OnClipboardUpdate
+## <a name="onclipboardupdate"></a> CWnd::OnClipboardUpdate
 
 The framework calls this member function when the contents of the clipboard have changed.
 
@@ -5407,7 +5407,7 @@ The framework calls this member function when the contents of the clipboard have
 afx_msg void OnClipboardUpdate();
 ```
 
-##  <a name="onclose"></a>  CWnd::OnClose
+## <a name="onclose"></a> CWnd::OnClose
 
 The framework calls this member function as a signal that the `CWnd` or an application is to terminate.
 
@@ -5419,7 +5419,7 @@ afx_msg void OnClose();
 
 The default implementation calls `DestroyWindow`.
 
-##  <a name="oncolorizationcolorchanged"></a>  CWnd::OnColorizationColorChanged
+## <a name="oncolorizationcolorchanged"></a> CWnd::OnColorizationColorChanged
 
 The framework calls this member when the rendering policy for the nonclient area has changed.
 
@@ -5443,7 +5443,7 @@ This method receives the [WM_DWMNCRENDERINGCHANGED](/windows/win32/dwm/wm-dwmcol
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oncommand"></a>  CWnd::OnCommand
+## <a name="oncommand"></a> CWnd::OnCommand
 
 The framework calls this member function when the user selects an item from a menu, when a child control sends a notification message, or when an accelerator keystroke is translated.
 
@@ -5474,7 +5474,7 @@ Override this member function in your derived class to handle the [WM_COMMAND](/
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oncompacting"></a>  CWnd::OnCompacting
+## <a name="oncompacting"></a> CWnd::OnCompacting
 
 The framework calls this member function for all top-level windows when Windows detects that more than 12.5 percent of system time over a 30- to 60-second interval is being spent compacting memory.
 
@@ -5496,7 +5496,7 @@ When a `CWnd` object receives this call, it should free as much memory as possib
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oncompareitem"></a>  CWnd::OnCompareItem
+## <a name="oncompareitem"></a> CWnd::OnCompareItem
 
 The framework calls this member function to specify the relative position of a new item in a child sorted owner-draw combo or list box.
 
@@ -5535,7 +5535,7 @@ If the `hwndItem` member of the `COMPAREITEMSTRUCT` structure belongs to a [CLis
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oncompositionchanged"></a>  CWnd::OnCompositionChanged
+## <a name="oncompositionchanged"></a> CWnd::OnCompositionChanged
 
 The framework calls this member function for all top-level windows when the Desktop Window Manager (DWM) composition is enabled or disabled.
 
@@ -5550,7 +5550,7 @@ This method receives the [WM_DWMCOMPOSITIONCHANGED](/windows/win32/dwm/wm-dwmcom
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oncontextmenu"></a>  CWnd::OnContextMenu
+## <a name="oncontextmenu"></a> CWnd::OnContextMenu
 
 Called by the framework when the user has clicked the right mouse button (right clicked) in the window.
 
@@ -5574,7 +5574,7 @@ You can process this message by displaying a context menu using the [TrackPopupM
 
 If you do not display a context menu you should pass this message onto the [DefWindowProc](#defwindowproc) function. If your window is a child window, `DefWindowProc` sends the message to the parent. Otherwise, `DefWindowProc` displays a default context menu if the specified position is in the window's caption.
 
-##  <a name="oncopydata"></a>  CWnd::OnCopyData
+## <a name="oncopydata"></a> CWnd::OnCopyData
 
 This member function is called by the framework to copy data from one application to another.
 
@@ -5609,7 +5609,7 @@ If the receiving application needs access to the data after this function return
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oncreate"></a>  CWnd::OnCreate
+## <a name="oncreate"></a> CWnd::OnCreate
 
 The framework calls this member function when an application requests that the Windows window be created by calling the [Create](#create) or [CreateEx](#createex) member function.
 
@@ -5637,7 +5637,7 @@ The `CREATESTRUCT` structure contains copies of the parameters used to create th
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onctlcolor"></a>  CWnd::OnCtlColor
+## <a name="onctlcolor"></a> CWnd::OnCtlColor
 
 The framework calls this member function when a child control is about to be drawn.
 
@@ -5694,7 +5694,7 @@ To change the background color of a single-line edit control, set the brush hand
 
 [!code-cpp[NVC_MFCWindowing#107](../../mfc/reference/codesnippet/cpp/cwnd-class_47.cpp)]
 
-##  <a name="ondeadchar"></a>  CWnd::OnDeadChar
+## <a name="ondeadchar"></a> CWnd::OnDeadChar
 
 The framework calls this member function when the [OnKeyUp](#onkeyup) member function and the [OnKeyDown](#onkeydown) member functions are called.
 
@@ -5739,7 +5739,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="ondeleteitem"></a>  CWnd::OnDeleteItem
+## <a name="ondeleteitem"></a> CWnd::OnDeleteItem
 
 The framework calls this member function to inform the owner of an owner-draw list box or combo box that the list box or combo box is destroyed or that items have been removed by [CComboBox::DeleteString](../../mfc/reference/ccombobox-class.md#deletestring), [CListBox::DeleteString](../../mfc/reference/clistbox-class.md#deletestring), [CComboBox::ResetContent](../../mfc/reference/ccombobox-class.md#resetcontent), or [CListBox::ResetContent](../../mfc/reference/clistbox-class.md#resetcontent).
 
@@ -5764,7 +5764,7 @@ If the `hwndItem` member of the `DELETEITEMSTRUCT` structure belongs to a combo 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="ondestroy"></a>  CWnd::OnDestroy
+## <a name="ondestroy"></a> CWnd::OnDestroy
 
 The framework calls this member function to inform the `CWnd` object that it is being destroyed.
 
@@ -5780,7 +5780,7 @@ afx_msg void OnDestroy();
 
 If the `CWnd` object being destroyed is part of the Clipboard-viewer chain (set by calling the [SetClipboardViewer](#setclipboardviewer) member function), the `CWnd` must remove itself from the Clipboard-viewer chain by calling the [ChangeClipboardChain](#changeclipboardchain) member function before returning from the `OnDestroy` function.
 
-##  <a name="ondestroyclipboard"></a>  CWnd::OnDestroyClipboard
+## <a name="ondestroyclipboard"></a> CWnd::OnDestroyClipboard
 
 The framework calls this member function for the Clipboard owner when the Clipboard is emptied through a call to the [EmptyClipboard](/windows/win32/api/winuser/nf-winuser-emptyclipboard) Windows function.
 
@@ -5788,7 +5788,7 @@ The framework calls this member function for the Clipboard owner when the Clipbo
 afx_msg void OnDestroyClipboard();
 ```
 
-##  <a name="ondevicechange"></a>  CWnd::OnDeviceChange
+## <a name="ondevicechange"></a> CWnd::OnDeviceChange
 
 The framework calls this member function to notify an application or device driver of a change to the hardware configuration of a device or the computer.
 
@@ -5833,7 +5833,7 @@ The *nEvent* parameter can be one of these values:
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="ondevmodechange"></a>  CWnd::OnDevModeChange
+## <a name="ondevmodechange"></a> CWnd::OnDevModeChange
 
 The framework calls this member function for all top-level `CWnd` objects when the user changes device-mode settings.
 
@@ -5855,7 +5855,7 @@ This function is not called when the user changes the default printer from Contr
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="ondrawclipboard"></a>  CWnd::OnDrawClipboard
+## <a name="ondrawclipboard"></a> CWnd::OnDrawClipboard
 
 The framework calls this member function for each window in the Clipboard-viewer chain when the contents of the Clipboard change.
 
@@ -5869,7 +5869,7 @@ Only applications that have joined the Clipboard-viewer chain by calling the [Se
 
 Each window that receives an `OnDrawClipboard` call should call the [SendMessage](/windows/win32/api/winuser/nf-winuser-sendmessage) Windows function to pass a [WM_DRAWCLIPBOARD](/windows/win32/dataxchg/wm-drawclipboard) message on to the next window in the Clipboard-viewer chain. The handle of the next window is returned by the [SetClipboardViewer](#setclipboardviewer) member function; it may be modified in response to an [OnChangeCbChain](#onchangecbchain) member function call.
 
-##  <a name="ondrawiconicthumbnailorlivepreview"></a>  CWnd::OnDrawIconicThumbnailOrLivePreview
+## <a name="ondrawiconicthumbnailorlivepreview"></a> CWnd::OnDrawIconicThumbnailOrLivePreview
 
 Called by the framework when it needs to obtain a bitmap to be displayed on Windows 7 tab thumbnail, or on the client for application peek.
 
@@ -5903,7 +5903,7 @@ Specifies whether this method is called for iconic thumbnail or live preview (pe
 
 Override this method in a derived class and draw on the specified device context in order to customize thumbnail and peek. If *bThumbnail* is TRUE, *szRequiredThumbnailSize* can be ignored. In this case you should be aware that you draw full sized bitmap (that is, a bitmap that covers the whole client area). The device context ( *dc*) comes with selected 32 bits bitmap. The default implementation sends WM_PRINT to this window with PRF_CLIENT, PRF_CHILDREN, and PRF_NONCLIENT flags.
 
-##  <a name="ondrawitem"></a>  CWnd::OnDrawItem
+## <a name="ondrawitem"></a> CWnd::OnDrawItem
 
 The framework calls this member function for the owner of an owner-draw button control, combo-box control, list-box control, or menu when a visual aspect of the control or menu has changed.
 
@@ -5932,7 +5932,7 @@ If the `hwndItem` member belongs to a [CButton](../../mfc/reference/cbutton-clas
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="ondropfiles"></a>  CWnd::OnDropFiles
+## <a name="ondropfiles"></a> CWnd::OnDropFiles
 
 The framework calls this member function when the user releases the left mouse button over a window that has registered itself as the recipient of dropped files.
 
@@ -5952,7 +5952,7 @@ Typically, a derived class will be designed to support dropped files and it will
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onenable"></a>  CWnd::OnEnable
+## <a name="onenable"></a> CWnd::OnEnable
 
 The framework calls this member function when an application changes the enabled state of the `CWnd` object.
 
@@ -5972,7 +5972,7 @@ Specifies whether the `CWnd` object has been enabled or disabled. This parameter
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onendsession"></a>  CWnd::OnEndSession
+## <a name="onendsession"></a> CWnd::OnEndSession
 
 The framework calls this member function after the `CWnd` object has returned a nonzero value from a [OnQueryEndSession](#onqueryendsession) member function call.
 
@@ -5996,7 +5996,7 @@ You do not need to call the [DestroyWindow](#destroywindow) member function or [
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onenteridle"></a>  CWnd::OnEnterIdle
+## <a name="onenteridle"></a> CWnd::OnEnterIdle
 
 The framework calls this member function to inform an application's main window procedure that a modal dialog box or a menu is entering an idle state.
 
@@ -6025,7 +6025,7 @@ A modal dialog box or menu enters an idle state when no messages are waiting in 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onentermenuloop"></a>  CWnd::OnEnterMenuLoop
+## <a name="onentermenuloop"></a> CWnd::OnEnterMenuLoop
 
 The framework calls this member function when a menu modal loop has been entered.
 
@@ -6043,7 +6043,7 @@ Specifies whether the menu involved is a popup menu. Has a nonzero value if the 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onentersizemove"></a>  CWnd::OnEnterSizeMove
+## <a name="onentersizemove"></a> CWnd::OnEnterSizeMove
 
 The framework calls this member function one time after the affected window enters a moving or sizing modal loop.
 
@@ -6060,7 +6060,7 @@ A window enters a moving or sizing modal loop when the user clicks the window's 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onerasebkgnd"></a>  CWnd::OnEraseBkgnd
+## <a name="onerasebkgnd"></a> CWnd::OnEraseBkgnd
 
 The framework calls this member function when the `CWnd` object background needs erasing (for example, when resized).
 
@@ -6092,7 +6092,7 @@ Windows assumes the background is computed with the MM_TEXT mapping mode. If the
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onexitmenuloop"></a>  CWnd::OnExitMenuLoop
+## <a name="onexitmenuloop"></a> CWnd::OnExitMenuLoop
 
 The framework calls this member function when a menu modal loop has been exited.
 
@@ -6110,7 +6110,7 @@ Specifies whether the menu involved is a pop-up menu. Has a nonzero value if the
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onexitsizemove"></a>  CWnd::OnExitSizeMove
+## <a name="onexitsizemove"></a> CWnd::OnExitSizeMove
 
 The framework calls this member function one time after the affected window exits a moving or sizing modal loop.
 
@@ -6127,7 +6127,7 @@ A window enters a moving or sizing modal loop when the user clicks the window's 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onfontchange"></a>  CWnd::OnFontChange
+## <a name="onfontchange"></a> CWnd::OnFontChange
 
 All top-level windows in the system receive an `OnFontChange` call from the framework after the application changes the pool of font resources.
 
@@ -6141,7 +6141,7 @@ An application that adds or removes fonts from the system (for example, through 
 
 To send this message, use the [SendMessage](/windows/win32/api/winuser/nf-winuser-sendmessage) Windows function with the *hWnd* parameter set to HWND_BROADCAST.
 
-##  <a name="ongetdlgcode"></a>  CWnd::OnGetDlgCode
+## <a name="ongetdlgcode"></a> CWnd::OnGetDlgCode
 
 Called for a control so the control can process arrow-key and TAB-key input itself.
 
@@ -6181,7 +6181,7 @@ Normally, Windows handles all arrow-key and TAB-key input to a `CWnd` control. B
 
 The default `OnGetDlgCode` functions for the predefined control classes return a code appropriate for each class.
 
-##  <a name="ongetminmaxinfo"></a>  CWnd::OnGetMinMaxInfo
+## <a name="ongetminmaxinfo"></a> CWnd::OnGetMinMaxInfo
 
 The framework calls this member function whenever Windows needs to know the maximized position or dimensions, or the minimum or maximum tracking size.
 
@@ -6203,7 +6203,7 @@ Windows fills in an array of points specifying default values for the various po
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onhelp"></a>  CWnd::OnHelp
+## <a name="onhelp"></a> CWnd::OnHelp
 
 Handles F1 Help within the application (using the current context).
 
@@ -6215,7 +6215,7 @@ afx_msg void OnHelp();
 
 See [CWinApp::OnHelp](../../mfc/reference/cwinapp-class.md#onhelp) for more information.
 
-##  <a name="onhelpfinder"></a>  CWnd::OnHelpFinder
+## <a name="onhelpfinder"></a> CWnd::OnHelpFinder
 
 Handles the ID_HELP_FINDER and ID_DEFAULT_HELP commands.
 
@@ -6227,7 +6227,7 @@ afx_msg void OnHelpFinder();
 
 See [CWinApp::OnHelpFinder](../../mfc/reference/cwinapp-class.md#onhelpfinder) for more information.
 
-##  <a name="onhelpindex"></a>  CWnd::OnHelpIndex
+## <a name="onhelpindex"></a> CWnd::OnHelpIndex
 
 Handles the ID_HELP_INDEX command and provides a default Help topic.
 
@@ -6239,7 +6239,7 @@ afx_msg void OnHelpIndex();
 
 See [CWinApp::OnHelpIndex](../../mfc/reference/cwinapp-class.md#onhelpindex) for more information.
 
-##  <a name="onhelpinfo"></a>  CWnd::OnHelpInfo
+## <a name="onhelpinfo"></a> CWnd::OnHelpInfo
 
 Called by the framework when the user presses the F1 key.
 
@@ -6260,7 +6260,7 @@ Returns TRUE if a window has the keyboard focus or if a menu is active within a 
 
 If a menu is active when F1 is pressed, WM_HELP is sent to the window associated with the menu; otherwise, WM_HELP is sent to the window that has the keyboard focus. If no window has the keyboard focus, WM_HELP is sent to the currently active window.
 
-##  <a name="onhelpusing"></a>  CWnd::OnHelpUsing
+## <a name="onhelpusing"></a> CWnd::OnHelpUsing
 
 Handles the ID_HELP_USING command.
 
@@ -6272,7 +6272,7 @@ afx_msg void OnHelpUsing();
 
 See [CWinApp::OnHelpUsing](../../mfc/reference/cwinapp-class.md#onhelpusing) for more information.
 
-##  <a name="onhotkey"></a>  CWnd::OnHotKey
+## <a name="onhotkey"></a> CWnd::OnHotKey
 
 The framework calls this member function when the user presses a system-wide hot key.
 
@@ -6298,7 +6298,7 @@ This method receives the [WM_HOTKEY](/windows/win32/inputdev/wm-hotkey) notifica
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onhscroll"></a>  CWnd::OnHScroll
+## <a name="onhscroll"></a> CWnd::OnHScroll
 
 The framework calls this member function when the user clicks a window's horizontal scroll bar.
 
@@ -6351,7 +6351,7 @@ If an application scrolls the contents controlled by the scroll bar, it must als
 
 [!code-cpp[NVC_MFCWindowing#108](../../mfc/reference/codesnippet/cpp/cwnd-class_48.cpp)]
 
-##  <a name="onhscrollclipboard"></a>  CWnd::OnHScrollClipboard
+## <a name="onhscrollclipboard"></a> CWnd::OnHScrollClipboard
 
 The Clipboard owner's `OnHScrollClipboard` member function is called by the Clipboard viewer when the Clipboard data has the `CF_OWNERDISPLAY` format and there is an event in the Clipboard viewer's horizontal scroll bar.
 
@@ -6396,7 +6396,7 @@ The owner should scroll the Clipboard image, invalidate the appropriate section,
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oniconerasebkgnd"></a>  CWnd::OnIconEraseBkgnd
+## <a name="oniconerasebkgnd"></a> CWnd::OnIconEraseBkgnd
 
 The framework calls this member function for a minimized (iconic) `CWnd` object when the background of the icon must be filled before painting the icon.
 
@@ -6418,7 +6418,7 @@ The [DefWindowProc](#defwindowproc) member function fills the icon background wi
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oninitmenu"></a>  CWnd::OnInitMenu
+## <a name="oninitmenu"></a> CWnd::OnInitMenu
 
 The framework calls this member function when a menu is about to become active.
 
@@ -6440,7 +6440,7 @@ Specifies the menu to be initialized. May be temporary and should not be stored 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oninitmenupopup"></a>  CWnd::OnInitMenuPopup
+## <a name="oninitmenupopup"></a> CWnd::OnInitMenuPopup
 
 The framework calls this member function when a pop-up menu is about to become active.
 
@@ -6469,7 +6469,7 @@ This allows an application to modify the pop-up menu before it is displayed with
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oninputdevicechange"></a>  CWnd::OnInputDeviceChange
+## <a name="oninputdevicechange"></a> CWnd::OnInputDeviceChange
 
 The framework calls this member function when an I/O device is added or removed from the system.
 
@@ -6490,7 +6490,7 @@ This method receives the [WM_INPUT_DEVICE_CHANGE](/windows/win32/inputdev/wm-inp
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oninputlangchange"></a>  CWnd::OnInputLangChange
+## <a name="oninputlangchange"></a> CWnd::OnInputLangChange
 
 The framework calls this member for the topmost affected window after an application's input language has been changed.
 
@@ -6514,7 +6514,7 @@ This method receives the [WM_INPUTLANGCHANGE](/windows/win32/winmsg/wm-inputlang
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="oninputlangchangerequest"></a>  CWnd::OnInputLangChangeRequest
+## <a name="oninputlangchangerequest"></a> CWnd::OnInputLangChangeRequest
 
 The framework calls this member for window with the focus when the user chooses a new input language.
 
@@ -6538,7 +6538,7 @@ This method receives the [WM_INPUTLANGCHANGEREQUEST](/windows/win32/winmsg/wm-in
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onkeydown"></a>  CWnd::OnKeyDown
+## <a name="onkeydown"></a> CWnd::OnKeyDown
 
 The framework calls this member function when a nonsystem key is pressed.
 
@@ -6583,7 +6583,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onkeyup"></a>  CWnd::OnKeyUp
+## <a name="onkeyup"></a> CWnd::OnKeyUp
 
 The framework calls this member function when a nonsystem key is released.
 
@@ -6626,7 +6626,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onkillfocus"></a>  CWnd::OnKillFocus
+## <a name="onkillfocus"></a> CWnd::OnKillFocus
 
 The framework calls this member function immediately before losing the input focus.
 
@@ -6646,7 +6646,7 @@ If the `CWnd` object is displaying a caret, the caret should be destroyed at thi
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onlbuttondblclk"></a>  CWnd::OnLButtonDblClk
+## <a name="onlbuttondblclk"></a> CWnd::OnLButtonDblClk
 
 The framework calls this member function when the user double-clicks the left mouse button.
 
@@ -6681,7 +6681,7 @@ Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/win32/api/winuser/ns-w
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onlbuttondown"></a>  CWnd::OnLButtonDown
+## <a name="onlbuttondown"></a> CWnd::OnLButtonDown
 
 The framework calls this member function when the user presses the left mouse button.
 
@@ -6714,7 +6714,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onlbuttonup"></a>  CWnd::OnLButtonUp
+## <a name="onlbuttonup"></a> CWnd::OnLButtonUp
 
 The framework calls this member function when the user releases the left mouse button.
 
@@ -6745,7 +6745,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmbuttondblclk"></a>  CWnd::OnMButtonDblClk
+## <a name="onmbuttondblclk"></a> CWnd::OnMButtonDblClk
 
 The framework calls this member function when the user double-clicks the middle mouse button.
 
@@ -6780,7 +6780,7 @@ Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/win32/api/winuser/ns-w
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmbuttondown"></a>  CWnd::OnMButtonDown
+## <a name="onmbuttondown"></a> CWnd::OnMButtonDown
 
 The framework calls this member function when the user presses the middle mouse button.
 
@@ -6813,7 +6813,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmbuttonup"></a>  CWnd::OnMButtonUp
+## <a name="onmbuttonup"></a> CWnd::OnMButtonUp
 
 The framework calls this member function when the user releases the middle mouse button.
 
@@ -6844,7 +6844,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmdiactivate"></a>  CWnd::OnMDIActivate
+## <a name="onmdiactivate"></a> CWnd::OnMDIActivate
 
 The framework calls this member function for the child window being deactivated and the child window being activated.
 
@@ -6873,7 +6873,7 @@ An MDI child window is activated independently of the MDI frame window. When the
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmeasureitem"></a>  CWnd::OnMeasureItem
+## <a name="onmeasureitem"></a> CWnd::OnMeasureItem
 
 The framework calls this member function by the framework for the owner of an owner-draw button, combo box, list box, or menu item when the control is created.
 
@@ -6905,7 +6905,7 @@ If the item being measured is a `CMenu`, `CListBox` or `CComboBox` object, then 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmenuchar"></a>  CWnd::OnMenuChar
+## <a name="onmenuchar"></a> CWnd::OnMenuChar
 
 The framework calls this member function when the user presses a menu mnemonic character that doesn't match any of the predefined mnemonics in the current menu.
 
@@ -6946,7 +6946,7 @@ It is sent to the `CWnd` that owns the menu. `OnMenuChar` is also called when th
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmenudrag"></a>  CWnd::OnMenuDrag
+## <a name="onmenudrag"></a> CWnd::OnMenuDrag
 
 The framework calls this member function of the current drag-and-drop menu when the user begins to drag a menu item.
 
@@ -6977,7 +6977,7 @@ This method receives the [WM_MENUDRAG](/windows/win32/menurc/wm-menudrag) notifi
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmenugetobject"></a>  CWnd::OnMenuGetObject
+## <a name="onmenugetobject"></a> CWnd::OnMenuGetObject
 
 The framework calls this member function of the current drag-and-drop menu when the mouse cursor enters a menu item or moves from the center of the item to the top or bottom of the item.
 
@@ -7005,7 +7005,7 @@ This method receives the [WM_MENUGETOBJECT](/windows/win32/menurc/wm-menugetobje
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmenurbuttonup"></a>  CWnd::OnMenuRButtonUp
+## <a name="onmenurbuttonup"></a> CWnd::OnMenuRButtonUp
 
 The framework calls this member function when the user releases the right mouse button while the cursor is on a menu item.
 
@@ -7029,7 +7029,7 @@ This method receives the [WM_MENURBUTTONUP](/windows/win32/menurc/wm-menurbutton
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmenuselect"></a>  CWnd::OnMenuSelect
+## <a name="onmenuselect"></a> CWnd::OnMenuSelect
 
 If the `CWnd` object is associated with a menu, `OnMenuSelect` is called by the framework when the user selects a menu item.
 
@@ -7076,7 +7076,7 @@ If *nFlags* contains 0xFFFF and *hSysMenu* contains 0, Windows has closed the me
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmouseactivate"></a>  CWnd::OnMouseActivate
+## <a name="onmouseactivate"></a> CWnd::OnMouseActivate
 
 The framework calls this member function when the cursor is in an inactive window and the user presses a mouse button.
 
@@ -7123,7 +7123,7 @@ For a description of the individual hit-test area codes, see the [OnNcHitTest](#
 
 [!code-cpp[NVC_MFCAxCtl#9](../../mfc/reference/codesnippet/cpp/cwnd-class_49.cpp)]
 
-##  <a name="onmousehover"></a>  CWnd::OnMouseHover
+## <a name="onmousehover"></a> CWnd::OnMouseHover
 
 The framework calls this member function when the cursor hovers over the client area of the window for the period of time specified in a prior call to [TrackMouseEvent](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
@@ -7159,7 +7159,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmousehwheel"></a>  CWnd::OnMouseHWheel
+## <a name="onmousehwheel"></a> CWnd::OnMouseHWheel
 
 The framework calls this member when the current window is composed by the Desktop Window Manager (DWM), and that window is maximized.
 
@@ -7185,7 +7185,7 @@ This method receives the [WM_MOUSEHWHEEL](/windows/win32/inputdev/wm-mousehwheel
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmouseleave"></a>  CWnd::OnMouseLeave
+## <a name="onmouseleave"></a> CWnd::OnMouseLeave
 
 The framework calls this member function when the cursor leaves the client area of the window specified in a prior call to [TrackMouseEvent](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
@@ -7200,7 +7200,7 @@ This method receives the [WM_MOUSELEAVE](/windows/win32/inputdev/wm-mouseleave) 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmousemove"></a>  CWnd::OnMouseMove
+## <a name="onmousemove"></a> CWnd::OnMouseMove
 
 The framework calls this member function when the mouse cursor moves.
 
@@ -7235,7 +7235,7 @@ If the mouse is not captured, the WM_MOUSEMOVE message is received by the `CWnd`
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmousewheel"></a>  CWnd::OnMouseWheel
+## <a name="onmousewheel"></a> CWnd::OnMouseWheel
 
 The framework calls this member function as a user rotates the mouse wheel and encounters the wheel's next notch.
 
@@ -7284,7 +7284,7 @@ Override this member function to provide your own mouse-wheel scrolling behavior
 > [!NOTE]
 > `OnMouseWheel` handles messages for Windows NT 4.0 and later versions. For Windows 95/98 or Windows NT 3.51 message handling, use [OnRegisteredMouseWheel](#onregisteredmousewheel).
 
-##  <a name="onmove"></a>  CWnd::OnMove
+## <a name="onmove"></a> CWnd::OnMove
 
 The framework calls this member function after the `CWnd` object has been moved.
 
@@ -7307,7 +7307,7 @@ Specifies the new y-coordinate location of the upper-left corner of the client a
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onmoving"></a>  CWnd::OnMoving
+## <a name="onmoving"></a> CWnd::OnMoving
 
 The framework calls this member function while a user is moving a `CWnd` object.
 
@@ -7330,7 +7330,7 @@ Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT s
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncactivate"></a>  CWnd::OnNcActivate
+## <a name="onncactivate"></a> CWnd::OnNcActivate
 
 The framework calls this member function when the nonclient area needs to be changed to indicate an active or inactive state.
 
@@ -7354,7 +7354,7 @@ The default implementation draws the title bar and title-bar text in their activ
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onnccalcsize"></a>  CWnd::OnNcCalcSize
+## <a name="onnccalcsize"></a> CWnd::OnNcCalcSize
 
 The framework calls this member function when the size and position of the client area needs to be calculated.
 
@@ -7385,7 +7385,7 @@ The default implementation calculates the size of the client area based on the w
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onnccreate"></a>  CWnd::OnNcCreate
+## <a name="onnccreate"></a> CWnd::OnNcCreate
 
 The framework calls this member function prior to the [WM_CREATE](#oncreate) message when the `CWnd` object is first created.
 
@@ -7407,7 +7407,7 @@ Nonzero if the nonclient area is created. It is 0 if an error occurs; the `Creat
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncdestroy"></a>  CWnd::OnNcDestroy
+## <a name="onncdestroy"></a> CWnd::OnNcDestroy
 
 Called by the framework when the nonclient area is being destroyed, and is the last member function called when the Windows window is destroyed.
 
@@ -7421,7 +7421,7 @@ The default implementation performs some cleanup, then calls the virtual member 
 
 Override `PostNcDestroy` if you want to perform your own cleanup, such as a **delete this** operation. If you override `OnNcDestroy`, you must call `OnNcDestroy` in your base class to ensure that any memory internally allocated for the window is freed.
 
-##  <a name="onnchittest"></a>  CWnd::OnNcHitTest
+## <a name="onnchittest"></a> CWnd::OnNcHitTest
 
 The framework calls this member function for the `CWnd` object that contains the cursor (or the `CWnd` object that used the [SetCapture](#setcapture) member function to capture the mouse input) every time the mouse is moved.
 
@@ -7443,7 +7443,7 @@ One of the mouse hit-test enumerated values. See [WM_NCHITTEST](/windows/win32/i
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onnclbuttondblclk"></a>  CWnd::OnNcLButtonDblClk
+## <a name="onnclbuttondblclk"></a> CWnd::OnNcLButtonDblClk
 
 The framework calls this member function when the user double-clicks the left mouse button while the cursor is within a nonclient area of `CWnd`.
 
@@ -7468,7 +7468,7 @@ If appropriate, the [WM_SYSCOMMAND](#onsyscommand) message is sent.
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onnclbuttondown"></a>  CWnd::OnNcLButtonDown
+## <a name="onnclbuttondown"></a> CWnd::OnNcLButtonDown
 
 The framework calls this member function when the user presses the left mouse button while the cursor is within a nonclient area of the `CWnd` object.
 
@@ -7493,7 +7493,7 @@ If appropriate, the [WM_SYSCOMMAND](#onsyscommand) is sent.
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received.If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onnclbuttonup"></a>  CWnd::OnNcLButtonUp
+## <a name="onnclbuttonup"></a> CWnd::OnNcLButtonUp
 
 The framework calls this member function when the user releases the left mouse button while the cursor is within a nonclient area.
 
@@ -7518,7 +7518,7 @@ If appropriate, [WM_SYSCOMMAND](#onsyscommand) is sent.
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncmbuttondblclk"></a>  CWnd::OnNcMButtonDblClk
+## <a name="onncmbuttondblclk"></a> CWnd::OnNcMButtonDblClk
 
 The framework calls this member function when the user double-clicks the middle mouse button while the cursor is within a nonclient area.
 
@@ -7541,7 +7541,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncmbuttondown"></a>  CWnd::OnNcMButtonDown
+## <a name="onncmbuttondown"></a> CWnd::OnNcMButtonDown
 
 The framework calls this member function when the user presses the middle mouse button while the cursor is within a nonclient area.
 
@@ -7564,7 +7564,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncmbuttonup"></a>  CWnd::OnNcMButtonUp
+## <a name="onncmbuttonup"></a> CWnd::OnNcMButtonUp
 
 The framework calls this member function when the user releases the middle mouse button while the cursor is within a nonclient area.
 
@@ -7587,7 +7587,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncmousehover"></a>  CWnd::OnNcMouseHover
+## <a name="onncmousehover"></a> CWnd::OnNcMouseHover
 
 The framework calls this member function when the cursor hovers over the nonclient area of the window for the period of time specified in a prior call to [TrackMouseEvent](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
@@ -7611,7 +7611,7 @@ This method receives the [WM_NCMOUSEHOVER](/windows/win32/inputdev/wm-ncmousehov
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncmouseleave"></a>  CWnd::OnNcMouseLeave
+## <a name="onncmouseleave"></a> CWnd::OnNcMouseLeave
 
 The framework calls this member function when the cursor leaves the nonclient area of the window specified in a prior call to [TrackMouseEvent](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
@@ -7626,7 +7626,7 @@ This method receives the [WM_NCMOUSELEAVE](/windows/win32/inputdev/wm-ncmouselea
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncmousemove"></a>  CWnd::OnNcMouseMove
+## <a name="onncmousemove"></a> CWnd::OnNcMouseMove
 
 The framework calls this member function when the cursor is moved within a nonclient area.
 
@@ -7651,7 +7651,7 @@ If appropriate, the [WM_SYSCOMMAND](#onsyscommand) message is sent.
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncpaint"></a>  CWnd::OnNcPaint
+## <a name="onncpaint"></a> CWnd::OnNcPaint
 
 The framework calls this member function when the nonclient area needs to be painted.
 
@@ -7665,7 +7665,7 @@ The default implementation paints the window frame.
 
 An application can override this call and paint its own custom window frame. The clipping region is always rectangular, even if the shape of the frame is altered.
 
-##  <a name="onncrbuttondblclk"></a>  CWnd::OnNcRButtonDblClk
+## <a name="onncrbuttondblclk"></a> CWnd::OnNcRButtonDblClk
 
 The framework calls this member function when the user double-clicks the right mouse button while the cursor is within a nonclient area of `CWnd`.
 
@@ -7688,7 +7688,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncrbuttondown"></a>  CWnd::OnNcRButtonDown
+## <a name="onncrbuttondown"></a> CWnd::OnNcRButtonDown
 
 The framework calls this member function when the user presses the right mouse button while the cursor is within a nonclient area.
 
@@ -7711,7 +7711,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncrbuttonup"></a>  CWnd::OnNcRButtonUp
+## <a name="onncrbuttonup"></a> CWnd::OnNcRButtonUp
 
 The framework calls this member function when the user releases the right mouse button while the cursor is within a nonclient area.
 
@@ -7734,7 +7734,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncrenderingchanged"></a>  CWnd::OnNcRenderingChanged
+## <a name="onncrenderingchanged"></a> CWnd::OnNcRenderingChanged
 
 The framework calls this member when the rendering policy for the nonclient area has changed.
 
@@ -7755,7 +7755,7 @@ This method receives the [WM_DWMNCRENDERINGCHANGED](/windows/win32/dwm/wm-dwmncr
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncxbuttondblclk"></a>  CWnd::OnNcXButtonDblClk
+## <a name="onncxbuttondblclk"></a> CWnd::OnNcXButtonDblClk
 
 The framework calls this member function when the user double-clicks XBUTTON1 or XBUTTON2 while the cursor is in the nonclient area of a window.
 
@@ -7781,7 +7781,7 @@ This method receives the [WM_XBUTTONDBLCLK](/windows/win32/inputdev/wm-xbuttondb
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncxbuttondown"></a>  CWnd::OnNcXButtonDown
+## <a name="onncxbuttondown"></a> CWnd::OnNcXButtonDown
 
 The framework calls this member function when the user presses XBUTTON1 or XBUTTON2 of the mouse while the cursor is in the nonclient area of a window.
 
@@ -7807,7 +7807,7 @@ This method receives the [WM_NCXBUTTONDOWN](/windows/win32/inputdev/wm-ncxbutton
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onncxbuttonup"></a>  CWnd::OnNcXButtonUp
+## <a name="onncxbuttonup"></a> CWnd::OnNcXButtonUp
 
 The framework calls this member function when the user releases XBUTTON1 or XBUTTON2 of the mouse while the cursor is in the nonclient area of a window.
 
@@ -7833,7 +7833,7 @@ This method receives the [WM_NCXBUTTONUP](/windows/win32/inputdev/wm-ncxbuttonup
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onnextmenu"></a>  CWnd::OnNextMenu
+## <a name="onnextmenu"></a> CWnd::OnNextMenu
 
 The framework calls this member function when the right or left arrow key is used to switch between the menu bar and the system menu.
 
@@ -7857,7 +7857,7 @@ This method receives the [WM_UNINITMENUPOPUP](/windows/win32/menurc/wm-uninitmen
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onnotify"></a>  CWnd::OnNotify
+## <a name="onnotify"></a> CWnd::OnNotify
 
 The framework calls this member function to inform the parent window of a control that an event has occurred in the control or that the control requires some kind of information.
 
@@ -7891,7 +7891,7 @@ Override this member function in your derived class to handle the WM_NOTIFY mess
 
 For more information on the WM_NOTIFY message, see Technical Note 61 (TN061), [ON_NOTIFY and WM_NOTIFY messages](../../mfc/tn061-on-notify-and-wm-notify-messages.md). You may also be interested the related topics described in [Control Topics](../../mfc/controls-mfc.md), and TN062, [Message Reflection for Windows Controls](../../mfc/tn062-message-reflection-for-windows-controls.md).
 
-##  <a name="onnotifyformat"></a>  CWnd::OnNotifyFormat
+## <a name="onnotifyformat"></a> CWnd::OnNotifyFormat
 
 The framework calls this member function to determine if the current window accepts ANSI or Unicode structures in the WM_NOTIFY notification message.
 
@@ -7923,7 +7923,7 @@ This method receives the [WM_NOTIFYFORMAT](/windows/win32/Controls/wm-notifyform
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onpaint"></a>  CWnd::OnPaint
+## <a name="onpaint"></a> CWnd::OnPaint
 
 The framework calls this member function when Windows or an application makes a request to repaint a portion of an application's window.
 
@@ -7949,7 +7949,7 @@ For more information about using `WM_Paint`, see the following topics in the Win
 
 - [Using the WM_PAINT Message](/windows/win32/gdi/using-the-wm-paint-message)
 
-##  <a name="onpaintclipboard"></a>  CWnd::OnPaintClipboard
+## <a name="onpaintclipboard"></a> CWnd::OnPaintClipboard
 
 A Clipboard owner's `OnPaintClipboard` member function is called by a Clipboard viewer when the Clipboard owner has placed data on the Clipboard in the CF_OWNERDISPLAY format and the Clipboard viewer's client area needs repainting.
 
@@ -7976,7 +7976,7 @@ To determine whether the entire client area or just a portion of it needs repain
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onpalettechanged"></a>  CWnd::OnPaletteChanged
+## <a name="onpalettechanged"></a> CWnd::OnPaletteChanged
 
 The framework calls this member function for all top-level windows after the window with input focus has realized its logical palette, thereby changing the system palette.
 
@@ -8000,7 +8000,7 @@ To avoid an infinite loop, the window shouldn't realize its palette unless it de
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onpaletteischanging"></a>  CWnd::OnPaletteIsChanging
+## <a name="onpaletteischanging"></a> CWnd::OnPaletteIsChanging
 
 The framework calls this member function to inform applications that an application is going to realize its logical palette.
 
@@ -8017,7 +8017,7 @@ Specifies the window that is about to realize its logical palette.
 
 This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onparentnotify"></a>  CWnd::OnParentNotify
+## <a name="onparentnotify"></a> CWnd::OnParentNotify
 
 A parent's `OnParentNotify` member function is called by the framework when its child window is created or destroyed, or when the user clicks a mouse button while the cursor is over the child window.
 
@@ -8056,7 +8056,7 @@ All child windows except those that have the [WS_EX_NOPARENTNOTIFY](../../mfc/re
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onpowerbroadcast"></a>  CWnd::OnPowerBroadcast
+## <a name="onpowerbroadcast"></a> CWnd::OnPowerBroadcast
 
 The framework calls this member function when a power-management event occurs.
 
@@ -8086,7 +8086,7 @@ The *nPowerEvent* parameter specifies events such as battery power is low, the p
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onquerydragicon"></a>  CWnd::OnQueryDragIcon
+## <a name="onquerydragicon"></a> CWnd::OnQueryDragIcon
 
 The framework calls this member function by a minimized (iconic) window that does not have an icon defined for its class.
 
@@ -8102,7 +8102,7 @@ A doubleword value that contains a cursor or icon handle in the low-order word. 
 
 The system makes this call to obtain the cursor to display while the user drags the minimized window. If an application returns the handle of an icon or cursor, the system converts it to black-and-white. If an application returns a handle, the handle must identify a monochrome cursor or icon compatible with the display driver's resolution. The application can call the [CWinApp::LoadCursor](../../mfc/reference/cwinapp-class.md#loadcursor) or [CWinApp::LoadIcon](../../mfc/reference/cwinapp-class.md#loadicon) member functions to load a cursor or icon from the resources in its executable file and to obtain this handle.
 
-##  <a name="onqueryendsession"></a>  CWnd::OnQueryEndSession
+## <a name="onqueryendsession"></a> CWnd::OnQueryEndSession
 
 The framework calls this member function when the user chooses to end the Windows session or when an application calls the [ExitWindows](/windows/win32/api/winuser/nf-winuser-exitwindows) Windows function.
 
@@ -8118,7 +8118,7 @@ Nonzero if an application can be conveniently shut down; otherwise 0.
 
 If any application returns 0, the Windows session is not ended. Windows stops calling `OnQueryEndSession` as soon as one application returns 0 and sends the [WM_ENDSESSION](#onendsession) message with a parameter value of FALSE for any application that has already returned nonzero.
 
-##  <a name="onquerynewpalette"></a>  CWnd::OnQueryNewPalette
+## <a name="onquerynewpalette"></a> CWnd::OnQueryNewPalette
 
 The framework calls this member function when the `CWnd` object is about to receive the input focus, giving the `CWnd` an opportunity to realize its logical palette when it receives the focus.
 
@@ -8130,7 +8130,7 @@ afx_msg BOOL OnQueryNewPalette();
 
 Nonzero if the `CWnd` realizes its logical palette; otherwise 0.
 
-##  <a name="onqueryopen"></a>  CWnd::OnQueryOpen
+## <a name="onqueryopen"></a> CWnd::OnQueryOpen
 
 The framework calls this member function when the `CWnd` object is minimized and the user requests that the `CWnd` be restored to its preminimized size and position.
 
@@ -8146,7 +8146,7 @@ Nonzero if the icon can be opened, or 0 to prevent the icon from being opened.
 
 While in `OnQueryOpen`, `CWnd` should not perform any action that would cause an activation or focus change (for example, creating a dialog box).
 
-##  <a name="onqueryuistate"></a>  CWnd::OnQueryUIState
+## <a name="onqueryuistate"></a> CWnd::OnQueryUIState
 
 Called to retrieve the user interface (UI) state for a window.
 
@@ -8168,7 +8168,7 @@ The return value is NULL if the focus indicators and the keyboard accelerators a
 
 This member function emulates the functionality of the [WM_QUERYUISTATE](/windows/win32/menurc/wm-queryuistate) message, as described in the Windows SDK.
 
-##  <a name="onrawinput"></a>  CWnd::OnRawInput
+## <a name="onrawinput"></a> CWnd::OnRawInput
 
 The framework calls this member function when the current window gets raw input.
 
@@ -8192,7 +8192,7 @@ This method receives the [WM_INPUT](/windows/win32/inputdev/wm-appcommand) notif
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onrbuttondblclk"></a>  CWnd::OnRButtonDblClk
+## <a name="onrbuttondblclk"></a> CWnd::OnRButtonDblClk
 
 The framework calls this member function when the user double-clicks the right mouse button.
 
@@ -8227,7 +8227,7 @@ Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/win32/api/winuser/ns-w
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onrbuttondown"></a>  CWnd::OnRButtonDown
+## <a name="onrbuttondown"></a> CWnd::OnRButtonDown
 
 The framework calls this member function when the user presses the right mouse button.
 
@@ -8259,7 +8259,7 @@ Specifies the x and y coordinates of the cursor. These coordinates are always re
 
 This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onrbuttonup"></a>  CWnd::OnRButtonUp
+## <a name="onrbuttonup"></a> CWnd::OnRButtonUp
 
 The framework calls this member function when the user releases the right mouse button.
 
@@ -8289,7 +8289,7 @@ Specifies the x and y coordinates of the cursor. These coordinates are always re
 
 This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onregisteredmousewheel"></a>  CWnd::OnRegisteredMouseWheel
+## <a name="onregisteredmousewheel"></a> CWnd::OnRegisteredMouseWheel
 
 The framework calls this member function as a user rotates the mouse wheel and encounters the wheel's next notch.
 
@@ -8320,7 +8320,7 @@ Override this member function to provide your own message routing or to alter th
 > [!NOTE]
 > `OnRegisteredMouseWheel` handles messages for Windows 95/98 and Windows NT 3.51. For Windows NT 4.0 message handling, use [OnMouseWheel](#onmousewheel).
 
-##  <a name="onrenderallformats"></a>  CWnd::OnRenderAllFormats
+## <a name="onrenderallformats"></a> CWnd::OnRenderAllFormats
 
 The Clipboard owner's `OnRenderAllFormats` member function is called by the framework when the owner application is being destroyed.
 
@@ -8332,7 +8332,7 @@ afx_msg void OnRenderAllFormats();
 
 The Clipboard owner should render the data in all the formats it is capable of generating and pass a data handle for each format to the Clipboard by calling the [SetClipboardData](/windows/win32/api/winuser/nf-winuser-setclipboarddata) Windows function. This ensures that the Clipboard contains valid data even though the application that rendered the data is destroyed. The application should call the [OpenClipboard](#openclipboard) member function before calling the [SetClipboardData](/windows/win32/api/winuser/nf-winuser-setclipboarddata) Windows function and call the [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) Windows function afterward.
 
-##  <a name="onrenderformat"></a>  CWnd::OnRenderFormat
+## <a name="onrenderformat"></a> CWnd::OnRenderFormat
 
 The Clipboard owner's `OnRenderFormat` member function is called by the framework when a particular format with delayed rendering needs to be rendered.
 
@@ -8354,7 +8354,7 @@ Do not call the `OpenClipboard` member function or the `CloseClipboard` Windows 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsessionchange"></a>  CWnd::OnSessionChange
+## <a name="onsessionchange"></a> CWnd::OnSessionChange
 
 The framework calls this member function to notify an application of a change in session state.
 
@@ -8380,7 +8380,7 @@ The *nSessionState* parameter specifies that a session is connected or disconnec
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsetcursor"></a>  CWnd::OnSetCursor
+## <a name="onsetcursor"></a> CWnd::OnSetCursor
 
 The framework calls this member function if mouse input is not captured and the mouse causes cursor movement within the `CWnd` object.
 
@@ -8419,7 +8419,7 @@ The *message* parameter is 0 when `CWnd` enters menu mode.
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsetfocus"></a>  CWnd::OnSetFocus
+## <a name="onsetfocus"></a> CWnd::OnSetFocus
 
 The framework calls this member function after gaining the input focus.
 
@@ -8439,7 +8439,7 @@ To display a caret, `CWnd` should call the appropriate caret functions at this p
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsettingchange"></a>  CWnd::OnSettingChange
+## <a name="onsettingchange"></a> CWnd::OnSettingChange
 
 The framework calls `OnSettingChange` for all top-level windows when the Win32 SystemParametersInfo function changes a system-wide setting.
 
@@ -8469,7 +8469,7 @@ The ON_WM_SETTINGCHANGE message is similar to the ON_WM_WININICHANGE message, wi
 
 You should have only one of these macros in your message map. To write a program that works for both Windows 95/98 and Windows NT 4.0, write a handler for ON_WM_SETTINGCHANGE. Under Windows NT 3.51, your handler will be called by `OnSettingChange` and *uFlags* and will always be zero.
 
-##  <a name="onshowwindow"></a>  CWnd::OnShowWindow
+## <a name="onshowwindow"></a> CWnd::OnShowWindow
 
 The framework calls this member function when the `CWnd` object is about to be hidden or shown.
 
@@ -8498,7 +8498,7 @@ A window is hidden or shown when the `ShowWindow` member function is called, whe
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsize"></a>  CWnd::OnSize
+## <a name="onsize"></a> CWnd::OnSize
 
 The framework calls this member function after the window's size has changed.
 
@@ -8541,7 +8541,7 @@ If the [SetScrollPos](#setscrollpos) or [MoveWindow](#movewindow) member functio
 
 [!code-cpp[NVC_MFCWindowing#109](../../mfc/reference/codesnippet/cpp/cwnd-class_50.cpp)]
 
-##  <a name="onsizeclipboard"></a>  CWnd::OnSizeClipboard
+## <a name="onsizeclipboard"></a> CWnd::OnSizeClipboard
 
 The Clipboard owner's `OnSizeClipboard` member function is called by the Clipboard viewer when the Clipboard contains data with the `CF_OWNERDISPLAY` attribute and the size of the client area of the Clipboard-viewer window has changed.
 
@@ -8568,7 +8568,7 @@ Within `OnSizeClipboard`, an application must use the [GlobalLock](/windows/win3
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsizing"></a>  CWnd::OnSizing
+## <a name="onsizing"></a> CWnd::OnSizing
 
 The framework calls this member function to indicate that the user is resizing the rectangle.
 
@@ -8597,7 +8597,7 @@ By processing this message, an application can monitor the size and position of 
 
 [!code-cpp[NVC_MFCWindowing#110](../../mfc/reference/codesnippet/cpp/cwnd-class_51.cpp)]
 
-##  <a name="onspoolerstatus"></a>  CWnd::OnSpoolerStatus
+## <a name="onspoolerstatus"></a> CWnd::OnSpoolerStatus
 
 The framework calls this member function from Print Manager whenever a job is added to or removed from the Print Manager queue.
 
@@ -8622,7 +8622,7 @@ This call is for informational purposes only.
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onstylechanged"></a>  CWnd::OnStyleChanged
+## <a name="onstylechanged"></a> CWnd::OnStyleChanged
 
 The framework calls this member function after the [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) function has changed one or more of the window's styles.
 
@@ -8649,7 +8649,7 @@ Points to a [STYLESTRUCT](/windows/win32/api/winuser/ns-winuser-stylestruct) str
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onstylechanging"></a>  CWnd::OnStyleChanging
+## <a name="onstylechanging"></a> CWnd::OnStyleChanging
 
 The framework calls this member function when the [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) function is about to change one or more of the window's styles.
 
@@ -8676,7 +8676,7 @@ Points to a [STYLESTRUCT](/windows/win32/api/winuser/ns-winuser-stylestruct) str
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsyschar"></a>  CWnd::OnSysChar
+## <a name="onsyschar"></a> CWnd::OnSysChar
 
 The framework calls this member function if `CWnd` has the input focus and the [WM_SYSKEYUP](#onsyskeyup) and [WM_SYSKEYDOWN](#onsyskeydown) messages are translated.
 
@@ -8719,7 +8719,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsyscolorchange"></a>  CWnd::OnSysColorChange
+## <a name="onsyscolorchange"></a> CWnd::OnSysColorChange
 
 The framework calls this member function for all top-level windows when a change is made in the system color setting.
 
@@ -8733,7 +8733,7 @@ Windows calls `OnSysColorChange` for any window that is affected by a system col
 
 Applications that have brushes that use the existing system colors should delete those brushes and re-create them with the new system colors.
 
-##  <a name="onsyscommand"></a>  CWnd::OnSysCommand
+## <a name="onsyscommand"></a> CWnd::OnSysCommand
 
 The framework calls this member function when the user selects a command from the Control menu, or when the user selects the Maximize or the Minimize button.
 
@@ -8800,7 +8800,7 @@ Accelerator (shortcut) keystrokes that are defined to select items from the Cont
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsysdeadchar"></a>  CWnd::OnSysDeadChar
+## <a name="onsysdeadchar"></a> CWnd::OnSysDeadChar
 
 The framework calls this member function if the `CWnd` object has the input focus when the [OnSysKeyUp](#onsyskeyup) or [OnSysKeyDown](#onsyskeydown) member function is called.
 
@@ -8839,7 +8839,7 @@ It specifies the character value of a dead key.
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsyskeydown"></a>  CWnd::OnSysKeyDown
+## <a name="onsyskeydown"></a> CWnd::OnSysKeyDown
 
 If the `CWnd` object has the input focus, the `OnSysKeyDown` member function is called by the framework when the user holds down the ALT key and then presses another key.
 
@@ -8886,7 +8886,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onsyskeyup"></a>  CWnd::OnSysKeyUp
+## <a name="onsyskeyup"></a> CWnd::OnSysKeyUp
 
 If the `CWnd` object has the focus, the `OnSysKeyUp` member function is called by the framework when the user releases a key that was pressed while the ALT key was held down.
 
@@ -8940,7 +8940,7 @@ For non-U.S. Enhanced 102-key keyboards, the right ALT key is handled as the CTR
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="ontcard"></a>  CWnd::OnTCard
+## <a name="ontcard"></a> CWnd::OnTCard
 
 The framework calls this member function when the user clicks an authorable button.
 
@@ -8986,7 +8986,7 @@ If *idAction* specifies HELP_TCARD_DATA, this parameter is a long integer specif
 
 This function is called only when an application has initiated a training card with Windows Help. An application initiates a training card by specifying the HELP_TCARD command in a call to the [WinHelp](../../mfc/reference/cwinapp-class.md#winhelp) function.
 
-##  <a name="ontimechange"></a>  CWnd::OnTimeChange
+## <a name="ontimechange"></a> CWnd::OnTimeChange
 
 The framework calls this member function after the system time is changed.
 
@@ -8998,7 +8998,7 @@ afx_msg void OnTimeChange();
 
 Have any application that changes the system time send this message to all top-level windows. To send the WM_TIMECHANGE message to all top-level windows, an application can use the [SendMessage](/windows/win32/api/winuser/nf-winuser-sendmessage) Windows function with its *hwnd* parameter set to HWND_BROADCAST.
 
-##  <a name="ontimer"></a>  CWnd::OnTimer
+## <a name="ontimer"></a> CWnd::OnTimer
 
 The framework calls this member function after each interval specified in the [SetTimer](#settimer) member function used to install a timer.
 
@@ -9022,7 +9022,7 @@ The [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Win
 
   See the example in [CWnd::SetTimer](#settimer).
 
-##  <a name="ontoolhittest"></a>  CWnd::OnToolHitTest
+## <a name="ontoolhittest"></a> CWnd::OnToolHitTest
 
 The framework calls this member function to determine whether a point is in the bounding rectangle of the specified tool.
 
@@ -9062,7 +9062,7 @@ Override `OnToolHitTest` to provide different information than the default provi
 
 See [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa), in the Windows SDK, for more information about the structure.
 
-##  <a name="ontouchinput"></a>  CWnd::OnTouchInput
+## <a name="ontouchinput"></a> CWnd::OnTouchInput
 
 Process single input from Windows touch.
 
@@ -9094,7 +9094,7 @@ TRUE if the application processes Windows touch input; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="ontouchinputs"></a>  CWnd::OnTouchInputs
+## <a name="ontouchinputs"></a> CWnd::OnTouchInputs
 
 Processes inputs from Windows touch.
 
@@ -9118,7 +9118,7 @@ TRUE if application processes Windows touch inputs; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="onunichar"></a>  CWnd::OnUniChar
+## <a name="onunichar"></a> CWnd::OnUniChar
 
 The framework calls this member function when a key is pressed. That is, the current window has the keyboard focus and a [WM_KEYDOWN](/windows/win32/inputdev/wm-keydown) message is translated by the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) function.
 
@@ -9144,7 +9144,7 @@ This method receives the [WM_UNICHAR](/windows/win32/inputdev/wm-unichar) notifi
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onuninitmenupopup"></a>  CWnd::OnUnInitMenuPopup
+## <a name="onuninitmenupopup"></a> CWnd::OnUnInitMenuPopup
 
 The framework calls this member function when a drop-down menu or submenu has been destroyed.
 
@@ -9168,7 +9168,7 @@ This method receives the [WM_UNINITMENUPOPUP](/windows/win32/menurc/wm-uninitmen
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onupdateuistate"></a>  CWnd::OnUpdateUIState
+## <a name="onupdateuistate"></a> CWnd::OnUpdateUIState
 
 Called to change the user interface (UI) state for the specified window and all its child windows.
 
@@ -9202,7 +9202,7 @@ Specifies which UI state elements are affected or the style of the control. Can 
 
 This member function emulates the functionality of the [WM_UPDATEUISTATE](/windows/win32/menurc/wm-updateuistate) message, as described in the Windows SDK.
 
-##  <a name="onuserchanged"></a>  CWnd::OnUserChanged
+## <a name="onuserchanged"></a> CWnd::OnUserChanged
 
 The framework calls this member for all windows after the user has logged on or off.
 
@@ -9217,7 +9217,7 @@ This method receives the [WM_USERCHANGED](/windows/win32/winmsg/wm-userchanged) 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onvkeytoitem"></a>  CWnd::OnVKeyToItem
+## <a name="onvkeytoitem"></a> CWnd::OnVKeyToItem
 
 If the `CWnd` object owns a list box with the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the list box will send the WM_VKEYTOITEM message in response to a WM_KEYDOWN message.
 
@@ -9250,7 +9250,7 @@ This member function is called by the framework only for list boxes that have th
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onvscroll"></a>  CWnd::OnVScroll
+## <a name="onvscroll"></a> CWnd::OnVScroll
 
 The framework calls this member function when the user clicks the window's vertical scroll bar.
 
@@ -9299,7 +9299,7 @@ If `OnVScroll` scrolls the contents of the `CWnd` object, it must also reset the
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onvscrollclipboard"></a>  CWnd::OnVScrollClipboard
+## <a name="onvscrollclipboard"></a> CWnd::OnVScrollClipboard
 
 The Clipboard owner's `OnVScrollClipboard` member function is called by the Clipboard viewer when the Clipboard data has the CF_OWNERDISPLAY format and there is an event in the Clipboard viewer's vertical scroll bar.
 
@@ -9344,7 +9344,7 @@ The owner should scroll the Clipboard image, invalidate the appropriate section,
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onwindowmaximizedchanged"></a>  CWnd::OnWindowMaximizedChanged
+## <a name="onwindowmaximizedchanged"></a> CWnd::OnWindowMaximizedChanged
 
 The framework calls this member when the current window is maximized, and the window is composed by the Desktop Window Manager (DWM).
 
@@ -9365,7 +9365,7 @@ This method receives the [WM_DWMWINDOWMAXIMIZEDCHANGE](/windows/win32/dwm/wm-dwm
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onwindowposchanged"></a>  CWnd::OnWindowPosChanged
+## <a name="onwindowposchanged"></a> CWnd::OnWindowPosChanged
 
 The framework calls this member function when the size, position, or Z-order has changed as a result of a call to the [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) member function or another window-management function.
 
@@ -9385,7 +9385,7 @@ The default implementation sends the [WM_SIZE](/windows/win32/winmsg/wm-size) an
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onwindowposchanging"></a>  CWnd::OnWindowPosChanging
+## <a name="onwindowposchanging"></a> CWnd::OnWindowPosChanging
 
 The framework calls this member function when the size, position, or Z-order is about to change as a result of a call to the [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) member function or another window-management function.
 
@@ -9407,7 +9407,7 @@ For a window with the [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) or [W
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onwininichange"></a>  CWnd::OnWinIniChange
+## <a name="onwininichange"></a> CWnd::OnWinIniChange
 
 The framework calls this member function after a change has been made to the Windows initialization file, WIN.INI.
 
@@ -9433,7 +9433,7 @@ If an application receives an `OnWinIniChange` call with *lpszSection* set to NU
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onwndmsg"></a>  CWnd::OnWndMsg
+## <a name="onwndmsg"></a> CWnd::OnWndMsg
 
 This member function is called by `WindowProc`, or is called during message reflection.
 
@@ -9469,7 +9469,7 @@ TRUE if message was handled; otherwise FALSE.
 
 For more information about message reflection, see [Handling Reflected Messages](../../mfc/handling-reflected-messages.md).
 
-##  <a name="onxbuttondblclk"></a>  CWnd::OnXButtonDblClk
+## <a name="onxbuttondblclk"></a> CWnd::OnXButtonDblClk
 
 The framework calls this member function when the user double-clicks XBUTTON1 or XBUTTON2 while the cursor is in the client area of a window.
 
@@ -9507,7 +9507,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onxbuttondown"></a>  CWnd::OnXButtonDown
+## <a name="onxbuttondown"></a> CWnd::OnXButtonDown
 
 The framework calls this member function when the user presses XBUTTON1 or XBUTTON2 while the cursor is in the client area of a window.
 
@@ -9545,7 +9545,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="onxbuttonup"></a>  CWnd::OnXButtonUp
+## <a name="onxbuttonup"></a> CWnd::OnXButtonUp
 
 The framework calls this member function when the user releases XBUTTON1 or XBUTTON2 while the cursor is in the client area of a window.
 
@@ -9583,7 +9583,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
-##  <a name="openclipboard"></a>  CWnd::OpenClipboard
+## <a name="openclipboard"></a> CWnd::OpenClipboard
 
 Opens the Clipboard.
 
@@ -9605,7 +9605,7 @@ The current `CWnd` object will not become the owner of the Clipboard until the [
 
 [!code-cpp[NVC_MFCWindowing#111](../../mfc/reference/codesnippet/cpp/cwnd-class_52.cpp)]
 
-##  <a name="operator_hwnd"></a>  CWnd::operator HWND
+## <a name="operator_hwnd"></a> CWnd::operator HWND
 
 Use this operator to get the handle to the `CWnd` object.
 
@@ -9613,7 +9613,7 @@ Use this operator to get the handle to the `CWnd` object.
 operator HWND() const;
 ```
 
-##  <a name="operator_neq"></a>  CWnd::operator !=
+## <a name="operator_neq"></a> CWnd::operator !=
 
 Compares two `CWnd` objects to determine if they do not have the same [m_hWnd](#m_hwnd).
 
@@ -9630,7 +9630,7 @@ A reference to a `CWnd` object.
 
 Nonzero if equal; otherwise 0.
 
-##  <a name="operator_eq_eq"></a>  CWnd::operator ==
+## <a name="operator_eq_eq"></a> CWnd::operator ==
 
 Compares two `CWnd` objects to determine if they have the same [m_hWnd](#m_hwnd).
 
@@ -9647,7 +9647,7 @@ A reference to a `CWnd` object.
 
 Nonzero if equal; otherwise 0.
 
-##  <a name="paintwindowlesscontrols"></a>  CWnd::PaintWindowlessControls
+## <a name="paintwindowlesscontrols"></a> CWnd::PaintWindowlessControls
 
 Draws windowless controls on the control container.
 
@@ -9664,7 +9664,7 @@ The device context on which to draw the windowless controls.
 
 Returns TRUE if there is a control container and the windowless controls are drawn successfully, otherwise FALSE.
 
-##  <a name="postmessage"></a>  CWnd::PostMessage
+## <a name="postmessage"></a> CWnd::PostMessage
 
 Places a message in the window's message queue and then returns without waiting for the corresponding window to process the message.
 
@@ -9700,7 +9700,7 @@ The Windows [PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagew) fu
 
   See the example for [AfxGetMainWnd](../../mfc/reference/application-information-and-management.md#afxgetmainwnd).
 
-##  <a name="postncdestroy"></a>  CWnd::PostNcDestroy
+## <a name="postncdestroy"></a> CWnd::PostNcDestroy
 
 Called by the default [OnNcDestroy](#onncdestroy) member function after the window has been destroyed.
 
@@ -9712,7 +9712,7 @@ virtual void PostNcDestroy();
 
 Derived classes can use this function for custom cleanup such as the deletion of the **this** pointer.
 
-##  <a name="precreatewindow"></a>  CWnd::PreCreateWindow
+## <a name="precreatewindow"></a> CWnd::PreCreateWindow
 
 Called by the framework before the creation of the Windows window attached to this `CWnd` object.
 
@@ -9748,7 +9748,7 @@ For more information on changing window styles, see the [Changing the Styles of 
 
 [!code-cpp[NVC_MFCWindowing#112](../../mfc/reference/codesnippet/cpp/cwnd-class_53.cpp)]
 
-##  <a name="presubclasswindow"></a>  CWnd::PreSubclassWindow
+## <a name="presubclasswindow"></a> CWnd::PreSubclassWindow
 
 This member function is called by the framework to allow other necessary subclassing to occur before the window is subclassed.
 
@@ -9760,7 +9760,7 @@ virtual void PreSubclassWindow();
 
 Overriding this member function allows for dynamic subclassing of controls. It is an advanced overridable.
 
-##  <a name="pretranslatemessage"></a>  CWnd::PreTranslateMessage
+## <a name="pretranslatemessage"></a> CWnd::PreTranslateMessage
 
 Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions.
 
@@ -9777,7 +9777,7 @@ Points to a [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure that cont
 
 Nonzero if the message was translated and should not be dispatched; 0 if the message was not translated and should be dispatched.
 
-##  <a name="print"></a>  CWnd::Print
+## <a name="print"></a> CWnd::Print
 
 Call this member function to draw the current window in the specified device context, which is most commonly in a printer device context.
 
@@ -9823,7 +9823,7 @@ Specifies the drawing options. This parameter can be one or more of these flags:
 
 - If PRF_OWNED is set, send each visible owned window a WM_PRINT message.
 
-##  <a name="printclient"></a>  CWnd::PrintClient
+## <a name="printclient"></a> CWnd::PrintClient
 
 Call this member function to draw any window in the specified device context (usually a printer device context).
 
@@ -9853,7 +9853,7 @@ Specifies drawing options. This parameter can be one or more of these flags:
 
 - PRF_OWNED Draw all owned windows.
 
-##  <a name="printwindow"></a>  CWnd::PrintWindow
+## <a name="printwindow"></a> CWnd::PrintWindow
 
 Copies a visual window into the specified device context, typically a printer DC.
 
@@ -9879,7 +9879,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [PrintWindow](/windows/win32/api/winuser/nf-winuser-printwindow), as described in the Windows SDK.
 
-##  <a name="redrawwindow"></a>  CWnd::RedrawWindow
+## <a name="redrawwindow"></a> CWnd::RedrawWindow
 
 Updates the specified rectangle or region in the given window's client area.
 
@@ -9939,7 +9939,7 @@ Nonzero if the window was redrawn successfully; otherwise 0.
 
 When the `RedrawWindow` member function is used to invalidate part of the desktop window, that window does not receive a [WM_PAINT](/windows/win32/gdi/wm-paint) message. To repaint the desktop, an application should use [CWnd::ValidateRgn](#validatergn), [CWnd::InvalidateRgn](#invalidatergn), [CWnd::UpdateWindow](#updatewindow), or [RedrawWindow](/windows/win32/api/winuser/nf-winuser-redrawwindow)
 
-##  <a name="reflectchildnotify"></a>  CWnd::ReflectChildNotify
+## <a name="reflectchildnotify"></a> CWnd::ReflectChildNotify
 
 This message function is called by the framework from [OnChildNotify](#onchildnotify).
 
@@ -9977,7 +9977,7 @@ Reflected messages are sent directly to [CWnd::OnWndMsg](#onwndmsg) or [CCmdTarg
 
 For more information about message reflection, see [Handling Reflected Messages](../../mfc/handling-reflected-messages.md).
 
-##  <a name="reflectlastmsg"></a>  CWnd::ReflectLastMsg
+## <a name="reflectlastmsg"></a> CWnd::ReflectLastMsg
 
 This member function is called by the framework to reflect the last message to the child window.
 
@@ -10005,7 +10005,7 @@ This member function calls [SendChildNotifyLastMsg](#sendchildnotifylastmsg) if 
 
 For more information about message reflection, see [Handling Reflected Messages](../../mfc/handling-reflected-messages.md).
 
-##  <a name="releasedc"></a>  CWnd::ReleaseDC
+## <a name="releasedc"></a> CWnd::ReleaseDC
 
 Releases a device context, freeing it for use by other applications.
 
@@ -10028,7 +10028,7 @@ The effect of the `ReleaseDC` member function depends on the device-context type
 
 The application must call the `ReleaseDC` member function for each call to the [GetWindowDC](#getwindowdc) member function and for each call to the [GetDC](#getdc) member function.
 
-##  <a name="repositionbars"></a>  CWnd::RepositionBars
+## <a name="repositionbars"></a> CWnd::RepositionBars
 
 Called to reposition and resize control bars in the client area of a window.
 
@@ -10075,7 +10075,7 @@ Indicates whether the bar should be stretched to the size of the frame.
 
 The *nIDFirst* and *nIDLast* parameters define a range of control-bar IDs to be repositioned in the client area. The *nIDLeftOver* parameter specifies the ID of the child window (normally the view) which is repositioned and resized to fill the rest of the client area not filled by control bars.
 
-##  <a name="runmodalloop"></a>  CWnd::RunModalLoop
+## <a name="runmodalloop"></a> CWnd::RunModalLoop
 
 Call this member function to retrieve, translate, or dispatch messages until [ContinueModal](#continuemodal) returns FALSE.
 
@@ -10102,7 +10102,7 @@ Specifies the value of the *nResult* parameter passed to the [EndModalLoop](#end
 
 By default, `ContinueModal` returns FALSE after `EndModalLoop` is called. Returns the value provided as *nResult* to `EndModalLoop`.
 
-##  <a name="screentoclient"></a>  CWnd::ScreenToClient
+## <a name="screentoclient"></a> CWnd::ScreenToClient
 
 Converts the screen coordinates of a given point or rectangle on the display to client coordinates.
 
@@ -10126,7 +10126,7 @@ The `ScreenToClient` member function replaces the screen coordinates given in *l
 
   See the example for [CListCtrl::GetItemRect](../../mfc/reference/clistctrl-class.md#getitemrect).
 
-##  <a name="scrollwindow"></a>  CWnd::ScrollWindow
+## <a name="scrollwindow"></a> CWnd::ScrollWindow
 
 Scrolls the contents of the client area of the current `CWnd` object.
 
@@ -10162,7 +10162,7 @@ If *lpRect* is NULL, the positions of any child windows in the window are offset
 
 If *lpRect* is not NULL, the positions of child windows are not changed, and invalid areas in `CWnd` are not offset. To prevent updating problems when *lpRect* is not NULL, call the `UpdateWindow` member function to repaint `CWnd` before calling `ScrollWindow`.
 
-##  <a name="scrollwindowex"></a>  CWnd::ScrollWindowEx
+## <a name="scrollwindowex"></a> CWnd::ScrollWindowEx
 
 Scrolls the contents of a window's client area.
 
@@ -10222,7 +10222,7 @@ If the [SW_SCROLLCHILDREN](/windows/win32/api/winuser/nf-winuser-scrollwindowex)
 
 All input and output coordinates (for *lpRectScroll*, *lpRectClip*, *lpRectUpdate*, and *prgnUpdate*) are assumed to be in client coordinates, regardless of whether the window has the CS_OWNDC or CS_CLASSDC class style. Use the [LPtoDP](/windows/win32/api/wingdi/nf-wingdi-lptodp) and [DPtoLP](/windows/win32/api/wingdi/nf-wingdi-dptolp) Windows functions to convert to and from logical coordinates, if necessary.
 
-##  <a name="sendchildnotifylastmsg"></a>  CWnd::SendChildNotifyLastMsg
+## <a name="sendchildnotifylastmsg"></a> CWnd::SendChildNotifyLastMsg
 
 This member function is called by the framework to provide a notification message to a child window, from the parent window, so the child window can handle a task.
 
@@ -10245,7 +10245,7 @@ Nonzero if the child window has handled the message sent to its parent; otherwis
 
 For more information about message reflection, see [Handling Reflected Messages](../../mfc/handling-reflected-messages.md).
 
-##  <a name="senddlgitemmessage"></a>  CWnd::SendDlgItemMessage
+## <a name="senddlgitemmessage"></a> CWnd::SendDlgItemMessage
 
 Sends a message to a control.
 
@@ -10285,7 +10285,7 @@ Using `SendDlgItemMessage` is identical to obtaining a `CWnd`* to the given cont
 
 [!code-cpp[NVC_MFCWindowing#113](../../mfc/reference/codesnippet/cpp/cwnd-class_54.cpp)]
 
-##  <a name="sendmessage"></a>  CWnd::SendMessage
+## <a name="sendmessage"></a> CWnd::SendMessage
 
 Sends the specified message to this window.
 
@@ -10319,7 +10319,7 @@ The `SendMessage` member function calls the window procedure directly and does n
 
 [!code-cpp[NVC_MFCWindowing#101](../../mfc/reference/codesnippet/cpp/cwnd-class_41.cpp)]
 
-##  <a name="sendmessagetodescendants"></a>  CWnd::SendMessageToDescendants
+## <a name="sendmessagetodescendants"></a> CWnd::SendMessageToDescendants
 
 Call this member function to send the specified Windows message to all descendant windows.
 
@@ -10359,7 +10359,7 @@ If *bDeep* and *bOnlyPerm* are TRUE, the search continues below temporary window
 
 [!code-cpp[NVC_MFCWindowing#114](../../mfc/reference/codesnippet/cpp/cwnd-class_55.cpp)]
 
-##  <a name="sendnotifymessage"></a>  CWnd::SendNotifyMessage
+## <a name="sendnotifymessage"></a> CWnd::SendNotifyMessage
 
 Sends the specified message to the window.
 
@@ -10389,7 +10389,7 @@ Nonzero if the function is successful; otherwise 0.
 
 If the window was created by the calling thread, `SendNotifyMessage` calls the window procedure for the window and does not return until the window procedure has processed the message. If the window was created by a different thread, `SendNotifyMessage` passes the message to the window procedure and returns immediately; it does not wait for the window procedure to finish processing the message.
 
-##  <a name="setactivewindow"></a>  CWnd::SetActiveWindow
+## <a name="setactivewindow"></a> CWnd::SetActiveWindow
 
 Makes `CWnd` the active window.
 
@@ -10407,7 +10407,7 @@ The returned pointer may be temporary and should not be stored for later use.
 
 The `SetActiveWindow` member function should be used with care since it allows an application to arbitrarily take over the active window and input focus. Normally, Windows takes care of all activation.
 
-##  <a name="setcapture"></a>  CWnd::SetCapture
+## <a name="setcapture"></a> CWnd::SetCapture
 
 Causes all subsequent mouse input to be sent to the current `CWnd` object regardless of the position of the cursor.
 
@@ -10425,7 +10425,7 @@ When `CWnd` no longer requires all mouse input, the application should call the 
 
 While mouse input is captured, no WM_NCHITTEST or WM_SETCURSOR messages are sent to the active window.
 
-##  <a name="setcaretpos"></a>  CWnd::SetCaretPos
+## <a name="setcaretpos"></a> CWnd::SetCaretPos
 
 Sets the position of the caret.
 
@@ -10448,7 +10448,7 @@ The caret is a shared resource. A window should not move the caret if it does no
 
 [!code-cpp[NVC_MFCWindowing#115](../../mfc/reference/codesnippet/cpp/cwnd-class_56.cpp)]
 
-##  <a name="setclipboardviewer"></a>  CWnd::SetClipboardViewer
+## <a name="setclipboardviewer"></a> CWnd::SetClipboardViewer
 
 Adds this window to the chain of windows that are notified (by means of the WM_DRAWCLIPBOARD message) whenever the content of the Clipboard is changed.
 
@@ -10468,7 +10468,7 @@ This member function sends a WM_DRAWCLIPBOARD message to the window. Since the h
 
 To remove itself from the Clipboard-viewer chain, an application must call the [ChangeClipboardChain](#changeclipboardchain) member function.
 
-##  <a name="setdlgctrlid"></a>  CWnd::SetDlgCtrlID
+## <a name="setdlgctrlid"></a> CWnd::SetDlgCtrlID
 
 Sets the window ID or control ID for the window to a new value.
 
@@ -10489,7 +10489,7 @@ The previous identifier of the window, if successful; otherwise 0.
 
 The window can be any child window, not only a control in a dialog box. The window cannot be a top-level window.
 
-##  <a name="setdlgitemint"></a>  CWnd::SetDlgItemInt
+## <a name="setdlgitemint"></a> CWnd::SetDlgItemInt
 
 Sets the text of a given control in a dialog box to the string representation of a specified integer value.
 
@@ -10519,7 +10519,7 @@ Specifies whether the integer value is signed or unsigned. If this parameter is 
 
   See the example for [CWnd::SetDlgItemText](#setdlgitemtext).
 
-##  <a name="setdlgitemtext"></a>  CWnd::SetDlgItemText
+## <a name="setdlgitemtext"></a> CWnd::SetDlgItemText
 
 Sets the caption or text of a control owned by a window or dialog box.
 
@@ -10545,7 +10545,7 @@ Points to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object o
 
 [!code-cpp[NVC_MFCWindowing#116](../../mfc/reference/codesnippet/cpp/cwnd-class_57.cpp)]
 
-##  <a name="setforegroundwindow"></a>  CWnd::SetForegroundWindow
+## <a name="setforegroundwindow"></a> CWnd::SetForegroundWindow
 
 Puts the thread that created the window into the foreground and activates the window.
 
@@ -10565,7 +10565,7 @@ Keyboard input is directed to the window, and various visual cues are changed fo
 
   See the example for [CWnd::FindWindow](#findwindow).
 
-##  <a name="setfocus"></a>  CWnd::SetFocus
+## <a name="setfocus"></a> CWnd::SetFocus
 
 Claims the input focus.
 
@@ -10585,7 +10585,7 @@ The `SetFocus` member function sends a [WM_KILLFOCUS](/windows/win32/inputdev/wm
 
 If the current window is active but does not have the focus (that is, no window has the focus), any key pressed will produce the messages [WM_SYSCHAR](#onsyschar), [WM_SYSKEYDOWN](#onsyskeydown), or [WM_SYSKEYUP](#onsyskeyup).
 
-##  <a name="setfont"></a>  CWnd::SetFont
+## <a name="setfont"></a> CWnd::SetFont
 
 Sends the WM_SETFONT message to the window to use the specified font.
 
@@ -10607,7 +10607,7 @@ TRUE for the window to redraw immediately after it processes the WM_SETFONT mess
 
 This method has no effect unless the window processes the WM_SETFONT message. Many MFC classes that derive from `CWnd` process this message because they are attached to a predefined window class that includes a message handler for the WM_SETFONT message. To use this method, classes that you derive from `CWnd` must define a method handler for the WM_SETFONT message.
 
-##  <a name="seticon"></a>  CWnd::SetIcon
+## <a name="seticon"></a> CWnd::SetIcon
 
 Call this member function to set the handle to a specific icon, as identified by *hIcon*.
 
@@ -10637,7 +10637,7 @@ When the window class is registered, it selects an icon.
 
   See the example for [CWnd::GetSystemMenu](#getsystemmenu).
 
-##  <a name="setlayeredwindowattributes"></a>  CWnd::SetLayeredWindowAttributes
+## <a name="setlayeredwindowattributes"></a> CWnd::SetLayeredWindowAttributes
 
 Sets the opacity and transparency color key of a layered window.
 
@@ -10667,7 +10667,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [SetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes), as described in the Windows SDK.
 
-##  <a name="setmenu"></a>  CWnd::SetMenu
+## <a name="setmenu"></a> CWnd::SetMenu
 
 Sets the current menu to the specified menu.
 
@@ -10694,7 +10694,7 @@ Causes the window to be redrawn to reflect the menu change.
 
   See the example for [CMenu::LoadMenu](../../mfc/reference/cmenu-class.md#loadmenu).
 
-##  <a name="setowner"></a>  CWnd::SetOwner
+## <a name="setowner"></a> CWnd::SetOwner
 
 Sets the current window's owner to the specified window object.
 
@@ -10715,7 +10715,7 @@ It is often useful to establish connections between window objects that are unre
 
 The ownership concept of this function is different from the ownership concept of [GetWindow](/windows/win32/api/winuser/nf-winuser-getwindow).
 
-##  <a name="setparent"></a>  CWnd::SetParent
+## <a name="setparent"></a> CWnd::SetParent
 
 Changes the parent window of a child window.
 
@@ -10736,7 +10736,7 @@ A pointer to the previous parent window object if successful. The returned point
 
 If the child window is visible, Windows performs the appropriate redrawing and repainting.
 
-##  <a name="setproperty"></a>  CWnd::SetProperty
+## <a name="setproperty"></a> CWnd::SetProperty
 
 Call this member function to set the OLE control property specified by *dwDispID*.
 
@@ -10764,7 +10764,7 @@ A single parameter of the type specified by *vtProp*.
 
 For more information about using this member function with OLE Control Containers, see the article [ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
-##  <a name="setredraw"></a>  CWnd::SetRedraw
+## <a name="setredraw"></a> CWnd::SetRedraw
 
 An application calls `SetRedraw` to allow changes to be redrawn or to prevent changes from being redrawn.
 
@@ -10785,7 +10785,7 @@ This member function sets or clears the redraw flag. While the redraw flag is cl
 
 [!code-cpp[NVC_MFCWindowing#117](../../mfc/reference/codesnippet/cpp/cwnd-class_58.cpp)]
 
-##  <a name="setscrollinfo"></a>  CWnd::SetScrollInfo
+## <a name="setscrollinfo"></a> CWnd::SetScrollInfo
 
 Call this member function to set the information that the `SCROLLINFO` structure maintains about a scroll bar.
 
@@ -10826,7 +10826,7 @@ The MFC Windows message handlers that indicate scroll-bar position, [CWnd::OnHSc
 > [!NOTE]
 > [CWnd::GetScrollInfo](#getscrollinfo) enables applications to use 32-bit scroll-bar positions.
 
-##  <a name="setscrollpos"></a>  CWnd::SetScrollPos
+## <a name="setscrollpos"></a> CWnd::SetScrollPos
 
 Sets the current position of a scroll box and, if requested, redraws the scroll bar to reflect the new position of the scroll box.
 
@@ -10860,7 +10860,7 @@ The previous position of the scroll box.
 
 Setting *bRedraw* to FALSE is useful whenever the scroll bar will be redrawn by a subsequent call to another function.
 
-##  <a name="setscrollrange"></a>  CWnd::SetScrollRange
+## <a name="setscrollrange"></a> CWnd::SetScrollRange
 
 Sets minimum and maximum position values for the given scroll bar.
 
@@ -10900,7 +10900,7 @@ If the call to `SetScrollRange` immediately follows a call to the [SetScrollPos]
 
 The default range for a standard scroll bar is 0 through 100. The default range for a scroll bar control is empty (both the *nMinPos* and *nMaxPos* values are 0). The difference between the values specified by *nMinPos* and *nMaxPos* must not be greater than INT_MAX.
 
-##  <a name="settimer"></a>  CWnd::SetTimer
+## <a name="settimer"></a> CWnd::SetTimer
 
 Installs a system timer.
 
@@ -10949,7 +10949,7 @@ This example uses `CWnd::SetTimer`, `CWnd::OnTimer`, and `CWnd::KillTimer` to ha
 
 [!code-cpp[NVC_MFCWindowing#118](../../mfc/reference/codesnippet/cpp/cwnd-class_59.cpp)]
 
-##  <a name="setwindowcontexthelpid"></a>  CWnd::SetWindowContextHelpId
+## <a name="setwindowcontexthelpid"></a> CWnd::SetWindowContextHelpId
 
 Call this member function to associate a help context identifier with the specified window.
 
@@ -10974,7 +10974,7 @@ If a child window does not have a help context identifier, it inherits the ident
 
 [!code-cpp[NVC_MFCWindowing#119](../../mfc/reference/codesnippet/cpp/cwnd-class_60.cpp)]
 
-##  <a name="setwindowplacement"></a>  CWnd::SetWindowPlacement
+## <a name="setwindowplacement"></a> CWnd::SetWindowPlacement
 
 Sets the show state and the normal (restored), minimized, and maximized positions for a window.
 
@@ -10991,7 +10991,7 @@ Points to a [WINDOWPLACEMENT](/windows/win32/api/winuser/ns-winuser-windowplacem
 
 Nonzero if the function is successful; otherwise 0.
 
-##  <a name="setwindowpos"></a>  CWnd::SetWindowPos
+## <a name="setwindowpos"></a> CWnd::SetWindowPos
 
 Changes the size, position, and Z-order of child, pop-up, and top-level windows.
 
@@ -11097,7 +11097,7 @@ If `SetWindowPos` is called when the *pWndInsertAfter* parameter is **&wndBottom
 
 [!code-cpp[NVC_MFCWindowing#120](../../mfc/reference/codesnippet/cpp/cwnd-class_61.cpp)]
 
-##  <a name="setwindowrgn"></a>  CWnd::SetWindowRgn
+## <a name="setwindowrgn"></a> CWnd::SetWindowRgn
 
 Call this member function to set a window's region.
 
@@ -11125,7 +11125,7 @@ The coordinates of a window's window region are relative to the upper-left corne
 
 After a successful call to `SetWindowRgn`, the operating system owns the region specified by the region handle *hRgn*. The operating system does not make a copy of the region, so do not make any further function calls with this region handle, and do not close this region handle.
 
-##  <a name="setwindowtext"></a>  CWnd::SetWindowText
+## <a name="setwindowtext"></a> CWnd::SetWindowText
 
 Sets the window's title to the specified text.
 
@@ -11148,7 +11148,7 @@ This function causes a [WM_SETTEXT](/windows/win32/winmsg/wm-settext) message to
 
 [!code-cpp[NVC_MFCWindowing#121](../../mfc/reference/codesnippet/cpp/cwnd-class_62.cpp)]
 
-##  <a name="showcaret"></a>  CWnd::ShowCaret
+## <a name="showcaret"></a> CWnd::ShowCaret
 
 Shows the caret on the screen at the caret's current position.
 
@@ -11170,7 +11170,7 @@ The caret is a shared resource. The window should show the caret only when it ha
 
   See the example for [CWnd::CreateCaret](#createcaret).
 
-##  <a name="showownedpopups"></a>  CWnd::ShowOwnedPopups
+## <a name="showownedpopups"></a> CWnd::ShowOwnedPopups
 
 Shows or hides all pop-up windows owned by this window.
 
@@ -11187,7 +11187,7 @@ Specifies whether pop-up windows are to be shown or hidden. If this parameter is
 
   See the example for [CWnd::SetWindowPos](#setwindowpos).
 
-##  <a name="showscrollbar"></a>  CWnd::ShowScrollBar
+## <a name="showscrollbar"></a> CWnd::ShowScrollBar
 
 Shows or hides a scroll bar.
 
@@ -11215,7 +11215,7 @@ Specifies whether Windows shows or hides the scroll bar. If this parameter is TR
 
 An application should not call `ShowScrollBar` to hide a scroll bar while processing a scroll-bar notification message.
 
-##  <a name="showwindow"></a>  CWnd::ShowWindow
+## <a name="showwindow"></a> CWnd::ShowWindow
 
 Sets the visibility state of the window.
 
@@ -11260,7 +11260,7 @@ Nonzero if the window was previously visible; 0 if the `CWnd` was previously hid
 
   See the example for [CWnd::CalcWindowRect](#calcwindowrect).
 
-##  <a name="subclassdlgitem"></a>  CWnd::SubclassDlgItem
+## <a name="subclassdlgitem"></a> CWnd::SubclassDlgItem
 
 Call this member function to "dynamically subclass" a control created from a dialog template and attach it to this `CWnd` object.
 
@@ -11292,7 +11292,7 @@ This member function attaches the Windows control to a `CWnd` object and replace
 
 [!code-cpp[NVC_MFCWindowing#122](../../mfc/reference/codesnippet/cpp/cwnd-class_63.cpp)]
 
-##  <a name="subclasswindow"></a>  CWnd::SubclassWindow
+## <a name="subclasswindow"></a> CWnd::SubclassWindow
 
 Call this member function to "dynamically subclass" a window and attach it to this `CWnd` object.
 
@@ -11322,7 +11322,7 @@ This member function attaches the Windows control to a `CWnd` object and replace
 
 [!code-cpp[NVC_MFCWindowing#123](../../mfc/reference/codesnippet/cpp/cwnd-class_64.cpp)]
 
-##  <a name="unlockwindowupdate"></a>  CWnd::UnlockWindowUpdate
+## <a name="unlockwindowupdate"></a> CWnd::UnlockWindowUpdate
 
 Call this member function to unlock a window that was locked with `CWnd::LockWindowUpdate`.
 
@@ -11334,7 +11334,7 @@ void UnlockWindowUpdate();
 
 Only one window at a time can be locked using `LockWindowUpdate`. See [CWnd::LockWindowUpdate](#lockwindowupdate) or the Win32 function [LockWindowUpdate](/windows/win32/api/winuser/nf-winuser-lockwindowupdate) for more information on locking windows.
 
-##  <a name="unsubclasswindow"></a>  CWnd::UnsubclassWindow
+## <a name="unsubclasswindow"></a> CWnd::UnsubclassWindow
 
 Call this member function to set `WndProc` back to its original value and detach the window identified by HWND from the `CWnd` object.
 
@@ -11350,7 +11350,7 @@ A handle to the unsubclassed window.
 
   See the example for [CWnd::SubclassWindow](#subclasswindow).
 
-##  <a name="updatedata"></a>  CWnd::UpdateData
+## <a name="updatedata"></a> CWnd::UpdateData
 
 Call this member function to initialize data in a dialog box, or to retrieve and validate dialog data.
 
@@ -11371,7 +11371,7 @@ Nonzero if the operation is successful; otherwise 0. If *bSaveAndValidat*e is TR
 
 The framework automatically calls `UpdateData` with *bSaveAndValidate* set to FALSE when a modal dialog box is created in the default implementation of [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog). The call occurs before the dialog box is visible. The default implementation of [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) calls this member function with *bSaveAndValidate* set to TRUE to retrieve the data, and if successful, will close the dialog box. (If the Cancel button is clicked in the dialog box, the dialog box is closed without the data being retrieved.)
 
-##  <a name="updatedialogcontrols"></a>  CWnd::UpdateDialogControls
+## <a name="updatedialogcontrols"></a> CWnd::UpdateDialogControls
 
 Call this member function to update the state of dialog buttons and other controls in a dialog box or window that uses the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) callback mechanism.
 
@@ -11395,7 +11395,7 @@ If a child control does not have a handler and *bDisableIfNoHndler* is TRUE, the
 
 The framework calls this member function for controls in dialog bars or toolbars as part of the application's idle processing.
 
-##  <a name="updatelayeredwindow"></a>  CWnd::UpdateLayeredWindow
+## <a name="updatelayeredwindow"></a> CWnd::UpdateLayeredWindow
 
 Updates the position, size, shape, content, and translucency of a layered window.
 
@@ -11451,7 +11451,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 This member function emulates the functionality of the function [UpdateLayeredWindow](/windows/win32/api/winuser/nf-winuser-updatelayeredwindow), as described in the Windows SDK.
 
-##  <a name="updatewindow"></a>  CWnd::UpdateWindow
+## <a name="updatewindow"></a> CWnd::UpdateWindow
 
 Updates the client area by sending a [WM_PAINT](/windows/win32/gdi/wm-paint) message if the update region is not empty.
 
@@ -11467,7 +11467,7 @@ The `UpdateWindow` member function sends a WM_PAINT message directly, bypassing 
 
 [!code-cpp[NVC_MFCWindowing#124](../../mfc/reference/codesnippet/cpp/cwnd-class_65.cpp)]
 
-##  <a name="validaterect"></a>  CWnd::ValidateRect
+## <a name="validaterect"></a> CWnd::ValidateRect
 
 Validates the client area within the given rectangle by removing the rectangle from the update region of the window.
 
@@ -11486,7 +11486,7 @@ The [BeginPaint](#beginpaint) member function automatically validates the entire
 
 Windows continues to generate WM_PAINT messages until the current update region is validated.
 
-##  <a name="validatergn"></a>  CWnd::ValidateRgn
+## <a name="validatergn"></a> CWnd::ValidateRgn
 
 Validates the client area within the given region by removing the region from the current update region of the window.
 
@@ -11505,7 +11505,7 @@ The given region must have been created previously by a region function. The reg
 
 The [BeginPaint](#beginpaint) member function automatically validates the entire client area. Neither the [ValidateRect](#validaterect) nor the `ValidateRgn` member function should be called if a portion of the update region must be validated before the next [WM_PAINT](/windows/win32/gdi/wm-paint) message is generated.
 
-##  <a name="windowfrompoint"></a>  CWnd::WindowFromPoint
+## <a name="windowfrompoint"></a> CWnd::WindowFromPoint
 
 Retrieves the window that contains the specified point; *point* must specify the screen coordinates of a point on the screen.
 
@@ -11526,7 +11526,7 @@ A pointer to the window object in which the point lies. It is NULL if no window 
 
 `WindowFromPoint` does not retrieve a hidden or disabled window, even if the point is within the window. An application should use the [ChildWindowFromPoint](#childwindowfrompoint) member function for a nonrestrictive search.
 
-##  <a name="windowproc"></a>  CWnd::WindowProc
+## <a name="windowproc"></a> CWnd::WindowProc
 
 Provides a Windows procedure ( `WindowProc`) for a `CWnd` object.
 
@@ -11556,7 +11556,7 @@ The return value depends on the message.
 
 It dispatches messages through the window's message map.
 
-##  <a name="winhelp"></a>  CWnd::WinHelp
+## <a name="winhelp"></a> CWnd::WinHelp
 
 Called to initiate the WinHelp application.
 
@@ -11578,7 +11578,7 @@ Specifies the type of help requested. For a list of possible values and how they
 
 See [CWinApp::WinHelp](../../mfc/reference/cwinapp-class.md#winhelp) for more information.
 
-##  <a name="registertouchwindow"></a>  CWnd::RegisterTouchWindow
+## <a name="registertouchwindow"></a> CWnd::RegisterTouchWindow
 
 Registers or unregisters Windows touch support.
 
@@ -11602,7 +11602,7 @@ TRUE if successful; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="resizedynamiclayout"></a>  CWnd::ResizeDynamicLayout
+## <a name="resizedynamiclayout"></a> CWnd::ResizeDynamicLayout
 
 Called by the framework when the window size changes to adjust the layout of child windows, if dynamic layout is enabled for the window.
 

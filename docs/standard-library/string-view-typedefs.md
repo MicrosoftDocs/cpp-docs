@@ -54,7 +54,7 @@ typedef basic_string_view<char32_t, char_traits<char32_t>> u32string_view;
 
 For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
-## <a name="wstring_view"></a>  wstring_view
+## <a name="wstring_view"></a> wstring_view
 
 A type that describes a specialization of the class template [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type **wchar_t**.
 

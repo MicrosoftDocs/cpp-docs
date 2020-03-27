@@ -4,7 +4,6 @@ description: "BNF description of MASM for x64."
 ms.date: "12/17/2019"
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), BNF reference"]
 ---
-
 # Microsoft Macro Assembler BNF Grammar
 
 This page contains a BNF description of the MASM grammar. It is provided as a supplement to the reference topics and is not guaranteed to be complete. Please consult the reference topics for full information on keywords, parameters, operations and so on.
@@ -818,7 +817,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;*qualifiedType* | **PROTO** *protoSpec*
 
 *quote*\
-&nbsp;&nbsp;&nbsp;&nbsp;“ | ‘
+&nbsp;&nbsp;&nbsp;&nbsp;" | '
 
 *qwordRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;RAX | RCX | RDX | RBX | RDI | RSI | RBP | R8 | R9 | R10 | R11 | R12 | R13 | R14 | R15
@@ -924,10 +923,10 @@ untilDir ;;
 &nbsp;&nbsp;&nbsp;&nbsp;**SHR** | **SHL**
 
 *sign*\
- - | +
+ \- | +
 
 *simdRegister*\
-&nbsp;&nbsp;&nbsp;&nbsp;MM0 | MM1 | MM2 | MM3 | MM4 | MM5 | MM6 | MM7 | xmmRegister | YMM0 | YMM1 | YMM2 | YMM3 | YMM4 | YMM5 | YMM6 | YMM7 | YMM8 | YMM9 | YMM10 | YMM11 | YMM12 | YMM13 | YMM14 | YMM15
+&nbsp;&nbsp;&nbsp;&nbsp;MM0 | MM1 | MM2 | MM3 | MM4 | MM5 | MM6 | MM7 | *xmmRegister* | YMM0 | YMM1 | YMM2 | YMM3 | YMM4 | YMM5 | YMM6 | YMM7 | YMM8 | YMM9 | YMM10 | YMM11 | YMM12 | YMM13 | YMM14 | YMM15
 
 *simpleExpr*\
  ( *cExpr* ) | *primary*
@@ -941,7 +940,7 @@ untilDir ;;
 *specialChars*\
  : | . | ⟦ | ⟧ | ( | ) | < | > | { | }\
 &nbsp;&nbsp;&nbsp;&nbsp;| + | - | / | * | & | % | !\
-&nbsp;&nbsp;&nbsp;&nbsp;| ’ | \ | = | ; | , | “\
+&nbsp;&nbsp;&nbsp;&nbsp;| ' | \ | = | ; | , | "\
 &nbsp;&nbsp;&nbsp;&nbsp;| *whiteSpaceCharacter*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *endOfLine*
 

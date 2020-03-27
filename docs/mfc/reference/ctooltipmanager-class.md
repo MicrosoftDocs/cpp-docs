@@ -41,7 +41,7 @@ Use [CMFCToolTipCtrl Class](../../mfc/reference/cmfctooltipctrl-class.md), `CMFC
 
 **Header:** afxtooltipmanager.h
 
-##  <a name="createtooltip"></a>  CTooltipManager::CreateToolTip
+## <a name="createtooltip"></a> CTooltipManager::CreateToolTip
 
 Creates a tooltip control.
 
@@ -89,7 +89,7 @@ Valid tooltip types are listed in the following table:
 |AFX_TOOLTIP_TYPE_TOOLBAR|A toolbar.|CMFCToolBar, CMFCPopupMenuBar|
 |AFX_TOOLTIP_TYPE_TOOLBOX|A toolbox.|None.|
 
-##  <a name="deletetooltip"></a>  CTooltipManager::DeleteToolTip
+## <a name="deletetooltip"></a> CTooltipManager::DeleteToolTip
 
 Deletes a tooltip control.
 
@@ -106,7 +106,7 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 
 Call this method for each [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md) that was created by [CTooltipManager::CreateToolTip](#createtooltip). The parent control should call this method from its `OnDestroy` handler. This is required to correctly remove the tooltip from the framework. This method sets *pToolTip* to NULL before it returns.
 
-##  <a name="settooltipparams"></a>  CTooltipManager::SetTooltipParams
+## <a name="settooltipparams"></a> CTooltipManager::SetTooltipParams
 
 Customizes the appearance of the tooltip control for the specified Windows control types.
 
@@ -142,7 +142,7 @@ The following example demonstrates how to use the `SetTooltipParams` method of t
 
 [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/cpp/ctooltipmanager-class_1.cpp)]
 
-##  <a name="settooltiptext"></a>  CTooltipManager::SetTooltipText
+## <a name="settooltiptext"></a> CTooltipManager::SetTooltipText
 
 Sets the text and description for a tooltip.
 
@@ -176,7 +176,7 @@ static void SetTooltipText(
 
 The value of *nType* must be the same value as the *nType* parameter of [CTooltipManager::CreateToolTip](#createtooltip) when you created the tooltip.
 
-##  <a name="updatetooltips"></a>  CTooltipManager::UpdateTooltips
+## <a name="updatetooltips"></a> CTooltipManager::UpdateTooltips
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 

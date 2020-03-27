@@ -32,7 +32,7 @@ For related information, see [friend](../cpp/friend-cpp.md), [public](../cpp/pub
 In CLR types, the C++ access specifier keywords (**public**, **private**, and **protected**) can affect the visibility of types and methods with regard to assemblies. For more information, see [Member Access Control](member-access-control-cpp.md).
 
 > [!NOTE]
->  Files compiled with [/LN](../build/reference/ln-create-msil-module.md) are not affected by this behavior. In this case, all managed classes (either public or private) will be visible.
+> Files compiled with [/LN](../build/reference/ln-create-msil-module.md) are not affected by this behavior. In this case, all managed classes (either public or private) will be visible.
 
 ## END /clr Specific
 

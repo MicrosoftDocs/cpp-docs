@@ -21,7 +21,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
 >[!IMPORTANT]
 > ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
-##  <a name="_core_using_database_classes_in_activex_controls"></a> Using Database Classes in ActiveX Controls
+## <a name="_core_using_database_classes_in_activex_controls"></a> Using Database Classes in ActiveX Controls
 
 Because the ActiveX control classes are part of the class library, you can apply the same procedures and rules for using database classes in a standard MFC application to developing ActiveX controls that use the MFC database classes.
 
@@ -30,7 +30,7 @@ For a general overview of the MFC database classes, see [MFC Database Classes (D
 > [!NOTE]
 > DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete. The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-programming.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.
 
-##  <a name="_core_implementing_a_parameterized_property"></a> Implementing a Parameterized Property
+## <a name="_core_implementing_a_parameterized_property"></a> Implementing a Parameterized Property
 
 A parameterized property (sometimes called a property array) is a method for exposing a homogeneous collection of values as a single property of the control. For example, you can use a parameterized property to expose an array or a dictionary as a property. In Visual Basic, such a property is accessed using array notation:
 
@@ -84,7 +84,7 @@ Finally, the implementations of the `GetArray` and `SetArray` functions are adde
 
 For this property to be useful, you could declare a two-dimensional array member variable in the control class, of type **short**, to store values for the parameterized property. You could then modify the Get function to return the value stored at the proper row and column, as indicated by the parameters, and modify the Set function to update the value referenced by the row and column parameters.
 
-##  <a name="_core_handling_errors_in_your_activex_control"></a> Handling Errors in Your ActiveX Control
+## <a name="_core_handling_errors_in_your_activex_control"></a> Handling Errors in Your ActiveX Control
 
 If error conditions occur in the control, you may need to report the error to the control container. There are two methods for reporting errors, depending on the situation in which the error occurs. If the error occurs within a property's Get or Set function, or within the implementation of an OLE Automation method, the control should call [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror), which signals to the control user that an error has occurred. If the error occurs at any other time, the control should call [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror), which fires a stock Error event.
 
@@ -141,7 +141,7 @@ If necessary, use the CUSTOM_CTL_SCODE macro to define a custom error code for a
 
 If you are creating an ActiveX control to replace an existing VBX control, define your ActiveX control error codes with the same numeric values the VBX control uses to ensure that the error codes are compatible.
 
-##  <a name="_core_handling_special_keys_in_your_control"></a> Handling Special Keys in the Control
+## <a name="_core_handling_special_keys_in_your_control"></a> Handling Special Keys in the Control
 
 In some cases you may want to handle certain keystroke combinations in a special way; for example, insert a new line when the ENTER key is pressed in a multiline text box control or move between a group of edit controls when a directional key ID pressed.
 
@@ -153,7 +153,7 @@ The following code example demonstrates a possible way of handling any messages 
 
 For more information on handling keyboard interfaces for an ActiveX control, see the ActiveX SDK documentation.
 
-##  <a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a> Accessing Dialog Controls that Are Invisible at Run Time
+## <a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a> Accessing Dialog Controls that Are Invisible at Run Time
 
 You can create dialog controls that have no user interface and are invisible at run time. If you add an invisible at run time ActiveX control to a dialog box and use [CWnd::GetDlgItem](../mfc/reference/cwnd-class.md#getdlgitem) to access the control, the control will not work correctly. Instead, you should use one of the following techniques to obtain an object that represents the control:
 

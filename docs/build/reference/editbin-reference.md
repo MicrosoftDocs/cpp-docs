@@ -10,7 +10,7 @@ ms.assetid: efdda03b-3dfc-4d31-90e6-caf5b3977914
 The Microsoft COFF Binary File Editor (EDITBIN.EXE) modifies Common Object File Format (COFF) binary files. You can use EDITBIN to modify object files, executable files, and dynamic-link libraries (DLL).
 
 > [!NOTE]
->  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
+> You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
 
 EDITBIN is not available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option. Any modifications to binary files produced with /GL will have to be achieved by recompiling and linking.
 

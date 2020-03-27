@@ -42,7 +42,7 @@ class tile_barrier;
 
 **Namespace:** Concurrency
 
-## <a name="ctor"></a>  tile_barrier Constructor
+## <a name="ctor"></a> tile_barrier Constructor
 
 Initializes a new instance of the class by copying an existing one.
 

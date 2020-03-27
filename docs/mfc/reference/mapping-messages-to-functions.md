@@ -12,7 +12,7 @@ The [Class Wizard](mfc-class-wizard.md) enables you to bind message handlers (me
 When you use Class View to create a new class derived from one of the framework classes, it automatically places a complete and functional class in the header (.h) and implementation (.cpp) files that you specify.
 
 > [!NOTE]
->  To add a new class that does not handle messages, create the class directly in the text editor.
+> To add a new class that does not handle messages, create the class directly in the text editor.
 
 ### To define or remove a message handler using the Class Wizard
 

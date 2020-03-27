@@ -72,7 +72,7 @@ The `CMFCHeaderCtrl` class draws a sort arrow on a header control column to indi
 
 **Header:** afxheaderctrl.h
 
-##  <a name="cmfcheaderctrl"></a>  CMFCHeaderCtrl::CMFCHeaderCtrl
+## <a name="cmfcheaderctrl"></a> CMFCHeaderCtrl::CMFCHeaderCtrl
 
 Constructs a `CMFCHeaderCtrl` object.
 
@@ -94,7 +94,7 @@ This constructor initializes the following member variables to the specified val
 |`m_bIsDlgControl`|FALSE|
 |`m_hFont`|NULL|
 
-##  <a name="enablemultiplesort"></a>  CMFCHeaderCtrl::EnableMultipleSort
+## <a name="enablemultiplesort"></a> CMFCHeaderCtrl::EnableMultipleSort
 
 Enables or disables *multiple column sort* mode for the current header control.
 
@@ -111,7 +111,7 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
 
 Use this method to enable or disable multiple column sort mode. Two or more columns can participate in a sort if the header control is in multiple column sort mode.
 
-##  <a name="getcolumnstate"></a>  CMFCHeaderCtrl::GetColumnState
+## <a name="getcolumnstate"></a> CMFCHeaderCtrl::GetColumnState
 
 Indicates whether a column is unsorted, or is sorted in ascending or descending order.
 
@@ -136,7 +136,7 @@ A value that indicate the sort status of the specified column. The following tab
 
 ### Remarks
 
-##  <a name="getsortcolumn"></a>  CMFCHeaderCtrl::GetSortColumn
+## <a name="getsortcolumn"></a> CMFCHeaderCtrl::GetSortColumn
 
 Retrieves the zero-based index of the first sorted column in the header control.
 
@@ -152,7 +152,7 @@ The index of a sorted column, or -1 if no sorted column is found.
 
 If the header control is in *multiple column sort* mode and you compiled the application in debug mode, this method asserts and advises you to use the [CMFCHeaderCtrl::GetColumnState](#getcolumnstate) method instead. If the header control is in multiple column sort mode and you compiled the application in retail mode, this method returns -1.
 
-##  <a name="isascending"></a>  CMFCHeaderCtrl::IsAscending
+## <a name="isascending"></a> CMFCHeaderCtrl::IsAscending
 
 Indicates whether any column in the header control is sorted in ascending order.
 
@@ -168,7 +168,7 @@ TRUE if any column in the header control is sorted in ascending order; otherwise
 
 The value that this method returns is used to display the appropriate sort arrow on the header control item. Use the [CMFCHeaderCtrl::SetSortColumn](#setsortcolumn) method to set the sort order.
 
-##  <a name="isdialogcontrol"></a>  CMFCHeaderCtrl::IsDialogControl
+## <a name="isdialogcontrol"></a> CMFCHeaderCtrl::IsDialogControl
 
 Indicates whether the parent window of the current header control is a dialog box.
 
@@ -180,7 +180,7 @@ BOOL IsDialogControl() const;
 
 TRUE if the parent window of the current header control is a dialog box; otherwise, FALSE.
 
-##  <a name="ismultiplesort"></a>  CMFCHeaderCtrl::IsMultipleSort
+## <a name="ismultiplesort"></a> CMFCHeaderCtrl::IsMultipleSort
 
 Indicates whether the current header control is in *multiple column sort* mode.
 
@@ -196,7 +196,7 @@ TRUE if multiple column sort mode is enabled; otherwise, FALSE.
 
 Use the [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) method to enable or disable multiple column sort mode. Two or more columns can participate in a sort if the header control is in multiple column sort mode.
 
-##  <a name="ondrawitem"></a>  CMFCHeaderCtrl::OnDrawItem
+## <a name="ondrawitem"></a> CMFCHeaderCtrl::OnDrawItem
 
 Called by the framework to draw a header control column.
 
@@ -226,7 +226,7 @@ virtual void OnDrawItem(
 *bIsHighlighted*<br/>
 [in] TRUE to draw the item in highlighted state; otherwise, FALSE.
 
-##  <a name="ondrawsortarrow"></a>  CMFCHeaderCtrl::OnDrawSortArrow
+## <a name="ondrawsortarrow"></a> CMFCHeaderCtrl::OnDrawSortArrow
 
 Called by the framework to draw the sort arrow.
 
@@ -244,7 +244,7 @@ virtual void OnDrawSortArrow(
 *rectArrow*<br/>
 [in] The bounding rectangle of the sort arrow.
 
-##  <a name="onfillbackground"></a>  CMFCHeaderCtrl::OnFillBackground
+## <a name="onfillbackground"></a> CMFCHeaderCtrl::OnFillBackground
 
 Called by the framework to fill the background of a header control column.
 
@@ -259,7 +259,7 @@ virtual void OnFillBackground(CDC* pDC);
 
 ### Remarks
 
-##  <a name="removesortcolumn"></a>  CMFCHeaderCtrl::RemoveSortColumn
+## <a name="removesortcolumn"></a> CMFCHeaderCtrl::RemoveSortColumn
 
 Removes the specified column from the list of sort columns.
 
@@ -272,7 +272,7 @@ void RemoveSortColumn(int iColumn);
 *iColumn*<br/>
 [in] The zero-based index of the column to remove.
 
-##  <a name="setsortcolumn"></a>  CMFCHeaderCtrl::SetSortColumn
+## <a name="setsortcolumn"></a> CMFCHeaderCtrl::SetSortColumn
 
 Sets the sort order of a specified column in a header control.
 

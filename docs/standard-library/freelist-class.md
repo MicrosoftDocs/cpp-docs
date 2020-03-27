@@ -46,7 +46,7 @@ This class template manages a list of memory blocks of size *Sz* with the maximu
 
 **Namespace:** stdext
 
-## <a name="freelist"></a>  freelist::freelist
+## <a name="freelist"></a> freelist::freelist
 
 Constructs an object of type `freelist`.
 
@@ -56,7 +56,7 @@ freelist();
 
 ### Remarks
 
-## <a name="pop"></a>  freelist::pop
+## <a name="pop"></a> freelist::pop
 
 Removes the first memory block from the free list.
 
@@ -72,7 +72,7 @@ Returns a pointer to the memory block removed from the list.
 
 The member function returns NULL if the list is empty. Otherwise, it removes the first memory block from the list.
 
-## <a name="push"></a>  freelist::push
+## <a name="push"></a> freelist::push
 
 Adds a memory block to the list.
 

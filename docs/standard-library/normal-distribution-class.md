@@ -159,7 +159,7 @@ Distribution for 10 samples:
 
 **Namespace:** std
 
-## <a name="normal_distribution"></a>  normal_distribution::normal_distribution
+## <a name="normal_distribution"></a> normal_distribution::normal_distribution
 
 Constructs the distribution.
 
@@ -187,7 +187,7 @@ The first constructor constructs an object whose stored `mean` value holds the v
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-## <a name="param_type"></a>  normal_distribution::param_type
+## <a name="param_type"></a> normal_distribution::param_type
 
 Stores the parameters of the distribution.
 

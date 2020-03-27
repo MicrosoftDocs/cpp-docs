@@ -68,7 +68,7 @@ The template argument `Rep` describes the type that is used to hold the number o
 
 **Namespace:** std::chrono
 
-## <a name="count"></a>  duration::count
+## <a name="count"></a> duration::count
 
 Retrieves the number of clock ticks in the time interval.
 
@@ -80,7 +80,7 @@ constexpr Rep count() const;
 
 The number of clock ticks in the time interval.
 
-## <a name="duration"></a>  duration::duration Constructor
+## <a name="duration"></a> duration::duration Constructor
 
 Constructs a `duration` object.
 
@@ -122,7 +122,7 @@ Unless *Rep2* is implicitly convertible to `rep` and either `treat_as_floating_p
 
 Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
-## <a name="max"></a>  duration::max
+## <a name="max"></a> duration::max
 
 Static method that returns the upper bound for values of template parameter type `Ref`.
 
@@ -134,7 +134,7 @@ static constexpr duration max();
 
 In effect, returns `duration(duration_values<rep>::max())`.
 
-## <a name="min"></a>  duration::min
+## <a name="min"></a> duration::min
 
 Static method that returns the lower bound for values of template parameter type `Ref`.
 
@@ -146,7 +146,7 @@ static constexpr duration min();
 
 In effect, returns `duration(duration_values<rep>::min())`.
 
-## <a name="operator-"></a>  duration::operator-
+## <a name="operator-"></a> duration::operator-
 
 Returns a copy of the `duration` object together with a negated tick count.
 
@@ -154,7 +154,7 @@ Returns a copy of the `duration` object together with a negated tick count.
 constexpr duration operator-() const;
 ```
 
-## <a name="operator--"></a>  duration::operator--
+## <a name="operator--"></a> duration::operator--
 
 Decrements the stored tick count.
 
@@ -170,7 +170,7 @@ The first method returns `*this`.
 
 The second method returns a copy of `*this` that is made before the decrement.
 
-## <a name="op_eq"></a>  duration::operator=
+## <a name="op_eq"></a> duration::operator=
 
 Reduces the stored tick count modulo a specified value.
 
@@ -189,7 +189,7 @@ For the first method, *Div* represents a tick count. For the second method, *Div
 
 The `duration` object after the modulo operation is performed.
 
-## <a name="op_star_eq"></a>  duration::operator*=
+## <a name="op_star_eq"></a> duration::operator*=
 
 Multiplies the stored tick count by a specified value.
 
@@ -206,7 +206,7 @@ A value of the type that is specified by `duration::rep`.
 
 The `duration` object after the multiplication is performed.
 
-## <a name="op_div_eq"></a>  duration::operator/=
+## <a name="op_div_eq"></a> duration::operator/=
 
 Divides the stored tick count by a specified value.
 
@@ -223,7 +223,7 @@ A value of the type that is specified by `duration::rep`.
 
 The `duration` object after the division is performed.
 
-## <a name="op_add"></a>  duration::operator+
+## <a name="op_add"></a> duration::operator+
 
 Returns `*this`.
 
@@ -231,7 +231,7 @@ Returns `*this`.
 constexpr duration operator+() const;
 ```
 
-## <a name="op_add_add"></a>  duration::operator++
+## <a name="op_add_add"></a> duration::operator++
 
 Increments the stored tick count.
 
@@ -247,7 +247,7 @@ The first method returns `*this`.
 
 The second method returns a copy of `*this` that is made before the increment.
 
-## <a name="op_add_eq"></a>  duration::operator+=
+## <a name="op_add_eq"></a> duration::operator+=
 
 Adds the tick count of a specified `duration` object to the stored tick count.
 
@@ -264,7 +264,7 @@ A `duration` object.
 
 The `duration` object after the addition is performed.
 
-## <a name="operator-_eq"></a>  duration::operator-=
+## <a name="operator-_eq"></a> duration::operator-=
 
 Subtracts the tick count of a specified `duration` object from the stored tick count.
 
@@ -281,7 +281,7 @@ A `duration` object.
 
 The `duration` object after the subtraction is performed.
 
-## <a name="zero"></a>  duration::zero
+## <a name="zero"></a> duration::zero
 
 Returns `duration(duration_values<rep>::zero())`.
 
@@ -289,7 +289,7 @@ Returns `duration(duration_values<rep>::zero())`.
 static constexpr duration zero();
 ```
 
-## <a name="op_mod_eq"></a>  duration::operator mod=
+## <a name="op_mod_eq"></a> duration::operator mod=
 
 Reduces the stored tick count modulo Div or Div.count().
 

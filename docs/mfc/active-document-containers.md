@@ -26,7 +26,7 @@ For more information about active document containers, see:
 
 - [Command Targets](../mfc/message-handling-and-command-targets.md)
 
-##  <a name="container_requirements"></a> Container Requirements
+## <a name="container_requirements"></a> Container Requirements
 
 Active document support in an active document container implies more than just interface implementations: it also requires knowledge of using the interfaces of a contained object. The same applies to active document extensions, where the container must also know how to use those extension interfaces on the active documents themselves.
 
@@ -48,7 +48,7 @@ The following figure shows the conceptual relationships between a container and 
 
 A document that supports only a single view can implement both the view and document components (that is, their corresponding interfaces) on a single concrete class. In addition, a container site that only supports one view at a time can combine the document site and the view site into a single concrete site class. The container's frame object, however, must remain distinct, and the container's document component is merely included here to give a complete picture of the architecture; it is not affected by the active document containment architecture.
 
-##  <a name="document_site_objects"></a> Document Site Objects
+## <a name="document_site_objects"></a> Document Site Objects
 
 In the active document containment architecture, a document site is the same as a client site object in OLE Documents with the addition of the `IOleDocument` interface:
 
@@ -61,13 +61,13 @@ interface IOleDocumentSite : IUnknown
 
 The document site is conceptually the container for one or more "view site" objects. Each view site object is associated with individual view objects of the document managed by the document site. If the container only supports a single view per document site, then it can implement the document site and the view site with a single concrete class.
 
-##  <a name="view_site_objects"></a> View Site Objects
+## <a name="view_site_objects"></a> View Site Objects
 
 A container's view site object manages the display space for a particular view of a document. In addition to supporting the standard `IOleInPlaceSite` interface, a view site also generally implements `IContinueCallback` for programmatic printing control. (Note that the view object never queries for `IContinueCallback` so it can actually be implemented on any object the container desires.)
 
 A container that supports multiple views must be able to create multiple view site objects within the document site. This provides each view with separate activation and deactivation services as provided through `IOleInPlaceSite`.
 
-##  <a name="frame_object"></a> Frame Object
+## <a name="frame_object"></a> Frame Object
 
 The container's frame object is, for the most part, the same frame that is used for in-place activation in OLE Documents, that is, the one that handles menu and toolbar negotiation. A view object has access to this frame object through `IOleInPlaceSite::GetWindowContext`, which also provides access to the container object representing the container document (which can handle pane-level toolbar negotiation and contained object enumeration).
 

@@ -18,7 +18,7 @@ The Visual C++ implementation of the OpenMP standard includes the following envi
 |[OMP_DYNAMIC](#omp-dynamic)|Specifies whether the OpenMP run time can adjust the number of threads in a parallel region.|
 |[OMP_NESTED](#omp-nested)|Specifies whether nested parallelism is enabled, unless nested parallelism is enabled or disabled with `omp_set_nested`.|
 
-## <a name="omp-dynamic"></a>OMP_DYNAMIC
+## <a name="omp-dynamic"></a> OMP_DYNAMIC
 
 Specifies whether the OpenMP run time can adjust the number of threads in a parallel region.
 
@@ -48,7 +48,7 @@ The following command displays the current setting of the `OMP_DYNAMIC` environm
 set OMP_DYNAMIC
 ```
 
-## <a name="omp-nested"></a>OMP_NESTED
+## <a name="omp-nested"></a> OMP_NESTED
 
 Specifies whether nested parallelism is enabled, unless nested parallelism is enabled or disabled with `omp_set_nested`.
 
@@ -78,7 +78,7 @@ The following command displays the current setting of the `OMP_NESTED` environme
 set OMP_NESTED
 ```
 
-## <a name="omp-num-threads"></a>OMP_NUM_THREADS
+## <a name="omp-num-threads"></a> OMP_NUM_THREADS
 
 Sets the maximum number of threads in the parallel region, unless overridden by [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) or [num_threads](openmp-clauses.md#num-threads).
 
@@ -113,7 +113,7 @@ The following command displays the current setting of the `OMP_NUM_THREADS` envi
 set OMP_NUM_THREADS
 ```
 
-## <a name="omp-schedule"></a>OMP_SCHEDULE
+## <a name="omp-schedule"></a> OMP_SCHEDULE
 
 Modifies the behavior of the [schedule](openmp-clauses.md#schedule) clause when `schedule(runtime)` is specified in a `for` or `parallel for` directive.
 

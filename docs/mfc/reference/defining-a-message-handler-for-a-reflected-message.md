@@ -14,7 +14,7 @@ With this functionality you could, for example, create a list box that will redr
 To create an [ActiveX control](../../mfc/activex-controls-on-the-internet.md) with the same functionality, you must create a project for the ActiveX control.
 
 > [!NOTE]
->  You cannot add a reflected message (OCM_*Message*) for an ActiveX control using the Class Wizard, as described below. You must add these messages manually.
+> You cannot add a reflected message (OCM_*Message*) for an ActiveX control using the Class Wizard, as described below. You must add these messages manually.
 
 ### To define a message handler for a reflected message from the Class Wizard
 

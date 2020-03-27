@@ -883,7 +883,7 @@ Note that `endl` also flushes the buffer.
 
 The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::unitbuf](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
 
-## <a name="uppercase"></a>  uppercase
+## <a name="uppercase"></a> uppercase
 
 Specifies that hexadecimal digits and the exponent in scientific notation appear in uppercase.
 

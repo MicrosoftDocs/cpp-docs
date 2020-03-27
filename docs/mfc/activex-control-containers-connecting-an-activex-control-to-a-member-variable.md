@@ -9,7 +9,7 @@ ms.assetid: 7898a336-440d-4a60-be43-cb062b807aee
 The easiest way to access an ActiveX control from within its control container application is to associate the ActiveX control with a member variable of the dialog class that will contain the control.
 
 > [!NOTE]
->  This is not the only way to access an embedded control from within a container class, but for the purposes of this article it is sufficient.
+> This is not the only way to access an embedded control from within a container class, but for the purposes of this article it is sufficient.
 
 ### Adding a member variable to the dialog class
 

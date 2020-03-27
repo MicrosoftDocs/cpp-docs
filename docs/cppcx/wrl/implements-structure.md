@@ -141,7 +141,7 @@ Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `
 
 **Namespace:** Microsoft::WRL
 
-## <a name="cancastto"></a>Implements::CanCastTo
+## <a name="cancastto"></a> Implements::CanCastTo
 
 Gets a pointer to the specified interface.
 
@@ -168,7 +168,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error, such as E_NO
 
 This is an internal helper function that performs a QueryInterface operation.
 
-## <a name="casttounknown"></a>Implements::CastToUnknown
+## <a name="casttounknown"></a> Implements::CastToUnknown
 
 Gets a pointer to the underlying `IUnknown` interface.
 
@@ -184,7 +184,7 @@ This operation always succeeds and returns the `IUnknown` pointer.
 
 Internal helper function.
 
-## <a name="fillarraywithiid"></a>Implements::FillArrayWithIid
+## <a name="fillarraywithiid"></a> Implements::FillArrayWithIid
 
 Inserts the interface ID specified by the current zeroth template parameter into the specified array element.
 
@@ -207,7 +207,7 @@ An array of type IID.
 
 Internal helper function.
 
-## <a name="iidcount"></a>Implements::IidCount
+## <a name="iidcount"></a> Implements::IidCount
 
 Holds the number of implemented interface IDs.
 

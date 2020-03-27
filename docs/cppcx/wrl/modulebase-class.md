@@ -46,7 +46,7 @@ Name                                                      | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="tilde-modulebase"></a>ModuleBase::~ModuleBase
+## <a name="tilde-modulebase"></a> ModuleBase::~ModuleBase
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -58,7 +58,7 @@ virtual ~ModuleBase();
 
 Deinitializes the current instance of the `ModuleBase` class.
 
-## <a name="decrementobjectcount"></a>ModuleBase::DecrementObjectCount
+## <a name="decrementobjectcount"></a> ModuleBase::DecrementObjectCount
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -74,7 +74,7 @@ The count before the decrement operation.
 
 When implemented, decrements the number of objects tracked by the module.
 
-## <a name="incrementobjectcount"></a>ModuleBase::IncrementObjectCount
+## <a name="incrementobjectcount"></a> ModuleBase::IncrementObjectCount
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -90,7 +90,7 @@ The count before the increment operation.
 
 When implemented, increments the number of objects tracked by the module.
 
-## <a name="modulebase"></a>ModuleBase::ModuleBase
+## <a name="modulebase"></a> ModuleBase::ModuleBase
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

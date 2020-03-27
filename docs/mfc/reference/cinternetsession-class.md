@@ -134,7 +134,7 @@ If no Internet connection can be opened, `CInternetSession` throws an [AfxThrowI
 
 See the example for [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
 
-## <a name="close"></a>  CInternetSession::Close
+## <a name="close"></a> CInternetSession::Close
 
 Call this member function when your application has finished using the `CInternetSession` object.
 
@@ -146,7 +146,7 @@ virtual void Close();
 
 See the example for [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
 
-## <a name="enablestatuscallback"></a>  CInternetSession::EnableStatusCallback
+## <a name="enablestatuscallback"></a> CInternetSession::EnableStatusCallback
 
 Call this member function to enable status callback.
 
@@ -173,7 +173,7 @@ The status callback cannot be removed as long as any callbacks are pending.
 
 To handle any operations asynchronously, you must either create your own thread or use the WinInet functions without MFC.
 
-## <a name="getcontext"></a>  CInternetSession::GetContext
+## <a name="getcontext"></a> CInternetSession::GetContext
 
 Call this member function to get the context value for a particular application session.
 
@@ -191,7 +191,7 @@ The application-defined context Identifier.
 
 For more information about asynchronous operations, see the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md).
 
-## <a name="getcookie"></a>  CInternetSession::GetCookie
+## <a name="getcookie"></a> CInternetSession::GetCookie
 
 This member function implements the behavior of the Win32 function [InternetGetCookie](/windows/win32/api/wininet/nf-wininet-internetgetcookiew), as described in the Windows SDK.
 
@@ -234,7 +234,7 @@ Returns TRUE if successful, or FALSE otherwise. If the call fails, call the Win3
 
 In the second overload, MFC retrieves the cookie data into the supplied `CString` object.
 
-## <a name="getcookielength"></a>  CInternetSession::GetCookieLength
+## <a name="getcookielength"></a> CInternetSession::GetCookieLength
 
 Call this member function to get the length of the cookie stored in the buffer.
 
@@ -260,7 +260,7 @@ A DWORD value indicating the length of the cookie, stored in the buffer. Zero if
 
 This value is used by [GetCookie](#getcookie).
 
-## <a name="getftpconnection"></a>  CInternetSession::GetFtpConnection
+## <a name="getftpconnection"></a> CInternetSession::GetFtpConnection
 
 Call this member function to establish an FTP connection and get a pointer to a `CFtpConnection` object.
 
@@ -309,7 +309,7 @@ A pointer to a [CFtpConnection](../../mfc/reference/cftpconnection-class.md) obj
 
 See the example for [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
 
-## <a name="getgopherconnection"></a>  CInternetSession::GetGopherConnection
+## <a name="getgopherconnection"></a> CInternetSession::GetGopherConnection
 
 Call this member function to establish a new gopher connection and get a pointer to a `CGopherConnection` object.
 
@@ -343,7 +343,7 @@ A pointer to a [CGopherConnection](../../mfc/reference/cgopherconnection-class.m
 
 `GetGopherConnection` connects to a gopher server, and creates and returns a pointer to a `CGopherConnection` object. It does not perform any specific operation on the server. If you intend to read or write data, for example, you must perform those operations as separate steps. See the classes [CGopherConnection](../../mfc/reference/cgopherconnection-class.md), [CGopherFile](../../mfc/reference/cgopherfile-class.md), and [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) for information about searching for files, opening files, and reading or writing to files. For information about browsing an FTP site, see the member function [OpenURL](#openurl). See the article [Internet Programming with WinInet](../../mfc/win32-internet-extensions-wininet.md) for steps in performing common gopher connection tasks.
 
-## <a name="gethttpconnection"></a>  CInternetSession::GetHttpConnection
+## <a name="gethttpconnection"></a> CInternetSession::GetHttpConnection
 
 Call this member function to establish an HTTP connection and get a pointer to a `CHttpConnection` object.
 
@@ -387,7 +387,7 @@ A pointer to a [CHttpConnection](../../mfc/reference/chttpconnection-class.md) o
 
 `GetHttpConnection` connects to an HTTP server, and creates and returns a pointer to a `CHttpConnection` object. It does not perform any specific operation on the server. If you intend to query an HTTP header, for example, you must perform this operation as a separate step. See the classes [CHttpConnection](../../mfc/reference/chttpconnection-class.md) and [CHttpFile](../../mfc/reference/chttpfile-class.md) for information about operations you can perform by using a connection to an HTTP server. For information about browsing an HTTP site, see the member function [OpenURL](#openurl). See the article [Internet Programming with WinInet](../../mfc/win32-internet-extensions-wininet.md) for steps in performing common HTTP connection tasks.
 
-## <a name="onstatuscallback"></a>  CInternetSession::OnStatusCallback
+## <a name="onstatuscallback"></a> CInternetSession::OnStatusCallback
 
 This member function is called by the framework to update the status when status callback is enabled and an operation is pending.
 
@@ -443,7 +443,7 @@ Override this member function to require some action before a status callback ro
 
 For more information about asynchronous operations, see the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md).
 
-## <a name="openurl"></a>  CInternetSession::OpenURL
+## <a name="openurl"></a> CInternetSession::OpenURL
 
 Call this member function to send the specified request to the HTTP server and allow the client to specify additional RFC822, MIME, or HTTP headers to send along with the request.
 
@@ -508,7 +508,7 @@ The parameter *dwFlags* must include either INTERNET_FLAG_TRANSFER_ASCII or INTE
 
 To use connection-specific (that is, protocol-specific) functions, such as writing to a file, you must open a session, then open a particular kind of connection, then use that connection to open a file in the desired mode. See `CInternetConnection` for more information about connection-specific functions.
 
-## <a name="operator_hinternet"></a>  CInternetSession::operator HINTERNET
+## <a name="operator_hinternet"></a> CInternetSession::operator HINTERNET
 
 Use this operator to get the Windows handle for the current Internet session.
 
@@ -516,7 +516,7 @@ Use this operator to get the Windows handle for the current Internet session.
 operator HINTERNET() const;
 ```
 
-## <a name="setcookie"></a>  CInternetSession::SetCookie
+## <a name="setcookie"></a> CInternetSession::SetCookie
 
 Sets a cookie for the specified URL.
 
@@ -546,7 +546,7 @@ Returns TRUE if successful, or FALSE otherwise. To get the specific error code, 
 
 This member function implements the behavior of the Win32 message [InternetSetCookie](/windows/win32/api/wininet/nf-wininet-internetsetcookiew), as described in the Windows SDK.
 
-## <a name="setoption"></a>  CInternetSession::SetOption
+## <a name="setoption"></a> CInternetSession::SetOption
 
 Call this member function to set options for the Internet session.
 

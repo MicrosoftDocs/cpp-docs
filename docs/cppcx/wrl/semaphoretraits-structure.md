@@ -36,7 +36,7 @@ Name                               | Description
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="unlock"></a>SemaphoreTraits::Unlock
+## <a name="unlock"></a> SemaphoreTraits::Unlock
 
 Releases control of a shared resource.
 

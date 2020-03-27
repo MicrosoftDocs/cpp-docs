@@ -43,7 +43,7 @@ class COleConvertDialog : public COleDialog
 ## Remarks
 
 > [!NOTE]
->  Application Wizard-generated container code uses this class.
+> Application Wizard-generated container code uses this class.
 
 For more information about OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).
 
@@ -67,7 +67,7 @@ For more information about OLE-specific dialog boxes, see the article [Dialog Bo
 
 **Header:** afxodlgs.h
 
-##  <a name="coleconvertdialog"></a>  COleConvertDialog::COleConvertDialog
+## <a name="coleconvertdialog"></a> COleConvertDialog::COleConvertDialog
 
 Constructs only a `COleConvertDialog` object.
 
@@ -109,7 +109,7 @@ To display the dialog box, call the [DoModal](#domodal) function.
 
 For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) and the [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) structure.
 
-##  <a name="doconvert"></a>  COleConvertDialog::DoConvert
+## <a name="doconvert"></a> COleConvertDialog::DoConvert
 
 Call this function, after returning successfully from [DoModal](#domodal), either to convert or to activate an object of type [COleClientItem](../../mfc/reference/coleclientitem-class.md).
 
@@ -130,7 +130,7 @@ Nonzero if successful; otherwise 0.
 
 The item is converted or activated according to the information selected by the user in the Convert dialog box.
 
-##  <a name="domodal"></a>  COleConvertDialog::DoModal
+## <a name="domodal"></a> COleConvertDialog::DoModal
 
 Call this function to display the OLE Convert dialog box.
 
@@ -154,7 +154,7 @@ If you want to initialize the various dialog box controls by setting members of 
 
 If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information that was input by the user into the dialog box.
 
-##  <a name="getclassid"></a>  COleConvertDialog::GetClassID
+## <a name="getclassid"></a> COleConvertDialog::GetClassID
 
 Call this function to get the CLSID associated with the item the user selected in the Convert dialog box.
 
@@ -172,7 +172,7 @@ Call this function only after [DoModal](#domodal) returns IDOK.
 
 For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) in the Windows SDK.
 
-##  <a name="getdrawaspect"></a>  COleConvertDialog::GetDrawAspect
+## <a name="getdrawaspect"></a> COleConvertDialog::GetDrawAspect
 
 Call this function to determine whether the user chose to display the selected item as an icon.
 
@@ -194,7 +194,7 @@ Call this function only after [DoModal](#domodal) returns IDOK.
 
 For more information on drawing aspect, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) data structure in the Windows SDK.
 
-##  <a name="geticonicmetafile"></a>  COleConvertDialog::GetIconicMetafile
+## <a name="geticonicmetafile"></a> COleConvertDialog::GetIconicMetafile
 
 Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.
 
@@ -206,7 +206,7 @@ HGLOBAL GetIconicMetafile() const;
 
 The handle to the metafile containing the iconic aspect of the selected item, if the Display As Icon check box was checked when the dialog was dismissed by choosing OK; otherwise NULL.
 
-##  <a name="getselectiontype"></a>  COleConvertDialog::GetSelectionType
+## <a name="getselectiontype"></a> COleConvertDialog::GetSelectionType
 
 Call this function to determine the type of conversion selected in the Convert dialog box.
 
@@ -238,7 +238,7 @@ Brief descriptions of these values follow:
 
 - `COleConvertDialog::activateAs` Returned if the Activate As radio button was checked, the user selected a different item to activate, and `DoModal` returned IDOK.
 
-##  <a name="m_cv"></a>  COleConvertDialog::m_cv
+## <a name="m_cv"></a> COleConvertDialog::m_cv
 
 Structure of type OLEUICONVERT used to control the behavior of the Convert dialog box.
 

@@ -52,7 +52,7 @@ The container of type `Container` must satisfy the requirements for a variable-s
 
 **Namespace:** std
 
-## <a name="container_type"></a>  insert_iterator::container_type
+## <a name="container_type"></a> insert_iterator::container_type
 
 A type that represents the container into which a general insertion is to be made.
 
@@ -94,7 +94,7 @@ The list L2 is: ( 40 20 10 ).
 */
 ```
 
-## <a name="insert_iterator"></a>  insert_iterator::insert_iterator
+## <a name="insert_iterator"></a> insert_iterator::insert_iterator
 
 Constructs an `insert_iterator` that inserts an element into a specified position in a container.
 
@@ -160,7 +160,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="op_star"></a>  insert_iterator::operator*
+## <a name="op_star"></a> insert_iterator::operator*
 
 Dereferences the insert iterator returning the element is addresses.
 
@@ -220,7 +220,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="op_add_add"></a>  insert_iterator::operator++
+## <a name="op_add_add"></a> insert_iterator::operator++
 
 Increments the `insert_iterator` to the next location into which a value may be stored.
 
@@ -284,7 +284,7 @@ After the insertions, the vector vec becomes:
 */
 ```
 
-## <a name="op_eq"></a>  insert_iterator::operator=
+## <a name="op_eq"></a> insert_iterator::operator=
 
 Inserts a value into the container and returns the iterator updated to point to the new element.
 
@@ -367,7 +367,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="reference"></a>  insert_iterator::reference
+## <a name="reference"></a> insert_iterator::reference
 
 A type that provides a reference to an element in a sequence controlled by the associated container.
 

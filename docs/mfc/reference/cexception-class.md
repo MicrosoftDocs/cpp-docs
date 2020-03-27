@@ -70,7 +70,7 @@ If an exception is caught by one of the macros, the `CException` object is delet
 
 **Header:** afx.h
 
-##  <a name="cexception"></a>  CException::CException
+## <a name="cexception"></a> CException::CException
 
 This member function constructs a `CException` object.
 
@@ -87,7 +87,7 @@ Specify TRUE if the memory for the `CException` object has been allocated on the
 
 You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException](exception-processing.md#afxthrowfileexception), to throw a predefined type. This documentation is provided only for completeness.
 
-##  <a name="delete"></a>  CException::Delete
+## <a name="delete"></a> CException::Delete
 
 This function checks to see if the `CException` object was created on the heap, and if so, it calls the **delete** operator on the object.
 
@@ -154,7 +154,7 @@ if (pFile != NULL)
 }
 ```
 
-##  <a name="reporterror"></a>  CException::ReportError
+## <a name="reporterror"></a> CException::ReportError
 
 Call this member function to report error text in a message box to the user.
 

@@ -90,7 +90,7 @@ For more information about using `CHeaderCtrl`, see [Controls](../../mfc/control
 
 **Header:** afxcmn.h
 
-##  <a name="cheaderctrl"></a>  CHeaderCtrl::CHeaderCtrl
+## <a name="cheaderctrl"></a> CHeaderCtrl::CHeaderCtrl
 
 Constructs a `CHeaderCtrl` object.
 
@@ -102,7 +102,7 @@ CHeaderCtrl();
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#1](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_1.cpp)]
 
-##  <a name="clearallfilters"></a>  CHeaderCtrl::ClearAllFilters
+## <a name="clearallfilters"></a> CHeaderCtrl::ClearAllFilters
 
 Clears all filters for a header control.
 
@@ -122,7 +122,7 @@ This method implements the behavior of the Win32 message [HDM_CLEARFILTER](/wind
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_2.cpp)]
 
-##  <a name="clearfilter"></a>  CHeaderCtrl::ClearFilter
+## <a name="clearfilter"></a> CHeaderCtrl::ClearFilter
 
 Clears the filter for a header control.
 
@@ -147,7 +147,7 @@ This method implements the behavior of the Win32 message [HDM_CLEARFILTER](/wind
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_3.cpp)]
 
-##  <a name="create"></a>  CHeaderCtrl::Create
+## <a name="create"></a> CHeaderCtrl::Create
 
 Creates a header control and attaches it to a `CHeaderCtrl` object.
 
@@ -213,7 +213,7 @@ If you want to use extended windows styles with your control, call [CreateEx](#c
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_4.cpp)]
 
-##  <a name="createex"></a>  CHeaderCtrl::CreateEx
+## <a name="createex"></a> CHeaderCtrl::CreateEx
 
 Creates a control (a child window) and associate it with the `CHeaderCtrl` object.
 
@@ -251,7 +251,7 @@ Nonzero if successful; otherwise 0.
 
 Use `CreateEx` instead of `Create` to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
 
-##  <a name="createdragimage"></a>  CHeaderCtrl::CreateDragImage
+## <a name="createdragimage"></a> CHeaderCtrl::CreateDragImage
 
 Creates a transparent version of an item's image within a header control.
 
@@ -274,7 +274,7 @@ This member function implements the behavior of the Win32 message [HDM_CREATEDRA
 
 The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.
 
-##  <a name="deleteitem"></a>  CHeaderCtrl::DeleteItem
+## <a name="deleteitem"></a> CHeaderCtrl::DeleteItem
 
 Deletes an item from a header control.
 
@@ -295,7 +295,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#5](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_5.cpp)]
 
-##  <a name="drawitem"></a>  CHeaderCtrl::DrawItem
+## <a name="drawitem"></a> CHeaderCtrl::DrawItem
 
 Called by the framework when a visual aspect of an owner-draw header control changes.
 
@@ -320,7 +320,7 @@ The application should restore all graphics device interface (GDI) objects selec
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_6.cpp)]
 
-##  <a name="editfilter"></a>  CHeaderCtrl::EditFilter
+## <a name="editfilter"></a> CHeaderCtrl::EditFilter
 
 Begins to edit the specified filter of a header control.
 
@@ -352,7 +352,7 @@ This method implements the behavior of the Win32 message [HDM_EDITFILTER](/windo
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#7](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_7.cpp)]
 
-##  <a name="getbitmapmargin"></a>  CHeaderCtrl::GetBitmapMargin
+## <a name="getbitmapmargin"></a> CHeaderCtrl::GetBitmapMargin
 
 Retrieves the width of the margin of a bitmap in a header control.
 
@@ -372,7 +372,7 @@ This member function implements the behavior of the Win32 message [HDM_GETBITMAP
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#8](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_8.cpp)]
 
-##  <a name="getfocuseditem"></a>  CHeaderCtrl::GetFocusedItem
+## <a name="getfocuseditem"></a> CHeaderCtrl::GetFocusedItem
 
 Gets the index of the item that has the focus in the current header control.
 
@@ -400,7 +400,7 @@ The following code example demonstrates the `SetFocusedItem` and `GetFocusedItem
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_10.cpp)]
 
-##  <a name="getimagelist"></a>  CHeaderCtrl::GetImageList
+## <a name="getimagelist"></a> CHeaderCtrl::GetImageList
 
 Retrieves the handle of an image list used for drawing header items in a header control.
 
@@ -420,7 +420,7 @@ This member function implements the behavior of the Win32 message [HDM_GETIMAGEL
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#9](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_11.cpp)]
 
-##  <a name="getitem"></a>  CHeaderCtrl::GetItem
+## <a name="getitem"></a> CHeaderCtrl::GetItem
 
 Retrieves information about a header control item.
 
@@ -446,7 +446,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#10](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_12.cpp)]
 
-##  <a name="getitemcount"></a>  CHeaderCtrl::GetItemCount
+## <a name="getitemcount"></a> CHeaderCtrl::GetItemCount
 
 Retrieves a count of the items in a header control.
 
@@ -462,7 +462,7 @@ Number of header control items if successful; otherwise - 1.
 
   See the example for [CHeaderCtrl::DeleteItem](#deleteitem).
 
-##  <a name="getitemdropdownrect"></a>  CHeaderCtrl::GetItemDropDownRect
+## <a name="getitemdropdownrect"></a> CHeaderCtrl::GetItemDropDownRect
 
 Gets the bounding rectangle of the drop-down button for a header item in the current header control.
 
@@ -499,7 +499,7 @@ The following code example demonstrates the `GetItemDropDownRect` method. In an 
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_13.cpp)]
 
-##  <a name="getitemrect"></a>  CHeaderCtrl::GetItemRect
+## <a name="getitemrect"></a> CHeaderCtrl::GetItemRect
 
 Retrieves the bounding rectangle for a given item in a header control.
 
@@ -525,7 +525,7 @@ Nonzero if successful; otherwise 0.
 
 This method implements the behavior of the Win32 message [HDM_GETITEMRECT](/windows/win32/Controls/hdm-getitemrect), as described in the Windows SDK.
 
-##  <a name="getorderarray"></a>  CHeaderCtrl::GetOrderArray
+## <a name="getorderarray"></a> CHeaderCtrl::GetOrderArray
 
 Retrieves the left-to-right order of items in a header control.
 
@@ -555,7 +555,7 @@ This member function implements the behavior of the Win32 message [HDM_GETORDERA
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#11](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_14.cpp)]
 
-##  <a name="getoverflowrect"></a>  CHeaderCtrl::GetOverflowRect
+## <a name="getoverflowrect"></a> CHeaderCtrl::GetOverflowRect
 
 Gets the bounding rectangle of the overflow button of the current header control.
 
@@ -591,7 +591,7 @@ The following code example demonstrates the `GetOverflowRect` method. In an earl
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_15.cpp)]
 
-##  <a name="hittest"></a>  CHeaderCtrl::HitTest
+## <a name="hittest"></a> CHeaderCtrl::HitTest
 
 Determines which header item, if any, is located at a specified point.
 
@@ -625,7 +625,7 @@ The following code example demonstrates the `HitTest` method. In an earlier sect
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#1](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_16.cpp)]
 
-##  <a name="insertitem"></a>  CHeaderCtrl::InsertItem
+## <a name="insertitem"></a> CHeaderCtrl::InsertItem
 
 Inserts a new item into a header control at the specified index.
 
@@ -651,7 +651,7 @@ Index of the new item if successful; otherwise - 1.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#12](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_17.cpp)]
 
-##  <a name="layout"></a>  CHeaderCtrl::Layout
+## <a name="layout"></a> CHeaderCtrl::Layout
 
 Retrieves the size and position of a header control within a given rectangle.
 
@@ -676,7 +676,7 @@ This function is used to determine the appropriate dimensions for a new header c
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#13](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_18.cpp)]
 
-##  <a name="ordertoindex"></a>  CHeaderCtrl::OrderToIndex
+## <a name="ordertoindex"></a> CHeaderCtrl::OrderToIndex
 
 Retrieves the index value for an item based on its order in the header control.
 
@@ -697,7 +697,7 @@ The index of the item, based on its order in the header control. The index count
 
 This member function implements the behavior of the Win32 macro [HDM_ORDERTOINDEX](/windows/win32/controls/hdm-ordertoindex), as described in the Windows SDK. It is provided to support header item ordering.
 
-##  <a name="setbitmapmargin"></a>  CHeaderCtrl::SetBitmapMargin
+## <a name="setbitmapmargin"></a> CHeaderCtrl::SetBitmapMargin
 
 Sets the width of the margin of a bitmap in a header control.
 
@@ -722,7 +722,7 @@ This member function implements the behavior of the Win32 message [HDM_SETBITMAP
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#14](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_19.cpp)]
 
-##  <a name="setfilterchangetimeout"></a>  CHeaderCtrl::SetFilterChangeTimeout
+## <a name="setfilterchangetimeout"></a> CHeaderCtrl::SetFilterChangeTimeout
 
 Sets the timeout interval between the time a change takes place in the filter attributes and the posting of an [HDN_FILTERCHANGE](/windows/win32/Controls/hdn-filterchange) notification.
 
@@ -747,7 +747,7 @@ This member function implements the behavior of the Win32 message [HDM_SETFILTER
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#15](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_20.cpp)]
 
-##  <a name="setfocuseditem"></a>  CHeaderCtrl::SetFocusedItem
+## <a name="setfocuseditem"></a> CHeaderCtrl::SetFocusedItem
 
 Sets the focus to a specified header item in the current header control.
 
@@ -781,7 +781,7 @@ The following code example demonstrates the `SetFocusedItem` and `GetFocusedItem
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_10.cpp)]
 
-##  <a name="sethotdivider"></a>  CHeaderCtrl::SetHotDivider
+## <a name="sethotdivider"></a> CHeaderCtrl::SetHotDivider
 
 Changes the divider between header items to indicate a manual drag and drop of a header item.
 
@@ -810,7 +810,7 @@ This member function implements the behavior of the Win32 message [HDM_SETHOTDIV
 
 [!code-cpp[NVC_MFC_CHeaderCtrl#16](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_21.cpp)]
 
-##  <a name="setimagelist"></a>  CHeaderCtrl::SetImageList
+## <a name="setimagelist"></a> CHeaderCtrl::SetImageList
 
 Assigns an image list to a header control.
 
@@ -835,7 +835,7 @@ This member function implements the behavior of the Win32 message [HDM_SETIMAGEL
 
   See the example for [CHeaderCtrl::GetImageList](#getimagelist).
 
-##  <a name="setitem"></a>  CHeaderCtrl::SetItem
+## <a name="setitem"></a> CHeaderCtrl::SetItem
 
 Sets the attributes of the specified item in a header control.
 
@@ -861,7 +861,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CHeaderCtrl::GetItem](#getitem).
 
-##  <a name="setorderarray"></a>  CHeaderCtrl::SetOrderArray
+## <a name="setorderarray"></a> CHeaderCtrl::SetOrderArray
 
 Sets the left-to-right order of items in a header control.
 

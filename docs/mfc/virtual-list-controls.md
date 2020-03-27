@@ -9,7 +9,7 @@ ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
 A virtual list control is a list view control that has the LVS_OWNERDATA style. This style enables the control to support an item count up to a **DWORD** (the default item count only extends to an **int**). However, the biggest advantage provided by this style is the ability to only have a subset of data items in memory at any one time. This allows the virtual list view control to lend itself for use with large databases of information, where specific methods of accessing data are already in place.
 
 > [!NOTE]
->  In addition to providing virtual list functionality in `CListCtrl`, MFC also provides the same functionality in the [CListView](../mfc/reference/clistview-class.md) class.
+> In addition to providing virtual list functionality in `CListCtrl`, MFC also provides the same functionality in the [CListView](../mfc/reference/clistview-class.md) class.
 
 There are some compatibility issues you should be aware of when developing virtual list controls. For more information, see the Compatibility Issues section of the List-View Controls topic in the Windows SDK.
 

@@ -55,7 +55,7 @@ For more information about using `CComObject`, see the article [Fundamentals of 
 
 **Header:** atlcom.h
 
-##  <a name="addref"></a>  CComObject::AddRef
+## <a name="addref"></a> CComObject::AddRef
 
 Increments the reference count on the object.
 
@@ -67,7 +67,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 This function returns the new incremented reference count on the object. This value may be useful for diagnostics or testing.
 
-##  <a name="ccomobject"></a>  CComObject::CComObject
+## <a name="ccomobject"></a> CComObject::CComObject
 
 The constructor increments the module lock count.
 
@@ -86,7 +86,7 @@ The destructor decrements it.
 
 If a `CComObject`-derived object is successfully constructed using the **new** operator, the initial reference count is 0. To set the reference count to the proper value (1), make a call to the [AddRef](#addref) function.
 
-##  <a name="dtor"></a>  CComObject::~CComObject
+## <a name="dtor"></a> CComObject::~CComObject
 
 The destructor.
 
@@ -98,7 +98,7 @@ CComObject();
 
 Frees all allocated resources, calls [FinalRelease](ccomobjectrootex-class.md#finalrelease), and decrements the module lock count.
 
-##  <a name="createinstance"></a>  CComObject::CreateInstance
+## <a name="createinstance"></a> CComObject::CreateInstance
 
 This static function allows you to create a new **CComObject<**`Base`**>** object, without the overhead of [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
@@ -127,7 +127,7 @@ If you do not need direct access to the object, but still want to create a new o
 
 [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]
 
-##  <a name="queryinterface"></a>  CComObject::QueryInterface
+## <a name="queryinterface"></a> CComObject::QueryInterface
 
 Retrieves a pointer to the requested interface.
 
@@ -152,7 +152,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 
 A standard HRESULT value.
 
-##  <a name="release"></a>  CComObject::Release
+## <a name="release"></a> CComObject::Release
 
 Decrements the reference count on the object.
 

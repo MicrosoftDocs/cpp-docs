@@ -64,7 +64,7 @@ Name                                                                     | Descr
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="comptrref"></a>ComPtrRef::ComPtrRef
+## <a name="comptrref"></a> ComPtrRef::ComPtrRef
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -83,7 +83,7 @@ The underlying value of another `ComPtrRef` object.
 
 Initializes a new instance of the `ComPtrRef` class from the specified pointer to another `ComPtrRef` object.
 
-## <a name="getaddressof"></a>ComPtrRef::GetAddressOf
+## <a name="getaddressof"></a> ComPtrRef::GetAddressOf
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -99,7 +99,7 @@ Address of a pointer to the interface represented by the current `ComPtrRef` obj
 
 Retrieves the address of a pointer to the interface represented by the current `ComPtrRef` object.
 
-## <a name="operator-equality"></a>ComPtrRef::operator==
+## <a name="operator-equality"></a> ComPtrRef::operator==
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -150,7 +150,7 @@ The fourth and fifth operators yield **true** if object *a* is equal to object *
 
 Indicates whether two `ComPtrRef` objects are equal.
 
-## <a name="operator-inequality"></a>ComPtrRef::operator!=
+## <a name="operator-inequality"></a> ComPtrRef::operator!=
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -201,7 +201,7 @@ The fourth and fifth operators yield **true** if object *a* is not equal to obje
 
 Indicates whether two `ComPtrRef` objects are not equal.
 
-## <a name="operator-interfacetype-star-star"></a>ComPtrRef::operator InterfaceType**
+## <a name="operator-interfacetype-star-star"></a> ComPtrRef::operator InterfaceType**
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -213,7 +213,7 @@ operator InterfaceType**();
 
 Deletes the current `ComPtrRef` object and returns a pointer-to-a-pointer to the interface that was represented by the `ComPtrRef` object.
 
-## <a name="operator-star"></a>ComPtrRef::operator*
+## <a name="operator-star"></a> ComPtrRef::operator*
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -229,7 +229,7 @@ Pointer to the interface represented by the current `ComPtrRef` object.
 
 Retrieves the pointer to the interface represented by the current `ComPtrRef` object.
 
-## <a name="operator-t-star"></a>ComPtrRef::operator T*
+## <a name="operator-t-star"></a> ComPtrRef::operator T*
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -241,7 +241,7 @@ operator T*();
 
 Returns the value of the [ptr_](comptrrefbase-class.md#ptr) data member of the current `ComPtrRef` object.
 
-## <a name="operator-void-star-star"></a>ComPtrRef::operator void\*\*
+## <a name="operator-void-star-star"></a> ComPtrRef::operator void\*\*
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -253,7 +253,7 @@ operator void**() const;
 
 Deletes the current `ComPtrRef` object, casts the pointer to the interface that was represented by the `ComPtrRef` object as a pointer-to-pointer-to `void`, and then returns the cast pointer.
 
-## <a name="releaseandgetaddressof"></a>ComPtrRef::ReleaseAndGetAddressOf
+## <a name="releaseandgetaddressof"></a> ComPtrRef::ReleaseAndGetAddressOf
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

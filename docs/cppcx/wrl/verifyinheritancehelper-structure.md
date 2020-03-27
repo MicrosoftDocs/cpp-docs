@@ -50,7 +50,7 @@ Name                                       | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="verify"></a>VerifyInheritanceHelper::Verify
+## <a name="verify"></a> VerifyInheritanceHelper::Verify
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

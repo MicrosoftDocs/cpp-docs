@@ -55,7 +55,7 @@ For an example of using rich edit container items in an MFC application, see the
 
 **Header:** afxrich.h
 
-##  <a name="cricheditcntritem"></a>  CRichEditCntrItem::CRichEditCntrItem
+## <a name="cricheditcntritem"></a> CRichEditCntrItem::CRichEditCntrItem
 
 Call this function to create a `CRichEditCntrItem` object and add it to the container document.
 
@@ -79,7 +79,7 @@ This function does not perform any OLE initialization.
 
 For more information, see the [REOBJECT](/windows/win32/api/richole/ns-richole-reobject) structure in the Windows SDK.
 
-##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject
+## <a name="synctoricheditobject"></a> CRichEditCntrItem::SyncToRichEditObject
 
 Call this function to synchronize the device aspect, [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect), of this `CRichEditCntrltem` to that specified by *reo*.
 

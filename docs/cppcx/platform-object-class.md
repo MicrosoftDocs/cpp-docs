@@ -67,7 +67,7 @@ The object to compare.
 
 **true** if the objects are equal, otherwise **false**.
 
-## <a name="gethashcode"></a>  Object::GetHashCode Method
+## <a name="gethashcode"></a> Object::GetHashCode Method
 
 Returns the `IUnknown`* identity value for this instance if it is a COM object, or a computed hash value if it is not a COM object.
 
@@ -85,7 +85,7 @@ A numeric value that uniquely identifies this object.
 
 You can use GetHashCode to create keys for objects in maps. You can compare hash codes by using [Object::Equals](#equals). If the code path is extremely critical and `GetHashCode` and `Equals` are not sufficiently fast, then you can drop down to the underlying COM layer and do native `IUnknown` pointer comparisons.
 
-## <a name="gettype"></a>  Object::GetType Method
+## <a name="gettype"></a> Object::GetType Method
 
 Returns a [Platform::Type](../cppcx/platform-type-class.md) object that describes the runtime type of an object.
 
@@ -111,7 +111,7 @@ Use the [typeid](../extensions/typeid-cpp-component-extensions.md) operator to r
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
 
-## <a name="ctor"></a>  Object::Object Constructor
+## <a name="ctor"></a> Object::Object Constructor
 
 Initializes a new instance of the Object class.
 
@@ -121,7 +121,7 @@ Initializes a new instance of the Object class.
 public:Object();
 ```
 
-## <a name="referenceequals"></a>  Object::ReferenceEquals Method
+## <a name="referenceequals"></a> Object::ReferenceEquals Method
 
 Determines whether the specified Object instances are the same instance.
 
@@ -143,7 +143,7 @@ The second object to compare.
 
 **true** if the two objects are the same; otherwise, **false**.
 
-## <a name="tostring"></a>  Object::ToString Method (C++/CX)
+## <a name="tostring"></a> Object::ToString Method (C++/CX)
 
 Returns a string that represents the current object.
 

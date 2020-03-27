@@ -134,7 +134,7 @@ An object of class `basic_streambuf`< `Elem`, `Tr`> stores the six pointers prev
 
 **Namespace:** std
 
-## <a name="basic_streambuf"></a>  basic_streambuf::basic_streambuf
+## <a name="basic_streambuf"></a> basic_streambuf::basic_streambuf
 
 Constructs an object of type `basic_streambuf`.
 
@@ -155,7 +155,7 @@ The first protected constructor stores a null pointer in all pointers controllin
 
 The second protected constructor copies the pointers and locale from *right*.
 
-## <a name="char_type"></a>  basic_streambuf::char_type
+## <a name="char_type"></a> basic_streambuf::char_type
 
 Associates a type name with the **Elem** template parameter.
 
@@ -163,7 +163,7 @@ Associates a type name with the **Elem** template parameter.
 typedef Elem char_type;
 ```
 
-## <a name="eback"></a>  basic_streambuf::eback
+## <a name="eback"></a> basic_streambuf::eback
 
 A protected function that returns a pointer to the beginning of the input buffer.
 
@@ -175,7 +175,7 @@ char_type *eback() const;
 
 A pointer to the beginning of the input buffer.
 
-## <a name="egptr"></a>  basic_streambuf::egptr
+## <a name="egptr"></a> basic_streambuf::egptr
 
 A protected function that returns a pointer just past the end of the input buffer.
 
@@ -187,7 +187,7 @@ char_type *egptr() const;
 
 A pointer just past the end of the input buffer.
 
-## <a name="epptr"></a>  basic_streambuf::epptr
+## <a name="epptr"></a> basic_streambuf::epptr
 
 A protected function that returns a pointer just past the end of the output buffer.
 
@@ -199,7 +199,7 @@ char_type *epptr() const;
 
 A pointer just past the end of the output buffer.
 
-## <a name="gbump"></a>  basic_streambuf::gbump
+## <a name="gbump"></a> basic_streambuf::gbump
 
 A protected function that adds *count* to the next pointer for the input buffer.
 
@@ -212,7 +212,7 @@ void gbump(int count);
 *count*\
 The amount by which to advance the pointer.
 
-## <a name="getloc"></a>  basic_streambuf::getloc
+## <a name="getloc"></a> basic_streambuf::getloc
 
 Gets the basic_streambuf object's locale.
 
@@ -246,7 +246,7 @@ int main( )
 C
 ```
 
-## <a name="gptr"></a>  basic_streambuf::gptr
+## <a name="gptr"></a> basic_streambuf::gptr
 
 A protected function that returns a pointer to the next element of the input buffer.
 
@@ -258,7 +258,7 @@ char_type *gptr() const;
 
 A pointer to the next element of the input buffer.
 
-## <a name="imbue"></a>  basic_streambuf::imbue
+## <a name="imbue"></a> basic_streambuf::imbue
 
 A protected virtual function called by [pubimbue](#pubimbue).
 
@@ -275,7 +275,7 @@ A reference to a locale.
 
 The default behavior is to do nothing.
 
-## <a name="in_avail"></a>  basic_streambuf::in_avail
+## <a name="in_avail"></a> basic_streambuf::in_avail
 
 Returns the number of elements that are ready to be read from the buffer.
 
@@ -309,7 +309,7 @@ int main( )
 }
 ```
 
-## <a name="int_type"></a>  basic_streambuf::int_type
+## <a name="int_type"></a> basic_streambuf::int_type
 
 Associates a type name within basic_streambuf scope with one of the types in a template parameter.
 
@@ -317,7 +317,7 @@ Associates a type name within basic_streambuf scope with one of the types in a t
 typedef typename traits_type::int_type int_type;
 ```
 
-## <a name="off_type"></a>  basic_streambuf::off_type
+## <a name="off_type"></a> basic_streambuf::off_type
 
 Associates a type name within basic_streambuf scope with one of the types in a template parameter.
 
@@ -325,7 +325,7 @@ Associates a type name within basic_streambuf scope with one of the types in a t
 typedef typename traits_type::off_type off_type;
 ```
 
-## <a name="op_eq"></a>  basic_streambuf::operator=
+## <a name="op_eq"></a> basic_streambuf::operator=
 
 Assigns the values of this object from another `basic_streambuf` object.
 
@@ -342,7 +342,7 @@ An lvalue reference to the `basic_streambuf` object that is used to assign value
 
 The protected member operator copies from *right* the pointers that control the input buffer and the output buffer. It also stores `right.`[getloc()](#getloc) in the `locale object`. It returns `*this`.
 
-## <a name="overflow"></a>  basic_streambuf::overflow
+## <a name="overflow"></a> basic_streambuf::overflow
 
 A protected virtual function that can be called when a new character is inserted into a full buffer.
 
@@ -377,7 +377,7 @@ The function consumes the characters in the put area between the `pbase` and `pp
 
 The definition of consume varies among derived classes. For example, the `filebuf` class writes its characters to a file, while the `strstreambuf` class keeps them in its buffer and (if the buffer is designated as dynamic) expands the buffer in response to a call to overflow. This expansion is achieved by freeing the old buffer and replacing it with a new, larger one. The pointers are adjusted as necessary.
 
-## <a name="pbackfail"></a>  basic_streambuf::pbackfail
+## <a name="pbackfail"></a> basic_streambuf::pbackfail
 
 A protected virtual member function that tries to put back an element into the input stream, then make it the current element (pointed to by the next pointer).
 
@@ -404,7 +404,7 @@ If *\_Meta* compares equal to **traits_type::eof**, the element to push back is 
 
 - For a stream buffer with common input and output streams, it can make a putback position available by writing out, to some external destination, some or all of the elements between the beginning and next pointers for the output buffer.
 
-## <a name="pbase"></a>  basic_streambuf::pbase
+## <a name="pbase"></a> basic_streambuf::pbase
 
 A protected function that returns a pointer to the beginning of the output buffer.
 
@@ -416,7 +416,7 @@ char_type *pbase() const;
 
 A pointer to the beginning of the output buffer.
 
-## <a name="pbump"></a>  basic_streambuf::pbump
+## <a name="pbump"></a> basic_streambuf::pbump
 
 A protected function that adds *count* to the next pointer for the output buffer.
 
@@ -429,7 +429,7 @@ void pbump(int count);
 *count*\
 The number of characters by which to move the write position forward.
 
-## <a name="pos_type"></a>  basic_streambuf::pos_type
+## <a name="pos_type"></a> basic_streambuf::pos_type
 
 Associates a type name within basic_streambuf scope with one of the types in a template parameter.
 
@@ -437,7 +437,7 @@ Associates a type name within basic_streambuf scope with one of the types in a t
 typedef typename traits_type::pos_type pos_type;
 ```
 
-## <a name="pptr"></a>  basic_streambuf::pptr
+## <a name="pptr"></a> basic_streambuf::pptr
 
 A protected function that returns a pointer to the next element of the output buffer.
 
@@ -449,7 +449,7 @@ char_type *pptr() const;
 
 A pointer to the next element of the output buffer.
 
-## <a name="pubimbue"></a>  basic_streambuf::pubimbue
+## <a name="pubimbue"></a> basic_streambuf::pubimbue
 
 Sets the basic_streambuf object's locale.
 
@@ -474,7 +474,7 @@ The member function stores _ *Loc* in the locale object and calls [imbue](#imbue
 
 See [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue) for an example that uses `pubimbue`.
 
-## <a name="pubseekoff"></a>  basic_streambuf::pubseekoff
+## <a name="pubseekoff"></a> basic_streambuf::pubseekoff
 
 Calls [seekoff](#seekoff), a protected virtual function that is overridden in a derived class.
 
@@ -503,7 +503,7 @@ Returns the new position or an invalid stream position ( [seekoff](#seekoff)(_ *
 
 Moves the pointer relative to *_Way*.
 
-## <a name="pubseekpos"></a>  basic_streambuf::pubseekpos
+## <a name="pubseekpos"></a> basic_streambuf::pubseekpos
 
 Calls [seekpos](#seekpos), a protected virtual function that is overridden in a derived class, and resets the current pointer position.
 
@@ -527,7 +527,7 @@ The new position or an invalid stream position. To determine if the stream posit
 
 The member function returns [seekpos](#seekpos)(_ *Sp*, `_Which`).
 
-## <a name="pubsetbuf"></a>  basic_streambuf::pubsetbuf
+## <a name="pubsetbuf"></a> basic_streambuf::pubsetbuf
 
 Calls [setbuf](#setbuf), a protected virtual function that is overridden in a derived class.
 
@@ -549,7 +549,7 @@ The size of the buffer.
 
 Returns [setbuf](#setbuf)( `_Buffer`, `count`).
 
-## <a name="pubsync"></a>  basic_streambuf::pubsync
+## <a name="pubsync"></a> basic_streambuf::pubsync
 
 Calls [sync](#sync), a protected virtual function that is overridden in a derived class, and updates the external stream associated with this buffer.
 
@@ -561,7 +561,7 @@ int pubsync();
 
 Returns [sync](#sync) or -1 if failure.
 
-## <a name="sbumpc"></a>  basic_streambuf::sbumpc
+## <a name="sbumpc"></a> basic_streambuf::sbumpc
 
 Reads and returns the current element, moving the stream pointer.
 
@@ -602,7 +602,7 @@ int main( )
 51
 ```
 
-## <a name="seekoff"></a>  basic_streambuf::seekoff
+## <a name="seekoff"></a> basic_streambuf::seekoff
 
 A protected virtual member function that tries to alter the current positions for the controlled streams.
 
@@ -642,7 +642,7 @@ Typically, if **which & ios_base::in** is nonzero, the input stream is affected,
 
 If the function succeeds in altering the stream position or positions, it returns the resulting stream position or one of the resulting stream positions. Otherwise, it returns an invalid stream position. The default behavior is to return an invalid stream position.
 
-## <a name="seekpos"></a>  basic_streambuf::seekpos
+## <a name="seekpos"></a> basic_streambuf::seekpos
 
 A protected virtual member function that tries to alter the current positions for the controlled streams.
 
@@ -670,7 +670,7 @@ Typically, if **which & ios_base::in** is nonzero, the input stream is affected,
 
 If the function succeeds in altering the stream position or positions, it returns the resulting stream position or one of the resulting stream positions. Otherwise, it returns an invalid stream position (-1). The default behavior is to return an invalid stream position.
 
-## <a name="setbuf"></a>  basic_streambuf::setbuf
+## <a name="setbuf"></a> basic_streambuf::setbuf
 
 A protected virtual member function that performs an operation particular to each derived stream buffer.
 
@@ -696,7 +696,7 @@ The default behavior is to return **this**.
 
 See [basic_filebuf](../standard-library/basic-filebuf-class.md). `setbuf` provides an area of memory for the `streambuf` object to use. How the buffer is used in defined in the derived classes.
 
-## <a name="setg"></a>  basic_streambuf::setg
+## <a name="setg"></a> basic_streambuf::setg
 
 A protected function that stores _ *Gbeg* in the beginning pointer, `_Gnext` in the next pointer, and `_Gend` in the end pointer for the input buffer.
 
@@ -717,7 +717,7 @@ A pointer to somewhere in the middle of the buffer.
 *_Gend*\
 A pointer to the end of the buffer.
 
-## <a name="setp"></a>  basic_streambuf::setp
+## <a name="setp"></a> basic_streambuf::setp
 
 A protected function that stores *_Pbeg* in the beginning pointer and *_Pend* in the end pointer for the output buffer.
 
@@ -733,7 +733,7 @@ A pointer to the beginning of the buffer.
 *_Pend*\
 A pointer to the end of the buffer.
 
-## <a name="sgetc"></a>  basic_streambuf::sgetc
+## <a name="sgetc"></a> basic_streambuf::sgetc
 
 Returns current element without changing position in the stream.
 
@@ -769,7 +769,7 @@ int main( )
 }
 ```
 
-## <a name="sgetn"></a>  basic_streambuf::sgetn
+## <a name="sgetn"></a> basic_streambuf::sgetn
 
 Extracts up to *count* characters from the input buffer and stores them in the provided buffer *ptr*.
 
@@ -824,7 +824,7 @@ int main()
 }
 ```
 
-## <a name="showmanyc"></a>  basic_streambuf::showmanyc
+## <a name="showmanyc"></a> basic_streambuf::showmanyc
 
 A protected virtual member function that returns a count of the number of characters that can be extracted from the input stream and ensure that the program will not be subject to an indefinite wait.
 
@@ -836,7 +836,7 @@ virtual streamsize showmanyc();
 
 The default behavior is to return zero.
 
-## <a name="snextc"></a>  basic_streambuf::snextc
+## <a name="snextc"></a> basic_streambuf::snextc
 
 Reads the current element and returns the following element.
 
@@ -876,7 +876,7 @@ aa
 aa97
 ```
 
-## <a name="sputbackc"></a>  basic_streambuf::sputbackc
+## <a name="sputbackc"></a> basic_streambuf::sputbackc
 
 Puts a char_type in the stream.
 
@@ -924,7 +924,7 @@ int main( )
 }
 ```
 
-## <a name="sputc"></a>  basic_streambuf::sputc
+## <a name="sputc"></a> basic_streambuf::sputc
 
 Puts a character into the stream.
 
@@ -967,7 +967,7 @@ a
 a
 ```
 
-## <a name="sputn"></a>  basic_streambuf::sputn
+## <a name="sputn"></a> basic_streambuf::sputn
 
 Puts a character string into the stream.
 
@@ -1013,7 +1013,7 @@ test
 4
 ```
 
-## <a name="stossc"></a>  basic_streambuf::stossc
+## <a name="stossc"></a> basic_streambuf::stossc
 
 Move past the current element in the stream.
 
@@ -1044,7 +1044,7 @@ int main( )
 }
 ```
 
-## <a name="sungetc"></a>  basic_streambuf::sungetc
+## <a name="sungetc"></a> basic_streambuf::sungetc
 
 Gets a character from the stream.
 
@@ -1094,7 +1094,7 @@ int main( )
 }
 ```
 
-## <a name="swap"></a>  basic_streambuf::swap
+## <a name="swap"></a> basic_streambuf::swap
 
 Exchanges the values in this object for the values in the provided `basic_streambuf` object.
 
@@ -1112,7 +1112,7 @@ void swap(basic_streambuf& right);
 
 The protected member function exchanges with *right* all the pointers controlling the `input buffer` and the `output buffer`. It also exchanges `right.`[getloc()](#getloc) with the `locale` object.
 
-## <a name="sync"></a>  basic_streambuf::sync
+## <a name="sync"></a> basic_streambuf::sync
 
 A protected virtual function that tries to synchronize the controlled streams with any associated external streams.
 
@@ -1128,7 +1128,7 @@ If the function cannot succeed, it returns -1. The default behavior is to return
 
 `sync` involves writing out any elements between the beginning and next pointers for the output buffer. It does not involve putting back any elements between the next and end pointers for the input buffer.
 
-## <a name="traits_type"></a>  basic_streambuf::traits_type
+## <a name="traits_type"></a> basic_streambuf::traits_type
 
 Associates a type name with the **Tr** template parameter.
 
@@ -1136,7 +1136,7 @@ Associates a type name with the **Tr** template parameter.
 typedef Tr traits_type;
 ```
 
-## <a name="uflow"></a>  basic_streambuf::uflow
+## <a name="uflow"></a> basic_streambuf::uflow
 
 A protected virtual function that extracts the current element from the input stream.
 
@@ -1160,7 +1160,7 @@ The protected virtual member function tries to extract the current element **ch*
 
 If the function cannot succeed, it returns **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), or throws an exception. Otherwise, it returns the current element `ch` in the input stream, converted as described above, and advances the next pointer for the input buffer. The default behavior is to call [underflow](#underflow) and, if that function returns **traits_type::eof**, to return **traits_type::eof**. Otherwise, the function returns the current element **ch** in the input stream, converted as previously described, and advances the next pointer for the input buffer.
 
-## <a name="underflow"></a>  basic_streambuf::underflow
+## <a name="underflow"></a> basic_streambuf::underflow
 
 Protected, virtual function to extract the current element from the input stream.
 
@@ -1190,7 +1190,7 @@ The `underflow` function supplies the get area with characters from the input so
 
 In the `strstreambuf` class, `underflow` adjusts the [egptr](#egptr) pointer to access storage that was dynamically allocated by a call to `overflow`.
 
-## <a name="xsgetn"></a>  basic_streambuf::xsgetn
+## <a name="xsgetn"></a> basic_streambuf::xsgetn
 
 Protected, virtual function to extract elements from the input stream.
 
@@ -1218,7 +1218,7 @@ The number of elements extracted.
 
 The protected virtual member function extracts up to *count* elements from the input stream, as if by repeated calls to [sbumpc](#sbumpc), and stores them in the array beginning at *ptr*. It returns the number of elements actually extracted.
 
-## <a name="xsputn"></a>  basic_streambuf::xsputn
+## <a name="xsputn"></a> basic_streambuf::xsputn
 
 Protected, virtual function to insert elements into the output stream.
 

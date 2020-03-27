@@ -47,7 +47,7 @@ This event handler is created and passed to `IUIAnimationVariable::SetVariableCh
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="onvaluechanged"></a>  CAnimationVariableChangeHandler::OnValueChanged
+## <a name="onvaluechanged"></a> CAnimationVariableChangeHandler::OnValueChanged
 
 Called when a value of an animation variable has changed.
 
@@ -77,7 +77,7 @@ The previous value.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="setanimationcontroller"></a>  CAnimationVariableChangeHandler::SetAnimationController
+## <a name="setanimationcontroller"></a> CAnimationVariableChangeHandler::SetAnimationController
 
 Stores a pointer to animation controller to route events.
 

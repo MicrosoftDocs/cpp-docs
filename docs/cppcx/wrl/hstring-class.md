@@ -63,7 +63,7 @@ Name                                         | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="tilde-hstring"></a>HString::~HString
+## <a name="tilde-hstring"></a> HString::~HString
 
 Destroys the current instance of the `HString` class.
 
@@ -71,7 +71,7 @@ Destroys the current instance of the `HString` class.
 ~HString() throw()
 ```
 
-## <a name="attach"></a>HString::Attach
+## <a name="attach"></a> HString::Attach
 
 Associates the specified `HString` object with the current `HString` object.
 
@@ -86,7 +86,7 @@ void Attach(
 *hstr*<br/>
 An existing `HString` object.
 
-## <a name="copyto"></a>HString::CopyTo
+## <a name="copyto"></a> HString::CopyTo
 
 Copies the current `HString` object to an HSTRING object.
 
@@ -105,7 +105,7 @@ The HSTRING that receives the copy.
 
 This method calls the [WindowsDuplicateString](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) function.
 
-## <a name="detach"></a>HString::Detach
+## <a name="detach"></a> HString::Detach
 
 Disassociates the specified `HString` object from its underlying value.
 
@@ -117,7 +117,7 @@ HSTRING Detach() throw()
 
 The underlying `HString` value before the detach operation started.
 
-## <a name="get"></a>HString::Get
+## <a name="get"></a> HString::Get
 
 Retrieves the value of the underlying HSTRING handle.
 
@@ -129,7 +129,7 @@ HSTRING Get() const throw()
 
 The value of the underlying HSTRING handle
 
-## <a name="getaddressof"></a>HString::GetAddressOf
+## <a name="getaddressof"></a> HString::GetAddressOf
 
 Retrieves a pointer to the underlying HSTRING handle.
 
@@ -145,7 +145,7 @@ A pointer to the underlying HSTRING handle.
 
 After this operation, the string value of the underlying HSTRING handle is destroyed.
 
-## <a name="getrawbuffer"></a>HString::GetRawBuffer
+## <a name="getrawbuffer"></a> HString::GetRawBuffer
 
 Retrieves a pointer to the underlying string data.
 
@@ -162,7 +162,7 @@ Pointer to an **int** variable that receives the length of the data.
 
 A **const** pointer to the underlying string data.
 
-## <a name="hstring"></a>HString::HString
+## <a name="hstring"></a> HString::HString
 
 Initializes a new instance of the `HString` class.
 
@@ -185,7 +185,7 @@ The first constructor initializes a new `HString` object that is empty.
 
 The second constructor initializes a new `HString` object to the value of the existing *other* parameter, and then destroys the *other* parameter.
 
-## <a name="isvalid"></a>HString::IsValid
+## <a name="isvalid"></a> HString::IsValid
 
 Indicates whether the current `HString` object is empty or not.
 
@@ -197,7 +197,7 @@ bool IsValid() const throw()
 
 **true** if the current `HString` object is not empty; otherwise, **false**.
 
-## <a name="makereference"></a>HString::MakeReference
+## <a name="makereference"></a> HString::MakeReference
 
 Creates an `HStringReference` object from a specified string parameter.
 
@@ -227,7 +227,7 @@ The maximum length of the *str* parameter buffer to use in this operation. If th
 
 An `HStringReference` object whose value is the same as the specified *str* parameter.
 
-## <a name="operator-assign"></a>HString::operator= Operator
+## <a name="operator-assign"></a> HString::operator= Operator
 
 Moves the value of another `HString` object to the current `HString` object.
 
@@ -244,7 +244,7 @@ An existing `HString` object.
 
 The value of the existing *other* object is copied to the current `HString` object, and then the *other* object is destroyed.
 
-## <a name="operator-equality"></a>HString::operator== Operator
+## <a name="operator-equality"></a> HString::operator== Operator
 
 Indicates whether the two parameters are equal.
 
@@ -282,7 +282,7 @@ The second parameter to compare.*rhs* can be an `HString` or `HStringReference` 
 
 **true** if the *lhs* and *rhs* parameters are equal; otherwise, **false**.
 
-## <a name="operator-inequality"></a>HString::operator!= Operator
+## <a name="operator-inequality"></a> HString::operator!= Operator
 
 Indicates whether the two parameters are not equal.
 
@@ -315,7 +315,7 @@ The second parameter to compare.*rhs* can be an `HString` or `HStringReference` 
 
 **true** if the *lhs* and *rhs* parameters are not equal; otherwise, **false**.
 
-## <a name="operator-less-than"></a>HString::operator&lt; Operator
+## <a name="operator-less-than"></a> HString::operator&lt; Operator
 
 Indicates whether the first parameter is less than the second parameter.
 
@@ -337,7 +337,7 @@ The second parameter to compare. *rhs* can be a reference to an `HString`.
 
 **true** if the *lhs* parameter is less than the *rhs* parameter; otherwise, **false**.
 
-## <a name="release"></a>HString::Release
+## <a name="release"></a> HString::Release
 
 Deletes the underlying string value and intializes the current `HString` object to an empty value.
 
@@ -345,7 +345,7 @@ Deletes the underlying string value and intializes the current `HString` object 
 void Release() throw()
 ```
 
-## <a name="set"></a>HString::Set
+## <a name="set"></a> HString::Set
 
 Sets the value of the current `HString` object to the specified wide-character string or `HString` parameter.
 

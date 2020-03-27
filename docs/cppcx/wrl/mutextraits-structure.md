@@ -36,7 +36,7 @@ Name                           | Description
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="unlock"></a>MutexTraits::Unlock Method
+## <a name="unlock"></a> MutexTraits::Unlock Method
 
 Releases exclusive control of a shared resource.
 

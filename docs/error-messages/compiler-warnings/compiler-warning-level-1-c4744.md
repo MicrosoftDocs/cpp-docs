@@ -14,7 +14,7 @@ An external variable referenced or defined in two files has different types in t
 C4744 is emitted only when files are compiled with /GL.  For more information, see [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md).
 
 > [!NOTE]
->  C4744 usually occurs in C (not C++) files, because in C++ a variable name is decorated with type information.  When the sample (below) is compiles as C++, you’ll get linker error LNK2019.
+> C4744 usually occurs in C (not C++) files, because in C++ a variable name is decorated with type information.  When the sample (below) is compiles as C++, you’ll get linker error LNK2019.
 
 ## Example
 

@@ -80,9 +80,9 @@ Due to possible redundancies in the encodings above, these restrictions apply:
 
 - If the *C* flag is set to 1:
 
-   - The *L* flag must also be set to 1, because frame chaining required both r11 and LR.
+  - The *L* flag must also be set to 1, because frame chaining required both r11 and LR.
 
-   - r11 must not be included in the set of registers described by *Reg*. That is, if r4-r11 are pushed, *Reg* should only describe r4-r10, because the *C* flag implies r11.
+  - r11 must not be included in the set of registers described by *Reg*. That is, if r4-r11 are pushed, *Reg* should only describe r4-r10, because the *C* flag implies r11.
 
 - If the *Ret* field is set to 0, the *L* flag must be set to 1.
 
@@ -418,25 +418,25 @@ Epilogue:
 
 - Word 0
 
-   - *Function Start RVA* = 0x000535F8 (= 0x004535F8-0x00400000)
+  - *Function Start RVA* = 0x000535F8 (= 0x004535F8-0x00400000)
 
 - Word 1
 
-   - *Flag* = 1, indicating canonical prologue and epilogue formats
+  - *Flag* = 1, indicating canonical prologue and epilogue formats
 
-   - *Function Length* = 0x31 (= 0x62/2)
+  - *Function Length* = 0x31 (= 0x62/2)
 
-   - *Ret* = 1, indicating a 16-bit branch return
+  - *Ret* = 1, indicating a 16-bit branch return
 
-   - *H* = 0, indicating the parameters were not homed
+  - *H* = 0, indicating the parameters were not homed
 
-   - *R*=0 and *Reg* = 1, indicating push/pop of r4-r5
+  - *R*=0 and *Reg* = 1, indicating push/pop of r4-r5
 
-   - *L* = 0, indicating no LR save/restore
+  - *L* = 0, indicating no LR save/restore
 
-   - *C* = 0, indicating no frame chaining
+  - *C* = 0, indicating no frame chaining
 
-   - *Stack Adjust* = 0, indicating no stack adjustment
+  - *Stack Adjust* = 0, indicating no stack adjustment
 
 ### Example 2: Nested Function with Local Allocation
 
@@ -453,25 +453,25 @@ Epilogue:
 
 - Word 0
 
-   - *Function Start RVA* = 0x000533AC (= 0x004533AC -0x00400000)
+  - *Function Start RVA* = 0x000533AC (= 0x004533AC -0x00400000)
 
 - Word 1
 
-   - *Flag* = 1, indicating canonical prologue and epilogue formats
+  - *Flag* = 1, indicating canonical prologue and epilogue formats
 
-   - *Function Length* = 0x35 (= 0x6A/2)
+  - *Function Length* = 0x35 (= 0x6A/2)
 
-   - *Ret* = 0, indicating a pop {pc} return
+  - *Ret* = 0, indicating a pop {pc} return
 
-   - *H* = 0, indicating the parameters were not homed
+  - *H* = 0, indicating the parameters were not homed
 
-   - *R*=0 and *Reg* = 3, indicating push/pop of r4-r7
+  - *R*=0 and *Reg* = 3, indicating push/pop of r4-r7
 
-   - *L* = 1, indicating LR was saved/restored
+  - *L* = 1, indicating LR was saved/restored
 
-   - *C* = 0, indicating no frame chaining
+  - *C* = 0, indicating no frame chaining
 
-   - *Stack Adjust* = 3 (= 0x0C/4)
+  - *Stack Adjust* = 3 (= 0x0C/4)
 
 ### Example 3: Nested Variadic Function
 
@@ -488,25 +488,25 @@ Epilogue:
 
 - Word 0
 
-   - *Function Start RVA* = 0x00053988 (= 0x00453988-0x00400000)
+  - *Function Start RVA* = 0x00053988 (= 0x00453988-0x00400000)
 
 - Word 1
 
-   - *Flag* = 1, indicating canonical prologue and epilogue formats
+  - *Flag* = 1, indicating canonical prologue and epilogue formats
 
-   - *Function Length* = 0x2A (= 0x54/2)
+  - *Function Length* = 0x2A (= 0x54/2)
 
-   - *Ret* = 0, indicating a pop {pc}-style return (in this case an ldr pc,[sp],#0x14 return)
+  - *Ret* = 0, indicating a pop {pc}-style return (in this case an ldr pc,[sp],#0x14 return)
 
-   - *H* = 1, indicating the parameters were homed
+  - *H* = 1, indicating the parameters were homed
 
-   - *R*=0 and *Reg* = 2, indicating push/pop of r4-r6
+  - *R*=0 and *Reg* = 2, indicating push/pop of r4-r6
 
-   - *L* = 1, indicating LR was saved/restored
+  - *L* = 1, indicating LR was saved/restored
 
-   - *C* = 0, indicating no frame chaining
+  - *C* = 0, indicating no frame chaining
 
-   - *Stack Adjust* = 0, indicating no stack adjustment
+  - *Stack Adjust* = 0, indicating no stack adjustment
 
 ### Example 4: Function with Multiple Epilogues
 
@@ -534,41 +534,41 @@ Epilogues:
 
 - Word 0
 
-   - *Function Start RVA* = 0x000592F4 (= 0x004592F4-0x00400000)
+  - *Function Start RVA* = 0x000592F4 (= 0x004592F4-0x00400000)
 
 - Word 1
 
-   - *Flag* = 0, indicating .xdata record present (required due to multiple epilogues)
+  - *Flag* = 0, indicating .xdata record present (required due to multiple epilogues)
 
-   - *.xdata address* - 0x00400000
+  - *.xdata address* - 0x00400000
 
 .xdata (variable, 6 words):
 
 - Word 0
 
-   - *Function Length* = 0x0001A3 (= 0x000346/2)
+  - *Function Length* = 0x0001A3 (= 0x000346/2)
 
-   - *Vers* = 0, indicating the first version of xdata
+  - *Vers* = 0, indicating the first version of xdata
 
-   - *X* = 0, indicating no exception data
+  - *X* = 0, indicating no exception data
 
-   - *E* = 0, indicating a list of epilogue scopes
+  - *E* = 0, indicating a list of epilogue scopes
 
-   - *F* = 0, indicating a full function description, including prologue
+  - *F* = 0, indicating a full function description, including prologue
 
-   - *Epilogue Count* = 0x04, indicating the 4 total epilogue scopes
+  - *Epilogue Count* = 0x04, indicating the 4 total epilogue scopes
 
-   - *Code Words* = 0x01, indicating one 32-bit word of unwind codes
+  - *Code Words* = 0x01, indicating one 32-bit word of unwind codes
 
 - Words 1-4, describing 4 epilogue scopes at 4 locations. Each scope has a common set of unwind codes, shared with the prologue, at offset 0x00, and is unconditional, specifying condition 0x0E (always).
 
 - Unwind codes, starting at Word 5: (shared between prologue/epilogue)
 
-   - Unwind code 0 = 0x06: sp += (6 << 2)
+  - Unwind code 0 = 0x06: sp += (6 << 2)
 
-   - Unwind code 1 = 0xDE: pop {r4-r10, lr}
+  - Unwind code 1 = 0xDE: pop {r4-r10, lr}
 
-   - Unwind code 2 = 0xFF: end
+  - Unwind code 2 = 0xFF: end
 
 ### Example 5: Function with Dynamic Stack and Inner Epilogue
 
@@ -594,43 +594,43 @@ Epilogue:
 
 - Word 0
 
-   - *Function Start RVA* = 0x00085A20 (= 0x00485A20-0x00400000)
+  - *Function Start RVA* = 0x00085A20 (= 0x00485A20-0x00400000)
 
 - Word 1
 
-   - *Flag* = 0, indicating .xdata record present (needed due to multiple epilogues)
+  - *Flag* = 0, indicating .xdata record present (needed due to multiple epilogues)
 
-   - *.xdata address* - 0x00400000
+  - *.xdata address* - 0x00400000
 
 .xdata (variable, 3 words):
 
 - Word 0
 
-   - *Function Length* = 0x0001A3 (= 0x000346/2)
+  - *Function Length* = 0x0001A3 (= 0x000346/2)
 
-   - *Vers* = 0, indicating the first version of xdata
+  - *Vers* = 0, indicating the first version of xdata
 
-   - *X* = 0, indicating no exception data
+  - *X* = 0, indicating no exception data
 
-   - *E* = 0, indicating a list of epilogue scopes
+  - *E* = 0, indicating a list of epilogue scopes
 
-   - *F* = 0, indicating a full function description, including prologue
+  - *F* = 0, indicating a full function description, including prologue
 
-   - *Epilogue Count* = 0x001, indicating the 1 total epilogue scope
+  - *Epilogue Count* = 0x001, indicating the 1 total epilogue scope
 
-   - *Code Words* = 0x01, indicating one 32-bit word of unwind codes
+  - *Code Words* = 0x01, indicating one 32-bit word of unwind codes
 
 - Word 1: Epilogue scope at offset 0xC6 (= 0x18C/2), starting unwind code index at 0x00, and with a condition of 0x0E (always)
 
 - Unwind codes, starting at Word 2: (shared between prologue/epilogue)
 
-   - Unwind code 0 = 0xC6: sp = r6
+  - Unwind code 0 = 0xC6: sp = r6
 
-   - Unwind code 1 = 0xDC: pop {r4-r8, lr}
+  - Unwind code 1 = 0xDC: pop {r4-r8, lr}
 
-   - Unwind code 2 = 0x04: sp += (4 << 2)
+  - Unwind code 2 = 0x04: sp += (4 << 2)
 
-   - Unwind code 3 = 0xFD: end, counts as 16-bit instruction for epilogue
+  - Unwind code 3 = 0xFD: end, counts as 16-bit instruction for epilogue
 
 ### Example 6: Function with Exception Handler
 
@@ -652,41 +652,41 @@ Epilogue:
 
 - Word 0
 
-   - *Function Start RVA* = 0x00088C24 (= 0x00488C24-0x00400000)
+  - *Function Start RVA* = 0x00088C24 (= 0x00488C24-0x00400000)
 
 - Word 1
 
-   - *Flag* = 0, indicating .xdata record present (needed due to multiple epilogues)
+  - *Flag* = 0, indicating .xdata record present (needed due to multiple epilogues)
 
-   - *.xdata address* - 0x00400000
+  - *.xdata address* - 0x00400000
 
 .xdata (variable, 5 words):
 
 - Word 0
 
-   - *Function Length* =0x000027 (= 0x00004E/2)
+  - *Function Length* =0x000027 (= 0x00004E/2)
 
-   - *Vers* = 0, indicating the first version of xdata
+  - *Vers* = 0, indicating the first version of xdata
 
-   - *X* = 1, indicating exception data present
+  - *X* = 1, indicating exception data present
 
-   - *E* = 1, indicating a single epilogue
+  - *E* = 1, indicating a single epilogue
 
-   - *F* = 0, indicating a full function description, including prologue
+  - *F* = 0, indicating a full function description, including prologue
 
-   - *Epilogue Count* = 0x00, indicating epilogue unwind codes start at offset 0x00
+  - *Epilogue Count* = 0x00, indicating epilogue unwind codes start at offset 0x00
 
-   - *Code Words* = 0x02, indicating two 32-bit words of unwind codes
+  - *Code Words* = 0x02, indicating two 32-bit words of unwind codes
 
 - Unwind codes, starting at Word 1:
 
-   - Unwind code 0 = 0xC7: sp = r7
+  - Unwind code 0 = 0xC7: sp = r7
 
-   - Unwind code 1 = 0x05: sp += (5 << 2)
+  - Unwind code 1 = 0x05: sp += (5 << 2)
 
-   - Unwind code 2 = 0xED/0x90: pop {r4, r7, lr}
+  - Unwind code 2 = 0xED/0x90: pop {r4, r7, lr}
 
-   - Unwind code 4 = 0xFF: end
+  - Unwind code 4 = 0xFF: end
 
 - Word 3 specifies an exception handler  = 0x0019A7ED (= 0x0059A7ED - 0x00400000)
 
@@ -711,25 +711,25 @@ Function:
 
 - Word 0
 
-   - *Function Start RVA* = 0x00088C72 (= 0x00488C72-0x00400000)
+  - *Function Start RVA* = 0x00088C72 (= 0x00488C72-0x00400000)
 
 - Word 1
 
-   - *Flag* = 1, indicating canonical prologue and epilogue formats
+  - *Flag* = 1, indicating canonical prologue and epilogue formats
 
-   - *Function Length* = 0x0B (= 0x16/2)
+  - *Function Length* = 0x0B (= 0x16/2)
 
-   - *Ret* = 0, indicating a pop {pc} return
+  - *Ret* = 0, indicating a pop {pc} return
 
-   - *H* = 0, indicating the parameters were not homed
+  - *H* = 0, indicating the parameters were not homed
 
-   - *R*=0 and *Reg* = 7, indicating no registers were saved/restored
+  - *R*=0 and *Reg* = 7, indicating no registers were saved/restored
 
-   - *L* = 1, indicating LR was saved/restored
+  - *L* = 1, indicating LR was saved/restored
 
-   - *C* = 0, indicating no frame chaining
+  - *C* = 0, indicating no frame chaining
 
-   - *Stack Adjust* = 1, indicating a 1 × 4 byte stack adjustment
+  - *Stack Adjust* = 1, indicating a 1 × 4 byte stack adjustment
 
 ## See also
 
