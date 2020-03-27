@@ -48,7 +48,7 @@ class runtime_exception : public std::exception;
 
 **Namespace:** Concurrency
 
-## <a name="ctor"></a>  runtime_exception Constructor
+## <a name="ctor"></a> runtime_exception Constructor
 
 Initializes a new instance of the class.
 
@@ -105,9 +105,9 @@ HRESULT get_error_code() const throw();
 
 The HRESULT of error that caused the exception.
 
-## <a name="operator_eq"></a>  operator=
+## <a name="operator_eq"></a> operator=
 
-  Copies the contents of the specified `runtime_exception` object into this one.
+Copies the contents of the specified `runtime_exception` object into this one.
 
 ### Syntax
 

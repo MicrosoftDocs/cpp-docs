@@ -10,7 +10,7 @@ ms.assetid: 64e32082-d910-4a8a-a5bf-ebed9145359d
 This class provides a default implementation of the `IObjectSafety` interface to allow a client to retrieve and set an object's safety levels.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ Note that using the [IMPLEMENTED_CATEGORY](category-macros.md#implemented_catego
 
 **Header:** atlctl.h
 
-##  <a name="getinterfacesafetyoptions"></a>  IObjectSafetyImpl::GetInterfaceSafetyOptions
+## <a name="getinterfacesafetyoptions"></a> IObjectSafetyImpl::GetInterfaceSafetyOptions
 
 Retrieves the safety options supported by the object, as well as the safety options currently set for the object.
 
@@ -80,11 +80,11 @@ HRESULT GetInterfaceSafetyOptions(
 The implementation returns the appropriate values for any interface supported by the object's implementation of `IUnknown::QueryInterface`.
 
 > [!IMPORTANT]
->  Any object that supports `IObjectSafety` is responsible for its own security, and that of any object it delegates. The programmer must take into account issues arising from running code in the user's context, cross-site scripting and perform suitable zone checking.
+> Any object that supports `IObjectSafety` is responsible for its own security, and that of any object it delegates. The programmer must take into account issues arising from running code in the user's context, cross-site scripting and perform suitable zone checking.
 
 See [IObjectSafety::GetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768223\(v=vs.85\)) in the Windows SDK.
 
-##  <a name="m_dwcurrentsafety"></a>  IObjectSafetyImpl::m_dwCurrentSafety
+## <a name="m_dwcurrentsafety"></a> IObjectSafetyImpl::m_dwCurrentSafety
 
 Stores the object's current safety level.
 
@@ -92,7 +92,7 @@ Stores the object's current safety level.
 DWORD m_dwCurrentSafety;
 ```
 
-##  <a name="setinterfacesafetyoptions"></a>  IObjectSafetyImpl::SetInterfaceSafetyOptions
+## <a name="setinterfacesafetyoptions"></a> IObjectSafetyImpl::SetInterfaceSafetyOptions
 
 Makes the object safe for initialization or scripting by setting the [m_dwCurrentSafety](#m_dwcurrentsafety) member to the appropriate value.
 
@@ -108,7 +108,7 @@ HRESULT SetInterfaceSafetyOptions(
 The implementation returns E_NOINTERFACE for any interface not supported by the object's implementation of `IUnknown::QueryInterface`.
 
 > [!IMPORTANT]
->  Any object that supports `IObjectSafety` is responsible for its own security, and that of any object it delegates. The programmer must take into account issues arising from running code in the user's context, cross-site scripting and perform suitable zone checking.
+> Any object that supports `IObjectSafety` is responsible for its own security, and that of any object it delegates. The programmer must take into account issues arising from running code in the user's context, cross-site scripting and perform suitable zone checking.
 
 See [IObjectSafety::SetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225\(v=vs.85\)) in the Windows SDK.
 

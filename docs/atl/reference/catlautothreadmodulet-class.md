@@ -10,7 +10,7 @@ ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
 This class provides methods for implementing a thread-pooled, apartment-model COM server.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -45,7 +45,7 @@ Specifies the time-out interval, in milliseconds. The default is INFINITE, which
 The class [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) derives from `CAtlAutoThreadModuleT` in order to implement a thread-pooled, apartment-model COM server. It replaces the obsolete class [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).
 
 > [!NOTE]
->  This class should not be used in a DLL, as the default *dwWait* value of INFINITE will cause a deadlock when the DLL is unloaded.
+> This class should not be used in a DLL, as the default *dwWait* value of INFINITE will cause a deadlock when the DLL is unloaded.
 
 ## Inheritance Hierarchy
 
@@ -57,7 +57,7 @@ The class [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.
 
 **Header:** atlbase.h
 
-##  <a name="getdefaultthreads"></a>  CAtlAutoThreadModuleT::GetDefaultThreads
+## <a name="getdefaultthreads"></a> CAtlAutoThreadModuleT::GetDefaultThreads
 
 This static function dynamically calculates and returns the maximum number of threads for the EXE module, based on the number of processors.
 

@@ -70,7 +70,7 @@ Use this macro to determine whether the Common Controls library the function spe
 
 afxcomctl32.h, afxcomctl32.inl
 
-## <a name="afx_comctl32_if_exists2"></a>  AFX_COMCTL32_IF_EXISTS2
+## <a name="afx_comctl32_if_exists2"></a> AFX_COMCTL32_IF_EXISTS2
 
 Determines whether the Common Controls library implements the specified API (this is the Unicode version of [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)).
 
@@ -93,7 +93,7 @@ Use this macro to determine whether the Common Controls library the function spe
 
 afxcomctl32.h, afxcomctl32.inl
 
-##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
+## <a name="declare_dynamic"></a> DECLARE_DYNAMIC
 
 Adds the ability to access run-time information about an object's class when deriving a class from `CObject`.
 
@@ -124,7 +124,7 @@ See the example for [IMPLEMENT_DYNAMIC](#implement_dynamic).
 
 **Header:** afx.h
 
-##  <a name="declare_dyncreate"></a>  DECLARE_DYNCREATE
+## <a name="declare_dyncreate"></a> DECLARE_DYNCREATE
 
 Enables objects of `CObject`-derived classes to be created dynamically at run time.
 
@@ -148,7 +148,7 @@ If DECLARE_DYNCREATE is included in the class declaration, then IMPLEMENT_DYNCRE
 For more information on the DECLARE_DYNCREATE macro, see [CObject Class Topics](../../mfc/using-cobject.md).
 
 > [!NOTE]
->  The DECLARE_DYNCREATE macro includes all the functionality of DECLARE_DYNAMIC.
+> The DECLARE_DYNCREATE macro includes all the functionality of DECLARE_DYNAMIC.
 
 ### Example
 
@@ -206,7 +206,7 @@ For more information on property pages, see the article [ActiveX Controls: Prope
 
 **Header:** afxctl.h
 
-##  <a name="declare_serial"></a>  DECLARE_SERIAL
+## <a name="declare_serial"></a> DECLARE_SERIAL
 
 Generates the C++ header code necessary for a `CObject`-derived class that can be serialized.
 
@@ -243,7 +243,7 @@ For more information on the DECLARE_SERIAL macro, see [CObject Class Topics](../
 
 **Header:** afx.h
 
-##  <a name="implement_dynamic"></a>  IMPLEMENT_DYNAMIC
+## <a name="implement_dynamic"></a> IMPLEMENT_DYNAMIC
 
 Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.
 
@@ -275,7 +275,7 @@ For more information, see [CObject Class Topics](../../mfc/using-cobject.md).
 
 **Header:** afx.h
 
-##  <a name="implement_dyncreate"></a>  IMPLEMENT_DYNCREATE
+## <a name="implement_dyncreate"></a> IMPLEMENT_DYNCREATE
 
 Enables objects of `CObject`-derived classes to be created dynamically at run time when used with the DECLARE_DYNCREATE macro.
 
@@ -311,7 +311,7 @@ Note that this macro definition will invoke the default constructor for your cla
 
 **Header:** afx.h
 
-## <a name="implement_olecreate_flags"></a>  IMPLEMENT_OLECREATE_FLAGS
+## <a name="implement_olecreate_flags"></a> IMPLEMENT_OLECREATE_FLAGS
 
 Either this macro or [IMPLEMENT_OLECREATE](#implement_olecreate) must appear in the implementation file for any class that uses DECLARE_OLECREATE.
 
@@ -345,7 +345,7 @@ Components of the class's CLSID.
 ### Remarks
 
 > [!NOTE]
->  If you use IMPLEMENT_OLECREATE_FLAGS, you can specify which threading model your object supports by using the *nFlags* parameter. If you want to support only the single-treading model, use IMPLEMENT_OLECREATE.
+> If you use IMPLEMENT_OLECREATE_FLAGS, you can specify which threading model your object supports by using the *nFlags* parameter. If you want to support only the single-treading model, use IMPLEMENT_OLECREATE.
 
 The external name is the identifier exposed to other applications. Client applications use the external name to request an object of this class from an automation server.
 
@@ -383,13 +383,13 @@ In addition to IMPLEMENT_OLECTLTYPE, you must add the DECLARE_OLECTLTYPE macro t
 The `GetUserTypeNameID` member function returns the resource string that identifies your control class. `GetMiscStatus` returns the OLEMISC bits for your control. This enumeration specifies a collection of settings describing miscellaneous characteristics of your control. For a full description of the OLEMISC settings, see [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc) in the Windows SDK.
 
 > [!NOTE]
->  The default settings used by the ActiveX ControlWizard are: OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST, OLEMISC_INSIDEOUT, OLEMISC_CANTLINKINSIDE, and OLEMISC_RECOMPOSEONRESIZE.
+> The default settings used by the ActiveX ControlWizard are: OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST, OLEMISC_INSIDEOUT, OLEMISC_CANTLINKINSIDE, and OLEMISC_RECOMPOSEONRESIZE.
 
 ### Requirements
 
 **Header:** afxctl.h
 
-##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL
+## <a name="implement_serial"></a> IMPLEMENT_SERIAL
 
 Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.
 
@@ -426,7 +426,7 @@ For more information, see the [CObject Class Topics](../../mfc/using-cobject.md)
 
 **Header:** afx.h
 
-##  <a name="runtime_class"></a>  RUNTIME_CLASS
+## <a name="runtime_class"></a> RUNTIME_CLASS
 
 Gets the run-time class structure from the name of a C++ class.
 
@@ -453,7 +453,7 @@ For more information, see [CObject Class Topics](../../mfc/using-cobject.md).
 
 **Header:** afx.h
 
-##  <a name="declare_olecreate"></a>  DECLARE_OLECREATE
+## <a name="declare_olecreate"></a> DECLARE_OLECREATE
 
 Enables objects of `CCmdTarget`-derived classes to be created through OLE automation.
 
@@ -478,7 +478,7 @@ If DECLARE_OLECREATE is included in the class declaration, then IMPLEMENT_OLECRE
 
 **Header**: afxdisp.h
 
-##  <a name="implement_olecreate"></a>  IMPLEMENT_OLECREATE
+## <a name="implement_olecreate"></a> IMPLEMENT_OLECREATE
 
 Either this macro or [IMPLEMENT_OLECREATE_FLAGS](#implement_olecreate_flags) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.
 
@@ -500,7 +500,7 @@ Components of the class's CLSID.
 ### Remarks
 
 > [!NOTE]
->  If you use IMPLEMENT_OLECREATE, by default, you support only the single threading model. If you use IMPLEMENT_OLECREATE_FLAGS, you can specify which threading model your object supports by using the *nFlags* parameter.
+> If you use IMPLEMENT_OLECREATE, by default, you support only the single threading model. If you use IMPLEMENT_OLECREATE_FLAGS, you can specify which threading model your object supports by using the *nFlags* parameter.
 
 The external name is the identifier exposed to other applications. Client applications use the external name to request an object of this class from an automation server.
 

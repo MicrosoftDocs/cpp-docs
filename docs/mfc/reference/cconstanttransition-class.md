@@ -51,7 +51,7 @@ During a constant transition, the value of an animation variable remains at the 
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="cconstanttransition"></a>  CConstantTransition::CConstantTransition
+## <a name="cconstanttransition"></a> CConstantTransition::CConstantTransition
 
 Constructs a transition object and initializes its duration.
 
@@ -64,7 +64,7 @@ CConstantTransition (UI_ANIMATION_SECONDS duration);
 *duration*<br/>
 The duration of the transition.
 
-##  <a name="create"></a>  CConstantTransition::Create
+## <a name="create"></a> CConstantTransition::Create
 
 Calls the transition library to create encapsulated transition COM object.
 
@@ -83,7 +83,7 @@ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/win32/api/uia
 
 TRUE if transition is created successfully; otherwise FALSE.
 
-##  <a name="m_duration"></a>  CConstantTransition::m_duration
+## <a name="m_duration"></a> CConstantTransition::m_duration
 
 The duration of the transition.
 

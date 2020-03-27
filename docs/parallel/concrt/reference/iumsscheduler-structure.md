@@ -43,7 +43,7 @@ The `IUMSScheduler` interface is one end of a two-way channel of communication b
 
 **Namespace:** concurrency
 
-## <a name="setcompletionlist"></a>  IUMSScheduler::SetCompletionList Method
+## <a name="setcompletionlist"></a> IUMSScheduler::SetCompletionList Method
 
 Assigns an `IUMSCompletionList` interface to a UMS thread scheduler.
 

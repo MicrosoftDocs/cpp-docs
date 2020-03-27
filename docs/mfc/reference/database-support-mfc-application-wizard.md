@@ -23,9 +23,9 @@ This page provides options that allow you to specify the level of database suppo
    > [!NOTE]
    > Under **Database Support**, if you select either **Database view without file support** or **Database view with file support**, the view class derivation differs, depending on your **Client type** selection, as follows:
 
-   - If you select **ODBC** under **Client type**, then the application's view class derives from [CRecordView](../../mfc/reference/crecordview-class.md). This class is associated with a [CRecordset](../../mfc/reference/crecordset-class.md)-derived class, which the MFC Application Wizard also creates for you. This option gives you a form-based application in which the record view is used to view and update records through its recordset.
+  - If you select **ODBC** under **Client type**, then the application's view class derives from [CRecordView](../../mfc/reference/crecordview-class.md). This class is associated with a [CRecordset](../../mfc/reference/crecordset-class.md)-derived class, which the MFC Application Wizard also creates for you. This option gives you a form-based application in which the record view is used to view and update records through its recordset.
 
-   - If you select **OLE DB** under **Client type**, then the view class derives from [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md), and it is associated with a [CTable](../../data/oledb/ctable-class.md) or [CCommand](../../data/oledb/ccommand-class.md)-derived class.
+  - If you select **OLE DB** under **Client type**, then the view class derives from [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md), and it is associated with a [CTable](../../data/oledb/ctable-class.md) or [CCommand](../../data/oledb/ccommand-class.md)-derived class.
 
 - **Client type**
 

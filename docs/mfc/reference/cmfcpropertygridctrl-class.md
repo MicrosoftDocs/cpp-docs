@@ -167,7 +167,7 @@ The following example demonstrates how to configure a property grid control obje
 
 **Header:** afxpropertygridctrl.h
 
-##  <a name="accselect"></a>  CMFCPropertyGridCtrl::accSelect
+## <a name="accselect"></a> CMFCPropertyGridCtrl::accSelect
 
 ```
 virtual HRESULT accSelect(
@@ -184,7 +184,7 @@ virtual HRESULT accSelect(
 
 ### Remarks
 
-##  <a name="addproperty"></a>  CMFCPropertyGridCtrl::AddProperty
+## <a name="addproperty"></a> CMFCPropertyGridCtrl::AddProperty
 
 Adds a new property to a property grid control.
 
@@ -214,7 +214,7 @@ If this method succeeds, the zero-based index of the position in the property gr
 
 This method adds a pointer to the specified property to the end of the list of properties in the property grid control. Do not destroy the properties or allow them to go out of scope before the grid control is destroyed. When you are done with the property grid control, call [CMFCPropertyGridCtrl::RemoveAll](#removeall) to delete all the added properties. The AddProperty method fails if the specified property has already been added to the list.
 
-##  <a name="adjustlayout"></a>  CMFCPropertyGridCtrl::AdjustLayout
+## <a name="adjustlayout"></a> CMFCPropertyGridCtrl::AdjustLayout
 
 Redraws the property grid control and its properties.
 
@@ -226,7 +226,7 @@ virtual void AdjustLayout();
 
 This method recalculates how to draw the entire property grid control and its properties, including images, fonts, and controls.
 
-##  <a name="alwaysshowusertooltip"></a>  CMFCPropertyGridCtrl::AlwaysShowUserToolTip
+## <a name="alwaysshowusertooltip"></a> CMFCPropertyGridCtrl::AlwaysShowUserToolTip
 
 ```
 void AlwaysShowUserToolTip(BOOL bShow = TRUE);
@@ -238,7 +238,7 @@ void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 
 ### Remarks
 
-##  <a name="closecolorpopup"></a>  CMFCPropertyGridCtrl::CloseColorPopup
+## <a name="closecolorpopup"></a> CMFCPropertyGridCtrl::CloseColorPopup
 
 Closes the color selection dialog box.
 
@@ -250,7 +250,7 @@ virtual void CloseColorPopup();
 
 For more information about the color selection dialog box, see [CMFCPropertyGridColorProperty Class](../../mfc/reference/cmfcpropertygridcolorproperty-class.md).
 
-##  <a name="cmfcpropertygridctrl"></a>  CMFCPropertyGridCtrl::CMFCPropertyGridCtrl
+## <a name="cmfcpropertygridctrl"></a> CMFCPropertyGridCtrl::CMFCPropertyGridCtrl
 
 Constructs a `CMFCPropertyGridCtrl` object.
 
@@ -262,7 +262,7 @@ CMFCPropertyGridCtrl();
 
 ### Remarks
 
-##  <a name="compareprops"></a>  CMFCPropertyGridCtrl::CompareProps
+## <a name="compareprops"></a> CMFCPropertyGridCtrl::CompareProps
 
 Called by the property grid control to sort properties.
 
@@ -292,7 +292,7 @@ A pointer to a property.
 
 By default, this method uses the [CString::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method to compare the `CMFCPropertyGridProperty::m_strName` members of the specified parameters.
 
-##  <a name="create"></a>  CMFCPropertyGridCtrl::Create
+## <a name="create"></a> CMFCPropertyGridCtrl::Create
 
 Creates a property grid control and attaches it to the property grid control object.
 
@@ -332,7 +332,7 @@ The following example demonstrates how to use the `Create` method in `CMFCProper
 
 [!code-cpp[NVC_MFC_NewControls#15](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_6.cpp)]
 
-##  <a name="deleteproperty"></a>  CMFCPropertyGridCtrl::DeleteProperty
+## <a name="deleteproperty"></a> CMFCPropertyGridCtrl::DeleteProperty
 
 Deletes the specified property from the property grid control.
 
@@ -362,7 +362,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 Use this method to delete a property, and any sub-items, from the property grid control.
 
-##  <a name="drawcontrolbarcolors"></a>  CMFCPropertyGridCtrl::DrawControlBarColors
+## <a name="drawcontrolbarcolors"></a> CMFCPropertyGridCtrl::DrawControlBarColors
 
 ```
 BOOL DrawControlBarColors() const;
@@ -372,7 +372,7 @@ BOOL DrawControlBarColors() const;
 
 ### Remarks
 
-##  <a name="edititem"></a>  CMFCPropertyGridCtrl::EditItem
+## <a name="edititem"></a> CMFCPropertyGridCtrl::EditItem
 
 Called by the framework when the user starts to modify a property.
 
@@ -396,7 +396,7 @@ TRUE if method is successful; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="enabledescriptionarea"></a>  CMFCPropertyGridCtrl::EnableDescriptionArea
+## <a name="enabledescriptionarea"></a> CMFCPropertyGridCtrl::EnableDescriptionArea
 
 Enables or disables the description area that is displayed underneath the list of properties in the property grid control.
 
@@ -413,7 +413,7 @@ void EnableDescriptionArea(BOOL bEnable=TRUE);
 
 The description area is displayed at the bottom of the property grid control. By default, the description area is disabled and not visible.
 
-##  <a name="enableheaderctrl"></a>  CMFCPropertyGridCtrl::EnableHeaderCtrl
+## <a name="enableheaderctrl"></a> CMFCPropertyGridCtrl::EnableHeaderCtrl
 
 Enables or disables the header control at the top of the property grid control.
 
@@ -435,7 +435,7 @@ void EnableHeaderCtrl(
 *lpszRightColumn*<br/>
 [in] The title of the right column of the header control. The default value is **Value**.
 
-##  <a name="endedititem"></a>  CMFCPropertyGridCtrl::EndEditItem
+## <a name="endedititem"></a> CMFCPropertyGridCtrl::EndEditItem
 
 Called by the framework when the user finishes modifying a property.
 
@@ -454,7 +454,7 @@ TRUE if the edit operation ends successfully; FALSE if the modified property dat
 
 ### Remarks
 
-##  <a name="ensurevisible"></a>  CMFCPropertyGridCtrl::EnsureVisible
+## <a name="ensurevisible"></a> CMFCPropertyGridCtrl::EnsureVisible
 
 Scrolls a property grid control and expands property items until the specified property is visible.
 
@@ -474,7 +474,7 @@ void EnsureVisible(
 
 ### Remarks
 
-##  <a name="expandall"></a>  CMFCPropertyGridCtrl::ExpandAll
+## <a name="expandall"></a> CMFCPropertyGridCtrl::ExpandAll
 
 Expands or collapses all property grid control nodes.
 
@@ -489,7 +489,7 @@ void ExpandAll(BOOL bExpand=TRUE);
 
 ### Remarks
 
-##  <a name="finditembydata"></a>  CMFCPropertyGridCtrl::FindItemByData
+## <a name="finditembydata"></a> CMFCPropertyGridCtrl::FindItemByData
 
 Retrieves the property that is associated with a user-defined DWORD value.
 
@@ -515,7 +515,7 @@ A pointer to the associated property object if this method succeeds; otherwise, 
 
 Use the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) constructor or [CMFCPropertyGridProperty::SetData](../../mfc/reference/cmfcpropertygridproperty-class.md#setdata) method to associate a DWORD with a property.
 
-##  <a name="get_accchildcount"></a>  CMFCPropertyGridCtrl::get_accChildCount
+## <a name="get_accchildcount"></a> CMFCPropertyGridCtrl::get_accChildCount
 
 ```
 virtual HRESULT get_accChildCount(long* pcountChildren);
@@ -529,7 +529,7 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 
 ### Remarks
 
-##  <a name="get_accfocus"></a>  CMFCPropertyGridCtrl::get_accFocus
+## <a name="get_accfocus"></a> CMFCPropertyGridCtrl::get_accFocus
 
 ```
 virtual HRESULT get_accFocus(VARIANT* pvarChild);
@@ -543,7 +543,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 
 ### Remarks
 
-##  <a name="get_acchelp"></a>  CMFCPropertyGridCtrl::get_accHelp
+## <a name="get_acchelp"></a> CMFCPropertyGridCtrl::get_accHelp
 
 ```
 virtual HRESULT get_accHelp(
@@ -560,7 +560,7 @@ virtual HRESULT get_accHelp(
 
 ### Remarks
 
-##  <a name="get_acchelptopic"></a>  CMFCPropertyGridCtrl::get_accHelpTopic
+## <a name="get_acchelptopic"></a> CMFCPropertyGridCtrl::get_accHelpTopic
 
 ```
 virtual HRESULT get_accHelpTopic(
@@ -579,7 +579,7 @@ virtual HRESULT get_accHelpTopic(
 
 ### Remarks
 
-##  <a name="get_acckeyboardshortcut"></a>  CMFCPropertyGridCtrl::get_accKeyboardShortcut
+## <a name="get_acckeyboardshortcut"></a> CMFCPropertyGridCtrl::get_accKeyboardShortcut
 
 ```
 virtual HRESULT get_accKeyboardShortcut(
@@ -596,7 +596,7 @@ virtual HRESULT get_accKeyboardShortcut(
 
 ### Remarks
 
-##  <a name="get_accselection"></a>  CMFCPropertyGridCtrl::get_accSelection
+## <a name="get_accselection"></a> CMFCPropertyGridCtrl::get_accSelection
 
 ```
 virtual HRESULT get_accSelection(VARIANT* pvarChildren);
@@ -610,7 +610,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 
 ### Remarks
 
-##  <a name="getbkcolor"></a>  CMFCPropertyGridCtrl::GetBkColor
+## <a name="getbkcolor"></a> CMFCPropertyGridCtrl::GetBkColor
 
 Retrieves the background color of the current property grid control.
 
@@ -626,7 +626,7 @@ An RGB color value.
 
 This method retrieves the color that the framework uses to draw the background of the current property grid control. The [CMFCPropertyGridCtrl::GetTextColor](#gettextcolor) method retrieves the foreground color.
 
-##  <a name="getboldfont"></a>  CMFCPropertyGridCtrl::GetBoldFont
+## <a name="getboldfont"></a> CMFCPropertyGridCtrl::GetBoldFont
 
 Retrieves the Windows font that is used to draw text in the current property grid control in bold style.
 
@@ -638,7 +638,7 @@ CFont& GetBoldFont();
 
 A reference to a [CFont](../../mfc/reference/cfont-class.md) object that describes the characteristics of a bold font.
 
-##  <a name="getcursel"></a>  CMFCPropertyGridCtrl::GetCurSel
+## <a name="getcursel"></a> CMFCPropertyGridCtrl::GetCurSel
 
 Retrieves the currently selected property.
 
@@ -652,7 +652,7 @@ A pointer to the property object that corresponds to the selected item in the pr
 
 ### Remarks
 
-##  <a name="getcustomcolors"></a>  CMFCPropertyGridCtrl::GetCustomColors
+## <a name="getcustomcolors"></a> CMFCPropertyGridCtrl::GetCustomColors
 
 Retrieves the custom colors that are currently defined for property grid control elements.
 
@@ -694,7 +694,7 @@ void GetCustomColors(
 
 Use the [CMFCPropertyGridCtrl::SetCustomColors](#setcustomcolors) method to set custom colors.
 
-##  <a name="getdescriptionheight"></a>  CMFCPropertyGridCtrl::GetDescriptionHeight
+## <a name="getdescriptionheight"></a> CMFCPropertyGridCtrl::GetDescriptionHeight
 
 Retrieves the height of the description area, which is located at the bottom of the property grid control.
 
@@ -712,7 +712,7 @@ The height of the description area is calculated automatically and is set to 1/4
 
 Use the [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) method to display or hide the description area. Use the [CMFCPropertyGridCtrl::IsDescriptionArea](#isdescriptionarea) method to determine whether the description area is displayed or hidden.
 
-##  <a name="getdescriptionrows"></a>  CMFCPropertyGridCtrl::GetDescriptionRows
+## <a name="getdescriptionrows"></a> CMFCPropertyGridCtrl::GetDescriptionRows
 
 Retrieves the number of rows in the description area of the current property grid control.
 
@@ -728,7 +728,7 @@ The number of rows in the description area of the current property grid control.
 
 The [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) constructor initializes the description area to 3 rows.
 
-##  <a name="getheaderctrl"></a>  CMFCPropertyGridCtrl::GetHeaderCtrl
+## <a name="getheaderctrl"></a> CMFCPropertyGridCtrl::GetHeaderCtrl
 
 Retrieves the internal [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) object that the framework uses to display the current property grid control.
 
@@ -740,7 +740,7 @@ virtual CMFCHeaderCtrl& GetHeaderCtrl();
 
 A reference to a `CMFCHeaderCtrl` object.
 
-##  <a name="getheaderheight"></a>  CMFCPropertyGridCtrl::GetHeaderHeight
+## <a name="getheaderheight"></a> CMFCPropertyGridCtrl::GetHeaderHeight
 
 Retrieves the height of the header of a property grid control.
 
@@ -754,7 +754,7 @@ The height of the header, in pixels.
 
 ### Remarks
 
-##  <a name="getleftcolumnwidth"></a>  CMFCPropertyGridCtrl::GetLeftColumnWidth
+## <a name="getleftcolumnwidth"></a> CMFCPropertyGridCtrl::GetLeftColumnWidth
 
 Retrieves of the width of the left column of the current property grid control, which contains the name of each property.
 
@@ -770,7 +770,7 @@ The width of the name column.
 
 The right column of a property grid control contains the value of each property.
 
-##  <a name="getlistrect"></a>  CMFCPropertyGridCtrl::GetListRect
+## <a name="getlistrect"></a> CMFCPropertyGridCtrl::GetListRect
 
 Retrieves the bounding rectangle of the property grid control.
 
@@ -784,7 +784,7 @@ The bounding rectangle of the property grid control. This rectange does not incl
 
 ### Remarks
 
-##  <a name="getproperty"></a>  CMFCPropertyGridCtrl::GetProperty
+## <a name="getproperty"></a> CMFCPropertyGridCtrl::GetProperty
 
 Retrieves a pointer to the property object that corresponds to the specified index of an item in a property grid control.
 
@@ -805,7 +805,7 @@ A pointer to the property object that corresponds to the specified index if this
 
 ### Remarks
 
-##  <a name="getpropertycolumnwidth"></a>  CMFCPropertyGridCtrl::GetPropertyColumnWidth
+## <a name="getpropertycolumnwidth"></a> CMFCPropertyGridCtrl::GetPropertyColumnWidth
 
 Retrieves the current width of the column that contains property values.
 
@@ -821,7 +821,7 @@ The current width of the column that contains property values.
 
 The column on the right in the property grid control contains the property values. A customer can use the split box of the property grid control to change the width of the values column.
 
-##  <a name="getpropertycount"></a>  CMFCPropertyGridCtrl::GetPropertyCount
+## <a name="getpropertycount"></a> CMFCPropertyGridCtrl::GetPropertyCount
 
 Retrieves the number of properties in a property grid control.
 
@@ -835,7 +835,7 @@ The number of properties.
 
 ### Remarks
 
-##  <a name="getrowheight"></a>  CMFCPropertyGridCtrl::GetRowHeight
+## <a name="getrowheight"></a> CMFCPropertyGridCtrl::GetRowHeight
 
 Retrieves the height of a row in the property grid control.
 
@@ -851,7 +851,7 @@ The height of a row.
 
 The height of a row is equal to the current font height plus 4 pixels.
 
-##  <a name="getscrollbarctrl"></a>  CMFCPropertyGridCtrl::GetScrollBarCtrl
+## <a name="getscrollbarctrl"></a> CMFCPropertyGridCtrl::GetScrollBarCtrl
 
 Retrieves a pointer to the scroll bar control in the property grid control.
 
@@ -872,7 +872,7 @@ A pointer to a scroll bar object, or NULL if there is no scroll bar or the scrol
 
 Use this method to gain direct access to the vertical scroll bar control.
 
-##  <a name="gettextcolor"></a>  CMFCPropertyGridCtrl::GetTextColor
+## <a name="gettextcolor"></a> CMFCPropertyGridCtrl::GetTextColor
 
 Retrieves the color that is used to draw the text of property items in the current property grid control.
 
@@ -888,7 +888,7 @@ An RGB color value.
 
 This method retrieves the color that the framework uses to draw the foreground of the current property grid control. The [CMFCPropertyGridCtrl::GetBkColor](#getbkcolor) method retrieves the background color.
 
-##  <a name="hittest"></a>  CMFCPropertyGridCtrl::HitTest
+## <a name="hittest"></a> CMFCPropertyGridCtrl::HitTest
 
 Retrieves a pointer to the property object that corresponds to a property grid control item if a specified point is in the item. This method also indicates the area in the property grid control that contains the point.
 
@@ -929,7 +929,7 @@ This method sets the value of the variable that the *pnArea* parameter points to
 |`ClickArea::ClickValue`|Property value.|
 |`CMFCPropertyGridProperty::ClickDescription`|Property grid control description area.|
 
-##  <a name="init"></a>  CMFCPropertyGridCtrl::Init
+## <a name="init"></a> CMFCPropertyGridCtrl::Init
 
 Called by the framework to initialize a property grid control.
 
@@ -939,7 +939,7 @@ virtual void Init();
 
 ### Remarks
 
-##  <a name="initheader"></a>  CMFCPropertyGridCtrl::InitHeader
+## <a name="initheader"></a> CMFCPropertyGridCtrl::InitHeader
 
 Initializes the internal [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) object that the framework uses to display the current property grid control.
 
@@ -947,7 +947,7 @@ Initializes the internal [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-cla
 virtual void InitHeader();
 ```
 
-##  <a name="isalphabeticmode"></a>  CMFCPropertyGridCtrl::IsAlphabeticMode
+## <a name="isalphabeticmode"></a> CMFCPropertyGridCtrl::IsAlphabeticMode
 
 Indicates whether a property grid control is in alphabetic mode.
 
@@ -965,7 +965,7 @@ When the property grid control is in alphabetic mode, all properties are sorted 
 
 Use the [CMFCPropertyGridCtrl::SetAlphabeticMode](#setalphabeticmode) method to enable or disable alphabetic mode.
 
-##  <a name="isalwaysshowusertooltip"></a>  CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip
+## <a name="isalwaysshowusertooltip"></a> CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip
 
 ```
 BOOL IsAlwaysShowUserToolTip() const;
@@ -975,7 +975,7 @@ BOOL IsAlwaysShowUserToolTip() const;
 
 ### Remarks
 
-##  <a name="isdescriptionarea"></a>  CMFCPropertyGridCtrl::IsDescriptionArea
+## <a name="isdescriptionarea"></a> CMFCPropertyGridCtrl::IsDescriptionArea
 
 Indicates whether the description area of the property grid control is displayed.
 
@@ -991,7 +991,7 @@ TRUE if the description area is displayed; otherwise, FALSE.
 
 Use the [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) method to hide or display the description area.
 
-##  <a name="isgroupnamefullwidth"></a>  CMFCPropertyGridCtrl::IsGroupNameFullWidth
+## <a name="isgroupnamefullwidth"></a> CMFCPropertyGridCtrl::IsGroupNameFullWidth
 
 Indicates whether each property group name is displayed across the width of the current property grid control.
 
@@ -1007,7 +1007,7 @@ TRUE if group names are displayed across the width of the property grid control;
 
 A *group* is a collection of related properties in a property grid control. If the control is displayed hierarchically, the *group name* is displayed as a category title in the row above the group.
 
-##  <a name="isheaderctrl"></a>  CMFCPropertyGridCtrl::IsHeaderCtrl
+## <a name="isheaderctrl"></a> CMFCPropertyGridCtrl::IsHeaderCtrl
 
 Indicates whether the header control is displayed.
 
@@ -1023,7 +1023,7 @@ TRUE if the header control is displayed; otherwise FALSE.
 
 Use the [CMFCPropertyGridCtrl::EnableHeaderCtrl](#enableheaderctrl) method to hide or display the header control.
 
-##  <a name="ismarkmodifiedproperties"></a>  CMFCPropertyGridCtrl::IsMarkModifiedProperties
+## <a name="ismarkmodifiedproperties"></a> CMFCPropertyGridCtrl::IsMarkModifiedProperties
 
 Indicates how the property grid control displays modified properties.
 
@@ -1037,7 +1037,7 @@ TRUE if bold style is used to display modified properties; FALSE if regular styl
 
 ### Remarks
 
-##  <a name="isshowdragcontext"></a>  CMFCPropertyGridCtrl::IsShowDragContext
+## <a name="isshowdragcontext"></a> CMFCPropertyGridCtrl::IsShowDragContext
 
 Indicates whether the framework redraws the name and value columns of the current property grid control when a user resizes the columns.
 
@@ -1053,7 +1053,7 @@ TRUE if the framework redraws the name and value columns during a resize operati
 
 The user can resize the name and value columns of a property grid control by dragging the split bar that is between the columns. If the drag context is displayed, the name and value columns are resized as long as the user drags the split bar. Otherwise, the split bar moves but the columns are not redrawn until the drag operation is completed.
 
-##  <a name="isvsdotnetlook"></a>  CMFCPropertyGridCtrl::IsVSDotNetLook
+## <a name="isvsdotnetlook"></a> CMFCPropertyGridCtrl::IsVSDotNetLook
 
 Indicates whether the appearance of the property grid control is in the style of Visual Studio .NET.
 
@@ -1069,7 +1069,7 @@ TRUE if the property grid control is in the style of Visual Studio .NET; otherwi
 
 Use the [CMFCPropertyGridCtrl::SetVSDotNetLook](#setvsdotnetlook) method to set the property grid control to the style of Visual Studio .NET.
 
-##  <a name="markmodifiedproperties"></a>  CMFCPropertyGridCtrl::MarkModifiedProperties
+## <a name="markmodifiedproperties"></a> CMFCPropertyGridCtrl::MarkModifiedProperties
 
 Specifies how to display modified properties.
 
@@ -1089,7 +1089,7 @@ void MarkModifiedProperties(
 
 ### Remarks
 
-##  <a name="onchangeselection"></a>  CMFCPropertyGridCtrl::OnChangeSelection
+## <a name="onchangeselection"></a> CMFCPropertyGridCtrl::OnChangeSelection
 
 Called by the framework when the current selection is changed.
 
@@ -1110,7 +1110,7 @@ virtual void OnChangeSelection(
 
 The default implementation of this method does nothing.
 
-##  <a name="onclickbutton"></a>  CMFCPropertyGridCtrl::OnClickButton
+## <a name="onclickbutton"></a> CMFCPropertyGridCtrl::OnClickButton
 
 Called by the framework when a property button is clicked.
 
@@ -1127,7 +1127,7 @@ virtual void OnClickButton(CPoint point);
 
 By default, this method updates the current property value.
 
-##  <a name="ondrawborder"></a>  CMFCPropertyGridCtrl::OnDrawBorder
+## <a name="ondrawborder"></a> CMFCPropertyGridCtrl::OnDrawBorder
 
 Called by the framework to draw a border around a property grid control.
 
@@ -1142,7 +1142,7 @@ virtual void OnDrawBorder(CDC* pDC);
 
 ### Remarks
 
-##  <a name="ondrawdescription"></a>  CMFCPropertyGridCtrl::OnDrawDescription
+## <a name="ondrawdescription"></a> CMFCPropertyGridCtrl::OnDrawDescription
 
 Called by the framework to draw the description area and display the description text.
 
@@ -1164,7 +1164,7 @@ virtual void OnDrawDescription(
 
 Use the [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) method to display the description area.
 
-##  <a name="ondrawlist"></a>  CMFCPropertyGridCtrl::OnDrawList
+## <a name="ondrawlist"></a> CMFCPropertyGridCtrl::OnDrawList
 
 Called by the framework to display the list of properties in the property grid control.
 
@@ -1179,7 +1179,7 @@ virtual void OnDrawList(CDC* pDC);
 
 ### Remarks
 
-##  <a name="ondrawproperty"></a>  CMFCPropertyGridCtrl::OnDrawProperty
+## <a name="ondrawproperty"></a> CMFCPropertyGridCtrl::OnDrawProperty
 
 Called by the framework to display a property.
 
@@ -1203,7 +1203,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="onpropertychanged"></a>  CMFCPropertyGridCtrl::OnPropertyChanged
+## <a name="onpropertychanged"></a> CMFCPropertyGridCtrl::OnPropertyChanged
 
 Called by the framework when the value of a property is changed.
 
@@ -1220,7 +1220,7 @@ virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;
 
 By default, this method sends the [AFX_WM_PROPERTY_CHANGED](../../mfc/reference/afx-messages.md) message to the owner of the property grid control.
 
-##  <a name="onselectcombo"></a>  CMFCPropertyGridCtrl::OnSelectCombo
+## <a name="onselectcombo"></a> CMFCPropertyGridCtrl::OnSelectCombo
 
 Called by the framework when a property that contains a combo box control is selected.
 
@@ -1230,7 +1230,7 @@ void OnSelectCombo();
 
 ### Remarks
 
-##  <a name="removeall"></a>  CMFCPropertyGridCtrl::RemoveAll
+## <a name="removeall"></a> CMFCPropertyGridCtrl::RemoveAll
 
 Removes all property objects from a property grid control.
 
@@ -1240,7 +1240,7 @@ void RemoveAll();
 
 ### Remarks
 
-##  <a name="resetoriginalvalues"></a>  CMFCPropertyGridCtrl::ResetOriginalValues
+## <a name="resetoriginalvalues"></a> CMFCPropertyGridCtrl::ResetOriginalValues
 
 Restores the original values of all properties.
 
@@ -1255,7 +1255,7 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
 
 ### Remarks
 
-##  <a name="setalphabeticmode"></a>  CMFCPropertyGridCtrl::SetAlphabeticMode
+## <a name="setalphabeticmode"></a> CMFCPropertyGridCtrl::SetAlphabeticMode
 
 Sets or resets alphabetic mode.
 
@@ -1272,7 +1272,7 @@ void SetAlphabeticMode(BOOL bSet=TRUE);
 
 When the property grid control is in alphabetic mode, the control sorts all the properties it contains by their property name.
 
-##  <a name="setboollabels"></a>  CMFCPropertyGridCtrl::SetBoolLabels
+## <a name="setboollabels"></a> CMFCPropertyGridCtrl::SetBoolLabels
 
 Specifies the text of Boolean labels.
 
@@ -1292,7 +1292,7 @@ void SetBoolLabels(
 
 ### Remarks
 
-##  <a name="setcursel"></a>  CMFCPropertyGridCtrl::SetCurSel
+## <a name="setcursel"></a> CMFCPropertyGridCtrl::SetCurSel
 
 Selects a property in a property grid control.
 
@@ -1314,7 +1314,7 @@ void SetCurSel(
 
 Use this method to cancel the selection of the current item in the property grid control and then select the item that corresponds to the specified property.
 
-##  <a name="setcustomcolors"></a>  CMFCPropertyGridCtrl::SetCustomColors
+## <a name="setcustomcolors"></a> CMFCPropertyGridCtrl::SetCustomColors
 
 Specifies custom colors for various elements of the property grid control.
 
@@ -1358,7 +1358,7 @@ For any parameter, specify the `((COLORREF)-1)` color value to use the default c
 
 To customize the appearance of a specific property, derive a class from the [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) class and then override the [CMFCPropertyGridProperty::OnDrawName](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawname), [CMFCPropertyGridProperty::OnDrawValue](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawvalue), [CMFCPropertyGridProperty::OnDrawExpandBox](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawexpandbox), and [CMFCPropertyGridProperty::OnDrawButton](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawbutton) methods.
 
-##  <a name="setdescriptionrows"></a>  CMFCPropertyGridCtrl::SetDescriptionRows
+## <a name="setdescriptionrows"></a> CMFCPropertyGridCtrl::SetDescriptionRows
 
 Specifies the number of rows to display in the description section of the current property grid control.
 
@@ -1371,7 +1371,7 @@ void SetDescriptionRows(int nDescRows);
 *nDescRows*<br/>
 [in] The number of rows to display in the property description.
 
-##  <a name="setgroupnamefullwidth"></a>  CMFCPropertyGridCtrl::SetGroupNameFullWidth
+## <a name="setgroupnamefullwidth"></a> CMFCPropertyGridCtrl::SetGroupNameFullWidth
 
 Specifies whether to display the full width of the category name for a group of properties in the current property grid control.
 
@@ -1395,7 +1395,7 @@ The property grid control consists of a resizable *property name* column and a *
 
 The terms *group name* and *category name* are used interchangeably in this method. The category name is displayed on a row that heads a set of related properties and values. This method specifies whether the width of the property name column also specifies the width of the displayed category name.
 
-##  <a name="setlistdelimiter"></a>  CMFCPropertyGridCtrl::SetListDelimiter
+## <a name="setlistdelimiter"></a> CMFCPropertyGridCtrl::SetListDelimiter
 
 Defines a character that is used as a delimiter in a list of property values.
 
@@ -1414,7 +1414,7 @@ Use this method to define a delimiter character in a list of property values tha
 
 By default, the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) constructor sets the delimiter character to comma (',').
 
-##  <a name="setshowdragcontext"></a>  CMFCPropertyGridCtrl::SetShowDragContext
+## <a name="setshowdragcontext"></a> CMFCPropertyGridCtrl::SetShowDragContext
 
 Specifies whether the framework redraws the name and value columns of the current property grid control when a user resizes the columns.
 
@@ -1431,7 +1431,7 @@ void SetShowDragContext(BOOL bShowDragContext = TRUE);
 
 The user can resize the name and value columns of a property grid control by dragging the split bar that is between the columns. If the drag context is displayed, the name and value columns are resized as long as the user drags the split bar. Otherwise, the split bar moves but the columns are not redrawn until the drag operation is completed.
 
-##  <a name="setvsdotnetlook"></a>  CMFCPropertyGridCtrl::SetVSDotNetLook
+## <a name="setvsdotnetlook"></a> CMFCPropertyGridCtrl::SetVSDotNetLook
 
 Sets the appearance of the property grid control to the style that is used in Visual Studio .NET.
 
@@ -1446,7 +1446,7 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
 
 ### Remarks
 
-##  <a name="updatecolor"></a>  CMFCPropertyGridCtrl::UpdateColor
+## <a name="updatecolor"></a> CMFCPropertyGridCtrl::UpdateColor
 
 Sets the color value of the currently selected color property.
 
@@ -1463,7 +1463,7 @@ virtual void UpdateColor(COLORREF color);
 
 This method asserts in debug mode if the currently selected property of the property grid control is not a color property.
 
-##  <a name="validateitemdata"></a>  CMFCPropertyGridCtrl::ValidateItemData
+## <a name="validateitemdata"></a> CMFCPropertyGridCtrl::ValidateItemData
 
 Called by the framework to validate property data.
 

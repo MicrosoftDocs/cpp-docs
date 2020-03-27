@@ -43,7 +43,7 @@ Operations on valarrays are guaranteed only if the source and destination subset
 
 **Namespace:** std
 
-## <a name="size"></a>  slice::size
+## <a name="size"></a> slice::size
 
 Finds the number of elements in a slice of a valarray.
 
@@ -107,7 +107,7 @@ The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
 The size of slice vaSlice is: 6.
 ```
 
-## <a name="slice"></a>  slice::slice
+## <a name="slice"></a> slice::slice
 
 Defines a subset of a valarray that consists of a number of elements that are an equal distance apart and that start at a specified element.
 
@@ -180,7 +180,7 @@ The slice of valarray va is vaResult:
 va[slice( 1, 7, 3)] = ( 4 10 16 22 28 34 40 ).
 ```
 
-## <a name="start"></a>  slice::start
+## <a name="start"></a> slice::start
 
 Finds the starting index of a slice of a valarray.
 
@@ -238,7 +238,7 @@ The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
 The start index of slice vaSlice is: 3.
 ```
 
-## <a name="stride"></a>  slice::stride
+## <a name="stride"></a> slice::stride
 
 Finds the distance between elements in a slice of a valarray.
 

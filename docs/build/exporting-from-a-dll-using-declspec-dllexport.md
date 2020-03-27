@@ -27,7 +27,7 @@ class __declspec(dllexport) CExampleExport : public CObject
 ```
 
 > [!NOTE]
->  `__declspec(dllexport)` cannot be applied to a function with the `__clrcall` calling convention.
+> `__declspec(dllexport)` cannot be applied to a function with the `__clrcall` calling convention.
 
 When building your DLL, you typically create a header file that contains the function prototypes and/or classes you are exporting and add **__declspec(dllexport)** to the declarations in the header file. To make your code more readable, define a macro for **__declspec(dllexport)** and use the macro with each symbol you are exporting:
 

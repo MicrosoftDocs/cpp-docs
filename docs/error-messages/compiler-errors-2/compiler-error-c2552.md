@@ -17,13 +17,13 @@ The aggregate identifier was incorrectly initialized.
 
 - Classes, structures, and unions that do not have:
 
-   - Constructors
+  - Constructors
 
-   - Private or protected members
+  - Private or protected members
 
-   - Base classes
+  - Base classes
 
-   - Virtual functions
+  - Virtual functions
 
 In addition, Visual C++ does not allow data types in an aggregate that contains constructors.
 

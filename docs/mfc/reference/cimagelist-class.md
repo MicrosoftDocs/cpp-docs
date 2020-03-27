@@ -90,7 +90,7 @@ For more information on using `CImageList`, see [Controls](../../mfc/controls-mf
 
 **Header:** afxcmn.h
 
-##  <a name="add"></a>  CImageList::Add
+## <a name="add"></a> CImageList::Add
 
 Call this function to add one or more images or an icon to an image list.
 
@@ -132,7 +132,7 @@ You are responsible for releasing the icon handle when you are done with it.
 
 [!code-cpp[NVC_MFC_CImageList#1](../../mfc/reference/codesnippet/cpp/cimagelist-class_1.cpp)]
 
-##  <a name="attach"></a>  CImageList::Attach
+## <a name="attach"></a> CImageList::Attach
 
 Call this function to attach an image list to a `CImageList` object.
 
@@ -153,7 +153,7 @@ Nonzero if the attachment was successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CImageList#2](../../mfc/reference/codesnippet/cpp/cimagelist-class_2.cpp)]
 
-##  <a name="begindrag"></a>  CImageList::BeginDrag
+## <a name="begindrag"></a> CImageList::BeginDrag
 
 Call this function to begin dragging an image.
 
@@ -183,7 +183,7 @@ This function creates a temporary image list that is used for dragging. The imag
 
 [!code-cpp[NVC_MFC_CImageList#3](../../mfc/reference/codesnippet/cpp/cimagelist-class_3.cpp)]
 
-##  <a name="cimagelist"></a>  CImageList::CImageList
+## <a name="cimagelist"></a> CImageList::CImageList
 
 Constructs a `CImageList` object.
 
@@ -191,7 +191,7 @@ Constructs a `CImageList` object.
 CImageList();
 ```
 
-##  <a name="copy"></a>  CImageList::Copy
+## <a name="copy"></a> CImageList::Copy
 
 This member function implements the behavior of the Win32 function [ImageList_Copy](/windows/win32/api/commctrl/nf-commctrl-imagelist_copy), as described in the Windows SDK.
 
@@ -235,7 +235,7 @@ Nonzero if successful; otherwise zero.
 
 [!code-cpp[NVC_MFC_CImageList#6](../../mfc/reference/codesnippet/cpp/cimagelist-class_4.cpp)]
 
-##  <a name="create"></a>  CImageList::Create
+## <a name="create"></a> CImageList::Create
 
 Initializes an image list and attaches it to a [CImageList](../../mfc/reference/cimagelist-class.md) object.
 
@@ -340,7 +340,7 @@ You construct a `CImageList` in two steps. First, call the constructor and then 
 
 [!code-cpp[NVC_MFC_CImageList#7](../../mfc/reference/codesnippet/cpp/cimagelist-class_5.cpp)]
 
-##  <a name="deleteimagelist"></a>  CImageList::DeleteImageList
+## <a name="deleteimagelist"></a> CImageList::DeleteImageList
 
 Call this function to delete an image list.
 
@@ -356,7 +356,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CImageList#8](../../mfc/reference/codesnippet/cpp/cimagelist-class_6.cpp)]
 
-##  <a name="deletetempmap"></a>  CImageList::DeleteTempMap
+## <a name="deletetempmap"></a> CImageList::DeleteTempMap
 
 Called automatically by the `CWinApp` idle-time handler, `DeleteTempMap` deletes any temporary `CImageList` objects created by [FromHandle](#fromhandle), but does not destroy any handles ( `hImageList`) temporarily associated with the `ImageList` objects.
 
@@ -368,7 +368,7 @@ static void PASCAL DeleteTempMap();
 
 [!code-cpp[NVC_MFC_CImageList#9](../../mfc/reference/codesnippet/cpp/cimagelist-class_7.cpp)]
 
-##  <a name="detach"></a>  CImageList::Detach
+## <a name="detach"></a> CImageList::Detach
 
 Call this function to detach an image list object from a `CImageList` object.
 
@@ -388,7 +388,7 @@ This function returns a handle to the image list object.
 
   See the example for [CImageList::Attach](#attach).
 
-##  <a name="dragenter"></a>  CImageList::DragEnter
+## <a name="dragenter"></a> CImageList::DragEnter
 
 During a drag operation, locks updates to the window specified by *pWndLock* and displays the drag image at the position specified by *point*.
 
@@ -422,7 +422,7 @@ This function locks all other updates to the given window during the drag operat
 
   See the example for [CImageList::BeginDrag](#begindrag).
 
-##  <a name="dragleave"></a>  CImageList::DragLeave
+## <a name="dragleave"></a> CImageList::DragLeave
 
 Unlocks the window specified by *pWndLock* and hides the drag image, allowing the window to be updated.
 
@@ -443,7 +443,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CImageList::EndDrag](#enddrag).
 
-##  <a name="dragmove"></a>  CImageList::DragMove
+## <a name="dragmove"></a> CImageList::DragMove
 
 Call this function to move the image that is being dragged during a drag-and-drop operation.
 
@@ -468,7 +468,7 @@ This function is typically called in response to a WM_MOUSEMOVE message. To begi
 
 [!code-cpp[NVC_MFC_CImageList#4](../../mfc/reference/codesnippet/cpp/cimagelist-class_8.cpp)]
 
-##  <a name="dragshownolock"></a>  CImageList::DragShowNolock
+## <a name="dragshownolock"></a> CImageList::DragShowNolock
 
 Shows or hides the drag image during a drag operation, without locking the window.
 
@@ -489,7 +489,7 @@ Nonzero if successful; otherwise 0.
 
 The [CImageList::DragEnter](#dragenter) function locks all updates to the window during a drag operation. This function, however, does not lock the window.
 
-##  <a name="draw"></a>  CImageList::Draw
+## <a name="draw"></a> CImageList::Draw
 
 Call this function to draw the image that is being dragged during a drag-and-drop operation.
 
@@ -531,7 +531,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CImageList::SetOverlayImage](#setoverlayimage).
 
-##  <a name="drawex"></a>  CImageList::DrawEx
+## <a name="drawex"></a> CImageList::DrawEx
 
 Draws an image list item in the specified device context.
 
@@ -581,7 +581,7 @@ The function uses the specified drawing style and blends the image with the spec
 
 [!code-cpp[NVC_MFC_CImageList#10](../../mfc/reference/codesnippet/cpp/cimagelist-class_9.cpp)]
 
-##  <a name="drawindirect"></a>  CImageList::DrawIndirect
+## <a name="drawindirect"></a> CImageList::DrawIndirect
 
 Call this member function to draw an image from an image list.
 
@@ -678,7 +678,7 @@ An overlay image is an image that is drawn on top of the primary image, specifie
 
 [!code-cpp[NVC_MFC_CImageList#11](../../mfc/reference/codesnippet/cpp/cimagelist-class_10.cpp)]
 
-##  <a name="enddrag"></a>  CImageList::EndDrag
+## <a name="enddrag"></a> CImageList::EndDrag
 
 Call this function to end a drag operation.
 
@@ -694,7 +694,7 @@ To begin a drag operation, use the `BeginDrag` member function.
 
 [!code-cpp[NVC_MFC_CImageList#5](../../mfc/reference/codesnippet/cpp/cimagelist-class_11.cpp)]
 
-##  <a name="extracticon"></a>  CImageList::ExtractIcon
+## <a name="extracticon"></a> CImageList::ExtractIcon
 
 Call this function to create an icon based on an image and its related mask in an image list.
 
@@ -719,7 +719,7 @@ This method relies on the behavior of the [ImageList_ExtractIcon](/windows/win32
 
 [!code-cpp[NVC_MFC_CImageList#12](../../mfc/reference/codesnippet/cpp/cimagelist-class_12.cpp)]
 
-##  <a name="fromhandle"></a>  CImageList::FromHandle
+## <a name="fromhandle"></a> CImageList::FromHandle
 
 Returns a pointer to a `CImageList` object when given a handle to an image list.
 
@@ -744,7 +744,7 @@ If a `CImageList` is not already attached to the handle, a temporary `CImageList
 
 [!code-cpp[NVC_MFC_CImageList#13](../../mfc/reference/codesnippet/cpp/cimagelist-class_13.cpp)]
 
-##  <a name="fromhandlepermanent"></a>  CImageList::FromHandlePermanent
+## <a name="fromhandlepermanent"></a> CImageList::FromHandlePermanent
 
 Returns a pointer to a `CImageList` object when given a handle to an image list.
 
@@ -769,7 +769,7 @@ If a `CImageList` object is not attached to the handle, NULL is returned.
 
 [!code-cpp[NVC_MFC_CImageList#14](../../mfc/reference/codesnippet/cpp/cimagelist-class_14.cpp)]
 
-##  <a name="getbkcolor"></a>  CImageList::GetBkColor
+## <a name="getbkcolor"></a> CImageList::GetBkColor
 
 Call this function to retrieve the current background color for an image list.
 
@@ -785,7 +785,7 @@ The RGB color value of the `CImageList` object background color.
 
   See the example for [CImageList::SetBkColor](#setbkcolor).
 
-##  <a name="getdragimage"></a>  CImageList::GetDragImage
+## <a name="getdragimage"></a> CImageList::GetDragImage
 
 Gets the temporary image list that is used for dragging.
 
@@ -807,7 +807,7 @@ Address of a `POINT` structure that receives the offset of the drag image relati
 
 If successful, a pointer to the temporary image list that is used for dragging; otherwise, NULL.
 
-##  <a name="getimagecount"></a>  CImageList::GetImageCount
+## <a name="getimagecount"></a> CImageList::GetImageCount
 
 Call this function to retrieve the number of images in an image list.
 
@@ -823,7 +823,7 @@ The number of images.
 
   See the example for [CImageList::ExtractIcon](#extracticon).
 
-##  <a name="getimageinfo"></a>  CImageList::GetImageInfo
+## <a name="getimageinfo"></a> CImageList::GetImageInfo
 
 Call this function to retrieve information about an image.
 
@@ -849,7 +849,7 @@ Nonzero if successful; otherwise 0.
 
 The `IMAGEINFO` structure contains information about an image in an image list.
 
-##  <a name="getsafehandle"></a>  CImageList::GetSafeHandle
+## <a name="getsafehandle"></a> CImageList::GetSafeHandle
 
 Call this function to retrieve the `m_hImageList` data member.
 
@@ -865,7 +865,7 @@ A handle to the attached image list; otherwise NULL if no object is attached.
 
 [!code-cpp[NVC_MFC_CImageList#15](../../mfc/reference/codesnippet/cpp/cimagelist-class_15.cpp)]
 
-##  <a name="m_himagelist"></a>  CImageList::m_hImageList
+## <a name="m_himagelist"></a> CImageList::m_hImageList
 
 A handle of the image list attached to this object.
 
@@ -879,7 +879,7 @@ The `m_hImageList` data member is a public variable of type HIMAGELIST.
 
 [!code-cpp[NVC_MFC_CImageList#23](../../mfc/reference/codesnippet/cpp/cimagelist-class_16.cpp)]
 
-##  <a name="operator_himagelist"></a>  CImageList::operator HIMAGELIST
+## <a name="operator_himagelist"></a> CImageList::operator HIMAGELIST
 
 Use this operator to get the attached handle of the `CImageList` object.
 
@@ -899,7 +899,7 @@ This operator is a casting operator, which supports direct use of an HIMAGELIST 
 
 [!code-cpp[NVC_MFC_CImageList#16](../../mfc/reference/codesnippet/cpp/cimagelist-class_17.cpp)]
 
-##  <a name="read"></a>  CImageList::Read
+## <a name="read"></a> CImageList::Read
 
 Call this function to read an image list from an archive.
 
@@ -920,7 +920,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CImageList#18](../../mfc/reference/codesnippet/cpp/cimagelist-class_18.cpp)]
 
-##  <a name="remove"></a>  CImageList::Remove
+## <a name="remove"></a> CImageList::Remove
 
 Call this function to remove an image from an image list object.
 
@@ -945,7 +945,7 @@ All items following *nImage* now move down one position. For example, if an imag
 
 [!code-cpp[NVC_MFC_CImageList#19](../../mfc/reference/codesnippet/cpp/cimagelist-class_19.cpp)]
 
-##  <a name="replace"></a>  CImageList::Replace
+## <a name="replace"></a> CImageList::Replace
 
 Call this function to replace an image in an image list with a new image.
 
@@ -988,7 +988,7 @@ Call this member function after calling [SetImageCount](#setimagecount) to assig
 
   See the example for [CImageList::SetImageCount](#setimagecount).
 
-##  <a name="setbkcolor"></a>  CImageList::SetBkColor
+## <a name="setbkcolor"></a> CImageList::SetBkColor
 
 Call this function to set the background color for an image list.
 
@@ -1009,7 +1009,7 @@ The previous background color if successful; otherwise CLR_NONE.
 
 [!code-cpp[NVC_MFC_CImageList#20](../../mfc/reference/codesnippet/cpp/cimagelist-class_20.cpp)]
 
-##  <a name="setdragcursorimage"></a>  CImageList::SetDragCursorImage
+## <a name="setdragcursorimage"></a> CImageList::SetDragCursorImage
 
 Creates a new drag image by combining the given image (typically a mouse cursor image) with the current drag image.
 
@@ -1035,7 +1035,7 @@ Nonzero if successful; otherwise 0.
 
 Because the dragging functions use the new image during a drag operation, you should use the Windows [ShowCursor](/windows/win32/api/winuser/nf-winuser-showcursor) function to hide the actual mouse cursor after calling `CImageList::SetDragCursorImage`. Otherwise, the system may appear to have two mouse cursors for the duration of the drag operation.
 
-##  <a name="setimagecount"></a>  CImageList::SetImageCount
+## <a name="setimagecount"></a> CImageList::SetImageCount
 
 Call this member function to reset the number of images in a `CImageList` object.
 
@@ -1062,7 +1062,7 @@ If you decrease the size of an image list by using this function, the truncated 
 
 [!code-cpp[NVC_MFC_CImageList#21](../../mfc/reference/codesnippet/cpp/cimagelist-class_21.cpp)]
 
-##  <a name="setoverlayimage"></a>  CImageList::SetOverlayImage
+## <a name="setoverlayimage"></a> CImageList::SetOverlayImage
 
 Call this function to add the zero-based index of an image to the list of images to be used as overlay masks.
 
@@ -1094,7 +1094,7 @@ An overlay mask is an image drawn transparently over another image. Draw an over
 
 [!code-cpp[NVC_MFC_CImageList#22](../../mfc/reference/codesnippet/cpp/cimagelist-class_22.cpp)]
 
-##  <a name="write"></a>  CImageList::Write
+## <a name="write"></a> CImageList::Write
 
 Call this function to write an image list object to an archive.
 

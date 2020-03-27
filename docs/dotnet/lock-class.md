@@ -54,7 +54,7 @@ Internally, the lock class uses <xref:System.Threading.Monitor> to synchronize a
 
 **Namespace** msclr
 
-## <a name="lock"></a>lock::lock
+## <a name="lock"></a> lock::lock
 
 Constructs a `lock` object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.
 
@@ -188,7 +188,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="tilde-lock"></a>lock::~lock
+## <a name="tilde-lock"></a> lock::~lock
 
 Destructs a `lock` object.
 
@@ -290,7 +290,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="acquire"></a>lock::acquire
+## <a name="acquire"></a> lock::acquire
 
 Acquires a lock on an object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.
 
@@ -409,7 +409,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="is-locked"></a>lock::is_locked
+## <a name="is-locked"></a> lock::is_locked
 
 Indicates whether a lock is being held.
 
@@ -512,7 +512,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="operator-bool"></a>lock::operator bool
+## <a name="operator-bool"></a> lock::operator bool
 
 Operator for using `lock` in a conditional expression.
 
@@ -619,7 +619,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="release"></a>lock::release
+## <a name="release"></a> lock::release
 
 Releases a lock.
 
@@ -723,7 +723,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="try-acquire"></a>lock::try_acquire
+## <a name="try-acquire"></a> lock::try_acquire
 
 Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.
 
@@ -839,7 +839,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="operator-equality"></a>lock::operator==
+## <a name="operator-equality"></a> lock::operator==
 
 Equality operator.
 
@@ -882,7 +882,7 @@ int main () {
 Equal!
 ```
 
-## <a name="operator-inequality"></a>lock::operator!=
+## <a name="operator-inequality"></a> lock::operator!=
 
 Inequality operator.
 

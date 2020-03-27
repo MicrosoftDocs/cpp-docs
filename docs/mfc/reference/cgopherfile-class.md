@@ -10,7 +10,7 @@ ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
 Provides the functionality to find and read files on a gopher server.
 
 > [!NOTE]
->  The classes `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` and their members have been deprecated because they do not work on the Windows XP platform, but they will continue to work on earlier platforms.
+> The classes `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` and their members have been deprecated because they do not work on the Windows XP platform, but they will continue to work on earlier platforms.
 
 ## Syntax
 
@@ -48,7 +48,7 @@ To learn more about how `CGopherFile` works with the other MFC Internet classes,
 
 **Header:** afxinet.h
 
-##  <a name="cgopherfile"></a>  CGopherFile::CGopherFile
+## <a name="cgopherfile"></a> CGopherFile::CGopherFile
 
 This member function is called to construct a `CGopherFile` object.
 

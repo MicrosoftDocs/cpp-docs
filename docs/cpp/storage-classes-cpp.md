@@ -184,7 +184,7 @@ Things to note about the **thread_local** specifier:
 
 On Windows, **thread_local** is functionally equivalent to  [__declspec(thread)](../cpp/thread.md) except that **__declspec(thread)** can be applied to a type definition and is valid in C code. Whenever possible, use **thread_local** because it is part of the C++ standard and is therefore more portable.
 
-##  <a name="register"></a>  register
+## <a name="register"></a> register
 
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **register** keyword is no longer a supported storage class. The keyword is still reserved in the standard for future use.
 

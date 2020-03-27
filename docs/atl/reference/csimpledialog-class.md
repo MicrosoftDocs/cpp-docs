@@ -51,7 +51,7 @@ See [Implementing a Dialog Box](../../atl/implementing-a-dialog-box.md) for more
 
 **Header:** atlwin.h
 
-##  <a name="domodal"></a>  CSimpleDialog::DoModal
+## <a name="domodal"></a> CSimpleDialog::DoModal
 
 Invokes a modal dialog box and returns the dialog-box result when done.
 

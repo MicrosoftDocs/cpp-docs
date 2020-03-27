@@ -43,7 +43,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 The view is a form view directly connected to a `CRecordset` object. The view is created from a dialog template resource and displays the fields of the `CRecordset` object in the dialog template's controls. The `CRecordView` object uses dialog data exchange (DDX) and record field exchange (RFX) to automate the movement of data between the controls on the form and the fields of the recordset. `CRecordView` also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently on view.
 
 > [!NOTE]
->  If you are working with the Data Access Objects (DAO) classes rather than the Open Database Connectivity (ODBC) classes, use class [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) instead. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).
+> If you are working with the Data Access Objects (DAO) classes rather than the Open Database Connectivity (ODBC) classes, use class [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) instead. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).
 
 The most common way to create your record view is with the Application Wizard. The Application Wizard creates both the record view class and its associated recordset class as part of your skeleton starter application. If you don't create the record view class with the Application Wizard, you can create it later with ClassWizard. If you simply need a single form, the Application Wizard approach is easier. ClassWizard lets you decide to use a record view later in the development process. Using ClassWizard to create a record view and a recordset separately and then connect them is the most flexible approach because it gives you more control in naming the recordset class and its .H/.CPP files. This approach also lets you have multiple record views on the same recordset class.
 
@@ -75,7 +75,7 @@ For more information about declaring and using your record view and recordset cl
 
 **Header:** afxdb.h
 
-##  <a name="crecordview"></a>  CRecordView::CRecordView
+## <a name="crecordview"></a> CRecordView::CRecordView
 
 When you create an object of a type derived from `CRecordView`, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.
 
@@ -97,18 +97,18 @@ Contains the ID number of a dialog template resource.
 You can either identify the resource by name (pass a string as the argument to the constructor) or by its ID (pass an unsigned integer as the argument). Using a resource ID is recommended.
 
 > [!NOTE]
->  Your derived class *must* supply its own constructor. In the constructor of your derived class, call the constructor `CRecordView::CRecordView` with the resource name or ID as an argument, as shown in the example below.
+> Your derived class *must* supply its own constructor. In the constructor of your derived class, call the constructor `CRecordView::CRecordView` with the resource name or ID as an argument, as shown in the example below.
 
 `CRecordView::OnInitialUpdate` calls `UpdateData`, which calls `DoDataExchange`. This initial call to `DoDataExchange` connects `CRecordView` controls (indirectly) to `CRecordset` field data members created by ClassWizard. These data members cannot be used until after you call the base class `CFormView::OnInitialUpdate` member function.
 
 > [!NOTE]
->  If you use ClassWizard, the wizard defines an **enum** value `CRecordView::IDD`, specifies it in the class declaration, and uses it in the member initialization list for the constructor.
+> If you use ClassWizard, the wizard defines an **enum** value `CRecordView::IDD`, specifies it in the class declaration, and uses it in the member initialization list for the constructor.
 
 ### Example
 
 [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/cpp/crecordview-class_1.cpp)]
 
-##  <a name="isonfirstrecord"></a>  CRecordView::IsOnFirstRecord
+## <a name="isonfirstrecord"></a> CRecordView::IsOnFirstRecord
 
 Call this member function to determine whether the current record is the first record in the recordset object associated with this record view.
 
@@ -126,7 +126,7 @@ This function is useful for writing your own implementations of default command 
 
 If the user moves to the first record, the framework disables any user interface objects you have for moving to the first or the previous record.
 
-##  <a name="isonlastrecord"></a>  CRecordView::IsOnLastRecord
+## <a name="isonlastrecord"></a> CRecordView::IsOnLastRecord
 
 Call this member function to determine whether the current record is the last record in the recordset object associated with this record view.
 
@@ -143,9 +143,9 @@ Nonzero if the current record is the last record in the recordset; otherwise 0.
 This function is useful for writing your own implementations of the default command update handlers that ClassWizard writes to support a user interface for moving from record to record.
 
 > [!CAUTION]
->  The result of this function is reliable except that the view cannot detect the end of the recordset until the user has moved past it. The user must move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly. `IsOnLastRecord` is also unreliable after a call to the implementation function `OnRecordLast`, which handles the ID_RECORD_LAST command, or `CRecordset::MoveLast`.
+> The result of this function is reliable except that the view cannot detect the end of the recordset until the user has moved past it. The user must move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly. `IsOnLastRecord` is also unreliable after a call to the implementation function `OnRecordLast`, which handles the ID_RECORD_LAST command, or `CRecordset::MoveLast`.
 
-##  <a name="ongetrecordset"></a>  CRecordView::OnGetRecordset
+## <a name="ongetrecordset"></a> CRecordView::OnGetRecordset
 
 Returns a pointer to the `CRecordset`-derived object associated with the record view.
 
@@ -163,7 +163,7 @@ You must override this member function to construct or obtain a recordset object
 
 For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).
 
-##  <a name="onmove"></a>  CRecordView::OnMove
+## <a name="onmove"></a> CRecordView::OnMove
 
 Call this member function to move to a different record in the recordset and display its fields in the controls of the record view.
 
@@ -199,7 +199,7 @@ The Application Wizard creates a menu resource with First Record, Last Record, N
 If you move past the last record in the recordset, the record view continues to display the last record. If you move backward past the first record, the record view continues to display the first record.
 
 > [!CAUTION]
->  Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, or `OnUpdateRecordPrev` — before the corresponding move operation to determine whether the recordset has any records.
+> Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, or `OnUpdateRecordPrev` — before the corresponding move operation to determine whether the recordset has any records.
 
 ## See also
 

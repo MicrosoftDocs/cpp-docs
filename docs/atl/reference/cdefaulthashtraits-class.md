@@ -39,7 +39,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="hash"></a>  CDefaultHashTraits::Hash
+## <a name="hash"></a> CDefaultHashTraits::Hash
 
 Call this function to calculate a hash value for a given element.
 

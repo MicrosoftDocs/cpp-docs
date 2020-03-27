@@ -55,7 +55,7 @@ Name                                                                    | Descri
 
 **Namespace:** Microsoft::WRL
 
-## <a name="methodreleasenotifier-invoke"></a>Module::MethodReleaseNotifier::Invoke
+## <a name="methodreleasenotifier-invoke"></a> Module::MethodReleaseNotifier::Invoke
 
 Calls the event handler associated with the current `Module::MethodReleaseNotifier` object.
 
@@ -63,7 +63,7 @@ Calls the event handler associated with the current `Module::MethodReleaseNotifi
 void Invoke();
 ```
 
-## <a name="methodreleasenotifier-method"></a>Module::MethodReleaseNotifier::method_
+## <a name="methodreleasenotifier-method"></a> Module::MethodReleaseNotifier::method_
 
 Holds a pointer to the event handler for the current `Module::MethodReleaseNotifier` object.
 
@@ -71,7 +71,7 @@ Holds a pointer to the event handler for the current `Module::MethodReleaseNotif
 void (T::* method_)();
 ```
 
-## <a name="methodreleasenotifier-methodreleasenotifier"></a>Module::MethodReleaseNotifier::MethodReleaseNotifier
+## <a name="methodreleasenotifier-methodreleasenotifier"></a> Module::MethodReleaseNotifier::MethodReleaseNotifier
 
 Initializes a new instance of the `Module::MethodReleaseNotifier` class.
 
@@ -95,7 +95,7 @@ The member function of parameter *object* that is the event handler.
 *release*<br/>
 Specify `true` to enable calling the underlying [Module::ReleaseNotifier::Release()](module-releasenotifier-class.md#releasenotifier-release) method; otherwise, specify `false`.
 
-## <a name="methodreleasenotifier-object"></a>Module::MethodReleaseNotifier::object_
+## <a name="methodreleasenotifier-object"></a> Module::MethodReleaseNotifier::object_
 
 Holds a pointer to the object whose member function is the event handler for the current `Module::MethodReleaseNotifier` object.
 

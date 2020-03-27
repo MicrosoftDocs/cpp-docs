@@ -10,7 +10,7 @@ ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
 |-|-|
 |[false_type](#false_type)|[true_type](#true_type)|
 
-## <a name="false_type"></a>  false_type Typedef
+## <a name="false_type"></a> false_type Typedef
 
 Holds integral constant with false value.
 
@@ -43,7 +43,7 @@ false_type == false
 true_type == true
 ```
 
-## <a name="true_type"></a>  true_type Typedef
+## <a name="true_type"></a> true_type Typedef
 
 Holds integral constant with true value.
 

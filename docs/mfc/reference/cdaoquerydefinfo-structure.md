@@ -57,7 +57,7 @@ A value that indicates the operational type of a querydef object. The value can 
 - `dbQSPTBulk` Used with `dbQSQLPassThrough` to specify a query that does not return records.
 
 > [!NOTE]
->  To create a SQL pass-through query, you do not set the `dbQSQLPassThrough` constant. This is set automatically by the Microsoft Jet database engine when you create a querydef object and set the Connect property.
+> To create a SQL pass-through query, you do not set the `dbQSQLPassThrough` constant. This is set automatically by the Microsoft Jet database engine when you create a querydef object and set the Connect property.
 
 For more information, see the topic "Type Property" in DAO Help.
 

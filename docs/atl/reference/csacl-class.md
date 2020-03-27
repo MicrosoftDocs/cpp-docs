@@ -10,7 +10,7 @@ ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
 This class is a wrapper for a SACL (system access-control list) structure.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -62,7 +62,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 **Header:** atlsecurity.h
 
-##  <a name="addauditace"></a>  CSacl::AddAuditAce
+## <a name="addauditace"></a> CSacl::AddAuditAce
 
 Adds an audit access-control entry (ACE) to the `CSacl` object.
 
@@ -117,7 +117,7 @@ A `CSacl` object contains access-control entries (ACEs) that specify the types o
 
 See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the *AceFlags* parameter.
 
-##  <a name="csacl"></a>  CSacl::CSacl
+## <a name="csacl"></a> CSacl::CSacl
 
 The constructor.
 
@@ -135,7 +135,7 @@ An existing `ACL` (access-control list) structure.
 
 The `CSacl` object can be optionally created using an existing `ACL` structure. Ensure that this parameter is a system access-control list (SACL) and not a discretionary access-control list (DACL). In debug builds, if a DACL is supplied an assertion will occur. In release builds any entries from a DACL are ignored.
 
-##  <a name="dtor"></a>  CSacl::~CSacl
+## <a name="dtor"></a> CSacl::~CSacl
 
 The destructor.
 
@@ -147,7 +147,7 @@ The destructor.
 
 The destructor frees any resources acquired by the object, including all access-control entries (ACEs).
 
-##  <a name="getacecount"></a>  CSacl::GetAceCount
+## <a name="getacecount"></a> CSacl::GetAceCount
 
 Returns the number of access-control entries (ACEs) in the `CSacl` object.
 
@@ -159,7 +159,7 @@ UINT GetAceCount() const throw();
 
 Returns the number of ACEs contained in the `CSacl` object.
 
-##  <a name="operator_eq"></a>  CSacl::operator =
+## <a name="operator_eq"></a> CSacl::operator =
 
 Assignment operator.
 
@@ -176,7 +176,7 @@ The `ACL` (access-control list) to assign to the existing object.
 
 Returns a reference to the updated `CSacl` object. Ensure that the `ACL` parameter is actually a system access-control list (SACL) and not a discretionary access-control list (DACL). In debug builds an assertion will occur, and in release builds the `ACL` parameter will be ignored.
 
-##  <a name="removeace"></a>  CSacl::RemoveAce
+## <a name="removeace"></a> CSacl::RemoveAce
 
 Removes a specific ACE (access-control entry) from the `CSacl` object.
 
@@ -193,7 +193,7 @@ Index to the ACE entry to remove.
 
 This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#removeat).
 
-##  <a name="removeallaces"></a>  CSacl::RemoveAllAces
+## <a name="removeallaces"></a> CSacl::RemoveAllAces
 
 Removes all of the access-control entries (ACEs) contained in the `CSacl` object.
 

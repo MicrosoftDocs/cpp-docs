@@ -45,7 +45,7 @@ Name                                       | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="hresult"></a>RoInitializeWrapper::HRESULT()
+## <a name="hresult"></a> RoInitializeWrapper::HRESULT()
 
 Retrieves the HRESULT value produced by the last `RoInitializeWrapper` constructor.
 
@@ -53,7 +53,7 @@ Retrieves the HRESULT value produced by the last `RoInitializeWrapper` construct
 operator HRESULT()
 ```
 
-## <a name="roinitializewrapper"></a>RoInitializeWrapper::RoInitializeWrapper
+## <a name="roinitializewrapper"></a> RoInitializeWrapper::RoInitializeWrapper
 
 Initializes a new instance of the `RoInitializeWrapper` class.
 
@@ -70,7 +70,7 @@ One of the RO_INIT_TYPE enumerations, which specifies the support provided by th
 
 The `RoInitializeWrapper` class invokes `Windows::Foundation::Initialize(flags)`.
 
-## <a name="tilde-roinitializewrapper"></a>RoInitializeWrapper::~RoInitializeWrapper
+## <a name="tilde-roinitializewrapper"></a> RoInitializeWrapper::~RoInitializeWrapper
 
 Uninitializes the Windows Runtime.
 

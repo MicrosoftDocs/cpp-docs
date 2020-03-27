@@ -9,7 +9,7 @@ ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
 By default, a record view is associated with a single recordset object, whose fields are mapped to the record view's controls. Sometimes you might want to put a list box or combo box control in your record view and fill it with values from a second recordset object. The user can use the list box to select a new category of information to display in the record view. This topic explains how and when to do that.
 
 > [!TIP]
->  Be aware that filling a combo box or list box from a data source might be slow. Take precautions against trying to fill a control from a recordset with a large number of records.
+> Be aware that filling a combo box or list box from a data source might be slow. Take precautions against trying to fill a control from a recordset with a large number of records.
 
 The model for this topic consists of a primary recordset that fills the controls of your form, while a secondary recordset fills a list box or combo box. Selecting a string from the list box causes your program to requery the primary recordset based on what was selected. The following procedure uses a combo box but applies equally to a list box.
 

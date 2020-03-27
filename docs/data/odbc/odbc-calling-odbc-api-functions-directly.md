@@ -9,7 +9,7 @@ ms.assetid: 4295f1d9-4528-4d2e-bd6a-c7569953c7fa
 The database classes provide a simpler interface to a [data source](../../data/odbc/data-source-odbc.md) than does ODBC. As a result, the classes do not encapsulate all the ODBC API. For any functionality that falls outside the abilities of the classes, you must call ODBC API functions directly. For example, you must call the ODBC catalog functions (`::SQLColumns`, `::SQLProcedures`, `::SQLTables`, and others) directly.
 
 > [!NOTE]
->  ODBC data sources are accessible through the MFC ODBC classes, as described in this topic, or through the MFC Data Access Object (DAO) classes.
+> ODBC data sources are accessible through the MFC ODBC classes, as described in this topic, or through the MFC Data Access Object (DAO) classes.
 
 To call an ODBC API function directly, you must take the same steps you would take if you were making the calls without the framework. They steps are:
 

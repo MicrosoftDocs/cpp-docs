@@ -8,11 +8,11 @@ ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
 
 This topic explains how to expand the list of supported formats, particularly for OLE support. The topic [Clipboard: Copying and Pasting Data](../mfc/clipboard-copying-and-pasting-data.md) describes the minimum implementation necessary to support copying and pasting from the Clipboard. If this is all you implement, the only formats placed on the Clipboard are **CF_METAFILEPICT**, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**, and possibly **CF_LINKSOURCE**. Most applications will need more formats on the Clipboard than these three.
 
-##  <a name="_core_registering_custom_formats"></a> Registering Custom Formats
+## <a name="_core_registering_custom_formats"></a> Registering Custom Formats
 
 To create your own custom formats, follow the same procedure you would use when registering any custom Clipboard format: pass the name of the format to the **RegisterClipboardFormat** function and use its return value as the format ID.
 
-##  <a name="_core_placing_formats_on_the_clipboard"></a> Placing Formats on the Clipboard
+## <a name="_core_placing_formats_on_the_clipboard"></a> Placing Formats on the Clipboard
 
 To add more formats to those placed on the Clipboard, you must override the `OnGetClipboardData` function in the class you derived from either `COleClientItem` or `COleServerItem` (depending on whether the data to be copied is native). In this function, you should use the following procedure.
 

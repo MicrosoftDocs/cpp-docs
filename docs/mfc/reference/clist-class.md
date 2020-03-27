@@ -86,7 +86,7 @@ For more information on using `CList`, see the article [Collections](../../mfc/c
 
 **Header:** afxtempl.h
 
-##  <a name="addhead"></a>  CList::AddHead
+## <a name="addhead"></a> CList::AddHead
 
 Adds a new element or list of elements to the head of this list.
 
@@ -118,7 +118,7 @@ The list can be empty before the operation.
 
 [!code-cpp[NVC_MFCCollections#36](../../mfc/codesnippet/cpp/clist-class_2.cpp)]
 
-##  <a name="addtail"></a>  CList::AddTail
+## <a name="addtail"></a> CList::AddTail
 
 Adds a new element or list of elements to the tail of this list.
 
@@ -150,7 +150,7 @@ The list can be empty before the operation.
 
 [!code-cpp[NVC_MFCCollections#37](../../mfc/codesnippet/cpp/clist-class_3.cpp)]
 
-##  <a name="clist"></a>  CList::CList
+## <a name="clist"></a> CList::CList
 
 Constructs an empty ordered list.
 
@@ -171,7 +171,7 @@ As the list grows, memory is allocated in units of *nBlockSize* entries.
 
 [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]
 
-##  <a name="find"></a>  CList::Find
+## <a name="find"></a> CList::Find
 
 Searches the list sequentially to find the first element matching the specified *searchValue*.
 
@@ -200,7 +200,7 @@ A POSITION value that can be used for iteration or object pointer retrieval; NUL
 
 [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]
 
-##  <a name="findindex"></a>  CList::FindIndex
+## <a name="findindex"></a> CList::FindIndex
 
 Uses the value of *nIndex* as an index into the list.
 
@@ -225,7 +225,7 @@ It starts a sequential scan from the head of the list, stopping on the *n*th ele
 
 [!code-cpp[NVC_MFCCollections#40](../../mfc/codesnippet/cpp/clist-class_6.cpp)]
 
-##  <a name="getat"></a>  CList::GetAt
+## <a name="getat"></a> CList::GetAt
 
 Gets the list element at a given position.
 
@@ -256,7 +256,7 @@ You must ensure that your POSITION value represents a valid position in the list
 
   See the example for [CList::GetHeadPosition](#getheadposition).
 
-##  <a name="getcount"></a>  CList::GetCount
+## <a name="getcount"></a> CList::GetCount
 
 Gets the number of elements in this list.
 
@@ -276,7 +276,7 @@ Calling this method will generate the same result as the [CList::GetSize](#getsi
 
   See the example for [CList::RemoveHead](#removehead).
 
-##  <a name="gethead"></a>  CList::GetHead
+## <a name="gethead"></a> CList::GetHead
 
 Gets the head element (or a reference to the head element) of this list.
 
@@ -305,7 +305,7 @@ You must ensure that the list is not empty before calling `GetHead`. If the list
 
 [!code-cpp[NVC_MFCCollections#41](../../mfc/codesnippet/cpp/clist-class_7.cpp)]
 
-##  <a name="getheadposition"></a>  CList::GetHeadPosition
+## <a name="getheadposition"></a> CList::GetHeadPosition
 
 Gets the position of the head element of this list.
 
@@ -321,7 +321,7 @@ A POSITION value that can be used for iteration or object pointer retrieval; NUL
 
 [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]
 
-##  <a name="getnext"></a>  CList::GetNext
+## <a name="getnext"></a> CList::GetNext
 
 Gets the list element identified by *rPosition*, then sets *rPosition* to the POSITION value of the next entry in the list.
 
@@ -356,7 +356,7 @@ If the retrieved element is the last in the list, then the new value of `rPositi
 
 [!code-cpp[NVC_MFCCollections#43](../../mfc/codesnippet/cpp/clist-class_9.cpp)]
 
-##  <a name="getprev"></a>  CList::GetPrev
+## <a name="getprev"></a> CList::GetPrev
 
 Gets the list element identified by `rPosition`, then sets `rPosition` to the POSITION value of the previous entry in the list.
 
@@ -391,7 +391,7 @@ If the retrieved element is the first in the list, then the new value of *rPosit
 
 [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]
 
-##  <a name="getsize"></a>  CList::GetSize
+## <a name="getsize"></a> CList::GetSize
 
 Returns the number of list elements.
 
@@ -411,7 +411,7 @@ Call this method to retrieve the number of elements in the list.  Calling this m
 
 [!code-cpp[NVC_MFCCollections#45](../../mfc/codesnippet/cpp/clist-class_11.cpp)]
 
-##  <a name="gettail"></a>  CList::GetTail
+## <a name="gettail"></a> CList::GetTail
 
 Gets the `CObject` pointer that represents the tail element of this list.
 
@@ -437,7 +437,7 @@ You must ensure that the list is not empty before calling `GetTail`. If the list
 
 [!code-cpp[NVC_MFCCollections#46](../../mfc/codesnippet/cpp/clist-class_12.cpp)]
 
-##  <a name="gettailposition"></a>  CList::GetTailPosition
+## <a name="gettailposition"></a> CList::GetTailPosition
 
 Gets the position of the tail element of this list; NULL if the list is empty.
 
@@ -453,7 +453,7 @@ A POSITION value that can be used for iteration or object pointer retrieval; NUL
 
 [!code-cpp[NVC_MFCCollections#47](../../mfc/codesnippet/cpp/clist-class_13.cpp)]
 
-##  <a name="insertafter"></a>  CList::InsertAfter
+## <a name="insertafter"></a> CList::InsertAfter
 
 Adds an element to this list after the element at the specified position.
 
@@ -480,7 +480,7 @@ A POSITION value that can be used for iteration or list element retrieval.
 
 [!code-cpp[NVC_MFCCollections#48](../../mfc/codesnippet/cpp/clist-class_14.cpp)]
 
-##  <a name="insertbefore"></a>  CList::InsertBefore
+## <a name="insertbefore"></a> CList::InsertBefore
 
 Adds an element to this list before the element at the specified position.
 
@@ -511,7 +511,7 @@ If *position* is NULL, the element is inserted at the head of the list.
 
 [!code-cpp[NVC_MFCCollections#49](../../mfc/codesnippet/cpp/clist-class_15.cpp)]
 
-##  <a name="isempty"></a>  CList::IsEmpty
+## <a name="isempty"></a> CList::IsEmpty
 
 Indicates whether this list contains no elements.
 
@@ -527,7 +527,7 @@ Nonzero if this list is empty; otherwise 0.
 
 [!code-cpp[NVC_MFCCollections#50](../../mfc/codesnippet/cpp/clist-class_16.cpp)]
 
-##  <a name="removeall"></a>  CList::RemoveAll
+## <a name="removeall"></a> CList::RemoveAll
 
 Removes all the elements from this list and frees the associated memory.
 
@@ -543,7 +543,7 @@ No error is generated if the list is already empty.
 
 [!code-cpp[NVC_MFCCollections#51](../../mfc/codesnippet/cpp/clist-class_17.cpp)]
 
-##  <a name="removeat"></a>  CList::RemoveAt
+## <a name="removeat"></a> CList::RemoveAt
 
 Removes the specified element from this list.
 
@@ -564,7 +564,7 @@ You must ensure that your POSITION value represents a valid position in the list
 
 [!code-cpp[NVC_MFCCollections#52](../../mfc/codesnippet/cpp/clist-class_18.cpp)]
 
-##  <a name="removehead"></a>  CList::RemoveHead
+## <a name="removehead"></a> CList::RemoveHead
 
 Removes the element from the head of the list and returns a pointer to it.
 
@@ -589,7 +589,7 @@ You must ensure that the list is not empty before calling `RemoveHead`. If the l
 
 [!code-cpp[NVC_MFCCollections#53](../../mfc/codesnippet/cpp/clist-class_19.cpp)]
 
-##  <a name="removetail"></a>  CList::RemoveTail
+## <a name="removetail"></a> CList::RemoveTail
 
 Removes the element from the tail of the list and returns a pointer to it.
 
@@ -614,7 +614,7 @@ You must ensure that the list is not empty before calling `RemoveTail`. If the l
 
 [!code-cpp[NVC_MFCCollections#54](../../mfc/codesnippet/cpp/clist-class_20.cpp)]
 
-##  <a name="setat"></a>  CList::SetAt
+## <a name="setat"></a> CList::SetAt
 
 A variable of type POSITION is a key for the list.
 

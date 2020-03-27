@@ -10,7 +10,7 @@ ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
 Provides methods for creating or subclassing a window.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -71,12 +71,12 @@ You can use `CWindowImpl` to create a window or subclass an existing window. the
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwindowimpl-class_1.h)]
 
 > [!NOTE]
->  Because `CWndClassInfo` manages the information for just one window class, each window created through an instance of `CWindowImpl` is based on the same window class.
+> Because `CWndClassInfo` manages the information for just one window class, each window created through an instance of `CWindowImpl` is based on the same window class.
 
 `CWindowImpl` also supports window subclassing. The `SubclassWindow` method attaches an existing window to the `CWindowImpl` object and changes the window procedure to `CWindowImpl::WindowProc`. Each instance of `CWindowImpl` can subclass a different window.
 
 > [!NOTE]
->  For any given `CWindowImpl` object, call either `Create` or `SubclassWindow`. Don't invoke both methods on the same object.
+> For any given `CWindowImpl` object, call either `Create` or `SubclassWindow`. Don't invoke both methods on the same object.
 
 In addition to `CWindowImpl`, ATL provides [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) to create a window that's contained in another object.
 
@@ -106,7 +106,7 @@ The base class destructor (~ `CWindowImplRoot`) ensures that the window is gone 
 
 **Header:** atlwin.h
 
-##  <a name="create"></a>  CWindowImpl::Create
+## <a name="create"></a> CWindowImpl::Create
 
 Creates a window based on a new window class.
 
@@ -153,14 +153,14 @@ If successful, the handle to the newly created window. Otherwise, NULL.
 `Create` first registers the window class if it has not yet been registered. The newly created window is automatically attached to the `CWindowImpl` object.
 
 > [!NOTE]
->  Do not call `Create` if you have already called [SubclassWindow](#subclasswindow).
+> Do not call `Create` if you have already called [SubclassWindow](#subclasswindow).
 
 To use a window class that is based on an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro. The existing window class's window procedure is saved in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc). For more information, see the [CWindowImpl](../../atl/reference/cwindowimpl-class.md) overview.
 
 > [!NOTE]
->  If 0 is used as the value for the *MenuOrID* parameter, it must be specified as 0U (the default value) to avoid a compiler error.
+> If 0 is used as the value for the *MenuOrID* parameter, it must be specified as 0U (the default value) to avoid a compiler error.
 
-##  <a name="defwindowproc"></a>  CWindowImpl::DefWindowProc
+## <a name="defwindowproc"></a> CWindowImpl::DefWindowProc
 
 Called by [WindowProc](#windowproc) to process messages not handled by the message map.
 
@@ -194,7 +194,7 @@ By default, `DefWindowProc` calls the [CallWindowProc](/windows/win32/api/winuse
 
 The function with no parameters automatically retrieves the needed parameters from the current message.
 
-##  <a name="getcurrentmessage"></a>  CWindowImpl::GetCurrentMessage
+## <a name="getcurrentmessage"></a> CWindowImpl::GetCurrentMessage
 
 Returns the current message, packaged in the `MSG` structure.
 
@@ -206,7 +206,7 @@ const MSG* GetCurrentMessage();
 
 The current message.
 
-##  <a name="getwindowproc"></a>  CWindowImpl::GetWindowProc
+## <a name="getwindowproc"></a> CWindowImpl::GetWindowProc
 
 Returns `WindowProc`, the current window procedure.
 
@@ -222,7 +222,7 @@ The current window procedure.
 
 Override this method to replace the window procedure with your own.
 
-##  <a name="getwndclassinfo"></a>  CWindowImpl::GetWndClassInfo
+## <a name="getwndclassinfo"></a> CWindowImpl::GetWndClassInfo
 
 Called by [Create](#create) to access the window class information.
 
@@ -242,7 +242,7 @@ To superclass an existing window class, derive your class from `CWindowImpl` and
 
 Besides using the DECLARE_WND_CLASS and DECLARE_WND_SUPERCLASS macros, you can override `GetWndClassInfo` with your own implementation.
 
-##  <a name="m_pfnsuperwindowproc"></a>  CWindowImpl::m_pfnSuperWindowProc
+## <a name="m_pfnsuperwindowproc"></a> CWindowImpl::m_pfnSuperWindowProc
 
 Depending on the window, points to one of the following window procedures.
 
@@ -260,7 +260,7 @@ WNDPROC m_pfnSuperWindowProc;
 
 [CWindowImpl::DefWindowProc](#defwindowproc) sends message information to the window procedure saved in `m_pfnSuperWindowProc`.
 
-##  <a name="onfinalmessage"></a>  CWindowImpl::OnFinalMessage
+## <a name="onfinalmessage"></a> CWindowImpl::OnFinalMessage
 
 Called after receiving the last message (typically WM_NCDESTROY).
 
@@ -277,7 +277,7 @@ virtual void OnFinalMessage(HWND hWnd);
 
 The default implementation of `OnFinalMessage` does nothing, but you can override this function to handle cleanup before destroying a window. If you want to automatically delete your object upon the window destruction, you can call **delete this;** in this function.
 
-##  <a name="subclasswindow"></a>  CWindowImpl::SubclassWindow
+## <a name="subclasswindow"></a> CWindowImpl::SubclassWindow
 
 Subclasses the window identified by *hWnd* and attaches it to the `CWindowImpl` object.
 
@@ -299,9 +299,9 @@ TRUE if the window is successfully subclassed; otherwise, FALSE.
 The subclassed window now uses [CWindowImpl::WindowProc](#windowproc). The original window procedure is saved in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
 > [!NOTE]
->  Do not call `SubclassWindow` if you have already called [Create](#create).
+> Do not call `SubclassWindow` if you have already called [Create](#create).
 
-##  <a name="unsubclasswindow"></a>  CWindowImpl::UnsubclassWindow
+## <a name="unsubclasswindow"></a> CWindowImpl::UnsubclassWindow
 
 Detaches the subclassed window from the `CWindowImpl` object and restores the original window procedure, saved in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
@@ -313,7 +313,7 @@ HWND UnsubclassWindow();
 
 The handle to the window previously subclassed.
 
-##  <a name="windowproc"></a>  CWindowImpl::WindowProc
+## <a name="windowproc"></a> CWindowImpl::WindowProc
 
 This static function implements the window procedure.
 

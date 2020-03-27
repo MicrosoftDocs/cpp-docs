@@ -10,7 +10,7 @@ ms.assetid: ecc7f643-bbd4-47a3-8dc6-b360f880db91
 The Microsoft Library Manager (LIB.exe) creates and manages a library of Common Object File Format (COFF) object files. LIB can also be used to create export files and import libraries to reference exported definitions.
 
 > [!NOTE]
->  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
+> You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
 
 - [Overview of LIB](overview-of-lib.md)
 

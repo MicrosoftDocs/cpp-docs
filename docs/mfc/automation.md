@@ -24,7 +24,7 @@ More important is the support Automation provides to users and solution provider
 
 Many commercial applications, such as Microsoft Excel and Microsoft Visual C++, allow you to automate much of their functionality. For example, in Visual C++, you can write VBScript macros to automate builds, aspects of code editing, or debugging tasks.
 
-##  <a name="_core_passing_parameters_in_automation"></a> Passing Parameters in Automation
+## <a name="_core_passing_parameters_in_automation"></a> Passing Parameters in Automation
 
 One difficulty in creating Automation methods is helping to provide a uniform "safe" mechanism to pass data between automation servers and clients. Automation uses the **VARIANT** type to pass data. The **VARIANT** type is a tagged union. It has a data member for the value (this is an anonymous C++ union) and a data member indicating the type of information stored in the union. The **VARIANT** type supports a number of standard data types: 2- and 4-byte integers, 4- and 8-byte floating-point numbers, strings, and Boolean values. In addition, it supports the **HRESULT** (OLE error codes), **CURRENCY** (a fixed-point numeric type), and **DATE** (absolute date and time) types, as well as pointers to `IUnknown` and `IDispatch` interfaces.
 

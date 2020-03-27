@@ -71,7 +71,7 @@ For more information on `CDumpContext`, see [Debugging MFC Applications](/visual
 
 **Header:** afx.h
 
-##  <a name="cdumpcontext"></a>  CDumpContext::CDumpContext
+## <a name="cdumpcontext"></a> CDumpContext::CDumpContext
 
 Constructs an object of class `CDumpContext`.
 
@@ -94,7 +94,7 @@ Do not write to the underlying `CFile` while the dump context is active; otherwi
 
 [!code-cpp[NVC_MFC_Utilities#12](../../mfc/codesnippet/cpp/cdumpcontext-class_1.cpp)]
 
-##  <a name="dumpashex"></a>  CDumpContext::DumpAsHex
+## <a name="dumpashex"></a> CDumpContext::DumpAsHex
 
 Dumps the specified type formatted as hexadecimal numbers.
 
@@ -121,7 +121,7 @@ Call this member function to dump the item of the specified type as a hexadecima
 
 [!code-cpp[NVC_MFC_Utilities#13](../../mfc/codesnippet/cpp/cdumpcontext-class_2.cpp)]
 
-##  <a name="flush"></a>  CDumpContext::Flush
+## <a name="flush"></a> CDumpContext::Flush
 
 Forces any data remaining in buffers to be written to the file attached to the dump context.
 
@@ -133,7 +133,7 @@ void Flush();
 
 [!code-cpp[NVC_MFC_Utilities#14](../../mfc/codesnippet/cpp/cdumpcontext-class_3.cpp)]
 
-##  <a name="getdepth"></a>  CDumpContext::GetDepth
+## <a name="getdepth"></a> CDumpContext::GetDepth
 
 Determines whether a deep or shallow dump is in process.
 
@@ -149,7 +149,7 @@ The depth of the dump as set by `SetDepth`.
 
   See the example for [SetDepth](#setdepth).
 
-##  <a name="hexdump"></a>  CDumpContext::HexDump
+## <a name="hexdump"></a> CDumpContext::HexDump
 
 Dumps an array of bytes formatted as hexadecimal numbers.
 
@@ -183,7 +183,7 @@ To dump a single, specific item type as a hexadecimal number, call [CDumpContext
 
 [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/cpp/cdumpcontext-class_4.cpp)]
 
-##  <a name="operator_lt_lt"></a>  CDumpContext::operator &lt;&lt;
+## <a name="operator_lt_lt"></a> CDumpContext::operator &lt;&lt;
 
 Outputs the specified data to the dump context.
 
@@ -225,7 +225,7 @@ If you use the IMPLEMENT_DYNAMIC or IMPLEMENT_SERIAL macro in the implementation
 
 [!code-cpp[NVC_MFC_Utilities#17](../../mfc/codesnippet/cpp/cdumpcontext-class_5.cpp)]
 
-##  <a name="setdepth"></a>  CDumpContext::SetDepth
+## <a name="setdepth"></a> CDumpContext::SetDepth
 
 Sets the depth for the dump.
 
@@ -243,7 +243,7 @@ The new depth value.
 If you are dumping a primitive type or simple `CObject` that contains no pointers to other objects, then a value of 0 is sufficient. A value greater than 0 specifies a deep dump where all objects are dumped recursively. For example, a deep dump of a collection will dump all elements of the collection. You may use other specific depth values in your derived classes.
 
 > [!NOTE]
->  Circular references are not detected in deep dumps and can result in infinite loops.
+> Circular references are not detected in deep dumps and can result in infinite loops.
 
 ### Example
 

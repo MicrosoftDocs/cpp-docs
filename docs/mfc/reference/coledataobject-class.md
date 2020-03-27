@@ -58,7 +58,7 @@ For more information about using data objects in your application, see the artic
 
 **Header:** afxole.h
 
-##  <a name="attach"></a>  COleDataObject::Attach
+## <a name="attach"></a> COleDataObject::Attach
 
 Call this function to associate the `COleDataObject` object with an OLE data object.
 
@@ -80,7 +80,7 @@ TRUE if the OLE data object should be released when the `COleDataObject` object 
 
 For more information, see [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) in the Windows SDK.
 
-##  <a name="attachclipboard"></a>  COleDataObject::AttachClipboard
+## <a name="attachclipboard"></a> COleDataObject::AttachClipboard
 
 Call this function to attach the data object that is currently on the Clipboard to the `COleDataObject` object.
 
@@ -95,9 +95,9 @@ Nonzero if successful; otherwise 0.
 ### Remarks
 
 > [!NOTE]
->  Calling this function locks the Clipboard until this data object is released. The data object is released in the destructor for the `COleDataObject`. For more information, see [OpenClipboard](/windows/win32/api/winuser/nf-winuser-openclipboard) and [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) in the Win32 documention.
+> Calling this function locks the Clipboard until this data object is released. The data object is released in the destructor for the `COleDataObject`. For more information, see [OpenClipboard](/windows/win32/api/winuser/nf-winuser-openclipboard) and [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) in the Win32 documention.
 
-##  <a name="beginenumformats"></a>  COleDataObject::BeginEnumFormats
+## <a name="beginenumformats"></a> COleDataObject::BeginEnumFormats
 
 Call this function to prepare for subsequent calls to `GetNextFormat` for retrieving a list of data formats from the item.
 
@@ -113,7 +113,7 @@ To check on the availability of data in a given format, use [COleDataObject::IsD
 
 For more information, see [IDataObject::EnumFormatEtc](/windows/win32/api/objidl/nf-objidl-idataobject-enumformatetc) in the Windows SDK.
 
-##  <a name="coledataobject"></a>  COleDataObject::COleDataObject
+## <a name="coledataobject"></a> COleDataObject::COleDataObject
 
 Constructs a `COleDataObject` object.
 
@@ -126,9 +126,9 @@ COleDataObject();
 A call to [COleDataObject::Attach](#attach) or [COleDataObject::AttachClipboard](#attachclipboard) must be made before calling other `COleDataObject` functions.
 
 > [!NOTE]
->  Since one of the parameters to the drag-and-drop handlers is a pointer to a `COleDataObject`, there is no need to call this constructor to support drag and drop.
+> Since one of the parameters to the drag-and-drop handlers is a pointer to a `COleDataObject`, there is no need to call this constructor to support drag and drop.
 
-##  <a name="detach"></a>  COleDataObject::Detach
+## <a name="detach"></a> COleDataObject::Detach
 
 Call this function to detach the `COleDataObject` object from its associated OLE data object without releasing the data object.
 
@@ -142,7 +142,7 @@ A pointer to the OLE data object that was detached.
 
 ### Remarks
 
-##  <a name="getdata"></a>  COleDataObject::GetData
+## <a name="getdata"></a> COleDataObject::GetData
 
 Call this function to retrieve data from the item in the specified format.
 
@@ -174,7 +174,7 @@ For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-ob
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
-##  <a name="getfiledata"></a>  COleDataObject::GetFileData
+## <a name="getfiledata"></a> COleDataObject::GetFileData
 
 Call this function to create a `CFile` or `CFile`-derived object and to retrieve data in the specified format into a `CFile` pointer.
 
@@ -201,13 +201,13 @@ Pointer to the new `CFile` or `CFile`-derived object containing the data if succ
 Depending on the medium the data is stored in, the actual type pointed to by the return value may be `CFile`, `CSharedFile`, or `COleStreamFile`.
 
 > [!NOTE]
->  The `CFile` object accessed by the return value of this function is owned by the caller. It is the responsibility of the caller to **delete** the `CFile` object, thereby closing the file.
+> The `CFile` object accessed by the return value of this function is owned by the caller. It is the responsibility of the caller to **delete** the `CFile` object, thereby closing the file.
 
 For more information, see [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
-##  <a name="getglobaldata"></a>  COleDataObject::GetGlobalData
+## <a name="getglobaldata"></a> COleDataObject::GetGlobalData
 
 Call this function to allocate a global memory block and to retrieve data in the specified format into an HGLOBAL.
 
@@ -235,7 +235,7 @@ For more information, see [FORMATETC](/windows/win32/api/objidl/ns-objidl-format
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
-##  <a name="getnextformat"></a>  COleDataObject::GetNextFormat
+## <a name="getnextformat"></a> COleDataObject::GetNextFormat
 
 Call this function repeatedly to obtain all the formats available for retrieving data from the item.
 
@@ -260,7 +260,7 @@ To check for the availability of a given format, call [COleDataObject::IsDataAva
 
 For more information, see [IEnumXXXX::Next](/previous-versions//ms695273\(v=vs.85\)) in the Windows SDK.
 
-##  <a name="isdataavailable"></a>  COleDataObject::IsDataAvailable
+## <a name="isdataavailable"></a> COleDataObject::IsDataAvailable
 
 Call this function to determine if a particular format is available for retrieving data from the OLE item.
 
@@ -294,7 +294,7 @@ For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/n
 
   See the example for [CRichEditView::QueryAcceptData](../../mfc/reference/cricheditview-class.md#queryacceptdata).
 
-##  <a name="release"></a>  COleDataObject::Release
+## <a name="release"></a> COleDataObject::Release
 
 Call this function to release ownership of the [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) object that was previously associated with the `COleDataObject` object.
 

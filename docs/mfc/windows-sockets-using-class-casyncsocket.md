@@ -18,7 +18,7 @@ This article covers:
 
 - [Your responsibilities with CAsyncSocket](#_core_your_responsibilities_with_casyncsocket).
 
-##  <a name="_core_creating_and_using_a_casyncsocket_object"></a> Creating and Using a CAsyncSocket Object
+## <a name="_core_creating_and_using_a_casyncsocket_object"></a> Creating and Using a CAsyncSocket Object
 
 #### To use CAsyncSocket
 
@@ -73,7 +73,7 @@ This article covers:
 
 For an example of this sequence in code (actually for a `CSocket` object), see [Windows Sockets: Sequence of Operations](../mfc/windows-sockets-sequence-of-operations.md).
 
-##  <a name="_core_your_responsibilities_with_casyncsocket"></a> Your Responsibilities with CAsyncSocket
+## <a name="_core_your_responsibilities_with_casyncsocket"></a> Your Responsibilities with CAsyncSocket
 
 When you create an object of class [CAsyncSocket](../mfc/reference/casyncsocket-class.md), the object encapsulates a Windows **SOCKET** handle and supplies operations on that handle. When you use `CAsyncSocket`, you must deal with all the issues you might face if using the API directly. For example:
 

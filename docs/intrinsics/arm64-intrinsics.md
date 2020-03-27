@@ -17,7 +17,7 @@ The NEON vector instruction set extensions for ARM64 provide Single Instruction 
 
 NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. The MSVC support for NEON intrinsics resembles that of the ARM64 compiler, which is documented in the [ARM NEON Intrinsic Reference](https://static.docs.arm.com/ihi0073/c/IHI0073C_arm_neon_intrinsics_ref.pdf) on the ARM Infocenter website.
 
-##  <a name="A"></a> ARM64-specific intrinsics listing
+## <a name="A"></a> ARM64-specific intrinsics listing
 
 |Function Name|Instruction|Function Prototype|
 |-------------------|-----------------|------------------------|
@@ -136,7 +136,7 @@ NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. Th
 
 [[Return to top](#top)]
 
-###  <a name="BarrierRestrictions"></a> Memory barrier restrictions
+### <a name="BarrierRestrictions"></a> Memory barrier restrictions
 
 The intrinsic functions `__dmb` (data memory barrier), `__dsb` (data synchronization barrier), and `__isb` (instruction synchronization barrier) use the following predefined values to specify the memory barrier restriction in terms of the sharing domain and the kind of access that are affected by the operation.
 
@@ -157,7 +157,7 @@ The intrinsic functions `__dmb` (data memory barrier), `__dsb` (data synchroniza
 
 For the `__isb` intrinsic, the only restriction that is currently valid is _ARM64_BARRIER_SY; all other values are reserved by the architecture.
 
-###  <a name="IsoVolatileLoadStore"></a> __iso_volatile_load/store intrinsics
+### <a name="IsoVolatileLoadStore"></a> __iso_volatile_load/store intrinsics
 
 These intrinsic functions explicitly perform loads and stores that aren't subject to compiler optimizations.
 
@@ -198,7 +198,7 @@ Notice that the intrinsics take volatile pointers to accommodate volatile variab
 
 For more information about the **/volatile:iso** command-line argument, see [/volatile (volatile keyword interpretation)](../build/reference/volatile-volatile-keyword-interpretation.md).
 
-##  <a name="I"></a> ARM64 support for intrinsics from other architectures
+## <a name="I"></a> ARM64 support for intrinsics from other architectures
 
 The following table lists intrinsics from other architectures that are supported on ARM64 platforms. Where the behavior of an intrinsic on ARM64 differs from its behavior on other hardware architectures, additional details are noted.
 
@@ -270,7 +270,7 @@ Key:
 
 - **None**: Not supported
 
-###  <a name="nf_suffix"></a> _nf (no fence) suffix
+### <a name="nf_suffix"></a> _nf (no fence) suffix
 
 The `_nf` or "no fence" suffix indicates that the operation doesn't behave as any kind of memory barrier, in contrast to the other three forms (plain, `_acq`, and `_rel`), which all behave as some kind of barrier. One possible use of the `_nf` forms is to maintain a statistic counter that is updated by multiple threads at the same time but whose value isn't otherwise used while multiple threads are executing.
 

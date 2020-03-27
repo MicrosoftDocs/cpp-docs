@@ -65,12 +65,12 @@ Template parameter that specifies the argument type that is used to access objec
 Array indexes always start at position 0. You can decide whether to fix the upper bound or enable the array to expand when you add elements past the current bound. Memory is allocated contiguously to the upper bound, even if some elements are null.
 
 > [!NOTE]
->  Most methods that resize a `CArray` object or add elements to it use [memcpy_s](../../c-runtime-library/reference/memcpy-s-wmemcpy-s.md) to move elements. This is a problem because `memcpy_s` is not compatible with any objects that require the constructor to be called. If the items in the `CArray` are not compatible with `memcpy_s`, you must create a new `CArray` of the appropriate size. You must then use [CArray::Copy](#copy) and [CArray::SetAt](#setat) to populate the new array because those methods use an assignment operator instead of `memcpy_s`.
+> Most methods that resize a `CArray` object or add elements to it use [memcpy_s](../../c-runtime-library/reference/memcpy-s-wmemcpy-s.md) to move elements. This is a problem because `memcpy_s` is not compatible with any objects that require the constructor to be called. If the items in the `CArray` are not compatible with `memcpy_s`, you must create a new `CArray` of the appropriate size. You must then use [CArray::Copy](#copy) and [CArray::SetAt](#setat) to populate the new array because those methods use an assignment operator instead of `memcpy_s`.
 
 As with a C array, the access time for a `CArray` indexed element is constant and is independent of the array size.
 
 > [!TIP]
->  Before using an array, use [SetSize](#setsize) to establish its size and allocate memory for it. If you do not use `SetSize`, adding elements to your array causes it to be frequently reallocated and copied. Frequent reallocation and copying are inefficient and can fragment memory.
+> Before using an array, use [SetSize](#setsize) to establish its size and allocate memory for it. If you do not use `SetSize`, adding elements to your array causes it to be frequently reallocated and copied. Frequent reallocation and copying are inefficient and can fragment memory.
 
 If you need a dump of individual elements in an array, you must set the depth of the [CDumpContext](../../mfc/reference/cdumpcontext-class.md) object to 1 or larger.
 
@@ -90,7 +90,7 @@ For more information about how to use `CArray`, see the article [Collections](..
 
 **Header:** afxtempl.h
 
-##  <a name="add"></a>  CArray::Add
+## <a name="add"></a> CArray::Add
 
 Adds a new element to the end of an array, growing the array by 1.
 
@@ -118,7 +118,7 @@ If [SetSize](#setsize) has been used with an `nGrowBy` value greater than 1, the
 
 [!code-cpp[NVC_MFCCollections#22](../../mfc/codesnippet/cpp/carray-class_1.cpp)]
 
-##  <a name="append"></a>  CArray::Append
+## <a name="append"></a> CArray::Append
 
 Call this member function to add the contents of one array to the end of another.
 
@@ -145,7 +145,7 @@ If necessary, `Append` may allocate extra memory to accommodate the elements app
 
 [!code-cpp[NVC_MFCCollections#23](../../mfc/codesnippet/cpp/carray-class_2.cpp)]
 
-##  <a name="carray"></a>  CArray::CArray
+## <a name="carray"></a> CArray::CArray
 
 Constructs an empty array.
 
@@ -161,7 +161,7 @@ The array grows one element at a time.
 
 [!code-cpp[NVC_MFCCollections#24](../../mfc/codesnippet/cpp/carray-class_3.cpp)]
 
-##  <a name="copy"></a>  CArray::Copy
+## <a name="copy"></a> CArray::Copy
 
 Use this member function to copy the elements of one array to another.
 
@@ -184,7 +184,7 @@ Call this member function to overwrite the elements of one array with the elemen
 
 [!code-cpp[NVC_MFCCollections#25](../../mfc/codesnippet/cpp/carray-class_4.cpp)]
 
-##  <a name="elementat"></a>  CArray::ElementAt
+## <a name="elementat"></a> CArray::ElementAt
 
 Returns a temporary reference to the specified element within the array.
 
@@ -210,7 +210,7 @@ It is used to implement the left-side assignment operator for arrays.
 
   See the example for [GetSize](#getsize).
 
-##  <a name="freeextra"></a>  CArray::FreeExtra
+## <a name="freeextra"></a> CArray::FreeExtra
 
 Frees any extra memory that was allocated while the array was grown.
 
@@ -226,7 +226,7 @@ This function has no effect on the size or upper bound of the array.
 
   See the example for [GetData](#getdata).
 
-##  <a name="getat"></a>  CArray::GetAt
+## <a name="getat"></a> CArray::GetAt
 
 Returns the array element at the specified index.
 
@@ -255,7 +255,7 @@ Passing a negative value or a value greater than the value returned by `GetUpper
 
 [!code-cpp[NVC_MFCCollections#26](../../mfc/codesnippet/cpp/carray-class_5.cpp)]
 
-##  <a name="getcount"></a>  CArray::GetCount
+## <a name="getcount"></a> CArray::GetCount
 
 Returns the number of array elements.
 
@@ -275,7 +275,7 @@ Call this method to retrieve the number of elements in the array. Because indexe
 
 [!code-cpp[NVC_MFCCollections#27](../../mfc/codesnippet/cpp/carray-class_6.cpp)]
 
-##  <a name="getdata"></a>  CArray::GetData
+## <a name="getdata"></a> CArray::GetData
 
 Use this member function to gain direct access to the elements in an array.
 
@@ -303,7 +303,7 @@ While direct access to the elements of an array can help you work more quickly, 
 
 [!code-cpp[NVC_MFCCollections#28](../../mfc/codesnippet/cpp/carray-class_7.cpp)]
 
-##  <a name="getsize"></a>  CArray::GetSize
+## <a name="getsize"></a> CArray::GetSize
 
 Returns the size of the array.
 
@@ -319,7 +319,7 @@ Because indexes are zero-based, the size is 1 greater than the largest index. Ca
 
 [!code-cpp[NVC_MFCCollections#29](../../mfc/codesnippet/cpp/carray-class_8.cpp)]
 
-##  <a name="getupperbound"></a>  CArray::GetUpperBound
+## <a name="getupperbound"></a> CArray::GetUpperBound
 
 Returns the current upper bound of this array.
 
@@ -337,7 +337,7 @@ The condition `GetUpperBound( )` = -1 indicates that the array contains no eleme
 
   See the example for [CArray::GetAt](#getat).
 
-##  <a name="insertat"></a>  CArray::InsertAt
+## <a name="insertat"></a> CArray::InsertAt
 
 The first version of `InsertAt` inserts one element (or multiple copies of an element) at a specified index in an array.
 
@@ -384,7 +384,7 @@ The `SetAt` function, in contrast, replaces one specified array element and does
 
 [!code-cpp[NVC_MFCCollections#30](../../mfc/codesnippet/cpp/carray-class_9.cpp)]
 
-##  <a name="isempty"></a>  CArray::IsEmpty
+## <a name="isempty"></a> CArray::IsEmpty
 
 Determines whether the array is empty.
 
@@ -396,7 +396,7 @@ BOOL IsEmpty() const;
 
 Nonzero if the array contains no elements; otherwise 0.
 
-##  <a name="operator_at"></a>  CArray::operator \[\]
+## <a name="operator_at"></a> CArray::operator \[\]
 
 These subscript operators are a convenient substitute for the [SetAt](#setat) and [GetAt](#getat) functions.
 
@@ -423,7 +423,7 @@ The Debug version of the library asserts if the subscript (either on the left or
 
 [!code-cpp[NVC_MFCCollections#34](../../mfc/codesnippet/cpp/carray-class_10.cpp)]
 
-##  <a name="relocateelements"></a>  CArray::RelocateElements
+## <a name="relocateelements"></a> CArray::RelocateElements
 
 Relocates data to a new buffer when the array should grow or shrink.
 
@@ -454,7 +454,7 @@ The [CArray](../../mfc/reference/carray-class.md) implementation uses this metho
 
 For arrays in which an element contains a pointer to one of its own members, or another structure contains a pointer to one of the array elements, the pointers are not updated in plain copy. In this case, you can correct pointers by implementing a specialization of `RelocateElements` with the relevant types. You are also responsible for data copying.
 
-##  <a name="removeall"></a>  CArray::RemoveAll
+## <a name="removeall"></a> CArray::RemoveAll
 
 Removes all the elements from this array.
 
@@ -470,7 +470,7 @@ If the array is already empty, the function still works.
 
 [!code-cpp[NVC_MFCCollections#31](../../mfc/codesnippet/cpp/carray-class_11.cpp)]
 
-##  <a name="removeat"></a>  CArray::RemoveAt
+## <a name="removeat"></a> CArray::RemoveAt
 
 Removes one or more elements starting at a specified index in an array.
 
@@ -498,7 +498,7 @@ If you try to remove more elements than are contained in the array above the rem
 
 [!code-cpp[NVC_MFCCollections#32](../../mfc/codesnippet/cpp/carray-class_12.cpp)]
 
-##  <a name="setat"></a>  CArray::SetAt
+## <a name="setat"></a> CArray::SetAt
 
 Sets the array element at the specified index.
 
@@ -527,7 +527,7 @@ You must ensure that your index value represents a valid position in the array. 
 
   See the example for [GetAt](#getat).
 
-##  <a name="setatgrow"></a>  CArray::SetAtGrow
+## <a name="setatgrow"></a> CArray::SetAtGrow
 
 Sets the array element at the specified index.
 
@@ -554,7 +554,7 @@ The array grows automatically if necessary (that is, the upper bound is adjusted
 
 [!code-cpp[NVC_MFCCollections#33](../../mfc/codesnippet/cpp/carray-class_13.cpp)]
 
-##  <a name="setsize"></a>  CArray::SetSize
+## <a name="setsize"></a> CArray::SetSize
 
 Establishes the size of an empty or existing array; allocates memory if necessary.
 

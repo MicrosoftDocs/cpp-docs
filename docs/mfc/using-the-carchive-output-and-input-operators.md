@@ -42,7 +42,7 @@ The library defines **<\<** and **>>** operators for `CArchive` as the first ope
 |`COleDateTime`|`COleDateTimeSpan`||
 
 > [!NOTE]
->  Storing and loading `CObject`s via an archive requires extra consideration. For more information, see [Storing and Loading CObjects via an Archive](../mfc/storing-and-loading-cobjects-via-an-archive.md).
+> Storing and loading `CObject`s via an archive requires extra consideration. For more information, see [Storing and Loading CObjects via an Archive](../mfc/storing-and-loading-cobjects-via-an-archive.md).
 
 The **CArchive <\<** and **>>** operators always return a reference to the `CArchive` object, which is the first operand. This enables you to chain the operators, as illustrated below:
 

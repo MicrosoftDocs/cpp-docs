@@ -136,7 +136,7 @@ The iterator provided by the hash_map class is a bidirectional iterator, but the
 
 **Namespace:** stdext
 
-## <a name="allocator_type"></a>  hash_map::allocator_type
+## <a name="allocator_type"></a> hash_map::allocator_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -151,7 +151,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 
 See example for [get_allocator](#get_allocator) for an example using `allocator_type`.
 
-## <a name="at"></a>  hash_map::at
+## <a name="at"></a> hash_map::at
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -205,7 +205,7 @@ int main( )
 }
 ```
 
-## <a name="begin"></a>  hash_map::begin
+## <a name="begin"></a> hash_map::begin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -266,7 +266,7 @@ The first element of hm1 is 0.
 The first element of hm1 is now 1.
 ```
 
-## <a name="cbegin"></a>  hash_map::cbegin
+## <a name="cbegin"></a> hash_map::cbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -310,7 +310,7 @@ int main( )
 The first element of hm1 is 2.
 ```
 
-## <a name="cend"></a>  hash_map::cend
+## <a name="cend"></a> hash_map::cend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -361,7 +361,7 @@ int main( )
 The value of last element of hm1 is 30.
 ```
 
-## <a name="clear"></a>  hash_map::clear
+## <a name="clear"></a> hash_map::clear
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -411,7 +411,7 @@ The size of the hash_map is initially 2.
 The size of the hash_map after clearing is 0.
 ```
 
-## <a name="const_iterator"></a>  hash_map::const_iterator
+## <a name="const_iterator"></a> hash_map::const_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -436,7 +436,7 @@ To access the value of the key for the element, use `cIter->first`, which is equ
 
 See example for [begin](#begin) for an example using `const_iterator`.
 
-## <a name="const_pointer"></a>  hash_map::const_pointer
+## <a name="const_pointer"></a> hash_map::const_pointer
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -453,7 +453,7 @@ A type `const_pointer` cannot be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a hash_map object.
 
-## <a name="const_reference"></a>  hash_map::const_reference
+## <a name="const_reference"></a> hash_map::const_reference
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -509,7 +509,7 @@ The key of the first element in the hash_map is 1.
 The data value of the first element in the hash_map is 10.
 ```
 
-## <a name="const_reverse_iterator"></a>  hash_map::const_reverse_iterator
+## <a name="const_reverse_iterator"></a> hash_map::const_reverse_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -534,7 +534,7 @@ To access the value of the key for the element, use `crIter` -> **first**, which
 
 See the example for [rend](#rend) for an example of how to declare and use the `const_reverse_iterator`.
 
-## <a name="count"></a>  hash_map::count
+## <a name="count"></a> hash_map::count
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -606,7 +606,7 @@ The number of elements in hm1 with a sort key of 2 is: 1.
 The number of elements in hm1 with a sort key of 3 is: 0.
 ```
 
-## <a name="crbegin"></a>  hash_map::crbegin
+## <a name="crbegin"></a> hash_map::crbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -658,7 +658,7 @@ int main( )
 The first element of the reversed hash_map hm1 is 3.
 ```
 
-## <a name="crend"></a>  hash_map::crend
+## <a name="crend"></a> hash_map::crend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -713,7 +713,7 @@ int main( )
 The last element of the reversed hash_map hm1 is 3.
 ```
 
-## <a name="difference_type"></a>  hash_map::difference_type
+## <a name="difference_type"></a> hash_map::difference_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -783,7 +783,7 @@ The keys of the mapped elements are: 1 2 3.
 The values of the mapped elements are: 10 20 20.
 ```
 
-## <a name="emplace"></a>  hash_map::emplace
+## <a name="emplace"></a> hash_map::emplace
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -842,7 +842,7 @@ After the emplace insertion, hm1 contains:
 1 => a
 ```
 
-## <a name="emplace_hint"></a>  hash_map::emplace_hint
+## <a name="emplace_hint"></a> hash_map::emplace_hint
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -902,7 +902,7 @@ After the emplace insertion, hm1 contains:
 1 => a
 ```
 
-## <a name="empty"></a>  hash_map::empty
+## <a name="empty"></a> hash_map::empty
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -953,7 +953,7 @@ The hash_map hm1 is not empty.
 The hash_map hm2 is empty.
 ```
 
-## <a name="end"></a>  hash_map::end
+## <a name="end"></a> hash_map::end
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1024,7 +1024,7 @@ The value of last element of hm1 is 30.
 The value of last element of hm1 is now 20.
 ```
 
-## <a name="equal_range"></a>  hash_map::equal_range
+## <a name="equal_range"></a> hash_map::equal_range
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1111,7 +1111,7 @@ matching the 2nd element of the pair returned by equal_range( 2 ).
 The hash_map hm1 doesn't have an element with a key less than 40.
 ```
 
-## <a name="erase"></a>  hash_map::erase
+## <a name="erase"></a> hash_map::erase
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1235,7 +1235,7 @@ After another element with a key equal to that
 of the 2nd element is deleted, the hash_map hm3 is: 0 3.
 ```
 
-## <a name="find"></a>  hash_map::find
+## <a name="find"></a> hash_map::find
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1314,7 +1314,7 @@ The hash_map hm1 doesn't have an element with a key of 4.
 The element of hm1 with a key matching that of the last element is: 30.
 ```
 
-## <a name="get_allocator"></a>  hash_map::get_allocator
+## <a name="get_allocator"></a> hash_map::get_allocator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1390,7 +1390,7 @@ int main( )
 }
 ```
 
-## <a name="hash_map"></a>  hash_map::hash_map
+## <a name="hash_map"></a> hash_map::hash_map
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1468,7 +1468,7 @@ The next three constructors copy the range `[First, Last)` of a hash_map with in
 
 The last constructor moves the hash_map *Right*.
 
-## <a name="insert"></a>  hash_map::insert
+## <a name="insert"></a> hash_map::insert
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1634,7 +1634,7 @@ After the move insertion, hm4 contains:
 2 => b
 ```
 
-## <a name="iterator"></a>  hash_map::iterator
+## <a name="iterator"></a> hash_map::iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1659,7 +1659,7 @@ A type `iterator` can be used to modify the value of an element.
 
 See example for [begin](#begin) for an example of how to declare and use the `iterator`.
 
-## <a name="key_comp"></a>  hash_map::key_comp
+## <a name="key_comp"></a> hash_map::key_comp
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1735,7 +1735,7 @@ int main( )
 }
 ```
 
-## <a name="key_compare"></a>  hash_map::key_compare
+## <a name="key_compare"></a> hash_map::key_compare
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1756,7 +1756,7 @@ For more information on `Traits` see the [hash_map Class](../standard-library/ha
 
 See example for [key_comp](#key_comp) for an example of how to declare and use `key_compare`.
 
-## <a name="key_type"></a>  hash_map::key_type
+## <a name="key_type"></a> hash_map::key_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1777,7 +1777,7 @@ For more information on `Key`, see the Remarks section of the [hash_map Class](.
 
 See example for [value_type](#value_type) for an example of how to declare and use `key_type`.
 
-## <a name="lower_bound"></a>  hash_map::lower_bound
+## <a name="lower_bound"></a> hash_map::lower_bound
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1854,7 +1854,7 @@ The hash_map hm1 doesn't have an element with a key of 4.
 The element of hm1 with a key matching that of the last element is: 30.
 ```
 
-## <a name="mapped_type"></a>  hash_map::mapped_type
+## <a name="mapped_type"></a> hash_map::mapped_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1875,7 +1875,7 @@ For more information on `Type` see the [hash_map Class](../standard-library/hash
 
 See example for [value_type](#value_type) for an example of how to declare and use `key_type`.
 
-## <a name="max_size"></a>  hash_map::max_size
+## <a name="max_size"></a> hash_map::max_size
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -1914,7 +1914,7 @@ int main( )
 }
 ```
 
-## <a name="op_at"></a>  hash_map::operator[]
+## <a name="op_at"></a> hash_map::operator[]
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2011,7 +2011,7 @@ int main( )
 }
 ```
 
-## <a name="op_eq"></a>  hash_map::operator=
+## <a name="op_eq"></a> hash_map::operator=
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2072,7 +2072,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>  hash_map::pointer
+## <a name="pointer"></a> hash_map::pointer
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2089,7 +2089,7 @@ A type `pointer` can be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a hash_map object.
 
-## <a name="rbegin"></a>  hash_map::rbegin
+## <a name="rbegin"></a> hash_map::rbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2173,7 +2173,7 @@ The reversed hash_map is: 3 2 1 .
 After the erasure, the first element in the reversed hash_map is 2.
 ```
 
-## <a name="reference"></a>  hash_map::reference
+## <a name="reference"></a> hash_map::reference
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2236,7 +2236,7 @@ The data value of first element in the hash_map is 10.
 The modified data value of first element is 15.
 ```
 
-## <a name="rend"></a>  hash_map::rend
+## <a name="rend"></a> hash_map::rend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2326,7 +2326,7 @@ The reversed hash_map is: 3 2 1 .
 After the erasure, the last element in the reversed hash_map is 2.
 ```
 
-## <a name="reverse_iterator"></a>  hash_map::reverse_iterator
+## <a name="reverse_iterator"></a> hash_map::reverse_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2351,7 +2351,7 @@ To access the value of the key for the element, use `rIter` -> **first**, which 
 
 See example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.
 
-## <a name="size"></a>  hash_map::size
+## <a name="size"></a> hash_map::size
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2401,7 +2401,7 @@ The hash_map length is 1.
 The hash_map length is now 2.
 ```
 
-## <a name="size_type"></a>  hash_map::size_type
+## <a name="size_type"></a> hash_map::size_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2418,7 +2418,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 
 See example for [size](#size) for an example of how to declare and use `size_type`
 
-## <a name="swap"></a>  hash_map::swap
+## <a name="swap"></a> hash_map::swap
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2492,7 +2492,7 @@ After swapping with hm2, hash_map hm1 is: 100 200.
 After swapping with hm3, hash_map hm1 is: 300.
 ```
 
-## <a name="upper_bound"></a>  hash_map::upper_bound
+## <a name="upper_bound"></a> hash_map::upper_bound
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2570,7 +2570,7 @@ The 1st element of hm1 with a key greater than that
 of the initial element of hm1 is: 20.
 ```
 
-## <a name="value_comp"></a>  hash_map::value_comp
+## <a name="value_comp"></a> hash_map::value_comp
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
@@ -2638,7 +2638,7 @@ int main( )
 }
 ```
 
-## <a name="value_type"></a>  hash_map::value_type
+## <a name="value_type"></a> hash_map::value_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).

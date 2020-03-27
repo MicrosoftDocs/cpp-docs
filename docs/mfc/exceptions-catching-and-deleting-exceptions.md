@@ -21,7 +21,7 @@ Your **catch** block must delete an exception when:
 - Execution returns from within the **catch** block.
 
 > [!NOTE]
->  When deleting a `CException`, use the `Delete` member function to delete the exception. Do not use the **delete** keyword, because it can fail if the exception is not on the heap.
+> When deleting a `CException`, use the `Delete` member function to delete the exception. Do not use the **delete** keyword, because it can fail if the exception is not on the heap.
 
 #### To catch and delete exceptions
 

@@ -8,7 +8,7 @@ ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
 # TN022: Standard Commands Implementation
 
 > [!NOTE]
->  The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
+> The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
 
 This note describes the standard command implementations provided by MFC 2.0. Read [Technical Note 21](../mfc/tn021-command-and-message-routing.md) first because it describes the mechanisms used to implement many of the standard commands.
 

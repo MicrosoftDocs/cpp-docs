@@ -10,7 +10,7 @@ ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
 This class implements `IUnknown` and the [IPointerInactive](/windows/win32/api/ocidl/nn-ocidl-ipointerinactive) interface methods.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ Class `IPointerInactiveImpl` implements the `IPointerInactive` methods by simply
 
 **Header:** atlctl.h
 
-##  <a name="getactivationpolicy"></a>  IPointerInactiveImpl::GetActivationPolicy
+## <a name="getactivationpolicy"></a> IPointerInactiveImpl::GetActivationPolicy
 
 Retrieves the current activation policy for the object.
 
@@ -70,7 +70,7 @@ Returns E_NOTIMPL.
 
 See [IPointerInactive::GetActivationPolicy](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-getactivationpolicy) in the Windows SDK.
 
-##  <a name="oninactivemousemove"></a>  IPointerInactiveImpl::OnInactiveMouseMove
+## <a name="oninactivemousemove"></a> IPointerInactiveImpl::OnInactiveMouseMove
 
 Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events.
 
@@ -90,7 +90,7 @@ Returns E_NOTIMPL.
 
 See [IPointerInactive::OnInactiveMouseMove](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-oninactivemousemove) in the Windows SDK.
 
-##  <a name="oninactivesetcursor"></a>  IPointerInactiveImpl::OnInactiveSetCursor
+## <a name="oninactivesetcursor"></a> IPointerInactiveImpl::OnInactiveSetCursor
 
 Sets the mouse pointer for the inactive object.
 

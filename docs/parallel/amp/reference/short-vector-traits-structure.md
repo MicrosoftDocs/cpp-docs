@@ -99,13 +99,13 @@ struct short_vector_traits<double_4>;
 
 **Namespace:** Concurrency::graphics
 
-## <a name="ctor"></a>  short_vector_traits::short_vector_traits Constructor
+## <a name="ctor"></a> short_vector_traits::short_vector_traits Constructor
 
 ```cpp
 short_vector_traits();
 ```
 
-## <a name="size"></a>  short_vector_traits::size Constant
+## <a name="size"></a> short_vector_traits::size Constant
 
 ```cpp
 static int const size = 1;

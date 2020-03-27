@@ -63,7 +63,7 @@ This is an implementation detail.
 
 **Namespace:** Microsoft::WRL
 
-## <a name="tilde-runtimeclass"></a>RuntimeClass::~RuntimeClass
+## <a name="tilde-runtimeclass"></a> RuntimeClass::~RuntimeClass
 
 Deinitializes the current instance of the `RuntimeClass` class.
 
@@ -71,7 +71,7 @@ Deinitializes the current instance of the `RuntimeClass` class.
 virtual ~RuntimeClass();
 ```
 
-## <a name="addref"></a>RuntimeClass::AddRef
+## <a name="addref"></a> RuntimeClass::AddRef
 
 Increments the reference count for the current `RuntimeClass` object.
 
@@ -86,7 +86,7 @@ STDMETHOD_(
 
 S_OK if successful; otherwise, an HRESULT that indicates the error.
 
-## <a name="decrementreference"></a>RuntimeClass::DecrementReference
+## <a name="decrementreference"></a> RuntimeClass::DecrementReference
 
 Decrements the reference count for the current `RuntimeClass` object.
 
@@ -98,7 +98,7 @@ ULONG DecrementReference();
 
 S_OK if successful; otherwise, an HRESULT that indicates the error.
 
-## <a name="getiids"></a>RuntimeClass::GetIids
+## <a name="getiids"></a> RuntimeClass::GetIids
 
 Gets an array that can contain the interface IDs implemented by the current `RuntimeClass` object.
 
@@ -122,7 +122,7 @@ When this operation completes, a pointer to an array of interface IDs.
 
 S_OK if successful; otherwise, E_OUTOFMEMORY.
 
-## <a name="getruntimeclassname"></a>RuntimeClass::GetRuntimeClassName
+## <a name="getruntimeclassname"></a> RuntimeClass::GetRuntimeClassName
 
 Gets the runtime class name of the current `RuntimeClass` object.
 
@@ -145,7 +145,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 An assert error is emitted if `__WRL_STRICT__` or `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` isn't defined.
 
-## <a name="gettrustlevel"></a>RuntimeClass::GetTrustLevel
+## <a name="gettrustlevel"></a> RuntimeClass::GetTrustLevel
 
 Gets the trust level of the current `RuntimeClass` object.
 
@@ -168,7 +168,7 @@ Always S_OK.
 
 An assert error is emitted if `__WRL_STRICT__` or `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` isn't defined.
 
-## <a name="getweakreference"></a>RuntimeClass::GetWeakReference
+## <a name="getweakreference"></a> RuntimeClass::GetWeakReference
 
 Gets a pointer to the weak reference object for the current `RuntimeClass` object.
 
@@ -187,7 +187,7 @@ When this operation completes, a pointer to a weak reference object.
 
 Always S_OK.
 
-## <a name="internaladdref"></a>RuntimeClass::InternalAddRef
+## <a name="internaladdref"></a> RuntimeClass::InternalAddRef
 
 Increments the reference count to the current `RuntimeClass` object.
 
@@ -199,7 +199,7 @@ ULONG InternalAddRef();
 
 The resulting reference count.
 
-## <a name="queryinterface"></a>RuntimeClass::QueryInterface
+## <a name="queryinterface"></a> RuntimeClass::QueryInterface
 
 Retrieves a pointer to the specified interface ID.
 
@@ -223,7 +223,7 @@ When this opereation completes, a pointer to the interface specified by the *rii
 
 S_OK if successful; otherwise, an HRESULT that indicates the error.
 
-## <a name="release"></a>RuntimeClass::Release
+## <a name="release"></a> RuntimeClass::Release
 
 Performs a COM Release operation on the current `RuntimeClass` object.
 
@@ -242,7 +242,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 If the reference count becomes zero, the `RuntimeClass` object is deleted.
 
-## <a name="runtimeclass"></a>RuntimeClass::RuntimeClass
+## <a name="runtimeclass"></a> RuntimeClass::RuntimeClass
 
 Initializes the current instance of the `RuntimeClass` class.
 

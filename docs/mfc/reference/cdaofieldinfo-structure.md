@@ -66,7 +66,7 @@ A value that indicates the data type of the field. For details, see the topic "T
 - `dbGUID` A Globally Unique Identifier/Universally Unique Identifier used with remote procedure calls. For more information, see the topic "Type Property" in DAO Help.
 
 > [!NOTE]
->  Do not use string data types for binary data. This causes your data to pass through the Unicode/ANSI translation layer, resulting in increased overhead and possibly unexpected translation.
+> Do not use string data types for binary data. This causes your data to pass through the Unicode/ANSI translation layer, resulting in increased overhead and possibly unexpected translation.
 
 *m_lSize*<br/>
 A value that indicates the maximum size, in bytes, of a DAO field object that contains text or the fixed size of a field object that contains text or numeric values. For details, see the topic "Size Property" in DAO Help. Sizes can be one of the following values:

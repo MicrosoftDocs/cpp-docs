@@ -205,7 +205,7 @@ The third form of `Open` allows the command string to be NULL, because of type *
 Use the fourth form of `Open` when you have already created a command and you want to perform a single [Prepare](../../data/oledb/ccommand-prepare.md) and multiple executions.
 
 > [!NOTE]
->  `Open` calls `Execute`, which in turn calls `GetNextResult`.
+> `Open` calls `Execute`, which in turn calls `GetNextResult`.
 
 ## <a name="create"></a> CCommand::Create
 

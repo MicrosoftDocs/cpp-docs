@@ -13,9 +13,9 @@ The Microsoft Foundation Class Library provides collection classes to manage gro
 - [Collection classes not created from templates](#_core_the_collection_classes_not_based_on_templates)
 
 > [!NOTE]
->  If your code already uses nontemplate collection classes, you can continue to use them. If you write new type-safe collection classes for your own data types, we recommend that you use the newer template-based classes.
+> If your code already uses nontemplate collection classes, you can continue to use them. If you write new type-safe collection classes for your own data types, we recommend that you use the newer template-based classes.
 
-##  <a name="_core_collection_shapes"></a> Collection Shapes
+## <a name="_core_collection_shapes"></a> Collection Shapes
 
 A collection class is characterized by its "shape" and by the types of its elements. The shape refers to the way the objects are organized and stored by the collection. MFC provides three basic collection shapes: lists, arrays, and maps (also known as dictionaries). You can pick the collection shape that is most suited to your particular programming problem.
 
@@ -33,7 +33,7 @@ Each of the three provided collection shapes is described briefly later in this 
 
    A map is a collection that associates a key object with a value object.
 
-##  <a name="_core_the_template_based_collection_classes"></a> The Template-Based Collection Classes
+## <a name="_core_the_template_based_collection_classes"></a> The Template-Based Collection Classes
 
 The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../overview/visual-cpp-samples.md).
 
@@ -46,7 +46,7 @@ The following table lists the MFC template-based collection classes.
 |Collections of objects of any type|`CArray`|`CList`|`CMap`|
 |Collections of pointers to objects of any type|`CTypedPtrArray`|`CTypedPtrList`|`CTypedPtrMap`|
 
-##  <a name="_core_the_collection_classes_not_based_on_templates"></a> The Collection Classes Not Based on Templates
+## <a name="_core_the_collection_classes_not_based_on_templates"></a> The Collection Classes Not Based on Templates
 
 If your application already uses MFC nontemplate classes, you can continue to use them. However, for new collections, we recommend that you use the template-based classes. The following table lists the MFC collection classes that are not based on templates.
 

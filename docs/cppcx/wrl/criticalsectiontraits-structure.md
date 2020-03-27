@@ -41,7 +41,7 @@ Name                                                       | Description
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="getinvalidvalue"></a>CriticalSectionTraits::GetInvalidValue
+## <a name="getinvalidvalue"></a> CriticalSectionTraits::GetInvalidValue
 
 Specializes a `CriticalSection` template so that the template is always invalid.
 
@@ -57,7 +57,7 @@ Always returns a pointer to an invalid critical section.
 
 The `Type` modifier is defined as `typedef CRITICAL_SECTION* Type;`.
 
-## <a name="unlock"></a>CriticalSectionTraits::Unlock
+## <a name="unlock"></a> CriticalSectionTraits::Unlock
 
 Specializes a `CriticalSection` template so that it supports releasing ownership of the specified critical section object.
 

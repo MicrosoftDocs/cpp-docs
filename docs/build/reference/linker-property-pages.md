@@ -4,7 +4,6 @@ ms.date: "07/24/2019"
 ms.topic: "article"
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
 ---
-
 # Linker Property Pages
 
 The following properties are found under **Project** > **Properties** > **Configuration Properties** > **Linker**. For more information about the linker, see [CL Invokes the Linker](cl-invokes-the-linker.md) and [Linker Options](linker-options.md).

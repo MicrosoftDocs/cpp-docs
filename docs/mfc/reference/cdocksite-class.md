@@ -88,7 +88,7 @@ The following example demonstrates how to create an object of the `CDockSite` cl
 
 **Header:** afxDockSite.h
 
-##  <a name="addrow"></a>  CDockSite::AddRow
+## <a name="addrow"></a> CDockSite::AddRow
 
 ```
 CDockingPanesRow* AddRow(
@@ -106,7 +106,7 @@ CDockingPanesRow* AddRow(
 
 ### Remarks
 
-##  <a name="adjustdockinglayout"></a>  CDockSite::AdjustDockingLayout
+## <a name="adjustdockinglayout"></a> CDockSite::AdjustDockingLayout
 
 ```
 virtual void AdjustDockingLayout();
@@ -114,7 +114,7 @@ virtual void AdjustDockingLayout();
 
 ### Remarks
 
-##  <a name="adjustlayout"></a>  CDockSite::AdjustLayout
+## <a name="adjustlayout"></a> CDockSite::AdjustLayout
 
 ```
 virtual void AdjustLayout();
@@ -122,7 +122,7 @@ virtual void AdjustLayout();
 
 ### Remarks
 
-##  <a name="aligndocksite"></a>  CDockSite::AlignDockSite
+## <a name="aligndocksite"></a> CDockSite::AlignDockSite
 
 ```
 void AlignDockSite(
@@ -141,7 +141,7 @@ void AlignDockSite(
 
 ### Remarks
 
-##  <a name="calcfixedlayout"></a>  CDockSite::CalcFixedLayout
+## <a name="calcfixedlayout"></a> CDockSite::CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -159,7 +159,7 @@ virtual CSize CalcFixedLayout(
 
 ### Remarks
 
-##  <a name="canacceptpane"></a>  CDockSite::CanAcceptPane
+## <a name="canacceptpane"></a> CDockSite::CanAcceptPane
 
 ```
 virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
@@ -173,7 +173,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 ### Remarks
 
-##  <a name="createex"></a>  CDockSite::CreateEx
+## <a name="createex"></a> CDockSite::CreateEx
 
 ```
 virtual BOOL CreateEx(
@@ -203,7 +203,7 @@ virtual BOOL CreateEx(
 
 ### Remarks
 
-##  <a name="createrow"></a>  CDockSite::CreateRow
+## <a name="createrow"></a> CDockSite::CreateRow
 
 ```
 virtual CDockingPanesRow* CreateRow(
@@ -224,7 +224,7 @@ virtual CDockingPanesRow* CreateRow(
 
 ### Remarks
 
-##  <a name="dockpane"></a>  CDockSite::DockPane
+## <a name="dockpane"></a> CDockSite::DockPane
 
 ```
 virtual void DockPane(
@@ -243,7 +243,7 @@ virtual void DockPane(
 
 ### Remarks
 
-##  <a name="dockpaneleftof"></a>  CDockSite::DockPaneLeftOf
+## <a name="dockpaneleftof"></a> CDockSite::DockPaneLeftOf
 
 Docks a pane to the left of another pane.
 
@@ -267,7 +267,7 @@ TRUE if the pane is docked successfully; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="doesallowdyninsertbefore"></a>  CDockSite::DoesAllowDynInsertBefore
+## <a name="doesallowdyninsertbefore"></a> CDockSite::DoesAllowDynInsertBefore
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -277,7 +277,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### Remarks
 
-##  <a name="findpanebyid"></a>  CDockSite::FindPaneByID
+## <a name="findpanebyid"></a> CDockSite::FindPaneByID
 
 Returns the pane with the given ID.
 
@@ -296,7 +296,7 @@ A pointer to the pane with the specified command ID, or NULL if the pane is not 
 
 ### Remarks
 
-##  <a name="findrowindex"></a>  CDockSite::FindRowIndex
+## <a name="findrowindex"></a> CDockSite::FindRowIndex
 
 ```
 int FindRowIndex(CDockingPanesRow* pRow);
@@ -310,7 +310,7 @@ int FindRowIndex(CDockingPanesRow* pRow);
 
 ### Remarks
 
-##  <a name="fixupvirtualrects"></a>  CDockSite::FixupVirtualRects
+## <a name="fixupvirtualrects"></a> CDockSite::FixupVirtualRects
 
 ```
 virtual void FixupVirtualRects();
@@ -318,7 +318,7 @@ virtual void FixupVirtualRects();
 
 ### Remarks
 
-##  <a name="getdocksiteid"></a>  CDockSite::GetDockSiteID
+## <a name="getdocksiteid"></a> CDockSite::GetDockSiteID
 
 ```
 virtual UINT GetDockSiteID() const;
@@ -328,7 +328,7 @@ virtual UINT GetDockSiteID() const;
 
 ### Remarks
 
-##  <a name="getdocksiterowslist"></a>  CDockSite::GetDockSiteRowsList
+## <a name="getdocksiterowslist"></a> CDockSite::GetDockSiteRowsList
 
 ```
 const CObList& GetDockSiteRowsList() const;
@@ -338,7 +338,7 @@ const CObList& GetDockSiteRowsList() const;
 
 ### Remarks
 
-##  <a name="getpanelist"></a>  CDockSite::GetPaneList
+## <a name="getpanelist"></a> CDockSite::GetPaneList
 
 Returns a list of panes that are docked in the dock site.
 
@@ -350,7 +350,7 @@ const CObList& GetPaneList() const;
 
 A read-only reference to the list of panes currently docked in the docking bar.
 
-##  <a name="isaccessibilitycompatible"></a>  CDockSite::IsAccessibilityCompatible
+## <a name="isaccessibilitycompatible"></a> CDockSite::IsAccessibilityCompatible
 
 ```
 virtual BOOL IsAccessibilityCompatible();
@@ -360,7 +360,7 @@ virtual BOOL IsAccessibilityCompatible();
 
 ### Remarks
 
-##  <a name="isdragmode"></a>  CDockSite::IsDragMode
+## <a name="isdragmode"></a> CDockSite::IsDragMode
 
 ```
 virtual BOOL IsDragMode() const;
@@ -370,7 +370,7 @@ virtual BOOL IsDragMode() const;
 
 ### Remarks
 
-##  <a name="islastrow"></a>  CDockSite::IsLastRow
+## <a name="islastrow"></a> CDockSite::IsLastRow
 
 ```
 bool IsLastRow(CDockingPanesRow* pRow) const;
@@ -384,7 +384,7 @@ bool IsLastRow(CDockingPanesRow* pRow) const;
 
 ### Remarks
 
-##  <a name="isrectwithindocksite"></a>  CDockSite::IsRectWithinDockSite
+## <a name="isrectwithindocksite"></a> CDockSite::IsRectWithinDockSite
 
 ```
 BOOL IsRectWithinDockSite(
@@ -402,7 +402,7 @@ BOOL IsRectWithinDockSite(
 
 ### Remarks
 
-##  <a name="isresizable"></a>  CDockSite::IsResizable
+## <a name="isresizable"></a> CDockSite::IsResizable
 
 ```
 virtual BOOL IsResizable() const;
@@ -412,7 +412,7 @@ virtual BOOL IsResizable() const;
 
 ### Remarks
 
-##  <a name="movepane"></a>  CDockSite::MovePane
+## <a name="movepane"></a> CDockSite::MovePane
 
 ```
 virtual BOOL MovePane(
@@ -433,7 +433,7 @@ virtual BOOL MovePane(
 
 ### Remarks
 
-##  <a name="oninsertrow"></a>  CDockSite::OnInsertRow
+## <a name="oninsertrow"></a> CDockSite::OnInsertRow
 
 ```
 virtual void OnInsertRow(POSITION pos);
@@ -445,7 +445,7 @@ virtual void OnInsertRow(POSITION pos);
 
 ### Remarks
 
-##  <a name="onremoverow"></a>  CDockSite::OnRemoveRow
+## <a name="onremoverow"></a> CDockSite::OnRemoveRow
 
 ```
 virtual void OnRemoveRow(
@@ -461,7 +461,7 @@ virtual void OnRemoveRow(
 
 ### Remarks
 
-##  <a name="onresizerow"></a>  CDockSite::OnResizeRow
+## <a name="onresizerow"></a> CDockSite::OnResizeRow
 
 ```
 virtual int OnResizeRow(
@@ -479,7 +479,7 @@ virtual int OnResizeRow(
 
 ### Remarks
 
-##  <a name="onsizeparent"></a>  CDockSite::OnSizeParent
+## <a name="onsizeparent"></a> CDockSite::OnSizeParent
 
 ```
 virtual void OnSizeParent(
@@ -501,7 +501,7 @@ virtual void OnSizeParent(
 
 ### Remarks
 
-##  <a name="onsetwindowpos"></a>  CDockSite::OnSetWindowPos
+## <a name="onsetwindowpos"></a> CDockSite::OnSetWindowPos
 
 ```
 virtual BOOL OnSetWindowPos(
@@ -522,7 +522,7 @@ virtual BOOL OnSetWindowPos(
 
 ### Remarks
 
-##  <a name="onshowrow"></a>  CDockSite::OnShowRow
+## <a name="onshowrow"></a> CDockSite::OnShowRow
 
 ```
 virtual void OnShowRow(
@@ -538,7 +538,7 @@ virtual void OnShowRow(
 
 ### Remarks
 
-##  <a name="panefrompoint"></a>  CDockSite::PaneFromPoint
+## <a name="panefrompoint"></a> CDockSite::PaneFromPoint
 
 Returns a pane that is docked in the dock site at the point specified by the given parameter.
 
@@ -557,7 +557,7 @@ A pointer to the pane located at the specified point or NULL if no pane was pres
 
 ### Remarks
 
-##  <a name="rectsidefrompoint"></a>  CDockSite::RectSideFromPoint
+## <a name="rectsidefrompoint"></a> CDockSite::RectSideFromPoint
 
 ```
 static int __stdcall RectSideFromPoint(
@@ -575,7 +575,7 @@ static int __stdcall RectSideFromPoint(
 
 ### Remarks
 
-##  <a name="removepane"></a>  CDockSite::RemovePane
+## <a name="removepane"></a> CDockSite::RemovePane
 
 ```
 virtual void RemovePane(
@@ -591,7 +591,7 @@ virtual void RemovePane(
 
 ### Remarks
 
-##  <a name="removerow"></a>  CDockSite::RemoveRow
+## <a name="removerow"></a> CDockSite::RemoveRow
 
 ```
 void RemoveRow(CDockingPanesRow* pRow);
@@ -603,7 +603,7 @@ void RemoveRow(CDockingPanesRow* pRow);
 
 ### Remarks
 
-##  <a name="replacepane"></a>  CDockSite::ReplacePane
+## <a name="replacepane"></a> CDockSite::ReplacePane
 
 ```
 BOOL ReplacePane(
@@ -621,7 +621,7 @@ BOOL ReplacePane(
 
 ### Remarks
 
-##  <a name="repositionpanes"></a>  CDockSite::RepositionPanes
+## <a name="repositionpanes"></a> CDockSite::RepositionPanes
 
 ```
 virtual void RepositionPanes(CRect& rectNewClientArea);
@@ -633,7 +633,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 ### Remarks
 
-##  <a name="resizedocksite"></a>  CDockSite::ResizeDockSite
+## <a name="resizedocksite"></a> CDockSite::ResizeDockSite
 
 ```
 void ResizeDockSite(
@@ -649,7 +649,7 @@ void ResizeDockSite(
 
 ### Remarks
 
-##  <a name="resizerow"></a>  CDockSite::ResizeRow
+## <a name="resizerow"></a> CDockSite::ResizeRow
 
 ```
 int ResizeRow(
@@ -670,7 +670,7 @@ int ResizeRow(
 
 ### Remarks
 
-##  <a name="showpane"></a>  CDockSite::ShowPane
+## <a name="showpane"></a> CDockSite::ShowPane
 
 Shows the pane.
 
@@ -704,7 +704,7 @@ TRUE if the pane was shown or hidden successfully. FALSE if the specified pane d
 
 Call this method to show or hide docked panes. Normally, you do not have to call `CDockSite::ShowPane` directly, because it is called by the parent frame window or by the base pane.
 
-##  <a name="showrow"></a>  CDockSite::ShowRow
+## <a name="showrow"></a> CDockSite::ShowRow
 
 ```
 void ShowRow(
@@ -723,7 +723,7 @@ void ShowRow(
 
 ### Remarks
 
-##  <a name="swaprows"></a>  CDockSite::SwapRows
+## <a name="swaprows"></a> CDockSite::SwapRows
 
 ```
 void SwapRows(

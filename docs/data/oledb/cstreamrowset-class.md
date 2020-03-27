@@ -51,7 +51,7 @@ or
 SQL Server 2000 performs the XML formatting, and will return all columns and all rows of the rowset as one XML string.
 
 > [!NOTE]
->  This feature works with SQL Server 2000 only.
+> This feature works with SQL Server 2000 only.
 
 ## <a name="cstreamrowset"></a> CStreamRowset::CStreamRowset
 

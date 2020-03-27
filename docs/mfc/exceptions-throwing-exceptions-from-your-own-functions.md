@@ -29,7 +29,7 @@ When an exception is thrown, execution of the current function is stopped and ju
    [!code-cpp[NVC_MFCExceptions#18](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_2.cpp)]
 
 > [!NOTE]
->  MFC's default handling of exceptions applies only to pointers to `CException` objects (and objects of `CException`-derived classes). The example above bypasses MFC's exception mechanism.
+> MFC's default handling of exceptions applies only to pointers to `CException` objects (and objects of `CException`-derived classes). The example above bypasses MFC's exception mechanism.
 
 ## See also
 

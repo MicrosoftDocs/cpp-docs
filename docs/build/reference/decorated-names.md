@@ -13,7 +13,7 @@ The decorated naming conventions have changed in various versions of Visual Stud
 > [!NOTE]
 > Libraries built with Visual Studio 2015 can be consumed by applications built with Visual Studio 2017 or Visual Studio 2019.
 
-##  <a name="Using"></a> Using decorated names
+## <a name="Using"></a> Using decorated names
 
 Normally, you don't have to know the decorated name to write code that compiles and links successfully. Decorated names are an implementation detail internal to the compiler and linker. The tools can usually handle the name in its undecorated form. However, a decorated name is sometimes required when you specify a function name to the linker and other tools. For example, to match overloaded C++ functions, members of namespaces, class constructors, destructors and special member functions, you must specify the decorated name. For details about the option flags and other situations that require decorated names, see the documentation for the tools and options that you are using.
 
@@ -21,7 +21,7 @@ If you change the function name, class, calling convention, return type, or any 
 
 Name decoration is also important when linking to code written in other programming languages or using other compilers. Different compilers use different name decoration conventions. When your executable links to code written in another language, special care must be taken to match the exported and imported names and calling conventions. Assembly language code must use the MSVC decorated names and calling conventions to link to source code written using MSVC.
 
-##  <a name="Format"></a> Format of a C++ decorated name
+## <a name="Format"></a> Format of a C++ decorated name
 
 A decorated name for a C++ function contains the following information:
 
@@ -44,7 +44,7 @@ The function and class names are encoded in the decorated name. The rest of the 
 |`int a(char){int i=3;return i;};`|`?a@@YAHD@Z`|
 |`void __stdcall b::c(float){};`|`?c@b@@AAGXM@Z`|
 
-##  <a name="FormatC"></a> Format of a C decorated name
+## <a name="FormatC"></a> Format of a C decorated name
 
 The form of decoration for a C function depends on the calling convention used in its declaration, as shown in the following table. This is also the decoration format that is used when C++ code is declared to have `extern "C"` linkage. The default calling convention is `__cdecl`. Note that in a 64-bit environment, functions are not decorated.
 
@@ -55,7 +55,7 @@ The form of decoration for a C function depends on the calling convention used i
 |`__fastcall`|Leading and trailing at signs (**\@**) followed by a decimal number representing the number of bytes in the parameter list|
 |`__vectorcall`|Two trailing at signs (**\@\@**) followed by a decimal number of bytes in the parameter list|
 
-##  <a name="Viewing"></a> Viewing decorated names
+## <a name="Viewing"></a> Viewing decorated names
 
 You can get the decorated form of a symbol name after you compile the source file that contains the data, object, or function definition or prototype. To examine decorated names in your program, you can use one of the following methods:
 
@@ -73,7 +73,7 @@ You can get the decorated form of a symbol name after you compile the source fil
 
 2. To find the decorated form of a symbol, look for the undecorated name in parentheses. The decorated name is on the same line, after a pipe (&#124;) character and before the undecorated name.
 
-##  <a name="Undecorated"></a> Viewing undecorated names
+## <a name="Undecorated"></a> Viewing undecorated names
 
 You can use undname.exe to convert a decorated name to its undecorated form. This example shows how it works:
 

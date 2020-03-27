@@ -22,7 +22,7 @@ ref class auto_handle;
 *_element_type*<br/>
 The managed type to be embedded.
 
-## <a name="members"></a>Members
+## <a name="members"></a> Members
 
 ### Public constructors  
 
@@ -56,7 +56,7 @@ The managed type to be embedded.
 
 **Namespace** msclr
 
-## <a name="auto-handle"></a>auto_handle::auto_handle
+## <a name="auto-handle"></a> auto_handle::auto_handle
 
 The `auto_handle` constructor.
 
@@ -147,7 +147,7 @@ in RefClassA destructor: second
 done
 ```
 
-## <a name="tilde-auto-handle"></a>auto_handle::~auto_handle
+## <a name="tilde-auto-handle"></a> auto_handle::~auto_handle
 
 The `auto_handle` destructor.
 
@@ -194,7 +194,7 @@ ClassA destructor
 done
 ```
 
-## <a name="get"></a>auto_handle::get
+## <a name="get"></a> auto_handle::get
 
 Gets the contained object.
 
@@ -254,7 +254,7 @@ Hello from first A!
 in ClassA destructor:first
 ```
 
-## <a name="release"></a>auto_handle::release
+## <a name="release"></a> auto_handle::release
 
 Releases the object from `auto_handle` management.
 
@@ -317,7 +317,7 @@ Hello from first A!
 done
 ```
 
-## <a name="reset"></a>auto_handle::reset
+## <a name="reset"></a> auto_handle::reset
 
 Destroy the current owned object and optionally take possession of a new object.
 
@@ -383,7 +383,7 @@ ClassA destructor: second
 done
 ```
 
-## <a name="swap"></a>auto_handle::swap
+## <a name="swap"></a> auto_handle::swap
 
 Swaps objects with another `auto_handle`.
 
@@ -425,7 +425,7 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="operator-arrow"></a>auto_handle::operator-&gt;
+## <a name="operator-arrow"></a> auto_handle::operator-&gt;
 
 The member access operator.
 
@@ -474,7 +474,7 @@ Hello from first A!
 a->m_i = 5
 ```
 
-## <a name="operator-assign"></a>auto_handle::operator=
+## <a name="operator-assign"></a> auto_handle::operator=
 
 Assignment operator.
 
@@ -558,7 +558,7 @@ done
 in ClassA destructor: second
 ```
 
-## <a name="operator-auto-handle"></a>auto_handle::operator auto_handle
+## <a name="operator-auto-handle"></a> auto_handle::operator auto_handle
 
 Type-cast operator between `auto_handle` and compatible types.
 
@@ -613,7 +613,7 @@ Hello from first B!
 Hello from first A!
 ```
 
-## <a name="operator-bool"></a>auto_handle::operator bool
+## <a name="operator-bool"></a> auto_handle::operator bool
 
 Operator for using `auto_handle` in a conditional expression.
 
@@ -658,7 +658,7 @@ s2 is valid
 s2 is now invalid
 ```
 
-## <a name="operator-logical-not"></a>auto_handle::operator!
+## <a name="operator-logical-not"></a> auto_handle::operator!
 
 Operator for using `auto_handle` in a conditional expression.
 

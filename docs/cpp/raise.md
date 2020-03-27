@@ -22,7 +22,7 @@ From managed code, an event can only be raised from within the class where it is
 The keyword **__raise** causes an error to be emitted if you call a non-event.
 
 > [!NOTE]
->  A templated class or struct cannot contain events.
+> A templated class or struct cannot contain events.
 
 ## Example
 

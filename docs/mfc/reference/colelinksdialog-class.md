@@ -40,7 +40,7 @@ class COleLinksDialog : public COleDialog
 Create an object of class `COleLinksDialog` when you want to call this dialog box. After a `COleLinksDialog` object has been constructed, you can use the [m_el](#m_el) structure to initialize the values or states of controls in the dialog box. The `m_el` structure is of type OLEUIEDITLINKS. For more information about using this dialog class, see the [DoModal](#domodal) member function.
 
 > [!NOTE]
->  Application Wizard-generated container code uses this class.
+> Application Wizard-generated container code uses this class.
 
 For more information, see the [OLEUIEDITLINKS](/windows/win32/api/oledlg/ns-oledlg-oleuieditlinksw) structure in the Windows SDK.
 
@@ -66,7 +66,7 @@ For more information regarding OLE-specific dialog boxes, see the article [Dialo
 
 **Header:** afxodlgs.h
 
-##  <a name="domodal"></a>  COleLinksDialog::DoModal
+## <a name="domodal"></a> COleLinksDialog::DoModal
 
 Displays the OLE Edit Links dialog box.
 
@@ -88,7 +88,7 @@ Completion status for the dialog box. One of the following values:
 
 If you want to initialize the various dialog box controls by setting members of the [m_el](#m_el) structure, you should do it before calling `DoModal`, but after the dialog object is constructed.
 
-##  <a name="colelinksdialog"></a>  COleLinksDialog::COleLinksDialog
+## <a name="colelinksdialog"></a> COleLinksDialog::COleLinksDialog
 
 Constructs a `COleLinksDialog` object.
 
@@ -118,7 +118,7 @@ Points to the parent or owner window object (of type `CWnd`) to which the dialog
 
 This function constructs only a `COleLinksDialog` object. To display the dialog box, call the [DoModal](#domodal) function.
 
-##  <a name="m_el"></a>  COleLinksDialog::m_el
+## <a name="m_el"></a> COleLinksDialog::m_el
 
 Structure of type OLEUIEDITLINKS used to control the behavior of the Edit Links dialog box.
 

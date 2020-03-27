@@ -42,7 +42,7 @@ Name                                 | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="event"></a>Event::Event
+## <a name="event"></a> Event::Event
 
 Initializes a new instance of the `Event` class.
 
@@ -60,7 +60,7 @@ WRL_NOTHROW Event(
 *h*<br/>
 Handle to an event. By default, *h* is initialized to `nullptr`.
 
-## <a name="operator-assign"></a>Event::operator=
+## <a name="operator-assign"></a> Event::operator=
 
 Assigns the specified `Event` reference to the current `Event` instance.
 

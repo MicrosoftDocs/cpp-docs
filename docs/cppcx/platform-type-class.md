@@ -68,8 +68,7 @@ The name of the type.
 
 ### Example
 
-```
-
+```cpp
 //  namespace is TestApp
 MainPage::MainPage()
 {

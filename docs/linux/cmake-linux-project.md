@@ -4,7 +4,6 @@ description: "How to create, configure, edit, and compile a Linux CMake project 
 ms.date: "10/04/2019"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
-
 # Create and configure a Linux CMake project
 
 ::: moniker range="vs-2015"

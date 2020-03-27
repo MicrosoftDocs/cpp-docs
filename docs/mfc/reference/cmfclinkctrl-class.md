@@ -60,7 +60,7 @@ The following example demonstrates how to set the size of a `CMFCLinkCtrl` objec
 
 **Header:** afxlinkctrl.h
 
-##  <a name="ondrawfocusrect"></a>  CMFCLinkCtrl::OnDrawFocusRect
+## <a name="ondrawfocusrect"></a> CMFCLinkCtrl::OnDrawFocusRect
 
 Called by the framework before the focus rectangle of the button is drawn.
 
@@ -82,7 +82,7 @@ virtual void OnDrawFocusRect(
 
 Override this method when you want to use your own code to draw the button's focus rectangle.
 
-##  <a name="seturl"></a>  CMFCLinkCtrl::SetURL
+## <a name="seturl"></a> CMFCLinkCtrl::SetURL
 
 Displays a specified URL as the button text.
 
@@ -97,7 +97,7 @@ void SetURL(LPCTSTR lpszURL);
 
 ### Remarks
 
-##  <a name="seturlprefix"></a>  CMFCLinkCtrl::SetURLPrefix
+## <a name="seturlprefix"></a> CMFCLinkCtrl::SetURLPrefix
 
 Sets the implicit protocol (for example, "http:") of the URL.
 
@@ -114,7 +114,7 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 
 Use this method to set the URL prefix. The prefix is not displayed on the button's face, but you can use it to help browse to the URL's target.
 
-##  <a name="sizetocontent"></a>  CMFCLinkCtrl::SizeToContent
+## <a name="sizetocontent"></a> CMFCLinkCtrl::SizeToContent
 
 Resizes the button to contain the button text or bitmap.
 

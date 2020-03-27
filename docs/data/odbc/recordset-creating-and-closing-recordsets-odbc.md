@@ -21,7 +21,7 @@ This topic explains:
 
 - [When and how to close a recordset object](#_core_closing_a_recordset).
 
-##  <a name="_core_creating_recordsets_at_run_time"></a> Creating Recordsets at Run Time
+## <a name="_core_creating_recordsets_at_run_time"></a> Creating Recordsets at Run Time
 
 Before you can create recordset objects in your program, you typically write application-specific recordset classes. For more information about this preliminary step, see [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md).
 
@@ -65,9 +65,9 @@ if(!rsStudent.Open(CRecordset::snapshot, NULL, CRecordset::readOnly))
 After you call `Open`, use the member functions and data members of the object to work with the records. In some cases, you might want to requery or refresh the recordset to include changes that have occurred on the data source. For more information, see [Recordset: Requerying a Recordset (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md).
 
 > [!TIP]
->  The connect string you use during development might not be the same connect string that your eventual users need. For ideas about generalizing your application in this regard, see [Data Source: Managing Connections (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md).
+> The connect string you use during development might not be the same connect string that your eventual users need. For ideas about generalizing your application in this regard, see [Data Source: Managing Connections (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md).
 
-##  <a name="_core_setting_recordset_options"></a> Setting Recordset Options
+## <a name="_core_setting_recordset_options"></a> Setting Recordset Options
 
 After you construct your recordset object but before you call `Open` to select records, you might want to set some options to control the recordset's behavior. For all recordsets, you can:
 
@@ -82,9 +82,9 @@ You can also set the following option if conditions are right:
 - If the recordset is updateable and supports locking options, specify the [locking](../../data/odbc/recordset-locking-records-odbc.md) method used for updates.
 
 > [!NOTE]
->  To affect record selection, you must set these options before you call the `Open` member function.
+> To affect record selection, you must set these options before you call the `Open` member function.
 
-##  <a name="_core_closing_a_recordset"></a> Closing a Recordset
+## <a name="_core_closing_a_recordset"></a> Closing a Recordset
 
 When you finish with your recordset, you must dispose of it and deallocate its memory.
 

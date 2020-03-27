@@ -131,7 +131,7 @@ In this example, notice that you can still use the explicit conversion construct
 
 Although the convenience of allowing implicit conversions can be tempting, doing so can introduce hard-to-find bugs. The rule of thumb is to make all conversion constructors explicit except when you're sure that you want a specific conversion to occur implicitly.
 
-##  <a name="ConvFunc"></a> Conversion functions
+## <a name="ConvFunc"></a> Conversion functions
 
 Conversion functions define conversions from a user-defined type to other types. These functions are sometimes referred to as "cast operators" because they, along with conversion constructors, are called when a value is cast to a different type. The following example demonstrates a conversion function that converts from the user-defined type, `Money`, to a built-in type, **double**:
 

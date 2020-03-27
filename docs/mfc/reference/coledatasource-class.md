@@ -62,7 +62,7 @@ For more information about data sources and data transfer, see the article [Data
 
 **Header:** afxole.h
 
-##  <a name="cachedata"></a>  COleDataSource::CacheData
+## <a name="cachedata"></a> COleDataSource::CacheData
 
 Call this function to specify a format in which data is offered during data transfer operations.
 
@@ -98,7 +98,7 @@ For more information, see the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-us
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
-##  <a name="cacheglobaldata"></a>  COleDataSource::CacheGlobalData
+## <a name="cacheglobaldata"></a> COleDataSource::CacheGlobalData
 
 Call this function to specify a format in which data is offered during data transfer operations.
 
@@ -130,7 +130,7 @@ For more information, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-fo
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
-##  <a name="coledatasource"></a>  COleDataSource::COleDataSource
+## <a name="coledatasource"></a> COleDataSource::COleDataSource
 
 Constructs a `COleDataSource` object.
 
@@ -138,7 +138,7 @@ Constructs a `COleDataSource` object.
 COleDataSource();
 ```
 
-##  <a name="delayrenderdata"></a>  COleDataSource::DelayRenderData
+## <a name="delayrenderdata"></a> COleDataSource::DelayRenderData
 
 Call this function to specify a format in which data is offered during data transfer operations.
 
@@ -168,7 +168,7 @@ For more information, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-fo
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
-##  <a name="delayrenderfiledata"></a>  COleDataSource::DelayRenderFileData
+## <a name="delayrenderfiledata"></a> COleDataSource::DelayRenderFileData
 
 Call this function to specify a format in which data is offered during data transfer operations.
 
@@ -198,7 +198,7 @@ For more information, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-fo
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
-##  <a name="delaysetdata"></a>  COleDataSource::DelaySetData
+## <a name="delaysetdata"></a> COleDataSource::DelaySetData
 
 Call this function to support changing the contents of the data source.
 
@@ -224,7 +224,7 @@ For more information, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-fo
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
-##  <a name="dodragdrop"></a>  COleDataSource::DoDragDrop
+## <a name="dodragdrop"></a> COleDataSource::DoDragDrop
 
 Call the `DoDragDrop` member function to perform a drag-and-drop operation for this data source, typically in an [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) handler.
 
@@ -274,7 +274,7 @@ For more information about how drag delay information is stored in either the re
 
 For more information, see the article [OLE drag and drop](../../mfc/drag-and-drop-ole.md).
 
-##  <a name="empty"></a>  COleDataSource::Empty
+## <a name="empty"></a> COleDataSource::Empty
 
 Call this function to empty the `COleDataSource` object of data.
 
@@ -288,7 +288,7 @@ Both cached and delay render formats are emptied so they can be reused.
 
 For more information, see [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) in the Windows SDK.
 
-##  <a name="flushclipboard"></a>  COleDataSource::FlushClipboard
+## <a name="flushclipboard"></a> COleDataSource::FlushClipboard
 
 Renders data that is on the Clipboard, and then lets you paste data from the Clipboard after your application shuts down.
 
@@ -300,7 +300,7 @@ static void PASCAL FlushClipboard();
 
 Use [SetClipboard](#setclipboard) to put data on the Clipboard.
 
-##  <a name="getclipboardowner"></a>  COleDataSource::GetClipboardOwner
+## <a name="getclipboardowner"></a> COleDataSource::GetClipboardOwner
 
 Determines whether the data on the Clipboard has changed since [SetClipboard](#setclipboard) was last called and, if so, identifies the current owner.
 
@@ -312,7 +312,7 @@ static COleDataSource* PASCAL GetClipboardOwner();
 
 The data source currently on the Clipboard, or NULL if there is nothing on the Clipboard or if the Clipboard is not owned by the calling application.
 
-##  <a name="onrenderdata"></a>  COleDataSource::OnRenderData
+## <a name="onrenderdata"></a> COleDataSource::OnRenderData
 
 Called by the framework to retrieve data in the specified format.
 
@@ -344,7 +344,7 @@ This is an advanced overridable. Override this function to supply your data in t
 
 For more information, see the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structures, the [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) enumeration type, and [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.
 
-##  <a name="onrenderfiledata"></a>  COleDataSource::OnRenderFileData
+## <a name="onrenderfiledata"></a> COleDataSource::OnRenderFileData
 
 Called by the framework to retrieve data in the specified format when the specified storage medium is a file.
 
@@ -374,7 +374,7 @@ This is an advanced overridable. Override this function to supply your data in t
 
 For more information, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure and [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.
 
-##  <a name="onrenderglobaldata"></a>  COleDataSource::OnRenderGlobalData
+## <a name="onrenderglobaldata"></a> COleDataSource::OnRenderGlobalData
 
 Called by the framework to retrieve data in the specified format when the specified storage medium is global memory.
 
@@ -406,7 +406,7 @@ This is an advanced overridable. Override this function to supply your data in t
 
 For more information, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure and [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.
 
-##  <a name="onsetdata"></a>  COleDataSource::OnSetData
+## <a name="onsetdata"></a> COleDataSource::OnSetData
 
 Called by the framework to set or replace the data in the `COleDataSource` object in the specified format.
 
@@ -440,7 +440,7 @@ The default implementation does nothing. Override this function to replace the d
 
 For more information, see the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structures and the [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) and [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) functions in the Windows SDK.
 
-##  <a name="setclipboard"></a>  COleDataSource::SetClipboard
+## <a name="setclipboard"></a> COleDataSource::SetClipboard
 
 Puts the data contained in the `COleDataSource` object on the Clipboard after calling one of the following functions: [CacheData](#cachedata), [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), or [DelayRenderFileData](#delayrenderfiledata).
 

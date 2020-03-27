@@ -66,7 +66,7 @@ Name                      | Description
 
 **Namespace:** Microsoft::WRL::Wrappers::Details
 
-## <a name="tilde-synclockt"></a>SyncLockT::~SyncLockT
+## <a name="tilde-synclockt"></a> SyncLockT::~SyncLockT
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -80,7 +80,7 @@ Deinitializes an instance of the `SyncLockT` class.
 
 This destructor also unlocks the current `SyncLockT` instance.
 
-## <a name="islocked"></a>SyncLockT::IsLocked
+## <a name="islocked"></a> SyncLockT::IsLocked
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -96,7 +96,7 @@ bool IsLocked() const;
 
 Indicates whether the current `SyncLockT` object owns a resource; that is, the `SyncLockT` object is *locked*.
 
-## <a name="sync"></a>SyncLockT::sync_
+## <a name="sync"></a> SyncLockT::sync_
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -108,7 +108,7 @@ typename SyncTraits::Type sync_;
 
 Holds the underlying resource represented by the `SyncLockT` class.
 
-## <a name="synclockt"></a>SyncLockT::SyncLockT
+## <a name="synclockt"></a> SyncLockT::SyncLockT
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -136,7 +136,7 @@ Initializes a new instance of the `SyncLockT` class.
 
 The first constructor initializes the current `SyncLockT` object from another `SyncLockT` object specified by parameter *other*, and then invalidates the other `SyncLockT` object. The second constructor is `protected`, and initializes the current `SyncLockT` object to an invalid state.
 
-## <a name="unlock"></a>SyncLockT::Unlock
+## <a name="unlock"></a> SyncLockT::Unlock
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

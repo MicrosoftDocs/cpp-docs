@@ -11,7 +11,7 @@ ms.assetid: 7e13f18f-3628-4306-8b81-4a6d09c043fe
 Assembly language serves many purposes, such as improving program speed, reducing memory needs, and controlling hardware. You can use the inline assembler to embed assembly-language instructions directly in your C and C++ source programs without extra assembly and link steps. The inline assembler is built into the compiler, so you don't need a separate assembler such as the Microsoft Macro Assembler (MASM).
 
 > [!NOTE]
->  Programs with inline assembler code are not fully portable to other hardware platforms. If you are designing for portability, avoid using inline assembler.
+> Programs with inline assembler code are not fully portable to other hardware platforms. If you are designing for portability, avoid using inline assembler.
 
 Inline assembly is not supported on the ARM and x64 processors.  The following topics explain how to use the Visual C/C++ inline assembler with x86 processors:
 

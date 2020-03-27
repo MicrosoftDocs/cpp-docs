@@ -8,7 +8,7 @@ ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
 
 This article shows how to define and consume user-defined reference types and value types in C++/CLI.
 
-##  <a name="BKMK_Contents"></a> Contents
+## <a name="BKMK_Contents"></a> Contents
 
 [Object instantiation](#BKMK_Object_instantiation)
 
@@ -30,7 +30,7 @@ This article shows how to define and consume user-defined reference types and va
 
 [Destructors and finalizers](#BKMK_Destructors_and_finalizers)
 
-##  <a name="BKMK_Object_instantiation"></a> Object instantiation
+## <a name="BKMK_Object_instantiation"></a> Object instantiation
 
 Reference (ref) types can only be instantiated on the managed heap, not on the stack or on the native heap. Value types can be instantiated on the stack or the managed heap.
 
@@ -85,7 +85,7 @@ int main() {
 }
 ```
 
-##  <a name="BKMK_Implicitly_abstract_classes"></a> Implicitly abstract classes
+## <a name="BKMK_Implicitly_abstract_classes"></a> Implicitly abstract classes
 
 An *implicitly abstract class* can't be instantiated. A class is implicitly abstract if the base type of the class is an interface and the class does not implement all of the interface's member functions.
 
@@ -113,7 +113,7 @@ int main() {
 }
 ```
 
-##  <a name="BKMK_Type_visibility"></a> Type visibility
+## <a name="BKMK_Type_visibility"></a> Type visibility
 
 You can control the visibility of common language runtime (CLR) types so that, if an assembly is referenced, types in the assembly can be visible or not visible outside the assembly.
 
@@ -210,7 +210,7 @@ int main() {
 in Public_Class
 ```
 
-##  <a name="BKMK_Member_visibility"></a> Member visibility
+## <a name="BKMK_Member_visibility"></a> Member visibility
 
 You can make access to a member of a public class from within the same assembly different than access to it from outside the assembly by using pairs of the access specifiers `public`, `protected`, and `private`
 
@@ -398,7 +398,7 @@ exiting function of derived class
 =======================
 ```
 
-##  <a name="BKMK_Public_and_private_native_classes"></a> Public and private native classes
+## <a name="BKMK_Public_and_private_native_classes"></a> Public and private native classes
 
 A native type can be referenced from a managed type.  For example, a function in a managed type can take a parameter whose type is a native struct.  If the managed type and function are public in an assembly, then the native type must also be public.
 
@@ -437,7 +437,7 @@ int main() {
 }
 ```
 
-##  <a name="BKMK_Static_constructors"></a> Static constructors
+## <a name="BKMK_Static_constructors"></a> Static constructors
 
 A CLR type—for example, a class or struct—can have a static constructor that can be used to initialize static data members.  A static constructor is called at most once, and is called before any static member of the type is accessed the first time.
 
@@ -483,7 +483,7 @@ in static constructor
 11
 ```
 
-##  <a name="BKMK_Semantics_of_the_this_pointer"></a> Semantics of the this pointer
+## <a name="BKMK_Semantics_of_the_this_pointer"></a> Semantics of the this pointer
 
 When you are using Visual C++ to define types, the `this` pointer in a reference type is of type "handle". The `this` pointer in a value type is of type "interior pointer".
 
@@ -538,7 +538,7 @@ int main() {
 10.89
 ```
 
-##  <a name="BKMK_Hide_by_signature_functions"></a> Hide-by-signature functions
+## <a name="BKMK_Hide_by_signature_functions"></a> Hide-by-signature functions
 
 In standard C++, a function in a base class is hidden by a function that has the same name in a derived class, even if the derived-class function does not have the same number or kind of parameters. This is referred to as *hide-by-name* semantics. In a reference type, a function in a base class can only be hidden by a function in a derived class if both the name and the parameter list are the same. This is known as *hide-by-signature* semantics.
 
@@ -646,7 +646,7 @@ Derived::Test4
 97
 ```
 
-##  <a name="BKMK_Copy_constructors"></a> Copy constructors
+## <a name="BKMK_Copy_constructors"></a> Copy constructors
 
 The C++ standard says that a copy constructor is called when an object is moved, such that an object is created and destroyed at the same address.
 
@@ -711,7 +711,7 @@ S object 1 being destroyed, this=0018F37C
 S object 0 being destroyed, this=0018F378
 ```
 
-##  <a name="BKMK_Destructors_and_finalizers"></a> Destructors and finalizers
+## <a name="BKMK_Destructors_and_finalizers"></a> Destructors and finalizers
 
 Destructors in a reference type perform a deterministic clean-up of resources. Finalizers clean up unmanaged resources and can be called deterministically by the destructor or nondeterministically by the garbage collector. For information about destructors in standard C++, see [Destructors](../cpp/destructors-cpp.md).
 

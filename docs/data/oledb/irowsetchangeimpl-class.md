@@ -67,7 +67,7 @@ This interface is responsible for immediate write operations to a data store. "I
 The OLE DB Templates implementation supports all the base methods (`SetData`, `InsertRow`, and `DeleteRows`).
 
 > [!IMPORTANT]
->  It is strongly recommended that you read the following documentation BEFORE attempting to implement your provider:
+> It is strongly recommended that you read the following documentation BEFORE attempting to implement your provider:
 
 - [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)
 

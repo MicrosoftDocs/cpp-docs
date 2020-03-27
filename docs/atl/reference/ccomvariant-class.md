@@ -65,7 +65,7 @@ class CComVariant : public tagVARIANT
 
 **Header:** atlcomcli.h
 
-##  <a name="attach"></a>  CComVariant::Attach
+## <a name="attach"></a> CComVariant::Attach
 
 Safely clears the current contents of the `CComVariant` object, copies the contents of *pSrc* into this object, then sets the variant type of *pSrc* to VT_EMPTY.
 
@@ -86,7 +86,7 @@ A standard HRESULT value.
 
 Ownership of the data held by *pSrc* is transferred to the `CComVariant` object.
 
-##  <a name="ccomvariant"></a>  CComVariant::CComVariant
+## <a name="ccomvariant"></a> CComVariant::CComVariant
 
 Each constructor handles the safe initialization of the `CComVariant` object by calling the `VariantInit` Win32 function or by setting the object's value and type according to the parameters passed.
 
@@ -157,7 +157,7 @@ Or, the SAFERRAY pointer used to initialize the `CComVariant` object. A copy of 
 
 The destructor manages cleanup by calling [CComVariant::Clear](#clear).
 
-##  <a name="dtor"></a>  CComVariant::~CComVariant
+## <a name="dtor"></a> CComVariant::~CComVariant
 
 The destructor.
 
@@ -169,7 +169,7 @@ The destructor.
 
 This method manages cleanup by calling [CComVariant::Clear](#clear).
 
-##  <a name="changetype"></a>  CComVariant::ChangeType
+## <a name="changetype"></a> CComVariant::ChangeType
 
 Converts the `CComVariant` object to a new type.
 
@@ -193,7 +193,7 @@ A standard HRESULT value.
 
 If you pass a value for *pSrc*, `ChangeType` will use this VARIANT as the source for the conversion. Otherwise, the `CComVariant` object will be the source.
 
-##  <a name="clear"></a>  CComVariant::Clear
+## <a name="clear"></a> CComVariant::Clear
 
 Clears the `CComVariant` object by calling the `VariantClear` Win32 function.
 
@@ -209,7 +209,7 @@ A standard HRESULT value.
 
 The destructor automatically calls `Clear`.
 
-##  <a name="copy"></a>  CComVariant::Copy
+## <a name="copy"></a> CComVariant::Copy
 
 Frees the `CComVariant` object and then assigns it a copy of the specified VARIANT.
 
@@ -226,7 +226,7 @@ HRESULT Copy(const VARIANT* pSrc);
 
 A standard HRESULT value.
 
-##  <a name="copyto"></a>  CComVariant::CopyTo
+## <a name="copyto"></a> CComVariant::CopyTo
 
 Copies the contents of the `CComVariant` object.
 
@@ -247,7 +247,7 @@ A standard HRESULT value.
 
 The `CComVariant` object must be of type VT_BSTR.
 
-##  <a name="detach"></a>  CComVariant::Detach
+## <a name="detach"></a> CComVariant::Detach
 
 Detaches the underlying VARIANT from the `CComVariant` object and sets the object's type to VT_EMPTY.
 
@@ -268,7 +268,7 @@ A standard HRESULT value.
 
 Note that the contents of the VARIANT referenced by *pDest* will automatically be cleared before being assigned the value and type of the calling `CComVariant` object.
 
-##  <a name="getsize"></a>  CComVariant::GetSize
+## <a name="getsize"></a> CComVariant::GetSize
 
 For simple-fixed size VARIANTs, this method returns the **sizeof** the underlying data type plus **sizeof(VARTYPE)**.
 
@@ -288,7 +288,7 @@ In all other cases, a temporary VARIANT of type VT_BSTR is coerced from the curr
 
 The size returned by this method matches the number of bytes used by [CComVariant::WriteToStream](#writetostream) under successful conditions.
 
-##  <a name="operator_eq"></a>  CComVariant::operator =
+## <a name="operator_eq"></a> CComVariant::operator =
 
 Assigns a value and corresponding type to the `CComVariant` object.
 
@@ -351,7 +351,7 @@ Or, a SAFEARRAY pointer to be assigned to the `CComVariant` object. A copy of th
 *cSrc*<br/>
 [in] The char to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_I1.
 
-##  <a name="operator_eq_eq"></a>  CComVariant::operator ==
+## <a name="operator_eq_eq"></a> CComVariant::operator ==
 
 Indicates whether the `CComVariant` object equals the specified VARIANT.
 
@@ -365,7 +365,7 @@ Returns TRUE if the value and type of *varSrc* are equal to the value and type, 
 
 The operator compares only the value of the variant types. It compares strings, integers, and floating points, but not arrays or records.
 
-##  <a name="operator_neq"></a>  CComVariant::operator !=
+## <a name="operator_neq"></a> CComVariant::operator !=
 
 Indicates whether the `CComVariant` object does not equal the specified VARIANT.
 
@@ -379,7 +379,7 @@ Returns TRUE if either the value or type of *varSrc* is not equal to the value o
 
 The operator compares only the value of the variant types. It compares strings, integers, and floating points, but not arrays or records.
 
-##  <a name="operator_lt"></a>  CComVariant::operator &lt;
+## <a name="operator_lt"></a> CComVariant::operator &lt;
 
 Indicates whether the `CComVariant` object is less than the specified VARIANT.
 
@@ -391,7 +391,7 @@ bool operator<(const VARIANT& varSrc) const throw();
 
 Returns TRUE if the value of the `CComVariant` object is less than the value of *varSrc*. Otherwise, FALSE. The operator uses the user's default locale to perform the comparison.
 
-##  <a name="operator_gt"></a>  CComVariant::operator &gt;
+## <a name="operator_gt"></a> CComVariant::operator &gt;
 
 Indicates whether the `CComVariant` object is greater than the specified VARIANT.
 
@@ -403,7 +403,7 @@ bool operator>(const VARIANT& varSrc) const throw();
 
 Returns TRUE if the value of the `CComVariant` object is greater than the value of *varSrc*. Otherwise, FALSE. The operator uses the user's default locale to perform the comparison.
 
-##  <a name="readfromstream"></a>  CComVariant::ReadFromStream
+## <a name="readfromstream"></a> CComVariant::ReadFromStream
 
 Sets the underlying VARIANT to the VARIANT contained in the specified stream.
 
@@ -424,7 +424,7 @@ A standard HRESULT value.
 
 `ReadToStream` requires a previous call to [WriteToStream](#writetostream).
 
-##  <a name="setbyref"></a>  CComVariant::SetByRef
+## <a name="setbyref"></a> CComVariant::SetByRef
 
 Initializes the `CComVariant` object and sets the `vt` member to VT_BYREF.
 
@@ -447,7 +447,7 @@ The pointer used to initialize the `CComVariant` object.
 
 [!code-cpp[NVC_ATL_Utilities#76](../../atl/codesnippet/cpp/ccomvariant-class_1.cpp)]
 
-##  <a name="writetostream"></a>  CComVariant::WriteToStream
+## <a name="writetostream"></a> CComVariant::WriteToStream
 
 Saves the underlying VARIANT to a stream.
 

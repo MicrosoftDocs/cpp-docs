@@ -89,7 +89,7 @@ The recommended way to work with ODBC data sources is to attach external tables 
 Each database maintains its own collections of tabledef, querydef, recordset, and relation objects. Class `CDaoDatabase` supplies member functions for manipulating these objects.
 
 > [!NOTE]
->  The objects are stored in DAO, not in the MFC database object. MFC supplies classes for tabledef, querydef, and recordset objects but not for relation objects.
+> The objects are stored in DAO, not in the MFC database object. MFC supplies classes for tabledef, querydef, and recordset objects but not for relation objects.
 
 ## Inheritance Hierarchy
 
@@ -101,7 +101,7 @@ Each database maintains its own collections of tabledef, querydef, recordset, an
 
 **Header:** afxdao.h
 
-##  <a name="cantransact"></a>  CDaoDatabase::CanTransact
+## <a name="cantransact"></a> CDaoDatabase::CanTransact
 
 Call this member function to determine whether the database allows transactions.
 
@@ -117,7 +117,7 @@ Nonzero if the database supports transactions; otherwise 0.
 
 Transactions are managed in the database's workspace.
 
-##  <a name="canupdate"></a>  CDaoDatabase::CanUpdate
+## <a name="canupdate"></a> CDaoDatabase::CanUpdate
 
 Call this member function to determine whether the `CDaoDatabase` object allows updates.
 
@@ -133,7 +133,7 @@ Nonzero if the `CDaoDatabase` object allows updates; otherwise 0, indicating eit
 
 For information about database updatability, see the topic "Updatable Property" in DAO Help.
 
-##  <a name="cdaodatabase"></a>  CDaoDatabase::CDaoDatabase
+## <a name="cdaodatabase"></a> CDaoDatabase::CDaoDatabase
 
 Constructs a `CDaoDatabase` object.
 
@@ -155,9 +155,9 @@ When you finish with the object, you should call its [Close](#close) member func
 You might find it convenient to embed the `CDaoDatabase` object in your document class.
 
 > [!NOTE]
->  A `CDaoDatabase` object is also created implicitly if you open a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object without passing a pointer to an existing `CDaoDatabase` object. This database object is closed when you close the recordset object.
+> A `CDaoDatabase` object is also created implicitly if you open a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object without passing a pointer to an existing `CDaoDatabase` object. This database object is closed when you close the recordset object.
 
-##  <a name="close"></a>  CDaoDatabase::Close
+## <a name="close"></a> CDaoDatabase::Close
 
 Call this member function to disconnect from a database and close any open recordsets, tabledefs, and querydefs associated with the database.
 
@@ -170,14 +170,14 @@ virtual void Close();
 It is good practice to close these objects yourself before you call this member function. Closing a `CDaoDatabase` object removes it from the Databases collection in the associated [workspace](../../mfc/reference/cdaoworkspace-class.md). Because `Close` does not destroy the `CDaoDatabase` object, you can reuse the object by opening the same database or a different database.
 
 > [!CAUTION]
->  Call the [Update](../../mfc/reference/cdaorecordset-class.md#update) member function (if there are pending edits) and the `Close` member function on all open recordset objects before you close a database. If you exit a function that declares [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) or `CDaoDatabase` objects on the stack, the database is closed, any unsaved changes are lost, all pending transactions are rolled back, and any pending edits to your data are lost.
+> Call the [Update](../../mfc/reference/cdaorecordset-class.md#update) member function (if there are pending edits) and the `Close` member function on all open recordset objects before you close a database. If you exit a function that declares [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) or `CDaoDatabase` objects on the stack, the database is closed, any unsaved changes are lost, all pending transactions are rolled back, and any pending edits to your data are lost.
 
 > [!CAUTION]
->  If you try to close a database object while any recordset objects are open, or if you try to close a workspace object while any database objects belonging to that specific workspace are open, those recordset objects will be closed and any pending updates or edits will be rolled back. If you try to close a workspace object while any database objects belonging to it are open, the operation closes all database objects belonging to that specific workspace object, which may result in unclosed recordset objects being closed. If you do not close your database object, MFC reports an assertion failure in debug builds.
+> If you try to close a database object while any recordset objects are open, or if you try to close a workspace object while any database objects belonging to that specific workspace are open, those recordset objects will be closed and any pending updates or edits will be rolled back. If you try to close a workspace object while any database objects belonging to it are open, the operation closes all database objects belonging to that specific workspace object, which may result in unclosed recordset objects being closed. If you do not close your database object, MFC reports an assertion failure in debug builds.
 
 If the database object is defined outside the scope of a function, and you exit the function without closing it, the database object will remain open until explicitly closed or the module in which it is defined is out of scope.
 
-##  <a name="create"></a>  CDaoDatabase::Create
+## <a name="create"></a> CDaoDatabase::Create
 
 To create a new Microsoft Jet (.MDB) database, call this member function after you construct a `CDaoDatabase` object.
 
@@ -242,16 +242,16 @@ An integer that indicates one or more options. Possible values are:
 If you omit the encryption constant, an unencrypted database is created. You can specify only one version constant. If you omit a version constant, a database that uses the Microsoft Jet database version 3.0 is created.
 
 > [!CAUTION]
->  If a database is not encrypted, it is possible, even if you implement user/password security, to directly read the binary disk file that constitutes the database.
+> If a database is not encrypted, it is possible, even if you implement user/password security, to directly read the binary disk file that constitutes the database.
 
 ### Remarks
 
 `Create` creates the database file and the underlying DAO database object and initializes the C++ object. The object is appended to the associated workspace's Databases collection. The database object is in an open state; do not call `Open*` after `Create`.
 
 > [!NOTE]
->  With `Create`, you can create only Microsoft Jet (.MDB) databases. You cannot create ISAM databases or ODBC databases.
+> With `Create`, you can create only Microsoft Jet (.MDB) databases. You cannot create ISAM databases or ODBC databases.
 
-##  <a name="createrelation"></a>  CDaoDatabase::CreateRelation
+## <a name="createrelation"></a> CDaoDatabase::CreateRelation
 
 Call this member function to establish a relation between one or more fields in a primary table in the database and one or more fields in a foreign table (another table in the database).
 
@@ -314,7 +314,7 @@ For example, suppose you establish a cascade delete relationship between a Custo
 
 For related information, see the topic "CreateRelation Method" in DAO Help.
 
-##  <a name="deletequerydef"></a>  CDaoDatabase::DeleteQueryDef
+## <a name="deletequerydef"></a> CDaoDatabase::DeleteQueryDef
 
 Call this member function to delete the specified querydef — saved query — from the `CDaoDatabase` object's QueryDefs collection.
 
@@ -333,7 +333,7 @@ Afterwards, that query is no longer defined in the database.
 
 For information about creating querydef objects, see class [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). A querydef object becomes associated with a particular `CDaoDatabase` object when you construct the `CDaoQueryDef` object, passing it a pointer to the database object.
 
-##  <a name="deleterelation"></a>  CDaoDatabase::DeleteRelation
+## <a name="deleterelation"></a> CDaoDatabase::DeleteRelation
 
 Call this member function to delete an existing relation from the database object's Relations collection.
 
@@ -352,7 +352,7 @@ Afterwards, the relation no longer exists.
 
 For related information, see the topic "Delete Method" in DAO Help.
 
-##  <a name="deletetabledef"></a>  CDaoDatabase::DeleteTableDef
+## <a name="deletetabledef"></a> CDaoDatabase::DeleteTableDef
 
 Call this member function to delete the specified table and all of its data from the `CDaoDatabase` object's TableDefs collection.
 
@@ -370,13 +370,13 @@ The name of the tabledef to delete.
 Afterwards, that table is no longer defined in the database.
 
 > [!NOTE]
->  Be very careful not to delete system tables.
+> Be very careful not to delete system tables.
 
 For information about creating tabledef objects, see class [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md). A tabledef object becomes associated with a particular `CDaoDatabase` object when you construct the `CDaoTableDef` object, passing it a pointer to the database object.
 
 For related information, see the topic "Delete Method" in DAO Help.
 
-##  <a name="execute"></a>  CDaoDatabase::Execute
+## <a name="execute"></a> CDaoDatabase::Execute
 
 Call this member function to run an action query or execute a SQL statement on the database.
 
@@ -407,7 +407,7 @@ An integer that specifies options relating to the integrity of the query. You ca
 - `dbSeeChanges` Generate a run-time error if another user is changing data you are editing.
 
 > [!NOTE]
->  If both `dbInconsistent` and `dbConsistent` are included or if neither is included, the result is the default. For an explanation of these constants, see the topic "Execute Method" in DAO Help.
+> If both `dbInconsistent` and `dbConsistent` are included or if neither is included, the result is the default. For an explanation of these constants, see the topic "Execute Method" in DAO Help.
 
 ### Remarks
 
@@ -416,13 +416,13 @@ An integer that specifies options relating to the integrity of the query. You ca
 For a definition and information about action queries, see the topics "Action Query" and "Execute Method" in DAO Help.
 
 > [!TIP]
->  Given a syntactically correct SQL statement and proper permissions, the `Execute` member function will not fail even if not a single row can be modified or deleted. Therefore, always use the `dbFailOnError` option when using the `Execute` member function to run an update or delete query. This option causes MFC to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) and rolls back all successful changes if any of the records affected are locked and cannot be updated or deleted. Note that you can always call `GetRecordsAffected` to see how many records were affected.
+> Given a syntactically correct SQL statement and proper permissions, the `Execute` member function will not fail even if not a single row can be modified or deleted. Therefore, always use the `dbFailOnError` option when using the `Execute` member function to run an update or delete query. This option causes MFC to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) and rolls back all successful changes if any of the records affected are locked and cannot be updated or deleted. Note that you can always call `GetRecordsAffected` to see how many records were affected.
 
 Call the [GetRecordsAffected](#getrecordsaffected) member function of the database object to determine the number of records affected by the most recent `Execute` call. For example, `GetRecordsAffected` returns information about the number of records deleted, updated, or inserted when executing an action query. The count returned will not reflect changes in related tables when cascade updates or deletes are in effect.
 
 `Execute` does not return a recordset. Using `Execute` on a query that selects records causes MFC to throw an exception of type `CDaoException`. (There is no `ExecuteSQL` member function analogous to `CDatabase::ExecuteSQL`.)
 
-##  <a name="getconnect"></a>  CDaoDatabase::GetConnect
+## <a name="getconnect"></a> CDaoDatabase::GetConnect
 
 Call this member function to retrieve the connection string used to connect the `CDaoDatabase` object to an ODBC or ISAM database.
 
@@ -439,14 +439,14 @@ The connection string if [Open](#open) has been called successfully on an ODBC d
 The string provides information about the source of an open database or a database used in a pass-through query. The connection string is composed of a database type specifier and zero or more parameters separated by semicolons.
 
 > [!NOTE]
->  Using the MFC DAO classes to connect to a data source via ODBC is less efficient than connecting via an attached table.
+> Using the MFC DAO classes to connect to a data source via ODBC is less efficient than connecting via an attached table.
 
 > [!NOTE]
->  The connection string is used to pass additional information to ODBC and certain ISAM drivers as needed. It is not used for .MDB databases. For Microsoft Jet database base tables, the connection string is an empty string ("") except when you use it for a SQL pass-through query as described under Return Value above.
+> The connection string is used to pass additional information to ODBC and certain ISAM drivers as needed. It is not used for .MDB databases. For Microsoft Jet database base tables, the connection string is an empty string ("") except when you use it for a SQL pass-through query as described under Return Value above.
 
 See the [Open](#open) member function for a description of how the connection string is created. Once the connection string has been set in the `Open` call, you can later use it to check the setting to determine the type, path, user ID, Password, or ODBC data source of the database.
 
-##  <a name="getname"></a>  CDaoDatabase::GetName
+## <a name="getname"></a> CDaoDatabase::GetName
 
 Call this member function to retrieve the name of the currently open database, which is the name of an existing database file or the name of a registered ODBC data source.
 
@@ -465,7 +465,7 @@ If your network supports the uniform naming convention (UNC), you can also speci
 You might, for example, want to display this name in a heading. If an error occurs while the name is being retrieved, MFC throws an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).
 
 > [!NOTE]
->  For better performance when external databases are being accessed, we recommend that you attach external database tables to a Microsoft Jet database (.MDB) rather than connecting directly to the data source.
+> For better performance when external databases are being accessed, we recommend that you attach external database tables to a Microsoft Jet database (.MDB) rather than connecting directly to the data source.
 
 The database type is indicated by the file or directory that the path points to, as follows:
 
@@ -479,7 +479,7 @@ The database type is indicated by the file or directory that the path points to,
 
 For ODBC databases such as SQL Server and Oracle, the database's connection string identifies a data source name (DSN) that's registered by ODBC.
 
-##  <a name="getquerydefcount"></a>  CDaoDatabase::GetQueryDefCount
+## <a name="getquerydefcount"></a> CDaoDatabase::GetQueryDefCount
 
 Call this member function to retrieve the number of queries defined in the database's QueryDefs collection.
 
@@ -495,7 +495,7 @@ The number of queries defined in the database.
 
 `GetQueryDefCount` is useful if you need to loop through all querydefs in the QueryDefs collection. To obtain information about a given query in the collection, see [GetQueryDefInfo](#getquerydefinfo).
 
-##  <a name="getquerydefinfo"></a>  CDaoDatabase::GetQueryDefInfo
+## <a name="getquerydefinfo"></a> CDaoDatabase::GetQueryDefInfo
 
 Call this member function to obtain various kinds of information about a query defined in the database.
 
@@ -537,7 +537,7 @@ Two versions of the function are supplied so you can select a query either by in
 
 For a description of the information returned in *querydefinfo*, see the [CDaoQueryDefInfo](../../mfc/reference/cdaoquerydefinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. If you request one level of information, you get any prior levels of information as well.
 
-##  <a name="getquerytimeout"></a>  CDaoDatabase::GetQueryTimeout
+## <a name="getquerytimeout"></a> CDaoDatabase::GetQueryTimeout
 
 Call this member function to retrieve the current number of seconds to allow before subsequent operations on the connected database are timed out.
 
@@ -557,7 +557,7 @@ The default value for query timeouts is taken from the Windows registry. If ther
 
 For related information, see the topic "QueryTimeout Property" in DAO Help.
 
-##  <a name="getrecordsaffected"></a>  CDaoDatabase::GetRecordsAffected
+## <a name="getrecordsaffected"></a> CDaoDatabase::GetRecordsAffected
 
 Call this member function to determine the number of records affected by the most recent call of the [Execute](#execute) member function.
 
@@ -575,7 +575,7 @@ The value returned includes the number of records deleted, updated, or inserted 
 
 For related information, see the topic "RecordsAffected Property" in DAO Help.
 
-##  <a name="getrelationcount"></a>  CDaoDatabase::GetRelationCount
+## <a name="getrelationcount"></a> CDaoDatabase::GetRelationCount
 
 Call this member function to obtain the number of relations defined between tables in the database.
 
@@ -593,7 +593,7 @@ The number of relations defined between tables in the database.
 
 To illustrate the concept of a relation, consider a Suppliers table and a Products table, which might have a one-to-many relationship. In this relationship, one supplier can supply more than one product. Other relations are one-to-one and many-to-many.
 
-##  <a name="getrelationinfo"></a>  CDaoDatabase::GetRelationInfo
+## <a name="getrelationinfo"></a> CDaoDatabase::GetRelationInfo
 
 Call this member function to obtain information about a specified relation in the database's Relations collection.
 
@@ -634,9 +634,9 @@ A string containing the name of the relation object, for lookup by name.
 Two versions of this function provide access either by index or by name. For a description of the information returned in *relinfo*, see the [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. If you request information at one level, you also get information at any prior levels as well.
 
 > [!NOTE]
->  If you set the relation object's attributes to activate cascade operations (`dbRelationUpdateCascades` or `dbRelationDeleteCascades`), the Microsoft Jet database engine automatically updates or deletes records in one or more other tables when changes are made to related primary key tables. For example, suppose you establish a cascade delete relationship between a Customers table and an Orders table. When you delete records from the Customers table, records in the Orders table related to that customer are also deleted. In addition, if you establish cascade delete relationships between the Orders table and other tables, records from those tables are automatically deleted when you delete records from the Customers table.
+> If you set the relation object's attributes to activate cascade operations (`dbRelationUpdateCascades` or `dbRelationDeleteCascades`), the Microsoft Jet database engine automatically updates or deletes records in one or more other tables when changes are made to related primary key tables. For example, suppose you establish a cascade delete relationship between a Customers table and an Orders table. When you delete records from the Customers table, records in the Orders table related to that customer are also deleted. In addition, if you establish cascade delete relationships between the Orders table and other tables, records from those tables are automatically deleted when you delete records from the Customers table.
 
-##  <a name="gettabledefcount"></a>  CDaoDatabase::GetTableDefCount
+## <a name="gettabledefcount"></a> CDaoDatabase::GetTableDefCount
 
 Call this member function to retrieve the number of tables defined in the database.
 
@@ -652,7 +652,7 @@ The number of tabledefs defined in the database.
 
 `GetTableDefCount` is useful if you need to loop through all tabledefs in the database's TableDefs collection. To obtain information about a given table in the collection, see [GetTableDefInfo](#gettabledefinfo).
 
-##  <a name="gettabledefinfo"></a>  CDaoDatabase::GetTableDefInfo
+## <a name="gettabledefinfo"></a> CDaoDatabase::GetTableDefInfo
 
 Call this member function to obtain various kinds of information about a table defined in the database.
 
@@ -695,9 +695,9 @@ Two versions of the function are supplied so you can select a table either by in
 For a description of the information returned in *tabledefinfo*, see the [CDaoTableDefInfo](../../mfc/reference/cdaotabledefinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. If you request information at one level, you get information for any prior levels as well.
 
 > [!NOTE]
->  The AFX_DAO_ALL_INFO option provides information that can be slow to obtain. In this case, counting the records in the table could be very time consuming if there are many records.
+> The AFX_DAO_ALL_INFO option provides information that can be slow to obtain. In this case, counting the records in the table could be very time consuming if there are many records.
 
-##  <a name="getversion"></a>  CDaoDatabase::GetVersion
+## <a name="getversion"></a> CDaoDatabase::GetVersion
 
 Call this member function to determine the version of the Microsoft Jet database file.
 
@@ -715,7 +715,7 @@ The value returned represents the version number in the form "major.minor"; for 
 
 For related information, see the topic "Version Property" in DAO Help.
 
-##  <a name="isopen"></a>  CDaoDatabase::IsOpen
+## <a name="isopen"></a> CDaoDatabase::IsOpen
 
 Call this member function to determine whether the `CDaoDatabase` object is currently open on a database.
 
@@ -729,7 +729,7 @@ Nonzero if the `CDaoDatabase` object is currently open; otherwise 0.
 
 ### Remarks
 
-##  <a name="m_pdaodatabase"></a>  CDaoDatabase::m_pDAODatabase
+## <a name="m_pdaodatabase"></a> CDaoDatabase::m_pDAODatabase
 
 Contains a pointer to the OLE interface for the DAO database object underlying the `CDaoDatabase` object.
 
@@ -739,7 +739,7 @@ Use this pointer if you need to access the DAO interface directly.
 
 For information about calling DAO directly, see [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
 
-##  <a name="m_pworkspace"></a>  CDaoDatabase::m_pWorkspace
+## <a name="m_pworkspace"></a> CDaoDatabase::m_pWorkspace
 
 Contains a pointer to the [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object that contains the database object.
 
@@ -747,7 +747,7 @@ Contains a pointer to the [CDaoWorkspace](../../mfc/reference/cdaoworkspace-clas
 
 Use this pointer if you need to access the workspace directly — for example, to obtain pointers to other database objects in the workspace's Databases collection.
 
-##  <a name="open"></a>  CDaoDatabase::Open
+## <a name="open"></a> CDaoDatabase::Open
 
 You must call this member function to initialize a newly constructed `CDaoDatabase` object that represents an existing database.
 
@@ -773,7 +773,7 @@ Some considerations apply when using *lpszName*. If it:
 - Otherwise does not refer to an existing database or valid ODBC data source name, MFC throws an exception of type `CDaoException`.
 
 > [!NOTE]
->  For details about DAO error codes, see the DAOERR.H file. For related information, see the topic "Trappable Data Access Errors" in DAO Help.
+> For details about DAO error codes, see the DAOERR.H file. For related information, see the topic "Trappable Data Access Errors" in DAO Help.
 
 *bExclusive*<br/>
 A Boolean value that is TRUE if the database is to be opened for exclusive (nonshared) access and FALSE if the database is to be opened for shared access. If you omit this argument, the database is opened for shared access.
@@ -797,7 +797,7 @@ Use the parameters as follows:
 For related information, see the topic "OpenDatabase Method" in DAO Help.
 
 > [!NOTE]
->  For better performance when accessing external databases, including ISAM databases and ODBC data sources, it is recommended that you attach external database tables to a Microsoft Jet engine database (.MDB) rather than connecting directly to the data source.
+> For better performance when accessing external databases, including ISAM databases and ODBC data sources, it is recommended that you attach external database tables to a Microsoft Jet engine database (.MDB) rather than connecting directly to the data source.
 
 It is possible for a connection attempt to time out if, for example, the DBMS host is unavailable. If the connection attempt fails, `Open` throws an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).
 
@@ -809,7 +809,7 @@ If you wish, you can open your own dialog box before you call `Open` to get info
 
 You can also use the connection string for multiple levels of login authorization (each for a different `CDaoDatabase` object) or to convey other database-specific information.
 
-##  <a name="setquerytimeout"></a>  CDaoDatabase::SetQueryTimeout
+## <a name="setquerytimeout"></a> CDaoDatabase::SetQueryTimeout
 
 Call this member function to override the default number of seconds to allow before subsequent operations on the connected database time out.
 

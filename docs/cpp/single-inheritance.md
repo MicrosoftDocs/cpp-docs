@@ -141,4 +141,4 @@ In the preceding example, different types are created. However, because these ty
 Because the `Document` class has a `PrintNameOf` function, it can print the name of each book in the library, although it may omit some of the information specific to the type of document (page count for `Book`, number of bytes for `HelpFile`, and so on).
 
 > [!NOTE]
->  Forcing the base class to implement a function such as `PrintNameOf` is often not the best design. [Virtual Functions](../cpp/virtual-functions.md) offers other design alternatives.
+> Forcing the base class to implement a function such as `PrintNameOf` is often not the best design. [Virtual Functions](../cpp/virtual-functions.md) offers other design alternatives.

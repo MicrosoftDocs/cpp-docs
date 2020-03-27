@@ -83,7 +83,7 @@ Hover over a variable or function declaration, right-click, then choose **Peek D
 
 ![C&#43;&#43; Peek Definition](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
 
-##  F1 Help
+## F1 Help
 
 Place the cursor on or just after any type, keyword or function and press **F1** to go directly to the relevant reference topic on docs.microsoft.com. **F1** also works on items in the error list, and in many dialog boxes.
 

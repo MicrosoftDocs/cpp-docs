@@ -52,7 +52,7 @@ The following example demonstrates how to construct a `CMFCAcceleratorKey` objec
 
 **Header:** afxacceleratorkey.h
 
-##  <a name="cmfcacceleratorkey"></a>  CMFCAcceleratorKey::CMFCAcceleratorKey
+## <a name="cmfcacceleratorkey"></a> CMFCAcceleratorKey::CMFCAcceleratorKey
 
 Constructs a [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object.
 
@@ -70,7 +70,7 @@ CMFCAcceleratorKey(LPACCEL lpAccel);
 
 If you do not provide a shortcut key when you create a `CMFCAccleratorKey`, use the [CMFCAcceleratorKey::SetAccelerator](#setaccelerator) method to associate a shortcut key with your `CMFCAcceleratorKey` object.
 
-##  <a name="format"></a>  CMFCAcceleratorKey::Format
+## <a name="format"></a> CMFCAcceleratorKey::Format
 
 Translates the ACCEL structure to its associated string value.
 
@@ -87,7 +87,7 @@ void Format(CString& str) const;
 
 This method retrieves the string format of the associated shortcut key. You can set the string format of a [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object using either the constructor or the method [CMFCAcceleratorKey::SetAccelerator](#setaccelerator).
 
-##  <a name="setaccelerator"></a>  CMFCAcceleratorKey::SetAccelerator
+## <a name="setaccelerator"></a> CMFCAcceleratorKey::SetAccelerator
 
 Sets the shortcut key for the [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object.
 

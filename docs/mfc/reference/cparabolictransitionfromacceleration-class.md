@@ -53,7 +53,7 @@ During a parabolic-acceleration transition, the value of the animation variable 
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="cparabolictransitionfromacceleration"></a>  CParabolicTransitionFromAcceleration::CParabolicTransitionFromAcceleration
+## <a name="cparabolictransitionfromacceleration"></a> CParabolicTransitionFromAcceleration::CParabolicTransitionFromAcceleration
 
 Constructs a parabolic-acceleration transition and initializes it with specified parameters.
 
@@ -75,7 +75,7 @@ The velocity of the animation variable at the end of the transition.
 *dblAcceleration*<br/>
 The acceleration of the animation variable during the transition.
 
-##  <a name="create"></a>  CParabolicTransitionFromAcceleration::Create
+## <a name="create"></a> CParabolicTransitionFromAcceleration::Create
 
 Calls the transition library to create encapsulated transition COM object.
 
@@ -94,7 +94,7 @@ A pointer to transition library, which is responsible for creation of standard t
 
 TRUE if transition is created successfully; otherwise FALSE.
 
-##  <a name="m_dblacceleration"></a>  CParabolicTransitionFromAcceleration::m_dblAcceleration
+## <a name="m_dblacceleration"></a> CParabolicTransitionFromAcceleration::m_dblAcceleration
 
 The acceleration of the animation variable during the transition.
 
@@ -102,7 +102,7 @@ The acceleration of the animation variable during the transition.
 DOUBLE m_dblAcceleration;
 ```
 
-##  <a name="m_dblfinalvalue"></a>  CParabolicTransitionFromAcceleration::m_dblFinalValue
+## <a name="m_dblfinalvalue"></a> CParabolicTransitionFromAcceleration::m_dblFinalValue
 
 The value of the animation variable at the end of the transition.
 
@@ -110,7 +110,7 @@ The value of the animation variable at the end of the transition.
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_dblfinalvelocity"></a>  CParabolicTransitionFromAcceleration::m_dblFinalVelocity
+## <a name="m_dblfinalvelocity"></a> CParabolicTransitionFromAcceleration::m_dblFinalVelocity
 
 The velocity of the animation variable at the end of the transition.
 

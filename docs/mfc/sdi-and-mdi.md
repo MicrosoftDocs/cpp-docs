@@ -11,7 +11,7 @@ MFC makes it easy to work with both single-document interface (SDI) and multiple
 SDI applications allow only one open document frame window at a time. MDI applications allow multiple document frame windows to be open in the same instance of an application. An MDI application has a window within which multiple MDI child windows, which are frame windows themselves, can be opened, each containing a separate document. In some applications, the child windows can be of different types, such as chart windows and spreadsheet windows. In that case, the menu bar can change as MDI child windows of different types are activated.
 
 > [!NOTE]
->  Under Windows 95 and later, applications are commonly SDI because the operating system has adopted a "document-centered" view.
+> Under Windows 95 and later, applications are commonly SDI because the operating system has adopted a "document-centered" view.
 
 For more information, see [Documents, Views, and the Framework](../mfc/documents-views-and-the-framework.md).
 

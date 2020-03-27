@@ -17,7 +17,7 @@ For more information, see:
 The samples in this section just illustrate how `PInvoke` can be used. `PInvoke` can simplify customized data marshaling because you provide marshaling information declaratively in attributes instead of writing procedural marshaling code.
 
 > [!NOTE]
->  The marshaling library provides an alternative way to marshal data between native and managed environments in an optimized way. See [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md) for more information about the marshaling library. The marshaling library is usable for data only, and not for functions.
+> The marshaling library provides an alternative way to marshal data between native and managed environments in an optimized way. See [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md) for more information about the marshaling library. The marshaling library is usable for data only, and not for functions.
 
 ## PInvoke and the DllImport Attribute
 
@@ -173,7 +173,7 @@ However, you must marshal types that do not have the same form. This includes ch
 |DWORD|unsigned long|unsigned long|UInt32|
 |ULONG|unsigned long|unsigned long|UInt32|
 |CHAR|char|char|Char|
-|LPCSTR|char \*|String ^ [in], StringBuilder ^ [in, out]|String ^ [in], StringBuilder ^ [in, out]|
+|LPSTR|char \*|String ^ [in], StringBuilder ^ [in, out]|String ^ [in], StringBuilder ^ [in, out]|
 |LPCSTR|const char \*|String ^|String|
 |LPWSTR|wchar_t \*|String ^ [in], StringBuilder ^ [in, out]|String ^ [in], StringBuilder ^ [in, out]|
 |LPCWSTR|const wchar_t \*|String ^|String|

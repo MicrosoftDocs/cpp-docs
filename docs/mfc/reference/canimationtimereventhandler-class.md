@@ -43,7 +43,7 @@ This event handler is created and passed to IUIAnimationTimer::SetTimerEventHand
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="createinstance"></a>  CAnimationTimerEventHandler::CreateInstance
+## <a name="createinstance"></a> CAnimationTimerEventHandler::CreateInstance
 
 Creates an instance of CAnimationTimerEventHandler callback.
 
@@ -64,7 +64,7 @@ A pointer to animation controller, which will receive events.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="onpostupdate"></a>  CAnimationTimerEventHandler::OnPostUpdate
+## <a name="onpostupdate"></a> CAnimationTimerEventHandler::OnPostUpdate
 
 Handles events that occur after an animation update is finished.
 
@@ -76,7 +76,7 @@ IFACEMETHOD(OnPostUpdate)();
 
 S_OK if the method succeeds; otherwise E_FAIL.
 
-##  <a name="onpreupdate"></a>  CAnimationTimerEventHandler::OnPreUpdate
+## <a name="onpreupdate"></a> CAnimationTimerEventHandler::OnPreUpdate
 
 Handles events that occur before an animation update begins.
 
@@ -88,7 +88,7 @@ IFACEMETHOD(OnPreUpdate)();
 
 S_OK if the method succeeds; otherwise E_FAIL.
 
-##  <a name="onrenderingtooslow"></a>  CAnimationTimerEventHandler::OnRenderingTooSlow
+## <a name="onrenderingtooslow"></a> CAnimationTimerEventHandler::OnRenderingTooSlow
 
 Handles events that occur when the rendering frame rate for an animation falls below the minimum desirable frame rate.
 
@@ -104,7 +104,7 @@ IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
 
 S_OK if the method succeeds; otherwise E_FAIL.
 
-##  <a name="setanimationcontroller"></a>  CAnimationTimerEventHandler::SetAnimationController
+## <a name="setanimationcontroller"></a> CAnimationTimerEventHandler::SetAnimationController
 
 Stores a pointer to animation controller to route events.
 

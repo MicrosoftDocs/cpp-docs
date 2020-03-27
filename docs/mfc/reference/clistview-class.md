@@ -57,7 +57,7 @@ For more information on this architecture, see the overview for the [CView](../.
 
 **Header:** afxcview.h
 
-##  <a name="clistview"></a>  CListView::CListView
+## <a name="clistview"></a> CListView::CListView
 
 Constructs a `CListView` object.
 
@@ -65,7 +65,7 @@ Constructs a `CListView` object.
 CListView();
 ```
 
-##  <a name="getlistctrl"></a>  CListView::GetListCtrl
+## <a name="getlistctrl"></a> CListView::GetListCtrl
 
 Call this member function to get a reference to the list control associated with the view.
 
@@ -81,7 +81,7 @@ A reference to the list control associated with the view.
 
 [!code-cpp[NVC_MFCListView#7](../../atl/reference/codesnippet/cpp/clistview-class_1.cpp)]
 
-##  <a name="removeimagelist"></a>  CListView::RemoveImageList
+## <a name="removeimagelist"></a> CListView::RemoveImageList
 
 Removes the specified image list from the list view.
 

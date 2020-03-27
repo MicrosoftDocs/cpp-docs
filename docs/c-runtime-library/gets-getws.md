@@ -14,10 +14,10 @@ ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
 Gets a line from the `stdin` stream. More secure versions of these functions are available; see [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
->  These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions,  gets_s and _getws_s, are still available. For information on these alternative functions, see [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).
+> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions,  gets_s and _getws_s, are still available. For information on these alternative functions, see [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -52,7 +52,7 @@ Returns its argument if successful. A **NULL** pointer indicates an error or end
 The `gets` function reads a line from the standard input stream `stdin` and stores it in `buffer`. The line consists of all characters up to and including the first newline character ('\n'). `gets` then replaces the newline character with a null character ('\0') before returning the line. In contrast, the `fgets` function retains the newline character. `_getws` is a wide-character version of `gets`; its argument and return value are wide-character strings.
 
 > [!IMPORTANT]
->  Because there is no way to limit the number of characters read by gets, untrusted input can easily cause buffer overruns. Use `fgets` instead.
+> Because there is no way to limit the number of characters read by gets, untrusted input can easily cause buffer overruns. Use `fgets` instead.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../c-runtime-library/secure-template-overloads.md).
 

@@ -3,7 +3,6 @@ title: "Share or reuse Visual Studio project settings - C++"
 ms.date: "07/17/2019"
 helpviewer_keywords: ["project properties [C++], reusable"]
 ---
-
 # Share or reuse Visual Studio project settings
 
 To create a custom group of settings that you can share with others or reuse in multiple projects, use **Property Manager** to create a *property sheet* (.props file) to store the settings for each kind of project that you want to be able to reuse or share with others. Using property sheets are far less error-prone than other ways of creating "global" settings.

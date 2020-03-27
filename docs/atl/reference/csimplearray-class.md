@@ -69,7 +69,7 @@ Both `CSimpleArray` and [CSimpleMap](../../atl/reference/csimplemap-class.md) ar
 
 [!code-cpp[NVC_ATL_Utilities#86](../../atl/codesnippet/cpp/csimplearray-class_1.cpp)]
 
-##  <a name="add"></a>  CSimpleArray::Add
+## <a name="add"></a> CSimpleArray::Add
 
 Adds a new element to the array.
 
@@ -90,7 +90,7 @@ Returns TRUE if the element is successfully added to the array, FALSE otherwise.
 
 [!code-cpp[NVC_ATL_Utilities#87](../../atl/codesnippet/cpp/csimplearray-class_2.cpp)]
 
-##  <a name="csimplearray"></a>  CSimpleArray::CSimpleArray
+## <a name="csimplearray"></a> CSimpleArray::CSimpleArray
 
 The constructor for the array object.
 
@@ -108,7 +108,7 @@ An existing `CSimpleArray` object.
 
 Initializes the data members, creating a new empty `CSimpleArray` object, or a copy of an existing `CSimpleArray` object.
 
-##  <a name="dtor"></a>  CSimpleArray::~CSimpleArray
+## <a name="dtor"></a> CSimpleArray::~CSimpleArray
 
 The destructor.
 
@@ -120,7 +120,7 @@ The destructor.
 
 Frees all allocated resources.
 
-##  <a name="find"></a>  CSimpleArray::Find
+## <a name="find"></a> CSimpleArray::Find
 
 Finds an element in the array.
 
@@ -141,7 +141,7 @@ Returns the index of the found element, or -1 if the element is not found.
 
 [!code-cpp[NVC_ATL_Utilities#88](../../atl/codesnippet/cpp/csimplearray-class_3.cpp)]
 
-##  <a name="getdata"></a>  CSimpleArray::GetData
+## <a name="getdata"></a> CSimpleArray::GetData
 
 Returns a pointer to the data stored in the array.
 
@@ -153,7 +153,7 @@ T* GetData() const;
 
 Returns a pointer to the data in the array.
 
-##  <a name="getsize"></a>  CSimpleArray::GetSize
+## <a name="getsize"></a> CSimpleArray::GetSize
 
 Returns the number of elements stored in the array.
 
@@ -165,7 +165,7 @@ int GetSize() const;
 
 Returns the number of elements stored in the array.
 
-##  <a name="operator_at"></a>  CSimpleArray::operator \[\]
+## <a name="operator_at"></a> CSimpleArray::operator \[\]
 
 Retrieves an element from the array.
 
@@ -186,7 +186,7 @@ Returns the element of the array referenced by *nIndex*.
 
 [!code-cpp[NVC_ATL_Utilities#89](../../atl/codesnippet/cpp/csimplearray-class_4.cpp)]
 
-##  <a name="operator_eq"></a>  CSimpleArray::operator =
+## <a name="operator_eq"></a> CSimpleArray::operator =
 
 Assignment operator.
 
@@ -213,7 +213,7 @@ Copies all elements from the `CSimpleArray` object referenced by *src* into the 
 
 [!code-cpp[NVC_ATL_Utilities#90](../../atl/codesnippet/cpp/csimplearray-class_5.cpp)]
 
-##  <a name="remove"></a>  CSimpleArray::Remove
+## <a name="remove"></a> CSimpleArray::Remove
 
 Removes a given element from the array.
 
@@ -234,7 +234,7 @@ Returns TRUE if the element is found and removed, FALSE otherwise.
 
 When an element is removed, the remaining elements in the array are renumbered to fill the empty space.
 
-##  <a name="removeall"></a>  CSimpleArray::RemoveAll
+## <a name="removeall"></a> CSimpleArray::RemoveAll
 
 Removes all elements from the array.
 
@@ -246,7 +246,7 @@ void RemoveAll();
 
 Removes all elements currently stored in the array.
 
-##  <a name="removeat"></a>  CSimpleArray::RemoveAt
+## <a name="removeat"></a> CSimpleArray::RemoveAt
 
 Removes the specified element from the array.
 
@@ -267,7 +267,7 @@ Returns TRUE if the element was removed, FALSE if the index was invalid.
 
 When an element is removed, the remaining elements in the array are renumbered to fill the empty space.
 
-##  <a name="setatindex"></a>  CSimpleArray::SetAtIndex
+## <a name="setatindex"></a> CSimpleArray::SetAtIndex
 
 Set the specified element in the array.
 

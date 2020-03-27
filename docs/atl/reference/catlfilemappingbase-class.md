@@ -10,7 +10,7 @@ ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
 This class represents a memory-mapped file.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -56,7 +56,7 @@ For more information, see [File Mapping](/windows/win32/Memory/file-mapping) in 
 
 **Header:** atlfile.h
 
-##  <a name="catlfilemappingbase"></a>  CAtlFileMappingBase::CAtlFileMappingBase
+## <a name="catlfilemappingbase"></a> CAtlFileMappingBase::CAtlFileMappingBase
 
 The constructor.
 
@@ -78,7 +78,7 @@ Creates a new file-mapping object, optionally using an existing object. It is st
 
 [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/cpp/catlfilemappingbase-class_1.cpp)]
 
-##  <a name="dtor"></a>  CAtlFileMappingBase::~CAtlFileMappingBase
+## <a name="dtor"></a> CAtlFileMappingBase::~CAtlFileMappingBase
 
 The destructor.
 
@@ -90,7 +90,7 @@ The destructor.
 
 Frees any resources allocated by the class and calls the [CAtlFileMappingBase::Unmap](#unmap) method.
 
-##  <a name="copyfrom"></a>  CAtlFileMappingBase::CopyFrom
+## <a name="copyfrom"></a> CAtlFileMappingBase::CopyFrom
 
 Call this method to copy from a file-mapping object.
 
@@ -107,7 +107,7 @@ The original file-mapping object to copy from.
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="getdata"></a>  CAtlFileMappingBase::GetData
+## <a name="getdata"></a> CAtlFileMappingBase::GetData
 
 Call this method to get the data from a file-mapping object.
 
@@ -119,7 +119,7 @@ void* GetData() const throw();
 
 Returns a pointer to the data.
 
-##  <a name="gethandle"></a>  CAtlFileMappingBase::GetHandle
+## <a name="gethandle"></a> CAtlFileMappingBase::GetHandle
 
 Call this method to return a handle to the file-mapping object.
 
@@ -131,7 +131,7 @@ HANDLE GetHandle() throw ();
 
 Returns a handle to the file-mapping object.
 
-##  <a name="getmappingsize"></a>  CAtlFileMappingBase::GetMappingSize
+## <a name="getmappingsize"></a> CAtlFileMappingBase::GetMappingSize
 
 Call this method to get the mapping size from a file-mapping object.
 
@@ -147,7 +147,7 @@ Returns the mapping size.
 
 See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase).
 
-##  <a name="mapfile"></a>  CAtlFileMappingBase::MapFile
+## <a name="mapfile"></a> CAtlFileMappingBase::MapFile
 
 Call this method to open or create a file-mapping object for the specified file.
 
@@ -189,7 +189,7 @@ After a file-mapping object has been created, the size of the file must not exce
 
 See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase).
 
-##  <a name="mapsharedmem"></a>  CAtlFileMappingBase::MapSharedMem
+## <a name="mapsharedmem"></a> CAtlFileMappingBase::MapSharedMem
 
 Call this method to create a file-mapping object that permits full access to all processes.
 
@@ -231,7 +231,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 `MapShareMem` allows an existing file-mapping object, created by [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga), to be shared between processes.
 
-##  <a name="openmapping"></a>  CAtlFileMappingBase::OpenMapping
+## <a name="openmapping"></a> CAtlFileMappingBase::OpenMapping
 
 Call this method to open a named file-mapping object for the specified file.
 
@@ -265,7 +265,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 In debug builds, an assertion error will occur if the input parameters are invalid.
 
-##  <a name="operator_eq"></a>  CAtlFileMappingBase::operator =
+## <a name="operator_eq"></a> CAtlFileMappingBase::operator =
 
 Sets the current file-mapping object to another file-mapping object.
 
@@ -282,7 +282,7 @@ The current file-mapping object.
 
 Returns a reference to the current object.
 
-##  <a name="unmap"></a>  CAtlFileMappingBase::Unmap
+## <a name="unmap"></a> CAtlFileMappingBase::Unmap
 
 Call this method to unmap a file-mapping object.
 

@@ -45,7 +45,7 @@ Compiler option: **/ZW**
 
 **Namespace:** Platform
 
-## <a name="begin"></a>  WriteOnlyArray::begin Method
+## <a name="begin"></a> WriteOnlyArray::begin Method
 
 Returns a pointer to the first element in the array.
 
@@ -63,7 +63,7 @@ A pointer to the first element in the array.
 
 This iterator can be used with STL algorithms such as `std::sort` to operate on elements in the array.
 
-## <a name="data"></a>  WriteOnlyArray::Data Property
+## <a name="data"></a> WriteOnlyArray::Data Property
 
 Pointer to the data buffer.
 
@@ -79,7 +79,7 @@ property T* Data{
 
 A pointer to the raw array bytes.
 
-## <a name="end"></a>  WriteOnlyArray::end Method
+## <a name="end"></a> WriteOnlyArray::end Method
 
 Returns a pointer to one past the last element in the array.
 
@@ -97,7 +97,7 @@ A pointer iterator to one past the last element in the array.
 
 This iterator can be used with STL algorithms to perform operations such as `std::sort` on the array elements.
 
-## <a name="fastpass"></a>  WriteOnlyArray::FastPass Property
+## <a name="fastpass"></a> WriteOnlyArray::FastPass Property
 
 Indicates whether the internal FastPass optimization can be performed. Not intended for use by user code.
 
@@ -113,7 +113,7 @@ property bool FastPass{
 
 Boolean value that indicates whether the array is FastPass.
 
-## <a name="get"></a>  WriteOnlyArray::get Method
+## <a name="get"></a> WriteOnlyArray::get Method
 
 Returns the element at the specified index.
 
@@ -130,7 +130,7 @@ The index to use.
 
 ### Return Value
 
-## <a name="length"></a>  WriteOnlyArray::Length Property
+## <a name="length"></a> WriteOnlyArray::Length Property
 
 Returns the number of elements in the caller-allocated array.
 
@@ -146,7 +146,7 @@ property unsigned int Length{
 
 The number of elements in the array.
 
-## <a name="set"></a>  WriteOnlyArray::set Function
+## <a name="set"></a> WriteOnlyArray::set Function
 
 Sets the specified value at the specified index in the array.
 

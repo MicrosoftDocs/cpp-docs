@@ -56,7 +56,7 @@ In the following example, `m_dwExpected` is the approximate number of bytes that
 [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/cpp/csocket-class_1.cpp)]
 
 > [!NOTE]
->  When using MFC sockets in secondary threads in a statically linked MFC application, you must call `AfxSocketInit` in each thread that uses sockets to initialize the socket libraries. By default, `AfxSocketInit` is called only in the primary thread.
+> When using MFC sockets in secondary threads in a statically linked MFC application, you must call `AfxSocketInit` in each thread that uses sockets to initialize the socket libraries. By default, `AfxSocketInit` is called only in the primary thread.
 
 For more information, see [Windows Sockets in MFC](../../mfc/windows-sockets-in-mfc.md), [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md), [Windows Sockets: How Sockets with Archives Work](../../mfc/windows-sockets-how-sockets-with-archives-work.md), [Windows Sockets: Sequence of Operations](../../mfc/windows-sockets-sequence-of-operations.md), [Windows Sockets: Example of Sockets Using Archives](../../mfc/windows-sockets-example-of-sockets-using-archives.md).
 
@@ -72,7 +72,7 @@ For more information, see [Windows Sockets in MFC](../../mfc/windows-sockets-in-
 
 **Header:** afxsock.h
 
-##  <a name="attach"></a>  CSocket::Attach
+## <a name="attach"></a> CSocket::Attach
 
 Call this member function to attach the `hSocket` handle to a `CSocket` object.
 
@@ -103,7 +103,7 @@ For more information, see [Windows Sockets: Using Sockets with Archives](../../m
 
 [!code-cpp[NVC_MFCSocketThread#3](../../mfc/reference/codesnippet/cpp/csocket-class_4.cpp)]
 
-##  <a name="cancelblockingcall"></a>  CSocket::CancelBlockingCall
+## <a name="cancelblockingcall"></a> CSocket::CancelBlockingCall
 
 Call this member function to cancel a blocking call currently in progress.
 
@@ -121,7 +121,7 @@ Canceling any operation other than `Accept` can leave the socket in an indetermi
 
 For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-##  <a name="create"></a>  CSocket::Create
+## <a name="create"></a> CSocket::Create
 
 Call the **Create** member function after constructing a socket object to create the Windows socket and attach it.
 
@@ -160,7 +160,7 @@ Nonzero if the function is successful; otherwise 0, and a specific error code ca
 
 For more information about stream and datagram sockets, see the articles [Windows Sockets: Background](../../mfc/windows-sockets-background.md), [Windows Sockets: Ports and Socket Addresses](../../mfc/windows-sockets-ports-and-socket-addresses.md), and [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-##  <a name="csocket"></a>  CSocket::CSocket
+## <a name="csocket"></a> CSocket::CSocket
 
 Constructs a `CSocket` object.
 
@@ -174,7 +174,7 @@ After construction, you must call the `Create` member function.
 
 For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-##  <a name="fromhandle"></a>  CSocket::FromHandle
+## <a name="fromhandle"></a> CSocket::FromHandle
 
 Returns a pointer to a `CSocket` object.
 
@@ -197,7 +197,7 @@ When given a SOCKET handle, if a `CSocket` object is not attached to the handle,
 
 For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-##  <a name="isblocking"></a>  CSocket::IsBlocking
+## <a name="isblocking"></a> CSocket::IsBlocking
 
 Call this member function to determine if a blocking call is in progress.
 
@@ -213,7 +213,7 @@ Nonzero if the socket is blocking; otherwise 0.
 
 For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-##  <a name="onmessagepending"></a>  CSocket::OnMessagePending
+## <a name="onmessagepending"></a> CSocket::OnMessagePending
 
 Override this member function to look for particular messages from Windows and respond to them in your socket.
 

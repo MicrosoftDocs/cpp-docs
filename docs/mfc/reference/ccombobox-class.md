@@ -152,7 +152,7 @@ If you embed a `CComboBox` object within another window object, you do not need 
 
 **Header:** afxwin.h
 
-##  <a name="addstring"></a>  CComboBox::AddString
+## <a name="addstring"></a> CComboBox::AddString
 
 Adds a string to the list box of a combo box.
 
@@ -174,7 +174,7 @@ If the return value is greater than or equal to 0, it is the zero-based index to
 If the list box was not created with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted.
 
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
+> This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
 
 To insert a string into a specific location within the list, use the [InsertString](#insertstring) member function.
 
@@ -182,7 +182,7 @@ To insert a string into a specific location within the list, use the [InsertStri
 
 [!code-cpp[NVC_MFC_CComboBox#3](../../mfc/reference/codesnippet/cpp/ccombobox-class_1.cpp)]
 
-##  <a name="ccombobox"></a>  CComboBox::CComboBox
+## <a name="ccombobox"></a> CComboBox::CComboBox
 
 Constructs a `CComboBox` object.
 
@@ -194,7 +194,7 @@ CComboBox();
 
 [!code-cpp[NVC_MFC_CComboBox#1](../../mfc/reference/codesnippet/cpp/ccombobox-class_2.cpp)]
 
-##  <a name="clear"></a>  CComboBox::Clear
+## <a name="clear"></a> CComboBox::Clear
 
 Deletes (clears) the current selection, if any, in the edit control of the combo box.
 
@@ -210,7 +210,7 @@ To delete the current selection and place the deleted contents onto the Clipboar
 
 [!code-cpp[NVC_MFC_CComboBox#4](../../mfc/reference/codesnippet/cpp/ccombobox-class_3.cpp)]
 
-##  <a name="compareitem"></a>  CComboBox::CompareItem
+## <a name="compareitem"></a> CComboBox::CompareItem
 
 Called by the framework to determine the relative position of a new item in the list-box portion of a sorted owner-draw combo box.
 
@@ -243,7 +243,7 @@ By default, this member function does nothing. If you create an owner-draw combo
 
 [!code-cpp[NVC_MFC_CComboBox#5](../../mfc/reference/codesnippet/cpp/ccombobox-class_4.cpp)]
 
-##  <a name="copy"></a>  CComboBox::Copy
+## <a name="copy"></a> CComboBox::Copy
 
 Copies the current selection, if any, in the edit control of the combo box onto the Clipboard in CF_TEXT format.
 
@@ -255,7 +255,7 @@ void Copy();
 
 [!code-cpp[NVC_MFC_CComboBox#6](../../mfc/reference/codesnippet/cpp/ccombobox-class_5.cpp)]
 
-##  <a name="create"></a>  CComboBox::Create
+## <a name="create"></a> CComboBox::Create
 
 Creates the combo box and attaches it to the `CComboBox` object.
 
@@ -313,7 +313,7 @@ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#wi
 
 [!code-cpp[NVC_MFC_CComboBox#2](../../mfc/reference/codesnippet/cpp/ccombobox-class_6.cpp)]
 
-##  <a name="cut"></a>  CComboBox::Cut
+## <a name="cut"></a> CComboBox::Cut
 
 Deletes (cuts) the current selection, if any, in the combo-box edit control and copies the deleted text onto the Clipboard in CF_TEXT format.
 
@@ -329,7 +329,7 @@ To delete the current selection without placing the deleted text onto the Clipbo
 
 [!code-cpp[NVC_MFC_CComboBox#7](../../mfc/reference/codesnippet/cpp/ccombobox-class_7.cpp)]
 
-##  <a name="deleteitem"></a>  CComboBox::DeleteItem
+## <a name="deleteitem"></a> CComboBox::DeleteItem
 
 Called by the framework when the user deletes an item from an owner-draw `CComboBox` object or destroys the combo box.
 
@@ -350,7 +350,7 @@ The default implementation of this function does nothing. Override this function
 
 [!code-cpp[NVC_MFC_CComboBox#8](../../mfc/reference/codesnippet/cpp/ccombobox-class_8.cpp)]
 
-##  <a name="deletestring"></a>  CComboBox::DeleteString
+## <a name="deletestring"></a> CComboBox::DeleteString
 
 Deletes the item in position *nIndex* from the combo box.
 
@@ -375,7 +375,7 @@ All items following *nIndex* now move down one position. For example, if a combo
 
 [!code-cpp[NVC_MFC_CComboBox#9](../../mfc/reference/codesnippet/cpp/ccombobox-class_9.cpp)]
 
-##  <a name="dir"></a>  CComboBox::Dir
+## <a name="dir"></a> CComboBox::Dir
 
 Adds a list of filenames or drives to the list box of a combo box.
 
@@ -421,7 +421,7 @@ This function is not supported by the Windows `ComboBoxEx` control. For more inf
 
 [!code-cpp[NVC_MFC_CComboBox#10](../../mfc/reference/codesnippet/cpp/ccombobox-class_10.cpp)]
 
-##  <a name="drawitem"></a>  CComboBox::DrawItem
+## <a name="drawitem"></a> CComboBox::DrawItem
 
 Called by the framework when a visual aspect of an owner-draw combo box changes.
 
@@ -444,7 +444,7 @@ By default, this member function does nothing. Override this member function to 
 
 [!code-cpp[NVC_MFC_CComboBox#11](../../mfc/reference/codesnippet/cpp/ccombobox-class_11.cpp)]
 
-##  <a name="findstring"></a>  CComboBox::FindString
+## <a name="findstring"></a> CComboBox::FindString
 
 Finds, but doesn't select, the first string that contains the specified prefix in the list box of a combo box.
 
@@ -474,7 +474,7 @@ This function is not supported by the Windows `ComboBoxEx` control. For more inf
 
 [!code-cpp[NVC_MFC_CComboBox#12](../../mfc/reference/codesnippet/cpp/ccombobox-class_12.cpp)]
 
-##  <a name="findstringexact"></a>  CComboBox::FindStringExact
+## <a name="findstringexact"></a> CComboBox::FindStringExact
 
 Call the `FindStringExact` member function to find the first list-box string (in a combo box) that matches the string specified in *lpszFind*.
 
@@ -504,7 +504,7 @@ If the combo box was created with an owner-draw style but without the [CBS_HASST
 
 [!code-cpp[NVC_MFC_CComboBox#13](../../mfc/reference/codesnippet/cpp/ccombobox-class_13.cpp)]
 
-##  <a name="getcomboboxinfo"></a>  CComboBox::GetComboBoxInfo
+## <a name="getcomboboxinfo"></a> CComboBox::GetComboBoxInfo
 
 Retrieves information for the `CComboBox` object.
 
@@ -525,7 +525,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function emulates the functionality of the [CB_GETCOMBOBOXINFO](/windows/win32/Controls/cb-getcomboboxinfo) message, as described in the Windows SDK.
 
-##  <a name="getcount"></a>  CComboBox::GetCount
+## <a name="getcount"></a> CComboBox::GetCount
 
 Call this member function to retrieve the number of items in the list-box portion of a combo box.
 
@@ -541,7 +541,7 @@ The number of items. The returned count is one greater than the index value of t
 
 [!code-cpp[NVC_MFC_CComboBox#14](../../mfc/reference/codesnippet/cpp/ccombobox-class_14.cpp)]
 
-##  <a name="getcuebanner"></a>  CComboBox::GetCueBanner
+## <a name="getcuebanner"></a> CComboBox::GetCueBanner
 
 Gets the cue text that is displayed for a combo box control.
 
@@ -574,7 +574,7 @@ Cue text is a prompt that is displayed in the input area of the combo box contro
 
 This method sends the [CB_GETCUEBANNER](/windows/win32/Controls/cb-getcuebanner) message, which is described in the Windows SDK.
 
-##  <a name="getcursel"></a>  CComboBox::GetCurSel
+## <a name="getcursel"></a> CComboBox::GetCurSel
 
 Call this member function to determine which item in the combo box is selected.
 
@@ -594,7 +594,7 @@ The zero-based index of the currently selected item in the list box of a combo b
 
 [!code-cpp[NVC_MFC_CComboBox#15](../../mfc/reference/codesnippet/cpp/ccombobox-class_15.cpp)]
 
-##  <a name="getdroppedcontrolrect"></a>  CComboBox::GetDroppedControlRect
+## <a name="getdroppedcontrolrect"></a> CComboBox::GetDroppedControlRect
 
 Call the `GetDroppedControlRect` member function to retrieve the screen coordinates of the visible (dropped-down) list box of a drop-down combo box.
 
@@ -611,7 +611,7 @@ Points to the [RECT structure](/windows/win32/api/windef/ns-windef-rect) that is
 
 [!code-cpp[NVC_MFC_CComboBox#16](../../mfc/reference/codesnippet/cpp/ccombobox-class_16.cpp)]
 
-##  <a name="getdroppedstate"></a>  CComboBox::GetDroppedState
+## <a name="getdroppedstate"></a> CComboBox::GetDroppedState
 
 Call the `GetDroppedState` member function to determine whether the list box of a drop-down combo box is visible (dropped down).
 
@@ -627,7 +627,7 @@ Nonzero if the list box is visible; otherwise 0.
 
 [!code-cpp[NVC_MFC_CComboBox#17](../../mfc/reference/codesnippet/cpp/ccombobox-class_17.cpp)]
 
-##  <a name="getdroppedwidth"></a>  CComboBox::GetDroppedWidth
+## <a name="getdroppedwidth"></a> CComboBox::GetDroppedWidth
 
 Call this function to retrieve the minimum allowable width, in pixels, of the list box of a combo box.
 
@@ -649,7 +649,7 @@ By default, the minimum allowable width of the drop-down list box is 0. The mini
 
   See the example for [SetDroppedWidth](#setdroppedwidth).
 
-##  <a name="geteditsel"></a>  CComboBox::GetEditSel
+## <a name="geteditsel"></a> CComboBox::GetEditSel
 
 Gets the starting and ending character positions of the current selection in the edit control of a combo box.
 
@@ -665,7 +665,7 @@ A 32-bit value that contains the starting position in the low-order word and the
 
 [!code-cpp[NVC_MFC_CComboBox#18](../../mfc/reference/codesnippet/cpp/ccombobox-class_18.cpp)]
 
-##  <a name="getextendedui"></a>  CComboBox::GetExtendedUI
+## <a name="getextendedui"></a> CComboBox::GetExtendedUI
 
 Call the `GetExtendedUI` member function to determine whether a combo box has the default user interface or the extended user interface.
 
@@ -691,7 +691,7 @@ Scrolling in the static control is disabled when the item list is not visible (a
 
 [!code-cpp[NVC_MFC_CComboBox#19](../../mfc/reference/codesnippet/cpp/ccombobox-class_19.cpp)]
 
-##  <a name="gethorizontalextent"></a>  CComboBox::GetHorizontalExtent
+## <a name="gethorizontalextent"></a> CComboBox::GetHorizontalExtent
 
 Retrieves from the combo box the width in pixels by which the list-box portion of the combo box can be scrolled horizontally.
 
@@ -711,7 +711,7 @@ This is applicable only if the list-box portion of the combo box has a horizonta
 
 [!code-cpp[NVC_MFC_CComboBox#20](../../mfc/reference/codesnippet/cpp/ccombobox-class_20.cpp)]
 
-##  <a name="getitemdata"></a>  CComboBox::GetItemData
+## <a name="getitemdata"></a> CComboBox::GetItemData
 
 Retrieves the application-supplied 32-bit value associated with the specified combo-box item.
 
@@ -736,7 +736,7 @@ The 32-bit value can be set with the *dwItemData* parameter of a [SetItemData](#
 
 [!code-cpp[NVC_MFC_CComboBox#21](../../mfc/reference/codesnippet/cpp/ccombobox-class_21.cpp)]
 
-##  <a name="getitemdataptr"></a>  CComboBox::GetItemDataPtr
+## <a name="getitemdataptr"></a> CComboBox::GetItemDataPtr
 
 Retrieves the application-supplied 32-bit value associated with the specified combo-box item as a pointer (**void** <strong>\*</strong>).
 
@@ -757,7 +757,7 @@ Retrieves a pointer, or -1 if an error occurs.
 
 [!code-cpp[NVC_MFC_CComboBox#22](../../mfc/reference/codesnippet/cpp/ccombobox-class_22.cpp)]
 
-##  <a name="getitemheight"></a>  CComboBox::GetItemHeight
+## <a name="getitemheight"></a> CComboBox::GetItemHeight
 
 Call the `GetItemHeight` member function to retrieve the height of list items in a combo box.
 
@@ -778,7 +778,7 @@ The height, in pixels, of the specified item in a combo box. The return value is
 
 [!code-cpp[NVC_MFC_CComboBox#23](../../mfc/reference/codesnippet/cpp/ccombobox-class_23.cpp)]
 
-##  <a name="getlbtext"></a>  CComboBox::GetLBText
+## <a name="getlbtext"></a> CComboBox::GetLBText
 
 Gets a string from the list box of a combo box.
 
@@ -815,7 +815,7 @@ The second form of this member function fills a `CString` object with the item's
 
 [!code-cpp[NVC_MFC_CComboBox#24](../../mfc/reference/codesnippet/cpp/ccombobox-class_24.cpp)]
 
-##  <a name="getlbtextlen"></a>  CComboBox::GetLBTextLen
+## <a name="getlbtextlen"></a> CComboBox::GetLBTextLen
 
 Gets the length of a string in the list box of a combo box.
 
@@ -836,7 +836,7 @@ The length of the string in bytes, excluding the terminating null character. If 
 
   See the example for [CComboBox::GetLBText](#getlbtext).
 
-##  <a name="getlocale"></a>  CComboBox::GetLocale
+## <a name="getlocale"></a> CComboBox::GetLocale
 
 Retrieves the locale used by the combo box.
 
@@ -856,7 +856,7 @@ The locale is used, for example, to determine the sort order of the strings in a
 
   See the example for [CComboBox::SetLocale](#setlocale).
 
-##  <a name="getminvisible"></a>  CComboBox::GetMinVisible
+## <a name="getminvisible"></a> CComboBox::GetMinVisible
 
 Gets the minimum number of visible items in the drop-down list of the current combo box control.
 
@@ -872,7 +872,7 @@ The minimum number of visible items in the current drop-down list.
 
 This method sends the [CB_GETMINVISIBLE](/windows/win32/Controls/cb-setminvisible) message, which is described in the Windows SDK.
 
-##  <a name="gettopindex"></a>  CComboBox::GetTopIndex
+## <a name="gettopindex"></a> CComboBox::GetTopIndex
 
 Retrieves the zero-based index of the first visible item in the list-box portion of the combo box.
 
@@ -892,7 +892,7 @@ Initially, item 0 is at the top of the list box, but if the list box is scrolled
 
 [!code-cpp[NVC_MFC_CComboBox#25](../../mfc/reference/codesnippet/cpp/ccombobox-class_25.cpp)]
 
-##  <a name="initstorage"></a>  CComboBox::InitStorage
+## <a name="initstorage"></a> CComboBox::InitStorage
 
 Allocates memory for storing list box items in the list-box portion of the combo box.
 
@@ -926,7 +926,7 @@ This function helps speed up the initialization of list boxes that have a large 
 
 [!code-cpp[NVC_MFC_CComboBox#26](../../mfc/reference/codesnippet/cpp/ccombobox-class_26.cpp)]
 
-##  <a name="insertstring"></a>  CComboBox::InsertString
+## <a name="insertstring"></a> CComboBox::InsertString
 
 Inserts a string into the list box of a combo box.
 
@@ -953,13 +953,13 @@ The zero-based index of the position at which the string was inserted. The retur
 Unlike the [AddString](#addstring) member function, the `InsertString` member function does not cause a list with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style to be sorted.
 
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
+> This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
 
 ### Example
 
 [!code-cpp[NVC_MFC_CComboBox#27](../../mfc/reference/codesnippet/cpp/ccombobox-class_27.cpp)]
 
-##  <a name="limittext"></a>  CComboBox::LimitText
+## <a name="limittext"></a> CComboBox::LimitText
 
 Limits the length in bytes of the text that the user can enter into the edit control of a combo box.
 
@@ -986,7 +986,7 @@ If the combo box does not have the style [CBS_AUTOHSCROLL](../../mfc/reference/s
 
 [!code-cpp[NVC_MFC_CComboBox#28](../../mfc/reference/codesnippet/cpp/ccombobox-class_28.cpp)]
 
-##  <a name="measureitem"></a>  CComboBox::MeasureItem
+## <a name="measureitem"></a> CComboBox::MeasureItem
 
 Called by the framework when a combo box with an owner-draw style is created.
 
@@ -1011,7 +1011,7 @@ See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a
 
 [!code-cpp[NVC_MFC_CComboBox#29](../../mfc/reference/codesnippet/cpp/ccombobox-class_29.cpp)]
 
-##  <a name="paste"></a>  CComboBox::Paste
+## <a name="paste"></a> CComboBox::Paste
 
 Inserts the data from the Clipboard into the edit control of the combo box at the current cursor position.
 
@@ -1027,7 +1027,7 @@ Data is inserted only if the Clipboard contains data in CF_TEXT format.
 
 [!code-cpp[NVC_MFC_CComboBox#30](../../mfc/reference/codesnippet/cpp/ccombobox-class_30.cpp)]
 
-##  <a name="resetcontent"></a>  CComboBox::ResetContent
+## <a name="resetcontent"></a> CComboBox::ResetContent
 
 Removes all items from the list box and edit control of a combo box.
 
@@ -1039,7 +1039,7 @@ void ResetContent();
 
 [!code-cpp[NVC_MFC_CComboBox#31](../../mfc/reference/codesnippet/cpp/ccombobox-class_31.cpp)]
 
-##  <a name="selectstring"></a>  CComboBox::SelectString
+## <a name="selectstring"></a> CComboBox::SelectString
 
 Searches for a string in the list box of a combo box, and if the string is found, selects the string in the list box and copies it to the edit control.
 
@@ -1071,7 +1071,7 @@ Note that the `SelectString` and `FindString` member functions both find a strin
 
 [!code-cpp[NVC_MFC_CComboBox#32](../../mfc/reference/codesnippet/cpp/ccombobox-class_32.cpp)]
 
-##  <a name="setcuebanner"></a>  CComboBox::SetCueBanner
+## <a name="setcuebanner"></a> CComboBox::SetCueBanner
 
 Sets the cue text that is displayed for a combo box control.
 
@@ -1107,7 +1107,7 @@ The following code example sets the cue banner for the combo box control.
 
 [!code-cpp[NVC_MFC_CComboBox_s1#2](../../mfc/reference/codesnippet/cpp/ccombobox-class_34.cpp)]
 
-##  <a name="setcursel"></a>  CComboBox::SetCurSel
+## <a name="setcursel"></a> CComboBox::SetCurSel
 
 Selects a string in the list box of a combo box.
 
@@ -1132,7 +1132,7 @@ If necessary, the list box scrolls the string into view (if the list box is visi
 
 [!code-cpp[NVC_MFC_CComboBox#33](../../mfc/reference/codesnippet/cpp/ccombobox-class_35.cpp)]
 
-##  <a name="setdroppedwidth"></a>  CComboBox::SetDroppedWidth
+## <a name="setdroppedwidth"></a> CComboBox::SetDroppedWidth
 
 Call this function to set the minimum allowable width, in pixels, of the list box of a combo box.
 
@@ -1159,7 +1159,7 @@ By default, the minimum allowable width of the drop-down list box is 0. When the
 
 [!code-cpp[NVC_MFC_CComboBox#34](../../mfc/reference/codesnippet/cpp/ccombobox-class_36.cpp)]
 
-##  <a name="seteditsel"></a>  CComboBox::SetEditSel
+## <a name="seteditsel"></a> CComboBox::SetEditSel
 
 Selects characters in the edit control of a combo box.
 
@@ -1186,13 +1186,13 @@ Nonzero if the member function is successful; otherwise 0. It is CB_ERR if `CCom
 The positions are zero-based. To select the first character of the edit control, you specify a starting position of 0. The ending position is for the character just after the last character to select. For example, to select the first four characters of the edit control, you would use a starting position of 0 and an ending position of 4.
 
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
+> This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
 
 ### Example
 
   See the example for [CComboBox::GetEditSel](#geteditsel).
 
-##  <a name="setextendedui"></a>  CComboBox::SetExtendedUI
+## <a name="setextendedui"></a> CComboBox::SetExtendedUI
 
 Call the `SetExtendedUI` member function to select either the default user interface or the extended user interface for a combo box that has the [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.
 
@@ -1223,7 +1223,7 @@ Scrolling in the static control is disabled when the item list is not visible (t
 
   See the example for [CComboBox::GetExtendedUI](#getextendedui).
 
-##  <a name="sethorizontalextent"></a>  CComboBox::SetHorizontalExtent
+## <a name="sethorizontalextent"></a> CComboBox::SetHorizontalExtent
 
 Sets the width, in pixels, by which the list-box portion of the combo box can be scrolled horizontally.
 
@@ -1244,7 +1244,7 @@ If the width of the list box is smaller than this value, the horizontal scroll b
 
 [!code-cpp[NVC_MFC_CComboBox#35](../../mfc/reference/codesnippet/cpp/ccombobox-class_37.cpp)]
 
-##  <a name="setitemdata"></a>  CComboBox::SetItemData
+## <a name="setitemdata"></a> CComboBox::SetItemData
 
 Sets the 32-bit value associated with the specified item in a combo box.
 
@@ -1274,7 +1274,7 @@ Use the `SetItemDataPtr` member function if the 32-bit item is to be a pointer.
 
 [!code-cpp[NVC_MFC_CComboBox#36](../../mfc/reference/codesnippet/cpp/ccombobox-class_38.cpp)]
 
-##  <a name="setitemdataptr"></a>  CComboBox::SetItemDataPtr
+## <a name="setitemdataptr"></a> CComboBox::SetItemDataPtr
 
 Sets the 32-bit value associated with the specified item in a combo box to be the specified pointer (**void** <strong>\*</strong>).
 
@@ -1304,7 +1304,7 @@ This pointer remains valid for the life of the combo box, even though the item's
 
 [!code-cpp[NVC_MFC_CComboBox#37](../../mfc/reference/codesnippet/cpp/ccombobox-class_39.cpp)]
 
-##  <a name="setitemheight"></a>  CComboBox::SetItemHeight
+## <a name="setitemheight"></a> CComboBox::SetItemHeight
 
 Call the `SetItemHeight` member function to set the height of list items in a combo box or the height of the edit-control (or static-text) portion of a combo box.
 
@@ -1338,7 +1338,7 @@ The height of the edit-control (or static-text) portion of the combo box is set 
 
 [!code-cpp[NVC_MFC_CComboBox#38](../../mfc/reference/codesnippet/cpp/ccombobox-class_40.cpp)]
 
-##  <a name="setlocale"></a>  CComboBox::SetLocale
+## <a name="setlocale"></a> CComboBox::SetLocale
 
 Sets the locale identifier for this combo box.
 
@@ -1363,7 +1363,7 @@ If `SetLocale` is not called, the default locale is obtained from the system. Th
 
 [!code-cpp[NVC_MFC_CComboBox#39](../../mfc/reference/codesnippet/cpp/ccombobox-class_41.cpp)]
 
-##  <a name="setminvisibleitems"></a>  CComboBox::SetMinVisibleItems
+## <a name="setminvisibleitems"></a> CComboBox::SetMinVisibleItems
 
 Sets the minimum number of visible items in the drop-down list of the current combo box control.
 
@@ -1397,7 +1397,7 @@ The following code example inserts 20 items into the drop-down list of a combo b
 
 [!code-cpp[NVC_MFC_CComboBox_s1#2](../../mfc/reference/codesnippet/cpp/ccombobox-class_34.cpp)]
 
-##  <a name="settopindex"></a>  CComboBox::SetTopIndex
+## <a name="settopindex"></a> CComboBox::SetTopIndex
 
 Ensures that a particular item is visible in the list-box portion of the combo box.
 
@@ -1422,7 +1422,7 @@ The system scrolls the list box until either the item specified by *nIndex* appe
 
 [!code-cpp[NVC_MFC_CComboBox#40](../../mfc/reference/codesnippet/cpp/ccombobox-class_42.cpp)]
 
-##  <a name="showdropdown"></a>  CComboBox::ShowDropDown
+## <a name="showdropdown"></a> CComboBox::ShowDropDown
 
 Shows or hides the list box of a combo box that has the [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.
 

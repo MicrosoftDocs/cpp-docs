@@ -10,7 +10,7 @@ ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
 Gets a gopher "locator" from a gopher server, determines the locator's type, and makes the locator available to [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md).
 
 > [!NOTE]
->  The classes `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` and their members have been deprecated because they do not work on the Windows XP platform, but they will continue to work on earlier platforms.
+> The classes `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` and their members have been deprecated because they do not work on the Windows XP platform, but they will continue to work on earlier platforms.
 
 ## Syntax
 
@@ -58,7 +58,7 @@ To learn more about how `CGopherLocator` works with the other MFC Internet class
 
 **Header:** afxinet.h
 
-##  <a name="cgopherlocator"></a>  CGopherLocator::CGopherLocator
+## <a name="cgopherlocator"></a> CGopherLocator::CGopherLocator
 
 This member function is called to create a `CGopherLocator` object.
 
@@ -75,7 +75,7 @@ A reference to a constant `CGopherLocator` object.
 
 You never create a `CGopherLocator` object directly. Instead, call [CGopherConnection::CreateLocator](../../mfc/reference/cgopherconnection-class.md#createlocator) to create and return a pointer to the `CGopherLocator` object.
 
-##  <a name="getlocatortype"></a>  CGopherLocator::GetLocatorType
+## <a name="getlocatortype"></a> CGopherLocator::GetLocatorType
 
 Call this member function to get the locator type.
 
@@ -123,7 +123,7 @@ The possible types are as follows:
 |GOPHER_TYPE_ASK|An Ask+ item.|
 |GOPHER_TYPE_GOPHER_PLUS|A Gopher+ item.|
 
-##  <a name="operator_lpctstr"></a>  CGopherLocator::operator LPCTSTR
+## <a name="operator_lpctstr"></a> CGopherLocator::operator LPCTSTR
 
 This useful casting operator provides an efficient method to access the null-terminated C string contained in a `CGopherLocator` object.
 
