@@ -188,7 +188,7 @@ See the example for [CATCH](#catch).
 
 ### Requirements
 
-**Header** afx.h
+  **Header** afx.h
 
 ## <a name="and_catch_all"></a> AND_CATCH_ALL
 
