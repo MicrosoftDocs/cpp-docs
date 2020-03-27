@@ -10,6 +10,7 @@ ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
 The `CMFCShellTreeCtrl` class extends [CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md) functionality by displaying a hierarchy of Shell items.
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```

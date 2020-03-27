@@ -255,6 +255,7 @@ constexpr const_iterator begin() const noexcept;
 ```
 
 ### Return Value
+
 Returns a const_iterator addressing the first element.
 
 ## <a name="cbegin"></a>  basic_string_view::cbegin

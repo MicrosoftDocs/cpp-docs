@@ -456,6 +456,7 @@ A number that specifies the length of the string.
 ### Remarks
 
 If performance is critical and you control the lifetime of the source string, you can use [Platform::StringReference](../cppcx/platform-stringreference-class.md) in place of String.
+
 ### Example
 
 ```cpp

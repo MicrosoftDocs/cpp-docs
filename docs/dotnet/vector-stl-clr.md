@@ -939,6 +939,7 @@ x b c
 ```
 
 ## <a name="front_item"></a> vector::front_item (STL/CLR)
+
 Accesses the first element.
 
 ### Syntax
@@ -989,6 +990,7 @@ x b c
 ```
 
 ## <a name="generic_container"></a> vector::generic_container (STL/CLR)
+
 The type of the generic interface for the container.
 
 ### Syntax
@@ -1112,6 +1114,7 @@ a a c
 ```
 
 ## <a name="generic_reverse_iterator"></a> vector::generic_reverse_iterator (STL/CLR)
+
 The type of a reverse iterator for use with the generic interface for the container.
 
 ### Syntax

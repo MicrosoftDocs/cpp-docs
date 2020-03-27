@@ -9,6 +9,7 @@ ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
 
 A `CMFCReBar` object is a control bar that provides layout, persistence, and state information for rebar controls.
    For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```

@@ -9,6 +9,7 @@ ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
 
 A tab control that has the visual appearance of the **Navigation Pane** in Microsoft Outlook.
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```

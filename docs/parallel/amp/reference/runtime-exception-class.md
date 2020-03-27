@@ -106,6 +106,7 @@ HRESULT get_error_code() const throw();
 The HRESULT of error that caused the exception.
 
 ## <a name="operator_eq"></a>  operator=
+
   Copies the contents of the specified `runtime_exception` object into this one.
 
 ### Syntax

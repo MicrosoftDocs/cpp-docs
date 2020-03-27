@@ -688,6 +688,7 @@ When you choose a configuration, it is added to the CMakeSettings.json file in t
 ```
 
 ::: moniker-end
+
 ## See also
 
 [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>

@@ -10,6 +10,7 @@ ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
 A toolbar that appears when the user presses and holds a top-level toolbar button.
 
    For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```
