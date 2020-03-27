@@ -57,7 +57,7 @@ The class [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.
 
 **Header:** atlbase.h
 
-##  <a name="getdefaultthreads"></a>  CAtlAutoThreadModuleT::GetDefaultThreads
+## <a name="getdefaultthreads"></a>  CAtlAutoThreadModuleT::GetDefaultThreads
 
 This static function dynamically calculates and returns the maximum number of threads for the EXE module, based on the number of processors.
 

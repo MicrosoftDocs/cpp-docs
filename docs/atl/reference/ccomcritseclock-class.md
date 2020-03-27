@@ -44,7 +44,7 @@ Use this class to lock and unlock objects in a safer way than with the [CComCrit
 
 **Header:** atlbase.h
 
-##  <a name="ctor"></a>  CComCritSecLock::CComCritSecLock
+## <a name="ctor"></a>  CComCritSecLock::CComCritSecLock
 
 The constructor.
 
@@ -64,7 +64,7 @@ The initial lock state: **true** means locked.
 
 Initializes the critical section object.
 
-##  <a name="dtor"></a>  CComCritSecLock::~CComCritSecLock
+## <a name="dtor"></a>  CComCritSecLock::~CComCritSecLock
 
 The destructor.
 
@@ -76,7 +76,7 @@ The destructor.
 
 Unlocks the critical section object.
 
-##  <a name="lock"></a>  CComCritSecLock::Lock
+## <a name="lock"></a>  CComCritSecLock::Lock
 
 Call this method to lock the critical section object.
 
@@ -92,7 +92,7 @@ Returns S_OK if the object has successfully been locked, or an error HRESULT on 
 
 If the object is already locked, an ASSERT error will occur in debug builds.
 
-##  <a name="unlock"></a>  CComCritSecLock::Unlock
+## <a name="unlock"></a>  CComCritSecLock::Unlock
 
 Call this method to unlock the critical section object.
 

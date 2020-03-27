@@ -53,7 +53,7 @@ The [IPersistPropertyBag](/previous-versions/windows/internet-explorer/ie-develo
 
 **Header:** atlcom.h
 
-##  <a name="getclassid"></a>  IPersistPropertyBagImpl::GetClassID
+## <a name="getclassid"></a>  IPersistPropertyBagImpl::GetClassID
 
 Retrieves the object's CLSID.
 
@@ -65,7 +65,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 
 See [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.
 
-##  <a name="initnew"></a>  IPersistPropertyBagImpl::InitNew
+## <a name="initnew"></a>  IPersistPropertyBagImpl::InitNew
 
 Initializes a newly created object.
 
@@ -81,7 +81,7 @@ Returns S_OK.
 
 See [IPersistPropertyBag::InitNew](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768204\(v=vs.85\)) in the Windows SDK.
 
-##  <a name="load"></a>  IPersistPropertyBagImpl::Load
+## <a name="load"></a>  IPersistPropertyBagImpl::Load
 
 Loads the object's properties from a client-supplied property bag.
 
@@ -95,7 +95,7 @@ ATL uses the object's property map to retrieve this information.
 
 See [IPersistPropertyBag::Load](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768206\(v=vs.85\)) in the Windows SDK.
 
-##  <a name="save"></a>  IPersistPropertyBagImpl::Save
+## <a name="save"></a>  IPersistPropertyBagImpl::Save
 
 Saves the object's properties into a client-supplied property bag.
 

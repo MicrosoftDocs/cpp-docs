@@ -56,7 +56,7 @@ Because this class is derived from [CMFCPropertySheet Class](../../mfc/reference
 
 **Header:** afxribboncustomizedialog.h
 
-##  <a name="cmfcribboncustomizedialog"></a>  CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog
+## <a name="cmfcribboncustomizedialog"></a>  CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog
 
 Constructs a `CMFCRibbonCustomizeDialog` object.
 

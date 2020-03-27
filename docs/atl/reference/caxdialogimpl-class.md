@@ -82,7 +82,7 @@ For more information on `CAxDialogImpl`, see [ATL Control Containment FAQ](../..
 
 **Header:** atlwin.h
 
-##  <a name="advisesinkmap"></a>  CAxDialogImpl::AdviseSinkMap
+## <a name="advisesinkmap"></a>  CAxDialogImpl::AdviseSinkMap
 
 Call this method to advise or unadvise all entries in the object's sink map event map.
 
@@ -99,7 +99,7 @@ Set to true if all sink entries are to be advised; false if all sink entries are
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="create"></a>  CAxDialogImpl::Create
+## <a name="create"></a>  CAxDialogImpl::Create
 
 Call this method to create a modeless dialog box.
 
@@ -129,7 +129,7 @@ This dialog box is automatically attached to the `CAxDialogImpl` object. To crea
 
 The second override is provided only so dialog boxes can be used with [CComControl](../../atl/reference/ccomcontrol-class.md).
 
-##  <a name="destroywindow"></a>  CAxDialogImpl::DestroyWindow
+## <a name="destroywindow"></a>  CAxDialogImpl::DestroyWindow
 
 Call this method to destroy a modeless dialog box.
 
@@ -145,7 +145,7 @@ TRUE if the window is successfully destroyed; otherwise FALSE.
 
 Do not call `DestroyWindow` to destroy a modal dialog box. Call [EndDialog](#enddialog) instead.
 
-##  <a name="domodal"></a>  CAxDialogImpl::DoModal
+## <a name="domodal"></a>  CAxDialogImpl::DoModal
 
 Call this method to create a modal dialog box.
 
@@ -173,7 +173,7 @@ This dialog box is automatically attached to the `CAxDialogImpl` object.
 
 To create a modeless dialog box, call [Create](#create).
 
-##  <a name="enddialog"></a>  CAxDialogImpl::EndDialog
+## <a name="enddialog"></a>  CAxDialogImpl::EndDialog
 
 Call this method to destroy a modal dialog box.
 
@@ -197,7 +197,7 @@ TRUE if the dialog box is destroyed; otherwise, FALSE.
 > [!NOTE]
 >  Do not call `EndDialog` to destroy a modeless dialog box. Call [DestroyWindow](#destroywindow) instead.
 
-##  <a name="getdialogproc"></a>  CAxDialogImpl::GetDialogProc
+## <a name="getdialogproc"></a>  CAxDialogImpl::GetDialogProc
 
 Call this method to get a pointer to the `DialogProc` callback function.
 
@@ -213,7 +213,7 @@ Returns a pointer to the `DialogProc` callback function.
 
 The `DialogProc` function is an application-defined callback function.
 
-##  <a name="getidd"></a>  CAxDialogImpl::GetIDD
+## <a name="getidd"></a>  CAxDialogImpl::GetIDD
 
 Call this method to get the dialog template resource ID.
 
@@ -225,7 +225,7 @@ int GetIDD();
 
 Returns the dialog template resource ID.
 
-##  <a name="isdialogmessage"></a>  CAxDialogImpl::IsDialogMessage
+## <a name="isdialogmessage"></a>  CAxDialogImpl::IsDialogMessage
 
 Call this method to determine whether a message is intended for this dialog box and, if it is, process the message.
 
@@ -246,7 +246,7 @@ Returns TRUE if the message has been processed, FALSE otherwise.
 
 This method is intended to be called from within a message loop.
 
-##  <a name="m_bmodal"></a>  CAxDialogImpl::m_bModal
+## <a name="m_bmodal"></a>  CAxDialogImpl::m_bModal
 
 A variable that exists only in debug builds and is set to true if the dialog box is modal.
 

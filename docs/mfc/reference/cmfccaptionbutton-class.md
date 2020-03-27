@@ -62,7 +62,7 @@ The following example demonstrates how to construct a `CMFCCaptionButton` object
 
 **Header:** afxcaptionbutton.h
 
-##  <a name="cmfccaptionbutton"></a>  CMFCCaptionButton::CMFCCaptionButton
+## <a name="cmfccaptionbutton"></a>  CMFCCaptionButton::CMFCCaptionButton
 
 Constructs a `CMFCCaptionButton` object.
 
@@ -100,7 +100,7 @@ By default, caption buttons are not associated with a command.
 
 Caption buttons are aligned either on the right or left.
 
-##  <a name="gethit"></a>  CMFCCaptionButton::GetHit
+## <a name="gethit"></a>  CMFCCaptionButton::GetHit
 
 Returns the command represented by the button.
 
@@ -124,7 +124,7 @@ The following table lists possible return values.
 |AFX_HTMENU|Down arrow menu button.|
 |HTNOWHERE|The default value; represents no command.|
 
-##  <a name="geticonid"></a>  CMFCCaptionButton::GetIconID
+## <a name="geticonid"></a>  CMFCCaptionButton::GetIconID
 
 Returns the image ID associated with the button.
 
@@ -150,7 +150,7 @@ The image ID.
 
 The parameters specify image IDs for minimize or maximize caption buttons.
 
-##  <a name="getrect"></a>  CMFCCaptionButton::GetRect
+## <a name="getrect"></a>  CMFCCaptionButton::GetRect
 
 Returns the rectangle occupied by the button.
 
@@ -166,7 +166,7 @@ The rectangle that represents the location of the button.
 
 If you cannot see the button, the size returned is 0.
 
-##  <a name="getsize"></a>  CMFCCaptionButton::GetSize
+## <a name="getsize"></a>  CMFCCaptionButton::GetSize
 
 Returns the width and height of the button.
 
@@ -182,7 +182,7 @@ The outer dimensions of the button.
 
 The size returned includes button margin and border.
 
-##  <a name="isminiframebutton"></a>  CMFCCaptionButton::IsMiniFrameButton
+## <a name="isminiframebutton"></a>  CMFCCaptionButton::IsMiniFrameButton
 
 Indicates whether the title bar height is set to mini size.
 
@@ -196,7 +196,7 @@ TRUE if the caption is set to mini size; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="move"></a>  CMFCCaptionButton::Move
+## <a name="move"></a>  CMFCCaptionButton::Move
 
 Sets the button draw location and window show state.
 
@@ -214,7 +214,7 @@ void Move(
 *bHide*<br/>
 [in] Whether to show the button.
 
-##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw
+## <a name="ondraw"></a>  CMFCCaptionButton::OnDraw
 
 Draws the caption button.
 
@@ -248,7 +248,7 @@ virtual void OnDraw(
 
 The *bMaximized* parameter is used when the button is a maximize or minimize button.
 
-##  <a name="setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton
+## <a name="setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton
 
 Sets the mini size of the title bar.
 

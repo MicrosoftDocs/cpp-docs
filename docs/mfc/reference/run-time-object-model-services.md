@@ -93,7 +93,7 @@ Use this macro to determine whether the Common Controls library the function spe
 
 afxcomctl32.h, afxcomctl32.inl
 
-##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
+## <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
 
 Adds the ability to access run-time information about an object's class when deriving a class from `CObject`.
 
@@ -124,7 +124,7 @@ See the example for [IMPLEMENT_DYNAMIC](#implement_dynamic).
 
 **Header:** afx.h
 
-##  <a name="declare_dyncreate"></a>  DECLARE_DYNCREATE
+## <a name="declare_dyncreate"></a>  DECLARE_DYNCREATE
 
 Enables objects of `CObject`-derived classes to be created dynamically at run time.
 
@@ -206,7 +206,7 @@ For more information on property pages, see the article [ActiveX Controls: Prope
 
 **Header:** afxctl.h
 
-##  <a name="declare_serial"></a>  DECLARE_SERIAL
+## <a name="declare_serial"></a>  DECLARE_SERIAL
 
 Generates the C++ header code necessary for a `CObject`-derived class that can be serialized.
 
@@ -243,7 +243,7 @@ For more information on the DECLARE_SERIAL macro, see [CObject Class Topics](../
 
 **Header:** afx.h
 
-##  <a name="implement_dynamic"></a>  IMPLEMENT_DYNAMIC
+## <a name="implement_dynamic"></a>  IMPLEMENT_DYNAMIC
 
 Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.
 
@@ -275,7 +275,7 @@ For more information, see [CObject Class Topics](../../mfc/using-cobject.md).
 
 **Header:** afx.h
 
-##  <a name="implement_dyncreate"></a>  IMPLEMENT_DYNCREATE
+## <a name="implement_dyncreate"></a>  IMPLEMENT_DYNCREATE
 
 Enables objects of `CObject`-derived classes to be created dynamically at run time when used with the DECLARE_DYNCREATE macro.
 
@@ -389,7 +389,7 @@ The `GetUserTypeNameID` member function returns the resource string that identif
 
 **Header:** afxctl.h
 
-##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL
+## <a name="implement_serial"></a>  IMPLEMENT_SERIAL
 
 Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.
 
@@ -426,7 +426,7 @@ For more information, see the [CObject Class Topics](../../mfc/using-cobject.md)
 
 **Header:** afx.h
 
-##  <a name="runtime_class"></a>  RUNTIME_CLASS
+## <a name="runtime_class"></a>  RUNTIME_CLASS
 
 Gets the run-time class structure from the name of a C++ class.
 
@@ -453,7 +453,7 @@ For more information, see [CObject Class Topics](../../mfc/using-cobject.md).
 
 **Header:** afx.h
 
-##  <a name="declare_olecreate"></a>  DECLARE_OLECREATE
+## <a name="declare_olecreate"></a>  DECLARE_OLECREATE
 
 Enables objects of `CCmdTarget`-derived classes to be created through OLE automation.
 
@@ -478,7 +478,7 @@ If DECLARE_OLECREATE is included in the class declaration, then IMPLEMENT_OLECRE
 
 **Header**: afxdisp.h
 
-##  <a name="implement_olecreate"></a>  IMPLEMENT_OLECREATE
+## <a name="implement_olecreate"></a>  IMPLEMENT_OLECREATE
 
 Either this macro or [IMPLEMENT_OLECREATE_FLAGS](#implement_olecreate_flags) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.
 

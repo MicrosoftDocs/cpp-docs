@@ -63,7 +63,7 @@ See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).
 
 **Header:** atlmem.h
 
-##  <a name="allocate"></a>  CWin32Heap::Allocate
+## <a name="allocate"></a>  CWin32Heap::Allocate
 
 Allocates a block of memory from the heap object.
 
@@ -86,7 +86,7 @@ Call [CWin32Heap::Free](#free) or [CWin32Heap::Reallocate](#reallocate) to free 
 
 Implemented using [HeapAlloc](/windows/win32/api/heapapi/nf-heapapi-heapalloc).
 
-##  <a name="attach"></a>  CWin32Heap::Attach
+## <a name="attach"></a>  CWin32Heap::Attach
 
 Attaches the heap object to an existing heap.
 
@@ -106,7 +106,7 @@ A flag indicating if the `CWin32Heap` object is to take ownership over the resou
 
 If *bTakeOwnership* is TRUE, the `CWin32Heap` object is responsible for deleting the heap handle.
 
-##  <a name="cwin32heap"></a>  CWin32Heap::CWin32Heap
+## <a name="cwin32heap"></a>  CWin32Heap::CWin32Heap
 
 The constructor.
 
@@ -151,7 +151,7 @@ The parameter HEAP_NO_SERIALIZE specifies that mutual exclusion will not be used
 
 The third parameter defaults to 0, which allows the heap to grow as required. See [HeapCreate](/windows/win32/api/heapapi/nf-heapapi-heapcreate) for an explanation of the memory sizes and flags.
 
-##  <a name="dtor"></a>  CWin32Heap::~CWin32Heap
+## <a name="dtor"></a>  CWin32Heap::~CWin32Heap
 
 The destructor.
 
@@ -163,7 +163,7 @@ The destructor.
 
 Destroys the heap handle if the `CWin32Heap` object has ownership of the heap.
 
-##  <a name="detach"></a>  CWin32Heap::Detach
+## <a name="detach"></a>  CWin32Heap::Detach
 
 Detaches the heap object from an existing heap.
 
@@ -175,7 +175,7 @@ HANDLE Detach() throw();
 
 Returns the handle to the heap to which the object was previously attached.
 
-##  <a name="free"></a>  CWin32Heap::Free
+## <a name="free"></a>  CWin32Heap::Free
 
 Frees memory previously allocated from the heap by [CWin32Heap::Allocate](#allocate) or [CWin32Heap::Reallocate](#reallocate).
 
@@ -188,7 +188,7 @@ virtual void Free(void* p) throw();
 *p*<br/>
 Pointer to the block of memory to free. NULL is a valid value and does nothing.
 
-##  <a name="getsize"></a>  CWin32Heap::GetSize
+## <a name="getsize"></a>  CWin32Heap::GetSize
 
 Returns the size of a memory block allocated from the heap object.
 
@@ -205,7 +205,7 @@ Pointer to the memory block whose size the method will obtain. This is a pointer
 
 Returns the size, in bytes, of the allocated memory block.
 
-##  <a name="m_bownheap"></a>  CWin32Heap::m_bOwnHeap
+## <a name="m_bownheap"></a>  CWin32Heap::m_bOwnHeap
 
 A flag used to determine current ownership of the heap handle stored in [m_hHeap](#m_hheap).
 
@@ -213,7 +213,7 @@ A flag used to determine current ownership of the heap handle stored in [m_hHeap
 bool m_bOwnHeap;
 ```
 
-##  <a name="m_hheap"></a>  CWin32Heap::m_hHeap
+## <a name="m_hheap"></a>  CWin32Heap::m_hHeap
 
 Handle to the heap object.
 
@@ -225,7 +225,7 @@ HANDLE m_hHeap;
 
 A variable used to store a handle to the heap object.
 
-##  <a name="reallocate"></a>  CWin32Heap::Reallocate
+## <a name="reallocate"></a>  CWin32Heap::Reallocate
 
 Reallocates a block of memory from the heap object.
 

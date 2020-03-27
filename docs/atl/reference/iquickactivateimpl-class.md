@@ -50,7 +50,7 @@ The [IQuickActivate](/windows/win32/api/ocidl/nn-ocidl-iquickactivate) interface
 
 **Header:** atlctl.h
 
-##  <a name="getcontentextent"></a>  IQuickActivateImpl::GetContentExtent
+## <a name="getcontentextent"></a>  IQuickActivateImpl::GetContentExtent
 
 Retrieves the current display size for a running control.
 
@@ -64,7 +64,7 @@ The size is for a full rendering of the control and is specified in HIMETRIC uni
 
 See [IQuickActivate::GetContentExtent](/windows/win32/api/ocidl/nf-ocidl-iquickactivate-getcontentextent) in the Windows SDK.
 
-##  <a name="quickactivate"></a>  IQuickActivateImpl::QuickActivate
+## <a name="quickactivate"></a>  IQuickActivateImpl::QuickActivate
 
 Performs quick initialization of controls being loaded.
 
@@ -80,7 +80,7 @@ The structure contains pointers to interfaces needed by the control and the valu
 
 See [IQuickActivate::QuickActivate](/windows/win32/api/ocidl/nf-ocidl-iquickactivate-quickactivate) in the Windows SDK.
 
-##  <a name="setcontentextent"></a>  IQuickActivateImpl::SetContentExtent
+## <a name="setcontentextent"></a>  IQuickActivateImpl::SetContentExtent
 
 Informs the control of how much display space the container has assigned to it.
 

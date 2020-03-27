@@ -61,7 +61,7 @@ The [IsValidOperation](#isvalidoperation) member function is provided for writin
 
 **Header:** afxdao.h
 
-##  <a name="isvalidoperation"></a>  CDaoFieldExchange::IsValidOperation
+## <a name="isvalidoperation"></a>  CDaoFieldExchange::IsValidOperation
 
 If you write your own DFX function, call `IsValidOperation` at the beginning of your function to determine whether the current operation can be performed on a particular field data member type (a `CDaoFieldExchange::outputColumn` or a `CDaoFieldExchange::param`).
 
@@ -79,7 +79,7 @@ Some of the operations performed by the DFX mechanism apply only to one of the p
 
 For additional information on writing custom DFX routines, see [Technical Note 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md).
 
-##  <a name="m_noperation"></a>  CDaoFieldExchange::m_nOperation
+## <a name="m_noperation"></a>  CDaoFieldExchange::m_nOperation
 
 Identifies the operation to be performed on the [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object associated with the field exchange object.
 
@@ -110,13 +110,13 @@ Possible values of `m_nOperation` are:
 |`DumpField`|Dumps a field's contents (debug only).|
 |`MaxDFXOperation`|Used for input checking.|
 
-##  <a name="m_prs"></a>  CDaoFieldExchange::m_prs
+## <a name="m_prs"></a>  CDaoFieldExchange::m_prs
 
 Contains a pointer to the [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object associated with the `CDaoFieldExchange` object.
 
 ### Remarks
 
-##  <a name="setfieldtype"></a>  CDaoFieldExchange::SetFieldType
+## <a name="setfieldtype"></a>  CDaoFieldExchange::SetFieldType
 
 Call `SetFieldType` in your `CDaoRecordset` class's `DoFieldExchange` override.
 

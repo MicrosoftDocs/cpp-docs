@@ -62,7 +62,7 @@ For more information on streams and monikers, see [COleStreamFile](../../mfc/ref
 
 **Header:** afxole.h
 
-##  <a name="close"></a>  CMonikerFile::Close
+## <a name="close"></a>  CMonikerFile::Close
 
 Call this function to detach and release the stream and to release the moniker.
 
@@ -74,7 +74,7 @@ virtual void Close();
 
 Can be called on unopened or already closed streams.
 
-##  <a name="cmonikerfile"></a>  CMonikerFile::CMonikerFile
+## <a name="cmonikerfile"></a>  CMonikerFile::CMonikerFile
 
 Constructs a `CMonikerFile` object.
 
@@ -82,7 +82,7 @@ Constructs a `CMonikerFile` object.
 CMonikerFile();
 ```
 
-##  <a name="createbindcontext"></a>  CMonikerFile::CreateBindContext
+## <a name="createbindcontext"></a>  CMonikerFile::CreateBindContext
 
 Call this function to create a default initialized bind context.
 
@@ -103,7 +103,7 @@ A pointer to the bind context [IBindCtx](/windows/win32/api/objidl/nn-objidl-ibi
 
 A bind context is an object that stores information about a particular moniker binding operation. You can override this function to provide a custom bind context.
 
-##  <a name="detach"></a>  CMonikerFile::Detach
+## <a name="detach"></a>  CMonikerFile::Detach
 
 Call this function to close the stream.
 
@@ -120,7 +120,7 @@ A pointer to a file exception. In the event of an error, it will be set to the c
 
 Nonzero if successful; otherwise 0.
 
-##  <a name="getmoniker"></a>  CMonikerFile::GetMoniker
+## <a name="getmoniker"></a>  CMonikerFile::GetMoniker
 
 Call this function to retrieve a pointer to the current moniker.
 
@@ -136,7 +136,7 @@ A pointer to the current moniker interface ( [IMoniker](/windows/win32/api/objid
 
 Since `CMonikerFile` is not an interface, the pointer returned does not increment the reference count (through [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)), and the moniker is released when the `CMonikerFile` object is released. If you want to hold onto the moniker or release it yourself, you must `AddRef` it.
 
-##  <a name="open"></a>  CMonikerFile::Open
+## <a name="open"></a>  CMonikerFile::Open
 
 Call this member function to open a file or moniker object.
 

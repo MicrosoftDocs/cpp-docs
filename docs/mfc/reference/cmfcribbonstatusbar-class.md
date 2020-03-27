@@ -84,7 +84,7 @@ The following example demonstrates how to use various methods in the `CMFCRibbon
 
 **Header:** afxribbonstatusbar.h
 
-##  <a name="adddynamicelement"></a>  CMFCRibbonStatusBar::AddDynamicElement
+## <a name="adddynamicelement"></a>  CMFCRibbonStatusBar::AddDynamicElement
 
 Adds a dynamic element to the ribbon status bar.
 
@@ -101,7 +101,7 @@ void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 
 Unlike regular elements, dynamic elements are not customizable and the customize menu of the status bar does not display them.
 
-##  <a name="addelement"></a>  CMFCRibbonStatusBar::AddElement
+## <a name="addelement"></a>  CMFCRibbonStatusBar::AddElement
 
 Adds a new ribbon element to the ribbon status bar.
 
@@ -123,7 +123,7 @@ void AddElement(
 *bIsVisible*<br/>
 [in] TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.
 
-##  <a name="addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement
+## <a name="addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement
 
 Adds a ribbon element to the extended area of the ribbon status bar.
 
@@ -149,7 +149,7 @@ void AddExtendedElement(
 
 The extended area is on the right side of the status bar control.
 
-##  <a name="addseparator"></a>  CMFCRibbonStatusBar::AddSeparator
+## <a name="addseparator"></a>  CMFCRibbonStatusBar::AddSeparator
 
 Adds a separator to the ribbon status bar.
 
@@ -161,7 +161,7 @@ void AddSeparator();
 
 The framework adds a separator after the method [CMFCRibbonStatusBar::AddElement](#addelement). inserts the last element.
 
-##  <a name="create"></a>  CMFCRibbonStatusBar::Create
+## <a name="create"></a>  CMFCRibbonStatusBar::Create
 
 Creates a ribbon status bar.
 
@@ -187,7 +187,7 @@ BOOL Create(
 
 TRUE if the status bar is created successfully, FALSE otherwise.
 
-##  <a name="createex"></a>  CMFCRibbonStatusBar::CreateEx
+## <a name="createex"></a>  CMFCRibbonStatusBar::CreateEx
 
 Creates a ribbon status bar that has an extended style.
 
@@ -217,7 +217,7 @@ The control ID of the status bar.
 
 TRUE if the status bar is created successfully, FALSE otherwise.
 
-##  <a name="findbyid"></a>  CMFCRibbonStatusBar::FindByID
+## <a name="findbyid"></a>  CMFCRibbonStatusBar::FindByID
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -234,7 +234,7 @@ CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 
 ### Remarks
 
-##  <a name="findelement"></a>  CMFCRibbonStatusBar::FindElement
+## <a name="findelement"></a>  CMFCRibbonStatusBar::FindElement
 
 Returns a pointer to the element that has the specified command ID.
 
@@ -251,7 +251,7 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
 
 A pointer to the element that has the specified command ID. NULL if there is no such element.
 
-##  <a name="getcount"></a>  CMFCRibbonStatusBar::GetCount
+## <a name="getcount"></a>  CMFCRibbonStatusBar::GetCount
 
 Returns the number of elements that are located in the main area of the ribbon status bar.
 
@@ -263,7 +263,7 @@ int GetCount() const;
 
 The number of elements that are located in the main area of the ribbon status bar.
 
-##  <a name="getelement"></a>  CMFCRibbonStatusBar::GetElement
+## <a name="getelement"></a>  CMFCRibbonStatusBar::GetElement
 
 Returns a pointer to the element that is located at a specified index.
 
@@ -282,7 +282,7 @@ A pointer to the element that is located at the specified index. NULL if the ind
 
 ### Remarks
 
-##  <a name="getexcount"></a>  CMFCRibbonStatusBar::GetExCount
+## <a name="getexcount"></a>  CMFCRibbonStatusBar::GetExCount
 
 Returns the number of elements that are located in the extended area of the ribbon status bar.
 
@@ -294,7 +294,7 @@ int GetExCount() const;
 
 The number of elements that are located in the extended area of the ribbon status bar.
 
-##  <a name="getexelement"></a>  CMFCRibbonStatusBar::GetExElement
+## <a name="getexelement"></a>  CMFCRibbonStatusBar::GetExElement
 
 Returns a pointer to the element that is located at a specified index in the extended area of the ribbon status bar. The extended area is on the right side of the status bar control.
 
@@ -313,7 +313,7 @@ A pointer to the element that is located at a specified index in the extended ar
 
 ### Remarks
 
-##  <a name="getextendedarea"></a>  CMFCRibbonStatusBar::GetExtendedArea
+## <a name="getextendedarea"></a>  CMFCRibbonStatusBar::GetExtendedArea
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -329,7 +329,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ### Remarks
 
-##  <a name="getspace"></a>  CMFCRibbonStatusBar::GetSpace
+## <a name="getspace"></a>  CMFCRibbonStatusBar::GetSpace
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -341,7 +341,7 @@ int GetSpace() const;
 
 ### Remarks
 
-##  <a name="isbottomframe"></a>  CMFCRibbonStatusBar::IsBottomFrame
+## <a name="isbottomframe"></a>  CMFCRibbonStatusBar::IsBottomFrame
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -353,7 +353,7 @@ BOOL IsBottomFrame() const;
 
 ### Remarks
 
-##  <a name="isextendedelement"></a>  CMFCRibbonStatusBar::IsExtendedElement
+## <a name="isextendedelement"></a>  CMFCRibbonStatusBar::IsExtendedElement
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -369,7 +369,7 @@ BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
 
 ### Remarks
 
-##  <a name="isinformationmode"></a>  CMFCRibbonStatusBar::IsInformationMode
+## <a name="isinformationmode"></a>  CMFCRibbonStatusBar::IsInformationMode
 
 Determines whether information mode is enabled for the ribbon status bar.
 
@@ -385,7 +385,7 @@ TRUE if the status bar can work in information mode; otherwise FALSE.
 
 In information mode, the status bar hides all regular panes and displays a message string.
 
-##  <a name="ondrawinformation"></a>  CMFCRibbonStatusBar::OnDrawInformation
+## <a name="ondrawinformation"></a>  CMFCRibbonStatusBar::OnDrawInformation
 
 Displays the string that appears on the ribbon status bar when the information mode is enabled.
 
@@ -411,7 +411,7 @@ virtual void OnDrawInformation(
 
 Override this method in a derived class if you want to customize the appearance of the information string on the status bar. Use the [CMFCRibbonStatusBar::SetInformation](#setinformation) method to put the status bar in information mode. In this mode, the status bar hides all panes and displays the information string specified by *strInfo*.
 
-##  <a name="recalclayout"></a>  CMFCRibbonStatusBar::RecalcLayout
+## <a name="recalclayout"></a>  CMFCRibbonStatusBar::RecalcLayout
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -421,7 +421,7 @@ virtual void RecalcLayout();
 
 ### Remarks
 
-##  <a name="removeall"></a>  CMFCRibbonStatusBar::RemoveAll
+## <a name="removeall"></a>  CMFCRibbonStatusBar::RemoveAll
 
 Removes all elements from the ribbon status bar.
 
@@ -429,7 +429,7 @@ Removes all elements from the ribbon status bar.
 void RemoveAll();
 ```
 
-##  <a name="removeelement"></a>  CMFCRibbonStatusBar::RemoveElement
+## <a name="removeelement"></a>  CMFCRibbonStatusBar::RemoveElement
 
 Removes the element that has a specified command ID from the ribbon status bar.
 
@@ -446,7 +446,7 @@ BOOL RemoveElement(UINT uiID);
 
 TRUE if an element with the specified *uiID* is removed. FALSE otherwise.
 
-##  <a name="setinformation"></a>  CMFCRibbonStatusBar::SetInformation
+## <a name="setinformation"></a>  CMFCRibbonStatusBar::SetInformation
 
 Enables or disables the information mode for the ribbon status bar.
 

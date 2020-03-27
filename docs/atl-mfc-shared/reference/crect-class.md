@@ -96,7 +96,7 @@ When using overloaded `CRect` operators, the first operand must be a `CRect`; th
 
 **Header:** atltypes.h
 
-##  <a name="bottomright"></a>  CRect::BottomRight
+## <a name="bottomright"></a>  CRect::BottomRight
 
 The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.
 
@@ -139,7 +139,7 @@ rect2.BottomRight() = ptLow;
 ASSERT(rect2 == CRect(10, 10, 180, 180));
 ```
 
-##  <a name="centerpoint"></a>  CRect::CenterPoint
+## <a name="centerpoint"></a>  CRect::CenterPoint
 
 Calculates the centerpoint of `CRect` by adding the left and right values and dividing by two, and adding the top and bottom values and dividing by two.
 
@@ -202,7 +202,7 @@ void CMyDlg::OnPaint()
 }
 ```
 
-##  <a name="copyrect"></a>  CRect::CopyRect
+## <a name="copyrect"></a>  CRect::CopyRect
 
 Copies the `lpSrcRect` rectangle into `CRect`.
 
@@ -237,7 +237,7 @@ rectDest.CopyRect(&rectSource2);
 // rectDest is now set to (0, 0, 640, 480)
 ```
 
-##  <a name="crect"></a>  CRect::CRect
+## <a name="crect"></a>  CRect::CRect
 
 Constructs a `CRect` object.
 
@@ -326,7 +326,7 @@ CRect rect5(pt, ptBottomRight);
 ASSERT(rect5 == rect4);
 ```
 
-##  <a name="deflaterect"></a>  CRect::DeflateRect
+## <a name="deflaterect"></a>  CRect::DeflateRect
 
 `DeflateRect` deflates `CRect` by moving its sides toward its center.
 
@@ -384,7 +384,7 @@ ASSERT(rect2.left == 11 && rect2.right == 47);
 ASSERT(rect2.top == 12 && rect2.bottom == 46);
 ```
 
-##  <a name="equalrect"></a>  CRect::EqualRect
+## <a name="equalrect"></a>  CRect::EqualRect
 
 Determines whether `CRect` is equal to the given rectangle.
 
@@ -423,7 +423,7 @@ test.bottom = 25;
 ASSERT(rect1.EqualRect(&test));
 ```
 
-##  <a name="height"></a>  CRect::Height
+## <a name="height"></a>  CRect::Height
 
 Calculates the height of `CRect` by subtracting the top value from the bottom value.
 
@@ -452,7 +452,7 @@ int nHt = rect.Height();
 ASSERT(nHt == 40);
 ```
 
-##  <a name="inflaterect"></a>  CRect::InflateRect
+## <a name="inflaterect"></a>  CRect::InflateRect
 
 `InflateRect` inflates `CRect` by moving its sides away from its center.
 
@@ -505,7 +505,7 @@ rect.InflateRect(50, 200);
 ASSERT(rect == CRect(-50, -200, 350, 500));
 ```
 
-##  <a name="intersectrect"></a>  CRect::IntersectRect
+## <a name="intersectrect"></a>  CRect::IntersectRect
 
 Makes a `CRect` equal to the intersection of two existing rectangles.
 
@@ -548,7 +548,7 @@ rectInter2 &= rectTwo;
 ASSERT(rectInter2 == CRect(125, 75, 150, 95));
 ```
 
-##  <a name="isrectempty"></a>  CRect::IsRectEmpty
+## <a name="isrectempty"></a>  CRect::IsRectEmpty
 
 Determines whether `CRect` is empty.
 
@@ -578,7 +578,7 @@ CRect rectEmpty(35, 35, 35, 35);
 ASSERT(rectEmpty.IsRectEmpty());
 ```
 
-##  <a name="isrectnull"></a>  CRect::IsRectNull
+## <a name="isrectnull"></a>  CRect::IsRectNull
 
 Determines whether the top, left, bottom, and right values of `CRect` are all equal to 0.
 
@@ -607,7 +607,7 @@ CRect rectNotNull(0, 0, 35, 50);
 ASSERT(!rectNotNull.IsRectNull());
 ```
 
-##  <a name="movetox"></a>  CRect::MoveToX
+## <a name="movetox"></a>  CRect::MoveToX
 
 Call this function to move the rectangle to the absolute x-coordinate specified by *x*.
 
@@ -630,7 +630,7 @@ rect.MoveToX(10);
 ASSERT(rect == CRect(10, 0, 110, 100));
 ```
 
-##  <a name="movetoxy"></a>  CRect::MoveToXY
+## <a name="movetoxy"></a>  CRect::MoveToXY
 
 Call this function to move the rectangle to the absolute x- and y-coordinates specified.
 
@@ -659,7 +659,7 @@ rect.MoveToXY(10, 10);
 ASSERT(rect == CRect(10, 10, 110, 110));
 ```
 
-##  <a name="movetoy"></a>  CRect::MoveToY
+## <a name="movetoy"></a>  CRect::MoveToY
 
 Call this function to move the rectangle to the absolute y-coordinate specified by *y*.
 
@@ -681,7 +681,7 @@ rect.MoveToY(10);
 ASSERT(rect == CRect(0, 10, 100, 110));
 ```
 
-##  <a name="normalizerect"></a>  CRect::NormalizeRect
+## <a name="normalizerect"></a>  CRect::NormalizeRect
 
 Normalizes `CRect` so that both the height and width are positive.
 
@@ -706,7 +706,7 @@ rect2.NormalizeRect();
 ASSERT(rect1 == rect2);
 ```
 
-##  <a name="offsetrect"></a>  CRect::OffsetRect
+## <a name="offsetrect"></a>  CRect::OffsetRect
 
 Moves `CRect` by the specified offsets.
 
@@ -744,7 +744,7 @@ rect.OffsetRect(230, 230);
 ASSERT(rect == CRect(230, 230, 265, 265));
 ```
 
-##  <a name="operator_lpcrect"></a>  CRect::operator LPCRECT Converts a `CRect` to an [LPCRECT](../../mfc/reference/data-types-mfc.md).
+## <a name="operator_lpcrect"></a>  CRect::operator LPCRECT Converts a `CRect` to an [LPCRECT](../../mfc/reference/data-types-mfc.md).
 
 ```
 operator LPCRECT() const throw();
@@ -754,7 +754,7 @@ operator LPCRECT() const throw();
 
 When you use this function, you don't need the address-of (**&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an `LPCRECT`.
 
-##  <a name="operator_lprect"></a>  CRect::operator LPRECT
+## <a name="operator_lprect"></a>  CRect::operator LPRECT
 
 Converts a `CRect` to an [LPRECT](../../mfc/reference/data-types-mfc.md).
 
@@ -770,7 +770,7 @@ When you use this function, you don't need the address-of (**&**) operator. This
 
 See the example for [CRect::operator LPCRECT](#operator_lpcrect).
 
-##  <a name="operator_eq"></a>  CRect::operator =
+## <a name="operator_eq"></a>  CRect::operator =
 
 Assigns *srcRect* to `CRect`.
 
@@ -793,7 +793,7 @@ rect2 = rect;
 ASSERT(rect2 == CRect(0, 0, 127, 168));
 ```
 
-##  <a name="operator_eq_eq"></a>  CRect::operator ==
+## <a name="operator_eq_eq"></a>  CRect::operator ==
 
 Determines whether `rect` is equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.
 
@@ -833,7 +833,7 @@ test.bottom = 25;
 ASSERT(rect1 == test);
 ```
 
-##  <a name="operator_neq"></a>  CRect::operator !=
+## <a name="operator_neq"></a>  CRect::operator !=
 
 Determines whether *rect* is not equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.
 
@@ -873,7 +873,7 @@ test.bottom = 25;
 ASSERT(rect3 != test);
 ```
 
-##  <a name="operator_add_eq"></a>  CRect::operator +=
+## <a name="operator_add_eq"></a>  CRect::operator +=
 
 The first two overloads move `CRect` by the specified offsets.
 
@@ -911,7 +911,7 @@ rect1 += pt;
 ASSERT(rect1 == rect2);
 ```
 
-##  <a name="operator_-_eq"></a>  CRect::operator -=
+## <a name="operator_-_eq"></a>  CRect::operator -=
 
 The first two overloads move `CRect` by the specified offsets.
 
@@ -949,7 +949,7 @@ CRect   rectResult(65, 170, 165, 270);
 ASSERT(rect1 == rectResult);
 ```
 
-##  <a name="operator_amp_eq"></a>  CRect::operator &amp;=
+## <a name="operator_amp_eq"></a>  CRect::operator &amp;=
 
 Sets `CRect` equal to the intersection of `CRect` and `rect`.
 
@@ -973,7 +973,7 @@ The intersection is the largest rectangle that is contained in both rectangles.
 
 See the example for [CRect::IntersectRect](#intersectrect).
 
-##  <a name="operator_or_eq"></a>  CRect::operator &#124;=
+## <a name="operator_or_eq"></a>  CRect::operator &#124;=
 
 Sets `CRect` equal to the union of `CRect` and `rect`.
 
@@ -1004,7 +1004,7 @@ CRect   rectResult(0, 0, 300, 300);
 ASSERT(rectResult == rect1);
 ```
 
-##  <a name="operator_add"></a>  CRect::operator +
+## <a name="operator_add"></a>  CRect::operator +
 
 The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.
 
@@ -1047,7 +1047,7 @@ CRect   rectResult(135, 300, 235, 400);
 ASSERT(rectResult == rect2);
 ```
 
-##  <a name="operator_-"></a>  CRect::operator -
+## <a name="operator_-"></a>  CRect::operator -
 
 The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.
 
@@ -1090,7 +1090,7 @@ CRect   rectResult(65, 170, 165, 270);
 ASSERT(rect2 == rectResult);
 ```
 
-##  <a name="operator_amp"></a>  CRect::operator &amp;
+## <a name="operator_amp"></a>  CRect::operator &amp;
 
 Returns a `CRect` that is the intersection of `CRect` and *rect2*.
 
@@ -1126,7 +1126,7 @@ CRect   rectResult(100, 100, 200, 200);
 ASSERT(rectResult == rect3);
 ```
 
-##  <a name="operator_or"></a>  CRect::operator &#124;
+## <a name="operator_or"></a>  CRect::operator &#124;
 
 Returns a `CRect` that is the union of `CRect` and *rect2*.
 
@@ -1163,7 +1163,7 @@ CRect   rectResult(0, 0, 300, 300);
 ASSERT(rectResult == rect3);
 ```
 
-##  <a name="ptinrect"></a>  CRect::PtInRect
+## <a name="ptinrect"></a>  CRect::PtInRect
 
 Determines whether the specified point lies within `CRect`.
 
@@ -1215,7 +1215,7 @@ pt.y = 50;
 ASSERT(rect.PtInRect(pt));
 ```
 
-##  <a name="setrect"></a>  CRect::SetRect
+## <a name="setrect"></a>  CRect::SetRect
 
 Sets the dimensions of `CRect` to the specified coordinates.
 
@@ -1245,7 +1245,7 @@ rect.SetRect(256, 256, 512, 512);
 ASSERT(rect == CRect(256, 256, 512, 512));
 ```
 
-##  <a name="setrectempty"></a>  CRect::SetRectEmpty
+## <a name="setrectempty"></a>  CRect::SetRectEmpty
 
 Makes `CRect` a null rectangle by setting all coordinates to zero.
 
@@ -1263,7 +1263,7 @@ rect.SetRectEmpty();
 ASSERT(rect.IsRectEmpty());
 ```
 
-##  <a name="size"></a>  CRect::SIZE
+## <a name="size"></a>  CRect::SIZE
 
 The `cx` and `cy` members of the return value contain the height and width of `CRect`.
 
@@ -1290,7 +1290,7 @@ CSize sz = rect.Size();
 ASSERT(sz.cx == 40 && sz.cy == 40);
 ```
 
-##  <a name="subtractrect"></a>  CRect::SubtractRect
+## <a name="subtractrect"></a>  CRect::SubtractRect
 
 Makes the dimensions of the `CRect` equal to the subtraction of `lpRectSrc2` from `lpRectSrc1`.
 
@@ -1357,7 +1357,7 @@ rectOut.SubtractRect(rect1, rect2);
 ASSERT(rectResult == rectOut);
 ```
 
-##  <a name="topleft"></a>  CRect::TopLeft
+## <a name="topleft"></a>  CRect::TopLeft
 
 The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.
 
@@ -1378,7 +1378,7 @@ You can use this function to either get or set the top-left corner of the rectan
 
 See the example for [CRect::CenterPoint](#centerpoint).
 
-##  <a name="unionrect"></a>  CRect::UnionRect
+## <a name="unionrect"></a>  CRect::UnionRect
 
 Makes the dimensions of `CRect` equal to the union of the two source rectangles.
 
@@ -1419,7 +1419,7 @@ CRect   rectResult(0, 0, 300, 300);
 ASSERT(rectResult == rect3);
 ```
 
-##  <a name="width"></a>  CRect::Width
+## <a name="width"></a>  CRect::Width
 
 Calculates the width of `CRect` by subtracting the left value from the right value.
 

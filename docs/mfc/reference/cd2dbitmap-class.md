@@ -84,7 +84,7 @@ class CD2DBitmap : public CD2DResource;
 
 **Header:** afxrendertarget.h
 
-##  <a name="_dtorcd2dbitmap"></a>  CD2DBitmap::~CD2DBitmap
+## <a name="_dtorcd2dbitmap"></a>  CD2DBitmap::~CD2DBitmap
 
 The destructor. Called when a D2D bitmap object is being destroyed.
 
@@ -92,7 +92,7 @@ The destructor. Called when a D2D bitmap object is being destroyed.
 virtual ~CD2DBitmap();
 ```
 
-##  <a name="attach"></a>  CD2DBitmap::Attach
+## <a name="attach"></a>  CD2DBitmap::Attach
 
 Attaches existing resource interface to the object.
 
@@ -105,7 +105,7 @@ void Attach(ID2D1Bitmap* pResource);
 *pResource*<br/>
 Existing resource interface. Cannot be NULL.
 
-##  <a name="cd2dbitmap"></a>  CD2DBitmap::CD2DBitmap
+## <a name="cd2dbitmap"></a>  CD2DBitmap::CD2DBitmap
 
 Constructs a CD2DBitmap object from resource.
 
@@ -157,7 +157,7 @@ Pointer to a null-terminated string that contains the name of file.
 *hbmpSrc*<br/>
 Handle to the bitmap.
 
-##  <a name="commoninit"></a>  CD2DBitmap::CommonInit
+## <a name="commoninit"></a>  CD2DBitmap::CommonInit
 
 Initializes the object.
 
@@ -165,7 +165,7 @@ Initializes the object.
 void CommonInit();
 ```
 
-##  <a name="copyfrombitmap"></a>  CD2DBitmap::CopyFromBitmap
+## <a name="copyfrombitmap"></a>  CD2DBitmap::CopyFromBitmap
 
 Copies the specified region from the specified bitmap into the current bitmap.
 
@@ -191,7 +191,7 @@ The area of bitmap to copy.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="copyfrommemory"></a>  CD2DBitmap::CopyFromMemory
+## <a name="copyfrommemory"></a>  CD2DBitmap::CopyFromMemory
 
 Copies the specified region from memory into the current bitmap.
 
@@ -217,7 +217,7 @@ In the current bitmap, the upper-left corner of the area to which the region spe
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="copyfromrendertarget"></a>  CD2DBitmap::CopyFromRenderTarget
+## <a name="copyfromrendertarget"></a>  CD2DBitmap::CopyFromRenderTarget
 
 Copies the specified region from the specified render target into the current bitmap.
 
@@ -243,7 +243,7 @@ The area of renderTarget to copy.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="create"></a>  CD2DBitmap::Create
+## <a name="create"></a>  CD2DBitmap::Create
 
 Creates a CD2DBitmap.
 
@@ -260,7 +260,7 @@ A pointer to the render target.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="destroy"></a>  CD2DBitmap::Destroy
+## <a name="destroy"></a>  CD2DBitmap::Destroy
 
 Destroys a CD2DBitmap object.
 
@@ -268,7 +268,7 @@ Destroys a CD2DBitmap object.
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DBitmap::Detach
+## <a name="detach"></a>  CD2DBitmap::Detach
 
 Detaches resource interface from the object.
 
@@ -280,7 +280,7 @@ ID2D1Bitmap* Detach();
 
 Pointer to detached resource interface.
 
-##  <a name="get"></a>  CD2DBitmap::Get
+## <a name="get"></a>  CD2DBitmap::Get
 
 Returns ID2D1Bitmap interface.
 
@@ -292,7 +292,7 @@ ID2D1Bitmap* Get();
 
 Pointer to an ID2D1Bitmap interface or NULL if object is not initialized yet.
 
-##  <a name="getdpi"></a>  CD2DBitmap::GetDPI
+## <a name="getdpi"></a>  CD2DBitmap::GetDPI
 
 Return the dots per inch (DPI) of the bitmap.
 
@@ -304,7 +304,7 @@ CD2DSizeF GetDPI() const;
 
 The horizontal and vertical DPI of the bitmap.
 
-##  <a name="getpixelformat"></a>  CD2DBitmap::GetPixelFormat
+## <a name="getpixelformat"></a>  CD2DBitmap::GetPixelFormat
 
 Retrieves the pixel format and alpha mode of the bitmap
 
@@ -316,7 +316,7 @@ D2D1_PIXEL_FORMAT GetPixelFormat() const;
 
 The pixel format and alpha mode of the bitmap.
 
-##  <a name="getpixelsize"></a>  CD2DBitmap::GetPixelSize
+## <a name="getpixelsize"></a>  CD2DBitmap::GetPixelSize
 
 Returns the size, in device-dependent units (pixels), of the bitmap.
 
@@ -328,7 +328,7 @@ CD2DSizeU GetPixelSize() const;
 
 The size, in pixels, of the bitmap..
 
-##  <a name="getsize"></a>  CD2DBitmap::GetSize
+## <a name="getsize"></a>  CD2DBitmap::GetSize
 
 Returns the size, in device-independent pixels (DIPs), of the bitmap.
 
@@ -340,7 +340,7 @@ CD2DSizeF GetSize() const;
 
 The size, in DIPs, of the bitmap.
 
-##  <a name="isvalid"></a>  CD2DBitmap::IsValid
+## <a name="isvalid"></a>  CD2DBitmap::IsValid
 
 Checks resource validity.
 
@@ -352,7 +352,7 @@ virtual BOOL IsValid() const;
 
 TRUE if resource is valid; otherwise FALSE.
 
-##  <a name="m_bautodestroyhbmp"></a>  CD2DBitmap::m_bAutoDestroyHBMP
+## <a name="m_bautodestroyhbmp"></a>  CD2DBitmap::m_bAutoDestroyHBMP
 
 TRUE if m_hBmpSrc should be destroyed; otherwise FALSE.
 
@@ -360,7 +360,7 @@ TRUE if m_hBmpSrc should be destroyed; otherwise FALSE.
 BOOL m_bAutoDestroyHBMP;
 ```
 
-##  <a name="m_hbmpsrc"></a>  CD2DBitmap::m_hBmpSrc
+## <a name="m_hbmpsrc"></a>  CD2DBitmap::m_hBmpSrc
 
 Source bitmap handle.
 
@@ -368,7 +368,7 @@ Source bitmap handle.
 HBITMAP m_hBmpSrc;
 ```
 
-##  <a name="m_lpsztype"></a>  CD2DBitmap::m_lpszType
+## <a name="m_lpsztype"></a>  CD2DBitmap::m_lpszType
 
 Resource type.
 
@@ -376,7 +376,7 @@ Resource type.
 LPCTSTR m_lpszType;
 ```
 
-##  <a name="m_pbitmap"></a>  CD2DBitmap::m_pBitmap
+## <a name="m_pbitmap"></a>  CD2DBitmap::m_pBitmap
 
 Stores a pointer to an ID2D1Bitmap object.
 
@@ -384,7 +384,7 @@ Stores a pointer to an ID2D1Bitmap object.
 ID2D1Bitmap* m_pBitmap;
 ```
 
-##  <a name="m_sizedest"></a>  CD2DBitmap::m_sizeDest
+## <a name="m_sizedest"></a>  CD2DBitmap::m_sizeDest
 
 Bitmap destination size.
 
@@ -392,7 +392,7 @@ Bitmap destination size.
 CD2DSizeU m_sizeDest;
 ```
 
-##  <a name="m_strpath"></a>  CD2DBitmap::m_strPath
+## <a name="m_strpath"></a>  CD2DBitmap::m_strPath
 
 Botmap file path.
 
@@ -400,7 +400,7 @@ Botmap file path.
 CString m_strPath;
 ```
 
-##  <a name="m_uiresid"></a>  CD2DBitmap::m_uiResID
+## <a name="m_uiresid"></a>  CD2DBitmap::m_uiResID
 
 Bitmap resource ID.
 
@@ -408,7 +408,7 @@ Bitmap resource ID.
 UINT m_uiResID;
 ```
 
-##  <a name="operator_id2d1bitmap_star"></a>  CD2DBitmap::operator ID2D1Bitmap*
+## <a name="operator_id2d1bitmap_star"></a>  CD2DBitmap::operator ID2D1Bitmap*
 
 Returns ID2D1Bitmap interface
 

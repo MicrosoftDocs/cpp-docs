@@ -51,7 +51,7 @@ For information about using connection points in ATL, see the article [Connectio
 
 **Header:** atlcom.h
 
-##  <a name="enumconnectionpoints"></a>  IConnectionPointContainerImpl::EnumConnectionPoints
+## <a name="enumconnectionpoints"></a>  IConnectionPointContainerImpl::EnumConnectionPoints
 
 Creates an enumerator to iterate through the connection points supported in the connectable object.
 
@@ -63,7 +63,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 
 See [IConnectionPointContainer::EnumConnectionPoints](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-enumconnectionpoints) in the Windows SDK.
 
-##  <a name="findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint
+## <a name="findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint
 
 Retrieves an interface pointer to the connection point that supports the specified IID.
 

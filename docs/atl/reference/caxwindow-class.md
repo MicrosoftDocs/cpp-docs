@@ -54,7 +54,7 @@ If you need to change the base class, you can use `CAxWindowT` and specify the n
 
 **Header:** atlwin.h
 
-##  <a name="attachcontrol"></a>  CAxWindow::AttachControl
+## <a name="attachcontrol"></a>  CAxWindow::AttachControl
 
 Creates a new host object if one isn't already present and attaches the specified control to the host.
 
@@ -80,7 +80,7 @@ A standard HRESULT value.
 
 The control object being attached must be correctly initialized before calling `AttachControl`.
 
-##  <a name="caxwindow"></a>  CAxWindow::CAxWindow
+## <a name="caxwindow"></a>  CAxWindow::CAxWindow
 
 Constructs a `CAxWindow` object using an existing window object handle.
 
@@ -93,7 +93,7 @@ CAxWindow(HWND hWnd = NULL);
 *hWnd*<br/>
 A handle to an existing window object.
 
-##  <a name="createcontrol"></a>  CAxWindow::CreateControl
+## <a name="createcontrol"></a>  CAxWindow::CreateControl
 
 Creates an ActiveX control, initializes it, and hosts it in the specified window.
 
@@ -154,7 +154,7 @@ See [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#cre
 
 See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControl`.
 
-##  <a name="createcontrolex"></a>  CAxWindow::CreateControlEx
+## <a name="createcontrolex"></a>  CAxWindow::CreateControlEx
 
 Creates an ActiveX control, initializes it, and hosts it in the specified window.
 
@@ -226,7 +226,7 @@ See [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#c
 
 See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControlEx`.
 
-##  <a name="getwndclassname"></a>  CAxWindow::GetWndClassName
+## <a name="getwndclassname"></a>  CAxWindow::GetWndClassName
 
 Retrieves the name of the window class.
 
@@ -238,7 +238,7 @@ static LPCTSTR GetWndClassName();
 
 A pointer to a string containing the name of the window class that can host nonlicensed ActiveX controls.
 
-##  <a name="operator_eq"></a>  CAxWindow::operator =
+## <a name="operator_eq"></a>  CAxWindow::operator =
 
 Assigns an HWND to an existing `CAxWindow` object.
 
@@ -255,7 +255,7 @@ A handle to an existing window.
 
 Returns a reference to the current `CAxWindow` object.
 
-##  <a name="querycontrol"></a>  CAxWindow::QueryControl
+## <a name="querycontrol"></a>  CAxWindow::QueryControl
 
 Retrieves the specified interface of the hosted control.
 
@@ -280,7 +280,7 @@ HRESULT QueryControl(Q** ppUnk);
 
 A standard HRESULT value.
 
-##  <a name="queryhost"></a>  CAxWindow::QueryHost
+## <a name="queryhost"></a>  CAxWindow::QueryHost
 
 Returns the specified interface of the host.
 
@@ -309,7 +309,7 @@ A standard HRESULT value.
 
 The interface of the host allows access to the underlying functionality of the window-hosting code, implemented by `AxWin`.
 
-##  <a name="setexternaldispatch"></a>  CAxWindow::SetExternalDispatch
+## <a name="setexternaldispatch"></a>  CAxWindow::SetExternalDispatch
 
 Sets the external dispatch interface for the `CAxWindow` object.
 
@@ -326,7 +326,7 @@ HRESULT SetExternalDispatch(IDispatch* pDisp);
 
 A standard HRESULT value.
 
-##  <a name="setexternaluihandler"></a>  CAxWindow::SetExternalUIHandler
+## <a name="setexternaluihandler"></a>  CAxWindow::SetExternalUIHandler
 
 Sets the external [IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md) interface for the `CAxWindow` object.
 

@@ -42,7 +42,7 @@ For more information about message maps, see [Message Maps](../../atl/message-ma
 
 **Header:** atlwin.h
 
-##  <a name="processwindowmessage"></a>  CMessageMap::ProcessWindowMessage
+## <a name="processwindowmessage"></a>  CMessageMap::ProcessWindowMessage
 
 Accesses the message map identified by *dwMsgMapID* in a `CMessageMap`-derived class.
 

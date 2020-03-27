@@ -75,7 +75,7 @@ For more information about declaring and using your record view and recordset cl
 
 **Header:** afxdb.h
 
-##  <a name="crecordview"></a>  CRecordView::CRecordView
+## <a name="crecordview"></a>  CRecordView::CRecordView
 
 When you create an object of a type derived from `CRecordView`, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.
 
@@ -108,7 +108,7 @@ You can either identify the resource by name (pass a string as the argument to t
 
 [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/cpp/crecordview-class_1.cpp)]
 
-##  <a name="isonfirstrecord"></a>  CRecordView::IsOnFirstRecord
+## <a name="isonfirstrecord"></a>  CRecordView::IsOnFirstRecord
 
 Call this member function to determine whether the current record is the first record in the recordset object associated with this record view.
 
@@ -126,7 +126,7 @@ This function is useful for writing your own implementations of default command 
 
 If the user moves to the first record, the framework disables any user interface objects you have for moving to the first or the previous record.
 
-##  <a name="isonlastrecord"></a>  CRecordView::IsOnLastRecord
+## <a name="isonlastrecord"></a>  CRecordView::IsOnLastRecord
 
 Call this member function to determine whether the current record is the last record in the recordset object associated with this record view.
 
@@ -145,7 +145,7 @@ This function is useful for writing your own implementations of the default comm
 > [!CAUTION]
 >  The result of this function is reliable except that the view cannot detect the end of the recordset until the user has moved past it. The user must move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly. `IsOnLastRecord` is also unreliable after a call to the implementation function `OnRecordLast`, which handles the ID_RECORD_LAST command, or `CRecordset::MoveLast`.
 
-##  <a name="ongetrecordset"></a>  CRecordView::OnGetRecordset
+## <a name="ongetrecordset"></a>  CRecordView::OnGetRecordset
 
 Returns a pointer to the `CRecordset`-derived object associated with the record view.
 
@@ -163,7 +163,7 @@ You must override this member function to construct or obtain a recordset object
 
 For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).
 
-##  <a name="onmove"></a>  CRecordView::OnMove
+## <a name="onmove"></a>  CRecordView::OnMove
 
 Call this member function to move to a different record in the recordset and display its fields in the controls of the record view.
 

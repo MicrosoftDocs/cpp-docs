@@ -44,7 +44,7 @@ Make sure this call occurs before any base-class call or any added code which ac
 
 **Header:** \<afxdll_.h>
 
-##  <a name="afx_odbc_call"></a>  AFX_ODBC_CALL
+## <a name="afx_odbc_call"></a>  AFX_ODBC_CALL
 
 Use this macro to call any ODBC API function that may return `SQL_STILL_EXECUTING`.
 
@@ -75,7 +75,7 @@ This example uses `AFX_ODBC_CALL` to call the `SQLColumns` ODBC API function, wh
 
 **Header:** afxdb.h
 
-##  <a name="afx_sql_async"></a>  AFX_SQL_ASYNC
+## <a name="afx_sql_async"></a>  AFX_SQL_ASYNC
 
 The implementation of this macro changed in MFC 4.2.
 
@@ -102,7 +102,7 @@ An ODBC API function. For more information about ODBC API functions, see the Win
 
   **Header** afxdb.h
 
-##  <a name="afx_sql_sync"></a>  AFX_SQL_SYNC
+## <a name="afx_sql_sync"></a>  AFX_SQL_SYNC
 
 The `AFX_SQL_SYNC` macro simply calls the function `SQLFunc`.
 
@@ -133,7 +133,7 @@ you can simply make the assignment
 
   **Header** afxdb.h
 
-##  <a name="afxgethenv"></a>  AfxGetHENV
+## <a name="afxgethenv"></a>  AfxGetHENV
 
 You can use the returned handle in direct ODBC calls, but you must not close the handle or assume that the handle is still valid and available after any existing `CDatabase`- or `CRecordset`-derived objects have been destroyed.
 

@@ -49,7 +49,7 @@ The service map contains two entries: [SERVICE_ENTRY](service-map-macros.md#serv
 
 **Header:** atlcom.h
 
-##  <a name="queryservice"></a>  IServiceProviderImpl::QueryService
+## <a name="queryservice"></a>  IServiceProviderImpl::QueryService
 
 Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.
 

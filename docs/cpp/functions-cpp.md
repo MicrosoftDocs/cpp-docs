@@ -250,7 +250,7 @@ A variable that is declared inside a function body is called a *local variable* 
 
 In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit`. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
 
-##  <a name="type_deduction"></a> Type deduction in return types (C++14)
+## <a name="type_deduction"></a> Type deduction in return types (C++14)
 
 In C++14, you can use **auto** to instruct the compiler to infer the return type from the function body without having to provide a trailing return type. Note that **auto** always deduces to a return-by-value. Use `auto&&` to instruct the compiler to deduce a reference.
 

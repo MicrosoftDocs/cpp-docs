@@ -69,7 +69,7 @@ This class provides the basis for other smart pointers which use COM memory mana
 
 **Header:** atlcomcli.h
 
-##  <a name="advise"></a>  CComPtrBase::Advise
+## <a name="advise"></a>  CComPtrBase::Advise
 
 Call this method to create a connection between the `CComPtrBase`'s connection point and a client's sink.
 
@@ -99,7 +99,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 See [AtlAdvise](connection-point-global-functions.md#atladvise) for more information.
 
-##  <a name="attach"></a>  CComPtrBase::Attach
+## <a name="attach"></a>  CComPtrBase::Attach
 
 Call this method to take ownership of an existing pointer.
 
@@ -116,7 +116,7 @@ The `CComPtrBase` object will take ownership of this pointer.
 
 `Attach` calls [CComPtrBase::Release](#release) on the existing [CComPtrBase::p](#p) member variable and then assigns *p2* to `CComPtrBase::p`. When a `CComPtrBase` object takes ownership of a pointer, it will automatically call `Release` on the pointer which will delete the pointer and any allocated data if the reference count on the object goes to 0.
 
-##  <a name="dtor"></a>  CComPtrBase::~CComPtrBase
+## <a name="dtor"></a>  CComPtrBase::~CComPtrBase
 
 The destructor.
 
@@ -128,7 +128,7 @@ The destructor.
 
 Releases the interface pointed to by `CComPtrBase`.
 
-##  <a name="cocreateinstance"></a>  CComPtrBase::CoCreateInstance
+## <a name="cocreateinstance"></a>  CComPtrBase::CoCreateInstance
 
 Call this method to create an object of the class associated with a specified Class ID or Program ID.
 
@@ -168,7 +168,7 @@ If the first form of the method is called, [CLSIDFromProgID](/windows/win32/api/
 
 In debug builds, an assertion error will occur if [CComPtrBase::p](#p) is not equal to NULL.
 
-##  <a name="copyto"></a>  CComPtrBase::CopyTo
+## <a name="copyto"></a>  CComPtrBase::CopyTo
 
 Call this method to copy the `CComPtrBase` pointer to another pointer variable.
 
@@ -191,7 +191,7 @@ Copies the `CComPtrBase` pointer to *ppT*. The reference count on the [CComPtrBa
 
 An error HRESULT will be returned if *ppT* is equal to NULL. In debug builds, an assertion error will occur if *ppT* is equal to NULL.
 
-##  <a name="detach"></a>  CComPtrBase::Detach
+## <a name="detach"></a>  CComPtrBase::Detach
 
 Call this method to release ownership of a pointer.
 
@@ -207,7 +207,7 @@ Returns a copy of the pointer.
 
 Releases ownership of a pointer, sets the [CComPtrBase::p](#p) data member variable to NULL, and returns a copy of the pointer.
 
-##  <a name="isequalobject"></a>  CComPtrBase::IsEqualObject
+## <a name="isequalobject"></a>  CComPtrBase::IsEqualObject
 
 Call this method to check if the specified `IUnknown` points to the same object associated with the `CComPtrBase` object.
 
@@ -224,7 +224,7 @@ The `IUnknown *` to compare.
 
 Returns true if the objects are identical, false otherwise.
 
-##  <a name="operator_not"></a>  CComPtrBase::operator !
+## <a name="operator_not"></a>  CComPtrBase::operator !
 
 The NOT operator.
 
@@ -236,7 +236,7 @@ bool operator!() const throw();
 
 Returns true if the `CComHeapPtr` pointer is equal to NULL, false otherwise.
 
-##  <a name="operator_amp"></a>  CComPtrBase::operator &amp;
+## <a name="operator_amp"></a>  CComPtrBase::operator &amp;
 
 The & operator.
 
@@ -248,7 +248,7 @@ T** operator&() throw();
 
 Returns the address of the object pointed to by the `CComPtrBase` object.
 
-##  <a name="operator_star"></a>  CComPtrBase::operator \*
+## <a name="operator_star"></a>  CComPtrBase::operator \*
 
 The \* operator.
 
@@ -262,7 +262,7 @@ Returns the value of [CComPtrBase::p](#p); that is, a pointer to the object refe
 
 If debug builds, an assertion error will occur if [CComPtrBase::p](#p) is not equal to NULL.
 
-##  <a name="operator_eq_eq"></a>  CComPtrBase::operator ==
+## <a name="operator_eq_eq"></a>  CComPtrBase::operator ==
 
 The equality operator.
 
@@ -279,7 +279,7 @@ A pointer to an object.
 
 Returns true if `CComPtrBase` and *pT* point to the same object, false otherwise.
 
-##  <a name="operator_ptr"></a>  CComPtrBase::operator -&gt;
+## <a name="operator_ptr"></a>  CComPtrBase::operator -&gt;
 
 The pointer-to-member operator.
 
@@ -295,7 +295,7 @@ Returns the value of the [CComPtrBase::p](#p) data member variable.
 
 Use this operator to call a method in a class pointed to by the `CComPtrBase` object. In debug builds, an assertion failure will occur if the `CComPtrBase` data member points to NULL.
 
-##  <a name="operator_lt"></a>  CComPtrBase::operator &lt;
+## <a name="operator_lt"></a>  CComPtrBase::operator &lt;
 
 The less-than operator.
 
@@ -312,7 +312,7 @@ A pointer to an object.
 
 Returns true if the pointer managed by current object is less than the pointer to which it is being compared.
 
-##  <a name="operator_t_star"></a>  CComPtrBase::operator T\*
+## <a name="operator_t_star"></a>  CComPtrBase::operator T\*
 
 The cast operator.
 
@@ -324,7 +324,7 @@ operator T*() const throw();
 
 Returns a pointer to the object data type defined in the class template.
 
-##  <a name="p"></a>  CComPtrBase::p
+## <a name="p"></a>  CComPtrBase::p
 
 The pointer data member variable.
 
@@ -336,7 +336,7 @@ T* p;
 
 This member variable holds the pointer information.
 
-##  <a name="queryinterface"></a>  CComPtrBase::QueryInterface
+## <a name="queryinterface"></a>  CComPtrBase::QueryInterface
 
 Call this method to return a pointer to a specified interface.
 
@@ -363,7 +363,7 @@ This method calls [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn
 
 In debug builds, an assertion error will occur if *pp* is not equal to NULL.
 
-##  <a name="release"></a>  CComPtrBase::Release
+## <a name="release"></a>  CComPtrBase::Release
 
 Call this method to release the interface.
 
@@ -375,7 +375,7 @@ void Release() throw();
 
 The interface is released, and [CComPtrBase::p](#p) is set to NULL.
 
-##  <a name="setsite"></a>  CComPtrBase::SetSite
+## <a name="setsite"></a>  CComPtrBase::SetSite
 
 Call this method to set the site of the `CComPtrBase` object to the `IUnknown` of the parent object.
 

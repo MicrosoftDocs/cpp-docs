@@ -66,7 +66,7 @@ The pertinent parts of the class implementation (in CMyMultipageDlg.cpp):
 
 **Header:** afxdhtml.h
 
-##  <a name="cmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::CMultiPageDHtmlDialog
+## <a name="cmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::CMultiPageDHtmlDialog
 
 Constructs a multipage (wizard-style) DHTML dialog object.
 
@@ -101,7 +101,7 @@ Contains the ID number of a dialog-box template resource.
 *nHtmlResID*<br/>
 Contains the ID number of an HTML resource.
 
-##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog
+## <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog
 
 Destroys a multipage DHTML dialog object.
 

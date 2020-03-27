@@ -56,7 +56,7 @@ For more information on drag-and-drop operations using OLE, see the article [OLE
 
 **Header:** afxole.h
 
-##  <a name="coledroptarget"></a>  COleDropTarget::COleDropTarget
+## <a name="coledroptarget"></a>  COleDropTarget::COleDropTarget
 
 Constructs an object of class `COleDropTarget`.
 
@@ -68,7 +68,7 @@ COleDropTarget();
 
 Call [Register](#register) to associate this object with a window.
 
-##  <a name="ondragenter"></a>  COleDropTarget::OnDragEnter
+## <a name="ondragenter"></a>  COleDropTarget::OnDragEnter
 
 Called by the framework when the cursor is first dragged into the window.
 
@@ -114,7 +114,7 @@ Override this function to allow drop operations to occur in the window. The defa
 
 For more information, see [IDropTarget::DragEnter](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragenter) in the Windows SDK.
 
-##  <a name="ondragleave"></a>  COleDropTarget::OnDragLeave
+## <a name="ondragleave"></a>  COleDropTarget::OnDragLeave
 
 Called by the framework when the cursor leaves the window while a dragging operation is in effect.
 
@@ -133,7 +133,7 @@ Override this function if you want special behavior when the drag operation leav
 
 For more information, see [IDropTarget::DragLeave](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragleave) in the Windows SDK.
 
-##  <a name="ondragover"></a>  COleDropTarget::OnDragOver
+## <a name="ondragover"></a>  COleDropTarget::OnDragOver
 
 Called by the framework when the cursor is dragged over the window.
 
@@ -183,7 +183,7 @@ For more information, see [IDropTarget::DragOver](/windows/win32/api/oleidl/nf-o
 
 [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/cpp/coledroptarget-class_1.cpp)]
 
-##  <a name="ondragscroll"></a>  COleDropTarget::OnDragScroll
+## <a name="ondragscroll"></a>  COleDropTarget::OnDragScroll
 
 Called by the framework before calling [OnDragEnter](#ondragenter) or [OnDragOver](#ondragover) to determine whether *point* is in the scrolling region.
 
@@ -223,7 +223,7 @@ The effect that would result if a drop were attempted at the location specified 
 
 Override this function when you want to provide special behavior for this event. The default implementation of this function calls [CView::OnDragScroll](../../mfc/reference/cview-class.md#ondragscroll), which returns DROPEFFECT_NONE and scrolls the window when the cursor is dragged into the default scroll region inside the border of the window.
 
-##  <a name="ondrop"></a>  COleDropTarget::OnDrop
+## <a name="ondrop"></a>  COleDropTarget::OnDrop
 
 Called by the framework when a drop operation is to occur.
 
@@ -267,7 +267,7 @@ The default implementation of `COleDropTarget::OnDrop` calls [CView::OnDrop](../
 
 For more information, see [IDropTarget::Drop](/windows/win32/api/oleidl/nf-oleidl-idroptarget-drop) in the Windows SDK.
 
-##  <a name="ondropex"></a>  COleDropTarget::OnDropEx
+## <a name="ondropex"></a>  COleDropTarget::OnDropEx
 
 Called by the framework when a drop operation is to occur.
 
@@ -321,7 +321,7 @@ Drop effects describe the action associated with a drop operation. See the follo
 
 For more information, see [IDropTarget::Drop](/windows/win32/api/oleidl/nf-oleidl-idroptarget-drop) in the Windows SDK.
 
-##  <a name="register"></a>  COleDropTarget::Register
+## <a name="register"></a>  COleDropTarget::Register
 
 Call this function to register your window with the OLE DLLs as a valid drop target.
 
@@ -344,7 +344,7 @@ This function must be called for drop operations to be accepted.
 
 For more information, see [RegisterDragDrop](/windows/win32/api/ole2/nf-ole2-registerdragdrop) in the Windows SDK.
 
-##  <a name="revoke"></a>  COleDropTarget::Revoke
+## <a name="revoke"></a>  COleDropTarget::Revoke
 
 Call this function before destroying any window that has been registered as a drop target through a call to [Register](#register) to remove it from the list of drop targets.
 

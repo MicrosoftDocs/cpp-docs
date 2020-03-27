@@ -52,7 +52,7 @@ You cannot add a ribbon label to the Quick Access Toolbar.
 
 **Header:** afxRibbonLabel.h
 
-##  <a name="cmfcribbonlabel"></a>  CMFCRibbonLabel::CMFCRibbonLabel
+## <a name="cmfcribbonlabel"></a>  CMFCRibbonLabel::CMFCRibbonLabel
 
 Constructs and initializes a [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) object that displays the specified text string.
 
@@ -70,7 +70,7 @@ CMFCRibbonLabel(
 *bIsMultiLine*<br/>
 [in] TRUE to specify that the label is a multi-line label; otherwise, FALSE.
 
-##  <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData
+## <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData
 
 Determines the accessibility data for the current ribbon label element.
 

@@ -51,7 +51,7 @@ Class `IOleControlImpl` provides a default implementation of the [IOleControl](/
 
 **Header:** atlctl.h
 
-##  <a name="freezeevents"></a>  IOleControlImpl::FreezeEvents
+## <a name="freezeevents"></a>  IOleControlImpl::FreezeEvents
 
 In ATL's implementation, `FreezeEvents` increments the control class's `m_nFreezeEvents` data member if `bFreeze` is TRUE, and decrements `m_nFreezeEvents` if `bFreeze` is FALSE.
 
@@ -65,7 +65,7 @@ HRESULT FreezeEvents(BOOL bFreeze);
 
 See [IOleControl::FreezeEvents](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-freezeevents) in the Windows SDK.
 
-##  <a name="getcontrolinfo"></a>  IOleControlImpl::GetControlInfo
+## <a name="getcontrolinfo"></a>  IOleControlImpl::GetControlInfo
 
 Fills in information about the control's keyboard behavior.
 
@@ -81,7 +81,7 @@ See [IOleControl:GetControlInfo](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-g
 
 Returns E_NOTIMPL.
 
-##  <a name="onambientpropertychange"></a>  IOleControlImpl::OnAmbientPropertyChange
+## <a name="onambientpropertychange"></a>  IOleControlImpl::OnAmbientPropertyChange
 
 Informs a control that one or more of the container's ambient properties has changed.
 
@@ -97,7 +97,7 @@ Returns S_OK.
 
 See [IOleControl::OnAmbientPropertyChange](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-onambientpropertychange) in the Windows SDK.
 
-##  <a name="onmnemonic"></a>  IOleControlImpl::OnMnemonic
+## <a name="onmnemonic"></a>  IOleControlImpl::OnMnemonic
 
 Informs the control that a user has pressed a specified keystroke.
 

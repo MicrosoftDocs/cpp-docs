@@ -17,7 +17,7 @@ These Automation objects have properties and methods as their external interface
 
 By exposing application functionality through a common, well-defined interface, Automation makes it possible to build applications in a single general programming language like Microsoft Visual Basic instead of in diverse, application-specific macro languages.
 
-##  <a name="_core_support_for_automation_servers"></a> Support for Automation Servers
+## <a name="_core_support_for_automation_servers"></a> Support for Automation Servers
 
 Visual C++ and the MFC framework provide extensive support for Automation servers. They handle much of the overhead involved in making an Automation server, so you can focus your efforts on the functionality of your application.
 

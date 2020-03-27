@@ -66,7 +66,7 @@ This data is composed of:
 
 **Header:** atlsimpstr.h
 
-##  <a name="addref"></a>  CStringData::AddRef
+## <a name="addref"></a>  CStringData::AddRef
 
 Increments the reference count of the string object.
 
@@ -81,7 +81,7 @@ Increments the reference count of the string object.
 > [!NOTE]
 >  Do not call this method on a string with a negative reference count, since a negative count indicates that the string buffer is locked.
 
-##  <a name="data"></a>  CStringData::data
+## <a name="data"></a>  CStringData::data
 
 Returns a pointer to the character buffer of a string object.
 
@@ -100,7 +100,7 @@ Call this function to return the current character buffer of the associated stri
 > [!NOTE]
 >  This buffer is not allocated by the `CStringData` object but by the string manager when needed. When allocated, the buffer is appended to the string data object.
 
-##  <a name="islocked"></a>  CStringData::IsLocked
+## <a name="islocked"></a>  CStringData::IsLocked
 
 Determines if the character buffer is locked.
 
@@ -116,7 +116,7 @@ Returns TRUE if the buffer is locked; otherwise FALSE.
 
 Call this function to determine if the character buffer of a string object is currently locked.
 
-##  <a name="isshared"></a>  CStringData::IsShared
+## <a name="isshared"></a>  CStringData::IsShared
 
 Determines if the character buffer is shared.
 
@@ -132,7 +132,7 @@ Returns TRUE if the buffer is shared; otherwise FALSE.
 
 Call this function to determine if the character buffer of a string data object is currently shared among multiple string objects.
 
-##  <a name="lock"></a>  CStringData::Lock
+## <a name="lock"></a>  CStringData::Lock
 
 Locks the character buffer of the associated string object.
 
@@ -147,7 +147,7 @@ Call this function to lock the character buffer of the string data object. Locki
 > [!NOTE]
 >  A character buffer can only be locked if the buffer is not shared among higher string objects.
 
-##  <a name="nalloclength"></a>  CStringData::nAllocLength
+## <a name="nalloclength"></a>  CStringData::nAllocLength
 
 Length of the allocated character buffer.
 
@@ -159,7 +159,7 @@ int nAllocLength;
 
 Stores the length of the allocated data buffer in `XCHAR`s (not including terminating null).
 
-##  <a name="ndatalength"></a>  CStringData::nDataLength
+## <a name="ndatalength"></a>  CStringData::nDataLength
 
 Current length of the string object.
 
@@ -171,7 +171,7 @@ int nDataLength;
 
 Stores the length of currently used data in `XCHAR`s (not including terminating null).
 
-##  <a name="nrefs"></a>  CStringData::nRefs
+## <a name="nrefs"></a>  CStringData::nRefs
 
 Reference count of the string data object.
 
@@ -183,7 +183,7 @@ long nRefs;
 
 Stores the reference count of the string data object. This count indicates the number of higher string objects that are associated with the string data object. A negative value indicates that the string data object is currently locked.
 
-##  <a name="pstringmgr"></a>  CStringData::pStringMgr
+## <a name="pstringmgr"></a>  CStringData::pStringMgr
 
 The memory manager of the associated string object.
 
@@ -195,7 +195,7 @@ IAtlStringMgr* pStringMgr;
 
 Stores the memory manager for the associated string object. For more information on memory managers and strings, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-##  <a name="release"></a>  CStringData::Release
+## <a name="release"></a>  CStringData::Release
 
 Decrements the reference count of the string data object.
 
@@ -211,7 +211,7 @@ For example, the following code would call `CStringData::Release` for the string
 
 [!code-cpp[NVC_ATLMFC_Utilities#104](../../atl-mfc-shared/codesnippet/cpp/cstringdata-class_1.cpp)]
 
-##  <a name="unlock"></a>  CStringData::Unlock
+## <a name="unlock"></a>  CStringData::Unlock
 
 Unlocks the character buffer of the associated string object.
 

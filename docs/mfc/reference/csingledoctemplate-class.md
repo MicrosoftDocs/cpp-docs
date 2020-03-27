@@ -55,7 +55,7 @@ For more information on using `CSingleDocTemplate`, see [Document Templates and 
 
 **Header:** afxwin.h
 
-##  <a name="csingledoctemplate"></a>  CSingleDocTemplate::CSingleDocTemplate
+## <a name="csingledoctemplate"></a>  CSingleDocTemplate::CSingleDocTemplate
 
 Constructs a `CSingleDocTemplate` object.
 

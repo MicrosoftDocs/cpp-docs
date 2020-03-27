@@ -89,7 +89,7 @@ When you close a key, its registry data is written (flushed) to the hard disk. T
 
 **Header:** atlbase.h
 
-##  <a name="attach"></a>  CRegKey::Attach
+## <a name="attach"></a>  CRegKey::Attach
 
 Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](#m_hkey) member handle to *hKey*.
 
@@ -106,7 +106,7 @@ The handle of a registry key.
 
 `Attach` will assert if `m_hKey` is non-NULL.
 
-##  <a name="close"></a>  CRegKey::Close
+## <a name="close"></a>  CRegKey::Close
 
 Call this method to release the [m_hKey](#m_hkey) member handle and set it to NULL.
 
@@ -118,7 +118,7 @@ LONG Close() throw();
 
 If successful, returns ERROR_SUCCESS; otherwise returns an error value.
 
-##  <a name="create"></a>  CRegKey::Create
+## <a name="create"></a>  CRegKey::Create
 
 Call this method to create the specified key, if it does not exist as a subkey of *hKeyParent*.
 
@@ -164,7 +164,7 @@ If successful, returns ERROR_SUCCESS and opens the key. If the method fails, the
 
 `Create` sets the [m_hKey](#m_hkey) member to the handle of this key.
 
-##  <a name="cregkey"></a>  CRegKey::CRegKey
+## <a name="cregkey"></a>  CRegKey::CRegKey
 
 The constructor.
 
@@ -190,7 +190,7 @@ Pointer to CAtlTransactionManager object
 
 Creates a new `CRegKey` object. The object can be created from an existing `CRegKey` object, or from a handle to a registry key.
 
-##  <a name="dtor"></a>  CRegKey::~CRegKey
+## <a name="dtor"></a>  CRegKey::~CRegKey
 
 The destructor.
 
@@ -202,7 +202,7 @@ The destructor.
 
 The destructor releases `m_hKey`.
 
-##  <a name="deletesubkey"></a>  CRegKey::DeleteSubKey
+## <a name="deletesubkey"></a>  CRegKey::DeleteSubKey
 
 Call this method to remove the specified key from the registry.
 
@@ -223,7 +223,7 @@ If successful, returns ERROR_SUCCESS. If the method fails, the return value is a
 
 `DeleteSubKey` can only delete a key that has no subkeys. If the key has subkeys, call [RecurseDeleteKey](#recursedeletekey) instead.
 
-##  <a name="deletevalue"></a>  CRegKey::DeleteValue
+## <a name="deletevalue"></a>  CRegKey::DeleteValue
 
 Call this method to remove a value field from [m_hKey](#m_hkey).
 
@@ -240,7 +240,7 @@ Specifies the value field to remove.
 
 If successful, returns ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.
 
-##  <a name="detach"></a>  CRegKey::Detach
+## <a name="detach"></a>  CRegKey::Detach
 
 Call this method to detach the [m_hKey](#m_hkey) member handle from the `CRegKey` object and set `m_hKey` to NULL.
 
@@ -252,7 +252,7 @@ HKEY Detach() throw();
 
 The HKEY associated with the `CRegKey` object.
 
-##  <a name="enumkey"></a>  CRegKey::EnumKey
+## <a name="enumkey"></a>  CRegKey::EnumKey
 
 Call this method to enumerate the subkeys of the open registry key.
 
@@ -286,7 +286,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 To enumerate the subkeys, call `CRegKey::EnumKey` with an index of zero. Increment the index value and repeat until the method returns ERROR_NO_MORE_ITEMS. For more information, see [RegEnumKeyEx](/windows/win32/api/winreg/nf-winreg-regenumkeyexw) in the Windows SDK.
 
-##  <a name="flush"></a>  CRegKey::Flush
+## <a name="flush"></a>  CRegKey::Flush
 
 Call this method to write all of the attributes of the open registry key into the registry.
 
@@ -302,7 +302,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 For more information, see [RegEnumFlush](/windows/win32/api/winreg/nf-winreg-regflushkey) in the Windows SDK.
 
-##  <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity
+## <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity
 
 Call this method to retrieve a copy of the security descriptor protecting the open registry key.
 
@@ -332,7 +332,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 For more information, see [RegGetKeySecurity](/windows/win32/api/winreg/nf-winreg-reggetkeysecurity).
 
-##  <a name="m_hkey"></a>  CRegKey::m_hKey
+## <a name="m_hkey"></a>  CRegKey::m_hKey
 
 Contains a handle of the registry key associated with the `CRegKey` object.
 
@@ -340,7 +340,7 @@ Contains a handle of the registry key associated with the `CRegKey` object.
 HKEY m_hKey;
 ```
 
-##  <a name="m_ptm"></a>  CRegKey::m_pTM
+## <a name="m_ptm"></a>  CRegKey::m_pTM
 
 Pointer to a `CAtlTransactionManager` object.
 
@@ -350,7 +350,7 @@ CAtlTransactionManager* m_pTM;
 
 ### Remarks
 
-##  <a name="notifychangekeyvalue"></a>  CRegKey::NotifyChangeKeyValue
+## <a name="notifychangekeyvalue"></a>  CRegKey::NotifyChangeKeyValue
 
 This method notifies the caller about changes to the attributes or contents of the open registry key.
 
@@ -394,7 +394,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 For more details and a sample program, see [RegNotifyChangeKeyValue](/windows/win32/api/winreg/nf-winreg-regnotifychangekeyvalue).
 
-##  <a name="open"></a>  CRegKey::Open
+## <a name="open"></a>  CRegKey::Open
 
 Call this method to open the specified key and set [m_hKey](#m_hkey) to the handle of this key.
 
@@ -426,7 +426,7 @@ If the *lpszKeyName* parameter is NULL or points to an empty string, `Open` open
 
 Unlike [CRegKey::Create](#create), `Open` will not create the specified key if it does not exist.
 
-##  <a name="operator_hkey"></a>  CRegKey::operator HKEY
+## <a name="operator_hkey"></a>  CRegKey::operator HKEY
 
 Converts a `CRegKey` object to an HKEY.
 
@@ -434,7 +434,7 @@ Converts a `CRegKey` object to an HKEY.
 operator HKEY() const throw();
 ```
 
-##  <a name="operator_eq"></a>  CRegKey::operator =
+## <a name="operator_eq"></a>  CRegKey::operator =
 
 Assignment operator.
 
@@ -455,7 +455,7 @@ Returns a reference to the new key.
 
 This operator detaches *key* from its current object and assigns it to the `CRegKey` object instead.
 
-##  <a name="querybinaryvalue"></a>  CRegKey::QueryBinaryValue
+## <a name="querybinaryvalue"></a>  CRegKey::QueryBinaryValue
 
 Call this method to retrieve the binary data for a specified value name.
 
@@ -488,7 +488,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.
 
-##  <a name="querydwordvalue"></a>  CRegKey::QueryDWORDValue
+## <a name="querydwordvalue"></a>  CRegKey::QueryDWORDValue
 
 Call this method to retrieve the DWORD data for a specified value name.
 
@@ -517,7 +517,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.
 
-##  <a name="queryguidvalue"></a>  CRegKey::QueryGUIDValue
+## <a name="queryguidvalue"></a>  CRegKey::QueryGUIDValue
 
 Call this method to retrieve the GUID data for a specified value name.
 
@@ -546,7 +546,7 @@ This method makes use of `CRegKey::QueryStringValue` and converts the string int
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted.
 
-##  <a name="querymultistringvalue"></a>  CRegKey::QueryMultiStringValue
+## <a name="querymultistringvalue"></a>  CRegKey::QueryMultiStringValue
 
 Call this method to retrieve the multistring data for a specified value name.
 
@@ -579,7 +579,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.
 
-##  <a name="queryqwordvalue"></a>  CRegKey::QueryQWORDValue
+## <a name="queryqwordvalue"></a>  CRegKey::QueryQWORDValue
 
 Call this method to retrieve the QWORD data for a specified value name.
 
@@ -608,7 +608,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.
 
-##  <a name="querystringvalue"></a>  CRegKey::QueryStringValue
+## <a name="querystringvalue"></a>  CRegKey::QueryStringValue
 
 Call this method to retrieve the string data for a specified value name.
 
@@ -641,7 +641,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.
 
-##  <a name="queryvalue"></a>  CRegKey::QueryValue
+## <a name="queryvalue"></a>  CRegKey::QueryValue
 
 Call this method to retrieve the data for the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.
 
@@ -701,7 +701,7 @@ The remaining method calls RegQueryValueEx.
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the RegQueryValueEx function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.
 
-##  <a name="recursedeletekey"></a>  CRegKey::RecurseDeleteKey
+## <a name="recursedeletekey"></a>  CRegKey::RecurseDeleteKey
 
 Call this method to remove the specified key from the registry and explicitly remove any subkeys.
 
@@ -722,7 +722,7 @@ If successful, returns ERROR_SUCCESS; otherwise, a non-zero error value defined 
 
 If the key has subkeys, you must call this method to delete the key.
 
-##  <a name="setbinaryvalue"></a>  CRegKey::SetBinaryValue
+## <a name="setbinaryvalue"></a>  CRegKey::SetBinaryValue
 
 Call this method to set the binary value of the registry key.
 
@@ -752,7 +752,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 This method uses [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) to write the value to the registry.
 
-##  <a name="setdwordvalue"></a>  CRegKey::SetDWORDValue
+## <a name="setdwordvalue"></a>  CRegKey::SetDWORDValue
 
 Call this method to set the DWORD value of the registry key.
 
@@ -776,7 +776,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 This method uses [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) to write the value to the registry.
 
-##  <a name="setguidvalue"></a>  CRegKey::SetGUIDValue
+## <a name="setguidvalue"></a>  CRegKey::SetGUIDValue
 
 Call this method to set the GUID value of the registry key.
 
@@ -800,7 +800,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 This method makes use of `CRegKey::SetStringValue` and converts the GUID into a string using [StringFromGUID2](/windows/win32/api/combaseapi/nf-combaseapi-stringfromguid2).
 
-##  <a name="setkeyvalue"></a>  CRegKey::SetKeyValue
+## <a name="setkeyvalue"></a>  CRegKey::SetKeyValue
 
 Call this method to store data in a specified value field of a specified key.
 
@@ -830,7 +830,7 @@ If successful, returns ERROR_SUCCESS; otherwise, a nonzero error code defined in
 
 Call this method to create or open the *lpszKeyName* key and store the *lpszValue* data in the *lpszValueName* value field.
 
-##  <a name="setkeysecurity"></a>  CRegKey::SetKeySecurity
+## <a name="setkeysecurity"></a>  CRegKey::SetKeySecurity
 
 Call this method to set the security of the registry key.
 
@@ -861,7 +861,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 Sets the key's security attributes. See [RegSetKeySecurity](/windows/win32/api/winreg/nf-winreg-regsetkeysecurity) for more details.
 
-##  <a name="setmultistringvalue"></a>  CRegKey::SetMultiStringValue
+## <a name="setmultistringvalue"></a>  CRegKey::SetMultiStringValue
 
 Call this method to set the multistring value of the registry key.
 
@@ -885,7 +885,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 This method uses [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) to write the value to the registry.
 
-##  <a name="setqwordvalue"></a>  CRegKey::SetQWORDValue
+## <a name="setqwordvalue"></a>  CRegKey::SetQWORDValue
 
 Call this method to set the QWORD value of the registry key.
 
@@ -909,7 +909,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 This method uses [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) to write the value to the registry.
 
-##  <a name="setstringvalue"></a>  CRegKey::SetStringValue
+## <a name="setstringvalue"></a>  CRegKey::SetStringValue
 
 Call this method to set the string value of the registry key.
 
@@ -939,7 +939,7 @@ If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, 
 
 This method uses [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) to write the value to the registry.
 
-##  <a name="setvalue"></a>  CRegKey::SetValue
+## <a name="setvalue"></a>  CRegKey::SetValue
 
 Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.
 

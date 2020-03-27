@@ -47,7 +47,7 @@ For more information on using `CWindowDC`, see [Device Contexts](../../mfc/devic
 
 Header: afxwin.h
 
-##  <a name="cwindowdc"></a>  CWindowDC::CWindowDC
+## <a name="cwindowdc"></a>  CWindowDC::CWindowDC
 
 Constructs a `CWindowDC` object that accesses the entire screen area (both client and nonclient) of the `CWnd` object pointed to by *pWnd*.
 
@@ -70,7 +70,7 @@ An exception (of type `CResourceException`) is thrown if the Windows `GetWindowD
 
 [!code-cpp[NVC_MFCDocView#188](../../mfc/codesnippet/cpp/cwindowdc-class_1.cpp)]
 
-##  <a name="m_hwnd"></a>  CWindowDC::m_hWnd
+## <a name="m_hwnd"></a>  CWindowDC::m_hWnd
 
 The HWND of the `CWnd` pointer is used to construct the `CWindowDC` object.
 

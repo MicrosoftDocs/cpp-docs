@@ -18,7 +18,7 @@ These functions provide support for COM Map `IUnknown` implementations.
 
 **Header:** atlbase.h
 
-##  <a name="atlinternalqueryinterface"></a>  AtlInternalQueryInterface
+## <a name="atlinternalqueryinterface"></a>  AtlInternalQueryInterface
 
 Retrieves a pointer to the requested interface.
 
@@ -56,7 +56,7 @@ One of the standard HRESULT values.
 
 [!code-cpp[NVC_ATL_Windowing#94](../../atl/codesnippet/cpp/com-map-global-functions_1.cpp)]
 
-##  <a name="inlineisequaliunknown"></a>  InlineIsEqualIUnknown
+## <a name="inlineisequaliunknown"></a>  InlineIsEqualIUnknown
 
 Call this function, for the special case of testing for `IUnknown`.
 

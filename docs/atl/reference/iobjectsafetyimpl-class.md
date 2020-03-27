@@ -64,7 +64,7 @@ Note that using the [IMPLEMENTED_CATEGORY](category-macros.md#implemented_catego
 
 **Header:** atlctl.h
 
-##  <a name="getinterfacesafetyoptions"></a>  IObjectSafetyImpl::GetInterfaceSafetyOptions
+## <a name="getinterfacesafetyoptions"></a>  IObjectSafetyImpl::GetInterfaceSafetyOptions
 
 Retrieves the safety options supported by the object, as well as the safety options currently set for the object.
 
@@ -84,7 +84,7 @@ The implementation returns the appropriate values for any interface supported by
 
 See [IObjectSafety::GetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768223\(v=vs.85\)) in the Windows SDK.
 
-##  <a name="m_dwcurrentsafety"></a>  IObjectSafetyImpl::m_dwCurrentSafety
+## <a name="m_dwcurrentsafety"></a>  IObjectSafetyImpl::m_dwCurrentSafety
 
 Stores the object's current safety level.
 
@@ -92,7 +92,7 @@ Stores the object's current safety level.
 DWORD m_dwCurrentSafety;
 ```
 
-##  <a name="setinterfacesafetyoptions"></a>  IObjectSafetyImpl::SetInterfaceSafetyOptions
+## <a name="setinterfacesafetyoptions"></a>  IObjectSafetyImpl::SetInterfaceSafetyOptions
 
 Makes the object safe for initialization or scripting by setting the [m_dwCurrentSafety](#m_dwcurrentsafety) member to the appropriate value.
 

@@ -70,7 +70,7 @@ For more information on `CMemFile`, see the articles [Files in MFC](../../mfc/fi
 
 **Header:** afx.h
 
-##  <a name="alloc"></a>  CMemFile::Alloc
+## <a name="alloc"></a>  CMemFile::Alloc
 
 This function is called by `CMemFile` member functions.
 
@@ -93,7 +93,7 @@ Override this function to implement custom memory allocation. If you override th
 
 The default implementation uses the run-time library function [malloc](../../c-runtime-library/reference/malloc.md) to allocate memory.
 
-##  <a name="attach"></a>  CMemFile::Attach
+## <a name="attach"></a>  CMemFile::Attach
 
 Call this function to attach a block of memory to `CMemFile`.
 
@@ -125,7 +125,7 @@ Since the file cannot be grown, be careful not to cause `CMemFile` to attempt to
 
 If *nGrowBytes* is greater than 0, `CMemFile` will ignore the contents of the memory block you've attached. You'll have to write the contents of the memory file from scratch using the `CMemFile` override of `CFile::Write`. If you attempt to write past the end of the file or grow the file by calling the `CMemFile` override of `CFile::SetLength`, `CMemFile` will grow the memory allocation in increments of *nGrowBytes*. Growing the memory allocation will fail if the memory block you pass to `Attach` wasn't allocated with a method compatible with [Alloc](#alloc). To be compatible with the default implementation of `Alloc`, you must allocate the memory with the run-time library function [malloc](../../c-runtime-library/reference/malloc.md) or [calloc](../../c-runtime-library/reference/calloc.md).
 
-##  <a name="cmemfile"></a>  CMemFile::CMemFile
+## <a name="cmemfile"></a>  CMemFile::CMemFile
 
 The first overload opens an empty memory file.
 
@@ -159,7 +159,7 @@ The second overload acts the same as if you used the first constructor and immed
 
 [!code-cpp[NVC_MFCFiles#36](../../atl-mfc-shared/reference/codesnippet/cpp/cmemfile-class_1.cpp)]
 
-##  <a name="detach"></a>  CMemFile::Detach
+## <a name="detach"></a>  CMemFile::Detach
 
 Call this function to get a pointer to the memory block being used by `CMemFile`.
 
@@ -175,7 +175,7 @@ A pointer to the memory block that contains the contents of the memory file.
 
 Calling this function also closes the `CMemFile`. You can reattach the memory block to `CMemFile` by calling [Attach](#attach). If you want to reattach the file and use the data in it, you should call [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) to get the length of the file before calling `Detach`. Note that if you attach a memory block to `CMemFile` so that you can use its data ( `nGrowBytes` == 0), then you won't be able to grow the memory file.
 
-##  <a name="free"></a>  CMemFile::Free
+## <a name="free"></a>  CMemFile::Free
 
 This function is called by `CMemFile` member functions.
 
@@ -192,7 +192,7 @@ Pointer to the memory to be deallocated.
 
 Override this function to implement custom memory deallocation. If you override this function, you'll probably want to override [Alloc](#alloc) and [Realloc](#realloc) as well.
 
-##  <a name="growfile"></a>  CMemFile::GrowFile
+## <a name="growfile"></a>  CMemFile::GrowFile
 
 This function is called by several of the `CMemFile` member functions.
 
@@ -209,7 +209,7 @@ New size of the memory file.
 
 You can override it if you want to change how `CMemFile` grows its file. The default implementation calls [Realloc](#realloc) to grow an existing block (or [Alloc](#alloc) to create a memory block), allocating memory in multiples of the `nGrowBytes` value specified in the constructor or [Attach](#attach) call.
 
-##  <a name="memcpy"></a>  CMemFile::Memcpy
+## <a name="memcpy"></a>  CMemFile::Memcpy
 
 This function is called by the `CMemFile` overrides of [CFile::Read](../../mfc/reference/cfile-class.md#read) and [CFile::Write](../../mfc/reference/cfile-class.md#write) to transfer data to and from the memory file.
 
@@ -239,7 +239,7 @@ A copy of *lpMemTarget*.
 
 Override this function if you want to change the way that `CMemFile` does these memory copies.
 
-##  <a name="realloc"></a>  CMemFile::Realloc
+## <a name="realloc"></a>  CMemFile::Realloc
 
 This function is called by `CMemFile` member functions.
 

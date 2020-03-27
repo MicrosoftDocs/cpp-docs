@@ -13,7 +13,7 @@ MFC supplies two models for writing network communications programs with Windows
 
 For information on Windows Sockets, including an explanation of the socket concept, see [Windows Sockets: Background](../mfc/windows-sockets-background.md).
 
-##  <a name="_core_sockets_programming_models"></a> Sockets Programming Models
+## <a name="_core_sockets_programming_models"></a> Sockets Programming Models
 
 The two MFC Windows Sockets programming models are supported by the following classes:
 
@@ -27,7 +27,7 @@ The two MFC Windows Sockets programming models are supported by the following cl
 
 Creating and using `CSocket` and `CAsyncSocket` objects is described in [Windows Sockets: Using Sockets with Archives](../mfc/windows-sockets-using-sockets-with-archives.md) and [Windows Sockets: Using Class CAsyncSocket](../mfc/windows-sockets-using-class-casyncsocket.md).
 
-##  <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a> Windows Sockets DLLs
+## <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a> Windows Sockets DLLs
 
 The Microsoft Windows operating systems supply the Windows Sockets dynamic-link libraries (DLL). Visual C++ supplies the appropriate header files and libraries and the Windows Sockets specification.
 

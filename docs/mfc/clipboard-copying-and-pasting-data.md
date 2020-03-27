@@ -10,7 +10,7 @@ This topic describes the minimum work necessary to implement copying to and past
 
 Before you can implement either copying or pasting, you must first provide functions to handle the Copy, Cut, and Paste options on the Edit menu.
 
-##  <a name="_core_copying_or_cutting_data"></a> Copying or Cutting Data
+## <a name="_core_copying_or_cutting_data"></a> Copying or Cutting Data
 
 #### To copy data to the Clipboard
 
@@ -26,7 +26,7 @@ Before you can implement either copying or pasting, you must first provide funct
 
 To see an example of this sequence, see the `OnEditCut` and `OnEditCopy` functions in the MFC OLE sample programs [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md). Note that these samples maintain a pointer to the currently selected data, so step 1 is already complete.
 
-##  <a name="_core_pasting_data"></a> Pasting Data
+## <a name="_core_pasting_data"></a> Pasting Data
 
 Pasting data is more complicated than copying it because you need to choose the format to use in pasting the data into your application.
 

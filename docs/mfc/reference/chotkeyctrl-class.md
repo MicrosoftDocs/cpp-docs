@@ -61,7 +61,7 @@ For more information on using `CHotKeyCtrl`, see [Controls](../../mfc/controls-m
 
 **Header:** afxcmn.h
 
-##  <a name="chotkeyctrl"></a>  CHotKeyCtrl::CHotKeyCtrl
+## <a name="chotkeyctrl"></a>  CHotKeyCtrl::CHotKeyCtrl
 
 Constructs a `CHotKeyCtrl` object.
 
@@ -69,7 +69,7 @@ Constructs a `CHotKeyCtrl` object.
 CHotKeyCtrl();
 ```
 
-##  <a name="create"></a>  CHotKeyCtrl::Create
+## <a name="create"></a>  CHotKeyCtrl::Create
 
 Creates a hot key control and attaches it to a `CHotKeyCtrl` object.
 
@@ -105,7 +105,7 @@ You construct a `CHotKeyCtrl` object in two steps. First, call the constructor a
 
 If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of `Create`.
 
-##  <a name="createex"></a>  CHotKeyCtrl::CreateEx
+## <a name="createex"></a>  CHotKeyCtrl::CreateEx
 
 Call this function to create a control (a child window) and associate it with the `CHotKeyCtrl` object.
 
@@ -143,7 +143,7 @@ Nonzero if successful; otherwise 0.
 
 Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
 
-##  <a name="gethotkey"></a>  CHotKeyCtrl::GetHotKey
+## <a name="gethotkey"></a>  CHotKeyCtrl::GetHotKey
 
 Retrieves the virtual key code and modifier flags of a keyboard shortcut from a hot key control.
 
@@ -180,7 +180,7 @@ In the first overloaded method, a DWORD that contains the virtual key code and m
 
 The virtual key code and the modifier keys together define the keyboard shortcut.
 
-##  <a name="gethotkeyname"></a>  CHotKeyCtrl::GetHotKeyName
+## <a name="gethotkeyname"></a>  CHotKeyCtrl::GetHotKeyName
 
 Call this member function to get the localized name of the hot key.
 
@@ -196,7 +196,7 @@ The localized name of the currently selected hot key. If there is no selected ho
 
 The name that this member function returns comes from the keyboard driver. You can install a non-localized keyboard driver in a localized version of Windows, and vice versa.
 
-##  <a name="getkeyname"></a>  CHotKeyCtrl::GetKeyName
+## <a name="getkeyname"></a>  CHotKeyCtrl::GetKeyName
 
 Call this member function to get the localized name of the key assigned to a specified virtual key code.
 
@@ -226,7 +226,7 @@ The key name that this function returns comes from the keyboard driver, so you c
 
 [!code-cpp[NVC_MFCControlLadenDialog#69](../../mfc/codesnippet/cpp/chotkeyctrl-class_1.cpp)]
 
-##  <a name="sethotkey"></a>  CHotKeyCtrl::SetHotKey
+## <a name="sethotkey"></a>  CHotKeyCtrl::SetHotKey
 
 Sets the keyboard shortcut for a hot key control.
 
@@ -257,7 +257,7 @@ The modifier flags are as follows:
 
 The virtual key code and the modifier keys together define the keyboard shortcut.
 
-##  <a name="setrules"></a>  CHotKeyCtrl::SetRules
+## <a name="setrules"></a>  CHotKeyCtrl::SetRules
 
 Call this function to define the invalid combinations and the default modifier combination for a hot key control.
 

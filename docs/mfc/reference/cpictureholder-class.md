@@ -59,7 +59,7 @@ For information on creating custom picture properties, see the article [MFC Acti
 
 **Header:** afxctl.h
 
-##  <a name="cpictureholder"></a>  CPictureHolder::CPictureHolder
+## <a name="cpictureholder"></a>  CPictureHolder::CPictureHolder
 
 Constructs a `CPictureHolder` object.
 
@@ -67,7 +67,7 @@ Constructs a `CPictureHolder` object.
 CPictureHolder();
 ```
 
-##  <a name="createempty"></a>  CPictureHolder::CreateEmpty
+## <a name="createempty"></a>  CPictureHolder::CreateEmpty
 
 Creates an empty `CPictureHolder` object and connects it to an `IPicture` interface.
 
@@ -79,7 +79,7 @@ BOOL CreateEmpty();
 
 Nonzero if the object is successfully created; otherwise 0.
 
-##  <a name="createfrombitmap"></a>  CPictureHolder::CreateFromBitmap
+## <a name="createfrombitmap"></a>  CPictureHolder::CreateFromBitmap
 
 Uses a bitmap to initialize the picture object in a `CPictureHolder`.
 
@@ -126,7 +126,7 @@ Nonzero if the object is successfully created; otherwise 0.
 
 If *bTransferOwnership* is TRUE, the caller should not use the bitmap or palette object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the bitmap and palette objects remain valid for the lifetime of the picture object.
 
-##  <a name="createfromicon"></a>  CPictureHolder::CreateFromIcon
+## <a name="createfromicon"></a>  CPictureHolder::CreateFromIcon
 
 Uses an icon to initialize the picture object in a `CPictureHolder`.
 
@@ -158,7 +158,7 @@ Nonzero if the object is successfully created; otherwise 0.
 
 If *bTransferOwnership* is TRUE, the caller should not use the icon object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the icon object remains valid for the lifetime of the picture object.
 
-##  <a name="createfrommetafile"></a>  CPictureHolder::CreateFromMetafile
+## <a name="createfrommetafile"></a>  CPictureHolder::CreateFromMetafile
 
 Uses a metafile to initialize the picture object in a `CPictureHolder`.
 
@@ -192,7 +192,7 @@ Nonzero if the object is successfully created; otherwise 0.
 
 If *bTransferOwnership* is TRUE, the caller should not use the metafile object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the metafile object remains valid for the lifetime of the picture object.
 
-##  <a name="getdisplaystring"></a>  CPictureHolder::GetDisplayString
+## <a name="getdisplaystring"></a>  CPictureHolder::GetDisplayString
 
 Retrieves the string that is displayed in a container's property browser.
 
@@ -209,7 +209,7 @@ Reference to the [CString](../../atl-mfc-shared/reference/cstringt-class.md) tha
 
 Nonzero if the string is successfully retrieved; otherwise 0.
 
-##  <a name="getpicturedispatch"></a>  CPictureHolder::GetPictureDispatch
+## <a name="getpicturedispatch"></a>  CPictureHolder::GetPictureDispatch
 
 This function returns a pointer to the `CPictureHolder` object's `IPictureDisp` interface.
 
@@ -225,7 +225,7 @@ A pointer to the `CPictureHolder` object's `IPictureDisp` interface.
 
 The caller must call `Release` on this pointer when finished with it.
 
-##  <a name="gettype"></a>  CPictureHolder::GetType
+## <a name="gettype"></a>  CPictureHolder::GetType
 
 Indicates whether the picture is a bitmap, metafile, or icon.
 
@@ -245,7 +245,7 @@ A value indicating the type of the picture. Possible values and their meanings a
 |PICTYPE_METAFILE|Picture is a metafile.|
 |PICTYPE_ICON|Picture is an icon.|
 
-##  <a name="m_ppict"></a>  CPictureHolder::m_pPict
+## <a name="m_ppict"></a>  CPictureHolder::m_pPict
 
 A pointer to the `CPictureHolder` object's `IPicture` interface.
 
@@ -253,7 +253,7 @@ A pointer to the `CPictureHolder` object's `IPicture` interface.
 LPPICTURE m_pPict;
 ```
 
-##  <a name="render"></a>  CPictureHolder::Render
+## <a name="render"></a>  CPictureHolder::Render
 
 Renders the picture in the rectangle referenced by *rcRender*.
 
@@ -275,7 +275,7 @@ Rectangle in which the picture is to be rendered.
 *rcWBounds*<br/>
 A rectangle representing the bounding rectangle of the object rendering the picture. For a control, this rectangle is the *rcBounds* parameter passed to an override of [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).
 
-##  <a name="setpicturedispatch"></a>  CPictureHolder::SetPictureDispatch
+## <a name="setpicturedispatch"></a>  CPictureHolder::SetPictureDispatch
 
 Connects the `CPictureHolder` object to a `IPictureDisp` interface.
 

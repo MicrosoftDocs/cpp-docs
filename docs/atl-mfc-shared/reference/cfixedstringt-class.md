@@ -64,7 +64,7 @@ For more information on the customization of `CFixedStringT` and memory manageme
 
 **Header:** cstringt.h
 
-##  <a name="cfixedstringt"></a>  CFixedStringT::CFixedStringT
+## <a name="cfixedstringt"></a>  CFixedStringT::CFixedStringT
 
 Constructs a `CFixedStringT` object.
 
@@ -93,7 +93,7 @@ A pointer to the memory manager of the `CFixedStringT` object. For more informat
 
 Because the constructors copy the input data into new allocated storage, you should be aware that memory exceptions may result. Some of these constructors act as conversion functions.
 
-##  <a name="operator_eq"></a>  CFixedStringT::operator =
+## <a name="operator_eq"></a>  CFixedStringT::operator =
 
 Reinitializes an existing `CFixedStringT` object with new data.
 

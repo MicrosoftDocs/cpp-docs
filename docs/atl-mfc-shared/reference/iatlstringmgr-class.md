@@ -37,7 +37,7 @@ You can also use this class to implement a custom memory manager for your custom
 
 **Header:** atlsimpstr.h
 
-##  <a name="allocate"></a>  IAtlStringMgr::Allocate
+## <a name="allocate"></a>  IAtlStringMgr::Allocate
 
 Allocates a new string data structure.
 
@@ -67,7 +67,7 @@ Call [IAtlStringMgr::Free](#free) or [IAtlStringMgr::ReAllocate](#reallocate) to
 > [!NOTE]
 >  For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-##  <a name="clone"></a>  IAtlStringMgr::Clone
+## <a name="clone"></a>  IAtlStringMgr::Clone
 
 Returns a pointer to a new string manager for use with another instance of `CSimpleStringT`.
 
@@ -88,7 +88,7 @@ However, if the memory manager does not support being used by multiple instances
 > [!NOTE]
 >  For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-##  <a name="free"></a>  IAtlStringMgr::Free
+## <a name="free"></a>  IAtlStringMgr::Free
 
 Frees a string data structure.
 
@@ -108,7 +108,7 @@ Frees the specified memory block previously allocated by [Allocate](#allocate) o
 > [!NOTE]
 >  For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-##  <a name="getnilstring"></a>  IAtlStringMgr::GetNilString
+## <a name="getnilstring"></a>  IAtlStringMgr::GetNilString
 
 Returns a pointer to a string data structure for an empty string.
 

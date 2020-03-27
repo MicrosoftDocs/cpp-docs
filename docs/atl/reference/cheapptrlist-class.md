@@ -51,7 +51,7 @@ This class provides a constructor and derives methods from [CAtlList](../../atl/
 
 **Header:** atlcoll.h
 
-##  <a name="cheapptrlist"></a>  CHeapPtrList::CHeapPtrList
+## <a name="cheapptrlist"></a>  CHeapPtrList::CHeapPtrList
 
 The constructor.
 

@@ -86,7 +86,7 @@ For more information about how to use `CFileFind` and the other WinInet classes,
 
 **Header:** afx.h
 
-##  <a name="cfilefind"></a>  CFileFind::CFileFind
+## <a name="cfilefind"></a>  CFileFind::CFileFind
 
 This member function is called when a `CFileFind` object is constructed.
 
@@ -104,7 +104,7 @@ Pointer to CAtlTransactionManager object
 
   See the example for [CFileFind::GetFileName](#getfilename).
 
-##  <a name="close"></a>  CFileFind::Close
+## <a name="close"></a>  CFileFind::Close
 
 Call this member function to end the search, reset the context, and release all resources.
 
@@ -120,7 +120,7 @@ After calling `Close`, you do not have to create a new `CFileFind` instance befo
 
   See the example for [CFileFind::GetFileName](#getfilename).
 
-##  <a name="closecontext"></a>  CFileFind::CloseContext
+## <a name="closecontext"></a>  CFileFind::CloseContext
 
 Closes the file specified by the current search handle.
 
@@ -134,7 +134,7 @@ Closes the file specified by the current value of the search handle. Override th
 
 You must call the [FindFile](#findfile) or [FindNextFile](#findnextfile) functions at least once to retrieve a valid search handle. The `FindFile` and `FindNextFile` functions use the search handle to locate files with names that match a given name.
 
-##  <a name="findfile"></a>  CFileFind::FindFile
+## <a name="findfile"></a>  CFileFind::FindFile
 
 Call this member function to open a file search.
 
@@ -202,7 +202,7 @@ After calling `FindFile` to begin the file search, call [FindNextFile](#findnext
 
   See the example for [CFileFind::IsDirectory](#isdirectory).
 
-##  <a name="findnextfile"></a>  CFileFind::FindNextFile
+## <a name="findnextfile"></a>  CFileFind::FindNextFile
 
 Call this member function to continue a file search from a previous call to [FindFile](#findfile).
 
@@ -262,7 +262,7 @@ You must call `FindNextFile` at least once before calling any of the following a
 
   See the example for [CFileFind::IsDirectory](#isdirectory).
 
-##  <a name="getcreationtime"></a>  CFileFind::GetCreationTime
+## <a name="getcreationtime"></a>  CFileFind::GetCreationTime
 
 Call this member function to get the time the specified file was created.
 
@@ -294,7 +294,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `GetCre
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="getfilename"></a>  CFileFind::GetFileName
+## <a name="getfilename"></a>  CFileFind::GetFileName
 
 Call this member function to get the name of the found file.
 
@@ -322,7 +322,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling GetFile
 
 [!code-cpp[NVC_MFCFiles#32](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_2.cpp)]
 
-##  <a name="getfilepath"></a>  CFileFind::GetFilePath
+## <a name="getfilepath"></a>  CFileFind::GetFilePath
 
 Call this member function to get the full path of the specified file.
 
@@ -350,7 +350,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `GetFil
 
   See the example for [CFileFind::GetFileName](#getfilename).
 
-##  <a name="getfiletitle"></a>  CFileFind::GetFileTitle
+## <a name="getfiletitle"></a>  CFileFind::GetFileTitle
 
 Call this member function to get the title of the found file.
 
@@ -378,7 +378,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `GetFil
 
   See the example for [CFileFind::GetFileName](#getfilename).
 
-##  <a name="getfileurl"></a>  CFileFind::GetFileURL
+## <a name="getfileurl"></a>  CFileFind::GetFileURL
 
 Call this member function to retrieve the specified URL.
 
@@ -400,7 +400,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `GetFil
 
   See the example for [CFileFind::GetFileName](#getfilename).
 
-##  <a name="getlastaccesstime"></a>  CFileFind::GetLastAccessTime
+## <a name="getlastaccesstime"></a>  CFileFind::GetLastAccessTime
 
 Call this member function to get the time that the specified file was last accessed.
 
@@ -432,7 +432,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `GetLas
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="getlastwritetime"></a>  CFileFind::GetLastWriteTime
+## <a name="getlastwritetime"></a>  CFileFind::GetLastWriteTime
 
 Call this member function to get the last time the file was changed.
 
@@ -464,7 +464,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `GetLas
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="getlength"></a>  CFileFind::GetLength
+## <a name="getlength"></a>  CFileFind::GetLength
 
 Call this member function to get the length of the found file, in bytes.
 
@@ -489,7 +489,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `GetLen
 
 [!code-cpp[NVC_MFCFiles#33](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_3.cpp)]
 
-##  <a name="getroot"></a>  CFileFind::GetRoot
+## <a name="getroot"></a>  CFileFind::GetRoot
 
 Call this member function to get the root of the found file.
 
@@ -511,7 +511,7 @@ This member function returns the drive specifier and path name used to start a s
 
   See the example for [CFileFind::GetFileName](#getfilename).
 
-##  <a name="isarchived"></a>  CFileFind::IsArchived
+## <a name="isarchived"></a>  CFileFind::IsArchived
 
 Call this member function to determine if the found file is archived.
 
@@ -535,7 +535,7 @@ See the member function [MatchesMask](#matchesmask) for a complete list of file 
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="iscompressed"></a>  CFileFind::IsCompressed
+## <a name="iscompressed"></a>  CFileFind::IsCompressed
 
 Call this member function to determine if the found file is compressed.
 
@@ -559,7 +559,7 @@ See the member function [MatchesMask](#matchesmask) for a complete list of file 
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="isdirectory"></a>  CFileFind::IsDirectory
+## <a name="isdirectory"></a>  CFileFind::IsDirectory
 
 Call this member function to determine if the found file is a directory.
 
@@ -585,7 +585,7 @@ This small program recurses every directory on the C:\ drive and prints the name
 
 [!code-cpp[NVC_MFCFiles#34](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_4.cpp)]
 
-##  <a name="isdots"></a>  CFileFind::IsDots
+## <a name="isdots"></a>  CFileFind::IsDots
 
 Call this member function to test for the current directory and parent directory markers while iterating through files.
 
@@ -605,7 +605,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `IsDots
 
   See the example for [CFileFind::IsDirectory](#isdirectory).
 
-##  <a name="ishidden"></a>  CFileFind::IsHidden
+## <a name="ishidden"></a>  CFileFind::IsHidden
 
 Call this member function to determine if the found file is hidden.
 
@@ -629,7 +629,7 @@ See the member function [MatchesMask](#matchesmask) for a complete list of file 
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="isnormal"></a>  CFileFind::IsNormal
+## <a name="isnormal"></a>  CFileFind::IsNormal
 
 Call this member function to determine if the found file is a normal file.
 
@@ -653,7 +653,7 @@ See the member function [MatchesMask](#matchesmask) for a complete list of file 
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="isreadonly"></a>  CFileFind::IsReadOnly
+## <a name="isreadonly"></a>  CFileFind::IsReadOnly
 
 Call this member function to determine if the found file is read-only.
 
@@ -677,7 +677,7 @@ See the member function [MatchesMask](#matchesmask) for a complete list of file 
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="issystem"></a>  CFileFind::IsSystem
+## <a name="issystem"></a>  CFileFind::IsSystem
 
 Call this member function to determine if the found file is a system file.
 
@@ -701,7 +701,7 @@ See the member function [MatchesMask](#matchesmask) for a complete list of file 
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="istemporary"></a>  CFileFind::IsTemporary
+## <a name="istemporary"></a>  CFileFind::IsTemporary
 
 Call this member function to determine if the found file is a temporary file.
 
@@ -725,7 +725,7 @@ See the member function [MatchesMask](#matchesmask) for a complete list of file 
 
   See the example for [CFileFind::GetLength](#getlength).
 
-##  <a name="m_ptm"></a>  CFileFind::m_pTM
+## <a name="m_ptm"></a>  CFileFind::m_pTM
 
 Pointer to a `CAtlTransactionManager` object.
 
@@ -735,7 +735,7 @@ CAtlTransactionManager* m_pTM;
 
 ### Remarks
 
-##  <a name="matchesmask"></a>  CFileFind::MatchesMask
+## <a name="matchesmask"></a>  CFileFind::MatchesMask
 
 Call this member function to test the file attributes on the found file.
 

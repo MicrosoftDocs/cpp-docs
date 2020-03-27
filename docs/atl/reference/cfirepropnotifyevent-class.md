@@ -39,7 +39,7 @@ For more information about creating controls, see the [ATL Tutorial](../../atl/a
 
 **Header:** atlctl.h
 
-##  <a name="fireonchanged"></a>  CFirePropNotifyEvent::FireOnChanged
+## <a name="fireonchanged"></a>  CFirePropNotifyEvent::FireOnChanged
 
 Notifies all connected [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interfaces (on every connection point of the object) that the specified object property has changed.
 
@@ -63,7 +63,7 @@ One of the standard HRESULT values.
 
 This function is safe to call even if your control does not support connection points.
 
-##  <a name="fireonrequestedit"></a>  CFirePropNotifyEvent::FireOnRequestEdit
+## <a name="fireonrequestedit"></a>  CFirePropNotifyEvent::FireOnRequestEdit
 
 Notifies all connected [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interfaces (on every connection point of the object) that the specified object property is about to change.
 

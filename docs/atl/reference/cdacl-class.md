@@ -63,7 +63,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 **Header:** atlsecurity.h
 
-##  <a name="addallowedace"></a>  CDacl::AddAllowedAce
+## <a name="addallowedace"></a>  CDacl::AddAllowedAce
 
 Adds an allowed ACE (access-control entry) to the `CDacl` object.
 
@@ -108,7 +108,7 @@ A `CDacl` object contains zero or more ACEs (access-control entries) that identi
 
 See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
 
-##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce
+## <a name="adddeniedace"></a>  CDacl::AddDeniedAce
 
 Adds a denied ACE (access-control entry) to the `CDacl` object.
 
@@ -153,7 +153,7 @@ A `CDacl` object contains zero or more ACEs (access-control entries) that identi
 
 See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
 
-##  <a name="cdacl"></a>  CDacl::CDacl
+## <a name="cdacl"></a>  CDacl::CDacl
 
 The constructor.
 
@@ -171,7 +171,7 @@ An existing `ACL` (access-control list) structure.
 
 The `CDacl` object can be optionally created using an existing `ACL` structure. It is important to note that only a DACL (discretionary access-control list), and not a SACL (system access-control list), should be passed as this parameter. In debug builds, passing a SACL will cause an ASSERT. In release builds, passing a SACL will cause the ACEs (access-control entries) in the ACL to be ignored, and no error will occur.
 
-##  <a name="dtor"></a>  CDacl::~CDacl
+## <a name="dtor"></a>  CDacl::~CDacl
 
 The destructor.
 
@@ -183,7 +183,7 @@ The destructor.
 
 The destructor frees any resources acquired by the object, including all ACEs (access-control entries) using [CDacl::RemoveAllAces](#removeallaces).
 
-##  <a name="getacecount"></a>  CDacl::GetAceCount
+## <a name="getacecount"></a>  CDacl::GetAceCount
 
 Returns the number of ACEs (access-control entries) in the `CDacl` object.
 
@@ -195,7 +195,7 @@ UINT GetAceCount() const throw();
 
 Returns the number of ACEs contained in the `CDacl` object.
 
-##  <a name="operator_eq"></a>  CDacl::operator =
+## <a name="operator_eq"></a>  CDacl::operator =
 
 Assignment operator.
 
@@ -216,7 +216,7 @@ Returns a reference to the updated `CDacl` object.
 
 You should ensure that you only pass a DACL (discretionary access-control list) to this function. Passing a SACL (system access-control list) to this function will cause an ASSERT in debug builds but will cause no error in release builds.
 
-##  <a name="removeace"></a>  CDacl::RemoveAce
+## <a name="removeace"></a>  CDacl::RemoveAce
 
 Removes a specific ACE (access-control entry) from the `CDacl` object.
 
@@ -233,7 +233,7 @@ Index to the ACE entry to remove.
 
 This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#removeat).
 
-##  <a name="removeallaces"></a>  CDacl::RemoveAllAces
+## <a name="removeallaces"></a>  CDacl::RemoveAllAces
 
 Removes all of the ACEs (access-control entries) contained in the `CDacl` object.
 

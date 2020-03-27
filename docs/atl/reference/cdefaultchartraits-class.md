@@ -38,7 +38,7 @@ This class provides functions that are utilized by the class [CStringElementTrai
 
 **Header:** atlcoll.h
 
-##  <a name="chartolower"></a>  CDefaultCharTraits::CharToLower
+## <a name="chartolower"></a>  CDefaultCharTraits::CharToLower
 
 Call this function to convert a character to lowercase.
 
@@ -56,7 +56,7 @@ The character to convert to lowercase.
 
 [!code-cpp[NVC_ATL_Utilities#132](../../atl/codesnippet/cpp/cdefaultchartraits-class_1.cpp)]
 
-##  <a name="chartoupper"></a>  CDefaultCharTraits::CharToUpper
+## <a name="chartoupper"></a>  CDefaultCharTraits::CharToUpper
 
 Call this function to convert a character to uppercase.
 

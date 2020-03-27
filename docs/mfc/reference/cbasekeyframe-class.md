@@ -54,7 +54,7 @@ Encapsulates UI_ANIMATION_KEYFRAME variable. Serves as a base class for any keyf
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="addtostoryboard"></a>  CBaseKeyFrame::AddToStoryboard
+## <a name="addtostoryboard"></a>  CBaseKeyFrame::AddToStoryboard
 
 Adds a keyframe to storyboard.
 
@@ -80,7 +80,7 @@ TRUE if keyframe was added to storyboard successfully; otherwise FALSE.
 
 This method is called to add a keyframe to storyboard.
 
-##  <a name="cbasekeyframe"></a>  CBaseKeyFrame::CBaseKeyFrame
+## <a name="cbasekeyframe"></a>  CBaseKeyFrame::CBaseKeyFrame
 
 Constructs a keyframe object.
 
@@ -88,7 +88,7 @@ Constructs a keyframe object.
 CBaseKeyFrame();
 ```
 
-##  <a name="getanimationkeyframe"></a>  CBaseKeyFrame::GetAnimationKeyframe
+## <a name="getanimationkeyframe"></a>  CBaseKeyFrame::GetAnimationKeyframe
 
 Returns the underlying keyframe value.
 
@@ -104,7 +104,7 @@ A current keyframe. The default value is UI_ANIMATION_KEYFRAME_STORYBOARD_START.
 
 This is an accessor to the underlying keyframe value.
 
-##  <a name="isadded"></a>  CBaseKeyFrame::IsAdded
+## <a name="isadded"></a>  CBaseKeyFrame::IsAdded
 
 Tells whether a keyframe has been added to storyboard.
 
@@ -120,7 +120,7 @@ TRUE if a keyframe is added to a storyboard; otehrwise FALSE.
 
 In the base class IsAdded always returns TRUE, but it's overridden in derived classes.
 
-##  <a name="iskeyframeatoffset"></a>  CBaseKeyFrame::IsKeyframeAtOffset
+## <a name="iskeyframeatoffset"></a>  CBaseKeyFrame::IsKeyframeAtOffset
 
 Specifies whether the keyframe should be added to storyboard at offset, or after transition.
 
@@ -136,7 +136,7 @@ TRUE if the keyframe should be added to storyboard at some specified offset. FAL
 
 Specifies whether the keyframe should be added to storyboard at offset. The offset or transition must be specified in a derived class.
 
-##  <a name="m_badded"></a>  CBaseKeyFrame::m_bAdded
+## <a name="m_badded"></a>  CBaseKeyFrame::m_bAdded
 
 Specifies whether this keyframe has been added to a storyboard.
 
@@ -144,7 +144,7 @@ Specifies whether this keyframe has been added to a storyboard.
 BOOL m_bAdded;
 ```
 
-##  <a name="m_biskeyframeatoffset"></a>  CBaseKeyFrame::m_bIsKeyframeAtOffset
+## <a name="m_biskeyframeatoffset"></a>  CBaseKeyFrame::m_bIsKeyframeAtOffset
 
 Specifies whether this keyframe should be added to storyboard at an offset from another existing keyframe, or at the end of some transition.
 
@@ -152,7 +152,7 @@ Specifies whether this keyframe should be added to storyboard at an offset from 
 BOOL m_bIsKeyframeAtOffset;
 ```
 
-##  <a name="m_keyframe"></a>  CBaseKeyFrame::m_keyframe
+## <a name="m_keyframe"></a>  CBaseKeyFrame::m_keyframe
 
 Represents a Windows Animation API keyframe. When a keyframe is not initialized it is set to the predefined value UI_ANIMATION_KEYFRAME_STORYBOARD_START.
 

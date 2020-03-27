@@ -24,7 +24,7 @@ Topics covered in this article include:
 
 If you are ready to start writing your program now, see [Writing MFC Applications](../mfc/writing-mfc-applications.md).
 
-##  <a name="_core_intranet_versus_internet"></a> Intranet Versus Internet
+## <a name="_core_intranet_versus_internet"></a> Intranet Versus Internet
 
 Many applications run on the Internet and are accessible to anyone with a browser and Internet access. Businesses are also implementing intranets, which are company-wide networks using TCP/IP protocols and Web browsers. Intranets offer an easily upgradeable, central source for company-wide information. They can be used for upgrading software, for delivering and tabulating surveys, for customer support, and for information delivery. The following table compares features of the Internet and intranets.
 
@@ -34,11 +34,11 @@ Many applications run on the Internet and are accessible to anyone with a browse
 |Reduced security of data and systems|Controlled access to data and systems|
 |Minimal control of content|High control of content|
 
-##  <a name="_core_client_or_server_application"></a> Client or Server Application
+## <a name="_core_client_or_server_application"></a> Client or Server Application
 
 Your application may run on a client computer or on a server computer. Your application may also be stored on a server, and then downloaded across the Internet and run on a client computer. MFC WinInet classes are used for client applications to download files. MFC and asynchronous moniker classes are used to download files and control properties. Classes for ActiveX controls and Active documents are used for client applications and for applications that are downloaded from the server to run on a client.
 
-##  <a name="_core_the_web_page"></a> The Web Page: HTML, Active Documents, ActiveX Controls
+## <a name="_core_the_web_page"></a> The Web Page: HTML, Active Documents, ActiveX Controls
 
 Microsoft offers several ways of providing content on a Web page. Web pages can use standard HTML or HTML extensions, such as the object tag, to provide dynamic content such as ActiveX controls.
 
@@ -46,11 +46,11 @@ Web browsers typically display HTML pages. Active documents can also display you
 
 ActiveX controls you write can be downloaded asynchronously from the server and displayed on a Web page. You can use a scripting language such as VBScript to perform client-side validation before sending information to the server.
 
-##  <a name="_core_browser_or_standalone"></a> Browser or Stand-Alone Application
+## <a name="_core_browser_or_standalone"></a> Browser or Stand-Alone Application
 
 You can write ActiveX controls that are embedded in an HTML page and Active document servers that are viewed in a browser. You can write HTML pages that contain a button to submit a request to run your ISAPI application on a Web server. You can write a stand-alone application that uses Internet protocols to download files and display the information to your user, without ever using a browser application.
 
-##  <a name="_core_com_on_the_internet"></a> COM on the Internet
+## <a name="_core_com_on_the_internet"></a> COM on the Internet
 
 ActiveX controls, Active documents, and asynchronous monikers all use COM (Component Object Model) technologies.
 
@@ -58,7 +58,7 @@ ActiveX controls provide dynamic content to documents and pages on Internet site
 
 Asynchronous monikers provide features to enable a control to perform well in an Internet environment, including an incremental or progressive means to download data. Controls must also work well with other controls that may also be retrieving their data asynchronously at the same time.
 
-##  <a name="_core_client_data_download_services"></a> Client Data Download Services
+## <a name="_core_client_data_download_services"></a> Client Data Download Services
 
 Two sets of APIs that will help transfer data to your client are WinInet and asynchronous monikers. If you have large .gif and .avi files and ActiveX controls on your HTML page, you can increase the responsiveness to the user by downloading asynchronously, either by using asynchronous monikers or using WinInet asynchronously.
 

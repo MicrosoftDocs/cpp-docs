@@ -22,7 +22,7 @@ These functions provide support for connection points and sink maps.
 
 **Header:** atlbase.h
 
-##  <a name="atladvise"></a>  AtlAdvise
+## <a name="atladvise"></a>  AtlAdvise
 
 Creates a connection between an object's connection point and a client's sink.
 
@@ -63,7 +63,7 @@ The sink implements the outgoing interface supported by the connection point. Th
 
 [!code-cpp[NVC_ATL_Windowing#91](../../atl/codesnippet/cpp/connection-point-global-functions_1.cpp)]
 
-##  <a name="atlunadvise"></a>  AtlUnadvise
+## <a name="atlunadvise"></a>  AtlUnadvise
 
 Terminates the connection established through [AtlAdvise](#atladvise).
 
@@ -96,7 +96,7 @@ A standard HRESULT value.
 
 [!code-cpp[NVC_ATL_Windowing#96](../../atl/codesnippet/cpp/connection-point-global-functions_2.cpp)]
 
-##  <a name="atladvisesinkmap"></a>  AtlAdviseSinkMap
+## <a name="atladvisesinkmap"></a>  AtlAdviseSinkMap
 
 Call this function to advise or unadvise all entries in the object's sink event map.
 

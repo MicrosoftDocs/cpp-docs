@@ -45,7 +45,7 @@ class CD2DRectF : public D2D1_RECT_F;
 
 **Header:** afxrendertarget.h
 
-##  <a name="cd2drectf"></a>  CD2DRectF::CD2DRectF
+## <a name="cd2drectf"></a>  CD2DRectF::CD2DRectF
 
 Constructs a CD2DRectF object from CRect object.
 
@@ -78,7 +78,7 @@ source right coordinate
 *fBottom*<br/>
 source bottom coordinate
 
-##  <a name="isnull"></a>  CD2DRectF::IsNull
+## <a name="isnull"></a>  CD2DRectF::IsNull
 
 Returns a Boolean value that indicates whether an expression contains no valid data (Null).
 
@@ -90,7 +90,7 @@ BOOL IsNull() const;
 
 TRUE if rectangle's top, left, bottom, and right values are all equal to 0; otherwise FALSE.
 
-##  <a name="operator_crect"></a>  CD2DRectF::operator CRect
+## <a name="operator_crect"></a>  CD2DRectF::operator CRect
 
 Converts CD2DRectF to CRect object.
 

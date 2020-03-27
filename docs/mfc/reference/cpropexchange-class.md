@@ -54,7 +54,7 @@ For more information on using `CPropExchange`, see the article [MFC ActiveX Cont
 
 **Header:** afxctl.h
 
-##  <a name="exchangeblobprop"></a>  CPropExchange::ExchangeBlobProp
+## <a name="exchangeblobprop"></a>  CPropExchange::ExchangeBlobProp
 
 Serializes a property that stores binary large object (BLOB) data.
 
@@ -86,7 +86,7 @@ The property's value is read from or written to, as appropriate, the variable re
 
 The functions `CArchivePropExchange::ExchangeBlobProp`, `CResetPropExchange::ExchangeBlobProp`, and `CPropsetPropExchange::ExchangeBlobProp` override this pure virtual function.
 
-##  <a name="exchangefontprop"></a>  CPropExchange::ExchangeFontProp
+## <a name="exchangefontprop"></a>  CPropExchange::ExchangeFontProp
 
 Exchanges a font property between a storage medium and the control.
 
@@ -122,7 +122,7 @@ If the font property is being loaded from the medium to the control, the font's 
 
 The functions `CArchivePropExchange::ExchangeFontProp`, `CResetPropExchange::ExchangeFontProp`, and `CPropsetPropExchange::ExchangeFontProp` override this pure virtual function.
 
-##  <a name="exchangepersistentprop"></a>  CPropExchange::ExchangePersistentProp
+## <a name="exchangepersistentprop"></a>  CPropExchange::ExchangePersistentProp
 
 Exchanges a property between the control and a file.
 
@@ -158,7 +158,7 @@ If the property is being loaded from the file to the control, the property is cr
 
 The functions `CArchivePropExchange::ExchangePersistentProp`, `CResetPropExchange::ExchangePersistentProp`, and `CPropsetPropExchange::ExchangePersistentProp` override this pure virtual function.
 
-##  <a name="exchangeprop"></a>  CPropExchange::ExchangeProp
+## <a name="exchangeprop"></a>  CPropExchange::ExchangeProp
 
 Exchanges a property between a storage medium and the control.
 
@@ -204,7 +204,7 @@ If the property is being loaded from the medium to the control, the property's v
 
 The functions `CArchivePropExchange::ExchangeProp`, `CResetPropExchange::ExchangeProp`, and `CPropsetPropExchange::ExchangeProp` override this pure virtual function.
 
-##  <a name="exchangeversion"></a>  CPropExchange::ExchangeVersion
+## <a name="exchangeversion"></a>  CPropExchange::ExchangeVersion
 
 Called by the framework to handle persistence of a version number.
 
@@ -230,7 +230,7 @@ Indicates whether to convert persistent data to the current version or keep it a
 
 Nonzero if the function succeeded; 0 otherwise.
 
-##  <a name="getversion"></a>  CPropExchange::GetVersion
+## <a name="getversion"></a>  CPropExchange::GetVersion
 
 Call this function to retrieve the version number of the control.
 
@@ -242,7 +242,7 @@ DWORD GetVersion();
 
 The version number of the control.
 
-##  <a name="isasynchronous"></a>  CPropExchange::IsAsynchronous
+## <a name="isasynchronous"></a>  CPropExchange::IsAsynchronous
 
 Determines if property exchanges are done asynchronously.
 
@@ -254,7 +254,7 @@ BOOL IsAsynchronous();
 
 Returns TRUE if properties are exchanged asynchronously, otherwise FALSE.
 
-##  <a name="isloading"></a>  CPropExchange::IsLoading
+## <a name="isloading"></a>  CPropExchange::IsLoading
 
 Call this function to determine whether properties are being loaded to the control or saved from it.
 

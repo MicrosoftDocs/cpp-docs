@@ -179,7 +179,7 @@ The following example demonstrates how to configure a `CDockablePane` object by 
 
 **Header:** afxDockablePane.h
 
-##  <a name="attachtotabwnd"></a>  CDockablePane::AttachToTabWnd
+## <a name="attachtotabwnd"></a>  CDockablePane::AttachToTabWnd
 
 Attaches the current pane to a target pane, creating a tabbed pane.
 
@@ -231,7 +231,7 @@ If you attach one pane to another when building a docking layout, set `dockMetho
 
 You should dock the first pane before you attach another pane to it.
 
-##  <a name="calcfixedlayout"></a>  CDockablePane::CalcFixedLayout
+## <a name="calcfixedlayout"></a>  CDockablePane::CalcFixedLayout
 
 Returns the size of the pane rectangle.
 
@@ -253,7 +253,7 @@ virtual CSize CalcFixedLayout(
 
 A `CSize` object that contains the size of the pane rectangle.
 
-##  <a name="canacceptminiframe"></a>  CDockablePane::CanAcceptMiniFrame
+## <a name="canacceptminiframe"></a>  CDockablePane::CanAcceptMiniFrame
 
 Determines whether the specified mini-frame can be docked to the pane.
 
@@ -270,7 +270,7 @@ virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;
 
 TRUE if *pMiniFrame* can be docked to the pane; otherwise, FALSE.
 
-##  <a name="canacceptpane"></a>  CDockablePane::CanAcceptPane
+## <a name="canacceptpane"></a>  CDockablePane::CanAcceptPane
 
 Determines whether another pane can be docked to the current pane.
 
@@ -295,7 +295,7 @@ Override this function in a derived class to enable or disable docking to a spec
 
 By default, this method returns TRUE if either *pBar* or its parent is of type `CDockablePane`.
 
-##  <a name="canautohide"></a>  CDockablePane::CanAutoHide
+## <a name="canautohide"></a>  CDockablePane::CanAutoHide
 
 Determines whether the pane can auto-hide.
 
@@ -317,7 +317,7 @@ TRUE if the pane can auto-hide; otherwise, FALSE.
 
 - The pane is not docked.
 
-##  <a name="canbeattached"></a>  CDockablePane::CanBeAttached
+## <a name="canbeattached"></a>  CDockablePane::CanBeAttached
 
 Determines whether the current pane can be docked to another pane.
 
@@ -333,7 +333,7 @@ TRUE if the dockable pane can be docked to another pane or to the main frame win
 
 By default, this method always returns TRUE. Override this method in a derived class to enable or disable docking without calling [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking).
 
-##  <a name="cdockablepane"></a>  CDockablePane::CDockablePane
+## <a name="cdockablepane"></a>  CDockablePane::CDockablePane
 
 Constructs and initializes a [CDockablePane](../../mfc/reference/cdockablepane-class.md) object.
 
@@ -345,7 +345,7 @@ CDockablePane();
 
 After you construct a dockable pane object, call [CDockablePane::Create](#create) or [CDockablePane::CreateEx](#createex) to create it.
 
-##  <a name="converttotabbeddocument"></a>  CDockablePane::ConvertToTabbedDocument
+## <a name="converttotabbeddocument"></a>  CDockablePane::ConvertToTabbedDocument
 
 Converts one or more dockable panes to MDI tabbed documents.
 
@@ -358,7 +358,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 *bActiveTabOnly*<br/>
 [in] When you convert a `CTabbedPane`, specify TRUE to convert only the active tab. Specify FALSE to convert all tabs in the pane.
 
-##  <a name="checkautohidecondition"></a>  CDockablePane::CheckAutoHideCondition
+## <a name="checkautohidecondition"></a>  CDockablePane::CheckAutoHideCondition
 
 Determines whether the docking pane is hidden (also known as autohide mode).
 
@@ -376,7 +376,7 @@ The framework uses a timer to periodically check whether to hide an autohide doc
 
 If all the previous conditions are met, the framework calls [CDockablePane::Slide](#slide) to hide the pane.
 
-##  <a name="checkstopslidecondition"></a>  CDockablePane::CheckStopSlideCondition
+## <a name="checkstopslidecondition"></a>  CDockablePane::CheckStopSlideCondition
 
 Determines when an autohide docking pane should stop sliding.
 
@@ -399,7 +399,7 @@ When a dockable pane is set to autohide mode, the framework uses sliding effects
 
 Override this method in a derived class to implement custom autohide effects.
 
-##  <a name="copystate"></a>  CDockablePane::CopyState
+## <a name="copystate"></a>  CDockablePane::CopyState
 
 Copies the state of a dockable pane.
 
@@ -426,7 +426,7 @@ virtual void CopyState(CDockablePane* pOrgBar);
 
 - [CDockablePane::IsAutohideAllEnabled](#isautohideallenabled)
 
-##  <a name="create"></a>  CDockablePane::Create
+## <a name="create"></a>  CDockablePane::Create
 
 Creates the Windows control and attaches it to the [CDockablePane](../../mfc/reference/cdockablepane-class.md) object.
 
@@ -500,7 +500,7 @@ If the *dwStyle* window style has the CBRS_FLOAT_MULTI flag, the miniframe windo
 
 If the *dwTabbedStyle* parameter has the AFX_CBRS_OUTLOOK_TABS flag specified, the pane creates Outlook-style tabbed panes when another pane is attached to this pane using the [CDockablePane::AttachToTabWnd](#attachtotabwnd) method. By default, dockable panes create regular tabbed panes of type [CTabbedPane](../../mfc/reference/ctabbedpane-class.md).
 
-##  <a name="createdefaultpanedivider"></a>  CDockablePane::CreateDefaultPaneDivider
+## <a name="createdefaultpanedivider"></a>  CDockablePane::CreateDefaultPaneDivider
 
 Creates a default divider for the pane as it is being docked to a frame window.
 
@@ -537,7 +537,7 @@ This method returns a pointer to the newly-created divider, or NULL if divider c
 |CBRS_ALIGN_LEFT|The pane is being docked to the left side of the client area of a frame window.|
 |CBRS_ALIGN_RIGHT|The pane is being docked to the right side of the client area of a frame window.|
 
-##  <a name="createex"></a>  CDockablePane::CreateEx
+## <a name="createex"></a>  CDockablePane::CreateEx
 
 Creates the Windows control and attaches it to the [CDockablePane](../../mfc/reference/cdockablepane-class.md) object.
 
@@ -599,7 +599,7 @@ If the *dwStyle* window style has the CBRS_FLOAT_MULTI flag, the miniframe windo
 
 If the *dwTabbedStyle* parameter has the AFX_CBRS_OUTLOOK_TABS flag specified, the pane creates Outlook-style tabbed panes when another pane is attached to this pane using the [CDockablePane::AttachToTabWnd](#attachtotabwnd) method. By default, dockable panes create regular tabbed panes of type [CTabbedPane](../../mfc/reference/ctabbedpane-class.md).
 
-##  <a name="createtabbedpane"></a>  CDockablePane::CreateTabbedPane
+## <a name="createtabbedpane"></a>  CDockablePane::CreateTabbedPane
 
 Creates a tabbed pane from the current pane.
 
@@ -619,7 +619,7 @@ Override this method in a derived class to customize how tabbed panes are create
 
 The tabbed pane is created according to the runtime class information stored in the `m_pTabbedControlBarRTC` member, which is initialized by the [CDockablePane::CreateEx](#createex) method.
 
-##  <a name="dockpanecontainer"></a>  CDockablePane::DockPaneContainer
+## <a name="dockpanecontainer"></a>  CDockablePane::DockPaneContainer
 
 Docks a container to the pane.
 
@@ -656,7 +656,7 @@ TRUE if the container was successfully docked to the pane; otherwise, FALSE.
 |CBRS_ALIGN_LEFT|The container is being docked to the left of the pane.|
 |CBRS_ALIGN_RIGHT|The container is being docked to the right of the pane.|
 
-##  <a name="dockpanestandard"></a>  CDockablePane::DockPaneStandard
+## <a name="dockpanestandard"></a>  CDockablePane::DockPaneStandard
 
 Docks a pane by using outline (standard) docking.
 
@@ -673,7 +673,7 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 
 If the pane was docked to a tabbed window, or if a tabbed window was created as a result of docking, this method returns a pointer to the tabbed window. If the pane was otherwise successfully docked, this method returns the **this** pointer. If docking failed, this method returns NULL.
 
-##  <a name="docktorecentpos"></a>  CDockablePane::DockToRecentPos
+## <a name="docktorecentpos"></a>  CDockablePane::DockToRecentPos
 
 Docks a pane to its stored docking position.
 
@@ -689,7 +689,7 @@ TRUE if the pane is successfully docked; otherwise, FALSE.
 
 Dockable panes store recent docking information in a [CRecentDockSiteInfo](../../mfc/reference/crecentdocksiteinfo-class.md) object.
 
-##  <a name="docktowindow"></a>  CDockablePane::DockToWindow
+## <a name="docktowindow"></a>  CDockablePane::DockToWindow
 
 Docks one docking pane to another docking pane.
 
@@ -719,7 +719,7 @@ TRUE if the pane was docked successfully; otherwise, FALSE.
 
 Call this method to dock one pane to another pane with the alignment specified by *dwAlignment*.
 
-##  <a name="drawcaption"></a>  CDockablePane::DrawCaption
+## <a name="drawcaption"></a>  CDockablePane::DrawCaption
 
 Draws the caption (also called the gripper) of a docking pane.
 
@@ -743,7 +743,7 @@ The framework calls this method to draw the caption of a dockable pane.
 
 Override this method in a derived class to customize the appearance of the caption.
 
-##  <a name="enableautohideall"></a>  CDockablePane::EnableAutohideAll
+## <a name="enableautohideall"></a>  CDockablePane::EnableAutohideAll
 
 Enables or disables autohide mode for this pane and for other panes in the container.
 
@@ -762,7 +762,7 @@ When a user holds the **Ctrl** key and clicks the pin button to switch a pane to
 
 Call this method with *bEnable* set to FALSE to disable this feature for a particular pane.
 
-##  <a name="enablegripper"></a>  CDockablePane::EnableGripper
+## <a name="enablegripper"></a>  CDockablePane::EnableGripper
 
 Shows or hides the caption (also called the gripper).
 
@@ -781,7 +781,7 @@ When the framework creates dockable panes, they do not have the WS_STYLE window 
 
 You can show or hide the caption at any time. The framework hides the caption when a pane is added as a tab to a tabbed window or when a pane is floated in a miniframe window.
 
-##  <a name="getahrestoredrect"></a>  CDockablePane::GetAHRestoredRect
+## <a name="getahrestoredrect"></a>  CDockablePane::GetAHRestoredRect
 
 Specifies the position of the pane when in auto-hide mode.
 
@@ -795,7 +795,7 @@ A `CRect` object that contains the position of the pane when it is in auto-hide 
 
 ### Remarks
 
-##  <a name="getahslidemode"></a>  CDockablePane::GetAHSlideMode
+## <a name="getahslidemode"></a>  CDockablePane::GetAHSlideMode
 
 Retrieves the auto-hide slide mode for the pane.
 
@@ -809,7 +809,7 @@ A UINT that specifies the auto-hide slide mode for the pane. The return value ca
 
 ### Remarks
 
-##  <a name="getcaptionheight"></a>  CDockablePane::GetCaptionHeight
+## <a name="getcaptionheight"></a>  CDockablePane::GetCaptionHeight
 
 Returns the height, in pixels, of the current caption.
 
@@ -825,7 +825,7 @@ The height of the caption, in pixels.
 
 The caption height is 0 if the caption was hidden by the [CDockablePane::EnableGripper](#enablegripper) method, or if the pane does not have a caption.
 
-##  <a name="getdefaultpanedivider"></a>  CDockablePane::GetDefaultPaneDivider
+## <a name="getdefaultpanedivider"></a>  CDockablePane::GetDefaultPaneDivider
 
 Returns the default pane divider for the pane's container.
 
@@ -841,7 +841,7 @@ A valid [CPaneDivider](../../mfc/reference/cpanedivider-class.md) object if the 
 
 For more information about pane dividers, see [CPaneDivider Class](../../mfc/reference/cpanedivider-class.md).
 
-##  <a name="getdockingstatus"></a>  CDockablePane::GetDockingStatus
+## <a name="getdockingstatus"></a>  CDockablePane::GetDockingStatus
 
 Determines the ability of a pane to be docked based on the provided pointer location.
 
@@ -878,7 +878,7 @@ For floating toolbars or docking panes that use the DT_IMMEDIATE docking mode, t
 
 For delayed docking states (CS_DELAY_DOCK and CS_DELAY_DOCK_TO_TAB), the framework does not perform docking until the user releases the mouse button. If a pane uses the DT_STANDARD docking mode, the framework displays a rectangle at the projected docking location. If a pane uses the DT_SMART docking mode, the framework displays smart docking markers and semi-transparent rectangles at the projected docking location. To specify the docking mode for your pane, call the [CBasePane::SetDockingMode](../../mfc/reference/cbasepane-class.md#setdockingmode) method. For more information about smart docking, see [CDockingManager::GetSmartDockingParams](../../mfc/reference/cdockingmanager-class.md#getsmartdockingparams).
 
-##  <a name="getdragsensitivity"></a>  CDockablePane::GetDragSensitivity
+## <a name="getdragsensitivity"></a>  CDockablePane::GetDragSensitivity
 
 Returns the drag sensitivity of a docking pane.
 
@@ -890,7 +890,7 @@ static const CSize& GetDragSensitivity();
 
 A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that contains the width and height, in pixels, of a rectangle centered on a drag point. The drag operation does not begin until the mouse pointer moves outside this rectangle.
 
-##  <a name="getlastpercentinpanecontainer"></a>  CDockablePane::GetLastPercentInPaneContainer
+## <a name="getlastpercentinpanecontainer"></a>  CDockablePane::GetLastPercentInPaneContainer
 
 Retrieves the percentage of space that a pane occupies in its container ( [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md)).
 
@@ -906,7 +906,7 @@ An *int* that specifies the percentage of space that the pane occupies in its co
 
 This method is used when the container adjusts its layout.
 
-##  <a name="gettabarea"></a>  CDockablePane::GetTabArea
+## <a name="gettabarea"></a>  CDockablePane::GetTabArea
 
 Retrieves the tab area for the pane.
 
@@ -928,7 +928,7 @@ virtual void GetTabArea(
 
 This method is used only in classes that are derived from `CDockablePane` and have tabs. For more information, see [CTabbedPane::GetTabArea](../../mfc/reference/ctabbedpane-class.md#gettabarea) and [CMFCOutlookBar::GetTabArea](../../mfc/reference/cmfcoutlookbar-class.md#gettabarea).
 
-##  <a name="gettabbedpanertc"></a>  CDockablePane::GetTabbedPaneRTC
+## <a name="gettabbedpanertc"></a>  CDockablePane::GetTabbedPaneRTC
 
 Returns the runtime class information about a tabbed window that is created when another pane docks to the current pane.
 
@@ -946,7 +946,7 @@ Call this method to retrieve the runtime class information for tabbed panes that
 
 You can set the runtime class information by calling the [CDockablePane::SetTabbedPaneRTC](#settabbedpanertc) method.
 
-##  <a name="hasautohidemode"></a>  CDockablePane::HasAutoHideMode
+## <a name="hasautohidemode"></a>  CDockablePane::HasAutoHideMode
 
 Specifies whether a docking pane can be switched to autohide mode.
 
@@ -962,7 +962,7 @@ TRUE if the dockable pane can be switched to autohide mode; otherwise, FALSE.
 
 Override this method in a derived class to disable autohide mode for a specific dockable pane.
 
-##  <a name="hittest"></a>  CDockablePane::HitTest
+## <a name="hittest"></a>  CDockablePane::HitTest
 
 Specifies the location in a pane where the user clicks a mouse.
 
@@ -994,7 +994,7 @@ One of the following values:
 
 - HTMAXBUTTON if *point* is on the pin button.
 
-##  <a name="isautohideallenabled"></a>  CDockablePane::IsAutohideAllEnabled
+## <a name="isautohideallenabled"></a>  CDockablePane::IsAutohideAllEnabled
 
 Indicates whether the docking pane and all other panes in the container can be switched to autohide mode.
 
@@ -1012,7 +1012,7 @@ A user enables autohide mode by clicking the docking pin button while holding th
 
 To enable or disable this behavior, call the [CDockablePane::EnableAutohideAll](#enableautohideall) method.
 
-##  <a name="isautohidemode"></a>  CDockablePane::IsAutoHideMode
+## <a name="isautohidemode"></a>  CDockablePane::IsAutoHideMode
 
 Determines whether a pane is in autohide mode.
 
@@ -1024,7 +1024,7 @@ virtual BOOL IsAutoHideMode() const;
 
 TRUE if the dockable pane is in autohide mode; otherwise, FALSE.
 
-##  <a name="isdocked"></a>  CDockablePane::IsDocked
+## <a name="isdocked"></a>  CDockablePane::IsDocked
 
 Determines whether the current pane is docked.
 
@@ -1040,7 +1040,7 @@ TRUE if the dockable pane does not belong to a miniframe window or if it is floa
 
 To determine whether the pane is docked to the main frame window, call [CDockablePane::GetDefaultPaneDivider](#getdefaultpanedivider). If the method returns a non-NULL pointer, the pane is docked at the main frame window.
 
-##  <a name="ishideinautohidemode"></a>  CDockablePane::IsHideInAutoHideMode
+## <a name="ishideinautohidemode"></a>  CDockablePane::IsHideInAutoHideMode
 
 Determines the behavior of a pane that is in autohide mode if it is shown (or hidden) by calling [CDockablePane::ShowPane](#showpane).
 
@@ -1060,7 +1060,7 @@ Override this method in a derived class to change the default behavior for indiv
 
 The default value for `m_bHideInAutoHideMode` is FALSE.
 
-##  <a name="isinfloatingmultipaneframewnd"></a>  CDockablePane::IsInFloatingMultiPaneFrameWnd
+## <a name="isinfloatingmultipaneframewnd"></a>  CDockablePane::IsInFloatingMultiPaneFrameWnd
 
 Specifies whether the pane is in a multi-pane frame window ( [CMultiPaneFrameWnd Class](../../mfc/reference/cmultipaneframewnd-class.md)).
 
@@ -1074,7 +1074,7 @@ TRUE if the pane is in a multi-pane frame window; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="isresizable"></a>  CDockablePane::IsResizable
+## <a name="isresizable"></a>  CDockablePane::IsResizable
 
 Specifies whether the pane is resizable.
 
@@ -1092,7 +1092,7 @@ By default, dockable panes are resizable. To prevent resizing, override this met
 
 Panes that cannot be resized can neither float nor enter auto-hide mode and are always located at the outer edge of the parent frame.
 
-##  <a name="istablocationbottom"></a>  CDockablePane::IsTabLocationBottom
+## <a name="istablocationbottom"></a>  CDockablePane::IsTabLocationBottom
 
 Specifies whether tabs are located at the top or bottom of the pane.
 
@@ -1108,7 +1108,7 @@ TRUE if tabs are located at the bottom of the pane; FALSE if tabs are located at
 
 For more information, see [CTabbedPane::IsTabLocationBottom](../../mfc/reference/ctabbedpane-class.md#istablocationbottom).
 
-##  <a name="istracked"></a>  CDockablePane::IsTracked
+## <a name="istracked"></a>  CDockablePane::IsTracked
 
 Specifies whether a pane is being moved by the user.
 
@@ -1120,7 +1120,7 @@ BOOL IsTracked() const;
 
 TRUE if the pane is being moved; otherwise, FALSE.
 
-##  <a name="isvisible"></a>  CDockablePane::IsVisible
+## <a name="isvisible"></a>  CDockablePane::IsVisible
 
 Determines whether the current pane is visible.
 
@@ -1154,7 +1154,7 @@ virtual BOOL LoadState(
 );
 ```
 
-##  <a name="m_bdisableanimation"></a>  CDockablePane::m_bDisableAnimation
+## <a name="m_bdisableanimation"></a>  CDockablePane::m_bDisableAnimation
 
 Specifies whether autohide animation of the dockable pane is disabled.
 
@@ -1162,7 +1162,7 @@ Specifies whether autohide animation of the dockable pane is disabled.
 AFX_IMPORT_DATA static BOOL m_bDisableAnimation;
 ```
 
-##  <a name="m_bhideinautohidemode"></a>  CDockablePane::m_bHideInAutoHideMode
+## <a name="m_bhideinautohidemode"></a>  CDockablePane::m_bHideInAutoHideMode
 
 Determines the behavior of the pane when the pane is in autohide mode.
 
@@ -1178,7 +1178,7 @@ If you set this member to TRUE, dockable panes are hidden or shown with their re
 
 If you set this member to FALSE, dockable panes are activated or deactivated when you call [CDockablePane::ShowPane](#showpane).
 
-##  <a name="m_nslidesteps"></a>  CDockablePane::m_nSlideSteps
+## <a name="m_nslidesteps"></a>  CDockablePane::m_nSlideSteps
 
 Specifies the animation speed of the pane when it is in autohide mode.
 
@@ -1190,7 +1190,7 @@ AFX_IMPORT_DATA static int m_nSlideSteps;
 
 For a faster animation effect, decrease this value. For a slower animation effect, increase this value.
 
-##  <a name="onafterchangeparent"></a>  CDockablePane::OnAfterChangeParent
+## <a name="onafterchangeparent"></a>  CDockablePane::OnAfterChangeParent
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -1204,7 +1204,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### Remarks
 
-##  <a name="onafterdockfromminiframe"></a>  CDockablePane::OnAfterDockFromMiniFrame
+## <a name="onafterdockfromminiframe"></a>  CDockablePane::OnAfterDockFromMiniFrame
 
 Called by the framework when a floating docking bar docks at a frame window.
 
@@ -1216,7 +1216,7 @@ virtual void OnAfterDockFromMiniFrame();
 
 By default, this method does nothing.
 
-##  <a name="onbeforechangeparent"></a>  CDockablePane::OnBeforeChangeParent
+## <a name="onbeforechangeparent"></a>  CDockablePane::OnBeforeChangeParent
 
 The framework calls this method before it changes the parent of the pane.
 
@@ -1240,7 +1240,7 @@ If the pane is docked and the new parent does not allow docking, this method und
 
 If the pane is being converted to a tabbed document, this method stores its recent docking position. The framework uses the recent docking position to restore the position of the pane when it is converted back to a docked state.
 
-##  <a name="onbeforefloat"></a>  CDockablePane::OnBeforeFloat
+## <a name="onbeforefloat"></a>  CDockablePane::OnBeforeFloat
 
 The framework calls this method before a pane transitions to a floating state.
 
@@ -1266,7 +1266,7 @@ TRUE if the pane can be floated; otherwise, FALSE.
 
 This method is called by the framework when a pane is about to float. You can override this method in a derived class if you want to perform any processing before the pane floats.
 
-##  <a name="onpressbuttons"></a>  CDockablePane::OnPressButtons
+## <a name="onpressbuttons"></a>  CDockablePane::OnPressButtons
 
 Called when the user presses a caption button other than the AFX_HTCLOSE and AFX_HTMAXBUTTON buttons.
 
@@ -1283,7 +1283,7 @@ virtual void OnPressButtons(UINT nHit);
 
 If you add a custom button to the caption of a dockable pane, override this method to receive notifications when a user presses the button.
 
-##  <a name="onslide"></a>  CDockablePane::OnSlide
+## <a name="onslide"></a>  CDockablePane::OnSlide
 
 Called by the framework to animate the pane when it is in autohide mode.
 
@@ -1300,7 +1300,7 @@ virtual void OnSlide(BOOL bSlideOut);
 
 Override this method in a derived class to implement custom autohide effects.
 
-##  <a name="removefromdefaultpanedividier"></a>  CDockablePane::RemoveFromDefaultPaneDividier
+## <a name="removefromdefaultpanedividier"></a>  CDockablePane::RemoveFromDefaultPaneDividier
 
 The framework calls this method when a pane is being undocked.
 
@@ -1312,7 +1312,7 @@ void RemoveFromDefaultPaneDividier();
 
 This method sets the default pane divider to NULL and removes the pane from its container.
 
-##  <a name="replacepane"></a>  CDockablePane::ReplacePane
+## <a name="replacepane"></a>  CDockablePane::ReplacePane
 
 Replaces the pane with a specified pane.
 
@@ -1338,7 +1338,7 @@ BOOL ReplacePane(
 
 TRUE if the replacement is successful; otherwise, FALSE.
 
-##  <a name="restoredefaultpanedivider"></a>  CDockablePane::RestoreDefaultPaneDivider
+## <a name="restoredefaultpanedivider"></a>  CDockablePane::RestoreDefaultPaneDivider
 
 When a pane is deserialized, the framework calls this method to restore the default pane divider.
 
@@ -1350,7 +1350,7 @@ void RestoreDefaultPaneDivider();
 
 The restored default pane divider replaces the current default pane divider, if it exists.
 
-##  <a name="setautohidemode"></a>  CDockablePane::SetAutoHideMode
+## <a name="setautohidemode"></a>  CDockablePane::SetAutoHideMode
 
 Toggles the docking pane between visible and autohide mode.
 
@@ -1386,7 +1386,7 @@ The framework calls this method when a user clicks the pin button to switch the 
 
 Call this method to switch a dockable pane to autohide mode programmatically. The pane must be docked to the main frame window ( [CDockablePane::GetDefaultPaneDivider](#getdefaultpanedivider) must return a valid pointer to the [CPaneDivider](../../mfc/reference/cpanedivider-class.md)).
 
-##  <a name="setautohideparents"></a>  CDockablePane::SetAutoHideParents
+## <a name="setautohideparents"></a>  CDockablePane::SetAutoHideParents
 
 Sets the auto-hide button and auto-hide toolbar for the pane.
 
@@ -1404,7 +1404,7 @@ void SetAutoHideParents(
 *pBtn*<br/>
 [in] Pointer to an auto-hide button.
 
-##  <a name="setlastpercentinpanecontainer"></a>  CDockablePane::SetLastPercentInPaneContainer
+## <a name="setlastpercentinpanecontainer"></a>  CDockablePane::SetLastPercentInPaneContainer
 
 Sets the percentage of space that a pane occupies in its container.
 
@@ -1421,7 +1421,7 @@ void SetLastPercentInPaneContainer(int n);
 
 The framework adjusts the pane to use the new value when the layout is recalculated.
 
-##  <a name="setrestoreddefaultpanedivider"></a>  CDockablePane::SetRestoredDefaultPaneDivider
+## <a name="setrestoreddefaultpanedivider"></a>  CDockablePane::SetRestoredDefaultPaneDivider
 
 Sets the restored default pane divider.
 
@@ -1438,7 +1438,7 @@ void SetRestoredDefaultPaneDivider(HWND hRestoredSlider);
 
 A restored default pane divider is obtained when a pane is deserialized. For more information, see [CDockablePane::RestoreDefaultPaneDivider](#restoredefaultpanedivider).
 
-##  <a name="settabbedpanertc"></a>  CDockablePane::SetTabbedPaneRTC
+## <a name="settabbedpanertc"></a>  CDockablePane::SetTabbedPaneRTC
 
 Sets the runtime class information for a tabbed window that is created when two panes dock together.
 
@@ -1465,7 +1465,7 @@ The default runtime class is set according to the *dwTabbedStyle* parameter of [
 
 Then, call this method with the pointer to its runtime class information.
 
-##  <a name="showpane"></a>  CDockablePane::ShowPane
+## <a name="showpane"></a>  CDockablePane::ShowPane
 
 Shows or hides a pane.
 
@@ -1491,7 +1491,7 @@ virtual void ShowPane(
 
 Call this method instead of the [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) when showing or hiding dockable panes.
 
-##  <a name="slide"></a>  CDockablePane::Slide
+## <a name="slide"></a>  CDockablePane::Slide
 
 Animates a pane that is in autohide mode.
 
@@ -1515,7 +1515,7 @@ The framework calls this method to animate a pane that is in autohide mode.
 
 This method uses the `CDockablePane::m_nSlideDefaultTimeOut` value to determine the time out for the slide effect. The default value for the time out is 1. If you customize the autohide algorithm, modify this member to change the time out.
 
-##  <a name="toggleautohide"></a>  CDockablePane::ToggleAutoHide
+## <a name="toggleautohide"></a>  CDockablePane::ToggleAutoHide
 
 Toggles the pane between always visible and auto-hide mode.
 
@@ -1527,7 +1527,7 @@ virtual void ToggleAutoHide();
 
 This method toggles auto-hide mode for the pane by calling [CDockablePane::SetAutoHideMode](#setautohidemode).
 
-##  <a name="undockpane"></a>  CDockablePane::UndockPane
+## <a name="undockpane"></a>  CDockablePane::UndockPane
 
 Undocks a pane from either the main frame window or a miniframe window container.
 

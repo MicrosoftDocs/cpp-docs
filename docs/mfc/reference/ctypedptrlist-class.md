@@ -75,7 +75,7 @@ This example creates an instance of `CTypedPtrList`, adds one object, serializes
 
 **Header:** afxtempl.h
 
-##  <a name="addhead"></a>  CTypedPtrList::AddHead
+## <a name="addhead"></a>  CTypedPtrList::AddHead
 
 This member function calls `BASE_CLASS`**::AddHead**.
 
@@ -106,7 +106,7 @@ The first version returns the POSITION value of the newly inserted element.
 
 The first version adds a new element before the head of the list. The second version adds another list of elements before the head.
 
-##  <a name="addtail"></a>  CTypedPtrList::AddTail
+## <a name="addtail"></a>  CTypedPtrList::AddTail
 
 This member function calls `BASE_CLASS`**::AddTail**.
 
@@ -137,7 +137,7 @@ The first version returns the POSITION value of the newly inserted element.
 
 The first version adds a new element after the tail of the list. The second version adds another list of elements after the tail of the list.
 
-##  <a name="getat"></a>  CTypedPtrList::GetAt
+## <a name="getat"></a>  CTypedPtrList::GetAt
 
 A variable of type POSITION is a key for the list.
 
@@ -168,7 +168,7 @@ You must ensure that your POSITION value represents a valid position in the list
 
 This inline function calls `BASE_CLASS`**::GetAt**.
 
-##  <a name="gethead"></a>  CTypedPtrList::GetHead
+## <a name="gethead"></a>  CTypedPtrList::GetHead
 
 Gets the pointer that represents the head element of this list.
 
@@ -192,7 +192,7 @@ If the list is accessed directly or through a pointer to a `CTypedPtrList`, then
 
 You must ensure that the list is not empty before calling `GetHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.
 
-##  <a name="getnext"></a>  CTypedPtrList::GetNext
+## <a name="getnext"></a>  CTypedPtrList::GetNext
 
 Gets the list element identified by *rPosition*, then sets *rPosition* to the POSITION value of the next entry in the list.
 
@@ -225,7 +225,7 @@ If the retrieved element is the last in the list, then the new value of *rPositi
 
 It is possible to remove an element during an iteration. See the example for [CObList::RemoveAt](../../mfc/reference/coblist-class.md#removeat).
 
-##  <a name="getprev"></a>  CTypedPtrList::GetPrev
+## <a name="getprev"></a>  CTypedPtrList::GetPrev
 
 Gets the list element identified by *rPosition*, then sets *rPosition* to the POSITION value of the previous entry in the list.
 
@@ -256,7 +256,7 @@ You must ensure that your POSITION value represents a valid position in the list
 
 If the retrieved element is the first in the list, then the new value of *rPosition* is set to NULL.
 
-##  <a name="gettail"></a>  CTypedPtrList::GetTail
+## <a name="gettail"></a>  CTypedPtrList::GetTail
 
 Gets the pointer that represents the head element of this list.
 
@@ -280,7 +280,7 @@ If the list is accessed directly or through a pointer to a `CTypedPtrList`, then
 
 You must ensure that the list is not empty before calling `GetTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.
 
-##  <a name="removehead"></a>  CTypedPtrList::RemoveHead
+## <a name="removehead"></a>  CTypedPtrList::RemoveHead
 
 Removes the element from the head of the list and returns it.
 
@@ -301,7 +301,7 @@ The pointer previously at the head of the list. This pointer is of the type spec
 
 You must ensure that the list is not empty before calling `RemoveHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.
 
-##  <a name="removetail"></a>  CTypedPtrList::RemoveTail
+## <a name="removetail"></a>  CTypedPtrList::RemoveTail
 
 Removes the element from the tail of the list and returns it.
 
@@ -322,7 +322,7 @@ The pointer previously at the tail of the list. This pointer is of the type spec
 
 You must ensure that the list is not empty before calling `RemoveTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.
 
-##  <a name="setat"></a>  CTypedPtrList::SetAt
+## <a name="setat"></a>  CTypedPtrList::SetAt
 
 This member function calls `BASE_CLASS`**::SetAt**.
 

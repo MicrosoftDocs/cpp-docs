@@ -18,7 +18,7 @@ This topic explains:
 
 - [How to implement bulk record field exchange](#_core_how_to_implement_bulk_record_field_exchange).
 
-##  <a name="_core_how_crecordset_supports_bulk_row_fetching"></a> How CRecordset Supports Bulk Row Fetching
+## <a name="_core_how_crecordset_supports_bulk_row_fetching"></a> How CRecordset Supports Bulk Row Fetching
 
 Before opening your recordset object, you can define a rowset size with the `SetRowsetSize` member function. The rowset size specifies how many records should be retrieved during a single fetch. When bulk row fetching is implemented, the default rowset size is 25. If bulk row fetching is not implemented, the rowset size remains fixed at 1.
 
@@ -37,7 +37,7 @@ The following table lists the member functions provided by `CRecordset` to suppo
 |[SetRowsetCursorPosition](../../mfc/reference/crecordset-class.md#setrowsetcursorposition)|Moves the cursor to a particular row within a rowset.|
 |[SetRowsetSize](../../mfc/reference/crecordset-class.md#setrowsetsize)|Virtual function that changes the setting for the rowset size to the specified value.|
 
-##  <a name="_core_special_considerations"></a> Special Considerations
+## <a name="_core_special_considerations"></a> Special Considerations
 
 Although bulk row fetching is a performance gain, certain features operate differently. Before you decide to implement bulk row fetching, consider the following:
 
@@ -49,7 +49,7 @@ Although bulk row fetching is a performance gain, certain features operate diffe
 
 - Unlike record field exchange, the wizards do not support bulk record field exchange. This means that you must manually declare your field data members and manually override `DoBulkFieldExchange` by writing calls to the Bulk RFX functions. For more information, see [Record Field Exchange Functions](../../mfc/reference/record-field-exchange-functions.md) in the *Class Library Reference*.
 
-##  <a name="_core_how_to_implement_bulk_record_field_exchange"></a> How to Implement Bulk Record Field Exchange
+## <a name="_core_how_to_implement_bulk_record_field_exchange"></a> How to Implement Bulk Record Field Exchange
 
 Bulk record field exchange transfers a rowset of data from the data source to the recordset object. The Bulk RFX functions use arrays to store this data, as well as arrays to store the length of each data item in the rowset. In your class definition, you must define your field data members as pointers to access the arrays of data. In addition, you must define a set of pointers to access the arrays of lengths. Any parameter data members should not be declared as pointers; declaring parameter data members when using bulk record field exchange is the same as declaring them when using record field exchange. The following code shows a simple example:
 

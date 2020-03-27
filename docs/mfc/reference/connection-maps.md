@@ -33,7 +33,7 @@ The following functions assist a sink in establishing and disconnecting a connec
 |[AfxConnectionAdvise](#afxconnectionadvise)|Establishes a connection between a source and a sink.|
 |[AfxConnectionUnadvise](#afxconnectionunadvise)|Breaks a connection between a source and a sink.|
 
-##  <a name="begin_connection_part"></a>  BEGIN_CONNECTION_PART
+## <a name="begin_connection_part"></a>  BEGIN_CONNECTION_PART
 
 Use the BEGIN_CONNECTION_PART macro to begin the definition of additional connection points beyond the event and property notification connection points.
 
@@ -57,7 +57,7 @@ In the declaration (.h) file that defines the member functions for your class, s
 
   **Header** afxdisp.h
 
-##  <a name="end_connection_part"></a>  END_CONNECTION_PART
+## <a name="end_connection_part"></a>  END_CONNECTION_PART
 
 Ends the declaration of your connection point.
 
@@ -74,7 +74,7 @@ Specifies the name of the local class that implements the connection point.
 
   **Header** afxdisp.h
 
-##  <a name="connection_iid"></a>  CONNECTION_IID
+## <a name="connection_iid"></a>  CONNECTION_IID
 
 Use between the BEGIN_CONNECTION_PART and END_CONNECTION_PART macros to define an interface ID for a connection point supported by your OLE control.
 
@@ -99,7 +99,7 @@ specifies a connection point that calls the `ISinkInterface` interface.
 
   **Header** afxdisp.h
 
-##  <a name="declare_connection_map"></a>  DECLARE_CONNECTION_MAP
+## <a name="declare_connection_map"></a>  DECLARE_CONNECTION_MAP
 
 Each `COleControl`-derived class in your program can provide a connection map to specify additional connection points that your control supports.
 
@@ -115,7 +115,7 @@ If your control supports additional points, use the DECLARE_CONNECTION_MAP macro
 
   **Header** afxdisp.h
 
-##  <a name="begin_connection_map"></a>  BEGIN_CONNECTION_MAP
+## <a name="begin_connection_map"></a>  BEGIN_CONNECTION_MAP
 
 Each `COleControl`-derived class in your program can provide a connection map to specify connection points that your control will support.
 
@@ -139,7 +139,7 @@ In the implementation (.CPP) file that defines the member functions for your cla
 
   **Header** afxdisp.h
 
-##  <a name="end_connection_map"></a>  END_CONNECTION_MAP
+## <a name="end_connection_map"></a>  END_CONNECTION_MAP
 
 Ends the definition of your connection map.
 
@@ -151,7 +151,7 @@ END_CONNECTION_MAP()
 
   **Header** afxdisp.h
 
-##  <a name="connection_part"></a>  CONNECTION_PART
+## <a name="connection_part"></a>  CONNECTION_PART
 
 Maps a connection point for your OLE control to a specific interface ID.
 
@@ -182,7 +182,7 @@ implements a connection map, with a connection point, that calls the `IID_ISinkI
 
   **Header** afxdisp.h
 
-##  <a name="afxconnectionadvise"></a>  AfxConnectionAdvise
+## <a name="afxconnectionadvise"></a>  AfxConnectionAdvise
 
 Call this function to establish a connection between a source, specified by *pUnkSrc*, and a sink, specified by *pUnkSink*.
 
@@ -224,7 +224,7 @@ Nonzero if a connection was established; otherwise 0.
 
 **Header:** afxctl.h
 
-##  <a name="afxconnectionunadvise"></a>  AfxConnectionUnadvise
+## <a name="afxconnectionunadvise"></a>  AfxConnectionUnadvise
 
 Call this function to disconnect a connection between a source, specified by *pUnkSrc*, and a sink, specified by *pUnkSink*.
 

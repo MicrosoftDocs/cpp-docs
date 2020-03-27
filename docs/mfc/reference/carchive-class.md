@@ -88,7 +88,7 @@ For more information on `CArchive`, see the articles [Serialization](../../mfc/s
 
 **Header:** afx.h
 
-##  <a name="abort"></a>  CArchive::Abort
+## <a name="abort"></a>  CArchive::Abort
 
 Call this function to close the archive without throwing an exception.
 
@@ -108,7 +108,7 @@ If you used **new** to allocate the `CArchive` object on the heap, then you must
 
   See the example for [CArchive::WriteClass](#writeclass).
 
-##  <a name="carchive"></a>  CArchive::CArchive
+## <a name="carchive"></a>  CArchive::CArchive
 
 Constructs a `CArchive` object and specifies whether it will be used for loading or storing objects.
 
@@ -150,7 +150,7 @@ You may not use `CFile` operations to alter the state of the file until you have
 
 [!code-cpp[NVC_MFCSerialization#12](../../mfc/codesnippet/cpp/carchive-class_1.cpp)]
 
-##  <a name="close"></a>  CArchive::Close
+## <a name="close"></a>  CArchive::Close
 
 Flushes any data remaining in the buffer, closes the archive, and disconnects the archive from the file.
 
@@ -168,7 +168,7 @@ The member function `Close` ensures that all data is transferred from the archiv
 
   See the example for [CArchive::WriteString](#writestring).
 
-##  <a name="flush"></a>  CArchive::Flush
+## <a name="flush"></a>  CArchive::Flush
 
 Forces any data remaining in the archive buffer to be written to the file.
 
@@ -184,7 +184,7 @@ The member function `Flush` ensures that all data is transferred from the archiv
 
 [!code-cpp[NVC_MFCSerialization#13](../../mfc/codesnippet/cpp/carchive-class_2.cpp)]
 
-##  <a name="getfile"></a>  CArchive::GetFile
+## <a name="getfile"></a>  CArchive::GetFile
 
 Gets the `CFile` object pointer for this archive.
 
@@ -204,7 +204,7 @@ You must flush the archive before using `GetFile`.
 
 [!code-cpp[NVC_MFCSerialization#14](../../mfc/codesnippet/cpp/carchive-class_3.cpp)]
 
-##  <a name="getobjectschema"></a>  CArchive::GetObjectSchema
+## <a name="getobjectschema"></a>  CArchive::GetObjectSchema
 
 Call this function from the `Serialize` function to determine the version of the object that is currently being deserialized.
 
@@ -226,7 +226,7 @@ A `CObject`-derived class may use VERSIONABLE_SCHEMA combined (using bitwise **O
 
 [!code-cpp[NVC_MFCSerialization#15](../../mfc/codesnippet/cpp/carchive-class_4.cpp)]
 
-##  <a name="isbufferempty"></a>  CArchive::IsBufferEmpty
+## <a name="isbufferempty"></a>  CArchive::IsBufferEmpty
 
 Call this member function to determine whether the archive object's internal buffer is empty.
 
@@ -246,7 +246,7 @@ The reason for using `IsBufferEmpty` with an archive associated with a `CSocketF
 
 For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-##  <a name="isloading"></a>  CArchive::IsLoading
+## <a name="isloading"></a>  CArchive::IsLoading
 
 Determines whether the archive is loading data.
 
@@ -266,7 +266,7 @@ This member function is called by the `Serialize` functions of the archived clas
 
 [!code-cpp[NVC_MFCSerialization#16](../../mfc/codesnippet/cpp/carchive-class_5.cpp)]
 
-##  <a name="isstoring"></a>  CArchive::IsStoring
+## <a name="isstoring"></a>  CArchive::IsStoring
 
 Determines whether the archive is storing data.
 
@@ -288,7 +288,7 @@ If the `IsStoring` status of an archive is nonzero, then its `IsLoading` status 
 
 [!code-cpp[NVC_MFCSerialization#17](../../mfc/codesnippet/cpp/carchive-class_6.cpp)]
 
-##  <a name="mapobject"></a>  CArchive::MapObject
+## <a name="mapobject"></a>  CArchive::MapObject
 
 Call this member function to place objects in the map that are not really serialized to the file, but that are available for subobjects to reference.
 
@@ -317,7 +317,7 @@ You can call `MapObject` when you store to and load from the `CArchive` object. 
 
 [!code-cpp[NVC_MFCSerialization#21](../../mfc/codesnippet/cpp/carchive-class_10.cpp)]
 
-##  <a name="m_pdocument"></a>  CArchive::m_pDocument
+## <a name="m_pdocument"></a>  CArchive::m_pDocument
 
 Set to NULL by default, this pointer to a `CDocument` can be set to anything the user of the `CArchive` instance wants.
 
@@ -335,7 +335,7 @@ The framework sets *m_pDocument* to the document being serialized when a user is
 
 [!code-cpp[NVC_MFCSerialization#35](../../mfc/codesnippet/cpp/carchive-class_11.cpp)]
 
-##  <a name="operator_lt_lt"></a>  CArchive::operator &lt;&lt;
+## <a name="operator_lt_lt"></a>  CArchive::operator &lt;&lt;
 
 Stores the indicated object or primitive type to the archive.
 
@@ -405,7 +405,7 @@ This example 2 demonstrates the use of the `CArchive` insertion operator << with
 
 [!code-cpp[NVC_MFCSerialization#32](../../mfc/codesnippet/cpp/carchive-class_13.cpp)]
 
-##  <a name="operator_gt_gt"></a>  CArchive::operator &gt;&gt;
+## <a name="operator_gt_gt"></a>  CArchive::operator &gt;&gt;
 
 Loads the indicated object or primitive type from the archive.
 
@@ -485,7 +485,7 @@ This example demonstrates the use of the `CArchive` insertion and extraction ope
 
 [!code-cpp[NVC_MFCSerialization#34](../../mfc/codesnippet/cpp/carchive-class_15.cpp)]
 
-##  <a name="read"></a>  CArchive::Read
+## <a name="read"></a>  CArchive::Read
 
 Reads a specified number of bytes from the archive.
 
@@ -515,7 +515,7 @@ You can use the `Read` member function within your `Serialize` function for read
 
 [!code-cpp[NVC_MFCSerialization#24](../../mfc/codesnippet/cpp/carchive-class_16.cpp)]
 
-##  <a name="readclass"></a>  CArchive::ReadClass
+## <a name="readclass"></a>  CArchive::ReadClass
 
 Call this member function to read a reference to a class previously stored with [WriteClass](#writeclass).
 
@@ -555,7 +555,7 @@ You can use [SerializeClass](#serializeclass) instead of `ReadClass`, which hand
 
   See the example for [CArchive::WriteClass](#writeclass).
 
-##  <a name="readobject"></a>  CArchive::ReadObject
+## <a name="readobject"></a>  CArchive::ReadObject
 
 Reads object data from the archive and constructs an object of the appropriate type.
 
@@ -582,7 +582,7 @@ If you supply a nonzero *pClass* parameter, which is obtained by the [RUNTIME_CL
 
   See the example for [CArchive::WriteObject](#writeobject).
 
-##  <a name="readstring"></a>  CArchive::ReadString
+## <a name="readstring"></a>  CArchive::ReadString
 
 Call this member function to read text data into a buffer from the file associated with the `CArchive` object.
 
@@ -618,7 +618,7 @@ In the version of the member function with the *nMax* parameter, the buffer will
 
   See the example for [CArchive::WriteString](#writestring).
 
-##  <a name="serializeclass"></a>  CArchive::SerializeClass
+## <a name="serializeclass"></a>  CArchive::SerializeClass
 
 Call this member function when you want to store and load the version information of a base class.
 
@@ -645,7 +645,7 @@ Use the [RUNTIME_CLASS](../../mfc/reference/run-time-object-model-services.md#ru
 
 [!code-cpp[NVC_MFCSerialization#25](../../mfc/codesnippet/cpp/carchive-class_17.h)]
 
-##  <a name="setloadparams"></a>  CArchive::SetLoadParams
+## <a name="setloadparams"></a>  CArchive::SetLoadParams
 
 Call `SetLoadParams` when you are going to read a large number of `CObject`-derived objects from an archive.
 
@@ -668,7 +668,7 @@ You must not call `SetLoadParams` after any object is loaded, or after [MapObjec
 
 [!code-cpp[NVC_MFCSerialization#26](../../mfc/codesnippet/cpp/carchive-class_18.h)]
 
-##  <a name="setobjectschema"></a>  CArchive::SetObjectSchema
+## <a name="setobjectschema"></a>  CArchive::SetObjectSchema
 
 Call this member function to set the object schema stored in the archive object to *nSchema*.
 
@@ -691,7 +691,7 @@ Use `SetObjectSchema` for advanced versioning; for example, when you want to for
 
 [!code-cpp[NVC_MFCSerialization#27](../../mfc/codesnippet/cpp/carchive-class_19.cpp)]
 
-##  <a name="setstoreparams"></a>  CArchive::SetStoreParams
+## <a name="setstoreparams"></a>  CArchive::SetStoreParams
 
 Use `SetStoreParams` when storing a large number of `CObject`-derived objects in an archive.
 
@@ -717,7 +717,7 @@ You must not call `SetStoreParams` after any objects are stored, or after [MapOb
 
 [!code-cpp[NVC_MFCSerialization#26](../../mfc/codesnippet/cpp/carchive-class_18.h)]
 
-##  <a name="write"></a>  CArchive::Write
+## <a name="write"></a>  CArchive::Write
 
 Writes a specified number of bytes to the archive.
 
@@ -743,7 +743,7 @@ You can use the `Write` member function within your `Serialize` function to writ
 
 [!code-cpp[NVC_MFCSerialization#23](../../mfc/codesnippet/cpp/carchive-class_20.cpp)]
 
-##  <a name="writeclass"></a>  CArchive::WriteClass
+## <a name="writeclass"></a>  CArchive::WriteClass
 
 Use `WriteClass` to store the version and class information of a base class during serialization of the derived class.
 
@@ -770,7 +770,7 @@ You can use [SerializeClass](#serializeclass) instead of `WriteClass`, which han
 
 [!code-cpp[NVC_MFCSerialization#28](../../mfc/codesnippet/cpp/carchive-class_21.cpp)]
 
-##  <a name="writeobject"></a>  CArchive::WriteObject
+## <a name="writeobject"></a>  CArchive::WriteObject
 
 Stores the specified `CObject` to the archive.
 
@@ -800,7 +800,7 @@ For a definition of the class `CAge`, see the example for [CObList::CObList](../
 
 [!code-cpp[NVC_MFCSerialization#29](../../mfc/codesnippet/cpp/carchive-class_22.cpp)]
 
-##  <a name="writestring"></a>  CArchive::WriteString
+## <a name="writestring"></a>  CArchive::WriteString
 
 Use this member function to write data from a buffer to the file associated with the `CArchive` object.
 

@@ -8,11 +8,11 @@ ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
 
 These macros provide string conversion features.
 
-##  <a name="atl_and_mfc_string_conversion_macros"></a>  ATL and MFC String Conversion Macros
+## <a name="atl_and_mfc_string_conversion_macros"></a>  ATL and MFC String Conversion Macros
 
 The string conversion macros discussed here are valid for both ATL and MFC. For more information on MFC string conversion, see [TN059: Using MFC MBCS/Unicode Conversion Macros](../../mfc/tn059-using-mfc-mbcs-unicode-conversion-macros.md) and [MFC Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md).
 
-##  <a name="devmode_and_textmetric_string_conversion_macros"></a>  DEVMODE and TEXTMETRIC String Conversion Macros
+## <a name="devmode_and_textmetric_string_conversion_macros"></a>  DEVMODE and TEXTMETRIC String Conversion Macros
 
 These macros create a copy of a [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) or [TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetricw) structure and convert the strings within the new structure to a new string type. The macros allocate memory on the stack for the new structure and return a pointer to the new structure.
 

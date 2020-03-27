@@ -31,7 +31,7 @@ One capability of OLE controls is property persistence (or serialization), which
 
 In addition, the `AfxOleTypeMatchGuid` global function is provided to test for a match between a TYPEDESC and a given GUID.
 
-##  <a name="px_blob"></a>  PX_Blob
+## <a name="px_blob"></a>  PX_Blob
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property that stores binary large object (BLOB) data.
 
@@ -73,7 +73,7 @@ The handles *hBlob* and *hBlobDefault* refer to a block of memory which contains
 
 Note that `PX_Blob` will allocate memory, using the Windows [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) API, when loading BLOB-type properties. You are responsible for freeing this memory. Therefore, the destructor of your control should call [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree) on any BLOB-type property handles to free up any memory allocated to your control.
 
-##  <a name="px_bool"></a>  PX_Bool
+## <a name="px_bool"></a>  PX_Bool
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type BOOL.
 
@@ -112,7 +112,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value will be read from or written to the variable referenced by *bValue*, as appropriate. If *bDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_color"></a>  PX_Color
+## <a name="px_color"></a>  PX_Color
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type OLE_COLOR.
 
@@ -151,7 +151,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value will be read from or written to the variable referenced by *clrValue*, as appropriate. If *clrDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_currency"></a>  PX_Currency
+## <a name="px_currency"></a>  PX_Currency
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **currency**.
 
@@ -190,7 +190,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value will be read from or written to the variable referenced by *cyValue*, as appropriate. If *cyDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_datapath"></a>  PX_DataPath
+## <a name="px_datapath"></a>  PX_DataPath
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a data path property of type [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md).
 
@@ -224,7 +224,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 Data path properties implement asynchronous control properties. The property's value will be read from or written to the variable referenced by *dataPathProperty*, as appropriate.
 
-##  <a name="px_double"></a>  PX_Double
+## <a name="px_double"></a>  PX_Double
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **double**.
 
@@ -263,7 +263,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *doubleValue*, as appropriate. If *doubleDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_font"></a>  PX_Font
+## <a name="px_font"></a>  PX_Font
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type font.
 
@@ -301,7 +301,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to `font`, a `CFontHolder` reference, when appropriate. If *pFontDesc* and *pFontDispAmbient* are specified, they are used for initializing the property's default value, when needed. These values are used if, for any reason, the control's serialization process fails. Typically, you pass NULL for *pFontDesc* and the ambient value returned by `COleControl::AmbientFont` for *pFontDispAmbient*. Note that the font object returned by `COleControl::AmbientFont` must be released by a call to the `IFontDisp::Release` member function.
 
-##  <a name="px_float"></a>  PX_Float
+## <a name="px_float"></a>  PX_Float
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **float**.
 
@@ -340,7 +340,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *floatValue*, as appropriate. If *floatDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_iunknown"></a>  PX_IUnknown
+## <a name="px_iunknown"></a>  PX_IUnknown
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property represented by an object having an `IUnknown`-derived interface.
 
@@ -378,7 +378,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *pUnk*, as appropriate. If *pUnkDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_long"></a>  PX_Long
+## <a name="px_long"></a>  PX_Long
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **long**.
 
@@ -417,7 +417,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *lValue*, as appropriate. If *lDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_picture"></a>  PX_Picture
+## <a name="px_picture"></a>  PX_Picture
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a picture property of your control.
 
@@ -456,7 +456,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *pict*, as appropriate. If *pictDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_short"></a>  PX_Short
+## <a name="px_short"></a>  PX_Short
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **short**.
 
@@ -495,7 +495,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *sValue*, as appropriate. If *sDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_ulong"></a>  PX_ULong
+## <a name="px_ulong"></a>  PX_ULong
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **ULONG**.
 
@@ -534,7 +534,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *ulValue*, as appropriate. If *ulDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_ushort"></a>  PX_UShort
+## <a name="px_ushort"></a>  PX_UShort
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **unsigned short**.
 
@@ -573,7 +573,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *usValue*, as appropriate. If *usDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_string"></a>  PXstring
+## <a name="px_string"></a>  PXstring
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a character string property.
 
@@ -612,7 +612,7 @@ Nonzero if the exchange was successful; 0 if unsuccessful.
 
 The property's value is read from or written to the variable referenced by *strValue*, as appropriate. If *strDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization process fails.
 
-##  <a name="px_vbxfontconvert"></a>  PX_VBXFontConvert
+## <a name="px_vbxfontconvert"></a>  PX_VBXFontConvert
 
 Call this function within your control's `DoPropExchange` member function to initialize a font property by converting a VBX control's font-related properties.
 

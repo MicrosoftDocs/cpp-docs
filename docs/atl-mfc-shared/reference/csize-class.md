@@ -53,7 +53,7 @@ The `cx` and `cy` members of `SIZE` (and `CSize`) are public. In addition, `CSiz
 
 **Header:** atltypes.h
 
-##  <a name="csize"></a>  CSize::CSize
+## <a name="csize"></a>  CSize::CSize
 
 Constructs a `CSize` object.
 
@@ -90,7 +90,7 @@ If no arguments are given, `cx` and `cy` are initialized to zero.
 
 [!code-cpp[NVC_ATLMFC_Utilities#97](../../atl-mfc-shared/codesnippet/cpp/csize-class_1.cpp)]
 
-##  <a name="operator_eq_eq"></a>  CSize::operator ==
+## <a name="operator_eq_eq"></a>  CSize::operator ==
 
 Checks for equality between two sizes.
 
@@ -106,7 +106,7 @@ Returns nonzero if the sizes are equal, otherwize 0.
 
 [!code-cpp[NVC_ATLMFC_Utilities#98](../../atl-mfc-shared/codesnippet/cpp/csize-class_2.cpp)]
 
-##  <a name="operator_neq"></a>  CSize::operator !=
+## <a name="operator_neq"></a>  CSize::operator !=
 
 Checks for inequality between two sizes.
 
@@ -122,7 +122,7 @@ Returns nonzero if the sizes are not equal, otherwise 0.
 
 [!code-cpp[NVC_ATLMFC_Utilities#99](../../atl-mfc-shared/codesnippet/cpp/csize-class_3.cpp)]
 
-##  <a name="operator_add_eq"></a>  CSize::operator +=
+## <a name="operator_add_eq"></a>  CSize::operator +=
 
 Adds a size to this `CSize`.
 
@@ -134,7 +134,7 @@ void operator+=(SIZE size) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#100](../../atl-mfc-shared/codesnippet/cpp/csize-class_4.cpp)]
 
-##  <a name="operator_-_eq"></a>  CSize::operator -=
+## <a name="operator_-_eq"></a>  CSize::operator -=
 
 Subtracts a size from this `CSize`.
 
@@ -146,7 +146,7 @@ void operator-=(SIZE size) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#101](../../atl-mfc-shared/codesnippet/cpp/csize-class_5.cpp)]
 
-##  <a name="operator_add"></a>  CSize::operator +
+## <a name="operator_add"></a>  CSize::operator +
 
 These operators add this `CSize` value to the value of parameter.
 
@@ -176,7 +176,7 @@ See the following descriptions of the individual operators:
 
 [!code-cpp[NVC_ATLMFC_Utilities#102](../../atl-mfc-shared/codesnippet/cpp/csize-class_6.cpp)]
 
-##  <a name="operator_-"></a>  CSize::operator -
+## <a name="operator_-"></a>  CSize::operator -
 
 The first three of these operators subtract this `CSize` value to the value of parameter.
 

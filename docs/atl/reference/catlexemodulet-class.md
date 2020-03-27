@@ -78,7 +78,7 @@ For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-m
 
 **Header:** atlbase.h
 
-##  <a name="catlexemodulet"></a>  CAtlExeModuleT::CAtlExeModuleT
+## <a name="catlexemodulet"></a>  CAtlExeModuleT::CAtlExeModuleT
 
 The constructor.
 
@@ -90,7 +90,7 @@ CAtlExeModuleT() throw();
 
 If the EXE module could not be initialized, WinMain will immediately return without further processing.
 
-##  <a name="dtor"></a>  CAtlExeModuleT::~CAtlExeModuleT
+## <a name="dtor"></a>  CAtlExeModuleT::~CAtlExeModuleT
 
 The destructor.
 
@@ -102,7 +102,7 @@ The destructor.
 
 Frees all allocated resources.
 
-##  <a name="initializecom"></a>  CAtlExeModuleT::InitializeCom
+## <a name="initializecom"></a>  CAtlExeModuleT::InitializeCom
 
 Initializes COM.
 
@@ -120,7 +120,7 @@ This method is called from the constructor and can be overridden to initialize C
 
 Overriding this method normally requires overriding [CAtlExeModuleT::UninitializeCom](#uninitializecom).
 
-##  <a name="m_bdelayshutdown"></a>  CAtlExeModuleT::m_bDelayShutdown
+## <a name="m_bdelayshutdown"></a>  CAtlExeModuleT::m_bDelayShutdown
 
 A flag indicating that there should be a delay shutting down the module.
 
@@ -132,7 +132,7 @@ bool m_bDelayShutdown;
 
 See the [CAtlExeModuleT Overview](../../atl/reference/catlexemodulet-class.md) for details.
 
-##  <a name="m_dwpause"></a>  CAtlExeModuleT::m_dwPause
+## <a name="m_dwpause"></a>  CAtlExeModuleT::m_dwPause
 
 A pause value used to ensure all objects are gone before shutdown.
 
@@ -144,7 +144,7 @@ DWORD m_dwPause;
 
 Change this value after calling [CAtlExeModuleT::InitializeCom](#initializecom) to set the number of milliseconds used as the pause value for shutting down the server. The default value is 1000 milliseconds.
 
-##  <a name="m_dwtimeout"></a>  CAtlExeModuleT::m_dwTimeOut
+## <a name="m_dwtimeout"></a>  CAtlExeModuleT::m_dwTimeOut
 
 A time-out value used to delay the unloading of the module.
 
@@ -156,7 +156,7 @@ DWORD m_dwTimeOut;
 
 Change this value after calling [CAtlExeModuleT::InitializeCom](#initializecom) to define the number of milliseconds used as the time-out value for shutting down the server. The default value is 5000 milliseconds. See the [CAtlExeModuleT Overview](../../atl/reference/catlexemodulet-class.md) for more details.
 
-##  <a name="parsecommandline"></a>  CAtlExeModuleT::ParseCommandLine
+## <a name="parsecommandline"></a>  CAtlExeModuleT::ParseCommandLine
 
 Parses the command line and performs registration if necessary.
 
@@ -180,7 +180,7 @@ Return true if the application should continue to run, otherwise false.
 
 This method is called from [CAtlExeModuleT::WinMain](#winmain) and can be overridden to handle command-line switches. The default implementation checks for **/RegServer** and **/UnRegServer** command-line arguments and performs registration or unregistration.
 
-##  <a name="postmessageloop"></a>  CAtlExeModuleT::PostMessageLoop
+## <a name="postmessageloop"></a>  CAtlExeModuleT::PostMessageLoop
 
 This method is called immediately after the message loop exits.
 
@@ -196,7 +196,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Override this method to perform custom application cleanup. The default implementation calls [CAtlExeModuleT::RevokeClassObjects](#revokeclassobjects).
 
-##  <a name="premessageloop"></a>  CAtlExeModuleT::PreMessageLoop
+## <a name="premessageloop"></a>  CAtlExeModuleT::PreMessageLoop
 
 This method is called immediately before entering the message loop.
 
@@ -217,7 +217,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Override this method to add custom initialization code for the application. The default implementation registers the class objects.
 
-##  <a name="registerclassobjects"></a>  CAtlExeModuleT::RegisterClassObjects
+## <a name="registerclassobjects"></a>  CAtlExeModuleT::RegisterClassObjects
 
 Registers the class object with OLE so other applications can connect to it.
 
@@ -237,7 +237,7 @@ Determines the connection types to the class object. Possible values are REGCLS_
 
 Returns S_OK on success, S_FALSE if there were no classes to register, or an error HRESULT on failure.
 
-##  <a name="revokeclassobjects"></a>  CAtlExeModuleT::RevokeClassObjects
+## <a name="revokeclassobjects"></a>  CAtlExeModuleT::RevokeClassObjects
 
 Removes the class object.
 
@@ -249,7 +249,7 @@ HRESULT RevokeClassObjects() throw();
 
 Returns S_OK on success, S_FALSE if there were no classes to register, or an error HRESULT on failure.
 
-##  <a name="run"></a>  CAtlExeModuleT::Run
+## <a name="run"></a>  CAtlExeModuleT::Run
 
 This method executes code in the EXE module to initialize, run the message loop, and clean up.
 
@@ -270,7 +270,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method can be overridden. However, in practice is it better to override [CAtlExeModuleT::PreMessageLoop](#premessageloop), [CAtlExeModuleT::RunMessageLoop](#runmessageloop), or [CAtlExeModuleT::PostMessageLoop](#postmessageloop) instead.
 
-##  <a name="runmessageloop"></a>  CAtlExeModuleT::RunMessageLoop
+## <a name="runmessageloop"></a>  CAtlExeModuleT::RunMessageLoop
 
 This method executes the message loop.
 
@@ -282,7 +282,7 @@ void RunMessageLoop() throw();
 
 This method can be overridden to change the behavior of the message loop.
 
-##  <a name="uninitializecom"></a>  CAtlExeModuleT::UninitializeCom
+## <a name="uninitializecom"></a>  CAtlExeModuleT::UninitializeCom
 
 Uninitializes COM.
 
@@ -294,7 +294,7 @@ static void UninitializeCom() throw();
 
 By default this method simply calls [CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](#initializecom).
 
-##  <a name="unlock"></a>  CAtlExeModuleT::Unlock
+## <a name="unlock"></a>  CAtlExeModuleT::Unlock
 
 Decrements the module's lock count.
 
@@ -306,7 +306,7 @@ LONG Unlock() throw();
 
 Returns a value which may be useful for diagnostics or testing.
 
-##  <a name="winmain"></a>  CAtlExeModuleT::WinMain
+## <a name="winmain"></a>  CAtlExeModuleT::WinMain
 
 This method implements the code required to run an EXE.
 

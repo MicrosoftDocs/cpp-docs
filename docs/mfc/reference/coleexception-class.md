@@ -49,7 +49,7 @@ For more information on exceptions, see the articles [Exception Handling (MFC)](
 
 **Header:** afxdisp.h
 
-##  <a name="m_sc"></a>  COleException::m_sc
+## <a name="m_sc"></a>  COleException::m_sc
 
 This data member holds the OLE status code that indicates the reason for the exception.
 
@@ -67,7 +67,7 @@ For more information on SCODE, see [Structure of COM Error Codes](/windows/win32
 
 [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]
 
-##  <a name="process"></a>  COleException::Process
+## <a name="process"></a>  COleException::Process
 
 Call the **Process** member function to translate a caught exception into an OLE status code.
 

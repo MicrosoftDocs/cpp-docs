@@ -62,7 +62,7 @@ Use this class when file-handling needs are relatively simple, but more abstract
 
 **Header:** atlfile.h
 
-##  <a name="catlfile"></a>  CAtlFile::CAtlFile
+## <a name="catlfile"></a>  CAtlFile::CAtlFile
 
 The constructor.
 
@@ -88,7 +88,7 @@ Pointer to CAtlTransactionManager object
 
 The copy constructor transfers ownership of the file handle from the original `CAtlFile` object to the newly constructed object.
 
-##  <a name="create"></a>  CAtlFile::Create
+## <a name="create"></a>  CAtlFile::Create
 
 Call this method to create or open a file.
 
@@ -134,7 +134,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilew) to create or open the file.
 
-##  <a name="flush"></a>  CAtlFile::Flush
+## <a name="flush"></a>  CAtlFile::Flush
 
 Call this method to clear the buffers for the file and cause all buffered data to be written to the file.
 
@@ -150,7 +150,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [FlushFileBuffers](/windows/win32/api/fileapi/nf-fileapi-flushfilebuffers) to flush buffered data to the file.
 
-##  <a name="getoverlappedresult"></a>  CAtlFile::GetOverlappedResult
+## <a name="getoverlappedresult"></a>  CAtlFile::GetOverlappedResult
 
 Call this method to get the results of an overlapped operation on the file.
 
@@ -180,7 +180,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [GetOverlappedResult](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult) to get the results of an overlapped operation on the file.
 
-##  <a name="getposition"></a>  CAtlFile::GetPosition
+## <a name="getposition"></a>  CAtlFile::GetPosition
 
 Call this method to get the current file pointer position.
 
@@ -201,7 +201,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) to get the current file pointer position.
 
-##  <a name="getsize"></a>  CAtlFile::GetSize
+## <a name="getsize"></a>  CAtlFile::GetSize
 
 Call this method to get the size in bytes of the file.
 
@@ -222,7 +222,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [GetFileSize](/windows/win32/api/fileapi/nf-fileapi-getfilesize) to get the size in bytes of the file.
 
-##  <a name="lockrange"></a>  CAtlFile::LockRange
+## <a name="lockrange"></a>  CAtlFile::LockRange
 
 Call this method to lock a region in the file to prevent other processes from accessing it.
 
@@ -246,7 +246,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [LockFile](/windows/win32/api/fileapi/nf-fileapi-lockfile) to lock a region in the file. Locking bytes in a file prevents access to those bytes by other processes. You can lock more than one region of a file, but no overlapping regions are allowed. When you unlock a region, using [CAtlFile::UnlockRange](#unlockrange), the byte range must correspond exactly to the region that was previously locked. `LockRange` does not merge adjacent regions; if two locked regions are adjacent, you must unlock each separately.
 
-##  <a name="m_ptm"></a>  CAtlFile::m_pTM
+## <a name="m_ptm"></a>  CAtlFile::m_pTM
 
 Pointer to a `CAtlTransactionManager` object.
 
@@ -256,7 +256,7 @@ CAtlTransactionManager* m_pTM;
 
 ### Remarks
 
-##  <a name="read"></a>  CAtlFile::Read
+## <a name="read"></a>  CAtlFile::Read
 
 Call this method to read data from a file starting at the position indicated by the file pointer.
 
@@ -307,7 +307,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 The first three forms call [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile), the last [ReadFileEx](/windows/win32/api/fileapi/nf-fileapi-readfileex) to read data from the file. Use [CAtlFile::Seek](#seek) to move the file pointer.
 
-##  <a name="seek"></a>  CAtlFile::Seek
+## <a name="seek"></a>  CAtlFile::Seek
 
 Call this method to move the file pointer of the file.
 
@@ -333,7 +333,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) to move the file pointer.
 
-##  <a name="setsize"></a>  CAtlFile::SetSize
+## <a name="setsize"></a>  CAtlFile::SetSize
 
 Call this method to set the size of the file.
 
@@ -354,7 +354,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) and [SetEndOfFile](/windows/win32/api/fileapi/nf-fileapi-setendoffile) to set the size of the file. On return, the file pointer is positioned at the end of the file.
 
-##  <a name="unlockrange"></a>  CAtlFile::UnlockRange
+## <a name="unlockrange"></a>  CAtlFile::UnlockRange
 
 Call this method to unlock a region of the file.
 
@@ -378,7 +378,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls [UnlockFile](/windows/win32/api/fileapi/nf-fileapi-unlockfile) to unlock a region of the file.
 
-##  <a name="write"></a>  CAtlFile::Write
+## <a name="write"></a>  CAtlFile::Write
 
 Call this method to write data to the file starting at the position indicated by the file pointer.
 

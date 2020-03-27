@@ -121,7 +121,7 @@ After you incorporate `CWinAppEx` into your application, you can initialize any 
 
 **Header:** afxwinappex.h
 
-##  <a name="cleanstate"></a>  CWinAppEx::CleanState
+## <a name="cleanstate"></a>  CWinAppEx::CleanState
 
 Removes all the information about the application from the Windows registry.
 
@@ -142,7 +142,7 @@ Nonzero if the method was successful; otherwise 0.
 
 This method clears application data from a specific section of the registry. You can specify the section to clear by using the parameter *lpszSectionName*. If *lpszSectionName* is NULL, this method will use the default registry path stored in the `CWinAppEx` object. To get the default registry path, use [CWinAppEx::GetRegistryBase](#getregistrybase).
 
-##  <a name="cwinappex"></a>  CWinAppEx::CWinAppEx
+## <a name="cwinappex"></a>  CWinAppEx::CWinAppEx
 
 Constructs a `CWinAppEx` object.
 
@@ -159,7 +159,7 @@ CWinAppEx(BOOL bResourceSmartUpdate = FALSE);
 
 The `CWinAppEx` class has initialization methods, provides functionality for saving and loading application information to the registry, and controls global application settings. It also enables you to use global managers such as the [CKeyboardManager Class](../../mfc/reference/ckeyboardmanager-class.md) and the [CUserToolsManager Class](../../mfc/reference/cusertoolsmanager-class.md). Each application can have only one instance of the `CWinAppEx` class.
 
-##  <a name="enableloadwindowplacement"></a>  CWinAppEx::EnableLoadWindowPlacement
+## <a name="enableloadwindowplacement"></a>  CWinAppEx::EnableLoadWindowPlacement
 
 Specifies whether the application will load the initial size and location of the main frame window from the registry.
 
@@ -176,7 +176,7 @@ void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
 
 By default, the size and location of the main frame is loaded from the registry together with other application settings. This occurs during [CWinAppEx::LoadState](#loadstate). If you do not want to load the initial window placement from the registry, call this method with *bEnable* set to FALSE.
 
-##  <a name="enabletearoffmenus"></a>  CWinAppEx::EnableTearOffMenus
+## <a name="enabletearoffmenus"></a>  CWinAppEx::EnableTearOffMenus
 
 Creates and initializes a [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) object.
 
@@ -206,7 +206,7 @@ TRUE if the `CMenuTearOffManager` is created and initialized successfully; FALSE
 
 Use this function to enable tear-off menus in your application. You should call this function from `InitInstance`.
 
-##  <a name="enableusertools"></a>  CWinAppEx::EnableUserTools
+## <a name="enableusertools"></a>  CWinAppEx::EnableUserTools
 
 Enables the user to create custom menu commands that reduce keystrokes in your application. This method creates a [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object.
 
@@ -252,7 +252,7 @@ Every time the user adds a new item, the framework creates a new object. The cla
 
 For more information about user tools and how to incorporate them into your application, see [User-defined Tools](../../mfc/user-defined-tools.md).
 
-##  <a name="exitinstance"></a>  CWinAppEx::ExitInstance
+## <a name="exitinstance"></a>  CWinAppEx::ExitInstance
 
 ```
 virtual int ExitInstance();
@@ -262,7 +262,7 @@ virtual int ExitInstance();
 
 ### Remarks
 
-##  <a name="getbinary"></a>  CWinAppEx::GetBinary
+## <a name="getbinary"></a>  CWinAppEx::GetBinary
 
 Reads binary data from a specified registry key.
 
@@ -294,7 +294,7 @@ This method reads binary data written to the registry. To write data to the regi
 
 The *lpszEntry* parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="getcontextmenumanager"></a>  CWinAppEx::GetContextMenuManager
+## <a name="getcontextmenumanager"></a>  CWinAppEx::GetContextMenuManager
 
 Returns a pointer to the global [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) object.
 
@@ -310,7 +310,7 @@ A pointer to the global `CContextMenuManager` object.
 
 If the CContextMenuManager object is not initialized, this function calls [CWinAppEx::InitContextMenuManager](#initcontextmenumanager) before it returns a pointer.
 
-##  <a name="getdataversion"></a>  CWinAppEx::GetDataVersion
+## <a name="getdataversion"></a>  CWinAppEx::GetDataVersion
 
 ```
 int GetDataVersion() const;
@@ -320,7 +320,7 @@ int GetDataVersion() const;
 
 ### Remarks
 
-##  <a name="getdataversionmajor"></a>  CWinAppEx::GetDataVersionMajor
+## <a name="getdataversionmajor"></a>  CWinAppEx::GetDataVersionMajor
 
 Returns the major version of the application that is saved in the Windows registry when you call [CWinAppEx::SaveState](#savestate).
 
@@ -332,7 +332,7 @@ int GetDataVersionMajor() const;
 
 An integer value that contains the major version number.
 
-##  <a name="getdataversionminor"></a>  CWinAppEx::GetDataVersionMinor
+## <a name="getdataversionminor"></a>  CWinAppEx::GetDataVersionMinor
 
 Returns the minor version of the application that is saved in the Windows registry when you call [CWinAppEx::SaveState](#savestate).
 
@@ -344,7 +344,7 @@ int GetDataVersionMinor() const;
 
 An integer value that contains the minor version number.
 
-##  <a name="getint"></a>  CWinAppEx::GetInt
+## <a name="getint"></a>  CWinAppEx::GetInt
 
 Reads integer data from a specified registry key.
 
@@ -372,7 +372,7 @@ This method reads integer data from the registry. If there is no integer data as
 
 The *lpszEntry* parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="getkeyboardmanager"></a>  CWinAppEx::GetKeyboardManager
+## <a name="getkeyboardmanager"></a>  CWinAppEx::GetKeyboardManager
 
 Returns a pointer to the global [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) object.
 
@@ -388,7 +388,7 @@ A pointer to the global `CKeyboardManager` object.
 
 If the keyboard manager is not initialized, this function calls [CWinAppEx::InitKeyboardManager](#initkeyboardmanager) before it returns a pointer.
 
-##  <a name="getmousemanager"></a>  CWinAppEx::GetMouseManager
+## <a name="getmousemanager"></a>  CWinAppEx::GetMouseManager
 
 Returns a pointer to the global [CMouseManager](../../mfc/reference/cmousemanager-class.md) object.
 
@@ -404,7 +404,7 @@ A pointer to the global `CMouseManager` object.
 
 If the mouse manager is not initialized,, this function calls [CWinAppEx::InitMouseManager](#initmousemanager) before it returns a pointer.
 
-##  <a name="getobject"></a>  CWinAppEx::GetObject
+## <a name="getobject"></a>  CWinAppEx::GetObject
 
 Reads [CObject](../../mfc/reference/cobject-class.md)-dervied data from the registry.
 
@@ -432,7 +432,7 @@ This method reads data from the registry that is derived from `CObject`. To writ
 
 The *lpszEntry* parameter is the name of a registry entry that is located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="getregistrybase"></a>  CWinAppEx::GetRegistryBase
+## <a name="getregistrybase"></a>  CWinAppEx::GetRegistryBase
 
 Retrieves the default registry path for the application.
 
@@ -448,7 +448,7 @@ A string that contains the path of the default registry location.
 
 All methods of the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md) that access the registry start in a default location. Use this method to retrieve a path of the default registry location. Use [CWinAppEx::SetRegistryBase](#setregistrybase) to change the default registry location.
 
-##  <a name="getregsectionpath"></a>  CWinAppEx::GetRegSectionPath
+## <a name="getregsectionpath"></a>  CWinAppEx::GetRegSectionPath
 
 Creates and returns the absolute path of a registry key.
 
@@ -469,7 +469,7 @@ A `CString` that contains the absolute path of a registry key.
 
 This method defines the registry key's absolute path by appending the relative path in *szSectionAdd* to the default registry location for your application. To get the default registry key, use the method [CWinAppEx::GetRegistryBase](#getregistrybase).
 
-##  <a name="getsectionbinary"></a>  CWinAppEx::GetSectionBinary
+## <a name="getsectionbinary"></a>  CWinAppEx::GetSectionBinary
 
 Reads binary data from the registry.
 
@@ -505,7 +505,7 @@ This method reads binary data that is written to the registry using the methods 
 
 The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="getsectionint"></a>  CWinAppEx::GetSectionInt
+## <a name="getsectionint"></a>  CWinAppEx::GetSectionInt
 
 Reads integer data from the registry.
 
@@ -537,7 +537,7 @@ Use the methods [CWinAppEx::WriteInt](#writeint) and [CWinAppEx::WriteSectionInt
 
 The *lpszSubSection* parameter is not an absolute path of a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="getsectionobject"></a>  CWinAppEx::GetSectionObject
+## <a name="getsectionobject"></a>  CWinAppEx::GetSectionObject
 
 Reads [CObject](../../mfc/reference/cobject-class.md) registry data from the registry.
 
@@ -569,7 +569,7 @@ This method reads data from the registry. The data read is `CObject` data, or da
 
 The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="getsectionstring"></a>  CWinAppEx::GetSectionString
+## <a name="getsectionstring"></a>  CWinAppEx::GetSectionString
 
 Reads string data from the registry.
 
@@ -601,7 +601,7 @@ This method reads string data written to the registry. Use [CWinAppEx::WriteStri
 
 The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="getshellmanager"></a>  CWinAppEx::GetShellManager
+## <a name="getshellmanager"></a>  CWinAppEx::GetShellManager
 
 Returns a pointer to the global [CShellManager](../../mfc/reference/cshellmanager-class.md) object.
 
@@ -617,7 +617,7 @@ A pointer to the global `CShellManager` object.
 
 If the `CShellManager` object is not initialized, this function calls [CWinAppEx::InitShellManager](#initshellmanager) before it returns a pointer.
 
-##  <a name="getstring"></a>  CWinAppEx::GetString
+## <a name="getstring"></a>  CWinAppEx::GetString
 
 Reads string data from a specified registry key.
 
@@ -645,7 +645,7 @@ This method reads string data written to the registry. To write data to the regi
 
 The *lpszEntry* parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="gettooltipmanager"></a>  CWinAppEx::GetTooltipManager
+## <a name="gettooltipmanager"></a>  CWinAppEx::GetTooltipManager
 
 Returns a pointer to the global [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) object.
 
@@ -661,7 +661,7 @@ A pointer to the global `CTooltipManager` object.
 
 If the `CTooltipManager` object is not initialized, this function calls [CWinAppEx::InitTooltipManager](#inittooltipmanager) before it returns a pointer.
 
-##  <a name="getusertoolsmanager"></a>  CWinAppEx::GetUserToolsManager
+## <a name="getusertoolsmanager"></a>  CWinAppEx::GetUserToolsManager
 
 Returns a pointer to the global [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object.
 
@@ -677,7 +677,7 @@ A pointer to the global `CUserToolsManager` object; NULL if user tools managemen
 
 Before you retrieve a pointer to the `CUserToolsManager` object, you must initialize the manager by calling [CWinAppEx::EnableUserTools](#enableusertools).
 
-##  <a name="initcontextmenumanager"></a>  CWinAppEx::InitContextMenuManager
+## <a name="initcontextmenumanager"></a>  CWinAppEx::InitContextMenuManager
 
 Initializes the [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) object.
 
@@ -695,7 +695,7 @@ If you call [CWinAppEx::GetContextMenuManager](#getcontextmenumanager), the defa
 
 If your application already has a context menu manager and you call `InitContextMenuManager`, your application will have an [ASSERT](diagnostic-services.md#assert) failure. Therefore, you should not call `InitContextMenuManager` if you create a `CContextMenuManager` object directly. If you are not using a custom `CContextMenuManager`, you should use `GetContextMenuManager` to create a `CContextMenuManager` object.
 
-##  <a name="initkeyboardmanager"></a>  CWinAppEx::InitKeyboardManager
+## <a name="initkeyboardmanager"></a>  CWinAppEx::InitKeyboardManager
 
 Initializes the [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) object.
 
@@ -713,7 +713,7 @@ If you call [CWinAppEx::GetKeyboardManager](#getkeyboardmanager), the default im
 
 If your application already has a keyboard manager and you call `InitKeyboardManager`, your application will have an [ASSERT](diagnostic-services.md#assert) failure. Therefore, you should not call `InitKeyboardManager` if you create a `CKeyboardManager` object directly. If you are not using a custom `CKeyboardManager`, you should use `GetKeyboardManager` to create a `CKeyboardManager` object.
 
-##  <a name="initmousemanager"></a>  CWinAppEx::InitMouseManager
+## <a name="initmousemanager"></a>  CWinAppEx::InitMouseManager
 
 Initializes the [CMouseManager](../../mfc/reference/cmousemanager-class.md) object.
 
@@ -731,7 +731,7 @@ If you call [CWinAppEx::GetMouseManager](#getmousemanager), the default implemen
 
 If your application already has a mouse manager and you call `InitMouseManager`, your application will have an [ASSERT](diagnostic-services.md#assert) failure. Therefore you should not call `InitMouseManager` if you create a `CMouseManager` object directly. If you are not using a custom `CMouseManager`, you should use `GetMouseManager` to create a `CMouseManager` object.
 
-##  <a name="initshellmanager"></a>  CWinAppEx::InitShellManager
+## <a name="initshellmanager"></a>  CWinAppEx::InitShellManager
 
 Initializes the [CShellManager](../../mfc/reference/cshellmanager-class.md) object.
 
@@ -749,7 +749,7 @@ If you call [CWinAppEx::GetShellManager](#getshellmanager), the default implemen
 
 If your application already has a shell manager and you call `InitShellManager`, your application raises an [ASSERT](diagnostic-services.md#assert) failure. Therefore, do not call `InitShellManager` if you create a `CShellManager` object directly. If you are not using a custom `CShellManager`, use `GetShellManager` to create a `CShellManager` object.
 
-##  <a name="inittooltipmanager"></a>  CWinAppEx::InitTooltipManager
+## <a name="inittooltipmanager"></a>  CWinAppEx::InitTooltipManager
 
 Initializes the [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) object.
 
@@ -767,7 +767,7 @@ If you call [CWinAppEx::GetTooltipManager](#gettooltipmanager), the default impl
 
 If your application already has a tooltip manager and you call `InitTooltipManager`, your application will have an [ASSERT](diagnostic-services.md#assert) failure. Therefore, you should not call `InitTooltipManager` if you create a `CTooltipManager` object directly. If you are not using a custom `CTooltipManager`, you should use `GetTooltipManager` to create a `CTooltipManager` object.
 
-##  <a name="isresourcesmartupdate"></a>  CWinAppEx::IsResourceSmartUpdate
+## <a name="isresourcesmartupdate"></a>  CWinAppEx::IsResourceSmartUpdate
 
 ```
 BOOL IsResourceSmartUpdate() const;
@@ -777,7 +777,7 @@ BOOL IsResourceSmartUpdate() const;
 
 ### Remarks
 
-##  <a name="isstateexists"></a>  CWinAppEx::IsStateExists
+## <a name="isstateexists"></a>  CWinAppEx::IsStateExists
 
 Indicates whether the specified key is in the registry.
 
@@ -794,7 +794,7 @@ BOOL IsStateExists(LPCTSTR lpszSectionName);
 
 Nonzero if the key is in the registry; otherwise 0.
 
-##  <a name="loadcustomstate"></a>  CWinAppEx::LoadCustomState
+## <a name="loadcustomstate"></a>  CWinAppEx::LoadCustomState
 
 The framework calls this method after it loads the state of the application from the registry.
 
@@ -808,7 +808,7 @@ Override this method if you want to do any processing after the application load
 
 In order to load custom state information from the registry, the information must first be saved by using [CWinAppEx::SaveCustomState](#savecustomstate).
 
-##  <a name="loadstate"></a>  CWinAppEx::LoadState
+## <a name="loadstate"></a>  CWinAppEx::LoadState
 
 Reads the application state from the Windows registry.
 
@@ -853,7 +853,7 @@ The default implementation of `CFrameImpl::OnLoadFrame` calls `LoadState`.
 
 The *lpszSectionName* parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="loadwindowplacement"></a>  CWinAppEx::LoadWindowPlacement
+## <a name="loadwindowplacement"></a>  CWinAppEx::LoadWindowPlacement
 
 Called by the framework when it loads the size and location of the main frame window from the registry.
 
@@ -885,7 +885,7 @@ By default, MFC automatically loads the previous position and state of the main 
 
 Override this method if you want to load additional information about the main frame window.
 
-##  <a name="m_bforceimagereset"></a>  CWinAppEx::m_bForceImageReset
+## <a name="m_bforceimagereset"></a>  CWinAppEx::m_bForceImageReset
 
 Specifies whether the framework resets all toolbar images when it reloads the frame window that contains the toolbar.
 
@@ -897,7 +897,7 @@ BOOL m_bForceImageReset;
 
 The `m_bForceImageReset` data member is a protected variable.
 
-##  <a name="onappcontexthelp"></a>  CWinAppEx::OnAppContextHelp
+## <a name="onappcontexthelp"></a>  CWinAppEx::OnAppContextHelp
 
 The framework calls this method when the user requests context help for the **Customization** dialog box.
 
@@ -919,7 +919,7 @@ virtual void OnAppContextHelp(
 
 This method is currently reserved for future use. The default implementation does nothing and it is currently not called by the framework.
 
-##  <a name="onclosingmainframe"></a>  CWinAppEx::OnClosingMainFrame
+## <a name="onclosingmainframe"></a>  CWinAppEx::OnClosingMainFrame
 
 The framework calls this method when a frame window is processing WM_CLOSE.
 
@@ -936,7 +936,7 @@ virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
 
 The default implementation of this method saves the state of *pFrameImpl*.
 
-##  <a name="onviewdoubleclick"></a>  CWinAppEx::OnViewDoubleClick
+## <a name="onviewdoubleclick"></a>  CWinAppEx::OnViewDoubleClick
 
 Calls the user-defined command that is associated with a view when the user double-clicks anywhere within that view.
 
@@ -962,7 +962,7 @@ TRUE if the framework finds a command; otherwise FALSE.
 
 In order to support custom mouse behavior, you must call this function when you process the WM_LBUTTONDBLCLK message. This method will execute the command associated with the view ID supplied by *iViewId*. For more information about custom mouse behavior, see [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md).
 
-##  <a name="onworkspaceidle"></a>  CWinAppEx::OnWorkspaceIdle
+## <a name="onworkspaceidle"></a>  CWinAppEx::OnWorkspaceIdle
 
 ```
 virtual BOOL OnWorkspaceIdle(CWnd*);
@@ -976,7 +976,7 @@ virtual BOOL OnWorkspaceIdle(CWnd*);
 
 ### Remarks
 
-##  <a name="preloadstate"></a>  CWinAppEx::PreLoadState
+## <a name="preloadstate"></a>  CWinAppEx::PreLoadState
 
 The framework calls this method immediately before it loads the state of the application from the registry.
 
@@ -988,7 +988,7 @@ virtual void PreLoadState();
 
 Override this method if you want to do any processing immediately before the framework loads the application state.
 
-##  <a name="presavestate"></a>  CWinAppEx::PreSaveState
+## <a name="presavestate"></a>  CWinAppEx::PreSaveState
 
 The framework calls this method immediately before it saves the application state.
 
@@ -1000,7 +1000,7 @@ virtual void PreSaveState();
 
 Override this method if you want to do any processing immediately before the framework saves the application state.
 
-##  <a name="reloadwindowplacement"></a>  CWinAppEx::ReloadWindowPlacement
+## <a name="reloadwindowplacement"></a>  CWinAppEx::ReloadWindowPlacement
 
 Reloads the size and location of a window from the registry.
 
@@ -1021,7 +1021,7 @@ Nonzero if the method was successful; 0 if the load failed or there is no data t
 
 Use the function [CWinAppEx::StoreWindowPlacement](#storewindowplacement) to write the size and location of a window to the registry.
 
-##  <a name="savecustomstate"></a>  CWinAppEx::SaveCustomState
+## <a name="savecustomstate"></a>  CWinAppEx::SaveCustomState
 
 The framework calls this method after it saves the state of the application to the registry.
 
@@ -1033,7 +1033,7 @@ virtual void SaveCustomState();
 
 Override this method if you want to do any processing after the application saves the state to the registry. By default, this method does nothing.
 
-##  <a name="savestate"></a>  CWinAppEx::SaveState
+## <a name="savestate"></a>  CWinAppEx::SaveState
 
 Writes the application state to the Windows registry.
 
@@ -1076,7 +1076,7 @@ This method saves the state of the application and any state information for the
 
 The *lpszSectionName* parameter is not the absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.
 
-##  <a name="setregistrybase"></a>  CWinAppEx::SetRegistryBase
+## <a name="setregistrybase"></a>  CWinAppEx::SetRegistryBase
 
 Sets the default registry path for the application.
 
@@ -1097,7 +1097,7 @@ A string that contains the path of the default registry location.
 
 All methods of the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md) that access the registry start in a default location. Use this method to change that default registry location. Use [CWinAppEx::GetRegistryBase](#getregistrybase) to retrieve the default registry location.
 
-##  <a name="showpopupmenu"></a>  CWinAppEx::ShowPopupMenu
+## <a name="showpopupmenu"></a>  CWinAppEx::ShowPopupMenu
 
 Displays a popup menu.
 
@@ -1129,7 +1129,7 @@ This method displays the menu associated with *uiMenuResId*.
 
 To support popup menus, you must have a [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) object. If you have not initialized the `CContextMenuManager` object, `ShowPopupMenu` will fail.
 
-##  <a name="storewindowplacement"></a>  CWinAppEx::StoreWindowPlacement
+## <a name="storewindowplacement"></a>  CWinAppEx::StoreWindowPlacement
 
 Called by the framework to write the size and location of the main frame window to the registry.
 
@@ -1161,7 +1161,7 @@ By default, MFC automatically saves the position and state of the main frame win
 
 Override this method if you want to store additional information about the main frame window.
 
-##  <a name="writebinary"></a>  CWinAppEx::WriteBinary
+## <a name="writebinary"></a>  CWinAppEx::WriteBinary
 
 Writes binary data to the registry.
 
@@ -1193,7 +1193,7 @@ The *lpszEntry* parameter is the name of a registry entry that is located under 
 
 If the key specified by *lpszEntry* does not exist, this method will create it.
 
-##  <a name="writeint"></a>  CWinAppEx::WriteInt
+## <a name="writeint"></a>  CWinAppEx::WriteInt
 
 Writes numeric data to the registry.
 
@@ -1221,7 +1221,7 @@ The *lpszEntry* parameter is the name of a registry entry located under the defa
 
 If the key specified by *lpszEntry* does not exist, this method will create it.
 
-##  <a name="writeobject"></a>  CWinAppEx::WriteObject
+## <a name="writeobject"></a>  CWinAppEx::WriteObject
 
 Writes data derived from the [CObject Class](../../mfc/reference/cobject-class.md) to the registry.
 
@@ -1247,7 +1247,7 @@ TRUE if this method is successful; otherwise FALSE.
 
 This method writes the *obj* data to the specified value under the default registry key. Use [CWinAppEx::GetRegistryBase](#getregistrybase) to determine the current registry key.
 
-##  <a name="writesectionbinary"></a>  CWinAppEx::WriteSectionBinary
+## <a name="writesectionbinary"></a>  CWinAppEx::WriteSectionBinary
 
 Writes binary data to a value in the registry.
 
@@ -1283,7 +1283,7 @@ The *lpszSubSection* parameter is not the absolute path for a registry entry. It
 
 If the key specified by *lpszEntry* does not exist, this method will create it.
 
-##  <a name="writesectionint"></a>  CWinAppEx::WriteSectionInt
+## <a name="writesectionint"></a>  CWinAppEx::WriteSectionInt
 
 Writes numeric data to the registry.
 
@@ -1315,7 +1315,7 @@ The *lpszSubSection* parameter is not an absolute path for a registry entry. It 
 
 If the key specified by *lpszEntry* does not exist, this method will create it.
 
-##  <a name="writesectionobject"></a>  CWinAppEx::WriteSectionObject
+## <a name="writesectionobject"></a>  CWinAppEx::WriteSectionObject
 
 Writes data derived from the [CObject Class](../../mfc/reference/cobject-class.md) to a specific registry value.
 
@@ -1347,7 +1347,7 @@ The *lpszSubSection* parameter is not an absolute path for a registry entry. It 
 
 If the value specified by *lpszEntry* does not exist under the registry key specified by *lpszSubSection*, this method will create that value.
 
-##  <a name="writesectionstring"></a>  CWinAppEx::WriteSectionString
+## <a name="writesectionstring"></a>  CWinAppEx::WriteSectionString
 
 Writes string data to a value in the registry.
 
@@ -1379,7 +1379,7 @@ The *lpszSubSection* parameter is not an absolute path for a registry entry. It 
 
 If the value specified by *lpszEntry* does not exist under *lpszSubSection*, this method will create it.
 
-##  <a name="writestring"></a>  CWinAppEx::WriteString
+## <a name="writestring"></a>  CWinAppEx::WriteString
 
 Writes string data to the registry.
 

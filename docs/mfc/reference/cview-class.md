@@ -109,7 +109,7 @@ The `CView` class also has a derived implementation class named `CPreviewView`, 
 
 **Header:** afxwin.h
 
-##  <a name="cview"></a>  CView::CView
+## <a name="cview"></a>  CView::CView
 
 Constructs a `CView` object.
 
@@ -121,7 +121,7 @@ CView();
 
 The framework calls the constructor when a new frame window is created or a window is split. Override the [OnInitialUpdate](#oninitialupdate) member function to initialize the view after the document is attached.
 
-##  <a name="doprepareprinting"></a>  CView::DoPreparePrinting
+## <a name="doprepareprinting"></a>  CView::DoPreparePrinting
 
 Call this function from your override of [OnPreparePrinting](#onprepareprinting) to invoke the Print dialog box and create a printer device context.
 
@@ -144,7 +144,7 @@ This function's behavior depends on whether it is being called for printing or p
 
 If a file is being previewed, this function creates a printer device context using the current printer settings; this device context is used for simulating the printer during preview.
 
-##  <a name="getdocument"></a>  CView::GetDocument
+## <a name="getdocument"></a>  CView::GetDocument
 
 Call this function to get a pointer to the view's document.
 
@@ -160,7 +160,7 @@ A pointer to the [CDocument](../../mfc/reference/cdocument-class.md) object asso
 
 This allows you to call the document's member functions.
 
-##  <a name="isselected"></a>  CView::IsSelected
+## <a name="isselected"></a>  CView::IsSelected
 
 Called by the framework to check whether the specified document item is selected.
 
@@ -181,7 +181,7 @@ Nonzero if the specified document item is selected; otherwise 0.
 
 The default implementation of this function returns FALSE. Override this function if you are implementing selection using [CDocItem](../../mfc/reference/cdocitem-class.md) objects. You must override this function if your view contains OLE items.
 
-##  <a name="onactivateframe"></a>  CView::OnActivateFrame
+## <a name="onactivateframe"></a>  CView::OnActivateFrame
 
 Called by the framework when the frame window containing the view is activated or deactivated.
 
@@ -209,7 +209,7 @@ Pointer to the frame window that is to be activated.
 
 Override this member function if you want to perform special processing when the frame window associated with the view is activated or deactivated. For example, [CFormView](../../mfc/reference/cformview-class.md) performs this override when it saves and restores the control that has focus.
 
-##  <a name="onactivateview"></a>  CView::OnActivateView
+## <a name="onactivateview"></a>  CView::OnActivateView
 
 Called by the framework when a view is activated or deactivated.
 
@@ -239,7 +239,7 @@ The *pActivateView* and *pDeactiveView* parameters point to the same view if the
 
 These parameters differ when [CFrameWnd::SetActiveView](../../mfc/reference/cframewnd-class.md#setactiveview) is called with a view that is different from what [CFrameWnd::GetActiveView](../../mfc/reference/cframewnd-class.md#getactiveview) would return. This happens most often with splitter windows.
 
-##  <a name="onbeginprinting"></a>  CView::OnBeginPrinting
+## <a name="onbeginprinting"></a>  CView::OnBeginPrinting
 
 Called by the framework at the beginning of a print or print preview job, after `OnPreparePrinting` has been called.
 
@@ -263,7 +263,7 @@ The default implementation of this function does nothing. Override this function
 
 You can also use this function to perform initializations that depend on properties of the printer device context. For example, the number of pages needed to print the document may depend on settings that the user specified from the Print dialog box (such as page length). In such a situation, you cannot specify the document length in the [OnPreparePrinting](#onprepareprinting) member function, where you would normally do so; you must wait until the printer device context has been created based on the dialog box settings. [OnBeginPrinting](#onbeginprinting) is the first overridable function that gives you access to the [CDC](../../mfc/reference/cdc-class.md) object representing the printer device context, so you can set the document length from this function. Note that if the document length is not specified by this time, a scroll bar is not displayed during print preview.
 
-##  <a name="ondragenter"></a>  CView::OnDragEnter
+## <a name="ondragenter"></a>  CView::OnDragEnter
 
 Called by the framework when the mouse first enters the non-scrolling region of the drop target window.
 
@@ -305,7 +305,7 @@ Default implementation is to do nothing and return DROPEFFECT_NONE.
 
 Override this function to prepare for future calls to the [OnDragOver](#ondragover) member function. Any data required from the data object should be retrieved at this time for later use in the `OnDragOver` member function. The view should also be updated at this time to give the user visual feedback. For more information, see the article [OLE drag and drop: Implement a drop target](../../mfc/drag-and-drop-ole.md#implement-a-drop-target).
 
-##  <a name="ondragleave"></a>  CView::OnDragLeave
+## <a name="ondragleave"></a>  CView::OnDragLeave
 
 Called by the framework during a drag operation when the mouse is moved out of the valid drop area for that window.
 
@@ -317,7 +317,7 @@ virtual void OnDragLeave();
 
 Override this function if the current view needs to clean up any actions taken during [OnDragEnter](#ondragenter) or [OnDragOver](#ondragover) calls, such as removing any visual user feedback while the object was dragged and dropped.
 
-##  <a name="ondragover"></a>  CView::OnDragOver
+## <a name="ondragover"></a>  CView::OnDragOver
 
 Called by the framework during a drag operation when the mouse is moved over the drop target window.
 
@@ -359,7 +359,7 @@ The default implementation is to do nothing and return DROPEFFECT_NONE.
 
 Override this function to give the user visual feedback during the drag operation. Since this function is called continuously, any code contained within it should be optimized as much as possible. For more information, see the article [OLE drag and drop: Implement a drop target](../../mfc/drag-and-drop-ole.md#implement-a-drop-target).
 
-##  <a name="ondragscroll"></a>  CView::OnDragScroll
+## <a name="ondragscroll"></a>  CView::OnDragScroll
 
 Called by the framework before calling [OnDragEnter](#ondragenter) or [OnDragOver](#ondragover) to determine whether the point is in the scrolling region.
 
@@ -397,7 +397,7 @@ For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overv
 
 Override this function when you want to provide special behavior for this event. The default implementation automatically scrolls windows when the cursor is dragged into the default scroll region inside the border of each window. For more information, see the article [OLE drag and drop: Implement a drop target](../../mfc/drag-and-drop-ole.md#implement-a-drop-target).
 
-##  <a name="ondraw"></a>  CView::OnDraw
+## <a name="ondraw"></a>  CView::OnDraw
 
 Called by the framework to render an image of the document.
 
@@ -418,7 +418,7 @@ You must override this function to display your view of the document. You can ma
 
 To optimize drawing, call the [RectVisible](../../mfc/reference/cdc-class.md#rectvisible) member function of the device context to find out whether a given rectangle will be drawn. If you need to distinguish between normal screen display and printing, call the [IsPrinting](../../mfc/reference/cdc-class.md#isprinting) member function of the device context.
 
-##  <a name="ondrop"></a>  CView::OnDrop
+## <a name="ondrop"></a>  CView::OnDrop
 
 Called by the framework when the user releases a data object over a valid drop target.
 
@@ -459,7 +459,7 @@ Override this function to implement the effect of an OLE drop into the client ar
 > [!NOTE]
 >  The framework does not call this function if there is an override to [OnDropEx](#ondropex) in this view class.
 
-##  <a name="ondropex"></a>  CView::OnDropEx
+## <a name="ondropex"></a>  CView::OnDropEx
 
 Called by the framework when the user releases a data object over a valid drop target.
 
@@ -523,7 +523,7 @@ Drop effects describe the action associated with a drop operation. See the follo
 
 For more information on setting the default menu command, see [SetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem) in the Windows SDK and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.
 
-##  <a name="onendprinting"></a>  CView::OnEndPrinting
+## <a name="onendprinting"></a>  CView::OnEndPrinting
 
 Called by the framework after a document has been printed or previewed.
 
@@ -545,7 +545,7 @@ Points to a [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) structure 
 
 The default implementation of this function does nothing. Override this function to free any GDI resources you allocated in the [OnBeginPrinting](#onbeginprinting) member function.
 
-##  <a name="onendprintpreview"></a>  CView::OnEndPrintPreview
+## <a name="onendprintpreview"></a>  CView::OnEndPrintPreview
 
 Called by the framework when the user exits print preview mode.
 
@@ -577,7 +577,7 @@ The default implementation of this function calls the [OnEndPrinting](#onendprin
 
 Always call the base class version of `OnEndPrintPreview` from your override, typically at the end of the function.
 
-##  <a name="oninitialupdate"></a>  CView::OnInitialUpdate
+## <a name="oninitialupdate"></a>  CView::OnInitialUpdate
 
 Called by the framework after the view is first attached to the document, but before the view is initially displayed.
 
@@ -589,7 +589,7 @@ virtual void OnInitialUpdate();
 
 The default implementation of this function calls the [OnUpdate](#onupdate) member function with no hint information (that is, using the default values of 0 for the *lHint* parameter and NULL for the *pHint* parameter). Override this function to perform any one-time initialization that requires information about the document. For example, if your application has fixed-sized documents, you can use this function to initialize a view's scrolling limits based on the document size. If your application supports variable-sized documents, use [OnUpdate](#onupdate) to update the scrolling limits every time the document changes.
 
-##  <a name="onpreparedc"></a>  CView::OnPrepareDC
+## <a name="onpreparedc"></a>  CView::OnPrepareDC
 
 Called by the framework before the [OnDraw](#ondraw) member function is called for screen display and before the [OnPrint](#onprint) member function is called for each page during printing or print preview.
 
@@ -627,7 +627,7 @@ Call the base class version of `OnPrepareDC` at the beginning of your override.
 
 [!code-cpp[NVC_MFCDocView#183](../../mfc/codesnippet/cpp/cview-class_1.cpp)]
 
-##  <a name="onprepareprinting"></a>  CView::OnPreparePrinting
+## <a name="onprepareprinting"></a>  CView::OnPreparePrinting
 
 Called by the framework before a document is printed or previewed.
 
@@ -666,7 +666,7 @@ If you know how many pages the document contains, set the maximum page in `OnPre
 
 [!code-cpp[NVC_MFCDocView#185](../../mfc/codesnippet/cpp/cview-class_3.cpp)]
 
-##  <a name="onprint"></a>  CView::OnPrint
+## <a name="onprint"></a>  CView::OnPrint
 
 Called by the framework to print or preview a page of the document.
 
@@ -710,7 +710,7 @@ The following is a skeleton for an overridden `OnPrint` function:
 
 For another example, see [CRichEditView::PrintInsideRect](../../mfc/reference/cricheditview-class.md#printinsiderect).
 
-##  <a name="onscroll"></a>  CView::OnScroll
+## <a name="onscroll"></a>  CView::OnScroll
 
 Called by the framework to determine whether scrolling is possible.
 
@@ -754,7 +754,7 @@ If *bDoScroll* is TRUE and the view was actually scrolled, then return nonzero; 
 
 In one case this function is called by the framework with *bDoScroll* set to TRUE when the view receives a scrollbar message. In this case, you should actually scroll the view. In the other case this function is called with *bDoScroll* set to FALSE when an OLE item is initially dragged into the auto-scrolling region of a drop target before scrolling actually takes place. In this case, you should not actually scroll the view.
 
-##  <a name="onscrollby"></a>  CView::OnScrollBy
+## <a name="onscrollby"></a>  CView::OnScrollBy
 
 Called by the framework when the user views an area beyond the present view of the document, either by dragging an OLE item against the view's current borders or by manipulating the vertical or horizontal scrollbars.
 
@@ -784,7 +784,7 @@ The default implementation of this method does not change the view, but if it is
 
 If the document width or height exceeds 32767 pixels, scrolling past 32767 will fail because `OnScrollBy` is called with an invalid *sizeScroll* argument.
 
-##  <a name="onupdate"></a>  CView::OnUpdate
+## <a name="onupdate"></a>  CView::OnUpdate
 
 Called by the framework after the view's document has been modified; this function is called by [CDocument::UpdateAllViews](../../mfc/reference/cdocument-class.md#updateallviews) and allows the view to update its display to reflect those modifications.
 

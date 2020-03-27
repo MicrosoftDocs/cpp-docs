@@ -14,7 +14,7 @@ This article covers:
 
 - [Flyby status bar updates](#_core_fly_by_status_bar_updates)
 
-##  <a name="_core_activating_tool_tips"></a> Activating Tool Tips
+## <a name="_core_activating_tool_tips"></a> Activating Tool Tips
 
 To activate tool tips in your application, you must do two things:
 
@@ -37,7 +37,7 @@ If a control bar with tool tips enabled has child controls placed on it, the con
 
 - The string-table entry with the same ID as the child control in the resource file has a tool tip string.
 
-##  <a name="_core_fly_by_status_bar_updates"></a> Flyby Status Bar Updates
+## <a name="_core_fly_by_status_bar_updates"></a> Flyby Status Bar Updates
 
 A feature related to tool tips is "flyby" status bar updating. By default, the message on the status bar describes only a particular toolbar button when the button is activated. By including CBRS_FLYBY in your list of styles passed to `CToolBar::Create`, you can have these messages updated when the mouse cursor passes over the toolbar without actually activating the button.
 

@@ -140,7 +140,7 @@ For more information about using the container interface, see the articles [Cont
 
 **Header:** afxole.h
 
-##  <a name="activate"></a>  COleClientItem::Activate
+## <a name="activate"></a>  COleClientItem::Activate
 
 Call this function to execute the specified verb instead of [DoVerb](#doverb) so that you can do your own processing when an exception is thrown.
 
@@ -180,7 +180,7 @@ If the primary verb is Edit and zero is specified in the *nVerb* parameter, the 
 
 For more information, see [IOleObject::DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
 
-##  <a name="activateas"></a>  COleClientItem::ActivateAs
+## <a name="activateas"></a>  COleClientItem::ActivateAs
 
 Uses OLE's object conversion facilities to activate the item as though it were an item of the type specified by *clsidNew*.
 
@@ -210,7 +210,7 @@ Nonzero if successful; otherwise 0.
 
 This is called automatically by [COleConvertDialog::DoConvert](../../mfc/reference/coleconvertdialog-class.md#doconvert). It is not usually called directly.
 
-##  <a name="attachdataobject"></a>  COleClientItem::AttachDataObject
+## <a name="attachdataobject"></a>  COleClientItem::AttachDataObject
 
 Call this function to initialize a [COleDataObject](../../mfc/reference/coledataobject-class.md) for accessing the data in the OLE item.
 
@@ -223,7 +223,7 @@ void AttachDataObject(COleDataObject& rDataObject) const;
 *rDataObject*<br/>
 Reference to a `COleDataObject` object that will be initialized to allow access to the data in the OLE item.
 
-##  <a name="canactivate"></a>  COleClientItem::CanActivate
+## <a name="canactivate"></a>  COleClientItem::CanActivate
 
 Called by the framework when the user requests in-place activation of the OLE item; this function's return value determines whether in-place activation is allowed.
 
@@ -241,7 +241,7 @@ The default implementation allows in-place activation if the container has a val
 
 For more information, see [IOleInPlaceSite::CanInPlaceActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-caninplaceactivate) in the Windows SDK.
 
-##  <a name="cancreatefromdata"></a>  COleClientItem::CanCreateFromData
+## <a name="cancreatefromdata"></a>  COleClientItem::CanCreateFromData
 
 Checks whether a container application can create an embedded object from the given `COleDataObject` object.
 
@@ -266,7 +266,7 @@ Containers can use this function to decide to enable or disable their Edit Paste
 
 For more information, see the article [Data Objects and Data Sources (OLE)](../../mfc/data-objects-and-data-sources-ole.md).
 
-##  <a name="cancreatelinkfromdata"></a>  COleClientItem::CanCreateLinkFromData
+## <a name="cancreatelinkfromdata"></a>  COleClientItem::CanCreateLinkFromData
 
 Checks whether a container application can create a linked object from the given `COleDataObject` object.
 
@@ -291,7 +291,7 @@ Containers can use this function to decide to enable or disable their Edit Paste
 
 For more information, see the article [Data Objects and Data Sources (OLE)](../../mfc/data-objects-and-data-sources-ole.md).
 
-##  <a name="canpaste"></a>  COleClientItem::CanPaste
+## <a name="canpaste"></a>  COleClientItem::CanPaste
 
 Call this function to see whether an embedded OLE item can be pasted from the Clipboard.
 
@@ -307,7 +307,7 @@ Nonzero if an embedded OLE item can be pasted from the Clipboard; otherwise 0.
 
 For more information, see [OleGetClipboard](/windows/win32/api/ole2/nf-ole2-olegetclipboard) and [OleQueryCreateFromData](/windows/win32/api/ole2/nf-ole2-olequerycreatefromdata) in the Windows SDK.
 
-##  <a name="canpastelink"></a>  COleClientItem::CanPasteLink
+## <a name="canpastelink"></a>  COleClientItem::CanPasteLink
 
 Call this function to see whether a linked OLE item can be pasted from the Clipboard.
 
@@ -323,7 +323,7 @@ Nonzero if a linked OLE item can be pasted from the Clipboard; otherwise 0.
 
 For more information, see [OleGetClipboard](/windows/win32/api/ole2/nf-ole2-olegetclipboard) and [OleQueryLinkFromData](/windows/win32/api/ole2/nf-ole2-olequerylinkfromdata) in the Windows SDK.
 
-##  <a name="close"></a>  COleClientItem::Close
+## <a name="close"></a>  COleClientItem::Close
 
 Call this function to change the state of an OLE item from the running state to the loaded state, that is, loaded with its handler in memory but with the server not running.
 
@@ -348,7 +348,7 @@ This function has no effect when the OLE item is not running.
 
 For more information, see [IOleObject::Close](/windows/win32/api/oleidl/nf-oleidl-ioleobject-close) in the Windows SDK.
 
-##  <a name="coleclientitem"></a>  COleClientItem::COleClientItem
+## <a name="coleclientitem"></a>  COleClientItem::COleClientItem
 
 Constructs a `COleClientItem` object and adds it to the container document's collection of document items, which constructs only the C++ object and does not perform any OLE initialization.
 
@@ -387,7 +387,7 @@ You must call one of the following creation member functions before you use the 
 
 - [CreateCloneFrom](#createclonefrom)
 
-##  <a name="convertto"></a>  COleClientItem::ConvertTo
+## <a name="convertto"></a>  COleClientItem::ConvertTo
 
 Call this member function to convert the item to the type specified by *clsidNew*.
 
@@ -408,7 +408,7 @@ Nonzero if successful; otherwise 0.
 
 This is called automatically by [COleConvertDialog](../../mfc/reference/coleconvertdialog-class.md). It is not necessary to call it directly.
 
-##  <a name="copytoclipboard"></a>  COleClientItem::CopyToClipboard
+## <a name="copytoclipboard"></a>  COleClientItem::CopyToClipboard
 
 Call this function to copy the OLE item to the Clipboard.
 
@@ -427,7 +427,7 @@ Typically, you call this function when writing message handlers for the Copy or 
 
 For more information, see [OleSetClipboard](/windows/win32/api/ole2/nf-ole2-olesetclipboard) in the Windows SDK.
 
-##  <a name="createclonefrom"></a>  COleClientItem::CreateCloneFrom
+## <a name="createclonefrom"></a>  COleClientItem::CreateCloneFrom
 
 Call this function to create a copy of the specified OLE item.
 
@@ -448,7 +448,7 @@ Nonzero if successful; otherwise 0.
 
 The copy is identical to the source item. You can use this function to support undo operations.
 
-##  <a name="createfromclipboard"></a>  COleClientItem::CreateFromClipboard
+## <a name="createfromclipboard"></a>  COleClientItem::CreateFromClipboard
 
 Call this function to create an embedded item from the contents of the Clipboard.
 
@@ -480,7 +480,7 @@ You typically call this function from the message handler for the Paste command 
 
 For more information, see [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="createfromdata"></a>  COleClientItem::CreateFromData
+## <a name="createfromdata"></a>  COleClientItem::CreateFromData
 
 Call this function to create an embedded item from a `COleDataObject` object.
 
@@ -516,7 +516,7 @@ Data transfer operations, such as pasting from the Clipboard or drag-and-drop op
 
 For more information, see [OleCreateFromData](/windows/win32/api/ole2/nf-ole2-olecreatefromdata), [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="createfromfile"></a>  COleClientItem::CreateFromFile
+## <a name="createfromfile"></a>  COleClientItem::CreateFromFile
 
 Call this function to create an embedded OLE item from a file.
 
@@ -556,7 +556,7 @@ The framework calls this function from [COleInsertDialog::CreateItem](../../mfc/
 
 For more information, see [OleCreateFromFile](/windows/win32/api/ole/nf-ole-olecreatefromfile), [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="createlinkfromclipboard"></a>  COleClientItem::CreateLinkFromClipboard
+## <a name="createlinkfromclipboard"></a>  COleClientItem::CreateLinkFromClipboard
 
 Call this function to create a linked item from the contents of the Clipboard.
 
@@ -588,7 +588,7 @@ You typically call this function from the message handler for the Paste Link com
 
 For more information, see [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="createlinkfromdata"></a>  COleClientItem::CreateLinkFromData
+## <a name="createlinkfromdata"></a>  COleClientItem::CreateLinkFromData
 
 Call this function to create a linked item from a `COleDataObject` object.
 
@@ -624,7 +624,7 @@ Call this during a drop operation when the user indicates a link should be creat
 
 For more information, see [OleCreateLinkFromData](/windows/win32/api/ole2/nf-ole2-olecreatelinkfromdata), [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="createlinkfromfile"></a>  COleClientItem::CreateLinkFromFile
+## <a name="createlinkfromfile"></a>  COleClientItem::CreateLinkFromFile
 
 Call this function to create a linked OLE item from a file.
 
@@ -660,7 +660,7 @@ The framework calls this function if the user chooses OK from the Insert Object 
 
 For more information, see [OleCreateLinkToFile](/windows/win32/api/ole2/nf-ole2-olecreatelinktofile), [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="createnewitem"></a>  COleClientItem::CreateNewItem
+## <a name="createnewitem"></a>  COleClientItem::CreateNewItem
 
 Call this function to create an embedded item; this function launches the server application that allows the user to create the OLE item.
 
@@ -696,7 +696,7 @@ The framework calls this function if the user chooses OK from the Insert Object 
 
 For more information, see [OleCreate](/windows/win32/api/ole/nf-ole-olecreate), [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="createstaticfromclipboard"></a>  COleClientItem::CreateStaticFromClipboard
+## <a name="createstaticfromclipboard"></a>  COleClientItem::CreateStaticFromClipboard
 
 Call this function to create a static item from the contents of the Clipboard.
 
@@ -728,7 +728,7 @@ A static item contains the presentation data but not the native data; consequent
 
 For more information, see [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="createstaticfromdata"></a>  COleClientItem::CreateStaticFromData
+## <a name="createstaticfromdata"></a>  COleClientItem::CreateStaticFromData
 
 Call this function to create a static item from a `COleDataObject` object.
 
@@ -766,7 +766,7 @@ Used in [COlePasteSpecialDialog::CreateItem](../../mfc/reference/colepastespecia
 
 For more information, see [OleCreateStaticFromData](/windows/win32/api/ole2/nf-ole2-olecreatestaticfromdata), [OLERENDER](/windows/win32/api/oleidl/ne-oleidl-olerender), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-##  <a name="deactivate"></a>  COleClientItem::Deactivate
+## <a name="deactivate"></a>  COleClientItem::Deactivate
 
 Call this function to deactivate the OLE item and free any associated resources.
 
@@ -782,7 +782,7 @@ If your application supports undo, do not call `Deactivate`; instead, call [Deac
 
 For more information, see [IOleInPlaceObject::InPlaceDeactivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-inplacedeactivate) in the Windows SDK.
 
-##  <a name="deactivateui"></a>  COleClientItem::DeactivateUI
+## <a name="deactivateui"></a>  COleClientItem::DeactivateUI
 
 Call this function when the user deactivates an item that was activated in place.
 
@@ -798,7 +798,7 @@ This function does not flush the undo state information for the item. That infor
 
 For more information, see [IOleInPlaceObject::InPlaceDeactivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-inplacedeactivate) in the Windows SDK.
 
-##  <a name="delete"></a>  COleClientItem::Delete
+## <a name="delete"></a>  COleClientItem::Delete
 
 Call this function to delete the OLE item from the container document.
 
@@ -815,7 +815,7 @@ Specifies whether the item is to be removed from the document.
 
 This function calls the [Release](#release) member function, which in turn deletes the C++ object for the item, permanently removing the OLE item from the document. If the OLE item is embedded, the native data for the item is deleted. It always closes a running server; therefore, if the item is an open link, this function closes it.
 
-##  <a name="dodragdrop"></a>  COleClientItem::DoDragDrop
+## <a name="dodragdrop"></a>  COleClientItem::DoDragDrop
 
 Call the `DoDragDrop` member function to perform a drag-and-drop operation.
 
@@ -863,7 +863,7 @@ The delay time is specified by a registry key setting. You can change the delay 
 
 For more information about how drag delay information is stored in either the registry or the .INI file, see [WriteProfileString](/windows/win32/api/winbase/nf-winbase-writeprofilestringw) in the Windows SDK.
 
-##  <a name="doverb"></a>  COleClientItem::DoVerb
+## <a name="doverb"></a>  COleClientItem::DoVerb
 
 Call `DoVerb` to execute the specified verb.
 
@@ -905,7 +905,7 @@ This function calls the [Activate](#activate) member function to execute the ver
 
 If the primary verb is Edit and zero is specified in the *nVerb* parameter, the server application is launched to allow the OLE item to be edited. If the container application supports in-place activation, editing can be done in place. If the container does not support in-place activation (or if the Open verb is specified), the server is launched in a separate window and editing can be done there. Typically, when the user of the container application double-clicks the OLE item, the value for the primary verb in the *nVerb* parameter determines which action the user can take. However, if the server supports only one action, it takes that action, no matter which value is specified in the *nVerb* parameter.
 
-##  <a name="draw"></a>  COleClientItem::Draw
+## <a name="draw"></a>  COleClientItem::Draw
 
 Call this function to draw the OLE item into the specified bounding rectangle using the specified device context.
 
@@ -941,7 +941,7 @@ The *lpBounds* parameter identifies the rectangle in the target device context (
 
 For more information, see [IViewObject::Draw](/windows/win32/api/oleidl/nf-oleidl-iviewobject-draw) in the Windows SDK.
 
-##  <a name="getactiveview"></a>  COleClientItem::GetActiveView
+## <a name="getactiveview"></a>  COleClientItem::GetActiveView
 
 Returns the view on which the item is in-place activated.
 
@@ -953,7 +953,7 @@ CView* GetActiveView() const;
 
 A pointer to the view; otherwise NULL if the item is not in-place activated.
 
-##  <a name="getcachedextent"></a>  COleClientItem::GetCachedExtent
+## <a name="getcachedextent"></a>  COleClientItem::GetCachedExtent
 
 Call this function to retrieve the OLE item's size.
 
@@ -983,7 +983,7 @@ This is possible because `GetCachedExtent` uses the [IViewObject2](/windows/win3
 
 For more information, see [IViewObject2::GetExtent](/windows/win32/api/oleidl/nf-oleidl-iviewobject2-getextent) in the Windows SDK.
 
-##  <a name="getclassid"></a>  COleClientItem::GetClassID
+## <a name="getclassid"></a>  COleClientItem::GetClassID
 
 Returns the class ID of the item into the memory pointed to by *pClassID*.
 
@@ -1002,7 +1002,7 @@ The class ID is a 128-bit number that uniquely identifies the application that e
 
 For more information, see [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.
 
-##  <a name="getclipboarddata"></a>  COleClientItem::GetClipboardData
+## <a name="getclipboarddata"></a>  COleClientItem::GetClipboardData
 
 Call this function to get a `COleDataSource` object containing all the data that would be placed on the Clipboard by a call to the [CopyToClipboard](#copytoclipboard) member function.
 
@@ -1032,7 +1032,7 @@ The size of the object in pixels.
 
 `GetClipboardData` is called as the default implementation of [OnGetClipboardData](#ongetclipboarddata). Override `OnGetClipboardData` only if you want to offer data formats in addition to those offered by `CopyToClipboard`. Place those formats in the `COleDataSource` object before or after calling `CopyToClipboard`, and then pass the `COleDataSource` object to the [COleDataSource::SetClipboard](../../mfc/reference/coledatasource-class.md#setclipboard) function. For example, if you want the OLE item's position in its container document to accompany it on the Clipboard, you would define your own format for passing that information and place it in the `COleDataSource` before calling `CopyToClipboard`.
 
-##  <a name="getdocument"></a>  COleClientItem::GetDocument
+## <a name="getdocument"></a>  COleClientItem::GetDocument
 
 Call this function to get a pointer to the document that contains the OLE item.
 
@@ -1048,7 +1048,7 @@ A pointer to the document that contains the OLE item. NULL if the item is not pa
 
 This pointer allows access to the `COleDocument` object that you passed as an argument to the `COleClientItem` constructor.
 
-##  <a name="getdrawaspect"></a>  COleClientItem::GetDrawAspect
+## <a name="getdrawaspect"></a>  COleClientItem::GetDrawAspect
 
 Call the `GetDrawAspect` member function to determine the current "aspect," or view, of the item.
 
@@ -1064,7 +1064,7 @@ A value from the DVASPECT enumeration, whose values are listed in the reference 
 
 The aspect specifies how the item is to be rendered.
 
-##  <a name="getextent"></a>  COleClientItem::GetExtent
+## <a name="getextent"></a>  COleClientItem::GetExtent
 
 Call this function to retrieve the OLE item's size.
 
@@ -1095,7 +1095,7 @@ If the server application was written using the Microsoft Foundation Class Libra
 
 For more information, see [IOleObject::GetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getextent) in the Windows SDK.
 
-##  <a name="geticonfromregistry"></a>  COleClientItem::GetIconFromRegistry
+## <a name="geticonfromregistry"></a>  COleClientItem::GetIconFromRegistry
 
 Call this member function to retrieve a handle to an icon resource associated with the server of a particular CLSID.
 
@@ -1118,7 +1118,7 @@ A valid handle to the icon resource, or NULL if the server's icon, or a default 
 
 This member function will not start the server or obtain an icon dynamically, even if the server is already running. Instead, this member function opens the server's executable image and retrieves the static icon associated with the server as it was registered.
 
-##  <a name="geticonicmetafile"></a>  COleClientItem::GetIconicMetafile
+## <a name="geticonicmetafile"></a>  COleClientItem::GetIconicMetafile
 
 Retrieves the metafile used for drawing the item's icon.
 
@@ -1136,7 +1136,7 @@ If there is no current icon, a default icon is returned. This is called automati
 
 This function also calls [SetIconicMetafile](#seticonicmetafile) to cache the metafile for later use.
 
-##  <a name="getinplacewindow"></a>  COleClientItem::GetInPlaceWindow
+## <a name="getinplacewindow"></a>  COleClientItem::GetInPlaceWindow
 
 Call the `GetInPlaceWindow` member function to get a pointer to the window in which the item has been opened for in-place editing.
 
@@ -1152,7 +1152,7 @@ A pointer to the item's in-place editing window; NULL if the item is not active 
 
 This function should be called only for items that are in-place active.
 
-##  <a name="getitemstate"></a>  COleClientItem::GetItemState
+## <a name="getitemstate"></a>  COleClientItem::GetItemState
 
 Call this function to get the OLE item's current state.
 
@@ -1170,7 +1170,7 @@ To be notified when the OLE item's state changes, use the [OnChange](#onchange) 
 
 For more information, see the article [Containers: Client-Item States](../../mfc/containers-client-item-states.md).
 
-##  <a name="getlaststatus"></a>  COleClientItem::GetLastStatus
+## <a name="getlaststatus"></a>  COleClientItem::GetLastStatus
 
 Returns the status code of the last OLE operation.
 
@@ -1188,7 +1188,7 @@ For member functions that return a BOOL value of FALSE, or other member function
 
 For more information on SCODE, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes) in the Windows SDK documentation.
 
-##  <a name="getlinkupdateoptions"></a>  COleClientItem::GetLinkUpdateOptions
+## <a name="getlinkupdateoptions"></a>  COleClientItem::GetLinkUpdateOptions
 
 Call this function to get the current value of the link-update option for the OLE item.
 
@@ -1212,7 +1212,7 @@ This function is called automatically by the [COleLinksDialog](../../mfc/referen
 
 For more information, see [IOleLink::GetUpdateOptions](/windows/win32/api/oleidl/nf-oleidl-iolelink-getupdateoptions) in the Windows SDK.
 
-##  <a name="gettype"></a>  COleClientItem::GetType
+## <a name="gettype"></a>  COleClientItem::GetType
 
 Call this function to determine whether the OLE item is embedded or linked, or static.
 
@@ -1230,7 +1230,7 @@ An unsigned integer with one of the following values:
 
 - OT_STATIC The OLE item is static, that is, it contains only presentation data, not native data, and thus cannot be edited.
 
-##  <a name="getusertype"></a>  COleClientItem::GetUserType
+## <a name="getusertype"></a>  COleClientItem::GetUserType
 
 Call this function to get the user-visible string describing the OLE item's type, such as "Word document."
 
@@ -1262,7 +1262,7 @@ If the full type name is requested but not available, the short name is used ins
 
 For more information, see [IOleObject::GetUserType](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getusertype) in the Windows SDK.
 
-##  <a name="isinplaceactive"></a>  COleClientItem::IsInPlaceActive
+## <a name="isinplaceactive"></a>  COleClientItem::IsInPlaceActive
 
 Call this function to see whether the OLE item is in-place active.
 
@@ -1278,7 +1278,7 @@ Nonzero if the OLE item is in-place active; otherwise 0.
 
 It is common to execute different logic depending on whether the item is being edited in place. The function checks whether the current item state is equal to either the `activeState` or the `activeUIState`.
 
-##  <a name="islinkuptodate"></a>  COleClientItem::IsLinkUpToDate
+## <a name="islinkuptodate"></a>  COleClientItem::IsLinkUpToDate
 
 Call this function to see whether the OLE item is up to date.
 
@@ -1298,7 +1298,7 @@ This is called automatically by the [COleLinksDialog](../../mfc/reference/coleli
 
 For more information, see [IOleObject::IsUpToDate](/windows/win32/api/oleidl/nf-oleidl-ioleobject-isuptodate) in the Windows SDK.
 
-##  <a name="ismodified"></a>  COleClientItem::IsModified
+## <a name="ismodified"></a>  COleClientItem::IsModified
 
 Call this function to see whether the OLE item is dirty (modified since it was last saved).
 
@@ -1314,7 +1314,7 @@ Nonzero if the OLE item is dirty; otherwise 0.
 
 For more information, see [IPersistStorage::IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) in the Windows SDK.
 
-##  <a name="isopen"></a>  COleClientItem::IsOpen
+## <a name="isopen"></a>  COleClientItem::IsOpen
 
 Call this function to see whether the OLE item is open; that is, opened in an instance of the server application running in a separate window.
 
@@ -1330,7 +1330,7 @@ Nonzero if the OLE item is open; otherwise 0.
 
 It is used to determine when to draw the object with a hatching pattern. An open object should have a hatch pattern drawn on top of the object. You can use a [CRectTracker](../../mfc/reference/crecttracker-class.md) object to accomplish this.
 
-##  <a name="isrunning"></a>  COleClientItem::IsRunning
+## <a name="isrunning"></a>  COleClientItem::IsRunning
 
 Call this function to see whether the OLE item is running; that is, whether the item is loaded and running in the server application.
 
@@ -1346,7 +1346,7 @@ Nonzero if the OLE item is running; otherwise 0.
 
 For more information, see [OleIsRunning](/windows/win32/api/ole2/nf-ole2-oleisrunning) in the Windows SDK.
 
-##  <a name="onactivate"></a>  COleClientItem::OnActivate
+## <a name="onactivate"></a>  COleClientItem::OnActivate
 
 Called by the framework to notify the item that it has just been activated in place.
 
@@ -1360,7 +1360,7 @@ Note that this function is called to indicate that the server is running, not to
 
 The default implementation calls the [OnChange](#onchange) member function with OLE_CHANGEDSTATE as a parameter. Override this function to perform custom processing when an item becomes in-place active.
 
-##  <a name="onactivateui"></a>  COleClientItem::OnActivateUI
+## <a name="onactivateui"></a>  COleClientItem::OnActivateUI
 
 The framework calls `OnActivateUI` when the object has entered the active UI state.
 
@@ -1374,7 +1374,7 @@ The object has now installed its tool bar and menus.
 
 The default implementation remembers the server's HWND for later `GetServerWindow` calls.
 
-##  <a name="onchange"></a>  COleClientItem::OnChange
+## <a name="onchange"></a>  COleClientItem::OnChange
 
 Called by the framework when the user modifies, saves, or closes the OLE item.
 
@@ -1408,7 +1408,7 @@ For OLE_CHANGED_STATE, the current state returned from [GetItemState](#getitemst
 
 Override this function to respond to changes in the OLE item's state. Typically you update the item's appearance by invalidating the area in which the item is displayed. Call the base class implementation at the beginning of your override.
 
-##  <a name="onchangeitemposition"></a>  COleClientItem::OnChangeItemPosition
+## <a name="onchangeitemposition"></a>  COleClientItem::OnChangeItemPosition
 
 Called by the framework to notify the container that the OLE item's extent has changed during in-place activation.
 
@@ -1431,7 +1431,7 @@ The default implementation determines the new visible rectangle of the OLE item 
 
 Override this function to apply special rules to the resize/move operation. If the application is written in MFC, this call results because the server called [COleServerDoc::RequestPositionChange](../../mfc/reference/coleserverdoc-class.md#requestpositionchange).
 
-##  <a name="ondeactivate"></a>  COleClientItem::OnDeactivate
+## <a name="ondeactivate"></a>  COleClientItem::OnDeactivate
 
 Called by the framework when the OLE item transitions from the in-place active state ( `activeState`) to the loaded state, meaning that it is deactivated after an in-place activation.
 
@@ -1445,7 +1445,7 @@ Note that this function is called to indicate that the OLE item is closed, not t
 
 The default implementation calls the [OnChange](#onchange) member function with OLE_CHANGEDSTATE as a parameter. Override this function to perform custom processing when an in-place active item is deactivated. For example, if you support the undo command in your container application, you can override this function to discard the undo state, indicating that the last operation performed on the OLE item cannot be undone once the item is deactivated.
 
-##  <a name="ondeactivateandundo"></a>  COleClientItem::OnDeactivateAndUndo
+## <a name="ondeactivateandundo"></a>  COleClientItem::OnDeactivateAndUndo
 
 Called by the framework when the user invokes the undo command after activating the OLE item in place.
 
@@ -1459,7 +1459,7 @@ The default implementation calls [DeactivateUI](#deactivateui) to deactivate the
 
 For more information, see [IOleInPlaceSite::DeactivateAndUndo](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-deactivateandundo) in the Windows SDK.
 
-##  <a name="ondeactivateui"></a>  COleClientItem::OnDeactivateUI
+## <a name="ondeactivateui"></a>  COleClientItem::OnDeactivateUI
 
 Called when the user deactivates an item that was activated in place.
 
@@ -1478,7 +1478,7 @@ This function restores the container application's user interface to its origina
 
 If *bUndoable* is FALSE, the container should disable the undo command, in effect discarding the undo state of the container, because it indicates that the last operation performed by the server is not undoable.
 
-##  <a name="ondiscardundostate"></a>  COleClientItem::OnDiscardUndoState
+## <a name="ondiscardundostate"></a>  COleClientItem::OnDiscardUndoState
 
 Called by the framework when the user performs an action that discards the undo state while editing the OLE item.
 
@@ -1494,7 +1494,7 @@ If the server was written with the Microsoft Foundation Class Library, the serve
 
 For more information, see [IOleInPlaceSite::DiscardUndoState](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-discardundostate) in the Windows SDK.
 
-##  <a name="ongetclipboarddata"></a>  COleClientItem::OnGetClipboardData
+## <a name="ongetclipboarddata"></a>  COleClientItem::OnGetClipboardData
 
 Called by the framework to get a `COleDataSource` object containing all the data that would be placed on the Clipboard by a call to either the [CopyToClipboard](#copytoclipboard) or the [DoDragDrop](#dodragdrop) member function.
 
@@ -1524,7 +1524,7 @@ A pointer to a [COleDataSource](../../mfc/reference/coledatasource-class.md) obj
 
 The default implementation of this function calls [GetClipboardData](#getclipboarddata).
 
-##  <a name="ongetcliprect"></a>  COleClientItem::OnGetClipRect
+## <a name="ongetcliprect"></a>  COleClientItem::OnGetClipRect
 
 The framework calls the `OnGetClipRect` member function to get the clipping-rectangle coordinates of the item that is being edited in place.
 
@@ -1543,7 +1543,7 @@ Coordinates are in pixels relative to the container application window's client 
 
 The default implementation simply returns the client rectangle of the view on which the item is in-place active.
 
-##  <a name="ongetitemposition"></a>  COleClientItem::OnGetItemPosition
+## <a name="ongetitemposition"></a>  COleClientItem::OnGetItemPosition
 
 The framework calls the `OnGetItemPosition` member function to get the coordinates of the item that is being edited in place.
 
@@ -1562,7 +1562,7 @@ Coordinates are in pixels relative to the container application window's client 
 
 The default implementation of this function does nothing. Applications that support in-place editing require its implementation.
 
-##  <a name="ongetwindowcontext"></a>  COleClientItem::OnGetWindowContext
+## <a name="ongetwindowcontext"></a>  COleClientItem::OnGetWindowContext
 
 Called by the framework when an item is activated in place.
 
@@ -1598,7 +1598,7 @@ Override this function only if the default implementation does not suit your app
 
 For more information, see [IOleInPlaceSite::GetWindowContext](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-getwindowcontext) and the [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) structure in the Windows SDK.
 
-##  <a name="oninsertmenus"></a>  COleClientItem::OnInsertMenus
+## <a name="oninsertmenus"></a>  COleClientItem::OnInsertMenus
 
 Called by the framework during in-place activation to insert the container application's menus into an empty menu.
 
@@ -1624,7 +1624,7 @@ The default implementation inserts into *pMenuShared* the in-place container men
 
 For more information, see [IOleInPlaceFrame::InsertMenus](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceframe-insertmenus) in the Windows SDK.
 
-##  <a name="onremovemenus"></a>  COleClientItem::OnRemoveMenus
+## <a name="onremovemenus"></a>  COleClientItem::OnRemoveMenus
 
 Called by the framework to remove the container's menus from the specified composite menu when in-place activation ends.
 
@@ -1645,7 +1645,7 @@ The submenus on *pMenuShared* may be shared by more than one composite menu if t
 
 For more information, see [IOleInPlaceFrame::RemoveMenus](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceframe-removemenus) in the Windows SDK.
 
-##  <a name="onscrollby"></a>  COleClientItem::OnScrollBy
+## <a name="onscrollby"></a>  COleClientItem::OnScrollBy
 
 Called by the framework to scroll the OLE item in response to requests from the server.
 
@@ -1668,7 +1668,7 @@ For example, if the OLE item is partially visible and the user moves outside the
 
 For more information, see [IOleInPlaceSite::Scroll](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-scroll) in the Windows SDK.
 
-##  <a name="onsetmenu"></a>  COleClientItem::OnSetMenu
+## <a name="onsetmenu"></a>  COleClientItem::OnSetMenu
 
 Called by the framework two times when in-place activation begins and ends; the first time to install the composite menu and the second time (with *holemenu* equal to NULL) to remove it.
 
@@ -1696,7 +1696,7 @@ The default implementation installs or removes the composite menu and then calls
 
 For more information, see [OleCreateMenuDescriptor](/windows/win32/api/ole2/nf-ole2-olecreatemenudescriptor), [OleSetMenuDescriptor](/windows/win32/api/ole2/nf-ole2-olesetmenudescriptor), and [IOleInPlaceFrame::SetMenu](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceframe-setmenu) in the Windows SDK.
 
-##  <a name="onshowcontrolbars"></a>  COleClientItem::OnShowControlBars
+## <a name="onshowcontrolbars"></a>  COleClientItem::OnShowControlBars
 
 Called by the framework to show and hide the container application's control bars.
 
@@ -1724,7 +1724,7 @@ This function returns 0 if the control bars are already in the state specified b
 
 The default implementation removes the toolbar from the top-level frame window.
 
-##  <a name="onshowitem"></a>  COleClientItem::OnShowItem
+## <a name="onshowitem"></a>  COleClientItem::OnShowItem
 
 Called by the framework to display the OLE item, making it totally visible during editing.
 
@@ -1736,7 +1736,7 @@ virtual void OnShowItem();
 
 It is used when your container application supports links to embedded items (that is, if you have derived your document class from [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md)). This function is called during in-place activation or when the OLE item is a link source and the user wants to edit it. The default implementation activates the first view on the container document. Override this function to scroll the document so that the OLE item is visible.
 
-##  <a name="onupdateframetitle"></a>  COleClientItem::OnUpdateFrameTitle
+## <a name="onupdateframetitle"></a>  COleClientItem::OnUpdateFrameTitle
 
 Called by the framework during in-place activation to update the frame window's title bar.
 
@@ -1752,7 +1752,7 @@ Nonzero if this function successfully updated the frame title, otherwise zero.
 
 The default implementation does not change the frame window title. Override this function if you want a different frame title for your application, for example " *server app* - *item* in *docname*" (as in, "Microsoft Excel - spreadsheet in REPORT.DOC"). This is an advanced overridable.
 
-##  <a name="reactivateandundo"></a>  COleClientItem::ReactivateAndUndo
+## <a name="reactivateandundo"></a>  COleClientItem::ReactivateAndUndo
 
 Call this function to reactivate the OLE item and undo the last operation performed by the user during in-place editing.
 
@@ -1772,7 +1772,7 @@ If the server application is written with the Microsoft Foundation Class Librari
 
 For more information, see [IOleInPlaceObject::ReactivateAndUndo](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-reactivateandundo) in the Windows SDK.
 
-##  <a name="release"></a>  COleClientItem::Release
+## <a name="release"></a>  COleClientItem::Release
 
 Call this function to clean up resources used by the OLE item.
 
@@ -1791,7 +1791,7 @@ Flag specifying under what circumstances the OLE item is saved when it returns t
 
 For more information, see [IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) in the Windows SDK.
 
-##  <a name="reload"></a>  COleClientItem::Reload
+## <a name="reload"></a>  COleClientItem::Reload
 
 Closes and reloads the item.
 
@@ -1807,7 +1807,7 @@ Nonzero if successful; otherwise 0.
 
 Call the `Reload` function after activating the item as an item of another type by a call to [ActivateAs](#activateas).
 
-##  <a name="run"></a>  COleClientItem::Run
+## <a name="run"></a>  COleClientItem::Run
 
 Runs the application associated with this item.
 
@@ -1819,7 +1819,7 @@ void Run();
 
 Call the `Run` member function to launch the server application before activating the item. This is done automatically by [Activate](#activate) and [DoVerb](#doverb), so it is usually not necessary to call this function. Call this function if it is necessary to run the server in order to set an item attribute, such as [SetExtent](#setextent), before executing [DoVerb](#doverb).
 
-##  <a name="setdrawaspect"></a>  COleClientItem::SetDrawAspect
+## <a name="setdrawaspect"></a>  COleClientItem::SetDrawAspect
 
 Call the `SetDrawAspect` member function to set the "aspect," or view, of the item.
 
@@ -1846,7 +1846,7 @@ The aspect specifies how the item is to be rendered by [Draw](#draw) when the de
 
 This function is called automatically by the Change Icon (and other dialogs that call the Change Icon dialog directly) to enable the iconic display aspect when requested by the user.
 
-##  <a name="setextent"></a>  COleClientItem::SetExtent
+## <a name="setextent"></a>  COleClientItem::SetExtent
 
 Call this function to specify how much space is available to the OLE item.
 
@@ -1870,7 +1870,7 @@ If the server application was written using the Microsoft Foundation Class Libra
 
 For more information, see [IOleObject::SetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setextent) in the Windows SDK.
 
-##  <a name="sethostnames"></a>  COleClientItem::SetHostNames
+## <a name="sethostnames"></a>  COleClientItem::SetHostNames
 
 Call this function to specify the name of the container application and the container's name for an embedded OLE item.
 
@@ -1896,7 +1896,7 @@ This is also called automatically with the application name and document name wh
 
 For more information, see [IOleObject::SetHostNames](/windows/win32/api/oleidl/nf-oleidl-ioleobject-sethostnames) in the Windows SDK.
 
-##  <a name="seticonicmetafile"></a>  COleClientItem::SetIconicMetafile
+## <a name="seticonicmetafile"></a>  COleClientItem::SetIconicMetafile
 
 Caches the metafile used for drawing the item's icon.
 
@@ -1919,7 +1919,7 @@ Use [GetIconicMetafile](#geticonicmetafile) to retrieve the metafile.
 
 The *hMetaPict* parameter is copied into the item; therefore, *hMetaPict* must be freed by the caller.
 
-##  <a name="setitemrects"></a>  COleClientItem::SetItemRects
+## <a name="setitemrects"></a>  COleClientItem::SetItemRects
 
 Call this function to set the bounding rectangle or the visible rectangle of the OLE item.
 
@@ -1947,7 +1947,7 @@ This function is called by the default implementation of the [OnChangeItemPositi
 
 For more information, see [IOleInPlaceObject::SetObjectRects](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-setobjectrects) in the Windows SDK.
 
-##  <a name="setlinkupdateoptions"></a>  COleClientItem::SetLinkUpdateOptions
+## <a name="setlinkupdateoptions"></a>  COleClientItem::SetLinkUpdateOptions
 
 Call this function to set the link-update option for the presentation of the specified linked item.
 
@@ -1970,7 +1970,7 @@ Typically, you should not change the update options chosen by the user in the Li
 
 For more information, see [IOleLink::SetUpdateOptions](/windows/win32/api/oleidl/nf-oleidl-iolelink-setupdateoptions) in the Windows SDK.
 
-##  <a name="setprintdevice"></a>  COleClientItem::SetPrintDevice
+## <a name="setprintdevice"></a>  COleClientItem::SetPrintDevice
 
 Call this function to change the print-target device for this item.
 
@@ -2001,7 +2001,7 @@ For more information about this structure, see [PRINTDLG](/windows/win32/api/com
 
 For more information, see [DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) in the Windows SDK.
 
-##  <a name="updatelink"></a>  COleClientItem::UpdateLink
+## <a name="updatelink"></a>  COleClientItem::UpdateLink
 
 Call this function to update the presentation data of the OLE item immediately.
 

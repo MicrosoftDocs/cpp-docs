@@ -58,7 +58,7 @@ The following example demonstrates how to construct and initialize a `CMenuTearO
 
 **Header:** afxmenutearoffmanager.h
 
-##  <a name="build"></a>  CMenuTearOffManager::Build
+## <a name="build"></a>  CMenuTearOffManager::Build
 
 ```
 void Build(
@@ -74,7 +74,7 @@ void Build(
 
 ### Remarks
 
-##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager
+## <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager
 
 Constructs a [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) object.
 
@@ -86,7 +86,7 @@ CMenuTearOffManager();
 
 In most cases, you should not create a `CMenuTearOffManager` manually. The framework of your application creates the `CMenuTearOffManager` object when you call [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).
 
-##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath
+## <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath
 
 ```
 LPCTSTR GetRegPath() const;
@@ -96,7 +96,7 @@ LPCTSTR GetRegPath() const;
 
 ### Remarks
 
-##  <a name="initialize"></a>  CMenuTearOffManager::Initialize
+## <a name="initialize"></a>  CMenuTearOffManager::Initialize
 
 Initializes a [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) object.
 
@@ -126,7 +126,7 @@ Nonzero if successful; otherwise 0.
 
 The range of menu IDs from *uiTearOffMenuFirst* to *uiTearOffMenuLast* must be a continuous interval. The interval defines the number of tear-off menus that can appear at the same time in the application.
 
-##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID
+## <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID
 
 ```
 BOOL IsDynamicID(UINT uiID) const;
@@ -140,7 +140,7 @@ BOOL IsDynamicID(UINT uiID) const;
 
 ### Remarks
 
-##  <a name="parse"></a>  CMenuTearOffManager::Parse
+## <a name="parse"></a>  CMenuTearOffManager::Parse
 
 ```
 UINT Parse(CString& str);
@@ -154,7 +154,7 @@ UINT Parse(CString& str);
 
 ### Remarks
 
-##  <a name="reset"></a>  CMenuTearOffManager::Reset
+## <a name="reset"></a>  CMenuTearOffManager::Reset
 
 ```
 void Reset(HMENU hmenu);
@@ -166,7 +166,7 @@ void Reset(HMENU hmenu);
 
 ### Remarks
 
-##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse
+## <a name="setinuse"></a>  CMenuTearOffManager::SetInUse
 
 ```
 void SetInUse(
@@ -182,7 +182,7 @@ void SetInUse(
 
 ### Remarks
 
-##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus
+## <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus
 
 ```
 void SetupTearOffMenus(HMENU hMenu);

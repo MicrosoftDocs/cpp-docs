@@ -63,7 +63,7 @@ Construct a `CPaneDialog` object in two steps. First, construct the object in yo
 
 **Header:** afxpanedialog.h
 
-##  <a name="create"></a>  CPaneDialog::Create
+## <a name="create"></a>  CPaneDialog::Create
 
 Creates a docking dialog box and attaches it to a `CPaneDialog` object.
 
@@ -141,7 +141,7 @@ The following example demonstrates how to use the `Create` method in the `CPaneD
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanedialog-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/cpp/cpanedialog-class_2.cpp)]
 
-##  <a name="handleinitdialog"></a>  CPaneDialog::HandleInitDialog
+## <a name="handleinitdialog"></a>  CPaneDialog::HandleInitDialog
 
 Handles the [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) message.
 
@@ -167,7 +167,7 @@ TRUE if this method is successful; otherwise, FALSE. In addition, TRUE sets the 
 
 The framework uses this method to initialize controls and the appearance of a dialog box. The framework calls this method before it displays the dialog box.
 
-##  <a name="setoccdialoginfo"></a>  CPaneDialog::SetOccDialogInfo
+## <a name="setoccdialoginfo"></a>  CPaneDialog::SetOccDialogInfo
 
 Specifies the template for a dialog box that is an OLE control container.
 

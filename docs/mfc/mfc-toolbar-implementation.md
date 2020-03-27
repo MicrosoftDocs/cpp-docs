@@ -31,13 +31,13 @@ The following are introduced in this article:
 
 - [The Toolbar bitmap](#_core_the_toolbar_bitmap)
 
-##  <a name="_core_toolbar_buttons"></a> Toolbar Buttons
+## <a name="_core_toolbar_buttons"></a> Toolbar Buttons
 
 The buttons in a toolbar are analogous to the items in a menu. Both kinds of user-interface objects generate commands, which your program handles by providing handler functions. Often toolbar buttons duplicate the functionality of menu commands, providing an alternative user interface to the same functionality. Such duplication is arranged simply by giving the button and the menu item the same ID.
 
 You can make the buttons in a toolbar appear and behave as pushbuttons, check boxes, or radio buttons. For more information, see class [CToolBar](../mfc/reference/ctoolbar-class.md).
 
-##  <a name="_core_docking_and_floating_toolbars"></a> Docking and Floating Toolbars
+## <a name="_core_docking_and_floating_toolbars"></a> Docking and Floating Toolbars
 
 An MFC toolbar can:
 
@@ -51,11 +51,11 @@ An MFC toolbar can:
 
 For more information, see the article [Docking and Floating Toolbars](../mfc/docking-and-floating-toolbars.md).
 
-##  <a name="_core_toolbars_and_tool_tips"></a> Toolbars and Tool Tips
+## <a name="_core_toolbars_and_tool_tips"></a> Toolbars and Tool Tips
 
 MFC toolbars can also be made to display "tool tips" — tiny popup windows containing a short text description of a toolbar button's purpose. As the user moves the mouse over a toolbar button, the tool tip window pops up to offer a hint. For more information, see the article [Toolbar Tool Tips](../mfc/toolbar-tool-tips.md).
 
-##  <a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a> The CToolBar and CToolBarCtrl Classes
+## <a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a> The CToolBar and CToolBarCtrl Classes
 
 You manage your application's toolbars via class [CToolBar](../mfc/reference/ctoolbar-class.md). As of MFC version 4.0, `CToolBar` has been reimplemented to use the toolbar common control available under Windows 95 or later and Windows NT version 3.51 or later.
 
@@ -66,7 +66,7 @@ This reimplementation results in less MFC code for toolbars, because MFC makes u
 
 Also see the MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md).
 
-##  <a name="_core_the_toolbar_bitmap"></a> The Toolbar Bitmap
+## <a name="_core_the_toolbar_bitmap"></a> The Toolbar Bitmap
 
 Once constructed, a `CToolBar` object creates the toolbar image by loading a single bitmap that contains one image for each button. The Application Wizard creates a standard toolbar bitmap that you can customize with the Visual C++ [toolbar editor](../windows/toolbar-editor.md).
 

@@ -46,7 +46,7 @@ This class adds a single cast operator to allow implicit conversion of `CAtlFile
 
 **Header:** atlfile.h
 
-##  <a name="operator_t_star"></a>  CAtlFileMapping::operator T*
+## <a name="operator_t_star"></a>  CAtlFileMapping::operator T*
 
 Allows implicit conversion of `CAtlFileMapping` objects to `T*`.
 

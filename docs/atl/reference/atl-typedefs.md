@@ -28,7 +28,7 @@ The Active Template Library includes the following typedefs.
 |[LPCURL](#lpcurl)|A pointer to a constant [CUrl](../../atl/reference/curl-class.md) object.|
 |[LPURL](#lpurl)|A pointer to a [CUrl](../../atl/reference/curl-class.md) object.|
 
-##  <a name="_atl_base_module"></a>  _ATL_BASE_MODULE
+## <a name="_atl_base_module"></a>  _ATL_BASE_MODULE
 
 Defined as a typedef based on _ATL_BASE_MODULE70.
 
@@ -46,7 +46,7 @@ Classes that are part of the ATL 7.0 Module Classes derive from the _ATL_BASE_MO
 
 **Header:** atlcore.h
 
-##  <a name="_atl_com_module"></a>  _ATL_COM_MODULE
+## <a name="_atl_com_module"></a>  _ATL_COM_MODULE
 
 Defined as a typedef based on _ATL_COM_MODULE70.
 
@@ -62,7 +62,7 @@ Used by ATL projects which use COM features. Based on [_ATL_COM_MODULE70](../../
 
 **Header:** atlbase.h
 
-##  <a name="_atl_module"></a>  _ATL_MODULE
+## <a name="_atl_module"></a>  _ATL_MODULE
 
 Defined as a typedef based on _ATL_MODULE70.
 
@@ -78,7 +78,7 @@ typedef ATL::_ATL_MODULE70 _ATL_MODULE;
 
 Based on [_ATL_MODULE70](../../atl/reference/atl-module70-structure.md).
 
-##  <a name="_atl_win_module"></a>  _ATL_WIN_MODULE
+## <a name="_atl_win_module"></a>  _ATL_WIN_MODULE
 
 Defined as a typedef based on _ATL_WIN_MODULE70.
 
@@ -94,7 +94,7 @@ Used by any ATL projects which use windowing features. Based on [_ATL_WIN_MODULE
 
 **Header:** atlbase.h
 
-##  <a name="atl_url_port"></a>  ATL_URL_PORT
+## <a name="atl_url_port"></a>  ATL_URL_PORT
 
 The type used by [CUrl](curl-class.md) for specifying a port number.
 
@@ -106,7 +106,7 @@ typedef WORD ATL_URL_PORT;
 
 **Header:** atlutil.h
 
-##  <a name="ccomdispatchdriver"></a>  CComDispatchDriver
+## <a name="ccomdispatchdriver"></a>  CComDispatchDriver
 
 This class manages COM interface pointers.
 
@@ -118,7 +118,7 @@ typedef CComQIPtr<IDispatch, &__uuidof(IDispatch)> CComDispatchDriver;
 
 **Header:** atlbase.h
 
-##  <a name="ccomglobalsthreadmodel"></a>  CComGlobalsThreadModel
+## <a name="ccomglobalsthreadmodel"></a>  CComGlobalsThreadModel
 
 Calls the appropriate thread model methods, regardless of the threading model being used.
 
@@ -158,7 +158,7 @@ Use `CComObjectThreadModel` within a single object class. Use `CComGlobalsThread
 
 **Header:** atlbase.h
 
-##  <a name="ccomobjectthreadmodel"></a>  CComObjectThreadModel
+## <a name="ccomobjectthreadmodel"></a>  CComObjectThreadModel
 
 Calls the appropriate thread model methods, regardless of the threading model being used.
 
@@ -198,7 +198,7 @@ Use `CComObjectThreadModel` within a single object class. Use `CComGlobalsThread
 
 **Header:** atlbase.h
 
-##  <a name="ccontainedwindow"></a>  CContainedWindow
+## <a name="ccontainedwindow"></a>  CContainedWindow
 
 This class is a specialization of `CContainedWindowT`.
 
@@ -214,7 +214,7 @@ typedef CContainedWindowT<CWindow> CContainedWindow;
 
 `CContainedWindow` is a specialization of [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md). If you want to change the base class or traits, use `CContainedWindowT` directly.
 
-##  <a name="cpath"></a>  CPath
+## <a name="cpath"></a>  CPath
 
 A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CString`.
 
@@ -226,7 +226,7 @@ typedef CPathT<CString> CPath;
 
 **Header:** atlpath.h
 
-##  <a name="cpatha"></a>  CPathA
+## <a name="cpatha"></a>  CPathA
 
 A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringA`.
 
@@ -238,7 +238,7 @@ typedef CPathT<CStringA> CPathA;
 
 **Header:** atlpath.h
 
-##  <a name="cpathw"></a>  CPathW
+## <a name="cpathw"></a>  CPathW
 
 A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringW`.
 
@@ -250,7 +250,7 @@ typedef ATL::CPathT<CStringW> CPathW;
 
 **Header:** atlpath.h
 
-##  <a name="csimplevalarray"></a>  CSimpleValArray
+## <a name="csimplevalarray"></a>  CSimpleValArray
 
 Represents an array for storing simple types.
 
@@ -266,7 +266,7 @@ Represents an array for storing simple types.
 
 **Header:** atlsimpcoll.h
 
-##  <a name="lpcurl"></a>  LPCURL
+## <a name="lpcurl"></a>  LPCURL
 
 A pointer to a constant [CUrl](../../atl/reference/curl-class.md) object.
 
@@ -278,7 +278,7 @@ typedef const CUrl* LPCURL;
 
 **Header:** atlutil.h
 
-##  <a name="defaultthreadtraits"></a>  DefaultThreadTraits
+## <a name="defaultthreadtraits"></a>  DefaultThreadTraits
 
 The default thread traits class.
 
@@ -300,7 +300,7 @@ If the current project uses the multithreaded CRT, DefaultThreadTraits is define
 
 **Header:** atlbase.h
 
-##  <a name="lpurl"></a>  LPURL
+## <a name="lpurl"></a>  LPURL
 
 A pointer to a [CUrl](../../atl/reference/curl-class.md) object.
 

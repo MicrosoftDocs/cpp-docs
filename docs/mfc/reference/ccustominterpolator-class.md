@@ -59,7 +59,7 @@ Derive a class from CCustomInterpolator and override all necessary methods in or
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="ccustominterpolator"></a>  CCustomInterpolator::CCustomInterpolator
+## <a name="ccustominterpolator"></a>  CCustomInterpolator::CCustomInterpolator
 
 Constructs a custom interpolator object and sets all values to default 0.
 
@@ -82,7 +82,7 @@ The duration of the transition.
 
 Use CCustomInterpolator::Init to initialize duration and final value later in the code.
 
-##  <a name="getdependencies"></a>  CCustomInterpolator::GetDependencies
+## <a name="getdependencies"></a>  CCustomInterpolator::GetDependencies
 
 Gets the interpolator's dependencies.
 
@@ -108,7 +108,7 @@ Output. Aspects of the interpolator that depend on the duration passed to SetDur
 
 Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.
 
-##  <a name="getduration"></a>  CCustomInterpolator::GetDuration
+## <a name="getduration"></a>  CCustomInterpolator::GetDuration
 
 Gets the interpolator's duration.
 
@@ -125,7 +125,7 @@ Output. The duration of the transition, in seconds.
 
 Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.
 
-##  <a name="getfinalvalue"></a>  CCustomInterpolator::GetFinalValue
+## <a name="getfinalvalue"></a>  CCustomInterpolator::GetFinalValue
 
 Gets the final value to which the interpolator leads.
 
@@ -142,7 +142,7 @@ Output. The final value of a variable at the end of the transition.
 
 Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.
 
-##  <a name="init"></a>  CCustomInterpolator::Init
+## <a name="init"></a>  CCustomInterpolator::Init
 
 Initializes duration and final value.
 
@@ -160,7 +160,7 @@ The duration of the transition.
 *finalValue*<br/>
 The final value of a variable at the end of the transition.
 
-##  <a name="interpolatevalue"></a>  CCustomInterpolator::InterpolateValue
+## <a name="interpolatevalue"></a>  CCustomInterpolator::InterpolateValue
 
 Interpolates the value at a given offset.
 
@@ -179,7 +179,7 @@ Output. The interpolated value.
 
 Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.
 
-##  <a name="interpolatevelocity"></a>  CCustomInterpolator::InterpolateVelocity
+## <a name="interpolatevelocity"></a>  CCustomInterpolator::InterpolateVelocity
 
 Interpolates the velocity at a given offset
 
@@ -198,7 +198,7 @@ Output. The velocity of the variable at the offset.
 
 Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.
 
-##  <a name="m_currentvalue"></a>  CCustomInterpolator::m_currentValue
+## <a name="m_currentvalue"></a>  CCustomInterpolator::m_currentValue
 
 The interpolated value.
 
@@ -206,7 +206,7 @@ The interpolated value.
 DOUBLE m_currentValue;
 ```
 
-##  <a name="m_currentvelocity"></a>  CCustomInterpolator::m_currentVelocity
+## <a name="m_currentvelocity"></a>  CCustomInterpolator::m_currentVelocity
 
 The interpolated velocity.
 
@@ -214,7 +214,7 @@ The interpolated velocity.
 DOUBLE m_currentVelocity;
 ```
 
-##  <a name="m_duration"></a>  CCustomInterpolator::m_duration
+## <a name="m_duration"></a>  CCustomInterpolator::m_duration
 
 The duration of the transition.
 
@@ -222,7 +222,7 @@ The duration of the transition.
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-##  <a name="m_finalvalue"></a>  CCustomInterpolator::m_finalValue
+## <a name="m_finalvalue"></a>  CCustomInterpolator::m_finalValue
 
 The final value of a variable at the end of the transition.
 
@@ -230,7 +230,7 @@ The final value of a variable at the end of the transition.
 DOUBLE m_finalValue;
 ```
 
-##  <a name="m_initialvalue"></a>  CCustomInterpolator::m_initialValue
+## <a name="m_initialvalue"></a>  CCustomInterpolator::m_initialValue
 
 The value of the variable at the start of the transition.
 
@@ -238,7 +238,7 @@ The value of the variable at the start of the transition.
 DOUBLE m_initialValue;
 ```
 
-##  <a name="m_initialvelocity"></a>  CCustomInterpolator::m_initialVelocity
+## <a name="m_initialvelocity"></a>  CCustomInterpolator::m_initialVelocity
 
 The velocity of the variable at the start of the transition.
 
@@ -246,7 +246,7 @@ The velocity of the variable at the start of the transition.
 DOUBLE m_initialVelocity;
 ```
 
-##  <a name="setduration"></a>  CCustomInterpolator::SetDuration
+## <a name="setduration"></a>  CCustomInterpolator::SetDuration
 
 Sets the interpolator's duration.
 
@@ -263,7 +263,7 @@ The duration of the transition.
 
 Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.
 
-##  <a name="setinitialvalueandvelocity"></a>  CCustomInterpolator::SetInitialValueAndVelocity
+## <a name="setinitialvalueandvelocity"></a>  CCustomInterpolator::SetInitialValueAndVelocity
 
 Sets the interpolator's initial value and velocity.
 

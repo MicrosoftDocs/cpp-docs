@@ -50,7 +50,7 @@ See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).
 
 **Header:** atlmem.h
 
-##  <a name="allocate"></a>  CLocalHeap::Allocate
+## <a name="allocate"></a>  CLocalHeap::Allocate
 
 Call this method to allocate a block of memory.
 
@@ -73,7 +73,7 @@ Call [CLocalHeap::Free](#free) or [CLocalHeap::Reallocate](#reallocate) to free 
 
 Implemented using [LocalAlloc](/windows/win32/api/winbase/nf-winbase-localalloc) with a flag parameter of LMEM_FIXED.
 
-##  <a name="free"></a>  CLocalHeap::Free
+## <a name="free"></a>  CLocalHeap::Free
 
 Call this method to free a block of memory allocated by this memory manager.
 
@@ -90,7 +90,7 @@ Pointer to memory previously allocated by this memory manager. NULL is a valid v
 
 Implemented using [LocalFree](/windows/win32/api/winbase/nf-winbase-localfree).
 
-##  <a name="getsize"></a>  CLocalHeap::GetSize
+## <a name="getsize"></a>  CLocalHeap::GetSize
 
 Call this method to get the allocated size of a memory block allocated by this memory manager.
 
@@ -111,7 +111,7 @@ Returns the size of the allocated memory block in bytes.
 
 Implemented using [LocalSize](/windows/win32/api/winbase/nf-winbase-localsize).
 
-##  <a name="reallocate"></a>  CLocalHeap::Reallocate
+## <a name="reallocate"></a>  CLocalHeap::Reallocate
 
 Call this method to reallocate memory allocated by this memory manager.
 

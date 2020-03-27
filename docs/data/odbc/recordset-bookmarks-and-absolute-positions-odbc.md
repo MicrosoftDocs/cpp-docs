@@ -17,7 +17,7 @@ This topic explains:
 
 - [How to set the current record using absolute positions](#_core_absolute_positions_in_mfc_odbc).
 
-##  <a name="_core_bookmarks_in_mfc_odbc"></a> Bookmarks in MFC ODBC
+## <a name="_core_bookmarks_in_mfc_odbc"></a> Bookmarks in MFC ODBC
 
 A bookmark uniquely identifies a record. When you navigate through a recordset, you cannot always rely on the absolute position of a record because records can be deleted from the recordset. The reliable way to keep track of the position of a record is to use its bookmark. Class `CRecordset` supplies member functions for:
 
@@ -45,7 +45,7 @@ You do not need to extract the underlying data type from the [CDBVariant Class](
 > [!NOTE]
 >  Depending on your ODBC driver and recordset type, bookmarks might not be supported. You can easily determine whether bookmarks are supported by calling [CRecordset::CanBookmark](../../mfc/reference/crecordset-class.md#canbookmark). Furthermore, if bookmarks are supported, you must explicitly choose to implement them by specifying the `CRecordset::useBookmarks` option in the [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) member function. You should also check the persistence of bookmarks after certain recordset operations. For example, if you `Requery` a recordset, bookmarks might no longer be valid. Call [CDatabase::GetBookmarkPersistence](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) to check whether you can safely call `SetBookmark`.
 
-##  <a name="_core_absolute_positions_in_mfc_odbc"></a> Absolute Positions in MFC ODBC
+## <a name="_core_absolute_positions_in_mfc_odbc"></a> Absolute Positions in MFC ODBC
 
 Besides bookmarks, class `CRecordset` allows you to set the current record by specifying an ordinal position. This is called absolute positioning.
 

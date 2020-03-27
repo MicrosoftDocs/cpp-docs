@@ -62,7 +62,7 @@ For more information on using `CTypedPtrMap`, see the articles [Collections](../
 
 **Header:** afxtempl.h
 
-##  <a name="getnextassoc"></a>  CTypedPtrMap::GetNextAssoc
+## <a name="getnextassoc"></a>  CTypedPtrMap::GetNextAssoc
 
 Retrieves the map element at `rNextPosition`, then updates `rNextPosition` to refer to the next element in the map.
 
@@ -98,7 +98,7 @@ If the retrieved element is the last in the map, then the new value of `rNextPos
 
 This inline function calls `BASE_CLASS`**::GetNextAssoc**.
 
-##  <a name="lookup"></a>  CTypedPtrMap::Lookup
+## <a name="lookup"></a>  CTypedPtrMap::Lookup
 
 `Lookup` uses a hashing algorithm to quickly find the map element with a key that matches exactly.
 
@@ -128,7 +128,7 @@ Nonzero if the element was found; otherwise 0.
 
 This inline function calls `BASE_CLASS`**::Lookup**.
 
-##  <a name="operator_at"></a>  CTypedPtrMap::operator [ ]
+## <a name="operator_at"></a>  CTypedPtrMap::operator [ ]
 
 This operator can be used only on the left side of an assignment statement (an l-value).
 
@@ -151,7 +151,7 @@ The key of the element to be looked up or created in the map.
 
 If there is no map element with the specified key, then a new element is created. There is no "right side" (r-value) equivalent to this operator because there is a possibility that a key may not be found in the map. Use the `Lookup` member function for element retrieval.
 
-##  <a name="removekey"></a>  CTypedPtrMap::RemoveKey
+## <a name="removekey"></a>  CTypedPtrMap::RemoveKey
 
 This member function calls `BASE_CLASS`**::RemoveKey**.
 
@@ -175,7 +175,7 @@ Nonzero if the entry was found and successfully removed; otherwise 0.
 
 For more detailed remarks, see [CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey).
 
-##  <a name="setat"></a>  CTypedPtrMap::SetAt
+## <a name="setat"></a>  CTypedPtrMap::SetAt
 
 This member function calls `BASE_CLASS`**::SetAt**.
 

@@ -71,7 +71,7 @@ For more information regarding OLE-specific dialog boxes, see the article [Dialo
 
 **Header:** afxodlgs.h
 
-##  <a name="addformat"></a>  COlePasteSpecialDialog::AddFormat
+## <a name="addformat"></a>  COlePasteSpecialDialog::AddFormat
 
 Call this function to add new formats to the list of formats your application can support in a Paste Special operation.
 
@@ -127,7 +127,7 @@ For more information, see the [TYMED](/windows/win32/api/objidl/ne-objidl-tymed)
 
 For more information, see the [OLEUIPASTEFLAG](/windows/win32/api/oledlg/ne-oledlg-oleuipasteflag) enumerated type in the Windows SDK.
 
-##  <a name="addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry
+## <a name="addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry
 
 Adds a new entry to the list of supported Clipboard formats.
 
@@ -144,7 +144,7 @@ The clipboard format to add.
 
 An [OLEUIPASTEFLAG](/windows/win32/api/oledlg/ne-oledlg-oleuipasteflag) structure containing the information for the new link entry.
 
-##  <a name="addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats
+## <a name="addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats
 
 Call this function to add the following Clipboard formats to the list of formats your application can support in a Paste Special operation:
 
@@ -171,7 +171,7 @@ Flag that determines whether to add CF_LINKSOURCE to the list of formats your ap
 
 These formats are used to support embedding and linking.
 
-##  <a name="colepastespecialdialog"></a>  COlePasteSpecialDialog::COlePasteSpecialDialog
+## <a name="colepastespecialdialog"></a>  COlePasteSpecialDialog::COlePasteSpecialDialog
 
 Constructs a `COlePasteSpecialDialog` object.
 
@@ -207,7 +207,7 @@ This function only constructs a `COlePasteSpecialDialog` object. To display the 
 
 For more information, see the [OLEUIPASTEFLAG](/windows/win32/api/oledlg/ne-oledlg-oleuipasteflag) enumerated type in the Windows SDK.
 
-##  <a name="createitem"></a>  COlePasteSpecialDialog::CreateItem
+## <a name="createitem"></a>  COlePasteSpecialDialog::CreateItem
 
 Creates the new item that was chosen in the Paste Special dialog box.
 
@@ -228,7 +228,7 @@ Nonzero if the item was created successfully; otherwise 0.
 
 This function should only be called after [DoModal](#domodal) returns IDOK.
 
-##  <a name="domodal"></a>  COlePasteSpecialDialog::DoModal
+## <a name="domodal"></a>  COlePasteSpecialDialog::DoModal
 
 Displays the OLE Paste Special dialog box.
 
@@ -252,7 +252,7 @@ If you want to initialize the various dialog box controls by setting members of 
 
 If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information input by the user into the dialog box.
 
-##  <a name="getdrawaspect"></a>  COlePasteSpecialDialog::GetDrawAspect
+## <a name="getdrawaspect"></a>  COlePasteSpecialDialog::GetDrawAspect
 
 Determines if the user chose to display the selected item as an icon.
 
@@ -274,7 +274,7 @@ Only call this function after [DoModal](#domodal) returns IDOK.
 
 For more information on drawing aspect, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure in the Windows SDK.
 
-##  <a name="geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile
+## <a name="geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile
 
 Gets the metafile associated with the item selected by the user.
 
@@ -286,7 +286,7 @@ HGLOBAL GetIconicMetafile() const;
 
 The handle to the metafile containing the iconic aspect of the selected item, if the Display As Icon check box was selected when the dialog box was dismissed by choosing **OK**; otherwise NULL.
 
-##  <a name="getpasteindex"></a>  COlePasteSpecialDialog::GetPasteIndex
+## <a name="getpasteindex"></a>  COlePasteSpecialDialog::GetPasteIndex
 
 Gets the index value associated with the entry the user selected.
 
@@ -302,7 +302,7 @@ The index into the array of `OLEUIPASTEENTRY` structures that was selected by th
 
 For more information, see the [OLEUIPASTEENTRY](/windows/win32/api/oledlg/ns-oledlg-oleuipasteentryw) structure in the Windows SDK.
 
-##  <a name="getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType
+## <a name="getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType
 
 Determines the type of selection the user made.
 
@@ -337,7 +337,7 @@ Brief desccriptions of these values follow:
 
 - `COlePasteSpecialDialog::pasteStatic` The chosen format was a metafile.
 
-##  <a name="m_ps"></a>  COlePasteSpecialDialog::m_ps
+## <a name="m_ps"></a>  COlePasteSpecialDialog::m_ps
 
 Structure of type OLEUIPASTESPECIAL used to control the behavior of the Paste Special dialog box.
 

@@ -53,7 +53,7 @@ This handler is created and passed to `IUIAnimationTransitionFactory::CreateTran
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="cinterpolatorbase"></a>  CInterpolatorBase::CInterpolatorBase
+## <a name="cinterpolatorbase"></a>  CInterpolatorBase::CInterpolatorBase
 
 Constructs the CInterpolatorBase object.
 
@@ -61,7 +61,7 @@ Constructs the CInterpolatorBase object.
 CInterpolatorBase();
 ```
 
-##  <a name="createinstance"></a>  CInterpolatorBase::CreateInstance
+## <a name="createinstance"></a>  CInterpolatorBase::CreateInstance
 
 Creates an instance of CInterpolatorBase and stores a pointer to custom interpolator, which will be handling events.
 
@@ -81,7 +81,7 @@ Output. Contains a pointer to instance of CInterpolatorBase when the function re
 
 ### Return Value
 
-##  <a name="getdependencies"></a>  CInterpolatorBase::GetDependencies
+## <a name="getdependencies"></a>  CInterpolatorBase::GetDependencies
 
 Gets the interpolator's dependencies.
 
@@ -107,7 +107,7 @@ Output. Aspects of the interpolator that depend on the duration passed to SetDur
 
 If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the GetDependencies method.
 
-##  <a name="getduration"></a>  CInterpolatorBase::GetDuration
+## <a name="getduration"></a>  CInterpolatorBase::GetDuration
 
 Gets the interpolator's duration.
 
@@ -124,7 +124,7 @@ Output. The duration of the transition, in seconds.
 
 If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the GetDuration method.
 
-##  <a name="getfinalvalue"></a>  CInterpolatorBase::GetFinalValue
+## <a name="getfinalvalue"></a>  CInterpolatorBase::GetFinalValue
 
 Gets the final value to which the interpolator leads.
 
@@ -141,7 +141,7 @@ Output. The final value of a variable at the end of the transition.
 
 If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the GetFinalValue method.
 
-##  <a name="interpolatevalue"></a>  CInterpolatorBase::InterpolateValue
+## <a name="interpolatevalue"></a>  CInterpolatorBase::InterpolateValue
 
 Interpolates the value at a given offset
 
@@ -163,7 +163,7 @@ Output. The interpolated value.
 
 If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the InterpolateValue method.
 
-##  <a name="interpolatevelocity"></a>  CInterpolatorBase::InterpolateVelocity
+## <a name="interpolatevelocity"></a>  CInterpolatorBase::InterpolateVelocity
 
 Interpolates the velocity at a given offset
 
@@ -185,7 +185,7 @@ Output. The velocity of the variable at the offset.
 
 If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the InterpolateVelocity method.
 
-##  <a name="setcustominterpolator"></a>  CInterpolatorBase::SetCustomInterpolator
+## <a name="setcustominterpolator"></a>  CInterpolatorBase::SetCustomInterpolator
 
 Stores a pointer to custom interpolator, which will be handling events.
 
@@ -198,7 +198,7 @@ void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
 *pInterpolator*<br/>
 A pointer to custom interpolator.
 
-##  <a name="setduration"></a>  CInterpolatorBase::SetDuration
+## <a name="setduration"></a>  CInterpolatorBase::SetDuration
 
 Sets the interpolator's duration
 
@@ -215,7 +215,7 @@ The duration of the transition.
 
 If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the SetDuration method.
 
-##  <a name="setinitialvalueandvelocity"></a>  CInterpolatorBase::SetInitialValueAndVelocity
+## <a name="setinitialvalueandvelocity"></a>  CInterpolatorBase::SetInitialValueAndVelocity
 
 Sets the interpolator's initial value and velocity.
 

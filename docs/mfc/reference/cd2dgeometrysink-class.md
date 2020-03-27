@@ -63,7 +63,7 @@ class CD2DGeometrySink;
 
 **Header:** afxrendertarget.h
 
-##  <a name="_dtorcd2dgeometrysink"></a>  CD2DGeometrySink::~CD2DGeometrySink
+## <a name="_dtorcd2dgeometrysink"></a>  CD2DGeometrySink::~CD2DGeometrySink
 
 The destructor. Called when a D2D geometry sink object is being destroyed.
 
@@ -71,7 +71,7 @@ The destructor. Called when a D2D geometry sink object is being destroyed.
 virtual ~CD2DGeometrySink();
 ```
 
-##  <a name="addarc"></a>  CD2DGeometrySink::AddArc
+## <a name="addarc"></a>  CD2DGeometrySink::AddArc
 
 Adds a single arc to the path geometry
 
@@ -84,7 +84,7 @@ void AddArc(const D2D1_ARC_SEGMENT& arc);
 *arc*<br/>
 The arc segment to add to the figure
 
-##  <a name="addbezier"></a>  CD2DGeometrySink::AddBezier
+## <a name="addbezier"></a>  CD2DGeometrySink::AddBezier
 
 Creates a cubic Bezier curve between the current point and the specified end point.
 
@@ -97,7 +97,7 @@ void AddBezier(const D2D1_BEZIER_SEGMENT& bezier);
 *bezier*<br/>
 A structure that describes the control points and end point of the Bezier curve to add.
 
-##  <a name="addbeziers"></a>  CD2DGeometrySink::AddBeziers
+## <a name="addbeziers"></a>  CD2DGeometrySink::AddBeziers
 
 Creates a sequence of cubic Bezier curves and adds them to the geometry sink.
 
@@ -112,7 +112,7 @@ void AddBeziers(
 *beziers*<br/>
 An array of Bezier segments that describes the Bezier curves to create. A curve is drawn from the geometry sink's current point (the end point of the last segment drawn or the location specified by BeginFigure) to the end point of the first Bezier segment in the array. if the array contains additional Bezier segments, each subsequent Bezier segment uses the end point of the preceding Bezier segment as its start point.
 
-##  <a name="addline"></a>  CD2DGeometrySink::AddLine
+## <a name="addline"></a>  CD2DGeometrySink::AddLine
 
 Creates a line segment between the current point and the specified end point and adds it to the geometry sink.
 
@@ -125,7 +125,7 @@ void AddLine(CD2DPointF point);
 *point*<br/>
 The end point of the line to draw.
 
-##  <a name="addlines"></a>  CD2DGeometrySink::AddLines
+## <a name="addlines"></a>  CD2DGeometrySink::AddLines
 
 Creates a sequence of lines using the specified points and adds them to the geometry sink.
 
@@ -140,7 +140,7 @@ void AddLines(
 *points*<br/>
 An array of one or more points that describe the lines to draw. A line is drawn from the geometry sink's current point (the end point of the last segment drawn or the location specified by BeginFigure) to the first point in the array. if the array contains additional points, a line is drawn from the first point to the second point in the array, from the second point to the third point, and so on. An array of a sequence of the end points of the lines to draw.
 
-##  <a name="addquadraticbezier"></a>  CD2DGeometrySink::AddQuadraticBezier
+## <a name="addquadraticbezier"></a>  CD2DGeometrySink::AddQuadraticBezier
 
 Creates a quadratic Bezier curve between the current point and the specified end point.
 
@@ -153,7 +153,7 @@ void AddQuadraticBezier(const D2D1_QUADRATIC_BEZIER_SEGMENT& bezier);
 *bezier*<br/>
 A structure that describes the control point and the end point of the quadratic Bezier curve to add.
 
-##  <a name="addquadraticbeziers"></a>  CD2DGeometrySink::AddQuadraticBeziers
+## <a name="addquadraticbeziers"></a>  CD2DGeometrySink::AddQuadraticBeziers
 
 Adds a sequence of quadratic Bezier segments as an array in a single call.
 
@@ -168,7 +168,7 @@ void AddQuadraticBeziers(
 *beziers*<br/>
 An array of a sequence of quadratic Bezier segments.
 
-##  <a name="beginfigure"></a>  CD2DGeometrySink::BeginFigure
+## <a name="beginfigure"></a>  CD2DGeometrySink::BeginFigure
 
 Starts a new figure at the specified point.
 
@@ -186,7 +186,7 @@ The point at which to begin the new figure.
 *figureBegin*<br/>
 Whether the new figure should be hollow or filled.
 
-##  <a name="cd2dgeometrysink"></a>  CD2DGeometrySink::CD2DGeometrySink
+## <a name="cd2dgeometrysink"></a>  CD2DGeometrySink::CD2DGeometrySink
 
 Constructs a CD2DGeometrySink object from CD2DPathGeometry object.
 
@@ -199,7 +199,7 @@ CD2DGeometrySink(CD2DPathGeometry& pathGeometry);
 *pathGeometry*<br/>
 An existing CD2DPathGeometry object.
 
-##  <a name="close"></a>  CD2DGeometrySink::Close
+## <a name="close"></a>  CD2DGeometrySink::Close
 
 Closes the geometry sink
 
@@ -211,7 +211,7 @@ BOOL Close();
 
 Nonzero if successful; otherwise FALSE.
 
-##  <a name="endfigure"></a>  CD2DGeometrySink::EndFigure
+## <a name="endfigure"></a>  CD2DGeometrySink::EndFigure
 
 Ends the current figure; optionally, closes it.
 
@@ -224,7 +224,7 @@ void EndFigure(D2D1_FIGURE_END figureEnd);
 *figureEnd*<br/>
 A value that indicates whether the current figure is closed. If the figure is closed, a line is drawn between the current point and the start point specified by BeginFigure.
 
-##  <a name="get"></a>  CD2DGeometrySink::Get
+## <a name="get"></a>  CD2DGeometrySink::Get
 
 Returns ID2D1GeometrySink interface
 
@@ -236,7 +236,7 @@ ID2D1GeometrySink* Get();
 
 Pointer to an ID2D1GeometrySink interface or NULL if object is not initialized yet.
 
-##  <a name="isvalid"></a>  CD2DGeometrySink::IsValid
+## <a name="isvalid"></a>  CD2DGeometrySink::IsValid
 
 Checks geometry sink validity
 
@@ -248,7 +248,7 @@ BOOL IsValid() const;
 
 TRUE if geometry sink is valid; otherwise FALSE.
 
-##  <a name="m_psink"></a>  CD2DGeometrySink::m_pSink
+## <a name="m_psink"></a>  CD2DGeometrySink::m_pSink
 
 A pointer to an ID2D1GeometrySink.
 
@@ -256,7 +256,7 @@ A pointer to an ID2D1GeometrySink.
 ID2D1GeometrySink* m_pSink;
 ```
 
-##  <a name="operator_id2d1geometrysink_star"></a>  CD2DGeometrySink::operator ID2D1GeometrySink*
+## <a name="operator_id2d1geometrysink_star"></a>  CD2DGeometrySink::operator ID2D1GeometrySink*
 
 Returns ID2D1GeometrySink interface
 
@@ -268,7 +268,7 @@ operator ID2D1GeometrySink*();
 
 Pointer to an ID2D1GeometrySink interface or NULL if object is not initialized yet.
 
-##  <a name="setfillmode"></a>  CD2DGeometrySink::SetFillMode
+## <a name="setfillmode"></a>  CD2DGeometrySink::SetFillMode
 
 Specifies the method used to determine which points are inside the geometry described by this geometry sink and which points are outside.
 
@@ -281,7 +281,7 @@ void SetFillMode(D2D1_FILL_MODE fillMode);
 *fillMode*<br/>
 The method used to determine whether a given point is part of the geometry.
 
-##  <a name="setsegmentflags"></a>  CD2DGeometrySink::SetSegmentFlags
+## <a name="setsegmentflags"></a>  CD2DGeometrySink::SetSegmentFlags
 
 Specifies stroke and join options to be applied to new segments added to the geometry sink.
 

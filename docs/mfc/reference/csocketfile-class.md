@@ -54,7 +54,7 @@ For more information, see [Windows Sockets in MFC](../../mfc/windows-sockets-in-
 
 **Header:** afxsock.h
 
-##  <a name="csocketfile"></a>  CSocketFile::CSocketFile
+## <a name="csocketfile"></a>  CSocketFile::CSocketFile
 
 Constructs a `CSocketFile` object.
 

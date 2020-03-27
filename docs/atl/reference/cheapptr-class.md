@@ -62,7 +62,7 @@ The memory allocation class to use.
 
 **Header:** atlcore.h
 
-##  <a name="allocate"></a>  CHeapPtr::Allocate
+## <a name="allocate"></a>  CHeapPtr::Allocate
 
 Call this method to allocate memory on the heap to store objects.
 
@@ -87,7 +87,7 @@ The allocator routines are used to reserve enough memory on the heap to store *n
 
 [!code-cpp[NVC_ATL_Utilities#77](../../atl/codesnippet/cpp/cheapptr-class_1.cpp)]
 
-##  <a name="cheapptr"></a>  CHeapPtr::CHeapPtr
+## <a name="cheapptr"></a>  CHeapPtr::CHeapPtr
 
 The constructor.
 
@@ -110,7 +110,7 @@ The heap pointer can optionally be created using an existing pointer, or a `CHea
 
 [!code-cpp[NVC_ATL_Utilities#78](../../atl/codesnippet/cpp/cheapptr-class_2.cpp)]
 
-##  <a name="operator_eq"></a>  CHeapPtr::operator =
+## <a name="operator_eq"></a>  CHeapPtr::operator =
 
 Assignment operator.
 
@@ -132,7 +132,7 @@ Returns a reference to the updated `CHeapPtr`.
 
 [!code-cpp[NVC_ATL_Utilities#80](../../atl/codesnippet/cpp/cheapptr-class_3.cpp)]
 
-##  <a name="reallocate"></a>  CHeapPtr::Reallocate
+## <a name="reallocate"></a>  CHeapPtr::Reallocate
 
 Call this method to reallocate the memory on the heap.
 

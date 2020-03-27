@@ -28,7 +28,7 @@ These macros provide ways of controlling aggregation and of declaring class fact
 
 **Header:** atlcom.h
 
-##  <a name="declare_aggregatable"></a>  DECLARE_AGGREGATABLE
+## <a name="declare_aggregatable"></a>  DECLARE_AGGREGATABLE
 
 Specifies that your object can be aggregated.
 
@@ -49,7 +49,7 @@ DECLARE_AGGREGATABLE( x )
 
 [!code-cpp[NVC_ATL_Windowing#121](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_1.h)]
 
-##  <a name="declare_classfactory"></a>  DECLARE_CLASSFACTORY
+## <a name="declare_classfactory"></a>  DECLARE_CLASSFACTORY
 
 Declares [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) to be the class factory.
 
@@ -65,7 +65,7 @@ DECLARE_CLASSFACTORY()
 
 [!code-cpp[NVC_ATL_COM#55](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_2.h)]
 
-##  <a name="ccomclassfactory_class"></a>  CComClassFactory Class
+## <a name="ccomclassfactory_class"></a>  CComClassFactory Class
 
 This class implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface.
 
@@ -92,7 +92,7 @@ ATL provides three other macros that declare a class factory:
 
 - [DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton) Uses [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md), which constructs a single [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object.
 
-##  <a name="declare_classfactory_ex"></a>  DECLARE_CLASSFACTORY_EX
+## <a name="declare_classfactory_ex"></a>  DECLARE_CLASSFACTORY_EX
 
 Declares `cf` to be the class factory.
 
@@ -115,7 +115,7 @@ The *cf* parameter must derive from [CComClassFactory](../../atl/reference/ccomc
 
 [!code-cpp[NVC_ATL_COM#8](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_3.h)]
 
-##  <a name="declare_classfactory2"></a>  DECLARE_CLASSFACTORY2
+## <a name="declare_classfactory2"></a>  DECLARE_CLASSFACTORY2
 
 Declares [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) to be the class factory.
 
@@ -136,7 +136,7 @@ DECLARE_CLASSFACTORY2( lic )
 
 [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_4.h)]
 
-##  <a name="ccomclassfactory2_class"></a>  CComClassFactory2 Class
+## <a name="ccomclassfactory2_class"></a>  CComClassFactory2 Class
 
 This class implements the [IClassFactory2](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) interface.
 
@@ -172,7 +172,7 @@ ATL objects normally acquire a class factory by deriving from [CComCoClass](../.
 
 `CComClassFactory2` derives from both `CComClassFactory2Base` and *license*. `CComClassFactory2Base`, in turn, derives from `IClassFactory2` and **CComObjectRootEx\< CComGlobalsThreadModel >**.
 
-##  <a name="declare_classfactory_auto_thread"></a>  DECLARE_CLASSFACTORY_AUTO_THREAD
+## <a name="declare_classfactory_auto_thread"></a>  DECLARE_CLASSFACTORY_AUTO_THREAD
 
 Declares [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) to be the class factory.
 
@@ -190,7 +190,7 @@ When you create objects in multiple apartments (in an out-of-proc server), add D
 
 [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_6.h)]
 
-##  <a name="ccomclassfactoryautothread_class"></a>  CComClassFactoryAutoThread Class
+## <a name="ccomclassfactoryautothread_class"></a>  CComClassFactoryAutoThread Class
 
 This class implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, and allows objects to be created in multiple apartments.
 
@@ -210,7 +210,7 @@ ATL objects normally acquire a class factory by deriving from [CComCoClass](../.
 
 [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_6.h)]
 
-##  <a name="declare_classfactory_singleton"></a>  DECLARE_CLASSFACTORY_SINGLETON
+## <a name="declare_classfactory_singleton"></a>  DECLARE_CLASSFACTORY_SINGLETON
 
 Declares [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md) to be the class factory.
 
@@ -231,7 +231,7 @@ DECLARE_CLASSFACTORY_SINGLETON( obj )
 
 [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_7.h)]
 
-##  <a name="ccomclassfactorysingleton_class"></a>  CComClassFactorySingleton Class
+## <a name="ccomclassfactorysingleton_class"></a>  CComClassFactorySingleton Class
 
 This class derives from [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) and uses [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) to construct a single object.
 
@@ -256,7 +256,7 @@ ATL objects normally acquire a class factory by deriving from [CComCoClass](../.
 
 [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_7.h)]
 
-##  <a name="declare_get_controlling_unknown"></a>  DECLARE_GET_CONTROLLING_UNKNOWN
+## <a name="declare_get_controlling_unknown"></a>  DECLARE_GET_CONTROLLING_UNKNOWN
 
 Declares a virtual function `GetControllingUnknown`.
 
@@ -268,7 +268,7 @@ DECLARE_GET_CONTROLLING_UNKNOWN()
 
 Add this macro to your object if you get the compiler error message that `GetControllingUnknown` is undefined (for example, in `CComAggregateCreator`).
 
-##  <a name="declare_not_aggregatable"></a>  DECLARE_NOT_AGGREGATABLE
+## <a name="declare_not_aggregatable"></a>  DECLARE_NOT_AGGREGATABLE
 
 Specifies that your object cannot be aggregated.
 
@@ -291,7 +291,7 @@ By default, [CComCoClass](../../atl/reference/ccomcoclass-class.md) contains the
 
 [!code-cpp[NVC_ATL_Windowing#121](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_1.h)]
 
-##  <a name="declare_only_aggregatable"></a>  DECLARE_ONLY_AGGREGATABLE
+## <a name="declare_only_aggregatable"></a>  DECLARE_ONLY_AGGREGATABLE
 
 Specifies that your object must be aggregated.
 
@@ -314,7 +314,7 @@ By default, [CComCoClass](../../atl/reference/ccomcoclass-class.md) contains the
 
 [!code-cpp[NVC_ATL_Windowing#125](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_8.h)]
 
-##  <a name="declare_poly_aggregatable"></a>  DECLARE_POLY_AGGREGATABLE
+## <a name="declare_poly_aggregatable"></a>  DECLARE_POLY_AGGREGATABLE
 
 Specifies that an instance of **CComPolyObject \<** *x* **>** is created when your object is created.
 
@@ -335,7 +335,7 @@ The advantage of using DECLARE_POLY_AGGREGATABLE is that you avoid having both `
 
 The DECLARE_POLY_AGGREGATABLE macro is automatically declared in your object if you use the ATL Control Wizard to create a full control.
 
-##  <a name="declare_protect_final_construct"></a>  DECLARE_PROTECT_FINAL_CONSTRUCT
+## <a name="declare_protect_final_construct"></a>  DECLARE_PROTECT_FINAL_CONSTRUCT
 
 Protects your object from being deleted if (during [FinalConstruct](ccomobjectrootex-class.md#finalconstruct)) the internal aggregated object increments the reference count then decrements the count to 0.
 
@@ -343,7 +343,7 @@ Protects your object from being deleted if (during [FinalConstruct](ccomobjectro
 DECLARE_PROTECT_FINAL_CONSTRUCT()
 ```
 
-##  <a name="declare_view_status"></a>  DECLARE_VIEW_STATUS
+## <a name="declare_view_status"></a>  DECLARE_VIEW_STATUS
 
 Place this macro in an ATL ActiveX control's control class to specify the VIEWSTATUS flags to the container.
 

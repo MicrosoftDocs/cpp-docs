@@ -57,7 +57,7 @@ The class `CCtrlView` and its derivatives, [CEditView](../../mfc/reference/cedit
 
 **Header:** afxwin.h
 
-##  <a name="cctrlview"></a>  CCtrlView::CCtrlView
+## <a name="cctrlview"></a>  CCtrlView::CCtrlView
 
 Constructs a `CCtrlView` object.
 
@@ -79,7 +79,7 @@ Style of the view class.
 
 The framework calls the constructor when a new frame window is created or a window is split. Override [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) to initialize the view after the document is attached. Call [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) to create the Windows object.
 
-##  <a name="m_strclass"></a>  CCtrlView::m_strClass
+## <a name="m_strclass"></a>  CCtrlView::m_strClass
 
 Contains the Windows class name for the view class.
 
@@ -87,7 +87,7 @@ Contains the Windows class name for the view class.
 CString m_strClass;
 ```
 
-##  <a name="m_dwdefaultstyle"></a>  CCtrlView::m_dwDefaultStyle
+## <a name="m_dwdefaultstyle"></a>  CCtrlView::m_dwDefaultStyle
 
 Contains the default style for the view class.
 
@@ -99,7 +99,7 @@ DWORD m_dwDefaultStyle;
 
 This style is applied when a window is created.
 
-##  <a name="ondraw"></a>  CCtrlView::OnDraw
+## <a name="ondraw"></a>  CCtrlView::OnDraw
 
 Called by the framework to draw the contents of the `CCtrlView` object using the specified device context.
 
@@ -116,7 +116,7 @@ A pointer to the device context in which the drawing occurs.
 
 `OnDraw` is typically called for screen display, passing a screen device context specified by *pDC*.
 
-##  <a name="precreatewindow"></a>  CCtrlView::PreCreateWindow
+## <a name="precreatewindow"></a>  CCtrlView::PreCreateWindow
 
 Called before the creation of the Windows window attached to this `CWnd` object.
 

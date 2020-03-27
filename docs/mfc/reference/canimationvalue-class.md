@@ -68,7 +68,7 @@ The CAnimationValue class encapsulates a single CAnimationVariable object and ca
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="addtransition"></a>  CAnimationValue::AddTransition
+## <a name="addtransition"></a>  CAnimationValue::AddTransition
 
 Adds a transition to be applied to a value.
 
@@ -85,7 +85,7 @@ A pointer to transition object.
 
 Call this function to add a transition to internal list of transitions to be applied to an animation variable. When you add transitions, they are not applied immediately and stored in an internal list. Transitions are applied (added to a storyboard for a particular value) when you call CAnimationController::AnimateGroup.
 
-##  <a name="canimationvalue"></a>  CAnimationValue::CAnimationValue
+## <a name="canimationvalue"></a>  CAnimationValue::CAnimationValue
 
 Constructs a CAnimationValue object.
 
@@ -117,7 +117,7 @@ specifies user-defined data.
 
 Constructs CAnimationValue object with default properties: default value, Group ID and Object ID are set to 0.
 
-##  <a name="getanimationvariablelist"></a>  CAnimationValue::GetAnimationVariableList
+## <a name="getanimationvariablelist"></a>  CAnimationValue::GetAnimationVariableList
 
 Puts the encapsulated animation variable into a list.
 
@@ -132,7 +132,7 @@ virtual void GetAnimationVariableList(
 *lst*<br/>
 When the function returns, it contains a pointer to CAnimationVariable representing the animated value.
 
-##  <a name="getvalue"></a>  CAnimationValue::GetValue
+## <a name="getvalue"></a>  CAnimationValue::GetValue
 
 Retrieves the current value.
 
@@ -157,7 +157,7 @@ TRUE if the current value was retrieved successfully; otherwise FALSE.
 
 Call this function to retrieve the current value. This implementation calls the encapsulated COM object, and if the call fails, this method returns the default value that was previously set in constructor or with SetDefaultValue.
 
-##  <a name="getvariable"></a>  CAnimationValue::GetVariable
+## <a name="getvariable"></a>  CAnimationValue::GetVariable
 
 Provides access to encapsulated animation variable.
 
@@ -173,7 +173,7 @@ A reference to encapsulated animation variable.
 
 Use this method to access the encapsulated animation variable. From CAnimationVariable you get access to underlying IUIAnimationVariable object, whose pointer can be NULL if animation variable has not been created.
 
-##  <a name="m_value"></a>  CAnimationValue::m_value
+## <a name="m_value"></a>  CAnimationValue::m_value
 
 The encapsulated animation variable that represents animation value.
 
@@ -181,7 +181,7 @@ The encapsulated animation variable that represents animation value.
 CAnimationVariable m_value;
 ```
 
-##  <a name="operator_double"></a>  CAnimationValue::operator DOUBLE
+## <a name="operator_double"></a>  CAnimationValue::operator DOUBLE
 
 Provides conversion between CAnimationValue and DOUBLE.
 
@@ -197,7 +197,7 @@ Current value of Animation Value.
 
 Provides conversion between CAnimationValue and DOUBLE. This method internally calls GetValue and doesn't check for errors. If GetValue fails, the returned value will contain a default value previously set in constructor or with SetDefaultValue.
 
-##  <a name="operator_int32"></a>  CAnimationValue::operator INT32
+## <a name="operator_int32"></a>  CAnimationValue::operator INT32
 
 Provides conversion between CAnimationValue and INT32.
 
@@ -213,7 +213,7 @@ Current value of Animation Value as integer.
 
 Provides conversion between CAnimationValue and INT32. This method internally calls GetValue and doesn't check for errors. If GetValue fails, the returned value will contain a default value previously set in constructor or with SetDefaultValue.
 
-##  <a name="operator_eq"></a>  CAnimationValue::operator=
+## <a name="operator_eq"></a>  CAnimationValue::operator=
 
 Assigns a DOUBLE value to CAnimationValue.
 
@@ -234,7 +234,7 @@ Specifies the value to be assigned to Animation Value.
 
 Assigns a DOUBLE value to CAnimationValue. This value is set as a default value for encapsulated animation variable. If you subscribed this animation object to events (ValueChanged or IntegerValueChanged), you need to re-enable these events.
 
-##  <a name="setdefaultvalue"></a>  CAnimationValue::SetDefaultValue
+## <a name="setdefaultvalue"></a>  CAnimationValue::SetDefaultValue
 
 Sets default value.
 

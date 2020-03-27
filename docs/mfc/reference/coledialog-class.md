@@ -65,7 +65,7 @@ For more information about OLE-specific dialog boxes, see the article [Dialog Bo
 
 **Header:** afxodlgs.h
 
-##  <a name="getlasterror"></a>  COleDialog::GetLastError
+## <a name="getlasterror"></a>  COleDialog::GetLastError
 
 Call the `GetLastError` member function to get additional error information when `DoModal` returns IDABORT.
 

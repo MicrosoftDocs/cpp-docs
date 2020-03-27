@@ -19,7 +19,7 @@ These macros provide support for exception handling.
 
 **Header:** atldef.h
 
-##  <a name="_atlcatch"></a>  _ATLCATCH
+## <a name="_atlcatch"></a>  _ATLCATCH
 
 Statement(s) to handle errors occurring in the associated `_ATLTRY`.
 
@@ -36,7 +36,7 @@ The exception to catch.
 
 Used in conjunction with `_ATLTRY`. Resolves to C++ [catch(CAtlException e)](../../cpp/try-throw-and-catch-statements-cpp.md) for handling a given type of C++ exceptions.
 
-##  <a name="_atlcatchall"></a>  _ATLCATCHALL
+## <a name="_atlcatchall"></a>  _ATLCATCHALL
 
 Statement(s) to handle errors occurring in the associated `_ATLTRY`.
 
@@ -48,7 +48,7 @@ _ATLCATCHALL
 
 Used in conjunction with `_ATLTRY`. Resolves to C++ [catch(...)](../../cpp/try-throw-and-catch-statements-cpp.md) for handling all types of C++ exceptions.
 
-##  <a name="_atltry"></a>  _ATLTRY
+## <a name="_atltry"></a>  _ATLTRY
 
 Marks a guarded code section where an error could possibly occur.
 

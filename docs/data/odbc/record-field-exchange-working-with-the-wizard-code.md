@@ -22,7 +22,7 @@ When you create a recordset class with the MFC Application Wizard or **Add Class
 
 - Initialization of recordset field data members in the recordset class constructor
 
-##  <a name="_core_the_field_data_member_declarations"></a> Field Data Member Declarations
+## <a name="_core_the_field_data_member_declarations"></a> Field Data Member Declarations
 
 The wizards write a recordset class declaration in an .h file that resembles the following for class `CSections`:
 
@@ -60,7 +60,7 @@ If you add parameter data members or new field data members that you bind yourse
 
 Also, notice that the wizard overrides the `DoFieldExchange` member function of class `CRecordset`.
 
-##  <a name="_core_the_dofieldexchange_override"></a> DoFieldExchange Override
+## <a name="_core_the_dofieldexchange_override"></a> DoFieldExchange Override
 
 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) is the heart of RFX. The framework calls `DoFieldExchange` any time it needs to move data either from data source to recordset or from recordset to data source. `DoFieldExchange` also supports obtaining information about field data members through the [IsFieldDirty](../../mfc/reference/crecordset-class.md#isfielddirty) and [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull) member functions.
 
@@ -91,7 +91,7 @@ Notice the following key features of the function:
 
 - The `pFX` pointer to a [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) object that the framework passes when it calls `DoFieldExchange`. The `CFieldExchange` object specifies the operation that `DoFieldExchange` is to perform, the direction of transfer, and other context information.
 
-##  <a name="_core_the_recordset_constructor"></a> Recordset Constructor
+## <a name="_core_the_recordset_constructor"></a> Recordset Constructor
 
 The recordset constructor that the wizards write contains two things related to RFX:
 

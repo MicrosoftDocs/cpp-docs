@@ -65,7 +65,7 @@ For more information about how to use `CMemoryState` and other diagnostics, see 
 
 **Header:** afx.h
 
-##  <a name="checkpoint"></a>  CMemoryState::Checkpoint
+## <a name="checkpoint"></a>  CMemoryState::Checkpoint
 
 Takes a snapshot summary of memory and stores it in this `CMemoryState` object.
 
@@ -81,7 +81,7 @@ The `CMemoryState` member functions [Difference](#difference) and [DumpAllObject
 
   See the example for the [CMemoryState](#cmemorystate) constructor.
 
-##  <a name="cmemorystate"></a>  CMemoryState::CMemoryState
+## <a name="cmemorystate"></a>  CMemoryState::CMemoryState
 
 Constructs an empty `CMemoryState` object that must be filled in by the [Checkpoint](#checkpoint) or [Difference](#difference) member function.
 
@@ -93,7 +93,7 @@ CMemoryState();
 
 [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/cpp/cmemorystate-structure_1.cpp)]
 
-##  <a name="difference"></a>  CMemoryState::Difference
+## <a name="difference"></a>  CMemoryState::Difference
 
 Compares two `CMemoryState` objects, then stores the difference into this `CMemoryState` object.
 
@@ -123,7 +123,7 @@ Nonzero if the two memory states are different; otherwise 0.
 
   See the example for the [CMemoryState](#cmemorystate) constructor.
 
-##  <a name="dumpallobjectssince"></a>  CMemoryState::DumpAllObjectsSince
+## <a name="dumpallobjectssince"></a>  CMemoryState::DumpAllObjectsSince
 
 Calls the `Dump` function for all objects of a type derived from class `CObject` that were allocated (and are still allocated) since the last [Checkpoint](#checkpoint) call for this `CMemoryState` object.
 
@@ -139,7 +139,7 @@ Calling `DumpAllObjectsSince` with an uninitialized `CMemoryState` object will d
 
   See the example for the [CMemoryState](#cmemorystate) constructor.
 
-##  <a name="dumpstatistics"></a>  CMemoryState::DumpStatistics
+## <a name="dumpstatistics"></a>  CMemoryState::DumpStatistics
 
 Prints a concise memory statistics report from a `CMemoryState` object that is filled by the [Difference](#difference) member function.
 

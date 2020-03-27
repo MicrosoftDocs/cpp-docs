@@ -42,7 +42,7 @@ If the thread will be using CRT functions, use [CRTThreadTraits](../../atl/refer
 
 **Header:** atlbase.h
 
-##  <a name="createthread"></a>  Win32ThreadTraits::CreateThread
+## <a name="createthread"></a>  Win32ThreadTraits::CreateThread
 
 Call this function to create a thread that should not use CRT functions.
 

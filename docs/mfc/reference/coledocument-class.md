@@ -81,7 +81,7 @@ To use `COleDocument`, derive a class from it and add functionality to manage th
 
 **Header:** afxole.h
 
-##  <a name="additem"></a>  COleDocument::AddItem
+## <a name="additem"></a>  COleDocument::AddItem
 
 Call this function to add an item to the document.
 
@@ -98,7 +98,7 @@ Pointer to the document item being added.
 
 You do not need to call this function explicitly when it is called by the `COleClientItem` or `COleServerItem` constructor that accepts a pointer to a document.
 
-##  <a name="applyprintdevice"></a>  COleDocument::ApplyPrintDevice
+## <a name="applyprintdevice"></a>  COleDocument::ApplyPrintDevice
 
 Call this function to change the print-target device for all embedded [COleClientItem](../../mfc/reference/coleclientitem-class.md) items in your application's container document.
 
@@ -129,7 +129,7 @@ For more information, see the [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-p
 
 For more information, see the [DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) structure in the Windows SDK.
 
-##  <a name="coledocument"></a>  COleDocument::COleDocument
+## <a name="coledocument"></a>  COleDocument::COleDocument
 
 Constructs a `COleDocument` object.
 
@@ -137,7 +137,7 @@ Constructs a `COleDocument` object.
 COleDocument();
 ```
 
-##  <a name="enablecompoundfile"></a>  COleDocument::EnableCompoundFile
+## <a name="enablecompoundfile"></a>  COleDocument::EnableCompoundFile
 
 Call this function if you want to store the document using the compound-file format.
 
@@ -158,7 +158,7 @@ If you do not call this member function, documents will be stored in a nonstruct
 
 After compound file support is enabled or disabled for a document, the setting should not be changed during the document's lifetime.
 
-##  <a name="getinplaceactiveitem"></a>  COleDocument::GetInPlaceActiveItem
+## <a name="getinplaceactiveitem"></a>  COleDocument::GetInPlaceActiveItem
 
 Call this function to get the OLE item that is currently activated in place in the frame window containing the view identified by *pWnd*.
 
@@ -175,7 +175,7 @@ Pointer to the window that displays the container document.
 
 A pointer to the single, in-place active OLE item; NULL if there is no OLE item currently in the "in-place active" state.
 
-##  <a name="getnextclientitem"></a>  COleDocument::GetNextClientItem
+## <a name="getnextclientitem"></a>  COleDocument::GetNextClientItem
 
 Call this function repeatedly to access each of the client items in your document.
 
@@ -200,7 +200,7 @@ After each call, the value of *pos* is set for the next item in the document, wh
 
 [!code-cpp[NVC_MFCOleContainer#1](../../mfc/codesnippet/cpp/coledocument-class_1.cpp)]
 
-##  <a name="getnextitem"></a>  COleDocument::GetNextItem
+## <a name="getnextitem"></a>  COleDocument::GetNextItem
 
 Call this function repeatedly to access each of the items in your document.
 
@@ -225,7 +225,7 @@ After each call, the value of *pos* is set to the POSITION value of the next ite
 
 [!code-cpp[NVC_MFCOleContainer#2](../../mfc/codesnippet/cpp/coledocument-class_2.cpp)]
 
-##  <a name="getnextserveritem"></a>  COleDocument::GetNextServerItem
+## <a name="getnextserveritem"></a>  COleDocument::GetNextServerItem
 
 Call this function repeatedly to access each of the server items in your document.
 
@@ -250,7 +250,7 @@ After each call, the value of *pos* is set for the next item in the document, wh
 
 [!code-cpp[NVC_MFCOleServer#2](../../mfc/codesnippet/cpp/coledocument-class_3.cpp)]
 
-##  <a name="getprimaryselecteditem"></a>  COleDocument::GetPrimarySelectedItem
+## <a name="getprimaryselecteditem"></a>  COleDocument::GetPrimarySelectedItem
 
 Called by the framework to retrieve the currently selected OLE item in the specified view.
 
@@ -271,7 +271,7 @@ A pointer to the single, selected OLE item; NULL if no OLE items are selected or
 
 The default implementation searches the list of contained OLE items for a single selected item and returns a pointer to it. If there is no item selected, or if there is more than one item selected, the function returns NULL. You must override the `CView::IsSelected` member function in your view class for this function to work. Override this function if you have your own method of storing contained OLE items.
 
-##  <a name="getstartposition"></a>  COleDocument::GetStartPosition
+## <a name="getstartposition"></a>  COleDocument::GetStartPosition
 
 Call this function to get the position of the first item in the document.
 
@@ -287,7 +287,7 @@ A POSITION value that can be used to begin iterating through the document's item
 
 Pass the value returned to `GetNextItem`, `GetNextClientItem`, or `GetNextServerItem`.
 
-##  <a name="hasblankitems"></a>  COleDocument::HasBlankItems
+## <a name="hasblankitems"></a>  COleDocument::HasBlankItems
 
 Call this function to determine whether the document contains any blank items.
 
@@ -303,7 +303,7 @@ Nonzero if the document contains any blank items; otherwise 0.
 
 A blank item is one whose rectangle is empty.
 
-##  <a name="oneditchangeicon"></a>  COleDocument::OnEditChangeIcon
+## <a name="oneditchangeicon"></a>  COleDocument::OnEditChangeIcon
 
 Displays the OLE Change Icon dialog box and changes the icon representing the currently selected OLE item to the icon the user selects in the dialog box.
 
@@ -315,7 +315,7 @@ afx_msg void OnEditChangeIcon();
 
 `OnEditChangeIcon` creates and launches a `COleChangeIconDialog` Change Icon dialog box.
 
-##  <a name="oneditconvert"></a>  COleDocument::OnEditConvert
+## <a name="oneditconvert"></a>  COleDocument::OnEditConvert
 
 Displays the OLE Convert dialog box and converts or activates the currently selected OLE item according to user selections in the dialog box.
 
@@ -329,7 +329,7 @@ afx_msg void OnEditConvert();
 
 An example of conversion is converting a Microsoft Word document into a WordPad document.
 
-##  <a name="oneditlinks"></a>  COleDocument::OnEditLinks
+## <a name="oneditlinks"></a>  COleDocument::OnEditLinks
 
 Displays the OLE Edit/Links dialog box.
 
@@ -341,7 +341,7 @@ afx_msg void OnEditLinks();
 
 `OnEditLinks` creates and launches a `COleLinksDialog` Links dialog box that allows the user to change the linked objects.
 
-##  <a name="onfilesendmail"></a>  COleDocument::OnFileSendMail
+## <a name="onfilesendmail"></a>  COleDocument::OnFileSendMail
 
 Sends a message via the resident mail host (if any) with the document as an attachment.
 
@@ -357,7 +357,7 @@ Unlike the implementation of `OnFileSendMail` for `CDocument`, this function han
 
 For more information, see the [MAPI Topics](../../mfc/mapi.md) and [MAPI Support in MFC](../../mfc/mapi-support-in-mfc.md) articles..
 
-##  <a name="onshowviews"></a>  COleDocument::OnShowViews
+## <a name="onshowviews"></a>  COleDocument::OnShowViews
 
 The framework calls this function after the document's visibility state changes.
 
@@ -374,7 +374,7 @@ Indicates whether the document has become visible or invisible.
 
 The default version of this function does nothing. Override it if your application must perform any special processing when the document's visibility changes.
 
-##  <a name="onupdateeditchangeicon"></a>  COleDocument::OnUpdateEditChangeIcon
+## <a name="onupdateeditchangeicon"></a>  COleDocument::OnUpdateEditChangeIcon
 
 Called by the framework to update the Change Icon command on the Edit menu.
 
@@ -391,7 +391,7 @@ A pointer to a `CCmdUI` structure that represents the menu that generated the up
 
 `OnUpdateEditChangeIcon` updates the command's user interface depending on whether or not a valid icon exists in the document. Override this function to change the behavior.
 
-##  <a name="onupdateeditlinksmenu"></a>  COleDocument::OnUpdateEditLinksMenu
+## <a name="onupdateeditlinksmenu"></a>  COleDocument::OnUpdateEditLinksMenu
 
 Called by the framework to update the Links command on the Edit menu.
 
@@ -408,7 +408,7 @@ A pointer to a `CCmdUI` structure that represents the menu that generated the up
 
 Starting with the first OLE item in the document, `OnUpdateEditLinksMenu` accesses each item, tests whether the item is a link, and, if it is a link, enables the Links command. Override this function to change the behavior.
 
-##  <a name="onupdateobjectverbmenu"></a>  COleDocument::OnUpdateObjectVerbMenu
+## <a name="onupdateobjectverbmenu"></a>  COleDocument::OnUpdateObjectVerbMenu
 
 Called by the framework to update the *ObjectName* command on the Edit menu and the Verb submenu accessed from the *ObjectName* command, where *ObjectName* is the name of the OLE object embedded in the document.
 
@@ -425,7 +425,7 @@ A pointer to a `CCmdUI` structure that represents the menu that generated the up
 
 `OnUpdateObjectVerbMenu` updates the *ObjectName* command's user interface depending on whether or not a valid object exists in the document. If an object exists, the *ObjectName* command on the Edit menu is enabled. When this menu command is selected, the Verb submenu is displayed. The Verb submenu contains all the verb commands available for the object, such as Edit, Properties, and so on. Override this function to change the behavior.
 
-##  <a name="onupdatepastelinkmenu"></a>  COleDocument::OnUpdatePasteLinkMenu
+## <a name="onupdatepastelinkmenu"></a>  COleDocument::OnUpdatePasteLinkMenu
 
 Called by the framework to determine whether a linked OLE item can be pasted from the Clipboard.
 
@@ -442,7 +442,7 @@ A pointer to a `CCmdUI` structure that represents the menu that generated the up
 
 The Paste Special menu command is enabled or disabled depending on whether the item can be pasted into the document or not.
 
-##  <a name="onupdatepastemenu"></a>  COleDocument::OnUpdatePasteMenu
+## <a name="onupdatepastemenu"></a>  COleDocument::OnUpdatePasteMenu
 
 Called by the framework to determine whether an embedded OLE item can be pasted from the Clipboard.
 
@@ -459,7 +459,7 @@ A pointer to a `CCmdUI` structure that represents the menu that generated the up
 
 The Paste menu command and button are enabled or disabled depending on whether the item can be pasted into the document or not.
 
-##  <a name="removeitem"></a>  COleDocument::RemoveItem
+## <a name="removeitem"></a>  COleDocument::RemoveItem
 
 Call this function to remove an item from the document.
 
@@ -476,7 +476,7 @@ Pointer to the document item to be removed.
 
 You typically do not need to call this function explicitly; it is called by the destructors for `COleClientItem` and `COleServerItem`.
 
-##  <a name="updatemodifiedflag"></a>  COleDocument::UpdateModifiedFlag
+## <a name="updatemodifiedflag"></a>  COleDocument::UpdateModifiedFlag
 
 Call this function to mark the document as modified if any of the contained OLE items have been modified.
 

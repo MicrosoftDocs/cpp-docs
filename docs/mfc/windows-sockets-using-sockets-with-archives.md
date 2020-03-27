@@ -16,7 +16,7 @@ For more information about how the implementation of sockets with archives works
 > [!NOTE]
 >  If you are writing an MFC client program to communicate with established (non-MFC) servers, do not send C++ objects through the archive. Unless the server is an MFC application that understands the kinds of objects you want to send, it will not be able to receive and deserialize your objects. For related material on the subject of communicating with non-MFC applications, also see the article [Windows Sockets: Byte Ordering](../mfc/windows-sockets-byte-ordering.md).
 
-##  <a name="_core_the_csocket_programming_model"></a> The CSocket Programming Model
+## <a name="_core_the_csocket_programming_model"></a> The CSocket Programming Model
 
 Using a `CSocket` object involves creating and associating together several MFC class objects. In the general procedure below, each step is taken by both the server socket and the client socket, except for step 3, in which each socket type requires a different action.
 

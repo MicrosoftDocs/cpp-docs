@@ -21,7 +21,7 @@ This topic explains:
 
 - [When and how to close a recordset object](#_core_closing_a_recordset).
 
-##  <a name="_core_creating_recordsets_at_run_time"></a> Creating Recordsets at Run Time
+## <a name="_core_creating_recordsets_at_run_time"></a> Creating Recordsets at Run Time
 
 Before you can create recordset objects in your program, you typically write application-specific recordset classes. For more information about this preliminary step, see [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md).
 
@@ -67,7 +67,7 @@ After you call `Open`, use the member functions and data members of the object t
 > [!TIP]
 >  The connect string you use during development might not be the same connect string that your eventual users need. For ideas about generalizing your application in this regard, see [Data Source: Managing Connections (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md).
 
-##  <a name="_core_setting_recordset_options"></a> Setting Recordset Options
+## <a name="_core_setting_recordset_options"></a> Setting Recordset Options
 
 After you construct your recordset object but before you call `Open` to select records, you might want to set some options to control the recordset's behavior. For all recordsets, you can:
 
@@ -84,7 +84,7 @@ You can also set the following option if conditions are right:
 > [!NOTE]
 >  To affect record selection, you must set these options before you call the `Open` member function.
 
-##  <a name="_core_closing_a_recordset"></a> Closing a Recordset
+## <a name="_core_closing_a_recordset"></a> Closing a Recordset
 
 When you finish with your recordset, you must dispose of it and deallocate its memory.
 

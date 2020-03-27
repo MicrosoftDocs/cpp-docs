@@ -85,7 +85,7 @@ For more information on `CMDIChildWnd`, see [Frame Windows](../../mfc/frame-wind
 
 **Header:** afxwin.h
 
-##  <a name="cmdichildwnd"></a>  CMDIChildWnd::CMDIChildWnd
+## <a name="cmdichildwnd"></a>  CMDIChildWnd::CMDIChildWnd
 
 Call to construct a `CMDIChildWnd` object.
 
@@ -101,7 +101,7 @@ Call `Create` to create the visible window.
 
   See the example for [CMDIChildWnd::Create](#create).
 
-##  <a name="create"></a>  CMDIChildWnd::Create
+## <a name="create"></a>  CMDIChildWnd::Create
 
 Call this member function to create a Windows MDI child window and attach it to the `CMDIChildWnd` object.
 
@@ -159,7 +159,7 @@ Example 2:
 
 [!code-cpp[NVC_MFCWindowing#9](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_3.cpp)]
 
-##  <a name="getmdiframe"></a>  CMDIChildWnd::GetMDIFrame
+## <a name="getmdiframe"></a>  CMDIChildWnd::GetMDIFrame
 
 Call this function to return the MDI parent frame.
 
@@ -179,7 +179,7 @@ The frame returned is two parents removed from the `CMDIChildWnd` and is the par
 
   See the example for [CMDIFrameWnd::MDISetMenu](../../mfc/reference/cmdiframewnd-class.md#mdisetmenu).
 
-##  <a name="mdiactivate"></a>  CMDIChildWnd::MDIActivate
+## <a name="mdiactivate"></a>  CMDIChildWnd::MDIActivate
 
 Call this member function to activate an MDI child window independently of the MDI frame window.
 
@@ -195,7 +195,7 @@ When the frame becomes active, the child window that was last activated will be 
 
   See the example for [CMDIFrameWnd::GetWindowMenuPopup](../../mfc/reference/cmdiframewnd-class.md#getwindowmenupopup).
 
-##  <a name="mdidestroy"></a>  CMDIChildWnd::MDIDestroy
+## <a name="mdidestroy"></a>  CMDIChildWnd::MDIDestroy
 
 Call this member function to destroy an MDI child window.
 
@@ -211,7 +211,7 @@ The member function removes the title of the child window from the frame window 
 
 [!code-cpp[NVC_MFCWindowing#10](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_4.cpp)]
 
-##  <a name="mdimaximize"></a>  CMDIChildWnd::MDIMaximize
+## <a name="mdimaximize"></a>  CMDIChildWnd::MDIMaximize
 
 Call this member function to maximize an MDI child window.
 
@@ -227,7 +227,7 @@ When a child window is maximized, Windows resizes it to make its client area fil
 
 [!code-cpp[NVC_MFCWindowing#11](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_5.cpp)]
 
-##  <a name="mdirestore"></a>  CMDIChildWnd::MDIRestore
+## <a name="mdirestore"></a>  CMDIChildWnd::MDIRestore
 
 Call this member function to restore an MDI child window from maximized or minimized size.
 
@@ -239,7 +239,7 @@ void MDIRestore();
 
 [!code-cpp[NVC_MFCWindowing#12](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_6.cpp)]
 
-##  <a name="sethandles"></a>  CMDIChildWnd::SetHandles
+## <a name="sethandles"></a>  CMDIChildWnd::SetHandles
 
 Sets the handles for menu and accelerator resources.
 

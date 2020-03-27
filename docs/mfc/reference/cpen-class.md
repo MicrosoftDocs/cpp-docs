@@ -55,7 +55,7 @@ For more information on using `CPen`, see [Graphic Objects](../../mfc/graphic-ob
 
 **Header:** afxwin.h
 
-##  <a name="cpen"></a>  CPen::CPen
+## <a name="cpen"></a>  CPen::CPen
 
 Constructs a `CPen` object.
 
@@ -151,7 +151,7 @@ If you use the constructor that takes arguments, then no further initialization 
 
 [!code-cpp[NVC_MFCDocView#99](../../mfc/codesnippet/cpp/cpen-class_1.cpp)]
 
-##  <a name="createpen"></a>  CPen::CreatePen
+## <a name="createpen"></a>  CPen::CreatePen
 
 Creates a logical cosmetic or geometric pen with the specified style, width, and brush attributes, and attaches it to the `CPen` object.
 
@@ -219,7 +219,7 @@ When an application no longer requires a given pen, it should call the [CGdiObje
 
 [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/cpp/cpen-class_2.cpp)]
 
-##  <a name="createpenindirect"></a>  CPen::CreatePenIndirect
+## <a name="createpenindirect"></a>  CPen::CreatePenIndirect
 
 Initializes a pen that has the style, width, and color given in the structure pointed to by *lpLogPen*.
 
@@ -246,7 +246,7 @@ If a pen has the PS_INSIDEFRAME style and a color that does not match a color in
 
 [!code-cpp[NVC_MFCDocView#101](../../mfc/codesnippet/cpp/cpen-class_3.cpp)]
 
-##  <a name="fromhandle"></a>  CPen::FromHandle
+## <a name="fromhandle"></a>  CPen::FromHandle
 
 Returns a pointer to a `CPen` object given a handle to a Windows GDI pen object.
 
@@ -271,7 +271,7 @@ If a `CPen` object is not attached to the handle, a temporary `CPen` object is c
 
 [!code-cpp[NVC_MFCDocView#105](../../mfc/codesnippet/cpp/cpen-class_4.cpp)]
 
-##  <a name="getextlogpen"></a>  CPen::GetExtLogPen
+## <a name="getextlogpen"></a>  CPen::GetExtLogPen
 
 Gets an `EXTLOGPEN` underlying structure.
 
@@ -308,7 +308,7 @@ The following code example demonstrates calling `GetExtLogPen` to retrieve a pen
 
 [!code-cpp[NVC_MFCDocView#102](../../mfc/codesnippet/cpp/cpen-class_5.cpp)]
 
-##  <a name="getlogpen"></a>  CPen::GetLogPen
+## <a name="getlogpen"></a>  CPen::GetLogPen
 
 Gets a `LOGPEN` underlying structure.
 
@@ -343,7 +343,7 @@ The following code example demonstrates calling `GetLogPen` to retrieve a pen ch
 
 [!code-cpp[NVC_MFCDocView#103](../../mfc/codesnippet/cpp/cpen-class_6.cpp)]
 
-##  <a name="operator_hpen"></a>  CPen::operator HPEN
+## <a name="operator_hpen"></a>  CPen::operator HPEN
 
 Gets the attached Windows GDI handle of the `CPen` object.
 

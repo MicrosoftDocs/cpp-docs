@@ -37,7 +37,7 @@ HKCU
 
 Now, the script adds a subkey, `HasASubkey`, to `MyVeryOwnKey`. To this subkey, it adds both the `PrettyCool` subkey (with a default `DWORD` value of 55) and the `ANameValue` named value (with a string value of `WithANamedValue`).
 
-##  <a name="_atl_register_the_registrar_com_server"></a> Register the Registrar COM Server
+## <a name="_atl_register_the_registrar_com_server"></a> Register the Registrar COM Server
 
 The following script registers the Registrar COM server itself.
 

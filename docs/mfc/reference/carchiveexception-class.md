@@ -48,7 +48,7 @@ The `CArchiveException` class includes a public data member that indicates the c
 
 **Header:** afx.h
 
-##  <a name="carchiveexception"></a>  CArchiveException::CArchiveException
+## <a name="carchiveexception"></a>  CArchiveException::CArchiveException
 
 Constructs a `CArchiveException` object, storing the value of *cause* in the object.
 
@@ -72,7 +72,7 @@ You can create a `CArchiveException` object on the heap and throw it yourself or
 
 Do not use this constructor directly; instead, call the global function `AfxThrowArchiveException`.
 
-##  <a name="m_cause"></a>  CArchiveException::m_cause
+## <a name="m_cause"></a>  CArchiveException::m_cause
 
 Specifies the cause of the exception.
 
@@ -106,7 +106,7 @@ This data member is a public variable of type **int**. Its values are defined by
     > [!NOTE]
     > `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, there will be syntax errors that are not easy to decipher.
 
-##  <a name="m_strfilename"></a>  CArchiveException::m_strFileName
+## <a name="m_strfilename"></a>  CArchiveException::m_strFileName
 
 Specifies the name of the file for this exception condition.
 

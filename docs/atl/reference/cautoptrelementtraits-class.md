@@ -54,7 +54,7 @@ This class provides methods, static functions, and typedefs for aiding the creat
 
 **Header:** atlcoll.h
 
-##  <a name="inargtype"></a>  CAutoPtrElementTraits::INARGTYPE
+## <a name="inargtype"></a>  CAutoPtrElementTraits::INARGTYPE
 
 The data type to use for adding elements to the collection class object.
 
@@ -62,7 +62,7 @@ The data type to use for adding elements to the collection class object.
 typedef CAutoPtr<T>& INARGTYPE;
 ```
 
-##  <a name="outargtype"></a>  CAutoPtrElementTraits::OUTARGTYPE
+## <a name="outargtype"></a>  CAutoPtrElementTraits::OUTARGTYPE
 
 The data type to use for retrieving elements from the collection class object.
 

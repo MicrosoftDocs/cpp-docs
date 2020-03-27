@@ -19,7 +19,7 @@ These macros define window class utilities.
 
 **Header:** atlwin.h
 
-##  <a name="declare_wnd_class"></a>  DECLARE_WND_CLASS
+## <a name="declare_wnd_class"></a>  DECLARE_WND_CLASS
 
 Allows you to specify the name of a new window class. Place this macro in an ATL ActiveX control's control class.
 
@@ -54,7 +54,7 @@ DECLARE_WND_CLASS also specifies the default window's background color. Use the 
 
 For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 
-##  <a name="declare_wnd_class2"></a>  DECLARE_WND_CLASS2
+## <a name="declare_wnd_class2"></a>  DECLARE_WND_CLASS2
 
 (Visual Studio 2017) Similar to DECLARE_WND_CLASS, but with an extra parameter that avoids a dependent name error when compiling with the /permissive- option.
 
@@ -75,7 +75,7 @@ DECLARE_WND_CLASS2( WndClassName, EnclosingClass )
 If you are using the /permissive- option, then DECLARE_WND_CLASS will cause a compilation error because it contains a dependent name. DECLARE_WND_CLASS2 requires you to explicitly name the class that this macro is used in and does not cause the error under the /permissive- flag.
 Otherwise this macro is identical to [DECLARE_WND_CLASS](#declare_wnd_class).
 
-##  <a name="declare_wnd_superclass"></a>  DECLARE_WND_SUPERCLASS
+## <a name="declare_wnd_superclass"></a>  DECLARE_WND_SUPERCLASS
 
 Allows you to specify the parameters of a class. Place this macro in an ATL ActiveX control's control class.
 
@@ -105,7 +105,7 @@ Besides using the DECLARE_WND_CLASS and DECLARE_WND_SUPERCLASS macros, you can o
 
 For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 
-##  <a name="declare_wnd_class_ex"></a>  DECLARE_WND_CLASS_EX
+## <a name="declare_wnd_class_ex"></a>  DECLARE_WND_CLASS_EX
 
 Allows you to specify the name of an existing window class on which a new window class will be based. Place this macro in an ATL ActiveX control's control class.
 

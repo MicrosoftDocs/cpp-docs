@@ -83,7 +83,7 @@ By default, the `IDispatchImpl` class looks up the type information for *T* in t
 
 **Header:** atlcom.h
 
-##  <a name="getidsofnames"></a>  IDispatchImpl::GetIDsOfNames
+## <a name="getidsofnames"></a>  IDispatchImpl::GetIDsOfNames
 
 Maps a set of names to a corresponding set of dispatch identifiers.
 
@@ -100,7 +100,7 @@ STDMETHOD(GetIDsOfNames)(
 
 See [IDispatch::GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.
 
-##  <a name="gettypeinfo"></a>  IDispatchImpl::GetTypeInfo
+## <a name="gettypeinfo"></a>  IDispatchImpl::GetTypeInfo
 
 Retrieves the type information for the dual interface.
 
@@ -115,7 +115,7 @@ STDMETHOD(GetTypeInfo)(
 
 See [IDispatch::GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) in the Windows SDK.
 
-##  <a name="gettypeinfocount"></a>  IDispatchImpl::GetTypeInfoCount
+## <a name="gettypeinfocount"></a>  IDispatchImpl::GetTypeInfoCount
 
 Determines whether there is type information available for the dual interface.
 
@@ -127,7 +127,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 
 See `IDispatch::GetTypeInfoCount` in the Windows SDK.
 
-##  <a name="idispatchimpl"></a>  IDispatchImpl::IDispatchImpl
+## <a name="idispatchimpl"></a>  IDispatchImpl::IDispatchImpl
 
 The constructor. Calls `AddRef` on the protected member variable that manages the type information for the dual interface. The destructor calls `Release`.
 
@@ -135,7 +135,7 @@ The constructor. Calls `AddRef` on the protected member variable that manages th
 IDispatchImpl();
 ```
 
-##  <a name="invoke"></a>  IDispatchImpl::Invoke
+## <a name="invoke"></a>  IDispatchImpl::Invoke
 
 Provides access to the methods and properties exposed by the dual interface.
 

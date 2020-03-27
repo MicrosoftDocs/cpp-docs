@@ -63,7 +63,7 @@ The following example demonstrates how to construct an object of the `CMFCProper
 
 **Header:** afxpropertygridctrl.h
 
-##  <a name="cmfcpropertygridcolorproperty"></a>  CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty
+## <a name="cmfcpropertygridcolorproperty"></a>  CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty
 
 Constructs a `CMFCPropertyGridColorProperty` object.
 
@@ -93,7 +93,7 @@ CMFCPropertyGridColorProperty(
 *dwData*<br/>
 [in] Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.
 
-##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton
+## <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton
 
 Enables the *automatic* button on the color selection dialog box. (The standard automatic button is labeled **Automatic**.)
 
@@ -117,7 +117,7 @@ void EnableAutomaticButton(
 
 ### Remarks
 
-##  <a name="enableotherbutton"></a>  CMFCPropertyGridColorProperty::EnableOtherButton
+## <a name="enableotherbutton"></a>  CMFCPropertyGridColorProperty::EnableOtherButton
 
 Enables the *other* button on the color selection dialog box. (The standard other button is labeled **More Colors**.)
 
@@ -141,7 +141,7 @@ void EnableOtherButton(
 
 ### Remarks
 
-##  <a name="getcolor"></a>  CMFCPropertyGridColorProperty::GetColor
+## <a name="getcolor"></a>  CMFCPropertyGridColorProperty::GetColor
 
 Gets the current color of the property.
 
@@ -155,7 +155,7 @@ An RGB color value.
 
 ### Remarks
 
-##  <a name="setcolor"></a>  CMFCPropertyGridColorProperty::SetColor
+## <a name="setcolor"></a>  CMFCPropertyGridColorProperty::SetColor
 
 Sets a new color for the property.
 
@@ -170,7 +170,7 @@ void SetColor(COLORREF color);
 
 ### Remarks
 
-##  <a name="setcolumnsnumber"></a>  CMFCPropertyGridColorProperty::SetColumnsNumber
+## <a name="setcolumnsnumber"></a>  CMFCPropertyGridColorProperty::SetColumnsNumber
 
 Specifies the number of columns in the current color property grid.
 
@@ -187,7 +187,7 @@ void SetColumnsNumber(int nColumnsNumber);
 
 This method sets the value of the `m_nColumnsNumber` protected data member.
 
-##  <a name="setoriginalvalue"></a>  CMFCPropertyGridColorProperty::SetOriginalValue
+## <a name="setoriginalvalue"></a>  CMFCPropertyGridColorProperty::SetOriginalValue
 
 Sets the original value of an editable property.
 

@@ -62,7 +62,7 @@ ATL objects normally acquire a class factory by deriving from [CComCoClass](../.
 
 **Header:** atlcom.h
 
-##  <a name="createinstance"></a>  CComClassFactorySingleton::CreateInstance
+## <a name="createinstance"></a>  CComClassFactorySingleton::CreateInstance
 
 Calls `QueryInterface` through [m_spObj](#m_spobj) to retrieve an interface pointer.
 
@@ -85,7 +85,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 A standard HRESULT value.
 
-##  <a name="m_spobj"></a>  CComClassFactorySingleton::m_spObj
+## <a name="m_spobj"></a>  CComClassFactorySingleton::m_spObj
 
 The [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object constructed by `CComClassFactorySingleton`.
 

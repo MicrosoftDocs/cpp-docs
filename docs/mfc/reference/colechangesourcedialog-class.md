@@ -69,7 +69,7 @@ For more information about OLE-specific dialog boxes, see the article [Dialog Bo
 
 **Header:** afxodlgs.h
 
-##  <a name="colechangesourcedialog"></a>  COleChangeSourceDialog::COleChangeSourceDialog
+## <a name="colechangesourcedialog"></a>  COleChangeSourceDialog::COleChangeSourceDialog
 
 This function constructs a `COleChangeSourceDialog` object.
 
@@ -93,7 +93,7 @@ To display the dialog box, call the [DoModal](#domodal) function.
 
 For more information, see the [OLEUICHANGESOURCE](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) structure and [OleUIChangeSource](/windows/win32/api/oledlg/nf-oledlg-oleuichangesourcew) function in Windows SDK.
 
-##  <a name="domodal"></a>  COleChangeSourceDialog::DoModal
+## <a name="domodal"></a>  COleChangeSourceDialog::DoModal
 
 Call this function to display the OLE Change Source dialog box.
 
@@ -123,7 +123,7 @@ If `DoModal` returns IDOK, you can call member functions to retrieve user-entere
 
 - [GetItemName](#getitemname)
 
-##  <a name="getdisplayname"></a>  COleChangeSourceDialog::GetDisplayName
+## <a name="getdisplayname"></a>  COleChangeSourceDialog::GetDisplayName
 
 Call this function to retrieve the complete display name for the linked client item.
 
@@ -135,7 +135,7 @@ CString GetDisplayName();
 
 The complete source display name (moniker) for the [COleClientItem](../../mfc/reference/coleclientitem-class.md) specified in the constructor.
 
-##  <a name="getfilename"></a>  COleChangeSourceDialog::GetFileName
+## <a name="getfilename"></a>  COleChangeSourceDialog::GetFileName
 
 Call this function to retrieve the file moniker portion of the display name for the linked client item.
 
@@ -151,7 +151,7 @@ The file moniker portion of the source display name for the [COleClientItem](../
 
 The file moniker together with the item moniker gives the complete display name.
 
-##  <a name="getfromprefix"></a>  COleChangeSourceDialog::GetFromPrefix
+## <a name="getfromprefix"></a>  COleChangeSourceDialog::GetFromPrefix
 
 Call this function to get the previous prefix string for the source.
 
@@ -171,7 +171,7 @@ This value comes directly from the `lpszFrom` member of the [OLEUICHANGESOURCE](
 
 For more information, see the [OLEUICHANGESOURCE](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) structure in Windows SDK.
 
-##  <a name="getitemname"></a>  COleChangeSourceDialog::GetItemName
+## <a name="getitemname"></a>  COleChangeSourceDialog::GetItemName
 
 Call this function to retrieve the item moniker portion of the display name for the linked client item.
 
@@ -187,7 +187,7 @@ The item moniker portion of the source display name for the [COleClientItem](../
 
 The file moniker together with the item moniker gives the complete display name.
 
-##  <a name="gettoprefix"></a>  COleChangeSourceDialog::GetToPrefix
+## <a name="gettoprefix"></a>  COleChangeSourceDialog::GetToPrefix
 
 Call this function to get the new prefix string for the source.
 
@@ -207,7 +207,7 @@ This value comes directly from the `lpszTo` member of the [OLEUICHANGESOURCE](/w
 
 For more information, see the [OLEUICHANGESOURCE](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) structure in Windows SDK.
 
-##  <a name="m_cs"></a>  COleChangeSourceDialog::m_cs
+## <a name="m_cs"></a>  COleChangeSourceDialog::m_cs
 
 This data member is a structure of type [OLEUICHANGESOURCE](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew).
 
@@ -221,7 +221,7 @@ OLEUICHANGESOURCE m_cs;
 
 For more information, see the [OLEUICHANGESOURCE](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) structure in Windows SDK.
 
-##  <a name="isvalidsource"></a>  COleChangeSourceDialog::IsValidSource
+## <a name="isvalidsource"></a>  COleChangeSourceDialog::IsValidSource
 
 Call this function to determine if the new source is valid.
 

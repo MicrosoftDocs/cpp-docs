@@ -315,7 +315,7 @@ The second `String` object, whose contents will be appended to `str1`.
 
 This operator creates a `String^` object that contains the data from the two operands. Use it for convenience when extreme performance is not critical. A few calls to "`+`" in a function will probably not be noticeable, but if you are manipulating large objects or text data in a tight loop, then use the standard C++ mechanisms and types.
 
-##  <a name="operator-equality"></a> String::operator== Operator
+## <a name="operator-equality"></a> String::operator== Operator
 
 Indicates whether two specified String objects have the same text value.
 
@@ -341,7 +341,7 @@ The second `String` object to compare.
 
 This operator is equivalent to [String::CompareOrdinal](#compareordinal).
 
-##  <a name="operator-greater-than"></a>  String::operator&gt;
+## <a name="operator-greater-than"></a>  String::operator&gt;
 
 Indicates whether the value of one `String` object is greater than the value of a second `String` object.
 

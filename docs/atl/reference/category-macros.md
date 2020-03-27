@@ -19,7 +19,7 @@ These macros define category maps.
 
 **Header:** atlcom.h
 
-##  <a name="begin_category_map"></a>  BEGIN_CATEGORY_MAP
+## <a name="begin_category_map"></a>  BEGIN_CATEGORY_MAP
 
 Marks the beginning of the category map.
 
@@ -49,7 +49,7 @@ For more information about component categories, see [What are Component Categor
 
 [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]
 
-##  <a name="end_category_map"></a>  END_CATEGORY_MAP
+## <a name="end_category_map"></a>  END_CATEGORY_MAP
 
 Marks the end of the category map.
 
@@ -61,7 +61,7 @@ END_CATEGORY_MAP()
 
 See the example for [BEGIN_CATEGORY_MAP](#begin_category_map).
 
-##  <a name="implemented_category"></a>  IMPLEMENTED_CATEGORY
+## <a name="implemented_category"></a>  IMPLEMENTED_CATEGORY
 
 Add an IMPLEMENTED_CATEGORY macro to your component's [category map](#begin_category_map) to specify that it should be registered as implementing the category identified by the *catID* parameter.
 
@@ -98,7 +98,7 @@ For more information about component categories, see [What are Component Categor
 
 [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]
 
-##  <a name="required_category"></a>  REQUIRED_CATEGORY
+## <a name="required_category"></a>  REQUIRED_CATEGORY
 
 Add a REQUIRED_CATEGORY macro to your component's [category map](#begin_category_map) to specify that it should be registered as requiring the category identified by the *catID* parameter.
 

@@ -89,7 +89,7 @@ For more information on using `CSliderCtrl`, see [Controls](../../mfc/controls-m
 
 **Header:** afxcmn.h
 
-##  <a name="clearsel"></a>  CSliderCtrl::ClearSel
+## <a name="clearsel"></a>  CSliderCtrl::ClearSel
 
 Clears the current selection in a slider control.
 
@@ -102,7 +102,7 @@ void ClearSel(BOOL bRedraw = FALSE);
 *bRedraw*<br/>
 Redraw flag. If this parameter is TRUE, the slider is redrawn after the selection is cleared; otherwise the slider is not redrawn.
 
-##  <a name="cleartics"></a>  CSliderCtrl::ClearTics
+## <a name="cleartics"></a>  CSliderCtrl::ClearTics
 
 Removes the current tick marks from a slider control.
 
@@ -115,7 +115,7 @@ void ClearTics(BOOL bRedraw = FALSE);
 *bRedraw*<br/>
 Redraw flag. If this parameter is TRUE, the slider is redrawn after the tick marks are cleared; otherwise the slider is not redrawn.
 
-##  <a name="create"></a>  CSliderCtrl::Create
+## <a name="create"></a>  CSliderCtrl::Create
 
 Creates a slider control and attaches it to a `CSliderCtrl` object.
 
@@ -153,7 +153,7 @@ Depending on the values set for *dwStyle*, the slider control can have either a 
 
 To apply extended window styles to the slider control, call [CreateEx](#createex) instead of `Create`.
 
-##  <a name="createex"></a>  CSliderCtrl::CreateEx
+## <a name="createex"></a>  CSliderCtrl::CreateEx
 
 Creates a control (a child window) and associates it with the `CSliderCtrl` object.
 
@@ -191,7 +191,7 @@ Nonzero if successful; otherwise 0.
 
 Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
 
-##  <a name="csliderctrl"></a>  CSliderCtrl::CSliderCtrl
+## <a name="csliderctrl"></a>  CSliderCtrl::CSliderCtrl
 
 Constructs a `CSliderCtrl` object.
 
@@ -199,7 +199,7 @@ Constructs a `CSliderCtrl` object.
 CSliderCtrl();
 ```
 
-##  <a name="getbuddy"></a>  CSliderCtrl::GetBuddy
+## <a name="getbuddy"></a>  CSliderCtrl::GetBuddy
 
 Retrieves the handle to a slider control buddy window at a given location.
 
@@ -224,7 +224,7 @@ A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the budd
 
 This member function implements the behavior of the Win32 message [TBM_GETBUDDY](/windows/win32/Controls/tbm-getbuddy), as described in the Windows SDK. For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
-##  <a name="getchannelrect"></a>  CSliderCtrl::GetChannelRect
+## <a name="getchannelrect"></a>  CSliderCtrl::GetChannelRect
 
 Retrieves the size and position of the bounding rectangle for a slider control's channel.
 
@@ -241,7 +241,7 @@ A pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object tha
 
 The channel is the area over which the slider moves and which contains the highlight when a range is selected.
 
-##  <a name="getlinesize"></a>  CSliderCtrl::GetLineSize
+## <a name="getlinesize"></a>  CSliderCtrl::GetLineSize
 
 Retrieves the size of the line for a slider control.
 
@@ -257,7 +257,7 @@ The size of a line for the slider control.
 
 The line size affects how much the slider moves for the TB_LINEUP and TB_LINEDOWN notifications. The default setting for the line size is 1.
 
-##  <a name="getnumtics"></a>  CSliderCtrl::GetNumTics
+## <a name="getnumtics"></a>  CSliderCtrl::GetNumTics
 
 Retrieves the number of tick marks in a slider control.
 
@@ -269,7 +269,7 @@ UINT GetNumTics() const;
 
 The number of tick marks in the slider control.
 
-##  <a name="getpagesize"></a>  CSliderCtrl::GetPageSize
+## <a name="getpagesize"></a>  CSliderCtrl::GetPageSize
 
 Retrieves the size of the page for a slider control.
 
@@ -285,7 +285,7 @@ The size of a page for the slider control.
 
 The page size affects how much the slider moves for the TB_PAGEUP and TB_PAGEDOWN notifications.
 
-##  <a name="getpos"></a>  CSliderCtrl::GetPos
+## <a name="getpos"></a>  CSliderCtrl::GetPos
 
 Retrieves the current position of the slider in a slider control.
 
@@ -297,7 +297,7 @@ int GetPos() const;
 
 The current position.
 
-##  <a name="getrange"></a>  CSliderCtrl::GetRange
+## <a name="getrange"></a>  CSliderCtrl::GetRange
 
 Retrieves the maximum and minimum positions for the slider in a slider control.
 
@@ -319,7 +319,7 @@ Reference to an integer that receives the maximum position.
 
 This function copies the values into the integers referenced by *nMin* and *nMax*.
 
-##  <a name="getrangemax"></a>  CSliderCtrl::GetRangeMax
+## <a name="getrangemax"></a>  CSliderCtrl::GetRangeMax
 
 Retrieves the maximum position for the slider in a slider control.
 
@@ -331,7 +331,7 @@ int GetRangeMax() const;
 
 The control's maximum position.
 
-##  <a name="getrangemin"></a>  CSliderCtrl::GetRangeMin
+## <a name="getrangemin"></a>  CSliderCtrl::GetRangeMin
 
 Retrieves the minimum position for the slider in a slider control.
 
@@ -343,7 +343,7 @@ int GetRangeMin() const;
 
 The control's minimum position.
 
-##  <a name="getselection"></a>  CSliderCtrl::GetSelection
+## <a name="getselection"></a>  CSliderCtrl::GetSelection
 
 Retrieves the starting and ending positions of the current selection in a slider control.
 
@@ -361,7 +361,7 @@ Reference to an integer that receives the starting position of the current selec
 *nMax*<br/>
 Reference to an integer that receives the ending position of the current selection.
 
-##  <a name="getthumblength"></a>  CSliderCtrl::GetThumbLength
+## <a name="getthumblength"></a>  CSliderCtrl::GetThumbLength
 
 Retrieves the length of the slider in the current trackbar control.
 
@@ -377,7 +377,7 @@ The length of the slider, in pixels.
 
 This method sends the [TBM_GETTHUMBLENGTH](/windows/win32/Controls/tbm-getthumblength) message, which is described in the Windows SDK.
 
-##  <a name="getthumbrect"></a>  CSliderCtrl::GetThumbRect
+## <a name="getthumbrect"></a>  CSliderCtrl::GetThumbRect
 
 Retrieves the size and position of the bounding rectangle for the slider (thumb) in a slider control.
 
@@ -390,7 +390,7 @@ void GetThumbRect(LPRECT lprc) const;
 *lprc*<br/>
 A pointer to a `CRect` object that contains the bounding rectangle for the slider when the function returns.
 
-##  <a name="gettic"></a>  CSliderCtrl::GetTic
+## <a name="gettic"></a>  CSliderCtrl::GetTic
 
 Retrieves the position of a tick mark in a slider control.
 
@@ -407,7 +407,7 @@ Zero-based index identifying a tick mark.
 
 The position of the specified tick mark or - 1 if *nTic* does not specify a valid index.
 
-##  <a name="getticarray"></a>  CSliderCtrl::GetTicArray
+## <a name="getticarray"></a>  CSliderCtrl::GetTicArray
 
 Retrieves the address of the array containing the positions of tick marks for a slider control.
 
@@ -419,7 +419,7 @@ DWORD* GetTicArray() const;
 
 The address of the array containing tick mark positions for the slider control.
 
-##  <a name="getticpos"></a>  CSliderCtrl::GetTicPos
+## <a name="getticpos"></a>  CSliderCtrl::GetTicPos
 
 Retrieves the current physical position of a tick mark in a slider control.
 
@@ -436,7 +436,7 @@ Zero-based index identifying a tick mark.
 
 The physical position, in client coordinates, of the specified tick mark or - 1 if *nTic* does not specify a valid index.
 
-##  <a name="gettooltips"></a>  CSliderCtrl::GetToolTips
+## <a name="gettooltips"></a>  CSliderCtrl::GetToolTips
 
 Retrieves the handle to the tooltip control assigned to the slider control, if any.
 
@@ -454,7 +454,7 @@ This member function implements the behavior of the Win32 message [TBM_GETTOOLTI
 
 For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
-##  <a name="setbuddy"></a>  CSliderCtrl::SetBuddy
+## <a name="setbuddy"></a>  CSliderCtrl::SetBuddy
 
 Assigns a window as the buddy window for a slider control.
 
@@ -486,7 +486,7 @@ This member function implements the behavior of the Win32 message [TBM_SETBUDDY]
 
 For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
-##  <a name="setlinesize"></a>  CSliderCtrl::SetLineSize
+## <a name="setlinesize"></a>  CSliderCtrl::SetLineSize
 
 Sets the size of the line for a slider control.
 
@@ -507,7 +507,7 @@ The previous line size.
 
 The line size affects how much the slider moves for the TB_LINEUP and TB_LINEDOWN notifications.
 
-##  <a name="setpagesize"></a>  CSliderCtrl::SetPageSize
+## <a name="setpagesize"></a>  CSliderCtrl::SetPageSize
 
 Sets the size of the page for a slider control.
 
@@ -528,7 +528,7 @@ The previous page size.
 
 The page size affects how much the slider moves for the TB_PAGEUP and TB_PAGEDOWN notifications.
 
-##  <a name="setpos"></a>  CSliderCtrl::SetPos
+## <a name="setpos"></a>  CSliderCtrl::SetPos
 
 Sets the current position of the slider in a slider control.
 
@@ -541,7 +541,7 @@ void SetPos(int nPos);
 *nPos*<br/>
 Specifies the new slider position.
 
-##  <a name="setrange"></a>  CSliderCtrl::SetRange
+## <a name="setrange"></a>  CSliderCtrl::SetRange
 
 Sets the range (minimum and maximum positions) for the slider in a slider control.
 
@@ -563,7 +563,7 @@ Maximum position for the slider.
 *bRedraw*<br/>
 The redraw flag. If this parameter is TRUE, the slider is redrawn after the range is set; otherwise the slider is not redrawn.
 
-##  <a name="setrangemax"></a>  CSliderCtrl::SetRangeMax
+## <a name="setrangemax"></a>  CSliderCtrl::SetRangeMax
 
 Sets the maximum range for the slider in a slider control.
 
@@ -581,7 +581,7 @@ Maximum position for the slider.
 *bRedraw*<br/>
 The redraw flag. If this parameter is TRUE, the slider is redrawn after the range is set; otherwise the slider is not redrawn.
 
-##  <a name="setrangemin"></a>  CSliderCtrl::SetRangeMin
+## <a name="setrangemin"></a>  CSliderCtrl::SetRangeMin
 
 Sets the minimum range for the slider in a slider control.
 
@@ -599,7 +599,7 @@ Minimum position for the slider.
 *bRedraw*<br/>
 The redraw flag. If this parameter is TRUE, the slider is redrawn after the range is set; otherwise the slider is not redrawn.
 
-##  <a name="setselection"></a>  CSliderCtrl::SetSelection
+## <a name="setselection"></a>  CSliderCtrl::SetSelection
 
 Sets the starting and ending positions for the current selection in a slider control.
 
@@ -617,7 +617,7 @@ Starting position for the slider.
 *nMax*<br/>
 Ending position for the slider.
 
-##  <a name="setthumblength"></a>  CSliderCtrl::SetThumbLength
+## <a name="setthumblength"></a>  CSliderCtrl::SetThumbLength
 
 Sets the length of the slider in the current trackbar control.
 
@@ -649,7 +649,7 @@ The following code example sets the trackbar control's thumb component to twice 
 
 [!code-cpp[NVC_MFC_CSliderCtrl_s1#2](../../mfc/reference/codesnippet/cpp/csliderctrl-class_2.cpp)]
 
-##  <a name="settic"></a>  CSliderCtrl::SetTic
+## <a name="settic"></a>  CSliderCtrl::SetTic
 
 Sets the position of a tick mark in a slider control.
 
@@ -666,7 +666,7 @@ Position of the tick mark. This parameter must specify a positive value.
 
 Nonzero if the tick mark is set; otherwise 0.
 
-##  <a name="setticfreq"></a>  CSliderCtrl::SetTicFreq
+## <a name="setticfreq"></a>  CSliderCtrl::SetTicFreq
 
 Sets the frequency with which tick marks are displayed in a slider.
 
@@ -685,7 +685,7 @@ For example, if the frequency is set to 2, a tick mark is displayed for every ot
 
 You must create the control with the TBS_AUTOTICKS style to use this function. For more information, see [CSliderCtrl::Create](#create).
 
-##  <a name="settipside"></a>  CSliderCtrl::SetTipSide
+## <a name="settipside"></a>  CSliderCtrl::SetTipSide
 
 Positions a tooltip control used by a trackbar control.
 
@@ -706,7 +706,7 @@ A value that represents the tooltip control's previous location. The return valu
 
 This member function implements the behavior of the Win32 message TBM_SETTIPSIDE, as described in the Windows SDK. Slider controls that use the TBS_TOOLTIPS style display tooltips. For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
-##  <a name="settooltips"></a>  CSliderCtrl::SetToolTips
+## <a name="settooltips"></a>  CSliderCtrl::SetToolTips
 
 Assigns a tooltip control to a slider control.
 

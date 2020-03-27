@@ -34,7 +34,7 @@ In addition to classes that encapsulate all of the Windows common controls and t
 
 - [CDragListBox](../mfc/reference/cdraglistbox-class.md)
 
-##  <a name="_core_finding_information_about_windows_common_controls"></a> Finding Information About Windows Common Controls
+## <a name="_core_finding_information_about_windows_common_controls"></a> Finding Information About Windows Common Controls
 
 The table below briefly describes each of the Windows common controls, including the control's MFC wrapper class.
 

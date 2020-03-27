@@ -50,7 +50,7 @@ Derive a class from the `CMFCToolBarComboBoxEdit` class to customize its edit op
 
 **Header:** afxtoolbarcomboboxbutton.h
 
-##  <a name="cmfctoolbarcomboboxedit"></a>  CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit
+## <a name="cmfctoolbarcomboboxedit"></a>  CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit
 
 Constructs a `CMFCToolBarComboBoxEdit` object.
 

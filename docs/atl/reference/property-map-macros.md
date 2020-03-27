@@ -22,7 +22,7 @@ These macros define property maps and entries.
 
 **Header:** atlcom.h
 
-##  <a name="begin_prop_map"></a>  BEGIN_PROP_MAP
+## <a name="begin_prop_map"></a>  BEGIN_PROP_MAP
 
 Marks the beginning of the object's property map.
 
@@ -47,7 +47,7 @@ BEGIN_PROP_MAP does not save out the extent (that is, the dimensions) of a prope
 
 [!code-cpp[NVC_ATL_Windowing#103](../../atl/codesnippet/cpp/property-map-macros_1.h)]
 
-##  <a name="prop_data_entry"></a>  PROP_DATA_ENTRY
+## <a name="prop_data_entry"></a>  PROP_DATA_ENTRY
 
 Indicates the extent, or dimensions, of an ActiveX control.
 
@@ -80,7 +80,7 @@ In the following example, the extent of the object (`m_sizeExtent`) is being per
 
 [!code-cpp[NVC_ATL_Windowing#132](../../atl/codesnippet/cpp/property-map-macros_3.h)]
 
-##  <a name="prop_entry_type"></a>  PROP_ENTRY_TYPE
+## <a name="prop_entry_type"></a>  PROP_ENTRY_TYPE
 
 Use this macro to enter a property description, property DISPID, and property page CLSID into the object's property map.
 
@@ -112,7 +112,7 @@ The [BEGIN_PROP_MAP](#begin_prop_map) macro marks the beginning of the property 
 
 See the example for [BEGIN_PROP_MAP](#begin_prop_map).
 
-##  <a name="prop_entry_type_ex"></a>  PROP_ENTRY_TYPE_EX
+## <a name="prop_entry_type_ex"></a>  PROP_ENTRY_TYPE_EX
 
 Similar to [PROP_ENTRY_TYPE](#prop_entry_type), but allows you specify a particular IID if your object supports multiple dual interfaces.
 
@@ -149,7 +149,7 @@ The following example groups entries for `IMyDual1` followed by an entry for `IM
 
 [!code-cpp[NVC_ATL_Windowing#133](../../atl/codesnippet/cpp/property-map-macros_4.h)]
 
-##  <a name="prop_page"></a>  PROP_PAGE
+## <a name="prop_page"></a>  PROP_PAGE
 
 Use this macro to enter a property page CLSID into the object's property map.
 
@@ -175,7 +175,7 @@ The [BEGIN_PROP_MAP](#begin_prop_map) macro marks the beginning of the property 
 
 [!code-cpp[NVC_ATL_Windowing#134](../../atl/codesnippet/cpp/property-map-macros_5.h)]
 
-##  <a name="end_prop_map"></a>  END_PROP_MAP
+## <a name="end_prop_map"></a>  END_PROP_MAP
 
 Marks the end of the object's property map.
 

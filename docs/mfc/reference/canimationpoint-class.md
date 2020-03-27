@@ -70,7 +70,7 @@ The CAnimationPoint class encapsulates two CAnimationVariable objects and can re
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="addtransition"></a>  CAnimationPoint::AddTransition
+## <a name="addtransition"></a>  CAnimationPoint::AddTransition
 
 Adds transitions for X and Y coordinates.
 
@@ -92,7 +92,7 @@ A pointer to transition for Y coordinate.
 
 Call this function to add the specified transitions to the internal list of transitions to be applied to animation variables for X and Y coordinates. When you add transitions, they are not applied immediately and stored in an internal list. Transitions are applied (added to a storyboard for a particular value) when you call CAnimationController::AnimateGroup. If you don't need to apply a transition to one of coordinates, you can pass NULL.
 
-##  <a name="canimationpoint"></a>  CAnimationPoint::CAnimationPoint
+## <a name="canimationpoint"></a>  CAnimationPoint::CAnimationPoint
 
 Constructs CAnimationPoint object.
 
@@ -124,7 +124,7 @@ Specifies user-defined data.
 
 Constructs CAnimationPoint object with default properties: default point coordinates, Group ID and Object ID are set to 0.
 
-##  <a name="getanimationvariablelist"></a>  CAnimationPoint::GetAnimationVariableList
+## <a name="getanimationvariablelist"></a>  CAnimationPoint::GetAnimationVariableList
 
 Puts the encapsulated animation variables into a list.
 
@@ -137,7 +137,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*, CAnimationVaria
 *lst*<br/>
 When the function returns, it contains pointers to two CAnimationVariable objects representing the X and Y coordinates.
 
-##  <a name="getdefaultvalue"></a>  CAnimationPoint::GetDefaultValue
+## <a name="getdefaultvalue"></a>  CAnimationPoint::GetDefaultValue
 
 Returns the default values for X and Y coordinates.
 
@@ -153,7 +153,7 @@ A point containing default value.
 
 Call this function to retrieve default value, which was previously set by constructor or SetDefaultValue.
 
-##  <a name="getvalue"></a>  CAnimationPoint::GetValue
+## <a name="getvalue"></a>  CAnimationPoint::GetValue
 
 Returns current value.
 
@@ -174,7 +174,7 @@ TRUE, if the current value was successfully retrieved; otherwise FALSE.
 
 Call this function to retrieve the current value of animation point. If this method fails or underlying COM objects for X and Y coordinates have not been initialized, ptValue contains default value, which was previously set in constructor or by SetDefaultValue.
 
-##  <a name="getx"></a>  CAnimationPoint::GetX
+## <a name="getx"></a>  CAnimationPoint::GetX
 
 Provides access to CAnimationVariable for X coordinate.
 
@@ -190,7 +190,7 @@ A reference to encapsulated CAnimationVariable representing X coordinate.
 
 You can call this method to get direct access to underlying CAnimationVariable representing X coordinate.
 
-##  <a name="gety"></a>  CAnimationPoint::GetY
+## <a name="gety"></a>  CAnimationPoint::GetY
 
 Provides access to CAnimationVariable for Y coordinate.
 
@@ -206,7 +206,7 @@ A reference to encapsulated CAnimationVariable representing Y coordinate.
 
 You can call this method to get direct access to underlying CAnimationVariable representing Y coordinate.
 
-##  <a name="m_xvalue"></a>  CAnimationPoint::m_xValue
+## <a name="m_xvalue"></a>  CAnimationPoint::m_xValue
 
 The encapsulated animation variable that represents X coordinate of animation point.
 
@@ -214,7 +214,7 @@ The encapsulated animation variable that represents X coordinate of animation po
 CAnimationVariable m_xValue;
 ```
 
-##  <a name="m_yvalue"></a>  CAnimationPoint::m_yValue
+## <a name="m_yvalue"></a>  CAnimationPoint::m_yValue
 
 The encapsulated animation variable that represents Y coordinate of animation point.
 
@@ -222,7 +222,7 @@ The encapsulated animation variable that represents Y coordinate of animation po
 CAnimationVariable m_yValue;
 ```
 
-##  <a name="operator_cpoint"></a>  CAnimationPoint::operator CPoint
+## <a name="operator_cpoint"></a>  CAnimationPoint::operator CPoint
 
 Converts a CAnimationPoint to a CPoint.
 
@@ -238,7 +238,7 @@ Current value of CAnimationPoint as CPoint.
 
 This function internally calls GetValue. If GetValue for some reason fails, the returned point will contain default values for X and Y coordinates.
 
-##  <a name="operator_eq"></a>  CAnimationPoint::operator=
+## <a name="operator_eq"></a>  CAnimationPoint::operator=
 
 Assigns ptSrc to CAnimationPoint.
 
@@ -255,7 +255,7 @@ Refers to CPoint or POINT.
 
 Assigns ptSrc to CAnimationPoint. It's recommended to do that before animation start, because this operator calls SetDefaultValue, which recreates the underlying COM objects for X and Y coordinates if they have been created. If you subscribed this animation object to events (ValueChanged or IntegerValueChanged), you need to re-enable these events.
 
-##  <a name="setdefaultvalue"></a>  CAnimationPoint::SetDefaultValue
+## <a name="setdefaultvalue"></a>  CAnimationPoint::SetDefaultValue
 
 Sets default value.
 

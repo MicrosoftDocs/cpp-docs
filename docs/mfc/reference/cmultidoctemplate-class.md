@@ -57,7 +57,7 @@ For more information on `CMultiDocTemplate`, see [Document Templates and the Doc
 
 **Header:** afxwin.h
 
-##  <a name="cmultidoctemplate"></a>  CMultiDocTemplate::CMultiDocTemplate
+## <a name="cmultidoctemplate"></a>  CMultiDocTemplate::CMultiDocTemplate
 
 Constructs a `CMultiDocTemplate` object.
 

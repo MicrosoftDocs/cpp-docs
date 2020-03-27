@@ -52,7 +52,7 @@ A smooth-stop transition slows down as it approaches a given final value, and re
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="create"></a>  CSmoothStopTransition::Create
+## <a name="create"></a>  CSmoothStopTransition::Create
 
 Calls the transition library to create encapsulated transition COM object.
 
@@ -71,7 +71,7 @@ A pointer to transition library, which is responsible for creation of standard t
 
 TRUE if transition is created successfully; otherwise FALSE.
 
-##  <a name="csmoothstoptransition"></a>  CSmoothStopTransition::CSmoothStopTransition
+## <a name="csmoothstoptransition"></a>  CSmoothStopTransition::CSmoothStopTransition
 
 Constructs a smooth-stop transition and initializes its maximum duration and final value.
 
@@ -89,7 +89,7 @@ The maximum duration of the transition.
 *dblFinalValue*<br/>
 The value of the animation variable at the end of the transition.
 
-##  <a name="m_dblfinalvalue"></a>  CSmoothStopTransition::m_dblFinalValue
+## <a name="m_dblfinalvalue"></a>  CSmoothStopTransition::m_dblFinalValue
 
 The value of the animation variable at the end of the transition.
 
@@ -97,7 +97,7 @@ The value of the animation variable at the end of the transition.
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_maximumduration"></a>  CSmoothStopTransition::m_maximumDuration
+## <a name="m_maximumduration"></a>  CSmoothStopTransition::m_maximumDuration
 
 The maximum duration of the transition.
 

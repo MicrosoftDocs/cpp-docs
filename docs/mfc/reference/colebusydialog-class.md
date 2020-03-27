@@ -67,7 +67,7 @@ For more information on OLE-specific dialog boxes, see the article [Dialog Boxes
 
 **Header:** afxodlgs.h
 
-##  <a name="colebusydialog"></a>  COleBusyDialog::COleBusyDialog
+## <a name="colebusydialog"></a>  COleBusyDialog::COleBusyDialog
 
 This function only constructs a `COleBusyDialog` object.
 
@@ -105,7 +105,7 @@ To display the dialog box, call [DoModal](#domodal).
 
 For more information, see the [OLEUIBUSY](/windows/win32/api/oledlg/ns-oledlg-oleuibusyw) structure in the Windows SDK.
 
-##  <a name="domodal"></a>  COleBusyDialog::DoModal
+## <a name="domodal"></a>  COleBusyDialog::DoModal
 
 Call this function to display the OLE Server Busy or Server Not Responding dialog box.
 
@@ -129,7 +129,7 @@ If you want to initialize the various dialog box controls by setting members of 
 
 If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information that was input by the user into the dialog box.
 
-##  <a name="getselectiontype"></a>  COleBusyDialog::GetSelectionType
+## <a name="getselectiontype"></a>  COleBusyDialog::GetSelectionType
 
 Call this function to get the selection type chosen by the user in the Server Busy dialog box.
 
@@ -161,7 +161,7 @@ Brief descriptions of these values follow:
 
 - `COleBusyDialog::callUnblocked` Call to activate the server is now unblocked.
 
-##  <a name="m_bz"></a>  COleBusyDialog::m_bz
+## <a name="m_bz"></a>  COleBusyDialog::m_bz
 
 Structure of type OLEUIBUSY used to control the behavior of the Server Busy dialog box.
 

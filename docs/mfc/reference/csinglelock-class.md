@@ -49,7 +49,7 @@ To use a `CSingleLock` object, call its constructor inside a member function in 
 
 **Header:** afxmt.h
 
-##  <a name="csinglelock"></a>  CSingleLock::CSingleLock
+## <a name="csinglelock"></a>  CSingleLock::CSingleLock
 
 Constructs a `CSingleLock` object.
 
@@ -75,7 +75,7 @@ This function is generally called from within an access member function of the c
 
 [!code-cpp[NVC_MFC_Utilities#19](../../mfc/codesnippet/cpp/csinglelock-class_1.h)]
 
-##  <a name="islocked"></a>  CSingleLock::IsLocked
+## <a name="islocked"></a>  CSingleLock::IsLocked
 
 Determines if the object associated with the `CSingleLock` object is nonsignaled (unavailable).
 
@@ -91,7 +91,7 @@ Nonzero if the object is locked; otherwise 0.
 
 [!code-cpp[NVC_MFC_Utilities#20](../../mfc/codesnippet/cpp/csinglelock-class_2.h)]
 
-##  <a name="lock"></a>  CSingleLock::Lock
+## <a name="lock"></a>  CSingleLock::Lock
 
 Call this function to gain access to the resource controlled by the synchronization object supplied to the `CSingleLock` constructor.
 
@@ -116,7 +116,7 @@ If the synchronization object is signaled, `Lock` will return successfully and t
 
 [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]
 
-##  <a name="unlock"></a>  CSingleLock::Unlock
+## <a name="unlock"></a>  CSingleLock::Unlock
 
 Releases the synchronization object owned by `CSingleLock`.
 

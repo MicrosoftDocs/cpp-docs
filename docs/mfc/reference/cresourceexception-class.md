@@ -43,7 +43,7 @@ For more information on using `CResourceException`, see the article [Exception H
 
 **Header:** afxwin.h
 
-##  <a name="cresourceexception"></a>  CResourceException::CResourceException
+## <a name="cresourceexception"></a>  CResourceException::CResourceException
 
 Constructs a `CResourceException` object.
 

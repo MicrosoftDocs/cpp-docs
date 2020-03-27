@@ -62,7 +62,7 @@ The following example demonstrates how to create an object of the `CMFCShellTree
 [!code-cpp[NVC_MFC_Explorer#4](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_1.h)]
 [!code-cpp[NVC_MFC_Explorer#5](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_2.cpp)]
 
-##  <a name="enableshellcontextmenu"></a>  CMFCShellTreeCtrl::EnableShellContextMenu
+## <a name="enableshellcontextmenu"></a>  CMFCShellTreeCtrl::EnableShellContextMenu
 
 Enables the shortcut menu.
 
@@ -75,7 +75,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 *bEnable*<br/>
 [in] A Boolean that specifies whether to enable the shortcut menu.
 
-##  <a name="getflags"></a>  CMFCShellTreeCtrl::GetFlags
+## <a name="getflags"></a>  CMFCShellTreeCtrl::GetFlags
 
 Returns the flags set for the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) object.
 
@@ -91,7 +91,7 @@ A DWORD value that specifies the combination of flags currently set.
 
 The flags set in the `CMFCShellTreeCtrl` are sent to the method [IShellFolder::EnumObjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects) whenever the object is refreshed. You can change the flags with the [CMFCShellTreeCtrl::SetFlags](#setflags) method.
 
-##  <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath
+## <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath
 
 Retrieves the path of an item in the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) object.
 
@@ -119,7 +119,7 @@ If this method fails, *strPath* contains the empty string.
 
 If you do not specify *hTreeItem*, this method tries to obtain the string for the currently selected item. If no item is selected and *hTreeItem* is NULL, this method fails.
 
-##  <a name="getrelatedlist"></a>  CMFCShellTreeCtrl::GetRelatedList
+## <a name="getrelatedlist"></a>  CMFCShellTreeCtrl::GetRelatedList
 
 Returns a pointer to the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object that is associated with this [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.
 
@@ -135,7 +135,7 @@ A pointer to the `CMFCShellListCtrl` object that is associated with this tree co
 
 By using a `CMFCShellListCtrl` object together with a `CMFCShellTreeCtrl` object, you can create an Explorer-like window. Use the method [CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist) to associate the two classes. After they are associated, the framework automatically updates the `CMFCShellListCtrl` if the selection in the `CMFCShellTreeCtrl` changes.
 
-##  <a name="onchildnotify"></a>  CMFCShellTreeCtrl::OnChildNotify
+## <a name="onchildnotify"></a>  CMFCShellTreeCtrl::OnChildNotify
 
 ```
 virtual BOOL OnChildNotify(
@@ -156,7 +156,7 @@ virtual BOOL OnChildNotify(
 
 ### Remarks
 
-##  <a name="ongetitemicon"></a>  CMFCShellTreeCtrl::OnGetItemIcon
+## <a name="ongetitemicon"></a>  CMFCShellTreeCtrl::OnGetItemIcon
 
 ```
 virtual int OnGetItemIcon(
@@ -173,7 +173,7 @@ virtual int OnGetItemIcon(
 
 ### Remarks
 
-##  <a name="ongetitemtext"></a>  CMFCShellTreeCtrl::OnGetItemText
+## <a name="ongetitemtext"></a>  CMFCShellTreeCtrl::OnGetItemText
 
 ```
 virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
@@ -187,7 +187,7 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 
 ### Remarks
 
-##  <a name="refresh"></a>  CMFCShellTreeCtrl::Refresh
+## <a name="refresh"></a>  CMFCShellTreeCtrl::Refresh
 
 Refreshes and repaints the [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md).
 
@@ -199,7 +199,7 @@ void Refresh();
 
 Call this method to refresh the hierarchy of the items displayed in the `CMFCShellTreeCtrl`.
 
-##  <a name="selectpath"></a>  CMFCShellTreeCtrl::SelectPath
+## <a name="selectpath"></a>  CMFCShellTreeCtrl::SelectPath
 
 Selects an item in the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) based on the supplied path.
 
@@ -220,7 +220,7 @@ BOOL SelectPath(LPCITEMIDLIST lpidl);
 
 S_OK if successful; E_FAIL otherwise.
 
-##  <a name="setflags"></a>  CMFCShellTreeCtrl::SetFlags
+## <a name="setflags"></a>  CMFCShellTreeCtrl::SetFlags
 
 Sets flags to filter the tree context.
 
@@ -242,7 +242,7 @@ void SetFlags(
 
 The `CMFCShellTreeCtrl` passes all set flags to [IShellFolder::EnumObjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects). For more information about the values of different flags, see [IShellFolder::EnumObjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects).
 
-##  <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList
+## <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList
 
 Associates a [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object with a [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.
 

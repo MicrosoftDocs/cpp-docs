@@ -80,7 +80,7 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 **Header:** atlconv.h
 
-##  <a name="ca2wex"></a>  CA2WEX::CA2WEX
+## <a name="ca2wex"></a>  CA2WEX::CA2WEX
 
 The constructor.
 
@@ -101,7 +101,7 @@ The code page used to perform the conversion. See the code page parameter discus
 
 Allocates the buffer used in the translation process.
 
-##  <a name="dtor"></a>  CA2WEX::~CA2WEX
+## <a name="dtor"></a>  CA2WEX::~CA2WEX
 
 The destructor.
 
@@ -113,7 +113,7 @@ The destructor.
 
 Frees the allocated buffer.
 
-##  <a name="m_psz"></a>  CA2WEX::m_psz
+## <a name="m_psz"></a>  CA2WEX::m_psz
 
 The data member that stores the source string.
 
@@ -121,7 +121,7 @@ The data member that stores the source string.
 LPWSTR m_psz;
 ```
 
-##  <a name="m_szbuffer"></a>  CA2WEX::m_szBuffer
+## <a name="m_szbuffer"></a>  CA2WEX::m_szBuffer
 
 The static buffer, used to store the converted string.
 
@@ -129,7 +129,7 @@ The static buffer, used to store the converted string.
 wchar_t m_szBuffer[t_nBufferLength];
 ```
 
-##  <a name="operator_lpwstr"></a>  CA2WEX::operator LPWSTR
+## <a name="operator_lpwstr"></a>  CA2WEX::operator LPWSTR
 
 Conversion operator.
 

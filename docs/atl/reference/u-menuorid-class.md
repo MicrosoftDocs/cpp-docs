@@ -44,7 +44,7 @@ The class defines two constructor overloads: one accepts a UINT argument and the
 
 **Header:** atlwin.h
 
-##  <a name="_u_menuorid__m_hmenu"></a>  _U_MENUorID::m_hMenu
+## <a name="_u_menuorid__m_hmenu"></a>  _U_MENUorID::m_hMenu
 
 The class holds the value passed to either of its constructors as a public HMENU data member.
 
@@ -52,7 +52,7 @@ The class holds the value passed to either of its constructors as a public HMENU
 HMENU m_hMenu;
 ```
 
-##  <a name="_u_menuorid___u_menuorid"></a>  _U_MENUorID::_U_MENUorID
+## <a name="_u_menuorid___u_menuorid"></a>  _U_MENUorID::_U_MENUorID
 
 The UINT argument is just cast to an HMENU in the constructor and the result stored in the class's single data member, [m_hMenu](#_u_menuorid__m_hmenu).
 

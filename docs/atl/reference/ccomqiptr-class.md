@@ -54,7 +54,7 @@ ATL uses `CComQIPtr` and [CComPtr](../../atl/reference/ccomptr-class.md) to mana
 
 **Header:** atlcomcli.h
 
-##  <a name="ccomqiptr"></a>  CComQIPtr::CComQIPtr
+## <a name="ccomqiptr"></a>  CComQIPtr::CComQIPtr
 
 The constructor.
 
@@ -76,7 +76,7 @@ A COM interface.
 *piid*<br/>
 A pointer to the IID of *T*.
 
-##  <a name="operator_eq"></a>  CComQIPtr::operator =
+## <a name="operator_eq"></a>  CComQIPtr::operator =
 
 The assignment operator.
 

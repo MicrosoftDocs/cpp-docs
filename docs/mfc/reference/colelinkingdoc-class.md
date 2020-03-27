@@ -77,7 +77,7 @@ For more information on using `COleLinkingDoc`, see the articles [Containers: Im
 
 **Header:** afxole.h
 
-##  <a name="colelinkingdoc"></a>  COleLinkingDoc::COleLinkingDoc
+## <a name="colelinkingdoc"></a>  COleLinkingDoc::COleLinkingDoc
 
 Constructs a `COleLinkingDoc` object without beginning communications with the OLE system DLLs.
 
@@ -89,7 +89,7 @@ COleLinkingDoc();
 
 You must call the `Register` member function to inform OLE that the document is open.
 
-##  <a name="onfindembeddeditem"></a>  COleLinkingDoc::OnFindEmbeddedItem
+## <a name="onfindembeddeditem"></a>  COleLinkingDoc::OnFindEmbeddedItem
 
 Called by the framework to determine whether the document contains an embedded OLE item with the specified name.
 
@@ -110,7 +110,7 @@ A pointer to the specified item; NULL if the item is not found.
 
 The default implementation searches the list of embedded items for an item with the specified name (the name comparison is case sensitive). Override this function if you have your own method of storing or naming embedded OLE items.
 
-##  <a name="ongetlinkeditem"></a>  COleLinkingDoc::OnGetLinkedItem
+## <a name="ongetlinkeditem"></a>  COleLinkingDoc::OnGetLinkedItem
 
 Called by the framework to check whether the document contains a linked server item with the specified name.
 
@@ -131,7 +131,7 @@ A pointer to the specified item; NULL if the item is not found.
 
 The default `COleLinkingDoc` implementation always returns NULL. This function is overriden in the derived class `COleServerDoc` to search the list of OLE server items for a linked item with the specified name (the name comparison is case sensitive). Override this function if you have implemented your own method of storing or retrieving linked server items.
 
-##  <a name="register"></a>  COleLinkingDoc::Register
+## <a name="register"></a>  COleLinkingDoc::Register
 
 Informs the OLE system DLLs that the document is open.
 
@@ -159,7 +159,7 @@ Call this function when creating or opening a named file to register the documen
 
 If you are using `COleTemplateServer` in your application, `Register` is called for you by `COleLinkingDoc`'s implementation of `OnNewDocument`, `OnOpenDocument`, and `OnSaveDocument`.
 
-##  <a name="revoke"></a>  COleLinkingDoc::Revoke
+## <a name="revoke"></a>  COleLinkingDoc::Revoke
 
 Informs the OLE system DLLs that the document is no longer open.
 

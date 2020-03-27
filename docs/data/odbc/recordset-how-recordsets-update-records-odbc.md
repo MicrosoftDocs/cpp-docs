@@ -26,7 +26,7 @@ This topic explains:
 
 [Recordset: More About Updates (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md) completes the recordset update story by explaining how transactions affect updates, how closing a recordset or scrolling affects updates in progress, and how your updates interact with the updates of other users.
 
-##  <a name="_core_your_role_in_recordset_updating"></a> Your Role in Recordset Updating
+## <a name="_core_your_role_in_recordset_updating"></a> Your Role in Recordset Updating
 
 The following table shows your role in using recordsets to add, edit, or delete records, along with what the framework does for you.
 
@@ -42,7 +42,7 @@ The following table shows your role in using recordsets to add, edit, or delete 
 
 For more information about transactions, see [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).
 
-##  <a name="_core_the_edit_buffer"></a> The Edit Buffer
+## <a name="_core_the_edit_buffer"></a> The Edit Buffer
 
 Taken collectively, the field data members of a recordset serve as an edit buffer that contains one record — the current record. Update operations use this buffer to operate on the current record.
 
@@ -55,7 +55,7 @@ When you call [AddNew](../../mfc/reference/crecordset-class.md#addnew) or [Edit]
 > [!NOTE]
 >  The edit buffer plays no role in record deletion. When you delete the current record, the record is marked as deleted, and the recordset is "not on a record" until you scroll to a different record.
 
-##  <a name="_core_dynasets_and_snapshots"></a> Dynasets and Snapshots
+## <a name="_core_dynasets_and_snapshots"></a> Dynasets and Snapshots
 
 [Dynasets](../../data/odbc/dynaset.md) refresh a record's contents as you scroll to the record. [Snapshots](../../data/odbc/snapshot.md) are static representations of the records, so a record's contents are not refreshed unless you call [Requery](../../mfc/reference/crecordset-class.md#requery). To use all the functionality of dynasets, you must be working with an ODBC driver that conforms to the correct level of ODBC API support. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and [Dynaset](../../data/odbc/dynaset.md).
 

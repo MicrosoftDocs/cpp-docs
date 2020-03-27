@@ -37,7 +37,7 @@ The following is a list of macros used to create and manage property pages for a
 |[END_PROPPAGEIDS](#end_proppageids)|Ends the list of property page IDs.|
 |[PROPPAGEID](#proppageid)|Declares a property page of the control class.|
 
-##  <a name="ddp_cbindex"></a>  DDP_CBIndex
+## <a name="ddp_cbindex"></a>  DDP_CBIndex
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of an integer property with the index of the current selection in a combo box on the property page.
 
@@ -71,7 +71,7 @@ This function should be called before the corresponding `DDX_CBIndex` function c
 
   **Header** afxctl.h
 
-##  <a name="ddp_cbstring"></a>  DDP_CBString
+## <a name="ddp_cbstring"></a>  DDP_CBString
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property with the current selection in a combo box on the property page.
 
@@ -105,7 +105,7 @@ This function should be called before the corresponding `DDX_CBString` function 
 
   **Header** afxctl.h
 
-##  <a name="ddp_cbstringexact"></a>  DDP_CBStringExact
+## <a name="ddp_cbstringexact"></a>  DDP_CBStringExact
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property that exactly matches the current selection in a combo box on the property page.
 
@@ -139,7 +139,7 @@ This function should be called before the corresponding `DDX_CBStringExact` func
 
   **Header** afxctl.h
 
-##  <a name="ddp_check"></a>  DDP_Check
+## <a name="ddp_check"></a>  DDP_Check
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of the property with the associated property page check box control.
 
@@ -173,7 +173,7 @@ This function should be called before the corresponding `DDX_Check` function cal
 
   **Header** afxctl.h
 
-##  <a name="ddp_lbindex"></a>  DDP_LBIndex
+## <a name="ddp_lbindex"></a>  DDP_LBIndex
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of an integer property with the index of the current selection in a list box on the property page.
 
@@ -207,7 +207,7 @@ This function should be called before the corresponding `DDX_LBIndex` function c
 
   **Header** afxctl.h
 
-##  <a name="ddp_lbstring"></a>  DDP_LBString
+## <a name="ddp_lbstring"></a>  DDP_LBString
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property with the current selection in a list box on the property page.
 
@@ -241,7 +241,7 @@ This function should be called before the corresponding `DDX_LBString` function 
 
   **Header** afxctl.h
 
-##  <a name="ddp_lbstringexact"></a>  DDP_LBStringExact
+## <a name="ddp_lbstringexact"></a>  DDP_LBStringExact
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property that exactly matches the current selection in a list box on the property page.
 
@@ -275,7 +275,7 @@ This function should be called before the corresponding `DDX_LBStringExact` func
 
   **Header** afxctl.h
 
-##  <a name="ddp_postprocessing"></a>  DDP_PostProcessing
+## <a name="ddp_postprocessing"></a>  DDP_PostProcessing
 
 Call this function in your property page's `DoDataExchange` function, to finish the transfer of property values from the property page to your control when property values are being saved.
 
@@ -298,7 +298,7 @@ This function should be called after all data exchange functions are completed. 
 
   **Header** afxctl.h
 
-##  <a name="ddp_radio"></a>  DDP_Radio
+## <a name="ddp_radio"></a>  DDP_Radio
 
 Call this function in your control's `DoPropExchange` function to synchronize the value of the property with the associated property page radio button control.
 
@@ -332,7 +332,7 @@ This function should be called before the corresponding `DDX_Radio` function cal
 
   **Header** afxctl.h
 
-##  <a name="ddp_text"></a>  DDP_Text
+## <a name="ddp_text"></a>  DDP_Text
 
 Call this function in your control's `DoDataExchange` function to synchronize the value of the property with the associated property page control.
 
@@ -408,7 +408,7 @@ This function should be called before the corresponding `DDX_Text` function call
 
   **Header** afxctl.h
 
-##  <a name="begin_proppageids"></a>  BEGIN_PROPPAGEIDS
+## <a name="begin_proppageids"></a>  BEGIN_PROPPAGEIDS
 
 Begins the definition of your control's list of property page IDs.
 
@@ -434,7 +434,7 @@ For more information on property pages, see the article [ActiveX Controls: Prope
 
   **Header** afxctl.h
 
-##  <a name="end_proppageids"></a>  END_PROPPAGEIDS
+## <a name="end_proppageids"></a>  END_PROPPAGEIDS
 
 Ends the definition of your property page ID list.
 
@@ -451,7 +451,7 @@ The name of the control class that owns the property page.
 
   **Header** afxctl.h
 
-##  <a name="proppageid"></a>  PROPPAGEID
+## <a name="proppageid"></a>  PROPPAGEID
 
 Adds a property page for use by your OLE control.
 

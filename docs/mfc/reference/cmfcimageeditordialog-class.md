@@ -59,7 +59,7 @@ One way to use a `CMFCImageEditorDialog` object is to pass it a `CBitmap` image 
 
 **Header:** afximageeditordialog.h
 
-##  <a name="cmfcimageeditordialog"></a>  CMFCImageEditorDialog::CMFCImageEditorDialog
+## <a name="cmfcimageeditordialog"></a>  CMFCImageEditorDialog::CMFCImageEditorDialog
 
 Constructs a `CMFCImageEditorDialog` object.
 

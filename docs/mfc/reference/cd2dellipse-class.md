@@ -33,7 +33,7 @@ class CD2DEllipse : public D2D1_ELLIPSE;
 
 **Header:** afxrendertarget.h
 
-##  <a name="cd2dellipse"></a>  CD2DEllipse::CD2DEllipse
+## <a name="cd2dellipse"></a>  CD2DEllipse::CD2DEllipse
 
 Constructs a CD2DEllipse object from CD2DRectF object.
 

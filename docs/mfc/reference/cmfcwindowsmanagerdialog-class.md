@@ -51,7 +51,7 @@ The following example demonstrates how to construct a `CMFCWindowsManagerDialog`
 
 **Header:** afxWindowsManagerDialog.h
 
-##  <a name="cmfcwindowsmanagerdialog"></a>  CMFCWindowsManagerDialog::CMFCWindowsManagerDialog
+## <a name="cmfcwindowsmanagerdialog"></a>  CMFCWindowsManagerDialog::CMFCWindowsManagerDialog
 
 Constructs a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) object.
 

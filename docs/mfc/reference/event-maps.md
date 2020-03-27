@@ -42,7 +42,7 @@ To support event maps, MFC provides the following macros:
 |[ON_OLEVERB](#on_oleverb)|Indicates a custom verb handled by the OLE control.|
 |[ON_STDOLEVERB](#on_stdoleverb)|Overrides a standard verb mapping of the OLE control.|
 
-##  <a name="declare_event_map"></a>  DECLARE_EVENT_MAP
+## <a name="declare_event_map"></a>  DECLARE_EVENT_MAP
 
 Each `COleControl`-derived class in your program can provide an event map to specify the events your control will fire.
 
@@ -86,7 +86,7 @@ For more information on event maps and the BEGIN_EVENT_MAP macro, see the articl
 
 **Header** afxctl.h
 
-##  <a name="end_event_map"></a>  END_EVENT_MAP
+## <a name="end_event_map"></a>  END_EVENT_MAP
 
 Use the END_EVENT_MAP macro to end the definition of your event map.
 

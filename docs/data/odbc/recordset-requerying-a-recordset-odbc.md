@@ -16,18 +16,18 @@ The principal reasons for requerying a recordset are to:
 
 - Refresh the recordset based on changing parameter values.
 
-##  <a name="_core_bringing_the_recordset_up_to_date"></a> Bringing the Recordset Up to Date
+## <a name="_core_bringing_the_recordset_up_to_date"></a> Bringing the Recordset Up to Date
 
 Frequently, you will want to requery your recordset object to bring it up to date. In a multiuser database environment, other users can make changes to the data during the life of your recordset. For more information about when your recordset reflects changes made by other users and when other users' recordsets reflect your changes, see [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) and [Dynaset](../../data/odbc/dynaset.md).
 
-##  <a name="_core_requerying_based_on_new_parameters"></a> Requerying Based on New Parameters
+## <a name="_core_requerying_based_on_new_parameters"></a> Requerying Based on New Parameters
 
 Another frequent — and equally important — use of [Requery](../../mfc/reference/crecordset-class.md#requery) is to select a new set of records based on changing parameter values.
 
 > [!TIP]
 >  Query speed is probably significantly faster if you call `Requery` with changing parameter values than if you call `Open` again.
 
-##  <a name="_core_requerying_dynasets_vs.._snapshots"></a> Requerying Dynasets vs. Snapshots
+## <a name="_core_requerying_dynasets_vs.._snapshots"></a> Requerying Dynasets vs. Snapshots
 
 Because dynasets are meant to present a set of records with dynamic up-to-date data, you want to requery dynasets often if you want to reflect other users' additions. Snapshots, on the other hand, are useful because you can safely rely on their static contents while you prepare reports, calculate totals, and so on. Still, you might sometimes want to requery a snapshot as well. In a multiuser environment, snapshot data might lose synchronization with the data source as other users change the database.
 

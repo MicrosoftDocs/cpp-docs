@@ -83,7 +83,7 @@ For more information on `CDocTemplate`, see [Document Templates and the Document
 
 **Header:** afxwin.h
 
-##  <a name="adddocument"></a>  CDocTemplate::AddDocument
+## <a name="adddocument"></a>  CDocTemplate::AddDocument
 
 Use this function to add a document to a template.
 
@@ -100,7 +100,7 @@ A pointer to the document to be added.
 
 The derived classes [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) and [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) override this function. If you derive your own document-template class from `CDocTemplate`, your derived class must override this function.
 
-##  <a name="cdoctemplate"></a>  CDocTemplate::CDocTemplate
+## <a name="cdoctemplate"></a>  CDocTemplate::CDocTemplate
 
 Constructs a `CDocTemplate` object.
 
@@ -142,7 +142,7 @@ Points to the `CRuntimeClass` object of the view class. This class is a `CView`-
 
 Use this member function to construct a `CDocTemplate` object. Dynamically allocate a `CDocTemplate` object and pass it to [CWinApp::AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) from the `InitInstance` member function of your application class.
 
-##  <a name="closealldocuments"></a>  CDocTemplate::CloseAllDocuments
+## <a name="closealldocuments"></a>  CDocTemplate::CloseAllDocuments
 
 Call this member function to close all open documents.
 
@@ -161,7 +161,7 @@ This member function is typically used as part of the File Exit command. The def
 
 Override this function if you want to require the user to perform special cleanup processing before the document is closed. For example, if the document represents a record in a database, you may want to override this function to close the database.
 
-##  <a name="createnewdocument"></a>  CDocTemplate::CreateNewDocument
+## <a name="createnewdocument"></a>  CDocTemplate::CreateNewDocument
 
 Call this member function to create a new document of the type associated with this document template.
 
@@ -173,7 +173,7 @@ virtual CDocument* CreateNewDocument();
 
 A pointer to the newly created document, or NULL if an error occurs.
 
-##  <a name="createnewframe"></a>  CDocTemplate::CreateNewFrame
+## <a name="createnewframe"></a>  CDocTemplate::CreateNewFrame
 
 Creates a new frame window containing a document and view.
 
@@ -201,7 +201,7 @@ A pointer to the newly created frame window, or NULL if an error occurs.
 
 The *pOther* parameter is used to implement the Window New command. It provides a frame window on which to model the new frame window. The new frame window is usually created invisible. Call this function to create frame windows outside the standard framework implementation of File New and File Open.
 
-##  <a name="createoleframe"></a>  CDocTemplate::CreateOleFrame
+## <a name="createoleframe"></a>  CDocTemplate::CreateOleFrame
 
 Creates an OLE frame window.
 
@@ -231,7 +231,7 @@ A pointer to a frame window if successful; otherwise NULL.
 
 If *bCreateView* is zero, an empty frame is created.
 
-##  <a name="getdocstring"></a>  CDocTemplate::GetDocString
+## <a name="getdocstring"></a>  CDocTemplate::GetDocString
 
 Retrieves a string associated with the document type.
 
@@ -273,7 +273,7 @@ Call this function to retrieve a specific substring describing the document type
 
 Call this function only if you are deriving your own class from `CDocTemplate`.
 
-##  <a name="getfirstdocposition"></a>  CDocTemplate::GetFirstDocPosition
+## <a name="getfirstdocposition"></a>  CDocTemplate::GetFirstDocPosition
 
 Retrieves the position of the first document associated with this template.
 
@@ -291,7 +291,7 @@ Use this function to get the position of the first document in the list of docum
 
 [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) and [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) both override this pure virtual function. Any class you derive from `CDocTemplate` must also override this function.
 
-##  <a name="getnextdoc"></a>  CDocTemplate::GetNextDoc
+## <a name="getnextdoc"></a>  CDocTemplate::GetNextDoc
 
 Retrieves the list element identified by *rPos*, then sets *rPos* to the POSITION value of the next entry in the list.
 
@@ -316,7 +316,7 @@ You can use `GetNextDoc` in a forward iteration loop if you establish the initia
 
 You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.
 
-##  <a name="initialupdateframe"></a>  CDocTemplate::InitialUpdateFrame
+## <a name="initialupdateframe"></a>  CDocTemplate::InitialUpdateFrame
 
 Initializes the frame window, and optionally makes it visible.
 
@@ -344,7 +344,7 @@ Call `IntitialUpdateFrame` after creating a new frame with `CreateNewFrame`. Cal
 
 It is not necessary to call this function when using the framework's implementation of File New and File Open.
 
-##  <a name="loadtemplate"></a>  CDocTemplate::LoadTemplate
+## <a name="loadtemplate"></a>  CDocTemplate::LoadTemplate
 
 Loads the resources for a given `CDocTemplate` or derived class.
 
@@ -356,7 +356,7 @@ virtual void LoadTemplate();
 
 This member function is called by the framework to load the resources for a given `CDocTemplate` or derived class. Normally it is called during construction, except when the template is being constructed globally. In that case, the call to `LoadTemplate` is delayed until [CWinApp::AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) is called.
 
-##  <a name="matchdoctype"></a>  CDocTemplate::MatchDocType
+## <a name="matchdoctype"></a>  CDocTemplate::MatchDocType
 
 Determines the degree of confidence in the match between a document type and this template.
 
@@ -402,7 +402,7 @@ If neither case is true, the function returns `CDocTemplate::yesAttemptForeign`.
 
 The default implementation does not return `CDocTemplate::maybeAttemptForeign` or `CDocTemplate::maybeAttemptNative`. Override this function to implement type-matching logic appropriate to your application, perhaps using these two values from the **Confidence** enumeration.
 
-##  <a name="opendocumentfile"></a>  CDocTemplate::OpenDocumentFile
+## <a name="opendocumentfile"></a>  CDocTemplate::OpenDocumentFile
 
 Opens a file specified by a path.
 
@@ -430,7 +430,7 @@ A pointer to the document whose file is named by *lpszPathName*; NULL if unsucce
 
 Opens the file whose path is specified by *lpszPathName*. If *lpszPathName* is NULL, a new file that contains a document of the type associated with this template is created.
 
-##  <a name="removedocument"></a>  CDocTemplate::RemoveDocument
+## <a name="removedocument"></a>  CDocTemplate::RemoveDocument
 
 Removes the document pointed to by *pDoc* from the list of documents associated with this template.
 
@@ -447,7 +447,7 @@ Pointer to the document to be removed.
 
 The derived classes `CMultiDocTemplate` and `CSingleDocTemplate` override this function. If you derive your own document-template class from `CDocTemplate`, your derived class must override this function.
 
-##  <a name="saveallmodified"></a>  CDocTemplate::SaveAllModified
+## <a name="saveallmodified"></a>  CDocTemplate::SaveAllModified
 
 Saves all documents that have been modified.
 
@@ -459,7 +459,7 @@ virtual BOOL SaveAllModified();
 
 Non-zero if successful; otherwise 0.
 
-##  <a name="setcontainerinfo"></a>  CDocTemplate::SetContainerInfo
+## <a name="setcontainerinfo"></a>  CDocTemplate::SetContainerInfo
 
 Determines the resources for OLE containers when editing an in-place OLE item.
 
@@ -478,7 +478,7 @@ Call this function to set the resources to be used when an OLE object is in-plac
 
 The menu associated with *nIDOleInPlaceContainer* contains separators that allow the menu of the activated in-place item to merge with the menu of the container application. For more information about merging server and container menus, see the article [Menus and Resources (OLE)](../../mfc/menus-and-resources-ole.md).
 
-##  <a name="setdefaulttitle"></a>  CDocTemplate::SetDefaultTitle
+## <a name="setdefaulttitle"></a>  CDocTemplate::SetDefaultTitle
 
 Call this function to load the document's default title and display it in the document's title bar.
 
@@ -495,7 +495,7 @@ Pointer to the document whose title is to be set.
 
 For information on the default title, see the description of `CDocTemplate::docName` in [CDocTemplate::GetDocString](#getdocstring).
 
-##  <a name="setserverinfo"></a>  CDocTemplate::SetServerInfo
+## <a name="setserverinfo"></a>  CDocTemplate::SetServerInfo
 
 Determines the resources and classes when the server document is embedded or edited in-place.
 
@@ -527,7 +527,7 @@ Call this member function to identify resources that will be used by the server 
 
 The menu associated with *nIDOleInPlaceServer* contains separators that allow the server menu to merge with the menu of the container. For more information about merging server and container menus, see the article [Menus and Resources (OLE)](../../mfc/menus-and-resources-ole.md).
 
-##  <a name="createpreviewframe"></a>  CDocTemplate::CreatePreviewFrame
+## <a name="createpreviewframe"></a>  CDocTemplate::CreatePreviewFrame
 
 Creates a child frame used for Rich Preview.
 
@@ -551,7 +551,7 @@ A valid pointer to a `CFrameWnd` object, or NULL if the creation fails.
 
 ### Remarks
 
-##  <a name="setpreviewinfo"></a>  CDocTemplate::SetPreviewInfo
+## <a name="setpreviewinfo"></a>  CDocTemplate::SetPreviewInfo
 
 Sets up the out of process preview handler.
 

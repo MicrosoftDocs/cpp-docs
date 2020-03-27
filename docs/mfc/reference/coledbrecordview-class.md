@@ -63,7 +63,7 @@ For more information about rowset classes, see the [Using OLE DB Consumer Templa
 
 **Header:** afxoledb.h
 
-##  <a name="coledbrecordview"></a>  COleDBRecordView::COleDBRecordView
+## <a name="coledbrecordview"></a>  COleDBRecordView::COleDBRecordView
 
 Constructs a `COleDBRecordView` object.
 
@@ -87,7 +87,7 @@ When you create an object of a type derived from `COleDBRecordView`, invoke one 
 > [!NOTE]
 >  Your derived class *must* supply its own constructor. In the constructor, invoke the constructor, `COleDBRecordView::COleDBRecordView`, with the resource name or ID as an argument.
 
-##  <a name="ongetrowset"></a>  COleDBRecordView::OnGetRowset
+## <a name="ongetrowset"></a>  COleDBRecordView::OnGetRowset
 
 Returns a handle for the **CRowset<>** object associated with the record view.
 
@@ -112,7 +112,7 @@ You must override this member function to construct or obtain a rowset object an
 
 For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).
 
-##  <a name="onmove"></a>  COleDBRecordView::OnMove
+## <a name="onmove"></a>  COleDBRecordView::OnMove
 
 Moves to a different record in the rowset and display its fields in the controls of the record view.
 

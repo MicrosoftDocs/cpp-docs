@@ -90,7 +90,7 @@ For more information on using `CPrintDialogEx`, see [Common Dialog Classes](../.
 
 **Header:** afxdlgs.h
 
-##  <a name="cprintdialogex"></a>  CPrintDialogEx::CPrintDialogEx
+## <a name="cprintdialogex"></a>  CPrintDialogEx::CPrintDialogEx
 
 Constructs a Windows Print property sheet.
 
@@ -112,7 +112,7 @@ A pointer to the dialog box's parent or owner window.
 
 This member function only constructs the object. Use the `DoModal` member function to display the dialog box.
 
-##  <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC
+## <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC
 
 Creates a printer device context (DC) from the [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) and [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) structures.
 
@@ -130,7 +130,7 @@ The returned DC is also stored in the `hDC` member of [m_pdex](#m_pdex).
 
 This DC is assumed to be the current printer DC, and any other previously obtained printer DCs must be deleted. This function can be called, and the resulting DC used, without ever displaying the Print dialog box.
 
-##  <a name="domodal"></a>  CPrintDialogEx::DoModal
+## <a name="domodal"></a>  CPrintDialogEx::DoModal
 
 Call this function to display the Windows Print property sheet and allow the user to select various printing options such as the number of copies, page range, and whether copies should be collated.
 
@@ -150,7 +150,7 @@ After calling `DoModal`, you can call other member functions to retrieve the set
 
 If the PD_RETURNDC flag is used when calling `DoModal`, a printer DC will be returned in the `hDC` member of [m_pdex](#m_pdex). This DC must be freed with a call to [DeleteDC](/windows/win32/api/wingdi/nf-wingdi-deletedc) by the caller of `CPrintDialogEx`.
 
-##  <a name="getcopies"></a>  CPrintDialogEx::GetCopies
+## <a name="getcopies"></a>  CPrintDialogEx::GetCopies
 
 Call this function after calling `DoModal` to retrieve the number of copies requested.
 
@@ -162,7 +162,7 @@ int GetCopies() const;
 
 The number of copies requested.
 
-##  <a name="getdefaults"></a>  CPrintDialogEx::GetDefaults
+## <a name="getdefaults"></a>  CPrintDialogEx::GetDefaults
 
 Call this function to retrieve the device defaults of the default printer without displaying a dialog box.
 
@@ -182,7 +182,7 @@ Creates a printer device context (DC) from the [DEVMODE](/windows/win32/api/wing
 
 If the PD_RETURNDC flag is set, this function will not only return `hDevNames` and `hDevMode` (located in `m_pdex.hDevNames` and `m_pdex.hDevMode`) to the caller, but will also return a printer DC in `m_pdex.hDC`. It is the responsibility of the caller to delete the printer DC and call the Windows [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree) function on the handles when you are finished with the `CPrintDialogEx` object.
 
-##  <a name="getdevicename"></a>  CPrintDialogEx::GetDeviceName
+## <a name="getdevicename"></a>  CPrintDialogEx::GetDeviceName
 
 Call this function after calling [DoModal](#domodal) to retrieve the name of the currently selected printer, or after calling [GetDefaults](#getdefaults) to retrieve the name of the default printer.
 
@@ -198,7 +198,7 @@ The name of the currently selected printer.
 
 Use a pointer to the `CString` object returned by `GetDeviceName` as the value of `lpszDeviceName` in a call to [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).
 
-##  <a name="getdevmode"></a>  CPrintDialogEx::GetDevMode
+## <a name="getdevmode"></a>  CPrintDialogEx::GetDevMode
 
 Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve information about the printing device.
 
@@ -210,7 +210,7 @@ LPDEVMODE GetDevMode() const;
 
 The [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](/windows/win32/api/winbase/nf-winbase-globalunlock) function, which is described in the Windows SDK.
 
-##  <a name="getdrivername"></a>  CPrintDialogEx::GetDriverName
+## <a name="getdrivername"></a>  CPrintDialogEx::GetDriverName
 
 Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve the name of the system-defined printer device driver.
 
@@ -226,7 +226,7 @@ A `CString` specifying the system-defined driver name.
 
 Use a pointer to the `CString` object returned by `GetDriverName` as the value of *lpszDriverName* in a call to [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).
 
-##  <a name="getportname"></a>  CPrintDialogEx::GetPortName
+## <a name="getportname"></a>  CPrintDialogEx::GetPortName
 
 Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve the name of the currently selected printer port.
 
@@ -238,7 +238,7 @@ CString GetPortName() const;
 
 The name of the currently selected printer port.
 
-##  <a name="getprinterdc"></a>  CPrintDialogEx::GetPrinterDC
+## <a name="getprinterdc"></a>  CPrintDialogEx::GetPrinterDC
 
 Returns a handle to the printer device context.
 
@@ -254,7 +254,7 @@ A handle to the printer device context.
 
 You must call the Windows [DeleteDC](/windows/win32/api/wingdi/nf-wingdi-deletedc) function to delete the device context when you are done using it.
 
-##  <a name="m_pdex"></a>  CPrintDialogEx::m_pdex
+## <a name="m_pdex"></a>  CPrintDialogEx::m_pdex
 
 A PRINTDLGEX structure whose members store the characteristics of the dialog object.
 
@@ -268,7 +268,7 @@ After constructing a `CPrintDialogEx` object, you can use `m_pdex` to set variou
 
 If you modify the `m_pdex` data member directly, you will override any default behavior.
 
-##  <a name="printall"></a>  CPrintDialogEx::PrintAll
+## <a name="printall"></a>  CPrintDialogEx::PrintAll
 
 Call this function after calling `DoModal` to determine whether to print all pages in the document.
 
@@ -280,7 +280,7 @@ BOOL PrintAll() const;
 
 TRUE if all pages in the document are to be printed; otherwise FALSE.
 
-##  <a name="printcollate"></a>  CPrintDialogEx::PrintCollate
+## <a name="printcollate"></a>  CPrintDialogEx::PrintCollate
 
 Call this function after calling `DoModal` to determine whether the printer should collate all printed copies of the document.
 
@@ -292,7 +292,7 @@ BOOL PrintCollate() const;
 
 TRUE if the user selects the collate check box in the dialog box; otherwise FALSE.
 
-##  <a name="printcurrentpage"></a>  CPrintDialogEx::PrintCurrentPage
+## <a name="printcurrentpage"></a>  CPrintDialogEx::PrintCurrentPage
 
 Call this function after calling `DoModal` to determine whether to print the current page in the document.
 
@@ -304,7 +304,7 @@ BOOL PrintCurrentPage() const;
 
 TRUE if **Print Current Page** is selected in the print dialog; otherwise FALSE.
 
-##  <a name="printrange"></a>  CPrintDialogEx::PrintRange
+## <a name="printrange"></a>  CPrintDialogEx::PrintRange
 
 Call this function after calling `DoModal` to determine whether to print only a range of pages in the document.
 
@@ -320,7 +320,7 @@ TRUE if only a range of pages in the document are to be printed; otherwise FALSE
 
 The specified page ranges can be determined from [m_pdex](#m_pdex) (see `nPageRanges`, `nMaxPageRanges`, and `lpPageRanges` in the [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) structure in the Windows SDK).
 
-##  <a name="printselection"></a>  CPrintDialogEx::PrintSelection
+## <a name="printselection"></a>  CPrintDialogEx::PrintSelection
 
 Call this function after calling `DoModal` to determine whether to print only the currently selected items.
 

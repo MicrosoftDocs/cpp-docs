@@ -50,7 +50,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="cautoptrarray"></a>  CAutoPtrArray::CAutoPtrArray
+## <a name="cautoptrarray"></a>  CAutoPtrArray::CAutoPtrArray
 
 The constructor.
 

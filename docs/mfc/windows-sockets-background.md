@@ -28,7 +28,7 @@ The Windows Sockets specification, Windows Sockets: An Open Interface for Networ
 > [!TIP]
 >  Because sockets use the Internet Protocol Suite, they are the preferred route for applications that support Internet communications on the "information highway."
 
-##  <a name="_core_definition_of_a_socket"></a> Definition of a Socket
+## <a name="_core_definition_of_a_socket"></a> Definition of a Socket
 
 A socket is a communication endpoint — an object through which a Windows Sockets application sends or receives packets of data across a network. A socket has a type and is associated with a running process, and it may have a name. Currently, sockets generally exchange data only with other sockets in the same "communication domain," which uses the Internet Protocol Suite.
 
@@ -51,13 +51,13 @@ Two socket types are available:
 
 For information about these types and which kind of socket to use in which situations, see [Windows Sockets: Stream Sockets](../mfc/windows-sockets-stream-sockets.md) and [Windows Sockets: Datagram Sockets](../mfc/windows-sockets-datagram-sockets.md).
 
-##  <a name="_core_the_socket_data_type"></a> The SOCKET Data Type
+## <a name="_core_the_socket_data_type"></a> The SOCKET Data Type
 
 Each MFC socket object encapsulates a handle to a Windows Sockets object. The data type of this handle is **SOCKET**. A **SOCKET** handle is analogous to the `HWND` for a window. MFC socket classes provide operations on the encapsulated handle.
 
 The **SOCKET** data type is described in detail in the Windows SDK. See "Socket Data Type and Error Values" under Windows Sockets.
 
-##  <a name="_core_uses_for_sockets"></a> Uses for Sockets
+## <a name="_core_uses_for_sockets"></a> Uses for Sockets
 
 Sockets are highly useful in at least three communications contexts:
 

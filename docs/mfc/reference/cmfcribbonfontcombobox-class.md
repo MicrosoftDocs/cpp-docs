@@ -65,7 +65,7 @@ After you create a `CMFCRibbonFontComboBox` object, add it to a ribbon panel by 
 
 **Header:** afxRibbonComboBox.h
 
-##  <a name="buildfonts"></a>  CMFCRibbonFontComboBox::BuildFonts
+## <a name="buildfonts"></a>  CMFCRibbonFontComboBox::BuildFonts
 
 Populates the combo box on the ribbon with fonts.
 
@@ -87,7 +87,7 @@ void BuildFonts(
 *nPitchAndFamily*<br/>
 [in] Specifies the pitch and family of the fonts to add.
 
-##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox
+## <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox
 
 Constructs and initializes a [CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md) object.
 
@@ -123,7 +123,7 @@ For more information about possible *nFontType* parameter values, see [EnumFontF
 
 For more information about valid character sets that can be assigned to *nCharSet*, and valid values that can be assigned to *nPitchAndFamily*, see [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) in the Windows SDK documentation.
 
-##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc
+## <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -139,7 +139,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
 
 ### Remarks
 
-##  <a name="rebuildfonts"></a>  CMFCRibbonFontComboBox::RebuildFonts
+## <a name="rebuildfonts"></a>  CMFCRibbonFontComboBox::RebuildFonts
 
 Populates the combo box on the ribbon with fonts of a previously specified font type, character set, and pitch and family.
 
@@ -151,7 +151,7 @@ void RebuildFonts();
 
 You can specify the font type, character set, and pitch and family of the fonts to include in the ribbon font combo box in the [constructor](#cmfcribbonfontcombobox) for this class, or by calling [CMFCRibbonFontComboBox::BuildFonts](#buildfonts).
 
-##  <a name="setfont"></a>  CMFCRibbonFontComboBox::SetFont
+## <a name="setfont"></a>  CMFCRibbonFontComboBox::SetFont
 
 Selects the specified font in the combo box.
 
@@ -179,7 +179,7 @@ Nonzero if the specified font was found and selected; otherwise, zero.
 
 ### Remarks
 
-##  <a name="getcharset"></a>  CMFCRibbonFontComboBox::GetCharSet
+## <a name="getcharset"></a>  CMFCRibbonFontComboBox::GetCharSet
 
 Returns the specified character set.
 
@@ -193,7 +193,7 @@ Character set (see LOGFONT in the Windows SDK documentation).
 
 ### Remarks
 
-##  <a name="getfonttype"></a>  CMFCRibbonFontComboBox::GetFontType
+## <a name="getfonttype"></a>  CMFCRibbonFontComboBox::GetFontType
 
 Returns which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.
 
@@ -207,7 +207,7 @@ Font types (see EnumFontFamProc in the Windows SDK documentation).
 
 ### Remarks
 
-##  <a name="getpitchandfamily"></a>  CMFCRibbonFontComboBox::GetPitchAndFamily
+## <a name="getpitchandfamily"></a>  CMFCRibbonFontComboBox::GetPitchAndFamily
 
 Returns the pitch and the family of the fonts that are displayed in the combo box.
 

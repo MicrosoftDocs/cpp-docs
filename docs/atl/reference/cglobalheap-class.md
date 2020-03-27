@@ -50,7 +50,7 @@ See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).
 
 **Header:** atlmem.h
 
-##  <a name="allocate"></a>  CGlobalHeap::Allocate
+## <a name="allocate"></a>  CGlobalHeap::Allocate
 
 Call this method to allocate a block of memory.
 
@@ -73,7 +73,7 @@ Call [CGlobalHeap::Free](#free) or [CGlobalHeap::Reallocate](#reallocate) to fre
 
 Implemented using [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) with a flag parameter of GMEM_FIXED.
 
-##  <a name="free"></a>  CGlobalHeap::Free
+## <a name="free"></a>  CGlobalHeap::Free
 
 Call this method to free a block of memory allocated by this memory manager.
 
@@ -90,7 +90,7 @@ Pointer to memory previously allocated by this memory manager. NULL is a valid v
 
 Implemented using [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree).
 
-##  <a name="getsize"></a>  CGlobalHeap::GetSize
+## <a name="getsize"></a>  CGlobalHeap::GetSize
 
 Call this method to get the allocated size of a memory block allocated by this memory manager.
 
@@ -111,7 +111,7 @@ Returns the size of the allocated memory block in bytes.
 
 Implemented using [GlobalSize](/windows/win32/api/winbase/nf-winbase-globalsize).
 
-##  <a name="reallocate"></a>  CGlobalHeap::Reallocate
+## <a name="reallocate"></a>  CGlobalHeap::Reallocate
 
 Call this method to reallocate memory allocated by this memory manager.
 

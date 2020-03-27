@@ -58,7 +58,7 @@ The [IViewObject](/windows/win32/api/oleidl/nn-oleidl-iviewobject), [IViewObject
 
 **Header:** atlctl.h
 
-##  <a name="draw"></a>  IViewObjectExImpl::Draw
+## <a name="draw"></a>  IViewObjectExImpl::Draw
 
 Draws a representation of the control onto a device context.
 
@@ -81,7 +81,7 @@ This method calls `CComControl::OnDrawAdvanced` which in turn calls your control
 
 See [IViewObject::Draw](/windows/win32/api/oleidl/nf-oleidl-iviewobject-draw) in the Windows SDK.
 
-##  <a name="freeze"></a>  IViewObjectExImpl::Freeze
+## <a name="freeze"></a>  IViewObjectExImpl::Freeze
 
 Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns E_NOTIMPL.
 
@@ -97,7 +97,7 @@ STDMETHOD(Freeze)(
 
 See [IViewObject::Freeze](/windows/win32/api/oleidl/nf-oleidl-iviewobject-freeze) in the Windows SDK.
 
-##  <a name="getadvise"></a>  IViewObjectExImpl::GetAdvise
+## <a name="getadvise"></a>  IViewObjectExImpl::GetAdvise
 
 Retrieves an existing advisory sink connection on the control, if there is one.
 
@@ -114,7 +114,7 @@ The advisory sink is stored in the control class data member [CComControlBase::m
 
 See [IViewObject::GetAdvise](/windows/win32/api/oleidl/nf-oleidl-iviewobject-getadvise) in the Windows SDK.
 
-##  <a name="getcolorset"></a>  IViewObjectExImpl::GetColorSet
+## <a name="getcolorset"></a>  IViewObjectExImpl::GetColorSet
 
 Returns the logical palette used by the control for drawing. The ATL implementation returns E_NOTIMPL.
 
@@ -132,7 +132,7 @@ STDMETHOD(GetColorSet)(
 
 See [IViewObject::GetColorSet](/windows/win32/api/oleidl/nf-oleidl-iviewobject-getcolorset) in the Windows SDK.
 
-##  <a name="getextent"></a>  IViewObjectExImpl::GetExtent
+## <a name="getextent"></a>  IViewObjectExImpl::GetExtent
 
 Retrieves the control's display size in HIMETRIC units (0.01 millimeter per unit) from the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).
 
@@ -148,7 +148,7 @@ STDMETHOD(GetExtent)(
 
 See [IViewObject2::GetExtent](/windows/win32/api/oleidl/nf-oleidl-iviewobject2-getextent) in the Windows SDK.
 
-##  <a name="getnaturalextent"></a>  IViewObjectExImpl::GetNaturalExtent
+## <a name="getnaturalextent"></a>  IViewObjectExImpl::GetNaturalExtent
 
 Provides sizing hints from the container for the object to use as the user resizes it.
 
@@ -168,7 +168,7 @@ If `dwAspect` is DVASPECT_CONTENT and *pExtentInfo->dwExtentMode* is DVEXTENT_CO
 
 See [IViewObjectEx::GetNaturalExtent](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-getnaturalextent) in the Windows SDK.
 
-##  <a name="getrect"></a>  IViewObjectExImpl::GetRect
+## <a name="getrect"></a>  IViewObjectExImpl::GetRect
 
 Returns a rectangle describing a requested drawing aspect. The ATL implementation returns E_NOTIMPL.
 
@@ -180,7 +180,7 @@ STDMETHOD(GetRect)(DWORD /* dwAspect */, LPRECTL /* pRect */);
 
 See [IViewObjectEx::GetRect](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-getrect) in the Windows SDK.
 
-##  <a name="getviewstatus"></a>  IViewObjectExImpl::GetViewStatus
+## <a name="getviewstatus"></a>  IViewObjectExImpl::GetViewStatus
 
 Returns information about the opacity of the object and what drawing aspects are supported.
 
@@ -194,7 +194,7 @@ By default, ATL sets `pdwStatus` to indicate that the control supports VIEWSTATU
 
 See [IViewObjectEx::GetViewStatus](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-getviewstatus) in the Windows SDK.
 
-##  <a name="queryhitpoint"></a>  IViewObjectExImpl::QueryHitPoint
+## <a name="queryhitpoint"></a>  IViewObjectExImpl::QueryHitPoint
 
 Checks if the specified point is in the specified rectangle and returns a [HITRESULT](/windows/win32/api/ocidl/ne-ocidl-hitresult) value in `pHitResult`.
 
@@ -215,7 +215,7 @@ If `dwAspect` equals [DVASPECT_CONTENT](/windows/win32/api/wtypes/ne-wtypes-dvas
 
 See [IViewObjectEx::QueryHitPoint](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-queryhitpoint) in the Windows SDK.
 
-##  <a name="queryhitrect"></a>  IViewObjectExImpl::QueryHitRect
+## <a name="queryhitrect"></a>  IViewObjectExImpl::QueryHitRect
 
 Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a [HITRESULT](/windows/win32/api/ocidl/ne-ocidl-hitresult) value in `pHitResult`.
 
@@ -236,7 +236,7 @@ If `dwAspect` equals [DVASPECT_CONTENT](/windows/win32/api/wtypes/ne-wtypes-dvas
 
 See [IViewObjectEx::QueryHitRect](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-queryhitrect) in the Windows SDK.
 
-##  <a name="setadvise"></a>  IViewObjectExImpl::SetAdvise
+## <a name="setadvise"></a>  IViewObjectExImpl::SetAdvise
 
 Sets up a connection between the control and an advise sink so the sink can be notified about changes in the control's view.
 
@@ -253,7 +253,7 @@ The pointer to the [IAdviseSink](/windows/win32/api/objidl/nn-objidl-iadvisesink
 
 See [IViewObject::SetAdvise](/windows/win32/api/oleidl/nf-oleidl-iviewobject-setadvise) in the Windows SDK.
 
-##  <a name="unfreeze"></a>  IViewObjectExImpl::Unfreeze
+## <a name="unfreeze"></a>  IViewObjectExImpl::Unfreeze
 
 Unfreezes the drawn representation of the control. The ATL implementation returns E_NOTIMPL.
 
@@ -265,7 +265,7 @@ STDMETHOD(Unfreeze)(DWORD /* dwFreeze */);
 
 See [IViewObject::Unfreeze](/windows/win32/api/oleidl/nf-oleidl-iviewobject-unfreeze) in the Windows SDK.
 
-##  <a name="closehandle"></a>  IWorkerThreadClient::CloseHandle
+## <a name="closehandle"></a>  IWorkerThreadClient::CloseHandle
 
 Implement this method to close the handle associated with this object.
 
@@ -292,7 +292,7 @@ The following code shows a simple implementation of `IWorkerThreadClient::CloseH
 
 [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/cpp/iviewobjecteximpl-class_1.cpp)]
 
-##  <a name="execute"></a>  IWorkerThreadClient::Execute
+## <a name="execute"></a>  IWorkerThreadClient::Execute
 
 Implement this method to execute code when the handle associated with this object becomes signaled.
 

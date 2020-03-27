@@ -86,7 +86,7 @@ For more information on using `CFontDialog`, see [Common Dialog Classes](../../m
 
 **Header:** afxdlgs.h
 
-##  <a name="cfontdialog"></a>  CFontDialog::CFontDialog
+## <a name="cfontdialog"></a>  CFontDialog::CFontDialog
 
 Constructs a `CFontDialog` object.
 
@@ -132,7 +132,7 @@ Note that the constructor automatically fills in the members of the `CHOOSEFONT`
 
 [!code-cpp[NVC_MFCDocView#78](../../mfc/codesnippet/cpp/cfontdialog-class_1.cpp)]
 
-##  <a name="domodal"></a>  CFontDialog::DoModal
+## <a name="domodal"></a>  CFontDialog::DoModal
 
 Call this function to display the Windows common font dialog box and allow the user to choose a font.
 
@@ -156,7 +156,7 @@ If `DoModal` returns IDOK, you can call other member functions to retrieve the s
 
   See the examples for [CFontDialog::CFontDialog](#cfontdialog) and [CFontDialog::GetColor](#getcolor).
 
-##  <a name="getcharformat"></a>  CFontDialog::GetCharFormat
+## <a name="getcharformat"></a>  CFontDialog::GetCharFormat
 
 Retrieves the character formatting of the selected font.
 
@@ -169,7 +169,7 @@ void GetCharFormat(CHARFORMAT& cf) const;
 *cf*<br/>
 A [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) structure containing information about the character formatting of the selected font.
 
-##  <a name="getcolor"></a>  CFontDialog::GetColor
+## <a name="getcolor"></a>  CFontDialog::GetColor
 
 Call this function to retrieve the selected font color.
 
@@ -185,7 +185,7 @@ The color of the selected font.
 
 [!code-cpp[NVC_MFCDocView#79](../../mfc/codesnippet/cpp/cfontdialog-class_2.cpp)]
 
-##  <a name="getcurrentfont"></a>  CFontDialog::GetCurrentFont
+## <a name="getcurrentfont"></a>  CFontDialog::GetCurrentFont
 
 Call this function to assign the characteristics of the currently selected font to the members of a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure.
 
@@ -208,7 +208,7 @@ If this function is called during a call to [DoModal](#domodal), it returns the 
 
 [!code-cpp[NVC_MFCDocView#80](../../mfc/codesnippet/cpp/cfontdialog-class_3.cpp)]
 
-##  <a name="getfacename"></a>  CFontDialog::GetFaceName
+## <a name="getfacename"></a>  CFontDialog::GetFaceName
 
 Call this function to retrieve the face name of the selected font.
 
@@ -224,7 +224,7 @@ The face name of the font selected in the `CFontDialog` dialog box.
 
 [!code-cpp[NVC_MFCDocView#81](../../mfc/codesnippet/cpp/cfontdialog-class_4.cpp)]
 
-##  <a name="getsize"></a>  CFontDialog::GetSize
+## <a name="getsize"></a>  CFontDialog::GetSize
 
 Call this function to retrieve the size of the selected font.
 
@@ -240,7 +240,7 @@ The font's size, in tenths of a point.
 
 [!code-cpp[NVC_MFCDocView#82](../../mfc/codesnippet/cpp/cfontdialog-class_5.cpp)]
 
-##  <a name="getstylename"></a>  CFontDialog::GetStyleName
+## <a name="getstylename"></a>  CFontDialog::GetStyleName
 
 Call this function to retrieve the style name of the selected font.
 
@@ -256,7 +256,7 @@ The style name of the font.
 
 [!code-cpp[NVC_MFCDocView#83](../../mfc/codesnippet/cpp/cfontdialog-class_6.cpp)]
 
-##  <a name="getweight"></a>  CFontDialog::GetWeight
+## <a name="getweight"></a>  CFontDialog::GetWeight
 
 Call this function to retrieve the weight of the selected font.
 
@@ -276,7 +276,7 @@ For more information on the weight of a font, see [CFont::CreateFont](../../mfc/
 
 [!code-cpp[NVC_MFCDocView#84](../../mfc/codesnippet/cpp/cfontdialog-class_7.cpp)]
 
-##  <a name="isbold"></a>  CFontDialog::IsBold
+## <a name="isbold"></a>  CFontDialog::IsBold
 
 Call this function to determine if the selected font is bold.
 
@@ -292,7 +292,7 @@ Nonzero if the selected font has the Bold characteristic enabled; otherwise 0.
 
 [!code-cpp[NVC_MFCDocView#85](../../mfc/codesnippet/cpp/cfontdialog-class_8.cpp)]
 
-##  <a name="isitalic"></a>  CFontDialog::IsItalic
+## <a name="isitalic"></a>  CFontDialog::IsItalic
 
 Call this function to determine if the selected font is italic.
 
@@ -308,7 +308,7 @@ Nonzero if the selected font has the Italic characteristic enabled; otherwise 0.
 
 [!code-cpp[NVC_MFCDocView#86](../../mfc/codesnippet/cpp/cfontdialog-class_9.cpp)]
 
-##  <a name="isstrikeout"></a>  CFontDialog::IsStrikeOut
+## <a name="isstrikeout"></a>  CFontDialog::IsStrikeOut
 
 Call this function to determine if the selected font is displayed with strikeout.
 
@@ -324,7 +324,7 @@ Nonzero if the selected font has the Strikeout characteristic enabled; otherwise
 
 [!code-cpp[NVC_MFCDocView#87](../../mfc/codesnippet/cpp/cfontdialog-class_10.cpp)]
 
-##  <a name="isunderline"></a>  CFontDialog::IsUnderline
+## <a name="isunderline"></a>  CFontDialog::IsUnderline
 
 Call this function to determine if the selected font is underlined.
 
@@ -340,7 +340,7 @@ Nonzero if the selected font has the Underline characteristic enabled; otherwise
 
 [!code-cpp[NVC_MFCDocView#88](../../mfc/codesnippet/cpp/cfontdialog-class_11.cpp)]
 
-##  <a name="m_cf"></a>  CFontDialog::m_cf
+## <a name="m_cf"></a>  CFontDialog::m_cf
 
 A structure whose members store the characteristics of the dialog object.
 

@@ -18,7 +18,7 @@ Using the Events button in the **Properties** window (in **Class View**), you ca
 
 For more information on event sink maps, see [Event Sink Maps](../mfc/reference/event-sink-maps.md) in the *Class Library Reference*.
 
-##  <a name="_core_event_handler_modifications_to_the_project"></a> Event Handler Modifications to the Project
+## <a name="_core_event_handler_modifications_to_the_project"></a> Event Handler Modifications to the Project
 
 When you use the **Properties** window to add event handlers, an event sink map is declared and defined in your project. The following statements are added to the control .CPP file the first time an event handler is added. This code declares an event sink map for the dialog box class (in this case, `CContainerDlg`):
 

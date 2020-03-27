@@ -51,7 +51,7 @@ S= `CComSingleThreadModel`; M= `CComMultiThreadModel`
 
 **Header:** atlbase.h
 
-##  <a name="autocriticalsection"></a>  CComSingleThreadModel::AutoCriticalSection
+## <a name="autocriticalsection"></a>  CComSingleThreadModel::AutoCriticalSection
 
 When using `CComSingleThreadModel`, the **typedef** name `AutoCriticalSection` references class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).
 
@@ -77,7 +77,7 @@ In addition to `AutoCriticalSection`, you can use the **typedef** name [Critical
 
 See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).
 
-##  <a name="criticalsection"></a>  CComSingleThreadModel::CriticalSection
+## <a name="criticalsection"></a>  CComSingleThreadModel::CriticalSection
 
 When using `CComSingleThreadModel`, the **typedef** name `CriticalSection` references class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).
 
@@ -103,7 +103,7 @@ In addition to `CriticalSection`, you can use the **typedef** name [AutoCritical
 
 See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).
 
-##  <a name="decrement"></a>  CComSingleThreadModel::Decrement
+## <a name="decrement"></a>  CComSingleThreadModel::Decrement
 
 This static function decrements the value of the variable pointed to by *p*.
 
@@ -120,7 +120,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
 
 The result of the decrement.
 
-##  <a name="increment"></a>  CComSingleThreadModel::Increment
+## <a name="increment"></a>  CComSingleThreadModel::Increment
 
 This static function increments the value of the variable pointed to by *p*.
 
@@ -137,7 +137,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 
 The result of the increment.
 
-##  <a name="threadmodelnocs"></a>  CComSingleThreadModel::ThreadModelNoCS
+## <a name="threadmodelnocs"></a>  CComSingleThreadModel::ThreadModelNoCS
 
 When using `CComSingleThreadModel`, the **typedef** name `ThreadModelNoCS` simply references `CComSingleThreadModel`.
 

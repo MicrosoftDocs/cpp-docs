@@ -56,7 +56,7 @@ A rebar object behaves similarly to a toolbar object. A rebar uses the click-and
 
 **Header:** afxext.h
 
-##  <a name="addbar"></a>  CReBar::AddBar
+## <a name="addbar"></a>  CReBar::AddBar
 
 Call this member function to add a band to the rebar.
 
@@ -103,7 +103,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CReBarCtrl#1](../../mfc/reference/codesnippet/cpp/crebar-class_1.cpp)]
 
-##  <a name="create"></a>  CReBar::Create
+## <a name="create"></a>  CReBar::Create
 
 Call this member function to create a rebar.
 
@@ -137,7 +137,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CReBar::AddBar](#addbar).
 
-##  <a name="getrebarctrl"></a>  CReBar::GetReBarCtrl
+## <a name="getrebarctrl"></a>  CReBar::GetReBarCtrl
 
 This member function allows direct access to the underlying common control.
 

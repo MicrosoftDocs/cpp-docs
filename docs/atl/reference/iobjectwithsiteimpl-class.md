@@ -56,7 +56,7 @@ Typically, you derive your class from `IObjectWithSiteImpl` when you are creatin
 
 **Header:** atlcom.h
 
-##  <a name="getsite"></a>  IObjectWithSiteImpl::GetSite
+## <a name="getsite"></a>  IObjectWithSiteImpl::GetSite
 
 Queries the site for a pointer to the interface identified by `riid`.
 
@@ -72,7 +72,7 @@ If the site supports this interface, the pointer is returned via `ppvSite`. Othe
 
 See [IObjectWithSite::GetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-getsite) in the Windows SDK.
 
-##  <a name="m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite
+## <a name="m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite
 
 Manages the site's `IUnknown` pointer.
 
@@ -84,7 +84,7 @@ CComPtr<IUnknown> m_spUnkSite;
 
 `m_spUnkSite` initially receives this pointer through a call to [SetSite](#setsite).
 
-##  <a name="setchildsite"></a>  IObjectWithSiteImpl::SetChildSite
+## <a name="setchildsite"></a>  IObjectWithSiteImpl::SetChildSite
 
 Provides the object with the site's `IUnknown` pointer.
 
@@ -101,7 +101,7 @@ HRESULT SetChildSite(IUnknown* pUnkSite);
 
 Returns S_OK.
 
-##  <a name="setsite"></a>  IObjectWithSiteImpl::SetSite
+## <a name="setsite"></a>  IObjectWithSiteImpl::SetSite
 
 Provides the object with the site's `IUnknown` pointer.
 

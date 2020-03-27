@@ -51,7 +51,7 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 **Header:** afxwinforms.h
 
-##  <a name="cwinformsview"></a>  CWinFormsView::CWinFormsView
+## <a name="cwinformsview"></a>  CWinFormsView::CWinFormsView
 
 Constructs a `CWinFormsView` object.
 
@@ -72,7 +72,7 @@ In the following example, the `CUserView` class inherits from `CWinFormsView` an
 
 [!code-cpp[NVC_MFC_Managed#2](../../mfc/reference/codesnippet/cpp/cwinformsview-class_2.cpp)]
 
-##  <a name="getcontrol"></a>  CWinFormsView::GetControl
+## <a name="getcontrol"></a>  CWinFormsView::GetControl
 
 Retrieves a pointer to the Windows Forms control.
 
@@ -88,7 +88,7 @@ A pointer to a `System.Windows.Forms.Control` object.
 
 For an example of how to use Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-##  <a name="operator_control"></a>  CWinFormsView::operator Control^
+## <a name="operator_control"></a>  CWinFormsView::operator Control^
 
 Casts a type as a pointer to a Windows Forms control.
 

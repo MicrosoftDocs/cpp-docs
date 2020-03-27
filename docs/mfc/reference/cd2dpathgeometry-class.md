@@ -56,7 +56,7 @@ class CD2DPathGeometry : public CD2DGeometry;
 
 **Header:** afxrendertarget.h
 
-##  <a name="attach"></a>  CD2DPathGeometry::Attach
+## <a name="attach"></a>  CD2DPathGeometry::Attach
 
 Attaches existing resource interface to the object
 
@@ -69,7 +69,7 @@ void Attach(ID2D1PathGeometry* pResource);
 *pResource*<br/>
 Existing resource interface. Cannot be NULL
 
-##  <a name="cd2dpathgeometry"></a>  CD2DPathGeometry::CD2DPathGeometry
+## <a name="cd2dpathgeometry"></a>  CD2DPathGeometry::CD2DPathGeometry
 
 Constructs a CD2DPathGeometry object.
 
@@ -87,7 +87,7 @@ A pointer to the render target.
 *bAutoDestroy*<br/>
 Indicates that the object will be destroyed by owner (pParentTarget).
 
-##  <a name="create"></a>  CD2DPathGeometry::Create
+## <a name="create"></a>  CD2DPathGeometry::Create
 
 Creates a CD2DPathGeometry.
 
@@ -104,7 +104,7 @@ A pointer to the render target.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="destroy"></a>  CD2DPathGeometry::Destroy
+## <a name="destroy"></a>  CD2DPathGeometry::Destroy
 
 Destroys a CD2DPathGeometry object.
 
@@ -112,7 +112,7 @@ Destroys a CD2DPathGeometry object.
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DPathGeometry::Detach
+## <a name="detach"></a>  CD2DPathGeometry::Detach
 
 Detaches resource interface from the object
 
@@ -124,7 +124,7 @@ ID2D1PathGeometry* Detach();
 
 Pointer to detached resource interface.
 
-##  <a name="getfigurecount"></a>  CD2DPathGeometry::GetFigureCount
+## <a name="getfigurecount"></a>  CD2DPathGeometry::GetFigureCount
 
 Retrieves tthe number of figures in the path geometry.
 
@@ -136,7 +136,7 @@ int GetFigureCount() const;
 
 Returns the number of figures in the path geometry.
 
-##  <a name="getsegmentcount"></a>  CD2DPathGeometry::GetSegmentCount
+## <a name="getsegmentcount"></a>  CD2DPathGeometry::GetSegmentCount
 
 Retrieves the number of segments in the path geometry.
 
@@ -148,7 +148,7 @@ int GetSegmentCount() const;
 
 Returns the number of segments in the path geometry.
 
-##  <a name="m_ppathgeometry"></a>  CD2DPathGeometry::m_pPathGeometry
+## <a name="m_ppathgeometry"></a>  CD2DPathGeometry::m_pPathGeometry
 
 A pointer to an ID2D1PathGeometry.
 
@@ -156,7 +156,7 @@ A pointer to an ID2D1PathGeometry.
 ID2D1PathGeometry* m_pPathGeometry;
 ```
 
-##  <a name="open"></a>  CD2DPathGeometry::Open
+## <a name="open"></a>  CD2DPathGeometry::Open
 
 Retrieves the geometry sink that is used to populate the path geometry with figures and segments.
 
@@ -168,7 +168,7 @@ ID2D1GeometrySink* Open();
 
 A pointer to the ID2D1GeometrySink that is used to populate the path geometry with figures and segments.
 
-##  <a name="stream"></a>  CD2DPathGeometry::Stream
+## <a name="stream"></a>  CD2DPathGeometry::Stream
 
 Copies the contents of the path geometry to the specified ID2D1GeometrySink.
 

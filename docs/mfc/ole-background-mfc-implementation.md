@@ -11,7 +11,7 @@ Because of the size and complexity of the raw OLE API, calling it directly to wr
 
 This article explains the parts of the OLE API that have not been implemented inside MFC. The discussion also explains how what is implemented maps to the OLE section of the Windows SDK.
 
-##  <a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a> Portions of OLE Not Implemented by the Class Library
+## <a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a> Portions of OLE Not Implemented by the Class Library
 
 A few interfaces and features of OLE are not directly provided by MFC. If you want to use these features, you can call the OLE API directly.
 

@@ -90,7 +90,7 @@ For more information on using `CScrollView`, see [Document/View Architecture](..
 
 **Header:** afxwin.h
 
-##  <a name="checkscrollbars"></a>  CScrollView::CheckScrollBars
+## <a name="checkscrollbars"></a>  CScrollView::CheckScrollBars
 
 Call this member function to determine if the scroll view has horizontal and vertical bars.
 
@@ -108,7 +108,7 @@ Indicates the application has a horizontal scroll bar.
 *bHasVertBar*<br/>
 Indicates the application has a vertical scroll bar.
 
-##  <a name="cscrollview"></a>  CScrollView::CScrollView
+## <a name="cscrollview"></a>  CScrollView::CScrollView
 
 Constructs a `CScrollView` object.
 
@@ -120,7 +120,7 @@ CScrollView();
 
 You must call either `SetScrollSizes` or `SetScaleToFitSize` before the scroll view is usable.
 
-##  <a name="filloutsiderect"></a>  CScrollView::FillOutsideRect
+## <a name="filloutsiderect"></a>  CScrollView::FillOutsideRect
 
 Call `FillOutsideRect` to fill the area of the view that appears outside of the scrolling area.
 
@@ -146,7 +146,7 @@ Use `FillOutsideRect` in your scroll view's `OnEraseBkgnd` handler function to p
 
 [!code-cpp[NVC_MFCDocView#164](../../mfc/codesnippet/cpp/cscrollview-class_1.cpp)]
 
-##  <a name="getdevicescrollposition"></a>  CScrollView::GetDeviceScrollPosition
+## <a name="getdevicescrollposition"></a>  CScrollView::GetDeviceScrollPosition
 
 Call `GetDeviceScrollPosition` when you need the current horizontal and vertical positions of the scroll boxes in the scroll bars.
 
@@ -164,7 +164,7 @@ This coordinate pair corresponds to the location in the document to which the up
 
 `GetDeviceScrollPosition` returns values in device units. If you want logical units, use `GetScrollPosition` instead.
 
-##  <a name="getdevicescrollsizes"></a>  CScrollView::GetDeviceScrollSizes
+## <a name="getdevicescrollsizes"></a>  CScrollView::GetDeviceScrollSizes
 
 `GetDeviceScrollSizes` gets the current mapping mode, the total size, and the line and page sizes of the scrollable view.
 
@@ -194,7 +194,7 @@ Returns the current horizontal and vertical amounts to scroll in each direction 
 
 Sizes are in device units. This member function is rarely called.
 
-##  <a name="getscrollposition"></a>  CScrollView::GetScrollPosition
+## <a name="getscrollposition"></a>  CScrollView::GetScrollPosition
 
 Call `GetScrollPosition` when you need the current horizontal and vertical positions of the scroll boxes in the scroll bars.
 
@@ -212,7 +212,7 @@ This coordinate pair corresponds to the location in the document to which the up
 
 `GetScrollPosition` returns values in logical units. If you want device units, use `GetDeviceScrollPosition` instead.
 
-##  <a name="gettotalsize"></a>  CScrollView::GetTotalSize
+## <a name="gettotalsize"></a>  CScrollView::GetTotalSize
 
 Call `GetTotalSize` to retrieve the current horizontal and vertical sizes of the scroll view.
 
@@ -224,7 +224,7 @@ CSize GetTotalSize() const;
 
 The total size of the scroll view in logical units. The horizontal size is in the `cx` member of the `CSize` return value. The vertical size is in the `cy` member.
 
-##  <a name="resizeparenttofit"></a>  CScrollView::ResizeParentToFit
+## <a name="resizeparenttofit"></a>  CScrollView::ResizeParentToFit
 
 Call `ResizeParentToFit` to let the size of your view dictate the size of its frame window.
 
@@ -245,7 +245,7 @@ This is recommended only for views in MDI child frame windows. Use `ResizeParent
 
 [!code-cpp[NVC_MFCDocView#165](../../mfc/codesnippet/cpp/cscrollview-class_2.cpp)]
 
-##  <a name="scrolltoposition"></a>  CScrollView::ScrollToPosition
+## <a name="scrolltoposition"></a>  CScrollView::ScrollToPosition
 
 Call `ScrollToPosition` to scroll to a given point in the view.
 
@@ -262,7 +262,7 @@ The point to scroll to, in logical units. The `x` member must be a positive valu
 
 The view will be scrolled so that this point is at the upper-left corner of the window. This member function must not be called if the view is scaled to fit.
 
-##  <a name="setscaletofitsize"></a>  CScrollView::SetScaleToFitSize
+## <a name="setscaletofitsize"></a>  CScrollView::SetScaleToFitSize
 
 Call `SetScaleToFitSize` when you want to scale the viewport size to the current window size automatically.
 
@@ -287,7 +287,7 @@ You'll typically place the call to `SetScaleToFitSize` in your override of the v
 
 [!code-cpp[NVC_MFCDocView#165](../../mfc/codesnippet/cpp/cscrollview-class_2.cpp)]
 
-##  <a name="setscrollsizes"></a>  CScrollView::SetScrollSizes
+## <a name="setscrollsizes"></a>  CScrollView::SetScrollSizes
 
 Call `SetScrollSizes` when the view is about to be updated.
 

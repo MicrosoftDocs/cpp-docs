@@ -89,7 +89,7 @@ The following static const member variables are provided to simplify calculation
 
 **Header:** atltime.h
 
-##  <a name="cfiletime"></a>  CFileTime::CFileTime
+## <a name="cfiletime"></a>  CFileTime::CFileTime
 
 The constructor.
 
@@ -111,7 +111,7 @@ The date and time expressed as a 64-bit value.
 
 The `CFileTime` object can be created using an existing date and time from a `FILETIME` structure, or expressed as a 64-bit value (in local or Coordinated Universal Time (UTC) time formats). The default constructor sets the time to 0.
 
-##  <a name="day"></a>  CFileTime::Day
+## <a name="day"></a>  CFileTime::Day
 
 A static data member storing the number of 100-nanosecond intervals that make up one day.
 
@@ -123,7 +123,7 @@ static const ULONGLONG Day = Hour* 24;
 
 See the example for [CFileTime::Millisecond](#millisecond).
 
-##  <a name="getcurrenttime"></a>  CFileTime::GetCurrentTime
+## <a name="getcurrenttime"></a>  CFileTime::GetCurrentTime
 
 Call this static function to retrieve a `CFileTime` object that represents the current system date and time.
 
@@ -139,7 +139,7 @@ Returns the current system date and time in Coordinated Universal Time (UTC) for
 
 [!code-cpp[NVC_MFCFiles#41](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_1.cpp)]
 
-##  <a name="gettime"></a>  CFileTime::GetTime
+## <a name="gettime"></a>  CFileTime::GetTime
 
 Call this method to retrieve the time from the `CFileTime` object.
 
@@ -151,7 +151,7 @@ ULONGLONG GetTime() const throw();
 
 Returns the date and time as a 64-bit number, which may be in either local or Coordinated Universal Time (UTC) format.
 
-##  <a name="hour"></a>  CFileTime::Hour
+## <a name="hour"></a>  CFileTime::Hour
 
 A static data member storing the number of 100-nanosecond intervals that make up one hour.
 
@@ -163,7 +163,7 @@ static const ULONGLONG Hour = Minute* 60;
 
 See the example for [CFileTime::Millisecond](#millisecond).
 
-##  <a name="localtoutc"></a>  CFileTime::LocalToUTC
+## <a name="localtoutc"></a>  CFileTime::LocalToUTC
 
 Call this method to convert a local file time to a file time based on the Coordinated Universal Time (UTC).
 
@@ -179,7 +179,7 @@ Returns a `CFileTime` object containing the time in UTC format.
 
 See the example for [CFileTime::UTCToLocal](#utctolocal).
 
-##  <a name="millisecond"></a>  CFileTime::Millisecond
+## <a name="millisecond"></a>  CFileTime::Millisecond
 
 A static data member storing the number of 100-nanosecond intervals that make up one millisecond.
 
@@ -191,7 +191,7 @@ static const ULONGLONG Millisecond = 10000;
 
 [!code-cpp[NVC_MFCFiles#44](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_2.cpp)]
 
-##  <a name="minute"></a>  CFileTime::Minute
+## <a name="minute"></a>  CFileTime::Minute
 
 A static data member storing the number of 100-nanosecond intervals that make up one minute.
 
@@ -203,7 +203,7 @@ static const ULONGLONG Minute = Second* 60;
 
 See the example for [CFileTime::Millisecond](#millisecond).
 
-##  <a name="operator_-"></a>  CFileTime::operator -
+## <a name="operator_-"></a>  CFileTime::operator -
 
 This operator is used to perform subtraction on a `CFileTime` or `CFileTimeSpan` object.
 
@@ -224,7 +224,7 @@ A `CFileTime` object.
 
 Returns a `CFileTime` object or a `CFileTimeSpan` object representing the result of the time difference between the two objects.
 
-##  <a name="operator_neq"></a>  CFileTime::operator !=
+## <a name="operator_neq"></a>  CFileTime::operator !=
 
 This operator compares two `CFileTime` objects for inequality.
 
@@ -241,7 +241,7 @@ The `CFileTime` object to be compared.
 
 Returns TRUE if the item being compared is not equal to the `CFileTime` object, otherwise FALSE.
 
-##  <a name="operator_add"></a>  CFileTime::operator +
+## <a name="operator_add"></a>  CFileTime::operator +
 
 This operator is used to perform addition on a `CFileTimeSpan` object.
 
@@ -258,7 +258,7 @@ A `CFileTimeSpan` object.
 
 Returns a `CFileTime` object representing the result of the original time plus a relative time.
 
-##  <a name="operator_add_eq"></a>  CFileTime::operator +=
+## <a name="operator_add_eq"></a>  CFileTime::operator +=
 
 This operator is used to perform addition on a `CFileTimeSpan` object and assign the result to the current object.
 
@@ -275,7 +275,7 @@ A `CFileTimeSpan` object.
 
 Returns the updated `CFileTime` object, representing the result of the original time plus a relative time.
 
-##  <a name="operator_lt"></a>  CFileTime::operator &lt;
+## <a name="operator_lt"></a>  CFileTime::operator &lt;
 
 This operator compares two `CFileTime` objects to determine the lesser.
 
@@ -296,7 +296,7 @@ Returns TRUE if the first object is less (earlier in time) than the second, FALS
 
 [!code-cpp[NVC_MFCFiles#43](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_3.cpp)]
 
-##  <a name="operator_lt_eq"></a>  CFileTime::operator &lt;=
+## <a name="operator_lt_eq"></a>  CFileTime::operator &lt;=
 
 This operator compares two `CFileTime` objects to determine equality or the lesser.
 
@@ -313,7 +313,7 @@ The `CFileTime` object to be compared.
 
 Returns TRUE if the first object is less than (earlier in time) or equal to the second, otherwise FALSE.
 
-##  <a name="operator_eq"></a>  CFileTime::operator =
+## <a name="operator_eq"></a>  CFileTime::operator =
 
 The assignment operator.
 
@@ -330,7 +330,7 @@ A `CFileTime` object containing the new time and date.
 
 Returns the updated `CFileTime` object.
 
-##  <a name="operator_-_eq"></a>  CFileTime::operator -=
+## <a name="operator_-_eq"></a>  CFileTime::operator -=
 
 This operator is used to perform subtraction on a `CFileTimeSpan` object and assign the result to the current object.
 
@@ -347,7 +347,7 @@ A `CFileTimeSpan` object containing the relative time to subtract.
 
 Returns the updated `CFileTime` object.
 
-##  <a name="operator_eq_eq"></a>  CFileTime::operator ==
+## <a name="operator_eq_eq"></a>  CFileTime::operator ==
 
 This operator compares two `CFileTime` objects for equality.
 
@@ -364,7 +364,7 @@ The `CFileTime` object to compare.
 
 Returns TRUE if the objects are equal, otherwise FALSE.
 
-##  <a name="operator_gt"></a>  CFileTime::operator &gt;
+## <a name="operator_gt"></a>  CFileTime::operator &gt;
 
 This operator compares two `CFileTime` objects to determine the larger.
 
@@ -381,7 +381,7 @@ The `CFileTime` object to be compared.
 
 Returns TRUE if the first object is greater than (later in time) than the second, otherwise FALSE.
 
-##  <a name="operator_gt_eq"></a>  CFileTime::operator &gt;=
+## <a name="operator_gt_eq"></a>  CFileTime::operator &gt;=
 
 This operator compares two `CFileTime` objects to determine equality or the larger.
 
@@ -398,7 +398,7 @@ The `CFileTime` object to be compared.
 
 Returns TRUE if the first object is greater than (later in time) or equal to the second, otherwise FALSE.
 
-##  <a name="second"></a>  CFileTime::Second
+## <a name="second"></a>  CFileTime::Second
 
 A static data member storing the number of 100-nanosecond intervals that make up one day.
 
@@ -410,7 +410,7 @@ static const ULONGLONG Second = Millisecond* 1000;
 
 See the example for [CFileTime::Millisecond](#millisecond).
 
-##  <a name="settime"></a>  CFileTime::SetTime
+## <a name="settime"></a>  CFileTime::SetTime
 
 Call this method to set the date and time stored by the `CFileTime` object.
 
@@ -423,7 +423,7 @@ void SetTime(ULONGLONG nTime) throw();
 *nTime*<br/>
 The 64-bit value representing the date and time, in either local or Coordinated Universal Time (UTC) format.
 
-##  <a name="utctolocal"></a>  CFileTime::UTCToLocal
+## <a name="utctolocal"></a>  CFileTime::UTCToLocal
 
 Call this method to convert time based on the Coordinated Universal Time (UTC) to local file time.
 
@@ -439,7 +439,7 @@ Returns a `CFileTime` object containing the time in local file time format.
 
 [!code-cpp[NVC_MFCFiles#42](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_4.cpp)]
 
-##  <a name="week"></a>  CFileTime::Week
+## <a name="week"></a>  CFileTime::Week
 
 A static data member storing the number of 100-nanosecond intervals that make up one week.
 

@@ -71,7 +71,7 @@ For more information about declaring and using your record view and recordset cl
 
 **Header:** afxdao.h
 
-##  <a name="cdaorecordview"></a>  CDaoRecordView::CDaoRecordView
+## <a name="cdaorecordview"></a>  CDaoRecordView::CDaoRecordView
 
 When you create an object of a type derived from `CDaoRecordView`, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.
 
@@ -102,7 +102,7 @@ You can either identify the resource by name (pass a string as the argument to t
 
 [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]
 
-##  <a name="isonfirstrecord"></a>  CDaoRecordView::IsOnFirstRecord
+## <a name="isonfirstrecord"></a>  CDaoRecordView::IsOnFirstRecord
 
 Call this member function to determine whether the current record is the first record in the recordset object associated with this record view.
 
@@ -120,7 +120,7 @@ This function is useful for writing your own implementations of the default comm
 
 If the user moves to the first record, the framework disables any user interface objects (for example, menu items or toolbar buttons) you have for moving to the first or the previous record.
 
-##  <a name="isonlastrecord"></a>  CDaoRecordView::IsOnLastRecord
+## <a name="isonlastrecord"></a>  CDaoRecordView::IsOnLastRecord
 
 Call this member function to determine whether the current record is the last record in the recordset object associated with this record view.
 
@@ -139,7 +139,7 @@ This function is useful for writing your own implementations of the default comm
 > [!CAUTION]
 >  The result of this function is reliable except that the view may not be able to detect the end of the recordset until the user has moved past it. The user might have to move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly.
 
-##  <a name="ongetrecordset"></a>  CDaoRecordView::OnGetRecordset
+## <a name="ongetrecordset"></a>  CDaoRecordView::OnGetRecordset
 
 Returns a pointer to the `CDaoRecordset`-derived object associated with the record view.
 
@@ -157,7 +157,7 @@ You must override this member function to construct or obtain a recordset object
 
 For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).
 
-##  <a name="onmove"></a>  CDaoRecordView::OnMove
+## <a name="onmove"></a>  CDaoRecordView::OnMove
 
 Call this member function to move to a different record in the recordset and display its fields in the controls of the record view.
 

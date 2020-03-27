@@ -54,7 +54,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="compareelements"></a>  CStringElementTraitsI::CompareElements
+## <a name="compareelements"></a>  CStringElementTraitsI::CompareElements
 
 Call this static function to compare two string elements for equality, ignoring differences in case.
 
@@ -78,7 +78,7 @@ Returns true if the elements are equal, false otherwise.
 
 Comparisons are case insensitive.
 
-##  <a name="compareelementsordered"></a>  CStringElementTraitsI::CompareElementsOrdered
+## <a name="compareelementsordered"></a>  CStringElementTraitsI::CompareElementsOrdered
 
 Call this static function to compare two string elements, ignoring differences in case.
 
@@ -102,7 +102,7 @@ Zero if the strings are identical, < 0 if *str1* is less than *str2*, or > 0 if 
 
 Comparisons are case insensitive.
 
-##  <a name="hash"></a>  CStringElementTraitsI::Hash
+## <a name="hash"></a>  CStringElementTraitsI::Hash
 
 Call this static function to calculate a hash value for the given string element.
 
@@ -119,7 +119,7 @@ The string element.
 
 Returns a hash value, calculated using the string's contents.
 
-##  <a name="inargtype"></a>  CStringElementTraitsI::INARGTYPE
+## <a name="inargtype"></a>  CStringElementTraitsI::INARGTYPE
 
 The data type to use for adding elements to the collection class object.
 
@@ -127,7 +127,7 @@ The data type to use for adding elements to the collection class object.
 typedef T::PCXSTR INARGTYPE;
 ```
 
-##  <a name="outargtype"></a>  CStringElementTraitsI::OUTARGTYPE
+## <a name="outargtype"></a>  CStringElementTraitsI::OUTARGTYPE
 
 The data type to use for retrieving elements from the collection class object.
 

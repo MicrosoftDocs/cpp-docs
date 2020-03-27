@@ -50,7 +50,7 @@ The benefit of this class is that it provides a convenient way to change the sta
 
 **Header:** atlutil.h
 
-##  <a name="execute"></a>  CNonStatelessWorker::Execute
+## <a name="execute"></a>  CNonStatelessWorker::Execute
 
 Implementation of [WorkerArchetype::Execute](worker-archetype.md#execute).
 
@@ -65,7 +65,7 @@ void Execute(
 
 This method creates an instance of the *Worker* class on the stack and calls [Initialize](worker-archetype.md#initialize) on that object. If the initialization is successful, this method also calls [Execute](worker-archetype.md#execute) and [Terminate](worker-archetype.md#terminate) on the same object.
 
-##  <a name="initialize"></a>  CNonStatelessWorker::Initialize
+## <a name="initialize"></a>  CNonStatelessWorker::Initialize
 
 Implementation of [WorkerArchetype::Initialize](worker-archetype.md#initialize).
 
@@ -81,7 +81,7 @@ Always returns TRUE.
 
 This class does not do any initialization in `Initialize`.
 
-##  <a name="requesttype"></a>  CNonStatelessWorker::RequestType
+## <a name="requesttype"></a>  CNonStatelessWorker::RequestType
 
 Implementation of [WorkerArchetype::RequestType](worker-archetype.md#requesttype).
 
@@ -93,7 +93,7 @@ typedef Worker::RequestType RequestType;
 
 This class handles the same type of work item as the class used for the *Worker* template parameter. See [CNonStatelessWorker Overview](../../atl/reference/cnonstatelessworker-class.md) for details.
 
-##  <a name="terminate"></a>  CNonStatelessWorker::Terminate
+## <a name="terminate"></a>  CNonStatelessWorker::Terminate
 
 Implementation of [WorkerArchetype::Terminate](worker-archetype.md#terminate).
 

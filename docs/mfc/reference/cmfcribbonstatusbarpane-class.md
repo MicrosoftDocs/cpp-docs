@@ -65,7 +65,7 @@ The following example demonstrates how to use the various methods in the `CMFCRi
 
 **Header:** afxribbonstatusbarpane.h
 
-##  <a name="cmfcribbonstatusbarpane"></a>  CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane
+## <a name="cmfcribbonstatusbarpane"></a>  CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane
 
 Construct a pane object in the status bar.
 
@@ -125,7 +125,7 @@ CMFCRibbonStatusBarPane(
 *uiAnimationListResID*<br/>
 [in] Specifies a resource ID of an image list that is used for animation.
 
-##  <a name="getalmostlargetext"></a>  CMFCRibbonStatusBarPane::GetAlmostLargeText
+## <a name="getalmostlargetext"></a>  CMFCRibbonStatusBarPane::GetAlmostLargeText
 
 Gets the longest text string that the status bar pane can display.
 
@@ -137,7 +137,7 @@ LPCTSTR GetAlmostLargeText() const;
 
 The longest text string that the status bar pane can display.
 
-##  <a name="gettextalign"></a>  CMFCRibbonStatusBarPane::GetTextAlign
+## <a name="gettextalign"></a>  CMFCRibbonStatusBarPane::GetTextAlign
 
 Gets the current setting of the text alignment of the label of the status bar pane.
 
@@ -155,7 +155,7 @@ The current text alignment which can be one of the following:
 
 - TA_RIGHT.
 
-##  <a name="isanimation"></a>  CMFCRibbonStatusBarPane::IsAnimation
+## <a name="isanimation"></a>  CMFCRibbonStatusBarPane::IsAnimation
 
 Determines whether the animation is in progress.
 
@@ -167,7 +167,7 @@ BOOL IsAnimation() const;
 
 TRUE if animation is in progress; FALSE otherwise.
 
-##  <a name="isextended"></a>  CMFCRibbonStatusBarPane::IsExtended
+## <a name="isextended"></a>  CMFCRibbonStatusBarPane::IsExtended
 
 Determine whether the pane is located in the extended area of the ribbon status bar.
 
@@ -179,7 +179,7 @@ BOOL IsExtended() const;
 
 TRUE if pane is on status bar extended area. FALSE otherwise.
 
-##  <a name="ondrawborder"></a>  CMFCRibbonStatusBarPane::OnDrawBorder
+## <a name="ondrawborder"></a>  CMFCRibbonStatusBarPane::OnDrawBorder
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -193,7 +193,7 @@ virtual void OnDrawBorder(CDC*);
 
 ### Remarks
 
-##  <a name="onfillbackground"></a>  CMFCRibbonStatusBarPane::OnFillBackground
+## <a name="onfillbackground"></a>  CMFCRibbonStatusBarPane::OnFillBackground
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -209,7 +209,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 ### Remarks
 
-##  <a name="onfinishanimation"></a>  CMFCRibbonStatusBarPane::OnFinishAnimation
+## <a name="onfinishanimation"></a>  CMFCRibbonStatusBarPane::OnFinishAnimation
 
 Framework calls this method when the animation that is assigned to the pane ends.
 
@@ -221,7 +221,7 @@ virtual void OnFinishAnimation();
 
 `StopAnimation` method calls the `OnFinishAnimation` method, which you can use to clean up data when the animation ends.
 
-##  <a name="setalmostlargetext"></a>  CMFCRibbonStatusBarPane::SetAlmostLargeText
+## <a name="setalmostlargetext"></a>  CMFCRibbonStatusBarPane::SetAlmostLargeText
 
 Define the longest text that can be displayed in the status bar pane without truncation.
 
@@ -238,7 +238,7 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 
 The library calculates the size of text that *lpszAlmostLargeText* specifies and resizes the pane accordingly. The text will be truncated if it still does not fit in the pane.
 
-##  <a name="setanimationlist"></a>  CMFCRibbonStatusBarPane::SetAnimationList
+## <a name="setanimationlist"></a>  CMFCRibbonStatusBarPane::SetAnimationList
 
 Attaches to the status bar pane an image list that can be used for animation.
 
@@ -272,7 +272,7 @@ BOOL SetAnimationList(
 
 TRUE if the image list is successfully attached to the status bar pane; FALSE otherwise.
 
-##  <a name="settextalign"></a>  CMFCRibbonStatusBarPane::SetTextAlign
+## <a name="settextalign"></a>  CMFCRibbonStatusBarPane::SetTextAlign
 
 Sets the text alignment of the label of the status bar pane.
 
@@ -295,7 +295,7 @@ void SetTextAlign(int nAlign);
 
 - TA_RIGHT: right alignment
 
-##  <a name="startanimation"></a>  CMFCRibbonStatusBarPane::StartAnimation
+## <a name="startanimation"></a>  CMFCRibbonStatusBarPane::StartAnimation
 
 Starts the animation that you assign to the pane.
 
@@ -317,7 +317,7 @@ void StartAnimation(
 
 You must specify a handle to an image list before you call `StartAnimation` by using `SetAnimationList`.
 
-##  <a name="stopanimation"></a>  CMFCRibbonStatusBarPane::StopAnimation
+## <a name="stopanimation"></a>  CMFCRibbonStatusBarPane::StopAnimation
 
 Stops the animation that you assigned to the status bar pane.
 

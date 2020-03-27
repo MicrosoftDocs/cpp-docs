@@ -23,11 +23,11 @@ This topic explains:
 
 - [How the database classes use SQL](#_core_how_the_database_classes_use_sql).
 
-##  <a name="_core_open_database_connectivity_.28.odbc.29"></a> Open Database Connectivity (ODBC)
+## <a name="_core_open_database_connectivity_.28.odbc.29"></a> Open Database Connectivity (ODBC)
 
 The database classes are implemented with ODBC, which uses SQL in a call-level interface rather than embedding SQL commands in the code. ODBC uses SQL to communicate with a [data source](../../data/odbc/data-source-odbc.md) through ODBC drivers. These drivers interpret the SQL and translate it, if necessary, for use with a particular database format, such as Microsoft Access. For more information about how ODBC uses SQL, see [ODBC](../../data/odbc/odbc-basics.md) and the ODBC SDK *Programmer's Reference* on the MSDN Library CD.
 
-##  <a name="_core_the_database_classes"></a> Database Classes
+## <a name="_core_the_database_classes"></a> Database Classes
 
 > [!NOTE]
 > The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
@@ -60,7 +60,7 @@ SQL databases use data types similar to those used in C and C++. For a discussio
 
 You can find more information about SQL, including a list of supported SQL statements, data types, SQL core grammar, and a reading list of recommended publications about SQL, in the *ODBC SDK* *Programmer's Reference* on the MSDN Library CD.
 
-##  <a name="_core_how_the_database_classes_use_sql"></a> How the Database Classes Use SQL
+## <a name="_core_how_the_database_classes_use_sql"></a> How the Database Classes Use SQL
 
 The recordsets you derive from the database classes use ODBC to communicate with a data source, and ODBC retrieves records from the data source by sending SQL statements. This topic explains the relationship between the database classes and SQL.
 

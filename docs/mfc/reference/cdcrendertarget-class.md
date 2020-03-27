@@ -57,7 +57,7 @@ class CDCRenderTarget : public CRenderTarget;
 
 **Header:** afxrendertarget.h
 
-##  <a name="attach"></a>  CDCRenderTarget::Attach
+## <a name="attach"></a>  CDCRenderTarget::Attach
 
 Attaches existing render target interface to the object
 
@@ -70,7 +70,7 @@ void Attach(ID2D1DCRenderTarget* pTarget);
 *pTarget*<br/>
 Existing render target interface. Cannot be NULL
 
-##  <a name="binddc"></a>  CDCRenderTarget::BindDC
+## <a name="binddc"></a>  CDCRenderTarget::BindDC
 
 Binds the render target to the device context to which it issues drawing commands
 
@@ -92,7 +92,7 @@ The dimensions of the handle to a device context (HDC) to which the render targe
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.
 
-##  <a name="cdcrendertarget"></a>  CDCRenderTarget::CDCRenderTarget
+## <a name="cdcrendertarget"></a>  CDCRenderTarget::CDCRenderTarget
 
 Constructs a CDCRenderTarget object.
 
@@ -100,7 +100,7 @@ Constructs a CDCRenderTarget object.
 CDCRenderTarget();
 ```
 
-##  <a name="create"></a>  CDCRenderTarget::Create
+## <a name="create"></a>  CDCRenderTarget::Create
 
 Creates a CDCRenderTarget.
 
@@ -117,7 +117,7 @@ The rendering mode, pixel format, remoting options, DPI information, and the min
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.
 
-##  <a name="detach"></a>  CDCRenderTarget::Detach
+## <a name="detach"></a>  CDCRenderTarget::Detach
 
 Detaches render target interface from the object
 
@@ -129,7 +129,7 @@ ID2D1DCRenderTarget* Detach();
 
 Pointer to detached render target interface.
 
-##  <a name="getdcrendertarget"></a>  CDCRenderTarget::GetDCRenderTarget
+## <a name="getdcrendertarget"></a>  CDCRenderTarget::GetDCRenderTarget
 
 Returns ID2D1DCRenderTarget interface
 
@@ -141,7 +141,7 @@ ID2D1DCRenderTarget* GetDCRenderTarget();
 
 Pointer to an ID2D1DCRenderTarget interface or NULL if object is not initialized yet.
 
-##  <a name="m_pdcrendertarget"></a>  CDCRenderTarget::m_pDCRenderTarget
+## <a name="m_pdcrendertarget"></a>  CDCRenderTarget::m_pDCRenderTarget
 
 A pointer to an ID2D1DCRenderTarget object.
 
@@ -149,7 +149,7 @@ A pointer to an ID2D1DCRenderTarget object.
 ID2D1DCRenderTarget* m_pDCRenderTarget;
 ```
 
-##  <a name="operator_id2d1dcrendertarget_star"></a>  CDCRenderTarget::operator ID2D1DCRenderTarget*
+## <a name="operator_id2d1dcrendertarget_star"></a>  CDCRenderTarget::operator ID2D1DCRenderTarget*
 
 Returns ID2D1DCRenderTarget interface
 

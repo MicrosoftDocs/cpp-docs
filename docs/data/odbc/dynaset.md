@@ -25,7 +25,7 @@ To specify that a recordset is a dynaset, pass `CRecordset::dynaset` as the firs
 > [!NOTE]
 > For updatable dynasets, your ODBC driver must support either positioned update statements or the `::SQLSetPos` ODBC API function. If both are supported, MFC uses `::SQLSetPos` for efficiency.
 
-##  <a name="_core_availability_of_dynasets"></a> Availability of Dynasets
+## <a name="_core_availability_of_dynasets"></a> Availability of Dynasets
 
 The MFC database classes support dynasets if the following requirements are met:
 

@@ -31,7 +31,7 @@ The remainder of this topic assumes the following:
 
 - `CNewView` is the name of the new `CView`-derived object, and `CNewView` is declared and defined in *NEWVIEW.H* and *NEWVIEW.CPP*.
 
-##  <a name="vcconmodifyexistingapplicationa1"></a> Modify the Existing Application Class
+## <a name="vcconmodifyexistingapplicationa1"></a> Modify the Existing Application Class
 
 For the application to switch between views, you need to modify the application class by adding member variables to store the views and a method to switch them.
 
@@ -49,7 +49,7 @@ Insert the following line in the include section of *MYWINAPP.CPP*:
 
 Save your changes and continue to the next step.
 
-##  <a name="vcconnewviewclassa2"></a> Create and Modify the New View Class
+## <a name="vcconnewviewclassa2"></a> Create and Modify the New View Class
 
 Creating the new view class is made easy by using the **New Class** command available from Class View. The only requirement for this class is that it derives from `CView`. Add this new class to the application. For specific information on adding a new class to the project, see [Adding a Class](../ide/adding-a-class-visual-cpp.md).
 
@@ -59,7 +59,7 @@ Modify *NEWVIEW.H* by changing the access specifier from **protected** to **publ
 
 Save your changes and continue to the next step.
 
-##  <a name="vcconattachnewviewa3"></a> Create and Attach the New View
+## <a name="vcconattachnewviewa3"></a> Create and Attach the New View
 
 To create and attach the new view, you need to modify the `InitInstance` function of your application class. The modification adds new code that creates a new view object and then initializes both `m_pOldView` and `m_pNewView` with the two existing view objects.
 
@@ -71,7 +71,7 @@ Insert this code after the call to `ProcessShellCommand`:
 
 Save your changes and continue to the next step.
 
-##  <a name="vcconswitchingfunctiona4"></a> Implement the Switching Function
+## <a name="vcconswitchingfunctiona4"></a> Implement the Switching Function
 
 In the previous step, you added code that created and initialized a new view object. The last major piece is to implement the switching method, `SwitchView`.
 
@@ -81,7 +81,7 @@ At the end of the implementation file for your application class (*MYWINAPP.CPP*
 
 Save your changes and continue to the next step.
 
-##  <a name="vcconswitchingtheviewa5"></a> Add Support for Switching the View
+## <a name="vcconswitchingtheviewa5"></a> Add Support for Switching the View
 
 The final step involves adding code that calls the `SwitchView` method when the application needs to switch between views. This can be done in several ways: by either adding a new menu item for the user to choose or switching the views internally when certain conditions are met.
 

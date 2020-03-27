@@ -175,7 +175,7 @@ The following example demonstrates how to use various methods in the `CMFCRibbon
 
 **Header:** afxbaseribbonelement.h
 
-##  <a name="addtokeylist"></a>  CMFCRibbonBaseElement::AddToKeyList
+## <a name="addtokeylist"></a>  CMFCRibbonBaseElement::AddToKeyList
 
 Adds a keytip for the ribbon element to an array of keytips.
 
@@ -193,7 +193,7 @@ virtual void AddToKeyList(
 
 When the ribbon keytips feature is enabled, the framework displays ribbon keytips when the user presses the ALT key or the F10 key.
 
-##  <a name="addtolistbox"></a>  CMFCRibbonBaseElement::AddToListBox
+## <a name="addtolistbox"></a>  CMFCRibbonBaseElement::AddToListBox
 
 Adds a ribbon element to the specified ribbon commands list box.
 
@@ -219,7 +219,7 @@ The zero-based index of the added ribbon element.
 
 The framework adds ribbon elements to a commands list box to enable the user to customize the user interface.
 
-##  <a name="canbeaddedtoquickaccesstoolbar"></a>  CMFCRibbonBaseElement::CanBeAddedToQuickAccessToolBar
+## <a name="canbeaddedtoquickaccesstoolbar"></a>  CMFCRibbonBaseElement::CanBeAddedToQuickAccessToolBar
 
 Indicates whether the ribbon element can be added to the quick access toolbar.
 
@@ -233,7 +233,7 @@ TRUE if the element can be added; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="canbecompacted"></a>  CMFCRibbonBaseElement::CanBeCompacted
+## <a name="canbecompacted"></a>  CMFCRibbonBaseElement::CanBeCompacted
 
 Indicates whether the size of the ribbon element can be compact.
 
@@ -249,7 +249,7 @@ TRUE if the size of the ribbon element can be compact; otherwise, FALSE.
 
 The size of a ribbon element can be compact, intermediate, or large.
 
-##  <a name="canbestretched"></a>  CMFCRibbonBaseElement::CanBeStretched
+## <a name="canbestretched"></a>  CMFCRibbonBaseElement::CanBeStretched
 
 Indicates whether the height of the ribbon element can increase vertically to the height of a ribbon row.
 
@@ -265,7 +265,7 @@ Always returns TRUE.
 
 By default this method always returns TRUE. Override this method to indicate whether the height of the ribbon element can increase vertically to the height of a ribbon row.
 
-##  <a name="canbestretchedhorizontally"></a>  CMFCRibbonBaseElement::CanBeStretchedHorizontally
+## <a name="canbestretchedhorizontally"></a>  CMFCRibbonBaseElement::CanBeStretchedHorizontally
 
 Indicates whether the width of the ribbon element can change.
 
@@ -281,7 +281,7 @@ Always returns FALSE.
 
 By default this method always returns FALSE. Override this method to indicate whether the width of the ribbon element can change.
 
-##  <a name="cleanupsizes"></a>  CMFCRibbonBaseElement::CleanUpSizes
+## <a name="cleanupsizes"></a>  CMFCRibbonBaseElement::CleanUpSizes
 
 Cleans up the dimension settings for the ribbon element.
 
@@ -293,7 +293,7 @@ virtual void CleanUpSizes();
 
 By default this method does nothing. Override this method in a derived class to reset the dimension settings for the ribbon element.
 
-##  <a name="closepopupmenu"></a>  CMFCRibbonBaseElement::ClosePopupMenu
+## <a name="closepopupmenu"></a>  CMFCRibbonBaseElement::ClosePopupMenu
 
 Closes the pop-up menu for the ribbon element.
 
@@ -303,7 +303,7 @@ virtual void ClosePopupMenu();
 
 ### Remarks
 
-##  <a name="copyfrom"></a>  CMFCRibbonBaseElement::CopyFrom
+## <a name="copyfrom"></a>  CMFCRibbonBaseElement::CopyFrom
 
 Copies the state of the specified [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) to the current object.
 
@@ -318,7 +318,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 
 ### Remarks
 
-##  <a name="destroyctrl"></a>  CMFCRibbonBaseElement::DestroyCtrl
+## <a name="destroyctrl"></a>  CMFCRibbonBaseElement::DestroyCtrl
 
 Destroys the ribbon element.
 
@@ -330,7 +330,7 @@ virtual void DestroyCtrl();
 
 By default this method does nothing. Override this method in a derived class to destroy the ribbon element.
 
-##  <a name="drawimage"></a>  CMFCRibbonBaseElement::DrawImage
+## <a name="drawimage"></a>  CMFCRibbonBaseElement::DrawImage
 
 Draws the image for the ribbon element.
 
@@ -363,7 +363,7 @@ The following table lists possible values for the *type* parameter:
 | `RibbonImageLarge`  | Large 32x32 pixel image size.  |
 | `RibbonImageSmall`  | Small 16x16 pixel image size.  |
 
-##  <a name="find"></a>  CMFCRibbonBaseElement::Find
+## <a name="find"></a>  CMFCRibbonBaseElement::Find
 
 Returns the specified pointer if it points to the current object.
 
@@ -382,7 +382,7 @@ A pointer to the ribbon element if *pElement* points to the current object; othe
 
 ### Remarks
 
-##  <a name="findbydata"></a>  CMFCRibbonBaseElement::FindByData
+## <a name="findbydata"></a>  CMFCRibbonBaseElement::FindByData
 
 Retrieves a pointer to the ribbon element if it contains the specified data.
 
@@ -401,7 +401,7 @@ A pointer to the ribbon element if it contains the specified data; otherwise NUL
 
 ### Remarks
 
-##  <a name="findbyid"></a>  CMFCRibbonBaseElement::FindByID
+## <a name="findbyid"></a>  CMFCRibbonBaseElement::FindByID
 
 Retrieves a pointer to the ribbon element if that element is identified by the specified command ID.
 
@@ -420,7 +420,7 @@ A pointer to the ribbon element if that element is identified by the specified c
 
 ### Remarks
 
-##  <a name="findbyoriginal"></a>  CMFCRibbonBaseElement::FindByOriginal
+## <a name="findbyoriginal"></a>  CMFCRibbonBaseElement::FindByOriginal
 
 Retrieves a pointer to the current ribbon element if its original ribbon element matches the specified ribbon element.
 
@@ -441,7 +441,7 @@ A pointer to the ribbon element if its original ribbon element matches the speci
 
 Ribbon elements that are copied to another container retain a pointer to the original ribbon element.
 
-##  <a name="getcompactsize"></a>  CMFCRibbonBaseElement::GetCompactSize
+## <a name="getcompactsize"></a>  CMFCRibbonBaseElement::GetCompactSize
 
 Returns the compact size of the ribbon element.
 
@@ -461,7 +461,7 @@ The compact size of a ribbon element.
 > [!NOTE]
 >  The compact size means that the ribbon element is truncated (it displays a small image, or an image without a text).
 
-##  <a name="getdata"></a>  CMFCRibbonBaseElement::GetData
+## <a name="getdata"></a>  CMFCRibbonBaseElement::GetData
 
 Retrieves the user-defined data associated with the ribbon element.
 
@@ -473,7 +473,7 @@ DWORD_PTR GetData() const;
 
 The user-defined data associated with the ribbon element.
 
-##  <a name="getdescription"></a>  CMFCRibbonBaseElement::GetDescription
+## <a name="getdescription"></a>  CMFCRibbonBaseElement::GetDescription
 
 Returns the description of the ribbon element.
 
@@ -485,7 +485,7 @@ virtual CString GetDescription() const;
 
 The ribbon element description. The description is displayed either on the status bar, or in a tooltip, or under the menu button if the ribbon element is located on the [CMFCRibbonMainPanel Class](../../mfc/reference/cmfcribbonmainpanel-class.md).
 
-##  <a name="getdroppeddown"></a>  CMFCRibbonBaseElement::GetDroppedDown
+## <a name="getdroppeddown"></a>  CMFCRibbonBaseElement::GetDroppedDown
 
 Retrieves a pointer to the ribbon element if its pop-up menu is dropped down.
 
@@ -499,7 +499,7 @@ A pointer to the ribbon element if its pop-up menu is dropped down; otherwise NU
 
 ### Remarks
 
-##  <a name="getelements"></a>  CMFCRibbonBaseElement::GetElements
+## <a name="getelements"></a>  CMFCRibbonBaseElement::GetElements
 
 Adds the current ribbon element to the specified array.
 
@@ -515,7 +515,7 @@ virtual void GetElements(
 
 ### Remarks
 
-##  <a name="getelementsbyid"></a>  CMFCRibbonBaseElement::GetElementsByID
+## <a name="getelementsbyid"></a>  CMFCRibbonBaseElement::GetElementsByID
 
 Adds the current ribbon element to the specified array if the current ribbon element contains the specified command ID.
 
@@ -535,7 +535,7 @@ virtual void GetElementsByID(
 
 ### Remarks
 
-##  <a name="gethighlighted"></a>  CMFCRibbonBaseElement::GetHighlighted
+## <a name="gethighlighted"></a>  CMFCRibbonBaseElement::GetHighlighted
 
 Retrieves a pointer to the ribbon element if it is highlighted.
 
@@ -549,7 +549,7 @@ A pointer to the ribbon element if it is highlighted; otherwise NULL.
 
 ### Remarks
 
-##  <a name="getid"></a>  CMFCRibbonBaseElement::GetID
+## <a name="getid"></a>  CMFCRibbonBaseElement::GetID
 
 Returns the command ID of the ribbon element.
 
@@ -561,7 +561,7 @@ UINT GetID() const;
 
 The command ID of the ribbon element.
 
-##  <a name="getimagesize"></a>  CMFCRibbonBaseElement::GetImageSize
+## <a name="getimagesize"></a>  CMFCRibbonBaseElement::GetImageSize
 
 Returns the image size of the ribbon element.
 
@@ -573,7 +573,7 @@ virtual CSize GetImageSize(RibbonImageType R) const;
 
 The image size of the ribbon element.
 
-##  <a name="getintermediatesize"></a>  CMFCRibbonBaseElement::GetIntermediateSize
+## <a name="getintermediatesize"></a>  CMFCRibbonBaseElement::GetIntermediateSize
 
 Returns the size of the ribbon element in its intermediate state.
 
@@ -590,7 +590,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 
 The size of the ribbon element in its intermediate state.
 
-##  <a name="getkeys"></a>  CMFCRibbonBaseElement::GetKeys
+## <a name="getkeys"></a>  CMFCRibbonBaseElement::GetKeys
 
 Returns the keytip associated with the ribbon element.
 
@@ -602,7 +602,7 @@ LPCTSTR GetKeys() const;
 
 A keytip associated with the ribbon element.
 
-##  <a name="getkeytiprect"></a>  CMFCRibbonBaseElement::GetKeyTipRect
+## <a name="getkeytiprect"></a>  CMFCRibbonBaseElement::GetKeyTipRect
 
 Retrieves the keytip boundary rectangle for the ribbon element.
 
@@ -628,7 +628,7 @@ Always returns a rectangle with 0 values.
 
 Override this method in a derived class to return the keytip boundary rectangle.
 
-##  <a name="getkeytipsize"></a>  CMFCRibbonBaseElement::GetKeyTipSize
+## <a name="getkeytipsize"></a>  CMFCRibbonBaseElement::GetKeyTipSize
 
 Retrieves the size of the keytip text.
 
@@ -647,7 +647,7 @@ The size of the keytip text.
 
 ### Remarks
 
-##  <a name="getlocationingroup"></a>  CMFCRibbonBaseElement::GetLocationInGroup
+## <a name="getlocationingroup"></a>  CMFCRibbonBaseElement::GetLocationInGroup
 
 Indicates the display location of the ribbon element in a ribbon group.
 
@@ -671,7 +671,7 @@ A `RibbonElementLocation` enumerated value. The following table lists possible v
 
 Ribbon element groups are only aligned horizontally.
 
-##  <a name="getmenukeys"></a>  CMFCRibbonBaseElement::GetMenuKeys
+## <a name="getmenukeys"></a>  CMFCRibbonBaseElement::GetMenuKeys
 
 Returns the menu keytip for the ribbon element.
 
@@ -687,7 +687,7 @@ The menu keytip associated with the ribbon element.
 
 When invoked, a menu keytip displays a pop-up menu.
 
-##  <a name="getnotifyid"></a>  CMFCRibbonBaseElement::GetNotifyID
+## <a name="getnotifyid"></a>  CMFCRibbonBaseElement::GetNotifyID
 
 Retrieves the notification command ID for the ribbon element.
 
@@ -701,7 +701,7 @@ The notification command ID.
 
 ### Remarks
 
-##  <a name="getoriginal"></a>  CMFCRibbonBaseElement::GetOriginal
+## <a name="getoriginal"></a>  CMFCRibbonBaseElement::GetOriginal
 
 Retrieves the original ribbon element.
 
@@ -717,7 +717,7 @@ A pointer to the original ribbon element.
 
 Ribbon elements that are copied to another container retain a pointer to the original ribbon element.
 
-##  <a name="getparentcategory"></a>  CMFCRibbonBaseElement::GetParentCategory
+## <a name="getparentcategory"></a>  CMFCRibbonBaseElement::GetParentCategory
 
 Retrieves the ribbon category for the ribbon element.
 
@@ -731,7 +731,7 @@ A pointer to the ribbon category.
 
 ### Remarks
 
-##  <a name="getparentpanel"></a>  CMFCRibbonBaseElement::GetParentPanel
+## <a name="getparentpanel"></a>  CMFCRibbonBaseElement::GetParentPanel
 
 Retrieves the ribbon panel that contains the ribbon element.
 
@@ -745,7 +745,7 @@ A pointer to the ribbon panel that contains the ribbon element.
 
 ### Remarks
 
-##  <a name="getparentribbonbar"></a>  CMFCRibbonBaseElement::GetParentRibbonBar
+## <a name="getparentribbonbar"></a>  CMFCRibbonBaseElement::GetParentRibbonBar
 
 Retrieves the parent ribbon bar for the ribbon element.
 
@@ -759,7 +759,7 @@ A pointer to the parent ribbon bar for the ribbon element.
 
 ### Remarks
 
-##  <a name="getparentwnd"></a>  CMFCRibbonBaseElement::GetParentWnd
+## <a name="getparentwnd"></a>  CMFCRibbonBaseElement::GetParentWnd
 
 Retrieves the parent window for the ribbon element.
 
@@ -775,7 +775,7 @@ A pointer to the parent window for the ribbon element if the method was successf
 
 The parent window for a ribbon element is a [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md) or a [CMFCRibbonPanelMenuBar](internal-classes.md).
 
-##  <a name="getpressed"></a>  CMFCRibbonBaseElement::GetPressed
+## <a name="getpressed"></a>  CMFCRibbonBaseElement::GetPressed
 
 Retrieves a pointer to the ribbon element if the user currently presses it.
 
@@ -789,7 +789,7 @@ A pointer to the ribbon element if the user currently presses it; otherwise, NUL
 
 ### Remarks
 
-##  <a name="getquickaccesstoolbarid"></a>  CMFCRibbonBaseElement::GetQuickAccessToolBarID
+## <a name="getquickaccesstoolbarid"></a>  CMFCRibbonBaseElement::GetQuickAccessToolBarID
 
 Retrieves the command ID of the ribbon element when it is located in the quick access toolbar.
 
@@ -803,7 +803,7 @@ The command ID of the ribbon element when it is located in the quick access tool
 
 ### Remarks
 
-##  <a name="getrect"></a>  CMFCRibbonBaseElement::GetRect
+## <a name="getrect"></a>  CMFCRibbonBaseElement::GetRect
 
 Returns the bounding rectangle of the ribbon element.
 
@@ -815,7 +815,7 @@ CRect GetRect() const;
 
 The bounding rectangle of the ribbon element. The position of the rectangle is in the coordinates of the parent Ribbon control.
 
-##  <a name="getregularsize"></a>  CMFCRibbonBaseElement::GetRegularSize
+## <a name="getregularsize"></a>  CMFCRibbonBaseElement::GetRegularSize
 
 Returns the regular size of the ribbon element.
 
@@ -837,7 +837,7 @@ The regular size of the ribbon element.
 > [!NOTE]
 >  The regular size is the maximal possible size of the ribbon element.
 
-##  <a name="getsize"></a>  CMFCRibbonBaseElement::GetSize
+## <a name="getsize"></a>  CMFCRibbonBaseElement::GetSize
 
 Returns the current size of the ribbon element.
 
@@ -854,7 +854,7 @@ virtual CSize GetSize(CDC* pDC);
 
 The current size of the ribbon element.
 
-##  <a name="gettext"></a>  CMFCRibbonBaseElement::GetText
+## <a name="gettext"></a>  CMFCRibbonBaseElement::GetText
 
 Returns the text associated with the ribbon element.
 
@@ -866,7 +866,7 @@ LPCTSTR GetText() const;
 
 The text associated with the ribbon element.
 
-##  <a name="gettooltiptext"></a>  CMFCRibbonBaseElement::GetToolTipText
+## <a name="gettooltiptext"></a>  CMFCRibbonBaseElement::GetToolTipText
 
 Returns tooltip text of the ribbon element.
 
@@ -878,7 +878,7 @@ virtual CString GetToolTipText() const;
 
 The tooltip text of the ribbon element.
 
-##  <a name="gettoplevelribbonbar"></a>  CMFCRibbonBaseElement::GetTopLevelRibbonBar
+## <a name="gettoplevelribbonbar"></a>  CMFCRibbonBaseElement::GetTopLevelRibbonBar
 
 Retrieves the top level ribbon bar for the ribbon element.
 
@@ -892,7 +892,7 @@ A pointer to the top level ribbon bar for the ribbon element if the method was s
 
 ### Remarks
 
-##  <a name="hascompactmode"></a>  CMFCRibbonBaseElement::HasCompactMode
+## <a name="hascompactmode"></a>  CMFCRibbonBaseElement::HasCompactMode
 
 Specifies whether the ribbon element has a compact mode.
 
@@ -909,7 +909,7 @@ TRUE if the ribbon element has a compact mode. FALSE otherwise.
 > [!NOTE]
 >  In the compact mode, an element displays a small image only.
 
-##  <a name="hasintermediatemode"></a>  CMFCRibbonBaseElement::HasIntermediateMode
+## <a name="hasintermediatemode"></a>  CMFCRibbonBaseElement::HasIntermediateMode
 
 Specifies whether the ribbon element has an intermediate mode.
 
@@ -923,7 +923,7 @@ TRUE if the ribbon element has an intermediate mode, FALSE otherwise. In the int
 
 ### Remarks
 
-##  <a name="haslargemode"></a>  CMFCRibbonBaseElement::HasLargeMode
+## <a name="haslargemode"></a>  CMFCRibbonBaseElement::HasLargeMode
 
 Determines whether the ribbon element has a large mode.
 
@@ -939,7 +939,7 @@ TRUE if the ribbon element has a large mode. FALSE otherwise.
 
 In the large mode, an element can take the full height of the parent panel.
 
-##  <a name="hasmenu"></a>  CMFCRibbonBaseElement::HasMenu
+## <a name="hasmenu"></a>  CMFCRibbonBaseElement::HasMenu
 
 Indicates whether the ribbon element has a menu.
 
@@ -955,7 +955,7 @@ Always returns FALSE.
 
 By default this method always returns FALSE. Override this method in a derived class to indicate whether the ribbon element has a menu.
 
-##  <a name="hittest"></a>  CMFCRibbonBaseElement::HitTest
+## <a name="hittest"></a>  CMFCRibbonBaseElement::HitTest
 
 Retrieves a pointer to the ribbon element if the specified point is located in it.
 
@@ -976,7 +976,7 @@ A pointer to the ribbon element if it exists; otherwise FALSE.
 
 By default this method always returns a valid pointer to the ribbon element when it exists. Override this method to indicate if the point resides in the ribbon element.
 
-##  <a name="isalignbycolumn"></a>  CMFCRibbonBaseElement::IsAlignByColumn
+## <a name="isalignbycolumn"></a>  CMFCRibbonBaseElement::IsAlignByColumn
 
 Indicates whether the ribbon element is aligned vertically with other ribbon elements.
 
@@ -992,7 +992,7 @@ Always returns TRUE.
 
 By default this method always returns TRUE. Override this method in a derived class to indicate whether the derived ribbon element is aligned vertically with other ribbon elements.
 
-##  <a name="isalwayslargeimage"></a>  CMFCRibbonBaseElement::IsAlwaysLargeImage
+## <a name="isalwayslargeimage"></a>  CMFCRibbonBaseElement::IsAlwaysLargeImage
 
 Indicates whether the ribbon element image size is always large.
 
@@ -1008,7 +1008,7 @@ TRUE if the ribbon element image size is always large; otherwise FALSE.
 
 Large image size is 32 x 32 pixels.
 
-##  <a name="isautorepeatmode"></a>  CMFCRibbonBaseElement::IsAutoRepeatMode
+## <a name="isautorepeatmode"></a>  CMFCRibbonBaseElement::IsAutoRepeatMode
 
 Indicates whether the ribbon element is in auto repeat mode.
 
@@ -1031,7 +1031,7 @@ By default this method always returns FALSE. Override this method to indicate wh
 
 In auto repeat mode, the ribbon element responds at a set interval, measured in milliseconds, to sustained user input.
 
-##  <a name="ischecked"></a>  CMFCRibbonBaseElement::IsChecked
+## <a name="ischecked"></a>  CMFCRibbonBaseElement::IsChecked
 
 Specifies whether the ribbon element is checked.
 
@@ -1043,7 +1043,7 @@ virtual BOOL IsChecked() const;
 
 TRUE if the ribbon element is checked; otherwise FALSE.
 
-##  <a name="iscompactmode"></a>  CMFCRibbonBaseElement::IsCompactMode
+## <a name="iscompactmode"></a>  CMFCRibbonBaseElement::IsCompactMode
 
 Specifies whether the ribbon element is in a compact mode.
 
@@ -1055,7 +1055,7 @@ BOOL IsCompactMode() const;
 
 TRUE if the ribbon element is in a compact mode; otherwise FALSE.
 
-##  <a name="isdefaultmenulook"></a>  CMFCRibbonBaseElement::IsDefaultMenuLook
+## <a name="isdefaultmenulook"></a>  CMFCRibbonBaseElement::IsDefaultMenuLook
 
 Indicates whether the ribbon element is set to appear as a pop-up command.
 
@@ -1069,7 +1069,7 @@ TRUE if the ribbon element is set to appear as a pop-up command; otherwise FALSE
 
 ### Remarks
 
-##  <a name="isdisabled"></a>  CMFCRibbonBaseElement::IsDisabled
+## <a name="isdisabled"></a>  CMFCRibbonBaseElement::IsDisabled
 
 Specifies whether the ribbon element is disabled.
 
@@ -1081,7 +1081,7 @@ virtual BOOL IsDisabled() const;
 
 TRUE if the ribbon element is disabled; otherwise FALSE.
 
-##  <a name="isdroppeddown"></a>  CMFCRibbonBaseElement::IsDroppedDown
+## <a name="isdroppeddown"></a>  CMFCRibbonBaseElement::IsDroppedDown
 
 Specifies whether the ribbon element displays a pop-up menu and is dropped down.
 
@@ -1093,7 +1093,7 @@ virtual BOOL IsDroppedDown() const;
 
 TRUE if the ribbon element is dropped down and displays a pop-up menu; otherwise FALSE.
 
-##  <a name="isfocused"></a>  CMFCRibbonBaseElement::IsFocused
+## <a name="isfocused"></a>  CMFCRibbonBaseElement::IsFocused
 
 Specifies whether the ribbon element has the focus.
 
@@ -1105,7 +1105,7 @@ virtual BOOL IsFocused() const;
 
 TRUE if the ribbon element has the focus; otherwise FALSE.
 
-##  <a name="isgalleryicon"></a>  CMFCRibbonBaseElement::IsGalleryIcon
+## <a name="isgalleryicon"></a>  CMFCRibbonBaseElement::IsGalleryIcon
 
 Indicates whether the ribbon element is contained in a ribbon gallery.
 
@@ -1121,7 +1121,7 @@ Always returns FALSE.
 
 By default this method always returns FALSE. Override this method in a derived class to indicate whether the ribbon element is contained in a ribbon gallery.
 
-##  <a name="ishighlighted"></a>  CMFCRibbonBaseElement::IsHighlighted
+## <a name="ishighlighted"></a>  CMFCRibbonBaseElement::IsHighlighted
 
 Specifies whether ribbon element is highlighted.
 
@@ -1135,7 +1135,7 @@ TRUE if the ribbon element is highlighted; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="isintermediatemode"></a>  CMFCRibbonBaseElement::IsIntermediateMode
+## <a name="isintermediatemode"></a>  CMFCRibbonBaseElement::IsIntermediateMode
 
 Indicates whether the current image for the ribbon element is intermediate size.
 
@@ -1151,7 +1151,7 @@ TRUE if the image for the ribbon element is intermediate size; otherwise FALSE.
 
 Intermediate image size is 16 x 16 pixels.
 
-##  <a name="islargemode"></a>  CMFCRibbonBaseElement::IsLargeMode
+## <a name="islargemode"></a>  CMFCRibbonBaseElement::IsLargeMode
 
 Indicates whether the current image for the ribbon element is large size.
 
@@ -1167,7 +1167,7 @@ TRUE if the image for the ribbon element is large size; otherwise FALSE.
 
 Large image size is 32 x 32 pixels.
 
-##  <a name="ismenumode"></a>  CMFCRibbonBaseElement::IsMenuMode
+## <a name="ismenumode"></a>  CMFCRibbonBaseElement::IsMenuMode
 
 Indicates whether the ribbon element is contained in a menu.
 
@@ -1181,7 +1181,7 @@ TRUE if the ribbon element is contained in a menu; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="ispressed"></a>  CMFCRibbonBaseElement::IsPressed
+## <a name="ispressed"></a>  CMFCRibbonBaseElement::IsPressed
 
 Indicates whether the user has clicked the ribbon element.
 
@@ -1193,7 +1193,7 @@ virtual BOOL IsPressed() const;
 
 TRUE if the user has clicked the ribbon element; otherwise FALSE.
 
-##  <a name="isqatmode"></a>  CMFCRibbonBaseElement::IsQATMode
+## <a name="isqatmode"></a>  CMFCRibbonBaseElement::IsQATMode
 
 Indicates whether the ribbon element is contained in the quick access toolbar.
 
@@ -1207,7 +1207,7 @@ TRUE if the ribbon element is contained in the quick access toolbar; otherwise, 
 
 ### Remarks
 
-##  <a name="isseparator"></a>  CMFCRibbonBaseElement::IsSeparator
+## <a name="isseparator"></a>  CMFCRibbonBaseElement::IsSeparator
 
 Indicates whether the ribbon element is a display separator.
 
@@ -1221,7 +1221,7 @@ TRUE if the ribbon element is a display separator; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="isshowgroupborder"></a>  CMFCRibbonBaseElement::IsShowGroupBorder
+## <a name="isshowgroupborder"></a>  CMFCRibbonBaseElement::IsShowGroupBorder
 
 Indicates whether the ribbon element is contained in a group that displays a common border.
 
@@ -1235,7 +1235,7 @@ TRUE if the ribbon element is contained in a group that displays a common border
 
 ### Remarks
 
-##  <a name="isshowtooltiponbottom"></a>  CMFCRibbonBaseElement::IsShowTooltipOnBottom
+## <a name="isshowtooltiponbottom"></a>  CMFCRibbonBaseElement::IsShowTooltipOnBottom
 
 Indicates whether the tooltip is displayed under the ribbon element.
 
@@ -1249,7 +1249,7 @@ TRUE if the tooltip is displayed under the ribbon element; FALSE if the tooltip 
 
 ### Remarks
 
-##  <a name="istabstop"></a>  CMFCRibbonBaseElement::IsTabStop
+## <a name="istabstop"></a>  CMFCRibbonBaseElement::IsTabStop
 
 Indicates whether the ribbon element can be selected with the keyboard.
 
@@ -1265,7 +1265,7 @@ Always returns TRUE.
 
 By default this method always returns TRUE. Override this method to indicate whether the ribbon element can be selected with the keyboard.
 
-##  <a name="istextalwaysonright"></a>  CMFCRibbonBaseElement::IsTextAlwaysOnRight
+## <a name="istextalwaysonright"></a>  CMFCRibbonBaseElement::IsTextAlwaysOnRight
 
 Indicates whether the text for the ribbon element is displayed on the right.
 
@@ -1279,7 +1279,7 @@ TRUE if the text for the ribbon element is displayed on the right; otherwise, FA
 
 ### Remarks
 
-##  <a name="isvisible"></a>  CMFCRibbonBaseElement::IsVisible
+## <a name="isvisible"></a>  CMFCRibbonBaseElement::IsVisible
 
 Indicates whether the ribbon element is currently displayed.
 
@@ -1293,7 +1293,7 @@ TRUE if the ribbon element is currently displayed; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="iswholerowheight"></a>  CMFCRibbonBaseElement::IsWholeRowHeight
+## <a name="iswholerowheight"></a>  CMFCRibbonBaseElement::IsWholeRowHeight
 
 Indicates whether the display height of the ribbon element is the same as the display height of the ribbon panel that contains it.
 
@@ -1309,7 +1309,7 @@ Always returns FALSE.
 
 By default this method always returns FALSE. Override this method to indicate whether the display height of the ribbon element is the same as the display height of the ribbon panel that contains it.
 
-##  <a name="notifycommand"></a>  CMFCRibbonBaseElement::NotifyCommand
+## <a name="notifycommand"></a>  CMFCRibbonBaseElement::NotifyCommand
 
 Sends a command notification to the parent window of the ribbon element.
 
@@ -1328,7 +1328,7 @@ TRUE if the message was sent; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="notifyhighlightlistitem"></a>  CMFCRibbonBaseElement::NotifyHighlightListItem
+## <a name="notifyhighlightlistitem"></a>  CMFCRibbonBaseElement::NotifyHighlightListItem
 
 Notifies the parent window of the ribbon bar when a user highlights a ribbon element that is located in a list.
 
@@ -1343,7 +1343,7 @@ virtual void NotifyHighlightListItem(int nIndex);
 
 ### Remarks
 
-##  <a name="onaddtoqatoolbar"></a>  CMFCRibbonBaseElement::OnAddToQAToolbar
+## <a name="onaddtoqatoolbar"></a>  CMFCRibbonBaseElement::OnAddToQAToolbar
 
 Adds the ribbon element to the specified quick access toolbar.
 
@@ -1362,7 +1362,7 @@ Always returns TRUE indicating the ribbon element was added to the quick access 
 
 ### Remarks
 
-##  <a name="onafterchangerect"></a>  CMFCRibbonBaseElement::OnAfterChangeRect
+## <a name="onafterchangerect"></a>  CMFCRibbonBaseElement::OnAfterChangeRect
 
 Updates the tooltip for the ribbon element.
 
@@ -1379,7 +1379,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 
 By default this method updates the tooltip for the ribbon element. Override this method to update the ribbon element after its display rectangle has changed.
 
-##  <a name="onautorepeat"></a>  CMFCRibbonBaseElement::OnAutoRepeat
+## <a name="onautorepeat"></a>  CMFCRibbonBaseElement::OnAutoRepeat
 
 Updates the ribbon element in response to sustained user input.
 
@@ -1395,7 +1395,7 @@ Always returns FALSE.
 
 By default this method always return FALSE. Override this method to process sustained user input.
 
-##  <a name="oncalctextsize"></a>  CMFCRibbonBaseElement::OnCalcTextSize
+## <a name="oncalctextsize"></a>  CMFCRibbonBaseElement::OnCalcTextSize
 
 Calculates the size of the text for the ribbon element.
 
@@ -1412,7 +1412,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 
 By default this method does nothing. Override this method to calculate the size of the text for the ribbon element.
 
-##  <a name="onchangemenuhighlight"></a>  CMFCRibbonBaseElement::OnChangeMenuHighlight
+## <a name="onchangemenuhighlight"></a>  CMFCRibbonBaseElement::OnChangeMenuHighlight
 
 Called by the framework when the highlight changes for a ribbon element that is located in a menu.
 
@@ -1433,7 +1433,7 @@ virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
 
 By default this method does nothing. Override this method to update a ribbon element that is located in a menu when the highlight changes.
 
-##  <a name="ondraw"></a>  CMFCRibbonBaseElement::OnDraw
+## <a name="ondraw"></a>  CMFCRibbonBaseElement::OnDraw
 
 Called by the framework to draw the ribbon element.
 
@@ -1450,7 +1450,7 @@ virtual void OnDraw(CDC* pDC) = 0;
 
 Override this method in a derived class if you want to customize the drawing of a specific ribbon element.
 
-##  <a name="ondrawkeytip"></a>  CMFCRibbonBaseElement::OnDrawKeyTip
+## <a name="ondrawkeytip"></a>  CMFCRibbonBaseElement::OnDrawKeyTip
 
 Called by the framework to draw the keytip for the ribbon element.
 
@@ -1474,7 +1474,7 @@ virtual void OnDrawKeyTip(
 
 ### Remarks
 
-##  <a name="ondrawmenuimage"></a>  CMFCRibbonBaseElement::OnDrawMenuImage
+## <a name="ondrawmenuimage"></a>  CMFCRibbonBaseElement::OnDrawMenuImage
 
 Called by the framework when the menu image for the ribbon element is drawn.
 
@@ -1498,7 +1498,7 @@ Always returns TRUE to indicate the image was drawn.
 
 ### Remarks
 
-##  <a name="ondrawonlist"></a>  CMFCRibbonBaseElement::OnDrawOnList
+## <a name="ondrawonlist"></a>  CMFCRibbonBaseElement::OnDrawOnList
 
 Called by the framework to draw the ribbon element in a commands list box.
 
@@ -1536,7 +1536,7 @@ virtual void OnDrawOnList(
 
 The commands list box displays ribbon elements to enable users to customize the quick access toolbar.
 
-##  <a name="onkey"></a>  CMFCRibbonBaseElement::OnKey
+## <a name="onkey"></a>  CMFCRibbonBaseElement::OnKey
 
 Called by the framework when the user presses a keytip and the ribbon element has the focus.
 
@@ -1555,7 +1555,7 @@ TRUE if the event was handled; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="onmenukey"></a>  CMFCRibbonBaseElement::OnMenuKey
+## <a name="onmenukey"></a>  CMFCRibbonBaseElement::OnMenuKey
 
 Called by the framework when the user presses a menu keytip on the main panel.
 
@@ -1576,7 +1576,7 @@ Always returns FALSE.
 
 By default this method always returns FALSE. Override this method to respond when a user presses a menu keytip on the main panel.
 
-##  <a name="onprocesskey"></a>  CMFCRibbonBaseElement::OnProcessKey
+## <a name="onprocesskey"></a>  CMFCRibbonBaseElement::OnProcessKey
 
 Called by the framework when the user presses a shortcut key.
 
@@ -1597,7 +1597,7 @@ Always returns FALSE.
 
 Override this method if you want the ribbon element to process a shortcut key.
 
-##  <a name="onrtlchanged"></a>  CMFCRibbonBaseElement::OnRTLChanged
+## <a name="onrtlchanged"></a>  CMFCRibbonBaseElement::OnRTLChanged
 
 Called by the framework when the layout changes direction.
 
@@ -1614,7 +1614,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 
 By default this method does nothing. Override this method to adjust the ribbon element when the layout changes direction. The default layout direction is left-to-right.
 
-##  <a name="onsetfocus"></a>  CMFCRibbonBaseElement::OnSetFocus
+## <a name="onsetfocus"></a>  CMFCRibbonBaseElement::OnSetFocus
 
 Called by the framework when a ribbon element receives or loses the input focus.
 
@@ -1626,7 +1626,7 @@ virtual void OnSetFocus(BOOL B);
 
 Override this method in a derived class if you want your application to handle a change in the focus of a ribbon element.
 
-##  <a name="onshow"></a>  CMFCRibbonBaseElement::OnShow
+## <a name="onshow"></a>  CMFCRibbonBaseElement::OnShow
 
 Called by the framework to show or hide the ribbon element.
 
@@ -1643,7 +1643,7 @@ virtual void OnShow(BOOL bShow);
 
 By default this method does nothing. Override this method to show or hide the ribbon element.
 
-##  <a name="onshowpopupmenu"></a>  CMFCRibbonBaseElement::OnShowPopupMenu
+## <a name="onshowpopupmenu"></a>  CMFCRibbonBaseElement::OnShowPopupMenu
 
 Called by the framework before the ribbon element shows a pop-up menu.
 
@@ -1655,7 +1655,7 @@ virtual void OnShowPopupMenu();
 
 This method notifies the parent window of the ribbon bar that the ribbon element will show a pop-up menu.
 
-##  <a name="postmenucommand"></a>  CMFCRibbonBaseElement::PostMenuCommand
+## <a name="postmenucommand"></a>  CMFCRibbonBaseElement::PostMenuCommand
 
 Closes the pop-up menu for the ribbon element and sends a close message to the parent menu.
 
@@ -1672,7 +1672,7 @@ void PostMenuCommand(UINT uiCmdId);
 
 The close message is only sent if the ribbon element is located on a pop-up menu.
 
-##  <a name="redraw"></a>  CMFCRibbonBaseElement::Redraw
+## <a name="redraw"></a>  CMFCRibbonBaseElement::Redraw
 
 Updates the display for the ribbon element.
 
@@ -1684,7 +1684,7 @@ virtual void Redraw();
 
 This method redraws the display rectangle for the ribbon element by calling [CWnd::RedrawWindow](/windows/win32/api/winuser/nf-winuser-redrawwindow) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.
 
-##  <a name="setaccdata"></a>  CMFCRibbonBaseElement::SetACCData
+## <a name="setaccdata"></a>  CMFCRibbonBaseElement::SetACCData
 
 Sets the accessibility data for the ribbon element.
 
@@ -1710,7 +1710,7 @@ Always returns TRUE.
 
 By default this method sets the accessibility data for the ribbon element and always returns TRUE. Override this method to set the accessibility data and return a value that indicates success or failure.
 
-##  <a name="setcompactmode"></a>  CMFCRibbonBaseElement::SetCompactMode
+## <a name="setcompactmode"></a>  CMFCRibbonBaseElement::SetCompactMode
 
 Sets the display size for the ribbon element.
 
@@ -1734,7 +1734,7 @@ The following table summarizes the logic for this method.
 |TRUE|Large|Intermediate if it is possible.|
 |FALSE|Compact|Intermediate if it is possible; otherwise large.|
 
-##  <a name="setdata"></a>  CMFCRibbonBaseElement::SetData
+## <a name="setdata"></a>  CMFCRibbonBaseElement::SetData
 
 Associates a data item with the ribbon element.
 
@@ -1747,7 +1747,7 @@ void SetData(DWORD_PTR dwData);
 *dwData*<br/>
 [in] The data value.
 
-##  <a name="setdefaultmenulook"></a>  CMFCRibbonBaseElement::SetDefaultMenuLook
+## <a name="setdefaultmenulook"></a>  CMFCRibbonBaseElement::SetDefaultMenuLook
 
 Sets the ribbon element to appear as a pop-up command.
 
@@ -1762,7 +1762,7 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 
 ### Remarks
 
-##  <a name="setdescription"></a>  CMFCRibbonBaseElement::SetDescription
+## <a name="setdescription"></a>  CMFCRibbonBaseElement::SetDescription
 
 Sets the description for the ribbon element.
 
@@ -1779,7 +1779,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 
 The framework displays the new description either on the status bar, or in the tooltip, or under the menu button.
 
-##  <a name="setid"></a>  CMFCRibbonBaseElement::SetID
+## <a name="setid"></a>  CMFCRibbonBaseElement::SetID
 
 Sets the command ID of the ribbon element.
 
@@ -1792,7 +1792,7 @@ virtual void SetID(UINT nID);
 *nID*<br/>
 [in] The command ID.
 
-##  <a name="setinitialmode"></a>  CMFCRibbonBaseElement::SetInitialMode
+## <a name="setinitialmode"></a>  CMFCRibbonBaseElement::SetInitialMode
 
 Sets the initial display size for the ribbon element.
 
@@ -1809,7 +1809,7 @@ virtual void SetInitialMode(BOOL bOneRow = FALSE);
 
 The display size of ribbon elements can be compact, intermediate, or large.
 
-##  <a name="setkeys"></a>  CMFCRibbonBaseElement::SetKeys
+## <a name="setkeys"></a>  CMFCRibbonBaseElement::SetKeys
 
 Sets the keytips for the ribbon element.
 
@@ -1827,7 +1827,7 @@ virtual void SetKeys(
 *lpszMenuKeys*<br/>
 [in] The keytip for the pop-up menu of the ribbon element.
 
-##  <a name="setoriginal"></a>  CMFCRibbonBaseElement::SetOriginal
+## <a name="setoriginal"></a>  CMFCRibbonBaseElement::SetOriginal
 
 Sets the original ribbon element for the ribbon element.
 
@@ -1844,7 +1844,7 @@ virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 
 Ribbon elements that are copied to another container retain a pointer to the original ribbon element.
 
-##  <a name="setparentcategory"></a>  CMFCRibbonBaseElement::SetParentCategory
+## <a name="setparentcategory"></a>  CMFCRibbonBaseElement::SetParentCategory
 
 Sets the parent category for the ribbon element.
 
@@ -1861,7 +1861,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 
 The tabbed groups in ribbon controls are called categories.
 
-##  <a name="setparentmenu"></a>  CMFCRibbonBaseElement::SetParentMenu
+## <a name="setparentmenu"></a>  CMFCRibbonBaseElement::SetParentMenu
 
 Sets the parent menu container for the ribbon element.
 
@@ -1876,7 +1876,7 @@ virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 
 ### Remarks
 
-##  <a name="setparentribbonbar"></a>  CMFCRibbonBaseElement::SetParentRibbonBar
+## <a name="setparentribbonbar"></a>  CMFCRibbonBaseElement::SetParentRibbonBar
 
 Sets the parent ribbon bar for the ribbon element.
 
@@ -1891,7 +1891,7 @@ virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 
 ### Remarks
 
-##  <a name="setrect"></a>  CMFCRibbonBaseElement::SetRect
+## <a name="setrect"></a>  CMFCRibbonBaseElement::SetRect
 
 Sets the dimensions of the display rectangle for the ribbon element.
 
@@ -1906,7 +1906,7 @@ void SetRect(CRect rect);
 
 ### Remarks
 
-##  <a name="settext"></a>  CMFCRibbonBaseElement::SetText
+## <a name="settext"></a>  CMFCRibbonBaseElement::SetText
 
 Sets the text and keytip for the ribbon element.
 
@@ -1934,7 +1934,7 @@ SetText(_T("Margins\nm"))
 SetText(_T("Line Numbers\nln"))
 ```
 
-##  <a name="settextalwaysonright"></a>  CMFCRibbonBaseElement::SetTextAlwaysOnRight
+## <a name="settextalwaysonright"></a>  CMFCRibbonBaseElement::SetTextAlwaysOnRight
 
 Sets the text for the ribbon element to display on the right.
 
@@ -1949,7 +1949,7 @@ virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 
 ### Remarks
 
-##  <a name="settooltiptext"></a>  CMFCRibbonBaseElement::SetToolTipText
+## <a name="settooltiptext"></a>  CMFCRibbonBaseElement::SetToolTipText
 
 Sets the tooltip text for the ribbon element.
 
@@ -1962,7 +1962,7 @@ virtual void SetToolTipText(LPCTSTR lpszText);
 *lpszText*<br/>
 [in] The tooltip text.
 
-##  <a name="setvisible"></a>  CMFCRibbonBaseElement::SetVisible
+## <a name="setvisible"></a>  CMFCRibbonBaseElement::SetVisible
 
 Sets the visibility of the ribbon element.
 
@@ -1977,7 +1977,7 @@ void SetVisible(BOOL bIsVisible);
 
 ### Remarks
 
-##  <a name="stretchhorizontally"></a>  CMFCRibbonBaseElement::StretchHorizontally
+## <a name="stretchhorizontally"></a>  CMFCRibbonBaseElement::StretchHorizontally
 
 Stretches the width of the ribbon element.
 
@@ -1989,7 +1989,7 @@ virtual void StretchHorizontally();
 
 By default this method generates an assertion failure in debug builds and therefore should not be called. Override this method to stretch the width of the ribbon element.
 
-##  <a name="stretchtowholerow"></a>  CMFCRibbonBaseElement::StretchToWholeRow
+## <a name="stretchtowholerow"></a>  CMFCRibbonBaseElement::StretchToWholeRow
 
 Changes the display height of the ribbon element to the specified row height.
 
@@ -2015,7 +2015,7 @@ TRUE if the display height was set; otherwise, FALSE.
 
 Override this method to change the display height of the ribbon element to the specified row height.
 
-##  <a name="updatetooltipinfo"></a>  CMFCRibbonBaseElement::UpdateTooltipInfo
+## <a name="updatetooltipinfo"></a>  CMFCRibbonBaseElement::UpdateTooltipInfo
 
 Updates the tooltip text by using the command resource for the ribbon element.
 
@@ -2025,7 +2025,7 @@ virtual void UpdateTooltipInfo();
 
 ### Remarks
 
-##  <a name="hasfocus"></a>  CMFCRibbonBaseElement::HasFocus
+## <a name="hasfocus"></a>  CMFCRibbonBaseElement::HasFocus
 
 Indicates whether the parent element has keyboard focus.
 

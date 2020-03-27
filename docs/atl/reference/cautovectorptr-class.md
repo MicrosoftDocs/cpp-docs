@@ -65,7 +65,7 @@ See [CAutoPtr](../../atl/reference/cautoptr-class.md) for an example of using a 
 
 **Header:** atlbase.h
 
-##  <a name="allocate"></a>  CAutoVectorPtr::Allocate
+## <a name="allocate"></a>  CAutoVectorPtr::Allocate
 
 Call this method to allocate the memory required by the array of objects pointed to by `CAutoVectorPtr`.
 
@@ -86,7 +86,7 @@ Returns true if the memory is successfully allocated, false on failure.
 
 In debug builds, an assertion failure will occur if the [CAutoVectorPtr::m_p](#m_p) member variable currently points to an existing value; that is, it is not equal to NULL.
 
-##  <a name="attach"></a>  CAutoVectorPtr::Attach
+## <a name="attach"></a>  CAutoVectorPtr::Attach
 
 Call this method to take ownership of an existing pointer.
 
@@ -105,7 +105,7 @@ When a `CAutoVectorPtr` object takes ownership of a pointer, it will automatical
 
 In debug builds, an assertion failure will occur if the [CAutoVectorPtr::m_p](#m_p) member variable currently points to an existing value; that is, it is not equal to NULL.
 
-##  <a name="cautovectorptr"></a>  CAutoVectorPtr::CAutoVectorPtr
+## <a name="cautovectorptr"></a>  CAutoVectorPtr::CAutoVectorPtr
 
 The constructor.
 
@@ -124,7 +124,7 @@ An existing pointer.
 
 The `CAutoVectorPtr` object can be created using an existing pointer, in which case it transfers ownership of the pointer.
 
-##  <a name="dtor"></a>  CAutoVectorPtr::~CAutoVectorPtr
+## <a name="dtor"></a>  CAutoVectorPtr::~CAutoVectorPtr
 
 The destructor.
 
@@ -136,7 +136,7 @@ The destructor.
 
 Frees any allocated resources. Calls [CAutoVectorPtr::Free](#free).
 
-##  <a name="detach"></a>  CAutoVectorPtr::Detach
+## <a name="detach"></a>  CAutoVectorPtr::Detach
 
 Call this method to release ownership of a pointer.
 
@@ -152,7 +152,7 @@ Returns a copy of the pointer.
 
 Releases ownership of a pointer, sets the [CAutoVectorPtr::m_p](#m_p) member variable to NULL, and returns a copy of the pointer. After calling `Detach`, it is up to the programmer to free any allocated resources over which the `CAutoVectorPtr` object may have previously assumed responsibility.
 
-##  <a name="free"></a>  CAutoVectorPtr::Free
+## <a name="free"></a>  CAutoVectorPtr::Free
 
 Call this method to delete an object pointed to by a `CAutoVectorPtr`.
 
@@ -164,7 +164,7 @@ void Free() throw();
 
 The object pointed to by the `CAutoVectorPtr` is freed, and the [CAutoVectorPtr::m_p](#m_p) member variable is set to NULL.
 
-##  <a name="m_p"></a>  CAutoVectorPtr::m_p
+## <a name="m_p"></a>  CAutoVectorPtr::m_p
 
 The pointer data member variable.
 
@@ -176,7 +176,7 @@ T* m_p;
 
 This member variable holds the pointer information.
 
-##  <a name="operator_eq"></a>  CAutoVectorPtr::operator =
+## <a name="operator_eq"></a>  CAutoVectorPtr::operator =
 
 The assignment operator.
 
@@ -197,7 +197,7 @@ Returns a reference to a **CAutoVectorPtr\< T >**.
 
 The assignment operator detaches the `CAutoVectorPtr` object from any current pointer and attaches the new pointer, *p*, in its place.
 
-##  <a name="operator_t__star"></a>  CAutoVectorPtr::operator T *
+## <a name="operator_t__star"></a>  CAutoVectorPtr::operator T *
 
 The cast operator.
 

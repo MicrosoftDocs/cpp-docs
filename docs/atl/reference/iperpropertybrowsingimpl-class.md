@@ -56,7 +56,7 @@ The [IPerPropertyBrowsing](/windows/win32/api/ocidl/nn-ocidl-iperpropertybrowsin
 
 **Header:** atlctl.h
 
-##  <a name="getdisplaystring"></a>  IPerPropertyBrowsingImpl::GetDisplayString
+## <a name="getdisplaystring"></a>  IPerPropertyBrowsingImpl::GetDisplayString
 
 Retrieves a string describing a given property.
 
@@ -70,7 +70,7 @@ STDMETHOD(GetDisplayString)(
 
 See [IPerPropertyBrowsing::GetDisplayString](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getdisplaystring) in the Windows SDK.
 
-##  <a name="getpredefinedstrings"></a>  IPerPropertyBrowsingImpl::GetPredefinedStrings
+## <a name="getpredefinedstrings"></a>  IPerPropertyBrowsingImpl::GetPredefinedStrings
 
 Fills each array with zero items.
 
@@ -89,7 +89,7 @@ ATL's implementation of [GetPredefinedValue](#getpredefinedvalue) returns E_NOTI
 
 See [IPerPropertyBrowsing::GetPredefinedStrings](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedstrings) in the Windows SDK.
 
-##  <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue
+## <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue
 
 Retrieves a VARIANT containing the value of a property identified by a given DISPID. The DISPID is associated with the string name retrieved from `GetPredefinedStrings`.
 
@@ -110,7 +110,7 @@ ATL's implementation of [GetPredefinedStrings](#getpredefinedstrings) retrieves 
 
 See [IPerPropertyBrowsing::GetPredefinedValue](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedvalue) in the Windows SDK.
 
-##  <a name="mappropertytopage"></a>  IPerPropertyBrowsingImpl::MapPropertyToPage
+## <a name="mappropertytopage"></a>  IPerPropertyBrowsingImpl::MapPropertyToPage
 
 Retrieves the CLSID of the property page associated with the specified property.
 

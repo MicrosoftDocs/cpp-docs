@@ -62,7 +62,7 @@ A `CPoint` object can be used wherever a `POINT` structure is used. The operator
 
 **Header:** atltypes.h
 
-##  <a name="cpoint"></a>  CPoint::CPoint
+## <a name="cpoint"></a>  CPoint::CPoint
 
 Constructs a `CPoint` object.
 
@@ -122,7 +122,7 @@ CPoint ptFromDouble(dwSize);
 ASSERT(ptFromDouble == ptMFCHere);
 ```
 
-##  <a name="offset"></a>  CPoint::Offset
+## <a name="offset"></a>  CPoint::Offset
 
 Adds values to the `x` and `y` members of the `CPoint`.
 
@@ -150,7 +150,7 @@ Specifies the amount ( [SIZE](/windows/win32/api/windef/ns-windef-size) or [CSiz
 
 [!code-cpp[NVC_ATLMFC_Utilities#28](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_1.cpp)]
 
-##  <a name="operator_eq_eq"></a>  CPoint::operator ==
+## <a name="operator_eq_eq"></a>  CPoint::operator ==
 
 Checks for equality between two points.
 
@@ -171,7 +171,7 @@ Nonzero if the points are equal; otherwise 0.
 
 [!code-cpp[NVC_ATLMFC_Utilities#29](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_2.cpp)]
 
-##  <a name="operator_neq"></a>  CPoint::operator !=
+## <a name="operator_neq"></a>  CPoint::operator !=
 
 Checks for inequality between two points.
 
@@ -192,7 +192,7 @@ Nonzero if the points are not equal; otherwise 0.
 
 [!code-cpp[NVC_ATLMFC_Utilities#30](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_3.cpp)]
 
-##  <a name="operator_add_eq"></a>  CPoint::operator +=
+## <a name="operator_add_eq"></a>  CPoint::operator +=
 
 The first overload adds a size to the `CPoint`.
 
@@ -221,7 +221,7 @@ For example, adding `CPoint(5, -7)` to a variable which contains `CPoint(30, 40)
 
 [!code-cpp[NVC_ATLMFC_Utilities#31](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_4.cpp)]
 
-##  <a name="operator_-_eq"></a>  CPoint::operator -=
+## <a name="operator_-_eq"></a>  CPoint::operator -=
 
 The first overload subtracts a size from the `CPoint`.
 
@@ -250,7 +250,7 @@ For example, subtracting `CPoint(5, -7)` from a variable which contains `CPoint(
 
 [!code-cpp[NVC_ATLMFC_Utilities#32](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_5.cpp)]
 
-##  <a name="operator_add"></a>  CPoint::operator +
+## <a name="operator_add"></a>  CPoint::operator +
 
 Use this operator to offset `CPoint` by a `CPoint` or `CSize` object, or to offset a `CRect` by a `CPoint`.
 
@@ -285,7 +285,7 @@ Adding a rectangle to a point returns the rectangle after being offset by the `x
 
 [!code-cpp[NVC_ATLMFC_Utilities#33](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_6.cpp)]
 
-##  <a name="operator_-"></a>  CPoint::operator -
+## <a name="operator_-"></a>  CPoint::operator -
 
 Use one of the first two overloads to subtract a `CPoint` or `CSize` object from `CPoint`.
 

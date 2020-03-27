@@ -18,7 +18,7 @@ For more information about scrolling and scaling, see class [CScrollView](../mfc
 
 - [View coordinates](/windows/win32/gdi/window-coordinate-system)
 
-##  <a name="_core_scrolling_a_view"></a> Scrolling a View
+## <a name="_core_scrolling_a_view"></a> Scrolling a View
 
 Frequently the size of a document is greater than the size its view can display. This may occur because the document's data increases or the user shrinks the window that frames the view. In such cases, the view must support scrolling.
 
@@ -32,7 +32,7 @@ Any view can handle scroll-bar messages in its `OnHScroll` and `OnVScroll` membe
 
 You can specify how much to scroll for a "page" (when the user clicks in a scroll-bar shaft) and a "line" (when the user clicks in a scroll arrow). Plan these values to suit the nature of your view. For example, you might want to scroll in 1-pixel increments for a graphics view but in increments based on the line height in text documents.
 
-##  <a name="_core_scaling_a_view"></a> Scaling a View
+## <a name="_core_scaling_a_view"></a> Scaling a View
 
 When you want the view to automatically fit the size of its frame window, you can use `CScrollView` for scaling instead of scrolling. The logical view is stretched or shrunk to fit the window's client area exactly. A scaled view has no scroll bars.
 

@@ -61,7 +61,7 @@ For an example of using a rich edit document in an MFC application, see the [WOR
 
 **Header:** afxrich.h
 
-##  <a name="createclientitem"></a>  CRichEditDoc::CreateClientItem
+## <a name="createclientitem"></a>  CRichEditDoc::CreateClientItem
 
 Call this function to create a `CRichEditCntrItem` object and add it to this document.
 
@@ -84,7 +84,7 @@ This function does not perform any OLE initialization.
 
 For more information, see the [REOBJECT](/windows/win32/api/richole/ns-richole-reobject) structure in the Windows SDK.
 
-##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat
+## <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat
 
 Call this function to determine the text format for streaming the contents of the rich edit.
 
@@ -104,7 +104,7 @@ One of the following flags:
 
 The return value is based on the [m_bRTF](#m_brtf) data member. This function returns SF_RTF if `m_bRTF` is TRUE; otherwise, SF_TEXT.
 
-##  <a name="getview"></a>  CRichEditDoc::GetView
+## <a name="getview"></a>  CRichEditDoc::GetView
 
 Call this function to access the [CRichEditView](../../mfc/reference/cricheditview-class.md) object associated with this `CRichEditDoc` object.
 
@@ -120,7 +120,7 @@ Pointer to the `CRichEditView` object associated with the document.
 
 The text and formatting information are contained within the `CRichEditView` object. The `CRichEditDoc` object maintains the OLE items for serialization. There should be only one `CRichEditView` for each `CRichEditDoc`.
 
-##  <a name="m_brtf"></a>  CRichEditDoc::m_bRTF
+## <a name="m_brtf"></a>  CRichEditDoc::m_bRTF
 
 When TRUE, indicates that [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) and [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) should store paragraph and character-formatting characteristics.
 

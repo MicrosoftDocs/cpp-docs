@@ -46,7 +46,7 @@ class CFolderPickerDialog : public CFileDialog;
 
 **Header:** afxdlgs.h
 
-##  <a name="cfolderpickerdialog"></a>  CFolderPickerDialog::CFolderPickerDialog
+## <a name="cfolderpickerdialog"></a>  CFolderPickerDialog::CFolderPickerDialog
 
 Constructor.
 
@@ -74,7 +74,7 @@ The size of the OPENFILENAME structure.
 
 ### Remarks
 
-##  <a name="_dtorcfolderpickerdialog"></a>  CFolderPickerDialog::~CFolderPickerDialog
+## <a name="_dtorcfolderpickerdialog"></a>  CFolderPickerDialog::~CFolderPickerDialog
 
 Destructor.
 

@@ -72,7 +72,7 @@ The owner class must implement `FinalRelease` and call `Release` on the cached `
 
 **Header:** atlcom.h
 
-##  <a name="addref"></a>  CComCachedTearOffObject::AddRef
+## <a name="addref"></a>  CComCachedTearOffObject::AddRef
 
 Increments the reference count of the `CComCachedTearOffObject` object by 1.
 
@@ -84,7 +84,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 A value that may be useful for diagnostics and testing.
 
-##  <a name="ccomcachedtearoffobject"></a>  CComCachedTearOffObject::CComCachedTearOffObject
+## <a name="ccomcachedtearoffobject"></a>  CComCachedTearOffObject::CComCachedTearOffObject
 
 The constructor.
 
@@ -101,7 +101,7 @@ CComCachedTearOffObject(void* pv);
 
 Initializes the `CComContainedObject` member, [m_contained](#m_contained).
 
-##  <a name="dtor"></a>  CComCachedTearOffObject::~CComCachedTearOffObject
+## <a name="dtor"></a>  CComCachedTearOffObject::~CComCachedTearOffObject
 
 The destructor.
 
@@ -113,7 +113,7 @@ The destructor.
 
 Frees all allocated resources and calls [FinalRelease](#finalrelease).
 
-##  <a name="finalconstruct"></a>  CComCachedTearOffObject::FinalConstruct
+## <a name="finalconstruct"></a>  CComCachedTearOffObject::FinalConstruct
 
 Calls `m_contained::FinalConstruct` to create `m_contained`, the `CComContainedObject`< `contained`> object used to access the interface implemented by your tear-off class.
 
@@ -125,7 +125,7 @@ HRESULT FinalConstruct();
 
 A standard HRESULT value.
 
-##  <a name="finalrelease"></a>  CComCachedTearOffObject::FinalRelease
+## <a name="finalrelease"></a>  CComCachedTearOffObject::FinalRelease
 
 Calls `m_contained::FinalRelease` to free `m_contained`, the `CComContainedObject`< `contained`> object.
 
@@ -133,7 +133,7 @@ Calls `m_contained::FinalRelease` to free `m_contained`, the `CComContainedObjec
 void FinalRelease();
 ```
 
-##  <a name="m_contained"></a>  CComCachedTearOffObject::m_contained
+## <a name="m_contained"></a>  CComCachedTearOffObject::m_contained
 
 A [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) object derived from your tear-off class.
 
@@ -150,7 +150,7 @@ CcomContainedObject <contained> m_contained;
 
 The methods `m_contained` inherits are used to access the tear-off interface in your tear-off class through the cached tear-off object's `QueryInterface`, `FinalConstruct`, and `FinalRelease`.
 
-##  <a name="queryinterface"></a>  CComCachedTearOffObject::QueryInterface
+## <a name="queryinterface"></a>  CComCachedTearOffObject::QueryInterface
 
 Retrieves a pointer to the requested interface.
 
@@ -174,7 +174,7 @@ A standard HRESULT value.
 
 If the requested interface is `IUnknown`, returns a pointer to the `CComCachedTearOffObject`'s own `IUnknown` and increments the reference count. Otherwise, queries for the interface on your tear-off class using the [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) method inherited from `CComObjectRootEx`.
 
-##  <a name="release"></a>  CComCachedTearOffObject::Release
+## <a name="release"></a>  CComCachedTearOffObject::Release
 
 Decrements the reference count by 1 and, if the reference count is 0, deletes the `CComCachedTearOffObject` object.
 

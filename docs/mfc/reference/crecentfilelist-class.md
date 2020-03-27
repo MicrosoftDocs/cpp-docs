@@ -53,7 +53,7 @@ Files can be added to or deleted from the MRU file list, the file list can be re
 
 **Header:** afxadv.h
 
-##  <a name="add"></a>  CRecentFileList::Add
+## <a name="add"></a>  CRecentFileList::Add
 
 Adds a file to the most recently used (MRU) file list.
 
@@ -98,7 +98,7 @@ Specifies the IDLIST for the shell item that should be added to the recent docs 
 
 The file name will be added to the top of the MRU list. If the file name already exists in the MRU list, it will be moved to the top.
 
-##  <a name="crecentfilelist"></a>  CRecentFileList::CRecentFileList
+## <a name="crecentfilelist"></a>  CRecentFileList::CRecentFileList
 
 Constructs a `CRecentFileList` object.
 
@@ -132,7 +132,7 @@ Maximum length, in characters, available for the menu display of a filename in t
 
 The format string pointed to by *lpszEntryFormat* should contain "%d", which will be used for substituting the index of each MRU item. For example, if the format string is `"file%d"` then the entries will be named `file0`, `file1`, and so on.
 
-##  <a name="getdisplayname"></a>  CRecentFileList::GetDisplayName
+## <a name="getdisplayname"></a>  CRecentFileList::GetDisplayName
 
 Obtains a display name for a file in the MRU file list, for use in the menu display of the MRU list.
 
@@ -170,7 +170,7 @@ If nonzero, indicates that the base name of the file should be returned, even if
 
 If the file is in the current directory, the function leaves the directory off the display. If the filename is too long, the directory and extension are stripped. If the filename is still too long, the display name is set to an empty string unless *bAtLeastName* is nonzero.
 
-##  <a name="getsize"></a>  CRecentFileList::GetSize
+## <a name="getsize"></a>  CRecentFileList::GetSize
 
 Retrieves the number of files in the MRU file list.
 
@@ -182,7 +182,7 @@ int GetSize() const;
 
 The number of files in the current most recently used (MRU) file list.
 
-##  <a name="operator_at"></a>  CRecentFileList::operator [ ]
+## <a name="operator_at"></a>  CRecentFileList::operator [ ]
 
 The overloaded subscript (`[]`) operator returns a single `CString` specified by the zero-based index in *nIndex*.
 
@@ -195,7 +195,7 @@ CString& operator[ ](int nindex);
 *nIndex*<br/>
 Zero-based index of a `CString` in a set of `CString`s.
 
-##  <a name="readlist"></a>  CRecentFileList::ReadList
+## <a name="readlist"></a>  CRecentFileList::ReadList
 
 Reads the most recently used (MRU) file list from the registry or the application's .INI file.
 
@@ -203,7 +203,7 @@ Reads the most recently used (MRU) file list from the registry or the applicatio
 virtual void ReadList();
 ```
 
-##  <a name="remove"></a>  CRecentFileList::Remove
+## <a name="remove"></a>  CRecentFileList::Remove
 
 Removes a file from the MRU file list.
 
@@ -216,7 +216,7 @@ virtual void Remove(int nIndex);
 *nIndex*<br/>
 Zero-based index of the file to be removed from the most recently used (MRU) file list.
 
-##  <a name="updatemenu"></a>  CRecentFileList::UpdateMenu
+## <a name="updatemenu"></a>  CRecentFileList::UpdateMenu
 
 Updates the menu display of the MRU file list.
 
@@ -229,7 +229,7 @@ virtual void UpdateMenu(CCmdUI* pCmdUI);
 *pCmdUI*<br/>
 A pointer to the [CCmdUI](../../mfc/reference/ccmdui-class.md) object for the most recently used (MRU) file list menu.
 
-##  <a name="writelist"></a>  CRecentFileList::WriteList
+## <a name="writelist"></a>  CRecentFileList::WriteList
 
 Writes the most recently used (MRU) file list into the registry or the application's .INI file.
 

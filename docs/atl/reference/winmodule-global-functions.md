@@ -20,7 +20,7 @@ These functions provide support for `_AtlCreateWndData` structure operations.
 
 **Header:** atlbase.h
 
-##  <a name="atlwinmoduleaddcreatewnddata"></a>  AtlWinModuleAddCreateWndData
+## <a name="atlwinmoduleaddcreatewnddata"></a>  AtlWinModuleAddCreateWndData
 
 This function is used to initialize and add an `_AtlCreateWndData` structure.
 
@@ -46,7 +46,7 @@ Pointer to an object's **this** pointer.
 
 Initializes an `_AtlCreateWndData` structure, which is used to store the **this** pointer used to refer to class instances, and adds it to the list referenced by a module's `_ATL_WIN_MODULE70` structure. Called by [CAtlWinModule::AddCreateWndData](catlwinmodule-class.md#addcreatewnddata).
 
-##  <a name="atlwinmoduleextractcreatewnddata"></a>  AtlWinModuleExtractCreateWndData
+## <a name="atlwinmoduleextractcreatewnddata"></a>  AtlWinModuleExtractCreateWndData
 
 Call this function to extract an existing `_AtlCreateWndData` structure.
 

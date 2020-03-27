@@ -22,7 +22,7 @@ The following functions allow you to add and remove the control's class, propert
 
 `AfxOleRegisterTypeLib` is typically called in a control DLL's implementation of `DllRegisterServer`. Similarly, `AfxOleUnregisterTypeLib` is called by `DllUnregisterServer`. `AfxOleRegisterControlClass`, `AfxOleRegisterPropertyPageClass`, and `AfxOleUnregisterClass` are typically called by the `UpdateRegistry` member function of a control's class factory or property page.
 
-##  <a name="afxoleregistercontrolclass"></a>  AfxOleRegisterControlClass
+## <a name="afxoleregistercontrolclass"></a>  AfxOleRegisterControlClass
 
 Registers the control class with the Windows registration database.
 
@@ -143,7 +143,7 @@ The control will show up in the Insert Object dialog box for enabled containers,
 
   **Header** afxctl.h
 
-##  <a name="afxoleregisterpropertypageclass"></a>  AfxOleRegisterPropertyPageClass
+## <a name="afxoleregisterpropertypageclass"></a>  AfxOleRegisterPropertyPageClass
 
 Registers the property page class with the Windows registration database.
 
@@ -186,7 +186,7 @@ This allows the property page to be used by containers that are OLE-control awar
 
   **Header** afxctl.h
 
-##  <a name="afxoleregistertypelib"></a>  AfxOleRegisterTypeLib
+## <a name="afxoleregistertypelib"></a>  AfxOleRegisterTypeLib
 
 Registers the type library with the Windows registration database and allows the type library to be used by other containers that are OLE-control aware.
 
@@ -230,7 +230,7 @@ This function updates the registry with the type library name and its location o
 
   **Header** afxdisp.h
 
-##  <a name="afxoleunregisterclass"></a>  AfxOleUnregisterClass
+## <a name="afxoleunregisterclass"></a>  AfxOleUnregisterClass
 
 Removes the control or property page class entry from the Windows registration database.
 
@@ -254,7 +254,7 @@ Nonzero if the control or property page class was successfully unregistered; oth
 
   **Header** afxctl.h
 
-##  <a name="afxoleunregistertypelib"></a>  AfxOleUnregisterTypeLib
+## <a name="afxoleunregistertypelib"></a>  AfxOleUnregisterTypeLib
 
 Call this function to remove the type library entry from the Windows registration database.
 

@@ -62,7 +62,7 @@ For more information on using `CStdioFile`, see the articles [Files in MFC](../.
 
 **Header:** afx.h
 
-##  <a name="cstdiofile"></a>  CStdioFile::CStdioFile
+## <a name="cstdiofile"></a>  CStdioFile::CStdioFile
 
 Constructs and initializes a `CStdioFile` object.
 
@@ -113,7 +113,7 @@ If the file cannot be opened or created, the constructor throws a `CFileExceptio
 
 [!code-cpp[NVC_MFCFiles#37](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_1.cpp)]
 
-##  <a name="m_pstream"></a>  CStdioFile::m_pStream
+## <a name="m_pstream"></a>  CStdioFile::m_pStream
 
 The `m_pStream` data member is the pointer to an open file as returned by the C run-time function `fopen`.
 
@@ -125,7 +125,7 @@ FILE* m_pStream;
 
 It is NULL if the file has never been opened or has been closed.
 
-##  <a name="open"></a>  CStdioFile::Open
+## <a name="open"></a>  CStdioFile::Open
 
 Overloaded. Open is designed for use with the default `CStdioFile` constructor.
 
@@ -162,7 +162,7 @@ TRUE if successful; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="readstring"></a>  CStdioFile::ReadString
+## <a name="readstring"></a>  CStdioFile::ReadString
 
 Reads text data into a buffer, up to a limit of *nMax*-1 characters, from the file associated with the `CStdioFile` object.
 
@@ -202,7 +202,7 @@ Reading is stopped by the first newline character. If, in that case, fewer than 
 
 [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_2.cpp)]
 
-##  <a name="seek"></a>  CStdioFile::Seek
+## <a name="seek"></a>  CStdioFile::Seek
 
 Repositions the pointer in a previously opened file.
 
@@ -244,7 +244,7 @@ The following example shows how to use `Seek` to move the pointer 1000 bytes fro
 
 [!code-cpp[NVC_MFCFiles#39](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_3.cpp)]
 
-##  <a name="writestring"></a>  CStdioFile::WriteString
+## <a name="writestring"></a>  CStdioFile::WriteString
 
 Writes data from a buffer to the file associated with the `CStdioFile` object.
 

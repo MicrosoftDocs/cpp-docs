@@ -48,7 +48,7 @@ The definition of this interface is available in a number of forms, as shown in 
 |Type Library|ATL.dll|
 |C++|atliface.h (also included in ATLBase.h)|
 
-##  <a name="setambientdispatch"></a>  IAxWinAmbientDispatchEx::SetAmbientDispatch
+## <a name="setambientdispatch"></a>  IAxWinAmbientDispatchEx::SetAmbientDispatch
 
 This method is called to supplement the default ambient property interface with a user-defined interface.
 

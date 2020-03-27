@@ -53,7 +53,7 @@ For more information about large objects and the use of `CLongBinary`, see the a
 
 **Header:** afxdb_.h
 
-##  <a name="clongbinary"></a>  CLongBinary::CLongBinary
+## <a name="clongbinary"></a>  CLongBinary::CLongBinary
 
 Constructs a `CLongBinary` object.
 
@@ -61,7 +61,7 @@ Constructs a `CLongBinary` object.
 CLongBinary();
 ```
 
-##  <a name="m_dwdatalength"></a>  CLongBinary::m_dwDataLength
+## <a name="m_dwdatalength"></a>  CLongBinary::m_dwDataLength
 
 Stores the actual size in bytes of the data stored in the HGLOBAL handle in `m_hData`.
 
@@ -73,7 +73,7 @@ SQLULEN m_dwDataLength;
 
 This size may be smaller than the size of the memory block allocated for the data. Call the Win32 [GLobalSize](/windows/win32/api/winbase/nf-winbase-globalsize) function to get the allocated size.
 
-##  <a name="m_hdata"></a>  CLongBinary::m_hData
+## <a name="m_hdata"></a>  CLongBinary::m_hData
 
 Stores a Windows HGLOBAL handle to the actual binary large object data.
 

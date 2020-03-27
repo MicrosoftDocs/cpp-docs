@@ -70,7 +70,7 @@ CURRENCY is implemented as an 8-byte, two's-complement integer value scaled by 1
 
 **Header:** afxdisp.h
 
-##  <a name="colecurrency"></a>  COleCurrency::COleCurrency
+## <a name="colecurrency"></a>  COleCurrency::COleCurrency
 
 Constructs a `COleCurrency` object.
 
@@ -121,7 +121,7 @@ The following examples show the effects of the zero-parameter and two-parameter 
 
 [!code-cpp[NVC_MFCOleContainer#10](../../mfc/codesnippet/cpp/colecurrency-class_1.cpp)]
 
-##  <a name="format"></a>  COleCurrency::Format
+## <a name="format"></a>  COleCurrency::Format
 
 Call this member function to create a formatted representation of the currency value.
 
@@ -151,7 +151,7 @@ It formats the value using the local language specifications (locale IDs). A cur
 
 [!code-cpp[NVC_MFCOleContainer#11](../../mfc/codesnippet/cpp/colecurrency-class_2.cpp)]
 
-##  <a name="getstatus"></a>  COleCurrency::GetStatus
+## <a name="getstatus"></a>  COleCurrency::GetStatus
 
 Call this member function to get the status (validity) of a given `COleCurrency` object.
 
@@ -211,7 +211,7 @@ For more information on operations that may set the status to invalid, see the f
 
 [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]
 
-##  <a name="m_cur"></a>  COleCurrency::m_cur
+## <a name="m_cur"></a>  COleCurrency::m_cur
 
 The underlying [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) structure for this `COleCurrency` object.
 
@@ -222,7 +222,7 @@ The underlying [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) structure f
 
 For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) entry in the Windows SDK.
 
-##  <a name="m_status"></a>  COleCurrency::m_status
+## <a name="m_status"></a>  COleCurrency::m_status
 
 The type of this data member is the enumerated type `CurrencyStatus`, which is defined within the `COleCurrency` class.
 
@@ -271,7 +271,7 @@ For more information on operations that may set the status to invalid, see the f
 > [!CAUTION]
 >  This data member is for advanced programming situations. You should use the inline member functions [GetStatus](#getstatus) and [SetStatus](#setstatus). See `SetStatus` for further cautions regarding explicitly setting this data member.
 
-##  <a name="operator_eq"></a>  COleCurrency::operator =
+## <a name="operator_eq"></a>  COleCurrency::operator =
 
 These overloaded assignment operators copy the source currency value into this `COleCurrency` object.
 
@@ -297,7 +297,7 @@ For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~
 
 [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]
 
-##  <a name="operator_plus_minus"></a>  COleCurrency::operator +, -
+## <a name="operator_plus_minus"></a>  COleCurrency::operator +, -
 
 These operators allow you to add and subtract two `COleCurrency` values to and from each other and to change the sign of a `COleCurrency` value.
 
@@ -321,7 +321,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]
 
-##  <a name="operator_plus_minus_eq"></a>  COleCurrency::operator +=, -=
+## <a name="operator_plus_minus_eq"></a>  COleCurrency::operator +=, -=
 
 Allow you to add and subtract a `COleCurrency` value to and from this `COleCurrency` object.
 
@@ -344,7 +344,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]
 
-##  <a name="operator_star"></a>  COleCurrency::operator \* and /
+## <a name="operator_star"></a>  COleCurrency::operator \* and /
 
 Allow you to scale a `COleCurrency` value by an integral value.
 
@@ -367,7 +367,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]
 
-##  <a name="operator_star_div_eq"></a>  COleCurrency::operator \*=, /=
+## <a name="operator_star_div_eq"></a>  COleCurrency::operator \*=, /=
 
 Allow you to scale this `COleCurrency` value by an integral value.
 
@@ -390,7 +390,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]
 
-##  <a name="operator_stream"></a>  COleCurrency::operator &lt;&lt;, &gt;&gt;
+## <a name="operator_stream"></a>  COleCurrency::operator &lt;&lt;, &gt;&gt;
 
 Supports diagnostic dumping and storing to an archive.
 
@@ -412,7 +412,7 @@ friend CArchive& operator>>(
 
 The extraction ( **>>**) operator supports loading from an archive.
 
-##  <a name="operator_currency"></a>  COleCurrency::operator CURRENCY
+## <a name="operator_currency"></a>  COleCurrency::operator CURRENCY
 
 Returns a `CURRENCY` structure whose value is copied from this `COleCurrency` object.
 
@@ -422,7 +422,7 @@ operator CURRENCY() const;
 
 ### Remarks
 
-##  <a name="parsecurrency"></a>  COleCurrency::ParseCurrency
+## <a name="parsecurrency"></a>  COleCurrency::ParseCurrency
 
 Call this member function to parse a string to read a currency value.
 
@@ -469,7 +469,7 @@ If the string conversion failed due to memory allocation errors, this function t
 
 [!code-cpp[NVC_MFCOleContainer#13](../../mfc/codesnippet/cpp/colecurrency-class_9.cpp)]
 
-##  <a name="colecurrency_relational_operators"></a>  COleCurrency Relational Operators
+## <a name="colecurrency_relational_operators"></a>  COleCurrency Relational Operators
 
 Compare two currency values and return nonzero if the condition is true; otherwise 0.
 
@@ -491,7 +491,7 @@ BOOL operator>=(const COleCurrency& cur) const;
 
 [!code-cpp[NVC_MFCOleContainer#20](../../mfc/codesnippet/cpp/colecurrency-class_10.cpp)]
 
-##  <a name="setcurrency"></a>  COleCurrency::SetCurrency
+## <a name="setcurrency"></a>  COleCurrency::SetCurrency
 
 Call this member function to set the units and fractional part of this `COleCurrency` object.
 
@@ -516,7 +516,7 @@ Note that the units and fractional part are specified by signed long values. The
 
 [!code-cpp[NVC_MFCOleContainer#14](../../mfc/codesnippet/cpp/colecurrency-class_11.cpp)]
 
-##  <a name="setstatus"></a>  COleCurrency::SetStatus
+## <a name="setstatus"></a>  COleCurrency::SetStatus
 
 Call this member function to set the status (validity) of this `COleCurrency` object.
 

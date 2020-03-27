@@ -194,7 +194,7 @@ Because `CStringT` uses a template argument to define the character type (either
 |cstringt.h|MFC-only string objects|
 |atlstr.h|Non-MFC string objects|
 
-##  <a name="allocsysstring"></a>  CStringT::AllocSysString
+## <a name="allocsysstring"></a>  CStringT::AllocSysString
 
 Allocates an Automation-compatible string of the type BSTR and copies the contents of the `CStringT` object into it, including the terminating null character.
 
@@ -220,7 +220,7 @@ The following example demonstrates the use of `CStringT::AllocSysString`.
 
 [!code-cpp[NVC_ATLMFC_Utilities#105](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_1.cpp)]
 
-##  <a name="ansitooem"></a>  CStringT::AnsiToOem
+## <a name="ansitooem"></a>  CStringT::AnsiToOem
 
 Converts all the characters in this `CStringT` object from the ANSI character set to the OEM character set.
 
@@ -236,7 +236,7 @@ The function is not available if _UNICODE is defined.
 
 [!code-cpp[NVC_ATLMFC_Utilities#106](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_2.cpp)]
 
-##  <a name="appendformat"></a>  CStringT::AppendFormat
+## <a name="appendformat"></a>  CStringT::AppendFormat
 
 Appends formatted data to an existing `CStringT` object.
 
@@ -264,7 +264,7 @@ This function formats and appends a series of characters and values in the `CStr
 
 [!code-cpp[NVC_ATLMFC_Utilities#107](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_3.cpp)]
 
-##  <a name="collate"></a>  CStringT::Collate
+## <a name="collate"></a>  CStringT::Collate
 
 Compares two strings using the generic-text function `_tcscoll`.
 
@@ -285,7 +285,7 @@ Zero if the strings are identical, < 0 if this `CStringT` object is less than *p
 
 The generic-text function `_tcscoll`, which is defined in TCHAR.H, maps to either `strcoll`, `wcscoll`, or `_mbscoll`, depending on the character set that is defined at compile time. Each function performs a case-sensitive comparison of the strings according to the code page currently in use. For more information, see [strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l](../../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md).
 
-##  <a name="collatenocase"></a>  CStringT::CollateNoCase
+## <a name="collatenocase"></a>  CStringT::CollateNoCase
 
 Compares two strings using the generic-text function `_tcscoll`.
 
@@ -310,7 +310,7 @@ The generic-text function `_tcscoll`, which is defined in TCHAR.H, maps to eithe
 
 [!code-cpp[NVC_ATLMFC_Utilities#109](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_4.cpp)]
 
-##  <a name="compare"></a>  CStringT::Compare
+## <a name="compare"></a>  CStringT::Compare
 
 Compares two strings (case sensitive).
 
@@ -339,7 +339,7 @@ The following example demonstrates the use of `CStringT::Compare`.
 
 [!code-cpp[NVC_ATLMFC_Utilities#110](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_5.cpp)]
 
-##  <a name="comparenocase"></a>  CStringT::CompareNoCase
+## <a name="comparenocase"></a>  CStringT::CompareNoCase
 
 Compares two strings (case insensitive).
 
@@ -364,7 +364,7 @@ The generic-text function `_tcsicmp`, which is defined in TCHAR.H, maps to eithe
 
 [!code-cpp[NVC_ATLMFC_Utilities#111](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_6.cpp)]
 
-##  <a name="cstringt"></a>  CStringT::CStringT
+## <a name="cstringt"></a>  CStringT::CStringT
 
 Constructs a `CStringT` object.
 
@@ -506,7 +506,7 @@ The overload operator `CSimpleStringT<>&()` constructs a `CStringT` object from 
 
 [!code-cpp[NVC_ATLMFC_Utilities#112](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_7.cpp)]
 
-##  <a name="_dtorcstringt"></a>  CStringT::~CStringT
+## <a name="_dtorcstringt"></a>  CStringT::~CStringT
 
 Destroys the `CStringT` object.
 
@@ -518,7 +518,7 @@ Destroys the `CStringT` object.
 
 Destroys the `CStringT` object.
 
-##  <a name="delete"></a>  CStringT::Delete
+## <a name="delete"></a>  CStringT::Delete
 
 Deletes a character or characters from a string starting with the character at the given index.
 
@@ -553,7 +553,7 @@ After: Soccer best,
     but hockey is quicker!
 ```
 
-##  <a name="find"></a>  CStringT::Find
+## <a name="find"></a>  CStringT::Find
 
 Searches this string for the first match of a character or substring.
 
@@ -585,7 +585,7 @@ The function is overloaded to accept both single characters (similar to the run-
 
 [!code-cpp[NVC_ATLMFC_Utilities#114](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_9.cpp)]
 
-##  <a name="findoneof"></a>  CStringT::FindOneOf
+## <a name="findoneof"></a>  CStringT::FindOneOf
 
 Searches this string for the first character that matches any character contained in *pszCharSet*.
 
@@ -610,7 +610,7 @@ Finds the first occurrence of any of the characters in *pszCharSet*.
 
 [!code-cpp[NVC_ATLMFC_Utilities#115](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_10.cpp)]
 
-##  <a name="format"></a>  CStringT::Format
+## <a name="format"></a>  CStringT::Format
 
 Writes formatted data to a `CStringT` in the same way that [sprintf_s](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) formats data into a C-style character array.
 
@@ -644,7 +644,7 @@ For more information, see [Format Specification Syntax: printf and wprintf Funct
 
 [!code-cpp[NVC_ATLMFC_Utilities#117](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_12.cpp)]
 
-##  <a name="formatmessage"></a>  CStringT::FormatMessage
+## <a name="formatmessage"></a>  CStringT::FormatMessage
 
 Formats a message string.
 
@@ -677,7 +677,7 @@ Each insert must have a corresponding parameter following the *pszFormat* or *nF
 
 [!code-cpp[NVC_ATLMFC_Utilities#118](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_13.cpp)]
 
-##  <a name="formatmessagev"></a>  CStringT::FormatMessageV
+## <a name="formatmessagev"></a>  CStringT::FormatMessageV
 
 Formats a message string using a variable argument list.
 
@@ -702,7 +702,7 @@ The function requires a message definition as input, determined by *pszFormat*. 
 
 For more information, see the Windows [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
 
-##  <a name="formatv"></a>  CStringT::FormatV
+## <a name="formatv"></a>  CStringT::FormatV
 
 Formats a message string using a variable argument list.
 
@@ -728,7 +728,7 @@ Writes a formatted string and a variable list of arguments to a `CStringT` strin
 
 [!code-cpp[NVC_ATLMFC_Utilities#120](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_15.cpp)]
 
-##  <a name="getenvironmentvariable"></a>  CStringT::GetEnvironmentVariable
+## <a name="getenvironmentvariable"></a>  CStringT::GetEnvironmentVariable
 
 Sets the string to the value of the specified environment variable.
 
@@ -753,7 +753,7 @@ Retrieves the value of the specified variable from the environment block of the 
 
 [!code-cpp[NVC_ATLMFC_Utilities#121](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_16.cpp)]
 
-##  <a name="insert"></a>  CStringT::Insert
+## <a name="insert"></a>  CStringT::Insert
 
 Inserts a single character or a substring at the given index within the string.
 
@@ -785,7 +785,7 @@ The *iIndex* parameter identifies the first character that will be moved to make
 
 [!code-cpp[NVC_ATLMFC_Utilities#122](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_17.cpp)]
 
-##  <a name="left"></a>  CStringT::Left
+## <a name="left"></a>  CStringT::Left
 
 Extracts the leftmost *nCount* characters from this `CStringT` object and returns a copy of the extracted substring.
 
@@ -812,7 +812,7 @@ For multi-byte character sets (MBCS), *nCount* treats each 8-bit sequence as a c
 
 [!code-cpp[NVC_ATLMFC_Utilities#123](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_18.cpp)]
 
-##  <a name="loadstring"></a>  CStringT::LoadString
+## <a name="loadstring"></a>  CStringT::LoadString
 
 Reads a Windows string resource, identified by *nID*, into an existing `CStringT` object.
 
@@ -845,7 +845,7 @@ Loads the string resource (*nID*) from the specified module (*hInstance*) using 
 
 [!code-cpp[NVC_ATLMFC_Utilities#124](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_19.cpp)]
 
-##  <a name="makelower"></a>  CStringT::MakeLower
+## <a name="makelower"></a>  CStringT::MakeLower
 
 Converts the `CStringT` object to a lowercase string.
 
@@ -861,7 +861,7 @@ The resulting lowercase string.
 
 [!code-cpp[NVC_ATLMFC_Utilities#125](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_20.cpp)]
 
-##  <a name="makereverse"></a>  CStringT::MakeReverse
+## <a name="makereverse"></a>  CStringT::MakeReverse
 
 Reverses the order of the characters in the `CStringT` object.
 
@@ -877,7 +877,7 @@ The resulting reversed string.
 
 [!code-cpp[NVC_ATLMFC_Utilities#126](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_21.cpp)]
 
-##  <a name="makeupper"></a>  CStringT::MakeUpper
+## <a name="makeupper"></a>  CStringT::MakeUpper
 
 Converts the `CStringT` object to an uppercase string.
 
@@ -895,7 +895,7 @@ The resulting uppercase string.
 
 [!code-cpp[NVC_ATLMFC_Utilities#127](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_22.cpp)]
 
-##  <a name="mid"></a>  CStringT::Mid
+## <a name="mid"></a>  CStringT::Mid
 
 Extracts a substring of length *nCount* characters from this `CStringT` object, starting at position *iFirst* (zero-based).
 
@@ -926,7 +926,7 @@ For multibyte character sets (MBCS), *nCount* refers to each 8-bit character; th
 
 [!code-cpp[NVC_ATLMFC_Utilities#128](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_23.cpp)]
 
-##  <a name="oemtoansi"></a>  CStringT::OemToAnsi
+## <a name="oemtoansi"></a>  CStringT::OemToAnsi
 
 Converts all the characters in this `CStringT` object from the OEM character set to the ANSI character set.
 
@@ -942,7 +942,7 @@ This function is not available if _UNICODE is defined.
 
 See the example for [CStringT::AnsiToOem](#ansitooem).
 
-##  <a name="operator_eq"></a>  CStringT::operator =
+## <a name="operator_eq"></a>  CStringT::operator =
 
 Assigns a new value to the string.
 
@@ -992,7 +992,7 @@ For information on `CThisSimpleString`, see the Remarks section of [CStringT::CS
 > [!NOTE]
 > Although it is possible to create `CStringT` instances that contain embedded null characters, we recommend against it. Calling methods and operators on `CStringT` objects that contain embedded null characters can produce unintended results.
 
-##  <a name="operator_add"></a>  CStringT::operator +
+## <a name="operator_add"></a>  CStringT::operator +
 
 Concatenates two strings or a character and a string.
 
@@ -1037,7 +1037,7 @@ There are seven overload forms of the `CStringT::operator+` function. The first 
 
 [!code-cpp[NVC_ATLMFC_Utilities#140](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_24.cpp)]
 
-##  <a name="operator_add_eq"></a>  CStringT::operator +=
+## <a name="operator_add_eq"></a>  CStringT::operator +=
 
 Concatenates characters to the end of the string.
 
@@ -1093,7 +1093,7 @@ For information on `CThisSimpleString`, see the Remarks section of [CStringT::CS
 
 [!code-cpp[NVC_ATLMFC_Utilities#141](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_25.cpp)]
 
-##  <a name="operator_eq_eq"></a>  CStringT::operator ==
+## <a name="operator_eq_eq"></a>  CStringT::operator ==
 
 Determines whether two strings are logically equal.
 
@@ -1135,7 +1135,7 @@ Tests whether a string or character on the left side is equal to a string or cha
 
 [!code-cpp[NVC_ATLMFC_Utilities#142](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_26.cpp)]
 
-##  <a name="operator_neq"></a>  CStringT::operator !=
+## <a name="operator_neq"></a>  CStringT::operator !=
 
 Determines whether two strings are logically not equal.
 
@@ -1177,7 +1177,7 @@ Tests if a string or character on the left side is not equal to a string or char
 
 [!code-cpp[NVC_ATLMFC_Utilities#143](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_27.cpp)]
 
-##  <a name="operator_lt"></a>  CStringT::operator &lt;
+## <a name="operator_lt"></a>  CStringT::operator &lt;
 
 Determines whether the string on the left side of the operator is less than the string on the right side.
 
@@ -1215,7 +1215,7 @@ A lexicographical comparison between strings, character by character until:
 
 [!code-cpp[NVC_ATLMFC_Utilities#144](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_28.cpp)]
 
-##  <a name="operator_gt"></a>  CStringT::operator &gt;
+## <a name="operator_gt"></a>  CStringT::operator &gt;
 
 Determines whether the string on the left side of the operator is greater than the string on the right side.
 
@@ -1253,7 +1253,7 @@ A lexicographical comparison between strings, character by character until:
 
 [!code-cpp[NVC_ATLMFC_Utilities#145](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_29.cpp)]
 
-##  <a name="operator_lt_eq"></a>  CStringT::operator &lt;=
+## <a name="operator_lt_eq"></a>  CStringT::operator &lt;=
 
 Determines whether the string on the left side of the operator is less than or equal to the string on the right side.
 
@@ -1291,7 +1291,7 @@ A lexicographical comparison between strings, character by character until:
 
 [!code-cpp[NVC_ATLMFC_Utilities#146](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_30.cpp)]
 
-##  <a name="operator_gt_eq"></a>  CStringT::operator &gt;=
+## <a name="operator_gt_eq"></a>  CStringT::operator &gt;=
 
 Determines whether the string on the left side of the operator is greater than or equal to the string on the right side.
 
@@ -1329,7 +1329,7 @@ A lexicographical comparison between strings, character by character until:
 
 [!code-cpp[NVC_ATLMFC_Utilities#147](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_31.cpp)]
 
-##  <a name="remove"></a>  CStringT::Remove
+## <a name="remove"></a>  CStringT::Remove
 
 Removes all instances of the specified character from the string.
 
@@ -1354,7 +1354,7 @@ Comparisons for the character are case sensitive.
 
 [!code-cpp[NVC_ATLMFC_Utilities#129](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_32.cpp)]
 
-##  <a name="replace"></a>  CStringT::Replace
+## <a name="replace"></a>  CStringT::Replace
 
 There are two versions of `Replace`.The first version replaces one or more copies of a substring by using another substring. Both substrings are null-terminated. The second version replaces one or more copies of a character by using another character. Both versions operate on the character data stored in `CStringT`.
 
@@ -1402,7 +1402,7 @@ For `CString`, the character data type is selected at compile time, based on whe
 
 [!code-cpp[NVC_ATLMFC_Utilities#200](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_33.cpp)]
 
-##  <a name="reversefind"></a>  CStringT::ReverseFind
+## <a name="reversefind"></a>  CStringT::ReverseFind
 
 Searches this `CStringT` object for the last match of a character.
 
@@ -1427,7 +1427,7 @@ The function is similar to the run-time function `strrchr`.
 
 [!code-cpp[NVC_ATLMFC_Utilities#130](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_34.cpp)]
 
-##  <a name="right"></a>  CStringT::Right
+## <a name="right"></a>  CStringT::Right
 
 Extracts the last (that is, rightmost) *nCount* characters from this `CStringT` object and returns a copy of the extracted substring.
 
@@ -1454,7 +1454,7 @@ For multibyte character sets (MBCS), *nCount* refers to each 8-bit character; th
 
 [!code-cpp[NVC_ATLMFC_Utilities#131](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_35.cpp)]
 
-##  <a name="setsysstring"></a>  CStringT::SetSysString
+## <a name="setsysstring"></a>  CStringT::SetSysString
 
 Reallocates the BSTR pointed to by *pbstr* and copies the contents of the `CStringT` object into it, including the NULL character.
 
@@ -1481,7 +1481,7 @@ This function is normally used to change the value of strings passed by referenc
 
 [!code-cpp[NVC_ATLMFC_Utilities#132](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_36.cpp)]
 
-##  <a name="spanexcluding"></a>  CStringT::SpanExcluding
+## <a name="spanexcluding"></a>  CStringT::SpanExcluding
 
 Extracts characters from the string, starting with the first character, that are not in the set of characters identified by *pszCharSet*.
 
@@ -1506,7 +1506,7 @@ A substring that contains characters in the string that are not in *pszCharSet*,
 
 [!code-cpp[NVC_ATLMFC_Utilities#133](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_37.cpp)]
 
-##  <a name="spanincluding"></a>  CStringT::SpanIncluding
+## <a name="spanincluding"></a>  CStringT::SpanIncluding
 
 Extracts characters from the string, starting with the first character, that are in the set of characters identified by *pszCharSet*.
 
@@ -1531,7 +1531,7 @@ If the first character of the string is not in the character set, then `SpanIncl
 
 [!code-cpp[NVC_ATLMFC_Utilities#134](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_38.cpp)]
 
-##  <a name="tokenize"></a>  CStringT::Tokenize
+## <a name="tokenize"></a>  CStringT::Tokenize
 
 Finds the next token in a target string
 
@@ -1571,7 +1571,7 @@ Resulting Token: Second
 Resulting Token: Third
 ```
 
-##  <a name="trim"></a>  CStringT::Trim
+## <a name="trim"></a>  CStringT::Trim
 
 Trims leading and trailing characters from the string.
 
@@ -1616,7 +1616,7 @@ Before: "******Soccer is best, but liquor is quicker!!!!!"
 After : "Soccer is best, but liquor is quicker"
 ```
 
-##  <a name="trimleft"></a>  CStringT::TrimLeft
+## <a name="trimleft"></a>  CStringT::TrimLeft
 
 Trims leading characters from the string.
 
@@ -1652,7 +1652,7 @@ Removes all leading and trailing occurrences of one of the following:
 
 [!code-cpp[NVC_ATLMFC_Utilities#137](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_41.cpp)]
 
-##  <a name="trimright"></a>  CStringT::TrimRight
+## <a name="trimright"></a>  CStringT::TrimRight
 
 Trims trailing characters from the string.
 

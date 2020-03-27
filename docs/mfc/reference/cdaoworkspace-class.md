@@ -129,7 +129,7 @@ For information about calling DAO directly and about DAO security, see [Technica
 
 **Header:** afxdao.h
 
-##  <a name="append"></a>  CDaoWorkspace::Append
+## <a name="append"></a>  CDaoWorkspace::Append
 
 Call this member function after you call [Create](#create).
 
@@ -145,7 +145,7 @@ An appended workspace remains in the Workspaces collection, in an active, open s
 
 For related information, see the topic "Append Method" in DAO Help.
 
-##  <a name="begintrans"></a>  CDaoWorkspace::BeginTrans
+## <a name="begintrans"></a>  CDaoWorkspace::BeginTrans
 
 Call this member function to initiate a transaction.
 
@@ -165,7 +165,7 @@ Closing the workspace object or a database object while a transaction is pending
 
 If you need to isolate transactions on one ODBC data source from those on another ODBC data source, see the [SetIsolateODBCTrans](#setisolateodbctrans) member function.
 
-##  <a name="cdaoworkspace"></a>  CDaoWorkspace::CDaoWorkspace
+## <a name="cdaoworkspace"></a>  CDaoWorkspace::CDaoWorkspace
 
 Constructs a `CDaoWorkspace` object.
 
@@ -185,7 +185,7 @@ See the class overview for [CDaoWorkspace](../../mfc/reference/cdaoworkspace-cla
 
 To release a workspace and its contained objects, call the workspace object's [Close](#close) member function.
 
-##  <a name="close"></a>  CDaoWorkspace::Close
+## <a name="close"></a>  CDaoWorkspace::Close
 
 Call this member function to close the workspace object.
 
@@ -204,7 +204,7 @@ Workspace objects are not permanent; they only exist while references to them ex
 
 For related information, see the topic "Close Method" in DAO Help.
 
-##  <a name="committrans"></a>  CDaoWorkspace::CommitTrans
+## <a name="committrans"></a>  CDaoWorkspace::CommitTrans
 
 Call this member function to commit a transaction — save a group of edits and updates to one or more databases in the workspace.
 
@@ -224,7 +224,7 @@ When you close a database or workspace with pending transactions, the transactio
 > [!NOTE]
 >  This is not a two-phase commit mechanism. If one update fails to commit, others still will commit.
 
-##  <a name="compactdatabase"></a>  CDaoWorkspace::CompactDatabase
+## <a name="compactdatabase"></a>  CDaoWorkspace::CompactDatabase
 
 Call this member function to compact a specified Microsoft Jet (.MDB) database.
 
@@ -319,7 +319,7 @@ As you change data in a database, the database file can become fragmented and us
 
 For more information about compacting databases, see the topic "CompactDatabase Method" in DAO Help.
 
-##  <a name="create"></a>  CDaoWorkspace::Create
+## <a name="create"></a>  CDaoWorkspace::Create
 
 Call this member function to create a new DAO workspace object and associate it with the MFC `CDaoWorkspace` object.
 
@@ -353,7 +353,7 @@ The overall creation process is:
 
 After the `Create` call, the workspace object is in an open state, ready for use. You do not call `Open` after `Create`. You do not call `Create` if the workspace already exists in the Workspaces collection. `Create` initializes the database engine if it has not already been initialized for your application.
 
-##  <a name="getdatabasecount"></a>  CDaoWorkspace::GetDatabaseCount
+## <a name="getdatabasecount"></a>  CDaoWorkspace::GetDatabaseCount
 
 Call this member function to retrieve the number of DAO database objects in the workspace's Databases collection — the number of open databases in the workspace.
 
@@ -369,7 +369,7 @@ The number of open databases in the workspace.
 
 `GetDatabaseCount` is useful if you need to loop through all defined databases in the workspace's Databases collection. To obtain information about a given database in the collection, see [GetDatabaseInfo](#getdatabaseinfo). Typical usage is to call `GetDatabaseCount` for the number of open databases, then use that number as a loop index for repeated calls to `GetDatabaseInfo`.
 
-##  <a name="getdatabaseinfo"></a>  CDaoWorkspace::GetDatabaseInfo
+## <a name="getdatabaseinfo"></a>  CDaoWorkspace::GetDatabaseInfo
 
 Call this member function to obtain various kinds of information about a database open in the workspace.
 
@@ -411,7 +411,7 @@ One version of the function lets you look up a database by index. The other vers
 
 For a description of the information returned in *dbinfo*, see the [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for any prior levels as well.
 
-##  <a name="getinipath"></a>  CDaoWorkspace::GetIniPath
+## <a name="getinipath"></a>  CDaoWorkspace::GetIniPath
 
 Call this member function to obtain the location of the Microsoft Jet database engine's initialization settings in the Windows registry.
 
@@ -429,7 +429,7 @@ You can use the location to obtain information about settings for the database e
 
 For related information, see the topics "IniPath Property" and "Customizing Windows Registry Settings for Data Access" in DAO Help.
 
-##  <a name="getisolateodbctrans"></a>  CDaoWorkspace::GetIsolateODBCTrans
+## <a name="getisolateodbctrans"></a>  CDaoWorkspace::GetIsolateODBCTrans
 
 Call this member function to get the current value of the DAO IsolateODBCTrans property for the workspace.
 
@@ -449,7 +449,7 @@ Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous trans
 
 For related information, see the topic "IsolateODBCTrans Property" in DAO Help.
 
-##  <a name="getlogintimeout"></a>  CDaoWorkspace::GetLoginTimeout
+## <a name="getlogintimeout"></a>  CDaoWorkspace::GetLoginTimeout
 
 Call this member function to get the current value of the DAO LoginTimeout property for the workspace.
 
@@ -469,7 +469,7 @@ When you are attempting to log in to an ODBC database, such as Microsoft SQL Ser
 
 For related information, see the topic "LoginTimeout Property" in DAO Help.
 
-##  <a name="getname"></a>  CDaoWorkspace::GetName
+## <a name="getname"></a>  CDaoWorkspace::GetName
 
 Call this member function to get the user-defined name of the DAO workspace object underlying the `CDaoWorkspace` object.
 
@@ -487,7 +487,7 @@ The name is useful for accessing the DAO workspace object in the database engine
 
 For related information, see the topic "Name Property" in DAO Help.
 
-##  <a name="getusername"></a>  CDaoWorkspace::GetUserName
+## <a name="getusername"></a>  CDaoWorkspace::GetUserName
 
 Call this member function to obtain the name of the owner of the workspace.
 
@@ -505,7 +505,7 @@ To get or set the permissions for the workspace owner, call DAO directly to chec
 
 For information about calling DAO directly, see [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md). For related information, see the topic "UserName Property" in DAO Help.
 
-##  <a name="getversion"></a>  CDaoWorkspace::GetVersion
+## <a name="getversion"></a>  CDaoWorkspace::GetVersion
 
 Call this member function to determine the version of the Microsoft Jet database engine in use.
 
@@ -523,7 +523,7 @@ The value returned represents the version number in the form "major.minor"; for 
 
 For related information, see the topic "Version Property" in DAO Help.
 
-##  <a name="getworkspacecount"></a>  CDaoWorkspace::GetWorkspaceCount
+## <a name="getworkspacecount"></a>  CDaoWorkspace::GetWorkspaceCount
 
 Call this member function to retrieve the number of DAO workspace objects in the database engine's Workspaces collection.
 
@@ -539,7 +539,7 @@ The number of open workspaces in the Workspaces collection.
 
 This count does not include any open workspaces not appended to the collection. `GetWorkspaceCount` is useful if you need to loop through all defined workspaces in the Workspaces collection. To obtain information about a given workspace in the collection, see [GetWorkspaceInfo](#getworkspaceinfo). Typical usage is to call `GetWorkspaceCount` for the number of open workspaces, then use that number as a loop index for repeated calls to `GetWorkspaceInfo`.
 
-##  <a name="getworkspaceinfo"></a>  CDaoWorkspace::GetWorkspaceInfo
+## <a name="getworkspaceinfo"></a>  CDaoWorkspace::GetWorkspaceInfo
 
 Call this member function to obtain various kinds of information about a workspace open in the session.
 
@@ -579,7 +579,7 @@ The name of the workspace object, for lookup by name. The name is a string with 
 
 For a description of the information returned in *wkspcinfo*, see the [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for prior levels as well.
 
-##  <a name="idle"></a>  CDaoWorkspace::Idle
+## <a name="idle"></a>  CDaoWorkspace::Idle
 
 Call `Idle` to provide the database engine with the opportunity to perform background tasks that may not be up-to-date because of intense data processing.
 
@@ -605,7 +605,7 @@ This member function is not needed in single-user environments unless multiple i
 
 For related information, see the topic "Idle Method" in DAO Help.
 
-##  <a name="isopen"></a>  CDaoWorkspace::IsOpen
+## <a name="isopen"></a>  CDaoWorkspace::IsOpen
 
 Call this member function to determine whether the `CDaoWorkspace` object is open — that is, whether the MFC object has been initialized by a call to [Open](#open) or a call to [Create](#create).
 
@@ -621,7 +621,7 @@ Nonzero if the workspace object is open; otherwise 0.
 
 You can call any of the member functions of a workspace that is in an open state.
 
-##  <a name="m_pdaoworkspace"></a>  CDaoWorkspace::m_pDAOWorkspace
+## <a name="m_pdaoworkspace"></a>  CDaoWorkspace::m_pDAOWorkspace
 
 A pointer to the underlying DAO workspace object.
 
@@ -631,7 +631,7 @@ Use this data member if you need direct access to the underlying DAO object. You
 
 For information about accessing DAO objects directly, see [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
 
-##  <a name="open"></a>  CDaoWorkspace::Open
+## <a name="open"></a>  CDaoWorkspace::Open
 
 Explicitly opens a workspace object associated with DAO's default workspace.
 
@@ -662,7 +662,7 @@ Although many `CDaoWorkspace` member functions can only be called after the work
 |[GetIniPath](#getinipath)|[Idle](#idle)|[SetIniPath](#setinipath)|
 |[GetLoginTimeout](#getlogintimeout)|[SetDefaultPassword](#setdefaultpassword)|[SetLoginTimeout](#setlogintimeout)|
 
-##  <a name="repairdatabase"></a>  CDaoWorkspace::RepairDatabase
+## <a name="repairdatabase"></a>  CDaoWorkspace::RepairDatabase
 
 Call this member function if you need to attempt to repair a corrupted database that accesses the Microsoft Jet database engine.
 
@@ -686,7 +686,7 @@ This member function attempts to repair a database that was marked as possibly c
 
 For more information about repairing databases, see the topic "RepairDatabase Method" in DAO Help.
 
-##  <a name="rollback"></a>  CDaoWorkspace::Rollback
+## <a name="rollback"></a>  CDaoWorkspace::Rollback
 
 Call this member function to end the current transaction and restore all databases in the workspace to their condition before the transaction was begun.
 
@@ -704,7 +704,7 @@ If you close a workspace object without saving or rolling back any pending trans
 > [!NOTE]
 >  When you begin a transaction, the database engine records its operations in a file kept in the directory specified by the TEMP environment variable on the workstation. If the transaction log file exhausts the available storage on your TEMP drive, the database engine will cause MFC to throw a `CDaoException` (DAO error 2004). At this point, if you call `CommitTrans`, an indeterminate number of operations are committed but the remaining uncompleted operations are lost, and the operation has to be restarted. Calling `Rollback` releases the transaction log and rolls back all operations in the transaction.
 
-##  <a name="setdefaultpassword"></a>  CDaoWorkspace::SetDefaultPassword
+## <a name="setdefaultpassword"></a>  CDaoWorkspace::SetDefaultPassword
 
 Call this member function to set the default password that the database engine uses when a workspace object is created without a specific password.
 
@@ -733,7 +733,7 @@ By default, the DefaultUser property is set to "admin" and the DefaultPassword p
 
 For more about security, see the topic "Permissions Property" in DAO Help. For related information, see the topics "DefaultPassword Property" and "DefaultUser Property" in DAO Help.
 
-##  <a name="setdefaultuser"></a>  CDaoWorkspace::SetDefaultUser
+## <a name="setdefaultuser"></a>  CDaoWorkspace::SetDefaultUser
 
 Call this member function to set the default user name that the database engine uses when a workspace object is created without a specific user name.
 
@@ -762,7 +762,7 @@ By default, the DefaultUser property is set to "admin" and the DefaultPassword p
 
 For related information, see the topics "DefaultUser Property" and "DefaultPassword Property" in DAO Help.
 
-##  <a name="setinipath"></a>  CDaoWorkspace::SetIniPath
+## <a name="setinipath"></a>  CDaoWorkspace::SetIniPath
 
 Call this member function to specify the location of Windows registry settings for the Microsoft Jet database engine.
 
@@ -784,7 +784,7 @@ Call `SetIniPath` only if you need to specify special settings. For more informa
 
 You can use this mechanism to configure the database engine with user-provided registry settings. The scope of this attribute is limited to your application and cannot be changed without restarting your application.
 
-##  <a name="setisolateodbctrans"></a>  CDaoWorkspace::SetIsolateODBCTrans
+## <a name="setisolateodbctrans"></a>  CDaoWorkspace::SetIsolateODBCTrans
 
 Call this member function to set the value of the DAO IsolateODBCTrans property for the workspace.
 
@@ -803,7 +803,7 @@ In some situations, you might need to have multiple simultaneous transactions pe
 
 Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to TRUE on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.
 
-##  <a name="setlogintimeout"></a>  CDaoWorkspace::SetLoginTimeout
+## <a name="setlogintimeout"></a>  CDaoWorkspace::SetLoginTimeout
 
 Call this member function to set the value of the DAO LoginTimeout property for the workspace.
 

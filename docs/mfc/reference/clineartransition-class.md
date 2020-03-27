@@ -52,7 +52,7 @@ During a linear transition, the value of the animation variable transitions line
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="clineartransition"></a>  CLinearTransition::CLinearTransition
+## <a name="clineartransition"></a>  CLinearTransition::CLinearTransition
 
 Constructs a linear transition object and initializes it with duration and final value.
 
@@ -70,7 +70,7 @@ The duration of the transition.
 *dblFinalValue*<br/>
 The value of the animation variable at the end of the transition.
 
-##  <a name="create"></a>  CLinearTransition::Create
+## <a name="create"></a>  CLinearTransition::Create
 
 Calls the transition library to create encapsulated transition COM object.
 
@@ -89,7 +89,7 @@ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/win32/api/uia
 
 TRUE if transition is created successfully; otherwise FALSE.
 
-##  <a name="m_dblfinalvalue"></a>  CLinearTransition::m_dblFinalValue
+## <a name="m_dblfinalvalue"></a>  CLinearTransition::m_dblFinalValue
 
 The value of the animation variable at the end of the transition.
 
@@ -97,7 +97,7 @@ The value of the animation variable at the end of the transition.
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_duration"></a>  CLinearTransition::m_duration
+## <a name="m_duration"></a>  CLinearTransition::m_duration
 
 The duration of the transition.
 

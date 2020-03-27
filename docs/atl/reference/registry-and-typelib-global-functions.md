@@ -152,7 +152,7 @@ Specifies the file extension registered with this handler.
 
 **Header:** afxdisp.h
 
-##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib
+## <a name="atlregistertypelib"></a>  AtlRegisterTypeLib
 
 This function is called to register a type library.
 
@@ -298,7 +298,7 @@ The redirection is not global. Only the MFC and ATL frameworks are affected by t
 
 **Header:** atlbase.h
 
-##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib
+## <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib
 
 This function is called to unregister a type library.
 
@@ -330,7 +330,7 @@ This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl
 
 **Header:** atlbase.h
 
-##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib
+## <a name="atlloadtypelib"></a>  AtlLoadTypeLib
 
 This function is called to load a type library.
 
@@ -366,7 +366,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This helper function is utilized by [AtlRegisterTypeLib](#atlregistertypelib) and [AtlUnRegisterTypeLib](#atlunregistertypelib).
 
-##  <a name="atlupdateregistryfromresourced"></a>  AtlUpdateRegistryFromResourceD
+## <a name="atlupdateregistryfromresourced"></a>  AtlUpdateRegistryFromResourceD
 
 This function was deprecated in Visual Studio 2013 and is removed in Visual Studio 2015.
 
@@ -374,7 +374,7 @@ This function was deprecated in Visual Studio 2013 and is removed in Visual Stud
 <removed>
 ```
 
-##  <a name="registrydataexchange"></a>  RegistryDataExchange
+## <a name="registrydataexchange"></a>  RegistryDataExchange
 
 This function is called to read from, or write to, the system registry.
 

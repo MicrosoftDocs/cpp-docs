@@ -75,7 +75,7 @@ However, if you do need to provide a custom enumerator (for example, one that ex
 
 **Header:** atlcom.h
 
-##  <a name="init"></a>  IEnumOnSTLImpl::Init
+## <a name="init"></a>  IEnumOnSTLImpl::Init
 
 Initializes the enumerator.
 
@@ -103,7 +103,7 @@ If you pass `Init` a reference to a collection held in another object, you can u
 
 You must call this method before passing a pointer to the enumerator interface back to any clients.
 
-##  <a name="clone"></a>  IEnumOnSTLImpl::Clone
+## <a name="clone"></a>  IEnumOnSTLImpl::Clone
 
 This method provides the implementation of the **Clone** method by creating an object of type `CComEnumOnSTL`, initializing it with the same collection and iterator used by the current object, and returning the interface on the newly created object.
 
@@ -120,7 +120,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 
 A standard HRESULT value.
 
-##  <a name="m_spunk"></a>  IEnumOnSTLImpl::m_spUnk
+## <a name="m_spunk"></a>  IEnumOnSTLImpl::m_spUnk
 
 The `IUnknown` pointer of the object supplying the collection.
 
@@ -132,7 +132,7 @@ CComPtr<IUnknown> m_spUnk;
 
 This smart pointer maintains a reference on the object passed to [IEnumOnSTLImpl::Init](#init), ensuring that it remains alive during the lifetime of the enumerator.
 
-##  <a name="m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection
+## <a name="m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection
 
 This member points to the collection that provides the data driving the implementation of the enumerator interface.
 
@@ -144,7 +144,7 @@ CollType* m_pcollection;
 
 This member is initialized by a call to [IEnumOnSTLImpl::Init](#init).
 
-##  <a name="m_iter"></a>  IEnumOnSTLImpl::m_iter
+## <a name="m_iter"></a>  IEnumOnSTLImpl::m_iter
 
 This member holds the iterator used to mark the current position within the collection and navigate to subsequent elements.
 
@@ -152,7 +152,7 @@ This member holds the iterator used to mark the current position within the coll
 CollType::iterator m_iter;
 ```
 
-##  <a name="next"></a>  IEnumOnSTLImpl::Next
+## <a name="next"></a>  IEnumOnSTLImpl::Next
 
 This method provides the implementation of the **Next** method.
 
@@ -178,7 +178,7 @@ STDMETHOD(Next)(
 
 A standard HRESULT value.
 
-##  <a name="reset"></a>  IEnumOnSTLImpl::Reset
+## <a name="reset"></a>  IEnumOnSTLImpl::Reset
 
 This method provides the implementation of the **Reset** method.
 
@@ -190,7 +190,7 @@ STDMETHOD(Reset)(void);
 
 A standard HRESULT value.
 
-##  <a name="skip"></a>  IEnumOnSTLImpl::Skip
+## <a name="skip"></a>  IEnumOnSTLImpl::Skip
 
 This method provides the implementation of the **Skip** method.
 

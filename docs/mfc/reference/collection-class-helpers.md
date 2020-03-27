@@ -20,7 +20,7 @@ The Microsoft Foundation Class Library provides the following global functions i
 |[HashKey](#hashkey)|Calculates a hash key.|
 |[SerializeElements](#serializeelements)|Stores or retrieves elements to or from an archive.|
 
-##  <a name="compareelements"></a>  CompareElements
+## <a name="compareelements"></a>  CompareElements
 
 Called directly by [CList::Find](clist-class.md#not_found.md#clist__find and indirectly by [cmap__lookup](cmap-class.md#lookup) and [cmap__operator &#91;&#93;](cmap-class.md#operator_at).
 
@@ -62,7 +62,7 @@ The C++ language defines the comparison operator ( `==`) for simple types (**cha
 
    **Header:** afxtempl.h
 
-##  <a name="copyelements"></a>  CopyElements
+## <a name="copyelements"></a>  CopyElements
 
 This function is called directly by [CArray::Append](carray-class.md#append) and [CArray::Copy](carray-class.md#copy).
 
@@ -98,7 +98,7 @@ For information on implementing this and other helper functions, see the article
 
   **Header** afxtempl.h
 
-##  <a name="dumpelements"></a>  DumpElements
+## <a name="dumpelements"></a>  DumpElements
 
 Provides stream-oriented diagnostic output in text form for the elements of your collection when overridden.
 
@@ -134,7 +134,7 @@ The default implementation does nothing. If the elements of your collection are 
 
   **Header** afxtempl.h
 
-##  <a name="hashkey"></a>  HashKey
+## <a name="hashkey"></a>  HashKey
 
 Calculates a hash value for the given key.
 
@@ -176,7 +176,7 @@ template <> UINT AFXAPI HashKey(unsigned __int64 key)
 
   **Header** afxtempl.h
 
-##  <a name="serializeelements"></a>  SerializeElements
+## <a name="serializeelements"></a>  SerializeElements
 
 [CArray](carray-class.md), [CList](clist-class.md), and [CMap](cmap-class.md) call this function to serialize elements.
 

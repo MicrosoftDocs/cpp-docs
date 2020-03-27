@@ -49,7 +49,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="cautoptrlist"></a>  CAutoPtrList::CAutoPtrList
+## <a name="cautoptrlist"></a>  CAutoPtrList::CAutoPtrList
 
 The constructor.
 

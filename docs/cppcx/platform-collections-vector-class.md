@@ -220,7 +220,7 @@ The *index* parameter is 0 if either the item is the first element of the Vector
 
 IndexOf uses std::find_if to find the item. Custom element types should therefore overload the == and != operator in order to enable the equality comparisons that find_if requires.
 
-##  <a name="insertat"></a>  Vector::InsertAt Method
+## <a name="insertat"></a>  Vector::InsertAt Method
 
 Inserts the specified item into the current Vector at the element identified by the specified index.
 

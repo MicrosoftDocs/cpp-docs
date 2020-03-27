@@ -17,7 +17,7 @@ Recordsets manage binding table columns that you specify at design time, but the
 > [!NOTE]
 >  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. The techniques described generally are not recommended if you are using bulk row fetching. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="_core_when_you_might_bind_columns_dynamically"></a> When You Might Bind Columns Dynamically
+## <a name="_core_when_you_might_bind_columns_dynamically"></a> When You Might Bind Columns Dynamically
 
 > [!NOTE]
 > The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
@@ -36,13 +36,13 @@ Your recordset still contains data members for the columns you knew about at des
 
 This topic does not cover other dynamic binding cases, such as dropped tables or columns. For those cases, you need to use ODBC API calls more directly. For information, see the ODBC SDK *Programmer's Reference* on the MSDN Library CD.
 
-##  <a name="_core_how_to_bind_columns_dynamically"></a> How to Bind Columns Dynamically
+## <a name="_core_how_to_bind_columns_dynamically"></a> How to Bind Columns Dynamically
 
 To bind columns dynamically, you must know (or be able to determine) the names of the additional columns. You must also allocate storage for the additional field data members, specify their names and their types, and specify the number of columns you are adding.
 
 The following discussion mentions two different recordsets. The first is the main recordset that selects records from the target table. The second is a special column recordset used to get information about the columns in your target table.
 
-###  <a name="_core_the_general_process"></a> General Process
+### <a name="_core_the_general_process"></a> General Process
 
 At the most general level, you follow these steps:
 
@@ -58,7 +58,7 @@ At the most general level, you follow these steps:
 
    The recordset selects records and uses record field exchange (RFX) to bind both the static columns (those mapped to recordset field data members) and the dynamic columns (mapped to extra storage that you allocate).
 
-###  <a name="_core_adding_the_columns"></a> Adding the Columns
+### <a name="_core_adding_the_columns"></a> Adding the Columns
 
 Dynamically binding added columns at run time requires the following steps:
 
@@ -77,7 +77,7 @@ Dynamically binding added columns at run time requires the following steps:
 
    One approach is to add a loop to your main recordset's `DoFieldExchange` function that loops through your list of new columns, calling the appropriate RFX function for each column in the list. On each RFX call, pass a column name from the column name list and a storage location in the corresponding member of the result value list.
 
-###  <a name="_core_lists_of_columns"></a> Lists of Columns
+### <a name="_core_lists_of_columns"></a> Lists of Columns
 
 The four lists you need to work with are shown in the following table.
 
@@ -88,7 +88,7 @@ The four lists you need to work with are shown in the following table.
 |**Columns-To-Bind-Dynamically**| (List 3 in the illustration) A list of columns in the table but not in your recordset. These are the columns you want to bind dynamically.|
 |**Dynamic-Column-Values**| (List 4 in the illustration) A list containing storage for the values retrieved from the columns you bind dynamically. Elements of this list correspond to those in Columns-to-Bind-Dynamically, one to one.|
 
-###  <a name="_core_building_your_lists"></a> Building Your Lists
+### <a name="_core_building_your_lists"></a> Building Your Lists
 
 With a general strategy in mind, you can turn to the details. The procedures in the rest of this topic show you how to build the lists shown in [Lists of Columns](#_core_lists_of_columns). The procedures guide you through:
 
@@ -98,7 +98,7 @@ With a general strategy in mind, you can turn to the details. The procedures in 
 
 - [Dynamically adding RFX calls for new columns](#_core_adding_rfx_calls_to_bind_the_columns).
 
-###  <a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a> Determining Which Table Columns Are Not in Your Recordset
+### <a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a> Determining Which Table Columns Are Not in Your Recordset
 
 Build a list (Bound-Recordset-Columns, as in List 2 in the illustration) that contains a list of the columns already bound in your main recordset. Then build a list (Columns-to-Bind-Dynamically, derived from Current-Table-Columns and Bound-Recordset-Columns) that contains column names that are in the table on the data source but not in your main recordset.
 
@@ -120,7 +120,7 @@ Build a list (Bound-Recordset-Columns, as in List 2 in the illustration) that co
 
    The elements of this list play the role of new recordset field data members. They are the storage locations to which the dynamic columns are bound. For descriptions of the lists, see [Lists of Columns](#_core_lists_of_columns).
 
-###  <a name="_core_providing_storage_for_the_new_columns"></a> Providing Storage for the New Columns
+### <a name="_core_providing_storage_for_the_new_columns"></a> Providing Storage for the New Columns
 
 Next, set up storage locations for the columns to be bound dynamically. The idea is to provide a list element in which to store each column's value. These storage locations parallel the recordset member variables, which store the normally bound columns.
 
@@ -137,7 +137,7 @@ The result of the preceding procedures is two main lists: Columns-to-Bind-Dynami
 > [!TIP]
 > If the new columns are not all of the same data type, you might want an extra parallel list containing items that somehow define the type of each corresponding element in the column list. (You can use the values AFX_RFX_BOOL, AFX_RFX_BYTE, and so on, for this if you want. These constants are defined in AFXDB.H.) Choose a list type based on how you represent the column data types.
 
-###  <a name="_core_adding_rfx_calls_to_bind_the_columns"></a> Adding RFX Calls to Bind the Columns
+### <a name="_core_adding_rfx_calls_to_bind_the_columns"></a> Adding RFX Calls to Bind the Columns
 
 Finally, arrange for the dynamic binding to occur by placing RFX calls for the new columns in your `DoFieldExchange` function.
 

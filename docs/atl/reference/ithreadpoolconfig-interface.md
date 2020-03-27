@@ -38,7 +38,7 @@ This interface is implemented by [CThreadPool](../../atl/reference/cthreadpool-c
 
 **Header:** atlutil.h
 
-##  <a name="getsize"></a>  IThreadPoolConfig::GetSize
+## <a name="getsize"></a>  IThreadPoolConfig::GetSize
 
 Call this method to get the number of threads in the pool.
 
@@ -59,7 +59,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 [!code-cpp[NVC_ATL_Utilities#134](../../atl/codesnippet/cpp/ithreadpoolconfig-interface_1.cpp)]
 
-##  <a name="gettimeout"></a>  IThreadPoolConfig::GetTimeout
+## <a name="gettimeout"></a>  IThreadPoolConfig::GetTimeout
 
 Call this method to get the maximum time in milliseconds that the thread pool will wait for a thread to shut down.
 
@@ -80,7 +80,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 See [IThreadPoolConfig::GetSize](#getsize).
 
-##  <a name="setsize"></a>  IThreadPoolConfig::SetSize
+## <a name="setsize"></a>  IThreadPoolConfig::SetSize
 
 Call this method to set the number of threads in the pool.
 
@@ -105,7 +105,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 See [IThreadPoolConfig::GetSize](#getsize).
 
-##  <a name="settimeout"></a>  IThreadPoolConfig::SetTimeout
+## <a name="settimeout"></a>  IThreadPoolConfig::SetTimeout
 
 Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.
 

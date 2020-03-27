@@ -115,7 +115,7 @@ void AfxDebugBreak( );
 
 **Header:** afxver_.h
 
-##  <a name="assert"></a>  ASSERT
+## <a name="assert"></a>  ASSERT
 
 Evaluates its argument.
 
@@ -151,7 +151,7 @@ In the Release version of MFC, ASSERT does not evaluate the expression and thus 
 
 **Header:** afx.h
 
-##  <a name="assert_kindof"></a>  ASSERT_KINDOF
+## <a name="assert_kindof"></a>  ASSERT_KINDOF
 
 This macro asserts that the object pointed to is an object of the specified class, or is an object of a class derived from the specified class.
 
@@ -186,7 +186,7 @@ This function works only for classes declared with the [DECLARE_DYNAMIC](run-tim
 
 **Header:** afx.h
 
-##  <a name="assert_valid"></a>  ASSERT_VALID
+## <a name="assert_valid"></a>  ASSERT_VALID
 
 Use to test your assumptions about the validity of an object's internal state.
 
@@ -218,7 +218,7 @@ For more information and examples, see [Debugging MFC Applications](/visualstudi
 
 **Header:** afx.h
 
-##  <a name="debug_new"></a>  DEBUG_NEW
+## <a name="debug_new"></a>  DEBUG_NEW
 
 Assists in finding memory leaks.
 
@@ -245,7 +245,7 @@ Once you insert this directive, the preprocessor will insert DEBUG_NEW wherever 
 
 **Header:** afx.h
 
-##  <a name="debug_only"></a>  DEBUG_ONLY
+## <a name="debug_only"></a>  DEBUG_ONLY
 
 In debug mode (when the **_DEBUG** symbol is defined), DEBUG_ONLY evaluates its argument.
 
@@ -329,7 +329,7 @@ static char THIS_FILE[] = __FILE__;
 
 **Header:** afx.h
 
-##  <a name="trace"></a>  TRACE
+## <a name="trace"></a>  TRACE
 
 Sends the specified string to the debugger of the current application.
 
@@ -350,7 +350,7 @@ For more information, see [Debugging MFC Applications](/visualstudio/debugger/mf
 
 **Header:** afx.h
 
-##  <a name="verify"></a>  VERIFY
+## <a name="verify"></a>  VERIFY
 
 In the Debug version of MFC, evaluates its argument.
 
@@ -383,7 +383,7 @@ In the Release version of MFC, VERIFY evaluates the expression but does not prin
 
 **Header:** afx.h
 
-##  <a name="cdumpcontext_in_mfc"></a>  afxDump (CDumpContext in MFC)
+## <a name="cdumpcontext_in_mfc"></a>  afxDump (CDumpContext in MFC)
 
 Provides basic object-dumping capability in your application.
 
@@ -432,7 +432,7 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 
 **Header:** afx.h
 
-##  <a name="afxmemdf"></a>  afxMemDF
+## <a name="afxmemdf"></a>  afxMemDF
 
 This variable is accessible from a debugger or your program and allows you to tune allocation diagnostics.
 
@@ -458,7 +458,7 @@ int  afxMemDF;
 
 **Header:** afx.h
 
-##  <a name="afxcheckerror"></a>  AfxCheckError
+## <a name="afxcheckerror"></a>  AfxCheckError
 
 This function tests the passed SCODE to see if it is an error.
 
@@ -485,7 +485,7 @@ This function can be used to check the return values of calls to OLE functions i
 
 **Header:** afx.h
 
-##  <a name="afxcheckmemory"></a>  AfxCheckMemory
+## <a name="afxcheckmemory"></a>  AfxCheckMemory
 
 This function validates the free memory pool and prints error messages as required.
 
@@ -522,7 +522,7 @@ This function works only in the Debug version of MFC.
 
 **Header:** afx.h
 
-##  <a name="afxdump"></a>  AfxDump (MFC)
+## <a name="afxdump"></a>  AfxDump (MFC)
 
 Call this function while in the debugger to dump the state of an object while debugging.
 
@@ -545,7 +545,7 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 
 **Header:** afx.h
 
-##  <a name="afxdumpstack"></a>  AfxDumpStack
+## <a name="afxdumpstack"></a>  AfxDumpStack
 
 This global function can be used to generate an image of the current stack.
 
@@ -621,7 +621,7 @@ To use this function successfully:
 
 **Header:** afx.h
 
-##  <a name="afxenablememoryleakdump"></a>  AfxEnableMemoryLeakDump
+## <a name="afxenablememoryleakdump"></a>  AfxEnableMemoryLeakDump
 
 Enables and disables the memory leak dump in the AFX_DEBUG_STATE destructor.
 
@@ -651,7 +651,7 @@ If your application loads another library before the MFC library, some memory al
 
 **Header:** afx.h
 
-##  <a name="afxenablememorytracking"></a>  AfxEnableMemoryTracking
+## <a name="afxenablememorytracking"></a>  AfxEnableMemoryTracking
 
 Diagnostic memory tracking is normally enabled in the Debug version of MFC.
 
@@ -685,7 +685,7 @@ For more information on `AfxEnableMemoryTracking`, see [Debugging MFC Applicatio
 
 **Header:** afx.h
 
-##  <a name="afxismemoryblock"></a>  AfxIsMemoryBlock
+## <a name="afxismemoryblock"></a>  AfxIsMemoryBlock
 
 Tests a memory address to make sure it represents a currently active memory block that was allocated by the diagnostic version of **new**.
 
@@ -723,7 +723,7 @@ It also checks the specified size against the original allocated size. If the fu
 
 **Header:** afx.h
 
-##  <a name="afxisvalidaddress"></a>  AfxIsValidAddress
+## <a name="afxisvalidaddress"></a>  AfxIsValidAddress
 
 Tests any memory address to ensure that it is contained entirely within the program's memory space.
 
@@ -763,7 +763,7 @@ The address is not restricted to blocks allocated by **new**.
 
 **Header:** afx.h
 
-##  <a name="afxisvalidstring"></a>  AfxIsValidString
+## <a name="afxisvalidstring"></a>  AfxIsValidString
 
 Use this function to determine whether a pointer to a string is valid.
 
@@ -795,7 +795,7 @@ In non-debug builds, nonzero if *lpsz* is not NULL; otherwise 0.
 
 **Header:** afx.h
 
-##  <a name="afxsetallochook"></a>  AfxSetAllocHook
+## <a name="afxsetallochook"></a>  AfxSetAllocHook
 
 Sets a hook that enables calling of the specified function before each memory block is allocated.
 
@@ -833,7 +833,7 @@ Note that the AFXAPI calling convention implies that the callee must remove the 
 
 **Header:** afx.h
 
-##  <a name="afxdoforallclasses"></a>  AfxDoForAllClasses
+## <a name="afxdoforallclasses"></a>  AfxDoForAllClasses
 
 Calls the specified iteration function for all serializable `CObject`-derived classes in the application's memory space.
 
@@ -869,7 +869,7 @@ Serializable `CObject`-derived classes are classes derived using the DECLARE_SER
 
 **Header:** afx.h
 
-##  <a name="afxdoforallobjects"></a>  AfxDoForAllObjects
+## <a name="afxdoforallobjects"></a>  AfxDoForAllObjects
 
 Executes the specified iteration function for all objects derived from `CObject` that have been allocated with **new**.
 

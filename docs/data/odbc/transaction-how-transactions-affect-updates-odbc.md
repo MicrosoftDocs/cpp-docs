@@ -13,7 +13,7 @@ Updates to the [data source](../../data/odbc/data-source-odbc.md) are managed du
 
 During transactions, `AddNew`, `Edit`, and `Delete` operations can be committed or rolled back. The effects of `CommitTrans` and `Rollback` might cause the current record to not be restored to the edit buffer. To make sure that the current record is properly restored, it is important to understand how the `CommitTrans` and `Rollback` member functions of `CDatabase` work with the update functions of `CRecordset`.
 
-##  <a name="_core_how_committrans_affects_updates"></a> How CommitTrans Affects Updates
+## <a name="_core_how_committrans_affects_updates"></a> How CommitTrans Affects Updates
 
 The following table explains the effects of `CommitTrans` on transactions.
 
@@ -27,7 +27,7 @@ The following table explains the effects of `CommitTrans` on transactions.
 |`Edit` (without `Update`), and then `CommitTrans`|Edits to the record are lost. Record remains unchanged on the data source.|
 |`Delete` then `CommitTrans`|Records deleted from data source.|
 
-##  <a name="_core_how_rollback_affects_updates"></a> How Rollback Affects Transactions
+## <a name="_core_how_rollback_affects_updates"></a> How Rollback Affects Transactions
 
 The following table explains the effects of `Rollback` on transactions.
 

@@ -63,7 +63,7 @@ For more information on using `CPalette`, see [Graphic Objects](../../mfc/graphi
 
 **Header:** afxwin.h
 
-##  <a name="animatepalette"></a>  CPalette::AnimatePalette
+## <a name="animatepalette"></a>  CPalette::AnimatePalette
 
 Replaces entries in the logical palette attached to the `CPalette` object.
 
@@ -91,7 +91,7 @@ When an application calls `AnimatePalette`, it does not have to update its clien
 
 The `AnimatePalette` function will only change entries with the PC_RESERVED flag set in the corresponding `palPaletteEntry` member of the [LOGPALETTE](/windows/win32/api/wingdi/ns-wingdi-logpalette) structure that is attached to the `CPalette` object. See LOGPALETTE in the Windows SDK for more information about this structure.
 
-##  <a name="cpalette"></a>  CPalette::CPalette
+## <a name="cpalette"></a>  CPalette::CPalette
 
 Constructs a `CPalette` object.
 
@@ -103,7 +103,7 @@ CPalette();
 
 The object has no attached palette until you call `CreatePalette` to attach one.
 
-##  <a name="createhalftonepalette"></a>  CPalette::CreateHalftonePalette
+## <a name="createhalftonepalette"></a>  CPalette::CreateHalftonePalette
 
 Creates a halftone palette for the device context.
 
@@ -126,7 +126,7 @@ An application should create a halftone palette when the stretching mode of a de
 
 See the Windows SDK for more information about `CreateHalftonePalette` and `StretchDIBits`.
 
-##  <a name="createpalette"></a>  CPalette::CreatePalette
+## <a name="createpalette"></a>  CPalette::CreatePalette
 
 Initializes a `CPalette` object by creating a Windows logical color palette and attaching it to the `CPalette` object.
 
@@ -147,7 +147,7 @@ Nonzero if successful; otherwise 0.
 
 See the Windows SDK for more information about the `LOGPALETTE` structure.
 
-##  <a name="fromhandle"></a>  CPalette::FromHandle
+## <a name="fromhandle"></a>  CPalette::FromHandle
 
 Returns a pointer to a `CPalette` object when given a handle to a Windows palette object.
 
@@ -168,7 +168,7 @@ A pointer to a `CPalette` object if successful; otherwise NULL.
 
 If a `CPalette` object is not already attached to the Windows palette, a temporary `CPalette` object is created and attached. This temporary `CPalette` object is valid only until the next time the application has idle time in its event loop, at which time all temporary graphic objects are deleted. In other words, the temporary object is valid only during the processing of one window message.
 
-##  <a name="getentrycount"></a>  CPalette::GetEntryCount
+## <a name="getentrycount"></a>  CPalette::GetEntryCount
 
 Call this member function to retrieve the number of entries in a given logical palette.
 
@@ -180,7 +180,7 @@ int GetEntryCount();
 
 Number of entries in a logical palette.
 
-##  <a name="getnearestpaletteindex"></a>  CPalette::GetNearestPaletteIndex
+## <a name="getnearestpaletteindex"></a>  CPalette::GetNearestPaletteIndex
 
 Returns the index of the entry in the logical palette that most closely matches the specified color value.
 
@@ -197,7 +197,7 @@ Specifies the color to be matched.
 
 The index of an entry in a logical palette. The entry contains the color that most nearly matches the specified color.
 
-##  <a name="getpaletteentries"></a>  CPalette::GetPaletteEntries
+## <a name="getpaletteentries"></a>  CPalette::GetPaletteEntries
 
 Retrieves a range of palette entries in a logical palette.
 
@@ -223,7 +223,7 @@ Points to an array of [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) dat
 
 The number of entries retrieved from the logical palette; 0 if the function failed.
 
-##  <a name="operator_hpalette"></a>  CPalette::operator HPALETTE
+## <a name="operator_hpalette"></a>  CPalette::operator HPALETTE
 
 Use this operator to get the attached Windows GDI handle of the `CPalette` object.
 
@@ -241,7 +241,7 @@ This operator is a casting operator, which supports direct use of an HPALETTE ob
 
 For more information about using graphic objects, see the article [Graphic Objects](/windows/win32/gdi/graphic-objects) in the Windows SDK.
 
-##  <a name="resizepalette"></a>  CPalette::ResizePalette
+## <a name="resizepalette"></a>  CPalette::ResizePalette
 
 Changes the size of the logical palette attached to the `CPalette` object to the number of entries specified by *nNumEntries*.
 
@@ -264,7 +264,7 @@ If an application calls `ResizePalette` to reduce the size of the palette, the e
 
 For more information on the Windows API `ResizePalette`, see [ResizePalette](/windows/win32/api/wingdi/nf-wingdi-resizepalette) in the Windows SDK.
 
-##  <a name="setpaletteentries"></a>  CPalette::SetPaletteEntries
+## <a name="setpaletteentries"></a>  CPalette::SetPaletteEntries
 
 Sets RGB color values and flags in a range of entries in a logical palette.
 

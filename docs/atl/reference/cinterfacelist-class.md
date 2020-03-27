@@ -50,7 +50,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="cinterfacelist"></a>  CInterfaceList::CInterfaceList
+## <a name="cinterfacelist"></a>  CInterfaceList::CInterfaceList
 
 The constructor for the interface list.
 

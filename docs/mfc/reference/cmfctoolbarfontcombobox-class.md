@@ -65,7 +65,7 @@ The font combo box button calls the Win32 function [EnumFontFamiliesEx](/windows
 
 **Header:** afxtoolbarfontcombobox.h
 
-##  <a name="cmfctoolbarfontcombobox"></a>  CMFCToolBarFontComboBox::CMFCToolBarFontComboBox
+## <a name="cmfctoolbarfontcombobox"></a>  CMFCToolBarFontComboBox::CMFCToolBarFontComboBox
 
 Constructs a [CMFCToolBarFontComboBox](../../mfc/reference/cmfctoolbarfontcombobox-class.md) object.
 
@@ -132,7 +132,7 @@ The following example demonstrates how to construct a `CMFCToolBarFontComboBox` 
 
 [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]
 
-##  <a name="getfontdesc"></a>  CMFCToolBarFontComboBox::GetFontDesc
+## <a name="getfontdesc"></a>  CMFCToolBarFontComboBox::GetFontDesc
 
 Returns a pointer to the `CMFCFontInfo` object for a specified index in the combo box.
 
@@ -149,7 +149,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 
 A pointer to a `CMFCFontInfo` object. If *iIndex* does not specify a valid item index, the return value is NULL.
 
-##  <a name="m_nfontheight"></a>  CMFCToolBarFontComboBox::m_nFontHeight
+## <a name="m_nfontheight"></a>  CMFCToolBarFontComboBox::m_nFontHeight
 
 Specifies the height, in pixels, of characters in the font combo box if the combo box has owner draw style.
 
@@ -161,7 +161,7 @@ static int m_nFontHeight
 
 If the `m_nFontHeight` variable is 0, the height is calculated automatically according to the default font of the combo box. The height includes both the ascent of characters above the baseline and the descent of characters underneath the baseline.
 
-##  <a name="setfont"></a>  CMFCToolBarFontComboBox::SetFont
+## <a name="setfont"></a>  CMFCToolBarFontComboBox::SetFont
 
 Selects the font in the font combo box according to the font name and character set that are specified in the parameters.
 

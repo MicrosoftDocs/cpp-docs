@@ -48,7 +48,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 **Header:** atlsecurity.h
 
-##  <a name="csecurityattributes"></a>  CSecurityAttributes::CSecurityAttributes
+## <a name="csecurityattributes"></a>  CSecurityAttributes::CSecurityAttributes
 
 The constructor.
 
@@ -65,7 +65,7 @@ Reference to a security descriptor.
 *bInheritsHandle*<br/>
 Specifies whether the returned handle is inherited when a new process is created. If this member is true, the new process inherits the handle.
 
-##  <a name="set"></a>  CSecurityAttributes::Set
+## <a name="set"></a>  CSecurityAttributes::Set
 
 Call this method to set the attributes of the `CSecurityAttributes` object.
 

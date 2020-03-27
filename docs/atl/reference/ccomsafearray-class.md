@@ -106,7 +106,7 @@ A `CComSafeArray` can contain the following subset of VARIANT data types:
 
 [!code-cpp[NVC_ATL_Utilities#75](../../atl/codesnippet/cpp/ccomsafearray-class_1.cpp)]
 
-##  <a name="add"></a>  CComSafeArray::Add
+## <a name="add"></a>  CComSafeArray::Add
 
 Adds one or more elements, or a `SAFEARRAY` structure, to a `CComSafeArray`.
 
@@ -143,7 +143,7 @@ The new objects are appended to the end of the existing `SAFEARRAY` object. Addi
 
 The *bCopy* flag is taken into account when elements of type BSTR or VARIANT are added to an array. The default value of TRUE ensures that a new copy is made of the data when the element is added to the array.
 
-##  <a name="attach"></a>  CComSafeArray::Attach
+## <a name="attach"></a>  CComSafeArray::Attach
 
 Attaches a `SAFEARRAY` structure to a `CComSafeArray` object.
 
@@ -164,7 +164,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Attaches a `SAFEARRAY` structure to a `CComSafeArray` object, making the existing `CComSafeArray` methods available.
 
-##  <a name="ccomsafearray"></a>  CComSafeArray::CComSafeArray
+## <a name="ccomsafearray"></a>  CComSafeArray::CComSafeArray
 
 The constructor.
 
@@ -205,7 +205,7 @@ A pointer to a `SAFEARRAY` structure. The constructor uses this address to make 
 
 Creates a `CComSafeArray` object.
 
-##  <a name="dtor"></a>  CComSafeArray::~CComSafeArray
+## <a name="dtor"></a>  CComSafeArray::~CComSafeArray
 
 The destructor.
 
@@ -217,7 +217,7 @@ The destructor.
 
 Frees all allocated resources.
 
-##  <a name="copyfrom"></a>  CComSafeArray::CopyFrom
+## <a name="copyfrom"></a>  CComSafeArray::CopyFrom
 
 Copies the contents of a `SAFEARRAY` structure into the `CComSafeArray` object.
 
@@ -238,7 +238,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method copies the contents of a `SAFEARRAY` into the current `CComSafeArray` object. The existing contents of the array are replaced.
 
-##  <a name="copyto"></a>  CComSafeArray::CopyTo
+## <a name="copyto"></a>  CComSafeArray::CopyTo
 
 Creates a copy of the `CComSafeArray` object.
 
@@ -259,7 +259,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method copies the contents of a `CComSafeArray` object into a `SAFEARRAY` structure.
 
-##  <a name="create"></a>  CComSafeArray::Create
+## <a name="create"></a>  CComSafeArray::Create
 
 Creates a `CComSafeArray`.
 
@@ -290,7 +290,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 A `CComSafeArray` object can be created from an existing `SAFEARRAYBOUND` structure and the number of dimensions, or by specifying the number of elements in the array and the lower bound. If the array is to be accessed from C++, the lower bound should be 0. Other languages may allow other values for the lower bound (for example, Visual Basic supports arrays with elements with a range such as -10 to 10).
 
-##  <a name="destroy"></a>  CComSafeArray::Destroy
+## <a name="destroy"></a>  CComSafeArray::Destroy
 
 Destroys a `CComSafeArray` object.
 
@@ -306,7 +306,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Destroys an existing `CComSafeArray` object and all of the data it contains.
 
-##  <a name="detach"></a>  CComSafeArray::Detach
+## <a name="detach"></a>  CComSafeArray::Detach
 
 Detaches a `SAFEARRAY` from a `CComSafeArray` object.
 
@@ -322,7 +322,7 @@ Returns a pointer to a `SAFEARRAY` object.
 
 This method detaches the `SAFEARRAY` object from the `CComSafeArray` object.
 
-##  <a name="getat"></a>  CComSafeArray::GetAt
+## <a name="getat"></a>  CComSafeArray::GetAt
 
 Retrieves a single element from a single-dimensional array.
 
@@ -339,7 +339,7 @@ The index number of the value in the array to return.
 
 Returns a reference to the required array element.
 
-##  <a name="getcount"></a>  CComSafeArray::GetCount
+## <a name="getcount"></a>  CComSafeArray::GetCount
 
 Returns the number of elements in the array.
 
@@ -360,7 +360,7 @@ Returns the number of elements in the array.
 
 When used with a multidimensional array, this method will return the number of elements in a specific dimension only.
 
-##  <a name="getdimensions"></a>  CComSafeArray::GetDimensions
+## <a name="getdimensions"></a>  CComSafeArray::GetDimensions
 
 Returns the number of dimensions in the array.
 
@@ -372,7 +372,7 @@ UINT GetDimensions() const;
 
 Returns the number of dimensions in the array.
 
-##  <a name="getlowerbound"></a>  CComSafeArray::GetLowerBound
+## <a name="getlowerbound"></a>  CComSafeArray::GetLowerBound
 
 Returns the lower bound for a given dimension of the array.
 
@@ -393,7 +393,7 @@ Returns the lower bound.
 
 If the lower bound is 0, this indicates a C-like array whose first element is element number 0. In the event of an error, for example, an invalid dimension argument, this method calls `AtlThrow` with an HRESULT describing the error.
 
-##  <a name="getsafearrayptr"></a>  CComSafeArray::GetSafeArrayPtr
+## <a name="getsafearrayptr"></a>  CComSafeArray::GetSafeArrayPtr
 
 Returns the address of the `m_psa` data member.
 
@@ -405,7 +405,7 @@ LPSAFEARRAY* GetSafeArrayPtr() throw();
 
 Returns a pointer to the [CComSafeArray::m_psa](#m_psa) data member.
 
-##  <a name="gettype"></a>  CComSafeArray::GetType
+## <a name="gettype"></a>  CComSafeArray::GetType
 
 Returns the type of data stored in the array.
 
@@ -435,7 +435,7 @@ Returns the type of data stored in the array, which could be any of the followin
 |VT_VARIANT|variant pointer|
 |VT_CY|Currency data type|
 
-##  <a name="getupperbound"></a>  CComSafeArray::GetUpperBound
+## <a name="getupperbound"></a>  CComSafeArray::GetUpperBound
 
 Returns the upper bound for any dimension of the array.
 
@@ -456,7 +456,7 @@ Returns the upper bound. This value is inclusive, the maximum valid index for th
 
 In the event of an error, for example, an invalid dimension argument, this method calls `AtlThrow` with an HRESULT describing the error.
 
-##  <a name="issizable"></a>  CComSafeArray::IsSizable
+## <a name="issizable"></a>  CComSafeArray::IsSizable
 
 Tests if a `CComSafeArray` object can be resized.
 
@@ -468,7 +468,7 @@ bool IsSizable() const;
 
 Returns TRUE if the `CComSafeArray` can be resized, FALSE if it cannot.
 
-##  <a name="m_psa"></a>  CComSafeArray::m_psa
+## <a name="m_psa"></a>  CComSafeArray::m_psa
 
 Holds the address of the `SAFEARRAY` structure accessed.
 
@@ -476,7 +476,7 @@ Holds the address of the `SAFEARRAY` structure accessed.
 LPSAFEARRAY m_psa;
 ```
 
-##  <a name="multidimgetat"></a>  CComSafeArray::MultiDimGetAt
+## <a name="multidimgetat"></a>  CComSafeArray::MultiDimGetAt
 
 Retrieves a single element from a multidimensional array.
 
@@ -496,7 +496,7 @@ A reference to the data returned.
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="multidimsetat"></a>  CComSafeArray::MultiDimSetAt
+## <a name="multidimsetat"></a>  CComSafeArray::MultiDimSetAt
 
 Sets the value of an element in a multidimensional array.
 
@@ -520,7 +520,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This is a multidimensional version of [CComSafeArray::SetAt](#setat).
 
-##  <a name="operator_at"></a>  CComSafeArray::operator \[\]
+## <a name="operator_at"></a>  CComSafeArray::operator \[\]
 
 Retrieves an element from the array.
 
@@ -542,7 +542,7 @@ Returns the appropriate array element.
 
 Performs a similar function to [CComSafeArray::GetAt](#getat), however this operator only works with single-dimensional arrays.
 
-##  <a name="operator_eq"></a>  CComSafeArray::operator =
+## <a name="operator_eq"></a>  CComSafeArray::operator =
 
 Assignment operator.
 
@@ -563,7 +563,7 @@ A pointer to a `SAFEARRAY` object.
 
 Returns the type of data stored in the array.
 
-##  <a name="operator_lpsafearray"></a>  CComSafeArray::operator LPSAFEARRAY
+## <a name="operator_lpsafearray"></a>  CComSafeArray::operator LPSAFEARRAY
 
 Casts a value to a `SAFEARRAY` pointer.
 
@@ -575,7 +575,7 @@ operator LPSAFEARRAY() const;
 
 Casts a value to a `SAFEARRAY` pointer.
 
-##  <a name="resize"></a>  CComSafeArray::Resize
+## <a name="resize"></a>  CComSafeArray::Resize
 
 Resizes a `CComSafeArray` object.
 
@@ -603,7 +603,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method only resizes the rightmost dimension. It will not resize arrays that return `IsResizable` as FALSE.
 
-##  <a name="setat"></a>  CComSafeArray::SetAt
+## <a name="setat"></a>  CComSafeArray::SetAt
 
 Sets the value of an element in a single-dimensional array.
 

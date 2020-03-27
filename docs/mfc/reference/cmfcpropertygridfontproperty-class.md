@@ -48,7 +48,7 @@ class CMFCPropertyGridFontProperty : public CMFCPropertyGridProperty
 
 **Header:** afxpropertygridctrl.h
 
-##  <a name="cmfcpropertygridfontproperty"></a>  CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty
+## <a name="cmfcpropertygridfontproperty"></a>  CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty
 
 Constructs a `CMFCPropertyGridFontProperty` object.
 
@@ -92,7 +92,7 @@ The following example demonstrates how construct an object of the `CMFCPropertyG
 
 [!code-cpp[NVC_MFC_NewControls#26](../../mfc/reference/codesnippet/cpp/cmfcpropertygridfontproperty-class_1.cpp)]
 
-##  <a name="getcolor"></a>  CMFCPropertyGridFontProperty::GetColor
+## <a name="getcolor"></a>  CMFCPropertyGridFontProperty::GetColor
 
 Retrieves the font color that the user selects from the font dialog box.
 
@@ -106,7 +106,7 @@ An RGB color value that represents the selected font color.
 
 ### Remarks
 
-##  <a name="getlogfont"></a>  CMFCPropertyGridFontProperty::GetLogFont
+## <a name="getlogfont"></a>  CMFCPropertyGridFontProperty::GetLogFont
 
 Retrieves the font that the user selects from the font dialog box.
 

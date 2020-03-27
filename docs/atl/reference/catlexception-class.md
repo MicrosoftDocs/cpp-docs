@@ -45,7 +45,7 @@ In general, you will call `AtlThrow` rather than creating a `CAtlException` obje
 
 **Header:** atlexcept.h
 
-##  <a name="catlexception"></a>  CAtlException::CAtlException
+## <a name="catlexception"></a>  CAtlException::CAtlException
 
 The constructor.
 
@@ -59,7 +59,7 @@ CAtlException() throw();
 *hr*<br/>
 The HRESULT error code.
 
-##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT
+## <a name="operator_hresult"></a>  CAtlException::operator HRESULT
 
 Casts the current object to an HRESULT value.
 
@@ -67,7 +67,7 @@ Casts the current object to an HRESULT value.
 operator HRESULT() const throw ();
 ```
 
-##  <a name="m_hr"></a>  CAtlException::m_hr
+## <a name="m_hr"></a>  CAtlException::m_hr
 
 The HRESULT data member.
 

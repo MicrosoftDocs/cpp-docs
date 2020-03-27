@@ -185,7 +185,7 @@ The six official Windows Interface Application Design Guide button styles are re
 
 - Indeterminate = TBBS_INDETERMINATE
 
-##  <a name="_mfcnotes_cdialogbar"></a> CDialogBar
+## <a name="_mfcnotes_cdialogbar"></a> CDialogBar
 
 A dialog bar is a control bar that contains standard Windows controls. It acts like a dialog in that it contains the controls and supports tabbing between them. It also acts like a dialog in that it uses a dialog template to represent the bar.
 

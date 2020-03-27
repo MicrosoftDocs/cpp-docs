@@ -49,7 +49,7 @@ For more information on how to use `CSemaphore` objects, see the article [Multit
 
 **Header:** afxmt.h
 
-##  <a name="csemaphore"></a>  CSemaphore::CSemaphore
+## <a name="csemaphore"></a>  CSemaphore::CSemaphore
 
 Constructs a named or unnamed `CSemaphore` object.
 

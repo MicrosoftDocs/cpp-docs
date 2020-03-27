@@ -59,7 +59,7 @@ Your MFC code should not cache Window handles (usually stored in `m_hWnd`). Some
 
 **Header:** afxwinforms.h
 
-##  <a name="createmanagedcontrol"></a>  CWinFormsControl::CreateManagedControl
+## <a name="createmanagedcontrol"></a>  CWinFormsControl::CreateManagedControl
 
 Creates a Windows Forms control in an MFC container.
 
@@ -130,7 +130,7 @@ The fourth overload of the method allows you to pass in an already instantiated 
 
 See [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md) for samples on using Windows Form controls.
 
-##  <a name="cwinformscontrol"></a>  CWinFormsControl::CWinFormsControl
+## <a name="cwinformscontrol"></a>  CWinFormsControl::CWinFormsControl
 
 Constructs an MFC Windows Forms control wrapper object.
 
@@ -142,7 +142,7 @@ CWinFormsControl();
 
 The Windows Forms control is instantiated when you call [CWinFormsControl::CreateManagedControl](#createmanagedcontrol).
 
-##  <a name="getcontrol"></a>  CWinFormsControl::GetControl
+## <a name="getcontrol"></a>  CWinFormsControl::GetControl
 
 Retrieves a pointer to the Windows Forms control.
 
@@ -158,7 +158,7 @@ Returns a pointer to the Windows Forms control.
 
   See [CWinFormsControl::CreateManagedControl](#createmanagedcontrol).
 
-##  <a name="getcontrolhandle"></a>  CWinFormsControl::GetControlHandle
+## <a name="getcontrolhandle"></a>  CWinFormsControl::GetControlHandle
 
 Retrieves a handle to the Windows Forms control.
 
@@ -174,7 +174,7 @@ Returns a handle to the Windows Forms control.
 
 `GetControlHandle` is a helper method that returns the window handle stored in the .NET Framework control properties. The window handle value is copied to [CWnd::m_hWnd](../../mfc/reference/cwnd-class.md#m_hwnd) during the call to [CWnd::Attach](../../mfc/reference/cwnd-class.md#attach).
 
-##  <a name="operator_-_gt"></a>  CWinFormsControl::operator -&gt;
+## <a name="operator_-_gt"></a>  CWinFormsControl::operator -&gt;
 
 Replaces [CWinFormsControl::GetControl](#getcontrol) in expressions.
 
@@ -188,7 +188,7 @@ This operator provides a convenient syntax that replaces `GetControl` in express
 
 For more information on Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-##  <a name="operator_tmanagedcontrol"></a>  CWinFormsControl::operator TManagedControl^
+## <a name="operator_tmanagedcontrol"></a>  CWinFormsControl::operator TManagedControl^
 
 Casts a type as a pointer to a Windows Forms control.
 

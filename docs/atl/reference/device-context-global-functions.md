@@ -12,7 +12,7 @@ This function creates a device context for a given device.
 |-|-|
 |[AtlCreateTargetDC](#atlcreatetargetdc)|Creates a device context.|
 
-##  <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC
+## <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC
 
 Creates a device context for the device specified in the [DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) structure.
 

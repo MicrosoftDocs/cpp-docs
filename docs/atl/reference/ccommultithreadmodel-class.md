@@ -49,7 +49,7 @@ S= `CComSingleThreadModel`; M= `CComMultiThreadModel`
 
 **Header:** atlbase.h
 
-##  <a name="autocriticalsection"></a>  CComMultiThreadModel::AutoCriticalSection
+## <a name="autocriticalsection"></a>  CComMultiThreadModel::AutoCriticalSection
 
 When using `CComMultiThreadModel`, the **typedef** name `AutoCriticalSection` references class [CComAutoCriticalSection](ccomautocriticalsection-class.md), which provides methods for obtaining and releasing ownership of a critical section object.
 
@@ -115,7 +115,7 @@ The following tables show the results of the `InternalAddRef` and `Lock` methods
 |`InternalAddRef`|The increment is not thread-safe.|The increment is thread-safe.|
 |`Lock`|Does nothing; there is no critical section to lock.|Does nothing; there is no critical section to lock.|
 
-##  <a name="criticalsection"></a>  CComMultiThreadModel::CriticalSection
+## <a name="criticalsection"></a>  CComMultiThreadModel::CriticalSection
 
 When using `CComMultiThreadModel`, the **typedef** name `CriticalSection` references class [CComCriticalSection](ccomcriticalsection-class.md), which provides methods for obtaining and releasing ownership of a critical section object.
 
@@ -139,7 +139,7 @@ In addition to `CriticalSection`, you can use the **typedef** name [AutoCritical
 
 See [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection).
 
-##  <a name="decrement"></a>  CComMultiThreadModel::Decrement
+## <a name="decrement"></a>  CComMultiThreadModel::Decrement
 
 This static function calls the Win32 function [InterlockedDecrement](/windows/win32/api/winnt/nf-winnt-interlockeddecrement), which decrements the value of the variable pointed to by *p*.
 
@@ -160,7 +160,7 @@ If the result of the decrement is 0, then `Decrement` returns 0. If the result o
 
 `InterlockedDecrement` prevents more than one thread from simultaneously using this variable.
 
-##  <a name="increment"></a>  CComMultiThreadModel::Increment
+## <a name="increment"></a>  CComMultiThreadModel::Increment
 
 This static function calls the Win32 function [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement), which increments the value of the variable pointed to by *p*.
 
@@ -181,7 +181,7 @@ If the result of the increment is 0, then `Increment` returns 0. If the result o
 
 `InterlockedIncrement` prevents more than one thread from simultaneously using this variable.
 
-##  <a name="threadmodelnocs"></a>  CComMultiThreadModel::ThreadModelNoCS
+## <a name="threadmodelnocs"></a>  CComMultiThreadModel::ThreadModelNoCS
 
 When using `CComMultiThreadModel`, the **typedef** name `ThreadModelNoCS` references class [CComMultiThreadModelNoCS](ccommultithreadmodelnocs-class.md).
 

@@ -34,7 +34,7 @@ For more information about OLE controls (now called ActiveX controls), see [Acti
 
 **Header:** afxdisp.h
 
-##  <a name="afxoleinit"></a>  AfxOleInit
+## <a name="afxoleinit"></a>  AfxOleInit
 
 Initializes OLE support for the application.
 

@@ -59,7 +59,7 @@ The following example demonstrates how to set the values of the various member v
 
 **Header:** afxtooltipctrl.h
 
-##  <a name="m_bballoontooltip"></a>  CMFCToolTipInfo::m_bBalloonTooltip
+## <a name="m_bballoontooltip"></a>  CMFCToolTipInfo::m_bBalloonTooltip
 
 Specifies the display style of all tooltips.
 
@@ -71,7 +71,7 @@ BOOL m_bBalloonTooltip;
 
 TRUE indicates that tooltips use the balloon style, FALSE indicates that tooltips use the rectangular style.
 
-##  <a name="m_bboldlabel"></a>  CMFCToolTipInfo::m_bBoldLabel
+## <a name="m_bboldlabel"></a>  CMFCToolTipInfo::m_bBoldLabel
 
 Specifies whether the font of the tooltip text is bold.
 
@@ -83,7 +83,7 @@ BOOL m_bBoldLabel;
 
 Set this member to TRUE to display tooltip text with bold font, or FALSE to display tooltip labels with non-bold font.
 
-##  <a name="m_bdrawdescription"></a>  CMFCToolTipInfo::m_bDrawDescription
+## <a name="m_bdrawdescription"></a>  CMFCToolTipInfo::m_bDrawDescription
 
 Specifies whether each tooltip displays description text.
 
@@ -95,7 +95,7 @@ BOOL m_bDrawDescription;
 
 Set this member to TRUE to display the description, or FALSE to hide the description. You can specify the description on a tooltip by calling [CMFCToolTipCtrl::SetDescription](../../mfc/reference/cmfctooltipctrl-class.md#setdescription)
 
-##  <a name="m_bdrawicon"></a>  CMFCToolTipInfo::m_bDrawIcon
+## <a name="m_bdrawicon"></a>  CMFCToolTipInfo::m_bDrawIcon
 
 Specifies whether all tooltips display icons.
 
@@ -107,7 +107,7 @@ BOOL m_bDrawIcon;
 
 Set this member to TRUE to display an icon on each tooltip, or FALSE to display tooltips without icons.
 
-##  <a name="m_bdrawseparator"></a>  CMFCToolTipInfo::m_bDrawSeparator
+## <a name="m_bdrawseparator"></a>  CMFCToolTipInfo::m_bDrawSeparator
 
 Specifies whether each tooltip has a separator between its label and its description.
 
@@ -119,7 +119,7 @@ BOOL m_bDrawSeparator;
 
 Set this member to TRUE to display separator between tooltip label and description, or FALSE to display tooltips with no separator.
 
-##  <a name="m_broundedcorners"></a>  CMFCToolTipInfo::m_bRoundedCorners
+## <a name="m_broundedcorners"></a>  CMFCToolTipInfo::m_bRoundedCorners
 
 Specifies whether all tooltips have rounded corners.
 
@@ -131,7 +131,7 @@ BOOL m_bRoundedCorners;
 
 Set this member to TRUE to display rounded corners on tooltips, or FALSE to display rectangular corners on tooltips.
 
-##  <a name="m_clrborder"></a>  CMFCToolTipInfo::m_clrBorder
+## <a name="m_clrborder"></a>  CMFCToolTipInfo::m_clrBorder
 
 Specifies the color of the borders on all tooltips.
 
@@ -139,7 +139,7 @@ Specifies the color of the borders on all tooltips.
 COLORREF m_clrBorder;
 ```
 
-##  <a name="m_clrfill"></a>  CMFCToolTipInfo::m_clrFill
+## <a name="m_clrfill"></a>  CMFCToolTipInfo::m_clrFill
 
 Specifies the color of tooltip backgrounds.
 
@@ -151,7 +151,7 @@ COLORREF m_clrFill;
 
 If [CMFCToolTipInfo::m_clrFillGradient](#m_clrfillgradient) is -1, the tooltip background color is `m_clrFill`. Otherwise, `m_clrFill` specifies the color of the beginning of the gradient and `m_clrFillGradient` specifies the color of the end of the gradient. [CMFCToolTipInfo::m_nGradientAngle](#m_ngradientangle) determines the direction of the gradient.
 
-##  <a name="m_clrfillgradient"></a>  CMFCToolTipInfo::m_clrFillGradient
+## <a name="m_clrfillgradient"></a>  CMFCToolTipInfo::m_clrFillGradient
 
 Specifies the end color for a gradient background for tooltips.
 
@@ -163,7 +163,7 @@ COLORREF m_clrFillGradient;
 
 If `m_clrFillGradient` is -1, there is no gradient. Otherwise, the gradient initial color is specified by [CMFCToolTipInfo::m_clrFill](#m_clrfill) and the gradient finish color is specified by `m_clrFillGradient`. [CMFCToolTipInfo::m_nGradientAngle](#m_ngradientangle) determines the direction of the gradient.
 
-##  <a name="m_clrtext"></a>  CMFCToolTipInfo::m_clrText
+## <a name="m_clrtext"></a>  CMFCToolTipInfo::m_clrText
 
 Specifies text color of all tooltips.
 
@@ -171,7 +171,7 @@ Specifies text color of all tooltips.
 COLORREF m_clrText;
 ```
 
-##  <a name="m_ngradientangle"></a>  CMFCToolTipInfo::m_nGradientAngle
+## <a name="m_ngradientangle"></a>  CMFCToolTipInfo::m_nGradientAngle
 
 Specifies the angle at which a gradient is drawn on the background of tooltips.
 
@@ -185,7 +185,7 @@ int m_nGradientAngle;
 
 [CMFCToolTipInfo::m_clrFill](#m_clrfill) `clrFill` specifies the color of the beginning of the gradient and [CMFCToolTipInfo::m_clrFillGradient](#m_clrfillgradient) `clrFillGradient` specifies the color of the end of the gradient. If `m_clrFillGradient` is -1, there is no gradient.
 
-##  <a name="m_nmaxdescrwidth"></a>  CMFCToolTipInfo::m_nMaxDescrWidth
+## <a name="m_nmaxdescrwidth"></a>  CMFCToolTipInfo::m_nMaxDescrWidth
 
 Specifies the maximum width of the description that it displayed in each tooltip. If the description width exceeds the specified value, the text is wrapped.
 
@@ -193,7 +193,7 @@ Specifies the maximum width of the description that it displayed in each tooltip
 int m_nMaxDescrWidth;
 ```
 
-##  <a name="m_bvislmanagertheme"></a>  CMFCToolTipInfo::m_bVislManagerTheme
+## <a name="m_bvislmanagertheme"></a>  CMFCToolTipInfo::m_bVislManagerTheme
 
 Specifies whether the visual manager of the application controls the appearance of all tooltips.
 
@@ -205,7 +205,7 @@ BOOL m_bVislManagerTheme;
 
 If `m_bVislManagerTheme` is TRUE, every tooltip requests a new [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) from the visual manager of the application before they appear on the screen, and uses the values in that object to determine their appearance. The other members of your [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) are ignored.
 
-##  <a name="operator_eq"></a>  CMFCToolTipInfo::operator=
+## <a name="operator_eq"></a>  CMFCToolTipInfo::operator=
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 

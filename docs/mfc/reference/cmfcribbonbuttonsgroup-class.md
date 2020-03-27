@@ -61,7 +61,7 @@ The following example demonstrates how to use various methods in the `CMFCRibbon
 
 **Header:** afxribbonbuttonsgroup.h
 
-##  <a name="addbutton"></a>  CMFCRibbonButtonsGroup::AddButton
+## <a name="addbutton"></a>  CMFCRibbonButtonsGroup::AddButton
 
 Adds a button to a group.
 
@@ -74,7 +74,7 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 *pButton*<br/>
 [in] A pointer to a button to add.
 
-##  <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons
+## <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons
 
 Adds a list of buttons to a group.
 
@@ -88,7 +88,7 @@ void AddButtons(
 *lstButtons*<br/>
 [in] A list of pointers to the buttons that you want to add.
 
-##  <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup
+## <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup
 
 Constructs a `CMFCRibbonButtonsGroup` object.
 
@@ -106,7 +106,7 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
 
 ### Remarks
 
-##  <a name="getbutton"></a>  CMFCRibbonButtonsGroup::GetButton
+## <a name="getbutton"></a>  CMFCRibbonButtonsGroup::GetButton
 
 Returns a pointer to the button that is located at a specified index.
 
@@ -125,7 +125,7 @@ A pointer to the button that is located at the specified index. NULL if the spec
 
 ### Remarks
 
-##  <a name="getcount"></a>  CMFCRibbonButtonsGroup::GetCount
+## <a name="getcount"></a>  CMFCRibbonButtonsGroup::GetCount
 
 Returns the number of buttons in the group.
 
@@ -137,7 +137,7 @@ int GetCount() const;
 
 The number of buttons in the group.
 
-##  <a name="getimagesize"></a>  CMFCRibbonButtonsGroup::GetImageSize
+## <a name="getimagesize"></a>  CMFCRibbonButtonsGroup::GetImageSize
 
 Retrieves the source image size of the protected `CMFCToolBarImages` member `m_Images`.
 
@@ -151,7 +151,7 @@ Returns the source image size of the toolbar images, if any are present, or a `C
 
 ### Remarks
 
-##  <a name="getregularsize"></a>  CMFCRibbonButtonsGroup::GetRegularSize
+## <a name="getregularsize"></a>  CMFCRibbonButtonsGroup::GetRegularSize
 
 Retrieves the maximum possible size of the ribbon group element.
 
@@ -168,7 +168,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### Remarks
 
-##  <a name="hasimages"></a>  CMFCRibbonButtonsGroup::HasImages
+## <a name="hasimages"></a>  CMFCRibbonButtonsGroup::HasImages
 
 Reports whether the `CMFCRibbonButtonsGroup` object contains toolbar images.
 
@@ -182,7 +182,7 @@ Returns TRUE if the protected `CMFCToolBarImages` member `m_Images` contains any
 
 ### Remarks
 
-##  <a name="ondrawimage"></a>  CMFCRibbonButtonsGroup::OnDrawImage
+## <a name="ondrawimage"></a>  CMFCRibbonButtonsGroup::OnDrawImage
 
 Draws the appropriate image for a specified button, depending on whether the button is normal, highlighted or disabled.
 
@@ -210,7 +210,7 @@ virtual void OnDrawImage(
 
 ### Remarks
 
-##  <a name="removeall"></a>  CMFCRibbonButtonsGroup::RemoveAll
+## <a name="removeall"></a>  CMFCRibbonButtonsGroup::RemoveAll
 
 Removes all buttons from the `CMFCRibbonButtonsGroup` object.
 
@@ -220,7 +220,7 @@ void RemoveAll();
 
 ### Remarks
 
-##  <a name="setimages"></a>  CMFCRibbonButtonsGroup::SetImages
+## <a name="setimages"></a>  CMFCRibbonButtonsGroup::SetImages
 
 Assigns images to the group of ribbon buttons.
 
@@ -249,7 +249,7 @@ Call `SetImages` before you add buttons to a group. The number of images must be
 > [!NOTE]
 >  Hot images are images that are displayed when the user hovers over the button. Disabled images are images that are displayed when the button is disabled.
 
-##  <a name="setparentcategory"></a>  CMFCRibbonButtonsGroup::SetParentCategory
+## <a name="setparentcategory"></a>  CMFCRibbonButtonsGroup::SetParentCategory
 
 Sets the parent `CMFCRibbonCategory` of the `CMFCRibbonButtonsGroup` object and all the buttons within it.
 

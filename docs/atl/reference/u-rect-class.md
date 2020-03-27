@@ -40,7 +40,7 @@ The class defines two constructor overloads: one accepts a **RECT&** argument an
 
 **Header:** atlwin.h
 
-##  <a name="_u_rect__m_lprect"></a>  _U_RECT::m_lpRect
+## <a name="_u_rect__m_lprect"></a>  _U_RECT::m_lpRect
 
 The class holds the value passed to either of its constructors as a public `LPRECT` data member.
 
@@ -48,7 +48,7 @@ The class holds the value passed to either of its constructors as a public `LPRE
 LPRECT m_lpRect;
 ```
 
-##  <a name="_u_rect___u_rect"></a>  _U_RECT::_U_RECT
+## <a name="_u_rect___u_rect"></a>  _U_RECT::_U_RECT
 
 The address of the reference argument is stored in the class's single data member, [m_lpRect](#_u_rect__m_lprect).
 

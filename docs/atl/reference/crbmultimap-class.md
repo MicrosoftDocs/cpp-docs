@@ -76,7 +76,7 @@ For a more complete discussion of the various collection classes and their featu
 
 **Header:** atlcoll.h
 
-##  <a name="crbmultimap"></a>  CRBMultiMap::CRBMultiMap
+## <a name="crbmultimap"></a>  CRBMultiMap::CRBMultiMap
 
 The constructor.
 
@@ -99,7 +99,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 [!code-cpp[NVC_ATL_Utilities#85](../../atl/codesnippet/cpp/crbmultimap-class_1.cpp)]
 
-##  <a name="dtor"></a>  CRBMultiMap::~CRBMultiMap
+## <a name="dtor"></a>  CRBMultiMap::~CRBMultiMap
 
 The destructor.
 
@@ -113,7 +113,7 @@ Frees any allocated resources.
 
 See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.
 
-##  <a name="findfirstwithkey"></a>  CRBMultiMap::FindFirstWithKey
+## <a name="findfirstwithkey"></a>  CRBMultiMap::FindFirstWithKey
 
 Call this method to find the position of the first element with a given key.
 
@@ -140,7 +140,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).
 
-##  <a name="getnextvaluewithkey"></a>  CRBMultiMap::GetNextValueWithKey
+## <a name="getnextvaluewithkey"></a>  CRBMultiMap::GetNextValueWithKey
 
 Call this method to get the value associated with a given key and update the position value.
 
@@ -175,7 +175,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).
 
-##  <a name="getnextwithkey"></a>  CRBMultiMap::GetNextWithKey
+## <a name="getnextwithkey"></a>  CRBMultiMap::GetNextWithKey
 
 Call this method to get the element associated with a given key and update the position value.
 
@@ -206,7 +206,7 @@ The position value is updated to point to the next value associated with the key
 
 See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.
 
-##  <a name="insert"></a>  CRBMultiMap::Insert
+## <a name="insert"></a>  CRBMultiMap::Insert
 
 Call this method to insert an element pair into the map.
 
@@ -234,7 +234,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).
 
-##  <a name="removekey"></a>  CRBMultiMap::RemoveKey
+## <a name="removekey"></a>  CRBMultiMap::RemoveKey
 
 Call this method to remove all of the key/value elements for a given key.
 

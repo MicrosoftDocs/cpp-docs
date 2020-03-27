@@ -65,7 +65,7 @@ For more information on using graphic objects like `CBitmap`, see [Graphic Objec
 
 **Header:** afxwin.h
 
-##  <a name="cbitmap"></a>  CBitmap::CBitmap
+## <a name="cbitmap"></a>  CBitmap::CBitmap
 
 Constructs a `CBitmap` object.
 
@@ -77,7 +77,7 @@ CBitmap();
 
 The resulting object must be initialized with one of the initialization member functions.
 
-##  <a name="createbitmap"></a>  CBitmap::CreateBitmap
+## <a name="createbitmap"></a>  CBitmap::CreateBitmap
 
 Initializes a device-dependent memory bitmap that has the specified width, height, and bit pattern.
 
@@ -121,7 +121,7 @@ When you finish with the `CBitmap` object created by the `CreateBitmap` function
 
 For more information, see the description of the `bmBits` field in the `BITMAP` structure. The [BITMAP](/windows/win32/api/wingdi/ns-wingdi-bitmap) structure is described under the [CBitmap::CreateBitmapIndirect](#createbitmapindirect) member function.
 
-##  <a name="createbitmapindirect"></a>  CBitmap::CreateBitmapIndirect
+## <a name="createbitmapindirect"></a>  CBitmap::CreateBitmapIndirect
 
 Initializes a bitmap that has the width, height, and bit pattern (if one is specified) given in the structure pointed to by *lpBitmap*.
 
@@ -146,7 +146,7 @@ If the `BITMAP` structure pointed to by the *lpBitmap* parameter has been filled
 
 When you finish with the `CBitmap` object created with `CreateBitmapIndirect` function, first select the bitmap out of the device context, then delete the `CBitmap` object.
 
-##  <a name="createcompatiblebitmap"></a>  CBitmap::CreateCompatibleBitmap
+## <a name="createcompatiblebitmap"></a>  CBitmap::CreateCompatibleBitmap
 
 Initializes a bitmap that is compatible with the device specified by *pDC*.
 
@@ -184,7 +184,7 @@ Since a color memory device context can have either color or monochrome bitmaps 
 
 When you finish with the `CBitmap` object created with the `CreateCompatibleBitmap` function, first select the bitmap out of the device context, then delete the `CBitmap` object.
 
-##  <a name="creatediscardablebitmap"></a>  CBitmap::CreateDiscardableBitmap
+## <a name="creatediscardablebitmap"></a>  CBitmap::CreateDiscardableBitmap
 
 Initializes a discardable bitmap that is compatible with the device context identified by *pDC*.
 
@@ -218,7 +218,7 @@ Windows can discard a bitmap created by this function only if an application has
 
 When you finish with the `CBitmap` object created with the `CreateDiscardableBitmap` function, first select the bitmap out of the device context, then delete the `CBitmap` object.
 
-##  <a name="fromhandle"></a>  CBitmap::FromHandle
+## <a name="fromhandle"></a>  CBitmap::FromHandle
 
 Returns a pointer to a `CBitmap` object when given a handle to a Windows GDI bitmap.
 
@@ -239,7 +239,7 @@ A pointer to a `CBitmap` object if successful; otherwise NULL.
 
 If a `CBitmap` object is not already attached to the handle, a temporary `CBitmap` object is created and attached. This temporary `CBitmap` object is valid only until the next time the application has idle time in its event loop, at which time all temporary graphic objects are deleted. Another way of saying this is that the temporary object is only valid during the processing of one window message.
 
-##  <a name="getbitmap"></a>  CBitmap::GetBitmap
+## <a name="getbitmap"></a>  CBitmap::GetBitmap
 
 Retrieves image properties for the attached bitmap.
 
@@ -258,7 +258,7 @@ Nonzero if the method was successful; otherwise 0.
 
 ### Remarks
 
-##  <a name="getbitmapbits"></a>  CBitmap::GetBitmapBits
+## <a name="getbitmapbits"></a>  CBitmap::GetBitmapBits
 
 Copies the bit pattern of the attached bitmap into the specified buffer.
 
@@ -284,7 +284,7 @@ The number of bytes copied to the buffer if the method was successful; otherwise
 
 Use [CBitmap::GetBitmap](#getbitmap) to determine the required buffer size.
 
-##  <a name="getbitmapdimension"></a>  CBitmap::GetBitmapDimension
+## <a name="getbitmapdimension"></a>  CBitmap::GetBitmapDimension
 
 Returns the width and height of the bitmap.
 
@@ -300,7 +300,7 @@ The width and height of the bitmap, measured in 0.1-millimeter units. The height
 
 The height and width are assumed to have been set previously by using the [SetBitmapDimension](#setbitmapdimension) member function.
 
-##  <a name="loadbitmap"></a>  CBitmap::LoadBitmap
+## <a name="loadbitmap"></a>  CBitmap::LoadBitmap
 
 Loads the bitmap resource named by *lpszResourceName* or identified by the ID number in *nIDResource* from the application's executable file.
 
@@ -338,7 +338,7 @@ OBM_UPARRROWIOBM_DNARROWIOBM_RGARROWIOBM_LFARROWI
 
 These bitmaps are not found in device drivers for Windows versions 3.0 and earlier. For a complete list of bitmaps and a display of their appearance, see the Windows SDK.
 
-##  <a name="loadmappedbitmap"></a>  CBitmap::LoadMappedBitmap
+## <a name="loadmappedbitmap"></a>  CBitmap::LoadMappedBitmap
 
 Call this member function to load a bitmap and map the colors to the current system colors.
 
@@ -374,7 +374,7 @@ By default, `LoadMappedBitmap` will map colors commonly used in button glyphs.
 
 For information about creating a mapped bitmap, see the Windows function [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) and the [COLORMAP](/windows/win32/api/commctrl/ns-commctrl-colormap) structure in the Windows SDK.
 
-##  <a name="loadoembitmap"></a>  CBitmap::LoadOEMBitmap
+## <a name="loadoembitmap"></a>  CBitmap::LoadOEMBitmap
 
 Loads a predefined bitmap used by Windows.
 
@@ -417,7 +417,7 @@ Bitmap names that begin with OBM_OLD represent bitmaps used by Windows versions 
 
 Note that the constant OEMRESOURCE must be defined before including WINDOWS.H in order to use any of the **OBM_** constants.
 
-##  <a name="operator_hbitmap"></a>  CBitmap::operator HBITMAP
+## <a name="operator_hbitmap"></a>  CBitmap::operator HBITMAP
 
 Use this operator to get the attached Windows GDI handle of the `CBitmap` object.
 
@@ -435,7 +435,7 @@ This operator is a casting operator, which supports direct use of an `HBITMAP` o
 
 For more information about using graphic objects, see [Graphic Objects](/windows/win32/gdi/graphic-objects) in the Windows SDK.
 
-##  <a name="setbitmapbits"></a>  CBitmap::SetBitmapBits
+## <a name="setbitmapbits"></a>  CBitmap::SetBitmapBits
 
 Sets the bits of a bitmap to the bit values given by *lpBits*.
 
@@ -457,7 +457,7 @@ Points to the BYTE array that contains the pixel values to be copied to the `CBi
 
 The number of bytes used in setting the bitmap bits; 0 if the function fails.
 
-##  <a name="setbitmapdimension"></a>  CBitmap::SetBitmapDimension
+## <a name="setbitmapdimension"></a>  CBitmap::SetBitmapDimension
 
 Assigns a width and height to a bitmap in 0.1-millimeter units.
 

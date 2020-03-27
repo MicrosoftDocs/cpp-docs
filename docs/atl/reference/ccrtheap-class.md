@@ -44,7 +44,7 @@ See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).
 
 **Header:** atlmem.h
 
-##  <a name="allocate"></a>  CCRTHeap::Allocate
+## <a name="allocate"></a>  CCRTHeap::Allocate
 
 Call this method to allocate a block of memory.
 
@@ -67,7 +67,7 @@ Call [CCRTHeap::Free](#free) or [CCRTHeap::Reallocate](#reallocate) to free the 
 
 Implemented using [malloc](../../c-runtime-library/reference/malloc.md).
 
-##  <a name="free"></a>  CCRTHeap::Free
+## <a name="free"></a>  CCRTHeap::Free
 
 Call this method to free a block of memory allocated by this memory manager.
 
@@ -84,7 +84,7 @@ Pointer to memory previously allocated by this memory manager. NULL is a valid v
 
 Implemented using [free](../../c-runtime-library/reference/free.md).
 
-##  <a name="getsize"></a>  CCRTHeap::GetSize
+## <a name="getsize"></a>  CCRTHeap::GetSize
 
 Call this method to get the allocated size of a memory block allocated by this memory manager.
 
@@ -105,7 +105,7 @@ Returns the size of the allocated memory block in bytes.
 
 Implemented using [_msize](../../c-runtime-library/reference/msize.md).
 
-##  <a name="reallocate"></a>  CCRTHeap::Reallocate
+## <a name="reallocate"></a>  CCRTHeap::Reallocate
 
 Call this method to reallocate memory allocated by this memory manager.
 

@@ -31,7 +31,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 ## <a name="VC_2015"></a> Visual Studio 2015 Conformance Changes
 
-###  <a name="BK_CRT"></a> C Runtime Library (CRT)
+### <a name="BK_CRT"></a> C Runtime Library (CRT)
 
 #### General Changes
 
@@ -296,7 +296,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    The CLOCKS_PER_SEC macro now expands to an integer of type `clock_t`, as required by the C language.
 
-####  <a name="BK_STL"></a> C++ Standard Library
+#### <a name="BK_STL"></a> C++ Standard Library
 
 To enable new optimizations and debugging checks, the Visual Studio implementation of the C++ Standard Library intentionally breaks binary compatibility from one version to the next. Therefore, when the C++ Standard Library is used, object files and static libraries that are compiled by using different versions can't be mixed in one binary (EXE or DLL), and C++ Standard Library objects can't be passed between binaries that are compiled by using different versions. Such mixing emits linker errors about _MSC_VER mismatches. (_MSC_VER is the macro that contains the compiler's major version—for example, 1800 for Visual Studio 2013.) This check can't detect DLL mixing, and can't detect mixing that involves Visual Studio 2008 or earlier.
 
@@ -378,7 +378,7 @@ To enable new optimizations and debugging checks, the Visual Studio implementati
 
    The nonstandard `launch::any` and `launch::sync` policies were removed. Instead, for `launch::any`, use `launch:async | launch:deferred`. For `launch::sync`, use `launch::deferred`. See [launch Enumeration](../standard-library/future-enums.md#launch).
 
-####  <a name="BK_MFC"></a> MFC and ATL
+#### <a name="BK_MFC"></a> MFC and ATL
 
 - **Microsoft Foundation Classes (MFC)**
 
@@ -386,7 +386,7 @@ To enable new optimizations and debugging checks, the Visual Studio implementati
 
    The Visual C++ Redistributable Package still includes this library.
 
-####  <a name="BK_ConcRT"></a> Concurrency Runtime
+#### <a name="BK_ConcRT"></a> Concurrency Runtime
 
 - **Yield macro from Windows.h conflicting with concurrency::Context::Yield**
 
@@ -414,7 +414,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - [Conformance Improvements in Update 3](#VS_Update3)
 
-###  <a name="VS_RTM"></a> Conformance Improvements in Visual Studio 2015
+### <a name="VS_RTM"></a> Conformance Improvements in Visual Studio 2015
 
 - /Zc:forScope- option
 
@@ -1690,7 +1690,7 @@ Although these differences can affect your source code or other build artifacts,
     C c;
     ```
 
-###  <a name="VS_Update1"></a> Conformance Improvements in Update 1
+### <a name="VS_Update1"></a> Conformance Improvements in Update 1
 
 - **Private virtual base classes and indirect inheritance**
 
@@ -2194,7 +2194,7 @@ Although these differences can affect your source code or other build artifacts,
     }
     ```
 
-###  <a name="VS_Update2"></a> Conformance Improvements in Update 2
+### <a name="VS_Update2"></a> Conformance Improvements in Update 2
 
 - **Additional warnings and errors might be issued as a result of partial support for expression SFINAE**
 
@@ -2456,7 +2456,7 @@ Although these differences can affect your source code or other build artifacts,
 
    Fixing code that's written in this way might require that the operator definitions be moved out of a header file and into a corresponding source file.
 
-###  <a name="VS_Update3"></a> Conformance Improvements in Update 3
+### <a name="VS_Update3"></a> Conformance Improvements in Update 3
 
 - **std::is_convertable now detects self-assignment**  (standard library)
 

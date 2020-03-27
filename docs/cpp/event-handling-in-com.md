@@ -138,7 +138,7 @@ MyHandler1 was called with value 123.
 MyHandler2 was called with value 123.
 ```
 
-##  <a name="vcconeventhandlingincomanchorlayoutdependentcomevents"></a> Layout Dependent COM Events
+## <a name="vcconeventhandlingincomanchorlayoutdependentcomevents"></a> Layout Dependent COM Events
 
 Layout dependency is only an issue for COM programming. In native and managed event handling, the signatures (return type, calling convention, and arguments) of the handlers must match their events, but the handler names do not have to match their events.
 

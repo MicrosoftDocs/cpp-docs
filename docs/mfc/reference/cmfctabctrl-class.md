@@ -146,7 +146,7 @@ The following example demonstrates how to use various methods in the `CMFCTabCtr
 
 **Header:** afxtabctrl.h
 
-##  <a name="activatemditab"></a>  CMFCTabCtrl::ActivateMDITab
+## <a name="activatemditab"></a>  CMFCTabCtrl::ActivateMDITab
 
 Displays the specified tab of the current tab control and sets the focus on that tab.
 
@@ -159,7 +159,7 @@ void ActivateMDITab(int nTab = -1);
 *nTab*<br/>
 [in] The zero-based index of a tab to display, or -1 to specify the currently active tab.
 
-##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane
+## <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -173,7 +173,7 @@ Always TRUE.
 
 ### Remarks
 
-##  <a name="autosizewindow"></a>  CMFCTabCtrl::AutoSizeWindow
+## <a name="autosizewindow"></a>  CMFCTabCtrl::AutoSizeWindow
 
 Specifies whether the framework is to resize the client area of all tab control windows when a user interface element of the tab control changes.
 
@@ -188,7 +188,7 @@ void AutoSizeWindow(BOOL bAutoSize = TRUE);
 
 ### Remarks
 
-##  <a name="create"></a>  CMFCTabCtrl::Create
+## <a name="create"></a>  CMFCTabCtrl::Create
 
 Creates the tab control and attaches it to the `CMFCTabCtrl` object.
 
@@ -254,7 +254,7 @@ The following example demonstrates how to use the `Create` method in the `CMFCTa
 [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]
 [!code-cpp[NVC_MFC_StateCollection#2](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_3.cpp)]
 
-##  <a name="calcrectedit"></a>  CMFCTabCtrl::CalcRectEdit
+## <a name="calcrectedit"></a>  CMFCTabCtrl::CalcRectEdit
 
 Deflates the size of the specified tab area.
 
@@ -271,7 +271,7 @@ virtual void CalcRectEdit(CRect& rectEdit);
 
 This method is called when you change the label of a tab. This method deflates the left and right sides of the specified rectangle by one-half the current tab height, and deflates the top and bottom by one unit.
 
-##  <a name="enableactivetabclosebutton"></a>  CMFCTabCtrl::EnableActiveTabCloseButton
+## <a name="enableactivetabclosebutton"></a>  CMFCTabCtrl::EnableActiveTabCloseButton
 
 Shows or hides a Close button ( **X**) on the active tab.
 
@@ -284,7 +284,7 @@ void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
 *bEnable*<br/>
 [in] TRUE to display the Close button on the active tab; FALSE to display the Close button on the upper-right corner of the tab area. The default value is TRUE.
 
-##  <a name="enableinplaceedit"></a>  CMFCTabCtrl::EnableInPlaceEdit
+## <a name="enableinplaceedit"></a>  CMFCTabCtrl::EnableInPlaceEdit
 
 Enables or disables editable tab labels.
 
@@ -299,7 +299,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 
 ### Remarks
 
-##  <a name="enabletabdocumentsmenu"></a>  CMFCTabCtrl::EnableTabDocumentsMenu
+## <a name="enabletabdocumentsmenu"></a>  CMFCTabCtrl::EnableTabDocumentsMenu
 
 Toggles between a user interface that uses two buttons to scroll the window tabs and an interface that displays a pop-up menu of tabbed windows.
 
@@ -316,7 +316,7 @@ void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
 
 When the user clicks a tab label, the framework displays the corresponding tabbed window. If the tab label is visible, the tabbed window is opened without changing its position. If the user selects a document from the pop-up menu and the corresponding tabbed window is off screen, the tabbed window becomes the first tab.
 
-##  <a name="ensurevisible"></a>  CMFCTabCtrl::EnsureVisible
+## <a name="ensurevisible"></a>  CMFCTabCtrl::EnsureVisible
 
 Ensures that a tab is visible.
 
@@ -337,7 +337,7 @@ TRUE if it is successful; FALSE if the *iTab* parameter index is invalid.
 
 Use this method to guarantee that the specified tab is visible. The tab control will scroll if it is required.
 
-##  <a name="getdocumenticon"></a>  CMFCTabCtrl::GetDocumentIcon
+## <a name="getdocumenticon"></a>  CMFCTabCtrl::GetDocumentIcon
 
 Retrieves the image that is associated with a tab in a pop-up menu of tabbed windows.
 
@@ -354,7 +354,7 @@ static HICON __stdcall GetDocumentIcon(UINT nCmdID);
 
 The handle of a bitmap image.
 
-##  <a name="getfirstvisibletabnum"></a>  CMFCTabCtrl::GetFirstVisibleTabNum
+## <a name="getfirstvisibletabnum"></a>  CMFCTabCtrl::GetFirstVisibleTabNum
 
 Retrieves the index of the first tab that is visible in the current tab control.
 
@@ -370,7 +370,7 @@ The zero-based index of a tab in the tab control.
 
 Use this method only when the tab control is displayed in the style of Microsoft OneNote. Use the [CMFCTabCtrl::IsOneNoteStyle](#isonenotestyle) method to determine the style.
 
-##  <a name="getresizemode"></a>  CMFCTabCtrl::GetResizeMode
+## <a name="getresizemode"></a>  CMFCTabCtrl::GetResizeMode
 
 Retrieves a value that specifies how the current tab control can be resized.
 
@@ -382,7 +382,7 @@ ResizeMode GetResizeMode() const;
 
 One of the `CMFCTabCtrl::ResizeMode` enumeration values that specifies how the tab control can be resized. For a list of possible values, see the Remarks section of the [CMFCTabCtrl::SetResizeMode](#setresizemode) method.
 
-##  <a name="getscrollbar"></a>  CMFCTabCtrl::GetScrollBar
+## <a name="getscrollbar"></a>  CMFCTabCtrl::GetScrollBar
 
 Retrieves a pointer to the scroll bar object that is associated with the tab control.
 
@@ -398,7 +398,7 @@ A pointer to a scrollbar object, or a NULL if the tab control was not created by
 
 Use this method to access the tab control's embedded scroll bar. A scroll bar object is created only when the tab control has the STYLE_FLAT_SHARED_HORZ_SCROLL style.
 
-##  <a name="gettabarea"></a>  CMFCTabCtrl::GetTabArea
+## <a name="gettabarea"></a>  CMFCTabCtrl::GetTabArea
 
 Retrieves the bounding rectangle of the tab label area at the top or bottom of the tab control.
 
@@ -420,7 +420,7 @@ void GetTabArea(
 
 Use this method to determine the size and position of the tab area in the tabbed window.
 
-##  <a name="gettabmaxwidth"></a>  CMFCTabCtrl::GetTabMaxWidth
+## <a name="gettabmaxwidth"></a>  CMFCTabCtrl::GetTabMaxWidth
 
 Retrieves the maximum width of a tab.
 
@@ -436,7 +436,7 @@ Maximum width of a tab, in pixels. If the return value is 0, the tab width is un
 
 Use the [CMFCTabCtrl::SetTabMaxWidth](#settabmaxwidth) method to set maximum tab width.
 
-##  <a name="gettabsheight"></a>  CMFCTabCtrl::GetTabsHeight
+## <a name="gettabsheight"></a>  CMFCTabCtrl::GetTabsHeight
 
 Retrieves the height of the tab area of the current tab control.
 
@@ -448,7 +448,7 @@ virtual int GetTabsHeight() const;
 
 The height of the tab area if any tab is visible, or zero if no tab is visible.
 
-##  <a name="gettabsrect"></a>  CMFCTabCtrl::GetTabsRect
+## <a name="gettabsrect"></a>  CMFCTabCtrl::GetTabsRect
 
 Retrieves a rectangle that bounds the tab area of the current tab control.
 
@@ -461,7 +461,7 @@ virtual void GetTabsRect(CRect& rect) const;
 *rect*<br/>
 [out] When this method returns, the *rect* parameter contains a rectangle that bounds the tab area.
 
-##  <a name="getwndarea"></a>  CMFCTabCtrl::GetWndArea
+## <a name="getwndarea"></a>  CMFCTabCtrl::GetWndArea
 
 Retrieves the boundary of the client area of the current tab control.
 
@@ -476,7 +476,7 @@ void GetWndArea(CRect& rect) const;
 
 ### Remarks
 
-##  <a name="hideactivewindowhorzscrollbar"></a>  CMFCTabCtrl::HideActiveWindowHorzScrollBar
+## <a name="hideactivewindowhorzscrollbar"></a>  CMFCTabCtrl::HideActiveWindowHorzScrollBar
 
 Hides the horizontal scroll bar, if any, in the active window.
 
@@ -488,7 +488,7 @@ void HideActiveWindowHorzScrollBar();
 
 Use this method to prevent the tab control from blinking when the user switches between tab control pages.
 
-##  <a name="hideinactivewindow"></a>  CMFCTabCtrl::HideInactiveWindow
+## <a name="hideinactivewindow"></a>  CMFCTabCtrl::HideInactiveWindow
 
 Specifies whether the framework displays inactive tab control windows.
 
@@ -503,7 +503,7 @@ void HideInactiveWindow(BOOL bHide = TRUE);
 
 ### Remarks
 
-##  <a name="hidenotabs"></a>  CMFCTabCtrl::HideNoTabs
+## <a name="hidenotabs"></a>  CMFCTabCtrl::HideNoTabs
 
 Enables or disables drawing of the tab area if there are no visible tabs.
 
@@ -518,7 +518,7 @@ void HideNoTabs(BOOL bHide=TRUE);
 
 ### Remarks
 
-##  <a name="hidesingletab"></a>  CMFCTabCtrl::HideSingleTab
+## <a name="hidesingletab"></a>  CMFCTabCtrl::HideSingleTab
 
 Enables or disables tab drawing if there is a single tabbed window.
 
@@ -533,7 +533,7 @@ virtual void HideSingleTab(BOOL bHide=TRUE);
 
 ### Remarks
 
-##  <a name="isactiveinmditabgroup"></a>  CMFCTabCtrl::IsActiveInMDITabGroup
+## <a name="isactiveinmditabgroup"></a>  CMFCTabCtrl::IsActiveInMDITabGroup
 
 Indicates whether the current tab of a tab control is the active tab in a multiple document interface tab group.
 
@@ -549,7 +549,7 @@ TRUE if the current tab of a tab control is the active tab in an MDI tab group; 
 
 You can organize multiple document windows into either vertical or horizontal tab groups and easily shuffle documents from one tab group to another.
 
-##  <a name="isactivetabboldfont"></a>  CMFCTabCtrl::IsActiveTabBoldFont
+## <a name="isactivetabboldfont"></a>  CMFCTabCtrl::IsActiveTabBoldFont
 
 Indicates whether the text of the active tab is displayed using a bold font.
 
@@ -565,7 +565,7 @@ TRUE if the active tab is displayed using the bold font; otherwise, FALSE.
 
 Use the [CMFCTabCtrl::SetActiveTabBoldFont](#setactivetabboldfont) method to change the active tab font.
 
-##  <a name="isactivetabclosebutton"></a>  CMFCTabCtrl::IsActiveTabCloseButton
+## <a name="isactivetabclosebutton"></a>  CMFCTabCtrl::IsActiveTabCloseButton
 
 Indicates whether the Close button ( **X**) is displayed on an active tab or on the upper-right corner of the tab area.
 
@@ -579,7 +579,7 @@ TRUE if the Close button is displayed on the active tab; FALSE if the Close butt
 
 ### Remarks
 
-##  <a name="isdrawframe"></a>  CMFCTabCtrl::IsDrawFrame
+## <a name="isdrawframe"></a>  CMFCTabCtrl::IsDrawFrame
 
 Indicates whether the tabbed window draws a frame rectangle around embedded panes.
 
@@ -595,7 +595,7 @@ TRUE if a frame rectangle is drawn; otherwise, FALSE.
 
 Use the [CMFCTabCtrl::SetDrawFrame](#setdrawframe) method to enable or disable drawing a frame rectangle.
 
-##  <a name="isflatframe"></a>  CMFCTabCtrl::IsFlatFrame
+## <a name="isflatframe"></a>  CMFCTabCtrl::IsFlatFrame
 
 Indicates whether the frame around the tab area is flat or 3D.
 
@@ -611,7 +611,7 @@ TRUE if the frame around the tab area is flat; FALSE if the frame is three-dimen
 
 Use the [CMFCTabCtrl::SetFlatFrame](#setflatframe) method to change how the frame is drawn.
 
-##  <a name="isflattab"></a>  CMFCTabCtrl::IsFlatTab
+## <a name="isflattab"></a>  CMFCTabCtrl::IsFlatTab
 
 Indicates whether the appearance of the tabs in the current tab control is flat or not.
 
@@ -623,7 +623,7 @@ virtual BOOL IsFlatTab() const;
 
 TRUE if the appearance of the tabs in the current tab control is flat; otherwise, FALSE.
 
-##  <a name="isleftrightrounded"></a>  CMFCTabCtrl::IsLeftRightRounded
+## <a name="isleftrightrounded"></a>  CMFCTabCtrl::IsLeftRightRounded
 
 Indicates whether the appearance of the left and right side of a tab in the current tab control is rounded.
 
@@ -635,7 +635,7 @@ virtual BOOL IsLeftRightRounded() const;
 
 TRUE if the sides of each tab is rounded; otherwise, FALSE.
 
-##  <a name="ismditabgroup"></a>  CMFCTabCtrl::IsMDITabGroup
+## <a name="ismditabgroup"></a>  CMFCTabCtrl::IsMDITabGroup
 
 Indicates whether the current tab control is contained in the client area of a multiple-document interface window.
 
@@ -647,7 +647,7 @@ virtual BOOL IsMDITabGroup() const;
 
 TRUE if the current tab control is in an MDI client area window; otherwise, FALSE.
 
-##  <a name="isonenotestyle"></a>  CMFCTabCtrl::IsOneNoteStyle
+## <a name="isonenotestyle"></a>  CMFCTabCtrl::IsOneNoteStyle
 
 Indicates whether the current tab control is displayed in the style of Microsoft OneNote.
 
@@ -659,7 +659,7 @@ virtual BOOL IsOneNoteStyle() const;
 
 TRUE if the tab control is displayed in the style of Microsoft OneNote; otherwise, FALSE.
 
-##  <a name="issharedscroll"></a>  CMFCTabCtrl::IsSharedScroll
+## <a name="issharedscroll"></a>  CMFCTabCtrl::IsSharedScroll
 
 Indicates whether the current tab control has a scroll bar that can scroll its tabs as a group.
 
@@ -675,7 +675,7 @@ TRUE if the tab control has a shared scroll bar; otherwise, FALSE.
 
 This method returns TRUE if the *style* parameter of the [CMFCTabCtrl::Create](#create) method is STYLE_FLAT_SHARED_HORZ_SCROLL.
 
-##  <a name="istabdocumentsmenu"></a>  CMFCTabCtrl::IsTabDocumentsMenu
+## <a name="istabdocumentsmenu"></a>  CMFCTabCtrl::IsTabDocumentsMenu
 
 Indicates whether the tab control displays scroll buttons or a button that displays a menu of tabbed windows.
 
@@ -691,7 +691,7 @@ TRUE if tabbed windows are scrolled using a popup menu of tabbed window labels; 
 
 Use the [CMFCTabCtrl::EnableTabDocumentsMenu](#enabletabdocumentsmenu) method to specify the method of scrolling tabbed windows.
 
-##  <a name="isvs2005style"></a>  CMFCTabCtrl::IsVS2005Style
+## <a name="isvs2005style"></a>  CMFCTabCtrl::IsVS2005Style
 
 Indicates whether tabs are drawn using the style of Visual Studio 2005.
 
@@ -707,7 +707,7 @@ TRUE if tabs are drawn using the style of Visual Studio 2005; otherwise, FALSE.
 
 Use the *style* parameter of the [CMFCTabCtrl::Create](#create) method to specify how tabs are drawn.
 
-##  <a name="m_benableactivate"></a>  CMFCTabCtrl::m_bEnableActivate
+## <a name="m_benableactivate"></a>  CMFCTabCtrl::m_bEnableActivate
 
 Prevents the active view from losing focus when a new tab is inserted and enabled.
 
@@ -719,7 +719,7 @@ static BOOL m_bEnableActivate;
 
 The focus is usually taken by a new tabbed window when the tab is inserted and made active. Set the `CMFCTabCtrl::m_bEnableActivate` member variable to FALSE to retain the original focus. The default value is TRUE.
 
-##  <a name="modifytabstyle"></a>  CMFCTabCtrl::ModifyTabStyle
+## <a name="modifytabstyle"></a>  CMFCTabCtrl::ModifyTabStyle
 
 Specifies the appearance of tabs in the current tab control.
 
@@ -751,7 +751,7 @@ The value of the *style* parameter can be one of the following `CMFCTabCtrl::Sty
 |STYLE_FLAT|Displays two-dimensional tabs that have slanted left and right sides.|
 |STYLE_FLAT_SHARED_HORZ_SCROLL|Displays two-dimensional tabs. If there are more tabs than can be displayed at the same time, the framework displays scroll arrows at the ends of the tab area.|
 
-##  <a name="ondragenter"></a>  CMFCTabCtrl::OnDragEnter
+## <a name="ondragenter"></a>  CMFCTabCtrl::OnDragEnter
 
 Called by the framework during a drag-and-drop operation when the cursor first enters the window of the current tab control.
 
@@ -783,7 +783,7 @@ Use this method to support a drag-and-drop operation. Override this method to im
 
 By default, this method only calls `CMFCTabCtrl::OnDragOver`, which always returns DROPEFFECT_NONE.
 
-##  <a name="ondragover"></a>  CMFCTabCtrl::OnDragOver
+## <a name="ondragover"></a>  CMFCTabCtrl::OnDragOver
 
 Called by the framework during a drag operation when the mouse is moved over the drop target window.
 
@@ -813,7 +813,7 @@ Always DROPEFFECT_NONE.
 
 Override this method with your custom implementation. For more information, see the [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover) method.
 
-##  <a name="onshowtabdocumentsmenu"></a>  CMFCTabCtrl::OnShowTabDocumentsMenu
+## <a name="onshowtabdocumentsmenu"></a>  CMFCTabCtrl::OnShowTabDocumentsMenu
 
 Displays a pop-up menu of tabbed windows, waits until the user selects a tab, and makes the selected tab the active tab.
 
@@ -828,7 +828,7 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 
 ### Remarks
 
-##  <a name="setactiveinmditabgroup"></a>  CMFCTabCtrl::SetActiveInMDITabGroup
+## <a name="setactiveinmditabgroup"></a>  CMFCTabCtrl::SetActiveInMDITabGroup
 
 Sets the current tab of a tab control as the active tab in a multiple document interface tab group.
 
@@ -845,7 +845,7 @@ void SetActiveInMDITabGroup(BOOL bActive);
 
 You can organize multiple document windows into either vertical or horizontal tab groups and easily shuffle documents from one tab group to another.
 
-##  <a name="setactivetab"></a>  CMFCTabCtrl::SetActiveTab
+## <a name="setactivetab"></a>  CMFCTabCtrl::SetActiveTab
 
 Activates a tab.
 
@@ -868,7 +868,7 @@ This sends the `AFX_WM_CHANGE_ACTIVE_TAB` notification to the parent window and 
 
 The `SetActiveTab` method automatically calls the [CMFCTabCtrl::HideActiveWindowHorzScrollBar](#hideactivewindowhorzscrollbar) method to prevent the screen from blinking.
 
-##  <a name="setactivetabboldfont"></a>  CMFCTabCtrl::SetActiveTabBoldFont
+## <a name="setactivetabboldfont"></a>  CMFCTabCtrl::SetActiveTabBoldFont
 
 Enables or disables use of a bold font on active tabs.
 
@@ -883,7 +883,7 @@ void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 
 ### Remarks
 
-##  <a name="setdrawframe"></a>  CMFCTabCtrl::SetDrawFrame
+## <a name="setdrawframe"></a>  CMFCTabCtrl::SetDrawFrame
 
 Specifies whether a frame rectangle is drawn around an embedded bar.
 
@@ -898,7 +898,7 @@ void SetDrawFrame(BOOL bDraw=TRUE);
 
 ### Remarks
 
-##  <a name="setflatframe"></a>  CMFCTabCtrl::SetFlatFrame
+## <a name="setflatframe"></a>  CMFCTabCtrl::SetFlatFrame
 
 Specifies whether to draw a flat or a 3D frame around the tab area.
 
@@ -918,7 +918,7 @@ void SetFlatFrame(
 
 ### Remarks
 
-##  <a name="setimagelist"></a>  CMFCTabCtrl::SetImageList
+## <a name="setimagelist"></a>  CMFCTabCtrl::SetImageList
 
 Specifies an image list.
 
@@ -955,7 +955,7 @@ Use this method to set an image list for the tab control. The images from the im
 
 Use the [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) method that is inherited by the tab control to specify the index of the image to display.
 
-##  <a name="setresizemode"></a>  CMFCTabCtrl::SetResizeMode
+## <a name="setresizemode"></a>  CMFCTabCtrl::SetResizeMode
 
 Specifies how the current tab control can be resized and then redisplays the control.
 
@@ -978,7 +978,7 @@ The *resizeMode* parameter can be one of the following `ResizeMode` enumeration 
 |RESIZE_VERT|The tab control can be resized vertically but not horizontally.|
 |RESIZE_HORIZ|The tab control can be resized horizontally but not vertically.|
 
-##  <a name="settabmaxwidth"></a>  CMFCTabCtrl::SetTabMaxWidth
+## <a name="settabmaxwidth"></a>  CMFCTabCtrl::SetTabMaxWidth
 
 Specifies the maximum tab width in a tabbed window.
 
@@ -995,7 +995,7 @@ void SetTabMaxWidth(int nTabMaxWidth);
 
 Use this method to limit the width of each tab in a tabbed window. This method is useful if tabs have very long labels. The [CMFCTabCtrl](../../mfc/reference/cmfctabctrl-class.md) class constructor initializes the maximum tab width to 0, which actually means that the width is not limited.
 
-##  <a name="stopresize"></a>  CMFCTabCtrl::StopResize
+## <a name="stopresize"></a>  CMFCTabCtrl::StopResize
 
 Terminates the current resize operation on the tab control.
 
@@ -1008,7 +1008,7 @@ void StopResize(BOOL bCancel);
 *bCancel*<br/>
 [in] TRUE to abandon the current resize operation; FALSE to complete the current resize operation. In either case, the framework stops drawing the resize rectangle.
 
-##  <a name="synchronizescrollbar"></a>  CMFCTabCtrl::SynchronizeScrollBar
+## <a name="synchronizescrollbar"></a>  CMFCTabCtrl::SynchronizeScrollBar
 
 Draws a horizontal scroll bar on a tab control that displays flat tabs.
 

@@ -47,7 +47,7 @@ For more information on using `CMutex` objects, see the article [Multithreading:
 
 **Header:** afxmt.h
 
-##  <a name="cmutex"></a>  CMutex::CMutex
+## <a name="cmutex"></a>  CMutex::CMutex
 
 Constructs a named or unnamed `CMutex` object.
 

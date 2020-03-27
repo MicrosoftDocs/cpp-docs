@@ -55,7 +55,7 @@ For more information regarding OLE-specific dialog boxes, see the article [Dialo
 
 **Header:** afxodlgs.h
 
-##  <a name="coleupdatedialog"></a>  COleUpdateDialog::COleUpdateDialog
+## <a name="coleupdatedialog"></a>  COleUpdateDialog::COleUpdateDialog
 
 Constructs a `COleUpdateDialog` object.
 
@@ -85,7 +85,7 @@ Points to the parent or owner window object (of type `CWnd`) to which the dialog
 
 This function constructs only a `COleUpdateDialog` object. To display the dialog box, call [DoModal](../../mfc/reference/colelinksdialog-class.md#domodal). This class should be used instead of `COleLinksDialog` when you want to update only existing linked or embedded items.
 
-##  <a name="domodal"></a>  COleUpdateDialog::DoModal
+## <a name="domodal"></a>  COleUpdateDialog::DoModal
 
 Displays the Edit Links dialog box in update mode.
 

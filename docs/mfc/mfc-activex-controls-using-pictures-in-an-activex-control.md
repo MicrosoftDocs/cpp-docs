@@ -15,7 +15,7 @@ This article describes the common Picture type and how to implement it in your A
 
 - [Additions to Your Control Project](#_core_additions_to_your_control_project)
 
-##  <a name="_core_overview_of_custom_picture_properties"></a> Overview of Custom Picture Properties
+## <a name="_core_overview_of_custom_picture_properties"></a> Overview of Custom Picture Properties
 
 A Picture type is one of a group of types common to some ActiveX controls. The Picture type handles metafiles, bitmaps, or icons and allows the user to specify a picture to be displayed in an ActiveX control. Custom Picture properties are implemented using a picture object and Get/Set functions that allow the control user access to the Picture property. Control users access the custom Picture property using the stock Picture property page.
 
@@ -35,7 +35,7 @@ The ActiveX control classes provide several components you can use to implement 
 
    This property page is part of a group of stock property pages available to ActiveX controls. For more information on ActiveX control property pages, see the article [MFC ActiveX Controls: Using Stock Property Pages](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
-##  <a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> Implementing a Custom Picture Property in Your ActiveX Control
+## <a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> Implementing a Custom Picture Property in Your ActiveX Control
 
 When you have completed the steps outlined in this section, the control can display pictures chosen by its user. The user can change the displayed picture using a property page that shows the current picture and has a Browse button that allows the user to the select different pictures.
 
@@ -51,7 +51,7 @@ To implement a custom Picture property, you must do the following:
 
    These modifications will be made to several functions that are responsible for the drawing of your ActiveX control.
 
-##  <a name="_core_additions_to_your_control_project"></a> Additions to Your Control Project
+## <a name="_core_additions_to_your_control_project"></a> Additions to Your Control Project
 
 To add the property page ID for the standard Picture property page, insert the following line after the BEGIN_PROPPAGEIDS macro in the control implementation file (.CPP):
 
@@ -104,7 +104,7 @@ The Add Property Wizard also adds the following two stub functions in the contro
 > [!NOTE]
 >  Your control class and function names might differ from the example above.
 
-###  <a name="_core_modifications_to_your_control_project"></a> Modifications to Your Control Project
+### <a name="_core_modifications_to_your_control_project"></a> Modifications to Your Control Project
 
 After you have made the necessary additions to your control project, you need to modify several functions that affect the rendering of your ActiveX control. These functions, `OnResetState`, `OnDraw`, and the Get/Set functions of a custom Picture property, are located in the control implementation file. (Note that in this example the control class is called `CSampleCtrl`, the `CPictureHolder` data member is called *m_pic*, and the custom picture property name is `ControlPicture`.)
 

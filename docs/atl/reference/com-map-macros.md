@@ -18,7 +18,7 @@ These macros define COM interface maps.
 
 **Header:** atlcom.h
 
-##  <a name="begin_com_map"></a>  BEGIN_COM_MAP
+## <a name="begin_com_map"></a>  BEGIN_COM_MAP
 
 The COM map is the mechanism that exposes interfaces on an object to a client through `QueryInterface`.
 
@@ -41,7 +41,7 @@ From the ATL [BEEPER](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]
 
-##  <a name="end_com_map"></a>  END_COM_MAP
+## <a name="end_com_map"></a>  END_COM_MAP
 
 Ends the definition of your COM interface map.
 

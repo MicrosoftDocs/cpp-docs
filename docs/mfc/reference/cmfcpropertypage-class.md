@@ -57,7 +57,7 @@ Use the `CMFCPropertyPage` class together with the [CMFCPropertySheet](../../mfc
 
 **Header:** afxpropertypage.h
 
-##  <a name="cmfcpropertypage"></a>  CMFCPropertyPage::CMFCPropertyPage
+## <a name="cmfcpropertypage"></a>  CMFCPropertyPage::CMFCPropertyPage
 
 Constructs a `CMFCPropertyPage` object.
 

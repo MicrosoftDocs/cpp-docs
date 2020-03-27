@@ -82,7 +82,7 @@ The following example demonstrates how to use the `Create` method in the `CMFCDr
 
 **Header:** afxdropdowntoolbar.h
 
-##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu
+## <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu
 
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
@@ -92,7 +92,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ### Remarks
 
-##  <a name="loadbitmap"></a>  CMFCDropDownToolBar::LoadBitmap
+## <a name="loadbitmap"></a>  CMFCDropDownToolBar::LoadBitmap
 
 Loads toolbar images from application resources.
 
@@ -136,7 +136,7 @@ The [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadto
 
 Call the `LoadBitmapEx` method to load additional images after you create the toolbar.
 
-##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar
+## <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar
 
 ```
 virtual BOOL LoadToolBar(
@@ -169,7 +169,7 @@ virtual BOOL LoadToolBar(
 
 ### Remarks
 
-##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp
+## <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp
 
 ```
 afx_msg void OnLButtonUp(
@@ -185,7 +185,7 @@ afx_msg void OnLButtonUp(
 
 ### Remarks
 
-##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove
+## <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove
 
 ```
 afx_msg void OnMouseMove(
@@ -201,7 +201,7 @@ afx_msg void OnMouseMove(
 
 ### Remarks
 
-##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand
+## <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand
 
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
@@ -215,7 +215,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### Remarks
 
-##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI
+## <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI
 
 ```
 virtual void OnUpdateCmdUI(

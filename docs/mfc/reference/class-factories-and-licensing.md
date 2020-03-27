@@ -22,7 +22,7 @@ The following table lists several macros and functions used to declare and imple
 |[END_OLEFACTORY](#end_olefactory)|Ends the declaration of any licensing functions.|
 |[AfxVerifyLicFile](#afxverifylicfile)|Verifies whether a control is licensed for use on a particular computer.|
 
-##  <a name="declare_olecreate_ex"></a>  DECLARE_OLECREATE_EX
+## <a name="declare_olecreate_ex"></a>  DECLARE_OLECREATE_EX
 
 Declares a class factory and the `GetClassID` member function of your control class.
 
@@ -47,7 +47,7 @@ Note that this macro serves the same purpose as the following code sample:
 
   **Header** afxctl.h
 
-##  <a name="implement_olecreate_ex"></a>  IMPLEMENT_OLECREATE_EX
+## <a name="implement_olecreate_ex"></a>  IMPLEMENT_OLECREATE_EX
 
 Implements your control's class factory and the [GetClassID](../../mfc/reference/colecontrol-class.md#getclassid) member function of your control class.
 
@@ -87,7 +87,7 @@ This macro must appear in the implementation file for any control class that use
 
   **Header** afxctl.h
 
-##  <a name="begin_olefactory"></a>  BEGIN_OLEFACTORY
+## <a name="begin_olefactory"></a>  BEGIN_OLEFACTORY
 
 Begins the declaration of your class factory in the header file of your control class.
 
@@ -108,7 +108,7 @@ Declarations of class factory licensing functions should begin immediately after
 
   **Header** afxctl.h
 
-##  <a name="end_olefactory"></a>  END_OLEFACTORY
+## <a name="end_olefactory"></a>  END_OLEFACTORY
 
 Ends the declaration of your control's class factory.
 
@@ -125,7 +125,7 @@ The name of the control class whose class factory this is.
 
   **Header** afxctl.h
 
-##  <a name="afxverifylicfile"></a>  AfxVerifyLicFile
+## <a name="afxverifylicfile"></a>  AfxVerifyLicFile
 
 Call this function to verify that the license file named by `pszLicFileName` is valid for the OLE control.
 

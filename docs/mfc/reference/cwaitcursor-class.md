@@ -61,7 +61,7 @@ Another way to display a wait cursor is to use the combination of [CCmdTarget::B
 
 [!code-cpp[NVC_MFCWindowing#62](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_1.cpp)]
 
-##  <a name="cwaitcursor"></a>  CWaitCursor::CWaitCursor
+## <a name="cwaitcursor"></a>  CWaitCursor::CWaitCursor
 
 To display a wait cursor, just declare a `CWaitCursor` object before the code that performs the lengthy operation.
 
@@ -84,7 +84,7 @@ You can take advantage of the fact that the destructor is called at the end of t
 
 [!code-cpp[NVC_MFCWindowing#63](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_2.cpp)]
 
-##  <a name="restore"></a>  CWaitCursor::Restore
+## <a name="restore"></a>  CWaitCursor::Restore
 
 To restore the wait cursor, call this function after performing an operation, such as displaying a message box or dialog box, which might change the wait cursor to another cursor.
 

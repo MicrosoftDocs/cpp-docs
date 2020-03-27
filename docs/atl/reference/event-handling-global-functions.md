@@ -20,7 +20,7 @@ This function provides an event handler.
 
 **Header:** atlbase.h
 
-##  <a name="atlwaitwithmessageloop"></a>  AtlWaitWithMessageLoop
+## <a name="atlwaitwithmessageloop"></a>  AtlWaitWithMessageLoop
 
 Waits for the object to be signaled, meanwhile dispatching window messages as needed.
 

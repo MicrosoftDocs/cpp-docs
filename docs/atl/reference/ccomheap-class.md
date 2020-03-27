@@ -47,7 +47,7 @@ See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).
 
 **Header:** ATLComMem.h
 
-##  <a name="allocate"></a>  CComHeap::Allocate
+## <a name="allocate"></a>  CComHeap::Allocate
 
 Call this method to allocate a block of memory.
 
@@ -70,7 +70,7 @@ Call [CComHeap::Free](#free) or [CComHeap::Reallocate](#reallocate) to free the 
 
 Implemented using [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc).
 
-##  <a name="free"></a>  CComHeap::Free
+## <a name="free"></a>  CComHeap::Free
 
 Call this method to free a block of memory allocated by this memory manager.
 
@@ -87,7 +87,7 @@ Pointer to memory previously allocated by this memory manager. NULL is a valid v
 
 Implemented using [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
-##  <a name="getsize"></a>  CComHeap::GetSize
+## <a name="getsize"></a>  CComHeap::GetSize
 
 Call this method to get the allocated size of a memory block allocated by this memory manager.
 
@@ -108,7 +108,7 @@ Returns the size of the allocated memory block in bytes.
 
 Implemented using [IMalloc::GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize).
 
-##  <a name="reallocate"></a>  CComHeap::Reallocate
+## <a name="reallocate"></a>  CComHeap::Reallocate
 
 Call this method to reallocate memory allocated by this memory manager.
 

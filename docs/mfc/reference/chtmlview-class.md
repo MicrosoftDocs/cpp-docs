@@ -167,7 +167,7 @@ Basing the application's view class on `CHtmlView` provides the view with the We
 
 **Header:** afxhtml.h
 
-##  <a name="create"></a>  CHtmlView::Create
+## <a name="create"></a>  CHtmlView::Create
 
 Call this member function to create a WebBrowser control or container for the Internet Explorer executable.
 
@@ -205,7 +205,7 @@ The ID number of the view. By default, set to AFX_IDW_PANE_FIRST.
 *pContext*<br/>
 A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). NULL by default.
 
-##  <a name="createcontrolsite"></a>  CHtmlView::CreateControlSite
+## <a name="createcontrolsite"></a>  CHtmlView::CreateControlSite
 
 Overridable used to create a control site instance to host a control on the form.
 
@@ -239,7 +239,7 @@ Returns TRUE on success, FALSE on failure.
 
 You can override this member function to return an instance of your own control site class.
 
-##  <a name="execformscommand"></a>  CHtmlView::ExecFormsCommand
+## <a name="execformscommand"></a>  CHtmlView::ExecFormsCommand
 
 Executes the specified command using the `IOleCommandTarget::Exec` method.
 
@@ -269,7 +269,7 @@ A standard HRESULT value. For a complete listing of possible values, see [IOleCo
 
 `ExecFormsCommand` implements the behavior of the [IOleCommandTarget::Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) method.
 
-##  <a name="execwb"></a>  CHtmlView::ExecWB
+## <a name="execwb"></a>  CHtmlView::ExecWB
 
 Call this member function to execute a command in the WebBrowser or Internet Explorer.
 
@@ -299,7 +299,7 @@ A variant used for specifying command output arguments.
 
 See [IWebBrowser2::ExecWB](/previous-versions//aa752117\(v=vs.85\)) in the Windows SDK.
 
-##  <a name="getaddressbar"></a>  CHtmlView::GetAddressBar
+## <a name="getaddressbar"></a>  CHtmlView::GetAddressBar
 
 Call this member function to retrieve Internet Explorer's address bar.
 
@@ -315,7 +315,7 @@ Nonzero if the address bar is visible; otherwise zero.
 
 Applies to Internet Explorer. If you use this call with a WebBrowser control, it will return no error, but it will ignore this call.
 
-##  <a name="getapplication"></a>  CHtmlView::GetApplication
+## <a name="getapplication"></a>  CHtmlView::GetApplication
 
 Call this member function to retrieve the automation object supported by the application that contains the WebBrowser control.
 
@@ -331,7 +331,7 @@ A pointer to the `IDispatch` interface of the active document object. For more i
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getbusy"></a>  CHtmlView::GetBusy
+## <a name="getbusy"></a>  CHtmlView::GetBusy
 
 Call this member function to determine whether the WebBrowser control is engaged in a navigation or downloading operation.
 
@@ -347,7 +347,7 @@ Nonzero if the web browser is busy; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getcontainer"></a>  CHtmlView::GetContainer
+## <a name="getcontainer"></a>  CHtmlView::GetContainer
 
 Call this member function to retrieve an object that evaluates to the container of the web browser.
 
@@ -363,7 +363,7 @@ A pointer to the `IDispatch` interface of the active document object.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getfullname"></a>  CHtmlView::GetFullName
+## <a name="getfullname"></a>  CHtmlView::GetFullName
 
 Call this member function to retrieve the full path of the file that Internet Explorer is currently displaying.
 
@@ -379,7 +379,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing 
 
 Applies to Internet Explorer. If you use this call with a WebBrowser control, it will return no error, but it will ignore this call.
 
-##  <a name="getfullscreen"></a>  CHtmlView::GetFullScreen
+## <a name="getfullscreen"></a>  CHtmlView::GetFullScreen
 
 Call this member function to determine whether the WebBrowser control is operating in full-screen mode or in normal window mode.
 
@@ -397,7 +397,7 @@ In full-screen mode, the Internet Explorer main window is maximized and the stat
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getheight"></a>  CHtmlView::GetHeight
+## <a name="getheight"></a>  CHtmlView::GetHeight
 
 Call this member function to retrieve the height, in pixels, of the WebBrowser control's frame window.
 
@@ -409,7 +409,7 @@ long GetHeight() const;
 
 The control's frame window height, in pixels.
 
-##  <a name="gethtmldocument"></a>  CHtmlView::GetHtmlDocument
+## <a name="gethtmldocument"></a>  CHtmlView::GetHtmlDocument
 
 Call this member function to retrieve the HTML document for the active document.
 
@@ -425,7 +425,7 @@ A pointer to the `IDispatch` interface of the active document object.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getleft"></a>  CHtmlView::GetLeft
+## <a name="getleft"></a>  CHtmlView::GetLeft
 
 Call this member function to retrieve the distance between the internal left edge of the WebBrowser control and the left edge of its container.
 
@@ -441,7 +441,7 @@ The left-edge distance, in pixels.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getlocationname"></a>  CHtmlView::GetLocationName
+## <a name="getlocationname"></a>  CHtmlView::GetLocationName
 
 Call this member function to get the name of the resource being displayed in the WebBrowser.
 
@@ -459,7 +459,7 @@ If the resource is an HTML page on the World Wide Web, the name is the title of 
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getlocationurl"></a>  CHtmlView::GetLocationURL
+## <a name="getlocationurl"></a>  CHtmlView::GetLocationURL
 
 Call this member function to retrieve the URL of the resource that the WebBrowser control is currently displaying.
 
@@ -477,7 +477,7 @@ If the resource is a folder or file on the network or local computer, the name i
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getmenubar"></a>  CHtmlView::GetMenuBar
+## <a name="getmenubar"></a>  CHtmlView::GetMenuBar
 
 Call this member function to determine whether the menu bar is visible.
 
@@ -493,7 +493,7 @@ Nonzero if the menu bar is visible; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getoffline"></a>  CHtmlView::GetOffline
+## <a name="getoffline"></a>  CHtmlView::GetOffline
 
 Call this member function to determine whether the web browser is operating offline.
 
@@ -509,7 +509,7 @@ Nonzero if the web browser is currently offline; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getparentbrowser"></a>  CHtmlView::GetParentBrowser
+## <a name="getparentbrowser"></a>  CHtmlView::GetParentBrowser
 
 Call this member function to retrieve a pointer to the parent object of the WebBrowser control.
 
@@ -525,7 +525,7 @@ A pointer to the `IDispatch` interface of the object that is the parent of the W
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getproperty"></a>  CHtmlView::GetProperty
+## <a name="getproperty"></a>  CHtmlView::GetProperty
 
 Call this member function to get the value of the property currently associated with the control.
 
@@ -553,7 +553,7 @@ In the first version, nonzero if completed successfully; otherwise zero. In the 
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getreadystate"></a>  CHtmlView::GetReadyState
+## <a name="getreadystate"></a>  CHtmlView::GetReadyState
 
 Call this member function to retrieve the ready state of the WebBrowser object.
 
@@ -569,7 +569,7 @@ A [READYSTATE](/previous-versions//aa768362\(v=vs.85\)) value, as described in t
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getregisterasbrowser"></a>  CHtmlView::GetRegisterAsBrowser
+## <a name="getregisterasbrowser"></a>  CHtmlView::GetRegisterAsBrowser
 
 Call this member function to determine whether the WebBrowser object is registered as a top-level browser for target name resolution.
 
@@ -585,7 +585,7 @@ Nonzero if the browser is registered as a top-level browser; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getregisterasdroptarget"></a>  CHtmlView::GetRegisterAsDropTarget
+## <a name="getregisterasdroptarget"></a>  CHtmlView::GetRegisterAsDropTarget
 
 Call this member function to determine whether the WebBrowser control is registered as a drop target for navigation.
 
@@ -601,7 +601,7 @@ Nonzero if the browser is registered as a drop target; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getsilent"></a>  CHtmlView::GetSilent
+## <a name="getsilent"></a>  CHtmlView::GetSilent
 
 Call this member function to determine whether any dialog boxes can be shown in the WebBrowser control.
 
@@ -617,7 +617,7 @@ Nonzero if dialog boxes cannot be displayed from the WebBrowser control; otherwi
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getsource"></a>  CHtmlView::GetSource
+## <a name="getsource"></a>  CHtmlView::GetSource
 
 Call this member function to retrieve the HTML source code for the web page.
 
@@ -638,7 +638,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) that will hold the
 
 This function is equivalent to the "View Source" command in Internet Explorer, except that the source code is returned in a `CString`.
 
-##  <a name="getstatusbar"></a>  CHtmlView::GetStatusBar
+## <a name="getstatusbar"></a>  CHtmlView::GetStatusBar
 
 Call this member function to determine whether the WebBrowser control displays a status bar.
 
@@ -654,7 +654,7 @@ Nonzero if the status bar can be displayed; otherwise zero.
 
 Applies to Internet Explorer. If you use this call with a WebBrowser control, it will return no error, but it will ignore this call.
 
-##  <a name="gettheatermode"></a>  CHtmlView::GetTheaterMode
+## <a name="gettheatermode"></a>  CHtmlView::GetTheaterMode
 
 Call this member function to determine whether the web browser is in theater mode.
 
@@ -672,7 +672,7 @@ When the web browser is in theater mode, the browser main window fills the entir
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="gettoolbar"></a>  CHtmlView::GetToolBar
+## <a name="gettoolbar"></a>  CHtmlView::GetToolBar
 
 Call this member function to determine whether the toolbar is visible.
 
@@ -684,7 +684,7 @@ int GetToolBar() const;
 
 A value indicating whether the toolbar is visible. Nonzero if toolbar is visible; otherwise zero.
 
-##  <a name="gettop"></a>  CHtmlView::GetTop
+## <a name="gettop"></a>  CHtmlView::GetTop
 
 Call this member function to retrieve the screen coordinate of the top edge of the WebBrowser control's main window.
 
@@ -700,7 +700,7 @@ Address of a variable that receives the screen coordinate of the main window's t
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="gettoplevelcontainer"></a>  CHtmlView::GetTopLevelContainer
+## <a name="gettoplevelcontainer"></a>  CHtmlView::GetTopLevelContainer
 
 Call this member function to determine whether Internet Explorer is the top-level container of the WebBrowser control.
 
@@ -716,7 +716,7 @@ Nonzero the container is the top-level container; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="gettype"></a>  CHtmlView::GetType
+## <a name="gettype"></a>  CHtmlView::GetType
 
 Call this member function to retrieve the type name of the contained active document.
 
@@ -732,7 +732,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing 
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getvisible"></a>  CHtmlView::GetVisible
+## <a name="getvisible"></a>  CHtmlView::GetVisible
 
 Call this member function to determine if the contained object is visible.
 
@@ -748,7 +748,7 @@ Nonzero if the object is visible; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="getwidth"></a>  CHtmlView::GetWidth
+## <a name="getwidth"></a>  CHtmlView::GetWidth
 
 Retrieves the width of the Internet Explorer main window.
 
@@ -760,7 +760,7 @@ long GetWidth() const;
 
 The current width of the window, in pixels.
 
-##  <a name="goback"></a>  CHtmlView::GoBack
+## <a name="goback"></a>  CHtmlView::GoBack
 
 Navigates backward one item in the history list.
 
@@ -772,7 +772,7 @@ void GoBack();
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="goforward"></a>  CHtmlView::GoForward
+## <a name="goforward"></a>  CHtmlView::GoForward
 
 Navigates forward one item in the history list.
 
@@ -780,7 +780,7 @@ Navigates forward one item in the history list.
 void GoForward();
 ```
 
-##  <a name="gohome"></a>  CHtmlView::GoHome
+## <a name="gohome"></a>  CHtmlView::GoHome
 
 Navigates to the current home or start page specified in the Internet Explorer Internet Options dialog box or the Internet Properties dialog box, accessed from the Control Panel.
 
@@ -792,7 +792,7 @@ void GoHome();
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="gosearch"></a>  CHtmlView::GoSearch
+## <a name="gosearch"></a>  CHtmlView::GoSearch
 
 Navigates to the current search page, as specified in the Internet Explorer Internet Options dialog box or the Internet Properties dialog box, accessed from the Control Panel.
 
@@ -804,7 +804,7 @@ void GoSearch();
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="loadfromresource"></a>  CHtmlView::LoadFromResource
+## <a name="loadfromresource"></a>  CHtmlView::LoadFromResource
 
 Call this member function to load the specified resource into the WebBrowser control.
 
@@ -829,7 +829,7 @@ Nonzero if successful; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="navigate"></a>  CHtmlView::Navigate
+## <a name="navigate"></a>  CHtmlView::Navigate
 
 Call this member function to navigate to the resource identified by a URL.
 
@@ -867,7 +867,7 @@ Data to send with the HTTP POST transaction. For example, the POST transaction i
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="navigate2"></a>  CHtmlView::Navigate2
+## <a name="navigate2"></a>  CHtmlView::Navigate2
 
 Call this member function to navigate to the resource identified by a URL, or to the file identified by a full path.
 
@@ -929,7 +929,7 @@ Applies to Internet Explorer and WebBrowser.
 
 [!code-cpp[NVC_MFCHtmlHttp#7](../../mfc/reference/codesnippet/cpp/chtmlview-class_1.cpp)]
 
-##  <a name="onbeforenavigate2"></a>  CHtmlView::OnBeforeNavigate2
+## <a name="onbeforenavigate2"></a>  CHtmlView::OnBeforeNavigate2
 
 This member function is called by the framework to cause an event to fire before a navigation occurs in the web browser.
 
@@ -963,7 +963,7 @@ A pointer to a string containing additional HTTP headers to send to the server (
 *pbCancel*<br/>
 A pointer to a cancel flag. An application can set this parameter to nonzero to cancel the navigation operation, or to zero to allow it to proceed.
 
-##  <a name="oncommandstatechange"></a>  CHtmlView::OnCommandStateChange
+## <a name="oncommandstatechange"></a>  CHtmlView::OnCommandStateChange
 
 This member function is called by the framework to notify an application that the enabled state of a web browser command has changed.
 
@@ -981,7 +981,7 @@ Identifier of the command whose enabled state has changed.
 *bEnable*<br/>
 Enabled state. This parameter is nonzero if the command is enabled, or zero if it is disabled.
 
-##  <a name="ondocumentcomplete"></a>  CHtmlView::OnDocumentComplete
+## <a name="ondocumentcomplete"></a>  CHtmlView::OnDocumentComplete
 
 This member function is called by the framework to notify an application that a document has reached the READYSTATE_COMPLETE state.
 
@@ -1000,7 +1000,7 @@ Not every frame will fire this event, but each frame that fires an [OnDownloadBe
 
 The URL indicated by *lpszURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of `"www.microsoft.com"` in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be `"<https://www.microsoft.com/>"`. Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
 
-##  <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate
+## <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate
 
 Called from the Internet Explorer or MSHTML implementation of `IOleInPlaceActiveObject::OnDocWindowActivate`, which notifies the active in-place object when the container's document window is activated or deactivated.
 
@@ -1021,7 +1021,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 Override `OnDocWindowActivate` to react to the `OnDocWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="ondownloadbegin"></a>  CHtmlView::OnDownloadBegin
+## <a name="ondownloadbegin"></a>  CHtmlView::OnDownloadBegin
 
 This member function is called by the framework to begin downloading a document.
 
@@ -1033,7 +1033,7 @@ virtual void OnDownloadBegin();
 
 This event is fired shortly after the [OnBeforeNavigate2](#onbeforenavigate2) event, unless the navigation is canceled. Any animation or "busy" indication that the container needs to display should be connected to this event.
 
-##  <a name="ondownloadcomplete"></a>  CHtmlView::OnDownloadComplete
+## <a name="ondownloadcomplete"></a>  CHtmlView::OnDownloadComplete
 
 This member function is called by the framework to indicate that a navigation operation finished, was halted, or failed.
 
@@ -1041,7 +1041,7 @@ This member function is called by the framework to indicate that a navigation op
 virtual void OnDownloadComplete();
 ```
 
-##  <a name="onenablemodeless"></a>  CHtmlView::OnEnableModeless
+## <a name="onenablemodeless"></a>  CHtmlView::OnEnableModeless
 
 Called when Internet Explorer or MSHTML displays modal UI.
 
@@ -1062,7 +1062,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 Enables or disables modeless dialog boxes when the container creates or destroys a modal dialog box. Override `OnEnableModeless` to react to the `EnableModeless` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onfilterdataobject"></a>  CHtmlView::OnFilterDataObject
+## <a name="onfilterdataobject"></a>  CHtmlView::OnFilterDataObject
 
 Called on the host by Internet Explorer or MSHTML to allow the host to replace Internet Explorer or MSHTML's data object.
 
@@ -1088,7 +1088,7 @@ S_OK if the data object is replaced, S_FALSE if the data object is not replaced,
 
 Override `OnFilterDataObject` to react to the `FilterDataObject` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate
+## <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate
 
 Called from [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) to notify the object when the container's top-level frame window is activated or deactivated.
 
@@ -1109,7 +1109,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 Override `OnFrameWindowActivate` to react to the `OnFrameWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen
+## <a name="onfullscreen"></a>  CHtmlView::OnFullScreen
 
 This member function is called by the framework when the [FullScreen](/previous-versions/aa752119\(v=vs.85\)) property has changed.
 
@@ -1122,7 +1122,7 @@ virtual void OnFullScreen(BOOL bFullScreen);
 *bFullScreen*<br/>
 Nonzero if Internet Explorer is in full screen mode; zero otherwise.
 
-##  <a name="ongetdroptarget"></a>  CHtmlView::OnGetDropTarget
+## <a name="ongetdroptarget"></a>  CHtmlView::OnGetDropTarget
 
 Called by Internet Explorer or MSHTML when it is being used as a drop target to allow the host to supply an alternative `IDropTarget`.
 
@@ -1148,7 +1148,7 @@ See [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explo
 
 Override `OnGetDropTarget` to react to the `GetDropTarget` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="ongetexternal"></a>  CHtmlView::OnGetExternal
+## <a name="ongetexternal"></a>  CHtmlView::OnGetExternal
 
 Called by Internet Explorer or MSHTML to obtain the host's `IDispatch` interface.
 
@@ -1169,7 +1169,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 Override `OnGetExternal` to react to the `GetExternal` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="ongethostinfo"></a>  CHtmlView::OnGetHostInfo
+## <a name="ongethostinfo"></a>  CHtmlView::OnGetHostInfo
 
 Retrieves the UI capabilities of the Internet Explorer or MSHTML host.
 
@@ -1190,7 +1190,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 Override `OnGetHostInfo` to react to the `GetHostInfo` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="ongetoptionkeypath"></a>  CHtmlView::OnGetOptionKeyPath
+## <a name="ongetoptionkeypath"></a>  CHtmlView::OnGetOptionKeyPath
 
 Call this member function to get the registry key under which Internet Explorer or MSHTML stores user preferences.
 
@@ -1216,7 +1216,7 @@ S_OK if successful, or S_FALSE otherwise. If S_FALSE, Internet Explorer or MSHTM
 
 Override `OnGetOptionKeyPath` to react to the `GetOptionKeyPath` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onhideui"></a>  CHtmlView::OnHideUI
+## <a name="onhideui"></a>  CHtmlView::OnHideUI
 
 This member function is called by the framework when Internet Explorer or MSHTML removes its menus and toolbars.
 
@@ -1232,7 +1232,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 Override `OnHideUI` to react to the `HideUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar
+## <a name="onmenubar"></a>  CHtmlView::OnMenuBar
 
 This member function is called by the framework when the [MenuBar](/previous-versions/aa752131\(v=vs.85\)) property has changed.
 
@@ -1245,7 +1245,7 @@ virtual void OnMenuBar(BOOL bMenuBar);
 *bMenuBar*<br/>
 Nonzero if the Internet Explorer menu bar is visible; zero otherwise.
 
-##  <a name="onnavigatecomplete2"></a>  CHtmlView::OnNavigateComplete2
+## <a name="onnavigatecomplete2"></a>  CHtmlView::OnNavigateComplete2
 
 This member function is called by the framework after a navigation to a hyperlink completes (on either a window or frameset element).
 
@@ -1264,7 +1264,7 @@ The URL parameter can be a PIDL in the case of a shell name space entity for whi
 
 Note that the URL contained in *strURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of `"www.microsoft.com"` in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be `"<https://www.microsoft.com/>"`. Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
 
-##  <a name="onnavigateerror"></a>  CHtmlView::OnNavigateError
+## <a name="onnavigateerror"></a>  CHtmlView::OnNavigateError
 
 Called by the framework if navigation to a hyperlink fails.
 
@@ -1296,7 +1296,7 @@ Override this method to provide custom navigation error handling.
 
 For more information, see [DWebBrowserEvents2::NavigateError](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768286\(v=vs.85\))
 
-##  <a name="onnewwindow2"></a>  CHtmlView::OnNewWindow2
+## <a name="onnewwindow2"></a>  CHtmlView::OnNewWindow2
 
 This member function is called by the framework when a new window is to be created for displaying a resource.
 
@@ -1318,7 +1318,7 @@ A pointer to a cancel flag. An application can set this parameter to nonzero to 
 
 This event precedes the creation of a new window from within the WebBrowser.
 
-##  <a name="onprogresschange"></a>  CHtmlView::OnProgressChange
+## <a name="onprogresschange"></a>  CHtmlView::OnProgressChange
 
 This member function is called by the framework to notify an application that the progress of a download operation has been updated.
 
@@ -1340,7 +1340,7 @@ Maximum progress value.
 
 The container can use the information provided by this event to display the number of bytes downloaded so far or to update a progress indicator.
 
-##  <a name="onpropertychange"></a>  CHtmlView::OnPropertyChange
+## <a name="onpropertychange"></a>  CHtmlView::OnPropertyChange
 
 This member function is called by the framework to notify an application that [PutProperty](#putproperty) has changed the value of a property.
 
@@ -1353,7 +1353,7 @@ virtual void OnPropertyChange(LPCTSTR lpszProperty);
 *lpszProperty*<br/>
 A pointer to a string containing the name of the property.
 
-##  <a name="onquit"></a>  CHtmlView::OnQuit
+## <a name="onquit"></a>  CHtmlView::OnQuit
 
 This member function is called by the framework to notify an application that the Internet Explorer application is ready to quit.
 
@@ -1361,7 +1361,7 @@ This member function is called by the framework to notify an application that th
 virtual void OnQuit();
 ```
 
-##  <a name="onresizeborder"></a>  CHtmlView::OnResizeBorder
+## <a name="onresizeborder"></a>  CHtmlView::OnResizeBorder
 
 Called from the Internet Explorer or MSHTML implementation of [IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), which alerts the object that it needs to resize its border space.
 
@@ -1391,7 +1391,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 Override `OnResizeBorder` to react to the `ResizeBorder` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onshowcontextmenu"></a>  CHtmlView::OnShowContextMenu
+## <a name="onshowcontextmenu"></a>  CHtmlView::OnShowContextMenu
 
 Called from Internet Explorer or MSHTML when it is about to show its context menu.
 
@@ -1425,7 +1425,7 @@ See [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-exp
 
 Override `OnShowContextMenu` to react to the `ShowContextMenu` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onshowui"></a>  CHtmlView::OnShowUI
+## <a name="onshowui"></a>  CHtmlView::OnShowUI
 
 Called before Internet Explorer or MSHTML displays its menus and toolbars.
 
@@ -1463,7 +1463,7 @@ See [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-
 
 Override `OnShowUI` to react to the `ShowUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar
+## <a name="onstatusbar"></a>  CHtmlView::OnStatusBar
 
 This member function is called by the framework when the [StatusBar](/previous-versions//aa768270\(v=vs.85\)) property has changed.
 
@@ -1476,7 +1476,7 @@ virtual void OnStatusBar(BOOL bStatusBar);
 *bStatusBar*<br/>
 Nonzero if Internet Explorer's status bar is visible or zero otherwise.
 
-##  <a name="onstatustextchange"></a>  CHtmlView::OnStatusTextChange
+## <a name="onstatustextchange"></a>  CHtmlView::OnStatusTextChange
 
 This member function is called by the framework to notify an application that the text of the status bar associated with the WebBrowser control has changed.
 
@@ -1489,7 +1489,7 @@ virtual void OnStatusTextChange(LPCTSTR lpszText);
 *lpszText*<br/>
 A string that contains the new status bar text.
 
-##  <a name="ontheatermode"></a>  CHtmlView::OnTheaterMode
+## <a name="ontheatermode"></a>  CHtmlView::OnTheaterMode
 
 This member function is called by the framework when the [TheaterMode](/previous-versions/aa768273\(v=vs.85\)) property has changed.
 
@@ -1502,7 +1502,7 @@ virtual void OnTheaterMode(BOOL bTheaterMode);
 *bTheaterMode*<br/>
 Nonzero if Internet Explorer is in theater mode; zero otherwise.
 
-##  <a name="ontitlechange"></a>  CHtmlView::OnTitleChange
+## <a name="ontitlechange"></a>  CHtmlView::OnTitleChange
 
 This member function is called by the framework to notify an application if the title of a document in the WebBrowser control becomes available or changes.
 
@@ -1519,7 +1519,7 @@ The new document title.
 
 For HTML, the title might change; while HTML is still downloading, the URL of the document is set as the title. After the real title (if there is one) is parsed from the HTML, the title is changed to reflect the actual title.
 
-##  <a name="ontoolbar"></a>  CHtmlView::OnToolBar
+## <a name="ontoolbar"></a>  CHtmlView::OnToolBar
 
 This member function is called by the framework when the [ToolBar](/previous-versions/aa768274\(v=vs.85\)) property has changed.
 
@@ -1532,7 +1532,7 @@ virtual void OnToolBar(BOOL bToolBar);
 *bToolBar*<br/>
 Nonzero if Internet Explorer's toolbar is visible or zero otherwise.
 
-##  <a name="ontranslateaccelerator"></a>  CHtmlView::OnTranslateAccelerator
+## <a name="ontranslateaccelerator"></a>  CHtmlView::OnTranslateAccelerator
 
 Called by Internet Explorer or MSHTML when [IOleInPlaceActiveObject::TranslateAccelerator](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) or [IOleControlSite::TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) is called to process menu accelerator-key messages from the container's message queue.
 
@@ -1562,7 +1562,7 @@ S_OK if successful, or S_FALSE otherwise.
 
 Override `OnTranslateAccelerator` to react to the `TranslateAccelerator` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="ontranslateurl"></a>  CHtmlView::OnTranslateUrl
+## <a name="ontranslateurl"></a>  CHtmlView::OnTranslateUrl
 
 Called by Internet Explorer or MSHTML to allow the host an opportunity to modify the URL to be loaded.
 
@@ -1592,7 +1592,7 @@ Address of a string pointer that receives the address of the translated URL. The
 
 Override `OnTranslateUrl` to react to the `TranslateUrl` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) in the Windows SDK for more information.
 
-##  <a name="onupdateui"></a>  CHtmlView::OnUpdateUI
+## <a name="onupdateui"></a>  CHtmlView::OnUpdateUI
 
 Notifies the host that the command state has changed.
 
@@ -1608,7 +1608,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 The host should update the state of toolbar buttons. This method is called regardless of the return value from `ShowUI`. Override `OnUpdateUI` to react to the `UpdateUI` notification from the Microsoft Web Browser control.
 
-##  <a name="onvisible"></a>  CHtmlView::OnVisible
+## <a name="onvisible"></a>  CHtmlView::OnVisible
 
 This member function is called by the framework when the window for the WebBrowser should be shown or hidden.
 
@@ -1625,7 +1625,7 @@ Nonzero if the object is visible or zero otherwise.
 
 This allows the object control host window to behave the same way the Internet Explorer window would behave.
 
-##  <a name="putproperty"></a>  CHtmlView::PutProperty
+## <a name="putproperty"></a>  CHtmlView::PutProperty
 
 Call this member function to set the property associated with a given object.
 
@@ -1678,7 +1678,7 @@ The new value of the property.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="queryformscommand"></a>  CHtmlView::QueryFormsCommand
+## <a name="queryformscommand"></a>  CHtmlView::QueryFormsCommand
 
 Queries for the status of one or more commands generated by user interface events.
 
@@ -1712,7 +1712,7 @@ A standard HRESULT value. For a complete listing of possible values, see [IOleCo
 
 `QueryFormsCommand` implements the behavior of the [IOleCommandTarget::QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) method.
 
-##  <a name="querystatuswb"></a>  CHtmlView::QueryStatusWB
+## <a name="querystatuswb"></a>  CHtmlView::QueryStatusWB
 
 Call this member function to query a command status.
 
@@ -1735,7 +1735,7 @@ The address of the [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf) value 
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="refresh"></a>  CHtmlView::Refresh
+## <a name="refresh"></a>  CHtmlView::Refresh
 
 Reloads the URL or file that the web browser is currently displaying.
 
@@ -1749,7 +1749,7 @@ void Refresh();
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="refresh2"></a>  CHtmlView::Refresh2
+## <a name="refresh2"></a>  CHtmlView::Refresh2
 
 Reloads the file that Internet Explorer is currently displaying.
 
@@ -1768,7 +1768,7 @@ Unlike [Refresh](#refresh), `Refresh2` contains a parameter that specifies the r
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="setaddressbar"></a>  CHtmlView::SetAddressBar
+## <a name="setaddressbar"></a>  CHtmlView::SetAddressBar
 
 Call this member function to show or hide the Internet Explorer object's address bar.
 
@@ -1785,7 +1785,7 @@ Nonzero to show address bar; otherwise zero.
 
 Applies to Internet Explorer. If you use this call with a WebBrowser control, it will return no error, but it will ignore this call.
 
-##  <a name="setfullscreen"></a>  CHtmlView::SetFullScreen
+## <a name="setfullscreen"></a>  CHtmlView::SetFullScreen
 
 Call this member function to set Internet Explorer to either full-screen or normal window mode.
 
@@ -1804,7 +1804,7 @@ In full-screen mode, the Internet Explorer main window is maximized and the stat
 
 Applies to Internet Explorer. If you use this call with a WebBrowser control, it will return no error, but it will ignore this call.
 
-##  <a name="setheight"></a>  CHtmlView::SetHeight
+## <a name="setheight"></a>  CHtmlView::SetHeight
 
 Call this member function to set the height of the Internet Explorer main window.
 
@@ -1821,7 +1821,7 @@ The height, in pixels, of the main window.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="setleft"></a>  CHtmlView::SetLeft
+## <a name="setleft"></a>  CHtmlView::SetLeft
 
 Sets the horizontal position of the Internet Explorer main window.
 
@@ -1834,7 +1834,7 @@ void SetLeft(long nNewValue);
 *nNewValue*<br/>
 The screen coordinate of the left edge of the main window.
 
-##  <a name="setmenubar"></a>  CHtmlView::SetMenuBar
+## <a name="setmenubar"></a>  CHtmlView::SetMenuBar
 
 Call this member function to show or hide the Internet Explorer menu bar.
 
@@ -1851,7 +1851,7 @@ Nonzero to show menu bar; otherwise zero.
 
 Applies to Internet Explorer. If you use this call with a WebBrowser control, it will return no error, but it will ignore this call.
 
-##  <a name="setoffline"></a>  CHtmlView::SetOffline
+## <a name="setoffline"></a>  CHtmlView::SetOffline
 
 Call this member function to set a value indicating whether the WebBrowser control is currently operating in offline mode.
 
@@ -1870,7 +1870,7 @@ In offline mode, the browser reads HTML pages from the local cache rather than f
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="setregisterasbrowser"></a>  CHtmlView::SetRegisterAsBrowser
+## <a name="setregisterasbrowser"></a>  CHtmlView::SetRegisterAsBrowser
 
 Call this member function to set a value indicating whether the WebBrowser control is registered as a top-level browser for target name resolution.
 
@@ -1889,7 +1889,7 @@ A top-level browser is the browser set in the registry as the default browser.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="setregisterasdroptarget"></a>  CHtmlView::SetRegisterAsDropTarget
+## <a name="setregisterasdroptarget"></a>  CHtmlView::SetRegisterAsDropTarget
 
 Call this member function to set a value indicating whether the WebBrowser control is registered as a drop target for navigation.
 
@@ -1906,7 +1906,7 @@ Determines if the WebBrowser control is registered as a drop target for navigati
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="setsilent"></a>  CHtmlView::SetSilent
+## <a name="setsilent"></a>  CHtmlView::SetSilent
 
 Call this member function to set a value indicating whether any dialog boxes can be shown.
 
@@ -1923,7 +1923,7 @@ If nonzero, dialog boxes will not be displayed; if zero, dialog boxes will be di
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="setstatusbar"></a>  CHtmlView::SetStatusBar
+## <a name="setstatusbar"></a>  CHtmlView::SetStatusBar
 
 Call this member function to display the status bar.
 
@@ -1940,7 +1940,7 @@ Nonzero if the status bar is visible; otherwise zero.
 
 Applies to Internet Explorer. If you use this call with a WebBrowser control, it will return no error, but it will ignore this call.
 
-##  <a name="settheatermode"></a>  CHtmlView::SetTheaterMode
+## <a name="settheatermode"></a>  CHtmlView::SetTheaterMode
 
 Call this member function to set a value indicating whether the WebBrowser control is in theater mode.
 
@@ -1959,7 +1959,7 @@ When the web browser is in theater mode, the browser main window fills the entir
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="settoolbar"></a>  CHtmlView::SetToolBar
+## <a name="settoolbar"></a>  CHtmlView::SetToolBar
 
 Call this member function to show or hide the Internet Explorer toolbar.
 
@@ -1976,7 +1976,7 @@ Indicates whether to display the toolbar. Nonzero if the toolbar is to be displa
 
 Applies to Internet Explorer. If you use this call with a WebBrowser control, it will return no error, but it will ignore this call.
 
-##  <a name="settop"></a>  CHtmlView::SetTop
+## <a name="settop"></a>  CHtmlView::SetTop
 
 Call this member function to set the distance between the internal top edge of the WebBrowser control and the top edge of its container
 
@@ -1993,7 +1993,7 @@ The screen coordinate of the top edge of the main window.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="setvisible"></a>  CHtmlView::SetVisible
+## <a name="setvisible"></a>  CHtmlView::SetVisible
 
 Call this member function to set the visibility state of the WebBrowser control.
 
@@ -2010,7 +2010,7 @@ Nonzero if the control is visible; otherwise zero.
 
 Applies to Internet Explorer and WebBrowser.
 
-##  <a name="setwidth"></a>  CHtmlView::SetWidth
+## <a name="setwidth"></a>  CHtmlView::SetWidth
 
 Sets the width of the Internet Explorer main window.
 
@@ -2023,7 +2023,7 @@ void SetWidth(long nNewValue);
 *nNewValue*<br/>
 The width, in pixels, of the Internet Explorer main window.
 
-##  <a name="stop"></a>  CHtmlView::Stop
+## <a name="stop"></a>  CHtmlView::Stop
 
 Call this member function to cancel any pending navigation or download operation and stop any dynamic page elements, such as background sounds and animations.
 

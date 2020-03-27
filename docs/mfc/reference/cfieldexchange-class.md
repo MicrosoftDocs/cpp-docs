@@ -53,7 +53,7 @@ Most of the class's member functions and data members are provided for writing y
 
 **Header:** afxdb.h
 
-##  <a name="isfieldtype"></a>  CFieldExchange::IsFieldType
+## <a name="isfieldtype"></a>  CFieldExchange::IsFieldType
 
 If you write your own RFX function, call `IsFieldType` at the beginning of your function to determine whether the current operation can be performed on a particular field or parameter data member type (a `CFieldExchange::outputColumn`, `CFieldExchange::inputParam`, `CFieldExchange::param`, `CFieldExchange::outputParam`, or `CFieldExchange::inoutParam`).
 
@@ -74,7 +74,7 @@ Nonzero if the current operation can be performed on the current field or parame
 
 Follow the model of the existing RFX functions.
 
-##  <a name="setfieldtype"></a>  CFieldExchange::SetFieldType
+## <a name="setfieldtype"></a>  CFieldExchange::SetFieldType
 
 You need a call to `SetFieldType` in your recordset class's [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) override.
 

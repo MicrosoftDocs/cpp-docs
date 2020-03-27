@@ -71,7 +71,7 @@ class CD2DRadialGradientBrush : public CD2DGradientBrush;
 
 **Header:** afxrendertarget.h
 
-##  <a name="_dtorcd2dradialgradientbrush"></a>  CD2DRadialGradientBrush::~CD2DRadialGradientBrush
+## <a name="_dtorcd2dradialgradientbrush"></a>  CD2DRadialGradientBrush::~CD2DRadialGradientBrush
 
 The destructor. Called when a D2D radial gradient brush object is being destroyed.
 
@@ -79,7 +79,7 @@ The destructor. Called when a D2D radial gradient brush object is being destroye
 virtual ~CD2DRadialGradientBrush();
 ```
 
-##  <a name="attach"></a>  CD2DRadialGradientBrush::Attach
+## <a name="attach"></a>  CD2DRadialGradientBrush::Attach
 
 Attaches existing resource interface to the object
 
@@ -92,7 +92,7 @@ void Attach(ID2D1RadialGradientBrush* pResource);
 *pResource*<br/>
 Existing resource interface. Cannot be NULL
 
-##  <a name="cd2dradialgradientbrush"></a>  CD2DRadialGradientBrush::CD2DRadialGradientBrush
+## <a name="cd2dradialgradientbrush"></a>  CD2DRadialGradientBrush::CD2DRadialGradientBrush
 
 Constructs a CD2DLinearGradientBrush object.
 
@@ -134,7 +134,7 @@ A pointer to the opacity and transformation of a brush.
 *bAutoDestroy*<br/>
 Indicates that the object will be destroyed by owner (pParentTarget).
 
-##  <a name="create"></a>  CD2DRadialGradientBrush::Create
+## <a name="create"></a>  CD2DRadialGradientBrush::Create
 
 Creates a CD2DRadialGradientBrush.
 
@@ -151,7 +151,7 @@ A pointer to the render target.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="destroy"></a>  CD2DRadialGradientBrush::Destroy
+## <a name="destroy"></a>  CD2DRadialGradientBrush::Destroy
 
 Destroys a CD2DRadialGradientBrush object.
 
@@ -159,7 +159,7 @@ Destroys a CD2DRadialGradientBrush object.
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DRadialGradientBrush::Detach
+## <a name="detach"></a>  CD2DRadialGradientBrush::Detach
 
 Detaches resource interface from the object
 
@@ -171,7 +171,7 @@ ID2D1RadialGradientBrush* Detach();
 
 Pointer to detached resource interface.
 
-##  <a name="get"></a>  CD2DRadialGradientBrush::Get
+## <a name="get"></a>  CD2DRadialGradientBrush::Get
 
 Returns ID2D1RadialGradientBrush interface
 
@@ -183,7 +183,7 @@ ID2D1RadialGradientBrush* Get();
 
 Pointer to an ID2D1RadialGradientBrush interface or NULL if object is not initialized yet.
 
-##  <a name="getcenter"></a>  CD2DRadialGradientBrush::GetCenter
+## <a name="getcenter"></a>  CD2DRadialGradientBrush::GetCenter
 
 Retrieves the center of the gradient ellipse
 
@@ -195,7 +195,7 @@ CD2DPointF GetCenter() const;
 
 The center of the gradient ellipse. This value is expressed in the brush's coordinate space
 
-##  <a name="getgradientoriginoffset"></a>  CD2DRadialGradientBrush::GetGradientOriginOffset
+## <a name="getgradientoriginoffset"></a>  CD2DRadialGradientBrush::GetGradientOriginOffset
 
 Retrieves the offset of the gradient origin relative to the gradient ellipse's center
 
@@ -207,7 +207,7 @@ CD2DPointF GetGradientOriginOffset() const;
 
 The offset of the gradient origin from the center of the gradient ellipse. This value is expressed in the brush's coordinate space
 
-##  <a name="getradiusx"></a>  CD2DRadialGradientBrush::GetRadiusX
+## <a name="getradiusx"></a>  CD2DRadialGradientBrush::GetRadiusX
 
 Retrieves the x-radius of the gradient ellipse
 
@@ -219,7 +219,7 @@ FLOAT GetRadiusX() const;
 
 The x-radius of the gradient ellipse. This value is expressed in the brush's coordinate space
 
-##  <a name="getradiusy"></a>  CD2DRadialGradientBrush::GetRadiusY
+## <a name="getradiusy"></a>  CD2DRadialGradientBrush::GetRadiusY
 
 Retrieves the y-radius of the gradient ellipse
 
@@ -231,7 +231,7 @@ FLOAT GetRadiusY() const;
 
 The y-radius of the gradient ellipse. This value is expressed in the brush's coordinate space
 
-##  <a name="m_pradialgradientbrush"></a>  CD2DRadialGradientBrush::m_pRadialGradientBrush
+## <a name="m_pradialgradientbrush"></a>  CD2DRadialGradientBrush::m_pRadialGradientBrush
 
 A pointer to an ID2D1RadialGradientBrush.
 
@@ -239,7 +239,7 @@ A pointer to an ID2D1RadialGradientBrush.
 ID2D1RadialGradientBrush* m_pRadialGradientBrush;
 ```
 
-##  <a name="m_radialgradientbrushproperties"></a>  CD2DRadialGradientBrush::m_RadialGradientBrushProperties
+## <a name="m_radialgradientbrushproperties"></a>  CD2DRadialGradientBrush::m_RadialGradientBrushProperties
 
 The center, gradient origin offset, and x-radius and y-radius of the brush's gradient.
 
@@ -247,7 +247,7 @@ The center, gradient origin offset, and x-radius and y-radius of the brush's gra
 D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES m_RadialGradientBrushProperties;
 ```
 
-##  <a name="operator_id2d1radialgradientbrush_star"></a>  CD2DRadialGradientBrush::operator ID2D1RadialGradientBrush*
+## <a name="operator_id2d1radialgradientbrush_star"></a>  CD2DRadialGradientBrush::operator ID2D1RadialGradientBrush*
 
 Returns ID2D1RadialGradientBrush interface
 
@@ -259,7 +259,7 @@ operator ID2D1RadialGradientBrush*();
 
 Pointer to an ID2D1RadialGradientBrush interface or NULL if object is not initialized yet.
 
-##  <a name="setcenter"></a>  CD2DRadialGradientBrush::SetCenter
+## <a name="setcenter"></a>  CD2DRadialGradientBrush::SetCenter
 
 Specifies the center of the gradient ellipse in the brush's coordinate space
 
@@ -272,7 +272,7 @@ void SetCenter(CD2DPointF point);
 *point*<br/>
 The center of the gradient ellipse, in the brush's coordinate space
 
-##  <a name="setgradientoriginoffset"></a>  CD2DRadialGradientBrush::SetGradientOriginOffset
+## <a name="setgradientoriginoffset"></a>  CD2DRadialGradientBrush::SetGradientOriginOffset
 
 Specifies the offset of the gradient origin relative to the gradient ellipse's center
 
@@ -285,7 +285,7 @@ void SetGradientOriginOffset(CD2DPointF gradientOriginOffset);
 *gradientOriginOffset*<br/>
 The offset of the gradient origin from the center of the gradient ellipse
 
-##  <a name="setradiusx"></a>  CD2DRadialGradientBrush::SetRadiusX
+## <a name="setradiusx"></a>  CD2DRadialGradientBrush::SetRadiusX
 
 Specifies the x-radius of the gradient ellipse, in the brush's coordinate space
 
@@ -298,7 +298,7 @@ void SetRadiusX(FLOAT radiusX);
 *radiusX*<br/>
 The x-radius of the gradient ellipse. This value is in the brush's coordinate space
 
-##  <a name="setradiusy"></a>  CD2DRadialGradientBrush::SetRadiusY
+## <a name="setradiusy"></a>  CD2DRadialGradientBrush::SetRadiusY
 
 Specifies the y-radius of the gradient ellipse, in the brush's coordinate space
 

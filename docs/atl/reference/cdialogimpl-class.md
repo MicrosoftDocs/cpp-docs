@@ -80,7 +80,7 @@ where `MyDlg` is the **Short name** entered in the wizard's **Names** page.
 
 **Header:** atlwin.h
 
-##  <a name="create"></a>  CDialogImpl::Create
+## <a name="create"></a>  CDialogImpl::Create
 
 Creates a modeless dialog box.
 
@@ -114,7 +114,7 @@ The handle to the newly created dialog box.
 
 This dialog box is automatically attached to the `CDialogImpl` object. To create a modal dialog box, call [DoModal](#domodal). The second override above is used only with [CComControl](../../atl/reference/ccomcontrol-class.md).
 
-##  <a name="destroywindow"></a>  CDialogImpl::DestroyWindow
+## <a name="destroywindow"></a>  CDialogImpl::DestroyWindow
 
 Destroys a modeless dialog box.
 
@@ -130,7 +130,7 @@ TRUE if the dialog box was successfully destroyed; otherwise FALSE.
 
 Returns TRUE if the dialog box was successfully destroyed; otherwise FALSE.
 
-##  <a name="dialogproc"></a>  CDialogImpl::DialogProc
+## <a name="dialogproc"></a>  CDialogImpl::DialogProc
 
 This static function implements the dialog box procedure.
 
@@ -166,7 +166,7 @@ TRUE if the message is processed; otherwise, FALSE.
 
 You can override `DialogProc` to provide a different mechanism for handling messages.
 
-##  <a name="domodal"></a>  CDialogImpl::DoModal
+## <a name="domodal"></a>  CDialogImpl::DoModal
 
 Creates a modal dialog box.
 
@@ -194,7 +194,7 @@ This dialog box is automatically attached to the `CDialogImpl` object.
 
 To create a modeless dialog box, call [Create](#create).
 
-##  <a name="enddialog"></a>  CDialogImpl::EndDialog
+## <a name="enddialog"></a>  CDialogImpl::EndDialog
 
 Destroys a modal dialog box.
 
@@ -218,7 +218,7 @@ TRUE if the dialog box is destroyed; otherwise, FALSE.
 > [!NOTE]
 >  Do not call `EndDialog` to destroy a modeless dialog box. Call [CWindow::DestroyWindow](../../atl/reference/cwindow-class.md#destroywindow) instead.
 
-##  <a name="getdialogproc"></a>  CDialogImpl::GetDialogProc
+## <a name="getdialogproc"></a>  CDialogImpl::GetDialogProc
 
 Returns `DialogProc`, the current dialog box procedure.
 
@@ -234,7 +234,7 @@ The current dialog box procedure.
 
 Override this method to replace the dialog procedure with your own.
 
-##  <a name="mapdialogrect"></a>  CDialogImpl::MapDialogRect
+## <a name="mapdialogrect"></a>  CDialogImpl::MapDialogRect
 
 Converts (maps) the dialog-box units of the specified rectangle to screen units (pixels).
 
@@ -255,7 +255,7 @@ Nonzero if the update succeeds; 0 if the update fails. To get extended error inf
 
 The function replaces the coordinates in the specified `RECT` structure with the converted coordinates, which allows the structure to be used to create a dialog box or position a control within a dialog box.
 
-##  <a name="onfinalmessage"></a>  CDialogImpl::OnFinalMessage
+## <a name="onfinalmessage"></a>  CDialogImpl::OnFinalMessage
 
 Called after receiving the last message (typically `WM_NCDESTROY`).
 
@@ -272,7 +272,7 @@ virtual void OnFinalMessage(HWND hWnd);
 
 Note that if you want to automatically delete your object upon the window destruction, you can call **delete this;** here.
 
-##  <a name="startdialogproc"></a>  CDialogImpl::StartDialogProc
+## <a name="startdialogproc"></a>  CDialogImpl::StartDialogProc
 
 Called only once, when the first message is received, to process messages sent to the dialog box.
 

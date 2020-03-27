@@ -83,7 +83,7 @@ Commonly, this class is used in conjunction with `COccManager` and `COleControlS
 
 **Header:** afxocc.h
 
-##  <a name="attachcontrolsite"></a>  COleControlContainer::AttachControlSite
+## <a name="attachcontrolsite"></a>  COleControlContainer::AttachControlSite
 
 Called by the framework to create and attach a control site.
 
@@ -112,7 +112,7 @@ Override this function if you want to customize this process.
 > [!NOTE]
 >  Use the first form of this function if you are statically linking to the MFC library. Use the second form if you are dynamically linking to the MFC library.
 
-##  <a name="broadcastambientpropertychange"></a>  COleControlContainer::BroadcastAmbientPropertyChange
+## <a name="broadcastambientpropertychange"></a>  COleControlContainer::BroadcastAmbientPropertyChange
 
 Informs all hosted controls that an ambient property has changed.
 
@@ -129,7 +129,7 @@ The dispatch ID of the ambient property being changed.
 
 This function is called by the framework when an ambient property has changed value. Override this function to customize this behavior.
 
-##  <a name="checkdlgbutton"></a>  COleControlContainer::CheckDlgButton
+## <a name="checkdlgbutton"></a>  COleControlContainer::CheckDlgButton
 
 Modifies the current state of the button.
 
@@ -153,7 +153,7 @@ Specifies the state of the button. Can be one of the following:
 
 - BST_UNCHECKED Sets the button state to cleared.
 
-##  <a name="checkradiobutton"></a>  COleControlContainer::CheckRadioButton
+## <a name="checkradiobutton"></a>  COleControlContainer::CheckRadioButton
 
 Selects a specified radio button in a group and clears the remaining buttons in the group.
 
@@ -175,7 +175,7 @@ Specifies the identifier of the last radio button in the group.
 *nIDCheckButton*<br/>
 Specifies the identifier of the radio button to be checked.
 
-##  <a name="colecontrolcontainer"></a>  COleControlContainer::COleControlContainer
+## <a name="colecontrolcontainer"></a>  COleControlContainer::COleControlContainer
 
 Constructs a `COleControlContainer` object.
 
@@ -192,7 +192,7 @@ A pointer to the parent window of the control container.
 
 Once the object has been successfully created, add a custom control site with a call to `AttachControlSite`.
 
-##  <a name="createcontrol"></a>  COleControlContainer::CreateControl
+## <a name="createcontrol"></a>  COleControlContainer::CreateControl
 
 Creates an ActiveX control, hosted by the specified `COleControlSite` object.
 
@@ -281,7 +281,7 @@ Only a subset of the Windows *dwStyle* flags are supported by `CreateControl`:
 
 Use the second overload to create default-sized controls.
 
-##  <a name="createolefont"></a>  COleControlContainer::CreateOleFont
+## <a name="createolefont"></a>  COleControlContainer::CreateOleFont
 
 Creates an OLE font.
 
@@ -294,7 +294,7 @@ void CreateOleFont(CFont* pFont);
 *pFont*<br/>
 A pointer to the font to be used by the control container.
 
-##  <a name="finditem"></a>  COleControlContainer::FindItem
+## <a name="finditem"></a>  COleControlContainer::FindItem
 
 Finds the custom site that hosts the specified item.
 
@@ -311,7 +311,7 @@ The identifier of the item to be found.
 
 A pointer to the custom site of the specified item.
 
-##  <a name="freezeallevents"></a>  COleControlContainer::FreezeAllEvents
+## <a name="freezeallevents"></a>  COleControlContainer::FreezeAllEvents
 
 Determines if the container will ignore events from the attached control sites or accept them.
 
@@ -329,7 +329,7 @@ Nonzero if events will be processed; otherwise 0.
 > [!NOTE]
 >  The control is not required to stop firing events if requested by the control container. It can continue firing but all subsequent events will be ignored by the control container.
 
-##  <a name="getambientprop"></a>  COleControlContainer::GetAmbientProp
+## <a name="getambientprop"></a>  COleControlContainer::GetAmbientProp
 
 Retrieves the value of a specified ambient property.
 
@@ -355,7 +355,7 @@ A pointer to the value of the ambient property.
 
 Nonzero if successful; otherwise 0.
 
-##  <a name="getdlgitem"></a>  COleControlContainer::GetDlgItem
+## <a name="getdlgitem"></a>  COleControlContainer::GetDlgItem
 
 Retrieves a pointer to the specified control or child window in a dialog box or other window.
 
@@ -379,7 +379,7 @@ A pointer to the handle of the specified dialog item's window object.
 
 A pointer to the dialog item's window.
 
-##  <a name="getdlgitemint"></a>  COleControlContainer::GetDlgItemInt
+## <a name="getdlgitemint"></a>  COleControlContainer::GetDlgItemInt
 
 Retrieves the value of the translated text of the given control.
 
@@ -415,7 +415,7 @@ The function translates the retrieved text by stripping any extra spaces at the 
 
 This function returns zero if the translated value is greater than INT_MAX (for signed numbers) or UINT_MAX (for unsigned numbers).
 
-##  <a name="getdlgitemtext"></a>  COleControlContainer::GetDlgItemText
+## <a name="getdlgitemtext"></a>  COleControlContainer::GetDlgItemText
 
 Retrieves the text of the given control.
 
@@ -443,7 +443,7 @@ If the function succeeds, the return value specifies the number of characters co
 
 If the function fails, the return value is zero. To get extended error information, call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-##  <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus
+## <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus
 
 Determines if the container handles WM_SETFOCUS messages.
 
@@ -455,7 +455,7 @@ virtual BOOL HandleSetFocus();
 
 Nonzero if the container handles WM_SETFOCUS messages; otherwise zero.
 
-##  <a name="handlewindowlessmessage"></a>  COleControlContainer::HandleWindowlessMessage
+## <a name="handlewindowlessmessage"></a>  COleControlContainer::HandleWindowlessMessage
 
 Processes window messages for windowless controls.
 
@@ -489,7 +489,7 @@ Nonzero if successful; otherwise zero.
 
 Override this function to customize the handling of windowless control messages.
 
-##  <a name="isdlgbuttonchecked"></a>  COleControlContainer::IsDlgButtonChecked
+## <a name="isdlgbuttonchecked"></a>  COleControlContainer::IsDlgButtonChecked
 
 Determines the state of the specified button.
 
@@ -516,7 +516,7 @@ The return value, from a button created with the BS_AUTOCHECKBOX, BS_AUTORADIOBU
 
 If the button is a three-state control, the member function determines whether it is dimmed, checked, or neither.
 
-##  <a name="m_crback"></a>  COleControlContainer::m_crBack
+## <a name="m_crback"></a>  COleControlContainer::m_crBack
 
 The background color of the container.
 
@@ -524,7 +524,7 @@ The background color of the container.
 COLORREF m_crBack;
 ```
 
-##  <a name="m_crfore"></a>  COleControlContainer::m_crFore
+## <a name="m_crfore"></a>  COleControlContainer::m_crFore
 
 The foreground color of the container.
 
@@ -532,7 +532,7 @@ The foreground color of the container.
 COLORREF m_crFore;
 ```
 
-##  <a name="m_listsitesorwnds"></a>  COleControlContainer::m_listSitesOrWnds
+## <a name="m_listsitesorwnds"></a>  COleControlContainer::m_listSitesOrWnds
 
 A list of the control sites hosted by the container.
 
@@ -540,7 +540,7 @@ A list of the control sites hosted by the container.
 CTypedPtrList<CPtrList, COleControlSiteOrWnd*> m_listSitesOrWnds;
 ```
 
-##  <a name="m_nwindowlesscontrols"></a>  COleControlContainer::m_nWindowlessControls
+## <a name="m_nwindowlesscontrols"></a>  COleControlContainer::m_nWindowlessControls
 
 The number of windowless controls hosted by the control container.
 
@@ -548,7 +548,7 @@ The number of windowless controls hosted by the control container.
 int m_nWindowlessControls;
 ```
 
-##  <a name="m_polefont"></a>  COleControlContainer::m_pOleFont
+## <a name="m_polefont"></a>  COleControlContainer::m_pOleFont
 
 A pointer to the OLE font of the custom control site.
 
@@ -556,7 +556,7 @@ A pointer to the OLE font of the custom control site.
 LPFONTDISP m_pOleFont;
 ```
 
-##  <a name="m_psitecapture"></a>  COleControlContainer::m_pSiteCapture
+## <a name="m_psitecapture"></a>  COleControlContainer::m_pSiteCapture
 
 Pointer to the capture control site.
 
@@ -564,7 +564,7 @@ Pointer to the capture control site.
 COleControlSite* m_pSiteCapture;
 ```
 
-##  <a name="m_psitefocus"></a>  COleControlContainer::m_pSiteFocus
+## <a name="m_psitefocus"></a>  COleControlContainer::m_pSiteFocus
 
 A pointer to the control site that currently has input focus.
 
@@ -572,7 +572,7 @@ A pointer to the control site that currently has input focus.
 COleControlSite* m_pSiteFocus;
 ```
 
-##  <a name="m_psiteuiactive"></a>  COleControlContainer::m_pSiteUIActive
+## <a name="m_psiteuiactive"></a>  COleControlContainer::m_pSiteUIActive
 
 A pointer to the control site that is in-place activated.
 
@@ -580,7 +580,7 @@ A pointer to the control site that is in-place activated.
 COleControlSite* m_pSiteUIActive;
 ```
 
-##  <a name="m_pwnd"></a>  COleControlContainer::m_pWnd
+## <a name="m_pwnd"></a>  COleControlContainer::m_pWnd
 
 A pointer to the window object associated with the container.
 
@@ -588,7 +588,7 @@ A pointer to the window object associated with the container.
 CWnd* m_pWnd;
 ```
 
-##  <a name="m_sitemap"></a>  COleControlContainer::m_siteMap
+## <a name="m_sitemap"></a>  COleControlContainer::m_siteMap
 
 The site map.
 
@@ -596,7 +596,7 @@ The site map.
 CMapPtrToPtr m_siteMap;
 ```
 
-##  <a name="onpaint"></a>  COleControlContainer::OnPaint
+## <a name="onpaint"></a>  COleControlContainer::OnPaint
 
 Called by the framework to handle WM_PAINT requests.
 
@@ -617,7 +617,7 @@ Nonzero if the message was handled; otherwise zero.
 
 Override this function to customize the painting process.
 
-##  <a name="onuiactivate"></a>  COleControlContainer::OnUIActivate
+## <a name="onuiactivate"></a>  COleControlContainer::OnUIActivate
 
 Called by the framework when the control site, pointed to by *pSite*, is about to be activated in-place.
 
@@ -634,7 +634,7 @@ A pointer to the control site about to be in-place activated.
 
 In-place activation means that the container's main menu is replaced with an in-place composite menu.
 
-##  <a name="onuideactivate"></a>  COleControlContainer::OnUIDeactivate
+## <a name="onuideactivate"></a>  COleControlContainer::OnUIDeactivate
 
 Called by the framework when the control site, pointed to by *pSite*, is about to be deactivated.
 
@@ -651,7 +651,7 @@ A pointer to the control site about to be deactivated.
 
 When this notification is received, the container should reinstall its user interface and take focus.
 
-##  <a name="scrollchildren"></a>  COleControlContainer::ScrollChildren
+## <a name="scrollchildren"></a>  COleControlContainer::ScrollChildren
 
 Called by the framework when scroll messages are received from a child window.
 
@@ -669,7 +669,7 @@ The amount, in pixels, of scrolling along the x-axis.
 *dy*<br/>
 The amount, in pixels, of scrolling along the y-axis.
 
-##  <a name="senddlgitemmessage"></a>  COleControlContainer::SendDlgItemMessage
+## <a name="senddlgitemmessage"></a>  COleControlContainer::SendDlgItemMessage
 
 Sends a message to the specified control.
 
@@ -695,7 +695,7 @@ Specifies additional message-specific information.
 *lParam*<br/>
 Specifies additional message-specific information.
 
-##  <a name="setdlgitemint"></a>  COleControlContainer::SetDlgItemInt
+## <a name="setdlgitemint"></a>  COleControlContainer::SetDlgItemInt
 
 Sets the text of a control in a dialog box to the string representation of a specified integer value.
 
@@ -717,7 +717,7 @@ The integer value to be displayed.
 *bSigned*<br/>
 Specifies whether the *nValue* parameter is signed or unsigned. If this parameter is TRUE, *nValue* is signed. If this parameter is TRUE and *nValue* is less than zero, a minus sign is placed before the first digit in the string. If this parameter is FALSE, *nValue* is unsigned.
 
-##  <a name="setdlgitemtext"></a>  COleControlContainer::SetDlgItemText
+## <a name="setdlgitemtext"></a>  COleControlContainer::SetDlgItemText
 
 Sets the text of the specified control, using the text contained in *lpszString*.
 

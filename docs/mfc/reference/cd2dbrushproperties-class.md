@@ -39,7 +39,7 @@ class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;
 
 **Header:** afxrendertarget.h
 
-##  <a name="cd2dbrushproperties"></a>  CD2DBrushProperties::CD2DBrushProperties
+## <a name="cd2dbrushproperties"></a>  CD2DBrushProperties::CD2DBrushProperties
 
 Creates a CD2D_BRUSH_PROPERTIES structure
 
@@ -60,7 +60,7 @@ The base opacity of the brush. The default value is 1.0.
 *_transform*<br/>
 The transformation to apply to the brush
 
-##  <a name="commoninit"></a>  CD2DBrushProperties::CommonInit
+## <a name="commoninit"></a>  CD2DBrushProperties::CommonInit
 
 Initializes the object
 

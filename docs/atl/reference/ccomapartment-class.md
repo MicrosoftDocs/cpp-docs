@@ -51,7 +51,7 @@ class CComApartment
 
 **Header:** atlbase.h
 
-##  <a name="apartment"></a>  CComApartment::Apartment
+## <a name="apartment"></a>  CComApartment::Apartment
 
 Marks the thread's starting address.
 
@@ -67,7 +67,7 @@ Always 0.
 
 Automatically set during [CComAutoThreadModule::Init](../../atl/reference/ccomautothreadmodule-class.md#init).
 
-##  <a name="ccomapartment"></a>  CComApartment::CComApartment
+## <a name="ccomapartment"></a>  CComApartment::CComApartment
 
 The constructor.
 
@@ -79,7 +79,7 @@ CComApartment();
 
 Initializes the `CComApartment` data members [m_nLockCnt](#m_nlockcnt) and [m_hThread](#m_hthread).
 
-##  <a name="getlockcount"></a>  CComApartment::GetLockCount
+## <a name="getlockcount"></a>  CComApartment::GetLockCount
 
 Returns the thread's current lock count.
 
@@ -91,7 +91,7 @@ LONG GetLockCount();
 
 The lock count on the thread.
 
-##  <a name="lock"></a>  CComApartment::Lock
+## <a name="lock"></a>  CComApartment::Lock
 
 Increments the thread's lock count.
 
@@ -109,7 +109,7 @@ Called by [CComAutoThreadModule::Lock](../../atl/reference/ccomautothreadmodule-
 
 The lock count on the thread is used for statistical purposes.
 
-##  <a name="m_dwthreadid"></a>  CComApartment::m_dwThreadID
+## <a name="m_dwthreadid"></a>  CComApartment::m_dwThreadID
 
 Contains the thread's identifier.
 
@@ -117,7 +117,7 @@ Contains the thread's identifier.
 DWORD m_dwThreadID;
 ```
 
-##  <a name="m_hthread"></a>  CComApartment::m_hThread
+## <a name="m_hthread"></a>  CComApartment::m_hThread
 
 Contains the thread's handle.
 
@@ -125,7 +125,7 @@ Contains the thread's handle.
 HANDLE m_hThread;
 ```
 
-##  <a name="m_nlockcnt"></a>  CComApartment::m_nLockCnt
+## <a name="m_nlockcnt"></a>  CComApartment::m_nLockCnt
 
 Contains the thread's current lock count.
 
@@ -133,7 +133,7 @@ Contains the thread's current lock count.
 LONG m_nLockCnt;
 ```
 
-##  <a name="unlock"></a>  CComApartment::Unlock
+## <a name="unlock"></a>  CComApartment::Unlock
 
 Decrements the thread's lock count.
 

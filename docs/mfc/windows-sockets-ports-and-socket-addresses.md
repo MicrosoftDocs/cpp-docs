@@ -8,7 +8,7 @@ ms.assetid: e050261a-9285-4f31-a1c5-6c8033af5b4a
 
 This article explains the terms "port" and "address" as used with Windows Sockets.
 
-##  <a name="_core_port"></a> Port
+## <a name="_core_port"></a> Port
 
 A port identifies a unique process for which a service can be provided. In the present context, a port is associated with an application that supports Windows Sockets. The idea is to identify each Windows Sockets application uniquely so you can have more than one Windows Sockets application running on a machine at the same time.
 
@@ -16,7 +16,7 @@ Certain ports are reserved for common services, such as FTP. You should avoid us
 
 To let the Windows Sockets DLL select a usable port for you, pass 0 as the port value. MFC selects a port value greater than 1,024 decimal. You can retrieve the port value that MFC selected by calling the [CAsyncSocket::GetSockName](../mfc/reference/casyncsocket-class.md#getsockname) member function.
 
-##  <a name="_core_socket_address"></a> Socket Address
+## <a name="_core_socket_address"></a> Socket Address
 
 Each socket object is associated with an Internet Protocol (IP) address on the network. Typically, the address is a machine name, such as "ftp.microsoft.com", or a dotted number, such as "128.56.22.8".
 

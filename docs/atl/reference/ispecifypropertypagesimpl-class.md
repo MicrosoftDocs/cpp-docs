@@ -52,7 +52,7 @@ The [ISpecifyPropertyPages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypa
 
 **Header:** atlcom.h
 
-##  <a name="getpages"></a>  ISpecifyPropertyPagesImpl::GetPages
+## <a name="getpages"></a>  ISpecifyPropertyPagesImpl::GetPages
 
 Fills the array in the [CAUUID](/windows/win32/api/ocidl/ns-ocidl-cauuid) structure with the CLSIDs for the property pages that can be displayed in the object's property sheet.
 

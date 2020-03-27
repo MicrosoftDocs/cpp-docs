@@ -21,7 +21,7 @@ The following topics are covered:
 
 - [How to paint your control using metafiles](#_core_painting_your_control_using_metafiles)
 
-##  <a name="_core_the_painting_process_of_an_activex_control"></a> The Painting Process of an ActiveX Control
+## <a name="_core_the_painting_process_of_an_activex_control"></a> The Painting Process of an ActiveX Control
 
 When ActiveX controls are initially displayed or are redrawn, they follow a painting process similar to other applications developed using MFC, with one important distinction: ActiveX controls can be in an active or an inactive state.
 
@@ -45,7 +45,7 @@ The default implementation provided by the MFC ActiveX Control Wizard in the con
 > [!NOTE]
 >  When painting a control, you should not make assumptions about the state of the device context that is passed as the *pdc* parameter to the `OnDraw` function. Occasionally the device context is supplied by the container application and will not necessarily be initialized to the default state. In particular, explicitly select the pens, brushes, colors, fonts, and other resources that your drawing code depends upon.
 
-##  <a name="_core_optimizing_your_paint_code"></a> Optimizing Your Paint Code
+## <a name="_core_optimizing_your_paint_code"></a> Optimizing Your Paint Code
 
 After the control is successfully painting itself, the next step is to optimize the `OnDraw` function.
 
@@ -53,7 +53,7 @@ The default implementation of ActiveX control painting paints the entire control
 
 The `OnDraw` function provides an easy method of optimization by passing *rcInvalid*, the rectangular area of the control that needs redrawing. Use this area, usually smaller than the entire control area, to speed up the painting process.
 
-##  <a name="_core_painting_your_control_using_metafiles"></a> Painting Your Control Using Metafiles
+## <a name="_core_painting_your_control_using_metafiles"></a> Painting Your Control Using Metafiles
 
 In most cases the *pdc* parameter to the `OnDraw` function points to a screen device context (DC). However, when printing images of the control or during a print preview session, the DC received for rendering is a special type called a "metafile DC". Unlike a screen DC, which immediately handles requests sent to it, a metafile DC stores requests to be played back at a later time. Some container applications may also choose to render the control image using a metafile DC when in design mode.
 

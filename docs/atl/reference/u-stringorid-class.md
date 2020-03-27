@@ -42,7 +42,7 @@ The class defines two constructor overloads: one accepts a LPCTSTR argument and 
 
 **Header:** atlwin.h
 
-##  <a name="_u_stringorid__m_lpstr"></a>  _U_STRINGorID::m_lpstr
+## <a name="_u_stringorid__m_lpstr"></a>  _U_STRINGorID::m_lpstr
 
 The class holds the value passed to either of its constructors as a public LPCTSTR data member.
 
@@ -50,7 +50,7 @@ The class holds the value passed to either of its constructors as a public LPCTS
 LPCTSTR m_lpstr;
 ```
 
-##  <a name="_u_stringorid___u_stringorid"></a>  _U_STRINGorID::_U_STRINGorID
+## <a name="_u_stringorid___u_stringorid"></a>  _U_STRINGorID::_U_STRINGorID
 
 The UINT constructor converts its argument to a resource type compatible with Windows resource-management functions using the MAKEINTRESOURCE macro and the result is stored in the class's single data member, [m_lpstr](#_u_stringorid__m_lpstr).
 

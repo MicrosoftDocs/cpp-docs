@@ -23,7 +23,7 @@ These macros control specific compiler features.
 |[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function should not be inlined.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|
 
-##  <a name="_atl_all_warnings"></a>  _ATL_ALL_WARNINGS
+## <a name="_atl_all_warnings"></a>  _ATL_ALL_WARNINGS
 
 A symbol that enables errors in projects converted from previous versions of ATL.
 
@@ -59,7 +59,7 @@ If this `#define` is added, the ATL headers are careful to preserve the state of
 
 New projects have this `#define` set in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) by default.
 
-##  <a name="_atl_apartment_threaded"></a>  _ATL_APARTMENT_THREADED
+## <a name="_atl_apartment_threaded"></a>  _ATL_APARTMENT_THREADED
 
 Define if one or more of your objects use apartment threading.
 
@@ -71,7 +71,7 @@ _ATL_APARTMENT_THREADED
 
 Specifies apartment threading. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
 
-##  <a name="_atl_cstring_explicit_constructors"></a>  _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
+## <a name="_atl_cstring_explicit_constructors"></a>  _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 
 Makes certain `CString` constructors explicit, preventing any unintentional conversions.
 
@@ -85,7 +85,7 @@ When this constructor is defined, all CString constructors that take a single pa
 
 By using the _T macro on all constructor string arguments, you can define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS and avoid compile errors regardless of whether _UNICODE is defined.
 
-##  <a name="_atl_enable_ptm_warning"></a>  _ATL_ENABLE_PTM_WARNING
+## <a name="_atl_enable_ptm_warning"></a>  _ATL_ENABLE_PTM_WARNING
 
 Define this macro in order to force the use of ANSI C++ standard-compliant syntax for pointer to member functions. Using this macro will cause the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.
 
@@ -109,7 +109,7 @@ Should be changed to:
 
 For map macros, add the ampersand '&' character. You shouldn't add the character again in your code.
 
-##  <a name="_atl_free_threaded"></a>  _ATL_FREE_THREADED
+## <a name="_atl_free_threaded"></a>  _ATL_FREE_THREADED
 
 Define if one or more of your objects use free or neutral threading.
 
@@ -121,7 +121,7 @@ _ATL_FREE_THREADED
 
 Specifies free threading. Free threading is equivalent to a multithread apartment model. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
 
-##  <a name="_atl_multi_threaded"></a>  _ATL_MULTI_THREADED
+## <a name="_atl_multi_threaded"></a>  _ATL_MULTI_THREADED
 
 A symbol that indicates the project will have objects that are marked as Both, Free or Neutral.
 
@@ -133,7 +133,7 @@ _ATL_MULTI_THREADED
 
 If this symbol is defined, ATL will pull in code that will correctly synchronize access to global data. New code should use the equivalent macro [_ATL_FREE_THREADED](#_atl_free_threaded) instead.
 
-##  <a name="_atl_no_automatic_namespace"></a>  _ATL_NO_AUTOMATIC_NAMESPACE
+## <a name="_atl_no_automatic_namespace"></a>  _ATL_NO_AUTOMATIC_NAMESPACE
 
 A symbol that prevents the default use of namespace as ATL.
 
@@ -145,7 +145,7 @@ _ATL_NO_AUTOMATIC_NAMESPACE
 
 If this symbol is not defined, including atlbase.h will perform **using namespace ATL** by default, which may lead to naming conflicts. To prevent this, define this symbol.
 
-##  <a name="_atl_no_com_support"></a>  _ATL_NO_COM_SUPPORT
+## <a name="_atl_no_com_support"></a>  _ATL_NO_COM_SUPPORT
 
 A symbol that prevents COM-related code from being compiled with your project.
 
@@ -153,7 +153,7 @@ A symbol that prevents COM-related code from being compiled with your project.
 _ATL_NO_COM_SUPPORT
 ```
 
-##  <a name="atl_no_vtable"></a>  ATL_NO_VTABLE
+## <a name="atl_no_vtable"></a>  ATL_NO_VTABLE
 
 A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.
 
@@ -169,7 +169,7 @@ If the vtable pointer is prevented from being initialized in the class's constru
 
 [!code-cpp[NVC_ATL_COM#53](../../atl/codesnippet/cpp/compiler-options-macros_4.h)]
 
-##  <a name="atl_noinline"></a>  ATL_NOINLINE
+## <a name="atl_noinline"></a>  ATL_NOINLINE
 
 A symbol that indicates a function shouldn't be inlined.
 
@@ -190,7 +190,7 @@ The function that should not be inlined.
 
 Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to **__declspec(noinline)**.
 
-##  <a name="_atl_single_threaded"></a>  _ATL_SINGLE_THREADED
+## <a name="_atl_single_threaded"></a>  _ATL_SINGLE_THREADED
 
 Define if all of your objects use the single threading model
 

@@ -52,7 +52,7 @@ During a linear-speed transition, the value of the animation variable changes at
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="clineartransitionfromspeed"></a>  CLinearTransitionFromSpeed::CLinearTransitionFromSpeed
+## <a name="clineartransitionfromspeed"></a>  CLinearTransitionFromSpeed::CLinearTransitionFromSpeed
 
 Constructs a linear-speed transition object and initializes it with speed and final value.
 
@@ -70,7 +70,7 @@ The absolute value of the variable's velocity.
 *dblFinalValue*<br/>
 The value of the animation variable at the end of the transition.
 
-##  <a name="create"></a>  CLinearTransitionFromSpeed::Create
+## <a name="create"></a>  CLinearTransitionFromSpeed::Create
 
 Calls the transition library to create encapsulated transition COM object.
 
@@ -89,7 +89,7 @@ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/win32/api/uia
 
 TRUE if transition is created successfully; otherwise FALSE.
 
-##  <a name="m_dblfinalvalue"></a>  CLinearTransitionFromSpeed::m_dblFinalValue
+## <a name="m_dblfinalvalue"></a>  CLinearTransitionFromSpeed::m_dblFinalValue
 
 The value of the animation variable at the end of the transition.
 
@@ -97,7 +97,7 @@ The value of the animation variable at the end of the transition.
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_dblspeed"></a>  CLinearTransitionFromSpeed::m_dblSpeed
+## <a name="m_dblspeed"></a>  CLinearTransitionFromSpeed::m_dblSpeed
 
 The absolute value of the variable's velocity.
 

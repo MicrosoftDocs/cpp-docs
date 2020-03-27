@@ -19,7 +19,7 @@ These macros provide useful debugging and trace facilities.
 |[ATLTRACE](#atltrace)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|
 |[ATLTRACE2](#atltrace2)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.|
 
-##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES
+## <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES
 
 Define this macro before including any ATL header files to trace all `AddRef` and `Release` calls on your components' interfaces to the output window.
 
@@ -50,7 +50,7 @@ The information provided here maps directly to the information provided in the p
 > [!NOTE]
 > _ATL_DEBUG_INTERFACES can be used in retail builds.
 
-##  <a name="_atl_debug_qi"></a>  _ATL_DEBUG_QI
+## <a name="_atl_debug_qi"></a>  _ATL_DEBUG_QI
 
 Writes all calls to `QueryInterface` to the output window.
 
@@ -64,7 +64,7 @@ If a call to `QueryInterface` failed, the output window will display:
 
 *interface name* - `failed`
 
-##  <a name="atlassert"></a>  ATLASSERT
+## <a name="atlassert"></a>  ATLASSERT
 
 The ATLASSERT macro performs the same functionality as the [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macro found in the C run-time library.
 
@@ -85,7 +85,7 @@ In debug builds, ATLASSERT evaluates *booleanExpression* and generates a debug r
 
 **Header:** atldef.h
 
-##  <a name="atlensure"></a>  ATLENSURE
+## <a name="atlensure"></a>  ATLENSURE
 
 This macro is used to validate parameters passed to a function.
 
@@ -122,7 +122,7 @@ The difference between ATLENSURE and ATLASSERT is that ATLENSURE throws an excep
 
 **Header:** afx.h
 
-##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL
+## <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL
 
 In debug builds of ATL, sends the string " *funcname* is not implemented" to the dump device and returns E_NOTIMPL.
 
@@ -147,7 +147,7 @@ In release builds, simply returns E_NOTIMPL.
 
 **Header:** atltrace.h
 
-##  <a name="atltrace"></a>  ATLTRACE
+## <a name="atltrace"></a>  ATLTRACE
 
 Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.
 
@@ -178,7 +178,7 @@ ATLTRACE(
 
 See [ATLTRACE2](#atltrace2) for a description of ATLTRACE. ATLTRACE and ATLTRACE2 have the same behavior, ATLTRACE is included for backward compatibility.
 
-##  <a name="atltrace2"></a>  ATLTRACE2
+## <a name="atltrace2"></a>  ATLTRACE2
 
 Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.
 

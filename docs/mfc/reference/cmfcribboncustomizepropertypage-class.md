@@ -65,7 +65,7 @@ The following example demonstrates how to construct a `CMFCRibbonCustomizeProper
 
 **Header:** afxribboncustomizedialog.h
 
-##  <a name="addcustomcategory"></a>  CMFCRibbonCustomizePropertyPage::AddCustomCategory
+## <a name="addcustomcategory"></a>  CMFCRibbonCustomizePropertyPage::AddCustomCategory
 
 Adds a custom category to the **Commands** combo box.
 
@@ -87,7 +87,7 @@ void AddCustomCategory(
 
 This method adds a category named *lpszName* to the **Commands** combo box. When the user selects the category, the commands specified in *lstIDS* appear in the command list.
 
-##  <a name="cmfcribboncustomizepropertypage"></a>  CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage
+## <a name="cmfcribboncustomizepropertypage"></a>  CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage
 
 Constructs a `CMFCRibbonCustomizePropertyPage` object.
 
@@ -100,7 +100,7 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 *pRibbonBar*<br/>
 [in] A pointer to a ribbon control for which the options to customize.
 
-##  <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK
+## <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK
 
 Calleld by the system when a user clicks **OK** on the **Customize** dialog box.
 

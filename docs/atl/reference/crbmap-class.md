@@ -74,7 +74,7 @@ For a more complete discussion of the various collection classes and their featu
 
 **Header:** atlcoll.h
 
-##  <a name="crbmap"></a>  CRBMap::CRBMap
+## <a name="crbmap"></a>  CRBMap::CRBMap
 
 The constructor.
 
@@ -97,7 +97,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 [!code-cpp[NVC_ATL_Utilities#81](../../atl/codesnippet/cpp/crbmap-class_1.cpp)]
 
-##  <a name="dtor"></a>  CRBMap::~CRBMap
+## <a name="dtor"></a>  CRBMap::~CRBMap
 
 The destructor.
 
@@ -111,7 +111,7 @@ Frees any allocated resources.
 
 See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.
 
-##  <a name="lookup"></a>  CRBMap::Lookup
+## <a name="lookup"></a>  CRBMap::Lookup
 
 Call this method to look up keys or values in the `CRBMap` object.
 
@@ -141,7 +141,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 [!code-cpp[NVC_ATL_Utilities#82](../../atl/codesnippet/cpp/crbmap-class_2.cpp)]
 
-##  <a name="removekey"></a>  CRBMap::RemoveKey
+## <a name="removekey"></a>  CRBMap::RemoveKey
 
 Call this method to remove an element from the `CRBMap` object, given the key.
 
@@ -166,7 +166,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 [!code-cpp[NVC_ATL_Utilities#83](../../atl/codesnippet/cpp/crbmap-class_3.cpp)]
 
-##  <a name="setat"></a>  CRBMap::SetAt
+## <a name="setat"></a>  CRBMap::SetAt
 
 Call this method to insert an element pair into the map.
 

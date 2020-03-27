@@ -8,7 +8,7 @@ ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
 
 Replaceable parameters allow a Registrar's client to specify run-time data. To do this, the Registrar maintains a replacement map into which it enters the values associated with the replaceable parameters in your script. The Registrar makes these entries at run time.
 
-##  <a name="_atl_using_.25.module.25"></a> Using %MODULE%
+## <a name="_atl_using_.25.module.25"></a> Using %MODULE%
 
 The [ATL Control Wizard](../atl/reference/atl-control-wizard.md) automatically generates a script that uses `%MODULE%`. ATL uses this replaceable parameter for the actual location of your server's DLL or EXE.
 

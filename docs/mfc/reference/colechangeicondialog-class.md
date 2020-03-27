@@ -65,7 +65,7 @@ For more information about OLE-specific dialog boxes, see the article [Dialog Bo
 
 **Header:** afxodlgs.h
 
-##  <a name="colechangeicondialog"></a>  COleChangeIconDialog::COleChangeIconDialog
+## <a name="colechangeicondialog"></a>  COleChangeIconDialog::COleChangeIconDialog
 
 This function constructs only a `COleChangeIconDialog` object.
 
@@ -103,7 +103,7 @@ To display the dialog box, call the [DoModal](#domodal) function.
 
 For more information, see the [OLEUICHANGEICON](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) structure in the Windows SDK.
 
-##  <a name="dochangeicon"></a>  COleChangeIconDialog::DoChangeIcon
+## <a name="dochangeicon"></a>  COleChangeIconDialog::DoChangeIcon
 
 Call this function to change the icon representing the item to the one selected in the dialog box after [DoModal](#domodal) returns IDOK.
 
@@ -120,7 +120,7 @@ Points to the item whose icon is changing.
 
 Nonzero if change is successful; otherwise 0.
 
-##  <a name="domodal"></a>  COleChangeIconDialog::DoModal
+## <a name="domodal"></a>  COleChangeIconDialog::DoModal
 
 Call this function to display the OLE Change Icon dialog box.
 
@@ -144,7 +144,7 @@ If you want to initialize the various dialog box controls by setting members of 
 
 If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information that was input by the user into the dialog box.
 
-##  <a name="geticonicmetafile"></a>  COleChangeIconDialog::GetIconicMetafile
+## <a name="geticonicmetafile"></a>  COleChangeIconDialog::GetIconicMetafile
 
 Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.
 
@@ -156,7 +156,7 @@ HGLOBAL GetIconicMetafile() const;
 
 The handle to the metafile containing the iconic aspect of the new icon, if the dialog box was dismissed by choosing **OK**; otherwise, the icon as it was before the dialog was displayed.
 
-##  <a name="m_ci"></a>  COleChangeIconDialog::m_ci
+## <a name="m_ci"></a>  COleChangeIconDialog::m_ci
 
 Structure of type OLEUICHANGEICON used to control the behavior of the Change Icon dialog box.
 

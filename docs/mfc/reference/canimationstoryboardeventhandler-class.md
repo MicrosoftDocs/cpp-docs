@@ -48,7 +48,7 @@ This event handler is created and passed to `IUIAnimationStoryboard::SetStoryboa
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="canimationstoryboardeventhandler"></a>  CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler
+## <a name="canimationstoryboardeventhandler"></a>  CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler
 
 Constructs a CAnimationStoryboardEventHandler object.
 
@@ -56,7 +56,7 @@ Constructs a CAnimationStoryboardEventHandler object.
 CAnimationStoryboardEventHandler();
 ```
 
-##  <a name="createinstance"></a>  CAnimationStoryboardEventHandler::CreateInstance
+## <a name="createinstance"></a>  CAnimationStoryboardEventHandler::CreateInstance
 
 Creates an instance of CAnimationStoryboardEventHandler callback.
 
@@ -77,7 +77,7 @@ A pointer to animation controller, which will receive events.
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="onstoryboardstatuschanged"></a>  CAnimationStoryboardEventHandler::OnStoryboardStatusChanged
+## <a name="onstoryboardstatuschanged"></a>  CAnimationStoryboardEventHandler::OnStoryboardStatusChanged
 
 Handles OnStoryboardStatusChanged events, which occur when a storyboard's status changes
 
@@ -103,7 +103,7 @@ Specifies previous storyboard status.
 
 S_OK if the method succeeds; otherwise E_FAIL.
 
-##  <a name="onstoryboardupdated"></a>  CAnimationStoryboardEventHandler::OnStoryboardUpdated
+## <a name="onstoryboardupdated"></a>  CAnimationStoryboardEventHandler::OnStoryboardUpdated
 
 Handles OnStoryboardUpdated events, which occur when a storyboard is updated
 
@@ -120,7 +120,7 @@ A pointer to storyboard, which was updated.
 
 S_OK if the method succeeds; otherwise E_FAIL.
 
-##  <a name="setanimationcontroller"></a>  CAnimationStoryboardEventHandler::SetAnimationController
+## <a name="setanimationcontroller"></a>  CAnimationStoryboardEventHandler::SetAnimationController
 
 Stores a pointer to animation controller to route events.
 

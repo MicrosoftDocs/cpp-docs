@@ -14,7 +14,7 @@ To implement a window, derive a class from `CWindowImpl`. In your derived class,
 
 - [Subclass an existing window](#_atl_subclassing_an_existing_window)
 
-##  <a name="_atl_creating_a_window_based_on_a_new_windows_class"></a> Creating a Window Based on a New Windows Class
+## <a name="_atl_creating_a_window_based_on_a_new_windows_class"></a> Creating a Window Based on a New Windows Class
 
 `CWindowImpl` contains the [DECLARE_WND_CLASS](reference/window-class-macros.md#declare_wnd_class) macro to declare Windows class information. This macro implements the `GetWndClassInfo` function, which uses [CWndClassInfo](../atl/reference/cwndclassinfo-class.md) to define the information of a new Windows class. When `CWindowImpl::Create` is called, this Windows class is registered and a new window is created.
 
@@ -32,7 +32,7 @@ To create a window, create an instance of `CMyWindow` and then call the `Create`
 > [!NOTE]
 >  To override the default Windows class information, implement the `GetWndClassInfo` method in your derived class by setting the `CWndClassInfo` members to the appropriate values.
 
-##  <a name="_atl_superclassing_an_existing_windows_class"></a> Superclassing an Existing Windows Class
+## <a name="_atl_superclassing_an_existing_windows_class"></a> Superclassing an Existing Windows Class
 
 The [DECLARE_WND_SUPERCLASS](reference/window-class-macros.md#declare_wnd_superclass) macro allows you to create a window that superclasses an existing Windows class. Specify this macro in your `CWindowImpl`-derived class. Like any other ATL window, messages are handled by a message map.
 
@@ -46,7 +46,7 @@ Following is an example of a class that superclasses the standard Edit class:
 
 To create the superclassed Edit window, create an instance of `CMyEdit` and then call the `Create` method.
 
-##  <a name="_atl_subclassing_an_existing_window"></a> Subclassing an Existing Window
+## <a name="_atl_subclassing_an_existing_window"></a> Subclassing an Existing Window
 
 To subclass an existing window, derive a class from `CWindowImpl` and declare a message map, as in the two previous cases. Note, however, that you do not specify any Windows class information, since you will subclass an already existing window.
 

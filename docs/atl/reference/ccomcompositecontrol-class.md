@@ -84,7 +84,7 @@ A control implemented by a `CComCompositeControl`-derived class has default tabb
 
 **Header:** atlctl.h
 
-##  <a name="advisesinkmap"></a>  CComCompositeControl::AdviseSinkMap
+## <a name="advisesinkmap"></a>  CComCompositeControl::AdviseSinkMap
 
 Call this method to advise or unadvise all controls hosted by the composite control.
 
@@ -112,7 +112,7 @@ True if all controls are to be advised; otherwise false.
 
 The base implementation of this method searches through the entries in the event sink map. It then advises or unadvises the connection points to the COM objects described by the event sink map's sink entries. This member method also relies on the fact that the derived class inherits from one instance of `IDispEventImpl` for every control in the sink map that is to be advised or unadvised.
 
-##  <a name="calcextent"></a>  CComCompositeControl::CalcExtent
+## <a name="calcextent"></a>  CComCompositeControl::CalcExtent
 
 Call this method to calculate the size in HIMETRIC units of the dialog resource used to host the composite control.
 
@@ -133,7 +133,7 @@ TRUE if the control is hosted by a dialog box; otherwise FALSE.
 
 The size is returned in the *size* parameter.
 
-##  <a name="create"></a>  CComCompositeControl::Create
+## <a name="create"></a>  CComCompositeControl::Create
 
 This method is called to create the control window for the composite control.
 
@@ -163,7 +163,7 @@ A handle to the newly created composite control dialog box.
 
 This method is usually called during in-place activation of the control.
 
-##  <a name="ccomcompositecontrol"></a>  CComCompositeControl::CComCompositeControl
+## <a name="ccomcompositecontrol"></a>  CComCompositeControl::CComCompositeControl
 
 The constructor.
 
@@ -175,7 +175,7 @@ CComCompositeControl();
 
 Initializes the [CComCompositeControl::m_hbrBackground](#m_hbrbackground) and [CComCompositeControl::m_hWndFocus](#m_hwndfocus) data members to NULL.
 
-##  <a name="dtor"></a>  CComCompositeControl::~CComCompositeControl
+## <a name="dtor"></a>  CComCompositeControl::~CComCompositeControl
 
 The destructor.
 
@@ -187,7 +187,7 @@ The destructor.
 
 Deletes the background object, if it exists.
 
-##  <a name="createcontrolwindow"></a>  CComCompositeControl::CreateControlWindow
+## <a name="createcontrolwindow"></a>  CComCompositeControl::CreateControlWindow
 
 Call this method to create the control window and advise any hosted controls.
 
@@ -213,7 +213,7 @@ Returns a handle to the newly created composite control dialog box.
 
 This method calls [CComCompositeControl::Create](#create) and [CComCompositeControl::AdviseSinkMap](#advisesinkmap).
 
-##  <a name="m_hbrbackground"></a>  CComCompositeControl::m_hbrBackground
+## <a name="m_hbrbackground"></a>  CComCompositeControl::m_hbrBackground
 
 The background brush.
 
@@ -221,7 +221,7 @@ The background brush.
 HBRUSH m_hbrBackground;
 ```
 
-##  <a name="m_hwndfocus"></a>  CComCompositeControl::m_hWndFocus
+## <a name="m_hwndfocus"></a>  CComCompositeControl::m_hWndFocus
 
 The handle of the window that currently has focus.
 
@@ -229,7 +229,7 @@ The handle of the window that currently has focus.
 HWND m_hWndFocus;
 ```
 
-##  <a name="setbackgroundcolorfromambient"></a>  CComCompositeControl::SetBackgroundColorFromAmbient
+## <a name="setbackgroundcolorfromambient"></a>  CComCompositeControl::SetBackgroundColorFromAmbient
 
 Call this method to set the background color of the composite control using the container's background color.
 

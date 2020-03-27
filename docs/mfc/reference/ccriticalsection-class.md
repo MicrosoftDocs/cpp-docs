@@ -73,7 +73,7 @@ For more information on using `CCriticalSection` objects, see the article [Multi
 
 **Header:** afxmt.h
 
-##  <a name="ccriticalsection"></a>  CCriticalSection::CCriticalSection
+## <a name="ccriticalsection"></a>  CCriticalSection::CCriticalSection
 
 Constructs a `CCriticalSection` object.
 
@@ -91,7 +91,7 @@ If the constructor fails to allocate the required system memory, a memory except
 
   See the example for [CCriticalSection::Lock](#lock).
 
-##  <a name="lock"></a>  CCriticalSection::Lock
+## <a name="lock"></a>  CCriticalSection::Lock
 
 Call this member function to gain access to the critical section object.
 
@@ -123,7 +123,7 @@ This example demonstrates the nested critical section approach by controlling ac
 
 [!code-cpp[NVC_MFC_Utilities#11](../../mfc/codesnippet/cpp/ccriticalsection-class_1.h)]
 
-##  <a name="m_sect"></a>  CCriticalSection::m_sect
+## <a name="m_sect"></a>  CCriticalSection::m_sect
 
 Contains a critical section object that is used by all `CCriticalSection` methods.
 
@@ -131,7 +131,7 @@ Contains a critical section object that is used by all `CCriticalSection` method
 CRITICAL_SECTION m_sect;
 ```
 
-##  <a name="operator_critical_section_star"></a>  CCriticalSection::operator CRITICAL_SECTION*
+## <a name="operator_critical_section_star"></a>  CCriticalSection::operator CRITICAL_SECTION*
 
 Retrieves a CRITICAL_SECTION object.
 
@@ -143,7 +143,7 @@ operator CRITICAL_SECTION*();
 
 Call this function to retrieve a pointer to the internal CRITICAL_SECTION object.
 
-##  <a name="unlock"></a>  CCriticalSection::Unlock
+## <a name="unlock"></a>  CCriticalSection::Unlock
 
 Releases the `CCriticalSection` object for use by another thread.
 

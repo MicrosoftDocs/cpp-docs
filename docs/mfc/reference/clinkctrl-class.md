@@ -63,7 +63,7 @@ For more information, see [SysLink Control](/windows/win32/Controls/syslink-over
 
 **Header:** afxcmn.h
 
-##  <a name="clinkctrl"></a>  CLinkCtrl::CLinkCtrl
+## <a name="clinkctrl"></a>  CLinkCtrl::CLinkCtrl
 
 Constructs a `CLinkCtrl` object.
 
@@ -71,7 +71,7 @@ Constructs a `CLinkCtrl` object.
 CLinkCtrl();
 ```
 
-##  <a name="create"></a>  CLinkCtrl::Create
+## <a name="create"></a>  CLinkCtrl::Create
 
 Creates a link control and attaches it to a `CLinkCtrl` object.
 
@@ -128,7 +128,7 @@ The following code example creates one link control based on the location of ano
 
 [!code-cpp[NVC_MFC_CLinkCtrl_s1#1](../../mfc/reference/codesnippet/cpp/clinkctrl-class_2.cpp)]
 
-##  <a name="createex"></a>  CLinkCtrl::CreateEx
+## <a name="createex"></a>  CLinkCtrl::CreateEx
 
 Creates a link control with extended styles and attaches it to a `CLinkCtrl` object.
 
@@ -178,7 +178,7 @@ Use `CreateEx` instead of [Create](#create) to apply extended Windows style cons
 
 The second form of the `CreateEx` method is deprecated. Use the first form that specifies the *lpszLinkMarkup* parameter.
 
-##  <a name="getidealheight"></a>  CLinkCtrl::GetIdealHeight
+## <a name="getidealheight"></a>  CLinkCtrl::GetIdealHeight
 
 Retrieves the ideal height of the link control.
 
@@ -194,7 +194,7 @@ The ideal height of the control, in pixels.
 
 This member function implements the behavior of the Win32 message [LM_GETIDEALHEIGHT](/windows/win32/Controls/lm-getidealheight), as described in the Windows SDK.
 
-##  <a name="getidealsize"></a>  CLinkCtrl::GetIdealSize
+## <a name="getidealsize"></a>  CLinkCtrl::GetIdealSize
 
 Calculates the preferred height of the link text for the current link control, depending on the specified width of the link.
 
@@ -221,7 +221,7 @@ For an example of the `GetIdealSize` method, see the example in [CLinkCtrl::Crea
 
 This method sends the [LM_GETIDEALSIZE](/windows/win32/Controls/lm-getidealsize) message, which is described in the Windows SDK.
 
-##  <a name="getitem"></a>  CLinkCtrl::GetItem
+## <a name="getitem"></a>  CLinkCtrl::GetItem
 
 Retrieves the states and attributes of a link control item.
 
@@ -242,7 +242,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function implements the behavior of the Win32 message [LM_GETITEM](/windows/win32/Controls/lm-getitem), as described in the Windows SDK.
 
-##  <a name="getitemid"></a>  CLinkCtrl::GetItemID
+## <a name="getitemid"></a>  CLinkCtrl::GetItemID
 
 Retrieves the ID of a link control item.
 
@@ -282,7 +282,7 @@ Returns TRUE on success, FALSE on failure.
 
 Retrieves the ID of a specific link control item. For more information, see the Win32 message [LM_GETITEM](/windows/win32/Controls/lm-getitem) in the Windows SDK.
 
-##  <a name="getitemstate"></a>  CLinkCtrl::GetItemState
+## <a name="getitemstate"></a>  CLinkCtrl::GetItemState
 
 Retrieves the state of the link control item.
 
@@ -312,7 +312,7 @@ Returns TRUE on success, FALSE on failure.
 
 Retrieves the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_GETITEM](/windows/win32/Controls/lm-getitem) in the Windows SDK.
 
-##  <a name="getitemurl"></a>  CLinkCtrl::GetItemUrl
+## <a name="getitemurl"></a>  CLinkCtrl::GetItemUrl
 
 Retrieves the URL represented by the link control item.
 
@@ -352,7 +352,7 @@ Returns TRUE on success, FALSE on failure.
 
 Retrieves the URL represented by the specified link control item. For more information, see the Win32 message [LM_GETITEM](/windows/win32/Controls/lm-getitem) in the Windows SDK.
 
-##  <a name="hittest"></a>  CLinkCtrl::HitTest
+## <a name="hittest"></a>  CLinkCtrl::HitTest
 
 Determines if the user clicked the specified link.
 
@@ -373,7 +373,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function implements the behavior of the Win32 message [LM_HITTEST](/windows/win32/Controls/lm-hittest), as described in the Windows SDK.
 
-##  <a name="setitem"></a>  CLinkCtrl::SetItem
+## <a name="setitem"></a>  CLinkCtrl::SetItem
 
 Sets the states and attributes of a link control item.
 
@@ -394,7 +394,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function implements the behavior of the Win32 message [LM_SETITEM](/windows/win32/Controls/lm-setitem), as described in the Windows SDK.
 
-##  <a name="setitemid"></a>  CLinkCtrl::SetItemID
+## <a name="setitemid"></a>  CLinkCtrl::SetItemID
 
 Retrieves the ID of a link control item.
 
@@ -420,7 +420,7 @@ Returns TRUE on success, FALSE on failure.
 
 Sets the ID of a specific link control item. For more information, see the Win32 message [LM_SETITEM](/windows/win32/Controls/lm-setitem) in the Windows SDK.
 
-##  <a name="setitemstate"></a>  CLinkCtrl::SetItemState
+## <a name="setitemstate"></a>  CLinkCtrl::SetItemState
 
 Retrieves the state of the link control item.
 
@@ -450,7 +450,7 @@ Returns TRUE on success, FALSE on failure.
 
 Sets the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_SETITEM](/windows/win32/Controls/lm-setitem) in the Windows SDK.
 
-##  <a name="setitemurl"></a>  CLinkCtrl::SetItemUrl
+## <a name="setitemurl"></a>  CLinkCtrl::SetItemUrl
 
 Sets the URL represented by the link control item.
 

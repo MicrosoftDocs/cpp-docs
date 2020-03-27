@@ -19,7 +19,7 @@ These macros define service maps and entries.
 
 **Header:** atlcom.h
 
-##  <a name="begin_service_map"></a>  BEGIN_SERVICE_MAP
+## <a name="begin_service_map"></a>  BEGIN_SERVICE_MAP
 
 Marks the beginning of the service map.
 
@@ -44,7 +44,7 @@ Use the service map to implement service provider functionality on your COM obje
 
 [!code-cpp[NVC_ATL_COM#57](../../atl/codesnippet/cpp/service-map-macros_1.h)]
 
-##  <a name="end_service_map"></a>  END_SERVICE_MAP
+## <a name="end_service_map"></a>  END_SERVICE_MAP
 
 Marks the end of the service map.
 
@@ -56,7 +56,7 @@ END_SERVICE_MAP()
 
 See the example for [BEGIN_SERVICE_MAP](#begin_service_map).
 
-##  <a name="service_entry"></a>  SERVICE_ENTRY
+## <a name="service_entry"></a>  SERVICE_ENTRY
 
 Indicates that the object supports the service id specified by *SID*.
 
@@ -73,7 +73,7 @@ The service ID.
 
 See the example for [BEGIN_SERVICE_MAP](#begin_service_map).
 
-##  <a name="service_entry_chain"></a>  SERVICE_ENTRY_CHAIN
+## <a name="service_entry_chain"></a>  SERVICE_ENTRY_CHAIN
 
 Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to the object specified by *punk*.
 
@@ -90,7 +90,7 @@ A pointer to the **IUnknown** interface to which to chain.
 
 See the example for [BEGIN_SERVICE_MAP](#begin_service_map).
 
-##  <a name="queryservice"></a>  IServiceProviderImpl::QueryService
+## <a name="queryservice"></a>  IServiceProviderImpl::QueryService
 
 Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.
 

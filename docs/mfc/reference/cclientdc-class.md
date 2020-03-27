@@ -47,7 +47,7 @@ For more information on `CClientDC`, see [Device Contexts](../../mfc/device-cont
 
 **Header:** afxwin.h
 
-##  <a name="cclientdc"></a>  CClientDC::CClientDC
+## <a name="cclientdc"></a>  CClientDC::CClientDC
 
 Constructs a `CClientDC` object that accesses the client area of the [CWnd](../../mfc/reference/cwnd-class.md) pointed to by *pWnd*.
 
@@ -70,7 +70,7 @@ An exception (of type `CResourceException`) is thrown if the Windows `GetDC` cal
 
 [!code-cpp[NVC_MFCDocView#42](../../mfc/codesnippet/cpp/cclientdc-class_1.cpp)]
 
-##  <a name="m_hwnd"></a>  CClientDC::m_hWnd
+## <a name="m_hwnd"></a>  CClientDC::m_hWnd
 
 The `HWND` of the `CWnd` pointer used to construct the `CClientDC` object.
 

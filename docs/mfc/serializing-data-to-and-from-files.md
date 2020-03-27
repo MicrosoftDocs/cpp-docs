@@ -22,11 +22,11 @@ The MFC Application Wizard places a skeletal override of the `CDocument` member 
 
 - [Bypassing the serialization mechanism](../mfc/bypassing-the-serialization-mechanism.md)
 
-##  <a name="_core_the_document.92.s_role_in_serialization"></a> The Document's Role in Serialization
+## <a name="_core_the_document.92.s_role_in_serialization"></a> The Document's Role in Serialization
 
 The framework responds automatically to the File menu's Open, Save, and Save As commands by calling the document's `Serialize` member function if it is implemented. An ID_FILE_OPEN command, for example, calls a handler function in the application object. During this process, the user sees and responds to the File Open dialog box and the framework obtains the filename the user chooses. The framework creates a `CArchive` object set up for loading data into the document and passes the archive to `Serialize`. The framework has already opened the file. The code in your document's `Serialize` member function reads the data in through the archive, reconstructing data objects as needed. For more information about serialization, see the article [Serialization](../mfc/serialization-in-mfc.md).
 
-##  <a name="_core_the_data.92.s_role_in_serialization"></a> The Data's Role in Serialization
+## <a name="_core_the_data.92.s_role_in_serialization"></a> The Data's Role in Serialization
 
 In general, class-type data should be able to serialize itself. That is, when you pass an object to an archive, the object should know how to write itself to the archive and how to read itself from the archive. MFC provides support for making classes serializable in this way. If you design a class to define a data type and you intend to serialize data of that type, design for serialization.
 

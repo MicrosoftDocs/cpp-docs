@@ -62,7 +62,7 @@ If you create a `CStatic` object within a window, you may also need to destroy i
 
 **Header:** afxwin.h
 
-##  <a name="create"></a>  CStatic::Create
+## <a name="create"></a>  CStatic::Create
 
 Creates the Windows static control and attaches it to the `CStatic` object.
 
@@ -124,7 +124,7 @@ For cursors, bitmaps, or icons, you may also want to use the following style:
 
 [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]
 
-##  <a name="cstatic"></a>  CStatic::CStatic
+## <a name="cstatic"></a>  CStatic::CStatic
 
 Constructs a `CStatic` object.
 
@@ -136,7 +136,7 @@ CStatic();
 
 [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/cpp/cstatic-class_2.cpp)]
 
-##  <a name="drawitem"></a>  CStatic::DrawItem
+## <a name="drawitem"></a>  CStatic::DrawItem
 
 Called by the framework to draw an owner-drawn static control.
 
@@ -153,7 +153,7 @@ A pointer to a [DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemst
 
 Override this function to implement drawing for an owner-drawn `CStatic` object (the control has the style SS_OWNERDRAW).
 
-##  <a name="getbitmap"></a>  CStatic::GetBitmap
+## <a name="getbitmap"></a>  CStatic::GetBitmap
 
 Gets the handle of the bitmap, previously set with [SetBitmap](#setbitmap), that is associated with `CStatic`.
 
@@ -169,7 +169,7 @@ A handle to the current bitmap, or NULL if no bitmap has been set.
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-##  <a name="getcursor"></a>  CStatic::GetCursor
+## <a name="getcursor"></a>  CStatic::GetCursor
 
 Gets the handle of the cursor, previously set with [SetCursor](#setcursor), that is associated with `CStatic`.
 
@@ -185,7 +185,7 @@ A handle to the current cursor, or NULL if no cursor has been set.
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-##  <a name="getenhmetafile"></a>  CStatic::GetEnhMetaFile
+## <a name="getenhmetafile"></a>  CStatic::GetEnhMetaFile
 
 Gets the handle of the enhanced metafile, previously set with [SetEnhMetafile](#setenhmetafile), that is associated with `CStatic`.
 
@@ -201,7 +201,7 @@ A handle to the current enhanced metafile, or NULL if no enhanced metafile has b
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-##  <a name="geticon"></a>  CStatic::GetIcon
+## <a name="geticon"></a>  CStatic::GetIcon
 
 Gets the handle of the icon, previously set with [SetIcon](#seticon), that is associated with `CStatic`.
 
@@ -217,7 +217,7 @@ A handle to the current icon, or NULL if no icon has been set.
 
 [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]
 
-##  <a name="setbitmap"></a>  CStatic::SetBitmap
+## <a name="setbitmap"></a>  CStatic::SetBitmap
 
 Associates a new bitmap with the static control.
 
@@ -260,7 +260,7 @@ The following example creates two `CStatic` objects on the heap. It then loads o
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-##  <a name="setcursor"></a>  CStatic::SetCursor
+## <a name="setcursor"></a>  CStatic::SetCursor
 
 Associates a new cursor image with the static control.
 
@@ -291,7 +291,7 @@ You can use various window and static control styles, including the following:
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-##  <a name="setenhmetafile"></a>  CStatic::SetEnhMetaFile
+## <a name="setenhmetafile"></a>  CStatic::SetEnhMetaFile
 
 Associates a new enhanced metafile image with the static control.
 
@@ -320,7 +320,7 @@ You can use various window and static control styles, including the following:
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-##  <a name="seticon"></a>  CStatic::SetIcon
+## <a name="seticon"></a>  CStatic::SetIcon
 
 Associates a new icon image with the static control.
 

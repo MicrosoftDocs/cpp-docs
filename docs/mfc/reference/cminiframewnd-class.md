@@ -54,7 +54,7 @@ For more information on how to use `CMiniFrameWnd` objects, see the article [Doc
 
 **Header:** afxwin.h
 
-##  <a name="cminiframewnd"></a>  CMiniFrameWnd::CMiniFrameWnd
+## <a name="cminiframewnd"></a>  CMiniFrameWnd::CMiniFrameWnd
 
 Constructs a `CMiniFrameWnd` object, but does not create the window.
 
@@ -66,7 +66,7 @@ CMiniFrameWnd();
 
 To create the window, call [CMiniFrameWnd::Create](#create).
 
-##  <a name="create"></a>  CMiniFrameWnd::Create
+## <a name="create"></a>  CMiniFrameWnd::Create
 
 Creates the Windows mini-frame window and attaches it to the `CMiniFrameWnd` object.
 
@@ -132,7 +132,7 @@ Nonzero if successful; otherwise 0.
 
 `Create` initializes the window's class name and window name and registers default values for its style and parent.
 
-##  <a name="createex"></a>  CMiniFrameWnd::CreateEx
+## <a name="createex"></a>  CMiniFrameWnd::CreateEx
 
 Creates a `CMiniFrameWnd` object.
 

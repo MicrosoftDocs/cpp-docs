@@ -59,7 +59,7 @@ The following example demonstrates how to use various methods in the `CMFCToolBa
 
 **Header:** afxtoolbarfontcombobox.h
 
-##  <a name="cmfctoolbarfontsizecombobox"></a>  CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox
+## <a name="cmfctoolbarfontsizecombobox"></a>  CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox
 
 Constructs a `CMFCToolBarFontSizeComboBox` object.
 
@@ -67,7 +67,7 @@ Constructs a `CMFCToolBarFontSizeComboBox` object.
 CMFCToolBarFontSizeComboBox();
 ```
 
-##  <a name="gettwipsize"></a>  CMFCToolBarFontSizeComboBox::GetTwipSize
+## <a name="gettwipsize"></a>  CMFCToolBarFontSizeComboBox::GetTwipSize
 
 Retrieves the font size, in twips, from the text box of a font size combo box.
 
@@ -79,7 +79,7 @@ int GetTwipSize() const;
 
 If the return value is positive, it is the font size in twips. It is -1 if the text box of the combo box is empty. It is -2 if an error occurs.
 
-##  <a name="rebuildfontsizes"></a>  CMFCToolBarFontSizeComboBox::RebuildFontSizes
+## <a name="rebuildfontsizes"></a>  CMFCToolBarFontSizeComboBox::RebuildFontSizes
 
 Fills a font size combo box with all valid sizes of the given font.
 
@@ -96,7 +96,7 @@ void RebuildFontSizes(const CString& strFontName);
 
 Call this function when you want to synchronize between selection in a font combo box and a font size combo box, such as a [CMFCToolBarFontComboBox Class](../../mfc/reference/cmfctoolbarfontcombobox-class.md).
 
-##  <a name="settwipsize"></a>  CMFCToolBarFontSizeComboBox::SetTwipSize
+## <a name="settwipsize"></a>  CMFCToolBarFontSizeComboBox::SetTwipSize
 
 Rounds the specified size (in twips) to the nearest size in points, and then sets the selected size in the combo box to that value.
 

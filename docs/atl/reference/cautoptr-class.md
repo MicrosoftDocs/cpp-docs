@@ -75,7 +75,7 @@ See also [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) and [CAutoP
 
 [!code-cpp[NVC_ATL_Utilities#74](../../atl/codesnippet/cpp/cautoptr-class_1.cpp)]
 
-##  <a name="attach"></a>  CAutoPtr::Attach
+## <a name="attach"></a>  CAutoPtr::Attach
 
 Call this method to take ownership of an existing pointer.
 
@@ -98,7 +98,7 @@ In debug builds, an assertion failure will occur if the [CAutoPtr::m_p](#m_p) da
 
 See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).
 
-##  <a name="cautoptr"></a>  CAutoPtr::CAutoPtr
+## <a name="cautoptr"></a>  CAutoPtr::CAutoPtr
 
 The constructor.
 
@@ -129,7 +129,7 @@ The `CAutoPtr` object can be created using an existing pointer, in which case it
 
 See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).
 
-##  <a name="dtor"></a>  CAutoPtr::~CAutoPtr
+## <a name="dtor"></a>  CAutoPtr::~CAutoPtr
 
 The destructor.
 
@@ -141,7 +141,7 @@ The destructor.
 
 Frees any allocated resources. Calls [CAutoPtr::Free](#free).
 
-##  <a name="detach"></a>  CAutoPtr::Detach
+## <a name="detach"></a>  CAutoPtr::Detach
 
 Call this method to release ownership of a pointer.
 
@@ -161,7 +161,7 @@ Releases ownership of a pointer, sets the [CAutoPtr::m_p](#m_p) data member vari
 
 See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).
 
-##  <a name="free"></a>  CAutoPtr::Free
+## <a name="free"></a>  CAutoPtr::Free
 
 Call this method to delete an object pointed to by a `CAutoPtr`.
 
@@ -173,7 +173,7 @@ void Free() throw();
 
 The object pointed to by the `CAutoPtr` is freed, and the [CAutoPtr::m_p](#m_p) data member variable is set to NULL.
 
-##  <a name="m_p"></a>  CAutoPtr::m_p
+## <a name="m_p"></a>  CAutoPtr::m_p
 
 The pointer data member variable.
 
@@ -185,7 +185,7 @@ T* m_p;
 
 This member variable holds the pointer information.
 
-##  <a name="operator_eq"></a>  CAutoPtr::operator =
+## <a name="operator_eq"></a>  CAutoPtr::operator =
 
 The assignment operator.
 
@@ -217,7 +217,7 @@ The assignment operator detaches the `CAutoPtr` object from any current pointer 
 
 See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).
 
-##  <a name="operator_ptr"></a>  CAutoPtr::operator -&gt;
+## <a name="operator_ptr"></a>  CAutoPtr::operator -&gt;
 
 The pointer-to-member operator.
 
@@ -237,7 +237,7 @@ Use this operator to call a method in a class pointed to by the `CAutoPtr` objec
 
 See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).
 
-##  <a name="operator_t_star"></a>  CAutoPtr::operator T*
+## <a name="operator_t_star"></a>  CAutoPtr::operator T*
 
 The cast operator.
 

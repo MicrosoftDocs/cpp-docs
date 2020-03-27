@@ -58,7 +58,7 @@ Your class derived from `CAtlModuleT`.
 
 **Header:** atlbase.h
 
-##  <a name="catlmodulet"></a>  CAtlModuleT::CAtlModuleT
+## <a name="catlmodulet"></a>  CAtlModuleT::CAtlModuleT
 
 The constructor.
 
@@ -70,7 +70,7 @@ CAtlModuleT() throw();
 
 Calls [CAtlModuleT::InitLibId](#initlibid).
 
-##  <a name="initlibid"></a>  CAtlModuleT::InitLibId
+## <a name="initlibid"></a>  CAtlModuleT::InitLibId
 
 Initializes the data member containing the GUID of the current module.
 
@@ -82,7 +82,7 @@ static void InitLibId() throw();
 
 Called by the constructor [CAtlModuleT::CAtlModuleT](#catlmodulet).
 
-##  <a name="registerappid"></a>  CAtlModuleT::RegisterAppId
+## <a name="registerappid"></a>  CAtlModuleT::RegisterAppId
 
 Adds the EXE to the registry.
 
@@ -94,7 +94,7 @@ HRESULT RegisterAppId() throw();
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="registerserver"></a>  CAtlModuleT::RegisterServer
+## <a name="registerserver"></a>  CAtlModuleT::RegisterServer
 
 Adds the service to the registry.
 
@@ -116,7 +116,7 @@ Points to the CLSID of the object to be registered. If NULL (the default value),
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="unregisterappid"></a>  CAtlModuleT::UnregisterAppId
+## <a name="unregisterappid"></a>  CAtlModuleT::UnregisterAppId
 
 Removes the EXE from the registry.
 
@@ -128,7 +128,7 @@ HRESULT UnregisterAppId() throw();
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="unregisterserver"></a>  CAtlModuleT::UnregisterServer
+## <a name="unregisterserver"></a>  CAtlModuleT::UnregisterServer
 
 Removes the service from the registry.
 
@@ -150,7 +150,7 @@ Points to the CLSID of the object to be unregistered. If NULL (the default value
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="updateregistryappid"></a>  CAtlModuleT::UpdateRegistryAppId
+## <a name="updateregistryappid"></a>  CAtlModuleT::UpdateRegistryAppId
 
 Updates the EXE information in the registry.
 

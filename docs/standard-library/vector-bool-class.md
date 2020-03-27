@@ -191,7 +191,7 @@ bool* pb = &vb[1]; // conversion error - do not use
 bool& refb = vb[1];   // conversion error - do not use
 ```
 
-###  <a name="reference_flip"></a>  vector\<bool>::reference::flip
+### <a name="reference_flip"></a>  vector\<bool>::reference::flip
 
 Inverts the Boolean value of a referenced [vector\<bool>](../standard-library/vector-bool-class.md) element.
 
@@ -238,7 +238,7 @@ The vector with first element flipped is:
     false false false true true
 ```
 
-###  <a name="reference_operator_bool"></a>  vector\<bool>::reference::operator bool
+### <a name="reference_operator_bool"></a>  vector\<bool>::reference::operator bool
 
 Provides an implicit conversion from `vector<bool>::reference` to **bool**.
 
@@ -254,7 +254,7 @@ The Boolean value of the element of the vector\<bool> object.
 
 The `vector<bool>` object cannot be modified by this operator.
 
-###  <a name="reference_operator_eq"></a>  vector\<bool>::reference::operator=
+### <a name="reference_operator_eq"></a>  vector\<bool>::reference::operator=
 
 Assigns a Boolean value to a bit, or the value held by a referenced element to a bit.
 

@@ -53,7 +53,7 @@ During a cubic transition, the value of the animation variable changes from its 
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="ccubictransition"></a>  CCubicTransition::CCubicTransition
+## <a name="ccubictransition"></a>  CCubicTransition::CCubicTransition
 
 Constructs a transition object and initializes its parameters.
 
@@ -75,7 +75,7 @@ The value of the animation variable at the end of the transition.
 *finalVelocity*<br/>
 The velocity of the variable at the end of the transition.
 
-##  <a name="create"></a>  CCubicTransition::Create
+## <a name="create"></a>  CCubicTransition::Create
 
 Calls the transition library to create encapsulated transition COM object.
 
@@ -94,7 +94,7 @@ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/win32/api/uia
 
 TRUE if transition is created successfully; otherwise FALSE.
 
-##  <a name="m_dblfinalvalue"></a>  CCubicTransition::m_dblFinalValue
+## <a name="m_dblfinalvalue"></a>  CCubicTransition::m_dblFinalValue
 
 The value of the animation variable at the end of the transition.
 
@@ -102,7 +102,7 @@ The value of the animation variable at the end of the transition.
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_dblfinalvelocity"></a>  CCubicTransition::m_dblFinalVelocity
+## <a name="m_dblfinalvelocity"></a>  CCubicTransition::m_dblFinalVelocity
 
 The velocity of the variable at the end of the transition.
 
@@ -110,7 +110,7 @@ The velocity of the variable at the end of the transition.
 DOUBLE m_dblFinalVelocity;
 ```
 
-##  <a name="m_duration"></a>  CCubicTransition::m_duration
+## <a name="m_duration"></a>  CCubicTransition::m_duration
 
 The duration of the transition.
 

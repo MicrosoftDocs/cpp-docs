@@ -31,7 +31,7 @@ class CComSimpleThreadAllocator
 
 **Header:** atlbase.h
 
-##  <a name="getthread"></a>  CComSimpleThreadAllocator::GetThread
+## <a name="getthread"></a>  CComSimpleThreadAllocator::GetThread
 
 Selects a thread by specifying the next thread in the sequence.
 

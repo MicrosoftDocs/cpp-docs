@@ -53,7 +53,7 @@ The framework uses this class to display a palette bar in an image editor dialog
 
 **Header:** afximageeditordialog.h
 
-##  <a name="getrowheight"></a>  CMFCImageEditorPaletteBar::GetRowHeight
+## <a name="getrowheight"></a>  CMFCImageEditorPaletteBar::GetRowHeight
 
 Returns the height of toolbar buttons.
 
@@ -65,7 +65,7 @@ virtual int GetRowHeight() const;
 
 The height of each button on the toolbar.
 
-##  <a name="isbuttonextrasizeavailable"></a>  CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable
+## <a name="isbuttonextrasizeavailable"></a>  CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable
 
 Determines whether the toolbar can display buttons that have extended borders.
 

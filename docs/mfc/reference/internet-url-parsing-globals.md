@@ -22,7 +22,7 @@ When a client sends a query to the Internet server, you can use one of the URL p
 |[AfxThrowInternetException](#afxthrowinternetexception)|Throws an exception related to the internet connection.|
 |[AfxGetInternetHandleType](#afxgetinternethandletype)|Determines the type of an Internet handle.|
 
-##  <a name="afxparseurl"></a>  AfxParseURL
+## <a name="afxparseurl"></a>  AfxParseURL
 
 This global is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
 
@@ -107,7 +107,7 @@ For example, `AfxParseURL` parses URLs of the form *service://server/dir/dir/obj
 
   **Header** afxinet.h
 
-##  <a name="afxparseurlex"></a>  AfxParseURLEx
+## <a name="afxparseurlex"></a>  AfxParseURLEx
 
 This global function is the extended version of [AfxParseURL](#afxparseurl) and is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
 

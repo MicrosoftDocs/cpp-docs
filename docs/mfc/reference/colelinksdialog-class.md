@@ -66,7 +66,7 @@ For more information regarding OLE-specific dialog boxes, see the article [Dialo
 
 **Header:** afxodlgs.h
 
-##  <a name="domodal"></a>  COleLinksDialog::DoModal
+## <a name="domodal"></a>  COleLinksDialog::DoModal
 
 Displays the OLE Edit Links dialog box.
 
@@ -88,7 +88,7 @@ Completion status for the dialog box. One of the following values:
 
 If you want to initialize the various dialog box controls by setting members of the [m_el](#m_el) structure, you should do it before calling `DoModal`, but after the dialog object is constructed.
 
-##  <a name="colelinksdialog"></a>  COleLinksDialog::COleLinksDialog
+## <a name="colelinksdialog"></a>  COleLinksDialog::COleLinksDialog
 
 Constructs a `COleLinksDialog` object.
 
@@ -118,7 +118,7 @@ Points to the parent or owner window object (of type `CWnd`) to which the dialog
 
 This function constructs only a `COleLinksDialog` object. To display the dialog box, call the [DoModal](#domodal) function.
 
-##  <a name="m_el"></a>  COleLinksDialog::m_el
+## <a name="m_el"></a>  COleLinksDialog::m_el
 
 Structure of type OLEUIEDITLINKS used to control the behavior of the Edit Links dialog box.
 

@@ -76,7 +76,7 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 **Header:** atlconv.h
 
-##  <a name="ca2aex"></a>  CA2AEX::CA2AEX
+## <a name="ca2aex"></a>  CA2AEX::CA2AEX
 
 The constructor.
 
@@ -97,7 +97,7 @@ Unused in this class.
 
 Creates the buffer required for the translation.
 
-##  <a name="dtor"></a>  CA2AEX::~CA2AEX
+## <a name="dtor"></a>  CA2AEX::~CA2AEX
 
 The destructor.
 
@@ -109,7 +109,7 @@ The destructor.
 
 Frees the allocated buffer.
 
-##  <a name="m_psz"></a>  CA2AEX::m_psz
+## <a name="m_psz"></a>  CA2AEX::m_psz
 
 The data member that stores the source string.
 
@@ -117,7 +117,7 @@ The data member that stores the source string.
 LPSTR m_psz;
 ```
 
-##  <a name="m_szbuffer"></a>  CA2AEX::m_szBuffer
+## <a name="m_szbuffer"></a>  CA2AEX::m_szBuffer
 
 The static buffer, used to store the converted string.
 
@@ -125,7 +125,7 @@ The static buffer, used to store the converted string.
 char m_szBuffer[ t_nBufferLength];
 ```
 
-##  <a name="operator_lpstr"></a>  CA2AEX::operator LPSTR
+## <a name="operator_lpstr"></a>  CA2AEX::operator LPSTR
 
 Conversion operator.
 

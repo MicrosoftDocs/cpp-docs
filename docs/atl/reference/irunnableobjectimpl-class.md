@@ -52,7 +52,7 @@ The [IRunnableObject](/windows/win32/api/objidl/nn-objidl-irunnableobject) inter
 
 **Header:** atlctl.h
 
-##  <a name="getrunningclass"></a>  IRunnableObjectImpl::GetRunningClass
+## <a name="getrunningclass"></a>  IRunnableObjectImpl::GetRunningClass
 
 Returns the CLSID of the running control.
 
@@ -68,7 +68,7 @@ The ATL implementation sets \* *lpClsid* to GUID_NULL and returns E_UNEXPECTED.
 
 See [IRunnableObject::GetRunningClass](/windows/win32/api/objidl/nf-objidl-irunnableobject-getrunningclass) in the Windows SDK.
 
-##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning
+## <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning
 
 Determines if the control is running.
 
@@ -84,7 +84,7 @@ The ATL implementation returns TRUE.
 
 See [IRunnableObject::IsRunning](/windows/win32/api/objidl/nf-objidl-irunnableobject-isrunning) in the Windows SDK.
 
-##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning
+## <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning
 
 Locks the control into the running state.
 
@@ -100,7 +100,7 @@ The ATL implementation returns S_OK.
 
 See [IRunnableObject::LockRunning](/windows/win32/api/objidl/nf-objidl-irunnableobject-lockrunning) in the Windows SDK.
 
-##  <a name="run"></a>  IRunnableObjectImpl::Run
+## <a name="run"></a>  IRunnableObjectImpl::Run
 
 Forces the control to run.
 
@@ -116,7 +116,7 @@ The ATL implementation returns S_OK.
 
 See [IRunnableObject::Run](/windows/win32/api/objidl/nf-objidl-irunnableobject-run) in the Windows SDK.
 
-##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject
+## <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject
 
 Indicates that the control is embedded.
 

@@ -55,7 +55,7 @@ See [Adding Connection Points to an Object](../../atl/adding-connection-points-t
 
 **Header:** atlcom.h
 
-##  <a name="add"></a>  CComUnkArray::Add
+## <a name="add"></a>  CComUnkArray::Add
 
 Call this method to add an `IUnknown` pointer to the array.
 
@@ -72,7 +72,7 @@ Call this method to add an `IUnknown` pointer to the array.
 
 Returns the cookie associated with the newly added pointer, or 0 if the array is not large enough to contain the new pointer.
 
-##  <a name="begin"></a>  CComUnkArray::begin
+## <a name="begin"></a>  CComUnkArray::begin
 
 Returns a pointer to the beginning of the collection of `IUnknown` interface pointers.
 
@@ -91,7 +91,7 @@ The collection contains pointers to interfaces stored locally as `IUnknown`. You
 
 Before using the `IUnknown` interface, you should check that it is not NULL.
 
-##  <a name="ccomunkarray"></a>  CComUnkArray::CComUnkArray
+## <a name="ccomunkarray"></a>  CComUnkArray::CComUnkArray
 
 The constructor.
 
@@ -103,7 +103,7 @@ CComUnkArray();
 
 Sets the collection to hold `nMaxSize` `IUnknown` pointers, and initializes the pointers to NULL.
 
-##  <a name="end"></a>  CComUnkArray::end
+## <a name="end"></a>  CComUnkArray::end
 
 Returns a pointer to one past the last `IUnknown` pointer in the collection.
 
@@ -122,7 +122,7 @@ The `CComUnkArray` methods `begin` and `end` can be used to loop through all con
 
 [!code-cpp[NVC_ATL_COM#44](../../atl/codesnippet/cpp/ccomunkarray-class_1.cpp)]
 
-##  <a name="getcookie"></a>  CComUnkArray::GetCookie
+## <a name="getcookie"></a>  CComUnkArray::GetCookie
 
 Call this method to get the cookie associated with a given `IUnknown` pointer.
 
@@ -143,7 +143,7 @@ Returns the cookie associated with the `IUnknown` pointer, or 0 if no matching `
 
 If there is more than one instance of the same `IUnknown` pointer, this function returns the cookie for the first one.
 
-##  <a name="getunknown"></a>  CComUnkArray::GetUnknown
+## <a name="getunknown"></a>  CComUnkArray::GetUnknown
 
 Call this method to get the `IUnknown` pointer associated with a given cookie.
 
@@ -160,7 +160,7 @@ The cookie for which the associated `IUnknown` pointer is required.
 
 Returns the `IUnknown` pointer, or NULL if no matching cookie is found.
 
-##  <a name="remove"></a>  CComUnkArray::Remove
+## <a name="remove"></a>  CComUnkArray::Remove
 
 Call this method to remove an `IUnknown` pointer from the array.
 

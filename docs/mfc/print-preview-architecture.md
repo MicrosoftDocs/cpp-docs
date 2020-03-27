@@ -14,7 +14,7 @@ This article explains how the MFC framework implements print preview functionali
 
 Print preview is somewhat different from screen display and printing because, instead of directly drawing an image on a device, the application must simulate the printer using the screen. To accommodate this, the Microsoft Foundation Class Library defines a special (undocumented) class derived from [CDC Class](../mfc/reference/cdc-class.md), called `CPreviewDC`. All `CDC` objects contain two device contexts, but usually they are identical. In a `CPreviewDC` object, they are different: the first represents the printer being simulated, and the second represents the screen on which output is actually displayed.
 
-##  <a name="_core_the_print_preview_process"></a> The Print Preview Process
+## <a name="_core_the_print_preview_process"></a> The Print Preview Process
 
 When the user selects the Print Preview command from the **File** menu, the framework creates a `CPreviewDC` object. Whenever your application performs an operation that sets a characteristic of the printer device context, the framework also performs a similar operation on the screen device context. For example, if your application selects a font for printing, the framework selects a font for screen display that simulates the printer font. Whenever your application would send output to the printer, the framework instead sends the output to the screen.
 
@@ -22,7 +22,7 @@ Print preview also differs from printing in the order that each draws the pages 
 
 The [CView::OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) function is called when preview mode is invoked, just as it is at the beginning of a print job. The [CPrintInfo Structure](../mfc/reference/cprintinfo-structure.md) structure passed to the function contains several members whose values you can set to adjust certain characteristics of the print preview operation. For example, you can set the *m_nNumPreviewPages* member to specify whether you want to preview the document in one-page or two-page mode.
 
-##  <a name="_core_modifying_print_preview"></a> Modifying Print Preview
+## <a name="_core_modifying_print_preview"></a> Modifying Print Preview
 
 You can modify the behavior and appearance of print preview in a number of ways rather easily. For example, you can, among other things:
 

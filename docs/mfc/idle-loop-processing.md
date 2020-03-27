@@ -16,7 +16,7 @@ This article explains two ways to do idle processing in your application:
 
 - Embedding another **PeekMessage** loop somewhere else in the application.
 
-##  <a name="_core_peekmessage_in_the_mfc_message_loop"></a> PeekMessage in the MFC Message Loop
+## <a name="_core_peekmessage_in_the_mfc_message_loop"></a> PeekMessage in the MFC Message Loop
 
 In an application developed with MFC, the main message loop in the `CWinThread` class contains a message loop that calls the [PeekMessage](/windows/win32/api/winuser/nf-winuser-peekmessagew) Win32 API. This loop also calls the `OnIdle` member function of `CWinThread` between messages. An application can process messages in this idle time by overriding the `OnIdle` function.
 
@@ -25,7 +25,7 @@ In an application developed with MFC, the main message loop in the `CWinThread` 
 
 For more information about performing idle processing, see [OnIdle](../mfc/reference/cwinthread-class.md#onidle) in the *MFC Reference*.
 
-##  <a name="_core_peekmessage_elsewhere_in_your_application"></a> PeekMessage Elsewhere in Your Application
+## <a name="_core_peekmessage_elsewhere_in_your_application"></a> PeekMessage Elsewhere in Your Application
 
 Another method for performing idle processing in an application involves embedding a message loop in one of your functions. This message loop is very similar to MFC's main message loop, found in [CWinThread::Run](../mfc/reference/cwinthread-class.md#run). That means such a loop in an application developed with MFC must perform many of the same functions as the main message loop. The following code fragment demonstrates writing a message loop that is compatible with MFC:
 

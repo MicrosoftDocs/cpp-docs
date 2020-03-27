@@ -63,7 +63,7 @@ To learn more about how `CFtpConnection` works with the other MFC Internet class
 
 **Header:** afxinet.h
 
-##  <a name="cftpconnection"></a>  CFtpConnection::CFtpConnection
+## <a name="cftpconnection"></a>  CFtpConnection::CFtpConnection
 
 This member function is called to construct a `CFtpConnection` object.
 
@@ -121,7 +121,7 @@ Specifies passive or active mode for this FTP session. If set to TRUE, it sets t
 
 You never create a `CFtpConnection` object directly. Instead, call [CInternetSession::GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection), which creates the `CFptConnection` object.
 
-##  <a name="command"></a>  CFtpConnection::Command
+## <a name="command"></a>  CFtpConnection::Command
 
 Sends a command directly to an FTP server.
 
@@ -163,7 +163,7 @@ This member function emulates the functionality of the [FTPCommand](/windows/win
 
 If an error occurs, MFC throws an exception of type [CInternetException](../../mfc/reference/cinternetexception-class.md).
 
-##  <a name="createdirectory"></a>  CFtpConnection::CreateDirectory
+## <a name="createdirectory"></a>  CFtpConnection::CreateDirectory
 
 Call this member function to create a directory on the connected server.
 
@@ -186,7 +186,7 @@ Use `GetCurrentDirectory` to determine the current working directory for this co
 
 The `pstrDirName` parameter can be either a partially or a fully qualified filename relative to the current directory. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. `CreateDirectory` translates the directory name separators to the appropriate characters before they are used.
 
-##  <a name="getcurrentdirectory"></a>  CFtpConnection::GetCurrentDirectory
+## <a name="getcurrentdirectory"></a>  CFtpConnection::GetCurrentDirectory
 
 Call this member function to get the name of the current directory.
 
@@ -224,7 +224,7 @@ To get the directory name as a URL instead, call [GetCurrentDirectoryAsURL](#get
 
 The parameters *pstrDirName* or *strDirName* can be either partially qualified filenames relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. `GetCurrentDirectory` translates the directory name separators to the appropriate characters before they are used.
 
-##  <a name="getcurrentdirectoryasurl"></a>  CFtpConnection::GetCurrentDirectoryAsURL
+## <a name="getcurrentdirectoryasurl"></a>  CFtpConnection::GetCurrentDirectoryAsURL
 
 Call this member function to get the current directory's name as a URL.
 
@@ -262,7 +262,7 @@ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLa
 
 The parameter *strDirName* can be either partially qualified filenames relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. `GetCurrentDirectoryAsURL` translates the directory name separators to the appropriate characters before they are used.
 
-##  <a name="getfile"></a>  CFtpConnection::GetFile
+## <a name="getfile"></a>  CFtpConnection::GetFile
 
 Call this member function to get a file from an FTP server and store it on the local machine.
 
@@ -326,7 +326,7 @@ Both *pstrRemoteFile* and *pstrLocalFile* can be either partially qualified file
 
 Override the *dwContext* default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CFtpConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the operation with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.
 
-##  <a name="openfile"></a>  CFtpConnection::OpenFile
+## <a name="openfile"></a>  CFtpConnection::OpenFile
 
 Call this member function to open a file located on an FTP server for reading or writing.
 
@@ -376,7 +376,7 @@ The *pstrFileName* parameter can be either a partially qualified filename relati
 
 Override the *dwContext* default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CFtpConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the operation with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.
 
-##  <a name="putfile"></a>  CFtpConnection::PutFile
+## <a name="putfile"></a>  CFtpConnection::PutFile
 
 Call this member function to store a file on an FTP server.
 
@@ -412,7 +412,7 @@ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLa
 
 Override the `dwContext` default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CFtpConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the operation with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.
 
-##  <a name="remove"></a>  CFtpConnection::Remove
+## <a name="remove"></a>  CFtpConnection::Remove
 
 Call this member function to delete the specified file from the connected server.
 
@@ -433,7 +433,7 @@ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLa
 
 The *pstrFileName* parameter can be either a partially qualified filename relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. The `Remove` function translates the directory name separators to the appropriate characters before they are used.
 
-##  <a name="removedirectory"></a>  CFtpConnection::RemoveDirectory
+## <a name="removedirectory"></a>  CFtpConnection::RemoveDirectory
 
 Call this member function to remove the specified directory from the connected server.
 
@@ -456,7 +456,7 @@ Use [GetCurrentDirectory](#getcurrentdirectory) to determine the server's curren
 
 The *pstrDirName* parameter can be either a partially or fully qualified filename relative to the current directory. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. `RemoveDirectory` translates the directory name separators to the appropriate characters before they are used.
 
-##  <a name="rename"></a>  CFtpConnection::Rename
+## <a name="rename"></a>  CFtpConnection::Rename
 
 Call this member function to rename the specified file on the connected server.
 
@@ -482,7 +482,7 @@ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLa
 
 The *pstrExisting* and *pstrNew* parameters can be either a partially qualified filename relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. `Rename` translates the directory name separators to the appropriate characters before they are used.
 
-##  <a name="setcurrentdirectory"></a>  CFtpConnection::SetCurrentDirectory
+## <a name="setcurrentdirectory"></a>  CFtpConnection::SetCurrentDirectory
 
 Call this member function to change to a different directory on the FTP server.
 

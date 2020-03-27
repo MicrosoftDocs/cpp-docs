@@ -22,7 +22,7 @@ These macros perform Registry Data Exchange operations.
 
 **Header:** atlplus.h
 
-##  <a name="begin_rdx_map"></a>  BEGIN_RDX_MAP
+## <a name="begin_rdx_map"></a>  BEGIN_RDX_MAP
 
 Marks the beginning of the Registry Data Exchange map.
 
@@ -43,7 +43,7 @@ The following macros are used within the Registry Data Exchange map to read and 
 
 The global function [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), or the member function of the same name created by the BEGIN_RDX_MAP and END_RDX_MAP macros, should be used whenever your code needs to exchange data between the system registry and the variables specified in the RDX map.
 
-##  <a name="end_rdx_map"></a>  END_RDX_MAP
+## <a name="end_rdx_map"></a>  END_RDX_MAP
 
 Marks the end of the Registry Data Exchange map.
 
@@ -51,7 +51,7 @@ Marks the end of the Registry Data Exchange map.
 END_RDX_MAP
 ```
 
-##  <a name="rdx_binary"></a>  RDX_BINARY
+## <a name="rdx_binary"></a>  RDX_BINARY
 
 Associates the specified registry entry with a specified member variable of type BYTE.
 
@@ -85,7 +85,7 @@ The size, in bytes, of the member variable.
 
 This macro is used in conjunction with the BEGIN_RDX_MAP and END_RDX_MAP macros to associate a member variable with a given registry entry. The global function [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), or the member function of the same name created by the BEGIN_RDX_MAP and END_RDX_MAP macros, should be used to perform exchange of data between the system registry and the member variables in the RDX map.
 
-##  <a name="rdx_cstring_text"></a>  RDX_CSTRING_TEXT
+## <a name="rdx_cstring_text"></a>  RDX_CSTRING_TEXT
 
 Associates the specified registry entry with a specified member variable of type CString.
 
@@ -119,7 +119,7 @@ The size, in bytes, of the member variable.
 
 This macro is used in conjunction with the BEGIN_RDX_MAP and END_RDX_MAP macros to associate a member variable with a given registry entry. The global function [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), or the member function of the same name created by the BEGIN_RDX_MAP and END_RDX_MAP macros, should be used to perform exchange of data between the system registry and the member variables in the RDX map.
 
-##  <a name="rdx_dword"></a>  RDX_DWORD
+## <a name="rdx_dword"></a>  RDX_DWORD
 
 Associates the specified registry entry with a specified member variable of type DWORD.
 
@@ -153,7 +153,7 @@ The size, in bytes, of the member variable.
 
 This macro is used in conjunction with the BEGIN_RDX_MAP and END_RDX_MAP macros to associate a member variable with a given registry entry. The global function [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), or the member function of the same name created by the BEGIN_RDX_MAP and END_RDX_MAP macros, should be used to perform exchange of data between the system registry and the member variables in the RDX map.
 
-##  <a name="rdx_text"></a>  RDX_TEXT
+## <a name="rdx_text"></a>  RDX_TEXT
 
 Associates the specified registry entry with a specified member variable of type TCHAR.
 

@@ -71,7 +71,7 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 **Header:** atlconv.h
 
-##  <a name="cw2cwex"></a>  CW2CWEX::CW2CWEX
+## <a name="cw2cwex"></a>  CW2CWEX::CW2CWEX
 
 The constructor.
 
@@ -92,7 +92,7 @@ The code page. Not used in this class.
 
 Allocates the buffer used in the translation process.
 
-##  <a name="dtor"></a>  CW2CWEX::~CW2CWEX
+## <a name="dtor"></a>  CW2CWEX::~CW2CWEX
 
 The destructor.
 
@@ -104,7 +104,7 @@ The destructor.
 
 Frees the allocated buffer.
 
-##  <a name="m_psz"></a>  CW2CWEX::m_psz
+## <a name="m_psz"></a>  CW2CWEX::m_psz
 
 The data member that stores the source string.
 
@@ -112,7 +112,7 @@ The data member that stores the source string.
 LPCWSTR m_psz;
 ```
 
-##  <a name="operator_lpcwstr"></a>  CW2CWEX::operator LPCWSTR
+## <a name="operator_lpcwstr"></a>  CW2CWEX::operator LPCWSTR
 
 Conversion operator.
 

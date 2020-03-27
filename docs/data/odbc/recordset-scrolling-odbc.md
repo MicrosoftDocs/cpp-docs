@@ -16,7 +16,7 @@ This topic explains:
 
 - [Under what circumstances scrolling is and is not supported](#_core_when_scrolling_is_supported).
 
-##  <a name="_core_scrolling_from_one_record_to_another"></a> Scrolling from One Record to Another
+## <a name="_core_scrolling_from_one_record_to_another"></a> Scrolling from One Record to Another
 
 Class `CRecordset` provides the `Move` member functions for scrolling within a recordset. These functions move the current record by rowsets. If you have implemented bulk row fetching, a `Move` operation repositions the recordset by the size of the rowset. If you have not implemented bulk row fetching, a call to a `Move` function repositions the recordset by one record each time. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
@@ -77,7 +77,7 @@ rsCustSet.MoveFirst( );
 
 For more information about recordset navigation, see [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
 
-##  <a name="_core_when_scrolling_is_supported"></a> When Scrolling Is Supported
+## <a name="_core_when_scrolling_is_supported"></a> When Scrolling Is Supported
 
 As originally designed, SQL provided only forward scrolling, but ODBC extends scrolling capabilities. The available level of support for scrolling depends on the ODBC drivers your application works with, your driver's ODBC API conformance level, and whether the ODBC Cursor Library is loaded into memory. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and [ODBC: The ODBC Cursor Library](../../data/odbc/odbc-the-odbc-cursor-library.md).
 

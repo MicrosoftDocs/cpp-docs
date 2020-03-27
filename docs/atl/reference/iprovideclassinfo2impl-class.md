@@ -77,7 +77,7 @@ The [IProvideClassInfo2](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo2) i
 
 **Header:** atlcom.h
 
-##  <a name="getclassinfo"></a>  IProvideClassInfo2Impl::GetClassInfo
+## <a name="getclassinfo"></a>  IProvideClassInfo2Impl::GetClassInfo
 
 Retrieves an `ITypeInfo` pointer to the coclass' type information.
 
@@ -89,7 +89,7 @@ STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 
 See [IProvideClassInfo::GetClassInfo](/windows/win32/api/ocidl/nf-ocidl-iprovideclassinfo-getclassinfo) in the Windows SDK.
 
-##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID
+## <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID
 
 Retrieves the GUID for the object's outgoing dispinterface.
 
@@ -103,7 +103,7 @@ STDMETHOD(GetGUID)(
 
 See [IProvideClassInfo2::GetGUID](/windows/win32/api/ocidl/nf-ocidl-iprovideclassinfo2-getguid) in the Windows SDK.
 
-##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl
+## <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl
 
 The constructor.
 
@@ -115,7 +115,7 @@ IProvideClassInfo2Impl();
 
 Calls `AddRef` on the [_tih](#_tih) member. The destructor calls `Release`.
 
-##  <a name="_tih"></a>  IProvideClassInfo2Impl::_tih
+## <a name="_tih"></a>  IProvideClassInfo2Impl::_tih
 
 This static data member is an instance of the class template parameter, *tihclass*, which by default is `CComTypeInfoHolder`.
 

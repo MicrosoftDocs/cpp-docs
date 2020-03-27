@@ -14,7 +14,7 @@ This article describes what each server application needs to do when it is insta
 
 For detailed information about the system registration database and the format of the .reg files used to update it, see the *OLE Programmer's Reference*.
 
-##  <a name="_core_server_installation"></a> Server Installation
+## <a name="_core_server_installation"></a> Server Installation
 
 When you first install your server application, it should register all the types of OLE items that it supports. You can also have the server update the system registration database every time it executes as a stand-alone application. This keeps the registration database up-to-date if the server's executable file is moved.
 
@@ -28,7 +28,7 @@ If you want to register your application during installation, use the RegEdit.ex
 
 RegEdit merges the contents of the .reg text file into the registration database. To verify the database or to repair it, use the registry editor. Take care to avoid deleting essential OLE entries.
 
-##  <a name="_core_server_initialization"></a> Server Initialization
+## <a name="_core_server_initialization"></a> Server Initialization
 
 When you create a server application with the application wizard, the wizard completes all initialization tasks for you automatically. This section describes what you must do if you write a server application manually.
 

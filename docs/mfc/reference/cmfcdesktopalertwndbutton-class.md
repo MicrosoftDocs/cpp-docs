@@ -72,7 +72,7 @@ The following example demonstrates how to use the `SetImage` method in the `CMFC
 
 **Header:** afxdesktopalertwnd.h
 
-##  <a name="iscaptionbutton"></a>  CMFCDesktopAlertWndButton::IsCaptionButton
+## <a name="iscaptionbutton"></a>  CMFCDesktopAlertWndButton::IsCaptionButton
 
 Determines whether the button is displayed in the caption area of the alert dialog box.
 
@@ -84,7 +84,7 @@ BOOL IsCaptionButton() const;
 
 Nonzero if the button is displayed in the caption area of the alert dialog box; otherwise, 0.
 
-##  <a name="isclosebutton"></a>  CMFCDesktopAlertWndButton::IsCloseButton
+## <a name="isclosebutton"></a>  CMFCDesktopAlertWndButton::IsCloseButton
 
 Determines whether the button closes the alert dialog box.
 
