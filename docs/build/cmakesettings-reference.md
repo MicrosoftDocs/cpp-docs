@@ -139,6 +139,7 @@ When the active configuration specifies a Visual Studio generator, by default MS
 ```
 
 Note that if you do not define the `"type"`, the `"STRING"` type will be assumed by default.
+
 - `remoteCopyOptimizations`: **Visual Studio 2019 version 16.5 or later** properties for controlling source copy to the remote target. Optimizations are enabled by default. Includes `remoteCopyUseOptimizations`, `rsyncSingleDirectoryCommandArgs`, and `remoteCopySourcesMaxSmallChange`.
 
 ## <a name="environments"></a> Environments

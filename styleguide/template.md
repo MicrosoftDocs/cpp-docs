@@ -369,6 +369,7 @@ You can see an example of buttons in action at the [Intune docs](https://docs.mi
 ### Selectors
 
 > [!div class="op_single_selector"]
+
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
