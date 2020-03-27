@@ -253,7 +253,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;| **`TYPE`** *`e10`*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **`THIS`** *`e10`*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *`e09`* **`PTR`** *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`e09`* : *`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`e09`* **`:`** *`e10`*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *`e10`*
 
 *`e10`*\
@@ -262,7 +262,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;| *`e11`*
 
 *`e11`*\
-&nbsp;&nbsp;&nbsp;&nbsp;( *`expr`* )\
+&nbsp;&nbsp;&nbsp;&nbsp;**`(`** *`expr`* **`)`**\
 &nbsp;&nbsp;&nbsp;&nbsp;| ⟦ *`expr`* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| **`WIDTH`** *`id`*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **`MASK`** *`id`*\
@@ -284,12 +284,12 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 *`echoDir`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`ECHO`**\
 &nbsp;&nbsp;&nbsp;&nbsp;*`arbitraryText`* *`;;`*\
-%**`OUT`** *`arbitraryText`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`%OUT`** *`arbitraryText`* *`;;`*
 
 *`elseifBlock`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`elseifStatement`* *`;;`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`elseifBlock`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`elseifBlock`* ⟧
 
 *`elseifStatement`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`ELSEIF`** *`constExpr`*\
@@ -395,7 +395,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 
 *`floatNumber`*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *`sign`* ⟧ *`decNumber`* **`.`** ⟦ *`decNumber`* ⟧ ⟦ *`exponent`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`digits`* **`R`** | *`digits`* r
+&nbsp;&nbsp;&nbsp;&nbsp;| *`digits`* **`R`** | *`digits`* **`r`**
 
 *`forcDir`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`FORC`** | **`IRPC`**
@@ -457,7 +457,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *`elseifBlock`* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ **`ELSE`** *`;;`* \
-&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`* ⟧ *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`* ⟧ *`;;`*
 
 *`ifStatement`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`IF`** *`constExpr`*\
@@ -553,7 +553,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;| **`.TFCOND`**\
 &nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTMACROALL`** | **`.LALL`**\
 &nbsp;&nbsp;&nbsp;&nbsp;| **`.NOLISTMACRO`** | **`.SALL`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTMACRO`** | **`.XALL`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTMACRO`** | **`.XALL`**
 
 *`localDef`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`LOCAL`** *`idList`* *`;;`*
@@ -573,7 +573,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;| **`%`** *`macroFuncId`* **`(`** *`macroArgList`* **`)`**\
 &nbsp;&nbsp;&nbsp;&nbsp;| *`string`*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *`arbitraryText`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`<`** *`arbitraryText`* >
+&nbsp;&nbsp;&nbsp;&nbsp;| **`<`** *`arbitraryText`* **`>`**
 
 *`macroArgList`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`macroArg`* | *`macroArgList`* **`,`** *`macroArg`*
@@ -630,8 +630,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;*`directive`* \
 &nbsp;&nbsp;&nbsp;&nbsp;| *`exitmDir`*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **`:`** *`macroLabel`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`GOTO`**\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroLabel`*
+&nbsp;&nbsp;&nbsp;&nbsp;| **`GOTO`** *`macroLabel`*
 
 *`macroStmtList`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`macroStmt`* *`;;`*\
@@ -669,7 +668,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 
 *`nameDir`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`NAME`**\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* *`;;`*
 
 *`nearfar`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`NEAR`** | **`FAR`**
@@ -677,7 +676,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 *`nestedStruct`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`structHdr`* ⟦ *`id`* ⟧ *`;;`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`structBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ENDS`** *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ENDS`** *`;;`*
 
 *`offsetDir`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`offsetDirType`* *`;;`*
@@ -749,7 +748,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;*`parm`* | *`parmList`* **`,`** ⟦ *`;;`* ⟧ *`parm`*
 
 *`parmType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`REQ`** | = *`textLiteral`* | **`VARARG`**
+&nbsp;&nbsp;&nbsp;&nbsp;**`REQ`** | **`=`** *`textLiteral`* | **`VARARG`**
 
 *`pOptions`*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`oVisibility`* ⟧
@@ -925,7 +924,9 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &nbsp;&nbsp;&nbsp;&nbsp;**`+`** | **`-`**
 
 *`simdRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`MM0`** | **`MM1`** | **`MM2`** | **`MM3`** | **`MM4`** | **`MM5`** | **`MM6`** | **`MM7`** | *`xmmRegister`* | **`YMM0`** | **`YMM1`** | **`YMM2`** | **`YMM3`** | **`YMM4`** | **`YMM5`** | **`YMM6`** | **`YMM7`** | **`YMM8`** | **`YMM9`** | **`YMM10`** | **`YMM11`** | **`YMM12`** | **`YMM13`** | **`YMM14`** | **`YMM15`**
+&nbsp;&nbsp;&nbsp;&nbsp;**`MM0`** | **`MM1`** | **`MM2`** | **`MM3`** | **`MM4`** | **`MM5`** | **`MM6`** | **`MM7`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`xmmRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`YMM0`** | **`YMM1`** | **`YMM2`** | **`YMM3`** | **`YMM4`** | **`YMM5`** | **`YMM6`** | **`YMM7`** | **`YMM8`** | **`YMM9`** | **`YMM10`** | **`YMM11`** | **`YMM12`** | **`YMM13`** | **`YMM14`** | **`YMM15`**
 
 *`simpleExpr`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`(`** *`cExpr`* **`)`** | *`primary`*
@@ -967,7 +968,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 
 *`structDir`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`structTag`* *`structHdr`* ⟦ *`fieldAlign`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦, **`NONUNIQUE`** ⟧ *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** **`NONUNIQUE`** ⟧ *`;;`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`structBody`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`structTag`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`ENDS`** *`;;`*
@@ -978,7 +979,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 *`structInstance`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`<`** ⟦ *`fieldInitList`* ⟧ **`>`**\
 &nbsp;&nbsp;&nbsp;&nbsp;| **`{`** ⟦ *`;;`* ⟧ ⟦ *`fieldInitList`* ⟧ ⟦ *`;;`* ⟧ **`}`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`constExpr`* **`DUP`** ( *`structInstList`* )\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`constExpr`* **`DUP`** ( *`structInstList`* )
 
 *`structInstList`*\
 &nbsp;&nbsp;&nbsp;&nbsp;*`structInstance`* | *`structInstList`* **`,`** ⟦ *`;;`* ⟧ *`structInstance`*
