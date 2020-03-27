@@ -89,7 +89,7 @@ Name                                                                         | D
 
 **Namespace:** Microsoft::WRL
 
-## <a name="asyncbase"></a>AsyncBase::AsyncBase
+## <a name="asyncbase"></a> AsyncBase::AsyncBase
 
 Initializes an instance of the `AsyncBase` class.
 
@@ -97,7 +97,7 @@ Initializes an instance of the `AsyncBase` class.
 AsyncBase();
 ```
 
-## <a name="cancel"></a>AsyncBase::Cancel
+## <a name="cancel"></a> AsyncBase::Cancel
 
 Cancels an asynchronous operation.
 
@@ -115,7 +115,7 @@ By default, always returns S_OK.
 
 `Cancel()` is a default implementation of `IAsyncInfo::Cancel`, and does no actual work. To actually cancel an asynchronous operation, override the `OnCancel()` pure virtual method.
 
-## <a name="checkvalidstatefordelegatecall"></a>AsyncBase::CheckValidStateForDelegateCall
+## <a name="checkvalidstatefordelegatecall"></a> AsyncBase::CheckValidStateForDelegateCall
 
 Tests whether delegate properties can be modified in the current asynchronous state.
 
@@ -127,7 +127,7 @@ inline HRESULT CheckValidStateForDelegateCall();
 
 S_OK if delegate properties can be modified; otherwise, E_ILLEGAL_METHOD_CALL.
 
-## <a name="checkvalidstateforresultscall"></a>AsyncBase::CheckValidStateForResultsCall
+## <a name="checkvalidstateforresultscall"></a> AsyncBase::CheckValidStateForResultsCall
 
 Tests whether the results of an asynchronous operation can be collected in the current asynchronous state.
 
@@ -139,7 +139,7 @@ inline HRESULT CheckValidStateForResultsCall();
 
 S_OK if results can be collected; otherwise, E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.
 
-## <a name="close"></a>AsyncBase::Close
+## <a name="close"></a> AsyncBase::Close
 
 Closes the asynchronous operation.
 
@@ -157,7 +157,7 @@ S_OK if the operation closes or is already closed; otherwise, E_ILLEGAL_STATE_CH
 
 `Close()` is a default implementation of `IAsyncInfo::Close`, and does no actual work. To actually close an asynchronous operation, override the `OnClose()` pure virtual method.
 
-## <a name="continueasyncoperation"></a>AsyncBase::ContinueAsyncOperation
+## <a name="continueasyncoperation"></a> AsyncBase::ContinueAsyncOperation
 
 Determines whether the asynchronous operation should continue processing or should halt.
 
@@ -169,7 +169,7 @@ inline bool ContinueAsyncOperation();
 
 **true** if the current state of the asynchronous operation is *started*, which means the operation should continue. Otherwise, **false**, which means the operation should halt.
 
-## <a name="currentstatus"></a>AsyncBase::CurrentStatus
+## <a name="currentstatus"></a> AsyncBase::CurrentStatus
 
 Retrieves the status of the current asynchronous operation.
 
@@ -188,7 +188,7 @@ The location where this operation stores the current status.
 
 This operation is thread-safe.
 
-## <a name="errorcode"></a>AsyncBase::ErrorCode
+## <a name="errorcode"></a> AsyncBase::ErrorCode
 
 Retrieves the error code for the current asynchronous operation.
 
@@ -207,7 +207,7 @@ The location where this operation stores the current error code.
 
 This operation is thread-safe.
 
-## <a name="firecompletion"></a>AsyncBase::FireCompletion
+## <a name="firecompletion"></a> AsyncBase::FireCompletion
 
 Invokes the completion event handler, or resets the internal progress delegate.
 
@@ -223,7 +223,7 @@ virtual void FireCompletion();
 
 The first version of `FireCompletion()` resets the internal progress delegate variable. The second version invokes the completion event handler if the asynchronous operation is complete.
 
-## <a name="fireprogress"></a>AsyncBase::FireProgress
+## <a name="fireprogress"></a> AsyncBase::FireProgress
 
 Invokes the current progress event handler.
 
@@ -242,7 +242,7 @@ The event handler method to invoke.
 
 `ProgressTraits` is derived from [ArgTraitsHelper Structure](argtraitshelper-structure.md).
 
-## <a name="get-errorcode"></a>AsyncBase::get_ErrorCode
+## <a name="get-errorcode"></a> AsyncBase::get_ErrorCode
 
 Retrieves the error code for the current asynchronous operation.
 
@@ -261,7 +261,7 @@ The location where the current error code is stored.
 
 S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL if the current asynchronous operation is closed.
 
-## <a name="get-id"></a>AsyncBase::get_Id
+## <a name="get-id"></a> AsyncBase::get_Id
 
 Retrieves the handle of the asynchronous operation.
 
@@ -284,7 +284,7 @@ S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.
 
 This method implements `IAsyncInfo::get_Id`.
 
-## <a name="get-status"></a>AsyncBase::get_Status
+## <a name="get-status"></a> AsyncBase::get_Status
 
 Retrieves a value that indicates the status of the asynchronous operation.
 
@@ -307,7 +307,7 @@ S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.
 
 This method implements `IAsyncInfo::get_Status`.
 
-## <a name="getoncomplete"></a>AsyncBase::GetOnComplete
+## <a name="getoncomplete"></a> AsyncBase::GetOnComplete
 
 Copies the address of the current completion event handler to the specified variable.
 
@@ -326,7 +326,7 @@ The location where the address of the current completion event handler is stored
 
 S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.
 
-## <a name="getonprogress"></a>AsyncBase::GetOnProgress
+## <a name="getonprogress"></a> AsyncBase::GetOnProgress
 
 Copies the address of the current progress event handler to the specified variable.
 
@@ -345,7 +345,7 @@ The location where the address of the current progress event handler is stored.
 
 S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.
 
-## <a name="oncancel"></a>AsyncBase::OnCancel
+## <a name="oncancel"></a> AsyncBase::OnCancel
 
 When overridden in a derived class, cancels an asynchronous operation.
 
@@ -355,7 +355,7 @@ virtual void OnCancel(
 ) = 0;
 ```
 
-## <a name="onclose"></a>AsyncBase::OnClose
+## <a name="onclose"></a> AsyncBase::OnClose
 
 When overridden in a derived class, closes an asynchronous operation.
 
@@ -365,7 +365,7 @@ virtual void OnClose(
 ) = 0;
 ```
 
-## <a name="onstart"></a>AsyncBase::OnStart
+## <a name="onstart"></a> AsyncBase::OnStart
 
 When overridden in a derived class, starts an asynchronous operation.
 
@@ -375,7 +375,7 @@ virtual HRESULT OnStart(
 ) = 0;
 ```
 
-## <a name="put-id"></a>AsyncBase::put_Id
+## <a name="put-id"></a> AsyncBase::put_Id
 
 Sets the handle of the asynchronous operation.
 
@@ -394,7 +394,7 @@ A nonzero handle.
 
 S_OK if successful; otherwise, E_INVALIDARG or E_ILLEGAL_METHOD_CALL.
 
-## <a name="putoncomplete"></a>AsyncBase::PutOnComplete
+## <a name="putoncomplete"></a> AsyncBase::PutOnComplete
 
 Sets the address of the completion event handler to the specified value.
 
@@ -413,7 +413,7 @@ The address to which the completion event handler is set.
 
 S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.
 
-## <a name="putonprogress"></a>AsyncBase::PutOnProgress
+## <a name="putonprogress"></a> AsyncBase::PutOnProgress
 
 Sets the address of the progress event handler to the specified value.
 
@@ -432,7 +432,7 @@ The address to which the progress event handler is set.
 
 S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.
 
-## <a name="start"></a>AsyncBase::Start
+## <a name="start"></a> AsyncBase::Start
 
 Starts the asynchronous operation.
 
@@ -450,7 +450,7 @@ S_OK if the operation starts or is already started; otherwise, E_ILLEGAL_STATE_C
 
 `Start()` is a protected method that is not externally visible because async operations "hot start" before returning to the caller.
 
-## <a name="trytransitiontocompleted"></a>AsyncBase::TryTransitionToCompleted
+## <a name="trytransitiontocompleted"></a> AsyncBase::TryTransitionToCompleted
 
 Indicates whether the current asynchronous operation has completed.
 
@@ -464,7 +464,7 @@ bool TryTransitionToCompleted(
 
 **true** if the asynchronous operation has completed; otherwise, **false**.
 
-## <a name="trytransitiontoerror"></a>AsyncBase::TryTransitionToError
+## <a name="trytransitiontoerror"></a> AsyncBase::TryTransitionToError
 
 Indicates whether the specified error code can modify the internal error state.
 

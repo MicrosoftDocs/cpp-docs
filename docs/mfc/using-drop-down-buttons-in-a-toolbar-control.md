@@ -10,7 +10,7 @@ ms.assetid: b859f758-d2f6-40d9-9c26-0ff61993b9b2
 In addition to standard push buttons, a toolbar can also have drop-down buttons. A drop-down button is usually indicated by the presence of an attached down arrow.
 
 > [!NOTE]
->  The attached down arrow will appear only if the TBSTYLE_EX_DRAWDDARROWS extended style has been set.
+> The attached down arrow will appear only if the TBSTYLE_EX_DRAWDDARROWS extended style has been set.
 
 When the user clicks on this arrow (or the button itself, if no arrow is present), a TBN_DROPDOWN notification message is sent to the parent of the toolbar control. You can then handle this notification and display a pop-up menu; similar to the behavior of Internet Explorer.
 

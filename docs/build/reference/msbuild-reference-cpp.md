@@ -3,7 +3,6 @@ title: "MSBuild reference for C++ projects in Visual Studio"
 ms.date: "12/08/2018"
 helpviewer_keywords: ["MSBuild reference [C++]"]
 ---
-
 # MSBuild reference for C++ projects
 
 MSBuild is the native build system for all projects in Visual Studio, including C++ projects. When you build a project in the Visual Studio integrated development environment (IDE), it invokes the msbuild.exe tool, which in turn consumes the .vcxproj project file, and various .targets and .props files. In general, we strongly recommend using the Visual Studio IDE to set project properties and invoke MSBuild. Manually editing project files can lead to serious problems if not done correctly.

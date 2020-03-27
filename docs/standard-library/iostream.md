@@ -45,7 +45,7 @@ This guarantee isn't universal, however. A static constructor may call a functio
 |[wclog](#wclog)|Specifies the `wclog` global stream.|
 |[wcout](#wcout)|Specifies the `wcout` global stream.|
 
-###  <a name="cerr"></a> cerr
+### <a name="cerr"></a> cerr
 
 The object `cerr` controls output to a stream buffer associated with the object `stderr`, declared in \<cstdio>.
 
@@ -91,7 +91,7 @@ int main( )
 }
 ```
 
-###  <a name="cin"></a> cin
+### <a name="cin"></a> cin
 
 Specifies the `cin` global stream.
 
@@ -142,7 +142,7 @@ int main()
 2
 ```
 
-###  <a name="clog"></a> clog
+### <a name="clog"></a> clog
 
 Specifies the `clog` global stream.
 
@@ -162,7 +162,7 @@ The object controls buffered insertions to the standard error output as a byte s
 
 See [cerr](#cerr) for an example of using `clog`.
 
-###  <a name="cout"></a> cout
+### <a name="cout"></a> cout
 
 Specifies the `cout` global stream.
 

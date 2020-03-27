@@ -65,13 +65,13 @@ The `CMDIFrameWnd` class inherits much of its default implementation from `CFram
 
 - An MDI frame window has default handlers for the following standard Window menu commands:
 
-    - ID_WINDOW_TILE_VERT
+  - ID_WINDOW_TILE_VERT
 
-    - ID_WINDOW_TILE_HORZ
+  - ID_WINDOW_TILE_HORZ
 
-    - ID_WINDOW_CASCADE
+  - ID_WINDOW_CASCADE
 
-    - ID_WINDOW_ARRANGE
+  - ID_WINDOW_ARRANGE
 
 - An MDI frame window also has an implementation of ID_WINDOW_NEW, which creates a new frame and view on the current document. An application can override these default command implementations to customize MDI window handling.
 
@@ -95,7 +95,7 @@ For more information on `CMDIFrameWnd`, see [Frame Windows](../../mfc/frame-wind
 
 **Header:** afxwin.h
 
-##  <a name="cmdiframewnd"></a>  CMDIFrameWnd::CMDIFrameWnd
+## <a name="cmdiframewnd"></a> CMDIFrameWnd::CMDIFrameWnd
 
 Constructs a `CMDIFrameWnd` object.
 
@@ -111,7 +111,7 @@ Call the `Create` or `LoadFrame` member function to create the visible MDI frame
 
 [!code-cpp[NVC_MFCWindowing#13](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_1.cpp)]
 
-##  <a name="createclient"></a>  CMDIFrameWnd::CreateClient
+## <a name="createclient"></a> CMDIFrameWnd::CreateClient
 
 Creates the MDI client window that manages the `CMDIChildWnd` objects.
 
@@ -141,7 +141,7 @@ This member function should be called if you override the `OnCreate` member func
 
 [!code-cpp[NVC_MFCWindowing#14](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_2.cpp)]
 
-##  <a name="createnewchild"></a>  CMDIFrameWnd::CreateNewChild
+## <a name="createnewchild"></a> CMDIFrameWnd::CreateNewChild
 
 Creates a new child window.
 
@@ -175,7 +175,7 @@ Use this function to create child windows of an MDI frame window.
 
 [!code-cpp[NVC_MFCWindowing#15](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_3.cpp)]
 
-##  <a name="getwindowmenupopup"></a>  CMDIFrameWnd::GetWindowMenuPopup
+## <a name="getwindowmenupopup"></a> CMDIFrameWnd::GetWindowMenuPopup
 
 Call this member function to obtain a handle to the current pop-up menu named "Window" (the pop-up menu with menu items for MDI window management).
 
@@ -202,7 +202,7 @@ Override this member function if you have a Window menu that does not use the st
 
 [!code-cpp[NVC_MFCWindowing#16](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_4.cpp)]
 
-##  <a name="mdiactivate"></a>  CMDIFrameWnd::MDIActivate
+## <a name="mdiactivate"></a> CMDIFrameWnd::MDIActivate
 
 Activates a different MDI child window.
 
@@ -222,13 +222,13 @@ This member function sends the [WM_MDIACTIVATE](../../mfc/reference/cwnd-class.m
 This is the same message that is sent if the user changes the focus to an MDI child window by using the mouse or keyboard.
 
 > [!NOTE]
->  An MDI child window is activated independently of the MDI frame window. When the frame becomes active, the child window that was last activated is sent a [WM_NCACTIVATE](../../mfc/reference/cwnd-class.md#onncactivate) message to draw an active window frame and caption bar, but it does not receive another WM_MDIACTIVATE message.
+> An MDI child window is activated independently of the MDI frame window. When the frame becomes active, the child window that was last activated is sent a [WM_NCACTIVATE](../../mfc/reference/cwnd-class.md#onncactivate) message to draw an active window frame and caption bar, but it does not receive another WM_MDIACTIVATE message.
 
 ### Example
 
 See the example for [CMDIFrameWnd::GetWindowMenuPopup](#getwindowmenupopup).
 
-##  <a name="mdicascade"></a>  CMDIFrameWnd::MDICascade
+## <a name="mdicascade"></a> CMDIFrameWnd::MDICascade
 
 Arranges all the MDI child windows in a cascade format.
 
@@ -250,7 +250,7 @@ The first version of `MDICascade`, with no parameters, cascades all MDI child wi
 
 [!code-cpp[NVC_MFCWindowing#17](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_5.cpp)]
 
-##  <a name="mdigetactive"></a>  CMDIFrameWnd::MDIGetActive
+## <a name="mdigetactive"></a> CMDIFrameWnd::MDIGetActive
 
 Retrieves the current active MDI child window, along with a flag indicating whether the child window is maximized.
 
@@ -271,7 +271,7 @@ A pointer to the active MDI child window.
 
 See the example for [CMDIChildWnd::MDIMaximize](../../mfc/reference/cmdichildwnd-class.md#mdimaximize).
 
-##  <a name="mdiiconarrange"></a>  CMDIFrameWnd::MDIIconArrange
+## <a name="mdiiconarrange"></a> CMDIFrameWnd::MDIIconArrange
 
 Arranges all minimized document child windows.
 
@@ -287,7 +287,7 @@ It does not affect child windows that are not minimized.
 
 See the example for [CMDIFrameWnd::MDICascade](#mdicascade).
 
-##  <a name="mdimaximize"></a>  CMDIFrameWnd::MDIMaximize
+## <a name="mdimaximize"></a> CMDIFrameWnd::MDIMaximize
 
 Maximizes the specified MDI child window.
 
@@ -310,7 +310,7 @@ If another MDI child window is activated when the currently active MDI child win
 
 See the example for [CMDIChildWnd::MDIMaximize](../../mfc/reference/cmdichildwnd-class.md#mdimaximize).
 
-##  <a name="mdinext"></a>  CMDIFrameWnd::MDINext
+## <a name="mdinext"></a> CMDIFrameWnd::MDINext
 
 Activates the child window immediately behind the currently active child window and places the currently active child window behind all other child windows.
 
@@ -326,7 +326,7 @@ If the currently active MDI child window is maximized, the member function resto
 
 [!code-cpp[NVC_MFCWindowing#18](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_6.cpp)]
 
-##  <a name="mdiprev"></a>  CMDIFrameWnd::MDIPrev
+## <a name="mdiprev"></a> CMDIFrameWnd::MDIPrev
 
 Activates the previous child window and places the currently active child window immediately behind it.
 
@@ -338,7 +338,7 @@ void MDIPrev();
 
 If the currently active MDI child window is maximized, the member function restores the currently active child and maximizes the newly activated child.
 
-##  <a name="mdirestore"></a>  CMDIFrameWnd::MDIRestore
+## <a name="mdirestore"></a> CMDIFrameWnd::MDIRestore
 
 Restores an MDI child window from maximized or minimized size.
 
@@ -355,7 +355,7 @@ Points to the window to restore.
 
 See the example for [CMDIChildWnd::MDIRestore](../../mfc/reference/cmdichildwnd-class.md#mdirestore).
 
-##  <a name="mdisetmenu"></a>  CMDIFrameWnd::MDISetMenu
+## <a name="mdisetmenu"></a> CMDIFrameWnd::MDISetMenu
 
 Replaces the menu of an MDI frame window, the Window pop-up menu, or both.
 
@@ -393,7 +393,7 @@ Do not call this member function if you use the framework to manage your MDI chi
 
 [!code-cpp[NVC_MFCWindowing#20](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_8.cpp)]
 
-##  <a name="mditile"></a>  CMDIFrameWnd::MDITile
+## <a name="mditile"></a> CMDIFrameWnd::MDITile
 
 Arranges all child windows in a tiled format.
 

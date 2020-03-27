@@ -52,7 +52,7 @@ The following example demonstrates how to use various methods in the `CMFCRibbon
 
 **Header:** afxRibbonBar.h
 
-##  <a name="cmfcribbonapplicationbutton"></a>  CMFCRibbonApplicationButton::CMFCRibbonApplicationButton
+## <a name="cmfcribbonapplicationbutton"></a> CMFCRibbonApplicationButton::CMFCRibbonApplicationButton
 
 Constructs and initializes a [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md) object.
 
@@ -74,7 +74,7 @@ A handle to a bitmap to display on the application button.
 
 The ribbon application button is a special button that is located in the upper-left corner of the application window. When a user clicks this button, the application opens a menu that usually contains common **File** commands, such as **Open**, **Save**, and **Exit**.
 
-##  <a name="setimage"></a>  CMFCRibbonApplicationButton::SetImage
+## <a name="setimage"></a> CMFCRibbonApplicationButton::SetImage
 
 Assigns an image to the application button.
 

@@ -10,7 +10,7 @@ ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715
 `IWorkerThreadClient` is the interface implemented by clients of the [CWorkerThread](../../atl/reference/cworkerthread-class.md) class.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ Implement this interface when you have code that needs to execute on a worker th
 
 **Header:** atlutil.h
 
-##  <a name="closehandle"></a>  IWorkerThreadClient::CloseHandle
+## <a name="closehandle"></a> IWorkerThreadClient::CloseHandle
 
 Implement this method to close the handle associated with this object.
 
@@ -62,7 +62,7 @@ The following code shows a simple implementation of `IWorkerThreadClient::CloseH
 
 [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/cpp/iworkerthreadclient-interface_1.cpp)]
 
-##  <a name="execute"></a>  IWorkerThreadClient::Execute
+## <a name="execute"></a> IWorkerThreadClient::Execute
 
 Implement this method to execute code when the handle associated with this object becomes signaled.
 

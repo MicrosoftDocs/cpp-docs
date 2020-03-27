@@ -52,7 +52,7 @@ For more information on docking control bars, see the articles [Control Bars](..
 
 **Header:** afxadv.h
 
-##  <a name="clear"></a>  CDockState::Clear
+## <a name="clear"></a> CDockState::Clear
 
 Call this function to clear all docking information stored in the `CDockState` object.
 
@@ -64,7 +64,7 @@ void Clear();
 
 This includes not only whether the bar is docked or not, but the bar's size and position and whether or not it is visible.
 
-##  <a name="getversion"></a>  CDockState::GetVersion
+## <a name="getversion"></a> CDockState::GetVersion
 
 Call this function to retrieve the version number of the stored bar state.
 
@@ -80,7 +80,7 @@ DWORD GetVersion();
 
 Version support enables a revised bar to add new persistent properties and still be able to detect and load the persistent state created by an earlier version of the bar.
 
-##  <a name="loadstate"></a>  CDockState::LoadState
+## <a name="loadstate"></a> CDockState::LoadState
 
 Call this function to retrieve state information from the registry or .INI file.
 
@@ -97,7 +97,7 @@ Points to a null-teminated string that specifies the name of a section in the in
 
 The profile name is the section of the application's .INI file or the registry that contains the bars' state information. You can save control bar state information to the registry or .INI file with `SaveState`.
 
-##  <a name="m_arrbarinfo"></a>  CDockState::m_arrBarInfo
+## <a name="m_arrbarinfo"></a> CDockState::m_arrBarInfo
 
 A `CPtrArray` object that is an array of pointers to the stored control bar information for each control bar that has saved state information in the `CDockState` object.
 
@@ -105,7 +105,7 @@ A `CPtrArray` object that is an array of pointers to the stored control bar info
 CPtrArray m_arrBarInfo;
 ```
 
-##  <a name="savestate"></a>  CDockState::SaveState
+## <a name="savestate"></a> CDockState::SaveState
 
 Call this function to save the state information to the registry or .INI file.
 

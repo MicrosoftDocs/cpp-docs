@@ -103,7 +103,7 @@ The following example demonstrates how to use various methods in the `CMFCCaptio
 
 **Header:** afxcaptionbar.h
 
-##  <a name="create"></a>  CMFCCaptionBar::Create
+## <a name="create"></a> CMFCCaptionBar::Create
 
 Creates the caption bar control and attaches it to the `CMFCCaptionBar` object.
 
@@ -141,7 +141,7 @@ TRUE if the caption bar control is created successfully; FALSE otherwise.
 
 You construct a `CMFCCaptionBar` object in two steps. First you call the constructor, and then you call the `Create` method, which creates the Windows control and attaches it to the `CMFCCaptionBar` object.
 
-##  <a name="doesallowdyninsertbefore"></a>  CMFCCaptionBar::DoesAllowDynInsertBefore
+## <a name="doesallowdyninsertbefore"></a> CMFCCaptionBar::DoesAllowDynInsertBefore
 
 Indicates whether another pane can be dynamically inserted between the caption bar and its parent frame.
 
@@ -155,7 +155,7 @@ Returns FALSE unless overridden.
 
 ### Remarks
 
-##  <a name="enablebutton"></a>  CMFCCaptionBar::EnableButton
+## <a name="enablebutton"></a> CMFCCaptionBar::EnableButton
 
 Enables or disables the button on the caption bar.
 
@@ -168,7 +168,7 @@ void EnableButton(BOOL bEnable=TRUE);
 *bEnable*<br/>
 [in] TRUE to enable the button, FALSE to disable the button.
 
-##  <a name="getalignment"></a>  CMFCCaptionBar::GetAlignment
+## <a name="getalignment"></a> CMFCCaptionBar::GetAlignment
 
 Returns the alignment of the specified element.
 
@@ -197,7 +197,7 @@ The alignment of the element can be one of the following values:
 
 - ALIGN_CENTER
 
-##  <a name="getbordersize"></a>  CMFCCaptionBar::GetBorderSize
+## <a name="getbordersize"></a> CMFCCaptionBar::GetBorderSize
 
 Returns the border size of the caption bar.
 
@@ -209,7 +209,7 @@ int GetBorderSize() const;
 
 The size, in pixels, of the border.
 
-##  <a name="getbuttonrect"></a>  CMFCCaptionBar::GetButtonRect
+## <a name="getbuttonrect"></a> CMFCCaptionBar::GetButtonRect
 
 Retrieves the bounding rectangle of the button on the caption bar.
 
@@ -221,7 +221,7 @@ CRect GetButtonRect() const;
 
 A `CRect` object that contains the coordinates of the bounding rectangle of the button on the caption bar.
 
-##  <a name="getmargin"></a>  CMFCCaptionBar::GetMargin
+## <a name="getmargin"></a> CMFCCaptionBar::GetMargin
 
 Returns the distance between the edge of the caption bar elements and the edge of the caption bar control.
 
@@ -233,7 +233,7 @@ int GetMargin() const;
 
 The distance, in pixels, between the edge of the caption bar elements and the edge of the caption bar control.
 
-##  <a name="ismessagebarmode"></a>  CMFCCaptionBar::IsMessageBarMode
+## <a name="ismessagebarmode"></a> CMFCCaptionBar::IsMessageBarMode
 
 Specifies whether the caption bar is in the message bar mode.
 
@@ -249,7 +249,7 @@ TRUE if the caption bar is in the message bar mode; FALSE otherwise.
 
 In the message bar mode, the caption bar displays an image with a tooltip, a message text, and a button.
 
-##  <a name="m_clrbarbackground"></a>  CMFCCaptionBar::m_clrBarBackground
+## <a name="m_clrbarbackground"></a> CMFCCaptionBar::m_clrBarBackground
 
 The background color of the caption bar.
 
@@ -257,7 +257,7 @@ The background color of the caption bar.
 COLORREF m_clrBarBackground
 ```
 
-##  <a name="m_clrbarborder"></a>  CMFCCaptionBar::m_clrBarBorder
+## <a name="m_clrbarborder"></a> CMFCCaptionBar::m_clrBarBorder
 
 The color of the border of the caption bar.
 
@@ -265,7 +265,7 @@ The color of the border of the caption bar.
 COLORREF m_clrBarBorder
 ```
 
-##  <a name="m_clrbartext"></a>  CMFCCaptionBar::m_clrBarText
+## <a name="m_clrbartext"></a> CMFCCaptionBar::m_clrBarText
 
 The color of the caption bar text.
 
@@ -273,7 +273,7 @@ The color of the caption bar text.
 COLORREF m_clrBarText
 ```
 
-##  <a name="ondrawbackground"></a>  CMFCCaptionBar::OnDrawBackground
+## <a name="ondrawbackground"></a> CMFCCaptionBar::OnDrawBackground
 
 Called by the framework to fill the background of the caption bar.
 
@@ -297,7 +297,7 @@ The `OnDrawBackground` method is called when the background of the caption bar i
 
 Override this method in a `CMFCCaptionBar` derived class to customize the appearance of the caption bar.
 
-##  <a name="ondrawborder"></a>  CMFCCaptionBar::OnDrawBorder
+## <a name="ondrawborder"></a> CMFCCaptionBar::OnDrawBorder
 
 Called by the framework to draw the border of the caption bar.
 
@@ -321,7 +321,7 @@ By default, the borders have the flat style.
 
 Override this method in a `CMFCCaptionBar` derived class to customize the appearance of the caption bar's borders.
 
-##  <a name="ondrawbutton"></a>  CMFCCaptionBar::OnDrawButton
+## <a name="ondrawbutton"></a> CMFCCaptionBar::OnDrawButton
 
 Called by the framework to draw the caption bar button.
 
@@ -351,7 +351,7 @@ virtual void OnDrawButton(
 
 Override this method in a `CMFCCaptionBar` derived class to customize the appearance of the caption bar's button.
 
-##  <a name="ondrawimage"></a>  CMFCCaptionBar::OnDrawImage
+## <a name="ondrawimage"></a> CMFCCaptionBar::OnDrawImage
 
 Called by the framework to draw the caption bar image.
 
@@ -373,7 +373,7 @@ virtual void OnDrawImage(
 
 Override this method in a `CMFCCaptionBar` derived class to customize the image appearance.
 
-##  <a name="ondrawtext"></a>  CMFCCaptionBar::OnDrawText
+## <a name="ondrawtext"></a> CMFCCaptionBar::OnDrawText
 
 Called by the framework to draw the caption bar text.
 
@@ -401,7 +401,7 @@ The default implementation displays the text by using `CDC::DrawText` and [CMFCC
 
 Override this method in a `CMFCCaptionBar` derived class to customize the appearance of the caption bar's text.
 
-##  <a name="removebitmap"></a>  CMFCCaptionBar::RemoveBitmap
+## <a name="removebitmap"></a> CMFCCaptionBar::RemoveBitmap
 
 Removes the bitmap image from the caption bar.
 
@@ -409,7 +409,7 @@ Removes the bitmap image from the caption bar.
 void RemoveBitmap();
 ```
 
-##  <a name="removebutton"></a>  CMFCCaptionBar::RemoveButton
+## <a name="removebutton"></a> CMFCCaptionBar::RemoveButton
 
 Removes the button from the caption bar.
 
@@ -421,7 +421,7 @@ void RemoveButton();
 
 The layout of caption bar elements are adjusted automatically.
 
-##  <a name="removeicon"></a>  CMFCCaptionBar::RemoveIcon
+## <a name="removeicon"></a> CMFCCaptionBar::RemoveIcon
 
 Removes the icon from the caption bar.
 
@@ -429,7 +429,7 @@ Removes the icon from the caption bar.
 void RemoveIcon();
 ```
 
-##  <a name="removetext"></a>  CMFCCaptionBar::RemoveText
+## <a name="removetext"></a> CMFCCaptionBar::RemoveText
 
 Removes the text label from the caption bar.
 
@@ -437,7 +437,7 @@ Removes the text label from the caption bar.
 void RemoveText();
 ```
 
-##  <a name="setbitmap"></a>  CMFCCaptionBar::SetBitmap
+## <a name="setbitmap"></a> CMFCCaptionBar::SetBitmap
 
 Sets the bitmap image for the caption bar.
 
@@ -485,7 +485,7 @@ The bitmap is aligned as specified by the *bmpAlignment* parameter.  This parame
 
 - ALIGN_CENTER
 
-##  <a name="setbordersize"></a>  CMFCCaptionBar::SetBorderSize
+## <a name="setbordersize"></a> CMFCCaptionBar::SetBorderSize
 
 Sets the border size of the caption bar.
 
@@ -498,7 +498,7 @@ void SetBorderSize(int nSize);
 *nSize*<br/>
 [in] The new size, in pixels, of the caption bar border.
 
-##  <a name="setbutton"></a>  CMFCCaptionBar::SetButton
+## <a name="setbutton"></a> CMFCCaptionBar::SetButton
 
 Sets the button for the caption bar.
 
@@ -524,7 +524,7 @@ The button's alignment.
 *bHasDropDownArrow*<br/>
 TRUE if the button displays a drop down arrow, FALSE otherwise.
 
-##  <a name="setbuttonpressed"></a>  CMFCCaptionBar::SetButtonPressed
+## <a name="setbuttonpressed"></a> CMFCCaptionBar::SetButtonPressed
 
 Specifies whether the button stays pressed.
 
@@ -537,7 +537,7 @@ void SetButtonPressed(BOOL bPresed=TRUE);
 *bPresed*<br/>
 TRUE if the button keeps its pressed state, FALSE otherwise.
 
-##  <a name="setbuttontooltip"></a>  CMFCCaptionBar::SetButtonToolTip
+## <a name="setbuttontooltip"></a> CMFCCaptionBar::SetButtonToolTip
 
 Sets the tooltip for the button.
 
@@ -555,7 +555,7 @@ void SetButtonToolTip(
 *lpszDescription*<br/>
 [in] The tooltip description.
 
-##  <a name="setflatborder"></a>  CMFCCaptionBar::SetFlatBorder
+## <a name="setflatborder"></a> CMFCCaptionBar::SetFlatBorder
 
 Sets the border style of the caption bar.
 
@@ -568,7 +568,7 @@ void SetFlatBorder(BOOL bFlat=TRUE);
 *bFlat*<br/>
 [in] TRUE if the border of a caption bar is flat. FALSE if the border is 3D.
 
-##  <a name="seticon"></a>  CMFCCaptionBar::SetIcon
+## <a name="seticon"></a> CMFCCaptionBar::SetIcon
 
 Sets the icon for a caption bar.
 
@@ -600,7 +600,7 @@ The icon is aligned according to the *iconAlignment* parameter. It can be one of
 
 - ALIGN_CENTER
 
-##  <a name="setimagetooltip"></a>  CMFCCaptionBar::SetImageToolTip
+## <a name="setimagetooltip"></a> CMFCCaptionBar::SetImageToolTip
 
 Sets the tooltip for the image in the caption bar.
 
@@ -618,7 +618,7 @@ void SetImageToolTip(
 *lpszDescription*<br/>
 [in] The tooltip description.
 
-##  <a name="setmargin"></a>  CMFCCaptionBar::SetMargin
+## <a name="setmargin"></a> CMFCCaptionBar::SetMargin
 
 Sets the distance between the edge of the caption bar element and the edge of the caption bar control.
 
@@ -631,7 +631,7 @@ void SetMargin(int nMargin);
 *nMargin*<br/>
 [in] The distance, in pixels, between the edge of the caption bar elements and the edge of the caption bar control.
 
-##  <a name="settext"></a>  CMFCCaptionBar::SetText
+## <a name="settext"></a> CMFCCaptionBar::SetText
 
 Sets the text label for the caption bar.
 

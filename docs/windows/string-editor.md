@@ -86,7 +86,7 @@ Select the entry you want to delete and do one of the following:
 You can use in-place editing to change the **ID**, **Value**, and **Caption** properties.
 
 > [!NOTE]
->  You can also edit a string's properties in the [Properties window](/visualstudio/ide/reference/properties-window).
+> You can also edit a string's properties in the [Properties window](/visualstudio/ide/reference/properties-window).
 
 #### To change a string or its identifier
 

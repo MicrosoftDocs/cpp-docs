@@ -82,7 +82,7 @@ The following example shows the various ways to create an `IAsyncAction` object 
 
 [!code-cpp[concrt-windowsstore-primes#100](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_1.cpp)]
 
-## <a name="example-component"></a>Example: Creating a C++ Windows Runtime Component and Consuming it from C\#
+## <a name="example-component"></a> Example: Creating a C++ Windows Runtime Component and Consuming it from C\#
 
 Consider an app that uses XAML and C# to define the UI and a C++ Windows Runtime component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four Windows Runtime asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](/uwp/api/Windows.Foundation.Collections.IVector_T_) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.
 

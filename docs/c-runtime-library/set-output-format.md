@@ -14,7 +14,7 @@ ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
 Customizes output formats used by formatted I/O functions.
 
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+> This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
 
 ## Syntax
 

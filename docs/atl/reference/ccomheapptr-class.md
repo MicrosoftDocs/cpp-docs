@@ -45,7 +45,7 @@ The object type to be stored on the heap.
 
 **Header:** atlbase.h
 
-##  <a name="ccomheapptr"></a>  CComHeapPtr::CComHeapPtr
+## <a name="ccomheapptr"></a> CComHeapPtr::CComHeapPtr
 
 The constructor.
 

@@ -15,87 +15,87 @@ The library's classes are presented here in the following categories:
 
 - [MFC Application Architecture Classes](../mfc/mfc-application-architecture-classes.md)
 
-   - [Application and Thread Support Classes](../mfc/application-and-thread-support-classes.md)
+  - [Application and Thread Support Classes](../mfc/application-and-thread-support-classes.md)
 
-   - [Command Routing Classes](../mfc/command-routing-classes.md)
+  - [Command Routing Classes](../mfc/command-routing-classes.md)
 
-   - [Document Classes](../mfc/document-classes.md)
+  - [Document Classes](../mfc/document-classes.md)
 
-   - [View Classes (Architecture)](../mfc/view-classes-architecture.md)
+  - [View Classes (Architecture)](../mfc/view-classes-architecture.md)
 
-   - [Frame Window Classes (Architecture)](../mfc/frame-window-classes-architecture.md)
+  - [Frame Window Classes (Architecture)](../mfc/frame-window-classes-architecture.md)
 
-   - [Document-Template Classes](../mfc/document-template-classes.md)
+  - [Document-Template Classes](../mfc/document-template-classes.md)
 
 - [Window, Dialog, and Control Classes](../mfc/window-dialog-and-control-classes.md)
 
-   - [Frame Window Classes (Windows)](../mfc/frame-window-classes-windows.md)
+  - [Frame Window Classes (Windows)](../mfc/frame-window-classes-windows.md)
 
-   - [View Classes (Windows)](../mfc/view-classes-windows.md)
+  - [View Classes (Windows)](../mfc/view-classes-windows.md)
 
-   - [Dialog Box Classes](../mfc/dialog-box-classes.md)
+  - [Dialog Box Classes](../mfc/dialog-box-classes.md)
 
-   - [Control Classes](../mfc/control-classes.md)
+  - [Control Classes](../mfc/control-classes.md)
 
-   - [Control Bar Classes](../mfc/control-bar-classes.md)
+  - [Control Bar Classes](../mfc/control-bar-classes.md)
 
 - [Drawing and Printing Classes](../mfc/drawing-and-printing-classes.md)
 
-   - [Output (Device Context) Classes](../mfc/output-device-context-classes.md)
+  - [Output (Device Context) Classes](../mfc/output-device-context-classes.md)
 
-   - [Drawing Tool Classes](../mfc/drawing-tool-classes.md)
+  - [Drawing Tool Classes](../mfc/drawing-tool-classes.md)
 
 - [Simple Data Type Classes](../mfc/simple-data-type-classes.md)
 
 - [Array, List, and Map Classes](../mfc/array-list-and-map-classes.md)
 
-   - [Template Classes for Arrays, Lists, and Maps](../mfc/template-classes-for-arrays-lists-and-maps.md)
+  - [Template Classes for Arrays, Lists, and Maps](../mfc/template-classes-for-arrays-lists-and-maps.md)
 
-   - [Ready-to-Use Array Classes](../mfc/ready-to-use-array-classes.md)
+  - [Ready-to-Use Array Classes](../mfc/ready-to-use-array-classes.md)
 
-   - [Ready-to-Use List Classes](../mfc/ready-to-use-list-classes.md)
+  - [Ready-to-Use List Classes](../mfc/ready-to-use-list-classes.md)
 
-   - [Ready-to-Use Map Classes](../mfc/ready-to-use-map-classes.md)
+  - [Ready-to-Use Map Classes](../mfc/ready-to-use-map-classes.md)
 
 - [File and Database Classes](../mfc/file-and-database-classes.md)
 
-   - [File I/O Classes](../mfc/file-i-o-classes.md)
+  - [File I/O Classes](../mfc/file-i-o-classes.md)
 
-   - [DAO Classes](../mfc/dao-classes.md)
+  - [DAO Classes](../mfc/dao-classes.md)
 
-   - [ODBC Classes](../mfc/odbc-classes.md)
+  - [ODBC Classes](../mfc/odbc-classes.md)
 
-   - [OLE DB Classes](../mfc/ole-db-classes.md)
+  - [OLE DB Classes](../mfc/ole-db-classes.md)
 
 - [Internet and Networking Classes](../mfc/internet-and-networking-classes.md)
 
-   - [Windows Sockets Classes](../mfc/windows-sockets-classes.md)
+  - [Windows Sockets Classes](../mfc/windows-sockets-classes.md)
 
-   - [Win32 Internet Classes](../mfc/win32-internet-classes.md)
+  - [Win32 Internet Classes](../mfc/win32-internet-classes.md)
 
 - [OLE Classes](../mfc/ole-classes.md)
 
-   - [OLE Container Classes](../mfc/ole-container-classes.md)
+  - [OLE Container Classes](../mfc/ole-container-classes.md)
 
-   - [OLE Server Classes](../mfc/ole-server-classes.md)
+  - [OLE Server Classes](../mfc/ole-server-classes.md)
 
-   - [OLE Drag-and-Drop and Data Transfer Classes](../mfc/ole-drag-and-drop-and-data-transfer-classes.md)
+  - [OLE Drag-and-Drop and Data Transfer Classes](../mfc/ole-drag-and-drop-and-data-transfer-classes.md)
 
-   - [OLE Common Dialog Classes](../mfc/ole-common-dialog-classes.md)
+  - [OLE Common Dialog Classes](../mfc/ole-common-dialog-classes.md)
 
-   - [OLE Automation Classes](../mfc/ole-automation-classes.md)
+  - [OLE Automation Classes](../mfc/ole-automation-classes.md)
 
-   - [OLE Control Classes](../mfc/ole-control-classes.md)
+  - [OLE Control Classes](../mfc/ole-control-classes.md)
 
-   - [Active Document Classes](../mfc/active-document-classes.md)
+  - [Active Document Classes](../mfc/active-document-classes.md)
 
-   - [OLE-Related Classes](../mfc/ole-related-classes.md)
+  - [OLE-Related Classes](../mfc/ole-related-classes.md)
 
 - [Debugging and Exception Classes](../mfc/debugging-and-exception-classes.md)
 
-   - [Debugging Support Classes](../mfc/debugging-support-classes.md)
+  - [Debugging Support Classes](../mfc/debugging-support-classes.md)
 
-   - [Exception Classes](../mfc/exception-classes.md)
+  - [Exception Classes](../mfc/exception-classes.md)
 
 The section [General Class Design Philosophy](../mfc/general-class-design-philosophy.md) explains how the MFC Library was designed.
 

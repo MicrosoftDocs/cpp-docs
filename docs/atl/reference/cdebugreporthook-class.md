@@ -46,7 +46,7 @@ Note that debug reports are sent using the underlying security context of the th
 
 **Header:** atlutil.h
 
-##  <a name="cdebugreporthook"></a>  CDebugReportHook::CDebugReportHook
+## <a name="cdebugreporthook"></a> CDebugReportHook::CDebugReportHook
 
 Calls [SetPipeName](#setpipename), [SetTimeout](#settimeout), and [SetHook](#sethook).
 
@@ -68,7 +68,7 @@ The name of the named pipe to which the debug output should be sent.
 *dwTimeout*<br/>
 The time in milliseconds that this class will wait for the named pipe to become available.
 
-##  <a name="dtor"></a>  CDebugReportHook::~CDebugReportHook
+## <a name="dtor"></a> CDebugReportHook::~CDebugReportHook
 
 Calls [CDebugReportHook::RemoveHook](#removehook).
 
@@ -76,7 +76,7 @@ Calls [CDebugReportHook::RemoveHook](#removehook).
 ~CDebugReportHook() throw();
 ```
 
-##  <a name="cdebugreporthookproc"></a>  CDebugReportHook::CDebugReportHookProc
+## <a name="cdebugreporthookproc"></a> CDebugReportHook::CDebugReportHookProc
 
 The custom reporting function that is hooked into the C run-time debug reporting process.
 
@@ -108,7 +108,7 @@ The reporting function attempts to open the named pipe and communicate with the 
 
 The code in this function is executed in the underlying security context of the calling thread, that is, impersonation is disabled for the duration of this function.
 
-##  <a name="removehook"></a>  CDebugReportHook::RemoveHook
+## <a name="removehook"></a> CDebugReportHook::RemoveHook
 
 Call this method to stop sending debug reports to the named pipe and restore the previous report hook.
 
@@ -120,7 +120,7 @@ void RemoveHook() throw();
 
 Calls [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) to restore the previous report hook.
 
-##  <a name="sethook"></a>  CDebugReportHook::SetHook
+## <a name="sethook"></a> CDebugReportHook::SetHook
 
 Call this method to start sending debug reports to the named pipe.
 
@@ -132,7 +132,7 @@ void SetHook() throw();
 
 Calls [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) to have debug reports routed through [CDebugReportHookProc](#cdebugreporthookproc) to the named pipe. This class keeps track of the previous report hook so that it can be restored when [RemoveHook](#removehook) is called.
 
-##  <a name="setpipename"></a>  CDebugReportHook::SetPipeName
+## <a name="setpipename"></a> CDebugReportHook::SetPipeName
 
 Call this method to set the machine and name of the pipe to which the debug reports will be sent.
 
@@ -154,7 +154,7 @@ The name of the named pipe to which the debug output should be sent.
 
 Returns TRUE on success, FALSE on failure.
 
-##  <a name="settimeout"></a>  CDebugReportHook::SetTimeout
+## <a name="settimeout"></a> CDebugReportHook::SetTimeout
 
 Call this method to set the time in milliseconds that this class will wait for the named pipe to become available.
 

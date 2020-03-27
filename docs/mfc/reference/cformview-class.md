@@ -57,7 +57,7 @@ The MFC Application Wizard and the Add Class command are the preferred methods f
 
 **Header:** afxext.h
 
-##  <a name="cformview"></a>  CFormView::CFormView
+## <a name="cformview"></a> CFormView::CFormView
 
 Constructs a `CFormView` object.
 
@@ -81,7 +81,7 @@ When you create an object of a type derived from `CFormView`, invoke one of the 
 The form-view window and child controls are not created until `CWnd::Create` is called. `CWnd::Create` is called by the framework as part of the document and view creation process, which is driven by the document template.
 
 > [!NOTE]
->  Your derived class *must* supply its own constructor. In the constructor, invoke the constructor, `CFormView::CFormView`, with the resource name or ID as an argument as shown in the preceding class overview.
+> Your derived class *must* supply its own constructor. In the constructor, invoke the constructor, `CFormView::CFormView`, with the resource name or ID as an argument as shown in the preceding class overview.
 
 ### Example
 
@@ -89,7 +89,7 @@ The form-view window and child controls are not created until `CWnd::Create` is 
 
 [!code-cpp[NVC_MFCDocView#91](../../mfc/codesnippet/cpp/cformview-class_2.cpp)]
 
-##  <a name="isinitdlgcompleted"></a>  CFormView::IsInitDlgCompleted
+## <a name="isinitdlgcompleted"></a> CFormView::IsInitDlgCompleted
 
 Used by MFC to ensure that initialization is completed before performing other operations.
 

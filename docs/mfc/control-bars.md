@@ -19,7 +19,7 @@ Control bars are windows that display rows of controls with which users can sele
 - Rebars, in class [CReBar](../mfc/reference/crebar-class.md)
 
 > [!IMPORTANT]
->  As of MFC version 4.0, toolbars, status bars, and tool tips are implemented using system functionality implemented in the *comctl32.dll* instead of the previous implementation specific to MFC. In MFC version 6.0, `CReBar`, which also wraps comctl32.dll functionality, was added.
+> As of MFC version 4.0, toolbars, status bars, and tool tips are implemented using system functionality implemented in the *comctl32.dll* instead of the previous implementation specific to MFC. In MFC version 6.0, `CReBar`, which also wraps comctl32.dll functionality, was added.
 
 Brief introductions to the control-bar types follow. For further information, see the links below.
 
@@ -28,14 +28,14 @@ Brief introductions to the control-bar types follow. For further information, se
 Control bars greatly enhance a program's usability by providing quick, one-step command actions. Class `CControlBar` provides the common functionality of all toolbars, status bars, and dialog bars. `CControlBar` provides the functionality for positioning the control bar in its parent frame window. Because a control bar is usually a child window of a parent frame window, it is a "sibling" to the client view or MDI client of the frame window. A control-bar object uses information about its parent window's client rectangle to position itself. Then it alters the parent's remaining client-window rectangle so that the client view or MDI client window fills the rest of the client window.
 
 > [!NOTE]
->  If a button on the control bar doesn't have a **COMMAND** or **UPDATE_COMMAND_UI** handler, the framework automatically disables the button.
+> If a button on the control bar doesn't have a **COMMAND** or **UPDATE_COMMAND_UI** handler, the framework automatically disables the button.
 
 ## Toolbars
 
 A toolbar is a control bar that displays a row of bitmapped buttons that carry out commands. Pressing a toolbar button is equivalent to choosing a menu item; it calls the same handler mapped to a menu item if that menu item has the same ID as the toolbar button. The buttons can be configured to appear and behave as pushbuttons, radio buttons, or check boxes. A toolbar is usually aligned to the top of a frame window, but an MFC toolbar can "dock" to any side of its parent window or float in its own mini-frame window. A toolbar can also "float" and you can change its size and drag it with a mouse. A toolbar can also display tool tips as the user moves the mouse over the toolbar's buttons. A tool tip is a tiny popup window that briefly describes the button's purpose.
 
 > [!NOTE]
->  As of MFC version 4.0, class [CToolBar](../mfc/reference/ctoolbar-class.md) uses the Windows toolbar common control. A `CToolBar` contains a [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md). Older toolbars are still supported, however. See the article [ToolBars](../mfc/mfc-toolbar-implementation.md).
+> As of MFC version 4.0, class [CToolBar](../mfc/reference/ctoolbar-class.md) uses the Windows toolbar common control. A `CToolBar` contains a [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md). Older toolbars are still supported, however. See the article [ToolBars](../mfc/mfc-toolbar-implementation.md).
 
 ## Status Bars
 

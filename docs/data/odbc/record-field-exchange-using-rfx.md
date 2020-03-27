@@ -9,7 +9,7 @@ ms.assetid: ada8f043-37e6-4d41-9db3-92c997a61957
 This topic explains what you do to use RFX in relation to what the framework does.
 
 > [!NOTE]
->  This topic applies to classes derived from [CRecordset](../../mfc/reference/crecordset-class.md) in which bulk row fetching has not been implemented. If you are using bulk row fetching, bulk record field exchange (Bulk RFX) is implemented. Bulk RFX is similar to RFX. To understand the differences, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> This topic applies to classes derived from [CRecordset](../../mfc/reference/crecordset-class.md) in which bulk row fetching has not been implemented. If you are using bulk row fetching, bulk record field exchange (Bulk RFX) is implemented. Bulk RFX is similar to RFX. To understand the differences, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 The following topics contain related information:
 

@@ -4,7 +4,6 @@ ms.date: "08/30/2019"
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
-
 # Clang/LLVM support in Visual Studio projects
 
 ::: moniker range="<=vs-2017"

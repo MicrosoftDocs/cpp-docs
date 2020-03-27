@@ -39,7 +39,7 @@ extern template MyStack<int, 6>::MyStack( void );
 You can use the **extern** keyword to keep the compiler from generating the same instantiation code in more than one object module. You must instantiate the template function by using the specified explicit template parameters in at least one linked module if the function is called, or you will get a linker error when the program is built.
 
 > [!NOTE]
->  The **extern** keyword in the specialization only applies to member functions defined outside of the body of the class. Functions defined inside the class declaration are considered inline functions and are always instantiated.
+> The **extern** keyword in the specialization only applies to member functions defined outside of the body of the class. Functions defined inside the class declaration are considered inline functions and are always instantiated.
 
 ## See also
 

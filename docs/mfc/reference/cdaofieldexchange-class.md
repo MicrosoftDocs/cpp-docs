@@ -40,10 +40,10 @@ class CDaoFieldExchange
 Use this class if you are writing data exchange routines for custom data types; otherwise, you will not directly use this class. DFX exchanges data between the field data members of your [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object and the corresponding fields of the current record on the data source. DFX manages the exchange in both directions, from the data source and to the data source. See [Technical Note 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) for information about writing custom DFX routines.
 
 > [!NOTE]
->  The DAO database classes are distinct from the MFC database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes. In general, the MFC classes based on DAO are more capable than the MFC classes based on ODBC. The DAO-based classes can access data, including through ODBC drivers, via their own database engine. They also support Data Definition Language (DDL) operations, such as adding tables via the classes instead of having to call DAO yourself.
+> The DAO database classes are distinct from the MFC database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes. In general, the MFC classes based on DAO are more capable than the MFC classes based on ODBC. The DAO-based classes can access data, including through ODBC drivers, via their own database engine. They also support Data Definition Language (DDL) operations, such as adding tables via the classes instead of having to call DAO yourself.
 
 > [!NOTE]
->  DAO record field exchange (DFX) is very similar to record field exchange (RFX) in the ODBC-based MFC database classes ( `CDatabase`, `CRecordset`). If you understand RFX, you will find it easy to use DFX.
+> DAO record field exchange (DFX) is very similar to record field exchange (RFX) in the ODBC-based MFC database classes ( `CDatabase`, `CRecordset`). If you understand RFX, you will find it easy to use DFX.
 
 A `CDaoFieldExchange` object provides the context information needed for DAO record field exchange to take place. `CDaoFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. DFX operations are performed on recordset-class data members of types defined by the **enum** **FieldType** in `CDaoFieldExchange`. Possible **FieldType** values are:
 
@@ -61,7 +61,7 @@ The [IsValidOperation](#isvalidoperation) member function is provided for writin
 
 **Header:** afxdao.h
 
-##  <a name="isvalidoperation"></a>  CDaoFieldExchange::IsValidOperation
+## <a name="isvalidoperation"></a> CDaoFieldExchange::IsValidOperation
 
 If you write your own DFX function, call `IsValidOperation` at the beginning of your function to determine whether the current operation can be performed on a particular field data member type (a `CDaoFieldExchange::outputColumn` or a `CDaoFieldExchange::param`).
 
@@ -79,7 +79,7 @@ Some of the operations performed by the DFX mechanism apply only to one of the p
 
 For additional information on writing custom DFX routines, see [Technical Note 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md).
 
-##  <a name="m_noperation"></a>  CDaoFieldExchange::m_nOperation
+## <a name="m_noperation"></a> CDaoFieldExchange::m_nOperation
 
 Identifies the operation to be performed on the [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object associated with the field exchange object.
 
@@ -88,7 +88,7 @@ Identifies the operation to be performed on the [CDaoRecordset](../../mfc/refere
 The `CDaoFieldExchange` object supplies the context for a number of different DFX operations on the recordset.
 
 > [!NOTE]
->  The PSEUDONULL value described under the MarkForAddNew and SetFieldNull operations below is a value used to mark fields Null. The DAO record field exchange mechanism (DFX) uses this value to determine which fields have been explicitly marked Null. PSEUDONULL is not required for [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) and [COleCurrency](../../mfc/reference/colecurrency-class.md) fields.
+> The PSEUDONULL value described under the MarkForAddNew and SetFieldNull operations below is a value used to mark fields Null. The DAO record field exchange mechanism (DFX) uses this value to determine which fields have been explicitly marked Null. PSEUDONULL is not required for [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) and [COleCurrency](../../mfc/reference/colecurrency-class.md) fields.
 
 Possible values of `m_nOperation` are:
 
@@ -110,13 +110,13 @@ Possible values of `m_nOperation` are:
 |`DumpField`|Dumps a field's contents (debug only).|
 |`MaxDFXOperation`|Used for input checking.|
 
-##  <a name="m_prs"></a>  CDaoFieldExchange::m_prs
+## <a name="m_prs"></a> CDaoFieldExchange::m_prs
 
 Contains a pointer to the [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object associated with the `CDaoFieldExchange` object.
 
 ### Remarks
 
-##  <a name="setfieldtype"></a>  CDaoFieldExchange::SetFieldType
+## <a name="setfieldtype"></a> CDaoFieldExchange::SetFieldType
 
 Call `SetFieldType` in your `CDaoRecordset` class's `DoFieldExchange` override.
 

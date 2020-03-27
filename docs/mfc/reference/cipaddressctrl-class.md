@@ -58,7 +58,7 @@ For more general information about the IP Address Control, see [IP Address Contr
 
 **Header:** afxcmn.h
 
-##  <a name="cipaddressctrl"></a>  CIPAddressCtrl::CIPAddressCtrl
+## <a name="cipaddressctrl"></a> CIPAddressCtrl::CIPAddressCtrl
 
 Creates a `CIPAddressCtrl` object.
 
@@ -66,7 +66,7 @@ Creates a `CIPAddressCtrl` object.
 CIPAddressCtrl();
 ```
 
-##  <a name="clearaddress"></a>  CIPAddressCtrl::ClearAddress
+## <a name="clearaddress"></a> CIPAddressCtrl::ClearAddress
 
 Clears the contents of the IP Address Control.
 
@@ -78,7 +78,7 @@ void ClearAddress();
 
 This member function implements the behavior of the Win32 message [IPM_CLEARADDRESS](/windows/win32/Controls/ipm-clearaddress), as described in the Windows SDK.
 
-##  <a name="create"></a>  CIPAddressCtrl::Create
+## <a name="create"></a> CIPAddressCtrl::Create
 
 Creates an IP Address Control and attaches it to a `CIPAddressCtrl` object.
 
@@ -118,7 +118,7 @@ You construct a `CIPAddressCtrl` object in two steps.
 
 If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of `Create`.
 
-##  <a name="createex"></a>  CIPAddressCtrl::CreateEx
+## <a name="createex"></a> CIPAddressCtrl::CreateEx
 
 Call this function to create a control (a child window) and associate it with the `CIPAddressCtrl` object.
 
@@ -156,7 +156,7 @@ Nonzero if successful; otherwise 0.
 
 Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
 
-##  <a name="getaddress"></a>  CIPAddressCtrl::GetAddress
+## <a name="getaddress"></a> CIPAddressCtrl::GetAddress
 
 Retrieves the address values for all four fields in the IP Address Control.
 
@@ -202,7 +202,7 @@ This member function implements the behavior of the Win32 message [IPM_GETADDRES
 |2|8 through 15|
 |3|0 through 7|
 
-##  <a name="isblank"></a>  CIPAddressCtrl::IsBlank
+## <a name="isblank"></a> CIPAddressCtrl::IsBlank
 
 Determines if all fields in the IP Address Control are empty.
 
@@ -218,7 +218,7 @@ Nonzero if all of the IP Address Control fields are empty; otherwise 0.
 
 This member function implements the behavior of the Win32 message [IPM_ISBLANK](/windows/win32/Controls/ipm-isblank), as described in the Windows SDK.
 
-##  <a name="setaddress"></a>  CIPAddressCtrl::SetAddress
+## <a name="setaddress"></a> CIPAddressCtrl::SetAddress
 
 Sets the address values for all four fields in the IP Address Control.
 
@@ -260,7 +260,7 @@ This member function implements the behavior of the Win32 message [IPM_SETADDRES
 |2|8 through 15|
 |3|0 through 7|
 
-##  <a name="setfieldfocus"></a>  CIPAddressCtrl::SetFieldFocus
+## <a name="setfieldfocus"></a> CIPAddressCtrl::SetFieldFocus
 
 Sets the keyboard focus to the specified field in the IP Address Control.
 
@@ -277,7 +277,7 @@ Zero-based field index to which the focus should be set. If this value is greate
 
 This member function implements the behavior of the Win32 message [IPM_SETFOCUS](/windows/win32/Controls/ipm-setfocus), as described in the Windows SDK.
 
-##  <a name="setfieldrange"></a>  CIPAddressCtrl::SetFieldRange
+## <a name="setfieldrange"></a> CIPAddressCtrl::SetFieldRange
 
 Sets the range in the specified field in the IP Address Control.
 

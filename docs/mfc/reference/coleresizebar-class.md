@@ -53,7 +53,7 @@ For more information, see the article [Activation](../../mfc/activation-cpp.md).
 
 **Header:** afxole.h
 
-##  <a name="coleresizebar"></a>  COleResizeBar::COleResizeBar
+## <a name="coleresizebar"></a> COleResizeBar::COleResizeBar
 
 Constructs a `COleResizeBar` object.
 
@@ -65,7 +65,7 @@ COleResizeBar();
 
 Call `Create` to create the resize bar object.
 
-##  <a name="create"></a>  COleResizeBar::Create
+## <a name="create"></a> COleResizeBar::Create
 
 Creates a child window and associates it with the `COleResizeBar` object.
 

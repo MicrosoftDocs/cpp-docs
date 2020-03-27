@@ -218,7 +218,7 @@ There are two options to customize the error policy. The first option is to set 
 
 **Namespace:** msl::utilities
 
-## <a name="safeint"></a>SafeInt::SafeInt
+## <a name="safeint"></a> SafeInt::SafeInt
 
 Constructs a `SafeInt` object.
 

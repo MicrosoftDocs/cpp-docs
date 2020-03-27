@@ -133,7 +133,7 @@ For more information on using `CTreeCtrl`, see:
 
 **Header:** afxcmn.h
 
-##  <a name="create"></a>  CTreeCtrl::Create
+## <a name="create"></a> CTreeCtrl::Create
 
 If you specify the tree control in a dialog box template, or if you are using [CTreeView](../../mfc/reference/ctreeview-class.md), your tree control is created automatically when the dialog box or view is created.
 
@@ -175,7 +175,7 @@ To create a tree control with extended window styles, call [CreateEx](#createex)
 
 [!code-cpp[NVC_MFC_CTreeCtrl#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_1.cpp)]
 
-##  <a name="createex"></a>  CTreeCtrl::CreateEx
+## <a name="createex"></a> CTreeCtrl::CreateEx
 
 Call this function to create a control (a child window) and associate it with the `CTreeCtrl` object.
 
@@ -213,7 +213,7 @@ Nonzero if successful otherwise 0.
 
 Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
 
-##  <a name="createdragimage"></a>  CTreeCtrl::CreateDragImage
+## <a name="createdragimage"></a> CTreeCtrl::CreateDragImage
 
 Call this function to create a dragging bitmap for the given item in a tree view control, create an image list for the bitmap, and add the bitmap to the image list.
 
@@ -238,7 +238,7 @@ The `CImageList` object is permanent, and you must delete it when finished. For 
 
 [!code-cpp[NVC_MFC_CTreeCtrl#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_2.cpp)]
 
-##  <a name="ctreectrl"></a>  CTreeCtrl::CTreeCtrl
+## <a name="ctreectrl"></a> CTreeCtrl::CTreeCtrl
 
 Constructs a `CTreeCtrl` object.
 
@@ -246,7 +246,7 @@ Constructs a `CTreeCtrl` object.
 CTreeCtrl();
 ```
 
-##  <a name="deleteallitems"></a>  CTreeCtrl::DeleteAllItems
+## <a name="deleteallitems"></a> CTreeCtrl::DeleteAllItems
 
 Call this function to delete all items from the tree view control.
 
@@ -262,7 +262,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#3](../../mfc/reference/codesnippet/cpp/ctreectrl-class_3.cpp)]
 
-##  <a name="deleteitem"></a>  CTreeCtrl::DeleteItem
+## <a name="deleteitem"></a> CTreeCtrl::DeleteItem
 
 Call this function to delete an item from the tree view control.
 
@@ -283,7 +283,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#4](../../mfc/reference/codesnippet/cpp/ctreectrl-class_4.cpp)]
 
-##  <a name="editlabel"></a>  CTreeCtrl::EditLabel
+## <a name="editlabel"></a> CTreeCtrl::EditLabel
 
 Call this function to begin in-place editing of the specified item's text.
 
@@ -308,7 +308,7 @@ The editing is accomplished by replacing the text of the item with a single-line
 
 [!code-cpp[NVC_MFC_CTreeCtrl#5](../../mfc/reference/codesnippet/cpp/ctreectrl-class_5.cpp)]
 
-##  <a name="endeditlabelnow"></a>  CTreeCtrl::EndEditLabelNow
+## <a name="endeditlabelnow"></a> CTreeCtrl::EndEditLabelNow
 
 Concludes the edit operation on the label of a tree-view item in the current tree-view control.
 
@@ -330,7 +330,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 This method sends the [TVM_ENDEDITLABELNOW](/windows/win32/Controls/tvm-endeditlabelnow) message, which is described in the Windows SDK.
 
-##  <a name="ensurevisible"></a>  CTreeCtrl::EnsureVisible
+## <a name="ensurevisible"></a> CTreeCtrl::EnsureVisible
 
 Call this function to ensure that a tree view item is visible.
 
@@ -355,7 +355,7 @@ If necessary, the function expands the parent item or scrolls the tree view cont
 
 [!code-cpp[NVC_MFC_CTreeCtrl#6](../../mfc/reference/codesnippet/cpp/ctreectrl-class_6.cpp)]
 
-##  <a name="expand"></a>  CTreeCtrl::Expand
+## <a name="expand"></a> CTreeCtrl::Expand
 
 Call this function to expand or collapse the list of child items, if any, associated with the given parent item.
 
@@ -389,7 +389,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CTreeCtrl::EnsureVisible](#ensurevisible).
 
-##  <a name="getbkcolor"></a>  CTreeCtrl::GetBkColor
+## <a name="getbkcolor"></a> CTreeCtrl::GetBkColor
 
 This member function implements the behavior of the Win32 message [TVM_GETBKCOLOR](/windows/win32/Controls/tvm-getbkcolor), as described in the Windows SDK.
 
@@ -405,7 +405,7 @@ A COLORREF value that represents the current window background color for the con
 
   See the example for [CTreeCtrl::SetTextColor](#settextcolor).
 
-##  <a name="getcheck"></a>  CTreeCtrl::GetCheck
+## <a name="getcheck"></a> CTreeCtrl::GetCheck
 
 Call this member function to retrieve an item's check state.
 
@@ -426,7 +426,7 @@ Nonzero if the tree control item is checked; otherwise 0.
 
   See the example for [CTreeCtrl::SetCheck](#setcheck).
 
-##  <a name="getchilditem"></a>  CTreeCtrl::GetChildItem
+## <a name="getchilditem"></a> CTreeCtrl::GetChildItem
 
 Call this function to retrieve the tree view item that is the child of the item specified by *hItem*.
 
@@ -447,7 +447,7 @@ The handle of the child item if successful; otherwise NULL.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#7](../../mfc/reference/codesnippet/cpp/ctreectrl-class_7.cpp)]
 
-##  <a name="getcount"></a>  CTreeCtrl::GetCount
+## <a name="getcount"></a> CTreeCtrl::GetCount
 
 Call this function to retrieve a count of the items in a tree view control.
 
@@ -463,7 +463,7 @@ The number of items in the tree view control.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#8](../../mfc/reference/codesnippet/cpp/ctreectrl-class_8.cpp)]
 
-##  <a name="getdrophilightitem"></a>  CTreeCtrl::GetDropHilightItem
+## <a name="getdrophilightitem"></a> CTreeCtrl::GetDropHilightItem
 
 Call this function to retrieve the item that is the target of a drag-and-drop operation.
 
@@ -479,7 +479,7 @@ The handle of the item dropped if successful; otherwise NULL.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#9](../../mfc/reference/codesnippet/cpp/ctreectrl-class_9.cpp)]
 
-##  <a name="geteditcontrol"></a>  CTreeCtrl::GetEditControl
+## <a name="geteditcontrol"></a> CTreeCtrl::GetEditControl
 
 Call this function to retrieve the handle of the edit control being used to edit a tree view item's text.
 
@@ -495,7 +495,7 @@ A pointer to the edit control used to edit the item text, if successful; otherwi
 
 [!code-cpp[NVC_MFC_CTreeCtrl#10](../../mfc/reference/codesnippet/cpp/ctreectrl-class_10.cpp)]
 
-##  <a name="getextendedstyle"></a>  CTreeCtrl::GetExtendedStyle
+## <a name="getextendedstyle"></a> CTreeCtrl::GetExtendedStyle
 
 Retrieves the extended styles that the current tree-view control is using.
 
@@ -511,7 +511,7 @@ A value that contains a bitwise combination (OR) of the current tree-view contro
 
 This method sends the [TVM_GETEXTENDEDSTYLE](/windows/win32/Controls/tvm-getextendedstyle) message, which is described in the Windows SDK.
 
-##  <a name="getfirstvisibleitem"></a>  CTreeCtrl::GetFirstVisibleItem
+## <a name="getfirstvisibleitem"></a> CTreeCtrl::GetFirstVisibleItem
 
 Call this function to retrieve the first visible item of the tree view control.
 
@@ -527,7 +527,7 @@ The handle of the first visible item; otherwise NULL.
 
   See the example for [CTreeCtrl::SetCheck](#setcheck).
 
-##  <a name="getimagelist"></a>  CTreeCtrl::GetImageList
+## <a name="getimagelist"></a> CTreeCtrl::GetImageList
 
 Call this function to retrieve the handle of the normal or state image list associated with the tree view control.
 
@@ -558,7 +558,7 @@ For more information on image lists, see the [CImageList](../../mfc/reference/ci
 
 [!code-cpp[NVC_MFC_CTreeCtrl#11](../../mfc/reference/codesnippet/cpp/ctreectrl-class_11.cpp)]
 
-##  <a name="getindent"></a>  CTreeCtrl::GetIndent
+## <a name="getindent"></a> CTreeCtrl::GetIndent
 
 Call this function to retrieve the amount, in pixels, that child items are indented relative to their parent items.
 
@@ -574,7 +574,7 @@ The amount of indentation measured in pixels.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#12](../../mfc/reference/codesnippet/cpp/ctreectrl-class_12.cpp)]
 
-##  <a name="getinsertmarkcolor"></a>  CTreeCtrl::GetInsertMarkColor
+## <a name="getinsertmarkcolor"></a> CTreeCtrl::GetInsertMarkColor
 
 This member function implements the behavior of the Win32 message [TVM_GETINSERTMARKCOLOR](/windows/win32/Controls/tvm-getinsertmarkcolor), as described in the Windows SDK.
 
@@ -590,7 +590,7 @@ A COLORREF value that contains the current insertion mark color.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#13](../../mfc/reference/codesnippet/cpp/ctreectrl-class_13.cpp)]
 
-##  <a name="getitem"></a>  CTreeCtrl::GetItem
+## <a name="getitem"></a> CTreeCtrl::GetItem
 
 Call this function to retrieve the attributes of the specified tree view item.
 
@@ -611,7 +611,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CTreeCtrl::DeleteItem](#deleteitem).
 
-##  <a name="getitemdata"></a>  CTreeCtrl::GetItemData
+## <a name="getitemdata"></a> CTreeCtrl::GetItemData
 
 Call this function to retrieve the application-specific value associated with the specified item.
 
@@ -632,7 +632,7 @@ A pointer-sized application-specific value associated with the item specified by
 
 [!code-cpp[NVC_MFC_CTreeCtrl#14](../../mfc/reference/codesnippet/cpp/ctreectrl-class_14.cpp)]
 
-##  <a name="getitemexpandedimageindex"></a>  CTreeCtrl::GetItemExpandedImageIndex
+## <a name="getitemexpandedimageindex"></a> CTreeCtrl::GetItemExpandedImageIndex
 
 Retrieves the index of the image to display when the specified item of the current tree-view control is in the expanded state.
 
@@ -654,7 +654,7 @@ The index of the image to display when the specified item is in the expanded sta
 
 This method sends the [TVM_GETITEM](/windows/win32/Controls/tvm-getitem) message, which is described in the Windows SDK. That message returns the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure that describes the tree-view control item, and then this method retrieves the `iExpandedImage` member from that structure.
 
-##  <a name="getitemheight"></a>  CTreeCtrl::GetItemHeight
+## <a name="getitemheight"></a> CTreeCtrl::GetItemHeight
 
 This member function implements the behavior of the Win32 message [TVM_GETITEMHEIGHT](/windows/win32/Controls/tvm-getitemheight), as described in the Windows SDK.
 
@@ -670,7 +670,7 @@ The height of the item, in pixels.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#15](../../mfc/reference/codesnippet/cpp/ctreectrl-class_15.cpp)]
 
-##  <a name="getitemimage"></a>  CTreeCtrl::GetItemImage
+## <a name="getitemimage"></a> CTreeCtrl::GetItemImage
 
 Each item in a tree view control can have a pair of bitmapped images associated with it.
 
@@ -706,7 +706,7 @@ Call this function to retrieve the index of the item's image and its selected im
 
 [!code-cpp[NVC_MFC_CTreeCtrl#16](../../mfc/reference/codesnippet/cpp/ctreectrl-class_16.cpp)]
 
-##  <a name="getitempartrect"></a>  CTreeCtrl::GetItemPartRect
+## <a name="getitempartrect"></a> CTreeCtrl::GetItemPartRect
 
 Retrieves the bounding rectangle for a specified part of a specified item in the current tree-view control.
 
@@ -747,7 +747,7 @@ The following code example uses an accessibility identifier and the [CTreeCtrl::
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctreectrl-class_18.cpp)]
 
-##  <a name="getitemrect"></a>  CTreeCtrl::GetItemRect
+## <a name="getitemrect"></a> CTreeCtrl::GetItemRect
 
 Call this function to retrieve the bounding rectangle for *hItem* and determine whether it is visible or not.
 
@@ -777,7 +777,7 @@ Nonzero if the item is visible, with the bounding rectangle contained in *lpRect
 
 [!code-cpp[NVC_MFC_CTreeCtrl#17](../../mfc/reference/codesnippet/cpp/ctreectrl-class_19.cpp)]
 
-##  <a name="getitemstate"></a>  CTreeCtrl::GetItemState
+## <a name="getitemstate"></a> CTreeCtrl::GetItemState
 
 Returns the state of the item specified by *hItem*.
 
@@ -803,7 +803,7 @@ A UINT that holds the bitwise OR of the values specified by nStateMask. For info
 
 [!code-cpp[NVC_MFC_CTreeCtrl#18](../../mfc/reference/codesnippet/cpp/ctreectrl-class_20.cpp)]
 
-##  <a name="getitemstateex"></a>  CTreeCtrl::GetItemStateEx
+## <a name="getitemstateex"></a> CTreeCtrl::GetItemStateEx
 
 Retrieves the extended state of the specified item in the current tree-view control.
 
@@ -825,7 +825,7 @@ The extended state of the item. For more information, see the `uStateEx` member 
 
 This method sends the [TVM_GETITEM](/windows/win32/Controls/tvm-getitem) message, which is described in the Windows SDK. That message returns the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure that describes the tree-view control item, and this method retrieves the `uStateEx` member from that structure.
 
-##  <a name="getitemtext"></a>  CTreeCtrl::GetItemText
+## <a name="getitemtext"></a> CTreeCtrl::GetItemText
 
 Returns the text of the item specified by *hItem*.
 
@@ -846,7 +846,7 @@ A `CString` object containing the item's text.
 
   See the example for [CTreeCtrl::GetNextItem](#getnextitem).
 
-##  <a name="getlastvisibleitem"></a>  CTreeCtrl::GetLastVisibleItem
+## <a name="getlastvisibleitem"></a> CTreeCtrl::GetLastVisibleItem
 
 Retrieves the last unexpanded node item in the current tree-view control.
 
@@ -874,7 +874,7 @@ The following code example retrieves a handle to the last unexpanded tree-view n
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#6](../../mfc/reference/codesnippet/cpp/ctreectrl-class_21.cpp)]
 
-##  <a name="getlinecolor"></a>  CTreeCtrl::GetLineColor
+## <a name="getlinecolor"></a> CTreeCtrl::GetLineColor
 
 This member function implements the behavior of the Win32 message [TVM_GETLINECOLOR](/windows/win32/Controls/tvm-getlinecolor), as described in the Windows SDK.
 
@@ -890,7 +890,7 @@ The current line color.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#19](../../mfc/reference/codesnippet/cpp/ctreectrl-class_22.cpp)]
 
-##  <a name="getnextitem"></a>  CTreeCtrl::GetNextItem
+## <a name="getnextitem"></a> CTreeCtrl::GetNextItem
 
 Call this function to retrieve the tree view item that has the specified relationship, indicated by the *nCode* parameter, to *hItem*.
 
@@ -944,7 +944,7 @@ For an example of using `GetNextItem` in a loop, see [CTreeCtrl::DeleteItem](#de
 
 [!code-cpp[NVC_MFC_CTreeCtrl#20](../../mfc/reference/codesnippet/cpp/ctreectrl-class_23.cpp)]
 
-##  <a name="getnextsiblingitem"></a>  CTreeCtrl::GetNextSiblingItem
+## <a name="getnextsiblingitem"></a> CTreeCtrl::GetNextSiblingItem
 
 Call this function to retrieve the next sibling of *hItem*.
 
@@ -965,7 +965,7 @@ The handle of the next sibling item; otherwise NULL.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#21](../../mfc/reference/codesnippet/cpp/ctreectrl-class_24.cpp)]
 
-##  <a name="getnextvisibleitem"></a>  CTreeCtrl::GetNextVisibleItem
+## <a name="getnextvisibleitem"></a> CTreeCtrl::GetNextVisibleItem
 
 Call this function to retrieve the next visible item of *hItem*.
 
@@ -986,7 +986,7 @@ The handle of the next visible item; otherwise NULL.
 
   See the example for [CTreeCtrl::SetCheck](#setcheck).
 
-##  <a name="getparentitem"></a>  CTreeCtrl::GetParentItem
+## <a name="getparentitem"></a> CTreeCtrl::GetParentItem
 
 Call this function to retrieve the parent of *hItem*.
 
@@ -1011,7 +1011,7 @@ This function will return NULL if the parent of the specified item is the root n
 
   See the example for [CTreeCtrl::EnsureVisible](#ensurevisible).
 
-##  <a name="getprevsiblingitem"></a>  CTreeCtrl::GetPrevSiblingItem
+## <a name="getprevsiblingitem"></a> CTreeCtrl::GetPrevSiblingItem
 
 Call this function to retrieve the previous sibling of *hItem*.
 
@@ -1032,7 +1032,7 @@ The handle of the previous sibling; otherwise NULL.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#22](../../mfc/reference/codesnippet/cpp/ctreectrl-class_25.cpp)]
 
-##  <a name="getprevvisibleitem"></a>  CTreeCtrl::GetPrevVisibleItem
+## <a name="getprevvisibleitem"></a> CTreeCtrl::GetPrevVisibleItem
 
 Call this function to retrieve the previous visible item of *hItem*.
 
@@ -1053,7 +1053,7 @@ The handle of the previous visible item; otherwise NULL.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#23](../../mfc/reference/codesnippet/cpp/ctreectrl-class_26.cpp)]
 
-##  <a name="getrootitem"></a>  CTreeCtrl::GetRootItem
+## <a name="getrootitem"></a> CTreeCtrl::GetRootItem
 
 Call this function to retrieve the root item of the tree view control.
 
@@ -1069,7 +1069,7 @@ The handle of the root item; otherwise NULL.
 
   See the example for [CTreeCtrl::EditLabel](#editlabel).
 
-##  <a name="getscrolltime"></a>  CTreeCtrl::GetScrollTime
+## <a name="getscrolltime"></a> CTreeCtrl::GetScrollTime
 
 Call this member function to retrieve the maximum scroll time for the tree view control.
 
@@ -1085,7 +1085,7 @@ The maximum scroll time, in milliseconds.
 
 This member function implements the behavior of the Win32 message [TVM_GETSCROLLTIME](/windows/win32/Controls/tvm-getscrolltime), as described in the Windows SDK.
 
-##  <a name="getselectedcount"></a>  CTreeCtrl::GetSelectedCount
+## <a name="getselectedcount"></a> CTreeCtrl::GetSelectedCount
 
 Retrieves the number of selected items in the current tree-view control.
 
@@ -1101,7 +1101,7 @@ The number of selected items.
 
 This method sends the [TVM_GETSELECTEDCOUNT](/windows/win32/Controls/tvm-getselectedcount) message, which is described in the Windows SDK.
 
-##  <a name="getselecteditem"></a>  CTreeCtrl::GetSelectedItem
+## <a name="getselecteditem"></a> CTreeCtrl::GetSelectedItem
 
 Call this function to retrieve the currently selected item of the tree view control.
 
@@ -1117,7 +1117,7 @@ The handle of the selected item; otherwise NULL.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#24](../../mfc/reference/codesnippet/cpp/ctreectrl-class_27.cpp)]
 
-##  <a name="gettextcolor"></a>  CTreeCtrl::GetTextColor
+## <a name="gettextcolor"></a> CTreeCtrl::GetTextColor
 
 This member function implements the behavior of the Win32 message [TVM_GETTEXTCOLOR](/windows/win32/Controls/tvm-gettextcolor), as described in the Windows SDK.
 
@@ -1133,7 +1133,7 @@ A COLORREF value that represents the current text color. If this value is -1, th
 
   See the example for [CTreeCtrl::SetTextColor](#settextcolor).
 
-##  <a name="gettooltips"></a>  CTreeCtrl::GetToolTips
+## <a name="gettooltips"></a> CTreeCtrl::GetToolTips
 
 This member function implements the behavior of the Win32 message [TVM_GETTOOLTIPS](/windows/win32/Controls/tvm-gettooltips), as described in the Windows SDK.
 
@@ -1153,7 +1153,7 @@ The MFC implementation of `GetToolTips` returns a `CToolTipCtrl` object, which i
 
 [!code-cpp[NVC_MFC_CTreeCtrl#25](../../mfc/reference/codesnippet/cpp/ctreectrl-class_28.cpp)]
 
-##  <a name="getvisiblecount"></a>  CTreeCtrl::GetVisibleCount
+## <a name="getvisiblecount"></a> CTreeCtrl::GetVisibleCount
 
 Call this function to retrieve a count of the visible items in a tree view control.
 
@@ -1169,7 +1169,7 @@ The number of visible items in the tree view control; otherwise - 1.
 
   See the example for [CTreeCtrl::SetCheck](#setcheck).
 
-##  <a name="hittest"></a>  CTreeCtrl::HitTest
+## <a name="hittest"></a> CTreeCtrl::HitTest
 
 Call this function to determine the location of the specified point relative to the client area of a tree view control.
 
@@ -1221,7 +1221,7 @@ When this function is called, the *pt* parameter specifies the coordinates of th
 
 [!code-cpp[NVC_MFC_CTreeCtrl#26](../../mfc/reference/codesnippet/cpp/ctreectrl-class_29.cpp)]
 
-##  <a name="insertitem"></a>  CTreeCtrl::InsertItem
+## <a name="insertitem"></a> CTreeCtrl::InsertItem
 
 Call this function to insert a new item in a tree view control.
 
@@ -1296,7 +1296,7 @@ The example shows situations in which you might want to use each version of the 
 
 [!code-cpp[NVC_MFC_CTreeCtrl#27](../../mfc/reference/codesnippet/cpp/ctreectrl-class_30.cpp)]
 
-##  <a name="itemhaschildren"></a>  CTreeCtrl::ItemHasChildren
+## <a name="itemhaschildren"></a> CTreeCtrl::ItemHasChildren
 
 Use this function to determine whether the tree item specified by *hItem* has child items.
 
@@ -1321,7 +1321,7 @@ If so, you can then use [CTreeCtrl::GetChildItem](#getchilditem) to retrieve tho
 
   See the example for [CTreeCtrl::GetSelectedItem](#getselecteditem).
 
-##  <a name="mapaccidtoitem"></a>  CTreeCtrl::MapAccIdToItem
+## <a name="mapaccidtoitem"></a> CTreeCtrl::MapAccIdToItem
 
 Maps the specified accessibility identifier to the handle of a tree-view item in the current tree-view control.
 
@@ -1357,7 +1357,7 @@ The following code example uses an accessibility identifier and the [CTreeCtrl::
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctreectrl-class_18.cpp)]
 
-##  <a name="mapitemtoaccid"></a>  CTreeCtrl::MapItemToAccID
+## <a name="mapitemtoaccid"></a> CTreeCtrl::MapItemToAccID
 
 Maps the specified handle of a tree-view item in the current tree-view control to an accessibility identifier.
 
@@ -1393,7 +1393,7 @@ The following code example obtains an identification number for a tree-view cont
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_31.cpp)]
 
-##  <a name="select"></a>  CTreeCtrl::Select
+## <a name="select"></a> CTreeCtrl::Select
 
 Call this function to select the given tree view item, scroll the item into view, or redraw the item in the style used to indicate the target of a drag-and-drop operation.
 
@@ -1429,7 +1429,7 @@ If *nCode* contains the value TVGN_CARET, the parent window receives the TVN_SEL
 
   See the example for [CTreeCtrl::HitTest](#hittest).
 
-##  <a name="selectdroptarget"></a>  CTreeCtrl::SelectDropTarget
+## <a name="selectdroptarget"></a> CTreeCtrl::SelectDropTarget
 
 Call this function to redraw the item in the style used to indicate the target of a drag-and-drop operation.
 
@@ -1450,7 +1450,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#9](../../mfc/reference/codesnippet/cpp/ctreectrl-class_9.cpp)]
 
-##  <a name="selectitem"></a>  CTreeCtrl::SelectItem
+## <a name="selectitem"></a> CTreeCtrl::SelectItem
 
 Call this function to select the given tree view item.
 
@@ -1475,7 +1475,7 @@ If *hItem* is NULL, then this function selects no item.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#26](../../mfc/reference/codesnippet/cpp/ctreectrl-class_29.cpp)]
 
-##  <a name="selectsetfirstvisible"></a>  CTreeCtrl::SelectSetFirstVisible
+## <a name="selectsetfirstvisible"></a> CTreeCtrl::SelectSetFirstVisible
 
 Call this function to scroll the tree view vertically so that the given item is the first visible item.
 
@@ -1500,7 +1500,7 @@ The function sends a message to the window with the TVM_SELECTITEM and TVGN_FIRS
 
 [!code-cpp[NVC_MFC_CTreeCtrl#28](../../mfc/reference/codesnippet/cpp/ctreectrl-class_32.cpp)]
 
-##  <a name="setautoscrollinfo"></a>  CTreeCtrl::SetAutoscrollInfo
+## <a name="setautoscrollinfo"></a> CTreeCtrl::SetAutoscrollInfo
 
 Sets the autoscroll rate of the current tree-view control.
 
@@ -1539,7 +1539,7 @@ The following code example sets the autoscroll behavior of the current tree-view
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/ctreectrl-class_33.cpp)]
 
-##  <a name="setbkcolor"></a>  CTreeCtrl::SetBkColor
+## <a name="setbkcolor"></a> CTreeCtrl::SetBkColor
 
 This member function implements the behavior of the Win32 message [TVM_SETBKCOLOR](/windows/win32/Controls/tvm-setbkcolor), as described in the Windows SDK.
 
@@ -1560,7 +1560,7 @@ A COLORREF value that represents the current text color. If this value is -1, th
 
   See the example for [CTreeCtrl::SetTextColor](#settextcolor).
 
-##  <a name="setcheck"></a>  CTreeCtrl::SetCheck
+## <a name="setcheck"></a> CTreeCtrl::SetCheck
 
 Call this member function to set the check state for a tree control item.
 
@@ -1596,7 +1596,7 @@ To use checkboxes, set TVS_CHECKBOXES before populating the tree control.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#30](../../mfc/reference/codesnippet/cpp/ctreectrl-class_35.cpp)]
 
-##  <a name="setextendedstyle"></a>  CTreeCtrl::SetExtendedStyle
+## <a name="setextendedstyle"></a> CTreeCtrl::SetExtendedStyle
 
 Sets the extended styles for the current tree-view control.
 
@@ -1635,7 +1635,7 @@ The following code example adds the TVS_EX_AUTOHSCROLL extended style to the cur
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/ctreectrl-class_36.cpp)]
 
-##  <a name="setimagelist"></a>  CTreeCtrl::SetImageList
+## <a name="setimagelist"></a> CTreeCtrl::SetImageList
 
 Call this function to set the normal or state image list for a tree view control and redraw the control using the new images.
 
@@ -1665,7 +1665,7 @@ Pointer to the previous image list, if any; otherwise NULL.
 
   See the example for [CTreeCtrl::GetImageList](#getimagelist).
 
-##  <a name="setindent"></a>  CTreeCtrl::SetIndent
+## <a name="setindent"></a> CTreeCtrl::SetIndent
 
 Call this function to set the width of indentation for a tree view control and redraw the control to reflect the new width.
 
@@ -1682,7 +1682,7 @@ Width, in pixels, of the indentation. If *nIndent* is less than the system-defin
 
   See the example for [CTreeCtrl::GetIndent](#getindent).
 
-##  <a name="setinsertmark"></a>  CTreeCtrl::SetInsertMark
+## <a name="setinsertmark"></a> CTreeCtrl::SetInsertMark
 
 This member function implements the behavior of the Win32 message [TVM_SETINSERTMARK](/windows/win32/Controls/tvm-setinsertmark), as described in the Windows SDK.
 
@@ -1708,7 +1708,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#31](../../mfc/reference/codesnippet/cpp/ctreectrl-class_37.cpp)]
 
-##  <a name="setinsertmarkcolor"></a>  CTreeCtrl::SetInsertMarkColor
+## <a name="setinsertmarkcolor"></a> CTreeCtrl::SetInsertMarkColor
 
 This member function implements the behavior of the Win32 message [TVM_SETINSERTMARKCOLOR](/windows/win32/Controls/tvm-setinsertmarkcolor), as described in the Windows SDK.
 
@@ -1729,7 +1729,7 @@ A COLORREF value that contains the previous insertion mark color.
 
   See the example for [CTreeCtrl::GetInsertMarkColor](#getinsertmarkcolor).
 
-##  <a name="setitem"></a>  CTreeCtrl::SetItem
+## <a name="setitem"></a> CTreeCtrl::SetItem
 
 Call this function to set the attributes of the specified tree view item.
 
@@ -1790,7 +1790,7 @@ If the `mask` member or the *nMask* parameter specifies the TVIF_TEXT value, the
 
 [!code-cpp[NVC_MFC_CTreeCtrl#32](../../mfc/reference/codesnippet/cpp/ctreectrl-class_38.cpp)]
 
-##  <a name="setitemdata"></a>  CTreeCtrl::SetItemData
+## <a name="setitemdata"></a> CTreeCtrl::SetItemData
 
 Call this function to set the application-specific value associated with the specified item.
 
@@ -1816,7 +1816,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#33](../../mfc/reference/codesnippet/cpp/ctreectrl-class_39.cpp)]
 
-##  <a name="setitemexpandedimageindex"></a>  CTreeCtrl::SetItemExpandedImageIndex
+## <a name="setitemexpandedimageindex"></a> CTreeCtrl::SetItemExpandedImageIndex
 
 Sets the index of the image to display when the specified item of the current tree-view control is in the expanded state.
 
@@ -1853,7 +1853,7 @@ The following code example is a trivial test to determine whether the [CTreeCtrl
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#8](../../mfc/reference/codesnippet/cpp/ctreectrl-class_40.cpp)]
 
-##  <a name="setitemheight"></a>  CTreeCtrl::SetItemHeight
+## <a name="setitemheight"></a> CTreeCtrl::SetItemHeight
 
 This member function implements the behavior of the Win32 message [TVM_SETITEMHEIGHT](/windows/win32/Controls/tvm-setitemheight), as described in the Windows SDK.
 
@@ -1874,7 +1874,7 @@ The previous height of the items, in pixels.
 
   See the example for [CTreeCtrl::GetItemHeight](#getitemheight).
 
-##  <a name="setitemimage"></a>  CTreeCtrl::SetItemImage
+## <a name="setitemimage"></a> CTreeCtrl::SetItemImage
 
 Associates images with an item.
 
@@ -1912,7 +1912,7 @@ For more information on images, see [CImageList](../../mfc/reference/cimagelist-
 
   See the example for [CTreeCtrl::GetItemImage](#getitemimage).
 
-##  <a name="setitemstate"></a>  CTreeCtrl::SetItemState
+## <a name="setitemstate"></a> CTreeCtrl::SetItemState
 
 Sets the state of the item specified by *hItem*.
 
@@ -1946,7 +1946,7 @@ For information on states, see [CTreeCtrl::GetItem](#getitem).
 
   See the example for [CTreeCtrl::GetItemState](#getitemstate).
 
-##  <a name="setitemstateex"></a>  CTreeCtrl::SetItemStateEx
+## <a name="setitemstateex"></a> CTreeCtrl::SetItemStateEx
 
 Sets the extended state of the specified item in the current tree-view control.
 
@@ -1983,7 +1983,7 @@ The following code example sets a tree-view item to disabled state. In an earlie
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#7](../../mfc/reference/codesnippet/cpp/ctreectrl-class_41.cpp)]
 
-##  <a name="setitemtext"></a>  CTreeCtrl::SetItemText
+## <a name="setitemtext"></a> CTreeCtrl::SetItemText
 
 Sets the text of the item specified by *hItem*.
 
@@ -2009,7 +2009,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#34](../../mfc/reference/codesnippet/cpp/ctreectrl-class_42.cpp)]
 
-##  <a name="setlinecolor"></a>  CTreeCtrl::SetLineColor
+## <a name="setlinecolor"></a> CTreeCtrl::SetLineColor
 
 Call this member function to set the current line color for the tree view control.
 
@@ -2034,7 +2034,7 @@ This member function implements the behavior of the Win32 message [TVM_SETLINECO
 
 [!code-cpp[NVC_MFC_CTreeCtrl#35](../../mfc/reference/codesnippet/cpp/ctreectrl-class_43.cpp)]
 
-##  <a name="setscrolltime"></a>  CTreeCtrl::SetScrollTime
+## <a name="setscrolltime"></a> CTreeCtrl::SetScrollTime
 
 Call this member function to set the maximum scroll time for the tree view control.
 
@@ -2055,7 +2055,7 @@ The previous maximum scroll time, in milliseconds.
 
 This member function implements the behavior of the Win32 message [TVM_SETSCROLLTIME](/windows/win32/Controls/tvm-setscrolltime), as described in the Windows SDK.
 
-##  <a name="settextcolor"></a>  CTreeCtrl::SetTextColor
+## <a name="settextcolor"></a> CTreeCtrl::SetTextColor
 
 This member function implements the behavior of the Win32 message [TVM_SETTEXTCOLOR](/windows/win32/Controls/tvm-settextcolor), as described in the Windows SDK.
 
@@ -2076,7 +2076,7 @@ A COLORREF value that represents the previous text color. If this value is -1, t
 
 [!code-cpp[NVC_MFC_CTreeCtrl#36](../../mfc/reference/codesnippet/cpp/ctreectrl-class_44.cpp)]
 
-##  <a name="settooltips"></a>  CTreeCtrl::SetToolTips
+## <a name="settooltips"></a> CTreeCtrl::SetToolTips
 
 This member function implements the behavior of the Win32 message [TVM_SETTOOLTIPS](/windows/win32/Controls/tvm-settooltips), as described in the Windows SDK.
 
@@ -2101,7 +2101,7 @@ To use tooltips, indicate the TVS_NOTOOLTIPS style when you create the `CTreeCtr
 
   See the example for [CTreeCtrl::GetToolTips](#gettooltips).
 
-##  <a name="showinfotip"></a>  CTreeCtrl::ShowInfoTip
+## <a name="showinfotip"></a> CTreeCtrl::ShowInfoTip
 
 Displays the infotip for the specified item in the current tree-view control.
 
@@ -2121,7 +2121,7 @@ For more information about the difference between tooltips and infotips, search 
 
 This method sends the [TVM_SHOWINFOTIP](/windows/win32/Controls/tvm-showinfotip) message, which is described in the Windows SDK.
 
-##  <a name="sortchildren"></a>  CTreeCtrl::SortChildren
+## <a name="sortchildren"></a> CTreeCtrl::SortChildren
 
 Call this function to alphabetically sort the child items of the given parent item in a tree view control.
 
@@ -2146,7 +2146,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#37](../../mfc/reference/codesnippet/cpp/ctreectrl-class_45.cpp)]
 
-##  <a name="sortchildrencb"></a>  CTreeCtrl::SortChildrenCB
+## <a name="sortchildrencb"></a> CTreeCtrl::SortChildrenCB
 
 Call this function to sort tree view items using an application-defined callback function that compares the items.
 

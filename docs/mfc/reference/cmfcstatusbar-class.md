@@ -110,7 +110,7 @@ The following example demonstrates how to call various methods in the `CMFCStatu
 
 **Header:** afxstatusbar.h
 
-##  <a name="calcfixedlayout"></a>  CMFCStatusBar::CalcFixedLayout
+## <a name="calcfixedlayout"></a> CMFCStatusBar::CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -127,7 +127,7 @@ virtual CSize CalcFixedLayout(
 
 ### Remarks
 
-##  <a name="commandtoindex"></a>  CMFCStatusBar::CommandToIndex
+## <a name="commandtoindex"></a> CMFCStatusBar::CommandToIndex
 
 ```
 int CommandToIndex(UINT nIDFind) const;
@@ -141,7 +141,7 @@ int CommandToIndex(UINT nIDFind) const;
 
 ### Remarks
 
-##  <a name="create"></a>  CMFCStatusBar::Create
+## <a name="create"></a> CMFCStatusBar::Create
 
 ```
 BOOL Create(
@@ -160,7 +160,7 @@ BOOL Create(
 
 ### Remarks
 
-##  <a name="createex"></a>  CMFCStatusBar::CreateEx
+## <a name="createex"></a> CMFCStatusBar::CreateEx
 
 ```
 BOOL CreateEx(
@@ -181,7 +181,7 @@ BOOL CreateEx(
 
 ### Remarks
 
-##  <a name="doesallowdyninsertbefore"></a>  CMFCStatusBar::DoesAllowDynInsertBefore
+## <a name="doesallowdyninsertbefore"></a> CMFCStatusBar::DoesAllowDynInsertBefore
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -191,7 +191,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### Remarks
 
-##  <a name="enablepanedoubleclick"></a>  CMFCStatusBar::EnablePaneDoubleClick
+## <a name="enablepanedoubleclick"></a> CMFCStatusBar::EnablePaneDoubleClick
 
 Enables or disables the handling of mouse double-clicks on the status bar.
 
@@ -208,7 +208,7 @@ void EnablePaneDoubleClick(BOOL bEnable=TRUE);
 
 If the status bar is enabled to process double clicks, Windows sends the WM_COMMAND notification together with a resource ID to the owner of the status bar every time that the user double clicks on the status bar pane.
 
-##  <a name="enablepaneprogressbar"></a>  CMFCStatusBar::EnablePaneProgressBar
+## <a name="enablepaneprogressbar"></a> CMFCStatusBar::EnablePaneProgressBar
 
 Display a progress bar on the specified pane.
 
@@ -250,7 +250,7 @@ You should pass different values for *clrBar* and *clrBarDest* so that the backg
 
 To set the current progress, call the [CMFCStatusBar::SetPaneProgress](#setpaneprogress) method.
 
-##  <a name="getcount"></a>  CMFCStatusBar::GetCount
+## <a name="getcount"></a> CMFCStatusBar::GetCount
 
 Retrieves the number of panes in the status bar.
 
@@ -262,7 +262,7 @@ int GetCount() const;
 
 The number of panes in the status bar.
 
-##  <a name="getdrawextendedarea"></a>  CMFCStatusBar::GetDrawExtendedArea
+## <a name="getdrawextendedarea"></a> CMFCStatusBar::GetDrawExtendedArea
 
 ```
 BOOL GetDrawExtendedArea() const;
@@ -272,7 +272,7 @@ BOOL GetDrawExtendedArea() const;
 
 ### Remarks
 
-##  <a name="getextendedarea"></a>  CMFCStatusBar::GetExtendedArea
+## <a name="getextendedarea"></a> CMFCStatusBar::GetExtendedArea
 
 ```
 virtual BOOL GetExtendedArea(CRect& rect) const;
@@ -286,7 +286,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ### Remarks
 
-##  <a name="getitemid"></a>  CMFCStatusBar::GetItemID
+## <a name="getitemid"></a> CMFCStatusBar::GetItemID
 
 ```
 UINT GetItemID(int nIndex) const;
@@ -300,7 +300,7 @@ UINT GetItemID(int nIndex) const;
 
 ### Remarks
 
-##  <a name="getitemrect"></a>  CMFCStatusBar::GetItemRect
+## <a name="getitemrect"></a> CMFCStatusBar::GetItemRect
 
 ```
 void GetItemRect(
@@ -315,7 +315,7 @@ void GetItemRect(
 
 ### Remarks
 
-##  <a name="getpaneinfo"></a>  CMFCStatusBar::GetPaneInfo
+## <a name="getpaneinfo"></a> CMFCStatusBar::GetPaneInfo
 
 ```
 void GetPaneInfo(
@@ -334,7 +334,7 @@ void GetPaneInfo(
 
 ### Remarks
 
-##  <a name="getpaneprogress"></a>  CMFCStatusBar::GetPaneProgress
+## <a name="getpaneprogress"></a> CMFCStatusBar::GetPaneProgress
 
 ```
 long GetPaneProgress(int nIndex) const;
@@ -348,7 +348,7 @@ long GetPaneProgress(int nIndex) const;
 
 ### Remarks
 
-##  <a name="getpanestyle"></a>  CMFCStatusBar::GetPaneStyle
+## <a name="getpanestyle"></a> CMFCStatusBar::GetPaneStyle
 
 ```
 UINT GetPaneStyle(int nIndex) const;
@@ -362,7 +362,7 @@ UINT GetPaneStyle(int nIndex) const;
 
 ### Remarks
 
-##  <a name="getpanetext"></a>  CMFCStatusBar::GetPaneText
+## <a name="getpanetext"></a> CMFCStatusBar::GetPaneText
 
 ```
 void GetPaneText(
@@ -381,7 +381,7 @@ CString GetPaneText(int nIndex) const;
 
 ### Remarks
 
-##  <a name="getpanewidth"></a>  CMFCStatusBar::GetPaneWidth
+## <a name="getpanewidth"></a> CMFCStatusBar::GetPaneWidth
 
 Retrieves the width of the pane of a status bar.
 
@@ -398,7 +398,7 @@ int GetPaneWidth(int nIndex) const;
 
 The width of the status bar pane that *nIndex* specifies; otherwise, zero if a status-bar pane does not exist.
 
-##  <a name="gettiptext"></a>  CMFCStatusBar::GetTipText
+## <a name="gettiptext"></a> CMFCStatusBar::GetTipText
 
 Retrieve the tooltip text of a status bar's pane.
 
@@ -415,7 +415,7 @@ CString GetTipText(int nIndex) const;
 
 The tooltip text of the status-bar pane that *nIndex* specifies. Otherwise, the empty string if a status bar pane does not exist for the specified *nIndex* or if its tooltip text is empty.
 
-##  <a name="invalidatepanecontent"></a>  CMFCStatusBar::InvalidatePaneContent
+## <a name="invalidatepanecontent"></a> CMFCStatusBar::InvalidatePaneContent
 
 Invalidate the status bar pane and redraw its content.
 
@@ -432,7 +432,7 @@ void InvalidatePaneContent(int nIndex);
 
 When the status bar is invalidated, it is marked for redrawing. Windows redraws it when the `UpdateWindow` method sends a WM_PAINT message to the `OnPaint` method.
 
-##  <a name="ondrawpane"></a>  CMFCStatusBar::OnDrawPane
+## <a name="ondrawpane"></a> CMFCStatusBar::OnDrawPane
 
 Redraw the pane of the status bar.
 
@@ -456,7 +456,7 @@ By default, `OnDrawPane` redraws the pane by using the device context *pDC* acco
 
 Override this method in a `CMFCStatusBar`-derived class to customize the appearance of a pane.
 
-##  <a name="precreatewindow"></a>  CMFCStatusBar::PreCreateWindow
+## <a name="precreatewindow"></a> CMFCStatusBar::PreCreateWindow
 
 ```
 virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
@@ -470,7 +470,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 
 ### Remarks
 
-##  <a name="setdrawextendedarea"></a>  CMFCStatusBar::SetDrawExtendedArea
+## <a name="setdrawextendedarea"></a> CMFCStatusBar::SetDrawExtendedArea
 
 ```
 void SetDrawExtendedArea(BOOL bSet = TRUE);
@@ -482,7 +482,7 @@ void SetDrawExtendedArea(BOOL bSet = TRUE);
 
 ### Remarks
 
-##  <a name="setindicators"></a>  CMFCStatusBar::SetIndicators
+## <a name="setindicators"></a> CMFCStatusBar::SetIndicators
 
 ```
 BOOL SetIndicators(
@@ -499,7 +499,7 @@ BOOL SetIndicators(
 
 ### Remarks
 
-##  <a name="setpaneanimation"></a>  CMFCStatusBar::SetPaneAnimation
+## <a name="setpaneanimation"></a> CMFCStatusBar::SetPaneAnimation
 
 Assigns an animation to the specified pane.
 
@@ -529,7 +529,7 @@ void SetPaneAnimation(
 
 If you want to disable the current animation, call `SetPaneAnimation` with `hImageList` set to NULL.
 
-##  <a name="setpanebackgroundcolor"></a>  CMFCStatusBar::SetPaneBackgroundColor
+## <a name="setpanebackgroundcolor"></a> CMFCStatusBar::SetPaneBackgroundColor
 
 Sets the background color of the status bar pane.
 
@@ -551,7 +551,7 @@ void SetPaneBackgroundColor(
 *bUpdate*<br/>
 [in] If TRUE, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.
 
-##  <a name="setpaneicon"></a>  CMFCStatusBar::SetPaneIcon
+## <a name="setpaneicon"></a> CMFCStatusBar::SetPaneIcon
 
 Set the icon of the status bar pane.
 
@@ -591,7 +591,7 @@ You can pass either HICON or HBITMAP together with the transparent color to set 
 
 If there is any running animation that [CMFCStatusBar::SetPaneAnimation](#setpaneanimation) has set, the animation will be stopped.
 
-##  <a name="setpaneinfo"></a>  CMFCStatusBar::SetPaneInfo
+## <a name="setpaneinfo"></a> CMFCStatusBar::SetPaneInfo
 
 ```
 void SetPaneInfo(
@@ -610,7 +610,7 @@ void SetPaneInfo(
 
 ### Remarks
 
-##  <a name="setpaneprogress"></a>  CMFCStatusBar::SetPaneProgress
+## <a name="setpaneprogress"></a> CMFCStatusBar::SetPaneProgress
 
 Set the current progress indicator of the progress bar for the specified pane.
 
@@ -638,7 +638,7 @@ Call this method when you want to update the progress indicator for the progress
 
 To use this function for the given pane, you must call [CMFCStatusBar::EnablePaneProgressBar](#enablepaneprogressbar) first.
 
-##  <a name="setpanestyle"></a>  CMFCStatusBar::SetPaneStyle
+## <a name="setpanestyle"></a> CMFCStatusBar::SetPaneStyle
 
 ```
 void SetPaneStyle(
@@ -653,7 +653,7 @@ void SetPaneStyle(
 
 ### Remarks
 
-##  <a name="setpanetext"></a>  CMFCStatusBar::SetPaneText
+## <a name="setpanetext"></a> CMFCStatusBar::SetPaneText
 
 ```
 virtual BOOL SetPaneText(
@@ -672,7 +672,7 @@ virtual BOOL SetPaneText(
 
 ### Remarks
 
-##  <a name="setpanetextcolor"></a>  CMFCStatusBar::SetPaneTextColor
+## <a name="setpanetextcolor"></a> CMFCStatusBar::SetPaneTextColor
 
 Sets the text color of the specified pane.
 
@@ -694,7 +694,7 @@ void SetPaneTextColor(
 *bUpdate*<br/>
 [in] If TRUE, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.
 
-##  <a name="setpanewidth"></a>  CMFCStatusBar::SetPaneWidth
+## <a name="setpanewidth"></a> CMFCStatusBar::SetPaneWidth
 
 Set the width of the status bar pane.
 
@@ -712,7 +712,7 @@ void SetPaneWidth(
 *cx*<br/>
 [in] The new width of the status bar pane, in pixels.
 
-##  <a name="settiptext"></a>  CMFCStatusBar::SetTipText
+## <a name="settiptext"></a> CMFCStatusBar::SetTipText
 
 Set the tooltip text of a status bar pane.
 

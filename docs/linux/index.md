@@ -4,7 +4,6 @@ title: Linux Development with C++ Documentation
 description: Create and debug applications running on Linux.
 ms.topic: "landing-page"
 ---
-
 # Linux Development with C++ Documentation
 
 Use Visual Studio 2017 and later to create and debug applications running on Linux remote machines or Windows Subsystem for Linux.

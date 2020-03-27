@@ -93,7 +93,7 @@ LONGLONG GetTimeSpan() const throw();
 
 Returns the time span in 100-nanosecond FILETIME units. For more information, see [CFileTime](cfiletime-class.md).
 
-## <a name="operator_-"></a>  CFileTimeSpan::operator -
+## <a name="operator_-"></a> CFileTimeSpan::operator -
 
 Performs subtraction on a `CFileTimeSpan` object.
 
@@ -110,7 +110,7 @@ A `CFileTimeSpan` object.
 
 Returns a `CFileTimeSpan` object representing the result of the difference between two time spans.
 
-## <a name="operator_neq"></a>  CFileTimeSpan::operator !=
+## <a name="operator_neq"></a> CFileTimeSpan::operator !=
 
 Compares two `CFileTimeSpan` objects for inequality.
 
@@ -127,7 +127,7 @@ The `CFileTimeSpan` object to be compared.
 
 Returns TRUE if the item being compared isn't equal to the `CFileTimeSpan` object; otherwise FALSE.
 
-## <a name="operator_add"></a>  CFileTimeSpan::operator +
+## <a name="operator_add"></a> CFileTimeSpan::operator +
 
 Performs addition on a `CFileTimeSpan` object.
 
@@ -144,7 +144,7 @@ A `CFileTimeSpan` object.
 
 Returns a `CFileTimeSpan` object containing the sum of the two time spans.
 
-## <a name="operator_add_eq"></a>  CFileTimeSpan::operator +=
+## <a name="operator_add_eq"></a> CFileTimeSpan::operator +=
 
 Performs addition on a `CFileTimeSpan` object and assigns the result to the current object.
 
@@ -161,7 +161,7 @@ A `CFileTimeSpan` object.
 
 Returns the updated `CFileTimeSpan` object containing the sum of the two time spans.
 
-## <a name="operator_lt"></a>  CFileTimeSpan::operator &lt;
+## <a name="operator_lt"></a> CFileTimeSpan::operator &lt;
 
 Compares two `CFileTimeSpan` objects to determine the lesser.
 
@@ -178,7 +178,7 @@ The `CFileTimeSpan` object to be compared.
 
 Returns TRUE if the first object is less (that is, represents a shorter time period) than the second, otherwise FALSE.
 
-## <a name="operator_lt_eq"></a>  CFileTimeSpan::operator &lt;=
+## <a name="operator_lt_eq"></a> CFileTimeSpan::operator &lt;=
 
 Compares two `CFileTimeSpan` objects to determine equality or the lesser.
 
@@ -195,7 +195,7 @@ The `CFileTimeSpan` object to be compared.
 
 Returns TRUE if the first object is less than (that is, represents a shorter time period) or equal to the second, otherwise FALSE.
 
-## <a name="operator_eq"></a>  CFileTimeSpan::operator =
+## <a name="operator_eq"></a> CFileTimeSpan::operator =
 
 The assignment operator.
 
@@ -212,7 +212,7 @@ A `CFileTimeSpan` object.
 
 Returns the updated `CFileTimeSpan` object.
 
-## <a name="operator_-_eq"></a>  CFileTimeSpan::operator -=
+## <a name="operator_-_eq"></a> CFileTimeSpan::operator -=
 
 Performs subtraction on a `CFileTimeSpan` object and assigns the result to the current object.
 
@@ -229,7 +229,7 @@ A `CFileTimeSpan` object.
 
 Returns the updated `CFileTimeSpan` object.
 
-## <a name="operator_eq_eq"></a>  CFileTimeSpan::operator ==
+## <a name="operator_eq_eq"></a> CFileTimeSpan::operator ==
 
 Compares two `CFileTimeSpan` objects for equality.
 
@@ -246,7 +246,7 @@ The `CFileTimeSpan` object to be compared.
 
 Returns TRUE if the objects are equal, otherwise FALSE.
 
-## <a name="operator_gt"></a>  CFileTimeSpan::operator &gt;
+## <a name="operator_gt"></a> CFileTimeSpan::operator &gt;
 
 Compares two `CFileTimeSpan` objects to determine the larger.
 
@@ -263,7 +263,7 @@ The `CFileTimeSpan` object to be compared.
 
 Returns TRUE if the first object is greater than (that is, represents a longer time period) than the second, otherwise FALSE.
 
-## <a name="operator_gt_eq"></a>  CFileTimeSpan::operator &gt;=
+## <a name="operator_gt_eq"></a> CFileTimeSpan::operator &gt;=
 
 Compares two `CFileTimeSpan` objects to determine equality or the larger.
 
@@ -280,7 +280,7 @@ The `CFileTimeSpan` object to be compared.
 
 Returns TRUE if the first object is greater than (that is, represents a longer time period) or equal to the second, otherwise FALSE.
 
-## <a name="settimespan"></a>  CFileTimeSpan::SetTimeSpan
+## <a name="settimespan"></a> CFileTimeSpan::SetTimeSpan
 
 Call this method to set the time span of the `CFileTimeSpan` object.
 

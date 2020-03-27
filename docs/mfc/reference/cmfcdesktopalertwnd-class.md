@@ -10,6 +10,7 @@ ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
 The `CMFCDesktopAlertWnd` class implements the functionality of a modeless dialog box which appears on the screen to inform the user about an event.
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```
@@ -92,7 +93,7 @@ The following example illustrates how to use various methods in the `CMFCDesktop
 
 **Header:** afxDesktopAlertWnd.h
 
-##  <a name="create"></a>  CMFCDesktopAlertWnd::Create
+## <a name="create"></a> CMFCDesktopAlertWnd::Create
 
 Creates and initializes the desktop alert window.
 
@@ -143,7 +144,7 @@ The first method overload creates an alert window that contains a child dialog b
 
 The second method overload creates an alert window that contains default controls. You can specify which controls to display by modifying the [CMFCDesktopAlertWndInfo Class](../../mfc/reference/cmfcdesktopalertwndinfo-class.md).
 
-##  <a name="getanimationspeed"></a>  CMFCDesktopAlertWnd::GetAnimationSpeed
+## <a name="getanimationspeed"></a> CMFCDesktopAlertWnd::GetAnimationSpeed
 
 Returns the animation speed.
 
@@ -159,7 +160,7 @@ The animation speed of the alert window, in milliseconds.
 
 The animation speed describes how fast the alert window opens and closes.
 
-##  <a name="getanimationtype"></a>  CMFCDesktopAlertWnd::GetAnimationType
+## <a name="getanimationtype"></a> CMFCDesktopAlertWnd::GetAnimationType
 
 Returns the animation type.
 
@@ -181,7 +182,7 @@ One of the following animation types:
 
 - SYSTEM_DEFAULT_ANIMATION
 
-##  <a name="getautoclosetime"></a>  CMFCDesktopAlertWnd::GetAutoCloseTime
+## <a name="getautoclosetime"></a> CMFCDesktopAlertWnd::GetAutoCloseTime
 
 Returns the auto-close time out.
 
@@ -197,7 +198,7 @@ The time, in milliseconds, after which the alert window will automatically close
 
 Use this method to determine how much time should elapse before the alert window will automatically close.
 
-##  <a name="getcaptionheight"></a>  CMFCDesktopAlertWnd::GetCaptionHeight
+## <a name="getcaptionheight"></a> CMFCDesktopAlertWnd::GetCaptionHeight
 
 Returns the height of the caption.
 
@@ -213,7 +214,7 @@ The height, in pixels, of the caption.
 
 This method can be overridden in a derived class. The default implementation either: returns the small caption height value (7 pixels) if the popup window should display the small caption, or the value obtained from the Windows API function `GetSystemMetrics(SM_CYSMCAPTION)`.
 
-##  <a name="getlastpos"></a>  CMFCDesktopAlertWnd::GetLastPos
+## <a name="getlastpos"></a> CMFCDesktopAlertWnd::GetLastPos
 
 Returns the last position of the desktop alert window on the screen.
 
@@ -229,7 +230,7 @@ A point, in screen coordinates.
 
 This method returns the last valid position of the alert window on the screen.
 
-##  <a name="gettransparency"></a>  CMFCDesktopAlertWnd::GetTransparency
+## <a name="gettransparency"></a> CMFCDesktopAlertWnd::GetTransparency
 
 Returns the transparency level.
 
@@ -245,7 +246,7 @@ A transparency level between 0 and 255, inclusive. The greater the value, the mo
 
 Use this method to retrieve the current transparency level of the alert window.
 
-##  <a name="hassmallcaption"></a>  CMFCDesktopAlertWnd::HasSmallCaption
+## <a name="hassmallcaption"></a> CMFCDesktopAlertWnd::HasSmallCaption
 
 Determines whether the desktop alert window has a small caption or a regular-size caption.
 
@@ -261,7 +262,7 @@ TRUE if the popup window is displayed with a small caption; FALSE if the popup w
 
 Use this method to determine whether the popup window has a small caption or a regular-size caption. By default, the small caption is 7 pixels high. You can obtain the height of the regular-size caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.
 
-##  <a name="onbeforeshow"></a>  CMFCDesktopAlertWnd::OnBeforeShow
+## <a name="onbeforeshow"></a> CMFCDesktopAlertWnd::OnBeforeShow
 
 ```
 virtual BOOL OnBeforeShow(CPoint&);
@@ -275,7 +276,7 @@ virtual BOOL OnBeforeShow(CPoint&);
 
 ### Remarks
 
-##  <a name="onclicklinkbutton"></a>  CMFCDesktopAlertWnd::OnClickLinkButton
+## <a name="onclicklinkbutton"></a> CMFCDesktopAlertWnd::OnClickLinkButton
 
 Called by the framework when the user clicks a link button located on the desktop alert menu.
 
@@ -296,7 +297,7 @@ Always FALSE.
 
 Override this method in a derived class if you want to be notified when a user clicks the link on the alert window.
 
-##  <a name="oncommand"></a>  CMFCDesktopAlertWnd::OnCommand
+## <a name="oncommand"></a> CMFCDesktopAlertWnd::OnCommand
 
 ```
 virtual BOOL OnCommand(
@@ -314,7 +315,7 @@ virtual BOOL OnCommand(
 
 ### Remarks
 
-##  <a name="ondraw"></a>  CMFCDesktopAlertWnd::OnDraw
+## <a name="ondraw"></a> CMFCDesktopAlertWnd::OnDraw
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -326,7 +327,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### Remarks
 
-##  <a name="processcommand"></a>  CMFCDesktopAlertWnd::ProcessCommand
+## <a name="processcommand"></a> CMFCDesktopAlertWnd::ProcessCommand
 
 ```
 BOOL ProcessCommand(HWND hwnd);
@@ -340,7 +341,7 @@ BOOL ProcessCommand(HWND hwnd);
 
 ### Remarks
 
-##  <a name="setanimationspeed"></a>  CMFCDesktopAlertWnd::SetAnimationSpeed
+## <a name="setanimationspeed"></a> CMFCDesktopAlertWnd::SetAnimationSpeed
 
 Sets the new animation speed.
 
@@ -357,7 +358,7 @@ void SetAnimationSpeed(UINT nSpeed);
 
 Call this method to set the animation speed for the alert window. The default animation speed is 30 milliseconds.
 
-##  <a name="setanimationtype"></a>  CMFCDesktopAlertWnd::SetAnimationType
+## <a name="setanimationtype"></a> CMFCDesktopAlertWnd::SetAnimationType
 
 Sets the animation type.
 
@@ -384,7 +385,7 @@ Call this method to set animation type. You can specify one of the following val
 
 - SYSTEM_DEFAULT_ANIMATION
 
-##  <a name="setautoclosetime"></a>  CMFCDesktopAlertWnd::SetAutoCloseTime
+## <a name="setautoclosetime"></a> CMFCDesktopAlertWnd::SetAutoCloseTime
 
 Sets the auto-close time out.
 
@@ -401,7 +402,7 @@ void SetAutoCloseTime(int nTime);
 
 The alert window is automatically closed after the specified time if the user does not interact with the window.
 
-##  <a name="setsmallcaption"></a>  CMFCDesktopAlertWnd::SetSmallCaption
+## <a name="setsmallcaption"></a> CMFCDesktopAlertWnd::SetSmallCaption
 
 Switches between small and regular-size captions.
 
@@ -418,7 +419,7 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
 
 Call this method to display the small or regular-size caption. By default, the small caption is 7 pixels high. You can obtain the size of the regular caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.
 
-##  <a name="settransparency"></a>  CMFCDesktopAlertWnd::SetTransparency
+## <a name="settransparency"></a> CMFCDesktopAlertWnd::SetTransparency
 
 Sets the transparency level of the popup window.
 
@@ -435,7 +436,7 @@ void SetTransparency(BYTE nTransparency);
 
 Call this function to set the transparency level of the popup window.
 
-##  <a name="getdialogsize"></a>  CMFCDesktopAlertWnd::GetDialogSize
+## <a name="getdialogsize"></a> CMFCDesktopAlertWnd::GetDialogSize
 
 ```
 virtual CSize GetDialogSize();

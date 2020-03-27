@@ -58,7 +58,7 @@ State information.
 
 **Namespace:** std
 
-## <a name="fpos"></a>  fpos::fpos
+## <a name="fpos"></a> fpos::fpos
 
 Create an object that contains information about a position (offset) in a stream.
 
@@ -85,7 +85,7 @@ The first constructor stores the offset *_Off*, relative to the beginning of fil
 
 The second constructor stores a zero offset and the object *_State*.
 
-## <a name="op_neq"></a>  fpos::operator!=
+## <a name="op_neq"></a> fpos::operator!=
 
 Tests file-position indicators for inequality.
 
@@ -158,7 +158,7 @@ int main( )
 }
 ```
 
-## <a name="op_add"></a>  fpos::operator+
+## <a name="op_add"></a> fpos::operator+
 
 Increments a file-position indicator.
 
@@ -183,7 +183,7 @@ The member function returns **fpos(\*this) +=** `_Off`.
 
 See [operator!=](#op_neq) for a sample of using `operator+`.
 
-## <a name="op_add_eq"></a>  fpos::operator+=
+## <a name="op_add_eq"></a> fpos::operator+=
 
 Increments a file-position indicator.
 
@@ -208,7 +208,7 @@ The member function adds *_Off* to the stored offset member object and then retu
 
 See [operator!=](#op_neq) for a sample of using `operator+=`.
 
-## <a name="operator-"></a>  fpos::operator-
+## <a name="operator-"></a> fpos::operator-
 
 Decrements a file-position indicator.
 
@@ -234,7 +234,7 @@ The first member function returns `(streamoff)*this - (streamoff) right`. The se
 
 See [operator!=](#op_neq) for a sample of using `operator-`.
 
-## <a name="operator-_eq"></a>  fpos::operator-=
+## <a name="operator-_eq"></a> fpos::operator-=
 
 Decrements a file-position indicator.
 
@@ -259,7 +259,7 @@ For positioning within a file, the result is generally valid only for binary str
 
 See [operator!=](#op_neq) for a sample of using `operator-=`.
 
-## <a name="op_eq_eq"></a>  fpos::operator==
+## <a name="op_eq_eq"></a> fpos::operator==
 
 Tests file-position indicators for equality.
 
@@ -284,7 +284,7 @@ The member function returns `(streamoff)*this == (streamoff)right`.
 
 See [operator!=](#op_neq) for a sample of using `operator+=`.
 
-## <a name="op_streamoff"></a>  fpos::operator streamoff
+## <a name="op_streamoff"></a> fpos::operator streamoff
 
 Cast object of type `fpos` to object of type `streamoff`.
 
@@ -323,7 +323,7 @@ int main( )
 0
 ```
 
-## <a name="seekpos"></a>  fpos::seekpos
+## <a name="seekpos"></a> fpos::seekpos
 
 This method is used internally by the C++ Standard Library only. Do not call this method from your code.
 
@@ -331,7 +331,7 @@ This method is used internally by the C++ Standard Library only. Do not call thi
 fpos_t seekpos() const;
 ```
 
-## <a name="state"></a>  fpos::state
+## <a name="state"></a> fpos::state
 
 Sets or returns the conversion state.
 

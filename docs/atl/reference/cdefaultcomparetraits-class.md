@@ -40,7 +40,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="compareelements"></a>  CDefaultCompareTraits::CompareElements
+## <a name="compareelements"></a> CDefaultCompareTraits::CompareElements
 
 Call this function to compare two elements for equality.
 
@@ -64,7 +64,7 @@ Returns true if the elements are equal, false otherwise.
 
 The default implementation of this function is the equality (**==**) operator. For objects other than simple data types, this function may need to be overridden.
 
-##  <a name="compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered
+## <a name="compareelementsordered"></a> CDefaultCompareTraits::CompareElementsOrdered
 
 Call this function to determine the greater and lesser element.
 

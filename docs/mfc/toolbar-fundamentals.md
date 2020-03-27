@@ -17,7 +17,7 @@ This article describes the fundamental MFC implementation that lets you add a de
 
 - [Multiple toolbars](#_core_multiple_toolbars)
 
-##  <a name="_core_the_appwizard_toolbar_option"></a> The Application Wizard Toolbar Option
+## <a name="_core_the_appwizard_toolbar_option"></a> The Application Wizard Toolbar Option
 
 To get a single toolbar with default buttons, select the Standard Docking toolbar option on the page labeled User Interface Features. This adds code to your application that:
 
@@ -25,7 +25,7 @@ To get a single toolbar with default buttons, select the Standard Docking toolba
 
 - Manages the toolbar, including its ability to dock or to float.
 
-##  <a name="_core_the_toolbar_in_code"></a> The Toolbar in Code
+## <a name="_core_the_toolbar_in_code"></a> The Toolbar in Code
 
 The toolbar is a [CToolBar](../mfc/reference/ctoolbar-class.md) object declared as a data member of your application's `CMainFrame` class. In other words, the toolbar object is embedded in the main frame window object. This means that MFC creates the toolbar when it creates the frame window and destroys the toolbar when it destroys the frame window. The following partial class declaration, for a multiple document interface (MDI) application, shows data members for an embedded toolbar and an embedded status bar. It also shows the override of the `OnCreate` member function.
 
@@ -40,11 +40,11 @@ Toolbar creation occurs in `CMainFrame::OnCreate`. MFC calls [OnCreate](../mfc/r
 1. Calls functions to enable docking, floating, and tool tips. For details about these calls, see the article [Docking and Floating Toolbars](../mfc/docking-and-floating-toolbars.md).
 
 > [!NOTE]
->  The MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md) includes illustrations of both old and new MFC toolbars. The toolbars that use `COldToolbar` require calls in step 2 to `LoadBitmap` (rather than `LoadToolBar`) and to `SetButtons`. The new toolbars require calls to `LoadToolBar`.
+> The MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md) includes illustrations of both old and new MFC toolbars. The toolbars that use `COldToolbar` require calls in step 2 to `LoadBitmap` (rather than `LoadToolBar`) and to `SetButtons`. The new toolbars require calls to `LoadToolBar`.
 
 The docking, floating, and tool tips calls are optional. You can remove those lines from `OnCreate` if you prefer. The result is a toolbar that remains fixed, unable to float or redock and unable to display tool tips.
 
-##  <a name="_core_editing_the_toolbar_resource"></a> Editing the Toolbar Resource
+## <a name="_core_editing_the_toolbar_resource"></a> Editing the Toolbar Resource
 
 The default toolbar you get with the Application Wizard is based on an **RT_TOOLBAR** custom resource, introduced in MFC version 4.0. You can edit this resource with the [toolbar editor](../windows/toolbar-editor.md). The editor lets you easily add, delete, and rearrange buttons. It contains a graphical editor for the buttons that is very similar to the general graphics editor in Visual C++. If you edited toolbars in previous versions of Visual C++, you'll find the task much easier now.
 
@@ -54,7 +54,7 @@ New [CToolBar](../mfc/reference/ctoolbar-class.md) member functions work with th
 
 For details about using the toolbar editor, see [Toolbar Editor](../windows/toolbar-editor.md).
 
-##  <a name="_core_multiple_toolbars"></a> Multiple Toolbars
+## <a name="_core_multiple_toolbars"></a> Multiple Toolbars
 
 The Application Wizard provides you with one default toolbar. If you need more than one toolbar in your application, you can model your code for additional toolbars based on the wizard-generated code for the default toolbar.
 

@@ -58,7 +58,7 @@ The descriptor for this class is then inserted into the archive using the `CRunt
 When returning to the initial caller (usually the root of the network of objects), you must call [CArchive::Close](../mfc/reference/carchive-class.md#close). If you plan to perform other [CFile](../mfc/reference/cfile-class.md)operations, you must call the `CArchive` method [Flush](../mfc/reference/carchive-class.md#flush) to prevent corruption of the archive.
 
 > [!NOTE]
->  This implementation imposes a hard limit of 0x3FFFFFFE indices per archive context. This number represents the maximum number of unique objects and classes that can be saved in a single archive, but a single disk file can have an unlimited number of archive contexts.
+> This implementation imposes a hard limit of 0x3FFFFFFE indices per archive context. This number represents the maximum number of unique objects and classes that can be saved in a single archive, but a single disk file can have an unlimited number of archive contexts.
 
 ## Loading Objects from the Store (CArchive::ReadObject)
 

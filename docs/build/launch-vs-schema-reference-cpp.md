@@ -3,7 +3,6 @@ title: "launch.vs.json schema reference (C++)"
 ms.date: "08/20/2019"
 helpviewer_keywords: ["launch.vs.json file [C++]"]
 ---
-
 # launch.vs.json schema reference (C++)
 
 Use the *launch.vs.json* file to configure debugging parameters. To create the file. right-click on an executable file in **Solution Explorer** and choose **Debug and Launch Settings**. Choose the option that most closely matches your project and then use the following properties to modify the configuration as needed. For more information on debugging CMake projects, see [Configure CMake debugging sessions](/cpp/build/configure-cmake-debugging-sessions).

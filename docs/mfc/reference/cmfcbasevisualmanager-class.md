@@ -67,7 +67,7 @@ Because it is a base class for all visual managers, you can just call [CMFCVisua
 
 **Header:** afxvisualmanager.h
 
-##  <a name="cleanupthemes"></a>  CMFCBaseVisualManager::CleanUpThemes
+## <a name="cleanupthemes"></a> CMFCBaseVisualManager::CleanUpThemes
 
 Calls `CloseThemeData` for all handles obtained in `UpdateSystemColors`.
 
@@ -79,7 +79,7 @@ void CleanUpThemes();
 
 For internal use only.
 
-##  <a name="cmfcbasevisualmanager"></a>  CMFCBaseVisualManager::CMFCBaseVisualManager
+## <a name="cmfcbasevisualmanager"></a> CMFCBaseVisualManager::CMFCBaseVisualManager
 
 Constructs and initializes a `CMFCBaseVisualManager` object.
 
@@ -87,7 +87,7 @@ Constructs and initializes a `CMFCBaseVisualManager` object.
 CMFCBaseVisualManager();
 ```
 
-##  <a name="drawcheckbox"></a>  CMFCBaseVisualManager::DrawCheckBox
+## <a name="drawcheckbox"></a> CMFCBaseVisualManager::DrawCheckBox
 
 Draws a check box control by using the current Windows theme.
 
@@ -139,7 +139,7 @@ The values of *nState* correspond to the following check box styles.
 |1|CBS_CHECKEDNORMAL|
 |2|CBS_MIXEDNORMAL|
 
-##  <a name="drawcomboborder"></a>  CMFCBaseVisualManager::DrawComboBorder
+## <a name="drawcomboborder"></a> CMFCBaseVisualManager::DrawComboBorder
 
 Draws the combo box border using the current Windows theme.
 
@@ -173,7 +173,7 @@ virtual BOOL DrawComboBorder(
 
 TRUE if Theme API is enabled; otherwise FALSE.
 
-##  <a name="drawcombodropbutton"></a>  CMFCBaseVisualManager::DrawComboDropButton
+## <a name="drawcombodropbutton"></a> CMFCBaseVisualManager::DrawComboDropButton
 
 Draws a combo box drop-down button using the current Windows theme.
 
@@ -200,7 +200,7 @@ virtual BOOL DrawComboDropButton(
 
 TRUE if Theme API is enabled; otherwise FALSE.
 
-##  <a name="drawpushbutton"></a>  CMFCBaseVisualManager::DrawPushButton
+## <a name="drawpushbutton"></a> CMFCBaseVisualManager::DrawPushButton
 
 Draws a push button using the current Windows theme.
 
@@ -230,7 +230,7 @@ virtual BOOL DrawPushButton(
 
 TRUE if Theme API is enabled; otherwise FALSE.
 
-##  <a name="drawradiobutton"></a>  CMFCBaseVisualManager::DrawRadioButton
+## <a name="drawradiobutton"></a> CMFCBaseVisualManager::DrawRadioButton
 
 Draws a radio button control by using the current Windows theme.
 
@@ -268,7 +268,7 @@ virtual BOOL DrawRadioButton(
 
 TRUE if Theme API is enabled; otherwise FALSE.
 
-##  <a name="drawstatusbarprogress"></a>  CMFCBaseVisualManager::DrawStatusBarProgress
+## <a name="drawstatusbarprogress"></a> CMFCBaseVisualManager::DrawStatusBarProgress
 
 Draws progress bar on status bar control ( [CMFCStatusBar Class](../../mfc/reference/cmfcstatusbar-class.md)) using the current Windows theme.
 
@@ -318,7 +318,7 @@ virtual BOOL DrawStatusBarProgress(
 
 TRUE if Theme API is enabled; otherwise FALSE.
 
-##  <a name="fillrebarpane"></a>  CMFCBaseVisualManager::FillReBarPane
+## <a name="fillrebarpane"></a> CMFCBaseVisualManager::FillReBarPane
 
 Fills the background of the rebar control by using the current Windows theme.
 
@@ -344,7 +344,7 @@ virtual void FillReBarPane(
 
 TRUE if Theme API is enabled; otherwise FALSE.
 
-##  <a name="getstandardwindowstheme"></a>  CMFCBaseVisualManager::GetStandardWindowsTheme
+## <a name="getstandardwindowstheme"></a> CMFCBaseVisualManager::GetStandardWindowsTheme
 
 Gets the current Windows theme.
 
@@ -366,7 +366,7 @@ The currently selected Windows Theme color. Can be one of the following enumerat
 
 - `WinXpTheme_Silver` - silver theme.
 
-##  <a name="updatesystemcolors"></a>  CMFCBaseVisualManager::UpdateSystemColors
+## <a name="updatesystemcolors"></a> CMFCBaseVisualManager::UpdateSystemColors
 
 Calls `OpenThemeData` to obtain handles for drawing various controls: windows, toolbars, buttons, and so on.
 

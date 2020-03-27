@@ -71,7 +71,7 @@ ATL objects normally acquire a class factory by deriving from [CComCoClass](../.
 
 **Header:** atlcom.h
 
-##  <a name="createinstance"></a>  CComClassFactory2::CreateInstance
+## <a name="createinstance"></a> CComClassFactory2::CreateInstance
 
 Creates an object of the specified CLSID and retrieves an interface pointer to this object.
 
@@ -98,7 +98,7 @@ A standard HRESULT value.
 
 Requires the machine to be fully licensed. If a full machine license does not exist, call [CreateInstanceLic](#createinstancelic).
 
-##  <a name="createinstancelic"></a>  CComClassFactory2::CreateInstanceLic
+## <a name="createinstancelic"></a> CComClassFactory2::CreateInstanceLic
 
 Similar to [CreateInstance](#createinstance), except that `CreateInstanceLic` requires a license key.
 
@@ -137,7 +137,7 @@ A standard HRESULT value.
 
 You can obtain a license key using [RequestLicKey](#requestlickey). In order to create an object on an unlicensed machine, you must call `CreateInstanceLic`.
 
-##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo
+## <a name="getlicinfo"></a> CComClassFactory2::GetLicInfo
 
 Fills a [LICINFO](/windows/win32/api/ocidl/ns-ocidl-licinfo) structure with information that describes the class factory's licensing capabilities.
 
@@ -158,7 +158,7 @@ A standard HRESULT value.
 
 The `fRuntimeKeyAvail` member of this structure indicates whether, given a license key, the class factory allows objects to be created on an unlicensed machine. The *fLicVerified* member indicates whether a full machine license exists.
 
-##  <a name="lockserver"></a>  CComClassFactory2::LockServer
+## <a name="lockserver"></a> CComClassFactory2::LockServer
 
 Increments and decrements the module lock count by calling `_Module::Lock` and `_Module::Unlock`, respectively.
 
@@ -181,7 +181,7 @@ A standard HRESULT value.
 
 Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be quickly created.
 
-##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey
+## <a name="requestlickey"></a> CComClassFactory2::RequestLicKey
 
 Creates and returns a license key, provided that the `fRuntimeKeyAvail` member of the [LICINFO](/windows/win32/api/ocidl/ns-ocidl-licinfo) structure is TRUE.
 

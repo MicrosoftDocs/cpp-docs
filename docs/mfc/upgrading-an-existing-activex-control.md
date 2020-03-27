@@ -29,7 +29,7 @@ This article discusses the following topics:
 
 You can also add optimizations, as described in [ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md). Monikers can be used to download properties and large BLOBs asynchronously, as described in [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md).
 
-##  <a name="_core_packaging_code_for_downloading"></a> Packaging Code for Downloading
+## <a name="_core_packaging_code_for_downloading"></a> Packaging Code for Downloading
 
 For more information on this subject, see [Packaging ActiveX Controls](https://docs.microsoft.com//previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa751974%28v%3dvs.85%29).
 
@@ -127,7 +127,7 @@ Note here that the `#Version` information specified with a CAB file applies to t
 
 Depending on the version specified, you can force download of your control. For complete specifications of the `OBJECT` tag including the *CODEBASE* parameter, see the W3C reference.
 
-##  <a name="_core_marking_a_control_safe_for_scripting_and_initializing"></a> Marking a Control Safe for Scripting and Initializing
+## <a name="_core_marking_a_control_safe_for_scripting_and_initializing"></a> Marking a Control Safe for Scripting and Initializing
 
 ActiveX controls used in Web pages should be marked as safe for scripting and safe for initializing if they are in fact safe. A safe control will not perform disk IO or access the memory or registers of a machine directly.
 
@@ -152,7 +152,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
 HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}
 ```
 
-##  <a name="_core_licensing_issues"></a> Licensing Issues
+## <a name="_core_licensing_issues"></a> Licensing Issues
 
 If you want to use a licensed control on a Web page, you must verify that the license agreement allows its use on the Internet and create a license package file (LPK) for it.
 
@@ -207,7 +207,7 @@ To use a licensed control in an HTML page on a nonlicensed machine, you must gen
 
 For more information about control licensing, see [ActiveX Controls: Licensing an ActiveX Control](../mfc/mfc-activex-controls-licensing-an-activex-control.md).
 
-##  <a name="_core_signing_code"></a> Signing Code
+## <a name="_core_signing_code"></a> Signing Code
 
 Code signing is designed to identify the source of code, and to guarantee that the code has not changed since it was signed. Depending on browser safety settings, users may be warned before the code is downloaded. Users may choose to trust certain certificate owners or companies, in which case code signed by those trusted will be downloaded without warning. Code is digitally signed to avoid tampering.
 
@@ -217,7 +217,7 @@ Depending on trust and browser safety level settings, a certificate may be displ
 
 Digital signing guarantees code has not changed since it's been signed. A hash of the code is taken and embedded in the certificate. This hash is later compared with a hash of the code taken after the code is downloaded but before it runs. Companies such as Verisign can supply private and public keys needed to sign code. The ActiveX SDK ships with MakeCert, a utility for creating test certificates.
 
-##  <a name="_core_managing_the_palette"></a> Managing the Palette
+## <a name="_core_managing_the_palette"></a> Managing the Palette
 
 Containers determine the palette and make it available as an ambient property, **DISPID_AMBIENT_PALETTE**. A container (for example, Internet Explorer) chooses a palette that is used by all ActiveX controls on a page to determine their own palette. This prevents display flickering and presents a consistent appearance.
 
@@ -229,7 +229,7 @@ Under OCX 96 guidelines, a control must always realize its palette in the backgr
 
 Older containers that do not use the ambient palette property will send WM_QUERYNEWPALETTE and WM_PALETTECHANGED messages. A control can override `OnQueryNewPalette` and `OnPaletteChanged` to handle these messages.
 
-##  <a name="_core_internet_explorer_browser_safety_levels_and_control_behavior"></a> Internet Explorer Browser Safety Levels and Control Behavior
+## <a name="_core_internet_explorer_browser_safety_levels_and_control_behavior"></a> Internet Explorer Browser Safety Levels and Control Behavior
 
 A browser has options for safety level, configurable by the user. Because Web pages can contain active content that might potentially harm a user's computer, browsers allow the user to select options for safety level. Depending on the way a browser implements safety levels, a control may not be downloaded at all, or will display a certificate or a warning message to allow the user to choose at run time whether or not to download the control. The behavior of ActiveX controls under high, medium, and low safety levels on Internet Explorer is listed below.
 

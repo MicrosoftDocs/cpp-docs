@@ -50,13 +50,13 @@ class CHandle
 A `CHandle` object can be used whenever a handle is required: the main difference is that the `CHandle` object will automatically be deleted.
 
 > [!NOTE]
->  Some API functions will use NULL as an empty or invalid handle, while others use INVALID_HANDLE_VALUE. `CHandle` only uses NULL and will treat INVALID_HANDLE_VALUE as a real handle. If you call an API which can return INVALID_HANDLE_VALUE, you should check for this value before calling [CHandle::Attach](#attach) or passing it to the `CHandle` constructor, and instead pass NULL.
+> Some API functions will use NULL as an empty or invalid handle, while others use INVALID_HANDLE_VALUE. `CHandle` only uses NULL and will treat INVALID_HANDLE_VALUE as a real handle. If you call an API which can return INVALID_HANDLE_VALUE, you should check for this value before calling [CHandle::Attach](#attach) or passing it to the `CHandle` constructor, and instead pass NULL.
 
 ## Requirements
 
 **Header:** atlbase.h
 
-##  <a name="attach"></a>  CHandle::Attach
+## <a name="attach"></a> CHandle::Attach
 
 Call this method to attach the `CHandle` object to an existing handle.
 
@@ -73,7 +73,7 @@ void Attach(HANDLE h) throw();
 
 Assigns the `CHandle` object to the *h* handle and then calls **h.Detach()**. In debugs builds, an ATLASSERT will be raised if *h* is NULL. No other check as to the validity of the handle is made.
 
-##  <a name="chandle"></a>  CHandle::CHandle
+## <a name="chandle"></a> CHandle::CHandle
 
 The constructor.
 
@@ -92,7 +92,7 @@ An existing handle or `CHandle`.
 
 Creates a new `CHandle` object, optionally using an existing handle or `CHandle` object.
 
-##  <a name="dtor"></a>  CHandle::~CHandle
+## <a name="dtor"></a> CHandle::~CHandle
 
 The destructor.
 
@@ -104,7 +104,7 @@ The destructor.
 
 Frees the `CHandle` object by calling [CHandle::Close](#close).
 
-##  <a name="close"></a>  CHandle::Close
+## <a name="close"></a> CHandle::Close
 
 Call this method to close a `CHandle` object.
 
@@ -116,7 +116,7 @@ void Close() throw();
 
 Closes an open object handle. If the handle is NULL, which will be the case if `Close` has already been called, an ATLASSERT will be raised in debug builds.
 
-##  <a name="detach"></a>  CHandle::Detach
+## <a name="detach"></a> CHandle::Detach
 
 Call this method to detach a handle from a `CHandle` object.
 
@@ -132,7 +132,7 @@ Returns the handle being detached.
 
 Releases ownership of the handle.
 
-##  <a name="m_h"></a>  CHandle::m_h
+## <a name="m_h"></a> CHandle::m_h
 
 The member variable that stores the handle.
 
@@ -140,7 +140,7 @@ The member variable that stores the handle.
 HANDLE m_h;
 ```
 
-##  <a name="operator_eq"></a>  CHandle::operator =
+## <a name="operator_eq"></a> CHandle::operator =
 
 The assignment operator.
 
@@ -161,7 +161,7 @@ Returns a reference to the new `CHandle` object.
 
 If the `CHandle` object currently contains a handle, it will be closed. The `CHandle` object being passed in will have its handle reference set to NULL. This ensures that two `CHandle` objects will never contain the same active handle.
 
-##  <a name="operator_handle"></a>  CHandle::operator HANDLE
+## <a name="operator_handle"></a> CHandle::operator HANDLE
 
 Returns the value of the stored handle.
 

@@ -4,7 +4,6 @@ ms.description: "Visual Studio provides several predefined build configurations 
 ms.date: "06/12/2019"
 helpviewer_keywords: ["CMake redefined configurations"]
 ---
-
 # CMake predefined build configurations
 
 ::: moniker range="vs-2015"
@@ -16,6 +15,7 @@ CMake projects are supported in Visual Studio 2017 and later.
 ::: moniker range=">=vs-2017"
 
 In a CMake project, build configurations are stored in a CMakeSettings.json file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
+
 - x86 Debug
 - x86 Release
 - x64 Debug
@@ -688,6 +688,7 @@ When you choose a configuration, it is added to the CMakeSettings.json file in t
 ```
 
 ::: moniker-end
+
 ## See also
 
 [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>

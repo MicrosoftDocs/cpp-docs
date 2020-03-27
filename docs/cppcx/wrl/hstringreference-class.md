@@ -55,7 +55,7 @@ Name                                                  | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="copyto"></a>HStringReference::CopyTo
+## <a name="copyto"></a> HStringReference::CopyTo
 
 Copies the current `HStringReference` object to an HSTRING object.
 
@@ -74,7 +74,7 @@ The HSTRING that receives the copy.
 
 This method calls the [WindowsDuplicateString](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) function.
 
-## <a name="get"></a>HStringReference::Get
+## <a name="get"></a> HStringReference::Get
 
 Retrieves the value of the underlying HSTRING handle.
 
@@ -86,7 +86,7 @@ HSTRING Get() const throw()
 
 The value of the underlying HSTRING handle.
 
-## <a name="getrawbuffer"></a>HStringReference::GetRawBuffer
+## <a name="getrawbuffer"></a> HStringReference::GetRawBuffer
 
 Retrieves a pointer to the underlying string data.
 
@@ -103,7 +103,7 @@ Pointer to an **int** variable that receives the length of the data.
 
 A **const** pointer to the underlying string data.
 
-## <a name="hstringreference"></a>HStringReference::HStringReference
+## <a name="hstringreference"></a> HStringReference::HStringReference
 
 Initializes a new instance of the `HStringReference` class.
 
@@ -140,7 +140,7 @@ The second constructor initializes a new `HStringReference` object that the size
 
 The third constructor initializes a new `HStringReference` object to the value of the *other* parameter, and then destroys the *other* parameter.
 
-## <a name="operator-assign"></a>HStringReference::operator=
+## <a name="operator-assign"></a> HStringReference::operator=
 
 Moves the value of another `HStringReference` object to the current `HStringReference` object.
 
@@ -157,7 +157,7 @@ An existing `HStringReference` object.
 
 The value of the existing *other* object is copied to the current `HStringReference` object, and then the *other* object is destroyed.
 
-## <a name="operator-equality"></a>HStringReference::operator==
+## <a name="operator-equality"></a> HStringReference::operator==
 
 Indicates whether the two parameters are equal.
 
@@ -187,7 +187,7 @@ The second parameter to compare.  *rhs* can be an `HStringReference` object or a
 
 **true** if the *lhs* and *rhs* parameters are equal; otherwise, **false**.
 
-## <a name="operator-inequality"></a>HStringReference::operator!=
+## <a name="operator-inequality"></a> HStringReference::operator!=
 
 Indicates whether the two parameters are not equal.
 
@@ -217,7 +217,7 @@ The second parameter to compare.  *rhs* can be an `HStringReference` object or a
 
 **true** if the *lhs* and *rhs* parameters are not equal; otherwise, **false**.
 
-## <a name="operator-less-than"></a>HStringReference::operator&lt;
+## <a name="operator-less-than"></a> HStringReference::operator&lt;
 
 Indicates whether the first parameter is less than the second parameter.
 

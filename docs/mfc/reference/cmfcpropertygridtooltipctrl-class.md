@@ -64,7 +64,7 @@ The following example demonstrates how to construct an object of the `CMFCProper
 
 **Header:** afxpropertygridtooltipctrl.h
 
-##  <a name="cmfcpropertygridtooltipctrl"></a>  CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl
+## <a name="cmfcpropertygridtooltipctrl"></a> CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl
 
 Constructs a `CMFCPropertyGridToolTipCtrl` object.
 
@@ -72,7 +72,7 @@ Constructs a `CMFCPropertyGridToolTipCtrl` object.
 CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl();
 ```
 
-##  <a name="create"></a>  CMFCPropertyGridToolTipCtrl::Create
+## <a name="create"></a> CMFCPropertyGridToolTipCtrl::Create
 
 Creates a window for the tooltip control.
 
@@ -89,7 +89,7 @@ BOOL Create(CWnd* pWndParent);
 
 TRUE if the window was successfully created; otherwise, FALSE.
 
-##  <a name="deactivate"></a>  CMFCPropertyGridToolTipCtrl::Deactivate
+## <a name="deactivate"></a> CMFCPropertyGridToolTipCtrl::Deactivate
 
 Deactivates and hides the tooltip control.
 
@@ -101,7 +101,7 @@ void Deactivate();
 
 This method sets the last position and text to empty values, so that future calls to [CMFCPropertyGridToolTipCtrl::Track](#track) display the tooltip.
 
-##  <a name="getlastrect"></a>  CMFCPropertyGridToolTipCtrl::GetLastRect
+## <a name="getlastrect"></a> CMFCPropertyGridToolTipCtrl::GetLastRect
 
 Returns the coordinates of the last position of the tooltip control.
 
@@ -114,7 +114,7 @@ void GetLastRect(CRect& rect) const;
 *rect*<br/>
 [out] Contains the last position of the tooltip control.
 
-##  <a name="hide"></a>  CMFCPropertyGridToolTipCtrl::Hide
+## <a name="hide"></a> CMFCPropertyGridToolTipCtrl::Hide
 
 Hides the tooltip control.
 
@@ -122,7 +122,7 @@ Hides the tooltip control.
 void Hide();
 ```
 
-##  <a name="settextmargin"></a>  CMFCPropertyGridToolTipCtrl::SetTextMargin
+## <a name="settextmargin"></a> CMFCPropertyGridToolTipCtrl::SetTextMargin
 
 Sets the spacing between the tooltip text and the border of the tooltip window.
 
@@ -135,7 +135,7 @@ void SetTextMargin(int nTextMargin);
 *nTextMargin*<br/>
 [in] Specifies the spacing between the tooltip control text and the border of the tooltip window. The default value is 10 pixels.
 
-##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track
+## <a name="track"></a> CMFCPropertyGridToolTipCtrl::Track
 
 Displays the tooltip control.
 

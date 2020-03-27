@@ -27,11 +27,11 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
    The following additional information describes the tabs in the **Data Link Properties** dialog box.
 
-   - **Provider** tab
+  - **Provider** tab
 
       Select an appropriate provider to manage the connection to the data source. The type of provider is typically determined by the type of database to which you are connecting. Click the **Next** button or click the **Connection** tab.
 
-   - **Connection** tab
+  - **Connection** tab
 
       The contents of this tab depend on the provider you selected. Although there are many types of providers, this section covers connections for the two most common: SQL and ODBC data. The others are similar variations on the fields described here.
 
@@ -75,7 +75,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
       1. Click **Test Connection**; if the test succeeds, click **OK**. If not, check your logon information, try another database, or try another data server.
 
-   - **Advanced** tab
+  - **Advanced** tab
 
       **Network settings:** Specify the **Impersonation level** (the level of impersonation that the server is allowed to use when impersonating the client; corresponds directly to RPC impersonation levels) and **Protection level** (the level of protection of data sent between client and server; corresponds directly to RPC protection levels).
 
@@ -83,7 +83,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
       For more information about advanced initialization properties, refer to the documentation provided with each specific OLE DB provider.
 
-   - **All** tab
+  - **All** tab
 
       This tab displays a summary of the initialization properties for the data source and connection you have specified. You can edit these values.
 
@@ -101,64 +101,64 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
    This option specifies whether the wizard will create consumer classes using attributes or template declarations. When you select this option, the wizard uses attributes instead of template declarations (this is the default option). When you deselect this option, the wizard uses template declarations instead of attributes.
 
-   - If you select a consumer **Type** of **Table**, the wizard uses the `db_source` and `db_table` attributes to create the table and table accessor class declarations, and uses `db_column` to create the column map. For example, it creates this map:
+  - If you select a consumer **Type** of **Table**, the wizard uses the `db_source` and `db_table` attributes to create the table and table accessor class declarations, and uses `db_column` to create the column map. For example, it creates this map:
 
-        ```cpp
-        // Inject table class and table accessor class declarations
-        [db_source("<initialization_string>"), db_table("dbo.Orders")]
-        ...
-        // Column map
-        [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;
-        [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];
-        ...
-        ```
+    ```cpp
+    // Inject table class and table accessor class declarations
+    [db_source("<initialization_string>"), db_table("dbo.Orders")]
+    ...
+    // Column map
+    [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;
+    [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];
+    ...
+    ```
 
-      instead of using the `CTable` template class to declare the table and table accessor class, and the BEGIN_COLUMN_MAP and END_COLUMN_MAP macros to create the column map, as in this example:
+     instead of using the `CTable` template class to declare the table and table accessor class, and the BEGIN_COLUMN_MAP and END_COLUMN_MAP macros to create the column map, as in this example:
 
-        ```cpp
-        // Table accessor class
-            class COrdersAccessor; // Table class
-            class COrders : public CTable<CAccessor<COrdersAccessor>>;
-        // ...
-        // Column map
-            BEGIN_COLUMN_MAP(COrderDetailsAccessor)
-                COLUMN_ENTRY_LENGTH_STATUS(1, m_OrderID, m_dwOrderIDLength, m_dwOrderIDStatus)
-                COLUMN_ENTRY_LENGTH_STATUS(2, m_CustomerID, m_dwCustomerIDLength, m_dwCustomerIDStatus)
-                // ...
-            END_COLUMN_MAP()
-        ```
+    ```cpp
+    // Table accessor class
+        class COrdersAccessor; // Table class
+        class COrders : public CTable<CAccessor<COrdersAccessor>>;
+    // ...
+    // Column map
+        BEGIN_COLUMN_MAP(COrderDetailsAccessor)
+            COLUMN_ENTRY_LENGTH_STATUS(1, m_OrderID, m_dwOrderIDLength, m_dwOrderIDStatus)
+            COLUMN_ENTRY_LENGTH_STATUS(2, m_CustomerID, m_dwCustomerIDLength, m_dwCustomerIDStatus)
+            // ...
+        END_COLUMN_MAP()
+    ```
 
-   - If you select a consumer **Type** of **Command**, the wizard uses the `db_source` and `db_command` attributes, and uses `db_column` to create the column map. For example, it creates this map:
+  - If you select a consumer **Type** of **Command**, the wizard uses the `db_source` and `db_command` attributes, and uses `db_column` to create the column map. For example, it creates this map:
 
-        ```cpp
-        [db_source("<initialization_string>"), db_command("SQL_command")]
-        ...
-        // Column map using db_column is the same as for consumer type of 'table'
-        ```
+    ```cpp
+    [db_source("<initialization_string>"), db_command("SQL_command")]
+    ...
+    // Column map using db_column is the same as for consumer type of 'table'
+    ```
 
-      instead of using the command and command accessor class declarations in the command class' .h file, for example:
+     instead of using the command and command accessor class declarations in the command class' .h file, for example:
 
-        ```cpp
-        // Command accessor class:
-            class CListOrdersAccessor;
-        // Command class:
-            class CListOrders : public CCommand<CAccessor<CListOrdersAccessor>>;
-        // ...
-        // Column map using BEGIN_COLUMN_MAP ... END_COLUMN_MAP is the same as
-        // for consumer type of 'table'
-        ```
+    ```cpp
+    // Command accessor class:
+        class CListOrdersAccessor;
+    // Command class:
+        class CListOrders : public CCommand<CAccessor<CListOrdersAccessor>>;
+    // ...
+    // Column map using BEGIN_COLUMN_MAP ... END_COLUMN_MAP is the same as
+    // for consumer type of 'table'
+    ```
 
-      See [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.
+     See [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.
 
 - **Type**
 
    Select one of these radio buttons to specify whether the consumer class will be derived from `CTable` or `CCommand` (default).
 
-   - **Table**
+  - **Table**
 
       Select this option if you want to use `CTable` or `db_table` to create the table and table accessor class declarations.
 
-   - **Command**
+  - **Command**
 
       Select this option if you want to use `CCommand` or `db_command` to create the command and command accessor class declarations. This is the default selection.
 
@@ -166,15 +166,15 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
    Select the check boxes to specify the kinds of updates to be supported in the consumer (the default is none). Each of the following will set [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892(v=vs.85)) and the appropriate entries for [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676(v=vs.85)) in the property set map.
 
-   - **Change**
+  - **Change**
 
       Specifies that the consumer support updates of row data in the rowset.
 
-   - **Insert**
+  - **Insert**
 
       Specifies that the consumer support insertion of rows into the rowset.
 
-   - **Delete**
+  - **Delete**
 
       Specifies that the consumer support deletion of rows from the rowset.
 

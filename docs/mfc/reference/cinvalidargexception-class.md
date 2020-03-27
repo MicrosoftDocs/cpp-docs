@@ -43,7 +43,7 @@ For more information on Exception Handling, see the [CException Class](../../mfc
 
 **Header:** afx.h
 
-##  <a name="cinvalidargexception"></a>  CInvalidArgException::CInvalidArgException
+## <a name="cinvalidargexception"></a> CInvalidArgException::CInvalidArgException
 
 The constructor.
 

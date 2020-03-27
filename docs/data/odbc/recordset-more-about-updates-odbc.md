@@ -17,13 +17,13 @@ This topic explains:
 - [More about the Update and Delete member functions](#_core_more_about_update_and_delete).
 
 > [!NOTE]
->  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you have implemented bulk row fetching, some of the information does not apply. For example, you cannot call the `AddNew`, `Edit`, `Delete`, and `Update` member functions; however, you can perform transactions. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you have implemented bulk row fetching, some of the information does not apply. For example, you cannot call the `AddNew`, `Edit`, `Delete`, and `Update` member functions; however, you can perform transactions. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="_core_how_other_operations_affect_updates"></a> How Other Operations Affect Updates
+## <a name="_core_how_other_operations_affect_updates"></a> How Other Operations Affect Updates
 
 Your updates are affected by transactions in effect at the time of the update, by closing the recordset before completing a transaction, and by scrolling before completing a transaction.
 
-###  <a name="_core_how_transactions_affect_updates"></a> How Transactions Affect Updates
+### <a name="_core_how_transactions_affect_updates"></a> How Transactions Affect Updates
 
 Beyond understanding how `AddNew`, `Edit`, and `Delete` work, it is important to understand how the `BeginTrans`, `CommitTrans`, and `Rollback` member functions of [CDatabase](../../mfc/reference/cdatabase-class.md) work with the update functions of [CRecordset](../../mfc/reference/crecordset-class.md).
 
@@ -31,18 +31,18 @@ By default, calls to `AddNew` and `Edit` affect the data source immediately when
 
 For more information about transactions, see [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).
 
-###  <a name="_core_how_closing_the_recordset_affects_updates"></a> How Closing the Recordset Affects Updates
+### <a name="_core_how_closing_the_recordset_affects_updates"></a> How Closing the Recordset Affects Updates
 
 If you close a recordset, or its associated `CDatabase` object, with a transaction in progress (you have not called [CDatabase::CommitTrans](../../mfc/reference/cdatabase-class.md#committrans) or [CDatabase::Rollback](../../mfc/reference/cdatabase-class.md#rollback)), the transaction is rolled back automatically (unless your database backend is the Microsoft Jet database engine).
 
 > [!CAUTION]
->  If you are using the Microsoft Jet database engine, closing a recordset inside an explicit transaction does not result in releasing any of the rows that were modified or locks that were placed until the explicit transaction is committed or rolled back. It is recommended that you always both open and close recordsets inside or outside of an explicit Jet transaction.
+> If you are using the Microsoft Jet database engine, closing a recordset inside an explicit transaction does not result in releasing any of the rows that were modified or locks that were placed until the explicit transaction is committed or rolled back. It is recommended that you always both open and close recordsets inside or outside of an explicit Jet transaction.
 
-###  <a name="_core_how_scrolling_affects_updates"></a> How Scrolling Affects Updates
+### <a name="_core_how_scrolling_affects_updates"></a> How Scrolling Affects Updates
 
 When you [Recordset: Scrolling (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) in a recordset, the edit buffer is filled with each new current record (the previous record is not stored first). Scrolling skips over records previously deleted. If you scroll after an `AddNew` or `Edit` call without calling `Update`, `CommitTrans`, or `Rollback` first, any changes are lost (with no warning to you) as a new record is brought into the edit buffer. The edit buffer is filled with the record scrolled to, the stored record is freed, and no change occurs on the data source. This applies to both `AddNew` and `Edit`.
 
-##  <a name="_core_your_updates_and_the_updates_of_other_users"></a> Your Updates and the Updates of Other Users
+## <a name="_core_your_updates_and_the_updates_of_other_users"></a> Your Updates and the Updates of Other Users
 
 When you use a recordset to update data, your updates affect other users. Similarly, the updates of other users during the lifetime of your recordset affect you.
 
@@ -51,11 +51,11 @@ In a multiuser environment, other users can open recordsets that contain some of
 Records added by other users after you open the recordset do not show up in your recordset unless you requery. If your recordset is a dynaset, edits to existing records by other users do show up in your dynaset when you scroll to the affected record. If your recordset is a snapshot, edits do not show up until you requery the snapshot. If you want to see records added or deleted by other users in your snapshot, or records added by other users in your dynaset, call [CRecordset::Requery](../../mfc/reference/crecordset-class.md#requery) to rebuild the recordset. (Note that the deletions of other users show up in your dynaset.) You might also call `Requery` to see records you add, but not to see your deletions.
 
 > [!TIP]
->  To force caching of an entire snapshot at once, call `MoveLast` immediately after you open the snapshot. Then call `MoveFirst` to begin working with the records. `MoveLast` is equivalent to scrolling over all the records, but it retrieves them all at once. Note, however, that this can lower performance and might not be required for some drivers.
+> To force caching of an entire snapshot at once, call `MoveLast` immediately after you open the snapshot. Then call `MoveFirst` to begin working with the records. `MoveLast` is equivalent to scrolling over all the records, but it retrieves them all at once. Note, however, that this can lower performance and might not be required for some drivers.
 
 The effects of your updates on other users are similar to their effects on you.
 
-##  <a name="_core_more_about_update_and_delete"></a> More About Update and Delete
+## <a name="_core_more_about_update_and_delete"></a> More About Update and Delete
 
 This section provides additional information to help you work with `Update` and `Delete`.
 

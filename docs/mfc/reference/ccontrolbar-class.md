@@ -77,7 +77,7 @@ For more information on `CControlBar`, see:
 
 **Header:** afxext.h
 
-##  <a name="calcdynamiclayout"></a>  CControlBar::CalcDynamicLayout
+## <a name="calcdynamiclayout"></a> CControlBar::CalcDynamicLayout
 
 The framework calls this member function to calculate the dimensions of a dynamic toolbar.
 
@@ -113,7 +113,7 @@ The control bar size, in pixels, of a [CSize](../../atl-mfc-shared/reference/csi
 
 Override this member function to provide your own dynamic layout in classes you derive from `CControlBar`. MFC classes derived from `CControlBar`, such as [CToolbar](../../mfc/reference/ctoolbar-class.md), override this member function and provide their own implementation.
 
-##  <a name="calcfixedlayout"></a>  CControlBar::CalcFixedLayout
+## <a name="calcfixedlayout"></a> CControlBar::CalcFixedLayout
 
 Call this member function to calculate the horizontal size of a control bar.
 
@@ -148,7 +148,7 @@ If *bStretch* is TRUE, stretch the dimension along the orientation provided by *
 |FALSE|TRUE|No stretching available|Horizontally oriented|Docking|
 |FALSE|FALSE|No stretching available|Vertically oriented|Docking|
 
-##  <a name="calcinsiderect"></a>  CControlBar::CalcInsideRect
+## <a name="calcinsiderect"></a> CControlBar::CalcInsideRect
 
 The framework calls this function to calculate the client area of the control bar.
 
@@ -172,7 +172,7 @@ This function is called before the control bar is painted.
 
 Override this function to customize the rendering of the borders and gripper bar of the control bar.
 
-##  <a name="ccontrolbar"></a>  CControlBar::CControlBar
+## <a name="ccontrolbar"></a> CControlBar::CControlBar
 
 Constructs a `CControlBar` object.
 
@@ -180,7 +180,7 @@ Constructs a `CControlBar` object.
 CControlBar();
 ```
 
-##  <a name="dopaint"></a>  CControlBar::DoPaint
+## <a name="dopaint"></a> CControlBar::DoPaint
 
 Called by the framework to render the borders and gripper bar of the control bar.
 
@@ -199,7 +199,7 @@ Override this function to customize the drawing behavior of the control bar.
 
 Another customization method is to override the `DrawBorders` and `DrawGripper` functions and add custom drawing code for the borders and gripper. Because these methods are called by the default `DoPaint` method, an override of `DoPaint` is not needed.
 
-##  <a name="drawborders"></a>  CControlBar::DrawBorders
+## <a name="drawborders"></a> CControlBar::DrawBorders
 
 Called by the framework to render the borders of the control bar.
 
@@ -221,7 +221,7 @@ A `CRect` object containing the dimensions of the control bar.
 
 Override this function to customize the appearance of the control bar borders.
 
-##  <a name="drawgripper"></a>  CControlBar::DrawGripper
+## <a name="drawgripper"></a> CControlBar::DrawGripper
 
 Called by the framework to render the gripper of the control bar.
 
@@ -243,7 +243,7 @@ A `CRect` object containing the dimensions of the control bar gripper.
 
 Override this function to customize the appearance of the control bar gripper.
 
-##  <a name="enabledocking"></a>  CControlBar::EnableDocking
+## <a name="enabledocking"></a> CControlBar::EnableDocking
 
 Call this function to enable a control bar to be docked.
 
@@ -274,7 +274,7 @@ If 0 (that is, indicating no flags), the control bar will not dock.
 
 The sides specified must match one of the sides enabled for docking in the destination frame window, or the control bar cannot be docked to that frame window.
 
-##  <a name="getbarstyle"></a>  CControlBar::GetBarStyle
+## <a name="getbarstyle"></a> CControlBar::GetBarStyle
 
 Call this function to determine which **CBRS_** (control bar styles) settings are currently set for the control bar.
 
@@ -290,7 +290,7 @@ The current **CBRS_** (control bar styles) settings for the control bar. See [CC
 
 Does not handle **WS_** (window style) styles.
 
-##  <a name="getborders"></a>  CControlBar::GetBorders
+## <a name="getborders"></a> CControlBar::GetBorders
 
 Returns the current border values for the control bar.
 
@@ -302,7 +302,7 @@ CRect GetBorders() const;
 
 A `CRect` object that contains the current width (in pixels) of each side of the control bar object. For example, the value of the *left* member, of [CRect](../../atl-mfc-shared/reference/crect-class.md) object, is the width of the left hand border.
 
-##  <a name="getcount"></a>  CControlBar::GetCount
+## <a name="getcount"></a> CControlBar::GetCount
 
 Returns the number of non- HWND items on the `CControlBar` object.
 
@@ -318,7 +318,7 @@ The number of non- HWND items on the `CControlBar` object. This function returns
 
 The type of the item depends on the derived object: panes for [CStatusBar](../../mfc/reference/cstatusbar-class.md) objects, and buttons and separators for [CToolBar](../../mfc/reference/ctoolbar-class.md) objects.
 
-##  <a name="getdockingframe"></a>  CControlBar::GetDockingFrame
+## <a name="getdockingframe"></a> CControlBar::GetDockingFrame
 
 Call this member function to obtain a pointer to the current frame window to which your control bar is docked.
 
@@ -336,7 +336,7 @@ If the control bar is not docked to a frame window (that is, if the control bar 
 
 For more information about dockable control bars, see [CControlBar::EnableDocking](#enabledocking) and [CFrameWnd::DockControlBar](../../mfc/reference/cframewnd-class.md#dockcontrolbar).
 
-##  <a name="isfloating"></a>  CControlBar::IsFloating
+## <a name="isfloating"></a> CControlBar::IsFloating
 
 Call this member function to determine whether the control bar is floating or docked.
 
@@ -352,7 +352,7 @@ Nonzero if the control bar is floating; otherwise 0.
 
 To change the state of a control bar from docked to floating, call [CFrameWnd::FloatControlBar](../../mfc/reference/cframewnd-class.md#floatcontrolbar).
 
-##  <a name="m_bautodelete"></a>  CControlBar::m_bAutoDelete
+## <a name="m_bautodelete"></a> CControlBar::m_bAutoDelete
 
 If nonzero, the `CControlBar` object is deleted when the Windows control bar is destroyed.
 
@@ -368,7 +368,7 @@ A control-bar object is usually embedded in a frame-window object. In this case,
 
 Set this variable to a nonzero value if you allocate a `CControlBar` object on the heap and you do not plan to call **delete**.
 
-##  <a name="m_pinplaceowner"></a>  CControlBar::m_pInPlaceOwner
+## <a name="m_pinplaceowner"></a> CControlBar::m_pInPlaceOwner
 
 The in-place owner of the control bar.
 
@@ -376,7 +376,7 @@ The in-place owner of the control bar.
 CWnd* m_pInPlaceOwner;
 ```
 
-##  <a name="onupdatecmdui"></a>  CControlBar::OnUpdateCmdUI
+## <a name="onupdatecmdui"></a> CControlBar::OnUpdateCmdUI
 
 This member function is called by the framework to update the status of the toolbar or status bar.
 
@@ -400,7 +400,7 @@ To update an individual button or pane, use the ON_UPDATE_COMMAND_UI macro in yo
 
 `OnUpdateCmdUI` is called by the framework when the application is idle. The frame window to be updated must be a child window, at least indirectly, of a visible frame window. `OnUpdateCmdUI` is an advanced overridable.
 
-##  <a name="setbarstyle"></a>  CControlBar::SetBarStyle
+## <a name="setbarstyle"></a> CControlBar::SetBarStyle
 
 Call this function to set the desired **CBRS_** styles for the control bar.
 
@@ -443,7 +443,7 @@ The desired styles for the control bar. Can be one or more of the following:
 
 Does not affect the **WS_** (window style) settings.
 
-##  <a name="setborders"></a>  CControlBar::SetBorders
+## <a name="setborders"></a> CControlBar::SetBorders
 
 Call this function to set the size of the control bar's borders.
 
@@ -480,7 +480,7 @@ The following code example sets the top and bottom borders of the control bar to
 
 [!code-cpp[NVC_MFCControlLadenDialog#61](../../mfc/codesnippet/cpp/ccontrolbar-class_1.cpp)]
 
-##  <a name="setinplaceowner"></a>  CControlBar::SetInPlaceOwner
+## <a name="setinplaceowner"></a> CControlBar::SetInPlaceOwner
 
 Changes the in-place owner of a control bar.
 

@@ -82,7 +82,7 @@ An iterator that specifies the first element in the map view.
 
 A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myMapView->First();`.
 
-## <a name="haskey"></a>  MapView::HasKey Method
+## <a name="haskey"></a> MapView::HasKey Method
 
 Determines whether the current MapView contains the specified key.
 
@@ -102,7 +102,7 @@ The key used to locate the MapView element. The type of *key* is typename *K*.
 
 **true** if the key is found; otherwise, **false**.
 
-##  <a name="lookup"></a> MapView::Lookup Method
+## <a name="lookup"></a> MapView::Lookup Method
 
 Retrieves the value of type V that is associated with the specified key of type K.
 
@@ -121,7 +121,7 @@ The key used to locate an element in the MapView. The type of `key` is typename 
 
 The value that is paired with the `key`. The type of the return value is typename *V*.
 
-##  <a name="ctor"></a> MapView::MapView Constructor
+## <a name="ctor"></a> MapView::MapView Constructor
 
 Initializes a new instance of the MapView class.
 
@@ -164,7 +164,7 @@ The input iterator of the first element after a range of elements used to initia
 *il*<br/>
 A [std::initializer_list<std::pair\<K,V>>](../standard-library/initializer-list-class.md) whose elements will be inserted into the MapView.
 
-##  <a name="size"></a> MapView::Size Method
+## <a name="size"></a> MapView::Size Method
 
 Returns the number of elements in the current MapView object.
 
@@ -178,7 +178,7 @@ virtual property unsigned int Size;
 
 The number of elements in the current MapView.
 
-##  <a name="split"></a> MapView::Split Method
+## <a name="split"></a> MapView::Split Method
 
 Divides the current MapView object into two MapView objects. This method is non-operational.
 

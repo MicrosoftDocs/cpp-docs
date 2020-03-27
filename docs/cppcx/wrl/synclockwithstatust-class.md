@@ -67,7 +67,7 @@ Name                                    | Description
 
 **Namespace:** Microsoft::WRL::Wrappers::Details
 
-## <a name="getstatus"></a>SyncLockWithStatusT::GetStatus
+## <a name="getstatus"></a> SyncLockWithStatusT::GetStatus
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -85,7 +85,7 @@ Retrieves the wait status of the current `SyncLockWithStatusT` object.
 
 The GetStatus() function retrieves the value of the underlying [status_](#status) data member. When an object based on the `SyncLockWithStatusT` class performs a lock operation, the object first waits for the object to become available. The result of that wait operation is stored in the `status_` data member. The possible values of the `status_` data member are the return values of the wait operation. For more information, see the return values of the `WaitForSingleObjectEx()` function in the MSDN Library.
 
-## <a name="islocked"></a>SyncLockWithStatusT::IsLocked
+## <a name="islocked"></a> SyncLockWithStatusT::IsLocked
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -101,7 +101,7 @@ Indicates whether the current `SyncLockWithStatusT` object owns a resource; that
 
 **true** if the `SyncLockWithStatusT` object is locked; otherwise, **false**.
 
-## <a name="status"></a>SyncLockWithStatusT::status_
+## <a name="status"></a> SyncLockWithStatusT::status_
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -113,7 +113,7 @@ DWORD status_;
 
 Holds the result of the underlying wait operation after a lock operation on an object based on the current `SyncLockWithStatusT` object.
 
-## <a name="synclockwithstatust"></a>SyncLockWithStatusT::SyncLockWithStatusT
+## <a name="synclockwithstatust"></a> SyncLockWithStatusT::SyncLockWithStatusT
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

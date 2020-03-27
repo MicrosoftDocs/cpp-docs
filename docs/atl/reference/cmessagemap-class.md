@@ -10,7 +10,7 @@ ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
 This class allows an object's message maps to be access by another object.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -42,7 +42,7 @@ For more information about message maps, see [Message Maps](../../atl/message-ma
 
 **Header:** atlwin.h
 
-##  <a name="processwindowmessage"></a>  CMessageMap::ProcessWindowMessage
+## <a name="processwindowmessage"></a> CMessageMap::ProcessWindowMessage
 
 Accesses the message map identified by *dwMsgMapID* in a `CMessageMap`-derived class.
 

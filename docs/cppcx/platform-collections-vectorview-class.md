@@ -57,7 +57,7 @@ The `VectorView` class implements the [Windows::Foundation::Collections::IVector
 
 **Namespace:** Platform::Collections
 
-## <a name="first"></a>  VectorView::First Method
+## <a name="first"></a> VectorView::First Method
 
 Returns an iterator that specifies the first element in the VectorView.
 
@@ -77,7 +77,7 @@ An iterator that specifies the first element in the VectorView.
 
 A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myVectorView->First();`.
 
-## <a name="getat"></a>  VectorView::GetAt Method
+## <a name="getat"></a> VectorView::GetAt Method
 
 Retrieves the element of the current VectorView that is indicated by the specified index.
 
@@ -99,7 +99,7 @@ A zero-based, unsigned integer that specifies a particular element in the Vector
 
 The element specified by the `index` parameter. The element type is specified by the VectorView template parameter, *T*.
 
-## <a name="getmany"></a>  VectorView::GetMany Method
+## <a name="getmany"></a> VectorView::GetMany Method
 
 Retrieves a sequence of items from the current VectorView, starting at the specified index.
 
@@ -125,7 +125,7 @@ When this operation completes, an array of items that begin at the element speci
 
 The number of items retrieved.
 
-## <a name="indexof"></a>  VectorView::IndexOf Method
+## <a name="indexof"></a> VectorView::IndexOf Method
 
 Searches for the specified item in the current VectorView, and if found, returns the index of the item.
 
@@ -153,7 +153,7 @@ The *index* parameter is 0 if either the item is the first element of the `Vecto
 
 **true** if the specified item is found; otherwise, **false**.
 
-## <a name="size"></a>  VectorView::Size Method
+## <a name="size"></a> VectorView::Size Method
 
 Returns the number of elements in the current VectorView object.
 
@@ -168,7 +168,7 @@ virtual property unsigned int Size;
 
 The number of elements in the current VectorView.
 
-## <a name="ctor"></a>  VectorView::VectorView Constructor
+## <a name="ctor"></a> VectorView::VectorView Constructor
 
 Initializes a new instance of the VectorView class.
 

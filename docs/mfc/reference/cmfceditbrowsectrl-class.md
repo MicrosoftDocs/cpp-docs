@@ -101,7 +101,7 @@ The following example demonstrates how to use two methods in the `CMFCEditBrowse
 
 **Header:** afxeditbrowsectrl.h
 
-##  <a name="enablebrowsebutton"></a>  CMFCEditBrowseCtrl::EnableBrowseButton
+## <a name="enablebrowsebutton"></a> CMFCEditBrowseCtrl::EnableBrowseButton
 
 Displays or does not display the browse button on the current edit browse control.
 
@@ -125,7 +125,7 @@ If the *bEnable* parameter is TRUE, implement a custom action to perform when th
 
 If the *bEnable* parameter is TRUE, the browse mode of the control is `BrowseMode_Default`; otherwise, the browse mode is `BrowseMode_None`. For more information about browse modes, see the [GetMode](#getmode) method.
 
-##  <a name="enablefilebrowsebutton"></a>  CMFCEditBrowseCtrl::EnableFileBrowseButton
+## <a name="enablefilebrowsebutton"></a> CMFCEditBrowseCtrl::EnableFileBrowseButton
 
 Displays the browse button on the current edit browse control and puts the control in *file browse* mode.
 
@@ -153,7 +153,7 @@ When the edit browse control is in file browse mode and the user clicks the brow
 
 For a full list of available flags, see [OPENFILENAME structure](/windows/win32/api/commdlg/ns-commdlg-openfilenamew).
 
-##  <a name="enablefolderbrowsebutton"></a>  CMFCEditBrowseCtrl::EnableFolderBrowseButton
+## <a name="enablefolderbrowsebutton"></a> CMFCEditBrowseCtrl::EnableFolderBrowseButton
 
 Displays the browse button on the current edit browse control and puts the control in *folder browse* mode.
 
@@ -165,7 +165,7 @@ void EnableFolderBrowseButton();
 
 When the edit browse control is in folder browse mode and the user clicks the browse button, the control displays the standard folder selection dialog box.
 
-##  <a name="getmode"></a>  CMFCEditBrowseCtrl::GetMode
+## <a name="getmode"></a> CMFCEditBrowseCtrl::GetMode
 
 Retrieves the browse mode of the current edit browse control.
 
@@ -190,7 +190,7 @@ The following table lists the possible return values.
 
 By default, a `CMFCEditBrowseCtrl` object is initialized to `BrowseMode_None` mode. Modify the browse mode with the [CMFCEditBrowseCtrl::EnableBrowseButton](#enablebrowsebutton), [CMFCEditBrowseCtrl::EnableFileBrowseButton](#enablefilebrowsebutton), and [CMFCEditBrowseCtrl::EnableFolderBrowseButton](#enablefolderbrowsebutton) methods.
 
-##  <a name="onafterupdate"></a>  CMFCEditBrowseCtrl::OnAfterUpdate
+## <a name="onafterupdate"></a> CMFCEditBrowseCtrl::OnAfterUpdate
 
 Called by the framework after the edit browse control is updated with the result of a browse action.
 
@@ -202,7 +202,7 @@ virtual void OnAfterUpdate();
 
 Override this method in a derived class to implement a custom action.
 
-##  <a name="onbrowse"></a>  CMFCEditBrowseCtrl::OnBrowse
+## <a name="onbrowse"></a> CMFCEditBrowseCtrl::OnBrowse
 
 Called by the framework after the user clicks the browse button of the edit browse control.
 
@@ -214,7 +214,7 @@ virtual void OnBrowse();
 
 Use this method to execute custom code when the user clicks the browse button of the edit browse control. Derive your own class from the `CMFCEditBrowseCtrl` class and override its `OnBrowse` method. In that method, implement a custom browse action and optionally update the text box of the edit browse control. In your application, use the [EnableBrowseButton](#enablebrowsebutton) method to put the edit browse control in *custom browse* mode.
 
-##  <a name="onchangelayout"></a>  CMFCEditBrowseCtrl::OnChangeLayout
+## <a name="onchangelayout"></a> CMFCEditBrowseCtrl::OnChangeLayout
 
 Redraws the current edit browse control.
 
@@ -226,7 +226,7 @@ virtual void OnChangeLayout();
 
 The framework calls this method when the browse mode of the edit browse control changes. For more information, see [CMFCEditBrowseCtrl::GetMode](#getmode).
 
-##  <a name="ondrawbrowsebutton"></a>  CMFCEditBrowseCtrl::OnDrawBrowseButton
+## <a name="ondrawbrowsebutton"></a> CMFCEditBrowseCtrl::OnDrawBrowseButton
 
 Called by the framework to draw the browse button on the edit browse control.
 
@@ -256,7 +256,7 @@ TRUE if the button is highlighted; otherwise, FALSE.
 
 Override this function in a derived class to customize the appearance of the browse button.
 
-##  <a name="setbrowsebuttonimage"></a>  CMFCEditBrowseCtrl::SetBrowseButtonImage
+## <a name="setbrowsebuttonimage"></a> CMFCEditBrowseCtrl::SetBrowseButtonImage
 
 Sets a custom image on the browse button of the edit browse control.
 
@@ -290,7 +290,7 @@ TRUE to delete the specified icon or bitmap when this method exits; otherwise, F
 
 Use this method to apply a custom image to the browse button. By default, the framework obtains a standard image when the edit browse control is in *file browse* or *folder browse* mode.
 
-##  <a name="onillegalfilename"></a>  CMFCEditBrowseCtrl::OnIllegalFileName
+## <a name="onillegalfilename"></a> CMFCEditBrowseCtrl::OnIllegalFileName
 
 Called by the framework when an illegal file name was entered in the edit control.
 

@@ -13,7 +13,7 @@ There are two ways to add a dialog box to your ATL project: use the ATL Dialog W
 In the [Add Class dialog box](../ide/add-class-dialog-box.md), select the ATL Dialog object to add a dialog box to your ATL project. Fill in the ATL Dialog Wizard as appropriate and click **Finish**. The wizard adds a class derived from [CAxDialogImpl](../atl/reference/caxdialogimpl-class.md) to your project. Open **Resource View** from the **View** menu, locate your dialog, and double-click it to open it in the resource editor.
 
 > [!NOTE]
->  If your dialog box is derived from `CAxDialogImpl`, it can host both ActiveX and Windows controls. If you don't want the overhead of ActiveX control support in your dialog box class, use [CSimpleDialog](../atl/reference/csimpledialog-class.md) or [CDialogImpl](../atl/reference/cdialogimpl-class.md) instead.
+> If your dialog box is derived from `CAxDialogImpl`, it can host both ActiveX and Windows controls. If you don't want the overhead of ActiveX control support in your dialog box class, use [CSimpleDialog](../atl/reference/csimpledialog-class.md) or [CDialogImpl](../atl/reference/cdialogimpl-class.md) instead.
 
 Message and event handlers can be added to your dialog class from Class View. For more information, see [Adding an ATL Message Handler](../atl/adding-an-atl-message-handler.md).
 
@@ -22,7 +22,7 @@ Message and event handlers can be added to your dialog class from Class View. Fo
 Implementing a dialog box is similar to implementing a window. You derive a class from either [CAxDialogImpl](../atl/reference/caxdialogimpl-class.md), [CDialogImpl](../atl/reference/cdialogimpl-class.md), or [CSimpleDialog](../atl/reference/csimpledialog-class.md) and declare a [message map](../atl/message-maps-atl.md) to handle messages. However, you must also specify a dialog template resource ID in your derived class. Your class must have a data member called `IDD` to hold this value.
 
 > [!NOTE]
->  When you create a dialog box using the ATL Dialog Wizard, the wizard automatically adds the `IDD` member as an **enum** type.
+> When you create a dialog box using the ATL Dialog Wizard, the wizard automatically adds the `IDD` member as an **enum** type.
 
 `CDialogImpl` allows you to implement a modal or a modeless dialog box that hosts Windows controls. `CAxDialogImpl` allows you to implement a modal or a modeless dialog box that hosts both ActiveX and Windows controls.
 

@@ -65,7 +65,7 @@ Provides information about the COM functionality for the object.
    Sets the name of the component class that contains a list of interfaces supported by the object.
 
 > [!NOTE]
->  If you create your project using attributes, or if you indicate on this wizard page that the COM+ 1.0 component uses attributes, you cannot change this option because ATL does not include the `coclass` attribute.
+> If you create your project using attributes, or if you indicate on this wizard page that the COM+ 1.0 component uses attributes, you cannot change this option because ATL does not include the `coclass` attribute.
 
 - **Type**
 

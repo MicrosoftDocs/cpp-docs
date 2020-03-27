@@ -90,7 +90,7 @@ For more information, see [Collections](../cppcx/collections-c-cx.md).
 
 **Namespace:** Platform::Collections
 
-## <a name="clear"></a>  Map::Clear Method
+## <a name="clear"></a> Map::Clear Method
 
 Removes all key-value pairs from the current Map object.
 
@@ -100,7 +100,7 @@ Removes all key-value pairs from the current Map object.
 virtual void Clear();
 ```
 
-## <a name="first"></a>  Map::First Method
+## <a name="first"></a> Map::First Method
 
 Returns an iterator that specifies the first element in the map, or `nullptr` if the map is empty.
 
@@ -119,7 +119,7 @@ An iterator that specifies the first element in the map.
 
 A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myMap->First();`.
 
-## <a name="getview"></a>  Map::GetView Method
+## <a name="getview"></a> Map::GetView Method
 
 Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface.
 
@@ -133,7 +133,7 @@ Windows::Foundation::Collections::IMapView<K, V>^ GetView();
 
 A `MapView` object.
 
-## <a name="haskey"></a>  Map::HasKey Method
+## <a name="haskey"></a> Map::HasKey Method
 
 Determines whether the current Map contains the specified key.
 
@@ -152,7 +152,7 @@ The key used to locate the Map element. The type of *key* is typename *K*.
 
 **true** if the key is found; otherwise, **false**.
 
-## <a name="insert"></a>  Map::Insert Method
+## <a name="insert"></a> Map::Insert Method
 
 Adds the specified key-value pair to the current Map object.
 
@@ -174,7 +174,7 @@ The value portion of the key-value pair. The type of *value* is typename *V*.
 
 **true** if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. **false** if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current Map.
 
-## <a name="lookup"></a>  Map::Lookup Method
+## <a name="lookup"></a> Map::Lookup Method
 
 Retrieves the value of type V that is associated with the specified key of type K, if the key exists.
 
@@ -197,7 +197,7 @@ The value that is paired with the *key*. The type of the return value is typenam
 
 If the key does not exist, then a [Platform::OutOfBoundsException](../cppcx/platform-outofboundsexception-class.md) is thrown.
 
-## <a name="ctor"></a>  Map::Map Constructor
+## <a name="ctor"></a> Map::Map Constructor
 
 Initializes a new instance of the Map class.
 
@@ -231,7 +231,7 @@ The input iterator of the first element in a range of elements used to initializ
 *last*<br/>
 The input iterator of the first element after a range of elements used to initialize the current Map.
 
-## <a name="mapchanged"></a>  Map::MapChanged Event
+## <a name="mapchanged"></a> Map::MapChanged Event
 
 Raised when an item is inserted into or removed from the map.
 
@@ -249,7 +249,7 @@ A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchan
 
 Windows Runtime apps that use C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.
 
-## <a name="remove"></a>  Map::Remove Method
+## <a name="remove"></a> Map::Remove Method
 
 Deletes the specified key-value pair from the current Map object.
 
@@ -264,7 +264,7 @@ virtual void Remove(K key);
 *key*<br/>
 The key portion of the key-value pair. The type of *key* is typename *K*.
 
-## <a name="size"></a>  Map::Size Method
+## <a name="size"></a> Map::Size Method
 
 Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) elements in the Map.
 

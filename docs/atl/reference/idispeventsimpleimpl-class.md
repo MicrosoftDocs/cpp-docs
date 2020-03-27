@@ -10,7 +10,7 @@ ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
 This class provides implementations of the `IDispatch` methods, without getting type information from a type library.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -82,7 +82,7 @@ For more information, see [Supporting IDispEventImpl](../../atl/supporting-idisp
 
 **Header:** atlcom.h
 
-##  <a name="advise"></a>  IDispEventSimpleImpl::Advise
+## <a name="advise"></a> IDispEventSimpleImpl::Advise
 
 Call this method to establish a connection with the event source represented by *pUnk*.
 
@@ -104,11 +104,11 @@ S_OK or any failure HRESULT value.
 Once the connection is established, events fired from *pUnk* will be routed to handlers in your class by way of the event sink map.
 
 > [!NOTE]
->  If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.
+> If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.
 
 `Advise` establishes a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface).
 
-##  <a name="dispeventadvise"></a>  IDispEventSimpleImpl::DispEventAdvise
+## <a name="dispeventadvise"></a> IDispEventSimpleImpl::DispEventAdvise
 
 Call this method to establish a connection with the event source represented by *pUnk*.
 
@@ -133,11 +133,11 @@ S_OK or any failure HRESULT value.
 Subsequently, events fired from *pUnk* will be routed to handlers in your class by way of the event sink map.
 
 > [!NOTE]
->  If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.
+> If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.
 
 `DispEventAdvise` establishes a connection with the event source specified in `pdiid`.
 
-##  <a name="dispeventunadvise"></a>  IDispEventSimpleImpl::DispEventUnadvise
+## <a name="dispeventunadvise"></a> IDispEventSimpleImpl::DispEventUnadvise
 
 Breaks the connection with the event source represented by *pUnk*.
 
@@ -162,11 +162,11 @@ S_OK or any failure HRESULT value.
 Once the connection is broken, events will no longer be routed to the handler functions listed in the event sink map.
 
 > [!NOTE]
->  If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.
+> If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.
 
 `DispEventAdvise` breaks a connection that was established with the event source specified in `pdiid`.
 
-##  <a name="getidsofnames"></a>  IDispEventSimpleImpl::GetIDsOfNames
+## <a name="getidsofnames"></a> IDispEventSimpleImpl::GetIDsOfNames
 
 This implementation of `IDispatch::GetIDsOfNames` returns E_NOTIMPL.
 
@@ -183,7 +183,7 @@ STDMETHOD(GetIDsOfNames)(
 
 See [IDispatch::GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.
 
-##  <a name="gettypeinfo"></a>  IDispEventSimpleImpl::GetTypeInfo
+## <a name="gettypeinfo"></a> IDispEventSimpleImpl::GetTypeInfo
 
 This implementation of `IDispatch::GetTypeInfo` returns E_NOTIMPL.
 
@@ -198,7 +198,7 @@ STDMETHOD(GetTypeInfo)(
 
 See [IDispatch::GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) in the Windows SDK.
 
-##  <a name="gettypeinfocount"></a>  IDispEventSimpleImpl::GetTypeInfoCount
+## <a name="gettypeinfocount"></a> IDispEventSimpleImpl::GetTypeInfoCount
 
 This implementation of `IDispatch::GetTypeInfoCount` returns E_NOTIMPL.
 
@@ -210,7 +210,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
 
 See [IDispatch::GetTypeInfoCount](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.
 
-##  <a name="invoke"></a>  IDispEventSimpleImpl::Invoke
+## <a name="invoke"></a> IDispEventSimpleImpl::Invoke
 
 This implementation of `IDispatch::Invoke` calls the event handlers listed in the event sink map.
 
@@ -230,7 +230,7 @@ STDMETHOD(Invoke)(
 
 See [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
 
-##  <a name="unadvise"></a>  IDispEventSimpleImpl::Unadvise
+## <a name="unadvise"></a> IDispEventSimpleImpl::Unadvise
 
 Breaks the connection with the event source represented by *pUnk*.
 
@@ -252,7 +252,7 @@ S_OK or any failure HRESULT value.
 Once the connection is broken, events will no longer be routed to the handler functions listed in the event sink map.
 
 > [!NOTE]
->  If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.
+> If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.
 
 `Unadvise` breaks a connection that was established with the default event source specified in `pdiid`.
 

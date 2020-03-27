@@ -43,7 +43,7 @@ For more information on `CMemoryException`, see the article [Exception Handling 
 
 **Header:** afx.h
 
-##  <a name="cmemoryexception"></a>  CMemoryException::CMemoryException
+## <a name="cmemoryexception"></a> CMemoryException::CMemoryException
 
 Constructs a `CMemoryException` object.
 

@@ -68,12 +68,12 @@ If you need a dump of individual `CObject` elements in an array, you must set th
 When a `CObArray` object is deleted, or when its elements are removed, only the `CObject` pointers are removed, not the objects they reference.
 
 > [!NOTE]
->  Before using an array, use `SetSize` to establish its size and allocate memory for it. If you do not use `SetSize`, adding elements to your array causes it to be frequently reallocated and copied. Frequent reallocation and copying are inefficient and can fragment memory.
+> Before using an array, use `SetSize` to establish its size and allocate memory for it. If you do not use `SetSize`, adding elements to your array causes it to be frequently reallocated and copied. Frequent reallocation and copying are inefficient and can fragment memory.
 
 Array class derivation is similar to list derivation. For details on the derivation of a special-purpose list class, see the article [Collections](../../mfc/collections.md).
 
 > [!NOTE]
->  You must use the IMPLEMENT_SERIAL macro in the implementation of your derived class if you intend to serialize the array.
+> You must use the IMPLEMENT_SERIAL macro in the implementation of your derived class if you intend to serialize the array.
 
 ## Inheritance Hierarchy
 
@@ -85,7 +85,7 @@ Array class derivation is similar to list derivation. For details on the derivat
 
 **Header:** afxcoll.h
 
-##  <a name="add"></a>  CObArray::Add
+## <a name="add"></a> CObArray::Add
 
 Adds a new element to the end of an array, growing the array by 1.
 
@@ -131,7 +131,7 @@ Add example: A CObArray with 2 elements
 [1] = a CAge at $4468 40
 ```
 
-##  <a name="append"></a>  CObArray::Append
+## <a name="append"></a> CObArray::Append
 
 Call this member function to add the contents of another array to the end of the given array.
 
@@ -171,7 +171,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#76](../../mfc/codesnippet/cpp/cobarray-class_2.cpp)]
 
-##  <a name="copy"></a>  CObArray::Copy
+## <a name="copy"></a> CObArray::Copy
 
 Call this member function to overwrite the elements of the given array with the elements of another array of the same type.
 
@@ -205,7 +205,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#77](../../mfc/codesnippet/cpp/cobarray-class_3.cpp)]
 
-##  <a name="cobarray"></a>  CObArray::CObArray
+## <a name="cobarray"></a> CObArray::CObArray
 
 Constructs an empty `CObject` pointer array.
 
@@ -232,7 +232,7 @@ The following table shows other constructors that are similar to `CObArray::CObA
 
 [!code-cpp[NVC_MFCCollections#78](../../mfc/codesnippet/cpp/cobarray-class_4.cpp)]
 
-##  <a name="elementat"></a>  CObArray::ElementAt
+## <a name="elementat"></a> CObArray::ElementAt
 
 Returns a temporary reference to the element pointer within the array.
 
@@ -268,7 +268,7 @@ The following table shows other member functions that are similar to `CObArray::
 
   See the example for [CObArray::GetSize](#getsize).
 
-##  <a name="freeextra"></a>  CObArray::FreeExtra
+## <a name="freeextra"></a> CObArray::FreeExtra
 
 Frees any extra memory that was allocated while the array was grown.
 
@@ -295,7 +295,7 @@ The following table shows other member functions that are similar to `CObArray::
 
   See the example for [CObArray::GetData](#getdata).
 
-##  <a name="getat"></a>  CObArray::GetAt
+## <a name="getat"></a> CObArray::GetAt
 
 Returns the array element at the specified index.
 
@@ -315,7 +315,7 @@ The `CObject` pointer element currently at this index.
 ### Remarks
 
 > [!NOTE]
->  Passing a negative value or a value greater than the value returned by `GetUpperBound` will result in a failed assertion.
+> Passing a negative value or a value greater than the value returned by `GetUpperBound` will result in a failed assertion.
 
 The following table shows other member functions that are similar to `CObArray::GetAt`.
 
@@ -334,7 +334,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#79](../../mfc/codesnippet/cpp/cobarray-class_5.cpp)]
 
-##  <a name="getcount"></a>  CObArray::GetCount
+## <a name="getcount"></a> CObArray::GetCount
 
 Returns the number of array elements.
 
@@ -367,7 +367,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#80](../../mfc/codesnippet/cpp/cobarray-class_6.cpp)]
 
-##  <a name="getdata"></a>  CObArray::GetData
+## <a name="getdata"></a> CObArray::GetData
 
 Use this member function to gain direct access to the elements in the array.
 
@@ -404,7 +404,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#81](../../mfc/codesnippet/cpp/cobarray-class_7.cpp)]
 
-##  <a name="getsize"></a>  CObArray::GetSize
+## <a name="getsize"></a> CObArray::GetSize
 
 Returns the size of the array.
 
@@ -433,7 +433,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#82](../../mfc/codesnippet/cpp/cobarray-class_8.cpp)]
 
-##  <a name="getupperbound"></a>  CObArray::GetUpperBound
+## <a name="getupperbound"></a> CObArray::GetUpperBound
 
 Returns the current upper bound of this array.
 
@@ -468,7 +468,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#83](../../mfc/codesnippet/cpp/cobarray-class_9.cpp)]
 
-##  <a name="insertat"></a>  CObArray::InsertAt
+## <a name="insertat"></a> CObArray::InsertAt
 
 Inserts an element (or all the elements in another array) at a specified index.
 
@@ -534,7 +534,7 @@ InsertAt example: A CObArray with 3 elements
 [2] = a CAge at $4606 40
 ```
 
-##  <a name="isempty"></a>  CObArray::IsEmpty
+## <a name="isempty"></a> CObArray::IsEmpty
 
 Determines if the array is empty.
 
@@ -546,7 +546,7 @@ BOOL IsEmpty() const;
 
 Nonzero if the array is empty; otherwise 0.
 
-##  <a name="operator_at"></a>  CObArray::operator [ ]
+## <a name="operator_at"></a> CObArray::operator [ ]
 
 These subscript operators are a convenient substitute for the `SetAt` and `GetAt` functions.
 
@@ -578,7 +578,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#88](../../mfc/codesnippet/cpp/cobarray-class_11.cpp)]
 
-##  <a name="removeall"></a>  CObArray::RemoveAll
+## <a name="removeall"></a> CObArray::RemoveAll
 
 Removes all the pointers from this array but does not actually delete the `CObject` objects.
 
@@ -609,7 +609,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCollections#85](../../mfc/codesnippet/cpp/cobarray-class_12.cpp)]
 
-##  <a name="removeat"></a>  CObArray::RemoveAt
+## <a name="removeat"></a> CObArray::RemoveAt
 
 Removes one or more elements starting at a specified index in an array.
 
@@ -659,7 +659,7 @@ RemoveAt example: A CObArray with 1 elements
 [0] = a CAge at $4606 40
 ```
 
-##  <a name="setat"></a>  CObArray::SetAt
+## <a name="setat"></a> CObArray::SetAt
 
 Sets the array element at the specified index.
 
@@ -708,7 +708,7 @@ SetAt example: A CObArray with 2 elements
 [1] = a CAge at $47A0 40
 ```
 
-##  <a name="setatgrow"></a>  CObArray::SetAtGrow
+## <a name="setatgrow"></a> CObArray::SetAtGrow
 
 Sets the array element at the specified index.
 
@@ -757,7 +757,7 @@ SetAtGrow example: A CObArray with 4 elements
 [3] = a CAge at $4840 65
 ```
 
-##  <a name="setsize"></a>  CObArray::SetSize
+## <a name="setsize"></a> CObArray::SetSize
 
 Establishes the size of an empty or existing array; allocates memory if necessary.
 

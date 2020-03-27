@@ -53,7 +53,7 @@ This class is defined in the vccorlib.h header, which is automatically included 
 
 Compiler option: **/ZW**
 
-## <a name="ctor"></a>  Array Constructors
+## <a name="ctor"></a> Array Constructors
 
 Initializes a one-dimensional, modifiable array of types specified by the class template parameter, *T*.
 
@@ -79,7 +79,7 @@ A pointer to an array of data of type `T` that is used to initialize this Array 
 
 For more information about how to create instances of Platform::Array, see [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
-## <a name="get"></a>  Array::get Method
+## <a name="get"></a> Array::get Method
 
 Retrieves a reference to the array element at the specified index location.
 
@@ -98,7 +98,7 @@ A zero-based index that identifies an element in the array. The minimum index is
 
 The array element specified by the `index` parameter.
 
-## <a name="value"></a>  Array::Value Property
+## <a name="value"></a> Array::Value Property
 
 Retrieves a handle to the current array.
 

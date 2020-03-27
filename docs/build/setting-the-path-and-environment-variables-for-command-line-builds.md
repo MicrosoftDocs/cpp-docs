@@ -14,7 +14,7 @@ The MSVC command-line tools use the PATH, TMP, INCLUDE, LIB, and LIBPATH environ
 To see which environment variables are set by a developer command prompt shortcut, you can use the SET command. Open a plain command prompt window and capture the output of the SET command for a baseline. Open a developer command prompt window and capture the output of the SET command for comparison. A diff tool such as the one built into the Visual Studio IDE can be useful to compare the environment variables and see what is set by the developer command prompt. For information about the specific environment variables used by the compiler and linker, see [CL Environment Variables](reference/cl-environment-variables.md).
 
 > [!NOTE]
->  Several command-line tools or tool options may require Administrator permission. If you have permission issues when you use them, we recommend that you open the developer command prompt window by using the **Run as Administrator** option. On Windows 10, right-click to open the shortcut menu for the command prompt window, then choose **More**, **Run as administrator**.
+> Several command-line tools or tool options may require Administrator permission. If you have permission issues when you use them, we recommend that you open the developer command prompt window by using the **Run as Administrator** option. On Windows 10, right-click to open the shortcut menu for the command prompt window, then choose **More**, **Run as administrator**.
 
 ## See also
 

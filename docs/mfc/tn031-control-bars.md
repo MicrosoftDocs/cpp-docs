@@ -8,7 +8,7 @@ ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
 # TN031: Control Bars
 
 > [!NOTE]
->  The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
+> The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
 
 This note describes the control bar classes in MFC: the general [CControlBar](#_mfcnotes_ccontrolbar), [CStatusBar](#_mfcnotes_cstatusbar), [CToolBar](#_mfcnotes_ctoolbar), [CDialogBar](#_mfcnotes_cdialogbar), and `CDockBar`.
 
@@ -51,7 +51,7 @@ The `CControlBar` class gives standard implementation for:
 C++ control bar objects will usually be embedded as members of a `CFrameWnd` derived class, and will be cleaned up when the parent `HWND` and object are destroyed. If you need to allocate a control bar object on the heap, you can simply set the *m_bAutoDestruct* member to **TRUE** to make the control bar "**delete this**" when the `HWND` is destroyed.
 
 > [!NOTE]
->  If you create your own `CControlBar`-derived class, rather than using one of MFC's derived classes, such as `CStatusBar`, `CToolBar`, or `CDialogBar`, you will need to set the *m_dwStyle* data member. This can be done in the override of `Create`:
+> If you create your own `CControlBar`-derived class, rather than using one of MFC's derived classes, such as `CStatusBar`, `CToolBar`, or `CDialogBar`, you will need to set the *m_dwStyle* data member. This can be done in the override of `Create`:
 
 ```
 // CMyControlBar is derived from CControlBar
@@ -75,7 +75,7 @@ See `CWnd::RepositionBars` and `CFrameWnd::RecalcLayout` for more details.
 
 MFC private Windows messages, including WM_SIZEPARENT, are documented in [Technical Note 24](../mfc/tn024-mfc-defined-messages-and-resources.md).
 
-## <a name="_mfcnotes_cstatusbar"></a>  CStatusBar
+## <a name="_mfcnotes_cstatusbar"></a> CStatusBar
 
 A status bar is a control bar that has a row of text output panes. There are two common ways to use text output panes:
 
@@ -112,7 +112,7 @@ Refer to class [CStatusBar](../mfc/reference/cstatusbar-class.md) in the *Class 
 
 The status bar supports only one stretchy pane, usually the first pane. The size of that pane is really a minimum size. If the status bar is bigger than the minimum size of all the panes, any extra width will be given to the stretchy pane. The default application with a status bar has right-aligned indicators for CAP, NUM and SCRL since the first pane is stretchy.
 
-## <a name="_mfcnotes_ctoolbar"></a>  CToolBar
+## <a name="_mfcnotes_ctoolbar"></a> CToolBar
 
 A toolbar is a control bar with a row of bitmap buttons that may include separators. Two styles of buttons are supported: pushbuttons and check box buttons. Radio group functionality can be built with check box buttons and ON_UPDATE_COMMAND_UI.
 
@@ -185,7 +185,7 @@ The six official Windows Interface Application Design Guide button styles are re
 
 - Indeterminate = TBBS_INDETERMINATE
 
-##  <a name="_mfcnotes_cdialogbar"></a> CDialogBar
+## <a name="_mfcnotes_cdialogbar"></a> CDialogBar
 
 A dialog bar is a control bar that contains standard Windows controls. It acts like a dialog in that it contains the controls and supports tabbing between them. It also acts like a dialog in that it uses a dialog template to represent the bar.
 

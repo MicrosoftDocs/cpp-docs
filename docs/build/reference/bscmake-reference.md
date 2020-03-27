@@ -16,7 +16,7 @@ When you build your program, you can create a browse information file for your p
 If you build your program outside of the development environment, you can still create a custom .bsc that you can examine in the environment. Run BSCMAKE on the .sbr files that you created during compilation.
 
 > [!NOTE]
->  You can start this tool only from the Visual Studio Developer command prompt. You cannot start it from a system command prompt or from File Explorer.
+> You can start this tool only from the Visual Studio Developer command prompt. You cannot start it from a system command prompt or from File Explorer.
 
 This section includes the following topics:
 

@@ -26,7 +26,7 @@ Beginning with Visual Studio 2008, the registration script produced by this wiza
 Specify the names for the object, interface, and classes to be added to your project. Except for **Short name**, all other boxes can be edited independently. If you change the text for **Short name**, the change is reflected in the names of all other boxes in this page. If you change the **Coclass** name in the COM section, the change is reflected in the **Type** and **ProgID** boxes. This naming behavior is designed to make all the names easily identifiable for you as you develop your property page.
 
 > [!NOTE]
->  **Coclass** is editable on only nonattributed projects. If your project attributed, you cannot edit **Coclass**.
+> **Coclass** is editable on only nonattributed projects. If your project attributed, you cannot edit **Coclass**.
 
 ### C++
 

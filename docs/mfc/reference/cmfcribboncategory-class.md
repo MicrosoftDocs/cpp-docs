@@ -124,7 +124,7 @@ The following diagram shows a figure of the Home category from the RibbonApp sam
 
 **Header:** afxribboncategory.h
 
-##  <a name="addhidden"></a>  CMFCRibbonCategory::AddHidden
+## <a name="addhidden"></a> CMFCRibbonCategory::AddHidden
 
 Adds the specified ribbon element to the array of ribbon elements that are displayed on the customization dialog box.
 
@@ -141,7 +141,7 @@ void AddHidden(CMFCRibbonBaseElement* pElem);
 
 Ribbon elements on the customization dialog box are the commands that you can add to the quick access toolbar.
 
-##  <a name="addpanel"></a>  CMFCRibbonCategory::AddPanel
+## <a name="addpanel"></a> CMFCRibbonCategory::AddPanel
 
 Creates a ribbon panel for the ribbon category.
 
@@ -179,7 +179,7 @@ The following example demonstrates how to use the `AddPanel` method in the `CMFC
 
 [!code-cpp[NVC_MFC_RibbonApp#10](../../mfc/reference/codesnippet/cpp/cmfcribboncategory-class_1.cpp)]
 
-##  <a name="cmfcribboncategory"></a>  CMFCRibbonCategory::CMFCRibbonCategory
+## <a name="cmfcribboncategory"></a> CMFCRibbonCategory::CMFCRibbonCategory
 
 Constructs and initializes a [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.
 
@@ -215,7 +215,7 @@ CMFCRibbonCategory(
 *sizeLargeImage*<br/>
 [in] Default size of large images for ribbon elements in the ribbon category.
 
-##  <a name="copyfrom"></a>  CMFCRibbonCategory::CopyFrom
+## <a name="copyfrom"></a> CMFCRibbonCategory::CopyFrom
 
 Copies the state of the specified [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) to the current [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.
 
@@ -230,7 +230,7 @@ virtual void CopyFrom(CMFCRibbonCategory& src);
 
 ### Remarks
 
-##  <a name="findbydata"></a>  CMFCRibbonCategory::FindByData
+## <a name="findbydata"></a> CMFCRibbonCategory::FindByData
 
 Retrieves the ribbon element associated with the specified data.
 
@@ -254,7 +254,7 @@ Pointer to a ribbon element if the method was successful; otherwise NULL.
 
 ### Remarks
 
-##  <a name="findbyid"></a>  CMFCRibbonCategory::FindByID
+## <a name="findbyid"></a> CMFCRibbonCategory::FindByID
 
 Retrieves the ribbon element associated with the specified command ID.
 
@@ -278,7 +278,7 @@ Pointer to a ribbon element if the method was successful; otherwise NULL.
 
 ### Remarks
 
-##  <a name="findpanelwithelem"></a>  CMFCRibbonCategory::FindPanelWithElem
+## <a name="findpanelwithelem"></a> CMFCRibbonCategory::FindPanelWithElem
 
 Retrieves the ribbon panel that contains the specified ribbon element.
 
@@ -297,7 +297,7 @@ Pointer to a ribbon panel if the method was successful; otherwise NULL.
 
 ### Remarks
 
-##  <a name="getcontextid"></a>  CMFCRibbonCategory::GetContextID
+## <a name="getcontextid"></a> CMFCRibbonCategory::GetContextID
 
 Retrieves the context ID of the ribbon category.
 
@@ -313,7 +313,7 @@ Context ID of the ribbon category.
 
 The context ID is 0 if the ribbon category is not a context ribbon category.
 
-##  <a name="getdata"></a>  CMFCRibbonCategory::GetData
+## <a name="getdata"></a> CMFCRibbonCategory::GetData
 
 Retrieves the user-defined data that is associated with the ribbon category.
 
@@ -325,7 +325,7 @@ DWORD_PTR GetData() const;
 
 The user-defined data that is associated with the ribbon category.
 
-##  <a name="getdroppeddown"></a>  CMFCRibbonCategory::GetDroppedDown
+## <a name="getdroppeddown"></a> CMFCRibbonCategory::GetDroppedDown
 
 Retrieves a pointer to the ribbon element that currently has its pop-up menu displayed.
 
@@ -339,7 +339,7 @@ Pointer to a ribbon element if the method was successful; otherwise NULL.
 
 ### Remarks
 
-##  <a name="getelements"></a>  CMFCRibbonCategory::GetElements
+## <a name="getelements"></a> CMFCRibbonCategory::GetElements
 
 Retrieves all ribbon elements in the ribbon category.
 
@@ -357,7 +357,7 @@ void GetElements(
 
 Ribbon elements that are designed for use on the quick access toolbar are included in the array.
 
-##  <a name="getelementsbyid"></a>  CMFCRibbonCategory::GetElementsByID
+## <a name="getelementsbyid"></a> CMFCRibbonCategory::GetElementsByID
 
 Retrieves all ribbon elements that are associated with the specified command ID.
 
@@ -379,7 +379,7 @@ void GetElementsByID(
 
 Ribbon elements that are designed for use on the quick access toolbar are included in the array.
 
-##  <a name="getfirstvisibleelement"></a>  CMFCRibbonCategory::GetFirstVisibleElement
+## <a name="getfirstvisibleelement"></a> CMFCRibbonCategory::GetFirstVisibleElement
 
 Retrieves the first visible element that belongs to the ribbon category.
 
@@ -393,7 +393,7 @@ Pointer to the first visible element; may be NULL if category does not have any 
 
 ### Remarks
 
-##  <a name="getfocused"></a>  CMFCRibbonCategory::GetFocused
+## <a name="getfocused"></a> CMFCRibbonCategory::GetFocused
 
 Returns a focused element.
 
@@ -407,7 +407,7 @@ A pointer to a focused element or NULL.
 
 ### Remarks
 
-##  <a name="gethighlighted"></a>  CMFCRibbonCategory::GetHighlighted
+## <a name="gethighlighted"></a> CMFCRibbonCategory::GetHighlighted
 
 Returns a highlighted element.
 
@@ -421,7 +421,7 @@ A pointer to a highlighted element or NULL if no elements are highlighted.
 
 ### Remarks
 
-##  <a name="getimagecount"></a>  CMFCRibbonCategory::GetImageCount
+## <a name="getimagecount"></a> CMFCRibbonCategory::GetImageCount
 
 Retrieves the number of images in the specified image list that is contained in the ribbon category.
 
@@ -440,7 +440,7 @@ The number of images in the specified image list.
 
 ### Remarks
 
-##  <a name="getimagesize"></a>  CMFCRibbonCategory::GetImageSize
+## <a name="getimagesize"></a> CMFCRibbonCategory::GetImageSize
 
 Retrieves the size of an image in the specified image list that is contained in the ribbon category.
 
@@ -461,7 +461,7 @@ The size of an image in the specified image list.
 
 The size retrieved includes the global image scale factor.
 
-##  <a name="getitemidslist"></a>  CMFCRibbonCategory::GetItemIDsList
+## <a name="getitemidslist"></a> CMFCRibbonCategory::GetItemIDsList
 
 Retrieves the command IDs for the ribbon elements that are contained in the ribbon category.
 
@@ -481,7 +481,7 @@ void GetItemIDsList(
 
 ### Remarks
 
-##  <a name="getlargeimages"></a>  CMFCRibbonCategory::GetLargeImages
+## <a name="getlargeimages"></a> CMFCRibbonCategory::GetLargeImages
 
 Retrieves the list of large images that are contained in the ribbon category.
 
@@ -493,7 +493,7 @@ CMFCToolBarImages& GetLargeImages();
 
 The list of large images that are contained in the ribbon category.
 
-##  <a name="getlastvisibleelement"></a>  CMFCRibbonCategory::GetLastVisibleElement
+## <a name="getlastvisibleelement"></a> CMFCRibbonCategory::GetLastVisibleElement
 
 Retrieves the last visible element that belongs to the ribbon category.
 
@@ -507,7 +507,7 @@ Pointer to the last visible element; may be NULL if the category does not have a
 
 ### Remarks
 
-##  <a name="getmaxheight"></a>  CMFCRibbonCategory::GetMaxHeight
+## <a name="getmaxheight"></a> CMFCRibbonCategory::GetMaxHeight
 
 Retrieves the maximum height of the ribbon panels that are contained in the ribbon category.
 
@@ -528,7 +528,7 @@ The maximum height of the ribbon panels that are contained in the ribbon categor
 
 The value retrieved includes the height of the top and bottom margins for the ribbon panels.
 
-##  <a name="getname"></a>  CMFCRibbonCategory::GetName
+## <a name="getname"></a> CMFCRibbonCategory::GetName
 
 Retrieves the name of the ribbon category.
 
@@ -542,7 +542,7 @@ The name of the ribbon category.
 
 ### Remarks
 
-##  <a name="getpanel"></a>  CMFCRibbonCategory::GetPanel
+## <a name="getpanel"></a> CMFCRibbonCategory::GetPanel
 
 Returns a pointer to the ribbon panel that is located at the specified index.
 
@@ -563,7 +563,7 @@ Pointer to the ribbon panel that is located at the specified index.
 
 An exception is thrown if *nIndex* is out of range.
 
-##  <a name="getpanelcount"></a>  CMFCRibbonCategory::GetPanelCount
+## <a name="getpanelcount"></a> CMFCRibbonCategory::GetPanelCount
 
 Returns the number of ribbon panels in the ribbon category.
 
@@ -575,7 +575,7 @@ int GetPanelCount() const;
 
 The number of ribbon panels in the ribbon category.
 
-##  <a name="getpanelfrompoint"></a>  CMFCRibbonCategory::GetPanelFromPoint
+## <a name="getpanelfrompoint"></a> CMFCRibbonCategory::GetPanelFromPoint
 
 Retrieves a pointer to a ribbon panel if the specified point is located in it.
 
@@ -596,7 +596,7 @@ Pointer to a ribbon panel if the method was successful; otherwise NULL.
 
 Only ribbon panels that are contained in the ribbon category are tested.
 
-##  <a name="getpanelindex"></a>  CMFCRibbonCategory::GetPanelIndex
+## <a name="getpanelindex"></a> CMFCRibbonCategory::GetPanelIndex
 
 Retrieves the zero-based index of the specified ribbon panel.
 
@@ -617,7 +617,7 @@ Zero-based index of the specified ribbon panel if the method was successful; oth
 
 Only ribbon panels that are contained in the ribbon category are searched.
 
-##  <a name="getparentbutton"></a>  CMFCRibbonCategory::GetParentButton
+## <a name="getparentbutton"></a> CMFCRibbonCategory::GetParentButton
 
 Retrieves the parent ribbon element of the ribbon category.
 
@@ -631,7 +631,7 @@ Returns a pointer to the parent ribbon element, or NULL if there is no parent el
 
 ### Remarks
 
-##  <a name="getparentmenubar"></a>  CMFCRibbonCategory::GetParentMenuBar
+## <a name="getparentmenubar"></a> CMFCRibbonCategory::GetParentMenuBar
 
 Returns a pointer to the parent menu bar of the `CMFCRibbonCategory` object.
 
@@ -645,7 +645,7 @@ Returns the contents of the `m_pParentMenuBar` protected member.
 
 ### Remarks
 
-##  <a name="getparentribbonbar"></a>  CMFCRibbonCategory::GetParentRibbonBar
+## <a name="getparentribbonbar"></a> CMFCRibbonCategory::GetParentRibbonBar
 
 Retrieves the parent ribbon bar for the ribbon category.
 
@@ -659,7 +659,7 @@ Pointer to the parent ribbon bar for the ribbon category.
 
 ### Remarks
 
-##  <a name="getrect"></a>  CMFCRibbonCategory::GetRect
+## <a name="getrect"></a> CMFCRibbonCategory::GetRect
 
 Retrieves the display rectangle for the ribbon category.
 
@@ -675,7 +675,7 @@ The display rectangle for the ribbon category.
 
 The display rectangle for the ribbon category does not include the category tab.
 
-##  <a name="getsmallimages"></a>  CMFCRibbonCategory::GetSmallImages
+## <a name="getsmallimages"></a> CMFCRibbonCategory::GetSmallImages
 
 Retrieves the list of small images that are contained in the ribbon category.
 
@@ -687,7 +687,7 @@ CMFCToolBarImages& GetSmallImages();
 
 The list of small images that are contained in the ribbon category.
 
-##  <a name="gettabcolor"></a>  CMFCRibbonCategory::GetTabColor
+## <a name="gettabcolor"></a> CMFCRibbonCategory::GetTabColor
 
 Returns the current color of the ribbon category tab.
 
@@ -717,7 +717,7 @@ The returned value can be one of the following enumerated values:
 
 - AFX_CategoryColor_Violet
 
-##  <a name="gettabrect"></a>  CMFCRibbonCategory::GetTabRect
+## <a name="gettabrect"></a> CMFCRibbonCategory::GetTabRect
 
 Retrieves the display rectangle for the ribbon category tab.
 
@@ -731,7 +731,7 @@ The display rectangle for the ribbon category tab.
 
 ### Remarks
 
-##  <a name="gettexttopline"></a>  CMFCRibbonCategory::GetTextTopLine
+## <a name="gettexttopline"></a> CMFCRibbonCategory::GetTextTopLine
 
 Retrieves the vertical location of text on ribbon buttons in the ribbon category that display large images.
 
@@ -745,7 +745,7 @@ The vertical location of text, in pixels, on ribbon buttons that display large i
 
 ### Remarks
 
-##  <a name="getvisibleelements"></a>  CMFCRibbonCategory::GetVisibleElements
+## <a name="getvisibleelements"></a> CMFCRibbonCategory::GetVisibleElements
 
 Retrieves all visible elements that belong to the ribbon category.
 
@@ -762,7 +762,7 @@ Array of all visible elements.
 
 ### Remarks
 
-##  <a name="highlightpanel"></a>  CMFCRibbonCategory::HighlightPanel
+## <a name="highlightpanel"></a> CMFCRibbonCategory::HighlightPanel
 
 Highlights the specified ribbon panel.
 
@@ -788,7 +788,7 @@ Pointer to the previously highlighted ribbon panel; otherwise NULL if no ribbon 
 
 For more information about highlighting a ribbon panel, see [CMFCRibbonPanel::Highlight](../../mfc/reference/cmfcribbonpanel-class.md#highlight).
 
-##  <a name="hittest"></a>  CMFCRibbonCategory::HitTest
+## <a name="hittest"></a> CMFCRibbonCategory::HitTest
 
 Retrieves a pointer to a ribbon element if the specified point is located in it.
 
@@ -814,7 +814,7 @@ Pointer to a ribbon element if the method was successful; otherwise NULL.
 
 Only ribbon elements that are contained in the ribbon category are tested.
 
-##  <a name="hittestex"></a>  CMFCRibbonCategory::HitTestEx
+## <a name="hittestex"></a> CMFCRibbonCategory::HitTestEx
 
 Retrieves the zero-based index of a ribbon element if the specified point is located in it.
 
@@ -835,7 +835,7 @@ Zero-based index of a ribbon element if the method was successful; otherwise -1.
 
 Only ribbon elements that are contained in the ribbon category are tested.
 
-##  <a name="hittestscrollbuttons"></a>  CMFCRibbonCategory::HitTestScrollButtons
+## <a name="hittestscrollbuttons"></a> CMFCRibbonCategory::HitTestScrollButtons
 
 If a point falls within a ribbon category’s left or right scroll button, returns a pointer to that button.
 
@@ -854,7 +854,7 @@ If *point* falls within the bounding rectangle of either the left or the right s
 
 ### Remarks
 
-##  <a name="isactive"></a>  CMFCRibbonCategory::IsActive
+## <a name="isactive"></a> CMFCRibbonCategory::IsActive
 
 Indicates whether the ribbon category is the active category on the ribbon bar.
 
@@ -870,7 +870,7 @@ TRUE if the ribbon category is the active category; otherwise FALSE.
 
 The active ribbon category displays its ribbon panels.
 
-##  <a name="isvisible"></a>  CMFCRibbonCategory::IsVisible
+## <a name="isvisible"></a> CMFCRibbonCategory::IsVisible
 
 Indicates whether the ribbon category is visible.
 
@@ -886,7 +886,7 @@ TRUE if the ribbon category is visible; otherwise FALSE.
 
 Ribbon categories that are visible display a category tab.
 
-##  <a name="iswindows7look"></a>  CMFCRibbonCategory::IsWindows7Look
+## <a name="iswindows7look"></a> CMFCRibbonCategory::IsWindows7Look
 
 Indicates whether the parent ribbon has Windows 7 look (small rectangular application button).
 
@@ -900,7 +900,7 @@ TRUE if the parent ribbon has Windows 7 look; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="notifycontrolcommand"></a>  CMFCRibbonCategory::NotifyControlCommand
+## <a name="notifycontrolcommand"></a> CMFCRibbonCategory::NotifyControlCommand
 
 Delivers a WM_NOTIFY command message to all `CMFCRibbonPanel` elements in the `CMFCRibbonCategory` until the message is handled.
 
@@ -932,7 +932,7 @@ Returns TRUE if the message was handled, or FALSE if not.
 
 ### Remarks
 
-##  <a name="oncancelmode"></a>  CMFCRibbonCategory::OnCancelMode
+## <a name="oncancelmode"></a> CMFCRibbonCategory::OnCancelMode
 
 Invokes cancel mode in all the `CMFCRibbonPanel` elements of the `CMFCRibbonCategory`.
 
@@ -942,7 +942,7 @@ virtual void OnCancelMode();
 
 ### Remarks
 
-##  <a name="ondraw"></a>  CMFCRibbonCategory::OnDraw
+## <a name="ondraw"></a> CMFCRibbonCategory::OnDraw
 
 Called by the framework to draw the ribbon category.
 
@@ -957,7 +957,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### Remarks
 
-##  <a name="ondrawimage"></a>  CMFCRibbonCategory::OnDrawImage
+## <a name="ondrawimage"></a> CMFCRibbonCategory::OnDrawImage
 
 Called by the framework to draw the specified image on the ribbon category.
 
@@ -997,7 +997,7 @@ TRUE if the method was successful; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="ondrawmenuborder"></a>  CMFCRibbonCategory::OnDrawMenuBorder
+## <a name="ondrawmenuborder"></a> CMFCRibbonCategory::OnDrawMenuBorder
 
 Called by the framework to draw the border of a popup menu.
 
@@ -1019,7 +1019,7 @@ virtual void OnDrawMenuBorder(
 
 By default this method does nothing. Override this method to draw the border of a popup menu.
 
-##  <a name="onkey"></a>  CMFCRibbonCategory::OnKey
+## <a name="onkey"></a> CMFCRibbonCategory::OnKey
 
 Called by the framework when a user presses a keyboard button.
 
@@ -1034,7 +1034,7 @@ The virtual key code for the key that a user pressed.
 
 ### Remarks
 
-##  <a name="onlbuttondown"></a>  CMFCRibbonCategory::OnLButtonDown
+## <a name="onlbuttondown"></a> CMFCRibbonCategory::OnLButtonDown
 
 Called by the framework to retrieve the ribbon element under the specified point when the user presses the left mouse button.
 
@@ -1053,7 +1053,7 @@ Pointer to a ribbon element if the method was successful; otherwise NULL.
 
 ### Remarks
 
-##  <a name="onlbuttonup"></a>  CMFCRibbonCategory::OnLButtonUp
+## <a name="onlbuttonup"></a> CMFCRibbonCategory::OnLButtonUp
 
 Called by the framework when the user releases the left mouse button and the pointer is over the ribbon category.
 
@@ -1068,7 +1068,7 @@ virtual void OnLButtonUp(CPoint point);
 
 ### Remarks
 
-##  <a name="onmousemove"></a>  CMFCRibbonCategory::OnMouseMove
+## <a name="onmousemove"></a> CMFCRibbonCategory::OnMouseMove
 
 Called by the framework when the pointer moves on the ribbon bar in order to update the ribbon category display.
 
@@ -1083,7 +1083,7 @@ virtual void OnMouseMove(CPoint point);
 
 ### Remarks
 
-##  <a name="onrtlchanged"></a>  CMFCRibbonCategory::OnRTLChanged
+## <a name="onrtlchanged"></a> CMFCRibbonCategory::OnRTLChanged
 
 Called by the framework when the layout changes direction.
 
@@ -1100,7 +1100,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 
 This method adjusts the layout of all ribbon panels and ribbon elements that are contained in the ribbon category.
 
-##  <a name="onscrollhorz"></a>  CMFCRibbonCategory::OnScrollHorz
+## <a name="onscrollhorz"></a> CMFCRibbonCategory::OnScrollHorz
 
 Scrolls the ribbon category in the horizontal direction.
 
@@ -1124,7 +1124,7 @@ TRUE if the ribbon category moved in a horizontal direction; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="onupdatecmdui"></a>  CMFCRibbonCategory::OnUpdateCmdUI
+## <a name="onupdatecmdui"></a> CMFCRibbonCategory::OnUpdateCmdUI
 
 Calls the `OnUpdateCmdUI` member function in each of the `CMFCRibbonPanel` elements of the `CMFCRibbonCategory` to enable or disable the user-interface elements in them.
 
@@ -1148,7 +1148,7 @@ virtual void OnUpdateCmdUI(
 
 ### Remarks
 
-##  <a name="recalclayout"></a>  CMFCRibbonCategory::RecalcLayout
+## <a name="recalclayout"></a> CMFCRibbonCategory::RecalcLayout
 
 Adjusts the layout of all controls on the ribbon category.
 
@@ -1163,7 +1163,7 @@ virtual void RecalcLayout(CDC* pDC);
 
 ### Remarks
 
-##  <a name="removepanel"></a>  CMFCRibbonCategory::RemovePanel
+## <a name="removepanel"></a> CMFCRibbonCategory::RemovePanel
 
 Removes a ribbon panel from the ribbon category.
 
@@ -1185,7 +1185,7 @@ BOOL RemovePanel(
 
 TRUE if the method was successful; otherwise, FALSE.
 
-##  <a name="repospanels"></a>  CMFCRibbonCategory::ReposPanels
+## <a name="repospanels"></a> CMFCRibbonCategory::ReposPanels
 
 Adjusts the layout of all controls on the ribbon panels that are contained in the ribbon category.
 
@@ -1200,7 +1200,7 @@ virtual void ReposPanels(CDC* pDC);
 
 ### Remarks
 
-##  <a name="setcollapseorder"></a>  CMFCRibbonCategory::SetCollapseOrder
+## <a name="setcollapseorder"></a> CMFCRibbonCategory::SetCollapseOrder
 
 Defines the order in which the ribbon panels of the ribbon category collapse.
 
@@ -1227,7 +1227,7 @@ The following example demonstrates how to use the `SetCollapseOrder` method in t
 
 [!code-cpp[NVC_MFC_RibbonApp#13](../../mfc/reference/codesnippet/cpp/cmfcribboncategory-class_2.cpp)]
 
-##  <a name="setdata"></a>  CMFCRibbonCategory::SetData
+## <a name="setdata"></a> CMFCRibbonCategory::SetData
 
 Sets the user-defined data to be associated with the ribbon category.
 
@@ -1240,7 +1240,7 @@ void SetData(DWORD_PTR dwData);
 *dwData*<br/>
 [in] The user-defined data.
 
-##  <a name="setkeys"></a>  CMFCRibbonCategory::SetKeys
+## <a name="setkeys"></a> CMFCRibbonCategory::SetKeys
 
 Assigns a keytip to the ribbon category.
 
@@ -1257,7 +1257,7 @@ void SetKeys(LPCTSTR lpszKeys);
 
 Keytips are displayed when the user presses the Alt key or the F10 key.
 
-##  <a name="setname"></a>  CMFCRibbonCategory::SetName
+## <a name="setname"></a> CMFCRibbonCategory::SetName
 
 Assigns a name and keytip to the ribbon category.
 
@@ -1274,7 +1274,7 @@ void SetName(LPCTSTR lpszName);
 
 To set the keytip for the ribbon category, append a newline escape sequence followed by the keytip characters to *lpszName*.
 
-##  <a name="settabcolor"></a>  CMFCRibbonCategory::SetTabColor
+## <a name="settabcolor"></a> CMFCRibbonCategory::SetTabColor
 
 Sets the color of the ribbon category.
 

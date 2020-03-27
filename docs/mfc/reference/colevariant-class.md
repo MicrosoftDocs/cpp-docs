@@ -67,7 +67,7 @@ For more information on the `COleVariant` class and its use in OLE automation, s
 
 **Header:** afxdisp.h
 
-##  <a name="attach"></a>  COleVariant::Attach
+## <a name="attach"></a> COleVariant::Attach
 
 Call this function to attach the given [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) object to the current `COleVariant` object.
 
@@ -86,7 +86,7 @@ This function sets the VARTYPE of *varSrc* to VT_EMPTY.
 
 For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) and [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) entries in the Windows SDK.
 
-##  <a name="colevariant"></a>  COleVariant::COleVariant
+## <a name="colevariant"></a> COleVariant::COleVariant
 
 Constructs a `COleVariant` object.
 
@@ -187,7 +187,7 @@ All these constructors create new `COleVariant` objects initialized to the speci
 
 For more information on SCODE, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes) in the Windows SDK.
 
-##  <a name="changetype"></a>  COleVariant::ChangeType
+## <a name="changetype"></a> COleVariant::ChangeType
 
 Converts the type of variant value in this `COleVariant` object.
 
@@ -207,7 +207,7 @@ A pointer to the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) object to 
 
 For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum), and [VariantChangeType](/windows/win32/api/oleauto/nf-oleauto-variantchangetype) entries in the Windows SDK.
 
-##  <a name="clear"></a>  COleVariant::Clear
+## <a name="clear"></a> COleVariant::Clear
 
 Clears the `VARIANT`.
 
@@ -221,7 +221,7 @@ This sets the VARTYPE for this object to VT_EMPTY. The `COleVariant` destructor 
 
 For more information, see the `VARIANT`, VARTYPE, and `VariantClear` entries in the Windows SDK.
 
-##  <a name="detach"></a>  COleVariant::Detach
+## <a name="detach"></a> COleVariant::Detach
 
 Detaches the underlying [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) object from this `COleVariant` object.
 
@@ -234,11 +234,11 @@ VARIANT Detach();
 This function sets the VARTYPE for this `COleVariant` object to VT_EMPTY.
 
 > [!NOTE]
->  After calling `Detach`, it is the caller's responsibility to call `VariantClear` on the resulting `VARIANT` structure.
+> After calling `Detach`, it is the caller's responsibility to call `VariantClear` on the resulting `VARIANT` structure.
 
 For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum), and [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear) entries in the Windows SDK.
 
-##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray
+## <a name="getbytearrayfromvariantarray"></a> COleVariant::GetByteArrayFromVariantArray
 
 Retrieves a byte array from an existing variant array
 
@@ -251,7 +251,7 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 *bytes*<br/>
 A reference to an existing [CByteArray](../../mfc/reference/cbytearray-class.md) object.
 
-##  <a name="operator_lpcvariant"></a>  COleVariant::operator LPCVARIANT
+## <a name="operator_lpcvariant"></a> COleVariant::operator LPCVARIANT
 
 This casting operator returns a `VARIANT` structure whose value is copied from this `COleVariant` object.
 
@@ -261,7 +261,7 @@ operator LPCVARIANT() const;
 
 ### Remarks
 
-##  <a name="operator_lpvariant"></a>  COleVariant::operator LPVARIANT
+## <a name="operator_lpvariant"></a> COleVariant::operator LPVARIANT
 
 Call this casting operator to access the underlying `VARIANT` structure for this `COleVariant` object.
 
@@ -274,7 +274,7 @@ operator LPVARIANT();
 > [!CAUTION]
 > Changing the value in the `VARIANT` structure accessed by the pointer returned by this function will change the value of this `COleVariant` object.
 
-##  <a name="operator_eq"></a>  COleVariant::operator =
+## <a name="operator_eq"></a> COleVariant::operator =
 
 These overloaded assignment operators copy the source value into this `COleVariant` object.
 
@@ -325,7 +325,7 @@ A brief description of each operator follows:
 
 For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) and [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) entries in the Windows SDK.
 
-##  <a name="operator_eq_eq"></a>  COleVariant::operator ==
+## <a name="operator_eq_eq"></a> COleVariant::operator ==
 
 This operator compares two variant values and returns nonzero if they are equal; otherwise 0.
 
@@ -334,7 +334,7 @@ BOOL operator==(const VARIANT& varSrc) const;
 BOOL operator==(LPCVARIANT pSrc) const;
 ```
 
-##  <a name="operator_lt_lt__gt_gt"></a>  COleVariant::operator &lt;&lt;, &gt;&gt;
+## <a name="operator_lt_lt__gt_gt"></a> COleVariant::operator &lt;&lt;, &gt;&gt;
 
 Outputs a `COleVariant` value to `CArchive` or `CdumpContext` and inputs a `COleVariant` object from `CArchive`.
 
@@ -356,7 +356,7 @@ friend CArchive& AFXAPI operator>>(
 
 The `COleVariant` insertion (**\<\<**) operator supports diagnostic dumping and storing to an archive. The extraction (**>>**) operator supports loading from an archive.
 
-##  <a name="setstring"></a>  COleVariant::SetString
+## <a name="setstring"></a> COleVariant::SetString
 
 Sets the string to a particular type.
 

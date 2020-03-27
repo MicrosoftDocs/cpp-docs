@@ -10,7 +10,7 @@ ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
 An interface to the Microsoft HTML parsing and rendering engine.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -23,7 +23,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 ### Public Methods
 
 > [!NOTE]
->  The links in the following table are to the INet SDK reference topics for the members of the [IDocUIHostHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\)) interface. `IDocHostUIHandlerDispatch` has the same functionality as `IDocUIHostHandler`, with the difference being that `IDocHostUIHandlerDispatch` is a dispinterface whereas `IDocUIHostHandler` is a custom interface.
+> The links in the following table are to the INet SDK reference topics for the members of the [IDocUIHostHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\)) interface. `IDocHostUIHandlerDispatch` has the same functionality as `IDocUIHostHandler`, with the difference being that `IDocHostUIHandlerDispatch` is a dispinterface whereas `IDocUIHostHandler` is a custom interface.
 
 |||
 |-|-|

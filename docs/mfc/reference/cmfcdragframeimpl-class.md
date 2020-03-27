@@ -30,7 +30,7 @@ You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m
 
 **Header:** afxdragframeimpl.h
 
-##  <a name="enddrawdragframe"></a>  CMFCDragFrameImpl::EndDrawDragFrame
+## <a name="enddrawdragframe"></a> CMFCDragFrameImpl::EndDrawDragFrame
 
 ```
 void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
@@ -42,7 +42,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 
 ### Remarks
 
-##  <a name="init"></a>  CMFCDragFrameImpl::Init
+## <a name="init"></a> CMFCDragFrameImpl::Init
 
 ```
 void Init(CWnd* pDraggedWnd);
@@ -54,7 +54,7 @@ void Init(CWnd* pDraggedWnd);
 
 ### Remarks
 
-##  <a name="movedragframe"></a>  CMFCDragFrameImpl::MoveDragFrame
+## <a name="movedragframe"></a> CMFCDragFrameImpl::MoveDragFrame
 
 ```
 void MoveDragFrame(BOOL bForceMove = FALSE);
@@ -66,7 +66,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 
 ### Remarks
 
-##  <a name="placetabpredocking"></a>  CMFCDragFrameImpl::PlaceTabPreDocking
+## <a name="placetabpredocking"></a> CMFCDragFrameImpl::PlaceTabPreDocking
 
 ```
 void PlaceTabPreDocking(
@@ -86,7 +86,7 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 
 ### Remarks
 
-##  <a name="removetabpredocking"></a>  CMFCDragFrameImpl::RemoveTabPreDocking
+## <a name="removetabpredocking"></a> CMFCDragFrameImpl::RemoveTabPreDocking
 
 ```
 void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
@@ -98,7 +98,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 
 ### Remarks
 
-##  <a name="resetstate"></a>  CMFCDragFrameImpl::ResetState
+## <a name="resetstate"></a> CMFCDragFrameImpl::ResetState
 
 ```
 void ResetState();

@@ -58,7 +58,7 @@ For more information, see the article [Files in MFC](../../mfc/files-in-mfc.md) 
 
 **Header:** afxadv.h
 
-##  <a name="csharedfile"></a>  CSharedFile::CSharedFile
+## <a name="csharedfile"></a> CSharedFile::CSharedFile
 
 Constructs a `CSharedFile` object and allocates memory for it.
 
@@ -76,7 +76,7 @@ Flags indicating how memory is to be allocated. See [GlobalAlloc](/windows/win32
 *nGrowBytes*<br/>
 The memory allocation increment in bytes.
 
-##  <a name="detach"></a>  CSharedFile::Detach
+## <a name="detach"></a> CSharedFile::Detach
 
 Call this function to close the memory file and detach it from the memory block.
 
@@ -92,7 +92,7 @@ The handle of the memory block that contains the contents of the memory file.
 
 You can reopen it by calling [SetHandle](#sethandle), using the handle returned by **Detach**.
 
-##  <a name="sethandle"></a>  CSharedFile::SetHandle
+## <a name="sethandle"></a> CSharedFile::SetHandle
 
 Call this function to attach a block of global memory to the `CSharedFile` object.
 

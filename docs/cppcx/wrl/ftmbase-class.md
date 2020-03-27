@@ -60,7 +60,7 @@ For more information, see [RuntimeClass Class](runtimeclass-class.md).
 
 **Namespace:** Microsoft::WRL
 
-## <a name="createglobalinterfacetable"></a>FtmBase::CreateGlobalInterfaceTable
+## <a name="createglobalinterfacetable"></a> FtmBase::CreateGlobalInterfaceTable
 
 Creates a global interface table (GIT).
 
@@ -83,7 +83,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 For more information, see the `IGlobalInterfaceTable` topic in the `COM Interfaces` subtopic of the `COM Reference` topic in the MSDN Library.
 
-## <a name="disconnectobject"></a>FtmBase::DisconnectObject
+## <a name="disconnectobject"></a> FtmBase::DisconnectObject
 
 Forcibly releases all external connections to an object. The object's server calls the object's implementation of this method prior to shutting down.
 
@@ -102,7 +102,7 @@ Reserved for future use; must be zero.
 
 S_OK if successful; otherwise, an HRESULT that indicates the error.
 
-## <a name="ftmbase"></a>FtmBase::FtmBase
+## <a name="ftmbase"></a> FtmBase::FtmBase
 
 Initializes a new instance of the `FtmBase` class.
 
@@ -110,7 +110,7 @@ Initializes a new instance of the `FtmBase` class.
 FtmBase();
 ```
 
-## <a name="getmarshalsizemax"></a>FtmBase::GetMarshalSizeMax
+## <a name="getmarshalsizemax"></a> FtmBase::GetMarshalSizeMax
 
 Get the upper bound on the number of bytes needed to marshal the specified interface pointer on the specified object.
 
@@ -153,7 +153,7 @@ When this operation completes, pointer to the upper bound on the amount of data 
 
 S_OK if successful; otherwise, E_FAIL or E_NOINTERFACE.
 
-## <a name="getunmarshalclass"></a>FtmBase::GetUnmarshalClass
+## <a name="getunmarshalclass"></a> FtmBase::GetUnmarshalClass
 
 Gets the CLSID that COM uses to locate the DLL containing the code for the corresponding proxy. COM loads this DLL to create an uninitialized instance of the proxy.
 
@@ -195,7 +195,7 @@ When this operation completes, pointer to the CLSID to be used to create a proxy
 
 S_OK if successful; otherwise, S_FALSE.
 
-## <a name="marshalinterface"></a>FtmBase::MarshalInterface
+## <a name="marshalinterface"></a> FtmBase::MarshalInterface
 
 Writes into a stream the data required to initialize a proxy object in some client process.
 
@@ -248,7 +248,7 @@ The stream is full.
 E_FAIL
 The operation failed.
 
-## <a name="marshaller"></a>FtmBase::marshaller_
+## <a name="marshaller"></a> FtmBase::marshaller_
 
 Holds a reference to the free threaded marshaler.
 
@@ -256,7 +256,7 @@ Holds a reference to the free threaded marshaler.
 Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;
 ```
 
-## <a name="releasemarshaldata"></a>FtmBase::ReleaseMarshalData
+## <a name="releasemarshaldata"></a> FtmBase::ReleaseMarshalData
 
 Destroys a marshaled data packet.
 
@@ -275,7 +275,7 @@ Pointer to a stream that contains the data packet to be destroyed.
 
 S_OK if successful; otherwise, an HRESULT that indicates the error.
 
-## <a name="unmarshalinterface"></a>FtmBase::UnmarshalInterface
+## <a name="unmarshalinterface"></a> FtmBase::UnmarshalInterface
 
 Initializes a newly created proxy and returns an interface pointer to that proxy.
 

@@ -21,7 +21,7 @@ Topics covered in this article include:
 
 - [String Table Additions](#_core_string_table_additions_for_container_applications)
 
-##  <a name="_core_container_menu_additions"></a> Container Menu Additions
+## <a name="_core_container_menu_additions"></a> Container Menu Additions
 
 You must add the following items to the Edit menu:
 
@@ -36,7 +36,7 @@ In addition to the changes listed in this article, your source file must include
 
 You must create a new menu for your container application if you want to support in-place activation of contained items. This menu consists of the same File menu and Window pop-up menus used when files are open, but it has two separators placed between them. These separators are used to indicate where the server (component) item (application) should place its menus when activated in place. For more information on this menu-merging technique, see [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md).
 
-##  <a name="_core_container_application_accelerator_table_additions"></a> Container Application Accelerator Table Additions
+## <a name="_core_container_application_accelerator_table_additions"></a> Container Application Accelerator Table Additions
 
 Small changes to a container application's accelerator table resources are necessary if you are supporting in-place activation. The first change allows the user to press the escape key (ESC) to cancel the in-place editing mode. Add the following entry to the main accelerator table:
 
@@ -56,7 +56,7 @@ The second change is to create a new accelerator table that corresponds to the n
 |ID_PREV_PANE|SHIFT+VK_F6|**VIRTKEY**|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|
 
-##  <a name="_core_string_table_additions_for_container_applications"></a> String Table Additions for Container Applications
+## <a name="_core_string_table_additions_for_container_applications"></a> String Table Additions for Container Applications
 
 Most of the changes to string tables for container applications correspond to the additional menu items mentioned in [Container Menu Additions](#_core_container_menu_additions). They supply the text displayed in the status bar when each menu item is displayed. As an example, here are the string-table entries the application wizard generates:
 

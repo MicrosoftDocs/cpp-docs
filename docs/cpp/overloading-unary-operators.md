@@ -43,7 +43,7 @@ To declare a unary operator function as a global function, you must declare it i
 where *ret-type* and *op* are as described for member operator functions and the *arg* is an argument of class type on which to operate.
 
 > [!NOTE]
->  There is no restriction on the return types of the unary operators. For example, it makes sense for logical NOT (`!`) to return an integral value, but this is not enforced.
+> There is no restriction on the return types of the unary operators. For example, it makes sense for logical NOT (`!`) to return an integral value, but this is not enforced.
 
 ## See also
 

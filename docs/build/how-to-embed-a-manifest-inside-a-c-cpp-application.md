@@ -28,11 +28,11 @@ There are two ways to embed the manifest inside an application or library.
 
 - If you are doing an incremental build, use the following steps:
 
-   - Link the binary to generate the MyApp.exe.manifest file.
+  - Link the binary to generate the MyApp.exe.manifest file.
 
-   - Convert the manifest to a resource file.
+  - Convert the manifest to a resource file.
 
-   - Re-link (incrementally) to embed the manifest resource into the binary.
+  - Re-link (incrementally) to embed the manifest resource into the binary.
 
 The following examples show how to change makefiles to incorporate both techniques.
 

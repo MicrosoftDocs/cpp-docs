@@ -11,7 +11,7 @@ The restart manager is a feature added to Visual Studio for Windows Vista or lat
 After restart, the application displays a task dialog box if the application is Unicode. If it is an ANSI application, the application displays a Windows Message box. At this point, the user chooses whether to restore the automatically saved documents. If the user does not restore the automatically saved documents, the restart manager discards the temporary files.
 
 > [!NOTE]
->  You can override the default behavior of the restart manager for saving data and restarting the application.
+> You can override the default behavior of the restart manager for saving data and restarting the application.
 
 By default, MFC applications created by using the project wizard in Visual Studio support the restart manager when the applications are run on a computer that has a Windows Vista or later operating system. If you do not want your application to support the restart manager, you can disable the restart manager in the new project wizard.
 

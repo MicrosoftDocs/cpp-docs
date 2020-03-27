@@ -17,7 +17,7 @@ If you have multiple versions of Visual C++ on your computer or if you defined y
 - **__FUnloadDelayLoadedDLL** is now **__FUnloadDelayLoadedDLL2**
 
 > [!NOTE]
->  If you are using the default helper function, these changes will not affect you. There are no changes regarding how you invoke the linker.
+> If you are using the default helper function, these changes will not affect you. There are no changes regarding how you invoke the linker.
 
 ## Multiple Versions of Visual C++
 

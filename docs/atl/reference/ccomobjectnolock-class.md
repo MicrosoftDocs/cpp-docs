@@ -54,7 +54,7 @@ ATL uses `CComObjectNoLock` internally for class factories. In general, you will
 
 **Header:** atlcom.h
 
-##  <a name="addref"></a>  CComObjectNoLock::AddRef
+## <a name="addref"></a> CComObjectNoLock::AddRef
 
 Increments the reference count on the object.
 
@@ -66,7 +66,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 A value that may be useful for diagnostics or testing.
 
-##  <a name="ccomobjectnolock"></a>  CComObjectNoLock::CComObjectNoLock
+## <a name="ccomobjectnolock"></a> CComObjectNoLock::CComObjectNoLock
 
 The constructor. Unlike [CComObject](../../atl/reference/ccomobject-class.md), does not increment the module lock count.
 
@@ -79,7 +79,7 @@ CComObjectNoLock(void* = NULL);
 <em>void\*</em><br/>
 [in] This unnamed parameter is not used. It exists for symmetry with other `CComXXXObjectXXX` constructors.
 
-##  <a name="dtor"></a>  CComObjectNoLock::~CComObjectNoLock
+## <a name="dtor"></a> CComObjectNoLock::~CComObjectNoLock
 
 The destructor.
 
@@ -91,7 +91,7 @@ The destructor.
 
 Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#finalrelease).
 
-##  <a name="queryinterface"></a>  CComObjectNoLock::QueryInterface
+## <a name="queryinterface"></a> CComObjectNoLock::QueryInterface
 
 Retrieves a pointer to the requested interface.
 
@@ -111,7 +111,7 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 A standard HRESULT value.
 
-##  <a name="release"></a>  CComObjectNoLock::Release
+## <a name="release"></a> CComObjectNoLock::Release
 
 Decrements the reference count on the object.
 

@@ -42,7 +42,7 @@ Name                                                         | Description
 
 **Namespace:** Microsoft::WRL
 
-## <a name="releasenotifier-tilde-releasenotifier"></a>Module::ReleaseNotifier::~ReleaseNotifier
+## <a name="releasenotifier-tilde-releasenotifier"></a> Module::ReleaseNotifier::~ReleaseNotifier
 
 Deinitializes the current instance of the `Module::ReleaseNotifier` class.
 
@@ -50,7 +50,7 @@ Deinitializes the current instance of the `Module::ReleaseNotifier` class.
 WRL_NOTHROW virtual ~ReleaseNotifier();
 ```
 
-## <a name="releasenotifier-invoke"></a>Module::ReleaseNotifier::Invoke
+## <a name="releasenotifier-invoke"></a> Module::ReleaseNotifier::Invoke
 
 When implemented, calls an event handler when the last object in a module is released.
 
@@ -58,7 +58,7 @@ When implemented, calls an event handler when the last object in a module is rel
 virtual void Invoke() = 0;
 ```
 
-## <a name="releasenotifier-release"></a>Module::ReleaseNotifier::Release
+## <a name="releasenotifier-release"></a> Module::ReleaseNotifier::Release
 
 Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of **true**.
 
@@ -66,7 +66,7 @@ Deletes the current `Module::ReleaseNotifier` object if the object was construct
 void Release() throw();
 ```
 
-## <a name="releasenotifier-releasenotifier"></a>Module::ReleaseNotifier::ReleaseNotifier
+## <a name="releasenotifier-releasenotifier"></a> Module::ReleaseNotifier::ReleaseNotifier
 
 Initializes a new instance of the `Module::ReleaseNotifier` class.
 

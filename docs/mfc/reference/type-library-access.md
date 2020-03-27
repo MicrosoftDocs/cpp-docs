@@ -17,7 +17,7 @@ The following macros allow an OLE control to provide access to its own type libr
 |[DECLARE_OLETYPELIB](#declare_oletypelib)|Declares a `GetTypeLib` member function of an OLE control (must be used in the class declaration).|
 |[IMPLEMENT_OLETYPELIB](#implement_oletypelib)|Implements a `GetTypeLib` member function of an OLE control (must be used in the class implementation).|
 
-##  <a name="declare_oletypelib"></a>  DECLARE_OLETYPELIB
+## <a name="declare_oletypelib"></a> DECLARE_OLETYPELIB
 
 Declares the `GetTypeLib` member function of your control class.
 
@@ -38,7 +38,7 @@ Use this macro in the control class header file.
 
 **Header:** afxdisp.h
 
-##  <a name="implement_oletypelib"></a>  IMPLEMENT_OLETYPELIB
+## <a name="implement_oletypelib"></a> IMPLEMENT_OLETYPELIB
 
 Implements the control's `GetTypeLib` member function.
 

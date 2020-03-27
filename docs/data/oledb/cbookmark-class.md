@@ -70,7 +70,7 @@ CBookmark(DBLENGTH nSize);
 The first function sets the buffer to NULL and the buffer size to 0. The second function sets the buffer size to *nSize*, and the buffer to a byte array of *nSize* bytes.
 
 > [!NOTE]
->  This function is only available in `CBookmark<0>`.
+> This function is only available in `CBookmark<0>`.
 
 ## <a name="getbuffer"></a> CBookmark::GetBuffer
 

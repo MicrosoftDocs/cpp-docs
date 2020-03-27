@@ -104,7 +104,7 @@ Name                                                                   | Descrip
 
 **Namespace:** Microsoft::WRL
 
-## <a name="tilde-module"></a>Module::~Module
+## <a name="tilde-module"></a> Module::~Module
 
 Deinitializes the current instance of the `Module` class.
 
@@ -112,7 +112,7 @@ Deinitializes the current instance of the `Module` class.
 virtual ~Module();
 ```
 
-## <a name="create"></a>Module::Create
+## <a name="create"></a> Module::Create
 
 Creates an instance of a module.
 
@@ -147,7 +147,7 @@ The *object* and *method* parameters are used in combination. Points to the meth
 
 Reference to the module.
 
-## <a name="decrementobjectcount"></a>Module::DecrementObjectCount
+## <a name="decrementobjectcount"></a> Module::DecrementObjectCount
 
 Decrements the number of objects tracked by the module.
 
@@ -159,7 +159,7 @@ virtual long DecrementObjectCount();
 
 The count before the decrement operation.
 
-## <a name="getactivationfactory"></a>Module::GetActivationFactory
+## <a name="getactivationfactory"></a> Module::GetActivationFactory
 
 Gets an activation factory for the module.
 
@@ -186,7 +186,7 @@ The name of a subset of class factories in the current module. Specify the serve
 
 S_OK if successful; otherwise, the HRESULT returned by GetActivationFactory.
 
-## <a name="getclassobject"></a>Module::GetClassObject
+## <a name="getclassobject"></a> Module::GetClassObject
 
 Retreives a cache of class factories.
 
@@ -219,7 +219,7 @@ The server name that is specified in either the `ActivatableClassWithFactory`, `
 
 Use this method only for COM, not the Windows Runtime. This method exposes only `IClassFactory` methods.
 
-## <a name="getmodule"></a>Module::GetModule
+## <a name="getmodule"></a> Module::GetModule
 
 Creates an instance of a module.
 
@@ -232,7 +232,7 @@ WRL_NOTHROW static Module& GetModule();
 
 A reference to a module.
 
-## <a name="getobjectcount"></a>Module::GetObjectCount
+## <a name="getobjectcount"></a> Module::GetObjectCount
 
 Retrieves the number of objects managed by this module.
 
@@ -244,7 +244,7 @@ virtual long GetObjectCount() const;
 
 The current number of objects managed by this module.
 
-## <a name="incrementobjectcount"></a>Module::IncrementObjectCount
+## <a name="incrementobjectcount"></a> Module::IncrementObjectCount
 
 Increments the number of objects tracked by the module.
 
@@ -256,7 +256,7 @@ virtual long IncrementObjectCount();
 
 The count before the increment operation.
 
-## <a name="module"></a>Module::Module
+## <a name="module"></a> Module::Module
 
 Initializes a new instance of the `Module` class.
 
@@ -268,7 +268,7 @@ Module();
 
 This constructor is protected and cannot be called with the `new` keyword. Instead, call either [Module::GetModule](#getmodule) or [Module::Create](#create).
 
-## <a name="objectcount"></a>Module::objectCount_
+## <a name="objectcount"></a> Module::objectCount_
 
 Keeps track of how many classes have been created with the [Make](make-function.md) function.
 
@@ -276,7 +276,7 @@ Keeps track of how many classes have been created with the [Make](make-function.
 volatile long objectCount_;
 ```
 
-## <a name="registercomobject"></a>Module::RegisterCOMObject
+## <a name="registercomobject"></a> Module::RegisterCOMObject
 
 Registers one or more COM objects so other applications can connect to them.
 
@@ -316,7 +316,7 @@ The COM objects are registered with the CLSCTX_LOCAL_SERVER enumerator of the CL
 
 The type of connection to the registered objects is specified by a combination of the current *comflag* template parameter and the REGCLS_SUSPENDED enumerator of the REGCLS enumeration.
 
-## <a name="registerobjects"></a>Module::RegisterObjects
+## <a name="registerobjects"></a> Module::RegisterObjects
 
 Registers COM or Windows Runtime objects so other applications can connect to them.
 
@@ -338,7 +338,7 @@ Name of the server that created the objects.
 
 S_OK if successful; otherwise, an HRESULT that indicates the reason the operation failed.
 
-## <a name="registerwinrtobject"></a>Module::RegisterWinRTObject
+## <a name="registerwinrtobject"></a> Module::RegisterWinRTObject
 
 Registers one or more Windows Runtime objects so other applications can connect to them.
 
@@ -367,7 +367,7 @@ The number of objects to register.
 
 S_OK if successful; otherwise, an error HRESULT such as CO_E_OBJISREG that indicates the reason the operation failed.
 
-## <a name="releasenotifier"></a>Module::releaseNotifier_
+## <a name="releasenotifier"></a> Module::releaseNotifier_
 
 Holds a pointer to a `ReleaseNotifier` object.
 
@@ -375,7 +375,7 @@ Holds a pointer to a `ReleaseNotifier` object.
 ReleaseNotifier *releaseNotifier_;
 ```
 
-## <a name="terminate"></a>Module::Terminate
+## <a name="terminate"></a> Module::Terminate
 
 Causes all factories instantiated by the module to shut down.
 
@@ -387,7 +387,7 @@ void Terminate();
 
 Releases the factories in the cache.
 
-## <a name="unregistercomobject"></a>Module::UnregisterCOMObject
+## <a name="unregistercomobject"></a> Module::UnregisterCOMObject
 
 Unregisters one or more COM objects, which prevents other applications from connecting to them.
 
@@ -413,7 +413,7 @@ The number of classes to unregister.
 
 S_OK if this operation is successful; otherwise, an error HRESULT that indicates the reason the operation failed.
 
-## <a name="unregisterobjects"></a>Module::UnregisterObjects
+## <a name="unregisterobjects"></a> Module::UnregisterObjects
 
 Unregisters the objects in the specified module so that other applications cannot connect to them.
 
@@ -435,7 +435,7 @@ A qualifying name that specifies a subset of objects affected by this operation.
 
 S_OK if this operation is successful; otherwise, an error HRESULT that indicates the reason this operation failed.
 
-## <a name="unregisterwinrtobject"></a>Module::UnregisterWinRTObject
+## <a name="unregisterwinrtobject"></a> Module::UnregisterWinRTObject
 
 Unregisters one or more Windows Runtime objects so that other applications cannot connect to them.
 

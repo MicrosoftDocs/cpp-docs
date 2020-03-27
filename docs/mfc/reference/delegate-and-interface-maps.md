@@ -42,7 +42,7 @@ This macro marks the beginning of a list of delegate entries, which compose a de
 
 **Header:** msclr\event.h
 
-##  <a name="begin_interface_map"></a>BEGIN_INTERFACE_MAP
+## <a name="begin_interface_map"></a> BEGIN_INTERFACE_MAP
 
 Begins the definition of the interfaced map when used in the implementation file.
 
@@ -70,7 +70,7 @@ For more information on interface maps, see [Technical Note 38](../tn038-mfc-ole
 
 **Header:** afxwin.h
 
-##  <a name="commandhandler"></a>CommandHandler Delegate
+## <a name="commandhandler"></a> CommandHandler Delegate
 
 Registers callback methods with a command source.
 
@@ -97,7 +97,7 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
-##  <a name="commanduihandler"></a>CommandUIHandler
+## <a name="commanduihandler"></a> CommandUIHandler
 
 Registers callback methods with a user interface update command message.
 
@@ -125,7 +125,7 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
-##  <a name="end_delegate_map"></a>END_DELEGATE_MAP
+## <a name="end_delegate_map"></a> END_DELEGATE_MAP
 
 Ends a delegate map.
 
@@ -143,7 +143,7 @@ This macro marks the end of a list of delegate entries, which compose a delegate
 
 **Header:** msclr\event.h
 
-##  <a name="end_interface_map"></a>END_INTERFACE_MAP
+## <a name="end_interface_map"></a> END_INTERFACE_MAP
 
 Ends the interface map in the implementation file.
 
@@ -161,7 +161,7 @@ For more information about interface maps, see [Technical Note 38](../tn038-mfc-
 
 **Header:** afxwin.h
 
-##  <a name="event_delegate_entry"></a>EVENT_DELEGATE_ENTRY
+## <a name="event_delegate_entry"></a> EVENT_DELEGATE_ENTRY
 
 Creates an entry in the delegate map.
 
@@ -200,7 +200,7 @@ END_DELEGATE_MAP()
 
 **Header:** msclr\event.h
 
-##  <a name="interface_part"></a>INTERFACE_PART
+## <a name="interface_part"></a> INTERFACE_PART
 
 Used between the BEGIN_INTERFACE_MAP macro and the END_INTERFACE_MAP macro for each interface your object will support.
 
@@ -229,7 +229,7 @@ For more information on interface maps, see [Technical Note 38](../tn038-mfc-ole
 
 **Header:** afxwin.h
 
-##  <a name="make_delegate"></a>MAKE_DELEGATE
+## <a name="make_delegate"></a> MAKE_DELEGATE
 
 Attaches an event handler to a managed control.
 

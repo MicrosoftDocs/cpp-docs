@@ -49,7 +49,7 @@ For further information on DocObjects, see [CDocObjectServer](../../mfc/referenc
 
 **Header:** afxdocobj.h
 
-##  <a name="colecmdui"></a>  COleCmdUI::COleCmdUI
+## <a name="colecmdui"></a> COleCmdUI::COleCmdUI
 
 Constructs a `COleCmdUI` object associated with a particular user-interface command.
 
@@ -75,7 +75,7 @@ A pointer to a GUID that identifies a set of commands.
 
 The `COleCmdUI` object provides a programmatic interface for updating DocObject user-interface objects such as menu items or control-bar buttons. The user-interface objects can be enabled, disabled, checked, and/or cleared through the `COleCmdUI` object.
 
-##  <a name="enable"></a>  COleCmdUI::Enable
+## <a name="enable"></a> COleCmdUI::Enable
 
 Call this function to set the command flag of the `COleCmdUI` object to OLECOMDF_ENABLED, which tells the interface the command is available and enabled, or to clear the command flag.
 
@@ -88,7 +88,7 @@ virtual void Enable(BOOL bOn);
 *bOn*<br/>
 Indicates whether the command associated with the `COleCmdUI` object should be enabled or disabled. Nonzero enables the command; 0 disables the command.
 
-##  <a name="setcheck"></a>  COleCmdUI::SetCheck
+## <a name="setcheck"></a> COleCmdUI::SetCheck
 
 Call this function to set the state of an on/off toggle command.
 
@@ -107,7 +107,7 @@ A value determining the state to set an on/off toggle command. Values are:
 |**2**|Sets the command to indeterminate; the state cannot be determined because the attribute of this command is in both on and off states in the relevant selection.|
 |any other value|Sets the command to off.|
 
-##  <a name="settext"></a>  COleCmdUI::SetText
+## <a name="settext"></a> COleCmdUI::SetText
 
 Call this function to return a text name or status string for a command.
 

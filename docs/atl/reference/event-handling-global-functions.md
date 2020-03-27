@@ -10,7 +10,7 @@ ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
 This function provides an event handler.
 
 > [!IMPORTANT]
->  The function listed in the following table cannot be used in applications that execute in the Windows Runtime.
+> The function listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
 |||
 |-|-|
@@ -20,12 +20,12 @@ This function provides an event handler.
 
 **Header:** atlbase.h
 
-##  <a name="atlwaitwithmessageloop"></a>  AtlWaitWithMessageLoop
+## <a name="atlwaitwithmessageloop"></a> AtlWaitWithMessageLoop
 
 Waits for the object to be signaled, meanwhile dispatching window messages as needed.
 
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the Windows Runtime.
+> This function cannot be used in applications that execute in the Windows Runtime.
 
 ```
 BOOL AtlWaitWithMessageLoop(HANDLE hEvent);

@@ -27,7 +27,7 @@ statements
 ## Remarks
 
 > [!CAUTION]
->  To achieve the most reliable results, use the **__if_not_exists** statement under the following constraints.
+> To achieve the most reliable results, use the **__if_not_exists** statement under the following constraints.
 
 - Apply the **__if_not_exists** statement to only simple types, not templates.
 

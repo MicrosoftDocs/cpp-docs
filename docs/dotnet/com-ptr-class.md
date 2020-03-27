@@ -181,7 +181,7 @@ int main() {
 
 **Namespace** msclr::com
 
-## <a name="ptr"></a>ptr::ptr
+## <a name="ptr"></a> ptr::ptr
 
 Returns a pointer to the owned COM object.
 
@@ -268,7 +268,7 @@ int main() {
 }
 ```
 
-## <a name="tilde-ptr"></a>ptr::~ptr
+## <a name="tilde-ptr"></a> ptr::~ptr
 
 Destructs a `com::ptr`.
 
@@ -343,7 +343,7 @@ int main() {
 }
 ```
 
-## <a name="attach"></a>ptr::Attach
+## <a name="attach"></a> ptr::Attach
 
 Attaches a COM object to a `com::ptr`.
 
@@ -444,7 +444,7 @@ int main() {
 }
 ```
 
-## <a name="createInstance"></a>ptr::CreateInstance
+## <a name="createInstance"></a> ptr::CreateInstance
 
 Creates an instance of a COM object within a `com::ptr`.
 
@@ -562,7 +562,7 @@ int main() {
 }
 ```
 
-## <a name="detach"></a>ptr::Detach
+## <a name="detach"></a> ptr::Detach
 
 Gives up ownership of the COM object, returning a pointer to the object.
 
@@ -667,7 +667,7 @@ int main() {
 }
 ```
 
-## <a name="getInterface"></a>ptr::GetInterface
+## <a name="getInterface"></a> ptr::GetInterface
 
 Returns a pointer to the owned COM object.
 
@@ -809,7 +809,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="queryInterface"></a>ptr::QueryInterface
+## <a name="queryInterface"></a> ptr::QueryInterface
 
 Queries the owned COM object for an interface and attaches the result to another `com::ptr`.
 
@@ -940,7 +940,7 @@ int main() {
 <#document>persnickety</#document>
 ```
 
-## <a name="release"></a>ptr::Release
+## <a name="release"></a> ptr::Release
 
 Releases all owned references on the COM object.
 
@@ -1028,7 +1028,7 @@ int main() {
 }
 ```
 
-## <a name="operator-arrow"></a>ptr::operator-&gt;
+## <a name="operator-arrow"></a> ptr::operator-&gt;
 
 Member access operator, used to call methods on the owned COM object.
 
@@ -1170,7 +1170,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="operator-assign"></a>ptr::operator=
+## <a name="operator-assign"></a> ptr::operator=
 
 Attaches a COM object to a `com::ptr`.
 
@@ -1346,7 +1346,7 @@ int main() {
 DOM Document created.
 ```
 
-## <a name="operator-logical-not"></a>ptr::operator!
+## <a name="operator-logical-not"></a> ptr::operator!
 
 Operator to determine if the owned COM object is invalid.
 

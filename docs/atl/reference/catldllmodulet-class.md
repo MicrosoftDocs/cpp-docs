@@ -61,7 +61,7 @@ For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-m
 
 **Header:** atlbase.h
 
-##  <a name="catldllmodulet"></a>  CAtlDllModuleT::CAtlDllModuleT
+## <a name="catldllmodulet"></a> CAtlDllModuleT::CAtlDllModuleT
 
 The constructor.
 
@@ -69,7 +69,7 @@ The constructor.
 CAtlDllModuleT() throw();
 ```
 
-##  <a name="dtor"></a>  CAtlDllModuleT::~CAtlDllModuleT
+## <a name="dtor"></a> CAtlDllModuleT::~CAtlDllModuleT
 
 The destructor.
 
@@ -77,7 +77,7 @@ The destructor.
 ~CAtlDllModuleT() throw();
 ```
 
-##  <a name="dllcanunloadnow"></a>  CAtlDllModuleT::DllCanUnloadNow
+## <a name="dllcanunloadnow"></a> CAtlDllModuleT::DllCanUnloadNow
 
 Tests if the DLL can be unloaded.
 
@@ -89,7 +89,7 @@ HRESULT DllCanUnloadNow() throw();
 
 Returns S_OK if the DLL can be unloaded, or S_FALSE if it cannot.
 
-##  <a name="dllgetclassobject"></a>  CAtlDllModuleT::DllGetClassObject
+## <a name="dllgetclassobject"></a> CAtlDllModuleT::DllGetClassObject
 
 Returns the class factory.
 
@@ -115,7 +115,7 @@ A pointer to the interface pointer identified by *riid*. If the object does not 
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="dllmain"></a>  CAtlDllModuleT::DllMain
+## <a name="dllmain"></a> CAtlDllModuleT::DllMain
 
 The optional entry point into a dynamic-link library (DLL).
 
@@ -139,7 +139,7 @@ Always returns TRUE.
 
 Disabling the DLL_THREAD_ATTACH and DLL_THREAD_DETACH notification calls can be a useful optimization for multithreaded applications that have many DLLs, that frequently create and delete threads, and whose DLLs do not need these thread-level notifications of attachment/detachment.
 
-##  <a name="dllregisterserver"></a>  CAtlDllModuleT::DllRegisterServer
+## <a name="dllregisterserver"></a> CAtlDllModuleT::DllRegisterServer
 
 Adds entries to the system registry for objects in the DLL.
 
@@ -156,7 +156,7 @@ TRUE if the type library is to be registered. The default value is TRUE.
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="dllunregisterserver"></a>  CAtlDllModuleT::DllUnregisterServer
+## <a name="dllunregisterserver"></a> CAtlDllModuleT::DllUnregisterServer
 
 Removes entries in the system registry for objects in the DLL.
 
@@ -173,7 +173,7 @@ TRUE if the type library is to be removed from the registry. The default value i
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-##  <a name="getclassobject"></a>  CAtlDllModuleT::GetClassObject
+## <a name="getclassobject"></a> CAtlDllModuleT::GetClassObject
 
 Creates an object of the specified CLSID.
 

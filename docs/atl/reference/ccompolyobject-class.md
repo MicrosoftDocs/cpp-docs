@@ -76,7 +76,7 @@ For more information about aggregation, see the article [Fundamentals of ATL COM
 
 **Header:** atlcom.h
 
-##  <a name="addref"></a>  CComPolyObject::AddRef
+## <a name="addref"></a> CComPolyObject::AddRef
 
 Increments the reference count on the object.
 
@@ -88,7 +88,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 A value that may be useful for diagnostics or testing.
 
-##  <a name="ccompolyobject"></a>  CComPolyObject::CComPolyObject
+## <a name="ccompolyobject"></a> CComPolyObject::CComPolyObject
 
 The constructor.
 
@@ -107,7 +107,7 @@ Initializes the `CComContainedObject` data member, [m_contained](#m_contained), 
 
 The destructor decrements the module lock count.
 
-##  <a name="dtor"></a>  CComPolyObject::~CComPolyObject
+## <a name="dtor"></a> CComPolyObject::~CComPolyObject
 
 The destructor.
 
@@ -119,7 +119,7 @@ The destructor.
 
 Frees all allocated resources, calls [FinalRelease](#finalrelease), and decrements the module lock count.
 
-##  <a name="createinstance"></a>  CComPolyObject::CreateInstance
+## <a name="createinstance"></a> CComPolyObject::CreateInstance
 
 Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
@@ -144,7 +144,7 @@ The object returned has a reference count of zero, so call `AddRef` immediately,
 
 If you don't need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) instead.
 
-##  <a name="finalconstruct"></a>  CComPolyObject::FinalConstruct
+## <a name="finalconstruct"></a> CComPolyObject::FinalConstruct
 
 Called during the final stages of object construction, this method performs any final initialization on the [m_contained](#m_contained) data member.
 
@@ -156,7 +156,7 @@ HRESULT FinalConstruct();
 
 A standard HRESULT value.
 
-##  <a name="finalrelease"></a>  CComPolyObject::FinalRelease
+## <a name="finalrelease"></a> CComPolyObject::FinalRelease
 
 Called during object destruction, this method frees the [m_contained](#m_contained) data member.
 
@@ -164,7 +164,7 @@ Called during object destruction, this method frees the [m_contained](#m_contain
 void FinalRelease();
 ```
 
-##  <a name="m_contained"></a>  CComPolyObject::m_contained
+## <a name="m_contained"></a> CComPolyObject::m_contained
 
 A [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) object derived from your class.
 
@@ -181,7 +181,7 @@ CComContainedObject<contained> m_contained;
 
 `IUnknown` calls through `m_contained` are delegated to the outer unknown if the object is aggregated, or to the `IUnknown` of this object if the object is not aggregated.
 
-##  <a name="queryinterface"></a>  CComPolyObject::QueryInterface
+## <a name="queryinterface"></a> CComPolyObject::QueryInterface
 
 Retrieves a pointer to the requested interface.
 
@@ -213,7 +213,7 @@ A standard HRESULT value.
 
 For an aggregated object, if the requested interface is `IUnknown`, `QueryInterface` returns a pointer to the aggregated object's own `IUnknown` and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` data member, [m_contained](#m_contained).
 
-##  <a name="release"></a>  CComPolyObject::Release
+## <a name="release"></a> CComPolyObject::Release
 
 Decrements the reference count on the object.
 

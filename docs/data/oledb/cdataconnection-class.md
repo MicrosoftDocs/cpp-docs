@@ -50,7 +50,7 @@ Without `CDataConnection`, you have to create a `CDataSource` object, call its [
 With `CDataConnection`, you only need to create a connection object, pass it an initialization string, then use that connection to open commands. If you plan on using your connection to the database repeatedly, it is a good idea to keep the connection open, and `CDataConnection` provides a convenient way to do that.
 
 > [!NOTE]
->  If you are creating a database application that needs to handle multiple sessions, you will need to use [OpenNewSession](../../data/oledb/cdataconnection-opennewsession.md).
+> If you are creating a database application that needs to handle multiple sessions, you will need to use [OpenNewSession](../../data/oledb/cdataconnection-opennewsession.md).
 
 ## <a name="cdataconnection"></a> CDataConnection::CDataConnection
 

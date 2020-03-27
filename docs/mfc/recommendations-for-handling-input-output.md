@@ -12,21 +12,21 @@ Whether you use file-based I/O or not depends on how you respond to the question
 
 - Yes, the primary data resides in a disk file:
 
-     **Does the application read the whole file into memory on File Open and write the whole file back to disk on File Save**
+   **Does the application read the whole file into memory on File Open and write the whole file back to disk on File Save**
 
-   - Yes: This is the default MFC document case. Use `CDocument` serialization.
+  - Yes: This is the default MFC document case. Use `CDocument` serialization.
 
-   - No: This is typically the case of transaction-based updating of the file. You update the file on a per-transaction basis and don't need `CDocument` serialization.
+  - No: This is typically the case of transaction-based updating of the file. You update the file on a per-transaction basis and don't need `CDocument` serialization.
 
 - No, the primary data doesn't reside in a disk file:
 
-     **Does the data reside in an ODBC data source**
+   **Does the data reside in an ODBC data source**
 
-   - Yes, the data resides in an ODBC data source:
+  - Yes, the data resides in an ODBC data source:
 
       Use MFC's database support. The standard MFC implementation for this case includes a `CDatabase` object, as discussed in the article [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.
 
-   - No, the data doesn't reside in an ODBC data source.
+  - No, the data doesn't reside in an ODBC data source.
 
       Examples of this case: the data resides in a non-ODBC DBMS; the data is read via some other mechanism, such as OLE or DDE.
 

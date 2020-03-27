@@ -43,9 +43,9 @@ You use tasks when you write asynchronous code and want some operation to occur 
 
 - [Composing Tasks](#composing-tasks)
 
-    - [The when_all Function](#when-all)
+  - [The when_all Function](#when-all)
 
-    - [The when_any Function](#when-any)
+  - [The when_any Function](#when-any)
 
 - [Delayed Task Execution](#delayed-tasks)
 
@@ -63,13 +63,13 @@ Because of their succinct syntax, lambda expressions are a common way to define 
 
 - Because tasks typically run on background threads, be aware of the object lifetime when you capture variables in lambda expressions. When you capture a variable by value, a copy of that variable is made in the lambda body. When you capture by reference, a copy is not made. Therefore, ensure that the lifetime of any variable that you capture by reference outlives the task that uses it.
 
-- When you pass a lambda expression to a task, don’t capture variables that are allocated on the stack by reference.
+- When you pass a lambda expression to a task, don't capture variables that are allocated on the stack by reference.
 
-- Be explicit about the variables you capture in lambda expressions so   that you can identify what you’re capturing by value versus by reference. For this reason we recommend that you do not use the `[=]` or `[&]` options for lambda expressions.
+- Be explicit about the variables you capture in lambda expressions so   that you can identify what you're capturing by value versus by reference. For this reason we recommend that you do not use the `[=]` or `[&]` options for lambda expressions.
 
-A common pattern is when one task in a continuation chain assigns to a variable, and another task reads that variable. You can’t capture by value because each continuation task would hold a different copy of the variable. For stack-allocated variables, you also can’t capture by reference because the variable may no longer be valid.
+A common pattern is when one task in a continuation chain assigns to a variable, and another task reads that variable. You can't capture by value because each continuation task would hold a different copy of the variable. For stack-allocated variables, you also can't capture by reference because the variable may no longer be valid.
 
-To solve this problem, use a smart pointer, such as [std::shared_ptr](../../standard-library/shared-ptr-class.md), to wrap the variable and pass the smart pointer by value. In this way, the underlying object can be assigned to and read from, and will outlive the tasks that use it. Use this technique even when the variable is a pointer or a reference-counted handle (`^`) to a Windows Runtime object. Here’s a basic example:
+To solve this problem, use a smart pointer, such as [std::shared_ptr](../../standard-library/shared-ptr-class.md), to wrap the variable and pass the smart pointer by value. In this way, the underlying object can be assigned to and read from, and will outlive the tasks that use it. Use this technique even when the variable is a pointer or a reference-counted handle (`^`) to a Windows Runtime object. Here's a basic example:
 
 [!code-cpp[concrt-lambda-task-lifetime#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_1.cpp)]
 
@@ -168,7 +168,7 @@ In this example, you can also specify `task<vector<int>>` to produce a task-base
 
 If any task in a set of tasks is canceled or throws an exception, `when_all` immediately completes and does not wait for the remaining tasks to finish. If an exception is thrown, the runtime rethrows the exception when you call `task::get` or `task::wait` on the task object that `when_all` returns. If more than one task throws, the runtime chooses one of them. Therefore, ensure that you observe all exceptions after all tasks complete; an unhandled task exception causes the app to terminate.
 
-Here’s a utility function that you can use to ensure that your program observes all exceptions. For each task in the provided range, `observe_all_exceptions` triggers any exception that occurred to be rethrown and then swallows that exception.
+Here's a utility function that you can use to ensure that your program observes all exceptions. For each task in the provided range, `observe_all_exceptions` triggers any exception that occurred to be rethrown and then swallows that exception.
 
 [!code-cpp[concrt-eh-when_all#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_10.cpp)]
 
@@ -229,7 +229,7 @@ You can also use the `||` syntax to produce a task that completes after the firs
 
 It is sometimes necessary to delay the execution of a task until a condition is satisfied, or to start a task in response to an external event. For example, in asynchronous programming, you might have to start a task in response to an I/O completion event.
 
-Two ways to accomplish this are to use a continuation or to start a task and wait on an event inside the task’s work function. However, there are cases where is it not possible to use one of these techniques. For example, to create a continuation, you must have the antecedent task. However, if you do not have the antecedent task, you can create a *task completion event* and later chain that completion event to the antecedent task when it becomes available. In addition, because a waiting task also blocks a thread, you can use task completion events to perform work when an asynchronous operation completes, and thereby free a thread.
+Two ways to accomplish this are to use a continuation or to start a task and wait on an event inside the task's work function. However, there are cases where is it not possible to use one of these techniques. For example, to create a continuation, you must have the antecedent task. However, if you do not have the antecedent task, you can create a *task completion event* and later chain that completion event to the antecedent task when it becomes available. In addition, because a waiting task also blocks a thread, you can use task completion events to perform work when an asynchronous operation completes, and thereby free a thread.
 
 The [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) class helps simplify such composition of tasks. Like the `task` class, the type parameter `T` is the type of the result that is produced by the task. This type can be `void` if the task does not return a value. `T` cannot use the `const` modifier. Typically, a `task_completion_event` object is provided to a thread or task that will signal it when the value for it becomes available. At the same time, one or more tasks are set as listeners of that event. When the event is set, the listener tasks complete and their continuations are scheduled to run.
 

@@ -47,7 +47,7 @@ This event handler is created and passed to IUIAnimationManager::SetManagerEvent
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="canimationmanagereventhandler"></a>  CAnimationManagerEventHandler::CAnimationManagerEventHandler
+## <a name="canimationmanagereventhandler"></a> CAnimationManagerEventHandler::CAnimationManagerEventHandler
 
 Visual Studio 2010 SP1 is required.
 
@@ -57,7 +57,7 @@ Constructs a CAnimationManagerEventHandler object.
 CAnimationManagerEventHandler();
 ```
 
-##  <a name="createinstance"></a>  CAnimationManagerEventHandler::CreateInstance
+## <a name="createinstance"></a> CAnimationManagerEventHandler::CreateInstance
 
 Visual Studio 2010 SP1 is required.
 
@@ -81,7 +81,7 @@ Output. If the method succeeds it contains a pointer to COM object that will han
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="onmanagerstatuschanged"></a>  CAnimationManagerEventHandler::OnManagerStatusChanged
+## <a name="onmanagerstatuschanged"></a> CAnimationManagerEventHandler::OnManagerStatusChanged
 
 Visual Studio 2010 SP1 is required.
 
@@ -105,7 +105,7 @@ Previous status.
 
 Current implementation always returns S_OK;
 
-##  <a name="setanimationcontroller"></a>  CAnimationManagerEventHandler::SetAnimationController
+## <a name="setanimationcontroller"></a> CAnimationManagerEventHandler::SetAnimationController
 
 Visual Studio 2010 SP1 is required.
 

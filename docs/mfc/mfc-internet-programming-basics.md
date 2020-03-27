@@ -49,7 +49,7 @@ MFC provides classes that support Internet programming. You can use [COleControl
 
 - [ATL Support for DHTML Controls](../atl/atl-support-for-dhtml-controls.md)
 
-##  <a name="_core_web_sites_for_more_information"></a> Web Sites for More Information
+## <a name="_core_web_sites_for_more_information"></a> Web Sites for More Information
 
 For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](https://go.microsoft.com/fwlink/p/?linkid=56322) Web site. (Links may change without notice.)
 
@@ -57,6 +57,6 @@ This Web site for developers contains information on using Microsoft development
 
 The [World Wide Web Consortium (W3C)](https://go.microsoft.com/fwlink/p/?linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.
 
-##  <a name="_core_more_internet_help"></a> More Internet Help
+## <a name="_core_more_internet_help"></a> More Internet Help
 
 The OLE section of the Windows SDK contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.
