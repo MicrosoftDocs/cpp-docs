@@ -114,7 +114,7 @@ The following example demonstrates how to construct a `CMFCToolTipCtrl` object, 
 
 **Header:** afxtooltipctrl.h
 
-##  <a name="cmfctooltipctrl"></a>  CMFCToolTipCtrl::CMFCToolTipCtrl
+## <a name="cmfctooltipctrl"></a> CMFCToolTipCtrl::CMFCToolTipCtrl
 
 ```
 CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
@@ -126,7 +126,7 @@ CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 
 ### Remarks
 
-##  <a name="geticonsize"></a>  CMFCToolTipCtrl::GetIconSize
+## <a name="geticonsize"></a> CMFCToolTipCtrl::GetIconSize
 
 Returns the size of an icon in a tooltip.
 
@@ -138,7 +138,7 @@ virtual CSize GetIconSize();
 
 The size of the icon, in pixels.
 
-##  <a name="getparams"></a>  CMFCToolTipCtrl::GetParams
+## <a name="getparams"></a> CMFCToolTipCtrl::GetParams
 
 Returns the display settings of a tooltip.
 
@@ -150,7 +150,7 @@ const CMFCToolTipInfo& GetParams() const;
 
 The current tooltip display settings , which are stored in a [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md) object.
 
-##  <a name="ondrawborder"></a>  CMFCToolTipCtrl::OnDrawBorder
+## <a name="ondrawborder"></a> CMFCToolTipCtrl::OnDrawBorder
 
 Draws the border of a tooltip.
 
@@ -176,7 +176,7 @@ virtual void OnDrawBorder(
 
 Override this method in a derived class to customize the appearance of the tooltip border.
 
-##  <a name="ondrawdescription"></a>  CMFCToolTipCtrl::OnDrawDescription
+## <a name="ondrawdescription"></a> CMFCToolTipCtrl::OnDrawDescription
 
 ```
 virtual CSize OnDrawDescription(
@@ -195,7 +195,7 @@ virtual CSize OnDrawDescription(
 
 ### Remarks
 
-##  <a name="ondrawicon"></a>  CMFCToolTipCtrl::OnDrawIcon
+## <a name="ondrawicon"></a> CMFCToolTipCtrl::OnDrawIcon
 
 Displays an icon in a tooltip.
 
@@ -221,7 +221,7 @@ TRUE if the icon was drawn. Otherwise FALSE.
 
 Override this method in a derived class to display a custom icon. You must also override [CMFCToolTipCtrl::GetIconSize](#geticonsize) to enable the tooltip to correctly calculate the layout of text and description.
 
-##  <a name="ondrawlabel"></a>  CMFCToolTipCtrl::OnDrawLabel
+## <a name="ondrawlabel"></a> CMFCToolTipCtrl::OnDrawLabel
 
 Draws the label of a tooltip, or calculates the size of the label.
 
@@ -251,7 +251,7 @@ Size of the label, in pixels.
 
 Override this method in a derived class if you want to customize the appearance of the tooltip label.
 
-##  <a name="ondrawseparator"></a>  CMFCToolTipCtrl::OnDrawSeparator
+## <a name="ondrawseparator"></a> CMFCToolTipCtrl::OnDrawSeparator
 
 Draws the separator between the label and the description in a tooltip.
 
@@ -283,7 +283,7 @@ The default implementation draws a line from the point (x1, y) to the point (x2,
 
 Override this method in a derived class to customize the appearance of the separator.
 
-##  <a name="onfillbackground"></a>  CMFCToolTipCtrl::OnFillBackground
+## <a name="onfillbackground"></a> CMFCToolTipCtrl::OnFillBackground
 
 Fills the tooltip background.
 
@@ -315,7 +315,7 @@ The default implementation fills the rectangle that is specified by *rect* with 
 
 Override this method in a derived class if you want to customize the appearance of the tooltip.
 
-##  <a name="setdescription"></a>  CMFCToolTipCtrl::SetDescription
+## <a name="setdescription"></a> CMFCToolTipCtrl::SetDescription
 
 Sets the description to be displayed by the tooltip.
 
@@ -332,7 +332,7 @@ virtual void SetDescription(const CString strDesrciption);
 
 The description text is displayed on the tooltip under the separator.
 
-##  <a name="setfixedwidth"></a>  CMFCToolTipCtrl::SetFixedWidth
+## <a name="setfixedwidth"></a> CMFCToolTipCtrl::SetFixedWidth
 
 ```
 void SetFixedWidth(
@@ -347,7 +347,7 @@ void SetFixedWidth(
 
 ### Remarks
 
-##  <a name="sethotribbonbutton"></a>  CMFCToolTipCtrl::SetHotRibbonButton
+## <a name="sethotribbonbutton"></a> CMFCToolTipCtrl::SetHotRibbonButton
 
 ```
 void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
@@ -359,7 +359,7 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 
 ### Remarks
 
-##  <a name="setlocation"></a>  CMFCToolTipCtrl::SetLocation
+## <a name="setlocation"></a> CMFCToolTipCtrl::SetLocation
 
 ```
 void SetLocation(CPoint pt);
@@ -371,7 +371,7 @@ void SetLocation(CPoint pt);
 
 ### Remarks
 
-##  <a name="setparams"></a>  CMFCToolTipCtrl::SetParams
+## <a name="setparams"></a> CMFCToolTipCtrl::SetParams
 
 Specifies the visual appearance of a tooltip by using a [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md) object.
 

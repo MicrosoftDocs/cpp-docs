@@ -60,7 +60,7 @@ class CHwndRenderTarget : public CRenderTarget;
 
 **Header:** afxrendertarget.h
 
-##  <a name="attach"></a>  CHwndRenderTarget::Attach
+## <a name="attach"></a> CHwndRenderTarget::Attach
 
 Attaches existing render target interface to the object
 
@@ -73,7 +73,7 @@ void Attach(ID2D1HwndRenderTarget* pTarget);
 *pTarget*<br/>
 Existing render target interface. Cannot be NULL
 
-##  <a name="checkwindowstate"></a>  CHwndRenderTarget::CheckWindowState
+## <a name="checkwindowstate"></a> CHwndRenderTarget::CheckWindowState
 
 Indicates whether the HWND associated with this render target is occluded.
 
@@ -85,7 +85,7 @@ D2D1_WINDOW_STATE CheckWindowState() const;
 
 A value that indicates whether the HWND associated with this render target is occluded.
 
-##  <a name="chwndrendertarget"></a>  CHwndRenderTarget::CHwndRenderTarget
+## <a name="chwndrendertarget"></a> CHwndRenderTarget::CHwndRenderTarget
 
 Constructs a CHwndRenderTarget object from HWND.
 
@@ -98,7 +98,7 @@ CHwndRenderTarget(HWND hwnd = NULL);
 *hwnd*<br/>
 The HWND associated with this render target
 
-##  <a name="create"></a>  CHwndRenderTarget::Create
+## <a name="create"></a> CHwndRenderTarget::Create
 
 Creates a render target associated with the window
 
@@ -115,7 +115,7 @@ The HWND associated with this render target
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE
 
-##  <a name="detach"></a>  CHwndRenderTarget::Detach
+## <a name="detach"></a> CHwndRenderTarget::Detach
 
 Detaches render target interface from the object
 
@@ -127,7 +127,7 @@ ID2D1HwndRenderTarget* Detach();
 
 Pointer to detached render target interface.
 
-##  <a name="gethwnd"></a>  CHwndRenderTarget::GetHwnd
+## <a name="gethwnd"></a> CHwndRenderTarget::GetHwnd
 
 Returns the HWND associated with this render target.
 
@@ -139,7 +139,7 @@ HWND GetHwnd() const;
 
 The HWND associated with this render target.
 
-##  <a name="gethwndrendertarget"></a>  CHwndRenderTarget::GetHwndRenderTarget
+## <a name="gethwndrendertarget"></a> CHwndRenderTarget::GetHwndRenderTarget
 
 Returns ID2D1HwndRenderTarget interface.
 
@@ -151,7 +151,7 @@ ID2D1HwndRenderTarget* GetHwndRenderTarget();
 
 Pointer to an ID2D1HwndRenderTarget interface or NULL if object is not initialized yet.
 
-##  <a name="m_phwndrendertarget"></a>  CHwndRenderTarget::m_pHwndRenderTarget
+## <a name="m_phwndrendertarget"></a> CHwndRenderTarget::m_pHwndRenderTarget
 
 A pointer to an ID2D1HwndRenderTarget object.
 
@@ -159,7 +159,7 @@ A pointer to an ID2D1HwndRenderTarget object.
 ID2D1HwndRenderTarget* m_pHwndRenderTarget;
 ```
 
-##  <a name="operator_id2d1hwndrendertarget_star"></a>  CHwndRenderTarget::operator ID2D1HwndRenderTarget*
+## <a name="operator_id2d1hwndrendertarget_star"></a> CHwndRenderTarget::operator ID2D1HwndRenderTarget*
 
 Returns ID2D1HwndRenderTarget interface.
 
@@ -171,7 +171,7 @@ operator ID2D1HwndRenderTarget*();
 
 Pointer to an ID2D1HwndRenderTarget interface or NULL if object is not initialized yet.
 
-##  <a name="recreate"></a>  CHwndRenderTarget::ReCreate
+## <a name="recreate"></a> CHwndRenderTarget::ReCreate
 
 Re-creates a render target associated with the window
 
@@ -188,7 +188,7 @@ The HWND associated with this render target
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.
 
-##  <a name="resize"></a>  CHwndRenderTarget::Resize
+## <a name="resize"></a> CHwndRenderTarget::Resize
 
 Changes the size of the render target to the specified pixel size
 

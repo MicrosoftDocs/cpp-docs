@@ -294,7 +294,7 @@ inline int GetDriveNumber(const wchar_t* pszPath);
 
 See [PathGetDriveNumber](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw) for details.
 
-## <a name="isdirectory"></a>  ATLPath::IsDirectory
+## <a name="isdirectory"></a> ATLPath::IsDirectory
 
 This function is an overloaded wrapper for [PathIsDirectory](/windows/win32/api/shlwapi/nf-shlwapi-pathisdirectoryw).
 

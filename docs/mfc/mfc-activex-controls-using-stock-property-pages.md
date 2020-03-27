@@ -29,10 +29,10 @@ Note that the count of property pages, in the BEGIN_PROPPAGEIDS macro, is 4. Thi
 After these modifications have been made, rebuild your project. Your control now has property pages for the font, picture, and color properties.
 
 > [!NOTE]
->  If the control stock property pages cannot be accessed, it may be because the MFC DLL (MFCxx.DLL) has not been properly registered with the current operating system. This usually results from installing Visual C++ under an operating system different from the one currently running.
+> If the control stock property pages cannot be accessed, it may be because the MFC DLL (MFCxx.DLL) has not been properly registered with the current operating system. This usually results from installing Visual C++ under an operating system different from the one currently running.
 
 > [!TIP]
->  If your stock property pages are not visible (see previous Note), register the DLL by running RegSvr32.exe from the command line with the full path name to the DLL.
+> If your stock property pages are not visible (see previous Note), register the DLL by running RegSvr32.exe from the command line with the full path name to the DLL.
 
 ## See also
 

@@ -14,7 +14,7 @@ ms.assetid: 2eda2507-a134-4997-aa12-f2f8cb319e14
 Releases a multi-thread lock.
 
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+> This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
 
 ## Syntax
 

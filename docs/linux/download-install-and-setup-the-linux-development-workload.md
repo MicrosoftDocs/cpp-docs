@@ -4,7 +4,6 @@ description: "Describes how to download, install, and setup the Linux workload f
 ms.date: "06/11/2019"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 ---
-
 # Download, install, and set up the Linux workload
 
 ::: moniker range="vs-2015"

@@ -10,7 +10,7 @@ ms.assetid: 89590105-f001-4014-870d-142926091231
 This class is a wrapper for the `TOKEN_PRIVILEGES` structure.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -63,7 +63,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 **Header:** atlsecurity.h
 
-##  <a name="add"></a>  CTokenPrivileges::Add
+## <a name="add"></a> CTokenPrivileges::Add
 
 Adds one or more privileges to the `CTokenPrivileges` access token object.
 
@@ -87,7 +87,7 @@ Reference to a [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privil
 
 The first form of this method returns true if the privileges are successfully added, false otherwise.
 
-##  <a name="ctokenprivileges"></a>  CTokenPrivileges::CTokenPrivileges
+## <a name="ctokenprivileges"></a> CTokenPrivileges::CTokenPrivileges
 
 The constructor.
 
@@ -109,7 +109,7 @@ The [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) struc
 
 The `CTokenPrivileges` object can optionally be created using a `TOKEN_PRIVILEGES` structure or a previously defined `CTokenPrivileges` object.
 
-##  <a name="dtor"></a>  CTokenPrivileges::~CTokenPrivileges
+## <a name="dtor"></a> CTokenPrivileges::~CTokenPrivileges
 
 The destructor.
 
@@ -121,7 +121,7 @@ virtual ~CTokenPrivileges() throw();
 
 The destructor frees all allocated resources.
 
-##  <a name="delete"></a>  CTokenPrivileges::Delete
+## <a name="delete"></a> CTokenPrivileges::Delete
 
 Deletes a privilege from the `CTokenPrivileges` access token object.
 
@@ -142,7 +142,7 @@ Returns true if the privilege was successfully deleted, false otherwise.
 
 This method is useful as a tool for creating restricted tokens.
 
-##  <a name="deleteall"></a>  CTokenPrivileges::DeleteAll
+## <a name="deleteall"></a> CTokenPrivileges::DeleteAll
 
 Deletes all privileges from the `CTokenPrivileges` access token object.
 
@@ -154,7 +154,7 @@ void DeleteAll() throw();
 
 Deletes all privileges contained in the `CTokenPrivileges` access token object.
 
-##  <a name="getdisplaynames"></a>  CTokenPrivileges::GetDisplayNames
+## <a name="getdisplaynames"></a> CTokenPrivileges::GetDisplayNames
 
 Retrieves display names for the privileges contained in the `CTokenPrivileges` access token object.
 
@@ -173,7 +173,7 @@ The parameter `pDisplayNames` is a pointer to an array of `CString` objects whic
 
 This method retrieves a displayable name: for example, if the attribute name is SE_REMOTE_SHUTDOWN_NAME, the displayable name is "Force shutdown from a remote system." To obtain the system name, use [CTokenPrivileges::GetNamesAndAttributes](#getnamesandattributes).
 
-##  <a name="getcount"></a>  CTokenPrivileges::GetCount
+## <a name="getcount"></a> CTokenPrivileges::GetCount
 
 Returns the number of privilege entries in the `CTokenPrivileges` object.
 
@@ -185,7 +185,7 @@ UINT GetCount() const throw();
 
 Returns the number of privileges contained in the `CTokenPrivileges` object.
 
-##  <a name="getlength"></a>  CTokenPrivileges::GetLength
+## <a name="getlength"></a> CTokenPrivileges::GetLength
 
 Returns the length of the `CTokenPrivileges` object.
 
@@ -197,7 +197,7 @@ UINT GetLength() const throw();
 
 Returns the number of bytes required to hold a `TOKEN_PRIVILEGES` structure represented by the `CTokenPrivileges` object, including all of the privilege entries it contains.
 
-##  <a name="getluidsandattributes"></a>  CTokenPrivileges::GetLuidsAndAttributes
+## <a name="getluidsandattributes"></a> CTokenPrivileges::GetLuidsAndAttributes
 
 Retrieves the locally unique identifiers (LUIDs) and attribute flags from the `CTokenPrivileges` object.
 
@@ -219,7 +219,7 @@ Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the 
 
 This method will enumerate all of the privileges contained in the `CTokenPrivileges` access token object and place the individual LUIDs and (optionally) the attribute flags into array objects.
 
-##  <a name="getnamesandattributes"></a>  CTokenPrivileges::GetNamesAndAttributes
+## <a name="getnamesandattributes"></a> CTokenPrivileges::GetNamesAndAttributes
 
 Retrieves the name and attribute flags from the `CTokenPrivileges` object.
 
@@ -243,7 +243,7 @@ This method will enumerate all of the privileges contained in the `CTokenPrivile
 
 This method retrieves the attribute name, rather than the displayable name: for example, if the attribute name is SE_REMOTE_SHUTDOWN_NAME, the system name is "SeRemoteShutdownPrivilege." To obtain the displayable name, use the method [CTokenPrivileges::GetDisplayNames](#getdisplaynames).
 
-##  <a name="getptoken_privileges"></a>  CTokenPrivileges::GetPTOKEN_PRIVILEGES
+## <a name="getptoken_privileges"></a> CTokenPrivileges::GetPTOKEN_PRIVILEGES
 
 Returns a pointer to the `TOKEN_PRIVILEGES` structure.
 
@@ -255,7 +255,7 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
 
 Returns a pointer to the [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) structure.
 
-##  <a name="lookupprivilege"></a>  CTokenPrivileges::LookupPrivilege
+## <a name="lookupprivilege"></a> CTokenPrivileges::LookupPrivilege
 
 Retrieves the attribute associated with a given privilege name.
 
@@ -277,7 +277,7 @@ Pointer to a variable that receives the attributes.
 
 Returns true if the attribute is successfully retrieved, false otherwise.
 
-##  <a name="operator_eq"></a>  CTokenPrivileges::operator =
+## <a name="operator_eq"></a> CTokenPrivileges::operator =
 
 Assignment operator.
 
@@ -298,7 +298,7 @@ The `CTokenPrivileges` object to assign to the object.
 
 Returns the updated `CTokenPrivileges` object.
 
-##  <a name="operator_const_token_privileges__star"></a>  CTokenPrivileges::operator const TOKEN_PRIVILEGES \*
+## <a name="operator_const_token_privileges__star"></a> CTokenPrivileges::operator const TOKEN_PRIVILEGES \*
 
 Casts a value to a pointer to the `TOKEN_PRIVILEGES` structure.
 

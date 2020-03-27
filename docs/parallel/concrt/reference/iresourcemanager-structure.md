@@ -48,7 +48,7 @@ Use the [CreateResourceManager](concurrency-namespace-functions.md) function to 
 
 **Namespace:** concurrency
 
-## <a name="createnodetopology"></a>  IResourceManager::CreateNodeTopology Method
+## <a name="createnodetopology"></a> IResourceManager::CreateNodeTopology Method
 
 Present only in debug builds of the runtime, this method is a test hook designed to facilitate testing of the Resource Manager on varying hardware topologies, without requiring actual hardware matching the configuration. With retail builds of the runtime, this method will return without performing any action.
 
@@ -80,7 +80,7 @@ An array that specifies the processor group each node belongs to.
 
 [invalid_operation](invalid-operation-class.md) is thrown if this method is called while other schedulers exist in the process.
 
-## <a name="getavailablenodecount"></a>  IResourceManager::GetAvailableNodeCount Method
+## <a name="getavailablenodecount"></a> IResourceManager::GetAvailableNodeCount Method
 
 Returns the number of nodes available to the Resource Manager.
 
@@ -92,7 +92,7 @@ virtual unsigned int GetAvailableNodeCount() const = 0;
 
 The number of nodes available to the Resource Manager.
 
-## <a name="getfirstnode"></a>  IResourceManager::GetFirstNode Method
+## <a name="getfirstnode"></a> IResourceManager::GetFirstNode Method
 
 Returns the first node in enumeration order as defined by the Resource Manager.
 
@@ -104,7 +104,7 @@ virtual ITopologyNode* GetFirstNode() const = 0;
 
 The first node in enumeration order as defined by the Resource Manager.
 
-## <a name="osversion"></a>  IResourceManager::OSVersion Enumeration
+## <a name="osversion"></a> IResourceManager::OSVersion Enumeration
 
 An enumerated type that represents the operating system version.
 
@@ -112,7 +112,7 @@ An enumerated type that represents the operating system version.
 enum OSVersion;
 ```
 
-## <a name="reference"></a>  IResourceManager::Reference Method
+## <a name="reference"></a> IResourceManager::Reference Method
 
 Increments the reference count on the Resource Manager instance.
 
@@ -124,7 +124,7 @@ virtual unsigned int Reference() = 0;
 
 The resulting reference count.
 
-## <a name="registerscheduler"></a>  IResourceManager::RegisterScheduler Method
+## <a name="registerscheduler"></a> IResourceManager::RegisterScheduler Method
 
 Registers a scheduler with the Resource Manager. Once the scheduler is registered, it should communicate with the Resource Manager using the `ISchedulerProxy` interface that is returned.
 
@@ -152,7 +152,7 @@ Use this method to initiate communication with the Resource Manager. The method 
 
 The method throws an `invalid_argument` exception if the parameter `pScheduler` has the value `NULL` or if the parameter `version` is not a valid version for the communication interface.
 
-## <a name="release"></a>  IResourceManager::Release Method
+## <a name="release"></a> IResourceManager::Release Method
 
 Decrements the reference count on the Resource Manager instance. The Resource Manager is destroyed when its reference count goes to `0`.
 

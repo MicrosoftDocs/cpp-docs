@@ -49,7 +49,7 @@ Name                                          | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="activationid"></a>CreatorMap::activationId
+## <a name="activationid"></a> CreatorMap::activationId
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -72,7 +72,7 @@ A function that retrieves the Windows runtime name of an object.
 
 Represents an object ID that is identified either by a classic COM class ID or a Windows runtime name.
 
-## <a name="factorycache"></a>CreatorMap::factoryCache
+## <a name="factorycache"></a> CreatorMap::factoryCache
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -84,7 +84,7 @@ FactoryCache* factoryCache;
 
 Stores the pointer to the factory cache for the `CreatorMap`.
 
-## <a name="factorycreator"></a>CreatorMap::factoryCreator
+## <a name="factorycreator"></a> CreatorMap::factoryCreator
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -118,7 +118,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 Creates a factory for the specified CreatorMap.
 
-## <a name="servername"></a>CreatorMap::serverName
+## <a name="servername"></a> CreatorMap::serverName
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

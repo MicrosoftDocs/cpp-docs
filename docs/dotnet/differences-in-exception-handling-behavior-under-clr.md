@@ -8,7 +8,7 @@ ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
 
 [Basic Concepts in Using Managed Exceptions](../dotnet/basic-concepts-in-using-managed-exceptions.md) discusses exception handling in managed applications. In this topic, differences from the standard behavior of exception handling and some restrictions are discussed in detail. For more information, see [The _set_se_translator Function](../c-runtime-library/reference/set-se-translator.md).
 
-##  <a name="vcconjumpingoutofafinallyblock"></a> Jumping Out of a Finally Block
+## <a name="vcconjumpingoutofafinallyblock"></a> Jumping Out of a Finally Block
 
 In native C/C++ code, jumping out of a __**finally** block using structured exception handling (SEH) is allowed although it produces a warning.  Under [/clr](../build/reference/clr-common-language-runtime-compilation.md), jumping out of a **finally** block causes an error:
 
@@ -23,7 +23,7 @@ int main() {
 }   // C3276
 ```
 
-##  <a name="vcconraisingexceptionswithinanexceptionfilter"></a> Raising Exceptions Within an Exception Filter
+## <a name="vcconraisingexceptionswithinanexceptionfilter"></a> Raising Exceptions Within an Exception Filter
 
 When an exception is raised during the processing of an [exception filter](../cpp/writing-an-exception-filter.md) within managed code, the exception is caught and treated as if the filter returns 0.
 
@@ -87,7 +87,7 @@ Caught a nested exception
 We should execute this handler if compiled to native
 ```
 
-##  <a name="vccondisassociatedrethrows"></a> Disassociated Rethrows
+## <a name="vccondisassociatedrethrows"></a> Disassociated Rethrows
 
 **/clr** does not support rethrowing an exception outside of a catch handler (known as a disassociated rethrow). Exceptions of this type are treated as a standard C++ rethrow. If a disassociated rethrow is encountered when there is an active managed exception, the exception is wrapped as a C++ exception and then rethrown. Exceptions of this type can only be caught as an exception of type <xref:System.Runtime.InteropServices.SEHException>.
 
@@ -139,7 +139,7 @@ int main() {
 caught an SEH Exception
 ```
 
-##  <a name="vcconexceptionfiltersandexception_continue_execution"></a> Exception Filters and EXCEPTION_CONTINUE_EXECUTION
+## <a name="vcconexceptionfiltersandexception_continue_execution"></a> Exception Filters and EXCEPTION_CONTINUE_EXECUTION
 
 If a filter returns `EXCEPTION_CONTINUE_EXECUTION` in a managed application, it is treated as if the filter returned `EXCEPTION_CONTINUE_SEARCH`. For more information on these constants, see [try-except Statement](../cpp/try-except-statement.md).
 
@@ -180,7 +180,7 @@ int main() {
 Counter=-3
 ```
 
-##  <a name="vcconthe_set_se_translatorfunction"></a> The _set_se_translator Function
+## <a name="vcconthe_set_se_translatorfunction"></a> The _set_se_translator Function
 
 The translator function, set by a call to `_set_se_translator`, affects only catches in unmanaged code. The following example demonstrates this limitation:
 

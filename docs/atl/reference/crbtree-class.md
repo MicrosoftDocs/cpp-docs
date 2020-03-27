@@ -89,7 +89,7 @@ For a more complete discussion of the various collection classes and their featu
 
 **Header:** atlcoll.h
 
-##  <a name="cpair_class"></a>  CRBTree::CPair Class
+## <a name="cpair_class"></a> CRBTree::CPair Class
 
 A class containing the key and value elements.
 
@@ -108,7 +108,7 @@ The members are as follows:
 |`m_key`|The data member storing the key element.|
 |`m_value`|The data member storing the value element.|
 
-##  <a name="dtor"></a>  CRBTree::~CRBTree
+## <a name="dtor"></a> CRBTree::~CRBTree
 
 The destructor.
 
@@ -120,7 +120,7 @@ The destructor.
 
 Frees any allocated resources. Calls [CRBTree::RemoveAll](#removeall) to delete all elements.
 
-##  <a name="findfirstkeyafter"></a>  CRBTree::FindFirstKeyAfter
+## <a name="findfirstkeyafter"></a> CRBTree::FindFirstKeyAfter
 
 Call this method to find the position of the element that uses the next available key.
 
@@ -141,7 +141,7 @@ Returns the position value of the element that uses the next available key. If t
 
 This method makes it easy to traverse the tree without having to calculate position values beforehand.
 
-##  <a name="getat"></a>  CRBTree::GetAt
+## <a name="getat"></a> CRBTree::GetAt
 
 Call this method to get the element at a given position in the tree.
 
@@ -172,7 +172,7 @@ The position value can be previously determined with a call to a method such as 
 
 In debug builds, an assertion failure will occur if *pos* is equal to NULL.
 
-##  <a name="getcount"></a>  CRBTree::GetCount
+## <a name="getcount"></a> CRBTree::GetCount
 
 Call this method to get the number of elements in the tree.
 
@@ -184,7 +184,7 @@ size_t GetCount() const throw();
 
 Returns the number of elements (each key/value pair is one element) stored in the tree.
 
-##  <a name="getheadposition"></a>  CRBTree::GetHeadPosition
+## <a name="getheadposition"></a> CRBTree::GetHeadPosition
 
 Call this method to get the position value for the element at the head of the tree.
 
@@ -200,7 +200,7 @@ Returns the position value for the element at the head of the tree.
 
 The value returned by `GetHeadPosition` can be used with methods such as [CRBTree::GetKeyAt](#getkeyat) or [CRBTree::GetNext](#getnext) to traverse the tree and retrieve values.
 
-##  <a name="getkeyat"></a>  CRBTree::GetKeyAt
+## <a name="getkeyat"></a> CRBTree::GetKeyAt
 
 Call this method to get the key from a given position in the tree.
 
@@ -221,7 +221,7 @@ Returns the key stored at position *pos* in the tree.
 
 If *pos* is not a valid position value, results are unpredictable. In debug builds, an assertion failure will occur if *pos* is equal to NULL.
 
-##  <a name="getnext"></a>  CRBTree::GetNext
+## <a name="getnext"></a> CRBTree::GetNext
 
 Call this method to obtain a pointer to an element stored in the `CRBTree` object, and advance the position to the next element.
 
@@ -243,7 +243,7 @@ Returns a pointer to the next [CPair](#cpair_class) value in the tree.
 
 The *pos* position counter is updated after each call. If the retrieved element is the last in the tree, *pos* is set to NULL.
 
-##  <a name="getnextassoc"></a>  CRBTree::GetNextAssoc
+## <a name="getnextassoc"></a> CRBTree::GetNextAssoc
 
 Call this method to get the key and value of an element stored in the map and advance the position to the next element.
 
@@ -269,7 +269,7 @@ Template parameter specifying the type of the tree's value.
 
 The *pos* position counter is updated after each call. If the retrieved element is the last in the tree, *pos* is set to NULL.
 
-##  <a name="getnextkey"></a>  CRBTree::GetNextKey
+## <a name="getnextkey"></a> CRBTree::GetNextKey
 
 Call this method to get the key of an element stored in the tree and advance the position to the next element.
 
@@ -290,7 +290,7 @@ Returns a reference to the next key in the tree.
 
 Updates the current position counter, *pos*. If there are no more entries in the tree, the position counter is set to NULL.
 
-##  <a name="getnextvalue"></a>  CRBTree::GetNextValue
+## <a name="getnextvalue"></a> CRBTree::GetNextValue
 
 Call this method to get the value of an element stored in the tree and advance the position to the next element.
 
@@ -312,7 +312,7 @@ Returns a reference to the next value in the tree.
 
 Updates the current position counter, *pos*. If there are no more entries in the tree, the position counter is set to NULL.
 
-##  <a name="getprev"></a>  CRBTree::GetPrev
+## <a name="getprev"></a> CRBTree::GetPrev
 
 Call this method to obtain a pointer to an element stored in the `CRBTree` object, and then update the position to the previous element.
 
@@ -334,7 +334,7 @@ Returns a pointer to the previous [CPair](#cpair_class) value stored in the tree
 
 Updates the current position counter, *pos*. If there are no more entries in the tree, the position counter is set to NULL.
 
-##  <a name="gettailposition"></a>  CRBTree::GetTailPosition
+## <a name="gettailposition"></a> CRBTree::GetTailPosition
 
 Call this method to get the position value for the element at the tail of the tree.
 
@@ -350,7 +350,7 @@ Returns the position value for the element at the tail of the tree.
 
 The value returned by `GetTailPosition` can be used with methods such as [CRBTree::GetKeyAt](#getkeyat) or [CRBTree::GetPrev](#getprev) to traverse the tree and retrieve values.
 
-##  <a name="getvalueat"></a>  CRBTree::GetValueAt
+## <a name="getvalueat"></a> CRBTree::GetValueAt
 
 Call this method to retrieve the value stored at a given position in the `CRBTree` object.
 
@@ -368,7 +368,7 @@ The position counter, returned by a previous call to methods such as [CRBTree::G
 
 Returns a reference to the value stored at the given position in the `CRBTree` object.
 
-##  <a name="isempty"></a>  CRBTree::IsEmpty
+## <a name="isempty"></a> CRBTree::IsEmpty
 
 Call this method to test for an empty tree object.
 
@@ -380,7 +380,7 @@ bool IsEmpty() const throw();
 
 Returns TRUE if the tree is empty, FALSE otherwise.
 
-##  <a name="kinargtype"></a>  CRBTree::KINARGTYPE
+## <a name="kinargtype"></a> CRBTree::KINARGTYPE
 
 Type used when a key is passed as an input argument.
 
@@ -388,7 +388,7 @@ Type used when a key is passed as an input argument.
 typedef KTraits::INARGTYPE KINARGTYPE;
 ```
 
-##  <a name="koutargtype"></a>  CRBTree::KOUTARGTYPE
+## <a name="koutargtype"></a> CRBTree::KOUTARGTYPE
 
 Type used when a key is returned as an output argument.
 
@@ -396,7 +396,7 @@ Type used when a key is returned as an output argument.
 typedef KTraits::OUTARGTYPE KOUTARGTYPE;
 ```
 
-##  <a name="removeall"></a>  CRBTree::RemoveAll
+## <a name="removeall"></a> CRBTree::RemoveAll
 
 Call this method to remove all elements from the `CRBTree` object.
 
@@ -408,7 +408,7 @@ void RemoveAll() throw();
 
 Clears out the `CRBTree` object, freeing the memory used to store the elements.
 
-##  <a name="removeat"></a>  CRBTree::RemoveAt
+## <a name="removeat"></a> CRBTree::RemoveAt
 
 Call this method to remove the element at the given position in the `CRBTree` object.
 
@@ -425,7 +425,7 @@ The position counter, returned by a previous call to methods such as [CRBTree::G
 
 Removes the key/value pair stored at the specified position. The memory used to store the element is freed. The POSITION referenced by *pos* becomes invalid, and while the POSITION of any other elements in the tree remains valid, they do not necessarily retain the same order.
 
-##  <a name="setvalueat"></a>  CRBTree::SetValueAt
+## <a name="setvalueat"></a> CRBTree::SetValueAt
 
 Call this method to change the value stored at a given position in the `CRBTree` object.
 
@@ -445,7 +445,7 @@ The value to add to the `CRBTree` object.
 
 Changes the value element stored at the given position in the `CRBTree` object.
 
-##  <a name="vinargtype"></a>  CRBTree::VINARGTYPE
+## <a name="vinargtype"></a> CRBTree::VINARGTYPE
 
 Type used when a value is passed as an input argument.
 
@@ -453,7 +453,7 @@ Type used when a value is passed as an input argument.
 typedef VTraits::INARGTYPE VINARGTYPE;
 ```
 
-##  <a name="voutargtype"></a>  CRBTree::VOUTARGTYPE
+## <a name="voutargtype"></a> CRBTree::VOUTARGTYPE
 
 Type used when a value is passed as an output argument.
 

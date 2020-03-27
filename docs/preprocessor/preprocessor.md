@@ -24,7 +24,7 @@ You can obtain a listing of your source code after preprocessing by using the [/
 
 **END Microsoft Specific**
 
-##  <a name="_predir_special_terminology"></a> Special terminology
+## <a name="_predir_special_terminology"></a> Special terminology
 
 In the preprocessor documentation, the term "argument" refers to the entity that is passed to a function. In some cases, it's modified by "actual" or "formal," which describes the argument expression specified in the function call, and the argument declaration specified in the function definition, respectively.
 

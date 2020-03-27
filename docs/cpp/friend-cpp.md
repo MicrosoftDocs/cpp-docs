@@ -105,7 +105,7 @@ class G
 To declare two classes that are friends of one another, the entire second class must be specified as a friend of the first class. The reason for this restriction is that the compiler has enough information to declare individual friend functions only at the point where the second class is declared.
 
 > [!NOTE]
->  Although the entire second class must be a friend to the first class, you can select which functions in the first class will be friends of the second class.
+> Although the entire second class must be a friend to the first class, you can select which functions in the first class will be friends of the second class.
 
 ## friend functions
 

@@ -33,7 +33,7 @@ class CD2DRoundedRect : public D2D1_ROUNDED_RECT;
 
 **Header:** afxrendertarget.h
 
-##  <a name="cd2droundedrect"></a>  CD2DRoundedRect::CD2DRoundedRect
+## <a name="cd2droundedrect"></a> CD2DRoundedRect::CD2DRoundedRect
 
 Constructs a CD2DRoundedRect object from CD2DRectF object.
 

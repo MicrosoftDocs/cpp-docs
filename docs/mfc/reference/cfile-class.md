@@ -92,7 +92,7 @@ For more information on using `CFile`, see the articles [Files in MFC](../../mfc
 
 **Header:** afx.h
 
-##  <a name="abort"></a>  CFile::Abort
+## <a name="abort"></a> CFile::Abort
 
 Closes the file associated with this object and makes the file unavailable for reading or writing.
 
@@ -112,7 +112,7 @@ If you used **new** to allocate the `CFile` object on the heap, then you must de
 
 [!code-cpp[NVC_MFCFiles#5](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_1.cpp)]
 
-##  <a name="cfile"></a>  CFile::CFile
+## <a name="cfile"></a> CFile::CFile
 
 Constructs and initializes a `CFile` object.
 
@@ -210,7 +210,7 @@ The following code shows how to use a `CFile`.
 
 [!code-cpp[NVC_MFCFiles#4](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_2.cpp)]
 
-##  <a name="close"></a>  CFile::Close
+## <a name="close"></a> CFile::Close
 
 Closes the file associated with this object and makes the file unavailable for reading or writing.
 
@@ -228,7 +228,7 @@ If you used **new** to allocate the `CFile` object on the heap, then you must de
 
 See the example for [CFile::CFile](#cfile).
 
-##  <a name="duplicate"></a>  CFile::Duplicate
+## <a name="duplicate"></a> CFile::Duplicate
 
 Constructs a duplicate `CFile` object for a given file.
 
@@ -244,7 +244,7 @@ A pointer to a duplicate `CFile` object.
 
 This function is equivalent to the C run-time function `_dup`.
 
-##  <a name="flush"></a>  CFile::Flush
+## <a name="flush"></a> CFile::Flush
 
 Forces any data remaining in the file buffer to be written to the file.
 
@@ -260,7 +260,7 @@ The use of `Flush` doesn't guarantee flushing of `CArchive` buffers. If you're u
 
 See the example for [CFile::SetFilePath](#setfilepath).
 
-##  <a name="getfilename"></a>  CFile::GetFileName
+## <a name="getfilename"></a> CFile::GetFileName
 
 Call this member function to retrieve the name of a specified file.
 
@@ -284,7 +284,7 @@ This code fragment opens the SYSTEM.INI file in your WINDOWS directory. If found
 
 [!code-cpp[NVC_MFCFiles#6](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_3.cpp)]
 
-##  <a name="getfilepath"></a>  CFile::GetFilePath
+## <a name="getfilepath"></a> CFile::GetFilePath
 
 Call this member function to retrieve the full path of a specified file.
 
@@ -306,7 +306,7 @@ To return just the name of the file (`myfile.wri`), call [GetFileName](#getfilen
 
 See the example for [GetFileName](#getfilename).
 
-##  <a name="getfiletitle"></a>  CFile::GetFileTitle
+## <a name="getfiletitle"></a> CFile::GetFileTitle
 
 Call this member function to retrieve the file title (the display name) for the file.
 
@@ -328,7 +328,7 @@ To return the entire path of the file, including the name, call [GetFilePath](#g
 
 See the example for [GetFileName](#getfilename).
 
-##  <a name="getlength"></a>  CFile::GetLength
+## <a name="getlength"></a> CFile::GetLength
 
 Obtains the current logical length of the file in bytes.
 
@@ -344,7 +344,7 @@ The length of the file.
 
 [!code-cpp[NVC_MFCFiles#7](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_4.cpp)]
 
-##  <a name="getposition"></a>  CFile::GetPosition
+## <a name="getposition"></a> CFile::GetPosition
 
 Obtains the current value of the file pointer, which can be used in later calls to `Seek`.
 
@@ -360,7 +360,7 @@ The file pointer.
 
 [!code-cpp[NVC_MFCFiles#8](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_5.cpp)]
 
-##  <a name="getstatus"></a>  CFile::GetStatus
+## <a name="getstatus"></a> CFile::GetStatus
 
 This method retrieves status information related to a given `CFile` object instance or a given file path.
 
@@ -422,7 +422,7 @@ enum Attribute {
 
 [!code-cpp[NVC_MFCFiles#10](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_6.cpp)]
 
-##  <a name="hfilenull"></a>  CFile::hFileNull
+## <a name="hfilenull"></a> CFile::hFileNull
 
 Determines the presence of a valid file handle for the `CFile` object.
 
@@ -438,7 +438,7 @@ The following example demonstrates this operation:
 
 [!code-cpp[NVC_MFCFiles#22](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_7.cpp)]
 
-##  <a name="lockrange"></a>  CFile::LockRange
+## <a name="lockrange"></a> CFile::LockRange
 
 Locks a range of bytes in an open file, throwing an exception if the file is already locked.
 
@@ -463,13 +463,13 @@ Locking bytes in a file prevents access to those bytes by other processes. You c
 When you unlock the region using the `UnlockRange` member function, the byte range must correspond exactly to the region that was previously locked. The `LockRange` function doesn't merge adjacent regions. If two locked regions are adjacent, you must unlock each region separately.
 
 > [!NOTE]
->  This function isn't available for the `CMemFile`-derived class.
+> This function isn't available for the `CMemFile`-derived class.
 
 ### Example
 
 [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]
 
-##  <a name="m_hfile"></a>  CFile::m_hFile
+## <a name="m_hfile"></a> CFile::m_hFile
 
 Contains the operating-system file handle for an open file.
 
@@ -483,7 +483,7 @@ HANDLE m_hFile;
 
 Use of `m_hFile` isn't recommended, because the member's meaning depends on the derived class. `m_hFile` is made a public member for convenience in supporting nonpolymorphic use of the class.
 
-##  <a name="m_ptm"></a>  CFile::m_pTM
+## <a name="m_ptm"></a> CFile::m_pTM
 
 Pointer to a `CAtlTransactionManager` object.
 
@@ -493,7 +493,7 @@ CAtlTransactionManager* m_pTM;
 
 ### Remarks
 
-##  <a name="open"></a>  CFile::Open
+## <a name="open"></a> CFile::Open
 
 Overloaded. `Open` is designed for use with the default `CFile` constructor.
 
@@ -549,7 +549,7 @@ The following table describes the possible results of `Open`.
 
 [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]
 
-##  <a name="operator_handle"></a>  CFile::operator HANDLE
+## <a name="operator_handle"></a> CFile::operator HANDLE
 
 Use this operator to pass a handle to a `CFile` object to functions such as [ReadFileEx](/windows/win32/api/fileapi/nf-fileapi-readfileex) and [GetFileTime](/windows/win32/api/fileapi/nf-fileapi-getfiletime) that expect a `HANDLE`.
 
@@ -557,7 +557,7 @@ Use this operator to pass a handle to a `CFile` object to functions such as [Rea
 operator HANDLE() const;
 ```
 
-##  <a name="read"></a>  CFile::Read
+## <a name="read"></a> CFile::Read
 
 Reads data into a buffer from the file associated with the `CFile` object.
 
@@ -585,7 +585,7 @@ The number of bytes transferred to the buffer. For all `CFile` classes, the retu
 
 For another example, see [CFile::Open](#open).
 
-##  <a name="remove"></a>  CFile::Remove
+## <a name="remove"></a> CFile::Remove
 
 This static function deletes the file specified by the path.
 
@@ -613,7 +613,7 @@ The `Remove` member function throws an exception if the connected file is open o
 
 [!code-cpp[NVC_MFCFiles#17](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_12.cpp)]
 
-##  <a name="rename"></a>  CFile::Rename
+## <a name="rename"></a> CFile::Rename
 
 This static function renames the specified file.
 
@@ -643,7 +643,7 @@ Directories can't be renamed. This function is equivalent to the REN command.
 
 [!code-cpp[NVC_MFCFiles#18](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_13.cpp)]
 
-##  <a name="seek"></a>  CFile::Seek
+## <a name="seek"></a> CFile::Seek
 
 Repositions the file pointer in an open file.
 
@@ -685,7 +685,7 @@ The exception handler for this method must delete the exception object after the
 
 [!code-cpp[NVC_MFCFiles#9](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_14.cpp)]
 
-##  <a name="seektobegin"></a>  CFile::SeekToBegin
+## <a name="seektobegin"></a> CFile::SeekToBegin
 
 Sets the value of the file pointer to the beginning of the file.
 
@@ -701,7 +701,7 @@ void SeekToBegin();
 
 [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]
 
-##  <a name="seektoend"></a>  CFile::SeekToEnd
+## <a name="seektoend"></a> CFile::SeekToEnd
 
 Sets the value of the file pointer to the logical end of the file.
 
@@ -721,7 +721,7 @@ The length of the file in bytes.
 
 [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]
 
-##  <a name="setfilepath"></a>  CFile::SetFilePath
+## <a name="setfilepath"></a> CFile::SetFilePath
 
 Call this function to specify the path of the file. For example, if the path of a file isn't available when a [CFile](../../mfc/reference/cfile-class.md) object is constructed, call `SetFilePath` to provide it.
 
@@ -743,7 +743,7 @@ Pointer to a string specifying the new path.
 
 [!code-cpp[NVC_MFCFiles#20](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_16.cpp)]
 
-##  <a name="setlength"></a>  CFile::SetLength
+## <a name="setlength"></a> CFile::SetLength
 
 Call this function to change the length of the file.
 
@@ -759,13 +759,13 @@ Desired length of the file in bytes. This value can be larger or smaller than th
 ### Remarks
 
 > [!NOTE]
->  With `CMemFile`, this function could throw a `CMemoryException` object.
+> With `CMemFile`, this function could throw a `CMemoryException` object.
 
 ### Example
 
 [!code-cpp[NVC_MFCFiles#11](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_17.cpp)]
 
-##  <a name="setstatus"></a>  CFile::SetStatus
+## <a name="setstatus"></a> CFile::SetStatus
 
 Sets the status of the file associated with this file location.
 
@@ -797,7 +797,7 @@ When you make a call to `SetStatus` in an attempt to change only the attributes 
 
 [!code-cpp[NVC_MFCFiles#21](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_18.cpp)]
 
-##  <a name="unlockrange"></a>  CFile::UnlockRange
+## <a name="unlockrange"></a> CFile::UnlockRange
 
 Unlocks a range of bytes in an open file.
 
@@ -820,13 +820,13 @@ The number of bytes in the range to unlock.
 See the description of the [LockRange](#lockrange) member function for details.
 
 > [!NOTE]
->  This function is not available for the `CMemFile`-derived class.
+> This function is not available for the `CMemFile`-derived class.
 
 ### Example
 
 [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]
 
-##  <a name="write"></a>  CFile::Write
+## <a name="write"></a> CFile::Write
 
 Writes data from a buffer to the file associated with the `CFile` object.
 

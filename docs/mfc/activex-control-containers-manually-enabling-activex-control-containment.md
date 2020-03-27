@@ -12,7 +12,7 @@ If you did not enable ActiveX control support when you used the MFC Application 
 > ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 > [!NOTE]
->  This article uses a dialog-based ActiveX control container project named Container and an embedded control named Circ as examples in the procedures and code.
+> This article uses a dialog-based ActiveX control container project named Container and an embedded control named Circ as examples in the procedures and code.
 
 To support ActiveX controls, you must add one line of code to two of your project's files.
 

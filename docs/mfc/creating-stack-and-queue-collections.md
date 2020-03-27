@@ -8,7 +8,7 @@ ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
 
 This article explains how to create other data structures, such as [stacks](#_core_stacks) and [queues](#_core_queues), from MFC list classes. The examples use classes derived from `CList`, but you can use `CList` directly unless you need to add functionality.
 
-##  <a name="_core_stacks"></a> Stacks
+## <a name="_core_stacks"></a> Stacks
 
 Because the standard list collection has both a head and a tail, it is easy to create a derived list collection that mimics the behavior of a last-in-first-out stack. A stack is like a stack of trays in a cafeteria. As trays are added to the stack, they go on top of the stack. The last tray added is the first to be removed. The list collection member functions `AddHead` and `RemoveHead` can be used to add and remove elements specifically from the head of the list; thus, the most recently added element is the first to be removed.
 
@@ -22,7 +22,7 @@ Because the standard list collection has both a head and a tail, it is easy to c
 
 Note that this approach exposes the underlying `CObList` class. The user can call any `CObList` member function, whether it makes sense for a stack or not.
 
-##  <a name="_core_queues"></a> Queues
+## <a name="_core_queues"></a> Queues
 
 Because the standard list collection has both a head and a tail, it is also easy to create a derived list collection that mimics the behavior of a first-in-first-out queue. A queue is like a line of people in a cafeteria. The first person in line is the first to be served. As more people come, they go to the end of the line to wait their turn. The list collection member functions `AddTail` and `RemoveHead` can be used to add and remove elements specifically from the head or tail of the list; thus, the most recently added element is always the last to be removed.
 

@@ -41,7 +41,7 @@ This interface is typically utilized to walk the topology of the system as obser
 
 **Namespace:** concurrency
 
-## <a name="getexecutionresourcecount"></a>  ITopologyNode::GetExecutionResourceCount Method
+## <a name="getexecutionresourcecount"></a> ITopologyNode::GetExecutionResourceCount Method
 
 Returns the number of execution resources grouped together under this node.
 
@@ -53,7 +53,7 @@ virtual unsigned int GetExecutionResourceCount() const = 0;
 
 The number of execution resources grouped together under this node.
 
-## <a name="getfirstexecutionresource"></a>  ITopologyNode::GetFirstExecutionResource Method
+## <a name="getfirstexecutionresource"></a> ITopologyNode::GetFirstExecutionResource Method
 
 Returns the first execution resource grouped under this node in enumeration order.
 
@@ -65,7 +65,7 @@ virtual ITopologyExecutionResource *GetFirstExecutionResource() const = 0;
 
 The first execution resource grouped under this node in enumeration order.
 
-## <a name="getid"></a>  ITopologyNode::GetId Method
+## <a name="getid"></a> ITopologyNode::GetId Method
 
 Returns the Resource Manager's unique identifier for this node.
 
@@ -83,7 +83,7 @@ The Concurrency Runtime represents hardware threads on the system in groups of p
 
 The count of nodes can be obtained from the function [GetProcessorNodeCount](concurrency-namespace-functions.md).
 
-## <a name="getnext"></a>  ITopologyNode::GetNext Method
+## <a name="getnext"></a> ITopologyNode::GetNext Method
 
 Returns an interface to the next topology node in enumeration order.
 
@@ -95,7 +95,7 @@ virtual ITopologyNode *GetNext() const = 0;
 
 An interface to the next node in enumeration order. If there are no more nodes in enumeration order of the system topology, this method will return the value `NULL`.
 
-## <a name="getnumanode"></a>  ITopologyNode::GetNumaNode Method
+## <a name="getnumanode"></a> ITopologyNode::GetNumaNode Method
 
 Returns the Windows assigned NUMA node number to which this Resource Maanger node belongs.
 

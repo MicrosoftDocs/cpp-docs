@@ -41,7 +41,7 @@ The `HWND` parameters in the first three functions must be an existing window of
 The first seven functions call [AtlAxWinInit](reference/composite-control-global-functions.md#atlaxwininit) implicitly.
 
 > [!NOTE]
->  The control-hosting API forms the foundation of ATL's support for ActiveX control containment. However, there is usually little need to call these functions directly if you take advantage of or make full use of ATL's wrapper classes. For more information, see [Which ATL Classes Facilitate ActiveX Control Containment](which-atl-classes-facilitate-activex-control-containment-q.md).
+> The control-hosting API forms the foundation of ATL's support for ActiveX control containment. However, there is usually little need to call these functions directly if you take advantage of or make full use of ATL's wrapper classes. For more information, see [Which ATL Classes Facilitate ActiveX Control Containment](which-atl-classes-facilitate-activex-control-containment-q.md).
 
 ## What Is AtlAxWin100?
 

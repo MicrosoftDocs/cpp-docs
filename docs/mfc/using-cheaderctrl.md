@@ -11,7 +11,7 @@ Use a header control, represented by class [CHeaderCtrl](../mfc/reference/cheade
 The header control is usually divided into parts, called "header items," each bearing a title for the associated column of text or numbers. Depending on the styles you set, you can provide a number of direct ways for users to manipulate the header items.
 
 > [!NOTE]
->  [CListCtrl](../mfc/reference/clistctrl-class.md) provides an embedded header control, and [CListView](../mfc/reference/clistview-class.md) encapsulates `CListCtrl` in an MFC class. In general, think of using `CHeaderCtrl` to label lists that you intend to draw yourself.
+> [CListCtrl](../mfc/reference/clistctrl-class.md) provides an embedded header control, and [CListView](../mfc/reference/clistview-class.md) encapsulates `CListCtrl` in an MFC class. In general, think of using `CHeaderCtrl` to label lists that you intend to draw yourself.
 
 ## What do you want to know more about
 

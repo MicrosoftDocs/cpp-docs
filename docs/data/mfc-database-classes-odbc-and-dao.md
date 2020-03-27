@@ -7,7 +7,7 @@ ms.assetid: 88aabe65-84e3-4122-b636-5d334a5fe570
 # MFC Database Classes
 
 > [!NOTE]
->  Microsoft recommends using ODBC via Microsoft ODBC Driver 13 (or later) for SQL Server for new projects. DAO is no longer supported.
+> Microsoft recommends using ODBC via Microsoft ODBC Driver 13 (or later) for SQL Server for new projects. DAO is no longer supported.
 
 For more information, see the following topics:
 

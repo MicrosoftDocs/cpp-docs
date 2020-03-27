@@ -9,7 +9,7 @@ ms.assetid: 355e97ed-cf81-4df3-a2f8-9ddbbde93227
 The embedded month calendar control object can be accessed from the `CDateTimeCtrl` object with a call to the [GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#getmonthcalctrl) member function.
 
 > [!NOTE]
->  The embedded month calendar control is used only when the date and time picker control does not have the **DTS_UPDOWN** style set.
+> The embedded month calendar control is used only when the date and time picker control does not have the **DTS_UPDOWN** style set.
 
 This is useful if you want to modify certain attributes before the embedded control is displayed. To accomplish this, handle the **DTN_DROPDOWN** notification, retrieve the month calendar control (using [CDateTimeCtrl::GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#getmonthcalctrl)), and make your modifications. Unfortunately, the month calendar control is not persistent.
 

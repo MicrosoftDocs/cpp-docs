@@ -5,7 +5,6 @@ ms.date: "07/02/2019"
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 ---
-
 # C++ in Visual Studio
 
 > [!NOTE]

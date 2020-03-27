@@ -20,7 +20,7 @@ These macros define connection point maps and entries.
 
 **Header:** atlcom.h
 
-##  <a name="begin_connection_point_map"></a>  BEGIN_CONNECTION_POINT_MAP
+## <a name="begin_connection_point_map"></a> BEGIN_CONNECTION_POINT_MAP
 
 Marks the beginning of the connection point map entries.
 
@@ -43,7 +43,7 @@ For more information about connection points in ATL, see the article [Connection
 
 [!code-cpp[NVC_ATL_Windowing#101](../../atl/codesnippet/cpp/connection-point-macros_1.h)]
 
-##  <a name="connection_point_entry"></a>  CONNECTION_POINT_ENTRY and CONNECTION_POINT_ENTRY_P
+## <a name="connection_point_entry"></a> CONNECTION_POINT_ENTRY and CONNECTION_POINT_ENTRY_P
 
 Enters a connection point for the specified interface into the connection point map so that it can be accessed.
 
@@ -72,7 +72,7 @@ For more information about connection points in ATL, see the article [Connection
 
 [!code-cpp[NVC_ATL_Windowing#120](../../atl/codesnippet/cpp/connection-point-macros_2.h)]
 
-##  <a name="end_connection_point_map"></a>  END_CONNECTION_POINT_MAP
+## <a name="end_connection_point_map"></a> END_CONNECTION_POINT_MAP
 
 Marks the end of the connection point map entries.
 

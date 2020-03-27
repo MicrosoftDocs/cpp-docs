@@ -4,7 +4,6 @@ ms.date: "09/25/2019"
 description: "Use filters files in Visual Studio C++ projects to define custom logical folders for files in Solution Explorer"
 helpviewer_keywords: ["vcxproj.filters", "filters file [C++]"]
 ---
-
 # vcxproj.filters files
 
 The *filters* file (\*.vcxproj.filters) is an XML file in MSBuild format that is located in the root project folder. It specifies which file types go into which logical folder in **Solution Explorer**. In the following illustration, the *.cpp* files are under the **Source Files** node. the *.h* files are under the **Header Files** node, and *.ico* and *.rc* files are under **Resource Files**. This placement is controlled by the filters file.

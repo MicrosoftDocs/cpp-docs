@@ -90,6 +90,7 @@ Other platforms such as Xbox and Azure have their own SDKs that you may have to 
 Visual Studio includes a powerful debugger for native code, static analysis tools, graphics debugging tools, a full-featured code editor, support for unit tests, and many other tools and utilities. For more information, see [Get started developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio), and [Overview of C++ development in Visual Studio](../overview/overview-of-cpp-development.md).
 
 ## In this section
+
 |Title|Description|
 |-----------|-----------------|
 |[Walkthrough: Creating a Standard C++ Program](walkthrough-creating-a-standard-cpp-program-cpp.md)| Create a Windows console application.|

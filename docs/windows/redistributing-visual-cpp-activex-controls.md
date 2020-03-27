@@ -9,7 +9,7 @@ ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
 Visual C++ 6.0 supplies ActiveX controls you can use in applications that you then redistribute. These controls are no longer included in Visual C++. Per the licensing agreements for Visual C++ 6.0, you can redistribute these controls with applications developed in Visual C++.
 
 > [!NOTE]
->  Visual C++ 6.0 is no longer supported by Microsoft.
+> Visual C++ 6.0 is no longer supported by Microsoft.
 
 For a list of the redistributable Visual C++ 6.0 ActiveX controls, see Common\Redist\Redist.txt on Disc 1 of the Visual C++ 6.0 product CD.
 

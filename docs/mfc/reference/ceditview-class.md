@@ -104,7 +104,7 @@ For more information on `CEditView`, see [Derived View Classes Available in MFC]
 
 **Header:** afxext.h
 
-##  <a name="ceditview"></a>  CEditView::CEditView
+## <a name="ceditview"></a> CEditView::CEditView
 
 Constructs an object of type `CEditView`.
 
@@ -116,7 +116,7 @@ CEditView();
 
 After constructing the object, you must call the [CWnd::Create](../../mfc/reference/cwnd-class.md#create) function before the edit control is used. If you derive a class from `CEditView` and add it to the template using `CWinApp::AddDocTemplate`, the framework calls both this constructor and the `Create` function.
 
-##  <a name="dwstyledefault"></a>  CEditView::dwStyleDefault
+## <a name="dwstyledefault"></a> CEditView::dwStyleDefault
 
 Contains the default style of the `CEditView` object.
 
@@ -128,7 +128,7 @@ static const DWORD dwStyleDefault;
 
 Pass this static member as the *dwStyle* parameter of the `Create` function to obtain the default style for the `CEditView` object.
 
-##  <a name="findtext"></a>  CEditView::FindText
+## <a name="findtext"></a> CEditView::FindText
 
 Call the `FindText` function to search the `CEditView` object's text buffer.
 
@@ -160,7 +160,7 @@ This function searches the text in the buffer for the text specified by *lpszFin
 
 You normally do not need to call the `FindText` function unless you override `OnFindNext`, which calls `FindText`.
 
-##  <a name="getbufferlength"></a>  CEditView::GetBufferLength
+## <a name="getbufferlength"></a> CEditView::GetBufferLength
 
 Call this member function to obtain the number of characters currently in the edit control's buffer, not including the null terminator.
 
@@ -172,7 +172,7 @@ UINT GetBufferLength() const;
 
 The length of the string in the buffer.
 
-##  <a name="geteditctrl"></a>  CEditView::GetEditCtrl
+## <a name="geteditctrl"></a> CEditView::GetEditCtrl
 
 Call `GetEditCtrl` to get a reference to the edit control used by the edit view.
 
@@ -189,13 +189,13 @@ A reference to a `CEdit` object.
 This control is of type [CEdit](../../mfc/reference/cedit-class.md), so you can manipulate the Windows edit control directly using the `CEdit` member functions.
 
 > [!CAUTION]
->  Using the `CEdit` object can change the state of the underlying Windows edit control. For example, you should not change the tab settings using the [CEdit::SetTabStops](../../mfc/reference/cedit-class.md#settabstops) function because `CEditView` caches these settings for use both in the edit control and in printing. Instead, use [CEditView::SetTabStops](#settabstops).
+> Using the `CEdit` object can change the state of the underlying Windows edit control. For example, you should not change the tab settings using the [CEdit::SetTabStops](../../mfc/reference/cedit-class.md#settabstops) function because `CEditView` caches these settings for use both in the edit control and in printing. Instead, use [CEditView::SetTabStops](#settabstops).
 
 ### Example
 
 [!code-cpp[NVC_MFCDocView#66](../../mfc/codesnippet/cpp/ceditview-class_2.cpp)]
 
-##  <a name="getprinterfont"></a>  CEditView::GetPrinterFont
+## <a name="getprinterfont"></a> CEditView::GetPrinterFont
 
 Call `GetPrinterFont` to get a pointer to a [CFont](../../mfc/reference/cfont-class.md) object that describes the current printer font.
 
@@ -213,7 +213,7 @@ If the printer font has not been set, the default printing behavior of the `CEdi
 
 Use this function to determine the current printer font. If it is not the desired printer font, use [CEditView::SetPrinterFont](#setprinterfont) to change it.
 
-##  <a name="getselectedtext"></a>  CEditView::GetSelectedText
+## <a name="getselectedtext"></a> CEditView::GetSelectedText
 
 Call `GetSelectedText` to copy the selected text into a `CString` object, up to the end of the selection or the character preceding the first carriage-return character in the selection.
 
@@ -226,7 +226,7 @@ void GetSelectedText(CString& strResult) const;
 *strResult*<br/>
 A reference to the `CString` object that is to receive the selected text.
 
-##  <a name="lockbuffer"></a>  CEditView::LockBuffer
+## <a name="lockbuffer"></a> CEditView::LockBuffer
 
 Call this member function to obtain a pointer to the buffer. The buffer should not be modified.
 
@@ -238,7 +238,7 @@ LPCTSTR LockBuffer() const;
 
 A pointer to the edit control's buffer.
 
-##  <a name="onfindnext"></a>  CEditView::OnFindNext
+## <a name="onfindnext"></a> CEditView::OnFindNext
 
 Searches the text in the buffer for the text specified by *lpszFind*, in the direction specified by *bNext*, with case sensitivity specified by *bCase*.
 
@@ -266,7 +266,7 @@ The search starts at the beginning of the current selection and is accomplished 
 
 Override `OnFindNext` to change the way a `CEditView`-derived object searches text. `CEditView` calls `OnFindNext` when the user chooses the Find Next button in the standard Find dialog box.
 
-##  <a name="onreplaceall"></a>  CEditView::OnReplaceAll
+## <a name="onreplaceall"></a> CEditView::OnReplaceAll
 
 `CEditView` calls `OnReplaceAll` when the user selects the Replace All button in the standard Replace dialog box.
 
@@ -296,7 +296,7 @@ If the current selection does not match *lpszFind*, the selection is updated to 
 
 Override `OnReplaceAll` to change the way a `CEditView`-derived object replaces text.
 
-##  <a name="onreplacesel"></a>  CEditView::OnReplaceSel
+## <a name="onreplacesel"></a> CEditView::OnReplaceSel
 
 `CEditView` calls `OnReplaceSel` when the user selects the Replace button in the standard Replace dialog box.
 
@@ -328,7 +328,7 @@ After replacing the selection, this function searches the text in the buffer for
 
 Override `OnReplaceSel` to change the way a `CEditView`-derived object replaces the selected text.
 
-##  <a name="ontextnotfound"></a>  CEditView::OnTextNotFound
+## <a name="ontextnotfound"></a> CEditView::OnTextNotFound
 
 Override this function to change the default implementation, which calls the Windows function `MessageBeep`.
 
@@ -341,7 +341,7 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 *lpszFind*<br/>
 The text to be found.
 
-##  <a name="printinsiderect"></a>  CEditView::PrintInsideRect
+## <a name="printinsiderect"></a> CEditView::PrintInsideRect
 
 Call `PrintInsideRect` to print text in the rectangle specified by *rectLayout*.
 
@@ -377,7 +377,7 @@ If the `CEditView` control does not have the style ES_AUTOHSCROLL, text is wrapp
 
 The `rect.bottom` element of the *rectLayout* object is changed so that the rectangle's dimensions define the part of the original rectangle that is occupied by the text.
 
-##  <a name="serializeraw"></a>  CEditView::SerializeRaw
+## <a name="serializeraw"></a> CEditView::SerializeRaw
 
 Call `SerializeRaw` to have a `CArchive` object read or write the text in the `CEditView` object to a text file.
 
@@ -394,7 +394,7 @@ Reference to the `CArchive` object that stores the serialized text.
 
 `SerializeRaw` differs from `CEditView`'s internal implementation of `Serialize` in that it reads and writes only the text, without preceding object-description data.
 
-##  <a name="setprinterfont"></a>  CEditView::SetPrinterFont
+## <a name="setprinterfont"></a> CEditView::SetPrinterFont
 
 Call `SetPrinterFont` to set the printer font to the font specified by *pFont*.
 
@@ -411,7 +411,7 @@ A pointer to an object of type `CFont`. If NULL, the font used for printing is b
 
 If you want your view to always use a particular font for printing, include a call to `SetPrinterFont` in your class's `OnPreparePrinting` function. This virtual function is called before printing occurs, so the font change takes place before the view's contents are printed.
 
-##  <a name="settabstops"></a>  CEditView::SetTabStops
+## <a name="settabstops"></a> CEditView::SetTabStops
 
 Call this function to set the tab stops used for display and printing.
 
@@ -436,7 +436,7 @@ This code fragment sets the tab stops in the control to every fourth character b
 
 [!code-cpp[NVC_MFCDocView#67](../../mfc/codesnippet/cpp/ceditview-class_3.cpp)]
 
-##  <a name="unlockbuffer"></a>  CEditView::UnlockBuffer
+## <a name="unlockbuffer"></a> CEditView::UnlockBuffer
 
 Call this member function to unlock the buffer.
 

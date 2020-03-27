@@ -68,7 +68,7 @@ The following example demonstrates how to retrieve a pointer to a `CMFCDropDownF
 
 **Header:** afxdropdowntoolbar.h
 
-##  <a name="create"></a>  CMFCDropDownFrame::Create
+## <a name="create"></a> CMFCDropDownFrame::Create
 
 Creates a `CMFCDropDownFrame` object.
 
@@ -100,7 +100,7 @@ This method calls the base [CMiniFrameWnd::CreateEx](../../mfc/reference/cminifr
 
 The `CMFCDropDownFrame` class creates a copy of the provided `CMFCDropDownToolBar` parameter. This method copies the button images and button states from the `pWndOriginToolbar` parameter to the `m_pWndOriginToolbar` data member.
 
-##  <a name="getparentmenubar"></a>  CMFCDropDownFrame::GetParentMenuBar
+## <a name="getparentmenubar"></a> CMFCDropDownFrame::GetParentMenuBar
 
 Retrieves the parent menu bar of the drop-down frame.
 
@@ -116,7 +116,7 @@ A pointer to the parent menu bar of the drop-down frame, or NULL if the frame ha
 
 This method retrieves the parent menu bar from the parent button. This method returns NULL if the drop-down frame has no parent button or the parent button has no parent menu bar.
 
-##  <a name="getparentpopupmenu"></a>  CMFCDropDownFrame::GetParentPopupMenu
+## <a name="getparentpopupmenu"></a> CMFCDropDownFrame::GetParentPopupMenu
 
 Retrieves the parent pop-up menu of the drop-down frame.
 
@@ -132,7 +132,7 @@ A pointer to the parent drop-down menu of the drop-down frame, or NULL if the fr
 
 This method retrieves the parent menu from the parent button. This method returns NULL if the drop-down frame has no parent button or the parent button has no parent menu.
 
-##  <a name="recalclayout"></a>  CMFCDropDownFrame::RecalcLayout
+## <a name="recalclayout"></a> CMFCDropDownFrame::RecalcLayout
 
 Repositions the drop-down frame.
 
@@ -151,7 +151,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 The framework calls this method when the drop-down frame is created or the parent window is resized. This method calculates the position and size of the drop-down frame by using the position and size of the parent window.
 
-##  <a name="setautodestroy"></a>  CMFCDropDownFrame::SetAutoDestroy
+## <a name="setautodestroy"></a> CMFCDropDownFrame::SetAutoDestroy
 
 Sets whether the child drop-down toolbar window is destroyed automatically.
 

@@ -15,7 +15,7 @@ Therefore, whether you use the `CArchive` **<\<** and **>>** operators, versus c
 - When deserializing the object, you already have memory allocated for it.
 
 > [!CAUTION]
->  If you load the object using the `Serialize` function, you must also store the object using the `Serialize` function. Don't store using the `CArchive` **<<** operator and then load using the `Serialize` function, or store using the `Serialize` function and then load using `CArchive >>` operator.
+> If you load the object using the `Serialize` function, you must also store the object using the `Serialize` function. Don't store using the `CArchive` **<<** operator and then load using the `Serialize` function, or store using the `Serialize` function and then load using `CArchive >>` operator.
 
 The following example illustrates the cases:
 

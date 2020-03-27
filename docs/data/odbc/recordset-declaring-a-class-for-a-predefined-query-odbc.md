@@ -14,14 +14,14 @@ This topic applies to the MFC ODBC classes.
 This topic explains how to create a recordset class for a predefined query (sometimes called a stored procedure, as in Microsoft SQL Server).
 
 > [!NOTE]
->  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If bulk row fetching is implemented, the process is very similar. To understand the differences between recordsets that implement bulk row fetching and those that do not, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If bulk row fetching is implemented, the process is very similar. To understand the differences between recordsets that implement bulk row fetching and those that do not, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 Some database management systems (DBMSs) allow you to create a predefined query and call it from your programs like a function. The query has a name, might take parameters, and might return records. The procedure in this topic describes how to call a predefined query that returns records (and perhaps takes parameters).
 
 The database classes do not support updating predefined queries. The difference between a snapshot predefined query and a dynaset predefined query is not updateability but whether changes made by other users (or other recordsets in your program) are visible in your recordset.
 
 > [!TIP]
->  You do not need a recordset to call a predefined query that does not return records. Prepare the SQL statement as described below, but execute it by calling the `CDatabase` member function [ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql).
+> You do not need a recordset to call a predefined query that does not return records. Prepare the SQL statement as described below, but execute it by calling the `CDatabase` member function [ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql).
 
 You can create a single recordset class to manage calling a predefined query, but you must do some of the work yourself. The wizards do not support creating a class specifically for this purpose.
 
@@ -140,7 +140,7 @@ if( rsDel.Open( CRecordset::snapshot, strSQL ) )
 This code constructs a snapshot, passes it a parameter obtained earlier from the user, and calls the predefined query. When the query runs, it returns records for the specified sales district. Each record contains columns for the account number, customer's last name, and customer's phone number.
 
 > [!TIP]
->  You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).
+> You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).
 
 ## See also
 

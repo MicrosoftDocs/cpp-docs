@@ -26,7 +26,7 @@ You can use the linker option [/ORDER (Put Functions in Order)](order-put-functi
 Inline functions are always packaged if they are instantiated as calls (which occurs, for example, if inlining is off or you take a function address). In addition, C++ member functions defined in the class declaration are automatically packaged; other functions are not, and selecting this option is required to compile them as packaged functions.
 
 > [!NOTE]
->  The [/ZI](z7-zi-zi-debug-information-format.md) option, used for Edit and Continue, automatically sets the **/Gy** option.
+> The [/ZI](z7-zi-zi-debug-information-format.md) option, used for Edit and Continue, automatically sets the **/Gy** option.
 
 ### To set this compiler option in the Visual Studio development environment
 

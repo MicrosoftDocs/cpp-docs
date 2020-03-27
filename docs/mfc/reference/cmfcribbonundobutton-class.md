@@ -58,7 +58,7 @@ The following example demonstrates how to construct an object of the `CMFCRibbon
 
 **Header:** afxribbonundobutton.h
 
-##  <a name="addundoaction"></a>  CMFCRibbonUndoButton::AddUndoAction
+## <a name="addundoaction"></a> CMFCRibbonUndoButton::AddUndoAction
 
 Adds a new action to the list of actions.
 
@@ -71,7 +71,7 @@ void AddUndoAction(LPCTSTR lpszLabel);
 *lpszLabel*<br/>
 [in] The action label that will be displayed in the drop-down list.
 
-##  <a name="cleanupundolist"></a>  CMFCRibbonUndoButton::CleanUpUndoList
+## <a name="cleanupundolist"></a> CMFCRibbonUndoButton::CleanUpUndoList
 
 Clears the action list, which is the drop-down list.
 
@@ -79,7 +79,7 @@ Clears the action list, which is the drop-down list.
 void CleanUpUndoList();
 ```
 
-##  <a name="cmfcribbonundobutton"></a>  CMFCRibbonUndoButton::CMFCRibbonUndoButton
+## <a name="cmfcribbonundobutton"></a> CMFCRibbonUndoButton::CMFCRibbonUndoButton
 
 Constructs a new `CMFCRibbonUndoButton` object by using the command ID that you specify, text label and images from the image list of the parent object.
 
@@ -113,7 +113,7 @@ CMFCRibbonUndoButton(
 *hIcon*<br/>
 [in] A handle to an icon that you can use as a button's image.
 
-##  <a name="getactionnumber"></a>  CMFCRibbonUndoButton::GetActionNumber
+## <a name="getactionnumber"></a> CMFCRibbonUndoButton::GetActionNumber
 
 Determines the number of items that a user selected from the drop-down list.
 
@@ -125,7 +125,7 @@ int GetActionNumber() const;
 
 The number of items that a user selected.
 
-##  <a name="hasmenu"></a>  CMFCRibbonUndoButton::HasMenu
+## <a name="hasmenu"></a> CMFCRibbonUndoButton::HasMenu
 
 Indicates whether the object contains a menu.
 

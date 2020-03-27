@@ -18,11 +18,11 @@ This article describes the Windows printing protocol and explains how to print d
 
 - [Print-time pagination](#_core_print.2d.time_pagination)
 
-##  <a name="_core_the_printing_protocol"></a> The Printing Protocol
+## <a name="_core_the_printing_protocol"></a> The Printing Protocol
 
 To print a multipage document, the framework and view interact in the following manner. First the framework displays the **Print** dialog box, creates a device context for the printer, and calls the [StartDoc](../mfc/reference/cdc-class.md#startdoc) member function of the [CDC](../mfc/reference/cdc-class.md) object. Then, for each page of the document, the framework calls the [StartPage](../mfc/reference/cdc-class.md#startpage) member function of the `CDC` object, instructs the view object to print the page, and calls the [EndPage](../mfc/reference/cdc-class.md#endpage) member function. If the printer mode must be changed before starting a particular page, the view calls [ResetDC](../mfc/reference/cdc-class.md#resetdc), which updates the [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) structure containing the new printer mode information. When the entire document has been printed, the framework calls the [EndDoc](../mfc/reference/cdc-class.md#enddoc) member function.
 
-##  <a name="_core_overriding_view_class_functions"></a> Overriding View Class Functions
+## <a name="_core_overriding_view_class_functions"></a> Overriding View Class Functions
 
 The [CView](../mfc/reference/cview-class.md) class defines several member functions that are called by the framework during printing. By overriding these functions in your view class, you provide the connections between the framework's printing logic and your view class's printing logic. The following table lists these member functions.
 
@@ -43,7 +43,7 @@ The following figure illustrates the steps involved in the printing process and 
 ![Printing loop process](../mfc/media/vc37c71.gif "Printing loop process") <br/>
 The Printing Loop
 
-##  <a name="_core_pagination"></a> Pagination
+## <a name="_core_pagination"></a> Pagination
 
 The framework stores much of the information about a print job in a [CPrintInfo](../mfc/reference/cprintinfo-structure.md) structure. Several of the values in `CPrintInfo` pertain to pagination; these values are accessible as shown in the following table.
 
@@ -73,13 +73,13 @@ The [OnPrint](../mfc/reference/cview-class.md#onprint) member function performs 
 
 The fact that `OnDraw` does the rendering for both screen display and printing means that your application is WYSIWYG: "What you see is what you get." However, suppose you aren't writing a WYSIWYG application. For example, consider a text editor that uses a bold font for printing but displays control codes to indicate bold text on the screen. In such a situation, you use `OnDraw` strictly for screen display. When you override `OnPrint`, substitute the call to `OnDraw` with a call to a separate drawing function. That function draws the document the way it appears on paper, using the attributes that you don't display on the screen.
 
-##  <a name="_core_printer_pages_vs.._document_pages"></a> Printer Pages vs. Document Pages
+## <a name="_core_printer_pages_vs.._document_pages"></a> Printer Pages vs. Document Pages
 
 When you refer to page numbers, it's sometimes necessary to distinguish between the printer's concept of a page and a document's concept of a page. From the point of view of the printer, a page is one sheet of paper. However, one sheet of paper doesn't necessarily equal one page of the document. For example, if you're printing a newsletter, where the sheets are to be folded, one sheet of paper might contain both the first and last pages of the document, side by side. Similarly, if you're printing a spreadsheet, the document doesn't consist of pages at all. Instead, one sheet of paper might contain rows 1 through 20, columns 6 through 10.
 
 All the page numbers in the [CPrintInfo](../mfc/reference/cprintinfo-structure.md) structure refer to printer pages. The framework calls `OnPrepareDC` and `OnPrint` once for each sheet of paper that will pass through the printer. When you override the [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) function to specify the length of the document, you must use printer pages. If there is a one-to-one correspondence (that is, one printer page equals one document page), then this is easy. If, on the other hand, document pages and printer pages do not directly correspond, you must translate between them. For example, consider printing a spreadsheet. When overriding `OnPreparePrinting`, you must calculate how many sheets of paper will be required to print the entire spreadsheet and then use that value when calling the `SetMaxPage` member function of `CPrintInfo`. Similarly, when overriding `OnPrepareDC`, you must translate *m_nCurPage* into the range of rows and columns that will appear on that particular sheet and then adjust the viewport origin accordingly.
 
-##  <a name="_core_print.2d.time_pagination"></a> Print-Time Pagination
+## <a name="_core_print.2d.time_pagination"></a> Print-Time Pagination
 
 In some situations, your view class may not know in advance how long the document is until it has actually been printed. For example, suppose your application isn't WYSIWYG, so a document's length on the screen doesn't correspond to its length when printed.
 

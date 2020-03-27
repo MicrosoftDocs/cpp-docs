@@ -160,7 +160,7 @@ Distribution for 10 samples:
 
 **Namespace:** std
 
-## <a name="gamma_distribution"></a>  gamma_distribution::gamma_distribution
+## <a name="gamma_distribution"></a> gamma_distribution::gamma_distribution
 
 Constructs the distribution.
 
@@ -188,7 +188,7 @@ The first constructor constructs an object whose stored `alpha` value holds the 
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-## <a name="param_type"></a>  gamma_distribution::param_type
+## <a name="param_type"></a> gamma_distribution::param_type
 
 Stores the parameters of the distribution.
 

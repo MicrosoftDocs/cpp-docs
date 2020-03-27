@@ -82,7 +82,7 @@ For more information on using `CTabCtrl`, see [Controls](../../mfc/controls-mfc.
 
 **Header:** afxcmn.h
 
-##  <a name="adjustrect"></a>  CTabCtrl::AdjustRect
+## <a name="adjustrect"></a> CTabCtrl::AdjustRect
 
 Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.
 
@@ -102,7 +102,7 @@ Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that speci
 
 [!code-cpp[NVC_MFC_CTabCtrl#1](../../mfc/reference/codesnippet/cpp/ctabctrl-class_1.cpp)]
 
-##  <a name="create"></a>  CTabCtrl::Create
+## <a name="create"></a> CTabCtrl::Create
 
 Creates a tab control and attaches it to an instance of a `CTabCtrl` object.
 
@@ -154,7 +154,7 @@ To create a tab control with extended window styles, call [CTabCtrl::CreateEx](#
 
 [!code-cpp[NVC_MFC_CTabCtrl#2](../../mfc/reference/codesnippet/cpp/ctabctrl-class_2.cpp)]
 
-##  <a name="createex"></a>  CTabCtrl::CreateEx
+## <a name="createex"></a> CTabCtrl::CreateEx
 
 Creates a control (a child window) and associates it with the `CTabCtrl` object.
 
@@ -194,7 +194,7 @@ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, sp
 
 `CreateEx` creates the control with the extended Windows styles specified by *dwExStyle*. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as TCS_EX_FLATSEPARATORS. For more information, see the styles described in [Tab Control Extended Styles](/windows/win32/Controls/tab-control-extended-styles) in the Windows SDK.
 
-##  <a name="ctabctrl"></a>  CTabCtrl::CTabCtrl
+## <a name="ctabctrl"></a> CTabCtrl::CTabCtrl
 
 Constructs a `CTabCtrl` object.
 
@@ -202,7 +202,7 @@ Constructs a `CTabCtrl` object.
 CTabCtrl();
 ```
 
-##  <a name="deleteallitems"></a>  CTabCtrl::DeleteAllItems
+## <a name="deleteallitems"></a> CTabCtrl::DeleteAllItems
 
 Removes all items from a tab control.
 
@@ -214,7 +214,7 @@ BOOL DeleteAllItems();
 
 Nonzero if successful; otherwise 0.
 
-##  <a name="deleteitem"></a>  CTabCtrl::DeleteItem
+## <a name="deleteitem"></a> CTabCtrl::DeleteItem
 
 Removes the specified item from a tab control.
 
@@ -235,7 +235,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CTabCtrl#3](../../mfc/reference/codesnippet/cpp/ctabctrl-class_3.cpp)]
 
-##  <a name="deselectall"></a>  CTabCtrl::DeselectAll
+## <a name="deselectall"></a> CTabCtrl::DeselectAll
 
 Resets items in a tab control, clearing any that were pressed.
 
@@ -252,7 +252,7 @@ Flag that specifies the scope of the item deselection. If this parameter is set 
 
 This member function implements the behavior of the Win32 message, [TCM_DESELECTALL](/windows/win32/Controls/tcm-deselectall), as described in the Windows SDK.
 
-##  <a name="drawitem"></a>  CTabCtrl::DrawItem
+## <a name="drawitem"></a> CTabCtrl::DrawItem
 
 Called by the framework when a visual aspect of an owner-draw tab control changes.
 
@@ -273,7 +273,7 @@ By default, this member function does nothing. Override this member function to 
 
 The application should restore all graphics device interface (GDI) objects selected for the display context supplied in *lpDrawItemStruct* before this member function terminates.
 
-##  <a name="getcurfocus"></a>  CTabCtrl::GetCurFocus
+## <a name="getcurfocus"></a> CTabCtrl::GetCurFocus
 
 Retrieves the index of the tab with the current focus.
 
@@ -285,7 +285,7 @@ int GetCurFocus() const;
 
 The zero-based index of the tab with the current focus.
 
-##  <a name="getcursel"></a>  CTabCtrl::GetCurSel
+## <a name="getcursel"></a> CTabCtrl::GetCurSel
 
 Retrieves the currently selected tab in a tab control.
 
@@ -297,7 +297,7 @@ int GetCurSel() const;
 
 Zero-based index of the selected tab if successful or - 1 if no tab is selected.
 
-##  <a name="getextendedstyle"></a>  CTabCtrl::GetExtendedStyle
+## <a name="getextendedstyle"></a> CTabCtrl::GetExtendedStyle
 
 Retrieves the extended styles that are currently in use for the tab control.
 
@@ -313,7 +313,7 @@ Represents the extended styles currently in use for the tab control. This value 
 
 This member function implements the behavior of the Win32 message [TCM_GETEXTENDEDSTYLE](/windows/win32/Controls/tcm-getextendedstyle), as described in the Windows SDK.
 
-##  <a name="getimagelist"></a>  CTabCtrl::GetImageList
+## <a name="getimagelist"></a> CTabCtrl::GetImageList
 
 Retrieves the image list that's associated with a tab control.
 
@@ -325,7 +325,7 @@ CImageList* GetImageList() const;
 
 If successful, a pointer to the image list of the tab control; otherwise, NULL.
 
-##  <a name="getitem"></a>  CTabCtrl::GetItem
+## <a name="getitem"></a> CTabCtrl::GetItem
 
 Retrieves information about a tab in a tab control.
 
@@ -353,15 +353,15 @@ When the message is sent, the `mask` member specifies which attributes to return
 
    Value specifying which `TCITEM` structure members to retrieve or set. This member can be zero or a combination of the following values:
 
-   - TCIF_TEXT The `pszText` member is valid.
+  - TCIF_TEXT The `pszText` member is valid.
 
-   - TCIF_IMAGE The `iImage` member is valid.
+  - TCIF_IMAGE The `iImage` member is valid.
 
-   - TCIF_PARAM The `lParam` member is valid.
+  - TCIF_PARAM The `lParam` member is valid.
 
-   - TCIF_RTLREADING The text of `pszText` is displayed using right-to-left reading order on Hebrew or Arabic systems.
+  - TCIF_RTLREADING The text of `pszText` is displayed using right-to-left reading order on Hebrew or Arabic systems.
 
-   - TCIF_STATE The `dwState` member is valid.
+  - TCIF_STATE The `dwState` member is valid.
 
 - `pszText`
 
@@ -382,7 +382,7 @@ Index into the tab control's image list, or - 1 if there is no image for the tab
 
 [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/cpp/ctabctrl-class_4.cpp)]
 
-##  <a name="getitemcount"></a>  CTabCtrl::GetItemCount
+## <a name="getitemcount"></a> CTabCtrl::GetItemCount
 
 Retrieves the number of tabs in the tab control.
 
@@ -398,7 +398,7 @@ Number of items in the tab control.
 
   See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-##  <a name="getitemrect"></a>  CTabCtrl::GetItemRect
+## <a name="getitemrect"></a> CTabCtrl::GetItemRect
 
 Retrieves the bounding rectangle for the specified tab in a tab control.
 
@@ -422,7 +422,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-##  <a name="getitemstate"></a>  CTabCtrl::GetItemState
+## <a name="getitemstate"></a> CTabCtrl::GetItemState
 
 Retrieves the state of the tab control item identified by *nItem*.
 
@@ -453,7 +453,7 @@ A reference to a DWORD value receiving the state information. Can be one of the 
 
 An item's state is specified by the `dwState` member of the `TCITEM` structure.
 
-##  <a name="getrowcount"></a>  CTabCtrl::GetRowCount
+## <a name="getrowcount"></a> CTabCtrl::GetRowCount
 
 Retrieves the current number of rows in a tab control.
 
@@ -469,7 +469,7 @@ The number of rows of tabs in the tab control.
 
 Only tab controls that have the TCS_MULTILINE style can have multiple rows of tabs.
 
-##  <a name="gettooltips"></a>  CTabCtrl::GetToolTips
+## <a name="gettooltips"></a> CTabCtrl::GetToolTips
 
 Retrieves the handle of the tool tip control associated with a tab control.
 
@@ -485,7 +485,7 @@ Handle of the tool tip control if successful; otherwise NULL.
 
 A tab control creates a tool tip control if it has the TCS_TOOLTIPS style. You can also assign a tool tip control to a tab control by using the `SetToolTips` member function.
 
-##  <a name="highlightitem"></a>  CTabCtrl::HighlightItem
+## <a name="highlightitem"></a> CTabCtrl::HighlightItem
 
 Sets the highlight state of a tab item.
 
@@ -509,7 +509,7 @@ Nonzero if successful; otherwise zero.
 
 This member function implements the Win32 message [TCM_HIGHLIGHTITEM](/windows/win32/Controls/tcm-highlightitem), as described in the Windows SDK.
 
-##  <a name="hittest"></a>  CTabCtrl::HitTest
+## <a name="hittest"></a> CTabCtrl::HitTest
 
 Determines which tab, if any, is at the specified screen position.
 
@@ -526,7 +526,7 @@ Pointer to a [TCHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-tchittestin
 
 Returns the zero-based index of the tab or - 1 if no tab is at the specified position.
 
-##  <a name="insertitem"></a>  CTabCtrl::InsertItem
+## <a name="insertitem"></a> CTabCtrl::InsertItem
 
 Inserts a new tab in an existing tab control.
 
@@ -605,7 +605,7 @@ Zero-based index of the new tab if successful; otherwise - 1.
 
 [!code-cpp[NVC_MFC_CTabCtrl#5](../../mfc/reference/codesnippet/cpp/ctabctrl-class_5.cpp)]
 
-##  <a name="removeimage"></a>  CTabCtrl::RemoveImage
+## <a name="removeimage"></a> CTabCtrl::RemoveImage
 
 Removes the specified image from a tab control's image list.
 
@@ -622,7 +622,7 @@ Zero-based index of the image to remove.
 
 The tab control updates each tab's image index so that each tab remains associated with the same image.
 
-##  <a name="setcurfocus"></a>  CTabCtrl::SetCurFocus
+## <a name="setcurfocus"></a> CTabCtrl::SetCurFocus
 
 Sets the focus to a specified tab in a tab control.
 
@@ -639,7 +639,7 @@ Specifies the index of the tab that gets the focus.
 
 This member function implements the behavior of the Win32 message [TCM_SETCURFOCUS](/windows/win32/Controls/tcm-setcurfocus), as described in the Windows SDK.
 
-##  <a name="setcursel"></a>  CTabCtrl::SetCurSel
+## <a name="setcursel"></a> CTabCtrl::SetCurSel
 
 Selects a tab in a tab control.
 
@@ -660,7 +660,7 @@ Zero-based index of the previously selected tab if successful, otherwise - 1.
 
 A tab control does not send a TCN_SELCHANGING or TCN_SELCHANGE notification message when a tab is selected using this function. These notifications are sent, using WM_NOTIFY, when the user clicks or uses the keyboard to change tabs.
 
-##  <a name="setextendedstyle"></a>  CTabCtrl::SetExtendedStyle
+## <a name="setextendedstyle"></a> CTabCtrl::SetExtendedStyle
 
 Sets the extended styles for a tab control.
 
@@ -684,7 +684,7 @@ A DWORD value that contains the previous [tab control extended styles](/windows/
 
 This member function implements the behavior of the Win32 message [TCM_SETEXTENDEDSTYLE](/windows/win32/Controls/tcm-setextendedstyle), as described in the Windows SDK.
 
-##  <a name="setimagelist"></a>  CTabCtrl::SetImageList
+## <a name="setimagelist"></a> CTabCtrl::SetImageList
 
 Assigns an image list to a tab control.
 
@@ -701,7 +701,7 @@ Pointer to the image list to be assigned to the tab control.
 
 Returns a pointer to the previous image list or NULL if there is no previous image list.
 
-##  <a name="setitem"></a>  CTabCtrl::SetItem
+## <a name="setitem"></a> CTabCtrl::SetItem
 
 Sets some or all of a tab's attributes.
 
@@ -725,7 +725,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [GetItem](#getitem).
 
-##  <a name="setitemextra"></a>  CTabCtrl::SetItemExtra
+## <a name="setitemextra"></a> CTabCtrl::SetItemExtra
 
 Sets the number of bytes per tab reserved for application-defined data in a tab control.
 
@@ -746,7 +746,7 @@ Nonzero if successful; otherwise zero.
 
 This member function implements the behavior of the Win32 message [TCM_SETITEMEXTRA](/windows/win32/Controls/tcm-setitemextra), as described in the Windows SDK.
 
-##  <a name="setitemsize"></a>  CTabCtrl::SetItemSize
+## <a name="setitemsize"></a> CTabCtrl::SetItemSize
 
 Sets the width and height of the tab control items.
 
@@ -763,7 +763,7 @@ The new width and height, in pixels, of the tab control items.
 
 Returns the old width and height of the tab control items.
 
-##  <a name="setitemstate"></a>  CTabCtrl::SetItemState
+## <a name="setitemstate"></a> CTabCtrl::SetItemState
 
 Sets the state of the tab control item identified by *nItem*.
 
@@ -794,7 +794,7 @@ A reference to a DWORD value containing the state information. Can be one of the
 
 Nonzero if successful; otherwise 0.
 
-##  <a name="setmintabwidth"></a>  CTabCtrl::SetMinTabWidth
+## <a name="setmintabwidth"></a> CTabCtrl::SetMinTabWidth
 
 Sets the minimum width of items in a tab control.
 
@@ -815,7 +815,7 @@ The previous minimum tab width.
 
 This member function implements the behavior of the Win32 message [TCM_SETMINTABWIDTH](/windows/win32/Controls/tcm-setmintabwidth), as described in the Windows SDK.
 
-##  <a name="setpadding"></a>  CTabCtrl::SetPadding
+## <a name="setpadding"></a> CTabCtrl::SetPadding
 
 Sets the amount of space (padding) around each tab's icon and label in a tab control.
 
@@ -828,7 +828,7 @@ void SetPadding(CSize size);
 *size*<br/>
 Sets the amount of space (padding) around each tab's icon and label in a tab control.
 
-##  <a name="settooltips"></a>  CTabCtrl::SetToolTips
+## <a name="settooltips"></a> CTabCtrl::SetToolTips
 
 Assigns a tool tip control to a tab control.
 

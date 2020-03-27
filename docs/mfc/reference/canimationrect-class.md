@@ -81,7 +81,7 @@ The CAnimationRect class encapsulates four CAnimationVariable objects and can re
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="addtransition"></a>  CAnimationRect::AddTransition
+## <a name="addtransition"></a> CAnimationRect::AddTransition
 
 Adds transitions for left, top, right and bottom coordinates.
 
@@ -111,7 +111,7 @@ Specifies transition for the bottom side.
 
 Call this function to add the specified transitions to the internal list of transitions to be applied to animation variables for each rectangle sides. When you add transitions, they are not applied immediately and stored in an internal list. Transitions are applied (added to a storyboard for a particular value) when you call CAnimationController::AnimateGroup. If you don't need to apply a transition to one of the rectangle sides, you can pass NULL.
 
-##  <a name="canimationrect"></a>  CAnimationRect::CAnimationRect
+## <a name="canimationrect"></a> CAnimationRect::CAnimationRect
 
 Constructs a CAnimationRect object.
 
@@ -177,7 +177,7 @@ Specifies coordinate of bottom bound.
 
 The object is constructed with default values for left, top, right and bottom, Object ID and Group ID, which will be set to 0. They can be changed later at runtime using SetDefaultValue and SetID.
 
-##  <a name="getanimationvariablelist"></a>  CAnimationRect::GetAnimationVariableList
+## <a name="getanimationvariablelist"></a> CAnimationRect::GetAnimationVariableList
 
 Puts the encapsulated animation variables into a list.
 
@@ -192,7 +192,7 @@ virtual void GetAnimationVariableList(
 *lst*<br/>
 When the function returns, it contains pointers to four CAnimationVariable objects representing coordinates of rectangle.
 
-##  <a name="getbottom"></a>  CAnimationRect::GetBottom
+## <a name="getbottom"></a> CAnimationRect::GetBottom
 
 Provides access to CAnimationVariable representing bottom coordinate.
 
@@ -208,7 +208,7 @@ A reference to encapsulated CAnimationVariable representing bottom coordinate.
 
 You can call this method to get direct access to underlying CAnimationVariable representing the bottom coordinate.
 
-##  <a name="getdefaultvalue"></a>  CAnimationRect::GetDefaultValue
+## <a name="getdefaultvalue"></a> CAnimationRect::GetDefaultValue
 
 Returns the default values for rectangle's bounds.
 
@@ -224,7 +224,7 @@ A CRect value containing defaults for left, right, top and bottom.
 
 Call this function to retrieve default value, which was previously set by constructor or SetDefaultValue.
 
-##  <a name="getleft"></a>  CAnimationRect::GetLeft
+## <a name="getleft"></a> CAnimationRect::GetLeft
 
 Provides access to CAnimationVariable representing left coordinate.
 
@@ -240,7 +240,7 @@ A reference to encapsulated CAnimationVariable representing left coordinate.
 
 You can call this method to get direct access to underlying CAnimationVariable representing the left coordinate.
 
-##  <a name="getright"></a>  CAnimationRect::GetRight
+## <a name="getright"></a> CAnimationRect::GetRight
 
 Provides access to CAnimationVariable representing right coordinate.
 
@@ -256,7 +256,7 @@ A reference to encapsulated CAnimationVariable representing right coordinate.
 
 You can call this method to get direct access to underlying CAnimationVariable representing the right coordinate.
 
-##  <a name="gettop"></a>  CAnimationRect::GetTop
+## <a name="gettop"></a> CAnimationRect::GetTop
 
 Provides access to CAnimationVariable representing top coordinate.
 
@@ -272,7 +272,7 @@ A reference to encapsulated CAnimationVariable representing top coordinate.
 
 You can call this method to get direct access to underlying CAnimationVariable representing the top coordinate.
 
-##  <a name="getvalue"></a>  CAnimationRect::GetValue
+## <a name="getvalue"></a> CAnimationRect::GetValue
 
 Returns current value.
 
@@ -293,7 +293,7 @@ TRUE, if the current value was successfully retrieved; otherwise FALSE.
 
 Call this function to retrieve the current value of animation rectangle. If this method fails or underlying COM objects for left, top, right and bottom have not been initialized, rect contains default value, which was previously set in constructor or by SetDefaultValue.
 
-##  <a name="m_bfixedsize"></a>  CAnimationRect::m_bFixedSize
+## <a name="m_bfixedsize"></a> CAnimationRect::m_bFixedSize
 
 Specifies whether the rectangle has fixed size.
 
@@ -305,7 +305,7 @@ BOOL m_bFixedSize;
 
 If this member is true, then the size of rectangle is fixed and right and bottom values are recalculated each time the top-left corner is moved according to the fixed size. Set this value to TRUE to easily move the rectangle around the screen. In this case transitions applied to right and bottom coordinates are ignored. The size is stored internally when you construct the object and/or call SetDefaultValue. By default this member is set to FALSE.
 
-##  <a name="m_bottomvalue"></a>  CAnimationRect::m_bottomValue
+## <a name="m_bottomvalue"></a> CAnimationRect::m_bottomValue
 
 The encapsulated animation variable that represents Bottom bound of animation rectangle.
 
@@ -313,7 +313,7 @@ The encapsulated animation variable that represents Bottom bound of animation re
 CAnimationVariable m_bottomValue;
 ```
 
-##  <a name="m_leftvalue"></a>  CAnimationRect::m_leftValue
+## <a name="m_leftvalue"></a> CAnimationRect::m_leftValue
 
 The encapsulated animation variable that represents Left bound of animation rectangle.
 
@@ -321,7 +321,7 @@ The encapsulated animation variable that represents Left bound of animation rect
 CAnimationVariable m_leftValue;
 ```
 
-##  <a name="m_rightvalue"></a>  CAnimationRect::m_rightValue
+## <a name="m_rightvalue"></a> CAnimationRect::m_rightValue
 
 The encapsulated animation variable that represents Right bound of animation rectangle.
 
@@ -329,7 +329,7 @@ The encapsulated animation variable that represents Right bound of animation rec
 CAnimationVariable m_rightValue;
 ```
 
-##  <a name="m_szinitial"></a>  CAnimationRect::m_szInitial
+## <a name="m_szinitial"></a> CAnimationRect::m_szInitial
 
 Specifies initial size of animation rectangle.
 
@@ -337,7 +337,7 @@ Specifies initial size of animation rectangle.
 CSize m_szInitial;
 ```
 
-##  <a name="m_topvalue"></a>  CAnimationRect::m_topValue
+## <a name="m_topvalue"></a> CAnimationRect::m_topValue
 
 The encapsulated animation variable that represents Top bound of animation rectangle.
 
@@ -345,7 +345,7 @@ The encapsulated animation variable that represents Top bound of animation recta
 CAnimationVariable m_topValue;
 ```
 
-##  <a name="operator_rect"></a>  CAnimationRect::operator RECT
+## <a name="operator_rect"></a> CAnimationRect::operator RECT
 
 Converts a CAnimationRect to RECT.
 
@@ -361,7 +361,7 @@ Current value of animation rectangle as RECT.
 
 This function internally calls GetValue. If GetValue for some reason fails, the returned RECT will contain default values for all rectangle coordinates.
 
-##  <a name="operator_eq"></a>  CAnimationRect::operator=
+## <a name="operator_eq"></a> CAnimationRect::operator=
 
 Assigns rect to CAnimationRect.
 
@@ -378,7 +378,7 @@ The new value of animation rectangle.
 
 It's recommended to do that before animation start, because this operator calls SetDefaultValue, which recreates the underlying COM objects for color components if they have been created. If you subscribed this animation object to events (ValueChanged or IntegerValueChanged), you need to re-enable these events.
 
-##  <a name="setdefaultvalue"></a>  CAnimationRect::SetDefaultValue
+## <a name="setdefaultvalue"></a> CAnimationRect::SetDefaultValue
 
 Sets default value.
 

@@ -11,7 +11,8 @@ This topic is the second in a series of articles that demonstrates the process o
 
 COMSpy is a program that monitors and logs the activity of serviced components on a machine. Serviced components are COM+ components that run on a system and can be used by computers on the same network. They're managed by the Component Services functionality in the Windows Control Panel.
 
-### Step 1. Converting the project file.
+### Step 1. Converting the project file
+
 The project file converts easily and produces a migration report. There are a few entries in the report that let us know about issues we might need to deal with. Here's one issue that is reported (note that throughout this topic, error messages are sometimes shortened for readability, for example to remove the full paths):
 
 ```Output
@@ -21,6 +22,7 @@ ComSpyAudit\ComSpyAudit.vcproj: MSB8012: $(TargetPath) ('C:\Users\UserName\Deskt
 One of the frequent problems in upgrading projects is that the **Linker OutputFile** setting in the project properties dialog box might need to be reviewed. For projects prior to Visual Studio 2010, the OutputFile is one setting that the automatic conversion wizard has trouble with, if it's set to a non-standard value. In this case, the paths for the output files were set to a non-standard folder, XP32_DEBUG. To find out more about this error, we consulted a [blog post](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/) related to the Visual Studio 2010 project upgrade, which was the upgrade that involved the change from vcbuild to msbuild, a significant change. According to this information, the default value for the **Output File** setting when you create a new project is `$(OutDir)$(TargetName)$(TargetExt)`, but this isn't set during conversion since it's not possible for converted projects to verify that everything is correct. However, let's try putting that in for OutputFile and see if it works.  It does, so we can move on. If there is no particular reason for using a nonstandard output folder, we recommend using the standard location. In this case, we chose to leave the output location as the non-standard during the porting and upgrading process; `$(OutDir)` resolves to the XP32_DEBUG folder in the **Debug** configuration and the ReleaseU folder for the **Release** configuration.
 
 ### Step 2. Getting it to build
+
 Building the ported project, a number of errors and warnings occur.
 
 `ComSpyCtl` doesn't compile though due to this compiler error:
@@ -61,6 +63,7 @@ error MSB3073: The command "regsvr32 /s /c "C:\Users\username\Desktop\spy\spy\Co
 We don't need this post-build registration command anymore. Instead, we simply remove the custom build command, and specify in the **Linker** settings to register the output.
 
 ### Dealing with warnings
+
 The project produces the following linker warning.
 
 ```Output
@@ -116,6 +119,7 @@ for (i=0;i<static_cast<UINT>(lCount);i++)
 Those warnings are cases where a variable was declared in a function that has a parameter with the same name, leading to potentially confusing code. We fixed that by changing the names of the local variables.
 
 ### Step 3. Testing and debugging
+
 We tested the app first by running through the various menus and commands, and then closing the application. The only issue noted was a debug assertion upon closing down the app. The problem appeared in the destructor for `CWindowImpl`, a base class of the `CSpyCon` object, the application's main COM component. The assertion failure occurred in the following code in atlwin.h.
 
 ```cpp
@@ -133,7 +137,7 @@ virtual ~CWindowImplRoot()
 
 The `hWnd` is normally set to zero in the `WindowProc` function, but that didn't happen because instead of the default `WindowProc`, a custom handler is called for the Windows message (WM_SYSCOMMAND) that closes the window. The custom handler was not setting the `hWnd` to zero. A look at similar code in MFC's `CWnd` class, shows that when a window is being destroyed, `OnNcDestroy` is called, and in MFC, documentation advises that when overriding `CWnd::OnNcDestroy`, the base `NcDestroy` should be called to make sure that the right clean-up operations occur, including separating the window handle from the window, or in other words, setting the `hWnd` to zero. This assert might have been triggered in the original version of the sample as well, since the same assertion code was present in the old version of atlwin.h.
 
-To test the functionality of the app, we created a **Serviced Component** using the ATL project template, chose to add COM+ support in the ATL project wizard. If you haven’t worked with serviced components before, it’s not difficult to create one and get one registered and available on the system or network for other apps to use. The COM Spy app is designed to monitor the activity of serviced components as a diagnostic aid.
+To test the functionality of the app, we created a **Serviced Component** using the ATL project template, chose to add COM+ support in the ATL project wizard. If you haven't worked with serviced components before, it's not difficult to create one and get one registered and available on the system or network for other apps to use. The COM Spy app is designed to monitor the activity of serviced components as a diagnostic aid.
 
 Then we added a class, chose ATL Object, and specified the object name as `Dog`. Then in dog.h and dog.cpp, we added the implementation.
 
@@ -146,7 +150,7 @@ STDMETHODIMP CDog::Wag(LONG* lDuration)
 }
 ```
 
-Next, we built and registered it (you’ll need to run Visual Studio as Administrator), and activated it using the **Serviced Component** application in the Windows Control Panel. We created a C# Windows Forms project, dragged a button to the form from the toolbox, and double-clicked that to a click event handler. We added the following code to instantiate the `Dog` component.
+Next, we built and registered it (you'll need to run Visual Studio as Administrator), and activated it using the **Serviced Component** application in the Windows Control Panel. We created a C# Windows Forms project, dragged a button to the form from the toolbox, and double-clicked that to a click event handler. We added the following code to instantiate the `Dog` component.
 
 ```cpp
 private void button1_Click(object sender, EventArgs e)

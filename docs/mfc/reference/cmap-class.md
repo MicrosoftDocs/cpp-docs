@@ -94,7 +94,7 @@ Map class derivation is similar to list derivation. See the article [Collections
 
 **Header:** afxtempl.h
 
-##  <a name="cmap"></a>  CMap::CMap
+## <a name="cmap"></a> CMap::CMap
 
 Constructs an empty map.
 
@@ -115,7 +115,7 @@ As the map grows, memory is allocated in units of *nBlockSize* entries.
 
 [!code-cpp[NVC_MFCCollections#56](../../mfc/codesnippet/cpp/cmap-class_1.cpp)]
 
-##  <a name="cpair"></a>  CMap::CPair
+## <a name="cpair"></a> CMap::CPair
 
 Contains a key value and the value of the associated object.
 
@@ -135,7 +135,7 @@ It is used to store the return values from [CMap::PLookup](#plookup), [CMap::PGe
 
 For an example of usage, see the example for [CMap::PLookup](#plookup).
 
-##  <a name="getcount"></a>  CMap::GetCount
+## <a name="getcount"></a> CMap::GetCount
 
 Retrieves the number of elements in the map.
 
@@ -151,7 +151,7 @@ The number of elements.
 
 See the example for [CMap::Lookup](#lookup).
 
-##  <a name="gethashtablesize"></a>  CMap::GetHashTableSize
+## <a name="gethashtablesize"></a> CMap::GetHashTableSize
 
 Determines the number of elements in the hash table for the map.
 
@@ -167,7 +167,7 @@ The number of elements in the hash table.
 
 [!code-cpp[NVC_MFCCollections#57](../../mfc/codesnippet/cpp/cmap-class_2.cpp)]
 
-##  <a name="getnextassoc"></a>  CMap::GetNextAssoc
+## <a name="getnextassoc"></a> CMap::GetNextAssoc
 
 Retrieves the map element at `rNextPosition`, then updates `rNextPosition` to refer to the next element in the map.
 
@@ -205,7 +205,7 @@ If the retrieved element is the last in the map, then the new value of *rNextPos
 
 See the example for [CMap::SetAt](#setat).
 
-##  <a name="getsize"></a>  CMap::GetSize
+## <a name="getsize"></a> CMap::GetSize
 
 Returns the number of map elements.
 
@@ -225,7 +225,7 @@ Call this method to retrieve the number of elements in the map.
 
 [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]
 
-##  <a name="getstartposition"></a>  CMap::GetStartPosition
+## <a name="getstartposition"></a> CMap::GetStartPosition
 
 Starts a map iteration by returning a POSITION value that can be passed to a `GetNextAssoc` call.
 
@@ -245,7 +245,7 @@ The iteration sequence is not predictable; therefore, the "first element in the 
 
 See the example for [CMap::SetAt](#setat).
 
-##  <a name="inithashtable"></a>  CMap::InitHashTable
+## <a name="inithashtable"></a> CMap::InitHashTable
 
 Initializes the hash table.
 
@@ -269,7 +269,7 @@ For best performance, the hash table size should be a prime number. To minimize 
 
 See the example for [CMap::Lookup](#lookup).
 
-##  <a name="isempty"></a>  CMap::IsEmpty
+## <a name="isempty"></a> CMap::IsEmpty
 
 Determines whether the map is empty.
 
@@ -285,7 +285,7 @@ Nonzero if this map contains no elements; otherwise 0.
 
 See the example for [CMap::RemoveAll](#removeall).
 
-##  <a name="lookup"></a>  CMap::Lookup
+## <a name="lookup"></a> CMap::Lookup
 
 Looks up the value mapped to a given key.
 
@@ -319,7 +319,7 @@ Nonzero if the element was found; otherwise 0.
 
 [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]
 
-##  <a name="operator_at"></a>  CMap::operator [ ]
+## <a name="operator_at"></a> CMap::operator [ ]
 
 A convenient substitute for the `SetAt` member function.
 
@@ -348,7 +348,7 @@ There is no "right side" (r-value) equivalent to this operator because there is 
 
 See the example for [CMap::Lookup](#lookup).
 
-##  <a name="pgetfirstassoc"></a>  CMap::PGetFirstAssoc
+## <a name="pgetfirstassoc"></a> CMap::PGetFirstAssoc
 
 Returns the first entry of the map object.
 
@@ -369,7 +369,7 @@ Call this function to return a pointer the first element in the map object.
 
 [!code-cpp[NVC_MFCCollections#59](../../mfc/codesnippet/cpp/cmap-class_4.cpp)]
 
-##  <a name="pgetnextassoc"></a>  CMap::PGetNextAssoc
+## <a name="pgetnextassoc"></a> CMap::PGetNextAssoc
 
 Retrieves the map element pointed to by *pAssocRec*.
 
@@ -396,7 +396,7 @@ Call this method to iterate through all the elements in the map. Retrieve the fi
 
 See the example for [CMap::PGetFirstAssoc](#pgetfirstassoc).
 
-##  <a name="plookup"></a>  CMap::PLookup
+## <a name="plookup"></a> CMap::PLookup
 
 Finds the value mapped to a given key.
 
@@ -422,7 +422,7 @@ Call this method to search for a map element with a key that exactly matches the
 
 [!code-cpp[NVC_MFCCollections#60](../../mfc/codesnippet/cpp/cmap-class_5.cpp)]
 
-##  <a name="removeall"></a>  CMap::RemoveAll
+## <a name="removeall"></a> CMap::RemoveAll
 
 Removes all the values from this map by calling the global helper function `DestructElements`.
 
@@ -438,7 +438,7 @@ The function works correctly if the map is already empty.
 
 [!code-cpp[NVC_MFCCollections#61](../../mfc/codesnippet/cpp/cmap-class_6.cpp)]
 
-##  <a name="removekey"></a>  CMap::RemoveKey
+## <a name="removekey"></a> CMap::RemoveKey
 
 Looks up the map entry corresponding to the supplied key; then, if the key is found, removes the entry.
 
@@ -466,7 +466,7 @@ The `DestructElements` helper function is used to remove the entry.
 
 See the example for [CMap::SetAt](#setat).
 
-##  <a name="setat"></a>  CMap::SetAt
+## <a name="setat"></a> CMap::SetAt
 
 The primary means to insert an element in a map.
 

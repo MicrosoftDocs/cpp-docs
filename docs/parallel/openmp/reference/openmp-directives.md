@@ -37,7 +37,7 @@ For data environment:
 |---------|-----------|
 |[threadprivate](#threadprivate)|Specifies that a variable is private to a thread.|
 
-## <a name="atomic"></a>atomic
+## <a name="atomic"></a> atomic
 
 Specifies that a memory location that will be updated atomically.
 
@@ -82,7 +82,7 @@ int main() {
 Number of threads: 10
 ```
 
-## <a name="barrier"></a>barrier
+## <a name="barrier"></a> barrier
 
 Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.
 
@@ -100,7 +100,7 @@ For more information, see [2.6.3 barrier directive](../../../parallel/openmp/2-6
 
 For a sample of how to use `barrier`, see [master](#master).
 
-## <a name="critical"></a>critical
+## <a name="critical"></a> critical
 
 Specifies that code is only be executed on one thread at a time.
 
@@ -180,7 +180,7 @@ int main()
 max = 29358
 ```
 
-## <a name="flush-openmp"></a>flush
+## <a name="flush-openmp"></a> flush
 
 Specifies that all threads have the same view of memory for all shared objects.
 
@@ -256,7 +256,7 @@ Thread 1: process data
 data = 2
 ```
 
-## <a name="for-openmp"></a>for
+## <a name="for-openmp"></a> for
 
 Causes the work done in a `for` loop inside a parallel region to be divided among threads.
 
@@ -353,7 +353,7 @@ int main() {
 The sum of 1 through 10 is 55
 ```
 
-## <a name="master"></a>master
+## <a name="master"></a> master
 
 Specifies that only the master thread should execute a section of the program.
 
@@ -415,7 +415,7 @@ a[3] = 9
 a[4] = 16
 ```
 
-## <a name="ordered-openmp-directives"></a>ordered
+## <a name="ordered-openmp-directives"></a> ordered
 
 Specifies that code under a parallelized `for` loop should be executed like a sequential loop.
 
@@ -486,7 +486,7 @@ test2() iteration 3
 test2() iteration 4
 ```
 
-## <a name="parallel"></a>parallel
+## <a name="parallel"></a> parallel
 
 Defines a parallel region, which is code that will be executed by multiple threads in parallel.
 
@@ -545,7 +545,7 @@ Hello from thread 2
 Hello from thread 3
 ```
 
-## <a name="sections-openmp"></a>sections
+## <a name="sections-openmp"></a> sections
 
 Identifies code sections to be divided among all threads.
 
@@ -603,7 +603,7 @@ Hello from thread 0
 Hello from thread 0
 ```
 
-## <a name="single"></a>single
+## <a name="single"></a> single
 
 Lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.
 
@@ -664,7 +664,7 @@ compute results
 write output
 ```
 
-## <a name="threadprivate"></a>threadprivate
+## <a name="threadprivate"></a> threadprivate
 
 Specifies that a variable is private to a thread.
 

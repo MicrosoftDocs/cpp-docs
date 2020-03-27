@@ -44,7 +44,7 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
-## <a name="addcommandhandler"></a>  ICommandSource::AddCommandHandler
+## <a name="addcommandhandler"></a> ICommandSource::AddCommandHandler
 
 Adds a command handler to a command source object.
 
@@ -85,6 +85,7 @@ The beginning index of the command ID range.
 The ending index of the command ID range.
 *cmdHandler*<br/>
 A handle to the message handler method to which the commands are mapped.
+
 ### Remarks
 
 This method maps a contiguous range of command IDs to a single message handler and adds it to the command source object. This is used for handling a group of related buttons with one method.
@@ -146,6 +147,7 @@ void PostCommand(unsigned int command);
 
 *command*<br/>
 The command ID of the message to be posted.
+
 ### Remarks
 
 This method asynchronously posts the message mapped to the ID specified by command. It calls CWnd::PostMessage to place the message in the window's message queue and then returns without waiting for the corresponding window to process the message.
@@ -162,6 +164,7 @@ void RemoveCommandHandler(unsigned int cmdID);
 
 *cmdID*<br/>
 The command ID.
+
 ### Remarks
 
 This method removes the command handler mapped to cmdID from the command source object.
@@ -182,6 +185,7 @@ void RemoveCommandRangeUIHandler(
 The beginning index of the command ID range.
 *cmdIDMax*<br/>
 The ending index of the command ID range.
+
 ### Remarks
 
 This method removes a group of message handlers, mapped to the command IDs specified by cmdIDMin and cmdIDMax, from the command source object.
@@ -202,6 +206,7 @@ void RemoveCommandRangeUIHandler(
 The beginning index of the command ID range.
 *cmdIDMax*<br/>
 The ending index of the command ID range.
+
 ### Remarks
 
 This method removes a group of user interface command message handlers, mapped to the command IDs specified by cmdIDMin and cmdIDMax, from the command source object.
@@ -218,6 +223,7 @@ void RemoveCommandUIHandler(unsigned int cmdID);
 
 *cmdID*<br/>
 The command ID.
+
 ### Remarks
 
 This method removes the user interface command message handler mapped to cmdID from the command source object.
@@ -234,9 +240,11 @@ void SendCommand(unsigned int command);
 
 *command*<br/>
 The command ID of the message to be sent.
+
 ### Remarks
 
 This method synchronously sends the message mapped to the ID specified by command. It calls CWnd::SendMessage to place the message in the window's message queue and waits until that window procedure has processed the message before returning.
+
 ## See also
 
 [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>

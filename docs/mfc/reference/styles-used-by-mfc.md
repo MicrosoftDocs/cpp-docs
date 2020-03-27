@@ -77,7 +77,7 @@ The following table lists additional options that you can use with any button ty
 |BS_MULTILINE|Wraps the button text to multiple lines if the text string is too long to fit on a single line in the button rectangle.|
 |BS_NOTIFY|Enables a button to send BN_DBLCLK, BN_KILLFOCUS, and BN_SETFOCUS notification messages to its parent window. Note that buttons send the BN_CLICKED notification regardless of whether this style is specified.|
 
-## <a name="combo-box-styles"></a>  Combo-box styles
+## <a name="combo-box-styles"></a> Combo-box styles
 
 The following combo-box styles are available in MFC. For more information about combo-box styles in Windows, see [Combo Box Styles (Windows)](/windows/win32/Controls/combo-box-styles).
 
@@ -97,7 +97,7 @@ The following combo-box styles are available in MFC. For more information about 
 |CBS_SORT|Automatically sorts strings entered into the list box.|
 |CBS_UPPERCASE|Converts to uppercase all text in both the selection field and the list.|
 
-## <a name="edit-styles"></a>  Edit styles
+## <a name="edit-styles"></a> Edit styles
 
 Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles).
 
@@ -151,7 +151,7 @@ List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md)
 |LBS_USETABSTOPS|Allows a list box to recognize and expand tab characters when drawing its strings. The default tab positions are 32 dialog units. (A dialog unit is a horizontal or vertical distance. One horizontal dialog unit is equal to one-fourth of the current dialog base width unit. The dialog base units are computed based on the height and width of the current system font. The `GetDialogBaseUnits` Windows function returns the current dialog base units in pixels.) This style should not be used with LBS_OWNERDRAWFIXED.|
 |LBS_WANTKEYBOARDINPUT|The owner of the list box receives WM_VKEYTOITEM or WM_CHARTOITEM messages whenever the user presses a key while the list box has input focus. This allows an application to perform special processing on the keyboard input.|
 
-## <a name="message-box-styles"></a>  Message-box styles
+## <a name="message-box-styles"></a> Message-box styles
 
 Message-box styles apply to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *nType* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [MessageBox Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox).
 

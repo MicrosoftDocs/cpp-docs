@@ -14,29 +14,29 @@ When you use the Console Application template to create a project, it automatica
 
 - References to these .NET Framework namespaces:
 
-   - <xref:System.AppDomainManager>—Contains fundamental classes and base classes that define commonly used values and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.
+  - <xref:System.AppDomainManager>—Contains fundamental classes and base classes that define commonly used values and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.
 
-   - mscorlib—The assembly DLL that supports .NET Framework development.
+  - mscorlib—The assembly DLL that supports .NET Framework development.
 
 - Source files:
 
-   - Console (.cpp file)—The main source file and entry point into the app that you just created. It identifies the project .dll file and the project namespace. Provide your own code in this file.
+  - Console (.cpp file)—The main source file and entry point into the app that you just created. It identifies the project .dll file and the project namespace. Provide your own code in this file.
 
-   - AssemblyInfo.cpp—Contains attributes, files, resources, types, versioning information, signing information, and so on that you can use to modify the project's assembly metadata. For more information, see [Assembly Contents](/dotnet/framework/app-domains/assembly-contents).
+  - AssemblyInfo.cpp—Contains attributes, files, resources, types, versioning information, signing information, and so on that you can use to modify the project's assembly metadata. For more information, see [Assembly Contents](/dotnet/framework/app-domains/assembly-contents).
 
-   - Stdafx.cpp—Used to build a precompiled header file that's named Win32.pch and a precompiled types file that's named StdAfx.obj.
+  - Stdafx.cpp—Used to build a precompiled header file that's named Win32.pch and a precompiled types file that's named StdAfx.obj.
 
 - Header files:
 
-   - Stdafx.h—Used to build a precompiled header file that's named Win32.pch and a precompiled types file that's named StdAfx.obj.
+  - Stdafx.h—Used to build a precompiled header file that's named Win32.pch and a precompiled types file that's named StdAfx.obj.
 
-   - resource.h—A generated include file for app.rc.
+  - resource.h—A generated include file for app.rc.
 
 - Resource files:
 
-   - app.rc—The resource script file of a program.
+  - app.rc—The resource script file of a program.
 
-   - app.ico—The icon file of a program.
+  - app.ico—The icon file of a program.
 
 - ReadMe.txt—Describes the files in the project.
 

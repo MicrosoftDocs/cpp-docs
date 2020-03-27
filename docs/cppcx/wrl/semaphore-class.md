@@ -52,7 +52,7 @@ Name                                     | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="lock"></a>Semaphore::Lock
+## <a name="lock"></a> Semaphore::Lock
 
 Waits until the current object, or the `Semaphore` object associated with the specified handle, is in the signaled state or the specified time-out interval has elapsed.
 
@@ -79,7 +79,7 @@ A handle to a `Semaphore` object.
 
 A `Details::SyncLockWithStatusT<HandleTraits::SemaphoreTraits>`
 
-## <a name="operator-assign"></a>Semaphore::operator=
+## <a name="operator-assign"></a> Semaphore::operator=
 
 Moves the specified handle from a `Semaphore` object to the current `Semaphore` object.
 
@@ -98,7 +98,7 @@ Rvalue-reference to a `Semaphore` object.
 
 A reference to the current `Semaphore` object.
 
-## <a name="semaphore"></a>Semaphore::Semaphore
+## <a name="semaphore"></a> Semaphore::Semaphore
 
 Initializes a new instance of the `Semaphore` class.
 

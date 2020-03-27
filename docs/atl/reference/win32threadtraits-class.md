@@ -10,7 +10,7 @@ ms.assetid: 50279c38-eae1-4301-9ea6-97ccea580f3e
 This class provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -42,7 +42,7 @@ If the thread will be using CRT functions, use [CRTThreadTraits](../../atl/refer
 
 **Header:** atlbase.h
 
-##  <a name="createthread"></a>  Win32ThreadTraits::CreateThread
+## <a name="createthread"></a> Win32ThreadTraits::CreateThread
 
 Call this function to create a thread that should not use CRT functions.
 

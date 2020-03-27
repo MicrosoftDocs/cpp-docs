@@ -45,7 +45,7 @@ class CD2DSizeU : public D2D1_SIZE_U;
 
 **Header:** afxrendertarget.h
 
-##  <a name="cd2dsizeu"></a>  CD2DSizeU::CD2DSizeU
+## <a name="cd2dsizeu"></a> CD2DSizeU::CD2DSizeU
 
 Constructs a CD2DSizeU object from CSize object.
 
@@ -70,7 +70,7 @@ source width
 *cy*<br/>
 source height
 
-##  <a name="isnull"></a>  CD2DSizeU::IsNull
+## <a name="isnull"></a> CD2DSizeU::IsNull
 
 Returns a Boolean value that indicates whether an expression contains no valid data (Null).
 
@@ -82,7 +82,7 @@ BOOL IsNull() const;
 
 TRUE if width and height are empty; otherwise FALSE.
 
-##  <a name="operator_csize"></a>  CD2DSizeU::operator CSize
+## <a name="operator_csize"></a> CD2DSizeU::operator CSize
 
 Converts CD2DSizeU to CSize object.
 

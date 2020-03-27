@@ -10,7 +10,7 @@ ms.assetid: 07d3291f-7edf-456b-8828-283ac8673661
 The restriction specifier can be applied to function and lambda declarations. It enforces restrictions on the code in the function and on the behavior of the function in applications that use the C++ Accelerated Massive Parallelism (C++ AMP) runtime.
 
 > [!NOTE]
->  For information about the **restrict** keyword that is part of the **__declspec** storage-class attributes, see [restrict](../cpp/restrict.md).
+> For information about the **restrict** keyword that is part of the **__declspec** storage-class attributes, see [restrict](../cpp/restrict.md).
 
 The **restrict** clause takes the following forms:
 
@@ -38,37 +38,37 @@ A function that has the `restrict(amp)` clause has the following limitations:
 
 - The following are not allowed:
 
-   - Recursion.
+  - Recursion.
 
-   - Variables declared with the [volatile](../cpp/volatile-cpp.md) keyword.
+  - Variables declared with the [volatile](../cpp/volatile-cpp.md) keyword.
 
-   - Virtual functions.
+  - Virtual functions.
 
-   - Pointers to functions.
+  - Pointers to functions.
 
-   - Pointers to member functions.
+  - Pointers to member functions.
 
-   - Pointers in structures.
+  - Pointers in structures.
 
-   - Pointers to pointers.
+  - Pointers to pointers.
 
-   - **goto** statements.
+  - **goto** statements.
 
-   - Labeled statements.
+  - Labeled statements.
 
-   - **try**, **catch**, or **throw** statements.
+  - **try**, **catch**, or **throw** statements.
 
-   - Global variables.
+  - Global variables.
 
-   - Static variables. Use [tile_static Keyword](../cpp/tile-static-keyword.md) instead.
+  - Static variables. Use [tile_static Keyword](../cpp/tile-static-keyword.md) instead.
 
-   - **dynamic_cast** casts.
+  - **dynamic_cast** casts.
 
-   - The **typeid** operator.
+  - The **typeid** operator.
 
-   - asm declarations.
+  - asm declarations.
 
-   - Varargs.
+  - Varargs.
 
 For a discussion of function limitations, see [restrict (amp) Restrictions](https://blogs.msdn.microsoft.com/nativeconcurrency/2011/12/19/restrictamp-restrictions-part-0-of-n-introduction/).
 

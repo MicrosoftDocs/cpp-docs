@@ -67,7 +67,7 @@ After constructing or incrementing an object of class istreambuf_iterator with a
 
 **Namespace:** std
 
-## <a name="char_type"></a>  istreambuf_iterator::char_type
+## <a name="char_type"></a> istreambuf_iterator::char_type
 
 A type that provides for the character type of the `ostreambuf_iterator`.
 
@@ -112,7 +112,7 @@ int main( )
 }
 ```
 
-## <a name="equal"></a>  istreambuf_iterator::equal
+## <a name="equal"></a> istreambuf_iterator::equal
 
 Tests for equivalence between two input stream buffer iterators.
 
@@ -161,7 +161,7 @@ int main( )
 }
 ```
 
-## <a name="int_type"></a>  istreambuf_iterator::int_type
+## <a name="int_type"></a> istreambuf_iterator::int_type
 
 A type that provides an integer type for an `istreambuf_iterator`.
 
@@ -192,7 +192,7 @@ The inttype1 = 100.
 */
 ```
 
-## <a name="istream_type"></a>  istreambuf_iterator::istream_type
+## <a name="istream_type"></a> istreambuf_iterator::istream_type
 
 A type that provides for the stream type of the `istreambuf_iterator`.
 
@@ -208,7 +208,7 @@ The type is a synonym for `basic_istream`\< **CharType**, **Traits**>.
 
 See [istreambuf_iterator](#istreambuf_iterator) for an example of how to declare and use `istream_type`.
 
-## <a name="istreambuf_iterator"></a>  istreambuf_iterator::istreambuf_iterator
+## <a name="istreambuf_iterator"></a> istreambuf_iterator::istreambuf_iterator
 
 Constructs an istreambuf_iterator that is initialized to read characters from the input stream.
 
@@ -261,7 +261,7 @@ int main( )
 }
 ```
 
-## <a name="op_star"></a>  istreambuf_iterator::operator*
+## <a name="op_star"></a> istreambuf_iterator::operator*
 
 The dereferencing operator returns the next character in the stream.
 
@@ -301,7 +301,7 @@ int main( )
 }
 ```
 
-## <a name="op_add_add"></a>  istreambuf_iterator::operator++
+## <a name="op_add_add"></a> istreambuf_iterator::operator++
 
 Either returns the next character from the input stream or copies the object before incrementing it and returns the copy.
 
@@ -346,7 +346,7 @@ int main( )
 }
 ```
 
-## <a name="op_arrow"></a>  istreambuf_iterator::operator-&gt;
+## <a name="op_arrow"></a> istreambuf_iterator::operator-&gt;
 
 Returns the value of a member, if any.
 
@@ -358,7 +358,7 @@ const Elem* operator->() const;
 
 The operator returns **&\*\*this**.
 
-## <a name="streambuf_type"></a>  istreambuf_iterator::streambuf_type
+## <a name="streambuf_type"></a> istreambuf_iterator::streambuf_type
 
 A type that provides for the stream type of the istreambuf_iterator.
 
@@ -374,7 +374,7 @@ The type is a synonym for `basic_streambuf`\< **CharType**, **Traits**>.
 
 See [istreambuf_iterator](#istreambuf_iterator) for an example of how to declare and use `istreambuf_type`.
 
-## <a name="traits_type"></a>  istreambuf_iterator::traits_type
+## <a name="traits_type"></a> istreambuf_iterator::traits_type
 
 A type that provides for the character traits type of the `istream_iterator`.
 

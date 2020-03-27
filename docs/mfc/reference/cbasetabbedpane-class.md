@@ -91,7 +91,7 @@ For more information about how to create tabbed panes, see [CDockablePane Class]
 
 **Header:** afxBaseTabbedPane.h
 
-##  <a name="addtab"></a>  CBaseTabbedPane::AddTab
+## <a name="addtab"></a> CBaseTabbedPane::AddTab
 
 Adds a new tab to a tabbed pane.
 
@@ -125,7 +125,7 @@ TRUE if the pane was successfully added as a tab and was not destroyed in the pr
 
 Call this method to add a pane as a new tab on a tabbed pane. If *pNewBar* points to an object of type `CBaseTabbedPane`, all its tabs are copied onto the tabbed pane and then *pNewBar* is destroyed. Thus, *pNewBar* becomes an invalid pointer and should not be used.
 
-##  <a name="allowdestroyemptytabbedpane"></a>  CBaseTabbedPane::AllowDestroyEmptyTabbedPane
+## <a name="allowdestroyemptytabbedpane"></a> CBaseTabbedPane::AllowDestroyEmptyTabbedPane
 
 Specifies whether an empty tabbed pane can be destroyed.
 
@@ -141,7 +141,7 @@ TRUE if an empty tabbed pane can be destroyed; otherwise, FALSE. The default imp
 
 If an empty tabbed pane is not allowed to be destroyed, the framework hides the pane instead.
 
-##  <a name="applyrestoredtabinfo"></a>  CBaseTabbedPane::ApplyRestoredTabInfo
+## <a name="applyrestoredtabinfo"></a> CBaseTabbedPane::ApplyRestoredTabInfo
 
 Loads tab settings from the registry and applies them to a tabbed pane.
 
@@ -158,7 +158,7 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 
 This method is called by the framework when it reloads docking state information from the registry. The method obtains information about tab order and tab names for a tabbed pane.
 
-##  <a name="canfloat"></a>  CBaseTabbedPane::CanFloat
+## <a name="canfloat"></a> CBaseTabbedPane::CanFloat
 
 Specifies whether the tabbed pane can float.
 
@@ -170,7 +170,7 @@ virtual BOOL CanFloat() const;
 
 TRUE if the pane can float; otherwise, FALSE.
 
-##  <a name="cansetcaptiontexttotabname"></a>  CBaseTabbedPane::CanSetCaptionTextToTabName
+## <a name="cansetcaptiontexttotabname"></a> CBaseTabbedPane::CanSetCaptionTextToTabName
 
 Determines whether the caption for the tabbed pane should display the same text as the active tab.
 
@@ -186,7 +186,7 @@ TRUE if the caption text of the tabbed pane is set to the text of the active tab
 
 The method is used to determine whether the text displayed on the tabbed pane caption duplicates the label of the active tab. You can enable or disable this functionality by calling [CBaseTabbedPane::EnableSetCaptionTextToTabName](#enablesetcaptiontexttotabname).
 
-##  <a name="converttotabbeddocument"></a>  CBaseTabbedPane::ConvertToTabbedDocument
+## <a name="converttotabbeddocument"></a> CBaseTabbedPane::ConvertToTabbedDocument
 
 Converts one or more dockable panes to MDI tabbed documents.
 
@@ -199,7 +199,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 *bActiveTabOnly*<br/>
 [in] When you convert a tabbed pane, specify TRUE to convert only the active tab. Specify FALSE to convert all tabs in the pane.
 
-##  <a name="detachpane"></a>  CBaseTabbedPane::DetachPane
+## <a name="detachpane"></a> CBaseTabbedPane::DetachPane
 
 Detaches a pane from the tabbed pane.
 
@@ -225,7 +225,7 @@ TRUE if the framework successfully detaches the pane; FALSE if *pBar* is NULL or
 
 The framework floats the detached pane if possible. For more information, see [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat).
 
-##  <a name="enablesetcaptiontexttotabname"></a>  CBaseTabbedPane::EnableSetCaptionTextToTabName
+## <a name="enablesetcaptiontexttotabname"></a> CBaseTabbedPane::EnableSetCaptionTextToTabName
 
 Enables or disables the ability of the tabbed pane to synchronize caption text with the label text on the active tab.
 
@@ -238,7 +238,7 @@ virtual void EnableSetCaptionTextToTabName(BOOL bEnable);
 *bEnable*<br/>
 [in] TRUE to synchronize the tabbed pane caption with the active tab caption; otherwise, FALSE.
 
-##  <a name="filldefaulttabsorderarray"></a>  CBaseTabbedPane::FillDefaultTabsOrderArray
+## <a name="filldefaulttabsorderarray"></a> CBaseTabbedPane::FillDefaultTabsOrderArray
 
 Restores the internal tab order to a default state.
 
@@ -250,7 +250,7 @@ void FillDefaultTabsOrderArray();
 
 This method is called when the framework restores an Outlook bar to an initial state.
 
-##  <a name="findpanebyid"></a>  CBaseTabbedPane::FindPaneByID
+## <a name="findpanebyid"></a> CBaseTabbedPane::FindPaneByID
 
 Returns a pane identified by the pane ID.
 
@@ -271,7 +271,7 @@ A pointer to the pane if it was found; otherwise, NULL.
 
 This method compares all tabs in the pane and returns the one with the ID specified by the *uBarID* parameter.
 
-##  <a name="findbarbytabnumber"></a>  CBaseTabbedPane::FindBarByTabNumber
+## <a name="findbarbytabnumber"></a> CBaseTabbedPane::FindBarByTabNumber
 
 Returns a pane that resides in a tab.
 
@@ -297,7 +297,7 @@ If the pane is found, then a valid pointer to the pane being searched for is ret
 
 Call this method to retrieve the pane residing in the tab specified by the *nTabNum* parameter.
 
-##  <a name="floattab"></a>  CBaseTabbedPane::FloatTab
+## <a name="floattab"></a> CBaseTabbedPane::FloatTab
 
 Floats a pane, but only if the pane currently resides in a detachable tab.
 
@@ -333,7 +333,7 @@ Call this method to float a pane that currently resides in a detachable tab.
 
 If you want to detach a pane programmatically, specify DM_SHOW for the *dockMethod* parameter. If you want to float the pane in the same position where it floated previously, specify DM_DBL_CLICK as the *dockMethod* parameter.
 
-##  <a name="getdefaulttabsorder"></a>  CBaseTabbedPane::GetDefaultTabsOrder
+## <a name="getdefaulttabsorder"></a> CBaseTabbedPane::GetDefaultTabsOrder
 
 Returns the default order of tabs in the pane.
 
@@ -349,7 +349,7 @@ A `CArray` object that specifies the default order of tabs in the pane.
 
 The framework calls this method when an Outlook bar is reset to an initial state.
 
-##  <a name="getfirstvisibletab"></a>  CBaseTabbedPane::GetFirstVisibleTab
+## <a name="getfirstvisibletab"></a> CBaseTabbedPane::GetFirstVisibleTab
 
 Retrieves a pointer to the first displayed tab.
 
@@ -366,7 +366,7 @@ virtual CWnd* GetFirstVisibleTab(int& iTabNum);
 
 If successful, a pointer to the first displayed tab; otherwise, NULL.
 
-##  <a name="getminsize"></a>  CBaseTabbedPane::GetMinSize
+## <a name="getminsize"></a> CBaseTabbedPane::GetMinSize
 
 Retrieves the minimum allowed size for the pane.
 
@@ -383,7 +383,7 @@ virtual void GetMinSize(CSize& size) const;
 
 If consistent handling of minimum pane sizes is active ( [CPane::m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)), *size* is filled with the minimum allowed size for the active tab. Otherwise, *size* is filled with the return value of [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).
 
-##  <a name="getpaneicon"></a>  CBaseTabbedPane::GetPaneIcon
+## <a name="getpaneicon"></a> CBaseTabbedPane::GetPaneIcon
 
 Retrieves the minimum allowed size for the pane.
 
@@ -400,7 +400,7 @@ virtual void GetMinSize(CSize& size) const;
 
 If consistent handling of minimum pane sizes is active ( [CPane::m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)), *size* is filled with the minimum allowed size for the active tab. Otherwise, *size* is filled with the return value of [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).
 
-##  <a name="getpanelist"></a>  CBaseTabbedPane::GetPaneList
+## <a name="getpanelist"></a> CBaseTabbedPane::GetPaneList
 
 Returns a list of panes that are contained in the tabbed pane.
 
@@ -418,7 +418,7 @@ virtual void GetPaneList(
 *pRTCFilter*<br/>
 [in] If it is not NULL, the returned list contains only panes that are of the specified runtime class.
 
-##  <a name="gettabarea"></a>  CBaseTabbedPane::GetTabArea
+## <a name="gettabarea"></a> CBaseTabbedPane::GetTabArea
 
 Returns the bounding rectangles for the top and bottom tab areas.
 
@@ -440,7 +440,7 @@ virtual void GetTabArea(
 
 Call this method to determine the bounding rectangles, in screen coordinates, for the upper and lower tab areas.
 
-##  <a name="gettabsnum"></a>  CBaseTabbedPane::GetTabsNum
+## <a name="gettabsnum"></a> CBaseTabbedPane::GetTabsNum
 
 Returns the count of tabs in a tab window.
 
@@ -452,7 +452,7 @@ virtual int GetTabsNum() const;
 
 The number of tabs in the tabbed pane.
 
-##  <a name="getunderlyingwindow"></a>  CBaseTabbedPane::GetUnderlyingWindow
+## <a name="getunderlyingwindow"></a> CBaseTabbedPane::GetUnderlyingWindow
 
 Gets the underlying (wrapped) tab window.
 
@@ -464,7 +464,7 @@ virtual CMFCBaseTabCtrl* GetUnderlyingWindow();
 
 A pointer to the underlying tab window.
 
-##  <a name="getvisibletabsnum"></a>  CBaseTabbedPane::GetVisibleTabsNum
+## <a name="getvisibletabsnum"></a> CBaseTabbedPane::GetVisibleTabsNum
 
 Returns the count of visible tabs.
 
@@ -480,7 +480,7 @@ The number of visible tabs, which will be greater than or equal to zero.
 
 Call this method to determine the number of visible tabs in the tabbed pane.
 
-##  <a name="hasautohidemode"></a>  CBaseTabbedPane::HasAutoHideMode
+## <a name="hasautohidemode"></a> CBaseTabbedPane::HasAutoHideMode
 
 Determines whether the tabbed pane can be switched to autohide mode.
 
@@ -496,7 +496,7 @@ TRUE if the pane can be switched to autohide mode; otherwise, FALSE.
 
 If autohide mode is disabled, no pin button is displayed on the tabbed pane caption.
 
-##  <a name="ishidesingletab"></a>  CBaseTabbedPane::IsHideSingleTab
+## <a name="ishidesingletab"></a> CBaseTabbedPane::IsHideSingleTab
 
 Determines whether the tabbed pane is hidden if only one tab is displayed.
 
@@ -512,7 +512,7 @@ TRUE if the tab window is not shown when there is only one visible tab; otherwis
 
 If the pane is not displayed because only one tab is open, you can call this method to determine whether the tabbed pane is working correctly.
 
-##  <a name="removepane"></a>  CBaseTabbedPane::RemovePane
+## <a name="removepane"></a> CBaseTabbedPane::RemovePane
 
 Removes a pane from the tabbed pane.
 
@@ -533,7 +533,7 @@ TRUE if the pane was successfully removed from the tabbed pane and if the tabbed
 
 Call this method to remove the pane specified by the *pBar* parameter from the tabbed pane.
 
-##  <a name="setautodestroy"></a>  CBaseTabbedPane::SetAutoDestroy
+## <a name="setautodestroy"></a> CBaseTabbedPane::SetAutoDestroy
 
 Determines whether the tabbed control bar will be destroyed automatically.
 
@@ -550,7 +550,7 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 
 Set the auto-destroy mode to TRUE if you create a tabbed pane dynamically and if you are not controlling its lifetime. If auto-destroy mode is TRUE, the tabbed pane will be destroyed automatically by the framework.
 
-##  <a name="showtab"></a>  CBaseTabbedPane::ShowTab
+## <a name="showtab"></a> CBaseTabbedPane::ShowTab
 
 Shows or hides a tab.
 
@@ -584,7 +584,7 @@ TRUE if the tab was either shown or hidden successfully; otherwise, FALSE.
 
 When you call this method, a pane is either shown or hidden, depending on the value of the *bShow* parameter. If you hide a tab and it is the last visible tab in the underlying tab window, the tabbed pane is hidden. If you show a tab when there were previously no tabs visible, the tabbed pane is shown.
 
-##  <a name="recalclayout"></a>  CBaseTabbedPane::RecalcLayout
+## <a name="recalclayout"></a> CBaseTabbedPane::RecalcLayout
 
 Recalculates layout information for the pane.
 
@@ -598,7 +598,7 @@ If the pane is floating, this method notifies the framework to resize the pane t
 
 If the pane is docked, this method does nothing.
 
-##  <a name="setautohidemode"></a>  CBaseTabbedPane::SetAutoHideMode
+## <a name="setautohidemode"></a> CBaseTabbedPane::SetAutoHideMode
 
 Sets the auto-hide mode for detachable panes in the tabbed pane.
 

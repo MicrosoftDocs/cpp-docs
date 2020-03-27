@@ -3,7 +3,6 @@ title: "Configure Linux projects to use Address Sanitizer"
 description: "Describes how to configure C++ Linux projects in Visual Studio to use Address Sanitizer."
 ms.date: "06/07/2019"
 ---
-
 # Configure Linux projects to use Address Sanitizer
 
 In Visual Studio 2019 version 16.1, AddressSanitizer (ASan) support is integrated into Linux projects. You can enable ASan for both MSBuild-based Linux projects and CMake projects. It works on remote Linux systems and on Windows Subsystem for Linux (WSL).

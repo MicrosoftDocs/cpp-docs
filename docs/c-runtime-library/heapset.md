@@ -14,7 +14,7 @@ ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
 Checks heaps for minimal consistency and sets the free entries to a specified value.
 
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+> This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
 
 ## Syntax
 

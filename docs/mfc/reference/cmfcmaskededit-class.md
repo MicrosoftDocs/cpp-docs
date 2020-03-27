@@ -83,7 +83,7 @@ The following example demonstrates how to set up a mask (for example a phone num
 
 **Header:** afxmaskededit.h
 
-##  <a name="disablemask"></a>  CMFCMaskedEdit::DisableMask
+## <a name="disablemask"></a> CMFCMaskedEdit::DisableMask
 
 Disables validating user input.
 
@@ -95,7 +95,7 @@ void DisableMask();
 
 If user input validation is disabled, the masked edit control behaves like the standard edit control.
 
-##  <a name="enablegetmaskedcharsonly"></a>  CMFCMaskedEdit::EnableGetMaskedCharsOnly
+## <a name="enablegetmaskedcharsonly"></a> CMFCMaskedEdit::EnableGetMaskedCharsOnly
 
 Specifies whether the `GetWindowText` method retrieves only masked characters.
 
@@ -112,7 +112,7 @@ void EnableGetMaskedCharsOnly(BOOL bEnable=TRUE);
 
 Use this method to enable retrieving masked characters. Then create a masked edit control that corresponds to the telephone number, such as (425) 555-0187. If you call the `GetWindowText` method, it returns "4255550187". If you disable retrieving masked characters, the `GetWindowText` method returns the text that is displayed in the edit control, for example "(425) 555-0187".
 
-##  <a name="enablemask"></a>  CMFCMaskedEdit::EnableMask
+## <a name="enablemask"></a> CMFCMaskedEdit::EnableMask
 
 Initializes the masked edit control.
 
@@ -155,7 +155,7 @@ The following table list the default mask characters:
 |a|Alphanumeric character or space.|
 |*|A printable character.|
 
-##  <a name="enableselectbygroup"></a>  CMFCMaskedEdit::EnableSelectByGroup
+## <a name="enableselectbygroup"></a> CMFCMaskedEdit::EnableSelectByGroup
 
 Specifies whether the masked edit control allows the user to select particular groups input, or all input.
 
@@ -189,7 +189,7 @@ m_wndMaskEdit.SetWindowText(_T("(425) 555-0187")); // Prompt
 
 If selection by group is enabled, the user can retrieve only the "425", "555", or "0187" string groups. If group selection is disabled the user can retrieve the whole text of the telephone number: "(425) 555-0187".
 
-##  <a name="enablesetmaskedcharsonly"></a>  CMFCMaskedEdit::EnableSetMaskedCharsOnly
+## <a name="enablesetmaskedcharsonly"></a> CMFCMaskedEdit::EnableSetMaskedCharsOnly
 
 Specifies whether the text is validated against only the masked characters, or against the whole mask.
 
@@ -202,7 +202,7 @@ void EnableSetMaskedCharsOnly(BOOL bEnable=TRUE);
 *bEnable*<br/>
 [in] TRUE to validate the user input against only masked characters; FALSE to validate against the whole mask. The default value is TRUE.
 
-##  <a name="getwindowtext"></a>  CMFCMaskedEdit::GetWindowText
+## <a name="getwindowtext"></a> CMFCMaskedEdit::GetWindowText
 
 Retrieves validated text from the masked edit control.
 
@@ -235,7 +235,7 @@ This method copies the text from the masked edit control to the *lpszStringBuf* 
 
 This method redefines [CWnd::GetWindowText](../../mfc/reference/cwnd-class.md#getwindowtext).
 
-##  <a name="ismaskedchar"></a>  CMFCMaskedEdit::IsMaskedChar
+## <a name="ismaskedchar"></a> CMFCMaskedEdit::IsMaskedChar
 
 Called by the framework to validate the specified character against the corresponding mask character.
 
@@ -261,7 +261,7 @@ TRUE if the *chChar* parameter is the type of character permitted by the *chMask
 
 Override this method to validate input characters on your own. For more information about mask characters, see the [CMFCMaskedEdit::EnableMask](#enablemask) method.
 
-##  <a name="setvalidchars"></a>  CMFCMaskedEdit::SetValidChars
+## <a name="setvalidchars"></a> CMFCMaskedEdit::SetValidChars
 
 Specifies a string of valid characters that the user can enter.
 
@@ -291,7 +291,7 @@ m_wndMaskEdit.EnableMask(
 m_wndMaskEdit.SetValidChars(_T("1234567890ABCDEFabcdef"));m_wndMaskEdit.SetWindowText(_T("0x01AF"));
 ```
 
-##  <a name="setwindowtext"></a>  CMFCMaskedEdit::SetWindowText
+## <a name="setwindowtext"></a> CMFCMaskedEdit::SetWindowText
 
 Displays a prompt in the masked edit control.
 

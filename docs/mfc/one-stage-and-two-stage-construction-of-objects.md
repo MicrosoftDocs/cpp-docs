@@ -15,7 +15,7 @@ You have a choice between two techniques for creating graphic objects, such as p
 Two-stage construction is always safer. In one-stage construction, the constructor could throw an exception if you provide incorrect arguments or memory allocation fails. That problem is avoided by two-stage construction, although you do have to check for failure. In either case, destroying the object is the same process.
 
 > [!NOTE]
->  These techniques apply to creating any objects, not just graphic objects.
+> These techniques apply to creating any objects, not just graphic objects.
 
 ## Example of Both Construction Techniques
 

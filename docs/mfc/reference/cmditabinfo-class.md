@@ -63,7 +63,7 @@ The following example demonstrates how to set the values of the various member v
 
 **Header:** afxmdiclientareawnd.h
 
-##  <a name="m_bactivetabclosebutton_"></a>  CMDITabInfo::m_bActiveTabCloseButton;
+## <a name="m_bactivetabclosebutton_"></a> CMDITabInfo::m_bActiveTabCloseButton;
 
 Specifies whether a **Close** button is displayed on the label of the active tab.
 
@@ -75,7 +75,7 @@ BOOL m_bActiveTabCloseButton;
 
 If TRUE, the label of the active tab will display a **Close** button. The **Close** button will be removed from the right top corner of the tab area. Otherwise, the label of the active tab will not display a **Close** button. The **Close** button will appear in the right top corner of the tab area.
 
-##  <a name="m_bautocolor"></a>  CMDITabInfo::m_bAutoColor
+## <a name="m_bautocolor"></a> CMDITabInfo::m_bAutoColor
 
 Specifies whether each MDI tab has its own color.
 
@@ -87,7 +87,7 @@ BOOL m_bAutoColor;
 
 If TRUE, each tab will have its own color. The set of colors is managed by the MFC library. Otherwise, the tabs are displayed in white. The default value is FALSE.
 
-##  <a name="m_bdocumentmenu"></a>  CMDITabInfo::m_bDocumentMenu
+## <a name="m_bdocumentmenu"></a> CMDITabInfo::m_bDocumentMenu
 
 Specifies whether each tab displays a popup menu that shows a list of  opened documents at the right edge of the tab area.
 
@@ -99,7 +99,7 @@ BOOL m_bDocumentMenu;
 
 If TRUE, each tab windows displays a popup menu that shows a list of opened documents at the right edge of the tab area; Otherwise, the tab window displays scroll buttons at the right edge of the tab area. The default value is FALSE.
 
-##  <a name="m_benabletabswap"></a>  CMDITabInfo::m_bEnableTabSwap
+## <a name="m_benabletabswap"></a> CMDITabInfo::m_bEnableTabSwap
 
 Specifies whether the user can swap the positions of tabs by dragging.
 
@@ -111,7 +111,7 @@ BOOL m_bEnableTabSwap;
 
 If TRUE, the user can change the tabs positions by dragging the tabs. Otherwise, the user cannot change the tabs positions. The default value is TRUE.
 
-##  <a name="m_bflatframe"></a>  CMDITabInfo::m_bFlatFrame
+## <a name="m_bflatframe"></a> CMDITabInfo::m_bFlatFrame
 
 Specifies whether each tab window has a flat frame.
 
@@ -119,7 +119,7 @@ Specifies whether each tab window has a flat frame.
 BOOL m_bFlatFrame;
 ```
 
-##  <a name="m_btabclosebutton"></a>  CMDITabInfo::m_bTabCloseButton
+## <a name="m_btabclosebutton"></a> CMDITabInfo::m_bTabCloseButton
 
 Specifies whether each tab window displays a **Close** button.
 
@@ -131,7 +131,7 @@ BOOL m_bTabCloseButton;
 
 If TRUE, each tab window displays the **Close** button on the right edge of the tab. Otherwise, the **Close** button is not displayed. The default value is TRUE.
 
-##  <a name="m_btabcustomtooltips"></a>  CMDITabInfo::m_bTabCustomTooltips
+## <a name="m_btabcustomtooltips"></a> CMDITabInfo::m_bTabCustomTooltips
 
 Specifies whether the tabs display tooltips.
 
@@ -143,7 +143,7 @@ BOOL m_bTabCustomTooltips;
 
 If TRUE, the application sends an AFX_WM_ON_GET_TAB_TOOLTIP message to the main frame. You can handle this message by using the ON_REGISTERED_MESSAGE macro.
 
-##  <a name="m_btabicons"></a>  CMDITabInfo::m_bTabIcons
+## <a name="m_btabicons"></a> CMDITabInfo::m_bTabIcons
 
 Specifies whether to display icons on MDI tabs.
 
@@ -155,7 +155,7 @@ BOOL m_bTabIcons;
 
 If TRUE, icons are displayed on each MDI tab. Otherwise, icons are not displayed on tabs. The default value is FALSE.
 
-##  <a name="m_ntabbordersize"></a>  CMDITabInfo::m_nTabBorderSize
+## <a name="m_ntabbordersize"></a> CMDITabInfo::m_nTabBorderSize
 
 Specifies the border size, in pixels, of each tab window.
 
@@ -167,7 +167,7 @@ int m_nTabBorderSize;
 
 [CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize) returns the default value.
 
-##  <a name="m_style"></a>  CMDITabInfo::m_style
+## <a name="m_style"></a> CMDITabInfo::m_style
 
 Specifies the style of the tab labels.
 
@@ -188,7 +188,7 @@ Specify one of the following styles for the tab labels:
 |STYLE_FLAT_SHARED_HORZ_SCROLL|Flat style with shared horizontal scroll bar.  |
 |STYLE_3D_ROUNDED_SCROLL|3D style with round tab labels.  |
 
-##  <a name="m_tablocation"></a>  CMDITabInfo::m_tabLocation
+## <a name="m_tablocation"></a> CMDITabInfo::m_tabLocation
 
 Specifies whether the tabs labels are located at the top or the bottom of the page.
 
@@ -204,7 +204,7 @@ Apply to the tabs one of the following location flags:
 
 - LOCATION_TOP: the tabs labels are located at the top of the page
 
-##  <a name="serialize"></a>  CMDITabInfo::Serialize
+## <a name="serialize"></a> CMDITabInfo::Serialize
 
 Reads or writes this object from an archive or to an archive.
 

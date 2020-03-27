@@ -86,7 +86,7 @@ If you attempt to use a **Vector** type in a public return value or parameter, c
 
 **Namespace:** Platform::Collections
 
-## <a name="append"></a>  Vector::Append Method
+## <a name="append"></a> Vector::Append Method
 
 Inserts the specified item after the last item in the current Vector.
 
@@ -101,7 +101,7 @@ virtual void Append(T item);
 *index*<br/>
 The item to insert into the Vector. The type of *item* is defined by the *T* typename.
 
-## <a name="clear"></a>  Vector::Clear Method
+## <a name="clear"></a> Vector::Clear Method
 
 Deletes all the elements in the current Vector.
 
@@ -111,7 +111,7 @@ Deletes all the elements in the current Vector.
 virtual void Clear();
 ```
 
-## <a name="first"></a>  Vector::First Method
+## <a name="first"></a> Vector::First Method
 
 Returns an iterator that points to the first element in the Vector.
 
@@ -131,7 +131,7 @@ A convenient way to hold the iterator returned by First() is to assign the retur
 
 When you need a pair of iterators to pass to an STL function, use the free functions [Windows::Foundation::Collections::begin](../cppcx/begin-function.md) and [Windows::Foundation::Collections::end](../cppcx/end-function.md)
 
-## <a name="getat"></a>  Vector::GetAt Method
+## <a name="getat"></a> Vector::GetAt Method
 
 Retrieves the element of the current Vector that is identifed by the specified index.
 
@@ -150,7 +150,7 @@ A zero-based, unsigned integer that specifies a particular element in the Vector
 
 The element specified by the *index* parameter. The element type is defined by the *T* typename.
 
-## <a name="getmany"></a>  Vector::GetMany Method
+## <a name="getmany"></a> Vector::GetMany Method
 
 Retrieves a sequence of items from the current Vector, starting at the specified index, and copies them into the caller-allocated array.
 
@@ -178,7 +178,7 @@ The number of items retrieved.
 
 This function is not intended for use directly by client code. It is used internally in the [to_vector Function](../cppcx/to-vector-function.md) to enable efficient conversion of Platform::Vector intances to std::vector instances.
 
-## <a name="getview"></a>  Vector::GetView Method
+## <a name="getview"></a> Vector::GetView Method
 
 Returns a read-only view of a Vector; that is, an IVectorView.
 
@@ -192,7 +192,7 @@ Windows::Foundation::Collections::IVectorView<T>^ GetView();
 
 An IVectorView object.
 
-## <a name="indexof"></a>  Vector::IndexOf Method
+## <a name="indexof"></a> Vector::IndexOf Method
 
 Searches for the specified item in the current Vector, and if found, returns the index of the item.
 
@@ -220,7 +220,7 @@ The *index* parameter is 0 if either the item is the first element of the Vector
 
 IndexOf uses std::find_if to find the item. Custom element types should therefore overload the == and != operator in order to enable the equality comparisons that find_if requires.
 
-##  <a name="insertat"></a>  Vector::InsertAt Method
+## <a name="insertat"></a> Vector::InsertAt Method
 
 Inserts the specified item into the current Vector at the element identified by the specified index.
 
@@ -238,7 +238,7 @@ A zero-based, unsigned integer that specifies a particular element in the Vector
 *item*<br/>
 An item to insert into the Vector at the element specified by *index*. The type of *item* is defined by the *T* typename.
 
-## <a name="removeat"></a>  Vector::RemoveAt Method
+## <a name="removeat"></a> Vector::RemoveAt Method
 
 Deletes the element identified by the specified index from the current Vector.
 
@@ -253,7 +253,7 @@ virtual void RemoveAt(unsigned int index);
 *index*<br/>
 A zero-based, unsigned integer that specifies a particular element in the Vector object.
 
-## <a name="removeatend"></a>  Vector::RemoveAtEnd Method
+## <a name="removeatend"></a> Vector::RemoveAtEnd Method
 
 Deletes the element at the end of the current Vector.
 
@@ -263,7 +263,7 @@ Deletes the element at the end of the current Vector.
 virtual void RemoveAtEnd();
 ```
 
-## <a name="replaceall"></a>  Vector::ReplaceAll Method
+## <a name="replaceall"></a> Vector::ReplaceAll Method
 
 Deletes the elements in the current Vector and then inserts the elements from the specified array.
 
@@ -278,7 +278,7 @@ virtual void ReplaceAll(const ::Platform::Array<T>^ arr);
 *arr*<br/>
 An array of objects whose type is defined by the *T* typename.
 
-## <a name="setat"></a>  Vector::SetAt Method
+## <a name="setat"></a> Vector::SetAt Method
 
 Assigns the specified value to the element in the current Vector that is identified by the specified index.
 
@@ -296,7 +296,7 @@ A zero-based, unsigned integer that specifies a particular element in the Vector
 *item*<br/>
 The value to assign to the specified element. The type of *item* is defined by the *T* typename.
 
-## <a name="size"></a>  Vector::Size Method
+## <a name="size"></a> Vector::Size Method
 
 Returns the number of elements in the current Vector object.
 
@@ -310,7 +310,7 @@ virtual property unsigned int Size;
 
 The number of elements in the current Vector.
 
-## <a name="ctor"></a>  Vector::Vector Constructor
+## <a name="ctor"></a> Vector::Vector Constructor
 
 Initializes a new instance of the Vector class.
 

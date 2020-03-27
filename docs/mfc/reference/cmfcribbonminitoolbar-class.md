@@ -64,7 +64,7 @@ The mini toolbar becomes transparent when the mouse pointer is out of the bounds
 
 **Header:** afxRibbonMiniToolBar.h
 
-##  <a name="setcommands"></a>  CMFCRibbonMiniToolBar::SetCommands
+## <a name="setcommands"></a> CMFCRibbonMiniToolBar::SetCommands
 
 Sets the list of commands to be displayed on the toolbar.
 
@@ -92,7 +92,7 @@ The following example demonstrates how to use the `SetCommands` method of the `C
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/cpp/cmfcribbonminitoolbar-class_1.cpp)]
 
-##  <a name="show"></a>  CMFCRibbonMiniToolBar::Show
+## <a name="show"></a> CMFCRibbonMiniToolBar::Show
 
 Displays the mini toolbar at the specified screen coordinates.
 
@@ -114,7 +114,7 @@ BOOL Show(
 
 TRUE if the mini toolbar was displayed successfully; otherwise, FALSE.
 
-##  <a name="showwithcontextmenu"></a>  CMFCRibbonMiniToolBar::ShowWithContextMenu
+## <a name="showwithcontextmenu"></a> CMFCRibbonMiniToolBar::ShowWithContextMenu
 
 Displays the mini toolbar together with a context menu.
 
@@ -148,7 +148,7 @@ TRUE if the context menu was displayed successfully; otherwise, FALSE.
 
 Use this function to display a mini toolbar that has a context menu. The context menu is positioned 15 pixels below the mini toolbar.
 
-##  <a name="iscontextmenumode"></a>  CMFCRibbonMiniToolBar::IsContextMenuMode
+## <a name="iscontextmenumode"></a> CMFCRibbonMiniToolBar::IsContextMenuMode
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -160,7 +160,7 @@ BOOL IsContextMenuMode() const;
 
 ### Remarks
 
-##  <a name="isribbonminitoolbar"></a>  CMFCRibbonMiniToolBar::IsRibbonMiniToolBar
+## <a name="isribbonminitoolbar"></a> CMFCRibbonMiniToolBar::IsRibbonMiniToolBar
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 

@@ -115,7 +115,7 @@ When you finish using a tabledef object, call its [Close](../../mfc/reference/cd
 
 **Header:** afxdao.h
 
-##  <a name="append"></a>  CDaoTableDef::Append
+## <a name="append"></a> CDaoTableDef::Append
 
 Call this member function after you call [Create](#create) to create a new tabledef object to save the tabledef in the database.
 
@@ -128,11 +128,11 @@ virtual void Append();
 The function appends the object to the database's TableDefs collection. You can use the tabledef as a temporary object while defining it by not appending it, but if you want to save and use it, you must call `Append`.
 
 > [!NOTE]
->  If you attempt to append an unnamed tabledef (containing a null or empty string), MFC throws an exception.
+> If you attempt to append an unnamed tabledef (containing a null or empty string), MFC throws an exception.
 
 For related information, see the topic "Append Method" in DAO Help.
 
-##  <a name="canupdate"></a>  CDaoTableDef::CanUpdate
+## <a name="canupdate"></a> CDaoTableDef::CanUpdate
 
 Call this member function to determine whether the definition of the table underlying a `CDaoTableDef` object can be changed.
 
@@ -150,7 +150,7 @@ By default, a newly created table underlying a `CDaoTableDef` object can be upda
 
 For related information, see the topic "Updatable Property" in DAO Help.
 
-##  <a name="cdaotabledef"></a>  CDaoTableDef::CDaoTableDef
+## <a name="cdaotabledef"></a> CDaoTableDef::CDaoTableDef
 
 Constructs a `CDaoTableDef` object.
 
@@ -167,7 +167,7 @@ A pointer to a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object.
 
 After constructing the object, you must call the [Create](#create) or [Open](#open) member function. When you finish with the object, you must call its [Close](#close) member function and destroy the `CDaoTableDef` object.
 
-##  <a name="close"></a>  CDaoTableDef::Close
+## <a name="close"></a> CDaoTableDef::Close
 
 Call this member function to close and release the tabledef object.
 
@@ -183,7 +183,7 @@ You can call [Open](#open) again after calling `Close`. This lets you reuse the 
 
 For related information, see the topic "Close Method" in DAO Help.
 
-##  <a name="create"></a>  CDaoTableDef::Create
+## <a name="create"></a> CDaoTableDef::Create
 
 Call this member function to create a new saved table.
 
@@ -222,7 +222,7 @@ Once you have named the tabledef, you can then call [Append](#append) to save th
 
 For related information, see the topic "CreateTableDef Method" in DAO Help.
 
-##  <a name="createfield"></a>  CDaoTableDef::CreateField
+## <a name="createfield"></a> CDaoTableDef::CreateField
 
 Call this member function to add a field to the table.
 
@@ -295,7 +295,7 @@ The remaining members of `CDaoFieldInfo` should be set to **0**, FALSE, or an em
 
 For related information, see the topic "CreateField Method" in DAO Help.
 
-##  <a name="createindex"></a>  CDaoTableDef::CreateIndex
+## <a name="createindex"></a> CDaoTableDef::CreateIndex
 
 Call this function to add an index to a table.
 
@@ -324,7 +324,7 @@ The following members of the `CDaoIndexInfo` structure must be set:
 
 The remaining members will be ignored if set to FALSE. In addition, the `m_lDistinctCount` member is ignored during creation of the index.
 
-##  <a name="deletefield"></a>  CDaoTableDef::DeleteField
+## <a name="deletefield"></a> CDaoTableDef::DeleteField
 
 Call this member function to remove a field and make it inaccessible.
 
@@ -347,7 +347,7 @@ You can use this member function on a new object that has not been appended to t
 
 For related information, see the topic "Delete Method" in DAO Help.
 
-##  <a name="deleteindex"></a>  CDaoTableDef::DeleteIndex
+## <a name="deleteindex"></a> CDaoTableDef::DeleteIndex
 
 Call this member function to delete an index in an underlying table.
 
@@ -370,7 +370,7 @@ You can use this member function on a new object that hasn't been appended to th
 
 For related information, see the topic "Delete Method" in DAO Help.
 
-##  <a name="getattributes"></a>  CDaoTableDef::GetAttributes
+## <a name="getattributes"></a> CDaoTableDef::GetAttributes
 
 For a `CDaoTableDef` object, the return value specifies characteristics of the table represented by the `CDaoTableDef` object and can be a sum of these constants:
 
@@ -399,7 +399,7 @@ A hidden table is a table created for temporary use by the Microsoft Jet databas
 
 For related information, see the topic "Attributes Property" in DAO Help.
 
-##  <a name="getconnect"></a>  CDaoTableDef::GetConnect
+## <a name="getconnect"></a> CDaoTableDef::GetConnect
 
 Call this member function to obtain the connection string for a data source.
 
@@ -425,7 +425,7 @@ If a password is required but not provided, the ODBC driver displays a login dia
 
 For related information, see the topic "Connect Property" in DAO Help.
 
-##  <a name="getdatecreated"></a>  CDaoTableDef::GetDateCreated
+## <a name="getdatecreated"></a> CDaoTableDef::GetDateCreated
 
 Call this function to determine the date and time the table underlying the `CDaoTableDef` object was created.
 
@@ -443,7 +443,7 @@ The date and time settings are derived from the computer on which the base table
 
 For related information, see the topic "DateCreated, LastUpdated Properties" in DAO Help.
 
-##  <a name="getdatelastupdated"></a>  CDaoTableDef::GetDateLastUpdated
+## <a name="getdatelastupdated"></a> CDaoTableDef::GetDateLastUpdated
 
 Call this function to determine the date and time the table underlying the `CDaoTableDef` object was last updated.
 
@@ -461,7 +461,7 @@ The date and time settings are derived from the computer on which the base table
 
 For related information, see the topic "DateCreated, LastUpdated Properties" in DAO Help.
 
-##  <a name="getfieldcount"></a>  CDaoTableDef::GetFieldCount
+## <a name="getfieldcount"></a> CDaoTableDef::GetFieldCount
 
 Call this member function to retrieve the number of fields defined in the table.
 
@@ -479,7 +479,7 @@ If its value is 0, there are no objects in the collection.
 
 For related information, see the topic "Count Property" in DAO Help.
 
-##  <a name="getfieldinfo"></a>  CDaoTableDef::GetFieldInfo
+## <a name="getfieldinfo"></a> CDaoTableDef::GetFieldInfo
 
 Call this member function to obtain various kinds of information about a field defined in the tabledef.
 
@@ -523,7 +523,7 @@ For a description of the information returned, see the [CDaoFieldInfo](../../mfc
 
 For related information, see the topic "Attributes Property" in DAO Help.
 
-##  <a name="getindexcount"></a>  CDaoTableDef::GetIndexCount
+## <a name="getindexcount"></a> CDaoTableDef::GetIndexCount
 
 Call this member function to obtain the number of indexes for a table.
 
@@ -541,7 +541,7 @@ If its value is 0, there are no indexes in the collection.
 
 For related information, see the topic "Count Property" in DAO Help.
 
-##  <a name="getindexinfo"></a>  CDaoTableDef::GetIndexInfo
+## <a name="getindexinfo"></a> CDaoTableDef::GetIndexInfo
 
 Call this member function to obtain various kinds of information about an index defined in the tabledef.
 
@@ -585,7 +585,7 @@ For a description of the information returned, see the [CDaoIndexInfo](../../mfc
 
 For related information, see the topic "Attributes Property" in DAO Help.
 
-##  <a name="getname"></a>  CDaoTableDef::GetName
+## <a name="getname"></a> CDaoTableDef::GetName
 
 Call this member function to obtain the user-defined name of the underlying table.
 
@@ -603,7 +603,7 @@ This name starts with a letter and can contain a maximum of 64 characters. It ca
 
 For related information, see the topic "Name Property" in DAO Help.
 
-##  <a name="getrecordcount"></a>  CDaoTableDef::GetRecordCount
+## <a name="getrecordcount"></a> CDaoTableDef::GetRecordCount
 
 Call this member function to find out how many records are in a `CDaoTableDef` object.
 
@@ -621,7 +621,7 @@ Calling `GetRecordCount` for a table-type `CDaoTableDef` object reflects the app
 
 For related information, see the topic "RecordCount Property" in DAO Help.
 
-##  <a name="getsourcetablename"></a>  CDaoTableDef::GetSourceTableName
+## <a name="getsourcetablename"></a> CDaoTableDef::GetSourceTableName
 
 Call this member function to retrieve the name of an attached table in a source database.
 
@@ -639,7 +639,7 @@ An attached table is a table in another database linked to a Microsoft Jet datab
 
 For related information, see the topic "SourceTableName Property" in DAO Help.
 
-##  <a name="getvalidationrule"></a>  CDaoTableDef::GetValidationRule
+## <a name="getvalidationrule"></a> CDaoTableDef::GetValidationRule
 
 Call this member function to retrieve the validation rule for a tabledef.
 
@@ -657,7 +657,7 @@ Validation rules are used in connection with update operations. If a tabledef co
 
 For related information, see the topic "ValidationRule Property" in DAO Help.
 
-##  <a name="getvalidationtext"></a>  CDaoTableDef::GetValidationText
+## <a name="getvalidationtext"></a> CDaoTableDef::GetValidationText
 
 Call this function to retrieve the string to display when a user enters data that does not match the validation rule.
 
@@ -675,7 +675,7 @@ For a `CDaoTableDef` object, this `CString` is read-only for an attached table a
 
 For related information, see the topic "ValidationText Property" in DAO Help.
 
-##  <a name="isopen"></a>  CDaoTableDef::IsOpen
+## <a name="isopen"></a> CDaoTableDef::IsOpen
 
 Call this member function to determine whether the `CDaoTableDef` object is currently open.
 
@@ -689,13 +689,13 @@ Nonzero if the `CDaoTableDef` object is open; otherwise 0.
 
 ### Remarks
 
-##  <a name="m_pdatabase"></a>  CDaoTableDef::m_pDatabase
+## <a name="m_pdatabase"></a> CDaoTableDef::m_pDatabase
 
 Contains a pointer to the [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object for this table.
 
 ### Remarks
 
-##  <a name="m_pdaotabledef"></a>  CDaoTableDef::m_pDAOTableDef
+## <a name="m_pdaotabledef"></a> CDaoTableDef::m_pDAOTableDef
 
 Contains a pointer to the OLE interface for the DAO tabledef object underlying the `CDaoTableDef` object.
 
@@ -703,7 +703,7 @@ Contains a pointer to the OLE interface for the DAO tabledef object underlying t
 
 Use this pointer if you need to access the DAO interface directly.
 
-##  <a name="open"></a>  CDaoTableDef::Open
+## <a name="open"></a> CDaoTableDef::Open
 
 Call this member function to open a tabledef previously saved in the database's TableDef's collection.
 
@@ -718,7 +718,7 @@ A pointer to a string that specifies a table name.
 
 ### Remarks
 
-##  <a name="refreshlink"></a>  CDaoTableDef::RefreshLink
+## <a name="refreshlink"></a> CDaoTableDef::RefreshLink
 
 Call this member function to update the connection information for an attached table.
 
@@ -734,7 +734,7 @@ To force the modified connect information to take effect, all open [CDaoRecordse
 
 For related information, see the topic "RefreshLink Method" in DAO Help.
 
-##  <a name="setattributes"></a>  CDaoTableDef::SetAttributes
+## <a name="setattributes"></a> CDaoTableDef::SetAttributes
 
 Sets a value that indicates one or more characteristics of a `CDaoTableDef` object.
 
@@ -764,7 +764,7 @@ When setting multiple attributes, you can combine them by summing the appropriat
 
 For related information, see the topic "Attributes Property" in DAO Help.
 
-##  <a name="setconnect"></a>  CDaoTableDef::SetConnect
+## <a name="setconnect"></a> CDaoTableDef::SetConnect
 
 For a `CDaoTableDef` object that represents an attached table, the string object consists of one or two parts (a database type specifier and a path to the database).
 
@@ -782,7 +782,7 @@ A pointer to a string expression that specifies additional parameters to pass to
 The path as shown in the table below is the full path for the directory containing the database files and must be preceded by the identifier "DATABASE=". In some cases (as with Microsoft Jet and Microsoft Excel databases), a specific filename is included in the database path argument.
 
 > [!NOTE]
->  Do not include whitespace around the equal sign in path statements of the form "DATABASE=drive:\\\path". This will result in an exception being thrown and the connection failing.
+> Do not include whitespace around the equal sign in path statements of the form "DATABASE=drive:\\\path". This will result in an exception being thrown and the connection failing.
 
 The following table shows possible database types and their corresponding database specifiers and paths:
 
@@ -806,7 +806,7 @@ The following table shows possible database types and their corresponding databa
 |Exchange|"Exchange;<br /><br /> MAPILEVEL= *folderpath*;<br /><br /> [TABLETYPE={ 0 &#124; 1 };]<br /><br /> [PROFILE= *profile*;]<br /><br /> [PWD= *password*;]<br /><br /> [DATABASE= `database`;]"|*"drive*:\\\ *path*\\\ *filename*.MDB"|
 
 > [!NOTE]
->  Btrieve is no longer supported as of DAO 3.5.
+> Btrieve is no longer supported as of DAO 3.5.
 
 You must use a double backslash (\\\\) in the connection strings. If you have modified the properties of an existing connection using `SetConnect`, you must subsequently call [RefreshLink](#refreshlink). If you are initializing the connection properties using `SetConnect`, you need not call `RefreshLink`, but should you choose to do so, first append the tabledef.
 
@@ -816,7 +816,7 @@ You can set the connection string for a `CDaoTableDef` object by providing a sou
 
 For related information, see the topic "Connect Property" in DAO Help.
 
-##  <a name="setname"></a>  CDaoTableDef::SetName
+## <a name="setname"></a> CDaoTableDef::SetName
 
 Call this member function to set a user-defined name for a table.
 
@@ -835,7 +835,7 @@ The name must start with a letter and can contain a maximum of 64 characters. It
 
 For related information, see the topic "Name Property" in DAO Help.
 
-##  <a name="setsourcetablename"></a>  CDaoTableDef::SetSourceTableName
+## <a name="setsourcetablename"></a> CDaoTableDef::SetSourceTableName
 
 Call this member function to specify the name of an attached table or the name of the base table on which the `CDaoTableDef` object is based, as it exists in the original source of the data.
 
@@ -854,7 +854,7 @@ You must then call [RefreshLink](#refreshlink). This property setting is empty f
 
 For related information, see the topic "SourceTableName Property" in DAO Help.
 
-##  <a name="setvalidationrule"></a>  CDaoTableDef::SetValidationRule
+## <a name="setvalidationrule"></a> CDaoTableDef::SetValidationRule
 
 Call this member function to set a validation rule for a tabledef.
 
@@ -879,7 +879,7 @@ For example, for fields named *hire_date* and *termination_date*, a validation r
 
 For related information, see the topic "ValidationRule Property" in DAO Help.
 
-##  <a name="setvalidationtext"></a>  CDaoTableDef::SetValidationText
+## <a name="setvalidationtext"></a> CDaoTableDef::SetValidationText
 
 Call this member function to set the exception text of a validation rule for a `CDaoTableDef` object with an underlying base table supported by the Microsoft Jet database engine.
 

@@ -47,7 +47,7 @@ To enable the Container application to access the Circ control, Visual C++ autom
 
 [!code-cpp[NVC_MFC_AxCont#1](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_1.h)]
 
-##  <a name="_core_the_wrapper_class_header_28h29_file"></a> The Wrapper Class Header (.H) File
+## <a name="_core_the_wrapper_class_header_28h29_file"></a> The Wrapper Class Header (.H) File
 
 To get and set properties (and invoke methods) for the Circ control, the `CCirc` wrapper class provides a declaration of all exposed methods and properties. In the example, these declarations are found in CIRC.H. The following sample is the portion of class `CCirc` that defines the exposed interfaces of the ActiveX control:
 
@@ -56,7 +56,7 @@ To get and set properties (and invoke methods) for the Circ control, the `CCirc`
 
 These functions can then be called from other of the application's procedures using normal C++ syntax. For more information on using this member function set to access the control's methods and properties, see the section [Programming the ActiveX control](#_core_programming_the_activex_control).
 
-##  <a name="_core_member_variable_modifications_to_the_project"></a> Member Variable Modifications to the Project
+## <a name="_core_member_variable_modifications_to_the_project"></a> Member Variable Modifications to the Project
 
 Once the ActiveX control has been added to the project and embedded in a dialog box container, it can be accessed by other parts of the project. The easiest way to access the control is to [create a member variable](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) of the dialog class, `CContainerDlg` (step 2), that is of the same type as the wrapper class added to the project by Visual C++. You can then use the member variable to access the embedded control at any time.
 
@@ -69,7 +69,7 @@ In addition, a call to **DDX_Control** is automatically added to the `CContainer
 
 [!code-cpp[NVC_MFC_AxCont#6](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_6.cpp)]
 
-##  <a name="_core_programming_the_activex_control"></a> Programming the ActiveX Control
+## <a name="_core_programming_the_activex_control"></a> Programming the ActiveX Control
 
 At this point, you have inserted the ActiveX control into your dialog template and created a member variable for it. You can now use common C++ syntax to access the properties and methods of the embedded control.
 

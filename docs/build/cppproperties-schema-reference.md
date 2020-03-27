@@ -3,7 +3,6 @@ title: "CppProperties.json reference"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["CppProperties.json file [C++]"]
 ---
-
 # CppProperties.json reference
 
 Open Folder projects that don't use CMake can store project configuration settings for IntelliSense in a *CppProperties.json* file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. See [Open Folder projects for C++](open-folder-projects-cpp.md) for more information about how to add configurations in an Open Folder project. The following sections summarize the various settings. For a complete description of the schema, navigate to *CppProperties_schema.json*, whose full path is given at the top of the code editor when *CppProperties.json* is open.

@@ -26,6 +26,7 @@ If an attribute precedes an element that is not in the attribute's scope, the at
 |[Custom Attributes](custom-attributes-cpp.md)|Allows the user to extend metadata.|
 
 ## Module Attributes
+
 The following attribute can only be applied to the [module](module-cpp.md) attribute.
 
 |Attribute|Description|

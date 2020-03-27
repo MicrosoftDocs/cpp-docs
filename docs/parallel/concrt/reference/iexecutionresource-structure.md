@@ -40,7 +40,7 @@ Execution resources can be standalone or associated with virtual processor roots
 
 **Namespace:** concurrency
 
-## <a name="currentsubscriptionlevel"></a>  IExecutionResource::CurrentSubscriptionLevel Method
+## <a name="currentsubscriptionlevel"></a> IExecutionResource::CurrentSubscriptionLevel Method
 
 Returns the number of activated virtual processor roots and subscribed external threads currently associated with the underlying hardware thread this execution resource represents.
 
@@ -62,7 +62,7 @@ The act of activating a virtual processor root using the method [IVirtualProcess
 
 The Resource Manager uses subscription level information as one of the ways in which to determine when to move resources between schedulers.
 
-## <a name="getexecutionresourceid"></a>  IExecutionResource::GetExecutionResourceId Method
+## <a name="getexecutionresourceid"></a> IExecutionResource::GetExecutionResourceId Method
 
 Returns a unique identifier for the hardware thread that this execution resource represents.
 
@@ -78,7 +78,7 @@ A unique identifier for the hardware thread underlying this execution resource.
 
 Each hardware thread is assigned a unique identifier by the Concurrency Runtime. If multiple execution resources are associated hardware thread, they will all have the same execution resource identifier.
 
-## <a name="getnodeid"></a>  IExecutionResource::GetNodeId Method
+## <a name="getnodeid"></a> IExecutionResource::GetNodeId Method
 
 Returns a unique identifier for the processor node that this execution resource belongs to.
 
@@ -96,7 +96,7 @@ The Concurrency Runtime represents hardware threads on the system in groups of p
 
 The count of nodes can be obtained from the function [GetProcessorNodeCount](concurrency-namespace-functions.md).
 
-## <a name="remove"></a>  IExecutionResource::Remove Method
+## <a name="remove"></a> IExecutionResource::Remove Method
 
 Returns this execution resource to the Resource Manager.
 

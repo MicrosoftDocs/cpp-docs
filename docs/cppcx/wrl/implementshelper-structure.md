@@ -55,7 +55,7 @@ Name                                                    | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="cancastto"></a>ImplementsHelper::CanCastTo
+## <a name="cancastto"></a> ImplementsHelper::CanCastTo
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -90,7 +90,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 Gets a pointer to the specified interface ID.
 
-## <a name="casttounknown"></a>ImplementsHelper::CastToUnknown
+## <a name="casttounknown"></a> ImplementsHelper::CastToUnknown
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -106,7 +106,7 @@ Pointer to the underlying `IUnknown` interface.
 
 Gets a pointer to the underlying `IUnknown` interface for the current `Implements` structure.
 
-## <a name="fillarraywithiid"></a>ImplementsHelper::FillArrayWithIid
+## <a name="fillarraywithiid"></a> ImplementsHelper::FillArrayWithIid
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -128,7 +128,7 @@ An array of type IIDs.
 
 Inserts the interface ID specified by the current zeroth template parameter into the specified array element.
 
-## <a name="iidcount"></a>ImplementsHelper::IidCount
+## <a name="iidcount"></a> ImplementsHelper::IidCount
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

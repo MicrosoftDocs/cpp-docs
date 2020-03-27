@@ -120,7 +120,7 @@ Name                                   | Description
 
 **Namespace:** Microsoft::WRL
 
-## <a name="cancastto"></a>ChainInterfaces::CanCastTo
+## <a name="cancastto"></a> ChainInterfaces::CanCastTo
 
 Indicates whether the specified interface ID can be cast to each of the specializations defined by the non-default template parameters.
 
@@ -143,7 +143,7 @@ A pointer to the last interface ID that was cast successfully.
 
 **true** if all the cast operations succeeded; otherwise, **false**.
 
-## <a name="casttounknown"></a>ChainInterfaces::CastToUnknown
+## <a name="casttounknown"></a> ChainInterfaces::CastToUnknown
 
 Casts the interface pointer of the type defined by the *I0* template parameter to a pointer to `IUnknown`.
 
@@ -155,7 +155,7 @@ __forceinline IUnknown* CastToUnknown();
 
 A pointer to `IUnknown`.
 
-## <a name="fillarraywithiid"></a>ChainInterfaces::FillArrayWithIid
+## <a name="fillarraywithiid"></a> ChainInterfaces::FillArrayWithIid
 
 Stores the interface ID defined by the *I0* template parameter into a specified location in a specified array of interface IDs.
 
@@ -174,7 +174,7 @@ Pointer to an index value into the *iids* array.
 *iids*<br/>
 An array of interface IDs.
 
-## <a name="iidcount"></a>ChainInterfaces::IidCount
+## <a name="iidcount"></a> ChainInterfaces::IidCount
 
 The total number of interface IDs contained in the interfaces specified by template parameters *I0* through *I9*.
 
@@ -190,7 +190,7 @@ The total number of interface IDs.
 
 Template parameters *I0* and *I1* are required, and parameters *I2* through *I9* are optional. The IID count of each interface is typically 1.
 
-## <a name="verify"></a>ChainInterfaces::Verify
+## <a name="verify"></a> ChainInterfaces::Verify
 
 Verifies that each interface defined by template parameters *I0* through *I9* inherits from `IUnknown` and/or `IInspectable`, and that *I0* inherits from *I1* through *I9*.
 

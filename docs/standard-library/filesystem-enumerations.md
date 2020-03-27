@@ -14,7 +14,7 @@ This topic documents the enums in the filesystem header.
 
 **Namespace:** std::experimental::filesystem
 
-## <a name="copy_options"></a>  copy_options
+## <a name="copy_options"></a> copy_options
 
 An enumeration of bitmask values that is used with [copy](filesystem-functions.md#copy) and [copy_file](filesystem-functions.md#copy_file) functions to specify behavior.
 
@@ -70,7 +70,7 @@ enum class directory_options {
 |`none`|Default behavior: ignore symbolic links to directories. Permission denied is an error.|
 |`follow_directory_symlink`|Treat symbolic links to directories as actual directories.|
 
-## <a name="file_type"></a>  file_type
+## <a name="file_type"></a> file_type
 
 An enumeration for file types. The supported values are regular, directory, not_found, and unknown.
 
@@ -106,7 +106,7 @@ enum class file_type {
 |`socket`|7|Represents a socket on UNIX based systems. (Not supported.)|
 |`unknown`|8|Represents a file whose status cannot be determined.|
 
-## <a name="perm_options"></a>  perm_options
+## <a name="perm_options"></a> perm_options
 
 Includes values `replace`, `add`, `remove`, and `nofollow`.
 
@@ -114,7 +114,7 @@ Includes values `replace`, `add`, `remove`, and `nofollow`.
 enum class perm_options;
 ```
 
-## <a name="perms"></a>  perms
+## <a name="perms"></a> perms
 
 Flags for file permissions. The supported values are essentially "readonly" and all. For a readonly file, none of the *_write bits are set. Otherwise the `all` bit (0x0777) is set.
 

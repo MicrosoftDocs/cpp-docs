@@ -17,7 +17,7 @@ Typical usage of an image list follows the pattern below:
 - Perhaps allow the user to drag an image, using the image list's built-in support for dragging.
 
 > [!NOTE]
->  If the image list was created with the **new** operator, you must destroy the `CImageList` object when you are done with it.
+> If the image list was created with the **new** operator, you must destroy the `CImageList` object when you are done with it.
 
 ## See also
 

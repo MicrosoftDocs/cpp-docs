@@ -36,7 +36,7 @@ class sync_shared
 
 **Namespace:** stdext
 
-## <a name="allocate"></a>  sync_shared::allocate
+## <a name="allocate"></a> sync_shared::allocate
 
 Allocates a block of memory.
 
@@ -58,7 +58,7 @@ A pointer to the allocated object.
 
 The member function locks the mutex, calls `cache.allocate(count)`, unlocks the mutex, and returns the result of the earlier call to `cache.allocate(count)`. `cache` represents the current cache object.
 
-## <a name="deallocate"></a>  sync_shared::deallocate
+## <a name="deallocate"></a> sync_shared::deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 
@@ -77,7 +77,7 @@ void deallocate(void* ptr, std::size_t count);
 
 This member function locks the mutex, calls `cache.deallocate(ptr, count)`, where `cache` represents the cache object, and then unlocks the mutex.
 
-## <a name="equals"></a>  sync_shared::equals
+## <a name="equals"></a> sync_shared::equals
 
 Compares two caches for equality.
 

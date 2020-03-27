@@ -10,7 +10,7 @@ ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
 This class is a thin wrapper for the security attributes structure.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -48,7 +48,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 **Header:** atlsecurity.h
 
-##  <a name="csecurityattributes"></a>  CSecurityAttributes::CSecurityAttributes
+## <a name="csecurityattributes"></a> CSecurityAttributes::CSecurityAttributes
 
 The constructor.
 
@@ -65,7 +65,7 @@ Reference to a security descriptor.
 *bInheritsHandle*<br/>
 Specifies whether the returned handle is inherited when a new process is created. If this member is true, the new process inherits the handle.
 
-##  <a name="set"></a>  CSecurityAttributes::Set
+## <a name="set"></a> CSecurityAttributes::Set
 
 Call this method to set the attributes of the `CSecurityAttributes` object.
 

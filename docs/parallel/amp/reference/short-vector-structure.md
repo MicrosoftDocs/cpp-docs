@@ -96,7 +96,7 @@ struct short_vector<double, 4>;
 
 **Namespace:** Concurrency::graphics
 
-## <a name="ctor"></a>  short_vector::short_vector Constructor
+## <a name="ctor"></a> short_vector::short_vector Constructor
 
 ```cpp
 short_vector();

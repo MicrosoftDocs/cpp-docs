@@ -17,7 +17,7 @@ This article explains how you can access the [CToolBarCtrl](../mfc/reference/cto
 `GetToolBarCtrl` returns a reference to a [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) object. You can use the reference to call member functions of the toolbar control class.
 
 > [!CAUTION]
->  While calling `CToolBarCtrl` **Get** functions is safe, use caution if you call the **Set** functions. This is an advanced topic. Normally you shouldn't need to access the underlying toolbar control.
+> While calling `CToolBarCtrl` **Get** functions is safe, use caution if you call the **Set** functions. This is an advanced topic. Normally you shouldn't need to access the underlying toolbar control.
 
 ### What do you want to know more about
 

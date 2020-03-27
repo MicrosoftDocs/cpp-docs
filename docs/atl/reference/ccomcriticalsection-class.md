@@ -50,7 +50,7 @@ See [CComCritSecLock Class](../../atl/reference/ccomcritseclock-class.md) for a 
 
 **Header:** atlcore.h
 
-##  <a name="ccomcriticalsection"></a>  CComCriticalSection::CComCriticalSection
+## <a name="ccomcriticalsection"></a> CComCriticalSection::CComCriticalSection
 
 The constructor.
 
@@ -62,7 +62,7 @@ CComCriticalSection() throw();
 
 Sets the [m_sec](#m_sec) data member to NULL.
 
-##  <a name="init"></a>  CComCriticalSection::Init
+## <a name="init"></a> CComCriticalSection::Init
 
 Calls the Win32 function [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection), which initializes the critical section object contained in the [m_sec](#m_sec) data member.
 
@@ -74,7 +74,7 @@ HRESULT Init() throw();
 
 Returns S_OK on success, E_OUTOFMEMORY or E_FAIL on failure.
 
-##  <a name="lock"></a>  CComCriticalSection::Lock
+## <a name="lock"></a> CComCriticalSection::Lock
 
 Calls the Win32 function [EnterCriticalSection](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection), which waits until the thread can take ownership of the critical section object contained in the [m_sec](#m_sec) data member.
 
@@ -90,7 +90,7 @@ Returns S_OK on success, E_OUTOFMEMORY or E_FAIL on failure.
 
 The critical section object must first be initialized with a call to the [Init](#init) method. When the protected code has finished executing, the thread must call [Unlock](#unlock) to release ownership of the critical section.
 
-##  <a name="m_sec"></a>  CComCriticalSection::m_sec
+## <a name="m_sec"></a> CComCriticalSection::m_sec
 
 Contains a critical section object that is used by all `CComCriticalSection` methods.
 
@@ -98,7 +98,7 @@ Contains a critical section object that is used by all `CComCriticalSection` met
 CRITICAL_SECTION m_sec;
 ```
 
-##  <a name="term"></a>  CComCriticalSection::Term
+## <a name="term"></a> CComCriticalSection::Term
 
 Calls the Win32 function [DeleteCriticalSection](/windows/win32/api/synchapi/nf-synchapi-deletecriticalsection), which releases all resources used by the critical section object contained in the [m_sec](#m_sec) data member.
 
@@ -114,7 +114,7 @@ Returns S_OK.
 
 Once `Term` has been called, the critical section can no longer be used for synchronization.
 
-##  <a name="unlock"></a>  CComCriticalSection::Unlock
+## <a name="unlock"></a> CComCriticalSection::Unlock
 
 Calls the Win32 function [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection), which releases ownership of the critical section object contained in the [m_sec](#m_sec) data member.
 

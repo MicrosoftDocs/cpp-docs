@@ -61,7 +61,7 @@ The following example demonstrates how to construct a `CMFCCustomColorsPropertyP
 
 **Header:** afxcustomcolorspropertypage.h
 
-##  <a name="setup"></a>  CMFCCustomColorsPropertyPage::Setup
+## <a name="setup"></a> CMFCCustomColorsPropertyPage::Setup
 
 Sets the color components of the property page.
 

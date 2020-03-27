@@ -136,7 +136,7 @@ If you allocate any memory in the `CListBox` object, override the `CListBox` des
 
 **Header:** afxwin.h
 
-##  <a name="addstring"></a>  CListBox::AddString
+## <a name="addstring"></a> CListBox::AddString
 
 Adds a string to a list box.
 
@@ -163,7 +163,7 @@ Use [InsertString](#insertstring) to insert a string into a specific location wi
 
 [!code-cpp[NVC_MFC_CListBox#3](../../mfc/codesnippet/cpp/clistbox-class_1.cpp)]
 
-##  <a name="chartoitem"></a>  CListBox::CharToItem
+## <a name="chartoitem"></a> CListBox::CharToItem
 
 Called by the framework when the list box's parent window receives a WM_CHARTOITEM message from the list box.
 
@@ -205,7 +205,7 @@ A return value of 0 or greater specifies the index of an item in the list box an
 
 [!code-cpp[NVC_MFC_CListBox#4](../../mfc/codesnippet/cpp/clistbox-class_2.cpp)]
 
-##  <a name="clistbox"></a>  CListBox::CListBox
+## <a name="clistbox"></a> CListBox::CListBox
 
 Constructs a `CListBox` object.
 
@@ -221,7 +221,7 @@ You construct a `CListBox` object in two steps. First, call the constructor `Cli
 
 [!code-cpp[NVC_MFC_CListBox#1](../../mfc/codesnippet/cpp/clistbox-class_3.cpp)]
 
-##  <a name="compareitem"></a>  CListBox::CompareItem
+## <a name="compareitem"></a> CListBox::CompareItem
 
 Called by the framework to determine the relative position of a new item in a sorted owner-draw list box.
 
@@ -254,7 +254,7 @@ By default, this member function does nothing. If you create an owner-draw list 
 
 [!code-cpp[NVC_MFC_CListBox#5](../../mfc/codesnippet/cpp/clistbox-class_4.cpp)]
 
-##  <a name="create"></a>  CListBox::Create
+## <a name="create"></a> CListBox::Create
 
 Creates the Windows list box and attaches it to the `CListBox` object.
 
@@ -312,7 +312,7 @@ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#wi
 
 [!code-cpp[NVC_MFC_CListBox#2](../../mfc/codesnippet/cpp/clistbox-class_5.cpp)]
 
-##  <a name="deleteitem"></a>  CListBox::DeleteItem
+## <a name="deleteitem"></a> CListBox::DeleteItem
 
 Called by the framework when the user deletes an item from an owner-draw `CListBox` object or destroys the list box.
 
@@ -335,7 +335,7 @@ See [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) for a d
 
 [!code-cpp[NVC_MFC_CListBox#6](../../mfc/codesnippet/cpp/clistbox-class_6.cpp)]
 
-##  <a name="deletestring"></a>  CListBox::DeleteString
+## <a name="deletestring"></a> CListBox::DeleteString
 
 Deletes the item in position *nIndex* from the list box.
 
@@ -360,7 +360,7 @@ All items following *nIndex* now move down one position. For example, if a list 
 
 [!code-cpp[NVC_MFC_CListBox#7](../../mfc/codesnippet/cpp/clistbox-class_7.cpp)]
 
-##  <a name="dir"></a>  CListBox::Dir
+## <a name="dir"></a> CListBox::Dir
 
 Adds a list of filenames, drives, or both to a list box.
 
@@ -397,7 +397,7 @@ The zero-based index of the last filename added to the list. The return value is
 
 [!code-cpp[NVC_MFC_CListBox#8](../../mfc/codesnippet/cpp/clistbox-class_8.cpp)]
 
-##  <a name="drawitem"></a>  CListBox::DrawItem
+## <a name="drawitem"></a> CListBox::DrawItem
 
 Called by the framework when a visual aspect of an owner-draw list box changes.
 
@@ -422,7 +422,7 @@ See [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) for a descr
 
 [!code-cpp[NVC_MFC_CListBox#9](../../mfc/codesnippet/cpp/clistbox-class_9.cpp)]
 
-##  <a name="findstring"></a>  CListBox::FindString
+## <a name="findstring"></a> CListBox::FindString
 
 Finds the first string in a list box that contains the specified prefix without changing the list-box selection.
 
@@ -452,7 +452,7 @@ Use the [SelectString](#selectstring) member function to both find and select a 
 
 [!code-cpp[NVC_MFC_CListBox#10](../../mfc/codesnippet/cpp/clistbox-class_10.cpp)]
 
-##  <a name="findstringexact"></a>  CListBox::FindStringExact
+## <a name="findstringexact"></a> CListBox::FindStringExact
 
 Finds the first list-box string that matches the string specified in *lpszFind*.
 
@@ -482,7 +482,7 @@ If the list box was created with an owner-draw style but without the [LBS_HASSTR
 
 [!code-cpp[NVC_MFC_CListBox#11](../../mfc/codesnippet/cpp/clistbox-class_11.cpp)]
 
-##  <a name="getanchorindex"></a>  CListBox::GetAnchorIndex
+## <a name="getanchorindex"></a> CListBox::GetAnchorIndex
 
 Retrieves the zero-based index of the current anchor item in the list box.
 
@@ -502,7 +502,7 @@ In a multiple-selection list box, the anchor item is the first or last item in a
 
   See the example for [CListBox::SetAnchorIndex](#setanchorindex).
 
-##  <a name="getcaretindex"></a>  CListBox::GetCaretIndex
+## <a name="getcaretindex"></a> CListBox::GetCaretIndex
 
 Determines the index of the item that has the focus rectangle in a multiple-selection list box.
 
@@ -522,7 +522,7 @@ The item may or may not be selected.
 
   See the example for [CListBox::SetCaretIndex](#setcaretindex).
 
-##  <a name="getcount"></a>  CListBox::GetCount
+## <a name="getcount"></a> CListBox::GetCount
 
 Retrieves the number of items in a list box.
 
@@ -542,7 +542,7 @@ The returned count is one greater than the index value of the last item (the ind
 
 [!code-cpp[NVC_MFC_CListBox#12](../../mfc/codesnippet/cpp/clistbox-class_12.cpp)]
 
-##  <a name="getcursel"></a>  CListBox::GetCurSel
+## <a name="getcursel"></a> CListBox::GetCurSel
 
 Retrieves the zero-based index of the currently selected item, if any, in a single-selection list box.
 
@@ -564,7 +564,7 @@ Do not call `GetCurSel` for a multiple-selection list box. Use [CListBox::GetSel
 
 [!code-cpp[NVC_MFC_CListBox#13](../../mfc/codesnippet/cpp/clistbox-class_13.cpp)]
 
-##  <a name="gethorizontalextent"></a>  CListBox::GetHorizontalExtent
+## <a name="gethorizontalextent"></a> CListBox::GetHorizontalExtent
 
 Retrieves from the list box the width in pixels by which it can be scrolled horizontally.
 
@@ -584,7 +584,7 @@ This is applicable only if the list box has a horizontal scroll bar.
 
 [!code-cpp[NVC_MFC_CListBox#14](../../mfc/codesnippet/cpp/clistbox-class_14.cpp)]
 
-##  <a name="getitemdata"></a>  CListBox::GetItemData
+## <a name="getitemdata"></a> CListBox::GetItemData
 
 Retrieves the application-supplied doubleword value associated with the specified list-box item.
 
@@ -609,7 +609,7 @@ The doubleword value was the *dwItemData* parameter of a [SetItemData](#setitemd
 
 [!code-cpp[NVC_MFC_CListBox#15](../../mfc/codesnippet/cpp/clistbox-class_15.cpp)]
 
-##  <a name="getitemdataptr"></a>  CListBox::GetItemDataPtr
+## <a name="getitemdataptr"></a> CListBox::GetItemDataPtr
 
 Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer (**void** <strong>\*</strong>).
 
@@ -630,7 +630,7 @@ Retrieves a pointer, or -1 if an error occurs.
 
 [!code-cpp[NVC_MFC_CListBox#16](../../mfc/codesnippet/cpp/clistbox-class_16.cpp)]
 
-##  <a name="getitemheight"></a>  CListBox::GetItemHeight
+## <a name="getitemheight"></a> CListBox::GetItemHeight
 
 Determines the height of items in a list box.
 
@@ -651,7 +651,7 @@ The height, in pixels, of the items in the list box. If the list box has the [LB
 
 [!code-cpp[NVC_MFC_CListBox#17](../../mfc/codesnippet/cpp/clistbox-class_17.cpp)]
 
-##  <a name="getitemrect"></a>  CListBox::GetItemRect
+## <a name="getitemrect"></a> CListBox::GetItemRect
 
 Retrieves the dimensions of the rectangle that bounds a list-box item as it is currently displayed in the list-box window.
 
@@ -677,7 +677,7 @@ LB_ERR if an error occurs.
 
 [!code-cpp[NVC_MFC_CListBox#18](../../mfc/codesnippet/cpp/clistbox-class_18.cpp)]
 
-##  <a name="getlistboxinfo"></a>  CListBox::GetListBoxInfo
+## <a name="getlistboxinfo"></a> CListBox::GetListBoxInfo
 
 Retrieves the number of items per column.
 
@@ -693,7 +693,7 @@ Number of items per column of the `CListBox` object.
 
 This member function emulates the functionality of the [LB_GETLISTBOXINFO](/windows/win32/Controls/lb-getlistboxinfo) message, as described in the Windows SDK.
 
-##  <a name="getlocale"></a>  CListBox::GetLocale
+## <a name="getlocale"></a> CListBox::GetLocale
 
 Retrieves the locale used by the list box.
 
@@ -713,7 +713,7 @@ The locale is used, for example, to determine the sort order of the strings in a
 
   See the example for [CListBox::SetLocale](#setlocale).
 
-##  <a name="getsel"></a>  CListBox::GetSel
+## <a name="getsel"></a> CListBox::GetSel
 
 Retrieves the selection state of an item.
 
@@ -740,7 +740,7 @@ To retrieve the index of the currently-selected list box item, use [CListBox::Ge
 
 [!code-cpp[NVC_MFC_CListBox#19](../../mfc/codesnippet/cpp/clistbox-class_19.cpp)]
 
-##  <a name="getselcount"></a>  CListBox::GetSelCount
+## <a name="getselcount"></a> CListBox::GetSelCount
 
 Retrieves the total number of selected items in a multiple-selection list box.
 
@@ -756,7 +756,7 @@ The count of selected items in a list box. If the list box is a single-selection
 
   See the example for [CListBox::GetSelItems](#getselitems).
 
-##  <a name="getselitems"></a>  CListBox::GetSelItems
+## <a name="getselitems"></a> CListBox::GetSelItems
 
 Fills a buffer with an array of integers that specifies the item numbers of selected items in a multiple-selection list box.
 
@@ -782,7 +782,7 @@ The actual number of items placed in the buffer. If the list box is a single-sel
 
 [!code-cpp[NVC_MFC_CListBox#20](../../mfc/codesnippet/cpp/clistbox-class_20.cpp)]
 
-##  <a name="gettext"></a>  CListBox::GetText
+## <a name="gettext"></a> CListBox::GetText
 
 Gets a string from a list box.
 
@@ -819,7 +819,7 @@ The second form of this member function fills a `CString` object with the string
 
 [!code-cpp[NVC_MFC_CListBox#21](../../mfc/codesnippet/cpp/clistbox-class_21.cpp)]
 
-##  <a name="gettextlen"></a>  CListBox::GetTextLen
+## <a name="gettextlen"></a> CListBox::GetTextLen
 
 Gets the length of a string in a list-box item.
 
@@ -840,7 +840,7 @@ The length of the string in characters, excluding the terminating null character
 
   See the example for [CListBox::GetText](#gettext).
 
-##  <a name="gettopindex"></a>  CListBox::GetTopIndex
+## <a name="gettopindex"></a> CListBox::GetTopIndex
 
 Retrieves the zero-based index of the first visible item in a list box.
 
@@ -860,7 +860,7 @@ Initially, item 0 is at the top of the list box, but if the list box is scrolled
 
 [!code-cpp[NVC_MFC_CListBox#22](../../mfc/codesnippet/cpp/clistbox-class_22.cpp)]
 
-##  <a name="initstorage"></a>  CListBox::InitStorage
+## <a name="initstorage"></a> CListBox::InitStorage
 
 Allocates memory for storing list-box items.
 
@@ -894,7 +894,7 @@ Windows 95/98 only: The *nItems* parameter is limited to 16-bit values. This mea
 
 [!code-cpp[NVC_MFC_CListBox#23](../../mfc/codesnippet/cpp/clistbox-class_23.cpp)]
 
-##  <a name="insertstring"></a>  CListBox::InsertString
+## <a name="insertstring"></a> CListBox::InsertString
 
 Inserts a string into the list box.
 
@@ -924,7 +924,7 @@ Unlike the [AddString](#addstring) member function, `InsertString` does not caus
 
 [!code-cpp[NVC_MFC_CListBox#24](../../mfc/codesnippet/cpp/clistbox-class_24.cpp)]
 
-##  <a name="itemfrompoint"></a>  CListBox::ItemFromPoint
+## <a name="itemfrompoint"></a> CListBox::ItemFromPoint
 
 Determines the list-box item nearest the point specified in *pt*.
 
@@ -954,7 +954,7 @@ You could use this function to determine which list-box item the mouse cursor mo
 
   See the example for [CListBox::SetAnchorIndex](#setanchorindex).
 
-##  <a name="measureitem"></a>  CListBox::MeasureItem
+## <a name="measureitem"></a> CListBox::MeasureItem
 
 Called by the framework when a list box with an owner-draw style is created.
 
@@ -979,7 +979,7 @@ See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a
 
 [!code-cpp[NVC_MFC_CListBox#25](../../mfc/codesnippet/cpp/clistbox-class_25.cpp)]
 
-##  <a name="resetcontent"></a>  CListBox::ResetContent
+## <a name="resetcontent"></a> CListBox::ResetContent
 
 Removes all items from a list box.
 
@@ -991,7 +991,7 @@ void ResetContent();
 
 [!code-cpp[NVC_MFC_CListBox#26](../../mfc/codesnippet/cpp/clistbox-class_26.cpp)]
 
-##  <a name="selectstring"></a>  CListBox::SelectString
+## <a name="selectstring"></a> CListBox::SelectString
 
 Searches for a list-box item that matches the specified string, and if a matching item is found, it selects the item.
 
@@ -1027,7 +1027,7 @@ Use the `FindString` member function to find a string without selecting the item
 
 [!code-cpp[NVC_MFC_CListBox#27](../../mfc/codesnippet/cpp/clistbox-class_27.cpp)]
 
-##  <a name="selitemrange"></a>  CListBox::SelItemRange
+## <a name="selitemrange"></a> CListBox::SelItemRange
 
 Selects multiple consecutive items in a multiple-selection list box.
 
@@ -1061,7 +1061,7 @@ Use this member function only with multiple-selection list boxes. If you need to
 
 [!code-cpp[NVC_MFC_CListBox#28](../../mfc/codesnippet/cpp/clistbox-class_28.cpp)]
 
-##  <a name="setanchorindex"></a>  CListBox::SetAnchorIndex
+## <a name="setanchorindex"></a> CListBox::SetAnchorIndex
 
 Sets the anchor in a multiple-selection list box to begin an extended selection.
 
@@ -1082,7 +1082,7 @@ In a multiple-selection list box, the anchor item is the first or last item in a
 
 [!code-cpp[NVC_MFC_CListBox#29](../../mfc/codesnippet/cpp/clistbox-class_29.cpp)]
 
-##  <a name="setcaretindex"></a>  CListBox::SetCaretIndex
+## <a name="setcaretindex"></a> CListBox::SetCaretIndex
 
 Sets the focus rectangle to the item at the specified index in a multiple-selection list box.
 
@@ -1112,7 +1112,7 @@ If the item is not visible, it is scrolled into view.
 
 [!code-cpp[NVC_MFC_CListBox#30](../../mfc/codesnippet/cpp/clistbox-class_30.cpp)]
 
-##  <a name="setcolumnwidth"></a>  CListBox::SetColumnWidth
+## <a name="setcolumnwidth"></a> CListBox::SetColumnWidth
 
 Sets the width in pixels of all columns in a multicolumn list box (created with the [LBS_MULTICOLUMN](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style).
 
@@ -1129,7 +1129,7 @@ Specifies the width in pixels of all columns.
 
 [!code-cpp[NVC_MFC_CListBox#31](../../mfc/codesnippet/cpp/clistbox-class_31.cpp)]
 
-##  <a name="setcursel"></a>  CListBox::SetCurSel
+## <a name="setcursel"></a> CListBox::SetCurSel
 
 Selects a string and scrolls it into view, if necessary.
 
@@ -1158,7 +1158,7 @@ To set or remove a selection in a multiple-selection list box, use [CListBox::Se
 
 [!code-cpp[NVC_MFC_CListBox#32](../../mfc/codesnippet/cpp/clistbox-class_32.cpp)]
 
-##  <a name="sethorizontalextent"></a>  CListBox::SetHorizontalExtent
+## <a name="sethorizontalextent"></a> CListBox::SetHorizontalExtent
 
 Sets the width, in pixels, by which a list box can be scrolled horizontally.
 
@@ -1183,7 +1183,7 @@ This member function is not useful for multicolumn list boxes. For multicolumn l
 
 [!code-cpp[NVC_MFC_CListBox#33](../../mfc/codesnippet/cpp/clistbox-class_33.cpp)]
 
-##  <a name="setitemdata"></a>  CListBox::SetItemData
+## <a name="setitemdata"></a> CListBox::SetItemData
 
 Sets a value associated with the specified item in a list box.
 
@@ -1209,7 +1209,7 @@ LB_ERR if an error occurs.
 
 [!code-cpp[NVC_MFC_CListBox#34](../../mfc/codesnippet/cpp/clistbox-class_34.cpp)]
 
-##  <a name="setitemdataptr"></a>  CListBox::SetItemDataPtr
+## <a name="setitemdataptr"></a> CListBox::SetItemDataPtr
 
 Sets the 32-bit value associated with the specified item in a list box to be the specified pointer ( **void** <strong>\*</strong>).
 
@@ -1239,7 +1239,7 @@ This pointer remains valid for the life of the list box, even though the item's 
 
 [!code-cpp[NVC_MFC_CListBox#35](../../mfc/codesnippet/cpp/clistbox-class_35.cpp)]
 
-##  <a name="setitemheight"></a>  CListBox::SetItemHeight
+## <a name="setitemheight"></a> CListBox::SetItemHeight
 
 Sets the height of items in a list box.
 
@@ -1269,7 +1269,7 @@ If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-
 
 [!code-cpp[NVC_MFC_CListBox#36](../../mfc/codesnippet/cpp/clistbox-class_36.cpp)]
 
-##  <a name="setlocale"></a>  CListBox::SetLocale
+## <a name="setlocale"></a> CListBox::SetLocale
 
 Sets the locale identifier for this list box.
 
@@ -1294,7 +1294,7 @@ If `SetLocale` is not called, the default locale is obtained from the system. Th
 
 [!code-cpp[NVC_MFC_CListBox#37](../../mfc/codesnippet/cpp/clistbox-class_37.cpp)]
 
-##  <a name="setsel"></a>  CListBox::SetSel
+## <a name="setsel"></a> CListBox::SetSel
 
 Selects a string in a multiple-selection list box.
 
@@ -1326,7 +1326,7 @@ To select an item from a single-selection list box, use [CListBox::SetCurSel](#s
 
 [!code-cpp[NVC_MFC_CListBox#38](../../mfc/codesnippet/cpp/clistbox-class_38.cpp)]
 
-##  <a name="settabstops"></a>  CListBox::SetTabStops
+## <a name="settabstops"></a> CListBox::SetTabStops
 
 Sets the tab-stop positions in a list box.
 
@@ -1366,7 +1366,7 @@ To respond to a call to the `SetTabStops` member function, the list box must hav
 
 [!code-cpp[NVC_MFC_CListBox#39](../../mfc/codesnippet/cpp/clistbox-class_39.cpp)]
 
-##  <a name="settopindex"></a>  CListBox::SetTopIndex
+## <a name="settopindex"></a> CListBox::SetTopIndex
 
 Ensures that a particular list-box item is visible.
 
@@ -1391,7 +1391,7 @@ The system scrolls the list box until either the item specified by *nIndex* appe
 
 [!code-cpp[NVC_MFC_CListBox#40](../../mfc/codesnippet/cpp/clistbox-class_40.cpp)]
 
-##  <a name="vkeytoitem"></a>  CListBox::VKeyToItem
+## <a name="vkeytoitem"></a> CListBox::VKeyToItem
 
 Called by the framework when the list box's parent window receives a WM_VKEYTOITEM message from the list box.
 

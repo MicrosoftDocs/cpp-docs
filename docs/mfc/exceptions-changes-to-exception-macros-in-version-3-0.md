@@ -16,7 +16,7 @@ This article covers the following topics:
 
 - [Re-throwing exceptions](#_core_re.2d.throwing_exceptions)
 
-##  <a name="_core_exception_types_and_the_catch_macro"></a> Exception Types and the CATCH Macro
+## <a name="_core_exception_types_and_the_catch_macro"></a> Exception Types and the CATCH Macro
 
 In earlier versions of MFC, the **CATCH** macro used MFC run-time type information to determine an exception's type; the exception's type is determined, in other words, at the catch site. With C++ exceptions, however, the exception's type is always determined at the throw site by the type of the exception object that is thrown. This will cause incompatibilities in the rare case where the type of the pointer to the thrown object differs from the type of the thrown object.
 
@@ -38,7 +38,7 @@ Code like this is uncommon. It usually appears when an exception object is passe
 
 To work around this problem, move the throw expression from the function to the calling code and throw an exception of the actual type known to the compiler at the time the exception is generated.
 
-##  <a name="_core_re.2d.throwing_exceptions"></a> Re-Throwing Exceptions
+## <a name="_core_re.2d.throwing_exceptions"></a> Re-Throwing Exceptions
 
 A catch block cannot throw the same exception pointer that it caught.
 

@@ -11,7 +11,7 @@ The *spin button* control (also known as an *up-down* control) provides a pair o
 The spin button control is represented in MFC by the [CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md) class.
 
 > [!NOTE]
->  By default, the range for the spin button has the maximum set to zero (0) and the minimum set to 100. Because the maximum value is less than the minimum value, clicking the up arrow decreases the position and clicking the down arrow increases it. Use [CSpinButtonCtrl::SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) to adjust these values.
+> By default, the range for the spin button has the maximum set to zero (0) and the minimum set to 100. Because the maximum value is less than the minimum value, clicking the up arrow decreases the position and clicking the down arrow increases it. Use [CSpinButtonCtrl::SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) to adjust these values.
 
 Typically, the current position is displayed in a companion control. The companion control is known as the *buddy window*. For an illustration of a spin button control, see [About Up-Down Controls](/windows/win32/Controls/up-down-controls) in the Windows SDK.
 

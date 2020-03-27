@@ -69,7 +69,7 @@ Another example is the case in which the length of the document is not known unt
 
 **Header:** afxext.h
 
-##  <a name="getfrompage"></a>  CPrintInfo::GetFromPage
+## <a name="getfrompage"></a> CPrintInfo::GetFromPage
 
 Call this function to retrieve the number of the first page to be printed.
 
@@ -85,7 +85,7 @@ The number of the first page to be printed.
 
 This is the value specified by the user in the Print dialog box, and it is stored in the `CPrintDialog` object referenced by the `m_pPD` member. If the user has not specified a value, the default is the first page of the document.
 
-##  <a name="getmaxpage"></a>  CPrintInfo::GetMaxPage
+## <a name="getmaxpage"></a> CPrintInfo::GetMaxPage
 
 Call this function to retrieve the number of the last page of the document.
 
@@ -101,7 +101,7 @@ The number of the last page of the document.
 
 This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member.
 
-##  <a name="getminpage"></a>  CPrintInfo::GetMinPage
+## <a name="getminpage"></a> CPrintInfo::GetMinPage
 
 Call this function to retrieve the number of the first page of the document.
 
@@ -117,7 +117,7 @@ The number of the first page of the document.
 
 This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member.
 
-##  <a name="getoffsetpage"></a>  CPrintInfo::GetOffsetPage
+## <a name="getoffsetpage"></a> CPrintInfo::GetOffsetPage
 
 Call this function to retrieve the offset when printing multiple DocObject items from a DocObject client.
 
@@ -133,7 +133,7 @@ The number of pages preceding the first page of a DocObject item being printed i
 
 This value is referenced by the `m_nOffsetPage` member. The first page of your document will be numbered the `m_nOffsetPage` value + 1 when printed as a DocObject with other active documents. The `m_nOffsetPage` member is valid only if the `m_bDocObject` value is TRUE.
 
-##  <a name="gettopage"></a>  CPrintInfo::GetToPage
+## <a name="gettopage"></a> CPrintInfo::GetToPage
 
 Call this function to retrieve the number of the last page to be printed.
 
@@ -149,7 +149,7 @@ The number of the last page to be printed.
 
 This is the value specified by the user in the Print dialog box, and it is stored in the `CPrintDialog` object referenced by the `m_pPD` member. If the user has not specified a value, the default is the last page of the document.
 
-##  <a name="m_bcontinueprinting"></a>  CPrintInfo::m_bContinuePrinting
+## <a name="m_bcontinueprinting"></a> CPrintInfo::m_bContinuePrinting
 
 Contains a flag indicating whether the framework should continue the print loop.
 
@@ -157,7 +157,7 @@ Contains a flag indicating whether the framework should continue the print loop.
 
 If you are doing print-time pagination, you can set this member to FALSE in your override of `CView::OnPrepareDC` once the end of the document has been reached. You do not have to modify this variable if you have specified the length of the document at the beginning of the print job using the `SetMaxPage` member function. The `m_bContinuePrinting` member is a public variable of type BOOL.
 
-##  <a name="m_bdirect"></a>  CPrintInfo::m_bDirect
+## <a name="m_bdirect"></a> CPrintInfo::m_bDirect
 
 The framework sets this member to TRUE if the Print dialog box will be bypassed for direct printing; FALSE otherwise.
 
@@ -167,7 +167,7 @@ The Print dialog is normally bypassed when you print from the shell or when prin
 
 You normally don't change this member, but if you do change it, change it before you call [CView::DoPreparePrinting](../../mfc/reference/cview-class.md#doprepareprinting) in your override of [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting).
 
-##  <a name="m_bdocobject"></a>  CPrintInfo::m_bDocObject
+## <a name="m_bdocobject"></a> CPrintInfo::m_bDocObject
 
 Contains a flag indicating whether the document being printed is a DocObject.
 
@@ -175,7 +175,7 @@ Contains a flag indicating whether the document being printed is a DocObject.
 
 Data members `m_dwFlags` and `m_nOffsetPage` are invalid unless this flag is TRUE.
 
-##  <a name="m_bpreview"></a>  CPrintInfo::m_bPreview
+## <a name="m_bpreview"></a> CPrintInfo::m_bPreview
 
 Contains a flag indicating whether the document is being previewed.
 
@@ -183,7 +183,7 @@ Contains a flag indicating whether the document is being previewed.
 
 This is set by the framework depending on which command the user executed. The Print dialog box is not displayed for a print-preview job. The `m_bPreview` member is a public variable of type BOOL.
 
-##  <a name="m_dwflags"></a>  CPrintInfo::m_dwFlags
+## <a name="m_dwflags"></a> CPrintInfo::m_dwFlags
 
 Contains a combination of flags specifying DocObject printing operations.
 
@@ -207,7 +207,7 @@ The flags can be one or more of the following values:
 
 - PRINTFLAG_PRINTTOFILE
 
-##  <a name="m_lpuserdata"></a>  CPrintInfo::m_lpUserData
+## <a name="m_lpuserdata"></a> CPrintInfo::m_lpUserData
 
 Contains a pointer to a user-created structure.
 
@@ -215,7 +215,7 @@ Contains a pointer to a user-created structure.
 
 You can use this to store printing-specific data that you do not want to store in your view class. The `m_lpUserData` member is a public variable of type LPVOID.
 
-##  <a name="m_ncurpage"></a>  CPrintInfo::m_nCurPage
+## <a name="m_ncurpage"></a> CPrintInfo::m_nCurPage
 
 Contains the number of the current page.
 
@@ -225,7 +225,7 @@ The framework calls `CView::OnPrepareDC` and `CView::OnPrint` once for each page
 
 When preview mode is first invoked, the framework reads the value of this member to determine which page of the document should be previewed initially. You can set the value of this member in your override of `CView::OnPreparePrinting` to maintain the user's current position in the document when entering preview mode. The `m_nCurPage` member is a public variable of type UINT.
 
-##  <a name="m_njobnumber"></a>  CPrintInfo::m_nJobNumber
+## <a name="m_njobnumber"></a> CPrintInfo::m_nJobNumber
 
 Indicates the job number assigned by the operating system for the current print job.
 
@@ -233,7 +233,7 @@ Indicates the job number assigned by the operating system for the current print 
 
 This value may be SP_ERROR if the job hasn't yet printed (that is, if the `CPrintInfo` object is newly constructed and has not yet been used to print), or if there was an error in starting the job.
 
-##  <a name="m_nnumpreviewpages"></a>  CPrintInfo::m_nNumPreviewPages
+## <a name="m_nnumpreviewpages"></a> CPrintInfo::m_nNumPreviewPages
 
 Contains the number of pages displayed in preview mode; it can be either 1 or 2.
 
@@ -241,11 +241,11 @@ Contains the number of pages displayed in preview mode; it can be either 1 or 2.
 
 The `m_nNumPreviewPages` member is a public variable of type UINT.
 
-##  <a name="m_noffsetpage"></a>  CPrintInfo::m_nOffsetPage
+## <a name="m_noffsetpage"></a> CPrintInfo::m_nOffsetPage
 
 Contains the number of pages preceding the first page of a particular DocObject in a combined DocObject print job.
 
-##  <a name="m_ppd"></a>  CPrintInfo::m_pPD
+## <a name="m_ppd"></a> CPrintInfo::m_pPD
 
 Contains a pointer to the `CPrintDialog` object used to display the Print dialog box for the print job.
 
@@ -253,7 +253,7 @@ Contains a pointer to the `CPrintDialog` object used to display the Print dialog
 
 The `m_pPD` member is a public variable declared as a pointer to `CPrintDialog`.
 
-##  <a name="m_rectdraw"></a>  CPrintInfo::m_rectDraw
+## <a name="m_rectdraw"></a> CPrintInfo::m_rectDraw
 
 Specifies the usable drawing area of the page in logical coordinates.
 
@@ -261,7 +261,7 @@ Specifies the usable drawing area of the page in logical coordinates.
 
 You may want to refer to this in your override of `CView::OnPrint`. You can use this member to keep track of what area remains usable after you print headers, footers, and so on. The `m_rectDraw` member is a public variable of type `CRect`.
 
-##  <a name="m_strpagedesc"></a>  CPrintInfo::m_strPageDesc
+## <a name="m_strpagedesc"></a> CPrintInfo::m_strPageDesc
 
 Contains a format string used to display the page numbers during print preview; this string consists of two substrings, one for single-page display and one for double-page display, each terminated by a '\n' character.
 
@@ -269,7 +269,7 @@ Contains a format string used to display the page numbers during print preview; 
 
 The framework uses "Page %u\nPages %u-%u\n" as the default value. If you want a different format for the page numbers, specify a format string in your override of `CView::OnPreparePrinting`. The `m_strPageDesc` member is a public variable of type `CString`.
 
-##  <a name="setmaxpage"></a>  CPrintInfo::SetMaxPage
+## <a name="setmaxpage"></a> CPrintInfo::SetMaxPage
 
 Call this function to specify the number of the last page of the document.
 
@@ -290,7 +290,7 @@ This value is stored in the `CPrintDialog` object referenced by the `m_pPD` memb
 
   See the example for [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting).
 
-##  <a name="setminpage"></a>  CPrintInfo::SetMinPage
+## <a name="setminpage"></a> CPrintInfo::SetMinPage
 
 Call this function to specify the number of the first page of the document.
 

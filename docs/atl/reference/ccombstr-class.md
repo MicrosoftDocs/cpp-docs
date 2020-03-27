@@ -74,10 +74,10 @@ The `CComBSTR` class is a wrapper for BSTRs, which are length-prefixed strings. 
 A [BSTR](/previous-versions/windows/desktop/automat/bstr) is null-terminated after the last counted character but may also contain null characters embedded within the string. The string length is determined by the character count, not the first null character.
 
 > [!NOTE]
->  The `CComBSTR` class provides a number of members (constructors, assignment operators, and comparison operators) that take either ANSI or Unicode strings as arguments. The ANSI versions of these functions are less efficient than their Unicode counterparts because temporary Unicode strings are often created internally. For efficiency, use the Unicode versions where possible.
+> The `CComBSTR` class provides a number of members (constructors, assignment operators, and comparison operators) that take either ANSI or Unicode strings as arguments. The ANSI versions of these functions are less efficient than their Unicode counterparts because temporary Unicode strings are often created internally. For efficiency, use the Unicode versions where possible.
 
 > [!NOTE]
->  Because of the improved lookup behavior implemented in Visual Studio .NET, code such as `bstr = L"String2" + bstr;`, which may have compiled in previous releases, should instead be implemented as `bstr = CStringW(L"String2") + bstr`.
+> Because of the improved lookup behavior implemented in Visual Studio .NET, code such as `bstr = L"String2" + bstr;`, which may have compiled in previous releases, should instead be implemented as `bstr = CStringW(L"String2") + bstr`.
 
 For a list of cautions when using `CComBSTR`, see [Programming with CComBSTR](../../atl/programming-with-ccombstr-atl.md).
 
@@ -85,7 +85,7 @@ For a list of cautions when using `CComBSTR`, see [Programming with CComBSTR](..
 
 **Header:** atlbase.h
 
-##  <a name="append"></a>  CComBSTR::Append
+## <a name="append"></a> CComBSTR::Append
 
 Appends either *lpsz* or the BSTR member of *bstrSrc* to [m_str](#m_str).
 
@@ -124,7 +124,7 @@ An ANSI string will be converted to Unicode before being appended.
 
 [!code-cpp[NVC_ATL_Utilities#32](../../atl/codesnippet/cpp/ccombstr-class_1.cpp)]
 
-##  <a name="appendbstr"></a>  CComBSTR::AppendBSTR
+## <a name="appendbstr"></a> CComBSTR::AppendBSTR
 
 Appends the specified BSTR to [m_str](#m_str).
 
@@ -149,7 +149,7 @@ Do not pass an ordinary wide-character string to this method. The compiler canno
 
 [!code-cpp[NVC_ATL_Utilities#33](../../atl/codesnippet/cpp/ccombstr-class_2.cpp)]
 
-##  <a name="appendbytes"></a>  CComBSTR::AppendBytes
+## <a name="appendbytes"></a> CComBSTR::AppendBytes
 
 Appends the specified number of bytes to [m_str](#m_str) without conversion.
 
@@ -173,7 +173,7 @@ S_OK on success, or any standard HRESULT error value.
 
 [!code-cpp[NVC_ATL_Utilities#34](../../atl/codesnippet/cpp/ccombstr-class_3.cpp)]
 
-##  <a name="arraytobstr"></a>  CComBSTR::ArrayToBSTR
+## <a name="arraytobstr"></a> CComBSTR::ArrayToBSTR
 
 Frees any existing string held in the `CComBSTR` object, then creates a BSTR from the first character of each element in the safearray and attaches it to the `CComBSTR` object.
 
@@ -190,7 +190,7 @@ HRESULT ArrayToBSTR(const SAFEARRAY* pSrc) throw();
 
 S_OK on success, or any standard HRESULT error value.
 
-##  <a name="assignbstr"></a>  CComBSTR::AssignBSTR
+## <a name="assignbstr"></a> CComBSTR::AssignBSTR
 
 Assigns a BSTR to [m_str](#m_str).
 
@@ -207,7 +207,7 @@ HRESULT AssignBSTR(const BSTR bstrSrc) throw();
 
 S_OK on success, or any standard HRESULT error value.
 
-##  <a name="attach"></a>  CComBSTR::Attach
+## <a name="attach"></a> CComBSTR::Attach
 
 Attaches a BSTR to the `CComBSTR` object by setting the [m_str](#m_str) member to *src*.
 
@@ -225,13 +225,13 @@ void Attach(BSTR src) throw();
 Do not pass an ordinary wide-character string to this method. The compiler cannot catch the error and run time errors will occur.
 
 > [!NOTE]
->  This method will assert if `m_str` is non- NULL.
+> This method will assert if `m_str` is non- NULL.
 
 ### Example
 
 [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/cpp/ccombstr-class_4.cpp)]
 
-##  <a name="bstrtoarray"></a>  CComBSTR::BSTRToArray
+## <a name="bstrtoarray"></a> CComBSTR::BSTRToArray
 
 Creates a zero-based one-dimensional safearray, where each element of the array is a character from the `CComBSTR` object.
 
@@ -248,7 +248,7 @@ HRESULT BSTRToArray(LPSAFEARRAY* ppArray) throw();
 
 S_OK on success, or any standard HRESULT error value.
 
-##  <a name="bytelength"></a>  CComBSTR::ByteLength
+## <a name="bytelength"></a> CComBSTR::ByteLength
 
 Returns the number of bytes in `m_str`, excluding the terminating null character.
 
@@ -268,7 +268,7 @@ Returns 0 if `m_str` is NULL.
 
 [!code-cpp[NVC_ATL_Utilities#36](../../atl/codesnippet/cpp/ccombstr-class_5.cpp)]
 
-##  <a name="ccombstr"></a>  CComBSTR::CComBSTR
+## <a name="ccombstr"></a> CComBSTR::CComBSTR
 
 The constructor. The default constructor sets the [m_str](#m_str) member to NULL.
 
@@ -315,7 +315,7 @@ The destructor frees the string pointed to by `m_str`.
 
 [!code-cpp[NVC_ATL_Utilities#37](../../atl/codesnippet/cpp/ccombstr-class_6.cpp)]
 
-##  <a name="dtor"></a>  CComBSTR::~CComBSTR
+## <a name="dtor"></a> CComBSTR::~CComBSTR
 
 The destructor.
 
@@ -327,7 +327,7 @@ The destructor.
 
 The destructor frees the string pointed to by `m_str`.
 
-##  <a name="copy"></a>  CComBSTR::Copy
+## <a name="copy"></a> CComBSTR::Copy
 
 Allocates and returns a copy of `m_str`.
 
@@ -343,7 +343,7 @@ A copy of the [m_str](#m_str) member. If `m_str` is NULL, returns NULL.
 
 [!code-cpp[NVC_ATL_Utilities#38](../../atl/codesnippet/cpp/ccombstr-class_7.cpp)]
 
-##  <a name="copyto"></a>  CComBSTR::CopyTo
+## <a name="copyto"></a> CComBSTR::CopyTo
 
 Allocates and returns a copy of [m_str](#m_str) via the parameter.
 
@@ -373,7 +373,7 @@ After calling this method, the VARIANT pointed to by *pvarDest* will be of type 
 
 [!code-cpp[NVC_ATL_Utilities#39](../../atl/codesnippet/cpp/ccombstr-class_8.cpp)]
 
-##  <a name="detach"></a>  CComBSTR::Detach
+## <a name="detach"></a> CComBSTR::Detach
 
 Detaches [m_str](#m_str) from the `CComBSTR` object and sets `m_str` to NULL.
 
@@ -389,7 +389,7 @@ The BSTR associated with the `CComBSTR` object.
 
 [!code-cpp[NVC_ATL_Utilities#40](../../atl/codesnippet/cpp/ccombstr-class_9.cpp)]
 
-##  <a name="empty"></a>  CComBSTR::Empty
+## <a name="empty"></a> CComBSTR::Empty
 
 Frees the [m_str](#m_str) member.
 
@@ -401,7 +401,7 @@ void Empty() throw();
 
 [!code-cpp[NVC_ATL_Utilities#41](../../atl/codesnippet/cpp/ccombstr-class_10.cpp)]
 
-##  <a name="length"></a>  CComBSTR::Length
+## <a name="length"></a> CComBSTR::Length
 
 Returns the number of characters in `m_str`, excluding the terminating null character.
 
@@ -417,7 +417,7 @@ The length of the [m_str](#m_str) member.
 
 [!code-cpp[NVC_ATL_Utilities#42](../../atl/codesnippet/cpp/ccombstr-class_11.cpp)]
 
-##  <a name="loadstring"></a>  CComBSTR::LoadString
+## <a name="loadstring"></a> CComBSTR::LoadString
 
 Loads a string resource specified by *nID* and stores it in this object.
 
@@ -442,7 +442,7 @@ The first function loads the resource from the module identified by you via the 
 
 [!code-cpp[NVC_ATL_Utilities#43](../../atl/codesnippet/cpp/ccombstr-class_12.cpp)]
 
-##  <a name="m_str"></a>  CComBSTR::m_str
+## <a name="m_str"></a> CComBSTR::m_str
 
 Contains the BSTR associated with the `CComBSTR` object.
 
@@ -454,7 +454,7 @@ BSTR m_str;
 
 [!code-cpp[NVC_ATL_Utilities#49](../../atl/codesnippet/cpp/ccombstr-class_13.cpp)]
 
-##  <a name="operator_bstr"></a>  CComBSTR::operator BSTR
+## <a name="operator_bstr"></a> CComBSTR::operator BSTR
 
 Casts a `CComBSTR` object to a BSTR.
 
@@ -470,7 +470,7 @@ Allows you to pass `CComBSTR` objects to functions that have **[in] BSTR** param
 
 See the example for [CComBSTR::m_str](#m_str).
 
-##  <a name="operator_not"></a>  CComBSTR::operator !
+## <a name="operator_not"></a> CComBSTR::operator !
 
 Checks whether BSTR string is NULL.
 
@@ -490,7 +490,7 @@ This operator only checks for a NULL value, not for an empty string.
 
 [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/cpp/ccombstr-class_4.cpp)]
 
-##  <a name="operator_neq"></a>  CComBSTR::operator !=
+## <a name="operator_neq"></a> CComBSTR::operator !=
 
 Returns the logical opposite of [operator ==](#operator_eq_eq).
 
@@ -520,7 +520,7 @@ Returns TRUE if the item being compared is not equal to the `CComBSTR` object; o
 
 `CComBSTR`s are compared textually in the context of the user's default locale. The final comparison operator just compares the contained string against NULL.
 
-##  <a name="operator_amp"></a>  CComBSTR::operator &amp;
+## <a name="operator_amp"></a> CComBSTR::operator &amp;
 
 Returns the address of the BSTR stored in the [m_str](#m_str) member.
 
@@ -540,7 +540,7 @@ This assertion is not enabled by default. Define ATL_CCOMBSTR_ADDRESS_OF_ASSERT 
 
 [!code-cpp[NVC_ATL_Utilities#47](../../atl/codesnippet/cpp/ccombstr-class_15.cpp)]
 
-##  <a name="operator_add_eq"></a>  CComBSTR::operator +=
+## <a name="operator_add_eq"></a> CComBSTR::operator +=
 
 Appends a string to the `CComBSTR` object.
 
@@ -565,7 +565,7 @@ CComBSTR& operator+= (const LPCOLESTR pszSrc);
 
 [!code-cpp[NVC_ATL_Utilities#48](../../atl/codesnippet/cpp/ccombstr-class_16.cpp)]
 
-##  <a name="operator_lt"></a>  CComBSTR::operator &lt;
+## <a name="operator_lt"></a> CComBSTR::operator &lt;
 
 Compares a `CComBSTR` with a string.
 
@@ -583,7 +583,7 @@ Returns TRUE if the item being compared is less than the `CComBSTR` object; othe
 
 The comparison is performed using the user's default locale.
 
-##  <a name="operator_eq"></a>  CComBSTR::operator =
+## <a name="operator_eq"></a> CComBSTR::operator =
 
 Sets the [m_str](#m_str) member to a copy of *pSrc* or to a copy of the BSTR member of *src*. The move assignment operator moves `src` without copying it.
 
@@ -602,7 +602,7 @@ The *pSrc* parameter specifies either an LPCOLESTR for Unicode versions or LPCST
 
 See the example for [CComBSTR::Copy](#copy).
 
-##  <a name="operator_eq_eq"></a>  CComBSTR::operator ==
+## <a name="operator_eq_eq"></a> CComBSTR::operator ==
 
 Compares a `CComBSTR` with a string. `CComBSTR`s are compared textually in the context of the user's default locale.
 
@@ -632,7 +632,7 @@ Returns TRUE if the item being compared is equal to the `CComBSTR` object; other
 
 The final comparison operator just compares the contained string against NULL.
 
-##  <a name="operator_gt"></a>  CComBSTR::operator &gt;
+## <a name="operator_gt"></a> CComBSTR::operator &gt;
 
 Compares a `CComBSTR` with a string.
 
@@ -648,7 +648,7 @@ Returns TRUE if the item being compared is greater than the `CComBSTR` object; o
 
 The comparison is performed using the user's default locale.
 
-##  <a name="readfromstream"></a>  CComBSTR::ReadFromStream
+## <a name="readfromstream"></a> CComBSTR::ReadFromStream
 
 Sets the [m_str](#m_str) member to the BSTR contained in the specified stream.
 
@@ -673,7 +673,7 @@ A standard HRESULT value.
 
 [!code-cpp[NVC_ATL_Utilities#44](../../atl/codesnippet/cpp/ccombstr-class_17.cpp)]
 
-##  <a name="tolower"></a>  CComBSTR::ToLower
+## <a name="tolower"></a> CComBSTR::ToLower
 
 Converts the contained string to lowercase.
 
@@ -689,7 +689,7 @@ A standard HRESULT value.
 
 See `CharLowerBuff` for more information on how the conversion is performed.
 
-##  <a name="toupper"></a>  CComBSTR::ToUpper
+## <a name="toupper"></a> CComBSTR::ToUpper
 
 Converts the contained string to uppercase.
 
@@ -705,7 +705,7 @@ A standard HRESULT value.
 
 See `CharUpperBuff` for more information on how the conversion is performed.
 
-##  <a name="writetostream"></a>  CComBSTR::WriteToStream
+## <a name="writetostream"></a> CComBSTR::WriteToStream
 
 Saves the [m_str](#m_str) member to a stream.
 

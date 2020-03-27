@@ -53,7 +53,7 @@ For more information about servers, see the article [Servers: Implementing a Ser
 
 **Header:** afxdisp.h
 
-##  <a name="coletemplateserver"></a>  COleTemplateServer::COleTemplateServer
+## <a name="coletemplateserver"></a> COleTemplateServer::COleTemplateServer
 
 Constructs a `COleTemplateServer` object.
 
@@ -65,7 +65,7 @@ COleTemplateServer();
 
 For a brief description of the use of the `COleTemplateServer` class, see the [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md) class overview.
 
-##  <a name="connecttemplate"></a>  COleTemplateServer::ConnectTemplate
+## <a name="connecttemplate"></a> COleTemplateServer::ConnectTemplate
 
 Connects the document template pointed to by *pDocTemplate* to the underlying [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md) object.
 
@@ -91,7 +91,7 @@ Indicates whether a single instance of the application can support multiple inst
 
 For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) in the Windows SDK.
 
-##  <a name="unregister"></a>  COleTemplateServer::Unregister
+## <a name="unregister"></a> COleTemplateServer::Unregister
 
 Unregisters the associated document template.
 
@@ -107,7 +107,7 @@ TRUE if successful; otherwise FALSE.
 
 EnterRemarks
 
-##  <a name="updateregistry"></a>  COleTemplateServer::UpdateRegistry
+## <a name="updateregistry"></a> COleTemplateServer::UpdateRegistry
 
 Loads file-type information from the document-template string and places that information in the OLE system registry.
 

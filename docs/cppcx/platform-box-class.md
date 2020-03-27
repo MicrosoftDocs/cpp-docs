@@ -124,7 +124,7 @@ Any enum type, value class, or value struct. Includes the built-in types in the 
 
 A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.
 
-## <a name="t"></a>  Box::operator T Operator
+## <a name="t"></a> Box::operator T Operator
 
 Enables boxing conversions from a value class `T` or `enum` class `T` to `Box<T>`.
 

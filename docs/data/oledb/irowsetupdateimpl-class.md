@@ -86,7 +86,7 @@ You should first read and understand the documentation for [IRowsetChange](/prev
 `IRowsetUpdateImpl` implements the OLE DB `IRowsetUpdate` interface, which enables consumers to delay the transmission of changes made with `IRowsetChange` to the data source and undo changes before transmission.
 
 > [!IMPORTANT]
->  It is strongly recommended that you read the following documentation BEFORE attempting to implement your provider:
+> It is strongly recommended that you read the following documentation BEFORE attempting to implement your provider:
 
 - [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)
 

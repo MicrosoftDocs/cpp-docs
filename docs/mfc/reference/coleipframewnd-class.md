@@ -52,7 +52,7 @@ For more information on using `COleIPFrameWnd`, see the article [Activation](../
 
 **Header:** afxole.h
 
-##  <a name="coleipframewnd"></a>  COleIPFrameWnd::COleIPFrameWnd
+## <a name="coleipframewnd"></a> COleIPFrameWnd::COleIPFrameWnd
 
 Constructs a `COleIPFrameWnd` object and initializes its in-place state information, which is stored in a structure of type OLEINPLACEFRAMEINFO.
 
@@ -64,7 +64,7 @@ COleIPFrameWnd();
 
 For more information, see [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) in the Windows SDK.
 
-##  <a name="oncreatecontrolbars"></a>  COleIPFrameWnd::OnCreateControlBars
+## <a name="oncreatecontrolbars"></a> COleIPFrameWnd::OnCreateControlBars
 
 The framework calls the `OnCreateControlBars` function when an item is activated for in-place editing.
 
@@ -94,7 +94,7 @@ Nonzero on success; otherwise, 0.
 
 The default implementation does nothing. Override this function to perform any special processing required when control bars are created.
 
-##  <a name="repositionframe"></a>  COleIPFrameWnd::RepositionFrame
+## <a name="repositionframe"></a> COleIPFrameWnd::RepositionFrame
 
 The framework calls the `RepositionFrame` member function to lay out control bars and reposition the in-place editing window so all of it is visible.
 
