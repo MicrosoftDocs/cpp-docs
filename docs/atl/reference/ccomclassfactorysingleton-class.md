@@ -10,7 +10,7 @@ ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
 This class derives from [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) and uses [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) to construct a single object.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -62,7 +62,7 @@ ATL objects normally acquire a class factory by deriving from [CComCoClass](../.
 
 **Header:** atlcom.h
 
-##  <a name="createinstance"></a>  CComClassFactorySingleton::CreateInstance
+## <a name="createinstance"></a> CComClassFactorySingleton::CreateInstance
 
 Calls `QueryInterface` through [m_spObj](#m_spobj) to retrieve an interface pointer.
 
@@ -85,7 +85,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 A standard HRESULT value.
 
-##  <a name="m_spobj"></a>  CComClassFactorySingleton::m_spObj
+## <a name="m_spobj"></a> CComClassFactorySingleton::m_spObj
 
 The [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object constructed by `CComClassFactorySingleton`.
 

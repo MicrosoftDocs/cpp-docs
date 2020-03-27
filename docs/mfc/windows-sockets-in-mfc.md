@@ -7,13 +7,13 @@ ms.assetid: 1f3c476a-9c68-49fe-9a25-d22971a334d0
 # Windows Sockets in MFC
 
 > [!NOTE]
->  MFC supports Windows Sockets 1 but does not support [Windows Sockets 2](/windows/win32/WinSock/windows-sockets-start-page-2). Windows Sockets 2 first shipped with Windows 98 and is the version included with Windows 2000.
+> MFC supports Windows Sockets 1 but does not support [Windows Sockets 2](/windows/win32/WinSock/windows-sockets-start-page-2). Windows Sockets 2 first shipped with Windows 98 and is the version included with Windows 2000.
 
 MFC supplies two models for writing network communications programs with Windows Sockets, embodied in two MFC classes. This article describes these models and further details MFC sockets support. A "socket" is an endpoint of communication: an object through which your application communicates with other Windows Sockets applications across a network.
 
 For information on Windows Sockets, including an explanation of the socket concept, see [Windows Sockets: Background](../mfc/windows-sockets-background.md).
 
-##  <a name="_core_sockets_programming_models"></a> Sockets Programming Models
+## <a name="_core_sockets_programming_models"></a> Sockets Programming Models
 
 The two MFC Windows Sockets programming models are supported by the following classes:
 
@@ -27,7 +27,7 @@ The two MFC Windows Sockets programming models are supported by the following cl
 
 Creating and using `CSocket` and `CAsyncSocket` objects is described in [Windows Sockets: Using Sockets with Archives](../mfc/windows-sockets-using-sockets-with-archives.md) and [Windows Sockets: Using Class CAsyncSocket](../mfc/windows-sockets-using-class-casyncsocket.md).
 
-##  <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a> Windows Sockets DLLs
+## <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a> Windows Sockets DLLs
 
 The Microsoft Windows operating systems supply the Windows Sockets dynamic-link libraries (DLL). Visual C++ supplies the appropriate header files and libraries and the Windows Sockets specification.
 

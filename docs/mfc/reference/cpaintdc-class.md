@@ -55,7 +55,7 @@ For more information on using `CPaintDC`, see [Device Contexts](../../mfc/device
 
 **Header:** afxwin.h
 
-##  <a name="cpaintdc"></a>  CPaintDC::CPaintDC
+## <a name="cpaintdc"></a> CPaintDC::CPaintDC
 
 Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct) structure in the [m_ps](#m_ps) member variable.
 
@@ -76,7 +76,7 @@ An exception (of type `CResourceException`) is thrown if the Windows [GetDC](/wi
 
 [!code-cpp[NVC_MFCDocView#97](../../mfc/codesnippet/cpp/cpaintdc-class_1.cpp)]
 
-##  <a name="m_hwnd"></a>  CPaintDC::m_hWnd
+## <a name="m_hwnd"></a> CPaintDC::m_hWnd
 
 The `HWND` to which this `CPaintDC` object is attached.
 
@@ -92,7 +92,7 @@ HWND m_hWnd;
 
 [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]
 
-##  <a name="m_ps"></a>  CPaintDC::m_ps
+## <a name="m_ps"></a> CPaintDC::m_ps
 
 `m_ps` is a public member variable of type [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct).
 

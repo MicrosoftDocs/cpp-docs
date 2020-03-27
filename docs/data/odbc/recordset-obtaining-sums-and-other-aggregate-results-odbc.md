@@ -26,7 +26,7 @@ This topic explains how to obtain aggregate results using the following [SQL](..
 You use these SQL functions to obtain statistical information about the records in a data source rather than to extract records from the data source. The recordset that is created usually consists of a single record (if all columns are aggregates) that contains a value. (There might be more than one record if you used a **GROUP BY** clause.) This value is the result of the calculation or extraction performed by the SQL function.
 
 > [!TIP]
->  To add a SQL **GROUP BY** clause (and possibly a **HAVING** clause) to your SQL statement, append it to the end of `m_strFilter`. For example:
+> To add a SQL **GROUP BY** clause (and possibly a **HAVING** clause) to your SQL statement, append it to the end of `m_strFilter`. For example:
 
 ```
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
@@ -35,7 +35,7 @@ m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
 You can limit the number of records you use to obtain aggregate results by filtering and sorting the columns.
 
 > [!CAUTION]
->  Some aggregation operators return a different data type from the columns over which they are aggregating.
+> Some aggregation operators return a different data type from the columns over which they are aggregating.
 
 - **SUM** and **AVG** might return the next larger data type (for example, calling with `int` returns **LONG** or **double**).
 
@@ -64,7 +64,7 @@ You can limit the number of records you use to obtain aggregate results by filte
 1. Open the recordset. The result of the aggregation operation is left in `m_dblSumSales`.
 
 > [!NOTE]
->  The wizard actually assigns data member names without Hungarian prefixes. For example, the wizard would produce `m_Sales` for a Sales column, rather than the `m_lSales` name used earlier for illustration.
+> The wizard actually assigns data member names without Hungarian prefixes. For example, the wizard would produce `m_Sales` for a Sales column, rather than the `m_lSales` name used earlier for illustration.
 
 If you are using a [CRecordView](../../mfc/reference/crecordview-class.md) class to view the data, you have to change the DDX function call to display the new data member value; in this case, changing it from:
 

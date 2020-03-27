@@ -113,7 +113,7 @@ For more information on using `CToolBar`, see the article [MFC Toolbar Implement
 
 **Header:** afxext.h
 
-##  <a name="commandtoindex"></a>  CToolBar::CommandToIndex
+## <a name="commandtoindex"></a> CToolBar::CommandToIndex
 
 This member function returns the index of the first toolbar button, starting at position 0, whose command ID matches `nIDFind`.
 
@@ -130,7 +130,7 @@ Command ID of a toolbar button.
 
 The index of the button, or -1 if no button has the given command ID.
 
-##  <a name="create"></a>  CToolBar::Create
+## <a name="create"></a> CToolBar::Create
 
 This member function creates a Windows toolbar (a child window) and associates it with the `CToolBar` object.
 
@@ -182,7 +182,7 @@ It also sets the toolbar height to a default value.
 
 [!code-cpp[NVC_MFCDocView#179](../../mfc/codesnippet/cpp/ctoolbar-class_1.cpp)]
 
-##  <a name="createex"></a>  CToolBar::CreateEx
+## <a name="createex"></a> CToolBar::CreateEx
 
 Call this function to create a Windows toolbar (a child window) and associate it with the `CToolBar` object.
 
@@ -230,7 +230,7 @@ Use `CreateEx`, instead of [Create](#create), when certain styles need to be pre
 
 [!code-cpp[NVC_MFCDocView#180](../../mfc/codesnippet/cpp/ctoolbar-class_2.cpp)]
 
-##  <a name="ctoolbar"></a>  CToolBar::CToolBar
+## <a name="ctoolbar"></a> CToolBar::CToolBar
 
 This member function constructs a `CToolBar` object and sets the default sizes.
 
@@ -242,7 +242,7 @@ CToolBar();
 
 Call the [Create](#create) member function to create the toolbar window.
 
-##  <a name="getbuttoninfo"></a>  CToolBar::GetButtonInfo
+## <a name="getbuttoninfo"></a> CToolBar::GetButtonInfo
 
 This member function retrieves the control ID, style, and image index of the toolbar button or separator at the location specified by *nIndex.*
 
@@ -274,7 +274,7 @@ Those values are assigned to the variables referenced by *nID*, *nStyle*, and *i
 
 If *nIndex* specifies a separator, *iImage* is set to the separator width in pixels.
 
-##  <a name="getbuttonstyle"></a>  CToolBar::GetButtonStyle
+## <a name="getbuttonstyle"></a> CToolBar::GetButtonStyle
 
 Call this member function to retrieve the style of a button or separator on the toolbar.
 
@@ -295,7 +295,7 @@ The style of the button or separator specified by *nIndex*.
 
 A button's style determines how the button appears and how it responds to user input. See [SetButtonStyle](#setbuttonstyle) for examples of button styles.
 
-##  <a name="getbuttontext"></a>  CToolBar::GetButtonText
+## <a name="getbuttontext"></a> CToolBar::GetButtonText
 
 Call this member function to retrieve the text that appears on a button.
 
@@ -323,7 +323,7 @@ A `CString` object containing the button text.
 
 The second form of this member function fills a `CString` object with the string text.
 
-##  <a name="getitemid"></a>  CToolBar::GetItemID
+## <a name="getitemid"></a> CToolBar::GetItemID
 
 This member function returns the command ID of the button or separator specified by *nIndex*.
 
@@ -344,7 +344,7 @@ The command ID of the button or separator specified by *nIndex*.
 
 Separators return ID_SEPARATOR.
 
-##  <a name="getitemrect"></a>  CToolBar::GetItemRect
+## <a name="getitemrect"></a> CToolBar::GetItemRect
 
 This member function fills the `RECT` structure whose address is contained in *lpRect* with the coordinates of the button or separator specified by *nIndex*.
 
@@ -372,7 +372,7 @@ Use `GetItemRect` to get the coordinates of a separator you want to replace with
 
   See the example for [CToolBar::SetSizes](#setsizes).
 
-##  <a name="gettoolbarctrl"></a>  CToolBar::GetToolBarCtrl
+## <a name="gettoolbarctrl"></a> CToolBar::GetToolBarCtrl
 
 This member function allows direct access to the underlying common control.
 
@@ -394,7 +394,7 @@ For more information about using common controls, see the article [Controls](../
 
 [!code-cpp[NVC_MFCDocViewSDI#15](../../mfc/codesnippet/cpp/ctoolbar-class_3.cpp)]
 
-##  <a name="loadbitmap"></a>  CToolBar::LoadBitmap
+## <a name="loadbitmap"></a> CToolBar::LoadBitmap
 
 Call this member function to load the bitmap specified by `lpszResourceName` or `nIDResource`.
 
@@ -422,7 +422,7 @@ The bitmap should contain one image for each toolbar button. If the images are n
 > [!WARNING]
 > `CToolBar` supports bitmaps with a maximum of 16 colors. When you load an image into a toolbar editor, Visual Studio automatically converts the image to a 16-color bitmap, if necessary, and displays a warning message if the image was converted. If you use an image with more than 16 colors (using an external editor to edit the image), the application might behave unexpectedly.
 
-##  <a name="loadtoolbar"></a>  CToolBar::LoadToolBar
+## <a name="loadtoolbar"></a> CToolBar::LoadToolBar
 
 Call this member function to load the toolbar specified by *lpszResourceName* or *nIDResource*.
 
@@ -451,7 +451,7 @@ See [toolbar editor](../../windows/toolbar-editor.md) in for more information ab
 
   See the example for [CToolBar::CreateEx](#createex).
 
-##  <a name="setbitmap"></a>  CToolBar::SetBitmap
+## <a name="setbitmap"></a> CToolBar::SetBitmap
 
 Call this member function to set the bitmap image for the toolbar.
 
@@ -472,7 +472,7 @@ Nonzero if successful; otherwise 0.
 
 For example, call `SetBitmap` to change the bitmapped image after the user takes an action on a document that changes the action of a button.
 
-##  <a name="setbuttoninfo"></a>  CToolBar::SetButtonInfo
+## <a name="setbuttoninfo"></a> CToolBar::SetButtonInfo
 
 Call this member function to set the button's command ID, style, and image number.
 
@@ -519,11 +519,11 @@ New index for the button's image within the bitmap.
 For separators, which have the style TBBS_SEPARATOR, this function sets the separator's width in pixels to the value stored in *iImage*.
 
 > [!NOTE]
->  You can also set button states using the *nStyle* parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonInfo` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.
+> You can also set button states using the *nStyle* parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonInfo` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.
 
 For information on bitmap images and buttons, see the [CToolBar](../../mfc/reference/ctoolbar-class.md) Overview and [CToolBar::LoadBitmap](#loadbitmap).
 
-##  <a name="setbuttons"></a>  CToolBar::SetButtons
+## <a name="setbuttons"></a> CToolBar::SetButtons
 
 This member function sets each toolbar button's command ID to the value specified by the corresponding element of the array *lpIDArray*.
 
@@ -553,7 +553,7 @@ You do not need to account for separators in the bitmap because this function do
 
 If *lpIDArray* is NULL, this function allocates space for the number of items specified by *nIDCount*. Use [SetButtonInfo](#setbuttoninfo) to set each item's attributes.
 
-##  <a name="setbuttonstyle"></a>  CToolBar::SetButtonStyle
+## <a name="setbuttonstyle"></a> CToolBar::SetButtonStyle
 
 Call this member function to set the style of a button or separator, or to group buttons.
 
@@ -594,9 +594,9 @@ A button's style determines how the button appears and how it responds to user i
 Before calling `SetButtonStyle`, call the [GetButtonStyle](#getbuttonstyle) member function to retrieve the button or separator style.
 
 > [!NOTE]
->  You can also set button states using the *nStyle* parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonStyle` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.
+> You can also set button states using the *nStyle* parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonStyle` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.
 
-##  <a name="setbuttontext"></a>  CToolBar::SetButtonText
+## <a name="setbuttontext"></a> CToolBar::SetButtonText
 
 Call this function to set the text on a button.
 
@@ -622,7 +622,7 @@ Nonzero if successful; otherwise 0.
 
   See the example for [CToolBar::GetToolBarCtrl](#gettoolbarctrl).
 
-##  <a name="setheight"></a>  CToolBar::SetHeight
+## <a name="setheight"></a> CToolBar::SetHeight
 
 This member function sets the toolbar's height to the value, in pixels, specified in *cyHeight*.
 
@@ -641,7 +641,7 @@ After calling [SetSizes](#setsizes), use this member function to override the st
 
 If this function is not called, the framework uses the size of the button to determine the toolbar height.
 
-##  <a name="setsizes"></a>  CToolBar::SetSizes
+## <a name="setsizes"></a> CToolBar::SetSizes
 
 Call this member function to set the toolbar's buttons to the size, in pixels, specified in *sizeButton*.
 

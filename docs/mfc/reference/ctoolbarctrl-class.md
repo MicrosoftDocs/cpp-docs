@@ -169,7 +169,7 @@ For more information on using `CToolBarCtrl`, see [Controls](../../mfc/controls-
 
 **Header:** afxcmn.h
 
-##  <a name="addbitmap"></a>  CToolBarCtrl::AddBitmap
+## <a name="addbitmap"></a> CToolBarCtrl::AddBitmap
 
 Adds one or more button images to the list of button images stored in the toolbar control.
 
@@ -202,7 +202,7 @@ Zero-based index of the first new image if successful; otherwise - 1.
 
 You can use the Windows API [CreateMappedBitmap](/windows/win32/api/commctrl/nf-commctrl-createmappedbitmap) to map colors before adding the bitmap to the toolbar. If you pass a pointer to a `CBitMap` object, you must ensure that the bitmap is not destroyed until after the toolbar is destroyed.
 
-##  <a name="addbuttons"></a>  CToolBarCtrl::AddButtons
+## <a name="addbuttons"></a> CToolBarCtrl::AddButtons
 
 Adds one or more buttons to a toolbar control.
 
@@ -253,31 +253,31 @@ The members are as follows:
 
    Button state flags. It can be a combination of the values listed below:
 
-   - TBSTATE_CHECKED The button has the TBSTYLE_CHECKED style and is being pressed.
+  - TBSTATE_CHECKED The button has the TBSTYLE_CHECKED style and is being pressed.
 
-   - TBSTATE_ENABLED The button accepts user input. A button that does not have this state does not accept user input and is grayed.
+  - TBSTATE_ENABLED The button accepts user input. A button that does not have this state does not accept user input and is grayed.
 
-   - TBSTATE_HIDDEN The button is not visible and cannot receive user input.
+  - TBSTATE_HIDDEN The button is not visible and cannot receive user input.
 
-   - TBSTATE_INDETERMINATE The button is grayed.
+  - TBSTATE_INDETERMINATE The button is grayed.
 
-   - TBSTATE_PRESSED The button is being pressed.
+  - TBSTATE_PRESSED The button is being pressed.
 
-   - TBSTATE_WRAP A line break follows the button. The button must also have the TBSTATE_ENABLED state.
+  - TBSTATE_WRAP A line break follows the button. The button must also have the TBSTATE_ENABLED state.
 
 - `fsStyle`
 
    Button style. It can be a combination of the values listed below:
 
-   - TBSTYLE_BUTTON Creates a standard push button.
+  - TBSTYLE_BUTTON Creates a standard push button.
 
-   - TBSTYLE_CHECK Creates a button that toggles between the pressed and unpressed states each time the user clicks it. The button has a different background color when it is in the pressed state.
+  - TBSTYLE_CHECK Creates a button that toggles between the pressed and unpressed states each time the user clicks it. The button has a different background color when it is in the pressed state.
 
-   - TBSTYLE_CHECKGROUP Creates a check button that stays pressed until another button in the group is pressed.
+  - TBSTYLE_CHECKGROUP Creates a check button that stays pressed until another button in the group is pressed.
 
-   - TBSTYLE_GROUP Creates a button that stays pressed until another button in the group is pressed.
+  - TBSTYLE_GROUP Creates a button that stays pressed until another button in the group is pressed.
 
-   - TBSTYLE_SEP Creates a separator, providing a small gap between button groups. A button that has this style does not receive user input.
+  - TBSTYLE_SEP Creates a separator, providing a small gap between button groups. A button that has this style does not receive user input.
 
 - `dwData`
 
@@ -289,7 +289,7 @@ The members are as follows:
 
 The image and/or string whose index you provide must have previously been added to the toolbar control's list using [AddBitmap](#addbitmap), [AddString](#addstring), and/or [AddStrings](#addstrings).
 
-##  <a name="addstring"></a>  CToolBarCtrl::AddString
+## <a name="addstring"></a> CToolBarCtrl::AddString
 
 Adds a new string, passed as a resource ID, to the toolbar's internal list of strings.
 
@@ -306,7 +306,7 @@ Resource identifier of the string resource to add to the toolbar control's strin
 
 The zero-based index of the first new string added if successful; otherwise -1.
 
-##  <a name="addstrings"></a>  CToolBarCtrl::AddStrings
+## <a name="addstrings"></a> CToolBarCtrl::AddStrings
 
 Adds a new string or strings to the list of strings available for a toolbar control.
 
@@ -335,7 +335,7 @@ or:
 
 You should not pass a `CString` object to this function since it is not possible to have more than one null character in a `CString`.
 
-##  <a name="autosize"></a>  CToolBarCtrl::AutoSize
+## <a name="autosize"></a> CToolBarCtrl::AutoSize
 
 Resizes the entire toolbar control.
 
@@ -347,7 +347,7 @@ void AutoSize();
 
 You should call this function when the size of the parent window changes or when the size of the toolbar changes (such as when you set the button or bitmap size, or add strings).
 
-##  <a name="changebitmap"></a>  CToolBarCtrl::ChangeBitmap
+## <a name="changebitmap"></a> CToolBarCtrl::ChangeBitmap
 
 Changes the bitmap for a button in the current toolbar control.
 
@@ -380,7 +380,7 @@ The following code example changes the bitmap for the **File Save** button to th
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_3.cpp)]
 
-##  <a name="checkbutton"></a>  CToolBarCtrl::CheckButton
+## <a name="checkbutton"></a> CToolBarCtrl::CheckButton
 
 Checks or clears a given button in a toolbar control.
 
@@ -406,7 +406,7 @@ Nonzero if successful; otherwise zero.
 
 When a button has been checked, it appears to have been pressed. If you want to change more than one button state, consider calling [SetState](#setstate) instead.
 
-##  <a name="commandtoindex"></a>  CToolBarCtrl::CommandToIndex
+## <a name="commandtoindex"></a> CToolBarCtrl::CommandToIndex
 
 Retrieves the zero-based index for the button associated with the specified command identifier.
 
@@ -425,7 +425,7 @@ The zero-based index for the button associated with the command ID.
 
 ### Remarks
 
-##  <a name="create"></a>  CToolBarCtrl::Create
+## <a name="create"></a> CToolBarCtrl::Create
 
 Creates a toolbar control and attaches it to a `CToolBarCtrl` object.
 
@@ -475,7 +475,7 @@ To use extended toolbar styles, call [SetExtendedStyle](#setextendedstyle) after
 
 The toolbar control automatically sets the size and position of the toolbar window. The height is based on the height of the buttons in the toolbar. The width is the same as the width of the parent window's client area. The CCS_TOP and CCS_BOTTOM styles determine whether the toolbar is positioned along the top or bottom of the client area. By default, a toolbar has the CCS_TOP style.
 
-##  <a name="createex"></a>  CToolBarCtrl::CreateEx
+## <a name="createex"></a> CToolBarCtrl::CreateEx
 
 Creates a control (a child window) and associates it with the `CToolBarCtrl` object.
 
@@ -513,7 +513,7 @@ Nonzero if successful; otherwise 0.
 
 Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**. `CreateEx` creates the control with the extended Windows styles specified by *dwExStyle*. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as TBSTYLE_EX_DRAWDDARROWS. For more information, see the styles described in [Toolbar Extended Styles](/windows/win32/Controls/toolbar-extended-styles) in the Windows SDK.
 
-##  <a name="ctoolbarctrl"></a>  CToolBarCtrl::CToolBarCtrl
+## <a name="ctoolbarctrl"></a> CToolBarCtrl::CToolBarCtrl
 
 Constructs a `CToolBarCtrl` object.
 
@@ -525,7 +525,7 @@ CToolBarCtrl();
 
 You must call [Create](#create) to make the toolbar usable.
 
-##  <a name="customize"></a>  CToolBarCtrl::Customize
+## <a name="customize"></a> CToolBarCtrl::Customize
 
 Displays the Customize Toolbar dialog box.
 
@@ -537,7 +537,7 @@ void Customize();
 
 This dialog box allows the user to customize the toolbar by adding and deleting buttons. To support customization, your toolbar's parent window must handle the customization notification messages as described in [Handling Customization Notifications](../../mfc/handling-customization-notifications.md). Your toolbar must also have been created with the CCS_ADJUSTABLE style, as described in [CToolBarCtrl::Create](#create).
 
-##  <a name="deletebutton"></a>  CToolBarCtrl::DeleteButton
+## <a name="deletebutton"></a> CToolBarCtrl::DeleteButton
 
 Deletes a button from the toolbar control.
 
@@ -556,7 +556,7 @@ Nonzero if successful; otherwise zero.
 
 ### Remarks
 
-##  <a name="enablebutton"></a>  CToolBarCtrl::EnableButton
+## <a name="enablebutton"></a> CToolBarCtrl::EnableButton
 
 Enables or disables the specified button in a toolbar control.
 
@@ -582,7 +582,7 @@ Nonzero if successful; otherwise zero.
 
 When a button has been enabled, it can be pressed and checked. If you want to change more than one button state, consider calling [SetState](#setstate) instead.
 
-##  <a name="getanchorhighlight"></a>  CToolBarCtrl::GetAnchorHighlight
+## <a name="getanchorhighlight"></a> CToolBarCtrl::GetAnchorHighlight
 
 Retrieves the anchor highlight setting for a toolbar.
 
@@ -598,7 +598,7 @@ If nonzero, anchor highlighting is enabled. If zero, anchor highlighting is disa
 
 This member function implements the behavior of the Win32 message [TB_GETANCHORHIGHLIGHT](/windows/win32/Controls/tb-getanchorhighlight), as described in the Windows SDK.
 
-##  <a name="getbitmap"></a>  CToolBarCtrl::GetBitmap
+## <a name="getbitmap"></a> CToolBarCtrl::GetBitmap
 
 Retrieves the index of the bitmap associated with a button in a toolbar.
 
@@ -619,7 +619,7 @@ Returns the index of the bitmap if successful, or zero otherwise.
 
 Implements the functionality of [TB_GETBITMAP](/windows/win32/Controls/tb-getbitmap) in the Windows SDK.
 
-##  <a name="getbitmapflags"></a>  CToolBarCtrl::GetBitmapFlags
+## <a name="getbitmapflags"></a> CToolBarCtrl::GetBitmapFlags
 
 Retrieves the bitmap flags from the toolbar.
 
@@ -635,7 +635,7 @@ A UINT that has the TBBF_LARGE flag set if the display can support large toolbar
 
 You should call it after creating the toolbar but before adding bitmaps to the toolbar. The return value indicates whether the display supports large bitmaps or not. If the display supports large bitmaps and if you choose to use them, call [SetBitmapSize](#setbitmapsize) and [SetButtonSize](#setbuttonsize) before adding your large bitmap using [AddBitmap](#addbitmap).
 
-##  <a name="getbutton"></a>  CToolBarCtrl::GetButton
+## <a name="getbutton"></a> CToolBarCtrl::GetButton
 
 Retrieves information about the specified button in a toolbar control.
 
@@ -657,7 +657,7 @@ Address of the `TBBUTTON` structure that is to receive a copy of the button info
 
 Nonzero if successful; otherwise zero.
 
-##  <a name="getbuttoncount"></a>  CToolBarCtrl::GetButtonCount
+## <a name="getbuttoncount"></a> CToolBarCtrl::GetButtonCount
 
 Retrieves a count of the buttons currently in the toolbar control.
 
@@ -669,7 +669,7 @@ int GetButtonCount() const;
 
 The count of the buttons.
 
-##  <a name="getbuttoninfo"></a>  CToolBarCtrl::GetButtonInfo
+## <a name="getbuttoninfo"></a> CToolBarCtrl::GetButtonInfo
 
 Retrieves the information for a button in a toolbar.
 
@@ -695,7 +695,7 @@ The zero-based index of the button, if successful; otherwise -1.
 
 This member function implements the behavior of the Win32 message [TB_GETBUTTONINFO](/windows/win32/Controls/tb-getbuttoninfo), as described in the Windows SDK.
 
-##  <a name="getbuttonsize"></a>  CToolBarCtrl::GetButtonSize
+## <a name="getbuttonsize"></a> CToolBarCtrl::GetButtonSize
 
 Gets the size of a toolbar button.
 
@@ -707,7 +707,7 @@ DWORD GetButtonSize() const;
 
 A DWORD value that contains the width and height values in the LOWORD and HIWORD, respectively.
 
-##  <a name="getbuttontext"></a>  CToolBarCtrl::GetButtonText
+## <a name="getbuttontext"></a> CToolBarCtrl::GetButtonText
 
 Retrieves the display text of a specified button on the current toolbar control.
 
@@ -729,7 +729,7 @@ A [CString](../../atl-mfc-shared/using-cstring.md) that contains the display tex
 
 This method sends the [TB_GETBUTTONTEXT](/windows/win32/Controls/tb-getbuttontext) message, which is described in the Windows SDK.
 
-##  <a name="getcolorscheme"></a>  CToolBarCtrl::GetColorScheme
+## <a name="getcolorscheme"></a> CToolBarCtrl::GetColorScheme
 
 Retrieves the color scheme of the current toolbar control.
 
@@ -751,7 +751,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 This method sends the [TB_GETCOLORSCHEME](/windows/win32/Controls/tb-getcolorscheme) message, which is described in the Windows SDK.
 
-##  <a name="getdisabledimagelist"></a>  CToolBarCtrl::GetDisabledImageList
+## <a name="getdisabledimagelist"></a> CToolBarCtrl::GetDisabledImageList
 
 Retrieves the image list that a toolbar control uses to display disabled buttons.
 
@@ -767,7 +767,7 @@ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or 
 
 This member function implements the behavior of the Win32 message [TB_GETDISABLEDIMAGELIST](/windows/win32/Controls/tb-getdisabledimagelist), as described in the Windows SDK. The MFC implementation of `GetDisabledImageList` uses a `CImageList` object containing the toolbar control's button images, rather than a handle to an image list.
 
-##  <a name="getdroptarget"></a>  CToolBarCtrl::GetDropTarget
+## <a name="getdroptarget"></a> CToolBarCtrl::GetDropTarget
 
 Retrieves the [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) interface for a toolbar control.
 
@@ -788,7 +788,7 @@ Returns an HRESULT value indicating success or failure of the operation.
 
 This member function implements the behavior of the Win32 message [TB_GETOBJECT](/windows/win32/Controls/tb-getobject), as described in the Windows SDK.
 
-##  <a name="getextendedstyle"></a>  CToolBarCtrl::GetExtendedStyle
+## <a name="getextendedstyle"></a> CToolBarCtrl::GetExtendedStyle
 
 Retrieves the extended styles for a toolbar control.
 
@@ -804,7 +804,7 @@ A DWORD that represents the extended styles currently in use for the toolbar con
 
 This member function implements the behavior of the Win32 message [TB_GETEXTENDEDSTYLE](/windows/win32/Controls/tb-getextendedstyle), as described in the Windows SDK.
 
-##  <a name="gethotimagelist"></a>  CToolBarCtrl::GetHotImageList
+## <a name="gethotimagelist"></a> CToolBarCtrl::GetHotImageList
 
 Retrieves the image list that a toolbar control uses to display "hot" buttons. A hot button appears highlighted when the mouse pointer is above it.
 
@@ -820,7 +820,7 @@ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or 
 
 This member function implements the behavior of the Win32 message [TB_GETHOTIMAGELIST](/windows/win32/Controls/tb-gethotimagelist), as described in the Windows SDK. A hot button appears highlighted when the mouse pointer is above it.
 
-##  <a name="gethotitem"></a>  CToolBarCtrl::GetHotItem
+## <a name="gethotitem"></a> CToolBarCtrl::GetHotItem
 
 Retrieves the index of the hot item in a toolbar.
 
@@ -836,7 +836,7 @@ The zero-based index of the hot item in a toolbar.
 
 This member function implements the behavior of the Win32 message [TB_GETHOTITEM](/windows/win32/Controls/tb-gethotitem), as described in the Windows SDK.
 
-##  <a name="getimagelist"></a>  CToolBarCtrl::GetImageList
+## <a name="getimagelist"></a> CToolBarCtrl::GetImageList
 
 Retrieves the image list that a toolbar control uses to display buttons in their default state.
 
@@ -852,7 +852,7 @@ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or 
 
 This member function implements the behavior of the Win32 message [TB_GETIMAGELIST](/windows/win32/Controls/tb-getimagelist), as described in the Windows SDK.
 
-##  <a name="getinsertmark"></a>  CToolBarCtrl::GetInsertMark
+## <a name="getinsertmark"></a> CToolBarCtrl::GetInsertMark
 
 Retrieves the current insertion mark for the toolbar.
 
@@ -869,7 +869,7 @@ A pointer to a [TBINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-tbinsertma
 
 This member function implements the behavior of the Win32 message [TB_GETINSERTMARK](/windows/win32/Controls/tb-getinsertmark), as described in the Windows SDK.
 
-##  <a name="getinsertmarkcolor"></a>  CToolBarCtrl::GetInsertMarkColor
+## <a name="getinsertmarkcolor"></a> CToolBarCtrl::GetInsertMarkColor
 
 Retrieves the color used to draw the insertion mark for the toolbar.
 
@@ -885,7 +885,7 @@ A COLORREF value that contains the current insertion mark color.
 
 This member function implements the behavior of the Win32 message [TB_GETINSERTMARKCOLOR](/windows/win32/Controls/tb-getinsertmarkcolor), as described in the Windows SDK.
 
-##  <a name="getitemrect"></a>  CToolBarCtrl::GetItemRect
+## <a name="getitemrect"></a> CToolBarCtrl::GetItemRect
 
 Retrieves the bounding rectangle of a button in a toolbar control.
 
@@ -911,7 +911,7 @@ Nonzero if successful; otherwise zero.
 
 This function does not retrieve the bounding rectangle for buttons whose state is set to TBSTATE_HIDDEN.
 
-##  <a name="getmaxsize"></a>  CToolBarCtrl::GetMaxSize
+## <a name="getmaxsize"></a> CToolBarCtrl::GetMaxSize
 
 Retrieves the total size of all of the visible buttons and separators in the toolbar.
 
@@ -932,7 +932,7 @@ Nonzero if successful; otherwise 0.
 
 This member function implements the behavior of the Win32 message [TB_GETMAXSIZE](/windows/win32/Controls/tb-getmaxsize), as described in the Windows SDK.
 
-##  <a name="getmaxtextrows"></a>  CToolBarCtrl::GetMaxTextRows
+## <a name="getmaxtextrows"></a> CToolBarCtrl::GetMaxTextRows
 
 Retrieves the maximum number of text rows displayed on a toolbar button.
 
@@ -944,7 +944,7 @@ int GetMaxTextRows() const;
 
 The maximum number of text rows displayed on a toolbar button.
 
-##  <a name="getmetrics"></a>  CToolBarCtrl::GetMetrics
+## <a name="getmetrics"></a> CToolBarCtrl::GetMetrics
 
 Retrieves the metrics of the `CToolBarCtrl` object.
 
@@ -961,7 +961,7 @@ A pointer to the [TBMETRICS](/windows/win32/api/commctrl/ns-commctrl-tbmetrics) 
 
 This member function emulates the functionality of the [TB_GETMETRICS](/windows/win32/Controls/tb-getmetrics) message, as described in the Windows SDK.
 
-##  <a name="getpadding"></a>  CToolBarCtrl::GetPadding
+## <a name="getpadding"></a> CToolBarCtrl::GetPadding
 
 Retrieves the horizontal and vertical padding of the current toolbar control.
 
@@ -986,7 +986,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 This method sends the [TB_GETPADDING](/windows/win32/Controls/tb-getpadding) message, which is described in the Windows SDK.
 
-##  <a name="getpressedimagelist"></a>  CToolBarCtrl::GetPressedImageList
+## <a name="getpressedimagelist"></a> CToolBarCtrl::GetPressedImageList
 
 Retrieves the image list that the current toolbar control uses to represent buttons in the pressed state.
 
@@ -1002,7 +1002,7 @@ Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains
 
 This method sends the [TB_GETPRESSEDIMAGELIST](/windows/win32/Controls/tb-getpressedimagelist) message, which is described in the Windows SDK.
 
-##  <a name="getrect"></a>  CToolBarCtrl::GetRect
+## <a name="getrect"></a> CToolBarCtrl::GetRect
 
 Retrieves the bounding rectangle for a specified toolbar button.
 
@@ -1028,7 +1028,7 @@ TRUE if successful; otherwise FALSE.
 
 This member function implements the behavior of the Win32 message [TB_GETRECT](/windows/win32/Controls/tb-getrect), as described in the Windows SDK.
 
-##  <a name="getrows"></a>  CToolBarCtrl::GetRows
+## <a name="getrows"></a> CToolBarCtrl::GetRows
 
 Retrieves the number of rows of buttons currently displayed by the toolbar control.
 
@@ -1044,7 +1044,7 @@ Number of rows of buttons currently displayed on the toolbar.
 
 Note that the number of rows will always be one unless the toolbar was created with the TBSTYLE_WRAPABLE style.
 
-##  <a name="getstate"></a>  CToolBarCtrl::GetState
+## <a name="getstate"></a> CToolBarCtrl::GetState
 
 Retrieves information about the state of the specified button in a toolbar control, such as whether it is enabled, pressed, or checked.
 
@@ -1065,7 +1065,7 @@ The button state information if successful or - 1 otherwise. The button state in
 
 This function is especially handy if you want to retrieve more than one of the button states. To just retrieve one state, use one of the following member functions: [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked), [IsButtonPressed](#isbuttonpressed), [IsButtonHidden](#isbuttonhidden), or [IsButtonIndeterminate](#isbuttonindeterminate). However, the `GetState` member function is the only way to detect the TBSTATE_WRAP button state.
 
-##  <a name="getstring"></a>  CToolBarCtrl::GetString
+## <a name="getstring"></a> CToolBarCtrl::GetString
 
 Retrieves a toolbar string.
 
@@ -1102,7 +1102,7 @@ The length of the string if successful, -1 if not.
 
 This member function implements the behavior of the Win32 message [TB_GETSTRING](/windows/win32/Controls/tb-getstring), as described in the Windows SDK.
 
-##  <a name="getstyle"></a>  CToolBarCtrl::GetStyle
+## <a name="getstyle"></a> CToolBarCtrl::GetStyle
 
 Gets the styles currently applied to a toolbar control.
 
@@ -1114,7 +1114,7 @@ DWORD GetStyle() const;
 
 A DWORD containing a combination of [toolbar control styles](/windows/win32/Controls/toolbar-control-and-button-styles), as described in the Windows SDK.
 
-##  <a name="gettooltips"></a>  CToolBarCtrl::GetToolTips
+## <a name="gettooltips"></a> CToolBarCtrl::GetToolTips
 
 Retrieves the handle of the tool tip control, if any, associated with the toolbar control.
 
@@ -1130,7 +1130,7 @@ A pointer to the [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) objec
 
 Since the toolbar control normally creates and maintains its own tool tip control, most programs don't need to call this function.
 
-##  <a name="hittest"></a>  CToolBarCtrl::HitTest
+## <a name="hittest"></a> CToolBarCtrl::HitTest
 
 Determines where a point lies in a toolbar control.
 
@@ -1153,7 +1153,7 @@ If the return value is negative, the point does not lie within a button. The abs
 
 This member function implements the behavior of the Win32 message [TB_HITTEST](/windows/win32/Controls/tb-hittest), as described in the Windows SDK.
 
-##  <a name="hidebutton"></a>  CToolBarCtrl::HideButton
+## <a name="hidebutton"></a> CToolBarCtrl::HideButton
 
 Hides or shows the specified button in a toolbar control.
 
@@ -1179,7 +1179,7 @@ Nonzero if successful; otherwise zero.
 
 If you want to change more than one button state, consider calling [SetState](#setstate) instead.
 
-##  <a name="indeterminate"></a>  CToolBarCtrl::Indeterminate
+## <a name="indeterminate"></a> CToolBarCtrl::Indeterminate
 
 Sets or clears the indeterminate state of the specified button in a toolbar control.
 
@@ -1205,7 +1205,7 @@ Nonzero if successful; otherwise zero.
 
 Indeterminate buttons are displayed grayed, such as the way the bold button on the toolbar of a word processor would look when the text selected contains both bold and regular characters. If you want to change more than one button state, consider calling [SetState](#setstate) instead.
 
-##  <a name="insertbutton"></a>  CToolBarCtrl::InsertButton
+## <a name="insertbutton"></a> CToolBarCtrl::InsertButton
 
 Inserts a button in a toolbar control.
 
@@ -1231,7 +1231,7 @@ Nonzero if successful; otherwise zero.
 
 The image and/or string whose index you provide must have previously been added to the toolbar control's list using [AddBitmap](#addbitmap), [AddString](#addstring), and/or [AddStrings](#addstrings).
 
-##  <a name="insertmarkhittest"></a>  CToolBarCtrl::InsertMarkHitTest
+## <a name="insertmarkhittest"></a> CToolBarCtrl::InsertMarkHitTest
 
 Retrieves the insertion mark information for a point in a toolbar.
 
@@ -1257,7 +1257,7 @@ Nonzero if successful; otherwise zero.
 
 This member function implements the behavior of the Win32 message [TB_INSERTMARKHITTEST](/windows/win32/Controls/tb-insertmarkhittest), as described in the Windows SDK.
 
-##  <a name="isbuttonchecked"></a>  CToolBarCtrl::IsButtonChecked
+## <a name="isbuttonchecked"></a> CToolBarCtrl::IsButtonChecked
 
 Determines whether the specified button in a toolbar control is checked.
 
@@ -1278,7 +1278,7 @@ Nonzero if the button is checked; otherwise zero.
 
 Consider calling [GetState](#getstate) if you want to retrieve more than one button state.
 
-##  <a name="isbuttonenabled"></a>  CToolBarCtrl::IsButtonEnabled
+## <a name="isbuttonenabled"></a> CToolBarCtrl::IsButtonEnabled
 
 Determines whether the specified button in a toolbar control is enabled.
 
@@ -1299,7 +1299,7 @@ Nonzero if the button is enabled; otherwise zero.
 
 Consider calling [GetState](#getstate) if you want to retrieve more than one button state.
 
-##  <a name="isbuttonhidden"></a>  CToolBarCtrl::IsButtonHidden
+## <a name="isbuttonhidden"></a> CToolBarCtrl::IsButtonHidden
 
 Determines whether the specified button in a toolbar control is hidden.
 
@@ -1320,7 +1320,7 @@ Nonzero if the button is hidden; otherwise zero.
 
 Consider calling [GetState](#getstate) if you want to retrieve more than one button state.
 
-##  <a name="isbuttonhighlighted"></a>  CToolBarCtrl::IsButtonHighlighted
+## <a name="isbuttonhighlighted"></a> CToolBarCtrl::IsButtonHighlighted
 
 Checks the highlight state of a toolbar button.
 
@@ -1337,7 +1337,7 @@ BOOL IsButtonHighlighted(int nID) const;
 
 Positive integer if the button is highlighted, 0 if the button is not highlighted, or -1 if an error occurs.
 
-##  <a name="isbuttonindeterminate"></a>  CToolBarCtrl::IsButtonIndeterminate
+## <a name="isbuttonindeterminate"></a> CToolBarCtrl::IsButtonIndeterminate
 
 Determines whether the specified button in a toolbar control is indeterminate.
 
@@ -1358,7 +1358,7 @@ Positive integer if the button is indeterminate, zero if the button is not indet
 
 Indeterminate buttons are displayed dimmed, such as the way the bold button on the toolbar of a word processor looks when the selected text contains both bold and regular characters. Consider calling [GetState](#getstate) if you want to retrieve more than one button state.
 
-##  <a name="isbuttonpressed"></a>  CToolBarCtrl::IsButtonPressed
+## <a name="isbuttonpressed"></a> CToolBarCtrl::IsButtonPressed
 
 Determines whether the specified button in a toolbar control is pressed.
 
@@ -1379,7 +1379,7 @@ Nonzero if the button is pressed, otherwise zero.
 
 Consider calling [GetState](#getstate) if you want to retrieve more than one button state.
 
-##  <a name="loadimages"></a>  CToolBarCtrl::LoadImages
+## <a name="loadimages"></a> CToolBarCtrl::LoadImages
 
 Loads bitmaps into a toolbar control's image list.
 
@@ -1410,7 +1410,7 @@ Program instance handle to the calling application. This parameter can be HINST_
 
 This member function implements the behavior of the Win32 message [TB_LOADIMAGES](/windows/win32/Controls/tb-loadimages), as described in the Windows SDK.
 
-##  <a name="mapaccelerator"></a>  CToolBarCtrl::MapAccelerator
+## <a name="mapaccelerator"></a> CToolBarCtrl::MapAccelerator
 
 Maps an accelerator character to a toolbar button.
 
@@ -1436,7 +1436,7 @@ Nonzero if successful; otherwise zero.
 
 This member function implements the behavior of the Win32 message [TB_MAPACCELERATOR](/windows/win32/Controls/tb-mapaccelerator), as described in the Windows SDK.
 
-##  <a name="markbutton"></a>  CToolBarCtrl::MarkButton
+## <a name="markbutton"></a> CToolBarCtrl::MarkButton
 
 Sets the highlight state of a given button in a toolbar control.
 
@@ -1462,7 +1462,7 @@ Nonzero if successful; otherwise 0.
 
 This member function implements the behavior of the Win32 message [TB_MARKBUTTON](/windows/win32/Controls/tb-markbutton), as described in the Windows SDK.
 
-##  <a name="movebutton"></a>  CToolBarCtrl::MoveButton
+## <a name="movebutton"></a> CToolBarCtrl::MoveButton
 
 Moves a button from one index to another.
 
@@ -1488,7 +1488,7 @@ Nonzero if successful; otherwise 0.
 
 This member function implements the behavior of the Win32 message [TB_MOVEBUTTON](/windows/win32/Controls/tb-movebutton), as described in the Windows SDK.
 
-##  <a name="pressbutton"></a>  CToolBarCtrl::PressButton
+## <a name="pressbutton"></a> CToolBarCtrl::PressButton
 
 Presses or releases the specified button in a toolbar control.
 
@@ -1514,7 +1514,7 @@ If you want to change more than one button state, consider calling [SetState](#s
 
 This method sends the [TB_PRESSBUTTON](/windows/win32/Controls/tb-pressbutton) message, which is described in the Windows SDK.
 
-##  <a name="replacebitmap"></a>  CToolBarCtrl::ReplaceBitmap
+## <a name="replacebitmap"></a> CToolBarCtrl::ReplaceBitmap
 
 Replaces the existing bitmap in the current toolbar control with a new bitmap.
 
@@ -1542,7 +1542,7 @@ The following code example replaces the bitmap for the standard toolbar with a d
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_4.cpp)]
 
-##  <a name="restorestate"></a>  CToolBarCtrl::RestoreState
+## <a name="restorestate"></a> CToolBarCtrl::RestoreState
 
 Restores the state of the toolbar control from the location in the registry specified by the parameters.
 
@@ -1572,7 +1572,7 @@ Points to a null-terminated string containing the name of the subkey with which 
 *lpszValueName*<br/>
 Points to a string containing the name of the value to retrieve. If a value with this name is not already present in the key, the function adds it to the key.
 
-##  <a name="savestate"></a>  CToolBarCtrl::SaveState
+## <a name="savestate"></a> CToolBarCtrl::SaveState
 
 Saves the state of the toolbar control in the location in the registry specified by the parameters.
 
@@ -1602,7 +1602,7 @@ Points to a null-terminated string containing the name of the subkey with which 
 *lpszValueName*<br/>
 Points to a string containing the name of the value to set. If a value with this name is not already present in the key, the function adds it to the key.
 
-##  <a name="setanchorhighlight"></a>  CToolBarCtrl::SetAnchorHighlight
+## <a name="setanchorhighlight"></a> CToolBarCtrl::SetAnchorHighlight
 
 Sets the anchor highlight setting for a toolbar.
 
@@ -1623,7 +1623,7 @@ The previous anchor setting. If highlighting was enabled, this value is nonzero.
 
 This method implements the behavior of the Win32 message [TB_SETANCHORHIGHLIGHT](/windows/win32/Controls/tb-setanchorhighlight), as described in the Windows SDK.
 
-##  <a name="setbitmapsize"></a>  CToolBarCtrl::SetBitmapSize
+## <a name="setbitmapsize"></a> CToolBarCtrl::SetBitmapSize
 
 Sets the size of the actual bitmapped images to be added to a toolbar control.
 
@@ -1644,7 +1644,7 @@ Nonzero if successful; otherwise zero.
 
 This function must be called only before adding any bitmaps to the toolbar. If the application does not explicitly set the bitmap size, it defaults to 16 by 15 pixels.
 
-##  <a name="setbuttoninfo"></a>  CToolBarCtrl::SetButtonInfo
+## <a name="setbuttoninfo"></a> CToolBarCtrl::SetButtonInfo
 
 Sets the information for an existing button in a toolbar.
 
@@ -1670,7 +1670,7 @@ Nonzero if successful; otherwise 0.
 
 The member function implements the behavior of the Win32 message [TB_SETBUTTONINFO](/windows/win32/Controls/tb-setbuttoninfo), as described in the Windows SDK.
 
-##  <a name="setbuttonsize"></a>  CToolBarCtrl::SetButtonSize
+## <a name="setbuttonsize"></a> CToolBarCtrl::SetButtonSize
 
 Sets the size of the buttons in the toolbar control.
 
@@ -1695,7 +1695,7 @@ The button size must always be at least as large as the bitmap size it encloses.
 
   See the example for [CToolBar::GetToolBarCtrl](../../mfc/reference/ctoolbar-class.md#gettoolbarctrl).
 
-##  <a name="setbuttonstructsize"></a>  CToolBarCtrl::SetButtonStructSize
+## <a name="setbuttonstructsize"></a> CToolBarCtrl::SetButtonStructSize
 
 Specifies the size of the `TBBUTTON` structure.
 
@@ -1714,7 +1714,7 @@ If you wanted to store extra data in the `TBBUTTON` structure, you could either 
 
 See [CToolBarCtrl::AddButtons](#addbuttons) for more information on the `TBBUTTON` structure.
 
-##  <a name="setbuttonwidth"></a>  CToolBarCtrl::SetButtonWidth
+## <a name="setbuttonwidth"></a> CToolBarCtrl::SetButtonWidth
 
 Sets the minimum and maximum button widths in the toolbar control.
 
@@ -1740,7 +1740,7 @@ Nonzero if successful; otherwise 0.
 
 This member function implements the behavior of the Win32 message [TB_SETBUTTONWIDTH](/windows/win32/Controls/tb-setbuttonwidth), as described in the Windows SDK.
 
-##  <a name="setcmdid"></a>  CToolBarCtrl::SetCmdID
+## <a name="setcmdid"></a> CToolBarCtrl::SetCmdID
 
 Sets the command identifier that will be sent to the owner window when the specified button is pressed.
 
@@ -1762,7 +1762,7 @@ The command ID to set the selected button to.
 
 Returns nonzero if successful; otherwise zero.
 
-##  <a name="setcolorscheme"></a>  CToolBarCtrl::SetColorScheme
+## <a name="setcolorscheme"></a> CToolBarCtrl::SetColorScheme
 
 Sets the color scheme of the current toolbar control.
 
@@ -1788,7 +1788,7 @@ The following code example sets the color scheme for the current toolbar control
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#3](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_5.cpp)]
 
-##  <a name="setdisabledimagelist"></a>  CToolBarCtrl::SetDisabledImageList
+## <a name="setdisabledimagelist"></a> CToolBarCtrl::SetDisabledImageList
 
 Sets the image list that the toolbar control will use to display disabled buttons.
 
@@ -1809,7 +1809,7 @@ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object that
 
 This member function implements the behavior of the Win32 message [TB_SETDISABLEDIMAGELIST](/windows/win32/Controls/tb-setdisabledimagelist), as described in the Windows SDK. The MFC implementation of `SetDisabledImageList` uses a `CImageList` object containing the toolbar control's disabled button images, rather than a handle to an image list.
 
-##  <a name="setdrawtextflags"></a>  CToolBarCtrl::SetDrawTextFlags
+## <a name="setdrawtextflags"></a> CToolBarCtrl::SetDrawTextFlags
 
 Sets the flags in the Win32 function [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext), which is used to draw the text in the specified rectangle, formatted according to how the flags are set.
 
@@ -1835,7 +1835,7 @@ A DWORD containing the previous text drawing flags.
 
 This member function implements the behavior of the Win32 message [TB_SETDRAWTEXTFLAGS](/windows/win32/Controls/tb-setdrawtextflags), as described in the Windows SDK. This member function sets the flags in the Win32 function `DrawText`, which draws text in the specified rectangle, formatted according to how the flags are set.
 
-##  <a name="setextendedstyle"></a>  CToolBarCtrl::SetExtendedStyle
+## <a name="setextendedstyle"></a> CToolBarCtrl::SetExtendedStyle
 
 Sets the extended styles for a toolbar control.
 
@@ -1856,7 +1856,7 @@ A DWORD that represents the previous extended styles. For a list of styles, see 
 
 This member function implements the behavior of the Win32 message [TB_SETEXTENDEDSTYLE](/windows/win32/Controls/tb-setextendedstyle), as described in the Windows SDK.
 
-##  <a name="sethotimagelist"></a>  CToolBarCtrl::SetHotImageList
+## <a name="sethotimagelist"></a> CToolBarCtrl::SetHotImageList
 
 Sets the image list that the toolbar control will use to display "hot" buttons.
 
@@ -1879,7 +1879,7 @@ This member function implements the behavior of the Win32 message [TB_SETHOTIMAG
 
 The MFC implementation of `SetHotImageList` uses a `CImageList` object containing the toolbar control's hot button images, rather than a handle to an image list. A hot button appears highlighted when the pointer is above it.
 
-##  <a name="sethotitem"></a>  CToolBarCtrl::SetHotItem
+## <a name="sethotitem"></a> CToolBarCtrl::SetHotItem
 
 Sets the hot item in a toolbar.
 
@@ -1900,7 +1900,7 @@ The index of the previous hot item, or -1 if there was no hot item.
 
 This member function implements the behavior of the Win32 message [TB_SETHOTITEM](/windows/win32/Controls/tb-sethotitem), as described in the Windows SDK.
 
-##  <a name="setimagelist"></a>  CToolBarCtrl::SetImageList
+## <a name="setimagelist"></a> CToolBarCtrl::SetImageList
 
 Sets the image list that the toolbar will use to display buttons that are in their default state.
 
@@ -1923,7 +1923,7 @@ This member function implements the behavior of the Win32 message [TB_SETIMAGELI
 
 The MFC implementation of `SetImageList` uses a `CImageList` object containing the toolbar control's button images, rather than a handle to an image list.
 
-##  <a name="setindent"></a>  CToolBarCtrl::SetIndent
+## <a name="setindent"></a> CToolBarCtrl::SetIndent
 
 Sets the indentation for the first button in a toolbar control.
 
@@ -1940,7 +1940,7 @@ The value specifying the indentation, in pixels.
 
 Nonzero if successful; otherwise zero.
 
-##  <a name="setinsertmark"></a>  CToolBarCtrl::SetInsertMark
+## <a name="setinsertmark"></a> CToolBarCtrl::SetInsertMark
 
 Sets the current insertion mark for the toolbar.
 
@@ -1957,7 +1957,7 @@ A pointer to the [TBINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-tbinsert
 
 This member function implements the behavior of the Win32 message [TB_SETINSERTMARK](/windows/win32/Controls/tb-setinsertmark), as described in the Windows SDK.
 
-##  <a name="setinsertmarkcolor"></a>  CToolBarCtrl::SetInsertMarkColor
+## <a name="setinsertmarkcolor"></a> CToolBarCtrl::SetInsertMarkColor
 
 Sets the color used to draw the insertion mark for the toolbar.
 
@@ -1978,7 +1978,7 @@ A COLORREF value that contains the previous insertion mark color.
 
 This member function implements the behavior of the Win32 message [TB_SETINSERTMARKCOLOR](/windows/win32/Controls/tb-setinsertmarkcolor), as described in the Windows SDK.
 
-##  <a name="setmaxtextrows"></a>  CToolBarCtrl::SetMaxTextRows
+## <a name="setmaxtextrows"></a> CToolBarCtrl::SetMaxTextRows
 
 Sets the maximum number of text rows displayed on a toolbar button.
 
@@ -1995,7 +1995,7 @@ Maximum number of rows to be set.
 
 Nonzero if successful; otherwise zero.
 
-##  <a name="setmetrics"></a>  CToolBarCtrl::SetMetrics
+## <a name="setmetrics"></a> CToolBarCtrl::SetMetrics
 
 Sets the metrics of the `CToolBarCtrl` object.
 
@@ -2012,7 +2012,7 @@ A pointer to the [TBMETRICS](/windows/win32/api/commctrl/ns-commctrl-tbmetrics) 
 
 This member function emulates the functionality of the [TB_SETMETRICS](/windows/win32/Controls/tb-setmetrics) message, as described in the Windows SDK.
 
-##  <a name="setowner"></a>  CToolBarCtrl::SetOwner
+## <a name="setowner"></a> CToolBarCtrl::SetOwner
 
 Sets the owner window for the toolbar control.
 
@@ -2029,7 +2029,7 @@ Pointer to the `CWnd` or `CWnd`-derived object that will be the new owner window
 
 The owner window is the window that receives notifications from the toolbar.
 
-##  <a name="setpadding"></a>  CToolBarCtrl::SetPadding
+## <a name="setpadding"></a> CToolBarCtrl::SetPadding
 
 Sets the horizontal and vertical padding of the current toolbar control.
 
@@ -2060,7 +2060,7 @@ The following code example sets the horizontal and vertical padding of the curre
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#4](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_6.cpp)]
 
-##  <a name="setpressedimagelist"></a>  CToolBarCtrl::SetPressedImageList
+## <a name="setpressedimagelist"></a> CToolBarCtrl::SetPressedImageList
 
 Sets the image list that the current toolbar control uses to represent buttons in the pressed state.
 
@@ -2091,7 +2091,7 @@ The following code example sets the pressed image list to be the same as the def
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_7.cpp)]
 
-##  <a name="setrows"></a>  CToolBarCtrl::SetRows
+## <a name="setrows"></a> CToolBarCtrl::SetRows
 
 Asks the toolbar control to resize itself to the requested number of rows.
 
@@ -2127,7 +2127,7 @@ Note also that the `SetRows` member function will always chose the layout that r
 
 This function can only be called for toolbars that were created with the TBSTYLE_WRAPABLE style.
 
-##  <a name="setstate"></a>  CToolBarCtrl::SetState
+## <a name="setstate"></a> CToolBarCtrl::SetState
 
 Sets the state for the specified button in a toolbar control.
 
@@ -2153,7 +2153,7 @@ Nonzero if successful; otherwise zero.
 
 This function is especially handy if you want to set more than one of the button states. To just set one state, use one of the following member functions: [EnableButton](#enablebutton), [CheckButton](#checkbutton), [HideButton](#hidebutton), [Indeterminate](#indeterminate), or [PressButton](#pressbutton).
 
-##  <a name="setstyle"></a>  CToolBarCtrl::SetStyle
+## <a name="setstyle"></a> CToolBarCtrl::SetStyle
 
 Sets the styles for a toolbar control.
 
@@ -2166,7 +2166,7 @@ void SetStyle(DWORD dwStyle);
 *dwStyle*<br/>
 A DWORD containing a combination of [toolbar control styles](/windows/win32/Controls/toolbar-control-and-button-styles), as described in the Windows SDK.
 
-##  <a name="settooltips"></a>  CToolBarCtrl::SetToolTips
+## <a name="settooltips"></a> CToolBarCtrl::SetToolTips
 
 Associates a tool tip control with a toolbar control.
 
@@ -2179,7 +2179,7 @@ void SetToolTips(CToolTipCtrl* pTip);
 *pTip*<br/>
 Pointer to the [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object.
 
-##  <a name="setwindowtheme"></a>  CToolBarCtrl::SetWindowTheme
+## <a name="setwindowtheme"></a> CToolBarCtrl::SetWindowTheme
 
 Sets the visual style of the `CToolBarCtrl` object.
 

@@ -34,7 +34,7 @@ For data-sharing attributes:
 |[copyin](#copyin)|Allows threads to access the master thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.|
 |[copyprivate](#copyprivate)|Specifies that one or more variables should be shared among all threads.|
 
-## <a name="copyin"></a>copyin
+## <a name="copyin"></a> copyin
 
 Allows threads to access the master thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.
 
@@ -61,7 +61,7 @@ For more information, see [2.7.2.7 copyin](../../../parallel/openmp/2-7-2-7-copy
 
 See [threadprivate](openmp-directives.md#threadprivate) for an example of using `copyin`.
 
-## <a name="copyprivate"></a>copyprivate
+## <a name="copyprivate"></a> copyprivate
 
 Specifies that one or more variables should be shared among all threads.
 
@@ -146,7 +146,7 @@ Value = 1.008000, thread = 0
 Value = 1.008000, thread = 1
 ```
 
-## <a name="default-openmp"></a>default
+## <a name="default-openmp"></a> default
 
 Specifies the behavior of unscoped variables in a parallel region.
 
@@ -170,7 +170,7 @@ For more information, see [2.7.2.5 default](../../../parallel/openmp/2-7-2-5-def
 
 See [private](#private-openmp) for an example of using `default`.
 
-## <a name="firstprivate"></a>firstprivate
+## <a name="firstprivate"></a> firstprivate
 
 Specifies that each thread should have its own instance of a variable, and that the variable should be initialized with the value of the variable, because it exists before the parallel construct.
 
@@ -198,7 +198,7 @@ For more information, see [2.7.2.2 firstprivate](../../../parallel/openmp/2-7-2-
 
 For an example of using `firstprivate`, see the example in [private](#private-openmp).
 
-## <a name="if-openmp"></a>if (OpenMP)
+## <a name="if-openmp"></a> if (OpenMP)
 
 Specifies whether a loop should be executed in parallel or in serial.
 
@@ -257,7 +257,7 @@ val = 0, serialized
 val = 2, parallelized with 2 threads
 ```
 
-## <a name="lastprivate"></a>lastprivate
+## <a name="lastprivate"></a> lastprivate
 
 Specifies that the enclosing context's version of the variable is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).
 
@@ -283,7 +283,7 @@ For more information, see [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3
 
 See [schedule](#schedule) for an example of using `lastprivate` clause.
 
-## <a name="nowait"></a>nowait
+## <a name="nowait"></a> nowait
 
 Overrides the barrier implicit in a directive.
 
@@ -348,7 +348,7 @@ int main( )
 4, 16, 2
 ```
 
-## <a name="num-threads"></a>num_threads
+## <a name="num-threads"></a> num_threads
 
 Sets the number of threads in a thread team.
 
@@ -377,7 +377,7 @@ For more information, see [2.3 parallel construct](../../../parallel/openmp/2-3-
 
 See [parallel](openmp-directives.md#parallel) for an example of using `num_threads` clause.
 
-## <a name="ordered-openmp-clauses"></a>ordered
+## <a name="ordered-openmp-clauses"></a> ordered
 
 Required on a parallel [for](openmp-directives.md#for-openmp) statement if an [ordered](openmp-directives.md#ordered-openmp-directives) directive is to be used in the loop.
 
@@ -395,7 +395,7 @@ For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-f
 
 See [ordered](openmp-directives.md#ordered-openmp-directives) for an example of using `ordered` clause.
 
-## <a name="private-openmp"></a>private
+## <a name="private-openmp"></a> private
 
 Specifies that each thread should have its own instance of a variable.
 
@@ -597,7 +597,7 @@ nFirstPrivate = 4 (The value prior to entering parallel region)
        nShared = 1 (The value assigned, from the delayed thread, 1)
 ```
 
-## <a name="reduction"></a>reduction
+## <a name="reduction"></a> reduction
 
 Specifies that one or more variables that are private to each thread are the subject of a reduction operation at the end of the parallel region.
 
@@ -736,7 +736,7 @@ The sum of the consecutive integers from 1 to 10, is 55
 All of the functions, func1 through func5 succeeded!
 ```
 
-## <a name="schedule"></a>schedule
+## <a name="schedule"></a> schedule
 
 Applies to the [for](openmp-directives.md#for-openmp) directive.
 
@@ -870,7 +870,7 @@ int main( )
 ------------------------------------------------
 ```
 
-## <a name="shared-openmp"></a>shared
+## <a name="shared-openmp"></a> shared
 
 Specifies that one or more variables should be shared among all threads.
 

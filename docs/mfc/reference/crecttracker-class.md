@@ -68,7 +68,7 @@ For more information on using `CRectTracker`, see the article [Trackers](../../m
 
 **Header:** afxext.h
 
-##  <a name="adjustrect"></a>  CRectTracker::AdjustRect
+## <a name="adjustrect"></a> CRectTracker::AdjustRect
 
 Called by the framework when the tracking rectangle is resized by using a resize handle.
 
@@ -94,7 +94,7 @@ Override this function to control the adjustment of the tracking rectangle durin
 
 Special features that are not directly supported by `CRectTracker`, such as snap-to-grid or keep-aspect-ratio, can be implemented by overriding this function.
 
-##  <a name="crecttracker"></a>  CRectTracker::CRectTracker
+## <a name="crecttracker"></a> CRectTracker::CRectTracker
 
 Creates and initializes a `CRectTracker` object.
 
@@ -130,7 +130,7 @@ Specifies the style of the `CRectTracker` object. The following styles are suppo
 
 The default constructor initializes the `CRectTracker` object with the values from *lpSrcRect* and initializes other sizes to system defaults. If the object is created with no parameters, the `m_rect` and `m_nStyle` data members are uninitialized.
 
-##  <a name="draw"></a>  CRectTracker::Draw
+## <a name="draw"></a> CRectTracker::Draw
 
 Call this function to draw the rectangle's outer lines and inner region.
 
@@ -147,7 +147,7 @@ Pointer to the device context on which to draw.
 
 The style of the tracker determines how the drawing is done. See the constructor for `CRectTracker` for more information on the styles available.
 
-##  <a name="drawtrackerrect"></a>  CRectTracker::DrawTrackerRect
+## <a name="drawtrackerrect"></a> CRectTracker::DrawTrackerRect
 
 Called by the framework whenever the position of the tracker has changed while inside the `Track` or `TrackRubberBand` member function.
 
@@ -179,7 +179,7 @@ The default implementation makes a call to `CDC::DrawFocusRect`, which draws a d
 
 Override this function to provide different feedback during the tracking operation.
 
-##  <a name="gethandlemask"></a>  CRectTracker::GetHandleMask
+## <a name="gethandlemask"></a> CRectTracker::GetHandleMask
 
 The framework calls this member function to retrieve the mask for a rectangle's resize handles.
 
@@ -203,7 +203,7 @@ The default implementation of `GetHandleMask` returns the mask of the bits so th
 
 Override this member function to hide or show the indicated resize handles.
 
-##  <a name="gettruerect"></a>  CRectTracker::GetTrueRect
+## <a name="gettruerect"></a> CRectTracker::GetTrueRect
 
 Call this function to retrieve the coordinates of the rectangle.
 
@@ -220,7 +220,7 @@ Pointer to the `RECT` structure that will contain the device coordinates of the 
 
 The dimensions of the rectangle include the height and width of any resize handles located on the outer border. Upon returning, *lpTrueRect* is always a normalized rectangle in device coordinates.
 
-##  <a name="hittest"></a>  CRectTracker::HitTest
+## <a name="hittest"></a> CRectTracker::HitTest
 
 Call this function to find out whether the user has grabbed a resize handle.
 
@@ -257,7 +257,7 @@ The value returned is based on the enumerated type `CRectTracker::TrackerHit` an
 
 - `CRectTracker::hitMiddle` 8
 
-##  <a name="m_nhandlesize"></a>  CRectTracker::m_nHandleSize
+## <a name="m_nhandlesize"></a> CRectTracker::m_nHandleSize
 
 The size, in pixels, of the `CRectTracker` resize handles.
 
@@ -269,7 +269,7 @@ int m_nHandleSize;
 
 Initialized with the default system value.
 
-##  <a name="m_rect"></a>  CRectTracker::m_rect
+## <a name="m_rect"></a> CRectTracker::m_rect
 
 The current position of the rectangle in client coordinates (pixels).
 
@@ -277,7 +277,7 @@ The current position of the rectangle in client coordinates (pixels).
 CRect m_rect;
 ```
 
-##  <a name="m_sizemin"></a>  CRectTracker::m_sizeMin
+## <a name="m_sizemin"></a> CRectTracker::m_sizeMin
 
 The minimum size of the rectangle.
 
@@ -289,7 +289,7 @@ CSize m_sizeMin;
 
 Both default values, `cx` and `cy`, are calculated from the default system value for the border width. This data member is used only by the `AdjustRect` member function.
 
-##  <a name="m_nstyle"></a>  CRectTracker::m_nStyle
+## <a name="m_nstyle"></a> CRectTracker::m_nStyle
 
 Current style of the rectangle.
 
@@ -301,7 +301,7 @@ UINT m_nStyle;
 
 See [CRectTracker::CRectTracker](#crecttracker) for a list of possible styles.
 
-##  <a name="normalizehit"></a>  CRectTracker::NormalizeHit
+## <a name="normalizehit"></a> CRectTracker::NormalizeHit
 
 Call this function to convert a potentially inverted handle.
 
@@ -322,7 +322,7 @@ The index of the normalized handle.
 
 When `CRectTracker::Track` or `CRectTracker::TrackRubberBand` is called with inverting allowed, it is possible for the rectangle to be inverted on the x-axis, the y-axis, or both. When this happens, `HitTest` will return handles that are also inverted with respect to the rectangle. This is inappropriate for drawing cursor feedback because the feedback depends on the screen position of the rectangle, not the portion of the rectangle data structure that will be modified.
 
-##  <a name="onchangedrect"></a>  CRectTracker::OnChangedRect
+## <a name="onchangedrect"></a> CRectTracker::OnChangedRect
 
 Called by the framework whenever the tracker rectangle has changed during a call to `Track`.
 
@@ -341,7 +341,7 @@ At the time this function is called, all feedback drawn with `DrawTrackerRect` h
 
 Override this function when you want to perform any actions after the rectangle has been resized.
 
-##  <a name="setcursor"></a>  CRectTracker::SetCursor
+## <a name="setcursor"></a> CRectTracker::SetCursor
 
 Call this function to change the cursor shape while it is over the `CRectTracker` object's region.
 
@@ -367,7 +367,7 @@ Nonzero if the previous hit was over the tracker rectangle; otherwise 0.
 
 Call this function from inside the function of your window that handles the WM_SETCURSOR message (typically `OnSetCursor`).
 
-##  <a name="track"></a>  CRectTracker::Track
+## <a name="track"></a> CRectTracker::Track
 
 Call this function to display the user interface for resizing the rectangle.
 
@@ -405,7 +405,7 @@ This function will capture the mouse until the user releases the left mouse butt
 
 If *bAllowInvert* is TRUE, the tracking rectangle can be inverted on either the x-axis or y-axis.
 
-##  <a name="trackrubberband"></a>  CRectTracker::TrackRubberBand
+## <a name="trackrubberband"></a> CRectTracker::TrackRubberBand
 
 Call this function to do rubber-band selection.
 

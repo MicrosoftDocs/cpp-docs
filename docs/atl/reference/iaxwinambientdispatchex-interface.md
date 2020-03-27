@@ -10,7 +10,7 @@ ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
 This interface implements supplemental ambient properties for a hosted control.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -48,7 +48,7 @@ The definition of this interface is available in a number of forms, as shown in 
 |Type Library|ATL.dll|
 |C++|atliface.h (also included in ATLBase.h)|
 
-##  <a name="setambientdispatch"></a>  IAxWinAmbientDispatchEx::SetAmbientDispatch
+## <a name="setambientdispatch"></a> IAxWinAmbientDispatchEx::SetAmbientDispatch
 
 This method is called to supplement the default ambient property interface with a user-defined interface.
 

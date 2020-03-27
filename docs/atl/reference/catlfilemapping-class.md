@@ -10,7 +10,7 @@ ms.assetid: 899fc058-e05e-48b5-aca9-340403bb9e26
 This class represents a memory-mapped file, adding a cast operator to the methods of [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -46,7 +46,7 @@ This class adds a single cast operator to allow implicit conversion of `CAtlFile
 
 **Header:** atlfile.h
 
-##  <a name="operator_t_star"></a>  CAtlFileMapping::operator T*
+## <a name="operator_t_star"></a> CAtlFileMapping::operator T*
 
 Allows implicit conversion of `CAtlFileMapping` objects to `T*`.
 

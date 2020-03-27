@@ -21,7 +21,7 @@ Once you have created a project, you will want to change or add to that project'
 - MFC class from Type Lib.
 
 > [!NOTE]
->  You can add message handlers and map messages to them and override MFC virtual functions using the [MFC Class Wizard](../mfc/reference/mfc-class-wizard.md).
+> You can add message handlers and map messages to them and override MFC virtual functions using the [MFC Class Wizard](../mfc/reference/mfc-class-wizard.md).
 
 ## Accessing C++ Code Wizards
 
@@ -31,19 +31,19 @@ There are three locations where you can access C++ code wizards:
 
    If you highlight a class or an interface in your project in Class View, the **Project** menu also displays the following commands:
 
-   - **Implement Interface** (from a control class only)
+  - **Implement Interface** (from a control class only)
 
-   - **Add Function**
+  - **Add Function**
 
-   - **Add Variable**
+  - **Add Variable**
 
-   - **Add Connection Point** (ATL class only)
+  - **Add Connection Point** (ATL class only)
 
-   - **Add Method** (from an interface only)
+  - **Add Method** (from an interface only)
 
-   - **Add Property** (from an interface only)
+  - **Add Property** (from an interface only)
 
-   - **Add Event** (from a control class only)
+  - **Add Event** (from a control class only)
 
 - In **Solution Explorer**, right-clicking any folder and clicking **Add** from the shortcut menu allows you to add new or existing files, more folders, items, classes, resources, and Web references to the project.
 

@@ -72,7 +72,7 @@ The CAnimationColor class encapsulates three CAnimationVariable objects and can 
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="addtransition"></a>  CAnimationColor::AddTransition
+## <a name="addtransition"></a> CAnimationColor::AddTransition
 
 Adds transitions for Red, Green and Blue components.
 
@@ -98,7 +98,7 @@ Transition for Blue component.
 
 Call this function to add the specified transitions to the internal list of transitions to be applied to animation variables representing color components. When you add transitions, they are not applied immediately and stored in an internal list. Transitions are applied (added to a storyboard for a particular value) when you call CAnimationController::AnimateGroup. If you don't need to apply a transition to one of the color components, you can pass NULL.
 
-##  <a name="canimationcolor"></a>  CAnimationColor::CAnimationColor
+## <a name="canimationcolor"></a> CAnimationColor::CAnimationColor
 
 Constructs a CAnimationColor object.
 
@@ -130,7 +130,7 @@ Specifies user-defined data.
 
 The object is constructed with default values for red, green, blue, Object ID and Group ID, which will be set to 0. They can be changed later at runtime using SetDefaultValue and SetID.
 
-##  <a name="getanimationvariablelist"></a>  CAnimationColor::GetAnimationVariableList
+## <a name="getanimationvariablelist"></a> CAnimationColor::GetAnimationVariableList
 
 Puts the encapsulated animation variables into a list.
 
@@ -143,7 +143,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*>& lst);
 *lst*<br/>
 When the function returns, it contains pointers to three CAnimationVariable objects representing red, green and blue components.
 
-##  <a name="getb"></a>  CAnimationColor::GetB
+## <a name="getb"></a> CAnimationColor::GetB
 
 Provides access to CAnimationVariable representing Blue component.
 
@@ -159,7 +159,7 @@ A reference to encapsulated CAnimationVariable representing Blue component.
 
 You can call this method to get direct access to underlying CAnimationVariable representing Blue component.
 
-##  <a name="getdefaultvalue"></a>  CAnimationColor::GetDefaultValue
+## <a name="getdefaultvalue"></a> CAnimationColor::GetDefaultValue
 
 Returns the default values for color components.
 
@@ -175,7 +175,7 @@ A COLORREF value containing defaults for RGB components.
 
 Call this function to retrieve default value, which was previously set by constructor or SetDefaultValue.
 
-##  <a name="getg"></a>  CAnimationColor::GetG
+## <a name="getg"></a> CAnimationColor::GetG
 
 Provides access to CAnimationVariable representing Green component.
 
@@ -191,7 +191,7 @@ A reference to encapsulated CAnimationVariable representing Green component.
 
 You can call this method to get direct access to underlying CAnimationVariable representing Green component.
 
-##  <a name="getr"></a>  CAnimationColor::GetR
+## <a name="getr"></a> CAnimationColor::GetR
 
 Provides access to CAnimationVariable representing Red component.
 
@@ -207,7 +207,7 @@ A reference to encapsulated CAnimationVariable representing Red component.
 
 You can call this method to get direct access to underlying CAnimationVariable representing Red component.
 
-##  <a name="getvalue"></a>  CAnimationColor::GetValue
+## <a name="getvalue"></a> CAnimationColor::GetValue
 
 Returns current value.
 
@@ -228,7 +228,7 @@ TRUE, if the current value was successfully retrieved; otherwise FALSE.
 
 Call this function to retrieve the current value of animation color. If this method fails or underlying COM objects for color components have not been initialized, color contains default value, which was previously set in constructor or by SetDefaultValue.
 
-##  <a name="m_bvalue"></a>  CAnimationColor::m_bValue
+## <a name="m_bvalue"></a> CAnimationColor::m_bValue
 
 The encapsulated animation variable that represents Blue component of animation color.
 
@@ -236,7 +236,7 @@ The encapsulated animation variable that represents Blue component of animation 
 CAnimationVariable m_bValue;
 ```
 
-##  <a name="m_gvalue"></a>  CAnimationColor::m_gValue
+## <a name="m_gvalue"></a> CAnimationColor::m_gValue
 
 The encapsulated animation variable that represents Green component of animation color.
 
@@ -244,7 +244,7 @@ The encapsulated animation variable that represents Green component of animation
 CAnimationVariable m_gValue;
 ```
 
-##  <a name="m_rvalue"></a>  CAnimationColor::m_rValue
+## <a name="m_rvalue"></a> CAnimationColor::m_rValue
 
 The encapsulated animation variable that represents Red component of animation color.
 
@@ -252,7 +252,7 @@ The encapsulated animation variable that represents Red component of animation c
 CAnimationVariable m_rValue;
 ```
 
-##  <a name="operator_colorref"></a>  CAnimationColor::operator COLORREF
+## <a name="operator_colorref"></a> CAnimationColor::operator COLORREF
 
 ```
 operator COLORREF();
@@ -260,7 +260,7 @@ operator COLORREF();
 
 ### Return Value
 
-##  <a name="operator_eq"></a>  CAnimationColor::operator=
+## <a name="operator_eq"></a> CAnimationColor::operator=
 
 Assigns color to CAnimationColor.
 
@@ -277,7 +277,7 @@ Specifies new value Animation Color.
 
 It's recommended to do that before animation start, because this operator calls SetDefaultValue, which recreates the underlying COM objects for color components if they have been created. If you subscribed this animation object to events (ValueChanged or IntegerValueChanged), you need to re-enable these events.
 
-##  <a name="setdefaultvalue"></a>  CAnimationColor::SetDefaultValue
+## <a name="setdefaultvalue"></a> CAnimationColor::SetDefaultValue
 
 Sets default value.
 

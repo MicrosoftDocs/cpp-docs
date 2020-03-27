@@ -47,7 +47,7 @@ These template parameters expect the class to conform to this archetype:
 
 **Header:** atlutil.h
 
-## <a name="execute"></a>WorkerArchetype::Execute
+## <a name="execute"></a> WorkerArchetype::Execute
 
 Called to process a work item.
 

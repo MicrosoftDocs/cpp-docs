@@ -84,7 +84,7 @@ For more information on `CMapStringToString`, see the article [Collections](../.
 
 **Header:** afxcoll.h
 
-##  <a name="cpair"></a>  CMapStringToString::CPair
+## <a name="cpair"></a> CMapStringToString::CPair
 
 Contains a key value and the value of the associated string object.
 
@@ -104,7 +104,7 @@ It is used to store the return values from [CMapStringToString::PLookup](#plooku
 
   For an example of usage, see the example for [CMapStringToString::PLookup](#plookup).
 
-##  <a name="pgetfirstassoc"></a>  CMapStringToString::PGetFirstAssoc
+## <a name="pgetfirstassoc"></a> CMapStringToString::PGetFirstAssoc
 
 Returns the first entry of the map object.
 
@@ -126,7 +126,7 @@ Call this function to return a pointer the first element in the map object.
 
 [!code-cpp[NVC_MFCCollections#73](../../mfc/codesnippet/cpp/cmapstringtostring-class_1.cpp)]
 
-##  <a name="pgetnextassoc"></a>  CMapStringToString::PGetNextAssoc
+## <a name="pgetnextassoc"></a> CMapStringToString::PGetNextAssoc
 
 Retrieves the map element pointed to by *pAssocRec*.
 
@@ -153,7 +153,7 @@ Call this method to iterate through all the elements in the map. Retrieve the fi
 
   See the example for [CMapStringToString::PGetFirstAssoc](#pgetfirstassoc).
 
-##  <a name="plookup"></a>  CMapStringToString::PLookup
+## <a name="plookup"></a> CMapStringToString::PLookup
 
 Looks up the value mapped to a given key.
 

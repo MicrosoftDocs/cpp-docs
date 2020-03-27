@@ -75,7 +75,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 **true** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **false**.
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> operator&lt;=
 
 Tests if the `optional` object on the left side of the operator is less than or equal to the `optional` object on the right side.
 

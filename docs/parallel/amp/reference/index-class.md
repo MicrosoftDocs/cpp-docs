@@ -114,7 +114,7 @@ The length of the least significant dimension.
 *_Other*<br/>
 An index object on which the new index object is based.
 
-## <a name="operator--"></a>  operator--
+## <a name="operator--"></a> operator--
 
 Decrements each element of the index object.
 
@@ -130,7 +130,7 @@ index operator--(
 
 For the prefix operator, the index object (*this). For the suffix operator, a new index object.
 
-## <a name="operator_mod_eq"></a>  operator%=
+## <a name="operator_mod_eq"></a> operator%=
 
 Calculates the modulus (remainder) of each element in the index object when that element is divided by the specified number.
 
@@ -149,7 +149,7 @@ The number to divide by to find the modulus.
 
 The index object.
 
-## <a name="operator_star_eq"></a>  operator*=
+## <a name="operator_star_eq"></a> operator*=
 
 Multiplies each element in the index object by the specified number.
 
@@ -164,7 +164,7 @@ index<_Rank>& operator*=(
 *_Rhs*<br/>
 The number to multiply.
 
-## <a name="operator_div_eq"></a>  operator/=
+## <a name="operator_div_eq"></a> operator/=
 
 Divides each element in the index object by the specified number.
 
@@ -179,7 +179,7 @@ index<_Rank>& operator/=(
 *_Rhs*<br/>
 The number to divide by.
 
-## <a name="operator_at"></a>  operator\[\]
+## <a name="operator_at"></a> operator\[\]
 
 Returns the component of the index at the specified location.
 
@@ -214,7 +214,7 @@ std::cout << idx[1] << "\n";
 std::cout << idx[2] << "\n";
 ```
 
-## <a name="operator_add_add"></a>  operator++
+## <a name="operator_add_add"></a> operator++
 
 Increments each element of the index object.
 
@@ -230,7 +230,7 @@ index<_Rank> operator++(
 
 For the prefix operator, the index object (*this). For the suffix operator, a new index object.
 
-## <a name="operator_add_eq"></a>  operator+=
+## <a name="operator_add_eq"></a> operator+=
 
 Adds the specified number to each element of the index object.
 
@@ -253,7 +253,7 @@ The number to add.
 
 The index object.
 
-## <a name="operator_eq"></a>  operator=
+## <a name="operator_eq"></a> operator=
 
 Copies the contents of the specified index object into this one.
 
@@ -272,7 +272,7 @@ The index object to copy from.
 
 A reference to this index object.
 
-## <a name="operator_-_eq"></a>  operator-=
+## <a name="operator_-_eq"></a> operator-=
 
 Subtracts the specified number from each element of the index object.
 
@@ -295,7 +295,7 @@ The number to subtract.
 
 The index object.
 
-## <a name="rank"></a>  Rank
+## <a name="rank"></a> Rank
 
 Gets the rank of the index object.
 

@@ -82,7 +82,7 @@ creates the object `ai` that holds four integer values, initializes the first th
 
 **Namespace:** std
 
-## <a name="array"></a>  array::array
+## <a name="array"></a> array::array
 
 Constructs an array object.
 
@@ -141,11 +141,11 @@ int main()
 0 1 2 3
 ```
 
-## <a name="assign"></a>  array::assign
+## <a name="assign"></a> array::assign
 
 Obsolete in C++11, replaced by [fill](#fill). Replaces all elements.
 
-## <a name="at"></a>  array::at
+## <a name="at"></a> array::at
 
 Accesses an element at a specified position.
 
@@ -191,7 +191,7 @@ int main()
 }
 ```
 
-## <a name="back"></a>  array::back
+## <a name="back"></a> array::back
 
 Accesses the last element.
 
@@ -236,7 +236,7 @@ int main()
 3
 ```
 
-## <a name="begin"></a>  array::begin
+## <a name="begin"></a> array::begin
 
 Designates the beginning of the controlled sequence.
 
@@ -281,7 +281,7 @@ int main()
 0
 ```
 
-## <a name="cbegin"></a>  array::cbegin
+## <a name="cbegin"></a> array::cbegin
 
 Returns a **const** iterator that addresses the first element in the range.
 
@@ -307,7 +307,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  array::cend
+## <a name="cend"></a> array::cend
 
 Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
@@ -335,7 +335,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` should not be dereferenced.
 
-## <a name="const_iterator"></a>  array::const_iterator
+## <a name="const_iterator"></a> array::const_iterator
 
 The type of a constant iterator for the controlled sequence.
 
@@ -383,7 +383,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="const_pointer"></a>  array::const_pointer
+## <a name="const_pointer"></a> array::const_pointer
 
 The type of a constant pointer to an element.
 
@@ -427,7 +427,7 @@ int main()
 0
 ```
 
-## <a name="const_reference"></a>  array::const_reference
+## <a name="const_reference"></a> array::const_reference
 
 The type of a constant reference to an element.
 
@@ -471,7 +471,7 @@ int main()
 0
 ```
 
-## <a name="const_reverse_iterator"></a>  array::const_reverse_iterator
+## <a name="const_reverse_iterator"></a> array::const_reverse_iterator
 
 The type of a constant reverse iterator for the controlled sequence.
 
@@ -515,7 +515,7 @@ int main()
 3
 ```
 
-## <a name="crbegin"></a>  array::crbegin
+## <a name="crbegin"></a> array::crbegin
 
 Returns a const iterator to the first element in a reversed array.
 
@@ -559,7 +559,7 @@ The first element of array is 1.
 The first element of the reversed array is 2.
 ```
 
-## <a name="crend"></a>  array::crend
+## <a name="crend"></a> array::crend
 
 Returns a const iterator that addresses the location succeeding the last element in a reversed array.
 
@@ -603,7 +603,7 @@ int main( )
 1
 ```
 
-## <a name="data"></a>  array::data
+## <a name="data"></a> array::data
 
 Gets the address of the first element.
 
@@ -649,7 +649,7 @@ int main()
 0
 ```
 
-## <a name="difference_type"></a>  array::difference_type
+## <a name="difference_type"></a> array::difference_type
 
 The type of a signed distance between two elements.
 
@@ -693,7 +693,7 @@ int main()
 -4
 ```
 
-## <a name="empty"></a>  array::empty
+## <a name="empty"></a> array::empty
 
 Tests whether no elements are present.
 
@@ -743,7 +743,7 @@ false
 true
 ```
 
-## <a name="end"></a>  array::end
+## <a name="end"></a> array::end
 
 Designates the end of the controlled sequence.
 
@@ -789,7 +789,7 @@ int main()
 3
 ```
 
-## <a name="fill"></a>  array::fill
+## <a name="fill"></a> array::fill
 
 Erases a array and copies the specified elements to the empty array.
 
@@ -835,7 +835,7 @@ int main()
 }
 ```
 
-## <a name="front"></a>  array::front
+## <a name="front"></a> array::front
 
 Accesses the first element.
 
@@ -880,7 +880,7 @@ int main()
 0
 ```
 
-## <a name="iterator"></a>  array::iterator
+## <a name="iterator"></a> array::iterator
 
 The type of an iterator for the controlled sequence.
 
@@ -929,7 +929,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="max_size"></a>  array::max_size
+## <a name="max_size"></a> array::max_size
 
 Counts the number of elements.
 
@@ -972,7 +972,7 @@ int main()
 4
 ```
 
-## <a name="op_at"></a>  array::operator[]
+## <a name="op_at"></a> array::operator[]
 
 Accesses an element at a specified position.
 
@@ -1025,7 +1025,7 @@ int main()
 1 3
 ```
 
-## <a name="op_eq"></a>  array::operator=
+## <a name="op_eq"></a> array::operator=
 
 Replaces the controlled sequence.
 
@@ -1080,7 +1080,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="pointer"></a>  array::pointer
+## <a name="pointer"></a> array::pointer
 
 The type of a pointer to an element.
 
@@ -1124,7 +1124,7 @@ int main()
 0
 ```
 
-## <a name="rbegin"></a>  array::rbegin
+## <a name="rbegin"></a> array::rbegin
 
 Designates the beginning of the reversed controlled sequence.
 
@@ -1169,7 +1169,7 @@ int main()
 3
 ```
 
-## <a name="reference"></a>  array::reference
+## <a name="reference"></a> array::reference
 
 The type of a reference to an element.
 
@@ -1213,7 +1213,7 @@ int main()
 0
 ```
 
-## <a name="rend"></a>  array::rend
+## <a name="rend"></a> array::rend
 
 Designates the end of the reversed controlled sequence.
 
@@ -1258,7 +1258,7 @@ int main()
 0
 ```
 
-## <a name="reverse_iterator"></a>  array::reverse_iterator
+## <a name="reverse_iterator"></a> array::reverse_iterator
 
 The type of a reverse iterator for the controlled sequence.
 
@@ -1302,7 +1302,7 @@ int main()
 3
 ```
 
-## <a name="size"></a>  array::size
+## <a name="size"></a> array::size
 
 Counts the number of elements.
 
@@ -1345,7 +1345,7 @@ int main()
 4
 ```
 
-## <a name="size_type"></a>  array::size_type
+## <a name="size_type"></a> array::size_type
 
 The type of an unsigned distance between two element.
 
@@ -1389,7 +1389,7 @@ int main()
 4
 ```
 
-## <a name="swap"></a>  array::swap
+## <a name="swap"></a> array::swap
 
 Swaps the contents of this array with another array.
 
@@ -1455,7 +1455,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="value_type"></a>  array::value_type
+## <a name="value_type"></a> array::value_type
 
 The type of an element.
 

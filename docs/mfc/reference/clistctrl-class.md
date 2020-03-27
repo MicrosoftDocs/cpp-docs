@@ -250,7 +250,7 @@ By default, a list view control destroys the image lists assigned to it when it 
 
 **Header:** afxcmn.h
 
-## <a name="approximateviewrect"></a>  CListCtrl::ApproximateViewRect
+## <a name="approximateviewrect"></a> CListCtrl::ApproximateViewRect
 
 Determines the width and height required to display the items of a list view control.
 
@@ -276,7 +276,7 @@ A `CSize` object that contains the approximate width and height needed to displa
 
 This member function implements the behavior of the Win32 macro, [ListView_ApproximateViewRect](/windows/win32/api/commctrl/nf-commctrl-listview_approximateviewrect), as described in the Windows SDK.
 
-## <a name="arrange"></a>  CListCtrl::Arrange
+## <a name="arrange"></a> CListCtrl::Arrange
 
 Repositions items in an icon view so that they align on a grid.
 
@@ -314,7 +314,7 @@ The *nCode* parameter specifies the alignment style.
     m_myListCtrl.Arrange(LVA_ALIGNTOP);
 ```
 
-## <a name="canceleditlabel"></a>  CListCtrl::CancelEditLabel
+## <a name="canceleditlabel"></a> CListCtrl::CancelEditLabel
 
 Cancels item text editing operation.
 
@@ -326,7 +326,7 @@ void CancelEditLabel();
 
 This member function emulates the functionality of the [LVM_CANCELEDITLABEL](/windows/win32/Controls/lvm-canceleditlabel) message, as described in the Windows SDK.
 
-## <a name="clistctrl"></a>  CListCtrl::CListCtrl
+## <a name="clistctrl"></a> CListCtrl::CListCtrl
 
 Constructs a `CListCtrl` object.
 
@@ -334,7 +334,7 @@ Constructs a `CListCtrl` object.
 CListCtrl();
 ```
 
-## <a name="create"></a>  CListCtrl::Create
+## <a name="create"></a> CListCtrl::Create
 
 Creates a list control and attaches it to a `CListCtrl` object.
 
@@ -378,7 +378,7 @@ To apply extended Windows styles to the list control object, call [CreateEx](#cr
         CRect(10,10,400,200), pParentWnd, IDD_MYLISTCTRL);
 ```
 
-## <a name="createex"></a>  CListCtrl::CreateEx
+## <a name="createex"></a> CListCtrl::CreateEx
 
 Creates a control (a child window) and associates it with the `CListCtrl` object.
 
@@ -418,7 +418,7 @@ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, sp
 
 `CreateEx` creates the control with the extended Windows styles specified by *dwExStyle*. To set extended styles specific to a control, call [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as LVS_EX_FULLROWSELECT. For more information, see the styles described in the article [Extended List View Styles](/windows/win32/Controls/extended-list-view-styles) in the Windows SDK.
 
-## <a name="createdragimage"></a>  CListCtrl::CreateDragImage
+## <a name="createdragimage"></a> CListCtrl::CreateDragImage
 
 Creates a drag image list for the item specified by *nItem*.
 
@@ -452,7 +452,7 @@ The `CImageList` object is permanent, and you must delete it when finished. For 
         delete pImageList;
 ```
 
-## <a name="deleteallitems"></a>  CListCtrl::DeleteAllItems
+## <a name="deleteallitems"></a> CListCtrl::DeleteAllItems
 
 Deletes all items from the list view control.
 
@@ -472,7 +472,7 @@ Nonzero if successful; otherwise zero.
     ASSERT(m_myListCtrl.GetItemCount() == 0);
 ```
 
-## <a name="deletecolumn"></a>  CListCtrl::DeleteColumn
+## <a name="deletecolumn"></a> CListCtrl::DeleteColumn
 
 Deletes a column from the list view control.
 
@@ -501,7 +501,7 @@ Nonzero if successful; otherwise zero.
         }
 ```
 
-## <a name="deleteitem"></a>  CListCtrl::DeleteItem
+## <a name="deleteitem"></a> CListCtrl::DeleteItem
 
 Deletes an item from a list view control.
 
@@ -530,7 +530,7 @@ Nonzero if successful; otherwise zero.
         }
 ```
 
-## <a name="drawitem"></a>  CListCtrl::DrawItem
+## <a name="drawitem"></a> CListCtrl::DrawItem
 
 Called by the framework when a visual aspect of an owner-draw list view control changes.
 
@@ -551,7 +551,7 @@ By default, this member function does nothing. Override this member function to 
 
 The application should restore all graphics device interface (GDI) objects selected for the display context supplied in *lpDrawItemStruct* before this member function terminates.
 
-## <a name="editlabel"></a>  CListCtrl::EditLabel
+## <a name="editlabel"></a> CListCtrl::EditLabel
 
 Begins in-place editing of an item's text.
 
@@ -586,7 +586,7 @@ Use this function to begin in-place editing of the specified list view item's te
         ASSERT(pmyEdit != NULL);
 ```
 
-## <a name="enablegroupview"></a>  CListCtrl::EnableGroupView
+## <a name="enablegroupview"></a> CListCtrl::EnableGroupView
 
 Enables or disables whether the items in a list view control display as a group.
 
@@ -613,7 +613,7 @@ Returns one of the following values:
 
 This member function emulates the functionality of the [LVM_ENABLEGROUPVIEW](/windows/win32/Controls/lvm-enablegroupview) message, as described in the Windows SDK.
 
-## <a name="ensurevisible"></a>  CListCtrl::EnsureVisible
+## <a name="ensurevisible"></a> CListCtrl::EnsureVisible
 
 Ensures that a list view item is at least partially visible.
 
@@ -648,7 +648,7 @@ The list view control is scrolled if necessary. If the *bPartialOK* parameter is
             m_myListCtrl.EnsureVisible(nCount-1, FALSE);
 ```
 
-## <a name="finditem"></a>  CListCtrl::FindItem
+## <a name="finditem"></a> CListCtrl::FindItem
 
 Searches for a list view item having specified characteristics.
 
@@ -690,7 +690,7 @@ The *pFindInfo* parameter points to an `LVFINDINFO` structure, which contains in
         }
 ```
 
-## <a name="getbkcolor"></a>  CListCtrl::GetBkColor
+## <a name="getbkcolor"></a> CListCtrl::GetBkColor
 
 Retrieves the background color of a list view control.
 
@@ -706,7 +706,7 @@ A 32-bit value used to specify an RGB color.
 
 See the example for [CListCtrl::SetBkColor](#setbkcolor).
 
-## <a name="getbkimage"></a>  CListCtrl::GetBkImage
+## <a name="getbkimage"></a> CListCtrl::GetBkImage
 
 Retrieves the current background image of a list view control.
 
@@ -742,7 +742,7 @@ This method implements the behavior of the Win32 macro, [ListView_GetBkImage](/w
         }
 ```
 
-## <a name="getcallbackmask"></a>  CListCtrl::GetCallbackMask
+## <a name="getcallbackmask"></a> CListCtrl::GetCallbackMask
 
 Retrieves the callback mask for a list view control.
 
@@ -762,7 +762,7 @@ A "callback item" is a list view item for which the application — rather than 
 
 See the example for [CListCtrl::SetCallbackMask](#setcallbackmask).
 
-## <a name="getcheck"></a>  CListCtrl::GetCheck
+## <a name="getcheck"></a> CListCtrl::GetCheck
 
 Retrieves the current display status of the state image that is associated with an item.
 
@@ -787,7 +787,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetCh
 
 See the example for [CListCtrl::SetCheck](#setcheck).
 
-## <a name="getcolumn"></a>  CListCtrl::GetColumn
+## <a name="getcolumn"></a> CListCtrl::GetColumn
 
 Retrieves the attributes of a list view control's column.
 
@@ -828,7 +828,7 @@ The `LVCOLUMN` structure contains information about a column in report view.
         }
 ```
 
-## <a name="getcolumnorderarray"></a>  CListCtrl::GetColumnOrderArray
+## <a name="getcolumnorderarray"></a> CListCtrl::GetColumnOrderArray
 
 Retrieves the column order (left to right) of a list view control.
 
@@ -882,7 +882,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetCo
         }
 ```
 
-## <a name="getcolumnwidth"></a>  CListCtrl::GetColumnWidth
+## <a name="getcolumnwidth"></a> CListCtrl::GetColumnWidth
 
 Retrieves the width of a column in report view or list view.
 
@@ -907,7 +907,7 @@ The width, in pixels, of the column specified by *nCol*.
         m_myListCtrl.SetColumnWidth(1, 20 + nWidth);
 ```
 
-## <a name="getcountperpage"></a>  CListCtrl::GetCountPerPage
+## <a name="getcountperpage"></a> CListCtrl::GetCountPerPage
 
 Calculates the number of items that can fit vertically in the visible area of a list view control when in list view or report view.
 
@@ -923,7 +923,7 @@ The number of items that can fit vertically in the visible area of a list view c
 
 See the example for [CListCtrl::GetTopIndex](#gettopindex).
 
-## <a name="geteditcontrol"></a>  CListCtrl::GetEditControl
+## <a name="geteditcontrol"></a> CListCtrl::GetEditControl
 
 Retrieves the handle of the edit control used to edit a list view item's text.
 
@@ -950,7 +950,7 @@ If successful, a pointer to the [CEdit](cedit-class.md) object that is used to e
         }
 ```
 
-## <a name="getemptytext"></a>  CListCtrl::GetEmptyText
+## <a name="getemptytext"></a> CListCtrl::GetEmptyText
 
 Retrieves the string to display if the current list-view control is empty.
 
@@ -966,7 +966,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) that contains the 
 
 This method sends the [LVM_GETEMPTYTEXT](/windows/win32/Controls/lvm-getemptytext) message, which is described in the Windows SDK.
 
-## <a name="getextendedstyle"></a>  CListCtrl::GetExtendedStyle
+## <a name="getextendedstyle"></a> CListCtrl::GetExtendedStyle
 
 Retrieves the current extended styles of a list view control.
 
@@ -986,7 +986,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetEx
 
 See the example for [CListCtrl::SetExtendedStyle](#setextendedstyle).
 
-## <a name="getfirstselecteditemposition"></a>  CListCtrl::GetFirstSelectedItemPosition
+## <a name="getfirstselecteditemposition"></a> CListCtrl::GetFirstSelectedItemPosition
 
 Gets the position of the first selected item in the list view control.
 
@@ -1019,7 +1019,7 @@ The following code sample demonstrates the usage of this function.
         }
 ```
 
-## <a name="getfocusedgroup"></a>  CListCtrl::GetFocusedGroup
+## <a name="getfocusedgroup"></a> CListCtrl::GetFocusedGroup
 
 Retrieves the group that has the keyboard focus in the current list-view control.
 
@@ -1035,7 +1035,7 @@ The index of the group whose state is LVGS_FOCUSED, if there is such a group; ot
 
 This method sends the [LVM_GETFOCUSEDGROUP](/windows/win32/Controls/lvm-getfocusedgroup) message, which is described in the Windows SDK. For more information, see the LVGS_FOCUSED value of the `state` member of the [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure.
 
-## <a name="getgroupcount"></a>  CListCtrl::GetGroupCount
+## <a name="getgroupcount"></a> CListCtrl::GetGroupCount
 
 Retrieves the number of groups in the current list-view control.
 
@@ -1051,7 +1051,7 @@ The number of groups in the list-view control.
 
 This method sends the [LVM_GETGROUPCOUNT](/windows/win32/Controls/lvm-getgroupcount) message, which is described in the Windows SDK -->.
 
-## <a name="getgroupinfo"></a>  CListCtrl::GetGroupInfo
+## <a name="getgroupinfo"></a> CListCtrl::GetGroupInfo
 
 Gets the information for a specified group of the list view control.
 
@@ -1077,7 +1077,7 @@ Returns the ID of the group if successful, or -1 otherwise.
 
 This member function emulates the functionality of the [LVM_GETGROUPINFO](/windows/win32/Controls/lvm-getgroupinfo) message, as described in the Windows SDK.
 
-## <a name="getgroupinfobyindex"></a>  CListCtrl::GetGroupInfoByIndex
+## <a name="getgroupinfobyindex"></a> CListCtrl::GetGroupInfoByIndex
 
 Retrieves information about a specified group in the current list-view control.
 
@@ -1143,7 +1143,7 @@ The following code example demonstrates the `GetGroupInfoByIndex` method. In an 
     }
 ```
 
-## <a name="getgroupmetrics"></a>  CListCtrl::GetGroupMetrics
+## <a name="getgroupmetrics"></a> CListCtrl::GetGroupMetrics
 
 Retrieves the metrics of a group.
 
@@ -1160,7 +1160,7 @@ A pointer to a [LVGROUPMETRICS](/windows/win32/api/commctrl/ns-commctrl-lvgroupm
 
 This member function emulates the functionality of the [LVM_GETGROUPMETRICS](/windows/win32/Controls/lvm-getgroupmetrics) message, as described in the Windows SDK.
 
-## <a name="getgrouprect"></a>  CListCtrl::GetGroupRect
+## <a name="getgrouprect"></a> CListCtrl::GetGroupRect
 
 Retrieves the bounding rectangle for a specified group in the current list-view control.
 
@@ -1218,7 +1218,7 @@ The following code example demonstrates the `GetGroupRect` method. In an earlier
     }
 ```
 
-## <a name="getgroupstate"></a>  CListCtrl::GetGroupState
+## <a name="getgroupstate"></a> CListCtrl::GetGroupState
 
 Retrieves the state for a specified group in the current list-view control.
 
@@ -1245,7 +1245,7 @@ The return value is the result of a bitwise AND operation on the *dwMask* parame
 
 This method sends the [LVM_GETGROUPSTATE](/windows/win32/Controls/lvm-getgroupstate) message, which is described in the Windows SDK. For more information, see the [ListView_GetGroupState](/windows/win32/api/commctrl/nf-commctrl-listview_getgroupstate) macro.
 
-## <a name="getheaderctrl"></a>  CListCtrl::GetHeaderCtrl
+## <a name="getheaderctrl"></a> CListCtrl::GetHeaderCtrl
 
 Retrieves the header control of a list view control.
 
@@ -1265,7 +1265,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetHe
 
 See the example for [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
 
-## <a name="gethotcursor"></a>  CListCtrl::GetHotCursor
+## <a name="gethotcursor"></a> CListCtrl::GetHotCursor
 
 Retrieves the cursor used when hot tracking is enabled for a list view control.
 
@@ -1290,7 +1290,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetHo
         ASSERT(m_myListCtrl.GetHotCursor() == hCursor);
 ```
 
-## <a name="gethotitem"></a>  CListCtrl::GetHotItem
+## <a name="gethotitem"></a> CListCtrl::GetHotItem
 
 Retrieves the list view item currently under the cursor.
 
@@ -1317,7 +1317,7 @@ If hot tracking is enabled, when a user pauses over a list view item, the item l
         m_myListCtrl.SetHotItem(0);
 ```
 
-## <a name="gethovertime"></a>  CListCtrl::GetHoverTime
+## <a name="gethovertime"></a> CListCtrl::GetHoverTime
 
 Retrieves the current hover time of a list view control.
 
@@ -1342,7 +1342,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetHo
             m_myListCtrl.SetHoverTime(1000);
 ```
 
-## <a name="getimagelist"></a>  CListCtrl::GetImageList
+## <a name="getimagelist"></a> CListCtrl::GetImageList
 
 Retrieves the handle of an image list used for drawing list view items.
 
@@ -1373,7 +1373,7 @@ A pointer to the image list used for drawing list view items.
         ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
 ```
 
-## <a name="getinsertmark"></a>  CListCtrl::GetInsertMark
+## <a name="getinsertmark"></a> CListCtrl::GetInsertMark
 
 Retrieves the current position of the insertion mark.
 
@@ -1394,7 +1394,7 @@ Returns TRUE if successful, or FALSE otherwise. FALSE is returned if the size in
 
 This member function emulates the functionality of the [LVM_GETINSERTMARK](/windows/win32/Controls/lvm-getinsertmark) message, as described in the Windows SDK.
 
-## <a name="getinsertmarkcolor"></a>  CListCtrl::GetInsertMarkColor
+## <a name="getinsertmarkcolor"></a> CListCtrl::GetInsertMarkColor
 
 Retrieves the current color of the insertion mark.
 
@@ -1410,7 +1410,7 @@ Returns a [COLORREF](/windows/win32/gdi/colorref) structure that contains the co
 
 This member function emulates the functionality of the [LVM_GETINSERTMARKCOLOR](/windows/win32/Controls/lvm-getinsertmarkcolor) message, as described in the Windows SDK.
 
-## <a name="getinsertmarkrect"></a>  CListCtrl::GetInsertMarkRect
+## <a name="getinsertmarkrect"></a> CListCtrl::GetInsertMarkRect
 
 Retrieves the rectangle that bounds the insertion point.
 
@@ -1435,7 +1435,7 @@ Returns one of the following values:
 
 This member function emulates the functionality of the [LVM_GETINSERTMARKRECT](/windows/win32/Controls/lvm-getinsertmarkrect) message, as described in the Windows SDK.
 
-## <a name="getitem"></a>  CListCtrl::GetItem
+## <a name="getitem"></a> CListCtrl::GetItem
 
 Retrieves some or all of a list view item's attributes.
 
@@ -1456,7 +1456,7 @@ Nonzero if successful; otherwise zero.
 
 The `LVITEM` structure specifies or receives the attributes of a list view item.
 
-## <a name="getitemcount"></a>  CListCtrl::GetItemCount
+## <a name="getitemcount"></a> CListCtrl::GetItemCount
 
 Retrieves the number of items in a list view control.
 
@@ -1472,7 +1472,7 @@ The number of items in the list view control.
 
 See the example for [CListCtrl::DeleteItem](#deleteitem).
 
-## <a name="getitemdata"></a>  CListCtrl::GetItemData
+## <a name="getitemdata"></a> CListCtrl::GetItemData
 
 Retrieves the 32-bit application-specific value associated with the item specified by `nItem`.
 
@@ -1506,7 +1506,7 @@ This value is the `lParam` member of the [LVITEM](/windows/win32/api/commctrl/ns
     }
 ```
 
-## <a name="getitemindexrect"></a>  CListCtrl::GetItemIndexRect
+## <a name="getitemindexrect"></a> CListCtrl::GetItemIndexRect
 
 Retrieves the bounding rectangle for all or part of a subitem in the current list-view control.
 
@@ -1563,7 +1563,7 @@ The following code example demonstrates the `GetGroupRect` method. Prior to ente
     m_listCtrl.GetDC()->Draw3dRect( &rect, RGB(255, 0, 0), RGB(255, 0, 0) );
 ```
 
-## <a name="getitemposition"></a>  CListCtrl::GetItemPosition
+## <a name="getitemposition"></a> CListCtrl::GetItemPosition
 
 Retrieves the position of a list view item.
 
@@ -1601,7 +1601,7 @@ Nonzero if successful; otherwise zero.
         }
 ```
 
-## <a name="getitemrect"></a>  CListCtrl::GetItemRect
+## <a name="getitemrect"></a> CListCtrl::GetItemRect
 
 Retrieves the bounding rectangle for all or part of an item in the current view.
 
@@ -1675,7 +1675,7 @@ void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 }
 ```
 
-## <a name="getitemspacing"></a>  CListCtrl::GetItemSpacing
+## <a name="getitemspacing"></a> CListCtrl::GetItemSpacing
 
 Calculates the spacing between items in the current list-view control.
 
@@ -1702,7 +1702,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 This method sends the [LVM_GETITEMSPACING](/windows/win32/Controls/lvm-getitemspacing) message, which is described in the Windows SDK.
 
-## <a name="getitemstate"></a>  CListCtrl::GetItemState
+## <a name="getitemstate"></a> CListCtrl::GetItemState
 
 Retrieves the state of a list view item.
 
@@ -1732,7 +1732,7 @@ An item's state is specified by the `state` member of the [LVITEM](/windows/win3
 
 See the example for [CListCtrl::GetTopIndex](#gettopindex).
 
-## <a name="getitemtext"></a>  CListCtrl::GetItemText
+## <a name="getitemtext"></a> CListCtrl::GetItemText
 
 Retrieves the text of a list view item or subitem.
 
@@ -1772,7 +1772,7 @@ The version returning a `CString` returns the item text.
 
 If *nSubItem* is zero, this function retrieves the item label; if *nSubItem* is nonzero, it retrieves the text of the subitem. For more information on the subitem argument, see the discussion of the [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure in the Windows SDK.
 
-## <a name="getnextitem"></a>  CListCtrl::GetNextItem
+## <a name="getnextitem"></a> CListCtrl::GetNextItem
 
 Searches for a list view item that has the specified properties and that bears the specified relationship to a given item.
 
@@ -1814,7 +1814,7 @@ If an item does not have all of the specified state flags set, the search contin
 
 The index of the next item if successful, or -1 otherwise.
 
-## <a name="getnextitemindex"></a>  CListCtrl::GetNextItemIndex
+## <a name="getnextitemindex"></a> CListCtrl::GetNextItemIndex
 
 Retrieves the index of the item in the current list-view control that has a specified set of properties.
 
@@ -1841,7 +1841,7 @@ The caller is responsible for allocating and setting the members of the `LVITEMI
 
 This method sends the [LVM_GETNEXTITEMINDEX](/windows/win32/controls/lvm-getnextitemindex) message, which is described in the Windows SDK.
 
-## <a name="getnextselecteditem"></a>  CListCtrl::GetNextSelectedItem
+## <a name="getnextselecteditem"></a> CListCtrl::GetNextSelectedItem
 
 Gets the index of the list item identified by *pos*, then sets *pos* to the POSITION value.
 
@@ -1885,7 +1885,7 @@ The following code sample demonstrates the usage of this function.
         }
 ```
 
-## <a name="getnumberofworkareas"></a>  CListCtrl::GetNumberOfWorkAreas
+## <a name="getnumberofworkareas"></a> CListCtrl::GetNumberOfWorkAreas
 
 Retrieves the current number of working areas for a list view control.
 
@@ -1928,7 +1928,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetNu
         }
 ```
 
-## <a name="getoutlinecolor"></a>  CListCtrl::GetOutlineColor
+## <a name="getoutlinecolor"></a> CListCtrl::GetOutlineColor
 
 Retrieves the color of the border of a list view control.
 
@@ -1944,7 +1944,7 @@ Returns a [COLORREF](/windows/win32/gdi/colorref) structure containing the outli
 
 This member function emulates the functionality of the [LVM_GETOUTLINECOLOR](/windows/win32/Controls/lvm-getoutlinecolor) message, as described in the Windows SDK.
 
-## <a name="getorigin"></a>  CListCtrl::GetOrigin
+## <a name="getorigin"></a> CListCtrl::GetOrigin
 
 Retrieves the current view origin for a list view control.
 
@@ -1961,7 +1961,7 @@ Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that rece
 
 Nonzero if successful; otherwise zero. However, if the control is in report view, the return value is always zero.
 
-## <a name="getselectedcolumn"></a>  CListCtrl::GetSelectedColumn
+## <a name="getselectedcolumn"></a> CListCtrl::GetSelectedColumn
 
 Retrieves the index of the currently selected column in the list control.
 
@@ -1977,7 +1977,7 @@ The index of the selected column.
 
 This member function emulates the functionality of the [LVM_GETSELECTEDCOLUMN](/windows/win32/Controls/lvm-getselectedcolumn) message, as described in the Windows SDK.
 
-## <a name="getselectedcount"></a>  CListCtrl::GetSelectedCount
+## <a name="getselectedcount"></a> CListCtrl::GetSelectedCount
 
 Retrieves the number of selected items in the list view control.
 
@@ -2007,7 +2007,7 @@ The number of selected items in the list view control.
         }
 ```
 
-## <a name="getselectionmark"></a>  CListCtrl::GetSelectionMark
+## <a name="getselectionmark"></a> CListCtrl::GetSelectionMark
 
 Retrieves the selection mark of a list view control.
 
@@ -2032,7 +2032,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetSe
         m_myListCtrl.SetSelectionMark(0);
 ```
 
-## <a name="getstringwidth"></a>  CListCtrl::GetStringWidth
+## <a name="getstringwidth"></a> CListCtrl::GetStringWidth
 
 Determines the minimum column width necessary to display all of a given string.
 
@@ -2069,7 +2069,7 @@ The returned width takes into account the control's current font and column marg
         }
 ```
 
-## <a name="getsubitemrect"></a>  CListCtrl::GetSubItemRect
+## <a name="getsubitemrect"></a> CListCtrl::GetSubItemRect
 
 Retrieves the bounding rectangle of an item in a list view control.
 
@@ -2109,7 +2109,7 @@ Nonzero if successful; otherwise zero.
 
 This member function implements the behavior of the Win32 macro, [ListView_GetSubItemRect](/windows/win32/api/commctrl/nf-commctrl-listview_getsubitemrect), as described in the Windows SDK.
 
-## <a name="gettextbkcolor"></a>  CListCtrl::GetTextBkColor
+## <a name="gettextbkcolor"></a> CListCtrl::GetTextBkColor
 
 Retrieves the text background color of a list view control.
 
@@ -2125,7 +2125,7 @@ A 32-bit value used to specify an RGB color.
 
 See the example for [CListCtrl::SetTextBkColor](#settextbkcolor).
 
-## <a name="gettextcolor"></a>  CListCtrl::GetTextColor
+## <a name="gettextcolor"></a> CListCtrl::GetTextColor
 
 Retrieves the text color of a list view control.
 
@@ -2141,7 +2141,7 @@ A 32-bit value used to specify an RGB color.
 
 See the example for [CListCtrl::SetTextColor](#settextcolor).
 
-## <a name="gettileinfo"></a>  CListCtrl::GetTileInfo
+## <a name="gettileinfo"></a> CListCtrl::GetTileInfo
 
 Retrieves information about a tile in a list view control.
 
@@ -2162,7 +2162,7 @@ The return value is not used.
 
 This member function emulates the functionality of the [LVM_GETTILEINFO](/windows/win32/Controls/lvm-gettileinfo) message, as described in the Windows SDK.
 
-## <a name="gettileviewinfo"></a>  CListCtrl::GetTileViewInfo
+## <a name="gettileviewinfo"></a> CListCtrl::GetTileViewInfo
 
 Retrieves information about a list view control in tile view.
 
@@ -2183,7 +2183,7 @@ The return value is not used.
 
 This member function emulates the functionality of the [LVM_GETTILEVIEWINFO](/windows/win32/Controls/lvm-gettileviewinfo) message, as described in the Windows SDK.
 
-## <a name="gettooltips"></a>  CListCtrl::GetToolTips
+## <a name="gettooltips"></a> CListCtrl::GetToolTips
 
 Retrieves the tooltip control that the list view control uses to display tooltips.
 
@@ -2210,7 +2210,7 @@ This member function implements the behavior of the Win32 message [LVM_GETTOOLTI
         }
 ```
 
-## <a name="gettopindex"></a>  CListCtrl::GetTopIndex
+## <a name="gettopindex"></a> CListCtrl::GetTopIndex
 
 Retrieves the index of the topmost visible item when in list view or report view.
 
@@ -2239,7 +2239,7 @@ The index of the topmost visible item.
         }
 ```
 
-## <a name="getview"></a>  CListCtrl::GetView
+## <a name="getview"></a> CListCtrl::GetView
 
 Gets the view of the list view control.
 
@@ -2255,7 +2255,7 @@ The current view of the list view control.
 
 This member function emulates the functionality of the [LVM_GETVIEW](/windows/win32/Controls/lvm-getview) message, as described in the Windows SDK.
 
-## <a name="getviewrect"></a>  CListCtrl::GetViewRect
+## <a name="getviewrect"></a> CListCtrl::GetViewRect
 
 Retrieves the bounding rectangle of all items in the list view control.
 
@@ -2276,7 +2276,7 @@ Nonzero if successful; otherwise zero.
 
 The list view must be in icon view or small icon view.
 
-## <a name="getworkareas"></a>  CListCtrl::GetWorkAreas
+## <a name="getworkareas"></a> CListCtrl::GetWorkAreas
 
 Retrieves the current working areas of a list view control.
 
@@ -2302,7 +2302,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetWo
 
 See the example for [CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas).
 
-## <a name="hasgroup"></a>  CListCtrl::HasGroup
+## <a name="hasgroup"></a> CListCtrl::HasGroup
 
 Determines if the list view control has the specified group.
 
@@ -2323,7 +2323,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function emulates the functionality of the [LVM_HASGROUP](/windows/win32/Controls/lvm-hasgroup) message, as described in the Windows SDK.
 
-## <a name="hittest"></a>  CListCtrl::HitTest
+## <a name="hittest"></a> CListCtrl::HitTest
 
 Determines which list view item, if any, is at a specified position.
 
@@ -2378,7 +2378,7 @@ void CListCtrlDlg::OnRClick(NMHDR* pNMHDR, LRESULT* pResult)
 }
 ```
 
-## <a name="insertcolumn"></a>  CListCtrl::InsertColumn
+## <a name="insertcolumn"></a> CListCtrl::InsertColumn
 
 Inserts a new column in a list view control.
 
@@ -2425,7 +2425,7 @@ The leftmost column in a list view control must be left-aligned.
 
 The [LVCOLUMN](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) structure contains the attributes of a column in report view. It is also used to receive information about a column. This structure is described in the Windows SDK.
 
-## <a name="insertgroup"></a>  CListCtrl::InsertGroup
+## <a name="insertgroup"></a> CListCtrl::InsertGroup
 
 Inserts a group into the list view control.
 
@@ -2451,7 +2451,7 @@ Returns the index of the item that the group was added to, or -1 if the operatio
 
 This member function emulates the functionality of the [LVM_INSERTGROUP](/windows/win32/Controls/lvm-insertgroup) message, as described in the Windows SDK.
 
-## <a name="insertgroupsorted"></a>  CListCtrl::InsertGroupSorted
+## <a name="insertgroupsorted"></a> CListCtrl::InsertGroupSorted
 
 Inserts the specified group into an ordered list of groups.
 
@@ -2472,7 +2472,7 @@ The return value is not used.
 
 This member function emulates the functionality of the [LVM_INSERTGROUPSORTED](/windows/win32/Controls/lvm-insertgroupsorted) message, as described in the Windows SDK.
 
-## <a name="insertitem"></a>  CListCtrl::InsertItem
+## <a name="insertitem"></a> CListCtrl::InsertItem
 
 Inserts an item into the list view control.
 
@@ -2556,7 +2556,7 @@ Calling this method may cause the LVM_INSERTITEM message to be sent to your cont
         }
 ```
 
-## <a name="insertmarkhittest"></a>  CListCtrl::InsertMarkHitTest
+## <a name="insertmarkhittest"></a> CListCtrl::InsertMarkHitTest
 
 Retrieves the insertion point closest to a specified point.
 
@@ -2582,7 +2582,7 @@ The insertion point closest to the specified point.
 
 This member function emulates the functionality of the [LVM_INSERTMARKHITTEST](/windows/win32/Controls/lvm-insertmarkhittest) message, as described in the Windows SDK.
 
-## <a name="isgroupviewenabled"></a>  CListCtrl::IsGroupViewEnabled
+## <a name="isgroupviewenabled"></a> CListCtrl::IsGroupViewEnabled
 
 Determines whether group view is enabled for a list view control.
 
@@ -2598,7 +2598,7 @@ Returns TRUE if group view is enabled, or FALSE otherwise.
 
 This member function emulates the functionality of the [LVM_ISGROUPVIEWENABLED](/windows/win32/Controls/lvm-isgroupviewenabled) message, as described in the Windows SDK.
 
-## <a name="isitemvisible"></a>  CListCtrl::IsItemVisible
+## <a name="isitemvisible"></a> CListCtrl::IsItemVisible
 
 Indicates whether a specified item in the current list-view control is visible.
 
@@ -2620,7 +2620,7 @@ TRUE if the specified item is visible; otherwise, FALSE.
 
 This method sends the [LVM_ISITEMVISIBLE](/windows/win32/Controls/lvm-isitemvisible) message, which is described in the Windows SDK.
 
-## <a name="mapidtoindex"></a>  CListCtrl::MapIDToIndex
+## <a name="mapidtoindex"></a> CListCtrl::MapIDToIndex
 
 Maps the unique ID of an item in the current list-view control to an index.
 
@@ -2646,7 +2646,7 @@ Note that in a multithreaded environment the index is guaranteed only on the thr
 
 This method sends the [LVM_MAPIDTOINDEX](/windows/win32/controls/lvm-mapidtoindex) message, which is described in the Windows SDK.
 
-## <a name="mapindextoid"></a>  CListCtrl::MapIndexToID
+## <a name="mapindextoid"></a> CListCtrl::MapIndexToID
 
 Maps the index of an item in the current list-view control to a unique ID.
 
@@ -2712,7 +2712,7 @@ The following code example demonstrates the `MapIndexToID` method. In an earlier
         MB_ICONINFORMATION);
 ```
 
-## <a name="movegroup"></a>  CListCtrl::MoveGroup
+## <a name="movegroup"></a> CListCtrl::MoveGroup
 
 Moves the specified group to the specified zero based index of the list view control.
 
@@ -2738,7 +2738,7 @@ The return value is not used.
 
 This member function emulates the functionality of the [LVM_MOVEGROUP](/windows/win32/Controls/lvm-movegroup) message, as described in the Windows SDK.
 
-## <a name="moveitemtogroup"></a>  CListCtrl::MoveItemToGroup
+## <a name="moveitemtogroup"></a> CListCtrl::MoveItemToGroup
 
 Moves the specified item into the specified group.
 
@@ -2759,11 +2759,11 @@ void MoveItemToGroup(
 ### Remarks
 
 > [!NOTE]
->  This method currently is not implemented.
+> This method currently is not implemented.
 
 This method emulates the functionality of the [LVM_MOVEITEMTOGROUP](/windows/win32/Controls/lvm-moveitemtogroup) message, as described in the Windows SDK.
 
-## <a name="redrawitems"></a>  CListCtrl::RedrawItems
+## <a name="redrawitems"></a> CListCtrl::RedrawItems
 
 Forces a list view control to repaint a range of items.
 
@@ -2789,7 +2789,7 @@ Nonzero if successful; otherwise zero.
 
 The specified items are not actually repainted until the list view window receives a WM_PAINT message. To repaint immediately, call the Windows [UpdateWindow](/windows/win32/api/winuser/nf-winuser-updatewindow) function after using this function.
 
-## <a name="removeallgroups"></a>  CListCtrl::RemoveAllGroups
+## <a name="removeallgroups"></a> CListCtrl::RemoveAllGroups
 
 Removes all groups from a list view control.
 
@@ -2801,7 +2801,7 @@ void RemoveAllGroups();
 
 This member function emulates the functionality of the [LVM_REMOVEALLGROUPS](/windows/win32/Controls/lvm-removeallgroups) message, as described in the Windows SDK.
 
-## <a name="removegroup"></a>  CListCtrl::RemoveGroup
+## <a name="removegroup"></a> CListCtrl::RemoveGroup
 
 Removes the specified group from the list view control.
 
@@ -2822,7 +2822,7 @@ Returns the index of the group if successful, or -1 otherwise.
 
 This member function emulates the functionality of the [LVM_REMOVEGROUP](/windows/win32/Controls/lvm-removegroup) message, as described in the Windows SDK.
 
-## <a name="scroll"></a>  CListCtrl::Scroll
+## <a name="scroll"></a> CListCtrl::Scroll
 
 Scrolls the content of a list view control.
 
@@ -2839,7 +2839,7 @@ A `CSize` object specifying the amount of horizontal and vertical scrolling, in 
 
 Nonzero if successful; otherwise zero.
 
-## <a name="setbkcolor"></a>  CListCtrl::SetBkColor
+## <a name="setbkcolor"></a> CListCtrl::SetBkColor
 
 Sets the background color of the list view control.
 
@@ -2865,7 +2865,7 @@ Nonzero if successful; otherwise zero.
         ASSERT(m_myListCtrl.GetBkColor() == crBkColor);
 ```
 
-## <a name="setbkimage"></a>  CListCtrl::SetBkImage
+## <a name="setbkimage"></a> CListCtrl::SetBkImage
 
 Sets the background image of a list view control.
 
@@ -2912,13 +2912,13 @@ Returns nonzero if successful, or zero otherwise.
 ### Remarks
 
 > [!NOTE]
->  Because `CListCtrl::SetBkImage` makes use of OLE COM functionality, the OLE libraries must be initialized before using `SetBkImage`. It is best to initialize the COM libraries when the application is initialized and uninitialize the libraries when the application terminates. This is automatically done in MFC applications that make use of ActiveX technology, OLE Automation, OLE Linking/Embedding, or ODBC/DAO operations.
+> Because `CListCtrl::SetBkImage` makes use of OLE COM functionality, the OLE libraries must be initialized before using `SetBkImage`. It is best to initialize the COM libraries when the application is initialized and uninitialize the libraries when the application terminates. This is automatically done in MFC applications that make use of ActiveX technology, OLE Automation, OLE Linking/Embedding, or ODBC/DAO operations.
 
 ### Example
 
 See the example for [CListCtrl::GetBkImage](#getbkimage).
 
-## <a name="setcallbackmask"></a>  CListCtrl::SetCallbackMask
+## <a name="setcallbackmask"></a> CListCtrl::SetCallbackMask
 
 Sets the callback mask for a list view control.
 
@@ -2945,7 +2945,7 @@ Nonzero if successful; otherwise zero.
         (LVIS_SELECTED|LVIS_FOCUSED));
 ```
 
-## <a name="setcheck"></a>  CListCtrl::SetCheck
+## <a name="setcheck"></a> CListCtrl::SetCheck
 
 Determines if the state image of a list control item is visible.
 
@@ -2984,7 +2984,7 @@ Nonzero if the item is checked, otherwise 0.
         }
 ```
 
-## <a name="setcolumn"></a>  CListCtrl::SetColumn
+## <a name="setcolumn"></a> CListCtrl::SetColumn
 
 Sets the attributes of a list view column.
 
@@ -3010,7 +3010,7 @@ Nonzero if successful; otherwise zero.
 
 See the example for [CListCtrl::GetColumn](#getcolumn).
 
-## <a name="setcolumnorderarray"></a>  CListCtrl::SetColumnOrderArray
+## <a name="setcolumnorderarray"></a> CListCtrl::SetColumnOrderArray
 
 Sets the column order (left to right) of a list view control.
 
@@ -3040,7 +3040,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetCo
 
 See the example for [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
 
-## <a name="setcolumnwidth"></a>  CListCtrl::SetColumnWidth
+## <a name="setcolumnwidth"></a> CListCtrl::SetColumnWidth
 
 Changes the width of a column in report view or list view.
 
@@ -3062,7 +3062,7 @@ The new width of the column. Can be either LVSCW_AUTOSIZE or LVSCW_AUTOSIZE_USEH
 
 Nonzero if successful; otherwise zero.
 
-## <a name="setextendedstyle"></a>  CListCtrl::SetExtendedStyle
+## <a name="setextendedstyle"></a> CListCtrl::SetExtendedStyle
 
 Sets the current extended styles of a list view control.
 
@@ -3091,7 +3091,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetEx
         (m_myListCtrl.GetExtendedStyle()|LVS_EX_HEADERDRAGDROP);
 ```
 
-## <a name="setgroupinfo"></a>  CListCtrl::SetGroupInfo
+## <a name="setgroupinfo"></a> CListCtrl::SetGroupInfo
 
 Sets the information that describes the specified group of the current list-view control.
 
@@ -3117,7 +3117,7 @@ The ID of the group if the method is successful; otherwise, -1.
 
 This method sends the [LVM_SETGROUPINFO](/windows/win32/Controls/lvm-setgroupinfo) message, which is described in the Windows SDK.
 
-## <a name="setgroupmetrics"></a>  CListCtrl::SetGroupMetrics
+## <a name="setgroupmetrics"></a> CListCtrl::SetGroupMetrics
 
 Sets the group metrics of a list view control.
 
@@ -3134,7 +3134,7 @@ A pointer to an [LVGROUPMETRICS](/windows/win32/api/commctrl/ns-commctrl-lvgroup
 
 This member function emulates the functionality of the [LVM_SETGROUPMETRICS](/windows/win32/Controls/lvm-setgroupmetrics) message, as described in the Windows SDK.
 
-## <a name="sethotcursor"></a>  CListCtrl::SetHotCursor
+## <a name="sethotcursor"></a> CListCtrl::SetHotCursor
 
 Sets the cursor used when hot tracking is enabled for a list view control.
 
@@ -3161,7 +3161,7 @@ The hot cursor, only visible when hover selection is enabled, appears as the cur
 
 See the example for [CListCtrl::GetHotCursor](#gethotcursor).
 
-## <a name="sethotitem"></a>  CListCtrl::SetHotItem
+## <a name="sethotitem"></a> CListCtrl::SetHotItem
 
 Sets the current hot item of a list view control.
 
@@ -3186,7 +3186,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetHo
 
 See the example for [CListCtrl::GetHotItem](#gethotitem).
 
-## <a name="sethovertime"></a>  CListCtrl::SetHoverTime
+## <a name="sethovertime"></a> CListCtrl::SetHoverTime
 
 Sets the current hover time of a list view control.
 
@@ -3211,7 +3211,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetHo
 
 See the example for [CListCtrl::GetHoverTime](#gethovertime).
 
-## <a name="seticonspacing"></a>  CListCtrl::SetIconSpacing
+## <a name="seticonspacing"></a> CListCtrl::SetIconSpacing
 
 Sets the spacing between icons in a list view control.
 
@@ -3249,7 +3249,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetIc
     m_myListCtrl.SetIconSpacing(CSize(100, 100));
 ```
 
-## <a name="setimagelist"></a>  CListCtrl::SetImageList
+## <a name="setimagelist"></a> CListCtrl::SetImageList
 
 Assigns an image list to a list view control.
 
@@ -3281,7 +3281,7 @@ A pointer to the previous image list.
 
 See the example for [CListCtrl::GetImageList](#getimagelist).
 
-## <a name="setinfotip"></a>  CListCtrl::SetInfoTip
+## <a name="setinfotip"></a> CListCtrl::SetInfoTip
 
 Sets the tooltip text.
 
@@ -3302,7 +3302,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function emulates the functionality of the [LVM_SETINFOTIP](/windows/win32/Controls/lvm-setinfotip) message, as described in the Windows SDK.
 
-## <a name="setinsertmark"></a>  CListCtrl::SetInsertMark
+## <a name="setinsertmark"></a> CListCtrl::SetInsertMark
 
 Sets the insertion point to the defined position.
 
@@ -3323,7 +3323,7 @@ Returns TRUE if successful, or FALSE otherwise. FALSE is returned if the size in
 
 This member function emulates the functionality of the [LVM_SETINSERTMARK](/windows/win32/Controls/lvm-setinsertmark) message, as described in the Windows SDK.
 
-## <a name="setinsertmarkcolor"></a>  CListCtrl::SetInsertMarkColor
+## <a name="setinsertmarkcolor"></a> CListCtrl::SetInsertMarkColor
 
 Sets the color of the insertion point.
 
@@ -3344,7 +3344,7 @@ Returns a `COLORREF` structure containing the previous color.
 
 This member function emulates the functionality of the [LVM_SETINSERTMARKCOLOR](/windows/win32/Controls/lvm-setinsertmarkcolor) message, as described in the Windows SDK.
 
-## <a name="setitem"></a>  CListCtrl::SetItem
+## <a name="setitem"></a> CListCtrl::SetItem
 
 Sets some or all of a list view item's attributes.
 
@@ -3423,7 +3423,7 @@ The `mask` member of the `LVITEM` structure and the *nMask* parameter specify wh
 
 See the example for [CListCtrl::HitTest](#hittest).
 
-## <a name="setitemcount"></a>  CListCtrl::SetItemCount
+## <a name="setitemcount"></a> CListCtrl::SetItemCount
 
 Prepares a list view control for adding a large number of items.
 
@@ -3459,7 +3459,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetIt
         }
 ```
 
-## <a name="setitemcountex"></a>  CListCtrl::SetItemCountEx
+## <a name="setitemcountex"></a> CListCtrl::SetItemCountEx
 
 Sets the item count for a virtual list view control.
 
@@ -3508,7 +3508,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetIt
         }
 ```
 
-## <a name="setitemdata"></a>  CListCtrl::SetItemData
+## <a name="setitemdata"></a> CListCtrl::SetItemData
 
 Sets the 32-bit application-specific value associated with the item specified by *nItem*.
 
@@ -3542,7 +3542,7 @@ This value is the `lParam` member of the [LVITEM](/windows/win32/api/commctrl/ns
     }
 ```
 
-## <a name="setitemindexstate"></a>  CListCtrl::SetItemIndexState
+## <a name="setitemindexstate"></a> CListCtrl::SetItemIndexState
 
 Sets the state of an item in the current list-view control.
 
@@ -3573,7 +3573,7 @@ For more information about the *dwMask* parameter, see the *stateMask* member of
 
 This method sends the [LVM_SETITEMINDEXSTATE](/windows/win32/Controls/lvm-setitemindexstate) message, which is described in the Windows SDK.
 
-## <a name="setitemposition"></a>  CListCtrl::SetItemPosition
+## <a name="setitemposition"></a> CListCtrl::SetItemPosition
 
 Moves an item to a specified position in a list view control.
 
@@ -3605,7 +3605,7 @@ If the list view control has the LVS_AUTOARRANGE style, the list view is arrange
 
 See the example for [CListCtrl::GetItemPosition](#getitemposition).
 
-## <a name="setitemstate"></a>  CListCtrl::SetItemState
+## <a name="setitemstate"></a> CListCtrl::SetItemState
 
 Changes the state of an item in a list view control.
 
@@ -3646,7 +3646,7 @@ An item's "state" is a value that specifies the item's availability, indicates u
 
 See the example for [CListCtrl::GetTopIndex](#gettopindex).
 
-## <a name="setitemtext"></a>  CListCtrl::SetItemText
+## <a name="setitemtext"></a> CListCtrl::SetItemText
 
 Changes the text of a list view item or subitem.
 
@@ -3680,7 +3680,7 @@ This method is not intended for use with controls containing the LVS_OWNERDATA w
 
 See the example for [CListCtrl::InsertItem](#insertitem).
 
-## <a name="setoutlinecolor"></a>  CListCtrl::SetOutlineColor
+## <a name="setoutlinecolor"></a> CListCtrl::SetOutlineColor
 
 Sets the color of the border of a list-view control if the [LVS_EX_BORDERSELECT](/windows/win32/Controls/list-view-window-styles) extended window style is set.
 
@@ -3701,7 +3701,7 @@ The previous `COLORREF` structure containing the outline color
 
 This member function emulates the functionality of the [LVM_SETOUTLINECOLOR](/windows/win32/Controls/lvm-setoutlinecolor) message, as described in the Windows SDK.
 
-## <a name="setselectedcolumn"></a>  CListCtrl::SetSelectedColumn
+## <a name="setselectedcolumn"></a> CListCtrl::SetSelectedColumn
 
 Sets the selected column of the list view control.
 
@@ -3722,7 +3722,7 @@ The return value is not used.
 
 This member function emulates the functionality of the [LVM_SETSELECTEDCOLUMN](/windows/win32/Controls/lvm-setselectedcolumn) message, as described in the Windows SDK.
 
-## <a name="setselectionmark"></a>  CListCtrl::SetSelectionMark
+## <a name="setselectionmark"></a> CListCtrl::SetSelectionMark
 
 Sets the selection mark of a list view control.
 
@@ -3747,7 +3747,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetSe
 
 See the example for [CListCtrl::GetSelectionMark](#getselectionmark).
 
-## <a name="settextbkcolor"></a>  CListCtrl::SetTextBkColor
+## <a name="settextbkcolor"></a> CListCtrl::SetTextBkColor
 
 Sets the background color of text in a list view control.
 
@@ -3773,7 +3773,7 @@ Nonzero if successful; otherwise zero.
         ASSERT(m_myListCtrl.GetTextBkColor() == crBkColor);
 ```
 
-## <a name="settextcolor"></a>  CListCtrl::SetTextColor
+## <a name="settextcolor"></a> CListCtrl::SetTextColor
 
 Sets the text color of a list view control.
 
@@ -3800,7 +3800,7 @@ Nonzero if successful; otherwise zero.
     ASSERT(m_myListCtrl.GetTextColor() == crTextColor);
 ```
 
-## <a name="settileinfo"></a>  CListCtrl::SetTileInfo
+## <a name="settileinfo"></a> CListCtrl::SetTileInfo
 
 Sets the information for a tile of the list view control.
 
@@ -3821,7 +3821,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function emulates the functionality of the [LVM_SETTILEINFO](/windows/win32/Controls/lvm-settileinfo) message, as described in the Windows SDK.
 
-## <a name="settileviewinfo"></a>  CListCtrl::SetTileViewInfo
+## <a name="settileviewinfo"></a> CListCtrl::SetTileViewInfo
 
 Sets information that a list view control uses in tile view.
 
@@ -3842,7 +3842,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function emulates the functionality of the [LVM_SETTILEVIEWINFO](/windows/win32/Controls/lvm-settileviewinfo) message, as described in the Windows SDK.
 
-## <a name="settooltips"></a>  CListCtrl::SetToolTips
+## <a name="settooltips"></a> CListCtrl::SetToolTips
 
 Sets the tooltip control that the list view control will use to display tooltips.
 
@@ -3865,7 +3865,7 @@ This member function implements the behavior of the Win32 message [LVM_SETTOOLTI
 
 To not use tooltips, indicate the LVS_NOTOOLTIPS style when you create the `CListCtrl` object.
 
-## <a name="setview"></a>  CListCtrl::SetView
+## <a name="setview"></a> CListCtrl::SetView
 
 Sets the view of the list view control.
 
@@ -3886,7 +3886,7 @@ Returns 1 if successful, or -1 otherwise. For example, -1 is returned if the vie
 
 This member function emulates the functionality of the [LVM_SETVIEW](/windows/win32/Controls/lvm-setview) message, as described in the Windows SDK.
 
-## <a name="setworkareas"></a>  CListCtrl::SetWorkAreas
+## <a name="setworkareas"></a> CListCtrl::SetWorkAreas
 
 Sets the area where icons can be displayed in a list view control.
 
@@ -3915,7 +3915,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetWo
     m_myListCtrl.SetWorkAreas(0, NULL);
 ```
 
-## <a name="sortgroups"></a>  CListCtrl::SortGroups
+## <a name="sortgroups"></a> CListCtrl::SortGroups
 
 Uses an application-defined comparison function to sort groups by ID within a list view control.
 
@@ -3941,7 +3941,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function emulates the functionality of the [LVM_SORTGROUPS](/windows/win32/Controls/lvm-sortgroups) message, as described in the Windows SDK.
 
-## <a name="sortitems"></a>  CListCtrl::SortItems
+## <a name="sortitems"></a> CListCtrl::SortItems
 
 Sorts list view items by using an application-defined comparison function.
 
@@ -4005,7 +4005,7 @@ void CListCtrlDlg::Sort()
 }
 ```
 
-## <a name="sortitemsex"></a>  CListCtrl::SortItemsEx
+## <a name="sortitemsex"></a> CListCtrl::SortItemsEx
 
 Sorts the items of the current list-view control by using an application-defined comparison function.
 
@@ -4043,7 +4043,7 @@ This message is like [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems), exc
 The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.
 
 > [!NOTE]
->  During the sorting process, the list-view contents are unstable. If the callback function sends any messages to the list-view control other than [LVM_GETITEM](/windows/win32/Controls/lvm-getitem), the results are unpredictable.
+> During the sorting process, the list-view contents are unstable. If the callback function sends any messages to the list-view control other than [LVM_GETITEM](/windows/win32/Controls/lvm-getitem), the results are unpredictable.
 
 This method sends the [LVM_SORTITEMSEX](/windows/win32/Controls/lvm-sortitemsex) message, which is described in the Windows SDK.
 
@@ -4091,7 +4091,7 @@ void CCListCtrl_s2Dlg::OnBnClickedButton1()
 }
 ```
 
-## <a name="subitemhittest"></a>  CListCtrl::SubItemHitTest
+## <a name="subitemhittest"></a> CListCtrl::SubItemHitTest
 
 Determines which list view item, if any, is at a given position.
 
@@ -4132,7 +4132,7 @@ void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 }
 ```
 
-## <a name="update"></a>  CListCtrl::Update
+## <a name="update"></a> CListCtrl::Update
 
 Forces the list view control to repaint the item specified by *nItem*.
 

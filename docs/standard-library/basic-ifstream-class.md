@@ -93,7 +93,7 @@ This is the contents of basic_ifstream_class.txt.
 
 **Namespace:** std
 
-## <a name="basic_ifstream"></a>  basic_ifstream::basic_ifstream
+## <a name="basic_ifstream"></a> basic_ifstream::basic_ifstream
 
 Constructs an object of type `basic_ifstream`.
 
@@ -157,7 +157,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## <a name="close"></a>  basic_ifstream::close
+## <a name="close"></a> basic_ifstream::close
 
 Closes a file.
 
@@ -173,7 +173,7 @@ The member function calls [rdbuf](#rdbuf) **->** [close](../standard-library/bas
 
 See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `close`.
 
-## <a name="is_open"></a>  basic_ifstream::is_open
+## <a name="is_open"></a> basic_ifstream::is_open
 
 Determines if a file is open.
 
@@ -193,7 +193,7 @@ The member function returns [rdbuf](#rdbuf) **->** [is_open](../standard-library
 
 See [basic_filebuf::is_open](../standard-library/basic-filebuf-class.md#is_open) for an example that uses `is_open`.
 
-## <a name="open"></a>  basic_ifstream::open
+## <a name="open"></a> basic_ifstream::open
 
 Opens a file.
 
@@ -236,7 +236,7 @@ The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basi
 
 See [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) for an example that uses `open`.
 
-## <a name="op_eq"></a>  basic_ifstream::operator=
+## <a name="op_eq"></a> basic_ifstream::operator=
 
 Assigns the content of this stream object. This is a move assignment involving an rvalue that does not leave a copy behind.
 
@@ -257,7 +257,7 @@ Returns `*this`.
 
 The member operator replaces the contents of the object by using the contents of *right*, treated as an rvalue reference. For more information, see [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md).
 
-## <a name="rdbuf"></a>  basic_ifstream::rdbuf
+## <a name="rdbuf"></a> basic_ifstream::rdbuf
 
 Returns the address of the stored stream buffer.
 
@@ -273,7 +273,7 @@ A pointer to a [basic_filebuf](../standard-library/basic-filebuf-class.md) objec
 
 See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `rdbuf`.
 
-## <a name="swap"></a>  basic_ifstream::swap
+## <a name="swap"></a> basic_ifstream::swap
 
 Exchanges the contents of two `basic_ifstream` objects.
 

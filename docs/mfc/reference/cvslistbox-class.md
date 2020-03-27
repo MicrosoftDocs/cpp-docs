@@ -77,7 +77,7 @@ For more information, see the Samples directory, the `New Controls` sample, the 
 
 **Header:** afxvslistbox.h
 
-##  <a name="additem"></a>  CVSListBox::AddItem
+## <a name="additem"></a> CVSListBox::AddItem
 
 Adds a string to a list control.
 
@@ -107,7 +107,7 @@ The zero-based index of the position of the string in the list control.
 
 Use the [CVSListBox::GetItemData](#getitemdata) method to retrieve the value that is specified by the *dwData* parameter. This value can be an application-specific integer or a pointer to other data.
 
-##  <a name="cvslistbox"></a>  CVSListBox::CVSListBox
+## <a name="cvslistbox"></a> CVSListBox::CVSListBox
 
 Constructs a `CVSListBox` object.
 
@@ -119,7 +119,7 @@ CVSListBox();
 
 ### Remarks
 
-##  <a name="edititem"></a>  CVSListBox::EditItem
+## <a name="edititem"></a> CVSListBox::EditItem
 
 Starts an edit operation on the text of a list control item.
 
@@ -140,7 +140,7 @@ TRUE if the edit operation starts successfully; otherwise, FALSE.
 
 The user starts an edit operation either by double-clicking the label of an item, or by pressing the **F2** or **SPACEBAR** key when an item has the focus.
 
-##  <a name="getcount"></a>  CVSListBox::GetCount
+## <a name="getcount"></a> CVSListBox::GetCount
 
 Retrieves the number of strings in an editable list control.
 
@@ -156,7 +156,7 @@ The number of items in the list control.
 
 Note that the count is one greater than the index value of the last item because the index is zero-based.
 
-##  <a name="getitemdata"></a>  CVSListBox::GetItemData
+## <a name="getitemdata"></a> CVSListBox::GetItemData
 
 Retrieves an application-specific 32-bit value that is associated with an editable list control item.
 
@@ -177,7 +177,7 @@ The 32-bit value that is associated with the specified item.
 
 Use the [CVSListBox::SetItemData](#setitemdata) or [CVSListBox::AddItem](#additem) method to associate the 32-bit value with the list control item. This value can be an application-specific integer or a pointer to other data.
 
-##  <a name="getitemtext"></a>  CVSListBox::GetItemText
+## <a name="getitemtext"></a> CVSListBox::GetItemText
 
 Retrieves the text of an editable list control item.
 
@@ -196,7 +196,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that contai
 
 ### Remarks
 
-##  <a name="getlisthwnd"></a>  CVSListBox::GetListHwnd
+## <a name="getlisthwnd"></a> CVSListBox::GetListHwnd
 
 Returns the handle to the current embedded list view control.
 
@@ -212,7 +212,7 @@ A handle to the embedded list view control.
 
 Use this method to retrieve a handle to the embedded list view control that supports the `CVSListBox` class.
 
-##  <a name="getselitem"></a>  CVSListBox::GetSelItem
+## <a name="getselitem"></a> CVSListBox::GetSelItem
 
 Retrieves the zero-based index of the currently selected item in an editable list control.
 
@@ -226,7 +226,7 @@ If this method is successful, the zero-based index of the currently selected ite
 
 ### Remarks
 
-##  <a name="removeitem"></a>  CVSListBox::RemoveItem
+## <a name="removeitem"></a> CVSListBox::RemoveItem
 
 Removes an item from an editable list control.
 
@@ -245,7 +245,7 @@ TRUE if the specified item is removed; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="selectitem"></a>  CVSListBox::SelectItem
+## <a name="selectitem"></a> CVSListBox::SelectItem
 
 Selects an editable list control string.
 
@@ -266,7 +266,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 This method selects the specified item, and if it is required, scrolls the item into view.
 
-##  <a name="setitemdata"></a>  CVSListBox::SetItemData
+## <a name="setitemdata"></a> CVSListBox::SetItemData
 
 Associates an application-specific 32-bit value with an editable list control item.
 

@@ -10,7 +10,7 @@ ms.assetid: bc9607e8-7c6b-44ef-949b-19e917b450ad
 |-|
 |[swap](#sstream_swap)|
 
-## <a name="sstream_swap"></a>  swap
+## <a name="sstream_swap"></a> swap
 
 Exchanges the values between two `sstream` objects.
 

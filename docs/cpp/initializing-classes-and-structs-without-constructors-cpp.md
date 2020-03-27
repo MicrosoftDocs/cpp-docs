@@ -4,7 +4,6 @@ description: "Use brace initialization with any C++ class, struct or union"
 ms.date: "11/19/2019"
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
 ---
-
 # Brace initialization
 
 It is not always necessary to define a constructor for a class, especially ones that are relatively simple. Users can initialize objects of a class or struct by using uniform initialization, as shown in the following example:
@@ -142,7 +141,7 @@ initializer_list<int> int_list{5, 6, 7};
 ```
 
 > [!IMPORTANT]
->  To use this class, you must include the [\<initializer_list>](../standard-library/initializer-list.md) header.
+> To use this class, you must include the [\<initializer_list>](../standard-library/initializer-list.md) header.
 
 An `initializer_list` can be copied. In this case, the members of the new list are references to the members of the original list:
 

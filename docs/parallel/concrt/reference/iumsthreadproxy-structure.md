@@ -39,7 +39,7 @@ struct IUMSThreadProxy : public IThreadProxy;
 
 **Namespace:** concurrency
 
-## <a name="entercriticalregion"></a>  IUMSThreadProxy::EnterCriticalRegion Method
+## <a name="entercriticalregion"></a> IUMSThreadProxy::EnterCriticalRegion Method
 
 Called in order to enter a critical region. When inside a critical region, the scheduler will not observe asynchronous blocking operations that happen during the region. This means that the scheduler will not be reentered for page faults, thread suspensions, kernel asynchronous procedure calls (APCs), and so forth, for a UMS thread.
 
@@ -51,7 +51,7 @@ virtual int EnterCriticalRegion() = 0;
 
 The new depth of critical region. Critical regions are reentrant.
 
-## <a name="enterhypercriticalregion"></a>  IUMSThreadProxy::EnterHyperCriticalRegion Method
+## <a name="enterhypercriticalregion"></a> IUMSThreadProxy::EnterHyperCriticalRegion Method
 
 Called in order to enter a hyper-critical region. When inside a hyper-critical region, the scheduler will not observe any blocking operations that happen during the region. This means the scheduler will not be reentered for blocking function calls, lock acquisition attempts which block, page faults, thread suspensions, kernel asynchronous procedure calls (APCs), and so forth, for a UMS thread.
 
@@ -67,7 +67,7 @@ The new depth of hyper-critical region. Hyper-critical regions are reentrant.
 
 The scheduler must be extraordinarily careful about what methods it calls and what locks it acquires in such regions. If code in such a region blocks on a lock that is held by something the scheduler is responsible for scheduling, deadlock may ensue.
 
-## <a name="exitcriticalregion"></a>  IUMSThreadProxy::ExitCriticalRegion Method
+## <a name="exitcriticalregion"></a> IUMSThreadProxy::ExitCriticalRegion Method
 
 Called in order to exit a critical region.
 
@@ -79,7 +79,7 @@ virtual int ExitCriticalRegion() = 0;
 
 The new depth of critical region. Critical regions are reentrant.
 
-## <a name="exithypercriticalregion"></a>  IUMSThreadProxy::ExitHyperCriticalRegion Method
+## <a name="exithypercriticalregion"></a> IUMSThreadProxy::ExitHyperCriticalRegion Method
 
 Called in order to exit a hyper-critical region.
 
@@ -91,7 +91,7 @@ virtual int ExitHyperCriticalRegion() = 0;
 
 The new depth of hyper-critical region. Hyper-critical regions are reentrant.
 
-## <a name="getcriticalregiontype"></a>  IUMSThreadProxy::GetCriticalRegionType Method
+## <a name="getcriticalregiontype"></a> IUMSThreadProxy::GetCriticalRegionType Method
 
 Returns what kind of critical region the thread proxy is within. Because hyper-critical regions are a superset of critical regions, if code has entered a critical region and then a hyper-critical region, `InsideHyperCriticalRegion` will be returned.
 

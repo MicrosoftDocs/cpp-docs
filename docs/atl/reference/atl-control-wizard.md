@@ -26,7 +26,7 @@ The registration script produced by this wizard will register its COM components
 Specify the names for the object, interface, and classes to be added to your project. Except for **Short name**, all other boxes can be changed independently. If you change the text for **Short name**, the change is reflected in the names of all other boxes in this page. If you change the **Coclass** name in the COM section, the change is reflected in the **Type** box, but the **Interface** name and **ProgID** do not change. This naming behavior is designed to make all the names easily identifiable for you as you develop your control.
 
 > [!NOTE]
->  **Coclass** is editable on only nonattributed controls. If your project attributed, you cannot edit **Coclass**.
+> **Coclass** is editable on only nonattributed controls. If your project attributed, you cannot edit **Coclass**.
 
 ### C++
 

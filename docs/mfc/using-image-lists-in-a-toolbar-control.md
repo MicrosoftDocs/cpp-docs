@@ -23,7 +23,7 @@ The following example demonstrates this technique by assigning an enabled (`m_To
 [!code-cpp[NVC_MFCControlLadenDialog#35](../mfc/codesnippet/cpp/using-image-lists-in-a-toolbar-control_1.cpp)]
 
 > [!NOTE]
->  The image lists used by the toolbar object must be permanent objects. For this reason, they are commonly data members of an MFC class; in this example, the main frame window class.
+> The image lists used by the toolbar object must be permanent objects. For this reason, they are commonly data members of an MFC class; in this example, the main frame window class.
 
 Once the image lists are associated with the `CToolBarCtrl` object, the framework automatically displays the proper button image.
 

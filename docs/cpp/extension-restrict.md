@@ -22,7 +22,7 @@ For compatibility with previous versions, **_restrict** is a synonym for **__res
 In Visual Studio 2015 and later, **__restrict** can be used on C++ references.
 
 > [!NOTE]
->  When used on a variable that also has the [volatile](../cpp/volatile-cpp.md) keyword, **volatile** will take precedence.
+> When used on a variable that also has the [volatile](../cpp/volatile-cpp.md) keyword, **volatile** will take precedence.
 
 ## Example
 

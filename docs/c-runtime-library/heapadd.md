@@ -14,7 +14,7 @@ ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff
 Adds memory to the heap.
 
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+> This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
 
 ## Syntax
 

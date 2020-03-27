@@ -11,7 +11,7 @@ Because of the size and complexity of the raw OLE API, calling it directly to wr
 
 This article explains the parts of the OLE API that have not been implemented inside MFC. The discussion also explains how what is implemented maps to the OLE section of the Windows SDK.
 
-##  <a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a> Portions of OLE Not Implemented by the Class Library
+## <a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a> Portions of OLE Not Implemented by the Class Library
 
 A few interfaces and features of OLE are not directly provided by MFC. If you want to use these features, you can call the OLE API directly.
 
@@ -28,7 +28,7 @@ In-Process Servers and Object Handlers
 In-process servers and object handlers allow implementation of visual editing data or full Component Object Model (COM) objects in a dynamic-link library (DLL). To do this, you can implement your DLL by calling the OLE API directly. However, if you are writing an Automation server and your server has no user interface, you can use AppWizard to make your server an in-process server and put it completely into a DLL. For more information about these topics, see [Automation Servers](../mfc/automation-servers.md).
 
 > [!TIP]
->  The easiest way to implement an Automation server is to place it in a DLL. MFC supports this approach.
+> The easiest way to implement an Automation server is to place it in a DLL. MFC supports this approach.
 
 For more information on how the Microsoft Foundation OLE classes implement OLE interfaces, see MFC Technical Notes [38](../mfc/tn038-mfc-ole-iunknown-implementation.md), [39](../mfc/tn039-mfc-ole-automation-implementation.md), and [40](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md).
 

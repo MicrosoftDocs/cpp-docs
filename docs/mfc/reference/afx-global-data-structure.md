@@ -325,7 +325,7 @@ ID2D1Factory* GetDirect2dFactory();
 
 A pointer to ID2D1Factory interface if creation of a factory succeeds, or NULL if creation fails or current Operation System don't have D2D support.
 
-## <a name="gethandcursor"></a>  AFX_GLOBAL_DATA::GetHandCursor
+## <a name="gethandcursor"></a> AFX_GLOBAL_DATA::GetHandCursor
 
 Retrieves the predefined cursor that resembles a hand and whose identifier is IDC_HAND.
 

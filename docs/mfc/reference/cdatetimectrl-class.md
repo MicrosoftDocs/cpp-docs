@@ -66,7 +66,7 @@ The date and time picker control also uses notifications and callbacks, which ar
 
 **Header:** afxdtctl.h
 
-##  <a name="cdatetimectrl"></a>  CDateTimeCtrl::CDateTimeCtrl
+## <a name="cdatetimectrl"></a> CDateTimeCtrl::CDateTimeCtrl
 
 Constructs a `CDateTimeCtrl` object.
 
@@ -74,7 +74,7 @@ Constructs a `CDateTimeCtrl` object.
 CDateTimeCtrl();
 ```
 
-##  <a name="closemonthcal"></a>  CDateTimeCtrl::CloseMonthCal
+## <a name="closemonthcal"></a> CDateTimeCtrl::CloseMonthCal
 
 Closes the current date and time picker control.
 
@@ -98,7 +98,7 @@ The following code example closes the drop-down calendar for the current date an
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_2.cpp)]
 
-##  <a name="create"></a>  CDateTimeCtrl::Create
+## <a name="create"></a> CDateTimeCtrl::Create
 
 Creates the date and time picker control and attaches it to the `CDateTimeCtrl` object.
 
@@ -142,7 +142,7 @@ When you call `Create`, the common controls are initialized.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_3.cpp)]
 
-##  <a name="getdatetimepickerinfo"></a>  CDateTimeCtrl::GetDateTimePickerInfo
+## <a name="getdatetimepickerinfo"></a> CDateTimeCtrl::GetDateTimePickerInfo
 
 Retrieves information about the current date and time picker control.
 
@@ -176,7 +176,7 @@ The following code example indicates whether it successfully retrieves informati
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_4.cpp)]
 
-##  <a name="getmonthcalcolor"></a>  CDateTimeCtrl::GetMonthCalColor
+## <a name="getmonthcalcolor"></a> CDateTimeCtrl::GetMonthCalColor
 
 Retrieves the color for a given portion of the month calendar within the date and time picker control.
 
@@ -201,7 +201,7 @@ This member function implements the behavior of the Win32 message [DTM_GETMCCOLO
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_5.cpp)]
 
-##  <a name="getmonthcalctrl"></a>  CDateTimeCtrl::GetMonthCalCtrl
+## <a name="getmonthcalctrl"></a> CDateTimeCtrl::GetMonthCalCtrl
 
 Retrieves the `CMonthCalCtrl` object associated with the date and time picker control.
 
@@ -221,7 +221,7 @@ Date and time picker controls create a child month calendar control when the use
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_6.cpp)]
 
-##  <a name="getmonthcalfont"></a>  CDateTimeCtrl::GetMonthCalFont
+## <a name="getmonthcalfont"></a> CDateTimeCtrl::GetMonthCalFont
 
 Gets the font currently used by the date and time picker control's month calendar control.
 
@@ -237,7 +237,7 @@ A pointer to a [CFont](../../mfc/reference/cfont-class.md) object, or NULL if un
 
 The `CFont` object pointed to by the return value is a temporary object and is destroyed during the next idle processing time.
 
-##  <a name="getmonthcalstyle"></a>  CDateTimeCtrl::GetMonthCalStyle
+## <a name="getmonthcalstyle"></a> CDateTimeCtrl::GetMonthCalStyle
 
 Gets the style of the drop-down month calendar control that is associated with the current date and time picker control.
 
@@ -253,7 +253,7 @@ The style of the drop-down month calendar control, which is a bitwise combinatio
 
 This method sends the [DTM_GETMCSTYLE](/windows/win32/Controls/dtm-getmcstyle) message, which is described in the Windows SDK.
 
-##  <a name="getrange"></a>  CDateTimeCtrl::GetRange
+## <a name="getrange"></a> CDateTimeCtrl::GetRange
 
 Retrieves the current minimum and maximum allowed system times for a date and time picker control.
 
@@ -295,7 +295,7 @@ This member function implements the behavior of the Win32 message [DTM_GETRANGE]
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_7.cpp)]
 
-##  <a name="gettime"></a>  CDateTimeCtrl::GetTime
+## <a name="gettime"></a> CDateTimeCtrl::GetTime
 
 Retrieves the currently selected time from a date and time picker control and puts it in a specified `SYSTEMTIME` structure.
 
@@ -327,7 +327,7 @@ The return value DWORD in the second and third versions, above, indicates whethe
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_8.cpp)]
 
-##  <a name="getidealsize"></a>  CDateTimeCtrl::GetIdealSize
+## <a name="getidealsize"></a> CDateTimeCtrl::GetIdealSize
 
 Returns the ideal size of the date and time picker control that is required to display the current date or time.
 
@@ -361,7 +361,7 @@ The following code example retrieves the ideal size to display the date and time
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_9.cpp)]
 
-##  <a name="setformat"></a>  CDateTimeCtrl::SetFormat
+## <a name="setformat"></a> CDateTimeCtrl::SetFormat
 
 Sets the display of a date and time picker control in accordance with a given format string.
 
@@ -379,7 +379,7 @@ A pointer to a zero-terminated format string that defines the desired display. S
 Nonzero if successful; otherwise 0.
 
 > [!NOTE]
->  User input does not determine success or failure for this call.
+> User input does not determine success or failure for this call.
 
 ### Remarks
 
@@ -389,7 +389,7 @@ This member function implements the behavior of the Win32 message [DTM_SETFORMAT
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#6](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_10.cpp)]
 
-##  <a name="setmonthcalcolor"></a>  CDateTimeCtrl::SetMonthCalColor
+## <a name="setmonthcalcolor"></a> CDateTimeCtrl::SetMonthCalColor
 
 Sets the color for a given portion of the month calendar within a date and time picker control.
 
@@ -428,7 +428,7 @@ This member function implements the behavior of the Win32 message [DTM_SETMCCOLO
 
   See the example for [CDateTimeCtrl::GetMonthCalColor](#getmonthcalcolor).
 
-##  <a name="setmonthcalfont"></a>  CDateTimeCtrl::SetMonthCalFont
+## <a name="setmonthcalfont"></a> CDateTimeCtrl::SetMonthCalFont
 
 Sets the font that the date and time picker control's child month calendar control will use.
 
@@ -455,9 +455,9 @@ This member function implements the behavior of the Win32 message [DTM_SETMCFONT
 [!code-cpp[NVC_MFC_CDateTimeCtrl#7](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_11.cpp)]
 
 > [!NOTE]
->  If you use this code, you'll want to make a member of your `CDialog`-derived class called *m_MonthFont* of type `CFont`.
+> If you use this code, you'll want to make a member of your `CDialog`-derived class called *m_MonthFont* of type `CFont`.
 
-##  <a name="setmonthcalstyle"></a>  CDateTimeCtrl::SetMonthCalStyle
+## <a name="setmonthcalstyle"></a> CDateTimeCtrl::SetMonthCalStyle
 
 Sets the style of the drop-down month calendar control that is associated with the current date and time picker control.
 
@@ -491,7 +491,7 @@ The following code example sets the date and time picker control to display week
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_12.cpp)]
 
-##  <a name="setrange"></a>  CDateTimeCtrl::SetRange
+## <a name="setrange"></a> CDateTimeCtrl::SetRange
 
 Sets the minimum and maximum allowed system times for a date and time picker control.
 
@@ -525,7 +525,7 @@ This member function implements the behavior of the Win32 message [DTM_SETRANGE]
 
   See the example for [CDateTimeCtrl::GetRange](#getrange).
 
-##  <a name="settime"></a>  CDateTimeCtrl::SetTime
+## <a name="settime"></a> CDateTimeCtrl::SetTime
 
 Sets the time in a date and time picker control.
 

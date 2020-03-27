@@ -62,7 +62,7 @@ To use a `CMFCFontComboBox` object in a dialog box, add a `CMFCFontComboBox` var
 
 **Header:** afxfontcombobox.h
 
-##  <a name="cmfcfontcombobox"></a>  CMFCFontComboBox::CMFCFontComboBox
+## <a name="cmfcfontcombobox"></a> CMFCFontComboBox::CMFCFontComboBox
 
 Constructs a `CMFCFontComboBox` object.
 
@@ -74,7 +74,7 @@ CMFCFontComboBox();
 
 ### Remarks
 
-##  <a name="getselfont"></a>  CMFCFontComboBox::GetSelFont
+## <a name="getselfont"></a> CMFCFontComboBox::GetSelFont
 
 Retrieves information about the currently selected font.
 
@@ -88,7 +88,7 @@ A pointer to [CMFCFontInfo Class](../../mfc/reference/cmfcfontinfo-class.md) obj
 
 ### Remarks
 
-##  <a name="m_bdrawusingfont"></a>  CMFCFontComboBox::m_bDrawUsingFont
+## <a name="m_bdrawusingfont"></a> CMFCFontComboBox::m_bDrawUsingFont
 
 Indicates to the framework which font to use to draw the item labels in the current font combo box.
 
@@ -100,7 +100,7 @@ static BOOL m_bDrawUsingFont;
 
 Set this member to TRUE to direct the framework to use the same font to draw each item label. Set this member to FALSE to direct the framework to draw each item label with the font whose name is the same as the label. The default value of this member is FALSE.
 
-##  <a name="selectfont"></a>  CMFCFontComboBox::SelectFont
+## <a name="selectfont"></a> CMFCFontComboBox::SelectFont
 
 Selects the font that matches the specified criteria from the font combo box.
 
@@ -138,7 +138,7 @@ The following example demonstrates how to use the `SelectFont` method in the `CM
 [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#35](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_2.cpp)]
 
-##  <a name="setup"></a>  CMFCFontComboBox::Setup
+## <a name="setup"></a> CMFCFontComboBox::Setup
 
 Initializes the list of items in the font combo box.
 

@@ -71,7 +71,7 @@ For information about deriving Microsoft Foundation classes and C++ classes in g
 
 **Header:** afx.h
 
-##  <a name="assertvalid"></a>  CObject::AssertValid
+## <a name="assertvalid"></a> CObject::AssertValid
 
 Validates this object's integrity.
 
@@ -97,7 +97,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 For another example, see [AfxDoForAllObjects](diagnostic-services.md#afxdoforallobjects).
 
-##  <a name="cobject"></a>  CObject::CObject
+## <a name="cobject"></a> CObject::CObject
 
 These functions are the standard `CObject` constructors.
 
@@ -125,7 +125,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#8](../../mfc/codesnippet/cpp/cobject-class_2.cpp)]
 
-##  <a name="dump"></a>  CObject::Dump
+## <a name="dump"></a> CObject::Dump
 
 Dumps the contents of your object to a [CDumpContext](../../mfc/reference/cdumpcontext-class.md) object.
 
@@ -143,7 +143,7 @@ The diagnostic dump context for dumping, usually `afxDump`.
 When you write your own class, you should override the `Dump` function to provide diagnostic services for yourself and other users of your class. The overridden `Dump` usually calls the `Dump` function of its base class before printing data members unique to the derived class. `CObject::Dump` prints the class name if your class uses the `IMPLEMENT_DYNAMIC` or IMPLEMENT_SERIAL macro.
 
 > [!NOTE]
->  Your `Dump` function should not print a newline character at the end of its output.
+> Your `Dump` function should not print a newline character at the end of its output.
 
 `Dump` calls make sense only in the Debug version of the Microsoft Foundation Class Library. You should bracket calls, function declarations, and function implementations with **#ifdef _DEBUG**/ `#endif` statements for conditional compilation.
 
@@ -159,7 +159,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#9](../../mfc/codesnippet/cpp/cobject-class_3.cpp)]
 
-##  <a name="getruntimeclass"></a>  CObject::GetRuntimeClass
+## <a name="getruntimeclass"></a> CObject::GetRuntimeClass
 
 Returns the `CRuntimeClass` structure corresponding to this object's class.
 
@@ -195,7 +195,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#10](../../mfc/codesnippet/cpp/cobject-class_4.cpp)]
 
-##  <a name="iskindof"></a>  CObject::IsKindOf
+## <a name="iskindof"></a> CObject::IsKindOf
 
 Tests this object's relationship to a given class.
 
@@ -224,7 +224,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#11](../../mfc/codesnippet/cpp/cobject-class_5.cpp)]
 
-##  <a name="isserializable"></a>  CObject::IsSerializable
+## <a name="isserializable"></a> CObject::IsSerializable
 
 Tests whether this object is eligible for serialization.
 
@@ -241,7 +241,7 @@ Nonzero if this object can be serialized; otherwise 0.
 For a class to be serializable, its declaration must contain the [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro, and the implementation must contain the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro.
 
 > [!NOTE]
->  Do not override this function.
+> Do not override this function.
 
 ### Example
 
@@ -249,7 +249,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#12](../../mfc/codesnippet/cpp/cobject-class_6.cpp)]
 
-##  <a name="operator_delete"></a>  CObject::operator delete
+## <a name="operator_delete"></a> CObject::operator delete
 
 For the Release version of the library, operator **delete** frees the memory allocated by operator **new**.
 
@@ -286,7 +286,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#15](../../mfc/codesnippet/cpp/cobject-class_8.cpp)]
 
-##  <a name="operator_new"></a>  CObject::operator new
+## <a name="operator_new"></a> CObject::operator new
 
 For the Release version of the library, operator **new** performs an optimal memory allocation in a manner similar to `malloc`.
 
@@ -313,7 +313,7 @@ before any of your implementations in a .CPP file, then the second version of **
 Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.
 
 > [!NOTE]
->  If you override this operator, you must also override **delete**. Do not use the standard library `_new_handler` function.
+> If you override this operator, you must also override **delete**. Do not use the standard library `_new_handler` function.
 
 ### Example
 
@@ -321,7 +321,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#16](../../mfc/codesnippet/cpp/cobject-class_9.h)]
 
-##  <a name="serialize"></a>  CObject::Serialize
+## <a name="serialize"></a> CObject::Serialize
 
 Reads or writes this object from or to an archive.
 

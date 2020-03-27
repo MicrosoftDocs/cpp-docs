@@ -10,7 +10,7 @@ ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
 This class provides methods for implementing a snap-in property page object.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 
 **Header:** atlsnap.h
 
-##  <a name="canceltoclose"></a>  CSnapInPropertyPageImpl::CancelToClose
+## <a name="canceltoclose"></a> CSnapInPropertyPageImpl::CancelToClose
 
 Call this function after an unrecoverable change has been made to the data in a page of a modal property sheet.
 
@@ -78,7 +78,7 @@ This function will change the **OK** button to **Close** and disable the **Cance
 
 The `CancelToClose` member function does nothing in a modeless property sheet, because a modeless property sheet does not have a **Cancel** button by default.
 
-##  <a name="csnapinpropertypageimpl"></a>  CSnapInPropertyPageImpl::CSnapInPropertyPageImpl
+## <a name="csnapinpropertypageimpl"></a> CSnapInPropertyPageImpl::CSnapInPropertyPageImpl
 
 Constructs a `CSnapInPropertyPageImpl` object.
 
@@ -95,7 +95,7 @@ CSnapInPropertyPageImpl(LPCTSTR lpszTitle = NULL);
 
 To initialize the underlying structure, call [CSnapInPropertyPageImpl::Create](#create).
 
-##  <a name="create"></a>  CSnapInPropertyPageImpl::Create
+## <a name="create"></a> CSnapInPropertyPageImpl::Create
 
 Call this function to initialize the underlying structure of the property page.
 
@@ -111,7 +111,7 @@ A handle to a `PROPSHEETPAGE` structure containing the attributes of the newly c
 
 You should first call [CSnapInPropertyPageImpl::CSnapInPropertyPageImpl](#csnapinpropertypageimpl) before calling this function.
 
-##  <a name="m_psp"></a>  CSnapInPropertyPageImpl::m_psp
+## <a name="m_psp"></a> CSnapInPropertyPageImpl::m_psp
 
 `m_psp` is a structure whose members store the characteristics of `PROPSHEETPAGE`.
 
@@ -125,7 +125,7 @@ Use this structure to initialize the appearance of a property page after it is c
 
 For more information on this structure, including a listing of its members, see [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) in the Windows SDK.
 
-##  <a name="onapply"></a>  CSnapInPropertyPageImpl::OnApply
+## <a name="onapply"></a> CSnapInPropertyPageImpl::OnApply
 
 This member function is called when the user clicks the **OK** or the **Apply Now** button.
 
@@ -145,7 +145,7 @@ Override this member function to specify what action your program takes when the
 
 The default implementation of `OnApply` returns TRUE.
 
-##  <a name="onhelp"></a>  CSnapInPropertyPageImpl::OnHelp
+## <a name="onhelp"></a> CSnapInPropertyPageImpl::OnHelp
 
 This member function is called when the user clicks the **Help** button for the property page.
 
@@ -157,7 +157,7 @@ void OnHelp();
 
 Override this member function to display help for the property page.
 
-##  <a name="onkillactive"></a>  CSnapInPropertyPageImpl::OnKillActive
+## <a name="onkillactive"></a> CSnapInPropertyPageImpl::OnKillActive
 
 This member function is called when the page is no longer the active page.
 
@@ -173,7 +173,7 @@ Nonzero if data was updated successfully; otherwise 0.
 
 Override this member function to perform special data validation tasks.
 
-##  <a name="onquerycancel"></a>  CSnapInPropertyPageImpl::OnQueryCancel
+## <a name="onquerycancel"></a> CSnapInPropertyPageImpl::OnQueryCancel
 
 This member function is called when the user clicks the **Cancel** button and before the cancel action has taken place.
 
@@ -191,7 +191,7 @@ Override this member function to specify an action the program takes when the us
 
 The default implementation of `OnQueryCancel` returns TRUE.
 
-##  <a name="onreset"></a>  CSnapInPropertyPageImpl::OnReset
+## <a name="onreset"></a> CSnapInPropertyPageImpl::OnReset
 
 This member function is called when the user clicks the **Cancel** button.
 
@@ -205,7 +205,7 @@ When this function is called, changes to all property pages that were made by th
 
 Override this member function to specify what action the program takes when the user clicks the **Cancel** button.
 
-##  <a name="onsetactive"></a>  CSnapInPropertyPageImpl::OnSetActive
+## <a name="onsetactive"></a> CSnapInPropertyPageImpl::OnSetActive
 
 This member function is called when the page is chosen by the user and becomes the active page.
 
@@ -223,7 +223,7 @@ Override this member function to perform tasks when a page is activated. Your ov
 
 The default implementation returns TRUE.
 
-##  <a name="onwizardback"></a>  CSnapInPropertyPageImpl::OnWizardBack
+## <a name="onwizardback"></a> CSnapInPropertyPageImpl::OnWizardBack
 
 This member function is called when the user clicks the **Back** button in a wizard.
 
@@ -243,7 +243,7 @@ To jump to a page other than the next one, return the identifier of the dialog b
 
 Override this member function to specify some action the user must take when the **Back** button is clicked.
 
-##  <a name="onwizardfinish"></a>  CSnapInPropertyPageImpl::OnWizardFinish
+## <a name="onwizardfinish"></a> CSnapInPropertyPageImpl::OnWizardFinish
 
 This member function is called when the user clicks the **Finish** button in a wizard.
 
@@ -259,7 +259,7 @@ Nonzero if the property sheet is destroyed when the wizard finishes; otherwise z
 
 Override this member function to specify some action the user must take when the **Finish** button is clicked.
 
-##  <a name="onwizardnext"></a>  CSnapInPropertyPageImpl::OnWizardNext
+## <a name="onwizardnext"></a> CSnapInPropertyPageImpl::OnWizardNext
 
 This member function is called when the user clicks the **Next** button in a wizard.
 
@@ -279,7 +279,7 @@ To jump to a page other than the next one, return the identifier of the dialog b
 
 Override this member function to specify some action the user must take when the **Next** button is clicked.
 
-##  <a name="querysiblings"></a>  CSnapInPropertyPageImpl::QuerySiblings
+## <a name="querysiblings"></a> CSnapInPropertyPageImpl::QuerySiblings
 
 Call this member function to forward a message to each page in the property sheet.
 
@@ -303,7 +303,7 @@ Nonzero if the message should not be forwarded to the next property page; otherw
 
 If a page returns a nonzero value, the property sheet does not send the message to subsequent pages.
 
-##  <a name="setmodified"></a>  CSnapInPropertyPageImpl::SetModified
+## <a name="setmodified"></a> CSnapInPropertyPageImpl::SetModified
 
 Call this member function to enable or disable the **Apply Now** button, based on whether the settings in the property page should be applied to the appropriate external object.
 

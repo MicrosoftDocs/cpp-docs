@@ -53,7 +53,7 @@ For timing routines:
 |[omp_get_wtime](#omp-get-wtime)|Returns a value in seconds of the time elapsed from some point.|
 |[omp_get_wtick](#omp-get-wtick)|Returns the number of seconds between processor clock ticks.|
 
-## <a name="omp-destroy-lock"></a>omp_destroy_lock
+## <a name="omp-destroy-lock"></a> omp_destroy_lock
 
 Uninitializes a lock.
 
@@ -76,7 +76,7 @@ For more information, see [3.2.2 omp_destroy_lock and omp_destroy_nest_lock func
 
 See [omp_init_lock](#omp-init-lock) for an example of using `omp_destroy_lock`.
 
-## <a name="omp-destroy-nest-lock"></a>omp_destroy_nest_lock
+## <a name="omp-destroy-nest-lock"></a> omp_destroy_nest_lock
 
 Uninitializes a nestable lock.
 
@@ -99,7 +99,7 @@ For more information, see [3.2.2 omp_destroy_lock and omp_destroy_nest_lock func
 
 See [omp_init_nest_lock](#omp-init-nest-lock) for an example of using `omp_destroy_nest_lock`.
 
-## <a name="omp-get-dynamic"></a>omp_get_dynamic
+## <a name="omp-get-dynamic"></a> omp_get_dynamic
 
 Returns a value that indicates if the number of threads available in upcoming parallel regions can be adjusted by the run time.
 
@@ -121,7 +121,7 @@ For more information, see [3.1.7 omp_set_dynamic function](../../../parallel/ope
 
 See [omp_set_dynamic](#omp-set-dynamic) for an example of using `omp_get_dynamic`.
 
-## <a name="omp-get-max-threads"></a>omp_get_max_threads
+## <a name="omp-get-max-threads"></a> omp_get_max_threads
 
 Returns an integer that is equal to or greater than the number of threads that would be available if a parallel region without [num_threads](openmp-clauses.md#num-threads) were defined at that point in the code.
 
@@ -171,7 +171,7 @@ int main( )
 8
 ```
 
-## <a name="omp-get-nested"></a>omp_get_nested
+## <a name="omp-get-nested"></a> omp_get_nested
 
 Returns a value that indicates if nested parallelism is enabled.
 
@@ -193,7 +193,7 @@ For more information, see [3.1.10 omp_get_nested function](../../../parallel/ope
 
 See [omp_set_nested](#omp-set-nested) for an example of using `omp_get_nested`.
 
-## <a name="omp-get-num-procs"></a>omp_get_num_procs
+## <a name="omp-get-num-procs"></a> omp_get_num_procs
 
 Returns the number of processors that are available when the function is called.
 
@@ -230,7 +230,7 @@ int main( )
 2
 ```
 
-## <a name="omp-get-num-threads"></a>omp_get_num_threads
+## <a name="omp-get-num-threads"></a> omp_get_num_threads
 
 Returns the number of threads in the parallel region.
 
@@ -280,7 +280,7 @@ int main()
 1
 ```
 
-## <a name="omp-get-thread-num"></a>omp_get_thread_num
+## <a name="omp-get-thread-num"></a> omp_get_thread_num
 
 Returns the thread number of the thread executing within its thread team.
 
@@ -296,7 +296,7 @@ For more information, see [3.1.4 omp_get_thread_num function](../../../parallel/
 
 See [parallel](openmp-directives.md#parallel) for an example of using `omp_get_thread_num`.
 
-## <a name="omp-get-wtick"></a>omp_get_wtick
+## <a name="omp-get-wtick"></a> omp_get_wtick
 
 Returns the number of seconds between processor clock ticks.
 
@@ -312,7 +312,7 @@ For more information, see [3.3.2 omp_get_wtick function](../../../parallel/openm
 
 See [omp_get_wtime](#omp-get-wtime) for an example of using `omp_get_wtick`.
 
-## <a name="omp-get-wtime"></a>omp_get_wtime
+## <a name="omp-get-wtime"></a> omp_get_wtime
 
 Returns a value in seconds of the time elapsed from some point.
 
@@ -361,7 +361,7 @@ wtick = 2.793651148400146e-007
 1/wtick = 3579545
 ```
 
-## <a name="omp-in-parallel"></a>omp_in_parallel
+## <a name="omp-in-parallel"></a> omp_in_parallel
 
 Returns nonzero if called from within a parallel region.
 
@@ -399,7 +399,7 @@ int main( )
 1
 ```
 
-## <a name="omp-init-lock"></a>omp_init_lock
+## <a name="omp-init-lock"></a> omp_init_lock
 
 Initializes a simple lock.
 
@@ -491,7 +491,7 @@ Thread 3 - starting locked region
 Thread 3 - ending locked region
 ```
 
-## <a name="omp-init-nest-lock"></a>omp_init_nest_lock
+## <a name="omp-init-nest-lock"></a> omp_init_nest_lock
 
 Initializes a lock.
 
@@ -576,7 +576,7 @@ Thread 0 - starting nested locked region
 Thread 0 - ending nested locked region
 ```
 
-## <a name="omp-set-dynamic"></a>omp_set_dynamic
+## <a name="omp-set-dynamic"></a> omp_set_dynamic
 
 Indicates that the number of threads available in upcoming parallel regions can be adjusted by the run time.
 
@@ -627,7 +627,7 @@ int main()
 1
 ```
 
-## <a name="omp-set-lock"></a>omp_set_lock
+## <a name="omp-set-lock"></a> omp_set_lock
 
 Blocks thread execution until a lock is available.
 
@@ -650,7 +650,7 @@ For more information, see [3.2.3 omp_set_lock and omp_set_nest_lock functions](.
 
 See [omp_init_lock](#omp-init-lock) for an example of using `omp_set_lock`.
 
-## <a name="omp-set-nest-lock"></a>omp_set_nest_lock
+## <a name="omp-set-nest-lock"></a> omp_set_nest_lock
 
 Blocks thread execution until a lock is available.
 
@@ -673,7 +673,7 @@ For more information, see [3.2.3 omp_set_lock and omp_set_nest_lock functions](.
 
 See [omp_init_nest_lock](#omp-init-nest-lock) for an example of using `omp_set_nest_lock`.
 
-## <a name="omp-set-nested"></a>omp_set_nested
+## <a name="omp-set-nested"></a> omp_set_nested
 
 Enables nested parallelism.
 
@@ -726,7 +726,7 @@ int main( )
 1
 ```
 
-## <a name="omp-set-num-threads"></a>omp_set_num_threads
+## <a name="omp-set-num-threads"></a> omp_set_num_threads
 
 Sets the number of threads in upcoming parallel regions, unless overridden by a [num_threads](openmp-clauses.md#num-threads) clause.
 
@@ -749,7 +749,7 @@ For more information, see [3.1.1 omp_set_num_threads function](../../../parallel
 
 See [omp_get_num_threads](#omp-get-num-threads) for an example of using `omp_set_num_threads`.
 
-## <a name="omp-test-lock"></a>omp_test_lock
+## <a name="omp-test-lock"></a> omp_test_lock
 
 Attempts to set a lock but doesn't block thread execution.
 
@@ -822,7 +822,7 @@ Thread 3 - acquired simple_lock
 Thread 3 - released simple_lock
 ```
 
-## <a name="omp-test-nest-lock"></a>omp_test_nest_lock
+## <a name="omp-test-nest-lock"></a> omp_test_nest_lock
 
 Attempts to set a nestable lock but doesn't block thread execution.
 
@@ -913,7 +913,7 @@ Thread 2 - released nestable_lock
 Thread 2 - released nestable_lock
 ```
 
-## <a name="omp-unset-lock"></a>omp_unset_lock
+## <a name="omp-unset-lock"></a> omp_unset_lock
 
 Releases a lock.
 
@@ -936,7 +936,7 @@ For more information, see [3.2.4 omp_unset_lock and omp_unset_nest_lock function
 
 See [omp_init_lock](#omp-init-lock) for an example of using `omp_unset_lock`.
 
-## <a name="omp-unset-nest-lock"></a>omp_unset_nest_lock
+## <a name="omp-unset-nest-lock"></a> omp_unset_nest_lock
 
 Releases a nestable lock.
 

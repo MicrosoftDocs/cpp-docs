@@ -4,7 +4,6 @@ ms.description: "Customize C++ formatting, colors, layout, line numbers, and men
 ms.topic: "overview"
 ms.date: "09/27/2019"
 ---
-
 # Set your C++ coding preferences in Visual Studio
 
 You can make your C++ coding experience more convenient, productive, and pleasurable by personalizing Visual Studio. You can:

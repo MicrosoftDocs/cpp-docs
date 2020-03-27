@@ -15,7 +15,7 @@ The increment and decrement operators fall into a special category because there
 When you write overloaded operator functions, it can be useful to implement separate versions for the prefix and postfix versions of these operators. To distinguish between the two, the following rule is observed: The prefix form of the operator is declared exactly the same way as any other unary operator; the postfix form accepts an additional argument of type **int**.
 
 > [!NOTE]
->  When specifying an overloaded operator for the postfix form of the increment or decrement operator, the additional argument must be of type **int**; specifying any other type generates an error.
+> When specifying an overloaded operator for the postfix form of the increment or decrement operator, the additional argument must be of type **int**; specifying any other type generates an error.
 
 The following example shows how to define prefix and postfix increment and decrement operators for the `Point` class:
 

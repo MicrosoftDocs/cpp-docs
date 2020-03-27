@@ -9,14 +9,14 @@ ms.assetid: ecb1b1b2-7e9d-4fbc-a855-16252d2d794c
 These functions provide support for converting to and from pixel and HIMETRIC units.
 
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
+> The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
 |||
 |-|-|
 |[AtlHiMetricToPixel](#atlhimetrictopixel)|Converts HIMETRIC units (each unit is 0.01 millimeter) to pixels.|
 |[AtlPixelToHiMetric](#atlpixeltohimetric)|Converts pixels to HIMETRIC units (each unit is 0.01 millimeter).|
 
-##  <a name="atlhimetrictopixel"></a>  AtlHiMetricToPixel
+## <a name="atlhimetrictopixel"></a> AtlHiMetricToPixel
 
 Converts an object's size in HIMETRIC units (each unit is 0.01 millimeter) to a size in pixels on the screen device.
 
@@ -42,7 +42,7 @@ extern void AtlHiMetricToPixel(
 
 **Header:** atlwin.h
 
-##  <a name="atlpixeltohimetric"></a>  AtlPixelToHiMetric
+## <a name="atlpixeltohimetric"></a> AtlPixelToHiMetric
 
 Converts an object's size in pixels on the screen device to a size in HIMETRIC units (each unit is 0.01 millimeter).
 

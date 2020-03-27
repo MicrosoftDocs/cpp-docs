@@ -10,7 +10,7 @@ ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
 Windows provides a variety of drawing tools to use in device contexts. It provides pens to draw lines, brushes to fill interiors, and fonts to draw text. MFC provides graphic-object classes equivalent to the drawing tools in Windows. The table below shows the available classes and the equivalent Windows graphics device interface (GDI) handle types.
 
 > [!NOTE]
->  For more information, see the [GDI+ SDK documentation](/windows/win32/gdiplus/-gdiplus-gdi-start).
+> For more information, see the [GDI+ SDK documentation](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
 This article explains the use of these graphic-object classes:
 
@@ -26,7 +26,7 @@ This article explains the use of these graphic-object classes:
 |[CRgn](../mfc/reference/crgn-class.md)|**HRGN**|
 
 > [!NOTE]
->  The class [CImage](../atl-mfc-shared/reference/cimage-class.md) provides enhanced bitmap support.
+> The class [CImage](../atl-mfc-shared/reference/cimage-class.md) provides enhanced bitmap support.
 
 Each graphic-object class in the class library has a constructor that allows you to create graphic objects of that class, which you must then initialize with the appropriate create function, such as `CreatePen`.
 
@@ -47,7 +47,7 @@ The following code casts a `CPen` object to a Windows handle:
 1. Allow the frame-allocated graphic object to be deleted automatically when the scope is exited.
 
 > [!NOTE]
->  If you will be using a graphic object repeatedly, you can allocate it once and select it into a device context each time it is needed. Be sure to delete such an object when you no longer need it.
+> If you will be using a graphic object repeatedly, you can allocate it once and select it into a device context each time it is needed. Be sure to delete such an object when you no longer need it.
 
 ### What do you want to know more about
 

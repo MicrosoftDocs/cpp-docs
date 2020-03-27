@@ -11,7 +11,7 @@ This topic is the second in a series of articles that demonstrates the process o
 
 COMSpy is a program that monitors and logs the activity of serviced components on a machine. Serviced components are COM+ components that run on a system and can be used by computers on the same network. They're managed by the Component Services functionality in the Windows Control Panel.
 
-### Step 1. Converting the project file.
+### Step 1. Converting the project file
 
 The project file converts easily and produces a migration report. There are a few entries in the report that let us know about issues we might need to deal with. Here's one issue that is reported (note that throughout this topic, error messages are sometimes shortened for readability, for example to remove the full paths):
 
@@ -137,7 +137,7 @@ virtual ~CWindowImplRoot()
 
 The `hWnd` is normally set to zero in the `WindowProc` function, but that didn't happen because instead of the default `WindowProc`, a custom handler is called for the Windows message (WM_SYSCOMMAND) that closes the window. The custom handler was not setting the `hWnd` to zero. A look at similar code in MFC's `CWnd` class, shows that when a window is being destroyed, `OnNcDestroy` is called, and in MFC, documentation advises that when overriding `CWnd::OnNcDestroy`, the base `NcDestroy` should be called to make sure that the right clean-up operations occur, including separating the window handle from the window, or in other words, setting the `hWnd` to zero. This assert might have been triggered in the original version of the sample as well, since the same assertion code was present in the old version of atlwin.h.
 
-To test the functionality of the app, we created a **Serviced Component** using the ATL project template, chose to add COM+ support in the ATL project wizard. If you haven’t worked with serviced components before, it’s not difficult to create one and get one registered and available on the system or network for other apps to use. The COM Spy app is designed to monitor the activity of serviced components as a diagnostic aid.
+To test the functionality of the app, we created a **Serviced Component** using the ATL project template, chose to add COM+ support in the ATL project wizard. If you haven't worked with serviced components before, it's not difficult to create one and get one registered and available on the system or network for other apps to use. The COM Spy app is designed to monitor the activity of serviced components as a diagnostic aid.
 
 Then we added a class, chose ATL Object, and specified the object name as `Dog`. Then in dog.h and dog.cpp, we added the implementation.
 
@@ -150,7 +150,7 @@ STDMETHODIMP CDog::Wag(LONG* lDuration)
 }
 ```
 
-Next, we built and registered it (you’ll need to run Visual Studio as Administrator), and activated it using the **Serviced Component** application in the Windows Control Panel. We created a C# Windows Forms project, dragged a button to the form from the toolbox, and double-clicked that to a click event handler. We added the following code to instantiate the `Dog` component.
+Next, we built and registered it (you'll need to run Visual Studio as Administrator), and activated it using the **Serviced Component** application in the Windows Control Panel. We created a C# Windows Forms project, dragged a button to the form from the toolbox, and double-clicked that to a click event handler. We added the following code to instantiate the `Dog` component.
 
 ```cpp
 private void button1_Click(object sender, EventArgs e)

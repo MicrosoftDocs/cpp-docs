@@ -8,7 +8,6 @@ f1_keywords:
   - VC.Project.AndroidDebugger.PackagePath
   - VC.Project.AndroidDebugger.LaunchActivity
 ---
-
 # Android debugger properties
 
 | Property | Description | Choices |

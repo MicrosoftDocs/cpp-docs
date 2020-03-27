@@ -18,7 +18,7 @@ These macros define object maps and entries.
 
 **Header:** atlcom.h
 
-##  <a name="declare_object_description"></a>  DECLARE_OBJECT_DESCRIPTION
+## <a name="declare_object_description"></a> DECLARE_OBJECT_DESCRIPTION
 
 Allows you to specify a text description for your class object.
 
@@ -45,7 +45,7 @@ For more information about the ATL Project Wizard, see the article [Creating an 
 
 [!code-cpp[NVC_ATL_Windowing#123](../../atl/codesnippet/cpp/object-map-macros_1.h)]
 
-##  <a name="object_entry_auto"></a>  OBJECT_ENTRY_AUTO
+## <a name="object_entry_auto"></a> OBJECT_ENTRY_AUTO
 
 Enters an ATL object into the object map, updates the registry, and creates an instance of the object.
 
@@ -77,7 +77,7 @@ The table below describes how the information added to the object map is obtaine
 |Component category registration|[Category Macros](../../atl/reference/category-macros.md)|
 |Class-level initialization and cleanup|[ObjectMain](ccomobjectrootex-class.md#objectmain)|
 
-##  <a name="object_entry_non_createable_ex_auto"></a>  OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO
+## <a name="object_entry_non_createable_ex_auto"></a> OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO
 
 Allows you to specify that the object should be registered and initialized, but it should not be externally creatable via `CoCreateInstance`.
 

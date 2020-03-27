@@ -10,7 +10,7 @@ ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8
 This class is used by string conversion macros CA2CTEX and CT2CAEX, and the typedef CA2CA.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -71,7 +71,7 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 **Header:** atlconv.h
 
-##  <a name="ca2caex"></a>  CA2CAEX::CA2CAEX
+## <a name="ca2caex"></a> CA2CAEX::CA2CAEX
 
 The constructor.
 
@@ -92,7 +92,7 @@ Unused in this class.
 
 Creates the buffer required for the translation.
 
-##  <a name="dtor"></a>  CA2CAEX::~CA2CAEX
+## <a name="dtor"></a> CA2CAEX::~CA2CAEX
 
 The destructor.
 
@@ -104,7 +104,7 @@ The destructor.
 
 Frees the allocated buffer.
 
-##  <a name="m_psz"></a>  CA2CAEX::m_psz
+## <a name="m_psz"></a> CA2CAEX::m_psz
 
 The data member that stores the source string.
 
@@ -112,7 +112,7 @@ The data member that stores the source string.
 LPCSTR m_psz;
 ```
 
-##  <a name="operator_lpcstr"></a>  CA2CAEX::operator LPCSTR
+## <a name="operator_lpcstr"></a> CA2CAEX::operator LPCSTR
 
 Conversion operator.
 

@@ -9,10 +9,10 @@ ms.assetid: 760c8889-bec4-482b-a8f2-319792a6af98
 This topic applies to the MFC ODBC classes.
 
 > [!NOTE]
->  You can now add records in bulk more efficiently. For more information, see [Recordset: Adding Records in Bulk (ODBC)](../../data/odbc/recordset-adding-records-in-bulk-odbc.md).
+> You can now add records in bulk more efficiently. For more information, see [Recordset: Adding Records in Bulk (ODBC)](../../data/odbc/recordset-adding-records-in-bulk-odbc.md).
 
 > [!NOTE]
->  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 Updateable snapshots and dynasets allow you to add, edit (update), and delete records. This topic explains:
 
@@ -36,7 +36,7 @@ The following table summarizes the options available for recordsets with differe
 |Append-only|Y|N|N|Y|
 |Fully updatable|Y|Y|Y|Y|
 
-##  <a name="_core_determining_whether_your_recordset_is_updatable"></a> Determining Whether Your Recordset is Updateable
+## <a name="_core_determining_whether_your_recordset_is_updatable"></a> Determining Whether Your Recordset is Updateable
 
 A recordset object is updateable if the data source is updateable and you opened the recordset as updateable. Its updateability also depends on the SQL statement you use, the capabilities of your ODBC driver, and whether the ODBC Cursor Library is in memory. You cannot update a read-only recordset or data source.
 
@@ -61,9 +61,9 @@ if( !rsStudentSet.CanUpdate( ) )
 ```
 
 > [!CAUTION]
->  When you prepare to update a recordset by calling `Update`, take care that your recordset includes all columns making up the primary key of the table (or all of the columns of any unique index on the table). In some cases, the framework can use only the columns selected in your recordset to identify which record in your table to update. Without all the necessary columns, multiple records might be updated in the table, possibly damaging the referential integrity of the table. In this case, the framework throws exceptions when you call `Update`.
+> When you prepare to update a recordset by calling `Update`, take care that your recordset includes all columns making up the primary key of the table (or all of the columns of any unique index on the table). In some cases, the framework can use only the columns selected in your recordset to identify which record in your table to update. Without all the necessary columns, multiple records might be updated in the table, possibly damaging the referential integrity of the table. In this case, the framework throws exceptions when you call `Update`.
 
-##  <a name="_core_adding_a_record_to_a_recordset"></a> Adding a Record to a Recordset
+## <a name="_core_adding_a_record_to_a_recordset"></a> Adding a Record to a Recordset
 
 You can add new records to a recordset if its [CanAppend](../../mfc/reference/crecordset-class.md#canappend) member function returns a nonzero value.
 
@@ -104,9 +104,9 @@ if( !rsStudent.Update( ) )
 ```
 
 > [!TIP]
->  To cancel an `AddNew` or `Edit` call, simply make another call to `AddNew` or `Edit` or call `Move` with the *AFX_MOVE_REFRESH* parameter. Data members are reset to their previous values and you are still in `Edit` or `Add` mode.
+> To cancel an `AddNew` or `Edit` call, simply make another call to `AddNew` or `Edit` or call `Move` with the *AFX_MOVE_REFRESH* parameter. Data members are reset to their previous values and you are still in `Edit` or `Add` mode.
 
-##  <a name="_core_editing_a_record_in_a_recordset"></a> Editing a Record in a Recordset
+## <a name="_core_editing_a_record_in_a_recordset"></a> Editing a Record in a Recordset
 
 You can edit existing records if your recordset's [CanUpdate](../../mfc/reference/crecordset-class.md#canupdate) member function returns a nonzero value.
 
@@ -148,7 +148,7 @@ if( !rsStudent.Update( ) )
 > [!TIP]
 > To cancel an `AddNew` or `Edit` call, simply make another call to `AddNew` or `Edit` or call `Move` with the *AFX_MOVE_REFRESH* parameter. Data members are reset to their previous values and you are still in `Edit` or `Add` mode.
 
-##  <a name="_core_deleting_a_record_from_a_recordset"></a> Deleting a Record from a Recordset
+## <a name="_core_deleting_a_record_from_a_recordset"></a> Deleting a Record from a Recordset
 
 You can delete records if your recordset's [CanUpdate](../../mfc/reference/crecordset-class.md#canupdate) member function returns a nonzero value.
 

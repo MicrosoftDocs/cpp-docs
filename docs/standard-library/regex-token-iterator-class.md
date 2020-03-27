@@ -172,7 +172,7 @@ match == aa
 match == z
 ```
 
-## <a name="difference_type"></a>  regex_token_iterator::difference_type
+## <a name="difference_type"></a> regex_token_iterator::difference_type
 
 The type of an iterator difference.
 
@@ -184,7 +184,7 @@ typedef std::ptrdiff_t difference_type;
 
 The type is a synonym for `std::ptrdiff_t`.
 
-## <a name="iterator_category"></a>  regex_token_iterator::iterator_category
+## <a name="iterator_category"></a> regex_token_iterator::iterator_category
 
 The type of the iterator category.
 
@@ -196,7 +196,7 @@ typedef std::forward_iterator_tag iterator_category;
 
 The type is a synonym for `std::forward_iterator_tag`.
 
-## <a name="op_neq"></a>  regex_token_iterator::operator!=
+## <a name="op_neq"></a> regex_token_iterator::operator!=
 
 Compares iterators for inequality.
 
@@ -213,7 +213,7 @@ The iterator to compare to.
 
 The member function returns `!(*this == right)`.
 
-## <a name="op_star"></a>  regex_token_iterator::operator*
+## <a name="op_star"></a> regex_token_iterator::operator*
 
 Accesses the designated submatch.
 
@@ -225,7 +225,7 @@ const sub_match<BidIt>& operator*();
 
 The member function returns a `sub_match<BidIt>` object representing the capture group identified by the index value `subs[pos]`.
 
-## <a name="op_add_add"></a>  regex_token_iterator::operator++
+## <a name="op_add_add"></a> regex_token_iterator::operator++
 
 Increments the iterator.
 
@@ -241,7 +241,7 @@ If the stored iterator `it` is an end-of-sequence iterator the first operator se
 
 The second operator makes a copy of the object, increments the object, then returns the copy.
 
-## <a name="op_eq_eq"></a>  regex_token_iterator::operator==
+## <a name="op_eq_eq"></a> regex_token_iterator::operator==
 
 Compares iterators for equality.
 
@@ -258,7 +258,7 @@ The iterator to compare to.
 
 The member function returns `it == right.it && subs == right.subs && pos == right.pos`.
 
-## <a name="op_arrow"></a>  regex_token_iterator::operator-&gt;
+## <a name="op_arrow"></a> regex_token_iterator::operator-&gt;
 
 Accesses the designated submatch.
 
@@ -270,7 +270,7 @@ const sub_match<BidIt> * operator->();
 
 The member function returns a pointer to a `sub_match<BidIt>` object representing the capture group identified by the index value `subs[pos]`.
 
-## <a name="pointer"></a>  regex_token_iterator::pointer
+## <a name="pointer"></a> regex_token_iterator::pointer
 
 The type of a pointer to a match.
 
@@ -282,7 +282,7 @@ typedef sub_match<BidIt> *pointer;
 
 The type is a synonym for `sub_match<BidIt>*`, where `BidIt` is the template parameter.
 
-## <a name="reference"></a>  regex_token_iterator::reference
+## <a name="reference"></a> regex_token_iterator::reference
 
 The type of a reference to a submatch.
 
@@ -294,7 +294,7 @@ typedef sub_match<BidIt>& reference;
 
 The type is a synonym for `sub_match<BidIt>&`, where `BidIt` is the template parameter.
 
-## <a name="regex_token_iterator"></a>  regex_token_iterator::regex_token_iterator
+## <a name="regex_token_iterator"></a> regex_token_iterator::regex_token_iterator
 
 Constructs the iterator.
 
@@ -339,7 +339,7 @@ The third constructor constructs an object whose stored iterator `it` is initial
 
 The fourth constructor constructs an object whose stored iterator `it` is initialized to `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)`, whose stored vector `subs` holds the `N` values pointed to by the constructor argument `submatches`, and whose stored value `pos` is zero.
 
-## <a name="regex_type"></a>  regex_token_iterator::regex_type
+## <a name="regex_type"></a> regex_token_iterator::regex_type
 
 The type of the regular expression to match.
 
@@ -351,7 +351,7 @@ typedef basic_regex<Elem, RXtraits> regex_type;
 
 The typedef is a synonym for `basic_regex<Elem, RXtraits>`.
 
-## <a name="value_type"></a>  regex_token_iterator::value_type
+## <a name="value_type"></a> regex_token_iterator::value_type
 
 The type of a submatch.
 

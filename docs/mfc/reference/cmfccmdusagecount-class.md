@@ -64,7 +64,7 @@ You can persist `CMFCCmdUsageCount` class data between runs of your program. Use
 
 **Header:** afxcmdusagecount.h
 
-##  <a name="addcmd"></a>  CMFCCmdUsageCount::AddCmd
+## <a name="addcmd"></a> CMFCCmdUsageCount::AddCmd
 
 Increments by one the counter that is associated with the given command.
 
@@ -91,7 +91,7 @@ This method does nothing in the following cases:
 
 - *uiCmd* refers to a standard command (the global `IsStandardCommand` function returns a nonzero value).
 
-##  <a name="getcount"></a>  CMFCCmdUsageCount::GetCount
+## <a name="getcount"></a> CMFCCmdUsageCount::GetCount
 
 Retrieves the usage count that is associated with the given command ID.
 
@@ -110,7 +110,7 @@ UINT GetCount(UINT uiCmd) const;
 
 The usage count that is associated with the given command ID.
 
-##  <a name="hasenoughinformation"></a>  CMFCCmdUsageCount::HasEnoughInformation
+## <a name="hasenoughinformation"></a> CMFCCmdUsageCount::HasEnoughInformation
 
 Determines whether this object has received the minimum amount of tracking data.
 
@@ -128,7 +128,7 @@ This method returns a nonzero value if the total count, `m_nTotalUsage`, of all 
 
 This method is used by [CMFCMenuBar::IsShowAllCommands](../../mfc/reference/cmfcmenubar-class.md#isshowallcommands) to determine whether to show all available menu commands.
 
-##  <a name="isfreqeuntlyusedcmd"></a>  CMFCCmdUsageCount::IsFreqeuntlyUsedCmd
+## <a name="isfreqeuntlyusedcmd"></a> CMFCCmdUsageCount::IsFreqeuntlyUsedCmd
 
 Determines whether the given command is frequently used.
 
@@ -153,7 +153,7 @@ This method returns 0 if the total command usage, `m_nTotalUsage`, is 0. Otherwi
 
 [CMFCToolBar::IsCommandRarelyUsed](../../mfc/reference/cmfctoolbar-class.md#iscommandrarelyused) uses this method to determine whether a command is rarely used.
 
-##  <a name="reset"></a>  CMFCCmdUsageCount::Reset
+## <a name="reset"></a> CMFCCmdUsageCount::Reset
 
 Clears the usage count of all commands.
 
@@ -165,7 +165,7 @@ void Reset();
 
 Call this method to clear all entries from the map structure of command counts, `m_CmdUsage`, and to reset the total command usage, `m_nTotalUsage`, counter to 0.
 
-##  <a name="serialize"></a>  CMFCCmdUsageCount::Serialize
+## <a name="serialize"></a> CMFCCmdUsageCount::Serialize
 
 Reads this object from an archive, or writes it to an archive.
 
@@ -186,7 +186,7 @@ This method serializes the map structure of command counts, `m_CmdUsage`, and th
 
 For serialization examples, see [Serialization: Serializing an Object](../../mfc/serialization-serializing-an-object.md).
 
-##  <a name="setoptions"></a>  CMFCCmdUsageCount::SetOptions
+## <a name="setoptions"></a> CMFCCmdUsageCount::SetOptions
 
 Sets the values of shared `CMFCCmdUsageCount` class data members.
 

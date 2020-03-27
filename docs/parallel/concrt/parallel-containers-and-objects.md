@@ -20,25 +20,25 @@ Concurrent containers:
 
 - [concurrent_vector Class](#vector)
 
-   - [Differences Between concurrent_vector and vector](#vector-differences)
+  - [Differences Between concurrent_vector and vector](#vector-differences)
 
-   - [Concurrency-Safe Operations](#vector-safety)
+  - [Concurrency-Safe Operations](#vector-safety)
 
-   - [Exception Safety](#vector-exceptions)
+  - [Exception Safety](#vector-exceptions)
 
 - [concurrent_queue Class](#queue)
 
-   - [Differences Between concurrent_queue and queue](#queue-differences)
+  - [Differences Between concurrent_queue and queue](#queue-differences)
 
-   - [Concurrency-Safe Operations](#queue-safety)
+  - [Concurrency-Safe Operations](#queue-safety)
 
-   - [Iterator Support](#queue-iterators)
+  - [Iterator Support](#queue-iterators)
 
 - [concurrent_unordered_map Class](#unordered_map)
 
-   - [Differences Between concurrent_unordered_map and unordered_map](#map-differences)
+  - [Differences Between concurrent_unordered_map and unordered_map](#map-differences)
 
-   - [Concurrency-Safe Operations](#map-safety)
+  - [Concurrency-Safe Operations](#map-safety)
 
 - [concurrent_unordered_multimap Class](#unordered_multimap)
 
@@ -50,9 +50,9 @@ Concurrent objects:
 
 - [combinable Class](#combinable)
 
-   - [Methods and Features](#combinable-features)
+  - [Methods and Features](#combinable-features)
 
-   - [Examples](#combinable-examples)
+  - [Examples](#combinable-examples)
 
 ## <a name="vector"></a> concurrent_vector Class
 

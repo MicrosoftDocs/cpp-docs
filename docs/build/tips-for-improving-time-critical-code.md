@@ -36,7 +36,7 @@ To gather information on the performance of your code, you can use the performan
 
 - [Small Working Set](#_core_small_working_set)
 
-##  <a name="_core_cache_hits_and_page_faults"></a> Cache Misses and Page Faults
+## <a name="_core_cache_hits_and_page_faults"></a> Cache Misses and Page Faults
 
 Missed cache hits, on both the internal and external cache, as well as page faults (going to secondary storage for program instructions and data) slow the performance of a program.
 
@@ -48,7 +48,7 @@ One reason for slow programs is that they take more page faults or miss the cach
 
 - Hash tables that use dynamically allocated linked lists can degrade performance. By extension, hash tables that use dynamically allocated linked lists to store their contents might perform substantially worse. In fact, in the final analysis, a simple linear search through an array might actually be faster (depending on the circumstances). Array-based hash tables (so-called "closed hashing") is an often-overlooked implementation which frequently has superior performance.
 
-##  <a name="_core_sorting_and_searching"></a> Sorting and Searching
+## <a name="_core_sorting_and_searching"></a> Sorting and Searching
 
 Sorting is inherently time consuming compared to many typical operations. The best way to avoid unnecessary slowdown is to avoid sorting at critical times. You may be able to:
 
@@ -70,7 +70,7 @@ Here are some general tips for sorting:
 
 There are fewer alternatives for searches than for sorting. If the search is time-critical, a binary search or hash table lookup is almost always best, but as with sorting, you must keep locality in mind. A linear search through a small array can be faster than a binary search through a data structure with a lot of pointers that causes page faults or cache misses.
 
-##  <a name="_core_mfc_and_class_libraries"></a> MFC and Class Libraries
+## <a name="_core_mfc_and_class_libraries"></a> MFC and Class Libraries
 
 The Microsoft Foundation Classes (MFC) can greatly simplify writing code. When writing time-critical code, you should be aware of the overhead inherent in some of the classes. Examine the MFC code that your time-critical code uses to see if it meets your performance requirements. The following list identifies MFC classes and functions you should be aware of:
 
@@ -88,11 +88,11 @@ The Microsoft Foundation Classes (MFC) can greatly simplify writing code. When w
 
 - `OnIdle` Idle events can occur at times you do not expect, such as between `WM_KEYDOWN` and `WM_KEYUP` events. Timers may be a more efficient way to trigger your code. Do not force `OnIdle` to be called repeatedly by generating false messages or by always returning `TRUE` from an override of `OnIdle`, which would never allow your thread to sleep. Again, a timer or a separate thread might be more appropriate.
 
-##  <a name="vcovrsharedlibraries"></a> Shared Libraries
+## <a name="vcovrsharedlibraries"></a> Shared Libraries
 
 Code reuse is desirable. However, if you are going to use someone else's code, you should make sure you know exactly what it does in those cases where performance is critical to you. The best way to understand this is by stepping through the source code or by measuring with tools such as PView or Performance Monitor.
 
-##  <a name="_core_heaps"></a> Heaps
+## <a name="_core_heaps"></a> Heaps
 
 Use multiple heaps with discretion. Additional heaps created with `HeapCreate` and `HeapAlloc` let you manage and then dispose of a related set of allocations. Don't commit too much memory. If you're using multiple heaps, pay special attention to the amount of memory that is initially committed.
 
@@ -104,7 +104,7 @@ Measure your heaps so you can account for every allocation on the heap. Use the 
 
 You can also use the performance counters to monitor memory usage.
 
-##  <a name="_core_threads"></a> Threads
+## <a name="_core_threads"></a> Threads
 
 For background tasks, effective idle handling of events may be faster than using threads. It's easier to understand locality of reference in a single-threaded program.
 
@@ -114,7 +114,7 @@ Threads also present communication problems. You must manage the communication l
 
 For more information, see [Idle Loop Processing](../mfc/idle-loop-processing.md) and [Multithreading](../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
-##  <a name="_core_small_working_set"></a> Small Working Set
+## <a name="_core_small_working_set"></a> Small Working Set
 
 Smaller working sets mean better locality of reference, fewer page faults, and more cache hits. The process working set is the closest metric the operating system directly provides for measuring locality of reference.
 

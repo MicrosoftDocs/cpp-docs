@@ -60,7 +60,7 @@ The following example demonstrates how to use various methods in the `CMFCReBar`
 
 **Header:** afxRebar.h
 
-##  <a name="addbar"></a>  CMFCReBar::AddBar
+## <a name="addbar"></a> CMFCReBar::AddBar
 
 Adds a band to a rebar.
 
@@ -103,7 +103,7 @@ BOOL AddBar(
 
 TRUE if the band was successfully added to the rebar; otherwise, FALSE.
 
-##  <a name="create"></a>  CMFCReBar::Create
+## <a name="create"></a> CMFCReBar::Create
 
 Creates the rebar control and attaches it to the [CMFCReBar](../../mfc/reference/cmfcrebar-class.md) object.
 
@@ -135,7 +135,7 @@ TRUE if the rebar was created successfully; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="getrebarctrl"></a>  CMFCReBar::GetReBarCtrl
+## <a name="getrebarctrl"></a> CMFCReBar::GetReBarCtrl
 
 Provides direct access to `CReBarCtrl` the underlying common control for `CMFCReBar` objects.
 
@@ -151,7 +151,7 @@ A reference to the underlying `CReBarCtrl` object.
 
 Call this method to take advantage of the Windows rebar common control functionality when customizing your rebar.
 
-##  <a name="calcfixedlayout"></a>  CMFCReBar::CalcFixedLayout
+## <a name="calcfixedlayout"></a> CMFCReBar::CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -168,7 +168,7 @@ virtual CSize CalcFixedLayout(
 
 ### Remarks
 
-##  <a name="canfloat"></a>  CMFCReBar::CanFloat
+## <a name="canfloat"></a> CMFCReBar::CanFloat
 
 ```
 virtual BOOL CanFloat() const;
@@ -178,7 +178,7 @@ virtual BOOL CanFloat() const;
 
 ### Remarks
 
-##  <a name="enabledocking"></a>  CMFCReBar::EnableDocking
+## <a name="enabledocking"></a> CMFCReBar::EnableDocking
 
 ```
 void EnableDocking(DWORD dwDockStyle);
@@ -190,7 +190,7 @@ void EnableDocking(DWORD dwDockStyle);
 
 ### Remarks
 
-##  <a name="getrebarbandinfosize"></a>  CMFCReBar::GetReBarBandInfoSize
+## <a name="getrebarbandinfosize"></a> CMFCReBar::GetReBarBandInfoSize
 
 ```
 UINT GetReBarBandInfoSize() const;
@@ -200,7 +200,7 @@ UINT GetReBarBandInfoSize() const;
 
 ### Remarks
 
-##  <a name="onshowcontrolbarmenu"></a>  CMFCReBar::OnShowControlBarMenu
+## <a name="onshowcontrolbarmenu"></a> CMFCReBar::OnShowControlBarMenu
 
 ```
 virtual BOOL OnShowControlBarMenu(CPoint);
@@ -214,7 +214,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### Remarks
 
-##  <a name="ontoolhittest"></a>  CMFCReBar::OnToolHitTest
+## <a name="ontoolhittest"></a> CMFCReBar::OnToolHitTest
 
 ```
 virtual INT_PTR OnToolHitTest(
@@ -231,7 +231,7 @@ virtual INT_PTR OnToolHitTest(
 
 ### Remarks
 
-##  <a name="onupdatecmdui"></a>  CMFCReBar::OnUpdateCmdUI
+## <a name="onupdatecmdui"></a> CMFCReBar::OnUpdateCmdUI
 
 ```
 virtual void OnUpdateCmdUI(
@@ -246,7 +246,7 @@ virtual void OnUpdateCmdUI(
 
 ### Remarks
 
-##  <a name="setpanealignment"></a>  CMFCReBar::SetPaneAlignment
+## <a name="setpanealignment"></a> CMFCReBar::SetPaneAlignment
 
 ```
 virtual void SetPaneAlignment(DWORD dwAlignment);

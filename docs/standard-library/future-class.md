@@ -51,7 +51,7 @@ Each standard *asynchronous provider* returns an object whose type is an instant
 
 **Namespace:** std
 
-## <a name="future"></a>  future::future Constructor
+## <a name="future"></a> future::future Constructor
 
 Constructs a `future` object.
 
@@ -71,7 +71,7 @@ The first constructor constructs a `future` object that has no associated asynch
 
 The second constructor constructs a `future` object and transfers the associated asynchronous state from *Other*. *Other* no longer has an associated asynchronous state.
 
-## <a name="get"></a>  future::get
+## <a name="get"></a> future::get
 
 Retrieves the result that is stored in the associated asynchronous state.
 
@@ -93,7 +93,7 @@ Because no stored value exists for the specialization `future<void>`, the method
 
 In other specializations, the method moves its return value from the stored value. Therefore, call this method only once.
 
-## <a name="op_eq"></a>  future::operator=
+## <a name="op_eq"></a> future::operator=
 
 Transfers an associated asynchronous state from a specified object.
 
@@ -114,7 +114,7 @@ A `future` object.
 
 After the transfer, *Right* no longer has an associated asynchronous state.
 
-## <a name="share"></a>  future::share
+## <a name="share"></a> future::share
 
 Converts the object to a [shared_future](../standard-library/shared-future-class.md) object.
 
@@ -126,7 +126,7 @@ shared_future<Ty> share();
 
 `shared_future(move(*this))`
 
-## <a name="valid"></a>  future::valid
+## <a name="valid"></a> future::valid
 
 Specifies whether the object has an associated asynchronous state.
 
@@ -138,7 +138,7 @@ bool valid() noexcept;
 
 **true** if the object has an associated asynchronous state; otherwise, **false**.
 
-## <a name="wait"></a>  future::wait
+## <a name="wait"></a> future::wait
 
 Blocks the current thread until the associated asynchronous state is *ready*.
 
@@ -150,7 +150,7 @@ void wait() const;
 
 An associated asynchronous state is *ready* only if its asynchronous provider has stored a return value or stored an exception.
 
-## <a name="wait_for"></a>  future::wait_for
+## <a name="wait_for"></a> future::wait_for
 
 Blocks the current thread until the associated asynchronous state is *ready* or until a specified time interval has elapsed.
 
@@ -172,7 +172,7 @@ A [future_status](../standard-library/future-enums.md#future_status) that indica
 
 An associated asynchronous state is ready only if its asynchronous provider has stored a return value or stored an exception.
 
-## <a name="wait_until"></a>  future::wait_until
+## <a name="wait_until"></a> future::wait_until
 
 Blocks the current thread until the associated asynchronous state is *ready* or until after a specified time point.
 

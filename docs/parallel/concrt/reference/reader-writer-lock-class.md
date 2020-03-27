@@ -107,7 +107,7 @@ Destroys the `reader_writer_lock` object.
 
 It is expected that the lock is no longer held when the destructor runs. Allowing the reader writer lock to destruct with the lock still held results in undefined behavior.
 
-## <a name="scoped_lock_class"></a>  reader_writer_lock::scoped_lock Class
+## <a name="scoped_lock_class"></a> reader_writer_lock::scoped_lock Class
 
 An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` lock objects as a writer.
 
@@ -136,7 +136,7 @@ Destroys a `reader_writer_lock` object and releases the lock supplied in its con
 ~scoped_lock();
 ```
 
-## <a name="scoped_lock_read_class"></a>  reader_writer_lock::scoped_lock_read Class
+## <a name="scoped_lock_read_class"></a> reader_writer_lock::scoped_lock_read Class
 
 An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` lock objects as a reader.
 

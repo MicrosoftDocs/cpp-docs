@@ -30,7 +30,7 @@ In general, ActiveX controls should always base their locale on the ambient Loca
 
 The rest of this article describes two localizing strategies. The first strategy [localizes the control's programmability interface](#_core_localizing_your_control.92.s_programmability_interface) (names of properties, methods, and events). The second strategy [localizes the control's user interface](#_core_localizing_the_control.92.s_user_interface), using the container's ambient LocaleID property. For a demonstration of control localization, see the MFC ActiveX controls sample [LOCALIZE](../overview/visual-cpp-samples.md).
 
-##  <a name="_core_localizing_your_control.92.s_programmability_interface"></a> Localizing the Control's Programmability Interface
+## <a name="_core_localizing_your_control.92.s_programmability_interface"></a> Localizing the Control's Programmability Interface
 
 When localizing the control's programmability interface (the interface used by programmers writing applications that use your control), you must create a modified version of the control .IDL file (a script for building the control type library) for each language you intend to support. This is the only place you need to localize the control property names.
 
@@ -68,7 +68,7 @@ To ensure that clients of your control can find the localized type library, regi
 
 When your control is registered, the `AfxOleRegisterTypeLib` function automatically looks for the specified .TLB file in the same directory as the control and registers it in the Windows registration database. If the .TLB file is not found, the function has no effect.
 
-##  <a name="_core_localizing_the_control.92.s_user_interface"></a> Localizing the Control's User Interface
+## <a name="_core_localizing_the_control.92.s_user_interface"></a> Localizing the Control's User Interface
 
 To localize a control's user interface, place all of the control's user-visible resources (such as property pages and error messages) into language-specific resource DLLs. You then can use the container's ambient LocaleID property to select the appropriate DLL for the user's locale.
 

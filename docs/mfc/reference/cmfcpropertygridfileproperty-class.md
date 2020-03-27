@@ -45,7 +45,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 
 **Header:** afxpropertygridctrl.h
 
-##  <a name="cmfcpropertygridfileproperty"></a>  CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty
+## <a name="cmfcpropertygridfileproperty"></a> CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty
 
 Constructs a `CMFCPropertyGridFileProperty` object.
 

@@ -15,7 +15,7 @@ The following example illustrates how you use the archive to send and receive da
 The most important thing about this example is that its structure parallels that of an MFC `Serialize` function. The `PacketSerialize` member function consists of an **if** statement with an **else** clause. The function receives two [CArchive](../mfc/reference/carchive-class.md) references as parameters: *arData* and *arAck*. If the *arData* archive object is set for storing (sending), the **if** branch executes; otherwise, if *arData* is set for loading (receiving) the function takes the **else** branch. For more information about serialization in MFC, see [Serialization](../mfc/how-to-make-a-type-safe-collection.md).
 
 > [!NOTE]
->  The *arAck* archive object is assumed to be the opposite of *arData*. If *arData* is for sending, *arAck* receives, and the converse is true.
+> The *arAck* archive object is assumed to be the opposite of *arData*. If *arData* is for sending, *arAck* receives, and the converse is true.
 
 For sending, the example function loops for a specified number of times, each time generating some random data for demonstration purposes. Your application would obtain real data from some source, such as a file. The *arData* archive's insertion operator (**<<**) is used to send a stream of three consecutive chunks of data:
 
@@ -34,7 +34,7 @@ For receiving, the function operates similarly, except that it uses the archive'
 In this communications model, the word "Received", the message sent in the *strText* variable, is for display at the other end of the communication, so it specifies to the receiving user that a certain number of packets of data have been received. The receiver replies with a similar string that says "Sent", for display on the original sender's screen. Receipt of both strings indicates that successful communication has occurred.
 
 > [!CAUTION]
->  If you are writing an MFC client program to communicate with established (non-MFC) servers, do not send C++ objects through the archive. Unless the server is an MFC application that understands the kinds of objects you want to send, it won't be able to receive and deserialize your objects. An example in the article [Windows Sockets: Byte Ordering](../mfc/windows-sockets-byte-ordering.md) shows a communication of this type.
+> If you are writing an MFC client program to communicate with established (non-MFC) servers, do not send C++ objects through the archive. Unless the server is an MFC application that understands the kinds of objects you want to send, it won't be able to receive and deserialize your objects. An example in the article [Windows Sockets: Byte Ordering](../mfc/windows-sockets-byte-ordering.md) shows a communication of this type.
 
 For more information, see Windows Sockets Specification: **htonl**, **htons**, **ntohl**, **ntohs**. Also, for more information, see:
 

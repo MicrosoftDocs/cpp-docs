@@ -13,7 +13,7 @@ Visual Studio provides two different technologies for deploying Windows applicat
 The Visual C++ development environment does not directly support deployment of Visual Studio C++ projects with ClickOnce, but tools are available to use it.
 
 > [!NOTE]
->  Visual Studio does support ClickOnce in the Visual C# and Visual Basic development environments. If your Visual Studio C++ project is a dependency of a Visual C# project, you can publish the application (including its dependencies) using ClickOnce deployment from the Visual C# development environment.
+> Visual Studio does support ClickOnce in the Visual C# and Visual Basic development environments. If your Visual Studio C++ project is a dependency of a Visual C# project, you can publish the application (including its dependencies) using ClickOnce deployment from the Visual C# development environment.
 
 To deploy a Visual C++ application using ClickOnce, you first have to build a [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest) and a [ClickOnce Deployment Manifest](/visualstudio/deployment/clickonce-deployment-manifest) using the [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) or its graphical user interface version (for information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)).
 

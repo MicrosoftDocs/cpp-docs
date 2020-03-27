@@ -18,7 +18,7 @@ ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|set the per-module state flag, which affects the WinSxS behavior of MFC.|
 |[AfxTermExtensionModule](#afxtermextensionmodule)|Allows MFC to clean up the MFC extension DLL when each process detaches from the DLL.|
 
-## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
+## <a name="afx_ext_class"></a> AFX_EXT_CLASS
 
 [MFC extension DLLs](../../build/extension-dlls.md) use the macro AFX_EXT_CLASS to export classes; the executables that link to the MFC extension DLL use the macro to import classes.
 
@@ -41,7 +41,7 @@ For more information, see [Export and Import Using AFX_EXT_CLASS](../../build/ex
 
 **Header:** afxv_dll.h
 
-## <a name="afx_manage_state"></a>  AFX_MANAGE_STATE
+## <a name="afx_manage_state"></a> AFX_MANAGE_STATE
 
 Call this macro to protect an exported function in a DLL.
 
@@ -72,7 +72,7 @@ This swaps the current module state with the state returned from [AfxGetStaticMo
 For more information on module states and MFC, see "Managing the State Data of MFC Modules" in [Creating New Documents, Windows, and Views](../creating-new-documents-windows-and-views.md) and [Technical Note 58](../tn058-mfc-module-state-implementation.md).
 
 > [!NOTE]
->  When MFC creates an activation context for an assembly, it uses [AfxWinInit](application-information-and-management.md#afxwininit) to create the context and `AFX_MANAGE_STATE` to activate and deactivate it. Note also that `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, in order to allow MFC code to execute in the proper activation context selected by the User DLL. For more information, see [Support for Activation Contexts in the MFC Module State](../support-for-activation-contexts-in-the-mfc-module-state.md).
+> When MFC creates an activation context for an assembly, it uses [AfxWinInit](application-information-and-management.md#afxwininit) to create the context and `AFX_MANAGE_STATE` to activate and deactivate it. Note also that `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, in order to allow MFC code to execute in the proper activation context selected by the User DLL. For more information, see [Support for Activation Contexts in the MFC Module State](../support-for-activation-contexts-in-the-mfc-module-state.md).
 
 ### Requirements
 
@@ -98,7 +98,7 @@ If you are building an OLE control and are using `COleControlModule`, you should
 
 **Header**: \<afxdll_.h>
 
-## <a name="afxnetinitmodule"></a>  AfxNetInitModule
+## <a name="afxnetinitmodule"></a> AfxNetInitModule
 
 For MFC Sockets support from a regular MFC DLL that is dynamically linked to MFC, add a call to this function in your regular MFC DLL's `CWinApp::InitInstance` function to initialize the MFC Sockets DLL.
 
@@ -231,7 +231,7 @@ You can call `AfxTermExtensionModule` to clean up the MFC extension DLL when eac
 
 **Header:** afxdll_.h
 
-## <a name="afxsetambientactctx"></a>  AfxSetAmbientActCtx
+## <a name="afxsetambientactctx"></a> AfxSetAmbientActCtx
 
 Use this function to set the per-module state flag, which affects the WinSxS behavior of MFC.
 
@@ -266,7 +266,7 @@ BOOL CMFCListViewApp::InitInstance()
 
 **Header:** afxcomctl32.h
 
-## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
+## <a name="afxtermextensionmodule"></a> AfxTermExtensionModule
 
 Call this function to allow MFC to clean up the MFC extension DLL when each process detaches from the DLL (which happens when the process exits, or when the DLL is unloaded as a result of a `AfxFreeLibrary` call).
 

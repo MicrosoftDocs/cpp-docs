@@ -51,7 +51,7 @@ For more information on this architecture, see the overview for the [CView](../.
 
 **Header:** afxcview.h
 
-##  <a name="ctreeview"></a>  CTreeView::CTreeView
+## <a name="ctreeview"></a> CTreeView::CTreeView
 
 Constructs a `CTreeView` object.
 
@@ -59,7 +59,7 @@ Constructs a `CTreeView` object.
 CTreeView();
 ```
 
-##  <a name="gettreectrl"></a>  CTreeView::GetTreeCtrl
+## <a name="gettreectrl"></a> CTreeView::GetTreeCtrl
 
 Returns a reference to the tree control associated with the view.
 

@@ -190,7 +190,7 @@ Distribution for 100 samples:
 
 **Namespace:** std
 
-## <a name="piecewise_constant_distribution"></a>  piecewise_constant_distribution::piecewise_constant_distribution
+## <a name="piecewise_constant_distribution"></a> piecewise_constant_distribution::piecewise_constant_distribution
 
 Constructs the distribution.
 
@@ -290,7 +290,7 @@ explicit piecewise_constant_distribution(const param_type& parm);
 
 constructs a distribution object using *parm* as the stored parameter structure.
 
-## <a name="param_type"></a>  piecewise_constant_distribution::param_type
+## <a name="param_type"></a> piecewise_constant_distribution::param_type
 
 Stores all the parameters of the distribution.
 

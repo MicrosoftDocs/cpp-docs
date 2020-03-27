@@ -85,7 +85,7 @@ The following example demonstrates how to initialize a `CMFCOutlookBarTabCtrl` o
 
 **Header:** afxoutlookbartabctrl.h
 
-##  <a name="addcontrol"></a>  CMFCOutlookBarTabCtrl::AddControl
+## <a name="addcontrol"></a> CMFCOutlookBarTabCtrl::AddControl
 
 Adds a Windows control as a new tab in the Outlook bar.
 
@@ -129,7 +129,7 @@ The following example demonstrates how to use the `AddControl` method in the `CM
 
 [!code-cpp[NVC_MFC_OutlookDemo#3](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_3.cpp)]
 
-##  <a name="canshowfewerpagebuttons"></a>  CMFCOutlookBarTabCtrl::CanShowFewerPageButtons
+## <a name="canshowfewerpagebuttons"></a> CMFCOutlookBarTabCtrl::CanShowFewerPageButtons
 
 Called by the framework during resizing operations to determine whether fewer Outlook bar tab page buttons can be displayed than are currently visible.
 
@@ -145,7 +145,7 @@ TRUE if there is more than one button; otherwise FALSE.
 
 The Outlook bar tab control dynamically adds or removes tabs from the display depending on how much room is available. This method is used by the framework to assist in that process.
 
-##  <a name="canshowmorepagebuttons"></a>  CMFCOutlookBarTabCtrl::CanShowMorePageButtons
+## <a name="canshowmorepagebuttons"></a> CMFCOutlookBarTabCtrl::CanShowMorePageButtons
 
 Called by the framework during resizing operations to determine whether more Outlook bar tab page buttons can be displayed than are currently visible.
 
@@ -161,7 +161,7 @@ TRUE if there are buttons that are not currently visible; otherwise FALSE.
 
 The Outlook bar tab control dynamically adds or removes tabs from the display, depending on how much room is available. This method is used by the framework to assist in that process.
 
-##  <a name="create"></a>  CMFCOutlookBarTabCtrl::Create
+## <a name="create"></a> CMFCOutlookBarTabCtrl::Create
 
 Creates the Outlook bar tab control.
 
@@ -191,7 +191,7 @@ Nonzero if the control has been created successfully; otherwise 0.
 
 Usually, outlook bar tab controls are created when [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md) controls the WM_CREATE message of the process.
 
-##  <a name="enableanimation"></a>  CMFCOutlookBarTabCtrl::EnableAnimation
+## <a name="enableanimation"></a> CMFCOutlookBarTabCtrl::EnableAnimation
 
 Specifies whether the animation that occurs during the switch between active tabs is enabled.
 
@@ -210,7 +210,7 @@ Call this function to enable and disable animation. When the user opens a tab pa
 
 By the default, the animation is enabled.
 
-##  <a name="enableinplaceedit"></a>  CMFCOutlookBarTabCtrl::EnableInPlaceEdit
+## <a name="enableinplaceedit"></a> CMFCOutlookBarTabCtrl::EnableInPlaceEdit
 
 Specifies whether a user can modify the text labels on the tab page buttons of the Outlook bar.
 
@@ -227,7 +227,7 @@ If TRUE, enable the in-place editing of the text label. If FALSE, disable the in
 
 Call this function to enable or disable in-place editing of text  labels on tab page buttons. By default the in-place editing is disabled.
 
-##  <a name="enablescrollbuttons"></a>  CMFCOutlookBarTabCtrl::EnableScrollButtons
+## <a name="enablescrollbuttons"></a> CMFCOutlookBarTabCtrl::EnableScrollButtons
 
 Called by the framework to enable scroll handles that allow the user to scroll through buttons on the Outlook bar pane.
 
@@ -253,7 +253,7 @@ void EnableScrollButtons(
 
 Enables the display of the scroll buttons. This method is called by the framework when the active tab changes to restore the scroll buttons.
 
-##  <a name="getbordersize"></a>  CMFCOutlookBarTabCtrl::GetBorderSize
+## <a name="getbordersize"></a> CMFCOutlookBarTabCtrl::GetBorderSize
 
 Returns the border size of the Outlook tab control.
 
@@ -265,7 +265,7 @@ int GetBorderSize() const;
 
 The border size, in pixels.
 
-##  <a name="getvisiblepagebuttons"></a>  CMFCOutlookBarTabCtrl::GetVisiblePageButtons
+## <a name="getvisiblepagebuttons"></a> CMFCOutlookBarTabCtrl::GetVisiblePageButtons
 
 ```
 int GetVisiblePageButtons() const;
@@ -275,7 +275,7 @@ int GetVisiblePageButtons() const;
 
 ### Remarks
 
-##  <a name="isanimation"></a>  CMFCOutlookBarTabCtrl::IsAnimation
+## <a name="isanimation"></a> CMFCOutlookBarTabCtrl::IsAnimation
 
 Specifies whether the animation that occurs during the switch between active tabs is enabled.
 
@@ -291,7 +291,7 @@ Nonzero if the animation is enabled; otherwise 0.
 
 Call the [CMFCOutlookBarTabCtrl::EnableAnimation](#enableanimation) function to enable or disable animation.
 
-##  <a name="ismode2003"></a>  CMFCOutlookBarTabCtrl::IsMode2003
+## <a name="ismode2003"></a> CMFCOutlookBarTabCtrl::IsMode2003
 
 Determines whether the Outlook bar tab control is in a mode that emulates Microsoft Outlook 2003.
 
@@ -307,7 +307,7 @@ TRUE if the Outlook bar tab control is in Outlook 2003 mode; otherwise FALSE;
 
 This value is set by [CMFCOutlookBar::SetMode2003](../../mfc/reference/cmfcoutlookbar-class.md#setmode2003).
 
-##  <a name="onshowfewerpagebuttons"></a>  CMFCOutlookBarTabCtrl::OnShowFewerPageButtons
+## <a name="onshowfewerpagebuttons"></a> CMFCOutlookBarTabCtrl::OnShowFewerPageButtons
 
 Called by the framework to decrease the number of tab page buttons that are visible.
 
@@ -319,7 +319,7 @@ virtual void OnShowFewerPageButtons();
 
 This method adjusts the number of visible page tab buttons when the control is resized.
 
-##  <a name="onshowmorepagebuttons"></a>  CMFCOutlookBarTabCtrl::OnShowMorePageButtons
+## <a name="onshowmorepagebuttons"></a> CMFCOutlookBarTabCtrl::OnShowMorePageButtons
 
 Called by the framework to increase the number of tab page buttons that are visible.
 
@@ -331,7 +331,7 @@ virtual void OnShowMorePageButtons();
 
 This method adjust the number of tab page buttons that are visible when the control is resized.
 
-##  <a name="onshowoptions"></a>  CMFCOutlookBarTabCtrl::OnShowOptions
+## <a name="onshowoptions"></a> CMFCOutlookBarTabCtrl::OnShowOptions
 
 Displays the **Navigation Pane Options** dialog box.
 
@@ -345,7 +345,7 @@ The **Navigation Pane Options** dialog box allows the user to select which tab p
 
 This method is called by the framework when the user selects the **Navigation Pane Options** menu item from the control's customization menu.
 
-##  <a name="setactivetab"></a>  CMFCOutlookBarTabCtrl::SetActiveTab
+## <a name="setactivetab"></a> CMFCOutlookBarTabCtrl::SetActiveTab
 
 Sets the active tab. The active tab is the one that is open, with its contents visible.
 
@@ -366,7 +366,7 @@ Nonzero if the specified tab has been opened successfully; otherwise 0.
 
 The visual effect of setting the active tab depends on whether you have enabled animation. For more information, see [CMFCOutlookBarTabCtrl::EnableAnimation](#enableanimation).
 
-##  <a name="setbordersize"></a>  CMFCOutlookBarTabCtrl::SetBorderSize
+## <a name="setbordersize"></a> CMFCOutlookBarTabCtrl::SetBorderSize
 
 Sets the border size of the Outlook tab control.
 
@@ -383,7 +383,7 @@ void SetBorderSize(int nBorderSize);
 
 Sets the new border size and recalculates the outlook window layout.
 
-##  <a name="setpagebuttontextalign"></a>  CMFCOutlookBarTabCtrl::SetPageButtonTextAlign
+## <a name="setpagebuttontextalign"></a> CMFCOutlookBarTabCtrl::SetPageButtonTextAlign
 
 Sets the alignment of the text labels on the tab buttons of the Outlook bar.
 
@@ -415,7 +415,7 @@ Use this function to change text alignment for page buttons.
 
 The default value is TA_CENTER.
 
-##  <a name="settoolbarimagelist"></a>  CMFCOutlookBarTabCtrl::SetToolbarImageList
+## <a name="settoolbarimagelist"></a> CMFCOutlookBarTabCtrl::SetToolbarImageList
 
 Sets the bitmap that contains the icons that are displayed on the bottom of the Outlook bar in Outlook 2003 mode.
 
@@ -447,7 +447,7 @@ Use this function to attach an image list whose images will be displayed on tool
 
 This method should not be called if not in Microsoft Office 2003 mode. For more information, see [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md).
 
-##  <a name="setvisiblepagebuttons"></a>  CMFCOutlookBarTabCtrl::SetVisiblePageButtons
+## <a name="setvisiblepagebuttons"></a> CMFCOutlookBarTabCtrl::SetVisiblePageButtons
 
 ```
 void SetVisiblePageButtons(int nVisiblePageButtons);

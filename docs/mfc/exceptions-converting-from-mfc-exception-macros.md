@@ -14,7 +14,7 @@ This article explains how to convert existing code written with Microsoft Founda
 
 - [Converting code with exception macros to use C++ exceptions](#_core_doing_the_conversion)
 
-##  <a name="_core_advantages_of_converting"></a> Advantages of Converting
+## <a name="_core_advantages_of_converting"></a> Advantages of Converting
 
 You probably do not need to convert existing code, although you should be aware of differences between the macro implementations in MFC version 3.0 and the implementations in earlier versions. These differences and subsequent changes in code behavior are discussed in [Exceptions: Changes to Exception Macros in Version 3.0](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md).
 
@@ -52,7 +52,7 @@ Another difference is syntax. The syntax for macros and keywords differs in thre
 
    The macros use **THROW_LAST** to re-throw the current exception. The **throw** keyword, with no argument, has the same effect.
 
-##  <a name="_core_doing_the_conversion"></a> Doing the Conversion
+## <a name="_core_doing_the_conversion"></a> Doing the Conversion
 
 #### To convert code using macros to use the C++ exception-handling keywords
 

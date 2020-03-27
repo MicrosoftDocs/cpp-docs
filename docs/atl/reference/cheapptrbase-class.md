@@ -10,7 +10,7 @@ ms.assetid: 501ac1b2-fb34-4c72-b7e6-a4f1fc8fda21
 This class forms the basis for several smart heap pointer classes.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -67,7 +67,7 @@ This class forms the basis for several smart heap pointer classes. The derived c
 
 **Header:** atlcore.h
 
-##  <a name="allocatebytes"></a>  CHeapPtrBase::AllocateBytes
+## <a name="allocatebytes"></a> CHeapPtrBase::AllocateBytes
 
 Call this method to allocate memory.
 
@@ -88,7 +88,7 @@ Returns true if the memory is successfully allocated, false otherwise.
 
 In debug builds, an assertion failure will occur if the [CHeapPtrBase::m_pData](#m_pdata) member variable currently points to an existing value; that is, it is not equal to NULL.
 
-##  <a name="attach"></a>  CHeapPtrBase::Attach
+## <a name="attach"></a> CHeapPtrBase::Attach
 
 Call this method to take ownership of an existing pointer.
 
@@ -107,7 +107,7 @@ When a `CHeapPtrBase` object takes ownership of a pointer, it will automatically
 
 In debug builds, an assertion failure will occur if the [CHeapPtrBase::m_pData](#m_pdata) member variable currently points to an existing value; that is, it is not equal to NULL.
 
-##  <a name="dtor"></a>  CHeapPtrBase::~CHeapPtrBase
+## <a name="dtor"></a> CHeapPtrBase::~CHeapPtrBase
 
 The destructor.
 
@@ -119,7 +119,7 @@ The destructor.
 
 Frees all allocated resources.
 
-##  <a name="detach"></a>  CHeapPtrBase::Detach
+## <a name="detach"></a> CHeapPtrBase::Detach
 
 Call this method to release ownership of a pointer.
 
@@ -135,7 +135,7 @@ Returns a copy of the pointer.
 
 Releases ownership of a pointer, sets the [CHeapPtrBase::m_pData](#m_pdata) member variable to NULL, and returns a copy of the pointer.
 
-##  <a name="free"></a>  CHeapPtrBase::Free
+## <a name="free"></a> CHeapPtrBase::Free
 
 Call this method to delete an object pointed to by a `CHeapPtrBase`.
 
@@ -147,7 +147,7 @@ void Free() throw();
 
 The object pointed to by the `CHeapPtrBase` is freed, and the [CHeapPtrBase::m_pData](#m_pdata) member variable is set to NULL.
 
-##  <a name="m_pdata"></a>  CHeapPtrBase::m_pData
+## <a name="m_pdata"></a> CHeapPtrBase::m_pData
 
 The pointer data member variable.
 
@@ -159,7 +159,7 @@ T* m_pData;
 
 This member variable holds the pointer information.
 
-##  <a name="operator_amp"></a>  CHeapPtrBase::operator &amp;
+## <a name="operator_amp"></a> CHeapPtrBase::operator &amp;
 
 The & operator.
 
@@ -171,7 +171,7 @@ T** operator&() throw();
 
 Returns the address of the object pointed to by the `CHeapPtrBase` object.
 
-##  <a name="operator_ptr"></a>  CHeapPtrBase::operator -&gt;
+## <a name="operator_ptr"></a> CHeapPtrBase::operator -&gt;
 
 The pointer-to-member operator.
 
@@ -187,7 +187,7 @@ Returns the value of the [CHeapPtrBase::m_pData](#m_pdata) member variable.
 
 Use this operator to call a method in a class pointed to by the `CHeapPtrBase` object. In debug builds, an assertion failure will occur if the `CHeapPtrBase` points to NULL.
 
-##  <a name="operator_t_star"></a>  CHeapPtrBase::operator T*
+## <a name="operator_t_star"></a> CHeapPtrBase::operator T*
 
 The cast operator.
 
@@ -199,7 +199,7 @@ operator T*() const throw();
 
 Returns [CHeapPtrBase::m_pData](#m_pdata).
 
-##  <a name="reallocatebytes"></a>  CHeapPtrBase::ReallocateBytes
+## <a name="reallocatebytes"></a> CHeapPtrBase::ReallocateBytes
 
 Call this method to reallocate memory.
 

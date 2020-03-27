@@ -12,7 +12,7 @@ ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 
 [Visual C++ Samples](../overview/visual-cpp-samples.md)
 
-##  <a name="top"></a> Sections
+## <a name="top"></a> Sections
 
 This part of the walkthrough has the following sections:
 
@@ -28,7 +28,7 @@ This part of the walkthrough has the following sections:
 
 - [Initializing Pens and Saving Preferences](#initpensave)
 
-##  <a name="addnewpanel"></a> Adding New Panels to the Ribbon
+## <a name="addnewpanel"></a> Adding New Panels to the Ribbon
 
 These steps show how to add a **View** panel that contains two check boxes that control the visibility of the toolbar and the status bar, and also a **Window** panel that contains a vertically oriented split button that controls the creation and arrangement of multiple-document interface (MDI) windows.
 
@@ -62,7 +62,7 @@ These steps show how to add a **View** panel that contains two check boxes that 
 
 1. Save the changes, and then build and run the application. The **View** and **Window** panels should be displayed. Click the buttons to confirm that they function correctly.
 
-##  <a name="addhelppanel"></a> Adding a Help Panel to the Ribbon
+## <a name="addhelppanel"></a> Adding a Help Panel to the Ribbon
 
 Now, you can assign two menu items that are defined in the Scribble application to ribbon buttons that are named **Help Topics** and **About Scribble**. The buttons are added to a new panel named **Help**.
 
@@ -81,7 +81,7 @@ Now, you can assign two menu items that are defined in the Scribble application 
    > [!IMPORTANT]
    > When you click the **Help Topics** button, the Scribble application opens a compressed HTML (.chm) help file named *your_project_name*.chm. Consequently, if your project is not named Scribble, you must rename the help file to your project name.
 
-##  <a name="addpenpanel"></a> Adding a Pen Panel to the Ribbon
+## <a name="addpenpanel"></a> Adding a Pen Panel to the Ribbon
 
 Now, add a panel to display buttons that control the thickness and the color of the pen. This panel contains a check box that toggles between thick and thin pens. Its functionality resembles that of the **Thick Line** menu item in the Scribble application.
 
@@ -167,7 +167,7 @@ The original Scribble application lets the user select pen widths from a dialog 
 
 1. Save the changes, and then build and run the application. New buttons and combo boxes should be displayed. Try using different pen widths to scribble.
 
-##  <a name="addcolorbutton"></a> Adding a Color Button to the Pen Panel
+## <a name="addcolorbutton"></a> Adding a Color Button to the Pen Panel
 
 Next, add a [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbutton-class.md) object that lets the user scribble in color.
 
@@ -181,7 +181,7 @@ Next, add a [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbutton-class
 
 1. Save the changes, and then build and run the application. The new color button should be displayed on the **Pen** panel. However, it can't be used because it doesn't yet have an event handler. The next steps show how to add an event handler for the color button.
 
-##  <a name="addcolormember"></a> Adding a Color Member to the Document Class
+## <a name="addcolormember"></a> Adding a Color Member to the Document Class
 
 Because the original Scribble application doesn't have color pens, you must write an implementation for them. To store the pen color of the document, add a new member to the document class, `CscribbleDoc`.
 
@@ -272,7 +272,7 @@ Because the original Scribble application doesn't have color pens, you must writ
 
 1. Save the changes and then build and run the application. You can now press the color button and change the pen's color.
 
-##  <a name="initpensave"></a> Initializing Pens and Saving Preferences
+## <a name="initpensave"></a> Initializing Pens and Saving Preferences
 
 Next, initialize the color and width of the pens. Finally, save and load a color drawing from a file.
 

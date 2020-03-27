@@ -23,7 +23,7 @@ This group of functions also includes a global routine for displaying a message 
 
   **Header** afxwin.h
 
-##  <a name="afxextractsubstring"></a>  AfxExtractSubString
+## <a name="afxextractsubstring"></a> AfxExtractSubString
 
 This global function can be used to extract a substring from a given source string.
 
@@ -67,7 +67,7 @@ This function will return FALSE if either *lpszFullString* is set to NULL or the
 
   **Header** afxwin.h
 
-##  <a name="afxformatstring1"></a>  AfxFormatString1
+## <a name="afxformatstring1"></a> AfxFormatString1
 
 Substitutes the string pointed to by *lpsz1* for any instances of the characters "%1" in the template string resource identified by *nIDS*.
 
@@ -103,7 +103,7 @@ If the format characters "%1" appear in the string more than once, multiple subs
 
   **Header** afxwin.h
 
-##  <a name="afxformatstring2"></a>  AfxFormatString2
+## <a name="afxformatstring2"></a> AfxFormatString2
 
 Substitutes the string pointed to by *lpsz1* for any instances of the characters "%1", and the string pointed to by *lpsz2* for any instances of the characters "%2", in the template string resource identified by *nIDS*.
 
@@ -143,7 +143,7 @@ If the format characters "%1" or "%2" appear in the string more than once, multi
 
   **Header** afxwin.h
 
-##  <a name="afxmessagebox"></a>  AfxMessageBox
+## <a name="afxmessagebox"></a> AfxMessageBox
 
 Displays a message box on the screen.
 

@@ -13,7 +13,7 @@ These classes work with the other application framework classes to give easy acc
 Programs that use DAO databases will have at least a `CDaoDatabase` object and a `CDaoRecordset` object.
 
 > [!NOTE]
->  The Visual C++ environment and wizards no longer support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use ODBC for new MFC projects. You should only use DAO in maintaining existing applications.
+> The Visual C++ environment and wizards no longer support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use ODBC for new MFC projects. You should only use DAO in maintaining existing applications.
 
 [CDaoWorkspace](../mfc/reference/cdaoworkspace-class.md)<br/>
 Manages a named, password-protected database session from login to logoff. Most programs use the default workspace.

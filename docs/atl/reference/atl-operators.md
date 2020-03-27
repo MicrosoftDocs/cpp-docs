@@ -21,7 +21,7 @@ This section contains the reference topics for the ATL global operators.
 
 **Header:** atlsecurity.h.
 
-##  <a name="operator_eq_eq"></a>  operator ==
+## <a name="operator_eq_eq"></a> operator ==
 
 Compares `CSid` objects or `SID` (security identifier) structures for equality.
 
@@ -41,7 +41,7 @@ The second `CSid` object or `SID` structure to compare.
 
 Returns TRUE if the objects are equal, FALSE if they are not equal.
 
-##  <a name="operator_neq"></a>  operator !=
+## <a name="operator_neq"></a> operator !=
 
 Compares `CSid` objects or `SID` (security identifier) structures for inequality.
 
@@ -61,7 +61,7 @@ The second `CSid` object or `SID` structure to compare.
 
 Returns TRUE if the objects are not equal, FALSE if they are equal.
 
-##  <a name="operator_lt"></a>  operator <
+## <a name="operator_lt"></a> operator <
 
 Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).
 
@@ -85,7 +85,7 @@ Returns TRUE if the address of the *lhs* object is less than the address of the 
 
 This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.
 
-##  <a name="operator_gt"></a>  operator >
+## <a name="operator_gt"></a> operator >
 
 Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).
 
@@ -109,7 +109,7 @@ Returns TRUE if the address of the *lhs* is greater than the address of the *rhs
 
 This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.
 
-##  <a name="operator_lt__eq"></a>  operator <=
+## <a name="operator_lt__eq"></a> operator <=
 
 Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).
 
@@ -133,7 +133,7 @@ Returns TRUE if the address of the *lhs* is less than or equal to the address of
 
 This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.
 
-##  <a name="operator_gt__eq"></a>  operator >=
+## <a name="operator_gt__eq"></a> operator >=
 
 Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).
 

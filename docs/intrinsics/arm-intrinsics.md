@@ -9,7 +9,7 @@ ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
 
 The Microsoft C++ compiler (MSVC) makes the following intrinsics available on the ARM architecture. For more information about ARM, see the Architecture and Software Development Tools sections of the [ARM Developer Documentation](https://developer.arm.com/docs) website.
 
-##  <a name="top"></a> NEON
+## <a name="top"></a> NEON
 
 The NEON vector instruction set extensions for ARM provide Single Instruction Multiple Data (SIMD) capabilities that resemble the ones in the MMX and SSE vector instruction sets that are common to x86 and x64 architecture processors.
 
@@ -17,7 +17,7 @@ NEON intrinsics are supported, as provided in the header file `arm_neon.h`. The 
 
 The primary difference between MSVC and the ARM compiler is that the MSVC adds `_ex` variants of the `vldX` and `vstX` vector load and store instructions. The `_ex` variants take an additional parameter that specifies the alignment of the pointer argument but are otherwise identical to their non-`_ex` counterparts.
 
-##  <a name="A"></a> ARM-specific Intrinsics Listing
+## <a name="A"></a> ARM-specific Intrinsics Listing
 
 |Function Name|Instruction|Function Prototype|
 |-------------------|-----------------|------------------------|
@@ -187,7 +187,7 @@ The primary difference between MSVC and the ARM compiler is that the MSVC adds `
 
 [[Return to top](#top)]
 
-###  <a name="BarrierRestrictions"></a> Memory Barrier Restrictions
+### <a name="BarrierRestrictions"></a> Memory Barrier Restrictions
 
 The intrinsic functions `__dmb` (data memory barrier), `__dsb` (data synchronization barrier), and `__isb` (instruction synchronization barrier) use the following predefined values to specify the memory barrier restriction in terms of the sharing domain and the kind of access that are affected by the operation.
 
@@ -204,7 +204,7 @@ The intrinsic functions `__dmb` (data memory barrier), `__dsb` (data synchroniza
 
 For the `__isb` intrinsic, the only restriction that is currently valid is _ARM_BARRIER_SY; all other values are reserved by the architecture.
 
-###  <a name="IsoVolatileLoadStore"></a> __iso_volatile_load/store intrinsics
+### <a name="IsoVolatileLoadStore"></a> __iso_volatile_load/store intrinsics
 
 These intrinsic functions explicitly perform loads and stores that aren't subject to compiler optimizations.
 
@@ -245,7 +245,7 @@ Notice that the intrinsics take volatile pointers to accommodate volatile variab
 
 For more information about the **/volatile:iso** command-line argument, see [/volatile (volatile Keyword Interpretation)](../build/reference/volatile-volatile-keyword-interpretation.md).
 
-###  <a name="MoveFromCo"></a> _MoveFromCoprocessor, _MoveFromCoprocessor2
+### <a name="MoveFromCo"></a> _MoveFromCoprocessor, _MoveFromCoprocessor2
 
 These intrinsic functions read data from ARM coprocessors by using the coprocessor data transfer instructions.
 
@@ -294,7 +294,7 @@ The values of all five parameters of the intrinsic must be constant expressions 
 
 `_MoveFromCoprocessor` uses the MRC instruction; `_MoveFromCoprocessor2` uses MRC2. The parameters correspond to bitfields that are encoded directly into the instruction word. The interpretation of the parameters is coprocessor-dependent. For more information, see the manual for the coprocessor in question.
 
-###  <a name="MoveFromCo64"></a> _MoveFromCoprocessor64
+### <a name="MoveFromCo64"></a> _MoveFromCoprocessor64
 
 Reads data from ARM coprocessors by using the coprocessor data transfer instructions.
 
@@ -327,7 +327,7 @@ The values of all three parameters of the intrinsic must be constant expressions
 
 `_MoveFromCoprocessor64` uses the MRRC instruction. The parameters correspond to bitfields that are encoded directly into the instruction word. The interpretation of the parameters is coprocessor-dependent. For more information, see the manual for the coprocessor in question.
 
-###  <a name="MoveToCo"></a> _MoveToCoprocessor, _MoveToCoprocessor2
+### <a name="MoveToCo"></a> _MoveToCoprocessor, _MoveToCoprocessor2
 
 These intrinsic functions write data to ARM coprocessors by using the coprocessor data transfer instructions.
 
@@ -381,7 +381,7 @@ The values of the `coproc`, `opcode1`, `crn`, `crm`, and `opcode2` parameters of
 
 `_MoveToCoprocessor` uses the MCR instruction; `_MoveToCoprocessor2` uses MCR2. The parameters correspond to bitfields that are encoded directly into the instruction word. The interpretation of the parameters is coprocessor-dependent. For more information, see the manual for the coprocessor in question.
 
-###  <a name="MoveToCo64"></a> _MoveToCoprocessor64
+### <a name="MoveToCo64"></a> _MoveToCoprocessor64
 
 These intrinsic functions write data to ARM coprocessors by using the coprocessor data transfer instructions.
 
@@ -415,7 +415,7 @@ The values of the `coproc`, `opcode1`, and `crm` parameters of the intrinsic mus
 
 `_MoveFromCoprocessor64` uses the MCRR instruction. The parameters correspond to bitfields that are encoded directly into the instruction word. The interpretation of the parameters is coprocessor-dependent. For more information, see the manual for the coprocessor in question.
 
-##  <a name="I"></a> ARM Support for Intrinsics from Other Architectures
+## <a name="I"></a> ARM Support for Intrinsics from Other Architectures
 
 The following table lists intrinsics from other architectures that are supported on ARM platforms. Where the behavior of an intrinsic on ARM differs from its behavior on other hardware architectures, additional details are noted.
 
@@ -483,7 +483,7 @@ Key:
 
 - **None**: Not supported
 
-###  <a name="nf_suffix"></a> _nf (no fence) Suffix
+### <a name="nf_suffix"></a> _nf (no fence) Suffix
 
 The `_nf` or "no fence" suffix indicates that the operation doesn't behave as any kind of memory barrier, in contrast to the other three forms (plain, `_acq`, and `_rel`), which all behave as some kind of barrier. One possible use of the `_nf` forms is to maintain a statistic counter that is updated by multiple threads at the same time but whose value isn't otherwise used while multiple threads are executing.
 

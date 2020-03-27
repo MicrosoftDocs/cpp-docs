@@ -21,7 +21,7 @@ You should preserve other registers you use (such as DS, SS, SP, BP, and flags r
 Some SSE types require eight-byte stack alignment, forcing the compiler to emit dynamic stack-alignment code. To be able to access both the local variables and the function parameters after the alignment, the compiler maintains two frame pointers.  If the compiler performs frame pointer omission (FPO), it will use EBP and ESP.  If the compiler does not perform FPO, it will use EBX and EBP. To ensure code runs correctly, do not modify EBX in asm code if the function requires dynamic stack alignment as it could modify the frame pointer. Either move the eight-byte aligned types out of the function, or avoid using EBX.
 
 > [!NOTE]
->  If your inline assembly code changes the direction flag using the STD or CLD instructions, you must restore the flag to its original value.
+> If your inline assembly code changes the direction flag using the STD or CLD instructions, you must restore the flag to its original value.
 
 **END Microsoft Specific**
 

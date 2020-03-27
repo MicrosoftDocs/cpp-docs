@@ -4,7 +4,6 @@ description: "How to use raw pointers in C++"
 ms.date: "11/19/2019"
 helpviewer_keywords: ["pointers [C++]"]
 ---
-
 # Raw pointers (C++)
 
 A pointer is a type of variable that stores the address of an object in memory and is used to access that object. A *raw pointer* is a pointer whose lifetime is not controlled by an encapsulating object such as a [smart pointer](smart-pointers-modern-cpp.md). A raw pointer can be assigned the address of another non-pointer variable, or it can be assigned a value of [nullptr](nullptr.md). A pointer that has not been assigned a value contains random data.

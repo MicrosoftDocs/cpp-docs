@@ -51,9 +51,9 @@ Run the bootstrapper file to install the Visual Studio Installer. This new light
 
 1. From your **Downloads** folder, double-click the bootstrapper that matches or is similar to one of the following files:
 
-   * **vs_community.exe** for Visual Studio Community
-   * **vs_professional.exe** for Visual Studio Professional
-   * **vs_enterprise.exe** for Visual Studio Enterprise
+   - **vs_community.exe** for Visual Studio Community
+   - **vs_professional.exe** for Visual Studio Professional
+   - **vs_enterprise.exe** for Visual Studio Enterprise
 
    If you receive a User Account Control notice, choose **Yes**.
 
@@ -75,7 +75,7 @@ After the installer is installed, you can use it to customize your installation 
 
 1. After you choose the workload(s) and optional components you want, choose **Install**.
 
-    Next, status screens appear that show the progress of your Visual Studio installation.
+   Next, status screens appear that show the progress of your Visual Studio installation.
 
 > [!TIP]
 > At any time after installation, you can install workloads or components that you didn't install initially. If you have Visual Studio open, go to **Tools** > **Get Tools and Features...** which opens the Visual Studio Installer. Or, open **Visual Studio Installer** from the Start menu. From there, you can choose the workloads or components that you wish to install. Then, choose **Modify**.

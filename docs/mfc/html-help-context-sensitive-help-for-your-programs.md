@@ -7,7 +7,7 @@ ms.assetid: f2eabbbb-0796-43f3-a483-5f7cf00f2e7c
 # HTML Help: Context-Sensitive Help for Your Programs
 
 > [!IMPORTANT]
->  HTML Help is not supported in this version of MFC.
+> HTML Help is not supported in this version of MFC.
 
 ## See also
 

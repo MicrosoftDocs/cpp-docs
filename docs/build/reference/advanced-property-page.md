@@ -4,7 +4,6 @@ ms.date: "07/19/2019"
 f1_keywords: ["VC.Project.VCConfiguration.VCToolsVersion"]
 ms.description: "Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects."
 ---
-
 # Advanced Property Page
 
 The Advanced property page is available in Visual Studio 2019 and later.

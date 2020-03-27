@@ -8,7 +8,7 @@ ms.assetid: a98b557c-1947-447a-be1f-616fb45a9580
 
 Link output includes .exe files, DLLs, mapfiles, and messages.
 
-##  <a name="_core_output_files"></a> Output Files
+## <a name="_core_output_files"></a> Output Files
 
 The default output file from LINK is an .exe file. If the [/DLL](dll-build-a-dll.md) option is specified, LINK builds a .dll file. You can control the output file name with the [Output File Name (/OUT)](out-output-file-name.md) option.
 
@@ -20,7 +20,7 @@ If the [Generate Mapfile (/MAP)](map-generate-mapfile.md) option is specified, L
 
 If the [Generate Debug Info (/DEBUG)](debug-generate-debug-info.md) option is specified, LINK creates a PDB to contain debugging information for the program.
 
-##  <a name="_core_other_output"></a> Other Output
+## <a name="_core_other_output"></a> Other Output
 
 When you type `link` without any other command-line input, LINK displays a usage statement that summarizes its options.
 

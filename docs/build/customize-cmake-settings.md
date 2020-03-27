@@ -81,17 +81,17 @@ Corresponds to **variables**. Contains a name-value pair of CMake variables pass
 
 Corresponds to **generator**. Maps to the CMake **-G** switch, and specifies the [CMake generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) to use. This property can also be used as a macro, `${generator}`, when composing other property values. Visual Studio currently supports the following CMake generators:
 
-  - "Ninja"
-  - "Unix Makefiles"
-  - "Visual Studio 16 2019"
-  - "Visual Studio 16 2019 Win64"
-  - "Visual Studio 16 2019 ARM"
-  - "Visual Studio 15 2017"
-  - "Visual Studio 15 2017 Win64"
-  - "Visual Studio 15 2017 ARM"
-  - "Visual Studio 14 2015"
-  - "Visual Studio 14 2015 Win64"
-  - "Visual Studio 14 2015 ARM"
+- "Ninja"
+- "Unix Makefiles"
+- "Visual Studio 16 2019"
+- "Visual Studio 16 2019 Win64"
+- "Visual Studio 16 2019 ARM"
+- "Visual Studio 15 2017"
+- "Visual Studio 15 2017 Win64"
+- "Visual Studio 15 2017 ARM"
+- "Visual Studio 14 2015"
+- "Visual Studio 14 2015 Win64"
+- "Visual Studio 14 2015 ARM"
   
 Because Ninja is designed for fast build speeds instead of flexibility and function, it's set as the default. However, some CMake projects may be unable to correctly build using Ninja. If that occurs, you can instruct CMake to generate a Visual Studio project instead.
 

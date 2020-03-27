@@ -9,7 +9,7 @@ ms.assetid: edb4574f-fea7-426d-9b5c-fa4ecad2befb
 To create a CLR empty project, use the **CLR Empty Project** template, which is available from the **New Project** dialog box.
 
 > [!NOTE]
->  The appearance of features in the IDE can depend on your active settings or edition, and might differ from those described in Help. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+> The appearance of features in the IDE can depend on your active settings or edition, and might differ from those described in Help. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 ### To create a CLR empty project
 

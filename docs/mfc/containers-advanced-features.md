@@ -12,7 +12,7 @@ This article describes the steps necessary to incorporate optional advanced feat
 
 - [An OLE link to an embedded object](#_core_links_to_embedded_objects)
 
-##  <a name="_core_creating_a_container_server_application"></a> Creating a Container/Server Application
+## <a name="_core_creating_a_container_server_application"></a> Creating a Container/Server Application
 
 A container/server application is an application that acts as both a container and a server. Microsoft Word for Windows is an example of this. You can embed Word for Windows documents in other applications, and you can also embed items in Word for Windows documents. The process for modifying your container application to be both a container and a full server (you cannot create a combination container/miniserver application) is similar to the process for creating a full server.
 
@@ -30,7 +30,7 @@ If you are creating a new application and want it to function as a container/ser
 
 Note that you cannot insert an MDI application into itself. An application that is a container/server cannot be inserted into itself unless it is an SDI application.
 
-##  <a name="_core_links_to_embedded_objects"></a> Links to Embedded Objects
+## <a name="_core_links_to_embedded_objects"></a> Links to Embedded Objects
 
 The Links to Embedded Objects feature enables a user to create a document with an OLE link to an embedded object inside your container application. For example, create a document in a word processor containing an embedded spreadsheet. If your application supports links to embedded objects, it could paste a link to the spreadsheet contained in the word processor's document. This feature allows your application to use the information contained in the spreadsheet without knowing where the word processor originally got it.
 

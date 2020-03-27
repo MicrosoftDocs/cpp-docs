@@ -2510,7 +2510,7 @@ This new warning C4768 is given on some Windows SDK headers that were shipped wi
    #pragma warning (pop)
    ```
 
-### <a name="extern_linkage"></a>Extern constexpr linkage
+### <a name="extern_linkage"></a> Extern constexpr linkage
 
 In earlier versions of Visual Studio, the compiler always gave a **constexpr** variable internal linkage even when the variable was marked **extern**. In Visual Studio 2017 version 15.5, a new compiler switch (**/Zc:externConstexpr**) enables correct standards-conforming behavior. Eventually this behavior will become the default.
 

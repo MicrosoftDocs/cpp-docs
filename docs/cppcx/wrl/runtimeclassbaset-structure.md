@@ -45,7 +45,7 @@ Name                                                         | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="asiid"></a>RuntimeClassBaseT::AsIID
+## <a name="asiid"></a> RuntimeClassBaseT::AsIID
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -80,7 +80,7 @@ S_OK if successful; otherwise, an HRESULT that describes the error.
 
 Retrieves a pointer to the specified interface ID.
 
-## <a name="getimplementediids"></a>RuntimeClassBaseT::GetImplementedIIDS
+## <a name="getimplementediids"></a> RuntimeClassBaseT::GetImplementedIIDS
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

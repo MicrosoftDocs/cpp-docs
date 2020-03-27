@@ -46,7 +46,7 @@ The class appears as the first argument to an event handler for a deferred event
 
 **Namespace:** Microsoft::WRL
 
-## <a name="getdeferral"></a>DeferrableEventArgs::GetDeferral
+## <a name="getdeferral"></a> DeferrableEventArgs::GetDeferral
 
 Gets a reference to the [Deferral](/uwp/api/windows.foundation.deferral) object which represents a deferred event.
 
@@ -63,7 +63,7 @@ A pointer that will reference the [Deferral](/uwp/api/windows.foundation.deferra
 
 S_OK if successful; otherwise, an HRESULT that indicates the error.
 
-## <a name="invokeallfinished"></a>DeferrableEventArgs::InvokeAllFinished
+## <a name="invokeallfinished"></a> DeferrableEventArgs::InvokeAllFinished
 
 Called to indicate that all processing to handle a deferred event is complete.
 

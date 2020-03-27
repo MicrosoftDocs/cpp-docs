@@ -21,7 +21,7 @@ This topic explains:
 
 Recordsets select records from a data source through an ODBC driver by sending SQL statements to the driver. The SQL sent depends on how you design and open your recordset class.
 
-##  <a name="_core_your_options_in_selecting_records"></a> Your Options in Selecting Records
+## <a name="_core_your_options_in_selecting_records"></a> Your Options in Selecting Records
 
 The following table shows your options in selecting records.
 
@@ -37,7 +37,7 @@ The following table shows your options in selecting records.
 
 |Call `Requery` to requery the recordset with the latest values on the data source|Specify new parameters, filter, or sort. See [Recordset: Requerying a Recordset (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md).|
 
-##  <a name="_core_how_a_recordset_constructs_its_sql_statement"></a> How a Recordset Constructs Its SQL Statement
+## <a name="_core_how_a_recordset_constructs_its_sql_statement"></a> How a Recordset Constructs Its SQL Statement
 
 When you call a recordset object's [Open](../../mfc/reference/crecordset-class.md#open) member function, `Open` constructs a SQL statement using some or all of the following ingredients:
 
@@ -62,7 +62,7 @@ After constructing the statement, `Open` sends the SQL to the ODBC Driver Manage
 
 You can use a combination of these techniques to open [tables](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md) and to construct a query based on a [join](../../data/odbc/recordset-performing-a-join-odbc.md) of multiple tables. With additional customization, you can call [predefined queries](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md) (stored procedures), select table columns not known at design time and [bind](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) them to recordset fields or you can perform most other data-access tasks. Tasks you cannot accomplish by customizing recordsets can still be accomplished by [calling ODBC API functions](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) or directly executing SQL statements with [CDatabase::ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql).
 
-##  <a name="_core_customizing_the_selection"></a> Customizing the Selection
+## <a name="_core_customizing_the_selection"></a> Customizing the Selection
 
 Besides supplying a filter, a sort order, or parameters, you can take the following actions to customize your recordset's selection:
 

@@ -34,7 +34,7 @@ A `CCreateContext` structure contains pointers to the document, the frame window
 When a document template creates a document and its associated components, it validates the information stored in the `CCreateContext` structure. For example, a view should not be created for a nonexistent document.
 
 > [!NOTE]
->  All of the pointers in `CCreateContext` are optional and can be `NULL` if unspecified or unknown.
+> All of the pointers in `CCreateContext` are optional and can be `NULL` if unspecified or unknown.
 
 `CCreateContext` is used by the member functions listed under "See Also." Consult the descriptions of these functions for specific information if you plan to override them.
 

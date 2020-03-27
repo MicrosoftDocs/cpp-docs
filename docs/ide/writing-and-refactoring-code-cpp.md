@@ -9,7 +9,7 @@ ms.topic: "overview"
 
 Visual Studio provides several tools to help you write, edit, and refactor your code.
 
-##  IntelliSense
+## IntelliSense
 
 IntelliSense is a powerful code completion tool that suggests symbols and code snippets for you as you type. C++ IntelliSense in Visual Studio runs in real time, analyzing your codebase as you update it and providing recommendations. As you type more characters, the list of recommended results narrows down.
 
@@ -85,7 +85,7 @@ A window at the bottom of the editor shows where each instantiation was found, a
 
 **Template Bar** information is treated as user-specific. It is stored in the .vs folder and is not committed to source control.
 
-##  Error squiggles and quick fixes
+## Error squiggles and quick fixes
 
 If the editor detects problems with your code, it will add colored squiggles under the problem. Red squiggles indicate code that won't compile. Green squiggles indicate other kinds of problems that might still be potentially serious. You can open the **Error List** window to get more information about the problems.
 
@@ -109,13 +109,13 @@ Whenever you make a change to a file, a yellow bar appears on the left to indica
 
 You can move lines of code up and down by selecting them, holding down Alt, and pressing the **Up/Down** arrow keys.
 
-##  Insert snippets
+## Insert snippets
 
 A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).
 
 ![C&#43;&#43; Insert Snippet Drop&#45;down](../ide/media/vs2015_cpp_surround_with.png "vs2015_cpp_surround_with")
 
-##  Add Class
+## Add Class
 
 Add a new class from the **Project** menu, or from the context menu in **Solution Explorer**:
 
@@ -127,17 +127,17 @@ You can also use Class Wizard to modify or examine an existing class.
 
 For more information, see [Adding Functionality with Code Wizards (C++)](../ide/adding-functionality-with-code-wizards-cpp.md).
 
-##  Refactoring
+## Refactoring
 
 Refactorings are available under the Quick Action context menu, or by clicking on a [light bulb](/visualstudio/ide/perform-quick-actions-with-light-bulbs) in the editor.  Some are also found in the **Edit > Refactor** menu.  These features include:
 
-* [Rename](refactoring/rename.md)
-* [Extract Function](refactoring/extract-function.md)
-* [Implement Pure Virtuals](refactoring/implement-pure-virtuals.md)
-* [Create Declaration / Definition](refactoring/create-declaration-definition.md)
-* [Move Function Definition](refactoring/move-definition-location.md)
-* [Convert to Raw String Literal](refactoring/convert-to-raw-string-literal.md)
-* [Change Signature](refactoring/change-signature.md)
+- [Rename](refactoring/rename.md)
+- [Extract Function](refactoring/extract-function.md)
+- [Implement Pure Virtuals](refactoring/implement-pure-virtuals.md)
+- [Create Declaration / Definition](refactoring/create-declaration-definition.md)
+- [Move Function Definition](refactoring/move-definition-location.md)
+- [Convert to Raw String Literal](refactoring/convert-to-raw-string-literal.md)
+- [Change Signature](refactoring/change-signature.md)
 
 ## Code style enforcement with ClangFormat and EditorConfig
 

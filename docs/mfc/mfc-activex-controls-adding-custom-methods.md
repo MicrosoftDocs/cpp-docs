@@ -13,12 +13,12 @@ Custom methods differ from stock methods in that they are not already implemente
 
 An ActiveX control user can call a custom method at any time to perform control-specific actions. The dispatch map entry for custom methods is of the form DISP_FUNCTION.
 
-##  <a name="_core_adding_a_custom_method_with_classwizard"></a> Adding a Custom Method With the Add Method Wizard
+## <a name="_core_adding_a_custom_method_with_classwizard"></a> Adding a Custom Method With the Add Method Wizard
 
 The following procedure demonstrates adding the custom method PtInCircle to an ActiveX control's skeleton code. PtInCircle determines whether the coordinates passed to the control are inside or outside the circle. This same procedure can also be used to add other custom methods. Substitute your custom method name and its parameters for the PtInCircle method name and parameters.
 
 > [!NOTE]
->  This example uses the `InCircle` function from the article Events. For more information on this function, see the article [MFC ActiveX Controls: Adding Custom Events to an ActiveX Control](../mfc/mfc-activex-controls-adding-custom-events.md).
+> This example uses the `InCircle` function from the article Events. For more information on this function, see the article [MFC ActiveX Controls: Adding Custom Events to an ActiveX Control](../mfc/mfc-activex-controls-adding-custom-events.md).
 
 #### To add the PtInCircle custom method using the Add Method Wizard
 
@@ -44,7 +44,7 @@ The following procedure demonstrates adding the custom method PtInCircle to an A
 
 10. Click **Finish**.
 
-##  <a name="_core_classwizard_changes_for_custom_methods"></a> Add Method Wizard Changes for Custom Methods
+## <a name="_core_classwizard_changes_for_custom_methods"></a> Add Method Wizard Changes for Custom Methods
 
 When you add a custom method, the Add Method Wizard makes some changes to the control class header (.H) and implementation (.CPP) files. The following line is added to the dispatch map declaration in the control class header (.H) file:
 

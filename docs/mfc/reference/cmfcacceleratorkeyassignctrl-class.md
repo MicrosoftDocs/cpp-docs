@@ -61,7 +61,7 @@ The following example demonstrates how to construct a `CMFCAcceleratorKeyAssignC
 
 **Header:** afxacceleratorkeyassignctrl.h
 
-##  <a name="cmfcacceleratorkeyassignctrl"></a>  CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl
+## <a name="cmfcacceleratorkeyassignctrl"></a> CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl
 
 Constructs a [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) object.
 
@@ -69,7 +69,7 @@ Constructs a [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratork
 CMFCAcceleratorKeyAssignCtrl();
 ```
 
-##  <a name="getaccel"></a>  CMFCAcceleratorKeyAssignCtrl::GetAccel
+## <a name="getaccel"></a> CMFCAcceleratorKeyAssignCtrl::GetAccel
 
 Retrieves the `ACCEL` structure for a shortcut key pressed in the [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) object.
 
@@ -85,7 +85,7 @@ An `ACCEL` structure that describes the shortcut key.
 
 Use this function to retrieve the `ACCEL` structure for a shortcut key that the user entered into your `CMFCAcceleratorKeyAssignCtrl` object.
 
-##  <a name="isfocused"></a>  CMFCAcceleratorKeyAssignCtrl::IsFocused
+## <a name="isfocused"></a> CMFCAcceleratorKeyAssignCtrl::IsFocused
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -97,7 +97,7 @@ BOOL IsFocused() const;
 
 ### Remarks
 
-##  <a name="iskeydefined"></a>  CMFCAcceleratorKeyAssignCtrl::IsKeyDefined
+## <a name="iskeydefined"></a> CMFCAcceleratorKeyAssignCtrl::IsKeyDefined
 
 Determines whether a shortcut key has been defined in the [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) object.
 
@@ -113,7 +113,7 @@ Nonzero if the user has already pressed a valid combination of keys that define 
 
 Use this function to determine whether the user entered a valid shortcut key in your `CMFCAcceleratorKeyAssignCtrl` object. If a shortcut key exists, you can use [CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel) method to obtain the `ACCEL` structure associated with this shortcut key.
 
-##  <a name="pretranslatemessage"></a>  CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage
+## <a name="pretranslatemessage"></a> CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
@@ -129,7 +129,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Remarks
 
-##  <a name="resetkey"></a>  CMFCAcceleratorKeyAssignCtrl::ResetKey
+## <a name="resetkey"></a> CMFCAcceleratorKeyAssignCtrl::ResetKey
 
 Resets the shortcut key.
 

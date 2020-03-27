@@ -56,7 +56,7 @@ The class describes an object that controls insertion of elements and encoded ob
 
 **Namespace:** std
 
-## <a name="allocator_type"></a>  basic_ostringstream::allocator_type
+## <a name="allocator_type"></a> basic_ostringstream::allocator_type
 
 The type is a synonym for the template parameter *Alloc*.
 
@@ -64,7 +64,7 @@ The type is a synonym for the template parameter *Alloc*.
 typedef Alloc allocator_type;
 ```
 
-## <a name="basic_ostringstream"></a>  basic_ostringstream::basic_ostringstream
+## <a name="basic_ostringstream"></a> basic_ostringstream::basic_ostringstream
 
 Constructs an object of type basic_ostringstream.
 
@@ -88,7 +88,7 @@ The first constructor initializes the base class by calling [basic_ostream](../s
 
 The second constructor initializes the base class by calling basic_ostream( **sb**). It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(_ *Str*, `_Mode` &#124; `ios_base::out`).
 
-## <a name="rdbuf"></a>  basic_ostringstream::rdbuf
+## <a name="rdbuf"></a> basic_ostringstream::rdbuf
 
 Returns the address of the stored stream buffer of type `pointer` to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
 
@@ -108,7 +108,7 @@ The member function returns the address of the stored stream buffer of type `poi
 
 See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `rdbuf`.
 
-## <a name="str"></a>  basic_ostringstream::str
+## <a name="str"></a> basic_ostringstream::str
 
 Sets or gets the text in a string buffer without changing the write position.
 

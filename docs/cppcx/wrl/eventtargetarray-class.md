@@ -54,7 +54,7 @@ Name                                  | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="tilde-eventtargetarray"></a>EventTargetArray::~EventTargetArray
+## <a name="tilde-eventtargetarray"></a> EventTargetArray::~EventTargetArray
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -66,7 +66,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 Deinitializes the current `EventTargetArray` class.
 
-## <a name="addtail"></a>EventTargetArray::AddTail
+## <a name="addtail"></a> EventTargetArray::AddTail
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -87,7 +87,7 @@ Appends the specified event handler to the end of the internal array of event ha
 
 `AddTail()` is intended to be used internally by only the `EventSource` class.
 
-## <a name="begin"></a>EventTargetArray::Begin
+## <a name="begin"></a> EventTargetArray::Begin
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -103,7 +103,7 @@ The address of the first element in the internal array of event handlers.
 
 Gets the address of the first element in the internal array of event handlers.
 
-## <a name="end"></a>EventTargetArray::End
+## <a name="end"></a> EventTargetArray::End
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -119,7 +119,7 @@ The address of the last element in the internal array of event handlers.
 
 Gets the address of the last element in the internal array of event handlers.
 
-## <a name="eventtargetarray"></a>EventTargetArray::EventTargetArray
+## <a name="eventtargetarray"></a> EventTargetArray::EventTargetArray
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -153,7 +153,7 @@ Initializes a new instance of the `EventTargetArray` class.
 
 `EventTargetArray` is used to keep an array of event handlers in an `EventSource` object.
 
-## <a name="length"></a>EventTargetArray::Length
+## <a name="length"></a> EventTargetArray::Length
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

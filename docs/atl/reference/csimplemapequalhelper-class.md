@@ -41,7 +41,7 @@ This traits class is a supplement to the `CSimpleMap` class. It provides methods
 
 **Header:** atlsimpcoll.h
 
-##  <a name="isequalkey"></a>  CSimpleMapEqualHelper::IsEqualKey
+## <a name="isequalkey"></a> CSimpleMapEqualHelper::IsEqualKey
 
 Tests two keys for equality.
 
@@ -61,7 +61,7 @@ The second key.
 
 Returns true if the keys are equal, false otherwise.
 
-##  <a name="isequalvalue"></a>  CSimpleMapEqualHelper::IsEqualValue
+## <a name="isequalvalue"></a> CSimpleMapEqualHelper::IsEqualValue
 
 Tests two values for equality.
 

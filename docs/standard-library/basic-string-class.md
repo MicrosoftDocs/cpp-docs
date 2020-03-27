@@ -118,7 +118,7 @@ References, pointers, and iterators that designate elements of the controlled se
 
 **Namespace:** std
 
-## <a name="allocator_type"></a>  basic_string::allocator_type
+## <a name="allocator_type"></a> basic_string::allocator_type
 
 A type that represents the allocator class for a string object.
 
@@ -149,7 +149,7 @@ int main( )
 }
 ```
 
-## <a name="append"></a>  basic_string::append
+## <a name="append"></a> basic_string::append
 
 Adds characters to the end of a string.
 
@@ -310,7 +310,7 @@ The string str2f is: Wide World
 The appended string str1 is: Hello World.
 ```
 
-## <a name="assign"></a>  basic_string::assign
+## <a name="assign"></a> basic_string::assign
 
 Assigns new character values to the contents of a string.
 
@@ -471,7 +471,7 @@ The string str2f is: Wide World
 The string str1 assigned a range of string str2f is: World.
 ```
 
-## <a name="at"></a>  basic_string::at
+## <a name="at"></a> basic_string::at
 
 Provides a reference to the character with a specified index in a string.
 
@@ -539,7 +539,7 @@ int main( )
 }
 ```
 
-## <a name="back"></a>  basic_string::back
+## <a name="back"></a> basic_string::back
 
 Returns a reference to the last element in the string.
 
@@ -555,7 +555,7 @@ A reference to the last element of the string, which must be non-empty.
 
 ### Remarks
 
-## <a name="basic_string"></a>  basic_string::basic_string
+## <a name="basic_string"></a> basic_string::basic_string
 
 Constructs a string that is empty, initialized by specific characters, or is a copy of all or part of another string object or C style (null-terminated) string.
 
@@ -712,7 +712,7 @@ int main( )
 }
 ```
 
-## <a name="begin"></a>  basic_string::begin
+## <a name="begin"></a> basic_string::begin
 
 Returns an iterator addressing the first element in the string.
 
@@ -762,7 +762,7 @@ int main( ) {
 }
 ```
 
-## <a name="c_str"></a>  basic_string::c_str
+## <a name="c_str"></a> basic_string::c_str
 
 Converts the contents of a string as a C-style, null-terminated string.
 
@@ -826,7 +826,7 @@ The C-style string c_str1 is: Hello world
 The length of C-style string str1 = 11
 ```
 
-## <a name="capacity"></a>  basic_string::capacity
+## <a name="capacity"></a> basic_string::capacity
 
 Returns the largest number of elements that could be stored in a string without increasing the memory allocation of the string.
 
@@ -896,7 +896,7 @@ int main( )
 }
 ```
 
-## <a name="cbegin"></a>  basic_string::cbegin
+## <a name="cbegin"></a> basic_string::cbegin
 
 Returns a **const** iterator that addresses the first element in the range.
 
@@ -922,7 +922,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  basic_string::cend
+## <a name="cend"></a> basic_string::cend
 
 Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
@@ -950,7 +950,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` shouldn't be dereferenced.
 
-## <a name="clear"></a>  basic_string::clear
+## <a name="clear"></a> basic_string::clear
 
 Erases all elements of a string.
 
@@ -1001,7 +1001,7 @@ The modified string str1 is:
 Nothing printed above because the string str1 is empty.
 ```
 
-## <a name="compare"></a>  basic_string::compare
+## <a name="compare"></a> basic_string::compare
 
 Performs a case sensitive comparison with a specified string to determine if the two strings are equal or if one is lexicographically less than the other.
 
@@ -1262,7 +1262,7 @@ The 3 characters from position 2 of the operand string are equal to
 the first 3 characters of the parameter C-string.
 ```
 
-## <a name="const_iterator"></a>  basic_string::const_iterator
+## <a name="const_iterator"></a> basic_string::const_iterator
 
 A type that provides a random-access iterator that can access and read a **const** element in the string.
 
@@ -1278,7 +1278,7 @@ A type `const_iterator` cannot be used to modify the value of a character and is
 
 See the example for [begin](#begin) for an example of how to declare and use `const_iterator`.
 
-## <a name="const_pointer"></a>  basic_string::const_pointer
+## <a name="const_pointer"></a> basic_string::const_pointer
 
 A type that provides a pointer to a **const** element in a string.
 
@@ -1318,7 +1318,7 @@ The string pstr1a is: In Here.
 The C-string cstr1c is: Out There.
 ```
 
-## <a name="const_reference"></a>  basic_string::const_reference
+## <a name="const_reference"></a> basic_string::const_reference
 
 A type that provides a reference to a **const** element stored in a string for reading and performing **const** operations.
 
@@ -1336,7 +1336,7 @@ The type is a synonym for `allocator_type::const_reference`. For string `type`, 
 
 See the example for [at](#at) for an example of how to declare and use `const_reference`.
 
-## <a name="const_reverse_iterator"></a>  basic_string::const_reverse_iterator
+## <a name="const_reverse_iterator"></a> basic_string::const_reverse_iterator
 
 A type that provides a random-access iterator that can read any **const** element in the string.
 
@@ -1352,7 +1352,7 @@ A type `const_reverse_iterator` cannot modify the value of a character and is us
 
 See the example for [rbegin](#rbegin) for an example of how to declare and use `const_reverse_iterator`.
 
-## <a name="copy"></a>  basic_string::copy
+## <a name="copy"></a> basic_string::copy
 
 Copies at most a specified number of characters from an indexed position in a source string to a target character array.
 
@@ -1433,7 +1433,7 @@ The number of copied characters in array2 is: 5
 The copied characters array2 is: World
 ```
 
-## <a name="crbegin"></a>  basic_string::crbegin
+## <a name="crbegin"></a> basic_string::crbegin
 
 Returns a const iterator that addresses the first element in a reversed string.
 
@@ -1445,7 +1445,7 @@ const_reverse_iterator crbegin() const;
 
 A reverse iterator that points just beyond the end of the string. The position designates the beginning of the reverse string.
 
-## <a name="crend"></a>  basic_string::crend
+## <a name="crend"></a> basic_string::crend
 
 Returns a const iterator that addresses the location succeeding the last element in a reversed string.
 
@@ -1459,7 +1459,7 @@ A const reverse iterator that addresses the location succeeding the last element
 
 ### Remarks
 
-## <a name="copy_s"></a>  basic_string::_Copy_s
+## <a name="copy_s"></a> basic_string::_Copy_s
 
 Copies at most a specified number of characters from an indexed position in a source string to a target character array.
 
@@ -1540,7 +1540,7 @@ The number of copied characters in array2 is: 5
 The copied characters array2 is: World
 ```
 
-## <a name="data"></a>  basic_string::data
+## <a name="data"></a> basic_string::data
 
 Converts the contents of a string into a null-terminated array of characters.
 
@@ -1609,7 +1609,7 @@ The C-style string c_str1 is: Hello world
 The length of C-style string str1 = 11
 ```
 
-## <a name="difference_type"></a>  basic_string::difference_type
+## <a name="difference_type"></a> basic_string::difference_type
 
 A type that provides the difference between two iterators that refer to elements within the same string.
 
@@ -1657,7 +1657,7 @@ The last character i is at position: 8.
 The difference is: 6.
 ```
 
-## <a name="empty"></a>  basic_string::empty
+## <a name="empty"></a> basic_string::empty
 
 Tests whether the string contains characters or not.
 
@@ -1705,7 +1705,7 @@ int main() {
 }
 ```
 
-## <a name="end"></a>  basic_string::end
+## <a name="end"></a> basic_string::end
 
 Returns an iterator that addresses the location succeeding the last element in a string.
 
@@ -1778,7 +1778,7 @@ The modified string str1 is now: No way ouT.
 The string str2 is empty.
 ```
 
-## <a name="erase"></a>  basic_string::erase
+## <a name="erase"></a> basic_string::erase
 
 Removes an element or a range of elements in a string from a specified position.
 
@@ -1881,7 +1881,7 @@ The original string object str3 is: Hello computer.
 The modified string object str3m is: Hello .
 ```
 
-## <a name="find"></a>  basic_string::find
+## <a name="find"></a> basic_string::find
 
 Searches a string in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.
 
@@ -2056,7 +2056,7 @@ the 5th position in str4 is: 25
 The index of the 1st element of 'clear' in str4 is: 0
 ```
 
-## <a name="find_first_not_of"></a>  basic_string::find_first_not_of
+## <a name="find_first_not_of"></a> basic_string::find_first_not_of
 
 Searches through a string for the first character that isn't an element of a specified string.
 
@@ -2244,7 +2244,7 @@ The index of the 1st non occurrence of an element of '12' in str4 after
 the 0th position is: 2
 ```
 
-## <a name="find_first_of"></a>  basic_string::find_first_of
+## <a name="find_first_of"></a> basic_string::find_first_of
 
 Searches through a string for the first character that matches any element of a specified string.
 
@@ -2431,7 +2431,7 @@ The index of the 1st occurrence of an element of 'a2' in str4 after
 the 0th position is: 1
 ```
 
-## <a name="find_last_not_of"></a>  basic_string::find_last_not_of
+## <a name="find_last_not_of"></a> basic_string::find_last_not_of
 
 Searches through a string for the last character that isn't any element of a specified string.
 
@@ -2620,7 +2620,7 @@ The index of the last occurrence of an element not in '12'
 in str4 before the end position is: 10
 ```
 
-## <a name="find_last_of"></a>  basic_string::find_last_of
+## <a name="find_last_of"></a> basic_string::find_last_of
 
 Searches through a string for the last character that matches any element of a specified string.
 
@@ -2794,7 +2794,7 @@ The index of the last occurrence of an element of 'a2' in str4 before
 the 0th position is: 9
 ```
 
-## <a name="front"></a>  basic_string::front
+## <a name="front"></a> basic_string::front
 
 Returns a reference to the first element in a string.
 
@@ -2810,7 +2810,7 @@ A reference to the first element of the string, which must be non-empty.
 
 ### Remarks
 
-## <a name="get_allocator"></a>  basic_string::get_allocator
+## <a name="get_allocator"></a> basic_string::get_allocator
 
 Returns a copy of the allocator object used to construct the string.
 
@@ -2853,7 +2853,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a>  basic_string::insert
+## <a name="insert"></a> basic_string::insert
 
 Inserts an element or a number of elements or a range of elements into the string at a specified position.
 
@@ -3032,7 +3032,7 @@ The string with a character inserted from a range is: ABCDefgHIJ
 The string with a character inserted from a range is: ABCDeeeHIJ
 ```
 
-## <a name="iterator"></a>  basic_string::iterator
+## <a name="iterator"></a> basic_string::iterator
 
 A type that provides a random-access iterator that can access and read a **const** element in the string.
 
@@ -3048,7 +3048,7 @@ A type `iterator` can be used to modify the value of a character and is used to 
 
 See the example for [begin](#begin) for an example of how to declare and use `iterator`.
 
-## <a name="length"></a>  basic_string::length
+## <a name="length"></a> basic_string::length
 
 Returns the current number of elements in a string.
 
@@ -3114,7 +3114,7 @@ int main( )
 }
 ```
 
-## <a name="max_size"></a>  basic_string::max_size
+## <a name="max_size"></a> basic_string::max_size
 
 Returns the maximum number of characters a string could contain.
 
@@ -3184,7 +3184,7 @@ int main( )
 }
 ```
 
-## <a name="npos"></a>  basic_string::npos
+## <a name="npos"></a> basic_string::npos
 
 An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.
 
@@ -3200,7 +3200,7 @@ When the return value is to be checked for the `npos` value, it might not work u
 
 See the example for [find](#find) for an example of how to declare and use `npos`.
 
-## <a name="op_add_eq"></a>  basic_string::operator+=
+## <a name="op_add_eq"></a> basic_string::operator+=
 
 Appends characters to a string.
 
@@ -3289,7 +3289,7 @@ The appended string str1d is: Hello Wide .
 The doubly appended strig str1 is: Hello Wide World.
 ```
 
-## <a name="op_eq"></a>  basic_string::operator=
+## <a name="op_eq"></a> basic_string::operator=
 
 Assigns new character values to the contents of a string.
 
@@ -3383,7 +3383,7 @@ The string str3c is: World.
 The string str1 reassigned with string str3c is: World.
 ```
 
-## <a name="op_at"></a>  basic_string::operator[]
+## <a name="op_at"></a> basic_string::operator[]
 
 Provides a reference to the character with a specified index in a string.
 
@@ -3452,7 +3452,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>  basic_string::pointer
+## <a name="pointer"></a> basic_string::pointer
 
 A type that provides a pointer to a character element in a string or character array.
 
@@ -3489,7 +3489,7 @@ The string pstr1a is: In Here.
 The C-string cstr1b is: Out There.
 ```
 
-## <a name="pop_back"></a>  basic_string::pop_back
+## <a name="pop_back"></a> basic_string::pop_back
 
 Erases the last element of the string.
 
@@ -3501,7 +3501,7 @@ void pop_back();
 
 This member function effectively calls `erase(size() - 1)` to erase the last element of the sequence, which must be non-empty.
 
-## <a name="push_back"></a>  basic_string::push_back
+## <a name="push_back"></a> basic_string::push_back
 
 Adds an element to the end of the string.
 
@@ -3556,7 +3556,7 @@ The last character-letter of the modified str1 is now: c
 The modified string str1 is: abc
 ```
 
-## <a name="rbegin"></a>  basic_string::rbegin
+## <a name="rbegin"></a> basic_string::rbegin
 
 Returns an iterator to the first element in a reversed string.
 
@@ -3632,7 +3632,7 @@ AblE was I ere I saw elbA
 The string str2 is empty.
 ```
 
-## <a name="reference"></a>  basic_string::reference
+## <a name="reference"></a> basic_string::reference
 
 A type that provides a reference to an element stored in a string.
 
@@ -3652,7 +3652,7 @@ For type `string`, it's equivalent to `chr&`.
 
 See the example for [at](#at) for an example of how to declare and use `reference`.
 
-## <a name="rend"></a>  basic_string::rend
+## <a name="rend"></a> basic_string::rend
 
 Returns an iterator that addresses the location succeeding the last element in a reversed string.
 
@@ -3730,7 +3730,7 @@ ablE was I ere I saw elbo
 The string str2 is empty.
 ```
 
-## <a name="replace"></a>  basic_string::replace
+## <a name="replace"></a> basic_string::replace
 
 Replaces elements in a string at a specified position with specified characters or characters copied from other ranges or strings or C-strings.
 
@@ -4027,7 +4027,7 @@ The result of s7o.replace (IterF3 ,IterL3 ,IterF4 ,IterL4)
 is the string: OPPOOOO.
 ```
 
-## <a name="reserve"></a>  basic_string::reserve
+## <a name="reserve"></a> basic_string::reserve
 
 Sets the capacity of the string to a number at least as great as a specified number.
 
@@ -4117,7 +4117,7 @@ The current size of string str1 is: 11.
 The reduced capacity of string str1 is: 47.
 ```
 
-## <a name="resize"></a>  basic_string::resize
+## <a name="resize"></a> basic_string::resize
 
 Specifies a new size for a string, appending or erasing elements as required.
 
@@ -4227,7 +4227,7 @@ The current size of downsized string str1 is: 5.
 The capacity of downsized string str1 is: 47.
 ```
 
-## <a name="reverse_iterator"></a>  basic_string::reverse_iterator
+## <a name="reverse_iterator"></a> basic_string::reverse_iterator
 
 A type that provides a reference to an element stored in a string.
 
@@ -4243,7 +4243,7 @@ A type `reverse_iterator` can be used to modify the value of a character and is 
 
 See the example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.
 
-## <a name="rfind"></a>  basic_string::rfind
+## <a name="rfind"></a> basic_string::rfind
 
 Searches a string in a backward direction for the first occurrence of a substring that matches a specified sequence of characters.
 
@@ -4418,7 +4418,7 @@ The substring 'clear' was not found in str4 before the 15th position.
 The index of the 1st element of 'clear' in str4 is: 17
 ```
 
-## <a name="shrink_to_fit"></a>  basic_string::shrink_to_fit
+## <a name="shrink_to_fit"></a> basic_string::shrink_to_fit
 
 Discards the excess capacity of the string.
 
@@ -4430,7 +4430,7 @@ void shrink_to_fit();
 
 This member function eliminates any unneeded storage in the container.
 
-## <a name="size"></a>  basic_string::size
+## <a name="size"></a> basic_string::size
 
 Returns the current number of elements in a string.
 
@@ -4496,7 +4496,7 @@ int main( )
 }
 ```
 
-## <a name="size_type"></a>  basic_string::size_type
+## <a name="size_type"></a> basic_string::size_type
 
 An unsigned integer type that can represent the number of elements and indices in a string.
 
@@ -4539,7 +4539,7 @@ The current size of string str1 is: 11.
 The capacity of string str1 is: 15.
 ```
 
-## <a name="substr"></a>  basic_string::substr
+## <a name="substr"></a> basic_string::substr
 
 Copies a substring of at most some number of characters from a string beginning from a specified position.
 
@@ -4598,7 +4598,7 @@ Heterological paradoxes are persistent.
 which is the entire original string.
 ```
 
-## <a name="swap"></a>  basic_string::swap
+## <a name="swap"></a> basic_string::swap
 
 Exchange the contents of two strings.
 
@@ -4659,7 +4659,7 @@ The basic_string s1 = Tweedledum.
 The basic_string s2 = Tweedledee.
 ```
 
-## <a name="traits_type"></a>  basic_string::traits_type
+## <a name="traits_type"></a> basic_string::traits_type
 
 A type for the character traits of the elements stored in a string.
 
@@ -4677,7 +4677,7 @@ For type `string`, it's equivalent to **char_traits\<char>**.
 
 See the example for [copy](../standard-library/char-traits-struct.md#copy) for an example of how to declare and use `traits_type`.
 
-## <a name="value_type"></a>  basic_string::value_type
+## <a name="value_type"></a> basic_string::value_type
 
 A type that represents the type of characters stored in a string.
 

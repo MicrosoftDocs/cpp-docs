@@ -109,7 +109,7 @@ Some applications and Windows subsystems expose performance data through the Win
 The following code example uses these classes to retrieve and display a counter that is updated by Windows to indicate the percentage of time that the processor is busy.
 
 > [!NOTE]
->  This example requires administrative privileges to run on Windows Vista.
+> This example requires administrative privileges to run on Windows Vista.
 
 ### Example
 

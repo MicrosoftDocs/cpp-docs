@@ -68,7 +68,7 @@ The following code example demonstrates how to use `SimpleClassFactory` with the
 
 **Namespace:** Microsoft::WRL
 
-## <a name="createinstance"></a>SimpleClassFactory::CreateInstance Method
+## <a name="createinstance"></a> SimpleClassFactory::CreateInstance Method
 
 Creates an instance of the specified interface.
 
