@@ -56,7 +56,7 @@ The **using** directive allows all the names in a **namespace** to be used witho
 > [!NOTE]
 > A using directive can be placed at the top of a .cpp file (at file scope), or inside a class or function definition.
 >
->  In general, avoid putting using directives in header files (*.h) because any file that includes that header will bring everything in the namespace into scope, which can cause name hiding and name collision problems that are very difficult to debug. Always use fully qualified names in a header file. If those names get too long, you can use a namespace alias to shorten them. (See below.)
+> In general, avoid putting using directives in header files (*.h) because any file that includes that header will bring everything in the namespace into scope, which can cause name hiding and name collision problems that are very difficult to debug. Always use fully qualified names in a header file. If those names get too long, you can use a namespace alias to shorten them. (See below.)
 
 ## Declaring namespaces and namespace members
 
@@ -118,7 +118,7 @@ All C++ standard library types and functions are declared in the `std` namespace
 
 ## Nested namespaces
 
-Namespaces may be nested. An ordinary nested namespace has unqualified access to its parent’s members, but the parent members do not have unqualified access to the nested namespace (unless it is declared as inline), as shown in the following example:
+Namespaces may be nested. An ordinary nested namespace has unqualified access to its parent's members, but the parent members do not have unqualified access to the nested namespace (unless it is declared as inline), as shown in the following example:
 
 ```cpp
 namespace ContosoDataServer
@@ -234,7 +234,7 @@ namespace Contoso
 
 ## <a id="namespace_aliases"></a> Namespace aliases
 
-Namespace names need to be unique, which means that often they should not be too short. If the length of a name makes code difficult to read, or is tedious to type in a header file where using directives can’t be used, then you can make a namespace alias which serves as an abbreviation for the actual name. For example:
+Namespace names need to be unique, which means that often they should not be too short. If the length of a name makes code difficult to read, or is tedious to type in a header file where using directives can't be used, then you can make a namespace alias which serves as an abbreviation for the actual name. For example:
 
 ```cpp
 namespace a_very_long_namespace_name { class Foo {}; }

@@ -20,7 +20,7 @@ Public and protected class members are documented only when they are normally us
 > [!IMPORTANT]
 > The MFC classes and their members cannot be used in applications that execute in the Windows Runtime environment.
 >
->  MFC libraries (DLLs) for multibyte character encoding (MBCS) are no longer included in Visual Studio, but are available as a Visual Studio add-on. For more information, see [MFC MBCS DLL Add-on](mfc-mbcs-dll-add-on.md).
+> MFC libraries (DLLs) for multibyte character encoding (MBCS) are no longer included in Visual Studio, but are available as a Visual Studio add-on. For more information, see [MFC MBCS DLL Add-on](mfc-mbcs-dll-add-on.md).
 
 ## In This Section
 
