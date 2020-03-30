@@ -75,7 +75,7 @@ The following macros can be used to handle DHTML events in [CMultiPageDHtmlDialo
 
 Marks the beginning of the DHTML event map when placed in the source file for the class identified by `className`.
 
-```
+```cpp
 BEGIN_DHTML_EVENT_MAP(className)
 ```
 
@@ -100,7 +100,7 @@ Place the BEGIN_DHTML_EVENT_MAP macro in the class's implementation (.cpp) file 
 
 Marks the beginning of the DHTML event map within the class definition for *className*.
 
-```
+```cpp
 BEGIN_DHTML_EVENT_MAP_INLINE(className)
 ```
 
@@ -125,7 +125,7 @@ Place the BEGIN_DHTML_EVENT_MAP macro in the class's definition (.h) file follow
 
 Declares a DHTML event map in a class definition.
 
-```
+```cpp
 DECLARE_DHTML_EVENT_MAP()
 ```
 
@@ -147,7 +147,7 @@ Use [BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map) or [BEGIN_DHTML_EVENT_MAP_IN
 
 Handles (at the document level) an event identified by *dispid* originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT(dispid, elemName,  memberFxn)
 ```
 
@@ -174,7 +174,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles the event identified by *dispid* fired by the ActiveX control identified by *controlName*.
 
-```
+```cpp
 DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)
 ```
 
@@ -201,7 +201,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) an event identified by *dispid* originated by any HTML element with the CSS class identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_CLASS(dispid, elemName,  memberFxn)
 ```
 
@@ -228,7 +228,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the element identified by *elemName*) an event identified by *dispid*.
 
-```
+```cpp
 DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
 ```
 
@@ -259,7 +259,7 @@ If this macro is used to handle bubbling events, the element identified by *elem
 
 Handles (at the document level) the `onafterupdate` event originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_ONAFTERUPDATE(elemName, memberFxn)
 ```
 
@@ -283,7 +283,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onbeforeupdate` event originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_ONBEFOREUPDATE(elemName, memberFxn)
 ```
 
@@ -307,7 +307,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the element level) the `onblur` event. This is a nonbubbling event.
 
-```
+```cpp
 DHTML_EVENT_ONBLUR(elemName, memberFxn)
 ```
 
@@ -331,7 +331,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the element level) the `onchange` event. This is a nonbubbling event.
 
-```
+```cpp
 DHTML_EVENT_ONCHANGE(elemName, memberFxn)
 ```
 
@@ -355,7 +355,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onclick` event originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_ONCLICK(elemName, memberFxn)
 ```
 
@@ -379,7 +379,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `ondataavailable` event originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_ONDATAAVAILABLE(elemName, memberFxn)
 ```
 
@@ -403,7 +403,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `ondatasetchanged` event originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_ONDATASETCHANGED(elemName, memberFxn)
 ```
 
@@ -427,7 +427,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `ondatasetcomplete` event originated by the HTML element identified by `elemName`.
 
-```
+```cpp
 DHTML_EVENT_ONDATASETCOMPLETE(elemName, memberFxn)
 ```
 
@@ -451,7 +451,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `ondblclick` event originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_ONDBLCLICK(elemName, memberFxn)
 ```
 
@@ -475,7 +475,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `ondragstart` event originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)
 ```
 
@@ -499,7 +499,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onerrorupdate` event originated by the HTML element identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
 ```
 
@@ -523,8 +523,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onfilterchange` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
 ```
 
@@ -548,8 +547,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the element level) the `onfocus` event. This is a nonbubbling event.
 
-```
-
+```cpp
 DHTML_EVENT_ONFOCUS(elemName, memberFxn)
 ```
 
@@ -573,8 +571,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onhelp` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONHELP(elemName, memberFxn)
 ```
 
@@ -598,8 +595,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onkeydown` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
 ```
 
@@ -623,8 +619,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onkeypress` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
 ```
 
@@ -648,8 +643,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onkeyup` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONKEYUP(elemName, memberFxn)
 ```
 
@@ -673,8 +667,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onmousedown` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
 ```
 
@@ -698,8 +691,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onmousemove` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
 ```
 
@@ -723,8 +715,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onmouseout` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
 ```
 
@@ -748,8 +739,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onmouseover` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
 ```
 
@@ -773,8 +763,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onmouseup` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
 ```
 
@@ -798,8 +787,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the element level) the `onresize` event. This is a nonbubbling event.
 
-```
-
+```cpp
 DHTML_EVENT_ONRESIZE(elemName, memberFxn)
 ```
 
@@ -823,8 +811,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onrowenter` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONROWENTER(elemName, memberFxn)
 ```
 
@@ -848,8 +835,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onrowexit` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
 ```
 
@@ -873,8 +859,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) the `onselectstart` event originated by the HTML element identified by *elemName*.
 
-```
-
+```cpp
 DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
 ```
 
@@ -898,7 +883,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Handles (at the document level) an event identified by `dispid` originated by any HTML element with the HTML tag identified by *elemName*.
 
-```
+```cpp
 DHTML_EVENT_TAG(dispid, elemName,  memberFxn)
 ```
 
@@ -925,7 +910,7 @@ Use this macro to add an entry to the [DHTML event map](#begin_dhtml_event_map_i
 
 Marks the end of the DHTML event map.
 
-```
+```cpp
 END_DHTML_EVENT_MAP()
 ```
 
@@ -941,7 +926,7 @@ Must be used in conjunction with [BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map)
 
 Starts the definition of a DHTML and URL event map in a multipage dialog.
 
-```
+```cpp
 BEGIN_DHTML_URL_EVENT_MAP()
 ```
 
@@ -961,7 +946,7 @@ Put BEGIN_DHTML_URL_EVENT_MAP in the implementation file of your [CMultiPageDHtm
 
 Starts the definition of an embedded DHTML event map in a multipage dialog.
 
-```
+```cpp
 BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 ```
 
@@ -993,7 +978,7 @@ See the example in [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map).
 
 Starts the definition of a URL event entry map in a multipage dialog.
 
-```
+```cpp
 BEGIN_URL_ENTRIES(className)
 ```
 
@@ -1018,7 +1003,7 @@ See the example in [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map).
 
 Declares a DHTML and URL event map in a class definition.
 
-```
+```cpp
 DECLARE_DHTML_URL_EVENT_MAP()
 ```
 
@@ -1036,7 +1021,7 @@ A DHTML and URL event map contains [embedded DHTML event maps](#begin_embed_dhtm
 
 Marks the end of a DHTML and URL event map.
 
-```
+```cpp
 END_DHTML_URL_EVENT_MAP(className)
 ```
 
@@ -1057,7 +1042,7 @@ See the example in [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map).
 
 Marks the end of an embedded DHTML event map.
 
-```
+```cpp
 END_EMBED_DHTML_EVENT_MAP()
 ```
 
@@ -1073,7 +1058,7 @@ See the example in [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map).
 
 Marks the end of a URL event entry map.
 
-```
+```cpp
 END_URL_ENTRIES()
 ```
 
@@ -1089,7 +1074,7 @@ See the example in [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map).
 
 Maps a URL or HTML resource to a page in a multipage dialog.
 
-```
+```cpp
 URL_EVENT_ENTRY(className, url,  mapName)
 ```
 
@@ -1124,7 +1109,7 @@ Marks the end of the DHTML event map.
 
 ### Syntax
 
-```
+```cpp
 END_DHTML_EVENT_MAP_INLINE( )
 ```
 

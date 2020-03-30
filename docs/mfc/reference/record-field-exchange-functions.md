@@ -74,7 +74,7 @@ Transfers arrays of bytes between the field data members of a `CRecordset` objec
 
 ### Syntax
 
-```
+```cpp
 void RFX_Binary(
    CFieldExchange* pFX,
    const char* szName,
@@ -114,7 +114,7 @@ Transfers Boolean data between the field data members of a `CRecordset` object a
 
 ### Syntax
 
-```
+```cpp
 void RFX_Bool(
    CFieldExchange* pFX,
    const char* szName,
@@ -146,7 +146,7 @@ Transfers single bytes between the field data members of a `CRecordset` object a
 
 ### Syntax
 
-```
+```cpp
 void RFX_Byte(
    CFieldExchange* pFX,
    const char* szName,
@@ -178,7 +178,7 @@ Transfers `CTime` or TIMESTAMP_STRUCT data between the field data members of a `
 
 ### Syntax
 
-```
+```cpp
 void RFX_Date(
    CFieldExchange* pFX,
    const char* szName,
@@ -228,7 +228,7 @@ Transfers **double float** data between the field data members of a `CRecordset`
 
 ### Syntax
 
-```
+```cpp
 void RFX_Double(
    CFieldExchange* pFX,
    const char* szName,
@@ -260,7 +260,7 @@ Transfers integer data between the field data members of a `CRecordset` object a
 
 ### Syntax
 
-```
+```cpp
 void RFX_Int(
    CFieldExchange* pFX,
    const char* szName,
@@ -292,7 +292,7 @@ Transfers long integer data between the field data members of a `CRecordset` obj
 
 ### Syntax
 
-```
+```cpp
 void RFX_Long(
    CFieldExchange* pFX,
    const char* szName,
@@ -325,7 +325,7 @@ Transfers binary large object (BLOB) data using class [CLongBinary](clongbinary-
 
 ### Syntax
 
-```
+```cpp
 void RFX_LongBinary(
    CFieldExchange* pFX,
    const char* szName,
@@ -357,7 +357,7 @@ Transfers floating-point data between the field data members of a `CRecordset` o
 
 ### Syntax
 
-```
+```cpp
 void RFX_Single(
    CFieldExchange* pFX,
    const char* szName,
@@ -389,7 +389,7 @@ Transfers `CString` data between the field data members of a `CRecordset` object
 
 ### Syntax
 
-```
+```cpp
 void RFX_Text(
    CFieldExchange* pFX,
    const char* szName,
@@ -455,7 +455,7 @@ Transfers multiple rows of byte data from a column of an ODBC data source to a c
 
 ### Syntax
 
-```
+```cpp
 void RFX_Binary_Bulk(
    CFieldExchange* pFX,
    LPCTSTR szName,
@@ -506,7 +506,7 @@ Transfers multiple rows of Boolean data from a column of an ODBC data source to 
 
 ### Syntax
 
-```
+```cpp
 void RFX_Bool_Bulk(
    CFieldExchange* pFX,
    LPCTSTR szName,
@@ -553,7 +553,7 @@ Transfers multiple rows of single bytes from a column of an ODBC data source to 
 
 ### Syntax
 
-```
+```cpp
 void RFX_Byte_Bulk(
    CFieldExchange* pFX,
    LPCTSTR szName,
@@ -600,7 +600,7 @@ Transfers multiple rows of TIMESTAMP_STRUCT data from a column of an ODBC data s
 
 ### Syntax
 
-```
+```cpp
 void RFX_Date_Bulk(
    CFieldExchange* pFX,
    LPCTSTR szName,
@@ -647,7 +647,7 @@ Transfers multiple rows of double-precision, floating-point data from a column o
 
 ### Syntax
 
-```
+```cpp
 void RFX_Double_Bulk(
    CFieldExchange* pFX,
    LPCTSTR szName,
@@ -694,7 +694,7 @@ Transfers integer data between the field data members of a `CRecordset` object a
 
 ### Syntax
 
-```
+```cpp
 void RFX_Int(
    CFieldExchange* pFX,
    const char* szName,
@@ -726,7 +726,7 @@ Transfers multiple rows of long integer data from a column of an ODBC data sourc
 
 ### Syntax
 
-```
+```cpp
 void RFX_Long_Bulk(
    CFieldExchange* pFX,
    LPCTSTR szName,
@@ -773,7 +773,7 @@ Transfers multiple rows of floating-point data from a column of an ODBC data sou
 
 ### Syntax
 
-```
+```cpp
 void RFX_Single_Bulk(
    CFieldExchange* pFX,
    LPCTSTR szName,
@@ -820,7 +820,7 @@ Transfers multiple rows of character data from a column of an ODBC data source t
 
 ### Syntax
 
-```
+```cpp
 void RFX_Text_Bulk(
    CFieldExchange* pFX,
    LPCTSTR szName,
@@ -886,7 +886,7 @@ Transfers arrays of bytes between the field data members of a [CDaoRecordset](cd
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Binary(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -933,7 +933,7 @@ Transfers Boolean data between the field data members of a [CDaoRecordset](cdaor
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Bool(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -976,7 +976,7 @@ Transfers single bytes between the field data members of a [CDaoRecordset](cdaor
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Byte(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -1019,7 +1019,7 @@ Transfers currency data between the field data members of a [CDaoRecordset](cdao
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Currency(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -1062,7 +1062,7 @@ Transfers time and date data between the field data members of a [CDaoRecordset]
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_DateTime(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -1108,7 +1108,7 @@ Transfers **double float** data between the field data members of a [CDaoRecords
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Double(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -1151,7 +1151,7 @@ Transfers long integer data between the field data members of a [CDaoRecordset](
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Long(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -1194,7 +1194,7 @@ See [DFX_Text](#dfx_text).
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_LongBinary(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -1241,7 +1241,7 @@ Transfers short integer data between the field data members of a [CDaoRecordset]
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Short(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -1287,7 +1287,7 @@ Transfers floating-point data between the field data members of a [CDaoRecordset
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Single(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
@@ -1330,7 +1330,7 @@ Transfers `CString` data between the field data members of a [CDaoRecordset](cda
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI DFX_Text(
    CDaoFieldExchange* pFX,
    LPCTSTR szName,
