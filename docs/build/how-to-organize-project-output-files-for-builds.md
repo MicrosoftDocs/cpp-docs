@@ -38,7 +38,7 @@ This topic describes best practices for organizing project output files. Build e
 
 1. Reference the appropriate header file in your code using the #include directive. The header file must be in the include path or part of the current project. For more information, see [#include Directive (C/C++)](../preprocessor/hash-include-directive-c-cpp.md).
 
-1. You can also set project dependencies. Setting project dependencies guarantees two things. First, it ensures that projects are built in the right order so that a project can always find the dependent files it needs. Second, it implicitly adds the dependent project’s output directory to the path so that files can be found easily at link-time.
+1. You can also set project dependencies. Setting project dependencies guarantees two things. First, it ensures that projects are built in the right order so that a project can always find the dependent files it needs. Second, it implicitly adds the dependent project's output directory to the path so that files can be found easily at link-time.
 
 1. To deploy the application, you will need to place the DLL in an appropriate place. This can be one of the following:
 
