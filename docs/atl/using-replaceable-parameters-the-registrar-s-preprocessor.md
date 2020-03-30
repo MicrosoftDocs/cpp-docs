@@ -35,7 +35,7 @@ During the parsing of the script, the Registrar expands `'%MODULE%, 1'` to `c:\m
 > [!NOTE]
 > When building a project that outputs an executable, ATL automatically adds quotation marks around the path name created at run time with the **%MODULE%** registrar script parameter. If you do not want the path name to include the quotation marks, use the new **%MODULE_RAW%** parameter instead.
 >
->  When building a project that outputs a DLL, ATL will not add quotation marks to the path name if **%MODULE%** or **%MODULE_RAW%** is used.
+> When building a project that outputs a DLL, ATL will not add quotation marks to the path name if **%MODULE%** or **%MODULE_RAW%** is used.
 
 ## See also
 
