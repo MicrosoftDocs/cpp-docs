@@ -11,6 +11,7 @@ Visual Studio C and C++ development isn't just for Windows anymore. This tutoria
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * clone an open-source CMake project from GitHub
 > * open the project in Visual Studio
 > * build and debug an executable target on Windows
