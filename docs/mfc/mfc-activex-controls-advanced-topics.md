@@ -60,11 +60,11 @@ The following procedure adds a parameterized property, called Array, which can b
 
 1. In the **Get Function** and **Set Function** boxes, type unique names for your Get and Set Functions or accept the default names.
 
-9. Add a parameter, called *row* (type *short*), using the **Parameter Name** and **Parameter Type** controls.
+1. Add a parameter, called *row* (type *short*), using the **Parameter Name** and **Parameter Type** controls.
 
-10. Add a second parameter called *column* (type *short*).
+1. Add a second parameter called *column* (type *short*).
 
-11. Click **Finish**.
+1. Click **Finish**.
 
 ### Changes Made by the Add Property Wizard
 

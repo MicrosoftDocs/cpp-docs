@@ -30,7 +30,7 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
    ![Windows search box](media/visual-studio-installer-search.png)
 
-2. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
+1. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
 
    ![Visual C++ for Linux Development workload](media/linuxworkload.png)
 
