@@ -9,7 +9,7 @@ ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
 
 A symbol is a resource identifier (ID) that consists of two parts, a symbol name (text string) mapped to an symbol value (integer), for example:
 
-```
+```cpp
 IDC_EDITNAME = 5100
 ```
 

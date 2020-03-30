@@ -35,7 +35,7 @@ In addition, the `AfxOleTypeMatchGuid` global function is provided to test for a
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property that stores binary large object (BLOB) data.
 
-```
+```cpp
 BOOL PX_Blob(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -77,7 +77,7 @@ Note that `PX_Blob` will allocate memory, using the Windows [GlobalAlloc](/windo
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type BOOL.
 
-```
+```cpp
 BOOL PX_Bool(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -116,7 +116,7 @@ The property's value will be read from or written to the variable referenced by 
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type OLE_COLOR.
 
-```
+```cpp
 BOOL PX_Color(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -155,7 +155,7 @@ The property's value will be read from or written to the variable referenced by 
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **currency**.
 
-```
+```cpp
 BOOL PX_Currency(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -194,7 +194,7 @@ The property's value will be read from or written to the variable referenced by 
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a data path property of type [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md).
 
-```
+```cpp
 BOOL PX_DataPath(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -228,7 +228,7 @@ Data path properties implement asynchronous control properties. The property's v
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **double**.
 
-```
+```cpp
 BOOL PX_Double(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -267,7 +267,7 @@ The property's value is read from or written to the variable referenced by *doub
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type font.
 
-```
+```cpp
 BOOL PX_Font(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -305,7 +305,7 @@ The property's value is read from or written to `font`, a `CFontHolder` referenc
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **float**.
 
-```
+```cpp
 BOOL PX_Float(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -344,7 +344,7 @@ The property's value is read from or written to the variable referenced by *floa
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property represented by an object having an `IUnknown`-derived interface.
 
-```
+```cpp
 BOOL PX_IUnknown(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -382,7 +382,7 @@ The property's value is read from or written to the variable referenced by *pUnk
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **long**.
 
-```
+```cpp
 BOOL PX_Long(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -421,7 +421,7 @@ The property's value is read from or written to the variable referenced by *lVal
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a picture property of your control.
 
-```
+```cpp
 BOOL PX_Picture(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -460,7 +460,7 @@ The property's value is read from or written to the variable referenced by *pict
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **short**.
 
-```
+```cpp
 BOOL PX_Short(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -499,7 +499,7 @@ The property's value is read from or written to the variable referenced by *sVal
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **ULONG**.
 
-```
+```cpp
 BOOL PX_ULong(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -538,7 +538,7 @@ The property's value is read from or written to the variable referenced by *ulVa
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **unsigned short**.
 
-```
+```cpp
 BOOL PX_UShort(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -577,7 +577,7 @@ The property's value is read from or written to the variable referenced by *usVa
 
 Call this function within your control's `DoPropExchange` member function to serialize or initialize a character string property.
 
-```
+```cpp
 BOOL PXstring(
     CPropExchange* pPX,
     LPCTSTR pszPropName,
@@ -616,7 +616,7 @@ The property's value is read from or written to the variable referenced by *strV
 
 Call this function within your control's `DoPropExchange` member function to initialize a font property by converting a VBX control's font-related properties.
 
-```
+```cpp
 BOOL PX_VBXFontConvert(
     CPropExchange* pPX,
     CFontHolder& font);

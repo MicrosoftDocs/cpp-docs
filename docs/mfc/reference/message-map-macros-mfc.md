@@ -48,7 +48,7 @@ Begins the definition of your message map.
 
 ### Syntax
 
-```
+```cpp
 BEGIN_MESSAGE_MAP( theClass, baseClass )
 ```
 
@@ -84,7 +84,7 @@ Begins the definition of a message map on a class type containing a single templ
 
 ### Syntax
 
-```
+```cpp
 BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 ```
 
@@ -117,7 +117,7 @@ Declares that the class defines a message map. Each `CCmdTarget`-derived class i
 
 ### Syntax
 
-```
+```cpp
 DECLARE_MESSAGE_MAP( )
 ```
 
@@ -150,7 +150,7 @@ Ends the definition of your message map.
 
 ### Syntax
 
-```
+```cpp
 END_MESSAGE_MAP( )
 ```
 
@@ -168,7 +168,7 @@ This macro maps a command message to a member function.
 
 ### Syntax
 
-```
+```cpp
 ON_COMMAND( commandId, memberFxn )
 ```
 
@@ -206,7 +206,7 @@ Extended command-handler member function.
 
 ### Syntax
 
-```
+```cpp
 ON_COMMAND_EX(commandId, memberFxn);
 ```
 
@@ -234,7 +234,7 @@ Indicates which function will handle a custom-control notification message.
 
 ### Syntax
 
-```
+```cpp
 ON_CONTROL( wNotifyCode, commandId, memberFxn )
 ```
 
@@ -267,7 +267,7 @@ Indicates which function will handle a user-defined message.
 
 ### Syntax
 
-```
+```cpp
 ON_MESSAGE( message, memberFxn )
 ```
 
@@ -325,7 +325,7 @@ Routes commands through the command dispatch interface `IOleCommandTarget`.
 
 ### Syntax
 
-```
+```cpp
 ON_OLECMD( pguid, olecmdid, commandId )
 ```
 
@@ -454,7 +454,7 @@ The Windows `RegisterWindowMessage` function is used to define a new window mess
 
 ### Syntax
 
-```
+```cpp
 ON_REGISTERED_MESSAGE( nMessageVariable, memberFxn )
 ```
 
@@ -492,7 +492,7 @@ Indicates which function will handle the message registered by the Windows Regis
 
 ### Syntax
 
-```
+```cpp
 ON_REGISTERED_THREAD_MESSAGE(nMessageVariable, memberFxn )
 ```
 
@@ -518,7 +518,7 @@ Indicates which function will handle a user-defined message.
 
 ### Syntax
 
-```
+```cpp
 ON_THREAD_MESSAGE( message, memberFxn )
 ```
 
@@ -544,7 +544,7 @@ This macro indicates which function will handle a user-interface update command 
 
 ### Syntax
 
-```
+```cpp
 ON_UPDATE_COMMAND_UI( messageId, memberFxn )
 ```
 
@@ -572,7 +572,7 @@ Use this macro to map a contiguous range of command IDs to a single message hand
 
 ### Syntax
 
-```
+```cpp
 ON_COMMAND_RANGE( id1, id2, memberFxn )
 ```
 
@@ -627,7 +627,7 @@ Maps a contiguous range of command IDs to a single update message handler functi
 
 ### Syntax
 
-```
+```cpp
 ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
 ```
 
@@ -658,7 +658,7 @@ Use this macro to map a contiguous range of control IDs to a single message hand
 
 ### Syntax
 
-```
+```cpp
 ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
 ```
 

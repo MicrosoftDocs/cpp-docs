@@ -19,7 +19,7 @@ The ribbon designer creates and stores the ribbon as a resource. When you create
 
 - Adds an entry in the project resource definition script (*.rc). In the following example, IDR_RIBBON is the unique name that identifies the ribbon resource, RT_RIBBON_XML is the resource type, and ribbon.mfcribbon-ms is the name of the resource file.
 
-```
+```cpp
     IDR_RIBBON RT_RIBBON_XML      "res\\ribbon.mfcribbon-ms"
 ```
 
