@@ -407,6 +407,7 @@ previous `std::experimental` version, made necessary by symlink support, bug fix
 <a name="note_rem"></a> __rem__ Features removed when the [/std:c++17](../build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) compiler option is specified. These features can be re-enabled to ease the transition to newer language modes by use of these macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
 
 <a name="note_charconv"></a> __charconv__ `from_chars()` and `to_chars()` are available for integers. The timeline for floating-point `from_chars()` and floating-point `to_chars()` is as follows:
+
 - VS 2017 15.7: Integer `from_chars()` and `to_chars()`.
 - VS 2017 15.8: Floating-point `from_chars()`.
 - VS 2017 15.9: Floating-point `to_chars()` overloads for shortest decimal.

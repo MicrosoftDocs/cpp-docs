@@ -22,6 +22,7 @@ The regular expression grammar to use is by specified by the use of one of the `
 By default, if no grammar is specified, `ECMAScript` is assumed. Only one grammar may be specified.
 
 In addition to the grammar, several flags can be applied:
+
 - `icase`: Ignore case when matching.
 - `nosubs`: Ignore marked matches (that is, expressions in parentheses); no substitutions are stored.
 - `optimize`: Make matching faster, at the possible expense of greater construction time.
