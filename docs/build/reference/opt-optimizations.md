@@ -42,7 +42,7 @@ In a debug build, you must explicitly specify **/OPT:ICF** to enable COMDAT fold
 
 **LBR** &#124; **NOLBR**
 
-The **/OPT:LBR** and **/OPT:NOLBR** options apply only to ARM binaries. Because certain ARM processor branch instructions have a limited range, if the linker detects a jump to an out-of-range address, it replaces the branch instruction’s destination address with the address of a code "island" that contains a branch instruction that targets the actual destination. You can use **/OPT:LBR** to optimize the detection of long branch instructions and the placement of intermediate code islands to minimize overall code size. **/OPT:NOLBR** instructs the linker to generate code islands for long branch instructions as they are encountered, without optimization.
+The **/OPT:LBR** and **/OPT:NOLBR** options apply only to ARM binaries. Because certain ARM processor branch instructions have a limited range, if the linker detects a jump to an out-of-range address, it replaces the branch instruction's destination address with the address of a code "island" that contains a branch instruction that targets the actual destination. You can use **/OPT:LBR** to optimize the detection of long branch instructions and the placement of intermediate code islands to minimize overall code size. **/OPT:NOLBR** instructs the linker to generate code islands for long branch instructions as they are encountered, without optimization.
 
 By default, the **/OPT:LBR** option is set when incremental linking is not enabled. If you want a non-incremental link but not long branch optimizations, specify **/OPT:NOLBR**. The **/OPT:LBR** option disables incremental linking.
 

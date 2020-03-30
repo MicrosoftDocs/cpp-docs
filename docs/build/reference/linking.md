@@ -40,7 +40,7 @@ On the command line, an option consists of an option specifier, either a dash (-
 
 To pass a file to the linker, specify the filename on the command line after the LINK command. You can specify an absolute or relative path with the filename, and you can use wildcards in the filename. If you omit the dot (.) and filename extension, LINK assumes .obj for the purpose of finding the file. LINK does not use filename extensions or the lack of them to make assumptions about the contents of files; it determines the type of file by examining it, and processes it accordingly.
 
-link.exe returns zero for success (no errors).  Otherwise, the linker returns the error number that stopped the link.  For example, if the linker generates LNK1104, the linker returns 1104.  Accordingly, the lowest error number returned on an error by the linker is 1000.  A return value of 128 represents a configuration problem with either the operating system or a .config file; the loader didn’t load either link.exe or c2.dll.
+link.exe returns zero for success (no errors).  Otherwise, the linker returns the error number that stopped the link.  For example, if the linker generates LNK1104, the linker returns 1104.  Accordingly, the lowest error number returned on an error by the linker is 1000.  A return value of 128 represents a configuration problem with either the operating system or a .config file; the loader didn't load either link.exe or c2.dll.
 
 ## LINK Command Files
 

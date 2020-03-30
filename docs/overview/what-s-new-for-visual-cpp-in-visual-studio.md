@@ -92,7 +92,7 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
 ##### Visual Studio 2019 version 16.1
 
-IntelliCode is an optional extension that uses its own extensive training and your code context to put what you’re most likely to use at the top of your completion list. It can often eliminate the need to scroll down through the list. For C++, IntelliCode offers the most help when using popular libraries such as the standard library. It's available as a workload component in the installer. For more information, see [AI-Assisted Code Completion Suggestions Come to C++ via IntelliCode](https://devblogs.microsoft.com/cppblog/cppintellicode/).
+IntelliCode is an optional extension that uses its own extensive training and your code context to put what you're most likely to use at the top of your completion list. It can often eliminate the need to scroll down through the list. For C++, IntelliCode offers the most help when using popular libraries such as the standard library. It's available as a workload component in the installer. For more information, see [AI-Assisted Code Completion Suggestions Come to C++ via IntelliCode](https://devblogs.microsoft.com/cppblog/cppintellicode/).
 
 ### Template IntelliSense
 
@@ -126,7 +126,7 @@ For more information, see [C++ Productivity Improvements in Visual Studio 2019 P
 
 ##### Visual Studio 2019 version 16.1
 
-The Quick Info tooltip now respects the semantic colorization of your editor. It also has a new **Search Online** link that will search for online docs to learn more about the hovered code construct. For red-squiggled code, the link provided by Quick Info will search for the error online. This way you don’t need to retype the message into your browser. For more information, see [Quick Info Improvements in Visual Studio 2019: Colorization and Search Online](https://devblogs.microsoft.com/cppblog/quick-info-improvements-in-visual-studio-2019-colorization-and-search-online/).
+The Quick Info tooltip now respects the semantic colorization of your editor. It also has a new **Search Online** link that will search for online docs to learn more about the hovered code construct. For red-squiggled code, the link provided by Quick Info will search for the error online. This way you don't need to retype the message into your browser. For more information, see [Quick Info Improvements in Visual Studio 2019: Colorization and Search Online](https://devblogs.microsoft.com/cppblog/quick-info-improvements-in-visual-studio-2019-colorization-and-search-online/).
 
 ### IntelliCode available in C++ workload
 
@@ -174,7 +174,7 @@ IntelliCode now ships as an optional component in the **Desktop Development with
 
 ## IncrediBuild integration
 
-IncrediBuild is included as an optional component in the **Desktop development with C++** workload. The IncrediBuild Build Monitor is fully integrated in the Visual Studio IDE. For more information, see [Visualize your build with IncrediBuild’s Build Monitor and Visual Studio 2019](https://devblogs.microsoft.com/cppblog/visualize-your-build-with-incredibuilds-build-monitor-and-visual-studio-2019/).
+IncrediBuild is included as an optional component in the **Desktop development with C++** workload. The IncrediBuild Build Monitor is fully integrated in the Visual Studio IDE. For more information, see [Visualize your build with IncrediBuild's Build Monitor and Visual Studio 2019](https://devblogs.microsoft.com/cppblog/visualize-your-build-with-incredibuilds-build-monitor-and-visual-studio-2019/).
 
 ## Debugging
 
@@ -603,7 +603,7 @@ Improvements have been made in cross-platform code sharing and type visualizatio
 - The Linux workload has added support for **rsync** as an alternative to **sftp** for synchronizing files to remote Linux machines.
 - Support is added for cross compilation targeting ARM microcontrollers. To enable it in the installation, choose the **Linux development with C++** workload and select the option for **Embedded and IoT Development**. This option adds the ARM GCC cross compilation tools and Make to your installation. For more information, see [ARM GCC Cross Compilation in Visual Studio](https://devblogs.microsoft.com/cppblog/arm-gcc-cross-compilation-in-visual-studio/).
 - Support added for CMake. You can now work on your existing CMake code base without having to convert it to a Visual Studio project. For more information, see [Configure a Linux CMake Project](../linux/cmake-linux-project.md).
-- Support added for running remote tasks. This capability allows you to run any command on a remote system that is defined in Visual Studio’s Connection Manager. Remote tasks also provide the capability to copy files to the remote system.
+- Support added for running remote tasks. This capability allows you to run any command on a remote system that is defined in Visual Studio's Connection Manager. Remote tasks also provide the capability to copy files to the remote system.
 For more information, see [Configure a Linux CMake Project](../linux/cmake-linux-project.md).
 
 ##### Visual Studio 2017 version 15.7
@@ -704,7 +704,7 @@ Visual Studio Graphics Diagnostics is a set of tools for recording and analyzing
 
   If your frame was captured with full call stack capturing enabled (**Visual Studio > Tools > Options** under **Graphics Diagnostics**), then the context of each change event can be quickly deduced and inspected within your Visual Studio project.
 
-- **API Statistics:** View a high-level summary of API usage in your frame. It's handy for discovering calls you may not realize you’re making at all, or calls you are making too much. This window is available via **View > API Statistics** in Visual Studio Graphics Analyzer.
+- **API Statistics:** View a high-level summary of API usage in your frame. It's handy for discovering calls you may not realize you're making at all, or calls you are making too much. This window is available via **View > API Statistics** in Visual Studio Graphics Analyzer.
 
   ![API stats](media/api-stats.png)
 
