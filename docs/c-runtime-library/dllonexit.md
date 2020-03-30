@@ -6,7 +6,7 @@ api_location: ["msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.d
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["__dllonexit"]
-helpviewer_keywords: ["__dllon'xit"]
+helpviewer_keywords: ["__dllonexit"]
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
 ---
 # __dllonexit
@@ -35,7 +35,7 @@ Pointer to variable that points to the end of a list of functions to execute on 
 
 ## Return Value
 
-If successful, a pointer to the user's function. Otherwise, a **NULL** pointer.
+If successful, a pointer to the user’s function. Otherwise, a **NULL** pointer.
 
 ## Remarks
 
