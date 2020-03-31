@@ -39,7 +39,7 @@ The Add Property Wizard provides a quick and easy method to implement read-only 
 
 1. If you want a read-only property, clear the Set function name. If you want a write-only property, clear the Get function name.
 
-9. Click **Finish**.
+1. Click **Finish**.
 
 When you do this, the Add Property Wizard inserts the function `SetNotSupported` or `GetNotSupported` in the dispatch map entry in place of a normal Set or Get function.
 

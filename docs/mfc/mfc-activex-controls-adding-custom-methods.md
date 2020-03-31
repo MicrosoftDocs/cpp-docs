@@ -40,9 +40,9 @@ The following procedure demonstrates adding the custom method PtInCircle to an A
 
 1. Using the **Parameter Type** and **Parameter Name** controls, add a parameter called *xCoord* (type *OLE_XPOS_PIXELS*).
 
-9. Using the **Parameter Type** and **Parameter Name** controls, add a parameter called *yCoord* (type *OLE_YPOS_PIXELS*).
+1. Using the **Parameter Type** and **Parameter Name** controls, add a parameter called *yCoord* (type *OLE_YPOS_PIXELS*).
 
-10. Click **Finish**.
+1. Click **Finish**.
 
 ## <a name="_core_classwizard_changes_for_custom_methods"></a> Add Method Wizard Changes for Custom Methods
 
