@@ -55,7 +55,7 @@ The Microsoft run-time library defines the following standard types and typedefs
 |`jmp_buf` array|Used by [setjmp](../c-runtime-library/reference/setjmp.md) and [longjmp](../c-runtime-library/reference/longjmp.md) to save and restore program environment.|SETJMP.H|
 |`lconv` structure|Contains formatting rules for numeric values in different countries/regions. Used by [localeconv](../c-runtime-library/reference/localeconv.md).|LOCALE.H|
 |`_LDOUBLE`,<br /><br /> `_LONGDOUBLE`,<br /><br /> `_LDBL12` (long double or an unsigned char array)|Use to represent a long double value.|STDLIB.H|
-|`_locale_t` structure|Stores current locale values; used in all locale specific C run-time libraries.|CRTDEF.H|
+|`_locale_t` structure|Stores current locale values; used in all locale specific C run-time libraries.|CRTDEFStypo.H|
 |`mbstate_t`|Tracks the state of a multibyte character conversion.|WCHAR.H|
 |`off_t`, `_off_t` long integer|Represents file-offset value.|WCHAR.H, SYS\TYPES.H|
 |`_onexit_t`,<br /><br /> `_onexit_m_t` pointer|Returned by [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md).|STDLIB.H|
