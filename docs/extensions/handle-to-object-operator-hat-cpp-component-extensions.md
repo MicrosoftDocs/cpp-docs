@@ -188,7 +188,7 @@ Array value: 7
 Cannot access array element 11, size is 10
 ```
 
-This sample shows that a native reference (`&`) can’t bind to an **int** member of a managed type, as the **int** might be stored in the garbage collected heap, and native references don’t track object movement in the managed heap. The fix is to use a local variable, or to change `&` to `%`, making it a tracking reference.
+This sample shows that a native reference (`&`) can't bind to an **int** member of a managed type, as the **int** might be stored in the garbage collected heap, and native references don't track object movement in the managed heap. The fix is to use a local variable, or to change `&` to `%`, making it a tracking reference.
 
 ```cpp
 // mcppv2_handle_5.cpp

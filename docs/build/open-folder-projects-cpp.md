@@ -172,7 +172,7 @@ For more information, see [Tasks.vs.json schema reference](tasks-vs-json-schema-
 
 ### Configure debugging parameters with launch.vs.json
 
-To customize your program’s command line arguments and debugging instructions, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing *launch.vs.json* file, or if none exists, it will create a new file with a set of minimal launch settings. First you are given a choice of what kind of debug session you want to configure. For debugging a MinGw-w64 project, we choose **C/C++ Launch for MinGW/Cygwin (gdb)**. This creates a launch configuration for using *gdb.exe* with some educated guesses about default values. One of those default values is `MINGW_PREFIX`. You can substitute the literal path (as shown below) or you can define a `MINGW_PREFIX` property in *CppProperties.json*:
+To customize your program's command line arguments and debugging instructions, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing *launch.vs.json* file, or if none exists, it will create a new file with a set of minimal launch settings. First you are given a choice of what kind of debug session you want to configure. For debugging a MinGw-w64 project, we choose **C/C++ Launch for MinGW/Cygwin (gdb)**. This creates a launch configuration for using *gdb.exe* with some educated guesses about default values. One of those default values is `MINGW_PREFIX`. You can substitute the literal path (as shown below) or you can define a `MINGW_PREFIX` property in *CppProperties.json*:
 
 ```json
 {

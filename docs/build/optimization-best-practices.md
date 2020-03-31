@@ -26,7 +26,7 @@ The **/Gy** switch is also very useful. It generates a separate COMDAT for each 
 
 For linking in 64-bit environments, it is recommended to use the **/OPT:REF,ICF** linker option, and in 32-bit environments, **/OPT:REF** is recommended. For more information, see [/OPT (Optimizations)](reference/opt-optimizations.md).
 
-It is also strongly recommended to generate debug symbols, even with optimized release builds. It doesn’t affect the generated code, and it makes it a lot easier to debug your application, if need be.
+It is also strongly recommended to generate debug symbols, even with optimized release builds. It doesn't affect the generated code, and it makes it a lot easier to debug your application, if need be.
 
 ### Floating-point switches
 
@@ -61,7 +61,7 @@ For more information, see [noalias](../cpp/noalias.md).
 
 ## Optimization pragmas
 
-There are also several useful pragmas for helping optimize code. The first one we’ll discuss is `#pragma optimize`:
+There are also several useful pragmas for helping optimize code. The first one we'll discuss is `#pragma optimize`:
 
 ```cpp
 #pragma optimize("{opt-list}", on | off)
@@ -81,7 +81,7 @@ Inlining is one of the most important optimizations that the compiler performs a
 
 `#pragma inline_recursion` is useful for specifying whether or not you want the application to be able to inline a recursive call. By default it is off. For shallow recursion of small functions you may to turn this on. For more information, see [inline_recursion](../preprocessor/inline-recursion.md).
 
-Another useful pragma for limiting the depth of inlining is `#pragma inline_depth`. This is typically useful in situations where you’re trying to limit the size of a program or function. For more information, see [inline_depth](../preprocessor/inline-depth.md).
+Another useful pragma for limiting the depth of inlining is `#pragma inline_depth`. This is typically useful in situations where you're trying to limit the size of a program or function. For more information, see [inline_depth](../preprocessor/inline-depth.md).
 
 ## __restrict and \__assume
 
