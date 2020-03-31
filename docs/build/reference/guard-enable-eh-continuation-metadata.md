@@ -34,7 +34,7 @@ Code compiled by using **/guard:ehcont** can be linked to libraries and object f
 
 The linker will fatal, because it cannot generate metadata in these scenarios, which means throwing an exception will likely crash at runtime.
 
-For SEH section info that is in comdats but not compiled with /guard:ehcont, the linker will emit a warning, but will generate correct but conservative metadata for the section. To ignore warnings, open project's **property pages->Configuration Properties->Linker->Advanced-> Ignore Warning LNK4291(EHCont metadata)**
+For SEH section info that is in comdats but not compiled with /guard:ehcont, the linker will emit a warning **LNK4291**. In this case linker will generate correct but conservative metadata for the section. To ignore this warning, use [/IGNORE (Ignore Specific Warnings)](ignore-ignore-specific-warnings.md).
 
 
 To check if a binary contains EHCONT data, look for the following when dumping the binary's load config:
