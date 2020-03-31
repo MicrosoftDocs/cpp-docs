@@ -52,6 +52,7 @@ property UICheckState Check;
 ## Remarks
 
 This property sets the user interface item for this command to the appropriate check state. Set Check to the following values:
+
 - 0 Uncheck
 - 1 Check
 - 2 Set indeterminate

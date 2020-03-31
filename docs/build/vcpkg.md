@@ -130,7 +130,7 @@ It's inefficient to make everyone on a team download and build common libraries.
 
 The public catalog is kept up to date with the latest versions of the libraries. To determine which of your local libraries are out-of-date, use **vcpkg update**. When you're ready to update your ports collection to the latest version of the public catalog, run the **vcpkg upgrade** command. It automatically downloads and rebuilds any or all of your installed libraries that are out of date.
 
-By default, the **upgrade** command only lists the libraries that are out of date; it doesn’t upgrade them. To actually upgrade the libraries, use the **--no-dry-run** option.
+By default, the **upgrade** command only lists the libraries that are out of date; it doesn't upgrade them. To actually upgrade the libraries, use the **--no-dry-run** option.
 
 ```cmd
   vcpkg upgrade --no-dry-run

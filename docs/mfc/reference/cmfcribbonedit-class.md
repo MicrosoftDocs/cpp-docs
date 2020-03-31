@@ -11,7 +11,7 @@ Implements an edit control that is located on a ribbon bar.
 
 ## Syntax
 
-```
+```cpp
 class CMFCRibbonEdit : public CMFCRibbonButton
 ```
 
@@ -77,7 +77,7 @@ The following example demonstrates how to construct a `CMFCRibbonEdit` object, s
 
 Indicates whether the height of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control can increase vertically to the height of a ribbon row.
 
-```
+```cpp
 virtual BOOL CanBeStretched();
 ```
 
@@ -91,7 +91,7 @@ Always returns FALSE.
 
 Constructs a [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.
 
-```
+```cpp
 CMFCRibbonEdit(
     UINT nID,
     int nWidth,
@@ -123,7 +123,7 @@ The `CMFCRibbonEdit` control does not use a large image.
 
 Copies the state of the specified [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object to the current [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```
 
@@ -140,7 +140,7 @@ The *src* parameter must be of type `CMFCRibbonEdit`.
 
 Creates a new text box for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.
 
-```
+```cpp
 virtual CMFCRibbonRichEditCtrl* CreateEdit(
     CWnd* pWndParent,
     DWORD dwEditStyle);
@@ -178,7 +178,7 @@ You can apply the following [Window Styles](../../mfc/reference/styles-used-by-m
 
 Destroys the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.
 
-```
+```cpp
 virtual void DestroyCtrl();
 ```
 
@@ -188,7 +188,7 @@ virtual void DestroyCtrl();
 
 Drops down a list box.
 
-```
+```cpp
 virtual void DropDownList();
 ```
 
@@ -200,7 +200,7 @@ By default this method does nothing. Override this method to drop down a list bo
 
 Enables and sets the range of the spin button for the text box.
 
-```
+```cpp
 void EnableSpinButtons(
     int nMin,
     int nMax);
@@ -222,7 +222,7 @@ Spin buttons display an up and down arrow and enable users to move through a fix
 
 Retrieves the compact size of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.
 
-```
+```cpp
 virtual CSize GetCompactSize(CDC* pDC);
 ```
 
@@ -241,7 +241,7 @@ The compact size of the `CMFCRibbonEdit` object.
 
 Retrieves the text in the text box.
 
-```
+```cpp
 CString GetEditText() const;
 ```
 
@@ -255,7 +255,7 @@ The text in the text box.
 
 Retrieves the intermediate size of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.
 
-```
+```cpp
 virtual CSize GetIntermediateSize(CDC* pDC);
 ```
 
@@ -274,7 +274,7 @@ The intermediate size of the `CMFCRibbonEdit` object.
 
 Retrieves the alignment of the text in the text box.
 
-```
+```cpp
 int GetTextAlign() const;
 ```
 
@@ -298,7 +298,7 @@ For more information about these styles, see [Edit Control Styles](/windows/win3
 
 Retrieves the width, in pixels, of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.
 
-```
+```cpp
 int GetWidth(BOOL bInFloatyMode = FALSE) const;
 ```
 
@@ -317,7 +317,7 @@ The width, in pixels, of the `CMFCRibbonEdit` control.
 
 Indicates whether the display size for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control can be compact.
 
-```
+```cpp
 virtual BOOL HasCompactMode() const;
 ```
 
@@ -333,7 +333,7 @@ By default this method always returns TRUE. Override this method to indicate whe
 
 Indicates whether the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control has the focus.
 
-```
+```cpp
 virtual BOOL HasFocus() const;
 ```
 
@@ -347,7 +347,7 @@ TRUE if the `CMFCRibbonEdit` control has the focus; otherwise FALSE.
 
 Indicates whether the display size for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control can be large.
 
-```
+```cpp
 virtual BOOL HasLargeMode() const;
 ```
 
@@ -363,7 +363,7 @@ By default this method always returns FALSE. Override this method to indicate wh
 
 Indicates whether the text box has a spin button.
 
-```
+```cpp
 virtual BOOL HasSpinButtons() const;
 ```
 
@@ -377,7 +377,7 @@ TRUE if the text box has a spin button; otherwise FALSE.
 
 Indicates whether the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control is highlighted.
 
-```
+```cpp
 virtual BOOL IsHighlighted() const;
 ```
 
@@ -391,7 +391,7 @@ TRUE if the `CMFCRibbonEdit` control is highlighted; otherwise FALSE.
 
 Called by the framework when the dimensions of the display rectangle for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control change.
 
-```
+```cpp
 virtual void OnAfterChangeRect(CDC* pDC);
 ```
 
@@ -406,7 +406,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 
 Called by the framework to draw the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 
@@ -421,7 +421,7 @@ virtual void OnDraw(CDC* pDC);
 
 Called by the framework to draw the label and image for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.
 
-```
+```cpp
 virtual void OnDrawLabelAndImage(CDC* pDC);
 ```
 
@@ -436,7 +436,7 @@ virtual void OnDrawLabelAndImage(CDC* pDC);
 
 Called by the framework to draw the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control in a commands list box.
 
-```
+```cpp
 virtual void OnDrawOnList(
     CDC* pDC,
     CString strText,
@@ -474,7 +474,7 @@ The commands list box displays ribbon controls to enable users to customize the 
 
 Called by the framework to enable or disable the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.
 
-```
+```cpp
 virtual void OnEnable(BOOL bEnable);
 ```
 
@@ -489,7 +489,7 @@ virtual void OnEnable(BOOL bEnable);
 
 Called by the framework when the pointer enters or leaves the bounds of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.
 
-```
+```cpp
 virtual void OnHighlight(BOOL bHighlight);
 ```
 
@@ -504,7 +504,7 @@ virtual void OnHighlight(BOOL bHighlight);
 
 Called by the framework when the user presses a keytip and the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control has the focus.
 
-```
+```cpp
 virtual BOOL OnKey(BOOL bIsMenuKey);
 ```
 
@@ -523,7 +523,7 @@ TRUE if the event was handled; otherwise, FALSE.
 
 Called by the framework to update the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control when the user presses the left mouse button on the control.
 
-```
+```cpp
 virtual void OnLButtonDown(CPoint point);
 ```
 
@@ -538,7 +538,7 @@ virtual void OnLButtonDown(CPoint point);
 
 Called by the framework when the user releases the left mouse button.
 
-```
+```cpp
 virtual void OnLButtonUp(CPoint point);
 ```
 
@@ -553,7 +553,7 @@ virtual void OnLButtonUp(CPoint point);
 
 Called by the framework to update the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control when the layout changes direction.
 
-```
+```cpp
 virtual void OnRTLChanged(BOOL bIsRTL);
 ```
 
@@ -568,7 +568,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 
 Called by the framework to show or hide the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.
 
-```
+```cpp
 virtual void OnShow(BOOL bShow);
 ```
 
@@ -583,7 +583,7 @@ virtual void OnShow(BOOL bShow);
 
 Updates the display of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.
 
-```
+```cpp
 virtual void Redraw();
 ```
 
@@ -595,7 +595,7 @@ This method redraws the display rectangle for the `CMFCRibbonEdit` object by ind
 
 Sets the accessibility data for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.
 
-```
+```cpp
 virtual BOOL SetACCData(
     CWnd* pParent,
     CAccessibilityData& data);
@@ -619,7 +619,7 @@ Always returns TRUE.
 
 Sets the text in the text box.
 
-```
+```cpp
 void SetEditText(CString strText);
 ```
 
@@ -632,7 +632,7 @@ void SetEditText(CString strText);
 
 Sets the text alignment of the text box.
 
-```
+```cpp
 void SetTextAlign(int nAlign);
 ```
 
@@ -657,7 +657,7 @@ For more information about these styles, see [Edit Control Styles](/windows/win3
 
 Sets the width of the text box for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.
 
-```
+```cpp
 void SetWidth(
     int nWidth,
     BOOL bInFloatyMode = FALSE);

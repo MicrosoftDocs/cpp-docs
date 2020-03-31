@@ -24,7 +24,7 @@ The unary operators that can be overloaded are the following:
 
 1. `--` ([decrement](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
 
-9. conversion operators
+1. conversion operators
 
 The postfix increment and decrement operators (`++` and `--`) are treated separately in [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading-cpp.md).
 

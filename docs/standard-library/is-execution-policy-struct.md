@@ -10,6 +10,6 @@ Detects execution policies for the purpose of excluding function signatures from
 
 ## Syntax
 
-```
+```cpp
 template<class T> struct is_execution_policy { see below };
 ```

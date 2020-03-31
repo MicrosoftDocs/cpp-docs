@@ -11,7 +11,7 @@ The `CMFCRibbonComboBox` class implements a combo box control that you can add t
 
 ## Syntax
 
-```
+```cpp
 class CMFCRibbonComboBox : public CMFCRibbonEdit
 ```
 
@@ -74,7 +74,7 @@ The following example demonstrates how to construct an object of the `CMFCRibbon
 
 Appends a unique item to the list box.
 
-```
+```cpp
 virtual INT_PTR AddItem(
     LPCTSTR lpszItem,
     DWORD_PTR dwData=0);
@@ -96,7 +96,7 @@ The zero-based index of the appended item.
 
 Constructs a `CMFCRibbonComboBox` object.
 
-```
+```cpp
 public:
 CMFCRibbonComboBox(
     UINT nID,
@@ -134,7 +134,7 @@ The default width is 108 pixels.
 
 Deletes a specified item from the list box.
 
-```
+```cpp
 BOOL DeleteItem(int iIndex);
 BOOL DeleteItem(DWORD_PTR dwData);
 
@@ -162,7 +162,7 @@ TRUE if the specified item has been deleted; otherwise, FALSE.
 
 Specifies whether the list box can change size when it drops down.
 
-```
+```cpp
 void EnableDropDownListResize(BOOL bEnable=FALSE);
 ```
 
@@ -179,7 +179,7 @@ When resizing is enabled, the list box will change size to fit the items it disp
 
 Returns the index of the first item in the list box that matches a specified string.
 
-```
+```cpp
 int FindItem(LPCTSTR lpszText) const;
 ```
 
@@ -198,7 +198,7 @@ The zero-based index of the item; or -1 if the item is not found.
 
 Returns the number of items in the list box.
 
-```
+```cpp
 INT_PTR GetCount() const;
 ```
 
@@ -212,7 +212,7 @@ The number of items in the list box, or 0 if the list box contains no items.
 
 Gets the index of the currently selected item in the list box.
 
-```
+```cpp
 int GetCurSel() const;
 ```
 
@@ -224,7 +224,7 @@ The zero-based index of the currently selected item in the list box; or -1 if no
 
 Gets the height of the list box when the list box is dropped down.
 
-```
+```cpp
 int GetDropDownHeight();
 ```
 
@@ -238,7 +238,7 @@ The height, in pixels, of the list box.
 
 Returns the size of the combo box as displayed in intermediate mode.
 
-```
+```cpp
 virtual CSize GetIntermediateSize(CDC* pDC);
 ```
 
@@ -259,7 +259,7 @@ The size returned is based on the size of the combo box when it displays small i
 
 Returns the string associated with an item at a specified index in the list box.
 
-```
+```cpp
 LPCTSTR GetItem(int iIndex) const;
 ```
 
@@ -278,7 +278,7 @@ A pointer to the string that is associated with the item; otherwise, NULL if the
 
 Returns the data associated with an item at a specified index in the list box.
 
-```
+```cpp
 DWORD_PTR GetItemData(int iIndex) const;
 ```
 
@@ -295,7 +295,7 @@ The data associated with the item; or 0 if the item does not exist, or if the in
 
 Indicates whether the control contains an edit box.
 
-```
+```cpp
 BOOL HasEditBox() const;
 ```
 
@@ -309,7 +309,7 @@ TRUE if the control contains an edit box; otherwise, FALSE.
 
 Indicates whether or not the list box can be resized.
 
-```
+```cpp
 BOOL IsResizeDropDownList() const;
 ```
 
@@ -325,7 +325,7 @@ You can enable list box resizing by using the [CMFCRibbonComboBox::EnableDropDow
 
 Called by the framework when a user selects an item in the list box.
 
-```
+```cpp
 virtual void OnSelectItem(int nItem);
 ```
 
@@ -342,7 +342,7 @@ Override this method if you want to process a user input selection.
 
 Deletes all items from the list box and clears the edit box.
 
-```
+```cpp
 void RemoveAllItems();
 ```
 
@@ -352,7 +352,7 @@ void RemoveAllItems();
 
 Selects an item in the list box.
 
-```
+```cpp
 BOOL SelectItem(int iIndex);
 BOOL SelectItem(DWORD_PTR dwData);
 
@@ -380,7 +380,7 @@ TRUE if the method was successful; otherwise FALSE.
 
 Sets the height of the list box when it is dropped down.
 
-```
+```cpp
 void SetDropDownHeight(int nHeight);
 ```
 

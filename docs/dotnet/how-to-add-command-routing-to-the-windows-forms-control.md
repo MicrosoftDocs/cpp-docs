@@ -72,7 +72,7 @@ This topic assumes you have previously completed [How to: Create the User Contro
 
    In **Solution Explorer**, open the Resource.h file, copy the ID value for the menu option you just added, and paste that value as the first parameter to the `m_CmdSrc.AddCommandHandler` call in the C# project's `Initialize` method (replacing `32771` if necessary).
 
-9. Build and run the project.
+1. Build and run the project.
 
    On the **Build** menu, click **Build Solution**.
 

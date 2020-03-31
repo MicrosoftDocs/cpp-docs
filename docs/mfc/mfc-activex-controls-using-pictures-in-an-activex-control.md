@@ -87,7 +87,7 @@ Next, add a custom property that supports a Picture type:
 
 1. Type unique names for your Get and Set Functions or accept the default names. (In this example, the default names `GetControlPicture` and `SetControlPicture` are used.)
 
-9. Click **Finish**.
+1. Click **Finish**.
 
 The Add Property Wizard adds the following code between the dispatch map comments in the control header (.H) file:
 

@@ -43,7 +43,7 @@ These exceptions can also be raised in the following situations:
 
 - If you pass your **/clr** app to a utility, such as [regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), which loads its target assemblies into a non-default application domain.
 
-The common language runtime's code access security doesn’t work in OpenMP regions. If you apply a CLR code access security attribute outside a parallel region, it won't be in effect in the parallel region.
+The common language runtime's code access security doesn't work in OpenMP regions. If you apply a CLR code access security attribute outside a parallel region, it won't be in effect in the parallel region.
 
 Microsoft doesn't recommend that you write **/openmp** apps that allow partially trusted callers. Don't use <xref:System.Security.AllowPartiallyTrustedCallersAttribute>, or any CLR code access security attributes.
 

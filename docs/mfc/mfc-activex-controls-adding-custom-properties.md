@@ -58,7 +58,7 @@ This same procedure can also be used to add other custom properties you want. Su
 
 1. Type unique names for your Get and Set Functions, or accept the default names.
 
-9. Click **Finish**.
+1. Click **Finish**.
 
 ## <a name="_core_classwizard_changes_for_custom_properties"></a> Add Property Wizard Changes for Custom Properties
 

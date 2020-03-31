@@ -203,7 +203,7 @@ Windows code is compiled with frame pointers enabled ([/Oy (Frame-Pointer Omissi
 
 ## Exception unwinding
 
-Stack unwinding during exception handling is enabled by the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of the function prologue and epilogue code in an abstract manner, so that the effects of a function’s prologue can be undone in preparation for unwinding to the caller’s stack frame.
+Stack unwinding during exception handling is enabled by the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of the function prologue and epilogue code in an abstract manner, so that the effects of a function's prologue can be undone in preparation for unwinding to the caller's stack frame.
 
 The ARM EABI specifies an exception unwinding model that uses unwind codes. However, this specification is not sufficient for unwinding in Windows, which must handle cases where the processor is in the middle of the prologue or epilogue of a function. For more information about Windows on ARM exception data and unwinding, see [ARM Exception Handling](arm-exception-handling.md).
 

@@ -31,7 +31,7 @@ If your control uses shared data, such as a static member variable, access to th
 
 Consider, for example, a control class that needs to maintain a string that is shared by all instances. This string can be maintained in a static member variable and protected by a critical section. The control's class declaration would contain the following:
 
-```
+```cpp
 class CSampleCtrl : public COleControl
 {
 ...
@@ -42,14 +42,14 @@ class CSampleCtrl : public COleControl
 
 The implementation for the class would include definitions for these variables:
 
-```
+```cpp
 int CString CSampleCtrl::_strShared;
 CCriticalSection CSampleCtrl::_critSect;
 ```
 
 Access to the `_strShared` static member can then be protected by the critical section:
 
-```
+```cpp
 void CSampleCtrl::SomeMethod()
 {
     _critSect.Lock();
@@ -65,7 +65,7 @@ if (_strShared.Empty())
 
 Controls that support apartment-model threading should indicate this capability in the registry, by adding the named value "ThreadingModel" with a value of "Apartment" in their class ID registry entry under the *class id*\\**InprocServer32** key. To cause this key to be automatically registered for your control, pass the *afxRegApartmentThreading* flag in the sixth parameter to `AfxOleRegisterControlClass`:
 
-```
+```cpp
 BOOL CSampleCtrl::CSampleCtrlFactory::UpdateRegistry(BOOL bRegister)
 {
     if (bRegister)
