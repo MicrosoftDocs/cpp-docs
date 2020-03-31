@@ -690,7 +690,7 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a wide character (Unicode) [System::String](assetId:///System::String?qualifyHint=True&autoUpgrade=True) to the other string types listed above.
+This example demonstrates how to convert from a wide character (Unicode) [System::String](/dotnet/api/system.string) to the other string types listed above.
 
 ### Code
 
