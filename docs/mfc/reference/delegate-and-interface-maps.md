@@ -242,7 +242,7 @@ MAKE_DELEGATE( DELEGATE,  MEMBER) ;
 ### Parameters
 
 *DELEGATE*<br/>
-The type of the managed event handler delegate, such as [EventHandler](assetId:///T:System.EventHandler?qualifyHint=False&autoUpgrade=True).
+The type of the managed event handler delegate, such as [EventHandler](/dotnet/api/system.eventhandler).
 
 *MEMBER*<br/>
 The name of the event handler method to be attached to the control.
