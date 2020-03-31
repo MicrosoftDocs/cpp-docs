@@ -26,7 +26,7 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 ### To install the setup and deployment project template for Visual Studio 2019
 
-1. If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you're connected to the Internet, in Visual Studio, choose **Extensions** > **Manage Extensions**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio.
+1. If you haven't already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you're connected to the Internet, in Visual Studio, choose **Extensions** > **Manage Extensions**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio.
 
 1. On the Visual Studio menu bar, choose **File** > **Recent Projects and Solutions**, and then choose to reopen your project.
 
@@ -44,7 +44,7 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 1. In **Solution Explorer**, select the **Game Installer** project and choose **View** > **Properties Window** or hit **F4** to open the **Properties** window.
 
-1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *http\://www.contoso.com* for **SupportUrl**.
+1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and `http://www.contoso.com` for **SupportUrl**.
 
 1. On the menu bar, choose **Build** > **Configuration Manager**. In the **Project** table, under the **Build** column, check the box for **Game Installer**. Click **Close**.
 
@@ -86,7 +86,7 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 1. In **Solution Explorer**, select the **Game Installer** project and choose **View** > **Properties Window** or hit **F4** to open the **Properties** window.
 
-1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *http\://www.contoso.com* for **SupportUrl**.
+1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and `http://www.contoso.com` for **SupportUrl**.
 
 1. On the menu bar, choose **Build** > **Configuration Manager**. In the **Project** table, under the **Build** column, check the box for **Game Installer**. Click **Close**.
 

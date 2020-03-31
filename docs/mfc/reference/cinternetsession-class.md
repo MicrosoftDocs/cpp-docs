@@ -495,10 +495,10 @@ The pointer that `OpenURL` returns depends on *pstrURL*'s type of service. The t
 
 |URL type|Returns|
 |--------------|-------------|
-|file://|`CStdioFile*`|
-|http://|`CHttpFile*`|
-|gopher://|`CGopherFile*`|
-|ftp://|`CInternetFile*`|
+|`file://`|`CStdioFile*`|
+|`http://`|`CHttpFile*`|
+|`gopher://`|`CGopherFile*`|
+|`ftp://`|`CInternetFile*`|
 
 ### Remarks
 
