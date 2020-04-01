@@ -859,7 +859,7 @@ For more information, see the articles [Recordset: Fetching Records in Bulk (ODB
 
 ### Example
 
-You must manually write calls in your `DoBulkFieldExchange` override. This example shows a call to `RFX_Text_Bulk`, as well as a call to `RFX_Long_Bulk`, for data transfer. These calls are preceded by a call to [CFieldExchange::SetFieldType](CFieldExchange::SetFieldType.md). Note that for parameters, you must call the RFX functions instead of the Bulk RFX functions.
+You must manually write calls in your `DoBulkFieldExchange` override. This example shows a call to `RFX_Text_Bulk`, as well as a call to `RFX_Long_Bulk`, for data transfer. These calls are preceded by a call to [CFieldExchange::SetFieldType](cfieldexchange-class.md#setfieldtype). Note that for parameters, you must call the RFX functions instead of the Bulk RFX functions.
 
 ```cpp
 void CMultiCustomer::DoBulkFieldExchange(CFieldExchange* pFX)
