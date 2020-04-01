@@ -181,7 +181,7 @@ Determines if [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimple
 
 Sets the length of the character buffer.
 
-```
+```cpp
 void SetLength(int nLength);
 ```
 

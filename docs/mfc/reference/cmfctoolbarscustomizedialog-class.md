@@ -94,7 +94,7 @@ The following example demonstrates how to use various methods in the `CMFCToolBa
 
 Inserts a toolbar button into the list of commands on the **Commands** page.
 
-```
+```cpp
 void AddButton(
     UINT uiCategoryId,
     const CMFCToolBarButton& button,
@@ -161,7 +161,7 @@ In the call to `AddMenuCommands`, *bPopup* is FALSE. As a result, that method do
 
 Adds items to the list of commands in the **Commands** page to represent all the items in the specified menu.
 
-```
+```cpp
 void AddMenuCommands(
     const CMenu* pMenu,
     BOOL bPopup,
@@ -325,7 +325,7 @@ Call the `Create` method only after you fully initialize the class.
 
 Enables or disables creating new toolbars by using the **Customize** dialog box.
 
-```
+```cpp
 void EnableUserDefinedToolbars(BOOL bEnable=TRUE);
 ```
 
@@ -365,7 +365,7 @@ The `CMFCMousePropertyPage` class uses this method to populate the double-click 
 
 Populates the provided `CComboBox` object with the name of each command category in the **Customize** dialog box.
 
-```
+```cpp
 void FillCategoriesComboBox(
     CComboBox& wndCategory,
     BOOL bAddEmpty = TRUE) const;
@@ -393,7 +393,7 @@ The `CMFCToolBarsKeyboardPropertyPage` and `CMFCKeyMapDialog` classes use this m
 
 Populates the provided `CListBox` object with the name of each command category in the **Customize** dialog box.
 
-```
+```cpp
 void FillCategoriesListBox(
     CListBox& wndCategory,
     BOOL bAddEmpty = TRUE) const;
@@ -679,7 +679,7 @@ The category name must be unique.
 
 Replaces a toolbar button in the list box of commands on the **Commands** page.
 
-```
+```cpp
 void ReplaceButton(
     UINT uiCmd,
     const CMFCToolBarButton& button);

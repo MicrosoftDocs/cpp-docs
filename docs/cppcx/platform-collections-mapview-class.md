@@ -184,7 +184,7 @@ Divides the current MapView object into two MapView objects. This method is non-
 
 ### Syntax
 
-```
+```cpp
 void Split(
    Windows::Foundation::Collections::IMapView<
                          K, V>^ * firstPartition,

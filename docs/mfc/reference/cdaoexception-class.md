@@ -118,7 +118,7 @@ This information is useful for looping through the Errors collection to retrieve
 
 Returns error information about a particular error object in the Errors collection.
 
-```
+```cpp
 void GetErrorInfo(int nIndex);
 ```
 

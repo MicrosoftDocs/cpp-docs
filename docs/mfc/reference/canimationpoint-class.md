@@ -74,7 +74,7 @@ The CAnimationPoint class encapsulates two CAnimationVariable objects and can re
 
 Adds transitions for X and Y coordinates.
 
-```
+```cpp
 void AddTransition(
     CBaseTransition* pXTransition,
     CBaseTransition* pYTransition);
@@ -242,7 +242,7 @@ This function internally calls GetValue. If GetValue for some reason fails, the 
 
 Assigns ptSrc to CAnimationPoint.
 
-```
+```cpp
 void operator=(const CPoint& ptSrc);
 ```
 
@@ -259,7 +259,7 @@ Assigns ptSrc to CAnimationPoint. It's recommended to do that before animation s
 
 Sets default value.
 
-```
+```cpp
 void SetDefaultValue(const POINT& ptDefault);
 ```
 

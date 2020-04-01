@@ -123,7 +123,7 @@ CDockablePane* AddPane(CDockablePane* pBar);
 
 ## <a name="addref"></a> CPaneContainer::AddRef
 
-```
+```cpp
 void AddRef();
 ```
 
@@ -186,7 +186,7 @@ virtual CSize CalcAvailableSpace(
 
 ## <a name="calculaterecentsize"></a> CPaneContainer::CalculateRecentSize
 
-```
+```cpp
 void CalculateRecentSize();
 ```
 
@@ -194,7 +194,7 @@ void CalculateRecentSize();
 
 ## <a name="checkpanedividervisibility"></a> CPaneContainer::CheckPaneDividerVisibility
 
-```
+```cpp
 void CheckPaneDividerVisibility();
 ```
 
@@ -570,7 +570,7 @@ virtual void Move(CPoint ptNewLeftTop);
 
 ## <a name="ondeletehidepane"></a> CPaneContainer::OnDeleteHidePane
 
-```
+```cpp
 void OnDeleteHidePane(
     CDockablePane* pBar,
     BOOL bHide);
@@ -627,7 +627,7 @@ DWORD Release();
 
 ## <a name="releaseemptypanecontainer"></a> CPaneContainer::ReleaseEmptyPaneContainer
 
-```
+```cpp
 void ReleaseEmptyPaneContainer();
 ```
 
@@ -635,7 +635,7 @@ void ReleaseEmptyPaneContainer();
 
 ## <a name="removenonvalidpanes"></a> CPaneContainer::RemoveNonValidPanes
 
-```
+```cpp
 void RemoveNonValidPanes();
 ```
 
@@ -712,7 +712,7 @@ virtual void ResizePartOfPaneContainer(
 
 ## <a name="serialize"></a> CPaneContainer::Serialize
 
-```
+```cpp
 void Serialize(CArchive& ar);
 ```
 
@@ -724,7 +724,7 @@ void Serialize(CArchive& ar);
 
 ## <a name="setpane"></a> CPaneContainer::SetPane
 
-```
+```cpp
 void SetPane(
     CDockablePane* pBar,
     BOOL bLeft);
@@ -739,7 +739,7 @@ void SetPane(
 
 ## <a name="setpanecontainer"></a> CPaneContainer::SetPaneContainer
 
-```
+```cpp
 void SetPaneContainer(
     CPaneContainer* pContainer,
     BOOL bLeft);
@@ -754,7 +754,7 @@ void SetPaneContainer(
 
 ## <a name="setpanedivider"></a> CPaneContainer::SetPaneDivider
 
-```
+```cpp
 void SetPaneDivider(CPaneDivider* pSlider);
 ```
 
@@ -766,7 +766,7 @@ void SetPaneDivider(CPaneDivider* pSlider);
 
 ## <a name="setparentpanecontainer"></a> CPaneContainer::SetParentPaneContainer
 
-```
+```cpp
 void SetParentPaneContainer(CPaneContainer* p);
 ```
 
@@ -778,7 +778,7 @@ void SetParentPaneContainer(CPaneContainer* p);
 
 ## <a name="setrecentpercent"></a> CPaneContainer::SetRecentPercent
 
-```
+```cpp
 void SetRecentPercent(int nRecentPercent);
 ```
 

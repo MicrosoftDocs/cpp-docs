@@ -138,7 +138,7 @@ For more information on `CDocument`, see [Serialization](../../mfc/serialization
 
 Call this function to attach a view to the document.
 
-```
+```cpp
 void AddView(CView* pView);
 ```
 
@@ -643,7 +643,7 @@ Specifies a bounding rectangle of the area where the thumbnail should be drawn.
 
 Sends a message via the resident mail host (if any) with the document as an attachment.
 
-```
+```cpp
 void OnFileSendMail();
 ```
 
@@ -857,7 +857,7 @@ virtual void OnUnloadHandler();
 
 Enables the ID_FILE_SEND_MAIL command if mail support (MAPI) is present.
 
-```
+```cpp
 void OnUpdateFileSendMail(CCmdUI* pCmdUI);
 ```
 
@@ -960,7 +960,7 @@ Specifies the PID of a chunk to be removed.
 
 Call this function to detach a view from a document.
 
-```
+```cpp
 void RemoveView(CView* pView);
 ```
 
@@ -1102,7 +1102,7 @@ Calling this function updates the titles of all frame windows that display the d
 
 Call this function after the document has been modified.
 
-```
+```cpp
 void UpdateAllViews(
     CView* pSender,
     LPARAM lHint = 0L,

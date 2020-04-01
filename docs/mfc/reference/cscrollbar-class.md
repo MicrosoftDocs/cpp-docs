@@ -255,7 +255,7 @@ The current position is a relative value that depends on the current scrolling r
 
 Copies the current minimum and maximum scroll-bar positions for the given scroll bar to the locations specified by *lpMinPos* and *lpMaxPos*.
 
-```
+```cpp
 void GetScrollRange(
     LPINT lpMinPos,
     LPINT lpMaxPos) const;
@@ -343,7 +343,7 @@ Set *bRedraw* to FALSE whenever the scroll bar will be redrawn by a subsequent c
 
 Sets minimum and maximum position values for the given scroll bar.
 
-```
+```cpp
 void SetScrollRange(
     int nMinPos,
     int nMaxPos,
@@ -379,7 +379,7 @@ The difference between the values specified by *nMinPos* and *nMaxPos* must not 
 
 Shows or hides a scroll bar.
 
-```
+```cpp
 void ShowScrollBar(BOOL bShow = TRUE);
 ```
 

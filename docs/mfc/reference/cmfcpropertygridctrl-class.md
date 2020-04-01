@@ -228,7 +228,7 @@ This method recalculates how to draw the entire property grid control and its pr
 
 ## <a name="alwaysshowusertooltip"></a> CMFCPropertyGridCtrl::AlwaysShowUserToolTip
 
-```
+```cpp
 void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 ```
 
@@ -400,7 +400,7 @@ TRUE if method is successful; otherwise, FALSE.
 
 Enables or disables the description area that is displayed underneath the list of properties in the property grid control.
 
-```
+```cpp
 void EnableDescriptionArea(BOOL bEnable=TRUE);
 ```
 
@@ -417,7 +417,7 @@ The description area is displayed at the bottom of the property grid control. By
 
 Enables or disables the header control at the top of the property grid control.
 
-```
+```cpp
 void EnableHeaderCtrl(
     BOOL bEnable=TRUE,
     LPCTSTR lpszLeftColumn=_T("Property"),
@@ -458,7 +458,7 @@ TRUE if the edit operation ends successfully; FALSE if the modified property dat
 
 Scrolls a property grid control and expands property items until the specified property is visible.
 
-```
+```cpp
 void EnsureVisible(
     CMFCPropertyGridProperty* pProp,
     BOOL bExpandParents=FALSE);
@@ -478,7 +478,7 @@ void EnsureVisible(
 
 Expands or collapses all property grid control nodes.
 
-```
+```cpp
 void ExpandAll(BOOL bExpand=TRUE);
 ```
 
@@ -656,7 +656,7 @@ A pointer to the property object that corresponds to the selected item in the pr
 
 Retrieves the custom colors that are currently defined for property grid control elements.
 
-```
+```cpp
 void GetCustomColors(
     COLORREF& clrBackground,
     COLORREF& clrText,
@@ -1073,7 +1073,7 @@ Use the [CMFCPropertyGridCtrl::SetVSDotNetLook](#setvsdotnetlook) method to set 
 
 Specifies how to display modified properties.
 
-```
+```cpp
 void MarkModifiedProperties(
     BOOL bMark=TRUE,
     BOOL bRedraw=TRUE);
@@ -1224,7 +1224,7 @@ By default, this method sends the [AFX_WM_PROPERTY_CHANGED](../../mfc/reference/
 
 Called by the framework when a property that contains a combo box control is selected.
 
-```
+```cpp
 void OnSelectCombo();
 ```
 
@@ -1234,7 +1234,7 @@ void OnSelectCombo();
 
 Removes all property objects from a property grid control.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -1244,7 +1244,7 @@ void RemoveAll();
 
 Restores the original values of all properties.
 
-```
+```cpp
 void ResetOriginalValues(BOOL bRedraw=TRUE);
 ```
 
@@ -1259,7 +1259,7 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
 
 Sets or resets alphabetic mode.
 
-```
+```cpp
 void SetAlphabeticMode(BOOL bSet=TRUE);
 ```
 
@@ -1276,7 +1276,7 @@ When the property grid control is in alphabetic mode, the control sorts all the 
 
 Specifies the text of Boolean labels.
 
-```
+```cpp
 void SetBoolLabels(
     LPCTSTR lpszTrue,
     LPCTSTR lpszFalse);
@@ -1296,7 +1296,7 @@ void SetBoolLabels(
 
 Selects a property in a property grid control.
 
-```
+```cpp
 void SetCurSel(
     CMFCPropertyGridProperty* pProp,
     BOOL bRedraw=TRUE);
@@ -1318,7 +1318,7 @@ Use this method to cancel the selection of the current item in the property grid
 
 Specifies custom colors for various elements of the property grid control.
 
-```
+```cpp
 void SetCustomColors(
     COLORREF clrBackground,
     COLORREF clrText,
@@ -1362,7 +1362,7 @@ To customize the appearance of a specific property, derive a class from the [CMF
 
 Specifies the number of rows to display in the description section of the current property grid control.
 
-```
+```cpp
 void SetDescriptionRows(int nDescRows);
 ```
 
@@ -1375,7 +1375,7 @@ void SetDescriptionRows(int nDescRows);
 
 Specifies whether to display the full width of the category name for a group of properties in the current property grid control.
 
-```
+```cpp
 void SetGroupNameFullWidth(
     BOOL bGroupNameFullWidth = TRUE,
     BOOL bRedraw = TRUE);
@@ -1399,7 +1399,7 @@ The terms *group name* and *category name* are used interchangeably in this meth
 
 Defines a character that is used as a delimiter in a list of property values.
 
-```
+```cpp
 void SetListDelimiter(TCHAR c);
 ```
 
@@ -1418,7 +1418,7 @@ By default, the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridct
 
 Specifies whether the framework redraws the name and value columns of the current property grid control when a user resizes the columns.
 
-```
+```cpp
 void SetShowDragContext(BOOL bShowDragContext = TRUE);
 ```
 
@@ -1435,7 +1435,7 @@ The user can resize the name and value columns of a property grid control by dra
 
 Sets the appearance of the property grid control to the style that is used in Visual Studio .NET.
 
-```
+```cpp
 void SetVSDotNetLook(BOOL bSet=TRUE);
 ```
 

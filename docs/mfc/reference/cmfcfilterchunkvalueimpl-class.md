@@ -81,7 +81,7 @@ hr = chunk.SetFileTimeValue(PKEY_ItemDate, ftLastModified);
 
 Clears the ChunkValue.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -130,7 +130,7 @@ S_OK if successful; otherwise an error code.
 
 Initializes this chunk value from the other value.
 
-```
+```cpp
 void CopyFrom (IFilterChunkValue* pValue);
 ```
 

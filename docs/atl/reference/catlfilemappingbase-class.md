@@ -111,7 +111,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Call this method to get the data from a file-mapping object.
 
-```
+```cpp
 void* GetData() const throw();
 ```
 

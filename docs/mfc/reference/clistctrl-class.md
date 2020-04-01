@@ -318,7 +318,7 @@ The *nCode* parameter specifies the alignment style.
 
 Cancels item text editing operation.
 
-```
+```cpp
 void CancelEditLabel();
 ```
 
@@ -1147,7 +1147,7 @@ The following code example demonstrates the `GetGroupInfoByIndex` method. In an 
 
 Retrieves the metrics of a group.
 
-```
+```cpp
 void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
 ```
 
@@ -2280,7 +2280,7 @@ The list view must be in icon view or small icon view.
 
 Retrieves the current working areas of a list view control.
 
-```
+```cpp
 void GetWorkAreas(
     int nWorkAreas,
     LPRECT pRect) const;
@@ -2742,7 +2742,7 @@ This member function emulates the functionality of the [LVM_MOVEGROUP](/windows/
 
 Moves the specified item into the specified group.
 
-```
+```cpp
 void MoveItemToGroup(
     int idItemFrom,
     int idGroupTo);
@@ -2793,7 +2793,7 @@ The specified items are not actually repainted until the list view window receiv
 
 Removes all groups from a list view control.
 
-```
+```cpp
 void RemoveAllGroups();
 ```
 
@@ -3121,7 +3121,7 @@ This method sends the [LVM_SETGROUPINFO](/windows/win32/Controls/lvm-setgroupinf
 
 Sets the group metrics of a list view control.
 
-```
+```cpp
 void SetGroupMetrics(PLVGROUPMETRICS pGroupMetrics);
 ```
 
@@ -3427,7 +3427,7 @@ See the example for [CListCtrl::HitTest](#hittest).
 
 Prepares a list view control for adding a large number of items.
 
-```
+```cpp
 void SetItemCount(int nItems);
 ```
 
@@ -3890,7 +3890,7 @@ This member function emulates the functionality of the [LVM_SETVIEW](/windows/wi
 
 Sets the area where icons can be displayed in a list view control.
 
-```
+```cpp
 void SetWorkAreas(
     int nWorkAreas,
     LPRECT lpRect);

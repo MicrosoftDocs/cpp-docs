@@ -18,7 +18,7 @@ Releases a multi-thread lock.
 
 ## Syntax
 
-```
+```cpp
 void __cdecl _unlock(
    int locknum
 );

@@ -65,7 +65,7 @@ The following example shows how to use the stack to temporarily disable menu ani
 
 Restores the previous animation that the framework used to display a pop-up menu.
 
-```
+```cpp
 void Restore ();
 ```
 

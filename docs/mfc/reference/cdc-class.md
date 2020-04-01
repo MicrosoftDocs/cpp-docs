@@ -950,7 +950,7 @@ A Windows device context.
 
 Use this function when you give HIMETRIC sizes to OLE, converting pixels to HIMETRIC.
 
-```
+```cpp
 void DPtoHIMETRIC(LPSIZE lpSize) const;
 ```
 
@@ -967,7 +967,7 @@ If the mapping mode of the device context object is MM_LOENGLISH, MM_HIENGLISH, 
 
 Converts device units into logical units.
 
-```
+```cpp
 void DPtoLP(
     LPPOINT lpPoints,
     int nCount = 1) const;
@@ -998,7 +998,7 @@ The function maps the coordinates of each point, or dimension of a size, from th
 
 Call this member function to draw a three-dimensional rectangle.
 
-```
+```cpp
 void Draw3dRect(
     LPCRECT lpRect,
     COLORREF clrTopLeft,
@@ -1048,7 +1048,7 @@ The rectangle will be drawn with the top and left sides in the color specified b
 
 Call this member function repeatedly to redraw a drag rectangle.
 
-```
+```cpp
 void DrawDragRect(
     LPCRECT lpRect,
     SIZE size,
@@ -1144,7 +1144,7 @@ When an application calls `DrawEscape`, the data identified by *nInputSize* and 
 
 Draws a rectangle in the style used to indicate that the rectangle has the focus.
 
-```
+```cpp
 void DrawFocusRect(LPCRECT lpRect);
 ```
 
@@ -1941,7 +1941,7 @@ After its interior is filled, the path is discarded from the device context.
 
 Call this member function to fill a given rectangle using the specified brush.
 
-```
+```cpp
 void FillRect(
     LPCRECT lpRect,
     CBrush* pBrush);
@@ -1999,7 +1999,7 @@ The brush must either be created using the `CBrush` member functions `CreateHatc
 
 Call this member function to fill the given rectangle with the specified solid color.
 
-```
+```cpp
 void FillSolidRect(
     LPCRECT lpRect,
     COLORREF clr);
@@ -2088,7 +2088,7 @@ The `ExtFloodFill` function provides similar capability but greater flexibility.
 
 Draws a border around the rectangle specified by *lpRect*.
 
-```
+```cpp
 void FrameRect(
     LPCRECT lpRect,
     CBrush* pBrush);
@@ -3719,7 +3719,7 @@ When the framework is in preview mode, a call to the `GrayString` member functio
 
 Use this function when you convert HIMETRIC sizes from OLE to pixels.
 
-```
+```cpp
 void HIMETRICtoDP(LPSIZE lpSize) const;
 ```
 
@@ -3736,7 +3736,7 @@ If the mapping mode of the device context object is MM_LOENGLISH, MM_HIENGLISH, 
 
 Call this function to convert HIMETRIC units into logical units.
 
-```
+```cpp
 void HIMETRICtoLP(LPSIZE lpSize) const;
 ```
 
@@ -3802,7 +3802,7 @@ GDI clips all subsequent output to fit within the new boundary. The width and he
 
 Inverts the contents of the given rectangle.
 
-```
+```cpp
 void InvertRect(LPCRECT lpRect);
 ```
 
@@ -3893,7 +3893,7 @@ The line is drawn with the selected pen. The current position is set to *x*, *y*
 
 Converts logical units into device units.
 
-```
+```cpp
 void LPtoDP(
     LPPOINT lpPoints,
     int nCount = 1) const;
@@ -3926,7 +3926,7 @@ The x- and y-coordinates of points are 2-byte signed integers in the range -32,7
 
 Call this function to convert logical units into HIMETRIC units.
 
-```
+```cpp
 void LPtoHIMETRIC(LPSIZE lpSize) const;
 ```
 
@@ -6625,7 +6625,7 @@ For more information, see [TransparentBlt](/windows/win32/api/wingdi/nf-wingdi-t
 
 Updates the client area of the device context by matching the current colors in the client area to the system palette on a pixel-by-pixel basis.
 
-```
+```cpp
 void UpdateColors();
 ```
 

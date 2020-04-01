@@ -56,7 +56,7 @@ For more information on docking control bars, see the articles [Control Bars](..
 
 Call this function to clear all docking information stored in the `CDockState` object.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -84,7 +84,7 @@ Version support enables a revised bar to add new persistent properties and still
 
 Call this function to retrieve state information from the registry or .INI file.
 
-```
+```cpp
 void LoadState(LPCTSTR lpszProfileName);
 ```
 
@@ -109,7 +109,7 @@ CPtrArray m_arrBarInfo;
 
 Call this function to save the state information to the registry or .INI file.
 
-```
+```cpp
 void SaveState(LPCTSTR lpszProfileName);
 ```
 

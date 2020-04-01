@@ -108,7 +108,7 @@ The following example demonstrates how to get a `CPaneDivider` object from a `CW
 
 ## <a name="setautohidemode"></a> CPaneDivider::SetAutoHideMode
 
-```
+```cpp
 void SetAutoHideMode(BOOL bMode);
 ```
 
@@ -120,7 +120,7 @@ void SetAutoHideMode(BOOL bMode);
 
 ## <a name="setpanecontainermanager"></a> CPaneDivider::SetPaneContainerManager
 
-```
+```cpp
 void SetPaneContainerManager(CPaneContainerManager* p);
 ```
 
@@ -347,7 +347,7 @@ const CBasePane* GetFirstPane() const;
 
 Returns the list of pane dividers that reside in the [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md). This method should be called only for default pane dividers.
 
-```
+```cpp
 void GetPaneDividers(CObList& lstSliders);
 ```
 
@@ -374,7 +374,7 @@ DWORD GetPaneDividerStyle() const;
 
 Returns the list of panes that reside in the [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md). This method should be called only to retrieve default pane dividers.
 
-```
+```cpp
 void GetPanes(CObList& lstBars);
 ```
 
@@ -409,7 +409,7 @@ int GetWidth() const;
 
 ## <a name="init"></a> CPaneDivider::Init
 
-```
+```cpp
 void Init(
     BOOL bDefaultSlider = FALSE,
     CWnd* pParent = NULL);
@@ -546,7 +546,7 @@ virtual void OnShowPane(
 
 ## <a name="releaseemptypanecontainers"></a> CPaneDivider::ReleaseEmptyPaneContainers
 
-```
+```cpp
 void ReleaseEmptyPaneContainers();
 ```
 
@@ -598,7 +598,7 @@ virtual void RepositionPanes(
 
 ## <a name="serialize"></a> CPaneDivider::Serialize
 
-```
+```cpp
 void Serialize(CArchive& ar);
 ```
 
@@ -610,7 +610,7 @@ void Serialize(CArchive& ar);
 
 ## <a name="showwindow"></a> CPaneDivider::ShowWindow
 
-```
+```cpp
 void ShowWindow(int nCmdShow);
 ```
 
@@ -622,7 +622,7 @@ void ShowWindow(int nCmdShow);
 
 ## <a name="storerecentdocksiteinfo"></a> CPaneDivider::StoreRecentDockSiteInfo
 
-```
+```cpp
 void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```
 
@@ -634,7 +634,7 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ## <a name="storerecenttabrelatedinfo"></a> CPaneDivider::StoreRecentTabRelatedInfo
 
-```
+```cpp
 void StoreRecentTabRelatedInfo(
     CDockablePane* pDockingBar,
     CDockablePane* pTabbedBar);

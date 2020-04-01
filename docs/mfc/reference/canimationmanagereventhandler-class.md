@@ -111,7 +111,7 @@ Visual Studio 2010 SP1 is required.
 
 Stores a pointer to animation controller to route events.
 
-```
+```cpp
 void SetAnimationController(CAnimationController* pAnimationController);
 ```
 

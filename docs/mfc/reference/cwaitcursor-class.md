@@ -88,7 +88,7 @@ You can take advantage of the fact that the destructor is called at the end of t
 
 To restore the wait cursor, call this function after performing an operation, such as displaying a message box or dialog box, which might change the wait cursor to another cursor.
 
-```
+```cpp
 void Restore();
 ```
 

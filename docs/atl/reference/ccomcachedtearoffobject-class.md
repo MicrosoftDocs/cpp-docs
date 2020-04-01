@@ -129,7 +129,7 @@ A standard HRESULT value.
 
 Calls `m_contained::FinalRelease` to free `m_contained`, the `CComContainedObject`< `contained`> object.
 
-```
+```cpp
 void FinalRelease();
 ```
 

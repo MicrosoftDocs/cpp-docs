@@ -120,7 +120,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 Call this method to cause an ASSERT if the `CAtlMap` object is not valid.
 
-```
+```cpp
 void AssertValid() const;
 ```
 
@@ -210,7 +210,7 @@ This class is used by the methods [CAtlMap::GetNext](#getnext) and [CAtlMap::Loo
 
 Call this method to disable automatic rehashing of the `CAtlMap` object.
 
-```
+```cpp
 void DisableAutoRehash() throw();
 ```
 
@@ -224,7 +224,7 @@ When automatic rehashing is enabled (which it is by default), the number of bins
 
 Call this method to enable automatic rehashing of the `CAtlMap` object.
 
-```
+```cpp
 void EnableAutoRehash() throw();
 ```
 
@@ -238,7 +238,7 @@ When automatic rehashing is enabled (which it is by default), the number of bins
 
 Call this method to return the element at a specified position in the map.
 
-```
+```cpp
 void GetAt(
     POSITION pos,
     KOUTARGTYPE key,
@@ -337,7 +337,7 @@ Returns a pointer to the next pair of key/value elements stored in the map. The 
 
 Gets the next element for iterating.
 
-```
+```cpp
 void GetNextAssoc(
     POSITION& pos,
     KOUTARGTYPE key,
@@ -558,7 +558,7 @@ If the key already exists, the element is replaced. If the key does not exist, a
 
 Call this method to rehash the `CAtlMap` object.
 
-```
+```cpp
 void Rehash(UINT nBins = 0);
 ```
 
@@ -575,7 +575,7 @@ If *nBins* is 0, `CAtlMap` calculates a reasonable number based on the number of
 
 Call this method to remove all elements from the `CAtlMap` object.
 
-```
+```cpp
 void RemoveAll() throw();
 ```
 
@@ -587,7 +587,7 @@ Clears out the `CAtlMap` object, freeing the memory used to store the elements.
 
 Call this method to remove the element at the given position in the `CAtlMap` object.
 
-```
+```cpp
 void RemoveAtPos(POSITION pos) throw();
 ```
 
@@ -651,7 +651,7 @@ Returns the position of the key/value element pair in the `CAtlMap` object.
 
 Call this method to set the optimal load of the `CAtlMap` object.
 
-```
+```cpp
 void SetOptimalLoad(
     float fOptimalLoad,
     float fLoThreshold,
@@ -681,7 +681,7 @@ This method redefines the optimal load value for the `CAtlMap` object. See [CAtl
 
 Call this method to change the value stored at a given position in the `CAtlMap` object.
 
-```
+```cpp
 void SetValueAt(
     POSITION pos,
     VINARGTYPE value);

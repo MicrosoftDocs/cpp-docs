@@ -100,7 +100,7 @@ Again, there are similar macros for doing TEXTMETRIC, DEVMODE, BSTR, and OLE all
 
 Do not use the macros in a tight loop. For example, you do not want to write the following kind of code:
 
-```
+```cpp
 void BadIterateCode(LPCTSTR lpsz)
 {
     USES_CONVERSION;
@@ -112,7 +112,7 @@ void BadIterateCode(LPCTSTR lpsz)
 
 The code above could result in allocating megabytes of memory on the stack depending on what the contents of the string `lpsz` is! It also takes time to convert the string for each iteration of the loop. Instead, move such constant conversions out of the loop:
 
-```
+```cpp
 void MuchBetterIterateCode(LPCTSTR lpsz)
 {
     USES_CONVERSION;
@@ -126,7 +126,7 @@ void MuchBetterIterateCode(LPCTSTR lpsz)
 
 If the string is not constant, then encapsulate the method call into a function. This will allow the conversion buffer to be freed each time. For example:
 
-```
+```cpp
 void CallSomeMethod(int ii, LPCTSTR lpsz)
 {
     USES_CONVERSION;

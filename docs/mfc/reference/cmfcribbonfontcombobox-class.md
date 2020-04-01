@@ -69,7 +69,7 @@ After you create a `CMFCRibbonFontComboBox` object, add it to a ribbon panel by 
 
 Populates the combo box on the ribbon with fonts.
 
-```
+```cpp
 void BuildFonts(
     int nFontType = DEVICE_FONTTYPE | RASTER_FONTTYPE | TRUETYPE_FONTTYPE,
     BYTE nCharSet = DEFAULT_CHARSET,
@@ -143,7 +143,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
 
 Populates the combo box on the ribbon with fonts of a previously specified font type, character set, and pitch and family.
 
-```
+```cpp
 void RebuildFonts();
 ```
 

@@ -93,7 +93,7 @@ For more information on using `CSliderCtrl`, see [Controls](../../mfc/controls-m
 
 Clears the current selection in a slider control.
 
-```
+```cpp
 void ClearSel(BOOL bRedraw = FALSE);
 ```
 
@@ -106,7 +106,7 @@ Redraw flag. If this parameter is TRUE, the slider is redrawn after the selectio
 
 Removes the current tick marks from a slider control.
 
-```
+```cpp
 void ClearTics(BOOL bRedraw = FALSE);
 ```
 
@@ -228,7 +228,7 @@ This member function implements the behavior of the Win32 message [TBM_GETBUDDY]
 
 Retrieves the size and position of the bounding rectangle for a slider control's channel.
 
-```
+```cpp
 void GetChannelRect(LPRECT lprc) const;
 ```
 
@@ -301,7 +301,7 @@ The current position.
 
 Retrieves the maximum and minimum positions for the slider in a slider control.
 
-```
+```cpp
 void GetRange(
     int& nMin,
     int& nMax) const;
@@ -347,7 +347,7 @@ The control's minimum position.
 
 Retrieves the starting and ending positions of the current selection in a slider control.
 
-```
+```cpp
 void GetSelection(
     int& nMin,
     int& nMax) const;
@@ -381,7 +381,7 @@ This method sends the [TBM_GETTHUMBLENGTH](/windows/win32/Controls/tbm-getthumbl
 
 Retrieves the size and position of the bounding rectangle for the slider (thumb) in a slider control.
 
-```
+```cpp
 void GetThumbRect(LPRECT lprc) const;
 ```
 
@@ -532,7 +532,7 @@ The page size affects how much the slider moves for the TB_PAGEUP and TB_PAGEDOW
 
 Sets the current position of the slider in a slider control.
 
-```
+```cpp
 void SetPos(int nPos);
 ```
 
@@ -545,7 +545,7 @@ Specifies the new slider position.
 
 Sets the range (minimum and maximum positions) for the slider in a slider control.
 
-```
+```cpp
 void SetRange(
     int nMin,
     int nMax,
@@ -567,7 +567,7 @@ The redraw flag. If this parameter is TRUE, the slider is redrawn after the rang
 
 Sets the maximum range for the slider in a slider control.
 
-```
+```cpp
 void SetRangeMax(
     int nMax,
     BOOL bRedraw = FALSE);
@@ -585,7 +585,7 @@ The redraw flag. If this parameter is TRUE, the slider is redrawn after the rang
 
 Sets the minimum range for the slider in a slider control.
 
-```
+```cpp
 void SetRangeMin(
     int nMin,
     BOOL bRedraw = FALSE);
@@ -603,7 +603,7 @@ The redraw flag. If this parameter is TRUE, the slider is redrawn after the rang
 
 Sets the starting and ending positions for the current selection in a slider control.
 
-```
+```cpp
 void SetSelection(
     int nMin,
     int nMax);
@@ -621,7 +621,7 @@ Ending position for the slider.
 
 Sets the length of the slider in the current trackbar control.
 
-```
+```cpp
 void SetThumbLength(int nLength);
 ```
 
@@ -670,7 +670,7 @@ Nonzero if the tick mark is set; otherwise 0.
 
 Sets the frequency with which tick marks are displayed in a slider.
 
-```
+```cpp
 void SetTicFreq(int nFreq);
 ```
 
@@ -710,7 +710,7 @@ This member function implements the behavior of the Win32 message TBM_SETTIPSIDE
 
 Assigns a tooltip control to a slider control.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pWndTip);
 ```
 

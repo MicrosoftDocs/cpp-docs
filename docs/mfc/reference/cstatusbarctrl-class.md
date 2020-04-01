@@ -484,7 +484,7 @@ This member function implements the behavior of the Win32 message [SB_SETICON](/
 
 Sets the minimum height of a status bar control's drawing area.
 
-```
+```cpp
 void SetMinHeight(int nMin);
 ```
 
@@ -586,7 +586,7 @@ The message invalidates the portion of the control that has changed, causing it 
 
 Sets the tooltip text for a pane in a status bar.
 
-```
+```cpp
 void SetTipText(
     int nPane,
     LPCTSTR pszTipText);

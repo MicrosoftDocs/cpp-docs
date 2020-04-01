@@ -78,7 +78,7 @@ CDateTimeCtrl();
 
 Closes the current date and time picker control.
 
-```
+```cpp
 void CloseMonthCal() const;
 ```
 
@@ -432,7 +432,7 @@ This member function implements the behavior of the Win32 message [DTM_SETMCCOLO
 
 Sets the font that the date and time picker control's child month calendar control will use.
 
-```
+```cpp
 void SetMonthCalFont(
     HFONT hFont,
     BOOL bRedraw = TRUE);

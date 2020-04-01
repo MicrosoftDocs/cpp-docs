@@ -86,7 +86,7 @@ For more information on using `CTabCtrl`, see [Controls](../../mfc/controls-mfc.
 
 Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.
 
-```
+```cpp
 void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 ```
 
@@ -239,7 +239,7 @@ Nonzero if successful; otherwise 0.
 
 Resets items in a tab control, clearing any that were pressed.
 
-```
+```cpp
 void DeselectAll(BOOL fExcludeFocus);
 ```
 
@@ -609,7 +609,7 @@ Zero-based index of the new tab if successful; otherwise - 1.
 
 Removes the specified image from a tab control's image list.
 
-```
+```cpp
 void RemoveImage(int nImage);
 ```
 
@@ -626,7 +626,7 @@ The tab control updates each tab's image index so that each tab remains associat
 
 Sets the focus to a specified tab in a tab control.
 
-```
+```cpp
 void SetCurFocus(int nItem);
 ```
 
@@ -819,7 +819,7 @@ This member function implements the behavior of the Win32 message [TCM_SETMINTAB
 
 Sets the amount of space (padding) around each tab's icon and label in a tab control.
 
-```
+```cpp
 void SetPadding(CSize size);
 ```
 
@@ -832,7 +832,7 @@ Sets the amount of space (padding) around each tab's icon and label in a tab con
 
 Assigns a tool tip control to a tab control.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pWndTip);
 ```
 

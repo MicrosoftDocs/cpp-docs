@@ -72,7 +72,7 @@ virtual ~CD2DMesh();
 
 Attaches existing resource interface to the object
 
-```
+```cpp
 void Attach(ID2D1Mesh* pResource);
 ```
 

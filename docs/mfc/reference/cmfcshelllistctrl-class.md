@@ -109,7 +109,7 @@ S_OK if successful; E_FAIL otherwise.
 
 Enables the shortcut menu.
 
-```
+```cpp
 void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```
 
@@ -399,7 +399,7 @@ Call this method to refresh the list of items displayed by the `CMFCShellListCtr
 
 Sets the type of items that are listed in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.
 
-```
+```cpp
 void SetItemTypes(SHCONTF nTypes);
 ```
 

@@ -61,7 +61,7 @@ This property sets the user interface item for this command to the appropriate c
 
 Tells the command routing mechanism to continue routing the current message down the chain of handlers.
 
-```
+```cpp
 void ContinueRouting();
 ```
 

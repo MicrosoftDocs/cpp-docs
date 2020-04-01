@@ -96,7 +96,7 @@ virtual ~CD2DBitmap();
 
 Attaches existing resource interface to the object.
 
-```
+```cpp
 void Attach(ID2D1Bitmap* pResource);
 ```
 
@@ -161,7 +161,7 @@ Handle to the bitmap.
 
 Initializes the object.
 
-```
+```cpp
 void CommonInit();
 ```
 

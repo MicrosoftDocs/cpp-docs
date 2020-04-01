@@ -650,7 +650,7 @@ This operator returns the value of this `COleDateTimeSpan` value as a floating-p
 
 Sets the value of this date/time-span value.
 
-```
+```cpp
 void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ```
 
@@ -687,7 +687,7 @@ For functions that query the value of a `COleDateTimeSpan` object, see the follo
 
 Sets the status (validity) of this `COleDateTimeSpan` object.
 
-```
+```cpp
 void SetStatus(DateTimeSpanStatus status) throw();
 ```
 

@@ -70,7 +70,7 @@ CIPAddressCtrl();
 
 Clears the contents of the IP Address Control.
 
-```
+```cpp
 void ClearAddress();
 ```
 
@@ -222,7 +222,7 @@ This member function implements the behavior of the Win32 message [IPM_ISBLANK](
 
 Sets the address values for all four fields in the IP Address Control.
 
-```
+```cpp
 void SetAddress(
     BYTE nField0,
     BYTE nField1,
@@ -264,7 +264,7 @@ This member function implements the behavior of the Win32 message [IPM_SETADDRES
 
 Sets the keyboard focus to the specified field in the IP Address Control.
 
-```
+```cpp
 void SetFieldFocus(WORD nField);
 ```
 
@@ -281,7 +281,7 @@ This member function implements the behavior of the Win32 message [IPM_SETFOCUS]
 
 Sets the range in the specified field in the IP Address Control.
 
-```
+```cpp
 void SetFieldRange(
     int nField,
     BYTE nLower,

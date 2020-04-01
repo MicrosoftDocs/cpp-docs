@@ -150,7 +150,7 @@ The following example demonstrates how to use various methods in the `CMFCTabCtr
 
 Displays the specified tab of the current tab control and sets the focus on that tab.
 
-```
+```cpp
 void ActivateMDITab(int nTab = -1);
 ```
 
@@ -177,7 +177,7 @@ Always TRUE.
 
 Specifies whether the framework is to resize the client area of all tab control windows when a user interface element of the tab control changes.
 
-```
+```cpp
 void AutoSizeWindow(BOOL bAutoSize = TRUE);
 ```
 
@@ -275,7 +275,7 @@ This method is called when you change the label of a tab. This method deflates t
 
 Shows or hides a Close button ( **X**) on the active tab.
 
-```
+```cpp
 void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
 ```
 
@@ -303,7 +303,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 
 Toggles between a user interface that uses two buttons to scroll the window tabs and an interface that displays a pop-up menu of tabbed windows.
 
-```
+```cpp
 void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
 ```
 
@@ -402,7 +402,7 @@ Use this method to access the tab control's embedded scroll bar. A scroll bar ob
 
 Retrieves the bounding rectangle of the tab label area at the top or bottom of the tab control.
 
-```
+```cpp
 void GetTabArea(
     CRect& rectTabAreaTop,
     CRect& rectTabAreaBottom) const;
@@ -465,7 +465,7 @@ virtual void GetTabsRect(CRect& rect) const;
 
 Retrieves the boundary of the client area of the current tab control.
 
-```
+```cpp
 void GetWndArea(CRect& rect) const;
 ```
 
@@ -480,7 +480,7 @@ void GetWndArea(CRect& rect) const;
 
 Hides the horizontal scroll bar, if any, in the active window.
 
-```
+```cpp
 void HideActiveWindowHorzScrollBar();
 ```
 
@@ -492,7 +492,7 @@ Use this method to prevent the tab control from blinking when the user switches 
 
 Specifies whether the framework displays inactive tab control windows.
 
-```
+```cpp
 void HideInactiveWindow(BOOL bHide = TRUE);
 ```
 
@@ -507,7 +507,7 @@ void HideInactiveWindow(BOOL bHide = TRUE);
 
 Enables or disables drawing of the tab area if there are no visible tabs.
 
-```
+```cpp
 void HideNoTabs(BOOL bHide=TRUE);
 ```
 
@@ -832,7 +832,7 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 
 Sets the current tab of a tab control as the active tab in a multiple document interface tab group.
 
-```
+```cpp
 void SetActiveInMDITabGroup(BOOL bActive);
 ```
 
@@ -872,7 +872,7 @@ The `SetActiveTab` method automatically calls the [CMFCTabCtrl::HideActiveWindow
 
 Enables or disables use of a bold font on active tabs.
 
-```
+```cpp
 void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 ```
 
@@ -887,7 +887,7 @@ void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 
 Specifies whether a frame rectangle is drawn around an embedded bar.
 
-```
+```cpp
 void SetDrawFrame(BOOL bDraw=TRUE);
 ```
 
@@ -902,7 +902,7 @@ void SetDrawFrame(BOOL bDraw=TRUE);
 
 Specifies whether to draw a flat or a 3D frame around the tab area.
 
-```
+```cpp
 void SetFlatFrame(
     BOOL bFlat=TRUE,
     BOOL bRepaint=TRUE);
@@ -959,7 +959,7 @@ Use the [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#a
 
 Specifies how the current tab control can be resized and then redisplays the control.
 
-```
+```cpp
 void SetResizeMode(ResizeMode resizeMode);
 ```
 
@@ -982,7 +982,7 @@ The *resizeMode* parameter can be one of the following `ResizeMode` enumeration 
 
 Specifies the maximum tab width in a tabbed window.
 
-```
+```cpp
 void SetTabMaxWidth(int nTabMaxWidth);
 ```
 
@@ -999,7 +999,7 @@ Use this method to limit the width of each tab in a tabbed window. This method i
 
 Terminates the current resize operation on the tab control.
 
-```
+```cpp
 void StopResize(BOOL bCancel);
 ```
 

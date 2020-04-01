@@ -69,7 +69,7 @@ Specifies whether the returned handle is inherited when a new process is created
 
 Call this method to set the attributes of the `CSecurityAttributes` object.
 
-```
+```cpp
 void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) throw(...);
 ```
 

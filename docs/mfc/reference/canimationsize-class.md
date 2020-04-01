@@ -74,7 +74,7 @@ The CAnimationSize class encapsulates two CAnimationVariable objects and can rep
 
 Adds transitions for Width and Height.
 
-```
+```cpp
 void AddTransition(
     CBaseTransition* pCXTransition,
     CBaseTransition* pCYTransition);
@@ -244,7 +244,7 @@ This function internally calls GetValue. If GetValue for some reason fails, the 
 
 Assigns szSrc to CAnimationSize.
 
-```
+```cpp
 void operator=(const CSize& szSrc);
 ```
 
@@ -261,7 +261,7 @@ Assigns szSrc to CAnimationSize. It's recommended to do that before animation st
 
 Sets default value.
 
-```
+```cpp
 void SetDefaultValue(const CSize& szDefault);
 ```
 

@@ -180,7 +180,7 @@ Returns a reference to the updated `CSacl` object. Ensure that the `ACL` paramet
 
 Removes a specific ACE (access-control entry) from the `CSacl` object.
 
-```
+```cpp
 void RemoveAce(UINT nIndex) throw();
 ```
 
@@ -197,7 +197,7 @@ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-
 
 Removes all of the access-control entries (ACEs) contained in the `CSacl` object.
 
-```
+```cpp
 void RemoveAllAces() throw();
 ```
 

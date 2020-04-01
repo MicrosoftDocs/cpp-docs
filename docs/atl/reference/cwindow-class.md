@@ -239,7 +239,7 @@ See [ArrangeIconicWindows](/windows/win32/api/winuser/nf-winuser-arrangeiconicwi
 
 Attaches the window identified by *hWndNew* to the `CWindow` object.
 
-```
+```cpp
 void Attach(HWND hWndNew) throw();
 ```
 
@@ -616,7 +616,7 @@ See [DlgDirSelectComboBoxEx](/windows/win32/api/winuser/nf-winuser-dlgdirselectc
 
 Registers whether the window accepts dragged files.
 
-```
+```cpp
 void DragAcceptFiles(BOOL bAccept = TRUE);
 ```
 
@@ -668,7 +668,7 @@ See [EnableWindow](/windows/win32/api/winuser/nf-winuser-enablewindow) in the Wi
 
 Marks the end of painting.
 
-```
+```cpp
 void EndPaint(LPPAINTSTRUCT lpPaint) throw();
 ```
 
@@ -1349,7 +1349,7 @@ See [GetWindowLong](/windows/win32/api/winuser/nf-winuser-getwindowlongw) in the
 
 Sets the keyboard focus to a control in the dialog box.
 
-```
+```cpp
 void GotoDlgCtrl(HWND hWndCtrl) const throw();
 ```
 
@@ -1422,7 +1422,7 @@ See [InvalidateRect](/windows/win32/api/winuser/nf-winuser-invalidaterect) in th
 
 Invalidates the client area within the specified region.
 
-```
+```cpp
 void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 ```
 
@@ -1774,7 +1774,7 @@ The second version of this method uses a [RECT](/previous-versions/dd162897\(v=v
 
 Sets the keyboard focus to the next control in the dialog box.
 
-```
+```cpp
 void NextDlgCtrl() const throw();
 ```
 
@@ -1835,7 +1835,7 @@ Returns without waiting for the thread to process the message.
 
 Sets the keyboard focus to the previous control in the dialog box.
 
-```
+```cpp
 void PrevDlgCtrl() const throw();
 ```
 
@@ -1847,7 +1847,7 @@ See [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) in the Windows SDK.
 
 Sends a [WM_PRINT](/windows/win32/gdi/wm-print) message to the window to request that it draw itself in the specified device context.
 
-```
+```cpp
 void Print(HDC hDC, DWORD dwFlags) const throw();
 ```
 
@@ -1875,7 +1875,7 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 
 Sends a [WM_PRINTCLIENT](/windows/win32/gdi/wm-printclient) message to the window to request that it draw its client area in the specified device context.
 
-```
+```cpp
 void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 ```
 
@@ -2061,7 +2061,7 @@ See [SendMessage](/windows/win32/api/winuser/nf-winuser-sendmessage) in the Wind
 
 Sends the specified message to all immediate children of the `CWindow` object.
 
-```
+```cpp
 void SendMessageToDescendants(
     UINT message,
     WPARAM wParam = 0,
@@ -2208,7 +2208,7 @@ See [SetFocus](/windows/win32/api/winuser/nf-winuser-setfocus) in the Windows SD
 
 Changes the window's current font by sending a [WM_SETFONT](/windows/win32/winmsg/wm-setfont) message to the window.
 
-```
+```cpp
 void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
 ```
 
@@ -2296,7 +2296,7 @@ See [SetParent](/windows/win32/api/winuser/nf-winuser-setparent) in the Windows 
 
 Sets or clears the redraw flag by sending a [WM_SETREDRAW](/windows/win32/gdi/wm-setredraw) message to the window.
 
-```
+```cpp
 void SetRedraw(BOOL bRedraw = TRUE) throw();
 ```
 

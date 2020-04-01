@@ -322,7 +322,7 @@ Use this method if you want a menu control to have the same menu items as a menu
 
 Enables a **Help** combo box that is located on the right side of the menu bar.
 
-```
+```cpp
 void EnableHelpCombobox(
     UINT uiID,
     LPCTSTR lpszPrompt = NULL,
@@ -846,7 +846,7 @@ The saved information includes the menu items, the dock state, and the position 
 
 Sets the default menu for a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object based on the resource ID.
 
-```
+```cpp
 void SetDefaultMenuResId(UINT uiResId);
 ```
 
@@ -863,7 +863,7 @@ Use the [CMFCMenuBar::GetDefaultMenuResId](#getdefaultmenuresid) method to retri
 
 ## <a name="setforcedownarrows"></a> CMFCMenuBar::SetForceDownArrows
 
-```
+```cpp
 void SetForceDownArrows(BOOL bValue);
 ```
 
@@ -877,7 +877,7 @@ void SetForceDownArrows(BOOL bValue);
 
 The framework calls this method when a MDI changes its display mode and the menu bar must be updated.
 
-```
+```cpp
 void SetMaximizeMode(
     BOOL bMax,
     CWnd* pWnd = NULL,
@@ -903,7 +903,7 @@ When an MDI child window is maximized, a menu bar attached to the MDI main frame
 
 Sets the runtime class information that the framework uses when the user creates menu buttons.
 
-```
+```cpp
 void SetMenuButtonRTC(CRuntimeClass* pMenuButtonRTC);
 ```
 

@@ -103,7 +103,7 @@ See [AtlAdvise](connection-point-global-functions.md#atladvise) for more informa
 
 Call this method to take ownership of an existing pointer.
 
-```
+```cpp
 void Attach(T* p2) throw();
 ```
 
@@ -367,7 +367,7 @@ In debug builds, an assertion error will occur if *pp* is not equal to NULL.
 
 Call this method to release the interface.
 
-```
+```cpp
 void Release() throw();
 ```
 

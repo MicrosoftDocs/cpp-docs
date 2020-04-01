@@ -87,7 +87,7 @@ The following example demonstrates how to set up a mask (for example a phone num
 
 Disables validating user input.
 
-```
+```cpp
 void DisableMask();
 ```
 
@@ -99,7 +99,7 @@ If user input validation is disabled, the masked edit control behaves like the s
 
 Specifies whether the `GetWindowText` method retrieves only masked characters.
 
-```
+```cpp
 void EnableGetMaskedCharsOnly(BOOL bEnable=TRUE);
 ```
 
@@ -116,7 +116,7 @@ Use this method to enable retrieving masked characters. Then create a masked edi
 
 Initializes the masked edit control.
 
-```
+```cpp
 void EnableMask(
     LPCTSTR lpszMask,
     LPCTSTR lpszInputTemplate,
@@ -159,7 +159,7 @@ The following table list the default mask characters:
 
 Specifies whether the masked edit control allows the user to select particular groups input, or all input.
 
-```
+```cpp
 void EnableSelectByGroup(BOOL bEnable=TRUE);
 ```
 
@@ -193,7 +193,7 @@ If selection by group is enabled, the user can retrieve only the "425", "555", o
 
 Specifies whether the text is validated against only the masked characters, or against the whole mask.
 
-```
+```cpp
 void EnableSetMaskedCharsOnly(BOOL bEnable=TRUE);
 ```
 
@@ -265,7 +265,7 @@ Override this method to validate input characters on your own. For more informat
 
 Specifies a string of valid characters that the user can enter.
 
-```
+```cpp
 void SetValidChars(LPCTSTR lpszValid=NULL);
 ```
 
@@ -295,7 +295,7 @@ m_wndMaskEdit.SetValidChars(_T("1234567890ABCDEFabcdef"));m_wndMaskEdit.SetWindo
 
 Displays a prompt in the masked edit control.
 
-```
+```cpp
 void SetWindowText(LPCTSTR lpszString);
 ```
 

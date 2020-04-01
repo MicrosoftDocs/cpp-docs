@@ -95,7 +95,7 @@ Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 void Append(const CSimpleStringT& strSrc);
 void Append(PCXSTR pszSrc, int nLength);
 void Append(PCXSTR pszSrc);
@@ -134,7 +134,7 @@ Appends a character to an existing `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 void AppendChar(XCHAR ch);
 ```
 
@@ -278,7 +278,7 @@ Makes this `CSimpleStringT` object an empty string and frees memory as appropria
 
 ### Syntax
 
-```
+```cpp
 void Empty() throw();
 ```
 
@@ -301,7 +301,7 @@ Frees any extra memory previously allocated by the string but no longer needed.
 
 ### Syntax
 
-```
+```cpp
 void FreeExtra();
 ```
 
@@ -857,7 +857,7 @@ Allocates a specific amount of bytes for the `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 void Preallocate( int nLength);
 ```
 
@@ -899,7 +899,7 @@ Releases control of the buffer allocated by [GetBuffer](#getbuffer).
 
 ### Syntax
 
-```
+```cpp
 void ReleaseBuffer(int nNewLength = -1);
 ```
 
@@ -940,7 +940,7 @@ Releases control of the buffer allocated by [GetBuffer](#getbuffer).
 
 ### Syntax
 
-```
+```cpp
 void ReleaseBufferSetLength(int nNewLength);
 ```
 
@@ -959,7 +959,7 @@ Sets a single character from a `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 void SetAt(int iChar, XCHAR ch);
 ```
 
@@ -991,7 +991,7 @@ Specifies the memory manager of the `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 void SetManager(IAtlStringMgr* pStringMgr);
 ```
 
@@ -1019,7 +1019,7 @@ Sets the string of a `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 void SetString(PCXSTR pszSrc, int nLength);
 void SetString(PCXSTR pszSrc);
 ```
@@ -1092,7 +1092,7 @@ Truncates the string to the new length.
 
 ### Syntax
 
-```
+```cpp
 void Truncate(int nNewLength);
 ```
 
@@ -1127,7 +1127,7 @@ Unlocks the buffer of the `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 void UnlockBuffer() throw();
 ```
 

@@ -69,7 +69,7 @@ For more information about how to use `CMemoryState` and other diagnostics, see 
 
 Takes a snapshot summary of memory and stores it in this `CMemoryState` object.
 
-```
+```cpp
 void Checkpoint();
 ```
 
@@ -127,7 +127,7 @@ Nonzero if the two memory states are different; otherwise 0.
 
 Calls the `Dump` function for all objects of a type derived from class `CObject` that were allocated (and are still allocated) since the last [Checkpoint](#checkpoint) call for this `CMemoryState` object.
 
-```
+```cpp
 void DumpAllObjectsSince() const;
 ```
 
@@ -143,7 +143,7 @@ Calling `DumpAllObjectsSince` with an uninitialized `CMemoryState` object will d
 
 Prints a concise memory statistics report from a `CMemoryState` object that is filled by the [Difference](#difference) member function.
 
-```
+```cpp
 void DumpStatistics() const;
 ```
 

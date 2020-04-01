@@ -68,7 +68,7 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 
 Call this function after an unrecoverable change has been made to the data in a page of a modal property sheet.
 
-```
+```cpp
 void CancelToClose();
 ```
 
@@ -149,7 +149,7 @@ The default implementation of `OnApply` returns TRUE.
 
 This member function is called when the user clicks the **Help** button for the property page.
 
-```
+```cpp
 void OnHelp();
 ```
 
@@ -195,7 +195,7 @@ The default implementation of `OnQueryCancel` returns TRUE.
 
 This member function is called when the user clicks the **Cancel** button.
 
-```
+```cpp
 void OnReset();
 ```
 
@@ -307,7 +307,7 @@ If a page returns a nonzero value, the property sheet does not send the message 
 
 Call this member function to enable or disable the **Apply Now** button, based on whether the settings in the property page should be applied to the appropriate external object.
 
-```
+```cpp
 void SetModified(BOOL bChanged = TRUE);
 ```
 

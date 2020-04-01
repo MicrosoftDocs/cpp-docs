@@ -64,7 +64,7 @@ class CHwndRenderTarget : public CRenderTarget;
 
 Attaches existing render target interface to the object
 
-```
+```cpp
 void Attach(ID2D1HwndRenderTarget* pTarget);
 ```
 

@@ -62,7 +62,7 @@ The following example demonstrates how to construct an object of the `CMFCRibbon
 
 Adds a new action to the list of actions.
 
-```
+```cpp
 void AddUndoAction(LPCTSTR lpszLabel);
 ```
 
@@ -75,7 +75,7 @@ void AddUndoAction(LPCTSTR lpszLabel);
 
 Clears the action list, which is the drop-down list.
 
-```
+```cpp
 void CleanUpUndoList();
 ```
 

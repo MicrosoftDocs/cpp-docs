@@ -83,7 +83,7 @@ If the return value is positive, it is the font size in twips. It is -1 if the t
 
 Fills a font size combo box with all valid sizes of the given font.
 
-```
+```cpp
 void RebuildFontSizes(const CString& strFontName);
 ```
 
@@ -100,7 +100,7 @@ Call this function when you want to synchronize between selection in a font comb
 
 Rounds the specified size (in twips) to the nearest size in points, and then sets the selected size in the combo box to that value.
 
-```
+```cpp
 void SetTwipSize(int nSize);
 ```
 

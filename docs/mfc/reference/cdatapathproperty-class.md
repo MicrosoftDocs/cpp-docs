@@ -171,7 +171,7 @@ Opening should be restarted. Derived classes can override this function for diff
 
 Call this member function to associate an asynchronous OLE control with the `CDataPathProperty` object.
 
-```
+```cpp
 void SetControl(COleControl* pControl);
 ```
 
@@ -184,7 +184,7 @@ A pointer to the asynchronous OLE control to be associated with the property.
 
 Call this member function to set the pathname of the property.
 
-```
+```cpp
 void SetPath(LPCTSTR lpszPath);
 ```
 

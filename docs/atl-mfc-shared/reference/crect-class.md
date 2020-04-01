@@ -206,7 +206,7 @@ void CMyDlg::OnPaint()
 
 Copies the `lpSrcRect` rectangle into `CRect`.
 
-```
+```cpp
 void CopyRect(LPCRECT lpSrcRect) throw();
 ```
 
@@ -330,7 +330,7 @@ ASSERT(rect5 == rect4);
 
 `DeflateRect` deflates `CRect` by moving its sides toward its center.
 
-```
+```cpp
 void DeflateRect(int x, int y) throw();
 void DeflateRect(SIZE size) throw();
 void DeflateRect(LPCRECT lpRect) throw();
@@ -456,7 +456,7 @@ ASSERT(nHt == 40);
 
 `InflateRect` inflates `CRect` by moving its sides away from its center.
 
-```
+```cpp
 void InflateRect(int x, int y) throw();
 void InflateRect(SIZE size) throw();
 void InflateRect(LPCRECT lpRect) throw();
@@ -611,7 +611,7 @@ ASSERT(!rectNotNull.IsRectNull());
 
 Call this function to move the rectangle to the absolute x-coordinate specified by *x*.
 
-```
+```cpp
 void MoveToX(int x) throw();
 ```
 
@@ -634,7 +634,7 @@ ASSERT(rect == CRect(10, 0, 110, 100));
 
 Call this function to move the rectangle to the absolute x- and y-coordinates specified.
 
-```
+```cpp
 void MoveToXY(int x, int y) throw();
 void MoveToXY(POINT point) throw();
 ```
@@ -663,7 +663,7 @@ ASSERT(rect == CRect(10, 10, 110, 110));
 
 Call this function to move the rectangle to the absolute y-coordinate specified by *y*.
 
-```
+```cpp
 void MoveToY(int y) throw();
 ```
 
@@ -685,7 +685,7 @@ ASSERT(rect == CRect(0, 10, 100, 110));
 
 Normalizes `CRect` so that both the height and width are positive.
 
-```
+```cpp
 void NormalizeRect() throw();
 ```
 
@@ -710,7 +710,7 @@ ASSERT(rect1 == rect2);
 
 Moves `CRect` by the specified offsets.
 
-```
+```cpp
 void OffsetRect(int x, int y) throw();
 void OffsetRect(POINT point) throw();
 void OffsetRect(SIZE size) throw();
@@ -774,7 +774,7 @@ See the example for [CRect::operator LPCRECT](#operator_lpcrect).
 
 Assigns *srcRect* to `CRect`.
 
-```
+```cpp
 void operator=(const RECT& srcRect) throw();
 ```
 
@@ -877,7 +877,7 @@ ASSERT(rect3 != test);
 
 The first two overloads move `CRect` by the specified offsets.
 
-```
+```cpp
 void operator+=(POINT point) throw();
 void operator+=(SIZE size) throw();
 void operator+=(LPCRECT lpRect) throw();
@@ -915,7 +915,7 @@ ASSERT(rect1 == rect2);
 
 The first two overloads move `CRect` by the specified offsets.
 
-```
+```cpp
 void operator-=(POINT point) throw();
 void operator-=(SIZE size) throw();
 void operator-=(LPCRECT lpRect) throw();
@@ -953,7 +953,7 @@ ASSERT(rect1 == rectResult);
 
 Sets `CRect` equal to the intersection of `CRect` and `rect`.
 
-```
+```cpp
 void operator&=(const RECT& rect) throw();
 ```
 
@@ -977,7 +977,7 @@ See the example for [CRect::IntersectRect](#intersectrect).
 
 Sets `CRect` equal to the union of `CRect` and `rect`.
 
-```
+```cpp
 void operator|=(const RECT& rect) throw();
 ```
 
@@ -1219,7 +1219,7 @@ ASSERT(rect.PtInRect(pt));
 
 Sets the dimensions of `CRect` to the specified coordinates.
 
-```
+```cpp
 void SetRect(int x1, int y1, int x2, int y2) throw();
 ```
 
@@ -1249,7 +1249,7 @@ ASSERT(rect == CRect(256, 256, 512, 512));
 
 Makes `CRect` a null rectangle by setting all coordinates to zero.
 
-```
+```cpp
 void SetRectEmpty() throw();
 ```
 

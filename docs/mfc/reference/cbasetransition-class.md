@@ -134,7 +134,7 @@ CBaseTransition();
 
 Releases encapsulated IUIAnimationTransition COM object.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -328,7 +328,7 @@ TRANSITION_TYPE m_type;
 
 Sets keyframes for a transition.
 
-```
+```cpp
 void SetKeyframes(
     CBaseKeyFrame* pStart = NULL,
     CBaseKeyFrame* pEnd = NULL);
@@ -350,7 +350,7 @@ This method tells the transition to start after specified keyframe and, optional
 
 Establishes a relationship between animation variable and transition.
 
-```
+```cpp
 void SetRelatedVariable(CAnimationVariable* pVariable);
 ```
 

@@ -48,7 +48,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 Automates the impersonation reversion of an access token.
 
-```
+```cpp
 void Attach(const CAccessToken* pAT) throw();
 ```
 

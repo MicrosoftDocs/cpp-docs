@@ -97,7 +97,7 @@ CMFCPropertyGridColorProperty(
 
 Enables the *automatic* button on the color selection dialog box. (The standard automatic button is labeled **Automatic**.)
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -121,7 +121,7 @@ void EnableAutomaticButton(
 
 Enables the *other* button on the color selection dialog box. (The standard other button is labeled **More Colors**.)
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     BOOL bAltColorDlg = TRUE,
@@ -159,7 +159,7 @@ An RGB color value.
 
 Sets a new color for the property.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -174,7 +174,7 @@ void SetColor(COLORREF color);
 
 Specifies the number of columns in the current color property grid.
 
-```
+```cpp
 void SetColumnsNumber(int nColumnsNumber);
 ```
 

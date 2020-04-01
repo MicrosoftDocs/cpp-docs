@@ -15,7 +15,7 @@ Calculates the square root of the top value in the stack.
 
 ## Syntax
 
-```
+```cpp
 void __cdecl _CIsqrt();
 ```
 

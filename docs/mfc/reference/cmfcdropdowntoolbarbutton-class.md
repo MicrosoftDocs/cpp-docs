@@ -481,7 +481,7 @@ This method extends the base class implementation ( [CMFCToolBarButton::Serializ
 
 Sets the default command that the framework uses when a user clicks the button.
 
-```
+```cpp
 void SetDefaultCommand(UINT uiCmd);
 ```
 

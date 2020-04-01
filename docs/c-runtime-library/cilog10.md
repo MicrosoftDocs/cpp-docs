@@ -15,7 +15,7 @@ Performs a `log10` operation on the top value in the stack.
 
 ## Syntax
 
-```
+```cpp
 void __cdecl _CIlog10();
 ```
 

@@ -134,7 +134,7 @@ pPanel->Add (new CMFCRibbonButton (ID_EDIT_PAINT, _T("Paint"), 9));
 
 Adds a menu item to the pop-up menu that is associated with the button.
 
-```
+```cpp
 void AddSubItem(
     CMFCRibbonBaseElement* pSubItem,
     int nIndex=-1);
@@ -687,7 +687,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 Removes all menu items from the pop-up menu.
 
-```
+```cpp
 void RemoveAllSubItems();
 ```
 
@@ -736,7 +736,7 @@ Returns TRUE if successful; otherwise FALSE.
 
 Specifies whether the button displays a large or a small image when the user collapses the button.
 
-```
+```cpp
 void SetAlwaysLargeImage(BOOL bSet=TRUE);
 ```
 
@@ -749,7 +749,7 @@ void SetAlwaysLargeImage(BOOL bSet=TRUE);
 
 Enables the default command for the ribbon button.
 
-```
+```cpp
 void SetDefaultCommand(BOOL bSet=TRUE);
 ```
 
@@ -778,7 +778,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 
 Assigns an index to the image of the button.
 
-```
+```cpp
 void SetImageIndex(
     int nIndex,
     BOOL bLargeImage);
@@ -796,7 +796,7 @@ void SetImageIndex(
 
 Assigns a pop-up menu to the ribbon button.
 
-```
+```cpp
 void SetMenu(
     HMENU hMenu,
     BOOL bIsDefaultCommand=FALSE,
@@ -842,7 +842,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 
 Aligns the pop-up menu to the edge of the button.
 
-```
+```cpp
 void SetRightAlignMenu(BOOL bSet=TRUE);
 ```
 

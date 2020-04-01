@@ -341,7 +341,7 @@ The previous position (16-bit precision for `SetPos`, 32-bit precision for `SetP
 
 Sets the upper and lower limits (range) for a spin button control.
 
-```
+```cpp
 void SetRange(
     short nLower,
     short nUpper);

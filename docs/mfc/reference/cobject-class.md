@@ -253,7 +253,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 For the Release version of the library, operator **delete** frees the memory allocated by operator **new**.
 
-```
+```cpp
 void PASCAL operator delete(void* p);
 
 void PASCAL operator delete(
@@ -290,7 +290,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 For the Release version of the library, operator **new** performs an optimal memory allocation in a manner similar to `malloc`.
 
-```
+```cpp
 void* PASCAL operator new(size_t nSize);
 void* PASCAL operator new(size_t, void* p);
 

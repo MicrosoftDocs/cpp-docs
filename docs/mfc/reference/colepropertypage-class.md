@@ -147,7 +147,7 @@ Controls and containers cooperate so that users can browse and edit control prop
 
 Determines which controls do not enable the Apply button.
 
-```
+```cpp
 void IgnoreApply(UINT nID);
 ```
 
@@ -286,7 +286,7 @@ If the status of a property page control is dirty when the property page is clos
 
 Sets the property page's dialog resource.
 
-```
+```cpp
 void SetDialogResource(HGLOBAL hDialog);
 ```
 
@@ -299,7 +299,7 @@ Handle to the property page's dialog resource.
 
 Specifies tooltip information, the help filename, and the help context for your property page.
 
-```
+```cpp
 void SetHelpInfo(
     LPCTSTR lpszDocString,
     LPCTSTR lpszHelpFile = NULL,
@@ -321,7 +321,7 @@ Help context for the property page.
 
 Indicates whether the user has modified the property page.
 
-```
+```cpp
 void SetModifiedFlag(BOOL bModified = TRUE);
 ```
 
@@ -334,7 +334,7 @@ Specifies the new value for the property page's modified flag.
 
 Sets the property page's name, which the property frame will typically display on the page's tab.
 
-```
+```cpp
 void SetPageName(LPCTSTR lpszPageName);
 ```
 

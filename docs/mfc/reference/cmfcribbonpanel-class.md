@@ -316,7 +316,7 @@ A valid pointer to the base ribbon element located at position *nIndex* in the r
 
 Retrieves all ribbon elements that are contained in the ribbon panel.
 
-```
+```cpp
 void GetElements(CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
 ```
 
@@ -331,7 +331,7 @@ void GetElements(CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arEleme
 
 Adds ribbon elements that have the specified command ID to the specified array.
 
-```
+```cpp
 void GetElementsByID(
 UINT uiCmdID,
 CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
@@ -386,7 +386,7 @@ Zero-based index of the specified ribbon element if the method was successful; o
 
 Retrieves the command IDs for all ribbon elements in the ribbon panel.
 
-```
+```cpp
 void GetItemIDsList(CList<UINT, UINT>& lstItems) const;
 ```
 
@@ -775,7 +775,7 @@ Call this method to remove an element from the ribbon panel.
 
 Deletes all ribbon elements from the ribbon panel.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -839,7 +839,7 @@ To replace a ribbon element based on position, call [CMFCRibbonPanel::Replace](#
 
 Enables or disables the centering of the vertical positions of ribbon elements within their display rectangle.
 
-```
+```cpp
 void SetCenterColumnVert(BOOL bSet = TRUE);
 ```
 
@@ -854,7 +854,7 @@ void SetCenterColumnVert(BOOL bSet = TRUE);
 
 Associates user-defined data with the ribbon panel.
 
-```
+```cpp
 void SetData(DWORD_PTR dwData);
 ```
 
@@ -992,7 +992,7 @@ pColorButton->EnableAutomaticButton(_T("Automatic"),
 
 Enables or disables the adjustment of the width of ribbon elements in the same column.
 
-```
+```cpp
 void SetJustifyColumns(BOOL bSet = TRUE);
 ```
 
@@ -1009,7 +1009,7 @@ When this feature is enabled in a ribbon panel, the widths of ribbon elements in
 
 Sets the keytip for the default button of the ribbon panel.
 
-```
+```cpp
 void SetKeys(LPCTSTR lpszKeys);
 ```
 
@@ -1047,7 +1047,7 @@ The pop-up menu for the ribbon panel is only available when the display of the r
 
 Sets focus to the specified Ribbon element.
 
-```
+```cpp
 void SetFocused(CMFCRibbonBaseElement* pNewFocus);
 ```
 
@@ -1062,7 +1062,7 @@ A pointer to a Ribbon element that receives focus.
 
 Scrolls the gallery to make the specified Ribbon element visible.
 
-```
+```cpp
 void MakeGalleryItemVisible(CMFCRibbonBaseElement* pItem);
 ```
 
@@ -1091,7 +1091,7 @@ TRUE if the parent ribbon has Windows 7 look; otherwise FALSE.
 
 Retrieves an array of visible elements.
 
-```
+```cpp
 void GetVisibleElements(
 CArray<CMFCRibbonBaseElement*,
 CMFCRibbonBaseElement*>& arElements);

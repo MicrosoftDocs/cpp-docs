@@ -79,7 +79,7 @@ See also [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) and [CAutoP
 
 Call this method to take ownership of an existing pointer.
 
-```
+```cpp
 void Attach(T* p) throw();
 ```
 
@@ -165,7 +165,7 @@ See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md
 
 Call this method to delete an object pointed to by a `CAutoPtr`.
 
-```
+```cpp
 void Free() throw();
 ```
 

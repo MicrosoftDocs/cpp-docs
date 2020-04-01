@@ -247,7 +247,7 @@ The *pos* position counter is updated after each call. If the retrieved element 
 
 Call this method to get the key and value of an element stored in the map and advance the position to the next element.
 
-```
+```cpp
 void GetNextAssoc(
     POSITION& pos,
     KOUTARGTYPE key,
@@ -400,7 +400,7 @@ typedef KTraits::OUTARGTYPE KOUTARGTYPE;
 
 Call this method to remove all elements from the `CRBTree` object.
 
-```
+```cpp
 void RemoveAll() throw();
 ```
 
@@ -412,7 +412,7 @@ Clears out the `CRBTree` object, freeing the memory used to store the elements.
 
 Call this method to remove the element at the given position in the `CRBTree` object.
 
-```
+```cpp
 void RemoveAt(POSITION pos) throw();
 ```
 
@@ -429,7 +429,7 @@ Removes the key/value pair stored at the specified position. The memory used to 
 
 Call this method to change the value stored at a given position in the `CRBTree` object.
 
-```
+```cpp
 void SetValueAt(POSITION pos, VINARGTYPE value);
 ```
 

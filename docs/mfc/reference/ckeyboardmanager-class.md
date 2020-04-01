@@ -224,7 +224,7 @@ If you do not specify a default window, the main frame window of your applicatio
 
 Reloads the shortcut key tables from the application resource.
 
-```
+```cpp
 void ResetAll();
 ```
 

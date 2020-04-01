@@ -285,7 +285,7 @@ Use the second overload to create default-sized controls.
 
 Creates an OLE font.
 
-```
+```cpp
 void CreateOleFont(CFont* pFont);
 ```
 
@@ -315,7 +315,7 @@ A pointer to the custom site of the specified item.
 
 Determines if the container will ignore events from the attached control sites or accept them.
 
-```
+```cpp
 void FreezeAllEvents(BOOL bFreeze);
 ```
 

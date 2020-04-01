@@ -91,7 +91,7 @@ You would normally never need to call this constructor directly. A function that
 
 This function checks to see if the `CException` object was created on the heap, and if so, it calls the **delete** operator on the object.
 
-```
+```cpp
 void Delete();
 ```
 

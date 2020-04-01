@@ -115,7 +115,7 @@ The ATL/MFC string class to use for the path (see [CStringT](../../atl-mfc-share
 
 Call this method to add a backslash to the end of a string to create the correct syntax for a path. If the path already has a trailing backslash, no backslash will be added.
 
-```
+```cpp
 void AddBackslash();
 ```
 
@@ -169,7 +169,7 @@ For more information, see [PathAppend](/windows/win32/api/shlwapi/nf-shlwapi-pat
 
 Call this method to create a root path from a given drive number.
 
-```
+```cpp
 void BuildRoot(int iDrive);
 ```
 
@@ -186,7 +186,7 @@ For more information, see [PathBuildRoot](/windows/win32/api/shlwapi/nf-shlwapi-
 
 Call this method to convert the path to canonical form.
 
-```
+```cpp
 void Canonicalize();
 ```
 
@@ -198,7 +198,7 @@ For more information, see [PathCanonicalize](/windows/win32/api/shlwapi/nf-shlwa
 
 Call this method to concatenate a string representing a directory name and a string representing a file path name into one path.
 
-```
+```cpp
 void Combine(PCXSTR pszDir, PCXSTR  pszFile);
 ```
 
@@ -661,7 +661,7 @@ typedef StringType::PXSTR PXSTR;
 
 Call this method to enclose the path in quotation marks if it contains any spaces.
 
-```
+```cpp
 void QuoteSpaces();
 ```
 
@@ -707,7 +707,7 @@ For more information, see [PathRelativePathTo](/windows/win32/api/shlwapi/nf-shl
 
 Call this method to remove any command-line arguments from the path.
 
-```
+```cpp
 void RemoveArgs();
 ```
 
@@ -719,7 +719,7 @@ For more information, see [PathRemoveArgs](/windows/win32/api/shlwapi/nf-shlwapi
 
 Call this method to remove the trailing backslash from the path.
 
-```
+```cpp
 void RemoveBackslash();
 ```
 
@@ -731,7 +731,7 @@ For more information, see [PathRemoveBackslash](/windows/win32/api/shlwapi/nf-sh
 
 Call this method to remove all leading and trailing spaces from the path.
 
-```
+```cpp
 void RemoveBlanks();
 ```
 
@@ -743,7 +743,7 @@ For more information, see [PathRemoveBlanks](/windows/win32/api/shlwapi/nf-shlwa
 
 Call this method to remove the file extension from the path, if there is one.
 
-```
+```cpp
 void RemoveExtension();
 ```
 
@@ -808,7 +808,7 @@ For more information, see [PathSkipRoot](/windows/win32/api/shlwapi/nf-shlwapi-p
 
 Call this method to remove the path portion of a fully qualified path and file name.
 
-```
+```cpp
 void StripPath();
 ```
 
@@ -836,7 +836,7 @@ For more information, see [PathStripToRoot](/windows/win32/api/shlwapi/nf-shlwap
 
 Call this method to remove quotation marks from the beginning and end of a path.
 
-```
+```cpp
 void UnquoteSpaces();
 ```
 

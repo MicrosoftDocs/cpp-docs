@@ -232,7 +232,7 @@ The value area of a property consists of a text box and possibly an *option butt
 
 Makes a property either editable or read-only.
 
-```
+```cpp
 void AllowEdit(BOOL bAllow=TRUE);
 ```
 
@@ -371,7 +371,7 @@ Call the [CMFCPropertyGridProperty::EnableSpinControl](#enablespincontrol) metho
 
 Enables or disables a property.
 
-```
+```cpp
 void Enable(BOOL bEnable=TRUE);
 ```
 
@@ -386,7 +386,7 @@ void Enable(BOOL bEnable=TRUE);
 
 Enables or disables a spin button control that is used to modify a property value.
 
-```
+```cpp
 void EnableSpinControl(
     BOOL bEnable=TRUE,
     int nMin=0,
@@ -414,7 +414,7 @@ The property type, which is specified by the *varValue* parameter of the [CMFCPr
 
 Expands or collapses a property that contains sub-properties.
 
-```
+```cpp
 void Expand(BOOL bExpand=TRUE);
 ```
 
@@ -744,7 +744,7 @@ The following table lists the values that can be returned to the *pnArea* parame
 
 Called by the framework to initialize a property object.
 
-```
+```cpp
 void Init();
 ```
 
@@ -1388,7 +1388,7 @@ This method supports a property that is either a list of values or one of the fo
 
 Redraws the property.
 
-```
+```cpp
 void Redraw();
 ```
 
@@ -1398,7 +1398,7 @@ void Redraw();
 
 Removes all options (items) from a property.
 
-```
+```cpp
 void RemoveAllOptions();
 ```
 
@@ -1444,7 +1444,7 @@ virtual void ResetOriginalValue();
 
 Associates a DWORD value with a property.
 
-```
+```cpp
 void SetData(DWORD_PTR dwData);
 ```
 
@@ -1461,7 +1461,7 @@ Use the [CMFCPropertyGridProperty::GetData](#getdata) method to retrieve the DWO
 
 Specifies the text that describes the current property.
 
-```
+```cpp
 void SetDescription(const CString& strDescr);
 ```
 
@@ -1476,7 +1476,7 @@ void SetDescription(const CString& strDescr);
 
 Sets the name of a property.
 
-```
+```cpp
 void SetName(
     LPCTSTR lpszName,
     BOOL bRedraw=TRUE);
@@ -1528,7 +1528,7 @@ virtual void SetValue(const _variant_t& varValue);
 
 Shows or hides a property.
 
-```
+```cpp
 void Show(
     BOOL bShow=TRUE,
     BOOL bAdjustLayout=TRUE);

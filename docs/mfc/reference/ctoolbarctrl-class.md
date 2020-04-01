@@ -339,7 +339,7 @@ You should not pass a `CString` object to this function since it is not possible
 
 Resizes the entire toolbar control.
 
-```
+```cpp
 void AutoSize();
 ```
 
@@ -529,7 +529,7 @@ You must call [Create](#create) to make the toolbar usable.
 
 Displays the Customize Toolbar dialog box.
 
-```
+```cpp
 void Customize();
 ```
 
@@ -856,7 +856,7 @@ This member function implements the behavior of the Win32 message [TB_GETIMAGELI
 
 Retrieves the current insertion mark for the toolbar.
 
-```
+```cpp
 void GetInsertMark(TBINSERTMARK* ptbim) const;
 ```
 
@@ -948,7 +948,7 @@ The maximum number of text rows displayed on a toolbar button.
 
 Retrieves the metrics of the `CToolBarCtrl` object.
 
-```
+```cpp
 void GetMetrics(LPTBMETRICS ptbm) const;
 ```
 
@@ -1383,7 +1383,7 @@ Consider calling [GetState](#getstate) if you want to retrieve more than one but
 
 Loads bitmaps into a toolbar control's image list.
 
-```
+```cpp
 void LoadImages(
     int iBitmapID,
     HINSTANCE hinst);
@@ -1546,7 +1546,7 @@ The following code example replaces the bitmap for the standard toolbar with a d
 
 Restores the state of the toolbar control from the location in the registry specified by the parameters.
 
-```
+```cpp
 void RestoreState(
     HKEY hKeyRoot,
     LPCTSTR lpszSubKey,
@@ -1576,7 +1576,7 @@ Points to a string containing the name of the value to retrieve. If a value with
 
 Saves the state of the toolbar control in the location in the registry specified by the parameters.
 
-```
+```cpp
 void SaveState(
     HKEY hKeyRoot,
     LPCTSTR lpszSubKey,
@@ -1699,7 +1699,7 @@ The button size must always be at least as large as the bitmap size it encloses.
 
 Specifies the size of the `TBBUTTON` structure.
 
-```
+```cpp
 void SetButtonStructSize(int nSize);
 ```
 
@@ -1766,7 +1766,7 @@ Returns nonzero if successful; otherwise zero.
 
 Sets the color scheme of the current toolbar control.
 
-```
+```cpp
 void SetColorScheme(const COLORSCHEME* lpColorScheme);
 ```
 
@@ -1944,7 +1944,7 @@ Nonzero if successful; otherwise zero.
 
 Sets the current insertion mark for the toolbar.
 
-```
+```cpp
 void SetInsertMark(TBINSERTMARK* ptbim);
 ```
 
@@ -1999,7 +1999,7 @@ Nonzero if successful; otherwise zero.
 
 Sets the metrics of the `CToolBarCtrl` object.
 
-```
+```cpp
 void SetMetrics(LPTBMETRICS ptbm);
 ```
 
@@ -2016,7 +2016,7 @@ This member function emulates the functionality of the [TB_SETMETRICS](/windows/
 
 Sets the owner window for the toolbar control.
 
-```
+```cpp
 void SetOwner(CWnd* pWnd);
 ```
 
@@ -2095,7 +2095,7 @@ The following code example sets the pressed image list to be the same as the def
 
 Asks the toolbar control to resize itself to the requested number of rows.
 
-```
+```cpp
 void SetRows(
     int nRows,
     BOOL bLarger,
@@ -2157,7 +2157,7 @@ This function is especially handy if you want to set more than one of the button
 
 Sets the styles for a toolbar control.
 
-```
+```cpp
 void SetStyle(DWORD dwStyle);
 ```
 
@@ -2170,7 +2170,7 @@ A DWORD containing a combination of [toolbar control styles](/windows/win32/Cont
 
 Associates a tool tip control with a toolbar control.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pTip);
 ```
 

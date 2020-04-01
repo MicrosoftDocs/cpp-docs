@@ -220,7 +220,7 @@ You should ensure that you only pass a DACL (discretionary access-control list) 
 
 Removes a specific ACE (access-control entry) from the `CDacl` object.
 
-```
+```cpp
 void RemoveAce(UINT nIndex) throw();
 ```
 
@@ -237,7 +237,7 @@ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-
 
 Removes all of the ACEs (access-control entries) contained in the `CDacl` object.
 
-```
+```cpp
 void RemoveAllAces() throw();
 ```
 

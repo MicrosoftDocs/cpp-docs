@@ -170,7 +170,7 @@ TRUE if the dock pane was created successfully; FALSE otherwise.
 
 Adds a handle to a bar pane to the list of hidden MDI tabbed bar panes.
 
-```
+```cpp
 void AddHiddenMDITabbedBar(CDockablePane* pBar);
 ```
 
@@ -293,7 +293,7 @@ The *dwAlignment* parameter can have one of the following values:
 
 Resizes a docking pane in autohide mode so that it takes the full width or height of the frame’s client area surrounded by dock sites.
 
-```
+```cpp
 void AlignAutoHidePane(
     CPaneDivider* pDefaultSlider,
     BOOL bIsVisible = TRUE);
@@ -333,7 +333,7 @@ NULL if the auto hide toolbar was not created; otherwise a pointer to the new to
 
 Brings the docked bars that have the specified alignment to the top.
 
-```
+```cpp
 void BringBarsToTop(
     DWORD dwAlignment = 0,
     BOOL bExcludeDockedBars = TRUE);
@@ -351,7 +351,7 @@ void BringBarsToTop(
 
 Adds names of docking panes and toolbars to a menu.
 
-```
+```cpp
 void BuildPanesMenu(
     CMenu& menu,
     BOOL bToolbarsOnly);
@@ -369,7 +369,7 @@ void BuildPanesMenu(
 
 Calculates the expected rectangle of a docked window.
 
-```
+```cpp
 void CalcExpectedDockedRect(
     CWnd* pWnd,
     CPoint ptMouse,
@@ -469,7 +469,7 @@ The docking status can be one of the following values:
 
 Enables or disables loading of docking layout from the registry.
 
-```
+```cpp
 void DisableRestoreDockState(BOOL bDisable = TRUE);
 ```
 
@@ -486,7 +486,7 @@ Call this method when you must preserve the current layout of docking panes and 
 
 Docks a pane to another pane or to a frame window.
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID = 0,
@@ -591,7 +591,7 @@ By default, this menu is not displayed.
 
 Tells the library to display a special context menu that has a list of application toolbars and docking panes when the user clicks the right mouse button and the library is processing the WM_CONTEXTMENU message.
 
-```
+```cpp
 void EnablePaneContextMenu(
     BOOL bEnable,
     UINT uiCustomizeCmd,
@@ -811,7 +811,7 @@ A rectangle that contains the outer edges of the frame.
 
 Returns a list of panes that belong to the docking manager. This includes all floating panes.
 
-```
+```cpp
 void GetPaneList(
     CObList& lstBars,
     BOOL bIncludeAutohide = FALSE,
@@ -881,7 +881,7 @@ The class that contains the smart docking parameters for the current docking man
 
 Hides a pane that is in autohide mode.
 
-```
+```cpp
 void HideAutoHidePanes(
     CDockablePane* pBarToExclude = NULL,
     BOOL bImmediately = FALSE);
@@ -1059,7 +1059,7 @@ TRUE if the docking manager state was loaded successfully; otherwise FALSE.
 
 Locks the given window.
 
-```
+```cpp
 void LockUpdate(BOOL bLock);
 ```
 
@@ -1149,7 +1149,7 @@ virtual void OnActivateFrame(BOOL bActivate);
 
 Called by the framework when an active pop-up menu processes a WM_DESTROY message.
 
-```
+```cpp
 void OnClosePopupMenu();
 ```
 
@@ -1178,7 +1178,7 @@ TRUE if the method succeeds; otherwise FALSE.
 
 Called by the framework when it builds a menu that has a list of panes.
 
-```
+```cpp
 void OnPaneContextMenu(CPoint point);
 ```
 
@@ -1286,7 +1286,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 Releases the empty pane containers.
 
-```
+```cpp
 void ReleaseEmptyPaneContainers();
 ```
 
@@ -1294,7 +1294,7 @@ void ReleaseEmptyPaneContainers();
 
 Removes the specified hidden bar pane.
 
-```
+```cpp
 void RemoveHiddenMDITabbedBar(CDockablePane* pBar);
 ```
 
@@ -1324,7 +1324,7 @@ TRUE if the specified frame is removed; FALSE otherwise.
 
 Unregisters a pane and removes it from the list in the docking manager.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pWnd,
     BOOL bDestroy,
@@ -1376,7 +1376,7 @@ TRUE if the pane is successfully replaced; FALSE otherwise.
 
 Resorts the frames in the list of mini frames.
 
-```
+```cpp
 void ResortMiniFramesForZOrder();
 ```
 
@@ -1436,7 +1436,7 @@ TRUE always.
 
 Writes the docking manager to an archive.
 
-```
+```cpp
 void Serialize(CArchive& ar);
 ```
 
@@ -1453,7 +1453,7 @@ Writing the docking manager to an archive involves determining the number of doc
 
 Sets the size, width, and height of the control bars and the specified pane.
 
-```
+```cpp
 void SetAutohideZOrder(CDockablePane* pAHDockingBar);
 ```
 
@@ -1504,7 +1504,7 @@ virtual void SetDockState();
 
 Sets the print preview mode of the bars that are displayed in the print preview.
 
-```
+```cpp
 void SetPrintPreviewMode(
     BOOL bPreview,
     CPrintPreviewState* pState);
@@ -1541,7 +1541,7 @@ To use the default look for smart docking markers, pass an uninitialized instanc
 
 Shows or hides the windows of the mini frames.
 
-```
+```cpp
 void ShowDelayShowMiniFrames(BOOL bshow);
 ```
 
@@ -1571,7 +1571,7 @@ Always FALSE.
 
 Starts the smart docking of the specified window according to the alignment of the smart docking manager.
 
-```
+```cpp
 void StartSDocking(CWnd* pDockingWnd);
 ```
 
@@ -1584,7 +1584,7 @@ void StartSDocking(CWnd* pDockingWnd);
 
 Stops smart docking.
 
-```
+```cpp
 void StopSDocking();
 ```
 

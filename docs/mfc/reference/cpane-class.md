@@ -205,7 +205,7 @@ The difference in width and height between *rectRequired* and the current window
 
 Calculates the inside rectangle of a pane, including the borders and grippers.
 
-```
+```cpp
 void CalcInsideRect(
     CRect& rect,
     BOOL bHorz) const;
@@ -227,7 +227,7 @@ This method is called by the framework when it has to recalculate the layout for
 
 Calculates the recently docked rectangle.
 
-```
+```cpp
 void CalcRecentDockedRect();
 ```
 
@@ -755,7 +755,7 @@ The pane title is displayed in the caption area when the pane is docked or float
 
 Retrieves the *virtual rectangle* of the pane.
 
-```
+```cpp
 void GetVirtualRect(CRect& rectVirtual) const;
 ```
 
@@ -1246,7 +1246,7 @@ If `CMFCAutoHideButton::m_bOverlappingTabs` is FALSE, or if the pane is not loca
 
 Sets the border values of the pane.
 
-```
+```cpp
 void SetBorders(
     int cxLeft = 0,
     int cyTop = 0,
@@ -1281,7 +1281,7 @@ Call this function to set the sizes of the pane's borders.
 
 Sets the *hot spot* for the pane.
 
-```
+```cpp
 void SetClientHotSpot(const CPoint& ptNew);
 ```
 
@@ -1336,7 +1336,7 @@ By default, all toolbars have exclusive row mode disabled and the menu bar has e
 
 Sets the minimum allowed size for the pane.
 
-```
+```cpp
 void SetMinSize(const CSize& size);
 ```
 
@@ -1351,7 +1351,7 @@ void SetMinSize(const CSize& size);
 
 Sets the *virtual rectangle* of the pane.
 
-```
+```cpp
 void SetVirtualRect(
     const CRect& rect,
     BOOL bMapToParent = TRUE);
@@ -1375,7 +1375,7 @@ Do not call methods that are related to virtual rectangles unless you are moving
 
 Sets the runtime class information for the default mini-frame window.
 
-```
+```cpp
 void SetMiniFrameRTC(CRuntimeClass* pClass);
 ```
 
@@ -1447,7 +1447,7 @@ Use this method to programmatically undock a pane.
 
 Updates the virtual rectangle.
 
-```
+```cpp
 void UpdateVirtualRect();
 void UpdateVirtualRect(CPoint ptOffset);
 void UpdateVirtualRect(CSize sizeNew);

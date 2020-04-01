@@ -712,7 +712,7 @@ This value is set using [CComControlBase::SetDirty](#setdirty).
 
 Retrieves the x and y values of the numerator and denominator of the zoom factor for a control activated for in-place editing.
 
-```
+```cpp
 void GetZoomInfo(ATL_DRAWINFO& di);
 ```
 
@@ -1471,7 +1471,7 @@ For a windowed control, the Windows API function [SetFocus](/windows/win32/api/w
 
 Sets the data member `m_bRequiresSave` to the value in *bDirty*.
 
-```
+```cpp
 void SetDirty(BOOL bDirty);
 ```
 

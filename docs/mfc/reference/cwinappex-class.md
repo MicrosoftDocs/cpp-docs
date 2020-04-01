@@ -163,7 +163,7 @@ The `CWinAppEx` class has initialization methods, provides functionality for sav
 
 Specifies whether the application will load the initial size and location of the main frame window from the registry.
 
-```
+```cpp
 void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
 ```
 

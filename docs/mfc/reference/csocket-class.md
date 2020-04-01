@@ -107,7 +107,7 @@ For more information, see [Windows Sockets: Using Sockets with Archives](../../m
 
 Call this member function to cancel a blocking call currently in progress.
 
-```
+```cpp
 void CancelBlockingCall();
 ```
 

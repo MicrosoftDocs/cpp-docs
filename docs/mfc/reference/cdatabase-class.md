@@ -134,7 +134,7 @@ In your override, call `SQLBindParameters` and related ODBC functions to bind th
 
 Call this member function to request that the data source cancel either an asynchronous operation in progress or a process from a second thread.
 
-```
+```cpp
 void Cancel();
 ```
 
@@ -242,7 +242,7 @@ For more information about transactions, see the article [Transaction (ODBC)](..
 
 Call this member function when you need to execute a SQL command directly.
 
-```
+```cpp
 void ExecuteSQL(LPCTSTR lpszSQL);
 ```
 
@@ -554,7 +554,7 @@ After a rollback, the record that was current before the rollback remains curren
 
 Call this member function — before you call `OpenEx` or `Open` — to override the default number of seconds allowed before an attempted data source connection times out.
 
-```
+```cpp
 void SetLoginTimeout(DWORD dwSeconds);
 ```
 
@@ -573,7 +573,7 @@ The default value for login timeouts is 15 seconds. Not all data sources support
 
 Call this member function to override the default number of seconds to allow before subsequent operations on the connected data source time out.
 
-```
+```cpp
 void SetQueryTimeout(DWORD dwSeconds);
 ```
 

@@ -142,7 +142,7 @@ The RGB value of the selected color.
 
 Retrieves the hue, luminance and saturation values of the color that the user selects.
 
-```
+```cpp
 void GetHLS(
     double* hue,
     double* luminance,
@@ -208,7 +208,7 @@ The saturation component of the selected color.
 
 Sets the current color to the color defined by the specified RGB color components or the specified cell hexagon.
 
-```
+```cpp
 void SelectCellHexagon(
     BYTE R,
     BYTE G,
@@ -250,7 +250,7 @@ The second overload of this method sets the current color to the color of the ce
 
 Sets the current color to the specified RGB color value.
 
-```
+```cpp
 void SetColor(COLORREF Color);
 ```
 
@@ -265,7 +265,7 @@ void SetColor(COLORREF Color);
 
 Sets the current color to the specified HLS color value.
 
-```
+```cpp
 void SetHLS(
     double hue,
     double luminance,
@@ -293,7 +293,7 @@ void SetHLS(
 
 Changes the hue of the currently selected color.
 
-```
+```cpp
 void SetHue(double Hue);
 ```
 
@@ -308,7 +308,7 @@ void SetHue(double Hue);
 
 Changes the luminance of the currently selected color.
 
-```
+```cpp
 void SetLuminance(double Luminance);
 ```
 
@@ -323,7 +323,7 @@ void SetLuminance(double Luminance);
 
 Sets the width of the luminance bar in the color picker control.
 
-```
+```cpp
 void SetLuminanceBarWidth(int w);
 ```
 
@@ -340,7 +340,7 @@ Use this method to resize the luminance bar, which is on the **Custom** tab of t
 
 Sets the initial selected color.
 
-```
+```cpp
 void SetOriginalColor(COLORREF ref);
 ```
 
@@ -357,7 +357,7 @@ Call this method when the color picker control is initialized.
 
 Sets the current color palette.
 
-```
+```cpp
 void SetPalette(CPalette* pPalette);
 ```
 
@@ -374,7 +374,7 @@ The color palette defines the array of colors that is presented in the color pic
 
 Changes the saturation of the currently selected color.
 
-```
+```cpp
 void SetSaturation(double Saturation);
 ```
 
@@ -389,7 +389,7 @@ void SetSaturation(double Saturation);
 
 Sets the type of color picker control to display.
 
-```
+```cpp
 void SetType(COLORTYPE colorType);
 ```
 

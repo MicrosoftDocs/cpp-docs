@@ -70,7 +70,7 @@ This data is composed of:
 
 Increments the reference count of the string object.
 
-```
+```cpp
 void AddRef() throw();
 ```
 
@@ -85,7 +85,7 @@ Increments the reference count of the string object.
 
 Returns a pointer to the character buffer of a string object.
 
-```
+```cpp
 void* data() throw();
 ```
 
@@ -136,7 +136,7 @@ Call this function to determine if the character buffer of a string data object 
 
 Locks the character buffer of the associated string object.
 
-```
+```cpp
 void Lock() throw();
 ```
 
@@ -199,7 +199,7 @@ Stores the memory manager for the associated string object. For more information
 
 Decrements the reference count of the string data object.
 
-```
+```cpp
 void Release() throw();
 ```
 
@@ -215,7 +215,7 @@ For example, the following code would call `CStringData::Release` for the string
 
 Unlocks the character buffer of the associated string object.
 
-```
+```cpp
 void Unlock() throw();
 ```
 

@@ -160,7 +160,7 @@ If `DoModal` returns IDOK, you can call other member functions to retrieve the s
 
 Retrieves the character formatting of the selected font.
 
-```
+```cpp
 void GetCharFormat(CHARFORMAT& cf) const;
 ```
 
@@ -189,7 +189,7 @@ The color of the selected font.
 
 Call this function to assign the characteristics of the currently selected font to the members of a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure.
 
-```
+```cpp
 void GetCurrentFont(LPLOGFONT lplf);
 ```
 
