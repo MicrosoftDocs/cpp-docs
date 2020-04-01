@@ -1,45 +1,48 @@
 ---
 title: "/guard:ehcont (Enable EH Continuation Metadata)"
-ms.date: "03/30/2020"
+description: "Reference guide to the Microsoft C++ /guard:ehcont compiler option."
+ms.date: "06/03/2020"
 f1_keywords: ["/guard:ehcont", "VC.Project.VCCLCompilerTool.GuardEHContMetadata"]
+helpviewer_keywords: ["/guard:ehcont", "/guard:ehcont compiler option"]
 ---
-# /guard:ehcont (Enable EH Continuation metadata)
+# /guard:ehcont (Enable EH Continuation Metadata)
 
-Enables generation of EH Continuation metadata by the compiler.
+Enables generation of EH Continuation (EHCONT) metadata by the compiler.
 
 ## Syntax
 
-```
-/guard:ehcont[-]
-```
+> **`/guard:ehcont`**[**`-`**]
 
 ## Remarks
 
-The **/guard:ehcont** option enables compiler to generate a sorted list of the relative virtual addresses(RVA) of all the valid exception handling continuation targets for a binary, used during runtime for NtContinue/SetThreadContext RIP validation. By default, **/guard:ehcont** is off and must be explicitly enabled. To explicitly disable this option, use **/guard:ehcont-**.
+The **`/guard:ehcont`** option causes the compiler to generate a sorted list of the relative virtual addresses (RVA) of all the valid exception handling continuation targets for a binary. It's used during runtime for `NtContinue` and `SetThreadContext` instruction pointer validation. By default, **`/guard:ehcont`** is off and must be explicitly enabled. To explicitly disable this option, use **`/guard:ehcont-`**.
 
-[Control-flow Enforcement Technology(CET)](https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf) is a hardware-based security feature that eliminates Return-Oriented Programming(ROP) based attacks, by maintaining a "Shadow Stack" for every call stack to enforce control flow integrity.
+The **`/guard:ehcont`** option is available in Visual Studio 2019 version 16.7 and later. The feature is supported for 64-bit processes on a 64-bit OS.
 
-Once shadow stacks are available to prevent ROP attacks, one of the next exploit techniques that attackers may use is corrupting the RIP value inside the CONTEXT structure passed into system calls that redirect the execution of a thread, such as NtContinue, RtlRestoreContext and SetThreadContext. The CONTEXT structure is stored in memory, and corrupting the RIP value in it can cause these syscalls to transfer execution to the attacker-controlled RIP. Currently, NTContinue can be called with any continuation point. Therefore, it's essential to  perform RIP validation when shadow stacks are enabled.
+[Control-flow Enforcement Technology(CET)](https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf) is a hardware-based security feature that protects against Return-Oriented Programming (ROP)-based attacks. It maintains a "shadow stack" for every call stack to enforce control-flow integrity.
 
-RtlRestoreContext/NtContinue is used during SEH exception unwinding to unwind to the target frame for executing the except block. Since the RIP of the except block is not expected to be on the shadow stack (which would result in the RIP validation failing), **/guard:ehcont** compiler switch will generate an "EH Continuation Table" that contains a sorted list of the RVAs of all valid exception handling continuation targets in the binary. NtContinue first checks the shadow stack for the user-supplied RIP, and if the RIP is not found there, it will proceed to check the EH Continuation Table from the RIP's containing binary. If the containing binary was not compiled with the table, then NtContinue will be allowed to proceed, for compatibility with legacy binaries. It is important to distinguish between a binary that does not contain EHCONT data (legacy binary), and a binary that contains EHCONT data but the table has zero entries. The former allows all addresses inside the binary as valid continuation targets, whereas the latter does not allow any address inside the binary as a valid continuation target.
-Starting **Visual Studio 2019 version 16.7 and later**, this feature will be supported for 64-bit processes on a 64-bit OS.
+When shadow stacks are available to prevent ROP attacks, attackers move on to use other exploit techniques. One technique they may use is to corrupt the instruction pointer value inside the [CONTEXT](/windows/win32/api/winnt/ns-winnt-context) structure. This structure gets passed into system calls that redirect the execution of a thread, such as `NtContinue`, [RtlRestoreContext](/windows/win32/api/winnt/nf-winnt-rtlrestorecontext), and [SetThreadContext](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadcontext). The `CONTEXT` structure is stored in memory. Corrupting the instruction pointer it contains can cause the system calls to transfer execution to an attacker-controlled address. Currently, `NTContinue` can be called with any continuation point. That's why it's essential to validate the instruction pointer when shadow stacks are enabled.
 
-The **/guard:ehcont** option must be passed to both the compiler and linker to generate EH coninuation target RVAs for a binary. If your binary is built by using a single `cl` command, the compiler passes the option to the linker. Compiler also passes [/guard:cf](guard-enable-control-flow-guard.md) option to the linker. If you compile and link separately, the option must be set on both the compiler and linker commands.
+`RtlRestoreContext` and `NtContinue` are used during Structured Exception Handling (SEH) exception unwinding to unwind to the target frame that contains the `__except` block. The instruction pointer of the `__except` block isn't expected to be on the shadow stack, because it would fail instruction pointer validation. The **`/guard:ehcont`** compiler switch generates an "EH Continuation Table". It contains a sorted list of the RVAs of all valid exception handling continuation targets in the binary. `NtContinue` first checks the shadow stack for the user-supplied instruction pointer, and if the instruction pointer isn't found there, it proceeds to check the EH Continuation Table from the binary that contains the instruction pointer. If the containing binary wasn't compiled with the table, then for compatibility with legacy binaries, `NtContinue` is allowed to continue. It's important to distinguish between legacy binaries that have no EHCONT data, and binaries containing EHCONT data but no table entries. The former allow all addresses inside the binary as valid continuation targets. The latter don't allow any address inside the binary as a valid continuation target.
 
-Code compiled by using **/guard:ehcont** can be linked to libraries and object files that are not compiled by using the option. When the library/object file is not compiled for /guard:ehcont, the linker will fatal if any of these scenarios are true:
+The **`/guard:ehcont`** option must be passed to both the compiler and linker to generate EH continuation target RVAs for a binary. If your binary is built by using a single `cl` command, the compiler passes the option to the linker. The compiler also passes the [/guard:cf](guard-enable-control-flow-guard.md) option to the linker. If you compile and link separately, these options must be set on both the compiler and linker commands.
 
-1. A code section has "local unwind" ([try-finally Statement](../../cpp/try-finally-statement.md) under Abnormal Termination section)
-1. An EH (xdata) section contains pointers to code section and they aren't for structured exception handling (SEH)
-1. The pointers are for SEH but the object file was not compiled with comdats (/Gy)
+You can link code compiled by using **`/guard:ehcont`** to libraries and object files compiled without it. The linker returns a fatal error in any of these scenarios:
 
-The linker will fatal, because it cannot generate metadata in these scenarios, which means throwing an exception will likely crash at runtime.
+- A code section has "local unwind". For more information, see Abnormal termination in [try-finally Statement](../../cpp/try-finally-statement.md#abnormal-termination).
 
-For SEH section info that is in comdats but not compiled with /guard:ehcont, the linker will emit a warning **LNK4291**. In this case linker will generate correct but conservative metadata for the section. To ignore this warning, use [/IGNORE (Ignore Specific Warnings)](ignore-ignore-specific-warnings.md).
+- An EH (xdata) section contains pointers to a code section, and they aren't for SEH.
 
+- The pointers are for SEH, but the object file wasn't compiled using function-level linking ([/Gy](gy-enable-function-level-linking.md)) to produce COMDATs.
 
-To check if a binary contains EHCONT data, look for the following when dumping the binary's load config:
+The linker returns a fatal error, because it can't generate metadata in these scenarios. That means throwing an exception is likely to cause a crash at runtime.
 
-```
+For SEH section info found in COMDATs, but not compiled using **`/guard:ehcont`**, the linker emits warning **LNK4291**. In this case, the linker generates correct but conservative metadata for the section. To ignore this warning, use [/IGNORE (Ignore Specific Warnings)](ignore-ignore-specific-warnings.md).
+If linker is unable to generate metadata, it will throw one of the following errors - **`LNK2046`**`: module contains _local_unwind but was not compiled with /guard:ehcont`, **`LNK2047`**`: module contains C++ EH or complex EH metadata but was not compiled with /guard:ehcont.`
+
+To check if a binary contains EHCONT data, look for the following elements when dumping the binary's load config:
+
+```cmd
 e:\>link /dump /loadconfig CETTest.exe
 ...
             10417500 Guard Flags
@@ -63,14 +66,14 @@ e:\>link /dump /loadconfig CETTest.exe
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select **Configuration Properties**, **C/C++**, **Code Generation**.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
 1. Select the **Enable EH Continuation Metadata** property.
 
-1. In the dropdown control, choose **Yes(/guard:ehcont)** to enable EH continuation metadata, or **No(/guard:ehcont-)** to disable it.
+1. In the dropdown control, choose **Yes (/guard:ehcont)** to enable EH continuation metadata, or **No (/guard:ehcont-)** to disable it.
 
 ## See also
 
-[/guard (Enable Control Flow Guard)](guard-enable-control-flow-guard.md)<br/>
-[MSVC Compiler Options](compiler-options.md)<br/>
+[/guard (Enable Control Flow Guard)](guard-enable-control-flow-guard.md)\
+[MSVC Compiler Options](compiler-options.md)\
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

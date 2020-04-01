@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: "03/17/2020"
+ms.date: "06/03/2020"
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
