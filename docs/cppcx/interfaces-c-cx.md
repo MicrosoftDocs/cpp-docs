@@ -57,7 +57,7 @@ When a ref class implements multiple interfaces, and those interfaces have metho
 
 ## Generic interfaces
 
-In C++/CX, the `generic` keyword is used to represent a Windows Runtime parameterized type. A parameterized type is emitted in metadata and can be consumed by code that's written in any language that supports type parameters. The Windows Runtime defines some generic interfaces—for example,  [Windows::Foundation::Collections::IVector\<T>](Windows::Foundation::Collections::IVector)—but it doesn't support the creation of public user-defined generic interfaces in C++/CX. However, you can create private generic interfaces.
+In C++/CX, the `generic` keyword is used to represent a Windows Runtime parameterized type. A parameterized type is emitted in metadata and can be consumed by code that's written in any language that supports type parameters. The Windows Runtime defines some generic interfaces—for example, [Windows::Foundation::Collections::IVector\<T>](/uwp/api/Windows.Foundation.Collections.IVector_T_)—but it doesn't support the creation of public user-defined generic interfaces in C++/CX. However, you can create private generic interfaces.
 
 Here's how Windows Runtime types can be used to author a generic interface:
 
