@@ -1,8 +1,8 @@
 ---
 title: "_fgetchar, _fgetwchar"
-ms.date: "11/04/2016"
-api_name: ["_fgetchar", "_fgetwchar"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_fgetchar", "_fgetwchar", "_o__fgetchar", "_o__fgetwchar"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fgetwchar", "_fgettchar", "_fgetchar", "_fgetwchar", "fgettchar"]
@@ -31,6 +31,8 @@ These functions read a single character from **stdin**. The function then increm
 **_fgetchar** is equivalent to `fgetc( stdin )`. It is also equivalent to **getchar**, but implemented only as a function, rather than as a function and a macro. **_fgetwchar** is the wide-character version of **_fgetchar**.
 
 These functions are not compatible with the ANSI standard.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

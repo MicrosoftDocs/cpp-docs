@@ -1,8 +1,8 @@
 ---
 title: "_lseek, _lseeki64"
-ms.date: "11/04/2016"
-api_name: ["_lseeki64", "_lseek"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_lseeki64", "_lseek", "_o__lseek", "_o__lseeki64"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_lseeki64", "_lseek", "lseeki64"]
@@ -56,6 +56,8 @@ The **_lseek** function moves the file pointer associated with *fd* to a new loc
 | **SEEK_END** | End of file. |
 
 You can use **_lseek** to reposition the pointer anywhere in a file or beyond the end of the file.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

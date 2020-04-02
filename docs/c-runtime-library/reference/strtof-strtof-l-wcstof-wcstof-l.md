@@ -1,8 +1,8 @@
 ---
 title: "strtof, _strtof_l, wcstof, _wcstof_l"
-ms.date: "04/05/2018"
-api_name: ["_strtof_l", "wcstof", "strtof", "_wcstof_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_strtof_l", "wcstof", "strtof", "_wcstof_l", "_o__strtof_l", "_o__wcstof_l", "_o_strtof", "_o_wcstof"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcstof", "_tcstof_l", "stdlib/strtof", "strtof", "stdlib/_strtof_l", "_strtof_l", "corecrt_wstdlib/wcstof", "wcstof", "corecrt_wstdlib/_wcstof_l", "_wcstof_l"]
@@ -58,6 +58,8 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 ## Remarks
 
 Each function converts the input string *strSource* to a **float**. The **strtof** function converts *strSource* to a single-precision value. **strtof** stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character. **wcstof** is a wide-character version of **strtof**; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

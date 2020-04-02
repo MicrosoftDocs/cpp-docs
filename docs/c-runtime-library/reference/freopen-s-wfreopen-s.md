@@ -1,8 +1,8 @@
 ---
 title: "freopen_s, _wfreopen_s"
-ms.date: "11/04/2016"
-api_name: ["_wfreopen_s", "freopen_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wfreopen_s", "freopen_s", "_o__wfreopen_s", "_o_freopen_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["freopen_s", "_tfreopen_s", "_wfreopen_s"]
@@ -53,6 +53,8 @@ Each of these functions returns an error code. If an error occurs, the original 
 The **freopen_s** function closes the file currently associated with *stream* and reassigns *stream* to the file specified by *path*. **_wfreopen_s** is a wide-character version of **_freopen_s**; the *path* and *mode* arguments to **_wfreopen_s** are wide-character strings. **_wfreopen_s** and **_freopen_s** behave identically otherwise.
 
 If any of *pFile*, *path*, *mode*, or *stream* are **NULL**, or if *path* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

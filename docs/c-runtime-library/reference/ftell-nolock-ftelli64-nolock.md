@@ -1,8 +1,8 @@
 ---
 title: "_ftell_nolock, _ftelli64_nolock"
-ms.date: "11/04/2016"
-api_name: ["_ftelli64_nolock", "_ftell_nolock"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ftelli64_nolock", "_ftell_nolock", "_o__ftell_nolock", "_o__ftelli64_nolock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftelli64_nolock", "ftelli64_nolock", "ftell_nolock", "_ftell_nolock"]
@@ -36,6 +36,8 @@ Same as **ftell** and **_ftelli64**. For more information, see [ftell, _ftelli64
 ## Remarks
 
 These functions are non-locking versions of **ftell** and **_ftelli64**, respectively. They are identical to **ftell** and **_ftelli64** except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

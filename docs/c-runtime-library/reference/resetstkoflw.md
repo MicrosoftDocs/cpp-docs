@@ -1,8 +1,8 @@
 ---
 title: "_resetstkoflw"
-ms.date: "11/04/2016"
-api_name: ["_resetstkoflw"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+ms.date: "4/2/2020"
+api_name: ["_resetstkoflw", "_o__resetstkoflw"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["resetstkoflw", "_resetstkoflw"]
@@ -73,6 +73,8 @@ It is not safe to call **_resetstkoflw** in a C++ catch block that is reached fr
 There are situations where **_resetstkoflw** can fail even if used in a correct location, such as within an **__except** block. If, even after unwinding the stack, there is still not enough stack space left to execute **_resetstkoflw** without writing into the last page of the stack, **_resetstkoflw** fails to reset the last page of the stack as the guard page and returns 0, indicating failure. Therefore, safe usage of this function should include checking the return value instead of assuming that the stack is safe to use.
 
 Structured exception handling will not catch a **STATUS_STACK_OVERFLOW** exception when the application is compiled with **/clr** (see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

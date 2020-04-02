@@ -1,8 +1,8 @@
 ---
 title: "_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsnbcnt_l", "_mbsnccnt", "_wcsncnt", "_strncnt", "_mbsnccnt_l", "_mbsnbcnt"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbsnbcnt_l", "_mbsnccnt", "_wcsncnt", "_strncnt", "_mbsnccnt_l", "_mbsnbcnt", "_o__mbsnbcnt", "_o__mbsnbcnt_l", "_o__mbsnccnt", "_o__mbsnccnt_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbsnbcnt", "wcsncnt", "_tcsnbcnt", "_mbsnccnt", "_ftcsnbcnt", "mbsnbcnt", "strncnt", "mbsnbcnt_l", "mbsnccnt_l", "mbsnccnt", "_strncnt", "_wcsncnt"]
@@ -73,6 +73,8 @@ Locale to use.
 If *str* is a **NULL** pointer or is *count* is 0, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), **errno** is set to **EINVAL**, and the function returns 0.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

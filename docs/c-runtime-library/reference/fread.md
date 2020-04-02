@@ -1,8 +1,8 @@
 ---
 title: "fread"
-ms.date: "11/28/2018"
-api_name: ["fread"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["fread", "_o_fread"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fread"]
@@ -51,6 +51,8 @@ The **fread** function reads up to *count* items of *size* bytes from the input 
 When used on a text mode stream, if the amount of data requested (that is, *size* \* *count*) is greater than or equal to the internal **FILE** \* buffer size (by default this is 4096 bytes, configurable by using [setvbuf](../../c-runtime-library/reference/setvbuf.md)), stream data is copied directly into the user-provided buffer, and newline conversion is done in that buffer. Since the converted data may be shorter than the stream data copied into the buffer, data past *buffer*\[*return_value* \* *size*] (where *return_value* is the return value from **fread**) may contain unconverted data from the file. For this reason, we recommend you null-terminate character data at *buffer*\[*return_value* \* *size*] if the intent of the buffer is to act as a C-style string. See [fopen](fopen-wfopen.md) for details on the effects of text mode and binary mode.
 
 This function locks out other threads. If you need a non-locking version, use **_fread_nolock**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64"
-ms.date: "11/04/2016"
-api_name: ["_findfirst", "_wfindfirst", "_findfirst32", "_wfindfirst32", "_findfirst32i64", "_wfindfirst32i64", "_findfirst64", "_wfindfirst64", "_findfirst64i32", "_wfindfirst64i32", "_findfirsti64", "_wfindfirsti64"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_findfirst", "_wfindfirst", "_findfirst32", "_wfindfirst32", "_findfirst32i64", "_wfindfirst32i64", "_findfirst64", "_wfindfirst64", "_findfirst64i32", "_wfindfirst64i32", "_findfirsti64", "_wfindfirsti64", "_o__findfirst32", "_o__findfirst32i64", "_o__findfirst64", "_o__findfirst64i32", "_o__wfindfirst32", "_o__wfindfirst32i64", "_o__wfindfirst64", "_o__wfindfirst64i32"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["findfirst32i64", "wfindfirst32i64", "tfindfirst64", "_findfirst64i32", "_wfindfirst32i64", "_wfindfirsti64", "wfindfirst", "_tfindfirsti64", "findfirst32", "_tfindfirst32", "_findfirsti64", "findfirst", "wfindfirst64", "wfindfirst32", "tfindfirst32", "_wfindfirst64i32", "findfirst64i32", "tfindfirst64i32", "_wfindfirst", "findfirsti64", "_findfirst32i64", "wfindfirst64i32", "_wfindfirst32", "_findfirst32", "_tfindfirst32i64", "tfindfirst", "_tfindfirst64i32", "findfirst64", "_tfindfirst", "_findfirst64", "_tfindfirst64", "tfindfirst32i64", "_findfirst", "_wfindfirst64"]
@@ -102,6 +102,8 @@ These functions use various forms of the **_finddata_t** structure for the *file
 The variations that use a 64-bit time type enable file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC. Those that use 32-bit time types represent dates only through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
 Unless you have a specific reason to use the versions that specify the time size explicitly, use **_findfirst** or **_wfindfirst** or, if you need to support file sizes larger than 3 GB, use **_findfirsti64** or **_wfindfirsti64**. All these functions use the 64-bit time type. In earlier versions, these functions used a 32-bit time type. If this is a breaking change for an application, you might define **_USE_32BIT_TIME_T** to revert to the old behavior. If **_USE_32BIT_TIME_T** is defined, **_findfirst**, **_finfirsti64**, and their corresponding Unicode versions use a 32-bit time.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Time Type and File Length Type Variations of _findfirst
 

@@ -1,8 +1,8 @@
 ---
 title: "tan, tanf, tanl"
-ms.date: "04/10/2018"
-api_name: ["tan", "tanf", "tanl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["tan", "tanf", "tanl", "_o_tan"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tan", "tanf", "_tanl", "tanl"]
@@ -43,6 +43,8 @@ The **tan** functions return the tangent of *x*. If *x* is greater than or equal
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **tan** that take and return **float** or **long** **double** values. In a C program, **tan** always takes and returns **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

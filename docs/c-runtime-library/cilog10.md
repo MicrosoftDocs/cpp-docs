@@ -1,8 +1,8 @@
 ---
 title: "_CIlog10"
-ms.date: "11/04/2016"
-api_name: ["_CIlog10"]
-api_location: ["msvcr100.dll", "msvcr120.dll", "msvcr80.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr110.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_CIlog10", "_o__CIlog10"]
+api_location: ["msvcr100.dll", "msvcr120.dll", "msvcr80.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr110.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CIlog10", "_CIlog10"]
@@ -24,6 +24,8 @@ void __cdecl _CIlog10();
 This version of the `log10` function has a specialized calling convention that the compiler understands. The function speeds up the execution because it prevents copies from being generated and helps with register allocation.
 
 The resulting value is pushed onto the top of the stack.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
 
 ## Requirements
 

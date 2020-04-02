@@ -1,8 +1,8 @@
 ---
 title: "tanh, tanhf, tanhl"
-ms.date: "04/10/2018"
-api_name: ["tanh", "tanhf", "tanhl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["tanh", "tanhf", "tanhl", "_o_tanh"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tanh", "tanhf", "tanhl", "_tanhl"]
@@ -41,6 +41,8 @@ The **tanh** functions return the hyperbolic tangent of *x*. There is no error r
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **tanh** that take and return **float** or **long** **double** values. In a C program, **tanh** always takes and returns **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

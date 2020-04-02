@@ -1,8 +1,8 @@
 ---
 title: "tgamma, tgammaf, tgammal"
-ms.date: "04/05/2018"
-api_name: ["tgamma", "tgammaf", "tgammal"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["tgamma", "tgammaf", "tgammal", "_o_tgamma", "_o_tgammaf", "_o_tgammal"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tgamma", "tgammaf", "tgammal", "math/tgamma", "math/tgammaf", "math/tgammal"]
@@ -67,6 +67,8 @@ Errors are reported as specified in [_matherr](matherr.md).
 Because C++ allows overloading, you can call overloads of **tgamma** that take and return **float** and **long** **double** types. In a C program, **tgamma** always takes and returns a **double**.
 
 If x is a natural number, this function returns the factorial of (x-1).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

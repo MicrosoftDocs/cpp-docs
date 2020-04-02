@@ -1,8 +1,8 @@
 ---
 title: "remainder, remainderf, remainderl"
-ms.date: "04/05/2018"
-api_name: ["remainderl", "remainder", "remainderf"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["remainderl", "remainder", "remainderf", "_o_remainder", "_o_remainderf", "_o_remainderl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["remainderf", "remainder", "remainderl"]
@@ -43,6 +43,8 @@ The floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remaind
 The **remainder** functions calculate the floating-point remainder *r* of *x* / *y* such that *x* = *n* \* *y* + *r*, where *n*is the integer nearest in value to *x* / *y* and *n*is even whenever &#124; *n* - *x* / *y* &#124; = 1/2. When *r* = 0, *r* has the same sign as *x*.
 
 Because C++ allows overloading, you can call overloads of **remainder** that take and return **float** or **long** **double** values. In a C program, **remainder** always takes two **double** arguments and returns a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "_fullpath, _wfullpath"
-ms.date: "11/04/2016"
-api_name: ["_fullpath", "_wfullpath"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_fullpath", "_wfullpath", "_o__fullpath", "_o__wfullpath"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wfullpath", "fullpath", "_wfullpath", "_fullpath"]
@@ -50,6 +50,8 @@ The **_fullpath** function expands the relative path name in *relPath* to its fu
 For example, to use C run-time routines, the application must include the header files that contain the declarations for the routines. Each header file include statement references the location of the file in a relative manner (from the application's working directory):
 
 ```C
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+
 #include <stdlib.h>
 ```
 

@@ -1,8 +1,8 @@
 ---
 title: "_strtime, _wstrtime"
-ms.date: "11/04/2016"
-api_name: ["_wstrtime", "_strtime"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wstrtime", "_strtime", "_o__strtime", "_o__wstrtime"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wstrtime", "_strtime", "wstrtime", "strtime", "_tstrtime"]
@@ -48,6 +48,8 @@ The **_strtime** function copies the current local time into the buffer pointed 
 **_wstrtime** is a wide-character version of **_strtime**; the argument and return value of **_wstrtime** are wide-character strings. These functions behave identically otherwise. If *timestr* is a **NULL** pointer or if *timestr* is formatted incorrectly, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the exception is allowed to continue, these functions return a **NULL** and set **errno** to **EINVAL** if *timestr* was a **NULL** or set **errno** to **ERANGE** if *timestr* is formatted incorrectly.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

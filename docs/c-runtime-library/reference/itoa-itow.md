@@ -1,8 +1,8 @@
 ---
 title: "_itoa, _itow functions"
-ms.date: "08/19/2019"
-api_name: ["itoa", "_itoa", "ltoa", "_ltoa", "ultoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["itoa", "_itoa", "ltoa", "_ltoa", "ultoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow", "_o__i64toa", "_o__i64tow", "_o__itoa", "_o__itow", "_o__ltoa", "_o__ltow", "_o__ui64toa", "_o__ui64tow", "_o__ultoa", "_o__ultow"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_itoa", "_ltoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow", "itoa", "ltoa", "ultoa", "i64toa", "ui64toa", "itow", "ltow", "ultow", "i64tow", "ui64tow", "itot", "_itot", "ltot", "_ltot", "ultot", "_ultot", "i64tot", "_i64tot", "ui64tot", "_ui64tot", "_MAX_ITOSTR_BASE16_COUNT", "_MAX_ITOSTR_BASE10_COUNT", "_MAX_ITOSTR_BASE8_COUNT", "_MAX_ITOSTR_BASE2_COUNT", "_MAX_LTOSTR_BASE16_COUNT", "_MAX_LTOSTR_BASE10_COUNT", "_MAX_LTOSTR_BASE8_COUNT", "_MAX_LTOSTR_BASE2_COUNT", "_MAX_ULTOSTR_BASE16_COUNT", "_MAX_ULTOSTR_BASE10_COUNT", "_MAX_ULTOSTR_BASE8_COUNT", "_MAX_ULTOSTR_BASE2_COUNT", "_MAX_I64TOSTR_BASE16_COUNT", "_MAX_I64TOSTR_BASE10_COUNT", "_MAX_I64TOSTR_BASE8_COUNT", "_MAX_I64TOSTR_BASE2_COUNT", "_MAX_U64TOSTR_BASE16_COUNT", "_MAX_U64TOSTR_BASE10_COUNT", "_MAX_U64TOSTR_BASE8_COUNT", "_MAX_U64TOSTR_BASE2_COUNT"]
@@ -96,6 +96,8 @@ Because of their potential for security issues, by default, these functions caus
 To use these functions without the deprecation warning, define the **_CRT_SECURE_NO_WARNINGS** preprocessor macro before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** compiler option to the **cl** command. Otherwise, define the macro in your source files. If you use precompiled headers, define the macro at the top of the precompiled header include file, *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier). To define the macro in your source code, use a **#define** directive before you include any CRT header, as in this example:
 
 ```C
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdlib.h>
 ```

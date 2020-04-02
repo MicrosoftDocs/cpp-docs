@@ -1,8 +1,8 @@
 ---
 title: "_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l"
-ms.date: "11/04/2016"
-api_name: ["_wcsnicmp", "_strnicmp_l", "_wcsnicmp_l", "_strnicmp", "_mbsnicmp", "_mbsnicmp_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_wcsnicmp", "_strnicmp_l", "_wcsnicmp_l", "_strnicmp", "_mbsnicmp", "_mbsnicmp_l", "_o__mbsnicmp", "_o__mbsnicmp_l", "_o__strnicmp", "_o__strnicmp_l", "_o__wcsnicmp", "_o__wcsnicmp_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wcsnicmp_l", "_strnicmp", "_ftcsnicmp", "mbsnicmp_l", "_ftcsncicmp", "mbsnicmp", "_tcsncicmp", "_mbsnicmp", "_tcsnicmp", "strnicmp_l", "_wcsnicmp", "_wcsnicmp_l", "CORECRT_WSTRING/_wcsnicmp", "CORECRT_WSTRING/_wcsnicmp_l", "string/_strnicmp", "string/_strnicmp_l"]
@@ -86,6 +86,8 @@ The characters from 91 to 96 in the ASCII table ('[', '\\', ']', '^', '_', and '
 **_wcsnicmp** and **_mbsnicmp** are wide-character and multibyte-character versions of **_strnicmp**. The arguments of **_wcsnicmp** are wide-character strings; those of **_mbsnicmp** are multibyte-character strings. **_mbsnicmp** recognizes multibyte-character sequences according to the current multibyte code page and returns **_NLSCMPERROR** on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise. These functions are affected by the locale setting—the versions that don't have the **_l** suffix use the current locale for their locale-dependent behavior; the versions that do have the **_l** suffix instead use the *locale* that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

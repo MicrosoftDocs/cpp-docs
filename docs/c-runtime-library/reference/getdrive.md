@@ -1,8 +1,8 @@
 ---
 title: "_getdrive"
-ms.date: "09/19/2019"
-api_name: ["_getdrive"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_getdrive", "_o__getdrive"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_getdrive", "getdrive"]
@@ -25,6 +25,10 @@ int _getdrive( void );
 ## Return Value
 
 Returns the current (default) drive (1=A, 2=B, and so on). A return value of zero means that the current path doesn't start with a letter drive name, such as a UNC path. Or, it means that an internal buffer allocation failed. If an internal allocation fails, `errno` is set to ENOMEM.
+
+## Remarks
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

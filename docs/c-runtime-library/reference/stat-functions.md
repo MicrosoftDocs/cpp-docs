@@ -1,8 +1,8 @@
 ---
 title: "_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32"
-ms.date: "11/04/2016"
-api_name: ["_wstat64", "_stati64", "_stat32", "_stat32i64", "_stat", "_wstati64", "_wstat32", "_wstat64i32", "_wstat", "_stat64", "_stat64i32", "_wstat32i64"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wstat64", "_stati64", "_stat32", "_stat32i64", "_stat", "_wstati64", "_wstat32", "_wstat64i32", "_wstat", "_stat64", "_stat64i32", "_wstat32i64", "_o__stat32", "_o__stat32i64", "_o__stat64", "_o__stat64i32", "_o__wstat32", "_o__wstat32i64", "_o__wstat64", "_o__wstat64i32"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tstat32", "tstat", "_tstat64i32", "tstati64", "_wstat64", "_wstat32", "wstati64", "tstat64", "_stati64", "_wstat", "wstat64i32", "stat32i64", "tstat32i64", "_tstat", "_wstati64", "_tstati64", "_wstat32i64", "wstat32", "_wstat64i32", "_stat", "_tstat32", "stat64i32", "wstat64", "stat", "_stat32i64", "_stat32", "stati64", "wstat", "_stat64i32", "stat32", "_tstat32i64", "tstat64i32", "_tstat64", "_stat64", "stat/_stat", "stat/_stat32", "stat/_stat64", "stat/_stati64", "stat/_stat32i64", "stat/_stat64i32", "stat/_wstat", "stat/_wstat32", "stat/_wstat64", "stat/_wstati64", "stat/_wstat32i64", "stat/_wstat64i32"]
@@ -96,6 +96,8 @@ Variations of these functions support 32- or 64-bit time types, and 32- or 64-bi
 > **_wstat** does not work with Windows Vista symbolic links. In these cases, **_wstat** will always report a file size of 0. **_stat** does work correctly with symbolic links.
 
 This function validates its parameters. If either *path* or *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Time Type and File Length Type Variations of _stat
 

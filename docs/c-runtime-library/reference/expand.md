@@ -1,8 +1,8 @@
 ---
 title: "_expand"
-ms.date: "11/04/2016"
-api_name: ["_expand"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_expand", "_o__expand"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_bexpand", "fexpand", "expand", "nexpand", "_fexpand", "_nexpand", "bexpand", "_expand"]
@@ -50,6 +50,8 @@ The **_expand** function changes the size of a previously allocated memory block
 When the application is linked with a debug version of the C run-time libraries, **_expand** resolves to [_expand_dbg](expand-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
 This function validates its parameters. If *memblock* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**. If *size* is greater than **_HEAP_MAXREQ**, **errno** is set to **ENOMEM** and the function returns **NULL**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

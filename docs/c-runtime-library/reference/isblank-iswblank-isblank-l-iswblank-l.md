@@ -1,8 +1,8 @@
 ---
 title: "isblank, iswblank, _isblank_l, _iswblank_l"
-ms.date: "11/04/2016"
-api_name: ["isblank", "_isblank_l", "iswblank", "_iswblank_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["isblank", "_isblank_l", "iswblank", "_iswblank_l", "_o_isblank", "_o_iswblank"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_iswblank_l", "isblank", "_istblank_l", "_istblank", "_isblank_l", "iswblank"]
@@ -53,6 +53,10 @@ The behavior of **isblank** and **_isblank_l** is undefined if *c* is not EOF or
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_istblank**|**isblank**|[_ismbcblank](ismbcgraph-functions.md)|**iswblank**|
 |**_istblank_l**|**_isblank_l**|[_ismbcblank_l](ismbcgraph-functions.md)|**_iswblank_l**|
+
+## Remarks
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

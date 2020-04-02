@@ -1,8 +1,8 @@
 ---
 title: "_pclose"
-ms.date: "11/04/2016"
-api_name: ["_pclose"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_pclose", "_o__pclose"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_pclose", "pclose"]
@@ -38,6 +38,8 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 ## Remarks
 
 The **_pclose** function looks up the process ID of the command processor (Cmd.exe) started by the associated **_popen** call, executes a [_cwait](cwait.md) call on the new command processor, and closes the stream on the associated pipe.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

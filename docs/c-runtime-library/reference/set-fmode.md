@@ -1,8 +1,8 @@
 ---
 title: "_set_fmode"
-ms.date: "11/04/2016"
-api_name: ["_set_fmode"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_set_fmode", "_o__set_fmode"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_set_fmode", "set_fmode"]
@@ -35,6 +35,8 @@ Returns zero if successful, an error code on failure. If *mode* is not **_O_TEXT
 The function sets the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations **_open** and **_pipe**.
 
 **_O_TEXT** and **_O_BINARY** are defined in Fcntl.h. **EINVAL** is defined in Errno.h.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

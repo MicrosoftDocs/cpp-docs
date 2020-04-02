@@ -1,8 +1,8 @@
 ---
 title: "_lock_file"
-ms.date: "11/04/2016"
-api_name: ["_lock_file"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_lock_file", "_o__lock_file"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_lock_file", "lock_file"]
@@ -27,6 +27,8 @@ File handle.
 ## Remarks
 
 The **_lock_file** function locks the **FILE** object specified by *file*. The underlying file is not locked by **_lock_file**. Use [_unlock_file](unlock-file.md) to release the lock on the file. Calls to **_lock_file** and **_unlock_file** must be matched in a thread.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

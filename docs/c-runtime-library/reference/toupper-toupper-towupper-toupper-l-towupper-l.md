@@ -1,8 +1,8 @@
 ---
 title: "toupper, _toupper, towupper, _toupper_l, _towupper_l"
-ms.date: "11/04/2016"
-api_name: ["_toupper_l", "towupper", "toupper", "_towupper_l", "_toupper"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_toupper_l", "towupper", "toupper", "_towupper_l", "_toupper", "_o__toupper", "_o__toupper_l", "_o__towupper_l", "_o_toupper", "_o_towupper"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["towupper", "_toupper", "_totupper", "toupper"]
@@ -60,6 +60,8 @@ Each of these routines converts a given lowercase letter to an uppercase letter 
 In order for **toupper** to give the expected results, [__isascii](isascii-isascii-iswascii.md) and [isupper](isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.
 
 [Data Conversion Routines](../../c-runtime-library/data-conversion.md)
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

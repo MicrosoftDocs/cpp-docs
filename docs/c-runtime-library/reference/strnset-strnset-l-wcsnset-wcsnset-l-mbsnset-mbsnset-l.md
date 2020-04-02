@@ -1,8 +1,8 @@
 ---
 title: "_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsnset", "_strnset", "_mbsnset_l", "_wcsnset_l", "_wcsnset", "_strnset_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_mbsnset", "_strnset", "_mbsnset_l", "_wcsnset_l", "_wcsnset", "_strnset_l", "_o__mbsnset", "_o__mbsnset_l", "_o__wcsnset"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsncset_l", "mbsnset_l", "_tcsnset_l", "_fstrnset", "_wcsnset_l", "_ftcsnset", "wcsnset_l", "_mbsnset_l", "_strnset", "_tcsnset", "_strnset_l", "mbsnset", "strnset_l", "_mbsnset", "_wcsnset", "_tcsncset"]
@@ -81,6 +81,8 @@ The **_strnset** function sets, at most, the first *count* characters of *str* t
 **_mbsnset** validates its parameters; if *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, **_mbsnset** returns **NULL** and sets **errno** to **EINVAL**. **_strnset** and **_wcsnset** do not validate their parameters.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

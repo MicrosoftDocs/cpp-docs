@@ -1,8 +1,8 @@
 ---
 title: "_makepath_s, _wmakepath_s"
-ms.date: "11/04/2016"
-api_name: ["_wmakepath_s", "_makepath_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_wmakepath_s", "_makepath_s", "_o__makepath_s", "_o__wmakepath_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wmakepath_s", "makepath_s", "_makepath_s", "wmakepath_s"]
@@ -89,6 +89,8 @@ If any of the above error conditions occurs, these functions invoke the invalid 
 ## Remarks
 
 The **_makepath_s** function creates a composite path string from individual components, storing the result in *path*. The *path* might include a drive letter, directory path, file name, and file name extension. **_wmakepath_s** is a wide-character version of **_makepath_s**; the arguments to **_wmakepath_s** are wide-character strings. **_wmakepath_s** and **_makepath_s** behave identically otherwise.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

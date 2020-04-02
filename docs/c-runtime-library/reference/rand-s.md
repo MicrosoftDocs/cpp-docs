@@ -1,8 +1,8 @@
 ---
 title: "rand_s"
-ms.date: "01/02/2018"
-api_name: ["rand_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["rand_s", "_o_rand_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["rand_s"]
@@ -34,6 +34,8 @@ The **rand_s** function writes a pseudorandom integer in the range 0 to **UINT_M
 The **rand_s** function requires that constant **_CRT_RAND_S** be defined prior to the inclusion statement for the function to be declared, as in the following example:
 
 ```C
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+
 #define _CRT_RAND_S
 #include <stdlib.h>
 ```

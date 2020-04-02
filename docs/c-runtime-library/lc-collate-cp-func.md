@@ -1,8 +1,8 @@
 ---
 title: "___lc_collate_cp_func"
-ms.date: "11/04/2016"
-api_name: ["___lc_collate_cp_func"]
-api_location: ["msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll"]
+ms.date: "4/2/2020"
+api_name: ["___lc_collate_cp_func", "_o____lc_collate_cp_func"]
+api_location: ["msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["___lc_collate_cp_func"]
@@ -28,6 +28,8 @@ The current collation code page of the thread.
 `___lc_collate_cp_func` is an internal CRT function that is used by other CRT functions to get the current collation code page from the thread local storage for CRT data. This information is also available by using the [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) function.
 
 Internal CRT functions are implementation-specific and subject to change with each release. We don't recommend their use in your code.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
 
 ## Requirements
 

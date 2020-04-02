@@ -1,8 +1,8 @@
 ---
 title: "mktime, _mktime32, _mktime64"
-ms.date: "11/04/2016"
-api_name: ["_mktime32", "mktime", "_mktime64"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mktime32", "mktime", "_mktime64", "_o__mktime32", "_o__mktime64"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mktime", "_mktime64"]
@@ -59,6 +59,8 @@ The C run-time library will determine the daylight savings time behavior from th
 Note that **gmtime** and **localtime** (and **_gmtime32**, **_gmtime64**, **_localtime32**, and **_localtime64**) use a single buffer per thread for the conversion. If you supply this buffer to **mktime**, **_mktime32** or **_mktime64**, the previous contents are destroyed.
 
 These functions validate their parameter. If *timeptr* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

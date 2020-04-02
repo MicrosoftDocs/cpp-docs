@@ -1,8 +1,8 @@
 ---
 title: "_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l"
-ms.date: "11/04/2016"
-api_name: ["_stricmp_l", "_mbsicmp", "_wcsicmp", "_mbsicmp_l", "_stricmp", "_wcsicmp_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_stricmp_l", "_mbsicmp", "_wcsicmp", "_mbsicmp_l", "_stricmp", "_wcsicmp_l", "_o__mbsicmp", "_o__mbsicmp_l", "_o__stricmp", "_o__stricmp_l", "_o__wcsicmp", "_o__wcsicmp_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftcsicmp", "_stricmp", "wcsicmp_l", "_wcsicmp", "_tcsicmp", "_strcmpi", "stricmp_l", "_mbsicmp", "_fstricmp", "mbsicmp_l", "mbsicmp"]
@@ -91,6 +91,8 @@ You will need to call [setlocale](setlocale-wsetlocale.md) for **_wcsicmp** to w
 
 ```C
 // crt_stricmp_locale.c
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+
 #include <string.h>
 #include <stdio.h>
 #include <locale.h>

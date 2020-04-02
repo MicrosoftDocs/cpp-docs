@@ -1,8 +1,8 @@
 ---
 title: "_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbclower", "_ismbclower_l", "_ismbcupper_l", "_ismbcupper"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbclower", "_ismbclower_l", "_ismbcupper_l", "_ismbcupper", "_o__ismbclower", "_o__ismbclower_l", "_o__ismbcupper", "_o__ismbcupper_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ismbcupper", "_ismbclower"]
@@ -59,6 +59,8 @@ The versions of these functions with the **_l** suffix are identical except that
 |**_ismbclower_l**|Lowercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*c*<=0x7A.|
 |**_ismbcupper**|Uppercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*c*<=0x5A.|
 |**_ismbcupper_l**|Uppercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*c*<=0x5A.|
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

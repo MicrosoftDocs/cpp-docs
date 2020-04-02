@@ -1,8 +1,8 @@
 ---
 title: "_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsspnp", "_wcsspnp", "_mbsspnp_l", "_strspnp"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbsspnp", "_wcsspnp", "_mbsspnp_l", "_strspnp", "_o__mbsspnp", "_o__mbsspnp_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsspnp", "_mbsspnp", "strspnp", "_ftcsspnp", "_mbsspnp_l", "wcsspnp", "mbsspnp_l", "_wcsspnp", "_strspnp", "mbsspnp"]
@@ -58,6 +58,8 @@ Locale to use.
 The **_mbsspnp** function returns a pointer to the multibyte character that is the first character in *str* that does not belong to the set of characters in *charset*. **_mbsspnp** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. The search does not include terminating null characters.
 
 If either *str* or *charset* is a null pointer, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **NULL** and sets **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

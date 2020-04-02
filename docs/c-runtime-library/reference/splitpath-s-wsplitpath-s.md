@@ -1,8 +1,8 @@
 ---
 title: "_splitpath_s, _wsplitpath_s"
-ms.date: "11/04/2016"
-api_name: ["_wsplitpath_s", "_splitpath_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_wsplitpath_s", "_splitpath_s", "_o__splitpath_s", "_o__wsplitpath_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wsplitpath_s", "splitpath_s", "_splitpath_s", "wsplitpath_s"]
@@ -110,6 +110,8 @@ If any of the buffers is too short to hold the result, these functions clear all
 ## Remarks
 
 The **_splitpath_s** function breaks a path into its four components. **_splitpath_s** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. **_wsplitpath_s** is a wide-character version of **_splitpath_s**; the arguments to **_wsplitpath_s** are wide-character strings. These functions behave identically otherwise
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -1,8 +1,8 @@
 ---
 title: "strtoull, _strtoull_l, wcstoull, _wcstoull_l"
-ms.date: "11/04/2016"
-api_name: ["_strtoull_l", "_wcstoull_l", "strtoull", "wcstoull"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_strtoull_l", "_wcstoull_l", "strtoull", "wcstoull", "_o__strtoull_l", "_o__wcstoull_l", "_o_strtoull", "_o_wcstoull"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wcstoull_l", "_tcstoull", "_tcstoull_l", "wcstoull", "_strtoull_l", "strtoull"]
@@ -69,6 +69,8 @@ Each of these functions converts the input string *strSource* to an **unsigned**
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location that's pointed to by *endptr*.
 
 **wcstoull** is a wide-character version of **strtoull** and its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

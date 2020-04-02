@@ -1,9 +1,9 @@
 ---
 title: "strerror, _strerror, _wcserror, __wcserror"
 description: "Describes the Microsoft C Runtime Library (CRT) functions strerror, _strerror, _wcserror, and __wcserror."
-ms.date: "01/07/2020"
-api_name: ["strerror", "_strerror", "_wcserror", "__wcserror"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["strerror", "_strerror", "_wcserror", "__wcserror", "_o___wcserror", "_o__strerror", "_o__wcserror", "_o_strerror"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["__sys_errlist", "wcserror", "_strerror", "__wcserror", "strerror", "__sys_nerr", "_tcserror", "_wcserror", "tcserror"]
@@ -60,6 +60,8 @@ The actual error number for **_strerror** is stored in the variable [errno](../.
 **_strerror**, **_wcserror**, and **__wcserror** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **strerror** instead.
 
 To get error strings, we recommend **strerror** or **_wcserror** instead of the deprecated macros [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and the deprecated internal functions **__sys_errlist** and **__sys_nerr**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-text routine mappings
 

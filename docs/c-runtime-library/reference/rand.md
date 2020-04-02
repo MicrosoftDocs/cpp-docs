@@ -1,8 +1,8 @@
 ---
 title: "rand"
-ms.date: "01/02/2018"
-api_name: ["rand"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["rand", "_o_rand"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["rand"]
@@ -27,6 +27,8 @@ int rand( void );
 The **rand** function returns a pseudorandom integer in the range 0 to **RAND_MAX** (32767). Use the [srand](srand.md) function to seed the pseudorandom-number generator before calling **rand**.
 
 The **rand** function generates a well-known sequence and is not appropriate for use as a cryptographic function. For more cryptographically secure random number generation, use [rand_s](rand-s.md) or the functions declared in the C++ Standard Library in [\<random>](../../standard-library/random.md). For information about what's wrong with **rand** and how \<random> addresses these shortcomings, see this video entitled [rand Considered Harmful](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64"
-ms.date: "11/04/2016"
-api_name: ["_utime64", "_utime", "_wutime", "_wutime64", "_wutime32", "_utime32"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_utime64", "_utime", "_wutime", "_wutime64", "_wutime32", "_utime32", "_o__utime32", "_o__utime64", "_o__wutime32", "_o__wutime64"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tutime", "_utime64", "wutime", "utime32", "wutime64", "_utime", "wutime32", "_wutime", "utime", "utime64", "_wutime64", "_utime32", "_tutime64", "_wutime32"]
@@ -81,6 +81,8 @@ Specific versions of the **_utimbuf** structure (**_utimebuf32** and **__utimbuf
 **_utime** is identical to **_futime** except that the *filename* argument of **_utime** is a filename or a path to a file, rather than a file descriptor of an open file.
 
 **_wutime** is a wide-character version of **_utime**; the *filename* argument to **_wutime** is a wide-character string. These functions behave identically otherwise.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

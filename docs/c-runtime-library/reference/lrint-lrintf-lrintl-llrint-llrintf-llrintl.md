@@ -1,8 +1,8 @@
 ---
 title: "lrint, lrintf, lrintl, llrint, llrintf, llrintl"
-ms.date: "04/05/2018"
-api_name: ["lrint", "lrintl", "lrintf", "llrint", "llrintf", "llrintl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["lrint", "lrintl", "lrintf", "llrint", "llrintf", "llrintl", "_o_llrint", "_o_llrintf", "_o_llrintl", "_o_lrint", "_o_lrintf", "_o_lrintl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["lrint", "lrintf", "lrintl", "llrint", "llrintf", "llrintl", "math/lrint", "math/lrintf", "math/lrintl", "math/llrint", "math/llrintf", "math/llrintl"]
@@ -77,6 +77,8 @@ Because C++ allows overloading, you can call overloads of **lrint** and **llrint
 If *x* does not represent the floating-point equivalent of an integral value, these functions raise **FE_INEXACT**.
 
 **Microsoft-specific**: When the result is outside the range of the return type, or when the parameter is a NaN or infinity, the return value is implementation defined. The Microsoft compiler returns a zero (0) value.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

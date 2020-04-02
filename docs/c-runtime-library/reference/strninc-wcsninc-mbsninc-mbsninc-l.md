@@ -1,8 +1,8 @@
 ---
 title: "_strninc, _wcsninc, _mbsninc, _mbsninc_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsninc", "_mbsninc_l", "_wcsninc", "_strninc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbsninc", "_mbsninc_l", "_wcsninc", "_strninc", "_o__mbsninc", "_o__mbsninc_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strninc", "wcsninc", "mbsninc_l", "_strninc", "_tcsninc", "mbsninc", "_mbsninc_l", "_ftcsninc", "_wcsninc", "_mbsninc"]
@@ -56,6 +56,8 @@ Each of these routines returns a pointer to *str* after *str* has been increment
 ## Remarks
 
 The **_mbsninc** function increments *str* by *count* multibyte characters. **_mbsninc** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

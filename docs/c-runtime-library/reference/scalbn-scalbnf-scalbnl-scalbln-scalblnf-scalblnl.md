@@ -1,8 +1,8 @@
 ---
 title: "scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl"
-ms.date: "04/05/2018"
-api_name: ["scalblnl", "scalbnl", "scalbnf", "scalblnf", "scalbn", "scalbln"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["scalblnl", "scalbnl", "scalbnf", "scalblnf", "scalbn", "scalbln", "_o_scalbln", "_o_scalblnf", "_o_scalblnl", "_o_scalbn", "_o_scalbnf", "_o_scalbnl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["scalblnf", "scalbnl", "scalblnl", "scalbln", "scalbn", "scalbnf"]
@@ -77,6 +77,8 @@ For more information about **errno** and possible error return values, see [errn
 **FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [ldexp](ldexp.md).
 
 Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **float** or **long** **double** types. In a C program, **scalbn** always takes a **double** and an **int** and returns a **double**, and **scalbln** always takes a **double** and a **long** and returns a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

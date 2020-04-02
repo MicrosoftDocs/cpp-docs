@@ -1,8 +1,8 @@
 ---
 title: "_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbckata", "_ismbchira_l", "_ismbchira", "_ismbckata_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbckata", "_ismbchira_l", "_ismbchira", "_ismbckata_l", "_o__ismbchira", "_o__ismbchira_l", "_o__ismbckata", "_o__ismbckata_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ismbckata_l", "_ismbckata_l", "ismbckata", "ismbchira", "_ismbckata", "ismbchira_l", "_ismbchira_l", "_ismbchira"]
@@ -61,6 +61,8 @@ The versions of these functions with the **_l** suffix are identical except that
 |**_ismbckata_l**|Double-byte katakana: 0x8340<=*c*<=0x8396.|
 
 **End Code Page 932 Specific**
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl"
-ms.date: "04/05/2018"
-api_name: ["_hypotf", "hypot", "hypotf", "_hypot", "_hypotl", "hypotl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_hypotf", "hypot", "hypotf", "_hypot", "_hypotl", "hypotl", "_o__hypot", "_o__hypotf", "_o_hypot"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["hypotf", "hypotl", "_hypotl", "hypot", "_hypot", "_hypotf"]
@@ -58,6 +58,8 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 The **hypot** functions calculate the length of the hypotenuse of a right triangle, given the length of the two sides *x* and *y* (in other words, the square root of *x*<sup>2</sup> + *y*<sup>2</sup>).
 
 The versions of the functions that have leading underscores are provided for compatibility with earlier standards. Their behavior is identical to the versions that don't have leading underscores. We recommend using the versions without leading underscores for new code.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

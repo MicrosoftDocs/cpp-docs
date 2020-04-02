@@ -1,8 +1,8 @@
 ---
 title: "localtime_s, _localtime32_s, _localtime64_s"
-ms.date: "07/09/2019"
-api_name: ["_localtime64_s", "_localtime32_s", "localtime_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_localtime64_s", "_localtime32_s", "localtime_s", "_o__localtime32_s", "_o__localtime64_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_localtime32_s", "localtime32_s", "localtime_s", "localtime64_s", "_localtime64_s"]
@@ -80,6 +80,8 @@ The fields of the structure type [tm](../../c-runtime-library/standard-types.md)
 |**tm_isdst**|Positive value if daylight saving time is in effect; 0 if daylight saving time is not in effect; negative value if status of daylight saving time is unknown.|
 
 If the **TZ** environment variable is set, the C run-time library assumes rules appropriate to the United States for implementing the calculation of daylight saving time (DST).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

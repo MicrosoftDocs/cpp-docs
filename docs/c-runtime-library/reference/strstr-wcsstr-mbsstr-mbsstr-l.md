@@ -1,8 +1,8 @@
 ---
 title: "strstr, wcsstr, _mbsstr, _mbsstr_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsstr", "wcsstr", "_mbsstr_l", "strstr"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_mbsstr", "wcsstr", "_mbsstr_l", "strstr", "_o__mbsstr", "_o__mbsstr_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fstrstr", "_ftcsstr", "strstr", "wcsstr", "_mbsstr", "_tcsstr"]
@@ -97,6 +97,8 @@ The `strstr` function returns a pointer to the first occurrence of *strSearch* i
 In C, these functions take a **const** pointer for the first argument. In C++, two overloads are available. The overload that takes a pointer to **const** returns a pointer to **const**; the version that takes a pointer to non-**const** returns a pointer to non-**const**. The macro _CRT_CONST_CORRECT_OVERLOADS is defined if both the **const** and non-**const** versions of these functions are available. If you require the non-**const** behavior for both C++ overloads, define the symbol _CONST_RETURN.
 
 The output value is affected by the locale-category setting of LC_CTYPE; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The versions of these functions that do not have the **_l** suffix use the current locale for this locale-dependent behavior; the versions that have the **_l** suffix are identical except that they instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -1,8 +1,8 @@
 ---
 title: "gets, _getws"
-ms.date: "11/04/2016"
-api_name: ["_getws", "gets"]
-api_location: ["msvcr80.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr100.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_getws", "gets", "_o__getws", "_o_gets"]
+api_location: ["msvcr80.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr100.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_getts", "gets", "_getws"]
@@ -55,6 +55,8 @@ The `gets` function reads a line from the standard input stream `stdin` and stor
 > Because there is no way to limit the number of characters read by gets, untrusted input can easily cause buffer overruns. Use `fgets` instead.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../c-runtime-library/secure-template-overloads.md).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
 
 ### Generic-Text Routine Mappings
 

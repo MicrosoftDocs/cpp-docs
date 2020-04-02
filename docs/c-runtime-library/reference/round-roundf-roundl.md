@@ -1,8 +1,8 @@
 ---
 title: "round, roundf, roundl"
-ms.date: "04/05/2018"
-api_name: ["round", "roundl", "roundf"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["round", "roundl", "roundf", "_o_round", "_o_roundf", "_o_roundl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["roundf", "roundl", "round"]
@@ -49,6 +49,8 @@ The **round** functions return a floating-point value that represents the neares
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **round** that take and return **float** and **long** **double** values. In a C program, **round** always takes and returns a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

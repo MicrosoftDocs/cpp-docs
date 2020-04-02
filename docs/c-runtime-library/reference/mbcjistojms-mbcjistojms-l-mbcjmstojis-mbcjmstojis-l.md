@@ -1,8 +1,8 @@
 ---
 title: "_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l"
-ms.date: "11/04/2016"
-api_name: ["_mbcjistojms", "_mbcjmstojis", "_mbcjistojms_l", "_mbcjmstojis_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbcjistojms", "_mbcjmstojis", "_mbcjistojms_l", "_mbcjmstojis_l", "_o__mbcjistojms", "_o__mbcjistojms_l", "_o__mbcjmstojis", "_o__mbcjmstojis_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbcjistojms", "_mbcjistojms", "_mbcjistojms_l", "_mbcjmstojis_l", "_mbcjmstojis", "mbcjmstojis_l", "mbcjistojms_l", "mbcjmstojis"]
@@ -58,6 +58,8 @@ The value *c* should be a 16-bit value whose upper 8 bits represent the lead byt
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In earlier versions, **_mbcjistojms** and **_mbcjmstojis** were called **jistojms** and **jmstojis**, respectively. **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** and **_mbcjmstojis_l** should be used instead.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

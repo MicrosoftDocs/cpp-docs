@@ -1,8 +1,8 @@
 ---
 title: "strftime, wcsftime, _strftime_l, _wcsftime_l"
-ms.date: "03/22/2018"
-api_name: ["strftime", "_wcsftime_l", "_strftime_l", "wcsftime"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["strftime", "_wcsftime_l", "_strftime_l", "wcsftime", "_o__strftime_l", "_o__wcsftime_l", "_o_strftime", "_o_wcsftime"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsftime", "strftime", "wcsftime", "_strftime_l", "_wcsftime_l"]
@@ -74,6 +74,8 @@ The number of characters in *strDest* is equal to the number of literal characte
 The **strftime** and **wcsftime** functions format the **tm** time value in *timeptr* according to the supplied *format* argument and store the result in the buffer *strDest*. At most, *maxsize* characters are placed in the string. For a description of the fields in the *timeptr* structure, see [asctime](asctime-wasctime.md). **wcsftime** is the wide-character equivalent of **strftime**; its string-pointer argument points to a wide-character string. These functions behave identically otherwise.
 
 This function validates its parameters. If *strDest*, *format*, or *timeptr* is a null pointer, or if the **tm** data structure addressed by *timeptr* is invalid (for example, if it contains out of range values for the time or date), or if the *format* string contains an invalid formatting code, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

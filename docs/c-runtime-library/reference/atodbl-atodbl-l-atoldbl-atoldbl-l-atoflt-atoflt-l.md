@@ -1,8 +1,8 @@
 ---
 title: "_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l"
-ms.date: "04/05/2018"
-api_name: ["_atoldbl", "_atoldbl_l", "_atodbl", "_atoflt", "_atoflt_l", "_atodbl_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_atoldbl", "_atoldbl_l", "_atodbl", "_atoflt", "_atoflt_l", "_atodbl_l", "_o__atodbl", "_o__atodbl_l", "_o__atoflt", "_o__atoflt_l", "_o__atoldbl", "_o__atoldbl_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_atoflt", "_atoflt_l", "atodbl_l", "atoflt_l", "_atoldbl", "_atoldbl_l", "atodbl", "_atodbl_l", "atoldbl", "atoflt", "atoldbl_l", "_atodbl"]
@@ -46,6 +46,8 @@ These functions convert a string to a floating-point value. The difference betwe
 If a string does not have a valid interpretation as a floating-point value, *value* is set to zero and the return value is zero.
 
 The versions of these functions that have the **_l** suffix are identical the versions that don't have the suffix, except that they use the *locale* parameter that's passed in instead of the current thread locale.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64"
-ms.date: "11/04/2016"
-api_name: [_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: [_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64, "_o__findnext32", "_o__findnext32i64", "_o__findnext64", "_o__findnext64i32", "_o__wfindnext32", "_o__wfindnext32i64", "_o__wfindnext64", "_o__wfindnext64i32"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["findnext", "_wfindnext32i64", "_tfindnext64i32", "findnext32", "findnext32i64", "wfindnext64i32", "_wfindnext", "tfindnext64", "findnexti64", "_findnexti64", "_tfindnexti64", "_findnext64i32", "tfindnexti64", "tfindnext32", "_wfindnext64i32", "findnext64i32", "_findnext", "_tfindnext32i64", "_wfindnext64", "wfindnext", "wfindnext32", "tfindnext32i64", "_findnext64", "_tfindnext64", "_wfindnext32", "findnext64", "_findnext32i64", "tfindnext", "wfindnexti64", "tfindnext64i32", "_tfindnext32", "wfindnext32i64", "wfindnext64", "_wfindnexti64", "_tfindnext", "_findnext32"]
@@ -95,6 +95,8 @@ The variations of these functions with the **w** prefix are wide-character versi
 Variations of these functions support 32-bit or 64-bit time types and 32-bit or 64-bit file sizes. The first numerical suffix (**32** or **64**) indicates the size of the time type used; the second suffix is either **i32** or **i64**, indicating whether the file size is represented as a 32-bit or 64-bit integer. For information about which versions support 32-bit and 64-bit time types and file sizes, see the following table. The variations that use a 64-bit time type allow file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas those using 32-bit time types only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
 Unless you have a specific reason to use the versions that specify the time size explicitly, use **_findnext** or **_wfindnext** or, if you need to support file sizes greater than 3 GB, use **_findnexti64** or **_wfindnexti64**. All these functions use the 64-bit time type. In previous versions, these functions used a 32-bit time type. If this is a breaking change for an application, you might define **_USE_32BIT_TIME_T** to get the old behavior. If **_USE_32BIT_TIME_T** is defined, **_findnext**, **_finnexti64** and their corresponding Unicode versions use a 32-bit time.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Time Type and File Length Type Variations of _findnext
 

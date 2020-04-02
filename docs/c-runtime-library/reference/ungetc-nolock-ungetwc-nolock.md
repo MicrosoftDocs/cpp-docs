@@ -1,8 +1,8 @@
 ---
 title: "_ungetc_nolock, _ungetwc_nolock"
-ms.date: "11/04/2016"
-api_name: ["_ungetwc_nolock", "_ungetc_nolock"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ungetwc_nolock", "_ungetc_nolock", "_o__ungetc_nolock", "_o__ungetwc_nolock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ungettc_nolock", "ungetwc_nolock", "ungetc_nolock", "_ungetc_nolock", "_ungetwc_nolock"]
@@ -43,6 +43,8 @@ For information on these and other error codes, see [_doserrno, errno, _sys_errl
 ## Remarks
 
 These functions are non-locking versions of **ungetc** and **ungetwc**. The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

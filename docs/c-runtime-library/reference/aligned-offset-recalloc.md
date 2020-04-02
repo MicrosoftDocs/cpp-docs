@@ -1,8 +1,8 @@
 ---
 title: "_aligned_offset_recalloc"
-ms.date: "11/04/2016"
-api_name: ["_aligned_offset_recalloc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_aligned_offset_recalloc", "_o__aligned_offset_recalloc"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["aligned_offset_recalloc", "_aligned_offset_recalloc"]
@@ -55,6 +55,8 @@ Like [_aligned_offset_malloc](aligned-offset-malloc.md), **_aligned_offset_recal
 **_aligned_offset_recalloc** is based on **malloc**. For more information about using **_aligned_offset_malloc**, see [malloc](malloc.md). If *memblock* is **NULL**, the function calls **_aligned_offset_malloc** internally.
 
 This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size (*number* * *size*) was greater than **_HEAP_MAXREQ**. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_offset_recalloc** validates its parameters. If *alignment* is not a power of 2 or if *offset* is greater than or equal to the requested size and nonzero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "fma, fmaf, fmal"
-ms.date: "04/05/2018"
-api_name: ["fma", "fmaf", "fmal"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["fma", "fmaf", "fmal", "_o_fma", "_o_fmaf", "_o_fmal"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fma", "fmaf", "fmal", "math/fma", "math/fmaf", "math/fmal"]
@@ -80,6 +80,8 @@ Errors are reported as specified in [_matherr](matherr.md).
 Because C++ allows overloading, you can call overloads of **fma** that take and return **float** and **long** **double** types. In a C program, **fma** always takes and returns a **double**.
 
 This function computes the value as though it were taken to infinite precision, and then rounds the final result.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

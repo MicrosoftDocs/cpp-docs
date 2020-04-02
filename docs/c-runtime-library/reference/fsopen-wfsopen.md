@@ -1,8 +1,8 @@
 ---
 title: "_fsopen, _wfsopen"
-ms.date: "11/04/2016"
-api_name: ["_wfsopen", "_fsopen"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wfsopen", "_fsopen", "_o__fsopen", "_o__wfsopen"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wfsopen", "fsopen", "tfsopen", "_tfsopen", "_wfsopen", "_fsopen"]
@@ -84,6 +84,8 @@ The argument *shflag* is a constant expression consisting of one of the followin
 |**_SH_DENYRD**|Denies read access to the file.|
 |**_SH_DENYRW**|Denies read and write access to the file.|
 |**_SH_DENYWR**|Denies write access to the file.|
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

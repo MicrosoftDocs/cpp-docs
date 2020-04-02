@@ -1,8 +1,8 @@
 ---
 title: "fclose, _fcloseall"
-ms.date: "11/04/2016"
-api_name: ["fclose", "_fcloseall"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["fclose", "_fcloseall", "_o__fcloseall", "_o_fclose"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fclose", "_fcloseall"]
@@ -42,6 +42,8 @@ The **_fcloseall** function closes all open streams except **stdin**, **stdout**
 **Note:** When these functions are used to close a stream, the underlying file descriptor and OS file handle (or socket) are closed, as well as the stream. Thus, if the file was originally opened as a file handle or file descriptor and is closed with **fclose**, do not also call **_close** to close the file descriptor; do not call the Win32 function **CloseHandle** to close the file handle.
 
 **fclose** and **_fcloseall** include code to protect against interference from other threads. For non-locking version of a **fclose**, see **_fclose_nolock**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

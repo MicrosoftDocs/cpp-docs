@@ -1,9 +1,9 @@
 ---
 title: "_popen, _wpopen"
 description: "A reference for the Microsoft C runtime (CRT) library functions _popen and _wpopen."
-ms.date: "01/28/2020"
-api_name: ["_popen", "_wpopen"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_popen", "_wpopen", "_o__popen", "_o__wpopen"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tpopen", "popen", "wpopen", "_popen", "_wpopen", "_tpopen"]
@@ -60,6 +60,8 @@ The **_popen** function creates a pipe. It then asynchronously executes a spawne
 > If used in a Windows program, the **_popen** function returns an invalid file pointer that causes the program to stop responding indefinitely. **_popen** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
 
 **_wpopen** is a wide-character version of **_popen**; the *path* argument to **_wpopen** is a wide-character string. **_wpopen** and **_popen** behave identically otherwise.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

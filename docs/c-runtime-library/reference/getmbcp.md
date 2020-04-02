@@ -1,8 +1,8 @@
 ---
 title: "_getmbcp"
-ms.date: "11/04/2016"
-api_name: ["_getmbcp"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_getmbcp", "_o__getmbcp"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_getmbcp", "getmbcp"]
@@ -22,6 +22,10 @@ int _getmbcp( void );
 ## Return Value
 
 Returns the current multibyte code page. A return value of 0 indicates that a single byte code page is in use.
+
+## Remarks
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

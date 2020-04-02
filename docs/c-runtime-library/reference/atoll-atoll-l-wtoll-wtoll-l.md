@@ -1,8 +1,8 @@
 ---
 title: "atoll, _atoll_l, _wtoll, _wtoll_l"
-ms.date: "11/04/2016"
-api_name: ["_wtoll", "_atoll_l", "_wtoll_l", "atoll"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wtoll", "_atoll_l", "_wtoll_l", "atoll", "_o__atoll_l", "_o__wtoll", "_o__wtoll_l", "_o_atoll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tstoll_l", "_wtoll", "_atoll_l", "_ttoll", "_tstoll", "_wtoll_l", "atoll"]
@@ -63,6 +63,8 @@ A *whitespace* consists of space or tab characters, which are ignored; *sign* is
 **_wtoll** is identical to **atoll** except that it takes a wide character string as a parameter.
 
 The versions of these functions that have the **_l** suffix are identical to the versions that don't have it, except that they use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -1,8 +1,8 @@
 ---
 title: "_fpclass, _fpclassf"
-ms.date: "04/05/2018"
-api_name: ["_fpclass", "_fpclassf"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_fpclass", "_fpclassf", "_o__fpclass"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fpclass", "_fpclass", "_fpclassf", "math/_fpclass", "float/_fpclass", "math/_fpclassf"]
@@ -50,6 +50,8 @@ The **_fpclass** and **_fpclassf** functions return an integer value that indica
 ## Remarks
 
 The **_fpclass** and **_fpclassf** functions are Microsoft-specific. They are similar to [fpclassify](fpclassify.md), but return more detailed information about the argument. The **_fpclassf** function is only available when compiled for the x64 platform.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

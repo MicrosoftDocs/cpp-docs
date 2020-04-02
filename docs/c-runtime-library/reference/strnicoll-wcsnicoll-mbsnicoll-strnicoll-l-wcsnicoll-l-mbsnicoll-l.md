@@ -1,8 +1,8 @@
 ---
 title: "_strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsnicoll_l", "_mbsnicoll", "_wcsnicoll_l", "_strnicoll", "_strnicoll_l", "_wcsnicoll"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbsnicoll_l", "_mbsnicoll", "_wcsnicoll_l", "_strnicoll", "_strnicoll_l", "_wcsnicoll", "_o__mbsnicoll", "_o__mbsnicoll_l", "_o__strnicoll", "_o__strnicoll_l", "_o__wcsnicoll", "_o__wcsnicoll_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wcshicoll_l", "_ftcsncicoll", "strnicoll_l", "_wcsnicoll", "mbsnicoll_l", "_strnicoll", "mbsnicoll", "_ftcsnicoll", "wcsnicoll", "_tcsnicoll", "_mbsnicoll", "strinicoll", "_tcsncicoll"]
@@ -82,6 +82,8 @@ Each of these functions returns **_NLSCMPERROR**. To use **_NLSCMPERROR**, inclu
 Each of these functions performs a case-insensitive comparison of the first *count* characters in *string1* and *string2* according to the code page. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the code page and this difference is of interest for the string comparison. The versions of these functions without the **_l** suffix use the current locale and code page. The versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, or if count is greater than **INT_MAX**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

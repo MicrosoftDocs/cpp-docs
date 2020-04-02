@@ -1,8 +1,8 @@
 ---
 title: "_cputs, _cputws"
-ms.date: "11/04/2016"
-api_name: ["_cputws", "_cputs"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_cputws", "_cputs", "_o__cputs", "_o__cputws"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cputws", "_cputs", "_cputws"]
@@ -41,6 +41,8 @@ If successful, **_cputs** returns 0. If the function fails, it returns a nonzero
 The **_cputs** function writes the null-terminated string that's pointed to by *str* directly to the console. A carriage return-line feed (CR-LF) combination is not automatically appended to the string.
 
 This function validates its parameter. If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and -1 is returned.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

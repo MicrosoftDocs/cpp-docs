@@ -1,8 +1,8 @@
 ---
 title: "_CIcos"
-ms.date: "04/11/2018"
-api_name: ["_CIcos"]
-api_location: ["msvcr90.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_CIcos", "_o__CIcos"]
+api_location: ["msvcr90.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CIcos", "_CIcos"]
@@ -24,6 +24,8 @@ void __cdecl _CIcos();
 This version of the [cos](../c-runtime-library/reference/cos-cosf-cosl.md) function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.
 
 The resulting value is pushed onto the top of the floating-point stack.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
 
 ## Requirements
 

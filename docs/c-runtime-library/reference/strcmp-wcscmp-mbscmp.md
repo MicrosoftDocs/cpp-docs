@@ -1,8 +1,8 @@
 ---
 title: "strcmp, wcscmp, _mbscmp, _mbscmp_l"
-ms.date: "01/22/2019"
-api_name: ["wcscmp", "_mbscmp", "_mbscmp_l", "strcmp"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["wcscmp", "_mbscmp", "_mbscmp_l", "strcmp", "_o__mbscmp", "_o__mbscmp_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbscmp", "_mbscmp_l", "wcscmp", "strcmp", "_tcscmp", "_ftcscmp"]
@@ -61,6 +61,8 @@ On a parameter validation error, **_mbscmp** and **_mbscmp_l** return **_NLSCMPE
 ## Remarks
 
 The **strcmp** function performs an ordinal comparison of *string1* and *string2* and returns a value that indicates their relationship. **wcscmp** and **_mbscmp** are, respectively, wide-character and multibyte-character versions of **strcmp**. **_mbscmp** recognizes multibyte-character sequences according to the current multibyte code page and returns **_NLSCMPERROR** on an error. **_mbscmp_l** has the same behavior, but uses the locale parameter that's passed in instead of the current locale. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *string1* or *string2* is a null pointer, **_mbscmp** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbscmp** and **_mbscmp_l** return **_NLSCMPERROR** and set **errno** to **EINVAL**. **strcmp** and **wcscmp** do not validate their parameters. These functions behave identically otherwise.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

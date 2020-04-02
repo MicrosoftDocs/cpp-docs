@@ -1,8 +1,8 @@
 ---
 title: "_free_locale"
-ms.date: "11/04/2016"
-api_name: ["_free_locale"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_free_locale", "_o__free_locale"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["__free_locale", "free_locale", "_free_locale"]
@@ -31,6 +31,8 @@ Locale object to free.
 The **_free_locale** function is used to free the locale object obtained from a call to **_get_current_locale** or **_create_locale**.
 
 The previous name of this function, **__free_locale** (with two leading underscores) has been deprecated.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

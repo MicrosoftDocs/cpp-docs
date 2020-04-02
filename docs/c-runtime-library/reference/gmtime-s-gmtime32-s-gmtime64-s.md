@@ -1,8 +1,8 @@
 ---
 title: "gmtime_s, _gmtime32_s, _gmtime64_s"
-ms.date: "11/04/2016"
-api_name: ["_gmtime32_s", "gmtime_s", "_gmtime64_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_gmtime32_s", "gmtime_s", "_gmtime64_s", "_o__gmtime32_s", "_o__gmtime64_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_gmtime_s", "gmtime64_s", "gmtime32_s", "_gmtime64_s", "gmtime_s", "_gmtime32_s"]
@@ -76,6 +76,8 @@ Each of the structure fields is of type **int**, as shown in the following table
 **_gmtime64_s**, which uses the **__time64_t** structure, allows dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas **gmtime32_s** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both these functions.
 
 **gmtime_s** is an inline function which evaluates to **_gmtime64_s** and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. Doing this will cause **gmtime_s** to be in-lined to **_gmtime32_s**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

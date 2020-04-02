@@ -1,8 +1,8 @@
 ---
 title: "_searchenv, _wsearchenv"
-ms.date: "11/04/2016"
-api_name: ["_searchenv", "_wsearchenv"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_searchenv", "_wsearchenv", "_o__searchenv", "_o__wsearchenv"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wsearchenv", "_tsearchenv", "wsearchenv", "_searchenv", "searchenv"]
@@ -71,6 +71,8 @@ If *filename* or *pathname* is a **NULL** pointer, the invalid parameter handler
 For more information about **errno** and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).
 
 In C++, these functions have template overloads that invoke the newer, more secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

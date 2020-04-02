@@ -1,8 +1,8 @@
 ---
 title: "erf, erff, erfl, erfc, erfcf, erfcl"
-ms.date: "01/31/2019"
-api_name: ["erff", "erfl", "erf", "erfc", "erfcf", "erfcl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["erff", "erfl", "erf", "erfc", "erfcf", "erfcl", "_o_erf", "_o_erfc", "_o_erfcf", "_o_erfcl", "_o_erff", "_o_erfl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["erfl", "erf", "erff", "erfc", "erfcf", "erfcl"]
@@ -66,6 +66,8 @@ The **erf** functions calculate the Gauss error function of *x*, which is define
 The complementary Gauss error function is defined as 1 - erf(x). The **erf** functions return a value in the range -1.0 to 1.0. There is no error return. The **erfc** functions return a value in the range 0 to 2. If *x* is too large for **erfc**, the **errno** variable is set to **ERANGE**.
 
 Because C++ allows overloading, you can call overloads of **erf** and **erfc** that take and return **float** and **long** **double** types. In a C program, **erf** and **erfc** always take and return a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

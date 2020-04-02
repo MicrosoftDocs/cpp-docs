@@ -1,8 +1,8 @@
 ---
 title: "isgraph, iswgraph, _isgraph_l, _iswgraph_l"
-ms.date: "11/04/2016"
-api_name: ["isgraph", "iswgraph", "_iswgraph_l", "_isgraph_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["isgraph", "iswgraph", "_iswgraph_l", "_isgraph_l", "_o_isgraph", "_o_iswgraph"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_isgraph_l", "_iswgraph_l", "Isgraph", "_istgraph_l", "_istgraph", "iswgraph"]
@@ -51,6 +51,10 @@ The behavior of **isgraph** and **_isgraph_l** is undefined if *c* is not EOF or
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_istgraph**|**isgraph**|[_ismbcgraph](ismbcgraph-functions.md)|**iswgraph**|
 |**_istgraph_l**|**_isgraph_l**|[_ismbcgraph_l](ismbcgraph-functions.md)|**_iswgraph_l**|
+
+## Remarks
+
+By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
 
 ## Requirements
 

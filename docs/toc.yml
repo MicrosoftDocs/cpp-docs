@@ -6577,6 +6577,8 @@
                   href: c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md
                 - name: CRT initialization
                   href: c-runtime-library/crt-initialization.md
+                - name: Global state in the CRT
+                  href: c-runtime-library/global-state.md 
             - name: Universal C runtime routines by category
               expanded: false
               items: 
