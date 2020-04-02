@@ -113,7 +113,7 @@ To link to an external file, use the full URL as the link. Use HTTPS URL if appl
 
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
-- Example: https://www.github.com
+- Example: <https://www.github.com>
 
 ### Links to APIs
 
