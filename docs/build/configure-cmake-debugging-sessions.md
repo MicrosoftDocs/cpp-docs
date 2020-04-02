@@ -8,7 +8,7 @@ helpviewer_keywords: ["CMake debugging"]
 
 ::: moniker range="vs-2015"
 
-Native CMake support is available in Visual Studio 2017 and later.
+Native CMake support is available in Visual Studio 2017 and later. To see the documentation for those versions, use the **Version** selector on this page and choose Visual Studio 2017 or 2019.
 
 ::: moniker-end
 
