@@ -83,14 +83,14 @@ There are many *launch.vs.json* properties to support all your debugging scenari
 
 ## Launch.vs.json reference for remote projects and WSL
 
-In Visual Studio 2019 version 16.6 we added a new debug configuration of `type: cppgdb` to simplify debugging with **gdb** and **gdbserver** on remote systems and WSL. Old debug configurations of `type: cppdbg` are still supported.
+In Visual Studio 2019 version 16.6 we added a new debug configuration of `type: cppgdb` to simplify debugging on remote systems and WSL. Old debug configurations of `type: cppdbg` are still supported.
 
 ### Configuration type `cppgdb`
 
 - `name`: A friendly name to identify the configuration in the **Startup Item** dropdown.
 - `project`: Specifies the relative path to the project file. You shouldn't need to change this when debugging a CMake project.
 - `projectTarget`: Specifies the CMake target to invoke when building the project. Visual Studio autopopulates this property if you enter *launch.vs.json* from the **Debug Menu** or **Targets View**. This value must match the name of an existing debug target listed in the **Startup Item** dropdown.
-- `debuggerConfiguration`: Indicates which set of debugging default values to use. Valid options are **gdb** and **gdbserver**.
+- `debuggerConfiguration`: Indicates which set of debugging default values to use. In Visual Studio 2019 version 16.6, the only valid option is **gdb**.
 - `args`: Command-line arguments passed on startup to the program being debugged.
 - `env`: Additional environment variables passed to the program being debugged. For example, `{"DISPLAY": "0.0"}`.
 - `processID`: Linux process ID to attach to. Only used when attaching to a remote process. For more information, see [Troubleshoot attaching to processes using GDB](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
@@ -103,18 +103,9 @@ In Visual Studio 2019 version 16.6 we added a new debug configuration of `type: 
 - `gdbpath`: Defaults to `/usr/bin/gdb`. Full Unix path to the gdb used to debug. Only required if using a custom version of gdb.
 - `preDebugCommand`: A Linux command to run immediately before invoking gdb. Gdb will not start until it completes. You can use this to run a script before the execution of gdb.
 
-#### Additional options allowed with the `gdbserver` configuration
-
-- `program`: Defaults to `"${debugInfo.fullTargetPath}"`. The Unix path to the application to debug. Only required if different than the target executable in the build or deploy location.
-- `remoteMachineName`:  Defaults to `"${debugInfo.remoteMachineName}"`. Name of the remote system that hosts the program to debug. Only required if different than the build system. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
-- `cwd`: Defaults to `"${debugInfo.defaultWorkingDirectory}"`. Full Unix path to the directory on the remote system where `program` is run. The directory must exist.
-- `gdbPath`: Defaults to `${debugInfo.vsInstalledGdb}`. Full Windows path to the gdb used to debug. Defaults to the gdb installed with the Linux development with C/C++ workload.
-- `gdbserverPath`: Defaults to `usr/bin/gdbserver`. Full Unix path to the gdbserver used to debug.
-- `preDebugCommand`: A Linux command to run immediately before starting gdbserver. Gdbserver will not start until it completes.
-
 #### Deployment options
 
-Use the following options to separate your build machine (defined in CMakeSettings.json) from your remote debug machine. These options apply to both `gdb` and `gdbserver` configurations.
+Use the following options to separate your build machine (defined in CMakeSettings.json) from your remote debug machine. 
 
 - `remoteMachineName`: Remote debug machine. Only required if different than the build machine. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
 - `disableDeploy`: Defaults to `false`. Indicates whether build/debug separation is disabled. When `false`, this option allows build and debug to occur on two separate machines.
@@ -211,6 +202,9 @@ The following options can be used when debugging on a remote system or WSL using
 - `miDebuggerPath`: The full path to gdb. When unspecified, Visual Studio searches PATH first for the debugger.
 
 - Finally, all of the deployment options defined for the `cppgdb` configuration type can be used with the `cppdbg` configuration type as well.
+
+### Debugging with gdbserver 
+You can configure the `cppdbg` configuration to debug with gdbserver. More details and a sample launch configuration can be found [here](https://devblogs.microsoft.com/cppblog/debugging-linux-cmake-projects-with-gdbserver/). 
 
 ::: moniker-end
 
