@@ -22,6 +22,8 @@ The walkthrough shows how to use Windows Installer to deploy your application. Y
 
 The steps in this section vary depending on which version of Visual Studio you have installed. Make sure the version selector in the upper left of this page is set correctly.
 
+<!-- markdownlint-disable MD034 -->
+
 ::: moniker range="vs-2019"
 
 ### To install the setup and deployment project template for Visual Studio 2019
@@ -44,7 +46,7 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 1. In **Solution Explorer**, select the **Game Installer** project and choose **View** > **Properties Window** or hit **F4** to open the **Properties** window.
 
-1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *http\://www.contoso.com* for **SupportUrl**.
+1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *https\://www.contoso.com* for **SupportUrl**.
 
 1. On the menu bar, choose **Build** > **Configuration Manager**. In the **Project** table, under the **Build** column, check the box for **Game Installer**. Click **Close**.
 
@@ -86,7 +88,7 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 1. In **Solution Explorer**, select the **Game Installer** project and choose **View** > **Properties Window** or hit **F4** to open the **Properties** window.
 
-1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *http\://www.contoso.com* for **SupportUrl**.
+1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *https\://www.contoso.com* for **SupportUrl**.
 
 1. On the menu bar, choose **Build** > **Configuration Manager**. In the **Project** table, under the **Build** column, check the box for **Game Installer**. Click **Close**.
 
