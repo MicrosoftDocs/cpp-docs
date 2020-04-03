@@ -85,7 +85,7 @@ Name                                         | Description
 ### Macros
 
 Name                                                                   | Description
--------------------------------------------------- ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [ActivatableClass](activatableclass-macros.md)              | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro specifies default factory and group ID parameters.
 [ActivatableClassWithFactory](activatableclass-macros.md)   | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify a particular factory parameter.
 [ActivatableClassWithFactoryEx](activatableclass-macros.md) | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify particular factory and group ID parameters.
