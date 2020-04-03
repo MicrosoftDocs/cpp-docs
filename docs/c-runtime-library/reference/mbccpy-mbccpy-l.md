@@ -51,7 +51,7 @@ This function validates its parameters. If **_mbccpy** is passed a null pointer 
 
 **Security Note** Use a null-terminated string. The null-terminated string must not exceed the size of the destination buffer. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns). Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

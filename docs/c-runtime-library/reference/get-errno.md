@@ -34,7 +34,7 @@ Returns zero if successful; an error code on failure. If *pValue* is **NULL**, t
 
 Possible values of **errno** are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Example
 

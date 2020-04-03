@@ -83,7 +83,7 @@ If the mask is not set correctly, this function generates an invalid parameter e
 
 This function is ignored when you use [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Mask constants and values
 

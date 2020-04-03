@@ -82,7 +82,7 @@ Specific versions of the **_utimbuf** structure (**_utimebuf32** and **__utimbuf
 
 **_wutime** is a wide-character version of **_utime**; the *filename* argument to **_wutime** is a wide-character string. These functions behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -57,7 +57,7 @@ The **_gmtime32** function breaks down the *sourceTime* value and stores it in a
 > [!NOTE]
 > In most cases, the target environment tries to determine whether daylight savings time is in effect. The C run-time library assumes that the United States rules for implementing the calculation of Daylight Saving Time (DST) are used.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

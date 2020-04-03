@@ -39,7 +39,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 Both of these functions writes the single character *c* to **stdout** and advances the indicator as appropriate. **_fputchar** is equivalent to `fputc( stdout )`. It is also equivalent to **putchar**, but implemented only as a function, rather than as a function and a macro. Unlike **fputc** and **putchar**, these functions are not compatible with the ANSI standard.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

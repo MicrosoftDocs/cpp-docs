@@ -57,7 +57,7 @@ The behavior of **isdigit** and **_isdigit_l** is undefined if *c* is not EOF or
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

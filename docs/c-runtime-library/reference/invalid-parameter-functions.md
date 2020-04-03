@@ -69,7 +69,7 @@ The **_invalid_parameter** function checks whether a user-defined invalid parame
 
 When the default handler **_invoke_watson** is called, if the processor supports a [__fastfail](../../intrinsics/fastfail.md) operation, it is invoked using a parameter of **FAST_FAIL_INVALID_ARG** and the process terminates. Otherwise, a fast fail exception is raised, which can be caught by an attached debugger. If the process is allowed to continue, it is terminated by a call to the Windows **TerminateProcess** function using an exception code status of **STATUS_INVALID_CRUNTIME_PARAMETER**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

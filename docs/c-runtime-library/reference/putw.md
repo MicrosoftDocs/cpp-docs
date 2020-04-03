@@ -40,7 +40,7 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 The **_putw** function writes a binary value of type **int** to the current position of *stream.* **_putw** does not affect the alignment of items in the stream nor does it assume any special alignment. **_putw** is primarily for compatibility with previous libraries. Portability problems might occur with **_putw** because the size of an **int** and the ordering of bytes within an **int** differ across systems.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

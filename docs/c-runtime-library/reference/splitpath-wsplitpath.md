@@ -55,7 +55,7 @@ The **_splitpath** function breaks a path into its four components. **_splitpath
 
 **Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns). More secure versions of these functions are available; see [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

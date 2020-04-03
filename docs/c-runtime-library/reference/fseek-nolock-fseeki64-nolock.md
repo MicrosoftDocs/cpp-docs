@@ -47,7 +47,7 @@ Same as [fseek](fseek-fseeki64.md) and [_fseeki64](fseek-fseeki64.md), respectiv
 
 These functions are the non-locking versions of [fseek](fseek-fseeki64.md) and [_fseeki64](fseek-fseeki64.md), respectively. These are identical to [fseek](fseek-fseeki64.md) and [_fseeki64](fseek-fseeki64.md) except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -34,7 +34,7 @@ Returns zero if successful; an error code on failure. If *pmode* is **NULL**, th
 
 The function gets the value of the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for both low-level and stream file I/O operations, such as **_open**, **_pipe**, **fopen**, and [freopen](freopen-wfreopen.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

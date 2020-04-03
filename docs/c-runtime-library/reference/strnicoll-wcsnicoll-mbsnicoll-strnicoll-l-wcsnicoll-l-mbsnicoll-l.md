@@ -83,7 +83,7 @@ Each of these functions performs a case-insensitive comparison of the first *cou
 
 All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, or if count is greater than **INT_MAX**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

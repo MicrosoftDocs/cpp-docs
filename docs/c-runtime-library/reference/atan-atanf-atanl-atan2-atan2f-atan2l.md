@@ -56,7 +56,7 @@ The **atan** function calculates the arctangent (the inverse tangent function) o
 
 Because C++ allows overloading, you can call overloads of **atan** and **atan2** that take **float** or **long** **double** arguments. In a C program, **atan** and **atan2** always take **double** arguments and return a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

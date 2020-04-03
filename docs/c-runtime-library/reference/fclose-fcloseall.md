@@ -43,7 +43,7 @@ The **_fcloseall** function closes all open streams except **stdin**, **stdout**
 
 **fclose** and **_fcloseall** include code to protect against interference from other threads. For non-locking version of a **fclose**, see **_fclose_nolock**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -50,7 +50,7 @@ The **_fullpath** function expands the relative path name in *relPath* to its fu
 For example, to use C run-time routines, the application must include the header files that contain the declarations for the routines. Each header file include statement references the location of the file in a relative manner (from the application's working directory):
 
 ```C
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 #include <stdlib.h>
 ```

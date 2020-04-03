@@ -57,7 +57,7 @@ Each of these routines returns a pointer to *str* after *str* has been increment
 
 The **_mbsninc** function increments *str* by *count* multibyte characters. **_mbsninc** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

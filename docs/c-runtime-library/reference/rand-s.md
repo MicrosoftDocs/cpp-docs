@@ -34,7 +34,7 @@ The **rand_s** function writes a pseudorandom integer in the range 0 to **UINT_M
 The **rand_s** function requires that constant **_CRT_RAND_S** be defined prior to the inclusion statement for the function to be declared, as in the following example:
 
 ```C
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 #define _CRT_RAND_S
 #include <stdlib.h>

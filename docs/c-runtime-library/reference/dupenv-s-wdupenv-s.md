@@ -67,7 +67,7 @@ The value in *buffer* is a copy of the environment variable's value; modifying i
 
 **_wdupenv_s** is a wide-character version of **_dupenv_s**; the arguments of **_wdupenv_s** are wide-character strings. The **_wenviron** global variable is a wide-character version of **_environ**. See the Remarks in [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) for more on **_wenviron**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -63,7 +63,7 @@ Zero if successful; an error code on failure.
 
 These functions validate their parameters. If *count* is non-zero and *dest* or *src* is a null pointer, or *destSize* is smaller than *count*, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** or **ERANGE** and set **errno** to the return value.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

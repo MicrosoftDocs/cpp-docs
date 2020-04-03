@@ -85,7 +85,7 @@ The argument *shflag* is a constant expression consisting of one of the followin
 |**_SH_DENYRW**|Denies read and write access to the file.|
 |**_SH_DENYWR**|Denies write access to the file.|
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

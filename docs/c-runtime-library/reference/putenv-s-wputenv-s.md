@@ -54,7 +54,7 @@ If one of the error conditions occurs, these functions invoke an invalid paramet
 
 The **_putenv_s** function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). **_wputenv_s** is a wide-character version of **_putenv_s**; the *envstring* argument to **_wputenv_s** is a wide-character string.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

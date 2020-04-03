@@ -97,7 +97,7 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 The CRT includes convenient macros to define the size of the buffer required to convert the longest possible value of each integer type, including the null terminator and sign character, for several common bases. For information, see [Maximum conversion count macros](itoa-itow.md#maximum-conversion-count-macros).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -74,7 +74,7 @@ There are situations where **_resetstkoflw** can fail even if used in a correct 
 
 Structured exception handling will not catch a **STATUS_STACK_OVERFLOW** exception when the application is compiled with **/clr** (see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -57,7 +57,7 @@ The **_lseek** function moves the file pointer associated with *fd* to a new loc
 
 You can use **_lseek** to reposition the pointer anywhere in a file or beyond the end of the file.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

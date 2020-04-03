@@ -69,7 +69,7 @@ Because C++ allows overloading, you can call overloads of **log1p** that take an
 
 If *x* is a natural number, this function returns the logarithm of the factorial of (*x* - 1).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

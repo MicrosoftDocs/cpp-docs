@@ -97,7 +97,7 @@ The output value is affected by the setting of the LC_CTYPE category setting of 
 
 In C, these functions take a **const** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **const** returns a pointer to **const**; the version that takes a pointer to non-**const** returns a pointer to non-**const**. The macro _CRT_CONST_CORRECT_OVERLOADS is defined if both the **const** and non-**const** versions of these functions are available. If you require the non-**const** behavior for both C++ overloads, define the symbol _CONST_RETURN.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

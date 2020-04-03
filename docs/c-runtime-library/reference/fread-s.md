@@ -53,7 +53,7 @@ The **fread_s** function reads up to *count* items of *elementSize* bytes from t
 
 This function locks out other threads. If you require a non-locking version, use **_fread_nolock**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

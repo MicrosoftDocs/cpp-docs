@@ -40,7 +40,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 The **fsetpos** function sets the file-position indicator for *stream* to the value of *pos*, which is obtained in a prior call to **fgetpos** against *stream*. The function clears the end-of-file indicator and undoes any effects of [ungetc](ungetc-ungetwc.md) on *stream*. After calling **fsetpos**, the next operation on *stream* may be either input or output.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

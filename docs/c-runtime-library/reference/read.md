@@ -50,7 +50,7 @@ The **_read** function reads a maximum of *buffer_size* bytes into *buffer* from
 
 If the file was opened in text mode, the read terminates when **_read** encounters a CTRL+Z character, which is treated as an end-of-file indicator. Use [_lseek](lseek-lseeki64.md) to clear the end-of-file indicator.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

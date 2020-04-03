@@ -64,7 +64,7 @@ void last_fn() {}
 
 Do not use **DLL_PROCESS_ATTACH** to call **exit** from **DllMain**. To exit the **DLLMain** function, return **FALSE** from **DLL_PROCESS_ATTACH**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

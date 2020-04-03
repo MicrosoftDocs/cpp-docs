@@ -52,7 +52,7 @@ You can also pass **_O_U16TEXT**, **_O_U8TEXT**, or **_O_WTEXT** to enable Unico
 > [!CAUTION]
 > If you write data to a file stream, explicitly flush the code by using [fflush](fflush.md) before you use **_setmode** to change the mode. If you do not flush the code, you might get unexpected behavior. If you have not written data to the stream, you do not have to flush the code.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

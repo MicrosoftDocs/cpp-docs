@@ -72,7 +72,7 @@ The versions of these functions with the **_l** suffix are identical except that
 |**_ismbcalpha**, **_ismbcalpha_l**|Alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII English letter: 0x41<=*c*<=0x5A or 0x61<=*c*<=0x7A; or a katakana letter: 0xA6<=*c*<=0xDF.|
 |**_ismbcdigit**, **_ismbcdigit**|Digit|Returns nonzero if and only if *c* is a single-byte representation of an ASCII digit: 0x30<=*c*<=0x39.|
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

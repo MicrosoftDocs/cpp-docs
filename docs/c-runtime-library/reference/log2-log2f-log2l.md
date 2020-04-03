@@ -62,7 +62,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 If x is an integer, this function essentially returns the zero-based index of the most significant 1 bit of *x*.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

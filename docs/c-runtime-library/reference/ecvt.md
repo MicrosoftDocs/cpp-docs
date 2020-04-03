@@ -56,7 +56,7 @@ The difference between **_ecvt** and **_fcvt** is in the interpretation of the *
 
 This function validates its parameters. If *dec* or *sign* is **NULL**, or *count* is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and **NULL** is returned.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

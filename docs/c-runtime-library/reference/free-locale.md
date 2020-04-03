@@ -32,7 +32,7 @@ The **_free_locale** function is used to free the locale object obtained from a 
 
 The previous name of this function, **__free_locale** (with two leading underscores) has been deprecated.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

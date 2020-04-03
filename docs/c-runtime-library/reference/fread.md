@@ -52,7 +52,7 @@ When used on a text mode stream, if the amount of data requested (that is, *size
 
 This function locks out other threads. If you need a non-locking version, use **_fread_nolock**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

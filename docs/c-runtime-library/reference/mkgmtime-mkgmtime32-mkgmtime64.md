@@ -49,7 +49,7 @@ The range of the **_mkgmtime32** function is from midnight, January 1, 1970, UTC
 
 Both **gmtime** and **localtime** use a common static buffer for the conversion. If you supply this buffer to **_mkgmtime**, the previous contents are destroyed.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Examples
 

@@ -40,7 +40,7 @@ An occurrence of the **_set_new_handler** function in a program registers the ex
 
 ```cpp
 // set_new_handler1.cpp
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 #include <new.h>
 

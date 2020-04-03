@@ -75,7 +75,7 @@ When *end_ptr* is **NULL**, it's ignored. Otherwise, a pointer to the character 
 
 Square brackets (`[ ]`) surround optional elements. Curly braces and a vertical bar (`{ | }`) surround alternatives for a single element. *whitespace* may consist of space and tab characters, which are ignored. *alphanumerics* are decimal digits or the letters 'a' through 'z' (or 'A' through 'Z'). The first character that doesn't fit this form stops the scan. If *base* is between 2 and 36, then it's used as the base of the number. If *base* is 0, the initial characters of the string pointed to by *string* are used to determine the base. If the first character is 0, and the second character isn't 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35. The scan only allows letters whose values are less than *base*. The first character outside the range of the base stops the scan. For example, suppose *string* starts with "01". If *base* is 0, the scanner assumes it's an octal integer. An '8' or '9' character stops the scan.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -44,7 +44,7 @@ See **putc, putwc**.
 
 **_putwc_nolock** is the wide-character version of **_putc_nolock**; the two functions behave identically if the stream is opened in ANSI mode. **_putc_nolock** doesn't currently support output into a UNICODE stream.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

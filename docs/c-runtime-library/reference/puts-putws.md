@@ -43,7 +43,7 @@ The **puts** function writes *str* to the standard output stream **stdout**, rep
 
 **_putwch** writes Unicode characters using the current CONSOLE LOCALE setting.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

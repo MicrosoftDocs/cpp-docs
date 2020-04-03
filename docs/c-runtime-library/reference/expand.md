@@ -51,7 +51,7 @@ When the application is linked with a debug version of the C run-time libraries,
 
 This function validates its parameters. If *memblock* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**. If *size* is greater than **_HEAP_MAXREQ**, **errno** is set to **ENOMEM** and the function returns **NULL**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

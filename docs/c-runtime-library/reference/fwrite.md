@@ -50,7 +50,7 @@ When *stream* is opened in Unicode translation mode—for example, if *stream* i
 
 Because this function locks the calling thread, it is thread-safe. For a non-locking version, see **_fwrite_nolock**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -101,7 +101,7 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 
 The versions of these functions without the **_l** suffix use the current thread locale for this locale-dependent behavior. The versions with the **_l** suffix are identical except they instead use the locale specified by the *locale* parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

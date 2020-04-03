@@ -44,7 +44,7 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 
 Use [_aligned_free](aligned-free.md) to deallocate memory obtained by both **_aligned_malloc** and `_aligned_offset_malloc`. Don't use `free`, which doesn't reclaim the aligned memory correctly and can lead to hard-to-diagnose bugs.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

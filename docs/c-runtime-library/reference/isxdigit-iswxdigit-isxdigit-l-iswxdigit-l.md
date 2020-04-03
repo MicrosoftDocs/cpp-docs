@@ -58,7 +58,7 @@ The behavior of **isxdigit** and **_isxdigit_l** is undefined if *c* is not EOF 
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

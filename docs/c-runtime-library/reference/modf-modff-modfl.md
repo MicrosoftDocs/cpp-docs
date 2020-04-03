@@ -46,7 +46,7 @@ The **modf** functions break down the floating-point value *x* into fractional a
 
 C++ allows overloading, so you can call overloads of **modf** that take and return **float** or **long** **double** parameters. In a C program, **modf** always takes two double values and returns a double value.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

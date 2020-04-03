@@ -33,7 +33,7 @@ The **_getche** and **_getwche** functions read a single character from the cons
 
 These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [_getche_nolock, _getwche_nolock](getche-nolock-getwche-nolock.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

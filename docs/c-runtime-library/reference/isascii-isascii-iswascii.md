@@ -41,7 +41,7 @@ Both **__isascii** and **iswascii** are implemented as macros unless the preproc
 
 For backward compatibility, **isascii** is implemented as a macro only if [&#95;&#95;STDC&#95;&#95;](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise it is undefined.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -45,7 +45,7 @@ By default, if the result is too large in a **cosh**, **coshf**, or **coshl** ca
 
 Because C++ allows overloading, you can call overloads of **cosh** that take and return **float** or **long** **double** values. In a C program, **cosh** always takes and returns a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

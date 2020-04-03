@@ -30,7 +30,7 @@ The `__p__commode` function is for internal use only, and should not be called f
 
 File commit mode specifies when critical data is written to disk. For more information, see [fflush](../c-runtime-library/reference/fflush.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

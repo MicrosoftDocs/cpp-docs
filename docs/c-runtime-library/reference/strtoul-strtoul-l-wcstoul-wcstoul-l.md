@@ -70,7 +70,7 @@ If *endptr* is not **NULL**, a pointer to the character that stopped the scan is
 
 **wcstoul** is a wide-character version of **strtoul**; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

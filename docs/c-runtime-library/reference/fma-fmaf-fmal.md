@@ -81,7 +81,7 @@ Because C++ allows overloading, you can call overloads of **fma** that take and 
 
 This function computes the value as though it were taken to infinite precision, and then rounds the final result.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

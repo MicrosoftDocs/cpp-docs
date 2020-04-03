@@ -52,7 +52,7 @@ These functions support only **TIME_UTC** as the *base* value. This sets the *ti
 
 **End Microsoft Specific**
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

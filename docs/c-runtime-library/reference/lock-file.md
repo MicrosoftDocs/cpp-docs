@@ -28,7 +28,7 @@ File handle.
 
 The **_lock_file** function locks the **FILE** object specified by *file*. The underlying file is not locked by **_lock_file**. Use [_unlock_file](unlock-file.md) to release the lock on the file. Calls to **_lock_file** and **_unlock_file** must be matched in a thread.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

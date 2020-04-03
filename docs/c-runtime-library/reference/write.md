@@ -50,7 +50,7 @@ The **_write** function writes *count* bytes from *buffer* into the file associa
 
 When writing to files opened in text mode, **_write** treats a CTRL+Z character as the logical end of file. When writing to a device, **_write** treats a CTRL+Z character in the buffer as an output terminator.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

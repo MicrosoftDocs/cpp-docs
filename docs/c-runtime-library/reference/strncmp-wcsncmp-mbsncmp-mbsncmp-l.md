@@ -79,7 +79,7 @@ Also, **_mbsncmp** and **_mbsncmp_l** validate parameters. If *string1* or *stri
 
 The comparison behavior of **_mbsncmp** and **_mbsncmp_l** is affected by the setting of the **LC_CTYPE** category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [setlocale](setlocale-wsetlocale.md). The **_mbsncmp** function uses the current locale for this locale-dependent behavior. The **_mbsncmp_l** function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to **strncmp**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

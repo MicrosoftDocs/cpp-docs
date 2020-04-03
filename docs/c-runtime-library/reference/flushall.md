@@ -33,7 +33,7 @@ The commit-to-disk feature of the run-time library lets you ensure that critical
 
 For information about controlling the commit-to-disk feature, see [Stream I/O](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md), and [_fdopen](fdopen-wfdopen.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -34,7 +34,7 @@ Returns zero if successful; an error code on failure. If *pValue* is **NULL**, t
 
 Only call **_get_pgmptr** if your program has a narrow entry point, like **main()** or **WinMain()**. The **_pgmptr** global variable contains the full path to the executable associated with the process. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

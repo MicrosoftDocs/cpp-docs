@@ -12,7 +12,7 @@ helpviewer_keywords: ["_dclass", "_ldclass", "_fdclass", "_dsign", "_ldsign", "_
 
 Microsoft-specific primitive functions that are used to implement some standard C runtime library (CRT) floating-point functions. They're documented here for completeness, but aren't recommended for use. Some of these functions are noted as unused, because they're known to have issues in precision, exception handling, and conformance to IEEE-754 behavior. They exist in the library only for backward compatibility. For correct behavior, portability, and adherence to standards, prefer the standard floating-point functions over these functions.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## _dclass, _ldclass, _fdclass
 

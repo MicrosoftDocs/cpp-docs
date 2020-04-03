@@ -63,7 +63,7 @@ These functions validate their parameters. If *pFile*, *filename*, or *mode* is 
 
 Always check the return value to see if the function succeeded before you perform any further operations on the file. If an error occurs, the error code is returned and the global variable **errno** is set. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Unicode support
 

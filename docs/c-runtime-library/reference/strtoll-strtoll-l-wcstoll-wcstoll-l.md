@@ -68,7 +68,7 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 
 The **strtoll** function converts *strSource* to a **long** **long**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to *base*. **wcstoll** is a wide-character version of **strtoll**; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

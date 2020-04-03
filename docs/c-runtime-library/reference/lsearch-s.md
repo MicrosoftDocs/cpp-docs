@@ -69,7 +69,7 @@ The *compare* function is a pointer to a user-supplied routine that compares two
 
 The *context* pointer can be useful if the searched data structure is part of an object and the *compare* function needs to access members of the object. For example, code in the *compare* function can cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* pointer makes **_lsearch_s** more secure because additional context can be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

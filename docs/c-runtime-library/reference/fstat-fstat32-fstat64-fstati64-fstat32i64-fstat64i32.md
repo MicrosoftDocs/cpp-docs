@@ -79,7 +79,7 @@ Variations of these functions support 32-bit or 64-bit time types and 32-bit or 
 
 **_fstat** is equivalent to **_fstat64i32**, and **struct** **_stat** contains a 64-bit time. This is true unless **_USE_32BIT_TIME_T** is defined, in which case the old behavior is in effect; **_fstat** uses a 32-bit time, and **struct** **_stat** contains a 32-bit time. The same is true for **_fstati64**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Time Type and File Length Type Variations of _stat
 

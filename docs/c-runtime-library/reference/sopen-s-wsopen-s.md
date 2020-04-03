@@ -71,7 +71,7 @@ In the case of an error, -1 is returned through *pfh* (unless *pfh* is a null po
 
 The **_sopen_s** function opens the file specified by *filename* and prepares the file for shared reading or writing, as defined by *oflag* and *shflag*. **_wsopen_s** is a wide-character version of **_sopen_s**; the *filename* argument to **_wsopen_s** is a wide-character string. **_wsopen_s** and **_sopen_s** behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -58,7 +58,7 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 
 Each function converts the input string *strSource* to a **long** **double**. The **strtold** function stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character. The wide-character version of **strtold** is **wcstold**; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

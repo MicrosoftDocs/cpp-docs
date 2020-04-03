@@ -33,7 +33,7 @@ The **_getch** and **_getwch** functions read a single character from the consol
 
 These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [_getch_nolock, _getwch_nolock](getch-nolock-getwch-nolock.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

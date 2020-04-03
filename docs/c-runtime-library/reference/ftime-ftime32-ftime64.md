@@ -43,7 +43,7 @@ The **_ftime** function is equivalent to **_ftime64**, and **_timeb** contains a
 
 **_ftime** validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

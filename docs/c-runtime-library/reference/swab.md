@@ -44,7 +44,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 If *n* is even, the **_swab** function copies *n* bytes from *src*, swaps each pair of adjacent bytes, and stores the result at *dest*. If *n* is odd, **_swab** copies and swaps the first *n*-1 bytes of *src*, and the final byte is not copied. The **_swab** function is typically used to prepare binary data for transfer to a machine that uses a different byte order.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

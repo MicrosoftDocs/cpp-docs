@@ -61,7 +61,7 @@ The actual error number for **_strerror** is stored in the variable [errno](../.
 
 To get error strings, we recommend **strerror** or **_wcserror** instead of the deprecated macros [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and the deprecated internal functions **__sys_errlist** and **__sys_nerr**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 

@@ -48,7 +48,7 @@ The **_futime** routine sets the modification date and the access time on the op
 
 **_futime64**, which uses the **__utimbuf64** structure, can read and modify file dates through 23:59:59, December 31, 3000, UTC; whereas a call to **_futime32** fails if the date on the file is later than 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for these functions.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

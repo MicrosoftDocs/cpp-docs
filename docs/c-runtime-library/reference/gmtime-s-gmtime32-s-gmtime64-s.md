@@ -77,7 +77,7 @@ Each of the structure fields is of type **int**, as shown in the following table
 
 **gmtime_s** is an inline function which evaluates to **_gmtime64_s** and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. Doing this will cause **gmtime_s** to be in-lined to **_gmtime32_s**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

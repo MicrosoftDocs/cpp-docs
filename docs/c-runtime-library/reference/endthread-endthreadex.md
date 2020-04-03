@@ -41,7 +41,7 @@ Like the Win32 **ExitThread** API, **_endthreadex** does not close the thread ha
 > [!NOTE]
 > **_endthread** and **_endthreadex** cause C++ destructors pending in the thread not to be called.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

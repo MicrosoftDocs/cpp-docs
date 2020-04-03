@@ -44,7 +44,7 @@ Both **_dup** and **_dup2** accept file descriptors as parameters. To pass a str
 int cstderr = _dup( _fileno( stderr ));
 ```
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

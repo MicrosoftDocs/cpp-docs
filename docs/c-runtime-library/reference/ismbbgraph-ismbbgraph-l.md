@@ -43,7 +43,7 @@ is nonzero for *c*, or 0 if it is not. **_ismbbgraph** uses the current locale f
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -66,7 +66,7 @@ The **_y0**, **_y1**, and **_yn** routines return Bessel functions of the second
 |± 0|**ZERODIVIDE**|**_SING**|
 |&#124;x&#124; < 0.0|**INVALID**|**_DOMAIN**|
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

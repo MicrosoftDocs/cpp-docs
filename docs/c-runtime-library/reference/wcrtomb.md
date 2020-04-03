@@ -54,7 +54,7 @@ The **wcrtomb** function differs from [wctomb, _wctomb_l](wctomb-wctomb-l.md) by
 
 In C++, this function has a template overload that invokes the newer, secure counterparts of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Exceptions
 

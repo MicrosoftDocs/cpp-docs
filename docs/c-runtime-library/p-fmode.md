@@ -30,7 +30,7 @@ The `__p__fmode` function is for internal use only, and should not be called fro
 
 File translation mode specifies either `binary` or `text` translation for [_open](../c-runtime-library/reference/open-wopen.md) and [_pipe](../c-runtime-library/reference/pipe.md) I/O operations. For more information, see [_fmode](../c-runtime-library/fmode.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

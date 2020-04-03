@@ -96,7 +96,7 @@ Variations of these functions support 32-bit or 64-bit time types and 32-bit or 
 
 Unless you have a specific reason to use the versions that specify the time size explicitly, use **_findnext** or **_wfindnext** or, if you need to support file sizes greater than 3 GB, use **_findnexti64** or **_wfindnexti64**. All these functions use the 64-bit time type. In previous versions, these functions used a 32-bit time type. If this is a breaking change for an application, you might define **_USE_32BIT_TIME_T** to get the old behavior. If **_USE_32BIT_TIME_T** is defined, **_findnext**, **_finnexti64** and their corresponding Unicode versions use a 32-bit time.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Time Type and File Length Type Variations of _findnext
 

@@ -53,7 +53,7 @@ The **fmod** function calculates the floating-point remainder *f* of *x* / *y* s
 
 C++ allows overloading, so you can call overloads of **fmod** that take and return **float** and **long** **double** values. In a C program, **fmod** always takes two **double** arguments and returns a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

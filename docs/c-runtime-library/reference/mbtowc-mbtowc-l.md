@@ -51,7 +51,7 @@ If **mbchar** is not **NULL** and if the object that *mbchar* points to forms a 
 
 The **mbtowc** function converts *count* or fewer bytes pointed to by *mbchar*, if *mbchar* is not **NULL**, to a corresponding wide character. **mbtowc** stores the resulting wide character at *wchar,* if *wchar* is not **NULL**. **mbtowc** does not examine more than **MB_CUR_MAX** bytes. **mbtowc** uses the current locale for locale-dependent behavior; **_mbtowc_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

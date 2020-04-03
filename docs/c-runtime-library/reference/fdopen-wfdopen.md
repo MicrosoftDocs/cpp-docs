@@ -46,7 +46,7 @@ The **_fdopen** function associates an I/O stream with the file that is identifi
 
 File descriptors passed into **_fdopen** are owned by the returned **FILE &#42;** stream. If **_fdopen** is successful, do not call [\_close](close.md) on the file descriptor. Calling [fclose](fclose-fcloseall.md) on the returned **FILE &#42;** also closes the file descriptor.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -103,7 +103,7 @@ The variations that use a 64-bit time type enable file-creation dates to be expr
 
 Unless you have a specific reason to use the versions that specify the time size explicitly, use **_findfirst** or **_wfindfirst** or, if you need to support file sizes larger than 3 GB, use **_findfirsti64** or **_wfindfirsti64**. All these functions use the 64-bit time type. In earlier versions, these functions used a 32-bit time type. If this is a breaking change for an application, you might define **_USE_32BIT_TIME_T** to revert to the old behavior. If **_USE_32BIT_TIME_T** is defined, **_findfirst**, **_finfirsti64**, and their corresponding Unicode versions use a 32-bit time.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Time Type and File Length Type Variations of _findfirst
 

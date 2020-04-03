@@ -58,7 +58,7 @@ When two copies of the environment (MBCS and Unicode) exist simultaneously in a 
 > [!NOTE]
 > The **_putenv** and **_getenv** families of functions are not thread-safe. **_getenv** could return a string pointer while **_putenv** is modifying the string, causing random failures. Make sure that calls to these functions are synchronized.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

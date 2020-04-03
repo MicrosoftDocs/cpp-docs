@@ -39,7 +39,7 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 The **_pclose** function looks up the process ID of the command processor (Cmd.exe) started by the associated **_popen** call, executes a [_cwait](cwait.md) call on the new command processor, and closes the stream on the associated pipe.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

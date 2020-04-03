@@ -52,7 +52,7 @@ The `_register_onexit_function` function appends a function to the end of the on
 
 The `_execute_onexit_table` function executes all of the functions in the onexit function table, clears the table, and then returns. After a call to `_execute_onexit_table`, the table is in a non-valid state; it must be reinitialized by a call to `_initialize_onexit_table` before it is used again.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

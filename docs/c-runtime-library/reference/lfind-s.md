@@ -67,7 +67,7 @@ The **_lfind_s** function performs a linear search for the value *key* in an arr
 
 **_lfind_s** is similar to **_lfind** except for the addition of the *context* pointer to the arguments of the comparison function and the parameter list of the function. The *context* pointer can be useful if the searched data structure is part of an object and the *compare* function needs to access members of the object. The *compare* function can cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* parameter makes **_lfind_s** more secure because additional context can be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

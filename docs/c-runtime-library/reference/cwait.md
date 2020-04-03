@@ -58,7 +58,7 @@ The *action* parameter is ignored by the Windows operating system because parent
 
 Unless *procHandle* is -1 or -2 (handles to the current process or thread), the handle will be closed. Therefore, in this situation, do not use the returned handle.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

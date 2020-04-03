@@ -40,7 +40,7 @@ early in your program or link with Newmode.obj (see [Link Options](../../c-runti
 
 This function validates its parameter. If *newhandlermode* is anything other than 0 or 1, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, <strong>_set_new_mode</strong> returns -1 and sets **errno** to `EINVAL`.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

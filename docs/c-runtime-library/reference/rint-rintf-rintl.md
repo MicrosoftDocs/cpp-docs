@@ -44,7 +44,7 @@ The **rint** functions return a floating-point value that represents the nearest
 
 Because C++ allows overloading, you can call overloads of **rint** that take and return **float** and **long** **double** values. In a C program, **rint** always takes and returns a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

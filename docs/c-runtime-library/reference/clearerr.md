@@ -34,7 +34,7 @@ If *stream* is **NULL**, the invalid parameter handler is invoked, as described 
 
 A more secure version of this function is available; see [clearerr_s](clearerr-s.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

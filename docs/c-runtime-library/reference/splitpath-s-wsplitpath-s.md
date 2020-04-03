@@ -111,7 +111,7 @@ If any of the buffers is too short to hold the result, these functions clear all
 
 The **_splitpath_s** function breaks a path into its four components. **_splitpath_s** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. **_wsplitpath_s** is a wide-character version of **_splitpath_s**; the arguments to **_wsplitpath_s** are wide-character strings. These functions behave identically otherwise
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -25,7 +25,7 @@ This version of the `pow` function has a specialized calling convention that the
 
 The resulting value is pushed onto the top of the stack.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

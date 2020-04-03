@@ -55,7 +55,7 @@ The **exp** function has an implementation that uses Streaming SIMD Extensions 2
 
 C++ allows overloading, so you can call overloads of **exp** that take a **float** or **long double** argument. In a C program, **exp** always takes and returns a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

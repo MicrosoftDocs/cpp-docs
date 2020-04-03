@@ -39,7 +39,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 The **_fileno** routine returns the file descriptor currently associated with *stream*. This routine is implemented both as a function and as a macro. For information about choosing either implementation, see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

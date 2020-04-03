@@ -50,7 +50,7 @@ The **cbrt** functions return the cube-root of *x*.
 
 Because C++ allows overloading, you can call overloads of **cbrt** that take **float** or **long** **double** types. In a C program, **cbrt** always takes and returns **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

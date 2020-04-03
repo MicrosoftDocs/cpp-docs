@@ -50,7 +50,7 @@ The **fabs** functions return the absolute value of the argument *x*. There is n
 
 C++ allows overloading, so you can call overloads of **fabs** if you include the \<cmath> header. In a C program, **fabs** always takes and returns a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

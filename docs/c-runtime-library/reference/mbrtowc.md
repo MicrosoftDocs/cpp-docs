@@ -66,7 +66,7 @@ If *mbchar* is not a null pointer, the function examines *count* bytes from *mbc
 
 The **mbrtowc** function differs from [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Example
 

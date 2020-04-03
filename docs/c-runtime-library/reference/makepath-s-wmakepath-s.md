@@ -90,7 +90,7 @@ If any of the above error conditions occurs, these functions invoke the invalid 
 
 The **_makepath_s** function creates a composite path string from individual components, storing the result in *path*. The *path* might include a drive letter, directory path, file name, and file name extension. **_wmakepath_s** is a wide-character version of **_makepath_s**; the arguments to **_wmakepath_s** are wide-character strings. **_wmakepath_s** and **_makepath_s** behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

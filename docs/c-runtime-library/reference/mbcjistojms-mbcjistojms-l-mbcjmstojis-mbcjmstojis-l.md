@@ -59,7 +59,7 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 
 In earlier versions, **_mbcjistojms** and **_mbcjmstojis** were called **jistojms** and **jmstojis**, respectively. **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** and **_mbcjmstojis_l** should be used instead.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

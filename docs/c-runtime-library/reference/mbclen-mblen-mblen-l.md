@@ -68,7 +68,7 @@ The output value is affected by the **LC_CTYPE** category setting of the locale.
 
 **_mbclen**, **_mblen_l**, and **_mbclen_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mblen** or **mbrlen** instead.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

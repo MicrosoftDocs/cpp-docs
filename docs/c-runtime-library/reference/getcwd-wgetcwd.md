@@ -51,7 +51,7 @@ The **_getcwd** function gets the full path of the current working directory for
 
 When **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, calls to **_getcwd** and **_wgetcwd** are replaced by calls to **_getcwd_dbg** and **_wgetcwd_dbg** to allow for debugging memory allocations. For more information, see [_getcwd_dbg, _wgetcwd_dbg](getcwd-dbg-wgetcwd-dbg.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

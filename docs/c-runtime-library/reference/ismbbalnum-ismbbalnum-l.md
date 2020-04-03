@@ -44,7 +44,7 @@ The version of this function with the **_l** suffix is identical except that it 
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

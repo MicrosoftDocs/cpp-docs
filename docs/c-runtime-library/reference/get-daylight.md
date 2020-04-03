@@ -36,7 +36,7 @@ If *hours* is **NULL**, the invalid parameter handler is invoked as described in
 
 We recommend you use this function instead of the macro **_daylight** or the deprecated function **__daylight**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

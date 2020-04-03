@@ -56,7 +56,7 @@ The **frexp** function breaks down the floating-point value (*x*) into a mantiss
 
 C++ allows overloading, so you can call overloads of **frexp**. In a C program, **frexp** always takes a **double** and an **int** pointer and returns a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

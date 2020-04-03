@@ -97,7 +97,7 @@ Variations of these functions support 32- or 64-bit time types, and 32- or 64-bi
 
 This function validates its parameters. If either *path* or *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Time Type and File Length Type Variations of _stat
 

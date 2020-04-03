@@ -55,7 +55,7 @@ These methods are called by the exception-filter expression of the [try-except S
 |STATUS_FLOAT_STACK_CHECK|SIGFPE|
 |STATUS_FLOAT_UNDERFLOW|SIGFPE|
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

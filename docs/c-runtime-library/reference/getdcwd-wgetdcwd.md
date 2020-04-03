@@ -63,7 +63,7 @@ The version of this function that has the **_nolock** suffix behaves identically
 
 When **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, calls to **_getdcwd** and **_wgetdcwd** are replaced by calls to **_getdcwd_dbg** and **_wgetdcwd_dbg** so that you can debug memory allocations. For more information, see[_getdcwd_dbg, _wgetdcwd_dbg](getdcwd-dbg-wgetdcwd-dbg.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

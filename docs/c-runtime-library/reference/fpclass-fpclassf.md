@@ -51,7 +51,7 @@ The **_fpclass** and **_fpclassf** functions return an integer value that indica
 
 The **_fpclass** and **_fpclassf** functions are Microsoft-specific. They are similar to [fpclassify](fpclassify.md), but return more detailed information about the argument. The **_fpclassf** function is only available when compiled for the x64 platform.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

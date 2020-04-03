@@ -52,7 +52,7 @@ The **log** functions return the natural logarithm (base *e*) of *x* if successf
 
 C++ allows overloading, so you can call overloads of **log** and **log10** that take and return **float** or **long double** values. In a C program, **log** and **log10** always take and return a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -82,7 +82,7 @@ Each of these functions tests a given multibyte character for a given condition.
 |**_ismbcblank**|Space or horizontal tab|Returns nonzero if and only if *c* is a space or horizontal tab character: *c*=0x20 or *c*=0x09.|
 |**_ismbcspace**|White space|Returns nonzero if and only if *c* is a white-space character: *c*=0x20 or 0x09<=*c*<=0x0D.|
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

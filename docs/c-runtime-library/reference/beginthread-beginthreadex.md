@@ -107,7 +107,7 @@ The locale of the new thread is initialized by using the per-process global curr
 
 For **/clr** code, **_beginthread** and **_beginthreadex** each have two overloads. One takes a native calling-convention function pointer, and the other takes a **__clrcall** function pointer. The first overload is not application domain-safe and never will be. If you are writing **/clr** code you must ensure that the new thread enters the correct application domain before it accesses managed resources. You can do this, for example, by using [call_in_appdomain Function](../../dotnet/call-in-appdomain-function.md). The second overload is application domain-safe; the newly created thread will always end up in the application domain of the caller of **_beginthread** or **_beginthreadex**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

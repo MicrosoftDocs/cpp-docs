@@ -101,7 +101,7 @@ In C, these functions take a **const** pointer for the first argument. In C++, t
 
 The output value is affected by the setting of the LC_CTYPE category setting of the locale; for more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -29,7 +29,7 @@ The current collation code page of the thread.
 
 Internal CRT functions are implementation-specific and subject to change with each release. We don't recommend their use in your code.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

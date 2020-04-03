@@ -58,7 +58,7 @@ The versions of these functions with the **_l** suffix are identical except that
 |**_ismbclegal**|Valid multibyte|Returns nonzero if and only if the first byte of *c* is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|
 |**_ismbcsymbol**|Multibyte symbol|Returns nonzero if and only if 0x8141<=*c*<=0x81AC.|
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

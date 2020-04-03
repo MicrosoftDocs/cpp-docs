@@ -57,7 +57,7 @@ Because C++ allows overloading, you can call any of the various overloads of **p
 
 The `pow(int, int)` overload is no longer available. If you use this overload, the compiler may emit [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md). To avoid this problem, cast the first parameter to **double**, **float**, or **long** **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

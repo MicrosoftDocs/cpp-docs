@@ -32,7 +32,7 @@ These functions read a single character from **stdin**. The function then increm
 
 These functions are not compatible with the ANSI standard.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

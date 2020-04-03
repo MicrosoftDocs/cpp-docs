@@ -91,7 +91,7 @@ You will need to call [setlocale](setlocale-wsetlocale.md) for **_wcsicmp** to w
 
 ```C
 // crt_stricmp_locale.c
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 #include <string.h>
 #include <stdio.h>

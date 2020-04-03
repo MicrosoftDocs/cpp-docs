@@ -49,7 +49,7 @@ These manifest constants are defined in \<fcntl.h>:
 
 The **_open_osfhandle** call transfers ownership of the Win32 file handle to the file descriptor. To close a file opened by using **_open_osfhandle**, call [\_close](close.md). The underlying OS file handle is also closed by a call to **_close**. Don't call the Win32 function **CloseHandle** on the original handle. If the file descriptor is owned by a **FILE &#42;** stream, then a call to [fclose](fclose-fcloseall.md) closes both the file descriptor and the underlying handle. In this case, don't call **_close** on the file descriptor or **CloseHandle** on the original handle.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

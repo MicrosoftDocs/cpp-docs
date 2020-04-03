@@ -37,7 +37,7 @@ In addition, if an error occurs, **_heapchk** sets **errno** to **ENOSYS**.
 
 The **_heapchk** function helps debug heap-related problems by checking for minimal consistency of the heap. If the operating system does not support **_heapchk**(for example, Windows 98), the function returns **_HEAPOK** and sets **errno** to **ENOSYS**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

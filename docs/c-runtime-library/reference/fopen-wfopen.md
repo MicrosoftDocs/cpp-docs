@@ -48,7 +48,7 @@ The **fopen** function opens the file that is specified by *filename*. By defaul
 
 Always check the return value to see whether the pointer is NULL before you perform any additional operations on the file. If an error occurs, the global variable **errno** is set and may be used to obtain specific error information. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Unicode Support
 

@@ -56,7 +56,7 @@ Because C++ allows overloading, if you include \<cmath> you can call overloads o
 
 The **_nextafter** and **_nextafterf** functions are Microsoft-specific. The **_nextafterf** function is only available when compiling for x64.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

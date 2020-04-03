@@ -69,7 +69,7 @@ Both the 32-bit and 64-bit versions of [gmtime](gmtime-gmtime32-gmtime64.md), [m
 
 These functions validate their parameters. If *sourceTime* is a null pointer, or if the *sourceTime* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **NULL** and set **errno** to **EINVAL**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

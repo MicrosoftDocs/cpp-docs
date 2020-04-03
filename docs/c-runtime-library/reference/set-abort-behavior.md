@@ -40,7 +40,7 @@ The old value of the flags.
 
 There are two [abort](abort.md) flags: **_WRITE_ABORT_MSG** and **_CALL_REPORTFAULT**. **_WRITE_ABORT_MSG** determines whether a helpful text message is printed when a program is abnormally terminated. The message states that the application has called the [abort](abort.md) function. The default behavior is to print the message. **_CALL_REPORTFAULT**, if set, specifies that a Watson crash dump is generated and reported when [abort](abort.md) is called. By default, crash dump reporting is enabled in non-DEBUG builds.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -45,7 +45,7 @@ For information about controlling the commit-to-disk feature, see [Stream I/O](.
 
 This function locks the calling thread and is therefore thread-safe. For a non-locking version, see **_fflush_nolock**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

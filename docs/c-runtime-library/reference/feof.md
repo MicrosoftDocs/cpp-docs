@@ -38,7 +38,7 @@ The **feof** routine (implemented both as a function and as a macro) determines 
 
 For example, if a file contains 10 bytes and you read 10 bytes from the file, **feof** will return 0 because, even though the file pointer is at the end of the file, you have not attempted to read beyond the end. Only after you try to read an 11th byte will **feof** return a nonzero value.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

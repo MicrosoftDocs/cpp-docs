@@ -36,7 +36,7 @@ The **wctob** function converts a wide character contained in *wchar* to the cor
 
 If **wctob** was unsuccessful and no corresponding multibyte character was found, the function sets **errno** to **EILSEQ** and returns -1.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -48,7 +48,7 @@ When the locale is UTF-8, **_ismbblead** and **_ismbblead_l** always return 0 (f
 
 **_ismbblead** and **_ismbblead_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mbrlen** instead.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 

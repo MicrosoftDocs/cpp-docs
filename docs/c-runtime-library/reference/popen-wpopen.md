@@ -61,7 +61,7 @@ The **_popen** function creates a pipe. It then asynchronously executes a spawne
 
 **_wpopen** is a wide-character version of **_popen**; the *path* argument to **_wpopen** is a wide-character string. **_wpopen** and **_popen** behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

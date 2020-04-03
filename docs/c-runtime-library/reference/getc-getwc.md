@@ -48,7 +48,7 @@ Routine-specific remarks follow.
 |**getc**|Same as **fgetc**, but implemented as a function and as a macro.|
 |**getwc**|Wide-character version of **getc**. Reads a multibyte character or a wide character according to whether *stream* is opened in text mode or binary mode.|
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

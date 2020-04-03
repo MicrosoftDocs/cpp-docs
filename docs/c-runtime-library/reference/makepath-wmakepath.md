@@ -55,7 +55,7 @@ The **_makepath** function creates a composite path string from individual compo
 
 **Security Note** Use a null-terminated string. To avoid buffer overrun, the null-terminated string must not exceed the size of the *path* buffer. **_makepath** does not ensure that the length of the composite path string does not exceed **_MAX_PATH**. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

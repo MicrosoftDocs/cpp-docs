@@ -53,7 +53,7 @@ Each of these routines converts a given uppercase letter to a lowercase letter i
 
 In order for **_tolower** to give the expected results, [__isascii](isascii-isascii-iswascii.md) and [isupper](isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

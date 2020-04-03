@@ -36,7 +36,7 @@ The function sets the [_fmode](../../c-runtime-library/fmode.md) global variable
 
 **_O_TEXT** and **_O_BINARY** are defined in Fcntl.h. **EINVAL** is defined in Errno.h.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

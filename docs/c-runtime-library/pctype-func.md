@@ -28,7 +28,7 @@ A pointer to an array of character classification information.
 
 The information in the character classification table is for internal use only, and is used by various functions that classify characters of type `char`. For more information, see the `Remarks` section of [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

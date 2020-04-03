@@ -65,7 +65,7 @@ The **lround** and **llround** functions return the nearest **long** or **long**
 
 Because C++ allows overloading, you can call overloads of **lround** or **llround** that take and return **float** and **long** **double** values. In a C program, **lround** and **llround** always take and return a **double**.
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -69,7 +69,7 @@ When the CRT opens a file that begins with a Byte Order Mark (BOM), the file poi
 
 This function locks out other threads during execution and is therefore thread-safe. For a non-locking version, see [_fseek_nolock, _fseeki64_nolock](fseek-nolock-fseeki64-nolock.md).
 
-By default, this function's global state is scoped to the application. To change this, see [App vs OS state](../global-state.md).
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
