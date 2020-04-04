@@ -20,6 +20,9 @@ The walkthrough shows how to use Windows Installer to deploy your application. Y
 
 ## Install the Visual Studio setup and deployment project template
 
+---
+???
+---
 The steps in this section vary depending on which version of Visual Studio you have installed. Make sure the version selector in the upper left of this page is set correctly.
 
 <!-- markdownlint-disable MD034 -->
