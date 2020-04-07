@@ -1,7 +1,7 @@
 ---
 title: "Link Options"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["nothrownew.obj", "newmode.obj", "noenv.obj", "psetargv.obj", "loosefpmath.obj", "smallheap.obj", "fp10.obj", "nochkclr.obj", "chkstk.obj", "pcommode.obj", "pnoenv.obj", "link options [C++]", "invalidcontinue.obj", "pnothrownew.obj", "pwsetargv.obj", "pinvalidcontinue.obj", "wsetargv.obj", "binmode.obj", "setargv.obj", "noarg.obj", "pnewmode.obj", "commode.obj", "pthreadlocale.obj", "pbinmode.obj", "threadlocale.obj", "pnoarg.obj"]
+helpviewer_keywords: ["nothrownew.obj", "newmode.obj", "noenv.obj", "psetargv.obj", "legacy_stdio_float_rounding.obj", "loosefpmath.obj", "smallheap.obj", "fp10.obj", "nochkclr.obj", "chkstk.obj", "pcommode.obj", "pnoenv.obj", "link options [C++]", "invalidcontinue.obj", "pnothrownew.obj", "pwsetargv.obj", "pinvalidcontinue.obj", "wsetargv.obj", "binmode.obj", "setargv.obj", "noarg.obj", "pnewmode.obj", "commode.obj", "pthreadlocale.obj", "pbinmode.obj", "threadlocale.obj", "pnoarg.obj"]
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
 ---
 # Link Options
