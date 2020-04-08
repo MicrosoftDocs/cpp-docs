@@ -21,7 +21,7 @@ You can improve the quality of your application by running code analysis regular
 
 1. Choose the [rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md) that you want to use or create a [custom rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md#to-create-a-rule-set-in-a-text-editor). If using LLVM/clang-cl, see [Using Clang-Tidy in Visual Studio](../code-quality/clang-tidy.md) to configure Clang-Tidy analysis options.
 
-### Standard C/C++ Rule Sets
+### Standard C/C++ rule sets
 
 Visual Studio includes these standard sets of rules for native code:
 
