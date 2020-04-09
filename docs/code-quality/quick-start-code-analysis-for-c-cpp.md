@@ -1,15 +1,15 @@
 ---
-title: "Quickstart: Code Analysis for C/C++"
-description: Run static analysis on C++ code in Visual Studio to detect common coding problems and defects.
-ms.date: 11/04/2016
+title: "Quickstart: Code analysis for C/C++"
+description: "Run static analysis on C++ code in Visual Studio to detect common coding problems and defects."
+ms.date: 04/08/2020
 ms.topic: "conceptual"
 helpviewer_keywords:
   - "C/C++ code analysis"
-  - "code analysis,C/C++"
+  - "code analysis, C/C++"
 ---
 # Quickstart: Code analysis for C/C++
 
-You can improve the quality of your application by running code analysis regularly on C or C++ code. This can help you find common problems, violations of good programming practice, or defects that are difficult to discover through testing. Code analysis warnings differ from compiler errors and warnings because code analysis searches for specific code patterns that are valid but could still create issues for you or other people who use your code.
+You can improve the quality of your application by running code analysis regularly on C or C++ code. Code analysis can help you find common problems and violations of good programming practice. And, it finds defects that are difficult to discover through testing. Its warnings differ from compiler errors and warnings: It searches for specific code patterns that are known to cause problems. That is, code that's valid, but could still create issues, either for you or for other people who use your code.
 
 ## Configure rule sets for a project
 
@@ -21,18 +21,60 @@ You can improve the quality of your application by running code analysis regular
 
 1. Choose the [rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md) that you want to use or create a [custom rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md#to-create-a-rule-set-in-a-text-editor). If using LLVM/clang-cl, see [Using Clang-Tidy in Visual Studio](../code-quality/clang-tidy.md) to configure Clang-Tidy analysis options.
 
-### Standard C/C++ Rule Sets
+### Standard C/C++ rule sets
 
-Visual Studio includes two standard sets of rules for native code:
+Visual Studio includes these standard sets of rules for native code:
 
-|Rule Set|Description|
-|--------------|-----------------|
-|Microsoft Native Minimum Recommended Rules|This rule set focuses on the most critical problems in your native code, including potential security holes and application crashes. You should include this rule set in any custom rule set you create for your native projects.|
-|Microsoft Native Recommended Rules|This rule set covers a broad range of problems. It includes all the rules in Microsoft Native Minimum Recommended Rules.|
+| Rule Set | Description |
+|--|--|
+| **C++ Core Check Arithmetic Rules** | These rules enforce checks related to [arithmetic operations from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es-expressions-and-statements). |
+| **C++ Core Check Bounds Rules** | These rules enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile). |
+| **C++ Core Check Class Rules** | These rules enforce checks related to [classes from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-classes-and-class-hierarchies). |
+| **C++ Core Check Concurrency Rules** | These rules enforce checks related to [concurrency from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#cpcon-concurrency). |
+| **C++ Core Check Const Rules** | These rules enforce [const-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability). |
+| **C++ Core Check Declaration Rules** | These rules enforce checks related to [declarations from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i-interfaces). |
+| **C++ Core Check Enum Rules** | These rules enforce [enum-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum). |
+| **C++ Core Check Experimental Rules** | These rules collect some experimental checks. Eventually, we expect these checks to be moved to other rulesets or removed completely. |
+| **C++ Core Check Function Rules** | These rules enforce checks related to [functions from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f-functions). |
+| **C++ Core Check GSL Rules** | These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl). |
+| **C++ Core Check Lifetime Rules** | These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile). |
+| **C++ Core Check Owner Pointer Rules** | These rules enforce resource-management checks related to [owner&lt;T&gt; from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management). |
+| **C++ Core Check Raw Pointer Rules** | These rules enforce resource-management checks related to [raw pointers from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management). |
+| **C++ Core Check Rules** | These rules enforce a subset of the checks from the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines). Use this ruleset to include all of the C++ Core Check rules except the Enum and Experimental rulesets. |
+| **C++ Core Check Shared Pointer Rules** | These rules enforce resource-management checks related to [types with shared pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management). |
+| **C++ Core Check STL Rules** | These rules enforce checks related to the [C++ Standard Template Library (STL) from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib). |
+| **C++ Core Check Style Rules** | These rules enforce checks related to use of [expressions and statements from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es-expressions-and-statements). |
+| **C++ Core Check Type Rules** | These rules enforce the [Type profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile). |
+| **C++ Core Check Unique Pointer Rules** | These rules enforce resource-management checks related to types with [unique pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management). |
+| **Concurrency Check Rules** | These rules enforce a set of Win32 concurrency pattern checks in C++. |
+| **Concurrency Rules** | Adds concurrency rules from C++ Core Guidelines to **Concurrency Check Rules**. |
+| **Microsoft Native Minimum Rules** | These rules focus on the most critical problems in your native code, including potential security holes and application crashes. We recommend you include this rule set in any custom rule set you create for your native projects. |
+| **Microsoft Native Recommended Rules** | These rules focus on the most critical and common problems in your native code. These problems include potential security holes and application crashes. We recommend you include this rule set in any custom rule set you create for your native projects. This ruleset is designed to work with Visual Studio Professional edition and higher. It includes all the rules in **Microsoft Native Minimum Rules**. |
+
+Visual Studio includes these standard sets of rules for managed code:
+
+| Rule Set | Description |
+|--|--|
+| **Microsoft Basic Correctness Rules** | These rules focus on logic errors and common mistakes made in the usage of framework APIs. Include this rule set to expand on the list of warnings reported by the minimum recommended rules. |
+| **Microsoft Basic Design Guideline Rules** | These rules focus on enforcing best practices to make your code easy to understand and use. Include this rule set if your project includes library code or if you want to enforce best practices for easily maintainable code. |
+| **Microsoft Extended Correctness Rules** | These rules expand on the basic correctness rules to maximize the reported logic and framework usage errors. Extra emphasis is placed on specific scenarios such as COM interop and mobile applications. Consider including this rule set if one of these scenarios applies to your project or to find additional problems in your project. |
+| **Microsoft Extended Design Guideline Rules** | These rules expand on the basic design guideline rules to maximize the reported usability and maintainability issues. Extra emphasis is placed on naming guidelines. Consider including this rule set if your project includes library code or if you want to enforce the highest standards for writing maintainable code. |
+| **Microsoft Globalization Rules** | These rules focus on problems that prevent data in your application from displaying correctly when used in different languages, locales, and cultures. Include this rule set if your application is localized and/or globalized. |
+| **Microsoft Managed Minimum Rules** | These rules focus on the most critical problems in your code for which Code Analysis is the most accurate.  These rules are small in number and they are intended only to run in limited Visual Studio editions.  Use MinimumRecommendedRules.ruleset with other Visual Studio editions. |
+| **Microsoft Managed Recommended Rules** | These rules focus on the most critical problems in your code. These problems include potential security holes, application crashes, and other important logic and design errors. We recommend you include this rule set in any custom rule set you create for your projects. |
+| **Microsoft Mixed (C++ /CLR) Minimum Rules** | These rules focus on the most critical problems in your C++ projects that support the Common Language Runtime. These problems include potential security holes, application crashes, and other important logic and design errors. We recommend you include this rule set in any custom rule set you create for your C++ projects that support the Common Language Runtime. |
+| **Microsoft Mixed (C++ /CLR) Recommended Rules** | These rules focus on the most common and critical problems in your C++ projects that support the Common Language Runtime. These problems include potential security holes, application crashes, and other important logic and design errors. This ruleset is designed for use in the Visual Studio Professional edition and higher. |
+| **Microsoft Security Rules** | This rule set contains all Microsoft security rules. Include this rule set to maximize the number of potential security issues that are reported. |
+
+To include every rule:
+
+| Rule Set | Description |
+|--|--|
+| **Microsoft All Rules** | This rule set contains all rules. Running this rule set may result in a large number of warnings being reported. Use this rule set to get a comprehensive picture of all issues in your code. It can help you decide which of the more focused rule sets are most appropriate to run for your projects. |
 
 ## Run code analysis
 
-On the Code Analysis page of the Project Properties page, you can configure code analysis to run each time you build your project. You can also run code analysis manually.
+On the **Code Analysis** page of the Project Properties dialog, you can configure code analysis to run each time you build your project. You can also run code analysis manually.
 
 To run code analysis on a solution:
 
@@ -50,33 +92,21 @@ To run code analysis on a file:
 
 1. In the **Build** menu, choose **Run Code Analysis on File** or press **Ctrl+Shift+Alt+F7**.
 
-   The project or solution is compiled and code analysis runs. Results appear in the Error List.
+   The project or solution is compiled and code analysis runs. Results appear in the Error List window.
 
 ## Analyze and resolve code analysis warnings
 
-To analyze a specific warning, choose the title of the warning in the Error List. The warning expands to display additional information about the issue. When possible, code analysis displays the line numbers and analysis logic that led to the warning. For detailed information about the warning, including possible solutions to the issue, choose the warning ID to display its corresponding online help topic.
+The Error List window lists the code analysis warnings found. The results are displayed in a table. If more information is available about a particular warning, the first column contains an expansion control. Choose it to expand the display for additional information about the issue. When possible, code analysis displays the line numbers and analysis logic that led to the warning.
 
-When you select a warning, the line of code that caused the warning is highlighted in the Visual Studio code editor.
+For detailed information about the warning, including possible solutions to the issue, choose the warning ID in the Code column to display its corresponding online help article.
 
-After you understand the problem, you can resolve it in your code. Then, rerun code analysis to make sure that the warning no longer appears in the Error List, and that your fix has not raised any new warnings.
+Double-click a warning to move the cursor to the line of code that caused the warning in the Visual Studio code editor. Or, press Enter on the selected warning.
 
-## Suppress code analysis warnings
-
-There are times when you might decide not to fix a code analysis warning. You might decide that resolving the warning requires too much recoding in relation to the probability that the issue will arise in any real-world implementation of your code. Or you might believe that the analysis that is used in the warning is inappropriate for the particular context. You can suppress individual warnings so that they no longer appear in the Error List.
-
-### To suppress a warning
-
-1. If the detailed information is not displayed, choose the title of the warning to expand it.
-
-1. Choose the **Actions** link at the bottom of the warning.
-
-1. Choose **Suppress Message** and then choose **In Source**.
-
-   Suppressing a message inserts `#pragma warning (disable:[warning ID])` that suppresses the warning for the line of code.
+After you understand the problem, you can resolve it in your code. Then, rerun code analysis to make sure that the warning no longer appears in the Error List.
 
 ## Create work items for code analysis warnings
 
-You can use the work item tracking feature to log bugs from within Visual Studio. To use this feature, you must connect to an instance of Team Foundation Server.
+You can use the work item tracking feature to log bugs from within Visual Studio. To use this feature, you must connect to an instance of Azure DevOps Server (formerly, Team Foundation Server).
 
 ### To create a work item for one or more C/C++ code warnings
 
@@ -92,7 +122,7 @@ You can use the work item tracking feature to log bugs from within Visual Studio
 
 You can search long lists of warning messages and you can filter warnings in multi-project solutions.
 
-- **To filter warnings by title or warning ID**: Enter the keyword in the search box.
+- **To filter warnings by title or warning ID**: Enter the keyword in the Search Error List box.
 
 - **To filter warnings by severity**: By default, code analysis messages are assigned a severity of **Warning**. You can assign the severity of one or more messages as **Error** in a custom rule set. On the **Severity** column of the **Error List**, choose the drop-down arrow and then the filter icon. Choose **Warning** or **Error** to display only the messages that are assigned the respective severity. Choose **Select All** to display all messages.
 
