@@ -24,7 +24,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 > [!NOTE]
 > A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. Some of these values are different for each build configuration. You must set these environment values yourself if you don't use one of the shortcuts. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md). Because the build environment is complex, we strongly recommend you use a developer command prompt shortcut instead of building your own.
 
-These instructions vary depending on which version of Visual Studio you are using. Before continuing, make sure that the version selector in the upper left of this page is set correctly.
+These instructions vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 
