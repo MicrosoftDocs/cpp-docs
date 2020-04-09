@@ -12,7 +12,7 @@ ms.author: efessler
 
 ::: moniker range="<=vs-2017"
 
-Support for Clang-Tidy requires Visual Studio 2019 version 16.4 or later. To see the documentation, choose Visual Studio 2019 in the documentation version selector.
+Support for Clang-Tidy requires Visual Studio 2019 version 16.4 or later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
