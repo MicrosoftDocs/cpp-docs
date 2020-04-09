@@ -19,7 +19,7 @@ Before you start:
 
 ### To create the project
 
-Instructions for creating a new project vary depending on which version of Visual Studio you have installed. Make sure you have the version selector in the upper left set to the correct version.
+Instructions for creating a new project vary depending on which version of Visual Studio you have installed. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 

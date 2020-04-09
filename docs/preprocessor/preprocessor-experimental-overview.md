@@ -8,7 +8,7 @@ helpviewer_keywords: ["preprocessor, experimental"]
 
 ::: moniker range="vs-2015"
 
-Visual Studio 2015 uses the traditional preprocessor, which doesn't conform with Standard C++. An experimental preprocessor is available in Visual Studio 2017 and Visual Studio 2019 by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. More information about using the new preprocessor in Visual Studio 2017 and Visual Studio 2019 is available. To see it, use the documentation version selector to select one of those versions.
+Visual Studio 2015 uses the traditional preprocessor, which doesn't conform with Standard C++. An experimental preprocessor is available in Visual Studio 2017 and Visual Studio 2019 by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. More information about using the new preprocessor in Visual Studio 2017 and Visual Studio 2019 is available. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 

@@ -8,7 +8,7 @@ helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time a
 
 ::: moniker range="<=vs-2017"
 
-The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for that version, set the Visual Studio version selector control for this article to Visual Studio 2019.
+The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 ::: moniker range="vs-2019"

@@ -28,7 +28,7 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 ## Create a Windows desktop project
 
-Follow these steps to create your first Windows desktop project. As you go, you'll enter the code for a working Windows desktop application. There's a version selector in the upper left of this page. Make sure it's set to the version of Visual Studio that you're using.
+Follow these steps to create your first Windows desktop project. As you go, you'll enter the code for a working Windows desktop application. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 
