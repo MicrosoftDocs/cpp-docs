@@ -272,7 +272,8 @@ int main()
 
     // use operator new to allocate untyped memory block
     void* pvoid = operator new(1000);
-    for(char* c = static_cast<char*>(pvoid); pvoid < &pvoid + 1000; ++c)
+    char* pchar = static_cast<char*>(pvoid);
+    for(char* c = pchar; c < pchar + 1000; ++c)
     {
         *c = 0x00;
     }
