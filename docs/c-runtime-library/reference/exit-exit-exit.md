@@ -1,8 +1,8 @@
 ---
 title: "exit, _Exit, _exit"
-ms.date: "01/02/2018"
-api_name: ["_exit", "exit"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_exit", "exit", "_o__exit", "_o_exit"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["Exit", "_exit", "process/exit", "process/_Exit", "stdlib/exit", "stdlib/_Exit"]
@@ -63,6 +63,8 @@ void last_fn() {}
 ```
 
 Do not use **DLL_PROCESS_ATTACH** to call **exit** from **DllMain**. To exit the **DLLMain** function, return **FALSE** from **DLL_PROCESS_ATTACH**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

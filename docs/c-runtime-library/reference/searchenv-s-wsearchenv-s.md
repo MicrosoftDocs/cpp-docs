@@ -1,8 +1,8 @@
 ---
 title: "_searchenv_s, _wsearchenv_s"
-ms.date: "11/04/2016"
-api_name: ["_wsearchenv_s", "_searchenv_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wsearchenv_s", "_searchenv_s", "_o__searchenv_s", "_o__wsearchenv_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_searchenv_s", "_wsearchenv_s", "wsearchenv_s", "searchenv_s"]
@@ -86,6 +86,8 @@ The *pathname* buffer should be at least **_MAX_PATH** characters long to accomm
 **_wsearchenv_s** is a wide-character version of **_searchenv_s**; the arguments to **_wsearchenv_s** are wide-character strings. **_wsearchenv_s** and **_searchenv_s** behave identically otherwise.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

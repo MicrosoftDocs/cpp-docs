@@ -1,8 +1,8 @@
 ---
 title: "_get_errno"
-ms.date: "11/04/2016"
-api_name: ["_get_errno"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_get_errno", "_o__get_errno"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_get_errno"]
@@ -33,6 +33,8 @@ Returns zero if successful; an error code on failure. If *pValue* is **NULL**, t
 ## Remarks
 
 Possible values of **errno** are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Example
 

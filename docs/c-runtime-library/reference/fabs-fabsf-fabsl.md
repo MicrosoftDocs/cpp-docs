@@ -1,8 +1,8 @@
 ---
 title: "fabs, fabsf, fabsl"
-ms.date: "04/05/2018"
-api_name: ["fabsf", "fabs", "fabsl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["fabsf", "fabs", "fabsl", "_o_fabs"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fabs", "fabsf", "fabsl", "math\fabs", "math\fabsf", "math\fabsl"]
@@ -49,6 +49,8 @@ The **fabs** functions return the absolute value of the argument *x*. There is n
 ## Remarks
 
 C++ allows overloading, so you can call overloads of **fabs** if you include the \<cmath> header. In a C program, **fabs** always takes and returns a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

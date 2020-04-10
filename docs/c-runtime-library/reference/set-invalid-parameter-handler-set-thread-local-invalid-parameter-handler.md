@@ -1,8 +1,8 @@
 ---
 title: "_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler"
-ms.date: "11/04/2016"
-api_name: ["_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler", "_o__set_invalid_parameter_handler", "_o__set_thread_local_invalid_parameter_handler"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["set_invalid_parameter_handler", "_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
@@ -52,6 +52,8 @@ void _invalid_parameter(
 ```
 
 The *expression* argument is a wide string representation of the argument expression that raised the error. The *function* argument is the name of the CRT function that received the invalid argument. The *file* argument is the name of the CRT source file that contains the function. The *line* argument is the line number in that file. The last argument is reserved. The parameters all have the value **NULL** unless a debug version of the CRT library is used.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

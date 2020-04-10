@@ -1,8 +1,8 @@
 ---
 title: "_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbcl2", "_ismbcl1", "_ismbcl0", "_ismbcl2_l", "_ismbcl1_l", "_ismbcl0_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbcl2", "_ismbcl1", "_ismbcl0", "_ismbcl2_l", "_ismbcl1_l", "_ismbcl0_l", "_o__ismbcl0", "_o__ismbcl0_l", "_o__ismbcl1", "_o__ismbcl1_l", "_o__ismbcl2", "_o__ismbcl2_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ismbcl0", "_ismbcl1_l", "_ismbcl0", "ismbcl1", "ismbcl0_l", "_ismbcl2_l", "ismbcl2", "ismbcl1_l", "_ismbcl1", "_ismbcl0_l", "_ismbcl2", "ismbcl2_l"]
@@ -72,6 +72,8 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 The functions check that the specified value *c* matches the test conditions described above, but do not check that *c* is a valid multibyte character. If the lower byte is in the ranges 0x00 - 0x3F, 0x7F, or 0xFD - 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [_ismbbtrail](ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.
 
 **End Code Page 932 Specific**
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

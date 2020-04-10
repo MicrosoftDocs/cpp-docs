@@ -1,8 +1,8 @@
 ---
 title: "_get_pgmptr"
-ms.date: "11/04/2016"
-api_name: ["_get_pgmptr"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_get_pgmptr", "_o__get_pgmptr"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["get_pgmptr", "_get_pgmptr"]
@@ -33,6 +33,8 @@ Returns zero if successful; an error code on failure. If *pValue* is **NULL**, t
 ## Remarks
 
 Only call **_get_pgmptr** if your program has a narrow entry point, like **main()** or **WinMain()**. The **_pgmptr** global variable contains the full path to the executable associated with the process. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

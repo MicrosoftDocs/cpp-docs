@@ -1,8 +1,8 @@
 ---
 title: "fwrite"
-ms.date: "11/04/2016"
-api_name: ["fwrite"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["fwrite", "_o_fwrite"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fwrite"]
@@ -49,6 +49,8 @@ The **fwrite** function writes up to *count* items, of *size* length each, from 
 When *stream* is opened in Unicode translation mode—for example, if *stream* is opened by calling **fopen** and using a mode parameter that includes **ccs=UNICODE**, **ccs=UTF-16LE**, or **ccs=UTF-8**, or if the mode is changed to a Unicode translation mode by using **_setmode** and a mode parameter that includes **_O_WTEXT**, **_O_U16TEXT**, or **_O_U8TEXT**—*buffer* is interpreted as a pointer to an array of **wchar_t** that contains UTF-16 data. An attempt to write an odd number of bytes in this mode causes a parameter validation error.
 
 Because this function locks the calling thread, it is thread-safe. For a non-locking version, see **_fwrite_nolock**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

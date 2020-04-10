@@ -1,8 +1,8 @@
 ---
 title: "strchr, wcschr, _mbschr, _mbschr_l"
-ms.date: "11/04/2016"
-api_name: ["strchr", "wcschr", "_mbschr_l", "_mbschr"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["strchr", "wcschr", "_mbschr_l", "_mbschr", "_o__mbschr", "_o__mbschr_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftcschr", "strchr", "wcschr", "_tcschr", "_mbschr"]
@@ -96,6 +96,8 @@ The `strchr` function finds the first occurrence of *c* in *str*, or it returns 
 The output value is affected by the setting of the LC_CTYPE category setting of the locale; for more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C, these functions take a **const** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **const** returns a pointer to **const**; the version that takes a pointer to non-**const** returns a pointer to non-**const**. The macro _CRT_CONST_CORRECT_OVERLOADS is defined if both the **const** and non-**const** versions of these functions are available. If you require the non-**const** behavior for both C++ overloads, define the symbol _CONST_RETURN.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -1,8 +1,8 @@
 ---
 title: "_unlock_file"
-ms.date: "11/04/2016"
-api_name: ["_unlock_file"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_unlock_file", "_o__unlock_file"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_unlock_file", "unlock_file"]
@@ -29,6 +29,8 @@ File handle.
 ## Remarks
 
 The **_unlock_file** function unlocks the file specified by *file*. Unlocking a file allows access to the file by other processes. This function should not be called unless **_lock_file** was previously called on the *file* pointer. Calling **_unlock_file** on a file that isn't locked may result in a deadlock. For an example, see [_lock_file](lock-file.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

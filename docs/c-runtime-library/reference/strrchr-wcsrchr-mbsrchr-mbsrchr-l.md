@@ -1,8 +1,8 @@
 ---
 title: "strrchr, wcsrchr, _mbsrchr, _mbsrchr_l"
-ms.date: "11/04/2016"
-api_name: ["strrchr", "wcsrchr", "_mbsrchr", "_mbsrchr_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["strrchr", "wcsrchr", "_mbsrchr", "_mbsrchr_l", "_o__mbsrchr", "_o__mbsrchr_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsrchr", "_ftcsrchr", "strrchr", "wcsrchr", "_mbsrchr"]
@@ -98,6 +98,8 @@ In C, these functions take a **const** pointer for the first argument. In C++, t
 `_mbsrchr` validates its parameters. If *str* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to EINVAL and `_mbsrchr` returns 0. `strrchr` and `wcsrchr` do not validate their parameters. These three functions behave identically otherwise.
 
 The output value is affected by the setting of the LC_CTYPE category setting of the locale; for more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

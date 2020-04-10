@@ -1,8 +1,8 @@
 ---
 title: "getchar, getwchar"
-ms.date: "11/04/2016"
-api_name: ["getchar", "getwchar"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["getchar", "getwchar", "_o_getchar", "_o_getwchar"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["getwchar", "GetChar"]
@@ -29,6 +29,8 @@ Returns the character read. To indicate a read error or end-of-file condition, *
 Each routine reads a single character from **stdin** and increments the associated file pointer to point to the next character. **getchar** is the same as [_fgetchar](fgetc-fgetwc.md), but it is implemented as a function and as a macro.
 
 These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

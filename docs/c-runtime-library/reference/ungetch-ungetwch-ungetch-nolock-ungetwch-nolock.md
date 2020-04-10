@@ -1,8 +1,8 @@
 ---
 title: "_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock"
-ms.date: "11/04/2016"
-api_name: ["_ungetch_nolock", "_ungetwch_nolock", "_ungetwch", "_ungetch"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ungetch_nolock", "_ungetwch_nolock", "_ungetwch", "_ungetch", "_o__ungetch", "_o__ungetch_nolock", "_o__ungetwch", "_o__ungetwch_nolock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ungetch_nolock", "ungetwch", "ungetch_nolock", "_ungetwch", "ungetwch_nolock", "_ungetch", "_ungettch_nolock", "_ungettch", "_ungetwch_nolock"]
@@ -47,6 +47,8 @@ Both functions return the character *c* if successful. If there is an error, **_
 These functions push the character *c* back to the console, causing *c* to be the next character read by **_getch** or **_getche** (or **_getwch** or **_getwche**). **_ungetch** and **_ungetwch** fail if they are called more than once before the next read. The *c* argument may not be **EOF** (or **WEOF**).
 
 The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

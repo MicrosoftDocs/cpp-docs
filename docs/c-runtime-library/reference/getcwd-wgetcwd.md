@@ -1,9 +1,9 @@
 ---
 title: "_getcwd, _wgetcwd"
 description: C Runtime Library functions _getcwd, _wgetcwd get the current working directory.
-ms.date: "09/24/2019"
-api_name: ["_wgetcwd", "_getcwd"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wgetcwd", "_getcwd", "_o__getcwd", "_o__wgetcwd"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_getcwd", "wgetcwd", "_wgetcwd", "tgetcwd", "_tgetcwd"]
@@ -50,6 +50,8 @@ The **_getcwd** function gets the full path of the current working directory for
 **_wgetcwd** is a wide-character version of **_getcwd**; the *buffer* argument and return value of **_wgetcwd** are wide-character strings. **_wgetcwd** and **_getcwd** behave identically otherwise.
 
 When **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, calls to **_getcwd** and **_wgetcwd** are replaced by calls to **_getcwd_dbg** and **_wgetcwd_dbg** to allow for debugging memory allocations. For more information, see [_getcwd_dbg, _wgetcwd_dbg](getcwd-dbg-wgetcwd-dbg.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

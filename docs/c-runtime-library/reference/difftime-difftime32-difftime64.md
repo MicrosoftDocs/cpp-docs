@@ -1,8 +1,8 @@
 ---
 title: "difftime, _difftime32, _difftime64"
-ms.date: "11/04/2016"
-api_name: ["_difftime32", "difftime", "_difftime64"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_difftime32", "difftime", "_difftime64", "_o__difftime32", "_o__difftime64"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_difftime64", "difftime", "difftime64", "_difftime32", "difftime32"]
@@ -42,6 +42,8 @@ The time value supplied must fit within the range of **time_t**. **time_t** is a
 **difftime** is an inline function that evaluates to either **_difftime32** or **_difftime64** depending on whether **_USE_32BIT_TIME_T** is defined. _difftime32 and _difftime64 can be used directly to force the use of a particular size of the time type.
 
 These functions validate their parameters. If either of the parameters is zero or negative, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return 0 and set **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

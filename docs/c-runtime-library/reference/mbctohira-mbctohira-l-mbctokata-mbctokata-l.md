@@ -1,8 +1,8 @@
 ---
 title: "_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l"
-ms.date: "11/04/2016"
-api_name: ["_mbctohira", "_mbctohira_l", "_mbctokata", "_mbctokata_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbctohira", "_mbctohira_l", "_mbctokata", "_mbctokata_l", "_o__mbctohira", "_o__mbctohira_l", "_o__mbctokata", "_o__mbctokata_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbctokata", "mbctohira", "_mbctohira", "_mbctohira_l", "mbctokata", "mbctokata_l", "mbctohira_l", "_mbctokata_l"]
@@ -59,6 +59,8 @@ The **_mbctohira** and **_mbctokata** functions test a character *c* and, if pos
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale for this locale-dependent behavior and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In earlier versions, **_mbctohira** was named **jtohira** and **_mbctokata** was named **jtokata**. For new code, use the new names.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

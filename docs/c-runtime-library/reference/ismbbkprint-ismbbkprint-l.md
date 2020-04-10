@@ -1,8 +1,8 @@
 ---
 title: "_ismbbkprint, _ismbbkprint_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbbkprint", "_ismbbkprint_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbbkprint", "_ismbbkprint_l", "_o__ismbbkprint", "_o__ismbbkprint_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ismbbkprint_l", "ismbbkprint", "_ismbbkprint", "ismbbkprint_l"]
@@ -36,6 +36,10 @@ Locale to use.
 ## Return Value
 
 **_ismbbkprint** returns a nonzero value if the integer *c* is a non-ASCII text or non-ASCII punctuation symbol or 0 if it is not. For example, in code page 932 only, **_ismbbkprint** tests for katakana alphanumeric or katakana punctuation (range: 0xA1 - 0xDF). **_ismbbkprint** uses the current locale for locale-dependent character settings. **_ismbbkprint_l** is identical except that it uses the locale passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+## Remarks
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

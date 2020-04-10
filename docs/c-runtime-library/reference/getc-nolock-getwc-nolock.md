@@ -1,8 +1,8 @@
 ---
 title: "_getc_nolock, _getwc_nolock"
-ms.date: "11/04/2016"
-api_name: ["_getc_nolock", "_getwc_nolock"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_getc_nolock", "_getwc_nolock", "_o__getc_nolock", "_o__getwc_nolock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["getc_nolock", "_gettc_nolock", "_getc_nolock", "getwc_nolock", "gettc_nolock", "_getwc_nolock"]
@@ -36,6 +36,8 @@ See [getc, getwc](getc-getwc.md).
 ## Remarks
 
 These functions are identical to **getc** and **getwc** except that they do not lock the calling thread. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -1,8 +1,8 @@
 ---
 title: "log, logf, logl, log10, log10f, log10l"
-ms.date: "04/05/2018"
-api_name: ["log10f", "logf", "log10", "log", "log10l", "logl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["log10f", "logf", "log10", "log", "log10l", "logl", "_o_log", "_o_log10"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["logf", "logl", "_log10l", "log", "_logl", "log10f", "log10l", "log10"]
@@ -51,6 +51,8 @@ The **log** functions return the natural logarithm (base *e*) of *x* if successf
 ## Remarks
 
 C++ allows overloading, so you can call overloads of **log** and **log10** that take and return **float** or **long double** values. In a C program, **log** and **log10** always take and return a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

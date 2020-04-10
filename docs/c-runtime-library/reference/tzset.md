@@ -1,8 +1,8 @@
 ---
 title: "_tzset"
-ms.date: "11/04/2016"
-api_name: ["_tzset"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_tzset", "_o__tzset"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tzset"]
@@ -57,6 +57,8 @@ Based on the **TZ** environment variable value, the following values are assigne
 |**_tzname**[1]|String value of daylight-saving-time zone; empty if daylight-saving-time zone is omitted from **TZ** environmental variable.|PDT|
 
 The default values shown in the preceding table for **_daylight** and the **_tzname** array correspond to "PST8PDT." If the DST zone is omitted from the **TZ** environmental variable, the value of **_daylight** is 0 and the [_ftime](ftime-ftime32-ftime64.md), [gmtime](gmtime-gmtime32-gmtime64.md), and [localtime](localtime-localtime32-localtime64.md) functions return 0 for their DST flags.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

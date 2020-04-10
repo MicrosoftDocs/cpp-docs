@@ -1,8 +1,8 @@
 ---
 title: "_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbcpunct_l", "_ismbcblank", "_ismbcprint", "_ismbcgraph_l", "_ismbcblank_l", "_ismbcpunct", "_ismbcprint_l", "_ismbcspace_l", "_ismbcspace", "_ismbcgraph"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbcpunct_l", "_ismbcblank", "_ismbcprint", "_ismbcgraph_l", "_ismbcblank_l", "_ismbcpunct", "_ismbcprint_l", "_ismbcspace_l", "_ismbcspace", "_ismbcgraph", "_o__ismbcblank", "_o__ismbcblank_l", "_o__ismbcgraph", "_o__ismbcgraph_l", "_o__ismbcprint", "_o__ismbcprint_l", "_o__ismbcpunct", "_o__ismbcpunct_l", "_o__ismbcspace", "_o__ismbcspace_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ismbcspace", "_ismbcgraph", "_ismbcpunct", "ismbcspace_l", "ismbcgraph", "_ismbcgraph_l", "_ismbcprint", "_ismbcspace_l", "ismbcprint", "ismbcgraph_l", "ismbcspace", "ismbcpunct"]
@@ -81,6 +81,8 @@ Each of these functions tests a given multibyte character for a given condition.
 |**_ismbcpunct**|Punctuation|Returns nonzero if and only if *c* is a single-byte representation of any ASCII or katakana punctuation character.|
 |**_ismbcblank**|Space or horizontal tab|Returns nonzero if and only if *c* is a space or horizontal tab character: *c*=0x20 or *c*=0x09.|
 |**_ismbcspace**|White space|Returns nonzero if and only if *c* is a white-space character: *c*=0x20 or 0x09<=*c*<=0x0D.|
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

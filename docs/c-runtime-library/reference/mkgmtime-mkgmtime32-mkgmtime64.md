@@ -1,9 +1,9 @@
 ---
 title: "_mkgmtime, _mkgmtime32, _mkgmtime64"
 description: "Describes the _mkgmtime, _mkgmtime32, and _mkgmtime64 C Runtime library functions, and gives examples of how to use them."
-ms.date: "12/04/2019"
-api_name: ["_mkgmtime32", "_mkgmtime64", "_mkgmtime"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mkgmtime32", "_mkgmtime64", "_mkgmtime", "_o__mkgmtime32", "_o__mkgmtime64"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mkgmtime64", "mkgmtime32", "_mkgmtime32", "mkgmtime", "mkgmtime64", "_mkgmtime"]
@@ -48,6 +48,8 @@ The time structure passed in is changed as follows, in the same way as it's chan
 The range of the **_mkgmtime32** function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of **_mkgmtime64** is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of -1. The range of **_mkgmtime** depends on whether **_USE_32BIT_TIME_T** is defined. When it's not defined, which is the default, the range is the same as **_mkgmtime64**. Otherwise, the range is limited to the 32-bit range of **_mkgmtime32**.
 
 Both **gmtime** and **localtime** use a common static buffer for the conversion. If you supply this buffer to **_mkgmtime**, the previous contents are destroyed.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Examples
 

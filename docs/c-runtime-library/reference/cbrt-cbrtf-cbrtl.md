@@ -1,8 +1,8 @@
 ---
 title: "cbrt, cbrtf, cbrtl"
-ms.date: "04/05/2018"
-api_name: ["cbrt", "cbrtf", "cbrtl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["cbrt", "cbrtf", "cbrtl", "_o_cbrt", "_o_cbrtf"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cbrtl", "cbrt", "cbrtf"]
@@ -49,6 +49,8 @@ The **cbrt** functions return the cube-root of *x*.
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **cbrt** that take **float** or **long** **double** types. In a C program, **cbrt** always takes and returns **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
