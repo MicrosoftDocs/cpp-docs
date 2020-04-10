@@ -1,8 +1,8 @@
 ---
 title: "remquo, remquof, remquol"
-ms.date: "04/05/2018"
-api_name: ["remquof", "remquo", "remquol"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["remquof", "remquo", "remquol", "_o_remquo", "_o_remquof", "_o_remquol"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["remquof", "remquol", "remquo"]
@@ -46,6 +46,8 @@ A pointer to an integer to store a value that has the sign and approximate magni
 The **remquo** function calculates the floating-point remainder *f* of *x* / *y* such that *x* = *i* \* *y* + *f*, where *i* is an integer, *f* has the same sign as *x*, and the absolute value of *f* is less than the absolute value of *y*.
 
 C++ allows overloading, so you can call overloads of **remquo** that take and return **float** or **long** **double** values. In a C program, **remquo** always takes two **double** arguments and returns a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

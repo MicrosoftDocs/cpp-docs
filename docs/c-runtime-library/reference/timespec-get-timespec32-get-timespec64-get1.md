@@ -1,8 +1,8 @@
 ---
 title: "timespec_get, _timespec32_get, _timespec64_get1"
-ms.date: "11/04/2016"
-api_name: ["timespec_get", "_timespec32_get", "_timespec64_get"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["timespec_get", "_timespec32_get", "_timespec64_get", "_o__timespec32_get", "_o__timespec64_get"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["timespec_get", "_timespec32_get", "_timespec64_get", "time/timespec_get", "time/_timespec32_get", "time/_timespec64_get", "timespec", "_timespec32", "_timespec64"]
@@ -51,6 +51,8 @@ The **timespec_get** functions set the current time in the struct pointed to by 
 These functions support only **TIME_UTC** as the *base* value. This sets the *time_spec* value to the number of seconds and nanoseconds since the epoch start, Midnight, January 1, 1970, Coordinated Universal Time (UTC). In a **struct** **_timespec32**, **tv_sec** is a **__time32_t** value. In a **struct** **_timespec64**, **tv_sec** is a **__time64_t** value. In a **struct** **timespec**, **tv_sec** is a **time_t** type, which is 32 bits or 64 bits in length depending on whether the preprocessor macro  _USE_32BIT_TIME_T is defined. The **timespec_get** function is an inline function that calls **_timespec32_get** if _USE_32BIT_TIME_T is defined; otherwise it calls **_timespec64_get**.
 
 **End Microsoft Specific**
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

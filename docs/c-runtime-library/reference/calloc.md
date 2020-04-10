@@ -1,9 +1,9 @@
 ---
 title: "calloc"
 description: The C runtime library function calloc allocates zero-initialized memory.
-ms.date: "09/27/2019"
-api_name: ["calloc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["calloc", "_o_calloc"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["calloc"]
@@ -54,6 +54,8 @@ early in your program, or link with *NEWMODE.OBJ* (see [Link Options](../../c-ru
 When the application is linked with a debug version of the C run-time libraries, **calloc** resolves to [_calloc_dbg](calloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
 **calloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned isn't aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

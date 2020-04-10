@@ -1,8 +1,8 @@
 ---
 title: "_set_new_mode"
-ms.date: "11/04/2016"
-api_name: ["_set_new_mode"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_set_new_mode", "_o__set_new_mode"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["set_new_mode", "_set_new_mode"]
@@ -39,6 +39,8 @@ _set_new_mode(1);
 early in your program or link with Newmode.obj (see [Link Options](../../c-runtime-library/link-options.md)).
 
 This function validates its parameter. If *newhandlermode* is anything other than 0 or 1, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, <strong>_set_new_mode</strong> returns -1 and sets **errno** to `EINVAL`.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

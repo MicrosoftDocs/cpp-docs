@@ -1,8 +1,8 @@
 ---
 title: "wctomb_s, _wctomb_s_l"
-ms.date: "11/04/2016"
-api_name: ["_wctomb_s_l", "wctomb_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wctomb_s_l", "wctomb_s", "_o__wctomb_s_l", "_o_wctomb_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wctomb_s", "_wctomb_s_l"]
@@ -69,6 +69,8 @@ The **wctomb_s** function converts its *wchar* argument to the corresponding mul
 If **wctomb_s** converts the wide character to a multibyte character, it puts the number of bytes (which is never greater than **MB_CUR_MAX**) in the wide character into the integer pointed to by *pRetValue*. If *wchar* is the wide-character null character (L'\0'), **wctomb_s** fills *pRetValue* with 1. If the target pointer *mbchar* is **NULL**, **wctomb_s** puts 0 in *pRetValue*. If the conversion is not possible in the current locale, **wctomb_s** puts -1 in *pRetValue*.
 
 **wctomb_s** uses the current locale for locale-dependent information; **_wctomb_s_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

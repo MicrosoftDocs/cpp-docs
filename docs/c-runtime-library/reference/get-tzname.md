@@ -1,8 +1,8 @@
 ---
 title: "_get_tzname"
-ms.date: "10/22/2018"
-api_name: ["_get_tzname"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_get_tzname", "_o__get_tzname"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_get_tzname", "get_tzname"]
@@ -65,6 +65,8 @@ If either *timeZoneName* is **NULL**, or *sizeInBytes* is zero or less than zero
 ## Remarks
 
 The **_get_tzname** function retrieves the character string representation of the current time zone name or the daylight standard time zone name (DST) into the address of *timeZoneName* depending on the index value, along with the size of the string in *pReturnValue*. If *timeZoneName* is **NULL** and *sizeInBytes* is zero, the size of the string required to hold the specified time zone and a terminating null in bytes is returned in *pReturnValue*. The index values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values of *index* have undetermined results.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Example
 

@@ -1,8 +1,8 @@
 ---
 title: "strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l"
-ms.date: "11/04/2016"
-api_name: ["_mbslen", "_mbslen_l", "_mbstrlen", "wcslen", "_mbstrlen_l", "strlen"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_mbslen", "_mbslen_l", "_mbstrlen", "wcslen", "_mbstrlen_l", "strlen", "_o__mbslen", "_o__mbslen_l", "_o__mbstrlen", "_o__mbstrlen_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbstrlen", "wcslen", "_tcslen", "_ftcslen", "strlen", "_mbslen"]
@@ -58,6 +58,8 @@ Each of these functions returns the number of characters in *str*, excluding the
 **strlen** interprets the string as a single-byte character string, so its return value is always equal to the number of bytes, even if the string contains multibyte characters. **wcslen** is a wide-character version of **strlen**; the argument of **wcslen** is a wide-character string and the count of characters is in wide (two-byte) characters. **wcslen** and **strlen** behave identically otherwise.
 
 **Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

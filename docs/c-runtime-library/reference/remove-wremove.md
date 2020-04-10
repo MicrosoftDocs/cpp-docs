@@ -1,8 +1,8 @@
 ---
 title: "remove, _wremove"
-ms.date: "11/04/2016"
-api_name: ["_wremove", "remove"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wremove", "remove", "_o__wremove", "_o_remove"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["remove", "_wremove", "_tremove"]
@@ -38,6 +38,8 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 ## Remarks
 
 The **remove** function deletes the file specified by *path.* **_wremove** is a wide-character version of **_remove**; the *path* argument to **_wremove** is a wide-character string. **_wremove** and **_remove** behave identically otherwise. All handles to a file must be closed before it can be deleted.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

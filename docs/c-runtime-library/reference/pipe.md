@@ -1,8 +1,8 @@
 ---
 title: "_pipe"
-ms.date: "11/04/2016"
-api_name: ["_pipe"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_pipe", "_o__pipe"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["pipe", "_pipe"]
@@ -66,6 +66,8 @@ In multithreaded programs, no locking is performed. The file descriptors that ar
 To use the **_pipe** function to communicate between a parent process and a child process, each process must have only one descriptor open on the pipe. The descriptors must be opposites: if the parent has a read descriptor open, then the child must have a write descriptor open. The easiest way to do this is to bitwise or (**|**) the **_O_NOINHERIT** flag with *textmode*. Then, use **_dup** or **_dup2** to create an inheritable copy of the pipe descriptor that you want to pass to the child. Close the original descriptor, and then spawn the child process. On returning from the spawn call, close the duplicate descriptor in the parent process. For more information, see example 2 later in this article.
 
 In the Windows operating system, a pipe is destroyed when all of its descriptors have been closed. (If all read descriptors on the pipe have been closed, then writing to the pipe causes an error.) All read and write operations on the pipe wait until there is enough data or enough buffer space to complete the I/O request.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

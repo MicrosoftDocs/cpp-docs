@@ -1,8 +1,8 @@
 ---
 title: "_access_s, _waccess_s"
-ms.date: "11/04/2016"
-api_name: ["_access_s", "_waccess_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_access_s", "_waccess_s", "_o__access_s", "_o__waccess_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["waccess_s", "access_s", "_waccess_s", "_access_s"]
@@ -62,6 +62,8 @@ Permission to read or write the file is not enough to ensure the ability to open
 **_waccess_s** is a wide-character version of **_access_s**, where the *path* argument to **_waccess_s** is a wide-character string. Otherwise, **_waccess_s** and **_access_s** behave identically.
 
 These functions validate their parameters. If *path* is NULL or *mode* does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

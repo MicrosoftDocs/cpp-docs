@@ -1,9 +1,9 @@
 ---
 title: "getenv_s, _wgetenv_s"
 description: "Describes the Microsoft C runtime library getenv_s and _wgetenv_s functions."
-ms.date: "01/15/2020"
-api_name: ["getenv_s", "_wgetenv_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["getenv_s", "_wgetenv_s", "_o__wgetenv_s", "_o_getenv_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["getenv_s", "_tgetenv_s", "_wgetenv_s"]
@@ -96,6 +96,8 @@ When two copies of the environment (MBCS and Unicode) exist simultaneously in a 
 > The **_putenv_s** and **_getenv_s** families of functions are not thread-safe. **_getenv_s** could return a string pointer while **_putenv_s** is modifying the string and thereby cause random failures. Make sure that calls to these functions are synchronized.
 
 In C++, use of these functions is simplified by template overloads; the overloads can infer buffer length automatically and thereby eliminate the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

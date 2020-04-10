@@ -1,8 +1,8 @@
 ---
 title: "_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbcalpha", "_ismbcalnum", "_ismbcdigit", "_ismbcalnum_l", "_ismbcdigit_l", "_ismbcalpha_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbcalpha", "_ismbcalnum", "_ismbcdigit", "_ismbcalnum_l", "_ismbcdigit_l", "_ismbcalpha_l", "_o__ismbcalnum", "_o__ismbcalnum_l", "_o__ismbcalpha", "_o__ismbcalpha_l", "_o__ismbcdigit", "_o__ismbcdigit_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ismbcdigit", "ismbcalnum_l", "_ismbcdigit_l", "_ismbcalpha", "ismbcalnum", "ismbcdigit", "ismbcalpha", "_ismbcalnum_l", "_ismbcalnum", "ismbcdigit_l"]
@@ -71,6 +71,8 @@ The versions of these functions with the **_l** suffix are identical except that
 |**_ismbcalnum**, **_ismbcalnum_l**|Alphanumeric|Returns nonzero if and only if *c* is a single-byte representation of an ASCII English letter: See examples for **_ismbcdigit** and **_ismbcalpha**.|
 |**_ismbcalpha**, **_ismbcalpha_l**|Alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII English letter: 0x41<=*c*<=0x5A or 0x61<=*c*<=0x7A; or a katakana letter: 0xA6<=*c*<=0xDF.|
 |**_ismbcdigit**, **_ismbcdigit**|Digit|Returns nonzero if and only if *c* is a single-byte representation of an ASCII digit: 0x30<=*c*<=0x39.|
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

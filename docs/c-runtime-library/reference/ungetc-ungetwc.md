@@ -1,8 +1,8 @@
 ---
 title: "ungetc, ungetwc"
-ms.date: "11/04/2016"
-api_name: ["ungetwc", "ungetc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["ungetwc", "ungetc", "_o_ungetc", "_o_ungetwc"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ungettc", "ungetwc", "ungetc"]
@@ -51,6 +51,8 @@ Results are unpredictable if **ungetc** is called twice without a read or file-p
 **ungetwc** is a wide-character version of **ungetc**. However, on each successful **ungetwc** call against a text or binary stream, the value of the file-position indicator is unspecified until all pushed-back characters are read or discarded.
 
 These functions are thread-safe and lock sensitive data during execution. For a non-locking version, see [_ungetc_nolock, _ungetwc_nolock](ungetc-nolock-ungetwc-nolock.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

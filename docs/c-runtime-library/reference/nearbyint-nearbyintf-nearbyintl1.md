@@ -1,8 +1,8 @@
 ---
 title: "nearbyint, nearbyintf, nearbyintl"
-ms.date: "04/05/2018"
-api_name: ["nearbyint", "nearbyintf", "nearbyintl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["nearbyint", "nearbyintf", "nearbyintl", "_o_nearbyint", "_o_nearbyintf", "_o_nearbyintl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["nearbyint", "nearbyintf", "nearbyintl", "math/nearbyint", "math/narbyintf", "math/narbyintl"]
@@ -50,6 +50,8 @@ The primary difference between this function and [rint](rint-rintf-rintl.md) is 
 Because the maximum floating-point values are exact integers, this function will never overflow by itself; rather, the output may overflow the return value, depending on which version of the function you use.
 
 C++ allows overloading, so you can call overloads of **nearbyint** that take and return **float** or **long** **double** parameters. In a C program, **nearbyint** always takes two double values and returns a double value.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

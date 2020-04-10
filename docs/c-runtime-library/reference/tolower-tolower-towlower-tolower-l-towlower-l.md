@@ -1,8 +1,8 @@
 ---
 title: "tolower, _tolower, towlower, _tolower_l, _towlower_l"
-ms.date: "11/04/2016"
-api_name: ["_tolower_l", "towlower", "tolower", "_tolower", "_towlower_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_tolower_l", "towlower", "tolower", "_tolower", "_towlower_l", "_o__tolower", "_o__tolower_l", "_o__towlower_l", "_o_tolower", "_o_towlower"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_totlower", "tolower", "_tolower", "towlower"]
@@ -52,6 +52,8 @@ Each of these routines converts a copy of *c* to lower case if the conversion is
 Each of these routines converts a given uppercase letter to a lowercase letter if it is possible and relevant. The case conversion of **towlower** is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the **_l** suffix use the currently set locale. The versions of these functions that have the **_l** suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In order for **_tolower** to give the expected results, [__isascii](isascii-isascii-iswascii.md) and [isupper](isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

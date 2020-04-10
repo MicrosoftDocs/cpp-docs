@@ -1,8 +1,8 @@
 ---
 title: "_ismbbtrail, _ismbbtrail_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbbtrail", "_ismbbtrail_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbbtrail", "_ismbbtrail_l", "_o__ismbbtrail", "_o__ismbbtrail_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ismbbtrail", "ismbbtrail", "_ismbbtrail_l", "ismbbtrail_l"]
@@ -40,6 +40,8 @@ The locale to use.
 ## Remarks
 
 **_ismbbtrail** uses the current locale for locale-dependent behavior. **_ismbbtrail_l** is identical except that it uses the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "_get_osfhandle"
-ms.date: "05/29/2018"
-api_name: ["_get_osfhandle"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_get_osfhandle", "_o__get_osfhandle"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["get_osfhandle", "_get_osfhandle"]
@@ -38,6 +38,8 @@ For more information about **EBADF** and other error codes, see [_doserrno, errn
 ## Remarks
 
 To close a file whose operating system (OS) file handle is obtained by **_get_osfhandle**, call [_close](close.md) on the file descriptor *fd*. Never call **CloseHandle** on the return value of this function. The underlying OS file handle is owned by the *fd* file descriptor, and is closed when [_close](close.md) is called on *fd*. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](fclose-fcloseall.md) on that `FILE *` stream closes both the file descriptor and the underlying OS file handle. In this case, don't call [_close](close.md) on the file descriptor.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

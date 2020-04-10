@@ -1,8 +1,8 @@
 ---
 title: "tmpnam_s, _wtmpnam_s"
-ms.date: "11/04/2016"
-api_name: ["tmpnam_s", "_wtmpnam_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["tmpnam_s", "_wtmpnam_s", "_o__wtmpnam_s", "_o_tmpnam_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tmpnam_s", "_wtmpnam_s", "L_tmpnam_s"]
@@ -65,6 +65,8 @@ For **tmpnam_s**, you can store this generated file name in *str*. The maximum l
 **tmpnam_s** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the OEM code page obtained from the operating system. **_wtmpnam_s** is a wide-character version of **tmpnam_s**; the argument and return value of **_wtmpnam_s** are wide-character strings. **_wtmpnam_s** and **tmpnam_s** behave identically except that **_wtmpnam_s** does not handle multibyte-character strings.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

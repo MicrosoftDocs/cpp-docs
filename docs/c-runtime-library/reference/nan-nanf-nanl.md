@@ -1,8 +1,8 @@
 ---
 title: "nan, nanf, nanl"
-ms.date: "01/31/2019"
-api_name: ["nanf", "nan", "nanl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["nanf", "nan", "nanl", "_o_nan", "_o_nanf", "_o_nanl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["nan", "nanl", "nanf"]
@@ -33,6 +33,8 @@ The **nan** functions return a quiet NaN value.
 ## Remarks
 
 The **nan** functions return a floating-point value that corresponds to a quiet (non-signalling) NaN. The *input* value is ignored. For information about how a NaN is represented for output, see [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
