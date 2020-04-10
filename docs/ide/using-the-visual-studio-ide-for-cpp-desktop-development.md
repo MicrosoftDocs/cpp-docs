@@ -22,7 +22,7 @@ To get Visual Studio 2019, you can download it from [Visual Studio Downloads](ht
 
 **Visual Studio 2017 Installation**
 
-To get Visual Studio 2017, you can download it from [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Be sure to include the C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio) and set the version selector on the page to **Visual Studio 2017**.
+To get Visual Studio 2017, you can download it from [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Be sure to include the C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). To see the instructions for Visual Studio 2017, set the Visual Studio **Version** selector control to Visual Studio 2017. It's found at the top of the table of contents on the page.
 
 **Visual Studio 2015 Installation**
 
