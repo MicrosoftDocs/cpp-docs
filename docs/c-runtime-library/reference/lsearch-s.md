@@ -1,8 +1,8 @@
 ---
 title: "_lsearch_s"
-ms.date: "11/04/2016"
-api_name: ["_lsearch_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_lsearch_s", "_o__lsearch_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_lsearch_s", "lsearch_s"]
@@ -68,6 +68,8 @@ The **_lsearch_s** function performs a linear search for the value *key* in an a
 The *compare* function is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. The *compare* function also takes the pointer to the context as the first argument. **_lsearch_s** calls *compare* one or more times during the search, passing pointers to two array elements on each call. *compare* must compare the elements and then return either nonzero (meaning the elements are different) or 0 (meaning the elements are identical).
 
 The *context* pointer can be useful if the searched data structure is part of an object and the *compare* function needs to access members of the object. For example, code in the *compare* function can cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* pointer makes **_lsearch_s** more secure because additional context can be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

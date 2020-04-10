@@ -1,8 +1,8 @@
 ---
 title: "fread_s"
-ms.date: "11/04/2016"
-api_name: ["fread_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["fread_s", "_o_fread_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fread_s", "stdio/fread_s"]
@@ -52,6 +52,8 @@ For more information about error codes, see [_doserrno, errno, _sys_errlist, and
 The **fread_s** function reads up to *count* items of *elementSize* bytes from the input *stream* and stores them in *buffer*.  The file pointer that is associated with *stream* (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-line feed pairs are replaced with single line feed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.
 
 This function locks out other threads. If you require a non-locking version, use **_fread_nolock**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

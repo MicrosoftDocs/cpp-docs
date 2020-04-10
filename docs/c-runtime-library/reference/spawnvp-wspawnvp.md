@@ -1,8 +1,8 @@
 ---
 title: "_spawnvp, _wspawnvp"
-ms.date: "11/04/2016"
-api_name: ["_wspawnvp", "_spawnvp"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wspawnvp", "_spawnvp", "_o__spawnvp", "_o__wspawnvp"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wspawnvp", "_spawnvp", "wspawnvp"]
@@ -61,6 +61,8 @@ For more information about these, and other, return codes, see [errno, _doserrno
 Each of these functions creates a new process and executes it, and passes an array of pointers to command-line arguments and uses the **PATH** environment variable to find the file to execute.
 
 These functions validate their parameters. If either *cmdname* or *argv* is a null pointer, or if *argv* points to null pointer, or *argv*[0] is an empty string, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL**, and return -1. No new process is spawned.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

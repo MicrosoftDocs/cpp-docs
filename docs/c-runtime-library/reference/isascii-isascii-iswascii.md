@@ -1,8 +1,8 @@
 ---
 title: "isascii, __isascii, iswascii"
-ms.date: "11/04/2016"
-api_name: ["iswascii", "__isascii"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["iswascii", "__isascii", "_o_iswascii"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["iswascii", "istascii", "__isascii", "_istascii", "isascii", "ctype/isascii", "ctype/__isascii", "corecrt_wctype/iswascii"]
@@ -40,6 +40,8 @@ Each of these routines returns nonzero if **c** is a particular representation o
 Both **__isascii** and **iswascii** are implemented as macros unless the preprocessor macro _CTYPE_DISABLE_MACROS is defined.
 
 For backward compatibility, **isascii** is implemented as a macro only if [&#95;&#95;STDC&#95;&#95;](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise it is undefined.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

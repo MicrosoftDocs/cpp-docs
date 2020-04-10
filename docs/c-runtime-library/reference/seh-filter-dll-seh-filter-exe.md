@@ -1,8 +1,8 @@
 ---
 title: "_seh_filter_dll, _seh_filter_exe"
-ms.date: "11/04/2016"
-api_name: ["_XcptFilter", "_seh_filter_dll", "_seh_filter_exe"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_XcptFilter", "_seh_filter_dll", "_seh_filter_exe", "_o__seh_filter_dll", "_o__seh_filter_exe"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["XcptFilter", "_XcptFilter", "_seh_filter_dll", "_seh_filter_exe", "corecrt_startup/_seh_filter_exe", "corecrt_startup/_seh_filter_dll"]
@@ -54,6 +54,8 @@ These methods are called by the exception-filter expression of the [try-except S
 |STATUS_FLOAT_OVERFLOW|SIGFPE|
 |STATUS_FLOAT_STACK_CHECK|SIGFPE|
 |STATUS_FLOAT_UNDERFLOW|SIGFPE|
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

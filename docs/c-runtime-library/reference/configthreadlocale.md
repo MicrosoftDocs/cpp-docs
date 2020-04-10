@@ -1,8 +1,8 @@
 ---
 title: "_configthreadlocale"
-ms.date: "11/04/2016"
-api_name: ["_configthreadlocale"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_configthreadlocale", "_o__configthreadlocale"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_configthreadlocale", "configthreadlocale"]
@@ -43,6 +43,8 @@ These functions affect the behavior of **setlocale**, **_tsetlocale**, **_wsetlo
 If you use **_configurethreadlocale** to enable a per-thread locale, we recommend that you call **setlocale** or **_wsetlocale** to set the preferred locale in that thread immediately afterward.
 
 If *per_thread_locale_type* is not one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns -1.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

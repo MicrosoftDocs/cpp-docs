@@ -1,8 +1,8 @@
 ---
 title: "wctomb, _wctomb_l"
-ms.date: "11/04/2016"
-api_name: ["_wctomb_l", "wctomb"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_wctomb_l", "wctomb", "_o__wctomb_l", "_o_wctomb"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wctomb"]
@@ -44,6 +44,8 @@ If **wctomb** converts the wide character to a multibyte character, it returns t
 The **wctomb** function converts its *wchar* argument to the corresponding multibyte character and stores the result at *mbchar*. You can call the function from any point in any program. **wctomb** uses the current locale for any locale-dependent behavior; **_wctomb_l** is identical to **wctomb** except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 **wctomb** validates its parameters. If *mbchar* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns -1.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

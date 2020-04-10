@@ -1,9 +1,9 @@
 ---
 title: "setlocale, _wsetlocale"
 description: "Describes the Microsoft C runtime (CRT) library functions setlocale and _wsetlocale."
-ms.date: "01/28/2020"
-api_name: ["_wsetlocale", "setlocale"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_wsetlocale", "setlocale", "_o__wsetlocale", "_o_setlocale"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wsetlocale", "_tsetlocale", "setlocale"]
@@ -59,6 +59,8 @@ You can copy the string returned by **setlocale** to restore that part of the pr
 Use the **setlocale** function to set, change, or query some or all of the current program locale information specified by *locale* and *category*. *locale* refers to the locality (country/region and language) for which you can customize certain aspects of your program. Some locale-dependent categories include the formatting of dates and the display format for monetary values. If you set *locale* to the default string for a language that has multiple forms supported on your computer, you should check the **setlocale** return value to see which language is in effect. For example, if you set *locale* to "chinese" the return value could be either "chinese-simplified" or "chinese-traditional".
 
 **_wsetlocale** is a wide-character version of **setlocale**; the *locale* argument and return value of **_wsetlocale** are wide-character strings. **_wsetlocale** and **setlocale** behave identically otherwise.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

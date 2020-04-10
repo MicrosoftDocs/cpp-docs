@@ -1,8 +1,8 @@
 ---
 title: "_CItan"
-ms.date: "04/11/2018"
-api_name: ["_CItan"]
-api_location: ["msvcr100.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcrt.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_CItan", "_o__CItan"]
+api_location: ["msvcr100.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcrt.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_CItan", "CItan"]
@@ -24,6 +24,8 @@ void __cdecl _CItan();
 This version of the [tan](../c-runtime-library/reference/tan-tanf-tanl.md) function has a specialized calling convention that the compiler understands. The function speeds up the execution because it prevents copies from being generated and helps with register allocation.
 
 The resulting value is pushed onto the top of the floating-point stack.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

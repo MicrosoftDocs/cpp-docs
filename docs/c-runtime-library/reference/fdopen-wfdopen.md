@@ -1,8 +1,8 @@
 ---
 title: "_fdopen, _wfdopen"
-ms.date: "12/12/2017"
-api_name: ["_fdopen", "_wfdopen"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_fdopen", "_wfdopen", "_o__fdopen", "_o__wfdopen"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tfdopen", "_fdopen", "_wfdopen", "wfdopen", "tfdopen"]
@@ -45,6 +45,8 @@ For more information about these and other error codes, see [_doserrno, errno, _
 The **_fdopen** function associates an I/O stream with the file that is identified by *fd*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. **_wfdopen** is a wide-character version of **_fdopen**; the *mode* argument to **_wfdopen** is a wide-character string. **_wfdopen** and **_fdopen** otherwise behave identically.
 
 File descriptors passed into **_fdopen** are owned by the returned **FILE &#42;** stream. If **_fdopen** is successful, do not call [\_close](close.md) on the file descriptor. Calling [fclose](fclose-fcloseall.md) on the returned **FILE &#42;** also closes the file descriptor.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

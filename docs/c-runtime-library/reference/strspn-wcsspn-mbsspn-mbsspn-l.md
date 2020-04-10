@@ -1,8 +1,8 @@
 ---
 title: "strspn, wcsspn, _mbsspn, _mbsspn_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsspn_l", "wcsspn", "strspn", "_mbsspn"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_mbsspn_l", "wcsspn", "strspn", "_mbsspn", "_o__mbsspn", "_o__mbsspn_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftcsspn", "wcsspn", "_mbsspn", "_tcsspn", "strspn"]
@@ -60,6 +60,8 @@ The **strspn** function returns the index of the first character in *str* that d
 **wcsspn** and **_mbsspn** are wide-character and multibyte-character versions of **strspn**. The arguments of **wcsspn** are wide-character strings; those of **_mbsspn** are multibyte-character strings. **_mbsspn** validates its parameters. If *str* or *strCharSet* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, **_mbspn** sets **errno** to **EINVAL** and returns 0. **strspn** and **wcsspn** do not validate their parameters. These three functions behave identically otherwise.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

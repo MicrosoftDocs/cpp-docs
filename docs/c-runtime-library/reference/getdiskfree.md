@@ -1,8 +1,8 @@
 ---
 title: "_getdiskfree"
-ms.date: "11/04/2016"
-api_name: ["_getdiskfree"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_getdiskfree", "_o__getdiskfree"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["getdiskfree", "_getdiskfree"]
@@ -51,6 +51,8 @@ struct _diskfree_t {
 ```
 
 This function validates its parameters. If the *driveinfo* pointer is **NULL** or *drive* specifies an invalid drive, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **EINVAL** and sets **errno** to **EINVAL**. Valid drives range from 0 to 26. A *drive* value of 0 specifies the current drive; thereafter, numbers map to letters of the English alphabet such that 1 indicates drive A, 3 indicates drive C, and so on.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

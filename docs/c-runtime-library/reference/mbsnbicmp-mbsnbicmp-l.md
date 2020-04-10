@@ -1,8 +1,8 @@
 ---
 title: "_mbsnbicmp, _mbsnbicmp_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsnbicmp_l", "_mbsnbicmp"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbsnbicmp_l", "_mbsnbicmp", "_o__mbsnbicmp", "_o__mbsnbicmp_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbsnbicmp", "mbsnbicmp", "mbsnbicmp_l", "_mbsnbicmp_l"]
@@ -57,6 +57,8 @@ Two strings containing characters located between 'Z' and 'a' in the ASCII table
 **_mbsnbicmp** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. It is not affected by the current locale setting.
 
 If either *string1* or *string2* is a null pointer, **_mbsnbicmp** invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **_NLSCMPERROR** and sets **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -1,8 +1,8 @@
 ---
 title: "ftell, _ftelli64"
-ms.date: "11/04/2016"
-api_name: ["_ftelli64", "ftell"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ftelli64", "ftell", "_o__ftelli64", "_o_ftell"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftelli64", "ftell"]
@@ -44,6 +44,8 @@ Note that when a file is opened for appending data, the current file position is
 In text mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, **fopen** and all related routines check for a CTRL+Z at the end of the file and remove it if possible. This is done because using the combination of **ftell** and [fseek](fseek-fseeki64.md) or **_ftelli64** and [_fseeki64](fseek-fseeki64.md), to move within a file that ends with a CTRL+Z may cause **ftell** or **_ftelli64** to behave improperly near the end of the file.
 
 This function locks the calling thread during execution and is therefore thread-safe. For a non-locking version, see **_ftell_nolock**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

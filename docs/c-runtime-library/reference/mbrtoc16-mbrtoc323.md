@@ -1,8 +1,8 @@
 ---
 title: "mbrtoc16, mbrtoc323"
-ms.date: "10/22/2019"
-api_name: ["mbrtoc16", "mbrtoc32"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["mbrtoc16", "mbrtoc32", "_o_mbrtoc16", "_o_mbrtoc32"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbrtoc16", "mbrtoc32", "uchar/mbrtoc16", "uchar/mbrtoc32"]
@@ -66,6 +66,8 @@ If *source* is null, these functions return the equivalent of a call made using 
 If *source* isn't null, the function starts at the beginning of the string and inspects up to *max_bytes* bytes to determine the number of bytes required to complete the next UTF-8 multibyte character, including any shift sequences. If the examined bytes contain a valid and complete UTF-8 multibyte character, the function converts the character into the equivalent 16-bit or 32-bit wide character or characters. If *destination* isn't null, the function stores the first (and possibly only) result character in destination. If additional output characters are required, a value is set in *state*, so that subsequent calls to the function output the additional characters and return the value -3. If no more output characters are required, then *state* is set to the initial shift state.
 
 To convert non-UTF-8 multibyte characters to UTF-16 LE characters, use the [mbrtowc](mbrtowc.md), [mbtowc, or _mbtowc_l](mbtowc-mbtowc-l.md) functions.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

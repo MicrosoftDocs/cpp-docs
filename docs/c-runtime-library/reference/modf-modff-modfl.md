@@ -1,8 +1,8 @@
 ---
 title: "modf, modff, modfl"
-ms.date: "04/05/2018"
-api_name: ["modff", "modf", "modfl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["modff", "modf", "modfl", "_o_modf"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["modff", "_modfl", "modf", "modfl", "math/modf", "math/modff", "math/modfl"]
@@ -45,6 +45,8 @@ The **modf** functions break down the floating-point value *x* into fractional a
 **modf** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
 C++ allows overloading, so you can call overloads of **modf** that take and return **float** or **long** **double** parameters. In a C program, **modf** always takes two double values and returns a double value.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

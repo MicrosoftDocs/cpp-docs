@@ -1,8 +1,8 @@
 ---
 title: "_itoa_s, _itow_s functions"
-ms.date: "03/21/2018"
-api_name: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_itow_s", "_ltow_s", "_ultow_s", "_i64tow_s", "_ui64tow_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_itow_s", "_ltow_s", "_ultow_s", "_i64tow_s", "_ui64tow_s", "_o__i64toa_s", "_o__i64tow_s", "_o__itoa_s", "_o__itow_s", "_o__ltoa_s", "_o__ltow_s", "_o__ui64toa_s", "_o__ui64tow_s", "_o__ultoa_s", "_o__ultow_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_itow_s", "_ltow_s", "_ultow_s", "_i64tow_s", "_ui64tow_s", "_itot_s", "_ltot_s", "_ultot_s", "_i64tot_s", "_ui64tot_s", "itoa_s", "ltoa_s", "ultoa_s", "i64toa_s", "ui64toa_s", "itow_s", "ltow_s", "ultow_s", "i64tow_s", "ui64tow_s", "itot_s", "ltot_s", "ultot_s", "i64tot_s", "ui64tot_s"]
@@ -96,6 +96,8 @@ In C++, using these functions is simplified by template overloads; the overloads
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 The CRT includes convenient macros to define the size of the buffer required to convert the longest possible value of each integer type, including the null terminator and sign character, for several common bases. For information, see [Maximum conversion count macros](itoa-itow.md#maximum-conversion-count-macros).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

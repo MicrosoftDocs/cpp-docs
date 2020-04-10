@@ -1,8 +1,8 @@
 ---
 title: "isdigit, iswdigit, _isdigit_l, _iswdigit_l"
-ms.date: "11/04/2016"
-api_name: ["_isdigit_l", "iswdigit", "_iswdigit_l", "isdigit"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["_isdigit_l", "iswdigit", "_iswdigit_l", "isdigit", "_o_isdigit", "_o_iswdigit"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_iswdigit_l", "_isdigit_l", "iswdigit", "isdigit", "_istdigit", "_istdigit_l"]
@@ -54,6 +54,10 @@ The behavior of **isdigit** and **_isdigit_l** is undefined if *c* is not EOF or
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_istdigit**|**isdigit**|[_ismbcdigit](ismbcalnum-functions.md)|**iswdigit**|
 |**_istdigit_l**|**_isdigit_l**|[_ismbcdigit_l](ismbcalnum-functions.md)|**_iswdigit_l**|
+
+## Remarks
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

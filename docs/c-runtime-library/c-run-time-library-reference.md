@@ -25,6 +25,9 @@ Provides links to the global variables and standard types provided by the run-ti
 [Global Constants](../c-runtime-library/global-constants.md)<br/>
 Provides links to the global constants defined by the run-time library.
 
+[Global State](../c-runtime-library/global-state.md)<br/>
+Describes the scope of global state in the C run-time library.
+
 [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 Provides a table of contents entry point into an alphabetical listing of all C run-time library functions.
 

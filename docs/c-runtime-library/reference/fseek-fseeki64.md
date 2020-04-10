@@ -1,8 +1,8 @@
 ---
 title: "fseek, _fseeki64"
-ms.date: "11/04/2016"
-api_name: ["_fseeki64", "fseek"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_fseeki64", "fseek", "_o__fseeki64", "_o_fseek"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fseek", "_fseeki64"]
@@ -68,6 +68,8 @@ Also in text mode, CTRL+Z is interpreted as an end-of-file character on input. I
 When the CRT opens a file that begins with a Byte Order Mark (BOM), the file pointer is positioned after the BOM (that is, at the start of the file's actual content). If you have to **fseek** to the beginning of the file, use [ftell](ftell-ftelli64.md) to get the initial position and **fseek** to it rather than to position 0.
 
 This function locks out other threads during execution and is therefore thread-safe. For a non-locking version, see [_fseek_nolock, _fseeki64_nolock](fseek-nolock-fseeki64-nolock.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
