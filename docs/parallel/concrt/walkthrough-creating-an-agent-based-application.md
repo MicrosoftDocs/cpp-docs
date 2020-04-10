@@ -32,7 +32,7 @@ This walkthrough demonstrates how to perform the following tasks:
 
 ## <a name="createapplication"></a> Creating the Console Application
 
-This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. Make sure the version selector is set correctly in the upper left of this page.
+This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 

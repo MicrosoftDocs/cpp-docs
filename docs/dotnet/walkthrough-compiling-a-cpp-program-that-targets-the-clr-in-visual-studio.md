@@ -18,7 +18,7 @@ For this procedure, you can type your own C++ program or use one of the sample p
 
 ## Create a new project
 
-The following steps vary depending on which version of Visual Studio you are using. Make sure the version selector in the upper left of this page is set correctly.
+The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 

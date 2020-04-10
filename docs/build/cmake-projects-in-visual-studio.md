@@ -10,7 +10,7 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. This article assumes you're familiar with CMake. You can learn more about it at [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 > [!NOTE]
-> CMake has become more and more integrated with Visual Studio over the past few releases. To see the correct information for the version you are using, make sure the version selector in the upper left of this page is set correctly.
+> CMake has become more and more integrated with Visual Studio over the past few releases. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 
