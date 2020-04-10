@@ -1,8 +1,8 @@
 ---
 title: "_mbsnbcmp, _mbsnbcmp_l"
-ms.date: "11/04/2016"
-api_name: ["_mbsnbcmp", "_mbsnbcmp_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbsnbcmp", "_mbsnbcmp_l", "_o__mbsnbcmp", "_o__mbsnbcmp_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbsnbcmp", "tcsnbmp", "_mbsnbcmp_l", "mbsnbcmp_l", "_mbsnbcmp"]
@@ -64,6 +64,8 @@ The **_mbsnbcmp** functions compare at most the first *count* bytes in *string1*
 The output value is affected by the **LC_CTYPE** category setting of the locale, which specifies the lead bytes and trailing bytes of multibyte characters. For more information, see [setlocale](setlocale-wsetlocale.md). The **_mbsnbcmp** function uses the current locale for this locale-dependent behavior. The **_mbsnbcmp_l** function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If either *string1* or *string2* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **_NLSCMPERROR** and **errno** is set to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

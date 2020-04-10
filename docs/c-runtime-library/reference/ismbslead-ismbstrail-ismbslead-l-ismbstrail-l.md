@@ -1,8 +1,8 @@
 ---
 title: "_ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbstrail", "_ismbslead_l", "_ismbslead", "_ismbstrail_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbstrail", "_ismbslead_l", "_ismbslead", "_ismbstrail_l", "_o__ismbslead", "_o__ismbslead_l", "_o__ismbstrail", "_o__ismbstrail_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ismbslead", "ismbs", "ismbslead_l", "_ismbs", "ismbstrail_l", "ismbslead", "_ismbstrail", "_ismbstrail_l", "ismbstrail", "_ismbslead_l"]
@@ -59,6 +59,8 @@ The locale to use.
 **_ismbslead** and **_ismbstrail** are slower than the **_ismbblead** and **_ismbbtrail** versions because they take the string context into account.
 
 The versions of these functions that have the **_l** suffix are identical except that for their locale-dependent behavior they use the locale that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function"
-ms.date: "11/04/2016"
-api_name: ["_execute_onexit_table", "_initialize_onexit_table", "_register_onexit_function"]
-api_location: ["api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_execute_onexit_table", "_initialize_onexit_table", "_register_onexit_function", "_o__execute_onexit_table", "_o__initialize_onexit_table", "_o__register_onexit_function"]
+api_location: ["api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_execute_onexit_table", "process/_execute_onexit_table", "_initialize_onexit_table", "process/_initialize_onexit_table", "_register_onexit_function", "process/_register_onexit_function"]
@@ -51,6 +51,8 @@ The `_initialize_onexit_table` function initializes the onexit function table to
 The `_register_onexit_function` function appends a function to the end of the onexit function table.
 
 The `_execute_onexit_table` function executes all of the functions in the onexit function table, clears the table, and then returns. After a call to `_execute_onexit_table`, the table is in a non-valid state; it must be reinitialized by a call to `_initialize_onexit_table` before it is used again.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

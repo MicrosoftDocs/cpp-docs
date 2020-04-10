@@ -1,9 +1,9 @@
 ---
 title: "_mbclen, mblen, _mblen_l, _mbclen_l"
 description: "Describes the Microsoft C Runtime Library (CRT) _mbclen, mblen, _mblen_l, and _mbclen_l functions."
-ms.date: "01/08/2020"
-api_name: ["_mbclen", "mblen", "_mblen_l", "_mbclen_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbclen", "mblen", "_mblen_l", "_mbclen_l", "_o__mbclen", "_o__mbclen_l", "_o__mblen_l", "_o_mblen"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mblen", "ftclen", "_mbclen", "_mbclen_l", "tclen", "_ftclen", "_tclen", "mbclen"]
@@ -67,6 +67,8 @@ The **_mbclen** function returns the length, in bytes, of the multibyte characte
 The output value is affected by the **LC_CTYPE** category setting of the locale. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The **_l** suffixed versions behave the same, but they use the locale parameter passed in instead. For more information, see [setlocale](setlocale-wsetlocale.md) and [Locale](../../c-runtime-library/locale.md).
 
 **_mbclen**, **_mblen_l**, and **_mbclen_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mblen** or **mbrlen** instead.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

@@ -1,8 +1,8 @@
 ---
 title: "lround, lroundf, lroundl, llround, llroundf, llroundl"
-ms.date: "04/05/2018"
-api_name: ["llround", "llroundf", "llroundl", "lroundf", "lround", "lroundl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["llround", "llroundf", "llroundl", "lroundf", "lround", "lroundl", "_o_llround", "_o_llroundf", "_o_llroundl", "_o_lround", "_o_lroundf", "_o_lroundl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["lround", "lroundl", "llroundl", "llround", "lroundf", "llroundf"]
@@ -64,6 +64,8 @@ The **lround** and **llround** functions return the nearest **long** or **long**
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **lround** or **llround** that take and return **float** and **long** **double** values. In a C program, **lround** and **llround** always take and return a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

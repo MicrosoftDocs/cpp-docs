@@ -1,8 +1,8 @@
 ---
 title: "_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l"
-ms.date: "11/04/2016"
-api_name: ["_ismbclegal_l", "_ismbclegal", "_ismbcsymbol", "_ismbcsymbol_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbclegal_l", "_ismbclegal", "_ismbcsymbol", "_ismbcsymbol_l", "_o__ismbclegal", "_o__ismbclegal_l", "_o__ismbcsymbol", "_o__ismbcsymbol_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ismbcsymbol_l", "_ismbcsymbol_l", "_ismbcsymbol", "_ismbclegal_l", "_ismbclegal", "ismbclegal_l", "ismbcsymbol", "ismbclegal"]
@@ -57,6 +57,8 @@ The versions of these functions with the **_l** suffix are identical except that
 |-------------|--------------------|---------------------------|
 |**_ismbclegal**|Valid multibyte|Returns nonzero if and only if the first byte of *c* is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|
 |**_ismbcsymbol**|Multibyte symbol|Returns nonzero if and only if 0x8141<=*c*<=0x81AC.|
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

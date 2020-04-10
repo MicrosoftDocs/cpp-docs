@@ -1,8 +1,8 @@
 ---
 title: "memcpy_s, wmemcpy_s"
-ms.date: "11/04/2016"
-api_name: ["memcpy_s", "wmemcpy_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["memcpy_s", "wmemcpy_s", "_o_memcpy_s", "_o_wmemcpy_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wmemcpy_s", "memcpy_s"]
@@ -62,6 +62,8 @@ Zero if successful; an error code on failure.
 **memcpy_s** copies *count* bytes from *src* to *dest*; **wmemcpy_s** copies *count* wide characters (two bytes). If the source and destination overlap, the behavior of **memcpy_s** is undefined. Use **memmove_s** to handle overlapping regions.
 
 These functions validate their parameters. If *count* is non-zero and *dest* or *src* is a null pointer, or *destSize* is smaller than *count*, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** or **ERANGE** and set **errno** to the return value.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -1,8 +1,8 @@
 ---
 title: "atan, atanf, atanl, atan2, atan2f, atan2l"
-ms.date: "04/05/2018"
-api_name: ["atan2f", "atan2l", "atan2", "atanf", "atan", "atanl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["atan2f", "atan2l", "atan2", "atanf", "atan", "atanl", "_o_atan", "_o_atan2"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["atan", "atan2l", "atan2", "atanl", "atanf", "atan2f"]
@@ -55,6 +55,8 @@ The **atan** function calculates the arctangent (the inverse tangent function) o
 **atan** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
 
 Because C++ allows overloading, you can call overloads of **atan** and **atan2** that take **float** or **long** **double** arguments. In a C program, **atan** and **atan2** always take **double** arguments and return a **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

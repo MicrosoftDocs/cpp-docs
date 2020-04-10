@@ -1,8 +1,8 @@
 ---
 title: "ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64"
-ms.date: "11/04/2016"
-api_name: ["_ctime64", "_wctime32", "ctime", "_wctime64", "_ctime32", "_wctime"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ctime64", "_wctime32", "ctime", "_wctime64", "_ctime32", "_wctime", "_o__wctime32", "_o__wctime64"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wctime64", "_ctime32", "_tctime", "_wctime", "_wctime32", "_tctime64", "_ctime64", "ctime"]
@@ -58,6 +58,8 @@ A call to **ctime** modifies the single statically allocated buffer used by the 
 **_wctime** and **_wctime64** are the wide-character version of **ctime** and **_ctime64**; returning a pointer to wide-character string. Otherwise, **_ctime64**, **_wctime**, and **_wctime64** behave identically to **ctime**.
 
 These functions validate their parameters. If *sourceTime* is a null pointer, or if the *sourceTime* value is negative, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **NULL** and set **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

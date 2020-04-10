@@ -1,8 +1,8 @@
 ---
 title: "bsearch_s"
-ms.date: "10/22/2019"
-api_name: ["bsearch_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["bsearch_s", "_o_bsearch_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["bsearch_s"]
@@ -73,6 +73,8 @@ The **bsearch_s** function performs a binary search of a sorted array of *number
 |> 0|Key is greater than array element.|
 
 The *context* pointer may be useful if the searched data structure is part of an object, and the compare function needs to access members of the object. The *compare* function may cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* parameter makes **bsearch_s** more secure since additional context may be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

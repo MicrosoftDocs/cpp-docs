@@ -1,8 +1,8 @@
 ---
 title: "_putc_nolock, _putwc_nolock"
-ms.date: "11/04/2016"
-api_name: ["_putc_nolock", "_putwc_nolock"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_putc_nolock", "_putwc_nolock", "_o__putc_nolock", "_o__putwc_nolock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_puttc_nolock", "puttc_nolock", "putwc_nolock", "_putwc_nolock", "_putc_nolock", "putc_nolock"]
@@ -43,6 +43,8 @@ See **putc, putwc**.
 **_putc_nolock** and **_putwc_nolock** are identical to the versions without the **_nolock** suffix except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 **_putwc_nolock** is the wide-character version of **_putc_nolock**; the two functions behave identically if the stream is opened in ANSI mode. **_putc_nolock** doesn't currently support output into a UNICODE stream.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

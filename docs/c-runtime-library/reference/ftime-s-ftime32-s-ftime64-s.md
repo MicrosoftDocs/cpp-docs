@@ -1,8 +1,8 @@
 ---
 title: "_ftime_s, _ftime32_s, _ftime64_s"
-ms.date: "11/04/2016"
-api_name: ["_ftime_s", "_ftime64_s", "_ftime32_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ftime_s", "_ftime64_s", "_ftime32_s", "_o__ftime32_s", "_o__ftime64_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftime_s", "_ftime64_s", "ftime_s", "_ftime32_s", "ftime32_s", "ftime64_s"]
@@ -46,6 +46,8 @@ The **_ftime64_s** function, which uses the **__timeb64** structure, allows file
 The **_ftime_s** function is equivalent to **_ftime64_s**, and **_timeb** contains a 64-bit time, unless **_USE_32BIT_TIME_T** is defined, in which case the old behavior is in effect; **_ftime_s** uses a 32-bit time and **_timeb** contains a 32-bit time.
 
 **_ftime_s** validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

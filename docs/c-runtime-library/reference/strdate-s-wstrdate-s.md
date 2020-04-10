@@ -1,9 +1,9 @@
 ---
 title: "_strdate_s, _wstrdate_s"
 description: "_strdate_s and _wstrdate_s are secure CRT versions of the _strdate and _wstrdate functions that put the current date in a buffer."
-ms.date: "11/01/2019"
-api_name: ["_strdate_s", "_wstrdate_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_strdate_s", "_wstrdate_s", "_o__strdate_s", "_o__wstrdate_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_strdate_s", "wstrdate_s", "_wstrdate_s", "strdate_s", "_tstrdate_s"]
@@ -73,6 +73,8 @@ When *buffer* is a **NULL** pointer, or *size* is fewer than nine characters, th
 In C++, use of these functions is simplified by template overloads. The overloads can infer buffer length automatically, which eliminates the need to specify a *size* argument. And, they can automatically replace non-secure functions with their newer, more secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mapping:
 

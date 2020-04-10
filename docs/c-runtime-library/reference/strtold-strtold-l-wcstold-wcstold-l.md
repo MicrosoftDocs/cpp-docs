@@ -1,8 +1,8 @@
 ---
 title: "strtold, _strtold_l, wcstold, _wcstold_l"
-ms.date: "04/05/2018"
-api_name: ["wcstold", "strtold", "_strtold_l", "_wcstold_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["wcstold", "strtold", "_strtold_l", "_wcstold_l", "_o__strtold_l", "_o__wcstold_l", "_o_strtold", "_o_wcstold"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcstold_l", "_wcstold_l", "_tcstold", "strtold", "_strtold_l", "wcstold"]
@@ -57,6 +57,8 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 ## Remarks
 
 Each function converts the input string *strSource* to a **long** **double**. The **strtold** function stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character. The wide-character version of **strtold** is **wcstold**; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

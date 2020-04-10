@@ -1,8 +1,8 @@
 ---
 title: "asinh, asinhf, asinhl"
-ms.date: "04/05/2018"
-api_name: ["asinh", "asinhf", "asinhl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["asinh", "asinhf", "asinhl", "_o_asinh", "_o_asinhf", "_o_asinhl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["asinhf", "asinhl", "asinh"]
@@ -42,6 +42,8 @@ The **asinh** functions return the inverse hyberbolic sine (arc hyperbolic sine)
 ## Remarks
 
 When you use C++, you can call overloads of **asinh** that take and return **float** or **long** **double** values. In a C program, **asinh** always takes and returns **double**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

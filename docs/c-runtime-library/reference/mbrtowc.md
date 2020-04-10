@@ -1,8 +1,8 @@
 ---
 title: "mbrtowc"
-ms.date: "11/04/2016"
-api_name: ["mbrtowc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["mbrtowc", "_o_mbrtowc"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbrtowc"]
@@ -65,6 +65,8 @@ In this case, the value of the arguments *wchar* and *count* are ignored.
 If *mbchar* is not a null pointer, the function examines *count* bytes from *mbchar* to determine the required number of bytes that are required to complete the next multibyte character. If the next character is valid, the corresponding multibyte character is stored in *wchar* if it is not a null pointer. If the character is the corresponding wide null character, the resulting state of *mbstate* is the initial conversion state.
 
 The **mbrtowc** function differs from [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Example
 

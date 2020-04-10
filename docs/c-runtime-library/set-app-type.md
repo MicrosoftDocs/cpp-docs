@@ -1,8 +1,8 @@
 ---
 title: "_set_app_type"
-ms.date: "11/04/2016"
-api_name: ["_set_app_type"]
-api_location: ["api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_set_app_type", "_o__set_app_type"]
+api_location: ["api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_set_app_type", "corecrt_startup/_set_app_type"]
@@ -41,6 +41,8 @@ A value that indicates the application type. The possible values are:
 ## Remarks
 
 Normally, you do not need to call this function. It is part of the C runtime startup code that executes before `main` is called in your app.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 

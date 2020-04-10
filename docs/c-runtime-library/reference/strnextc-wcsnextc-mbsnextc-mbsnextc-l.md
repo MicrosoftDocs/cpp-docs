@@ -1,8 +1,8 @@
 ---
 title: "_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l"
-ms.date: "11/04/2016"
-api_name: ["_strnextc", "_mbsnextc_l", "_mbsnextc", "_wcsnextc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_strnextc", "_mbsnextc_l", "_mbsnextc", "_wcsnextc", "_o__mbsnextc", "_o__mbsnextc_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strnextc", "tcsnextc", "_mbsnextc_l", "_mbsnextc", "mbsnextc_l", "ftcsnextc", "mbsnextc", "_tcsnextc", "_wcsnextc", "_ftcsnextc", "_strnextc", "wcsnextc"]
@@ -53,6 +53,8 @@ The **_mbsnextc** function returns the integer value of the next multibyte chara
 If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns 0.
 
 **Security Note** This API incurs a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

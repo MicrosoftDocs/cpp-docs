@@ -1,8 +1,8 @@
 ---
 title: "_invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson"
-ms.date: "11/04/2016"
-api_name: ["_invalid_parameter", "_invalid_parameter_noinfo", "_invalid_parameter_noinfo_noreturn", "_invoke_watson"]
-api_location: ["api-ms-win-crt-runtime-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_invalid_parameter", "_invalid_parameter_noinfo", "_invalid_parameter_noinfo_noreturn", "_invoke_watson", "_o__invalid_parameter_noinfo", "_o__invalid_parameter_noinfo_noreturn"]
+api_location: ["api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT/_invalid_parameter", "_invalid_parameter", "CORECRT/_invalid_parameter_noinfo", "_invalid_parameter_noinfo", "CORECRT/_invalid_parameter_noinfo_noreturn", "_invalid_parameter_noinfo_noreturn", "CORECRT/_invoke_watson", "_invoke_watson"]
@@ -68,6 +68,8 @@ By default, when a non-valid parameter is identified in debug code, CRT library 
 The **_invalid_parameter** function checks whether a user-defined invalid parameter handler was set, and if so, calls it. For example, if a user-defined thread-local handler was set by a call to [set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) in the current thread, it is called, then the function returns. Otherwise, if a user-defined global invalid parameter handler was set by a call to [set_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md), it is called, then the function returns. Otherwise, the default handler **_invoke_watson** is called. The default behavior of **_invoke_watson** is to terminate the program. User-defined handlers may terminate or return. We recommend that user-defined handlers terminate the program unless recovery is certain.
 
 When the default handler **_invoke_watson** is called, if the processor supports a [__fastfail](../../intrinsics/fastfail.md) operation, it is invoked using a parameter of **FAST_FAIL_INVALID_ARG** and the process terminates. Otherwise, a fast fail exception is raised, which can be caught by an attached debugger. If the process is allowed to continue, it is terminated by a call to the Windows **TerminateProcess** function using an exception code status of **STATUS_INVALID_CRUNTIME_PARAMETER**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

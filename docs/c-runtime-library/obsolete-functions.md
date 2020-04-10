@@ -1,9 +1,9 @@
 ---
 title: "Obsolete functions"
 description: "Lists the obsolete functions that have been deprecated and removed from the Microsoft C runtime library (CRT)."
-ms.date: "12/09/2019"
-api_name: ["_beep", "_sleep", "_loaddll", "_getdllprocaddr", "_seterrormode", "is_wctype", "_getsystime", "_setsystime", "_unloaddll"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_beep", "_sleep", "_loaddll", "_getdllprocaddr", "_seterrormode", "is_wctype", "_getsystime", "_setsystime", "_unloaddll", "_o__beep", "_o__getdllprocaddr", "_o__getsystime", "_o__loaddll", "_o__seterrormode", "_o__setsystime", "_o__sleep", "_o__unloaddll", "_o_is_wctype"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["is_wctype", "_loaddll", "_unloaddll", "_getdllprocaddr", "_seterrormode", "_beep", "_sleep", "_getsystime", "corecrt_wctype/is_wctype", "process/_loaddll", "process/_unloaddll", "process/_getdllprocaddr", "stdlib/_seterrormode", "stdlib/_beep", "stdlib/_sleep", "time/_getsystime", "time/_setsystime"]

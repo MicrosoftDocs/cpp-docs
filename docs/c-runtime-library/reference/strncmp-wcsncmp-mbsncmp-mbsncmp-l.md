@@ -1,8 +1,8 @@
 ---
 title: "strncmp, wcsncmp, _mbsncmp, _mbsncmp_l"
-ms.date: "11/04/2016"
-api_name: ["strncmp", "_mbsncmp", "wcsncmp", "_mbsncmp_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+ms.date: "4/2/2020"
+api_name: ["strncmp", "_mbsncmp", "wcsncmp", "_mbsncmp_l", "_o__mbsncmp", "_o__mbsncmp_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftcsnccmp", "_ftcsncmp", "_tcsncmp", "_tcsnccmp", "strncmp", "_mbsncmp", "wcsncmp"]
@@ -78,6 +78,8 @@ The **strncmp** function performs an ordinal comparison of at most the first *co
 Also, **_mbsncmp** and **_mbsncmp_l** validate parameters. If *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbsncmp** and **_mbsncmp_l** return **_NLSCMPERROR** and set **errno** to **EINVAL**. **strncmp** and **wcsncmp** do not validate their parameters. These functions behave identically otherwise.
 
 The comparison behavior of **_mbsncmp** and **_mbsncmp_l** is affected by the setting of the **LC_CTYPE** category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [setlocale](setlocale-wsetlocale.md). The **_mbsncmp** function uses the current locale for this locale-dependent behavior. The **_mbsncmp_l** function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to **strncmp**.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

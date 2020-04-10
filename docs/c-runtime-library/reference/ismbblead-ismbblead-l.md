@@ -1,9 +1,9 @@
 ---
 title: "_ismbblead, _ismbblead_l"
 description: "Describes the Microsoft C Runtime Library (CRT) _ismbblead and _ismbblead_l functions."
-ms.date: "01/08/2020"
-api_name: ["_ismbblead_l", "_ismbblead"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_ismbblead_l", "_ismbblead", "_o__ismbblead", "_o__ismbblead_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ismbblead_l", "istlead", "_ismbblead", "_ismbblead_l", "ismbblead", "_istlead"]
@@ -47,6 +47,8 @@ Multibyte characters consist of a lead byte followed by a trailing byte. Lead by
 When the locale is UTF-8, **_ismbblead** and **_ismbblead_l** always return 0 (false), whether *c* is a lead byte or not.
 
 **_ismbblead** and **_ismbblead_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mbrlen** instead.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 

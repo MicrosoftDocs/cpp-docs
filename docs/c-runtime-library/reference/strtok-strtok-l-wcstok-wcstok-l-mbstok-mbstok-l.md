@@ -1,8 +1,8 @@
 ---
 title: "strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l"
-ms.date: "03/25/2019"
-api_name: ["_mbstok_l", "_mbstok", "wcstok", "_mbstok", "strtok", "_wcstok_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_mbstok_l", "_mbstok", "wcstok", "_mbstok", "strtok", "_wcstok_l", "_o__mbstok", "_o__mbstok_l", "_o_strtok", "_o_wcstok"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbstok", "strtok", "_tcstok", "wcstok"]
@@ -78,6 +78,8 @@ The versions of these functions without the **_l** suffix use the current locale
 
 > [!NOTE]
 > Each function uses a thread-local static variable for parsing the string into tokens. Therefore, multiple threads can simultaneously call these functions without undesirable effects. However, within a single thread, interleaving calls to one of these functions is highly likely to produce data corruption and inaccurate results. When parsing different strings, finish parsing one string before starting to parse the next. Also, be aware of the potential for danger when calling one of these functions from within a loop where another function is called. If the other function ends up using one of these functions, an interleaved sequence of calls will result, triggering data corruption.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

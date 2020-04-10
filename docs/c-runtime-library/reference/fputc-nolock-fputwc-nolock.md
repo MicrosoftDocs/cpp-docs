@@ -1,8 +1,8 @@
 ---
 title: "_fputc_nolock, _fputwc_nolock"
-ms.date: "11/04/2016"
-api_name: ["_fputwc_nolock", "_fputc_nolock"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_fputwc_nolock", "_fputc_nolock", "_o__fputc_nolock", "_o__fputwc_nolock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fputc_nolock", "fputwc_nolock", "fputc_nolock", "fputtc_nolock", "_fputwc_nolock", "_fputtc_nolock"]
@@ -43,6 +43,8 @@ Each of these functions returns the character written. For error information, se
 **_fputc_nolock** and **_fputwc_nolock** are identical to **fputc** and **fputwc**, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 The two functions behave identically if the stream is opened in ANSI mode. **_fputc_nolock** does not currently support output into a UNICODE stream.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
