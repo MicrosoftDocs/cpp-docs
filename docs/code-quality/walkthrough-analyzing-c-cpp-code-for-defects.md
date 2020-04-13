@@ -62,7 +62,7 @@ In this walkthrough, you'll:
      The solution builds without any errors or warnings.
 
      > [!NOTE]
-     > In Visual Studio 2017, you may see a spurious warning `E1097 unknown attribute "no_init_all"` in the IntelliSense engine. This warning may safely be ignored.
+     > In Visual Studio 2017, you may see a spurious warning `E1097 unknown attribute "no_init_all"` in the IntelliSense engine. You can safely ignore this warning.
 
 1. In **Solution Explorer**, select the CodeDefects project.
 

@@ -325,6 +325,6 @@ The solution is now complete and should build without errors.
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> In Visual Studio 2017, you may see a spurious warning `E1097 unknown attribute "no_init_all"` in the IntelliSense engine. This warning may safely be ignored.
+> In Visual Studio 2017, you may see a spurious warning `E1097 unknown attribute "no_init_all"` in the IntelliSense engine. You can safely ignore this warning.
 
 ::: moniker-end
