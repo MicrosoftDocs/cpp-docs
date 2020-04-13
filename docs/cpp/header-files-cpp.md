@@ -111,6 +111,7 @@ Use of the **using** directive will not necessarily cause an error, but can pote
 The following example shows the various kinds of declarations and definitions that are allowed in a header file:
 
 ```cpp
+// sample.h
 #pragma once
 #include <vector> // #include directive
 #include <string>
