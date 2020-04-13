@@ -10,7 +10,7 @@ ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 ---
 # Sample C++ project for code analysis
 
-This following procedures show you how to create the sample for [Walkthrough: Analyze C/C++ code for defects](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). The procedures create:
+The following procedures show you how to create the sample for [Walkthrough: Analyze C/C++ code for defects](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). The procedures create:
 
 - A Visual Studio solution named *CppDemo*.
 
@@ -22,13 +22,15 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 ## Create the CppDemo solution and the CodeDefects project
 
+::: moniker range=">=vs-2019"
+
 1. Open Visual Studio and select **Create a new project**
 
 1. In the **Create a new project** dialog, change the language filter to **C++**.
 
 1. Select **Windows Desktop Wizard** and choose the **Next** button.
 
-1. On the **Configure your new project** page, in the **Project name** text box, enter **CodeDefects**.
+1. On the **Configure your new project** page, in the **Project name** text box, enter *CodeDefects*.
 
 1. In the **Solution name** text box, enter *CppDemo*.
 
@@ -39,6 +41,54 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 1. Under **Additional options**, select **Empty project**.
 
 1. Choose **OK** to create the solution and project.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. Open Visual Studio. On the menu bar, choose **File** > **New** > **Project**.
+
+1. In the **New Project** dialog, select **Visual C++** > **Windows Desktop**.
+
+1. Select **Windows Desktop Wizard**.
+
+1. In the **Name** text box, enter *CodeDefects*.
+
+1. In the **Solution name** text box, enter *CppDemo*.
+
+1. Choose **OK**.
+
+1. In the **Windows Desktop Project** dialog, change the **Application type** to **Static Library (.lib)**.
+
+1. Under **Additional options**, select **Empty project**.
+
+1. Choose **OK** to create the solution and project.
+
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+1. Open Visual Studio. On the menu bar, choose **File** > **New** > **Project**.
+
+1. In the **New Project** dialog, select **Templates** > **Visual C++** > **Win32**.
+
+1. Select **Win32 Console Application**.
+
+1. In the **Name** text box, enter *CodeDefects*.
+
+1. In the **Solution name** text box, enter *CppDemo*.
+
+1. Choose **OK**.
+
+1. In the **Win32 Application Wizard** dialog, choose the **Next** button.
+
+1. Change the **Application type** to **Static library**.
+
+1. Under **Additional options**, unselect **Precompiled header**.
+
+1. Choose **Finish** to create the solution and project.
+
+::: moniker-end
 
 ## Add the header and source file to the CodeDefects project
 
@@ -69,7 +119,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
     const int ACCOUNT_DOMAIN_LEN = 128;
     ```
 
-1. In Solution Explorer, right-click to open the context menu for **Source Files**.  Choose **Add** > **New Item**.
+1. In Solution Explorer, right-click to open the context menu for **Source Files**. Choose **Add** > **New Item**.
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**.
 
@@ -147,6 +197,8 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 ## Add the Annotations project and configure it as a static library
 
+::: moniker range=">=vs-2019"
+
 1. In Solution Explorer, right-click **CppDemo** to open the context menu. Choose **Add** > **New Project**.
 
 1. In the **Add a new project** dialog box, select **Windows Desktop Wizard**, and then choose the **Next** button.
@@ -159,11 +211,53 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 1. Choose **OK** to create the project.
 
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. In Solution Explorer, right-click **CppDemo** to open the context menu. Choose **Add** > **New Project**.
+
+1. In the **Add New Project** dialog, select **Visual C++** > **Windows Desktop**.
+
+1. Select **Windows Desktop Wizard**.
+
+1. In the **Name** text box, enter *Annotations*, and then choose **OK**.
+
+1. In the **Windows Desktop Project** dialog, change the **Application type** to **Static Library (.lib)**.
+
+1. Under **Additional options**, select **Empty project**.
+
+1. Choose **OK** to create the project.
+
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+1. In Solution Explorer, right-click **CppDemo** to open the context menu. Choose **Add** > **New Project**.
+
+1. In the **Add New Project** dialog, select **Visual C++** > **Win32**.
+
+1. Select **Win32 Console Application**.
+
+1. In the **Name** text box, enter *Annotations*.
+
+1. Choose **OK**.
+
+1. In the **Win32 Application Wizard** dialog, choose the **Next** button.
+
+1. Change the **Application type** to **Static library**.
+
+1. Under **Additional options**, unselect **Precompiled header**.
+
+1. Choose **Finish** to create the project.
+
+::: moniker-end
+
 ## Add the header file and source file to the Annotations project
 
 1. In Solution Explorer, expand **Annotations**.
 
-1. Right-click to open the context menu for **Header Files**. Choose **Add** > **New Item**.
+1. Right-click to open the context menu for **Header Files** under **Annotations**. Choose **Add** > **New Item**.
 
 1. In the **Add New Item** dialog box, select **Visual C++** > **Code**, and then select **Header File (.h)**.
 
@@ -188,7 +282,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
     _Ret_maybenull_ LinkedList* AllocateNode();
     ```
 
-1. In Solution Explorer, right-click to open the context menu for **Source Files**.  Choose **Add** > **New Item**.
+1. In Solution Explorer, right-click to open the context menu for **Source Files** under **Annotations**. Choose **Add** > **New Item**.
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**.
 
@@ -227,3 +321,10 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 1. On the menu bar, choose **File** > **Save All**.
 
 The solution is now complete and should build without errors.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> In Visual Studio 2017, you may see a spurious warning `E1097 unknown attribute "no_init_all"` in the IntelliSense engine. This warning may safely be ignored.
+
+::: moniker-end

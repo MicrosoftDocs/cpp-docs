@@ -21,7 +21,11 @@ In this walkthrough, you'll:
 - A copy of the [CppDemo Sample](../code-quality/demo-sample.md).
 - Basic understanding of C/C++.
 
+## Run code analysis on native code
+
 ### To run code defect analysis on native code
+
+::: moniker range=">=vs-2019"
 
 1. Open the CppDemo solution in Visual Studio.
 
@@ -44,6 +48,37 @@ In this walkthrough, you'll:
 1. Rebuild the CodeDefects project.
 
      Code analysis warnings are displayed in the **Error List** window.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+1. Open the CppDemo solution in Visual Studio.
+
+     The CppDemo solution now populates **Solution Explorer**.
+
+1. On the **Build** menu, choose **Rebuild Solution**.
+
+     The solution builds without any errors or warnings.
+
+     > [!NOTE]
+     > In Visual Studio 2017, you may see a spurious warning `E1097 unknown attribute "no_init_all"` in the IntelliSense engine. This warning may safely be ignored.
+
+1. In **Solution Explorer**, select the CodeDefects project.
+
+1. On the **Project** menu, choose **Properties**.
+
+     The **CodeDefects Property Pages** dialog box is displayed.
+
+1. Select the **Code Analysis** property page.
+
+1. Select the **Enable Code Analysis on Build** check box. Choose **OK** to save your changes.
+
+1. Rebuild the CodeDefects project.
+
+     Code analysis warnings are displayed in the **Error List** window.
+
+::: moniker-end
 
 ### To analyze code defect warnings
 
@@ -70,16 +105,20 @@ In this walkthrough, you'll:
 1. Correct this warning by testing for equality. Your code should look similar to the following code:
 
    ```cpp
-   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != L'\\'))
    ```
 
-1. Correct the remaining two C6001 errors in the **Error List** by initializing `i` and `j` to 0.
+1. Correct the remaining C6001 warnings in the **Error List** by initializing `i` and `j` to 0.
 
 1. Rebuild the CodeDefects project.
 
      The project builds without any warnings or errors.
 
-### To correct the source code annotation warnings in annotation.c
+## Correct source code annotation warnings
+
+### To enable the source code annotation warnings in annotation.c
+
+::: moniker range=">=vs-2019"
 
 1. In Solution Explorer, select the Annotations project.
 
@@ -90,6 +129,24 @@ In this walkthrough, you'll:
 1. Select the **Code Analysis** property page.
 
 1. Change the **Enable Code Analysis on Build** property to **Yes**. Choose **OK** to save your changes.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+1. In Solution Explorer, select the Annotations project.
+
+1. On the **Project** menu, choose **Properties**.
+
+     The **Annotations Property Pages** dialog box is displayed.
+
+1. Select the **Code Analysis** property page.
+
+1. Select the **Enable Code Analysis on Build** check box. Choose **OK** to save your changes.
+
+::: moniker-end
+
+### To correct the source code annotation warnings in annotation.c
 
 1. Rebuild the Annotations project.
 
@@ -119,6 +176,8 @@ In this walkthrough, you'll:
 
      The project builds without any warnings or errors.
 
+## Use source code annotation to discover more issues
+
 ### To use source code annotation
 
 1. Annotate formal parameters and return value of the function `AddTail` to indicate the pointer values may be null:
@@ -127,13 +186,13 @@ In this walkthrough, you'll:
    _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
-1. On the **Build** menu, choose **Run Code Analysis on Annotations**.
+1. On the **Build** menu, choose **Run Code Analysis on Solution**.
 
 1. In the **Error List**, double-click the following warning:
 
      C6011: Dereferencing NULL pointer 'node'.
 
-     This warning indicates that the node passed into the function might be null. Double-click it to go to the location in the editor where the warning was raised.
+     This warning indicates that the node passed into the function might be null.
 
 1. To correct this warning, use an 'if' statement at the beginning of the function to test the passed in value. Your code should resemble the following code:
 
@@ -144,7 +203,7 @@ In this walkthrough, you'll:
    }
    ```
 
-1. On the **Build** menu, choose **Run Code Analysis on Annotations**.
+1. On the **Build** menu, choose **Run Code Analysis on Solution**.
 
      The project now builds without any warnings or errors.
 
