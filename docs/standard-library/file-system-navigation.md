@@ -6,7 +6,7 @@ ms.assetid: f7cc5f5e-a541-4e00-87c7-a3769ef6096d
 ---
 # File System Navigation
 
-The \<filesystem> header implements the C++ File System Technical Specification ISO/IEC TS 18822:2015 (Final draft: [ISO/IEC JTC 1/SC 22/WG 21 N4100](https://wg21.link/n4100)) and has types and functions that enable you to write platform-independent code for navigating the file system. Because it is cross-platform, it contains APIs that are not relevant for Windows systems. For example, this means that `is_fifo(const path&)` always returns **false** on Windows.
+The \<filesystem> header implements the C++ File System Technical Specification ISO/IEC TS 18822:2015 (Final draft: [ISO/IEC JTC 1/SC 22/WG 21 N4100](https://wg21.link/n4100)) and has types and functions that enable you to write platform-independent code for navigating the file system. Because it's cross-platform, it contains APIs that aren't relevant for Windows systems. For example, `is_fifo(const path&)` always returns **false** on Windows.
 
 ## Overview
 
@@ -18,7 +18,7 @@ Use the \<filesystem> APIs for the following tasks:
 
 - compose, decompose, and compare paths
 
-- create, copy and delete directories
+- create, copy, and delete directories
 
 - copy and delete files
 
@@ -28,7 +28,7 @@ For more information about File IO using the Standard Library, see [iostream Pro
 
 ### Constructing and composing paths
 
-Paths in Windows (since XP) are stored natively in Unicode. The [path](../standard-library/path-class.md) class automatically performs all necessary string conversions. It accepts arguments of both wide and narrow character arrays, as well as `std::string` and `std::wstring` types formatted as UTF8 or UTF16. The `path` class also automatically normalizes path separators. You can use a single forward slash as a directory separator in constructor arguments. This enables you to use the same strings to store paths in both Windows and UNIX environments:
+Paths in Windows (since XP) are stored natively in Unicode. The [path](../standard-library/path-class.md) class automatically does all necessary string conversions. It accepts arguments of both wide and narrow character arrays, and both `std::string` and `std::wstring` types formatted as UTF8 or UTF16. The `path` class also automatically normalizes path separators. You can use a single forward slash as a directory separator in constructor arguments. This separator lets you use the same strings to store paths in both Windows and UNIX environments:
 
 ```cpp
 path pathToDisplay(L"/FileSystemTest/SubDir3");     // OK!
@@ -45,7 +45,7 @@ myRoot /= path("SubDirRoot");      // C:/FileSystemTest/SubDirRoot
 
 ### Examining paths
 
-The path class has several methods that return information about various parts of the path itself, as distinct from the file system entity it might refer to. You can get the root, the relative path, the file name, the file extension, and more. You can iterate over a path object to examine all the folders in the hierarchy. The following example shows how to iterate over a path (not the directory it refers to), and to retrieve information about its parts.
+The path class has several methods that return information about various parts of the path itself. This information is distinct from the information about the file system entity it might refer to. You can get the root, the relative path, the file name, the file extension, and more. You can iterate over a path object to examine all the folders in the hierarchy. The following example shows how to iterate over a path object. And, how to retrieve information about its parts.
 
 ```cpp
 // filesystem_path_example.cpp
@@ -114,7 +114,7 @@ extension() = .txt
 
 ### Comparing paths
 
-The `path` class overloads the same comparison operators as `std::string` and `std::wstring`. When you compare two paths, you are performing a string comparison after the separators have been normalized. If a trailing slash (or backslash) is missing it is not added and affects the comparison. The following example demonstrates how path values compare:
+The `path` class overloads the same comparison operators as `std::string` and `std::wstring`. When you compare two paths, you make a string comparison after the separators have been normalized. If a trailing slash (or backslash) is missing, it isn't added, and that affects the comparison. The following example demonstrates how path values compare:
 
 ```cpp
 wstring ComparePaths()
@@ -149,7 +149,7 @@ To run this code, paste it into the full example above before `main` and uncomme
 
 ### Converting between path and string types
 
-A `path` object is implicitly convertible to `std::wstring` or `std::string`. This means you can pass a path to functions such as [wofstream::open](../standard-library/basic-ofstream-class.md#open), as shown in this example:
+A `path` object is implicitly convertible to `std::wstring` or `std::string`. It means you can pass a path to functions such as [wofstream::open](../standard-library/basic-ofstream-class.md#open), as shown in this example:
 
 ```cpp
 // filesystem_path_conversion.cpp
@@ -204,4 +204,4 @@ Press Enter to exit
 
 The \<filesystem> header provides the [directory_iterator](../standard-library/directory-iterator-class.md) type to iterate over single directories, and the [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) class to iterate recursively over a directory and its subdirectories. After you construct an iterator by passing it a `path` object, the iterator points to the first directory_entry in the path. Create the end iterator by calling the default constructor.
 
-When iterating through a directory, there are several kinds of items you might encounter, including but not limited to directories, files, symbolic links, and socket files. The `directory_iterator` returns its items as [directory_entry](../standard-library/directory-entry-class.md) objects.
+When iterating through a directory, there are several kinds of items you might discover. These items include directories, files, symbolic links, socket files, and others. The `directory_iterator` returns its items as [directory_entry](../standard-library/directory-entry-class.md) objects.
