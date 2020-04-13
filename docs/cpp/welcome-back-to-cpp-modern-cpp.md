@@ -138,7 +138,7 @@ int main()
 Macros in C and C++ are tokens that are processed by the preprocessor before compilation. Each instance of a macro token is replaced with its defined value or expression before the file is compiled. Macros are commonly used in C-style programming to define compile-time constant values. However, macros are error-prone and difficult to debug. In modern C++, you should prefer [constexpr](constexpr-cpp.md) variables for compile-time constants:
 
 ```cpp
-#define SIZE 10 / C-style
+#define SIZE 10 // C-style
 constexpr int size = 10; // modern C++
 ```
 
