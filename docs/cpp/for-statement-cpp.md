@@ -1,6 +1,8 @@
 ---
 title: "for Statement (C++)"
-ms.date: "11/04/2016"
+description: "Reference to the Standard C++ for statement in Microsoft Visual Studio C++."
+f1_keywords: ["for_cpp"]
+ms.date: "04/14/2020"
 helpviewer_keywords: ["for keyword [C++]"]
 ms.assetid: 6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a
 ---
@@ -10,10 +12,8 @@ Executes a statement repeatedly until the condition becomes false. For informati
 
 ## Syntax
 
-```
-for ( init-expression ; cond-expression ; loop-expression )
-    statement;
-```
+> **`for (`** *init-expression* **`;`** *cond-expression* **`;`** *loop-expression* **`)`**\
+> &nbsp;&nbsp;&nbsp;&nbsp;_statement_**`;`**
 
 ## Remarks
 
@@ -93,9 +93,9 @@ for (int i = 10; i > 0; i--) {
 
 A **for** loop terminates when a [break](../cpp/break-statement-cpp.md), [return](../cpp/return-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md) (to a labeled statement outside the **for** loop) within `statement` is executed. A [continue](../cpp/continue-statement-cpp.md) statement in a **for** loop terminates only the current iteration.
 
-If `cond-expression` is omitted, it is considered true and the **for** loop will not terminate without a **break**, **return**, or **goto** within `statement`.
+If `cond-expression` is omitted, it's considered `true`, and the **for** loop won't terminate without a **break**, **return**, or **goto** within `statement`.
 
-Although the three fields of the **for** statement are normally used for initialization, testing for termination, and incrementing, they are not restricted to these uses. For example, the following code prints the numbers 0 through 4. In this case, `statement` is the null statement:
+Although the three fields of the **for** statement are normally used for initialization, testing for termination, and incrementing, they're not restricted to these uses. For example, the following code prints the numbers 0 through 4. In this case, `statement` is the null statement:
 
 ```cpp
 #include <iostream>
@@ -125,7 +125,7 @@ By default, under [/Ze](../build/reference/za-ze-disable-language-extensions.md)
 
 [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) enables standard behavior of variables declared in for loops without needing to specify `/Za`.
 
-It is also possible to use the scoping differences of the **for** loop to redeclare variables under `/Ze` as follows:
+It's also possible to use the scoping differences of the **for** loop to redeclare variables under `/Ze` as follows:
 
 ```cpp
 // for_statement5.cpp
@@ -137,7 +137,7 @@ int main(){
 }
 ```
 
-This more closely mimics the standard behavior of a variable declared in a **for** loop, which requires variables declared in a **for** loop to go out of scope after the loop is done. When a variable is declared in a **for** loop, the compiler internally promotes it to a local variable in the **for** loop's enclosing scope even if there is already a local variable with the same name.
+This behavior more closely mimics the standard behavior of a variable declared in a **for** loop, which requires variables declared in a **for** loop to go out of scope after the loop is done. When a variable is declared in a **for** loop, the compiler internally promotes it to a local variable in the **for** loop's enclosing scope. It's promoted even if there's already a local variable with the same name.
 
 ## See also
 
