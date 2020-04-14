@@ -457,7 +457,7 @@
           href: build/how-to-integrate-custom-tools-into-the-project-properties.md
         - name: "How to: Modify the target framework and platform toolset"
           href: build/how-to-modify-the-target-framework-and-platform-toolset.md
-    - name: "Walkthrough: Creating and using a static library (C++)"
+    - name: "Walkthrough: Create and use a static library (C++)"
       href: build/walkthrough-creating-and-using-a-static-library-cpp.md
     - name: Building C++ DLLs in Visual Studio
       expanded: false

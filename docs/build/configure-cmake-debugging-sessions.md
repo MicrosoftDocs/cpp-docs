@@ -34,7 +34,7 @@ You can customize the debugger settings for any executable CMake target in your 
 
 - **Targets View:** Navigate to **Targets View** in Solution Explorer. Then, right-click on a debug target and select **Add Debug Configuration** to customize the debug configuration specific to the selected target.
 
-![Targets view entry point](media/cmake-targets-add-debug.png "Targets view entry point")
+![Targets view entry point](media/cmake-targets-add-debug-configuration.png "Targets view entry point")
 
 - **Root CMakeLists.txt:** Right-click on a root *CMakeLists.txt* and select **Add Debug Configuration** to open the **Select a Debugger** dialog box. The dialog allows you to add *any* type of debug configuration, but you must manually specify the CMake target to invoke via the `projectTarget` property.
 
