@@ -39,9 +39,9 @@ Clears the previous option argument. For example, **`/EHsc-`** is interpreted as
 
 ## Remarks
 
-### Default behavior
+### Default exception handling behavior
 
-The compiler always generates code that supports asynchronous structured exception handling (SEH). By default (that is, if no **`/EHsc`**, **`/EHs`**, or **`/EHa`** option is specified), the compiler supports SEH handlers in the native C++ `catch(...)` clause. However, it also generates code that only partially supports C++ exceptions. The default exception unwinding code doesn't destroy automatic C++ objects outside of **try** blocks that go out of scope because of an exception. Resource leaks and undefined behavior may result when a C++ exception is thrown.
+The compiler always generates code that supports asynchronous structured exception handling (SEH). By default (that is, if no **`/EHsc`**, **`/EHs`**, or **`/EHa`** option is specified), the compiler supports SEH handlers in the native C++ `catch(...)` clause. However, it also generates code that only partially supports C++ exceptions. The default exception unwinding code doesn't destroy automatic C++ objects outside of [try](../../cpp/try-throw-and-catch-statements-cpp.md) blocks that go out of scope because of an exception. Resource leaks and undefined behavior may result when a C++ exception is thrown.
 
 ### Standard C++ exception handling
 
@@ -53,12 +53,12 @@ When you use **`/EHs`** or **`/EHsc`**, the compiler assumes that exceptions can
 
 ### Structured and standard C++ exception handling
 
-The **`/EHa`** compiler option enables safe stack unwinding for both asynchronous exceptions and C++ exceptions. It supports handling of both standard C++ and structured exceptions by using the native C++ `catch(...)` clause. To implement SEH without specifying **`/EHa`**, you may use the **__try**, **__except**, and **__finally** syntax.
+The **`/EHa`** compiler option enables safe stack unwinding for both asynchronous exceptions and C++ exceptions. It supports handling of both standard C++ and structured exceptions by using the native C++ `catch(...)` clause. To implement SEH without specifying **`/EHa`**, you may use the **__try**, **__except**, and **__finally** syntax. For more information, see [Structured exception handling](../../cpp/structured-exception-handling-c-cpp.md).
 
 > [!IMPORTANT]
 > Specifying **`/EHa`** and trying to handle all exceptions by using `catch(...)` can be dangerous. In most cases, asynchronous exceptions are unrecoverable and should be considered fatal. Catching them and proceeding can cause process corruption and lead to bugs that are hard to find and fix.
 >
-> Even though Windows and Visual C++ support SEH, we strongly recommend that you use ISO-standard C++ exception handling (**`/EHsc`** or **`/EHs`**). It makes your code more portable and flexible. There may still be times you have to use SEH in legacy code or for particular kinds of programs. It's required in code compiled to support the common language runtime ([/clr](clr-common-language-runtime-compilation.md)), for example. For more information, see [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md).
+> Even though Windows and Visual C++ support SEH, we strongly recommend that you use ISO-standard C++ exception handling (**`/EHsc`** or **`/EHs`**). It makes your code more portable and flexible. There may still be times you have to use SEH in legacy code or for particular kinds of programs. It's required in code compiled to support the common language runtime ([/clr](clr-common-language-runtime-compilation.md)), for example. For more information, see [Structured exception handling](../../cpp/structured-exception-handling-c-cpp.md).
 >
 > We recommend that you never link object files compiled using **`/EHa`** to ones compiled using **`/EHs`** or **`/EHsc`** in the same executable module. If you have to handle an asynchronous exception by using **`/EHa`** anywhere in your module, use **`/EHa`** to compile all the code in the module. You can use structured exception handling syntax in the same module as code that's compiled by using **`/EHs`**. However, you can't mix the SEH syntax with C++ **try**, **throw**, and **catch** in the same function.
 
@@ -115,7 +115,7 @@ The **`/EHr`** option forces runtime termination checks in all functions that ha
 
 A non-throwing attribute isn't a guarantee that exceptions can't be thrown by a function. Unlike the behavior of a **noexcept** function, the MSVC compiler considers an exception thrown by a function declared using `throw()`, `__declspec(nothrow)`, or **extern "C"** as undefined behavior. Functions that use these three declaration attributes don't enforce runtime termination checks for exceptions. You can use the **`/EHr`** option to help you identify this undefined behavior, by forcing the compiler to generate runtime checks for unhandled exceptions that escape a **noexcept** function.
 
-## Set the compiler option in Visual Studio or programmatically
+## Set the option in Visual Studio or programmatically
 
 ### To set this compiler option in the Visual Studio development environment
 
