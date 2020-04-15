@@ -25,7 +25,7 @@ The Microsoft C++ compiler (MSVC) supports three kinds of exception handling:
 
    Since version 3.0, MFC has used C++ exceptions. It still supports its older exception handling macros, which are similar to C++ exceptions in form. For advice about mixing MFC macros and C++ exceptions, see [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
 
-Use an [/EH](../build/reference/eh-exception-handling-model.md) compiler option to specify the type of exception handling to use in a Visual Studio C++ project. C++ exception handling is the default in new projects.
+Use an [/EH](../build/reference/eh-exception-handling-model.md) compiler option to specify the exception handling model to use in a C++ project. Standard C++ exception handling (**/EHsc**) is the default in new C++ projects in Visual Studio.
 
 We don't recommend you mix the exception handling mechanisms. For example, don't use C++ exceptions with structured exception handling. Using C++ exception handling exclusively makes your code more portable, and it allows you to handle exceptions of any type. For more information about the drawbacks of structured exception handling, see [Structured Exception Handling](structured-exception-handling-c-cpp.md).
 
