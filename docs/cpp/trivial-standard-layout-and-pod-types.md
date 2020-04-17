@@ -26,7 +26,7 @@ The following examples show trivial types. In Trivial2, the presence of the `Tri
 ```cpp
 struct Trivial
 {
-      int i;
+   int i;
 private:
    int j;
 };
@@ -36,7 +36,7 @@ struct Trivial2
    int i;
    Trivial2(int a, int b) : i(a), j(b) {}
    Trivial2() = default;
-   private:
+private:
    int j;   // Different access control
 };
 ```
@@ -131,15 +131,15 @@ protected:
 // Neither trivial nor standard-layout
 struct A : B
 {
-      int a;
+   int a;
    int b;
    void Foo() override {} // Virtual function
 };
 
 // Trivial but not standard-layout
 struct C
-   {
-      int a;
+{
+   int a;
 private:
    int b;   // Different access control
 };
