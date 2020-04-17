@@ -29,7 +29,7 @@ struct Trivial
       int i;
 private:
    int j;
-   };
+};
 
 struct Trivial2
 {
