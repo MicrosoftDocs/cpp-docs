@@ -14,8 +14,8 @@ The UCRT's global state is not shared between applications and the OS. For examp
 
 In the UCRT, functions that interact with global state have a "twin" function, prefixed with `_o_`. For example:
 
-    `setlocale()` affects global state specific to the app.
-    `_o_setlocale()` affects global state shared by all OS components, but not apps.
+- `setlocale()` affects global state specific to the app.
+- `_o_setlocale()` affects global state shared by all OS components, but not apps.
 
 The only difference between these "twin" functions is that when they read/write the global CRT state, the OS-specific versions (that is, the versions that start with `_o_`) use the OS copy of global state instead of the app's copy of global state.
 
