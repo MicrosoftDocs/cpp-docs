@@ -225,7 +225,7 @@ virtual void OnFinishAnimation();
 
 Define the longest text that can be displayed in the status bar pane without truncation.
 
-```
+```cpp
 void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 ```
 
@@ -242,7 +242,7 @@ The library calculates the size of text that *lpszAlmostLargeText* specifies and
 
 Attaches to the status bar pane an image list that can be used for animation.
 
-```
+```cpp
 void SetAnimationList(
     HBITMAP hBmpAnimationList,
     int cxAnimation=16,
@@ -276,7 +276,7 @@ TRUE if the image list is successfully attached to the status bar pane; FALSE ot
 
 Sets the text alignment of the label of the status bar pane.
 
-```
+```cpp
 void SetTextAlign(int nAlign);
 ```
 
@@ -299,7 +299,7 @@ void SetTextAlign(int nAlign);
 
 Starts the animation that you assign to the pane.
 
-```
+```cpp
 void StartAnimation(
     UINT nFrameDelay=500,
     UINT nDuration=-1);
@@ -321,7 +321,7 @@ You must specify a handle to an image list before you call `StartAnimation` by u
 
 Stops the animation that you assigned to the status bar pane.
 
-```
+```cpp
 void StopAnimation();
 ```
 

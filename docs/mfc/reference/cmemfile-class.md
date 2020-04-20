@@ -97,7 +97,7 @@ The default implementation uses the run-time library function [malloc](../../c-r
 
 Call this function to attach a block of memory to `CMemFile`.
 
-```
+```cpp
 void Attach(
     BYTE* lpBuffer,
     UINT nBufferSize,

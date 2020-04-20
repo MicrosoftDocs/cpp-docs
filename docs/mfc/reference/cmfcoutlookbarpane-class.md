@@ -190,7 +190,7 @@ virtual BOOL CanBeAttached() const;
 
 Frees the resources used by the images on the Outlook bar pane.
 
-```
+```cpp
 void ClearAll();
 ```
 
@@ -269,7 +269,7 @@ The default implementation checks the customization mode ( [CMFCToolBar::IsCusto
 
 Specifies whether the scroll arrows on the Outlook bar pane advance the list of buttons page by page, or button by button.
 
-```
+```cpp
 void EnablePageScrollMode(BOOL bPageScroll=TRUE);
 ```
 
@@ -353,7 +353,7 @@ TRUE if the button was successfully removed; FALSE if the specified command ID i
 
 Sets the background color of the Outlook bar.
 
-```
+```cpp
 void SetBackColor(COLORREF color);
 ```
 
@@ -370,7 +370,7 @@ Call this function to set the current background color for the Outlook bar. The 
 
 Sets the background image.
 
-```
+```cpp
 void SetBackImage(UINT uiImageID);
 ```
 
@@ -387,7 +387,7 @@ Call this method to set the Outlook bar's background image. The list of backgrou
 
 Resets the Outlook bar pane to the original set of buttons.
 
-```
+```cpp
 void SetDefaultState();
 ```
 
@@ -399,7 +399,7 @@ This method restores the Outlook bar buttons to the original set. This method is
 
 Sets the number of pixels of padding used around buttons in the Outlook bar pane.
 
-```
+```cpp
 void SetExtraSpace()
 ```
 
@@ -407,7 +407,7 @@ void SetExtraSpace()
 
 Sets the colors of regular and highlighted text in the Outlook bar pane.
 
-```
+```cpp
 void SetTextColor(
     COLORREF clrRegText,
     COLORREF clrSelText=0);
@@ -425,7 +425,7 @@ void SetTextColor(
 
 Sets the transparent color for the Outlook bar pane.
 
-```
+```cpp
 void SetTransparentColor(COLORREF color);
 ```
 

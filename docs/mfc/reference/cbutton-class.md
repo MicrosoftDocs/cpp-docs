@@ -588,7 +588,7 @@ You are responsible for releasing the bitmap when you are done with it.
 
 Changes the style of a button.
 
-```
+```cpp
 void SetButtonStyle(
     UINT nStyle,
     BOOL bRedraw = TRUE);
@@ -614,7 +614,7 @@ Use the `GetButtonStyle` member function to retrieve the button style. The low-o
 
 Sets or resets the check state of a radio button or check box.
 
-```
+```cpp
 void SetCheck(int nCheck);
 ```
 
@@ -998,7 +998,7 @@ The following code example sets the style of the split button drop-down arrow. T
 
 Sets whether a button control is highlighted or not.
 
-```
+```cpp
 void SetState(BOOL bHighlight);
 ```
 

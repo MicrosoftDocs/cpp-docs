@@ -93,7 +93,7 @@ TRUE if the window was successfully created; otherwise, FALSE.
 
 Deactivates and hides the tooltip control.
 
-```
+```cpp
 void Deactivate();
 ```
 
@@ -105,7 +105,7 @@ This method sets the last position and text to empty values, so that future call
 
 Returns the coordinates of the last position of the tooltip control.
 
-```
+```cpp
 void GetLastRect(CRect& rect) const;
 ```
 
@@ -118,7 +118,7 @@ void GetLastRect(CRect& rect) const;
 
 Hides the tooltip control.
 
-```
+```cpp
 void Hide();
 ```
 
@@ -126,7 +126,7 @@ void Hide();
 
 Sets the spacing between the tooltip text and the border of the tooltip window.
 
-```
+```cpp
 void SetTextMargin(int nTextMargin);
 ```
 
@@ -139,7 +139,7 @@ void SetTextMargin(int nTextMargin);
 
 Displays the tooltip control.
 
-```
+```cpp
 void Track(
     CRect rect,
     const CString& strText);

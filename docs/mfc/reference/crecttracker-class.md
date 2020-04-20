@@ -134,7 +134,7 @@ The default constructor initializes the `CRectTracker` object with the values fr
 
 Call this function to draw the rectangle's outer lines and inner region.
 
-```
+```cpp
 void Draw(CDC* pDC) const;
 ```
 
@@ -207,7 +207,7 @@ Override this member function to hide or show the indicated resize handles.
 
 Call this function to retrieve the coordinates of the rectangle.
 
-```
+```cpp
 void GetTrueRect(LPRECT lpTrueRect) const;
 ```
 

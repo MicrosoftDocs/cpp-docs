@@ -60,7 +60,7 @@ class CD2DPathGeometry : public CD2DGeometry;
 
 Attaches existing resource interface to the object
 
-```
+```cpp
 void Attach(ID2D1PathGeometry* pResource);
 ```
 

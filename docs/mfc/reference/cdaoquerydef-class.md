@@ -342,7 +342,7 @@ The number of fields defined in the query.
 
 Call this member function to obtain various kinds of information about a field defined in the querydef.
 
-```
+```cpp
 void GetFieldInfo(
     int nIndex,
     CDaoFieldInfo& fieldinfo,
@@ -435,7 +435,7 @@ For related information, see the topics "Parameter Object", "Parameters Collecti
 
 Call this member function to obtain information about a parameter defined in the querydef.
 
-```
+```cpp
 void GetParameterInfo(
     int nIndex,
     CDaoParameterInfo& paraminfo,
@@ -646,7 +646,7 @@ Once the querydef is open, you can call its [Execute](#execute) member function 
 
 Call this member function to set the querydef object's connection string.
 
-```
+```cpp
 void SetConnect(LPCTSTR lpszConnect);
 ```
 
@@ -670,7 +670,7 @@ For more information about the connection string's structure and examples of con
 
 Call this member function if you want to change the name of a querydef that is not temporary.
 
-```
+```cpp
 void SetName(LPCTSTR lpszName);
 ```
 
@@ -687,7 +687,7 @@ Querydef names are unique, user-defined names. You can call `SetName` before the
 
 Call this member function to set the time limit before a query to an ODBC data source times out.
 
-```
+```cpp
 void SetODBCTimeout(short nODBCTimeout);
 ```
 
@@ -737,7 +737,7 @@ Specify the value to set as a `COleVariant` object. For information about settin
 
 Call this member function as part of the process of setting up a SQL pass-through query to an external database.
 
-```
+```cpp
 void SetReturnsRecords(BOOL bReturnsRecords);
 ```
 
@@ -754,7 +754,7 @@ In such a case, you must create the querydef and set its properties using other 
 
 Call this member function to set the SQL statement that the querydef executes.
 
-```
+```cpp
 void SetSQL(LPCTSTR lpszSQL);
 ```
 

@@ -141,7 +141,7 @@ COleDocument();
 
 Call this function if you want to store the document using the compound-file format.
 
-```
+```cpp
 void EnableCompoundFile(BOOL bEnable = TRUE);
 ```
 

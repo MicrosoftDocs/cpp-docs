@@ -110,7 +110,7 @@ Initializes the data members and sets the initial service status.
 
 The handler routine for the service.
 
-```
+```cpp
 void Handler(DWORD dwOpcode) throw();
 ```
 
@@ -193,7 +193,7 @@ Returns TRUE if the service is installed, FALSE otherwise.
 
 Writes to the event log.
 
-```
+```cpp
 void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 ```
 
@@ -273,7 +273,7 @@ A null-terminated string which stores the name of the service.
 
 Override this method to continue the service.
 
-```
+```cpp
 void OnContinue() throw();
 ```
 
@@ -281,7 +281,7 @@ void OnContinue() throw();
 
 Override this method to interrogate the service.
 
-```
+```cpp
 void OnInterrogate() throw();
 ```
 
@@ -289,7 +289,7 @@ void OnInterrogate() throw();
 
 Override this method to pause the service.
 
-```
+```cpp
 void OnPause() throw();
 ```
 
@@ -297,7 +297,7 @@ void OnPause() throw();
 
 Override this method to shut down the service.
 
-```
+```cpp
 void OnShutdown() throw();
 ```
 
@@ -305,7 +305,7 @@ void OnShutdown() throw();
 
 Override this method to stop the service.
 
-```
+```cpp
 void OnStop() throw();
 ```
 
@@ -313,7 +313,7 @@ void OnStop() throw();
 
 Override this method to handle unknown requests to the service.
 
-```
+```cpp
 void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
 ```
 
@@ -409,7 +409,7 @@ After being called, `Run` calls [CAtlServiceModuleT::PreMessageLoop](#premessage
 
 This method is called by the Service Control Manager.
 
-```
+```cpp
 void ServiceMain(DWORD dwArgc, LPTSTR* lpszArgv) throw();
 ```
 
@@ -431,7 +431,7 @@ After the SCM calls `ServiceMain`, a service must give the SCM a handler functio
 
 This method updates the service status.
 
-```
+```cpp
 void SetServiceStatus(DWORD dwState) throw();
 ```
 

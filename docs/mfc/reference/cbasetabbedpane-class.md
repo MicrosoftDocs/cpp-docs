@@ -242,7 +242,7 @@ virtual void EnableSetCaptionTextToTabName(BOOL bEnable);
 
 Restores the internal tab order to a default state.
 
-```
+```cpp
 void FillDefaultTabsOrderArray();
 ```
 
@@ -537,7 +537,7 @@ Call this method to remove the pane specified by the *pBar* parameter from the t
 
 Determines whether the tabbed control bar will be destroyed automatically.
 
-```
+```cpp
 void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```
 

@@ -163,7 +163,7 @@ If you are using `COleTemplateServer` in your application, `Register` is called 
 
 Informs the OLE system DLLs that the document is no longer open.
 
-```
+```cpp
 void Revoke();
 ```
 

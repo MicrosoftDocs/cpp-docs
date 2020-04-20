@@ -133,7 +133,7 @@ Here is a typical way to create an aggregate:
 
 You can override this method in your derived class to perform any cleanup required for your object.
 
-```
+```cpp
 void FinalRelease();
 ```
 
@@ -213,7 +213,7 @@ If the thread model is multithreaded, `InterlockedDecrement` is used to prevent 
 
 If the thread model is multithreaded, this method calls the Win32 API function [EnterCriticalSection](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection), which waits until the thread can take ownership of the critical section object obtained through a private data member.
 
-```
+```cpp
 void Lock();
 ```
 
@@ -337,7 +337,7 @@ In non-debug builds, always returns 0. In debug builds, returns a value that may
 
 If the thread model is multithreaded, this method calls the Win32 API function [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection), which releases ownership of the critical section object obtained through a private data member.
 
-```
+```cpp
 void Unlock();
 ```
 

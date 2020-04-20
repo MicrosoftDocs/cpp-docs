@@ -116,7 +116,7 @@ For more information about how to create a DIB bitmap, see [CreateDIBSection](/w
 
 Displays bitmaps that have transparent or semitransparent pixels.
 
-```
+```cpp
 void DrawAlpha(
     CDC* pDstDC,
     const CRect& rectDst,
@@ -146,7 +146,7 @@ This method performs alpha-blending for two bitmaps. For more information about 
 
 Draws an ellipse with the supplied fill and border colors.
 
-```
+```cpp
 void DrawEllipse(
     const CRect& rect,
     COLORREF clrFill,
@@ -218,7 +218,7 @@ The rectangle defined by *rect* must be at least 5 pixels wide and 5 pixels high
 
 Draws a line.
 
-```
+```cpp
 void DrawLine(
     int x1,
     int y1,
@@ -253,7 +253,7 @@ This method fails if *clrLine* equals -1.
 
 Draws a rectangle with the supplied fill and border colors.
 
-```
+```cpp
 void DrawRect(
     const CRect& rect,
     COLORREF clrFill,
@@ -339,7 +339,7 @@ The following example demonstrates how to use the `DrawShadow` method of the `CD
 
 Fills a rectangular area with two color gradients.
 
-```
+```cpp
 void Fill4ColorsGradient(
     CRect rect,
     COLORREF colorStart1,
@@ -383,7 +383,7 @@ This method generates an assertion failure if *nPercentage* is less than 0 or mo
 
 Fills a rectangular area with the specified color gradient.
 
-```
+```cpp
 void FillGradient(
     CRect rect,
     COLORREF colorStart,
@@ -423,7 +423,7 @@ The following example demonstrates how to use the `FillGradient` method of the `
 
 Fills a rectangular area with a specified color gradient.
 
-```
+```cpp
 void FillGradient2 (
     CRect rect,
     COLORREF colorStart,
@@ -679,7 +679,7 @@ To convert a HSV or HSL color to a RGB representation, call one of the following
 
 Flips a rectangular area.
 
-```
+```cpp
 void MirrorRect(
     CRect rect,
     BOOL bHorz = TRUE);
@@ -954,7 +954,7 @@ The weighted ratio is calculated with the following formula:                    
 
 Rotates a source DC content inside the given rectangle by 90 degrees.
 
-```
+```cpp
 void DrawRotated(
     CRect rectDest,
     CDC& dcSrc,

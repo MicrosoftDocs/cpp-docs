@@ -120,7 +120,7 @@ Contains a pointer to the [CDaoRecordset](../../mfc/reference/cdaorecordset-clas
 
 Call `SetFieldType` in your `CDaoRecordset` class's `DoFieldExchange` override.
 
-```
+```cpp
 void SetFieldType(UINT nFieldType);
 ```
 

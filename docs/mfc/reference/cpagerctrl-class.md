@@ -152,7 +152,7 @@ To create a pager control, declare a `CPagerCtrl` variable, then call the [CPage
 
 Enables or disables forwarding [WM_MOUSEMOVE](/windows/win32/inputdev/wm-mousemove) messages to the window that is contained in the current pager control.
 
-```
+```cpp
 void ForwardMouse(BOOL bForward);
 ```
 
@@ -412,7 +412,7 @@ This method sends the [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbutton
 
 Causes the current pager control to recalculate the size of the contained window.
 
-```
+```cpp
 void RecalcSize();
 ```
 
@@ -522,7 +522,7 @@ The following example creates a pager control, then uses the [CPagerCtrl::SetChi
 
 Sets the contained window for the current pager control.
 
-```
+```cpp
 void SetChild(HWND hwndChild);
 ```
 
@@ -548,7 +548,7 @@ The following example creates a pager control, then uses the [CPagerCtrl::SetChi
 
 Sets the scroll position of the current pager control.
 
-```
+```cpp
 void SetScrollPos(int iPos);
 ```
 

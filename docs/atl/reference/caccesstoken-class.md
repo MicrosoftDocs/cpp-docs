@@ -90,7 +90,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 Call this method to take ownership of the given access token handle.
 
-```
+```cpp
 void Attach(HANDLE hToken) throw();
 ```
 

@@ -112,7 +112,7 @@ The code in this function is executed in the underlying security context of the 
 
 Call this method to stop sending debug reports to the named pipe and restore the previous report hook.
 
-```
+```cpp
 void RemoveHook() throw();
 ```
 
@@ -124,7 +124,7 @@ Calls [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-c
 
 Call this method to start sending debug reports to the named pipe.
 
-```
+```cpp
 void SetHook() throw();
 ```
 
@@ -158,7 +158,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to set the time in milliseconds that this class will wait for the named pipe to become available.
 
-```
+```cpp
 void SetTimeout(DWORD dwTimeout);
 ```
 

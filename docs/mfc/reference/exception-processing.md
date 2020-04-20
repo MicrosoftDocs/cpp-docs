@@ -293,7 +293,7 @@ See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#abort).
 
 Throws an archive exception.
 
-```
+```cpp
 void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
 ```
 
@@ -313,7 +313,7 @@ Points to a string containing the name of the `CArchive` object that caused the 
 
 Throws a file exception.
 
-```
+```cpp
 void AfxThrowFileException(
     int cause,
     LONG lOsError = -1,
@@ -345,7 +345,7 @@ Throws an invalid argument exception.
 
 ### Syntax
 
-```
+```cpp
 void AfxThrowInvalidArgException( );
 ```
 
@@ -361,7 +361,7 @@ This function is called when invalid arguments are used.
 
 Throws a memory exception.
 
-```
+```cpp
 void AfxThrowMemoryException();
 ```
 
@@ -377,7 +377,7 @@ Call this function if calls to underlying system memory allocators (such as **ma
 
 Throws an exception that is the result of a request for an unsupported feature.
 
-```
+```cpp
 void AfxThrowNotSupportedException();
 ```
 
@@ -389,7 +389,7 @@ void AfxThrowNotSupportedException();
 
 Throws a resource exception.
 
-```
+```cpp
 void  AfxThrowResourceException();
 ```
 
@@ -405,7 +405,7 @@ This function is normally called when a Windows resource cannot be loaded.
 
 Throws an exception to stop an end-user operation.
 
-```
+```cpp
 void AfxThrowUserException();
 ```
 
@@ -421,7 +421,7 @@ This function is normally called immediately after `AfxMessageBox` has reported 
 
 Use this function to throw an exception within an OLE automation function.
 
-```
+```cpp
 void AFXAPI AfxThrowOleDispatchException(
     WORD wCode ,
     LPCSTR lpszDescription,
@@ -463,7 +463,7 @@ The information provided to this function can be displayed by the driving applic
 
 Creates an object of type `COleException` and throws an exception.
 
-```
+```cpp
 void AFXAPI AfxThrowOleException(SCODE sc);
 void AFXAPI AfxThrowOleException(HRESULT hr);
 ```
@@ -488,7 +488,7 @@ The version that takes an HRESULT as an argument converts that result code into 
 
 Call this function to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) from your own code.
 
-```
+```cpp
 void AFXAPI AfxThrowDaoException(
     int nAfxDaoError = NO_AFX_DAO_ERROR,
     SCODE scode = S_OK);
@@ -516,7 +516,7 @@ For information about exceptions related to the MFC DAO classes, see class `CDao
 
 Call this function to throw an exception of type `CDBException` from your own code.
 
-```
+```cpp
 void AfxThrowDBException(
     RETCODE nRetCode,
     CDatabase* pdb,
@@ -548,7 +548,7 @@ For information about the RETCODE values defined by ODBC, see Chapter 8, "Retrie
 
 The default termination function supplied by MFC.
 
-```
+```cpp
 void  AfxAbort();
 ```
 

@@ -269,7 +269,7 @@ Returns TRUE if the key, and matching value, were successfully removed, FALSE ot
 
 Removes all keys and values.
 
-```
+```cpp
 void RemoveAll();
 ```
 

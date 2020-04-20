@@ -116,7 +116,7 @@ For an example of using a rich edit view in an MFC application, see the [WORDPAD
 
 Call this function to move the given dialog box so that it does not obscure the current selection.
 
-```
+```cpp
 void AdjustDialogPosition(CDialog* pDlg);
 ```
 
@@ -149,7 +149,7 @@ CRichEditView();
 
 Call this function to paste the OLE item in *dataobj* into this rich edit document/view.
 
-```
+```cpp
 void DoPaste(
     COleDataObject& dataobj,
     CLIPFORMAT cf,
@@ -541,7 +541,7 @@ The number of characters or bytes in the edit control. If incompatible flags wer
 
 Call this function to insert the specified file (as a [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object) into a rich edit view.
 
-```
+```cpp
 void InsertFileAsObject(LPCTSTR lpszFileName);
 ```
 
@@ -643,7 +643,7 @@ One of the following values:
 
 Call this function to toggle the character formatting effects for the current selection.
 
-```
+```cpp
 void OnCharEffect(
     DWORD dwMask,
     DWORD dwEffect);
@@ -742,7 +742,7 @@ For more information, see [IStorage](/windows/win32/api/objidl/nn-objidl-istorag
 
 Call this function to change the paragraph alignment for the selected paragraphs.
 
-```
+```cpp
 void OnParaAlign(WORD wAlign);
 ```
 
@@ -873,7 +873,7 @@ For more information, see [MessageBeep](/windows/win32/api/winuser/nf-winuser-me
 
 The framework calls this function to update the command UI for character effect commands.
 
-```
+```cpp
 void OnUpdateCharEffect(
     CCmdUI* pCmdUI,
     DWORD dwMask,
@@ -905,7 +905,7 @@ For more information on the *dwMask* and *dwEffect* parameters and their potenti
 
 The framework calls this function to update the command UI for paragraph effect commands.
 
-```
+```cpp
 void OnUpdateParaAlign(
     CCmdUI* pCmdUI,
     WORD wAlign);
@@ -1051,7 +1051,7 @@ For more information on HRESULT and `IDataObject`, see [Structure of COM Error C
 
 Call this function to set the character formatting attributes for new text in this `CRichEditView` object.
 
-```
+```cpp
 void SetCharFormat(CHARFORMAT2 cf);
 ```
 
@@ -1074,7 +1074,7 @@ For more information, see [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharf
 
 Call this function to set the printing margins for this rich edit view.
 
-```
+```cpp
 void SetMargins(const CRect& rectMargin);
 ```
 
@@ -1097,7 +1097,7 @@ Note that the margins used by [PrintPage](#printpage) are relative to the physic
 
 Call this function to set the paper size for printing this rich edit view.
 
-```
+```cpp
 void SetPaperSize(CSize sizePaper);
 ```
 
@@ -1145,7 +1145,7 @@ For more information, see [EM_SETPARAFORMAT](/windows/win32/Controls/em-setparaf
 
 Call this function to reset the internal search state of the [CRichEditView](../../mfc/reference/cricheditview-class.md) control after a failed call to [FindText](#findtext).
 
-```
+```cpp
 void TextNotFound(LPCTSTR lpszFind);
 ```
 

@@ -274,7 +274,7 @@ This method can be overridden. However, in practice is it better to override [CA
 
 This method executes the message loop.
 
-```
+```cpp
 void RunMessageLoop() throw();
 ```
 

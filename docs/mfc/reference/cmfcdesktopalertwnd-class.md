@@ -345,7 +345,7 @@ BOOL ProcessCommand(HWND hwnd);
 
 Sets the new animation speed.
 
-```
+```cpp
 void SetAnimationSpeed(UINT nSpeed);
 ```
 
@@ -362,7 +362,7 @@ Call this method to set the animation speed for the alert window. The default an
 
 Sets the animation type.
 
-```
+```cpp
 void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```
 
@@ -389,7 +389,7 @@ Call this method to set animation type. You can specify one of the following val
 
 Sets the auto-close time out.
 
-```
+```cpp
 void SetAutoCloseTime(int nTime);
 ```
 
@@ -406,7 +406,7 @@ The alert window is automatically closed after the specified time if the user do
 
 Switches between small and regular-size captions.
 
-```
+```cpp
 void SetSmallCaption(BOOL bSmallCaption = TRUE);
 ```
 
@@ -423,7 +423,7 @@ Call this method to display the small or regular-size caption. By default, the s
 
 Sets the transparency level of the popup window.
 
-```
+```cpp
 void SetTransparency(BYTE nTransparency);
 ```
 

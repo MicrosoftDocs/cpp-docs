@@ -97,7 +97,7 @@ The user is in control of the application when the user has explicitly opened or
 
 Sets or clears the user-control flag, which is explained in the reference for `AfxOleGetUserCtrl`.
 
-```
+```cpp
 void AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl);
 ```
 
@@ -120,7 +120,7 @@ Call this function if other actions in your application should put the user in c
 
 Increments the framework's global count of the number of active objects in the application.
 
-```
+```cpp
 void AFXAPI AfxOleLockApp();
 ```
 
@@ -144,7 +144,7 @@ Call `AfxOleLockApp` from any object that exposes OLE interfaces, if it would be
 
 Decrements the framework's count of active objects in the application.
 
-```
+```cpp
 void AFXAPI AfxOleUnlockApp();
 ```
 
@@ -277,7 +277,7 @@ The symbols are filled in as follows:
 
 Implements the user interface for the *typename* Object command.
 
-```
+```cpp
 void AFXAPI AfxOleSetEditMenu(
     COleClientItem* pClient,
     CMenu* pMenu,

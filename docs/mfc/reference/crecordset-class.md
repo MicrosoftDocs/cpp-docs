@@ -199,7 +199,7 @@ For more information about bookmarks and recordset navigation, see the articles 
 
 Requests that the data source cancel either an asynchronous operation in progress or a process from a second thread.
 
-```
+```cpp
 void Cancel();
 ```
 
@@ -211,7 +211,7 @@ Note that the MFC ODBC classes no longer use asynchronous processing; to perform
 
 Cancels any pending updates, caused by an [Edit](#edit) or [AddNew](#addnew) operation, before [Update](#update) is called.
 
-```
+```cpp
 void CancelUpdate();
 ```
 
@@ -511,7 +511,7 @@ The following code assumes that `COutParamRecordset` is a `CRecordset`-derived o
 
 Obtains the bookmark value for the current record.
 
-```
+```cpp
 void GetBookmark(CDBVariant& varBookmark);
 ```
 
@@ -579,7 +579,7 @@ For more information, see the article [Recordset: Declaring a Class for a Table 
 
 Retrieves field data in the current record.
 
-```
+```cpp
 void GetFieldValue(
     LPCTSTR lpszName,
     CDBVariant& varValue,
@@ -674,7 +674,7 @@ For more information about creating recordsets, see the article [Recordset: Crea
 
 Obtains information about the fields in the recordset.
 
-```
+```cpp
 void GetODBCFieldInfo(
     LPCTSTR lpszName,
     CODBCFieldInfo& fieldinfo);
@@ -800,7 +800,7 @@ For more information, see the ODBC API function `SQLExtendedFetch` in the Window
 
 Determines the index of the current record in the recordset and whether the last record has been seen.
 
-```
+```cpp
 void GetStatus(CRecordsetStatus& rStatus) const;
 ```
 
@@ -1206,7 +1206,7 @@ For more information about recordset navigation, see the articles [Recordset: Sc
 
 Makes the first record in the first rowset the current record.
 
-```
+```cpp
 void MoveFirst();
 ```
 
@@ -1238,7 +1238,7 @@ For more information about recordset navigation, see the articles [Recordset: Sc
 
 Makes the first record in the last complete rowset the current record.
 
-```
+```cpp
 void MoveLast();
 ```
 
@@ -1268,7 +1268,7 @@ For more information about recordset navigation, see the articles [Recordset: Sc
 
 Makes the first record in the next rowset the current record.
 
-```
+```cpp
 void MoveNext();
 ```
 
@@ -1298,7 +1298,7 @@ For more information about recordset navigation, see the articles [Recordset: Sc
 
 Makes the first record in the previous rowset the current record.
 
-```
+```cpp
 void MovePrev();
 ```
 
@@ -1486,7 +1486,7 @@ The following code examples show different forms of the `Open` call.
 
 Updates the data and the status for a row in the current rowset.
 
-```
+```cpp
 void RefreshRowset(
     WORD wRow,
     WORD wLockType = SQL_LOCK_NO_CHANGE);
@@ -1551,7 +1551,7 @@ This example rebuilds a recordset to apply a different sort order.
 
 Positions the recordset on the record corresponding to the specified record number.
 
-```
+```cpp
 void SetAbsolutePosition(long nRows);
 ```
 
@@ -1580,7 +1580,7 @@ For more information about recordset navigation and bookmarks, see the articles 
 
 Positions the recordset on the record containing the specified bookmark.
 
-```
+```cpp
 void SetBookmark(const CDBVariant& varBookmark);
 ```
 
@@ -1607,7 +1607,7 @@ For more information about bookmarks and recordset navigation, see the articles 
 
 Flags a field data member of the recordset as changed or as unchanged.
 
-```
+```cpp
 void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
 ```
 
@@ -1647,7 +1647,7 @@ This means you cannot set all `param` fields to NULL, as you can with `outputCol
 
 Flags a field data member of the recordset as Null (specifically having no value) or as non-Null.
 
-```
+```cpp
 void SetFieldNull(void* pv, BOOL bNull = TRUE);
 ```
 
@@ -1692,7 +1692,7 @@ This means you cannot set all `param` fields to NULL, as you can with `outputCol
 
 Sets the locking mode to "optimistic" locking (the default) or "pessimistic" locking. Determines how records are locked for updates.
 
-```
+```cpp
 void SetLockingMode(UINT nMode);
 ```
 
@@ -1713,7 +1713,7 @@ Call this member function if you need to specify which of two record-locking str
 
 Flags a parameter as Null (specifically having no value) or as non-Null.
 
-```
+```cpp
 void SetParamNull(
     int nIndex,
     BOOL bNull = TRUE);
@@ -1737,7 +1737,7 @@ Unlike [SetFieldNull](#setfieldnull), you can call `SetParamNull` before you hav
 
 Moves the cursor to a row within the current rowset.
 
-```
+```cpp
 void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
 ```
 

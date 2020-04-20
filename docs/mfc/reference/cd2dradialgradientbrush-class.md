@@ -83,7 +83,7 @@ virtual ~CD2DRadialGradientBrush();
 
 Attaches existing resource interface to the object
 
-```
+```cpp
 void Attach(ID2D1RadialGradientBrush* pResource);
 ```
 
@@ -263,7 +263,7 @@ Pointer to an ID2D1RadialGradientBrush interface or NULL if object is not initia
 
 Specifies the center of the gradient ellipse in the brush's coordinate space
 
-```
+```cpp
 void SetCenter(CD2DPointF point);
 ```
 
@@ -276,7 +276,7 @@ The center of the gradient ellipse, in the brush's coordinate space
 
 Specifies the offset of the gradient origin relative to the gradient ellipse's center
 
-```
+```cpp
 void SetGradientOriginOffset(CD2DPointF gradientOriginOffset);
 ```
 
@@ -289,7 +289,7 @@ The offset of the gradient origin from the center of the gradient ellipse
 
 Specifies the x-radius of the gradient ellipse, in the brush's coordinate space
 
-```
+```cpp
 void SetRadiusX(FLOAT radiusX);
 ```
 
@@ -302,7 +302,7 @@ The x-radius of the gradient ellipse. This value is in the brush's coordinate sp
 
 Specifies the y-radius of the gradient ellipse, in the brush's coordinate space
 
-```
+```cpp
 void SetRadiusY(FLOAT radiusY);
 ```
 

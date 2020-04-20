@@ -747,7 +747,7 @@ Override this method in a derived class to customize the appearance of the capti
 
 Enables or disables autohide mode for this pane and for other panes in the container.
 
-```
+```cpp
 void EnableAutohideAll(BOOL bEnable = TRUE);
 ```
 
@@ -1304,7 +1304,7 @@ Override this method in a derived class to implement custom autohide effects.
 
 The framework calls this method when a pane is being undocked.
 
-```
+```cpp
 void RemoveFromDefaultPaneDividier();
 ```
 
@@ -1342,7 +1342,7 @@ TRUE if the replacement is successful; otherwise, FALSE.
 
 When a pane is deserialized, the framework calls this method to restore the default pane divider.
 
-```
+```cpp
 void RestoreDefaultPaneDivider();
 ```
 
@@ -1390,7 +1390,7 @@ Call this method to switch a dockable pane to autohide mode programmatically. Th
 
 Sets the auto-hide button and auto-hide toolbar for the pane.
 
-```
+```cpp
 void SetAutoHideParents(
     CMFCAutoHideBar* pToolBar,
     CMFCAutoHideButton* pBtn);
@@ -1408,7 +1408,7 @@ void SetAutoHideParents(
 
 Sets the percentage of space that a pane occupies in its container.
 
-```
+```cpp
 void SetLastPercentInPaneContainer(int n);
 ```
 
@@ -1425,7 +1425,7 @@ The framework adjusts the pane to use the new value when the layout is recalcula
 
 Sets the restored default pane divider.
 
-```
+```cpp
 void SetRestoredDefaultPaneDivider(HWND hRestoredSlider);
 ```
 
@@ -1442,7 +1442,7 @@ A restored default pane divider is obtained when a pane is deserialized. For mor
 
 Sets the runtime class information for a tabbed window that is created when two panes dock together.
 
-```
+```cpp
 void SetTabbedPaneRTC(CRuntimeClass* pRTC);
 ```
 

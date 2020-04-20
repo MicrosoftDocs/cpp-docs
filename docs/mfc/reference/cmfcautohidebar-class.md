@@ -277,7 +277,7 @@ See [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingrou
 
 ## <a name="setrecentvisiblestate"></a> CMFCAutoHideBar::SetRecentVisibleState
 
-```
+```cpp
 void SetRecentVisibleState(BOOL bState);
 ```
 
@@ -346,7 +346,7 @@ Derived classes can override this method to customize the behavior.
 
 Disables auto-hide mode for a group of auto-hide bars.
 
-```
+```cpp
 void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup)
 ```
 
@@ -361,7 +361,7 @@ A pointer to the first auto-hide bar in the group.
 
 Called by the framework when the auto-hide bar needs to be redrawn.
 
-```
+```cpp
 void UpdateVisibleState();
 ```
 

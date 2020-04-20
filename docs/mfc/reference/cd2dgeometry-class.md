@@ -83,7 +83,7 @@ virtual ~CD2DGeometry();
 
 Attaches existing resource interface to the object
 
-```
+```cpp
 void Attach(ID2D1Geometry* pResource);
 ```
 

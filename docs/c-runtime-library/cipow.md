@@ -15,7 +15,7 @@ Calculates *x* raised to the *y* power based on the top values in the stack.
 
 ## Syntax
 
-```
+```cpp
 void __cdecl _CIpow();
 ```
 

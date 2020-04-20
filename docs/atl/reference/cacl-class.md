@@ -162,7 +162,7 @@ Returns the number of ACE entries in the `CAcl` object.
 
 Retrieves the access-control list (ACL) entries from the `CAcl` object.
 
-```
+```cpp
 void GetAclEntries(
     CSid::CSidArray* pSids,
     CAccessMaskArray* pAccessMasks = NULL,
@@ -196,7 +196,7 @@ See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for more details 
 
 Retrieves all of the information about an entry in an access-control list (ACL).
 
-```
+```cpp
 void GetAclEntry(
     UINT nIndex,
     CSid* pSid,
@@ -317,7 +317,7 @@ Returns a reference to the updated `CAcl` object.
 
 Removes a specific ACE (access-control entry) from the `CAcl` object.
 
-```
+```cpp
 void RemoveAce(UINT nIndex) throw();
 ```
 
@@ -347,7 +347,7 @@ A reference to a `CSid` object.
 
 Marks the `CAcl` object as empty.
 
-```
+```cpp
 void SetEmpty() throw();
 ```
 
@@ -359,7 +359,7 @@ The `CAcl` can be set to empty or to NULL: the two states are distinct.
 
 Marks the `CAcl` object as NULL.
 
-```
+```cpp
 void SetNull() throw();
 ```
 

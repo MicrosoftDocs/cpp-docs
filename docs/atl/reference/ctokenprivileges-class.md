@@ -146,7 +146,7 @@ This method is useful as a tool for creating restricted tokens.
 
 Deletes all privileges from the `CTokenPrivileges` access token object.
 
-```
+```cpp
 void DeleteAll() throw();
 ```
 
@@ -158,7 +158,7 @@ Deletes all privileges contained in the `CTokenPrivileges` access token object.
 
 Retrieves display names for the privileges contained in the `CTokenPrivileges` access token object.
 
-```
+```cpp
 void GetDisplayNames(CNames* pDisplayNames) const throw(...);
 ```
 
@@ -201,7 +201,7 @@ Returns the number of bytes required to hold a `TOKEN_PRIVILEGES` structure repr
 
 Retrieves the locally unique identifiers (LUIDs) and attribute flags from the `CTokenPrivileges` object.
 
-```
+```cpp
 void GetLuidsAndAttributes(
     CLUIDArray* pPrivileges,
     CAttributes* pAttributes = NULL) const throw(...);
@@ -223,7 +223,7 @@ This method will enumerate all of the privileges contained in the `CTokenPrivile
 
 Retrieves the name and attribute flags from the `CTokenPrivileges` object.
 
-```
+```cpp
 void GetNamesAndAttributes(
     CNames* pNames,
     CAttributes* pAttributes = NULL) const throw(...);

@@ -54,7 +54,7 @@ The benefit of this class is that it provides a convenient way to change the sta
 
 Implementation of [WorkerArchetype::Execute](worker-archetype.md#execute).
 
-```
+```cpp
 void Execute(
     Worker::RequestType request,
     void* pvWorkerParam,
@@ -97,7 +97,7 @@ This class handles the same type of work item as the class used for the *Worker*
 
 Implementation of [WorkerArchetype::Terminate](worker-archetype.md#terminate).
 
-```
+```cpp
 void Terminate(void* /* pvParam */) throw();
 ```
 

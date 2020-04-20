@@ -111,7 +111,7 @@ For more information about how to use `CPropertySheet` objects, see the article 
 
 Adds the supplied page with the rightmost tab in the property sheet.
 
-```
+```cpp
 void AddPage(CPropertyPage* pPage);
 ```
 
@@ -140,7 +140,7 @@ If you call `AddPage` after displaying the property page, the tab row will refle
 
 Constructs a `CPropertySheet` object.
 
-```
+```cpp
 void Construct(
     UINT nIDCaption,
     CWnd* pParentWnd = NULL,
@@ -368,7 +368,7 @@ See the example for [CPropertySheet::AddPage](#addpage).
 
 Indicates whether to stack rows of tabs in a property sheet.
 
-```
+```cpp
 void EnableStackedTabs(BOOL bStacked);
 ```
 
@@ -391,7 +391,7 @@ You must call `EnableStackedTabs` when you create a modal or a modeless property
 
 Terminates the property sheet.
 
-```
+```cpp
 void EndDialog(int nEndID);
 ```
 
@@ -546,7 +546,7 @@ For more information on this structure, including a listing of its members, see 
 
 Converts the dialog-box units of a rectangle to screen units.
 
-```
+```cpp
 void MapDialogRect(LPRECT lpRect) const;
 ```
 
@@ -587,7 +587,7 @@ You do not need a message-map entry for this member function.
 
 Simulates the choice of the specified button in a property sheet.
 
-```
+```cpp
 void PressButton(int nButton);
 ```
 
@@ -624,7 +624,7 @@ A call to `PressButton` will not send the [PSN_APPLY](/windows/win32/Controls/ps
 
 Removes a page from the property sheet and destroys the associated window.
 
-```
+```cpp
 void RemovePage(CPropertyPage* pPage);
 void RemovePage(int nPage);
 ```
@@ -674,7 +674,7 @@ See the example for [CPropertySheet::GetActivePage](#getactivepage).
 
 Sets the text in the Finish command button.
 
-```
+```cpp
 void SetFinishText(LPCTSTR lpszText);
 ```
 
@@ -695,7 +695,7 @@ Call `SetFinishText` to display the text on the Finish command button and hide t
 
 Specifies the property sheet's caption (the text displayed in the title bar of a frame window).
 
-```
+```cpp
 void SetTitle(
     LPCTSTR lpszText,
     UINT nStyle = 0);
@@ -721,7 +721,7 @@ By default, a property sheet uses the caption parameter in the property sheet co
 
 Enables or disables the Back, Next, or Finish button in a wizard property sheet.
 
-```
+```cpp
 void SetWizardButtons(DWORD dwFlags);
 ```
 
@@ -758,7 +758,7 @@ A `CPropertySheet` has three wizard property pages: `CStylePage`, `CColorPage`, 
 
 Establishes a property page as a wizard.
 
-```
+```cpp
 void SetWizardMode();
 ```
 

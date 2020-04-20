@@ -219,7 +219,7 @@ The position of the progress bar control is not the physical location on the scr
 
 Gets the current lower and upper limits, or range, of the progress bar control.
 
-```
+```cpp
 void GetRange(
     int& nLower,
     int& nUpper);
@@ -451,7 +451,7 @@ The position of the progress bar control is not the physical location on the scr
 
 Sets the upper and lower limits of the progress bar control's range and redraws the bar to reflect the new ranges.
 
-```
+```cpp
 void SetRange(
     short nLower,
     short nUpper);

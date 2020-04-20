@@ -155,7 +155,7 @@ The framework calls this method when the drop-down frame is created or the paren
 
 Sets whether the child drop-down toolbar window is destroyed automatically.
 
-```
+```cpp
 void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```
 

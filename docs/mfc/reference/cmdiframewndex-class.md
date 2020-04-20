@@ -138,7 +138,7 @@ The following example derives a class from `CMDIFrameWndEx`. This code snippet c
 
 Recalculates the layout of the active item.
 
-```
+```cpp
 void ActiveItemRecalcLayout();
 ```
 
@@ -323,7 +323,7 @@ A pointer to the new window.
 
 Docks the specified pane to the frame window.
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID=0,
@@ -445,7 +445,7 @@ The following example shows how the `EnableDocking` method is used in the [Visua
 
 Shows or hides the main menu in full-screen mode.
 
-```
+```cpp
 void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```
 
@@ -460,7 +460,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 
 Enables full-screen mode for the frame window.
 
-```
+```cpp
 void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```
 
@@ -477,7 +477,7 @@ In full-screen mode, all docking control bars, toolbars and menus are hidden and
 
 Enables or disables the loading of the docking state.
 
-```
+```cpp
 void EnableLoadDockState(BOOL bEnable = TRUE);
 ```
 
@@ -492,7 +492,7 @@ void EnableLoadDockState(BOOL bEnable = TRUE);
 
 Enables or disables the MDI tabbed groups feature for the frame window.
 
-```
+```cpp
 void EnableMDITabbedGroups(
     BOOL bEnable,
     const CMDITabInfo& params);
@@ -536,7 +536,7 @@ The following example shows how `EnableMDITabbedGroups` is used in the [VisualSt
 
 Enables or disables the MDI Tabs feature for the MDI frame window. When enabled, the frame window displays a tab for each MDI child window.
 
-```
+```cpp
 void EnableMDITabs(
     BOOL bEnable=TRUE,
     BOOL bIcons=TRUE,
@@ -588,7 +588,7 @@ The following example shows how `EnableMDITabs` is used in the [MDITabsDemo Samp
 
 Specifies whether the last active tab should be opened when the user closes the current tab.
 
-```
+```cpp
 void EnableMDITabsLastActiveActivation(BOOL bLastActiveTab=TRUE);
 ```
 
@@ -613,7 +613,7 @@ Use `EnableMDITabsLastActiveActivation` to enable the second way of tab activati
 
 Enables or disables automatic creation and management of the pop-up pane menu, which displays a list of application panes.
 
-```
+```cpp
 void EnablePaneMenu(
     BOOL bEnable,
     UINT uiCustomizeCmd,
@@ -657,7 +657,7 @@ The following example shows how `EnablePaneMenu` is used in the [VisualStudioDem
 
 Inserts a menu item whose command ID calls a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) dialog box.
 
-```
+```cpp
 void EnableWindowsDialog(
     UINT uiMenuId,
     LPCTSTR lpszMenuText,
@@ -1074,7 +1074,7 @@ The following example shows how `LoadMDIState` is used in the [VisualStudioDemo 
 
 Moves the active tab from the currently active tabbed window to the next or previous tabbed group.
 
-```
+```cpp
 void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 ```
 
@@ -1087,7 +1087,7 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 
 Creates a new tabbed group that has a single window.
 
-```
+```cpp
 void MDITabNewGroup(BOOL bVert=TRUE);
 ```
 
@@ -1631,7 +1631,7 @@ This method overrides [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-cl
 
 Unregisters a pane and removes it from the docking manager.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pControlBar,
     BOOL bDestroy,
@@ -1706,7 +1706,7 @@ The following example shows how `SaveMDIState` is used in the [VisualStudioDemo 
 
 Sets the print preview frame window.
 
-```
+```cpp
 void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```
 
@@ -1721,7 +1721,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 
 Modifies a toolbar object by replacing dummy items with user-defined items.
 
-```
+```cpp
 void SetupToolbarMenu(
     CMenu& menu,
     const UINT uiViewUserToolbarCmdFirst,
@@ -1743,7 +1743,7 @@ void SetupToolbarMenu(
 
 Switches the main frame from regular mode to full-screen mode.
 
-```
+```cpp
 void ShowFullScreen();
 ```
 
@@ -1753,7 +1753,7 @@ void ShowFullScreen();
 
 Shows or hides the specified pane.
 
-```
+```cpp
 void ShowPane(
     CBasePane* pBar,
     BOOL bShow,
@@ -1789,7 +1789,7 @@ The following example shows how `ShowPane` is used in the [VisualStudioDemo Samp
 
 Creates a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) box and opens it.
 
-```
+```cpp
 void ShowWindowsDialog();
 ```
 
@@ -1830,7 +1830,7 @@ The following example shows how `TabbedDocumentToControlBar` is used in the [Vis
 
 Called by the framework to update the window frame caption.
 
-```
+```cpp
 void UpdateCaption();
 ```
 
@@ -1840,7 +1840,7 @@ void UpdateCaption();
 
 Sets the icon for each MDI tabbed pane.
 
-```
+```cpp
 void UpdateMDITabbedBarsIcons();
 ```
 

@@ -71,7 +71,7 @@ Because it is a base class for all visual managers, you can just call [CMFCVisua
 
 Calls `CloseThemeData` for all handles obtained in `UpdateSystemColors`.
 
-```
+```cpp
 void CleanUpThemes();
 ```
 
@@ -370,7 +370,7 @@ The currently selected Windows Theme color. Can be one of the following enumerat
 
 Calls `OpenThemeData` to obtain handles for drawing various controls: windows, toolbars, buttons, and so on.
 
-```
+```cpp
 void UpdateSystemColors();
 ```
 

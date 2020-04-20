@@ -77,7 +77,7 @@ For more information on establishing a property sheet as a wizard, see [CPropert
 
 Call this function after an unrecoverable change has been made to the data in a page of a modal property sheet.
 
-```
+```cpp
 void CancelToClose();
 ```
 
@@ -95,7 +95,7 @@ The `CancelToClose` member function does nothing in a modeless property sheet, b
 
 Call this member function to construct a `CPropertyPage` object.
 
-```
+```cpp
 void Construct(
     UINT nIDTemplate,
     UINT nIDCaption = 0);
@@ -514,7 +514,7 @@ If a page returns a nonzero value, the property sheet does not send the message 
 
 Call this member function to enable or disable the Apply Now button, based on whether the settings in the property page should be applied to the appropriate external object.
 
-```
+```cpp
 void SetModified(BOOL bChanged = TRUE);
 ```
 

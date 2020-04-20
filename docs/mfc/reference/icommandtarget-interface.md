@@ -39,7 +39,7 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 Initializes the command target object.
 
-```
+```cpp
 void Initialize(ICommandSource^ cmdSource);
 ```
 

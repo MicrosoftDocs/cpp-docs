@@ -165,7 +165,7 @@ The following table shows other member functions that are similar to `CMapString
 
 Retrieves the map element at *rNextPosition*, then updates *rNextPosition* to refer to the next element in the map.
 
-```
+```cpp
 void GetNextAssoc(
     POSITION& rNextPosition,
     CString& rKey,
@@ -317,7 +317,7 @@ The following table shows other member functions that are similar to `CMapString
 
 Initializes the hash table.
 
-```
+```cpp
 void InitHashTable(
     UINT hashSize,
     BOOL bAllocNow = TRUE);
@@ -498,7 +498,7 @@ Operator [] example: A CMapStringToOb with 2 elements
 
 Removes all the elements from this map and destroys the `CString` key objects.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -576,7 +576,7 @@ RemoveKey example: A CMapStringToOb with 3 elements
 
 The primary means to insert an element in a map.
 
-```
+```cpp
 void SetAt(
     LPCTSTR key,
     CObject* newValue);

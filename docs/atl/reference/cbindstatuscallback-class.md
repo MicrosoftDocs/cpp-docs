@@ -243,7 +243,7 @@ ATL_PDATAAVAILABLE m_pFunc;
 
 The function pointed to by `m_pFunc` is a member of your object's class and has the following syntax:
 
-```
+```cpp
 void Function_Name(
    CBindStatusCallback<T>* pbsc,
    BYTE* pBytes,
@@ -490,7 +490,7 @@ Every time data is available it is sent to the object through `OnDataAvailable`.
 
 The function pointed to by *pFunc* is a member of your object's class and has the following syntax:
 
-```
+```cpp
 void Function_Name(
     CBindStatusCallback<T>* pbsc,
     BYTE* pBytes,

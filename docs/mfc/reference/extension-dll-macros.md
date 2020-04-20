@@ -84,7 +84,7 @@ For OLE support from a regular MFC DLL that is dynamically linked to MFC, call t
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI AfxOleInitModule( );
 ```
 
@@ -104,7 +104,7 @@ For MFC Sockets support from a regular MFC DLL that is dynamically linked to MFC
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI AfxNetInitModule( );
 ```
 
@@ -237,7 +237,7 @@ Use this function to set the per-module state flag, which affects the WinSxS beh
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI AfxSetAmbientActCtx(BOOL bSet);
 ```
 
@@ -272,7 +272,7 @@ Call this function to allow MFC to clean up the MFC extension DLL when each proc
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = FALSE );
 ```
 

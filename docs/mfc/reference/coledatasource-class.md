@@ -66,7 +66,7 @@ For more information about data sources and data transfer, see the article [Data
 
 Call this function to specify a format in which data is offered during data transfer operations.
 
-```
+```cpp
 void CacheData(
     CLIPFORMAT cfFormat,
     LPSTGMEDIUM lpStgMedium,
@@ -102,7 +102,7 @@ For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/n
 
 Call this function to specify a format in which data is offered during data transfer operations.
 
-```
+```cpp
 void CacheGlobalData(
     CLIPFORMAT cfFormat,
     HGLOBAL hGlobal,
@@ -142,7 +142,7 @@ COleDataSource();
 
 Call this function to specify a format in which data is offered during data transfer operations.
 
-```
+```cpp
 void DelayRenderData(
     CLIPFORMAT cfFormat,
     LPFORMATETC lpFormatEtc = NULL);
@@ -172,7 +172,7 @@ For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/n
 
 Call this function to specify a format in which data is offered during data transfer operations.
 
-```
+```cpp
 void DelayRenderFileData(
     CLIPFORMAT cfFormat,
     LPFORMATETC lpFormatEtc = NULL);
@@ -202,7 +202,7 @@ For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/n
 
 Call this function to support changing the contents of the data source.
 
-```
+```cpp
 void DelaySetData(
     CLIPFORMAT cfFormat,
     LPFORMATETC lpFormatEtc = NULL);
@@ -278,7 +278,7 @@ For more information, see the article [OLE drag and drop](../../mfc/drag-and-dro
 
 Call this function to empty the `COleDataSource` object of data.
 
-```
+```cpp
 void Empty();
 ```
 
@@ -444,7 +444,7 @@ For more information, see the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-us
 
 Puts the data contained in the `COleDataSource` object on the Clipboard after calling one of the following functions: [CacheData](#cachedata), [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), or [DelayRenderFileData](#delayrenderfiledata).
 
-```
+```cpp
 void SetClipboard();
 ```
 

@@ -128,7 +128,7 @@ The following example demonstrates how to configure a `CMFCToolBarImages` object
 
 ## <a name="adaptcolors"></a> CMFCToolBarImages::AdaptColors
 
-```
+```cpp
 void AdaptColors(
     COLORREF clrBase,
     COLORREF clrTone);
@@ -207,7 +207,7 @@ static void __stdcall CleanUp();
 
 Frees the system resources that the [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) object allocated.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -403,7 +403,7 @@ static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
 
 Frees system resources that [CMFCToolBarImages::PrepareDrawImage](#preparedrawimage) allocated after you draw a toolbar image by calling [CMFCToolBarImages::Draw](#draw).
 
-```
+```cpp
 void EndDrawImage(CAfxDrawState& ds);
 ```
 
@@ -926,7 +926,7 @@ BOOL MirrorVert();
 
 ## <a name="onsyscolorchange"></a> CMFCToolBarImages::OnSysColorChange
 
-```
+```cpp
 void OnSysColorChange();
 ```
 
@@ -1019,7 +1019,7 @@ Call this method to store the user-defined images into a disk file. If *lpszBmpF
 
 ## <a name="setalwayslight"></a> CMFCToolBarImages::SetAlwaysLight
 
-```
+```cpp
 void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
 ```
 
@@ -1062,7 +1062,7 @@ static void __stdcall SetFadedImageAlpha(BYTE nValue);
 
 Sets the size of each toolbar image (source size).
 
-```
+```cpp
 void SetImageSize(
     SIZE sizeImage,
     BOOL bUpdateCount=FALSE);
@@ -1079,7 +1079,7 @@ By default the size of the toolbar image is 16x15 pixels. Call this method if yo
 
 ## <a name="setlightpercentage"></a> CMFCToolBarImages::SetLightPercentage
 
-```
+```cpp
 void SetLightPercentage(int nValue);
 ```
 
@@ -1091,7 +1091,7 @@ void SetLightPercentage(int nValue);
 
 ## <a name="setmapto3dcolors"></a> CMFCToolBarImages::SetMapTo3DColors
 
-```
+```cpp
 void SetMapTo3DColors(BOOL bMapTo3DColors);
 ```
 
@@ -1103,7 +1103,7 @@ void SetMapTo3DColors(BOOL bMapTo3DColors);
 
 ## <a name="setpremultiplyautocheck"></a> CMFCToolBarImages::SetPreMultiplyAutoCheck
 
-```
+```cpp
 void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 ```
 
@@ -1115,7 +1115,7 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 
 ## <a name="setsingleimage"></a> CMFCToolBarImages::SetSingleImage
 
-```
+```cpp
 void SetSingleImage();
 ```
 

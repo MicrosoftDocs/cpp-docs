@@ -85,7 +85,7 @@ Construct a `CDataExchange` object yourself to store extra information in the da
 
 The framework calls this member function when a dialog data validation (DDV) operation fails.
 
-```
+```cpp
 void Fail();
 ```
 

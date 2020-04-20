@@ -213,7 +213,7 @@ Called by the preview handler to create a relationship between the document impl
 
 ### Syntax
 
-```
+```cpp
 void SetDocument(
    IDocument* pDocument
 );

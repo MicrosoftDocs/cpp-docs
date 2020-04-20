@@ -498,7 +498,7 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ## <a name="setlastfocusedpane"></a> CMultiPaneFrameWnd::SetLastFocusedPane
 
-```
+```cpp
 void SetLastFocusedPane(HWND hwnd);
 ```
 

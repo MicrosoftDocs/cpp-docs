@@ -60,7 +60,7 @@ The following example demonstrates how to construct and initialize a `CMenuTearO
 
 ## <a name="build"></a> CMenuTearOffManager::Build
 
-```
+```cpp
 void Build(
     UINT uiTearOffBarID,
     CString& strText);
@@ -156,7 +156,7 @@ UINT Parse(CString& str);
 
 ## <a name="reset"></a> CMenuTearOffManager::Reset
 
-```
+```cpp
 void Reset(HMENU hmenu);
 ```
 
@@ -168,7 +168,7 @@ void Reset(HMENU hmenu);
 
 ## <a name="setinuse"></a> CMenuTearOffManager::SetInUse
 
-```
+```cpp
 void SetInUse(
     UINT uiCmdId,
     BOOL bUse = TRUE);
@@ -184,7 +184,7 @@ void SetInUse(
 
 ## <a name="setuptearoffmenus"></a> CMenuTearOffManager::SetupTearOffMenus
 
-```
+```cpp
 void SetupTearOffMenus(HMENU hMenu);
 ```
 

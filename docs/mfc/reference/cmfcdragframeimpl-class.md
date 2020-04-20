@@ -32,7 +32,7 @@ You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m
 
 ## <a name="enddrawdragframe"></a> CMFCDragFrameImpl::EndDrawDragFrame
 
-```
+```cpp
 void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 ```
 
@@ -44,7 +44,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 
 ## <a name="init"></a> CMFCDragFrameImpl::Init
 
-```
+```cpp
 void Init(CWnd* pDraggedWnd);
 ```
 
@@ -56,7 +56,7 @@ void Init(CWnd* pDraggedWnd);
 
 ## <a name="movedragframe"></a> CMFCDragFrameImpl::MoveDragFrame
 
-```
+```cpp
 void MoveDragFrame(BOOL bForceMove = FALSE);
 ```
 
@@ -68,7 +68,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 
 ## <a name="placetabpredocking"></a> CMFCDragFrameImpl::PlaceTabPreDocking
 
-```
+```cpp
 void PlaceTabPreDocking(
     CBaseTabbedPane* pTabbedBar,
     BOOL bFirstTime);
@@ -88,7 +88,7 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 
 ## <a name="removetabpredocking"></a> CMFCDragFrameImpl::RemoveTabPreDocking
 
-```
+```cpp
 void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 ```
 
@@ -100,7 +100,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 
 ## <a name="resetstate"></a> CMFCDragFrameImpl::ResetState
 
-```
+```cpp
 void ResetState();
 ```
 

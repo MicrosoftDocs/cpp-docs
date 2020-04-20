@@ -221,7 +221,7 @@ Use a pointer to the `CString` object returned by `GetDriverName` as the value o
 
 Call this function after a call to `DoModal` to retrieve the margins of the printer device driver.
 
-```
+```cpp
 void GetMargins(
     LPRECT lpRectMargins,
     LPRECT lpRectMinMargins) const;

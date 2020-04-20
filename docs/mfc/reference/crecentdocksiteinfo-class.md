@@ -59,7 +59,7 @@ A `CRecentDockSiteInfo` object is created every time that a pane is created. Eac
 
 ## <a name="cleanup"></a> CRecentDockSiteInfo::CleanUp
 
-```
+```cpp
 void CleanUp();
 ```
 
@@ -159,7 +159,7 @@ CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
 
 ## <a name="init"></a> CRecentDockSiteInfo::Init
 
-```
+```cpp
 void Init();
 ```
 
@@ -195,7 +195,7 @@ CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
 
 ## <a name="savelistofrecentpanes"></a> CRecentDockSiteInfo::SaveListOfRecentPanes
 
-```
+```cpp
 void SaveListOfRecentPanes(CList<HWND,
     HWND>& lstOrg,
     BOOL bForSlider);

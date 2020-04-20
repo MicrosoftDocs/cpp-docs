@@ -64,7 +64,7 @@ The transformation to apply to the brush
 
 Initializes the object
 
-```
+```cpp
 void CommonInit();
 ```
 

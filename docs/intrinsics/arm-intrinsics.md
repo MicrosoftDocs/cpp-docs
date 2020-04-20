@@ -385,7 +385,7 @@ The values of the `coproc`, `opcode1`, `crn`, `crm`, and `opcode2` parameters of
 
 These intrinsic functions write data to ARM coprocessors by using the coprocessor data transfer instructions.
 
-```
+```cpp
 void _MoveFromCoprocessor64(
       unsigned __int64 value,
       unsigned int coproc,

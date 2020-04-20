@@ -414,7 +414,7 @@ See the example for [CFileTime::Millisecond](#millisecond).
 
 Call this method to set the date and time stored by the `CFileTime` object.
 
-```
+```cpp
 void SetTime(ULONGLONG nTime) throw();
 ```
 

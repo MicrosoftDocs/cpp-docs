@@ -224,7 +224,7 @@ The following example demonstrates the use of `CStringT::AllocSysString`.
 
 Converts all the characters in this `CStringT` object from the ANSI character set to the OEM character set.
 
-```
+```cpp
 void AnsiToOem();
 ```
 
@@ -240,7 +240,7 @@ The function is not available if _UNICODE is defined.
 
 Appends formatted data to an existing `CStringT` object.
 
-```
+```cpp
 void __cdecl AppendFormat(PCXSTR pszFormat, [, argument] ...);
 void __cdecl AppendFormat(UINT nFormatID, [, argument] ...);
 ```
@@ -614,7 +614,7 @@ Finds the first occurrence of any of the characters in *pszCharSet*.
 
 Writes formatted data to a `CStringT` in the same way that [sprintf_s](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) formats data into a C-style character array.
 
-```
+```cpp
 void __cdecl Format(UINT nFormatID, [, argument]...);
 void __cdecl Format(PCXSTR pszFormat,  [, argument] ...);
 ```
@@ -648,7 +648,7 @@ For more information, see [Format Specification Syntax: printf and wprintf Funct
 
 Formats a message string.
 
-```
+```cpp
 void __cdecl FormatMessage(UINT nFormatID, [, argument]...);
 void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 ```
@@ -681,7 +681,7 @@ Each insert must have a corresponding parameter following the *pszFormat* or *nF
 
 Formats a message string using a variable argument list.
 
-```
+```cpp
 void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 ```
 
@@ -706,7 +706,7 @@ For more information, see the Windows [FormatMessage](/windows/win32/api/winbase
 
 Formats a message string using a variable argument list.
 
-```
+```cpp
 void FormatV(PCXSTR pszFormat, va_list args);
 ```
 
@@ -930,7 +930,7 @@ For multibyte character sets (MBCS), *nCount* refers to each 8-bit character; th
 
 Converts all the characters in this `CStringT` object from the OEM character set to the ANSI character set.
 
-```
+```cpp
 void OemToAnsi();
 ```
 

@@ -150,7 +150,7 @@ END_MESSAGE_MAP()
 
 Sets the drop-down menu that is displayed when a user clicks the drop-down arrow of the current split button control.
 
-```
+```cpp
 void SetDropDownMenu(
     UINT nMenuId,
     UINT nSubMenuId);

@@ -52,7 +52,7 @@ This class provides support for all ATL classes which require windowing features
 
 This method initializes and adds an `_AtlCreateWndData` structure.
 
-```
+```cpp
 void AddCreateWndData(_AtlCreateWndData* pData, void* pObject);
 ```
 
@@ -96,7 +96,7 @@ Frees all allocated resources.
 
 This method returns a pointer to an `_AtlCreateWndData` structure.
 
-```
+```cpp
 void* ExtractCreateWndData();
 ```
 

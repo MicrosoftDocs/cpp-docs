@@ -98,7 +98,7 @@ This constructor initializes the following member variables to the specified val
 
 Enables or disables *multiple column sort* mode for the current header control.
 
-```
+```cpp
 void EnableMultipleSort(BOOL bEnable=TRUE);
 ```
 
@@ -263,7 +263,7 @@ virtual void OnFillBackground(CDC* pDC);
 
 Removes the specified column from the list of sort columns.
 
-```
+```cpp
 void RemoveSortColumn(int iColumn);
 ```
 
@@ -276,7 +276,7 @@ void RemoveSortColumn(int iColumn);
 
 Sets the sort order of a specified column in a header control.
 
-```
+```cpp
 void SetSortColumn(
     int iColumn,
     BOOL bAscending=TRUE,

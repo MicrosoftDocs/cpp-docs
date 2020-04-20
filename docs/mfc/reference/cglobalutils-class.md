@@ -50,7 +50,7 @@ class CGlobalUtils
 
 ## <a name="adjustrecttoworkarea"></a> CGlobalUtils::AdjustRectToWorkArea
 
-```
+```cpp
 void AdjustRectToworkArea(
     CRect& rect,
     CRect* pRectDelta = NULL);
@@ -65,7 +65,7 @@ void AdjustRectToworkArea(
 
 ## <a name="calcexpecteddockedrect"></a> CGlobalUtils::CalcExpectedDockedRect
 
-```
+```cpp
 void CalcExpectedDockedRect(
     CPaneContainerManager& barContainerManager,
     CWnd* pWndTodock,
@@ -193,7 +193,7 @@ BOOL DecimalFromString(
 
 ## <a name="fliprect"></a> CGlobalUtils::FlipRect
 
-```
+```cpp
 void FlipRect(
     CRect& rect,
     int nDegrees);
@@ -208,7 +208,7 @@ void FlipRect(
 
 ## <a name="forceadjustlayout"></a> CGlobalUtils::ForceAdjustLayout
 
-```
+```cpp
 void ForceAdjustLayout(
     CDockingManager* pDockManager,
     BOOL bForce = FALSE,
@@ -299,7 +299,7 @@ HICON GetWndIcon(CWnd* pWnd);
 
 ## <a name="setnewparent"></a> CGlobalUtils::SetNewParent
 
-```
+```cpp
 void SetNewParent(
     CObList& lstControlBars,
     CWnd* pNewParent,

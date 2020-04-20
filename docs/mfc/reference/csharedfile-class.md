@@ -96,7 +96,7 @@ You can reopen it by calling [SetHandle](#sethandle), using the handle returned 
 
 Call this function to attach a block of global memory to the `CSharedFile` object.
 
-```
+```cpp
 void SetHandle(
     HGLOBAL hGlobalMemory,
     BOOL bAllowGrow = TRUE);
