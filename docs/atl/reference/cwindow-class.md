@@ -381,7 +381,7 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
 
 See [ClientToScreen](/windows/win32/api/winuser/nf-winuser-clienttoscreen) in the Windows SDK.
 
-The second version of this method allows you to convert the coordinates of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
+The second version of this method allows you to convert the coordinates of a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 ## <a name="create"></a> CWindow::Create
 
@@ -1634,7 +1634,7 @@ int MapWindowPoints(
 
 See [MapWindowPoints](/windows/win32/api/winuser/nf-winuser-mapwindowpoints) in the Windows SDK.
 
-The second version of this method allows you to convert the coordinates of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
+The second version of this method allows you to convert the coordinates of a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 ## <a name="messagebox"></a> CWindow::MessageBox
 
@@ -1768,7 +1768,7 @@ BOOL MoveWindow(
 
 For a top-level window object, the x and y parameters are relative to the upper-left corner of the screen. For a child window object, they are relative to the upper-left corner of the parent window's client area.
 
-The second version of this method uses a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to determine the window's new position, width, and height.
+The second version of this method uses a [RECT](/windows/win32/api/windef/ns-windef-rect) structure to determine the window's new position, width, and height.
 
 ## <a name="nextdlgctrl"></a> CWindow::NextDlgCtrl
 
@@ -1979,7 +1979,7 @@ BOOL ScreenToClient(LPRECT lpRect) const throw();
 
 See [ScreenToClient](/windows/win32/api/winuser/nf-winuser-screentoclient) in the Windows SDK.
 
-The second version of this method allows you to convert the coordinates of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
+The second version of this method allows you to convert the coordinates of a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 ## <a name="scrollwindow"></a> CWindow::ScrollWindow
 
@@ -2450,7 +2450,7 @@ BOOL SetWindowPos(
 
 See [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) in the Windows SDK.
 
-The second version of this method uses a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to set the window's new position, width, and height.
+The second version of this method uses a [RECT](/windows/win32/api/windef/ns-windef-rect) structure to set the window's new position, width, and height.
 
 ## <a name="setwindowrgn"></a> CWindow::SetWindowRgn
 

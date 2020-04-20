@@ -31,7 +31,7 @@ You can also add optimizations, as described in [ActiveX Controls: Optimization]
 
 ## <a name="_core_packaging_code_for_downloading"></a> Packaging Code for Downloading
 
-For more information on this subject, see [Packaging ActiveX Controls](https://docs.microsoft.com//previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa751974%28v%3dvs.85%29).
+For more information on this subject, see [Packaging ActiveX Controls](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa751974%28v%3dvs.85%29).
 
 ### The CODEBASE Tag
 

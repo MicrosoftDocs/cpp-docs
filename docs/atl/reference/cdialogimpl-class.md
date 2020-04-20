@@ -101,7 +101,7 @@ HWND Create(
 [in] The handle to the owner window.
 
 **RECT&** *rect*
-[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the dialog's size and position.
+[in] A [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the dialog's size and position.
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.

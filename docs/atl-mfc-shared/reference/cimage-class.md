@@ -202,7 +202,7 @@ An alpha transparency value to be used on the entire source bitmap. The default 
 The alpha-blending function for source and destination bitmaps, a global alpha value to be applied to the entire source bitmap, and format information for the source bitmap. The source and destination blend functions are currently limited to AC_SRC_OVER.
 
 *pointDest*<br/>
-A reference to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that identifies the upper left corner of the destination rectangle, in logical units.
+A reference to a [POINT](/windows/win32/api/windef/ns-windef-point) structure that identifies the upper left corner of the destination rectangle, in logical units.
 
 *nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
@@ -223,7 +223,7 @@ The width, in logical units, of the source rectangle.
 The height, in logical units, of the source rectangle.
 
 *rectDest*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, identifying the destination.
 
 *rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
@@ -312,7 +312,7 @@ The logical y-coordinate of the upper left corner of the destination rectangle.
 The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.
 
 *pointDest*<br/>
-A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure indicating the upper left corner of the destination rectangle.
+A [POINT](/windows/win32/api/windef/ns-windef-point) structure indicating the upper left corner of the destination rectangle.
 
 *nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
@@ -327,7 +327,7 @@ The logical x-coordinate of the upper left corner of the source rectangle.
 The logical y-coordinate of the upper left corner of the source rectangle.
 
 *rectDest*<br/>
-A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure indicating the destination rectangle.
+A [RECT](/windows/win32/api/windef/ns-windef-rect) structure indicating the destination rectangle.
 
 *pointSrc*<br/>
 A `POINT` structure indicating the upper left corner of the source rectangle.
@@ -424,7 +424,7 @@ Specifies the type of compression for a compressed bottom-up bitmap (top-down DI
 - BI_BITFIELDS The format is uncompressed and the color table consists of three DWORD color masks that specify the red, green, and blue components, respectively, of each pixel. This is valid when used with 16- and 32-bpp bitmaps.
 
 *pdwBitfields*<br/>
-Only used if *eCompression* is set to BI_BITFIELDS, otherwise it must be NULL. A pointer to an array of three DWORD bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) in the Windows SDK.
+Only used if *eCompression* is set to BI_BITFIELDS, otherwise it must be NULL. A pointer to an array of three DWORD bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) in the Windows SDK.
 
 *dwFlags*<br/>
 Specifies if the bitmap object has an alpha channel. Can be a combination of zero or more of the following values:
@@ -539,13 +539,13 @@ The width, in logical units, of the source rectangle.
 The height, in logical units, of the source rectangle.
 
 *rectDest*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, identifying the destination.
 
 *rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
 
 *pointDest*<br/>
-A reference to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that identifies the upper left corner of the destination rectangle, in logical units.
+A reference to a [POINT](/windows/win32/api/windef/ns-windef-point) structure that identifies the upper left corner of the destination rectangle, in logical units.
 
 ### Return Value
 
@@ -592,7 +592,7 @@ The number of bits per pixel.
 
 This value determines the number of bits that define each pixel and the maximum number of colors in the bitmap.
 
-The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the `biBitCount` member of [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) in the Windows SDK for more information about this value.
+The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the `biBitCount` member of [BITMAPINFOHEADER](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) in the Windows SDK for more information about this value.
 
 ## <a name="getcolortable"></a> CImage::GetColorTable
 
@@ -1203,10 +1203,10 @@ The x-coordinate of the upper left corner of the monochrome bitmap.
 The y-coordinate of the upper left corner of the monochrome bitmap.
 
 *rectSrc*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the coordinates of the source rectangle.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the coordinates of the source rectangle.
 
 *pointMask*<br/>
-A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure indicating the upper left corner of the mask bitmap.
+A [POINT](/windows/win32/api/windef/ns-windef-point) structure indicating the upper left corner of the mask bitmap.
 
 ### Return Value
 
@@ -1463,7 +1463,7 @@ The height, in logical units, of the destination rectangle.
 The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.
 
 *rectDest*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, identifying the destination.
 
 *xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.
@@ -1546,7 +1546,7 @@ The height, in logical units, of the destination rectangle.
 The color in the source bitmap to treat as transparent. By default, CLR_INVALID, indicating that the color currently set as the transparent color of the image should be used.
 
 *rectDest*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, identifying the destination.
 
 *xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.

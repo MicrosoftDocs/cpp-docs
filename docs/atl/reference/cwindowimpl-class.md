@@ -127,7 +127,7 @@ HWND Create(
 [in] The handle to the parent or owner window.
 
 *rect*<br/>
-[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
+[in] A [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
 
 *szWindowName*<br/>
 [in] Specifies the name of the window. The default value is NULL.

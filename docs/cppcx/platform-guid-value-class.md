@@ -8,7 +8,7 @@ ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
 ---
 # Platform::Guid value class
 
-Represents a [GUID](/previous-versions/cc317743(v%3dmsdn.10)) type in the Windows Runtime type system.
+Represents a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid type in the Windows Runtime type system.
 
 ## Syntax
 
@@ -107,7 +107,7 @@ The next byte of the `GUID`.
 The next byte of the `GUID`.
 
 *m*<br/>
-A `GUID` in the form a [GUID structure](/previous-versions/cc317743(v%3dmsdn.10)).
+A `GUID` in the form a [GUID structure](/windows/win32/api/guiddef/ns-guiddef-guid).
 
 *n*<br/>
 The remaining 8 bytes of the `GUID`.
@@ -187,7 +187,7 @@ This operator is provided so that `Guid` objects can be more easily consumed by 
 
 ## <a name="operator-call"></a> Guid::operator() Operator
 
-Implicitly converts a `Platform::Guid` to a [GUID structure](/previous-versions/cc317743(v%3dmsdn.10)).
+Implicitly converts a `Platform::Guid` to a [GUID structure](/windows/win32/api/guiddef/ns-guiddef-guid).
 
 ### Syntax
 
@@ -197,7 +197,7 @@ const GUID& Platform::Guid::operator();
 
 ### Return Value
 
-A [GUID structure](/previous-versions/cc317743(v%3dmsdn.10)).
+A [GUID structure](/windows/win32/api/guiddef/ns-guiddef-guid).
 
 ## See also
 

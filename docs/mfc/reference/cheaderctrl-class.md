@@ -165,7 +165,7 @@ virtual BOOL Create(
 Specifies the header control's style. For a description of header control styles, see [Header Control Styles](/windows/win32/Controls/header-control-styles) in the Windows SDK.
 
 *rect*<br/>
-Specifies the header control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
+Specifies the header control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 *pParentWnd*<br/>
 Specifies the header control's parent window, usually a `CDialog`. It must not be NULL.
@@ -235,7 +235,7 @@ Specifies the extended style of the control being created. For a list of extende
 The header control's style. For a description of header control styles, see [Header Control Styles](/windows/win32/Controls/header-control-styles) in the Windows SDK. See [Create](#create) for a list of additional styles.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -477,7 +477,7 @@ BOOL GetItemDropDownRect(
 |Parameter|Description|
 |---------------|-----------------|
 |*iItem*|[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) structure.|
-|*lpRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to receive the bounding rectangle information.|
+|*lpRect*|[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure to receive the bounding rectangle information.|
 
 ### Return Value
 
@@ -515,7 +515,7 @@ BOOL GetItemRect(
 The zero-based index of the header control item.
 
 *lpRect*<br/>
-A pointer to the address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle information.
+A pointer to the address of a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives the bounding rectangle information.
 
 ### Return Value
 
@@ -567,7 +567,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*lpRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle information.|
+|*lpRect*|[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives the bounding rectangle information.|
 
 ### Return Value
 

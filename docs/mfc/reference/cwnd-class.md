@@ -1553,7 +1553,7 @@ If the window is the parent of any windows, these child windows are automaticall
 
 The `DestroyWindow` member function also destroys modeless dialog boxes created by [CDialog::Create](../../mfc/reference/cdialog-class.md#create).
 
-If the `CWnd` being destroyed is a child window and does not have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) style set, then the [WM_PARENTNOTIFY](/previous-versions/windows/desktop/inputmsg/wm-parentnotify)       message is sent to the parent.
+If the `CWnd` being destroyed is a child window and does not have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) style set, then the [WM_PARENTNOTIFY](/windows/win32/inputmsg/wm-parentnotify) message is sent to the parent.
 
 ### Example
 
@@ -1861,10 +1861,10 @@ BOOL DrawAnimatedRects(
 Specifies the type of animation. If you specify IDANI_CAPTION, the window caption will animate from the position specified by *lprcFrom* to the position specified by *lprcTo*. The effect is similar to minimizing or maximizing a window.
 
 *lprcFrom*<br/>
-Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the location and size of the icon or minimized window.
+Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the location and size of the icon or minimized window.
 
 *lprcTo*<br/>
-Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the location and size of the restored window
+Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the location and size of the restored window
 
 ### Return Value
 
