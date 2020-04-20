@@ -7,9 +7,11 @@ _themes.MSDN.Modern/
 _themes.VS.Modern/
 
 # Ignore local configuration changes
-.github/
+.github/workflows/*
+!.github/workflows/markdownlint.yml
 .openpublishing.buildcore.ps1
 .vscode/
 
 # Documentation build
 /docs/vcppdocs
+
