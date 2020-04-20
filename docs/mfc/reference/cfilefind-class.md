@@ -124,7 +124,7 @@ After calling `Close`, you do not have to create a new `CFileFind` instance befo
 
 Closes the file specified by the current search handle.
 
-```
+```cpp
 virtual void CloseContext();
 ```
 

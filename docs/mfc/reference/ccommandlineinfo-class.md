@@ -243,7 +243,7 @@ If the restart manager exits the application and is configured to restart it, th
 
 The framework calls this function to parse/interpret individual parameters from the command line. The second version differs from the first only in Unicode projects.
 
-```
+```cpp
 virtual void ParseParam(
     const char* pszParam,
     BOOL bFlag,

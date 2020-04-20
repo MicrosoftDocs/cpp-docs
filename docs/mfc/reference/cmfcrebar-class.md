@@ -233,7 +233,7 @@ virtual INT_PTR OnToolHitTest(
 
 ## <a name="onupdatecmdui"></a> CMFCReBar::OnUpdateCmdUI
 
-```
+```cpp
 virtual void OnUpdateCmdUI(
     CFrameWnd* pTarget,
     BOOL bDisableIfNoHndler);
@@ -248,7 +248,7 @@ virtual void OnUpdateCmdUI(
 
 ## <a name="setpanealignment"></a> CMFCReBar::SetPaneAlignment
 
-```
+```cpp
 virtual void SetPaneAlignment(DWORD dwAlignment);
 ```
 

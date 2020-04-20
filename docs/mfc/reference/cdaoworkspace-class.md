@@ -133,7 +133,7 @@ For information about calling DAO directly and about DAO security, see [Technica
 
 Call this member function after you call [Create](#create).
 
-```
+```cpp
 virtual void Append();
 ```
 
@@ -189,7 +189,7 @@ To release a workspace and its contained objects, call the workspace object's [C
 
 Call this member function to close the workspace object.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -228,7 +228,7 @@ When you close a database or workspace with pending transactions, the transactio
 
 Call this member function to compact a specified Microsoft Jet (.MDB) database.
 
-```
+```cpp
 static void PASCAL CompactDatabase(
     LPCTSTR lpszSrcName,
     LPCTSTR lpszDestName,
@@ -323,7 +323,7 @@ For more information about compacting databases, see the topic "CompactDatabase 
 
 Call this member function to create a new DAO workspace object and associate it with the MFC `CDaoWorkspace` object.
 
-```
+```cpp
 virtual void Create(
     LPCTSTR lpszName,
     LPCTSTR lpszUserName,
@@ -583,7 +583,7 @@ For a description of the information returned in *wkspcinfo*, see the [CDaoWorks
 
 Call `Idle` to provide the database engine with the opportunity to perform background tasks that may not be up-to-date because of intense data processing.
 
-```
+```cpp
 static void PASCAL Idle(int nAction = dbFreeLocks);
 ```
 
@@ -635,7 +635,7 @@ For information about accessing DAO objects directly, see [Technical Note 54](..
 
 Explicitly opens a workspace object associated with DAO's default workspace.
 
-```
+```cpp
 virtual void Open(LPCTSTR lpszName = NULL);
 ```
 
@@ -666,7 +666,7 @@ Although many `CDaoWorkspace` member functions can only be called after the work
 
 Call this member function if you need to attempt to repair a corrupted database that accesses the Microsoft Jet database engine.
 
-```
+```cpp
 static void PASCAL RepairDatabase(LPCTSTR lpszName);
 ```
 
@@ -708,7 +708,7 @@ If you close a workspace object without saving or rolling back any pending trans
 
 Call this member function to set the default password that the database engine uses when a workspace object is created without a specific password.
 
-```
+```cpp
 static void PASCAL SetDefaultPassword(LPCTSTR lpszPassword);
 ```
 
@@ -737,7 +737,7 @@ For more about security, see the topic "Permissions Property" in DAO Help. For r
 
 Call this member function to set the default user name that the database engine uses when a workspace object is created without a specific user name.
 
-```
+```cpp
 static void PASCAL SetDefaultUser(LPCTSTR lpszDefaultUser);
 ```
 
@@ -766,7 +766,7 @@ For related information, see the topics "DefaultUser Property" and "DefaultPassw
 
 Call this member function to specify the location of Windows registry settings for the Microsoft Jet database engine.
 
-```
+```cpp
 static void PASCAL SetIniPath(LPCTSTR lpszRegistrySubKey);
 ```
 
@@ -807,7 +807,7 @@ Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous trans
 
 Call this member function to set the value of the DAO LoginTimeout property for the workspace.
 
-```
+```cpp
 static void PASCAL SetLoginTimeout(short nSeconds);
 ```
 

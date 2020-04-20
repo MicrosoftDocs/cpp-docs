@@ -140,7 +140,7 @@ When a pattern brush is deleted, the bitmap associated with the brush is not del
 
 Called automatically by the `CWinApp` idle-time handler, `DeleteTempMap` deletes any temporary `CGdiObject` objects created by `FromHandle`.
 
-```
+```cpp
 static void PASCAL DeleteTempMap();
 ```
 

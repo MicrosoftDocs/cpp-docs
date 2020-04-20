@@ -389,7 +389,7 @@ If the focus is at the last control in the dialog box, it moves to the first con
 
 The framework calls this method when the user clicks **Cancel** or presses the ESC key in a modal or modeless dialog box.
 
-```
+```cpp
 virtual void OnCancel();
 ```
 
@@ -437,7 +437,7 @@ Windows calls the `OnInitDialog` function by using the standard global dialog-bo
 
 Called when the user clicks the **OK** button (the button with an ID of IDOK).
 
-```
+```cpp
 virtual void OnOK();
 ```
 
@@ -458,7 +458,7 @@ If you implement the **OK** button in a modeless dialog box, you must override t
 
 Specifies the font a dialog-box control will use when drawing text.
 
-```
+```cpp
 Virtual void OnSetFont(CFont* pFont);
 ```
 

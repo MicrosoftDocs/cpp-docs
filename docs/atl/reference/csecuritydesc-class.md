@@ -534,7 +534,7 @@ This method calls [SetSecurityDescriptorControl](/windows/win32/api/securitybase
 
 Sets information in a discretionary access-control list (DACL). If a DACL is already present in the security descriptor, it is replaced.
 
-```
+```cpp
 inline void SetDacl(
     bool bPresent = true,
     bool bDefaulted = false) throw(...);

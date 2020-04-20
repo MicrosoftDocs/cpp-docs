@@ -87,7 +87,7 @@ struct both *var[5](struct both, struct both);
 
 The following statement declares an array of pointers.
 
-```
+```cpp
 unsigned int *(* const *name[5][10] ) ( void );
 ```
 

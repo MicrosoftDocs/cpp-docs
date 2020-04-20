@@ -183,7 +183,7 @@ TRUE if pane is on status bar extended area. FALSE otherwise.
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-```
+```cpp
 virtual void OnDrawBorder(CDC*);
 ```
 
@@ -213,7 +213,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 Framework calls this method when the animation that is assigned to the pane ends.
 
-```
+```cpp
 virtual void OnFinishAnimation();
 ```
 

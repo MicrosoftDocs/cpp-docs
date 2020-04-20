@@ -114,7 +114,7 @@ Called by a Rich Preview handler when it needs to destroy this control.
 
 ### Syntax
 
-```
+```cpp
 virtual void Destroy();
 ```
 
@@ -124,7 +124,7 @@ Called by the framework to render the preview.
 
 ### Syntax
 
-```
+```cpp
 virtual void DoPaint(
    CPaintDC* pDC
 );
@@ -141,7 +141,7 @@ Sets input focus to this control.
 
 ### Syntax
 
-```
+```cpp
 virtual void Focus();
 ```
 
@@ -203,7 +203,7 @@ Tells this control to redraw.
 
 ### Syntax
 
-```
+```cpp
 virtual void Redraw();
 ```
 
@@ -230,7 +230,7 @@ Sets a new parent for this control.
 
 ### Syntax
 
-```
+```cpp
 virtual void SetHost(
    HWND hWndParent
 );
@@ -247,7 +247,7 @@ Called by a Rich Preview handler when it needs to set visuals of rich preview co
 
 ### Syntax
 
-```
+```cpp
 virtual void SetPreviewVisuals(
    COLORREF clrBack,
    COLORREF clrText,
@@ -272,7 +272,7 @@ Sets a new bounding rectangle for this control.
 
 ### Syntax
 
-```
+```cpp
 virtual void SetRect(
    const RECT* prc,
    BOOL bRedraw

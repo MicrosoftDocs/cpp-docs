@@ -110,7 +110,7 @@ Indicates that the object will be destroyed by owner (pParentTarget).
 
 Destroys a CD2DBrush object.
 
-```
+```cpp
 virtual void Destroy();
 ```
 

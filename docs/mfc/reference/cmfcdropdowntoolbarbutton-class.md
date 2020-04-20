@@ -78,7 +78,7 @@ The `CMFCDropDownToolBarButton` object can be exported to a [CMFCToolBarMenuButt
 
 Copies the properties of another toolbar button to the current button.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 
@@ -265,7 +265,7 @@ This method extends the base class implementation ( [CMFCToolBarButton::OnCalcul
 
 Called by the framework when the button is inserted into a new toolbar.
 
-```
+```cpp
 virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```
 
@@ -386,7 +386,7 @@ Override this method to modify the shortcut menu that the framework displays in 
 
 Called by the framework to draw the button by using the specified styles and options.
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     const CRect& rect,
@@ -464,7 +464,7 @@ This method extends the base class implementation ( [CMFCToolBarButton::OnDrawOn
 
 Reads this object from an archive or writes it to an archive.
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 

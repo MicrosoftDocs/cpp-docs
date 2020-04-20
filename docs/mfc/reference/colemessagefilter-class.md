@@ -66,7 +66,7 @@ For more information, see the article [Servers: Implementing a Server](../../mfc
 
 Call this function to begin a busy state.
 
-```
+```cpp
 virtual void BeginBusyState();
 ```
 
@@ -116,7 +116,7 @@ Specifies whether the "not responding" dialog box is enabled or disabled.
 
 Call this function to end a busy state.
 
-```
+```cpp
 virtual void EndBusyState();
 ```
 

@@ -195,7 +195,7 @@ The iteration sequence is not predictable; therefore, the "first element in the 
 
 Called by the framework when a connection is being established or broken.
 
-```
+```cpp
 virtual void OnAdvise(BOOL bAdvise);
 ```
 

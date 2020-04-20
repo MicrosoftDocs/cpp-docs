@@ -189,7 +189,7 @@ For a list of toolbar button styles see [ToolBar Control Styles](../../mfc/refer
 
 Deletes user-defined data.
 
-```
+```cpp
 virtual void ClearData();
 ```
 
@@ -237,7 +237,7 @@ This method is called only from the [AddSortedItem](#addsorteditem) method.
 
 Copies the state of the specified `CMFCToolBarComboBoxButton` to the current object.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 
@@ -329,7 +329,7 @@ TRUE if the item was located and successfully deleted; otherwise, FALSE.
 
 Duplicates user-defined data.
 
-```
+```cpp
 virtual void DuplicateData();
 ```
 
@@ -341,7 +341,7 @@ By default this method does nothing. Override this method in a derived class if 
 
 Enables or disables the edit and combo boxes.
 
-```
+```cpp
 virtual void EnableWindow(BOOL bEnable = TRUE);
 ```
 
@@ -634,7 +634,7 @@ An index parameter of -1 returns the data associated with the currently selected
 
 Returns the data associated with an item at a specific index in the list box of a combo box button that has a specific command ID. This data is returned as a pointer.
 
-```
+```cpp
 static void* GetItemDataPtrAll(
     UINT uiCmd,
     int iIndex=-1);
@@ -815,7 +815,7 @@ Whether the combo box button processes the  message.
 
 Called by the framework when the button is added to the **Customize** dialog box.
 
-```
+```cpp
 virtual void OnAddToCustomizePage();
 ```
 
@@ -849,7 +849,7 @@ A `SIZE` structure that contains the dimensions of the combo box button, in pixe
 
 Called by the framework when the combo box button is inserted into a new toolbar.
 
-```
+```cpp
 virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```
 
@@ -910,7 +910,7 @@ This method also sets the combo box button text color.
 
 Called by the framework to draw the combo box button by using the specified styles and options.
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     const CRect& rect,
@@ -978,7 +978,7 @@ The width, in pixels, of the combo box button.
 
 Called by the framework to set the combo box button font when the application font changes.
 
-```
+```cpp
 virtual void OnGlobalFontsChanged();
 ```
 
@@ -986,7 +986,7 @@ virtual void OnGlobalFontsChanged();
 
 Called by the framework to change the location of the combo box button when the parent toolbar moves.
 
-```
+```cpp
 virtual void OnMove();
 ```
 
@@ -994,7 +994,7 @@ virtual void OnMove();
 
 Called by the framework when the combo box button is hidden or displayed.
 
-```
+```cpp
 virtual void OnShow(BOOL bShow);
 ```
 
@@ -1007,7 +1007,7 @@ virtual void OnShow(BOOL bShow);
 
 Called by the framework to change the size of the combo box button when the parent toolbar changes size.
 
-```
+```cpp
 virtual void OnSize(int iSize);
 ```
 
@@ -1133,7 +1133,7 @@ TRUE if the method was successful; otherwise FALSE.
 
 Reads this object from an archive or writes it to an archive.
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 
@@ -1172,7 +1172,7 @@ TRUE if the method was successful; otherwise FALSE.
 
 Sets the vertical position of combo box buttons in the application.
 
-```
+```cpp
 static void SetCenterVert(BOOL bCenterVert=TRUE);
 ```
 
@@ -1219,7 +1219,7 @@ The default height is 150 pixels.
 
 Sets the flat style appearance of combo box buttons in the application.
 
-```
+```cpp
 static void SetFlatMode(BOOL bFlat=TRUE);
 ```
 
@@ -1236,7 +1236,7 @@ The default flat style for combo box buttons is FALSE.
 
 Sets the specified style for the combo box button and redraws the control if it is not disabled.
 
-```
+```cpp
 virtual void SetStyle(UINT nStyle);
 ```
 

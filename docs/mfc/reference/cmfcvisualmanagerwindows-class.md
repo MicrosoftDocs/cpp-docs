@@ -374,7 +374,7 @@ AFX_IMPORT_DATA static BOOL m_b3DTabsXPTheme;
 
 ## <a name="ondrawbargripper"></a> CMFCVisualManagerWindows::OnDrawBarGripper
 
-```
+```cpp
 virtual void OnDrawBarGripper(
     CDC* pDC,
     CRect rectGripper,
@@ -416,7 +416,7 @@ virtual BOOL OnDrawBrowseButton(
 
 ## <a name="ondrawbuttonborder"></a> CMFCVisualManagerWindows::OnDrawButtonBorder
 
-```
+```cpp
 virtual void OnDrawButtonBorder(
     CDC* pDC,
     CMFCToolBarButton* pButton,
@@ -435,7 +435,7 @@ virtual void OnDrawButtonBorder(
 
 ## <a name="ondrawbuttonseparator"></a> CMFCVisualManagerWindows::OnDrawButtonSeparator
 
-```
+```cpp
 virtual void OnDrawButtonSeparator(
     CDC* pDC,
     CMFCToolBarButton* pButton,
@@ -456,7 +456,7 @@ virtual void OnDrawButtonSeparator(
 
 ## <a name="ondrawcaptionbutton"></a> CMFCVisualManagerWindows::OnDrawCaptionButton
 
-```
+```cpp
 virtual void OnDrawCaptionButton(
     CDC* pDC,
     CMFCCaptionButton* pButton,
@@ -481,7 +481,7 @@ virtual void OnDrawCaptionButton(
 
 ## <a name="ondrawcaptionbuttonicon"></a> CMFCVisualManagerWindows::OnDrawCaptionButtonIcon
 
-```
+```cpp
 virtual void OnDrawCaptionButtonIcon(
     CDC* pDC,
     CMFCCaptionButton* pButton,
@@ -504,7 +504,7 @@ virtual void OnDrawCaptionButtonIcon(
 
 ## <a name="ondrawcheckboxex"></a> CMFCVisualManagerWindows::OnDrawCheckBoxEx
 
-```
+```cpp
 virtual void OnDrawCheckBoxEx(
     CDC* pDC,
     CRect rect,
@@ -527,7 +527,7 @@ virtual void OnDrawCheckBoxEx(
 
 ## <a name="ondrawcomboborder"></a> CMFCVisualManagerWindows::OnDrawComboBorder
 
-```
+```cpp
 virtual void OnDrawComboBorder(
     CDC* pDC,
     CRect rect,
@@ -550,7 +550,7 @@ virtual void OnDrawComboBorder(
 
 ## <a name="ondrawcombodropbutton"></a> CMFCVisualManagerWindows::OnDrawComboDropButton
 
-```
+```cpp
 virtual void OnDrawComboDropButton(
     CDC* pDC,
     CRect rect,
@@ -573,7 +573,7 @@ virtual void OnDrawComboDropButton(
 
 ## <a name="ondrawcontrolborder"></a> CMFCVisualManagerWindows::OnDrawControlBorder
 
-```
+```cpp
 virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 ```
 
@@ -585,7 +585,7 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 
 ## <a name="ondraweditborder"></a> CMFCVisualManagerWindows::OnDrawEditBorder
 
-```
+```cpp
 virtual void OnDrawEditBorder(
     CDC* pDC,
     CRect rect,
@@ -606,7 +606,7 @@ virtual void OnDrawEditBorder(
 
 ## <a name="ondrawexpandingbox"></a> CMFCVisualManagerWindows::OnDrawExpandingBox
 
-```
+```cpp
 virtual void OnDrawExpandingBox(
     CDC* pDC,
     CRect rect,
@@ -625,7 +625,7 @@ virtual void OnDrawExpandingBox(
 
 ## <a name="ondrawfloatingtoolbarborder"></a> CMFCVisualManagerWindows::OnDrawFloatingToolbarBorder
 
-```
+```cpp
 virtual void OnDrawFloatingToolbarBorder(
     CDC* pDC,
     CMFCBaseToolBar* pToolBar,
@@ -644,7 +644,7 @@ virtual void OnDrawFloatingToolbarBorder(
 
 ## <a name="ondrawheaderctrlborder"></a> CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder
 
-```
+```cpp
 virtual void OnDrawHeaderCtrlBorder(
     CMFCHeaderCtrl* pCtrl,
     CDC* pDC,
@@ -665,7 +665,7 @@ virtual void OnDrawHeaderCtrlBorder(
 
 ## <a name="ondrawheaderctrlsortarrow"></a> CMFCVisualManagerWindows::OnDrawHeaderCtrlSortArrow
 
-```
+```cpp
 virtual void OnDrawHeaderCtrlSortArrow(
     CMFCHeaderCtrl* pCtrl,
     CDC* pDC,
@@ -684,7 +684,7 @@ virtual void OnDrawHeaderCtrlSortArrow(
 
 ## <a name="ondrawmenuborder"></a> CMFCVisualManagerWindows::OnDrawMenuBorder
 
-```
+```cpp
 virtual void OnDrawMenuBorder(
     CDC* pDC,
     CMFCPopu* pMenu,
@@ -701,7 +701,7 @@ virtual void OnDrawMenuBorder(
 
 ## <a name="ondrawmenusystembutton"></a> CMFCVisualManagerWindows::OnDrawMenuSystemButton
 
-```
+```cpp
 virtual void OnDrawMenuSystemButton(
     CDC* pDC,
     CRect rect,
@@ -722,7 +722,7 @@ virtual void OnDrawMenuSystemButton(
 
 ## <a name="ondrawminiframeborder"></a> CMFCVisualManagerWindows::OnDrawMiniFrameBorder
 
-```
+```cpp
 virtual void OnDrawMiniFrameBorder(
     CDC* pDC,
     CPaneFrameWnd* pFrameWnd,
@@ -741,7 +741,7 @@ virtual void OnDrawMiniFrameBorder(
 
 ## <a name="ondrawoutlookpagebuttonborder"></a> CMFCVisualManagerWindows::OnDrawOutlookPageButtonBorder
 
-```
+```cpp
 virtual void OnDrawOutlookPageButtonBorder(
     CDC* pDC,
     CRect& rectBtn,
@@ -760,7 +760,7 @@ virtual void OnDrawOutlookPageButtonBorder(
 
 ## <a name="ondrawpaneborder"></a> CMFCVisualManagerWindows::OnDrawPaneBorder
 
-```
+```cpp
 virtual void OnDrawPaneBorder(
     CDC* pDC,
     CBasePane* pBar,
@@ -800,7 +800,7 @@ virtual COLORREF OnDrawPaneCaption(
 
 ## <a name="ondrawpopupwindowbuttonborder"></a> CMFCVisualManagerWindows::OnDrawPopupWindowButtonBorder
 
-```
+```cpp
 virtual void OnDrawPopupWindowButtonBorder(
     CDC* pDC,
     CRect rectClient,
@@ -817,7 +817,7 @@ virtual void OnDrawPopupWindowButtonBorder(
 
 ## <a name="ondrawscrollbuttons"></a> CMFCVisualManagerWindows::OnDrawScrollButtons
 
-```
+```cpp
 virtual void OnDrawScrollButtons(
     CDC* pDC,
     const CRect& rect,
@@ -838,7 +838,7 @@ virtual void OnDrawScrollButtons(
 
 ## <a name="ondrawseparator"></a> CMFCVisualManagerWindows::OnDrawSeparator
 
-```
+```cpp
 virtual void OnDrawSeparator(
     CDC* pDC,
     CBasePane* pBar,
@@ -857,7 +857,7 @@ virtual void OnDrawSeparator(
 
 ## <a name="ondrawspinbuttons"></a> CMFCVisualManagerWindows::OnDrawSpinButtons
 
-```
+```cpp
 virtual void OnDrawSpinButtons(
     CDC* pDC,
     CRect rectSpin,
@@ -878,7 +878,7 @@ virtual void OnDrawSpinButtons(
 
 ## <a name="ondrawstatusbarpaneborder"></a> CMFCVisualManagerWindows::OnDrawStatusBarPaneBorder
 
-```
+```cpp
 virtual void OnDrawStatusBarPaneBorder(
     CDC* pDC,
     CMFCStatusBar* pBar,
@@ -899,7 +899,7 @@ virtual void OnDrawStatusBarPaneBorder(
 
 ## <a name="ondrawstatusbarprogress"></a> CMFCVisualManagerWindows::OnDrawStatusBarProgress
 
-```
+```cpp
 virtual void OnDrawStatusBarProgress(
     CDC* pDC,
     CMFCStatusBar* pStatusBar,
@@ -928,7 +928,7 @@ virtual void OnDrawStatusBarProgress(
 
 ## <a name="ondrawstatusbarsizebox"></a> CMFCVisualManagerWindows::OnDrawStatusBarSizeBox
 
-```
+```cpp
 virtual void OnDrawStatusBarSizeBox(
     CDC* pDC,
     CMFCStatusBar* pStatBar,
@@ -945,7 +945,7 @@ virtual void OnDrawStatusBarSizeBox(
 
 ## <a name="ondrawtab"></a> CMFCVisualManagerWindows::OnDrawTab
 
-```
+```cpp
 virtual void OnDrawTab(
     CDC* pDC,
     CRect rectTab,
@@ -966,7 +966,7 @@ virtual void OnDrawTab(
 
 ## <a name="ondrawtabclosebutton"></a> CMFCVisualManagerWindows::OnDrawTabCloseButton
 
-```
+```cpp
 virtual void OnDrawTabCloseButton(
     CDC* pDC,
     CRect rect,
@@ -989,7 +989,7 @@ virtual void OnDrawTabCloseButton(
 
 ## <a name="ondrawtabsbuttonborder"></a> CMFCVisualManagerWindows::OnDrawTabsButtonBorder
 
-```
+```cpp
 virtual void OnDrawTabsButtonBorder(
     CDC* pDC,
     CRect& rect,
@@ -1010,7 +1010,7 @@ virtual void OnDrawTabsButtonBorder(
 
 ## <a name="ondrawtask"></a> CMFCVisualManagerWindows::OnDrawTask
 
-```
+```cpp
 virtual void OnDrawTask(
     CDC* pDC,
     CMFCTasksPaneTask* pTask,
@@ -1031,7 +1031,7 @@ virtual void OnDrawTask(
 
 ## <a name="ondrawtasksgroupareaborder"></a> CMFCVisualManagerWindows::OnDrawTasksGroupAreaBorder
 
-```
+```cpp
 virtual void OnDrawTasksGroupAreaBorder(
     CDC* pDC,
     CRect rect,
@@ -1050,7 +1050,7 @@ virtual void OnDrawTasksGroupAreaBorder(
 
 ## <a name="ondrawtasksgroupcaption"></a> CMFCVisualManagerWindows::OnDrawTasksGroupCaption
 
-```
+```cpp
 virtual void OnDrawTasksGroupCaption(
     CDC* pDC,
     CMFCTasksPaneTaskGroup* pGroup,
@@ -1071,7 +1071,7 @@ virtual void OnDrawTasksGroupCaption(
 
 ## <a name="ondrawtearoffcaption"></a> CMFCVisualManagerWindows::OnDrawTearOffCaption
 
-```
+```cpp
 virtual void OnDrawTearOffCaption(
     CDC* pDC,
     CRect rect,
@@ -1088,7 +1088,7 @@ virtual void OnDrawTearOffCaption(
 
 ## <a name="onerasepopupwindowbutton"></a> CMFCVisualManagerWindows::OnErasePopupWindowButton
 
-```
+```cpp
 virtual void OnErasePopupWindowButton(
     CDC* pDC,
     CRect rectClient,
@@ -1105,7 +1105,7 @@ virtual void OnErasePopupWindowButton(
 
 ## <a name="onerasetabsarea"></a> CMFCVisualManagerWindows::OnEraseTabsArea
 
-```
+```cpp
 virtual void OnEraseTabsArea(
     CDC* pDC,
     CRect rect,
@@ -1122,7 +1122,7 @@ virtual void OnEraseTabsArea(
 
 ## <a name="onerasetabsbutton"></a> CMFCVisualManagerWindows::OnEraseTabsButton
 
-```
+```cpp
 virtual void OnEraseTabsButton(
     CDC* pDC,
     CRect rect,
@@ -1160,7 +1160,7 @@ virtual BOOL OnEraseTabsFrame(
 
 ## <a name="onfillbarbackground"></a> CMFCVisualManagerWindows::OnFillBarBackground
 
-```
+```cpp
 virtual void OnFillBarBackground(
     CDC* pDC,
     CBasePane* pBar,
@@ -1181,7 +1181,7 @@ virtual void OnFillBarBackground(
 
 ## <a name="onfillbuttoninterior"></a> CMFCVisualManagerWindows::OnFillButtonInterior
 
-```
+```cpp
 virtual void OnFillButtonInterior(
     CDC* pDC,
     CMFCToolBarButton* pButton,
@@ -1240,7 +1240,7 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 ## <a name="onfilloutlookpagebutton"></a> CMFCVisualManagerWindows::OnFillOutlookPageButton
 
-```
+```cpp
 virtual void OnFillOutlookPageButton(
     CDC* pDC,
     const CRect& rect,
@@ -1261,7 +1261,7 @@ virtual void OnFillOutlookPageButton(
 
 ## <a name="onfilltasksgroupinterior"></a> CMFCVisualManagerWindows::OnFillTasksGroupInterior
 
-```
+```cpp
 virtual void OnFillTasksGroupInterior(
     CDC* pDC,
     CRect rect,
@@ -1278,7 +1278,7 @@ virtual void OnFillTasksGroupInterior(
 
 ## <a name="onfilltaskspanebackground"></a> CMFCVisualManagerWindows::OnFillTasksPaneBackground
 
-```
+```cpp
 virtual void OnFillTasksPaneBackground(
     CDC* pDC,
     CRect rectWorkArea);
@@ -1293,7 +1293,7 @@ virtual void OnFillTasksPaneBackground(
 
 ## <a name="onhighlightmenuitem"></a> CMFCVisualManagerWindows::OnHighlightMenuItem
 
-```
+```cpp
 virtual void OnHighlightMenuItem(
     CDC* pDC,
     CMFCToolBarMenuButton* pButton,
@@ -1312,7 +1312,7 @@ virtual void OnHighlightMenuItem(
 
 ## <a name="onhighlightrarelyusedmenuitems"></a> CMFCVisualManagerWindows::OnHighlightRarelyUsedMenuItems
 
-```
+```cpp
 virtual void OnHighlightRarelyUsedMenuItems(
     CDC* pDC,
     CRect rectRarelyUsed);
@@ -1327,7 +1327,7 @@ virtual void OnHighlightRarelyUsedMenuItems(
 
 ## <a name="onupdatesystemcolors"></a> CMFCVisualManagerWindows::OnUpdateSystemColors
 
-```
+```cpp
 virtual void OnUpdateSystemColors();
 ```
 

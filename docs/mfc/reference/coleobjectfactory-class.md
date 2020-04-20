@@ -255,7 +255,7 @@ The framework calls this function automatically before the application terminate
 
 Revokes all of the application's object factories' registrations with the OLE system DLLs.
 
-```
+```cpp
 static void PASCAL RevokeAll();
 ```
 

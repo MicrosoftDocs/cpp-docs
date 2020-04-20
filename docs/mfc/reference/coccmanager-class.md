@@ -293,7 +293,7 @@ Override this function to customize the process of creating a dialog box hosting
 
 Called by the framework to free memory allocated for the dialog template.
 
-```
+```cpp
 virtual void PostCreateDialog(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ```
 
@@ -312,7 +312,7 @@ Override this function to customize the process of cleaning up any resources use
 
 Call this function to set the control as the default button.
 
-```
+```cpp
 static void AFX_CDECL SetDefaultButton(
     CWnd* pWnd,
     BOOL bDefault);

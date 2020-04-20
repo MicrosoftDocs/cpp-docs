@@ -117,7 +117,7 @@ This method may be virtual if `Base` has declared the [DECLARE_GET_CONTROLLING_U
 
 Retrieves a pointer to the interface requested on the owner object.
 
-```
+```cpp
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 template <class Q>
 HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);

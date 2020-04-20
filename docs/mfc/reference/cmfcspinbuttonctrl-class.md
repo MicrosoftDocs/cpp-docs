@@ -60,7 +60,7 @@ The following example demonstrates how to create an object of the `CMFCSpinButto
 
 Repaints the current spin button control.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 

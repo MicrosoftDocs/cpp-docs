@@ -108,7 +108,7 @@ CDockingPanesRow* AddRow(
 
 ## <a name="adjustdockinglayout"></a> CDockSite::AdjustDockingLayout
 
-```
+```cpp
 virtual void AdjustDockingLayout();
 ```
 
@@ -116,7 +116,7 @@ virtual void AdjustDockingLayout();
 
 ## <a name="adjustlayout"></a> CDockSite::AdjustLayout
 
-```
+```cpp
 virtual void AdjustLayout();
 ```
 
@@ -226,7 +226,7 @@ virtual CDockingPanesRow* CreateRow(
 
 ## <a name="dockpane"></a> CDockSite::DockPane
 
-```
+```cpp
 virtual void DockPane(
     CPane* pWnd,
     AFX_DOCK_METHOD dockMethod,
@@ -312,7 +312,7 @@ int FindRowIndex(CDockingPanesRow* pRow);
 
 ## <a name="fixupvirtualrects"></a> CDockSite::FixupVirtualRects
 
-```
+```cpp
 virtual void FixupVirtualRects();
 ```
 
@@ -435,7 +435,7 @@ virtual BOOL MovePane(
 
 ## <a name="oninsertrow"></a> CDockSite::OnInsertRow
 
-```
+```cpp
 virtual void OnInsertRow(POSITION pos);
 ```
 
@@ -447,7 +447,7 @@ virtual void OnInsertRow(POSITION pos);
 
 ## <a name="onremoverow"></a> CDockSite::OnRemoveRow
 
-```
+```cpp
 virtual void OnRemoveRow(
     POSITION pos,
     BOOL bByShow = FALSE);
@@ -481,7 +481,7 @@ virtual int OnResizeRow(
 
 ## <a name="onsizeparent"></a> CDockSite::OnSizeParent
 
-```
+```cpp
 virtual void OnSizeParent(
     CRect& rectAvailable,
     UINT nSide,
@@ -524,7 +524,7 @@ virtual BOOL OnSetWindowPos(
 
 ## <a name="onshowrow"></a> CDockSite::OnShowRow
 
-```
+```cpp
 virtual void OnShowRow(
     POSITION pos,
     BOOL bShow);
@@ -577,7 +577,7 @@ static int __stdcall RectSideFromPoint(
 
 ## <a name="removepane"></a> CDockSite::RemovePane
 
-```
+```cpp
 virtual void RemovePane(
     CPane* pWnd,
     AFX_DOCK_METHOD dockMethod);
@@ -623,7 +623,7 @@ BOOL ReplacePane(
 
 ## <a name="repositionpanes"></a> CDockSite::RepositionPanes
 
-```
+```cpp
 virtual void RepositionPanes(CRect& rectNewClientArea);
 ```
 

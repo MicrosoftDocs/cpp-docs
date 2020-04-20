@@ -256,7 +256,7 @@ This member function implements the behavior of the Win32 message, [TCM_DESELECT
 
 Called by the framework when a visual aspect of an owner-draw tab control changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 

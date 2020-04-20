@@ -40,7 +40,7 @@ Now, you will associate your MFC control (`m_MyControl`) with a managed event ha
 
 1. Finally, add the implementation for `OnClick` to CMFC01Dlg.cpp:
 
-    ```
+    ```cpp
     void CMFC01Dlg::OnClick(System::Object^ sender, System::EventArgs^ e)
     {
         AfxMessageBox(_T("Button clicked"));

@@ -172,7 +172,7 @@ Each pane must be registered with the [CDockingManager Class](../../mfc/referenc
 
 Reduces the client area to allow for a border.
 
-```
+```cpp
 virtual void AdjustClientArea();
 ```
 
@@ -180,7 +180,7 @@ virtual void AdjustClientArea();
 
 Recalculates the layout of all docked panes.
 
-```
+```cpp
 virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```
 
@@ -1224,7 +1224,7 @@ The default implementation does nothing and returns TRUE.
 
 Called by the framework when an active pop-up menu processes a WM_DESTROY message.
 
-```
+```cpp
 virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```
 
@@ -1301,7 +1301,7 @@ Override this method  if you want to customize image rendering for the menu item
 
 Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)processes a WM_PAINT message.
 
-```
+```cpp
 virtual void OnDrawMenuLogo(
     CDC*,
     CMFCPopupMenu*,
@@ -1375,7 +1375,7 @@ TRUE if the method succeeds, otherwise FALSE.
 
 Sets the application's main frame window print-preview mode.
 
-```
+```cpp
 virtual void OnSetPreviewMode(
     BOOL bPreview,
     CPrintPreviewState* pState);
@@ -1512,7 +1512,7 @@ The default implementation does nothing.
 
 Called by the framework when the size of the client MDI window is changing.
 
-```
+```cpp
 virtual void OnSizeMDIClient(
     const CRect& rectOld,
     const CRect& rectNew);
@@ -1558,7 +1558,7 @@ Override this function when you want to implement a special setup for the tear-o
 
 Called by the framework to update the frame menu.
 
-```
+```cpp
 virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 ```
 
@@ -1614,7 +1614,7 @@ The call is redirected to the [CDockingManager Class](../../mfc/reference/cdocki
 
 Called by the framework to recalculate the layout of the frame window.
 
-```
+```cpp
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
 
@@ -1848,7 +1848,7 @@ void UpdateMDITabbedBarsIcons();
 
 Called by the framework to initiate the WinHelp application or context help.
 
-```
+```cpp
 virtual void WinHelp(
     DWORD dwData,
     UINT nCmd = HELP_CONTEXT);

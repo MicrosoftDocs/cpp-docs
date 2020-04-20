@@ -181,7 +181,7 @@ The object is constructed with default values for left, top, right and bottom, O
 
 Puts the encapsulated animation variables into a list.
 
-```
+```cpp
 virtual void GetAnimationVariableList(
     CList<CAnimationVariable*,
     CAnimationVariable*>& lst);

@@ -93,7 +93,7 @@ Valid tooltip types are listed in the following table:
 
 Deletes a tooltip control.
 
-```
+```cpp
 static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 ```
 
@@ -146,7 +146,7 @@ The following example demonstrates how to use the `SetTooltipParams` method of t
 
 Sets the text and description for a tooltip.
 
-```
+```cpp
 static void SetTooltipText(
     TOOLINFO* pTI,
     CToolTipCtrl* pToolTip,

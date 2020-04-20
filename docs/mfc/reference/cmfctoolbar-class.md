@@ -241,7 +241,7 @@ The following example demonstrates how to use various methods in the `CMFCToolBa
 
 Adds a menu command to the list of commands that are always displayed when a user opens a menu.
 
-```
+```cpp
 static void __stdcall AddBasicCommand(UINT uiCmd);
 ```
 
@@ -260,7 +260,7 @@ Use the [CMFCToolBar::SetBasicCommands](#setbasiccommands) method to set the lis
 
 Increments by one the counter that is associated with the given command.
 
-```
+```cpp
 static void __stdcall AddCommandUsage(UINT uiCommand);
 ```
 
@@ -323,7 +323,7 @@ Call this method to load a bitmap with toolbar images and add it to the collecti
 
 Recalculates the size and position of a toolbar.
 
-```
+```cpp
 virtual void AdjustLayout();
 ```
 
@@ -407,7 +407,7 @@ Use [CMFCToolBar::EnableTextLabels](#enabletextlabels) to specify whether the te
 
 Enable or disables the automatic generation of inactive button images.
 
-```
+```cpp
 static void AutoGrayInactiveImages(
     BOOL bEnable=TRUE,
     int nGrayImagePercentage=0,
@@ -595,7 +595,7 @@ You typically do not have to use this method. To enable the **Customize** button
 
 Frees the system resources allocated for toolbar images.
 
-```
+```cpp
 static void CMFCToolBar::CleanUpImages();
 ```
 
@@ -727,7 +727,7 @@ The following example demonstrates how to use the `CreateEx` method of the `CMFC
 
 Deactivates the toolbar.
 
-```
+```cpp
 virtual void Deactivate();
 ```
 
@@ -739,7 +739,7 @@ This method deactivates the toolbar by removing the focus from the highlighted t
 
 Repaints a toolbar.
 
-```
+```cpp
 virtual void DoPaint(CDC* pDC);
 ```
 
@@ -798,7 +798,7 @@ Override this method if you want to customize the appearance of buttons on your 
 
 Repaints a separator on a toolbar.
 
-```
+```cpp
 virtual void DrawSeparator(
     CDC* pDC,
     const CRect& rect,
@@ -869,7 +869,7 @@ The framework dynamically adds to the menu any buttons that do not fit in the to
 
 Enables docking of the pane to the main frame.
 
-```
+```cpp
 virtual void EnableDocking(DWORD dwAlignment);
 ```
 
@@ -903,7 +903,7 @@ By default, large icons are enabled.
 
 Enables or disables the quick customization of toolbars so that the user can press the **Alt** key and drag a button to a new location.
 
-```
+```cpp
 static void EnableQuickCustomization(BOOL bEnable=TRUE);
 ```
 
@@ -1427,7 +1427,7 @@ Call [CMFCToolBar::GetImages](#getimages) to obtain a pointer to the collection 
 
 Retrieves the region of the client area that must be redrawn for the button at the given index.
 
-```
+```cpp
 virtual void GetInvalidateItemRect(
     int nIndex,
     LPRECT lpRect) const;
@@ -1466,7 +1466,7 @@ The command ID of the toolbar button; or zero if the button with the specified i
 
 Returns the bounding rectangle of the button at a specified index.
 
-```
+```cpp
 virtual void GetItemRect(
     int nIndex,
     LPRECT lpRect) const;
@@ -2507,7 +2507,7 @@ virtual BOOL OnBeforeRemoveButton(
 
 Called by the framework when a user selects a button on the toolbar.
 
-```
+```cpp
 virtual void OnChangeHot(int iHot);
 ```
 
@@ -2522,7 +2522,7 @@ Override this method to process notifications that the user selected a button on
 
 ## <a name="onchangevisualmanager"></a> CMFCToolBar::OnChangeVisualManager
 
-```
+```cpp
 virtual void OnChangeVisualManager();
 ```
 
@@ -2532,7 +2532,7 @@ virtual void OnChangeVisualManager();
 
 Called by the framework from [CBasePane::DoPaint](../../mfc/reference/cbasepane-class.md#dopaint) to fill the toolbar background.
 
-```
+```cpp
 virtual void OnFillBackground(CDC* pDC);
 ```
 
@@ -2549,7 +2549,7 @@ Override this method to draw custom background in derived classes.
 
 ## <a name="onglobalfontschanged"></a> CMFCToolBar::OnGlobalFontsChanged
 
-```
+```cpp
 virtual void OnGlobalFontsChanged();
 ```
 
@@ -2559,7 +2559,7 @@ virtual void OnGlobalFontsChanged();
 
 Restores the toolbar to its original state.
 
-```
+```cpp
 virtual void OnReset();
 ```
 
@@ -2671,7 +2671,7 @@ Use the [ON_COMMAND](message-map-macros-mfc.md#on_command) macro to map the WM_C
 
 Removes all buttons and separators from the toolbar.
 
-```
+```cpp
 virtual void RemoveAllButtons();
 ```
 
@@ -2775,7 +2775,7 @@ The following example demonstrates how to use the `ReplaceButton` method in the 
 
 Restores all toolbars to their original states.
 
-```
+```cpp
 static void __stdcall ResetAll();
 ```
 
@@ -2787,7 +2787,7 @@ This method calls the [CMFCToolBar::RestoreOriginalState](#restoreoriginalstate)
 
 Clears all toolbar image collections in the application.
 
-```
+```cpp
 static void __stdcall ResetAllImages();
 ```
 
@@ -2797,7 +2797,7 @@ This method clears the image collections that are initialized by the [CMFCToolBa
 
 ## <a name="resetimages"></a> CMFCToolBar::ResetImages
 
-```
+```cpp
 virtual void ResetImages();
 ```
 
@@ -2805,7 +2805,7 @@ virtual void ResetImages();
 
 ## <a name="restorefocus"></a> CMFCToolBar::RestoreFocus
 
-```
+```cpp
 virtual void RestoreFocus();
 ```
 
@@ -2877,7 +2877,7 @@ The framework calls this method when it saves the application state to the regis
 
 Sets the list of commands that are always displayed when a user opens a menu.
 
-```
+```cpp
 static void __stdcall SetBasicCommands(CList<UINT,UINT>& lstCommands);
 ```
 
@@ -2964,7 +2964,7 @@ This method adds the **Customize** button to the toolbar and sends the AFX_WM_RE
 
 Sets the style of the toolbar button at the given index.
 
-```
+```cpp
 virtual void SetButtonStyle(
     int nIndex,
     UINT nStyle);
@@ -3093,7 +3093,7 @@ This method redraws the toolbar after it sets the height.
 
 ## <a name="sethelpmode"></a> CMFCToolBar::SetHelpMode
 
-```
+```cpp
 static void __stdcall SetHelpMode(BOOL bOn = TRUE);
 ```
 
@@ -3140,7 +3140,7 @@ Call the [CMFCToolBar::GetHotBorder](#gethotborder) method to determine whether 
 
 Sets the text color for hot toolbar buttons.
 
-```
+```cpp
 static void SetHotTextColor(COLORREF clrText);
 ```
 
@@ -3169,7 +3169,7 @@ void SetIgnoreSetText(BOOL bValue);
 
 Specifies whether toolbar buttons display large icons.
 
-```
+```cpp
 static void SetLargeIcons(BOOL bLargeIcons=TRUE);
 ```
 
@@ -3230,7 +3230,7 @@ void SetMaskMode(BOOL bMasked);
 
 Sets the size of toolbar menu buttons and their images.
 
-```
+```cpp
 static void __stdcall SetMenuSizes(
     SIZE sizeButton,
     SIZE sizeImage);
@@ -3256,7 +3256,7 @@ See the IEDemo and MSMoneyDemo samples for examples that use this method.
 
 Sets the list of commands that cannot be executed by the user.
 
-```
+```cpp
 static void SetNonPermittedCommands(CList<UINT,UINT>& lstCommands);
 ```
 
@@ -3339,7 +3339,7 @@ By default, the parent frame sends commands to the toolbar. Call the [CMFCToolBa
 
 Specifies whether the framework displays tool tips.
 
-```
+```cpp
 static void SetShowTooltips(BOOL bValue);
 ```
 
@@ -3379,7 +3379,7 @@ To retrieve the sibling of a toolbar, call [CMFCToolBar::GetSiblingToolBar](#get
 
 Specifies the sizes of buttons and images on all toolbars.
 
-```
+```cpp
 static void __stdcall SetSizes(
     SIZE sizeButton,
     SIZE sizeImage);

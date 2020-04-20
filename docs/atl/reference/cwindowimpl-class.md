@@ -264,7 +264,7 @@ WNDPROC m_pfnSuperWindowProc;
 
 Called after receiving the last message (typically WM_NCDESTROY).
 
-```
+```cpp
 virtual void OnFinalMessage(HWND hWnd);
 ```
 

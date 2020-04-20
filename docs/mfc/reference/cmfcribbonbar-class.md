@@ -532,7 +532,7 @@ TRUE if the image was drawn; otherwise FALSE.
 
 Adjusts the display of the ribbon bar when Desktop Window Manager (DWM) composition is enabled or disabled.
 
-```
+```cpp
 virtual void DWMCompositionChanged();
 ```
 
@@ -1277,7 +1277,7 @@ TRUE if the color scheme is Windows Aero; otherwise FALSE.
 
 This method is retained for backward compatibility with existing applications and should not be used for new development.
 
-```
+```cpp
 virtual void OnClickButton(
     CMFCRibbonButton* pButton,
     CPoint point);
@@ -1295,7 +1295,7 @@ virtual void OnClickButton(
 
 ## <a name="oneditcontextmenu"></a> CMFCRibbonBar::OnEditContextMenu
 
-```
+```cpp
 virtual void OnEditContextMenu(
     CMFCRibbonRichEditCtrl* pEdit,
     CPoint point);
@@ -1312,7 +1312,7 @@ virtual void OnEditContextMenu(
 
 Called by the framework when the layout changes direction.
 
-```
+```cpp
 virtual void OnRTLChanged(BOOL bIsRTL);
 ```
 
@@ -1475,7 +1475,7 @@ TRUE if the message was processed by the ribbon bar; otherwise FALSE.
 
 Adjusts the layout of all controls on the ribbon bar.
 
-```
+```cpp
 virtual void RecalcLayout();
 ```
 

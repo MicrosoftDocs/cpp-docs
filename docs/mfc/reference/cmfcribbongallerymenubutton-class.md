@@ -79,7 +79,7 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 
 ## <a name="copyfrom"></a> CMFCRibbonGalleryMenuButton::CopyFrom
 
-```
+```cpp
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 

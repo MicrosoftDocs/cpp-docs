@@ -993,7 +993,7 @@ The ID of the control.
 
 Called when the button is clicked.
 
-```
+```cpp
 virtual void OnButtonClicked(DWORD dwIDCtl);
 ```
 
@@ -1008,7 +1008,7 @@ The ID of the button.
 
 Called when the check box is checked or unchecked.
 
-```
+```cpp
 virtual void OnCheckButtonToggled(
     DWORD dwIDCtl,
     BOOL bChecked);
@@ -1028,7 +1028,7 @@ Checked or unchecked.
 
 Called when the control is activated.
 
-```
+```cpp
 virtual void OnControlActivating(DWORD dwIDCtl);
 ```
 
@@ -1043,7 +1043,7 @@ The ID of the control.
 
 Override this method if you want to handle the WM_NOTIFY CDN_SELCHANGE message.
 
-```
+```cpp
 virtual void OnFileNameChange();
 ```
 
@@ -1075,7 +1075,7 @@ If 1 is returned, the dialog box will remain displayed for the user to enter ano
 
 Override this function to handle the WM_NOTIFYCDN_FOLDERCHANGE message.
 
-```
+```cpp
 virtual void OnFolderChange();
 ```
 
@@ -1089,7 +1089,7 @@ Notification is sent only if the dialog box was created with the OFN_EXPLORER st
 
 Override this function to handle the WM_NOTIFY CDN_INITDONE message.
 
-```
+```cpp
 virtual void OnInitDone();
 ```
 
@@ -1106,7 +1106,7 @@ The system sends this only if the dialog box was created with the OFN_EXPLORER s
 
 Called when the container item is selected.
 
-```
+```cpp
 virtual void OnItemSelected(
     DWORD dwIDCtl,
     DWORD dwIDItem);
@@ -1126,7 +1126,7 @@ The ID of the item.
 
 This function is called whenever the current selection in a list box is about to change.
 
-```
+```cpp
 virtual void OnLBSelChangedNotify(
     UINT nIDBox,
     UINT iCurSel,
@@ -1189,7 +1189,7 @@ If you want to disable share violation checking, use the bitwise OR operator to 
 
 Override this function to handle the WM_NOTIFYCDN_TYPECHANGE message.
 
-```
+```cpp
 virtual void OnTypeChange();
 ```
 

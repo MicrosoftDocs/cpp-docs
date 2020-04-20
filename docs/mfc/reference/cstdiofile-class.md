@@ -248,7 +248,7 @@ The following example shows how to use `Seek` to move the pointer 1000 bytes fro
 
 Writes data from a buffer to the file associated with the `CStdioFile` object.
 
-```
+```cpp
 virtual void WriteString(LPCTSTR lpsz);
 ```
 

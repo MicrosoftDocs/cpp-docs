@@ -85,7 +85,7 @@ To use `COleDocument`, derive a class from it and add functionality to manage th
 
 Call this function to add an item to the document.
 
-```
+```cpp
 virtual void AddItem(CDocItem* pItem);
 ```
 
@@ -307,7 +307,7 @@ A blank item is one whose rectangle is empty.
 
 Displays the OLE Change Icon dialog box and changes the icon representing the currently selected OLE item to the icon the user selects in the dialog box.
 
-```
+```cpp
 afx_msg void OnEditChangeIcon();
 ```
 
@@ -319,7 +319,7 @@ afx_msg void OnEditChangeIcon();
 
 Displays the OLE Convert dialog box and converts or activates the currently selected OLE item according to user selections in the dialog box.
 
-```
+```cpp
 afx_msg void OnEditConvert();
 ```
 
@@ -333,7 +333,7 @@ An example of conversion is converting a Microsoft Word document into a WordPad 
 
 Displays the OLE Edit/Links dialog box.
 
-```
+```cpp
 afx_msg void OnEditLinks();
 ```
 
@@ -345,7 +345,7 @@ afx_msg void OnEditLinks();
 
 Sends a message via the resident mail host (if any) with the document as an attachment.
 
-```
+```cpp
 afx_msg void OnFileSendMail();
 ```
 
@@ -361,7 +361,7 @@ For more information, see the [MAPI Topics](../../mfc/mapi.md) and [MAPI Support
 
 The framework calls this function after the document's visibility state changes.
 
-```
+```cpp
 virtual void OnShowViews(BOOL bVisible);
 ```
 
@@ -378,7 +378,7 @@ The default version of this function does nothing. Override it if your applicati
 
 Called by the framework to update the Change Icon command on the Edit menu.
 
-```
+```cpp
 afx_msg void OnUpdateEditChangeIcon(CCmdUI* pCmdUI);
 ```
 
@@ -395,7 +395,7 @@ A pointer to a `CCmdUI` structure that represents the menu that generated the up
 
 Called by the framework to update the Links command on the Edit menu.
 
-```
+```cpp
 afx_msg void OnUpdateEditLinksMenu(CCmdUI* pCmdUI);
 ```
 
@@ -412,7 +412,7 @@ Starting with the first OLE item in the document, `OnUpdateEditLinksMenu` access
 
 Called by the framework to update the *ObjectName* command on the Edit menu and the Verb submenu accessed from the *ObjectName* command, where *ObjectName* is the name of the OLE object embedded in the document.
 
-```
+```cpp
 afx_msg void OnUpdateObjectVerbMenu(CCmdUI* pCmdUI);
 ```
 
@@ -429,7 +429,7 @@ A pointer to a `CCmdUI` structure that represents the menu that generated the up
 
 Called by the framework to determine whether a linked OLE item can be pasted from the Clipboard.
 
-```
+```cpp
 afx_msg void OnUpdatePasteLinkMenu(CCmdUI* pCmdUI);
 ```
 
@@ -446,7 +446,7 @@ The Paste Special menu command is enabled or disabled depending on whether the i
 
 Called by the framework to determine whether an embedded OLE item can be pasted from the Clipboard.
 
-```
+```cpp
 afx_msg void OnUpdatePasteMenu(CCmdUI* pCmdUI);
 ```
 
@@ -463,7 +463,7 @@ The Paste menu command and button are enabled or disabled depending on whether t
 
 Call this function to remove an item from the document.
 
-```
+```cpp
 virtual void RemoveItem(CDocItem* pItem);
 ```
 
@@ -480,7 +480,7 @@ You typically do not need to call this function explicitly; it is called by the 
 
 Call this function to mark the document as modified if any of the contained OLE items have been modified.
 
-```
+```cpp
 virtual void UpdateModifiedFlag();
 ```
 

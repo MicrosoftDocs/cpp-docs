@@ -217,7 +217,7 @@ Call this method to register non-floating, non-resizable panes with the docking 
 
 Recalculates and adjusts the layout of all panes in a frame window.
 
-```
+```cpp
 virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```
 
@@ -249,7 +249,7 @@ TRUE if the frame is not in the list of mini frames and was added successfully; 
 
 Causes the WM_NCCALCSIZE message to be sent to all panes and `CPaneFrameWnd` windows.
 
-```
+```cpp
 virtual void AdjustPaneFrames();
 ```
 
@@ -564,7 +564,7 @@ TRUE if the dock pane was created successfully; FALSE otherwise.
 
 Displays an additional button that opens a pop-up menu on the captions of all docking panes.
 
-```
+```cpp
 static void EnableDockSiteMenu(BOOL bEnable = TRUE);
 ```
 
@@ -680,7 +680,7 @@ The bar pane that has the id of the target bar pane; NULL if no such bar pane ex
 
 Commits all current toolbar positions to virtual rectangles.
 
-```
+```cpp
 virtual void FixupVirtualRects();
 ```
 
@@ -1136,7 +1136,7 @@ Before a toolbar is docked, the framework waits the specified length of time. Th
 
 Called by the framework when the frame window is made active or is deactivated.
 
-```
+```cpp
 virtual void OnActivateFrame(BOOL bActivate);
 ```
 
@@ -1273,7 +1273,7 @@ TRUE if *pEXtra* is not NULL and *nCode* equals CN_UPDATE_COMMAND_UI, or if ther
 
 Recalculates the internal layout of the controls present in the list of controls.
 
-```
+```cpp
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
 
@@ -1466,7 +1466,7 @@ void SetAutohideZOrder(CDockablePane* pAHDockingBar);
 
 Sets the docking mode.
 
-```
+```cpp
 static void SetDockingMode(
     AFX_DOCK_TYPE dockMode,
     AFX_SMARTDOCK_THEME theme = AFX_SDT_DEFAULT);
@@ -1496,7 +1496,7 @@ Call this static method to set the docking mode.
 
 Sets the docking state of the control bars, the mini frames, and the autohide bars.
 
-```
+```cpp
 virtual void SetDockState();
 ```
 
@@ -1522,7 +1522,7 @@ void SetPrintPreviewMode(
 
 Sets the parameters that define the behavior of smart docking.
 
-```
+```cpp
 static void SetSmartDockingParams(CSmartDockingInfo& params);
 ```
 

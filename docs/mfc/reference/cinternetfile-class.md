@@ -77,7 +77,7 @@ To learn more about how `CInternetFile` works with the other MFC Internet classe
 
 Closes the file associated with this object and makes the file unavailable for reading or writing.
 
-```
+```cpp
 virtual void Abort();
 ```
 
@@ -138,7 +138,7 @@ You never create a `CInternetFile` object directly. Instead, create an object of
 
 Closes a `CInternetFile` and frees any of its resources.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -150,7 +150,7 @@ If the file was opened for writing, there is an implicit call to [Flush](#flush)
 
 Call this member function to flush the contents of the write buffer.
 
-```
+```cpp
 virtual void Flush();
 ```
 
@@ -340,7 +340,7 @@ By default, a `CInternetFile` object does not provide any buffering for writing.
 
 Call this member function to write into the given memory, *lpvBuf*, the specified number of bytes, *nCount*.
 
-```
+```cpp
 virtual void Write(
     const void* lpBuf,
     UINT nCount);
@@ -362,7 +362,7 @@ If any error occurs while writing the data, the function throws a [CInternetExce
 
 This function writes a null-terminated string to the associated file.
 
-```
+```cpp
 virtual void WriteString(LPCTSTR pstr);
 ```
 

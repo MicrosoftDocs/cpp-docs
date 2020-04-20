@@ -128,7 +128,7 @@ Constructs CAnimationPoint object with default properties: default point coordin
 
 Puts the encapsulated animation variables into a list.
 
-```
+```cpp
 virtual void GetAnimationVariableList(CList<CAnimationVariable*, CAnimationVariable*>& lst);
 ```
 

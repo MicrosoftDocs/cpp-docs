@@ -312,7 +312,7 @@ A property sheet control can appear in several different forms, such as a set of
 
 Called by the framework when a property page is enabled.
 
-```
+```cpp
 virtual void OnActivatePage(CPropertyPage* pPage);
 ```
 
@@ -329,7 +329,7 @@ By default, this method ensures that the enabled property page is scrolled into 
 
 Called by the framework to draw the header for a custom property page.
 
-```
+```cpp
 virtual void OnDrawPageHeader(
     CDC* pDC,
     int nPage,

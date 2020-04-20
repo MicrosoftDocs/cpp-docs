@@ -140,7 +140,7 @@ Constructs an animation objects and assigns default Object ID (0) and Group ID (
 
 Removes all related transitions.
 
-```
+```cpp
 virtual void ClearTransitions(BOOL bAutodestroy);
 ```
 
@@ -206,7 +206,7 @@ This method is used internally.
 
 Sets up Integer Value Changed event handler.
 
-```
+```cpp
 virtual void EnableIntegerValueChangedEvent(
     CAnimationController* pController,
     BOOL bEnable);
@@ -228,7 +228,7 @@ If the Integer Value Changed event handler is enabled, you can handle this event
 
 Sets up Value Changed event handler.
 
-```
+```cpp
 virtual void EnableValueChangedEvent(
     CAnimationController* pController,
     BOOL bEnable);
@@ -250,7 +250,7 @@ If the Value Changed event handler is enabled, you can handle this event in CAni
 
 Collects pointers to contained animation variables.
 
-```
+```cpp
 virtual void GetAnimationVariableList(
     CList<CAnimationVariable*,
     CAnimationVariable*>& list) = 0;
@@ -412,7 +412,7 @@ Allows you to change Object ID and Group ID. If the new Group ID differs from th
 
 Establishes relationship between animation variables, contained in an animation object, and their container.
 
-```
+```cpp
 virtual void SetParentAnimationObjects();
 ```
 

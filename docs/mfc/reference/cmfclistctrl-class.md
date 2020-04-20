@@ -290,7 +290,7 @@ This method passes the input parameters to the header control by using the metho
 
 Sorts the list control.
 
-```
+```cpp
 virtual void Sort(
     int iColumn,
     BOOL bAscending = TRUE,

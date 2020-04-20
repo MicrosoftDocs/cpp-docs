@@ -205,7 +205,7 @@ If you need to add a color button to a customization dialog's page (or allow the
 
 Called by the framework to render an image of the button.
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     const CRect& rect,
@@ -231,7 +231,7 @@ Override this method to customize the rendering process.
 
 Called by the framework to display the border of the button.
 
-```
+```cpp
 virtual void OnDrawBorder(
     CDC* pDC,
     CRect& rectClient,
@@ -257,7 +257,7 @@ Override this function to customize the color button's border appearance.
 
 Called by the framework to display a focus rectangle when the button has focus.
 
-```
+```cpp
 virtual void OnDrawFocusRect(
     CDC* pDC,
     const CRect& rectClient);
@@ -279,7 +279,7 @@ Override this method to customize appearance of the focus rectangle.
 
 Called before the popup color bar is displayed.
 
-```
+```cpp
 virtual void OnShowColorPopup();
 ```
 
@@ -318,7 +318,7 @@ void SetColor(COLORREF color);
 
 Specifies the name of a color.
 
-```
+```cpp
 static void SetColorName(
     COLORREF color,
     const CString& strName);
@@ -413,7 +413,7 @@ A `CSize` object that specifies a new button control size.
 
 Called by the framework when the user selects a color from the color bar that displays when the user clicks the color button.
 
-```
+```cpp
 virtual void UpdateColor(COLORREF color);
 ```
 

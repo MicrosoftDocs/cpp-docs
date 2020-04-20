@@ -259,7 +259,7 @@ The function replaces the coordinates in the specified `RECT` structure with the
 
 Called after receiving the last message (typically `WM_NCDESTROY`).
 
-```
+```cpp
 virtual void OnFinalMessage(HWND hWnd);
 ```
 

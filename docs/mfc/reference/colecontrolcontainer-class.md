@@ -87,7 +87,7 @@ Commonly, this class is used in conjunction with `COccManager` and `COleControlS
 
 Called by the framework to create and attach a control site.
 
-```
+```cpp
 virtual void AttachControlSite(
     CWnd* pWnd,
     UINT nIDC = 0);
@@ -116,7 +116,7 @@ Override this function if you want to customize this process.
 
 Informs all hosted controls that an ambient property has changed.
 
-```
+```cpp
 virtual void BroadcastAmbientPropertyChange(DISPID dispid);
 ```
 
@@ -133,7 +133,7 @@ This function is called by the framework when an ambient property has changed va
 
 Modifies the current state of the button.
 
-```
+```cpp
 virtual void CheckDlgButton(
     int nIDButton,
     UINT nCheck);
@@ -157,7 +157,7 @@ Specifies the state of the button. Can be one of the following:
 
 Selects a specified radio button in a group and clears the remaining buttons in the group.
 
-```
+```cpp
 virtual void CheckRadioButton(
     int nIDFirstButton,
     int nIDLastButton,
@@ -621,7 +621,7 @@ Override this function to customize the painting process.
 
 Called by the framework when the control site, pointed to by *pSite*, is about to be activated in-place.
 
-```
+```cpp
 virtual void OnUIActivate(COleControlSite* pSite);
 ```
 
@@ -638,7 +638,7 @@ In-place activation means that the container's main menu is replaced with an in-
 
 Called by the framework when the control site, pointed to by *pSite*, is about to be deactivated.
 
-```
+```cpp
 virtual void OnUIDeactivate(COleControlSite* pSite);
 ```
 
@@ -655,7 +655,7 @@ When this notification is received, the container should reinstall its user inte
 
 Called by the framework when scroll messages are received from a child window.
 
-```
+```cpp
 virtual void ScrollChildren(
     int dx,
     int dy);
@@ -699,7 +699,7 @@ Specifies additional message-specific information.
 
 Sets the text of a control in a dialog box to the string representation of a specified integer value.
 
-```
+```cpp
 virtual void SetDlgItemInt(
     int nID,
     UINT nValue,
@@ -721,7 +721,7 @@ Specifies whether the *nValue* parameter is signed or unsigned. If this paramete
 
 Sets the text of the specified control, using the text contained in *lpszString*.
 
-```
+```cpp
 virtual void SetDlgItemText(
     int nID,
     LPCTSTR lpszString);

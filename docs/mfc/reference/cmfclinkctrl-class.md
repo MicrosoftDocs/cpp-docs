@@ -64,7 +64,7 @@ The following example demonstrates how to set the size of a `CMFCLinkCtrl` objec
 
 Called by the framework before the focus rectangle of the button is drawn.
 
-```
+```cpp
 virtual void OnDrawFocusRect(
     CDC* pDC,
     const CRect& rectClient);

@@ -155,7 +155,7 @@ virtual BOOL DetachPane(
 
 Enables or disables automatic coloring of tabs.
 
-```
+```cpp
 static void EnableTabAutoColor(BOOL bEnable = TRUE);
 ```
 
@@ -197,7 +197,7 @@ virtual BOOL FloatTab(
 
 Returns the size and position of the tab area in the tabbed window.
 
-```
+```cpp
 virtual void GetTabArea(
     CRect& rectTabAreaTop,
     CRect& rectTabAreaBottom) const;
@@ -283,7 +283,7 @@ Set this static member variable to a pointer to the runtime class information of
 
 Resets all tabbed panes to the default state.
 
-```
+```cpp
 static void ResetTabs();
 ```
 
@@ -295,7 +295,7 @@ Call this method to revert all tabbed panes to their default state. When called,
 
 Sets a list of custom colors that are used when the auto color feature is enabled.
 
-```
+```cpp
 static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 ```
 

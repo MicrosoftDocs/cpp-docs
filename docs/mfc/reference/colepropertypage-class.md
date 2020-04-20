@@ -234,7 +234,7 @@ Override it if any special action is required when the dialog is initialized. Th
 
 Called by the framework when another OLE control, with new properties, is chosen.
 
-```
+```cpp
 virtual void OnObjectsChanged();
 ```
 
@@ -248,7 +248,7 @@ Override this function to receive notification of this action and perform any sp
 
 The framework calls this function when the property frame provides the property page's page site.
 
-```
+```cpp
 virtual void OnSetPageSite();
 ```
 

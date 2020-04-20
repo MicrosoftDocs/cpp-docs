@@ -436,7 +436,7 @@ When the status bar is invalidated, it is marked for redrawing. Windows redraws 
 
 Redraw the pane of the status bar.
 
-```
+```cpp
 virtual void OnDrawPane(
     CDC* pDC,
     CMFCStatusBarPaneInfo* pPane);

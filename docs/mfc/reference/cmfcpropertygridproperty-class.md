@@ -192,7 +192,7 @@ Use this method to create a hierarchical list of parent and child properties. Af
 
 Called by the parent property list control to tell a property to resize the bounding rectangle of an embedded button.
 
-```
+```cpp
 virtual void AdjustButtonRect();
 ```
 
@@ -210,7 +210,7 @@ By default, this method:
 
 Retrieves the boundaries of the text box and optional spin button control that are used to set a property value.
 
-```
+```cpp
 virtual void AdjustInPlaceEditRect(
     CRect& rectEdit,
     CRect& rectSpin);
@@ -955,7 +955,7 @@ static CString m_strFormatShort;
 
 Called by the framework when the user clicks a button that is contained in a property.
 
-```
+```cpp
 virtual void OnClickButton(CPoint point);
 ```
 
@@ -972,7 +972,7 @@ By default, this method does nothing.
 
 Called by a parent property list control when a user clicks the name field of a property.
 
-```
+```cpp
 virtual void OnClickName(CPoint C);
 ```
 
@@ -1016,7 +1016,7 @@ By default, this method returns FALSE if the current property is not editable. O
 
 Called by the framework when a combo box that is contained in a property is closed.
 
-```
+```cpp
 virtual void OnCloseCombo();
 ```
 
@@ -1071,7 +1071,7 @@ By default, this method selects the next property item in the property list cont
 
 Called by the framework when a property is destroyed or when editing is finished.
 
-```
+```cpp
 virtual void OnDestroyWindow();
 ```
 
@@ -1081,7 +1081,7 @@ virtual void OnDestroyWindow();
 
 Called by the framework to draw a button that is contained in a property.
 
-```
+```cpp
 virtual void OnDrawButton(
     CDC* pDC,
     CRect rectButton);
@@ -1101,7 +1101,7 @@ virtual void OnDrawButton(
 
 Called by the framework to draw the property description.
 
-```
+```cpp
 virtual void OnDrawDescription(
     CDC* pDC,
     CRect rect);
@@ -1123,7 +1123,7 @@ By default, this method draws the property name and description in the font used
 
 Called by the framework to draw an expand box control near a property that contains sub-properties.
 
-```
+```cpp
 virtual void OnDrawExpandBox(
     CDC* pDC,
     CRect rectExpand);
@@ -1145,7 +1145,7 @@ Click the expand box control to expand or collapse a list of sub-properties. The
 
 Called by the framework to display the property name.
 
-```
+```cpp
 virtual void OnDrawName(
     CDC* pDC,
     CRect rect);
@@ -1165,7 +1165,7 @@ virtual void OnDrawName(
 
 Called by the framework to display the property value.
 
-```
+```cpp
 virtual void OnDrawValue(
     CDC* pDC,
     CRect rect);
@@ -1242,7 +1242,7 @@ By default, this method does nothing and then returns TRUE. If you override this
 
 ## <a name="onkillselection"></a> CMFCPropertyGridProperty::OnKillSelection
 
-```
+```cpp
 virtual void OnKillSelection(CMFCPropertyGridProperty*);
 ```
 
@@ -1256,7 +1256,7 @@ By default, this method does nothing.
 
 ## <a name="onpossizechanged"></a> CMFCPropertyGridProperty::OnPosSizeChanged
 
-```
+```cpp
 virtual void OnPosSizeChanged(CRect);
 ```
 
@@ -1272,7 +1272,7 @@ By default, this method does nothing.
 
 Called by the framework when the user clicks the right mouse button in the property name area.
 
-```
+```cpp
 virtual void OnRClickName(CPoint C);
 ```
 
@@ -1290,7 +1290,7 @@ By default, this method does nothing.
 
 Called by the framework when the user clicks the right mouse button in the property value area.
 
-```
+```cpp
 virtual void OnRClickValue(
     CPoint C,
     BOOL B);
@@ -1311,7 +1311,7 @@ By default, this method does nothing and the *B* parameter has no predefined pur
 
 Called by the framework when the user selects an item from the editable combo box.
 
-```
+```cpp
 virtual void OnSelectCombo();
 ```
 
@@ -1337,7 +1337,7 @@ This method supports the following variant types: VT_INT, VT_I2, VT_I4, VT_UINT,
 
 ## <a name="onsetselection"></a> CMFCPropertyGridProperty::OnSetSelection
 
-```
+```cpp
 virtual void OnSetSelection CMFCPropertyGridProperty*);
 ```
 
@@ -1434,7 +1434,7 @@ Specify FALSE for the *bDelete* parameter if you intend to move the specified su
 
 Restores the original value of an edited property.
 
-```
+```cpp
 virtual void ResetOriginalValue();
 ```
 
@@ -1496,7 +1496,7 @@ void SetName(
 
 Sets the original value of an editable property.
 
-```
+```cpp
 virtual void SetOriginalValue(const COleVariant& varValue);
 ```
 
@@ -1513,7 +1513,7 @@ Use the [CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue) meth
 
 Sets the value of a property grid property.
 
-```
+```cpp
 virtual void SetValue(const _variant_t& varValue);
 ```
 

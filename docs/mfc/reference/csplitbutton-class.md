@@ -118,7 +118,7 @@ Use the [CSplitButton::Create](#create) method to create a split button control 
 
 Handles the BCN_DROPDOWN notification that the system sends when a user clicks the drop-down arrow of the current split button control.
 
-```
+```cpp
 afx_msg void OnDropDown(
     NMHDR* pNMHDR,
     LRESULT* pResult);

@@ -125,7 +125,7 @@ The following example demonstrates how to configure the properties of the button
 
 Resets internal variables and frees allocated resources such as images, bitmaps, and icons.
 
-```
+```cpp
 virtual void CleanUp();
 ```
 
@@ -170,7 +170,7 @@ If you do not use this method to specify the button text font, you can specify t
 
 Specifies whether the style of the button border corresponds to the current Windows theme.
 
-```
+```cpp
 static void EnableWindowsTheming(BOOL bEnable = TRUE);
 ```
 
@@ -469,7 +469,7 @@ The following example demonstrates how to set the values of the `m_nFlatStyle` m
 
 Called by the framework to draw a button.
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     const CRect& rect,
@@ -495,7 +495,7 @@ Override this method to use your own code to draw a button.
 
 Called by the framework to draw the border of a button.
 
-```
+```cpp
 virtual void OnDrawBorder(
     CDC* pDC,
     CRect& rectClient,
@@ -521,7 +521,7 @@ Override this method to use your own code to draw the border.
 
 Called by the framework to draw the focus rectangle for a button.
 
-```
+```cpp
 virtual void OnDrawFocusRect(
     CDC* pDC,
     const CRect& rectClient);
@@ -543,7 +543,7 @@ Override this method to use your own code to draw the focus rectangle.
 
 Called by the framework to draw the button text.
 
-```
+```cpp
 virtual void OnDrawText(
     CDC* pDC,
     const CRect& rect,
@@ -577,7 +577,7 @@ Override this method to use your own code to draw the button text.
 
 Called by the framework to draw the background of the button text.
 
-```
+```cpp
 virtual void OnFillBackground(
     CDC* pDC,
     const CRect& rectClient);

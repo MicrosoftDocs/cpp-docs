@@ -1350,7 +1350,7 @@ For more information, see [OleIsRunning](/windows/win32/api/ole2/nf-ole2-oleisru
 
 Called by the framework to notify the item that it has just been activated in place.
 
-```
+```cpp
 virtual void OnActivate();
 ```
 
@@ -1364,7 +1364,7 @@ The default implementation calls the [OnChange](#onchange) member function with 
 
 The framework calls `OnActivateUI` when the object has entered the active UI state.
 
-```
+```cpp
 virtual void OnActivateUI();
 ```
 
@@ -1378,7 +1378,7 @@ The default implementation remembers the server's HWND for later `GetServerWindo
 
 Called by the framework when the user modifies, saves, or closes the OLE item.
 
-```
+```cpp
 virtual void OnChange(
     OLE_NOTIFICATION nCode,
     DWORD dwParam);
@@ -1435,7 +1435,7 @@ Override this function to apply special rules to the resize/move operation. If t
 
 Called by the framework when the OLE item transitions from the in-place active state ( `activeState`) to the loaded state, meaning that it is deactivated after an in-place activation.
 
-```
+```cpp
 virtual void OnDeactivate();
 ```
 
@@ -1449,7 +1449,7 @@ The default implementation calls the [OnChange](#onchange) member function with 
 
 Called by the framework when the user invokes the undo command after activating the OLE item in place.
 
-```
+```cpp
 virtual void OnDeactivateAndUndo();
 ```
 
@@ -1463,7 +1463,7 @@ For more information, see [IOleInPlaceSite::DeactivateAndUndo](/windows/win32/ap
 
 Called when the user deactivates an item that was activated in place.
 
-```
+```cpp
 virtual void OnDeactivateUI(BOOL bUndoable);
 ```
 
@@ -1482,7 +1482,7 @@ If *bUndoable* is FALSE, the container should disable the undo command, in effec
 
 Called by the framework when the user performs an action that discards the undo state while editing the OLE item.
 
-```
+```cpp
 virtual void OnDiscardUndoState();
 ```
 
@@ -1528,7 +1528,7 @@ The default implementation of this function calls [GetClipboardData](#getclipboa
 
 The framework calls the `OnGetClipRect` member function to get the clipping-rectangle coordinates of the item that is being edited in place.
 
-```
+```cpp
 virtual void OnGetClipRect(CRect& rClipRect);
 ```
 
@@ -1547,7 +1547,7 @@ The default implementation simply returns the client rectangle of the view on wh
 
 The framework calls the `OnGetItemPosition` member function to get the coordinates of the item that is being edited in place.
 
-```
+```cpp
 virtual void OnGetItemPosition(CRect& rPosition);
 ```
 
@@ -1602,7 +1602,7 @@ For more information, see [IOleInPlaceSite::GetWindowContext](/windows/win32/api
 
 Called by the framework during in-place activation to insert the container application's menus into an empty menu.
 
-```
+```cpp
 virtual void OnInsertMenus(
     CMenu* pMenuShared,
     LPOLEMENUGROUPWIDTHS lpMenuWidths);
@@ -1628,7 +1628,7 @@ For more information, see [IOleInPlaceFrame::InsertMenus](/windows/win32/api/ole
 
 Called by the framework to remove the container's menus from the specified composite menu when in-place activation ends.
 
-```
+```cpp
 virtual void OnRemoveMenus(CMenu* pMenuShared);
 ```
 
@@ -1672,7 +1672,7 @@ For more information, see [IOleInPlaceSite::Scroll](/windows/win32/api/oleidl/nf
 
 Called by the framework two times when in-place activation begins and ends; the first time to install the composite menu and the second time (with *holemenu* equal to NULL) to remove it.
 
-```
+```cpp
 virtual void OnSetMenu(
     CMenu* pMenuShared,
     HOLEMENU holemenu,
@@ -1728,7 +1728,7 @@ The default implementation removes the toolbar from the top-level frame window.
 
 Called by the framework to display the OLE item, making it totally visible during editing.
 
-```
+```cpp
 virtual void OnShowItem();
 ```
 
@@ -1776,7 +1776,7 @@ For more information, see [IOleInPlaceObject::ReactivateAndUndo](/windows/win32/
 
 Call this function to clean up resources used by the OLE item.
 
-```
+```cpp
 virtual void Release(OLECLOSE dwCloseOption = OLECLOSE_NOSAVE);
 ```
 
@@ -1823,7 +1823,7 @@ Call the `Run` member function to launch the server application before activatin
 
 Call the `SetDrawAspect` member function to set the "aspect," or view, of the item.
 
-```
+```cpp
 virtual void SetDrawAspect(DVASPECT nDrawAspect);
 ```
 

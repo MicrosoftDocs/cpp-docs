@@ -286,7 +286,7 @@ This method can be overridden to change the behavior of the message loop.
 
 Uninitializes COM.
 
-```
+```cpp
 static void UninitializeCom() throw();
 ```
 

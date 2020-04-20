@@ -177,7 +177,7 @@ All `IUnknown` calls through `m_contained` are delegated to the outer unknown.
 
 Retrieves a pointer to the requested interface.
 
-```
+```cpp
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 template <class Q>
 HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);

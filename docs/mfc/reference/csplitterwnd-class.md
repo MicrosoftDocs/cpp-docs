@@ -123,7 +123,7 @@ For more information on how to create dynamic splitter windows, see:
 
 Called by the framework to perform the Next Pane or Previous Pane command.
 
-```
+```cpp
 virtual void ActivateNext(BOOL bPrev = FALSE);
 ```
 
@@ -359,7 +359,7 @@ Construct a `CSplitterWnd` object in two steps. First, call the constructor, whi
 
 Deletes a column from the splitter window.
 
-```
+```cpp
 virtual void DeleteColumn(int colDelete);
 ```
 
@@ -376,7 +376,7 @@ This member function is called by the framework to implement the logic of the dy
 
 Deletes a row from the splitter window.
 
-```
+```cpp
 virtual void DeleteRow(int rowDelete);
 ```
 
@@ -393,7 +393,7 @@ This member function is called by the framework to implement the logic of the dy
 
 Deletes a view from the splitter window.
 
-```
+```cpp
 virtual void DeleteView(
     int row,
     int col);
@@ -721,7 +721,7 @@ Nonzero if a splitter operation is in progress; otherwise 0.
 
 Renders an image of a split window.
 
-```
+```cpp
 virtual void OnDrawSplitter(
     CDC* pDC,
     ESplitType nType,
@@ -757,7 +757,7 @@ For more on dynamic splitter windows, see "Splitter Windows" in the article [Mul
 
 Renders the image of a split window to be the same size and shape as the frame window.
 
-```
+```cpp
 virtual void OnInvertTracker(const CRect& rect);
 ```
 
@@ -776,7 +776,7 @@ For more on dynamic splitter windows, see "Splitter Windows" in the article [Mul
 
 Call to redisplay the splitter window after adjusting row or column size.
 
-```
+```cpp
 virtual void RecalcLayout();
 ```
 
@@ -794,7 +794,7 @@ The framework calls this member function whenever the user resizes the splitter 
 
 Sets a pane to be the active one in the frame.
 
-```
+```cpp
 virtual void SetActivePane(
     int row,
     int col,
@@ -949,7 +949,7 @@ This member function is called when a horizontal splitter window is created. `Sp
 
 Called by the framework to draw the splitter window.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 

@@ -123,7 +123,7 @@ The following example demonstrates how to construct an object of the `CMFCRibbon
 
 A copy method that sets a separator's member variables from another object.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```
 
@@ -181,7 +181,7 @@ A ribbon separator is not a tab stop.
 
 Called by the system to draw the separator on either the ribbon or the Quick Access Toolbar.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 
@@ -194,7 +194,7 @@ virtual void OnDraw(CDC* pDC);
 
 Called by the system to draw the separator on the **Commands** list.
 
-```
+```cpp
 virtual void OnDrawOnList(
     CDC* pDC,
     CString strText,

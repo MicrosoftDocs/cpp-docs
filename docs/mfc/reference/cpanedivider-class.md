@@ -132,7 +132,7 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 
 ## <a name="addpane"></a> CPaneDivider::AddPane
 
-```
+```cpp
 virtual void AddPane(CDockablePane* pBar);
 ```
 
@@ -182,7 +182,7 @@ virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 
 ## <a name="calcexpecteddockedrect"></a> CPaneDivider::CalcExpectedDockedRect
 
-```
+```cpp
 virtual void CalcExpectedDockedRect(
     CWnd* pWndToDock,
     CPoint ptMouse,
@@ -483,7 +483,7 @@ AFX_IMPORT_DATA static int m_nDefaultWidth;
 
 ## <a name="move"></a> CPaneDivider::Move
 
-```
+```cpp
 virtual void Move(
     CPoint& ptOffset,
     BOOL bAdjustLayout = TRUE);
@@ -523,7 +523,7 @@ CPaneDivider::m_pSliderRTC = RUNTIME_CLASS(CMySpliter);
 
 ## <a name="notifyaboutrelease"></a> CPaneDivider::NotifyAboutRelease
 
-```
+```cpp
 virtual void NotifyAboutRelease();
 ```
 
@@ -531,7 +531,7 @@ virtual void NotifyAboutRelease();
 
 ## <a name="onshowpane"></a> CPaneDivider::OnShowPane
 
-```
+```cpp
 virtual void OnShowPane(
     CDockablePane* pBar,
     BOOL bShow);
@@ -554,7 +554,7 @@ void ReleaseEmptyPaneContainers();
 
 ## <a name="removepane"></a> CPaneDivider::RemovePane
 
-```
+```cpp
 virtual void RemovePane(CDockablePane* pBar);
 ```
 
@@ -583,7 +583,7 @@ virtual BOOL ReplacePane(
 
 ## <a name="repositionpanes"></a> CPaneDivider::RepositionPanes
 
-```
+```cpp
 virtual void RepositionPanes(
     CRect& rectNew,
     HDWP& hdwp);

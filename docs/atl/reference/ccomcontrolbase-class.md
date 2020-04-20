@@ -755,7 +755,7 @@ This method also retrieves an `IOleInPlaceSite`, `IOleInPlaceSiteEx`, or `IOleIn
 
 Call this method to query the control site for a pointer to the identified interface.
 
-```
+```cpp
 HRESULT InternalGetSite(REFIID riid, void** ppUnkSite);
 ```
 

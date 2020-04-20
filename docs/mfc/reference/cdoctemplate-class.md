@@ -87,7 +87,7 @@ For more information on `CDocTemplate`, see [Document Templates and the Document
 
 Use this function to add a document to a template.
 
-```
+```cpp
 virtual void AddDocument(CDocument* pDoc);
 ```
 
@@ -146,7 +146,7 @@ Use this member function to construct a `CDocTemplate` object. Dynamically alloc
 
 Call this member function to close all open documents.
 
-```
+```cpp
 virtual void CloseAllDocuments(BOOL bEndSession);
 ```
 
@@ -320,7 +320,7 @@ You must ensure that your POSITION value represents a valid position in the list
 
 Initializes the frame window, and optionally makes it visible.
 
-```
+```cpp
 virtual void InitialUpdateFrame(
     CFrameWnd* pFrame,
     CDocument* pDoc,
@@ -348,7 +348,7 @@ It is not necessary to call this function when using the framework's implementat
 
 Loads the resources for a given `CDocTemplate` or derived class.
 
-```
+```cpp
 virtual void LoadTemplate();
 ```
 
@@ -434,7 +434,7 @@ Opens the file whose path is specified by *lpszPathName*. If *lpszPathName* is N
 
 Removes the document pointed to by *pDoc* from the list of documents associated with this template.
 
-```
+```cpp
 virtual void RemoveDocument(CDocument* pDoc);
 ```
 
@@ -482,7 +482,7 @@ The menu associated with *nIDOleInPlaceContainer* contains separators that allow
 
 Call this function to load the document's default title and display it in the document's title bar.
 
-```
+```cpp
 virtual void SetDefaultTitle(CDocument* pDocument) = 0;
 ```
 

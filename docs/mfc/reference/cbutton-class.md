@@ -182,7 +182,7 @@ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#wi
 
 Called by the framework when a visual aspect of an owner-drawn button has changed.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 

@@ -424,7 +424,7 @@ If a container item is linked to the document with an automatic link, the item i
 
 Called by the framework to execute the specified verb.
 
-```
+```cpp
 virtual void OnDoVerb(LONG iVerb);
 ```
 
@@ -585,7 +585,7 @@ If the container application was written with the Microsoft Foundation Class Lib
 
 Called by the framework to hide the OLE item.
 
-```
+```cpp
 virtual void OnHide();
 ```
 
@@ -625,7 +625,7 @@ For more information, see [IOleObject::InitFromData](/windows/win32/api/oleidl/n
 
 Called by the framework to display the OLE item in a separate instance of the server application, rather than in place.
 
-```
+```cpp
 virtual void OnOpen();
 ```
 
@@ -842,7 +842,7 @@ If the container application was written with the Microsoft Foundation Class Lib
 
 Called by the framework to instruct the server application to display the OLE item in place.
 
-```
+```cpp
 virtual void OnShow();
 ```
 
@@ -856,7 +856,7 @@ Override this function if you want to perform special processing when an OLE ite
 
 Called by the framework when an item has been modified.
 
-```
+```cpp
 virtual void OnUpdate(
     COleServerItem* pSender,
     LPARAM lHint,
@@ -894,7 +894,7 @@ The default implementation calls [NotifyChanged](#notifychanged), regardless of 
 
 Called by the framework to update all items in the server document.
 
-```
+```cpp
 virtual void OnUpdateItems();
 ```
 

@@ -402,7 +402,7 @@ Whenever a menu that resides in a window is changed (whether or not the window i
 
 Called automatically by the `CWinApp` idle-time handler, deletes any temporary `CMenu` objects created by the [FromHandle](#fromhandle) member function.
 
-```
+```cpp
 static void PASCAL DeleteTempMap();
 ```
 
@@ -458,7 +458,7 @@ The `m_hMenu` data member is set to NULL.
 
 Called by the framework when a visual aspect of an owner-drawn menu changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 
@@ -946,7 +946,7 @@ Before exiting, an application must free system resources associated with a menu
 
 Loads a resource from a menu template in memory and attaches it to the `CMenu` object.
 
-```
+```cpp
 BOOL LoadMenuIndirect(const void* lpMenuTemplate);
 ```
 
@@ -991,7 +991,7 @@ HMENU m_hMenu;
 
 Called by the framework when a menu with the owner-draw style is created.
 
-```
+```cpp
 virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ```
 

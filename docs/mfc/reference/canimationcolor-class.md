@@ -134,7 +134,7 @@ The object is constructed with default values for red, green, blue, Object ID an
 
 Puts the encapsulated animation variables into a list.
 
-```
+```cpp
 virtual void GetAnimationVariableList(CList<CAnimationVariable*>& lst);
 ```
 

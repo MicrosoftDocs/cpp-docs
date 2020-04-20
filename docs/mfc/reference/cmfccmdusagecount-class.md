@@ -169,7 +169,7 @@ Call this method to clear all entries from the map structure of command counts, 
 
 Reads this object from an archive, or writes it to an archive.
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 

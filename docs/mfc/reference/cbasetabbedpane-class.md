@@ -145,7 +145,7 @@ If an empty tabbed pane is not allowed to be destroyed, the framework hides the 
 
 Loads tab settings from the registry and applies them to a tabbed pane.
 
-```
+```cpp
 virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ```
 
@@ -190,7 +190,7 @@ The method is used to determine whether the text displayed on the tabbed pane ca
 
 Converts one or more dockable panes to MDI tabbed documents.
 
-```
+```cpp
 virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```
 
@@ -229,7 +229,7 @@ The framework floats the detached pane if possible. For more information, see [C
 
 Enables or disables the ability of the tabbed pane to synchronize caption text with the label text on the active tab.
 
-```
+```cpp
 virtual void EnableSetCaptionTextToTabName(BOOL bEnable);
 ```
 
@@ -370,7 +370,7 @@ If successful, a pointer to the first displayed tab; otherwise, NULL.
 
 Retrieves the minimum allowed size for the pane.
 
-```
+```cpp
 virtual void GetMinSize(CSize& size) const;
 ```
 
@@ -387,7 +387,7 @@ If consistent handling of minimum pane sizes is active ( [CPane::m_bHandleMinSiz
 
 Retrieves the minimum allowed size for the pane.
 
-```
+```cpp
 virtual void GetMinSize(CSize& size) const;
 ```
 
@@ -404,7 +404,7 @@ If consistent handling of minimum pane sizes is active ( [CPane::m_bHandleMinSiz
 
 Returns a list of panes that are contained in the tabbed pane.
 
-```
+```cpp
 virtual void GetPaneList(
     CObList& lst,
     CRuntimeClass* pRTCFilter = NULL);
@@ -422,7 +422,7 @@ virtual void GetPaneList(
 
 Returns the bounding rectangles for the top and bottom tab areas.
 
-```
+```cpp
 virtual void GetTabArea(
     CRect& rectTabAreaTop,
     CRect& rectTabAreaBottom) const = 0;
@@ -588,7 +588,7 @@ When you call this method, a pane is either shown or hidden, depending on the va
 
 Recalculates layout information for the pane.
 
-```
+```cpp
 virtual void RecalcLayout();
 ```
 

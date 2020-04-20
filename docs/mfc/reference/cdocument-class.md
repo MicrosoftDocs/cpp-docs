@@ -161,7 +161,7 @@ Call this function only if you are manually creating and attaching a view. Typic
 
 Initializes chunk reading.
 
-```
+```cpp
 virtual void BeginReadChunks ();
 ```
 
@@ -204,7 +204,7 @@ The framework handles document creation for you. Override the [OnNewDocument](#o
 
 Clears the chunk list.
 
-```
+```cpp
 virtual void ClearChunkList ();
 ```
 
@@ -214,7 +214,7 @@ virtual void ClearChunkList ();
 
 Clears the path of the document object.
 
-```
+```cpp
 virtual void ClearPathName();
 ```
 
@@ -226,7 +226,7 @@ Clearing the path from a `CDocument` object causes the application to prompt the
 
 Called by the framework to delete the document's data without destroying the `CDocument` object itself.
 
-```
+```cpp
 virtual void DeleteContents();
 ```
 
@@ -415,7 +415,7 @@ The document's title.
 
 Called to initialize search content for the Search Handler.
 
-```
+```cpp
 virtual void InitializeSearchContent ();
 ```
 
@@ -547,7 +547,7 @@ CFont m_lfRichPreviewFont;
 
 Called before the Rich Preview font is changed.
 
-```
+```cpp
 virtual void OnBeforeRichPreviewFontChanged();
 ```
 
@@ -557,7 +557,7 @@ virtual void OnBeforeRichPreviewFontChanged();
 
 Called by the framework after a view is added to or removed from the document.
 
-```
+```cpp
 virtual void OnChangedViewList();
 ```
 
@@ -569,7 +569,7 @@ The default implementation of this function checks whether the last view is bein
 
 Called by the framework when the document is closed, typically as part of the File Close command.
 
-```
+```cpp
 virtual void OnCloseDocument();
 ```
 
@@ -597,7 +597,7 @@ Returns TRUE if the frame is created successfully; otherwise FALSE.
 
 Called by the framework in response to a document event.
 
-```
+```cpp
 virtual void OnDocumentEvent(DocumentEvent deEvent);
 ```
 
@@ -623,7 +623,7 @@ The following table lists the possible values for *deEvent* and the events that 
 
 Override this method in a derived class to draw the thumbnail.
 
-```
+```cpp
 virtual void OnDrawThumbnail(
     CDC& dc,
     LPRECT lprcBounds);
@@ -786,7 +786,7 @@ If the keystroke message can be processed by the preview handler, the handler pr
 
 Called when the Rich Preview background color has changed.
 
-```
+```cpp
 virtual void OnRichPreviewBackColorChanged();
 ```
 
@@ -796,7 +796,7 @@ virtual void OnRichPreviewBackColorChanged();
 
 Called when the Rich Preview font has changed.
 
-```
+```cpp
 virtual void OnRichPreviewFontChanged();
 ```
 
@@ -806,7 +806,7 @@ virtual void OnRichPreviewFontChanged();
 
 Called when the Rich Preview site has changed.
 
-```
+```cpp
 virtual void OnRichPreviewSiteChanged();
 ```
 
@@ -816,7 +816,7 @@ virtual void OnRichPreviewSiteChanged();
 
 Called when the Rich Preview text color has changed.
 
-```
+```cpp
 virtual void OnRichPreviewTextColorChanged();
 ```
 
@@ -847,7 +847,7 @@ The default implementation of this function opens the specified file, calls [COb
 
 Called by the framework when the preview handler is unloaded.
 
-```
+```cpp
 virtual void OnUnloadHandler();
 ```
 
@@ -876,7 +876,7 @@ Otherwise the function removes the ID_FILE_SEND_MAIL command from the menu, incl
 
 This member function is called by the framework before the frame window is destroyed.
 
-```
+```cpp
 virtual void PreCloseFrame(CFrameWnd* pFrame);
 ```
 
@@ -914,7 +914,7 @@ Nonzero if successful; otherwise 0.
 
 This member function is called by the framework to release a file, making it available for use by other applications.
 
-```
+```cpp
 virtual void ReleaseFile(
     CFile* pFile,
     BOOL bAbort);
@@ -940,7 +940,7 @@ Override this member function to require an action by the user before the file i
 
 Removes a chunk with the specified GUID.
 
-```
+```cpp
 virtual void RemoveChunk(
     REFCLSID guid,
     DWORD pid);
@@ -981,7 +981,7 @@ See the example at [AddView](#addview) for a sample implementation.
 
 Called if an exception is thrown (typically a [CFileException](../../mfc/reference/cfileexception-class.md) or [CArchiveException](../../mfc/reference/carchiveexception-class.md)) while saving or loading the document.
 
-```
+```cpp
 virtual void ReportSaveLoadException(
     LPCTSTR lpszPathName,
     CException* e,
@@ -1046,7 +1046,7 @@ Nonzero if successful; otherwise 0.
 
 Call this function after you have made any modifications to the document.
 
-```
+```cpp
 virtual void SetModifiedFlag(BOOL bModified = TRUE);
 ```
 
@@ -1063,7 +1063,7 @@ By calling this function consistently, you ensure that the framework prompts the
 
 Call this function to specify the fully qualified path of the document's disk file.
 
-```
+```cpp
 virtual void SetPathName(
     LPCTSTR lpszPathName,
     BOOL bAddToMRU = TRUE);
@@ -1085,7 +1085,7 @@ Depending on the value of *bAddToMRU* the path is added, or not added, to the MR
 
 Call this function to specify the document's title (the string displayed in the title bar of a frame window).
 
-```
+```cpp
 virtual void SetTitle(LPCTSTR lpszTitle);
 ```
 

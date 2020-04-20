@@ -155,7 +155,7 @@ If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error 
 
 Destroys a CD2DRadialGradientBrush object.
 
-```
+```cpp
 virtual void Destroy();
 ```
 

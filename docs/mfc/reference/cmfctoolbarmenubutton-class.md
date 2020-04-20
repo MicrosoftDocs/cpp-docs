@@ -167,7 +167,7 @@ virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 
 ## <a name="copyfrom"></a> CMFCToolBarMenuButton::CopyFrom
 
-```
+```cpp
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 
@@ -181,7 +181,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 Initializes the toolbar menu from a Windows menu handle.
 
-```
+```cpp
 virtual void CreateFromMenu(HMENU hMenu);
 ```
 
@@ -469,7 +469,7 @@ When this member variable is set to TRUE, the button always calls [CFrameWndEx::
 
 ## <a name="onaftercreatepopupmenu"></a> CMFCToolBarMenuButton::OnAfterCreatePopupMenu
 
-```
+```cpp
 virtual void OnAfterCreatePopupMenu();
 ```
 
@@ -506,7 +506,7 @@ virtual SIZE OnCalculateSize(
 
 ## <a name="oncancelmode"></a> CMFCToolBarMenuButton::OnCancelMode
 
-```
+```cpp
 virtual void OnCancelMode();
 ```
 
@@ -514,7 +514,7 @@ virtual void OnCancelMode();
 
 ## <a name="onchangeparentwnd"></a> CMFCToolBarMenuButton::OnChangeParentWnd
 
-```
+```cpp
 virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```
 
@@ -575,7 +575,7 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 
 ## <a name="ondraw"></a> CMFCToolBarMenuButton::OnDraw
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     const CRect& rect,
@@ -642,7 +642,7 @@ This function is called by the framework when the user opens a drop-down menu fr
 
 ## <a name="resetimagetodefault"></a> CMFCToolBarMenuButton::ResetImageToDefault
 
-```
+```cpp
 virtual void ResetImageToDefault();
 ```
 
@@ -650,7 +650,7 @@ virtual void ResetImageToDefault();
 
 ## <a name="savebarstate"></a> CMFCToolBarMenuButton::SaveBarState
 
-```
+```cpp
 virtual void SaveBarState();
 ```
 
@@ -660,7 +660,7 @@ The framework calls this method when it creates a toolbar button as the result o
 
 ## <a name="serialize"></a> CMFCToolBarMenuButton::Serialize
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 
@@ -751,7 +751,7 @@ void SetMessageWnd(CWnd* pWndMessage);
 
 Sets the toolbar menu button to display a radio button style icon when it is checked.
 
-```
+```cpp
 virtual void SetRadio();
 ```
 
@@ -765,7 +765,7 @@ When you call this method and the menu button is currently being displayed, it w
 
 Specifies the ID of the tear-off bar for the drop-down menu.
 
-```
+```cpp
 virtual void SetTearOff(UINT uiBarID);
 ```
 

@@ -348,7 +348,7 @@ Separators return ID_SEPARATOR.
 
 This member function fills the `RECT` structure whose address is contained in *lpRect* with the coordinates of the button or separator specified by *nIndex*.
 
-```
+```cpp
 virtual void GetItemRect(
     int nIndex,
     LPRECT lpRect) const;

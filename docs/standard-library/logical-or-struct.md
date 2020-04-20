@@ -11,7 +11,7 @@ A predefined function object that performs the logical disjunction operation ( `
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct logical_or : public binary_function<Type, Type, bool>
 {

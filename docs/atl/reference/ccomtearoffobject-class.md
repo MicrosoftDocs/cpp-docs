@@ -148,7 +148,7 @@ The pointer is initialized to NULL during construction.
 
 Retrieves a pointer to the requested interface.
 
-```
+```cpp
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```
 

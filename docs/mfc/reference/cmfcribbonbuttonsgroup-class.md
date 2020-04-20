@@ -186,7 +186,7 @@ Returns TRUE if the protected `CMFCToolBarImages` member `m_Images` contains any
 
 Draws the appropriate image for a specified button, depending on whether the button is normal, highlighted or disabled.
 
-```
+```cpp
 virtual void OnDrawImage(
     CDC* pDC,
     CRect rectImage,
@@ -253,7 +253,7 @@ Call `SetImages` before you add buttons to a group. The number of images must be
 
 Sets the parent `CMFCRibbonCategory` of the `CMFCRibbonButtonsGroup` object and all the buttons within it.
 
-```
+```cpp
 virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 ```
 

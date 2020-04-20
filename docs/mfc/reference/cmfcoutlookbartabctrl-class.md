@@ -195,7 +195,7 @@ Usually, outlook bar tab controls are created when [CMFCOutlookBar Class](../../
 
 Specifies whether the animation that occurs during the switch between active tabs is enabled.
 
-```
+```cpp
 static void EnableAnimation(BOOL bEnable=TRUE);
 ```
 
@@ -214,7 +214,7 @@ By the default, the animation is enabled.
 
 Specifies whether a user can modify the text labels on the tab page buttons of the Outlook bar.
 
-```
+```cpp
 virtual void EnableInPlaceEdit(BOOL bEnable);
 ```
 
@@ -311,7 +311,7 @@ This value is set by [CMFCOutlookBar::SetMode2003](../../mfc/reference/cmfcoutlo
 
 Called by the framework to decrease the number of tab page buttons that are visible.
 
-```
+```cpp
 virtual void OnShowFewerPageButtons();
 ```
 
@@ -323,7 +323,7 @@ This method adjusts the number of visible page tab buttons when the control is r
 
 Called by the framework to increase the number of tab page buttons that are visible.
 
-```
+```cpp
 virtual void OnShowMorePageButtons();
 ```
 
@@ -335,7 +335,7 @@ This method adjust the number of tab page buttons that are visible when the cont
 
 Displays the **Navigation Pane Options** dialog box.
 
-```
+```cpp
 virtual void OnShowOptions();
 ```
 

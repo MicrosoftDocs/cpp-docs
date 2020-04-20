@@ -101,7 +101,7 @@ If a base pane object is derived from `CMFCAutoHideBar`, it can contain a `CAuto
 
 Docks a pane to this [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) object.
 
-```
+```cpp
 virtual void DockPane(
     CPane* pWnd,
     AFX_DOCK_METHOD dockMethod,
@@ -192,7 +192,7 @@ void SetOffsetRight(int nOffset);
 
 Redraws the panes on the [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md).
 
-```
+```cpp
 virtual void RepositionPanes(CRect& rectNewClientArea);
 ```
 

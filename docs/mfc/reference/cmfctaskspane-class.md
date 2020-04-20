@@ -1114,7 +1114,7 @@ virtual BOOL LoadState(
 
 Called by the framework when it makes a task pane page active.
 
-```
+```cpp
 virtual void OnActivateTasksPanePage();
 ```
 
@@ -1124,7 +1124,7 @@ Override this method in a derived class to customize the appearance of the task 
 
 ## <a name="oncancel"></a> CMFCTasksPane::OnCancel
 
-```
+```cpp
 virtual void OnCancel();
 ```
 
@@ -1134,7 +1134,7 @@ virtual void OnCancel();
 
 Called by the framework when the user clicks an item in the task pane.
 
-```
+```cpp
 virtual void OnClickTask(
     int nGroupNumber,
     int nTaskNumber,
@@ -1164,7 +1164,7 @@ Override this method in a derived class to execute custom code when a task is cl
 
 ## <a name="onok"></a> CMFCTasksPane::OnOK
 
-```
+```cpp
 virtual void OnOK();
 ```
 
@@ -1174,7 +1174,7 @@ virtual void OnOK();
 
 Called by the framework when the user clicks the back button.
 
-```
+```cpp
 virtual void OnPressBackButton();
 ```
 
@@ -1188,7 +1188,7 @@ Override this method in a derived class to execute custom code when the user cli
 
 Called by the framework when the user clicks the forward navigation button.
 
-```
+```cpp
 virtual void OnPressForwardButton();
 ```
 
@@ -1202,7 +1202,7 @@ Override this method in a derived class to execute custom code when the user cli
 
 Called by the framework when the user clicks the home navigation button.
 
-```
+```cpp
 virtual void OnPressHomeButton();
 ```
 
@@ -1214,7 +1214,7 @@ Override this method in a derived class to execute custom code when the user cli
 
 ## <a name="onpressotherbutton"></a> CMFCTasksPane::OnPressOtherButton
 
-```
+```cpp
 virtual void OnPressOtherButton(
     CMFCCaptionMenuButton* pbtn,
     CWnd* pWndOwner);
@@ -1243,7 +1243,7 @@ virtual BOOL OnSetAccData(long lVal);
 
 ## <a name="onupdatecmdui"></a> CMFCTasksPane::OnUpdateCmdUI
 
-```
+```cpp
 virtual void OnUpdateCmdUI(
     CFrameWnd* pTarget,
     BOOL bDisableIfNoHndler);
@@ -1399,7 +1399,7 @@ virtual BOOL SaveState(
 
 ## <a name="serialize"></a> CMFCTasksPane::Serialize
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 
@@ -1785,7 +1785,7 @@ Call [CMFCTasksPane::AddWindow](#addwindow) to add tasks with window controls.
 
 ## <a name="showcommandmessagestring"></a> CMFCTasksPane::ShowCommandMessageString
 
-```
+```cpp
 virtual void ShowCommandMessageString(UINT uiCmdId);
 ```
 
@@ -1863,7 +1863,7 @@ Use [CMFCTasksPane::ShowTask](#showtask) to show or hide a task based on its com
 
 Refreshes all of the controls in a task pane.
 
-```
+```cpp
 virtual void Update();
 ```
 

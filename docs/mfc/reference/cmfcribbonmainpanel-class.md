@@ -62,7 +62,7 @@ The framework displays the `CMFCRibbonMainPanel` when you open the application p
 
 Adds a ribbon element to the left pane of the application button panel.
 
-```
+```cpp
 virtual void Add(CMFCRibbonBaseElement* pElem);
 ```
 

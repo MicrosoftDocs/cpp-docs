@@ -194,7 +194,7 @@ By default, a `CMFCEditBrowseCtrl` object is initialized to `BrowseMode_None` mo
 
 Called by the framework after the edit browse control is updated with the result of a browse action.
 
-```
+```cpp
 virtual void OnAfterUpdate();
 ```
 
@@ -206,7 +206,7 @@ Override this method in a derived class to implement a custom action.
 
 Called by the framework after the user clicks the browse button of the edit browse control.
 
-```
+```cpp
 virtual void OnBrowse();
 ```
 
@@ -218,7 +218,7 @@ Use this method to execute custom code when the user clicks the browse button of
 
 Redraws the current edit browse control.
 
-```
+```cpp
 virtual void OnChangeLayout();
 ```
 
@@ -230,7 +230,7 @@ The framework calls this method when the browse mode of the edit browse control 
 
 Called by the framework to draw the browse button on the edit browse control.
 
-```
+```cpp
 virtual void OnDrawBrowseButton(
     CDC* pDC,
     CRect rect,

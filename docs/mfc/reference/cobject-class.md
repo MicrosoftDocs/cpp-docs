@@ -75,7 +75,7 @@ For information about deriving Microsoft Foundation classes and C++ classes in g
 
 Validates this object's integrity.
 
-```
+```cpp
 virtual void AssertValid() const;
 ```
 
@@ -129,7 +129,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 Dumps the contents of your object to a [CDumpContext](../../mfc/reference/cdumpcontext-class.md) object.
 
-```
+```cpp
 virtual void Dump(CDumpContext& dc) const;
 ```
 
@@ -325,7 +325,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 Reads or writes this object from or to an archive.
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 

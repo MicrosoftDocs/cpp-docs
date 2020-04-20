@@ -114,7 +114,7 @@ The following example demonstrates how to use various methods in the `CMFCMenuBa
 
 Adjusts the positions of the menu items on the menu bar.
 
-```
+```cpp
 virtual void AdjustLocations();
 ```
 
@@ -296,7 +296,7 @@ The following example demonstrates how to use the `CreateEx` method of the `CMFC
 
 Initializes a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object. This method models the `CMFCMenuBar` object after a HMENU parameter.
 
-```
+```cpp
 virtual void CreateFromMenu(
     HMENU hMenu,
     BOOL bDefaultMenu = FALSE,
@@ -350,7 +350,7 @@ When you call this method with *uiID* set to 0, this method hides the combo box.
 
 Enables shadows for pop-up menus.
 
-```
+```cpp
 static void EnableMenuShadows(BOOL bEnable = TRUE);
 ```
 
@@ -553,7 +553,7 @@ CMFCToolBarSystemMenuButton* GetSystemMenu() const;
 
 Controls whether the framework highlights disabled menu items.
 
-```
+```cpp
 static void HighlightDisabledItems(BOOL bHighlight = TRUE);
 ```
 
@@ -698,7 +698,7 @@ In most cases your application does not call `LoadState`. The framework calls th
 
 ## <a name="onchangehot"></a> CMFCMenuBar::OnChangeHot
 
-```
+```cpp
 virtual void OnChangeHot(int iHot);
 ```
 
@@ -712,7 +712,7 @@ virtual void OnChangeHot(int iHot);
 
 The framework calls this method when it loads the menu resource from the resource file.
 
-```
+```cpp
 virtual void OnDefaultMenuLoaded(HMENU hMenu);
 ```
 
@@ -948,7 +948,7 @@ The font settings are global variables and affect all `CMFCMenuBar` objects.
 
 Controls whether a menu bar displays recently used menu commands.
 
-```
+```cpp
 static void SetRecentlyUsedMenus (BOOL bOn = TRUE);
 ```
 
@@ -961,7 +961,7 @@ static void SetRecentlyUsedMenus (BOOL bOn = TRUE);
 
 Controls whether a menu shows all the available commands.
 
-```
+```cpp
 static void SetShowAllCommands(BOOL bShowAllCommands = TRUE);
 ```
 

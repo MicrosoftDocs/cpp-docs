@@ -46,7 +46,7 @@ The entire class is deprecated.
 
 ## CListCtrl class
 
-```
+```cpp
 AFX_ANSI_DEPRECATED void CancelEditLabel();
 
 AFX_ANSI_DEPRECATED int EnableGroupView(BOOL fEnable);
@@ -121,7 +121,7 @@ AFX_ANSI_DEPRECATED BOOL SortGroups(PFNLVGROUPCOMPARE _pfnGroupCompare,
 
 ## CReBarCtrl class
 
-```
+```cpp
 AFX_ANSI_DEPRECATED void GetBandMargins(PMARGINS pMargins) const;
 
 AFX_ANSI_DEPRECATED HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
@@ -129,7 +129,7 @@ AFX_ANSI_DEPRECATED HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 ## CToolBarCtrl class
 
-```
+```cpp
 AFX_ANSI_DEPRECATED void GetMetrics(LPTBMETRICS ptbm) const;
 
 AFX_ANSI_DEPRECATED void SetMetrics(LPTBMETRICS ptbm);

@@ -131,7 +131,7 @@ If you do not need direct access to the object, but still want to create a new o
 
 Retrieves a pointer to the requested interface.
 
-```
+```cpp
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 template <class Q>
 HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);

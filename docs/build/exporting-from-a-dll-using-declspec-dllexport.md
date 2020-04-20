@@ -15,7 +15,7 @@ Many export directives, such as ordinals, NONAME, and PRIVATE, can be made only 
 
 To export functions, the **__declspec(dllexport)** keyword must appear to the left of the calling-convention keyword, if a keyword is specified. For example:
 
-```
+```cpp
 __declspec(dllexport) void __cdecl Function1(void);
 ```
 

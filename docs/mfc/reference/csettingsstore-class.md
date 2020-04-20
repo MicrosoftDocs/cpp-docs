@@ -59,7 +59,7 @@ The following example demonstrates how to use the Open and Read methods of the `
 
 Closes the open registry key.
 
-```
+```cpp
 virtual void Close();
 ```
 

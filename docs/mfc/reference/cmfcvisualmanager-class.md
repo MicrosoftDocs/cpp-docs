@@ -259,7 +259,7 @@ The following example demonstrates how to retrieve the default values of a `CMFC
 
 ## <a name="adjustframes"></a> CMFCVisualManager::AdjustFrames
 
-```
+```cpp
 static void __stdcall AdjustFrames();
 ```
 
@@ -267,7 +267,7 @@ static void __stdcall AdjustFrames();
 
 ## <a name="adjusttoolbars"></a> CMFCVisualManager::AdjustToolbars
 
-```
+```cpp
 static void __stdcall AdjustToolbars();
 ```
 
@@ -303,7 +303,7 @@ CMFCVisualManager(BOOL bTemporary = FALSE);
 
 ## <a name="destroyinstance"></a> CMFCVisualManager::DestroyInstance
 
-```
+```cpp
 static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 ```
 
@@ -769,7 +769,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 
 ## <a name="getribbonslidercolors"></a> CMFCVisualManager::GetRibbonSliderColors
 
-```
+```cpp
 virtual void GetRibbonSliderColors(
     CMFCRibbonSlider* pSlider,
     BOOL bIsHighlighted,
@@ -823,7 +823,7 @@ virtual int GetShowAllMenuItemsHeight(
 
 ## <a name="getsmartdockingbaseguidecolors"></a> CMFCVisualManager::GetSmartDockingBaseGuideColors
 
-```
+```cpp
 virtual void GetSmartDockingBaseGuideColors(
     COLORREF& clrBaseGroupBackground,
     COLORREF& clrBaseGroupBorder);
@@ -881,7 +881,7 @@ virtual COLORREF GetStatusBarPaneTextColor(
 
 The framework calls this function when it has to retrieve the set of colors for drawing a tab window.
 
-```
+```cpp
 virtual void GetTabFrameColors(
     const CMFCBaseTabCtrl* pTabWnd,
     COLORREF& clrDark,
@@ -1377,7 +1377,7 @@ virtual BOOL IsWindowsThemingSupported() const;
 
 ## <a name="onactivateapp"></a> CMFCVisualManager::OnActivateApp
 
-```
+```cpp
 virtual void OnActivateApp(
     CWnd* pWnd,
     BOOL bActive);
@@ -1394,7 +1394,7 @@ virtual void OnActivateApp(
 
 The framework calls this method when it draws the border of an auto-hide button.
 
-```
+```cpp
 virtual void OnDrawAutoHideButtonBorder(
     CDC* pDC,
     CRect rectBounds,
@@ -1426,7 +1426,7 @@ The *rectBorderSize* parameter does not contain the coordinates of the border. I
 
 Called by the framework when it draws the gripper for a control bar.
 
-```
+```cpp
 virtual void OnDrawBarGripper(
     CDC* pDC,
     CRect rectGripper,
@@ -1494,7 +1494,7 @@ Override this function in a derived class if you want to customize the appearanc
 
 The framework calls this method when it draws the border of a toolbar button.
 
-```
+```cpp
 virtual void OnDrawButtonBorder(
     CDC* pDC,
     CMFCToolBarButton* pButton,
@@ -1524,7 +1524,7 @@ The possible states of a toolbar button are `ButtonsIsRegular`, `ButtonsIsPresse
 
 ## <a name="ondrawbuttonseparator"></a> CMFCVisualManager::OnDrawButtonSeparator
 
-```
+```cpp
 virtual void OnDrawButtonSeparator(
     CDC* pDC,
     CMFCToolBarButton* pButton,
@@ -1547,7 +1547,7 @@ virtual void OnDrawButtonSeparator(
 
 The framework calls this method when it draws the border of a [CMFCCaptionBar Class](../../mfc/reference/cmfccaptionbar-class.md) object.
 
-```
+```cpp
 virtual void OnDrawCaptionBarBorder(
     CDC* pDC,
     CMFCCaptionBar* pBar,
@@ -1579,7 +1579,7 @@ Override this method in a derived class to customize the appearance of the borde
 
 ## <a name="ondrawcaptionbarbuttonborder"></a> CMFCVisualManager::OnDrawCaptionBarButtonBorder
 
-```
+```cpp
 virtual void OnDrawCaptionBarButtonBorder(
     CDC* pDC,
     CMFCCaptionBar* pBar,
@@ -1606,7 +1606,7 @@ virtual void OnDrawCaptionBarButtonBorder(
 
 ## <a name="ondrawcaptionbarinfoarea"></a> CMFCVisualManager::OnDrawCaptionBarInfoArea
 
-```
+```cpp
 virtual void OnDrawCaptionBarInfoArea(
     CDC* pDC,
     CMFCCaptionBar* pBar,
@@ -1625,7 +1625,7 @@ virtual void OnDrawCaptionBarInfoArea(
 
 The framework calls this method when it draws a [CMFCCaptionButton](../../mfc/reference/cmfccaptionbutton-class.md) object.
 
-```
+```cpp
 virtual void OnDrawCaptionButton (
     CDC* pDC,
     CMFCCaptionButton* pButton,
@@ -1667,7 +1667,7 @@ Override this method in a derived class to customize the appearance of caption b
 
 ## <a name="ondrawcheckbox"></a> CMFCVisualManager::OnDrawCheckBox
 
-```
+```cpp
 virtual void OnDrawCheckBox(
     CDC* pDC,
     CRect rect,
@@ -1688,7 +1688,7 @@ virtual void OnDrawCheckBox(
 
 ## <a name="ondrawcheckboxex"></a> CMFCVisualManager::OnDrawCheckBoxEx
 
-```
+```cpp
 virtual void OnDrawCheckBoxEx(
     CDC* pDC,
     CRect rect,
@@ -1713,7 +1713,7 @@ virtual void OnDrawCheckBoxEx(
 
 The framework calls this method when it draws the border around an instance of the [CMFCToolBarComboBoxButton Class](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md).
 
-```
+```cpp
 virtual void OnDrawComboBorder(
     CDC* pDC,
     CRect rect,
@@ -1751,7 +1751,7 @@ Override this method in your derived visual manager to customize the appearance 
 
 The framework calls this method when it draws the drop button of a [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md).
 
-```
+```cpp
 virtual void OnDrawComboDropButton(
     CDC* pDC,
     CRect rect,
@@ -1787,7 +1787,7 @@ Override this method in your derived visual manager to customize the appearance 
 
 ## <a name="ondrawcontrolborder"></a> CMFCVisualManager::OnDrawControlBorder
 
-```
+```cpp
 virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 ```
 
@@ -1801,7 +1801,7 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 
 The framework calls this method when it draws the default image that is used for the ribbon button.
 
-```
+```cpp
 virtual void OnDrawDefaultRibbonImage(
     CDC* pDC,
     CRect rectImage,
@@ -1835,7 +1835,7 @@ Override this method in a derived visual manager if you want to customize the im
 
 The framework calls this method when it draws the border around an instance of the [CMFCToolBarEditBoxButton Class](../../mfc/reference/cmfctoolbareditboxbutton-class.md).
 
-```
+```cpp
 virtual void OnDrawEditBorder(
     CDC* pDC,
     CRect rect,
@@ -1867,7 +1867,7 @@ Override this method in a derived visual manager to customize the border of a `C
 
 ## <a name="ondrawexpandingbox"></a> CMFCVisualManager::OnDrawExpandingBox
 
-```
+```cpp
 virtual void OnDrawExpandingBox(
     CDC* pDC,
     CRect rect,
@@ -1888,7 +1888,7 @@ virtual void OnDrawExpandingBox(
 
 The framework calls this method when it draws the border of a floating toolbar.
 
-```
+```cpp
 virtual void OnDrawFloatingToolbarBorder(
     CDC* pDC,
     CMFCBaseToolBar* pToolBar,
@@ -1922,7 +1922,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the border around an instance of the [CMFCHeaderCtrl Class](../../mfc/reference/cmfcheaderctrl-class.md).
 
-```
+```cpp
 virtual void OnDrawHeaderCtrlBorder(
     CMFCHeaderCtrl* pCtrl,
     CDC* pDC,
@@ -1956,7 +1956,7 @@ Override this method in a derived visual manager to customize the border of the 
 
 The framework calls this function when it draws the sort arrow of a header control.
 
-```
+```cpp
 virtual void OnDrawHeaderCtrlSortArrow(
     CMFCHeaderCtrl* pCtrl,
     CDC* pDC,
@@ -1984,7 +1984,7 @@ If *bIsUp* is TRUE, the visual manager draws an up sort arrow. If it is FALSE, t
 
 ## <a name="ondrawmenuarrowoncustomizelist"></a> CMFCVisualManager::OnDrawMenuArrowOnCustomizeList
 
-```
+```cpp
 virtual void OnDrawMenuArrowOnCustomizeList(
     CDC* pDC,
     CRect rectCommand,
@@ -2003,7 +2003,7 @@ virtual void OnDrawMenuArrowOnCustomizeList(
 
 The framework calls this method when it draws the border of a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md).
 
-```
+```cpp
 virtual void OnDrawMenuBorder(
     CDC* pDC,
     CMFCPopupMenu* pMenu,
@@ -2027,7 +2027,7 @@ The default implementation of this method displays the standard menu border. Ove
 
 ## <a name="ondrawmenucheck"></a> CMFCVisualManager::OnDrawMenuCheck
 
-```
+```cpp
 virtual void OnDrawMenuCheck(
     CDC* pDC,
     CMFCToolBarMenuButton* pButton,
@@ -2048,7 +2048,7 @@ virtual void OnDrawMenuCheck(
 
 ## <a name="ondrawmenuitembutton"></a> CMFCVisualManager::OnDrawMenuItemButton
 
-```
+```cpp
 virtual void OnDrawMenuItemButton(
     CDC* pDC,
     CMFCToolBarMenuButton* pButton,
@@ -2086,7 +2086,7 @@ virtual COLORREF OnDrawMenuLabel(
 
 ## <a name="ondrawmenuresizebar"></a> CMFCVisualManager::OnDrawMenuResizeBar
 
-```
+```cpp
 virtual void OnDrawMenuResizeBar(
     CDC* pDC,
     CRect rect,
@@ -2105,7 +2105,7 @@ virtual void OnDrawMenuResizeBar(
 
 The framework calls this method when it draws a menu scroll button.
 
-```
+```cpp
 virtual void OnDrawMenuScrollButton(
     CDC* pDC,
     CRect rect,
@@ -2141,7 +2141,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ## <a name="ondrawmenushadow"></a> CMFCVisualManager::OnDrawMenuShadow
 
-```
+```cpp
 virtual void OnDrawMenuShadow(
     CDC* pDC,
     const CRect& rectClient,
@@ -2172,7 +2172,7 @@ virtual void OnDrawMenuShadow(
 
 The framework calls this method when it draws a menu system button for the application.
 
-```
+```cpp
 virtual void OnDrawMenuSystemButton(
     CDC* pDC,
     CRect rect,
@@ -2206,7 +2206,7 @@ The default implementation for this method calls [CDC::DrawFrameControl](../../m
 
 ## <a name="ondrawminiframeborder"></a> CMFCVisualManager::OnDrawMiniFrameBorder
 
-```
+```cpp
 virtual void OnDrawMiniFrameBorder(
     CDC* pDC,
     CPaneFrameWnd* pFrameWnd,
@@ -2227,7 +2227,7 @@ virtual void OnDrawMiniFrameBorder(
 
 The framework calls this method when it draws the splitter for an Outlook bar.
 
-```
+```cpp
 virtual void OnDrawOutlookBarSplitter(
     CDC* pDC,
     CRect rectSplitter);
@@ -2249,7 +2249,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 Called by the framework when it draws the border of an Outlook page button.
 
-```
+```cpp
 virtual void OnDrawOutlookPageButtonBorder(
     CDC* pDC,
     CRect& rectBtn,
@@ -2279,7 +2279,7 @@ Override this method in a custom visual manager to change the appearance of the 
 
 The framework calls this method when it draws the border of a [CPane Class](../../mfc/reference/cpane-class.md) object.
 
-```
+```cpp
 virtual void OnDrawPaneBorder(
     CDC* pDC,
     CBasePane* pBar,
@@ -2341,7 +2341,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ## <a name="ondrawpanedivider"></a> CMFCVisualManager::OnDrawPaneDivider
 
-```
+```cpp
 virtual void OnDrawPaneDivider(
     CDC* pDC,
     CPaneDivider* pSlider,
@@ -2360,7 +2360,7 @@ virtual void OnDrawPaneDivider(
 
 ## <a name="ondrawpopupwindowborder"></a> CMFCVisualManager::OnDrawPopupWindowBorder
 
-```
+```cpp
 virtual void OnDrawPopupWindowBorder(
     CDC* pDC,
     CRect rect);
@@ -2375,7 +2375,7 @@ virtual void OnDrawPopupWindowBorder(
 
 ## <a name="ondrawpopupwindowbuttonborder"></a> CMFCVisualManager::OnDrawPopupWindowButtonBorder
 
-```
+```cpp
 virtual void OnDrawPopupWindowButtonBorder(
     CDC* pDC,
     CRect rectClient,
@@ -2413,7 +2413,7 @@ virtual COLORREF OnDrawPopupWindowCaption(
 
 The framework calls this method when it draws the **Main Button** on the ribbon.
 
-```
+```cpp
 virtual void OnDrawRibbonApplicationButton(
     CDC* pDC,
     CMFCRibbonButton* pButton);
@@ -2435,7 +2435,7 @@ Override this method in a derived visual manager if you want to customize the ap
 
 The framework calls this method when it draws the border of a button on the ribbon.
 
-```
+```cpp
 virtual void OnDrawRibbonButtonBorder(
     CDC* pDC,
     CMFCRibbonButton* pButton);
@@ -2487,7 +2487,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the caption bar of the main frame window. The framework calls this method only if the ribbon is integrated with the main frame.
 
-```
+```cpp
 virtual void OnDrawRibbonCaption(
     CDC* pDC,
     CMFCRibbonBar* pBar,
@@ -2517,7 +2517,7 @@ Override this function in a derived visual manager to customize the appearance o
 
 The framework calls this method when it draws a caption button located on the ribbon bar.
 
-```
+```cpp
 virtual void OnDrawRibbonCaptionButton(
     CDC* pDC,
     CMFCRibbonCaptionButton* pButton);
@@ -2539,7 +2539,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws a [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.
 
-```
+```cpp
 virtual void OnDrawRibbonCategory(
     CDC* pDC,
     CMFCRibbonCategory* pCategory,
@@ -2591,7 +2591,7 @@ Override this method in a derived class to customize the appearance of the capti
 
 ## <a name="ondrawribboncategoryscroll"></a> CMFCVisualManager::OnDrawRibbonCategoryScroll
 
-```
+```cpp
 virtual void OnDrawRibbonCategoryScroll(
     CDC* pDC,
     CRibbonCategoryScroll* pScroll);
@@ -2636,7 +2636,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ## <a name="ondrawribboncheckboxonlist"></a> CMFCVisualManager::OnDrawRibbonCheckBoxOnList
 
-```
+```cpp
 virtual void OnDrawRibbonCheckBoxOnList(
     CDC* pDC,
     CMFCRibbonCheckBox* pCheckBox,
@@ -2657,7 +2657,7 @@ virtual void OnDrawRibbonCheckBoxOnList(
 
 ## <a name="ondrawribboncolorpalettebox"></a> CMFCVisualManager::OnDrawRibbonColorPaletteBox
 
-```
+```cpp
 virtual void OnDrawRibbonColorPaletteBox(
     CDC* pDC,
     CMFCRibbonColorButton* pColorButton,
@@ -2690,7 +2690,7 @@ virtual void OnDrawRibbonColorPaletteBox(
 
 The framework calls this method when it draws the default button for the ribbon pane.
 
-```
+```cpp
 virtual void OnDrawRibbonDefaultPaneButton(
     CDC* pDC,
     CMFCRibbonButton* pButton);
@@ -2712,7 +2712,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ## <a name="ondrawribbondefaultpanebuttoncontext"></a> CMFCVisualManager::OnDrawRibbonDefaultPaneButtonContext
 
-```
+```cpp
 virtual void OnDrawRibbonDefaultPaneButtonContext(
     CDC* pDC,
     CMFCRibbonButton* pButton);
@@ -2727,7 +2727,7 @@ virtual void OnDrawRibbonDefaultPaneButtonContext(
 
 ## <a name="ondrawribbondefaultpanebuttonindicator"></a> CMFCVisualManager::OnDrawRibbonDefaultPaneButtonIndicator
 
-```
+```cpp
 virtual void OnDrawRibbonDefaultPaneButtonIndicator(
     CDC* pDC,
     CMFCRibbonButton* pButton,
@@ -2748,7 +2748,7 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 
 ## <a name="ondrawribbongalleryborder"></a> CMFCVisualManager::OnDrawRibbonGalleryBorder
 
-```
+```cpp
 virtual void OnDrawRibbonGalleryBorder(
     CDC* pDC,
     CMFCRibbonGallery* pButton,
@@ -2765,7 +2765,7 @@ virtual void OnDrawRibbonGalleryBorder(
 
 ## <a name="ondrawribbongallerybutton"></a> CMFCVisualManager::OnDrawRibbonGalleryButton
 
-```
+```cpp
 virtual void OnDrawRibbonGalleryButton(
     CDC* pDC,
     CMFCRibbonGalleryIcon* pButton);
@@ -2780,7 +2780,7 @@ virtual void OnDrawRibbonGalleryButton(
 
 ## <a name="ondrawribbonkeytip"></a> CMFCVisualManager::OnDrawRibbonKeyTip
 
-```
+```cpp
 virtual void OnDrawRibbonKeyTip(
     CDC* pDC,
     CMFCRibbonBaseElement* pElement,
@@ -2801,7 +2801,7 @@ virtual void OnDrawRibbonKeyTip(
 
 The framework calls this method when it draws the label of the ribbon.
 
-```
+```cpp
 virtual void OnDrawRibbonLabel(
     CDC* pDC,
     CMFCRibbonLabel* pLabel,
@@ -2827,7 +2827,7 @@ Override this method in a derived class to customize the ribbon label.
 
 The framework calls this method when it draws the border of a [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) that is positioned on the **Main** panel.
 
-```
+```cpp
 virtual void OnDrawRibbonMainPanelButtonBorder(
     CDC* pDC,
     CMFCRibbonButton* pButton);
@@ -2849,7 +2849,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the frame around the [CMFCRibbonMainPanel](../../mfc/reference/cmfcribbonmainpanel-class.md).
 
-```
+```cpp
 virtual void OnDrawRibbonMainPanelFrame(
     CDC* pDC,
     CMFCRibbonMainPanel* pPanel,
@@ -2873,7 +2873,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ## <a name="ondrawribbonmenucheckframe"></a> CMFCVisualManager::OnDrawRibbonMenuCheckFrame
 
-```
+```cpp
 virtual void OnDrawRibbonMenuCheckFrame(
     CDC* pDC,
     CMFCRibbonButton* pButton,
@@ -2926,7 +2926,7 @@ Override this method in a derived class to customize the appearance of a ribbon 
 
 The framework calls this method when it draws the caption of a [CMFCRibbonPanel Class](../../mfc/reference/cmfcribbonpanel-class.md).
 
-```
+```cpp
 virtual void OnDrawRibbonPanelCaption(
     CDC* pDC,
     CMFCRibbonPanel* pPanel,
@@ -2952,7 +2952,7 @@ Override this method in a derived class to customize the appearance of captions 
 
 The framework calls this method when it draws a [CMFCRibbonProgressBar Class](../../mfc/reference/cmfcribbonprogressbar-class.md).
 
-```
+```cpp
 virtual void OnDrawRibbonProgressBar(
     CDC* pDC,
     CMFCRibbonProgressBar* pProgress,
@@ -2986,7 +2986,7 @@ Override this method in a derived class to customize the appearance of a progres
 
 The framework calls this method when it draws a separator on the **Quick Access Toolbar** of a ribbon.
 
-```
+```cpp
 virtual void OnDrawRibbonQuickAccessToolBarSeparator(
     CDC* pDC,
     CMFCRibbonSeparator* pSeparator,
@@ -3012,7 +3012,7 @@ Override this method in a derived class to customize the appearance of ribbon se
 
 The framework calls this method when it draws a frame around a list of recent files.
 
-```
+```cpp
 virtual void OnDrawRibbonRecentFilesFrame(
     CDC* pDC,
     CMFCRibbonMainPanel* pPanel,
@@ -3038,7 +3038,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the channel of a [CMFCRibbonSlider Class](../../mfc/reference/cmfcribbonslider-class.md).
 
-```
+```cpp
 virtual void OnDrawRibbonSliderChannel(
     CDC* pDC,
     CMFCRibbonSlider* pSlider,
@@ -3064,7 +3064,7 @@ Override this method in a derived class to customize the appearance of the chann
 
 The framework calls this method when it draws the thumb of a [CMFCRibbonSlider](../../mfc/reference/cmfcribbonslider-class.md) object.
 
-```
+```cpp
 virtual void OnDrawRibbonSliderThumb(
     CDC* pDC,
     CMFCRibbonSlider* pSlider,
@@ -3102,7 +3102,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the zoom buttons for a [CMFCRibbonSlider](../../mfc/reference/cmfcribbonslider-class.md) object.
 
-```
+```cpp
 virtual void OnDrawRibbonSliderZoomButton(
     CDC* pDC,
     CMFCRibbonSlider* pSlider,
@@ -3202,7 +3202,7 @@ Override this method in a derived visual manager to customize the frame around a
 
 ## <a name="ondrawscrollbuttons"></a> CMFCVisualManager::OnDrawScrollButtons
 
-```
+```cpp
 virtual void OnDrawScrollButtons(
     CDC* pDC,
     const CRect& rect,
@@ -3225,7 +3225,7 @@ virtual void OnDrawScrollButtons(
 
 The framework calls this method when it draws a separator.
 
-```
+```cpp
 virtual void OnDrawSeparator(
     CDC* pDC,
     CBasePane* pBar,
@@ -3253,7 +3253,7 @@ Separators are used on control bars to separate groups of related icons. The def
 
 ## <a name="ondrawshowallmenuitems"></a> CMFCVisualManager::OnDrawShowAllMenuItems
 
-```
+```cpp
 virtual void OnDrawShowAllMenuItems(
     CDC* pDC,
     CRect rect,
@@ -3272,7 +3272,7 @@ virtual void OnDrawShowAllMenuItems(
 
 The framework calls this method when it draws an instance of the [CMFCSpinButtonCtrl Class](../../mfc/reference/cmfcspinbuttonctrl-class.md).
 
-```
+```cpp
 virtual void OnDrawSpinButtons(
     CDC* pDC,
     CRect rectSpin,
@@ -3318,7 +3318,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the border around an instance of the [CSplitterWndEx Class](csplitterwndex-class.md).
 
-```
+```cpp
 virtual void OnDrawSplitterBorder(
     CDC* pDC,
     CSplitterWndEx* pSplitterWnd,
@@ -3344,7 +3344,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the drag box for an instance of the [CSplitterWndEx Class](csplitterwndex-class.md). The drag box appears when the user selects the splitter bar and changes the dimensions of the child windows.
 
-```
+```cpp
 virtual void OnDrawSplitterBox(
     CDC* pDC,
     CSplitterWndEx* pSplitterWnd,
@@ -3370,7 +3370,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the border for a [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) object.
 
-```
+```cpp
 virtual void OnDrawStatusBarPaneBorder(
     CDC* pDC,
     CMFCStatusBar* pBar,
@@ -3404,7 +3404,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the progress indicator on the [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) object.
 
-```
+```cpp
 virtual void OnDrawStatusBarProgress(
     CDC* pDC,
     CMFCStatusBar* pStatusBar,
@@ -3454,7 +3454,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the size box for a [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md).
 
-```
+```cpp
 virtual void OnDrawStatusBarSizeBox(
     CDC* pDC,
     CMFCStatusBar* pStatBar,
@@ -3480,7 +3480,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the tabs for a [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) object.
 
-```
+```cpp
 virtual void OnDrawTab(
     CDC* pDC,
     CRect rectTab,
@@ -3516,7 +3516,7 @@ Override this method in a derived class to customize the look of tabs.
 
 The framework calls this method when it draws the **Close** button on the active tab.
 
-```
+```cpp
 virtual void OnDrawTabCloseButton(
     CDC* pDC,
     CRect rect,
@@ -3554,7 +3554,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws the contents located on the interior of an instance of the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md).
 
-```
+```cpp
 virtual void OnDrawTabContent(
     CDC* pDC,
     CRect rectTab,
@@ -3592,7 +3592,7 @@ The interior of a tab contains the text and icons of the tab. Override this meth
 
 The framework calls this method when it draws the border of a tab button.
 
-```
+```cpp
 virtual void OnDrawTabsButtonBorder(
     CDC* pDC,
     CRect& rect,
@@ -3626,7 +3626,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws a [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) object.
 
-```
+```cpp
 virtual void OnDrawTask(
     CDC* pDC,
     CMFCTasksPaneTask* pTask,
@@ -3662,7 +3662,7 @@ Override this method in a derived class to customize the appearance of tasks on 
 
 The framework calls this method when it draws a border around a group on a [CMFCTasksPane Class](../../mfc/reference/cmfctaskspane-class.md).
 
-```
+```cpp
 virtual void OnDrawTasksGroupAreaBorder(
     CDC* pDC,
     CRect rect,
@@ -3692,7 +3692,7 @@ Override this function in a derived class to customize the border around a group
 
 The framework calls this method when it draws the caption for a [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md) object.
 
-```
+```cpp
 virtual void OnDrawTasksGroupCaption(
     CDC* pDC,
     CMFCTasksPaneTaskGroup* pGroup,
@@ -3726,7 +3726,7 @@ Override this method in a derived class to customize the caption for a `CMFCTask
 
 ## <a name="ondrawtasksgroupicon"></a> CMFCVisualManager::OnDrawTasksGroupIcon
 
-```
+```cpp
 virtual void OnDrawTasksGroupIcon(
     CDC* pDC,
     CMFCTasksPaneTaskGroup* pGroup,
@@ -3751,7 +3751,7 @@ virtual void OnDrawTasksGroupIcon(
 
 The framework calls this method when it draws the caption for a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md).
 
-```
+```cpp
 virtual void OnDrawTearOffCaption(
     CDC* pDC,
     CRect rect,
@@ -3777,7 +3777,7 @@ Override this method in a derived class to customize the look of captions for te
 
 ## <a name="ondrawtoolboxframe"></a> CMFCVisualManager::OnDrawToolBoxFrame
 
-```
+```cpp
 virtual void OnDrawToolBoxFrame(
     CDC* pDC,
     const CRect& rect);
@@ -3818,7 +3818,7 @@ Override this method to execute custom code when the visual manager erases the M
 
 ## <a name="onerasepopupwindowbutton"></a> CMFCVisualManager::OnErasePopupWindowButton
 
-```
+```cpp
 virtual void OnErasePopupWindowButton(
     CDC* pDC,
     CRect rectClient,
@@ -3837,7 +3837,7 @@ virtual void OnErasePopupWindowButton(
 
 The framework calls this method when it erases the tab area of a tab window.
 
-```
+```cpp
 virtual void OnEraseTabsArea(
     CDC* pDC,
     CRect rect,
@@ -3865,7 +3865,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it erases the text and icon of a tab button.
 
-```
+```cpp
 virtual void OnEraseTabsButton(
     CDC* pDC,
     CRect rect,
@@ -3927,7 +3927,7 @@ This method fills the area indicated by *rect* with the background color of the 
 
 The framework calls this method when it fills the background of an auto-hide button.
 
-```
+```cpp
 virtual void OnFillAutoHideButtonBackground(
     CDC* pDC,
     CRect rect,
@@ -3953,7 +3953,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it fills the background of a [CBasePane](../../mfc/reference/cbasepane-class.md) object.
 
-```
+```cpp
 virtual void OnFillBarBackground(
     CDC* pDC,
     CBasePane* pBar,
@@ -3993,7 +3993,7 @@ The following example demonstrates how to use the `OnFillBarBackground` in the `
 
 The framework calls this method when it fills the background of a toolbar button.
 
-```
+```cpp
 virtual void OnFillButtonInterior(
     CDC* pDC,
     CMFCToolBarButton* pButton,
@@ -4084,7 +4084,7 @@ For more information about the customization list, see [CMFCToolBarButton::OnDra
 
 The framework calls this method when it fills the background of a header control.
 
-```
+```cpp
 virtual void OnFillHeaderCtrlBackground(
     CMFCHeaderCtrl* pCtrl,
     CDC* pDC,
@@ -4144,7 +4144,7 @@ The default implementation for this method fills the caption bar with the curren
 
 The framework calls this method when it fills the background of an Outlook caption bar.
 
-```
+```cpp
 virtual void OnFillOutlookBarCaption(
     CDC* pDC,
     CRect rectCaption,
@@ -4170,7 +4170,7 @@ The default implementation of this method fills the caption bar with the color f
 
 The framework calls this method when it fills the interior of an Outlook page button.
 
-```
+```cpp
 virtual void OnFillOutlookPageButton(
     CDC* pDC,
     const CRect& rect,
@@ -4204,7 +4204,7 @@ Override this function in a derived visual manager to customize the appearance o
 
 The framework calls this method when it fills the background of a pop-up window.
 
-```
+```cpp
 virtual void OnFillPopupWindowBackground(
     CDC* pDC,
     CRect rect);
@@ -4252,7 +4252,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it fills the interior of an instance of the `CMFCRibbonRichEditCtrl` class.
 
-```
+```cpp
 virtual void OnFillRibbonEdit(
     CDC* pDC,
     CMFCRibbonRichEditCtrl* pEdit,
@@ -4330,7 +4330,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it fills the menu frame of the ribbon panel.
 
-```
+```cpp
 virtual void OnFillRibbonMenuFrame(
     CDC* pDC,
     CMFCRibbonMainPanel* pPanel,
@@ -4354,7 +4354,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ## <a name="onfillribbonquickaccesstoolbarpopup"></a> CMFCVisualManager::OnFillRibbonQuickAccessToolBarPopup
 
-```
+```cpp
 virtual void OnFillRibbonQuickAccessToolBarPopup(
     CDC* pDC,
     CMFCRibbonPanelMenuBar* pMenuBar,
@@ -4373,7 +4373,7 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 
 The framework calls this method when it fills the background of a splitter window.
 
-```
+```cpp
 virtual void OnFillSplitterBackground(
     CDC* pDC,
     CSplitterWndEx* pSplitterWnd,
@@ -4399,7 +4399,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it fills the background of a tab window.
 
-```
+```cpp
 virtual void OnFillTab(
     CDC* pDC,
     CRect rectFill,
@@ -4437,7 +4437,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it fills the interior of a [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md) object.
 
-```
+```cpp
 virtual void OnFillTasksGroupInterior(
     CDC* pDC,
     CRect rect,
@@ -4463,7 +4463,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it fills the background of a [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) control.
 
-```
+```cpp
 virtual void OnFillTasksPaneBackground(
     CDC* pDC,
     CRect rectWorkArea);
@@ -4485,7 +4485,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws a highlighted menu item.
 
-```
+```cpp
 virtual void OnHighlightMenuItem(
     CDC* pDC,
     CMFCToolBarMenuButton* pButton,
@@ -4517,7 +4517,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 The framework calls this method when it draws a highlighted menu command.
 
-```
+```cpp
 virtual void OnHighlightRarelyUsedMenuItems(
     CDC* pDC,
     CRect rectRarelyUsed);
@@ -4612,7 +4612,7 @@ The framework calls this method to notify the visual manager that a region has b
 
 The framework calls this function when it changes the system colors.
 
-```
+```cpp
 virtual void OnUpdateSystemColors();
 ```
 
@@ -4624,7 +4624,7 @@ The framework calls this method as a part of processing the WM_SYSCOLORCHANGE me
 
 Immediately redraws all the control bars in the application.
 
-```
+```cpp
 static void RedrawAll();
 ```
 
@@ -4646,7 +4646,7 @@ virtual COLORREF RibbonCategoryColorToRGB(AFX_RibbonCategoryColor color);
 
 Sets the default manager.
 
-```
+```cpp
 static void SetDefaultManager(CRuntimeClass* pRTI);
 ```
 

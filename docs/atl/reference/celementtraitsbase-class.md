@@ -51,7 +51,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 Call this method to copy elements stored in a collection class object.
 
-```
+```cpp
 static void CopyElements(
     T* pDest,
     const T* pSrc,
@@ -93,7 +93,7 @@ typedef T& OUTARGTYPE;
 
 Call this method to relocate elements stored in a collection class object.
 
-```
+```cpp
 static void RelocateElements(
     T* pDest,
     T* pSrc,

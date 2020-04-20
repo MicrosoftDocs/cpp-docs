@@ -843,7 +843,7 @@ To create a licensed ActiveX control, see [IAxWinHostWindowLic::CreateControlLic
 
 Returns the specified interface pointer provided by the hosted control.
 
-```
+```cpp
 STDMETHOD(QueryControl)(REFIID riid, void** ppvObject);
 ```
 

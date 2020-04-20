@@ -136,7 +136,7 @@ This method retrieves the parent menu from the parent button. This method return
 
 Repositions the drop-down frame.
 
-```
+```cpp
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
 

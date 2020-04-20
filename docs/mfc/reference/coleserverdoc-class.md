@@ -189,7 +189,7 @@ If the container application is written using the Microsoft Foundation Class Lib
 
 The framework calls this function to destroy an in-place frame window and return the server application's document window to its state before in-place activation.
 
-```
+```cpp
 virtual void DestroyInPlaceFrame(COleIPFrameWnd* pFrameWnd);
 ```
 
@@ -441,7 +441,7 @@ When the user chooses the Save command from the File menu, `NotifySaved` is call
 
 Called by the framework when a container requests that the server document be closed.
 
-```
+```cpp
 virtual void OnClose(OLECLOSE dwCloseOption);
 ```
 
@@ -466,7 +466,7 @@ For more information and additional values, see [OLECLOSE](/windows/win32/api/ol
 
 Called by the framework when the user deactivates an embedded or linked item that is currently in-place active.
 
-```
+```cpp
 virtual void OnDeactivate();
 ```
 
@@ -482,7 +482,7 @@ For more information, see the article [Activation](../../mfc/activation-cpp.md).
 
 Called when the user deactivates an item that was activated in place.
 
-```
+```cpp
 virtual void OnDeactivateUI(BOOL bUndoable);
 ```
 
@@ -501,7 +501,7 @@ The framework always sets *bUndoable* to FALSE. If the server supports undo and 
 
 The framework calls this function to activate or deactivate a document window for in-place editing.
 
-```
+```cpp
 virtual void OnDocWindowActivate(BOOL bActivate);
 ```
 
@@ -585,7 +585,7 @@ The base-class implementation of this function will walk the OLE_COMMAND_MAP str
 
 The framework calls this function when the container application's frame window is activated or deactivated.
 
-```
+```cpp
 virtual void OnFrameWindowActivate(BOOL bActivate);
 ```
 
@@ -638,7 +638,7 @@ Override this function if your application supports undo. Usually you would perf
 
 The framework calls this function when the container application's frame windows change size.
 
-```
+```cpp
 virtual void OnResizeBorder(
     LPCRECT lpRectBorder,
     LPOLEINPLACEUIWINDOW lpUIWindow,
@@ -668,7 +668,7 @@ This is an advanced overridable.
 
 Called by the framework when the container sets or changes the host names for this document.
 
-```
+```cpp
 virtual void OnSetHostNames(
     LPCTSTR lpszHost,
     LPCTSTR lpszHostObj);
@@ -692,7 +692,7 @@ Override this function if your application sets the titles through a different m
 
 The framework calls this function to position the in-place editing frame window within the container application's frame window.
 
-```
+```cpp
 virtual void OnSetItemRects(
     LPCRECT lpPosRect,
     LPCRECT lpClipRect);
@@ -716,7 +716,7 @@ This function is usually called in response to a `RequestPositionChange` call, a
 
 The framework calls this function to show or hide the server application's control bars associated with the frame window identified by *pFrameWnd*.
 
-```
+```cpp
 virtual void OnShowControlBars(
     CFrameWnd* pFrameWnd,
     BOOL bShow);
@@ -738,7 +738,7 @@ The default implementation enumerates all control bars owned by that frame windo
 
 The framework calls the `OnShowDocument` function when the server document must be hidden or shown.
 
-```
+```cpp
 virtual void OnShowDocument(BOOL bShow);
 ```
 

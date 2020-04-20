@@ -218,7 +218,7 @@ void Move(
 
 Draws the caption button.
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     BOOL bActive,

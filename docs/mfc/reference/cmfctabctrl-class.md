@@ -258,7 +258,7 @@ The following example demonstrates how to use the `Create` method in the `CMFCTa
 
 Deflates the size of the specified tab area.
 
-```
+```cpp
 virtual void CalcRectEdit(CRect& rectEdit);
 ```
 
@@ -288,7 +288,7 @@ void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
 
 Enables or disables editable tab labels.
 
-```
+```cpp
 virtual void EnableInPlaceEdit(BOOL bEnable);
 ```
 
@@ -452,7 +452,7 @@ The height of the tab area if any tab is visible, or zero if no tab is visible.
 
 Retrieves a rectangle that bounds the tab area of the current tab control.
 
-```
+```cpp
 virtual void GetTabsRect(CRect& rect) const;
 ```
 
@@ -522,7 +522,7 @@ void HideNoTabs(BOOL bHide=TRUE);
 
 Enables or disables tab drawing if there is a single tabbed window.
 
-```
+```cpp
 virtual void HideSingleTab(BOOL bHide=TRUE);
 ```
 
@@ -817,7 +817,7 @@ Override this method with your custom implementation. For more information, see 
 
 Displays a pop-up menu of tabbed windows, waits until the user selects a tab, and makes the selected tab the active tab.
 
-```
+```cpp
 virtual void OnShowTabDocumentsMenu(CPoint point);
 ```
 

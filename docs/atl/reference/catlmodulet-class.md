@@ -74,7 +74,7 @@ Calls [CAtlModuleT::InitLibId](#initlibid).
 
 Initializes the data member containing the GUID of the current module.
 
-```
+```cpp
 static void InitLibId() throw();
 ```
 

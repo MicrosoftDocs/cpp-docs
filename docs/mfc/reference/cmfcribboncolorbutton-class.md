@@ -302,7 +302,7 @@ void SetColorBoxSize(CSize sizeBox);
 
 Sets a new name for a specified color.
 
-```
+```cpp
 static void __stdcall SetColorName(
     COLORREF color,
     const CString& strName);

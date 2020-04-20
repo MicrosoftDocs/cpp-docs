@@ -270,7 +270,7 @@ This method selects the specified item, and if it is required, scrolls the item 
 
 Associates an application-specific 32-bit value with an editable list control item.
 
-```
+```cpp
 virtual void SetItemData(
     int iIndex,
     DWORD_PTR dwData);

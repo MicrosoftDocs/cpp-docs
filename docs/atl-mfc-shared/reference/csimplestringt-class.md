@@ -153,7 +153,7 @@ Copies a character or characters to a `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 static void CopyChars(
     XCHAR* pchDest,
     const XCHAR* pchSrc,
@@ -193,7 +193,7 @@ Copies a character or characters to a `CSimpleStringT` object.
 
 ### Syntax
 
-```
+```cpp
 static void CopyCharsOverlapped(
     XCHAR* pchDest,
     const XCHAR* pchSrc,

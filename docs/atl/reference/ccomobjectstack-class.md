@@ -116,7 +116,7 @@ HRESULT    m_hResFinalConstruct;
 
 Returns E_NOINTERFACE.
 
-```
+```cpp
 HRESULT    QueryInterface(REFIID, void**);
 ```
 

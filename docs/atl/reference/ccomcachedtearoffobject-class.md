@@ -154,7 +154,7 @@ The methods `m_contained` inherits are used to access the tear-off interface in 
 
 Retrieves a pointer to the requested interface.
 
-```
+```cpp
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```
 

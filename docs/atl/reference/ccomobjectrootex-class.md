@@ -270,7 +270,7 @@ If the object is aggregated, the pointer to the outer unknown is stored in `m_pO
 
 For each class listed in the object map, this function is called once when the module is initialized, and again when it is terminated.
 
-```
+```cpp
 static void WINAPI ObjectMain(bool bStarting);
 ```
 
@@ -305,7 +305,7 @@ A value that may be useful for diagnostics and testing.
 
 Retrieves an indirect pointer to the requested interface.
 
-```
+```cpp
 HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 ```
 

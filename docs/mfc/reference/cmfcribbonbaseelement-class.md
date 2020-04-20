@@ -179,7 +179,7 @@ The following example demonstrates how to use various methods in the `CMFCRibbon
 
 Adds a keytip for the ribbon element to an array of keytips.
 
-```
+```cpp
 virtual void AddToKeyList(
     CArray<CMFCRibbonKeyTip*, CMFCRibbonKeyTip*>& arElems);
 ```
@@ -285,7 +285,7 @@ By default this method always returns FALSE. Override this method to indicate wh
 
 Cleans up the dimension settings for the ribbon element.
 
-```
+```cpp
 virtual void CleanUpSizes();
 ```
 
@@ -297,7 +297,7 @@ By default this method does nothing. Override this method in a derived class to 
 
 Closes the pop-up menu for the ribbon element.
 
-```
+```cpp
 virtual void ClosePopupMenu();
 ```
 
@@ -307,7 +307,7 @@ virtual void ClosePopupMenu();
 
 Copies the state of the specified [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) to the current object.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```
 
@@ -322,7 +322,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 
 Destroys the ribbon element.
 
-```
+```cpp
 virtual void DestroyCtrl();
 ```
 
@@ -334,7 +334,7 @@ By default this method does nothing. Override this method in a derived class to 
 
 Draws the image for the ribbon element.
 
-```
+```cpp
 virtual void DrawImage(
     CDC* pDC,
     RibbonImageType type,
@@ -503,7 +503,7 @@ A pointer to the ribbon element if its pop-up menu is dropped down; otherwise NU
 
 Adds the current ribbon element to the specified array.
 
-```
+```cpp
 virtual void GetElements(
     CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
 ```
@@ -519,7 +519,7 @@ virtual void GetElements(
 
 Adds the current ribbon element to the specified array if the current ribbon element contains the specified command ID.
 
-```
+```cpp
 virtual void GetElementsByID(
     UINT uiCmdID,
     CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
@@ -1332,7 +1332,7 @@ TRUE if the message was sent; otherwise, FALSE.
 
 Notifies the parent window of the ribbon bar when a user highlights a ribbon element that is located in a list.
 
-```
+```cpp
 virtual void NotifyHighlightListItem(int nIndex);
 ```
 
@@ -1366,7 +1366,7 @@ Always returns TRUE indicating the ribbon element was added to the quick access 
 
 Updates the tooltip for the ribbon element.
 
-```
+```cpp
 virtual void OnAfterChangeRect(CDC* pDC);
 ```
 
@@ -1399,7 +1399,7 @@ By default this method always return FALSE. Override this method to process sust
 
 Calculates the size of the text for the ribbon element.
 
-```
+```cpp
 virtual void OnCalcTextSize(CDC* pDC);
 ```
 
@@ -1416,7 +1416,7 @@ By default this method does nothing. Override this method to calculate the size 
 
 Called by the framework when the highlight changes for a ribbon element that is located in a menu.
 
-```
+```cpp
 virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
     CMFCRibbonBaseElement* pHot);
 ```
@@ -1437,7 +1437,7 @@ By default this method does nothing. Override this method to update a ribbon ele
 
 Called by the framework to draw the ribbon element.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC) = 0;
 ```
 
@@ -1454,7 +1454,7 @@ Override this method in a derived class if you want to customize the drawing of 
 
 Called by the framework to draw the keytip for the ribbon element.
 
-```
+```cpp
 virtual void OnDrawKeyTip(
     CDC* pDC,
     const CRect& rect,
@@ -1502,7 +1502,7 @@ Always returns TRUE to indicate the image was drawn.
 
 Called by the framework to draw the ribbon element in a commands list box.
 
-```
+```cpp
 virtual void OnDrawOnList(
     CDC* pDC,
     CString strText,
@@ -1601,7 +1601,7 @@ Override this method if you want the ribbon element to process a shortcut key.
 
 Called by the framework when the layout changes direction.
 
-```
+```cpp
 virtual void OnRTLChanged(BOOL bIsRTL);
 ```
 
@@ -1618,7 +1618,7 @@ By default this method does nothing. Override this method to adjust the ribbon e
 
 Called by the framework when a ribbon element receives or loses the input focus.
 
-```
+```cpp
 virtual void OnSetFocus(BOOL B);
 ```
 
@@ -1630,7 +1630,7 @@ Override this method in a derived class if you want your application to handle a
 
 Called by the framework to show or hide the ribbon element.
 
-```
+```cpp
 virtual void OnShow(BOOL bShow);
 ```
 
@@ -1647,7 +1647,7 @@ By default this method does nothing. Override this method to show or hide the ri
 
 Called by the framework before the ribbon element shows a pop-up menu.
 
-```
+```cpp
 virtual void OnShowPopupMenu();
 ```
 
@@ -1676,7 +1676,7 @@ The close message is only sent if the ribbon element is located on a pop-up menu
 
 Updates the display for the ribbon element.
 
-```
+```cpp
 virtual void Redraw();
 ```
 
@@ -1714,7 +1714,7 @@ By default this method sets the accessibility data for the ribbon element and al
 
 Sets the display size for the ribbon element.
 
-```
+```cpp
 virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 ```
 
@@ -1766,7 +1766,7 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 
 Sets the description for the ribbon element.
 
-```
+```cpp
 virtual void SetDescription(LPCTSTR lpszText);
 ```
 
@@ -1783,7 +1783,7 @@ The framework displays the new description either on the status bar, or in the t
 
 Sets the command ID of the ribbon element.
 
-```
+```cpp
 virtual void SetID(UINT nID);
 ```
 
@@ -1796,7 +1796,7 @@ virtual void SetID(UINT nID);
 
 Sets the initial display size for the ribbon element.
 
-```
+```cpp
 virtual void SetInitialMode(BOOL bOneRow = FALSE);
 ```
 
@@ -1813,7 +1813,7 @@ The display size of ribbon elements can be compact, intermediate, or large.
 
 Sets the keytips for the ribbon element.
 
-```
+```cpp
 virtual void SetKeys(
     LPCTSTR lpszKeys,
     LPCTSTR lpszMenuKeys=NULL);
@@ -1831,7 +1831,7 @@ virtual void SetKeys(
 
 Sets the original ribbon element for the ribbon element.
 
-```
+```cpp
 virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 ```
 
@@ -1848,7 +1848,7 @@ Ribbon elements that are copied to another container retain a pointer to the ori
 
 Sets the parent category for the ribbon element.
 
-```
+```cpp
 virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ```
 
@@ -1865,7 +1865,7 @@ The tabbed groups in ribbon controls are called categories.
 
 Sets the parent menu container for the ribbon element.
 
-```
+```cpp
 virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 ```
 
@@ -1880,7 +1880,7 @@ virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 
 Sets the parent ribbon bar for the ribbon element.
 
-```
+```cpp
 virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 ```
 
@@ -1910,7 +1910,7 @@ void SetRect(CRect rect);
 
 Sets the text and keytip for the ribbon element.
 
-```
+```cpp
 virtual void SetText(LPCTSTR lpszText);
 ```
 
@@ -1938,7 +1938,7 @@ SetText(_T("Line Numbers\nln"))
 
 Sets the text for the ribbon element to display on the right.
 
-```
+```cpp
 virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 ```
 
@@ -1953,7 +1953,7 @@ virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 
 Sets the tooltip text for the ribbon element.
 
-```
+```cpp
 virtual void SetToolTipText(LPCTSTR lpszText);
 ```
 
@@ -1981,7 +1981,7 @@ void SetVisible(BOOL bIsVisible);
 
 Stretches the width of the ribbon element.
 
-```
+```cpp
 virtual void StretchHorizontally();
 ```
 
@@ -2019,7 +2019,7 @@ Override this method to change the display height of the ribbon element to the s
 
 Updates the tooltip text by using the command resource for the ribbon element.
 
-```
+```cpp
 virtual void UpdateTooltipInfo();
 ```
 

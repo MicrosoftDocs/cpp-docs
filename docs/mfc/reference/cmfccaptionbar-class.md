@@ -277,7 +277,7 @@ COLORREF m_clrBarText
 
 Called by the framework to fill the background of the caption bar.
 
-```
+```cpp
 virtual void OnDrawBackground(
     CDC* pDC,
     CRect rect);
@@ -301,7 +301,7 @@ Override this method in a `CMFCCaptionBar` derived class to customize the appear
 
 Called by the framework to draw the border of the caption bar.
 
-```
+```cpp
 virtual void OnDrawBorder(
     CDC* pDC,
     CRect rect);
@@ -325,7 +325,7 @@ Override this method in a `CMFCCaptionBar` derived class to customize the appear
 
 Called by the framework to draw the caption bar button.
 
-```
+```cpp
 virtual void OnDrawButton(
     CDC* pDC,
     CRect rect,
@@ -355,7 +355,7 @@ Override this method in a `CMFCCaptionBar` derived class to customize the appear
 
 Called by the framework to draw the caption bar image.
 
-```
+```cpp
 virtual void OnDrawImage(
     CDC* pDC,
     CRect rect);
@@ -377,7 +377,7 @@ Override this method in a `CMFCCaptionBar` derived class to customize the image 
 
 Called by the framework to draw the caption bar text.
 
-```
+```cpp
 virtual void OnDrawText(
     CDC* pDC,
     CRect rect,

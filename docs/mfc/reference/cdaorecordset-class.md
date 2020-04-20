@@ -165,7 +165,7 @@ For related information, see the topic "Recordset Object" in DAO Help.
 
 Call this member function to add a new record to a table-type or dynaset-type recordset.
 
-```
+```cpp
 virtual void AddNew();
 ```
 
@@ -239,7 +239,7 @@ For related information, see the topic "Bookmarkable Property" in DAO Help.
 
 The `CancelUpdate` member function cancels any pending updates due to an [Edit](#edit) or [AddNew](#addnew) operation.
 
-```
+```cpp
 virtual void CancelUpdate();
 ```
 
@@ -352,7 +352,7 @@ Pass NULL to your recordset constructor to have a `CDaoDatabase` object construc
 
 Closing a `CDaoRecordset` object removes it from the collection of open recordsets in the associated database.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -370,7 +370,7 @@ For related information, see the topic "Close Method" in DAO Help.
 
 Call this member function to delete the current record in an open dynaset-type or table-type recordset object.
 
-```
+```cpp
 virtual void Delete();
 ```
 
@@ -393,7 +393,7 @@ For related information, see the topics "AddNew Method", "Edit Method", "Delete 
 
 The framework calls this member function to automatically exchange data between the field data members of your recordset object and the corresponding columns of the current record on the data source.
 
-```
+```cpp
 virtual void DoFieldExchange(CDaoFieldExchange* pFX);
 ```
 
@@ -416,7 +416,7 @@ When you declare your derived recordset class with ClassWizard, the wizard write
 
 Call this member function to allow changes to the current record.
 
-```
+```cpp
 virtual void Edit();
 ```
 
@@ -981,7 +981,7 @@ For related information, see the topic "Attributes Property" in DAO Help.
 
 Call this member function to retrieve data in a recordset.
 
-```
+```cpp
 virtual void GetFieldValue(
     LPCTSTR lpszName,
     COleVariant& varValue);
@@ -1602,7 +1602,7 @@ For related information, see the topic "Sort Property" in DAO Help.
 
 Call this member function to position the recordset *lRows* records from the current record.
 
-```
+```cpp
 virtual void Move(long lRows);
 ```
 
@@ -1744,7 +1744,7 @@ For related information, see the topics "Move Method" and "MoveFirst, MoveLast, 
 
 You must call this member function to retrieve the records for the recordset.
 
-```
+```cpp
 virtual void Open(
     int nOpenType = AFX_DAO_USE_DEFAULT_TYPE,
     LPCTSTR lpszSQL = NULL,
@@ -1867,7 +1867,7 @@ For related information, see the topic "OpenRecordset Method" in DAO Help.
 
 Call this member function to rebuild (refresh) a recordset.
 
-```
+```cpp
 virtual void Requery();
 ```
 
@@ -2167,7 +2167,7 @@ will set only `outputColumn` fields to NULL; **param** fields will be unaffected
 
 Call this member function to set the value of a field, either by ordinal position or by changing the value of the string.
 
-```
+```cpp
 virtual void SetFieldValue(
     LPCTSTR lpszName,
     const COleVariant& varValue);
@@ -2259,7 +2259,7 @@ When working with ODBC data sources, the locking mode is always optimistic.
 
 Call this member function to set the value of a parameter in the recordset at run time.
 
-```
+```cpp
 virtual void SetParamValue(
     int nIndex,
     const COleVariant& varValue);
@@ -2335,7 +2335,7 @@ For related information, see the topic "PercentPosition Property" in DAO Help.
 
 Call this member function after a call to the `AddNew` or `Edit` member function.
 
-```
+```cpp
 virtual void Update();
 ```
 

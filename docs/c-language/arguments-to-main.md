@@ -9,7 +9,7 @@ ms.assetid: 39824fef-05ad-461d-ae82-49447dda8060
 
 In Microsoft C, the function called at program startup is called **main**. There is no prototype declared for **main**, and it can be defined with zero, two, or three parameters:
 
-```
+```cpp
 int main( void )
 int main( int argc, char *argv[] )
 int main( int argc, char *argv[], char *envp[] )

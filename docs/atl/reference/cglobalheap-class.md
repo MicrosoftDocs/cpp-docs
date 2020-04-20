@@ -54,7 +54,7 @@ See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).
 
 Call this method to allocate a block of memory.
 
-```
+```cpp
 virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```
 
@@ -77,7 +77,7 @@ Implemented using [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalallo
 
 Call this method to free a block of memory allocated by this memory manager.
 
-```
+```cpp
 virtual void Free(void* p) throw();
 ```
 
@@ -115,7 +115,7 @@ Implemented using [GlobalSize](/windows/win32/api/winbase/nf-winbase-globalsize)
 
 Call this method to reallocate memory allocated by this memory manager.
 
-```
+```cpp
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ```
 

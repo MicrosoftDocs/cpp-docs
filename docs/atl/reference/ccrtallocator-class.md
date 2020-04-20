@@ -37,7 +37,7 @@ This class is used by [CHeapPtr](../../atl/reference/cheapptr-class.md) to provi
 
 Call this static function to allocate memory.
 
-```
+```cpp
 static __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```
 
@@ -58,7 +58,7 @@ Allocates memory. See [malloc](../../c-runtime-library/reference/malloc.md) for 
 
 Call this static function to free memory.
 
-```
+```cpp
 static void Free(void* p) throw();
 ```
 
@@ -75,7 +75,7 @@ Frees the allocated memory. See [free](../../c-runtime-library/reference/free.md
 
 Call this static function to reallocate memory.
 
-```
+```cpp
 static __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ```
 

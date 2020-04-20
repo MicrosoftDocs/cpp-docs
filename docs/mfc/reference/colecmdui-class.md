@@ -79,7 +79,7 @@ The `COleCmdUI` object provides a programmatic interface for updating DocObject 
 
 Call this function to set the command flag of the `COleCmdUI` object to OLECOMDF_ENABLED, which tells the interface the command is available and enabled, or to clear the command flag.
 
-```
+```cpp
 virtual void Enable(BOOL bOn);
 ```
 
@@ -92,7 +92,7 @@ Indicates whether the command associated with the `COleCmdUI` object should be e
 
 Call this function to set the state of an on/off toggle command.
 
-```
+```cpp
 virtual void SetCheck(int nCheck);
 ```
 
@@ -111,7 +111,7 @@ A value determining the state to set an on/off toggle command. Values are:
 
 Call this function to return a text name or status string for a command.
 
-```
+```cpp
 virtual void SetText(LPCTSTR lpszText);
 ```
 

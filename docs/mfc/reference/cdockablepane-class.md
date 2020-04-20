@@ -349,7 +349,7 @@ After you construct a dockable pane object, call [CDockablePane::Create](#create
 
 Converts one or more dockable panes to MDI tabbed documents.
 
-```
+```cpp
 virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```
 
@@ -403,7 +403,7 @@ Override this method in a derived class to implement custom autohide effects.
 
 Copies the state of a dockable pane.
 
-```
+```cpp
 virtual void CopyState(CDockablePane* pOrgBar);
 ```
 
@@ -723,7 +723,7 @@ Call this method to dock one pane to another pane with the alignment specified b
 
 Draws the caption (also called the gripper) of a docking pane.
 
-```
+```cpp
 virtual void DrawCaption(
     CDC* pDC,
     CRect rectCaption);
@@ -766,7 +766,7 @@ Call this method with *bEnable* set to FALSE to disable this feature for a parti
 
 Shows or hides the caption (also called the gripper).
 
-```
+```cpp
 virtual void EnableGripper(BOOL bEnable);
 ```
 
@@ -910,7 +910,7 @@ This method is used when the container adjusts its layout.
 
 Retrieves the tab area for the pane.
 
-```
+```cpp
 virtual void GetTabArea(
     CRect& rectTabAreaTop,
     CRect& rectTabAreaBottom) const;
@@ -1194,7 +1194,7 @@ For a faster animation effect, decrease this value. For a slower animation effec
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-```
+```cpp
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```
 
@@ -1208,7 +1208,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 Called by the framework when a floating docking bar docks at a frame window.
 
-```
+```cpp
 virtual void OnAfterDockFromMiniFrame();
 ```
 
@@ -1220,7 +1220,7 @@ By default, this method does nothing.
 
 The framework calls this method before it changes the parent of the pane.
 
-```
+```cpp
 virtual void OnBeforeChangeParent(
     CWnd* pWndNewParent,
     BOOL bDelay = FALSE);
@@ -1270,7 +1270,7 @@ This method is called by the framework when a pane is about to float. You can ov
 
 Called when the user presses a caption button other than the AFX_HTCLOSE and AFX_HTMAXBUTTON buttons.
 
-```
+```cpp
 virtual void OnPressButtons(UINT nHit);
 ```
 
@@ -1287,7 +1287,7 @@ If you add a custom button to the caption of a dockable pane, override this meth
 
 Called by the framework to animate the pane when it is in autohide mode.
 
-```
+```cpp
 virtual void OnSlide(BOOL bSlideOut);
 ```
 
@@ -1469,7 +1469,7 @@ Then, call this method with the pointer to its runtime class information.
 
 Shows or hides a pane.
 
-```
+```cpp
 virtual void ShowPane(
     BOOL bShow,
     BOOL bDelay,
@@ -1495,7 +1495,7 @@ Call this method instead of the [CWnd::ShowWindow](../../mfc/reference/cwnd-clas
 
 Animates a pane that is in autohide mode.
 
-```
+```cpp
 virtual void Slide(
     BOOL bSlideOut,
     BOOL bUseTimer = TRUE);
@@ -1519,7 +1519,7 @@ This method uses the `CDockablePane::m_nSlideDefaultTimeOut` value to determine 
 
 Toggles the pane between always visible and auto-hide mode.
 
-```
+```cpp
 virtual void ToggleAutoHide();
 ```
 
@@ -1531,7 +1531,7 @@ This method toggles auto-hide mode for the pane by calling [CDockablePane::SetAu
 
 Undocks a pane from either the main frame window or a miniframe window container.
 
-```
+```cpp
 virtual void UndockPane(BOOL bDelay = FALSE);
 ```
 

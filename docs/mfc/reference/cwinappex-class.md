@@ -798,7 +798,7 @@ Nonzero if the key is in the registry; otherwise 0.
 
 The framework calls this method after it loads the state of the application from the registry.
 
-```
+```cpp
 virtual void LoadCustomState();
 ```
 
@@ -901,7 +901,7 @@ The `m_bForceImageReset` data member is a protected variable.
 
 The framework calls this method when the user requests context help for the **Customization** dialog box.
 
-```
+```cpp
 virtual void OnAppContextHelp(
     CWnd* pWndControl,
     const DWORD dwHelpIDArray[]);
@@ -923,7 +923,7 @@ This method is currently reserved for future use. The default implementation doe
 
 The framework calls this method when a frame window is processing WM_CLOSE.
 
-```
+```cpp
 virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
 ```
 
@@ -980,7 +980,7 @@ virtual BOOL OnWorkspaceIdle(CWnd*);
 
 The framework calls this method immediately before it loads the state of the application from the registry.
 
-```
+```cpp
 virtual void PreLoadState();
 ```
 
@@ -992,7 +992,7 @@ Override this method if you want to do any processing immediately before the fra
 
 The framework calls this method immediately before it saves the application state.
 
-```
+```cpp
 virtual void PreSaveState();
 ```
 
@@ -1025,7 +1025,7 @@ Use the function [CWinAppEx::StoreWindowPlacement](#storewindowplacement) to wri
 
 The framework calls this method after it saves the state of the application to the registry.
 
-```
+```cpp
 virtual void SaveCustomState();
 ```
 

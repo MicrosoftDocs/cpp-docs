@@ -267,7 +267,7 @@ virtual int OnCompareItems(
 
 The framework calls this method when it must convert the date associated with an object into a string.
 
-```
+```cpp
 virtual void OnFormatFileDate(
     const CTime& tmFile,
     CString& str);
@@ -289,7 +289,7 @@ When a [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md)
 
 The framework calls this method when it converts the size of an object to a string.
 
-```
+```cpp
 virtual void OnFormatFileSize(
     long lFileSize,
     CString& str);
@@ -371,7 +371,7 @@ By default, this method relies on the *pItem* parameter to determine which item 
 
 The framework calls this method when it sets the names of the columns.
 
-```
+```cpp
 virtual void OnSetColumns();
 ```
 

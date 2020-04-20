@@ -292,7 +292,7 @@ For more information, see [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-rel
 
 Renders data that is on the Clipboard, and then lets you paste data from the Clipboard after your application shuts down.
 
-```
+```cpp
 static void PASCAL FlushClipboard();
 ```
 

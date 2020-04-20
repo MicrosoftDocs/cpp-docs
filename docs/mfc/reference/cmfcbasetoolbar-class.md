@@ -67,7 +67,7 @@ The docking mode.
 
 Returns the minimum size of a toolbar.
 
-```
+```cpp
 virtual void GetMinSize(CSize& size) const;
 ```
 
@@ -80,7 +80,7 @@ virtual void GetMinSize(CSize& size) const;
 
 Called by the framework after the pane's parent changes.
 
-```
+```cpp
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```
 

@@ -152,7 +152,7 @@ If *bStretch* is TRUE, stretch the dimension along the orientation provided by *
 
 The framework calls this function to calculate the client area of the control bar.
 
-```
+```cpp
 virtual void CalcInsideRect(
     CRect& rect,
     BOOL bHorz) const;
@@ -184,7 +184,7 @@ CControlBar();
 
 Called by the framework to render the borders and gripper bar of the control bar.
 
-```
+```cpp
 virtual void DoPaint(CDC* pDC);
 ```
 
@@ -203,7 +203,7 @@ Another customization method is to override the `DrawBorders` and `DrawGripper` 
 
 Called by the framework to render the borders of the control bar.
 
-```
+```cpp
 virtual void DrawBorders(
     CDC* pDC,
     CRect& rect);
@@ -225,7 +225,7 @@ Override this function to customize the appearance of the control bar borders.
 
 Called by the framework to render the gripper of the control bar.
 
-```
+```cpp
 virtual void DrawGripper(
     CDC* pDC,
     const CRect& rect);
@@ -380,7 +380,7 @@ CWnd* m_pInPlaceOwner;
 
 This member function is called by the framework to update the status of the toolbar or status bar.
 
-```
+```cpp
 virtual void OnUpdateCmdUI(
     CFrameWnd* pTarget,
     BOOL bDisableIfNoHndler) = 0;

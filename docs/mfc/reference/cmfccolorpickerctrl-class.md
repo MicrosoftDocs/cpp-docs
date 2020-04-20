@@ -106,7 +106,7 @@ CMFCColorPickerCtrl();
 
 Called by the framework before a cursor that points to the selected color is displayed.
 
-```
+```cpp
 virtual void DrawCursor(
     CDC* pDC,
     const CRect& rect);

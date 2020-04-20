@@ -109,7 +109,7 @@ The following example demonstrates how to configure a `CMFCRibbonPanel` object b
 
 Appends the specified ribbon element to the array of ribbon elements that is contained in the ribbon panel.
 
-```
+```cpp
 virtual void Add(CMFCRibbonBaseElement* pElem);
 ```
 
@@ -124,7 +124,7 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 
 Adds a separator to the ribbon panel.
 
-```
+```cpp
 virtual void AddSeparator();
 ```
 
@@ -515,7 +515,7 @@ TRUE if the ribbon panel contains the specified ribbon element; otherwise FALSE.
 
 Sets the highlight color for the selected ribbon panel and for the ribbon element specified by the point.
 
-```
+```cpp
 virtual void Highlight(
 BOOL bHighlight,
 CPoint point);
@@ -727,7 +727,7 @@ virtual BOOL OnKey(UINT nChar);
 
 Recalculates the width of each display layout configuration for the ribbon panel.
 
-```
+```cpp
 virtual void RecalcWidths(
 CDC* pDC,
 int nHeight);

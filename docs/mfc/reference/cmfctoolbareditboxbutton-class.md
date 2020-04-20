@@ -147,7 +147,7 @@ The default width of the control is 150 pixels.
 
 Copies the properties of another toolbar button to the current button.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 
@@ -248,7 +248,7 @@ The framework uses the resource ID to create the shortcut menu when the user rig
 
 Retrieves the bounding rectangle of the edit part of the edit box button.
 
-```
+```cpp
 virtual void GetEditBorder(CRect& rectBorder);
 ```
 
@@ -370,7 +370,7 @@ This method extends the base class implementation ( [CMFCToolBarButton::NotifyCo
 
 Called by the framework when the button is added to a **Customize** dialog box.
 
-```
+```cpp
 virtual void OnAddToCustomizePage();
 ```
 
@@ -384,7 +384,7 @@ For more information about the **Customize** dialog box, see [CMFCToolBarsCustom
 
 Called by the framework when the button is inserted into a new toolbar.
 
-```
+```cpp
 virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```
 
@@ -455,7 +455,7 @@ For more information about global options that are available to your application
 
 Called by the framework when the global font has changed.
 
-```
+```cpp
 virtual void OnGlobalFontsChanged();
 ```
 
@@ -469,7 +469,7 @@ For more information about global options that are available to your application
 
 Called by the framework when the parent toolbar moves.
 
-```
+```cpp
 virtual void OnMove();
 ```
 
@@ -481,7 +481,7 @@ This method overrides the default class implementation ( [CMFCToolBarButton::OnM
 
 Called by the framework when the button becomes visible or invisible.
 
-```
+```cpp
 virtual void OnShow(BOOL bShow);
 ```
 
@@ -498,7 +498,7 @@ This method extends the base class implementation ( [CMFCToolBarButton::OnShow](
 
 Called by the framework when the parent toolbar changes its size or position and this change causes the button to change size.
 
-```
+```cpp
 virtual void OnSize(int iSize);
 ```
 
@@ -549,7 +549,7 @@ This method extends the base class implementation ( [CMFCToolBarButton::OnUpdate
 
 Sets the text in the text box control.
 
-```
+```cpp
 virtual void SetContents(const CString& sContents);
 ```
 
@@ -601,7 +601,7 @@ The framework uses the resource ID to create the shortcut menu when the user rig
 
 Specifies the flat style appearance of edit box buttons in the application.
 
-```
+```cpp
 static void __stdcall SetFlatMode(BOOL bFlat = TRUE);
 ```
 
@@ -618,7 +618,7 @@ The default flat style for edit box buttons is TRUE. Use the [CMFCToolBarEditBox
 
 Specifies the style of a toolbar edit box control.
 
-```
+```cpp
 virtual void SetStyle(UINT nStyle);
 ```
 

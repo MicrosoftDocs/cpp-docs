@@ -262,7 +262,7 @@ TRUE if successful; otherwise FALSE.
 
 Flags an auto-hide bar as active.
 
-```
+```cpp
 virtual void SetActiveInGroup(BOOL bActive);
 ```
 

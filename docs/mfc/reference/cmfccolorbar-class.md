@@ -159,7 +159,7 @@ The following example demonstrates how to configure a color bar by using various
 
 Adjusts the positions of the color buttons on the color bar control.
 
-```
+```cpp
 virtual void AdjustLocations();
 ```
 
@@ -654,7 +654,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 Called by the framework to enable or disable a user-interface item of a color bar control before the item is displayed.
 
-```
+```cpp
 virtual void OnUpdateCmdUI(
     CFrameWnd* pTarget,
     BOOL bDisableIfNoHndler);
@@ -700,7 +700,7 @@ TRUE if the user selected a color; FALSE if the user canceled the color dialog b
 
 Completely redraws the color bar control.
 
-```
+```cpp
 virtual void Rebuild();
 ```
 
@@ -739,7 +739,7 @@ void SetColor(COLORREF color);
 
 Sets a new name for a specified color.
 
-```
+```cpp
 static void SetColorName(
     COLORREF color,
     const CString& strName);
@@ -852,7 +852,7 @@ By default, the [CMFCColorBar::CMFCColorBar](#cmfccolorbar) constructor sets the
 
 Requests the frame window that owns the color bar control to update the message line in the status bar.
 
-```
+```cpp
 virtual void ShowCommandMessageString(UINT uiCmdId);
 ```
 

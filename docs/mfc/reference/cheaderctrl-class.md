@@ -299,7 +299,7 @@ Nonzero if successful; otherwise 0.
 
 Called by the framework when a visual aspect of an owner-draw header control changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 

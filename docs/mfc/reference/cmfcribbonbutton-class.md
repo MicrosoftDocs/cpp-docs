@@ -160,7 +160,7 @@ virtual BOOL CanBeStretched();
 
 ## <a name="cleanupsizes"></a> CMFCRibbonButton::CleanUpSizes
 
-```
+```cpp
 virtual void CleanUpSizes();
 ```
 
@@ -168,7 +168,7 @@ virtual void CleanUpSizes();
 
 ## <a name="closepopupmenu"></a> CMFCRibbonButton::ClosePopupMenu
 
-```
+```cpp
 virtual void ClosePopupMenu();
 ```
 
@@ -238,7 +238,7 @@ CSize DrawBottomText(
 
 ## <a name="drawimage"></a> CMFCRibbonButton::DrawImage
 
-```
+```cpp
 virtual void DrawImage(
     CDC* pDC,
     RibbonImageType type,
@@ -618,7 +618,7 @@ BOOL IsSingleLineText() const;
 
 ## <a name="oncalctextsize"></a> CMFCRibbonButton::OnCalcTextSize
 
-```
+```cpp
 virtual void OnCalcTextSize(CDC* pDC);
 ```
 
@@ -632,7 +632,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 
 Called by the framework when the user clicks the button.
 
-```
+```cpp
 virtual void OnClick(CPoint point);
 ```
 
@@ -647,7 +647,7 @@ Override this method in a derived class if you want to handle this event.
 
 ## <a name="ondraw"></a> CMFCRibbonButton::OnDraw
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 
@@ -659,7 +659,7 @@ virtual void OnDraw(CDC* pDC);
 
 ## <a name="ondrawborder"></a> CMFCRibbonButton::OnDrawBorder
 
-```
+```cpp
 virtual void OnDrawBorder(CDC* pDC);
 ```
 
@@ -764,7 +764,7 @@ void SetDefaultCommand(BOOL bSet=TRUE);
 
 ## <a name="setdescription"></a> CMFCRibbonButton::SetDescription
 
-```
+```cpp
 virtual void SetDescription(LPCTSTR lpszText);
 ```
 
@@ -828,7 +828,7 @@ When the application assigns the menu to the button, the button displays an arro
 
 ## <a name="setparentcategory"></a> CMFCRibbonButton::SetParentCategory
 
-```
+```cpp
 virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ```
 
@@ -853,7 +853,7 @@ void SetRightAlignMenu(BOOL bSet=TRUE);
 
 ## <a name="settext"></a> CMFCRibbonButton::SetText
 
-```
+```cpp
 virtual void SetText(LPCTSTR lpszText);
 ```
 

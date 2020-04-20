@@ -47,7 +47,7 @@ This topic assumes you have previously completed [How to: Create the User Contro
 
 1. Add the following method definitions to `UserControl1` (we will create the ID of the MFC control in the next step):
 
-    ```
+    ```cpp
     public void Initialize (ICommandSource cmdSrc)
     {
        m_CmdSrc = cmdSrc;

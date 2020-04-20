@@ -157,7 +157,7 @@ The background color of the edit box *pEdit*.
 
 The framework calls this method when it fills area around a menu item image.
 
-```
+```cpp
 virtual void OnFillMenuImageRect(
     CDC* pDC,
     CMFCToolBarButton* pButton,

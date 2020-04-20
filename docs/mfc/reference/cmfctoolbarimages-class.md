@@ -197,7 +197,7 @@ The number of toolbar images that the `CMFCToolBarImages`  object maintains afte
 
 ## <a name="cleanup"></a> CMFCToolBarImages::CleanUp
 
-```
+```cpp
 static void __stdcall CleanUp();
 ```
 
@@ -389,7 +389,7 @@ BOOL DrawEx(
 
 ## <a name="enablertl"></a> CMFCToolBarImages::EnableRTL
 
-```
+```cpp
 static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
 ```
 
@@ -433,7 +433,7 @@ A handle to the extracted icon, or NULL if *nIndex* is out of range.
 
 Fills a rectangle with the toolbar background colors.
 
-```
+```cpp
 static void FillDitheredRect(
     CDC* pDC,
     const CRect& rect);
@@ -1033,7 +1033,7 @@ void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
 
 Sets the alpha channel (opacity) value that is used for disabled images.
 
-```
+```cpp
 static void SetDisabledImageAlpha(BYTE nValue);
 ```
 
@@ -1048,7 +1048,7 @@ Use this method to set a custom alpha value for disabled images. The default val
 
 ## <a name="setfadedimagealpha"></a> CMFCToolBarImages::SetFadedImageAlpha
 
-```
+```cpp
 static void __stdcall SetFadedImageAlpha(BYTE nValue);
 ```
 

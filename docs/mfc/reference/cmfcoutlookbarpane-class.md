@@ -328,7 +328,7 @@ TRUE if button's borders are shaded; otherwise FALSE.
 
 Removes all the buttons from the Outlook bar pane.
 
-```
+```cpp
 virtual void RemoveAllButtons();
 ```
 

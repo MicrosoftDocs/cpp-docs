@@ -67,7 +67,7 @@ See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).
 
 Allocates a block of memory from the heap object.
 
-```
+```cpp
 virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```
 
@@ -179,7 +179,7 @@ Returns the handle to the heap to which the object was previously attached.
 
 Frees memory previously allocated from the heap by [CWin32Heap::Allocate](#allocate) or [CWin32Heap::Reallocate](#reallocate).
 
-```
+```cpp
 virtual void Free(void* p) throw();
 ```
 
@@ -229,7 +229,7 @@ A variable used to store a handle to the heap object.
 
 Reallocates a block of memory from the heap object.
 
-```
+```cpp
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ```
 

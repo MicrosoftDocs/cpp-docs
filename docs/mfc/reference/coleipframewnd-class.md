@@ -98,7 +98,7 @@ The default implementation does nothing. Override this function to perform any s
 
 The framework calls the `RepositionFrame` member function to lay out control bars and reposition the in-place editing window so all of it is visible.
 
-```
+```cpp
 virtual void RepositionFrame(
     LPCRECT lpPosRect,
     LPCRECT lpClipRect);

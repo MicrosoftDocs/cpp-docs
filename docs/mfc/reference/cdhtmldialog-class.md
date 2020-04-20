@@ -983,7 +983,7 @@ Data to send with the HTTP POST transaction. For example, the POST transaction i
 
 Called by the framework to cause an event to fire before a navigation occurs.
 
-```
+```cpp
 virtual void OnBeforeNavigate(
     LPDISPATCH pDisp,
     LPCTSTR szUrl);
@@ -1001,7 +1001,7 @@ A pointer to a string containing the URL to navigate to.
 
 Called by the framework to notify an application when a document has achieved the READYSTATE_COMPLETE state.
 
-```
+```cpp
 virtual void OnDocumentComplete(
     LPDISPATCH pDisp,
     LPCTSTR szUrl);
@@ -1081,7 +1081,7 @@ Windows calls the `OnInitDialog` function through the standard global dialog-box
 
 Called by the framework after navigation to the specified URL is completed.
 
-```
+```cpp
 virtual void OnNavigateComplete(
     LPDISPATCH pDisp,
     LPCTSTR szUrl);

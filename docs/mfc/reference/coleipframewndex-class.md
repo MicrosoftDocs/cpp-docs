@@ -123,7 +123,7 @@ BOOL AddPane(
 
 ## <a name="adjustdockinglayout"></a> COleIPFrameWndEx::AdjustDockingLayout
 
-```
+```cpp
 virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```
 
@@ -504,7 +504,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 
 Called by the framework when an active pop-up menu processes a WM_DESTROY message.
 
-```
+```cpp
 virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```
 
@@ -572,7 +572,7 @@ Override this method if you want to customize image drawing for the menu items t
 
 Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)object processes a WM_PAINT message.
 
-```
+```cpp
 virtual void OnDrawMenuLogo(
     CDC* pDC,
     CMFCPopupMenu* pMenu,
@@ -636,7 +636,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 
 ## <a name="onsetpreviewmode"></a> COleIPFrameWndEx::OnSetPreviewMode
 
-```
+```cpp
 virtual void OnSetPreviewMode(
     BOOL bPreview,
     CPrintPreviewState* pState);
@@ -771,7 +771,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ## <a name="recalclayout"></a> COleIPFrameWndEx::RecalcLayout
 
-```
+```cpp
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
 
@@ -866,7 +866,7 @@ void ShowPane(
 
 Called by the framework to initiate the WinHelp application or context help.
 
-```
+```cpp
 virtual void WinHelp(
     DWORD dwData,
     UINT nCmd = HELP_CONTEXT);

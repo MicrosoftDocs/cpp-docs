@@ -360,7 +360,7 @@ Nonzero if successful; otherwise 0.
 
 Called automatically by the `CWinApp` idle-time handler, `DeleteTempMap` deletes any temporary `CImageList` objects created by [FromHandle](#fromhandle), but does not destroy any handles ( `hImageList`) temporarily associated with the `ImageList` objects.
 
-```
+```cpp
 static void PASCAL DeleteTempMap();
 ```
 
@@ -682,7 +682,7 @@ An overlay image is an image that is drawn on top of the primary image, specifie
 
 Call this function to end a drag operation.
 
-```
+```cpp
 static void PASCAL EndDrag();
 ```
 

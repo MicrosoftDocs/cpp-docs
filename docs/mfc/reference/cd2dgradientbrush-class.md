@@ -103,7 +103,7 @@ Indicates that the object will be destroyed by owner (pParentTarget).
 
 Destroys a CD2DGradientBrush object.
 
-```
+```cpp
 virtual void Destroy();
 ```
 

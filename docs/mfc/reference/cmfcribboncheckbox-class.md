@@ -171,7 +171,7 @@ Returns TRUE if there is a tooltip image associated with the check box, or FALSE
 
 Called by the framework to draw the check box using a specified device context.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 
@@ -210,7 +210,7 @@ If not overridden, returns FALSE.
 
 Called by the framework to draw the check box in a commands list box.
 
-```
+```cpp
 virtual void OnDrawOnList(
     CDC* pDC,
     CString strText,

@@ -218,7 +218,7 @@ This method adds a pointer to the specified property to the end of the list of p
 
 Redraws the property grid control and its properties.
 
-```
+```cpp
 virtual void AdjustLayout();
 ```
 
@@ -242,7 +242,7 @@ void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 
 Closes the color selection dialog box.
 
-```
+```cpp
 virtual void CloseColorPopup();
 ```
 
@@ -933,7 +933,7 @@ This method sets the value of the variable that the *pnArea* parameter points to
 
 Called by the framework to initialize a property grid control.
 
-```
+```cpp
 virtual void Init();
 ```
 
@@ -943,7 +943,7 @@ virtual void Init();
 
 Initializes the internal [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) object that the framework uses to display the current property grid control.
 
-```
+```cpp
 virtual void InitHeader();
 ```
 
@@ -1093,7 +1093,7 @@ void MarkModifiedProperties(
 
 Called by the framework when the current selection is changed.
 
-```
+```cpp
 virtual void OnChangeSelection(
     CMFCPropertyGridProperty* pNewSel,
     CMFCPropertyGridProperty* pOldSel);
@@ -1114,7 +1114,7 @@ The default implementation of this method does nothing.
 
 Called by the framework when a property button is clicked.
 
-```
+```cpp
 virtual void OnClickButton(CPoint point);
 ```
 
@@ -1131,7 +1131,7 @@ By default, this method updates the current property value.
 
 Called by the framework to draw a border around a property grid control.
 
-```
+```cpp
 virtual void OnDrawBorder(CDC* pDC);
 ```
 
@@ -1146,7 +1146,7 @@ virtual void OnDrawBorder(CDC* pDC);
 
 Called by the framework to draw the description area and display the description text.
 
-```
+```cpp
 virtual void OnDrawDescription(
     CDC* pDC,
     CRect rect);
@@ -1168,7 +1168,7 @@ Use the [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) me
 
 Called by the framework to display the list of properties in the property grid control.
 
-```
+```cpp
 virtual void OnDrawList(CDC* pDC);
 ```
 
@@ -1207,7 +1207,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 Called by the framework when the value of a property is changed.
 
-```
+```cpp
 virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;
 ```
 
@@ -1450,7 +1450,7 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
 
 Sets the color value of the currently selected color property.
 
-```
+```cpp
 virtual void UpdateColor(COLORREF color);
 ```
 

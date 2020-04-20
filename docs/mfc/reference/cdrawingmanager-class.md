@@ -786,7 +786,7 @@ If *nDepth* is set to 0, this method exits and returns NULL. If *nDepth* is less
 
 Converts a color from a red, green, and blue (RGB) representation to a hue, saturation, and lightness (HSL) representation.
 
-```
+```cpp
 static void __stdcall RGBtoHSL(
     COLORREF rgb,
     double* H,
@@ -814,7 +814,7 @@ The returned value for *H* is represented as a fraction between 0 and 1 where bo
 
 Converts a color from a RGB representation to a HSV representation.
 
-```
+```cpp
 static void __stdcall RGBtoHSV(
     COLORREF rgb,
     double* H,
@@ -846,7 +846,7 @@ The returned value for *H* is a number between 0 and 360 where both 0 and 360 in
 
 Colors a transparent pixel in a bitmap.
 
-```
+```cpp
 static void __stdcall SetAlphaPixel(
     COLORREF* pBits,
     CRect rect,
@@ -894,7 +894,7 @@ If *bIsRight* is set to TRUE, the pixel to color is measured *x* pixels from the
 
 Changes a single pixel in a bitmap to the specified color.
 
-```
+```cpp
 static void __stdcall SetPixel(
     COLORREF* pBits,
     int cx,

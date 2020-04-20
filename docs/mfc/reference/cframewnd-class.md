@@ -153,7 +153,7 @@ For more information on `CFrameWnd`, see [Frame Windows](../../mfc/frame-windows
 
 Call this member function to activate and restore the frame window so that it is visible and available to the user.
 
-```
+```cpp
 virtual void ActivateFrame(int nCmdShow = -1);
 ```
 
@@ -178,7 +178,7 @@ Override this member function to change how a frame is activated. For example, y
 
 Call this member function to make a frame window modal.
 
-```
+```cpp
 virtual void BeginModalState();
 ```
 
@@ -343,7 +343,7 @@ By default, control bars will be docked to a side of the frame window in the fol
 
 Call this member function to change a frame window from modal to modeless.
 
-```
+```cpp
 virtual void EndModalState();
 ```
 
@@ -533,7 +533,7 @@ Pointer to the status-bar window.
 
 Override this function to provide custom strings for command IDs.
 
-```
+```cpp
 virtual void GetMessageString(
     UINT nID,
     CString& rMessage) const;
@@ -767,7 +767,7 @@ Nonzero if the control bar existed; otherwise 0.
 
 Handles SHIFT+F1 Help for in-place items.
 
-```
+```cpp
 afx_msg void OnContextHelp();
 ```
 
@@ -818,7 +818,7 @@ Override this function to override values passed in the `CCreateContext` object 
 
 This function is called when the system is about to hide the menu bar in the current MFC application.
 
-```
+```cpp
 virtual void OnHideMenuBar();
 ```
 
@@ -830,7 +830,7 @@ This event handler enables your application to perform custom actions when the s
 
 Call this member function to set the application's main frame window into and out of print-preview mode.
 
-```
+```cpp
 virtual void OnSetPreviewMode(
     BOOL bPreview,
     CPrintPreviewState* pState);
@@ -854,7 +854,7 @@ Override this member function to customize the hiding and showing of control bar
 
 This function is called when the system is about to display the menu bar in the current MFC application.
 
-```
+```cpp
 virtual void OnShowMenuBar();
 ```
 
@@ -866,7 +866,7 @@ This event handler enables your application to perform custom actions when the m
 
 Called by the framework when the associated menu is updated.
 
-```
+```cpp
 afx_msg void OnUpdateControlBarMenu(CCmdUI* pCmdUI);
 ```
 
@@ -879,7 +879,7 @@ A pointer to a [CCmdUI](../../mfc/reference/ccmdui-class.md) object representing
 
 Called by the framework when the standard control bars are toggled on or off or when the frame window is resized.
 
-```
+```cpp
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
 
@@ -999,7 +999,7 @@ If a runtime error occurs, this method asserts in Debug mode and raises an excep
 
 Sets the default behavior of the menu in the current MFC application to be either hidden or visible.
 
-```
+```cpp
 virtual void SetMenuBarVisibility(DWORD nStyle);
 ```
 

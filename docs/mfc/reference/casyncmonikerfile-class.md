@@ -91,7 +91,7 @@ For a description of the `IBindHost` interface, see the Windows SDK.
 
 Call this function to close and release all resources.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -194,7 +194,7 @@ The priority at which the asynchronous transfer will take place. One of the stan
 
 An asynchronous moniker calls `OnDataAvailable` to provide data to the client as it becomes available, during asynchronous bind operations.
 
-```
+```cpp
 virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
 ```
 
@@ -224,7 +224,7 @@ The default implementation of this function does nothing. See the following exam
 
 Called by the moniker when resources are low.
 
-```
+```cpp
 virtual void OnLowResource();
 ```
 
@@ -236,7 +236,7 @@ The default implementation calls `GetBinding( )-> Abort( )`.
 
 Called by the moniker repeatedly to indicate the current progress of this bind operation, typically at reasonable intervals during a lengthy operation.
 
-```
+```cpp
 virtual void OnProgress(
     ULONG ulProgress,
     ULONG ulProgressMax,
@@ -278,7 +278,7 @@ Possible values for *ulStatusCode* (and the *szStatusText* for each value) are:
 
 Override this function in your derived classes to perform actions when binding is starting up.
 
-```
+```cpp
 virtual void OnStartBinding();
 ```
 
@@ -290,7 +290,7 @@ This function is called back by the moniker. The default implementation does not
 
 Called by the moniker at the end of the bind operation.
 
-```
+```cpp
 virtual void OnStopBinding(HRESULT hresult, LPCTSTR szError);
 ```
 

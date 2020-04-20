@@ -112,7 +112,7 @@ HRESULT m_hResFinalConstruct;
 
 Retrieves a pointer to the requested interface pointer.
 
-```
+```cpp
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```
 

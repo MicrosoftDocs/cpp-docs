@@ -76,7 +76,7 @@ Registers callback methods with a command source.
 
 ### Syntax
 
-```
+```cpp
 delegate void CommandHandler(  UINT^ cmdID  );
 ```
 
@@ -103,7 +103,7 @@ Registers callback methods with a user interface update command message.
 
 ### Syntax
 
-```
+```cpp
 delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);
 ```
 

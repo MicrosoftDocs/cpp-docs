@@ -115,7 +115,7 @@ For more information about transactions, see the article [Transaction (ODBC)](..
 
 Override `BindParameters` when you need to bind parameters before calling [CDatabase::ExecuteSQL](#executesql).
 
-```
+```cpp
 virtual void BindParameters(HSTMT hstmt);
 ```
 
@@ -200,7 +200,7 @@ This example illustrates using `CDatabase` in a `CDocument`-derived class.
 
 Call this member function if you want to disconnect from a data source.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -403,7 +403,7 @@ Under some circumstances, however, you may need to use the handle directly. For 
 
 The framework calls this member function when directly executing a SQL statement with the `ExecuteSQL` member function.
 
-```
+```cpp
 virtual void OnSetOptions(HSTMT hstmt);
 ```
 

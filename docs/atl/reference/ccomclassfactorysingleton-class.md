@@ -66,7 +66,7 @@ ATL objects normally acquire a class factory by deriving from [CComCoClass](../.
 
 Calls `QueryInterface` through [m_spObj](#m_spobj) to retrieve an interface pointer.
 
-```
+```cpp
 STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```
 

@@ -95,7 +95,7 @@ The following example demonstrates how to retrieve a pointer to a `CMultiPaneFra
 
 ## <a name="addpane"></a> CMultiPaneFrameWnd::AddPane
 
-```
+```cpp
 virtual void AddPane(CBasePane* pWnd);
 ```
 
@@ -121,7 +121,7 @@ virtual BOOL AddRecentPane(CDockablePane* pBar);
 
 ## <a name="adjustlayout"></a> CMultiPaneFrameWnd::AdjustLayout
 
-```
+```cpp
 virtual void AdjustLayout();
 ```
 
@@ -129,7 +129,7 @@ virtual void AdjustLayout();
 
 ## <a name="adjustpaneframes"></a> CMultiPaneFrameWnd::AdjustPaneFrames
 
-```
+```cpp
 virtual void AdjustPaneFrames();
 ```
 
@@ -137,7 +137,7 @@ virtual void AdjustPaneFrames();
 
 ## <a name="calcexpecteddockedrect"></a> CMultiPaneFrameWnd::CalcExpectedDockedRect
 
-```
+```cpp
 virtual void CalcExpectedDockedRect(
     CWnd* pWndToDock,
     CPoint ptMouse,
@@ -182,7 +182,7 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 
 ## <a name="checkgrippervisibility"></a> CMultiPaneFrameWnd::CheckGripperVisibility
 
-```
+```cpp
 virtual void CheckGripperVisibility();
 ```
 
@@ -190,7 +190,7 @@ virtual void CheckGripperVisibility();
 
 ## <a name="closeminiframe"></a> CMultiPaneFrameWnd::CloseMiniFrame
 
-```
+```cpp
 virtual void CloseMiniFrame();
 ```
 
@@ -198,7 +198,7 @@ virtual void CloseMiniFrame();
 
 ## <a name="converttotabbeddocument"></a> CMultiPaneFrameWnd::ConvertToTabbedDocument
 
-```
+```cpp
 virtual void ConvertToTabbedDocument();
 ```
 
@@ -237,7 +237,7 @@ virtual BOOL DockPane(CDockablePane* pDockedBar);
 
 ## <a name="dockrecentpanetomainframe"></a> CMultiPaneFrameWnd::DockRecentPaneToMainFrame
 
-```
+```cpp
 virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
 ```
 
@@ -351,7 +351,7 @@ virtual BOOL LoadState(
 
 ## <a name="ondocktorecentpos"></a> CMultiPaneFrameWnd::OnDockToRecentPos
 
-```
+```cpp
 virtual void OnDockToRecentPos();
 ```
 
@@ -359,7 +359,7 @@ virtual void OnDockToRecentPos();
 
 ## <a name="onkillrolluptimer"></a> CMultiPaneFrameWnd::OnKillRollUpTimer
 
-```
+```cpp
 virtual void OnKillRollUpTimer();
 ```
 
@@ -367,7 +367,7 @@ virtual void OnKillRollUpTimer();
 
 ## <a name="onpanerecalclayout"></a> CMultiPaneFrameWnd::OnPaneRecalcLayout
 
-```
+```cpp
 virtual void OnPaneRecalcLayout();
 ```
 
@@ -375,7 +375,7 @@ virtual void OnPaneRecalcLayout();
 
 ## <a name="onsetrolluptimer"></a> CMultiPaneFrameWnd::OnSetRollUpTimer
 
-```
+```cpp
 virtual void OnSetRollUpTimer();
 ```
 
@@ -383,7 +383,7 @@ virtual void OnSetRollUpTimer();
 
 ## <a name="onshowpane"></a> CMultiPaneFrameWnd::OnShowPane
 
-```
+```cpp
 virtual void OnShowPane(
     CDockablePane* pBar,
     BOOL bShow);
@@ -417,7 +417,7 @@ virtual CBasePane* PaneFromPoint(
 
 ## <a name="removenonvalidpanes"></a> CMultiPaneFrameWnd::RemoveNonValidPanes
 
-```
+```cpp
 virtual void RemoveNonValidPanes();
 ```
 
@@ -425,7 +425,7 @@ virtual void RemoveNonValidPanes();
 
 ## <a name="removepane"></a> CMultiPaneFrameWnd::RemovePane
 
-```
+```cpp
 virtual void RemovePane(
     CBasePane* pBar,
     BOOL bDestroy = FALSE,
@@ -442,7 +442,7 @@ virtual void RemovePane(
 
 ## <a name="replacepane"></a> CMultiPaneFrameWnd::ReplacePane
 
-```
+```cpp
 virtual void ReplacePane(
     CBasePane* pBarOrg,
     CBasePane* pBarReplaceWith);
@@ -474,7 +474,7 @@ virtual BOOL SaveState(
 
 ## <a name="serialize"></a> CMultiPaneFrameWnd::Serialize
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 
@@ -486,7 +486,7 @@ virtual void Serialize(CArchive& ar);
 
 ## <a name="setdockstate"></a> CMultiPaneFrameWnd::SetDockState
 
-```
+```cpp
 virtual void SetDockState(CDockingManager* pDockManager);
 ```
 
@@ -529,7 +529,7 @@ virtual BOOL SetPreDockState(
 
 ## <a name="storerecentdocksiteinfo"></a> CMultiPaneFrameWnd::StoreRecentDockSiteInfo
 
-```
+```cpp
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```
 
@@ -541,7 +541,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 
 ## <a name="storerecenttabrelatedinfo"></a> CMultiPaneFrameWnd::StoreRecentTabRelatedInfo
 
-```
+```cpp
 virtual void StoreRecentTabRelatedInfo(
     CDockablePane* pDockingBar,
     CDockablePane* pTabbedBar);

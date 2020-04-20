@@ -83,7 +83,7 @@ The following example demonstrates how to initialize a `CMFCPopupMenuBar` object
 
 Immediately recalculates the layout of the popup menu bar pane. (Overrides [CPane::AdjustSizeImmediate](../../mfc/reference/cpane-class.md#adjustsizeimmediate).
 
-```
+```cpp
 virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
 ```
 
@@ -117,7 +117,7 @@ Returns TRUE if successful or FALSE if not.
 
 Closes a popup menu button that has been delayed.
 
-```
+```cpp
 virtual void CloseDelayedSubMenu();
 ```
 
@@ -333,7 +333,7 @@ The default value is FALSE.
 
 Restores a delayed menu button for closing the popup menu bar.
 
-```
+```cpp
 virtual void RestoreDelayedSubMenu();
 ```
 
@@ -343,7 +343,7 @@ virtual void RestoreDelayedSubMenu();
 
 Sets the style of the toolbar button at the given index. (Overrides [CMFCToolBar::SetButtonStyle](../../mfc/reference/cmfctoolbar-class.md#setbuttonstyle).)
 
-```
+```cpp
 virtual void SetButtonStyle(
     int nIndex,
     UINT nStyle);

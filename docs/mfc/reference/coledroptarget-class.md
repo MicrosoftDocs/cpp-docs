@@ -118,7 +118,7 @@ For more information, see [IDropTarget::DragEnter](/windows/win32/api/oleidl/nf-
 
 Called by the framework when the cursor leaves the window while a dragging operation is in effect.
 
-```
+```cpp
 virtual void OnDragLeave(CWnd* pWnd);
 ```
 
@@ -348,7 +348,7 @@ For more information, see [RegisterDragDrop](/windows/win32/api/ole2/nf-ole2-reg
 
 Call this function before destroying any window that has been registered as a drop target through a call to [Register](#register) to remove it from the list of drop targets.
 
-```
+```cpp
 virtual void Revoke();
 ```
 

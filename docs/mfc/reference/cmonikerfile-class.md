@@ -66,7 +66,7 @@ For more information on streams and monikers, see [COleStreamFile](../../mfc/ref
 
 Call this function to detach and release the stream and to release the moniker.
 
-```
+```cpp
 virtual void Close();
 ```
 

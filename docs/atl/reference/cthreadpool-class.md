@@ -214,7 +214,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Implementation of `IUnknown::QueryInterface`.
 
-```
+```cpp
 HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppv) throw();
 ```
 

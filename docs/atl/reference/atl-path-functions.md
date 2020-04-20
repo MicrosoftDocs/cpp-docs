@@ -463,7 +463,7 @@ This function is an overloaded wrapper for [PathQuoteSpaces](/windows/win32/api/
 
 ### Syntax
 
-```
+```cpp
 inline void QuoteSpaces(char* pszPath);
 inline void QuoteSpaces(wchar_t* pszPath);
 ```
@@ -504,7 +504,7 @@ This function is an overloaded wrapper for [PathRemoveArgs](/windows/win32/api/s
 
 ### Syntax
 
-```
+```cpp
 inline void RemoveArgs(char* pszPath);
 inline void RemoveArgs(wchar_t* pszPath);
 ```
@@ -534,7 +534,7 @@ This function is an overloaded wrapper for [PathRemoveBlanks](/windows/win32/api
 
 ### Syntax
 
-```
+```cpp
 inline void RemoveBlanks(char* pszPath);
 inline void RemoveBlanks(wchar_t* pszPath);
 ```
@@ -549,7 +549,7 @@ This function is an overloaded wrapper for [PathRemoveExtension](/windows/win32/
 
 ### Syntax
 
-```
+```cpp
 inline void RemoveExtension(char* pszPath);
 inline void RemoveExtension(wchar_t* pszPath);
 ```
@@ -609,7 +609,7 @@ This function is an overloaded wrapper for [PathStripPath](/windows/win32/api/sh
 
 ### Syntax
 
-```
+```cpp
 inline void StripPath(char* pszPath);
 inline void StripPath(wchar_t* pszPath);
 ```
@@ -639,7 +639,7 @@ This function is an overloaded wrapper for [PathUnquoteSpaces](/windows/win32/ap
 
 ### Syntax
 
-```
+```cpp
 inline void UnquoteSpaces(char* pszPath);
 inline void UnquoteSpaces(wchar_t* pszPath);
 ```

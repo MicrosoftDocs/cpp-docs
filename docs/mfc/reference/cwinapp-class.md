@@ -204,7 +204,7 @@ You should add all document templates to an application before you call [Registe
 
 Call this member function to add *lpszPathName* to the MRU file list.
 
-```
+```cpp
 virtual void AddToRecentFileList(LPCTSTR lpszPathName);
 ```
 
@@ -375,7 +375,7 @@ Override this member function to customize your application-wide processing of `
 
 This member function is called by the framework to implement [CWaitCursor](../../mfc/reference/cwaitcursor-class.md), [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor), [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor), and [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor).
 
-```
+```cpp
 virtual void DoWaitCursor(int nCode);
 ```
 
@@ -830,7 +830,7 @@ void HideApplication();
 
 Call this member function to invoke the HTMLHelp application.
 
-```
+```cpp
 virtual void HtmlHelp(
     DWORD_PTR dwData,
     UINT nCmd = 0x000F);
@@ -1334,7 +1334,7 @@ LPCTSTR m_pszAppID;
 
 Handles SHIFT+F1 Help within the application.
 
-```
+```cpp
 afx_msg void OnContextHelp();
 ```
 
@@ -1373,7 +1373,7 @@ The default implementation checks whether the command is a request to open a doc
 
 Implements the ID_FILE_NEW command.
 
-```
+```cpp
 afx_msg void OnFileNew();
 ```
 
@@ -1393,7 +1393,7 @@ See [Technical Note 22](../../mfc/tn022-standard-commands-implementation.md) for
 
 Implements the ID_FILE_OPEN command.
 
-```
+```cpp
 afx_msg void OnFileOpen();
 ```
 
@@ -1413,7 +1413,7 @@ For information on default behavior and guidance on how to override this member 
 
 Implements the ID_FILE_PRINT_SETUP command.
 
-```
+```cpp
 afx_msg void OnFilePrintSetup();
 ```
 
@@ -1433,7 +1433,7 @@ For information on default behavior and guidance on how to override this member 
 
 Handles F1 Help within the application (using the current context).
 
-```
+```cpp
 afx_msg void OnHelp();
 ```
 
@@ -1451,7 +1451,7 @@ Override this member function to set the Help context to something other than th
 
 Handles the ID_HELP_FINDER and ID_DEFAULT_HELP commands.
 
-```
+```cpp
 afx_msg void OnHelpFinder();
 ```
 
@@ -1463,7 +1463,7 @@ You must add an `ON_COMMAND( ID_HELP_FINDER, OnHelpFinder )` statement to your `
 
 Handles the ID_HELP_INDEX command and provides a default Help topic.
 
-```
+```cpp
 afx_msg void OnHelpIndex();
 ```
 
@@ -1475,7 +1475,7 @@ You must add an `ON_COMMAND( ID_HELP_INDEX, OnHelpIndex )` statement to your `CW
 
 Handles the ID_HELP_USING command.
 
-```
+```cpp
 afx_msg void OnHelpUsing();
 ```
 
@@ -2054,7 +2054,7 @@ void UnregisterShellFileTypes();
 
 Call this member function to invoke the WinHelp application.
 
-```
+```cpp
 virtual void WinHelp(
     DWORD_PTR dwData,
     UINT nCmd = HELP_CONTEXT);

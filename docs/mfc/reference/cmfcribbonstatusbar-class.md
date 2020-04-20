@@ -389,7 +389,7 @@ In information mode, the status bar hides all regular panes and displays a messa
 
 Displays the string that appears on the ribbon status bar when the information mode is enabled.
 
-```
+```cpp
 virtual void OnDrawInformation(
     CDC* pDC,
     CString& strInfo,
@@ -415,7 +415,7 @@ Override this method in a derived class if you want to customize the appearance 
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-```
+```cpp
 virtual void RecalcLayout();
 ```
 

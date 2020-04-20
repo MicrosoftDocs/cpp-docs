@@ -933,7 +933,7 @@ Applies to Internet Explorer and WebBrowser.
 
 This member function is called by the framework to cause an event to fire before a navigation occurs in the web browser.
 
-```
+```cpp
 virtual void OnBeforeNavigate2(
     LPCTSTR lpszURL,
     DWORD nFlags,
@@ -967,7 +967,7 @@ A pointer to a cancel flag. An application can set this parameter to nonzero to 
 
 This member function is called by the framework to notify an application that the enabled state of a web browser command has changed.
 
-```
+```cpp
 virtual void OnCommandStateChange(
     long nCommand,
     BOOL bEnable);
@@ -985,7 +985,7 @@ Enabled state. This parameter is nonzero if the command is enabled, or zero if i
 
 This member function is called by the framework to notify an application that a document has reached the READYSTATE_COMPLETE state.
 
-```
+```cpp
 virtual void OnDocumentComplete(LPCTSTR lpszURL);
 ```
 
@@ -1025,7 +1025,7 @@ Override `OnDocWindowActivate` to react to the `OnDocWindowActivate` notificatio
 
 This member function is called by the framework to begin downloading a document.
 
-```
+```cpp
 virtual void OnDownloadBegin();
 ```
 
@@ -1037,7 +1037,7 @@ This event is fired shortly after the [OnBeforeNavigate2](#onbeforenavigate2) ev
 
 This member function is called by the framework to indicate that a navigation operation finished, was halted, or failed.
 
-```
+```cpp
 virtual void OnDownloadComplete();
 ```
 
@@ -1113,7 +1113,7 @@ Override `OnFrameWindowActivate` to react to the `OnFrameWindowActivate` notific
 
 This member function is called by the framework when the [FullScreen](/previous-versions/aa752119\(v=vs.85\)) property has changed.
 
-```
+```cpp
 virtual void OnFullScreen(BOOL bFullScreen);
 ```
 
@@ -1236,7 +1236,7 @@ Override `OnHideUI` to react to the `HideUI` notification from the Microsoft Web
 
 This member function is called by the framework when the [MenuBar](/previous-versions/aa752131\(v=vs.85\)) property has changed.
 
-```
+```cpp
 virtual void OnMenuBar(BOOL bMenuBar);
 ```
 
@@ -1249,7 +1249,7 @@ Nonzero if the Internet Explorer menu bar is visible; zero otherwise.
 
 This member function is called by the framework after a navigation to a hyperlink completes (on either a window or frameset element).
 
-```
+```cpp
 virtual void OnNavigateComplete2(LPCTSTR strURL);
 ```
 
@@ -1268,7 +1268,7 @@ Note that the URL contained in *strURL* can be different from the URL that the b
 
 Called by the framework if navigation to a hyperlink fails.
 
-```
+```cpp
 virtual void OnNavigateError(
     LPCTSTR lpszURL,
     LPCTSTR lpszFrame,
@@ -1300,7 +1300,7 @@ For more information, see [DWebBrowserEvents2::NavigateError](/previous-versions
 
 This member function is called by the framework when a new window is to be created for displaying a resource.
 
-```
+```cpp
 virtual void OnNewWindow2(
     LPDISPATCH* ppDisp,
     BOOL* Cancel);
@@ -1322,7 +1322,7 @@ This event precedes the creation of a new window from within the WebBrowser.
 
 This member function is called by the framework to notify an application that the progress of a download operation has been updated.
 
-```
+```cpp
 virtual void OnProgressChange(
     long nProgress,
     long nProgressMax);
@@ -1344,7 +1344,7 @@ The container can use the information provided by this event to display the numb
 
 This member function is called by the framework to notify an application that [PutProperty](#putproperty) has changed the value of a property.
 
-```
+```cpp
 virtual void OnPropertyChange(LPCTSTR lpszProperty);
 ```
 
@@ -1357,7 +1357,7 @@ A pointer to a string containing the name of the property.
 
 This member function is called by the framework to notify an application that the Internet Explorer application is ready to quit.
 
-```
+```cpp
 virtual void OnQuit();
 ```
 
@@ -1467,7 +1467,7 @@ Override `OnShowUI` to react to the `ShowUI` notification from the Microsoft Web
 
 This member function is called by the framework when the [StatusBar](/previous-versions//aa768270\(v=vs.85\)) property has changed.
 
-```
+```cpp
 virtual void OnStatusBar(BOOL bStatusBar);
 ```
 
@@ -1480,7 +1480,7 @@ Nonzero if Internet Explorer's status bar is visible or zero otherwise.
 
 This member function is called by the framework to notify an application that the text of the status bar associated with the WebBrowser control has changed.
 
-```
+```cpp
 virtual void OnStatusTextChange(LPCTSTR lpszText);
 ```
 
@@ -1493,7 +1493,7 @@ A string that contains the new status bar text.
 
 This member function is called by the framework when the [TheaterMode](/previous-versions/aa768273\(v=vs.85\)) property has changed.
 
-```
+```cpp
 virtual void OnTheaterMode(BOOL bTheaterMode);
 ```
 
@@ -1506,7 +1506,7 @@ Nonzero if Internet Explorer is in theater mode; zero otherwise.
 
 This member function is called by the framework to notify an application if the title of a document in the WebBrowser control becomes available or changes.
 
-```
+```cpp
 virtual void OnTitleChange(LPCTSTR lpszText);
 ```
 
@@ -1523,7 +1523,7 @@ For HTML, the title might change; while HTML is still downloading, the URL of th
 
 This member function is called by the framework when the [ToolBar](/previous-versions/aa768274\(v=vs.85\)) property has changed.
 
-```
+```cpp
 virtual void OnToolBar(BOOL bToolBar);
 ```
 
@@ -1612,7 +1612,7 @@ The host should update the state of toolbar buttons. This method is called regar
 
 This member function is called by the framework when the window for the WebBrowser should be shown or hidden.
 
-```
+```cpp
 virtual void OnVisible(BOOL bVisible);
 ```
 

@@ -161,7 +161,7 @@ In infinite mode, the progress bar fills repeatedly from the minimum value to th
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 

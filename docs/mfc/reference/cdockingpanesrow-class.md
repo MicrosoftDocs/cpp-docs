@@ -94,7 +94,7 @@ The following example demonstrates how to get a `CDockingPanesRow` object from a
 
 ## <a name="addpane"></a> CDockingPanesRow::AddPane
 
-```
+```cpp
 virtual void AddPane(
     CPane* pControlBar,
     AFX_DOCK_METHOD dockMethod,
@@ -116,7 +116,7 @@ virtual void AddPane(
 
 ## <a name="addpanefromrow"></a> CDockingPanesRow::AddPaneFromRow
 
-```
+```cpp
 virtual void AddPaneFromRow(
     CPane* pControlBar,
     AFX_DOCK_METHOD dockMethod);
@@ -134,7 +134,7 @@ virtual void AddPaneFromRow(
 
 Arranges docking panes in a row according to the specified margin and spacing parameters.
 
-```
+```cpp
 virtual void ArrangePanes(
     int nMargin,
     int nSpacing);
@@ -247,7 +247,7 @@ virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;
 
 ## <a name="getavailablespace"></a> CDockingPanesRow::GetAvailableSpace
 
-```
+```cpp
 virtual void GetAvailableSpace(CRect& rect);
 ```
 
@@ -457,7 +457,7 @@ virtual BOOL IsVisible() const;
 
 ## <a name="move"></a> CDockingPanesRow::Move
 
-```
+```cpp
 virtual void Move(int nOffset);
 ```
 
@@ -515,7 +515,7 @@ void MovePane(
 
 ## <a name="onresizepane"></a> CDockingPanesRow::OnResizePane
 
-```
+```cpp
 virtual void OnResizePane(CBasePane* pControlBar);
 ```
 
@@ -535,7 +535,7 @@ void RedrawAll();
 
 ## <a name="removepane"></a> CDockingPanesRow::RemovePane
 
-```
+```cpp
 virtual void RemovePane(CPane* pControlBar);
 ```
 
@@ -565,7 +565,7 @@ virtual BOOL ReplacePane(
 
 ## <a name="repositionpanes"></a> CDockingPanesRow::RepositionPanes
 
-```
+```cpp
 virtual void RepositionPanes(
     CRect& rectNewParentBarArea,
     UINT nSide = (UINT)-1,
@@ -643,7 +643,7 @@ void SetExtra(
 
 ## <a name="showdocksiterow"></a> CDockingPanesRow::ShowDockSiteRow
 
-```
+```cpp
 virtual void ShowDockSiteRow(
     BOOL bShow,
     BOOL bDelay);
@@ -680,7 +680,7 @@ virtual BOOL ShowPane(
 
 ## <a name="updatevisiblestate"></a> CDockingPanesRow::UpdateVisibleState
 
-```
+```cpp
 virtual void UpdateVisibleState(BOOL bDelay);
 ```
 

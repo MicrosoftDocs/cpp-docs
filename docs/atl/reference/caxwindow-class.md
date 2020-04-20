@@ -259,7 +259,7 @@ Returns a reference to the current `CAxWindow` object.
 
 Retrieves the specified interface of the hosted control.
 
-```
+```cpp
 HRESULT QueryControl(REFIID iid, void** ppUnk);
 template <class  Q>
 HRESULT QueryControl(Q** ppUnk);
@@ -284,7 +284,7 @@ A standard HRESULT value.
 
 Returns the specified interface of the host.
 
-```
+```cpp
 HRESULT QueryHost(REFIID iid, void** ppUnk);
 template <class  Q>
 HRESULT QueryHost(Q** ppUnk);

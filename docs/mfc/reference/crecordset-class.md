@@ -133,7 +133,7 @@ For more information about recordsets and record field exchange, see the article
 
 Prepares for adding a new record to the table.
 
-```
+```cpp
 virtual void AddNew();
 ```
 
@@ -288,7 +288,7 @@ A recordset might be read-only if the underlying data source is read-only or if 
 
 Called to handle errors generated during record fetching.
 
-```
+```cpp
 virtual void CheckRowsetError(RETCODE nRetCode);
 ```
 
@@ -318,7 +318,7 @@ For more information about `SQLError`, see the Windows SDK. For more information
 
 Closes the recordset.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -362,7 +362,7 @@ For more information, see the article [Recordset: Declaring a Class for a Table 
 
 Deletes the current record.
 
-```
+```cpp
 virtual void Delete();
 ```
 
@@ -388,7 +388,7 @@ This example shows a recordset created on the frame of a function. The example a
 
 Called to exchange bulk rows of data from the data source to the recordset. Implements bulk record field exchange (Bulk RFX).
 
-```
+```cpp
 virtual void DoBulkFieldExchange(CFieldExchange* pFX);
 ```
 
@@ -416,7 +416,7 @@ For more information about bulk row fetching, see the article [Recordset: Fetchi
 
 Called to exchange data (in both directions) between the field data members of the recordset and the corresponding record on the data source. Implements record field exchange (RFX).
 
-```
+```cpp
 virtual void DoFieldExchange(CFieldExchange* pFX);
 ```
 
@@ -450,7 +450,7 @@ For further examples and details about `DoFieldExchange`, see the article [Recor
 
 Allows changes to the current record.
 
-```
+```cpp
 virtual void Edit();
 ```
 
@@ -1147,7 +1147,7 @@ For more information about SQL clauses, see the article [SQL](../../data/odbc/sq
 
 Moves the current record pointer within the recordset, either forward or backward.
 
-```
+```cpp
 virtual void Move(
     long nRows,
     WORD wFetchType = SQL_FETCH_RELATIVE);
@@ -1331,7 +1331,7 @@ For more information about recordset navigation, see the articles [Recordset: Sc
 
 Called to set options (used on selection) for the specified ODBC statement.
 
-```
+```cpp
 virtual void OnSetOptions(HSTMT hstmt);
 ```
 
@@ -1352,7 +1352,7 @@ For more information about cursors, see the article [ODBC](../../data/odbc/odbc-
 
 Called to set options (used on update) for the specified ODBC statement.
 
-```
+```cpp
 virtual void OnSetUpdateOptions(HSTMT hstmt);
 ```
 
@@ -1769,7 +1769,7 @@ For more information about `SQLSetPos`, see the Windows SDK. For more informatio
 
 Specifies the number of records you wish to retrieve during a fetch.
 
-```
+```cpp
 virtual void SetRowsetSize(DWORD dwNewRowsetSize);
 ```
 

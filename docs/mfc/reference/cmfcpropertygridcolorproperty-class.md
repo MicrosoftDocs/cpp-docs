@@ -191,7 +191,7 @@ This method sets the value of the `m_nColumnsNumber` protected data member.
 
 Sets the original value of an editable property.
 
-```
+```cpp
 virtual void SetOriginalValue(const COleVariant& varValue);
 ```
 

@@ -150,7 +150,7 @@ A semicolon-delimited (';') list of shortcut keys that is associated with the sp
 
 Called by the framework before a new item is inserted into an internal list control that supports the keyboard mapping control.
 
-```
+```cpp
 virtual void OnInsertItem(
     CMFCToolBarButton* pButton,
     int nItem);
@@ -238,7 +238,7 @@ The framework calls this method to print a key map dialog box item. By default, 
 
 Called by the framework to set captions for the columns in the internal list control that supports the keyboard mapping control.
 
-```
+```cpp
 virtual void OnSetColumns();
 ```
 
@@ -250,7 +250,7 @@ By default, this method obtains the captions for the columns from three resource
 
 Called by the framework when a user clicks the **Print** button.
 
-```
+```cpp
 virtual void PrintKeyMap();
 ```
 
@@ -262,7 +262,7 @@ The `PrintKeyMap` method prints the key map. It initiates a new print job and th
 
 Called by the framework to set the width of the columns in the internal list control that supports the keyboard mapping control.
 
-```
+```cpp
 virtual void SetColumnsWidth();
 ```
 

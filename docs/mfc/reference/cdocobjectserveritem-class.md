@@ -97,7 +97,7 @@ This allows access to the server document that you passed as an argument to the 
 
 Called by the framework to execute the specified verb.
 
-```
+```cpp
 virtual void OnDoVerb(LONG iVerb);
 ```
 
@@ -114,7 +114,7 @@ The default implementation calls the [OnShow](#onshow) member function if the it
 
 Called by the framework to hide the item.
 
-```
+```cpp
 virtual void OnHide();
 ```
 
@@ -126,7 +126,7 @@ The default implementation throws an exception if the item is a DocObject. You c
 
 Called by the framework to instruct the server application to make the DocObject item in-place active.
 
-```
+```cpp
 virtual void OnShow();
 ```
 

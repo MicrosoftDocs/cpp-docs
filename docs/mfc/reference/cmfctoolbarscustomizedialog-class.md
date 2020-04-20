@@ -344,7 +344,7 @@ By default, or if *bEnable* is FALSE, these buttons are not displayed and the us
 
 Populates the provided `CListBox` object with the commands in the **All Commands** category.
 
-```
+```cpp
 virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;
 ```
 
@@ -493,7 +493,7 @@ For more information about the WS_EX_CONTEXTHELP visual style, see [Extended Win
 
 Responds to a change in a user tool immediately after it occurs.
 
-```
+```cpp
 virtual void OnAfterChangeTool(CUserTool* pSelTool);
 ```
 
@@ -531,7 +531,7 @@ Override this method in a derived class to perform extra processing when a user 
 
 Performs custom processing when a change to a user tool when the user is about to apply a change.
 
-```
+```cpp
 virtual void OnBeforeChangeTool(CUserTool* pSelTool);
 ```
 
@@ -594,7 +594,7 @@ This method extends the base class implementation, [CPropertySheet::OnInitDialog
 
 Handles the notification from the framework that the **Tools** page is about to be initialized.
 
-```
+```cpp
 virtual void OnInitToolsPage();
 ```
 
@@ -606,7 +606,7 @@ The default implementation does nothing. Override this method in a derived class
 
 Called by the framework after the window has been destroyed.
 
-```
+```cpp
 virtual void PostNcDestroy();
 ```
 

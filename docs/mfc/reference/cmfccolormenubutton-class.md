@@ -114,7 +114,7 @@ The second constructor initializes the button to the color that corresponds to t
 
 Copies one [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)-derived object to another.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 
@@ -312,7 +312,7 @@ Empty menus are supported by default. Override this method to change this behavi
 
 Called by the framework when the parent window changes.
 
-```
+```cpp
 virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```
 
@@ -327,7 +327,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 
 Called by the framework to display an image on a button.
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     const CRect& rect,
@@ -427,7 +427,7 @@ When the menu button is clicked, call this method to open a color dialog box. If
 
 Sets the color of the current color button.
 
-```
+```cpp
 virtual void SetColor(
     COLORREF clr,
     BOOL bNotify=TRUE);
@@ -449,7 +449,7 @@ Call this method to change the color of the current color button. If the *bNotif
 
 Sets the color of the specified color menu button.
 
-```
+```cpp
 static void SetColorByCmdID(
     UINT uiCmdID,
     COLORREF color);
@@ -467,7 +467,7 @@ static void SetColorByCmdID(
 
 Sets a new name for the specified color.
 
-```
+```cpp
 static void SetColorName(
     COLORREF color,
     const CString& strName);

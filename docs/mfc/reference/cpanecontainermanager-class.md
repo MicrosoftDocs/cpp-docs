@@ -97,7 +97,7 @@ The following example demonstrates how to get a reference to a `CPaneContainerMa
 
 ## <a name="addpane"></a> CPaneContainerManager::AddPane
 
-```
+```cpp
 virtual void AddPane(CDockablePane* pControlBarToAdd);
 ```
 
@@ -301,7 +301,7 @@ virtual BOOL DoesContainFloatingPane();
 
 ## <a name="enablegrippers"></a> CPaneContainerManager::EnableGrippers
 
-```
+```cpp
 virtual void EnableGrippers(BOOL bEnable);
 ```
 
@@ -344,7 +344,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ## <a name="getavailablespace"></a> CPaneContainerManager::GetAvailableSpace
 
-```
+```cpp
 virtual void GetAvailableSpace(CRect& rect) const;
 ```
 
@@ -396,7 +396,7 @@ virtual CWnd* GetFirstVisiblePane() const;
 
 ## <a name="getminmaxoffset"></a> CPaneContainerManager::GetMinMaxOffset
 
-```
+```cpp
 virtual void GetMinMaxOffset(
     CPaneDivider* pSlider,
     int& nMinOffset,
@@ -415,7 +415,7 @@ virtual void GetMinMaxOffset(
 
 ## <a name="getminsize"></a> CPaneContainerManager::GetMinSize
 
-```
+```cpp
 virtual void GetMinSize(CSize& size);
 ```
 
@@ -477,7 +477,7 @@ virtual int GetVisiblePaneCount() const;
 
 ## <a name="getwindowrect"></a> CPaneContainerManager::GetWindowRect
 
-```
+```cpp
 virtual void GetWindowRect(CRect& rect) const;
 ```
 
@@ -489,7 +489,7 @@ virtual void GetWindowRect(CRect& rect) const;
 
 ## <a name="hideall"></a> CPaneContainerManager::HideAll
 
-```
+```cpp
 virtual void HideAll();
 ```
 
@@ -643,7 +643,7 @@ void RemoveNonValidPanes();
 
 ## <a name="removepanedivider"></a> CPaneContainerManager::RemovePaneDivider
 
-```
+```cpp
 virtual void RemovePaneDivider(CPaneDivider* pSlider);
 ```
 
@@ -686,7 +686,7 @@ virtual BOOL ReplacePane(
 
 ## <a name="resizepanecontainers"></a> CPaneContainerManager::ResizePaneContainers
 
-```
+```cpp
 virtual void ResizePaneContainers(
     UINT nSide,
     BOOL bExpand,
@@ -746,7 +746,7 @@ void SetPaneContainerRTC(CRuntimeClass* pContainerRTC);
 
 ## <a name="setresizemode"></a> CPaneContainerManager::SetResizeMode
 
-```
+```cpp
 virtual void SetResizeMode(BOOL bResize);
 ```
 
@@ -758,7 +758,7 @@ virtual void SetResizeMode(BOOL bResize);
 
 ## <a name="storerecentdocksiteinfo"></a> CPaneContainerManager::StoreRecentDockSiteInfo
 
-```
+```cpp
 virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```
 

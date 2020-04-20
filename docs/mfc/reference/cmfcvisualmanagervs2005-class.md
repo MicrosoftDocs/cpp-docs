@@ -104,7 +104,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 
 ## <a name="gettabframecolors"></a> CMFCVisualManagerVS2005::GetTabFrameColors
 
-```
+```cpp
 virtual void GetTabFrameColors(
     const CMFCBaseTabCtrl* pTabWnd,
     COLORREF& clrDark,
@@ -143,7 +143,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
 
 ## <a name="ondrawautohidebuttonborder"></a> CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder
 
-```
+```cpp
 virtual void OnDrawAutoHideButtonBorder(
     CDC* pDC,
     CRect rectBounds,
@@ -162,7 +162,7 @@ virtual void OnDrawAutoHideButtonBorder(
 
 ## <a name="ondrawcaptionbutton"></a> CMFCVisualManagerVS2005::OnDrawCaptionButton
 
-```
+```cpp
 virtual void OnDrawCaptionButton(
     CDC* pDC,
     CMFCCaptionButton* pButton,
@@ -210,7 +210,7 @@ virtual COLORREF OnDrawPaneCaption(
 
 ## <a name="ondrawseparator"></a> CMFCVisualManagerVS2005::OnDrawSeparator
 
-```
+```cpp
 virtual void OnDrawSeparator(
     CDC* pDC,
     CBasePane* pBar,
@@ -229,7 +229,7 @@ virtual void OnDrawSeparator(
 
 ## <a name="ondrawtab"></a> CMFCVisualManagerVS2005::OnDrawTab
 
-```
+```cpp
 virtual void OnDrawTab(
     CDC* pDC,
     CRect rectTab,
@@ -250,7 +250,7 @@ virtual void OnDrawTab(
 
 ## <a name="ondrawtoolboxframe"></a> CMFCVisualManagerVS2005::OnDrawToolBoxFrame
 
-```
+```cpp
 virtual void OnDrawToolBoxFrame(
     CDC* pDC,
     const CRect& rect);
@@ -265,7 +265,7 @@ virtual void OnDrawToolBoxFrame(
 
 ## <a name="onerasetabsarea"></a> CMFCVisualManagerVS2005::OnEraseTabsArea
 
-```
+```cpp
 virtual void OnEraseTabsArea(
     CDC* pDC,
     CRect rect,
@@ -282,7 +282,7 @@ virtual void OnEraseTabsArea(
 
 ## <a name="onfillautohidebuttonbackground"></a> CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground
 
-```
+```cpp
 virtual void OnFillAutoHideButtonBackground(
     CDC* pDC,
     CRect rect,
@@ -299,7 +299,7 @@ virtual void OnFillAutoHideButtonBackground(
 
 ## <a name="onfillhighlightedarea"></a> CMFCVisualManagerVS2005::OnFillHighlightedArea
 
-```
+```cpp
 virtual void OnFillHighlightedArea(
     CDC* pDC,
     CRect rect,
@@ -339,7 +339,7 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 ## <a name="onupdatesystemcolors"></a> CMFCVisualManagerVS2005::OnUpdateSystemColors
 
-```
+```cpp
 virtual void OnUpdateSystemColors();
 ```
 

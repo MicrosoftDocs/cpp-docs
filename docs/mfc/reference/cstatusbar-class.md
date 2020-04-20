@@ -199,7 +199,7 @@ CStatusBar();
 
 This member function is called by the framework when a visual aspect of an owner-drawn status bar changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 
@@ -304,7 +304,7 @@ For a list of styles available for status bars, see [Create](#create).
 
 Call this member function to retrieve the text that appears in a status-bar pane.
 
-```
+```cpp
 CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;
 ```
 

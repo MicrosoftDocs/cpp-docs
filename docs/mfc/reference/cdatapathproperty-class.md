@@ -159,7 +159,7 @@ All overloads of [CAsyncMonikerFile::Open](../../mfc/reference/casyncmonikerfile
 
 Call this function to get `CAsyncMonikerFile::OnDataAvailable` to notify the container that the control properties have changed, and all the information loaded asynchronously is no longer useful.
 
-```
+```cpp
 virtual void ResetData();
 ```
 

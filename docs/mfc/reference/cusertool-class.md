@@ -188,7 +188,7 @@ CString m_strLabel;
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 

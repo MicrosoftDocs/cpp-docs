@@ -671,7 +671,7 @@ For more information on the *dwMask* and *dwEffect* parameters and their potenti
 
 Called by the framework when processing commands from the Find/Replace dialog box.
 
-```
+```cpp
 virtual void OnFindNext(
     LPCTSTR lpszFind,
     BOOL bNext,
@@ -701,7 +701,7 @@ Call this function to find text within the `CRichEditView`. Override this functi
 
 Called by the framework after the view is first attached to the document, but before the view is initially displayed.
 
-```
+```cpp
 virtual void OnInitialUpdate();
 ```
 
@@ -765,7 +765,7 @@ Desired paragraph alignment. One of the following values:
 
 Override this function to change characteristics for this rich edit view when the printer changes.
 
-```
+```cpp
 virtual void OnPrinterChanged(const CDC& dcPrinter);
 ```
 
@@ -782,7 +782,7 @@ The default implementation sets the paper size to the physical height and width 
 
 Called by the framework when processing Replace All commands from the Replace dialog box.
 
-```
+```cpp
 virtual void OnReplaceAll(
     LPCTSTR lpszFind,
     LPCTSTR lpszReplace,
@@ -816,7 +816,7 @@ Call this function to replace all occurrences of some given text with another st
 
 Called by the framework when processing Replace commands from the Replace dialog box.
 
-```
+```cpp
 virtual void OnReplaceSel(
     LPCTSTR lpszFind,
     BOOL bNext,
@@ -850,7 +850,7 @@ Call this function to replace one occurrence of some given text with another str
 
 Called by the framework whenever a search fails.
 
-```
+```cpp
 virtual void OnTextNotFound(LPCTSTR lpszFind);
 ```
 
@@ -1168,7 +1168,7 @@ The *lpszFind* parameter should include the same content as the string provided 
 
 Call this function when the printing characteristics have changed ( [SetMargins](#setmargins) or [SetPaperSize](#setpapersize)).
 
-```
+```cpp
 virtual void WrapChanged();
 ```
 

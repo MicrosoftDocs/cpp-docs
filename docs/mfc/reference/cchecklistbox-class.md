@@ -156,7 +156,7 @@ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#wi
 
 Called by the framework when a visual aspect of an owner-drawn checklist box changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 
@@ -253,7 +253,7 @@ Nonzero if the item is enabled; otherwise 0.
 
 Called by the framework when a checklist box with a nondefault style is created.
 
-```
+```cpp
 virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ```
 

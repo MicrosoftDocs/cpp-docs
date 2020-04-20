@@ -256,7 +256,7 @@ The default implementation determines whether the command ID of the provided obj
 
 Copies the properties of another toolbar button to the current button.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 
@@ -294,7 +294,7 @@ This method is used by the framework to perform data transfer in various formats
 
 Enables or disables mouse and keyboard input.
 
-```
+```cpp
 virtual void EnableWindow(BOOL bEnable = TRUE);
 ```
 
@@ -858,7 +858,7 @@ By default, this method returns FALSE. Override this method to return TRUE if yo
 
 Called by the framework when the button is added to a **Customize** dialog box.
 
-```
+```cpp
 virtual void OnAddToCustomizePage();
 ```
 
@@ -945,7 +945,7 @@ Override this method if you want to provide the size of a non-standard button (f
 
 Called by the framework to handle the [WM_CANCELMODE](/windows/win32/winmsg/wm-cancelmode) message.
 
-```
+```cpp
 virtual void OnCancelMode();
 ```
 
@@ -957,7 +957,7 @@ The default implementation of this method does nothing. Override this method if 
 
 Called by the framework when the button is inserted into a new toolbar.
 
-```
+```cpp
 virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```
 
@@ -1096,7 +1096,7 @@ The default implementation does nothing and returns FALSE. Override this method 
 
 Called by the framework when the parent toolbar handles a [WM_LBUTTONDBLCLK](/windows/win32/inputdev/wm-lbuttondblclk) message.
 
-```
+```cpp
 virtual void OnDblClk(CWnd* pWnd);
 ```
 
@@ -1115,7 +1115,7 @@ The default implementation of this method does nothing.
 
 Called by the framework to draw the button by using the specified styles and options.
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     const CRect& rect,
@@ -1218,7 +1218,7 @@ The default implementation does nothing and returns FALSE. Override this method 
 
 Called by the framework when the global font has changed.
 
-```
+```cpp
 virtual void OnGlobalFontsChanged();
 ```
 
@@ -1230,7 +1230,7 @@ The default implementation of this method does nothing. Override this method to 
 
 Called by the framework when the parent toolbar moves.
 
-```
+```cpp
 virtual void OnMove();
 ```
 
@@ -1242,7 +1242,7 @@ The default implementation of this method does nothing. Override this method to 
 
 Called by the framework when the button becomes visible or invisible.
 
-```
+```cpp
 virtual void OnShow(BOOL bShow);
 ```
 
@@ -1259,7 +1259,7 @@ The default implementation of this method does nothing. Override this method to 
 
 Called by the framework when the parent toolbar changes its size or position and this change causes the button to change size.
 
-```
+```cpp
 virtual void OnSize(int iSize);
 ```
 
@@ -1379,7 +1379,7 @@ A `CRect` object that contains the bounding rectangle of a button.
 
 Sets to the default value the image that is associated with the button.
 
-```
+```cpp
 virtual void ResetImageToDefault();
 ```
 
@@ -1393,7 +1393,7 @@ This method does nothing if the button has a user-defined image.
 
 Saves the state of the toolbar button.
 
-```
+```cpp
 virtual void SaveBarState();
 ```
 
@@ -1407,7 +1407,7 @@ The default implementation of this method does nothing. Override this method to 
 
 Reads this object from an archive or writes it to an archive.
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 
@@ -1452,7 +1452,7 @@ Override this method to return FALSE if your toolbar button does not provide acc
 
 Renames the global clipboard format.
 
-```
+```cpp
 static void __stdcall SetClipboardFormatName(LPCTSTR lpszName);
 ```
 
@@ -1471,7 +1471,7 @@ You must call this method before the framework calls [CMFCToolBarButton::GetClip
 
 Sets the image index of the button.
 
-```
+```cpp
 virtual void SetImage(int iImage);
 ```
 
@@ -1490,7 +1490,7 @@ If *iImage* is less than zero, this method disables drawing of the image and ena
 
 Sets the list of commands that the user cannot customize.
 
-```
+```cpp
 static void SetProtectedCommands(const CList<UINT,UINT>& lstCmds);
 ```
 
@@ -1509,7 +1509,7 @@ Use the [CMFCToolBarButton::GetProtectedCommands](#getprotectedcommands) method 
 
 Called by the framework when a button changes its checked state.
 
-```
+```cpp
 virtual void SetRadio();
 ```
 
@@ -1538,7 +1538,7 @@ This method calls the [CMFCToolBarButton::OnMove](#onmove) method after it sets 
 
 Sets the style of the button.
 
-```
+```cpp
 virtual void SetStyle(UINT nStyle);
 ```
 

@@ -94,7 +94,7 @@ Zero if the strings are identical, < 0 if *str1* is less than *str2*, or > 0 if 
 
 Call this static function to copy `CString` elements stored in a collection class object.
 
-```
+```cpp
 static void CopyElements(
     T* pDest,
     const T* pSrc,
@@ -153,7 +153,7 @@ typedef T& OUTARGTYPE;
 
 Call this static function to relocate `CString` elements stored in a collection class object.
 
-```
+```cpp
 static void RelocateElements(
     T* pDest,
     T* pSrc,

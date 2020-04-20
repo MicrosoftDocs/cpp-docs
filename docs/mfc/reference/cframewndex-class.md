@@ -168,7 +168,7 @@ TRUE if the control bar was successfully registered; FALSE otherwise.
 
 Recalculates the layout of all panes that are docked to the frame window.
 
-```
+```cpp
 virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```
 
@@ -185,7 +185,7 @@ The hdwp structure is initialized by the [BeginDeferWindowPos](/windows/win32/ap
 
 Sets the frame menu and then updates it when command processing is idle.
 
-```
+```cpp
 virtual void DelayUpdateFrameMenu(HMENU hMenuAlt);
 ```
 
@@ -696,7 +696,7 @@ Set OLE client space.
 
 The framework calls this method when user input is switched to or away from the frame.
 
-```
+```cpp
 afx_msg void OnActivate(
     UINT nState,
     CWnd* pWndOther,
@@ -728,7 +728,7 @@ The following table lists the possible values for the *nState* parameter.
 
 Called by the framework when the application is either selected or deselected.
 
-```
+```cpp
 afx_msg void OnActivateApp(
     BOOL bActive,
     DWORD dwThreadID);
@@ -772,7 +772,7 @@ Always returns 0.
 
 The framework calls this method to close the frame.
 
-```
+```cpp
 afx_msg void OnClose();
 ```
 
@@ -816,7 +816,7 @@ The default implementation does nothing. Override this method if you want to pro
 
 Called by the framework when an active pop-up menu processes a WM_DESTROY message.
 
-```
+```cpp
 virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```
 
@@ -865,7 +865,7 @@ TRUE if the command message was handled; otherwise, FALSE.
 
 Called by the framework to display context-related help.
 
-```
+```cpp
 afx_msg void OnContextHelp();
 ```
 
@@ -894,7 +894,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 
 Called by the framework when the frame is destroyed.
 
-```
+```cpp
 afx_msg void OnDestroy();
 ```
 
@@ -936,7 +936,7 @@ Override this method if you want to customize the image rendering for the menu i
 
 Called by the framework when a `CMFCPopupMenu` object processes a WM_PAINT message.
 
-```
+```cpp
 virtual void OnDrawMenuLogo(
     CDC* pDC,
     CMFCPopupMenu* pMenu,
@@ -1010,7 +1010,7 @@ Always returns 0.
 
 Called by the framework when the frame is resized to set window dimension limits.
 
-```
+```cpp
 afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ```
 
@@ -1049,7 +1049,7 @@ Always returns 0.
 
 The framework calls this method when the user presses the left mouse button.
 
-```
+```cpp
 afx_msg void OnLButtonDown(
     UINT nFlags,
     CPoint point);
@@ -1069,7 +1069,7 @@ afx_msg void OnLButtonDown(
 
 The framework calls this method when the user releases the left mouse button.
 
-```
+```cpp
 afx_msg void OnLButtonUp(
     UINT nFlags,
     CPoint point);
@@ -1147,7 +1147,7 @@ The high-order word must be one of the following values.
 
 The framework calls this method when the pointer moves.
 
-```
+```cpp
 afx_msg void OnMouseMove(
     UINT nFlags,
     CPoint point);
@@ -1205,7 +1205,7 @@ Nonzero to continue with default processing; 0 to prevent the non-client area fr
 
 Called by the framework when the size and position of the client area must be calculated.
 
-```
+```cpp
 afx_msg void OnNcCalcSize(
     BOOL bCalcValidRects,
     NCCALCSIZE_PARAMS FAR* lpncsp);
@@ -1244,7 +1244,7 @@ A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST 
 
 Called by the framework when the pointer moves in a non-client area.
 
-```
+```cpp
 afx_msg void OnNcMouseMove(
     UINT nHitTest,
     CPoint point);
@@ -1264,7 +1264,7 @@ afx_msg void OnNcMouseMove(
 
 Called by the framework when the non-client area must be painted.
 
-```
+```cpp
 afx_msg void OnNcPaint();
 ```
 
@@ -1372,7 +1372,7 @@ BOOL is TRUE if the event was handled; otherwise, FALSE.
 
 Called by the framework to set the print preview mode for the frame.
 
-```
+```cpp
 virtual void OnSetPreviewMode(
     BOOL bPreview,
     CPrintPreviewState* pState);
@@ -1488,7 +1488,7 @@ Override this method in a derived class to execute custom code when the framewor
 
 Called by the framework after the frame's size changes.
 
-```
+```cpp
 afx_msg void OnSize(
     UINT nType,
     int cx,
@@ -1512,7 +1512,7 @@ afx_msg void OnSize(
 
 Called by the framework when the user resizes the frame.
 
-```
+```cpp
 afx_msg void OnSizing(
     UINT fwSide,
     LPRECT pRect);
@@ -1642,7 +1642,7 @@ TRUE if the toolbar was deleted; otherwise, FALSE.
 
 Called by the framework to set the frame menu.
 
-```
+```cpp
 virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 ```
 
@@ -1657,7 +1657,7 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 
 The framework calls this method to update the title bar of the frame window.
 
-```
+```cpp
 virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```
 
@@ -1672,7 +1672,7 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 
 Called by the framework to update the pane menu.
 
-```
+```cpp
 afx_msg void OnUpdatePaneMenu(CCmdUI* pCmdUI);
 ```
 
@@ -1687,7 +1687,7 @@ afx_msg void OnUpdatePaneMenu(CCmdUI* pCmdUI);
 
 Called by the framework when the frame size, position, or z-order has changed because of a call to a window management method.
 
-```
+```cpp
 afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ```
 
@@ -1766,7 +1766,7 @@ Non-zero if the message was handled and should not be dispatched; 0 if the messa
 
 Adjusts the layout of the frame and its child windows.
 
-```
+```cpp
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
 
@@ -1917,7 +1917,7 @@ void UpdateCaption();
 
 Invokes either the WinHelp application or context related help.
 
-```
+```cpp
 virtual void WinHelp(
     DWORD dwData,
     UINT nCmd = HELP_CONTEXT);

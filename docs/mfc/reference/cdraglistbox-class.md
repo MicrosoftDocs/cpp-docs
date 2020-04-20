@@ -85,7 +85,7 @@ Override this function if you want to control what happens when a drag operation
 
 Called by the framework when a drag operation has been canceled.
 
-```
+```cpp
 virtual void CancelDrag(CPoint pt);
 ```
 
@@ -137,7 +137,7 @@ The default behavior returns DL_MOVECURSOR. Override this function if you want t
 
 Called by the framework to draw the insertion guide before the item with the indicated index.
 
-```
+```cpp
 virtual void DrawInsert(int nItem);
 ```
 
@@ -154,7 +154,7 @@ A value of - 1 clears the insertion guide. Override this function to modify the 
 
 Called by the framework when an item is dropped within a `CDragListBox` object.
 
-```
+```cpp
 virtual void Dropped(
     int nSrcIndex,
     CPoint pt);

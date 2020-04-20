@@ -235,7 +235,7 @@ CPaneContainer(
 
 ## <a name="deletepane"></a> CPaneContainer::DeletePane
 
-```
+```cpp
 virtual void DeletePane(
     CDockablePane* pBar,
     BC_FIND_CRITERIA barType);
@@ -315,7 +315,7 @@ const CPaneContainer* GetLeftPaneContainer() const;
 
 ## <a name="getminsize"></a> CPaneContainer::GetMinSize
 
-```
+```cpp
 virtual void GetMinSize(CSize& size) const;
 ```
 
@@ -327,7 +327,7 @@ virtual void GetMinSize(CSize& size) const;
 
 ## <a name="getminsizeleft"></a> CPaneContainer::GetMinSizeLeft
 
-```
+```cpp
 virtual void GetMinSizeLeft(CSize& size) const;
 ```
 
@@ -339,7 +339,7 @@ virtual void GetMinSizeLeft(CSize& size) const;
 
 ## <a name="getminsizeright"></a> CPaneContainer::GetMinSizeRight
 
-```
+```cpp
 virtual void GetMinSizeRight(CSize& size) const;
 ```
 
@@ -461,7 +461,7 @@ int GetTotalReferenceCount() const;
 
 ## <a name="getwindowrect"></a> CPaneContainer::GetWindowRect
 
-```
+```cpp
 virtual void GetWindowRect(
     CRect& rect,
     BOOL bIgnoreVisibility = FALSE) const;
@@ -558,7 +558,7 @@ BOOL IsVisible() const;
 
 ## <a name="move"></a> CPaneContainer::Move
 
-```
+```cpp
 virtual void Move(CPoint ptNewLeftTop);
 ```
 
@@ -602,7 +602,7 @@ virtual int OnMoveInternalPaneDivider(
 
 ## <a name="onshowpane"></a> CPaneContainer::OnShowPane
 
-```
+```cpp
 virtual void OnShowPane(
     CDockablePane* pBar,
     BOOL bShow);
@@ -643,7 +643,7 @@ void RemoveNonValidPanes();
 
 ## <a name="removepane"></a> CPaneContainer::RemovePane
 
-```
+```cpp
 virtual void RemovePane(CDockablePane* pBar);
 ```
 
@@ -655,7 +655,7 @@ virtual void RemovePane(CDockablePane* pBar);
 
 ## <a name="resize"></a> CPaneContainer::Resize
 
-```
+```cpp
 virtual void Resize(
     CRect rect,
     HDWP& hdwp,
@@ -672,7 +672,7 @@ virtual void Resize(
 
 ## <a name="resizepane"></a> CPaneContainer::ResizePane
 
-```
+```cpp
 virtual void ResizePane(
     int nOffset,
     CPane* pBar,
@@ -695,7 +695,7 @@ virtual void ResizePane(
 
 ## <a name="resizepartofpanecontainer"></a> CPaneContainer::ResizePartOfPaneContainer
 
-```
+```cpp
 virtual void ResizePartOfPaneContainer(
     int nOffset,
     BOOL bLeftPart,
@@ -807,7 +807,7 @@ BOOL SetUpByID(
 
 ## <a name="storerecentdocksiteinfo"></a> CPaneContainer::StoreRecentDockSiteInfo
 
-```
+```cpp
 virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```
 

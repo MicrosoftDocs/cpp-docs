@@ -86,7 +86,7 @@ The following example demonstrates how to use the constructor of the `CMFCRibbon
 
 ## <a name="copyfrom"></a> CMFCRibbonLinkCtrl::CopyFrom
 
-```
+```cpp
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```
 
@@ -175,7 +175,7 @@ virtual BOOL IsDrawTooltipImage() const;
 
 ## <a name="ondraw"></a> CMFCRibbonLinkCtrl::OnDraw
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 
@@ -187,7 +187,7 @@ virtual void OnDraw(CDC* pDC);
 
 ## <a name="onmousemove"></a> CMFCRibbonLinkCtrl::OnMouseMove
 
-```
+```cpp
 virtual void OnMouseMove(CPoint point);
 ```
 
@@ -199,7 +199,7 @@ virtual void OnMouseMove(CPoint point);
 
 ## <a name="onseticon"></a> CMFCRibbonLinkCtrl::OnSetIcon
 
-```
+```cpp
 virtual void OnSetIcon();
 ```
 

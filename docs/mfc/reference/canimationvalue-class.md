@@ -121,7 +121,7 @@ Constructs CAnimationValue object with default properties: default value, Group 
 
 Puts the encapsulated animation variable into a list.
 
-```
+```cpp
 virtual void GetAnimationVariableList(
     CList<CAnimationVariable*,
     CAnimationVariable*>& lst);

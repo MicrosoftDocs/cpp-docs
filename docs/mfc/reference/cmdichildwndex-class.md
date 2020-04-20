@@ -148,7 +148,7 @@ void AddTabbedPane(CDockablePane* pControlBar);
 
 Adjusts the docking layout.
 
-```
+```cpp
 virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```
 
@@ -525,7 +525,7 @@ TRUE if the method succeeds, otherwise FALSE.
 
 Called by the framework to enter or exit print preview mode.
 
-```
+```cpp
 virtual void OnSetPreviewMode(
     BOOL bPreview,
     CPrintPreviewState* pState);
@@ -543,7 +543,7 @@ virtual void OnSetPreviewMode(
 
 Called by the framework to update the frame title.
 
-```
+```cpp
 virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```
 
@@ -601,7 +601,7 @@ When the function returns and a pane was found, *dwAlignment* contains the align
 
 Recalculates the layout of the window.
 
-```
+```cpp
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
 
@@ -678,7 +678,7 @@ void ShowPane(
 
 Updates the Windows 7 taskbar tab icon.
 
-```
+```cpp
 virtual void UpdateTaskbarTabIcon(HICON hIcon);
 ```
 
@@ -767,7 +767,7 @@ void SetTaskbarTabActive();
 
 Registers the MDI child with Windows 7 taskbar tabs.
 
-```
+```cpp
 virtual void RegisterTaskbarTab(CMDIChildWndEx* pWndBefore = NULL);
 ```
 
@@ -838,7 +838,7 @@ The default implementation activates the related MDI child frame.
 
 Called by the framework when the Taskbar tab thumbnail should process the WM_ACTIVATE message.
 
-```
+```cpp
 virtual void OnTaskbarTabThumbnailActivate(
     UINT nState,
     CWnd* pWndOther,
@@ -864,7 +864,7 @@ The default implementation activates the related MDI child frame.
 
 Called by the framework when the user presses the close button on the Taskbar tab thumbnail.
 
-```
+```cpp
 virtual void OnPressTaskbarThmbnailCloseButton();
 ```
 
@@ -1063,7 +1063,7 @@ Override this method in a derived class and return FALSE to disable the appearan
 
 Called by the framework to activate the top level frame when the application is activated from a taskbar tab.
 
-```
+```cpp
 virtual void ActivateTopLevelFrame();
 ```
 

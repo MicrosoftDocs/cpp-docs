@@ -115,7 +115,7 @@ This function creates an in-place frame window, draws scrollbars within the view
 
 Override this function to restore the state of the DocObject view.
 
-```
+```cpp
 virtual void OnApplyViewState(CArchive& ar);
 ```
 
@@ -134,7 +134,7 @@ You can use `OnSaveViewState` to store persistent information specific to your v
 
 Override this function to save extra state information about your DocObject view.
 
-```
+```cpp
 virtual void OnSaveViewState(CArchive& ar);
 ```
 

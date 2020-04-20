@@ -280,7 +280,7 @@ For more information about notification messages sent when the user presses the 
 
 This member function is called by the framework when the Cancel button is selected.
 
-```
+```cpp
 virtual void OnCancel();
 ```
 
@@ -320,7 +320,7 @@ After this member function returns successfully, the framework will call the pag
 
 This member function is called by the framework when the user chooses either the OK or the Apply Now button, immediately after the framework calls [OnKillActive](#onkillactive).
 
-```
+```cpp
 virtual void OnOK();
 ```
 
@@ -362,7 +362,7 @@ The default implementation of `OnQueryCancel` returns TRUE.
 
 This member function is called by the framework when the user chooses the Cancel button.
 
-```
+```cpp
 virtual void OnReset();
 ```
 

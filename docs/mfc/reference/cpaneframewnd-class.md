@@ -127,7 +127,7 @@ If you derive a class from `CPaneFrameWnd`, you must tell the framework how to c
 
 Adds a pane.
 
-```
+```cpp
 virtual void AddPane(CBasePane* pWnd);
 ```
 
@@ -162,13 +162,13 @@ Nonzero if the method was successful; otherwise 0.
 
 Adjusts the layout of the mini-frame window.
 
-```
+```cpp
 virtual void AdjustLayout();
 ```
 
 ## <a name="adjustpaneframes"></a> CPaneFrameWnd::AdjustPaneFrames
 
-```
+```cpp
 virtual void AdjustPaneFrames();
 ```
 
@@ -178,7 +178,7 @@ virtual void AdjustPaneFrames();
 
 Calculates the size of the borders for a miniframe window.
 
-```
+```cpp
 virtual void CalcBorderSize(CRect& rectBorderSize) const;
 ```
 
@@ -195,7 +195,7 @@ This method is called by the framework to calculate the size of the border of a 
 
 Calculate the expected rectangle of a docked window.
 
-```
+```cpp
 virtual void CalcExpectedDockedRect(
     CWnd* pWndToDock,
     CPoint ptMouse,
@@ -256,7 +256,7 @@ Nonzero if the mini-frame can be docked to *pDockingBar*; otherwise 0.
 
 ## <a name="checkgrippervisibility"></a> CPaneFrameWnd::CheckGripperVisibility
 
-```
+```cpp
 virtual void CheckGripperVisibility();
 ```
 
@@ -266,7 +266,7 @@ virtual void CheckGripperVisibility();
 
 Converts the pane to a tabbed document.
 
-```
+```cpp
 virtual void ConvertToTabbedDocument();
 ```
 
@@ -434,7 +434,7 @@ Call this method to determine the height of a mini-frame window. By default, the
 
 Calculates the bounding rectangle of a mini-frame window caption.
 
-```
+```cpp
 virtual void GetCaptionRect(CRect& rectCaption) const;
 ```
 
@@ -735,7 +735,7 @@ TRUE if docking is possible; otherwise, FALSE.
 
 Determines whether a mini-frame window should be rolled up or down.
 
-```
+```cpp
 virtual void OnCheckRollState();
 ```
 
@@ -749,7 +749,7 @@ By default, the framework calls [CPaneFrameWnd::IsRollUp](#isrollup) and [CPaneF
 
 Docks the mini-frame window at its most recent position.
 
-```
+```cpp
 virtual void OnDockToRecentPos();
 ```
 
@@ -757,7 +757,7 @@ virtual void OnDockToRecentPos();
 
 Draws the borders of a mini-frame window.
 
-```
+```cpp
 virtual void OnDrawBorder(CDC* pDC);
 ```
 
@@ -774,7 +774,7 @@ This method is called by the framework to draw the borders of the mini-frame win
 
 Stops the rollup timer.
 
-```
+```cpp
 virtual void OnKillRollUpTimer();
 ```
 
@@ -782,7 +782,7 @@ virtual void OnKillRollUpTimer();
 
 Moves the mini-frame window by a specified offset.
 
-```
+```cpp
 virtual void OnMovePane(
     CPane* pBar,
     CPoint ptOffset);
@@ -800,7 +800,7 @@ virtual void OnMovePane(
 
 Adjusts the layout of a pane inside a mini-frame window.
 
-```
+```cpp
 virtual void OnPaneRecalcLayout();
 ```
 
@@ -814,7 +814,7 @@ By default, the pane is positioned to cover the complete client area of the mini
 
 Sets the rollup timer.
 
-```
+```cpp
 virtual void OnSetRollUpTimer();
 ```
 
@@ -822,7 +822,7 @@ virtual void OnSetRollUpTimer();
 
 Called by the framework when a pane in the mini-frame window is hidden or displayed.
 
-```
+```cpp
 virtual void OnShowPane(
     CDockablePane* pBar,
     BOOL bShow);
@@ -886,7 +886,7 @@ Call this method to obtain a pane that contains the given point.
 
 Redraws all mini-frame windows.
 
-```
+```cpp
 static void RedrawAll();
 ```
 
@@ -898,7 +898,7 @@ This method updates all mini-frame windows by calling [CWnd::RedrawWindow](../..
 
 Called by the framework to remove non-valid panes.
 
-```
+```cpp
 virtual void RemoveNonValidPanes();
 ```
 
@@ -906,7 +906,7 @@ virtual void RemoveNonValidPanes();
 
 Removes a pane from the mini-frame window.
 
-```
+```cpp
 virtual void RemovePane(
     CBasePane* pWnd,
     BOOL bDestroy = FALSE,
@@ -932,7 +932,7 @@ The framework can destroy mini-frame windows immediately or after a certain dela
 
 Replaces one pane with another.
 
-```
+```cpp
 virtual void ReplacePane(
     CBasePane* pBarOrg,
     CBasePane* pBarReplaceWith);
@@ -972,7 +972,7 @@ TRUE if the pane state was saved successfully; otherwise FALSE.
 
 Sets caption buttons.
 
-```
+```cpp
 virtual void SetCaptionButtons(DWORD dwButtons);
 ```
 
@@ -1030,7 +1030,7 @@ void SetDockingTimer(UINT nTimeOut);
 
 Sets the docking state.
 
-```
+```cpp
 virtual void SetDockState(CDockingManager* pDockManager);
 ```
 
@@ -1087,7 +1087,7 @@ TRUE if the mini-frame window is undocked; FALSE if it is docked.
 
 Adjusts the size of a mini-frame window so that it is equivalent to a contained pane.
 
-```
+```cpp
 virtual void SizeToContent();
 ```
 
@@ -1114,7 +1114,7 @@ TRUE if the method was successful; otherwise, FALSE.
 
 ## <a name="storerecentdocksiteinfo"></a> CPaneFrameWnd::StoreRecentDockSiteInfo
 
-```
+```cpp
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```
 
@@ -1126,7 +1126,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 
 ## <a name="storerecenttabrelatedinfo"></a> CPaneFrameWnd::StoreRecentTabRelatedInfo
 
-```
+```cpp
 virtual void StoreRecentTabRelatedInfo(
     CDockablePane* pDockingBar,
     CDockablePane* pTabbedBar);

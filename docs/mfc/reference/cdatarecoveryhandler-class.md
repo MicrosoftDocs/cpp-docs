@@ -399,7 +399,7 @@ The `Initialize` method also starts a timer to monitor when the next autosave oc
 
 Displays a dialog box to the user for each document that the `CDataRecoveryHandler` autosaved. The dialog box determines whether the user wants to restore the autosaved document.
 
-```
+```cpp
 virtual void QueryRestoreAutosavedDocuments();
 ```
 
@@ -514,7 +514,7 @@ This method saves only the list of open documents. The method [CDataRecoveryHand
 
 Sets the time between autosave cycles in milliseconds.
 
-```
+```cpp
 Virtual void SetAutosaveInterval(int nAutosaveInterval);
 ```
 
@@ -527,7 +527,7 @@ Virtual void SetAutosaveInterval(int nAutosaveInterval);
 
 Sets the directory where autosaved files are stored.
 
-```
+```cpp
 virtual void SetAutosavePath(const CString& strAutosavePath);
 ```
 
@@ -546,7 +546,7 @@ Changing the autosave directory does not move currently autosaved files.
 
 Sets the unique restart identifier for this instance of the `CDataRecoveryHandler`.
 
-```
+```cpp
 virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
 ```
 
@@ -565,7 +565,7 @@ The restart manager records information about the open documents in the registry
 
 Sets whether the `CDataRecoveryHandler` saves the open document information to the Windows registry during the current idle cycle.
 
-```
+```cpp
 virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
 ```
 
@@ -580,7 +580,7 @@ virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
 
 Sets whether the previous exit of the application was caused by the restart manager.
 
-```
+```cpp
 virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
 ```
 

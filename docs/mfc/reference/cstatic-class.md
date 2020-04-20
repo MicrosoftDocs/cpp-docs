@@ -140,7 +140,7 @@ CStatic();
 
 Called by the framework to draw an owner-drawn static control.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 

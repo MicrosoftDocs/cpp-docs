@@ -483,7 +483,7 @@ If permission is denied, the control must not let the value of the property chan
 
 Translates the coordinates of *pPoint* into parent coordinates.
 
-```
+```cpp
 virtual void ClientToParent(
     LPCRECT lprcBounds,
     LPPOINT pPoint) const;
@@ -554,7 +554,7 @@ Upon receiving this notification, the control's container obtains the new set of
 
 Called by the framework after the stock Error event has been handled (unless the event handler has suppressed the display of the error).
 
-```
+```cpp
 virtual void DisplayError(
     SCODE scode,
     LPCTSTR lpszDescription,
@@ -604,7 +604,7 @@ This function is supported by the `COleControl` base class as a stock method, ca
 
 Called by the framework when loading or storing a control from a persistent storage representation, such as a stream or property set.
 
-```
+```cpp
 virtual void DoPropExchange(CPropExchange* pPX);
 ```
 
@@ -1273,7 +1273,7 @@ Usually implemented by the [IMPLEMENT_OLECREATE_EX](class-factories-and-licensin
 
 Retrieves the difference between the upper left corner of the control's rectangular area and the upper left corner of its client area.
 
-```
+```cpp
 virtual void GetClientOffset(long* pdxOffset, long* pdyOffset) const;
 ```
 
@@ -1293,7 +1293,7 @@ The OLE control has a rectangular area within its container. The client area of 
 
 Retrieves the size of the control's client area.
 
-```
+```cpp
 virtual void GetClientRect(LPRECT lpRect) const;
 ```
 
@@ -1526,7 +1526,7 @@ The OLE control's window handle, if any; otherwise NULL.
 
 Called by the framework to obtain a short string that describes the purpose of the menu item identified by *nID*.
 
-```
+```cpp
 virtual void GetMessageString(
     UINT nID,
     CString& rMessage) const;
@@ -1903,7 +1903,7 @@ Note that every locking of the control must be paired with an unlocking of the c
 
 Called by the framework when an ambient property of the container has changed value.
 
-```
+```cpp
 virtual void OnAmbientPropertyChange(DISPID dispid);
 ```
 
@@ -1916,7 +1916,7 @@ The dispatch ID of the ambient property that changed, or DISPID_UNKNOWN if multi
 
 Called by the framework when the stock Appearance property value has changed.
 
-```
+```cpp
 virtual void OnAppearanceChanged ();
 ```
 
@@ -1928,7 +1928,7 @@ Override this function if you want notification after this property changes. The
 
 Called by the framework when the stock BackColor property value has changed.
 
-```
+```cpp
 virtual void OnBackColorChanged();
 ```
 
@@ -1940,7 +1940,7 @@ Override this function if you want notification after this property changes. The
 
 Called by the framework when the stock BorderStyle property value has changed.
 
-```
+```cpp
 virtual void OnBorderStyleChanged();
 ```
 
@@ -1954,7 +1954,7 @@ Override this function if you want notification after this property changes.
 
 Called by the framework when a mouse button has been clicked or the DoClick stock method has been invoked.
 
-```
+```cpp
 virtual void OnClick(USHORT iButton);
 ```
 
@@ -1979,7 +1979,7 @@ Override this member function to modify or extend the default handling.
 
 Called by the framework when the container has called the control's `IOleControl::Close` function.
 
-```
+```cpp
 virtual void OnClose(DWORD dwSaveOption);
 ```
 
@@ -2038,7 +2038,7 @@ Override this function to change the default handling of verb.
 
 Called by the framework to draw the OLE control in the specified bounding rectangle using the specified device context.
 
-```
+```cpp
 virtual void OnDraw(
     CDC* pDC,
     const CRect& rcBounds,
@@ -2064,7 +2064,7 @@ The rectangular area of the control that is invalid.
 
 Called by the framework to draw the OLE control in the specified bounding rectangle using the specified metafile device context.
 
-```
+```cpp
 virtual void OnDrawMetafile(
     CDC* pDC,
     const CRect& rcBounds);
@@ -2120,7 +2120,7 @@ This function is typically used as the handler function for an ON_OLEVERB messag
 
 Called by the framework when the stock Enabled property value has changed.
 
-```
+```cpp
 virtual void OnEnabledChanged();
 ```
 
@@ -2155,7 +2155,7 @@ Override this function to change the default way of enumerating verbs.
 
 Called by the framework when an event handler is connected to or disconnected from an OLE control.
 
-```
+```cpp
 virtual void OnEventAdvise(BOOL bAdvise);
 ```
 
@@ -2168,7 +2168,7 @@ TRUE indicates that an event handler has been connected to the control. FALSE in
 
 Called by the framework when the stock Font property value has changed.
 
-```
+```cpp
 virtual void OnFontChanged();
 ```
 
@@ -2186,7 +2186,7 @@ Override this function if you want notification after this property changes.
 
 Called by the framework when the stock ForeColor property value has changed.
 
-```
+```cpp
 virtual void OnForeColorChanged();
 ```
 
@@ -2200,7 +2200,7 @@ Override this function if you want notification after this property changes.
 
 Called by the framework after the container calls `IOleControl::FreezeEvents`.
 
-```
+```cpp
 virtual void OnFreezeEvents(BOOL bFreeze);
 ```
 
@@ -2251,7 +2251,7 @@ Override this function to do any special processing of this request.
 
 Called by the framework when the control's container has requested information about the control.
 
-```
+```cpp
 virtual void OnGetControlInfo(LPCONTROLINFO pControlInfo);
 ```
 
@@ -2512,7 +2512,7 @@ Override this function if your control uses two-pass drawing. The default implem
 
 Called by the framework when the control is UI deactivated.
 
-```
+```cpp
 virtual void OnHideToolBars();
 ```
 
@@ -2524,7 +2524,7 @@ The implementation should hide all toolbars displayed by `OnShowToolbars`.
 
 Called by the container for the inactive object under the mouse pointer on receipt of a WM_MOUSEMOVE message.
 
-```
+```cpp
 virtual void OnInactiveMouseMove(
     LPCRECT lprcBounds,
     long x,
@@ -2592,7 +2592,7 @@ Note that window client coordinates (pixels) are used to pass the mouse cursor p
 
 Called by the framework after a stock KeyDown event has been processed.
 
-```
+```cpp
 virtual void OnKeyDownEvent(
     USHORT nChar,
     USHORT nShiftState);
@@ -2620,7 +2620,7 @@ Override this function if your control needs access to the key information after
 
 Called by the framework after the stock KeyPress event has been fired.
 
-```
+```cpp
 virtual void OnKeyPressEvent(USHORT nChar);
 ```
 
@@ -2639,7 +2639,7 @@ Override this function if you want notification after this event occurs.
 
 Called by the framework after a stock KeyDown event has been processed.
 
-```
+```cpp
 virtual void OnKeyUpEvent(
     USHORT nChar,
     USHORT nShiftState);
@@ -2697,7 +2697,7 @@ Override this function to provide a way to invoke your control's property pages 
 
 Called by the framework when the container has detected that a mnemonic key of the OLE control has been pressed.
 
-```
+```cpp
 virtual void OnMnemonic(LPMSG pMsg);
 ```
 
@@ -2924,7 +2924,7 @@ For more information, see the `FORMATETC` structure in the Windows SDK.
 
 Called by the framework when the control's properties should be set to their default values.
 
-```
+```cpp
 virtual void OnResetState();
 ```
 
@@ -2938,7 +2938,7 @@ The control writer can insert initialization code for the OLE control in this ov
 
 Called by the framework when the container has called the control's `IOleControl::SetClientSite` function.
 
-```
+```cpp
 virtual void OnSetClientSite();
 ```
 
@@ -3037,7 +3037,7 @@ Override this function to alter the default behavior of this function.
 
 Called by the framework when the control has been UI activated.
 
-```
+```cpp
 virtual void OnShowToolBars();
 ```
 
@@ -3049,7 +3049,7 @@ The default implementation does nothing.
 
 Called by the framework when the stock Caption or Text property value has changed.
 
-```
+```cpp
 virtual void OnTextChanged();
 ```
 
@@ -3272,7 +3272,7 @@ The application must call `ReleaseDC` for each call to [GetDC](#getdc).
 
 Sets the parent of the control.
 
-```
+```cpp
 virtual void ReparentControlWindow(
     HWND hWndOuter,
     HWND hWndParent);
@@ -3622,7 +3622,7 @@ For more information on using this property and other related properties, see th
 
 Called by the framework to initialize the list of data formats supported by the control.
 
-```
+```cpp
 virtual void SetInitialDataFormats();
 ```
 

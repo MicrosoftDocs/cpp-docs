@@ -79,7 +79,7 @@ In most cases, you do not have to create a `CKeyboardManager` directly. By defau
 
 Frees the `CKeyboardManager` resources and clears all shortcut key mappings.
 
-```
+```cpp
 static void CleanUp();
 ```
 
@@ -264,7 +264,7 @@ If you do not specify a default window, the main frame window will be used as th
 
 Shows all the shortcut keys associated with menu commands.
 
-```
+```cpp
 static void ShowAllAccelerators(
     BOOL bShowAll = TRUE,
     LPCTSTR lpszDelimiter = _afxDefaultAcceleratorDelimiter);

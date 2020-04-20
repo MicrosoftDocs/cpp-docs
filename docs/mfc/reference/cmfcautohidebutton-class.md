@@ -262,7 +262,7 @@ TRUE if the button is visible; FALSE otherwise.
 
 The framework calls this method when it draws the auto-hide button.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 
@@ -279,7 +279,7 @@ If you want to customize the appearance of auto-hide buttons in your application
 
 The framework calls this method when it draws the border of an auto-hide button.
 
-```
+```cpp
 virtual void OnDrawBorder(
     CDC* pDC,
     CRect rectBounds,
@@ -305,7 +305,7 @@ If you want to customize the border of each auto-hide button in your application
 
 The framework calls this method when it fills the background of an auto-hide button.
 
-```
+```cpp
 virtual void OnFillBackground(
     CDC* pDC,
     CRect rect);
@@ -340,7 +340,7 @@ void ShowAttachedWindow(BOOL bShow);
 
 Shows or hides the auto-hide button.
 
-```
+```cpp
 virtual void ShowButton(BOOL bShow);
 ```
 
@@ -377,7 +377,7 @@ void ReplacePane(CDockablePane* pNewBar);
 
 Disable auto-hide mode.
 
-```
+```cpp
 virtual void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup);
 ```
 
@@ -392,7 +392,7 @@ virtual void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup);
 
 Highlights the auto hide button.
 
-```
+```cpp
 virtual void HighlightButton(BOOL bHighlight);
 ```
 

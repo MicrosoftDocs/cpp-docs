@@ -301,7 +301,7 @@ After constructing the object, you must call its `Create` member function to cre
 
 Closes the socket.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -863,7 +863,7 @@ SOCKET m_hSocket;
 
 Called by the framework to notify a listening socket that it can accept pending connection requests by calling the [Accept](#accept) member function.
 
-```
+```cpp
 virtual void OnAccept(int nErrorCode);
 ```
 
@@ -884,7 +884,7 @@ For more information, see [Windows Sockets: Socket Notifications](../../mfc/wind
 
 Called by the framework to notify this socket that the connected socket is closed by its process.
 
-```
+```cpp
 virtual void OnClose(int nErrorCode);
 ```
 
@@ -909,7 +909,7 @@ For more information, see [Windows Sockets: Socket Notifications](../../mfc/wind
 
 Called by the framework to notify this connecting socket that its connection attempt is completed, whether successfully or in error.
 
-```
+```cpp
 virtual void OnConnect(int nErrorCode);
 ```
 
@@ -963,7 +963,7 @@ For more information, see [Windows Sockets: Socket Notifications](../../mfc/wind
 
 Called by the framework to notify the receiving socket that the sending socket has out-of-band data to send.
 
-```
+```cpp
 virtual void OnOutOfBandData(int nErrorCode);
 ```
 
@@ -986,7 +986,7 @@ MFC supports out-of-band data, but users of class `CAsyncSocket` are discouraged
 
 Called by the framework to notify this socket that there is data in the buffer that can be retrieved by calling the `Receive` member function.
 
-```
+```cpp
 virtual void OnReceive(int nErrorCode);
 ```
 
@@ -1011,7 +1011,7 @@ For more information, see [Windows Sockets: Socket Notifications](../../mfc/wind
 
 Called by the framework to notify the socket that it can now send data by calling the `Send` member function.
 
-```
+```cpp
 virtual void OnSend(int nErrorCode);
 ```
 

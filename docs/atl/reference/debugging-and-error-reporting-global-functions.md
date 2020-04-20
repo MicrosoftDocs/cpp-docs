@@ -156,7 +156,7 @@ The string *lpszDesc* is used as the text description of the error. When the cli
 
 Call this function to signal an error based on a HRESULT status code.
 
-```
+```cpp
 __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 ```
 
@@ -193,7 +193,7 @@ For ATL projects, it is possible to provide your own implementation of this func
 
 Call this function to signal an error based on the result of the Windows function `GetLastError`.
 
-```
+```cpp
 inline void AtlThrowLastWin32();
 ```
 

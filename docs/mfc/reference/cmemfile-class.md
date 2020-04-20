@@ -179,7 +179,7 @@ Calling this function also closes the `CMemFile`. You can reattach the memory bl
 
 This function is called by `CMemFile` member functions.
 
-```
+```cpp
 virtual void Free(BYTE* lpMem);
 ```
 
@@ -196,7 +196,7 @@ Override this function to implement custom memory deallocation. If you override 
 
 This function is called by several of the `CMemFile` member functions.
 
-```
+```cpp
 virtual void GrowFile(SIZE_T dwNewLen);
 ```
 

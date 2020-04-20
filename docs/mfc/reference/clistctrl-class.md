@@ -534,7 +534,7 @@ Nonzero if successful; otherwise zero.
 
 Called by the framework when a visual aspect of an owner-draw list view control changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 

@@ -322,7 +322,7 @@ TRUE if Theme API is enabled; otherwise FALSE.
 
 Fills the background of the rebar control by using the current Windows theme.
 
-```
+```cpp
 virtual void FillReBarPane(
     CDC* pDC,
     CBasePane* pBar,

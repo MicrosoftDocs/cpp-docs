@@ -128,7 +128,7 @@ TRUE if successful; otherwise FALSE.
 
 Called by a Rich Preview handler when it needs to destroy this control.
 
-```
+```cpp
 virtual void Destroy();
 ```
 
@@ -138,7 +138,7 @@ virtual void Destroy();
 
 Called by the framework to render the preview.
 
-```
+```cpp
 virtual void DoPaint(HDC hdc);
 ```
 
@@ -153,7 +153,7 @@ A handle to a device context for painting.
 
 Sets input focus to this control.
 
-```
+```cpp
 virtual void Focus();
 ```
 
@@ -225,7 +225,7 @@ Always returns 0.
 
 Tells this control to redraw.
 
-```
+```cpp
 virtual void Redraw();
 ```
 
@@ -235,7 +235,7 @@ virtual void Redraw();
 
 Sets a new parent for this control.
 
-```
+```cpp
 virtual void SetHost(HWND hWndParent);
 ```
 
@@ -250,7 +250,7 @@ A handle to the new parent window.
 
 Called by a Rich Preview handler when it needs to set visuals of rich preview content.
 
-```
+```cpp
 virtual void SetPreviewVisuals(
     COLORREF clrBack,
     COLORREF clrText,
@@ -274,7 +274,7 @@ Font used to display text in the preview window.
 
 Sets a new bounding rectangle for this control.
 
-```
+```cpp
 virtual void SetRect(const RECT* prc, BOOL bRedraw);
 ```
 

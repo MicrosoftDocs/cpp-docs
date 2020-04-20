@@ -266,7 +266,7 @@ Throws an Internet exception.
 
 ### Syntax
 
-```
+```cpp
    void AFXAPI AfxThrowInternetException(  DWORD dwContext,  DWORD dwError = 0 );
 ```
 

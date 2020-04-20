@@ -82,7 +82,7 @@ Calls the [CComControlBase](ccomcontrolbase-class.md#ccomcontrolbase) constructo
 
 Retrieves a pointer to the requested interface.
 
-```
+```cpp
 virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 ```
 

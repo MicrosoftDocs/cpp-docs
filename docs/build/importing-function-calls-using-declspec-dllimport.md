@@ -41,7 +41,7 @@ Therefore, using **__declspec(dllimport)** is better because the linker does not
 
 So now this code:
 
-```
+```cpp
 __declspec(dllimport) void func1(void);
 int main(void)
 {

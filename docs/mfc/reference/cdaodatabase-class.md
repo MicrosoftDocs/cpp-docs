@@ -161,7 +161,7 @@ You might find it convenient to embed the `CDaoDatabase` object in your document
 
 Call this member function to disconnect from a database and close any open recordsets, tabledefs, and querydefs associated with the database.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -181,7 +181,7 @@ If the database object is defined outside the scope of a function, and you exit 
 
 To create a new Microsoft Jet (.MDB) database, call this member function after you construct a `CDaoDatabase` object.
 
-```
+```cpp
 virtual void Create(
     LPCTSTR lpszName,
     LPCTSTR lpszLocale = dbLangGeneral,
@@ -751,7 +751,7 @@ Use this pointer if you need to access the workspace directly — for example, t
 
 You must call this member function to initialize a newly constructed `CDaoDatabase` object that represents an existing database.
 
-```
+```cpp
 virtual void Open(
     LPCTSTR lpszName,
     BOOL bExclusive = FALSE,

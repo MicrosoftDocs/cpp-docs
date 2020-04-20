@@ -219,7 +219,7 @@ CMFCRibbonCategory(
 
 Copies the state of the specified [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) to the current [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.
 
-```
+```cpp
 virtual void CopyFrom(CMFCRibbonCategory& src);
 ```
 
@@ -936,7 +936,7 @@ Returns TRUE if the message was handled, or FALSE if not.
 
 Invokes cancel mode in all the `CMFCRibbonPanel` elements of the `CMFCRibbonCategory`.
 
-```
+```cpp
 virtual void OnCancelMode();
 ```
 
@@ -946,7 +946,7 @@ virtual void OnCancelMode();
 
 Called by the framework to draw the ribbon category.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 
@@ -1001,7 +1001,7 @@ TRUE if the method was successful; otherwise FALSE.
 
 Called by the framework to draw the border of a popup menu.
 
-```
+```cpp
 virtual void OnDrawMenuBorder(
     CDC* pDC,
     CMFCRibbonPanelMenuBar* pMenuBar);
@@ -1057,7 +1057,7 @@ Pointer to a ribbon element if the method was successful; otherwise NULL.
 
 Called by the framework when the user releases the left mouse button and the pointer is over the ribbon category.
 
-```
+```cpp
 virtual void OnLButtonUp(CPoint point);
 ```
 
@@ -1072,7 +1072,7 @@ virtual void OnLButtonUp(CPoint point);
 
 Called by the framework when the pointer moves on the ribbon bar in order to update the ribbon category display.
 
-```
+```cpp
 virtual void OnMouseMove(CPoint point);
 ```
 
@@ -1087,7 +1087,7 @@ virtual void OnMouseMove(CPoint point);
 
 Called by the framework when the layout changes direction.
 
-```
+```cpp
 virtual void OnRTLChanged(BOOL bIsRTL);
 ```
 
@@ -1128,7 +1128,7 @@ TRUE if the ribbon category moved in a horizontal direction; otherwise FALSE.
 
 Calls the `OnUpdateCmdUI` member function in each of the `CMFCRibbonPanel` elements of the `CMFCRibbonCategory` to enable or disable the user-interface elements in them.
 
-```
+```cpp
 virtual void OnUpdateCmdUI(
     CMFCRibbonCmdUI* pCmdUI,
     CFrameWnd* pTarget,
@@ -1152,7 +1152,7 @@ virtual void OnUpdateCmdUI(
 
 Adjusts the layout of all controls on the ribbon category.
 
-```
+```cpp
 virtual void RecalcLayout(CDC* pDC);
 ```
 
@@ -1189,7 +1189,7 @@ TRUE if the method was successful; otherwise, FALSE.
 
 Adjusts the layout of all controls on the ribbon panels that are contained in the ribbon category.
 
-```
+```cpp
 virtual void ReposPanels(CDC* pDC);
 ```
 

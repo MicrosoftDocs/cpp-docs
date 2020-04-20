@@ -107,7 +107,7 @@ For more information about customization mode, see [CMFCToolBar::IsCustomizeMode
 
 Called by the framework when the user drags an object outside of the tab window that has focus.
 
-```
+```cpp
 virtual void OnDragLeave(CWnd* pWnd);
 ```
 

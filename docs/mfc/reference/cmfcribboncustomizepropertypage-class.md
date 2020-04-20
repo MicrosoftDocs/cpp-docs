@@ -104,7 +104,7 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 
 Calleld by the system when a user clicks **OK** on the **Customize** dialog box.
 
-```
+```cpp
 virtual void OnOK();
 ```
 

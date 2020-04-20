@@ -930,7 +930,7 @@ The `DeleteDC` function is generally used to delete device contexts created with
 
 Called automatically by the `CWinApp` idle-time handler, `DeleteTempMap` deletes any temporary `CDC` objects created by `FromHandle`, but does not destroy the device context handles ( `hDC`s) temporarily associated with the `CDC` objects.
 
-```
+```cpp
 static void PASCAL DeleteTempMap();
 ```
 
@@ -4816,7 +4816,7 @@ Nonzero if any portion of the given rectangle lies within the clipping region; o
 
 Call this member function to set `m_hAttribDC` to NULL.
 
-```
+```cpp
 virtual void ReleaseAttribDC();
 ```
 
@@ -4828,7 +4828,7 @@ This does not cause a `Detach` to occur. Only the output device context is attac
 
 Call this member function to set the `m_hDC` member to NULL.
 
-```
+```cpp
 virtual void ReleaseOutputDC();
 ```
 
@@ -5381,7 +5381,7 @@ The default direction is counterclockwise. The `SetArcDirection` function specif
 
 Call this function to set the attribute device context, `m_hAttribDC`.
 
-```
+```cpp
 virtual void SetAttribDC(HDC hDC);
 ```
 
@@ -5736,7 +5736,7 @@ The miter length is defined as the distance from the intersection of the line wa
 
 Call this member function to set the output device context, `m_hDC`.
 
-```
+```cpp
 virtual void SetOutputDC(HDC hDC);
 ```
 

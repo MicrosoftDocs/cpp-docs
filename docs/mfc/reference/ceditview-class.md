@@ -242,7 +242,7 @@ A pointer to the edit control's buffer.
 
 Searches the text in the buffer for the text specified by *lpszFind*, in the direction specified by *bNext*, with case sensitivity specified by *bCase*.
 
-```
+```cpp
 virtual void OnFindNext(
     LPCTSTR lpszFind,
     BOOL bNext,
@@ -270,7 +270,7 @@ Override `OnFindNext` to change the way a `CEditView`-derived object searches te
 
 `CEditView` calls `OnReplaceAll` when the user selects the Replace All button in the standard Replace dialog box.
 
-```
+```cpp
 virtual void OnReplaceAll(
     LPCTSTR lpszFind,
     LPCTSTR lpszReplace,
@@ -300,7 +300,7 @@ Override `OnReplaceAll` to change the way a `CEditView`-derived object replaces 
 
 `CEditView` calls `OnReplaceSel` when the user selects the Replace button in the standard Replace dialog box.
 
-```
+```cpp
 virtual void OnReplaceSel(
     LPCTSTR lpszFind,
     BOOL bNext,
@@ -332,7 +332,7 @@ Override `OnReplaceSel` to change the way a `CEditView`-derived object replaces 
 
 Override this function to change the default implementation, which calls the Windows function `MessageBeep`.
 
-```
+```cpp
 virtual void OnTextNotFound(LPCTSTR lpszFind);
 ```
 

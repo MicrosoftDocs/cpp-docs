@@ -317,7 +317,7 @@ virtual BOOL OnCommand(
 
 ## <a name="ondraw"></a> CMFCDesktopAlertWnd::OnDraw
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 

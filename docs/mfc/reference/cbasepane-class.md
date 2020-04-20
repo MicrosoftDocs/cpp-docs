@@ -196,7 +196,7 @@ The following example demonstrates how to use various methods in the `CBasePane`
 
 `CBasePane` does not use this method.
 
-```
+```cpp
 virtual void AccNotifyObjectFocusEvent(int);
 ```
 
@@ -228,7 +228,7 @@ For more information, see [CDockingManager Class](../../mfc/reference/cdockingma
 
 Redirects a call to the docking manager to adjust the docking layout.
 
-```
+```cpp
 virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```
 
@@ -247,7 +247,7 @@ For more information, see [CDockingManager::AdjustDockingLayout](../../mfc/refer
 
 Called by the framework to adjust the internal layout of a pane.
 
-```
+```cpp
 virtual void AdjustLayout();
 ```
 
@@ -464,7 +464,7 @@ The framework tries to set the input focus when a pane is docked or floated.
 
 Copies the state of a given pane.
 
-```
+```cpp
 virtual void CopyState(CBasePane* pOrgBar);
 ```
 
@@ -683,7 +683,7 @@ The default implementation returns TRUE.
 
 Fills the background of the pane.
 
-```
+```cpp
 virtual void DoPaint(CDC* pDC);
 ```
 
@@ -700,7 +700,7 @@ The default implementation calls the current visual manager to fill the backgrou
 
 Enables docking of the pane to the main frame.
 
-```
+```cpp
 virtual void EnableDocking(DWORD dwAlignment);
 ```
 
@@ -721,7 +721,7 @@ Call [CBasePane::GetEnabledAlignment](#getenabledalignment) to determine the doc
 
 Enables or disables the gripper. If the gripper is enabled, the user can drag it to reposition the pane.
 
-```
+```cpp
 virtual void EnableGripper(BOOL bEnable);
 ```
 
@@ -1404,7 +1404,7 @@ If you pass NULL as the *hdwp* parameter, this method moves the window normally.
 
 Called by the framework after the pane's parent changes.
 
-```
+```cpp
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```
 
@@ -1423,7 +1423,7 @@ The default implementation does nothing.
 
 Called by the framework just before the pane changes its parent window.
 
-```
+```cpp
 virtual void OnBeforeChangeParent(
     CWnd* pWndNewParent,
     BOOL bDelay=FALSE);
@@ -1447,7 +1447,7 @@ The default implementation does nothing.
 
 The framework calls this method when the caption is drawn.
 
-```
+```cpp
 virtual void OnDrawCaption();
 ```
 
@@ -1459,7 +1459,7 @@ This method has no functionality for the `CBasePane` class.
 
 This method is currently not used.
 
-```
+```cpp
 virtual void OnMovePaneDivider(CPaneDivider* /* unused */);
 ```
 
@@ -1472,7 +1472,7 @@ virtual void OnMovePaneDivider(CPaneDivider* /* unused */);
 
 Called by the framework when it builds a menu that has a list of panes.
 
-```
+```cpp
 virtual void OnPaneContextMenu(
     CWnd* pParentFrame,
     CPoint point);
@@ -1496,7 +1496,7 @@ Override this method to customize this behavior.
 
 Called by the framework when a pane is removed from its parent mini frame window.
 
-```
+```cpp
 virtual void OnRemoveFromMiniFrame(CPaneFrameWnd* pMiniFrame);
 ```
 
@@ -1564,7 +1564,7 @@ The `CBasePane`-derived object that contains the given point, or NULL if no pane
 
 `CBasePane` does not use this method.
 
-```
+```cpp
 virtual void RecalcLayout();
 ```
 
@@ -1649,7 +1649,7 @@ A pointer to the default [CFont Class](../../mfc/reference/cfont-class.md) objec
 
 Sets the control bar style.
 
-```
+```cpp
 virtual void SetControlBarStyle(DWORD dwNewStyle);
 ```
 
@@ -1690,7 +1690,7 @@ Initially, the docking mode is defined globally by [CDockingManager::m_dockModeG
 
 Sets the alignment for the pane.
 
-```
+```cpp
 virtual void SetPaneAlignment(DWORD dwAlignment);
 ```
 
@@ -1716,7 +1716,7 @@ The following table shows the possible values for *dwAlignment*:
 
 Sets the style of the pane.
 
-```
+```cpp
 virtual void SetPaneStyle(DWORD dwNewStyle);
 ```
 
@@ -1781,7 +1781,7 @@ If *pWndInsertAfter* is NULL, this method calls [CWnd::SetWindowPos](../../mfc/r
 
 Shows or hides the pane.
 
-```
+```cpp
 virtual void ShowPane(
     BOOL bShow,
     BOOL bDelay,
@@ -1831,7 +1831,7 @@ The size of the stretched pane.
 
 Removes the pane from the dock site, default slider, or mini-frame window where it is currently docked.
 
-```
+```cpp
 virtual void UndockPane(BOOL bDelay=FALSE);
 ```
 

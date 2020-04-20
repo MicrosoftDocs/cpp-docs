@@ -246,7 +246,7 @@ Enumerated value that corresponds to a given operating-system error value.
 
 Constructs a `CFileException` object corresponding to a given *nErrno* value, then throws the exception.
 
-```
+```cpp
 static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
 ```
 
@@ -266,7 +266,7 @@ A pointer to the string containing the name of the file that caused the exceptio
 
 Throws a `CFileException` corresponding to a given *lOsError* value. If the error code is unknown, then the function throws an exception coded as `CFileException::generic`.
 
-```
+```cpp
 static void PASCAL ThrowOsError(LONG lOsError, LPCTSTR lpszFileName = NULL);
 ```
 

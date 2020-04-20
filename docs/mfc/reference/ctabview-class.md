@@ -156,7 +156,7 @@ Override the *IsScrollBar* method in a *CTabView*-derived class and return TRUE 
 
 Called by the framework when the tab view is made active or inactive.
 
-```
+```cpp
 virtual void OnActivateView(CView* view);
 ```
 

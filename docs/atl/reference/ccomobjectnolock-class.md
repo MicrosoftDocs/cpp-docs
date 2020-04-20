@@ -95,7 +95,7 @@ Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md
 
 Retrieves a pointer to the requested interface.
 
-```
+```cpp
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```
 

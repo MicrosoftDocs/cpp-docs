@@ -134,7 +134,7 @@ Converting to canonical form involves converting unsafe characters and spaces to
 
 Call this method to clear all of the URL fields.
 
-```
+```cpp
 inline void Clear() throw();
 ```
 

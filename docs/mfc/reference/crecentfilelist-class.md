@@ -57,7 +57,7 @@ Files can be added to or deleted from the MRU file list, the file list can be re
 
 Adds a file to the most recently used (MRU) file list.
 
-```
+```cpp
 virtual void Add(LPCTSTR lpszPathName);
 
 virtual void Add(
@@ -199,7 +199,7 @@ Zero-based index of a `CString` in a set of `CString`s.
 
 Reads the most recently used (MRU) file list from the registry or the application's .INI file.
 
-```
+```cpp
 virtual void ReadList();
 ```
 
@@ -207,7 +207,7 @@ virtual void ReadList();
 
 Removes a file from the MRU file list.
 
-```
+```cpp
 virtual void Remove(int nIndex);
 ```
 
@@ -220,7 +220,7 @@ Zero-based index of the file to be removed from the most recently used (MRU) fil
 
 Updates the menu display of the MRU file list.
 
-```
+```cpp
 virtual void UpdateMenu(CCmdUI* pCmdUI);
 ```
 
@@ -233,7 +233,7 @@ A pointer to the [CCmdUI](../../mfc/reference/ccmdui-class.md) object for the mo
 
 Writes the most recently used (MRU) file list into the registry or the application's .INI file.
 
-```
+```cpp
 virtual void WriteList();
 ```
 

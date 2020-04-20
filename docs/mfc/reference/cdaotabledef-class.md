@@ -119,7 +119,7 @@ When you finish using a tabledef object, call its [Close](../../mfc/reference/cd
 
 Call this member function after you call [Create](#create) to create a new tabledef object to save the tabledef in the database.
 
-```
+```cpp
 virtual void Append();
 ```
 
@@ -171,7 +171,7 @@ After constructing the object, you must call the [Create](#create) or [Open](#op
 
 Call this member function to close and release the tabledef object.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -187,7 +187,7 @@ For related information, see the topic "Close Method" in DAO Help.
 
 Call this member function to create a new saved table.
 
-```
+```cpp
 virtual void Create(
     LPCTSTR lpszName,
     long lAttributes = 0,
@@ -707,7 +707,7 @@ Use this pointer if you need to access the DAO interface directly.
 
 Call this member function to open a tabledef previously saved in the database's TableDef's collection.
 
-```
+```cpp
 virtual void Open(LPCTSTR lpszName);
 ```
 

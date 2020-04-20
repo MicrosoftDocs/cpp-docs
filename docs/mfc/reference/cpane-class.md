@@ -133,7 +133,7 @@ When you derive a class from `CPane`, it can be docked in a [CDockSite](../../mf
 
 Immediately recalculates the layout of a pane.
 
-```
+```cpp
 virtual void AdjustSizeImmediate(BOOL bRecalcLayout = TRUE);
 ```
 
@@ -299,7 +299,7 @@ Override this method in a derived class and return FALSE if you want to prevent 
 
 Converts a dockable pane to a tabbed document.
 
-```
+```cpp
 virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```
 
@@ -316,7 +316,7 @@ Only dockable panes can be converted to tabbed documents. For information, see [
 
 Copies the state of a pane.
 
-```
+```cpp
 virtual void CopyState(CPane* pOrgBar);
 ```
 
@@ -723,7 +723,7 @@ The `CPane` class contains a `CMFCDragFrameImpl` object, `m_dragFrameImpl`, that
 
 Retrieves the minimum allowed size for the pane.
 
-```
+```cpp
 virtual void GetMinSize(CSize& size) const;
 ```
 
@@ -738,7 +738,7 @@ virtual void GetMinSize(CSize& size) const;
 
 Retrieves the title for the pane.
 
-```
+```cpp
 virtual void GetPaneName(CString& strName) const;
 ```
 
@@ -1015,7 +1015,7 @@ This method is used only for dockable panes.
 
 Called by the framework when the parent of a pane has changed.
 
-```
+```cpp
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```
 
@@ -1032,7 +1032,7 @@ This method is called by the framework when the parent of a pane has changed bec
 
 Called by the framework when a pane has been docked.
 
-```
+```cpp
 virtual void OnAfterDock(
     CBasePane* pBar,
     LPCRECT lpRect,
@@ -1054,7 +1054,7 @@ virtual void OnAfterDock(
 
 Called by the framework after a pane floats.
 
-```
+```cpp
 virtual void OnAfterFloat();
 ```
 
@@ -1066,7 +1066,7 @@ You can override this method in a derived class if you want to perform any proce
 
 Called by the framework when the parent of the pane is about to change.
 
-```
+```cpp
 virtual void OnBeforeChangeParent(
     CWnd* pWndNewParent,
     BOOL bDelay = FALSE);
@@ -1146,7 +1146,7 @@ This method is called by the framework when a pane is about to float. You can ov
 
 Called by the framework when the user presses the close button on the caption for the pane.
 
-```
+```cpp
 virtual void OnPressCloseButton();
 ```
 
@@ -1179,7 +1179,7 @@ The menu contains several items that enable you to specify the pane's behavior, 
 
 Recalculates layout information for the pane.
 
-```
+```cpp
 virtual void RecalcLayout();
 ```
 
@@ -1225,7 +1225,7 @@ When you override this method, also call the base method, and return FALSE if th
 
 Flags a pane as active.
 
-```
+```cpp
 virtual void SetActiveInGroup(BOOL bActive);
 ```
 
@@ -1298,7 +1298,7 @@ The *hot spot* is the point on the pane that the user selects and holds to move 
 
 Restores docking state information for the pane.
 
-```
+```cpp
 virtual void SetDockState(CDockingManager* pDockManager);
 ```
 
@@ -1317,7 +1317,7 @@ You can also call this method to set the docking state when you load pane inform
 
 Enables or disables the exclusive row mode.
 
-```
+```cpp
 virtual void SetExclusiveRowMode(BOOL bExclusive = TRUE);
 ```
 
@@ -1418,7 +1418,7 @@ If necessary, this method modifies *nStretchSize* to ensure that the pane does n
 
 Toggles auto-hide mode.
 
-```
+```cpp
 virtual void ToggleAutoHide();
 ```
 
@@ -1430,7 +1430,7 @@ Call this method to toggle auto-hide mode. A pane must be docked to a main frame
 
 Removes the pane from the dock site, default slider, or mini-frame window where it is currently docked.
 
-```
+```cpp
 virtual void UndockPane(BOOL bDelay = FALSE);
 ```
 

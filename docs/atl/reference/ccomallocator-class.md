@@ -37,7 +37,7 @@ This class is used by [CComHeapPtr](../../atl/reference/ccomheapptr-class.md) to
 
 Call this static function to allocate memory.
 
-```
+```cpp
 static void* Allocate(size_t nBytes) throw();
 ```
 
@@ -58,7 +58,7 @@ Allocates memory. See [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combasea
 
 Call this static function to free allocated memory.
 
-```
+```cpp
 static void Free(void* p) throw();
 ```
 
@@ -75,7 +75,7 @@ Frees the allocated memory. See [CoTaskMemFree](/windows/win32/api/combaseapi/nf
 
 Call this static function to reallocate memory.
 
-```
+```cpp
 static void* Reallocate(void* p, size_t nBytes) throw();
 ```
 

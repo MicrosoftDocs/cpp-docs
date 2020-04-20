@@ -103,7 +103,7 @@ This style is applied when a window is created.
 
 Called by the framework to draw the contents of the `CCtrlView` object using the specified device context.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 

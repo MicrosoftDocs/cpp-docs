@@ -577,7 +577,7 @@ ATL::CComPtr<IUIAnimationTransitionLibrary> m_pTransitionLibrary;
 
 Called by the framework when an animation for the specified group has just been scheduled.
 
-```
+```cpp
 virtual void OnAfterSchedule(CAnimationGroup* pGroup);
 ```
 
@@ -594,7 +594,7 @@ The default implementation removes keyframes from the specified group and transi
 
 Called by the framework when integer value of animation variable has changed.
 
-```
+```cpp
 virtual void OnAnimationIntegerValueChanged(
     CAnimationGroup* pGroup,
     CAnimationBaseObject* pObject,
@@ -628,7 +628,7 @@ This method is called if you enable animation variable events with EnableInteger
 
 Called by the framework in response to StatusChanged event from animation manager.
 
-```
+```cpp
 virtual void OnAnimationManagerStatusChanged(
     UI_ANIMATION_MANAGER_STATUS newStatus,
     UI_ANIMATION_MANAGER_STATUS previousStatus);
@@ -650,7 +650,7 @@ This method is called if you enable animation manager events with EnableAnimatio
 
 Called by the framework after an animation update is finished.
 
-```
+```cpp
 virtual void OnAnimationTimerPostUpdate();
 ```
 
@@ -662,7 +662,7 @@ This method is called if you enable timer event handlers using EnableAnimationTi
 
 Called by the framework before an animation update begins.
 
-```
+```cpp
 virtual void OnAnimationTimerPreUpdate();
 ```
 
@@ -674,7 +674,7 @@ This method is called if you enable timer event handlers using EnableAnimationTi
 
 Called by the framework when the rendering frame rate for an animation falls below a minimum desirable frame rate.
 
-```
+```cpp
 virtual void OnAnimationTimerRenderingTooSlow(UINT32 fps);
 ```
 
@@ -691,7 +691,7 @@ This method is called if you enable timer event handlers using EnableAnimationTi
 
 Called by the framework when value of animation variable has changed.
 
-```
+```cpp
 virtual void OnAnimationValueChanged(
     CAnimationGroup* pGroup,
     CAnimationBaseObject* pObject,
@@ -725,7 +725,7 @@ This method is called if you enable animation variable events with EnableValueCh
 
 Called by the framework right before the animation is scheduled.
 
-```
+```cpp
 virtual void OnBeforeAnimationStart(CAnimationGroup* pGroup);
 ```
 
@@ -862,7 +862,7 @@ This method is called if you enable priority comparison events using CAnimationC
 
 Called by the framework when storyboard status has changed.
 
-```
+```cpp
 virtual void OnStoryboardStatusChanged(
     CAnimationGroup* pGroup,
     UI_ANIMATION_STORYBOARD_STATUS newStatus,
@@ -888,7 +888,7 @@ This method is called if you enable storyboard events using CAnimationController
 
 Called by the framework when storyboard has been updated.
 
-```
+```cpp
 virtual void OnStoryboardUpdated(CAnimationGroup* pGroup);
 ```
 
@@ -1016,7 +1016,7 @@ If a related CWnd object is set, the animation controller can automatically upda
 
 Directs the animation manager to update the values of all animation variables.
 
-```
+```cpp
 virtual void UpdateAnimationManager();
 ```
 

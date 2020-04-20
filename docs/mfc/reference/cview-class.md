@@ -185,7 +185,7 @@ The default implementation of this function returns FALSE. Override this functio
 
 Called by the framework when the frame window containing the view is activated or deactivated.
 
-```
+```cpp
 virtual void OnActivateFrame(
     UINT nState,
     CFrameWnd* pFrameWnd);
@@ -213,7 +213,7 @@ Override this member function if you want to perform special processing when the
 
 Called by the framework when a view is activated or deactivated.
 
-```
+```cpp
 virtual void OnActivateView(
     BOOL bActivate,
     CView* pActivateView,
@@ -243,7 +243,7 @@ These parameters differ when [CFrameWnd::SetActiveView](../../mfc/reference/cfra
 
 Called by the framework at the beginning of a print or print preview job, after `OnPreparePrinting` has been called.
 
-```
+```cpp
 virtual void OnBeginPrinting(
     CDC* pDC,
     CPrintInfo* pInfo);
@@ -309,7 +309,7 @@ Override this function to prepare for future calls to the [OnDragOver](#ondragov
 
 Called by the framework during a drag operation when the mouse is moved out of the valid drop area for that window.
 
-```
+```cpp
 virtual void OnDragLeave();
 ```
 
@@ -401,7 +401,7 @@ Override this function when you want to provide special behavior for this event.
 
 Called by the framework to render an image of the document.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC) = 0;
 ```
 
@@ -527,7 +527,7 @@ For more information on setting the default menu command, see [SetMenuDefaultIte
 
 Called by the framework after a document has been printed or previewed.
 
-```
+```cpp
 virtual void OnEndPrinting(
     CDC* pDC,
     CPrintInfo* pInfo);
@@ -549,7 +549,7 @@ The default implementation of this function does nothing. Override this function
 
 Called by the framework when the user exits print preview mode.
 
-```
+```cpp
 virtual void OnEndPrintPreview(
     CDC* pDC,
     CPrintInfo* pInfo,
@@ -581,7 +581,7 @@ Always call the base class version of `OnEndPrintPreview` from your override, ty
 
 Called by the framework after the view is first attached to the document, but before the view is initially displayed.
 
-```
+```cpp
 virtual void OnInitialUpdate();
 ```
 
@@ -593,7 +593,7 @@ The default implementation of this function calls the [OnUpdate](#onupdate) memb
 
 Called by the framework before the [OnDraw](#ondraw) member function is called for screen display and before the [OnPrint](#onprint) member function is called for each page during printing or print preview.
 
-```
+```cpp
 virtual void OnPrepareDC(
     CDC* pDC,
     CPrintInfo* pInfo = NULL);
@@ -670,7 +670,7 @@ If you know how many pages the document contains, set the maximum page in `OnPre
 
 Called by the framework to print or preview a page of the document.
 
-```
+```cpp
 virtual void OnPrint(
     CDC* pDC,
     CPrintInfo* pInfo);
@@ -788,7 +788,7 @@ If the document width or height exceeds 32767 pixels, scrolling past 32767 will 
 
 Called by the framework after the view's document has been modified; this function is called by [CDocument::UpdateAllViews](../../mfc/reference/cdocument-class.md#updateallviews) and allows the view to update its display to reflect those modifications.
 
-```
+```cpp
 virtual void OnUpdate(
     CView* pSender,
     LPARAM lHint,

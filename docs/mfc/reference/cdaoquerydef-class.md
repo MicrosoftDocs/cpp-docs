@@ -127,7 +127,7 @@ For related information, see the topics "QueryDef Object", "QueryDefs Collection
 
 Call this member function after you call [Create](#create) to create a new querydef object.
 
-```
+```cpp
 virtual void Append();
 ```
 
@@ -190,7 +190,7 @@ When you finish with the querydef object, call its [Close](#close) member functi
 
 Call this member function when you finish using the querydef object.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -202,7 +202,7 @@ Closing the querydef releases the underlying DAO object but does not destroy the
 
 Call this member function to create a new saved query or a new temporary query.
 
-```
+```cpp
 virtual void Create(
     LPCTSTR lpszName = NULL,
     LPCTSTR lpszSQL = NULL);
@@ -226,7 +226,7 @@ If you do not supply a SQL statement in *lpszSQL*, you cannot run the query with
 
 Call this member function to run the query defined by the querydef object.
 
-```
+```cpp
 virtual void Execute(int nOptions = dbFailOnError);
 ```
 
@@ -629,7 +629,7 @@ This pointer is provided for completeness and consistency with the other classes
 
 Call this member function to open a querydef previously saved in the database's QueryDefs collection.
 
-```
+```cpp
 virtual void Open(LPCTSTR lpszName = NULL);
 ```
 
@@ -706,7 +706,7 @@ The default value for query timeouts is 60 seconds.
 
 Call this member function to set the value of a parameter in the querydef at run time.
 
-```
+```cpp
 virtual void SetParamValue(
     LPCTSTR lpszName,
     const COleVariant& varValue);

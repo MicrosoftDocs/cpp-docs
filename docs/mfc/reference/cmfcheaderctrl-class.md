@@ -200,7 +200,7 @@ Use the [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) method to enab
 
 Called by the framework to draw a header control column.
 
-```
+```cpp
 virtual void OnDrawItem(
     CDC* pDC,
     int iItem,
@@ -230,7 +230,7 @@ virtual void OnDrawItem(
 
 Called by the framework to draw the sort arrow.
 
-```
+```cpp
 virtual void OnDrawSortArrow(
     CDC* pDC,
     CRect rectArrow);
@@ -248,7 +248,7 @@ virtual void OnDrawSortArrow(
 
 Called by the framework to fill the background of a header control column.
 
-```
+```cpp
 virtual void OnFillBackground(CDC* pDC);
 ```
 

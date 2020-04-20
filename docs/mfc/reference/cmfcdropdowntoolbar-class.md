@@ -171,7 +171,7 @@ virtual BOOL LoadToolBar(
 
 ## <a name="onlbuttonup"></a> CMFCDropDownToolBar::OnLButtonUp
 
-```
+```cpp
 afx_msg void OnLButtonUp(
     UINT nFlags,
     CPoint point);
@@ -187,7 +187,7 @@ afx_msg void OnLButtonUp(
 
 ## <a name="onmousemove"></a> CMFCDropDownToolBar::OnMouseMove
 
-```
+```cpp
 afx_msg void OnMouseMove(
     UINT nFlags,
     CPoint point);
@@ -217,7 +217,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ## <a name="onupdatecmdui"></a> CMFCDropDownToolBar::OnUpdateCmdUI
 
-```
+```cpp
 virtual void OnUpdateCmdUI(
     CFrameWnd* pTarget,
     BOOL bDisableIfNoHndler);

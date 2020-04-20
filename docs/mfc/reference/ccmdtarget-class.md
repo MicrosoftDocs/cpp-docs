@@ -454,7 +454,7 @@ If you override `OnCmdMsg`, you must supply the appropriate value for *nCode*, t
 
 Called by the framework when the last OLE reference to or from the object is released.
 
-```
+```cpp
 virtual void OnFinalRelease();
 ```
 

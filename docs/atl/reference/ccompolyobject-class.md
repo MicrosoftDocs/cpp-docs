@@ -185,7 +185,7 @@ CComContainedObject<contained> m_contained;
 
 Retrieves a pointer to the requested interface.
 
-```
+```cpp
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 template <class Q>
 HRESULT QueryInterface(Q** pp);

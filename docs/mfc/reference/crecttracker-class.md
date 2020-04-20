@@ -72,7 +72,7 @@ For more information on using `CRectTracker`, see the article [Trackers](../../m
 
 Called by the framework when the tracking rectangle is resized by using a resize handle.
 
-```
+```cpp
 virtual void AdjustRect(
     int nHandle,
     LPRECT lpRect);
@@ -151,7 +151,7 @@ The style of the tracker determines how the drawing is done. See the constructor
 
 Called by the framework whenever the position of the tracker has changed while inside the `Track` or `TrackRubberBand` member function.
 
-```
+```cpp
 virtual void DrawTrackerRect(
     LPCRECT lpRect,
     CWnd* pWndClipTo,
@@ -326,7 +326,7 @@ When `CRectTracker::Track` or `CRectTracker::TrackRubberBand` is called with inv
 
 Called by the framework whenever the tracker rectangle has changed during a call to `Track`.
 
-```
+```cpp
 virtual void OnChangedRect(const CRect& rectOld);
 ```
 

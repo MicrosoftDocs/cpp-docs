@@ -83,7 +83,7 @@ This is an advanced member function that should be used in conjunction with an O
 
 Call this member function to enable or disable the user-interface item for this command.
 
-```
+```cpp
 virtual void Enable(BOOL bOn = TRUE);
 ```
 
@@ -154,7 +154,7 @@ NULL if the item is a menu or a non- `CWnd` object.
 
 Call this member function to set the user-interface item for this command to the appropriate check state.
 
-```
+```cpp
 virtual void SetCheck(int nCheck = 1);
 ```
 
@@ -171,7 +171,7 @@ This member function works for menu items and toolbar buttons. The indeterminate
 
 Call this member function to set the user-interface item for this command to the appropriate check state.
 
-```
+```cpp
 virtual void SetRadio(BOOL bOn = TRUE);
 ```
 
@@ -188,7 +188,7 @@ This member function operates like `SetCheck`, except that it operates on user-i
 
 Call this member function to set the text of the user-interface item for this command.
 
-```
+```cpp
 virtual void SetText(LPCTSTR lpszText);
 ```
 

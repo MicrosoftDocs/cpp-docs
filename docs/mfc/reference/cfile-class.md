@@ -96,7 +96,7 @@ For more information on using `CFile`, see the articles [Files in MFC](../../mfc
 
 Closes the file associated with this object and makes the file unavailable for reading or writing.
 
-```
+```cpp
 virtual void Abort();
 ```
 
@@ -214,7 +214,7 @@ The following code shows how to use a `CFile`.
 
 Closes the file associated with this object and makes the file unavailable for reading or writing.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -248,7 +248,7 @@ This function is equivalent to the C run-time function `_dup`.
 
 Forces any data remaining in the file buffer to be written to the file.
 
-```
+```cpp
 virtual void Flush();
 ```
 
@@ -442,7 +442,7 @@ The following example demonstrates this operation:
 
 Locks a range of bytes in an open file, throwing an exception if the file is already locked.
 
-```
+```cpp
 virtual void LockRange(
     ULONGLONG dwPos,
     ULONGLONG dwCount);
@@ -589,7 +589,7 @@ For another example, see [CFile::Open](#open).
 
 This static function deletes the file specified by the path.
 
-```
+```cpp
 static void PASCAL Remove(
     LPCTSTR lpszFileName,
     CAtlTransactionManager* pTM = NULL);
@@ -617,7 +617,7 @@ The `Remove` member function throws an exception if the connected file is open o
 
 This static function renames the specified file.
 
-```
+```cpp
 static void PASCAL Rename(
     LPCTSTR lpszOldName,
     LPCTSTR lpszNewName,
@@ -725,7 +725,7 @@ The length of the file in bytes.
 
 Call this function to specify the path of the file. For example, if the path of a file isn't available when a [CFile](../../mfc/reference/cfile-class.md) object is constructed, call `SetFilePath` to provide it.
 
-```
+```cpp
 virtual void SetFilePath(LPCTSTR lpszNewName);
 ```
 
@@ -747,7 +747,7 @@ Pointer to a string specifying the new path.
 
 Call this function to change the length of the file.
 
-```
+```cpp
 virtual void SetLength(ULONGLONG dwNewLen);
 ```
 
@@ -769,7 +769,7 @@ Desired length of the file in bytes. This value can be larger or smaller than th
 
 Sets the status of the file associated with this file location.
 
-```
+```cpp
 static void PASCAL SetStatus(
     LPCTSTR lpszFileName,
     const CFileStatus& status,
@@ -801,7 +801,7 @@ When you make a call to `SetStatus` in an attempt to change only the attributes 
 
 Unlocks a range of bytes in an open file.
 
-```
+```cpp
 virtual void UnlockRange(
     ULONGLONG dwPos,
     ULONGLONG dwCount);
@@ -830,7 +830,7 @@ See the description of the [LockRange](#lockrange) member function for details.
 
 Writes data from a buffer to the file associated with the `CFile` object.
 
-```
+```cpp
 virtual void Write(
     const void* lpBuf,
     UINT nCount);

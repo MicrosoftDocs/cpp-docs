@@ -205,7 +205,7 @@ void AddIcon(
 
 Adds a new tab to the tab control.
 
-```
+```cpp
 virtual void AddTab(
     CWnd* pTabWnd,
     LPCTSTR lpszTabLabel,
@@ -242,7 +242,7 @@ If *pTabWnd* points to an object that is not derived from the [CDockablePane Cla
 
 ## <a name="applyrestoredtabinfo"></a> CMFCBaseTabCtrl::ApplyRestoredTabInfo
 
-```
+```cpp
 virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ```
 
@@ -266,7 +266,7 @@ void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
 
 ## <a name="calcrectedit"></a> CMFCBaseTabCtrl::CalcRectEdit
 
-```
+```cpp
 virtual void CalcRectEdit(CRect& rectEdit);
 ```
 
@@ -278,7 +278,7 @@ virtual void CalcRectEdit(CRect& rectEdit);
 
 ## <a name="cleanup"></a> CMFCBaseTabCtrl::CleanUp
 
-```
+```cpp
 virtual void CleanUp();
 ```
 
@@ -286,7 +286,7 @@ virtual void CleanUp();
 
 ## <a name="clearimagelist"></a> CMFCBaseTabCtrl::ClearImageList
 
-```
+```cpp
 virtual void ClearImageList();
 ```
 
@@ -412,7 +412,7 @@ If custom tooltips are enabled, the tab control sends the AFX_WM_ON_GET_TAB_TOOL
 
 Enables direct editing of the tab labels by the user.
 
-```
+```cpp
 virtual void EnableInPlaceEdit(BOOL bEnable) = 0;
 ```
 
@@ -522,7 +522,7 @@ In the `CMFCBaseTabCtrl` class, this method is a pure virtual function: you must
 
 ## <a name="firechangeactivetab"></a> CMFCBaseTabCtrl::FireChangeActiveTab
 
-```
+```cpp
 virtual void FireChangeActiveTab(int nNewTab);
 ```
 
@@ -734,7 +734,7 @@ virtual CSize GetMaxWindowSize() const;
 
 Retrieves the size and position of the tab area of the tab control.
 
-```
+```cpp
 virtual void GetTabArea(
     CRect& rectTabAreaTop,
     CRect& rectTabAreaBottom) const = 0;
@@ -995,7 +995,7 @@ The number of tabs in the tab control.
 
 ## <a name="gettabsrect"></a> CMFCBaseTabCtrl::GetTabsRect
 
-```
+```cpp
 virtual void GetTabsRect(CRect& rect) const;
 ```
 
@@ -1110,7 +1110,7 @@ virtual BOOL HasImage(int iTab) const;
 
 Sets the option to hide the tabs for the tab control when there is one visible tab.
 
-```
+```cpp
 virtual void HideSingleTab(BOOL bHide = TRUE);
 ```
 
@@ -1127,7 +1127,7 @@ When your application is configured to hide single tabs, the framework automatic
 
 Inserts a tab into the tab control.
 
-```
+```cpp
 Virtual void InsertTab(
     CWnd* pNewWnd,
     LPCTSTR lpszTabLabel,
@@ -1513,7 +1513,7 @@ By default, this member is FALSE.
 
 ## <a name="movetab"></a> CMFCBaseTabCtrl::MoveTab
 
-```
+```cpp
 virtual void MoveTab(
     int nSource,
     int nDest);
@@ -1531,7 +1531,7 @@ virtual void MoveTab(
 
 The framework calls this method when the number of tabs on a tab control changes.
 
-```
+```cpp
 virtual void OnChangeTabs();
 ```
 
@@ -1583,7 +1583,7 @@ virtual DROPEFFECT OnDragOver(
 
 ## <a name="ondragleave"></a> CMFCBaseTabCtrl::OnDragLeave
 
-```
+```cpp
 virtual void OnDragLeave();
 ```
 
@@ -1644,7 +1644,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 Recalculates the internal layout of the tab control.
 
-```
+```cpp
 virtual void RecalcLayout() = 0;
 ```
 
@@ -1656,7 +1656,7 @@ In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function. If you d
 
 Removes all the tabs from the tab control.
 
-```
+```cpp
 virtual void RemoveAllTabs();
 ```
 
@@ -1710,7 +1710,7 @@ void ResetImageList();
 
 ## <a name="serialize"></a> CMFCBaseTabCtrl::Serialize
 
-```
+```cpp
 virtual void Serialize(CArchive& ar);
 ```
 
@@ -1745,7 +1745,7 @@ In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function. If you d
 
 Sets the background color for the active tab.
 
-```
+```cpp
 virtual void SetActiveTabColor(COLORREF clr);
 ```
 
@@ -1762,7 +1762,7 @@ The framework obtains the default background color for active tabs from the [Get
 
 Sets the text color for active tabs.
 
-```
+```cpp
 virtual void SetActiveTabTextColor(COLORREF clr);
 ```
 
@@ -1874,7 +1874,7 @@ This method recalculates the height of the tab according to the image and text s
 
 ## <a name="setlocation"></a> CMFCBaseTabCtrl::SetLocation
 
-```
+```cpp
 virtual void SetLocation(Location location);
 ```
 
@@ -1910,7 +1910,7 @@ TRUE if successful; FALSE otherwise.
 
 Sets a new border size for the tab control.
 
-```
+```cpp
 virtual void SetTabBorderSize(
     int nTabBorderSize,
     BOOL bRepaint = TRUE);
@@ -2022,7 +2022,7 @@ Nonzero if successful; 0 otherwise.
 
 ## <a name="settabsheight"></a> CMFCBaseTabCtrl::SetTabsHeight
 
-```
+```cpp
 virtual void SetTabsHeight();
 ```
 
@@ -2121,7 +2121,7 @@ virtual BOOL StartRenameTab(int iTab);
 
 ## <a name="swaptabs"></a> CMFCBaseTabCtrl::SwapTabs
 
-```
+```cpp
 virtual void SwapTabs(
     int nFisrtTabID,
     int nSecondTabID);

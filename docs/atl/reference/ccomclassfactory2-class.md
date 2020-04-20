@@ -75,7 +75,7 @@ ATL objects normally acquire a class factory by deriving from [CComCoClass](../.
 
 Creates an object of the specified CLSID and retrieves an interface pointer to this object.
 
-```
+```cpp
 STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```
 

@@ -54,7 +54,7 @@ The `CSplitterWndEx` class is used together with the [OnDrawSplitterBorder](cmfc
 
 Called by the framework to draw a splitter window.
 
-```
+```cpp
 virtual void OnDrawSplitter(
    CDC* pDC,
    ESplitType nType,

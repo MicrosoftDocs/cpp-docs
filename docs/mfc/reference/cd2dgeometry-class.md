@@ -260,7 +260,7 @@ If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.
 
 Destroys a CD2DGeometry object.
 
-```
+```cpp
 virtual void Destroy();
 ```
 

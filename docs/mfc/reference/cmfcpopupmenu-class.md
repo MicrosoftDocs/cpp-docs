@@ -159,7 +159,7 @@ static BOOL __stdcall ActivatePopupMenu(
 
 Sets whether a pop-up menu is enabled to show empty entries for user-defined tools.
 
-```
+```cpp
 static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
 ```
 
@@ -350,7 +350,7 @@ The possible values for *nLogoLocation* are MENU_LOGO_LEFT, MENU_LOGO_RIGHT, MEN
 
 Enables menu sound.
 
-```
+```cpp
 static void EnableMenuSound(BOOL bEnable = TRUE);
 ```
 
@@ -939,7 +939,7 @@ void MoveTo(const CPoint& pt);
 
 ## <a name="onchangehot"></a> CMFCPopupMenu::OnChangeHot
 
-```
+```cpp
 virtual void OnChangeHot(int nHot);
 ```
 
@@ -951,7 +951,7 @@ virtual void OnChangeHot(int nHot);
 
 ## <a name="onchooseitem"></a> CMFCPopupMenu::OnChooseItem
 
-```
+```cpp
 virtual void OnChooseItem(UINT uidCmdID);
 ```
 
@@ -1012,7 +1012,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ## <a name="recalclayout"></a> CMFCPopupMenu::RecalcLayout
 
-```
+```cpp
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
 
@@ -1053,7 +1053,7 @@ This method automatically arranges any separators that are affected by the remov
 
 ## <a name="savestate"></a> CMFCPopupMenu::SaveState
 
-```
+```cpp
 virtual void SaveState();
 ```
 
@@ -1063,7 +1063,7 @@ virtual void SaveState();
 
 Sets the animation speed for pop-up menus.
 
-```
+```cpp
 static void SetAnimationSpeed(UINT nElapse);
 ```
 
@@ -1082,7 +1082,7 @@ By default, this parameter is set to 30 milliseconds. The range of valid values 
 
 Sets the animation type for this pop-up menu.
 
-```
+```cpp
 static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```
 
@@ -1128,7 +1128,7 @@ The default command in the pop-up menu is the command that is selected when the 
 
 Forces the input focus to return to the menu bar when a pop-up menu is displayed.
 
-```
+```cpp
 static void SetForceMenuFocus(BOOL bValue);
 ```
 
@@ -1145,7 +1145,7 @@ This method sets a flag that is global for all pop-up menus in the application. 
 
 Forces the framework to draw menu shadows when pop-up menus appear outside the main frame.
 
-```
+```cpp
 static void SetForceShadow(BOOL bValue);
 ```
 
@@ -1240,7 +1240,7 @@ By default, all pop-up menus are left-aligned.
 
 Sets a flag that controls whether the pop-up menu notifies its parent frame when the user selects a command.
 
-```
+```cpp
 static void SetSendMenuSelectMsg(BOOL bSet = TRUE);
 ```
 
@@ -1277,7 +1277,7 @@ void TriggerResize();
 
 Updates the shadows for all opened pop-up menus.
 
-```
+```cpp
 static void UpdateAllShadows(LPRECT lprectScreen = NULL);
 ```
 

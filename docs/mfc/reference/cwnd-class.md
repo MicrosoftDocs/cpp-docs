@@ -719,7 +719,7 @@ This example shows how to use Attach and Detach to map to the MDI client window.
 
 Call this member function to make a frame window modal.
 
-```
+```cpp
 virtual void BeginModalState();
 ```
 
@@ -838,7 +838,7 @@ This function just calls the Win32 [BringWindowToTop](/windows/win32/api/winuser
 
 Calculates the window rectangle that can contain the specified client rectangle.
 
-```
+```cpp
 virtual void CalcWindowRect(
     LPRECT lpClientRect,
     UINT nAdjustType = adjustBorder);
@@ -866,7 +866,7 @@ For more usage restrictions, see [AdjustWindowRectEx](/windows/win32/api/winuser
 
 Call this member function to remove a tool tip from the screen if a tool tip is currently displayed.
 
-```
+```cpp
 static void PASCAL CancelToolTips(BOOL bKeys = FALSE);
 ```
 
@@ -1517,7 +1517,7 @@ This member function ensures that every message is processed. It should be calle
 
 Called automatically by the idle time handler of the `CWinApp` object.
 
-```
+```cpp
 static void PASCAL DeleteTempMap();
 ```
 
@@ -1779,7 +1779,7 @@ It does not allow more than one filename to be returned from a combo box.
 
 Called by the framework to exchange and validate dialog data.
 
-```
+```cpp
 virtual void DoDataExchange(CDataExchange* pDX);
 ```
 
@@ -2121,7 +2121,7 @@ An application can use this function to enable or disable a control in a dialog 
 
 Terminates a call to `RunModalLoop`.
 
-```
+```cpp
 virtual void EndModalLoop(int nResult);
 ```
 
@@ -2138,7 +2138,7 @@ The *nResult* parameter is propagated to the return value from `RunModalLoop`.
 
 Call this member function to change a frame window from modal to modeless.
 
-```
+```cpp
 virtual void EndModalState();
 ```
 
@@ -4392,7 +4392,7 @@ The MF_HILITE and MF_UNHILITE flags can be used only with this member function; 
 
 Call this member function to invoke the HTMLHelp application.
 
-```
+```cpp
 virtual void HtmlHelp(
     DWORD_PTR dwData,
     UINT nCmd = 0x000F);
@@ -5043,7 +5043,7 @@ This member function emulates the functionality of the function [NotifyWinEvent]
 
 The framework calls this member function when a `CWnd` object is being activated or deactivated.
 
-```
+```cpp
 afx_msg void OnActivate(
     UINT nState,
     CWnd* pWndOther,
@@ -5080,7 +5080,7 @@ If the `CWnd` object is activated with a mouse click, it will also receive an [O
 
 The framework calls this member function to all top-level windows of the task being activated and for all top-level windows of the task being deactivated.
 
-```
+```cpp
 afx_msg void OnActivateApp(
     BOOL bActive,
     DWORD dwThreadID);
@@ -5133,7 +5133,7 @@ Override this function to alter the default ambient property values returned by 
 
 The framework calls this member function when the user generates an application command event. Such an event occurs when the user clicks an application command button or types an application command key.
 
-```
+```cpp
 afx_msg void OnAppCommand(
     CWnd* pWnd,
     UINT nCmd,
@@ -5161,7 +5161,7 @@ This method receives the [WM_APPCOMMAND](/windows/win32/inputdev/wm-appcommand) 
 
 The framework calls this member function when the Clipboard contains a data handle for the CF_OWNERDISPLAY format (that is, when the Clipboard owner will display the Clipboard contents).
 
-```
+```cpp
 afx_msg void OnAskCbFormatName(
     UINT nMaxCount,
     LPTSTR lpszString);
@@ -5188,7 +5188,7 @@ Override this member function and copy the name of the CF_OWNERDISPLAY format in
 
 The framework calls this member function to inform `CWnd` to cancel any internal mode.
 
-```
+```cpp
 afx_msg void OnCancelMode();
 ```
 
@@ -5202,7 +5202,7 @@ The default implementation responds by calling the [ReleaseCapture](/windows/win
 
 The framework calls this member function to notify the window that is losing the mouse capture.
 
-```
+```cpp
 afx_msg void OnCaptureChanged(CWnd* pWnd);
 ```
 
@@ -5224,7 +5224,7 @@ See the Windows SDK for information on the `ReleaseCapture` Windows function.
 
 The framework calls this member function for each window in the Clipboard-viewer chain to notify it that a window is being removed from the chain.
 
-```
+```cpp
 afx_msg void OnChangeCbChain(
     HWND hWndRemove,
     HWND hWndAfter);
@@ -5249,7 +5249,7 @@ Each `CWnd` object that receives an `OnChangeCbChain` call should use the [SendM
 
 Called when the user interface (UI) state should be changed.
 
-```
+```cpp
 afx_msg void OnChangeUIState(
     UINT nAction,
     UINT nUIElement);
@@ -5283,7 +5283,7 @@ This member function emulates the functionality of the [WM_CHANGEUISTATE](/windo
 
 The framework calls this member function when a keystroke translates to a nonsystem character.
 
-```
+```cpp
 afx_msg void OnChar(
     UINT nChar,
     UINT nRepCnt,
@@ -5357,7 +5357,7 @@ The framework calls this member function to specify the action that the applicat
 
 If the `CWnd` object is a multiple document interface (MDI) child window, `OnChildActivate` is called by the framework when the user clicks the window's title bar or when the window is activated, moved, or sized.
 
-```
+```cpp
 afx_msg void OnChildActivate();
 ```
 
@@ -5403,7 +5403,7 @@ Override this member function to extend the manner in which a control responds t
 
 The framework calls this member function when the contents of the clipboard have changed.
 
-```
+```cpp
 afx_msg void OnClipboardUpdate();
 ```
 
@@ -5411,7 +5411,7 @@ afx_msg void OnClipboardUpdate();
 
 The framework calls this member function as a signal that the `CWnd` or an application is to terminate.
 
-```
+```cpp
 afx_msg void OnClose();
 ```
 
@@ -5423,7 +5423,7 @@ The default implementation calls `DestroyWindow`.
 
 The framework calls this member when the rendering policy for the nonclient area has changed.
 
-```
+```cpp
 afx_msg void OnColorizationColorChanged(
     DWORD dwColorizationColor,
     BOOL bOpacity);
@@ -5478,7 +5478,7 @@ Override this member function in your derived class to handle the [WM_COMMAND](/
 
 The framework calls this member function for all top-level windows when Windows detects that more than 12.5 percent of system time over a 30- to 60-second interval is being spent compacting memory.
 
-```
+```cpp
 afx_msg void OnCompacting(UINT nCpuTime);
 ```
 
@@ -5539,7 +5539,7 @@ If the `hwndItem` member of the `COMPAREITEMSTRUCT` structure belongs to a [CLis
 
 The framework calls this member function for all top-level windows when the Desktop Window Manager (DWM) composition is enabled or disabled.
 
-```
+```cpp
 afx_msg void OnCompositionChanged();
 ```
 
@@ -5554,7 +5554,7 @@ This method receives the [WM_DWMCOMPOSITIONCHANGED](/windows/win32/dwm/wm-dwmcom
 
 Called by the framework when the user has clicked the right mouse button (right clicked) in the window.
 
-```
+```cpp
 afx_msg void OnContextMenu(
     CWnd* pWnd,
     CPoint pos);
@@ -5698,7 +5698,7 @@ To change the background color of a single-line edit control, set the brush hand
 
 The framework calls this member function when the [OnKeyUp](#onkeyup) member function and the [OnKeyDown](#onkeydown) member functions are called.
 
-```
+```cpp
 afx_msg void OnDeadChar(
     UINT nChar,
     UINT nRepCnt,
@@ -5743,7 +5743,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 
 The framework calls this member function to inform the owner of an owner-draw list box or combo box that the list box or combo box is destroyed or that items have been removed by [CComboBox::DeleteString](../../mfc/reference/ccombobox-class.md#deletestring), [CListBox::DeleteString](../../mfc/reference/clistbox-class.md#deletestring), [CComboBox::ResetContent](../../mfc/reference/ccombobox-class.md#resetcontent), or [CListBox::ResetContent](../../mfc/reference/clistbox-class.md#resetcontent).
 
-```
+```cpp
 afx_msg void OnDeleteItem(
     int nIDCtl,
     LPDELETEITEMSTRUCT lpDeleteItemStruct);
@@ -5768,7 +5768,7 @@ If the `hwndItem` member of the `DELETEITEMSTRUCT` structure belongs to a combo 
 
 The framework calls this member function to inform the `CWnd` object that it is being destroyed.
 
-```
+```cpp
 afx_msg void OnDestroy();
 ```
 
@@ -5784,7 +5784,7 @@ If the `CWnd` object being destroyed is part of the Clipboard-viewer chain (set 
 
 The framework calls this member function for the Clipboard owner when the Clipboard is emptied through a call to the [EmptyClipboard](/windows/win32/api/winuser/nf-winuser-emptyclipboard) Windows function.
 
-```
+```cpp
 afx_msg void OnDestroyClipboard();
 ```
 
@@ -5837,7 +5837,7 @@ The *nEvent* parameter can be one of these values:
 
 The framework calls this member function for all top-level `CWnd` objects when the user changes device-mode settings.
 
-```
+```cpp
 afx_msg void OnDevModeChange(LPTSTR lpDeviceName);
 ```
 
@@ -5859,7 +5859,7 @@ This function is not called when the user changes the default printer from Contr
 
 The framework calls this member function for each window in the Clipboard-viewer chain when the contents of the Clipboard change.
 
-```
+```cpp
 afx_msg void OnDrawClipboard();
 ```
 
@@ -5873,7 +5873,7 @@ Each window that receives an `OnDrawClipboard` call should call the [SendMessage
 
 Called by the framework when it needs to obtain a bitmap to be displayed on Windows 7 tab thumbnail, or on the client for application peek.
 
-```
+```cpp
 virtual void OnDrawIconicThumbnailOrLivePreview(
     CDC& dc,
     CRect rect,
@@ -5907,7 +5907,7 @@ Override this method in a derived class and draw on the specified device context
 
 The framework calls this member function for the owner of an owner-draw button control, combo-box control, list-box control, or menu when a visual aspect of the control or menu has changed.
 
-```
+```cpp
 afx_msg void OnDrawItem(
     int nIDCtl,
     LPDRAWITEMSTRUCT lpDrawItemStruct);
@@ -5936,7 +5936,7 @@ If the `hwndItem` member belongs to a [CButton](../../mfc/reference/cbutton-clas
 
 The framework calls this member function when the user releases the left mouse button over a window that has registered itself as the recipient of dropped files.
 
-```
+```cpp
 afx_msg void OnDropFiles(HDROP hDropInfo);
 ```
 
@@ -5956,7 +5956,7 @@ Typically, a derived class will be designed to support dropped files and it will
 
 The framework calls this member function when an application changes the enabled state of the `CWnd` object.
 
-```
+```cpp
 afx_msg void OnEnable(BOOL bEnable);
 ```
 
@@ -5976,7 +5976,7 @@ Specifies whether the `CWnd` object has been enabled or disabled. This parameter
 
 The framework calls this member function after the `CWnd` object has returned a nonzero value from a [OnQueryEndSession](#onqueryendsession) member function call.
 
-```
+```cpp
 afx_msg void OnEndSession(BOOL bEnding);
 ```
 
@@ -6000,7 +6000,7 @@ You do not need to call the [DestroyWindow](#destroywindow) member function or [
 
 The framework calls this member function to inform an application's main window procedure that a modal dialog box or a menu is entering an idle state.
 
-```
+```cpp
 afx_msg void OnEnterIdle(
     UINT nWhy,
     CWnd* pWho);
@@ -6029,7 +6029,7 @@ A modal dialog box or menu enters an idle state when no messages are waiting in 
 
 The framework calls this member function when a menu modal loop has been entered.
 
-```
+```cpp
 afx_msg void OnEnterMenuLoop(BOOL bIsTrackPopupMenu);
 ```
 
@@ -6047,7 +6047,7 @@ Specifies whether the menu involved is a popup menu. Has a nonzero value if the 
 
 The framework calls this member function one time after the affected window enters a moving or sizing modal loop.
 
-```
+```cpp
 afx_msg void OnEnterSizeMove();
 ```
 
@@ -6096,7 +6096,7 @@ Windows assumes the background is computed with the MM_TEXT mapping mode. If the
 
 The framework calls this member function when a menu modal loop has been exited.
 
-```
+```cpp
 afx_msg void OnExitMenuLoop(BOOL bIsTrackPopupMenu);
 ```
 
@@ -6114,7 +6114,7 @@ Specifies whether the menu involved is a pop-up menu. Has a nonzero value if the
 
 The framework calls this member function one time after the affected window exits a moving or sizing modal loop.
 
-```
+```cpp
 afx_msg void OnExitSizeMove();
 ```
 
@@ -6131,7 +6131,7 @@ A window enters a moving or sizing modal loop when the user clicks the window's 
 
 All top-level windows in the system receive an `OnFontChange` call from the framework after the application changes the pool of font resources.
 
-```
+```cpp
 afx_msg void OnFontChange();
 ```
 
@@ -6185,7 +6185,7 @@ The default `OnGetDlgCode` functions for the predefined control classes return a
 
 The framework calls this member function whenever Windows needs to know the maximized position or dimensions, or the minimum or maximum tracking size.
 
-```
+```cpp
 afx_msg void OnGetMinMaxInfo(MINMAXINFO* lpMMI);
 ```
 
@@ -6207,7 +6207,7 @@ Windows fills in an array of points specifying default values for the various po
 
 Handles F1 Help within the application (using the current context).
 
-```
+```cpp
 afx_msg void OnHelp();
 ```
 
@@ -6219,7 +6219,7 @@ See [CWinApp::OnHelp](../../mfc/reference/cwinapp-class.md#onhelp) for more info
 
 Handles the ID_HELP_FINDER and ID_DEFAULT_HELP commands.
 
-```
+```cpp
 afx_msg void OnHelpFinder();
 ```
 
@@ -6231,7 +6231,7 @@ See [CWinApp::OnHelpFinder](../../mfc/reference/cwinapp-class.md#onhelpfinder) f
 
 Handles the ID_HELP_INDEX command and provides a default Help topic.
 
-```
+```cpp
 afx_msg void OnHelpIndex();
 ```
 
@@ -6264,7 +6264,7 @@ If a menu is active when F1 is pressed, WM_HELP is sent to the window associated
 
 Handles the ID_HELP_USING command.
 
-```
+```cpp
 afx_msg void OnHelpUsing();
 ```
 
@@ -6276,7 +6276,7 @@ See [CWinApp::OnHelpUsing](../../mfc/reference/cwinapp-class.md#onhelpusing) for
 
 The framework calls this member function when the user presses a system-wide hot key.
 
-```
+```cpp
 afx_msg void OnHotKey(
     UINT nHotKeyId,
     UINT nKey1,
@@ -6302,7 +6302,7 @@ This method receives the [WM_HOTKEY](/windows/win32/inputdev/wm-hotkey) notifica
 
 The framework calls this member function when the user clicks a window's horizontal scroll bar.
 
-```
+```cpp
 afx_msg void OnHScroll(
     UINT nSBCode,
     UINT nPos,
@@ -6355,7 +6355,7 @@ If an application scrolls the contents controlled by the scroll bar, it must als
 
 The Clipboard owner's `OnHScrollClipboard` member function is called by the Clipboard viewer when the Clipboard data has the `CF_OWNERDISPLAY` format and there is an event in the Clipboard viewer's horizontal scroll bar.
 
-```
+```cpp
 afx_msg void OnHScrollClipboard(
     CWnd* pClipAppWnd,
     UINT nSBCode,
@@ -6400,7 +6400,7 @@ The owner should scroll the Clipboard image, invalidate the appropriate section,
 
 The framework calls this member function for a minimized (iconic) `CWnd` object when the background of the icon must be filled before painting the icon.
 
-```
+```cpp
 afx_msg void OnIconEraseBkgnd(CDC* pDC);
 ```
 
@@ -6422,7 +6422,7 @@ The [DefWindowProc](#defwindowproc) member function fills the icon background wi
 
 The framework calls this member function when a menu is about to become active.
 
-```
+```cpp
 afx_msg void OnInitMenu(CMenu* pMenu);
 ```
 
@@ -6444,7 +6444,7 @@ Specifies the menu to be initialized. May be temporary and should not be stored 
 
 The framework calls this member function when a pop-up menu is about to become active.
 
-```
+```cpp
 afx_msg void OnInitMenuPopup(
     CMenu* pPopupMenu,
     UINT nIndex,
@@ -6473,7 +6473,7 @@ This allows an application to modify the pop-up menu before it is displayed with
 
 The framework calls this member function when an I/O device is added or removed from the system.
 
-```
+```cpp
 afx_msg void OnInputDeviceChange(unsigned short uFlag);
 ```
 
@@ -6494,7 +6494,7 @@ This method receives the [WM_INPUT_DEVICE_CHANGE](/windows/win32/inputdev/wm-inp
 
 The framework calls this member for the topmost affected window after an application's input language has been changed.
 
-```
+```cpp
 afx_msg void OnInputLangChange(
     UINT nCharSet,
     UINT nLocaleId);
@@ -6518,7 +6518,7 @@ This method receives the [WM_INPUTLANGCHANGE](/windows/win32/winmsg/wm-inputlang
 
 The framework calls this member for window with the focus when the user chooses a new input language.
 
-```
+```cpp
 afx_msg void OnInputLangChangeRequest(
     UINT nFlags,
     UINT nLocaleId);
@@ -6542,7 +6542,7 @@ This method receives the [WM_INPUTLANGCHANGEREQUEST](/windows/win32/winmsg/wm-in
 
 The framework calls this member function when a nonsystem key is pressed.
 
-```
+```cpp
 afx_msg void OnKeyDown(
     UINT nChar,
     UINT nRepCnt,
@@ -6587,7 +6587,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 
 The framework calls this member function when a nonsystem key is released.
 
-```
+```cpp
 afx_msg void OnKeyUp(
     UINT nChar,
     UINT nRepCnt,
@@ -6630,7 +6630,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 
 The framework calls this member function immediately before losing the input focus.
 
-```
+```cpp
 afx_msg void OnKillFocus(CWnd* pNewWnd);
 ```
 
@@ -6650,7 +6650,7 @@ If the `CWnd` object is displaying a caret, the caret should be destroyed at thi
 
 The framework calls this member function when the user double-clicks the left mouse button.
 
-```
+```cpp
 afx_msg void OnLButtonDblClk(
     UINT nFlags,
     CPoint point);
@@ -6685,7 +6685,7 @@ Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/win32/api/winuser/ns-w
 
 The framework calls this member function when the user presses the left mouse button.
 
-```
+```cpp
 afx_msg void OnLButtonDown(
     UINT nFlags,
     CPoint point);
@@ -6718,7 +6718,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 
 The framework calls this member function when the user releases the left mouse button.
 
-```
+```cpp
 afx_msg void OnLButtonUp(
     UINT nFlags,
     CPoint point);
@@ -6749,7 +6749,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 
 The framework calls this member function when the user double-clicks the middle mouse button.
 
-```
+```cpp
 afx_msg void OnMButtonDblClk(
     UINT nFlags,
     CPoint point);
@@ -6784,7 +6784,7 @@ Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/win32/api/winuser/ns-w
 
 The framework calls this member function when the user presses the middle mouse button.
 
-```
+```cpp
 afx_msg void OnMButtonDown(
     UINT nFlags,
     CPoint point);
@@ -6817,7 +6817,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 
 The framework calls this member function when the user releases the middle mouse button.
 
-```
+```cpp
 afx_msg void OnMButtonUp(
     UINT nFlags,
     CPoint point);
@@ -6848,7 +6848,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 
 The framework calls this member function for the child window being deactivated and the child window being activated.
 
-```
+```cpp
 afx_msg void OnMDIActivate(
     BOOL bActivate,
     CWnd* pActivateWnd,
@@ -6877,7 +6877,7 @@ An MDI child window is activated independently of the MDI frame window. When the
 
 The framework calls this member function by the framework for the owner of an owner-draw button, combo box, list box, or menu item when the control is created.
 
-```
+```cpp
 afx_msg void OnMeasureItem(
     int nIDCtl, LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ```
@@ -7009,7 +7009,7 @@ This method receives the [WM_MENUGETOBJECT](/windows/win32/menurc/wm-menugetobje
 
 The framework calls this member function when the user releases the right mouse button while the cursor is on a menu item.
 
-```
+```cpp
 afx_msg void OnMenuRButtonUp(
     UINT nPos,
     CMenu* pMenu);
@@ -7033,7 +7033,7 @@ This method receives the [WM_MENURBUTTONUP](/windows/win32/menurc/wm-menurbutton
 
 If the `CWnd` object is associated with a menu, `OnMenuSelect` is called by the framework when the user selects a menu item.
 
-```
+```cpp
 afx_msg void OnMenuSelect(
     UINT nItemID,
     UINT nFlags,
@@ -7127,7 +7127,7 @@ For a description of the individual hit-test area codes, see the [OnNcHitTest](#
 
 The framework calls this member function when the cursor hovers over the client area of the window for the period of time specified in a prior call to [TrackMouseEvent](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
-```
+```cpp
 afx_msg void OnMouseHover(
     UINT nFlags,
     CPoint point);
@@ -7163,7 +7163,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 
 The framework calls this member when the current window is composed by the Desktop Window Manager (DWM), and that window is maximized.
 
-```
+```cpp
 afx_msg void OnMouseHWheel(
     UINT nFlags,
     short zDelta,
@@ -7189,7 +7189,7 @@ This method receives the [WM_MOUSEHWHEEL](/windows/win32/inputdev/wm-mousehwheel
 
 The framework calls this member function when the cursor leaves the client area of the window specified in a prior call to [TrackMouseEvent](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
-```
+```cpp
 afx_msg void OnMouseLeave();
 ```
 
@@ -7204,7 +7204,7 @@ This method receives the [WM_MOUSELEAVE](/windows/win32/inputdev/wm-mouseleave) 
 
 The framework calls this member function when the mouse cursor moves.
 
-```
+```cpp
 afx_msg void OnMouseMove(
     UINT nFlags,
     CPoint point);
@@ -7288,7 +7288,7 @@ Override this member function to provide your own mouse-wheel scrolling behavior
 
 The framework calls this member function after the `CWnd` object has been moved.
 
-```
+```cpp
 afx_msg void OnMove(
     int x,
     int y);
@@ -7311,7 +7311,7 @@ Specifies the new y-coordinate location of the upper-left corner of the client a
 
 The framework calls this member function while a user is moving a `CWnd` object.
 
-```
+```cpp
 afx_msg void OnMoving(
     UINT nSide,
     LPRECT lpRect);
@@ -7358,7 +7358,7 @@ The default implementation draws the title bar and title-bar text in their activ
 
 The framework calls this member function when the size and position of the client area needs to be calculated.
 
-```
+```cpp
 afx_msg void OnNcCalcSize(
     BOOL bCalcValidRects,
     NCCALCSIZE_PARAMS* lpncsp);
@@ -7411,7 +7411,7 @@ Nonzero if the nonclient area is created. It is 0 if an error occurs; the `Creat
 
 Called by the framework when the nonclient area is being destroyed, and is the last member function called when the Windows window is destroyed.
 
-```
+```cpp
 afx_msg void OnNcDestroy();
 ```
 
@@ -7447,7 +7447,7 @@ One of the mouse hit-test enumerated values. See [WM_NCHITTEST](/windows/win32/i
 
 The framework calls this member function when the user double-clicks the left mouse button while the cursor is within a nonclient area of `CWnd`.
 
-```
+```cpp
 afx_msg void OnNcLButtonDblClk(
     UINT nHitTest,
     CPoint point);
@@ -7472,7 +7472,7 @@ If appropriate, the [WM_SYSCOMMAND](#onsyscommand) message is sent.
 
 The framework calls this member function when the user presses the left mouse button while the cursor is within a nonclient area of the `CWnd` object.
 
-```
+```cpp
 afx_msg void OnNcLButtonDown(
     UINT nHitTest,
     CPoint point);
@@ -7497,7 +7497,7 @@ If appropriate, the [WM_SYSCOMMAND](#onsyscommand) is sent.
 
 The framework calls this member function when the user releases the left mouse button while the cursor is within a nonclient area.
 
-```
+```cpp
 afx_msg void OnNcLButtonUp(
     UINT nHitTest,
     CPoint point);
@@ -7522,7 +7522,7 @@ If appropriate, [WM_SYSCOMMAND](#onsyscommand) is sent.
 
 The framework calls this member function when the user double-clicks the middle mouse button while the cursor is within a nonclient area.
 
-```
+```cpp
 afx_msg void OnNcMButtonDblClk(
     UINT nHitTest,
     CPoint point);
@@ -7545,7 +7545,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 
 The framework calls this member function when the user presses the middle mouse button while the cursor is within a nonclient area.
 
-```
+```cpp
 afx_msg void OnNcMButtonDown(
     UINT nHitTest,
     CPoint point);
@@ -7568,7 +7568,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 
 The framework calls this member function when the user releases the middle mouse button while the cursor is within a nonclient area.
 
-```
+```cpp
 afx_msg void OnNcMButtonUp(
     UINT nHitTest,
     CPoint point);
@@ -7591,7 +7591,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 
 The framework calls this member function when the cursor hovers over the nonclient area of the window for the period of time specified in a prior call to [TrackMouseEvent](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
-```
+```cpp
 afx_msg void OnNcMouseHover(
     UINT nHitTest,
     CPoint point);
@@ -7615,7 +7615,7 @@ This method receives the [WM_NCMOUSEHOVER](/windows/win32/inputdev/wm-ncmousehov
 
 The framework calls this member function when the cursor leaves the nonclient area of the window specified in a prior call to [TrackMouseEvent](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
-```
+```cpp
 afx_msg void OnNcMouseLeave();
 ```
 
@@ -7630,7 +7630,7 @@ This method receives the [WM_NCMOUSELEAVE](/windows/win32/inputdev/wm-ncmouselea
 
 The framework calls this member function when the cursor is moved within a nonclient area.
 
-```
+```cpp
 afx_msg void OnNcMouseMove(
     UINT nHitTest,
     CPoint point);
@@ -7655,7 +7655,7 @@ If appropriate, the [WM_SYSCOMMAND](#onsyscommand) message is sent.
 
 The framework calls this member function when the nonclient area needs to be painted.
 
-```
+```cpp
 afx_msg void OnNcPaint();
 ```
 
@@ -7669,7 +7669,7 @@ An application can override this call and paint its own custom window frame. The
 
 The framework calls this member function when the user double-clicks the right mouse button while the cursor is within a nonclient area of `CWnd`.
 
-```
+```cpp
 afx_msg void OnNcRButtonDblClk(
     UINT nHitTest,
     CPoint point);
@@ -7692,7 +7692,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 
 The framework calls this member function when the user presses the right mouse button while the cursor is within a nonclient area.
 
-```
+```cpp
 afx_msg void OnNcRButtonDown(
     UINT nHitTest,
     CPoint point);
@@ -7715,7 +7715,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 
 The framework calls this member function when the user releases the right mouse button while the cursor is within a nonclient area.
 
-```
+```cpp
 afx_msg void OnNcRButtonUp(
     UINT nHitTest,
     CPoint point);
@@ -7738,7 +7738,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 
 The framework calls this member when the rendering policy for the nonclient area has changed.
 
-```
+```cpp
 afx_msg void OnNcRenderingChanged(BOOL bIsRendering);
 ```
 
@@ -7785,7 +7785,7 @@ This method receives the [WM_XBUTTONDBLCLK](/windows/win32/inputdev/wm-xbuttondb
 
 The framework calls this member function when the user presses XBUTTON1 or XBUTTON2 of the mouse while the cursor is in the nonclient area of a window.
 
-```
+```cpp
 afx_msg void OnNcXButtonDown(
     short nHitTest,
     UINT nButton,
@@ -7811,7 +7811,7 @@ This method receives the [WM_NCXBUTTONDOWN](/windows/win32/inputdev/wm-ncxbutton
 
 The framework calls this member function when the user releases XBUTTON1 or XBUTTON2 of the mouse while the cursor is in the nonclient area of a window.
 
-```
+```cpp
 afx_msg void OnNcXButtonUp(
     short nHitTest,
     UINT nButton,
@@ -7837,7 +7837,7 @@ This method receives the [WM_NCXBUTTONUP](/windows/win32/inputdev/wm-ncxbuttonup
 
 The framework calls this member function when the right or left arrow key is used to switch between the menu bar and the system menu.
 
-```
+```cpp
 afx_msg void OnNextMenu(
     UINT nKey,
     LPMDINEXTMENU lpMdiNextMenu);
@@ -7927,7 +7927,7 @@ This method receives the [WM_NOTIFYFORMAT](/windows/win32/Controls/wm-notifyform
 
 The framework calls this member function when Windows or an application makes a request to repaint a portion of an application's window.
 
-```
+```cpp
 afx_msg void OnPaint();
 ```
 
@@ -7953,7 +7953,7 @@ For more information about using `WM_Paint`, see the following topics in the Win
 
 A Clipboard owner's `OnPaintClipboard` member function is called by a Clipboard viewer when the Clipboard owner has placed data on the Clipboard in the CF_OWNERDISPLAY format and the Clipboard viewer's client area needs repainting.
 
-```
+```cpp
 afx_msg void OnPaintClipboard(
     CWnd* pClipAppWnd,
     HGLOBAL hPaintStruct);
@@ -7980,7 +7980,7 @@ To determine whether the entire client area or just a portion of it needs repain
 
 The framework calls this member function for all top-level windows after the window with input focus has realized its logical palette, thereby changing the system palette.
 
-```
+```cpp
 afx_msg void OnPaletteChanged(CWnd* pFocusWnd);
 ```
 
@@ -8004,7 +8004,7 @@ To avoid an infinite loop, the window shouldn't realize its palette unless it de
 
 The framework calls this member function to inform applications that an application is going to realize its logical palette.
 
-```
+```cpp
 afx_msg void OnPaletteIsChanging(CWnd* pRealizeWnd);
 ```
 
@@ -8021,7 +8021,7 @@ This member function is called by the framework to allow your application to han
 
 A parent's `OnParentNotify` member function is called by the framework when its child window is created or destroyed, or when the user clicks a mouse button while the cursor is over the child window.
 
-```
+```cpp
 afx_msg void OnParentNotify(
     UINT message,
     LPARAM lParam);
@@ -8172,7 +8172,7 @@ This member function emulates the functionality of the [WM_QUERYUISTATE](/window
 
 The framework calls this member function when the current window gets raw input.
 
-```
+```cpp
 afx_msg void OnRawInput(
     UINT nInputCode,
     HRAWINPUT hRawInput);
@@ -8196,7 +8196,7 @@ This method receives the [WM_INPUT](/windows/win32/inputdev/wm-appcommand) notif
 
 The framework calls this member function when the user double-clicks the right mouse button.
 
-```
+```cpp
 afx_msg void OnRButtonDblClk(
     UINT nFlags,
     CPoint point);
@@ -8231,7 +8231,7 @@ Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/win32/api/winuser/ns-w
 
 The framework calls this member function when the user presses the right mouse button.
 
-```
+```cpp
 afx_msg void OnRButtonDown(
     UINT nFlags,
     CPoint point);
@@ -8263,7 +8263,7 @@ This member function is called by the framework to allow your application to han
 
 The framework calls this member function when the user releases the right mouse button.
 
-```
+```cpp
 afx_msg void OnRButtonUp(
     UINT nFlags,
     CPoint point);
@@ -8324,7 +8324,7 @@ Override this member function to provide your own message routing or to alter th
 
 The Clipboard owner's `OnRenderAllFormats` member function is called by the framework when the owner application is being destroyed.
 
-```
+```cpp
 afx_msg void OnRenderAllFormats();
 ```
 
@@ -8336,7 +8336,7 @@ The Clipboard owner should render the data in all the formats it is capable of g
 
 The Clipboard owner's `OnRenderFormat` member function is called by the framework when a particular format with delayed rendering needs to be rendered.
 
-```
+```cpp
 afx_msg void OnRenderFormat(UINT nFormat);
 ```
 
@@ -8358,7 +8358,7 @@ Do not call the `OpenClipboard` member function or the `CloseClipboard` Windows 
 
 The framework calls this member function to notify an application of a change in session state.
 
-```
+```cpp
 afx_msg void OnSessionChange(
     UINT nSessionState,
     UINT nId);
@@ -8423,7 +8423,7 @@ The *message* parameter is 0 when `CWnd` enters menu mode.
 
 The framework calls this member function after gaining the input focus.
 
-```
+```cpp
 afx_msg void OnSetFocus(CWnd* pOldWnd);
 ```
 
@@ -8443,7 +8443,7 @@ To display a caret, `CWnd` should call the appropriate caret functions at this p
 
 The framework calls `OnSettingChange` for all top-level windows when the Win32 SystemParametersInfo function changes a system-wide setting.
 
-```
+```cpp
 afx_msg void OnSettingChange(
     UINT uFlags,
     LPCTSTR lpszSection);
@@ -8473,7 +8473,7 @@ You should have only one of these macros in your message map. To write a program
 
 The framework calls this member function when the `CWnd` object is about to be hidden or shown.
 
-```
+```cpp
 afx_msg void OnShowWindow(
     BOOL bShow,
     UINT nStatus);
@@ -8502,7 +8502,7 @@ A window is hidden or shown when the `ShowWindow` member function is called, whe
 
 The framework calls this member function after the window's size has changed.
 
-```
+```cpp
 afx_msg void OnSize(
     UINT nType,
     int cx,
@@ -8545,7 +8545,7 @@ If the [SetScrollPos](#setscrollpos) or [MoveWindow](#movewindow) member functio
 
 The Clipboard owner's `OnSizeClipboard` member function is called by the Clipboard viewer when the Clipboard contains data with the `CF_OWNERDISPLAY` attribute and the size of the client area of the Clipboard-viewer window has changed.
 
-```
+```cpp
 afx_msg void OnSizeClipboard(
     CWnd* pClipAppWnd,
     HGLOBAL hRect);
@@ -8572,7 +8572,7 @@ Within `OnSizeClipboard`, an application must use the [GlobalLock](/windows/win3
 
 The framework calls this member function to indicate that the user is resizing the rectangle.
 
-```
+```cpp
 afx_msg void OnSizing(
     UINT nSide,
     LPRECT lpRect);
@@ -8601,7 +8601,7 @@ By processing this message, an application can monitor the size and position of 
 
 The framework calls this member function from Print Manager whenever a job is added to or removed from the Print Manager queue.
 
-```
+```cpp
 afx_msg void OnSpoolerStatus(
     UINT nStatus,
     UINT nJobs);
@@ -8626,7 +8626,7 @@ This call is for informational purposes only.
 
 The framework calls this member function after the [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) function has changed one or more of the window's styles.
 
-```
+```cpp
 afx_msg void OnStyleChanged(
     int nStyleType,
     LPSTYLESTRUCT lpStyleStruct);
@@ -8653,7 +8653,7 @@ Points to a [STYLESTRUCT](/windows/win32/api/winuser/ns-winuser-stylestruct) str
 
 The framework calls this member function when the [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) function is about to change one or more of the window's styles.
 
-```
+```cpp
 afx_msg void OnStyleChanging(
     int nStyleType,
     LPSTYLESTRUCT lpStyleStruct);
@@ -8680,7 +8680,7 @@ Points to a [STYLESTRUCT](/windows/win32/api/winuser/ns-winuser-stylestruct) str
 
 The framework calls this member function if `CWnd` has the input focus and the [WM_SYSKEYUP](#onsyskeyup) and [WM_SYSKEYDOWN](#onsyskeydown) messages are translated.
 
-```
+```cpp
 afx_msg void OnSysChar(
     UINT nChar,
     UINT nRepCnt,
@@ -8723,7 +8723,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 
 The framework calls this member function for all top-level windows when a change is made in the system color setting.
 
-```
+```cpp
 afx_msg void OnSysColorChange();
 ```
 
@@ -8737,7 +8737,7 @@ Applications that have brushes that use the existing system colors should delete
 
 The framework calls this member function when the user selects a command from the Control menu, or when the user selects the Maximize or the Minimize button.
 
-```
+```cpp
 afx_msg void OnSysCommand(
     UINT nID,
     LPARAM lParam);
@@ -8804,7 +8804,7 @@ Accelerator (shortcut) keystrokes that are defined to select items from the Cont
 
 The framework calls this member function if the `CWnd` object has the input focus when the [OnSysKeyUp](#onsyskeyup) or [OnSysKeyDown](#onsyskeydown) member function is called.
 
-```
+```cpp
 afx_msg void OnSysDeadChar(
     UINT nChar,
     UINT nRepCnt,
@@ -8843,7 +8843,7 @@ It specifies the character value of a dead key.
 
 If the `CWnd` object has the input focus, the `OnSysKeyDown` member function is called by the framework when the user holds down the ALT key and then presses another key.
 
-```
+```cpp
 afx_msg void OnSysKeyDown(
     UINT nChar,
     UINT nRepCnt,
@@ -8890,7 +8890,7 @@ For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and
 
 If the `CWnd` object has the focus, the `OnSysKeyUp` member function is called by the framework when the user releases a key that was pressed while the ALT key was held down.
 
-```
+```cpp
 afx_msg void OnSysKeyUp(
     UINT nChar,
     UINT nRepCnt,
@@ -8944,7 +8944,7 @@ For non-U.S. Enhanced 102-key keyboards, the right ALT key is handled as the CTR
 
 The framework calls this member function when the user clicks an authorable button.
 
-```
+```cpp
 afx_msg void OnTCard(
     UINT idAction,
     DWORD dwActionData);
@@ -8990,7 +8990,7 @@ This function is called only when an application has initiated a training card w
 
 The framework calls this member function after the system time is changed.
 
-```
+```cpp
 afx_msg void OnTimeChange();
 ```
 
@@ -9002,7 +9002,7 @@ Have any application that changes the system time send this message to all top-l
 
 The framework calls this member function after each interval specified in the [SetTimer](#settimer) member function used to install a timer.
 
-```
+```cpp
 afx_msg void OnTimer(UINT_PTR nIDEvent);
 ```
 
@@ -9122,7 +9122,7 @@ TRUE if application processes Windows touch inputs; otherwise FALSE.
 
 The framework calls this member function when a key is pressed. That is, the current window has the keyboard focus and a [WM_KEYDOWN](/windows/win32/inputdev/wm-keydown) message is translated by the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) function.
 
-```
+```cpp
 afx_msg void OnUniChar(
     UINT nChar,
     UINT nRepCnt,
@@ -9148,7 +9148,7 @@ This method receives the [WM_UNICHAR](/windows/win32/inputdev/wm-unichar) notifi
 
 The framework calls this member function when a drop-down menu or submenu has been destroyed.
 
-```
+```cpp
 afx_msg void OnUnInitMenuPopup(
     CMenu* pPopupMenu,
     UINT nFlags);
@@ -9172,7 +9172,7 @@ This method receives the [WM_UNINITMENUPOPUP](/windows/win32/menurc/wm-uninitmen
 
 Called to change the user interface (UI) state for the specified window and all its child windows.
 
-```
+```cpp
 afx_msg void OnUpdateUIState(
     UINT nAction,
     UINT nUIElement);
@@ -9206,7 +9206,7 @@ This member function emulates the functionality of the [WM_UPDATEUISTATE](/windo
 
 The framework calls this member for all windows after the user has logged on or off.
 
-```
+```cpp
 afx_msg void OnUserChanged();
 ```
 
@@ -9254,7 +9254,7 @@ This member function is called by the framework only for list boxes that have th
 
 The framework calls this member function when the user clicks the window's vertical scroll bar.
 
-```
+```cpp
 afx_msg void OnVScroll(
     UINT nSBCode,
     UINT nPos,
@@ -9303,7 +9303,7 @@ If `OnVScroll` scrolls the contents of the `CWnd` object, it must also reset the
 
 The Clipboard owner's `OnVScrollClipboard` member function is called by the Clipboard viewer when the Clipboard data has the CF_OWNERDISPLAY format and there is an event in the Clipboard viewer's vertical scroll bar.
 
-```
+```cpp
 afx_msg void OnVScrollClipboard(
     CWnd* pClipAppWnd,
     UINT nSBCode,
@@ -9348,7 +9348,7 @@ The owner should scroll the Clipboard image, invalidate the appropriate section,
 
 The framework calls this member when the current window is maximized, and the window is composed by the Desktop Window Manager (DWM).
 
-```
+```cpp
 afx_msg void OnWindowMaximizedChanged(BOOL bIsMaximized);
 ```
 
@@ -9369,7 +9369,7 @@ This method receives the [WM_DWMWINDOWMAXIMIZEDCHANGE](/windows/win32/dwm/wm-dwm
 
 The framework calls this member function when the size, position, or Z-order has changed as a result of a call to the [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) member function or another window-management function.
 
-```
+```cpp
 afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
 ```
 
@@ -9389,7 +9389,7 @@ The default implementation sends the [WM_SIZE](/windows/win32/winmsg/wm-size) an
 
 The framework calls this member function when the size, position, or Z-order is about to change as a result of a call to the [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) member function or another window-management function.
 
-```
+```cpp
 afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
 ```
 
@@ -9411,7 +9411,7 @@ For a window with the [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) or [W
 
 The framework calls this member function after a change has been made to the Windows initialization file, WIN.INI.
 
-```
+```cpp
 afx_msg void OnWinIniChange(LPCTSTR lpszSection);
 ```
 
@@ -9473,7 +9473,7 @@ For more information about message reflection, see [Handling Reflected Messages]
 
 The framework calls this member function when the user double-clicks XBUTTON1 or XBUTTON2 while the cursor is in the client area of a window.
 
-```
+```cpp
 afx_msg void OnXButtonDblClk(
     UINT nFlags,
     UINT nButton,
@@ -9511,7 +9511,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 
 The framework calls this member function when the user presses XBUTTON1 or XBUTTON2 while the cursor is in the client area of a window.
 
-```
+```cpp
 afx_msg void OnXButtonDown(
     UINT nFlags,
     UINT nButton,
@@ -9549,7 +9549,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 
 The framework calls this member function when the user releases XBUTTON1 or XBUTTON2 while the cursor is in the client area of a window.
 
-```
+```cpp
 afx_msg void OnXButtonUp(
     UINT nFlags,
     UINT nButton,
@@ -9704,7 +9704,7 @@ The Windows [PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagew) fu
 
 Called by the default [OnNcDestroy](#onncdestroy) member function after the window has been destroyed.
 
-```
+```cpp
 virtual void PostNcDestroy();
 ```
 
@@ -9752,7 +9752,7 @@ For more information on changing window styles, see the [Changing the Styles of 
 
 This member function is called by the framework to allow other necessary subclassing to occur before the window is subclassed.
 
-```
+```cpp
 virtual void PreSubclassWindow();
 ```
 
@@ -10429,7 +10429,7 @@ While mouse input is captured, no WM_NCHITTEST or WM_SETCURSOR messages are sent
 
 Sets the position of the caret.
 
-```
+```cpp
 static void PASCAL SetCaretPos(POINT point);
 ```
 
@@ -11560,7 +11560,7 @@ It dispatches messages through the window's message map.
 
 Called to initiate the WinHelp application.
 
-```
+```cpp
 virtual void WinHelp(
     DWORD_PTR dwData,
     UINT nCmd = HELP_CONTEXT);
@@ -11606,7 +11606,7 @@ TRUE if successful; otherwise FALSE.
 
 Called by the framework when the window size changes to adjust the layout of child windows, if dynamic layout is enabled for the window.
 
-```
+```cpp
 virtual void ResizeDynamicLayout();
 ```
 

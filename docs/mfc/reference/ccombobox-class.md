@@ -333,7 +333,7 @@ To delete the current selection without placing the deleted text onto the Clipbo
 
 Called by the framework when the user deletes an item from an owner-draw `CComboBox` object or destroys the combo box.
 
-```
+```cpp
 virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ```
 
@@ -425,7 +425,7 @@ This function is not supported by the Windows `ComboBoxEx` control. For more inf
 
 Called by the framework when a visual aspect of an owner-draw combo box changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 
@@ -990,7 +990,7 @@ If the combo box does not have the style [CBS_AUTOHSCROLL](../../mfc/reference/s
 
 Called by the framework when a combo box with an owner-draw style is created.
 
-```
+```cpp
 virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ```
 

@@ -211,7 +211,7 @@ void SaveListOfRecentPanes(CList<HWND,
 
 ## <a name="setinfo"></a> CRecentDockSiteInfo::SetInfo
 
-```
+```cpp
 virtual void SetInfo(
     BOOL bForSlider,
     CRecentDockSiteInfo& srcInfo);
@@ -226,7 +226,7 @@ virtual void SetInfo(
 
 ## <a name="storedockinfo"></a> CRecentDockSiteInfo::StoreDockInfo
 
-```
+```cpp
 virtual void StoreDockInfo(
     CPaneContainer* pRecentContainer,
     CDockablePane* pTabbedBar = NULL);

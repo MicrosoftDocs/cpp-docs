@@ -316,7 +316,7 @@ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#wi
 
 Called by the framework when the user deletes an item from an owner-draw `CListBox` object or destroys the list box.
 
-```
+```cpp
 virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ```
 
@@ -401,7 +401,7 @@ The zero-based index of the last filename added to the list. The return value is
 
 Called by the framework when a visual aspect of an owner-draw list box changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 
@@ -958,7 +958,7 @@ You could use this function to determine which list-box item the mouse cursor mo
 
 Called by the framework when a list box with an owner-draw style is created.
 
-```
+```cpp
 virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ```
 

@@ -128,7 +128,7 @@ The object is constructed with default values for width, height, Object ID and G
 
 Puts the encapsulated animation variables into a list.
 
-```
+```cpp
 virtual void GetAnimationVariableList(
     CList<CAnimationVariable*,
     CAnimationVariable*>& lst);

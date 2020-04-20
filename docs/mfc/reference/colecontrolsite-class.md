@@ -109,7 +109,7 @@ To create an ActiveX control site using `COleControlSite`, derive a class from `
 
 Binds the calling object's default simple bound property, as marked in the type library, to the underlying cursor that is defined by the DataSource, UserName, Password, and SQL properties of the data-source control.
 
-```
+```cpp
 virtual void BindDefaultProperty(
     DISPID dwDispID,
     VARTYPE vtProp,
@@ -139,7 +139,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 Binds the calling object's simple bound property, as marked in the type library, to the underlying cursor that is defined by the DataSource, UserName, Password, and SQL properties of the data-source control.
 
-```
+```cpp
 virtual void BindProperty(
     DISPID dwDispId,
     CWnd* pWndDSC);
@@ -317,7 +317,7 @@ For more information, see [IOleObject::DoVerb](/windows/win32/api/oleidl/nf-olei
 
 Enables data sourcing for the control site.
 
-```
+```cpp
 virtual void EnableDSC();
 ```
 
@@ -441,7 +441,7 @@ To retrieve the regular styles, call [COleControlSite::GetStyle](#getstyle).
 
 Gets the control property specified by *dwDispID*.
 
-```
+```cpp
 virtual void GetProperty(
     DISPID dwDispID,
     VARTYPE vtProp,
@@ -483,7 +483,7 @@ For a list of possible values, see [Windows Styles](../../mfc/reference/styles-u
 
 Retrieves the current text of the control.
 
-```
+```cpp
 virtual void GetWindowText(CString& str) const;
 ```
 
@@ -500,7 +500,7 @@ If the control supports the Caption stock property, this value is returned. If t
 
 Invokes the method or property specified by *dwDispID*, in the context specified by *wFlags*.
 
-```
+```cpp
 virtual void AFX_CDECL InvokeHelper(
     DISPID dwDispID,
     WORD wFlags,
@@ -539,7 +539,7 @@ This function converts the parameters to VARIANTARG values, then invokes the `ID
 
 Invokes the method or property specified by *dwDispID*, in the context specified by *wFlags*.
 
-```
+```cpp
 virtual void InvokeHelperV(
     DISPID dwDispID,
     WORD wFlags,
@@ -835,7 +835,7 @@ To modify a window's extended styles, call [ModifyStyle](#modifystyle).
 
 Changes the position of the control.
 
-```
+```cpp
 virtual void MoveWindow(
     int x,
     int y,
@@ -964,7 +964,7 @@ A pointer to the window that previously had focus.
 
 Sets the control property specified by *dwDispID*.
 
-```
+```cpp
 virtual void AFX_CDECL SetProperty(
     DISPID dwDispID,
     VARTYPE vtProp, ...);
@@ -991,7 +991,7 @@ The type of exception is determined by the return value of the attempt to set th
 
 Sets the control property specified by *dwDispID*.
 
-```
+```cpp
 virtual void SetPropertyV(
     DISPID dwDispID,
     VARTYPE vtProp,
@@ -1057,7 +1057,7 @@ Nonzero if successful, otherwise zero.
 
 Sets the text for the control site.
 
-```
+```cpp
 virtual void SetWindowText(LPCTSTR lpszString);
 ```
 

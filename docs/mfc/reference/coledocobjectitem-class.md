@@ -208,7 +208,7 @@ Nonzero if successful; otherwise 0.
 
 This member function is called by the framework to print a document.
 
-```
+```cpp
 static void OnPrint(
     CView* pCaller,
     CPrintInfo* pInfo,
@@ -264,7 +264,7 @@ This member function emulates the functionality of the [IOleCommandTarget::Query
 
 Releases the connection to an OLE linked item and closes it if it was open. Does not destroy the client item.
 
-```
+```cpp
 virtual void Release(OLECLOSE dwCloseOption = OLECLOSE_NOSAVE);
 ```
 
