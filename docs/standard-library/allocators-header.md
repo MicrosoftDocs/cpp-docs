@@ -16,7 +16,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
 ```
 
 > [!NOTE]
-> <allocators> was deprecated in Visual Studio 2019 version 16.3.
+> <allocators> is deprecated, starting with Visual Studio 2019 version 16.3.
 
 ## Remarks
 
