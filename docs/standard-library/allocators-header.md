@@ -15,6 +15,9 @@ Defines several templates that help allocate and free memory blocks for node-bas
 #include <allocators>
 ```
 
+> [!NOTE]
+> <allocators> was deprecated in Visual Studio 2019 version 16.3.
+
 ## Remarks
 
 The \<allocators> header provides six allocator templates that can be used to select memory-management strategies for node-based containers. For use with these templates, it also provides several different synchronization filters to tailor the memory-management strategy to a variety of different multithreading schemes (including none). Matching a memory management strategy to the known memory usage patterns, and synchronization requirements, of a particular application can often increase the speed or reduce the overall memory requirements of an application.
