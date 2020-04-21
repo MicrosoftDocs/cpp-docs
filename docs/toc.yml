@@ -9358,7 +9358,18 @@
                       href: standard-library/multiset-class.md
                 - name: <shared_mutex>
                   href: standard-library/shared-mutex.md
-                - name: <sstream>
+                - name: <span>
+                  expanded: false
+                  items: 
+                    - name: <span>
+                      href: standard-library/span.md
+                    - name: <span> functions
+                      href: standard-library/span-functions.md
+                    - name: <span> operators
+                      href: standard-library/span-operators.md
+                    - name: span class
+                      href: standard-library/span-class.md
+                  - name: <sstream>
                   expanded: false
                   items: 
                     - name: <sstream>
