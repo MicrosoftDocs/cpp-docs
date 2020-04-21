@@ -194,7 +194,7 @@ Loops over list of animation variables encapsulated in a derived animation objec
 
 Detaches an animation object from parent animation controller.
 
-```
+```cpp
 void DetachFromController();
 ```
 
@@ -373,7 +373,7 @@ CAnimationController* m_pParentController;
 
 Sets a flag to automatically destroy transitions.
 
-```
+```cpp
 void SetAutodestroyTransitions(BOOL bValue);
 ```
 
@@ -390,7 +390,7 @@ Set this flag only if you allocated transition objects using operator new. If fo
 
 Sets new IDs.
 
-```
+```cpp
 void SetID(
     UINT32 nObjectID,
     UINT32 nGroupID = 0);
@@ -424,7 +424,7 @@ This helper can be used to establish a relationship between animation variables 
 
 Sets user-defined data.
 
-```
+```cpp
 void SetUserData (DWORD dwUserData);
 ```
 

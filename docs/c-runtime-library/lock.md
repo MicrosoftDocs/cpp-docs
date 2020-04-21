@@ -18,7 +18,7 @@ Acquires a multi-thread lock.
 
 ## Syntax
 
-```
+```cpp
 void __cdecl _lock
    int locknum
 );

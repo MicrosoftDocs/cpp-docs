@@ -120,7 +120,7 @@ virtual ~CRenderTarget();
 
 Attaches existing render target interface to the object
 
-```
+```cpp
 void Attach(ID2D1RenderTarget* pRenderTarget);
 ```
 
@@ -133,7 +133,7 @@ Existing render target interface. Cannot be NULL
 
 Initiates drawing on this render target.
 
-```
+```cpp
 void BeginDraw();
 ```
 
@@ -141,7 +141,7 @@ void BeginDraw();
 
 Clears the drawing area to the specified color.
 
-```
+```cpp
 void Clear(D2D1_COLOR_F color);
 ```
 
@@ -246,7 +246,7 @@ Pointer to detached render target interface.
 
 Draws the formatted text described by the specified IDWriteTextLayout object.
 
-```
+```cpp
 void DrawBitmap(
     CD2DBitmap* pBitmap,
     const CD2DRectF& rectDest,
@@ -276,7 +276,7 @@ The size and position, in device-independent pixels in the bitmap's coordinate s
 
 Draws the outline of the specified ellipse using the specified stroke style.
 
-```
+```cpp
 void DrawEllipse(
     const CD2DEllipse& ellipse,
     CD2DBrush* pBrush,
@@ -302,7 +302,7 @@ The style of stroke to apply to the ellipse's outline, or NULL to paint a solid 
 
 Draws the outline of the specified geometry using the specified stroke style.
 
-```
+```cpp
 void DrawGeometry(
     CD2DGeometry* pGeometry,
     CD2DBrush* pBrush,
@@ -328,7 +328,7 @@ The style of stroke to apply to the geometry's outline, or NULL to paint a solid
 
 Draws the specified glyphs.
 
-```
+```cpp
 void DrawGlyphRun(
     const CD2DPointF& ptBaseLineOrigin,
     const DWRITE_GLYPH_RUN& glyphRun,
@@ -354,7 +354,7 @@ A value that indicates how glyph metrics are used to measure text when it is for
 
 Draws a line between the specified points using the specified stroke style.
 
-```
+```cpp
 void DrawLine(
     const CD2DPointF& ptFrom,
     const CD2DPointF& ptTo,
@@ -384,7 +384,7 @@ The style of stroke to paint, or NULL to paint a solid line.
 
 Draws the outline of a rectangle that has the specified dimensions and stroke style.
 
-```
+```cpp
 void DrawRectangle(
     const CD2DRectF& rectangle,
     CD2DBrush* pBrush,
@@ -410,7 +410,7 @@ The style of stroke to paint, or NULL to paint a solid stroke.
 
 Draws the outline of the specified rounded rectangle using the specified stroke style.
 
-```
+```cpp
 void DrawRoundedRectangle(
     const CD2DRoundedRect& rectRounded,
     CD2DBrush* pBrush,
@@ -436,7 +436,7 @@ The style of the rounded rectangle's stroke, or NULL to paint a solid stroke. Th
 
 Draws the specified text using the format information provided by an IDWriteTextFormat object.
 
-```
+```cpp
 void DrawText(
     const CString& strText,
     const CD2DRectF& rectangle,
@@ -470,7 +470,7 @@ A value that indicates how glyph metrics are used to measure text when it is for
 
 Draws the formatted text described by the specified IDWriteTextLayout object.
 
-```
+```cpp
 void DrawTextLayout(
     const CD2DPointF& ptOrigin,
     CD2DTextLayout* textLayout,
@@ -508,7 +508,7 @@ If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error 
 
 Paints the interior of the specified ellipse.
 
-```
+```cpp
 void FillEllipse(
     const CD2DEllipse& ellipse,
     CD2DBrush* pBrush);
@@ -526,7 +526,7 @@ The brush used to paint the interior of the ellipse.
 
 Paints the interior of the specified geometry.
 
-```
+```cpp
 void FillGeometry(
     CD2DGeometry* pGeometry,
     CD2DBrush* pBrush,
@@ -548,7 +548,7 @@ The opacity mask to apply to the geometry;NULL for no opacity mask. If an opacit
 
 Paints the interior of the specified mesh.
 
-```
+```cpp
 void FillMesh(
     CD2DMesh* pMesh,
     CD2DBrush* pBrush);
@@ -566,7 +566,7 @@ The brush used to paint the mesh.
 
 Applies the opacity mask described by the specified bitmap to a brush and uses that brush to paint a region of the render target.
 
-```
+```cpp
 void FillOpacityMask(
     CD2DBitmap* pOpacityMask,
     CD2DBrush* pBrush,
@@ -596,7 +596,7 @@ The region of the bitmap to use as the opacity mask, in device-independent pixel
 
 Paints the interior of the specified rectangle.
 
-```
+```cpp
 void FillRectangle(
     const CD2DRectF& rectangle,
     CD2DBrush* pBrush);
@@ -614,7 +614,7 @@ The brush used to paint the rectangle's interior.
 
 Paints the interior of the specified rounded rectangle.
 
-```
+```cpp
 void FillRoundedRectangle(
     const CD2DRoundedRect& rectRounded,
     CD2DBrush* pBrush);
@@ -632,7 +632,7 @@ The brush used to paint the interior of the rounded rectangle.
 
 Executes all pending drawing commands.
 
-```
+```cpp
 void Flush(
     D2D1_TAG* tag1 = NULL,
     D2D1_TAG* tag2 = NULL);
@@ -734,7 +734,7 @@ The current size of the render target in device-independent pixels
 
 Gets the label for subsequent drawing operations.
 
-```
+```cpp
 void GetTags(
     D2D1_TAG* tag1 = NULL,
     D2D1_TAG* tag2 = NULL) const;
@@ -764,7 +764,7 @@ Current antialiasing mode for text and glyph drawing operations.
 
 Retrieves the render target's current text rendering options.
 
-```
+```cpp
 void GetTextRenderingParams(IDWriteRenderingParams** textRenderingParams);
 ```
 
@@ -777,7 +777,7 @@ When this method returns, textRenderingParamscontains the address of a pointer t
 
 Gets the current transform of the render target.
 
-```
+```cpp
 void GetTransform(D2D1_MATRIX_3X2_F* transform);
 ```
 
@@ -855,7 +855,7 @@ Pointer to an ID2D1RenderTarget interface or NULL if object is not initialized y
 
 Removes the last axis-aligned clip from the render target. After this method is called, the clip is no longer applied to subsequent drawing operations.
 
-```
+```cpp
 void PopAxisAlignedClip();
 ```
 
@@ -863,7 +863,7 @@ void PopAxisAlignedClip();
 
 Stops redirecting drawing operations to the layer that is specified by the last PushLayer call.
 
-```
+```cpp
 void PopLayer();
 ```
 
@@ -871,7 +871,7 @@ void PopLayer();
 
 Removes the last axis-aligned clip from the render target. After this method is called, the clip is no longer applied to subsequent drawing operations.
 
-```
+```cpp
 void PushAxisAlignedClip(
     const CD2DRectF& rectClip,
     D2D1_ANTIALIAS_MODE mode = D2D1_ANTIALIAS_MODE_PER_PRIMITIVE);
@@ -889,7 +889,7 @@ The antialiasing mode that is used to draw the edges of clip rectangles that hav
 
 Adds the specified layer to the render target so that it receives all subsequent drawing operations until PopLayer is called.
 
-```
+```cpp
 void PushLayer(
     const D2D1_LAYER_PARAMETERS& layerParameters,
     CD2DLayer& layer);
@@ -907,7 +907,7 @@ The layer that receives subsequent drawing operations.
 
 Sets the render target's drawing state to that of the specified ID2D1DrawingStateBlock.
 
-```
+```cpp
 void RestoreDrawingState(ID2D1DrawingStateBlock& drawingStateBlock);
 ```
 
@@ -920,7 +920,7 @@ The new drawing state of the render target.
 
 Saves the current drawing state to the specified ID2D1DrawingStateBlock.
 
-```
+```cpp
 void SaveDrawingState(ID2D1DrawingStateBlock& drawingStateBlock) const;
 ```
 
@@ -933,7 +933,7 @@ When this method returns, contains the current drawing state of the render targe
 
 Sets the antialiasing mode of the render target. The antialiasing mode applies to all subsequent drawing operations, excluding text and glyph drawing operations.
 
-```
+```cpp
 void SetAntialiasMode(D2D1_ANTIALIAS_MODE antialiasMode);
 ```
 
@@ -946,7 +946,7 @@ The antialiasing mode for future drawing operations.
 
 Sets the dots per inch (DPI) of the render target.
 
-```
+```cpp
 void SetDpi(const CD2DSizeF& sizeDPI);
 ```
 
@@ -959,7 +959,7 @@ A value greater than or equal to zero that specifies the horizontal/verticalDPI 
 
 Specifies a label for subsequent drawing operations.
 
-```
+```cpp
 void SetTags(
     D2D1_TAG tag1,
     D2D1_TAG tag2);
@@ -977,7 +977,7 @@ A label to apply to subsequent drawing operations.
 
 Specifies the antialiasing mode to use for subsequent text and glyph drawing operations.
 
-```
+```cpp
 void SetTextAntialiasMode(D2D1_TEXT_ANTIALIAS_MODE textAntialiasMode);
 ```
 
@@ -990,7 +990,7 @@ The antialiasing mode to use for subsequent text and glyph drawing operations.
 
 Specifies text rendering options to be applied to all subsequent text and glyph drawing operations.
 
-```
+```cpp
 void SetTextRenderingParams(IDWriteRenderingParams* textRenderingParams = NULL);
 ```
 
@@ -1003,7 +1003,7 @@ The text rendering options to be applied to all subsequent text and glyph drawin
 
 Applies the specified transform to the render target, replacing the existing transformation. All subsequent drawing operations occur in the transformed space.
 
-```
+```cpp
 void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 void SetTransform(const D2D1_MATRIX_3X2_F& transform);
 ```

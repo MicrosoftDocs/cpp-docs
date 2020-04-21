@@ -233,7 +233,7 @@ The ID of the indicator specified by *nIndex*.
 
 Copies the coordinates of the indicator specified by *nIndex* into the structure pointed to by *lpRect*.
 
-```
+```cpp
 void GetItemRect(
     int nIndex,
     LPRECT lpRect) const;
@@ -255,7 +255,7 @@ Coordinates are in pixels relative to the upper-left corner of the status bar.
 
 Sets *nID*, *nStyle*, and *cxWidth* to the ID, style, and width of the indicator pane at the location specified by *nIndex*.
 
-```
+```cpp
 void GetPaneInfo(
     int nIndex,
     UINT& nID,
@@ -368,7 +368,7 @@ Nonzero if successful; otherwise 0.
 
 Sets the specified indicator pane to a new ID, style, and width.
 
-```
+```cpp
 void SetPaneInfo(
     int nIndex,
     UINT nID,
@@ -408,7 +408,7 @@ The following indicator styles are supported:
 
 Call this member function to set the style of a status bar's pane.
 
-```
+```cpp
 void SetPaneStyle(
     int nIndex,
     UINT nStyle);

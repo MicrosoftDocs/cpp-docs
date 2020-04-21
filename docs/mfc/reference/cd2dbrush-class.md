@@ -75,7 +75,7 @@ virtual ~CD2DBrush();
 
 Attaches existing resource interface to the object.
 
-```
+```cpp
 void Attach(ID2D1Brush* pResource);
 ```
 
@@ -154,7 +154,7 @@ A value between zero and 1 that indicates the opacity of the brush. This value i
 
 Gets the current transform of the render target
 
-```
+```cpp
 void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
 ```
 
@@ -207,7 +207,7 @@ Pointer to an ID2D1Brush interface or NULL if object is not initialized yet.
 
 Sets the degree of opacity of this brush
 
-```
+```cpp
 void SetOpacity(FLOAT opacity);
 ```
 
@@ -220,7 +220,7 @@ A value between zero and 1 that indicates the opacity of the brush. This value i
 
 Applies the specified transform to the render target, replacing the existing transformation. All subsequent drawing operations occur in the transformed space.
 
-```
+```cpp
 void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 ```
 

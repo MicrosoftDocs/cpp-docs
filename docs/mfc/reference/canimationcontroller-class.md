@@ -194,7 +194,7 @@ CAnimationController(void);
 
 Called by the framework to clean up the group when animation has been scheduled.
 
-```
+```cpp
 void CleanUpGroup(UINT32 nGroupID);
 void CleanUpGroup(CAnimationGroup* pGroup);
 ```
@@ -905,7 +905,7 @@ This method is called if you enable storyboard events using CAnimationController
 
 Removes all animation groups from animation controller.
 
-```
+```cpp
 void RemoveAllAnimationGroups();
 ```
 
@@ -917,7 +917,7 @@ All groups will be deleted, their pointer, if stored at the application level, m
 
 Removes an animation group with specified ID from animation controller.
 
-```
+```cpp
 void RemoveAnimationGroup(UINT32 nGroupID);
 ```
 
@@ -934,7 +934,7 @@ This method removes an animation group from the internal list of groups and dele
 
 Remove an animation object from animation controller.
 
-```
+```cpp
 void RemoveAnimationObject(
     CAnimationBaseObject* pObject,
     BOOL bNoDelete = FALSE);
@@ -956,7 +956,7 @@ Removes an animation object from animation controller and animation group. Call 
 
 Removes transitions from animation objects that belong to the specified group.
 
-```
+```cpp
 void RemoveTransitions(UINT32 nGroupID);
 ```
 
@@ -999,7 +999,7 @@ You must call AnimateGroup with parameter bScheduleNow set to FALSE prior Schedu
 
 Establishes a relationship between animation controller and a window.
 
-```
+```cpp
 void SetRelatedWnd(CWnd* pWnd);
 ```
 

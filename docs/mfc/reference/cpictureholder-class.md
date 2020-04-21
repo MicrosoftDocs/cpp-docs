@@ -257,7 +257,7 @@ LPPICTURE m_pPict;
 
 Renders the picture in the rectangle referenced by *rcRender*.
 
-```
+```cpp
 void Render(
     CDC* pDC,
     const CRect& rcRender,
@@ -279,7 +279,7 @@ A rectangle representing the bounding rectangle of the object rendering the pict
 
 Connects the `CPictureHolder` object to a `IPictureDisp` interface.
 
-```
+```cpp
 void SetPictureDispatch(LPPICTUREDISP pDisp);
 ```
 

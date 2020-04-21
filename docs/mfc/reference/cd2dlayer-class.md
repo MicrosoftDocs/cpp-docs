@@ -72,7 +72,7 @@ virtual ~CD2DLayer();
 
 Attaches existing resource interface to the object
 
-```
+```cpp
 void Attach(ID2D1Layer* pResource);
 ```
 

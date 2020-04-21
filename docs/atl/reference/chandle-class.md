@@ -60,7 +60,7 @@ A `CHandle` object can be used whenever a handle is required: the main differenc
 
 Call this method to attach the `CHandle` object to an existing handle.
 
-```
+```cpp
 void Attach(HANDLE h) throw();
 ```
 
@@ -108,7 +108,7 @@ Frees the `CHandle` object by calling [CHandle::Close](#close).
 
 Call this method to close a `CHandle` object.
 
-```
+```cpp
 void Close() throw();
 ```
 

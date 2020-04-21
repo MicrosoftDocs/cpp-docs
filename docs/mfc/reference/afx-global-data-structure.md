@@ -113,7 +113,7 @@ TRUE indicates alpha blending is supported; otherwise, FALSE.
 
 Releases resources that are allocated by the framework, such as brushes, fonts, and DLLs.
 
-```
+```cpp
 void CleanUp();
 ```
 
@@ -231,7 +231,7 @@ A theme defines the visual style of an application. A theme is not used to draw 
 
 Enables or disables Microsoft Active Accessibility support.
 
-```
+```cpp
 void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```
 
@@ -619,7 +619,7 @@ The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 4 
 
 Detects the current state of the desktop's menu animation and taskbar autohide features.
 
-```
+```cpp
 void OnSettingChange();
 ```
 
@@ -724,7 +724,7 @@ This method creates a horizontal regular font, an underlined font, and a bold fo
 
 Reintializes the logical fonts that are used by the framework.
 
-```
+```cpp
 void UpdateFonts();
 ```
 
@@ -736,7 +736,7 @@ For more information about logical fonts, see `CFont::CreateFontIndirect`.
 
 Initializes the colors, color depth, brushes, pens, and images that are used by the framework.
 
-```
+```cpp
 void UpdateSysColors();
 ```
 
@@ -804,7 +804,7 @@ An integer value with encoded flags that specify positions of auto hide bars. It
 
 Releases interfaces obtained through the `GetITaskbarList` and `GetITaskbarList3` methods.
 
-```
+```cpp
 void ReleaseTaskBarRefs();
 ```
 

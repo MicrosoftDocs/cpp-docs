@@ -133,7 +133,7 @@ virtual void CleanUp();
 
 Specifies whether to display the full text of a tooltip in a large tooltip window or a truncated version of the text in a small tooltip window.
 
-```
+```cpp
 void EnableFullTextTooltip(BOOL bOn=TRUE);
 ```
 
@@ -148,7 +148,7 @@ void EnableFullTextTooltip(BOOL bOn=TRUE);
 
 Specifies whether the button text font is the same as the application menu font.
 
-```
+```cpp
 void EnableMenuFont(
     BOOL bOn=TRUE,
     BOOL bRedraw=TRUE);
@@ -618,7 +618,7 @@ Override this method to use your own code to retrieve the font.
 
 Sets a button to auto-repeat mode.
 
-```
+```cpp
 void SetAutorepeatMode(int nTimeDelay=500);
 ```
 
@@ -635,7 +635,7 @@ This method causes the button to constantly send WM_COMMAND messages to the pare
 
 Sets the image for a checked button.
 
-```
+```cpp
 void SetCheckedImage(
     HICON hIcon,
     BOOL bAutoDestroy=TRUE,
@@ -700,7 +700,7 @@ void SetCheckedImage(
 
 Sets the background color for the button text.
 
-```
+```cpp
 void SetFaceColor(
     COLORREF crFace,
     BOOL bRedraw=TRUE);
@@ -722,7 +722,7 @@ Use this method to define a new fill color for the button background (face). Not
 
 Sets the image for a button.
 
-```
+```cpp
 void SetImage(
     HICON hIcon,
     BOOL bAutoDestroy=TRUE,
@@ -794,7 +794,7 @@ The following example demonstrates how to use various versions of the `SetImage`
 
 Sets the cursor image.
 
-```
+```cpp
 void SetMouseCursor(HCURSOR hcursor);
 ```
 
@@ -818,7 +818,7 @@ The following example demonstrates how to use the `SetMouseCursor` method in the
 
 Sets the cursor to the image of a hand.
 
-```
+```cpp
 void SetMouseCursorHand();
 ```
 
@@ -830,7 +830,7 @@ Use this method to associate the cursor image of a hand with the button. The cur
 
 Uses a `CMenuImages` object to set the button image.
 
-```
+```cpp
 void SetStdImage(
     CMenuImages::IMAGES_IDS id,
     CMenuImages::IMAGE_STATE state=CMenuImages::ImageBlack,
@@ -854,7 +854,7 @@ void SetStdImage(
 
 Sets the color of the button text for a button that is not selected.
 
-```
+```cpp
 void SetTextColor(COLORREF clrText);
 ```
 
@@ -869,7 +869,7 @@ void SetTextColor(COLORREF clrText);
 
 Sets the color of the button text for a button that is selected.
 
-```
+```cpp
 void SetTextHotColor(COLORREF clrTextHot);
 ```
 
@@ -884,7 +884,7 @@ void SetTextHotColor(COLORREF clrTextHot);
 
 Associates a tooltip with a button.
 
-```
+```cpp
 void SetTooltip(LPCTSTR lpszToolTipText);
 ```
 

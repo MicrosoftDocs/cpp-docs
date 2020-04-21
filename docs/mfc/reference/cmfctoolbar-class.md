@@ -339,7 +339,7 @@ Override this method to provide your own dynamic layout in classes that you deri
 
 Recalculates the size of the toolbar.
 
-```
+```cpp
 void AdjustSize();
 ```
 
@@ -607,7 +607,7 @@ The framework calls this method when an application shuts down.
 
 Frees the system resources allocated for locked toolbar images.
 
-```
+```cpp
 void CleanUpLockedImages();
 ```
 
@@ -826,7 +826,7 @@ Override this method in a class derived from [CMFCToolBar](../../mfc/reference/c
 
 Enables or disables the Customize button that appears on the toolbar.
 
-```
+```cpp
 void EnableCustomizeButton(
     BOOL bEnable,
     int iCustomizeCmd,
@@ -886,7 +886,7 @@ This method extends the base class implementation, [CBasePane::EnableDocking](..
 
 Enables or disables large icons on toolbar buttons.
 
-```
+```cpp
 void EnableLargeIcons(BOOL bEnable);
 ```
 
@@ -916,7 +916,7 @@ static void EnableQuickCustomization(BOOL bEnable=TRUE);
 
 Enables or disables command reflection.
 
-```
+```cpp
 void EnableReflections(BOOL bEnable = TRUE);
 ```
 
@@ -935,7 +935,7 @@ For more information about command reflection, see [TN062: Message Reflection fo
 
 Enables or disables text labels under toolbar button images.
 
-```
+```cpp
 void EnableTextLabels(BOOL bEnable=TRUE);
 ```
 
@@ -1030,7 +1030,7 @@ A pointer to the toolbar button if it exists; or NULL if there is no such button
 
 Returns the command ID, style, and image index of the button at a specified index.
 
-```
+```cpp
 void GetButtonInfo(
     int nIndex,
     UINT& nID,
@@ -2898,7 +2898,7 @@ See the Explorer sample for an example that uses this method.
 
 Sets the command ID, style, and image ID of a toolbar button.
 
-```
+```cpp
 void SetButtonInfo(
     int nIndex,
     UINT nID,
@@ -3061,7 +3061,7 @@ This method adjusts the layout of and redraws each toolbar in the application. C
 
 Specifies whether unavailable buttons on the toolbar are dimmed, or whether button-unavailable images are used.
 
-```
+```cpp
 void SetGrayDisabledButtons(BOOL bGrayDisabledButtons);
 ```
 
@@ -3078,7 +3078,7 @@ By default, unavailable buttons are dimmed.
 
 Sets the height of the toolbar.
 
-```
+```cpp
 void SetHeight(int cyHeight);
 ```
 
@@ -3121,7 +3121,7 @@ BOOL SetHot(CMFCToolBarButton* pMenuButton);
 
 Specifies whether toolbar buttons are hot-tracked.
 
-```
+```cpp
 void SetHotBorder(BOOL bShowHotBorder);
 ```
 
@@ -3155,7 +3155,7 @@ For more information about hot-tracked toolbar buttons, see [CMFCToolBar::GetHot
 
 ## <a name="setignoresettext"></a> CMFCToolBar::SetIgnoreSetText
 
-```
+```cpp
 void SetIgnoreSetText(BOOL bValue);
 ```
 
@@ -3190,7 +3190,7 @@ For more information about the **Customize** dialog box, see [CMFCToolBarsCustom
 
 Sets the sizes of locked buttons and locked images on the toolbar.
 
-```
+```cpp
 void SetLockedSizes(
     SIZE sizeButton,
     SIZE sizeImage,
@@ -3216,7 +3216,7 @@ Call the [CMFCToolBar::GetLockedImageSize](#getlockedimagesize) method to retrie
 
 ## <a name="setmaskmode"></a> CMFCToolBar::SetMaskMode
 
-```
+```cpp
 void SetMaskMode(BOOL bMasked);
 ```
 
@@ -3275,7 +3275,7 @@ This method clears the previous list of non-permitted commands. By default, the 
 
 Positions the toolbar and its sibling on the same row.
 
-```
+```cpp
 void SetOneRowWithSibling();
 ```
 
@@ -3289,7 +3289,7 @@ The framework calls the [CMFCToolBar::SetTwoRowsWithSibling](#settworowswithsibl
 
 ## <a name="setorigbuttons"></a> CMFCToolBar::SetOrigButtons
 
-```
+```cpp
 void SetOrigButtons(const CObList& lstOrigButtons);
 ```
 
@@ -3303,7 +3303,7 @@ void SetOrigButtons(const CObList& lstOrigButtons);
 
 Specifies whether a user can close the toolbar.
 
-```
+```cpp
 void SetPermament(BOOL bPermament=TRUE);
 ```
 
@@ -3322,7 +3322,7 @@ Call the [CMFCToolBar::CanBeClosed](#canbeclosed) method to determine whether a 
 
 Specifies whether the parent frame or the owner sends commands to the toolbar.
 
-```
+```cpp
 void SetRouteCommandsViaFrame(BOOL bValue);
 ```
 
@@ -3358,7 +3358,7 @@ Call the [CMFCToolBar::GetShowTooltips](#getshowtooltips) method to determine wh
 
 Specifies the sibling of the toolbar.
 
-```
+```cpp
 void SetSiblingToolBar(CMFCToolBar* pBrotherToolbar);
 ```
 
@@ -3403,7 +3403,7 @@ Call the [CMFCToolBar::GetImageSize](#getimagesize) method to retrieve the size 
 
 Specifies properties of a button on the toolbar.
 
-```
+```cpp
 void SetToolBarBtnText(
     UINT nBtnIndex,
     LPCTSTR szText=NULL,
@@ -3435,7 +3435,7 @@ In Debug builds, this method generates an assertion failure if *nBtnIndex* does 
 
 Positions the toolbar and its sibling on separate rows.
 
-```
+```cpp
 void SetTwoRowsWithSibling();
 ```
 
@@ -3527,7 +3527,7 @@ The framework calls this method when a key is pressed together with the Alt key.
 
 Updates the state of the specified button.
 
-```
+```cpp
 void UpdateButton(int nIndex);
 ```
 

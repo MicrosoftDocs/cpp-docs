@@ -183,7 +183,7 @@ The `m_hPrevInstance` data member no longer exists. To determine whether another
 
 Call this member function to add a document template to the list of available document templates that the application maintains.
 
-```
+```cpp
 void AddDocTemplate(CDocTemplate* pTemplate);
 ```
 
@@ -252,7 +252,7 @@ To customize the behavior, override this function in a derived [CWinApp Class](.
 
 Call this member function to close all open documents before exiting.
 
-```
+```cpp
 void CloseAllDocuments(BOOL bEndSession);
 ```
 
@@ -424,7 +424,7 @@ Returns TRUE if D2D support was enabled, FALSE - otherwise
 
 Call this member function from within the constructor of your `CWinApp`-derived class to use HTMLHelp for your application's help.
 
-```
+```cpp
 void EnableHtmlHelp();
 ```
 
@@ -434,7 +434,7 @@ void EnableHtmlHelp();
 
 Call this function, typically from your `InitInstance` override, to enable your application's users to open data files when they double-click the files from within the Windows File Manager.
 
-```
+```cpp
 void EnableShellOpen();
 ```
 
@@ -822,7 +822,7 @@ Section key if the function succeeds; otherwise NULL.
 
 Call this member function to hide an application before closing the open documents.
 
-```
+```cpp
 void HideApplication();
 ```
 
@@ -1072,7 +1072,7 @@ Use the `LoadStandardIcon` or [LoadOEMIcon](#loadoemicon) member function to acc
 
 Call this member function from within the [InitInstance](#initinstance) member function to enable and load the list of most recently used (MRU) files and last preview state.
 
-```
+```cpp
 void LoadStdProfileSettings(UINT nMaxMRU = _AFX_MRU_COUNT);
 ```
 
@@ -1563,7 +1563,7 @@ If a document that has that name is already open, the first frame window that co
 
 Call this member function to parse the command line and send the parameters, one at a time, to [CCommandLineInfo::ParseParam](../../mfc/reference/ccommandlineinfo-class.md#parseparam).
 
-```
+```cpp
 void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 ```
 
@@ -1726,7 +1726,7 @@ The default implementation simply returns TRUE. Override this function to provid
 
 Call this member function to register all of your application's document types with the Windows File Manager.
 
-```
+```cpp
 void RegisterShellFileTypes(BOOL bCompat = FALSE);
 ```
 
@@ -1914,7 +1914,7 @@ The default implementation of this member function calls the [CDocument::SaveMod
 
 Call this member function to select a specific printer, and release the printer that was previously selected in the Print Dialog box.
 
-```
+```cpp
 void SelectPrinter(
     HANDLE hDevNames,
     HANDLE hDevMode,
@@ -1940,7 +1940,7 @@ If both *hDevMode* and *hDevNames* are NULL, `SelectPrinter` uses the current de
 
 Sets the application's help type.
 
-```
+```cpp
 void SetHelpMode(AFX_HELP_TYPE eHelpType);
 ```
 
@@ -1959,7 +1959,7 @@ To set your application's Help type to HTMLHelp, you can call [EnableHTMLHelp](#
 
 Causes application settings to be stored in the registry instead of INI files.
 
-```
+```cpp
 void SetRegistryKey(LPCTSTR lpszRegistryKey);
 void SetRegistryKey(UINT nIDRegistryKey);
 ```
@@ -2046,7 +2046,7 @@ Override this function to perform custom unregistration steps.
 
 Call this member function to unregister all of your application's document types with the Windows File Manager.
 
-```
+```cpp
 void UnregisterShellFileTypes();
 ```
 
@@ -2186,7 +2186,7 @@ For another example, see the example for [CWinApp::GetProfileInt](#getprofileint
 
 Explicitly sets Application User Model ID for the application. This method should be called before any user interface is presented to the user (the best place is the application constructor).
 
-```
+```cpp
 void SetAppID(LPCTSTR lpcszAppID);
 ```
 

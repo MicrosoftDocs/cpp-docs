@@ -75,7 +75,7 @@ For more information regarding OLE-specific dialog boxes, see the article [Dialo
 
 Call this function to add new formats to the list of formats your application can support in a Paste Special operation.
 
-```
+```cpp
 void AddFormat(
     const FORMATETC& formatEtc,
     LPTSTR lpszFormat,
@@ -148,7 +148,7 @@ An [OLEUIPASTEFLAG](/windows/win32/api/oledlg/ne-oledlg-oleuipasteflag) structur
 
 Call this function to add the following Clipboard formats to the list of formats your application can support in a Paste Special operation:
 
-```
+```cpp
 void AddStandardFormats(BOOL bEnableLink = TRUE);
 ```
 

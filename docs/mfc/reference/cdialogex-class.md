@@ -91,7 +91,7 @@ CDialogEx(
 
 Sets the background color of the dialog box.
 
-```
+```cpp
 void SetBackgroundColor(
     COLORREF color,
     BOOL bRepaint=TRUE);
@@ -111,7 +111,7 @@ void SetBackgroundColor(
 
 Sets the background image of the dialog box.
 
-```
+```cpp
 void SetBackgroundImage(
     HBITMAP hBitmap,
     BackgroundLocation location=BACKGR_TILE,

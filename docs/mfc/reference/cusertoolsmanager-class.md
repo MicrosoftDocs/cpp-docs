@@ -414,7 +414,7 @@ Usually, you do not need to call this method directly, [CWinAppEx::SaveState](..
 
 Specifies the default extension that the **File Open** dialog box ( [CFileDialog Class](../../mfc/reference/cfiledialog-class.md)) uses in the **Command** field on the **Tools** tab of the **Customize** dialog box.
 
-```
+```cpp
 void SetDefExt(const CString& strDefExt);
 ```
 
@@ -431,7 +431,7 @@ Call this method to specify a default file name extension in the **File Open** d
 
 Specifies the file filter that the **File Open** dialog box ( [CFileDialog Class](../../mfc/reference/cfiledialog-class.md)) uses in the **Command** field on the **Tools** tab of the **Customize** dialog box.
 
-```
+```cpp
 void SetFilter(const CString& strFilter);
 ```
 

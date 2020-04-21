@@ -125,7 +125,7 @@ Call this member function to dump the item of the specified type as a hexadecima
 
 Forces any data remaining in buffers to be written to the file attached to the dump context.
 
-```
+```cpp
 void Flush();
 ```
 
@@ -153,7 +153,7 @@ The depth of the dump as set by `SetDepth`.
 
 Dumps an array of bytes formatted as hexadecimal numbers.
 
-```
+```cpp
 void HexDump(
     LPCTSTR lpszLine,
     BYTE* pby,
@@ -229,7 +229,7 @@ If you use the IMPLEMENT_DYNAMIC or IMPLEMENT_SERIAL macro in the implementation
 
 Sets the depth for the dump.
 
-```
+```cpp
 void SetDepth(int nNewDepth);
 ```
 

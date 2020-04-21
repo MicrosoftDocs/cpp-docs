@@ -757,7 +757,7 @@ Nonzero if any part of the specified rectangle lies within the boundaries of the
 
 Creates a rectangular region.
 
-```
+```cpp
 void SetRectRgn(
     int x1,
     int y1,

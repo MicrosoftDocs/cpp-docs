@@ -226,7 +226,7 @@ For related information, see the topic "CreateTableDef Method" in DAO Help.
 
 Call this member function to add a field to the table.
 
-```
+```cpp
 void CreateField(
     LPCTSTR lpszName,
     short nType,
@@ -299,7 +299,7 @@ For related information, see the topic "CreateField Method" in DAO Help.
 
 Call this function to add an index to a table.
 
-```
+```cpp
 void CreateIndex(CDaoIndexInfo& indexinfo);
 ```
 
@@ -328,7 +328,7 @@ The remaining members will be ignored if set to FALSE. In addition, the `m_lDist
 
 Call this member function to remove a field and make it inaccessible.
 
-```
+```cpp
 void DeleteField(LPCTSTR lpszName);
 void DeleteField(int nIndex);
 ```
@@ -351,7 +351,7 @@ For related information, see the topic "Delete Method" in DAO Help.
 
 Call this member function to delete an index in an underlying table.
 
-```
+```cpp
 void DeleteIndex(LPCTSTR lpszName);
 void DeleteIndex(int nIndex);
 ```
@@ -483,7 +483,7 @@ For related information, see the topic "Count Property" in DAO Help.
 
 Call this member function to obtain various kinds of information about a field defined in the tabledef.
 
-```
+```cpp
 void GetFieldInfo(
     int nIndex,
     CDaoFieldInfo& fieldinfo,
@@ -545,7 +545,7 @@ For related information, see the topic "Count Property" in DAO Help.
 
 Call this member function to obtain various kinds of information about an index defined in the tabledef.
 
-```
+```cpp
 void GetIndexInfo(
     int nIndex,
     CDaoIndexInfo& indexinfo,
@@ -722,7 +722,7 @@ A pointer to a string that specifies a table name.
 
 Call this member function to update the connection information for an attached table.
 
-```
+```cpp
 void RefreshLink();
 ```
 
@@ -738,7 +738,7 @@ For related information, see the topic "RefreshLink Method" in DAO Help.
 
 Sets a value that indicates one or more characteristics of a `CDaoTableDef` object.
 
-```
+```cpp
 void SetAttributes(long lAttributes);
 ```
 
@@ -768,7 +768,7 @@ For related information, see the topic "Attributes Property" in DAO Help.
 
 For a `CDaoTableDef` object that represents an attached table, the string object consists of one or two parts (a database type specifier and a path to the database).
 
-```
+```cpp
 void SetConnect(LPCTSTR lpszConnect);
 ```
 
@@ -820,7 +820,7 @@ For related information, see the topic "Connect Property" in DAO Help.
 
 Call this member function to set a user-defined name for a table.
 
-```
+```cpp
 void SetName(LPCTSTR lpszName);
 ```
 
@@ -839,7 +839,7 @@ For related information, see the topic "Name Property" in DAO Help.
 
 Call this member function to specify the name of an attached table or the name of the base table on which the `CDaoTableDef` object is based, as it exists in the original source of the data.
 
-```
+```cpp
 void SetSourceTableName(LPCTSTR lpszSrcTableName);
 ```
 
@@ -858,7 +858,7 @@ For related information, see the topic "SourceTableName Property" in DAO Help.
 
 Call this member function to set a validation rule for a tabledef.
 
-```
+```cpp
 void SetValidationRule(LPCTSTR lpszValidationRule);
 ```
 
@@ -883,7 +883,7 @@ For related information, see the topic "ValidationRule Property" in DAO Help.
 
 Call this member function to set the exception text of a validation rule for a `CDaoTableDef` object with an underlying base table supported by the Microsoft Jet database engine.
 
-```
+```cpp
 void SetValidationText(LPCTSTR lpszValidationText);
 ```
 

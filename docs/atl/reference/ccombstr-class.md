@@ -211,7 +211,7 @@ S_OK on success, or any standard HRESULT error value.
 
 Attaches a BSTR to the `CComBSTR` object by setting the [m_str](#m_str) member to *src*.
 
-```
+```cpp
 void Attach(BSTR src) throw();
 ```
 
@@ -393,7 +393,7 @@ The BSTR associated with the `CComBSTR` object.
 
 Frees the [m_str](#m_str) member.
 
-```
+```cpp
 void Empty() throw();
 ```
 

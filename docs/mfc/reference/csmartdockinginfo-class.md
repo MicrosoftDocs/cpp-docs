@@ -81,7 +81,7 @@ The following illustration shows an example of smart docking markers that have b
 
 Copies the current smart docking parameters into the provided [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) object.
 
-```
+```cpp
 void CopyTo(CSmartDockingInfo& params);
 ```
 

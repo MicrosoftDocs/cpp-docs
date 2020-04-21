@@ -51,7 +51,7 @@ These template parameters expect the class to conform to this archetype:
 
 Called to process a work item.
 
-```
+```cpp
 void Execute(
     RequestType request,
     void* pvWorkerParam,
@@ -102,7 +102,7 @@ This type must be used as the first parameter of `WorkerArchetype::Execute` and 
 
 Called to uninitialize the worker object after all requests have been passed to `WorkerArchetype::Execute`).
 
-```
+```cpp
 void Terminate(void* pvParam) throw();
 ```
 

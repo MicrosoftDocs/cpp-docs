@@ -69,7 +69,7 @@ For a brief description of the use of the `COleTemplateServer` class, see the [C
 
 Connects the document template pointed to by *pDocTemplate* to the underlying [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md) object.
 
-```
+```cpp
 void ConnectTemplate(
     REFCLSID clsid,
     CDocTemplate* pDocTemplate,
@@ -111,7 +111,7 @@ EnterRemarks
 
 Loads file-type information from the document-template string and places that information in the OLE system registry.
 
-```
+```cpp
 void UpdateRegistry(
     OLE_APPTYPE nAppType = OAT_INPLACE_SERVER,
     LPCTSTR* rglpszRegister = NULL,

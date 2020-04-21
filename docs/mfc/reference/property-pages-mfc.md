@@ -41,7 +41,7 @@ The following is a list of macros used to create and manage property pages for a
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of an integer property with the index of the current selection in a combo box on the property page.
 
-```
+```cpp
 void AFXAPI DDP_CBIndex(
     CDataExchange* pDX,
     int id,
@@ -75,7 +75,7 @@ This function should be called before the corresponding `DDX_CBIndex` function c
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property with the current selection in a combo box on the property page.
 
-```
+```cpp
 void AFXAPI DDP_CBString(
     CDataExchange* pDX,
     int id,
@@ -109,7 +109,7 @@ This function should be called before the corresponding `DDX_CBString` function 
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property that exactly matches the current selection in a combo box on the property page.
 
-```
+```cpp
 void AFXAPI DDP_CBStringExact(
     CDataExchange* pDX,
     int id,
@@ -143,7 +143,7 @@ This function should be called before the corresponding `DDX_CBStringExact` func
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of the property with the associated property page check box control.
 
-```
+```cpp
 void AFXAPI DDP_Check(
     CDataExchange* pDX,
     int id,
@@ -177,7 +177,7 @@ This function should be called before the corresponding `DDX_Check` function cal
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of an integer property with the index of the current selection in a list box on the property page.
 
-```
+```cpp
 void AFXAPI DDP_LBIndex(
     CDataExchange* pDX,
     int id,
@@ -211,7 +211,7 @@ This function should be called before the corresponding `DDX_LBIndex` function c
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property with the current selection in a list box on the property page.
 
-```
+```cpp
 void AFXAPI DDP_LBString(
     CDataExchange* pDX,
     int id,
@@ -245,7 +245,7 @@ This function should be called before the corresponding `DDX_LBString` function 
 
 Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property that exactly matches the current selection in a list box on the property page.
 
-```
+```cpp
 void AFXAPI DDP_LBStringExact(
     CDataExchange* pDX,
     int id,
@@ -279,7 +279,7 @@ This function should be called before the corresponding `DDX_LBStringExact` func
 
 Call this function in your property page's `DoDataExchange` function, to finish the transfer of property values from the property page to your control when property values are being saved.
 
-```
+```cpp
 void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 ```
 
@@ -302,7 +302,7 @@ This function should be called after all data exchange functions are completed. 
 
 Call this function in your control's `DoPropExchange` function to synchronize the value of the property with the associated property page radio button control.
 
-```
+```cpp
 void AFXAPI DDP_Radio(
     CDataExchange* pDX,
     int id,
@@ -336,7 +336,7 @@ This function should be called before the corresponding `DDX_Radio` function cal
 
 Call this function in your control's `DoDataExchange` function to synchronize the value of the property with the associated property page control.
 
-```
+```cpp
 void AFXAPI DDP_Text(
     CDataExchange* pDX,
     int id,

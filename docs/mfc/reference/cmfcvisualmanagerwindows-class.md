@@ -1335,7 +1335,7 @@ virtual void OnUpdateSystemColors();
 
 ## <a name="setofficestylemenus"></a> CMFCVisualManagerWindows::SetOfficeStyleMenus
 
-```
+```cpp
 void SetOfficeStyleMenus(BOOL bOn = TRUE);
 ```
 

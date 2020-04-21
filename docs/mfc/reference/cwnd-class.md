@@ -756,7 +756,7 @@ Do not call the `BeginPaint` member function except in response to a [WM_PAINT](
 
 Binds the calling object's default simple bound property (such as an edit control), as marked in the type library, to the underlying cursor that is defined by the DataSource, UserName, Password, and SQL properties of the data-source control.
 
-```
+```cpp
 void BindDefaultProperty(
     DISPID dwDispID,
     VARTYPE vtProp,
@@ -792,7 +792,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 Binds a cursor-bound property on a data-bound control (such as a grid control) to a data-source control and registers that relationship with the MFC binding manager.
 
-```
+```cpp
 void BindProperty(
     DISPID dwDispId,
     CWnd* pWndDSC);
@@ -820,7 +820,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 Brings `CWnd` to the top of a stack of overlapping windows.
 
-```
+```cpp
 void BringWindowToTop();
 ```
 
@@ -888,7 +888,7 @@ TRUE to cancel tool tips when a key is pressed and set the status bar text to th
 
 Centers a window relative to its parent.
 
-```
+```cpp
 void CenterWindow(CWnd* pAlternateOwner = NULL);
 ```
 
@@ -926,7 +926,7 @@ Nonzero if successful; otherwise 0.
 
 Selects (places a check mark next to) or clears (removes a check mark from) a button, or it changes the state of a three-state button.
 
-```
+```cpp
 void CheckDlgButton(
     int nIDButton,
     UINT nCheck);
@@ -952,7 +952,7 @@ The `CheckDlgButton` function sends a [BM_SETCHECK](/windows/win32/Controls/bm-s
 
 Selects (adds a check mark to) a given radio button in a group and clears (removes a check mark from) all other radio buttons in the group.
 
-```
+```cpp
 void CheckRadioButton(
     int nIDFirstButton,
     int nIDLastButton,
@@ -1023,7 +1023,7 @@ The `CWnd`* that is returned may be temporary and should not be stored for later
 
 Converts the client coordinates of a given point or rectangle on the display to screen coordinates.
 
-```
+```cpp
 void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) const;
 ```
 
@@ -1049,7 +1049,7 @@ The `ClientToScreen` member function assumes that the given point or rectangle i
 
 Minimizes the window.
 
-```
+```cpp
 void CloseWindow();
 ```
 
@@ -1164,7 +1164,7 @@ Creates an Active Accessibility proxy for the specified object.
 
 Creates a new shape for the system caret and claims ownership of the caret.
 
-```
+```cpp
 void CreateCaret(CBitmap* pBitmap);
 ```
 
@@ -1387,7 +1387,7 @@ The [CWnd::OnCreate](#oncreate) method is called before the `CreateEx` method re
 
 Creates a gray rectangle for the system caret and claims ownership of the caret.
 
-```
+```cpp
 void CreateGrayCaret(
     int nWidth,
     int nHeight);
@@ -1421,7 +1421,7 @@ The system caret is a shared resource. `CWnd` should create a caret only when it
 
 Creates a solid rectangle for the system caret and claims ownership of the caret.
 
-```
+```cpp
 void CreateSolidCaret(
     int nWidth,
     int nHeight);
@@ -1806,7 +1806,7 @@ For more information on dialog data exchange and validation, see [Displaying and
 
 Call this member function from within a window, using a `CWnd` pointer, in your application's [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) function to indicate that the window accepts dropped files from the Windows File Manager or File Explorer.
 
-```
+```cpp
 void DragAcceptFiles(BOOL bAccept = TRUE);
 ```
 
@@ -1908,7 +1908,7 @@ This member function emulates the functionality of the function [DrawCaption](/w
 
 Redraws the menu bar.
 
-```
+```cpp
 void DrawMenuBar();
 ```
 
@@ -1924,7 +1924,7 @@ If a menu bar is changed after Windows has created the window, call this functio
 
 Enables user-defined Active Accessibility functions.
 
-```
+```cpp
 void EnableActiveAccessibility();
 ```
 
@@ -1936,7 +1936,7 @@ MFC's default Active Accessibility support is sufficient for standard windows an
 
 Enables or disables the dynamic layout manager. When dynamic layout is enabled, the position and size of child windows can adjust dynamically when the user resizes the window.
 
-```
+```cpp
 void EnableDynamicLayout(BOOL bEnable = TRUE);
 ```
 
@@ -1953,7 +1953,7 @@ If you want to enable dynamic layout, you have to do more than just call this me
 
 Enables or disables window D2D support. Call this method before the main window is initialized.
 
-```
+```cpp
 void EnableD2DSupport(
     BOOL bEnable = TRUE,
     BOOL bUseDCRenderTarget = FALSE);
@@ -2007,7 +2007,7 @@ Nonzero if the arrows are enabled or disabled as specified. Otherwise it is 0, w
 
 Enables or disables the scroll bar for this window.
 
-```
+```cpp
 void EnableScrollBarCtrl(
     int nBar,
     BOOL bEnable = TRUE);
@@ -2146,7 +2146,7 @@ virtual void EndModalState();
 
 Marks the end of painting in the given window.
 
-```
+```cpp
 void EndPaint(LPPAINTSTRUCT lpPaint);
 ```
 
@@ -2194,7 +2194,7 @@ TRUE if a dialog resource is executed; otherwise FALSE.
 
 Called by the framework to display tool tip messages.
 
-```
+```cpp
 void FilterToolTipMessage(MSG* pMsg);
 ```
 
@@ -2879,7 +2879,7 @@ ID of the checked radio button, or 0 if none is selected.
 
 Copies the client coordinates of the `CWnd` client area into the structure pointed to by *lpRect*.
 
-```
+```cpp
 void GetClientRect(LPRECT lpRect) const;
 ```
 
@@ -3640,7 +3640,7 @@ In contrast, the [GetParent](#getparent) function returns a pointer to the immed
 
 Call this member function to get the ActiveX control property specified by *dwDispID*.
 
-```
+```cpp
 void GetProperty(
     DISPID dwDispID,
     VARTYPE vtProp,
@@ -3865,7 +3865,7 @@ The current position is a relative value that depends on the current scrolling r
 
 Copies the current minimum and maximum scroll-bar positions for the given scroll bar to the locations specified by *lpMinPos* and *lpMaxPos*.
 
-```
+```cpp
 void GetScrollRange(
     int nBar,
     LPINT lpMinPos,
@@ -4230,7 +4230,7 @@ The `flags` member of the [WINDOWPLACEMENT](/windows/win32/api/winuser/ns-winuse
 
 Copies the dimensions of the bounding rectangle of the `CWnd` object to the structure pointed to by *lpRect*.
 
-```
+```cpp
 void GetWindowRect(LPRECT lpRect) const;
 ```
 
@@ -4340,7 +4340,7 @@ This member function causes the [WM_GETTEXTLENGTH](/windows/win32/winmsg/wm-gett
 
 Hides the caret by removing it from the display screen.
 
-```
+```cpp
 void HideCaret();
 ```
 
@@ -4414,7 +4414,7 @@ See [CWinApp::HtmlHelp](../../mfc/reference/cwinapp-class.md#htmlhelp) for more 
 
 Called by the framework to initialize dynamic layout for a window.
 
-```
+```cpp
 void InitDynamicLayout();
 ```
 
@@ -4426,7 +4426,7 @@ Do not call this method directly.
 
 Invalidates the entire client area of `CWnd`.
 
-```
+```cpp
 void Invalidate(BOOL bErase = TRUE);
 ```
 
@@ -4451,7 +4451,7 @@ Windows sends a [WM_PAINT](#onpaint) message whenever the `CWnd` update region i
 
 Invalidates the client area within the given rectangle by adding that rectangle to the `CWnd` update region.
 
-```
+```cpp
 void InvalidateRect(
     LPCRECT lpRect,
     BOOL bErase = TRUE);
@@ -4477,7 +4477,7 @@ Windows sends a [WM_PAINT](#onpaint) message whenever the `CWnd` update region i
 
 Invalidates the client area within the given region by adding it to the current update region of `CWnd`.
 
-```
+```cpp
 void InvalidateRgn(
     CRgn* pRgn,
     BOOL bErase = TRUE);
@@ -4505,7 +4505,7 @@ The given region must have been previously created by one of the region function
 
 Call this member function to invoke the ActiveX Control method or property specified by *dwDispID*, in the context specified by *wFlags*.
 
-```
+```cpp
 void AFX_CDECL InvokeHelper(
     DISPID dwDispID,
     WORD wFlags,
@@ -4803,7 +4803,7 @@ The `m_hWnd` data member is a public variable of type HWND.
 
 Converts (maps) a set of points from the coordinate space of the `CWnd` to the coordinate space of another window.
 
-```
+```cpp
 void MapWindowPoints(
     CWnd* pwndTo,
     LPRECT lpRect) const;
@@ -4970,7 +4970,7 @@ To modify windows using regular window styles, see [ModifyStyle](#modifystyle).
 
 Changes the position and dimensions.
 
-```
+```cpp
 void MoveWindow(
     int x,
     int y,
@@ -5017,7 +5017,7 @@ The `MoveWindow` function sends the [WM_GETMINMAXINFO](#ongetminmaxinfo) message
 
 Signals the system that a predefined event occurred. If any client applications have registered a hook function for the event, the system calls the client's hook function.
 
-```
+```cpp
 void NotifyWinEvent(
     DWORD event,
     LONG idObjectType,
@@ -7759,7 +7759,7 @@ This method receives the [WM_DWMNCRENDERINGCHANGED](/windows/win32/dwm/wm-dwmncr
 
 The framework calls this member function when the user double-clicks XBUTTON1 or XBUTTON2 while the cursor is in the nonclient area of a window.
 
-```
+```cpp
 void OnNcXButtonDblClk(
     short nHitTest,
     UINT nButton,
@@ -9781,7 +9781,7 @@ Nonzero if the message was translated and should not be dispatched; 0 if the mes
 
 Call this member function to draw the current window in the specified device context, which is most commonly in a printer device context.
 
-```
+```cpp
 void Print(
     CDC* pDC,
     DWORD dwFlags) const;
@@ -9827,7 +9827,7 @@ Specifies the drawing options. This parameter can be one or more of these flags:
 
 Call this member function to draw any window in the specified device context (usually a printer device context).
 
-```
+```cpp
 void PrintClient(
     CDC* pDC,
     DWORD dwFlags) const;
@@ -10032,7 +10032,7 @@ The application must call the `ReleaseDC` member function for each call to the [
 
 Called to reposition and resize control bars in the client area of a window.
 
-```
+```cpp
 void RepositionBars(UINT nIDFirst,
     UINT nIDLast,
     UINT nIDLeftOver,
@@ -10106,7 +10106,7 @@ By default, `ContinueModal` returns FALSE after `EndModalLoop` is called. Return
 
 Converts the screen coordinates of a given point or rectangle on the display to client coordinates.
 
-```
+```cpp
 void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) const;
 ```
 
@@ -10130,7 +10130,7 @@ The `ScreenToClient` member function replaces the screen coordinates given in *l
 
 Scrolls the contents of the client area of the current `CWnd` object.
 
-```
+```cpp
 void ScrollWindow(
     int xAmount,
     int yAmount,
@@ -10323,7 +10323,7 @@ The `SendMessage` member function calls the window procedure directly and does n
 
 Call this member function to send the specified Windows message to all descendant windows.
 
-```
+```cpp
 void SendMessageToDescendants(
     UINT message,
     WPARAM wParam = 0,
@@ -10493,7 +10493,7 @@ The window can be any child window, not only a control in a dialog box. The wind
 
 Sets the text of a given control in a dialog box to the string representation of a specified integer value.
 
-```
+```cpp
 void SetDlgItemInt(
     int nID,
     UINT nValue,
@@ -10523,7 +10523,7 @@ Specifies whether the integer value is signed or unsigned. If this parameter is 
 
 Sets the caption or text of a control owned by a window or dialog box.
 
-```
+```cpp
 void SetDlgItemText(
     int nID,
     LPCTSTR lpszString);
@@ -10589,7 +10589,7 @@ If the current window is active but does not have the focus (that is, no window 
 
 Sends the WM_SETFONT message to the window to use the specified font.
 
-```
+```cpp
 void SetFont(
     CFont* pFont,
     BOOL bRedraw = TRUE);
@@ -10698,7 +10698,7 @@ Causes the window to be redrawn to reflect the menu change.
 
 Sets the current window's owner to the specified window object.
 
-```
+```cpp
 void SetOwner(CWnd* pOwnerWnd);
 ```
 
@@ -10740,7 +10740,7 @@ If the child window is visible, Windows performs the appropriate redrawing and r
 
 Call this member function to set the OLE control property specified by *dwDispID*.
 
-```
+```cpp
 void AFX_CDECL SetProperty(
     DISPID dwDispID,
     VARTYPE vtProp, ...);
@@ -10768,7 +10768,7 @@ For more information about using this member function with OLE Control Container
 
 An application calls `SetRedraw` to allow changes to be redrawn or to prevent changes from being redrawn.
 
-```
+```cpp
 void SetRedraw(BOOL bRedraw = TRUE);
 ```
 
@@ -10864,7 +10864,7 @@ Setting *bRedraw* to FALSE is useful whenever the scroll bar will be redrawn by 
 
 Sets minimum and maximum position values for the given scroll bar.
 
-```
+```cpp
 void SetScrollRange(
     int nBar,
     int nMinPos,
@@ -10935,7 +10935,7 @@ An interval value is specified, and every time the interval elapses, the system 
 
 The *lpfnTimer* callback function need not be named `TimerProc`, but it must be declared as static and defined as follows.
 
-```
+```cpp
 void CALLBACK TimerProc(
     HWND hWnd,   // handle of CWnd that called SetTimer
     UINT nMsg,   // WM_TIMER
@@ -11129,7 +11129,7 @@ After a successful call to `SetWindowRgn`, the operating system owns the region 
 
 Sets the window's title to the specified text.
 
-```
+```cpp
 void SetWindowText(LPCTSTR lpszString);
 ```
 
@@ -11152,7 +11152,7 @@ This function causes a [WM_SETTEXT](/windows/win32/winmsg/wm-settext) message to
 
 Shows the caret on the screen at the caret's current position.
 
-```
+```cpp
 void ShowCaret();
 ```
 
@@ -11174,7 +11174,7 @@ The caret is a shared resource. The window should show the caret only when it ha
 
 Shows or hides all pop-up windows owned by this window.
 
-```
+```cpp
 void ShowOwnedPopups(BOOL bShow = TRUE);
 ```
 
@@ -11191,7 +11191,7 @@ Specifies whether pop-up windows are to be shown or hidden. If this parameter is
 
 Shows or hides a scroll bar.
 
-```
+```cpp
 void ShowScrollBar(
     UINT nBar,
     BOOL bShow = TRUE);
@@ -11326,7 +11326,7 @@ This member function attaches the Windows control to a `CWnd` object and replace
 
 Call this member function to unlock a window that was locked with `CWnd::LockWindowUpdate`.
 
-```
+```cpp
 void UnlockWindowUpdate();
 ```
 
@@ -11375,7 +11375,7 @@ The framework automatically calls `UpdateData` with *bSaveAndValidate* set to FA
 
 Call this member function to update the state of dialog buttons and other controls in a dialog box or window that uses the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) callback mechanism.
 
-```
+```cpp
 void UpdateDialogControls(
     CCmdTarget* pTarget,
     BOOL bDisableIfNoHndler);
@@ -11455,7 +11455,7 @@ This member function emulates the functionality of the function [UpdateLayeredWi
 
 Updates the client area by sending a [WM_PAINT](/windows/win32/gdi/wm-paint) message if the update region is not empty.
 
-```
+```cpp
 void UpdateWindow();
 ```
 
@@ -11471,7 +11471,7 @@ The `UpdateWindow` member function sends a WM_PAINT message directly, bypassing 
 
 Validates the client area within the given rectangle by removing the rectangle from the update region of the window.
 
-```
+```cpp
 void ValidateRect(LPCRECT lpRect);
 ```
 
@@ -11490,7 +11490,7 @@ Windows continues to generate WM_PAINT messages until the current update region 
 
 Validates the client area within the given region by removing the region from the current update region of the window.
 
-```
+```cpp
 void ValidateRgn(CRgn* pRgn);
 ```
 

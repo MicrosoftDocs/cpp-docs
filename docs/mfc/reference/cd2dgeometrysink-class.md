@@ -75,7 +75,7 @@ virtual ~CD2DGeometrySink();
 
 Adds a single arc to the path geometry
 
-```
+```cpp
 void AddArc(const D2D1_ARC_SEGMENT& arc);
 ```
 
@@ -88,7 +88,7 @@ The arc segment to add to the figure
 
 Creates a cubic Bezier curve between the current point and the specified end point.
 
-```
+```cpp
 void AddBezier(const D2D1_BEZIER_SEGMENT& bezier);
 ```
 
@@ -101,7 +101,7 @@ A structure that describes the control points and end point of the Bezier curve 
 
 Creates a sequence of cubic Bezier curves and adds them to the geometry sink.
 
-```
+```cpp
 void AddBeziers(
     const CArray<D2D1_BEZIER_SEGMENT,
     D2D1_BEZIER_SEGMENT>& beziers);
@@ -116,7 +116,7 @@ An array of Bezier segments that describes the Bezier curves to create. A curve 
 
 Creates a line segment between the current point and the specified end point and adds it to the geometry sink.
 
-```
+```cpp
 void AddLine(CD2DPointF point);
 ```
 
@@ -129,7 +129,7 @@ The end point of the line to draw.
 
 Creates a sequence of lines using the specified points and adds them to the geometry sink.
 
-```
+```cpp
 void AddLines(
     const CArray<CD2DPointF,
     CD2DPointF>& points);
@@ -144,7 +144,7 @@ An array of one or more points that describe the lines to draw. A line is drawn 
 
 Creates a quadratic Bezier curve between the current point and the specified end point.
 
-```
+```cpp
 void AddQuadraticBezier(const D2D1_QUADRATIC_BEZIER_SEGMENT& bezier);
 ```
 
@@ -157,7 +157,7 @@ A structure that describes the control point and the end point of the quadratic 
 
 Adds a sequence of quadratic Bezier segments as an array in a single call.
 
-```
+```cpp
 void AddQuadraticBeziers(
     const CArray<D2D1_QUADRATIC_BEZIER_SEGMENT,
     D2D1_QUADRATIC_BEZIER_SEGMENT>& beziers);
@@ -172,7 +172,7 @@ An array of a sequence of quadratic Bezier segments.
 
 Starts a new figure at the specified point.
 
-```
+```cpp
 void BeginFigure(
     CD2DPointF startPoint,
     D2D1_FIGURE_BEGIN figureBegin);
@@ -215,7 +215,7 @@ Nonzero if successful; otherwise FALSE.
 
 Ends the current figure; optionally, closes it.
 
-```
+```cpp
 void EndFigure(D2D1_FIGURE_END figureEnd);
 ```
 
@@ -272,7 +272,7 @@ Pointer to an ID2D1GeometrySink interface or NULL if object is not initialized y
 
 Specifies the method used to determine which points are inside the geometry described by this geometry sink and which points are outside.
 
-```
+```cpp
 void SetFillMode(D2D1_FILL_MODE fillMode);
 ```
 
@@ -285,7 +285,7 @@ The method used to determine whether a given point is part of the geometry.
 
 Specifies stroke and join options to be applied to new segments added to the geometry sink.
 
-```
+```cpp
 void SetSegmentFlags(D2D1_PATH_SEGMENT vertexFlags);
 ```
 

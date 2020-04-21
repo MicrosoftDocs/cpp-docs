@@ -66,7 +66,7 @@ For more information on using `CTypedPtrMap`, see the articles [Collections](../
 
 Retrieves the map element at `rNextPosition`, then updates `rNextPosition` to refer to the next element in the map.
 
-```
+```cpp
 void GetNextAssoc(
     POSITION& rPosition,
     KEY& rKey,
@@ -179,7 +179,7 @@ For more detailed remarks, see [CMapStringToOb::RemoveKey](../../mfc/reference/c
 
 This member function calls `BASE_CLASS`**::SetAt**.
 
-```
+```cpp
 void SetAt(KEY key, VALUE newValue);
 ```
 

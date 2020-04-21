@@ -88,7 +88,7 @@ virtual ~CD2DBitmapBrush();
 
 Attaches existing resource interface to the object
 
-```
+```cpp
 void Attach(ID2D1BitmapBrush* pResource);
 ```
 
@@ -156,7 +156,7 @@ Pointer to a null-terminated string that contains the name of file.
 
 Initializes the object
 
-```
+```cpp
 void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
 ```
 
@@ -302,7 +302,7 @@ Pointer to an ID2D1BitmapBrush interface or NULL if object is not initialized ye
 
 Specifies the bitmap source that this brush uses to paint
 
-```
+```cpp
 void SetBitmap(CD2DBitmap* pBitmap);
 ```
 
@@ -315,7 +315,7 @@ The bitmap source used by the brush
 
 Specifies how the brush horizontally tiles those areas that extend past its bitmap
 
-```
+```cpp
 void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
 ```
 
@@ -328,7 +328,7 @@ A value that specifies how the brush horizontally tiles those areas that extend 
 
 Specifies how the brush vertically tiles those areas that extend past its bitmap
 
-```
+```cpp
 void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
 ```
 
@@ -341,7 +341,7 @@ A value that specifies how the brush vertically tiles those areas that extend pa
 
 Specifies the interpolation mode used when the brush bitmap is scaled or rotated
 
-```
+```cpp
 void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 ```
 

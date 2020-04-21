@@ -150,7 +150,7 @@ The color palette specifies the colors that the user can choose.
 
 Derives a palette from the system palette.
 
-```
+```cpp
 void RebuildPalette();
 ```
 
@@ -158,7 +158,7 @@ void RebuildPalette();
 
 Sets the current color of the dialog box.
 
-```
+```cpp
 void SetCurrentColor(COLORREF rgb);
 ```
 
@@ -173,7 +173,7 @@ void SetCurrentColor(COLORREF rgb);
 
 Sets the current color to the color in the current palette that is most similar.
 
-```
+```cpp
 void SetNewColor(COLORREF rgb);
 ```
 
@@ -188,7 +188,7 @@ void SetNewColor(COLORREF rgb);
 
 Explicitly specifies the red, green, and blue components of a selected color on the first property page of a color dialog.
 
-```
+```cpp
 void SetPageOne(
     BYTE R,
     BYTE G,
@@ -212,7 +212,7 @@ void SetPageOne(
 
 Explicitly specifies the red, green, and blue components of a selected color on the second property page of a color dialog.
 
-```
+```cpp
 void SetPageTwo(
     BYTE R,
     BYTE G,

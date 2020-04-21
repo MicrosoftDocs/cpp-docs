@@ -230,7 +230,7 @@ You can override this member function to return an instance of your own control 
 
 Exchanges data between a member variable and the property value of an ActiveX control on an HTML page.
 
-```
+```cpp
 void DDX_DHtml_AxControl(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -269,7 +269,7 @@ The data member, of type VARIANT, [COleVariant](../../mfc/reference/colevariant-
 
 Exchanges data between a member variable and a check box on an HTML page.
 
-```
+```cpp
 void DDX_DHtml_CheckBox(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -295,7 +295,7 @@ The value being exchanged.
 
 Exchanges data between a member variable and any HTML element property on an HTML page.
 
-```
+```cpp
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -357,7 +357,7 @@ The value being exchanged.
 
 Exchanges data between a member variable and a radio button on an HTML page.
 
-```
+```cpp
 void DDX_DHtml_Radio(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -379,7 +379,7 @@ The value being exchanged.
 
 Gets or sets the index of a list box on an HTML page.
 
-```
+```cpp
 void DDX_DHtml_SelectIndex(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -401,7 +401,7 @@ The value being exchanged.
 
 Gets or sets the display text of a list box entry (based on the current index) on an HTML page.
 
-```
+```cpp
 void DDX_DHtml_SelectString(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -423,7 +423,7 @@ The value being exchanged.
 
 Gets or sets the value of a list box entry (based on the current index) on an HTML page.
 
-```
+```cpp
 void DDX_DHtml_SelectValue(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -449,7 +449,7 @@ The value being exchanged.
 
 Detaches a modeless dialog box from the `CDHtmlDialog` object and destroys the object.
 
-```
+```cpp
 void DestroyModeless();
 ```
 
@@ -566,7 +566,7 @@ The overloads are listed from least efficient at the top to most efficient at th
 
 Retrieves the Uniform Resource Locator (URL) associated with the current document.
 
-```
+```cpp
 void GetCurrentUrl(CString& szUrl);
 ```
 
@@ -949,7 +949,7 @@ LPTSTR m_szHtmlResID;
 
 Navigates to the resource identified by the URL that is specified by *lpszURL*.
 
-```
+```cpp
 void Navigate(
     LPCTSTR lpszURL,
     DWORD dwFlags = 0,
@@ -1125,7 +1125,7 @@ Returns E_NOTIMPL.
 
 Sets the property of an ActiveX control to a new value.
 
-```
+```cpp
 void SetControlProperty(
     LPCTSTR szElementId,
     DISPID dispId,
@@ -1163,7 +1163,7 @@ String containing the name of the property to set.
 
 Sets the `innerHTML` property of an HTML element.
 
-```
+```cpp
 void SetElementHtml(
     LPCTSTR szElementId,
     BSTR bstrText);
@@ -1188,7 +1188,7 @@ The `IUnknown` pointer of an HTML element.
 
 Sets a property of an HTML element.
 
-```
+```cpp
 void SetElementProperty(
     LPCTSTR szElementId,
     DISPID dispId,
@@ -1210,7 +1210,7 @@ The new value of the property.
 
 Sets the `innerText` property of an HTML element.
 
-```
+```cpp
 void SetElementText(
     LPCTSTR szElementId,
     BSTR bstrText);
@@ -1235,7 +1235,7 @@ The `IUnknown` pointer of an HTML element.
 
 Sets the host's `IDispatch` interface.
 
-```
+```cpp
 void SetExternalDispatch(IDispatch* pdispExternal);
 ```
 
@@ -1248,7 +1248,7 @@ The new `IDispatch` interface.
 
 Sets the host UI flags.
 
-```
+```cpp
 void SetHostFlags(DWORD dwFlags);
 ```
 

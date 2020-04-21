@@ -135,7 +135,7 @@ CCustomInterpolator* m_pInterpolator;
 
 Sets an initial value, which will be applied to an animation variable associated with this transition.
 
-```
+```cpp
 void SetInitialValue(DOUBLE initialValue);
 ```
 
@@ -147,7 +147,7 @@ void SetInitialValue(DOUBLE initialValue);
 
 Sets an initial velocity, which will be applied to an animation variable associated with this transition.
 
-```
+```cpp
 void SetInitialVelocity(DOUBLE initialVelocity);
 ```
 

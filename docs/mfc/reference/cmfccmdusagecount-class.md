@@ -68,7 +68,7 @@ You can persist `CMFCCmdUsageCount` class data between runs of your program. Use
 
 Increments by one the counter that is associated with the given command.
 
-```
+```cpp
 void AddCmd(UINT uiCmd);
 ```
 
@@ -157,7 +157,7 @@ This method returns 0 if the total command usage, `m_nTotalUsage`, is 0. Otherwi
 
 Clears the usage count of all commands.
 
-```
+```cpp
 void Reset();
 ```
 

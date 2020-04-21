@@ -71,7 +71,7 @@ This function will return FALSE if either *lpszFullString* is set to NULL or the
 
 Substitutes the string pointed to by *lpsz1* for any instances of the characters "%1" in the template string resource identified by *nIDS*.
 
-```
+```cpp
 void  AfxFormatString1(
     CString& rString,
     UINT nIDS,
@@ -107,7 +107,7 @@ If the format characters "%1" appear in the string more than once, multiple subs
 
 Substitutes the string pointed to by *lpsz1* for any instances of the characters "%1", and the string pointed to by *lpsz2* for any instances of the characters "%2", in the template string resource identified by *nIDS*.
 
-```
+```cpp
 void AfxFormatString2(
     CString& rString,
     UINT nIDS,

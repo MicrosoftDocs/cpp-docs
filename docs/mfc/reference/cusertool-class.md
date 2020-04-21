@@ -80,7 +80,7 @@ BOOL CopyIconToClipboard();
 
 Draws the user tool icon at the center of a specified rectangle.
 
-```
+```cpp
 void DrawToolIcon(
     CDC* pDC,
     const CRect& rectImage);
@@ -202,7 +202,7 @@ virtual void Serialize(CArchive& ar);
 
 Sets the application that the user tool runs.
 
-```
+```cpp
 void SetCommand(LPCTSTR lpszCmd);
 ```
 

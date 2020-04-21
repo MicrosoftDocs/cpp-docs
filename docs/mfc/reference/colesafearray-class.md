@@ -82,7 +82,7 @@ class COleSafeArray : public tagVARIANT
 
 Retrieves a pointer to the array data.
 
-```
+```cpp
 void AccessData(void** ppvData);
 ```
 
@@ -103,7 +103,7 @@ On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryex
 
 Allocates memory for a safe array.
 
-```
+```cpp
 void AllocData();
 ```
 
@@ -115,7 +115,7 @@ On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryex
 
 Allocates memory for the descriptor of a safe array.
 
-```
+```cpp
 void AllocDescriptor(DWORD dwDims);
 ```
 
@@ -132,7 +132,7 @@ On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryex
 
 Gives control of the data in an existing `VARIANT` array to the `COleSafeArray` object.
 
-```
+```cpp
 void Attach(VARIANT& varSrc);
 ```
 
@@ -153,7 +153,7 @@ The source `VARIANT`'s type is set to VT_EMPTY. This function clears the current
 
 Clears the safe array.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -209,7 +209,7 @@ On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryex
 
 Creates a copy of an existing safe array.
 
-```
+```cpp
 void Copy(LPSAFEARRAY* ppsa);
 ```
 
@@ -226,7 +226,7 @@ On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryex
 
 Allocates and initializes the data for the array.
 
-```
+```cpp
 void Create(
     VARTYPE vtSrc,
     DWORD dwDims,
@@ -264,7 +264,7 @@ This function will clear the current array data if necessary. On error, the func
 
 Creates a new one-dimensional `COleSafeArray` object.
 
-```
+```cpp
 void CreateOneDim(
     VARTYPE vtSrc,
     DWORD dwElements,
@@ -300,7 +300,7 @@ On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryex
 
 Destroys an existing array descriptor and all the data in the array.
 
-```
+```cpp
 void Destroy();
 ```
 
@@ -312,7 +312,7 @@ If objects are stored in the array, each object is released. On error, the funct
 
 Destroys all the data in a safe array.
 
-```
+```cpp
 void DestroyData();
 ```
 
@@ -324,7 +324,7 @@ If objects are stored in the array, each object is released. On error, the funct
 
 Destroys a descriptor of a safe array.
 
-```
+```cpp
 void DestroyDescriptor();
 ```
 
@@ -358,7 +358,7 @@ On error, the function throws a [COleException](../../mfc/reference/coleexceptio
 
 Copies the contents of the safe array into a `CByteArray`.
 
-```
+```cpp
 void GetByteArray(CByteArray& bytes);
 ```
 
@@ -387,7 +387,7 @@ The number of dimensions in the safe array.
 
 Retrieves a single element of the safe array.
 
-```
+```cpp
 void GetElement(
     long* rgIndices,
     void* pvData);
@@ -427,7 +427,7 @@ The size, in bytes, of the elements of a safe array.
 
 Returns the lower bound for any dimension of a `COleSafeArray` object.
 
-```
+```cpp
 void GetLBound(
     DWORD dwDim,
     long* pLBound);
@@ -469,7 +469,7 @@ The number of elements in the one-dimensional safe array.
 
 Returns the upper bound for any dimension of a safe array.
 
-```
+```cpp
 void GetUBound(
     DWORD dwDim,
     long* pUBound);
@@ -495,7 +495,7 @@ On error, the function throws a [COleException](../../mfc/reference/coleexceptio
 
 Increments the lock count of an array and place a pointer to the array data in the array descriptor.
 
-```
+```cpp
 void Lock();
 ```
 
@@ -578,7 +578,7 @@ CDumpContext& AFXAPI operator<<(
 
 Returns a pointer to the element specified by the index values.
 
-```
+```cpp
 void PtrOfIndex(
     long* rgIndices,
     void** ppvData);
@@ -596,7 +596,7 @@ On return, pointer to the element identified by the values in *rgIndices*.
 
 Assigns a single element into the array.
 
-```
+```cpp
 void PutElement(
     long* rgIndices,
     void* pvData);
@@ -626,7 +626,7 @@ On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryex
 
 Changes the least significant (rightmost) bound of a safe array.
 
-```
+```cpp
 void Redim(SAFEARRAYBOUND* psaboundNew);
 ```
 
@@ -643,7 +643,7 @@ On error, the function throws a [COleException](../../mfc/reference/coleexceptio
 
 Changes the number of elements in a one-dimensional `COleSafeArray` object.
 
-```
+```cpp
 void ResizeOneDim(DWORD dwElements);
 ```
 
@@ -664,7 +664,7 @@ On error, the function throws a [COleException](../../mfc/reference/coleexceptio
 
 Decrements the lock count of an array and invalidates the pointer retrieved by `AccessData`.
 
-```
+```cpp
 void UnaccessData();
 ```
 
@@ -680,7 +680,7 @@ On error, the function throws a [COleException](../../mfc/reference/coleexceptio
 
 Decrements the lock count of an array so it can be freed or resized.
 
-```
+```cpp
 void Unlock();
 ```
 

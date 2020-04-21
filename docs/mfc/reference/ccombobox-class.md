@@ -198,7 +198,7 @@ CComboBox();
 
 Deletes (clears) the current selection, if any, in the edit control of the combo box.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -247,7 +247,7 @@ By default, this member function does nothing. If you create an owner-draw combo
 
 Copies the current selection, if any, in the edit control of the combo box onto the Clipboard in CF_TEXT format.
 
-```
+```cpp
 void Copy();
 ```
 
@@ -317,7 +317,7 @@ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#wi
 
 Deletes (cuts) the current selection, if any, in the combo-box edit control and copies the deleted text onto the Clipboard in CF_TEXT format.
 
-```
+```cpp
 void Cut();
 ```
 
@@ -598,7 +598,7 @@ The zero-based index of the currently selected item in the list box of a combo b
 
 Call the `GetDroppedControlRect` member function to retrieve the screen coordinates of the visible (dropped-down) list box of a drop-down combo box.
 
-```
+```cpp
 void GetDroppedControlRect(LPRECT lprect) const;
 ```
 
@@ -740,7 +740,7 @@ The 32-bit value can be set with the *dwItemData* parameter of a [SetItemData](#
 
 Retrieves the application-supplied 32-bit value associated with the specified combo-box item as a pointer (**void** <strong>\*</strong>).
 
-```
+```cpp
 void* GetItemDataPtr(int nIndex) const;
 ```
 
@@ -1015,7 +1015,7 @@ See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a
 
 Inserts the data from the Clipboard into the edit control of the combo box at the current cursor position.
 
-```
+```cpp
 void Paste();
 ```
 
@@ -1031,7 +1031,7 @@ Data is inserted only if the Clipboard contains data in CF_TEXT format.
 
 Removes all items from the list box and edit control of a combo box.
 
-```
+```cpp
 void ResetContent();
 ```
 
@@ -1227,7 +1227,7 @@ Scrolling in the static control is disabled when the item list is not visible (t
 
 Sets the width, in pixels, by which the list-box portion of the combo box can be scrolled horizontally.
 
-```
+```cpp
 void SetHorizontalExtent(UINT nExtent);
 ```
 
@@ -1426,7 +1426,7 @@ The system scrolls the list box until either the item specified by *nIndex* appe
 
 Shows or hides the list box of a combo box that has the [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.
 
-```
+```cpp
 void ShowDropDown(BOOL bShowIt = TRUE);
 ```
 

@@ -217,7 +217,7 @@ Use this function to determine the current printer font. If it is not the desire
 
 Call `GetSelectedText` to copy the selected text into a `CString` object, up to the end of the selection or the character preceding the first carriage-return character in the selection.
 
-```
+```cpp
 void GetSelectedText(CString& strResult) const;
 ```
 
@@ -381,7 +381,7 @@ The `rect.bottom` element of the *rectLayout* object is changed so that the rect
 
 Call `SerializeRaw` to have a `CArchive` object read or write the text in the `CEditView` object to a text file.
 
-```
+```cpp
 void SerializeRaw(CArchive& ar);
 ```
 
@@ -398,7 +398,7 @@ Reference to the `CArchive` object that stores the serialized text.
 
 Call `SetPrinterFont` to set the printer font to the font specified by *pFont*.
 
-```
+```cpp
 void SetPrinterFont(CFont* pFont);
 ```
 
@@ -415,7 +415,7 @@ If you want your view to always use a particular font for printing, include a ca
 
 Call this function to set the tab stops used for display and printing.
 
-```
+```cpp
 void SetTabStops(int nTabStops);
 ```
 
@@ -440,7 +440,7 @@ This code fragment sets the tab stops in the control to every fourth character b
 
 Call this member function to unlock the buffer.
 
-```
+```cpp
 void UnlockBuffer() const;
 ```
 

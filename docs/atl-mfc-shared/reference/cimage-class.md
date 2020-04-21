@@ -242,7 +242,7 @@ When *bBlendOp* is set to the default of AC_SRC_OVER, the source bitmap is place
 
 Attaches *hBitmap* to a `CImage` object.
 
-```
+```cpp
 void Attach(HBITMAP hBitmap, DIBOrientation eOrientation = DIBOR_DEFAULT) throw();
 ```
 
@@ -451,7 +451,7 @@ m_myImage.CreateEx(100, 100, 16, BI_BITFIELDS, adwBitmasks, 0);
 
 Detaches the bitmap from the `CImage` object and destroys the bitmap.
 
-```
+```cpp
 void Destroy() throw();
 ```
 
@@ -561,7 +561,7 @@ For versions of `Draw` that do not specify a source rectangle, the entire source
 
 Retrieves a pointer to the actual bit values of a given pixel in a bitmap.
 
-```
+```cpp
 void* GetBits() throw();
 ```
 
@@ -598,7 +598,7 @@ The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the `biBitCount` membe
 
 Retrieves red, green, blue (RGB) color values from a range of entries in the palette of the DIB section.
 
-```
+```cpp
 void GetColorTable(
     UINT iFirstColor,
     UINT nColors,
@@ -867,7 +867,7 @@ The red, green, blue (RGB) value of the pixel. If the pixel is outside of the cu
 
 Retrieves the exact address of a pixel.
 
-```
+```cpp
 void* GetPixelAddress(int x, int y) throw();
 ```
 
@@ -1020,7 +1020,7 @@ Valid image types are BMP, GIF, JPEG, PNG, and TIFF.
 
 Loads an image from a BITMAP resource.
 
-```
+```cpp
 void LoadFromResource(
     HINSTANCE hInstance,
     LPCTSTR pszResourceName) throw();
@@ -1222,7 +1222,7 @@ This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](/wi
 
 Releases the device context.
 
-```
+```cpp
 void ReleaseDC() const throw();
 ```
 
@@ -1234,7 +1234,7 @@ Because only one bitmap can be selected into a device context at a time, you mus
 
 Releases resources used by GDI+.
 
-```
+```cpp
 void ReleaseGDIPlus() throw();
 ```
 
@@ -1290,7 +1290,7 @@ Call this function to save the image using a specified name and type. If the *gu
 
 Sets the red, green, blue (RGB) color values for a range of entries in the palette of the DIB section.
 
-```
+```cpp
 void SetColorTable(
     UINT iFirstColor,
     UINT nColors,
@@ -1316,7 +1316,7 @@ This method supports only DIB section bitmaps.
 
 Sets the color of a pixel at a given location in the bitmap.
 
-```
+```cpp
 void SetPixel(int x, int y, COLORREF color) throw();
 ```
 
@@ -1339,7 +1339,7 @@ This method fails if the pixel coordinates lie outside of the selected clipping 
 
 Sets the pixel color to the color located at *iIndex* in the color palette.
 
-```
+```cpp
 void SetPixelIndexed(int x, int y, int iIndex) throw();
 ```
 
@@ -1358,7 +1358,7 @@ The index of a color in the color palette.
 
 Sets the pixel at the locations specified by *x* and *y* to the colors indicated by *r*, *g*, and *b*, in a red, green, blue (RGB) image.
 
-```
+```cpp
 void SetPixelRGB(
     int x,
     int y,

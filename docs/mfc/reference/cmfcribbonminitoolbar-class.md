@@ -68,7 +68,7 @@ The mini toolbar becomes transparent when the mouse pointer is out of the bounds
 
 Sets the list of commands to be displayed on the toolbar.
 
-```
+```cpp
 void SetCommands(
     CMFCRibbonBar* pRibbonBar,
     const CList<UINT,UINT>& lstCommands);

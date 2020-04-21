@@ -93,7 +93,7 @@ Before using the `IUnknown` interface, you should check that it is not NULL.
 
 Empties the array.
 
-```
+```cpp
 void clear();
 ```
 

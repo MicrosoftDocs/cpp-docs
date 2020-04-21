@@ -147,7 +147,7 @@ This method is called by the framework when the user presses a color menu button
 
 Enables and disables an "automatic" button that is positioned above the regular color buttons. (The standard system automatic button is labeled **Automatic**.)
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -173,7 +173,7 @@ The automatic button applies the current default color.
 
 Enables the display of document-specific colors instead of system colors.
 
-```
+```cpp
 void EnableDocumentColors(
     LPCTSTR lpszLabel,
     BOOL bEnable=TRUE);
@@ -195,7 +195,7 @@ Use this method to display the current document colors or the system palette col
 
 Enables and disables an "other" button that is positioned below the regular color buttons. (The standard system "other" button is labeled **More Colors**.)
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     BOOL bAltColorDlg=TRUE,
@@ -219,7 +219,7 @@ void EnableOtherButton(
 
 Enables the ability to tear off a color pane.
 
-```
+```cpp
 void EnableTearOff(
     UINT uiID,
     int nVertDockColumns=-1,
@@ -487,7 +487,7 @@ static void SetColorName(
 
 Sets the number of columns to display in a color selection control ( [CMFCColorBar](../../mfc/reference/cmfccolorbar-class.md) object).
 
-```
+```cpp
 void SetColumnsNumber(int nColumns);
 ```
 

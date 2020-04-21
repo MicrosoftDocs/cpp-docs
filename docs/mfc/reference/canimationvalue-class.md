@@ -72,7 +72,7 @@ The CAnimationValue class encapsulates a single CAnimationVariable object and ca
 
 Adds a transition to be applied to a value.
 
-```
+```cpp
 void AddTransition(CBaseTransition* pTransition);
 ```
 
@@ -217,7 +217,7 @@ Provides conversion between CAnimationValue and INT32. This method internally ca
 
 Assigns a DOUBLE value to CAnimationValue.
 
-```
+```cpp
 void operator=(DOUBLE dblVal);
 void operator=(INT32 nVal);
 ```
@@ -238,7 +238,7 @@ Assigns a DOUBLE value to CAnimationValue. This value is set as a default value 
 
 Sets default value.
 
-```
+```cpp
 void SetDefaultValue(DOUBLE dblDefaultValue);
 ```
 

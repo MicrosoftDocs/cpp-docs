@@ -175,7 +175,7 @@ virtual void OnDraw(CDC* pDC);
 
 Sets the progress bar to work in infinite mode.
 
-```
+```cpp
 void SetInfiniteMode(BOOL bSet = TRUE);
 ```
 
@@ -192,7 +192,7 @@ Usually, if the progress bar is in infinite mode, it is telling the user that an
 
 Sets the current position of the progress bar.
 
-```
+```cpp
 void SetPos(
     int nPos,
     BOOL bRedraw = TRUE);
@@ -214,7 +214,7 @@ The range being set must be within the range specified by the [CMFCRibbonProgres
 
 Sets the minimum and maximum values for the progress bar.
 
-```
+```cpp
 void SetRange(
     int nMin,
     int nMax);

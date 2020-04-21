@@ -175,7 +175,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 Call this member function to overwrite the elements of the given array with the elements of another array of the same type.
 
-```
+```cpp
 void Copy(const CObArray& src);
 ```
 
@@ -272,7 +272,7 @@ The following table shows other member functions that are similar to `CObArray::
 
 Frees any extra memory that was allocated while the array was grown.
 
-```
+```cpp
 void FreeExtra();
 ```
 
@@ -472,7 +472,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 Inserts an element (or all the elements in another array) at a specified index.
 
-```
+```cpp
 void InsertAt(
     INT_PTR nIndex,
     CObject* newElement,
@@ -582,7 +582,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 Removes all the pointers from this array but does not actually delete the `CObject` objects.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -613,7 +613,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 Removes one or more elements starting at a specified index in an array.
 
-```
+```cpp
 void RemoveAt(
     INT_PTR nIndex,
     INT_PTR nCount = 1);
@@ -663,7 +663,7 @@ RemoveAt example: A CObArray with 1 elements
 
 Sets the array element at the specified index.
 
-```
+```cpp
 void SetAt(
     INT_PTR nIndex,
     CObject* newElement);
@@ -712,7 +712,7 @@ SetAt example: A CObArray with 2 elements
 
 Sets the array element at the specified index.
 
-```
+```cpp
 void SetAtGrow(
     INT_PTR nIndex,
     CObject* newElement);
@@ -761,7 +761,7 @@ SetAtGrow example: A CObArray with 4 elements
 
 Establishes the size of an empty or existing array; allocates memory if necessary.
 
-```
+```cpp
 void SetSize(
     INT_PTR nNewSize,
     INT_PTR nGrowBy = -1);

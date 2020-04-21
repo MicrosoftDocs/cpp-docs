@@ -66,7 +66,7 @@ The following example demonstrates how to create an object of the `CMFCShellTree
 
 Enables the shortcut menu.
 
-```
+```cpp
 void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```
 
@@ -191,7 +191,7 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 
 Refreshes and repaints the [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md).
 
-```
+```cpp
 void Refresh();
 ```
 
@@ -224,7 +224,7 @@ S_OK if successful; E_FAIL otherwise.
 
 Sets flags to filter the tree context.
 
-```
+```cpp
 void SetFlags(
     DWORD dwFlags,
     BOOL bRefresh = TRUE);
@@ -246,7 +246,7 @@ The `CMFCShellTreeCtrl` passes all set flags to [IShellFolder::EnumObjects](/win
 
 Associates a [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object with a [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.
 
-```
+```cpp
 void SetRelatedList(CMFCShellListCtrl* pShellList);
 ```
 

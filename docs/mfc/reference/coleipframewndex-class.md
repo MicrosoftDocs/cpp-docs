@@ -98,7 +98,7 @@ The following example demonstrates how to subclass an instance of the `COleIPFra
 
 ## <a name="adddocksite"></a> COleIPFrameWndEx::AddDockSite
 
-```
+```cpp
 void AddDockSite();
 ```
 
@@ -135,7 +135,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 
 ## <a name="dockpane"></a> COleIPFrameWndEx::DockPane
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID = 0,
@@ -206,7 +206,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 
 ## <a name="enablepanemenu"></a> COleIPFrameWndEx::EnablePaneMenu
 
-```
+```cpp
 void EnablePaneMenu(
     BOOL bEnable,
     UINT uiCustomizeCmd,
@@ -375,7 +375,7 @@ Override this function to customize the display of tooltips on toolbar buttons.
 
 Specifies a range of control IDs that the framework assigns to the user-defined toolbars.
 
-```
+```cpp
 void InitUserToolbars(
     LPCTSTR lpszRegEntry,
     UINT uiUserToolbarFirst,
@@ -783,7 +783,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 ## <a name="removepanefromdockmanager"></a> COleIPFrameWndEx::RemovePaneFromDockManager
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pControlBar,
     BOOL bDestroy,
@@ -806,7 +806,7 @@ void RemovePaneFromDockManager(
 
 Applies the specified docking state to panes that belong to the frame window.
 
-```
+```cpp
 void SetDockState(const CDockState& state);
 ```
 
@@ -823,7 +823,7 @@ Use this function to specify a new docking state for panes that belong to the `C
 
 Modifies a toolbar object by searching for dummy items and replacing them with the specified user-defined items.
 
-```
+```cpp
 void SetupToolbarMenu(
     CMenu& menu,
     const UINT uiViewUserToolbarCmdFirst,
@@ -845,7 +845,7 @@ void SetupToolbarMenu(
 
 ## <a name="showpane"></a> COleIPFrameWndEx::ShowPane
 
-```
+```cpp
 void ShowPane(
     CBasePane* pBar,
     BOOL bShow,

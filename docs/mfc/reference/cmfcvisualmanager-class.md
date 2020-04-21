@@ -315,7 +315,7 @@ static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 
 ## <a name="dodrawheadersortarrow"></a> CMFCVisualManager::DoDrawHeaderSortArrow
 
-```
+```cpp
 void DoDrawHeaderSortArrow(
     CDC* pDC,
     CRect rect,
@@ -419,7 +419,7 @@ virtual BOOL DrawTextOnGlass(
 
 ## <a name="enabletoolbarbuttonfill"></a> CMFCVisualManager::EnableToolbarButtonFill
 
-```
+```cpp
 void EnableToolbarButtonFill(BOOL bEnable = TRUE);
 ```
 
@@ -4665,7 +4665,7 @@ Use this method to change the visual manager that your application uses.
 
 Enables or disables the embossed mode for disabled toolbar images.
 
-```
+```cpp
 void SetEmbossDisabledImage (BOOL bEmboss = TRUE);
 ```
 
@@ -4682,7 +4682,7 @@ Use the function [CMFCVisualManager::IsEmbossDisabledImage](#isembossdisabledima
 
 Enables or disables the lighting effect for inactive images on a menu or toolbar.
 
-```
+```cpp
 void SetFadeInactiveImage(BOOL bFade = TRUE);
 ```
 
@@ -4699,7 +4699,7 @@ This feature controls whether inactive images appear faded on a menu or toolbar.
 
 Sets a flag that indicates whether the menu buttons appear flat. Otherwise, they appear three-dimensional.
 
-```
+```cpp
 void SetMenuFlatLook(BOOL bMenuFlatLook = TRUE);
 ```
 
@@ -4716,7 +4716,7 @@ By default, this feature is not enabled.
 
 Sets the width and height of the menu shadow.
 
-```
+```cpp
 void SetMenuShadowDepth(int nDepth);
 ```
 
@@ -4733,7 +4733,7 @@ The height and width of the menu shadow must be identical. The default value is 
 
 Sets a flag that indicates whether the [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md) displays shadows for highlighted images.
 
-```
+```cpp
 void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 ```
 

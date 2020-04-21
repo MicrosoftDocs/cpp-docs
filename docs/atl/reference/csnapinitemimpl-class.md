@@ -353,7 +353,7 @@ QueryPagesFor(DATA_OBJECT_TYPES type);
 
 Call this function to modify the menu insertion flags, specified by *pInsertionAllowed*, for the snap-in object.
 
-```
+```cpp
 void SetMenuInsertionFlags(
     bool bBeforeInsertion,
     long* pInsertionAllowed);
@@ -385,7 +385,7 @@ You should not attempt to set bits in *pInsertionAllowed* that were originally c
 
 Call this function to modify any toolbar button styles, of the snap-in object, before the toolbar is created.
 
-```
+```cpp
 void SetToolbarButtonInfo(
     UINT id,
     BYTE* fsState,
@@ -429,7 +429,7 @@ void SetToolbarButtonInfo(
 
 Call this function to modify a menu item before it is inserted into the context menu of the snap-in object.
 
-```
+```cpp
 void UpdateMenuState(
     UINT id,
     LPTSTR pBuf,

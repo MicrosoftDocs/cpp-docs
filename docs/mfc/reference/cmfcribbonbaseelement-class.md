@@ -1659,7 +1659,7 @@ This method notifies the parent window of the ribbon bar that the ribbon element
 
 Closes the pop-up menu for the ribbon element and sends a close message to the parent menu.
 
-```
+```cpp
 void PostMenuCommand(UINT uiCmdId);
 ```
 
@@ -1738,7 +1738,7 @@ The following table summarizes the logic for this method.
 
 Associates a data item with the ribbon element.
 
-```
+```cpp
 void SetData(DWORD_PTR dwData);
 ```
 
@@ -1751,7 +1751,7 @@ void SetData(DWORD_PTR dwData);
 
 Sets the ribbon element to appear as a pop-up command.
 
-```
+```cpp
 void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 ```
 
@@ -1895,7 +1895,7 @@ virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 
 Sets the dimensions of the display rectangle for the ribbon element.
 
-```
+```cpp
 void SetRect(CRect rect);
 ```
 
@@ -1966,7 +1966,7 @@ virtual void SetToolTipText(LPCTSTR lpszText);
 
 Sets the visibility of the ribbon element.
 
-```
+```cpp
 void SetVisible(BOOL bIsVisible);
 ```
 

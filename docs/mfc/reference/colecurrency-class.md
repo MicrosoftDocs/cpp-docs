@@ -495,7 +495,7 @@ BOOL operator>=(const COleCurrency& cur) const;
 
 Call this member function to set the units and fractional part of this `COleCurrency` object.
 
-```
+```cpp
 void SetCurrency(
     long nUnits,
     long nFractionalUnits);
@@ -520,7 +520,7 @@ Note that the units and fractional part are specified by signed long values. The
 
 Call this member function to set the status (validity) of this `COleCurrency` object.
 
-```
+```cpp
 void SetStatus(CurrencyStatus  status  );
 ```
 

@@ -126,7 +126,7 @@ Returns nonzero if the sizes are not equal, otherwise 0.
 
 Adds a size to this `CSize`.
 
-```
+```cpp
 void operator+=(SIZE size) throw();
 ```
 
@@ -138,7 +138,7 @@ void operator+=(SIZE size) throw();
 
 Subtracts a size from this `CSize`.
 
-```
+```cpp
 void operator-=(SIZE size) throw();
 ```
 

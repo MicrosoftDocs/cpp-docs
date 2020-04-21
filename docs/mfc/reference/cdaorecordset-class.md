@@ -458,7 +458,7 @@ For related information, see the topics "AddNew Method", "Edit Method", "Delete 
 
 Call this member function to cache a specified number of records from the recordset.
 
-```
+```cpp
 void FillCache(
     long* pSize = NULL,
     COleVariant* pBookmark = NULL);
@@ -937,7 +937,7 @@ For related information, see the topic "Count Property" in DAO Help.
 
 Call this member function to obtain information about the fields in a recordset.
 
-```
+```cpp
 void GetFieldInfo(
     int nIndex,
     CDaoFieldInfo& fieldinfo,
@@ -1044,7 +1044,7 @@ For related information, see the topic "Attributes Property" in DAO Help.
 
 Call this member function to obtain various kinds of information about an index defined in the base table underlying a recordset.
 
-```
+```cpp
 void GetIndexInfo(
     int nIndex,
     CDaoIndexInfo& indexinfo,
@@ -1634,7 +1634,7 @@ For related information, see the topics "Move Method" and "MoveFirst, MoveLast, 
 
 Call this member function to make the first record in the recordset (if any) the current record.
 
-```
+```cpp
 void MoveFirst();
 ```
 
@@ -1664,7 +1664,7 @@ For related information, see the topics "Move Method" and "MoveFirst, MoveLast, 
 
 Call this member function to make the last record (if any) in the recordset the current record.
 
-```
+```cpp
 void MoveLast();
 ```
 
@@ -1690,7 +1690,7 @@ For related information, see the topics "Move Method" and "MoveFirst, MoveLast, 
 
 Call this member function to make the next record in the recordset the current record.
 
-```
+```cpp
 void MoveNext();
 ```
 
@@ -1716,7 +1716,7 @@ For related information, see the topics "Move Method" and "MoveFirst, MoveLast, 
 
 Call this member function to make the previous record in the recordset the current record.
 
-```
+```cpp
 void MovePrev();
 ```
 
@@ -1961,7 +1961,7 @@ For related information, see the topic "Seek Method" in DAO Help.
 
 Sets the relative record number of a recordset object's current record.
 
-```
+```cpp
 void SetAbsolutePosition(long lPosition);
 ```
 
@@ -1990,7 +1990,7 @@ For related information, see the topic "AbsolutePosition Property" in DAO Help.
 
 Call this member function to position the recordset on the record containing the specified bookmark.
 
-```
+```cpp
 void SetBookmark(COleVariant varBookmark);
 ```
 
@@ -2014,7 +2014,7 @@ For related information, see the topics "Bookmark Property" and Bookmarkable Pro
 
 Call this member function to set the number of records to be cached.
 
-```
+```cpp
 void SetCacheSize(long lSize);
 ```
 
@@ -2035,7 +2035,7 @@ For related information, see the topic "CacheSize, CacheStart Properties" in DAO
 
 Call this member function to specify the bookmark of the first record in the recordset to be cached.
 
-```
+```cpp
 void SetCacheStart(COleVariant varBookmark);
 ```
 
@@ -2062,7 +2062,7 @@ For related information, see the topic CacheSize, CacheStart Properties" in DAO 
 
 Call this member function to set an index on a table-type recordset.
 
-```
+```cpp
 void SetCurrentIndex(LPCTSTR lpszIndex);
 ```
 
@@ -2085,7 +2085,7 @@ For related information, see the topic "Index Object" and the definition "curren
 
 Call this member function to flag a field data member of the recordset as changed or as unchanged.
 
-```
+```cpp
 void SetFieldDirty(
     void* pv,
     BOOL bDirty = TRUE);
@@ -2128,7 +2128,7 @@ This means you cannot set all **param** fields to NULL, as you can with `outputC
 
 Call this member function to flag a field data member of the recordset as Null (specifically having no value) or as non-Null.
 
-```
+```cpp
 void SetFieldNull(
     void* pv,
     BOOL bNull = TRUE);
@@ -2211,7 +2211,7 @@ For related information, see the topics "Field Object" and "Value Property" in D
 
 Call this member function to set the field to a Null value.
 
-```
+```cpp
 void SetFieldValueNull(int nIndex);
 void SetFieldValueNull(LPCTSTR lpszName);
 ```
@@ -2234,7 +2234,7 @@ For related information, see the topics "Field Object" and "Value Property" in D
 
 Call this member function to set the type of locking for the recordset.
 
-```
+```cpp
 void SetLockingMode(BOOL bPessimistic);
 ```
 
@@ -2290,7 +2290,7 @@ Specify the value to set as a `COleVariant` object. For information about settin
 
 Call this member function to set the parameter to a Null value.
 
-```
+```cpp
 void SetParamValueNull(int nIndex);
 void SetParamValueNull(LPCTSTR lpszName);
 ```
@@ -2311,7 +2311,7 @@ C++ NULL is not the same as Null, which, in database terminology, means "having 
 
 Call this member function to set a value that changes the approximate location of the current record in the recordset object based on a percentage of the records in the recordset.
 
-```
+```cpp
 void SetPercentPosition(float fPosition);
 ```
 

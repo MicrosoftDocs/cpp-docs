@@ -90,7 +90,7 @@ Implemented using [HeapAlloc](/windows/win32/api/heapapi/nf-heapapi-heapalloc).
 
 Attaches the heap object to an existing heap.
 
-```
+```cpp
 void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 ```
 

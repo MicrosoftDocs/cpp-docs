@@ -189,7 +189,7 @@ If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolato
 
 Stores a pointer to custom interpolator, which will be handling events.
 
-```
+```cpp
 void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
 ```
 

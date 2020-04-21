@@ -238,7 +238,7 @@ When an element is removed, the remaining elements in the array are renumbered t
 
 Removes all elements from the array.
 
-```
+```cpp
 void RemoveAll();
 ```
 

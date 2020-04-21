@@ -326,7 +326,7 @@ You must ensure that the list is not empty before calling `RemoveTail`. If the l
 
 This member function calls `BASE_CLASS`**::SetAt**.
 
-```
+```cpp
 void SetAt(POSITION pos, TYPE newElement);
 ```
 

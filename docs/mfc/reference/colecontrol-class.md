@@ -445,7 +445,7 @@ For example, a container might set this to FALSE in design mode.
 
 Signals that the bound property value has changed.
 
-```
+```cpp
 void BoundPropertyChanged(DISPID dispid);
 ```
 
@@ -542,7 +542,7 @@ This function is normally not called directly. Instead the OLE control is usuall
 
 Call this function when the set of mnemonics supported by the control has changed.
 
-```
+```cpp
 void ControlInfoChanged();
 ```
 
@@ -590,7 +590,7 @@ Override this function to customize how errors are displayed.
 
 Simulates a mouse click action on the control.
 
-```
+```cpp
 void DoClick();
 ```
 
@@ -623,7 +623,7 @@ If Control Wizard has been used to create the OLE control project, the overridde
 
 Redraws an OLE control that has been subclassed from a Windows control.
 
-```
+```cpp
 void DoSuperclassPaint(
     CDC* pDC,
     const CRect& rcBounds);
@@ -647,7 +647,7 @@ For more information on this function and subclassing a Windows control, see the
 
 Called by the framework when the control's appearance needs to be updated.
 
-```
+```cpp
 void DrawContent(
     CDC* pDC,
     CRect& rc);
@@ -669,7 +669,7 @@ This function directly calls the overridable `OnDraw` function.
 
 Called by the framework when the metafile device context is being used.
 
-```
+```cpp
 void DrawMetafile(
     CDC* pDC,
     CRect& rc);
@@ -687,7 +687,7 @@ Rectangular area to be drawn in.
 
 Enables the simple frame characteristic for an OLE control.
 
-```
+```cpp
 void EnableSimpleFrame();
 ```
 
@@ -720,7 +720,7 @@ This function is normally called by the default implementation of `COleControl::
 
 Serializes or initializes the state of the control's stock properties.
 
-```
+```cpp
 void ExchangeStockProps(CPropExchange* pPX);
 ```
 
@@ -769,7 +769,7 @@ For more information on persistence and versioning, see the article [ActiveX Con
 
 Called by the framework when the mouse is clicked over an active control.
 
-```
+```cpp
 void FireClick();
 ```
 
@@ -783,7 +783,7 @@ For automatic firing of a Click event to occur, the control's Event map must hav
 
 Called by the framework when the mouse is double-clicked over an active control.
 
-```
+```cpp
 void FireDblClick();
 ```
 
@@ -797,7 +797,7 @@ For automatic firing of a DblClick event to occur, the control's Event map must 
 
 Fires the stock Error event.
 
-```
+```cpp
 void FireError(
     SCODE scode,
     LPCTSTR lpszDescription,
@@ -829,7 +829,7 @@ To fix this, manually change the SCODE parameter in the control's .ODL file to a
 
 Fires a user-defined event from your control with any number of optional arguments,.
 
-```
+```cpp
 void AFX_CDECL FireEvent(
     DISPID dispid,
     BYTE* pbParams,
@@ -874,7 +874,7 @@ The *pbParams* argument is a space-separated list of **VTS_**. One or more of th
 
 Called by the framework when a key is pressed while the control is UI active.
 
-```
+```cpp
 void FireKeyDown(
     USHORT* pnChar,
     short nShiftState);
@@ -904,7 +904,7 @@ For automatic firing of a KeyDown event to occur, the control's Event map must h
 
 Called by the framework when a key is pressed and released while the custom control is UI Active within the container.
 
-```
+```cpp
 void FireKeyPress(USHORT* pnChar);
 ```
 
@@ -925,7 +925,7 @@ For automatic firing of a KeyPress event to occur, the control's Event map must 
 
 Called by the framework when a key is released while the custom control is UI Active within the container.
 
-```
+```cpp
 void FireKeyUp(
     USHORT* pnChar,
     short nShiftState);
@@ -955,7 +955,7 @@ For automatic firing of a KeyUp event to occur, the control's Event map must hav
 
 Called by the framework when a mouse button is pressed over an active custom control.
 
-```
+```cpp
 void FireMouseDown(
     short nButton,
     short nShiftState,
@@ -999,7 +999,7 @@ For automatic firing of a MouseDown event to occur, the control's Event map must
 
 Called by the framework when the cursor is moved over an active custom control.
 
-```
+```cpp
 void FireMouseMove(
     short nButton,
     short nShiftState,
@@ -1043,7 +1043,7 @@ For automatic firing of a MouseMove event to occur, the control's Event map must
 
 Called by the framework when a mouse button is released over an active custom control.
 
-```
+```cpp
 void FireMouseUp(
     short nButton,
     short nShiftState,
@@ -1087,7 +1087,7 @@ For automatic firing of a MouseUp event to occur, the control's Event map must h
 
 Fires an event with the current value of the ready state of control.
 
-```
+```cpp
 void FireReadyStateChange();
 ```
 
@@ -1360,7 +1360,7 @@ For more information about `GetControlFlags` and other optimizations of OLE cont
 
 Retrieves the size of the OLE control window.
 
-```
+```cpp
 void GetControlSize(
     int* pcx,
     int* pcy);
@@ -1478,7 +1478,7 @@ Note that the caller must release the object when finished. Within the implement
 
 Measures the text metrics for any `CFontHolder` object owned by the control.
 
-```
+```cpp
 void GetFontTextMetrics(
     LPTEXTMETRIC lptm,
     CFontHolder& fontHolder);
@@ -1548,7 +1548,7 @@ This can be used to obtain a message for display in a status bar while the menu 
 
 Prevents access to a control's property value by the user.
 
-```
+```cpp
 void GetNotSupported();
 ```
 
@@ -1605,7 +1605,7 @@ The rectangle is only valid if the control is in-place active.
 
 Measures the text metrics for the control's stock Font property, which can be selected with the [SelectStockFont](#selectstockfont) function.
 
-```
+```cpp
 void GetStockTextMetrics(LPTEXTMETRIC lptm);
 ```
 
@@ -1661,7 +1661,7 @@ Normally, this would require that the control's window be registered as a drop t
 
 Informs the base class of the IIDs the control will use.
 
-```
+```cpp
 void InitializeIIDs(
     const IID* piidPrimary,
     const IID* piidEvents);
@@ -1707,7 +1707,7 @@ A reference to the control text string.
 
 Sets the readiness state of the control.
 
-```
+```cpp
 void InternalSetReadyState(long lNewReadyState);
 ```
 
@@ -1732,7 +1732,7 @@ Most simple controls never need to differentiate between LOADED and INTERACTIVE.
 
 Forces the control to redraw itself.
 
-```
+```cpp
 void InvalidateControl(
     LPCRECT lpRect = NULL,
     BOOL bErase = TRUE);
@@ -1754,7 +1754,7 @@ If *lpRect* has a NULL value, the entire control will be redrawn. If *lpRect* is
 
 Invalidates the container window's client area within the given region.
 
-```
+```cpp
 void InvalidateRgn(CRgn* pRgn, BOOL bErase = TRUE);
 ```
 
@@ -1866,7 +1866,7 @@ You must override this function and return TRUE if your OLE control subclasses a
 
 Resets any previous data loaded asynchronously and initiates a new loading of the control's asynchronous property.
 
-```
+```cpp
 void Load(LPCTSTR strNewPath, CDataPathProperty& prop);
 ```
 
@@ -3177,7 +3177,7 @@ On input *pPoint* is relative to the origin of the parent (upper left corner of 
 
 Notifies the container that a modal dialog box has been closed.
 
-```
+```cpp
 void PostModalDialog(HWND hWndParent = NULL);
 ```
 
@@ -3194,7 +3194,7 @@ Call this function after displaying any modal dialog box. You must call this fun
 
 Notifies the container that a modal dialog box is about to be displayed.
 
-```
+```cpp
 void PreModalDialog(HWND hWndParent = NULL);
 ```
 
@@ -3211,7 +3211,7 @@ Call this function before displaying any modal dialog box. You must call this fu
 
 Destroys and re-creates the control's window.
 
-```
+```cpp
 void RecreateControlWindow();
 ```
 
@@ -3223,7 +3223,7 @@ This may be necessary if you need to change the window's style bits.
 
 Forces a repaint of the OLE control.
 
-```
+```cpp
 void Refresh();
 ```
 
@@ -3294,7 +3294,7 @@ Call this function to reset the parent of the control window.
 
 Initializes the state of the `COleControl` stock properties to their default values.
 
-```
+```cpp
 void ResetStockProps();
 ```
 
@@ -3312,7 +3312,7 @@ You can improve a control's binary initialization performance by using `ResetSto
 
 Initializes the version number to specified value.
 
-```
+```cpp
 void ResetVersion(DWORD dwVersionDefault);
 ```
 
@@ -3329,7 +3329,7 @@ You can improve a control's binary initialization performance by using `ResetVer
 
 Allows a windowless OLE object to scroll an area within its in-place active image on the screen.
 
-```
+```cpp
 void ScrollWindow(
     int xAmount,
     int yAmount,
@@ -3394,7 +3394,7 @@ A pointer to the previously selected `CFont` object. You should use [CDC::Select
 
 Serializes or initializes the state of the display space allotted to the control.
 
-```
+```cpp
 void SerializeExtent(CArchive& ar);
 ```
 
@@ -3415,7 +3415,7 @@ You can improve a control's binary persistence performance by using `SerializeEx
 
 Serializes or initializes the state of the `COleControl` stock properties: Appearance, BackColor, BorderStyle, Caption, Enabled, Font, ForeColor, and Text.
 
-```
+```cpp
 void SerializeStockProps(CArchive& ar);
 ```
 
@@ -3464,7 +3464,7 @@ You can improve a control's binary persistence performance by using `SerializeVe
 
 Sets the stock Appearance property value of your control.
 
-```
+```cpp
 void SetAppearance (short sAppearance);
 ```
 
@@ -3481,7 +3481,7 @@ For more about stock properties, see [ActiveX Controls: Properties](../../mfc/mf
 
 Sets the stock BackColor property value of your control.
 
-```
+```cpp
 void SetBackColor(OLE_COLOR dwBackColor);
 ```
 
@@ -3498,7 +3498,7 @@ For more information on using this property and other related properties, see th
 
 Sets the stock BorderStyle property value of your control.
 
-```
+```cpp
 void SetBorderStyle(short sBorderStyle);
 ```
 
@@ -3557,7 +3557,7 @@ Note that all coordinates for control windows are relative to the upper-left cor
 
 Sets the stock Enabled property value of your control.
 
-```
+```cpp
 void SetEnabled(BOOL bEnabled);
 ```
 
@@ -3592,7 +3592,7 @@ If the control is not windowless, this function causes the control itself to tak
 
 Sets the stock Font property of your control.
 
-```
+```cpp
 void SetFont(LPFONTDISP pFontDisp);
 ```
 
@@ -3605,7 +3605,7 @@ A pointer to a Font dispatch interface.
 
 Sets the stock ForeColor property value of your control.
 
-```
+```cpp
 void SetForeColor(OLE_COLOR dwForeColor);
 ```
 
@@ -3634,7 +3634,7 @@ The default implementation specifies two formats: CF_METAFILEPICT and the persis
 
 Sets the size of an OLE control when first displayed in a container.
 
-```
+```cpp
 void SetInitialSize(
     int cx,
     int cy);
@@ -3656,7 +3656,7 @@ Call this function in your constructor to set the initial size of your control. 
 
 Changes the modified state of a control.
 
-```
+```cpp
 void SetModifiedFlag(BOOL bModified = TRUE);
 ```
 
@@ -3673,7 +3673,7 @@ Call this function whenever a change occurs that would affect your control's per
 
 Indicates that an edit request has failed.
 
-```
+```cpp
 void SetNotPermitted();
 ```
 
@@ -3685,7 +3685,7 @@ Call this function when `BoundPropertyRequestEdit` fails. This function throws a
 
 Prevents modification to a control's property value by the user.
 
-```
+```cpp
 void SetNotSupported();
 ```
 
@@ -3718,7 +3718,7 @@ If the control is open, it is resized; otherwise the container's `OnPosRectChang
 
 Sets the value of your control's stock Caption or Text property.
 
-```
+```cpp
 void SetText(LPCTSTR pszText);
 ```
 
@@ -3735,7 +3735,7 @@ Note that the stock Caption and Text properties are both mapped to the same valu
 
 Signals the occurrence of an error in your control.
 
-```
+```cpp
 void ThrowError(
     SCODE sc,
     UINT nDescriptionID,
@@ -3769,7 +3769,7 @@ This function should only be called from within a Get or Set function for an OLE
 
 Transforms coordinate values between HIMETRIC units and the container's native units.
 
-```
+```cpp
 void TransformCoords(
     POINTL* lpptlHimetric,
     POINTF* lpptfContainer,

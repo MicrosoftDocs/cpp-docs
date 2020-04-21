@@ -92,7 +92,7 @@ However, if the memory manager does not support being used by multiple instances
 
 Frees a string data structure.
 
-```
+```cpp
 void Free(CStringData* pData) throw();
 ```
 

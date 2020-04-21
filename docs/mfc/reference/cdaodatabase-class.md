@@ -255,7 +255,7 @@ If you omit the encryption constant, an unencrypted database is created. You can
 
 Call this member function to establish a relation between one or more fields in a primary table in the database and one or more fields in a foreign table (another table in the database).
 
-```
+```cpp
 void CreateRelation(
     LPCTSTR lpszName,
     LPCTSTR lpszTable,
@@ -318,7 +318,7 @@ For related information, see the topic "CreateRelation Method" in DAO Help.
 
 Call this member function to delete the specified querydef — saved query — from the `CDaoDatabase` object's QueryDefs collection.
 
-```
+```cpp
 void DeleteQueryDef(LPCTSTR lpszName);
 ```
 
@@ -337,7 +337,7 @@ For information about creating querydef objects, see class [CDaoQueryDef](../../
 
 Call this member function to delete an existing relation from the database object's Relations collection.
 
-```
+```cpp
 void DeleteRelation(LPCTSTR lpszName);
 ```
 
@@ -356,7 +356,7 @@ For related information, see the topic "Delete Method" in DAO Help.
 
 Call this member function to delete the specified table and all of its data from the `CDaoDatabase` object's TableDefs collection.
 
-```
+```cpp
 void DeleteTableDef(LPCTSTR lpszName);
 ```
 
@@ -380,7 +380,7 @@ For related information, see the topic "Delete Method" in DAO Help.
 
 Call this member function to run an action query or execute a SQL statement on the database.
 
-```
+```cpp
 void Execute(
     LPCTSTR lpszSQL,
     int nOptions = dbFailOnError);
@@ -499,7 +499,7 @@ The number of queries defined in the database.
 
 Call this member function to obtain various kinds of information about a query defined in the database.
 
-```
+```cpp
 void GetQueryDefInfo(
     int nIndex,
     CDaoQueryDefInfo& querydefinfo,
@@ -597,7 +597,7 @@ To illustrate the concept of a relation, consider a Suppliers table and a Produc
 
 Call this member function to obtain information about a specified relation in the database's Relations collection.
 
-```
+```cpp
 void GetRelationInfo(
     int nIndex,
     CDaoRelationInfo& relinfo,
@@ -656,7 +656,7 @@ The number of tabledefs defined in the database.
 
 Call this member function to obtain various kinds of information about a table defined in the database.
 
-```
+```cpp
 void GetTableDefInfo(
     int nIndex,
     CDaoTableDefInfo& tabledefinfo,
@@ -813,7 +813,7 @@ You can also use the connection string for multiple levels of login authorizatio
 
 Call this member function to override the default number of seconds to allow before subsequent operations on the connected database time out.
 
-```
+```cpp
 void SetQueryTimeout(short nSeconds);
 ```
 

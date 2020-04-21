@@ -234,7 +234,7 @@ The default implementation just constructs and returns a new `CMFCPopupMenu` obj
 
 Draws a document icon on the menu button.
 
-```
+```cpp
 void DrawDocumentIcon(
     CDC* pDC,
     const CRect& rectImage,
@@ -258,7 +258,7 @@ This method takes a document icon and draws it on the menu button, centered in t
 
 ## <a name="enablequickcustomize"></a> CMFCToolBarMenuButton::EnableQuickCustomize
 
-```
+```cpp
 void EnableQuickCustomize();
 ```
 
@@ -334,7 +334,7 @@ A toolbar menu button can display a submenu. You can provide the list of command
 
 Retrieves the bounding rectangle for the button image.
 
-```
+```cpp
 void GetImageRect(CRect& rectImage);
 ```
 
@@ -700,7 +700,7 @@ By default this method sets the accessibility data for the ribbon element and al
 
 Specifies whether the button is drawn as a menu button or a split button when it has both a valid command ID and a submenu.
 
-```
+```cpp
 void SetMenuOnly(BOOL bMenuOnly);
 ```
 
@@ -717,7 +717,7 @@ Typically, when a toolbar menu button has both a submenu and a command ID, the m
 
 Specifies whether the drop-down menu is in palette mode.
 
-```
+```cpp
 void SetMenuPaletteMode(
     BOOL bMenuPaletteMode=TRUE,
     int nPaletteRows=1);
@@ -737,7 +737,7 @@ In the palette mode, all menu items are displayed as a multicolumn palette. You 
 
 ## <a name="setmessagewnd"></a> CMFCToolBarMenuButton::SetMessageWnd
 
-```
+```cpp
 void SetMessageWnd(CWnd* pWndMessage);
 ```
 

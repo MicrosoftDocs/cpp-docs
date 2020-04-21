@@ -74,7 +74,7 @@ The following example demonstrates how to use various methods in the `CMFCRibbon
 
 Adds a group of colors to the regular color area.
 
-```
+```cpp
 void AddColorsGroup(
     LPCTSTR lpszName,
     const CList<COLORREF,COLORREF>& lstColors,
@@ -146,7 +146,7 @@ CMFCRibbonColorButton(
 
 Specifies whether the **Automatic** button is enabled.
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -180,7 +180,7 @@ void EnableAutomaticButton(
 
 Enables the **Other** button.
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     LPCTSTR lpszToolTip=NULL);
@@ -268,7 +268,7 @@ The color of currently selected element on the pop-up color palette.
 
 Removes all color groups from the regular color area.
 
-```
+```cpp
 void RemoveAllColorGroups();
 ```
 
@@ -276,7 +276,7 @@ void RemoveAllColorGroups();
 
 Selects a color from the regular color area.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -289,7 +289,7 @@ void SetColor(COLORREF color);
 
 Sets the size of all the color elements that appear on the color bar.
 
-```
+```cpp
 void SetColorBoxSize(CSize sizeBox);
 ```
 
@@ -324,7 +324,7 @@ Because it calls `CMFCColorBar::SetColorName`, this method changes the name of t
 
 Sets the number of columns displayed in the table of colors that is presented to the user during the user's color selection process.
 
-```
+```cpp
 void SetColumns(int nColumns);
 ```
 
@@ -339,7 +339,7 @@ void SetColumns(int nColumns);
 
 Specifies a list of RGB values to display in the document color area.
 
-```
+```cpp
 void SetDocumentColors(
     LPCTSTR lpszLabel,
     CList<COLORREF,COLORREF>& lstColors);
@@ -357,7 +357,7 @@ void SetDocumentColors(
 
 Specifies the standard colors to display in the color table that the color button displays.
 
-```
+```cpp
 void SetPalette(CPalette* pPalette);
 ```
 
@@ -372,7 +372,7 @@ void SetPalette(CPalette* pPalette);
 
 Called by the framework when the user selects a color from the color table displayed when the user clicks the color button.
 
-```
+```cpp
 void UpdateColor(COLORREF color);
 ```
 

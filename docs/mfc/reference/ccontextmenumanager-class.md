@@ -157,7 +157,7 @@ If this method finds a menu that matches *lpszName*, `GetMenuByName` stores the 
 
 Returns the list of menu names added to the [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).
 
-```
+```cpp
 void GetMenuNames(CStringList& listOfNames) const;
 ```
 
@@ -232,7 +232,7 @@ Use the method [CContextMenuManager::LoadState](#loadstate) to load the shortcut
 
 Controls whether the [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) closes the active pop-up menu when it displays a new pop-up menu.
 
-```
+```cpp
 void SetDontCloseActiveMenu (BOOL bSet = TRUE);
 ```
 
