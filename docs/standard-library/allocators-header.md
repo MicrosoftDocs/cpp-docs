@@ -15,15 +15,18 @@ Defines several templates that help allocate and free memory blocks for node-bas
 #include <allocators>
 ```
 
+> [!NOTE]
+> \<allocators> is deprecated, starting with Visual Studio 2019 version 16.3.
+
 ## Remarks
 
-The \<allocators> header provides six allocator templates that can be used to select memory-management strategies for node-based containers. For use with these templates, it also provides several different synchronization filters to tailor the memory-management strategy to a variety of different multithreading schemes (including none). Matching a memory management strategy to the known memory usage patterns, and synchronization requirements, of a particular application can often increase the speed or reduce the overall memory requirements of an application.
+The \<allocators> header provides six allocator templates that can be used to select memory-management strategies for node-based containers. For use with these templates, it also provides several different synchronization filters to tailor the memory-management strategy to a variety of different multithreading schemes (including none). You can speed up your app, or reduce its memory requirements, by matching a memory management strategy to its memory usage patterns and synchronization requirements.
 
 The allocator templates are implemented with reusable components that can be customized or replaced to provide additional memory-management strategies.
 
-The node-based containers in the C++ Standard Library (std::list, std::set, std::multiset, std::map and std::multimap) store their elements in individual nodes. All the nodes for a particular container type are the same size, so the flexibility of a general-purpose memory manager is not needed. Because the size of each memory block is known at compile time, the memory manager can be much simpler and faster.
+The node-based containers in the C++ Standard Library (std::list, std::set, std::multiset, std::map, and std::multimap) store their elements in individual nodes. All the nodes for a particular container type are the same size, so the flexibility of a general-purpose memory manager is not needed. Because the size of each memory block is known at compile time, the memory manager can be much simpler and faster.
 
-When used with containers that are not node-based (such as the C++ Standard Library containers std::vector std::deque, and std::basic_string), the alllocator templates will work correctly, but are not likely to provide any performance improvement over the default allocator.
+When used with containers that are not node-based (such as the C++ Standard Library containers std::vector std::deque, and std::basic_string), the allocator templates will work correctly, but are not likely to provide any performance improvement over the default allocator.
 
 An allocator is a class template that describes an object that manages storage allocation and freeing for objects and arrays of objects of a designated type. Allocator objects are used by several container class templates in the C++ Standard Library.
 
@@ -71,7 +74,7 @@ _Lst1 allocates nodes with `allocator_chunklist` and the [sync_per_thread](../st
 
 A block allocator is a cache or a filter. A cache is a class template that takes one argument of type std::size_t. It defines a block allocator that allocates and deallocates memory blocks of a single size. It must obtain memory using operator **new**, but it need not make a separate call to operator **new** for each block. It may, for example, suballocate from a larger block or cache deallocated blocks for subsequent reallocation.
 
-With a compiler that cannot compile rebind the value of the std::size_t argument used when the template was instantiated is not necessarily the value of the argument _Sz passed to a cache's member functions allocate and deallocate.
+With a compiler that cannot rebind the value of the std::size_t argument used when the template was instantiated is not necessarily the value of the argument _Sz passed to a cache's member functions allocate and deallocate.
 
 \<allocators> provides the following cache templates:
 
@@ -81,7 +84,7 @@ With a compiler that cannot compile rebind the value of the std::size_t argument
 
 - [cache_chunklist](../standard-library/cache-chunklist-class.md)
 
-A filter is a block allocator that implements its member functions using another block allocator which is passed to it as a template argument. The most common form of filter is a synchronization filter, which applies a synchronization policy to control access to the member functions of an instance of another block allocator. \<allocators> provides the following synchronization filters:
+A filter is a block allocator that implements its member functions using another block allocator, which is passed to it as a template argument. The most common form of filter is a synchronization filter, which applies a synchronization policy to control access to the member functions of an instance of another block allocator. \<allocators> provides the following synchronization filters:
 
 - [sync_none](../standard-library/sync-none-class.md)
 
@@ -97,7 +100,7 @@ A synchronization policy determines how an allocator instance handles simultaneo
 
 If a compiler supports compiling both single-threaded and multi-threaded applications, the default synchronization filter for single-threaded applications is `sync_none`; for all other cases it is `sync_shared`.
 
-The cache template `cache_freelist` takes a max class argument which determines the maximum number of elements to be stored in the free list.
+The cache template `cache_freelist` takes a max class argument, which determines the maximum number of elements to be stored in the free list.
 
 \<allocators> provides the following max classes:
 

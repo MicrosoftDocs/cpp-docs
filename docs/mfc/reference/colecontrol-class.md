@@ -2475,7 +2475,7 @@ DWORD describing which form, or aspect, of an object is to be displayed. Valid v
 - DVASPECT_TRANSPARENT Rectangle covering all transparent or irregular parts.
 
 *pRect*<br/>
-Points to the [RECTL](/previous-versions/dd162907\(v=vs.85\)) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.
+Points to the [RECTL](/windows/win32/api/windef/ns-windef-rectl) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.
 
 ### Return Value
 

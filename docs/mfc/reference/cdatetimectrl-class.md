@@ -116,7 +116,7 @@ virtual BOOL Create(
 Specifies the combination of date time control styles. See [Date and Time Picker Control Styles](/windows/win32/Controls/date-and-time-picker-control-styles) in the Windows SDK for more information about date and time picker styles.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, which is the position and size of the date and time picker control.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, which is the position and size of the date and time picker control.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the date and time picker control. It must not be NULL.

@@ -86,7 +86,7 @@ virtual BOOL Create(
 Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](/windows/win32/Controls/common-control-styles) in the Windows SDK. This parameter must include the WS_CHILD style. It should also include the WS_VISIBLE style.
 
 *rect*<br/>
-Specifies the status bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
+Specifies the status bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 *pParentWnd*<br/>
 Specifies the status bar control's parent window, usually a `CDialog`. It must not be NULL.
@@ -132,7 +132,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](/windows/win32/Controls/common-control-styles) in the Windows SDK. This parameter must include the WS_CHILD style. It should also include the WS_VISIBLE style.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -298,7 +298,7 @@ BOOL GetRect(
 Zero-based index of the part whose bounding rectangle is to be retrieved.
 
 *lpRect*<br/>
-Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle.
+Address of a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives the bounding rectangle.
 
 ### Return Value
 
