@@ -114,5 +114,5 @@ The threading and marshaling information that's required by a third-party Window
 
 ## See also
 
-[ThreadingModel](/uwp/api/Windows.Foundation.Metadata.ThreadingModel)<br/>
+[ThreadingModel](/uwp/api/windows.foundation.metadata.threadingmodel)<br/>
 [MarshallingBehavior](/uwp/api/windows.foundation.metadata.marshalingbehaviorattribute)

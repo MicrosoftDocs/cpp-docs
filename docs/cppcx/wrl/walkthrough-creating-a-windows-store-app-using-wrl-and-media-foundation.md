@@ -102,7 +102,7 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 1. In `Package.appxmanifest`, on the **Capabilities** tab, select **Microphone** and **Webcam**. Both capabilities are required to capture photos from the webcam.
 
-1. In `MainPage.xaml`, add this code to the root [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) element:
+1. In `MainPage.xaml`, add this code to the root [Grid](/uwp/api/windows.ui.xaml.controls.grid) element:
 
    [!code-xml[wrl-media-capture#7](../codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 

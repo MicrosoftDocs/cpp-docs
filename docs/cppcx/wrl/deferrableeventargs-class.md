@@ -29,10 +29,10 @@ The class that implements *TEventArgsInterface*.
 
 ### Public Methods
 
-Name                                                         | Description
------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------------------
-[DeferrableEventArgs::GetDeferral](#getdeferral)             | Gets a reference to the [Deferral](/uwp/api/windows.foundation.deferral) object which represents a deferred event.
-[DeferrableEventArgs::InvokeAllFinished](#invokeallfinished) | Called to indicate that all processing to handle a deferred event is complete.
+| Name | Description |
+|--|--|
+| [DeferrableEventArgs::GetDeferral](#getdeferral) | Gets a reference to the [Deferral](/uwp/api/windows.foundation.deferral) object which represents a deferred event. |
+| [DeferrableEventArgs::InvokeAllFinished](#invokeallfinished) | Called to indicate that all processing to handle a deferred event is complete. |
 
 ## Remarks
 
