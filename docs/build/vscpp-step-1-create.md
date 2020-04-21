@@ -1,10 +1,9 @@
 ---
 title: Create a C++ console app project
-description: "Create a Hello World console app in Visual C++"
+description: "Create a Hello World console app using Microsoft C++ in Visual Studio."
 ms.custom: "mvc"
 ms.date: 04/20/2020
 ms.topic: "tutorial"
-ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
 # Create a C++ console app project
