@@ -105,7 +105,7 @@ Specifies the progress bar control's style. Apply any combination of window styl
 - PBS_SMOOTH Displays gradual, smooth filling in the progress bar control. Without this flag, the control will fill with blocks.
 
 *rect*<br/>
-Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the *pParentWnd*.
+Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/win32/api/windef/ns-windef-rect) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the *pParentWnd*.
 
 *pParentWnd*<br/>
 Specifies the progress bar control's parent window, usually a `CDialog`. It must not be NULL.
@@ -147,7 +147,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the progress bar control's style. Apply any combination of window styles described in [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -219,7 +219,7 @@ The position of the progress bar control is not the physical location on the scr
 
 Gets the current lower and upper limits, or range, of the progress bar control.
 
-```
+```cpp
 void GetRange(
     int& nLower,
     int& nUpper);
@@ -451,7 +451,7 @@ The position of the progress bar control is not the physical location on the scr
 
 Sets the upper and lower limits of the progress bar control's range and redraws the bar to reflect the new ranges.
 
-```
+```cpp
 void SetRange(
     short nLower,
     short nUpper);

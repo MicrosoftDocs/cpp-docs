@@ -81,7 +81,7 @@ If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error 
 
 Stores a pointer to animation controller to route events.
 
-```
+```cpp
 void SetAnimationController(CAnimationController* pAnimationController);
 ```
 

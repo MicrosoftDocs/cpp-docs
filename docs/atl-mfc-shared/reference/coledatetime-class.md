@@ -1099,7 +1099,7 @@ See the example for [GetStatus](#getstatus).
 
 Sets the status of this `COleDateTime` object.
 
-```
+```cpp
 void SetStatus(DateTimeStatus status) throw();
 ```
 

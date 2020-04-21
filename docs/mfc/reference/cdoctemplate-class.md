@@ -463,7 +463,7 @@ Non-zero if successful; otherwise 0.
 
 Determines the resources for OLE containers when editing an in-place OLE item.
 
-```
+```cpp
 void SetContainerInfo(UINT nIDOleInPlaceContainer);
 ```
 
@@ -499,7 +499,7 @@ For information on the default title, see the description of `CDocTemplate::docN
 
 Determines the resources and classes when the server document is embedded or edited in-place.
 
-```
+```cpp
 void SetServerInfo(
     UINT nIDOleEmbedding,
     UINT nIDOleInPlaceServer = 0,
@@ -555,7 +555,7 @@ A valid pointer to a `CFrameWnd` object, or NULL if the creation fails.
 
 Sets up the out of process preview handler.
 
-```
+```cpp
 void SetPreviewInfo(
     UINT nIDPreviewFrame,
     CRuntimeClass* pPreviewFrameClass = NULL,

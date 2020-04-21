@@ -15,7 +15,7 @@ Internal CRT Function. Runs all termination handlers that are listed in the indi
 
 ## Syntax
 
-```
+```cpp
 void _local_unwind2(
    PEXCEPTION_REGISTRATION xr,
    int stop

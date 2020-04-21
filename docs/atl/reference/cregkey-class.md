@@ -93,7 +93,7 @@ When you close a key, its registry data is written (flushed) to the hard disk. T
 
 Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](#m_hkey) member handle to *hKey*.
 
-```
+```cpp
 void Attach(HKEY hKey) throw();
 ```
 

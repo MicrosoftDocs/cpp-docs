@@ -223,7 +223,7 @@ For more information, see [EM_CHARFROMPOS](/windows/win32/Controls/em-charfrompo
 
 Deletes (clears) the current selection (if any) in the rich edit control.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -243,7 +243,7 @@ For more information, see [WM_CLEAR](/windows/win32/dataxchg/wm-clear) in the Wi
 
 Copies the current selection (if any) in the rich edit control to the Clipboard.
 
-```
+```cpp
 void Copy();
 ```
 
@@ -335,7 +335,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the edit control's style. Apply a combination of the window styles listed in the **Remarks** section of [Create](#create) and [edit control styles](/windows/win32/Controls/edit-control-styles), described in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -371,7 +371,7 @@ Use [Create](#create) to construct the Windows rich edit control.
 
 Delete (cuts) the current selection (if any) in the rich edit control and copies the deleted text to the Clipboard.
 
-```
+```cpp
 void Cut();
 ```
 
@@ -418,7 +418,7 @@ For more information, see [EM_DISPLAYBAND](/windows/win32/Controls/em-displayban
 
 Resets (clear) the undo flag of this rich edit control.
 
-```
+```cpp
 void EmptyUndoBuffer();
 ```
 
@@ -812,7 +812,7 @@ This member function is available with only the Asian-language versions of the o
 
 Retrieves the formatting rectangle for this `CRichEditCtrl` object.
 
-```
+```cpp
 void GetRect(LPRECT lpRect) const;
 ```
 
@@ -851,7 +851,7 @@ The types of actions that can be undone or redone include typing, delete, drag-d
 
 Retrieves the bounds of the current selection in this `CRichEditCtrl` object.
 
-```
+```cpp
 void GetSel(CHARRANGE& cr) const;
 
 void GetSel(
@@ -1102,7 +1102,7 @@ This member function is available only for Asian-language versions of the operat
 
 Changes the visibility of the selection.
 
-```
+```cpp
 void HideSelection(
     BOOL bHide,
     BOOL bPerm);
@@ -1130,7 +1130,7 @@ For more information, see [EM_HIDESELECTION](/windows/win32/Controls/em-hidesele
 
 Limits the length of the text that the user can enter into an edit control.
 
-```
+```cpp
 void LimitText(long nChars = 0);
 ```
 
@@ -1237,7 +1237,7 @@ For more information, see [EM_LINELENGTH](/windows/win32/Controls/em-linelength)
 
 Scrolls the text of a multiple-line edit control.
 
-```
+```cpp
 void LineScroll(
     int nLines,
     int nChars = 0);
@@ -1267,7 +1267,7 @@ For more information, see [EM_LINESCROLL](/windows/win32/Controls/em-linescroll)
 
 Inserts the data from the Clipboard into the `CRichEditCtrl` at the insertion point, the location of the caret.
 
-```
+```cpp
 void Paste();
 ```
 
@@ -1285,7 +1285,7 @@ For more information, see [WM_PASTE](/windows/win32/dataxchg/wm-paste) in the Wi
 
 Pastes data in a specific Clipboard format into this `CRichEditCtrl` object.
 
-```
+```cpp
 void PasteSpecial(
     UINT nClipFormat,
     DWORD dvAspect = 0,
@@ -1354,7 +1354,7 @@ For more information, see [EM_REDO](/windows/win32/Controls/em-redo) in the Wind
 
 Replaces the current selection in this `CRichEditCtrl` object with the specified text.
 
-```
+```cpp
 void ReplaceSel(
     LPCTSTR lpszNewText,
     BOOL bCanUndo = FALSE);
@@ -1386,7 +1386,7 @@ For more information, see [EM_REPLACESEL](/windows/win32/Controls/em-replacesel)
 
 Forces this `CRichEditCtrl` object to send EN_REQUESTRESIZE notification messages to its parent window.
 
-```
+```cpp
 void RequestResize();
 ```
 
@@ -1513,7 +1513,7 @@ For more information, see [EM_SETEVENTMASK](/windows/win32/Controls/em-seteventm
 
 Sets or clears the modified flag for an edit control.
 
-```
+```cpp
 void SetModify(BOOL bModified = TRUE);
 ```
 
@@ -1559,7 +1559,7 @@ For more information, see [EM_SETOLECALLBACK](/windows/win32/Controls/em-setolec
 
 Sets the options for this `CRichEditCtrl` object.
 
-```
+```cpp
 void SetOptions(
     WORD wOp,
     DWORD dwFlags);
@@ -1694,7 +1694,7 @@ For more information, see [EM_SETREADONLY](/windows/win32/Controls/em-setreadonl
 
 Sets the formatting rectangle for this `CRichEditCtrl` object.
 
-```
+```cpp
 void SetRect(LPCRECT lpRect);
 ```
 
@@ -1717,7 +1717,7 @@ For more information, see [EM_SETRECT](/windows/win32/Controls/em-setrect) in th
 
 Sets the selection within this `CRichEditCtrl` object.
 
-```
+```cpp
 void SetSel(
     long nStartChar,
     long nEndChar);
@@ -1922,7 +1922,7 @@ This message is available only in Asian-language versions of the operating syste
 
 Stops the control from collecting additional typing actions into the current undo action.
 
-```
+```cpp
 void StopGroupTyping();
 ```
 

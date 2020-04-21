@@ -15,7 +15,7 @@ Calculates the arctangent of the top value on the stack.
 
 ## Syntax
 
-```
+```cpp
 void __cdecl _CIatan();
 ```
 

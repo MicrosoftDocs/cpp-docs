@@ -78,7 +78,7 @@ Follow the model of the existing RFX functions.
 
 You need a call to `SetFieldType` in your recordset class's [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) override.
 
-```
+```cpp
 void SetFieldType(UINT nFieldType);
 ```
 

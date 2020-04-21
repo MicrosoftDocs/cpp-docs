@@ -246,7 +246,7 @@ Call the [Create](#create) member function to create the toolbar window.
 
 This member function retrieves the control ID, style, and image index of the toolbar button or separator at the location specified by *nIndex.*
 
-```
+```cpp
 void GetButtonInfo(
     int nIndex,
     UINT& nID,
@@ -476,7 +476,7 @@ For example, call `SetBitmap` to change the bitmapped image after the user takes
 
 Call this member function to set the button's command ID, style, and image number.
 
-```
+```cpp
 void SetButtonInfo(
     int nIndex,
     UINT nID,
@@ -557,7 +557,7 @@ If *lpIDArray* is NULL, this function allocates space for the number of items sp
 
 Call this member function to set the style of a button or separator, or to group buttons.
 
-```
+```cpp
 void SetButtonStyle(
     int nIndex,
     UINT nStyle);
@@ -626,7 +626,7 @@ Nonzero if successful; otherwise 0.
 
 This member function sets the toolbar's height to the value, in pixels, specified in *cyHeight*.
 
-```
+```cpp
 void SetHeight(int cyHeight);
 ```
 
@@ -645,7 +645,7 @@ If this function is not called, the framework uses the size of the button to det
 
 Call this member function to set the toolbar's buttons to the size, in pixels, specified in *sizeButton*.
 
-```
+```cpp
 void SetSizes(
     SIZE sizeButton,
     SIZE sizeImage);

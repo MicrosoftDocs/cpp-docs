@@ -304,7 +304,7 @@ The standard label for the other button is **More Colors...**.
 
 Calculates the vertical and horizontal margins that are required to contain the buttons on the color bar control, and adjusts the location of those buttons.
 
-```
+```cpp
 void ContextToSize(
     BOOL bSquareButtons = TRUE,
     BOOL bCenterButtons = TRUE);
@@ -428,7 +428,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 Shows or hides the automatic button.
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -456,7 +456,7 @@ The text label of the automatic button is deleted if the *lpszLabel* parameter i
 
 Enables or disables the display of a dialog box that lets the user select more colors.
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     BOOL bAltColorDlg=TRUE,
@@ -726,7 +726,7 @@ Pointer to the palette that is replaced by the palette of the parent button of t
 
 Sets the color that is currently selected.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -761,7 +761,7 @@ This method changes the name of the specified color in all `CMFCColorBar` object
 
 Sets a new command ID for a color bar control.
 
-```
+```cpp
 void SetCommandID(UINT nCommandID);
 ```
 
@@ -778,7 +778,7 @@ Call this method to modify the command ID of a color bar control and to notify t
 
 Sets the list of colors that are used in the current document.
 
-```
+```cpp
 void SetDocumentColors(
     LPCTSTR lpszCaption,
     CList<COLORREF,COLORREF>& lstDocColors,
@@ -804,7 +804,7 @@ void SetDocumentColors(
 
 Sets the horizontal margin, which is the space between the left or right color cell and the boundary of the client area.
 
-```
+```cpp
 void SetHorzMargin(int nHorzMargin);
 ```
 
@@ -821,7 +821,7 @@ By default, the [CMFCColorBar::CMFCColorBar](#cmfccolorbar) constructor sets the
 
 Sets the `m_pWndPropList` protected data member to the specified pointer to a property grid control.
 
-```
+```cpp
 void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```
 
@@ -835,7 +835,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 
 Sets the vertical margin, which is the space between the top or bottom color cell and the client area boundary.
 
-```
+```cpp
 void SetVertMargin(int nVertMargin);
 ```
 

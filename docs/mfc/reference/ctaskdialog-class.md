@@ -137,7 +137,7 @@ CTaskDialog Sample
 
 Adds a new command button control to the `CTaskDialog`.
 
-```
+```cpp
 void AddCommandControl(
     int nCommandControlID,
     const CString& strCaption,
@@ -173,7 +173,7 @@ When the user selects a command button control, the `CTaskDialog` closes. If you
 
 Adds a radio button to the `CTaskDialog`.
 
-```
+```cpp
 void CTaskDialog::AddRadioButton(
     int nRadioButtonID,
     const CString& strCaption,
@@ -530,7 +530,7 @@ Use this function to determine at runtime if the computer that is running your a
 
 Adds command button controls by using data from the string table.
 
-```
+```cpp
 void LoadCommandControls(
     int nIDCommandControlsFirst,
     int nIDCommandControlsLast);
@@ -558,7 +558,7 @@ By default, new command button controls are enabled and do not require elevation
 
 Adds radio button controls by using data from the string table.
 
-```
+```cpp
 void LoadRadioButtons(
     int nIDRadioButtonsFirst,
     int nIDRadioButtonsLast);
@@ -812,7 +812,7 @@ Override this method in a derived class to implement custom behavior.
 
 Removes all the command button controls from the `CTaskDialog`.
 
-```
+```cpp
 void RemoveAllCommandControls();
 ```
 
@@ -824,7 +824,7 @@ void RemoveAllCommandControls();
 
 Removes all the radio buttons from the `CTaskDialog`.
 
-```
+```cpp
 void RemoveAllRadioButtons();
 ```
 
@@ -836,7 +836,7 @@ void RemoveAllRadioButtons();
 
 Updates a command button control on the `CTaskDialog`.
 
-```
+```cpp
 void SetCommandControlOptions(
     int nCommandControlID,
     BOOL bEnabled,
@@ -866,7 +866,7 @@ Use this method to change whether a command button control is enabled or require
 
 Updates a subset of common buttons to be enabled and to require UAC elevation.
 
-```
+```cpp
 void SetCommonButtonOptions(
     int nDisabledButtonMask,
     int nElevationButtonMask = 0);
@@ -896,7 +896,7 @@ This method enables any button that is available to the `CTaskDialog` but is not
 
 Adds common buttons to the `CTaskDialog`.
 
-```
+```cpp
 void SetCommonButtons(
     int nButtonMask,
     int nDisabledButtonMask = 0,
@@ -932,7 +932,7 @@ By default, all common buttons are enabled and do not require elevation.
 
 Updates the content of the `CTaskDialog`.
 
-```
+```cpp
 void SetContent(const CString& strContent);
 ```
 
@@ -953,7 +953,7 @@ The content of the `CTaskDialog` class is the text that is displayed to the user
 
 Specifies the default command button control.
 
-```
+```cpp
 void SetDefaultCommandControl(int nCommandControlID);
 ```
 
@@ -976,7 +976,7 @@ This method throws an exception if it cannot find the command button control spe
 
 Specifies the default radio button.
 
-```
+```cpp
 void SetDefaultRadioButton(int nRadioButtonID);
 ```
 
@@ -999,7 +999,7 @@ This method throws an exception if it cannot find the radio button specified by 
 
 Adjusts the width of the `CTaskDialog`.
 
-```
+```cpp
 void SetDialogWidth(int nWidth = 0);
 ```
 
@@ -1022,7 +1022,7 @@ If *nWidth* is set to 0, this method sets the dialog box to the default size.
 
 Updates the expansion area of the `CTaskDialog`.
 
-```
+```cpp
 void SetExpansionArea(
     const CString& strExpandedInformation,
     const CString& strCollapsedLabel = _T(""),
@@ -1054,7 +1054,7 @@ When the `CTaskDialog` is first displayed, it does not show the expanded informa
 
 Updates the footer icon of the `CTaskDialog`.
 
-```
+```cpp
 void SetFooterIcon(HICON hFooterIcon);
 void SetFooterIcon(LPCWSTR lpszFooterIcon);
 ```
@@ -1083,7 +1083,7 @@ A `CTaskDialog` can only accept an `HICON` or `LPCWSTR` as a footer icon. This i
 
 Updates the text on the footer of the `CTaskDialog`.
 
-```
+```cpp
 void SetFooterText(const CString& strFooterText);
 ```
 
@@ -1104,7 +1104,7 @@ The footer icon appears next to the footer text on the bottom of the `CTaskDialo
 
 Updates the main icon of the `CTaskDialog`.
 
-```
+```cpp
 void SetMainIcon(HICON hMainIcon);
 void SetMainIcon(LPCWSTR lpszMainIcon);
 ```
@@ -1131,7 +1131,7 @@ A `CTaskDialog` can only accept an `HICON` or `LPCWSTR` as a main icon. You can 
 
 Updates the main instruction of the `CTaskDialog`.
 
-```
+```cpp
 void SetMainInstruction(const CString& strInstructions);
 ```
 
@@ -1152,7 +1152,7 @@ The main instruction of the `CTaskDialog` class is text displayed to the user in
 
 Configures the options for the `CTaskDialog`.
 
-```
+```cpp
 void SetOptions(int nOptionFlag);
 ```
 
@@ -1194,7 +1194,7 @@ The following table lists all the valid options.
 
 Configures a marquee bar for the `CTaskDialog` and adds it to the dialog box.
 
-```
+```cpp
 void SetProgressBarMarquee(
     BOOL bEnabled = TRUE,
     int nMarqueeSpeed = 0);
@@ -1224,7 +1224,7 @@ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure)
 
 Adjusts the position of the progress bar.
 
-```
+```cpp
 void SetProgressBarPosition(int nProgressPos);
 ```
 
@@ -1245,7 +1245,7 @@ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure)
 
 Adjusts the range of the progress bar.
 
-```
+```cpp
 void SetProgressBarRange(
     int nRangeMin,
     int nRangeMax);
@@ -1275,7 +1275,7 @@ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure)
 
 Sets the state of the progress bar and displays it on the `CTaskDialog`.
 
-```
+```cpp
 void SetProgressBarState(int nState = PBST_NORMAL);
 ```
 
@@ -1306,7 +1306,7 @@ You can set where the progress bar stops with [CTaskDialog::SetProgressBarPositi
 
 Enables or disables a radio button.
 
-```
+```cpp
 void SetRadioButtonOptions(
     int nRadioButtonID,
     BOOL bEnabled);
@@ -1332,7 +1332,7 @@ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure)
 
 Sets the checked state of the verification check box.
 
-```
+```cpp
 void SetVerificationCheckbox(BOOL bChecked);
 ```
 
@@ -1349,7 +1349,7 @@ void SetVerificationCheckbox(BOOL bChecked);
 
 Sets the text that is displayed to the right of the verification check box.
 
-```
+```cpp
 void SetVerificationCheckboxText(CString& strVerificationText);
 ```
 
@@ -1370,7 +1370,7 @@ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure)
 
 Sets the title of the `CTaskDialog`.
 
-```
+```cpp
 void SetWindowTitle(CString& strWindowTitle);
 ```
 

@@ -185,7 +185,7 @@ The following tips pertain to the `CMFCBaseTabCtrl Class` and any classes that i
 
 Adds an icon to the list of icons in the protected `CMap m_mapAddedIcons` member.
 
-```
+```cpp
 void AddIcon(
     HICON hIcon,
     int iIcon);
@@ -254,7 +254,7 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 
 ## <a name="autodestroywindow"></a> CMFCBaseTabCtrl::AutoDestroyWindow
 
-```
+```cpp
 void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
 ```
 
@@ -358,7 +358,7 @@ If the tab specified by *nTabNum* is non-detachable, this function fails and ret
 
 ## <a name="enableactivatelastactive"></a> CMFCBaseTabCtrl::EnableActivateLastActive
 
-```
+```cpp
 void EnableActivateLastActive(BOOL bLastActive = TRUE);
 ```
 
@@ -372,7 +372,7 @@ void EnableActivateLastActive(BOOL bLastActive = TRUE);
 
 Controls whether the framework uses the automatic background colors when drawing a tab.
 
-```
+```cpp
 void EnableAutoColor(BOOL bEnable = TRUE);
 ```
 
@@ -455,7 +455,7 @@ TRUE if successful; otherwise FALSE.
 
 Enables the user to change the tab order using a mouse.
 
-```
+```cpp
 void EnableTabSwap(BOOL bEnable);
 ```
 
@@ -493,7 +493,7 @@ By default, this method is not supported by the `CMFCBaseTabCtrl Class`. You sho
 
 ## <a name="enterdragmode"></a> CMFCBaseTabCtrl::EnterDragMode
 
-```
+```cpp
 void EnterDragMode();
 ```
 
@@ -1169,7 +1169,7 @@ If the object indicated by *pNewWnd* is not derived from the [CDockablePane Clas
 
 ## <a name="invalidatetab"></a> CMFCBaseTabCtrl::InvalidateTab
 
-```
+```cpp
 void InvalidateTab(int iTab);
 ```
 
@@ -1704,7 +1704,7 @@ virtual BOOL RenameTab();
 
 Resets the image list for an instance of the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md).
 
-```
+```cpp
 void ResetImageList();
 ```
 
@@ -1779,7 +1779,7 @@ By default, the framework obtains the text color from [GetSysColor](/windows/win
 
 Sets the colors of the tab control that the framework uses in automatic color mode.
 
-```
+```cpp
 void SetAutoColors(const CArray<COLORREF,COLORREF>& arColors);
 ```
 
@@ -1798,7 +1798,7 @@ To enable autocolor mode, use the [CMFCBaseTabCtrl::EnableAutoColor](#enableauto
 
 Sets the wrapper class that is used for any objects that are not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md).
 
-```
+```cpp
 void SetDockingBarWrapperRTC(CRuntimeClass* pRTC);
 ```
 
@@ -1815,7 +1815,7 @@ You add tabs to a tab control by using the methods [CMFCBaseTabCtrl::AddTab](#ad
 
 Enables and disables the processing of prefix characters in tab labels.
 
-```
+```cpp
 void SetDrawNoPrefix(
     BOOL bNoPrefix,
     BOOL bRedraw = TRUE);

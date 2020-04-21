@@ -73,7 +73,7 @@ Dispatch maps, similar to message maps, are used to expose OLE automation `IDisp
 
 Call this function to display the cursor as an hourglass when you expect a command to take a noticeable time interval to execute.
 
-```
+```cpp
 void BeginWaitCursor();
 ```
 
@@ -121,7 +121,7 @@ Pointer to the [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure descri
 Handle of the document window containing the object.
 
 *lpRect*<br/>
-Pointer to the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.
+Pointer to the [RECT](/windows/win32/api/windef/ns-windef-rect) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.
 
 ### Return Value
 
@@ -135,7 +135,7 @@ This member function is basically an implementation of [IOleObject::DoVerb](/win
 
 Call this function to enable OLE automation for an object.
 
-```
+```cpp
 void EnableAutomation();
 ```
 
@@ -147,7 +147,7 @@ This function is typically called from the constructor of your object and should
 
 Enables event firing over connection points.
 
-```
+```cpp
 void EnableConnections();
 ```
 
@@ -159,7 +159,7 @@ To enable connection points, call this member function in the constructor of you
 
 Enables an object's type library.
 
-```
+```cpp
 void EnableTypeLib();
 ```
 
@@ -171,7 +171,7 @@ Call this member function in the constructor of your `CCmdTarget`-derived object
 
 Call this function after you have called the `BeginWaitCursor` member function to return from the hourglass cursor to the previous cursor.
 
-```
+```cpp
 void EndWaitCursor();
 ```
 
@@ -236,7 +236,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
 ### Parameters
 
 *pIID*<br/>
-A pointer to an interface ID (a [GUID](/previous-versions/cc317743(v%3dmsdn.10)).
+A pointer to an interface ID (a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid.
 
 ### Return Value
 
@@ -302,7 +302,7 @@ HRESULT GetTypeInfoOfGuid(
 A locale identifier ( `LCID`).
 
 *guid*<br/>
-The [GUID](/previous-versions/cc317743(v%3dmsdn.10)) of the type description.
+The [GUID](/windows/win32/api/guiddef/ns-guiddef-guid of the type description.
 
 *ppTypeInfo*<br/>
 Pointer to a pointer to the `ITypeInfo` interface.
@@ -466,7 +466,7 @@ Override this function to provide special handling for this situation. The defau
 
 Call this function to restore the appropriate hourglass cursor after the system cursor has changed (for example, after a message box has opened and then closed while in the middle of a lengthy operation).
 
-```
+```cpp
 void RestoreWaitCursor();
 ```
 

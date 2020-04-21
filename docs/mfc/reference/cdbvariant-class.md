@@ -83,7 +83,7 @@ Sets the [m_dwType](#m_dwtype) data member to DBVT_NULL.
 
 Call this member function to clear the `CDBVariant` object.
 
-```
+```cpp
 void Clear();
 ```
 

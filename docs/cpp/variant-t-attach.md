@@ -13,7 +13,7 @@ Attaches a `VARIANT` object into the **_variant_t** object.
 
 ## Syntax
 
-```
+```cpp
 void Attach(VARIANT& varSrc);
 ```
 

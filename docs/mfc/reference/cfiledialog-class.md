@@ -275,7 +275,7 @@ The menu name.
 
 Adds a folder to the list of places available for the user to open or save items.
 
-```
+```cpp
 void AddPlace(
     LPCWSTR lpszFolder,
     FDAP fdap = FDAP_TOP) throw();
@@ -372,13 +372,13 @@ The text name.
 
 Updates the current state of the [CFileDialog](../../mfc/reference/cfiledialog-class.md) based on the values stored in the `m_ofn` data structure.
 
-```
+```cpp
 void ApplyOFNToShellDialog();
 ```
 
 ### Remarks
 
-In versions of Windows before Windows Vista, the member [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable were immediately reflected in the state of the dialog box. Also, any changes to the state of the dialog box immediately update the `m_ofn` member variable.
+In versions of Windows before Windows Vista, the member [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable were immediately reflected in the state of the dialog box. Also, any changes to the state of the dialog box immediately update the `m_ofn` member variable.
 
 In Windows Vista or later, the values in the `m_ofn` member variable and state of the `CFileDialog` are not guaranteed to be synchronized. This function forces the state of the `CFileDialog` to be updated to match the `m_ofn` structure. Windows calls this function automatically during [CFileDialog::DoModal](#domodal).
 
@@ -895,7 +895,7 @@ A POSITION value that can be used for iteration; NULL if the list is empty.
 
 Call this member function to hide the specified control in an Explorer-style Open or Save As common dialog box.
 
-```
+```cpp
 void HideControl(int nID);
 ```
 
@@ -1331,7 +1331,7 @@ One or more values from the CDCONTROLSTATE enumeration that indicate the current
 
 Call this method to set the text for the specified control in an Explorer-style **Open** or **Save As** dialog box.
 
-```
+```cpp
 void SetControlText(
     int nID,
     LPCSTR lpsz);
@@ -1359,7 +1359,7 @@ To use this method, you must create the dialog box with the OFN_EXPLORER style. 
 
 Call this function to set the default file name extension for an Explorer-style Open or Save As common dialog box.
 
-```
+```cpp
 void SetDefExt(LPCSTR lpsz);
 ```
 
@@ -1431,7 +1431,7 @@ The ID of the item that the user selected in the control.
 
 Sets the dialog box template for the [CFileDialog](../../mfc/reference/cfiledialog-class.md) object.
 
-```
+```cpp
 void SetTemplate(
     UINT nWin3ID,
     UINT nWin4ID);
@@ -1486,13 +1486,13 @@ The group name.
 
 Updates the `m_ofn` data structure of the [CFileDialog](../../mfc/reference/cfiledialog-class.md) based on the current state of the internal object.
 
-```
+```cpp
 void UpdateOFNFromShellDialog();
 ```
 
 ### Remarks
 
-In versions of Windows before Windows Vista, the member [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable directly affected the state of the dialog box. Also, any changes to the state of the dialog immediately updated the m_ofn member variable.
+In versions of Windows before Windows Vista, the member [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable directly affected the state of the dialog box. Also, any changes to the state of the dialog immediately updated the m_ofn member variable.
 
 In Windows Vista or later, the `m_ofn` data structure is not automatically updated. To guarantee the accuracy of the data in the `m_ofn` member variable, you should call the `UpdateOFNFromShellDialog` function before accessing the data. Windows calls this function automatically during the processing of [IFileDialog::OnFileOK](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok).
 

@@ -94,7 +94,7 @@ For more information on using `CScrollView`, see [Document/View Architecture](..
 
 Call this member function to determine if the scroll view has horizontal and vertical bars.
 
-```
+```cpp
 void CheckScrollBars(
     BOOL& bHasHorzBar,
     BOOL& bHasVertBar) const;
@@ -124,7 +124,7 @@ You must call either `SetScrollSizes` or `SetScaleToFitSize` before the scroll v
 
 Call `FillOutsideRect` to fill the area of the view that appears outside of the scrolling area.
 
-```
+```cpp
 void FillOutsideRect(
     CDC* pDC,
     CBrush* pBrush);
@@ -168,7 +168,7 @@ This coordinate pair corresponds to the location in the document to which the up
 
 `GetDeviceScrollSizes` gets the current mapping mode, the total size, and the line and page sizes of the scrollable view.
 
-```
+```cpp
 void GetDeviceScrollSizes(
     int& nMapMode,
     SIZE& sizeTotal,
@@ -228,7 +228,7 @@ The total size of the scroll view in logical units. The horizontal size is in th
 
 Call `ResizeParentToFit` to let the size of your view dictate the size of its frame window.
 
-```
+```cpp
 void ResizeParentToFit(BOOL bShrinkOnly = TRUE);
 ```
 
@@ -249,7 +249,7 @@ This is recommended only for views in MDI child frame windows. Use `ResizeParent
 
 Call `ScrollToPosition` to scroll to a given point in the view.
 
-```
+```cpp
 void ScrollToPosition(POINT pt);
 ```
 
@@ -266,7 +266,7 @@ The view will be scrolled so that this point is at the upper-left corner of the 
 
 Call `SetScaleToFitSize` when you want to scale the viewport size to the current window size automatically.
 
-```
+```cpp
 void SetScaleToFitSize(SIZE sizeTotal);
 ```
 
@@ -291,7 +291,7 @@ You'll typically place the call to `SetScaleToFitSize` in your override of the v
 
 Call `SetScrollSizes` when the view is about to be updated.
 
-```
+```cpp
 void SetScrollSizes(
     int nMapMode,
     SIZE sizeTotal,

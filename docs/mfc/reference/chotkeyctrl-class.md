@@ -127,7 +127,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the hot key control's style. Apply any combination of control styles. For more information, see [Common Control Styles](/windows/win32/Controls/common-control-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -230,7 +230,7 @@ The key name that this function returns comes from the keyboard driver, so you c
 
 Sets the keyboard shortcut for a hot key control.
 
-```
+```cpp
 void SetHotKey(
     WORD wVirtualKeyCode,
     WORD wModifiers);
@@ -261,7 +261,7 @@ The virtual key code and the modifier keys together define the keyboard shortcut
 
 Call this function to define the invalid combinations and the default modifier combination for a hot key control.
 
-```
+```cpp
 void SetRules(
     WORD wInvalidComb,
     WORD wModifiers);

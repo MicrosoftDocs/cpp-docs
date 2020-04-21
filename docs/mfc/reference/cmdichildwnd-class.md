@@ -183,7 +183,7 @@ The frame returned is two parents removed from the `CMDIChildWnd` and is the par
 
 Call this member function to activate an MDI child window independently of the MDI frame window.
 
-```
+```cpp
 void MDIActivate();
 ```
 
@@ -199,7 +199,7 @@ When the frame becomes active, the child window that was last activated will be 
 
 Call this member function to destroy an MDI child window.
 
-```
+```cpp
 void MDIDestroy();
 ```
 
@@ -215,7 +215,7 @@ The member function removes the title of the child window from the frame window 
 
 Call this member function to maximize an MDI child window.
 
-```
+```cpp
 void MDIMaximize();
 ```
 
@@ -231,7 +231,7 @@ When a child window is maximized, Windows resizes it to make its client area fil
 
 Call this member function to restore an MDI child window from maximized or minimized size.
 
-```
+```cpp
 void MDIRestore();
 ```
 
@@ -243,7 +243,7 @@ void MDIRestore();
 
 Sets the handles for menu and accelerator resources.
 
-```
+```cpp
 void SetHandles(
     HMENU hMenu,
     HACCEL hAccel);

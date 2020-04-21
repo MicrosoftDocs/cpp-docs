@@ -123,7 +123,7 @@ For more information, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).
 
 Implements the behavior of the Win32 message [RB_BEGINDRAG](/windows/win32/Controls/rb-begindrag), as described in the Windows SDK.
 
-```
+```cpp
 void BeginDrag(
     UINT uBand,
     DWORD dwPos = (DWORD)-1);
@@ -155,7 +155,7 @@ virtual BOOL Create(
 Specifies the combination of rebar control styles applied to the control. See [Rebar Control Styles](/windows/win32/Controls/rebar-control-styles) in the Windows SDK for a list of supported styles.
 
 *rect*<br/>
-A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, which is the position and size of the rebar control.
+A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/windows/win32/api/windef/ns-windef-rect) structure, which is the position and size of the rebar control.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the rebar control. It must not be NULL.
@@ -203,7 +203,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the combination of rebar control styles applied to the control. For a list of supported styles, see [Rebar Control Styles](/windows/win32/Controls/rebar-control-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -256,7 +256,7 @@ Nonzero if the band deleted successfully; otherwise zero.
 
 Implements the behavior of the Win32 message [RB_DRAGMOVE](/windows/win32/Controls/rb-dragmove), as described in the Windows SDK.
 
-```
+```cpp
 void DragMove(DWORD dwPos = (DWORD)-1);
 ```
 
@@ -269,7 +269,7 @@ A DWORD value that contains the new mouse coordinates. The horizontal coordinate
 
 Implements the behavior of the Win32 message [RB_ENDDRAG](/windows/win32/Controls/rb-enddrag), as described in the Windows SDK.
 
-```
+```cpp
 void EndDrag();
 ```
 
@@ -277,7 +277,7 @@ void EndDrag();
 
 Implements the behavior of the Win32 message [RB_GETBANDBORDERS](/windows/win32/Controls/rb-getbandborders), as described in the Windows SDK.
 
-```
+```cpp
 void GetBandBorders(
     UINT uBand,
     LPRECT prc) const;
@@ -289,7 +289,7 @@ void GetBandBorders(
 Zero-based index of the band for which the borders will be retrieved.
 
 *prc*<br/>
-A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the band borders. If the rebar control has the RBS_BANDBORDERS style, each member of this structure will receive the number of pixels, on the corresponding side of the band, that constitute the border. If the rebar control does not have the RBS_BANDBORDERS style, only the left member of this structure receives valid information. For a description of rebar control styles, see [Rebar Control Styles](/windows/win32/Controls/rebar-control-styles) in the Windows SDK.
+A pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that will receive the band borders. If the rebar control has the RBS_BANDBORDERS style, each member of this structure will receive the number of pixels, on the corresponding side of the band, that constitute the border. If the rebar control does not have the RBS_BANDBORDERS style, only the left member of this structure receives valid information. For a description of rebar control styles, see [Rebar Control Styles](/windows/win32/Controls/rebar-control-styles) in the Windows SDK.
 
 ## <a name="getbandcount"></a> CReBarCtrl::GetBandCount
 
@@ -329,7 +329,7 @@ Nonzero if successful; otherwise zero.
 
 Retrieves the margins of the band.
 
-```
+```cpp
 void GetBandMargins(PMARGINS pMargins);
 ```
 
@@ -484,7 +484,7 @@ BOOL GetRect(
 Zero-based index of a band in the rebar control.
 
 *prc*<br/>
-A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the bounds of the rebar band.
+A pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that will receive the bounds of the rebar band.
 
 ### Return Value
 
@@ -623,7 +623,7 @@ Nonzero if successful; otherwise zero.
 
 Resizes a band in a rebar control to its largest size.
 
-```
+```cpp
 void MaximizeBand(UINT uBand);
 ```
 
@@ -644,7 +644,7 @@ Implements the behavior of the Win32 message [RB_MAXIMIZEBAND](/windows/win32/Co
 
 Resizes a band in a rebar control to its smallest size.
 
-```
+```cpp
 void MinimizeBand(UINT uBand);
 ```
 
@@ -687,7 +687,7 @@ Nonzero if successful; otherwise zero.
 
 Implements the behavior of the Win32 message [RB_PUSHCHEVRON](/windows/win32/Controls/rb-pushchevron), as described in the Windows SDK.
 
-```
+```cpp
 void PushChevron(
     UINT uBand,
     LPARAM lAppValue);
@@ -705,7 +705,7 @@ An application defined 32-bit value. See *lAppValue* in [RB_PUSHCHEVRON](/window
 
 Resizes a band in a rebar control to its ideal size.
 
-```
+```cpp
 void RestoreBand(UINT uBand);
 ```
 
@@ -831,7 +831,7 @@ See this topic for more information about when to set the background color, and 
 
 Sets the color scheme for the buttons on a rebar control.
 
-```
+```cpp
 void SetColorScheme(const COLORSCHEME* lpcs);
 ```
 
@@ -956,7 +956,7 @@ It is provided to support text color flexibility in a rebar control.
 
 Associates a tool tip control with a rebar control.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pToolTip);
 ```
 

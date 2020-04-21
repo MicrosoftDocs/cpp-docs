@@ -85,7 +85,7 @@ A reference to the list control associated with the view.
 
 Removes the specified image list from the list view.
 
-```
+```cpp
 void RemoveImageList(int nImageList);
 ```
 

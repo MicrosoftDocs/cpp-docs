@@ -171,7 +171,7 @@ The number of elements in the hash table.
 
 Retrieves the map element at `rNextPosition`, then updates `rNextPosition` to refer to the next element in the map.
 
-```
+```cpp
 void GetNextAssoc(
     POSITION& rNextPosition,
     KEY& rKey,
@@ -249,7 +249,7 @@ See the example for [CMap::SetAt](#setat).
 
 Initializes the hash table.
 
-```
+```cpp
 void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE);
 ```
 
@@ -426,7 +426,7 @@ Call this method to search for a map element with a key that exactly matches the
 
 Removes all the values from this map by calling the global helper function `DestructElements`.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -470,7 +470,7 @@ See the example for [CMap::SetAt](#setat).
 
 The primary means to insert an element in a map.
 
-```
+```cpp
 void SetAt(ARG_KEY key, ARG_VALUE newValue);
 ```
 

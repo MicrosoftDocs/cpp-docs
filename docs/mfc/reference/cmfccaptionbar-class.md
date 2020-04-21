@@ -159,7 +159,7 @@ Returns FALSE unless overridden.
 
 Enables or disables the button on the caption bar.
 
-```
+```cpp
 void EnableButton(BOOL bEnable=TRUE);
 ```
 
@@ -405,7 +405,7 @@ Override this method in a `CMFCCaptionBar` derived class to customize the appear
 
 Removes the bitmap image from the caption bar.
 
-```
+```cpp
 void RemoveBitmap();
 ```
 
@@ -413,7 +413,7 @@ void RemoveBitmap();
 
 Removes the button from the caption bar.
 
-```
+```cpp
 void RemoveButton();
 ```
 
@@ -425,7 +425,7 @@ The layout of caption bar elements are adjusted automatically.
 
 Removes the icon from the caption bar.
 
-```
+```cpp
 void RemoveIcon();
 ```
 
@@ -433,7 +433,7 @@ void RemoveIcon();
 
 Removes the text label from the caption bar.
 
-```
+```cpp
 void RemoveText();
 ```
 
@@ -441,7 +441,7 @@ void RemoveText();
 
 Sets the bitmap image for the caption bar.
 
-```
+```cpp
 void SetBitmap(
     HBITMAP hBitmap,
     COLORREF clrTransparent,
@@ -489,7 +489,7 @@ The bitmap is aligned as specified by the *bmpAlignment* parameter.  This parame
 
 Sets the border size of the caption bar.
 
-```
+```cpp
 void SetBorderSize(int nSize);
 ```
 
@@ -502,7 +502,7 @@ void SetBorderSize(int nSize);
 
 Sets the button for the caption bar.
 
-```
+```cpp
 void SetButton(
     LPCTSTR lpszLabel,
     UINT uiCmdUI,
@@ -528,7 +528,7 @@ TRUE if the button displays a drop down arrow, FALSE otherwise.
 
 Specifies whether the button stays pressed.
 
-```
+```cpp
 void SetButtonPressed(BOOL bPresed=TRUE);
 ```
 
@@ -541,7 +541,7 @@ TRUE if the button keeps its pressed state, FALSE otherwise.
 
 Sets the tooltip for the button.
 
-```
+```cpp
 void SetButtonToolTip(
     LPCTSTR lpszToolTip,
     LPCTSTR lpszDescription=NULL);
@@ -559,7 +559,7 @@ void SetButtonToolTip(
 
 Sets the border style of the caption bar.
 
-```
+```cpp
 void SetFlatBorder(BOOL bFlat=TRUE);
 ```
 
@@ -572,7 +572,7 @@ void SetFlatBorder(BOOL bFlat=TRUE);
 
 Sets the icon for a caption bar.
 
-```
+```cpp
 void SetIcon(
     HICON hIcon,
     BarElementAlignment iconAlignment=ALIGN_RIGHT);
@@ -604,7 +604,7 @@ The icon is aligned according to the *iconAlignment* parameter. It can be one of
 
 Sets the tooltip for the image in the caption bar.
 
-```
+```cpp
 void SetImageToolTip(
     LPCTSTR lpszToolTip,
     LPCTSTR lpszDescription=NULL);
@@ -622,7 +622,7 @@ void SetImageToolTip(
 
 Sets the distance between the edge of the caption bar element and the edge of the caption bar control.
 
-```
+```cpp
 void SetMargin(int nMargin);
 ```
 
@@ -635,7 +635,7 @@ void SetMargin(int nMargin);
 
 Sets the text label for the caption bar.
 
-```
+```cpp
 void SetText(
     const CString& strText,
     BarElementAlignment textAlignment=ALIGN_RIGHT);

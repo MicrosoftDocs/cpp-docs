@@ -74,7 +74,7 @@ If you do not provide a shortcut key when you create a `CMFCAccleratorKey`, use 
 
 Translates the ACCEL structure to its associated string value.
 
-```
+```cpp
 void Format(CString& str) const;
 ```
 
@@ -91,7 +91,7 @@ This method retrieves the string format of the associated shortcut key. You can 
 
 Sets the shortcut key for the [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object.
 
-```
+```cpp
 void SetAccelerator(LPACCEL lpAccel);
 ```
 

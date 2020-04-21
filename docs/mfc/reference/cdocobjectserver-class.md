@@ -63,7 +63,7 @@ For further information on DocObjects, see [CDocObjectServerItem](../../mfc/refe
 
 Call this function to activate (but not show) the document object server.
 
-```
+```cpp
 void ActivateDocObject();
 ```
 

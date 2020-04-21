@@ -1050,7 +1050,7 @@ TRUE if the method handles the event; otherwise, FALSE.
 
 Deletes all items from the list and edit boxes.
 
-```
+```cpp
 void RemoveAllItems();
 ```
 
@@ -1189,7 +1189,7 @@ By default, combo box buttons are aligned to the top.
 
 Sets the shortcut menu resource ID for the combo box button.
 
-```
+```cpp
 void SetContextMenuID(UINT uiResID);
 ```
 
@@ -1202,7 +1202,7 @@ void SetContextMenuID(UINT uiResID);
 
 Sets the height of the list box when it is dropped down.
 
-```
+```cpp
 void SetDropDownHeight(int nHeight);
 ```
 
@@ -1253,7 +1253,7 @@ For a list of toolbar button styles see [ToolBar Control Styles](../../mfc/refer
 
 Sets the text in the edit box of the combo box button.
 
-```
+```cpp
 void SetText(LPCTSTR lpszText);
 ```
 

@@ -71,7 +71,7 @@ For more information on the `COleVariant` class and its use in OLE automation, s
 
 Call this function to attach the given [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) object to the current `COleVariant` object.
 
-```
+```cpp
 void Attach(VARIANT& varSrc);
 ```
 
@@ -191,7 +191,7 @@ For more information on SCODE, see [Structure of COM Error Codes](/windows/win32
 
 Converts the type of variant value in this `COleVariant` object.
 
-```
+```cpp
 void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 ```
 
@@ -211,7 +211,7 @@ For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-varian
 
 Clears the `VARIANT`.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -242,7 +242,7 @@ For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-varian
 
 Retrieves a byte array from an existing variant array
 
-```
+```cpp
 void GetByteArrayFromVariantArray(CByteArray& bytes);
 ```
 
@@ -360,7 +360,7 @@ The `COleVariant` insertion (**\<\<**) operator supports diagnostic dumping and 
 
 Sets the string to a particular type.
 
-```
+```cpp
 void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 ```
 

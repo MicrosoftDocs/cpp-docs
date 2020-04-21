@@ -45,7 +45,7 @@ This interface is implemented by [CComHeap](../../atl/reference/ccomheap-class.m
 
 Call this method to allocate a block of memory.
 
-```
+```cpp
 void* Allocate(size_t nBytes) throw();
 ```
 
@@ -70,7 +70,7 @@ For an example, see the [IAtlMemMgr Overview](../../atl/reference/iatlmemmgr-cla
 
 Call this method to free a block of memory.
 
-```
+```cpp
 void Free(void* p) throw();
 ```
 
@@ -112,7 +112,7 @@ For an example, see the [IAtlMemMgr Overview](../../atl/reference/iatlmemmgr-cla
 
 Call this method to reallocate memory allocated by this memory manager.
 
-```
+```cpp
 void* Reallocate(void* p, size_t nBytes) throw();
 ```
 

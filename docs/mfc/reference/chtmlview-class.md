@@ -194,7 +194,7 @@ Points to a null-terminated character string that represents the window name.
 Specifies the window style attributes. By default, the WS_VISIBLE and WS_CHILD Windows styles are set.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
 
 *pParentWnd*<br/>
 A pointer to the parent window of the control.
@@ -273,7 +273,7 @@ A standard HRESULT value. For a complete listing of possible values, see [IOleCo
 
 Call this member function to execute a command in the WebBrowser or Internet Explorer.
 
-```
+```cpp
 void ExecWB(
     OLECMDID cmdID,
     OLECMDEXECOPT cmdexecopt,
@@ -764,7 +764,7 @@ The current width of the window, in pixels.
 
 Navigates backward one item in the history list.
 
-```
+```cpp
 void GoBack();
 ```
 
@@ -776,7 +776,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Navigates forward one item in the history list.
 
-```
+```cpp
 void GoForward();
 ```
 
@@ -784,7 +784,7 @@ void GoForward();
 
 Navigates to the current home or start page specified in the Internet Explorer Internet Options dialog box or the Internet Properties dialog box, accessed from the Control Panel.
 
-```
+```cpp
 void GoHome();
 ```
 
@@ -796,7 +796,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Navigates to the current search page, as specified in the Internet Explorer Internet Options dialog box or the Internet Properties dialog box, accessed from the Control Panel.
 
-```
+```cpp
 void GoSearch();
 ```
 
@@ -833,7 +833,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to navigate to the resource identified by a URL.
 
-```
+```cpp
 void Navigate(
     LPCTSTR URL,
     DWORD dwFlags = 0,
@@ -871,7 +871,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to navigate to the resource identified by a URL, or to the file identified by a full path.
 
-```
+```cpp
 void Navigate2(
     LPITEMIDLIST pIDL,
     DWORD dwFlags = 0,
@@ -1629,7 +1629,7 @@ This allows the object control host window to behave the same way the Internet E
 
 Call this member function to set the property associated with a given object.
 
-```
+```cpp
 void PutProperty(
     LPCTSTR lpszProperty,
     const VARIANT& vtValue);
@@ -1739,7 +1739,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Reloads the URL or file that the web browser is currently displaying.
 
-```
+```cpp
 void Refresh();
 ```
 
@@ -1753,7 +1753,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Reloads the file that Internet Explorer is currently displaying.
 
-```
+```cpp
 void Refresh2(int nLevel);
 ```
 
@@ -1772,7 +1772,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to show or hide the Internet Explorer object's address bar.
 
-```
+```cpp
 void SetAddressBar(BOOL bNewValue);
 ```
 
@@ -1789,7 +1789,7 @@ Applies to Internet Explorer. If you use this call with a WebBrowser control, it
 
 Call this member function to set Internet Explorer to either full-screen or normal window mode.
 
-```
+```cpp
 void SetFullScreen(BOOL bNewValue);
 ```
 
@@ -1808,7 +1808,7 @@ Applies to Internet Explorer. If you use this call with a WebBrowser control, it
 
 Call this member function to set the height of the Internet Explorer main window.
 
-```
+```cpp
 void SetHeight(long nNewValue);
 ```
 
@@ -1825,7 +1825,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Sets the horizontal position of the Internet Explorer main window.
 
-```
+```cpp
 void SetLeft(long nNewValue);
 ```
 
@@ -1838,7 +1838,7 @@ The screen coordinate of the left edge of the main window.
 
 Call this member function to show or hide the Internet Explorer menu bar.
 
-```
+```cpp
 void SetMenuBar(BOOL bNewValue);
 ```
 
@@ -1855,7 +1855,7 @@ Applies to Internet Explorer. If you use this call with a WebBrowser control, it
 
 Call this member function to set a value indicating whether the WebBrowser control is currently operating in offline mode.
 
-```
+```cpp
 void SetOffline(BOOL bNewValue);
 ```
 
@@ -1874,7 +1874,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to set a value indicating whether the WebBrowser control is registered as a top-level browser for target name resolution.
 
-```
+```cpp
 void SetRegisterAsBrowser(BOOL bNewValue);
 ```
 
@@ -1893,7 +1893,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to set a value indicating whether the WebBrowser control is registered as a drop target for navigation.
 
-```
+```cpp
 void SetRegisterAsDropTarget(BOOL bNewValue);
 ```
 
@@ -1910,7 +1910,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to set a value indicating whether any dialog boxes can be shown.
 
-```
+```cpp
 void SetSilent(BOOL bNewValue);
 ```
 
@@ -1927,7 +1927,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to display the status bar.
 
-```
+```cpp
 void SetStatusBar(BOOL bNewValue);
 ```
 
@@ -1944,7 +1944,7 @@ Applies to Internet Explorer. If you use this call with a WebBrowser control, it
 
 Call this member function to set a value indicating whether the WebBrowser control is in theater mode.
 
-```
+```cpp
 void SetTheaterMode(BOOL bNewValue);
 ```
 
@@ -1963,7 +1963,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to show or hide the Internet Explorer toolbar.
 
-```
+```cpp
 void SetToolBar(int nNewValue);
 ```
 
@@ -1980,7 +1980,7 @@ Applies to Internet Explorer. If you use this call with a WebBrowser control, it
 
 Call this member function to set the distance between the internal top edge of the WebBrowser control and the top edge of its container
 
-```
+```cpp
 void SetTop(long nNewValue);
 ```
 
@@ -1997,7 +1997,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Call this member function to set the visibility state of the WebBrowser control.
 
-```
+```cpp
 void SetVisible(BOOL bNewValue);
 ```
 
@@ -2014,7 +2014,7 @@ Applies to Internet Explorer and WebBrowser.
 
 Sets the width of the Internet Explorer main window.
 
-```
+```cpp
 void SetWidth(long nNewValue);
 ```
 
@@ -2027,7 +2027,7 @@ The width, in pixels, of the Internet Explorer main window.
 
 Call this member function to cancel any pending navigation or download operation and stop any dynamic page elements, such as background sounds and animations.
 
-```
+```cpp
 void Stop();
 ```
 

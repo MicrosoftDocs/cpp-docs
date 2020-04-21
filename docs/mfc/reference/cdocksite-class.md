@@ -124,7 +124,7 @@ virtual void AdjustLayout();
 
 ## <a name="aligndocksite"></a> CDockSite::AlignDockSite
 
-```
+```cpp
 void AlignDockSite(
     const CRect& rectToAlignBy,
     CRect& rectResult,
@@ -593,7 +593,7 @@ virtual void RemovePane(
 
 ## <a name="removerow"></a> CDockSite::RemoveRow
 
-```
+```cpp
 void RemoveRow(CDockingPanesRow* pRow);
 ```
 
@@ -635,7 +635,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 ## <a name="resizedocksite"></a> CDockSite::ResizeDockSite
 
-```
+```cpp
 void ResizeDockSite(
     int nNewWidth,
     int nNewHeight);
@@ -706,7 +706,7 @@ Call this method to show or hide docked panes. Normally, you do not have to call
 
 ## <a name="showrow"></a> CDockSite::ShowRow
 
-```
+```cpp
 void ShowRow(
     CDockingPanesRow* pRow,
     BOOL bShow,
@@ -725,7 +725,7 @@ void ShowRow(
 
 ## <a name="swaprows"></a> CDockSite::SwapRows
 
-```
+```cpp
 void SwapRows(
     CDockingPanesRow* pFirstRow,
     CDockingPanesRow* pSecondRow);

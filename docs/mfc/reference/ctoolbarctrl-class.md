@@ -339,7 +339,7 @@ You should not pass a `CString` object to this function since it is not possible
 
 Resizes the entire toolbar control.
 
-```
+```cpp
 void AutoSize();
 ```
 
@@ -443,7 +443,7 @@ virtual BOOL Create(
 Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described under **Remarks**.
 
 *rect*<br/>
-Optionally specifies the toolbar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
+Optionally specifies the toolbar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 *pParentWnd*<br/>
 Specifies the toolbar control's parent window. It must not be NULL.
@@ -497,7 +497,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described in the **Remarks** section of [Create](#create).
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -529,7 +529,7 @@ You must call [Create](#create) to make the toolbar usable.
 
 Displays the Customize Toolbar dialog box.
 
-```
+```cpp
 void Customize();
 ```
 
@@ -856,7 +856,7 @@ This member function implements the behavior of the Win32 message [TB_GETIMAGELI
 
 Retrieves the current insertion mark for the toolbar.
 
-```
+```cpp
 void GetInsertMark(TBINSERTMARK* ptbim) const;
 ```
 
@@ -901,7 +901,7 @@ BOOL GetItemRect(
 Zero-based index of the button for which to retrieve information.
 
 *lpRect*<br/>
-Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that receives the coordinates of the bounding rectangle.
+Address of a [RECT](/windows/win32/api/windef/ns-windef-rect) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that receives the coordinates of the bounding rectangle.
 
 ### Return Value
 
@@ -948,7 +948,7 @@ The maximum number of text rows displayed on a toolbar button.
 
 Retrieves the metrics of the `CToolBarCtrl` object.
 
-```
+```cpp
 void GetMetrics(LPTBMETRICS ptbm) const;
 ```
 
@@ -1018,7 +1018,7 @@ BOOL GetRect(
 The button identifier.
 
 *lpRect*<br/>
-A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to receive the bounding rectangle information.
+A pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure to receive the bounding rectangle information.
 
 ### Return Value
 
@@ -1141,7 +1141,7 @@ int HitTest(LPPOINT ppt) const;
 ### Parameters
 
 *ppt*<br/>
-A pointer to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that contains the x-coordinate of the hit test in the `x` member and the y-coordinate of the hit test in the `y` member. The coordinates are relative to the toolbar's client area.
+A pointer to a [POINT](/windows/win32/api/windef/ns-windef-point) structure that contains the x-coordinate of the hit test in the `x` member and the y-coordinate of the hit test in the `y` member. The coordinates are relative to the toolbar's client area.
 
 ### Return Value
 
@@ -1244,7 +1244,7 @@ BOOL InsertMarkHitTest(
 ### Parameters
 
 *ppt*<br/>
-A pointer to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that contains the hit test coordinates, relative to the client area of the toolbar.
+A pointer to a [POINT](/windows/win32/api/windef/ns-windef-point) structure that contains the hit test coordinates, relative to the client area of the toolbar.
 
 *ptbim*<br/>
 A pointer to a [TBINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-tbinsertmark) structure that receives the insertion mark information.
@@ -1383,7 +1383,7 @@ Consider calling [GetState](#getstate) if you want to retrieve more than one but
 
 Loads bitmaps into a toolbar control's image list.
 
-```
+```cpp
 void LoadImages(
     int iBitmapID,
     HINSTANCE hinst);
@@ -1546,7 +1546,7 @@ The following code example replaces the bitmap for the standard toolbar with a d
 
 Restores the state of the toolbar control from the location in the registry specified by the parameters.
 
-```
+```cpp
 void RestoreState(
     HKEY hKeyRoot,
     LPCTSTR lpszSubKey,
@@ -1576,7 +1576,7 @@ Points to a string containing the name of the value to retrieve. If a value with
 
 Saves the state of the toolbar control in the location in the registry specified by the parameters.
 
-```
+```cpp
 void SaveState(
     HKEY hKeyRoot,
     LPCTSTR lpszSubKey,
@@ -1699,7 +1699,7 @@ The button size must always be at least as large as the bitmap size it encloses.
 
 Specifies the size of the `TBBUTTON` structure.
 
-```
+```cpp
 void SetButtonStructSize(int nSize);
 ```
 
@@ -1766,7 +1766,7 @@ Returns nonzero if successful; otherwise zero.
 
 Sets the color scheme of the current toolbar control.
 
-```
+```cpp
 void SetColorScheme(const COLORSCHEME* lpColorScheme);
 ```
 
@@ -1944,7 +1944,7 @@ Nonzero if successful; otherwise zero.
 
 Sets the current insertion mark for the toolbar.
 
-```
+```cpp
 void SetInsertMark(TBINSERTMARK* ptbim);
 ```
 
@@ -1999,7 +1999,7 @@ Nonzero if successful; otherwise zero.
 
 Sets the metrics of the `CToolBarCtrl` object.
 
-```
+```cpp
 void SetMetrics(LPTBMETRICS ptbm);
 ```
 
@@ -2016,7 +2016,7 @@ This member function emulates the functionality of the [TB_SETMETRICS](/windows/
 
 Sets the owner window for the toolbar control.
 
-```
+```cpp
 void SetOwner(CWnd* pWnd);
 ```
 
@@ -2095,7 +2095,7 @@ The following code example sets the pressed image list to be the same as the def
 
 Asks the toolbar control to resize itself to the requested number of rows.
 
-```
+```cpp
 void SetRows(
     int nRows,
     BOOL bLarger,
@@ -2111,7 +2111,7 @@ Requested number of rows.
 Tells whether to use more rows or fewer rows if the toolbar cannot be resized to the requested number of rows.
 
 *lpRect*<br/>
-Points to the [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the new bounding rectangle of the toolbar.
+Points to the [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/windows/win32/api/windef/ns-windef-rect) structure that will receive the new bounding rectangle of the toolbar.
 
 ### Remarks
 
@@ -2157,7 +2157,7 @@ This function is especially handy if you want to set more than one of the button
 
 Sets the styles for a toolbar control.
 
-```
+```cpp
 void SetStyle(DWORD dwStyle);
 ```
 
@@ -2170,7 +2170,7 @@ A DWORD containing a combination of [toolbar control styles](/windows/win32/Cont
 
 Associates a tool tip control with a toolbar control.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pTip);
 ```
 

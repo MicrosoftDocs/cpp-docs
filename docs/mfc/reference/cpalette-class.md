@@ -67,7 +67,7 @@ For more information on using `CPalette`, see [Graphic Objects](../../mfc/graphi
 
 Replaces entries in the logical palette attached to the `CPalette` object.
 
-```
+```cpp
 void AnimatePalette(
     UINT nStartIndex,
     UINT nNumEntries,

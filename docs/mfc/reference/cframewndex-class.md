@@ -136,7 +136,7 @@ The following example demonstrates how to inherit a class from the `CFrameWndEx`
 
 Adjusts the layout of the OLE client item and the frame's client area.
 
-```
+```cpp
 void ActiveItemRecalcLayout();
 ```
 
@@ -200,7 +200,7 @@ virtual void DelayUpdateFrameMenu(HMENU hMenuAlt);
 
 Docks the specified pane to the frame window.
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID=0,
@@ -318,7 +318,7 @@ The *dwDockStyle* parameter can have one of the following values:
 
 Shows or hides the main menu in a full screen mode.
 
-```
+```cpp
 void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```
 
@@ -331,7 +331,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 
 Enables the full-screen mode for the frame window.
 
-```
+```cpp
 void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```
 
@@ -352,7 +352,7 @@ If you want to keep the main menu on the screen, call [CFrameWndEx::EnableFullSc
 
 Enables or disables the loading of the docking state.
 
-```
+```cpp
 void EnableLoadDockState(BOOL bEnable=TRUE);
 ```
 
@@ -365,7 +365,7 @@ void EnableLoadDockState(BOOL bEnable=TRUE);
 
 Enables or disables the automatic handling of the pane menu.
 
-```
+```cpp
 void EnablePaneMenu(
     BOOL bEnable,
     UINT uiCustomizeCmd,
@@ -1532,7 +1532,7 @@ afx_msg void OnSizing(
 
 Called by the framework when the system colors change.
 
-```
+```cpp
 void OnSysColorChange();
 ```
 
@@ -1783,7 +1783,7 @@ This method is called when the size of the frame window has changed or when cont
 
 Unregisters a pane and removes it from the docking manager.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pControlBar,
     BOOL bDestroy,
@@ -1819,7 +1819,7 @@ The [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md) handle
 
 Restores the docking layout to the docking state stored in the registry.
 
-```
+```cpp
 void SetDockState(const CDockState& state);
 ```
 
@@ -1832,7 +1832,7 @@ The docking state. This parameter is ignored.
 
 Sets the print preview frame window.
 
-```
+```cpp
 void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```
 
@@ -1847,7 +1847,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 
 Inserts user-defined commands into a toolbar menu.
 
-```
+```cpp
 void SetupToolbarMenu(
     CMenu& menu,
     const UINT uiViewUserToolbarCmdFirst,
@@ -1873,7 +1873,7 @@ The framework stores user-defined commands in a list. Use *uiViewUserToolbarCmdF
 
 Switches the main frame between full-screen mode and regular mode.
 
-```
+```cpp
 void ShowFullScreen();
 ```
 
@@ -1881,7 +1881,7 @@ void ShowFullScreen();
 
 Shows or hides the specified pane.
 
-```
+```cpp
 void ShowPane(
     CBasePane* pBar,
     BOOL bShow,
@@ -1907,7 +1907,7 @@ void ShowPane(
 
 Called by the framework to update the window frame caption.
 
-```
+```cpp
 void UpdateCaption();
 ```
 

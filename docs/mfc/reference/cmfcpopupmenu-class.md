@@ -213,7 +213,7 @@ A MENUAREA_TYPE parameter can have any one of the following values.
 
 ## <a name="closemenu"></a> CMFCPopupMenu::CloseMenu
 
-```
+```cpp
 void CloseMenu(BOOL bSetFocusToBar = FALSE);
 ```
 
@@ -326,7 +326,7 @@ virtual BOOL DefaultMouseClickOnClose() const;
 
 Initializes the logo for a pop-up menu.
 
-```
+```cpp
 void EnableMenuLogo(
     int iLogoSize,
     LOGO_LOCATION nLogoLocation = MENU_LOGO_LEFT);
@@ -365,7 +365,7 @@ If you enable sound, the framework calls the [PlaySound](/windows/win32/api/shob
 
 ## <a name="enableresize"></a> CMFCPopupMenu::EnableResize
 
-```
+```cpp
 void EnableResize(CSize sizeMinResize);
 ```
 
@@ -377,7 +377,7 @@ void EnableResize(CSize sizeMinResize);
 
 ## <a name="enablescrolling"></a> CMFCPopupMenu::EnableScrolling
 
-```
+```cpp
 void EnableScrolling(BOOL = TRUE);
 ```
 
@@ -389,7 +389,7 @@ void EnableScrolling(BOOL = TRUE);
 
 ## <a name="enablevertresize"></a> CMFCPopupMenu::EnableVertResize
 
-```
+```cpp
 void EnableVertResize(int nMinResize);
 ```
 
@@ -927,7 +927,7 @@ TRUE if a pop-up menu is visible; otherwise FALSE.
 
 ## <a name="moveto"></a> CMFCPopupMenu::MoveTo
 
-```
+```cpp
 void MoveTo(const CPoint& pt);
 ```
 
@@ -1026,7 +1026,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 Clears all the items from a pop-up menu.
 
-```
+```cpp
 void RemoveAllItems();
 ```
 
@@ -1097,7 +1097,7 @@ See [CMFCPopupMenu::GetAnimationType](#getanimationtype) for a list of valid val
 
 ## <a name="setautodestroy"></a> CMFCPopupMenu::SetAutoDestroy
 
-```
+```cpp
 void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```
 
@@ -1111,7 +1111,7 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 
 Sets the default command for the pop-up menu.
 
-```
+```cpp
 void SetDefaultItem(UINT uiCmd);
 ```
 
@@ -1162,7 +1162,7 @@ When you call this method, it sets a global flag in your application. This flag 
 
 Set the maximum width for the pop-up menu.
 
-```
+```cpp
 void SetMaxWidth(int iMaxWidth);
 ```
 
@@ -1177,7 +1177,7 @@ If the text associated with a menu command will not fit in the maximum width, it
 
 ## <a name="setmessagewnd"></a> CMFCPopupMenu::SetMessageWnd
 
-```
+```cpp
 void SetMessageWnd(CWnd* pMsgWnd);
 ```
 
@@ -1189,7 +1189,7 @@ void SetMessageWnd(CWnd* pMsgWnd);
 
 ## <a name="setparentribbonelement"></a> CMFCPopupMenu::SetParentRibbonElement
 
-```
+```cpp
 void SetParentRibbonElement(CMFCRibbonBaseElement* pElem);
 ```
 
@@ -1201,7 +1201,7 @@ void SetParentRibbonElement(CMFCRibbonBaseElement* pElem);
 
 ## <a name="setquickcustomizetype"></a> CMFCPopupMenu::SetQuickCustomizeType
 
-```
+```cpp
 void SetQuickCustomizeType(QUICK_CUSTOMIZE_TYPE Type);
 ```
 
@@ -1213,7 +1213,7 @@ void SetQuickCustomizeType(QUICK_CUSTOMIZE_TYPE Type);
 
 ## <a name="setquickmode"></a> CMFCPopupMenu::SetQuickMode
 
-```
+```cpp
 void SetQuickMode();
 ```
 
@@ -1223,7 +1223,7 @@ void SetQuickMode();
 
 Sets the menu alignment for pop-up menus.
 
-```
+```cpp
 void SetRightAlign(BOOL bRightAlign = TRUE);
 ```
 
@@ -1257,7 +1257,7 @@ This is a global option for all the pop-up menus in an application. If it is ena
 
 Forces the pop-up menu to display all commands.
 
-```
+```cpp
 void ShowAllCommands();
 ```
 
@@ -1267,7 +1267,7 @@ This is not a global setting and affects only the current pop-up menu.
 
 ## <a name="triggerresize"></a> CMFCPopupMenu::TriggerResize
 
-```
+```cpp
 void TriggerResize();
 ```
 
@@ -1294,7 +1294,7 @@ This method is useful when pop-up menus are displayed over animated controls or 
 
 Updates the shadow for the pop-up menu.
 
-```
+```cpp
 void UpdateShadow(LPRECT lprectScreen = NULL);
 ```
 

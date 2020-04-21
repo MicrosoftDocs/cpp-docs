@@ -65,7 +65,7 @@ The following example demonstrates how to use various methods in the `CMFCRibbon
 
 Adds a button to a group.
 
-```
+```cpp
 void AddButton(CMFCRibbonBaseElement* pButton);
 ```
 
@@ -78,7 +78,7 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 
 Adds a list of buttons to a group.
 
-```
+```cpp
 void AddButtons(
     const CList<CMFCRibbonBaseElement*,CMFCRibbonBaseElement*>& lstButtons);
 ```
@@ -214,7 +214,7 @@ virtual void OnDrawImage(
 
 Removes all buttons from the `CMFCRibbonButtonsGroup` object.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -224,7 +224,7 @@ void RemoveAll();
 
 Assigns images to the group of ribbon buttons.
 
-```
+```cpp
 void SetImages(
     CMFCToolBarImages* pImages,
     CMFCToolBarImages* pHotImages,

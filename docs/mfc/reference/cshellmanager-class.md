@@ -182,7 +182,7 @@ In most cases, you do not have to create a `CShellManager` directly. By default,
 
 Deletes an item list.
 
-```
+```cpp
 void FreeItem(LPITEMIDLIST pidl);
 ```
 

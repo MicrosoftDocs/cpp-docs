@@ -79,7 +79,7 @@ Adds a ribbon element to the panel. Elements added using this method will be loc
 
 Adds a text string to the recent files list menu.
 
-```
+```cpp
 void AddRecentFilesList(
     LPCTSTR lpszLabel,
     int nWidth = 300);
@@ -99,7 +99,7 @@ Specifies the width, in pixels, of the recent files list panel.
 
 Adds a ribbon element to the bottom pane of the ribbon application panel.
 
-```
+```cpp
 void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 ```
 
@@ -114,7 +114,7 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 
 Adds a ribbon element to the right pane of the application button panel.
 
-```
+```cpp
 void AddToRight(
     CMFCRibbonBaseElement* pElem,
     int nWidth = 300);

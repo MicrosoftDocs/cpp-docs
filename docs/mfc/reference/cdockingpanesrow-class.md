@@ -201,7 +201,7 @@ virtual BOOL Create();
 
 ## <a name="expandstretchedpanes"></a> CDockingPanesRow::ExpandStretchedPanes
 
-```
+```cpp
 void ExpandStretchedPanes();
 ```
 
@@ -209,7 +209,7 @@ void ExpandStretchedPanes();
 
 ## <a name="expandstretchedpanesrect"></a> CDockingPanesRow::ExpandStretchedPanesRect
 
-```
+```cpp
 void ExpandStretchedPanesRect();
 ```
 
@@ -217,7 +217,7 @@ void ExpandStretchedPanesRect();
 
 ## <a name="fixupvirtualrects"></a> CDockingPanesRow::FixupVirtualRects
 
-```
+```cpp
 void FixupVirtualRects(
     bool bMoveBackToVirtualRect,
     CPane* pBarToExclude = NULL);
@@ -259,7 +259,7 @@ virtual void GetAvailableSpace(CRect& rect);
 
 ## <a name="getclientrect"></a> CDockingPanesRow::GetClientRect
 
-```
+```cpp
 void GetClientRect(CRect& rect) const;
 ```
 
@@ -291,7 +291,7 @@ int GetExtraSpace() const;
 
 ## <a name="getgroupfrompane"></a> CDockingPanesRow::GetGroupFromPane
 
-```
+```cpp
 void GetGroupFromPane(
     CPane* pBar,
     CObList& lst);
@@ -391,7 +391,7 @@ virtual int GetVisibleCount();
 
 ## <a name="getwindowrect"></a> CDockingPanesRow::GetWindowRect
 
-```
+```cpp
 void GetWindowRect(CRect& rect) const;
 ```
 
@@ -469,7 +469,7 @@ virtual void Move(int nOffset);
 
 ## <a name="movepane"></a> CDockingPanesRow::MovePane
 
-```
+```cpp
 void MovePane(
     CPane* pControlBar,
     CPoint ptOffset,
@@ -527,7 +527,7 @@ virtual void OnResizePane(CBasePane* pControlBar);
 
 ## <a name="redrawall"></a> CDockingPanesRow::RedrawAll
 
-```
+```cpp
 void RedrawAll();
 ```
 
@@ -615,7 +615,7 @@ virtual int ResizeByPaneDivider(int /*ignored*/);
 
 ## <a name="screentoclient"></a> CDockingPanesRow::ScreenToClient
 
-```
+```cpp
 void ScreenToClient(CRect& rect) const;
 ```
 
@@ -627,7 +627,7 @@ void ScreenToClient(CRect& rect) const;
 
 ## <a name="setextra"></a> CDockingPanesRow::SetExtra
 
-```
+```cpp
 void SetExtra(
     int nExtraSpace,
     AFX_ROW_ALIGNMENT rowExtraAlign);

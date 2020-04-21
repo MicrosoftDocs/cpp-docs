@@ -78,7 +78,7 @@ The ribbon application button is a special button that is located in the upper-l
 
 Assigns an image to the application button.
 
-```
+```cpp
 void SetImage(UINT uiBmpResID);
 void SetImage(HBITMAP hBmp);
 ```

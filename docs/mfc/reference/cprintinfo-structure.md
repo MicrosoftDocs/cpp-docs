@@ -273,7 +273,7 @@ The framework uses "Page %u\nPages %u-%u\n" as the default value. If you want a 
 
 Call this function to specify the number of the last page of the document.
 
-```
+```cpp
 void SetMaxPage(UINT nMaxPage);
 ```
 
@@ -294,7 +294,7 @@ This value is stored in the `CPrintDialog` object referenced by the `m_pPD` memb
 
 Call this function to specify the number of the first page of the document.
 
-```
+```cpp
 void SetMinPage(UINT nMinPage);
 ```
 

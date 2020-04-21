@@ -87,7 +87,7 @@ The destructor. Called when an animation group is being destroyed.
 
 A helper that adds keyframes to a storyboard.
 
-```
+```cpp
 void AddKeyframes(IUIAnimationStoryboard* pStoryboard, BOOL bAddDeep);
 ```
 
@@ -103,7 +103,7 @@ Specifies whether this method should add to the storyboard keyframes that depend
 
 A helper that adds transitions to a storyboard.
 
-```
+```cpp
 void AddTransitions(
     IUIAnimationStoryboard* pStoryboard,
     BOOL bDependOnKeyframes);
@@ -145,7 +145,7 @@ This method creates an internal storyboard, creates and applies transitions and 
 
 Applies transitions to animation objects.
 
-```
+```cpp
 void ApplyTransitions();
 ```
 
@@ -278,7 +278,7 @@ ATL::CComPtr<IUIAnimationStoryboard> m_pStoryboard;
 
 Removes and optionally destroys all keyframes that belong to an animation group.
 
-```
+```cpp
 void RemoveKeyframes();
 ```
 
@@ -290,7 +290,7 @@ If m_bAutodestroyKeyframes member is TRUE then keyframes are removed and destroy
 
 Removes transitions from animation objects that belong to an animation group.
 
-```
+```cpp
 void RemoveTransitions();
 ```
 
@@ -326,7 +326,7 @@ Call this function to schedule an animation at the specified time. You must call
 
 Directs all animation objects that belong to group automatically destroy transitions.
 
-```
+```cpp
 void SetAutodestroyTransitions(BOOL bAutoDestroy = TRUE);
 ```
 

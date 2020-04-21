@@ -65,7 +65,7 @@ The following example demonstrates how to construct a `CMFCCustomColorsPropertyP
 
 Sets the color components of the property page.
 
-```
+```cpp
 void Setup(
     BYTE R,
     BYTE G,

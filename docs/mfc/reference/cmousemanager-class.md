@@ -160,7 +160,7 @@ This method searches through views registered by using [CMouseManager::AddView](
 
 Retrieves a list of all the registered view names.
 
-```
+```cpp
 void GetViewNames(CStringList& listOfNames) const;
 ```
 
@@ -223,7 +223,7 @@ In most cases, you do not have to call this function directly. It is called as a
 
 Associates a custom command with a view that is first registered with the mouse manager.
 
-```
+```cpp
 void SetCommandForDblClk(
     int iViewId,
     UINT uiCmd);

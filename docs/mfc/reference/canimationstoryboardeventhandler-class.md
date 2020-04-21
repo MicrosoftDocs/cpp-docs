@@ -124,7 +124,7 @@ S_OK if the method succeeds; otherwise E_FAIL.
 
 Stores a pointer to animation controller to route events.
 
-```
+```cpp
 void SetAnimationController(CAnimationController* pAnimationController);
 ```
 

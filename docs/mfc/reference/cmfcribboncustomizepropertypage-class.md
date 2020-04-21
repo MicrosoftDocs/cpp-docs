@@ -69,7 +69,7 @@ The following example demonstrates how to construct a `CMFCRibbonCustomizeProper
 
 Adds a custom category to the **Commands** combo box.
 
-```
+```cpp
 void AddCustomCategory(
     LPCTSTR lpszName,
     const CList<UINT, UINT>& lstIDS);

@@ -1036,7 +1036,7 @@ For more information, see [Windows Sockets: Socket Notifications](../../mfc/wind
 
 Assigns a new value to a `CAsyncSocket` object.
 
-```
+```cpp
 void operator=(const CAsyncSocket& rSrc);
 ```
 

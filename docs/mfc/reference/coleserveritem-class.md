@@ -99,7 +99,7 @@ For more information about servers and related topics, see the article [Servers:
 
 Call this function to place the presentation and conversion formats for the OLE item in the specified `COleDataSource` object.
 
-```
+```cpp
 void AddOtherClipboardData(COleDataSource* pDataSource);
 ```
 
@@ -134,7 +134,7 @@ Flag indicating whether the object can be deleted when a link to it is released.
 
 Call this function to copy the OLE item to the Clipboard.
 
-```
+```cpp
 void CopyToClipboard(BOOL bIncludeLink = FALSE);
 ```
 
@@ -199,7 +199,7 @@ For more information about how drag delay information is stored in either the re
 
 Call this function to fill the specified [COleDataSource](../../mfc/reference/coledatasource-class.md) object with all the data that would be copied to the Clipboard if you called [CopyToClipboard](#copytoclipboard) (the same data would also be transferred if you called [DoDragDrop](#dodragdrop)).
 
-```
+```cpp
 void GetClipboardData(
     COleDataSource* pDataSource,
     BOOL bIncludeLink = FALSE,
@@ -263,7 +263,7 @@ This allows access to the server document that you passed as an argument to the 
 
 Call this function to get the CF_EMBEDSOURCE data for an OLE item.
 
-```
+```cpp
 void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 ```
 
@@ -325,7 +325,7 @@ For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgme
 
 Call this function to get the CF_OBJECTDESCRIPTOR data for an OLE item.
 
-```
+```cpp
 void GetObjectDescriptorData(
     LPPOINT lpOffset,
     LPSIZE lpSize,
@@ -399,7 +399,7 @@ The default implementation of [OnSetExtent](#onsetextent) sets this member.
 
 Call this function after the linked item has been changed.
 
-```
+```cpp
 void NotifyChanged(DVASPECT nDrawAspect = DVASPECT_CONTENT);
 ```
 
@@ -906,7 +906,7 @@ The default implementation calls [UpdateLink](../../mfc/reference/coleclientitem
 
 Call this function when you create a linked item to set its name.
 
-```
+```cpp
 void SetItemName(LPCTSTR lpszItemName);
 ```
 

@@ -76,7 +76,7 @@ The CAnimationColor class encapsulates three CAnimationVariable objects and can 
 
 Adds transitions for Red, Green and Blue components.
 
-```
+```cpp
 void AddTransition(
     CBaseTransition* pRTransition,
     CBaseTransition* pGTransition,
@@ -264,7 +264,7 @@ operator COLORREF();
 
 Assigns color to CAnimationColor.
 
-```
+```cpp
 void operator=(COLORREF color);
 ```
 
@@ -281,7 +281,7 @@ It's recommended to do that before animation start, because this operator calls 
 
 Sets default value.
 
-```
+```cpp
 void SetDefaultValue(COLORREF color);
 ```
 

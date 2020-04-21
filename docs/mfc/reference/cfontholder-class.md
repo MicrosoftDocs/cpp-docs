@@ -142,7 +142,7 @@ The version with no parameters returns a handle to a font sized correctly for th
 
 Initializes a `CFontHolder` object.
 
-```
+```cpp
 void InitializeFont(
     const FONTDESC* pFontDesc = NULL,
     LPDISPATCH pFontDispAmbient = NULL);
@@ -176,7 +176,7 @@ LPFONT m_pFont;
 
 Retrieves information on the physical font represented by the `CFontHolder` object.
 
-```
+```cpp
 void QueryTextMetrics(LPTEXTMETRIC lptm);
 ```
 
@@ -189,7 +189,7 @@ A pointer to a [TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetricw) str
 
 This function disconnects the `CFontHolder` object from its `IFont` interface.
 
-```
+```cpp
 void ReleaseFont();
 ```
 
@@ -227,7 +227,7 @@ See [GetFontHandle](#getfonthandle) for a discussion of the *cyLogical* and *cyH
 
 Releases any existing font and connects the `CFontHolder` object to an `IFont` interface.
 
-```
+```cpp
 void SetFont(LPFONT pNewFont);
 ```
 

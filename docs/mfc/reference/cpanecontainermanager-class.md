@@ -152,7 +152,7 @@ virtual BOOL AddPaneContainerManagerToDockablePane(
 
 ## <a name="addpanestolist"></a> CPaneContainerManager::AddPanesToList
 
-```
+```cpp
 void AddPanesToList(
     CObList* plstControlBars,
     CObList* plstSliders);
@@ -167,7 +167,7 @@ void AddPanesToList(
 
 ## <a name="addpanetolist"></a> CPaneContainerManager::AddPaneToList
 
-```
+```cpp
 void AddPaneToList(CDockablePane* pControlBarToAdd);
 ```
 
@@ -196,7 +196,7 @@ virtual CDockablePane* AddPaneToRecentPaneContainer(
 
 ## <a name="calcrects"></a> CPaneContainerManager::CalcRects
 
-```
+```cpp
 void CalcRects(
     CRect& rectOriginal,
     CRect& rectInserted,
@@ -550,7 +550,7 @@ virtual BOOL IsRootPaneContainerVisible() const;
 
 ## <a name="notifypanedivider"></a> CPaneContainerManager::NotifyPaneDivider
 
-```
+```cpp
 void NotifyPaneDivider();
 ```
 
@@ -619,7 +619,7 @@ virtual CDockablePane* PaneFromPoint(
 
 ## <a name="releaseemptypanecontainers"></a> CPaneContainerManager::ReleaseEmptyPaneContainers
 
-```
+```cpp
 void ReleaseEmptyPaneContainers();
 ```
 
@@ -627,7 +627,7 @@ void ReleaseEmptyPaneContainers();
 
 ## <a name="removeallpanesandpanedividers"></a> CPaneContainerManager::RemoveAllPanesAndPaneDividers
 
-```
+```cpp
 void RemoveAllPanesAndPaneDividers();
 ```
 
@@ -635,7 +635,7 @@ void RemoveAllPanesAndPaneDividers();
 
 ## <a name="removenonvalidpanes"></a> CPaneContainerManager::RemoveNonValidPanes
 
-```
+```cpp
 void RemoveNonValidPanes();
 ```
 
@@ -710,7 +710,7 @@ virtual void ResizePaneContainers(
 
 ## <a name="serialize"></a> CPaneContainerManager::Serialize
 
-```
+```cpp
 void Serialize(CArchive& ar);
 ```
 
@@ -722,7 +722,7 @@ void Serialize(CArchive& ar);
 
 ## <a name="setdefaultpanedividerforpanes"></a> CPaneContainerManager::SetDefaultPaneDividerForPanes
 
-```
+```cpp
 void SetDefaultPaneDividerForPanes(CPaneDivider* pSlider);
 ```
 
@@ -734,7 +734,7 @@ void SetDefaultPaneDividerForPanes(CPaneDivider* pSlider);
 
 ## <a name="setpanecontainerrtc"></a> CPaneContainerManager::SetPaneContainerRTC
 
-```
+```cpp
 void SetPaneContainerRTC(CRuntimeClass* pContainerRTC);
 ```
 

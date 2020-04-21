@@ -83,7 +83,7 @@ For more information, see the [REOBJECT](/windows/win32/api/richole/ns-richole-r
 
 Call this function to synchronize the device aspect, [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect), of this `CRichEditCntrltem` to that specified by *reo*.
 
-```
+```cpp
 void SyncToRichEditObject(REOBJECT& reo);
 ```
 

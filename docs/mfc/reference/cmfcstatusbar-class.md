@@ -195,7 +195,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 Enables or disables the handling of mouse double-clicks on the status bar.
 
-```
+```cpp
 void EnablePaneDoubleClick(BOOL bEnable=TRUE);
 ```
 
@@ -212,7 +212,7 @@ If the status bar is enabled to process double clicks, Windows sends the WM_COMM
 
 Display a progress bar on the specified pane.
 
-```
+```cpp
 void EnablePaneProgressBar(
     int nIndex,
     long nTotal=100,
@@ -302,7 +302,7 @@ UINT GetItemID(int nIndex) const;
 
 ## <a name="getitemrect"></a> CMFCStatusBar::GetItemRect
 
-```
+```cpp
 void GetItemRect(
     int nIndex,
     LPRECT lpRect) const;
@@ -317,7 +317,7 @@ void GetItemRect(
 
 ## <a name="getpaneinfo"></a> CMFCStatusBar::GetPaneInfo
 
-```
+```cpp
 void GetPaneInfo(
     int nIndex,
     UINT& nID,
@@ -364,7 +364,7 @@ UINT GetPaneStyle(int nIndex) const;
 
 ## <a name="getpanetext"></a> CMFCStatusBar::GetPaneText
 
-```
+```cpp
 void GetPaneText(
     int nIndex,
     CString& s) const;
@@ -419,7 +419,7 @@ The tooltip text of the status-bar pane that *nIndex* specifies. Otherwise, the 
 
 Invalidate the status bar pane and redraw its content.
 
-```
+```cpp
 void InvalidatePaneContent(int nIndex);
 ```
 
@@ -472,7 +472,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 
 ## <a name="setdrawextendedarea"></a> CMFCStatusBar::SetDrawExtendedArea
 
-```
+```cpp
 void SetDrawExtendedArea(BOOL bSet = TRUE);
 ```
 
@@ -503,7 +503,7 @@ BOOL SetIndicators(
 
 Assigns an animation to the specified pane.
 
-```
+```cpp
 void SetPaneAnimation(
     int nIndex,
     HIMAGELIST hImageList,
@@ -533,7 +533,7 @@ If you want to disable the current animation, call `SetPaneAnimation` with `hIma
 
 Sets the background color of the status bar pane.
 
-```
+```cpp
 void SetPaneBackgroundColor(
     int nIndex,
     COLORREF clrBackground=(COLORREF)-1,
@@ -555,7 +555,7 @@ void SetPaneBackgroundColor(
 
 Set the icon of the status bar pane.
 
-```
+```cpp
 void SetPaneIcon(
     int nIndex,
     HICON hIcon,
@@ -593,7 +593,7 @@ If there is any running animation that [CMFCStatusBar::SetPaneAnimation](#setpan
 
 ## <a name="setpaneinfo"></a> CMFCStatusBar::SetPaneInfo
 
-```
+```cpp
 void SetPaneInfo(
     int nIndex,
     UINT nID,
@@ -614,7 +614,7 @@ void SetPaneInfo(
 
 Set the current progress indicator of the progress bar for the specified pane.
 
-```
+```cpp
 void SetPaneProgress(
     int nIndex,
     long nCurr,
@@ -640,7 +640,7 @@ To use this function for the given pane, you must call [CMFCStatusBar::EnablePan
 
 ## <a name="setpanestyle"></a> CMFCStatusBar::SetPaneStyle
 
-```
+```cpp
 void SetPaneStyle(
     int nIndex,
     UINT nStyle);
@@ -676,7 +676,7 @@ virtual BOOL SetPaneText(
 
 Sets the text color of the specified pane.
 
-```
+```cpp
 void SetPaneTextColor(
     int nIndex,
     COLORREF clrText=(COLORREF)-1,
@@ -698,7 +698,7 @@ void SetPaneTextColor(
 
 Set the width of the status bar pane.
 
-```
+```cpp
 void SetPaneWidth(
     int nIndex,
     int cx);
@@ -716,7 +716,7 @@ void SetPaneWidth(
 
 Set the tooltip text of a status bar pane.
 
-```
+```cpp
 void SetTipText(
     int nIndex,
     LPCTSTR pszTipText);

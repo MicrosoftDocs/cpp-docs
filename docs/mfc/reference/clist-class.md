@@ -531,7 +531,7 @@ Nonzero if this list is empty; otherwise 0.
 
 Removes all the elements from this list and frees the associated memory.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -547,7 +547,7 @@ No error is generated if the list is already empty.
 
 Removes the specified element from this list.
 
-```
+```cpp
 void RemoveAt(POSITION position);
 ```
 
@@ -618,7 +618,7 @@ You must ensure that the list is not empty before calling `RemoveTail`. If the l
 
 A variable of type POSITION is a key for the list.
 
-```
+```cpp
 void SetAt(POSITION pos, ARG_TYPE newElement);
 ```
 

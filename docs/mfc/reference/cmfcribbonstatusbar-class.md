@@ -88,7 +88,7 @@ The following example demonstrates how to use various methods in the `CMFCRibbon
 
 Adds a dynamic element to the ribbon status bar.
 
-```
+```cpp
 void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 ```
 
@@ -105,7 +105,7 @@ Unlike regular elements, dynamic elements are not customizable and the customize
 
 Adds a new ribbon element to the ribbon status bar.
 
-```
+```cpp
 void AddElement(
     CMFCRibbonBaseElement* pElement,
     LPCTSTR lpszLabel,
@@ -127,7 +127,7 @@ void AddElement(
 
 Adds a ribbon element to the extended area of the ribbon status bar.
 
-```
+```cpp
 void AddExtendedElement(
     CMFCRibbonBaseElement* pElement,
     LPCTSTR lpszLabel,
@@ -153,7 +153,7 @@ The extended area is on the right side of the status bar control.
 
 Adds a separator to the ribbon status bar.
 
-```
+```cpp
 void AddSeparator();
 ```
 
@@ -425,7 +425,7 @@ virtual void RecalcLayout();
 
 Removes all elements from the ribbon status bar.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -450,7 +450,7 @@ TRUE if an element with the specified *uiID* is removed. FALSE otherwise.
 
 Enables or disables the information mode for the ribbon status bar.
 
-```
+```cpp
 void SetInformation(LPCTSTR lpszInfo);
 ```
 

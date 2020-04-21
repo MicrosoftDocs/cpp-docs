@@ -276,7 +276,7 @@ Use this member function to create "views" that are not `CView`-derived within a
 
 Causes a control bar to be docked to the frame window.
 
-```
+```cpp
 void DockControlBar(
     CControlBar* pBar,
     UINT nDockBarID = 0,
@@ -312,7 +312,7 @@ The control bar will be docked to one of the sides of the frame window specified
 
 Call this function to enable dockable control bars in a frame window.
 
-```
+```cpp
 void EnableDocking(DWORD dwDockStyle);
 ```
 
@@ -355,7 +355,7 @@ virtual void EndModalState();
 
 Call this function to cause a control bar to not be docked to the frame window.
 
-```
+```cpp
 void FloatControlBar(
     CControlBar* pBar,
     CPoint point,
@@ -462,7 +462,7 @@ The *nID* parameter refers to the unique identifier passed to the `Create` metho
 
 Call this member function to store state information about the frame window's control bars in a `CDockState` object.
 
-```
+```cpp
 void GetDockState(CDockState& state) const;
 ```
 
@@ -567,7 +567,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing 
 
 Call `IntitialUpdateFrame` after creating a new frame with `Create`.
 
-```
+```cpp
 void InitialUpdateFrame(
     CDocument* pDoc,
     BOOL bMakeVisible);
@@ -640,7 +640,7 @@ If you call `LoadFrame` to create the frame window, the framework loads an accel
 
 Call this function to restore the settings of each control bar owned by the frame window.
 
-```
+```cpp
 void LoadBarState(LPCTSTR lpszProfileName);
 ```
 
@@ -906,7 +906,7 @@ static AFX_DATA const CRect rectDefault;
 
 Call this function to store information about each control bar owned by the frame window.
 
-```
+```cpp
 void SaveBarState(LPCTSTR lpszProfileName) const;
 ```
 
@@ -923,7 +923,7 @@ This information can be read from the initialization file using [LoadBarState](#
 
 Designates the specified view to be the active view for Rich Preview.
 
-```
+```cpp
 void SetActivePreviewView(CView* pViewNew);
 ```
 
@@ -938,7 +938,7 @@ A pointer to a view to be activated.
 
 Call this member function to set the active view.
 
-```
+```cpp
 void SetActiveView(
     CView* pViewNew,
     BOOL bNotify = TRUE);
@@ -960,7 +960,7 @@ The framework will call this function automatically as the user changes the focu
 
 Call this member function to apply state information stored in a `CDockState` object to the frame window's control bars.
 
-```
+```cpp
 void SetDockState(const CDockState& state);
 ```
 
@@ -1019,7 +1019,7 @@ This method affects the state of menus in applications written for Windows Vista
 
 Call this function to place a string in the status-bar pane that has an ID of 0.
 
-```
+```cpp
 void SetMessageText(LPCTSTR lpszText);
 void SetMessageText(UINT nID);
 ```
@@ -1040,7 +1040,7 @@ This is typically the leftmost, and longest, pane of the status bar.
 
 Sets the current position for the Windows 7 progress bar displayed on the taskbar.
 
-```
+```cpp
 void SetProgressBarPosition(int nProgressPos);
 ```
 
@@ -1055,7 +1055,7 @@ Specifies the position to set. It must be within the range set by `SetProgressBa
 
 Sets the range for the Windows 7 progress bar displayed on the taskbar.
 
-```
+```cpp
 void SetProgressBarRange(
     int nRangeMin,
     int nRangeMax);
@@ -1075,7 +1075,7 @@ Maximal value.
 
 Sets the type and state of the progress indicator displayed on a taskbar button.
 
-```
+```cpp
 void SetProgressBarState(TBPFLAG tbpFlags);
 ```
 
@@ -1121,7 +1121,7 @@ TRUE if successful; FALSE if OS version is less than Windows 7 or if an error oc
 
 Sets the title of the window object.
 
-```
+```cpp
 void SetTitle(LPCTSTR lpszTitle);
 ```
 
@@ -1134,7 +1134,7 @@ A pointer to a character string containing the title of the window object.
 
 Call this member function to show or hide the control bar.
 
-```
+```cpp
 void ShowControlBar(
     CControlBar* pBar,
     BOOL bShow,
@@ -1156,7 +1156,7 @@ If TRUE, delay showing the control bar. If FALSE, show the control bar immediate
 
 Call this member function to show all windows that are descendants of the `CFrameWnd` object.
 
-```
+```cpp
 void ShowOwnedWindows(BOOL bShow);
 ```
 

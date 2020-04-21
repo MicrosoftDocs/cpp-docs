@@ -92,7 +92,7 @@ In debug builds, an assertion failure will occur if the [CHeapPtrBase::m_pData](
 
 Call this method to take ownership of an existing pointer.
 
-```
+```cpp
 void Attach(T* pData) throw();
 ```
 
@@ -139,7 +139,7 @@ Releases ownership of a pointer, sets the [CHeapPtrBase::m_pData](#m_pdata) memb
 
 Call this method to delete an object pointed to by a `CHeapPtrBase`.
 
-```
+```cpp
 void Free() throw();
 ```
 

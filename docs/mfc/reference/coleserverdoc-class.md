@@ -108,7 +108,7 @@ For more information on servers, see the article [Servers: Implementing a Server
 
 Activates the associated DocObject document.
 
-```
+```cpp
 void ActivateDocObject();
 ```
 
@@ -275,7 +275,7 @@ It calls [COleServerDoc::OnGetEmbeddedItem](#ongetembeddeditem), a virtual funct
 
 Call the `GetItemClipRect` member function to get the clipping-rectangle coordinates of the item that is being edited in place.
 
-```
+```cpp
 void GetItemClipRect(LPRECT lpClipRect) const;
 ```
 
@@ -294,7 +294,7 @@ Drawing should not occur outside the clipping rectangle. Usually, drawing is aut
 
 Call the `GetItemPosition` member function to get the coordinates of the item being edited in place.
 
-```
+```cpp
 void GetItemPosition(LPRECT lpPosRect) const;
 ```
 
@@ -385,7 +385,7 @@ Nonzero if the `COleServerDoc` object is active in place; otherwise 0.
 
 Call this function to notify all linked items connected to the document that the document has changed.
 
-```
+```cpp
 void NotifyChanged();
 ```
 
@@ -400,7 +400,7 @@ Typically, you call this function after the user changes some global attribute s
 
 Call this function to notify the container(s) that the document has been closed.
 
-```
+```cpp
 void NotifyClosed();
 ```
 
@@ -412,7 +412,7 @@ When the user chooses the Close command from the File menu, `NotifyClosed` is ca
 
 Call this function after the user renames the server document.
 
-```
+```cpp
 void NotifyRename(LPCTSTR lpszNewName);
 ```
 
@@ -429,7 +429,7 @@ When the user chooses the Save As command from the File menu, `NotifyRename` is 
 
 Call this function after the user saves the server document.
 
-```
+```cpp
 void NotifySaved();
 ```
 
@@ -771,7 +771,7 @@ The default implementation calls the [COleServerDoc::NotifySaved](#notifysaved) 
 
 Call this member function to have the container application change the item's position.
 
-```
+```cpp
 void RequestPositionChange(LPCRECT lpPosRect);
 ```
 
@@ -788,7 +788,7 @@ This function is usually called (in conjunction with `UpdateAllItems`) when the 
 
 Call this function to tell the container application to save the embedded object.
 
-```
+```cpp
 void SaveEmbedding();
 ```
 
@@ -821,7 +821,7 @@ Positive values indicate scrolling down and to the right; negative values indica
 
 Call this function to notify all linked items connected to the document that the document has changed.
 
-```
+```cpp
 void UpdateAllItems(
     COleServerItem* pSender,
     LPARAM lHint = 0L,

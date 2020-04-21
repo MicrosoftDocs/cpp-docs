@@ -53,7 +53,7 @@ The following example demonstrates how to construct an object of the `CMFCRibbon
 
 Adds a command to the default state for the Quick Access Toolbar.
 
-```
+```cpp
 void AddCommand(
     UINT uiCmd,
     BOOL bIsVisible=TRUE);
@@ -75,7 +75,7 @@ Adding a command to the CMFCRibbonQuickAccessToolBarDefaultState accomplishes th
 
 Copies the properties of one Quick Access Toolbar to another.
 
-```
+```cpp
 void CopyFrom(const CMFCRibbonQuickAccessToolBarDefaultState& src);
 ```
 
@@ -104,7 +104,7 @@ By default, the list of commands that the new instance of [CMFRibbonQuickAccessT
 
 Clears the list of default commands in the Quick Access Toolbar.
 
-```
+```cpp
 void RemoveAll();
 ```
 

@@ -584,7 +584,7 @@ Nonzero if the text was set; 0 if the `CMFCToolBarEditBoxButton` control with th
 
 Specifies the resource ID of the shortcut menu that is associated with the button.
 
-```
+```cpp
 void SetContextMenuID(UINT uiResID);
 ```
 

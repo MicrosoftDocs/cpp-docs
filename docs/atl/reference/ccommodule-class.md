@@ -432,7 +432,7 @@ Removes the class object. This method        is only available to EXEs.
 
 As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.
 
-```
+```cpp
 void Term() throw();
 ```
 

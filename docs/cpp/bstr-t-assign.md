@@ -13,7 +13,7 @@ Copies a `BSTR` into the `BSTR` wrapped by a **_**`bstr_t`.
 
 ## Syntax
 
-```
+```cpp
 void Assign(
    BSTR s
 );

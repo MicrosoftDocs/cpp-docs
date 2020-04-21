@@ -112,7 +112,7 @@ virtual BOOL Create(
 Specifies the combination of combo box styles applied to the combo box. See **Remarks** below for more information about styles.
 
 *rect*<br/>
-A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, which is the position and size of the combo box.
+A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/windows/win32/api/windef/ns-windef-rect) structure, which is the position and size of the combo box.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the combo box (usually a `CDialog`). It must not be NULL.
@@ -172,7 +172,7 @@ Specifies the extended style of the control being created. For a list of extende
 The combo box control's style. See [Create](#create) for a list of styles.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.

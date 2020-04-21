@@ -94,7 +94,7 @@ An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value th
 
 Sets the bitmap image for the picture area.
 
-```
+```cpp
 void SetBitmap(CBitmap* pBitmap);
 ```
 
@@ -113,7 +113,7 @@ If *pBitmap* is NULL, this method sets the size of the modifiable paint area to 
 
 Sets the current drawing color.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -134,7 +134,7 @@ The drawing color is used by the image editor dialog box for all drawing modes e
 
 Sets the current drawing mode.
 
-```
+```cpp
 void SetMode(IMAGE_EDIT_MODE mode);
 ```
 

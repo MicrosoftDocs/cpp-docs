@@ -36,7 +36,7 @@ This approach is simple to understand, and you work with familiar classes. The f
 
 The RFX functions for `CString` and `CByteArray` have an additional argument which lets you override the default size of allocated memory to hold the retrieved value for the data column. Note the nMaxLength argument in the following function declarations:
 
-```
+```cpp
 void AFXAPI RFX_Text(CFieldExchange* pFX,
     const char *szName,
     CString& value,

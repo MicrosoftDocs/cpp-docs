@@ -545,7 +545,7 @@ Returns the current number of columns in the splitter. For a static splitter, th
 
 Returns information on the specified column.
 
-```
+```cpp
 void GetColumnInfo(
     int col,
     int& cxCur,
@@ -601,7 +601,7 @@ Returns the current number of rows in the splitter window. For a static splitter
 
 Returns information on the specified row.
 
-```
+```cpp
 void GetRowInfo(
     int row,
     int& cyCur,
@@ -822,7 +822,7 @@ Specify pane by providing either row and column, **or** by providing *pWnd*.
 
 Call to set the specified column information.
 
-```
+```cpp
 void SetColumnInfo(
     int col,
     int cxIdeal,
@@ -854,7 +854,7 @@ When the framework displays the splitter window, it lays out the panes in column
 
 Call to set the specified row information.
 
-```
+```cpp
 void SetRowInfo(
     int row,
     int cyIdeal,
@@ -882,7 +882,7 @@ When the framework displays the splitter window, it lays out the panes in column
 
 Specifies the new scroll style for the splitter window's shared scroll-bar support.
 
-```
+```cpp
 void SetScrollStyle(DWORD dwStyle);
 ```
 

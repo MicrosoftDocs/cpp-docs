@@ -363,7 +363,7 @@ virtual void SetButtonStyle(
 
 Sets the row offset of the popup menu bar.
 
-```
+```cpp
 void SetOffset(int iOffset);
 ```
 
@@ -378,7 +378,7 @@ void SetOffset(int iOffset);
 
 Starts the timer for a specified delayed popup menu button.
 
-```
+```cpp
 void StartPopupMenuTimer(
     CMFCToolBarMenuButton* pMenuButton,
     int nDelayFactor = 1);

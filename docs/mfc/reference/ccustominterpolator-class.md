@@ -146,7 +146,7 @@ Basic implementation always returns TRUE. Return FALSE from overridden implement
 
 Initializes duration and final value.
 
-```
+```cpp
 void Init(
     UI_ANIMATION_SECONDS duration,
     DOUBLE finalValue);

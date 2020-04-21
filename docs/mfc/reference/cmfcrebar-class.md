@@ -180,7 +180,7 @@ virtual BOOL CanFloat() const;
 
 ## <a name="enabledocking"></a> CMFCReBar::EnableDocking
 
-```
+```cpp
 void EnableDocking(DWORD dwDockStyle);
 ```
 

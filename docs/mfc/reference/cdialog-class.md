@@ -253,7 +253,7 @@ If the user clicks one of the pushbuttons in the dialog box, such as OK or Cance
 
 Call this member function to terminate a modal dialog box.
 
-```
+```cpp
 void EndDialog(int nResult);
 ```
 
@@ -296,7 +296,7 @@ This is usually an OK button.
 
 Moves the focus to the specified control in the dialog box.
 
-```
+```cpp
 void GotoDlgCtrl(CWnd* pWndCtrl);
 ```
 
@@ -356,7 +356,7 @@ Dialog boxes that contain ActiveX controls require additional information provid
 
 Call to convert the dialog-box units of a rectangle to screen units.
 
-```
+```cpp
 void MapDialogRect(LPRECT lpRect) const;
 ```
 
@@ -377,7 +377,7 @@ The `MapDialogRect` member function replaces the dialog-box units in *lpRect* wi
 
 Moves the focus to the next control in the dialog box.
 
-```
+```cpp
 void NextDlgCtrl() const;
 ```
 
@@ -480,7 +480,7 @@ The dialog editor typically sets the dialog-box font as part of the dialog-box t
 
 Sets the focus to the previous control in the dialog box.
 
-```
+```cpp
 void PrevDlgCtrl() const;
 ```
 
@@ -492,7 +492,7 @@ If the focus is at the first control in the dialog box, it moves to the last con
 
 Changes the default pushbutton control for a dialog box.
 
-```
+```cpp
 void SetDefID(UINT nID);
 ```
 
@@ -505,7 +505,7 @@ Specifies the ID of the pushbutton control that will become the default.
 
 Sets a context-sensitive help ID for the dialog box.
 
-```
+```cpp
 void SetHelpID(UINT nIDR);
 ```
 

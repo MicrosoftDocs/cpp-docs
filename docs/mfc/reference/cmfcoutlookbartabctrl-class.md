@@ -89,7 +89,7 @@ The following example demonstrates how to initialize a `CMFCOutlookBarTabCtrl` o
 
 Adds a Windows control as a new tab in the Outlook bar.
 
-```
+```cpp
 void AddControl(
     CWnd* pWndCtrl,
     LPCTSTR lpszName,
@@ -231,7 +231,7 @@ Call this function to enable or disable in-place editing of text  labels on tab 
 
 Called by the framework to enable scroll handles that allow the user to scroll through buttons on the Outlook bar pane.
 
-```
+```cpp
 void EnableScrollButtons(
     BOOL bEnable = TRUE,
     BOOL bIsUp = TRUE,
@@ -370,7 +370,7 @@ The visual effect of setting the active tab depends on whether you have enabled 
 
 Sets the border size of the Outlook tab control.
 
-```
+```cpp
 void SetBorderSize(int nBorderSize);
 ```
 
@@ -387,7 +387,7 @@ Sets the new border size and recalculates the outlook window layout.
 
 Sets the alignment of the text labels on the tab buttons of the Outlook bar.
 
-```
+```cpp
 void SetPageButtonTextAlign(
     UINT uiAlign,
     BOOL bRedraw=TRUE);
@@ -449,7 +449,7 @@ This method should not be called if not in Microsoft Office 2003 mode. For more 
 
 ## <a name="setvisiblepagebuttons"></a> CMFCOutlookBarTabCtrl::SetVisiblePageButtons
 
-```
+```cpp
 void SetVisiblePageButtons(int nVisiblePageButtons);
 ```
 

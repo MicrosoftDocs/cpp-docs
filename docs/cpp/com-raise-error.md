@@ -13,7 +13,7 @@ Throws a [_com_error](../cpp/com-error-class.md) in response to a failure.
 
 ## Syntax
 
-```
+```cpp
 void __stdcall _com_raise_error(
    HRESULT hr,
    IErrorInfo* perrinfo = 0

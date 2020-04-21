@@ -22,7 +22,7 @@ Call this function in your application object's `InitInstance` function to enabl
 
 ### Syntax
 
-```
+```cpp
 void AfxEnableControlContainer( );
 ```
 

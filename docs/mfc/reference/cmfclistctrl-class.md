@@ -64,7 +64,7 @@ The following example demonstrates how to use various methods in the `CMFCListCt
 
 Marks the sorted columns with a different background color.
 
-```
+```cpp
 void EnableMarkSortedColumn(
     BOOL bMark = TRUE,
     BOOL bRedraw = TRUE);
@@ -86,7 +86,7 @@ void EnableMarkSortedColumn(
 
 Enables sorting the rows of data in the list control by multiple columns.
 
-```
+```cpp
 void EnableMultipleSort(BOOL bEnable = TRUE);
 ```
 
@@ -247,7 +247,7 @@ By default, this method calls `GetTextColor` regardless of input parameters. The
 
 Removes a sort column from the list of sorted columns.
 
-```
+```cpp
 void RemoveSortColumn(int iColumn);
 ```
 
@@ -264,7 +264,7 @@ This method removes a sort column from the header control. It calls [CMFCHeaderC
 
 Sets the current sorted column and the sort order.
 
-```
+```cpp
 void SetSortColumn(
     int iColumn,
     BOOL bAscending = TRUE,

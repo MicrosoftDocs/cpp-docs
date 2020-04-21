@@ -127,7 +127,7 @@ If *lpRect* is NULL, the framework puts the pane in the default location on the 
 
 Retrieves the size of the dock site in screen coordinates.
 
-```
+```cpp
 void GetAlignRect(CRect& rect) const;
 ```
 
@@ -158,7 +158,7 @@ When a `CMFCAutoHideBar` is docked at a `CAutoHideDockSite`, it should not occup
 
 Sets the margin on the left side of the docking bar.
 
-```
+```cpp
 void SetOffsetLeft(int nOffset);
 ```
 
@@ -175,7 +175,7 @@ void SetOffsetLeft(int nOffset);
 
 Sets the margin on the right side of the docking bar.
 
-```
+```cpp
 void SetOffsetRight(int nOffset);
 ```
 
@@ -211,7 +211,7 @@ The default implementation does not use *rectNewClientArea*. It redraws the pane
 
 Calls [CMFCAutoHideBar::UnSetAutoHideMode](../../mfc/reference/cmfcautohidebar-class.md#unsetautohidemode) for objects on the dock site.
 
-```
+```cpp
 void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 ```
 

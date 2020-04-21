@@ -110,7 +110,7 @@ Call this method for each [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-
 
 Customizes the appearance of the tooltip control for the specified Windows control types.
 
-```
+```cpp
 void SetTooltipParams(
     UINT nTypes,
     CRuntimeClass* pRTC=RUNTIME_CLASS(CMFCToolTipCtrl),
@@ -180,7 +180,7 @@ The value of *nType* must be the same value as the *nType* parameter of [CToolti
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-```
+```cpp
 void UpdateTooltips();
 ```
 

@@ -198,7 +198,7 @@ Nonzero if successful; otherwise 0.
 
 Call this function to resize a bitmap button to the size of the bitmap.
 
-```
+```cpp
 void SizeToContent();
 ```
 

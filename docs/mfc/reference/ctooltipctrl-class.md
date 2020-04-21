@@ -90,7 +90,7 @@ For more information on using `CToolTipCtrl`, see [Controls](../../mfc/controls-
 
 Call this function to activate or deactivate a tool tip control.
 
-```
+```cpp
 void Activate(BOOL bActivate);
 ```
 
@@ -136,7 +136,7 @@ Pointer to the window that contains the tool.
 ID of the string resource that contains the text for the tool.
 
 *lpRectTool*<br/>
-Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure containing coordinates of the tool's bounding rectangle. The coordinates are relative to the upper-left corner of the client area of the window identified by *pWnd*.
+Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure containing coordinates of the tool's bounding rectangle. The coordinates are relative to the upper-left corner of the client area of the window identified by *pWnd*.
 
 *nIDTool*<br/>
 ID of the tool.
@@ -174,7 +174,7 @@ BOOL AdjustRect(
 ### Parameters
 
 *lprc*<br/>
-Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that holds either a tool tip window rectangle or a text display rectangle.
+Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that holds either a tool tip window rectangle or a text display rectangle.
 
 *bLarger*<br/>
 If TRUE, *lprc* is used to specify a text-display rectangle, and it receives the corresponding window rectangle. If FALSE, *lprc* is used to specify a window rectangle, and it receives the corresponding text display rectangle.
@@ -278,7 +278,7 @@ You must call `Create` after constructing the object.
 
 Removes the tool specified by *pWnd* and *nIDTool* from the collection of tools supported by a tool tip control.
 
-```
+```cpp
 void DelTool(
     CWnd* pWnd,
     UINT_PTR nIDTool = 0);
@@ -372,14 +372,14 @@ This member function implements the behavior of the Win32 message [TTM_GETDELAYT
 
 Retrieves the top, left, bottom, and right margins set for a tool tip window.
 
-```
+```cpp
 void GetMargin(LPRECT lprc) const;
 ```
 
 ### Parameters
 
 *lprc*<br/>
-Address of a `RECT` structure that will receive the margin information. The members of the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure do not define a bounding rectangle. For the purpose of this message, the structure members are interpreted as follows:
+Address of a `RECT` structure that will receive the margin information. The members of the [RECT](/windows/win32/api/windef/ns-windef-rect) structure do not define a bounding rectangle. For the purpose of this message, the structure members are interpreted as follows:
 
 |Member|Representation|
 |------------|--------------------|
@@ -412,7 +412,7 @@ This member function implements the behavior of the Win32 message [TTM_GETMAXTIP
 
 Retrieves the text that a tool tip control maintains for a tool.
 
-```
+```cpp
 void GetText(
     CString& str,
     CWnd* pWnd,
@@ -470,7 +470,7 @@ This member function implements the behavior of the Win32 message [TTM_GETTIPTEX
 
 Retrieves the title of the current tooltip control.
 
-```
+```cpp
 void GetTitle(PTTGETTITLE pttgt) const;
 ```
 
@@ -582,7 +582,7 @@ typedef struct _TT_HITTESTINFO { // tthti
 
 Removes a displayed tool tip window from the view.
 
-```
+```cpp
 void Pop();
 ```
 
@@ -594,7 +594,7 @@ This member function implements the behavior of the Win32 message [TTM_POP](/win
 
 Causes the current tooltip control to display at the coordinates of the last mouse message.
 
-```
+```cpp
 void Popup();
 ```
 
@@ -612,7 +612,7 @@ The following code example displays a tooltip window.
 
 Passes a mouse message to a tool tip control for processing.
 
-```
+```cpp
 void RelayEvent(LPMSG lpMsg);
 ```
 
@@ -639,7 +639,7 @@ A tool tip control processes only the following messages, which are sent to it b
 
 Sets the delay time for a tool tip control.
 
-```
+```cpp
 void SetDelayTime(UINT nDelay);
 
 void SetDelayTime(
@@ -666,7 +666,7 @@ The delay time is the length of time the cursor must remain on a tool before the
 
 Sets the top, left, bottom, and right margins for a tool tip window.
 
-```
+```cpp
 void SetMargin(LPRECT lprc);
 ```
 
@@ -704,7 +704,7 @@ This member function implements the behavior of the Win32 message [TTM_SETMAXTIP
 
 Sets the background color in a tool tip window.
 
-```
+```cpp
 void SetTipBkColor(COLORREF clr);
 ```
 
@@ -721,7 +721,7 @@ This member function implements the behavior of the Win32 message [TTM_SETTIPBKC
 
 Sets the text color in a tool tip window.
 
-```
+```cpp
 void SetTipTextColor(COLORREF clr);
 ```
 
@@ -764,7 +764,7 @@ This member function implements the behavior of the Win32 message [TTM_SETTITLE]
 
 Sets the information that a tool tip maintains for a tool.
 
-```
+```cpp
 void SetToolInfo(LPTOOLINFO lpToolInfo);
 ```
 
@@ -777,7 +777,7 @@ A pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) s
 
 Sets a new bounding rectangle for a tool.
 
-```
+```cpp
 void SetToolRect(
     CWnd* pWnd,
     UINT_PTR nIDTool,
@@ -793,7 +793,7 @@ Pointer to the window that contains the tool.
 ID of the tool.
 
 *lpRect*<br/>
-Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the new bounding rectangle.
+Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the new bounding rectangle.
 
 ## <a name="setwindowtheme"></a> CToolTipCtrl::SetWindowTheme
 
@@ -820,7 +820,7 @@ This member function emulates the functionality of the [TTM_SETWINDOWTHEME](/win
 
 Forces the current tool to be redrawn.
 
-```
+```cpp
 void Update();
 ```
 
@@ -828,7 +828,7 @@ void Update();
 
 Updates the tool tip text for this control's tools.
 
-```
+```cpp
 void UpdateTipText(
     LPCTSTR lpszText,
     CWnd* pWnd,
