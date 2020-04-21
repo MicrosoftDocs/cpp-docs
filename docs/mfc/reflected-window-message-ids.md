@@ -30,7 +30,7 @@ The following table shows the messages that are intercepted and the correspondin
 |[WM_COMPAREITEM](/windows/win32/Controls/wm-compareitem)|OCM_COMPAREITEM|
 |[WM_HSCROLL](/windows/win32/Controls/wm-hscroll)|OCM_HSCROLL|
 |[WM_VSCROLL](/windows/win32/Controls/wm-vscroll)|OCM_VSCROLL|
-|[WM_PARENTNOTIFY](/previous-versions/windows/desktop/inputmsg/wm-parentnotify)|OCM_PARENTNOTIFY|
+|[WM_PARENTNOTIFY](/windows/win32/inputmsg/wm-parentnotify)|OCM_PARENTNOTIFY|
 |[WM_NOTIFY](/windows/win32/controls/wm-notify)|OCM_NOTIFY|
 
 > [!NOTE]

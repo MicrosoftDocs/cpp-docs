@@ -135,10 +135,10 @@ virtual BOOL Create(
 Specifies the combination of Windows styles applied to the month calendar control. See [Month Calendar Control Styles](/windows/win32/Controls/month-calendar-control-styles) in the Windows SDK for more information about the styles.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. Contains the position and size of the month calendar control.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure. Contains the position and size of the month calendar control.
 
 *pt*<br/>
-A reference to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that identifies the location of the month calendar control.
+A reference to a [POINT](/windows/win32/api/windef/ns-windef-point) structure that identifies the location of the month calendar control.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the month calendar control. It must not be NULL.
@@ -431,7 +431,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
 ### Parameters
 
 *pRect*<br/>
-A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive bounding rectangle information. This parameter must be a valid address and cannot be NULL.
+A pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that will receive bounding rectangle information. This parameter must be a valid address and cannot be NULL.
 
 ### Return Value
 
@@ -1198,11 +1198,11 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*lpRect*|[in] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that defines a rectangle that contains the desired number of calendars.|
+|*lpRect*|[in] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that defines a rectangle that contains the desired number of calendars.|
 
 ### Return Value
 
-Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that defines a rectangle whose size is less than or equal to the rectangle defined by the *lpRect* parameter.
+Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that defines a rectangle whose size is less than or equal to the rectangle defined by the *lpRect* parameter.
 
 ### Remarks
 

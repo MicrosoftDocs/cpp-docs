@@ -99,7 +99,7 @@ virtual BOOL Create(
 |Parameter|Description|
 |---------------|-----------------|
 |*dwStyle*|[in] A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/win32/Controls/pager-control-styles) to be applied to the control.|
-|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control in client coordinates.|
+|*rect*|[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control in client coordinates.|
 |*pParentWnd*|[in] A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|
 |*nID*|[in] The ID of the control.|
 
@@ -136,7 +136,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[in] A bitwise combination of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function.|
 |*dwStyle*|[in] A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/win32/Controls/pager-control-styles) to be applied to the control.|
-|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control in client coordinates.|
+|*rect*|[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control in client coordinates.|
 |*pParentWnd*|[in] A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|
 |*nID*|[in] The ID of the control.|
 
