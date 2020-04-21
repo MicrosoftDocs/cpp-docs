@@ -16,13 +16,11 @@ A pointer can also be *dereferenced* to retrieve the value of the object that it
     int i = 5;
     p = &i; // assign pointer to address of object
     int j = *p; // dereference p to retrieve the value at its address
-
 ```
 
 A pointer can point to a typed object or to **void**. When a program allocates a new object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*; an owning pointer (or a copy of it) must be used to explicitly delete the heap-allocated object when it is no longer needed. Failure to delete the memory results in a *memory leak* and renders that memory location unavailable to any other program on the machine. For more information, see [new and delete operators](new-and-delete-operators.md).
 
 ```cpp
-
     MyClass* mc = new MyClass(); // allocate object on the heap
     mc->print(); // access class member
     delete mc; // delete object (please don't forget!)
@@ -112,13 +110,13 @@ int main()
     pmc2->print(); // "Erika, 108"
 
     // Pass the pointer to a function.
-    func_A(mc);
+    func_A(pmc);
     pmc->print(); // "Erika, 3"
     pmc2->print(); // "Erika, 3"
 
     // Dereference the pointer and pass a copy
     // of the pointed-to object to a function
-    func_B(*mc);
+    func_B(*pmc);
     pmc->print(); // "Erika, 3" (original not modified by function)
 
     delete(pmc); // don't forget to give memory back to operating system!
