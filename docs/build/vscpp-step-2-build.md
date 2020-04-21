@@ -63,13 +63,13 @@ Once you've built and run this simple app, you're ready for more complex project
 
 Come here for solutions to common issues when you create your first C++ project.
 
-### Build and run your code in Visual Studio - issues
+### Build and run your code in Visual Studio: issues
 
 If red squiggles appear under anything in the source code editor, the build may have errors or warnings. Check that your code matches the example in spelling, punctuation, and case.
 
 [Go back.](#build-and-run-your-code-in-visual-studio)
 
-### Run your code in a command window - issues
+### Run your code in a command window: issues
 
 If the path shown in File Explorer ends in *\\HelloWorld\\HelloWorld*, you've opened the HelloWorld *project* instead of the HelloWorld *solution*. You'll be confused by a Debug folder that doesn't contain your app. Navigate up a level in File Explorer to get to the solution folder, the first *HelloWorld* in the path. This folder also contains a Debug folder, and you'll find your app there.
 

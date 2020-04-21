@@ -111,7 +111,7 @@ When the code looks like this in the editor, you're ready to go on to the next s
 
 Come here for solutions to common issues when you create your first C++ project.
 
-### Create your app project - issues
+### Create your app project: issues
 
 ::: moniker range="vs-2019"
 
@@ -133,7 +133,7 @@ If another project with the same name already exists, choose another name for yo
 
 [Go back](#create-your-app-project).
 
-### Make your project a console app - issues
+### Make your project a console app: issues
 
 If you don't see **Linker** listed under **Configuration Properties**, choose **Cancel** to close the **Property Pages** dialog. Make sure that the **HelloWorld** project is selected in **Solution Explorer** before you try again. Don't select the **HelloWorld** solution, or another item, in **Solution Explorer**.
 
@@ -141,7 +141,7 @@ The dropdown control doesn't appear in the **SubSystem** property edit box until
 
 [Go back](#make-your-project-a-console-app)
 
-### Add a source code file - issues
+### Add a source code file: issues
 
 It's okay if you give the source code file a different name. However, don't add more than one file that contains the same code to your project.
 
@@ -149,7 +149,7 @@ If you added the wrong file type to your project, such as a header file, delete 
 
 [Go back](#add-a-source-code-file).
 
-### Add code to the source file - issues
+### Add code to the source file: issues
 
 If you accidentally closed the source code file editor window, you can easily open it again. To open it, double-click on HelloWorld.cpp in the **Solution Explorer** window.
 
