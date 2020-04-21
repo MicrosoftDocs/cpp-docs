@@ -9,7 +9,9 @@ helpviewer_keywords: ["span header"]
 
 Include the standard header \<span> to get a single-dimensional view over a contiguous sequence of objects.
 
-Span enables fast and bounds-safe access to a contiguous sequence of elements. It's a view. Unlike vector or array, it doesn't "own" the elements it provides access to.
+Span is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike vector or array, it doesn't "own" the elements it provides access to.
+
+Here's a quick example:
 
 JTW: quick example might be to show string->span, or something simple to show what it does.
 
