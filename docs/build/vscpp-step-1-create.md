@@ -2,7 +2,7 @@
 title: Create a C++ console app project
 description: "Create a Hello World console app in Visual C++"
 ms.custom: "mvc"
-ms.date: 04/02/2019
+ms.date: 04/20/2020
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -17,11 +17,11 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Create your app project
 
-Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps, and manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
+Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
 
 ::: moniker range=">=vs-2019"
 
-1. In Visual Studio, open the **File** menu and choose **New** > **Project** to open the **Create a new Project** dialog. Select the **Console App** template, and then choose **Next**.
+1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog. Select the **Console App** template that has **C++**, **Windows**, and **Console** tags, and then choose **Next**.
 
    ![Create a new project](media/vs2019-choose-console-app.png "Open the Create a new project dialog")
 
@@ -29,11 +29,13 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
    ![Name and create the new project](media/vs2019-configure-new-project-hello-world.png "Name and create the new project")
 
-   Visual Studio creates a new project, ready for you to add and edit your source code. By default, the Console App template fills in your source code with a "Hello World" app:
+   Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template fills in your source code with a "Hello World" app:
 
    ![Hello World project in the IDE](media/vs2019-hello-world-code.png "Hello World project in the IDE")
 
    When the code looks like this in the editor, you're ready to go on to the next step and build your app.
+
+[I ran into a problem.](#create-your-app-project-issues)
 
 ::: moniker-end
 
@@ -43,21 +45,21 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
    ![Open the New Project dialog](media/vscpp-file-new-project.gif "Open the New Project dialog")
 
-1. In the **New Project** dialog, select **Installed**, **Visual C++** if it isn't selected already, and then choose the **Empty Project** template. In the **Name** field, enter *HelloWorld*. Choose **OK** to create the project.
+1. In the **New Project** dialog, select **Installed > Visual C++** if it isn't selected already, and then choose the **Empty Project** template. In the **Name** field, enter *HelloWorld*. Choose **OK** to create the project.
 
    ![Name and create the new project](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
 
-Visual Studio creates a new, empty project, ready for you to specialize for the kind of app you want to create and to add your source code files. You'll do that next.
+Visual Studio creates a new, empty project. It's ready for you to specialize for the kind of app you want to create and to add your source code files. You'll do that next.
 
 [I ran into a problem.](#create-your-app-project-issues)
 
 ## Make your project a console app
 
-Visual Studio can create all kinds of apps and components for Windows and other platforms. The **Empty Project** template isn't specific about what kind of app it creates. To create a *console app*, one that runs in a console or command prompt window, you must tell Visual Studio to build your app to use the console subsystem.
+Visual Studio can create all kinds of apps and components for Windows and other platforms. The **Empty Project** template isn't specific about what kind of app it creates. A *console app* is one that runs in a console or command prompt window. To create one, you must tell Visual Studio to build your app to use the console subsystem.
 
 1. In Visual Studio, open the **Project** menu and choose **Properties** to open the **HelloWorld Property Pages** dialog.
 
-1. In the **Property Pages** dialog, under **Configuration Properties**, select **Linker**, **System**, and then choose the edit box next to the **Subsystem** property. In the dropdown menu that appears, select **Console (/SUBSYSTEM:CONSOLE)**. Choose **OK** to save your changes.
+1. In the **Property Pages** dialog, select **Configuration Properties > Linker > System**, and then choose the edit box next to the **Subsystem** property. In the dropdown menu that appears, select **Console (/SUBSYSTEM:CONSOLE)**. Choose **OK** to save your changes.
 
    ![Open the Property Pages dialog](media/vscpp-properties-linker-subsystem.gif "Open the Property Pages dialog")
 
@@ -106,39 +108,51 @@ When the code looks like this in the editor, you're ready to go on to the next s
 > [!div class="nextstepaction"]
 > [Build and run a C++ project](vscpp-step-2-build.md)
 
-::: moniker range="<=vs-2017"
-
 ## Troubleshooting guide
 
 Come here for solutions to common issues when you create your first C++ project.
 
-### Create your app project issues
+### Create your app project - issues
 
-If the **New Project** dialog doesn't show a **Visual C++** entry under **Installed**, your copy of Visual Studio probably doesn't have the **Desktop development with C++** workload installed. You can run the installer right from the **New Project** dialog. Choose the **Open Visual Studio Installer** link to start the installer again. If the **User Account Control** dialog requests permissions, choose **Yes**. In the installer, make sure the **Desktop development with C++** workload is checked, and choose **OK** to update your Visual Studio installation.
+::: moniker range="vs-2019"
 
-If another project with the same name already exists, choose another name for your project, or delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the helloworld.sln file) in File Explorer.
+The **New Project** dialog should show a **Console App** template that has **C++**, **Windows**, and **Console** tags. If you don't see it, there are two possible causes. It might be filtered out of the list, or it might not be installed. First, check the filter dropdowns at the top of the list of templates. Set them to **C++**, **Windows**, and **Console**. The C++ **Console App** template should appear; otherwise, the **Desktop development with C++** workload isn't installed.
+
+To install **Desktop development with C++**, you can run the installer right from the **New Project** dialog. Choose the **Install more tools and features** link at the bottom of the template list to start the installer. If the **User Account Control** dialog requests permissions, choose **Yes**. In the installer, make sure the **Desktop development with C++** workload is checked. Then choose **Modify** to update your Visual Studio installation.
+
+If another project with the same name already exists, choose another name for your project. Or, delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the *helloworld.sln* file) in File Explorer.
 
 [Go back](#create-your-app-project).
 
-### Make your project a console app issues
+::: moniker-end
 
-If you don't see **Linker** listed under **Configuration Properties**, choose **Cancel** to close the **Property Pages** dialog and then make sure that the **HelloWorld** project is selected in **Solution Explorer**, not the solution or another file or folder, before you try again.
+::: moniker range="vs-2017"
 
-The dropdown control does not appear in the **SubSystem** property edit box until you select the property. You can select it by using the pointer, or you can press Tab to cycle through the dialog controls until **SubSystem** is highlighted. Choose the dropdown control or press Alt+Down to open it.
+If the **New Project** dialog doesn't show a **Visual C++** entry under **Installed**, your copy of Visual Studio probably doesn't have the **Desktop development with C++** workload installed. You can run the installer right from the **New Project** dialog. Choose the **Open Visual Studio Installer** link to start the installer again. If the **User Account Control** dialog requests permissions, choose **Yes**. Update the installer if necessary. In the installer, make sure the **Desktop development with C++** workload is checked, and choose **OK** to update your Visual Studio installation.
+
+If another project with the same name already exists, choose another name for your project. Or, delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the *helloworld.sln* file) in File Explorer.
+
+[Go back](#create-your-app-project).
+
+### Make your project a console app - issues
+
+If you don't see **Linker** listed under **Configuration Properties**, choose **Cancel** to close the **Property Pages** dialog. Make sure that the **HelloWorld** project is selected in **Solution Explorer** before you try again. Don't select the **HelloWorld** solution, or another item, in **Solution Explorer**.
+
+The dropdown control doesn't appear in the **SubSystem** property edit box until you select the property. Click in the edit box to select it. Or, you can press **Tab** to cycle through the dialog controls until **SubSystem** is highlighted. Choose the dropdown control or press **Alt+Down** to open it.
 
 [Go back](#make-your-project-a-console-app)
 
-### Add a source code file issues
+### Add a source code file - issues
 
-It's okay if you give the source code file a different name. However, don't add more than one source code file that contains the same code to your project.
+It's okay if you give the source code file a different name. However, don't add more than one file that contains the same code to your project.
 
-If you added the wrong kind of file to your project, for example, a header file, delete it and try again. To delete the file, select it in **Solution Explorer** and press the Delete key.
+If you added the wrong file type to your project, such as a header file, delete it and try again. To delete the file, select it in **Solution Explorer**. Then press the **Delete** key.
 
 [Go back](#add-a-source-code-file).
 
-### Add code to the source file issues
+### Add code to the source file - issues
 
-If you accidentally closed the source code file editor window, to open it again, double-click on HelloWorld.cpp in the **Solution Explorer** window.
+If you accidentally closed the source code file editor window, you can easily open it again. To open it, double-click on HelloWorld.cpp in the **Solution Explorer** window.
 
 If red squiggles appear under anything in the source code editor, check that your code matches the example in spelling, punctuation, and case. Case is significant in C++ code.
 
