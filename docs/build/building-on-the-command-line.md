@@ -233,10 +233,10 @@ When you build on the command line, the F1 command isn't available for instant h
 The Visual Studio IDE uses a native project build system based on MSBuild. You can invoke MSBuild directly, or use the native project system without using the IDE:
 
 [MSBuild](msbuild-visual-cpp.md)<br/>
-Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset indirectly. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. Running MSBuild from the command line is an advanced scenario and not commonly recommended. Starting in Visual Studio version 16.5, MSBuild doesn't use the command-line environment to control the toolset and libraries used. For more information on how to use MSBuild from the command line, see [MSBuild on the command line - C++](msbuild-visual-cpp.md).
+Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset indirectly. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. Running MSBuild from the command line is an advanced scenario and not commonly recommended. Starting in Visual Studio version 16.5, MSBuild doesn't use the command-line environment to control the toolset and libraries used.
 
 [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
-Use DEVENV (devenv.exe) combined with a command-line switch such as **/Build** or **/Clean** to execute certain build commands without displaying the Visual Studio IDE. In general, DEVENV is preferred over using MSBuild directly, because you can let Visual Studio handle the complexities of MSBuild.
+Use DEVENV (devenv.exe) combined with a command-line switch such as **/Build** or **/Clean** to execute certain build commands without displaying the Visual Studio IDE. In general, DEVENV is preferred over using MSBuild directly, because you can let Visual Studio handle the complexities of MSBuild. Starting in Visual Studio version 16.5, DEVENV does not use the command-line environment to control the toolset and libraries used.
 
 ## In this section
 
