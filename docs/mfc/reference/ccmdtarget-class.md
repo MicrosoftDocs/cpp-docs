@@ -121,7 +121,7 @@ Pointer to the [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure descri
 Handle of the document window containing the object.
 
 *lpRect*<br/>
-Pointer to the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.
+Pointer to the [RECT](/windows/win32/api/windef/ns-windef-rect) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.
 
 ### Return Value
 
@@ -236,7 +236,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
 ### Parameters
 
 *pIID*<br/>
-A pointer to an interface ID (a [GUID](/previous-versions/cc317743(v%3dmsdn.10)).
+A pointer to an interface ID (a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid.
 
 ### Return Value
 
@@ -302,7 +302,7 @@ HRESULT GetTypeInfoOfGuid(
 A locale identifier ( `LCID`).
 
 *guid*<br/>
-The [GUID](/previous-versions/cc317743(v%3dmsdn.10)) of the type description.
+The [GUID](/windows/win32/api/guiddef/ns-guiddef-guid of the type description.
 
 *ppTypeInfo*<br/>
 Pointer to a pointer to the `ITypeInfo` interface.

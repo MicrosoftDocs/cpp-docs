@@ -352,7 +352,7 @@ virtual BOOL Create(
 Specifies the list control's style. Apply any combination of list control styles to the control. See [List view window styles](/windows/win32/Controls/list-view-window-styles) in the Windows SDK for a complete list of these styles. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle).
 
 *rect*<br/>
-Specifies the list control's size and position. It can be either a `CRect` object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
+Specifies the list control's size and position. It can be either a `CRect` object or a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 *pParentWnd*<br/>
 Specifies the list control's parent window, usually a `CDialog`. It must not be NULL.
@@ -400,7 +400,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the list control's style. Apply any combination of list control styles to the control. For a complete list of these styles, see [List view window styles](/windows/win32/Controls/list-view-window-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -434,7 +434,7 @@ CImageList* CreateDragImage(
 Index of the item whose drag image list is to be created.
 
 *lpPoint*<br/>
-Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that receives the initial location of the upper-left corner of the image, in view coordinates.
+Address of a [POINT](/windows/win32/api/windef/ns-windef-point) structure that receives the initial location of the upper-left corner of the image, in view coordinates.
 
 ### Return Value
 
@@ -1176,7 +1176,7 @@ BOOL GetGroupRect(
 |Parameter|Description|
 |---------------|-----------------|
 |*iGroupId*|[in] Specifies a group.|
-|*lpRect*|[in, out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.|
+|*lpRect*|[in, out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.|
 |*iCoords*|[in] Specifies the rectangle coordinates to retrieve. Use one of these values:<br /><br /> - LVGGR_GROUP - (Default) Coordinates of the entire expanded group.<br />- LVGGR_HEADER - Coordinates of only the header (collapsed group).<br />- LVGGR_SUBSETLINK - Coordinates of only the subset link (markup subset).|
 
 ### Return Value
@@ -1185,7 +1185,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-The caller is responsible for allocating the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure pointed to by the *pRect* parameter.
+The caller is responsible for allocating the [RECT](/windows/win32/api/windef/ns-windef-rect) structure pointed to by the *pRect* parameter.
 
 This method sends the [LVM_GETGROUPRECT](/windows/win32/Controls/lvm-getgrouprect) message, which is described in the Windows SDK.
 
@@ -1525,7 +1525,7 @@ BOOL GetItemIndexRect(
 |*pItemIndex*|[in] Pointer to an [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure. This parameter cannot be NULL.|
 |*iColumn*|[in] Zero-based index of a column in the control.|
 |*rectType*|[in] Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:<br /><br /> LVIR_BOUNDS - Returns the bounding rectangle of the entire subitem, including the icon and label.<br /><br /> LVIR_ICON - Returns the bounding rectangle of the icon or small icon of the subitem.<br /><br /> LVIR_LABEL - Returns the bounding rectangle of the subitem text.|
-|*pRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. This parameter cannot be NULL.|
+|*pRect*|[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](/windows/win32/api/windef/ns-windef-rect) structure. This parameter cannot be NULL.|
 
 ### Return Value
 
@@ -1579,7 +1579,7 @@ BOOL GetItemPosition(
 The index of the item whose position is to be retrieved.
 
 *lpPoint*<br/>
-Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that receives the position of the item's upper-left corner, in view coordinates.
+Address of a [POINT](/windows/win32/api/windef/ns-windef-point) structure that receives the position of the item's upper-left corner, in view coordinates.
 
 ### Return Value
 
@@ -1618,7 +1618,7 @@ BOOL GetItemRect(
 The index of the item whose position is to be retrieved.
 
 *lpRect*<br/>
-Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle.
+Address of a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives the bounding rectangle.
 
 *nCode*<br/>
 Portion of the list view item for which to retrieve the bounding rectangle. It can be one of these values:
@@ -1955,7 +1955,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ### Parameters
 
 *lpPoint*<br/>
-Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that receives the view origin.
+Address of a [POINT](/windows/win32/api/windef/ns-windef-point) structure that receives the view origin.
 
 ### Return Value
 
@@ -2266,7 +2266,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
+Address of a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 ### Return Value
 
@@ -2569,7 +2569,7 @@ int InsertMarkHitTest(
 ### Parameters
 
 *pPoint*<br/>
-A pointer to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that contains the hit test coordinates, relative to the client area of the list control.
+A pointer to a [POINT](/windows/win32/api/windef/ns-windef-point) structure that contains the hit test coordinates, relative to the client area of the list control.
 
 *plvim*<br/>
 A pointer to an [LVINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) structure that specifies the insertion point closest to the coordinates defined by the point parameter.
@@ -3589,7 +3589,7 @@ BOOL SetItemPosition(
 Index of the item whose position is to be set.
 
 *pt*<br/>
-A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure specifying the new position, in view coordinates, of the item's upper-left corner.
+A [POINT](/windows/win32/api/windef/ns-windef-point) structure specifying the new position, in view coordinates, of the item's upper-left corner.
 
 ### Return Value
 

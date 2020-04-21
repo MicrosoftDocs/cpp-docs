@@ -1866,7 +1866,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM FONTNAME Command ID](/previous-versions/aa769880\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_FONTNAME Command ID](/previous-versions/aa769880\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setfontsize"></a> CHtmlEditCtrlBase::SetFontSize
 
@@ -1887,7 +1887,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM FONTSIZE command ID](/previous-versions/aa769881\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_FONTSIZE command ID](/previous-versions/aa769881\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setforecolor"></a> CHtmlEditCtrlBase::SetForeColor
 
@@ -1912,7 +1912,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM FORECOLOR command ID](/previous-versions/aa769882\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_FORECOLOR command ID](/previous-versions/aa769882\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setie5pastemode"></a> CHtmlEditCtrlBase::SetIE5PasteMode
 
@@ -1933,7 +1933,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM IE50_PASTE_MODE command ID](/previous-versions/aa769923\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_IE50_PASTE_MODE command ID](/previous-versions/aa769923\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setliveresize"></a> CHtmlEditCtrlBase::SetLiveResize
 
@@ -1954,7 +1954,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM LIVERESIZE command ID](/previous-versions/aa769928\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_LIVERESIZE command ID](/previous-versions/aa769928\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setmultiselect"></a> CHtmlEditCtrlBase::SetMultiSelect
 
@@ -1975,7 +1975,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM MULTIPLESELECTION command ID](/previous-versions/aa769929\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_MULTIPLESELECTION command ID](/previous-versions/aa769929\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setoverridecursor"></a> CHtmlEditCtrlBase::SetOverrideCursor
 
@@ -1996,7 +1996,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM OVERRIDE_CURSOR command ID](/previous-versions/aa769932\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_OVERRIDE_CURSOR command ID](/previous-versions/aa769932\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setoverwritemode"></a> CHtmlEditCtrlBase::SetOverwriteMode
 
@@ -2017,7 +2017,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM OVERWRITE command ID](/previous-versions/aa770016\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_OVERWRITE command ID](/previous-versions/aa770016\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setrespectvisindesign"></a> CHtmlEditCtrlBase::SetRespectVisInDesign
 
@@ -2038,7 +2038,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM RESPECTVISIBILITY_INDESIGN command ID](/previous-versions/aa770023\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_RESPECTVISIBILITY_INDESIGN command ID](/previous-versions/aa770023\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowalignedsitetags"></a> CHtmlEditCtrlBase::SetShowAlignedSiteTags
 
@@ -2059,7 +2059,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWALIGNEDSITETAGS command ID](/previous-versions/aa769947\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWALIGNEDSITETAGS command ID](/previous-versions/aa769947\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowalltags"></a> CHtmlEditCtrlBase::SetShowAllTags
 
@@ -2080,7 +2080,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWALLTAGS command ID](/previous-versions/aa769948\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWALLTAGS command ID](/previous-versions/aa769948\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowareatags"></a> CHtmlEditCtrlBase::SetShowAreaTags
 
@@ -2101,7 +2101,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWAREATAGS command ID](/previous-versions/aa769949\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWAREATAGS command ID](/previous-versions/aa769949\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowbrtags"></a> CHtmlEditCtrlBase::SetShowBRTags
 
@@ -2122,7 +2122,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWWBRTAGS command ID](/previous-versions/aa769956\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWWBRTAGS command ID](/previous-versions/aa769956\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowcommenttags"></a> CHtmlEditCtrlBase::SetShowCommentTags
 
@@ -2143,7 +2143,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWCOMMENTTAGS command ID](/previous-versions/aa769950\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWCOMMENTTAGS command ID](/previous-versions/aa769950\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowmisctags"></a> CHtmlEditCtrlBase::SetShowMiscTags
 
@@ -2164,7 +2164,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWMISCTAGS command ID](/previous-versions/aa769952\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWMISCTAGS command ID](/previous-versions/aa769952\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowscripttags"></a> CHtmlEditCtrlBase::SetShowScriptTags
 
@@ -2185,7 +2185,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWSCRIPTTAGS command ID](/previous-versions/aa769953\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWSCRIPTTAGS command ID](/previous-versions/aa769953\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowstyletags"></a> CHtmlEditCtrlBase::SetShowStyleTags
 
@@ -2206,7 +2206,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWSTYLETAGS command ID](/previous-versions/aa769954\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWSTYLETAGS command ID](/previous-versions/aa769954\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="setshowunknowntags"></a> CHtmlEditCtrlBase::SetShowUnknownTags
 
@@ -2227,7 +2227,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM SHOWUNKNOWNTAGS command ID](/previous-versions/aa769955\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_SHOWUNKNOWNTAGS command ID](/previous-versions/aa769955\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="textarea"></a> CHtmlEditCtrlBase::TextArea
 
@@ -2248,7 +2248,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM TEXTAREA command ID](/previous-versions/aa769986\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_TEXTAREA command ID](/previous-versions/aa769986\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="textbox"></a> CHtmlEditCtrlBase::TextBox
 
@@ -2269,7 +2269,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM TEXTBOX command ID](/previous-versions/aa769980\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_TEXTBOX command ID](/previous-versions/aa769980\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="unbookmark"></a> CHtmlEditCtrlBase::UnBookmark
 
@@ -2285,7 +2285,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM UNBOOKMARK command ID](/previous-versions/aa770034\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_UNBOOKMARK command ID](/previous-versions/aa770034\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="underline"></a> CHtmlEditCtrlBase::Underline
 
@@ -2301,7 +2301,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM UNDERLINE command ID](/previous-versions/aa770035\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_UNDERLINE command ID](/previous-versions/aa770035\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="unlink"></a> CHtmlEditCtrlBase::Unlink
 
@@ -2317,7 +2317,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM UNLINK command ID](/previous-versions/aa770037\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_UNLINK command ID](/previous-versions/aa770037\(v=vs.85\)) to the WebBrowser control.
 
 ## <a name="unorderlist"></a> CHtmlEditCtrlBase::UnorderList
 
@@ -2338,7 +2338,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method sends the [IDM UNORDERLIST command ID](/previous-versions/aa769987\(v=vs.85\)) to the WebBrowser control.
+This method sends the [IDM_UNORDERLIST command ID](/previous-versions/aa769987\(v=vs.85\)) to the WebBrowser control.
 
 ## See also
 
