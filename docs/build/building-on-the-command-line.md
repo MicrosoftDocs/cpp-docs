@@ -8,7 +8,10 @@ ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
 # Use the Microsoft C++ toolset from the command line
 
-You can build C and C++ applications on the command line by using tools that are included in Visual Studio. The Microsoft C++ (MSVC) compiler toolset is also downloadable as a standalone package that doesn't include the Visual Studio IDE.
+You can build C and C++ applications on the command line by using tools that are included in Visual Studio. The Microsoft C++ (MSVC) compiler toolset is also downloadable as a standalone package. You don't need to install the Visual Studio IDE if you don't plan to use it.
+
+> [!NOTE]
+> This article is about how to set up an environment to use the individual compilers, linkers, librarian, and other basic tools. The native project build system, MSBuild, does not use the environment as described in this article. For more information on how to use MSBuild from the command line, see [MSBuild on the command line - C++](msbuild-visual-cpp.md).
 
 ## Download and install the tools
 
@@ -112,7 +115,7 @@ These command files set default parameters and call VsDevCmd.bat to set up the s
 
 The simplest way to specify a particular build architecture in an existing command window is to use the vcvarsall.bat file. Use vcvarsall.bat to set environment variables to configure the command line for native 32-bit or 64-bit compilation. Arguments let you specify cross-compilation to x86, x64, ARM, or ARM64 processors. You can target Microsoft Store, Universal Windows Platform, or Windows Desktop platforms. You can even specify which Windows SDK to use, and select the platform toolset version.
 
-When used with no arguments, vcvarsall.bat configures the environment variables to use the current x86-native compiler for 32-bit Windows Desktop targets. You can add arguments to configure the environment to use any of the native or cross compiler tools. vcvarsall.bat displays an error message if you specify a configuration that's not installed or available on your computer.
+When used with no arguments, vcvarsall.bat configures the environment variables to use the current x86-native compiler for 32-bit Windows Desktop targets. You can add arguments to configure the environment to use any of the native or cross compiler tools. vcvarsall.bat displays an error message if you specify a configuration that's not installed, or not available on your computer.
 
 ### vcvarsall syntax
 
@@ -220,16 +223,20 @@ Use the compiler (cl.exe) to compile and link source code files into apps, libra
 [Link](reference/linking.md)<br/>
 Use the linker (link.exe) to link compiled object files and libraries into apps and DLLs.
 
-[MSBuild](msbuild-visual-cpp.md)<br/>
-Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset indirectly. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. Running MSBuild from the command line is an advanced scenario and not commonly recommended.
-
-[DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
-Use DEVENV (devenv.exe) combined with a command-line switch such as **/Build** or **/Clean** to execute certain build commands without displaying the Visual Studio IDE. In general, DEVENV is preferred over using MSBuild directly, because you can let Visual Studio handle the complexities of MSBuild.
-
 [NMAKE](reference/nmake-reference.md)<br/>
 Use NMAKE (nmake.exe) on Windows to build C++ projects based on a traditional makefile.
 
-When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages, or you can use the offline help files. To use the search in [docs.microsoft.com](https://docs.microsoft.com/cpp/), use the search box at the top of the page.
+When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in [docs.microsoft.com](https://docs.microsoft.com/cpp/), enter your query in the search box at the top of any article.
+
+## Command-line project management tools
+
+The Visual Studio IDE uses a native project build system based on MSBuild. You can invoke MSBuild directly, or use the native project system without using the IDE:
+
+[MSBuild](msbuild-visual-cpp.md)<br/>
+Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset indirectly. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. Running MSBuild from the command line is an advanced scenario and not commonly recommended. Starting in Visual Studio version 16.5, MSBuild doesn't use the command-line environment to control the toolset and libraries used. For more information on how to use MSBuild from the command line, see [MSBuild on the command line - C++](msbuild-visual-cpp.md).
+
+[DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
+Use DEVENV (devenv.exe) combined with a command-line switch such as **/Build** or **/Clean** to execute certain build commands without displaying the Visual Studio IDE. In general, DEVENV is preferred over using MSBuild directly, because you can let Visual Studio handle the complexities of MSBuild.
 
 ## In this section
 
