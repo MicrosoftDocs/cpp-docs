@@ -129,6 +129,10 @@ If another project with the same name already exists, choose another name for yo
 
 If the **New Project** dialog doesn't show a **Visual C++** entry under **Installed**, your copy of Visual Studio probably doesn't have the **Desktop development with C++** workload installed. You can run the installer right from the **New Project** dialog. Choose the **Open Visual Studio Installer** link to start the installer again. If the **User Account Control** dialog requests permissions, choose **Yes**. Update the installer if necessary. In the installer, make sure the **Desktop development with C++** workload is checked, and choose **OK** to update your Visual Studio installation.
 
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
 If another project with the same name already exists, choose another name for your project. Or, delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the *helloworld.sln* file) in File Explorer.
 
 [Go back](#create-your-app-project).
