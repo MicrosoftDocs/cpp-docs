@@ -1,9 +1,9 @@
 ---
-title: "Ellipses and Variadic Templates"
+title: "Ellipsis and Variadic Templates"
 ms.date: "11/04/2016"
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
 ---
-# Ellipses and Variadic Templates
+# Ellipsis and Variadic Templates
 
 This article shows how to use the ellipsis (`...`) with C++ variadic templates. The ellipsis has had many uses in C and C++. These include variable argument lists for functions. The `printf()` function from the C Runtime Library is one of the most well-known examples.
 

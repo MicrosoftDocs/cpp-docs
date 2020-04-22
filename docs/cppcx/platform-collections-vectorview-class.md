@@ -27,7 +27,7 @@ Specifies a binary predicate for testing equality with values of type `T`. The d
 
 ### Remarks
 
-The `VectorView` class implements the [Windows::Foundation::Collections::IVectorView\<T>](/uwp/api/Windows.Foundation.Collections.IVectorView_T_) interface, and support for Standard Template Library iterators.
+The `VectorView` class implements the [Windows::Foundation::Collections::IVectorView\<T>](/uwp/api/windows.foundation.collections.ivectorview-1) interface, and support for Standard Template Library iterators.
 
 ### Members
 
