@@ -119,7 +119,7 @@ A convenient way to hold the iterator returned by First() is to assign the retur
 
 ## <a name="getview"></a> UnorderedMap::GetView Method
 
-Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView]/uwp/api/windows.foundation.collections.imapview-2) interface.
+Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView](/uwp/api/windows.foundation.collections.imapview-2) interface.
 
 ### Syntax
 

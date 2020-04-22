@@ -121,7 +121,7 @@ A convenient way to hold the iterator returned by First() is to assign the retur
 
 ## <a name="getview"></a> Map::GetView Method
 
-Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>]/uwp/api/windows.foundation.collections.imapview-2) interface.
+Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>](/uwp/api/windows.foundation.collections.imapview-2) interface.
 
 ### Syntax
 
