@@ -32,7 +32,7 @@ A type that provides a function object that can compare two key values for equal
 
 ### Remarks
 
-UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView\<K,V>](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).
+UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView\<K,V>](/uwp/api/windows.foundation.collections.imapview-2) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).
 
 ### Members
 
@@ -64,7 +64,7 @@ UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::C
 
 ## <a name="first"></a> UnorderedMapView::First Method
 
-Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) element in the unordered map.
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) element in the unordered map.
 
 ### Syntax
 
@@ -122,7 +122,7 @@ The value that is paired with the `key`. The type of the return value is typenam
 
 ## <a name="size"></a> UnorderedMapView::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) elements in the UnorderedMapView.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) elements in the UnorderedMapView.
 
 ### Syntax
 
@@ -235,4 +235,4 @@ The input iterator of the first element after a range of elements used to initia
 ## See also
 
 [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)<br/>
-[Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)
+[Windows::Foundation::IMapView](/uwp/api/windows.foundation.collections.imapview-2)

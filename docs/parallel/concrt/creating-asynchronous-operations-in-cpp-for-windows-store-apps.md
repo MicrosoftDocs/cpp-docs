@@ -46,13 +46,13 @@ By using the Windows Runtime, you can use the best features of various programmi
 [Windows::Foundation::IAsyncAction](/uwp/api/windows.foundation.iasyncaction)<br/>
 Represents an asynchronous action.
 
-[Windows::Foundation::IAsyncActionWithProgress\<TProgress>](/uwp/api/Windows.Foundation.IAsyncActionWithProgress_TProgress_)<br/>
+[Windows::Foundation::IAsyncActionWithProgress\<TProgress>](/uwp/api/windows.foundation.iasyncactionwithprogress-1)<br/>
 Represents an asynchronous action that reports progress.
 
-[Windows::Foundation::IAsyncOperation\<TResult>](/uwp/api/windows.foundation.iasyncoperation_tresult_)<br/>
+[Windows::Foundation::IAsyncOperation\<TResult>](/uwp/api/windows.foundation.iasyncoperation-1)<br/>
 Represents an asynchronous operation that returns a result.
 
-[Windows::Foundation::IAsyncOperationWithProgress\<TResult, TProgress>](/uwp/api/windows.foundation.iasyncoperationwithprogress_tresult_tprogress_)<br/>
+[Windows::Foundation::IAsyncOperationWithProgress\<TResult, TProgress>](/uwp/api/windows.foundation.iasyncoperationwithprogress-2)<br/>
 Represents an asynchronous operation that returns a result and reports progress.
 
 The notion of an *action* means that the asynchronous task doesn't produce a value (think of a function that returns `void`). The notion of an *operation* means that the asynchronous task does produce a value. The notion of *progress* means that the task can report progress messages to the caller. JavaScript, the .NET Framework, and Visual C++ each provides its own way to create instances of these interfaces for use across the ABI boundary. For Visual C++, the PPL provides the [concurrency::create_async](reference/concurrency-namespace-functions.md#create_async) function. This function creates a Windows Runtime asynchronous action or operation that represents the completion of a task. The `create_async` function takes a work function (typically a lambda expression), internally creates a `task` object, and wraps that task in one of the four asynchronous Windows Runtime interfaces.
@@ -84,7 +84,7 @@ The following example shows the various ways to create an `IAsyncAction` object 
 
 ## <a name="example-component"></a> Example: Creating a C++ Windows Runtime Component and Consuming it from C\#
 
-Consider an app that uses XAML and C# to define the UI and a C++ Windows Runtime component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four Windows Runtime asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](/uwp/api/Windows.Foundation.Collections.IVector_T_) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.
+Consider an app that uses XAML and C# to define the UI and a C++ Windows Runtime component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four Windows Runtime asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](/uwp/api/windows.foundation.collections.ivector-1) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.
 
 [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]
 

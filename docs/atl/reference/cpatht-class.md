@@ -51,8 +51,8 @@ The ATL/MFC string class to use for the path (see [CStringT](../../atl-mfc-share
 |[CPathT::Canonicalize](#canonicalize)|Call this method to convert the path to canonical form.|
 |[CPathT::Combine](#combine)|Call this method to concatenate a string representing a directory name and a string representing a file path name into one path.|
 |[CPathT::CommonPrefix](#commonprefix)|Call this method to determine whether the specified path shares a common prefix with the current path.|
-|[CPathT::CompactPath](#compactpath)|Call this method to truncate a file path to fit within a given pixel width by replacing path components with ellipses.|
-|[CPathT::CompactPathEx](#compactpathex)|Call this method to truncate a file path to fit within a given number of characters by replacing path components with ellipses.|
+|[CPathT::CompactPath](#compactpath)|Call this method to truncate a file path to fit within a given pixel width by replacing path components with ellipsis.|
+|[CPathT::CompactPathEx](#compactpathex)|Call this method to truncate a file path to fit within a given number of characters by replacing path components with ellipsis.|
 |[CPathT::FileExists](#fileexists)|Call this method to check whether the file at this path name exists.|
 |[CPathT::FindExtension](#findextension)|Call this method to find the position of the file extension within the path.|
 |[CPathT::FindFileName](#findfilename)|Call this method to find the position of the file name within the path.|
@@ -237,7 +237,7 @@ A prefix is one of these types: "C:\\\\", ".", "..", "..\\\\". For more informat
 
 ## <a name="compactpath"></a> CPathT::CompactPath
 
-Call this method to truncate a file path to fit within a given pixel width by replacing path components with ellipses.
+Call this method to truncate a file path to fit within a given pixel width by replacing path components with ellipsis.
 
 ```
 BOOL CompactPath(HDC hDC, UINT nWidth);
@@ -261,7 +261,7 @@ For more information, see [PathCompactPath](/windows/win32/api/shlwapi/nf-shlwap
 
 ## <a name="compactpathex"></a> CPathT::CompactPathEx
 
-Call this method to truncate a file path to fit within a given number of characters by replacing path components with ellipses.
+Call this method to truncate a file path to fit within a given number of characters by replacing path components with ellipsis.
 
 ```
 BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);

@@ -30,7 +30,7 @@ public value struct Guid
 
 ### Remarks
 
-To generate a new `Platform::Guid`, use the [Windows::Foundation::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid#Windows_Foundation_GuidHelper_CreateNewGuid) static method.
+To generate a new `Platform::Guid`, use the [Windows::Foundation::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid) static method.
 
 ### Requirements
 
