@@ -45,7 +45,7 @@ Allowed types are:
 
 - public enum class
 
-**UnorderedMap** is basically a wrapper for [std::unordered_map](../standard-library/unordered-map-class.md) that supports storage of Windows Runtime types. It is the a concrete implementation of the [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) and [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::UnorderedMap` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_).
+**UnorderedMap** is basically a wrapper for [std::unordered_map](../standard-library/unordered-map-class.md) that supports storage of Windows Runtime types. It is the a concrete implementation of the [Windows::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2) and [IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::UnorderedMap` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2).
 
 For more information, see [Collections](../cppcx/collections-c-cx.md).
 
@@ -99,7 +99,7 @@ virtual void Clear();
 
 ## <a name="first"></a> UnorderedMap::First Method
 
-Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) element in the unordered map.
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) element in the unordered map.
 
 ### Syntax
 
@@ -119,7 +119,7 @@ A convenient way to hold the iterator returned by First() is to assign the retur
 
 ## <a name="getview"></a> UnorderedMap::GetView Method
 
-Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface.
+Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView](/uwp/api/windows.foundation.collections.imapview-2) interface.
 
 ### Syntax
 
@@ -210,7 +210,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### Property Value/Return Value
 
-A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) and [CollectionChange Enumeration](/uwp/api/windows.foundation.collections.collectionchange).
+A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler-2) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](/uwp/api/windows.foundation.collections.imapchangedeventargs-1) and [CollectionChange Enumeration](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## .NET Framework Equivalent
 
@@ -234,7 +234,7 @@ The key portion of the key-value pair. The type of *key* is typename *K*.
 
 ## <a name="size"></a> UnorderedMap::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) elements in the UnorderedMap.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) elements in the UnorderedMap.
 
 ### Syntax
 

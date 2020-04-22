@@ -1,12 +1,13 @@
 ---
 title: "Raw pointers (C++)"
 description: "How to use raw pointers in C++"
-ms.date: "11/19/2019"
+ms.date: "04/21/2020"
 helpviewer_keywords: ["pointers [C++]"]
+no-loc: [void, nullptr, const, char, new, delete]
 ---
 # Raw pointers (C++)
 
-A pointer is a type of variable that stores the address of an object in memory and is used to access that object. A *raw pointer* is a pointer whose lifetime is not controlled by an encapsulating object such as a [smart pointer](smart-pointers-modern-cpp.md). A raw pointer can be assigned the address of another non-pointer variable, or it can be assigned a value of [nullptr](nullptr.md). A pointer that has not been assigned a value contains random data.
+A *pointer* is a type of variable. It stores the address of an object in memory, and is used to access that object. A *raw pointer* is a pointer whose lifetime is not controlled by an encapsulating object, such as a [smart pointer](smart-pointers-modern-cpp.md). A raw pointer can be assigned the address of another non-pointer variable, or it can be assigned a value of [nullptr](nullptr.md). A pointer that hasn't been assigned a value contains random data.
 
 A pointer can also be *dereferenced* to retrieve the value of the object that it points at. The *member access operator* provides access to an object's members.
 
@@ -16,19 +17,17 @@ A pointer can also be *dereferenced* to retrieve the value of the object that it
     int i = 5;
     p = &i; // assign pointer to address of object
     int j = *p; // dereference p to retrieve the value at its address
-
 ```
 
-A pointer can point to a typed object or to **void**. When a program allocates a new object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*; an owning pointer (or a copy of it) must be used to explicitly delete the heap-allocated object when it is no longer needed. Failure to delete the memory results in a *memory leak* and renders that memory location unavailable to any other program on the machine. For more information, see [new and delete operators](new-and-delete-operators.md).
+A pointer can point to a typed object or to **void**. When a program allocates an object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*. An owning pointer (or a copy of it) must be used to explicitly free the heap-allocated object when it's no longer needed. Failure to free the memory results in a *memory leak*, and renders that memory location unavailable to any other program on the machine. Memory allocated using **new** must be freed by using **delete** (or **delete\[]**). For more information, see [new and delete operators](new-and-delete-operators.md).
 
 ```cpp
-
     MyClass* mc = new MyClass(); // allocate object on the heap
     mc->print(); // access class member
     delete mc; // delete object (please don't forget!)
 ```
 
-A pointer (if it isn't declared as **const**) can be incremented or decremented so that it points to a new location in memory. This is called *pointer arithmetic* and is used in C-style programming to iterate over elements in arrays or other data structures. A **const** pointer can't be made to point to a different memory location, and in that sense is very similar to a [reference](references-cpp.md). For more information, see [const and volatile pointers](const-and-volatile-pointers.md).
+A pointer (if it isn't declared as **const**) can be incremented or decremented to point at another location in memory. This operation is called *pointer arithmetic*. It's used in C-style programming to iterate over elements in arrays or other data structures. A **const** pointer can't be made to point to a different memory location, and in that sense is similar to a [reference](references-cpp.md). For more information, see [const and volatile pointers](const-and-volatile-pointers.md).
 
 ```cpp
     // declare a C-style string. Compiler adds terminating '\0'.
@@ -42,13 +41,13 @@ A pointer (if it isn't declared as **const**) can be incremented or decremented 
     // pconst2 = &c2; // Error! pconst2 is const.
 ```
 
-On 64-bit operating systems, a pointer has a size of 64 bits; a system's pointer size determines how much addressable memory it can have. All copies of a pointer point to the same memory location. Pointers (along with references) are used extensively in C++ to pass larger objects to and from functions because it is usually far more efficient to copy an object's 64-bit address than to copy an entire object. When defining a function, specify pointer parameters as **const** unless you intend for the function to modify the object. In general, **const** references are the preferred way to pass objects to functions unless the value of the object can possibly be **nullptr**.
+On 64-bit operating systems, a pointer has a size of 64 bits. A system's pointer size determines how much addressable memory it can have. All copies of a pointer point to the same memory location. Pointers (along with references) are used extensively in C++ to pass larger objects to and from functions. That's because it's often more efficient to copy an object's address than to copy the entire object. When defining a function, specify pointer parameters as **const** unless you intend the function to modify the object. In general, **const** references are the preferred way to pass objects to functions unless the value of the object can possibly be **nullptr**.
 
 [Pointers to functions](#pointers_to_functions) enable functions to be passed to other functions and are used for "callbacks" in C-style programming. Modern C++ uses [lambda expressions](lambda-expressions-in-cpp.md) for this purpose.
 
 ## Initialization and member access
 
-The following example shows how to declare a raw pointer and initialize it with an object allocated on the heap, and then how to use it. It also shows a few of the dangers associated with raw pointers. (Remember, this is C-style programming and not modern C++!)
+The following example shows how to declare, initialize, and use a raw pointer. It's initialized using **new** to point an object allocated on the heap, which you must explicitly **delete**. The example also shows a few of the dangers associated with raw pointers. (Remember, this example is C-style programming and not modern C++!)
 
 ```cpp
 #include <iostream>
@@ -112,13 +111,13 @@ int main()
     pmc2->print(); // "Erika, 108"
 
     // Pass the pointer to a function.
-    func_A(mc);
+    func_A(pmc);
     pmc->print(); // "Erika, 3"
     pmc2->print(); // "Erika, 3"
 
     // Dereference the pointer and pass a copy
     // of the pointed-to object to a function
-    func_B(*mc);
+    func_B(*pmc);
     pmc->print(); // "Erika, 3" (original not modified by function)
 
     delete(pmc); // don't forget to give memory back to operating system!
@@ -128,7 +127,7 @@ int main()
 
 ## Pointer arithmetic and arrays
 
-Pointers and arrays are closely related. When an array is passed by-value to a function, it is passed as a pointer to the first element. The following example demonstrates the following important properties of pointers and arrays:
+Pointers and arrays are closely related. When an array is passed by-value to a function, it's passed as a pointer to the first element. The following example demonstrates the following important properties of pointers and arrays:
 
 - the `sizeof` operator returns the total size in bytes of an array
 - to determine the number of elements, divide total bytes by the size of one element
@@ -159,7 +158,7 @@ int main()
 }
 ```
 
-Certain arithmetic operations can be performed on non-const pointers to make them point to a new memory location. A pointer can be incremented and decremented using the **++**, **+=**, **-=** and **--** operators. This technique can be used in arrays and is especially useful in buffers of untyped data. A **void\*** increments by the size of a **char** (1 byte). A typed pointer increments by size of the type it points to.
+Certain arithmetic operations can be used on non-const pointers to make them point to another memory location. Pointers are incremented and decremented using the **++**, **+=**, **-=** and **--** operators. This technique can be used in arrays and is especially useful in buffers of untyped data. A **void\*** gets incremented by the size of a **char** (1 byte). A typed pointer gets incremented by size of the type it points to.
 
 The following example demonstrates how pointer arithmetic can be used to access individual pixels in a bitmap on Windows. Note the use of **new** and **delete**, and the dereference operator.
 
@@ -228,9 +227,9 @@ int main()
 
 ## void* pointers
 
-A pointer to **void** simply points to a raw memory location. Sometimes it is necessary to use **void\*** pointers, for example when passing between C++ code and C functions.
+A pointer to **void** simply points to a raw memory location. Sometimes it's necessary to use **void\*** pointers, for example when passing between C++ code and C functions.
 
-When a typed pointer is cast to a void pointer, the contents of the memory location are not changed, but the type information is lost, so that you can't perform increment or decrement operations. A memory location can be cast, for example, from MyClass* to void* and back again to MyClass*. Such operations are inherently error-prone and require great care to avoid errors. Modern C++ discourages the use of void pointers unless absolutely necessary.
+When a typed pointer is cast to a void pointer, the contents of the memory location are unchanged. However, the type information is lost, so that you can't do increment or decrement operations. A memory location can be cast, for example, from `MyClass*` to `void*` and back again to `MyClass*`. Such operations are inherently error-prone and require great care to avoid errors. Modern C++ discourages the use of void pointers in almost all circumstances.
 
 ```cpp
 
@@ -286,7 +285,7 @@ int main()
 
 ## <a name="pointers_to_functions"></a> Pointers to functions
 
-In C-style programming, function pointers are used primarily to pass functions to other functions. In this scenario, the caller can customize the behavior of a function without modifying it. In modern C++, [lambda expressions](lambda-expressions-in-cpp.md) provide the same capability with greater type safety and other advantages.
+In C-style programming, function pointers are used primarily to pass functions to other functions. This technique allows the caller to customize the behavior of a function without modifying it. In modern C++, [lambda expressions](lambda-expressions-in-cpp.md) provide the same capability with greater type safety and other advantages.
 
 A function pointer declaration specifies the signature that the pointed-to function must have:
 
@@ -304,7 +303,7 @@ void (*x)();
 int (*i)(int i, string s, double d);
 ```
 
-The following example shows a function `combine` that takes as a parameter any function that accepts a `std::string` and returns a `std::string`. Depending on the function that is passed to `combine` it will either prepend or append a string.
+The following example shows a function `combine` that takes as a parameter any function that accepts a `std::string` and returns a `std::string`. Depending on the function that's passed to `combine`, it either prepends or appends a string.
 
 ```cpp
 #include <iostream>

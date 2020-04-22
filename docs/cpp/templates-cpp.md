@@ -64,7 +64,7 @@ The keyword **class** is equivalent to **typename** in this context. You can exp
 template <class T, class U, class V> class Foo{};
 ```
 
-You can use the ellipses operator (...) to define a template that takes an arbitrary number of zero or more type parameters:
+You can use the ellipsis operator (...) to define a template that takes an arbitrary number of zero or more type parameters:
 
 ```cpp
 template<typename... Arguments> class vtclass;
