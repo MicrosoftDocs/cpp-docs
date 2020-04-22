@@ -33,7 +33,7 @@ A type that provides a function object that can compare two element values as so
 
 ### Remarks
 
-MapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView \<K,V>](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).
+MapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView \<K,V>](/uwp/api/windows.foundation.collections.imapview-2) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).
 
 ### Members
 
