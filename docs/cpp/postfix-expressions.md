@@ -126,11 +126,11 @@ double& func2( double& d, const char *c ) {
 }
 ```
 
-## Ellipses and default arguments
+## Ellipsis and default arguments
 
 Functions can be declared to accept fewer arguments than specified in the function definition, using one of two methods: ellipsis (`...`) or default arguments.
 
-Ellipses denote that arguments may be required but that the number and types are not specified in the declaration. This is normally poor C++ programming practice because it defeats one of the benefits of C++: type safety. Different conversions are applied to functions declared with ellipses than to those functions for which the formal and actual argument types are known:
+Ellipsis denotes that arguments may be required but that the number and types are not specified in the declaration. This is normally poor C++ programming practice because it defeats one of the benefits of C++: type safety. Different conversions are applied to functions declared with ellipsis than to those functions for which the formal and actual argument types are known:
 
 - If the actual argument is of type **float**, it is promoted to type **double** prior to the function call.
 
@@ -138,14 +138,14 @@ Ellipses denote that arguments may be required but that the number and types are
 
 - Any argument of class type is passed by value as a data structure; the copy is created by binary copying instead of by invoking the class's copy constructor (if one exists).
 
-Ellipses, if used, must be declared last in the argument list. For more information about passing a variable number of arguments, see the discussion of [va_arg, va_start, and va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) in the *Run-Time Library Reference*.
+Ellipsis, if used, must be declared last in the argument list. For more information about passing a variable number of arguments, see the discussion of [va_arg, va_start, and va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) in the *Run-Time Library Reference*.
 
 For information on default arguments in CLR programming, see [Variable Argument Lists (...) (C++/CLI)](../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 Default arguments enable you to specify the value an argument should assume if none is supplied in the function call. The following code fragment shows how default arguments work. For more information about restrictions on specifying default arguments, see [Default Arguments](../cpp/default-arguments.md).
 
 ```cpp
-// expre_Ellipses_and_Default_Arguments.cpp
+// expre_Ellipsis_and_Default_Arguments.cpp
 // compile with: /EHsc
 #include <iostream>
 

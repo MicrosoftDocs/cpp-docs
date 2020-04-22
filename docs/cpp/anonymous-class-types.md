@@ -45,7 +45,7 @@ Anonymous classes are subject to certain restrictions. (For more information abo
 
 - Cannot have a constructor or destructor.
 
-- Cannot be passed as arguments to functions (unless type checking is defeated using ellipses).
+- Cannot be passed as arguments to functions (unless type checking is defeated using ellipsis).
 
 - Cannot be returned as return values from functions.
 

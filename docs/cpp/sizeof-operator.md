@@ -10,7 +10,7 @@ ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
 Yields the size of its operand with respect to the size of type **char**.
 
 > [!NOTE]
-> For information about the `sizeof ...` operator, see [Ellipses and Variadic Templates](../cpp/ellipses-and-variadic-templates.md).
+> For information about the `sizeof ...` operator, see [Ellipsis and variadic templates](../cpp/ellipses-and-variadic-templates.md).
 
 ## Syntax
 
