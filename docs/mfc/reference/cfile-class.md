@@ -689,7 +689,7 @@ The exception handler for this method must delete the exception object after the
 
 Sets the value of the file pointer to the beginning of the file.
 
-```
+```cpp
 void SeekToBegin();
 ```
 

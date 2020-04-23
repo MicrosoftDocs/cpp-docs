@@ -41,7 +41,7 @@ Header: afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
 Called by MFC when a view is activated or deactivated.
 
-```
+```cpp
 void OnActivateView(bool activate);
 ```
 
@@ -54,7 +54,7 @@ Indicates whether the view is being activated or deactivated.
 
 Called by the framework after the view is first attached to the document, but before the view is initially displayed.
 
-```
+```cpp
 void OnInitialUpdate();
 ```
 
@@ -62,7 +62,7 @@ void OnInitialUpdate();
 
 Called by MFC after the view's document has been modified.
 
-```
+```cpp
 void OnUpdate();
 ```
 

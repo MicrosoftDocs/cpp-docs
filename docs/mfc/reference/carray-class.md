@@ -165,7 +165,7 @@ The array grows one element at a time.
 
 Use this member function to copy the elements of one array to another.
 
-```
+```cpp
 void Copy(const CArray& src);
 ```
 
@@ -214,7 +214,7 @@ It is used to implement the left-side assignment operator for arrays.
 
 Frees any extra memory that was allocated while the array was grown.
 
-```
+```cpp
 void FreeExtra();
 ```
 
@@ -341,7 +341,7 @@ The condition `GetUpperBound( )` = -1 indicates that the array contains no eleme
 
 The first version of `InsertAt` inserts one element (or multiple copies of an element) at a specified index in an array.
 
-```
+```cpp
 void InsertAt(
     INT_PTR nIndex,
     ARG_TYPE newElement,
@@ -458,7 +458,7 @@ For arrays in which an element contains a pointer to one of its own members, or 
 
 Removes all the elements from this array.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -474,7 +474,7 @@ If the array is already empty, the function still works.
 
 Removes one or more elements starting at a specified index in an array.
 
-```
+```cpp
 void RemoveAt(
     INT_PTR nIndex,
     INT_PTR nCount = 1);
@@ -502,7 +502,7 @@ If you try to remove more elements than are contained in the array above the rem
 
 Sets the array element at the specified index.
 
-```
+```cpp
 void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 ```
 
@@ -531,7 +531,7 @@ You must ensure that your index value represents a valid position in the array. 
 
 Sets the array element at the specified index.
 
-```
+```cpp
 void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
 ```
 
@@ -558,7 +558,7 @@ The array grows automatically if necessary (that is, the upper bound is adjusted
 
 Establishes the size of an empty or existing array; allocates memory if necessary.
 
-```
+```cpp
 void SetSize(
     INT_PTR nNewSize,
     INT_PTR nGrowBy = -1);

@@ -262,7 +262,7 @@ See [IPropertyPage::Move](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-move) 
 
 Flags the property page's state as changed or unchanged, depending on the value of *bDirty*.
 
-```
+```cpp
 void SetDirty(BOOL bDirty);
 ```
 

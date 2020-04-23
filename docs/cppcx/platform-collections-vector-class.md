@@ -8,7 +8,7 @@ ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
 ---
 # Platform::Collections::Vector Class
 
-Represents a sequential collection of objects that can be individually accessed by index. Implements [Windows::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) to help with XAML [data binding](/windows/uwp/data-binding/data-binding-in-depth).
+Represents a sequential collection of objects that can be individually accessed by index. Implements [Windows::Foundation::Collections::IObservableVector](/uwp/api/windows.foundation.collections.iobservablevector-1) to help with XAML [data binding](/windows/uwp/data-binding/data-binding-in-depth).
 
 ## Syntax
 
@@ -39,9 +39,9 @@ Allowed types are:
 
 1. public enum class
 
-The **Vector** class is the C++ concrete implementation of the [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) interface.
+The **Vector** class is the C++ concrete implementation of the [Windows::Foundation::Collections::IVector](/uwp/api/windows.foundation.collections.ivector-1) interface.
 
-If you attempt to use a **Vector** type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the parameter or return value type to [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).
+If you attempt to use a **Vector** type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the parameter or return value type to [Windows::Foundation::Collections::IVector](/uwp/api/windows.foundation.collections.ivector-1). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).
 
 ### Members
 
@@ -74,7 +74,7 @@ If you attempt to use a **Vector** type in a public return value or parameter, c
 |||
 |-|-|
 |Name|Description|
-|event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Occurs when the Vector changes.|
+|event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1)|Occurs when the Vector changes.|
 
 ## Inheritance Hierarchy
 

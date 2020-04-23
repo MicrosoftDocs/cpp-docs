@@ -61,7 +61,7 @@ Destroys a `CJumpList` object.
 
 Aborts a list-building transaction without committing.
 
-```
+```cpp
 void AbortList();
 ```
 
@@ -218,7 +218,7 @@ If this parameter is FALSE the list is not automatically committed in  destructo
 
 Removes all tasks and destinations that have been added to the current instance of `CJumpList` so far.
 
-```
+```cpp
 void ClearAll();
 ```
 
@@ -230,7 +230,7 @@ This method clears and releases all data and internal interfaces.
 
 Removes all destinations that have been added to the current instance of CJumpList so far.
 
-```
+```cpp
 void ClearAllDestinations();
 ```
 
@@ -312,7 +312,7 @@ You don't need to call this method explicitly unless you wish to retrieve a poin
 
 Sets the Application User Model ID for the list that will be built.
 
-```
+```cpp
 void SetAppID(LPCTSTR strAppID);
 ```
 

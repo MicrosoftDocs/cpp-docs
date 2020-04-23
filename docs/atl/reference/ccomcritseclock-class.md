@@ -96,7 +96,7 @@ If the object is already locked, an ASSERT error will occur in debug builds.
 
 Call this method to unlock the critical section object.
 
-```
+```cpp
 void Unlock() throw();
 ```
 

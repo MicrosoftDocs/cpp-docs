@@ -114,7 +114,7 @@ If the first version is used, an empty element is created using its default cons
 
 Call this method to add an existing list to the head of the list.
 
-```
+```cpp
 void AddHeadList(const CAtlList<E, ETraits>* plNew);
 ```
 
@@ -161,7 +161,7 @@ If the first version is used, an empty element is created using its default cons
 
 Call this method to add an existing list to the tail of this list.
 
-```
+```cpp
 void AddTailList(const CAtlList<E, ETraits>* plNew);
 ```
 
@@ -182,7 +182,7 @@ The list pointed to by *plNew* is inserted after the last element (if any) in th
 
 Call this method to confirm the list is valid.
 
-```
+```cpp
 void AssertValid() const;
 ```
 
@@ -560,7 +560,7 @@ Returns true if the list contains no objects, otherwise false.
 
 Call this method to move the specified element to the head of the list.
 
-```
+```cpp
 void MoveToHead(POSITION pos) throw();
 ```
 
@@ -581,7 +581,7 @@ The specified element is moved from its current position to the head of the list
 
 Call this method to move the specified element to the tail of the list.
 
-```
+```cpp
 void MoveToTail(POSITION pos) throw();
 ```
 
@@ -602,7 +602,7 @@ See the example for [CAtlList::MoveToHead](#movetohead).
 
 Call this method to remove all of the elements from the list.
 
-```
+```cpp
 void RemoveAll() throw();
 ```
 
@@ -618,7 +618,7 @@ See the example for [CAtlList::IsEmpty](#isempty).
 
 Call this method to remove a single element from the list.
 
-```
+```cpp
 void RemoveAt(POSITION pos) throw();
 ```
 
@@ -661,7 +661,7 @@ The head element is deleted from the list, and memory is freed. A copy of the el
 
 Call this method to remove the element at the head of the list without returning a value.
 
-```
+```cpp
 void RemoveHeadNoReturn() throw();
 ```
 
@@ -697,7 +697,7 @@ The tail element is deleted from the list, and memory is freed. A copy of the el
 
 Call this method to remove the element at the tail of the list without returning a value.
 
-```
+```cpp
 void RemoveTailNoReturn() throw();
 ```
 
@@ -713,7 +713,7 @@ See the example for [CAtlList::IsEmpty](#isempty).
 
 Call this method to set the value of the element at a given position in the list.
 
-```
+```cpp
 void SetAt(POSITION pos, INARGTYPE element);
 ```
 
@@ -737,7 +737,7 @@ Replaces the existing value with *element*. In debug builds, an assertion failur
 
 Call this method to swap elements in the list.
 
-```
+```cpp
 void SwapElements(POSITION pos1, POSITION pos2) throw();
 ```
 

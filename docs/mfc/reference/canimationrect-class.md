@@ -85,7 +85,7 @@ The CAnimationRect class encapsulates four CAnimationVariable objects and can re
 
 Adds transitions for left, top, right and bottom coordinates.
 
-```
+```cpp
 void AddTransition(
     CBaseTransition* pLeftTransition,
     CBaseTransition* pTopTransition,
@@ -365,7 +365,7 @@ This function internally calls GetValue. If GetValue for some reason fails, the 
 
 Assigns rect to CAnimationRect.
 
-```
+```cpp
 void operator=(const RECT& rect);
 ```
 
@@ -382,7 +382,7 @@ It's recommended to do that before animation start, because this operator calls 
 
 Sets default value.
 
-```
+```cpp
 void SetDefaultValue(const CRect& rect);
 ```
 

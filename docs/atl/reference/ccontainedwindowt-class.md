@@ -366,7 +366,7 @@ The subclassed window now uses [CContainedWindowT::WindowProc](#windowproc). The
 
 Changes which message map will be used to process the contained window's messages.
 
-```
+```cpp
 void SwitchMessageMap(DWORD dwMsgMapID);
 ```
 

@@ -716,7 +716,7 @@ This method sends the [MCM_GETCURRENTVIEW](/windows/win32/Controls/mcm-getcurren
 
 Sets the width of the border of the current month calendar control.
 
-```
+```cpp
 void SetCalendarBorder(int cxyBorder);
 ```
 
@@ -748,7 +748,7 @@ The following code example sets the border width of the month calendar control t
 
 Sets the default width of the border of the current month calendar control.
 
-```
+```cpp
 void SetCalendarBorderDefault();
 ```
 
@@ -1127,7 +1127,7 @@ This member function implements the behavior of the Win32 message [MCM_SETSELRAN
 
 Sets the calendar control for the current day.
 
-```
+```cpp
 void SetToday(const COleDateTime& refDateTime);
 void SetToday(const CTime* pDateTime);
 void SetToday(const LPSYSTEMTIME pDateTime);

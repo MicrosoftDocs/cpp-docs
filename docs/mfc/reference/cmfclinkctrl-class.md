@@ -86,7 +86,7 @@ Override this method when you want to use your own code to draw the button's foc
 
 Displays a specified URL as the button text.
 
-```
+```cpp
 void SetURL(LPCTSTR lpszURL);
 ```
 
@@ -101,7 +101,7 @@ void SetURL(LPCTSTR lpszURL);
 
 Sets the implicit protocol (for example, "http:") of the URL.
 
-```
+```cpp
 void SetURLPrefix(LPCTSTR lpszPrefix);
 ```
 

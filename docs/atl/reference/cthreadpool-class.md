@@ -311,7 +311,7 @@ Note that *dwMaxWait* is the time that the pool will wait for a single thread to
 
 Call this method to shut down the thread pool.
 
-```
+```cpp
 void Shutdown(DWORD dwMaxWait = 0) throw();
 ```
 

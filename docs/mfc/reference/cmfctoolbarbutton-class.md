@@ -1521,7 +1521,7 @@ The default implementation of this method does nothing. Override this method to 
 
 Sets the bounding rectangle of the button.
 
-```
+```cpp
 void SetRect(const CRect rect);
 ```
 
@@ -1555,7 +1555,7 @@ The default implementation sets the [CMFCToolBarButton::m_nStyle](#m_nstyle) dat
 
 Specifies whether the button is visible.
 
-```
+```cpp
 void SetVisible(BOOL bShow=TRUE);
 ```
 
@@ -1572,7 +1572,7 @@ Use this function to hide or show a particular toolbar button. Call the [CPane::
 
 Shows or hides the button.
 
-```
+```cpp
 void Show(BOOL bShow);
 ```
 

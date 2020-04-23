@@ -13,7 +13,7 @@ Assigns a string to this `_variant_t` object.
 
 ## Syntax
 
-```
+```cpp
 void SetString(const char* pSrc);
 ```
 

@@ -75,7 +75,7 @@ virtual ~CD2DSolidColorBrush();
 
 Attaches existing resource interface to the object
 
-```
+```cpp
 void Attach(ID2D1SolidColorBrush* pResource);
 ```
 
@@ -213,7 +213,7 @@ Pointer to an ID2D1SolidColorBrush interface or NULL if object is not initialize
 
 Specifies the color of this solid color brush
 
-```
+```cpp
 void SetColor(D2D1_COLOR_F color);
 ```
 

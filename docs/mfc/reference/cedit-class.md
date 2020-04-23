@@ -203,7 +203,7 @@ For more information, see [EM_CHARFROMPOS](/windows/win32/Controls/em-charfrompo
 
 Call this function to delete (clear) the current selection (if any) in the edit control.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -223,7 +223,7 @@ For more information, see [WM_CLEAR](/windows/win32/dataxchg/wm-clear) in the Wi
 
 Call this function to coy the current selection (if any) in the edit control to the Clipboard in CF_TEXT format.
 
-```
+```cpp
 void Copy();
 ```
 
@@ -293,7 +293,7 @@ Apply the following [window styles](styles-used-by-mfc.md#window-styles) to an e
 
 Call this function to delete (cut) the current selection (if any) in the edit control and copy the deleted text to the Clipboard in CF_TEXT format.
 
-```
+```cpp
 void Cut();
 ```
 
@@ -313,7 +313,7 @@ For more information, see [WM_CUT](/windows/win32/dataxchg/wm-cut) in the Window
 
 Call this function to reset (clear) the undo flag of an edit control.
 
-```
+```cpp
 void EmptyUndoBuffer();
 ```
 
@@ -624,7 +624,7 @@ This method sends the [EM_GETPASSWORDCHAR](/windows/win32/Controls/em-getpasswor
 
 Call this function to get the formatting rectangle of an edit control.
 
-```
+```cpp
 void GetRect(LPRECT lpRect) const;
 ```
 
@@ -697,7 +697,7 @@ This function sends the [EM_HIDEBALLOONTIP](/windows/win32/Controls/em-hideballo
 
 Call this function to limit the length of the text that the user may enter into an edit control.
 
-```
+```cpp
 void LimitText(int nChars = 0);
 ```
 
@@ -814,7 +814,7 @@ This method is supported by the [EM_LINELENGTH](/windows/win32/Controls/em-linel
 
 Call this function to scroll the text of a multiple-line edit control.
 
-```
+```cpp
 void LineScroll(
     int nLines,
     int nChars = 0);
@@ -846,7 +846,7 @@ For more information, see [EM_LINESCROLL](/windows/win32/Controls/em-linescroll)
 
 Call this function to insert the data from the Clipboard into the `CEdit` at the insertion point.
 
-```
+```cpp
 void Paste();
 ```
 
@@ -894,7 +894,7 @@ For more information, see [EM_POSFROMCHAR](/windows/win32/Controls/em-posfromcha
 
 Call this function to replace the current selection in an edit control with the text specified by *lpszNewText*.
 
-```
+```cpp
 void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
 ```
 
@@ -960,7 +960,7 @@ The following example demonstrates the [CEdit::SetCueBanner](#setcuebanner) meth
 
 Call this function to set the handle to the local memory that will be used by a multiple-line edit control.
 
-```
+```cpp
 void SetHandle(HLOCAL hBuffer);
 ```
 
@@ -994,7 +994,7 @@ For more information, see [EM_SETHANDLE](/windows/win32/Controls/em-sethandle), 
 
 Highlights a range of text that is displayed in the current edit control.
 
-```
+```cpp
 void SetHighlight(
     int ichStart,
     int ichEnd);
@@ -1015,7 +1015,7 @@ This method sends the [EM_SETHILITE](/windows/win32/Controls/em-sethilite) messa
 
 Call this member function to set the text limit for this `CEdit` object.
 
-```
+```cpp
 void SetLimitText(UINT nMax);
 ```
 
@@ -1042,7 +1042,7 @@ For more information, see [EM_SETLIMITTEXT](/windows/win32/Controls/em-setlimitt
 
 Call this method to set the left and right margins of this edit control.
 
-```
+```cpp
 void SetMargins(
     UINT nLeft,
     UINT nRight);
@@ -1071,7 +1071,7 @@ For more information, see [EM_SETMARGINS](/windows/win32/Controls/em-setmargins)
 
 Call this function to set or clear the modified flag for an edit control.
 
-```
+```cpp
 void SetModify(BOOL bModified = TRUE);
 ```
 
@@ -1094,7 +1094,7 @@ For more information, see [EM_SETMODIFY](/windows/win32/Controls/em-setmodify) i
 
 Call this function to set or remove a password character displayed in an edit control when the user types text.
 
-```
+```cpp
 void SetPasswordChar(TCHAR ch);
 ```
 
@@ -1150,7 +1150,7 @@ For more information, see [EM_SETREADONLY](/windows/win32/Controls/em-setreadonl
 
 Call this function to set the dimensions of a rectangle using the specified coordinates.
 
-```
+```cpp
 void SetRect(LPCRECT lpRect);
 ```
 
@@ -1179,7 +1179,7 @@ For more information, see [EM_SETRECT](/windows/win32/Controls/em-setrect) in th
 
 Call this function to set the formatting rectangle of a multiple-line edit control.
 
-```
+```cpp
 void SetRectNP(LPCRECT lpRect);
 ```
 
@@ -1210,7 +1210,7 @@ For more information, see [EM_SETRECTNP](/windows/win32/Controls/em-setrectnp) i
 
 Call this function to select a range of characters in an edit control.
 
-```
+```cpp
 void SetSel(
     DWORD dwSelection,
     BOOL bNoScroll = FALSE);
@@ -1247,7 +1247,7 @@ For more information, see [EM_SETSEL](/windows/win32/Controls/em-setsel) in the 
 
 Call this function to set the tab stops in a multiple-line edit control.
 
-```
+```cpp
 void SetTabStops();
 BOOL SetTabStops(const int& cxEachStop);
 

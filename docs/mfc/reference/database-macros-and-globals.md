@@ -32,7 +32,7 @@ For MFC database (or DAO) support from a regular MFC DLL that is dynamically lin
 
 ### Syntax
 
-```
+```cpp
 void AFXAPI AfxDbInitModule( );
 ```
 

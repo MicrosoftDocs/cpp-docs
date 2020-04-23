@@ -135,7 +135,7 @@ In debug builds, an ATLASSERT will be raised if the `CAtlArray` argument is not 
 
 Call this method to confirm that the array object is valid.
 
-```
+```cpp
 void AssertValid() const;
 ```
 
@@ -179,7 +179,7 @@ Frees up any resources used by the array object.
 
 Call this method to copy the elements of one array to another.
 
-```
+```cpp
 void Copy(const CAtlArray<E, ETraits>& aSrc);
 ```
 
@@ -207,7 +207,7 @@ In debug builds, an ATLASSERT will be raised if the existing `CAtlArray` object 
 
 Call this method to remove any empty elements from the array.
 
-```
+```cpp
 void FreeExtra() throw();
 ```
 
@@ -292,7 +292,7 @@ typedef ETraits::INARGTYPE INARGTYPE;
 
 Call this method to insert one array into another.
 
-```
+```cpp
 void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
 ```
 
@@ -321,7 +321,7 @@ In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not va
 
 Call this method to insert a new element (or multiple copies of an element) into the array object.
 
-```
+```cpp
 void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 ```
 
@@ -402,7 +402,7 @@ typedef ETraits::OUTARGTYPE OUTARGTYPE;
 
 Call this method to remove all elements from the array object.
 
-```
+```cpp
 void RemoveAll() throw();
 ```
 
@@ -420,7 +420,7 @@ See the example for [CAtlArray::IsEmpty](#isempty).
 
 Call this method to remove one or more elements from the array.
 
-```
+```cpp
 void RemoveAt(size_t iElement, size_t nCount = 1);
 ```
 
@@ -446,7 +446,7 @@ In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not va
 
 Call this method to set the value of an element in the array object.
 
-```
+```cpp
 void SetAt(size_t iElement, INARGTYPE element);
 ```
 
@@ -500,7 +500,7 @@ See the example for [CAtlArray::GetData](#getdata).
 
 Call this method to set the value of an element in the array object, expanding the array as required.
 
-```
+```cpp
 void SetAtGrow(size_t iElement, INARGTYPE element);
 ```
 

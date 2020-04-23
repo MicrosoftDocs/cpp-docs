@@ -149,7 +149,7 @@ For related information, see the topic "Append Method" in DAO Help.
 
 Call this member function to initiate a transaction.
 
-```
+```cpp
 void BeginTrans();
 ```
 
@@ -208,7 +208,7 @@ For related information, see the topic "Close Method" in DAO Help.
 
 Call this member function to commit a transaction — save a group of edits and updates to one or more databases in the workspace.
 
-```
+```cpp
 void CommitTrans();
 ```
 
@@ -373,7 +373,7 @@ The number of open databases in the workspace.
 
 Call this member function to obtain various kinds of information about a database open in the workspace.
 
-```
+```cpp
 void GetDatabaseInfo(
     int nIndex,
     CDaoDatabaseInfo& dbinfo,
@@ -543,7 +543,7 @@ This count does not include any open workspaces not appended to the collection. 
 
 Call this member function to obtain various kinds of information about a workspace open in the session.
 
-```
+```cpp
 void GetWorkspaceInfo(
     int nIndex,
     CDaoWorkspaceInfo& wkspcinfo,
@@ -690,7 +690,7 @@ For more information about repairing databases, see the topic "RepairDatabase Me
 
 Call this member function to end the current transaction and restore all databases in the workspace to their condition before the transaction was begun.
 
-```
+```cpp
 void Rollback();
 ```
 
@@ -788,7 +788,7 @@ You can use this mechanism to configure the database engine with user-provided r
 
 Call this member function to set the value of the DAO IsolateODBCTrans property for the workspace.
 
-```
+```cpp
 void SetIsolateODBCTrans(BOOL bIsolateODBCTrans);
 ```
 

@@ -90,7 +90,7 @@ COleMessageFilter();
 
 Enables and disables the busy dialog box, which is displayed when the message-pending delay expires (see [SetRetryReply](#setretryreply)) during an OLE call.
 
-```
+```cpp
 void EnableBusyDialog(BOOL bEnableBusy = TRUE);
 ```
 
@@ -103,7 +103,7 @@ Specifies whether the "busy" dialog box is enabled or disabled.
 
 Enables and disables the "not responding" dialog box, which is displayed if a keyboard or mouse message is pending during an OLE call and the call has timed out.
 
-```
+```cpp
 void EnableNotRespondingDialog(BOOL bEnableNotResponding = TRUE);
 ```
 
@@ -173,7 +173,7 @@ The framework's default message filter is automatically registered during initia
 
 Revokes a previous registration performed by a call to [Register](#register).
 
-```
+```cpp
 void Revoke();
 ```
 
@@ -187,7 +187,7 @@ The default message filter, which is created and registered automatically by the
 
 This function sets the application's "busy reply."
 
-```
+```cpp
 void SetBusyReply(SERVERCALL nBusyReply);
 ```
 
@@ -214,7 +214,7 @@ By default, the busy reply is SERVERCALL_RETRYLATER. This reply causes the calli
 
 Determines how long the calling application waits for a response from the called application before taking further action.
 
-```
+```cpp
 void SetMessagePendingDelay(DWORD nTimeout = 5000);
 ```
 
@@ -231,7 +231,7 @@ This function works in concert with [SetRetryReply](#setretryreply).
 
 Determines the calling application's action when it receives a busy response from a called application.
 
-```
+```cpp
 void SetRetryReply(DWORD nRetryReply = 0);
 ```
 

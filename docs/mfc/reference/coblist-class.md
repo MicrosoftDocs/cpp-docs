@@ -697,7 +697,7 @@ The following table shows other member functions that are similar to `CObList::I
 
 Removes all the elements from this list and frees the associated `CObList` memory.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -724,7 +724,7 @@ See [CObList::CObList](#coblist) for a listing of the `CAge` class.
 
 Removes the specified element from this list.
 
-```
+```cpp
 void RemoveAt(POSITION position);
 ```
 
@@ -824,7 +824,7 @@ See [CObList::CObList](#coblist) for a listing of the `CAge` class.
 
 Sets the element at a given position.
 
-```
+```cpp
 void SetAt(
     POSITION pos,
     CObject* newElement);

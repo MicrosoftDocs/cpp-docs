@@ -13,7 +13,7 @@ Clears the encapsulated `VARIANT` object.
 
 ## Syntax
 
-```
+```cpp
 void Clear( );
 ```
 

@@ -133,7 +133,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 Resets the shortcut key.
 
-```
+```cpp
 void ResetKey();
 ```
 

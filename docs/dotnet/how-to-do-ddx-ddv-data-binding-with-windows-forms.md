@@ -35,7 +35,7 @@ class CMFC01Dlg : public CDialog
 
 Put the following code in the implementation of CMFC01Dlg:
 
-```
+```cpp
 void CMFC01Dlg::DoDataExchange(CDataExchange* pDX)
 {
    CDialog::DoDataExchange(pDX);
@@ -56,7 +56,7 @@ Now we will add the handler method for a click on the OK button. Click the **Res
 
 Define the handler as follows.
 
-```
+```cpp
 void CMFC01Dlg::OnBnClickedOk()
 {
    AfxMessageBox(CString(m_MyControl.GetControl()->textBox1->Text));

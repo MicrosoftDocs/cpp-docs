@@ -4104,7 +4104,7 @@
                       href: cpp/types-of-expressions.md
                     - name: Primary expressions
                       href: cpp/primary-expressions.md
-                    - name: Ellipses and variadic templates
+                    - name: Ellipsis and variadic templates
                       href: cpp/ellipses-and-variadic-templates.md
                     - name: Postfix expressions
                       href: cpp/postfix-expressions.md

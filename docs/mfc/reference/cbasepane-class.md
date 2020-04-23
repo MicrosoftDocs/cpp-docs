@@ -209,7 +209,7 @@ virtual void AccNotifyObjectFocusEvent(int);
 
 Adds a pane to the docking manager.
 
-```
+```cpp
 void AddPane(CBasePane* pBar);
 ```
 
@@ -606,7 +606,7 @@ Call this function to dock a pane to another pane or a dock bar ( [CDockSite Cla
 
 Docks the pane by using run-time type information.
 
-```
+```cpp
 void DockPaneUsingRTTI(BOOL bUseDockSite);
 ```
 
@@ -1572,7 +1572,7 @@ virtual void RecalcLayout();
 
 Unregisters a pane and removes it from the list in the docking manager.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pBar,
     BOOL bDestroy = TRUE,
@@ -1669,7 +1669,7 @@ virtual void SetControlBarStyle(DWORD dwNewStyle);
 
 Sets the docking mode for the pane.
 
-```
+```cpp
 void SetDockingMode(AFX_DOCK_TYPE dockModeNew);
 ```
 

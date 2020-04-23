@@ -179,7 +179,7 @@ If checklist box items are not all the same height, the checklist box style (spe
 
 Call this function to enable or disable a checklist box item.
 
-```
+```cpp
 void Enable(
     int nIndex,
     BOOL bEnabled = TRUE);
@@ -296,7 +296,7 @@ The default implementation only returns the default position and size of the che
 
 Sets the state of the specified check box.
 
-```
+```cpp
 void SetCheck(
     int nIndex,
     int nCheck);
@@ -324,7 +324,7 @@ The following table lists possible values for the *nCheck* parameter.
 
 Call this function to set the style of check boxes in the checklist box.
 
-```
+```cpp
 void SetCheckStyle(UINT nStyle);
 ```
 

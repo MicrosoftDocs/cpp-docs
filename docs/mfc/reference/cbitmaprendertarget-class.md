@@ -60,7 +60,7 @@ class CBitmapRenderTarget : public CRenderTarget;
 
 Attaches existing render target interface to the object
 
-```
+```cpp
 void Attach(ID2D1BitmapRenderTarget* pTarget);
 ```
 

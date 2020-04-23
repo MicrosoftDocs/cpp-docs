@@ -128,7 +128,7 @@ The following diagram shows a figure of the Home category from the RibbonApp sam
 
 Adds the specified ribbon element to the array of ribbon elements that are displayed on the customization dialog box.
 
-```
+```cpp
 void AddHidden(CMFCRibbonBaseElement* pElem);
 ```
 
@@ -343,7 +343,7 @@ Pointer to a ribbon element if the method was successful; otherwise NULL.
 
 Retrieves all ribbon elements in the ribbon category.
 
-```
+```cpp
 void GetElements(
     CArray <CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
 ```
@@ -361,7 +361,7 @@ Ribbon elements that are designed for use on the quick access toolbar are includ
 
 Retrieves all ribbon elements that are associated with the specified command ID.
 
-```
+```cpp
 void GetElementsByID(
     UINT uiCmdID,
     CArray <CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
@@ -465,7 +465,7 @@ The size retrieved includes the global image scale factor.
 
 Retrieves the command IDs for the ribbon elements that are contained in the ribbon category.
 
-```
+```cpp
 void GetItemIDsList(
     CList<UINT, UINT>& lstItems,
     BOOL bHiddenOnly = FALSE) const;
@@ -749,7 +749,7 @@ The vertical location of text, in pixels, on ribbon buttons that display large i
 
 Retrieves all visible elements that belong to the ribbon category.
 
-```
+```cpp
 void GetVisibleElements(
     CArray <CMFCRibbonBaseElement*,
     CMFCRibbonBaseElement*>& arElements);
@@ -1204,7 +1204,7 @@ virtual void ReposPanels(CDC* pDC);
 
 Defines the order in which the ribbon panels of the ribbon category collapse.
 
-```
+```cpp
 void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
 ```
 
@@ -1231,7 +1231,7 @@ The following example demonstrates how to use the `SetCollapseOrder` method in t
 
 Sets the user-defined data to be associated with the ribbon category.
 
-```
+```cpp
 void SetData(DWORD_PTR dwData);
 ```
 
@@ -1244,7 +1244,7 @@ void SetData(DWORD_PTR dwData);
 
 Assigns a keytip to the ribbon category.
 
-```
+```cpp
 void SetKeys(LPCTSTR lpszKeys);
 ```
 
@@ -1261,7 +1261,7 @@ Keytips are displayed when the user presses the Alt key or the F10 key.
 
 Assigns a name and keytip to the ribbon category.
 
-```
+```cpp
 void SetName(LPCTSTR lpszName);
 ```
 
@@ -1278,7 +1278,7 @@ To set the keytip for the ribbon category, append a newline escape sequence foll
 
 Sets the color of the ribbon category.
 
-```
+```cpp
 void SetTabColor(AFX_RibbonCategoryColor color);
 ```
 

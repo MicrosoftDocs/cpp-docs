@@ -120,7 +120,7 @@ For more detailed remarks, see [CObArray::Append](../../mfc/reference/cobarray-c
 
 This member function calls `BASE_CLASS`**::Copy**.
 
-```
+```cpp
 void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 ```
 
@@ -191,7 +191,7 @@ For more detailed remarks, see [CObArray::GetAt](../../mfc/reference/cobarray-cl
 
 This member function calls `BASE_CLASS`**::InsertAt**.
 
-```
+```cpp
 void InsertAt(
     INT_PTR nIndex,
     TYPE newElement,
@@ -256,7 +256,7 @@ The Debug version of the library asserts if the subscript (either on the left or
 
 This member function calls `BASE_CLASS`**::SetAt**.
 
-```
+```cpp
 void SetAt(
     INT_PTR nIndex,
     TYPE ptr);
@@ -281,7 +281,7 @@ For more detailed remarks, see [CObArray::SetAt](../../mfc/reference/cobarray-cl
 
 This member function calls `BASE_CLASS`**::SetAtGrow**.
 
-```
+```cpp
 void SetAtGrow(
     INT_PTR nIndex,
     TYPE newElement);

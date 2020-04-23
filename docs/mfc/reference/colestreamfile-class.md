@@ -60,7 +60,7 @@ For more information, see [IStream](/windows/win32/api/objidl/nn-objidl-istream)
 
 Associates the supplied OLE stream with the `COleStreamFile` object.
 
-```
+```cpp
 void Attach(LPSTREAM lpStream);
 ```
 

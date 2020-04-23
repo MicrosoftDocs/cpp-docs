@@ -230,7 +230,7 @@ The key name that this function returns comes from the keyboard driver, so you c
 
 Sets the keyboard shortcut for a hot key control.
 
-```
+```cpp
 void SetHotKey(
     WORD wVirtualKeyCode,
     WORD wModifiers);
@@ -261,7 +261,7 @@ The virtual key code and the modifier keys together define the keyboard shortcut
 
 Call this function to define the invalid combinations and the default modifier combination for a hot key control.
 
-```
+```cpp
 void SetRules(
     WORD wInvalidComb,
     WORD wModifiers);

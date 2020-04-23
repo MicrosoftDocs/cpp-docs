@@ -92,7 +92,7 @@ For more information on `CArchive`, see the articles [Serialization](../../mfc/s
 
 Call this function to close the archive without throwing an exception.
 
-```
+```cpp
 void Abort ();
 ```
 
@@ -154,7 +154,7 @@ You may not use `CFile` operations to alter the state of the file until you have
 
 Flushes any data remaining in the buffer, closes the archive, and disconnects the archive from the file.
 
-```
+```cpp
 void Close();
 ```
 
@@ -172,7 +172,7 @@ The member function `Close` ensures that all data is transferred from the archiv
 
 Forces any data remaining in the archive buffer to be written to the file.
 
-```
+```cpp
 void Flush();
 ```
 
@@ -292,7 +292,7 @@ If the `IsStoring` status of an archive is nonzero, then its `IsLoading` status 
 
 Call this member function to place objects in the map that are not really serialized to the file, but that are available for subobjects to reference.
 
-```
+```cpp
 void MapObject(const CObject* pOb);
 ```
 
@@ -622,7 +622,7 @@ In the version of the member function with the *nMax* parameter, the buffer will
 
 Call this member function when you want to store and load the version information of a base class.
 
-```
+```cpp
 void SerializeClass(const CRuntimeClass* pClassRef);
 ```
 
@@ -649,7 +649,7 @@ Use the [RUNTIME_CLASS](../../mfc/reference/run-time-object-model-services.md#ru
 
 Call `SetLoadParams` when you are going to read a large number of `CObject`-derived objects from an archive.
 
-```
+```cpp
 void SetLoadParams(UINT nGrowBy = 1024);
 ```
 
@@ -672,7 +672,7 @@ You must not call `SetLoadParams` after any object is loaded, or after [MapObjec
 
 Call this member function to set the object schema stored in the archive object to *nSchema*.
 
-```
+```cpp
 void SetObjectSchema(UINT nSchema);
 ```
 
@@ -695,7 +695,7 @@ Use `SetObjectSchema` for advanced versioning; for example, when you want to for
 
 Use `SetStoreParams` when storing a large number of `CObject`-derived objects in an archive.
 
-```
+```cpp
 void SetStoreParams(UINT nHashSize = 2053, UINT nBlockSize = 128);
 ```
 
@@ -721,7 +721,7 @@ You must not call `SetStoreParams` after any objects are stored, or after [MapOb
 
 Writes a specified number of bytes to the archive.
 
-```
+```cpp
 void Write(const void* lpBuf, INT nMax);
 ```
 
@@ -747,7 +747,7 @@ You can use the `Write` member function within your `Serialize` function to writ
 
 Use `WriteClass` to store the version and class information of a base class during serialization of the derived class.
 
-```
+```cpp
 void WriteClass(const CRuntimeClass* pClassRef);
 ```
 
@@ -774,7 +774,7 @@ You can use [SerializeClass](#serializeclass) instead of `WriteClass`, which han
 
 Stores the specified `CObject` to the archive.
 
-```
+```cpp
 void WriteObject(const CObject* pOb);
 ```
 
@@ -804,7 +804,7 @@ For a definition of the class `CAge`, see the example for [CObList::CObList](../
 
 Use this member function to write data from a buffer to the file associated with the `CArchive` object.
 
-```
+```cpp
 void WriteString(LPCTSTR lpsz);
 ```
 

@@ -63,7 +63,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 Adds a `CSid` or existing `TOKEN_GROUPS` structure to the `CTokenGroups` object.
 
-```
+```cpp
 void Add(const CSid& rSid, DWORD dwAttributes) throw(... );
 void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 ```
@@ -135,7 +135,7 @@ Returns true if the `CSid` is removed, false otherwise.
 
 Deletes all `CSid` objects and their associated attributes from the `CTokenGroups` object.
 
-```
+```cpp
 void DeleteAll() throw();
 ```
 
@@ -179,7 +179,7 @@ Retrieves a pointer to the [TOKEN_GROUPS](/windows/win32/api/winnt/ns-winnt-toke
 
 Retrieves the `CSid` objects and (optionally) the attributes belonging to the `CTokenGroups` object.
 
-```
+```cpp
 void GetSidsAndAttributes(
     CSid::CSidArray* pSids,
     CAtlArray<DWORD>* pAttributes = NULL) const throw(...);

@@ -215,7 +215,7 @@ The color pop-up menu has an embedded [CMFCPopupMenuBar Class](../../mfc/referen
 
 Sets the property grid control object of the embedded `CMFCColorBar` object.
 
-```
+```cpp
 void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```
 

@@ -100,7 +100,7 @@ The following illustration depicts a property sheet that is in the style of a tr
 
 Adds a page to the property sheet.
 
-```
+```cpp
 void AddPage(CPropertyPage* pPage);
 ```
 
@@ -119,7 +119,7 @@ If the property sheet is in the style of Microsoft Outlook, the framework displa
 
 Adds a new property page to the tree control.
 
-```
+```cpp
 void AddPageToTree(
     CMFCPropertySheetCategoryInfo* pCategory,
     CMFCPropertyPage* pPage,
@@ -219,7 +219,7 @@ For more information, see the parameters for the [CPropertySheet::CPropertySheet
 
 Reserves space at the top of each page to draw a custom header.
 
-```
+```cpp
 void EnablePageHeader(int nHeaderHeight);
 ```
 
@@ -372,7 +372,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 Removes a node from the tree control.
 
-```
+```cpp
 void RemoveCategory(CMFCPropertySheetCategoryInfo* pCategory);
 ```
 
@@ -389,7 +389,7 @@ Use this method to remove a node, which is also referred to as a category, from 
 
 Removes a property page from the property sheet.
 
-```
+```cpp
 void RemovePage(CPropertyPage* pPage);
 void RemovePage(int nPage);
 ```
@@ -446,7 +446,7 @@ For more information about the methods that support this method, see [CImageList
 
 Specifies the appearance of the property sheet.
 
-```
+```cpp
 void SetLook(
     PropSheetLook look,
     int nNavControlWidth=100);

@@ -101,7 +101,7 @@ CMFCColorButton();
 
 Enable or disable the "automatic" button of a color picker control and set the automatic (default) color.
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -125,7 +125,7 @@ void EnableAutomaticButton(
 
 Enable or disable the "other" button, which appears below regular color buttons.
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     BOOL bAltColorDlg=TRUE,
@@ -289,7 +289,7 @@ virtual void OnShowColorPopup();
 
 Initializes the `m_pPalette` protected data member to the specified palette or the default system palette.
 
-```
+```cpp
 void RebuildPalette(CPalette* pPal);
 ```
 
@@ -303,7 +303,7 @@ void RebuildPalette(CPalette* pPal);
 
 Specifies the color of the button.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -340,7 +340,7 @@ The list of color names is global per application. Consequently, this method tra
 
 Defines the number of columns that are displayed in the table of colors that is presented to the user during the user's color selection process.
 
-```
+```cpp
 void SetColumnsNumber(int nColumns);
 ```
 
@@ -357,7 +357,7 @@ The user can select a color from a popup color bar that displays a table of pred
 
 Specifies a set of colors and the set's name. The set of colors is displayed using a [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md) object.
 
-```
+```cpp
 void SetDocumentColors(
     LPCTSTR lpszLabel,
     CList<COLORREF,COLORREF>& lstColors);
@@ -379,7 +379,7 @@ A `CMFCColorButton` object maintains a list of RGB values that are transferred t
 
 Specifies the standard colors to display on the popup color bar.
 
-```
+```cpp
 void SetPalette(CPalette* pPalette);
 ```
 

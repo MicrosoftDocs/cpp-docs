@@ -243,7 +243,7 @@ This function is usually called by [CWinApp::InitInstance](../../mfc/reference/c
 
 Revokes this object factory's registration with the OLE system DLLs.
 
-```
+```cpp
 void Revoke();
 ```
 
@@ -279,7 +279,7 @@ TRUE if successful; otherwise FALSE.
 
 Registers all of the application's object factories with the OLE system registry.
 
-```
+```cpp
 void UpdateRegistry(LPCTSTR lpszProgID = NULL);
 virtual BOOL UpdateRegistry(BOOL bRegister);
 ```

@@ -681,7 +681,7 @@ By default, the framework checks whether the mouse pointer is inside the mini-fr
 
 Stops the docking timer.
 
-```
+```cpp
 void KillDockingTimer();
 ```
 
@@ -842,7 +842,7 @@ Called by the framework when a pane in the mini-frame window is shown or hidden.
 
 ## <a name="pin"></a> CPaneFrameWnd::Pin
 
-```
+```cpp
 void Pin(BOOL bPin = TRUE);
 ```
 
@@ -991,7 +991,7 @@ virtual void SetCaptionButtons(DWORD dwButtons);
 
 ## <a name="setdelayshow"></a> CPaneFrameWnd::SetDelayShow
 
-```
+```cpp
 void SetDelayShow(BOOL bDelayShow);
 ```
 
@@ -1003,7 +1003,7 @@ void SetDelayShow(BOOL bDelayShow);
 
 ## <a name="setdockingmanager"></a> CPaneFrameWnd::SetDockingManager
 
-```
+```cpp
 void SetDockingManager(CDockingManager* pManager);
 ```
 
@@ -1017,7 +1017,7 @@ void SetDockingManager(CDockingManager* pManager);
 
 Sets the docking timer.
 
-```
+```cpp
 void SetDockingTimer(UINT nTimeOut);
 ```
 
@@ -1041,7 +1041,7 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ## <a name="sethotpoint"></a> CPaneFrameWnd::SetHotPoint
 
-```
+```cpp
 void SetHotPoint(CPoint& ptNew);
 ```
 

@@ -206,7 +206,7 @@ Override this member function if you have a Window menu that does not use the st
 
 Activates a different MDI child window.
 
-```
+```cpp
 void MDIActivate(CWnd* pWndActivate);
 ```
 
@@ -232,7 +232,7 @@ See the example for [CMDIFrameWnd::GetWindowMenuPopup](#getwindowmenupopup).
 
 Arranges all the MDI child windows in a cascade format.
 
-```
+```cpp
 void MDICascade();
 void MDICascade(int nType);
 ```
@@ -275,7 +275,7 @@ See the example for [CMDIChildWnd::MDIMaximize](../../mfc/reference/cmdichildwnd
 
 Arranges all minimized document child windows.
 
-```
+```cpp
 void MDIIconArrange();
 ```
 
@@ -291,7 +291,7 @@ See the example for [CMDIFrameWnd::MDICascade](#mdicascade).
 
 Maximizes the specified MDI child window.
 
-```
+```cpp
 void MDIMaximize(CWnd* pWnd);
 ```
 
@@ -314,7 +314,7 @@ See the example for [CMDIChildWnd::MDIMaximize](../../mfc/reference/cmdichildwnd
 
 Activates the child window immediately behind the currently active child window and places the currently active child window behind all other child windows.
 
-```
+```cpp
 void MDINext();
 ```
 
@@ -330,7 +330,7 @@ If the currently active MDI child window is maximized, the member function resto
 
 Activates the previous child window and places the currently active child window immediately behind it.
 
-```
+```cpp
 void MDIPrev();
 ```
 
@@ -342,7 +342,7 @@ If the currently active MDI child window is maximized, the member function resto
 
 Restores an MDI child window from maximized or minimized size.
 
-```
+```cpp
 void MDIRestore(CWnd* pWnd);
 ```
 
@@ -397,7 +397,7 @@ Do not call this member function if you use the framework to manage your MDI chi
 
 Arranges all child windows in a tiled format.
 
-```
+```cpp
 void MDITile();
 void MDITile(int nType);
 ```

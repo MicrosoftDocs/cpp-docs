@@ -70,7 +70,7 @@ The following example demonstrates how to construct a `CMFCAutoHideButton` objec
 
 ## <a name="bringtotop"></a> CMFCAutoHideButton::BringToTop
 
-```
+```cpp
 void BringToTop();
 ```
 
@@ -327,7 +327,7 @@ If you want to customize the background for auto-hide buttons in your applicatio
 
 Shows or hides the associated [CDockablePane Class](../../mfc/reference/cdockablepane-class.md).
 
-```
+```cpp
 void ShowAttachedWindow(BOOL bShow);
 ```
 
@@ -351,7 +351,7 @@ virtual void ShowButton(BOOL bShow);
 
 ## <a name="move"></a> CMFCAutoHideButton::Move
 
-```
+```cpp
 void Move(int nOffset);
 ```
 
@@ -363,7 +363,7 @@ void Move(int nOffset);
 
 ## <a name="replacepane"></a> CMFCAutoHideButton::ReplacePane
 
-```
+```cpp
 void ReplacePane(CDockablePane* pNewBar);
 ```
 

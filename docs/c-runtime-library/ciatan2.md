@@ -15,7 +15,7 @@ Calculates the arctangent of *x* / *y* where *x* and *y* are values on the top o
 
 ## Syntax
 
-```
+```cpp
 void __cdecl _CIatan2();
 ```
 

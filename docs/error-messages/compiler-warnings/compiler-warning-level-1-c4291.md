@@ -68,7 +68,7 @@ int main(void)
 
 The above example generates warning C4291 because no placement form of operator **delete** has been defined that matches the placement form of operator **new**. To solve the problem, insert the following code above **main**. Notice that all of the overloaded operator **delete** function parameters match those of the overloaded operator **new**, except for the first parameter.
 
-```
+```cpp
 void operator delete(void* pMem, char* pszFilename, int nLine)
 {
    free(pMem);

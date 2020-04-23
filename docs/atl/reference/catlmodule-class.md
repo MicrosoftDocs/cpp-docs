@@ -200,7 +200,7 @@ IGlobalInterfaceTable* m_pGIT;
 
 Releases all data members.
 
-```
+```cpp
 void Term() throw();
 ```
 

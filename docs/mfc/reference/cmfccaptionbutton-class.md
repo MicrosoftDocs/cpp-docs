@@ -200,7 +200,7 @@ TRUE if the caption is set to mini size; otherwise FALSE.
 
 Sets the button draw location and window show state.
 
-```
+```cpp
 void Move(
     const CPoint& ptTo,
     BOOL bHide = FALSE);
@@ -252,7 +252,7 @@ The *bMaximized* parameter is used when the button is a maximize or minimize but
 
 Sets the mini size of the title bar.
 
-```
+```cpp
 void SetMiniFramebutton(BOOL bSet = TRUE);
 ```
 

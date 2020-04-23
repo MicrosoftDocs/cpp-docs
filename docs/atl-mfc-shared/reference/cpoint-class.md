@@ -126,7 +126,7 @@ ASSERT(ptFromDouble == ptMFCHere);
 
 Adds values to the `x` and `y` members of the `CPoint`.
 
-```
+```cpp
 void Offset(int xOffset, int yOffset) throw();
 void Offset(POINT point) throw();
 void Offset(SIZE size) throw();
@@ -196,7 +196,7 @@ Nonzero if the points are not equal; otherwise 0.
 
 The first overload adds a size to the `CPoint`.
 
-```
+```cpp
 void operator+=(SIZE size) throw();
 void operator+=(POINT point) throw();
 ```
@@ -225,7 +225,7 @@ For example, adding `CPoint(5, -7)` to a variable which contains `CPoint(30, 40)
 
 The first overload subtracts a size from the `CPoint`.
 
-```
+```cpp
 void operator-=(SIZE size) throw();
 void operator-=(POINT point) throw();
 ```

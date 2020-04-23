@@ -79,7 +79,7 @@ virtual ~CD2DLinearGradientBrush();
 
 Attaches existing resource interface to the object
 
-```
+```cpp
 void Attach(ID2D1LinearGradientBrush* pResource);
 ```
 
@@ -235,7 +235,7 @@ Pointer to an ID2D1LinearGradientBrush interface or NULL if object is not initia
 
 Sets the ending coordinates of the linear gradient in the brush's coordinate space
 
-```
+```cpp
 void SetEndPoint(CD2DPointF point);
 ```
 
@@ -248,7 +248,7 @@ The ending two-dimensional coordinates of the linear gradient, in the brush's co
 
 Sets the starting coordinates of the linear gradient in the brush's coordinate space
 
-```
+```cpp
 void SetStartPoint(CD2DPointF point);
 ```
 

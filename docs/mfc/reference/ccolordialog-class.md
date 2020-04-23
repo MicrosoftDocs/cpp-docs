@@ -227,7 +227,7 @@ You can call [SetCurrentColor](#setcurrentcolor) from within `OnColorOK` to forc
 
 Call this function after calling `DoModal` to force the current color selection to the color value specified in *clr*.
 
-```
+```cpp
 void SetCurrentColor(COLORREF clr);
 ```
 

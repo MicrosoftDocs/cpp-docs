@@ -181,7 +181,7 @@ virtual void OnDraw(CDC* pDC);
 
 Set the current position of the slider control.
 
-```
+```cpp
 void SetPos(
     int nPos,
     BOOL bRedraw=TRUE);
@@ -199,7 +199,7 @@ void SetPos(
 
 Set the range of values for the slider control.
 
-```
+```cpp
 void SetRange(
     int nMin,
     int nMax);
@@ -221,7 +221,7 @@ Specifies the range of values for the slider control by setting the minimum and 
 
 Display or hide zoom buttons.
 
-```
+```cpp
 void SetZoomButtons(BOOL bSet=TRUE);
 ```
 
@@ -234,7 +234,7 @@ TRUE to display zoom buttons; FALSE to hide them.
 
 Set the zoom increment for the slider control.
 
-```
+```cpp
 void SetZoomIncrement(int nZoomIncrement);
 ```
 

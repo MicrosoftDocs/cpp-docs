@@ -108,7 +108,7 @@ Pointer to CAtlTransactionManager object
 
 Call this member function to end the search, reset the context, and release all resources.
 
-```
+```cpp
 void Close();
 ```
 

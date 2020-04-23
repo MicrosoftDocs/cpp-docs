@@ -144,7 +144,7 @@ For more information about using the container interface, see the articles [Cont
 
 Call this function to execute the specified verb instead of [DoVerb](#doverb) so that you can do your own processing when an exception is thrown.
 
-```
+```cpp
 void Activate(
     LONG nVerb,
     CView* pView,
@@ -214,7 +214,7 @@ This is called automatically by [COleConvertDialog::DoConvert](../../mfc/referen
 
 Call this function to initialize a [COleDataObject](../../mfc/reference/coledataobject-class.md) for accessing the data in the OLE item.
 
-```
+```cpp
 void AttachDataObject(COleDataObject& rDataObject) const;
 ```
 
@@ -327,7 +327,7 @@ For more information, see [OleGetClipboard](/windows/win32/api/ole2/nf-ole2-oleg
 
 Call this function to change the state of an OLE item from the running state to the loaded state, that is, loaded with its handler in memory but with the server not running.
 
-```
+```cpp
 void Close(OLECLOSE dwCloseOption = OLECLOSE_SAVEIFDIRTY);
 ```
 
@@ -412,7 +412,7 @@ This is called automatically by [COleConvertDialog](../../mfc/reference/coleconv
 
 Call this function to copy the OLE item to the Clipboard.
 
-```
+```cpp
 void CopyToClipboard(BOOL bIncludeLink = FALSE);
 ```
 
@@ -770,7 +770,7 @@ For more information, see [OleCreateStaticFromData](/windows/win32/api/ole2/nf-o
 
 Call this function to deactivate the OLE item and free any associated resources.
 
-```
+```cpp
 void Deactivate();
 ```
 
@@ -786,7 +786,7 @@ For more information, see [IOleInPlaceObject::InPlaceDeactivate](/windows/win32/
 
 Call this function when the user deactivates an item that was activated in place.
 
-```
+```cpp
 void DeactivateUI();
 ```
 
@@ -802,7 +802,7 @@ For more information, see [IOleInPlaceObject::InPlaceDeactivate](/windows/win32/
 
 Call this function to delete the OLE item from the container document.
 
-```
+```cpp
 void Delete(BOOL bAutoDelete = TRUE);
 ```
 
@@ -987,7 +987,7 @@ For more information, see [IViewObject2::GetExtent](/windows/win32/api/oleidl/nf
 
 Returns the class ID of the item into the memory pointed to by *pClassID*.
 
-```
+```cpp
 void GetClassID(CLSID* pClassID) const;
 ```
 
@@ -1006,7 +1006,7 @@ For more information, see [IPersist::GetClassID](/windows/win32/api/objidl/nf-ob
 
 Call this function to get a `COleDataSource` object containing all the data that would be placed on the Clipboard by a call to the [CopyToClipboard](#copytoclipboard) member function.
 
-```
+```cpp
 void GetClipboardData(
     COleDataSource* pDataSource,
     BOOL bIncludeLink = FALSE,
@@ -1234,7 +1234,7 @@ An unsigned integer with one of the following values:
 
 Call this function to get the user-visible string describing the OLE item's type, such as "Word document."
 
-```
+```cpp
 void GetUserType(
     USERCLASSTYPE nUserClassType,
     CString& rString);
@@ -1811,7 +1811,7 @@ Call the `Reload` function after activating the item as an item of another type 
 
 Runs the application associated with this item.
 
-```
+```cpp
 void Run();
 ```
 
@@ -1850,7 +1850,7 @@ This function is called automatically by the Change Icon (and other dialogs that
 
 Call this function to specify how much space is available to the OLE item.
 
-```
+```cpp
 void SetExtent(
     const CSize& size,
     DVASPECT nDrawAspect = DVASPECT_CONTENT);
@@ -1874,7 +1874,7 @@ For more information, see [IOleObject::SetExtent](/windows/win32/api/oleidl/nf-o
 
 Call this function to specify the name of the container application and the container's name for an embedded OLE item.
 
-```
+```cpp
 void SetHostNames(
     LPCTSTR lpszHost,
     LPCTSTR lpszHostObj);
@@ -1951,7 +1951,7 @@ For more information, see [IOleInPlaceObject::SetObjectRects](/windows/win32/api
 
 Call this function to set the link-update option for the presentation of the specified linked item.
 
-```
+```cpp
 void SetLinkUpdateOptions(OLEUPDATE dwUpdateOpt);
 ```
 

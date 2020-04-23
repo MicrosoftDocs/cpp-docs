@@ -75,7 +75,7 @@ For more information on using `COleDispatchDriver`, see the following articles:
 
 Call the `AttachDispatch` member function to attach an `IDispatch` pointer to the `COleDispatchDriver` object. For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
-```
+```cpp
 void AttachDispatch(
     LPDISPATCH lpDispatch,
     BOOL bAutoRelease = TRUE);
@@ -189,7 +189,7 @@ For more information about the LPDISPATCH type, see [Implementing the IDispatch 
 
 Gets the object property specified by *dwDispID*.
 
-```
+```cpp
 void GetProperty(
     DISPID dwDispID,
     VARTYPE vtProp,
@@ -215,7 +215,7 @@ Address of the variable that will receive the property value. It must match the 
 
 Calls the object method or property specified by *dwDispID*, in the context specified by *wFlags*.
 
-```
+```cpp
 void AFX_CDECL InvokeHelper(
     DISPID dwDispID,
     WORD wFlags,
@@ -341,7 +341,7 @@ operator LPDISPATCH();
 
 Releases the `IDispatch` connection. For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)
 
-```
+```cpp
 void ReleaseDispatch();
 ```
 
@@ -357,7 +357,7 @@ If auto release has been set for this connection, this function calls `IDispatch
 
 Sets the OLE object property specified by *dwDispID*.
 
-```
+```cpp
 void AFX_CDECL SetProperty(
     DISPID dwDispID,
     VARTYPE vtProp, ...);

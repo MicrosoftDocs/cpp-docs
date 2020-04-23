@@ -86,7 +86,7 @@ virtual ~CAnimationVariable();
 
 Adds a transition.
 
-```
+```cpp
 void AddTransition(CBaseTransition* pTransition);
 ```
 
@@ -103,7 +103,7 @@ This method is called to add a transition to the internal list of transitions to
 
 Adds transitions from the internal list to storyboard.
 
-```
+```cpp
 void ApplyTransitions(
     CAnimationController* pController,
     IUIAnimationStoryboard* pStoryboard,
@@ -146,7 +146,7 @@ Constructs an animation variable object and sets its default value. A default va
 
 Clears transitions.
 
-```
+```cpp
 void ClearTransitions(BOOL bAutodestroy);
 ```
 
@@ -207,7 +207,7 @@ This method is called by the framework when it needs to create transitions that 
 
 Enables or disables the IntegerValueChanged event.
 
-```
+```cpp
 void EnableIntegerValueChangedEvent (
     CAnimationController* pController,
     BOOL bEnable);
@@ -229,7 +229,7 @@ When ValueChanged event is enabled, the framework calls virtual method CAnimatio
 
 Enables or disables the ValueChanged event.
 
-```
+```cpp
 void EnableValueChangedEvent (
     CAnimationController* pController,
     BOOL bEnable);
@@ -368,7 +368,7 @@ ATL::CComPtr<IUIAnimationVariable> m_variable;
 
 Sets default value and releases IUIAnimationVariable COM object.
 
-```
+```cpp
 void SetDefaultValue(DOUBLE dblDefaultValue);
 ```
 
@@ -385,7 +385,7 @@ Use this method to reset the default value. This method releases the internal IU
 
 Sets the relationship between an animation variable and an animation object.
 
-```
+```cpp
 void SetParentAnimationObject(CAnimationBaseObject* pParentObject);
 ```
 

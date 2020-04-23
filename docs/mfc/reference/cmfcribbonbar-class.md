@@ -391,7 +391,7 @@ The quick access toolbar ribbon category is only used on the quick access toolba
 
 Adds the specified ribbon element to the tabs row of the ribbon bar.
 
-```
+```cpp
 void AddToTabs(CMFCRibbonBaseElement* pElement);
 ```
 
@@ -489,7 +489,7 @@ TRUE if the window was created; otherwise FALSE.
 
 Closes all keytip controls on the ribbon bar.
 
-```
+```cpp
 void DeactivateKeyboardFocus(BOOL bSetFocus = TRUE);
 ```
 
@@ -542,7 +542,7 @@ virtual void DWMCompositionChanged();
 
 Enables or disables the keytip feature for the ribbon bar.
 
-```
+```cpp
 void EnableKeyTips(BOOL bEnable = TRUE);
 ```
 
@@ -559,7 +559,7 @@ When you enable this feature, key tips are displayed when the user presses the A
 
 Enables or disables the **Print Preview** feature.
 
-```
+```cpp
 void EnablePrintPreview(BOOL bEnable = TRUE);
 ```
 
@@ -578,7 +578,7 @@ By default the **Print Preview** feature is enabled.
 
 Enables or disables tooltips and optional tooltip descriptions on the ribbon bar.
 
-```
+```cpp
 void EnableToolTips(
     BOOL bEnable = TRUE,
     BOOL bEnableDescr = TRUE);
@@ -675,7 +675,7 @@ The zero-based index of a ribbon category if the method was successful; otherwis
 
 Adjusts the layout of all items in the ribbon bar and parent window and redraws the whole window.
 
-```
+```cpp
 void ForceRecalcLayout();
 ```
 
@@ -827,7 +827,7 @@ The ribbon element that is currently dropped down; or NULL if no ribbon element 
 
 Retrieves an array of pointers to all ribbon elements that have a specific command ID.
 
-```
+```cpp
 void GetElementsByID(
     UINT uiCmdID,
     CArray<CMFCRibbonBaseElement*,CMFCRibbonBaseElement*>& arButtons);
@@ -870,7 +870,7 @@ The following table lists the possible combination of flags for the return value
 
 Retrieves the command IDs for the specified collection of ribbon elements on the ribbon bar.
 
-```
+```cpp
 void GetItemIDsList(CList<UINT, UINT>& lstItems,
     BOOL bHiddenOnly = FALSE) const;
 ```
@@ -987,7 +987,7 @@ A pointer to the ribbon element on the quick access toolbar that has its pop-up 
 
 Retrieves a list of command IDs for the ribbon elements on the quick access toolbar.
 
-```
+```cpp
 void GetQuickAccessCommands(CList<UINT,UINT>& lstCommands);
 ```
 
@@ -1096,7 +1096,7 @@ If a context category is active, the active category is reset to the first visib
 
 Hides all keytips on the ribbon bar.
 
-```
+```cpp
 void HideKeyTips();
 ```
 
@@ -1446,7 +1446,7 @@ TRUE if the keystroke event was processed; otherwise FALSE.
 
 Removes a tooltip from view.
 
-```
+```cpp
 void PopTooltip();
 ```
 
@@ -1487,7 +1487,7 @@ After layout adjustment, the display of the ribbon bar is updated.
 
 Deletes all ribbon categories from the ribbon bar.
 
-```
+```cpp
 void RemoveAllCategories();
 ```
 
@@ -1499,7 +1499,7 @@ This method deletes all ribbon categories from memory and from the category list
 
 Removes all ribbon elements from the tab area.
 
-```
+```cpp
 void RemoveAllFromTabs();
 ```
 
@@ -1560,7 +1560,7 @@ If the category specified by *pCategory* is not displayed, it cannot be set as t
 
 Associates the system buttons on the ribbon bar that belong to a multiple-document interface (MDI) child window to the specified MDI child window.
 
-```
+```cpp
 void SetActiveMDIChild(CWnd* pWnd);
 ```
 
@@ -1575,7 +1575,7 @@ void SetActiveMDIChild(CWnd* pWnd);
 
 Assigns an application ribbon button to the ribbon bar.
 
-```
+```cpp
 void SetApplicationButton(
     CMFCRibbonApplicationButton* pButton,
     CSize sizeButton);
@@ -1633,7 +1633,7 @@ The optional menu keytip is for ribbon elements with a split button that opens a
 
 Sets the keyboard navigation level as the user presses the keytips that are contained on the ribbon bar.
 
-```
+```cpp
 void SetKeyboardNavigationLevel(
     CObject* pLevel,
     BOOL bSetFocus = TRUE);
@@ -1655,7 +1655,7 @@ Keyboard navigation of the ribbon bar starts when the user presses the ALT or F1
 
 Adjusts the ribbon bar when the window size of a multiple-document interface (MDI) child window enters or leaves the maximized state.
 
-```
+```cpp
 void SetMaximizeMode(
     BOOL bMax,
     CWnd* pWnd = NULL);
@@ -1677,7 +1677,7 @@ The ribbon bar displays system buttons for an MDI child window in the tab row wh
 
 Adds one or more ribbon elements to the Quick Access Toolbar.
 
-```
+```cpp
 void SetQuickAccessCommands(
     const CList<UINT,UINT>& lstCommands,
     BOOL bRecalcLayout=TRUE);
@@ -1701,7 +1701,7 @@ The following example demonstrates how to use the `SetQuickAccessCommands` metho
 
 Sets the quick access toolbar to the default state.
 
-```
+```cpp
 void SetQuickAccessDefaultState(const CMFCRibbonQuickAccessToolBarDefaultState& state);
 ```
 
@@ -1724,7 +1724,7 @@ The following example demonstrates how to use the `SetQuickAccessDefaultState` m
 
 Positions the quick access toolbar above or below the ribbon bar.
 
-```
+```cpp
 void SetQuickAccessToolbarOnTop(BOOL bOnTop);
 ```
 
@@ -1737,7 +1737,7 @@ void SetQuickAccessToolbarOnTop(BOOL bOnTop);
 
 Sets the regular and large sizes of tooltip fixed widths for the ribbon bar.
 
-```
+```cpp
 void SetTooltipFixedWidth(
     int nWidthRegular,
     int nWidthLargeImage);
@@ -1759,7 +1759,7 @@ Setting a parameter to 0 causes the corresponding width to vary.
 
 Shows or hides the specified ribbon category.
 
-```
+```cpp
 void ShowCategory(
     int nIndex,
     BOOL bShow=TRUE);
@@ -1777,7 +1777,7 @@ void ShowCategory(
 
 Shows or hides the context categories that have the specified ID.
 
-```
+```cpp
 void ShowContextCategories(
     UINT uiContextID,
     BOOL bShow=TRUE);
@@ -1795,7 +1795,7 @@ void ShowContextCategories(
 
 Shows the keytips for each ribbon element on the ribbon bar.
 
-```
+```cpp
 void ShowKeyTips();
 ```
 
@@ -1805,7 +1805,7 @@ void ShowKeyTips();
 
 Toggles the ribbon bar between the minimized and maximized states.
 
-```
+```cpp
 void ToggleMimimizeState();
 ```
 
@@ -1942,7 +1942,7 @@ TRUE if successful; otherwise FALSE.
 
 Enables or disables Windows 7 look (small rectangular application button) for the Ribbon.
 
-```
+```cpp
 void SetWindows7Look(
     BOOL bWindows7Look,
     BOOL bRecalc = TRUE);

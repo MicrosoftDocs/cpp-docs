@@ -62,7 +62,7 @@ For more information about using data objects in your application, see the artic
 
 Call this function to associate the `COleDataObject` object with an OLE data object.
 
-```
+```cpp
 void Attach(
     LPDATAOBJECT lpDataObject,
     BOOL bAutoRelease = TRUE);
@@ -101,7 +101,7 @@ Nonzero if successful; otherwise 0.
 
 Call this function to prepare for subsequent calls to `GetNextFormat` for retrieving a list of data formats from the item.
 
-```
+```cpp
 void BeginEnumFormats();
 ```
 
@@ -298,7 +298,7 @@ For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/n
 
 Call this function to release ownership of the [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) object that was previously associated with the `COleDataObject` object.
 
-```
+```cpp
 void Release();
 ```
 

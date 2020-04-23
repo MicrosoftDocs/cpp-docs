@@ -135,7 +135,7 @@ TRUE if the pane was successfully registered with the docking manager; otherwise
 
 Adds a tabbed pane.
 
-```
+```cpp
 void AddTabbedPane(CDockablePane* pControlBar);
 ```
 
@@ -187,7 +187,7 @@ Override this method in a derived class and return FALSE if the window should no
 
 Docks a pane.
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID = 0,
@@ -614,7 +614,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 Removes a pane from the docking manager.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pControlBar,
     BOOL bDestroy,
@@ -642,7 +642,7 @@ void RemovePaneFromDockManager(
 
 ## <a name="setrelatedtabgroup"></a> CMDIChildWndEx::SetRelatedTabGroup
 
-```
+```cpp
 void SetRelatedTabGroup(CMFCTabCtrl* p);
 ```
 
@@ -654,7 +654,7 @@ void SetRelatedTabGroup(CMFCTabCtrl* p);
 
 ## <a name="showpane"></a> CMDIChildWndEx::ShowPane
 
-```
+```cpp
 void ShowPane(
     CBasePane* pBar,
     BOOL bShow,
@@ -693,7 +693,7 @@ A handle to an icon to display on the Windows 7 taskbar tab.
 
 Removes the MDI child from Windows 7 taskbar tabs.
 
-```
+```cpp
 void UnregisterTaskbarTab(BOOL bCheckRegisteredMDIChildCount = TRUE);
 ```
 
@@ -727,7 +727,7 @@ TRUE if successful; otherwise FALSE.
 
 Sets properties for a Windows 7 taskbar tab.
 
-```
+```cpp
 void SetTaskbarTabProperties(DWORD dwFlags);
 ```
 
@@ -742,7 +742,7 @@ A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTa
 
 Inserts the MDI child before the specified window on Windows 7 taskbar tabs.
 
-```
+```cpp
 void SetTaskbarTabOrder(CMDIChildWndEx* pWndBefore = NULL);
 ```
 
@@ -757,7 +757,7 @@ A pointer to the MDI child window whose thumbnail is inserted to the left. This 
 
 Activates the corresponding Windows 7 taskbar tab.
 
-```
+```cpp
 void SetTaskbarTabActive();
 ```
 
@@ -1032,7 +1032,7 @@ A pointer to a `CMDITabProxyWnd` object, which is registered with Windows 7 task
 
 Enables or disables automatic selection of a portion of a window's client area to display as that window's thumbnail in the taskbar.
 
-```
+```cpp
 void EnableTaskbarThumbnailClipRect(BOOL bEnable = TRUE);
 ```
 

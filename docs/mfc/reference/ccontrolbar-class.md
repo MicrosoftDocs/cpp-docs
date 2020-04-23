@@ -247,7 +247,7 @@ Override this function to customize the appearance of the control bar gripper.
 
 Call this function to enable a control bar to be docked.
 
-```
+```cpp
 void EnableDocking(DWORD dwDockStyle);
 ```
 
@@ -404,7 +404,7 @@ To update an individual button or pane, use the ON_UPDATE_COMMAND_UI macro in yo
 
 Call this function to set the desired **CBRS_** styles for the control bar.
 
-```
+```cpp
 void SetBarStyle(DWORD dwStyle);
 ```
 
@@ -447,7 +447,7 @@ Does not affect the **WS_** (window style) settings.
 
 Call this function to set the size of the control bar's borders.
 
-```
+```cpp
 void SetBorders(
     int cxLeft = 0,
     int cyTop = 0,
@@ -484,7 +484,7 @@ The following code example sets the top and bottom borders of the control bar to
 
 Changes the in-place owner of a control bar.
 
-```
+```cpp
 void SetInPlaceOwner(CWnd* pWnd);
 ```
 

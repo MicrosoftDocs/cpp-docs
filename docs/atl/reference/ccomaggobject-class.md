@@ -152,7 +152,7 @@ A standard HRESULT value.
 
 Called during object destruction, this method frees the [m_contained](#m_contained) member.
 
-```
+```cpp
 void FinalRelease();
 ```
 

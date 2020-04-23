@@ -90,7 +90,7 @@ In debug builds, an assertion failure will occur if the [CAutoVectorPtr::m_p](#m
 
 Call this method to take ownership of an existing pointer.
 
-```
+```cpp
 void Attach(T* p) throw();
 ```
 
@@ -156,7 +156,7 @@ Releases ownership of a pointer, sets the [CAutoVectorPtr::m_p](#m_p) member var
 
 Call this method to delete an object pointed to by a `CAutoVectorPtr`.
 
-```
+```cpp
 void Free() throw();
 ```
 

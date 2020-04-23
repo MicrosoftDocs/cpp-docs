@@ -71,7 +71,7 @@ For more on the use of this class, see [How to Update User-Interface Objects](..
 
 Call this member function to tell the command-routing mechanism to continue routing the current message down the chain of handlers.
 
-```
+```cpp
 void ContinueRouting();
 ```
 

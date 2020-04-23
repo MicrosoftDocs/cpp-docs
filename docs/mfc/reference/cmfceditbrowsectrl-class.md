@@ -105,7 +105,7 @@ The following example demonstrates how to use two methods in the `CMFCEditBrowse
 
 Displays or does not display the browse button on the current edit browse control.
 
-```
+```cpp
 void EnableBrowseButton(
     BOOL bEnable=TRUE,
     LPCTSTR szLabel=_T("..."));
@@ -129,7 +129,7 @@ If the *bEnable* parameter is TRUE, the browse mode of the control is `BrowseMod
 
 Displays the browse button on the current edit browse control and puts the control in *file browse* mode.
 
-```
+```cpp
 void EnableFileBrowseButton(
     LPCTSTR lpszDefExt=NULL,
     LPCTSTR lpszFilter=NULL,
@@ -157,7 +157,7 @@ For a full list of available flags, see [OPENFILENAME structure](/windows/win32/
 
 Displays the browse button on the current edit browse control and puts the control in *folder browse* mode.
 
-```
+```cpp
 void EnableFolderBrowseButton();
 ```
 
@@ -260,7 +260,7 @@ Override this function in a derived class to customize the appearance of the bro
 
 Sets a custom image on the browse button of the edit browse control.
 
-```
+```cpp
 void SetBrowseButtonImage(
     HICON hIcon,
     BOOL bAutoDestroy= TRUE);

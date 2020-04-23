@@ -275,7 +275,7 @@ The menu name.
 
 Adds a folder to the list of places available for the user to open or save items.
 
-```
+```cpp
 void AddPlace(
     LPCWSTR lpszFolder,
     FDAP fdap = FDAP_TOP) throw();
@@ -372,7 +372,7 @@ The text name.
 
 Updates the current state of the [CFileDialog](../../mfc/reference/cfiledialog-class.md) based on the values stored in the `m_ofn` data structure.
 
-```
+```cpp
 void ApplyOFNToShellDialog();
 ```
 
@@ -895,7 +895,7 @@ A POSITION value that can be used for iteration; NULL if the list is empty.
 
 Call this member function to hide the specified control in an Explorer-style Open or Save As common dialog box.
 
-```
+```cpp
 void HideControl(int nID);
 ```
 
@@ -1331,7 +1331,7 @@ One or more values from the CDCONTROLSTATE enumeration that indicate the current
 
 Call this method to set the text for the specified control in an Explorer-style **Open** or **Save As** dialog box.
 
-```
+```cpp
 void SetControlText(
     int nID,
     LPCSTR lpsz);
@@ -1359,7 +1359,7 @@ To use this method, you must create the dialog box with the OFN_EXPLORER style. 
 
 Call this function to set the default file name extension for an Explorer-style Open or Save As common dialog box.
 
-```
+```cpp
 void SetDefExt(LPCSTR lpsz);
 ```
 
@@ -1431,7 +1431,7 @@ The ID of the item that the user selected in the control.
 
 Sets the dialog box template for the [CFileDialog](../../mfc/reference/cfiledialog-class.md) object.
 
-```
+```cpp
 void SetTemplate(
     UINT nWin3ID,
     UINT nWin4ID);
@@ -1486,7 +1486,7 @@ The group name.
 
 Updates the `m_ofn` data structure of the [CFileDialog](../../mfc/reference/cfiledialog-class.md) based on the current state of the internal object.
 
-```
+```cpp
 void UpdateOFNFromShellDialog();
 ```
 

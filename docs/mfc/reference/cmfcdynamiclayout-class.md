@@ -105,7 +105,7 @@ The position and size of a child control is changed dynamically when a hosting w
 
 Adds a child window, typically a control, to the list of windows that are controlled by the dynamic layout manager.
 
-```
+```cpp
 void Adjust();
 ```
 
@@ -168,7 +168,7 @@ The position and size of a child control is changed dynamically when a hosting w
 
 Retrieves the rectangle for the window's current client area.
 
-```
+```cpp
 void GetHostWndRect(CRect& rect,);
 ```
 
@@ -365,7 +365,7 @@ A [MoveSettings](#movesettings_structure) value that encapsulates the requested 
 
 Sets the window size below which layout is not adjusted.
 
-```
+```cpp
 void SetMinSize(const CSize& size);
 ```
 

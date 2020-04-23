@@ -225,7 +225,7 @@ Opens a webpage using the hyperlink associated with the `CMFCRibbonLinkCtrl` obj
 
 Sets the value of the hyperlink.
 
-```
+```cpp
 void SetLink(LPCTSTR lpszLink);
 ```
 

@@ -208,7 +208,7 @@ Apply to the tabs one of the following location flags:
 
 Reads or writes this object from an archive or to an archive.
 
-```
+```cpp
 void Serialize(CArchive& ar);
 ```
 

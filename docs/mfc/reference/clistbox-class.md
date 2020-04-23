@@ -613,7 +613,7 @@ The doubleword value was the *dwItemData* parameter of a [SetItemData](#setitemd
 
 Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer (**void** <strong>\*</strong>).
 
-```
+```cpp
 void* GetItemDataPtr(int nIndex) const;
 ```
 
@@ -983,7 +983,7 @@ See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a
 
 Removes all items from a list box.
 
-```
+```cpp
 void ResetContent();
 ```
 
@@ -1065,7 +1065,7 @@ Use this member function only with multiple-selection list boxes. If you need to
 
 Sets the anchor in a multiple-selection list box to begin an extended selection.
 
-```
+```cpp
 void SetAnchorIndex(int nIndex);
 ```
 
@@ -1116,7 +1116,7 @@ If the item is not visible, it is scrolled into view.
 
 Sets the width in pixels of all columns in a multicolumn list box (created with the [LBS_MULTICOLUMN](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style).
 
-```
+```cpp
 void SetColumnWidth(int cxWidth);
 ```
 
@@ -1162,7 +1162,7 @@ To set or remove a selection in a multiple-selection list box, use [CListBox::Se
 
 Sets the width, in pixels, by which a list box can be scrolled horizontally.
 
-```
+```cpp
 void SetHorizontalExtent(int cxExtent);
 ```
 
@@ -1330,7 +1330,7 @@ To select an item from a single-selection list box, use [CListBox::SetCurSel](#s
 
 Sets the tab-stop positions in a list box.
 
-```
+```cpp
 void SetTabStops();
 BOOL SetTabStops(const int& cxEachStop);
 

@@ -123,7 +123,7 @@ For more information, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).
 
 Implements the behavior of the Win32 message [RB_BEGINDRAG](/windows/win32/Controls/rb-begindrag), as described in the Windows SDK.
 
-```
+```cpp
 void BeginDrag(
     UINT uBand,
     DWORD dwPos = (DWORD)-1);
@@ -256,7 +256,7 @@ Nonzero if the band deleted successfully; otherwise zero.
 
 Implements the behavior of the Win32 message [RB_DRAGMOVE](/windows/win32/Controls/rb-dragmove), as described in the Windows SDK.
 
-```
+```cpp
 void DragMove(DWORD dwPos = (DWORD)-1);
 ```
 
@@ -269,7 +269,7 @@ A DWORD value that contains the new mouse coordinates. The horizontal coordinate
 
 Implements the behavior of the Win32 message [RB_ENDDRAG](/windows/win32/Controls/rb-enddrag), as described in the Windows SDK.
 
-```
+```cpp
 void EndDrag();
 ```
 
@@ -277,7 +277,7 @@ void EndDrag();
 
 Implements the behavior of the Win32 message [RB_GETBANDBORDERS](/windows/win32/Controls/rb-getbandborders), as described in the Windows SDK.
 
-```
+```cpp
 void GetBandBorders(
     UINT uBand,
     LPRECT prc) const;
@@ -329,7 +329,7 @@ Nonzero if successful; otherwise zero.
 
 Retrieves the margins of the band.
 
-```
+```cpp
 void GetBandMargins(PMARGINS pMargins);
 ```
 
@@ -623,7 +623,7 @@ Nonzero if successful; otherwise zero.
 
 Resizes a band in a rebar control to its largest size.
 
-```
+```cpp
 void MaximizeBand(UINT uBand);
 ```
 
@@ -644,7 +644,7 @@ Implements the behavior of the Win32 message [RB_MAXIMIZEBAND](/windows/win32/Co
 
 Resizes a band in a rebar control to its smallest size.
 
-```
+```cpp
 void MinimizeBand(UINT uBand);
 ```
 
@@ -687,7 +687,7 @@ Nonzero if successful; otherwise zero.
 
 Implements the behavior of the Win32 message [RB_PUSHCHEVRON](/windows/win32/Controls/rb-pushchevron), as described in the Windows SDK.
 
-```
+```cpp
 void PushChevron(
     UINT uBand,
     LPARAM lAppValue);
@@ -705,7 +705,7 @@ An application defined 32-bit value. See *lAppValue* in [RB_PUSHCHEVRON](/window
 
 Resizes a band in a rebar control to its ideal size.
 
-```
+```cpp
 void RestoreBand(UINT uBand);
 ```
 
@@ -831,7 +831,7 @@ See this topic for more information about when to set the background color, and 
 
 Sets the color scheme for the buttons on a rebar control.
 
-```
+```cpp
 void SetColorScheme(const COLORSCHEME* lpcs);
 ```
 
@@ -956,7 +956,7 @@ It is provided to support text color flexibility in a rebar control.
 
 Associates a tool tip control with a rebar control.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pToolTip);
 ```
 

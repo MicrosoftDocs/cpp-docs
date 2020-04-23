@@ -1669,7 +1669,7 @@ Pointer to the previous image list, if any; otherwise NULL.
 
 Call this function to set the width of indentation for a tree view control and redraw the control to reflect the new width.
 
-```
+```cpp
 void SetIndent(UINT nIndent);
 ```
 
@@ -2105,7 +2105,7 @@ To use tooltips, indicate the TVS_NOTOOLTIPS style when you create the `CTreeCtr
 
 Displays the infotip for the specified item in the current tree-view control.
 
-```
+```cpp
 void ShowInfoTip(HTREEITEM hItem);
 ```
 

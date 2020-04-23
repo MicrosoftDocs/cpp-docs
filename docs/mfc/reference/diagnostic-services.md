@@ -103,7 +103,7 @@ Call this function to cause a break (at the location of the call to `AfxDebugBre
 
 ### Syntax
 
-```
+```cpp
 void AfxDebugBreak( );
 ```
 
@@ -413,7 +413,7 @@ Internal function that MFC uses to dump the state of an object while debugging.
 
 ### Syntax
 
-```
+```cpp
 void AfxDump(const CObject* pOb);
 ```
 
@@ -462,7 +462,7 @@ int  afxMemDF;
 
 This function tests the passed SCODE to see if it is an error.
 
-```
+```cpp
 void AFXAPI AfxCheckError(SCODE sc);
 throw CMemoryException*
 throw COleException*
@@ -526,7 +526,7 @@ This function works only in the Debug version of MFC.
 
 Call this function while in the debugger to dump the state of an object while debugging.
 
-```
+```cpp
 void AfxDump(const CObject* pOb);
 ```
 
@@ -549,7 +549,7 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 
 This global function can be used to generate an image of the current stack.
 
-```
+```cpp
 void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
 ```
 
@@ -837,7 +837,7 @@ Note that the AFXAPI calling convention implies that the callee must remove the 
 
 Calls the specified iteration function for all serializable `CObject`-derived classes in the application's memory space.
 
-```
+```cpp
 void
 AFXAPI AfxDoForAllClasses(
     void (* pfn)(const CRuntimeClass* pClass, void* pContext),
@@ -873,7 +873,7 @@ Serializable `CObject`-derived classes are classes derived using the DECLARE_SER
 
 Executes the specified iteration function for all objects derived from `CObject` that have been allocated with **new**.
 
-```
+```cpp
 void AfxDoForAllObjects(
     void (* pfn)(CObject* pObject, void* pContext),
     void* pContext);

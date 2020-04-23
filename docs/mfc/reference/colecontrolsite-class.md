@@ -346,7 +346,7 @@ Nonzero if the window was previously disabled, otherwise 0.
 
 Specifies whether the control site will handle or ignore events fired from a control.
 
-```
+```cpp
 void FreezeEvents(BOOL bFreeze);
 ```
 
@@ -366,7 +366,7 @@ If *bFreeze* is TRUE, the control site requests the control to stop fring events
 
 Retrieves information about a control's keyboard mnemonics and keyboard behavior.
 
-```
+```cpp
 void GetControlInfo();
 ```
 
@@ -909,7 +909,7 @@ Nonzero if successful; otherwise zero.
 
 Sets the control as the default button.
 
-```
+```cpp
 void SetDefaultButton(BOOL bDefault);
 ```
 
