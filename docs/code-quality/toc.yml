@@ -213,6 +213,12 @@
       href: c26816.md
     - name: C26817
       href: c26817.md
+    - name: C26818
+      href: c26818.md
+    - name: C26819
+      href: c26819.md
+    - name: C26820
+      href: c26820.md
   - name: C/C++ warnings
     items:
     - name: Overview
@@ -570,8 +576,6 @@
       href: c26810.md
     - name: C26811
       href: c26811.md
-    - name: C26820
-      href: c26820.md
     - name: C28020
       href: c28020.md
     - name: C28021
