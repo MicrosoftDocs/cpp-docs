@@ -1,6 +1,6 @@
 ---
 title: "switch Statement (C)"
-ms.date: "11/04/2016"
+ms.date: "04/25/2020"
 f1_keywords: ["switch"]
 helpviewer_keywords: ["switch keyword [C]"]
 ms.assetid: fbede014-23bd-4ab1-8094-c8d9d9cb963a
@@ -55,15 +55,15 @@ The following examples illustrate **switch** statements:
 switch( c )
 {
     case 'A':
-        capa++;
+        capital_a++;
     case 'a':
-        lettera++;
+        letter_a++;
     default :
         total++;
 }
 ```
 
-All three statements of the **switch** body in this example are executed if `c` is equal to `'A'`, since no **break** statement appears before the following case. Execution control is transferred to the first statement (`capa++;`) and continues in order through the rest of the body. If `c` is equal to `'a'`, `lettera` and `total` are incremented. Only `total` is incremented when `c` doesn't equal `'A'` or `'a'`.
+All three statements of the **switch** body in this example are executed if `c` is equal to `'A'`, since no **break** statement appears before the following case. Execution control is transferred to the first statement (`capital_a++;`) and continues in order through the rest of the body. If `c` is equal to `'a'`, `letter_a` and `total` are incremented. Only `total` is incremented when `c` doesn't equal `'A'` or `'a'`.
 
 ```C
 switch( i )
@@ -92,11 +92,11 @@ switch( c )
     case 'c' :
     case 'd' :
     case 'e' :
-    case 'f' :  hexcvt(c);
+    case 'f' :  convert_hex(c);
 }
 ```
 
-In this example, if *constant-expression* equals any letter between `'a'` and `'f'`, the `hexcvt` function is called.
+In this example, if *constant-expression* equals any letter between `'a'` and `'f'`, the `convert_hex` function is called.
 
 ### Microsoft-specific
 
