@@ -8,34 +8,38 @@ ms.assetid: 668ce2dd-a1c3-4ca0-8135-b25267cb6a85
 
 You can define one or more parse trees in your registrar script, where each parse tree has the following form:
 
-```
-<root key>{<registry expression>}+
-```
+> \<root key>{\<registry expression>}+
 
 where:
 
-```
-<root key> ::= HKEY_CLASSES_ROOT | HKEY_CURRENT_USER |
-    HKEY_LOCAL_MACHINE | HKEY_USERS |
-    HKEY_PERFORMANCE_DATA | HKEY_DYN_DATA |
-    HKEY_CURRENT_CONFIG | HKCR | HKCU |
-    HKLM | HKU | HKPD | HKDD | HKCC
-<registry expression> ::= <Add Key> | <Delete Key>
-<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name> [<Key Value>][{<Add Key>}]
-<Delete Key> ::= Delete<Key Name>
-<Key Name> ::= '<AlphaNumeric>+'
-<AlphaNumeric> ::= any character not NULL, i.e. ASCII 0
-<Key Value> ::== <Key Type><Key Name>
-<Key Type> ::= s | d
-<Key Value> ::= '<AlphaNumeric>'
-```
+> \<root key> ::= HKEY_CLASSES_ROOT | HKEY_CURRENT_USER |\
+> &nbsp;&nbsp;&nbsp;&nbsp;HKEY_LOCAL_MACHINE | HKEY_USERS |\
+> &nbsp;&nbsp;&nbsp;&nbsp;HKEY_PERFORMANCE_DATA | HKEY_DYN_DATA |\
+> &nbsp;&nbsp;&nbsp;&nbsp;HKEY_CURRENT_CONFIG | HKCR | HKCU |\
+> &nbsp;&nbsp;&nbsp;&nbsp;HKLM | HKU | HKPD | HKDD | HKCC
+
+> \<registry expression> ::= \<Add Key> | \<Delete Key>
+
+> \<Add Key> ::= [**ForceRemove** | **NoRemove** | **val**]\<Key Name> [\<Key Value>][{\<Add Key>}]
+
+> \<Delete Key> ::= **Delete**\<Key Name>
+
+> \<Key Name> ::= **'**\<AlphaNumeric>+**'**
+
+> \<AlphaNumeric> ::= *any character not NULL, i.e. ASCII 0*
+
+> \<Key Value> ::= \<Key Type>\<Key Name>
+
+> \<Key Type> ::= **s** | **d**
+
+> \<Key Value> ::= **'**\<AlphaNumeric>**'**
 
 > [!NOTE]
 > `HKEY_CLASSES_ROOT` and `HKCR` are equivalent; `HKEY_CURRENT_USER` and `HKCU` are equivalent; and so on.
 
 A parse tree can add multiple keys and subkeys to the \<root key>. In doing so, it keeps a subkey's handle open until the parser has completed parsing all of its subkeys. This approach is more efficient than operating on a single key at a time, as seen in the following example:
 
-```
+```rgs
 HKEY_CLASSES_ROOT
 {
     'MyVeryOwnKey'

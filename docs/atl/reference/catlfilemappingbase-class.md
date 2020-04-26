@@ -14,7 +14,7 @@ This class represents a memory-mapped file.
 
 ## Syntax
 
-```
+```cpp
 class CAtlFileMappingBase
 ```
 
@@ -60,7 +60,7 @@ For more information, see [File Mapping](/windows/win32/Memory/file-mapping) in 
 
 The constructor.
 
-```
+```cpp
 CAtlFileMappingBase(CAtlFileMappingBase& orig);
 CAtlFileMappingBase() throw();
 ```
@@ -82,7 +82,7 @@ Creates a new file-mapping object, optionally using an existing object. It is st
 
 The destructor.
 
-```
+```cpp
 ~CAtlFileMappingBase() throw();
 ```
 
@@ -94,7 +94,7 @@ Frees any resources allocated by the class and calls the [CAtlFileMappingBase::U
 
 Call this method to copy from a file-mapping object.
 
-```
+```cpp
 HRESULT CopyFrom(CAtlFileMappingBase& orig) throw();
 ```
 
@@ -123,7 +123,7 @@ Returns a pointer to the data.
 
 Call this method to return a handle to the file-mapping object.
 
-```
+```cpp
 HANDLE GetHandle() throw ();
 ```
 
@@ -135,7 +135,7 @@ Returns a handle to the file-mapping object.
 
 Call this method to get the mapping size from a file-mapping object.
 
-```
+```cpp
 SIZE_T GetMappingSize() throw();
 ```
 
@@ -151,7 +151,7 @@ See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingb
 
 Call this method to open or create a file-mapping object for the specified file.
 
-```
+```cpp
 HRESULT MapFile(
     HANDLE hFile,
     SIZE_T nMappingSize = 0,
@@ -193,7 +193,7 @@ See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingb
 
 Call this method to create a file-mapping object that permits full access to all processes.
 
-```
+```cpp
 HRESULT MapSharedMem(
     SIZE_T nMappingSize,
     LPCTSTR szName,
@@ -235,7 +235,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Call this method to open a named file-mapping object for the specified file.
 
-```
+```cpp
 HRESULT OpenMapping(
     LPCTSTR szName,
     SIZE_T nMappingSize,
@@ -269,7 +269,7 @@ In debug builds, an assertion error will occur if the input parameters are inval
 
 Sets the current file-mapping object to another file-mapping object.
 
-```
+```cpp
 CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
 ```
 
@@ -286,7 +286,7 @@ Returns a reference to the current object.
 
 Call this method to unmap a file-mapping object.
 
-```
+```cpp
 HRESULT Unmap() throw();
 ```
 

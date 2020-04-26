@@ -11,12 +11,12 @@ This class implements an ATL module.
 
 ## Syntax
 
-```
+```cpp
 template <class T>
 class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 Your class derived from `CAtlModuleT`.
@@ -62,7 +62,7 @@ Your class derived from `CAtlModuleT`.
 
 The constructor.
 
-```
+```cpp
 CAtlModuleT() throw();
 ```
 
@@ -74,7 +74,7 @@ Calls [CAtlModuleT::InitLibId](#initlibid).
 
 Initializes the data member containing the GUID of the current module.
 
-```
+```cpp
 static void InitLibId() throw();
 ```
 
@@ -86,7 +86,7 @@ Called by the constructor [CAtlModuleT::CAtlModuleT](#catlmodulet).
 
 Adds the EXE to the registry.
 
-```
+```cpp
 HRESULT RegisterAppId() throw();
 ```
 
@@ -98,7 +98,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Adds the service to the registry.
 
-```
+```cpp
 HRESULT RegisterServer(
     BOOL bRegTypeLib = FALSE,
     const CLSID* pCLSID = NULL) throw();
@@ -120,7 +120,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Removes the EXE from the registry.
 
-```
+```cpp
 HRESULT UnregisterAppId() throw();
 ```
 
@@ -132,7 +132,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Removes the service from the registry.
 
-```
+```cpp
 HRESULT UnregisterServer(
     BOOL bUnRegTypeLib,
     const CLSID* pCLSID = NULL) throw();
@@ -154,7 +154,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Updates the EXE information in the registry.
 
-```
+```cpp
 static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 ```
 

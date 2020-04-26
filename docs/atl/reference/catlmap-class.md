@@ -11,7 +11,7 @@ This class provides methods for creating and managing a map object.
 
 ## Syntax
 
-```
+```cpp
 template <typename K,
           typename V,
           class KTraits = CElementTraits<K>,
@@ -19,7 +19,7 @@ template <typename K,
 class CAtlMap
 ```
 
-#### Parameters
+### Parameters
 
 *K*<br/>
 The key element type.
@@ -136,7 +136,7 @@ See the example for [CAtlMap::CAtlMap](#catlmap).
 
 The constructor.
 
-```
+```cpp
 CAtlMap(
     UINT nBins = 17,
     float fOptimalLoad = 0.75f,
@@ -186,7 +186,7 @@ Before any data can be stored, it is necessary to initialize the hash table with
 
 The destructor.
 
-```
+```cpp
 ~CAtlMap() throw();
 ```
 
@@ -198,7 +198,7 @@ Frees any allocated resources.
 
 A class containing the key and value elements.
 
-```
+```cpp
 class CPair : public __POSITION
 ```
 
@@ -270,7 +270,7 @@ In debug builds, an assertion error will occur if *pos* is equal to NULL.
 
 Call this method to retrieve the number of elements in the map.
 
-```
+```cpp
 size_t GetCount() const throw();
 ```
 
@@ -286,7 +286,7 @@ See the example for [CAtlMap::CAtlMap](#catlmap).
 
 Call this method to determine the number of bins in the map's hash table.
 
-```
+```cpp
 UINT GetHashTableSize() const throw();
 ```
 
@@ -298,7 +298,7 @@ Returns the number of bins in the hash table. See [CAtlMap::CAtlMap](#catlmap) f
 
 Call this method to retrieve the key stored at the given position in the `CAtlMap` object.
 
-```
+```cpp
 const K& GetKeyAt(POSITION pos) const throw();
 ```
 
@@ -319,7 +319,7 @@ See the example for [CAtlMap::CAtlMap](#catlmap).
 
 Call this method to obtain a pointer to the next element pair stored in the `CAtlMap` object.
 
-```
+```cpp
 CPair* GetNext(POSITION& pos) throw();
 const CPair* GetNext(POSITION& pos) const throw();
 ```
@@ -363,7 +363,7 @@ The *pos* position counter is updated after each call. If the retrieved element 
 
 Call this method to retrieve the next key from the `CAtlMap` object.
 
-```
+```cpp
 const K& GetNextKey(POSITION& pos) const throw();
 ```
 
@@ -384,7 +384,7 @@ Updates the current position counter, *pos*. If there are no more entries in the
 
 Call this method to get the next value from the `CAtlMap` object.
 
-```
+```cpp
 V& GetNextValue(POSITION& pos) throw();
 const V& GetNextValue(POSITION& pos) const throw();
 ```
@@ -410,7 +410,7 @@ See the example for [CAtlMap::CAtlMap](#catlmap).
 
 Call this method to start a map iteration.
 
-```
+```cpp
 POSITION GetStartPosition() const throw();
 ```
 
@@ -433,7 +433,7 @@ See the example for [CAtlMap::CAtlMap](#catlmap).
 
 Call this method to retrieve the value stored at a given position in the `CAtlMap` object.
 
-```
+```cpp
 V& GetValueAt(POSITION pos) throw();
 const V& GetValueAt(POSITION pos) const throw();
 ```
@@ -451,7 +451,7 @@ Returns a reference to the value stored at the given position in the `CAtlMap` o
 
 Call this method to initialize the hash table.
 
-```
+```cpp
 bool InitHashTable(
     UINT nBins,
     bool bAllocNow = true);
@@ -483,7 +483,7 @@ See the example for [CAtlMap::CAtlMap](#catlmap).
 
 Call this method to test for an empty map object.
 
-```
+```cpp
 bool IsEmpty() const throw();
 ```
 
@@ -495,7 +495,7 @@ Returns TRUE if the map is empty, FALSE otherwise.
 
 Type used when a key is passed as an input argument.
 
-```
+```cpp
 typedef KTraits::INARGTYPE KINARGTYPE;
 ```
 
@@ -503,7 +503,7 @@ typedef KTraits::INARGTYPE KINARGTYPE;
 
 Type used when a key is returned as an output argument.
 
-```
+```cpp
 typedef KTraits::OUTARGTYPE KOUTARGTYPE;
 ```
 
@@ -511,7 +511,7 @@ typedef KTraits::OUTARGTYPE KOUTARGTYPE;
 
 Call this method to look up keys or values in the `CAtlMap` object.
 
-```
+```cpp
 bool Lookup(KINARGTYPE key, VOUTARGTYPE value) const;
 const CPair* Lookup(KINARGTYPE key) const throw();
 CPair* Lookup(KINARGTYPE key) throw();
@@ -537,7 +537,7 @@ The first form of the method returns true if the key is found, otherwise false. 
 
 Replaces or adds a new element to the `CAtlMap`.
 
-```
+```cpp
 V& operator[](kinargtype key) throw();
 ```
 
@@ -604,7 +604,7 @@ Removes the key/value pair stored at the specified position. The memory used to 
 
 Call this method to remove an element from the `CAtlMap` object, given the key.
 
-```
+```cpp
 bool RemoveKey(KINARGTYPE key) throw();
 ```
 
@@ -625,7 +625,7 @@ See the example for [CAtlMap::CAtlMap](#catlmap).
 
 Call this method to insert an element pair into the map.
 
-```
+```cpp
 POSITION SetAt(
     KINARGTYPE key,
     VINARGTYPE value);
@@ -703,7 +703,7 @@ Changes the value element stored at the given position in the `CAtlMap` object.
 
 Type used when a value is passed as an input argument.
 
-```
+```cpp
 typedef VTraits::INARGTYPE VINARGTYPE;
 ```
 
@@ -711,7 +711,7 @@ typedef VTraits::INARGTYPE VINARGTYPE;
 
 Type used when a value is passed as an output argument.
 
-```
+```cpp
 typedef VTraits::OUTARGTYPE VOUTARGTYPE;
 ```
 
@@ -719,7 +719,7 @@ typedef VTraits::OUTARGTYPE VOUTARGTYPE;
 
 The data member storing the key element.
 
-```
+```cpp
 const K m_key;
 ```
 
@@ -732,7 +732,7 @@ The key element type.
 
 The data member storing the value element.
 
-```
+```cpp
 V  m_value;
 ```
 
