@@ -14,12 +14,12 @@ This class is used by the string conversion macros CA2TEX, CA2CTEX, CT2WEX, and 
 
 ## Syntax
 
-```
+```cpp
 template <int t_nBufferLength = 128>
 class CA2WEX
 ```
 
-#### Parameters
+### Parameters
 
 *t_nBufferLength*<br/>
 The size of the buffer used in the translation process. The default length is 128 bytes.
@@ -84,7 +84,7 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 The constructor.
 
-```
+```cpp
 CA2WEX(LPCSTR psz, UINT nCodePage) throw(...);
 CA2WEX(LPCSTR psz) throw(...);
 ```
@@ -105,7 +105,7 @@ Allocates the buffer used in the translation process.
 
 The destructor.
 
-```
+```cpp
 ~CA2WEX() throw();
 ```
 
@@ -117,7 +117,7 @@ Frees the allocated buffer.
 
 The data member that stores the source string.
 
-```
+```cpp
 LPWSTR m_psz;
 ```
 
@@ -125,7 +125,7 @@ LPWSTR m_psz;
 
 The static buffer, used to store the converted string.
 
-```
+```cpp
 wchar_t m_szBuffer[t_nBufferLength];
 ```
 
@@ -133,7 +133,7 @@ wchar_t m_szBuffer[t_nBufferLength];
 
 Conversion operator.
 
-```
+```cpp
 operator LPWSTR() const throw();
 ```
 

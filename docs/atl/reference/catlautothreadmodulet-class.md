@@ -14,14 +14,14 @@ This class provides methods for implementing a thread-pooled, apartment-model CO
 
 ## Syntax
 
-```
+```cpp
 template <class T,
          class ThreadAllocator = CComSimpleThreadAllocator,
          DWORD dwWait = INFINITE>
 class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The class which will implement the COM server.
@@ -61,7 +61,7 @@ The class [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.
 
 This static function dynamically calculates and returns the maximum number of threads for the EXE module, based on the number of processors.
 
-```
+```cpp
 static int GetDefaultThreads();
 ```
 

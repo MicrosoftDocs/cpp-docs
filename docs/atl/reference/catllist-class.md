@@ -11,12 +11,12 @@ This class provides methods for creating and managing a list object.
 
 ## Syntax
 
-```
+```cpp
 template<typename E, class ETraits = CElementTraits<E>>
 class CAtlList
 ```
 
-#### Parameters
+### Parameters
 
 *E*<br/>
 The element type.
@@ -88,7 +88,7 @@ For more information regarding the collection classes available with ATL, see [A
 
 Call this method to add an element to the head of the list.
 
-```
+```cpp
 POSITION AddHead();
 POSITION AddHead(INARGTYPE element);
 ```
@@ -135,7 +135,7 @@ The list pointed to by *plNew* is inserted at the start of the existing list. In
 
 Call this method to add an element to the tail of this list.
 
-```
+```cpp
 POSITION AddTail();
 POSITION AddTail(INARGTYPE element);
 ```
@@ -198,7 +198,7 @@ In debug builds, an assertion failure will occur if the list object is not valid
 
 The constructor.
 
-```
+```cpp
 CAtlList(UINT nBlockSize = 10) throw();
 ```
 
@@ -219,7 +219,7 @@ The constructor for the `CAtlList` object. The block size is a measure of the am
 
 The destructor.
 
-```
+```cpp
 ~CAtlList() throw();
 ```
 
@@ -233,7 +233,7 @@ In debug builds, an assertion failure will occur if the list still contains some
 
 Call this method to search the list for the specified element.
 
-```
+```cpp
 POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 ```
 
@@ -261,7 +261,7 @@ In debug builds, an assertion failure will occur if the list object is not valid
 
 Call this method to obtain the position of an element, given an index value.
 
-```
+```cpp
 POSITION FindIndex(size_t iElement) const throw();
 ```
 
@@ -288,7 +288,7 @@ In debug builds, an assertion failure will occur if the list object is not valid
 
 Call this method to return the element at a specified position in the list.
 
-```
+```cpp
 E& GetAt(POSITION pos) throw();
 const E& GetAt(POSITION pos) const throw();
 ```
@@ -318,7 +318,7 @@ See the example for [CAtlList::FindIndex](#findindex).
 
 Call this method to return the number of objects in the list.
 
-```
+```cpp
 size_t GetCount() const throw();
 ```
 
@@ -334,7 +334,7 @@ See the example for [CAtlList::Find](#find).
 
 Call this method to return the element at the head of the list.
 
-```
+```cpp
 E& GetHead() throw();
 const E& GetHead() const throw();
 ```
@@ -359,7 +359,7 @@ See the example for [CAtlList::AddHead](#addhead).
 
 Call this method to obtain the position of the head of the list.
 
-```
+```cpp
 POSITION GetHeadPosition() const throw();
 ```
 
@@ -379,7 +379,7 @@ If the list is empty, the value returned is NULL.
 
 Call this method to return the next element from the list.
 
-```
+```cpp
 E& GetNext(POSITION& pos) throw();
 const E& GetNext(POSITION& pos) const throw();
 ```
@@ -407,7 +407,7 @@ See the example for [CAtlList::GetHeadPosition](#getheadposition).
 
 Call this method to return the previous element from the list.
 
-```
+```cpp
 E& GetPrev(POSITION& pos) throw();
 const E& GetPrev(POSITION& pos) const throw();
 ```
@@ -435,7 +435,7 @@ See the example for [CAtlList::GetTailPosition](#gettailposition).
 
 Call this method to return the element at the tail of the list.
 
-```
+```cpp
 E& GetTail() throw();
 const E& GetTail() const throw();
 ```
@@ -460,7 +460,7 @@ See the example for [CAtlList::AddTail](#addtail).
 
 Call this method to obtain the position of the tail of the list.
 
-```
+```cpp
 POSITION GetTailPosition() const throw();
 ```
 
@@ -480,7 +480,7 @@ If the list is empty, the value returned is NULL.
 
 Type used when an element is passed as an input argument.
 
-```
+```cpp
 typedef ETraits::INARGTYPE INARGTYPE;
 ```
 
@@ -488,7 +488,7 @@ typedef ETraits::INARGTYPE INARGTYPE;
 
 Call this method to insert a new element into the list after the specified position.
 
-```
+```cpp
 POSITION InsertAfter(POSITION pos, INARGTYPE element);
 ```
 
@@ -516,7 +516,7 @@ In debug builds, an assertion failure will occur if the list isn't valid, if the
 
 Call this method to insert a new element into the list before the specified position.
 
-```
+```cpp
 POSITION InsertBefore(POSITION pos, INARGTYPE element);
 ```
 
@@ -544,7 +544,7 @@ In debug builds, an assertion failure will occur if the list isn't valid, if the
 
 Call this method to determine if the list is empty.
 
-```
+```cpp
 bool IsEmpty() const throw();
 ```
 
@@ -641,7 +641,7 @@ In debug builds, an assertion failure will occur if the list is not valid or if 
 
 Call this method to remove the element at the head of the list.
 
-```
+```cpp
 E RemoveHead();
 ```
 
@@ -677,7 +677,7 @@ See the example for [CAtlList::IsEmpty](#isempty).
 
 Call this method to remove the element at the tail of the list.
 
-```
+```cpp
 E RemoveTail();
 ```
 

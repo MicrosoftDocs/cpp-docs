@@ -23,7 +23,7 @@ These macros define category maps.
 
 Marks the beginning of the category map.
 
-```
+```cpp
 BEGIN_CATEGORY_MAP(theClass)
 ```
 
@@ -53,7 +53,7 @@ For more information about component categories, see [What are Component Categor
 
 Marks the end of the category map.
 
-```
+```cpp
 END_CATEGORY_MAP()
 ```
 
@@ -65,7 +65,7 @@ See the example for [BEGIN_CATEGORY_MAP](#begin_category_map).
 
 Add an IMPLEMENTED_CATEGORY macro to your component's [category map](#begin_category_map) to specify that it should be registered as implementing the category identified by the *catID* parameter.
 
-```
+```cpp
 IMPLEMENTED_CATEGORY(catID)
 ```
 
@@ -102,7 +102,7 @@ For more information about component categories, see [What are Component Categor
 
 Add a REQUIRED_CATEGORY macro to your component's [category map](#begin_category_map) to specify that it should be registered as requiring the category identified by the *catID* parameter.
 
-```
+```cpp
 REQUIRED_CATEGORY( catID )
 ```
 

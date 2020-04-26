@@ -14,7 +14,7 @@ This class provides methods for the creation and use of a temporary file.
 
 ## Syntax
 
-```
+```cpp
 class CAtlTemporaryFile
 ```
 
@@ -68,7 +68,7 @@ See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
 
 The constructor.
 
-```
+```cpp
 CAtlTemporaryFile() throw();
 ```
 
@@ -84,7 +84,7 @@ A file is not actually opened until a call is made to [CAtlTemporaryFile::Create
 
 The destructor.
 
-```
+```cpp
 ~CAtlTemporaryFile() throw();
 ```
 
@@ -96,7 +96,7 @@ The destructor calls [CAtlTemporaryFile::Close](#close).
 
 Call this method to close a temporary file and either delete its contents or store them under the specified file name.
 
-```
+```cpp
 HRESULT Close(LPCTSTR szNewName = NULL) throw();
 ```
 
@@ -117,7 +117,7 @@ See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
 
 Call this method to create a temporary file.
 
-```
+```cpp
 HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) throw();
 ```
 
@@ -141,7 +141,7 @@ See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
 
 Call this method to force any data remaining in the file buffer to be written to the temporary file.
 
-```
+```cpp
 HRESULT Flush() throw();
 ```
 
@@ -161,7 +161,7 @@ See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
 
 Call this method to get the current file pointer position.
 
-```
+```cpp
 HRESULT GetPosition(ULONGLONG& nPos) const throw();
 ```
 
@@ -182,7 +182,7 @@ To change the file pointer position, use [CAtlTemporaryFile::Seek](#seek).
 
 Call this method to get the size in bytes of the temporary file.
 
-```
+```cpp
 HRESULT GetSize(ULONGLONG& nLen) const throw();
 ```
 
@@ -199,7 +199,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Call this method to disassociate the file from the `CAtlTemporaryFile` object.
 
-```
+```cpp
 HRESULT HandsOff() throw();
 ```
 
@@ -215,7 +215,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Call this method to open an existing temporary file and position the pointer at the end of the file.
 
-```
+```cpp
 HRESULT HandsOn() throw();
 ```
 
@@ -231,7 +231,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Call this method to lock a region in the temporary file to prevent other processes from accessing it.
 
-```
+```cpp
 HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```
 
@@ -255,7 +255,7 @@ Locking bytes in a file prevents access to those bytes by other processes. You c
 
 Returns a handle to the temporary file.
 
-```
+```cpp
 operator HANDLE() throw();
 ```
 
@@ -263,7 +263,7 @@ operator HANDLE() throw();
 
 Call this method to read data from the temporary file starting at the position indicated by the file pointer.
 
-```
+```cpp
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize,
@@ -297,7 +297,7 @@ See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
 
 Call this method to move the file pointer of the temporary file.
 
-```
+```cpp
 HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 ```
 
@@ -325,7 +325,7 @@ See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
 
 Call this method to set the size of the temporary file.
 
-```
+```cpp
 HRESULT SetSize(ULONGLONG nNewLen) throw();
 ```
 
@@ -346,7 +346,7 @@ Calls [CAtlFile::SetSize](../../atl/reference/catlfile-class.md#setsize). On ret
 
 Call this method to return the name of temporary file.
 
-```
+```cpp
 LPCTSTR TempFileName() throw();
 ```
 
@@ -362,7 +362,7 @@ The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltempor
 
 Call this method to unlock a region of the temporary file.
 
-```
+```cpp
 HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```
 
@@ -386,7 +386,7 @@ Calls [CAtlFile::UnlockRange](../../atl/reference/catlfile-class.md#unlockrange)
 
 Call this method to write data to the temporary file starting at the position indicated by the file pointer.
 
-```
+```cpp
 HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,

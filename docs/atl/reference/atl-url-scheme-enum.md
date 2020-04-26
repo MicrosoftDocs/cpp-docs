@@ -10,7 +10,7 @@ The members of this enumeration provide constants for the schemes understood by 
 
 ## Syntax
 
-```
+```cpp
 enum ATL_URL_SCHEME{
    ATL_URL_SCHEME_UNKNOWN = -1,
    ATL_URL_SCHEME_FTP     = 0,
