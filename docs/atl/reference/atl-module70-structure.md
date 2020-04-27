@@ -11,7 +11,7 @@ Contains data used by every ATL module.
 
 ## Syntax
 
-```
+```cpp
 struct _ATL_MODULE70 {
     UINT cbSize;
     LONG m_nLockCnt;

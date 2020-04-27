@@ -14,7 +14,7 @@ This class provides support for ATL windowing components.
 
 ## Syntax
 
-```
+```cpp
 class CAtlWinModule : public _ATL_WIN_MODULE
 ```
 
@@ -72,7 +72,7 @@ This method calls [AtlWinModuleAddCreateWndData](winmodule-global-functions.md#a
 
 The constructor.
 
-```
+```cpp
 CAtlWinModule();
 ```
 
@@ -84,7 +84,7 @@ If initialization fails, an **EXCEPTION_NONCONTINUABLE** exception is raised.
 
 The destructor.
 
-```
+```cpp
 ~CAtlWinModule();
 ```
 

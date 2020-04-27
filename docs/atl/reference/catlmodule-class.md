@@ -11,7 +11,7 @@ This class provides methods used by several ATL module classes.
 
 ## Syntax
 
-```
+```cpp
 class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 ```
 
@@ -68,7 +68,7 @@ This class replaces the obsolete [CComModule Class](../../atl/reference/ccommodu
 
 Override this method to add parameters to the ATL Registry Component (Registrar) replacement map.
 
-```
+```cpp
 virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw() = 0;
 ```
 
@@ -91,7 +91,7 @@ See the topic [Using Replaceable Parameters (The Registrar's Preprocessor)](../.
 
 Adds a new function to be called when the module terminates.
 
-```
+```cpp
 HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc, DWORD_PTR dw) throw();
 ```
 
@@ -111,7 +111,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 The constructor.
 
-```
+```cpp
 CAtlModule() throw();
 ```
 
@@ -123,7 +123,7 @@ Initializes data members and initiates a critical section around the module's th
 
 The destructor.
 
-```
+```cpp
 ~CAtlModule() throw();
 ```
 
@@ -135,7 +135,7 @@ Releases all data members.
 
 Retrieves a pointer to the Global Interface Table.
 
-```
+```cpp
 virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
 ```
 
@@ -160,7 +160,7 @@ See [IGlobalInterfaceTable](/windows/win32/api/objidl/nn-objidl-iglobalinterface
 
 Returns the lock count.
 
-```
+```cpp
 virtual LONG GetLockCount() throw();
 ```
 
@@ -172,7 +172,7 @@ Returns the lock count. This value may be useful for diagnostics and debugging.
 
 Increments the lock count.
 
-```
+```cpp
 virtual LONG Lock() throw();
 ```
 
@@ -184,7 +184,7 @@ Increments the lock count and returns the updated value. This value may be usefu
 
 Contains the GUID of the current module.
 
-```
+```cpp
 static GUID m_libid;
 ```
 
@@ -192,7 +192,7 @@ static GUID m_libid;
 
 Pointer to the Global Interface Table.
 
-```
+```cpp
 IGlobalInterfaceTable* m_pGIT;
 ```
 
@@ -212,7 +212,7 @@ Releases all data members. This method is called by the destructor.
 
 Decrements the lock count.
 
-```
+```cpp
 virtual LONG Unlock() throw();
 ```
 
@@ -224,7 +224,7 @@ Decrements the lock count and returns the updated value. This value may be usefu
 
 Runs the script contained in a specified resource to register or unregister an object.
 
-```
+```cpp
 HRESULT WINAPI UpdateRegistryFromResourceD(
     UINT nResID,
     BOOL bRegister,
@@ -266,7 +266,7 @@ This method calls [CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistr
 
 This method is called by `UpdateRegistryFromResourceD` to perform the registry update.
 
-```
+```cpp
 inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
     LPCOLESTR lpszRes,
     BOOL bRegister,
@@ -296,7 +296,7 @@ This method provides the implementation of [CAtlModule::UpdateRegistryFromResour
 
 Runs the script contained in a specified resource to register or unregister an object. This method statically links to the ATL Registry Component.
 
-```
+```cpp
 HRESULT WINAPI UpdateRegistryFromResourceS(
     UINT nResID,
     BOOL bRegister,

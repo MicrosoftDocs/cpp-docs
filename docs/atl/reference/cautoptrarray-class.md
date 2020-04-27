@@ -14,14 +14,14 @@ This class provides methods useful when constructing an array of smart pointers.
 
 ## Syntax
 
-```
+```cpp
 template <typename E>
 class CAutoPtrArray : public CAtlArray<
                         ATL::CAutoPtr<E>,
                         CAutoPtrElementTraits<E>>
 ```
 
-#### Parameters
+### Parameters
 
 *E*<br/>
 The pointer type.
@@ -54,7 +54,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 The constructor.
 
-```
+```cpp
 CAutoPtrArray() throw();
 ```
 

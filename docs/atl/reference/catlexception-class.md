@@ -11,7 +11,7 @@ This class defines an ATL exception.
 
 ## Syntax
 
-```
+```cpp
 class CAtlException
 ```
 
@@ -49,7 +49,7 @@ In general, you will call `AtlThrow` rather than creating a `CAtlException` obje
 
 The constructor.
 
-```
+```cpp
 CAtlException(HRESULT hr) throw();
 CAtlException() throw();
 ```
@@ -63,7 +63,7 @@ The HRESULT error code.
 
 Casts the current object to an HRESULT value.
 
-```
+```cpp
 operator HRESULT() const throw ();
 ```
 
@@ -71,7 +71,7 @@ operator HRESULT() const throw ();
 
 The HRESULT data member.
 
-```
+```cpp
 HRESULT m_hr;
 ```
 
