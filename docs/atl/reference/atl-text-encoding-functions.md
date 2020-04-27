@@ -42,7 +42,7 @@ These functions support text encoding and decoding.
 
 Call this function to get the numeric value of a hexadecimal digit.
 
-```
+```cpp
 inline char AtlGetHexValue(char chIn) throw();
 ```
 
@@ -59,7 +59,7 @@ The numeric value of the input character interpreted as a hexadecimal digit. For
 
 Call this function to get the version of the ATL library that you are using.
 
-```
+```cpp
 ATLAPI_(DWORD) AtlGetVersion(void* pReserved);
 ```
 
@@ -86,7 +86,7 @@ The function should be called as follows.
 
 Decodes a string of data that has been encoded as hexadecimal text such as by a previous call to [AtlHexEncode](#atlhexencode).
 
-```
+```cpp
 inline BOOL AtlHexDecode(
    LPCSTR pSrcData,
    int nSrcLen,
@@ -116,7 +116,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this function to get the size in bytes of a buffer that could contain data decoded from a hex-encoded string of the specified length.
 
-```
+```cpp
 inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();
 ```
 
@@ -133,7 +133,7 @@ The number of bytes required for a buffer that could hold a decoded string of *n
 
 Call this function to encode some data as a string of hexadecimal text.
 
-```
+```cpp
 inline BOOL AtlHexEncode(
    const BYTE * pbSrcData,
    int nSrcLen,
@@ -167,7 +167,7 @@ Each byte of source data is encoded as 2 hexadecimal characters.
 
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.
 
-```
+```cpp
 inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();
 ```
 
@@ -184,7 +184,7 @@ The number of characters required for a buffer that could hold encoded data of *
 
 Call this function to get the numeric value of a hexadecimal digit.
 
-```
+```cpp
 inline short AtlHexValue(char chIn) throw();
 ```
 
@@ -201,7 +201,7 @@ The numeric value of the input character interpreted as a hexadecimal digit. For
 
 Call this function to convert a Unicode string to UTF-8.
 
-```
+```cpp
 ATL_NOINLINE inline int AtlUnicodeToUTF8(
    LPCWSTR wszSrc,
    int nSrc,
@@ -235,7 +235,7 @@ To determine the size of the buffer required for the converted string, call this
 
 Call this function to convert some data using the "B" encoding.
 
-```
+```cpp
 inline BOOL BEncode(
    BYTE* pbSrcData,
    int nSrcLen,
@@ -273,7 +273,7 @@ The "B" encoding scheme is described in RFC 2047 ([https://www.ietf.org/rfc/rfc2
 
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.
 
-```
+```cpp
 inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ```
 
@@ -297,7 +297,7 @@ The "B" encoding scheme is described in RFC 2047 ([https://www.ietf.org/rfc/rfc2
 
 Call this function to convert characters that are unsafe for use in XML to their safe equivalents.
 
-```
+```cpp
 inline int EscapeXML(
    const wchar_t * szIn,
    int nSrcLen,
@@ -346,7 +346,7 @@ Possible conversions performed by this function are shown in the table:
 
 Call this function to get the number of extended characters in a string.
 
-```
+```cpp
 inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();
 ```
 
@@ -366,7 +366,7 @@ Returns the number of extended characters found within the string as determined 
 
 Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, line feed or carriage return)
 
-```
+```cpp
 inline int IsExtendedChar(char ch) throw();
 ```
 
@@ -383,7 +383,7 @@ TRUE if the character is extended, FALSE otherwise.
 
 Call this function to convert some data using the "Q" encoding.
 
-```
+```cpp
 inline BOOL QEncode(
    BYTE* pbSrcData,
    int nSrcLen,
@@ -425,7 +425,7 @@ The "Q" encoding scheme is described in RFC 2047 ([https://www.ietf.org/rfc/rfc2
 
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.
 
-```
+```cpp
 inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ```
 
@@ -449,7 +449,7 @@ The "Q" encoding scheme is described in RFC 2047 ([https://www.ietf.org/rfc/rfc2
 
 Decodes a string of data that has been encoded in quoted-printable format such as by a previous call to [QPEncode](#qpencode).
 
-```
+```cpp
 inline BOOL QPDecode(
    BYTE* pbSrcData,
    int nSrcLen,
@@ -487,7 +487,7 @@ The quoted-printable encoding scheme is described in RFC 2045 ([https://www.ietf
 
 Call this function to get the size in bytes of a buffer that could contain data decoded from quoted-printable-encoded string of the specified length.
 
-```
+```cpp
 inline int QPDecodeGetRequiredLength(int nSrcLen) throw();
 ```
 
@@ -508,7 +508,7 @@ The quoted-printable encoding scheme is described in RFC 2045 ([https://www.ietf
 
 Call this function to encode some data in quoted-printable format.
 
-```
+```cpp
 inline BOOL QPEncode(
    BYTE* pbSrcData,
    int nSrcLen,
@@ -552,7 +552,7 @@ The quoted-printable encoding scheme is described in RFC 2045 ([https://www.ietf
 
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.
 
-```
+```cpp
 inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();
 ```
 
@@ -573,7 +573,7 @@ The quoted-printable encoding scheme is described in RFC 2045 ([https://www.ietf
 
 Decodes a string of data that has been uuencoded such as by a previous call to [UUEncode](#uuencode).
 
-```
+```cpp
 inline BOOL UUDecode(
    BYTE* pbSrcData,
    int nSrcLen,
@@ -607,7 +607,7 @@ This uuencoding implementation follows the POSIX P1003.2b/D11 specification.
 
 Call this function to get the size in bytes of a buffer that could contain data decoded from a uuencoded string of the specified length.
 
-```
+```cpp
 inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();
 ```
 
@@ -628,7 +628,7 @@ This uuencoding implementation follows the POSIX P1003.2b/D11 specification.
 
 Call this function to uuencode some data.
 
-```
+```cpp
 inline BOOL UUEncode(
    const BYTE* pbSrcData,
    int nSrcLen,
@@ -676,7 +676,7 @@ This uuencoding implementation follows the POSIX P1003.2b/D11 specification.
 
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.
 
-```
+```cpp
 inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();
 ```
 

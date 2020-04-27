@@ -14,7 +14,7 @@ This class is a wrapper for an access token.
 
 ## Syntax
 
-```
+```cpp
 class CAccessToken
 ```
 
@@ -107,7 +107,7 @@ In debug builds, an assertion error will occur if the `CAccessToken` object alre
 
 The destructor.
 
-```
+```cpp
 virtual ~CAccessToken() throw();
 ```
 
@@ -119,7 +119,7 @@ Frees all allocated resources.
 
 Call this method to determine if a specified SID is enabled in the `CAccessToken` object.
 
-```
+```cpp
 bool CheckTokenMembership(
     const CSid& rSid,
     bool* pbIsMember) const throw(...);
@@ -150,7 +150,7 @@ In debug builds, an assertion error will occur if *pbIsMember* is not a valid po
 
 Call this method to create an impersonation access token.
 
-```
+```cpp
 bool CreateImpersonationToken(
     CAccessToken* pImp,
     SECURITY_IMPERSONATION_LEVEL sil = SecurityImpersonation) const throw(...);
@@ -176,7 +176,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to create a new primary token.
 
-```
+```cpp
 bool CreatePrimaryToken(
     CAccessToken* pPri,
     DWORD dwDesiredAccess = MAXIMUM_ALLOWED,
@@ -206,7 +206,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to create a new process running in the security context of the user represented by the `CAccessToken` object.
 
-```
+```cpp
 bool CreateProcessAsUser(
     LPCTSTR pApplicationName,
     LPTSTR pCommandLine,
@@ -266,7 +266,7 @@ For this method to succeed, the `CAccessToken` object must hold AssignPrimaryTok
 
 Call this method to create a new, restricted `CAccessToken` object.
 
-```
+```cpp
 bool CreateRestrictedToken(
     CAccessToken* pRestrictedToken,
     const CTokenGroups& SidsToDisable,
@@ -303,7 +303,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to revoke ownership of the access token.
 
-```
+```cpp
 HANDLE Detach() throw();
 ```
 
@@ -319,7 +319,7 @@ This method revokes the `CAccessToken`'s ownership of the access token.
 
 Call this method to disable a privilege in the `CAccessToken` object.
 
-```
+```cpp
 bool DisablePrivilege(
     LPCTSTR pszPrivilege,
     CTokenPrivileges* pPreviousState = NULL) throw(...);
@@ -341,7 +341,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to disable one or more privileges in the `CAccessToken` object.
 
-```
+```cpp
 bool DisablePrivileges(
     const CAtlArray<LPCTSTR>& rPrivileges,
     CTokenPrivileges* pPreviousState = NULL) throw(...);
@@ -363,7 +363,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to enable a privilege in the `CAccessToken` object.
 
-```
+```cpp
 bool EnablePrivilege(
     LPCTSTR pszPrivilege,
     CTokenPrivileges* pPreviousState = NULL) throw(...);
@@ -385,7 +385,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to enable one or more privileges in the `CAccessToken` object.
 
-```
+```cpp
 bool EnablePrivileges(
     const CAtlArray<LPCTSTR>& rPrivileges,
     CTokenPrivileges* pPreviousState = NULL) throw(...);
@@ -407,7 +407,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to return the `CAccessToken` object's default DACL.
 
-```
+```cpp
 bool GetDefaultDacl(CDacl* pDacl) const throw(...);
 ```
 
@@ -424,7 +424,7 @@ Returns TRUE if the default DACL has been recovered, FALSE otherwise.
 
 Call this method to get the `CAccessToken` object equal to the access token in effect for the current thread.
 
-```
+```cpp
 bool GetEffectiveToken(DWORD dwDesiredAccess) throw();
 ```
 
@@ -441,7 +441,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to return the `CAccessToken` object's token groups.
 
-```
+```cpp
 bool GetGroups(CTokenGroups* pGroups) const throw(...);
 ```
 
@@ -458,7 +458,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to retrieve a handle to the access token.
 
-```
+```cpp
 HANDLE GetHandle() const throw();
 ```
 
@@ -470,7 +470,7 @@ Returns a handle to the `CAccessToken` object's access token.
 
 Call this method to get the impersonation level from the access token.
 
-```
+```cpp
 bool GetImpersonationLevel(
     SECURITY_IMPERSONATION_LEVEL* pImpersonationLevel) const throw(...);
 ```
@@ -488,7 +488,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to get the Logon Session ID associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetLogonSessionId(LUID* pluid) const throw(...);
 ```
 
@@ -509,7 +509,7 @@ In debug builds, an assertion error will occur if *pluid* is an invalid value.
 
 Call this method to get the Logon SID associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetLogonSid(CSid* pSid) const throw(...);
 ```
 
@@ -530,7 +530,7 @@ In debug builds, an assertion error will occur if *pSid* is an invalid value.
 
 Call this method to get the owner associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetOwner(CSid* pSid) const throw(...);
 ```
 
@@ -551,7 +551,7 @@ The owner is set by default on any objects created while this access token is in
 
 Call this method to get the primary group associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetPrimaryGroup(CSid* pSid) const throw(...);
 ```
 
@@ -572,7 +572,7 @@ The group is set by default on any objects created while this access token is in
 
 Call this method to get the privileges associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetPrivileges(CTokenPrivileges* pPrivileges) const throw(...);
 ```
 
@@ -589,7 +589,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to initialize the `CAccessToken` with the access token from the given process.
 
-```
+```cpp
 bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
 ```
 
@@ -613,7 +613,7 @@ Calls the [OpenProcessToken](/windows/win32/api/processthreadsapi/nf-processthre
 
 Call this method to get the handle pointing to the user profile associated with the `CAccessToken` object.
 
-```
+```cpp
 HANDLE GetProfile() const throw();
 ```
 
@@ -625,7 +625,7 @@ Returns a handle pointing to the user profile, or NULL if no profile exists.
 
 Call this method to get the source of the `CAccessToken` object.
 
-```
+```cpp
 bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
 ```
 
@@ -642,7 +642,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to get information associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
 ```
 
@@ -659,7 +659,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to get the Terminal Services Session ID associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetTerminalServicesSessionId(DWORD* pdwSessionId) const throw(...);
 ```
 
@@ -676,7 +676,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to initialize the `CAccessToken` with the token from the given thread.
 
-```
+```cpp
 bool GetThreadToken(
     DWORD dwDesiredAccess,
     HANDLE hThread = NULL,
@@ -704,7 +704,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to get the Token ID associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetTokenId(LUID* pluid) const throw(...);
 ```
 
@@ -721,7 +721,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to get the token type of the `CAccessToken` object.
 
-```
+```cpp
 bool GetType(TOKEN_TYPE* pType) const throw(...);
 ```
 
@@ -742,7 +742,7 @@ The TOKEN_TYPE enumeration type contains values that differentiate between a pri
 
 Call this method to identify the user associated with the `CAccessToken` object.
 
-```
+```cpp
 bool GetUser(CSid* pSid) const throw(...);
 ```
 
@@ -759,7 +759,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to get the handle pointing to the user profile associated with the `CAccessToken` object.
 
-```
+```cpp
 HKEY HKeyCurrentUser() const throw();
 ```
 
@@ -771,7 +771,7 @@ Returns a handle pointing to the user profile, or NULL if no profile exists.
 
 Call this method to assign an impersonation `CAccessToken` to a thread.
 
-```
+```cpp
 bool Impersonate(HANDLE hThread = NULL) const throw(...);
 ```
 
@@ -794,7 +794,7 @@ The [CAutoRevertImpersonation class](../../atl/reference/cautorevertimpersonatio
 
 Call this method to allow the calling thread to impersonate the security context of a logged-on user.
 
-```
+```cpp
 bool ImpersonateLoggedOnUser() const throw(...);
 ```
 
@@ -811,7 +811,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this method to test if the `CAccessToken` object contains a list of restricted SIDs.
 
-```
+```cpp
 bool IsTokenRestricted() const throw();
 ```
 
@@ -823,7 +823,7 @@ Returns TRUE if the object contains a list of restricting SIDs, FALSE if there a
 
 Call this method to load the user profile associated with the `CAccessToken` object.
 
-```
+```cpp
 bool LoadUserProfile() throw(...);
 ```
 
@@ -839,7 +839,7 @@ In debug builds, an assertion error will occur if the `CAccessToken` does not co
 
 Call this method to create a logon session for the user associated with the given credentials.
 
-```
+```cpp
 bool LogonUser(
     LPCTSTR pszUserName,
     LPCTSTR pszDomain,
@@ -877,7 +877,7 @@ The access token resulting from the logon will be associated with the `CAccessTo
 
 Call this method from within a COM server handling a call from a client to initialize the `CAccessToken` with the access token from the COM client.
 
-```
+```cpp
 bool OpenCOMClientToken(
     DWORD dwDesiredAccess,
     bool bImpersonate = false,
@@ -909,7 +909,7 @@ The [CAutoRevertImpersonation Class](../../atl/reference/cautorevertimpersonatio
 
 Call this method from within a server taking requests over a named pipe to initialize the `CAccessToken` with the access token from the client.
 
-```
+```cpp
 bool OpenNamedPipeClientToken(
     HANDLE hPipe,
     DWORD dwDesiredAccess,
@@ -945,7 +945,7 @@ The [CAutoRevertImpersonation Class](../../atl/reference/cautorevertimpersonatio
 
 Call this method from within a server handling a call from an RPC client to initialize the `CAccessToken` with the access token from the client.
 
-```
+```cpp
 bool OpenRPCClientToken(
     RPC_BINDING_HANDLE BindingHandle,
     DWORD dwDesiredAccess,
@@ -981,7 +981,7 @@ The [CAutoRevertImpersonation Class](../../atl/reference/cautorevertimpersonatio
 
 Call this method to set the impersonation level and then initialize the `CAccessToken` with the token from the given thread.
 
-```
+```cpp
 bool OpenThreadToken(
     DWORD dwDesiredAccess,
     bool bImpersonate = false,
@@ -1019,7 +1019,7 @@ The [CAutoRevertImpersonation Class](../../atl/reference/cautorevertimpersonatio
 
 Call this method to determine whether a specified set of privileges are enabled in the `CAccessToken` object.
 
-```
+```cpp
 bool PrivilegeCheck(
     PPRIVILEGE_SET RequiredPrivileges,
     bool* pbResult) const throw();
@@ -1045,7 +1045,7 @@ When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBU
 
 Call this method to stop a thread from using an impersonation token.
 
-```
+```cpp
 bool Revert(HANDLE hThread = NULL) const throw();
 ```
 
@@ -1066,7 +1066,7 @@ The reversion of impersonation tokens can be performed automatically with the [C
 
 Call this method to set the default DACL of the `CAccessToken` object.
 
-```
+```cpp
 bool SetDefaultDacl(const CDacl& rDacl) throw(...);
 ```
 
@@ -1087,7 +1087,7 @@ The default DACL is the DACL that is used by default when new objects are create
 
 Call this method to set the owner of the `CAccessToken` object.
 
-```
+```cpp
 bool SetOwner(const CSid& rSid) throw(...);
 ```
 
@@ -1108,7 +1108,7 @@ The owner is the default owner that is used for new objects created while this a
 
 Call this method to set the primary group of the `CAccessToken` object.
 
-```
+```cpp
 bool SetPrimaryGroup(const CSid& rSid) throw(...);
 ```
 

@@ -14,12 +14,12 @@ This class represents a memory-mapped file, adding a cast operator to the method
 
 ## Syntax
 
-```
+```cpp
 template <typename T = char>
 class CAtlFileMapping : public CAtlFileMappingBase
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The type of data used for the cast operator.
@@ -50,7 +50,7 @@ This class adds a single cast operator to allow implicit conversion of `CAtlFile
 
 Allows implicit conversion of `CAtlFileMapping` objects to `T*`.
 
-```
+```cpp
 operator T*() const throw();
 ```
 

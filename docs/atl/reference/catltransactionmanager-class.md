@@ -14,7 +14,7 @@ CAtlTransactionManager class provides a wrapper to Kernel Transaction Manager (K
 
 ## Syntax
 
-```
+```cpp
 class CAtlTransactionManager;
 ```
 
@@ -69,7 +69,7 @@ class CAtlTransactionManager;
 
 CAtlTransactionManager destructor.
 
-```
+```cpp
 virtual ~CAtlTransactionManager();
 ```
 
@@ -81,7 +81,7 @@ In normal processing, the transaction is automatically committed and closed. If 
 
 CAtlTransactionManager constructor.
 
-```
+```cpp
 CAtlTransactionManager(BOOL bFallback = TRUE, BOOL bAutoCreateTransaction = TRUE);
 ```
 
@@ -99,7 +99,7 @@ TRUE indicates that the transaction handler is created automatically in the cons
 
 Closes the transaction handle.
 
-```
+```cpp
 inline BOOL Close();
 ```
 
@@ -115,7 +115,7 @@ This wrapper calls the `CloseHandle` function. The method is automatically calle
 
 Requests that the transaction be committed.
 
-```
+```cpp
 inline BOOL Commit();
 ```
 
@@ -131,7 +131,7 @@ This wrapper calls the `CommitTransaction` function. The method is automatically
 
 Creates the transaction handle.
 
-```
+```cpp
 inline BOOL Create();
 ```
 
@@ -147,7 +147,7 @@ This wrapper calls the `CreateTransaction` function. Check it for
 
 Creates or opens a file, file stream, or directory as a transacted operation.
 
-```
+```cpp
 inline HANDLE CreateFile(
     LPCTSTR lpFileName,
     DWORD dwDesiredAccess,
@@ -193,7 +193,7 @@ This wrapper calls the `CreateFileTransacted` function.
 
 Deletes an existing file as a transacted operation.
 
-```
+```cpp
 inline BOOL DeleteFile(LPCTSTR lpFileName);
 ```
 
@@ -210,7 +210,7 @@ This wrapper calls the `DeleteFileTransacted` function.
 
 Searches a directory for a file or subdirectory as a transacted operation.
 
-```
+```cpp
 inline HANDLE FindFirstFile(
     LPCTSTR lpFileName,
     WIN32_FIND_DATA* pNextInfo);
@@ -236,7 +236,7 @@ This wrapper calls the `FindFirstFileTransacted` function.
 
 Retrieves file system attributes for a specified file or directory as a transacted operation.
 
-```
+```cpp
 inline DWORD GetFileAttributes(LPCTSTR lpFileName);
 ```
 
@@ -253,7 +253,7 @@ This wrapper calls the `GetFileAttributesTransacted` function.
 
 Retrieves file system attributes for a specified file or directory as a transacted operation.
 
-```
+```cpp
 inline BOOL GetFileAttributesEx(
     LPCTSTR lpFileName,
     GET_FILEEX_INFO_LEVELS fInfoLevelId,
@@ -279,7 +279,7 @@ This wrapper calls the `GetFileAttributesTransacted` function.
 
 Returns the transaction handle.
 
-```
+```cpp
 HANDLE GetHandle() const;
 ```
 
@@ -293,7 +293,7 @@ Returns the transaction handle for a class. Returns NULL if the `CAtlTransaction
 
 Determines whether the fallback calls are enabled.
 
-```
+```cpp
 BOOL IsFallback() const;
 ```
 
@@ -307,7 +307,7 @@ Returns TRUE is the class supports fallback calls. FALSE otherwise.
 
 TRUE if the fallback is supported; FALSE otherwise.
 
-```
+```cpp
 BOOL m_bFallback;
 ```
 
@@ -317,7 +317,7 @@ BOOL m_bFallback;
 
 The transaction handle.
 
-```
+```cpp
 HANDLE m_hTransaction;
 ```
 
@@ -327,7 +327,7 @@ HANDLE m_hTransaction;
 
 Moves an existing file or a directory, including its children, as a transacted operation.
 
-```
+```cpp
 inline BOOL MoveFile(LPCTSTR lpOldFileName, LPCTSTR lpNewFileName);
 ```
 
@@ -347,7 +347,7 @@ This wrapper calls the `MoveFileTransacted` function.
 
 Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.
 
-```
+```cpp
 inline LSTATUS RegCreateKeyEx(
     HKEY hKey,
     LPCTSTR lpSubKey,
@@ -401,7 +401,7 @@ This wrapper calls the `RegCreateKeyTransacted` function.
 
 Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.
 
-```
+```cpp
 inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
 ```
 
@@ -424,7 +424,7 @@ This wrapper calls the `RegDeleteKeyTransacted` function.
 
 Opens the specified registry key and associates it with a transaction.
 
-```
+```cpp
 inline LSTATUS RegOpenKeyEx(
     HKEY hKey,
     LPCTSTR lpSubKey,
@@ -462,7 +462,7 @@ This wrapper calls the `RegOpenKeyTransacted` function.
 
 Requests that the transaction be rolled back.
 
-```
+```cpp
 inline BOOL Rollback();
 ```
 
@@ -478,7 +478,7 @@ This wrapper calls the `RollbackTransaction` function.
 
 Sets the attributes for a file or directory as a transacted operation.
 
-```
+```cpp
 inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
 ```
 

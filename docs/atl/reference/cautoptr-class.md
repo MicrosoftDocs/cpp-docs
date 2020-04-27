@@ -14,12 +14,12 @@ This class represents a smart pointer object.
 
 ## Syntax
 
-```
+```cpp
 template <typename T>
 class CAutoPtr
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The pointer type.
@@ -102,7 +102,7 @@ See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md
 
 The constructor.
 
-```
+```cpp
 CAutoPtr() throw();
 explicit CAutoPtr(T* p) throw();
 
@@ -133,7 +133,7 @@ See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md
 
 The destructor.
 
-```
+```cpp
 ~CAutoPtr() throw();
 ```
 
@@ -145,7 +145,7 @@ Frees any allocated resources. Calls [CAutoPtr::Free](#free).
 
 Call this method to release ownership of a pointer.
 
-```
+```cpp
 T* Detach() throw();
 ```
 
@@ -177,7 +177,7 @@ The object pointed to by the `CAutoPtr` is freed, and the [CAutoPtr::m_p](#m_p) 
 
 The pointer data member variable.
 
-```
+```cpp
 T* m_p;
 ```
 
@@ -189,7 +189,7 @@ This member variable holds the pointer information.
 
 The assignment operator.
 
-```
+```cpp
 template<>
 CAutoPtr<T>& operator= (CAutoPtr<T>& p);
 
@@ -221,7 +221,7 @@ See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md
 
 The pointer-to-member operator.
 
-```
+```cpp
 T* operator->() const throw();
 ```
 
@@ -241,7 +241,7 @@ See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md
 
 The cast operator.
 
-```
+```cpp
 operator T* () const throw();
 ```
 
