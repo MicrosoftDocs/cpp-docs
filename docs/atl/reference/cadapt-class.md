@@ -11,12 +11,12 @@ This template is used to wrap classes that redefine the address-of operator to r
 
 ## Syntax
 
-```
+```cpp
 template <class T>
 class CAdapt
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 The adapted type.
@@ -63,7 +63,7 @@ Typically, you will use `CAdapt` when you want to store `CComBSTR`, `CComPtr`, `
 
 The constructors allow an adapter object to be default constructed, copied from an object of the adapted type, or copied from another adapter object.
 
-```
+```cpp
 CAdapt();
 CAdapt(const T& rSrc);
 CAdapt(const CAdapt& rSrCA);
@@ -83,7 +83,7 @@ An adapter object whose contained data should be copied (or moved) into the newl
 
 Holds the data being adapted.
 
-```
+```cpp
 T m_T;
 ```
 
@@ -95,7 +95,7 @@ This **public** data member can be accessed directly or indirectly with [operato
 
 Returns a **const** reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type *T*.
 
-```
+```cpp
 operator const T&() const;
 ```
 
@@ -107,7 +107,7 @@ A **const** reference to `m_T`.
 
 Returns a reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type *T*.
 
-```
+```cpp
 operator T&();
 ```
 
@@ -119,7 +119,7 @@ A reference to `m_T`.
 
 Compares an object of the adapted type with [m_T](#m_t).
 
-```
+```cpp
 bool operator<(const T& rSrc) const;
 ```
 
@@ -136,7 +136,7 @@ The result of the comparison between `m_T` and *rSrc*.
 
 The assignment operator assigns the argument, *rSrc*, to the data member [m_T](#m_t) and returns the current adapter object.
 
-```
+```cpp
 CAdapt& operator= (const T& rSrc);
 CAdapt& operator= (T&& rSrCA); // (Visual Studio 2017)
 CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
@@ -158,7 +158,7 @@ A reference to the current object.
 
 Compares an object of the adapted type with [m_T](#m_t).
 
-```
+```cpp
 bool operator== (const T& rSrc) const;
 ```
 

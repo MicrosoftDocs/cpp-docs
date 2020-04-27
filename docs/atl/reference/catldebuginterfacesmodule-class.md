@@ -11,7 +11,7 @@ This class provides support for debugging interfaces.
 
 ## Syntax
 
-```
+```cpp
 class CAtlDebugInterfacesModule
 ```
 

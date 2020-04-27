@@ -14,7 +14,7 @@ This class provides a thin wrapper around the Windows file-handling API.
 
 ## Syntax
 
-```
+```cpp
 class CAtlFile : public CHandle
 ```
 
@@ -66,7 +66,7 @@ Use this class when file-handling needs are relatively simple, but more abstract
 
 The constructor.
 
-```
+```cpp
 CAtlFile() throw();
 CAtlFile(CAtlTransactionManager* pTM = NULL) throw();
 CAtlFile(CAtlFile& file) throw();
@@ -92,7 +92,7 @@ The copy constructor transfers ownership of the file handle from the original `C
 
 Call this method to create or open a file.
 
-```
+```cpp
 HRESULT Create(
     LPCTSTR szFilename,
     DWORD dwDesiredAccess,
@@ -138,7 +138,7 @@ Calls [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilew) to create 
 
 Call this method to clear the buffers for the file and cause all buffered data to be written to the file.
 
-```
+```cpp
 HRESULT Flush() throw();
 ```
 
@@ -154,7 +154,7 @@ Calls [FlushFileBuffers](/windows/win32/api/fileapi/nf-fileapi-flushfilebuffers)
 
 Call this method to get the results of an overlapped operation on the file.
 
-```
+```cpp
 HRESULT GetOverlappedResult(
     LPOVERLAPPED pOverlapped,
     DWORD& dwBytesTransferred,
@@ -184,7 +184,7 @@ Calls [GetOverlappedResult](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappe
 
 Call this method to get the current file pointer position.
 
-```
+```cpp
 HRESULT GetPosition(ULONGLONG& nPos) const throw();
 ```
 
@@ -205,7 +205,7 @@ Calls [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) to 
 
 Call this method to get the size in bytes of the file.
 
-```
+```cpp
 HRESULT GetSize(ULONGLONG& nLen) const throw();
 ```
 
@@ -226,7 +226,7 @@ Calls [GetFileSize](/windows/win32/api/fileapi/nf-fileapi-getfilesize) to get th
 
 Call this method to lock a region in the file to prevent other processes from accessing it.
 
-```
+```cpp
 HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```
 
@@ -250,7 +250,7 @@ Calls [LockFile](/windows/win32/api/fileapi/nf-fileapi-lockfile) to lock a regio
 
 Pointer to a `CAtlTransactionManager` object.
 
-```
+```cpp
 CAtlTransactionManager* m_pTM;
 ```
 
@@ -260,7 +260,7 @@ CAtlTransactionManager* m_pTM;
 
 Call this method to read data from a file starting at the position indicated by the file pointer.
 
-```
+```cpp
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize) throw();
@@ -311,7 +311,7 @@ The first three forms call [ReadFile](/windows/win32/api/fileapi/nf-fileapi-read
 
 Call this method to move the file pointer of the file.
 
-```
+```cpp
 HRESULT Seek(
     LONGLONG nOffset,
     DWORD dwFrom = FILE_CURRENT) throw();
@@ -337,7 +337,7 @@ Calls [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) to 
 
 Call this method to set the size of the file.
 
-```
+```cpp
 HRESULT SetSize(ULONGLONG nNewLen) throw();
 ```
 
@@ -358,7 +358,7 @@ Calls [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) and
 
 Call this method to unlock a region of the file.
 
-```
+```cpp
 HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```
 
@@ -382,7 +382,7 @@ Calls [UnlockFile](/windows/win32/api/fileapi/nf-fileapi-unlockfile) to unlock a
 
 Call this method to write data to the file starting at the position indicated by the file pointer.
 
-```
+```cpp
 HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,

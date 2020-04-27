@@ -11,12 +11,12 @@ This class implements an array object.
 
 ## Syntax
 
-```
+```cpp
 template<typename E, class ETraits = CElementTraits<E>>
 class CAtlArray
 ```
 
-#### Parameters
+### Parameters
 
 *E*<br/>
 The type of data to be stored in the array.
@@ -80,7 +80,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 Call this method to add an element to the array object.
 
-```
+```cpp
 size_t Add(INARGTYPE element);
 size_t Add();
 ```
@@ -106,7 +106,7 @@ The new element is added to the end of the array. If no element is provided, an 
 
 Call this method to add the contents of one array to the end of another.
 
-```
+```cpp
 size_t Append(const CAtlArray<E, ETraits>& aSrc);
 ```
 
@@ -151,7 +151,7 @@ If the array object is not valid, ATLASSERT will throw an assertion. This method
 
 The constructor.
 
-```
+```cpp
 CAtlArray() throw();
 ```
 
@@ -167,7 +167,7 @@ Initializes the array object.
 
 The destructor.
 
-```
+```cpp
 ~CAtlArray() throw();
 ```
 
@@ -221,7 +221,7 @@ In debug builds, an ATLASSERT will be raised if the CAtlArray object is not vali
 
 Call this method to retrieves a single element from the array object.
 
-```
+```cpp
 const E& GetAt(size_t iElement) const throw();
 E& GetAt(size_t iElement) throw();
 ```
@@ -247,7 +247,7 @@ In debug builds, an ATLASSERT will be raised if *iElement* exceeds the number of
 
 Call this method to return the number of elements stored in the array.
 
-```
+```cpp
 size_t GetCount() const throw();
 ```
 
@@ -267,7 +267,7 @@ See the example for [CAtlArray::GetAt](#getat).
 
 Call this method to return a pointer to the first element in the array.
 
-```
+```cpp
 E* GetData() throw();
 const E* GetData() const throw();
 ```
@@ -284,7 +284,7 @@ Returns a pointer to the memory location storing the first element in the array.
 
 The data type to use for adding elements to the array.
 
-```
+```cpp
 typedef ETraits::INARGTYPE INARGTYPE;
 ```
 
@@ -350,7 +350,7 @@ In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is invali
 
 Call this method to test if the array is empty.
 
-```
+```cpp
 bool IsEmpty() const throw();
 ```
 
@@ -370,7 +370,7 @@ The array is said to be empty if it contains no elements. Therefore, even if the
 
 Call this operator to return a reference to an element in the array.
 
-```
+```cpp
 E& operator[](size_t ielement) throw();
 const E& operator[](size_t ielement) const throw();
 ```
@@ -394,7 +394,7 @@ In debug builds, an ATLASSERT will be raised if *iElement* exceeds the total num
 
 The data type to use for retrieving elements from the array.
 
-```
+```cpp
 typedef ETraits::OUTARGTYPE OUTARGTYPE;
 ```
 
@@ -470,7 +470,7 @@ See the example for [CAtlArray::GetAt](#getat).
 
 Call this method to set the size of the array object.
 
-```
+```cpp
 bool SetCount(size_t nNewSize, int nGrowBy = - 1);
 ```
 

@@ -14,7 +14,7 @@ This class is an ATL implementation of a window that is placed on a host window 
 
 ## Syntax
 
-```
+```cpp
 class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPreviewCtrl;
 ```
 
@@ -85,7 +85,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 Constructs a preview control object.
 
-```
+```cpp
 CAtlPreviewCtrlImpl(void) : m_clrText(0),
    m_clrBack(RGB(255, 255, 255)), m_plf(NULL);
 ```
@@ -96,7 +96,7 @@ CAtlPreviewCtrlImpl(void) : m_clrText(0),
 
 Destructs a preview control object.
 
-```
+```cpp
 virtual ~CAtlPreviewCtrlImpl(void);
 ```
 
@@ -106,7 +106,7 @@ virtual ~CAtlPreviewCtrlImpl(void);
 
 Called by a Rich Preview handler to create the Windows window.
 
-```
+```cpp
 virtual BOOL Create(HWND hWndParent, const RECT* prc);
 ```
 
@@ -128,7 +128,7 @@ TRUE if successful; otherwise FALSE.
 
 Called by a Rich Preview handler when it needs to destroy this control.
 
-```
+```cpp
 virtual void Destroy();
 ```
 
@@ -138,7 +138,7 @@ virtual void Destroy();
 
 Called by the framework to render the preview.
 
-```
+```cpp
 virtual void DoPaint(HDC hdc);
 ```
 
@@ -153,7 +153,7 @@ A handle to a device context for painting.
 
 Sets input focus to this control.
 
-```
+```cpp
 virtual void Focus();
 ```
 
@@ -163,7 +163,7 @@ virtual void Focus();
 
 Background color of the preview window.
 
-```
+```cpp
 COLORREF m_clrBack;
 ```
 
@@ -173,7 +173,7 @@ COLORREF m_clrBack;
 
 Text color of the preview window.
 
-```
+```cpp
 COLORREF m_clrText;
 ```
 
@@ -183,7 +183,7 @@ COLORREF m_clrText;
 
 Font used to display text in the preview window.
 
-```
+```cpp
 const LOGFONTW* m_plf;
 ```
 
@@ -193,7 +193,7 @@ const LOGFONTW* m_plf;
 
 Handles the WM_PAINT message.
 
-```
+```cpp
 LRESULT OnPaint(
     UINT nMsg,
     WPARAM wParam,
@@ -225,7 +225,7 @@ Always returns 0.
 
 Tells this control to redraw.
 
-```
+```cpp
 virtual void Redraw();
 ```
 
@@ -235,7 +235,7 @@ virtual void Redraw();
 
 Sets a new parent for this control.
 
-```
+```cpp
 virtual void SetHost(HWND hWndParent);
 ```
 
@@ -250,7 +250,7 @@ A handle to the new parent window.
 
 Called by a Rich Preview handler when it needs to set visuals of rich preview content.
 
-```
+```cpp
 virtual void SetPreviewVisuals(
     COLORREF clrBack,
     COLORREF clrText,
@@ -274,7 +274,7 @@ Font used to display text in the preview window.
 
 Sets a new bounding rectangle for this control.
 
-```
+```cpp
 virtual void SetRect(const RECT* prc, BOOL bRedraw);
 ```
 

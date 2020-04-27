@@ -11,12 +11,12 @@ This class represents the module for an application.
 
 ## Syntax
 
-```
+```cpp
 template <class T>
 class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 Your class derived from `CAtlExeModuleT`.
@@ -82,7 +82,7 @@ For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-m
 
 The constructor.
 
-```
+```cpp
 CAtlExeModuleT() throw();
 ```
 
@@ -94,7 +94,7 @@ If the EXE module could not be initialized, WinMain will immediately return with
 
 The destructor.
 
-```
+```cpp
 ~CAtlExeModuleT() throw();
 ```
 
@@ -106,7 +106,7 @@ Frees all allocated resources.
 
 Initializes COM.
 
-```
+```cpp
 static HRESULT InitializeCom() throw();
 ```
 
@@ -124,7 +124,7 @@ Overriding this method normally requires overriding [CAtlExeModuleT::Uninitializ
 
 A flag indicating that there should be a delay shutting down the module.
 
-```
+```cpp
 bool m_bDelayShutdown;
 ```
 
@@ -136,7 +136,7 @@ See the [CAtlExeModuleT Overview](../../atl/reference/catlexemodulet-class.md) f
 
 A pause value used to ensure all objects are gone before shutdown.
 
-```
+```cpp
 DWORD m_dwPause;
 ```
 
@@ -148,7 +148,7 @@ Change this value after calling [CAtlExeModuleT::InitializeCom](#initializecom) 
 
 A time-out value used to delay the unloading of the module.
 
-```
+```cpp
 DWORD m_dwTimeOut;
 ```
 
@@ -160,7 +160,7 @@ Change this value after calling [CAtlExeModuleT::InitializeCom](#initializecom) 
 
 Parses the command line and performs registration if necessary.
 
-```
+```cpp
 bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ```
 
@@ -184,7 +184,7 @@ This method is called from [CAtlExeModuleT::WinMain](#winmain) and can be overri
 
 This method is called immediately after the message loop exits.
 
-```
+```cpp
 HRESULT PostMessageLoop() throw();
 ```
 
@@ -200,7 +200,7 @@ Override this method to perform custom application cleanup. The default implemen
 
 This method is called immediately before entering the message loop.
 
-```
+```cpp
 HRESULT PreMessageLoop(int nShowCmd) throw();
 ```
 
@@ -221,7 +221,7 @@ Override this method to add custom initialization code for the application. The 
 
 Registers the class object with OLE so other applications can connect to it.
 
-```
+```cpp
 HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 ```
 
@@ -241,7 +241,7 @@ Returns S_OK on success, S_FALSE if there were no classes to register, or an err
 
 Removes the class object.
 
-```
+```cpp
 HRESULT RevokeClassObjects() throw();
 ```
 
@@ -253,7 +253,7 @@ Returns S_OK on success, S_FALSE if there were no classes to register, or an err
 
 This method executes code in the EXE module to initialize, run the message loop, and clean up.
 
-```
+```cpp
 HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ```
 
@@ -286,7 +286,7 @@ This method can be overridden to change the behavior of the message loop.
 
 Uninitializes COM.
 
-```
+```cpp
 static void UninitializeCom() throw();
 ```
 
@@ -298,7 +298,7 @@ By default this method simply calls [CoUninitialize](/windows/win32/api/combasea
 
 Decrements the module's lock count.
 
-```
+```cpp
 LONG Unlock() throw();
 ```
 
@@ -310,7 +310,7 @@ Returns a value which may be useful for diagnostics or testing.
 
 This method implements the code required to run an EXE.
 
-```
+```cpp
 int WinMain(int nShowCmd) throw();
 ```
 

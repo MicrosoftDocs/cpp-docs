@@ -11,7 +11,7 @@ This class implements a COM server module.
 
 ## Syntax
 
-```
+```cpp
 class CAtlComModule : public _ATL_COM_MODULE
 ```
 
@@ -53,7 +53,7 @@ This class replaces the obsolete [CComModule](../../atl/reference/ccommodule-cla
 
 The constructor.
 
-```
+```cpp
 CAtlComModule() throw();
 ```
 
@@ -65,7 +65,7 @@ Initializes the module.
 
 The destructor.
 
-```
+```cpp
 ~CAtlComModule();
 ```
 
@@ -77,7 +77,7 @@ Frees all class factories.
 
 Call this method to update the system registry for each object in the object map.
 
-```
+```cpp
 HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 ```
 
@@ -101,7 +101,7 @@ Calls the global function [AtlComModuleRegisterServer](server-registration-globa
 
 Call this method to register a type library.
 
-```
+```cpp
 HRESULT RegisterTypeLib(LPCTSTR lpszIndex);
 HRESULT RegisterTypeLib();
 ```
@@ -123,7 +123,7 @@ Adds information about a type library to the system registry. If the module inst
 
 Call this method to unregister each object in the object map.
 
-```
+```cpp
 HRESULT UnregisterServer(
     BOOL bRegTypeLib = FALSE,
     const CLSID* pCLSID = NULL);
@@ -149,7 +149,7 @@ Calls the global function [AtlComModuleUnregisterServer](server-registration-glo
 
 Call this method to unregister a type library.
 
-```
+```cpp
 HRESULT UnRegisterTypeLib(LPCTSTR lpszIndex);
 HRESULT UnRegisterTypeLib();
 ```

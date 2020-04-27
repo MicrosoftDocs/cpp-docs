@@ -11,12 +11,12 @@ This class represents the module for a DLL.
 
 ## Syntax
 
-```
+```cpp
 template <class T>
 class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 Your class derived from `CAtlDllModuleT`.
@@ -65,7 +65,7 @@ For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-m
 
 The constructor.
 
-```
+```cpp
 CAtlDllModuleT() throw();
 ```
 
@@ -73,7 +73,7 @@ CAtlDllModuleT() throw();
 
 The destructor.
 
-```
+```cpp
 ~CAtlDllModuleT() throw();
 ```
 
@@ -81,7 +81,7 @@ The destructor.
 
 Tests if the DLL can be unloaded.
 
-```
+```cpp
 HRESULT DllCanUnloadNow() throw();
 ```
 
@@ -93,7 +93,7 @@ Returns S_OK if the DLL can be unloaded, or S_FALSE if it cannot.
 
 Returns the class factory.
 
-```
+```cpp
 HRESULT DllGetClassObject(
     REFCLSID rclsid,
     REFIID riid,
@@ -119,7 +119,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 The optional entry point into a dynamic-link library (DLL).
 
-```
+```cpp
 BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 ```
 
@@ -143,7 +143,7 @@ Disabling the DLL_THREAD_ATTACH and DLL_THREAD_DETACH notification calls can be 
 
 Adds entries to the system registry for objects in the DLL.
 
-```
+```cpp
 HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 ```
 
@@ -160,7 +160,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Removes entries in the system registry for objects in the DLL.
 
-```
+```cpp
 HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 ```
 
@@ -177,7 +177,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Creates an object of the specified CLSID.
 
-```
+```cpp
 HRESULT GetClassObject(
     REFCLSID rclsid,
     REFIID riid,

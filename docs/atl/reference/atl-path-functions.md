@@ -9,13 +9,13 @@ ms.assetid: d1ec2b8d-7ec7-43ea-90dd-0a740d2a742b
 
 ATL provides the ATLPath class for manipulating paths in the form of [CPathT](cpatht-class.md). This code can be found in atlpath.h.
 
-### Related Classes
+## Related Classes
 
 |||
 |-|-|
 |[CPathT Class](cpatht-class.md)|This class represents a path.|
 
-### Related Typedefs
+## Related Typedefs
 
 |||
 |-|-|
@@ -23,7 +23,7 @@ ATL provides the ATLPath class for manipulating paths in the form of [CPathT](cp
 |`CPathA`|A specialization of [CPathT](cpatht-class.md) using `CStringA`.|
 |`CPathW`|A specialization of [CPathT](cpatht-class.md) using `CStringW`.|
 
-### Functions
+## Functions
 
 |||
 |-|-|
@@ -74,7 +74,7 @@ This function is an overloaded wrapper for [PathAddBackslash](/windows/win32/api
 
 ### Syntax
 
-```
+```cpp
 inline char* AddBackslash(char* pszPath);
 inline wchar_t* AddBackslash(wchar_t* pszPath);
 ```
@@ -89,7 +89,7 @@ This function is an overloaded wrapper for [PathAddExtension](/windows/win32/api
 
 ### Syntax
 
-```
+```cpp
 inline BOOL AddExtension(char* pszPath, const char* pszExtension);
 inline BOOL AddExtension(wchar_t* pszPath, const wchar_t* pszExtension);
 ```
@@ -104,7 +104,7 @@ This function is an overloaded wrapper for [PathAppend](/windows/win32/api/shlwa
 
 ### Syntax
 
-```
+```cpp
 inline BOOL Append(char* pszPath, const char* pszMore);
 inline BOOL Append(wchar_t* pszPath, const wchar_t* pszMore);
 ```
@@ -119,7 +119,7 @@ This function is an overloaded wrapper for [PathBuildRoot](/windows/win32/api/sh
 
 ### Syntax
 
-```
+```cpp
 inline char* BuildRoot(char* pszPath, int iDrive);
 inline wchar_t* BuildRoot(wchar_t* pszPath, int iDrive);
 ```
@@ -134,7 +134,7 @@ This function is an overloaded wrapper for [PathCanonicalize](/windows/win32/api
 
 ### Syntax
 
-```
+```cpp
 inline BOOL Canonicalize(char* pszDest, const char* pszSrc);
 inline BOOL Canonicalize(wchar_t* pszDest, const wchar_t* pszSrc);
 ```
@@ -149,7 +149,7 @@ This function is an overloaded wrapper for [PathCombine](/windows/win32/api/shlw
 
 ### Syntax
 
-```
+```cpp
 inline char* Combine(
    char* pszDest,
    const char* pszDir,
@@ -172,7 +172,7 @@ This function is an overloaded wrapper for [PathCommonPrefix](/windows/win32/api
 
 ### Syntax
 
-```
+```cpp
 inline int CommonPrefix(
    const char* pszFile1,
    const char* pszFile2,
@@ -194,7 +194,7 @@ This function is an overloaded wrapper for [PathCompactPath](/windows/win32/api/
 
 ### Syntax
 
-```
+```cpp
 inline BOOL CompactPath(
    HDC hDC,
    char* pszPath,
@@ -216,7 +216,7 @@ This function is an overloaded wrapper for [PathCompactPathEx](/windows/win32/ap
 
 ### Syntax
 
-```
+```cpp
 inline BOOL CompactPathEx(
    char* pszDest,
    const char* pszSrc,
@@ -240,7 +240,7 @@ This function is an overloaded wrapper for [PathFileExists](/windows/win32/api/s
 
 ### Syntax
 
-```
+```cpp
 inline BOOL FileExists(const char* pszPath);
 inline BOOL FileExists(const wchar_t* pszPath);
 ```
@@ -255,7 +255,7 @@ This function is an overloaded wrapper for [PathFindExtension](/windows/win32/ap
 
 ### Syntax
 
-```
+```cpp
 inline char* FindExtension(const char* pszPath);
 inline wchar_t* FindExtension(const wchar_t* pszPath);
 ```
@@ -270,7 +270,7 @@ This function is an overloaded wrapper for [PathFindFileName](/windows/win32/api
 
 ### Syntax
 
-```
+```cpp
 inline char* FindFileName(const char* pszPath);
 inline wchar_t* FindFileName(const wchar_t* pszPath);
 ```
@@ -285,7 +285,7 @@ This function is an overloaded wrapper for [PathGetDriveNumber](/windows/win32/a
 
 ### Syntax
 
-```
+```cpp
 inline int GetDriveNumber(const char* pszPath);
 inline int GetDriveNumber(const wchar_t* pszPath);
 ```
@@ -298,7 +298,7 @@ See [PathGetDriveNumber](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumbe
 
 This function is an overloaded wrapper for [PathIsDirectory](/windows/win32/api/shlwapi/nf-shlwapi-pathisdirectoryw).
 
-```
+```cpp
 inline BOOL IsDirectory(const char* pszPath);
 inline BOOL IsDirectory(const wchar_t* pszPath);
 ```
@@ -313,7 +313,7 @@ This function is an overloaded wrapper for [PathIsFileSpec](/windows/win32/api/s
 
 ### Syntax
 
-```
+```cpp
 inline BOOL IsFileSpec(const char* pszPath);
 inline BOOL IsFileSpec(const wchar_t* pszPath);
 ```
@@ -328,7 +328,7 @@ This function is an overloaded wrapper for [PathIsPrefix](/windows/win32/api/shl
 
 ### Syntax
 
-```
+```cpp
 inline BOOL IsPrefix(const char* pszPrefix, const char* pszPath);
 inline BOOL IsPrefix(const wchar_t* pszPrefix, const wchar_t* pszPath);
 ```
@@ -343,7 +343,7 @@ This function is an overloaded wrapper for [PathIsRelative](/windows/win32/api/s
 
 ### Syntax
 
-```
+```cpp
 inline BOOL IsRelative(const char* pszPath);
 inline BOOL IsRelative(const wchar_t* pszPath);
 ```
@@ -358,7 +358,7 @@ This function is an overloaded wrapper for [PathIsRoot](/windows/win32/api/shlwa
 
 ### Syntax
 
-```
+```cpp
 inline BOOL IsRoot(const char* pszPath);
 inline BOOL IsRoot(const wchar_t* pszPath);
 ```
@@ -373,7 +373,7 @@ This function is an overloaded wrapper for [PathIsSameRoot](/windows/win32/api/s
 
 ### Syntax
 
-```
+```cpp
 inline BOOL IsSameRoot(const char* pszPath1, const char* pszPath2);
 inline BOOL IsSameRoot(const wchar_t* pszPath1, const wchar_t* pszPath2);
 ```
@@ -388,7 +388,7 @@ This function is an overloaded wrapper for [PathIsUNC](/windows/win32/api/shlwap
 
 ### Syntax
 
-```
+```cpp
 inline BOOL IsUNC(const char* pszPath);
 inline BOOL IsUNC(const wchar_t* pszPath);
 ```
@@ -403,7 +403,7 @@ This function is an overloaded wrapper for [PathIsUNCServer](/windows/win32/api/
 
 ### Syntax
 
-```
+```cpp
 inline BOOL IsUNCServer(const char* pszPath);
 inline BOOL IsUNCServer(const wchar_t* pszPath);
 ```
@@ -418,7 +418,7 @@ This function is an overloaded wrapper for [PathIsUNCServerShare](/windows/win32
 
 ### Syntax
 
-```
+```cpp
 inline BOOL IsUNCServerShare(const char* pszPath);
 inline BOOL IsUNCServerShare(const wchar_t* pszPath);
 ```
@@ -433,7 +433,7 @@ This function is an overloaded wrapper for [PathMakePretty](/windows/win32/api/s
 
 ### Syntax
 
-```
+```cpp
 inline BOOL MakePretty(char* pszPath);
 inline BOOL MakePretty(wchar_t* pszPath);
 ```
@@ -448,7 +448,7 @@ This function is an overloaded wrapper for [PathMatchSpec](/windows/win32/api/sh
 
 ### Syntax
 
-```
+```cpp
 inline BOOL MatchSpec(const char* pszPath, const char* pszSpec);
 inline BOOL MatchSpec(const wchar_t* pszPath, const wchar_t* pszSpec);
 ```
@@ -463,7 +463,7 @@ This function is an overloaded wrapper for [PathQuoteSpaces](/windows/win32/api/
 
 ### Syntax
 
-```
+```cpp
 inline void QuoteSpaces(char* pszPath);
 inline void QuoteSpaces(wchar_t* pszPath);
 ```
@@ -478,7 +478,7 @@ This function is an overloaded wrapper for [PathRelativePathTo](/windows/win32/a
 
 ### Syntax
 
-```
+```cpp
 inline BOOL RelativePathTo(
    char* pszPath,
    const char* pszFrom,
@@ -504,7 +504,7 @@ This function is an overloaded wrapper for [PathRemoveArgs](/windows/win32/api/s
 
 ### Syntax
 
-```
+```cpp
 inline void RemoveArgs(char* pszPath);
 inline void RemoveArgs(wchar_t* pszPath);
 ```
@@ -519,7 +519,7 @@ This function is an overloaded wrapper for [PathRemoveBackslash](/windows/win32/
 
 ### Syntax
 
-```
+```cpp
 inline char* RemoveBackslash(char* pszPath);
 inline wchar_t* RemoveBackslash(wchar_t* pszPath);
 ```
@@ -534,7 +534,7 @@ This function is an overloaded wrapper for [PathRemoveBlanks](/windows/win32/api
 
 ### Syntax
 
-```
+```cpp
 inline void RemoveBlanks(char* pszPath);
 inline void RemoveBlanks(wchar_t* pszPath);
 ```
@@ -549,7 +549,7 @@ This function is an overloaded wrapper for [PathRemoveExtension](/windows/win32/
 
 ### Syntax
 
-```
+```cpp
 inline void RemoveExtension(char* pszPath);
 inline void RemoveExtension(wchar_t* pszPath);
 ```
@@ -564,7 +564,7 @@ This function is an overloaded wrapper for [PathRemoveFileSpec](/windows/win32/a
 
 ### Syntax
 
-```
+```cpp
 inline BOOL RemoveFileSpec(char* pszPath);
 inline BOOL RemoveFileSpec(wchar_t* pszPath);
 ```
@@ -579,7 +579,7 @@ This function is an overloaded wrapper for [PathRenameExtension](/windows/win32/
 
 ### Syntax
 
-```
+```cpp
 inline BOOL RenameExtension(char* pszPath, const char* pszExt);
 inline BOOL RenameExtension(wchar_t* pszPath, const wchar_t* pszExt);
 ```
@@ -594,7 +594,7 @@ This function is an overloaded wrapper for [PathSkipRoot](/windows/win32/api/shl
 
 ### Syntax
 
-```
+```cpp
 inline char* SkipRoot(const char* pszPath);
 inline wchar_t* SkipRoot(const wchar_t* pszPath);
 ```
@@ -609,7 +609,7 @@ This function is an overloaded wrapper for [PathStripPath](/windows/win32/api/sh
 
 ### Syntax
 
-```
+```cpp
 inline void StripPath(char* pszPath);
 inline void StripPath(wchar_t* pszPath);
 ```
@@ -624,7 +624,7 @@ This function is an overloaded wrapper for [PathStripToRoot](/windows/win32/api/
 
 ### Syntax
 
-```
+```cpp
 inline BOOL StripToRoot(char* pszPath);
 inline BOOL StripToRoot(wchar_t* pszPath);
 ```
@@ -639,7 +639,7 @@ This function is an overloaded wrapper for [PathUnquoteSpaces](/windows/win32/ap
 
 ### Syntax
 
-```
+```cpp
 inline void UnquoteSpaces(char* pszPath);
 inline void UnquoteSpaces(wchar_t* pszPath);
 ```

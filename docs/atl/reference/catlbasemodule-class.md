@@ -11,7 +11,7 @@ This class is instantiated in every ATL project.
 
 ## Syntax
 
-```
+```cpp
 class CAtlBaseModule : public _ATL_BASE_MODULE
 ```
 
@@ -60,7 +60,7 @@ This class replaces the obsolete [CComModule](../../atl/reference/ccommodule-cla
 
 Adds a resource instance to the list of stored handles.
 
-```
+```cpp
 bool AddResourceInstance(HINSTANCE hInst) throw();
 ```
 
@@ -77,7 +77,7 @@ Returns true if the resource was successfully added, false otherwise.
 
 The constructor.
 
-```
+```cpp
 CAtlBaseModule() throw();
 ```
 
@@ -89,7 +89,7 @@ Creates the `CAtlBaseModule`.
 
 Returns a handle to a specified resource instance.
 
-```
+```cpp
 HINSTANCE GetHInstanceAt(int i) throw();
 ```
 
@@ -106,7 +106,7 @@ Returns the handle to the resource instance, or NULL if no corresponding resourc
 
 Returns the module instance from a `CAtlBaseModule` object.
 
-```
+```cpp
 HINSTANCE GetModuleInstance() throw();
 ```
 
@@ -118,7 +118,7 @@ Returns the module instance.
 
 Returns the resource instance.
 
-```
+```cpp
 HINSTANCE GetResourceInstance() throw();
 ```
 
@@ -130,7 +130,7 @@ Returns the resource instance.
 
 A variable that indicates if the module initialization has failed.
 
-```
+```cpp
 static bool m_bInitFailed;
 ```
 
@@ -142,7 +142,7 @@ True if the module initialized, false if it failed to initialize.
 
 Removes a resource instance from the list of stored handles.
 
-```
+```cpp
 bool RemoveResourceInstance(HINSTANCE hInst) throw();
 ```
 
@@ -159,7 +159,7 @@ Returns true if the resource was successfully removed, false otherwise.
 
 Sets the resource instance of a `CAtlBaseModule` object.
 
-```
+```cpp
 HINSTANCE SetResourceInstance(HINSTANCE hInst) throw();
 ```
 
