@@ -1,25 +1,25 @@
 ---
-title: "switch Statement (C)"
+title: "switch  Statement (C)"
 ms.date: "04/25/2020"
 f1_keywords: ["switch"]
 helpviewer_keywords: ["switch keyword [C]"]
 ms.assetid: fbede014-23bd-4ab1-8094-c8d9d9cb963a
 no-loc: [ switch, case, default, break ]
 ---
-# switch Statement (C)
+# `switch` Statement (C)
 
 The **switch** and **case** statements help control complex conditional and branching operations. The **switch** statement transfers control to a statement within its body.
 
 ## Syntax
 
-*selection-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`switch (`** *expression* **`)`** *statement*
+> *selection-statement*:<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp; __`switch (`__ &nbsp; *expression* &nbsp; __`)`__ &nbsp; *statement*
 
-*labeled-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`case`**  *constant-expression*  **`:`**  *statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`default :`**  *statement*
+> *labeled-statement*:<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__ &nbsp; *constant-expression* &nbsp; __`:`__ &nbsp; *statement*<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp; __`default :`__ &nbsp; *statement*
 
-Control passes to the statement whose **case** *constant-expression* matches the value of **switch (** *expression* **)**. The **switch** statement can include any number of **case** instances. However, no two case constants within the same **switch** statement can have the same value. Execution of the statement body begins at the selected statement. It proceeds until the end of the body, or until a **break** statement transfers control out of the body.
+Control passes to the **case** statement whose *constant-expression* matches the value of **`switch (`** *expression* **`)`**. The **switch** statement can include any number of **case** instances. However, no two case constants within the same **switch** statement can have the same value. Execution of the statement body begins at the selected statement. It proceeds until the end of the body, or until a **break** statement transfers control out of the body.
 
 Use of the **switch** statement usually looks something like this:
 

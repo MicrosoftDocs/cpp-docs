@@ -13,11 +13,11 @@ Allows selection among multiple sections of code, depending on the value of an i
 
 ## Syntax
 
-> **`switch (`** \[*initialization* **`;`**] *expression* **`)`**\
-> **`{`**\
-> &nbsp;&nbsp;&nbsp;&nbsp;**`case`** *constant-expression* **`:`** *statement*\
-> &nbsp;&nbsp;&nbsp;&nbsp;\[**`default :`** *statement*]\
-> **`}`**
+> __`switch (`__ &nbsp; \[*initialization* __`;`__\] &nbsp; *expression* &nbsp; __`)`__ <br/>
+> __`{`__\
+> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__ &nbsp; *constant-expression* &nbsp; __`:`__ &nbsp; *statement* <br/>
+> &nbsp;&nbsp;&nbsp;&nbsp; \[__`default :`__ &nbsp; *statement*\] <br/>
+> __`}`__
 
 ## Remarks
 
