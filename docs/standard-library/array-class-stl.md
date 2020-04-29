@@ -827,7 +827,7 @@ int main()
 
     v1.fill(3);
     cout << "v1 = ";
-    for (const auto& it : c0)
+    for (const auto& it : v1)
     {
         std::cout << " " << it;
     }
