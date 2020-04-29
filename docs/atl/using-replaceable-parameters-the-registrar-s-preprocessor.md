@@ -16,7 +16,7 @@ The [ATL Control Wizard](../atl/reference/atl-control-wizard.md) automatically g
 
 Another use of the preprocessor is to concatenate run-time data with script data. For example, suppose an entry is needed that contains a full path to a module with the string "`, 1`" appended at the end. First, define the following expansion:
 
-```
+```rgs
 'MySampleKey' = s '%MODULE%, 1'
 ```
 

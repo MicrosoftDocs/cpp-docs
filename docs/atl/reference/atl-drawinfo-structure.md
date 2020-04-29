@@ -11,7 +11,7 @@ Contains information used for rendering to various targets, such as a printer, m
 
 ## Syntax
 
-```
+```cpp
 struct ATL_DRAWINFO {
     UINT cbSize;
     DWORD dwDrawAspect;

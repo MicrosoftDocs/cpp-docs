@@ -14,12 +14,12 @@ This class is used by the string conversion macros CA2TEX and CT2AEX, and the ty
 
 ## Syntax
 
-```
+```cpp
 template <int t_nBufferLength = 128>
 class CA2AEX
 ```
 
-#### Parameters
+### Parameters
 
 *t_nBufferLength*<br/>
 The size of the buffer used in the translation process. The default length is 128 bytes.
@@ -80,7 +80,7 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 The constructor.
 
-```
+```cpp
 CA2AEX(LPCSTR psz, UINT nCodePage) throw(...);
 CA2AEX(LPCSTR psz) throw(...);
 ```
@@ -101,7 +101,7 @@ Creates the buffer required for the translation.
 
 The destructor.
 
-```
+```cpp
 ~CA2AEX() throw();
 ```
 
@@ -113,7 +113,7 @@ Frees the allocated buffer.
 
 The data member that stores the source string.
 
-```
+```cpp
 LPSTR m_psz;
 ```
 
@@ -121,7 +121,7 @@ LPSTR m_psz;
 
 The static buffer, used to store the converted string.
 
-```
+```cpp
 char m_szBuffer[ t_nBufferLength];
 ```
 
@@ -129,7 +129,7 @@ char m_szBuffer[ t_nBufferLength];
 
 Conversion operator.
 
-```
+```cpp
 operator LPSTR() const throw();
 ```
 

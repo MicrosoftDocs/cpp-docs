@@ -14,12 +14,12 @@ This class implements a service.
 
 ## Syntax
 
-```
+```cpp
 template <class T, UINT nServiceNameID>
 class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 ```
 
-#### Parameters
+### Parameters
 
 *T*<br/>
 Your class derived from `CAtlServiceModuleT`.
@@ -98,7 +98,7 @@ This class replaces the obsolete [CComModule Class](../../atl/reference/ccommodu
 
 The constructor.
 
-```
+```cpp
 CAtlServiceModuleT() throw();
 ```
 
@@ -139,7 +139,7 @@ A default ATL-generated service only handles the stop instruction. If the SCM pa
 
 Provides the default security settings for the service.
 
-```
+```cpp
 HRESULT InitializeSecurity() throw();
 ```
 
@@ -165,7 +165,7 @@ For attributed service projects, this would be in
 
 Installs and creates the service.
 
-```
+```cpp
 BOOL Install() throw();
 ```
 
@@ -181,7 +181,7 @@ Installs the service into the Service Control Manager (SCM) database and then cr
 
 Confirms that the service has been installed.
 
-```
+```cpp
 BOOL IsInstalled() throw();
 ```
 
@@ -213,7 +213,7 @@ This method writes details out to an event log, using the function [ReportEvent]
 
 Flag indicating the program is running as a service.
 
-```
+```cpp
 BOOL m_bService;
 ```
 
@@ -225,7 +225,7 @@ Used to distinguish a Service EXE from an Application EXE.
 
 Member variable storing the thread identifier of the Service.
 
-```
+```cpp
 DWORD m_dwThreadID;
 ```
 
@@ -237,7 +237,7 @@ This variable stores the thread identifier of the current thread.
 
 Member variable storing a handle to the status information structure for the current service.
 
-```
+```cpp
 SERVICE_STATUS_HANDLE m_hServiceStatus;
 ```
 
@@ -249,7 +249,7 @@ The [SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) structu
 
 Member variable storing the status information structure for the current service.
 
-```
+```cpp
 SERVICE_STATUS m_status;
 ```
 
@@ -261,7 +261,7 @@ The [SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) structu
 
 The name of the service being registered.
 
-```
+```cpp
 TCHAR [256] m_szServiceName;
 ```
 
@@ -326,7 +326,7 @@ Reserved.
 
 Parses the command line and performs registration if necessary.
 
-```
+```cpp
 bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ```
 
@@ -350,7 +350,7 @@ Parses the command line and registers or unregisters the supplied RGS file if ne
 
 This method is called immediately before entering the message loop.
 
-```
+```cpp
 HRESULT PreMessageLoop(int nShowCmd) throw();
 ```
 
@@ -371,7 +371,7 @@ Override this method to add custom initialization code for the Service.
 
 Registers the service in the registry.
 
-```
+```cpp
 inline HRESULT RegisterAppId(bool bService = false) throw();
 ```
 
@@ -388,7 +388,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Runs the service.
 
-```
+```cpp
 HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ```
 
@@ -448,7 +448,7 @@ Updates the Service Control Manager's status information for the service. It is 
 
 Called by `CAtlServiceModuleT::WinMain` when the service starts.
 
-```
+```cpp
 HRESULT Start(int nShowCmd) throw();
 ```
 
@@ -469,7 +469,7 @@ The [CAtlServiceModuleT::WinMain](#winmain) method handles both registration and
 
 Stops and removes the service.
 
-```
+```cpp
 BOOL Uninstall() throw();
 ```
 
@@ -485,7 +485,7 @@ Stops the service from running and removes it from the Service Control Manager d
 
 Decrements the service's lock count.
 
-```
+```cpp
 LONG Unlock() throw();
 ```
 
@@ -497,7 +497,7 @@ Returns the lock count, which may be useful for diagnostics and debugging.
 
 Removes the service from the registry.
 
-```
+```cpp
 HRESULT UnregisterAppId() throw();
 ```
 
@@ -509,7 +509,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method implements the code required to start the service.
 
-```
+```cpp
 int WinMain(int nShowCmd) throw();
 ```
 

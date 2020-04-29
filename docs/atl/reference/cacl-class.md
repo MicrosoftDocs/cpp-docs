@@ -14,7 +14,7 @@ This class is a wrapper for an `ACL` (access-control list) structure.
 
 ## Syntax
 
-```
+```cpp
 class CAcl
 ```
 
@@ -84,7 +84,7 @@ For an introduction to the access control model in Windows, see [Access Control]
 
 An array of ACCESS_MASK objects.
 
-```
+```cpp
 typedef CAtlArray<ACCESS_MASK> CAccessMaskArray;
 ```
 
@@ -96,7 +96,7 @@ This typedef specifies the array type that can be used to store access rights us
 
 An array of BYTEs.
 
-```
+```cpp
 typedef CAtlArray<BYTE> CAceFlagArray;
 ```
 
@@ -108,7 +108,7 @@ This typedef specifies the array type used to define the access-control entry (A
 
 An array of BYTEs.
 
-```
+```cpp
 typedef CAtlArray<BYTE> CAceTypeArray;
 ```
 
@@ -120,7 +120,7 @@ This typedef specifies the array type used to define the nature of the access-co
 
 The constructor.
 
-```
+```cpp
 CAcl() throw();
 CAcl(const CAcl& rhs) throw(...);
 ```
@@ -138,7 +138,7 @@ The `CAcl` object can be optionally created using an existing `CAcl` object.
 
 The destructor.
 
-```
+```cpp
 virtual ~CAcl() throw();
 ```
 
@@ -150,7 +150,7 @@ The destructor frees any resources acquired by the object.
 
 Returns the number of access-control entry (ACE) objects.
 
-```
+```cpp
 virtual UINT GetAceCount() const throw() = 0;
 ```
 
@@ -240,7 +240,7 @@ See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for more details 
 
 Returns the length of the access-control list (ACL).
 
-```
+```cpp
 UINT GetLength() const throw();
 ```
 
@@ -252,7 +252,7 @@ Returns the required length in bytes necessary to hold the `ACL` structure.
 
 Returns a pointer to an access-control list (ACL).
 
-```
+```cpp
 const ACL* GetPACL() const throw(...);
 ```
 
@@ -264,7 +264,7 @@ Returns a pointer to the `ACL` structure.
 
 Tests the `CAcl` object for entries.
 
-```
+```cpp
 bool IsEmpty() const throw();
 ```
 
@@ -276,7 +276,7 @@ Returns TRUE if the `CAcl` object is not NULL, and contains no entries. Returns 
 
 Returns the status of the `CAcl` object.
 
-```
+```cpp
 bool IsNull() const throw();
 ```
 
@@ -288,7 +288,7 @@ Returns TRUE if the `CAcl` object is NULL, FALSE otherwise.
 
 Casts a `CAcl` object to an `ACL` (access-control list) structure.
 
-```
+```cpp
 operator const ACL *() const throw(...);
 ```
 
@@ -300,7 +300,7 @@ Returns the address of the `ACL` structure.
 
 Assignment operator.
 
-```
+```cpp
 CAcl& operator= (const CAcl& rhs) throw(...);
 ```
 
@@ -334,7 +334,7 @@ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-
 
 Removes alls ACEs (access-control entries) from the `CAcl` that apply to the given `CSid`.
 
-```
+```cpp
 bool RemoveAces(const CSid& rSid) throw(...)
 ```
 
