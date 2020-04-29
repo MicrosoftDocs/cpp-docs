@@ -23,7 +23,7 @@ If you use /TSAWARE and your application still uses INI files, the files will be
 
 The /TSAWARE option is enabled by default for Windows and console applications. See [/SUBSYSTEM](subsystem-specify-subsystem.md) and [/VERSION](version-version-information.md) for information.
 
-/TSAWARE is not valid for drivers, VxDs, or DLLs.
+/TSAWARE is not valid for drivers or DLLs.
 
 If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](headers.md) will display information to that effect.
 
