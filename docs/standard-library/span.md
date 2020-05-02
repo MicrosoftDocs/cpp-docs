@@ -29,20 +29,20 @@ JTW: quick example might be to show string->span, or something simple to show wh
 |-|-|
 |[span](span-class.md)| Provides a single-dimensional view over a contiguous sequence of objects. |
 
-### Operators
-
-|||
-|-|-|
-|[operator==](../standard-library/span-operators.md#op_eq_eq)|array comparison, equal|
-|[operator->(../standard-library/span-operators.md#op_neq)|array comparison, not equal|
-|[operator[]](../standard-library/span-operators.md#op_gt)|array comparison, greater than|
-
 ### Functions
 
 |||
 |-|-|
-|[get](../standard-library/array-functions.md#get)|Get specified array element.|
-|[swap](../standard-library/array-functions.md#swap)|Exchanges the contents of one array with the contents of another array.|
+| [as_bytes](../standard-library/span-functions.md#as_bytes)| Get the underlying read-only bytes of the span. |
+| [as_writeable_bytes](../standard-library/span-functions.md#as_writeable_bytes) | Get the underlying bytes of the span. |
+
+### Operators
+
+|||
+|-|-|
+|[operator=](../standard-library/span-operators.md#op_eq_eq)| span assignment, equal|
+|[operator==](../standard-library/span-operators.md#op_eq_eq)| span comparison, equal|
+|[operator\[\]](../standard-library/span-operators.md#op_at)| element access |
 
 ## See also
 
