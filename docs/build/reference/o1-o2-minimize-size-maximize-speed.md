@@ -11,7 +11,7 @@ Selects a predefined set of options that affect the size and speed of generated 
 
 ## Syntax
 
-> /O1
+> /O1\
 > /O2
 
 ## Remarks

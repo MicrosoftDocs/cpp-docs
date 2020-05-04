@@ -11,8 +11,8 @@ Use the **/constexpr** compiler options to control parameters for **constexpr** 
 
 ## Syntax
 
-> **/constexpr:depth**<em>N</em>
-> **/constexpr:backtrace**<em>N</em>
+> **/constexpr:depth**<em>N</em>\
+> **/constexpr:backtrace**<em>N</em>\
 > **/constexpr:steps**<em>N</em>
 
 ## Arguments
