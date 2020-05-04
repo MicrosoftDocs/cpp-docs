@@ -1,7 +1,7 @@
 ---
 title: "switch statement (C++)"
 description: "Reference to the Standard C++ switch statement in Microsoft Visual Studio C++."
-ms.date: "04/15/2020"
+ms.date: "04/25/2020"
 f1_keywords: ["default_cpp", "switch_cpp", "case_cpp"]
 helpviewer_keywords: ["switch keyword [C++]", "case keyword [C++], in switch statements", "default keyword [C++]"]
 no-loc: [switch, case, default, break, while, C++, opt]
