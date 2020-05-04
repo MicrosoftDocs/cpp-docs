@@ -1,13 +1,17 @@
 ---
-title: "Importing Function Calls Using __declspec(dllimport)"
+title: "Importing function calls using __declspec(dllimport)"
 description: "How and why to use __declspec(dllimport) when calling DLL data and functions."
 ms.date: "05/03/2020"
 helpviewer_keywords: ["importing function calls [C++]", "dllimport attribute [C++], function call imports", "__declspec(dllimport) keyword [C++]", "function calls [C++], importing"]
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3
 ---
-# Importing Function Calls Using `__declspec(dllimport)`
+# Importing function calls using `__declspec(dllimport)`
 
-The following code example shows how to use **`_declspec(dllimport)`** to import function calls from a DLL into an application. Assume that `func1` is a function that's in a DLL separate from the executable file that contains the **main** function.
+Annotating calls by using the **`__declspec(dllimport)`** can make them faster. **`__declspec(dllimport)`** is always required to access exported DLL data.
+
+## Import a function from a DLL
+
+The following code example shows how to use **`__declspec(dllimport)`** to import function calls from a DLL into an application. Assume that `func1` is a function that's in a DLL separate from the executable file that contains the **main** function.
 
 Without **`__declspec(dllimport)`**, given this code:
 
