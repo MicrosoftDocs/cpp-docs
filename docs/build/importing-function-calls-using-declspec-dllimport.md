@@ -1,16 +1,17 @@
 ---
 title: "Importing Function Calls Using __declspec(dllimport)"
-ms.date: "11/04/2016"
+description: "How and why to use __declspec(dllimport) when calling DLL data and functions."
+ms.date: "05/03/2020"
 helpviewer_keywords: ["importing function calls [C++]", "dllimport attribute [C++], function call imports", "__declspec(dllimport) keyword [C++]", "function calls [C++], importing"]
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3
 ---
-# Importing Function Calls Using __declspec(dllimport)
+# Importing Function Calls Using `__declspec(dllimport)`
 
-The following code example shows how to use **_declspec(dllimport)** to import function calls from a DLL into an application. Assume that `func1` is a function that resides in a DLL separate from the .exe file that contains the **main** function.
+The following code example shows how to use **`_declspec(dllimport)`** to import function calls from a DLL into an application. Assume that `func1` is a function that's in a DLL separate from the executable file that contains the **main** function.
 
-Without **__declspec(dllimport)**, given this code:
+Without **`__declspec(dllimport)`**, given this code:
 
-```
+```C
 int main(void)
 {
    func1();
@@ -19,29 +20,29 @@ int main(void)
 
 the compiler generates code that looks like this:
 
-```
+```asm
 call func1
 ```
 
 and the linker translates the call into something like this:
 
-```
+```asm
 call 0x4000000         ; The address of 'func1'.
 ```
 
-If `func1` exists in another DLL, the linker cannot resolve this directly because it has no way of knowing what the address of `func1` is. In 16-bit environments, the linker adds this code address to a list in the .exe file that the loader would patch at run time with the correct address. In 32-bit and 64-bit environments, the linker generates a thunk of which it does know the address. In a 32-bit environment the thunk looks like:
+If `func1` exists in another DLL, the linker can't resolve this address directly because it has no way of knowing what the address of `func1` is. In 32-bit and 64-bit environments, the linker generates a thunk at a known address. In a 32-bit environment the thunk looks like:
 
-```
+```asm
 0x40000000:    jmp DWORD PTR __imp_func1
 ```
 
-Here `imp_func1` is the address for the `func1` slot in the import address table of the .exe file. All the addresses are thus known to the linker. The loader only has to update the .exe file's import address table at load time for everything to work correctly.
+Here `__imp_func1` is the address for the `func1` slot in the import address table of the executable file. All these addresses are known to the linker. The loader only has to update the executable file's import address table at load time for everything to work correctly.
 
-Therefore, using **__declspec(dllimport)** is better because the linker does not generate a thunk if it is not required. Thunks make the code larger (on RISC systems, it can be several instructions) and can degrade your cache performance. If you tell the compiler the function is in a DLL, it can generate an indirect call for you.
+That's why using **`__declspec(dllimport)`** is better: because the linker doesn't generate a thunk if it's not required. Thunks make the code larger (on RISC systems, it can be several instructions) and can degrade your cache performance. If you tell the compiler the function is in a DLL, it can generate an indirect call for you.
 
 So now this code:
 
-```
+```C
 __declspec(dllimport) void func1(void);
 int main(void)
 {
@@ -51,13 +52,13 @@ int main(void)
 
 generates this instruction:
 
-```
+```asm
 call DWORD PTR __imp_func1
 ```
 
-There is no thunk and no `jmp` instruction, so the code is smaller and faster.
+There's no thunk and no `jmp` instruction, so the code is smaller and faster. You can also get the same effect without **`__declspec(dllimport)`** by using whole program optimization. For more information, see [/GL (Whole Program Optimization)](reference/gl-whole-program-optimization.md).
 
-On the other hand, for function calls inside a DLL, you do not want to have to use an indirect call. You already know a function's address. Because time and space are required to load and store the address of the function before an indirect call, a direct call is always faster and smaller. You only want to use **__declspec(dllimport)** when calling DLL functions from outside the DLL itself. Do not use **__declspec(dllimport)** on functions inside a DLL when building that DLL.
+For function calls within a DLL, you don't want to have to use an indirect call. You already know the function's address. It takes extra time and space to load and store the address of the function before an indirect call. A direct call is always faster and smaller. You only want to use **`__declspec(dllimport)`** when calling DLL functions from outside the DLL itself. Don't use **`__declspec(dllimport)`** on functions inside a DLL when building that DLL.
 
 ## See also
 
