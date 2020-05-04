@@ -13,19 +13,19 @@ Allows selection among multiple sections of code, depending on the value of an i
 
 ## Syntax
 
-> *`selection-statement`*:<br/>
+> *`selection-statement`*:\
 > &nbsp;&nbsp;&nbsp;&nbsp; __`switch`__&nbsp;__`(`__&nbsp;*`init-statement`*<sub>opt</sub><sup>C++17</sup>&nbsp;*`condition`*&nbsp;__`)`__&nbsp;*`statement`*
 
-> *`init-statement`*:<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp; *`expression-statement`*<br/>
+> *`init-statement`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp; *`expression-statement`*\
 > &nbsp;&nbsp;&nbsp;&nbsp; *`simple-declaration`*
 
-> *`condition`*:<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp; *`expression`*<br/>
+> *`condition`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp; *`expression`*\
 > &nbsp;&nbsp;&nbsp;&nbsp; *`attribute-specifier-seq`*<sub>opt</sub>&nbsp;*`decl-specifier-seq`*&nbsp;*`declarator`*&nbsp;*`brace-or-equal-initializer`*
 
-> *`labeled-statement`*:<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__&nbsp;*`constant-expression`*&nbsp;__`:`__&nbsp;*`statement`*<br/>
+> *`labeled-statement`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__&nbsp;*`constant-expression`*&nbsp;__`:`__&nbsp;*`statement`*\
 > &nbsp;&nbsp;&nbsp;&nbsp; __`default`__&nbsp;__`:`__&nbsp;*`statement`*
 
 ## Remarks

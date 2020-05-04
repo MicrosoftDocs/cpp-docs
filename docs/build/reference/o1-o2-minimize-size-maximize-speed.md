@@ -26,7 +26,7 @@ The **/O1** and **/O2** compiler options are a quick way to set several specific
 **/O1** and **/O2** are mutually exclusive.
 
 > [!NOTE]
-> **x86 Specific**
+> **x86 Specific**\
 > These options imply the use of the Frame-Pointer Omission ([/Oy](oy-frame-pointer-omission.md)) option.
 
 ### To set this compiler option in the Visual Studio development environment

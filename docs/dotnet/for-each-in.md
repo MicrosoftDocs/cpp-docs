@@ -14,8 +14,8 @@ Iterates through an array or collection. This non-standard keyword is available 
 
 ### Syntax
 
-> **for each (** *type* *identifier* **in** *expression* **) {**<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;*statements*<br/>
+> **for each (** *type* *identifier* **in** *expression* **) {**\
+> &nbsp;&nbsp;&nbsp;&nbsp;*statements*\
 > **}**
 
 ### Parameters

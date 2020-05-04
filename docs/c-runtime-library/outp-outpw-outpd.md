@@ -15,7 +15,7 @@ ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
 Outputs, at a port, a byte (`outp`, `_outp`), a word (`outpw`, `_outpw`), or a double word (`_outpd`).
 
 > [!IMPORTANT]
-> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.  
+> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.\
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax

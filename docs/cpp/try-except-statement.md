@@ -12,13 +12,13 @@ The **try-except** statement is a Microsoft extension that supports structured e
 
 ## Syntax
 
-> **\_\_try**<br/>
-> {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;// guarded code<br/>
-> }<br/>
-> **\_\_except** ( *expression* )<br/>
-> {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;// exception handler code<br/>
+> **\_\_try**\
+> {\
+> &nbsp;&nbsp;&nbsp;&nbsp;// guarded code\
+> }\
+> **\_\_except** ( *expression* )\
+> {\
+> &nbsp;&nbsp;&nbsp;&nbsp;// exception handler code\
 > }
 
 ## Remarks

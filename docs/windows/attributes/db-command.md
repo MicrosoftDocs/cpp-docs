@@ -27,11 +27,11 @@ A command string containing the text of an OLE DB command. A simple example is:
 
 The *command* syntax is as follows:
 
-> binding parameter block 1
-> &nbsp;&nbsp;OLE DB command
-> binding parameter block 2
-> &nbsp;&nbsp;continuation of OLE DB command
-> binding parameter block 3
+> binding parameter block 1\
+> &nbsp;&nbsp;OLE DB command\
+> binding parameter block 2\
+> &nbsp;&nbsp;continuation of OLE DB command\
+> binding parameter block 3\
 > ...
 
 A *binding parameter block* is defined as follows:
