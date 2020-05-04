@@ -62,7 +62,7 @@ call DWORD PTR __imp_func1
 
 There's no thunk and no `jmp` instruction, so the code is smaller and faster. You can also get the same effect without **`__declspec(dllimport)`** by using whole program optimization. For more information, see [/GL (Whole Program Optimization)](reference/gl-whole-program-optimization.md).
 
-For function calls within a DLL, you don't want to have to use an indirect call. You already know the function's address. It takes extra time and space to load and store the address of the function before an indirect call. A direct call is always faster and smaller. You only want to use **`__declspec(dllimport)`** when calling DLL functions from outside the DLL itself. Don't use **`__declspec(dllimport)`** on functions inside a DLL when building that DLL.
+For function calls within a DLL, you don't want to have to use an indirect call. The linker already knows the function's address. It takes extra time and space to load and store the address of the function before an indirect call. A direct call is always faster and smaller. You only want to use **`__declspec(dllimport)`** when calling DLL functions from outside the DLL itself. Don't use **`__declspec(dllimport)`** on functions inside a DLL when building that DLL.
 
 ## See also
 
