@@ -11,7 +11,7 @@ The **/Za** compiler option disables and emits errors for Microsoft extensions t
 
 ## Syntax
 
-> **/Za**<br/>
+> **/Za**\
 > **/Ze**
 
 ## Remarks

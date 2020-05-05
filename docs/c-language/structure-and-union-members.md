@@ -8,7 +8,7 @@ ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
 
 A "member-selection expression" refers to members of structures and unions. Such an expression has the value and type of the selected member.
 
-> *postfix-expression* **.** *identifier*
+> *postfix-expression* **.** *identifier*\
 > *postfix-expression* **->** *identifier*
 
 This list describes the two forms of the member-selection expressions:

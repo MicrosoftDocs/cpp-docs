@@ -39,7 +39,7 @@ The arguments that follow the format string are interpreted according to the cor
 Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` variants, are specified by using **d**, **i**, **o**, **u**, **x**, and **X**. Floating-point types such as `float`, `double`, and `long double`, are specified by using **a**, **A**, **e**, **E**, **f**, **F**, **g**, and **G**. By default, unless they are modified by a *size* prefix, integer arguments are coerced to `int` type, and floating-point arguments are coerced to `double`. On 64-bit systems, an `int` is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a *size* prefix of **ll** or **I64** is used. Pointer types that are specified by **p** use the default pointer size for the platform.
 
 > [!NOTE]
-> **Microsoft-specific:**
+> **Microsoft-specific:**\
 > The **Z** type character, and the behavior of the **c**, **C**, **s**, and  **S** type characters when they are used with the `printf` and `wprintf` functions, are Microsoft extensions. The ISO C standard uses **c** and **s** consistently for narrow characters and strings, and **C** and **S** for wide characters and strings, in all formatting functions.
 
 ### Type field characters
@@ -193,7 +193,7 @@ In Visual C++, although `long double` is a distinct type, it has the same intern
 An **hc** or **hC** type specifier is synonymous with **c** in `printf` functions and with **C** in `wprintf` functions. An **lc**, **lC**, **wc**, or **wC** type specifier is synonymous with **C** in `printf` functions and with **c** in `wprintf` functions. An **hs** or **hS** type specifier is synonymous with **s** in `printf` functions and with **S** in `wprintf` functions. An **ls**, **lS**, **ws** or **wS** type specifier is synonymous with **S** in `printf` functions and with **s** in `wprintf` functions.
 
 > [!NOTE]
-> **Microsoft-specific:**
+> **Microsoft-specific:**\
 > The **I** (uppercase i), **I32**, **I64**, and **w** argument size modifier prefixes are Microsoft extensions and are not ISO C-compatible. The **h** prefix when it's used with data of type `char` and the **l** (lowercase L) prefix when it's used with data of type `double` are Microsoft extensions.
 
 ## See also
