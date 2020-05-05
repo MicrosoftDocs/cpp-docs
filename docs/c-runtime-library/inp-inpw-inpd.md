@@ -15,7 +15,7 @@ ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3
 Inputs, from a port, a byte (`inp`, `_inp`), a word (`inpw`, `_inpw`), or a double word (`_inpd`).
 
 > [!IMPORTANT]
-> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.  
+> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.\
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax

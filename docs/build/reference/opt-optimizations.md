@@ -11,8 +11,8 @@ Controls the optimizations that LINK performs during a build.
 
 ## Syntax
 
-> **/OPT:**{**REF** | **NOREF**}<br/>
-> **/OPT:**{**ICF**[**=**_iterations_] | **NOICF**}<br/>
+> **/OPT:**{**REF** | **NOREF**}\
+> **/OPT:**{**ICF**[**=**_iterations_] | **NOICF**}\
 > **/OPT:**{**LBR** | **NOLBR**}
 
 ## Arguments

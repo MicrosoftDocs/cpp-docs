@@ -11,7 +11,7 @@ When used with [.MODEL](dot-model.md), starts a constant data segment (with segm
 
 ## Syntax
 
-> **.CONST**
+> **.CONST**\
 > ⟦ *segmentItem* ⟧...
 
 ## Remarks
