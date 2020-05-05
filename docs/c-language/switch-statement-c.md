@@ -12,11 +12,11 @@ The __`switch`__ and __`case`__ statements help control complex conditional and 
 
 ## Syntax
 
-> *`selection-statement`*:<br/>
+> *`selection-statement`*:\
 > &nbsp;&nbsp;&nbsp;&nbsp; __`switch (`__&nbsp;*`expression`* &nbsp;__`)`__&nbsp;*`statement`*
 
-> *`labeled-statement`*:<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__&nbsp;*`constant-expression`*&nbsp;__`:`__&nbsp;*`statement`*<br/>
+> *`labeled-statement`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__&nbsp;*`constant-expression`*&nbsp;__`:`__&nbsp;*`statement`*\
 > &nbsp;&nbsp;&nbsp;&nbsp; __`default`__&nbsp;__`:`__&nbsp;*`statement`*
 
 ## Remarks

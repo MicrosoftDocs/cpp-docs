@@ -12,12 +12,12 @@ ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
 The following syntax describes the **try-finally** statement:
 
 > **\_\_try**<br/>
-> {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;// guarded code<br/>
-> }<br/>
-> **\_\_finally**<br/>
-> {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;// termination code<br/>
+> {\
+> &nbsp;&nbsp;&nbsp;&nbsp;// guarded code\
+> }\
+> **\_\_finally**\
+> {\
+> &nbsp;&nbsp;&nbsp;&nbsp;// termination code\
 > }
 
 ## Grammar

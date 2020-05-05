@@ -12,12 +12,12 @@ The **/Tc** option specifies that its filename argument is a C source file, even
 
 ## Syntax
 
-> **/Tc** _filename_
-> **/Tp** _filename_
-> **/TC**
+> **/Tc** _filename_\
+> **/Tp** _filename_\
+> **/TC**\
 > **/TP**
 
-## Arguments
+### Arguments
 
 *filename*<br/>
 A C or C++ source file.

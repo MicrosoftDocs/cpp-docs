@@ -11,7 +11,7 @@ Instructs the compiler to create a precompiled header (.pch) file that represent
 
 ## Syntax
 
-> __/Yc__<br/>
+> __/Yc__\
 > __/Yc__*filename*
 
 ## Arguments
