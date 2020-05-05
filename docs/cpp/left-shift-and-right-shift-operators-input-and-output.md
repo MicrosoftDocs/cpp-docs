@@ -11,7 +11,7 @@ The bitwise shift operators are the right-shift operator (**&gt;&gt;**), which m
 
 ## Syntax
 
-> *shift-expression* `<<` *additive-expression*
+> *shift-expression* `<<` *additive-expression*\
 > *shift-expression* `>>` *additive-expression*
 
 ## Remarks
