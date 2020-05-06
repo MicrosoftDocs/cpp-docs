@@ -2,7 +2,7 @@
 title: "_atoi64, _atoi64_l, _wtoi64, _wtoi64_l"
 ms.date: "4/2/2020"
 api_name: ["_atoi64_l", "_wtoi64", "_atoi64", "_wtoi64_l", "_o__atoi64", "_o__atoi64_l", "_o__wtoi64", "_o__wtoi64_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_atoi64", "_tstoi64", "_ttoi64", "wtoi64", "_tstoi64_l", "atoi64", "_wtoi64_l", "_wtoi64", "wtoi64_l", "_atoi64_l", "atoi64_l"]
