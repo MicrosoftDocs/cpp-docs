@@ -2,7 +2,7 @@
 title: "_CIsqrt"
 ms.date: "4/2/2020"
 api_name: ["_CIsqrt", "_o__CIsqrt"]
-api_location: ["msvcr90.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcrt.dll", "msvcr110.dll", "msvcr100.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcr90.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcrt.dll", "msvcr110.dll", "msvcr100.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_CIsqrt", "CIsqrt"]

@@ -2,7 +2,7 @@
 title: "___lc_codepage_func"
 ms.date: "4/2/2020"
 api_name: ["___lc_codepage_func", "_o____lc_codepage_func"]
-api_location: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110.dll", "msvcrt.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110.dll", "msvcrt.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["lc_codepage_func", "___lc_codepage_func"]

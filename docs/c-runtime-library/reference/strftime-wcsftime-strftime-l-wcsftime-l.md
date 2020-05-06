@@ -2,7 +2,7 @@
 title: "strftime, wcsftime, _strftime_l, _wcsftime_l"
 ms.date: "4/2/2020"
 api_name: ["strftime", "_wcsftime_l", "_strftime_l", "wcsftime", "_o__strftime_l", "_o__wcsftime_l", "_o_strftime", "_o_wcsftime"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsftime", "strftime", "wcsftime", "_strftime_l", "_wcsftime_l"]

@@ -2,7 +2,7 @@
 title: "_CIlog"
 ms.date: "4/2/2020"
 api_name: ["_CIlog", "_o__CIlog"]
-api_location: ["msvcr90.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcr90.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_CIlog", "CIlog"]
