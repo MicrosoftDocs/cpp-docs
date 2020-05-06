@@ -2,7 +2,7 @@
 title: "strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l"
 ms.date: "4/2/2020"
 api_name: ["strcat_s", "_mbscat_s", "_mbscat_s_l", "wcscat_s", "_o__mbscat_s", "_o__mbscat_s_l", "_o_strcat_s", "_o_wcscat_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strcat_s", "wcscat_s", "_mbscat_s", "_mbscat_s_l"]

@@ -2,7 +2,7 @@
 title: "_CIsin"
 ms.date: "4/2/2020"
 api_name: ["_CIsin", "_o__CIsin"]
-api_location: ["msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CIsin", "_CIsin"]

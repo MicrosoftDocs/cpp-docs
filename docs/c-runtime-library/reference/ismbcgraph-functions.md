@@ -2,7 +2,7 @@
 title: "_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbcpunct_l", "_ismbcblank", "_ismbcprint", "_ismbcgraph_l", "_ismbcblank_l", "_ismbcpunct", "_ismbcprint_l", "_ismbcspace_l", "_ismbcspace", "_ismbcgraph", "_o__ismbcblank", "_o__ismbcblank_l", "_o__ismbcgraph", "_o__ismbcgraph_l", "_o__ismbcprint", "_o__ismbcprint_l", "_o__ismbcpunct", "_o__ismbcpunct_l", "_o__ismbcspace", "_o__ismbcspace_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ismbcspace", "_ismbcgraph", "_ismbcpunct", "ismbcspace_l", "ismbcgraph", "_ismbcgraph_l", "_ismbcprint", "_ismbcspace_l", "ismbcprint", "ismbcgraph_l", "ismbcspace", "ismbcpunct"]

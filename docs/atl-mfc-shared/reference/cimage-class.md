@@ -137,8 +137,8 @@ Through `CImage`, you have access to the actual bits of a DIB section. You can u
 You can use `CImage` from either MFC or ATL.
 
 > [!NOTE]
-> When you create a project using `CImage`, you must define `CString` before you include *atlimage.h*. If your project uses ATL without MFC, include *atlstr.h* before you include *atlimage.h*. If your project uses MFC (or if it is an ATL project with MFC support), include *afxstr.h* before you include *atlimage.h*.<br/>
-> <br/>
+> When you create a project using `CImage`, you must define `CString` before you include *atlimage.h*. If your project uses ATL without MFC, include *atlstr.h* before you include *atlimage.h*. If your project uses MFC (or if it is an ATL project with MFC support), include *afxstr.h* before you include *atlimage.h*.
+>
 > Likewise, you must include *atlimage.h* before you include *atlimpl.cpp*. To accomplish this easily, include *atlimage.h* in your *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier).
 
 ## Requirements

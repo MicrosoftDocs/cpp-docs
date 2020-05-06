@@ -2,7 +2,7 @@
 title: "strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsncpy_s_l", "wcsncpy_s", "_strncpy_s_l", "strncpy_s", "_mbsncpy_s", "_wcsncpy_s_l", "_o__mbsncpy_s", "_o__mbsncpy_s_l", "_o_strncpy_s", "_o_wcsncpy_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsncpy_s", "_wcsncpy_s_l", "strncpy_s", "_strncpy_s_l", "wcsncpy_s", "_tcsncpy_s_l"]
