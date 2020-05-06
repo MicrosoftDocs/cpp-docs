@@ -27,8 +27,8 @@ class span;
 
 |Parameter|Description|
 |-|-|
-|`T`| The type of a span element. |
-|`Extent`| The number of elements in the span, or `std::dynamic_extent` if the span size is set at run-time. |
+|`T`| The type of the span elements. |
+|`Extent`| The number of elements that wil be in the span, or `std::dynamic_extent` if the number of elements is set at run-time. |
 
 ## Members
 
@@ -91,24 +91,24 @@ All `span` member functions have constant time complexity.
 
 ```cpp
 constexpr span() noexcept
-requires (_Extent == 0 || _Extent == dynamic_extent) = default;
+requires (Extent == 0 || _Extent == dynamic_extent) = default;
 
 template<class It>
-constexpr explicit(extent != dynamic_extent) 
+constexpr explicit(Extent != dynamic_extent) 
 span(It first, size_type count);
 
 template<class It, class End>
-constexpr explicit(extent != dynamic_extent) 
+constexpr explicit(Extent != dynamic_extent) 
 span(It first, End last);
+
+template<class T, size_t N>
+constexpr span(std::array<T, N>& arr) noexcept;
+
+template<class T, size_t N>
+constexpr span(const std::array<T, N>& arr) noexcept;
 
 template<size_t N>
 constexpr span(type_identity_t<element_type> (&arr)[N]) noexcept;
-
-template<class T, size_t N>
-constexpr span(array<T, N>& arr) noexcept;
-
-template<class T, size_t N>
-constexpr span(const array<T, N>& arr) noexcept;
 
 template<class R>
 constexpr explicit(extent != dynamic_extent) span(R&& r);
@@ -132,7 +132,7 @@ The number of elements that will be in the span.
 Iterator to the first element in the span.
 
 *last*\
-iterator set just past the last element in the span.
+Iterator set just past the last element in the span.
 
 *other*\
 Copy from this span.
@@ -147,18 +147,30 @@ Convert a span from this existing span.
 
 A span never frees any storage for items in the span because it doesn't own the storage of the objects in the span.
 
-`span()`
+`span()`\
  Constructs an empty span.
+Only considered during overload resolution when the template parameter `Extent` is `0` or `dynamic_extent`.
 
-This constructor is eligible for overload resolution when the template parameter '`Extent` is `0` or `dynamic_extent`.
+`span(It first, size_type count)`\
+Constructs a span from the first `count` iterator elements.  
+Only considered during overload resolution when the template parameter `Extent` isn't `dynamic_extent`.
 
-`span(It first, size_type count)`
-Constructs a span from the specified number of elements from the passed in iterator.
+`span(It first, End last)`\
+Constructs a span from the elements in the iterator until the sentinal `end` is reached.  
+Only considered during overload resolution when the template parameter `Extent` isn't `dynamic_extent`.
 
-Theis constructor 
+`span(std::array<T, N>& arr) noexcept`\
+`span(const std::array<T, N>& arr) noexcept;` \
+`span(type_identity_t<element_type> (&arr)[N])` \
+Constructs a span from `N` elements of the specified array.  
+Only considered during overload resolution when the template parameter `Extent` is `dynamic_extent` or equals `N`.
 
+`span(const span& other)`
+The compiler generated copy constructor. It copies the size and data pointer from the specified span.
 
-The second constructor 
+`span(R&& r)`\
+Constructs a span from the Range `r`.  
+Only considered during overload resolution when the template parameter `Extent` isn't `dynamic_extent`
 
 ### Example
 
@@ -169,6 +181,11 @@ The second constructor
 typedef std::array<int, 4> Myarray;
 int main()
 {
+    int x[3] = {1,2,3};
+    std::span<int, 3> mySpan{ x }; // span(std::array<T, N>& arr)
+    
+    // below is array example - delete
+    
     typedef std::array<int, 4> Myarray;
 
     Myarray c0 = { 0, 1, 2, 3 };
