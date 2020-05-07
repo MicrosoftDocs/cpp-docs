@@ -2,7 +2,7 @@
 title: "_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l"
 ms.date: "4/2/2020"
 api_name: ["_wcsset", "_mbsset", "_strset_l", "_strset", "_wcsset_l", "_mbsset_l", "_o__mbsset", "_o__mbsset_l", "_o__wcsset"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbsset", "_strset_l", "_mbsset", "_strset", "mbsset_l", "strset_l", "_wcsset", "_ftcsset", "wcsset_l", "_tcsset_l", "_mbsset_l", "_wcsset_l", "_fstrset", "_tcsset"]
