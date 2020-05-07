@@ -2,7 +2,7 @@
 title: "nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl"
 ms.date: "4/2/2020"
 api_name: ["nextafterf", "_nextafterf", "nextafter", "nextafterl", "_nextafter", "nexttoward", "nexttowardf", "nexttowardl", "_o__nextafter", "_o_nextafter", "_o_nextafterf", "_o_nextafterl", "_o_nexttoward", "_o_nexttowardf", "_o_nexttowardl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["nextafter", "_nextafter", "nextafterf", "nextafterl", "_nextafterf", "math/nextafter", "math/nextafterf", "math/nextafterl", "nexttoward", "nexttowardf", "nexttowardl", "math/nexttoward", "math/nexttowardf", "math/nexttowardl"]

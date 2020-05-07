@@ -2,7 +2,7 @@
 title: "_isctype, iswctype, _isctype_l, _iswctype_l"
 ms.date: "4/2/2020"
 api_name: ["_isctype_l", "iswctype", "_iswctype_l", "_isctype", "_o__isctype", "_o__isctype_l", "_o__iswctype_l", "_o_iswctype"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["iswctype", "_isctype", "_isctype_l", "_iswctype", "isctype", "iswctype_l", "isctype_l", "_iswctype_l"]

@@ -2,7 +2,7 @@
 title: "_set_app_type"
 ms.date: "4/2/2020"
 api_name: ["_set_app_type", "_o__set_app_type"]
-api_location: ["api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_set_app_type", "corecrt_startup/_set_app_type"]
