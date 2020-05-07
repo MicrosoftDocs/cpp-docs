@@ -108,9 +108,9 @@ In Visual Studio 2019 version 16.6, we added a new debug configuration of `type:
 - `program`: Defaults to `"${debugInfo.fullTargetPath}"`. The Unix path to the application to debug. Only required if different than the target executable in the build or deploy location.
 - `remoteMachineName`:  Defaults to `"${debugInfo.remoteMachineName}"`. Name of the remote system that hosts the program to debug. Only required if different than the build system. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
 - `cwd`: Defaults to `"${debugInfo.defaultWorkingDirectory}"`. Full Unix path to the directory on the remote system where `program` is run. The directory must exist.
-- `gdbPath`: Defaults to `${debugInfo.vsInstalledGdb}`. Full Windows path to the gdb used to debug. Defaults to the gdb installed with the Linux development with C/C++ workload.
-- `gdbserverPath`: Defaults to `usr/bin/gdbserver`. Full Unix path to the gdbserver used to debug.
-- `preDebugCommand`: A Linux command to run immediately before starting gdbserver. Gdbserver will not start until it completes.
+- `gdbPath`: Defaults to `${debugInfo.vsInstalledGdb}`. Full Windows path to the `gdb` used to debug. Defaults to the `gdb` installed with the Linux development with C/C++ workload.
+- `gdbserverPath`: Defaults to `usr/bin/gdbserver`. Full Unix path to the `gdbserver` used to debug.
+- `preDebugCommand`: A Linux command to run immediately before starting `gdbserver`. `gdbserver` doesn't start until the command completes.
 
 #### Deployment options
 
