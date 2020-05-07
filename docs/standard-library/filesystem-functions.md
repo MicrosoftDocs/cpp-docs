@@ -467,7 +467,7 @@ The function exchanges the contents of *left* and *right*.
 
 ```cpp
 file_status symlink_status(const path& pval);
-file_status symlink_status(const path& pval, erroxr_code& ec) noexcept;
+file_status symlink_status(const path& pval, error_code& ec) noexcept;
 ```
 
 The functions return the pathname symlink status, the file type, and permissions, associated with *pval*. The functions behave the same as `status(pval)` except that a symlink is itself tested, not the file it chooses.
