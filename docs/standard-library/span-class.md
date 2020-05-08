@@ -12,7 +12,7 @@ Provides a lightweight, single-dimension, view over a contiguous sequence of obj
 
 If you would have typically accessed a sequence of back-to-back objects using a pointer indexed by the size of the objects, span is a safer, lightweight alternative.
 
-Spans can be static-size (determined at compile time) or dynamic-size (determined at runtime).
+A span can be static-size (determined at compile time) or dynamic-size (determined at runtime).
 
 Unlike array or vector, span doesn't "own” the elements placed inside it. A span never frees any storage for items in the span because it doesn't own the storage of the objects in the span.
 
@@ -27,8 +27,8 @@ class span;
 
 |Parameter|Description|
 |-|-|
-|`T`| The type of the span elements. |
-|`Extent`| The number of elements that wil be in the span, or `std::dynamic_extent` if the number of elements is set at run-time. |
+|`T`| The type for span elements. |
+|`Extent`| The number of elements in the span if specified at compile time, or `std::dynamic_extent` if the number of elements will be specified at run-time. |
 
 ## Members
 
@@ -47,25 +47,25 @@ class span;
 
 | **Constructors** | **Description** |
 |-|-|
-|[span](#span)| Constructs a `span`.|
+JTW |[span](#span)| Constructs a `span`.|
 | **Iterator support** ||
-|[begin](#begin) | Returns an iterator pointing to the first element in the span.|
-|[end](#end) | Returns an iterator pointing to the end of the span. |
-|[rbegin](#rbegin) | Returns a reverse iterator pointing to the last element of the span, that is, the beginning of the reversed span.|
-|[rend](#rend) | Returns a reverse iterator pointing to the front  of the span, that is, the end of the reversed span.|
+JTW |[begin](#begin) | Returns an iterator pointing to the first element in the span.|
+JTW |[end](#end) | Returns an iterator pointing to the end of the span. |
+JTW |[rbegin](#rbegin) | Returns a reverse iterator pointing to the last element of the span, that is, the beginning of the reversed span.|
+JTW |[rend](#rend) | Returns a reverse iterator pointing to the front  of the span, that is, the end of the reversed span.|
 | **Access elements**||
-|[data](#data) | Get the address of the first element in the span.|
-|[back](#back) | Get the last element in the span.|
-|[front](#front) | Get the first element in the span.|
-|[operator\[\]](#op_at) | Get the element at the index.|
+JTW |[data](#data) | Get the address of the first element in the span.|
+JTW |[back](#back) | Get the last element in the span.|
+JTW |[front](#front) | Get the first element in the span.|
+JTW |[operator\[\]](#op_at) | Get the element at the index.|
 | **Observers** ||
-|[size](#size) | Returns the number of elements in the span.|
-|[size_bytes](#size_bytes) | Returns the size of the span in bytes.|
-|[empty](#empty)| Tests whether the span is empty.|
+JTW |[size](#size) | Returns the number of elements in the span.|
+JTW |[size_bytes](#size_bytes) | Returns the size of the span in bytes.|
+JTW |[empty](#empty)| Tests whether the span is empty.|
 | ** Subviews ** ||
-| [first](#first_view) | Gets a subspan from the front of the span.| JTW there are overloads
-| [last](#last_view) | Gets a subspan from the back of the span.| (JTW there are two overloads)
-| [subspan](#sub_view) | Gets a subspan.|
+JTW | [first](#first_view) | Get a subspan from the front of the span.|
+JTW | [last](#last_view) | Get a subspan from the back of the span.|
+JTW | [subspan](#sub_view) | Gets a subspan from anywhere in the span.|
 | **Operators** | **Description** |
 |[span::operator=](#op_eq)|Replaces the span.|
 |[span::operator\[\]](#op_at)|Access an element at a specified position.|
@@ -90,33 +90,35 @@ All `span` member functions have constant time complexity.
 `span` constructors.
 
 ```cpp
-constexpr span() noexcept
-requires (Extent == 0 || _Extent == dynamic_extent) = default;
+JTW constexpr span() noexcept
+requires (Extent == 0 || Extent == dynamic_extent) = default;
 
-template<class It>
+JTW template<class It>
 constexpr explicit(Extent != dynamic_extent) 
 span(It first, size_type count);
 
-template<class It, class End>
+JTW template<class It, class End>
 constexpr explicit(Extent != dynamic_extent) 
 span(It first, End last);
 
-template<class T, size_t N>
+JTW template<class T, size_t N>
 constexpr span(std::array<T, N>& arr) noexcept;
 
-template<class T, size_t N>
+JTW template<class T, size_t N>
 constexpr span(const std::array<T, N>& arr) noexcept;
 
-template<size_t N>
+JTW template<size_t N>
 constexpr span(type_identity_t<element_type> (&arr)[N]) noexcept;
 
-template<class R>
-constexpr explicit(extent != dynamic_extent) span(R&& r);
+// move
+JTW template<class R>
+constexpr explicit(Extent != dynamic_extent) span(R&& r);
 
-constexpr span(const span& other) noexcept = default;
+// copy ctor
+JTW constexpr span(const span& other) noexcept = default;
 
-template<class OtherElementType, size_t OtherExtent>
-constexpr explicit(extent != dynamic_extent && otherExtent == dynamic_extent)
+JTW template<class OtherElementType, size_t OtherExtent>
+constexpr explicit(Extent != dynamic_extent && OtherExtent == dynamic_extent)
 span(const span<OtherElementType, OtherExtent>& s) noexcept;
 ```
 
@@ -145,32 +147,81 @@ Convert a span from this existing span.
 
 ### Remarks
 
-A span never frees any storage for items in the span because it doesn't own the storage of the objects in the span.
+Spans don't free storage for items in the span because a span doesn't own the storage of the objects within it.
 
-`span()`\
+**`span()`**  
+
  Constructs an empty span.
 Only considered during overload resolution when the template parameter `Extent` is `0` or `dynamic_extent`.
 
-`span(It first, size_type count)`\
-Constructs a span from the first `count` iterator elements.  
-Only considered during overload resolution when the template parameter `Extent` isn't `dynamic_extent`.
+**`span(It first, size_type count)`**
 
-`span(It first, End last)`\
-Constructs a span from the elements in the iterator until the sentinal `end` is reached.  
-Only considered during overload resolution when the template parameter `Extent` isn't `dynamic_extent`.
+Constructs a span from the first `count` elements from iterator `first`.\  
+Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`.
 
-`span(std::array<T, N>& arr) noexcept`\
-`span(const std::array<T, N>& arr) noexcept;` \
-`span(type_identity_t<element_type> (&arr)[N])` \
+**`span(It first, End last)`**
+
+Constructs a span from the elements in iterator `first` until the sentinel `end` is reached.  
+Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`.
+
+**`span(std::array<T, N>& arr) noexcept;`  
+`span(const std::array<T, N>& arr) noexcept;`  
+`span(type_identity_t<element_type> (&arr)[N]) noexcept;`**  
+
 Constructs a span from `N` elements of the specified array.  
-Only considered during overload resolution when the template parameter `Extent` is `dynamic_extent` or equals `N`.
+Only considered during overload resolution when template parameter `Extent` is `dynamic_extent` or equals `N`.
 
-`span(const span& other)`
-The compiler generated copy constructor. It copies the size and data pointer from the specified span.
+**`span(const span& other)`**
 
-`span(R&& r)`\
-Constructs a span from the Range `r`.  
-Only considered during overload resolution when the template parameter `Extent` isn't `dynamic_extent`
+The compiler generated copy constructor. Memberwise copy is safe because the span itself doesn't own allocated memory. This constructor copies the size and data pointer from the specified span.
+
+**`span(const span<OtherElementType, OtherExtent>& s) noexcept;`**
+
+Copy constructor. Constructs a span from the specified span.
+Only particpates in overload resolution if template parameter `Extent` is `dynamic_extent`, or `N` is `dynamic_extent` or  equals `Extent`.
+
+**`span(R&& r)`**
+
+Move constructor.
+Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`
+
+### Example
+
+```cpp
+#include <span>
+
+void main()
+{
+    const int MAX=10;
+    
+    int x[MAX];
+    
+    for (int i = 0; i < MAX; i++)
+    {
+        x[i] = i;
+    }
+    
+    span <int,dynamic_extent> s0;
+    span<int, MAX> s1{ x }; // fixed-size span: compiler error if size of x doesn't match template argument MAX
+    span<int> s2{ x }; // size is inferred from x
+    span<const int> s3 = s2; // a legal conversion (non const to const)
+    span<int, dynamic_extent> s5 = s2; // copy constructor
+    // span(const span<OtherElementType, OtherExtent>& s)
+    span<int, dynamic_extent> s4(s5);
+}
+```
+
+## <a name="back"></a> span::back
+
+Returns the last element in the span.
+
+```cpp
+constexpr reference back() const noexcept;
+```
+
+### Return Value
+
+A reference to the last element in the span.
 
 ### Example
 
@@ -178,1404 +229,501 @@ Only considered during overload resolution when the template parameter `Extent` 
 #include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    int x[3] = {1,2,3};
-    std::span<int, 3> mySpan{ x }; // span(std::array<T, N>& arr)
-    
-    // below is array example - delete
-    
-    typedef std::array<int, 4> Myarray;
-
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    Myarray c1(c0);
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c1)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-0 1 2 3
-```
-
-## <a name="assign"></a> array::assign
-
-Obsolete in C++11, replaced by [fill](#fill). Replaces all elements.
-
-## <a name="at"></a> array::at
-
-Accesses an element at a specified position.
-
-```cpp
-reference at(size_type off);
-
-constexpr const_reference at(size_type off) const;
-```
-
-### Parameters
-
-*off*\
-Position of element to access.
-
-### Remarks
-
-The member functions return a reference to the element of the controlled sequence at position *off*. If that position is invalid, the function throws an object of class `out_of_range`.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display odd elements " 1 3"
-    std::cout << " " << c0.at(1);
-    std::cout << " " << c0.at(3);
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-## <a name="back"></a> array::back
-
-Accesses the last element.
-
-```cpp
-reference back();
-
-constexpr const_reference back() const;
-```
-
-### Remarks
-
-The member functions return a reference to the last element of the controlled sequence, which must be non-empty.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display last element " 3"
-    std::cout << " " << c0.back();
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-3
-```
-
-## <a name="begin"></a> array::begin
-
-Designates the beginning of the controlled sequence.
-
-```cpp
-iterator begin() noexcept;
-const_iterator begin() const noexcept;
-```
-
-### Remarks
-
-The member functions return a random-access iterator that points at the first element of the sequence (or just beyond the end of an empty sequence).
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    Myarray::iterator it2 = c0.begin();
-    std::cout << " " << *it2;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-0
-```
-
-## <a name="cbegin"></a> array::cbegin
-
-Returns a **const** iterator that addresses the first element in the range.
-
-```cpp
-const_iterator cbegin() const noexcept;
-```
-
-### Return Value
-
-A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
-
-### Remarks
-
-With the return value of `cbegin`, the elements in the range cannot be modified.
-
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
-
-```cpp
-auto i1 = Container.begin();
-// i1 is Container<T>::iterator
-auto i2 = Container.cbegin();
-
-// i2 is Container<T>::const_iterator
-```
-
-## <a name="cend"></a> array::cend
-
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
-
-```cpp
-const_iterator cend() const noexcept;
-```
-
-### Return Value
-
-A random-access iterator that points just beyond the end of the range.
-
-### Remarks
-
-`cend` is used to test whether an iterator has passed the end of its range.
-
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
-
-```cpp
-auto i1 = Container.end();
-// i1 is Container<T>::iterator
-auto i2 = Container.cend();
-
-// i2 is Container<T>::const_iterator
-```
-
-The value returned by `cend` should not be dereferenced.
-
-## <a name="const_iterator"></a> array::const_iterator
-
-The type of a constant iterator for the controlled sequence.
-
-```cpp
-typedef implementation-defined const_iterator;
-```
-
-### Remarks
-
-The type describes an object that can serve as a constant random-access iterator for the controlled sequence.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> MyArray;
-
-int main()
-{
-    MyArray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    std::cout << "it1:";
-    for (MyArray::const_iterator it1 = c0.begin();
-        it1 != c0.end();
-        ++it1) {
-        std::cout << " " << *it1;
-    }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    MyArray::const_iterator it2 = c0.begin();
-    std::cout << "it2:";
-    std::cout << " " << *it2;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-it1: 0 1 2 3
-it2: 0
-```
-
-## <a name="const_pointer"></a> array::const_pointer
-
-The type of a constant pointer to an element.
-
-```cpp
-typedef const Ty *const_pointer;
-```
-
-### Remarks
-
-The type describes an object that can serve as a constant pointer to elements of the sequence.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    Myarray::const_pointer ptr = &*c0.begin();
-    std::cout << " " << *ptr;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-0
-```
-
-## <a name="const_reference"></a> array::const_reference
-
-The type of a constant reference to an element.
-
-```cpp
-typedef const Ty& const_reference;
-```
-
-### Remarks
-
-The type describes an object that can serve as a constant reference to an element of the controlled sequence.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    Myarray::const_reference ref = *c0.begin();
-    std::cout << " " << ref;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-0
-```
-
-## <a name="const_reverse_iterator"></a> array::const_reverse_iterator
-
-The type of a constant reverse iterator for the controlled sequence.
-
-```cpp
-typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
-```
-
-### Remarks
-
-The type describes an object that can serve as a constant reverse iterator for the controlled sequence.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display last element " 3"
-    Myarray::const_reverse_iterator it2 = c0.rbegin();
-    std::cout << " " << *it2;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-3
-```
-
-## <a name="crbegin"></a> array::crbegin
-
-Returns a const iterator to the first element in a reversed array.
-
-```cpp
-const_reverse_iterator crbegin() const;
-```
-
-### Return Value
-
-A const reverse random-access iterator addressing the first element in a reversed array or addressing what had been the last element in the unreversed array.
-
-### Remarks
-
-With the return value of `crbegin`, the array object cannot be modified.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-int main( )
-{
-   using namespace std;
-   array<int, 2> v1 = {1, 2};
-   array<int, 2>::iterator v1_Iter;
-   array<int, 2>::const_reverse_iterator v1_rIter;
-
-   v1_Iter = v1.begin( );
-   cout << "The first element of array is "
-        << *v1_Iter << "." << endl;
-
-   v1_rIter = v1.crbegin( );
-   cout << "The first element of the reversed array is "
-        << *v1_rIter << "." << endl;
-}
-```
-
-```Output
-The first element of array is 1.
-The first element of the reversed array is 2.
-```
-
-## <a name="crend"></a> array::crend
-
-Returns a const iterator that addresses the location succeeding the last element in a reversed array.
-
-```cpp
-const_reverse_iterator crend() const noexcept;
-```
-
-### Return Value
-
-A const reverse random-access iterator that addresses the location succeeding the last element in a reversed array (the location that had preceded the first element in the unreversed array).
-
-### Remarks
-
-`crend` is used with a reversed array just as [array::cend](#cend) is used with a array.
-
-With the return value of `crend` (suitably decremented), the array object cannot be modified.
-
-`crend` can be used to test to whether a reverse iterator has reached the end of its array.
-
-The value returned by `crend` should not be dereferenced.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-int main( )
-{
-   using namespace std;
-   array<int, 2> v1 = {1, 2};
-   array<int, 2>::const_reverse_iterator v1_rIter;
-
-   for ( v1_rIter = v1.rbegin( ) ; v1_rIter != v1.rend( ) ; v1_rIter++ )
-      cout << *v1_rIter << endl;
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+
+    auto i = mySpan.back();
+    cout << i;
 }
 ```
 
 ```Output
 2
-1
 ```
 
-## <a name="data"></a> array::data
+## <a name="begin"></a> span::begin
 
-Gets the address of the first element.
+Returns an iterator to the first element in the span.
 
 ```cpp
-Ty *data();
-
-const Ty *data() const;
+constexpr iterator begin() const noexcept
 ```
 
-### Remarks
+### Return value
 
-The member functions return the address of the first element in the controlled sequence.
+An iterator that starts with the first element in the span.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
 
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    Myarray::pointer ptr = c0.data();
-    std::cout << " " << *ptr;
-    std::cout << std::endl;
-
-    return (0);
+    auto i = mySpan.begin();
+    cout << *i;
 }
 ```
 
 ```Output
-0 1 2 3
 0
 ```
 
-## <a name="difference_type"></a> array::difference_type
+## <a name="data"></a> span::data
 
-The type of a signed distance between two elements.
+Returns a pointer to the beginning of the span data.
 
 ```cpp
-typedef std::ptrdiff_t difference_type;
+constexpr pointer data() const noexcept;
 ```
 
-### Remarks
+### Return Value
 
-The signed integer type describes an object that can represent the difference between the addresses of any two elements in the controlled sequence. It is a synonym for the type `std::ptrdiff_t`.
+A pointer to the first item stored in the span.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display distance first-last " -4"
-    Myarray::difference_type diff = c0.begin() - c0.end();
-    std::cout << " " << diff;
-    std::cout << std::endl;
-
-    return (0);
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    auto i = mySpan.data();
+    cout << *i;
 }
 ```
 
 ```Output
-0 1 2 3
--4
+0
 ```
 
-## <a name="empty"></a> array::empty
+## <a name="empty"></a> span::empty
 
-Tests whether no elements are present.
+Returns whether or not the span contains elements.
 
 ```cpp
-constexpr bool empty() const;
+constexpr bool empty() const noexcept
 ```
 
 ### Remarks
 
-The member function returns true only if `N == 0`.
+Returns `true` if this->size() == 0; otherwise `false`.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display whether c0 is empty " false"
-    std::cout << std::boolalpha << " " << c0.empty();
-    std::cout << std::endl;
-
-    std::array<int, 0> c1;
-
-    // display whether c1 is empty " true"
-    std::cout << std::boolalpha << " " << c1.empty();
-    std::cout << std::endl;
-
-    return (0);
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    bool isEmpty = mySpan.empty(); // isEmpty == false
 }
 ```
 
-```Output
-0 1 2 3
-false
-true
-```
+## <a name="end"></a> span::end
 
-## <a name="end"></a> array::end
-
-Designates the end of the controlled sequence.
+Returns an iterator to a placeholder following the last element in the span.
 
 ```cpp
-reference end();
-
-const_reference end() const;
+constexpr iterator end() const;
 ```
+
+### Return Value
+
+An iterator to the sentinel just beyond the end of the span.
 
 ### Remarks
 
-The member functions return a random-access iterator that points just beyond the end of the sequence.
+`end` is used to test whether an iterator has passed the end of its range.
+
+Don't dereference the value returned by the iterator. Use it to identify whether the iterator has reached the sentinal following the last element in the span.
 
 ### Example
 
 ```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
+// Iteration
+    for (auto it = s1.begin(); it != s1.end(); ++it)
     {
-        std::cout << " " << it;
+        cout << *it;
     }
-    std::cout << std::endl;
-
-    // display last element " 3"
-    Myarray::iterator it2 = c0.end();
-    std::cout << " " << *--it2;
-    std::cout << std::endl;
-
-    return (0);
-}
 ```
 
-```Output
-0 1 2 3
-3
-```
+## <a name="first_view"></a> span::first
 
-## <a name="fill"></a> array::fill
-
-Erases a array and copies the specified elements to the empty array.
+Get a subspan taken from the front of this span.
 
 ```cpp
-void fill(const Type& val);
+constexpr auto first(const size_type count) const noexcept;
+template <size_t count> constexpr auto first() const noexcept;
 ```
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of the element being inserted into the array.|
+*count*\
+The number of elements from the front of this span to put in the subspan.
 
-### Remarks
+### Return Value
 
-`fill` replaces each element of the array with the specified value.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-int main()
-{
-    using namespace std;
-    array<int, 2> v1 = { 1, 2 };
-
-    cout << "v1 = ";
-    for (const auto& it : v1)
-    {
-        std::cout << " " << it;
-    }
-    cout << endl;
-
-    v1.fill(3);
-    cout << "v1 = ";
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    cout << endl;
-}
-```
-
-## <a name="front"></a> array::front
-
-Accesses the first element.
-
-```cpp
-reference front();
-
-constexpr const_reference front() const;
-```
-
-### Remarks
-
-The member functions return a reference to the first element of the controlled sequence, which must be non-empty.
+A span that contains `count` elements from this span.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    
+    auto first2 = mySpan.first(2);
+    cout << "mySpan.first(2): ";
+    for (auto& i : first2)
     {
-        std::cout << " " << it;
+        cout << i;
     }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    std::cout << " " << c0.front();
-    std::cout << std::endl;
-
-    return (0);
+    
+    cout << "\nmySpan.first<2>: ";
+    auto viewSpan = mySpan.first<2>();
+    for (auto& i : viewSpan)
+    {
+        cout << i;
+    }
 }
 ```
 
 ```Output
-0 1 2 3
+mySpan.first(2): 01
+mySpan.first<2>: 01
+```
+
+## <a name="front"></a> span::front
+
+Returns the first element in the span.
+
+```cpp
+constexpr reference front() const noexcept;
+```
+
+### Remarks
+
+A reference to the first element in the span.
+
+### Example
+
+```cpp
+#include <span>
+#include <iostream>
+
+void main()
+{
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+
+    auto i = mySpan.first();
+    cout << i;
+}
+```
+
+```Output
 0
 ```
 
-## <a name="iterator"></a> array::iterator
+## <a name="last_view"></a> span::last
 
-The type of an iterator for the controlled sequence.
+Get a subspan from the end of this span.
 
 ```cpp
-typedef implementation-defined iterator;
+constexpr span<element_type, dynamic_extent> last(const size_type count) const noexcept;
+template <size_t count> constexpr span<element_type, count> last() const noexcept;
 ```
+
+### Parameters
+
+*count*\
+The number of elements from the end this span to put in the subspan.
 
 ### Remarks
 
-The type describes an object that can serve as a random-access iterator for the controlled sequence.
+Returns a span that contains `count` elements from the end of this span.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> MyArray;
-
-int main()
+void main()
 {
-    MyArray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    std::cout << "it1:";
-    for (MyArray::iterator it1 = c0.begin();
-        it1 != c0.end();
-        ++it1) {
-        std::cout << " " << *it1;
-    }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    MyArray::iterator it2 = c0.begin();
-    std::cout << "it2:";
-    std::cout << " " << *it2;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-it1: 0 1 2 3
-
-it2: 0
-```
-
-## <a name="max_size"></a> array::max_size
-
-Counts the number of elements.
-
-```cpp
-constexpr size_type max_size() const;
-```
-
-### Remarks
-
-The member function returns `N`.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    
+    auto first2 = mySpan.last(2);
+    cout << "mySpan.last(2): ";
+    for (auto& i : last2)
     {
-        std::cout << " " << it;
+        cout << i;
     }
-    std::cout << std::endl;
-
-    // display (maximum) size " 4"
-    std::cout << " " << c0.max_size();
-    std::cout << std::endl;
-
-    return (0);
+    
+    cout << "\nmySpan.last<2>: ";
+    auto viewSpan = mySpan.last<2>();
+    for (auto& i : viewSpan)
+    {
+        cout << i;
+    }
 }
 ```
 
 ```Output
-0 1 2 3
-4
+mySpan.last(2): 12
+mySpan.last<2>: 12
 ```
 
-## <a name="op_at"></a> array::operator[]
+## <a name="op_at"></a> span::operator[]
 
 Accesses an element at a specified position.
 
 ```cpp
-reference operator[](size_type off);
-
-constexpr const_reference operator[](size_type off) const;
+constexpr reference operator[](const size_type offset)
 ```
 
 ### Parameters
 
-*off*\
-Position of element to access.
+*offset*\
+Zero-based position of element in the span to access.
 
 ### Remarks
 
-The member functions return a reference to the element of the controlled sequence at position *off*. If that position is invalid, the behavior is undefined.
-
-There is also a non-member [get](array-functions.md#get) function available to get a reference to an element of an **array**.
+Return a reference to the element at position *offset*. If that position is invalid, the behavior is undefined.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display odd elements " 1 3"
-    std::cout << " " << c0[1];
-    std::cout << " " << c0[3];
-    std::cout << std::endl;
-
-    return (0);
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    auto i = mySpan.begin();
+    cout << mySpan[1];
 }
 ```
 
 ```Output
-0 1 2 3
-1 3
+1
 ```
 
-## <a name="op_eq"></a> array::operator=
+## <a name="rbegin"></a> span::rbegin
 
-Replaces the controlled sequence.
+Returns a reverse iterator pointing to the last element of the span, that is, the beginning of the reversed span.
 
 ```cpp
-array<Value> operator=(array<Value> right);
-```
-
-### Parameters
-
-*right*\
-Container to copy.
-
-### Remarks
-
-The member operator assigns each element of *right* to the corresponding element of the controlled sequence, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    Myarray c1;
-    c1 = c0;
-
-    // display copied contents " 0 1 2 3"
-        // display contents " 0 1 2 3"
-    for (auto it : c1)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-0 1 2 3
-```
-
-## <a name="pointer"></a> array::pointer
-
-The type of a pointer to an element.
-
-```cpp
-typedef Ty *pointer;
+constexpr reverse_iterator rbegin() const noexcept 
 ```
 
 ### Remarks
 
-The type describes an object that can serve as a pointer to elements of the sequence.
+Returns an iterator pointing to the beginning of the reversed span.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
 
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
+    for (auto rIt = s1.rbegin(); rIt != s1.rend(); ++rIt)
     {
-        std::cout << " " << it;
+        cout << *rIt;
     }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    Myarray::pointer ptr = &*c0.begin();
-    std::cout << " " << *ptr;
-    std::cout << std::endl;
-
-    return (0);
 }
 ```
 
 ```Output
-0 1 2 3
-0
+210
 ```
 
-## <a name="rbegin"></a> array::rbegin
+## <a name="rend"></a> span::rend
 
-Designates the beginning of the reversed controlled sequence.
+Returns a reverse iterator to a placeholder following the last element in the reversed span, that is, the placeholder before the first element in the unreversed span.
 
 ```cpp
-reverse_iterator rbegin()noexcept;
-const_reverse_iterator rbegin() const noexcept;
+constexpr reverse_iterator rend() const;
+```
+
+### Return Value
+
+A random-access iterator to the sentinel just beyond the end of the reversed span.
+
+### Remarks
+
+`rend` can be used to test to whether a reverse iterator has reached the end of its span.
+
+`rend` is used with a reversed span just as [span::end](#end) is used with a span.
+
+The value returned by `rend` should not be dereferenced.
+
+### Example
+
+```cpp
+#include <span>
+#include <iostream>
+
+void main()
+{
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+
+    for (auto rIt = s1.rbegin(); rIt != s1.rend(); ++rIt)
+    {
+        cout << *rIt;
+    }
+}
+```
+
+## <a name="size"></a> span::size
+
+Returns the number of elements in the span.
+
+```cpp
+constexpr size_t size() const noexcept;
 ```
 
 ### Remarks
 
-The member functions return a reverse iterator that points just beyond the end of the controlled sequence. Hence, it designates the beginning of the reverse sequence.
+Returns how many elements are in the span.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display last element " 3"
-    Myarray::const_reverse_iterator it2 = c0.rbegin();
-    std::cout << " " << *it2;
-    std::cout << std::endl;
-
-    return (0);
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    cout << mySpan.size();
 }
 ```
 
 ```Output
-0 1 2 3
 3
 ```
 
-## <a name="reference"></a> array::reference
+## <a name="size_bytes"></a> span::size_bytes
 
-The type of a reference to an element.
+Returns the size of the elements in the span in bytes.
 
 ```cpp
-typedef Ty& reference;
+constexpr size_type size_bytes() const noexcept;
 ```
 
 ### Remarks
 
-The type describes an object that can serve as a reference to an element of the controlled sequence.
+Returns how many bytes the elements in the span take up. This is `sizeof(element_type)` multiplied by the number of elements in the span.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    Myarray::reference ref = *c0.begin();
-    std::cout << " " << ref;
-    std::cout << std::endl;
-
-    return (0);
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    cout << mySpan.size_bytes();
 }
 ```
 
 ```Output
-0 1 2 3
-0
+12
 ```
 
-## <a name="rend"></a> array::rend
+## <a name="sub_view"></a> span::subspan
 
-Designates the end of the reversed controlled sequence.
+Gets a subspan from this span.
 
 ```cpp
-reverse_iterator rend()noexcept;
-const_reverse_iterator rend() const noexcept;
-```
+constexpr span<element_type, dynamic_extent>
+subspan(const size_type offset, const size_type count = dynamic_extent) const noexcept;
 
-### Remarks
+ template <size_t offset, size_t count = dynamic_extent>
+ constexpr span<element_type,
+        count != dynamic_extent ? count : (_Extent != dynamic_extent ? _Extent - _Offset : dynamic_extent)>
+        subspan() const noexcept 
 
-The member functions return a reverse iterator that points at the first element of the sequence (or just beyond the end of an empty sequence)). Hence, it designates the end of the reverse sequence.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display first element " 0"
-    Myarray::const_reverse_iterator it2 = c0.rend();
-    std::cout << " " << *--it2;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-0
-```
-
-## <a name="reverse_iterator"></a> array::reverse_iterator
-
-The type of a reverse iterator for the controlled sequence.
-
-```cpp
-typedef std::reverse_iterator<iterator> reverse_iterator;
-```
-
-### Remarks
-
-The type describes an object that can serve as a reverse iterator for the controlled sequence.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display last element " 3"
-    Myarray::reverse_iterator it2 = c0.rbegin();
-    std::cout << " " << *it2;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-3
-```
-
-## <a name="size"></a> array::size
-
-Counts the number of elements.
-
-```cpp
-constexpr size_type size() const;
-```
-
-### Remarks
-
-The member function returns `N`.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display size " 4"
-    std::cout << " " << c0.size();
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-4
-```
-
-## <a name="size_type"></a> array::size_type
-
-The type of an unsigned distance between two element.
-
-```cpp
-typedef std::size_t size_type;
-```
-
-### Remarks
-
-The unsigned integer type describes an object that can represent the length of any controlled sequence. It is a synonym for the type `std::size_t`.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display distance last-first " 4"
-    Myarray::size_type diff = c0.end() - c0.begin();
-    std::cout << " " << diff;
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-4
-```
-
-## <a name="swap"></a> array::swap
-
-Swaps the contents of this array with another array.
-
-```cpp
-void swap(array& right);
+constexpr span<element_type, dynamic_extent>
+subspan(size_t offset, size_t count = dynamic_extent) const;
 ```
 
 ### Parameters
 
-*right*\
-Array to swap contents with.
+*count*\
+The number of elements from the end this span to put in the subspan. If span is `dyanmaic_extent` (the default value) then gets the elements from `offset` to the end of this span.
+
+*offset*\
+The location in this span to start the subspan.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and *right*. It performs a number of element assignments and constructor calls proportional to `N`.
-
-There is also a non-member [swap](array-functions.md#swap) function available to swap two **array** instances.
+Returns a span starting at `offset` in this span and containing `count` elements.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    
+    cout << "mySpan.subspan(1,2): ";
+    for (auto& i : mySpan.subspan(1, 2))
     {
-        std::cout << " " << it;
+        cout << i;
     }
-    std::cout << std::endl;
-
-    Myarray c1 = { 4, 5, 6, 7 };
-    c0.swap(c1);
-
-    // display swapped contents " 4 5 6 7"
-    for (const auto& it : c0)
+    cout << "\nmySpan.subspan<1,2>: ";
+    for (auto& i : mySpan.subspan<1, 2>())
     {
-        std::cout << " " << it;
+        cout << i;
     }
-    std::cout << std::endl;
-
-    swap(c0, c1);
-
-    // display swapped contents " 0 1 2 3"
-    for (const auto& it : c0)
+    cout << "\nmySpan.subspan<1>: ";
+    for (auto& i : mySpan.subspan(1))
     {
-        std::cout << " " << it;
+        cout << i;
     }
-    std::cout << std::endl;
-
-    return (0);
 }
 ```
 
 ```Output
-0 1 2 3
-4 5 6 7
-0 1 2 3
-```
-
-## <a name="value_type"></a> array::value_type
-
-The type of an element.
-
-```cpp
-typedef Ty value_type;
-```
-
-### Remarks
-
-The type is a synonym for the template parameter `Ty`.
-
-### Example
-
-```cpp
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-{
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        std::cout << " " << it;
-    }
-    std::cout << std::endl;
-
-    // display contents " 0 1 2 3"
-    for (const auto& it : c0)
-    {
-        Myarray::value_type val = it;
-        std::cout << " " << val;
-    }
-    std::cout << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-0 1 2 3
-0 1 2 3
+mySpan.subspan(1,2): 12
+mySpan.subspan<1,2>: 12
+mySpan.subspan<1>: 12
 ```
 
 ## See also
 
-[\<array>](../standard-library/array.md)
+[\<span>](../standard-library/span.md)
