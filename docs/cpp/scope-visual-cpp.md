@@ -90,7 +90,7 @@ class Account *Checking = new class Account( Account );
 The `Account` in the initializer (in parentheses) in the preceding statement has global scope; it is of type **double**.
 
 > [!NOTE]
-> The reuse of identifier names as shown in this example is considered a poor programming style.
+> The reuse of identifier names as shown in this example is considered poor programming style.
 
 For information about declaration and initialization of class objects, see [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md). For information about using the **new** and **delete** free-store operators, see [new and delete operators](new-and-delete-operators.md).
 
