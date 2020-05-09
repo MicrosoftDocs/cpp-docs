@@ -12,9 +12,9 @@ For automatic non-static variables, scope also determines when they are created 
 
 There are six kinds of scope:
 
-- **Global scope** A global name is one that is declared outside of any class, function or namespace. However, in C++  even these names exist with an implicit global namespace. The scope of global names extends from the point of declaration to the end of the file in which they are declared. For global names, visibility is also governed by the rules of [linkage](program-and-linkage-cpp.md) which determine whether the name is visible in other files in the program.
+- **Global scope** A global name is one that is declared outside of any class, function, or namespace. However, in C++  even these names exist with an implicit global namespace. The scope of global names extends from the point of declaration to the end of the file in which they are declared. For global names, visibility is also governed by the rules of [linkage](program-and-linkage-cpp.md) which determine whether the name is visible in other files in the program.
 
-- **Namespace scope** A name that is declared within a [namespace](namespaces-cpp.md), outside of any class or enum definition or function block, is visible from its point of declaration to the end of namespace. A namespace may be defined in multiple blocks across different files.
+- **Namespace scope** A name that is declared within a [namespace](namespaces-cpp.md), outside of any class or enum definition or function block, is visible from its point of declaration to the end of the namespace. A namespace may be defined in multiple blocks across different files.
 
 - **Local scope** A name declared within a function or lambda, including the parameter names, have local scope. They are often referred to as "locals". They are only visible from their point of declaration to the end of the function or lambda body. Local scope is a kind of block scope, which is discussed later in this article.
 
@@ -72,10 +72,10 @@ int main()
     class Account Checking( Account ); // Qualifies Account as
                                        //  class name
 
-    cout << "Opening account with balance of: "
+    cout << "Opening account with a balance of: "
          << Checking.GetBalance() << "\n";
 }
-//Output: Opening account with balance of: 15.37
+//Output: Opening account with a balance of: 15.37
 ```
 
 > [!NOTE]
@@ -90,7 +90,7 @@ class Account *Checking = new class Account( Account );
 The `Account` in the initializer (in parentheses) in the preceding statement has global scope; it is of type **double**.
 
 > [!NOTE]
-> The reuse of identifier names as shown in this example is considered poor programming style.
+> The reuse of identifier names as shown in this example is considered a poor programming style.
 
 For information about declaration and initialization of class objects, see [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md). For information about using the **new** and **delete** free-store operators, see [new and delete operators](new-and-delete-operators.md).
 
