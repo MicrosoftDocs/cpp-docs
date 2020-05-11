@@ -1,0 +1,73 @@
+- name: Read and write C++ code in Visual Studio
+  expanded: true
+  items: 
+    - name: Read and understand C++ code
+      href: ../ide/read-and-understand-code-cpp.md
+    - name: Edit and refactor C++ code
+      href: ../ide/writing-and-refactoring-code-cpp.md
+    - name: Navigate C++ code
+      href: ../ide/navigate-code-cpp.md
+    - name: Set your C++ coding preferences
+      href: ../ide/how-to-set-preferences.md
+    - name: Collaborate using Live Share for C++
+      href: ../ide/live-share-cpp.md
+    - name: Change signature
+      href: ../ide/refactoring/change-signature.md
+    - name: Convert to raw string literal
+      href: ../ide/refactoring/convert-to-raw-string-literal.md
+    - name: Create declaration / definition
+      href: ../ide/refactoring/create-declaration-definition.md
+    - name: Extract function
+      href: ../ide/refactoring/extract-function.md
+    - name: Implement pure virtuals
+      href: ../ide/refactoring/implement-pure-virtuals.md
+    - name: Move function definition
+      href: ../ide/refactoring/move-definition-location.md
+    - name: Rename
+      href: ../ide/refactoring/rename.md
+- name: Use the Visual Studio IDE for C++ desktop development
+  expanded: true
+  items: 
+    - name: Use the Visual Studio IDE for C++ desktop development
+      href: ../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md
+    - name: "Walkthrough: Work with Projects and Solutions (C++)"
+      href: ../ide/walkthrough-working-with-projects-and-solutions-cpp.md
+    - name: "Walkthrough: Build a Project (C++)"
+      href: ../ide/walkthrough-building-a-project-cpp.md
+    - name: "Walkthrough: Test a Project (C++)"
+      href: ../ide/walkthrough-testing-a-project-cpp.md
+    - name: "Walkthrough: Debug a Project (C++)"
+      href: ../ide/walkthrough-debugging-a-project-cpp.md
+    - name: "Walkthrough: Deploy your program (C++)"
+      href: ../ide/walkthrough-deploying-your-program-cpp.md
+- name: Add functionality with Code Wizards
+  expanded: true
+  items: 
+    - name: Add functionality with Code Wizards
+      href: ../ide/adding-functionality-with-code-wizards-cpp.md
+    - name: Add a class
+      href: ../ide/adding-a-class-visual-cpp.md
+    - name: Add a class from an ActiveX control
+      href: ../ide/adding-a-class-from-an-activex-control-visual-cpp.md
+    - name: Add a generic C++ class
+      href: ../ide/adding-a-generic-cpp-class.md
+    - name: Add a member function
+      href: ../ide/adding-a-member-function-visual-cpp.md
+    - name: Add a member variable
+      href: ../ide/adding-a-member-variable-visual-cpp.md
+    - name: Add a method
+      href: ../ide/adding-a-method-visual-cpp.md
+    - name: Add a property
+      href: ../ide/adding-a-property-visual-cpp.md
+    - name: Add an event
+      href: ../ide/adding-an-event-visual-cpp.md
+    - name: Add an event handler
+      href: ../ide/adding-an-event-handler-visual-cpp.md
+    - name: Create a COM interface
+      href: ../ide/creating-a-com-interface-visual-cpp.md
+    - name: Implement a connection point
+      href: ../ide/implementing-a-connection-point-visual-cpp.md
+    - name: Implement an interface
+      href: ../ide/implementing-an-interface-visual-cpp.md
+    - name: Override a virtual function
+      href: ../ide/overriding-a-virtual-function-visual-cpp.md
