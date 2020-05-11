@@ -1,0 +1,1961 @@
+- name: C Run-time library (CRT) reference
+  href: ../c-runtime-library/c-run-time-library-reference.md
+- name: CRT library features
+  expanded: false
+  items: 
+    - name: CRT library features
+      href: ../c-runtime-library/crt-library-features.md
+    - name: Compatibility
+      expanded: false
+      items: 
+        - name: Compatibility
+          href: ../c-runtime-library/compatibility.md
+        - name: UWP apps, the Windows Runtime, and the C Run-time
+          href: ../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md
+        - name: ANSI C compliance
+          href: ../c-runtime-library/ansi-c-compliance.md
+        - name: UNIX
+          href: ../c-runtime-library/unix.md
+        - name: Windows platforms (CRT)
+          href: ../c-runtime-library/windows-platforms-crt.md
+        - name: Backward compatibility
+          href: ../c-runtime-library/backward-compatibility.md
+    - name: Required and optional header files
+      href: ../c-runtime-library/required-and-optional-header-files.md
+    - name: Files and streams
+      expanded: false
+      items: 
+        - name: Files and streams
+          href: ../c-runtime-library/files-and-streams.md
+        - name: Text and binary streams
+          href: ../c-runtime-library/text-and-binary-streams.md
+        - name: Byte and wide streams
+          href: ../c-runtime-library/byte-and-wide-streams.md
+        - name: Controlling streams
+          href: ../c-runtime-library/controlling-streams.md
+        - name: Stream states
+          href: ../c-runtime-library/stream-states.md
+    - name: Recommendations for choosing between functions and macros
+      href: ../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md
+    - name: Type checking (CRT)
+      href: ../c-runtime-library/type-checking-crt.md
+    - name: Direction flag
+      href: ../c-runtime-library/direction-flag.md
+    - name: Security features in the CRT
+      expanded: false
+      items: 
+        - name: Security features in the CRT
+          href: ../c-runtime-library/security-features-in-the-crt.md
+        - name: Security-enhanced versions of CRT functions
+          href: ../c-runtime-library/security-enhanced-versions-of-crt-functions.md
+        - name: Parameter validation
+          href: ../c-runtime-library/parameter-validation.md
+        - name: Secure template overloads
+          href: ../c-runtime-library/secure-template-overloads.md
+    - name: SAL annotations
+      href: ../c-runtime-library/sal-annotations.md
+    - name: Multithreaded libraries performance
+      href: ../c-runtime-library/multithreaded-libraries-performance.md
+    - name: Link options
+      href: ../c-runtime-library/link-options.md
+    - name: Potential errors passing CRT objects across DLL boundaries
+      href: ../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md
+    - name: CRT initialization
+      href: ../c-runtime-library/crt-initialization.md
+    - name: Global state in the CRT
+      href: ../c-runtime-library/global-state.md 
+- name: Universal C runtime routines by category
+  expanded: false
+  items: 
+    - name: Universal C runtime routines by category
+      href: ../c-runtime-library/run-time-routines-by-category.md
+    - name: Argument access
+      href: ../c-runtime-library/argument-access.md
+    - name: Buffer manipulation
+      href: ../c-runtime-library/buffer-manipulation.md
+    - name: Byte classification
+      href: ../c-runtime-library/byte-classification.md
+    - name: Character classification
+      href: ../c-runtime-library/character-classification.md
+    - name: Complex math support
+      href: ../c-runtime-library/complex-math-support.md
+    - name: Data alignment
+      href: ../c-runtime-library/data-alignment.md
+    - name: Data conversion
+      href: ../c-runtime-library/data-conversion.md
+    - name: Debug routines
+      href: ../c-runtime-library/debug-routines.md
+    - name: Directory control
+      href: ../c-runtime-library/directory-control.md
+    - name: Error handling (CRT)
+      href: ../c-runtime-library/error-handling-crt.md
+    - name: Exception handling routines
+      href: ../c-runtime-library/exception-handling-routines.md
+    - name: File handling
+      href: ../c-runtime-library/file-handling.md
+    - name: Floating-point support
+      href: ../c-runtime-library/floating-point-support.md
+    - name: Input and output
+      expanded: false
+      items: 
+        - name: Input and output
+          href: ../c-runtime-library/input-and-output.md
+        - name: Text and binary mode file I/O
+          href: ../c-runtime-library/text-and-binary-mode-file-i-o.md
+        - name: Unicode stream I/O in text and binary modes
+          href: ../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md
+        - name: Stream I/O
+          href: ../c-runtime-library/stream-i-o.md
+        - name: Low-level I/O
+          href: ../c-runtime-library/low-level-i-o.md
+        - name: Console and port I/O
+          href: ../c-runtime-library/console-and-port-i-o.md
+        - name: _nolock functions
+          href: ../c-runtime-library/nolock-functions.md
+    - name: Internationalization
+      expanded: false
+      items: 
+        - name: Internationalization
+          href: ../c-runtime-library/internationalization.md
+        - name: Locale
+          href: ../c-runtime-library/locale.md
+        - name: Code pages
+          href: ../c-runtime-library/code-pages.md
+        - name: Interpretation of multibyte-character sequences
+          href: ../c-runtime-library/interpretation-of-multibyte-character-sequences.md
+        - name: ISO646 operators
+          href: ../c-runtime-library/iso646-operators.md
+        - name: Single-byte and multibyte character sets
+          href: ../c-runtime-library/single-byte-and-multibyte-character-sets.md
+        - name: SBCS and MBCS data types
+          href: ../c-runtime-library/sbcs-and-mbcs-data-types.md
+        - name: "Unicode: The wide-character set"
+          href: ../c-runtime-library/unicode-the-wide-character-set.md
+        - name: Using generic-text mappings
+          href: ../c-runtime-library/using-generic-text-mappings.md
+        - name: A sample generic-text program
+          href: ../c-runtime-library/a-sample-generic-text-program.md
+        - name: Using TCHAR.H data types with _MBCS
+          href: ../c-runtime-library/using-tchar-h-data-types-with-mbcs.md
+    - name: Memory allocation
+      href: ../c-runtime-library/memory-allocation.md
+    - name: Process and environment control
+      href: ../c-runtime-library/process-and-environment-control.md
+    - name: Robustness
+      href: ../c-runtime-library/robustness.md
+    - name: Run-time error checking
+      href: ../c-runtime-library/run-time-error-checking.md
+    - name: Searching and sorting
+      href: ../c-runtime-library/searching-and-sorting.md
+    - name: String manipulation (CRT)
+      href: ../c-runtime-library/string-manipulation-crt.md
+    - name: System calls
+      href: ../c-runtime-library/system-calls.md
+    - name: Time management
+      href: ../c-runtime-library/time-management.md
+    - name: Windows Runtime unsupported CRT functions
+      href: ../c-runtime-library/windows-runtime-unsupported-crt-functions.md
+    - name: Internal CRT globals and functions
+      expanded: false
+      items: 
+        - name: Internal CRT globals and functions
+          href: ../c-runtime-library/internal-crt-globals-and-functions.md
+        - name: _abnormal_termination
+          href: ../c-runtime-library/abnormal-termination.md
+        - name: _acmdln, _tcmdln, _wcmdln
+          href: ../c-runtime-library/acmdln-tcmdln-wcmdln.md
+        - name: _CIatan
+          href: ../c-runtime-library/ciatan.md
+        - name: _CIatan2
+          href: ../c-runtime-library/ciatan2.md
+        - name: _CIcos
+          href: ../c-runtime-library/cicos.md
+        - name: _CIexp
+          href: ../c-runtime-library/ciexp.md
+        - name: _CIfmod
+          href: ../c-runtime-library/cifmod.md
+        - name: _CIlog
+          href: ../c-runtime-library/cilog.md
+        - name: _CIlog10
+          href: ../c-runtime-library/cilog10.md
+        - name: _CIpow
+          href: ../c-runtime-library/cipow.md
+        - name: _CIsin
+          href: ../c-runtime-library/cisin.md
+        - name: _CIsqrt
+          href: ../c-runtime-library/cisqrt.md
+        - name: _CItan
+          href: ../c-runtime-library/citan.md
+        - name: __crtLCMapStringW
+          href: ../c-runtime-library/crtlcmapstringw.md
+        - name: __CxxFrameHandler
+          href: ../c-runtime-library/cxxframehandler.md
+        - name: __dllonexit
+          href: ../c-runtime-library/dllonexit.md
+        - name: _except_handler3
+          href: ../c-runtime-library/except-handler3.md
+        - name: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function
+          href: ../c-runtime-library/execute-onexit-table-initialize-onexit-table-register-onexit-function.md
+        - name: __getmainargs, __wgetmainargs
+          href: ../c-runtime-library/getmainargs-wgetmainargs.md
+        - name: ___lc_codepage_func
+          href: ../c-runtime-library/lc-codepage-func.md
+        - name: ___lc_collate_cp_func
+          href: ../c-runtime-library/lc-collate-cp-func.md
+        - name: ___lc_locale_name_func
+          href: ../c-runtime-library/lc-locale-name-func.md
+        - name: _local_unwind2
+          href: ../c-runtime-library/local-unwind2.md
+        - name: ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
+          href: ../c-runtime-library/mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md
+        - name: __p__commode
+          href: ../c-runtime-library/p-commode.md
+        - name: __p__fmode
+          href: ../c-runtime-library/p-fmode.md
+        - name: __pctype_func
+          href: ../c-runtime-library/pctype-func.md
+        - name: __RTDynamicCast
+          href: ../c-runtime-library/rtdynamiccast.md
+        - name: __set_app_type
+          href: ../c-runtime-library/internal-set-app-type.md
+        - name: _set_app_type
+          href: ../c-runtime-library/set-app-type.md
+        - name: _setjmp3
+          href: ../c-runtime-library/setjmp3.md
+        - name: ___setlc_active_func, ___unguarded_readlc_active_add_func
+          href: ../c-runtime-library/setlc-active-func-unguarded-readlc-active-add-func.md
+        - name: __setusermatherr
+          href: ../c-runtime-library/setusermatherr.md
+- name: Global variables and standard types
+  expanded: false
+  items: 
+    - name: Global variables and standard types
+      href: ../c-runtime-library/global-variables-and-standard-types.md
+    - name: Global variables
+      expanded: false
+      items: 
+        - name: Global variables
+          href: ../c-runtime-library/global-variables.md
+        - name: __argc, __argv, __wargv
+          href: ../c-runtime-library/argc-argv-wargv.md
+        - name: _daylight, _dstbias, _timezone, and _tzname
+          href: ../c-runtime-library/daylight-dstbias-timezone-and-tzname.md
+        - name: errno, _doserrno, _sys_errlist, and _sys_nerr
+          href: ../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md
+        - name: _environ, _wenviron
+          href: ../c-runtime-library/environ-wenviron.md
+        - name: _fmode
+          href: ../c-runtime-library/fmode.md
+        - name: _iob
+          href: ../c-runtime-library/iob.md
+        - name: _pctype, _pwctype, _wctype, _mbctype, _mbcasemap
+          href: ../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md
+        - name: _pgmptr, _wpgmptr
+          href: ../c-runtime-library/pgmptr-wpgmptr.md
+    - name: Control flags
+      expanded: false
+      items: 
+        - name: Control flags
+          href: ../c-runtime-library/control-flags.md
+        - name: _CRTDBG_MAP_ALLOC
+          href: ../c-runtime-library/crtdbg-map-alloc.md
+        - name: _DEBUG
+          href: ../c-runtime-library/debug.md
+        - name: _crtDbgFlag
+          href: ../c-runtime-library/crtdbgflag.md
+    - name: Standard types
+      href: ../c-runtime-library/standard-types.md
+- name: Global constants
+  expanded: false
+  items: 
+    - name: Global constants
+      href: ../c-runtime-library/global-constants.md
+    - name: 32-bit Windows time-date formats
+      href: ../c-runtime-library/32-bit-windows-time-date-formats.md
+    - name: BUFSIZ
+      href: ../c-runtime-library/bufsiz.md
+    - name: CLOCKS_PER_SEC, CLK_TCK
+      href: ../c-runtime-library/clocks-per-sec-clk-tck.md
+    - name: Commit-to-disk constants
+      href: ../c-runtime-library/commit-to-disk-constants.md
+    - name: _CRT_DISABLE_PERFCRIT_LOCKS
+      href: ../c-runtime-library/crt-disable-perfcrit-locks.md
+    - name: Data type constants
+      href: ../c-runtime-library/data-type-constants.md
+    - name: Environmental constants
+      href: ../c-runtime-library/environmental-constants.md
+    - name: EOF, WEOF
+      href: ../c-runtime-library/eof-weof.md
+    - name: errno constants
+      href: ../c-runtime-library/errno-constants.md
+    - name: Exception-handling constants
+      href: ../c-runtime-library/exception-handling-constants.md
+    - name: EXIT_SUCCESS, EXIT_FAILURE
+      href: ../c-runtime-library/exit-success-exit-failure.md
+    - name: File attribute constants
+      href: ../c-runtime-library/file-attribute-constants.md
+    - name: File constants
+      href: ../c-runtime-library/file-constants.md
+    - name: File permission constants
+      href: ../c-runtime-library/file-permission-constants.md
+    - name: File read-write access constants
+      href: ../c-runtime-library/file-read-write-access-constants.md
+    - name: File translation constants
+      href: ../c-runtime-library/file-translation-constants.md
+    - name: FILENAME_MAX
+      href: ../c-runtime-library/filename-max.md
+    - name: FOPEN_MAX, _SYS_OPEN
+      href: ../c-runtime-library/fopen-max-sys-open.md
+    - name: _FREEENTRY, _USEDENTRY
+      href: ../c-runtime-library/freeentry-usedentry.md
+    - name: fseek, _lseek constants
+      href: ../c-runtime-library/fseek-lseek-constants.md
+    - name: Heap constants
+      href: ../c-runtime-library/heap-constants.md
+    - name: _HEAP_MAXREQ
+      href: ../c-runtime-library/heap-maxreq.md
+    - name: HUGE_VAL, _HUGE
+      href: ../c-runtime-library/huge-val-huge.md
+    - name: Locale categories
+      href: ../c-runtime-library/locale-categories.md
+    - name: _locking constants
+      href: ../c-runtime-library/locking-constants.md
+    - name: Math constants
+      href: ../c-runtime-library/math-constants.md
+    - name: Math error constants
+      href: ../c-runtime-library/math-error-constants.md
+    - name: _MAX_ENV
+      href: ../c-runtime-library/max-env.md
+    - name: MB_CUR_MAX
+      href: ../c-runtime-library/mb-cur-max.md
+    - name: NULL (CRT)
+      href: ../c-runtime-library/null-crt.md
+    - name: Path field limits
+      href: ../c-runtime-library/path-field-limits.md
+    - name: RAND_MAX
+      href: ../c-runtime-library/rand-max.md
+    - name: setvbuf constants
+      href: ../c-runtime-library/setvbuf-constants.md
+    - name: Sharing constants
+      href: ../c-runtime-library/sharing-constants.md
+    - name: signal constants
+      href: ../c-runtime-library/signal-constants.md
+    - name: signal action constants
+      href: ../c-runtime-library/signal-action-constants.md
+    - name: spawn constants
+      href: ../c-runtime-library/spawn-constants.md
+    - name: _stat structure st_mode field constants
+      href: ../c-runtime-library/stat-structure-st-mode-field-constants.md
+    - name: stdin, stdout, stderr
+      href: ../c-runtime-library/stdin-stdout-stderr.md
+    - name: TMP_MAX, L_tmpnam
+      href: ../c-runtime-library/tmp-max-l-tmpnam.md
+    - name: Translation mode constants
+      href: ../c-runtime-library/translation-mode-constants.md
+    - name: _TRUNCATE
+      href: ../c-runtime-library/truncate.md
+    - name: TZNAME_MAX
+      href: ../c-runtime-library/tzname-max.md
+    - name: _WAIT_CHILD, _WAIT_GRANDCHILD
+      href: ../c-runtime-library/wait-child-wait-grandchild.md
+    - name: WCHAR_MAX
+      href: ../c-runtime-library/wchar-max.md
+    - name: WCHAR_MIN
+      href: ../c-runtime-library/wchar-min.md
+- name: Generic-text mappings
+  expanded: false
+  items: 
+    - name: Generic-text mappings
+      href: ../c-runtime-library/generic-text-mappings.md
+    - name: Data type mappings
+      href: ../c-runtime-library/data-type-mappings.md
+    - name: Constant and global variable mappings
+      href: ../c-runtime-library/constant-and-global-variable-mappings.md
+    - name: Routine mappings
+      href: ../c-runtime-library/routine-mappings.md
+- name: Locale names, languages, and country-region strings
+  expanded: false
+  items: 
+    - name: Locale names, languages, and country-region strings
+      href: ../c-runtime-library/locale-names-languages-and-country-region-strings.md
+    - name: Language strings
+      href: ../c-runtime-library/language-strings.md
+    - name: Country-region strings
+      href: ../c-runtime-library/country-region-strings.md
+- name: Function family overviews
+  expanded: false
+  items: 
+    - name: Function family overviews
+      href: ../c-runtime-library/function-family-overviews.md
+    - name: _exec, _wexec functions
+      href: ../c-runtime-library/exec-wexec-functions.md
+    - name: Filename search functions
+      href: ../c-runtime-library/filename-search-functions.md
+    - name: "Format specification syntax: printf and wprintf functions"
+      href: ../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md
+    - name: "Format specification fields: scanf and wscanf functions"
+      href: ../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md
+    - name: is, isw routines
+      href: ../c-runtime-library/is-isw-routines.md
+    - name: _ismbb routines
+      href: ../c-runtime-library/ismbb-routines.md
+    - name: _ismbc routines
+      href: ../c-runtime-library/ismbc-routines.md
+    - name: operator new(CRT)
+      href: ../c-runtime-library/new-operator-crt.md
+    - name: operator new (CRT)
+      href: ../c-runtime-library/operator-new-crt.md
+    - name: operator delete(CRT)
+      href: ../c-runtime-library/delete-operator-crt.md
+    - name: operator delete (CRT)
+      href: ../c-runtime-library/operator-delete-crt.md
+    - name: printf_p positional parameters
+      href: ../c-runtime-library/printf-p-positional-parameters.md
+    - name: scanf type field characters
+      href: ../c-runtime-library/scanf-type-field-characters.md
+    - name: scanf width specification
+      href: ../c-runtime-library/scanf-width-specification.md
+    - name: _spawn, _wspawn functions
+      href: ../c-runtime-library/spawn-wspawn-functions.md
+    - name: strcoll functions
+      href: ../c-runtime-library/strcoll-functions.md
+    - name: String to numeric value functions
+      href: ../c-runtime-library/string-to-numeric-value-functions.md
+    - name: to functions
+      href: ../c-runtime-library/to-functions.md
+    - name: vprintf functions
+      href: ../c-runtime-library/vprintf-functions.md
+- name: Obsolete functions
+  expanded: false
+  items: 
+    - name: Obsolete functions
+      href: ../c-runtime-library/obsolete-functions.md
+    - name: _cgets, _cgetws
+      href: ../c-runtime-library/cgets-cgetws.md
+    - name: _get_output_format
+      href: ../c-runtime-library/get-output-format.md
+    - name: gets, _getws
+      href: ../c-runtime-library/gets-getws.md
+    - name: _heapadd
+      href: ../c-runtime-library/heapadd.md
+    - name: _heapset
+      href: ../c-runtime-library/heapset.md
+    - name: inp, inpw
+      href: ../c-runtime-library/inp-inpw.md
+    - name: _inp, _inpw, _inpd
+      href: ../c-runtime-library/inp-inpw-inpd.md
+    - name: _lock
+      href: ../c-runtime-library/lock.md
+    - name: outp, outpw
+      href: ../c-runtime-library/outp-outpw.md
+    - name: _outp, _outpw, _outpd
+      href: ../c-runtime-library/outp-outpw-outpd.md
+    - name: _set_output_format
+      href: ../c-runtime-library/set-output-format.md
+    - name: _unlock
+      href: ../c-runtime-library/unlock.md
+- name: CRT alphabetical function reference
+  expanded: false
+  items: 
+    - name: CRT alphabetical function reference
+      href: ../c-runtime-library/reference/crt-alphabetical-function-reference.md
+    - name: abort
+      href: ../c-runtime-library/reference/abort.md
+    - name: abs, labs, llabs, _abs64
+      href: ../c-runtime-library/reference/abs-labs-llabs-abs64.md
+    - name: access (CRT)
+      href: ../c-runtime-library/reference/access-crt.md
+    - name: _access, _waccess
+      href: ../c-runtime-library/reference/access-waccess.md
+    - name: _access_s, _waccess_s
+      href: ../c-runtime-library/reference/access-s-waccess-s.md
+    - name: acos, acosf, acosl
+      href: ../c-runtime-library/reference/acos-acosf-acosl.md
+    - name: acosh, acoshf, acoshl
+      href: ../c-runtime-library/reference/acosh-acoshf-acoshl.md
+    - name: _aligned_free
+      href: ../c-runtime-library/reference/aligned-free.md
+    - name: _aligned_free_dbg
+      href: ../c-runtime-library/reference/aligned-free-dbg.md
+    - name: _aligned_malloc
+      href: ../c-runtime-library/reference/aligned-malloc.md
+    - name: _aligned_malloc_dbg
+      href: ../c-runtime-library/reference/aligned-malloc-dbg.md
+    - name: _aligned_msize
+      href: ../c-runtime-library/reference/aligned-msize.md
+    - name: _aligned_msize_dbg
+      href: ../c-runtime-library/reference/aligned-msize-dbg.md
+    - name: _aligned_offset_malloc
+      href: ../c-runtime-library/reference/aligned-offset-malloc.md
+    - name: _aligned_offset_malloc_dbg
+      href: ../c-runtime-library/reference/aligned-offset-malloc-dbg.md
+    - name: _aligned_offset_realloc
+      href: ../c-runtime-library/reference/aligned-offset-realloc.md
+    - name: _aligned_offset_realloc_dbg
+      href: ../c-runtime-library/reference/aligned-offset-realloc-dbg.md
+    - name: _aligned_offset_recalloc
+      href: ../c-runtime-library/reference/aligned-offset-recalloc.md
+    - name: _aligned_offset_recalloc_dbg
+      href: ../c-runtime-library/reference/aligned-offset-recalloc-dbg.md
+    - name: _aligned_realloc
+      href: ../c-runtime-library/reference/aligned-realloc.md
+    - name: _aligned_realloc_dbg
+      href: ../c-runtime-library/reference/aligned-realloc-dbg.md
+    - name: _aligned_recalloc
+      href: ../c-runtime-library/reference/aligned-recalloc.md
+    - name: _aligned_recalloc_dbg
+      href: ../c-runtime-library/reference/aligned-recalloc-dbg.md
+    - name: _alloca
+      href: ../c-runtime-library/reference/alloca.md
+    - name: _amsg_exit
+      href: ../c-runtime-library/reference/amsg-exit.md
+    - name: and
+      href: ../c-runtime-library/reference/and.md
+    - name: and_eq
+      href: ../c-runtime-library/reference/and-eq.md
+    - name: asctime, _wasctime
+      href: ../c-runtime-library/reference/asctime-wasctime.md
+    - name: asctime_s, _wasctime_s
+      href: ../c-runtime-library/reference/asctime-s-wasctime-s.md
+    - name: asin, asinf, asinl
+      href: ../c-runtime-library/reference/asin-asinf-asinl.md
+    - name: asinh, asinhf, asinhl
+      href: ../c-runtime-library/reference/asinh-asinhf-asinhl.md
+    - name: assert macro, _assert, _wassert
+      href: ../c-runtime-library/reference/assert-macro-assert-wassert.md
+    - name: _ASSERT, _ASSERTE, _ASSERT_EXPR macros
+      href: ../c-runtime-library/reference/assert-asserte-assert-expr-macros.md
+    - name: atan, atanf, atanl, atan2, atan2f, atan2l
+      href: ../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md
+    - name: atanh, atanhf, atanhl
+      href: ../c-runtime-library/reference/atanh-atanhf-atanhl.md
+    - name: atexit
+      href: ../c-runtime-library/reference/atexit.md
+    - name: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
+      href: ../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md
+    - name: atof, _atof_l, _wtof, _wtof_l
+      href: ../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md
+    - name: atoi, _atoi_l, _wtoi, _wtoi_l
+      href: ../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md
+    - name: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
+      href: ../c-runtime-library/reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md
+    - name: atol, _atol_l, _wtol, _wtol_l
+      href: ../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md
+    - name: atoll, _atoll_l, _wtoll, _wtoll_l
+      href: ../c-runtime-library/reference/atoll-atoll-l-wtoll-wtoll-l.md
+    - name: _beginthread, _beginthreadex
+      href: ../c-runtime-library/reference/beginthread-beginthreadex.md
+    - name: "Bessel functions: _j0, _j1, _jn, _y0, _y1, _yn"
+      href: ../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md
+    - name: bitand
+      href: ../c-runtime-library/reference/bitand.md
+    - name: bitor
+      href: ../c-runtime-library/reference/bitor.md
+    - name: bsearch
+      href: ../c-runtime-library/reference/bsearch.md
+    - name: bsearch_s
+      href: ../c-runtime-library/reference/bsearch-s.md
+    - name: btowc
+      href: ../c-runtime-library/reference/btowc.md
+    - name: _byteswap_uint64, _byteswap_ulong, _byteswap_ushort
+      href: ../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md
+    - name: c16rtomb, c32rtomb
+      href: ../c-runtime-library/reference/c16rtomb-c32rtomb1.md
+    - name: cabs, cabsf, cabsl
+      href: ../c-runtime-library/reference/cabs-cabsf-cabsl.md
+    - name: _cabs
+      href: ../c-runtime-library/reference/cabs.md
+    - name: cacos, cacosf, cacosl
+      href: ../c-runtime-library/reference/cacos-cacosf-cacosl.md
+    - name: cacosh, cacoshf, cacoshl
+      href: ../c-runtime-library/reference/cacosh-cacoshf-cacoshl.md
+    - name: _callnewh
+      href: ../c-runtime-library/reference/callnewh.md
+    - name: calloc
+      href: ../c-runtime-library/reference/calloc.md
+    - name: _calloc_dbg
+      href: ../c-runtime-library/reference/calloc-dbg.md
+    - name: carg, cargf, cargl
+      href: ../c-runtime-library/reference/carg-cargf-cargl.md
+    - name: casin, casinf, casinl
+      href: ../c-runtime-library/reference/casin-casinf-casinl.md
+    - name: casinh, casinhf, casinhl
+      href: ../c-runtime-library/reference/casinh-casinhf-casinhl.md
+    - name: catan, catanf, catanl
+      href: ../c-runtime-library/reference/catan-catanf-catanl.md
+    - name: catanh, catanhf, catanhl
+      href: ../c-runtime-library/reference/catanh-catanhf-catanhl.md
+    - name: cbrt, cbrtf, cbrtl
+      href: ../c-runtime-library/reference/cbrt-cbrtf-cbrtl.md
+    - name: _Cbuild, _FCbuild, _LCbuild
+      href: ../c-runtime-library/reference/cbuild-fcbuild-lcbuild.md
+    - name: ccos, ccosf, ccosl
+      href: ../c-runtime-library/reference/ccos-ccosf-ccosl.md
+    - name: ccosh, ccoshf, ccoshl
+      href: ../c-runtime-library/reference/ccosh-ccoshf-ccoshl.md
+    - name: ceil, ceilf, ceill
+      href: ../c-runtime-library/reference/ceil-ceilf-ceill.md
+    - name: _cexit, _c_exit
+      href: ../c-runtime-library/reference/cexit-c-exit.md
+    - name: cexp, cexpf, cexpl
+      href: ../c-runtime-library/reference/cexp-cexpf-cexpl.md
+    - name: cgets
+      href: ../c-runtime-library/reference/cgets.md
+    - name: _cgets_s, _cgetws_s
+      href: ../c-runtime-library/reference/cgets-s-cgetws-s.md
+    - name: chdir
+      href: ../c-runtime-library/reference/chdir.md
+    - name: _chdir, _wchdir
+      href: ../c-runtime-library/reference/chdir-wchdir.md
+    - name: _chdrive
+      href: ../c-runtime-library/reference/chdrive.md
+    - name: _chgsign, _chgsignf, _chgsignl
+      href: ../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md
+    - name: chmod
+      href: ../c-runtime-library/reference/chmod.md
+    - name: _chmod, _wchmod
+      href: ../c-runtime-library/reference/chmod-wchmod.md
+    - name: chsize
+      href: ../c-runtime-library/reference/posix-chsize.md
+    - name: _chsize
+      href: ../c-runtime-library/reference/chsize.md
+    - name: _chsize_s
+      href: ../c-runtime-library/reference/chsize-s.md
+    - name: cimag, cimagf, cimagl
+      href: ../c-runtime-library/reference/cimag-cimagf-cimagl.md
+    - name: _clear87, _clearfp
+      href: ../c-runtime-library/reference/clear87-clearfp.md
+    - name: clearerr
+      href: ../c-runtime-library/reference/clearerr.md
+    - name: clearerr_s
+      href: ../c-runtime-library/reference/clearerr-s.md
+    - name: clock
+      href: ../c-runtime-library/reference/clock.md
+    - name: clog, clogf, clogl
+      href: ../c-runtime-library/reference/clog-clogf-clogl.md
+    - name: clog10, clog10f, clog10l
+      href: ../c-runtime-library/reference/clog10-clog10f-clog10l.md
+    - name: _close
+      href: ../c-runtime-library/reference/close.md
+    - name: close
+      href: ../c-runtime-library/reference/posix-close.md
+    - name: _Cmulcc, _FCmulcc, _LCmulcc
+      href: ../c-runtime-library/reference/cmulcc-fcmulcc-lcmulcc.md
+    - name: _Cmulcr, _FCmulcr, _LCmulcr
+      href: ../c-runtime-library/reference/cmulcr-fcmulcr-lcmulcr.md
+    - name: _commit
+      href: ../c-runtime-library/reference/commit.md
+    - name: compl
+      href: ../c-runtime-library/reference/compl.md
+    - name: _configthreadlocale
+      href: ../c-runtime-library/reference/configthreadlocale.md
+    - name: conj, conjf, conjl
+      href: ../c-runtime-library/reference/conj-conjf-conjl.md
+    - name: _control87, _controlfp, __control87_2
+      href: ../c-runtime-library/reference/control87-controlfp-control87-2.md
+    - name: _controlfp_s
+      href: ../c-runtime-library/reference/controlfp-s.md
+    - name: copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
+      href: ../c-runtime-library/reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md
+    - name: cos, cosf, cosl
+      href: ../c-runtime-library/reference/cos-cosf-cosl.md
+    - name: cosh, coshf, coshl
+      href: ../c-runtime-library/reference/cosh-coshf-coshl.md
+    - name: _countof macro
+      href: ../c-runtime-library/reference/countof-macro.md
+    - name: cpow, cpowf, cpowl
+      href: ../c-runtime-library/reference/cpow-cpowf-cpowl.md
+    - name: cprintf
+      href: ../c-runtime-library/reference/cprintf.md
+    - name: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
+      href: ../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md
+    - name: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
+      href: ../c-runtime-library/reference/cprintf-p-cprintf-p-l-cwprintf-p-cwprintf-p-l.md
+    - name: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
+      href: ../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md
+    - name: cproj, cprojf, cprojl
+      href: ../c-runtime-library/reference/cproj-cprojf-cprojl.md
+    - name: cputs
+      href: ../c-runtime-library/reference/cputs.md
+    - name: _cputs, _cputws
+      href: ../c-runtime-library/reference/cputs-cputws.md
+    - name: creal, crealf, creall
+      href: ../c-runtime-library/reference/creal-crealf-creall.md
+    - name: creat
+      href: ../c-runtime-library/reference/creat.md
+    - name: _creat, _wcreat
+      href: ../c-runtime-library/reference/creat-wcreat.md
+    - name: _create_locale, _wcreate_locale
+      href: ../c-runtime-library/reference/create-locale-wcreate-locale.md
+    - name: _CrtCheckMemory
+      href: ../c-runtime-library/reference/crtcheckmemory.md
+    - name: _CrtDbgBreak
+      href: ../c-runtime-library/reference/crtdbgbreak.md
+    - name: _CrtDbgReport, _CrtDbgReportW
+      href: ../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md
+    - name: _CrtDoForAllClientObjects
+      href: ../c-runtime-library/reference/crtdoforallclientobjects.md
+    - name: _CrtDumpMemoryLeaks
+      href: ../c-runtime-library/reference/crtdumpmemoryleaks.md
+    - name: _CrtGetAllocHook
+      href: ../c-runtime-library/reference/crtgetallochook.md
+    - name: _CrtGetDumpClient
+      href: ../c-runtime-library/reference/crtgetdumpclient.md
+    - name: _CrtGetReportHook
+      href: ../c-runtime-library/reference/crtgetreporthook.md
+    - name: _CrtIsMemoryBlock
+      href: ../c-runtime-library/reference/crtismemoryblock.md
+    - name: _CrtIsValidHeapPointer
+      href: ../c-runtime-library/reference/crtisvalidheappointer.md
+    - name: _CrtIsValidPointer
+      href: ../c-runtime-library/reference/crtisvalidpointer.md
+    - name: _CrtMemCheckpoint
+      href: ../c-runtime-library/reference/crtmemcheckpoint.md
+    - name: _CrtMemDifference
+      href: ../c-runtime-library/reference/crtmemdifference.md
+    - name: _CrtMemDumpAllObjectsSince
+      href: ../c-runtime-library/reference/crtmemdumpallobjectssince.md
+    - name: _CrtMemDumpStatistics
+      href: ../c-runtime-library/reference/crtmemdumpstatistics.md
+    - name: _CrtReportBlockType
+      href: ../c-runtime-library/reference/crtreportblocktype.md
+    - name: _CrtSetAllocHook
+      href: ../c-runtime-library/reference/crtsetallochook.md
+    - name: _CrtSetBreakAlloc
+      href: ../c-runtime-library/reference/crtsetbreakalloc.md
+    - name: _CrtSetDbgFlag
+      href: ../c-runtime-library/reference/crtsetdbgflag.md
+    - name: _CrtSetDebugFillThreshold
+      href: ../c-runtime-library/reference/crtsetdebugfillthreshold.md
+    - name: _CrtSetDumpClient
+      href: ../c-runtime-library/reference/crtsetdumpclient.md
+    - name: _CrtSetReportFile
+      href: ../c-runtime-library/reference/crtsetreportfile.md
+    - name: _CrtSetReportHook
+      href: ../c-runtime-library/reference/crtsetreporthook.md
+    - name: _CrtSetReportHook2, _CrtSetReportHookW2
+      href: ../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md
+    - name: _CrtSetReportMode
+      href: ../c-runtime-library/reference/crtsetreportmode.md
+    - name: cscanf
+      href: ../c-runtime-library/reference/cscanf.md
+    - name: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
+      href: ../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md
+    - name: _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
+      href: ../c-runtime-library/reference/cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md
+    - name: csin, csinf, csinl
+      href: ../c-runtime-library/reference/csin-csinf-csinl.md
+    - name: csinh, csinhf, csinhl
+      href: ../c-runtime-library/reference/csinh-csinhf-csinhl.md
+    - name: csqrt, csqrtf, csqrtl
+      href: ../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md
+    - name: ctan, ctanf, ctanl
+      href: ../c-runtime-library/reference/ctan-ctanf-ctanl.md
+    - name: ctanh, ctanhf, ctanhl
+      href: ../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md
+    - name: ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
+      href: ../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md
+    - name: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
+      href: ../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md
+    - name: cwait
+      href: ../c-runtime-library/reference/posix-cwait.md
+    - name: _cwait
+      href: ../c-runtime-library/reference/cwait.md
+    - name: _CxxThrowException
+      href: ../c-runtime-library/reference/cxxthrowexception.md
+    - name: difftime, _difftime32, _difftime64
+      href: ../c-runtime-library/reference/difftime-difftime32-difftime64.md
+    - name: div
+      href: ../c-runtime-library/reference/div.md
+    - name: dup, dup2
+      href: ../c-runtime-library/reference/posix-dup-dup2.md
+    - name: _dup, _dup2
+      href: ../c-runtime-library/reference/dup-dup2.md
+    - name: _dupenv_s, _wdupenv_s
+      href: ../c-runtime-library/reference/dupenv-s-wdupenv-s.md
+    - name: _dupenv_s_dbg, _wdupenv_s_dbg
+      href: ../c-runtime-library/reference/dupenv-s-dbg-wdupenv-s-dbg.md
+    - name: ecvt
+      href: ../c-runtime-library/reference/posix-ecvt.md
+    - name: _ecvt
+      href: ../c-runtime-library/reference/ecvt.md
+    - name: _ecvt_s
+      href: ../c-runtime-library/reference/ecvt-s.md
+    - name: _endthread, _endthreadex
+      href: ../c-runtime-library/reference/endthread-endthreadex.md
+    - name: eof
+      href: ../c-runtime-library/reference/posix-eof.md
+    - name: _eof
+      href: ../c-runtime-library/reference/eof.md
+    - name: erf, erff, erfl, erfc, erfcf, erfcl
+      href: ../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md
+    - name: execl
+      href: ../c-runtime-library/reference/execl.md
+    - name: _execl, _wexecl
+      href: ../c-runtime-library/reference/execl-wexecl.md
+    - name: execle
+      href: ../c-runtime-library/reference/execle.md
+    - name: _execle, _wexecle
+      href: ../c-runtime-library/reference/execle-wexecle.md
+    - name: execlp
+      href: ../c-runtime-library/reference/execlp.md
+    - name: _execlp, _wexeclp
+      href: ../c-runtime-library/reference/execlp-wexeclp.md
+    - name: execlpe
+      href: ../c-runtime-library/reference/execlpe.md
+    - name: _execlpe, _wexeclpe
+      href: ../c-runtime-library/reference/execlpe-wexeclpe.md
+    - name: execv
+      href: ../c-runtime-library/reference/execv.md
+    - name: _execv, _wexecv
+      href: ../c-runtime-library/reference/execv-wexecv.md
+    - name: execve
+      href: ../c-runtime-library/reference/execve.md
+    - name: _execve, _wexecve
+      href: ../c-runtime-library/reference/execve-wexecve.md
+    - name: execvp
+      href: ../c-runtime-library/reference/execvp.md
+    - name: _execvp, _wexecvp
+      href: ../c-runtime-library/reference/execvp-wexecvp.md
+    - name: execvpe
+      href: ../c-runtime-library/reference/execvpe.md
+    - name: _execvpe, _wexecvpe
+      href: ../c-runtime-library/reference/execvpe-wexecvpe.md
+    - name: exit, _Exit, _exit
+      href: ../c-runtime-library/reference/exit-exit-exit.md
+    - name: exp, expf, expl
+      href: ../c-runtime-library/reference/exp-expf.md
+    - name: exp2, exp2f, exp2l
+      href: ../c-runtime-library/reference/exp2-exp2f-exp2l.md
+    - name: _expand
+      href: ../c-runtime-library/reference/expand.md
+    - name: _expand_dbg
+      href: ../c-runtime-library/reference/expand-dbg.md
+    - name: expm1, expm1f, expm1l
+      href: ../c-runtime-library/reference/expm1-expm1f-expm1l.md
+    - name: fabs, fabsf, fabsl
+      href: ../c-runtime-library/reference/fabs-fabsf-fabsl.md
+    - name: fclose, _fcloseall
+      href: ../c-runtime-library/reference/fclose-fcloseall.md
+    - name: _fclose_nolock
+      href: ../c-runtime-library/reference/fclose-nolock.md
+    - name: fcloseall
+      href: ../c-runtime-library/reference/fcloseall.md
+    - name: fcvt
+      href: ../c-runtime-library/reference/posix-fcvt.md
+    - name: _fcvt
+      href: ../c-runtime-library/reference/fcvt.md
+    - name: _fcvt_s
+      href: ../c-runtime-library/reference/fcvt-s.md
+    - name: fdim, fdimf, fdiml
+      href: ../c-runtime-library/reference/fdim-fdimf-fdiml.md
+    - name: fdopen
+      href: ../c-runtime-library/reference/fdopen.md
+    - name: _fdopen, _wfdopen
+      href: ../c-runtime-library/reference/fdopen-wfdopen.md
+    - name: feclearexcept
+      href: ../c-runtime-library/reference/feclearexcept1.md
+    - name: fegetenv
+      href: ../c-runtime-library/reference/fegetenv1.md
+    - name: fegetexceptflag
+      href: ../c-runtime-library/reference/fegetexceptflag2.md
+    - name: fegetround, fesetround
+      href: ../c-runtime-library/reference/fegetround-fesetround2.md
+    - name: feholdexcept
+      href: ../c-runtime-library/reference/feholdexcept2.md
+    - name: feof
+      href: ../c-runtime-library/reference/feof.md
+    - name: feraiseexcept
+      href: ../c-runtime-library/reference/feraiseexcept.md
+    - name: ferror
+      href: ../c-runtime-library/reference/ferror.md
+    - name: fesetenv
+      href: ../c-runtime-library/reference/fesetenv1.md
+    - name: fesetexceptflag
+      href: ../c-runtime-library/reference/fesetexceptflag2.md
+    - name: fetestexcept
+      href: ../c-runtime-library/reference/fetestexcept1.md
+    - name: feupdateenv
+      href: ../c-runtime-library/reference/feupdateenv.md
+    - name: fflush
+      href: ../c-runtime-library/reference/fflush.md
+    - name: _fflush_nolock
+      href: ../c-runtime-library/reference/fflush-nolock.md
+    - name: fgetc, fgetwc
+      href: ../c-runtime-library/reference/fgetc-fgetwc.md
+    - name: _fgetc_nolock, _fgetwc_nolock
+      href: ../c-runtime-library/reference/fgetc-nolock-fgetwc-nolock.md
+    - name: fgetchar
+      href: ../c-runtime-library/reference/fgetchar.md
+    - name: _fgetchar, _fgetwchar
+      href: ../c-runtime-library/reference/fgetchar-fgetwchar.md
+    - name: fgetpos
+      href: ../c-runtime-library/reference/fgetpos.md
+    - name: fgets, fgetws
+      href: ../c-runtime-library/reference/fgets-fgetws.md
+    - name: filelength
+      href: ../c-runtime-library/reference/filelength.md
+    - name: _filelength, _filelengthi64
+      href: ../c-runtime-library/reference/filelength-filelengthi64.md
+    - name: fileno
+      href: ../c-runtime-library/reference/posix-fileno.md
+    - name: _fileno
+      href: ../c-runtime-library/reference/fileno.md
+    - name: _findclose
+      href: ../c-runtime-library/reference/findclose.md
+    - name: _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
+      href: ../c-runtime-library/reference/findfirst-functions.md
+    - name: _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
+      href: ../c-runtime-library/reference/findnext-functions.md
+    - name: Floating-point primitives
+      href: ../c-runtime-library/reference/floating-point-primitives.md
+    - name: floor, floorf, floorl
+      href: ../c-runtime-library/reference/floor-floorf-floorl.md
+    - name: flushall
+      href: ../c-runtime-library/reference/posix-flushall.md
+    - name: _flushall
+      href: ../c-runtime-library/reference/flushall.md
+    - name: fma, fmaf, fmal
+      href: ../c-runtime-library/reference/fma-fmaf-fmal.md
+    - name: fmax, fmaxf, fmaxl
+      href: ../c-runtime-library/reference/fmax-fmaxf-fmaxl.md
+    - name: fmin, fminf, fminl
+      href: ../c-runtime-library/reference/fmin-fminf-fminl.md
+    - name: fmod, fmodf
+      href: ../c-runtime-library/reference/fmod-fmodf.md
+    - name: fopen, _wfopen
+      href: ../c-runtime-library/reference/fopen-wfopen.md
+    - name: fopen_s, _wfopen_s
+      href: ../c-runtime-library/reference/fopen-s-wfopen-s.md
+    - name: _fpclass, _fpclassf
+      href: ../c-runtime-library/reference/fpclass-fpclassf.md
+    - name: fpclassify
+      href: ../c-runtime-library/reference/fpclassify.md
+    - name: _fpieee_flt
+      href: ../c-runtime-library/reference/fpieee-flt.md
+    - name: _fpreset
+      href: ../c-runtime-library/reference/fpreset.md
+    - name: fprintf, _fprintf_l, fwprintf, _fwprintf_l
+      href: ../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md
+    - name: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
+      href: ../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md
+    - name: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
+      href: ../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md
+    - name: fputc, fputwc
+      href: ../c-runtime-library/reference/fputc-fputwc.md
+    - name: _fputc_nolock, _fputwc_nolock
+      href: ../c-runtime-library/reference/fputc-nolock-fputwc-nolock.md
+    - name: fputchar
+      href: ../c-runtime-library/reference/fputchar.md
+    - name: _fputchar, _fputwchar
+      href: ../c-runtime-library/reference/fputchar-fputwchar.md
+    - name: fputs, fputws
+      href: ../c-runtime-library/reference/fputs-fputws.md
+    - name: fread
+      href: ../c-runtime-library/reference/fread.md
+    - name: fread_s
+      href: ../c-runtime-library/reference/fread-s.md
+    - name: _fread_nolock
+      href: ../c-runtime-library/reference/fread-nolock.md
+    - name: _fread_nolock_s2
+      href: ../c-runtime-library/reference/fread-nolock-s2.md
+    - name: free
+      href: ../c-runtime-library/reference/free.md
+    - name: _free_dbg
+      href: ../c-runtime-library/reference/free-dbg.md
+    - name: _free_locale
+      href: ../c-runtime-library/reference/free-locale.md
+    - name: _freea
+      href: ../c-runtime-library/reference/freea.md
+    - name: freopen, _wfreopen
+      href: ../c-runtime-library/reference/freopen-wfreopen.md
+    - name: freopen_s, _wfreopen_s
+      href: ../c-runtime-library/reference/freopen-s-wfreopen-s.md
+    - name: frexp
+      href: ../c-runtime-library/reference/frexp.md
+    - name: fscanf, _fscanf_l, fwscanf, _fwscanf_l
+      href: ../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md
+    - name: fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l
+      href: ../c-runtime-library/reference/fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md
+    - name: fseek, _fseeki64
+      href: ../c-runtime-library/reference/fseek-fseeki64.md
+    - name: _fseek_nolock, _fseeki64_nolock
+      href: ../c-runtime-library/reference/fseek-nolock-fseeki64-nolock.md
+    - name: fsetpos
+      href: ../c-runtime-library/reference/fsetpos.md
+    - name: _fsopen, _wfsopen
+      href: ../c-runtime-library/reference/fsopen-wfsopen.md
+    - name: _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
+      href: ../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md
+    - name: ftell, _ftelli64
+      href: ../c-runtime-library/reference/ftell-ftelli64.md
+    - name: _ftell_nolock, _ftelli64_nolock
+      href: ../c-runtime-library/reference/ftell-nolock-ftelli64-nolock.md
+    - name: _ftime, _ftime32, _ftime64
+      href: ../c-runtime-library/reference/ftime-ftime32-ftime64.md
+    - name: _ftime_s, _ftime32_s, _ftime64_s
+      href: ../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md
+    - name: _fullpath, _wfullpath
+      href: ../c-runtime-library/reference/fullpath-wfullpath.md
+    - name: _fullpath_dbg, _wfullpath_dbg
+      href: ../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md
+    - name: _futime, _futime32, _futime64
+      href: ../c-runtime-library/reference/futime-futime32-futime64.md
+    - name: fwide
+      href: ../c-runtime-library/reference/fwide.md
+    - name: fwrite
+      href: ../c-runtime-library/reference/fwrite.md
+    - name: _fwrite_nolock
+      href: ../c-runtime-library/reference/fwrite-nolock.md
+    - name: gcvt
+      href: ../c-runtime-library/reference/posix-gcvt.md
+    - name: _gcvt
+      href: ../c-runtime-library/reference/gcvt.md
+    - name: _gcvt_s
+      href: ../c-runtime-library/reference/gcvt-s.md
+    - name: _get_current_locale
+      href: ../c-runtime-library/reference/get-current-locale.md
+    - name: _get_daylight
+      href: ../c-runtime-library/reference/get-daylight.md
+    - name: _get_doserrno
+      href: ../c-runtime-library/reference/get-doserrno.md
+    - name: _get_dstbias
+      href: ../c-runtime-library/reference/get-dstbias.md
+    - name: _get_errno
+      href: ../c-runtime-library/reference/get-errno.md
+    - name: _get_FMA3_enable, _set_FMA3_enable
+      href: ../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md
+    - name: _get_fmode
+      href: ../c-runtime-library/reference/get-fmode.md
+    - name: _get_heap_handle
+      href: ../c-runtime-library/reference/get-heap-handle.md
+    - name: _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
+      href: ../c-runtime-library/reference/get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md
+    - name: _get_osfhandle
+      href: ../c-runtime-library/reference/get-osfhandle.md
+    - name: _get_pgmptr
+      href: ../c-runtime-library/reference/get-pgmptr.md
+    - name: _get_printf_count_output
+      href: ../c-runtime-library/reference/get-printf-count-output.md
+    - name: _get_purecall_handler, _set_purecall_handler
+      href: ../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md
+    - name: _get_terminate
+      href: ../c-runtime-library/reference/get-terminate.md
+    - name: _get_timezone
+      href: ../c-runtime-library/reference/get-timezone.md
+    - name: _get_tzname
+      href: ../c-runtime-library/reference/get-tzname.md
+    - name: _get_unexpected
+      href: ../c-runtime-library/reference/get-unexpected.md
+    - name: _get_wpgmptr
+      href: ../c-runtime-library/reference/get-wpgmptr.md
+    - name: getc, getwc
+      href: ../c-runtime-library/reference/getc-getwc.md
+    - name: _getc_nolock, _getwc_nolock
+      href: ../c-runtime-library/reference/getc-nolock-getwc-nolock.md
+    - name: getch
+      href: ../c-runtime-library/reference/getch.md
+    - name: _getch, _getwch
+      href: ../c-runtime-library/reference/getch-getwch.md
+    - name: _getch_nolock, _getwch_nolock
+      href: ../c-runtime-library/reference/getch-nolock-getwch-nolock.md
+    - name: getchar, getwchar
+      href: ../c-runtime-library/reference/getchar-getwchar.md
+    - name: _getchar_nolock, _getwchar_nolock
+      href: ../c-runtime-library/reference/getchar-nolock-getwchar-nolock.md
+    - name: getche
+      href: ../c-runtime-library/reference/getche.md
+    - name: _getche, _getwche
+      href: ../c-runtime-library/reference/getche-getwche.md
+    - name: _getche_nolock, _getwche_nolock
+      href: ../c-runtime-library/reference/getche-nolock-getwche-nolock.md
+    - name: getcwd
+      href: ../c-runtime-library/reference/getcwd.md
+    - name: _getcwd, _wgetcwd
+      href: ../c-runtime-library/reference/getcwd-wgetcwd.md
+    - name: _getcwd_dbg, _wgetcwd_dbg
+      href: ../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md
+    - name: _getdcwd, _wgetdcwd
+      href: ../c-runtime-library/reference/getdcwd-wgetdcwd.md
+    - name: _getdcwd_dbg, _wgetdcwd_dbg
+      href: ../c-runtime-library/reference/getdcwd-dbg-wgetdcwd-dbg.md
+    - name: _getdcwd_nolock, _wgetdcwd_nolock
+      href: ../c-runtime-library/reference/getdcwd-nolock-wgetdcwd-nolock.md
+    - name: _getdiskfree
+      href: ../c-runtime-library/reference/getdiskfree.md
+    - name: _getdrive
+      href: ../c-runtime-library/reference/getdrive.md
+    - name: _getdrives
+      href: ../c-runtime-library/reference/getdrives.md
+    - name: getenv, _wgetenv
+      href: ../c-runtime-library/reference/getenv-wgetenv.md
+    - name: getenv_s, _wgetenv_s
+      href: ../c-runtime-library/reference/getenv-s-wgetenv-s.md
+    - name: _getmaxstdio
+      href: ../c-runtime-library/reference/getmaxstdio.md
+    - name: _getmbcp
+      href: ../c-runtime-library/reference/getmbcp.md
+    - name: getpid
+      href: ../c-runtime-library/reference/posix-getpid.md
+    - name: _getpid
+      href: ../c-runtime-library/reference/getpid.md
+    - name: gets_s, _getws_s
+      href: ../c-runtime-library/reference/gets-s-getws-s.md
+    - name: getw
+      href: ../c-runtime-library/reference/posix-getw.md
+    - name: _getw
+      href: ../c-runtime-library/reference/getw.md
+    - name: gmtime, _gmtime32, _gmtime64
+      href: ../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md
+    - name: gmtime_s, _gmtime32_s, _gmtime64_s
+      href: ../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md
+    - name: _heapchk
+      href: ../c-runtime-library/reference/heapchk.md
+    - name: _heapmin
+      href: ../c-runtime-library/reference/heapmin.md
+    - name: _heapwalk
+      href: ../c-runtime-library/reference/heapwalk.md
+    - name: hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
+      href: ../c-runtime-library/reference/hypot-hypotf-hypotl-hypot-hypotf-hypotl.md
+    - name: ilogb, ilogbf, ilogbl2
+      href: ../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md
+    - name: imaxabs
+      href: ../c-runtime-library/reference/imaxabs.md
+    - name: imaxdiv
+      href: ../c-runtime-library/reference/imaxdiv.md
+    - name: _initterm, _initterm_e
+      href: ../c-runtime-library/reference/initterm-initterm-e.md
+    - name: _invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson
+      href: ../c-runtime-library/reference/invalid-parameter-functions.md
+    - name: isalnum, iswalnum, _isalnum_l, _iswalnum_l
+      href: ../c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md
+    - name: isalpha, iswalpha, _isalpha_l, _iswalpha_l
+      href: ../c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l.md
+    - name: isascii, __isascii, iswascii
+      href: ../c-runtime-library/reference/isascii-isascii-iswascii.md
+    - name: isatty
+      href: ../c-runtime-library/reference/posix-isatty.md
+    - name: _isatty
+      href: ../c-runtime-library/reference/isatty.md
+    - name: isblank, iswblank, _isblank_l, _iswblank_l
+      href: ../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md
+    - name: iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
+      href: ../c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md
+    - name: _isctype, iswctype, _isctype_l, _iswctype_l
+      href: ../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md
+    - name: iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
+      href: ../c-runtime-library/reference/iscsym-functions.md
+    - name: isdigit, iswdigit, _isdigit_l, _iswdigit_l
+      href: ../c-runtime-library/reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md
+    - name: isfinite, _finite, _finitef
+      href: ../c-runtime-library/reference/finite-finitef.md
+    - name: isgraph, iswgraph, _isgraph_l, _iswgraph_l
+      href: ../c-runtime-library/reference/isgraph-iswgraph-isgraph-l-iswgraph-l.md
+    - name: isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered
+      href: ../c-runtime-library/reference/floating-point-ordering.md
+    - name: isinf
+      href: ../c-runtime-library/reference/isinf.md
+    - name: isleadbyte, _isleadbyte_l
+      href: ../c-runtime-library/reference/isleadbyte-isleadbyte-l.md
+    - name: islower, iswlower, _islower_l, _iswlower_l
+      href: ../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md
+    - name: _ismbbalnum, _ismbbalnum_l
+      href: ../c-runtime-library/reference/ismbbalnum-ismbbalnum-l.md
+    - name: _ismbbalpha, _ismbbalpha_l
+      href: ../c-runtime-library/reference/ismbbalpha-ismbbalpha-l.md
+    - name: _ismbbblank, _ismbbblank_l
+      href: ../c-runtime-library/reference/ismbbblank-ismbbblank-l.md
+    - name: _ismbbgraph, _ismbbgraph_l
+      href: ../c-runtime-library/reference/ismbbgraph-ismbbgraph-l.md
+    - name: _ismbbkalnum, _ismbbkalnum_l
+      href: ../c-runtime-library/reference/ismbbkalnum-ismbbkalnum-l.md
+    - name: _ismbbkana, _ismbbkana_l
+      href: ../c-runtime-library/reference/ismbbkana-ismbbkana-l.md
+    - name: _ismbbkprint, _ismbbkprint_l
+      href: ../c-runtime-library/reference/ismbbkprint-ismbbkprint-l.md
+    - name: _ismbbkpunct, _ismbbkpunct_l
+      href: ../c-runtime-library/reference/ismbbkpunct-ismbbkpunct-l.md
+    - name: _ismbblead, _ismbblead_l
+      href: ../c-runtime-library/reference/ismbblead-ismbblead-l.md
+    - name: _ismbbprint, _ismbbprint_l
+      href: ../c-runtime-library/reference/ismbbprint-ismbbprint-l.md
+    - name: _ismbbpunct, _ismbbpunct_l
+      href: ../c-runtime-library/reference/ismbbpunct-ismbbpunct-l.md
+    - name: _ismbbtrail, _ismbbtrail_l
+      href: ../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md
+    - name: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
+      href: ../c-runtime-library/reference/ismbcalnum-functions.md
+    - name: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
+      href: ../c-runtime-library/reference/ismbcgraph-functions.md
+    - name: _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
+      href: ../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md
+    - name: _ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
+      href: ../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md
+    - name: _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
+      href: ../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md
+    - name: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
+      href: ../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md
+    - name: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
+      href: ../c-runtime-library/reference/ismbslead-ismbstrail-ismbslead-l-ismbstrail-l.md
+    - name: isnan, _isnan, _isnanf
+      href: ../c-runtime-library/reference/isnan-isnan-isnanf.md
+    - name: isnormal
+      href: ../c-runtime-library/reference/isnormal.md
+    - name: ispunct, iswpunct, _ispunct_l, _iswpunct_l
+      href: ../c-runtime-library/reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md
+    - name: isprint, iswprint, _isprint_l, _iswprint_l
+      href: ../c-runtime-library/reference/isprint-iswprint-isprint-l-iswprint-l.md
+    - name: isspace, iswspace, _isspace_l, _iswspace_l
+      href: ../c-runtime-library/reference/isspace-iswspace-isspace-l-iswspace-l.md
+    - name: isupper, _isupper_l, iswupper, _iswupper_l
+      href: ../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md
+    - name: isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
+      href: ../c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md
+    - name: itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
+      href: ../c-runtime-library/reference/itoa-itow.md
+    - name: _itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s, _ltow_s, _ultow_s, _i64tow_s, _ui64tow_s
+      href: ../c-runtime-library/reference/itoa-s-itow-s.md
+    - name: j0, j1, jn
+      href: ../c-runtime-library/reference/j0-j1-jn.md
+    - name: kbhit
+      href: ../c-runtime-library/reference/posix-kbhit.md
+    - name: _kbhit
+      href: ../c-runtime-library/reference/kbhit.md
+    - name: ldexp
+      href: ../c-runtime-library/reference/ldexp.md
+    - name: ldiv, lldiv
+      href: ../c-runtime-library/reference/ldiv-lldiv.md
+    - name: lfind
+      href: ../c-runtime-library/reference/posix-lfind.md
+    - name: _lfind
+      href: ../c-runtime-library/reference/lfind.md
+    - name: _lfind_s
+      href: ../c-runtime-library/reference/lfind-s.md
+    - name: lgamma, lgammaf, lgammal
+      href: ../c-runtime-library/reference/lgamma-lgammaf-lgammal.md
+    - name: localeconv
+      href: ../c-runtime-library/reference/localeconv.md
+    - name: localtime, _localtime32, _localtime64
+      href: ../c-runtime-library/reference/localtime-localtime32-localtime64.md
+    - name: localtime_s, _localtime32_s, _localtime64_s
+      href: ../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md
+    - name: _lock_file
+      href: ../c-runtime-library/reference/lock-file.md
+    - name: locking
+      href: ../c-runtime-library/reference/posix-locking.md
+    - name: _locking
+      href: ../c-runtime-library/reference/locking.md
+    - name: log, logf, log10, log10f
+      href: ../c-runtime-library/reference/log-logf-log10-log10f.md
+    - name: log1p, log1pf, log1pl2
+      href: ../c-runtime-library/reference/log1p-log1pf-log1pl2.md
+    - name: log2, log2f, log2l
+      href: ../c-runtime-library/reference/log2-log2f-log2l.md
+    - name: logb, logbf, logbl, _logb, _logbf
+      href: ../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md
+    - name: longjmp
+      href: ../c-runtime-library/reference/longjmp.md
+    - name: lrint, lrintf, lrintl, llrint, llrintf, llrintl
+      href: ../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md
+    - name: lround, lroundf, lroundl, llround, llroundf, llroundl
+      href: ../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md
+    - name: _lrotl, _lrotr
+      href: ../c-runtime-library/reference/lrotl-lrotr.md
+    - name: lsearch
+      href: ../c-runtime-library/reference/posix-lsearch.md
+    - name: _lsearch
+      href: ../c-runtime-library/reference/lsearch.md
+    - name: _lsearch_s
+      href: ../c-runtime-library/reference/lsearch-s.md
+    - name: lseek
+      href: ../c-runtime-library/reference/lseek.md
+    - name: _lseek, _lseeki64
+      href: ../c-runtime-library/reference/lseek-lseeki64.md
+    - name: _makepath, _wmakepath
+      href: ../c-runtime-library/reference/makepath-wmakepath.md
+    - name: _makepath_s, _wmakepath_s
+      href: ../c-runtime-library/reference/makepath-s-wmakepath-s.md
+    - name: malloc
+      href: ../c-runtime-library/reference/malloc.md
+    - name: _malloc_dbg
+      href: ../c-runtime-library/reference/malloc-dbg.md
+    - name: _malloca
+      href: ../c-runtime-library/reference/malloca.md
+    - name: _matherr
+      href: ../c-runtime-library/reference/matherr.md
+    - name: __max
+      href: ../c-runtime-library/reference/max.md
+    - name: _mbbtombc, _mbbtombc_l
+      href: ../c-runtime-library/reference/mbbtombc-mbbtombc-l.md
+    - name: _mbbtype, _mbbtype_l
+      href: ../c-runtime-library/reference/mbbtype-mbbtype-l.md
+    - name: _mbccpy, _mbccpy_l
+      href: ../c-runtime-library/reference/mbccpy-mbccpy-l.md
+    - name: _mbccpy_s, _mbccpy_s_l
+      href: ../c-runtime-library/reference/mbccpy-s-mbccpy-s-l.md
+    - name: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
+      href: ../c-runtime-library/reference/mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md
+    - name: _mbclen, mblen, _mblen_l, _mbclen_l
+      href: ../c-runtime-library/reference/mbclen-mblen-mblen-l.md
+    - name: _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
+      href: ../c-runtime-library/reference/mbctohira-mbctohira-l-mbctokata-mbctokata-l.md
+    - name: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
+      href: ../c-runtime-library/reference/mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md
+    - name: _mbctombb, _mbctombb_l
+      href: ../c-runtime-library/reference/mbctombb-mbctombb-l.md
+    - name: mbrlen
+      href: ../c-runtime-library/reference/mbrlen.md
+    - name: mbrtoc16, mbrtoc323
+      href: ../c-runtime-library/reference/mbrtoc16-mbrtoc323.md
+    - name: mbrtowc
+      href: ../c-runtime-library/reference/mbrtowc.md
+    - name: _mbsbtype, _mbsbtype_l
+      href: ../c-runtime-library/reference/mbsbtype-mbsbtype-l.md
+    - name: mbsinit
+      href: ../c-runtime-library/reference/mbsinit.md
+    - name: _mbsnbcat, _mbsnbcat_l
+      href: ../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md
+    - name: _mbsnbcat_s, _mbsnbcat_s_l
+      href: ../c-runtime-library/reference/mbsnbcat-s-mbsnbcat-s-l.md
+    - name: _mbsnbcmp, _mbsnbcmp_l
+      href: ../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md
+    - name: _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
+      href: ../c-runtime-library/reference/mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md
+    - name: _mbsnbcpy, _mbsnbcpy_l
+      href: ../c-runtime-library/reference/mbsnbcpy-mbsnbcpy-l.md
+    - name: _mbsnbcpy_s, _mbsnbcpy_s_l
+      href: ../c-runtime-library/reference/mbsnbcpy-s-mbsnbcpy-s-l.md
+    - name: _mbsnbicmp, _mbsnbicmp_l
+      href: ../c-runtime-library/reference/mbsnbicmp-mbsnbicmp-l.md
+    - name: _mbsnbset, _mbsnbset_l
+      href: ../c-runtime-library/reference/mbsnbset-mbsnbset-l.md
+    - name: _mbsnbset_s, _mbsnbset_s_l
+      href: ../c-runtime-library/reference/mbsnbset-s-mbsnbset-s-l.md
+    - name: mbsrtowcs
+      href: ../c-runtime-library/reference/mbsrtowcs.md
+    - name: mbsrtowcs_s
+      href: ../c-runtime-library/reference/mbsrtowcs-s.md
+    - name: mbstowcs, _mbstowcs_l
+      href: ../c-runtime-library/reference/mbstowcs-mbstowcs-l.md
+    - name: mbstowcs_s, _mbstowcs_s_l
+      href: ../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md
+    - name: mbtowc, _mbtowc_l
+      href: ../c-runtime-library/reference/mbtowc-mbtowc-l.md
+    - name: memccpy
+      href: ../c-runtime-library/reference/posix-memccpy.md
+    - name: _memccpy
+      href: ../c-runtime-library/reference/memccpy.md
+    - name: memchr, wmemchr
+      href: ../c-runtime-library/reference/memchr-wmemchr.md
+    - name: memcmp, wmemcmp
+      href: ../c-runtime-library/reference/memcmp-wmemcmp.md
+    - name: memcpy, wmemcpy
+      href: ../c-runtime-library/reference/memcpy-wmemcpy.md
+    - name: memcpy_s, wmemcpy_s
+      href: ../c-runtime-library/reference/memcpy-s-wmemcpy-s.md
+    - name: memicmp
+      href: ../c-runtime-library/reference/memicmp.md
+    - name: _memicmp, _memicmp_l
+      href: ../c-runtime-library/reference/memicmp-memicmp-l.md
+    - name: memmove, wmemmove
+      href: ../c-runtime-library/reference/memmove-wmemmove.md
+    - name: memmove_s, wmemmove_s
+      href: ../c-runtime-library/reference/memmove-s-wmemmove-s.md
+    - name: memset, wmemset
+      href: ../c-runtime-library/reference/memset-wmemset.md
+    - name: __min
+      href: ../c-runtime-library/reference/min.md
+    - name: mkdir
+      href: ../c-runtime-library/reference/mkdir.md
+    - name: _mkdir, _wmkdir
+      href: ../c-runtime-library/reference/mkdir-wmkdir.md
+    - name: _mkgmtime, _mkgmtime32, _mkgmtime64
+      href: ../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md
+    - name: mktemp
+      href: ../c-runtime-library/reference/mktemp.md
+    - name: _mktemp, _wmktemp
+      href: ../c-runtime-library/reference/mktemp-wmktemp.md
+    - name: _mktemp_s, _wmktemp_s
+      href: ../c-runtime-library/reference/mktemp-s-wmktemp-s.md
+    - name: mktime, _mktime32, _mktime64
+      href: ../c-runtime-library/reference/mktime-mktime32-mktime64.md
+    - name: modf, modff, modfl
+      href: ../c-runtime-library/reference/modf-modff-modfl.md
+    - name: _msize
+      href: ../c-runtime-library/reference/msize.md
+    - name: _msize_dbg
+      href: ../c-runtime-library/reference/msize-dbg.md
+    - name: nan, nanf, nanl
+      href: ../c-runtime-library/reference/nan-nanf-nanl.md
+    - name: nearbyint, nearbyintf, nearbyintl
+      href: ../c-runtime-library/reference/nearbyint-nearbyintf-nearbyintl1.md
+    - name: nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
+      href: ../c-runtime-library/reference/nextafter-functions.md
+    - name: norm, normf, norml
+      href: ../c-runtime-library/reference/norm-normf-norml1.md
+    - name: not
+      href: ../c-runtime-library/reference/not.md
+    - name: not_eq
+      href: ../c-runtime-library/reference/not-eq.md
+    - name: offsetof macro
+      href: ../c-runtime-library/reference/offsetof-macro.md
+    - name: _onexit, _onexit_m
+      href: ../c-runtime-library/reference/onexit-onexit-m.md
+    - name: open
+      href: ../c-runtime-library/reference/open.md
+    - name: _open, _wopen
+      href: ../c-runtime-library/reference/open-wopen.md
+    - name: _open_osfhandle
+      href: ../c-runtime-library/reference/open-osfhandle.md
+    - name: or_eq
+      href: ../c-runtime-library/reference/or-eq.md
+    - name: or
+      href: ../c-runtime-library/reference/or.md
+    - name: _pclose
+      href: ../c-runtime-library/reference/pclose.md
+    - name: perror, _wperror
+      href: ../c-runtime-library/reference/perror-wperror.md
+    - name: _pipe
+      href: ../c-runtime-library/reference/pipe.md
+    - name: _popen, _wpopen
+      href: ../c-runtime-library/reference/popen-wpopen.md
+    - name: pow, powf, powl
+      href: ../c-runtime-library/reference/pow-powf-powl.md
+    - name: printf, _printf_l, wprintf, _wprintf_l
+      href: ../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md
+    - name: _printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
+      href: ../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md
+    - name: printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
+      href: ../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md
+    - name: _purecall
+      href: ../c-runtime-library/reference/purecall.md
+    - name: putc, putwc
+      href: ../c-runtime-library/reference/putc-putwc.md
+    - name: _putc_nolock, _putwc_nolock
+      href: ../c-runtime-library/reference/putc-nolock-putwc-nolock.md
+    - name: putch
+      href: ../c-runtime-library/reference/putch.md
+    - name: _putch, _putwch
+      href: ../c-runtime-library/reference/putch-putwch.md
+    - name: _putch_nolock, _putwch_nolock
+      href: ../c-runtime-library/reference/putch-nolock-putwch-nolock.md
+    - name: putchar, putwchar
+      href: ../c-runtime-library/reference/putchar-putwchar.md
+    - name: _putchar_nolock, _putwchar_nolock
+      href: ../c-runtime-library/reference/putchar-nolock-putwchar-nolock.md
+    - name: putenv
+      href: ../c-runtime-library/reference/putenv.md
+    - name: _putenv, _wputenv
+      href: ../c-runtime-library/reference/putenv-wputenv.md
+    - name: _putenv_s, _wputenv_s
+      href: ../c-runtime-library/reference/putenv-s-wputenv-s.md
+    - name: puts, _putws
+      href: ../c-runtime-library/reference/puts-putws.md
+    - name: putw
+      href: ../c-runtime-library/reference/posix-putw.md
+    - name: _putw
+      href: ../c-runtime-library/reference/putw.md
+    - name: _query_new_handler
+      href: ../c-runtime-library/reference/query-new-handler.md
+    - name: _query_new_mode
+      href: ../c-runtime-library/reference/query-new-mode.md
+    - name: quick_exit
+      href: ../c-runtime-library/reference/quick-exit1.md
+    - name: qsort
+      href: ../c-runtime-library/reference/qsort.md
+    - name: qsort_s
+      href: ../c-runtime-library/reference/qsort-s.md
+    - name: raise
+      href: ../c-runtime-library/reference/raise.md
+    - name: rand
+      href: ../c-runtime-library/reference/rand.md
+    - name: rand_s
+      href: ../c-runtime-library/reference/rand-s.md
+    - name: read
+      href: ../c-runtime-library/reference/posix-read.md
+    - name: _read
+      href: ../c-runtime-library/reference/read.md
+    - name: realloc
+      href: ../c-runtime-library/reference/realloc.md
+    - name: _realloc_dbg
+      href: ../c-runtime-library/reference/realloc-dbg.md
+    - name: _recalloc
+      href: ../c-runtime-library/reference/recalloc.md
+    - name: _recalloc_dbg
+      href: ../c-runtime-library/reference/recalloc-dbg.md
+    - name: remainder, remainderf, remainderl
+      href: ../c-runtime-library/reference/remainder-remainderf-remainderl.md
+    - name: remove, _wremove
+      href: ../c-runtime-library/reference/remove-wremove.md
+    - name: remquo, remquof, remquol
+      href: ../c-runtime-library/reference/remquo-remquof-remquol.md
+    - name: rename, _wrename
+      href: ../c-runtime-library/reference/rename-wrename.md
+    - name: _resetstkoflw
+      href: ../c-runtime-library/reference/resetstkoflw.md
+    - name: rewind
+      href: ../c-runtime-library/reference/rewind.md
+    - name: rint, rintf, rintl
+      href: ../c-runtime-library/reference/rint-rintf-rintl.md
+    - name: rmdir
+      href: ../c-runtime-library/reference/rmdir.md
+    - name: _rmdir, _wrmdir
+      href: ../c-runtime-library/reference/rmdir-wrmdir.md
+    - name: rmtmp
+      href: ../c-runtime-library/reference/posix-rmtmp.md
+    - name: _rmtmp
+      href: ../c-runtime-library/reference/rmtmp.md
+    - name: _rotl, _rotl64, _rotr, _rotr64
+      href: ../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md
+    - name: round, roundf, roundl
+      href: ../c-runtime-library/reference/round-roundf-roundl.md
+    - name: _RPT, _RPTF, _RPTW, _RPTFW macros
+      href: ../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md
+    - name: _RTC_GetErrDesc
+      href: ../c-runtime-library/reference/rtc-geterrdesc.md
+    - name: _RTC_NumErrors
+      href: ../c-runtime-library/reference/rtc-numerrors.md
+    - name: _RTC_SetErrorFunc
+      href: ../c-runtime-library/reference/rtc-seterrorfunc.md
+    - name: _RTC_SetErrorFuncW
+      href: ../c-runtime-library/reference/rtc-seterrorfuncw.md
+    - name: _RTC_SetErrorType
+      href: ../c-runtime-library/reference/rtc-seterrortype.md
+    - name: _scalb
+      href: ../c-runtime-library/reference/scalb.md
+    - name: scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
+      href: ../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md
+    - name: scanf, _scanf_l, wscanf, _wscanf_l
+      href: ../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md
+    - name: scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l
+      href: ../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md
+    - name: _scprintf, _scprintf_l, _scwprintf, _scwprintf_l
+      href: ../c-runtime-library/reference/scprintf-scprintf-l-scwprintf-scwprintf-l.md
+    - name: _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
+      href: ../c-runtime-library/reference/scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md
+    - name: _searchenv, _wsearchenv
+      href: ../c-runtime-library/reference/searchenv-wsearchenv.md
+    - name: _searchenv_s, _wsearchenv_s
+      href: ../c-runtime-library/reference/searchenv-s-wsearchenv-s.md
+    - name: __security_init_cookie
+      href: ../c-runtime-library/reference/security-init-cookie.md
+    - name: _seh_filter_dll, _seh_filter_exe
+      href: ../c-runtime-library/reference/seh-filter-dll-seh-filter-exe.md
+    - name: _set_abort_behavior
+      href: ../c-runtime-library/reference/set-abort-behavior.md
+    - name: setbuf
+      href: ../c-runtime-library/reference/setbuf.md
+    - name: _set_controlfp
+      href: ../c-runtime-library/reference/set-controlfp.md
+    - name: _set_doserrno
+      href: ../c-runtime-library/reference/set-doserrno.md
+    - name: _set_errno
+      href: ../c-runtime-library/reference/set-errno.md
+    - name: _set_error_mode
+      href: ../c-runtime-library/reference/set-error-mode.md
+    - name: _set_fmode
+      href: ../c-runtime-library/reference/set-fmode.md
+    - name: _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
+      href: ../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md
+    - name: setjmp
+      href: ../c-runtime-library/reference/setjmp.md
+    - name: setlocale, _wsetlocale
+      href: ../c-runtime-library/reference/setlocale-wsetlocale.md
+    - name: _setmaxstdio
+      href: ../c-runtime-library/reference/setmaxstdio.md
+    - name: _setmbcp
+      href: ../c-runtime-library/reference/setmbcp.md
+    - name: setmode
+      href: ../c-runtime-library/reference/posix-setmode.md
+    - name: _setmode
+      href: ../c-runtime-library/reference/setmode.md
+    - name: _set_new_handler
+      href: ../c-runtime-library/reference/set-new-handler.md
+    - name: _set_new_mode
+      href: ../c-runtime-library/reference/set-new-mode.md
+    - name: _set_printf_count_output
+      href: ../c-runtime-library/reference/set-printf-count-output.md
+    - name: _set_se_translator
+      href: ../c-runtime-library/reference/set-se-translator.md
+    - name: _set_SSE2_enable
+      href: ../c-runtime-library/reference/set-sse2-enable.md
+    - name: set_terminate (CRT)
+      href: ../c-runtime-library/reference/set-terminate-crt.md
+    - name: set_unexpected (CRT)
+      href: ../c-runtime-library/reference/set-unexpected-crt.md
+    - name: setvbuf
+      href: ../c-runtime-library/reference/setvbuf.md
+    - name: signal
+      href: ../c-runtime-library/reference/signal.md
+    - name: signbit
+      href: ../c-runtime-library/reference/signbit.md
+    - name: sin, sinf, sinl
+      href: ../c-runtime-library/reference/sin-sinf-sinl.md
+    - name: sinh, sinhf, sinhl
+      href: ../c-runtime-library/reference/sinh-sinhf-sinhl.md
+    - name: snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
+      href: ../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md
+    - name: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
+      href: ../c-runtime-library/reference/snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md
+    - name: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l
+      href: ../c-runtime-library/reference/snscanf-snscanf-l-snwscanf-snwscanf-l.md
+    - name: _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
+      href: ../c-runtime-library/reference/snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md
+    - name: sopen
+      href: ../c-runtime-library/reference/sopen.md
+    - name: _sopen, _wsopen
+      href: ../c-runtime-library/reference/sopen-wsopen.md
+    - name: _sopen_s, _wsopen_s
+      href: ../c-runtime-library/reference/sopen-s-wsopen-s.md
+    - name: spawnl
+      href: ../c-runtime-library/reference/spawnl.md
+    - name: _spawnl, _wspawnl
+      href: ../c-runtime-library/reference/spawnl-wspawnl.md
+    - name: spawnle
+      href: ../c-runtime-library/reference/spawnle.md
+    - name: _spawnle, _wspawnle
+      href: ../c-runtime-library/reference/spawnle-wspawnle.md
+    - name: spawnlp
+      href: ../c-runtime-library/reference/spawnlp.md
+    - name: _spawnlp, _wspawnlp
+      href: ../c-runtime-library/reference/spawnlp-wspawnlp.md
+    - name: spawnlpe
+      href: ../c-runtime-library/reference/spawnlpe.md
+    - name: _spawnlpe, _wspawnlpe
+      href: ../c-runtime-library/reference/spawnlpe-wspawnlpe.md
+    - name: spawnv
+      href: ../c-runtime-library/reference/spawnv.md
+    - name: _spawnv, _wspawnv
+      href: ../c-runtime-library/reference/spawnv-wspawnv.md
+    - name: spawnve
+      href: ../c-runtime-library/reference/spawnve.md
+    - name: _spawnve, _wspawnve
+      href: ../c-runtime-library/reference/spawnve-wspawnve.md
+    - name: spawnvp
+      href: ../c-runtime-library/reference/spawnvp.md
+    - name: _spawnvp, _wspawnvp
+      href: ../c-runtime-library/reference/spawnvp-wspawnvp.md
+    - name: spawnvpe
+      href: ../c-runtime-library/reference/spawnvpe.md
+    - name: _spawnvpe, _wspawnvpe
+      href: ../c-runtime-library/reference/spawnvpe-wspawnvpe.md
+    - name: _splitpath, _wsplitpath
+      href: ../c-runtime-library/reference/splitpath-wsplitpath.md
+    - name: _splitpath_s, _wsplitpath_s
+      href: ../c-runtime-library/reference/splitpath-s-wsplitpath-s.md
+    - name: sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
+      href: ../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md
+    - name: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
+      href: ../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md
+    - name: sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
+      href: ../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md
+    - name: sqrt, sqrtf, sqrtl
+      href: ../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md
+    - name: srand
+      href: ../c-runtime-library/reference/srand.md
+    - name: sscanf, _sscanf_l, swscanf, _swscanf_l
+      href: ../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md
+    - name: sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
+      href: ../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md
+    - name: _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
+      href: ../c-runtime-library/reference/stat-functions.md
+    - name: _STATIC_ASSERT macro
+      href: ../c-runtime-library/reference/static-assert-macro.md
+    - name: _status87, _statusfp, _statusfp2
+      href: ../c-runtime-library/reference/status87-statusfp-statusfp2.md
+    - name: strcat, wcscat, _mbscat
+      href: ../c-runtime-library/reference/strcat-wcscat-mbscat.md
+    - name: strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
+      href: ../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md
+    - name: strchr, wcschr, _mbschr, _mbschr_l
+      href: ../c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l.md
+    - name: strcmp, wcscmp, _mbscmp, _mbscmp_l
+      href: ../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md
+    - name: strcmpi
+      href: ../c-runtime-library/reference/strcmpi.md
+    - name: strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
+      href: ../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md
+    - name: strcpy, wcscpy, _mbscpy
+      href: ../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md
+    - name: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
+      href: ../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md
+    - name: strcspn, wcscspn, _mbscspn, _mbscspn_l
+      href: ../c-runtime-library/reference/strcspn-wcscspn-mbscspn-mbscspn-l.md
+    - name: _strdate, _wstrdate
+      href: ../c-runtime-library/reference/strdate-wstrdate.md
+    - name: _strdate_s, _wstrdate_s
+      href: ../c-runtime-library/reference/strdate-s-wstrdate-s.md
+    - name: _strdec, _wcsdec, _mbsdec, _mbsdec_l
+      href: ../c-runtime-library/reference/strdec-wcsdec-mbsdec-mbsdec-l.md
+    - name: strdup, wcsdup
+      href: ../c-runtime-library/reference/strdup-wcsdup.md
+    - name: _strdup, _wcsdup, _mbsdup
+      href: ../c-runtime-library/reference/strdup-wcsdup-mbsdup.md
+    - name: _strdup_dbg, _wcsdup_dbg
+      href: ../c-runtime-library/reference/strdup-dbg-wcsdup-dbg.md
+    - name: strerror, _strerror, _wcserror, __wcserror
+      href: ../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md
+    - name: strerror_s, _strerror_s, _wcserror_s, __wcserror_s
+      href: ../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md
+    - name: strftime, wcsftime, _strftime_l, _wcsftime_l
+      href: ../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md
+    - name: stricmp, wcsicmp
+      href: ../c-runtime-library/reference/stricmp-wcsicmp.md
+    - name: _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l
+      href: ../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md
+    - name: _stricoll, _wcsicoll, _mbsicoll, _stricoll_l, _wcsicoll_l, _mbsicoll_l
+      href: ../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md
+    - name: _strinc, _wcsinc, _mbsinc, _mbsinc_l
+      href: ../c-runtime-library/reference/strinc-wcsinc-mbsinc-mbsinc-l.md
+    - name: strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
+      href: ../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md
+    - name: strlwr, wcslwr
+      href: ../c-runtime-library/reference/strlwr-wcslwr.md
+    - name: _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
+      href: ../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md
+    - name: _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
+      href: ../c-runtime-library/reference/strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md
+    - name: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
+      href: ../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md
+    - name: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
+      href: ../c-runtime-library/reference/strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md
+    - name: strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
+      href: ../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md
+    - name: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
+      href: ../c-runtime-library/reference/strncnt-wcsncnt-mbsnbcnt-mbsnbcnt-l-mbsnccnt-mbsnccnt-l.md
+    - name: _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
+      href: ../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md
+    - name: strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
+      href: ../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md
+    - name: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
+      href: ../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md
+    - name: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
+      href: ../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md
+    - name: strnicmp, wcsnicmp
+      href: ../c-runtime-library/reference/strnicmp-wcsnicmp.md
+    - name: _strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
+      href: ../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md
+    - name: _strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
+      href: ../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md
+    - name: _strninc, _wcsninc, _mbsninc, _mbsninc_l
+      href: ../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md
+    - name: strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
+      href: ../c-runtime-library/reference/strnlen-strnlen-s.md
+    - name: strnset, wcsnset
+      href: ../c-runtime-library/reference/strnset-wcsnset.md
+    - name: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
+      href: ../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md
+    - name: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
+      href: ../c-runtime-library/reference/strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md
+    - name: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
+      href: ../c-runtime-library/reference/strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md
+    - name: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
+      href: ../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md
+    - name: strrev, wcsrev
+      href: ../c-runtime-library/reference/strrev-wcsrev.md
+    - name: _strrev, _wcsrev, _mbsrev, _mbsrev_l
+      href: ../c-runtime-library/reference/strrev-wcsrev-mbsrev-mbsrev-l.md
+    - name: strset, wcsset
+      href: ../c-runtime-library/reference/strset-wcsset.md
+    - name: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
+      href: ../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md
+    - name: _strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
+      href: ../c-runtime-library/reference/strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md
+    - name: strspn, wcsspn, _mbsspn, _mbsspn_l
+      href: ../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md
+    - name: _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
+      href: ../c-runtime-library/reference/strspnp-wcsspnp-mbsspnp-mbsspnp-l.md
+    - name: strstr, wcsstr, _mbsstr, _mbsstr_l
+      href: ../c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l.md
+    - name: _strtime, _wstrtime
+      href: ../c-runtime-library/reference/strtime-wstrtime.md
+    - name: _strtime_s, _wstrtime_s
+      href: ../c-runtime-library/reference/strtime-s-wstrtime-s.md
+    - name: strtod, _strtod_l, wcstod, _wcstod_l
+      href: ../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md
+    - name: strtof, _strtof_l, wcstof, _wcstof_l
+      href: ../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md
+    - name: _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l
+      href: ../c-runtime-library/reference/strtoi64-wcstoi64-strtoi64-l-wcstoi64-l.md
+    - name: strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
+      href: ../c-runtime-library/reference/strtoimax-strtoimax-l-wcstoimax-wcstoimax-l.md
+    - name: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
+      href: ../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md
+    - name: strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
+      href: ../c-runtime-library/reference/strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md
+    - name: strtol, wcstol, _strtol_l, _wcstol_l
+      href: ../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md
+    - name: strtold, _strtold_l, wcstold, _wcstold_l
+      href: ../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md
+    - name: strtoll, _strtoll_l, wcstoll, _wcstoll_l
+      href: ../c-runtime-library/reference/strtoll-strtoll-l-wcstoll-wcstoll-l.md
+    - name: _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
+      href: ../c-runtime-library/reference/strtoui64-wcstoui64-strtoui64-l-wcstoui64-l.md
+    - name: strtoul, _strtoul_l, wcstoul, _wcstoul_l
+      href: ../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md
+    - name: strtoull, _strtoull_l, wcstoull, _wcstoull_l
+      href: ../c-runtime-library/reference/strtoull-strtoull-l-wcstoull-wcstoull-l.md
+    - name: strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l
+      href: ../c-runtime-library/reference/strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md
+    - name: strupr, wcsupr
+      href: ../c-runtime-library/reference/strupr-wcsupr.md
+    - name: _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
+      href: ../c-runtime-library/reference/strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md
+    - name: _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
+      href: ../c-runtime-library/reference/strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md
+    - name: strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
+      href: ../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md
+    - name: swab
+      href: ../c-runtime-library/reference/posix-swab.md
+    - name: _swab
+      href: ../c-runtime-library/reference/swab.md
+    - name: system, _wsystem
+      href: ../c-runtime-library/reference/system-wsystem.md
+    - name: tan, tanf, tanl
+      href: ../c-runtime-library/reference/tan-tanf-tanl.md
+    - name: tanh, tanhf, tanhl
+      href: ../c-runtime-library/reference/tanh-tanhf-tanhl.md
+    - name: tell
+      href: ../c-runtime-library/reference/tell.md
+    - name: _tell, _telli64
+      href: ../c-runtime-library/reference/tell-telli64.md
+    - name: tempnam
+      href: ../c-runtime-library/reference/tempnam.md
+    - name: _tempnam, _wtempnam, tmpnam, _wtmpnam
+      href: ../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md
+    - name: _tempnam_dbg, _wtempnam_dbg
+      href: ../c-runtime-library/reference/tempnam-dbg-wtempnam-dbg.md
+    - name: terminate (CRT)
+      href: ../c-runtime-library/reference/terminate-crt.md
+    - name: tgamma, tgammaf, tgammal
+      href: ../c-runtime-library/reference/tgamma-tgammaf-tgammal.md
+    - name: time, _time32, _time64
+      href: ../c-runtime-library/reference/time-time32-time64.md
+    - name: timespec_get, _timespec32_get, _timespec64_get
+      href: ../c-runtime-library/reference/timespec-get-timespec32-get-timespec64-get1.md
+    - name: tmpfile
+      href: ../c-runtime-library/reference/tmpfile.md
+    - name: tmpfile_s
+      href: ../c-runtime-library/reference/tmpfile-s.md
+    - name: tmpnam_s, _wtmpnam_s
+      href: ../c-runtime-library/reference/tmpnam-s-wtmpnam-s.md
+    - name: toascii, __toascii
+      href: ../c-runtime-library/reference/toascii-toascii.md
+    - name: tolower, _tolower, towlower, _tolower_l, _towlower_l
+      href: ../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md
+    - name: toupper, _toupper, towupper, _toupper_l, _towupper_l
+      href: ../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md
+    - name: towctrans
+      href: ../c-runtime-library/reference/towctrans.md
+    - name: trunc, truncf, truncl
+      href: ../c-runtime-library/reference/trunc-truncf-truncl.md
+    - name: tzset
+      href: ../c-runtime-library/reference/posix-tzset.md
+    - name: _tzset
+      href: ../c-runtime-library/reference/tzset.md
+    - name: umask
+      href: ../c-runtime-library/reference/posix-umask.md
+    - name: _umask
+      href: ../c-runtime-library/reference/umask.md
+    - name: _umask_s
+      href: ../c-runtime-library/reference/umask-s.md
+    - name: __uncaught_exception
+      href: ../c-runtime-library/reference/uncaught-exception.md
+    - name: unexpected (CRT)
+      href: ../c-runtime-library/reference/unexpected-crt.md
+    - name: ungetc, ungetwc
+      href: ../c-runtime-library/reference/ungetc-ungetwc.md
+    - name: _ungetc_nolock, _ungetwc_nolock
+      href: ../c-runtime-library/reference/ungetc-nolock-ungetwc-nolock.md
+    - name: ungetch
+      href: ../c-runtime-library/reference/ungetch.md
+    - name: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
+      href: ../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md
+    - name: unlink
+      href: ../c-runtime-library/reference/unlink.md
+    - name: _unlink, _wunlink
+      href: ../c-runtime-library/reference/unlink-wunlink.md
+    - name: _unlock_file
+      href: ../c-runtime-library/reference/unlock-file.md
+    - name: _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
+      href: ../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md
+    - name: va_arg, va_copy, va_end, va_start
+      href: ../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md
+    - name: _vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l
+      href: ../c-runtime-library/reference/vcprintf-vcprintf-l-vcwprintf-vcwprintf-l.md
+    - name: _vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
+      href: ../c-runtime-library/reference/vcprintf-p-vcprintf-p-l-vcwprintf-p-vcwprintf-p-l.md
+    - name: _vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
+      href: ../c-runtime-library/reference/vcprintf-s-vcprintf-s-l-vcwprintf-s-vcwprintf-s-l.md
+    - name: vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l
+      href: ../c-runtime-library/reference/vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md
+    - name: _vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
+      href: ../c-runtime-library/reference/vfprintf-p-vfprintf-p-l-vfwprintf-p-vfwprintf-p-l.md
+    - name: vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l
+      href: ../c-runtime-library/reference/vfprintf-s-vfprintf-s-l-vfwprintf-s-vfwprintf-s-l.md
+    - name: vfscanf, vfwscanf
+      href: ../c-runtime-library/reference/vfscanf-vfwscanf.md
+    - name: vfscanf_s, vfwscanf_s
+      href: ../c-runtime-library/reference/vfscanf-s-vfwscanf-s.md
+    - name: vprintf, _vprintf_l, vwprintf, _vwprintf_l
+      href: ../c-runtime-library/reference/vprintf-vprintf-l-vwprintf-vwprintf-l.md
+    - name: _vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l
+      href: ../c-runtime-library/reference/vprintf-p-vprintf-p-l-vwprintf-p-vwprintf-p-l.md
+    - name: vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
+      href: ../c-runtime-library/reference/vprintf-s-vprintf-s-l-vwprintf-s-vwprintf-s-l.md
+    - name: vscanf, vwscanf
+      href: ../c-runtime-library/reference/vscanf-vwscanf.md
+    - name: vscanf_s, vwscanf_s
+      href: ../c-runtime-library/reference/vscanf-s-vwscanf-s.md
+    - name: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
+      href: ../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md
+    - name: _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
+      href: ../c-runtime-library/reference/vscprintf-p-vscprintf-p-l-vscwprintf-p-vscwprintf-p-l.md
+    - name: vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
+      href: ../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md
+    - name: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
+      href: ../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md
+    - name: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
+      href: ../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md
+    - name: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
+      href: ../c-runtime-library/reference/vsprintf-p-vsprintf-p-l-vswprintf-p-vswprintf-p-l.md
+    - name: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
+      href: ../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md
+    - name: vsscanf, vswscanf
+      href: ../c-runtime-library/reference/vsscanf-vswscanf.md
+    - name: vsscanf_s, vswscanf_s
+      href: ../c-runtime-library/reference/vsscanf-s-vswscanf-s.md
+    - name: wcrtomb
+      href: ../c-runtime-library/reference/wcrtomb.md
+    - name: wcrtomb_s
+      href: ../c-runtime-library/reference/wcrtomb-s.md
+    - name: wcsrtombs
+      href: ../c-runtime-library/reference/wcsrtombs.md
+    - name: wcsrtombs_s
+      href: ../c-runtime-library/reference/wcsrtombs-s.md
+    - name: wcstombs, _wcstombs_l
+      href: ../c-runtime-library/reference/wcstombs-wcstombs-l.md
+    - name: wcstombs_s, _wcstombs_s_l
+      href: ../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md
+    - name: wctob
+      href: ../c-runtime-library/reference/wctob.md
+    - name: wctomb, _wctomb_l
+      href: ../c-runtime-library/reference/wctomb-wctomb-l.md
+    - name: wctomb_s, _wctomb_s_l
+      href: ../c-runtime-library/reference/wctomb-s-wctomb-s-l.md
+    - name: wctrans
+      href: ../c-runtime-library/reference/wctrans.md
+    - name: wctype
+      href: ../c-runtime-library/reference/wctype.md
+    - name: write
+      href: ../c-runtime-library/reference/posix-write.md
+    - name: _write
+      href: ../c-runtime-library/reference/write.md
+    - name: wcsicoll
+      href: ../c-runtime-library/reference/wcsicoll.md
+    - name: xor
+      href: ../c-runtime-library/reference/xor.md
+    - name: xor_eq
+      href: ../c-runtime-library/reference/xor-eq.md
+    - name: y0, y1, yn
+      href: ../c-runtime-library/reference/y0-y1-yn.md

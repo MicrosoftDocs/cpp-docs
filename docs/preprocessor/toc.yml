@@ -1,0 +1,204 @@
+- name: C/C++ preprocessor reference
+  href: ../preprocessor/c-cpp-preprocessor-reference.md
+- name: Preprocessor
+  expanded: false
+  items: 
+    - name: Preprocessor
+      href: ../preprocessor/preprocessor.md
+    - name: Experimental preprocessor overview
+      href: ../preprocessor/preprocessor-experimental-overview.md                  
+    - name: Phases of translation
+      href: ../preprocessor/phases-of-translation.md
+    - name: Preprocessor directives
+      expanded: false
+      items: 
+        - name: Preprocessor directives
+          href: ../preprocessor/preprocessor-directives.md
+        - name: "#define directive (C/C++)"
+          href: ../preprocessor/hash-define-directive-c-cpp.md
+        - name: "#error directive (C/C++)"
+          href: ../preprocessor/hash-error-directive-c-cpp.md
+        - name: "#if, #elif, #else, and #endif directives (C/C++)"
+          href: ../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md
+        - name: "#ifdef and #ifndef directives (C/C++)"
+          href: ../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md
+        - name: "#import directive (C++)"
+          href: ../preprocessor/hash-import-directive-cpp.md
+        - name: "#import attributes (C++)"
+          expanded: false
+          items: 
+            - name: "#import attributes (C++)"
+              href: ../preprocessor/hash-import-attributes-cpp.md
+            - name: auto_rename
+              href: ../preprocessor/auto-rename.md
+            - name: auto_search
+              href: ../preprocessor/auto-search.md
+            - name: embedded_idl
+              href: ../preprocessor/embedded-idl.md
+            - name: "exclude (#import)"
+              href: ../preprocessor/exclude-hash-import.md
+            - name: high_method_prefix
+              href: ../preprocessor/high-method-prefix.md
+            - name: high_property_prefixes
+              href: ../preprocessor/high-property-prefixes.md
+            - name: implementation_only
+              href: ../preprocessor/implementation-only.md
+            - name: include()
+              href: ../preprocessor/include-parens.md
+            - name: inject_statement
+              href: ../preprocessor/inject-statement.md
+            - name: named_guids
+              href: ../preprocessor/named-guids.md
+            - name: no_auto_exclude
+              href: ../preprocessor/no-auto-exclude.md
+            - name: no_dual_interfaces
+              href: ../preprocessor/no-dual-interfaces.md
+            - name: no_implementation
+              href: ../preprocessor/no-implementation.md
+            - name: no_namespace
+              href: ../preprocessor/no-namespace.md
+            - name: no_registry
+              href: ../preprocessor/no-registry.md
+            - name: no_search_namespace
+              href: ../preprocessor/no-search-namespace.md
+            - name: no_smart_pointers
+              href: ../preprocessor/no-smart-pointers.md
+            - name: raw_dispinterfaces
+              href: ../preprocessor/raw-dispinterfaces.md
+            - name: raw_interfaces_only
+              href: ../preprocessor/raw-interfaces-only.md
+            - name: raw_method_prefix
+              href: ../preprocessor/raw-method-prefix.md
+            - name: raw_native_types
+              href: ../preprocessor/raw-native-types.md
+            - name: raw_property_prefixes
+              href: ../preprocessor/raw-property-prefixes.md
+            - name: rename (#import)
+              href: ../preprocessor/rename-hash-import.md
+            - name: rename_namespace
+              href: ../preprocessor/rename-namespace.md
+            - name: rename_search_namespace
+              href: ../preprocessor/rename-search-namespace.md
+            - name: tlbid
+              href: ../preprocessor/tlbid.md
+        - name: "#include directive (C/C++)"
+          href: ../preprocessor/hash-include-directive-c-cpp.md
+        - name: "#line directive (C/C++)"
+          href: ../preprocessor/hash-line-directive-c-cpp.md
+        - name: Null directive
+          href: ../preprocessor/null-directive.md
+        - name: "#undef directive (C/C++)"
+          href: ../preprocessor/hash-undef-directive-c-cpp.md
+        - name: "#using directive (C++/CLI)"
+          href: ../preprocessor/hash-using-directive-cpp.md
+    - name: Preprocessor operators
+      expanded: false
+      items: 
+        - name: Preprocessor operators
+          href: ../preprocessor/preprocessor-operators.md
+        - name: Stringizing operator (#)
+          href: ../preprocessor/stringizing-operator-hash.md
+        - name: Charizing operator (#@)
+          href: ../preprocessor/charizing-operator-hash-at.md
+        - name: Token-pasting operator (##)
+          href: ../preprocessor/token-pasting-operator-hash-hash.md
+    - name: Preprocessor macros (C/C++)
+      expanded: false
+      items: 
+        - name: Preprocessor macros (C/C++)
+          href: ../preprocessor/macros-c-cpp.md
+        - name: Preprocessor macros and C++
+          href: ../preprocessor/macros-and-cpp.md
+        - name: Variadic preprocessor macros
+          href: ../preprocessor/variadic-macros.md
+        - name: Predefined preprocessor macros
+          href: ../preprocessor/predefined-macros.md
+- name: Preprocessor grammar summary (C/C++)
+  href: ../preprocessor/grammar-summary-c-cpp.md
+- name: Pragma directives and the __pragma keyword
+  expanded: false
+  items: 
+    - name: Pragma directives and the __pragma keyword
+      href: ../preprocessor/pragma-directives-and-the-pragma-keyword.md
+    - name: alloc_text pragma
+      href: ../preprocessor/alloc-text.md
+    - name: auto_inline pragma
+      href: ../preprocessor/auto-inline.md
+    - name: bss_seg pragma
+      href: ../preprocessor/bss-seg.md
+    - name: check_stack pragma
+      href: ../preprocessor/check-stack.md
+    - name: code_seg pragma
+      href: ../preprocessor/code-seg.md
+    - name: comment pragma (C/C++)
+      href: ../preprocessor/comment-c-cpp.md
+    - name: component pragma
+      href: ../preprocessor/component.md
+    - name: conform pragma
+      href: ../preprocessor/conform.md
+    - name: const_seg pragma
+      href: ../preprocessor/const-seg.md
+    - name: data_seg pragma
+      href: ../preprocessor/data-seg.md
+    - name: deprecated pragma (C/C++)
+      href: ../preprocessor/deprecated-c-cpp.md
+    - name: detect_mismatch pragma
+      href: ../preprocessor/detect-mismatch.md
+    - name: execution_character_set pragma
+      href: ../preprocessor/execution-character-set.md
+    - name: fenv_access pragma
+      href: ../preprocessor/fenv-access.md
+    - name: float_control pragma
+      href: ../preprocessor/float-control.md
+    - name: fp_contract pragma
+      href: ../preprocessor/fp-contract.md
+    - name: function pragma (C/C++)
+      href: ../preprocessor/function-c-cpp.md
+    - name: hdrstop pragma
+      href: ../preprocessor/hdrstop.md
+    - name: include_alias pragma
+      href: ../preprocessor/include-alias.md
+    - name: init_seg pragma
+      href: ../preprocessor/init-seg.md
+    - name: inline_depth pragma
+      href: ../preprocessor/inline-depth.md
+    - name: inline_recursion pragma
+      href: ../preprocessor/inline-recursion.md
+    - name: intrinsic pragma
+      href: ../preprocessor/intrinsic.md
+    - name: loop pragma
+      href: ../preprocessor/loop.md
+    - name: make_public pragma
+      href: ../preprocessor/make-public.md
+    - name: managed, unmanaged pragmas
+      href: ../preprocessor/managed-unmanaged.md
+    - name: message pragma
+      href: ../preprocessor/message.md
+    - name: omp pragma
+      href: ../preprocessor/omp.md
+    - name: once pragma
+      href: ../preprocessor/once.md
+    - name: optimize pragma
+      href: ../preprocessor/optimize.md
+    - name: pack pragma
+      href: ../preprocessor/pack.md
+    - name: pointers_to_members pragma
+      href: ../preprocessor/pointers-to-members.md
+    - name: pop_macro pragma
+      href: ../preprocessor/pop-macro.md
+    - name: push_macro pragma
+      href: ../preprocessor/push-macro.md
+    - name: region, endregion pragmas
+      href: ../preprocessor/region-endregion.md
+    - name: runtime_checks pragma
+      href: ../preprocessor/runtime-checks.md
+    - name: section pragma
+      href: ../preprocessor/section.md
+    - name: setlocale pragma
+      href: ../preprocessor/setlocale.md
+    - name: strict_gs_check pragma
+      href: ../preprocessor/strict-gs-check.md
+    - name: vtordisp pragma
+      href: ../preprocessor/vtordisp.md
+    - name: warning pragma
+      href: ../preprocessor/warning.md
