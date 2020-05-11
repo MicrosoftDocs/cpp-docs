@@ -1,0 +1,1548 @@
+- name: C++ Standard Library reference
+  href: ../standard-library/cpp-standard-library-reference.md
+- name: C++ Standard Library header files
+  expanded: false
+  items: 
+    - name: C++ Standard Library header files
+      href: ../standard-library/cpp-standard-library-header-files.md
+    - name: <algorithm>
+      expanded: false
+      items: 
+        - name: <algorithm>
+          href: ../standard-library/algorithm.md
+        - name: <algorithm> functions
+          href: ../standard-library/algorithm-functions.md
+    - name: <allocators>
+      expanded: false
+      items: 
+        - name: <allocators>
+          href: ../standard-library/allocators-header.md
+        - name: <allocators> functions
+          href: ../standard-library/allocators-functions.md
+        - name: <allocators> operators
+          href: ../standard-library/allocators-operators.md
+        - name: allocator_base class
+          href: ../standard-library/allocator-base-class.md
+        - name: allocator_chunklist class
+          href: ../standard-library/allocator-chunklist-class.md
+        - name: allocator_fixed_size class
+          href: ../standard-library/allocator-fixed-size-class.md
+        - name: allocator_newdel class
+          href: ../standard-library/allocator-newdel-class.md
+        - name: allocator_suballoc class
+          href: ../standard-library/allocator-suballoc-class.md
+        - name: allocator_unbounded class
+          href: ../standard-library/allocator-unbounded-class.md
+        - name: allocator_variable_size class
+          href: ../standard-library/allocator-variable-size-class.md
+        - name: cache_chunklist class
+          href: ../standard-library/cache-chunklist-class.md
+        - name: cache_freelist class
+          href: ../standard-library/cache-freelist-class.md
+        - name: cache_suballoc class
+          href: ../standard-library/cache-suballoc-class.md
+        - name: freelist class
+          href: ../standard-library/freelist-class.md
+        - name: max_fixed_size class
+          href: ../standard-library/max-fixed-size-class.md
+        - name: max_none class
+          href: ../standard-library/max-none-class.md
+        - name: max_unbounded class
+          href: ../standard-library/max-unbounded-class.md
+        - name: max_variable_size class
+          href: ../standard-library/max-variable-size-class.md
+        - name: rts_alloc class
+          href: ../standard-library/rts-alloc-class.md
+        - name: sync_none class
+          href: ../standard-library/sync-none-class.md
+        - name: sync_per_container class
+          href: ../standard-library/sync-per-container-class.md
+        - name: sync_per_thread class
+          href: ../standard-library/sync-per-thread-class.md
+        - name: sync_shared class
+          href: ../standard-library/sync-shared-class.md
+    - name: <any>
+      expanded: false
+      items:
+        - name: <any>
+          href: ../standard-library/any.md
+        - name: <any> functions
+          href: ../standard-library/any-functions.md
+        - name: any class (C++ Standard Library)
+          href: ../standard-library/any-class.md
+    - name: <array>
+      expanded: false
+      items: 
+        - name: <array>
+          href: ../standard-library/array.md
+        - name: <array> functions
+          href: ../standard-library/array-functions.md
+        - name: <array> operators
+          href: ../standard-library/array-operators.md
+        - name: array class (C++ Standard Library)
+          href: ../standard-library/array-class-stl.md
+    - name: <atomic>
+      expanded: false
+      items: 
+        - name: <atomic>
+          href: ../standard-library/atomic.md
+        - name: atomic struct
+          href: ../standard-library/atomic-structure.md
+        - name: atomic_flag struct
+          href: ../standard-library/atomic-flag-structure.md
+        - name: <atomic> functions
+          href: ../standard-library/atomic-functions.md
+        - name: <atomic> enums
+          href: ../standard-library/atomic-enums.md
+    - name: <bitset>
+      expanded: false
+      items: 
+        - name: <bitset>
+          href: ../standard-library/bitset.md
+        - name: <bitset> operators
+          href: ../standard-library/bitset-operators.md
+        - name: bitset class
+          href: ../standard-library/bitset-class.md
+    - name: <cassert>
+      href: ../standard-library/cassert.md
+    - name: <ccomplex>
+      href: ../standard-library/ccomplex.md
+    - name: <cctype>
+      href: ../standard-library/cctype.md
+    - name: <cerrno>
+      href: ../standard-library/cerrno.md
+    - name: <cfenv>
+      href: ../standard-library/cfenv.md
+    - name: <cfloat>
+      href: ../standard-library/cfloat.md
+    - name: <chrono>
+      expanded: false
+      items: 
+        - name: <chrono>
+          href: ../standard-library/chrono.md
+        - name: <chrono> functions
+          href: ../standard-library/chrono-functions.md
+        - name: <chrono> operators
+          href: ../standard-library/chrono-operators.md
+        - name: chrono literals
+          href: ../standard-library/chrono-literals.md
+        - name: common_type struct
+          href: ../standard-library/common-type-structure.md
+        - name: duration class
+          href: ../standard-library/duration-class.md
+        - name: duration_values struct
+          href: ../standard-library/duration-values-structure.md
+        - name: steady_clock struct
+          href: ../standard-library/steady-clock-struct.md
+        - name: system_clock struct
+          href: ../standard-library/system-clock-structure.md
+        - name: time_point class
+          href: ../standard-library/time-point-class.md
+        - name: treat_as_floating_point struct
+          href: ../standard-library/treat-as-floating-point-structure.md
+    - name: <cinttypes>
+      href: ../standard-library/cinttypes.md
+    - name: <ciso646>
+      href: ../standard-library/ciso646.md
+    - name: <climits>
+      href: ../standard-library/climits.md
+    - name: <clocale>
+      href: ../standard-library/clocale.md
+    - name: <cmath>
+      href: ../standard-library/cmath.md
+    - name: <codecvt>
+      expanded: false
+      items: 
+        - name: <codecvt>
+          href: ../standard-library/codecvt.md
+        - name: <codecvt> enums
+          href: ../standard-library/codecvt-enums.md
+        - name: codecvt_utf8
+          href: ../standard-library/codecvt-utf8-class.md
+        - name: codecvt_utf8_utf16
+          href: ../standard-library/codecvt-utf8-utf16-class.md
+        - name: codecvt_utf16
+          href: ../standard-library/codecvt-utf16-class.md
+    - name: <complex>
+      expanded: false
+      items: 
+        - name: <complex>
+          href: ../standard-library/complex.md
+        - name: <complex> functions
+          href: ../standard-library/complex-functions.md
+        - name: <complex> operators
+          href: ../standard-library/complex-operators.md
+        - name: complex class
+          href: ../standard-library/complex-class.md
+        - name: complex<double>
+          href: ../standard-library/complex-double.md
+        - name: complex<float>
+          href: ../standard-library/complex-float.md
+        - name: complex<long double>
+          href: ../standard-library/complex-long-double.md
+    - name: <condition_variable>
+      expanded: false
+      items: 
+        - name: <condition_variable>
+          href: ../standard-library/condition-variable.md
+        - name: <condition_variable> enums
+          href: ../standard-library/condition-variable-enums.md
+        - name: condition_variable class
+          href: ../standard-library/condition-variable-class.md
+        - name: condition_variable_any class
+          href: ../standard-library/condition-variable-any-class.md
+    - name: <csetjmp>
+      href: ../standard-library/csetjmp.md
+    - name: <csignal>
+      href: ../standard-library/csignal.md
+    - name: <cstdalign>
+      href: ../standard-library/cstdalign.md
+    - name: <cstdarg>
+      href: ../standard-library/cstdarg.md
+    - name: <cstdbool>
+      href: ../standard-library/cstdbool.md
+    - name: <cstddef>
+      href: ../standard-library/cstddef.md
+    - name: <cstdint>
+      href: ../standard-library/cstdint.md
+    - name: <cstdio>
+      href: ../standard-library/cstdio.md
+    - name: <cstdlib>
+      href: ../standard-library/cstdlib.md
+    - name: <cstring>
+      href: ../standard-library/cstring.md
+    - name: <ctgmath>
+      href: ../standard-library/ctgmath.md
+    - name: <ctime>
+      href: ../standard-library/ctime.md
+    - name: <cuchar>
+      href: ../standard-library/cuchar.md
+    - name: <cvt-wbuffer>
+      href: ../standard-library/cvt-wbuffer.md
+    - name: <cvt-wstring>
+      href: ../standard-library/cvt-wstring.md
+    - name: <cwchar>
+      href: ../standard-library/cwchar.md
+    - name: <cwctype>
+      href: ../standard-library/cwctype.md
+    - name: <deque>
+      expanded: false
+      items: 
+        - name: <deque>
+          href: ../standard-library/deque.md
+        - name: <deque> functions
+          href: ../standard-library/deque-functions.md
+        - name: <deque> operators
+          href: ../standard-library/deque-operators.md
+        - name: deque class
+          href: ../standard-library/deque-class.md
+    - name: <exception>
+      expanded: false
+      items: 
+        - name: <exception>
+          href: ../standard-library/exception.md
+        - name: <exception> functions
+          href: ../standard-library/exception-functions.md
+        - name: <exception> typedefs
+          href: ../standard-library/exception-typedefs.md
+        - name: bad_exception class
+          href: ../standard-library/bad-exception-class.md
+        - name: exception class
+          href: ../standard-library/exception-class.md
+    - name: <execution>
+      href: ../standard-library/execution.md
+    - name: <filesystem>
+      expanded: false
+      items: 
+        - name: <filesystem>
+          href: ../standard-library/filesystem.md
+        - name: <filesystem> operators
+          href: ../standard-library/filesystem-operators.md
+        - name: <filesystem> functions
+          href: ../standard-library/filesystem-functions.md
+        - name: <filesystem> enumerations
+          href: ../standard-library/filesystem-enumerations.md
+        - name: directory_entry class
+          href: ../standard-library/directory-entry-class.md
+        - name: directory_iterator class
+          href: ../standard-library/directory-iterator-class.md
+        - name: file_status class
+          href: ../standard-library/file-status-class.md
+        - name: filesystem_error class
+          href: ../standard-library/filesystem-error-class.md
+        - name: path class
+          href: ../standard-library/path-class.md
+        - name: recursive_directory_iterator class
+          href: ../standard-library/recursive-directory-iterator-class.md
+        - name: space_info struct
+          href: ../standard-library/space-info-structure.md
+    - name: <forward_list>
+      expanded: false
+      items: 
+        - name: <forward_list>
+          href: ../standard-library/forward-list.md
+        - name: <forward_list> functions
+          href: ../standard-library/forward-list-functions.md
+        - name: <forward_list> operators
+          href: ../standard-library/forward-list-operators.md
+        - name: forward_list class
+          href: ../standard-library/forward-list-class.md
+    - name: <fstream>
+      expanded: false
+      items: 
+        - name: <fstream>
+          href: ../standard-library/fstream.md
+        - name: <fstream> typedefs
+          href: ../standard-library/fstream-typedefs.md
+        - name: basic_filebuf class
+          href: ../standard-library/basic-filebuf-class.md
+        - name: basic_fstream class
+          href: ../standard-library/basic-fstream-class.md
+        - name: basic_ifstream class
+          href: ../standard-library/basic-ifstream-class.md
+        - name: basic_ofstream class
+          href: ../standard-library/basic-ofstream-class.md
+    - name: <functional>
+      expanded: false
+      items: 
+        - name: <functional>
+          href: ../standard-library/functional.md
+        - name: <functional> functions
+          href: ../standard-library/functional-functions.md
+        - name: <functional> operators
+          href: ../standard-library/functional-operators.md
+        - name: _1 object
+          href: ../standard-library/1-object.md
+        - name: bad_function_call class
+          href: ../standard-library/bad-function-call-class.md
+        - name: binary_function struct
+          href: ../standard-library/binary-function-struct.md
+        - name: binary_negate class
+          href: ../standard-library/binary-negate-class.md
+        - name: binder1st class
+          href: ../standard-library/binder1st-class.md
+        - name: binder2nd class
+          href: ../standard-library/binder2nd-class.md
+        - name: const_mem_fun_ref_t class
+          href: ../standard-library/const-mem-fun-ref-t-class.md
+        - name: const_mem_fun_t class
+          href: ../standard-library/const-mem-fun-t-class.md
+        - name: const_mem_fun1_ref_t class
+          href: ../standard-library/const-mem-fun1-ref-t-class.md
+        - name: const_mem_fun1_t class
+          href: ../standard-library/const-mem-fun1-t-class.md
+        - name: divides struct
+          href: ../standard-library/divides-struct.md
+        - name: equal_to struct
+          href: ../standard-library/equal-to-struct.md
+        - name: function class
+          href: ../standard-library/function-class.md
+        - name: greater struct
+          href: ../standard-library/greater-struct.md
+        - name: greater_equal struct
+          href: ../standard-library/greater-equal-struct.md
+        - name: hash class
+          href: ../standard-library/hash-class.md
+        - name: is_bind_expression class
+          href: ../standard-library/is-bind-expression-class.md
+        - name: is_placeholder class
+          href: ../standard-library/is-placeholder-class.md
+        - name: less struct
+          href: ../standard-library/less-struct.md
+        - name: less_equal struct
+          href: ../standard-library/less-equal-struct.md
+        - name: logical_and struct
+          href: ../standard-library/logical-and-struct.md
+        - name: logical_not struct
+          href: ../standard-library/logical-not-struct.md
+        - name: logical_or struct
+          href: ../standard-library/logical-or-struct.md
+        - name: mem_fun_ref_t class
+          href: ../standard-library/mem-fun-ref-t-class.md
+        - name: mem_fun_t class
+          href: ../standard-library/mem-fun-t-class.md
+        - name: mem_fun1_ref_t class
+          href: ../standard-library/mem-fun1-ref-t-class.md
+        - name: mem_fun1_t class
+          href: ../standard-library/mem-fun1-t-class.md
+        - name: minus struct
+          href: ../standard-library/minus-struct.md
+        - name: modulus struct
+          href: ../standard-library/modulus-struct.md
+        - name: multiplies struct
+          href: ../standard-library/multiplies-struct.md
+        - name: negate struct
+          href: ../standard-library/negate-struct.md
+        - name: not_equal_to struct
+          href: ../standard-library/not-equal-to-struct.md
+        - name: plus struct
+          href: ../standard-library/plus-struct.md
+        - name: pointer_to_binary_function class
+          href: ../standard-library/pointer-to-binary-function-class.md
+        - name: pointer_to_unary_function class
+          href: ../standard-library/pointer-to-unary-function-class.md
+        - name: reference_wrapper class
+          href: ../standard-library/reference-wrapper-class.md
+        - name: unary_function struct
+          href: ../standard-library/unary-function-struct.md
+        - name: unary_negate class
+          href: ../standard-library/unary-negate-class.md
+    - name: <future>
+      expanded: false
+      items: 
+        - name: <future>
+          href: ../standard-library/future.md
+        - name: <future> functions
+          href: ../standard-library/future-functions.md
+        - name: <future> enums
+          href: ../standard-library/future-enums.md
+        - name: future class
+          href: ../standard-library/future-class.md
+        - name: future_error class
+          href: ../standard-library/future-error-class.md
+        - name: is_error_code_enum struct
+          href: ../standard-library/is-error-code-enum-structure.md
+        - name: packaged_task class
+          href: ../standard-library/packaged-task-class.md
+        - name: promise class
+          href: ../standard-library/promise-class.md
+        - name: shared_future class
+          href: ../standard-library/shared-future-class.md
+        - name: uses_allocator struct
+          href: ../standard-library/uses-allocator-structure.md
+    - name: <hash_map>
+      expanded: false
+      items: 
+        - name: <hash_map>
+          href: ../standard-library/hash-map.md
+        - name: <hash_map> functions
+          href: ../standard-library/hash-map-functions.md
+        - name: <hash_map> operators
+          href: ../standard-library/hash-map-operators.md
+        - name: hash_compare class
+          href: ../standard-library/hash-compare-class.md
+        - name: hash_map class
+          href: ../standard-library/hash-map-class.md
+        - name: hash_multimap class
+          href: ../standard-library/hash-multimap-class.md
+        - name: value_compare class
+          href: ../standard-library/value-compare-class.md
+    - name: <hash_set>
+      expanded: false
+      items: 
+        - name: <hash_set>
+          href: ../standard-library/hash-set.md
+        - name: hash_set class
+          href: ../standard-library/hash-set-class.md
+        - name: hash_multiset class
+          href: ../standard-library/hash-multiset-class.md
+        - name: <hash_set> functions
+          href: ../standard-library/hash-set-functions.md
+        - name: <hash_set> operators
+          href: ../standard-library/hash-set-operators.md
+    - name: <initializer_list>
+      expanded: false
+      items: 
+        - name: <initializer_list>
+          href: ../standard-library/initializer-list.md
+        - name: initializer_list class
+          href: ../standard-library/initializer-list-class.md
+    - name: <iomanip>
+      expanded: false
+      items: 
+        - name: <iomanip>
+          href: ../standard-library/iomanip.md
+        - name: <iomanip> functions
+          href: ../standard-library/iomanip-functions.md
+    - name: <ios>
+      expanded: false
+      items: 
+        - name: <ios>
+          href: ../standard-library/ios.md
+        - name: <ios> functions
+          href: ../standard-library/ios-functions.md
+        - name: <ios> typedefs
+          href: ../standard-library/ios-typedefs.md
+        - name: basic_ios class
+          href: ../standard-library/basic-ios-class.md
+        - name: fpos class
+          href: ../standard-library/fpos-class.md
+        - name: ios_base class
+          href: ../standard-library/ios-base-class.md
+    - name: <iosfwd>
+      href: ../standard-library/iosfwd.md
+    - name: <iostream>
+      href: ../standard-library/iostream.md
+    - name: <istream>
+      expanded: false
+      items: 
+        - name: <istream>
+          href: ../standard-library/istream.md
+        - name: <istream> functions
+          href: ../standard-library/istream-functions.md
+        - name: <istream> operators
+          href: ../standard-library/istream-operators.md
+        - name: <istream> typedefs
+          href: ../standard-library/istream-typedefs.md
+        - name: basic_iostream class
+          href: ../standard-library/basic-iostream-class.md
+        - name: basic_istream class
+          href: ../standard-library/basic-istream-class.md
+    - name: <iterator>
+      expanded: false
+      items: 
+        - name: <iterator>
+          href: ../standard-library/iterator.md
+        - name: <iterator> functions
+          href: ../standard-library/iterator-functions.md
+        - name: <iterator> operators
+          href: ../standard-library/iterator-operators.md
+        - name: back_insert_iterator class
+          href: ../standard-library/back-insert-iterator-class.md
+        - name: bidirectional_iterator_tag struct
+          href: ../standard-library/bidirectional-iterator-tag-struct.md
+        - name: checked_array_iterator class
+          href: ../standard-library/checked-array-iterator-class.md
+        - name: forward_iterator_tag struct
+          href: ../standard-library/forward-iterator-tag-struct.md
+        - name: front_insert_iterator class
+          href: ../standard-library/front-insert-iterator-class.md
+        - name: input_iterator_tag struct
+          href: ../standard-library/input-iterator-tag-struct.md
+        - name: insert_iterator class
+          href: ../standard-library/insert-iterator-class.md
+        - name: istream_iterator class
+          href: ../standard-library/istream-iterator-class.md
+        - name: istreambuf_iterator class
+          href: ../standard-library/istreambuf-iterator-class.md
+        - name: iterator struct
+          href: ../standard-library/iterator-struct.md
+        - name: iterator_traits struct
+          href: ../standard-library/iterator-traits-struct.md
+        - name: move_iterator class
+          href: ../standard-library/move-iterator-class.md
+        - name: ostream_iterator class
+          href: ../standard-library/ostream-iterator-class.md
+        - name: ostreambuf_iterator class
+          href: ../standard-library/ostreambuf-iterator-class.md
+        - name: output_iterator_tag struct
+          href: ../standard-library/output-iterator-tag-struct.md
+        - name: random_access_iterator_tag struct
+          href: ../standard-library/random-access-iterator-tag-struct.md
+        - name: reverse_iterator class
+          href: ../standard-library/reverse-iterator-class.md
+        - name: unchecked_array_iterator class
+          href: ../standard-library/unchecked-array-iterator-class.md
+    - name: <limits>
+      expanded: false
+      items: 
+        - name: <limits>
+          href: ../standard-library/limits.md
+        - name: <limits> enums
+          href: ../standard-library/limits-enums.md
+        - name: numeric_limits class
+          href: ../standard-library/numeric-limits-class.md
+    - name: <list>
+      expanded: false
+      items: 
+        - name: <list>
+          href: ../standard-library/list.md
+        - name: <list> operators
+          href: ../standard-library/list-operators.md
+        - name: list class
+          href: ../standard-library/list-class.md
+    - name: <locale>
+      expanded: false
+      items: 
+        - name: <locale>
+          href: ../standard-library/locale.md
+        - name: <locale> functions
+          href: ../standard-library/locale-functions.md
+        - name: codecvt class
+          href: ../standard-library/codecvt-class.md
+        - name: codecvt_base class
+          href: ../standard-library/codecvt-base-class.md
+        - name: codecvt_byname class
+          href: ../standard-library/codecvt-byname-class.md
+        - name: collate class
+          href: ../standard-library/collate-class.md
+        - name: collate_byname class
+          href: ../standard-library/collate-byname-class.md
+        - name: ctype class
+          href: ../standard-library/ctype-class.md
+        - name: ctype<char> class
+          href: ../standard-library/ctype-char-class.md
+        - name: ctype_base class
+          href: ../standard-library/ctype-base-class.md
+        - name: ctype_byname class
+          href: ../standard-library/ctype-byname-class.md
+        - name: locale class
+          href: ../standard-library/locale-class.md
+        - name: messages class
+          href: ../standard-library/messages-class.md
+        - name: messages_base class
+          href: ../standard-library/messages-base-class.md
+        - name: messages_byname class
+          href: ../standard-library/messages-byname-class.md
+        - name: money_base class
+          href: ../standard-library/money-base-class.md
+        - name: money_get class
+          href: ../standard-library/money-get-class.md
+        - name: money_put class
+          href: ../standard-library/money-put-class.md
+        - name: moneypunct class
+          href: ../standard-library/moneypunct-class.md
+        - name: moneypunct_byname class
+          href: ../standard-library/moneypunct-byname-class.md
+        - name: num_get class
+          href: ../standard-library/num-get-class.md
+        - name: num_put class
+          href: ../standard-library/num-put-class.md
+        - name: numpunct class
+          href: ../standard-library/numpunct-class.md
+        - name: numpunct_byname class
+          href: ../standard-library/numpunct-byname-class.md
+        - name: time_base class
+          href: ../standard-library/time-base-class.md
+        - name: time_get class
+          href: ../standard-library/time-get-class.md
+        - name: time_get_byname class
+          href: ../standard-library/time-get-byname-class.md
+        - name: time_put class
+          href: ../standard-library/time-put-class.md
+        - name: time_put_byname class
+          href: ../standard-library/time-put-byname-class.md
+        - name: wbuffer_convert class
+          href: ../standard-library/wbuffer-convert-class.md
+        - name: wstring_convert class
+          href: ../standard-library/wstring-convert-class.md
+    - name: <map>
+      expanded: false
+      items: 
+        - name: <map>
+          href: ../standard-library/map.md
+        - name: <map> functions
+          href: ../standard-library/map-functions.md
+        - name: <map> operators
+          href: ../standard-library/map-operators.md
+        - name: map class
+          href: ../standard-library/map-class.md
+        - name: multimap class
+          href: ../standard-library/multimap-class.md
+        - name: value_compare class (<map>)
+          href: ../standard-library/value-compare-class-map.md
+    - name: <memory>
+      expanded: false
+      items: 
+        - name: <memory>
+          href: ../standard-library/memory.md
+        - name: <memory> functions
+          href: ../standard-library/memory-functions.md
+        - name: <memory> operators
+          href: ../standard-library/memory-operators.md
+        - name: <memory> enums
+          href: ../standard-library/memory-enums.md
+        - name: allocator class
+          href: ../standard-library/allocator-class.md
+        - name: allocator<void> class
+          href: ../standard-library/allocator-void-class.md
+        - name: allocator_traits class
+          href: ../standard-library/allocator-traits-class.md
+        - name: auto_ptr class
+          href: ../standard-library/auto-ptr-class.md
+        - name: bad_weak_ptr class
+          href: ../standard-library/bad-weak-ptr-class.md
+        - name: enable_shared_from_this class
+          href: ../standard-library/enable-shared-from-this-class.md
+        - name: pointer_traits struct
+          href: ../standard-library/pointer-traits-struct.md
+        - name: raw_storage_iterator class
+          href: ../standard-library/raw-storage-iterator-class.md
+        - name: shared_ptr class
+          href: ../standard-library/shared-ptr-class.md
+        - name: unique_ptr class
+          href: ../standard-library/unique-ptr-class.md
+        - name: weak_ptr class
+          href: ../standard-library/weak-ptr-class.md
+    - name: <memory_resource>
+      expanded: false
+      items:
+        - name: <memory_resource>
+          href: ../standard-library/memory-resource.md
+        - name: <memory_resource> functions
+          href: ../standard-library/memory-resource-functions.md
+        - name: <memory_resource> operators
+          href: ../standard-library/memory-resource-operators.md
+        - name: memory_resource class
+          href: ../standard-library/memory-resource-class.md
+    - name: <mutex>
+      expanded: false
+      items: 
+        - name: <mutex>
+          href: ../standard-library/mutex.md
+        - name: <mutex> functions
+          href: ../standard-library/mutex-functions.md
+        - name: adopt_lock_t struct
+          href: ../standard-library/adopt-lock-t-structure.md
+        - name: defer_lock_t struct
+          href: ../standard-library/defer-lock-t-structure.md
+        - name: lock_guard class
+          href: ../standard-library/lock-guard-class.md
+        - name: mutex class (C++ Standard Library)
+          href: ../standard-library/mutex-class-stl.md
+        - name: once_flag struct
+          href: ../standard-library/once-flag-structure.md
+        - name: recursive_mutex class
+          href: ../standard-library/recursive-mutex-class.md
+        - name: recursive_timed_mutex class
+          href: ../standard-library/recursive-timed-mutex-class.md
+        - name: timed_mutex class
+          href: ../standard-library/timed-mutex-class.md
+        - name: try_to_lock_t struct
+          href: ../standard-library/try-to-lock-t-structure.md
+        - name: unique_lock class
+          href: ../standard-library/unique-lock-class.md
+    - name: <new>
+      expanded: false
+      items: 
+        - name: <new>
+          href: ../standard-library/new.md
+        - name: <new> functions
+          href: ../standard-library/new-functions.md
+        - name: <new> typedefs
+          href: ../standard-library/new-typedefs.md
+        - name: <new> operators
+          href: ../standard-library/new-operators.md
+        - name: bad_alloc class
+          href: ../standard-library/bad-alloc-class.md
+        - name: nothrow_t struct
+          href: ../standard-library/nothrow-t-structure.md
+    - name: <numeric>
+      expanded: false
+      items: 
+        - name: <numeric>
+          href: ../standard-library/numeric.md
+        - name: <numeric> functions
+          href: ../standard-library/numeric-functions.md
+    - name: <optional>
+      expanded: false
+      items:
+        - name: <optional>
+          href: ../standard-library/optional.md
+        - name: <optional> functions
+          href: ../standard-library/optional-functions.md
+        - name: <optional> operators
+          href: ../standard-library/optional-operators.md
+        - name: optional class
+          href: ../standard-library/optional-class.md
+    - name: <ostream>
+      expanded: false
+      items: 
+        - name: <ostream>
+          href: ../standard-library/ostream.md
+        - name: basic_ostream class
+          href: ../standard-library/basic-ostream-class.md
+        - name: <ostream> functions
+          href: ../standard-library/ostream-functions.md
+        - name: <ostream> operators
+          href: ../standard-library/ostream-operators.md
+        - name: <ostream> typedefs
+          href: ../standard-library/ostream-typedefs.md
+    - name: <queue>
+      expanded: false
+      items: 
+        - name: <queue>
+          href: ../standard-library/queue.md
+        - name: <queue> operators
+          href: ../standard-library/queue-operators.md
+        - name: priority_queue class
+          href: ../standard-library/priority-queue-class.md
+        - name: queue class
+          href: ../standard-library/queue-class.md
+    - name: <random>
+      expanded: false
+      items: 
+        - name: <random>
+          href: ../standard-library/random.md
+        - name: <random> functions
+          href: ../standard-library/random-functions.md
+        - name: bernoulli_distribution class
+          href: ../standard-library/bernoulli-distribution-class.md
+        - name: binomial_distribution class
+          href: ../standard-library/binomial-distribution-class.md
+        - name: cauchy_distribution class
+          href: ../standard-library/cauchy-distribution-class.md
+        - name: chi_squared_distribution class
+          href: ../standard-library/chi-squared-distribution-class.md
+        - name: discard_block_engine class
+          href: ../standard-library/discard-block-engine-class.md
+        - name: discrete_distribution class
+          href: ../standard-library/discrete-distribution-class.md
+        - name: exponential_distribution class
+          href: ../standard-library/exponential-distribution-class.md
+        - name: extreme_value_distribution class
+          href: ../standard-library/extreme-value-distribution-class.md
+        - name: fisher_f_distribution class
+          href: ../standard-library/fisher-f-distribution-class.md
+        - name: gamma_distribution class
+          href: ../standard-library/gamma-distribution-class.md
+        - name: geometric_distribution class
+          href: ../standard-library/geometric-distribution-class.md
+        - name: independent_bits_engine class
+          href: ../standard-library/independent-bits-engine-class.md
+        - name: linear_congruential_engine class
+          href: ../standard-library/linear-congruential-engine-class.md
+        - name: lognormal_distribution class
+          href: ../standard-library/lognormal-distribution-class.md
+        - name: mersenne_twister_engine class
+          href: ../standard-library/mersenne-twister-engine-class.md
+        - name: negative_binomial_distribution class
+          href: ../standard-library/negative-binomial-distribution-class.md
+        - name: normal_distribution class
+          href: ../standard-library/normal-distribution-class.md
+        - name: piecewise_constant_distribution class
+          href: ../standard-library/piecewise-constant-distribution-class.md
+        - name: piecewise_linear_distribution class
+          href: ../standard-library/piecewise-linear-distribution-class.md
+        - name: poisson_distribution class
+          href: ../standard-library/poisson-distribution-class.md
+        - name: random_device class
+          href: ../standard-library/random-device-class.md
+        - name: seed_seq class
+          href: ../standard-library/seed-seq-class.md
+        - name: shuffle_order_engine class
+          href: ../standard-library/shuffle-order-engine-class.md
+        - name: student_t_distribution class
+          href: ../standard-library/student-t-distribution-class.md
+        - name: subtract_with_carry_engine class
+          href: ../standard-library/subtract-with-carry-engine-class.md
+        - name: uniform_int_distribution class
+          href: ../standard-library/uniform-int-distribution-class.md
+        - name: uniform_real_distribution class
+          href: ../standard-library/uniform-real-distribution-class.md
+        - name: weibull_distribution class
+          href: ../standard-library/weibull-distribution-class.md
+    - name: <ratio>
+      href: ../standard-library/ratio.md
+    - name: <regex>
+      expanded: false
+      items: 
+        - name: <regex>
+          href: ../standard-library/regex.md
+        - name: <regex> functions
+          href: ../standard-library/regex-functions.md
+        - name: <regex> operators
+          href: ../standard-library/regex-operators.md
+        - name: <regex> typedefs
+          href: ../standard-library/regex-typedefs.md
+        - name: basic_regex class
+          href: ../standard-library/basic-regex-class.md
+        - name: match_results class
+          href: ../standard-library/match-results-class.md
+        - name: regex_constants namespace
+          href: ../standard-library/regex-constants-class.md
+        - name: regex_error class
+          href: ../standard-library/regex-error-class.md
+        - name: regex_iterator class
+          href: ../standard-library/regex-iterator-class.md
+        - name: regex_token_iterator class
+          href: ../standard-library/regex-token-iterator-class.md
+        - name: regex_traits class
+          href: ../standard-library/regex-traits-class.md
+        - name: regex_traits<char> class
+          href: ../standard-library/regex-traits-char-class.md
+        - name: regex_traits<wchar_t> class
+          href: ../standard-library/regex-traits-wchar-t-class.md
+        - name: sub_match class
+          href: ../standard-library/sub-match-class.md
+    - name: <scoped_allocator>
+      expanded: false
+      items: 
+        - name: <scoped_allocator>
+          href: ../standard-library/scoped-allocator.md
+        - name: <scoped_allocator> operators
+          href: ../standard-library/scoped-allocator-operators.md
+        - name: scoped_allocator_adaptor class
+          href: ../standard-library/scoped-allocator-adaptor-class.md
+    - name: <set>
+      expanded: false
+      items: 
+        - name: <set>
+          href: ../standard-library/set.md
+        - name: <set> functions
+          href: ../standard-library/set-functions.md
+        - name: <set> operators
+          href: ../standard-library/set-operators.md
+        - name: set class
+          href: ../standard-library/set-class.md
+        - name: multiset class
+          href: ../standard-library/multiset-class.md
+    - name: <shared_mutex>
+      href: ../standard-library/shared-mutex.md
+    - name: <sstream>
+      expanded: false
+      items: 
+        - name: <sstream>
+          href: ../standard-library/sstream.md
+        - name: <sstream> functions
+          href: ../standard-library/sstream-functions.md
+        - name: <sstream> typedefs
+          href: ../standard-library/sstream-typedefs.md
+        - name: basic_stringbuf class
+          href: ../standard-library/basic-stringbuf-class.md
+        - name: basic_istringstream class
+          href: ../standard-library/basic-istringstream-class.md
+        - name: basic_ostringstream class
+          href: ../standard-library/basic-ostringstream-class.md
+        - name: basic_stringstream class
+          href: ../standard-library/basic-stringstream-class.md
+    - name: <stack>
+      expanded: false
+      items: 
+        - name: <stack>
+          href: ../standard-library/stack.md
+        - name: <stack> operators
+          href: ../standard-library/stack-operators.md
+        - name: stack class
+          href: ../standard-library/stack-class.md
+    - name: <stdexcept>
+      expanded: false
+      items: 
+        - name: <stdexcept>
+          href: ../standard-library/stdexcept.md
+        - name: domain_error class
+          href: ../standard-library/domain-error-class.md
+        - name: invalid_argument class
+          href: ../standard-library/invalid-argument-class.md
+        - name: length_error class
+          href: ../standard-library/length-error-class.md
+        - name: logic_error class
+          href: ../standard-library/logic-error-class.md
+        - name: out_of_range class
+          href: ../standard-library/out-of-range-class.md
+        - name: overflow_error class
+          href: ../standard-library/overflow-error-class.md
+        - name: range_error class
+          href: ../standard-library/range-error-class.md
+        - name: runtime_error class
+          href: ../standard-library/runtime-error-class.md
+        - name: underflow_error class
+          href: ../standard-library/underflow-error-class.md
+    - name: <streambuf>
+      expanded: false
+      items: 
+        - name: <streambuf>
+          href: ../standard-library/streambuf.md
+        - name: <streambuf> typedefs
+          href: ../standard-library/streambuf-typedefs.md
+        - name: basic_streambuf class
+          href: ../standard-library/basic-streambuf-class.md
+    - name: <string>
+      expanded: false
+      items: 
+        - name: <string>
+          href: ../standard-library/string.md
+        - name: <string> functions
+          href: ../standard-library/string-functions.md
+        - name: <string> operators
+          href: ../standard-library/string-operators.md
+        - name: <string> typedefs
+          href: ../standard-library/string-typedefs.md
+        - name: basic_string class
+          href: ../standard-library/basic-string-class.md
+        - name: char_traits struct
+          href: ../standard-library/char-traits-struct.md
+        - name: char_traits<char> struct
+          href: ../standard-library/char-traits-char-struct.md
+        - name: char_traits<char16_t> struct
+          href: ../standard-library/char-traits-char16-t-struct.md
+        - name: char_traits<char32_t> struct
+          href: ../standard-library/char-traits-char32-t-struct.md
+        - name: char_traits<wchar_t> struct
+          href: ../standard-library/char-traits-wchar-t-struct.md
+    - name: <string_view>
+      expanded: false
+      items: 
+        - name: <string_view>
+          href: ../standard-library/string-view.md
+        - name: <string_view> operators
+          href: ../standard-library/string-view-operators.md
+        - name: <string_view> typedefs
+          href: ../standard-library/string-view-typedefs.md
+        - name: basic_string_view class
+          href: ../standard-library/basic-string-view-class.md
+        - name: hash<string_view> specialization
+          href: ../standard-library/string-view-hash.md
+    - name: <strstream>
+      expanded: false
+      items: 
+        - name: <strstream>
+          href: ../standard-library/strstream.md
+        - name: strstreambuf class
+          href: ../standard-library/strstreambuf-class.md
+        - name: istrstream class
+          href: ../standard-library/istrstream-class.md
+        - name: ostrstream class
+          href: ../standard-library/ostrstream-class.md
+        - name: strstream class
+          href: ../standard-library/strstream-class.md
+    - name: <system_error>
+      expanded: false
+      items: 
+        - name: <system_error>
+          href: ../standard-library/system-error.md
+        - name: <system_error> functions
+          href: ../standard-library/system-error-functions.md
+        - name: <system_error> operators
+          href: ../standard-library/system-error-operators.md
+        - name: <system_error> enums
+          href: ../standard-library/system-error-enums.md
+        - name: error_category class
+          href: ../standard-library/error-category-class.md
+        - name: error_code class
+          href: ../standard-library/error-code-class.md
+        - name: error_condition class
+          href: ../standard-library/error-condition-class.md
+        - name: is_error_code_enum class
+          href: ../standard-library/is-error-code-enum-class.md
+        - name: is_error_condition_enum class
+          href: ../standard-library/is-error-condition-enum-class.md
+        - name: system_error class
+          href: ../standard-library/system-error-class.md
+    - name: <thread>
+      expanded: false
+      items: 
+        - name: <thread>
+          href: ../standard-library/thread.md
+        - name: <thread> functions
+          href: ../standard-library/thread-functions.md
+        - name: <thread> operators
+          href: ../standard-library/thread-operators.md
+        - name: hash struct (C++ Standard Library)
+          href: ../standard-library/hash-structure-stl.md
+        - name: thread class
+          href: ../standard-library/thread-class.md
+    - name: <tuple>
+      expanded: false
+      items: 
+        - name: <tuple>
+          href: ../standard-library/tuple.md
+        - name: <tuple> functions
+          href: ../standard-library/tuple-functions.md
+        - name: <tuple> operators
+          href: ../standard-library/tuple-operators.md
+        - name: tuple class
+          href: ../standard-library/tuple-class.md
+        - name: tuple_element class <tuple>
+          href: ../standard-library/tuple-element-class-tuple.md
+        - name: tuple_size class <tuple>
+          href: ../standard-library/tuple-size-class-tuple.md
+    - name: <type_traits>
+      expanded: false
+      items: 
+        - name: <type_traits>
+          href: ../standard-library/type-traits.md
+        - name: add_const class
+          href: ../standard-library/add-const-class.md
+        - name: add_cv class
+          href: ../standard-library/add-cv-class.md
+        - name: add_lvalue_reference class
+          href: ../standard-library/add-lvalue-reference-class.md
+        - name: add_rvalue_reference class
+          href: ../standard-library/add-rvalue-reference-class.md
+        - name: add_pointer class
+          href: ../standard-library/add-pointer-class.md
+        - name: add_volatile class
+          href: ../standard-library/add-volatile-class.md
+        - name: aligned_storage class
+          href: ../standard-library/aligned-storage-class.md
+        - name: aligned_union class
+          href: ../standard-library/aligned-union-class.md
+        - name: alignment_of class
+          href: ../standard-library/alignment-of-class.md
+        - name: common_type class
+          href: ../standard-library/common-type-class.md
+        - name: conditional class
+          href: ../standard-library/conditional-class.md
+        - name: decay class
+          href: ../standard-library/decay-class.md
+        - name: enable_if class
+          href: ../standard-library/enable-if-class.md
+        - name: extent class
+          href: ../standard-library/extent-class.md
+        - name: integer_sequence class
+          href: ../standard-library/integer-sequence-class.md
+        - name: integral_constant class, bool_constant class
+          href: ../standard-library/integral-constant-class-bool-constant-class.md
+        - name: invoke_result class
+          href: ../standard-library/invoke-result-class.md
+        - name: is_abstract class
+          href: ../standard-library/is-abstract-class.md
+        - name: is_arithmetic class
+          href: ../standard-library/is-arithmetic-class.md
+        - name: is_array class
+          href: ../standard-library/is-array-class.md
+        - name: is_assignable class
+          href: ../standard-library/is-assignable-class.md
+        - name: is_base_of class
+          href: ../standard-library/is-base-of-class.md
+        - name: is_class class
+          href: ../standard-library/is-class-class.md
+        - name: is_compound class
+          href: ../standard-library/is-compound-class.md
+        - name: is_const class
+          href: ../standard-library/is-const-class.md
+        - name: is_constructible class
+          href: ../standard-library/is-constructible-class.md
+        - name: is_convertible class
+          href: ../standard-library/is-convertible-class.md
+        - name: is_copy_assignable class
+          href: ../standard-library/is-copy-assignable-class.md
+        - name: is_copy_constructible class
+          href: ../standard-library/is-copy-constructible-class.md
+        - name: is_default_constructible class
+          href: ../standard-library/is-default-constructible-class.md
+        - name: is_destructible class
+          href: ../standard-library/is-destructible-class.md
+        - name: is_empty class
+          href: ../standard-library/is-empty-class.md
+        - name: is_enum class
+          href: ../standard-library/is-enum-class.md
+        - name: is_final class
+          href: ../standard-library/is-final-class.md
+        - name: is_floating_point class
+          href: ../standard-library/is-floating-point-class.md
+        - name: is_function class
+          href: ../standard-library/is-function-class.md
+        - name: is_fundamental class
+          href: ../standard-library/is-fundamental-class.md
+        - name: is_integral class
+          href: ../standard-library/is-integral-class.md
+        - name: is_invocable classes
+          href: ../standard-library/is-invocable-classes.md
+        - name: is_literal_type class
+          href: ../standard-library/is-literal-type-class.md
+        - name: is_lvalue_reference class
+          href: ../standard-library/is-lvalue-reference-class.md
+        - name: is_member_function_pointer class
+          href: ../standard-library/is-member-function-pointer-class.md
+        - name: is_member_object_pointer class
+          href: ../standard-library/is-member-object-pointer-class.md
+        - name: is_member_pointer class
+          href: ../standard-library/is-member-pointer-class.md
+        - name: is_move_assignable class
+          href: ../standard-library/is-move-assignable-class.md
+        - name: is_move_constructible class
+          href: ../standard-library/is-move-constructible-class.md
+        - name: is_nothrow_assignable class
+          href: ../standard-library/is-nothrow-assignable-class.md
+        - name: is_nothrow_constructible class
+          href: ../standard-library/is-nothrow-constructible-class.md
+        - name: is_nothrow_copy_assignable class
+          href: ../standard-library/is-nothrow-copy-assignable-class.md
+        - name: is_nothrow_copy_constructible class
+          href: ../standard-library/is-nothrow-copy-constructible-class.md
+        - name: is_nothrow_default_constructible class
+          href: ../standard-library/is-nothrow-default-constructible-class.md
+        - name: is_nothrow_destructible class
+          href: ../standard-library/is-nothrow-destructible-class.md
+        - name: is_nothrow_move_assignable class
+          href: ../standard-library/is-nothrow-move-assignable-class.md
+        - name: is_nothrow_move_constructible class
+          href: ../standard-library/is-nothrow-move-constructible-class.md
+        - name: is_null_pointer class
+          href: ../standard-library/is-null-pointer-class.md
+        - name: is_object class
+          href: ../standard-library/is-object-class.md
+        - name: is_pod class
+          href: ../standard-library/is-pod-class.md
+        - name: is_pointer class
+          href: ../standard-library/is-pointer-class.md
+        - name: is_polymorphic class
+          href: ../standard-library/is-polymorphic-class.md
+        - name: is_reference class
+          href: ../standard-library/is-reference-class.md
+        - name: is_rvalue_reference class
+          href: ../standard-library/is-rvalue-reference-class.md
+        - name: is_same class
+          href: ../standard-library/is-same-class.md
+        - name: is_scalar class
+          href: ../standard-library/is-scalar-class.md
+        - name: is_signed class
+          href: ../standard-library/is-signed-class.md
+        - name: is_standard_layout class
+          href: ../standard-library/is-standard-layout-class.md
+        - name: is_trivial class
+          href: ../standard-library/is-trivial-class.md
+        - name: is_trivially_assignable class
+          href: ../standard-library/is-trivially-assignable-class.md
+        - name: is_trivially_constructible class
+          href: ../standard-library/is-trivially-constructible-class.md
+        - name: is_trivially_copy_assignable class
+          href: ../standard-library/is-trivially-copy-assignable-class.md
+        - name: is_trivially_copy_constructible class
+          href: ../standard-library/is-trivially-copy-constructible-class.md
+        - name: is_trivially_copyable class
+          href: ../standard-library/is-trivially-copyable-class.md
+        - name: is_trivially_default_constructible class
+          href: ../standard-library/is-trivially-default-constructible-class.md
+        - name: is_trivially_destructible class
+          href: ../standard-library/is-trivially-destructible-class.md
+        - name: is_trivially_move_assignable class
+          href: ../standard-library/is-trivially-move-assignable-class.md
+        - name: is_trivially_move_constructible class
+          href: ../standard-library/is-trivially-move-constructible-class.md
+        - name: is_union class
+          href: ../standard-library/is-union-class.md
+        - name: is_unsigned class
+          href: ../standard-library/is-unsigned-class.md
+        - name: is_void class
+          href: ../standard-library/is-void-class.md
+        - name: is_volatile class
+          href: ../standard-library/is-volatile-class.md
+        - name: make_signed class
+          href: ../standard-library/make-signed-class.md
+        - name: make_unsigned class
+          href: ../standard-library/make-unsigned-class.md
+        - name: rank class
+          href: ../standard-library/rank-class.md
+        - name: remove_all_extents class
+          href: ../standard-library/remove-all-extents-class.md
+        - name: remove_const class
+          href: ../standard-library/remove-const-class.md
+        - name: remove_cv class
+          href: ../standard-library/remove-cv-class.md
+        - name: remove_extent class
+          href: ../standard-library/remove-extent-class.md
+        - name: remove_pointer class
+          href: ../standard-library/remove-pointer-class.md
+        - name: remove_reference class
+          href: ../standard-library/remove-reference-class.md
+        - name: remove_volatile class
+          href: ../standard-library/remove-volatile-class.md
+        - name: result_of class
+          href: ../standard-library/result-of-class.md
+        - name: underlying_type class
+          href: ../standard-library/underlying-type-class.md
+        - name: <type_traits> functions
+          href: ../standard-library/type-traits-functions.md
+        - name: <type_traits> typedefs
+          href: ../standard-library/type-traits-typedefs.md
+    - name: <typeindex>
+      expanded: false
+      items: 
+        - name: <typeindex>
+          href: ../standard-library/typeindex.md
+        - name: hash struct
+          href: ../standard-library/hash-structure.md
+        - name: type_index class
+          href: ../standard-library/type-index-class.md
+    - name: <typeinfo>
+      href: ../standard-library/typeinfo.md
+    - name: <unordered_map>
+      expanded: false
+      items: 
+        - name: <unordered_map>
+          href: ../standard-library/unordered-map.md
+        - name: <unordered_map> functions
+          href: ../standard-library/unordered-map-functions.md
+        - name: <unordered_map> operators
+          href: ../standard-library/unordered-map-operators.md
+        - name: unordered_map class
+          href: ../standard-library/unordered-map-class.md
+        - name: unordered_multimap class
+          href: ../standard-library/unordered-multimap-class.md
+    - name: <unordered_set>
+      expanded: false
+      items: 
+        - name: <unordered_set>
+          href: ../standard-library/unordered-set.md
+        - name: <unordered_set> functions
+          href: ../standard-library/unordered-set-functions.md
+        - name: <unordered_set> operators
+          href: ../standard-library/unordered-set-operators.md
+        - name: unordered_set class
+          href: ../standard-library/unordered-set-class.md
+        - name: unordered_multiset class
+          href: ../standard-library/unordered-multiset-class.md
+    - name: <utility>
+      expanded: false
+      items: 
+        - name: <utility>
+          href: ../standard-library/utility.md
+        - name: <utility> functions
+          href: ../standard-library/utility-functions.md
+        - name: <utility> operators
+          href: ../standard-library/utility-operators.md
+        - name: identity struct
+          href: ../standard-library/identity-structure.md
+        - name: pair struct
+          href: ../standard-library/pair-structure.md
+    - name: <valarray>
+      expanded: false
+      items: 
+        - name: <valarray>
+          href: ../standard-library/valarray.md
+        - name: <valarray> functions
+          href: ../standard-library/valarray-functions.md
+        - name: <valarray> operators
+          href: ../standard-library/valarray-operators.md
+        - name: gslice class
+          href: ../standard-library/gslice-class.md
+        - name: gslice_array class
+          href: ../standard-library/gslice-array-class.md
+        - name: indirect_array class
+          href: ../standard-library/indirect-array-class.md
+        - name: mask_array class
+          href: ../standard-library/mask-array-class.md
+        - name: slice class
+          href: ../standard-library/slice-class.md
+        - name: slice_array class
+          href: ../standard-library/slice-array-class.md
+        - name: valarray class
+          href: ../standard-library/valarray-class.md
+        - name: valarray<bool> class
+          href: ../standard-library/valarray-bool-class.md
+    - name: <variant>
+      expanded: false
+      items:
+        - name: <variant>
+          href: ../standard-library/variant.md
+        - name: <variant> functions
+          href: ../standard-library/variant-functions.md
+        - name: <variant> operators
+          href: ../standard-library/variant-operators.md
+        - name: variant class
+          href: ../standard-library/variant-class.md
+    - name: <vector>
+      expanded: false
+      items: 
+        - name: <vector>
+          href: ../standard-library/vector.md
+        - name: vector class
+          href: ../standard-library/vector-class.md
+        - name: vector<bool> class
+          expanded: false
+          items: 
+            - name: vector<bool> class
+              href: ../standard-library/vector-bool-class.md
+            - name: "vector<bool>::reference class"
+              href: ../standard-library/vector-bool-reference-class.md
+              expanded: false
+              items: 
+                - name: "vector<bool>::reference::flip"
+                  href: ../standard-library/vector-bool-reference-flip.md
+                - name: "vector<bool>::reference::operator bool"
+                  href: ../standard-library/vector-bool-reference-operator-bool.md
+                - name: "vector<bool>::reference::operator="
+                  href: ../standard-library/vector-bool-reference-operator-assign.md
+        - name: <vector> functions
+          href: ../standard-library/vector-functions.md
+        - name: <vector> operators
+          href: ../standard-library/vector-operators.md
+- name: C++ Standard Library overview
+  expanded: false
+  items: 
+    - name: C++ Standard Library overview
+      href: ../standard-library/cpp-standard-library-overview.md
+    - name: Using C++ Library headers
+      href: ../standard-library/using-cpp-library-headers.md
+    - name: C++ Library conventions
+      href: ../standard-library/cpp-library-conventions.md
+    - name: C++ program startup and termination
+      href: ../standard-library/cpp-program-startup-and-termination.md
+    - name: "Safe libraries: C++ Standard Library"
+      href: ../standard-library/safe-libraries-cpp-standard-library.md
+      expanded: false
+      items: 
+        - name: _ITERATOR_DEBUG_LEVEL
+          href: ../standard-library/iterator-debug-level.md
+        - name: _SCL_SECURE_NO_WARNINGS
+          href: ../standard-library/scl-secure-no-warnings.md
+        - name: Checked iterators
+          expanded: false
+          items: 
+            - name: Checked iterators
+              href: ../standard-library/checked-iterators.md
+            - name: _SECURE_SCL
+              href: ../standard-library/secure-scl.md
+        - name: Debug iterator support
+          expanded: false
+          items: 
+            - name: Debug iterator support
+              href: ../standard-library/debug-iterator-support.md
+            - name: _HAS_ITERATOR_DEBUGGING
+              href: ../standard-library/has-iterator-debugging.md
+    - name: Thread safety in the C++ Standard Library
+      href: ../standard-library/thread-safety-in-the-cpp-standard-library.md
+    - name: stdext namespace
+      href: ../standard-library/stdext-namespace.md
+- name: C++ Standard Library containers
+  expanded: false
+  items: 
+    - name: C++ Standard Library containers
+      href: ../standard-library/stl-containers.md
+    - name: <sample container>
+      expanded: false
+      items: 
+        - name: <sample container>
+          href: ../standard-library/sample-container.md
+        - name: <sample container> operators
+          expanded: false
+          items: 
+            - name: <sample container> operators
+              href: ../standard-library/sample-container-operators.md
+            - name: operator!=
+              href: ../standard-library/operator-inequality.md
+            - name: operator== (<sample container>)
+              href: ../standard-library/operator-equality-sample-container.md
+            - name: operator< (<sample container>)
+              href: ../standard-library/operator-less-than-sample-container.md
+            - name: operator<= (<sample container>)
+              href: ../standard-library/operator-less-or-equal-sample-container.md
+            - name: operator> (<sample container>)
+              href: ../standard-library/operator-greater-than-sample-container.md
+            - name: operator>=
+              href: ../standard-library/operator-greater-or-equal.md
+        - name: <sample container> specialized template functions
+          expanded: false
+          items: 
+            - name: <sample container> specialized template functions
+              href: ../standard-library/sample-container-specialized-template-functions.md
+            - name: swap (<sample container>)
+              href: ../standard-library/swap-sample-container.md
+        - name: <sample container> classes
+          expanded: false
+          items: 
+            - name: <sample container> classes
+              href: ../standard-library/sample-container-classes.md
+            - name: Sample container class
+              expanded: false
+              items: 
+                - name: Sample container class
+                  href: ../standard-library/sample-container-class.md
+                - name: Sample container members
+                  href: ../standard-library/sample-container-members.md
+                - name: Sample container typedefs
+                  expanded: false
+                  items: 
+                    - name: Sample container typedefs
+                      href: ../standard-library/sample-container-typedefs.md
+                    - name: "Container class::const_iterator"
+                      href: ../standard-library/container-class-const-iterator.md
+                    - name: "Container class::const_reference"
+                      href: ../standard-library/container-class-const-reference.md
+                    - name: "Container class::const_reverse_iterator"
+                      href: ../standard-library/container-class-const-reverse-iterator.md
+                    - name: "Container class::difference_type"
+                      href: ../standard-library/container-class-difference-type.md
+                    - name: "Container class::iterator"
+                      href: ../standard-library/container-class-iterator.md
+                    - name: "Container class::reference"
+                      href: ../standard-library/container-class-reference.md
+                    - name: "Container class::reverse_iterator"
+                      href: ../standard-library/container-class-reverse-iterator.md
+                    - name: "Container class::size_type"
+                      href: ../standard-library/container-class-size-type.md
+                    - name: "Container class::value_type"
+                      href: ../standard-library/container-class-value-type.md
+                - name: Sample container member functions
+                  expanded: false
+                  items: 
+                    - name: Sample container member functions
+                      href: ../standard-library/sample-container-member-functions.md
+                    - name: "Container class::begin"
+                      href: ../standard-library/container-class-begin.md
+                    - name: "Container class::clear"
+                      href: ../standard-library/container-class-clear.md
+                    - name: "Container class::empty"
+                      href: ../standard-library/container-class-empty.md
+                    - name: "Container class::end"
+                      href: ../standard-library/container-class-end.md
+                    - name: "Container class::erase"
+                      href: ../standard-library/container-class-erase.md
+                    - name: "Container class::max_size"
+                      href: ../standard-library/container-class-max-size.md
+                    - name: "Container class::rbegin"
+                      href: ../standard-library/container-class-rbegin.md
+                    - name: "Container class::rend"
+                      href: ../standard-library/container-class-rend.md
+                    - name: "Container class::size"
+                      href: ../standard-library/container-class-size.md
+                    - name: "Container class::swap"
+                      href: ../standard-library/container-class-swap.md
+- name: Iterators
+  href: ../standard-library/iterators.md
+- name: Algorithms
+  href: ../standard-library/algorithms.md
+- name: Allocators
+  href: ../standard-library/allocators.md
+- name: Function objects in the C++ Standard Library
+  href: ../standard-library/function-objects-in-the-stl.md
+- name: iostream programming
+  expanded: false
+  items: 
+    - name: iostream programming
+      href: ../standard-library/iostream-programming.md
+    - name: String and I/O formatting
+      href: ../text/string-and-i-o-formatting-modern-cpp.md
+    - name: What a stream is
+      expanded: false
+      items: 
+        - name: What a stream is
+          href: ../standard-library/what-a-stream-is.md
+        - name: Input-output alternatives
+          href: ../standard-library/input-output-alternatives.md
+    - name: Output streams
+      expanded: false
+      items: 
+        - name: Output streams
+          href: ../standard-library/output-streams.md
+        - name: Constructing output stream objects
+          href: ../standard-library/constructing-output-stream-objects.md
+        - name: Using insertion operators and controlling format
+          href: ../standard-library/using-insertion-operators-and-controlling-format.md
+        - name: Output file stream member functions
+          href: ../standard-library/output-file-stream-member-functions.md
+        - name: Effects of buffering
+          href: ../standard-library/effects-of-buffering.md
+        - name: Binary output files
+          href: ../standard-library/binary-output-files.md
+        - name: Overloading the << operator for your own classes
+          href: ../standard-library/overloading-the-output-operator-for-your-own-classes.md
+        - name: Writing your own manipulators without arguments
+          href: ../standard-library/writing-your-own-manipulators-without-arguments.md
+    - name: Input streams
+      expanded: false
+      items: 
+        - name: Input streams
+          href: ../standard-library/input-streams.md
+        - name: Constructing input stream objects
+          href: ../standard-library/constructing-input-stream-objects.md
+        - name: Using extraction operators
+          href: ../standard-library/using-extraction-operators.md
+        - name: Testing for extraction errors
+          href: ../standard-library/testing-for-extraction-errors.md
+        - name: Input stream manipulators
+          href: ../standard-library/input-stream-manipulators.md
+        - name: Input stream member functions
+          href: ../standard-library/input-stream-member-functions.md
+        - name: Overloading the >> operator for your own classes
+          href: ../standard-library/overloading-the-input-operator-for-your-own-classes.md
+    - name: Input-output streams
+      href: ../standard-library/input-output-streams.md
+    - name: iostreams conventions
+      href: ../standard-library/iostreams-conventions.md
+    - name: Custom manipulators with arguments
+      expanded: false
+      items: 
+        - name: Custom manipulators with arguments
+          href: ../standard-library/custom-manipulators-with-arguments.md
+        - name: Output stream manipulators with one argument (int or long)
+          href: ../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md
+        - name: Other one-argument output stream manipulators
+          href: ../standard-library/other-one-argument-output-stream-manipulators.md
+- name: Regular expressions (C++)
+  href: ../standard-library/regular-expressions-cpp.md
+- name: File system navigation
+  href: ../standard-library/file-system-navigation.md
