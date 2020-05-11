@@ -1,152 +1,95 @@
 ---
-title: "&lt;array&gt; functions"
-ms.date: "11/04/2016"
-f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]
-ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
-helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++]"]
+title: "&lt;span&gt; functions"
+ms.date: "5/11//2020"
+f1_keywords: ["span/std::span::as_bytes", "span/std::as_writeable_bytes"]
+ms.assetid: b78f2647-79f8-4c26-9588-ffa2bc82b3dc
+helpviewer_keywords: ["std::span [C++], as_writeable_bytes", "std::as_bytes [C++]"]
 ---
-# &lt;array&gt; functions
+# &lt;span&gt; functions
 
-The \<array> header includes two non-member functions, `get` and `swap`, that operate on **array** objects.
+The \<span> header includes two non-member functions, `as_bytes` and `as_writeable_bytes`, that operate on **span** objects.
 
-|||
+| **Non-member functions** | **Description** |
 |-|-|
-|[get](#get)|[swap](#swap)|
+|[as_bytes](#as_bytes) | Get a read-only view of the object representation of the elements in the span. |
+|[as_writeable_bytes](#as_writable_bytes) | Get a read/write view to the object representation of the elements in the span. |
 
-## <a name="get"></a> get
+## <a name="as_bytes"></a> as_bytes
 
-Returns a reference to the specified element of the array.
+Get a read-only view of the object representation of the elements in the span.
 
 ```cpp
-template <int Index, class T, size_t N>
-constexpr T& get(array<T, N>& arr) noexcept;
-
-template <int Index, class T, size_t N>
-constexpr const T& get(const array<T, N>& arr) noexcept;
-
-template <int Index, class T, size_t N>
-constexpr T&& get(array<T, N>&& arr) noexcept;
+template <class T, size_t Extent>
+auto as_bytes(span<T, Extent> span) noexcept
 ```
 
 ### Parameters
-
-*Index*\
-The element offset.
 
 *T*\
-The type of an element.
+The type of the elements in the span.
 
-*N*\
-The number of elements in the array.
+*Extent*\
+The number of elements in the span (if known at compile time), otherwise `Dynamic_Extent` indicating that the number of elements is not known until runtime.
 
-*arr*\
-The array to select from.
+*span*\
+The span to get the raw representation of.
+
+### Return Value
+
+A `const byte*` to the first item stored in the span. If the span is empty, returns `nullptr`.
 
 ### Example
 
 ```cpp
-#include <array>
+#include <span>
 #include <iostream>
 
-using namespace std;
-
-typedef array<int, 4> MyArray;
-
-int main()
+void main()
 {
-    MyArray c0 { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (const auto& e : c0)
-    {
-        cout << " " << e;
-    }
-    cout << endl;
-
-    // display odd elements " 1 3"
-    cout << " " << get<1>(c0);
-    cout << " " << get<3>(c0) << endl;
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    auto bytes = std::as_bytes(mySpan);
 }
 ```
 
-```Output
-0 1 2 3
-1 3
-```
+## <a name="as_writable_bytes"></a> as_writable_bytes
 
-## <a name="swap"></a> swap
-
-A non-member template specialization of `std::swap` that swaps two **array** objects.
+If `T` isn't `const`, gets a read/write view to the raw byte representation of the elements in the span.
 
 ```cpp
-template <class Ty, std::size_t N>
-void swap(array<Ty, N>& left, array<Ty, N>& right);
+template <class T, size_t Extent>
+auto as_writeable_bytes(span<T, Extent> span) noexcept
 ```
 
 ### Parameters
 
-*Ty*\
-The type of an element.
+*T*\
+The type of the elements in the span.
 
-*N*\
-The size of the array.
+*Extent*\
+The number of elements in the span (if known at compile time), otherwise `Dynamic_Extent` indicating that the number of elements is not known until runtime.
 
-*left*\
-The first array to swap.
+*span*\
+The span to get the raw representation of.
 
-*right*\
-The second array to swap.
+### Return Value
 
-### Remarks
-
-The template function executes `left.swap(right)`.
+A `byte*` to the first item stored in the span. If the span is empty, returns `nullptr`.
 
 ### Example
 
 ```cpp
-// std__array__swap.cpp
-// compile with: /EHsc
-#include <array>
+#include <span>
 #include <iostream>
 
-typedef std::array<int, 4> Myarray;
-int main()
+void main()
 {
-    Myarray c0 = { 0, 1, 2, 3 };
-
-    // display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
-    std::cout << std::endl;
-
-    Myarray c1 = { 4, 5, 6, 7 };
-    c0.swap(c1);
-
-    // display swapped contents " 4 5 6 7"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
-    std::cout << std::endl;
-
-    swap(c0, c1);
-
-    // display swapped contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
-    std::cout << std::endl;
-
-    return (0);
+    int a[] = { 0,1,2 };
+    span <int> mySpan(a);
+    auto bytes = std::as_writable_bytes(mySpan);
 }
-```
-
-```Output
-0 1 2 3
-4 5 6 7
-0 1 2 3
 ```
 
 ## See also
 
-[\<array>](../standard-library/array.md)
+[\<span>](span.md)

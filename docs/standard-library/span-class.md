@@ -53,28 +53,21 @@ JTW |[end](#end) | Returns an iterator pointing to the end of the span. |
 JTW |[rbegin](#rbegin) | Returns a reverse iterator pointing to the last element of the span, that is, the beginning of the reversed span.|
 JTW |[rend](#rend) | Returns a reverse iterator pointing to the front  of the span, that is, the end of the reversed span.|
 | **Access elements**||
-JTW |[data](#data) | Get the address of the first element in the span.|
 JTW |[back](#back) | Get the last element in the span.|
+JTW |[data](#data) | Get the address of the first element in the span.|
 JTW |[front](#front) | Get the first element in the span.|
 JTW |[operator\[\]](#op_at) | Get the element at the index.|
 | **Observers** ||
+JTW |[empty](#empty)| Tests whether the span is empty.|
 JTW |[size](#size) | Returns the number of elements in the span.|
 JTW |[size_bytes](#size_bytes) | Returns the size of the span in bytes.|
-JTW |[empty](#empty)| Tests whether the span is empty.|
-| ** Subviews ** ||
+| **Subviews** ||
 JTW | [first](#first_view) | Get a subspan from the front of the span.|
 JTW | [last](#last_view) | Get a subspan from the back of the span.|
 JTW | [subspan](#sub_view) | Gets a subspan from anywhere in the span.|
 | **Operators** | **Description** |
 JTW|[span::operator=](#op_eq)| Replaces the span.|
 JTW|[span::operator\[\]](#op_at)| Access an element at a specified position.|
-| **Non-member constants** | **Description** |
-|-|-|
-| [dynamic_extent](#const_dynamicextent) | Indicates that the span size is determined at runtime rather than compile time. |
-| **Non-member functions** | **Description** |
-|-|-|
-JTW |[as_bytes](#as_bytes) | Get a readonly view to the object representation of the elements in the span. |
-JTW |[as_writeable_bytes](#as_writable_bytes) | Get a read/write view to the object representation of the elements in the span. |
 
 ## Remarks
 
@@ -87,60 +80,6 @@ Unlike array or vector, span doesn't "own” the elements placed inside it. A sp
 **Header:** \<span>
 
 **Namespace:** std
-
-## <a name="as_bytes"></a> as_bytes
-
-Get a view to the raw byte representation of the elements in the span.
-
-```cpp
-template <class T, size_t Extent>
-auto as_bytes(span<T, Extent> span) noexcept
-```
-
-### Return Value
-
-A `const byte*` to the first item stored in the span. If the span is empty, returns `nullptr`.
-
-### Example
-
-```cpp
-#include <span>
-#include <iostream>
-
-void main()
-{
-    int a[] = { 0,1,2 };
-    span <int> mySpan(a);
-    auto bytes = std::as_bytes(mySpan);
-}
-```
-
-## <a name="as_writable_bytes"></a> as_writable_bytes
-
-Get a read/write view to the raw byte representation of the elements in the span.
-
-```cpp
-template <class T, size_t Extent>
-auto as_bytes(span<T, Extent> span) noexcept
-```
-
-### Return Value
-
-A `byte*` to the first item stored in the span. If the span is empty, returns `nullptr`.
-
-### Example
-
-```cpp
-#include <span>
-#include <iostream>
-
-void main()
-{
-    int a[] = { 0,1,2 };
-    span <int> mySpan(a);
-    auto bytes = std::as_writable_bytes(mySpan);
-}
-```
 
 ## <a name="back"></a> span::back
 
@@ -906,7 +845,6 @@ constexpr span(const std::array<T, N>& arr) noexcept;
 JTW template<size_t N>
 constexpr span(type_identity_t<element_type> (&arr)[N]) noexcept;
 
-// move
 JTW template<class R>
 constexpr explicit(Extent != dynamic_extent) span(R&& r);
 
@@ -978,8 +916,8 @@ Only particpates in overload resolution if template parameter `Extent` is `dynam
 
 **`span(R&& r)`**
 
-Move constructor.
-Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`
+Constructs a span from a range.
+Only participates in overload resolution if template parameter `Extent` isn't `dynamic_extent`.
 
 ### Example
 
@@ -997,13 +935,13 @@ void main()
         x[i] = i;
     }
     
-    span <int,dynamic_extent> s0;
-    span<int, MAX> s1{ x }; // fixed-size span: compiler error if size of x doesn't match template argument MAX
-    span<int> s2{ x }; // size is inferred from x
-    span<const int> s3 = s2; // a legal conversion (non const to const)
-    span<int, dynamic_extent> s5 = s2; // copy constructor
+    span <int,dynamic_extent> span0;
+    span<int, MAX> span1{ x }; // fixed-size span: compiler error if size of x doesn't match template argument MAX
+    span<int> span2{ x }; // size is inferred from x
+    span<const int> span3 = span2; // a legal conversion (non const to const)
+    span<int, dynamic_extent> span5 = span2; // copy constructor
     // span(const span<OtherElementType, OtherExtent>& s)
-    span<int, dynamic_extent> s4(s5);
+    span<int, dynamic_extent> s4(span5);
 }
 ```
 
@@ -1105,8 +1043,6 @@ void main()
 ```
 
 ## Deduction guides
-
-
 
 ## See also
 
