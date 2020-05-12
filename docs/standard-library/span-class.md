@@ -34,40 +34,40 @@ class span;
 
 | **Type Definitions** | **Description** |
 |-|-|
-JTW | [const_pointer](#const_pointer) | The type of a const pointer to a span element |
-JTW | [const_reference](#const_reference) | The type of a const reference to an element. |
-JTW | [difference_type](#difference_type) | The type of a signed distance between two elements. |
-JTW | [element_type](#element_type) | The type of a span element. |
-JTW | [iterator](#iterator) | The type of an iterator for a span. |
-JTW| [pointer](#pointer) | The type of a pointer to an element. |
-JTW | [reference](#reference) | The type of a reference to an element. |
-JTW | [reverse_iterator](#reverse_iterator) | The type of a reverse iterator for a span. |
-JTW | [size_type](#size_type) | The type of an unsigned distance between two elements in the span. |
-JTW | [value_type](#value_type) | The type of an element without `const` or `volatile` qualifications (`std::remove_cv_t<T>`). |
+| [const_pointer](#const_pointer) | The type of a const pointer to a span element |
+| [const_reference](#const_reference) | The type of a const reference to an element. |
+| [difference_type](#difference_type) | The type of a signed distance between two elements. |
+| [element_type](#element_type) | The type of a span element. |
+| [iterator](#iterator) | The type of an iterator for a span. |
+| [pointer](#pointer) | The type of a pointer to an element. |
+| [reference](#reference) | The type of a reference to an element. |
+| [reverse_iterator](#reverse_iterator) | The type of a reverse iterator for a span. |
+| [size_type](#size_type) | The type of an unsigned distance between two elements in the span. |
+| [value_type](#value_type) | The type of an element without `const` or `volatile` qualifications (`std::remove_cv_t<T>`). |
 | **Constructors** | **Description** |
 |-|-|
-JTW |[span](#span)| Constructs a `span`.|
+|[span](#span)| Constructs a `span`.|
 | **Iterator support** ||
-JTW |[begin](#begin) | Returns an iterator pointing to the first element in the span.|
-JTW |[end](#end) | Returns an iterator pointing to the end of the span. |
-JTW |[rbegin](#rbegin) | Returns a reverse iterator pointing to the last element of the span, that is, the beginning of the reversed span.|
-JTW |[rend](#rend) | Returns a reverse iterator pointing to the front  of the span, that is, the end of the reversed span.|
+|[begin](#begin) | Returns an iterator pointing to the first element in the span.|
+|[end](#end) | Returns an iterator pointing to the end of the span. |
+|[rbegin](#rbegin) | Returns a reverse iterator pointing to the last element of the span, that is, the beginning of the reversed span.|
+|[rend](#rend) | Returns a reverse iterator pointing to the front  of the span, that is, the end of the reversed span.|
 | **Access elements**||
-JTW |[back](#back) | Get the last element in the span.|
-JTW |[data](#data) | Get the address of the first element in the span.|
-JTW |[front](#front) | Get the first element in the span.|
-JTW |[operator\[\]](#op_at) | Get the element at the index.|
+|[back](#back) | Get the last element in the span.|
+|[data](#data) | Get the address of the first element in the span.|
+|[front](#front) | Get the first element in the span.|
+|[operator\[\]](#op_at) | Get the element at the index.|
 | **Observers** ||
-JTW |[empty](#empty)| Tests whether the span is empty.|
-JTW |[size](#size) | Returns the number of elements in the span.|
-JTW |[size_bytes](#size_bytes) | Returns the size of the span in bytes.|
+|[empty](#empty)| Tests whether the span is empty.|
+|[size](#size) | Returns the number of elements in the span.|
+|[size_bytes](#size_bytes) | Returns the size of the span in bytes.|
 | **Subviews** ||
-JTW | [first](#first_view) | Get a subspan from the front of the span.|
-JTW | [last](#last_view) | Get a subspan from the back of the span.|
-JTW | [subspan](#sub_view) | Gets a subspan from anywhere in the span.|
+| [first](#first_view) | Get a subspan from the front of the span.|
+| [last](#last_view) | Get a subspan from the back of the span.|
+| [subspan](#sub_view) | Gets a subspan from anywhere in the span.|
 | **Operators** | **Description** |
-JTW|[span::operator=](#op_eq)| Replaces the span.|
-JTW|[span::operator\[\]](#op_at)| Access an element at a specified position.|
+|[span::operator=](#op_eq)| Replaces the span.|
+|[span::operator\[\]](#op_at)| Access an element at a specified position.|
 
 ## Remarks
 
@@ -825,33 +825,33 @@ void main()
 `span` constructors.
 
 ```cpp
-JTW constexpr span() noexcept
+constexpr span() noexcept
 requires (Extent == 0 || Extent == dynamic_extent) = default;
 
-JTW template<class It>
+template<class It>
 constexpr explicit(Extent != dynamic_extent) 
 span(It first, size_type count);
 
-JTW template<class It, class End>
+template<class It, class End>
 constexpr explicit(Extent != dynamic_extent) 
 span(It first, End last);
 
-JTW template<class T, size_t N>
+template<class T, size_t N>
 constexpr span(std::array<T, N>& arr) noexcept;
 
-JTW template<class T, size_t N>
+template<class T, size_t N>
 constexpr span(const std::array<T, N>& arr) noexcept;
 
-JTW template<size_t N>
+template<size_t N>
 constexpr span(type_identity_t<element_type> (&arr)[N]) noexcept;
 
-JTW template<class R>
+template<class R>
 constexpr explicit(Extent != dynamic_extent) span(R&& r);
 
 // copy ctor
-JTW constexpr span(const span& other) noexcept = default;
+constexpr span(const span& other) noexcept = default;
 
-JTW template<class OtherElementType, size_t OtherExtent>
+template<class OtherElementType, size_t OtherExtent>
 constexpr explicit(Extent != dynamic_extent && OtherExtent == dynamic_extent)
 span(const span<OtherElementType, OtherExtent>& s) noexcept;
 ```
