@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::span [C++], as_writeable_bytes", "std::as_bytes [C++
 ---
 # &lt;span&gt; functions
 
-The \<span> header includes two non-member functions, `as_bytes` and `as_writeable_bytes`, that operate on **span** objects.
+The \<span> header includes the following non-member functions that operate on **span** objects.
 
 | **Non-member functions** | **Description** |
 |-|-|
@@ -54,7 +54,7 @@ void main()
 
 ## <a name="as_writable_bytes"></a> as_writable_bytes
 
-If `T` isn't `const`, gets a read/write view to the raw byte representation of the elements in the span.
+If `T` isn't `const`, gets a read/write view to the raw byte representation of the elements in the span. Othewise, an error.
 
 ```cpp
 template <class T, size_t Extent>
