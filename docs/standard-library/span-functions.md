@@ -1,8 +1,7 @@
 ---
 title: "&lt;span&gt; functions"
-ms.date: "05/11//2020"
+ms.date: "05/13/2020"
 f1_keywords: ["span/std::span::as_bytes", "span/std::as_writeable_bytes"]
-ms.assetid: b78f2647-79f8-4c26-9588-ffa2bc82b3dc
 helpviewer_keywords: ["std::span [C++], as_writeable_bytes", "std::as_bytes [C++]"]
 ---
 # &lt;span&gt; functions
@@ -14,7 +13,7 @@ The \<span> header includes the following non-member functions that operate on *
 |[as_bytes](#as_bytes) | Get a read-only view of the object representation of the elements in the span. |
 |[as_writeable_bytes](#as_writable_bytes) | Get a read/write view to the object representation of the elements in the span. |
 
-## <a name="as_bytes"></a> as_bytes
+## <a name="as_bytes"></a>as_bytes
 
 Get a read-only view of the object representation of the elements in the span.
 
@@ -29,7 +28,7 @@ auto as_bytes(span<T, Extent> span) noexcept
 The type of the elements in the span.
 
 *Extent*\
-The number of elements in the span (if known at compile time), otherwise `Dynamic_Extent` indicating that the number of elements is not known until runtime.
+The number of elements in the span (if known at compile time), otherwise `Dynamic_Extent` indicating that the number of elements isn't known until runtime.
 
 *span*\
 The span to get the raw representation of.
@@ -52,9 +51,9 @@ void main()
 }
 ```
 
-## <a name="as_writable_bytes"></a> as_writable_bytes
+## <a name="as_writable_bytes"></a>as_writable_bytes
 
-If `T` isn't `const`, gets a read/write view to the raw byte representation of the elements in the span. Othewise, an error.
+If `T` isn't `const`, gets a read/write view to the raw byte representation of the elements in the span. Otherwise, an error.
 
 ```cpp
 template <class T, size_t Extent>
@@ -67,7 +66,7 @@ auto as_writeable_bytes(span<T, Extent> span) noexcept
 The type of the elements in the span.
 
 *Extent*\
-The number of elements in the span (if known at compile time), otherwise `Dynamic_Extent` indicating that the number of elements is not known until runtime.
+The number of elements in the span (if known at compile time), otherwise `Dynamic_Extent` indicating that the number of elements isn't known until runtime.
 
 *span*\
 The span to get the raw representation of.

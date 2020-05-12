@@ -8,9 +8,9 @@ helpviewer_keywords: ["std::span [C++]", "std::span [C++], const_iterator", "std
 ---
 # span Class (C++ Standard Library)
 
-Provides a lightweight view over a contiguous sequence of objects. A span provides a typesafe way to iterate over, and index into, objects that are arranged back-to-back in memory. 
+Provides a lightweight view over a contiguous sequence of objects. A span provides a safe way to iterate over, and index into, objects that are arranged back-to-back in memory.
 
-If you would have typically accessed a sequence of back-to-back objects using a pointer indexed by the size of the objects, span is a safer, lightweight alternative.
+If you typically access a sequence of back-to-back objects using a pointer indexed by the size of the objects, span is a safer, lightweight alternative.
 
 A span's size is determined at compile time by specifying it as part of the template declaration, or at runtime by specifying `dynamic-size`.
 
@@ -72,7 +72,7 @@ class span;
 
 All `span` member functions have constant time complexity.
 
-Unlike array or vector, span doesn't "own” the elements placed inside it. A span never frees any storage for items in the span because it doesn't own the storage of the objects in the span.
+Unlike array or vector, a span doesn't "own” the elements inside it. A span doesn't free any storage for the items inside it because it doesn't own the storage for those objects.
 
 ## Requirements
 
@@ -186,7 +186,7 @@ using difference_type = std::ptrdiff_t;
 
 ### Remarks
 
-This type can be used to get the distance, in terms of number of elements, between two elements in a span.
+This type represents the number of elements between two elements in a span.
 
 ### Example
 
@@ -283,7 +283,7 @@ An iterator to the sentinel just beyond the end of the span.
 
 `end` is used to test whether an iterator has passed the end of its range.
 
-Don't dereference the value returned by the iterator. Use it to identify whether the iterator has reached the sentinal following the last element in the span.
+Don't dereference the value returned by the iterator. Use it to identify whether the iterator has reached the sentinel following the last element in the span.
 
 ### Example
 
@@ -308,7 +308,7 @@ template <size_t count> constexpr auto first() const noexcept;
 
 *count*\
 The number of elements from the front of this span to put in the subspan.
-The number can be specified as a parameter to the template or to the function, as illustrated below.
+The number of elements is specified as a parameter to the template, or to the function, as illustrated below.
 
 ### Return Value
 
@@ -427,7 +427,7 @@ template <size_t count> constexpr span<element_type, count> last() const noexcep
 
 *count*\
 The number of elements from the end this span to put in the subspan.
-The number can be specified as a parameter to the template or to the function, as illustrated below.
+The number can be specified as a parameter to the template, or to the function, as illustrated below.
 
 ### Return value
 
@@ -435,7 +435,7 @@ Returns a span containing the last `count` elements from this span.
 
 ### Remarks
 
-A template version of this function is available for checking the count at compile time, and for preserving information about the span by returning a span of fixed extent when possible.
+A template version of this function can be used instead to check the count at compile time. The template version also preserves info about the span by returning a span of fixed extent when possible.
 
 ### Example
 
@@ -548,7 +548,7 @@ void main()
 012
 ```
 
-## <a name="pointer / const_pointer"></a> span::pointer
+## <a name="pointer"></a> span::pointer
 
 The types for a pointer and `const` pointer to a span element.
 
@@ -617,7 +617,7 @@ void main()
 210
 ```
 
-## <a name="reference / const_reference"></a> span::reference
+## <a name="reference"></a> span::reference
 
 The types for a reference, and a const reference, to a span element.
 
@@ -698,7 +698,7 @@ A random-access iterator to the sentinel just beyond the end of the reversed spa
 
 `rend` is used with a reversed span just as [span::end](#end) is used with a span.
 
-The value returned by `rend` should not be dereferenced.
+The value returned by `rend` shouldn't be dereferenced.
 
 ### Example
 
@@ -861,7 +861,7 @@ The number of elements that will be in the span.
 Iterator to the first element in the span.
 
 *last*\
-Iterator to the sentinel just past the last element in the span.
+Iterator to the sentinel following the last element in the span.
 
 *other*\
 Copy from this span.
@@ -900,12 +900,12 @@ Only considered during overload resolution when template parameter `Extent` is `
 
 **`span(const span& other)`**
 
-The compiler generated copy constructor. A shallow copy of the data pointer is safe because the span doesn't allocate the memory to hold the elements.
+The compiler-generated copy constructor. A shallow copy of the data pointer is safe because the span doesn't allocate the memory to hold the elements.
 
 **`span(const span<OtherElementType, OtherExtent>& s) noexcept;`**
 
 Copy constructor: constructs a span from the specified span.
-Only particpates in overload resolution if template parameter `Extent` is `dynamic_extent`, or `N` is `dynamic_extent` or  equals `Extent`.
+Only participates in overload resolution if template parameter `Extent` is `dynamic_extent`, or `N` is `dynamic_extent` or  equals `Extent`.
 
 **`span(R&& r)`**
 
@@ -958,7 +958,7 @@ subspan(const size_type offset, const size_type count = dynamic_extent) const no
 ### Parameters
 
 *count*\
-The number of elements from the end this span to put in the subspan. If span is `dyanmaic_extent` (the default value) then gets the elements from `offset` to the end of this span.
+The number of elements from the end this span to put in the subspan. If span is `dynamic_extent` (the default value), then gets the elements from `offset` to the end of this span.
 
 *offset*\
 The location in this span to start the subspan.
@@ -1041,4 +1041,4 @@ TBD
 ## See also
 
 [\<span>](../standard-library/span.md)
-[How to use class tempalte argument deduction](https://devblogs.microsoft.com/cppblog/how-to-use-class-template-argument-deduction/)
+[How to use class template argument deduction](https://devblogs.microsoft.com/cppblog/how-to-use-class-template-argument-deduction/)

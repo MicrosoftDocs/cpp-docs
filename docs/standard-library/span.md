@@ -9,11 +9,9 @@ helpviewer_keywords: ["span header"]
 
 Defines the `span` container class template.
 
-A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike vector or array, it doesn't "own" the elements it provides access to.
+A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike vector or array, it doesn't "own" the elements it provides access to. 
 
-See [span class](span-class.md) for more information about the `span` class .
-
-Here's an example of how a span can be used:
+See [span class](span-class.md) for detailed information. Here's an example of how a span can be used:
 
 ```cpp
 #include <span>
@@ -55,8 +53,8 @@ void main()
 
 |||
 |-|-|
-|[operator=](span.md#op_eq)| Span assignment |
-|[operator\[\]](span.md#op_at)| Element access |
+|[operator=](span-class.md#op_eq)| Span assignment |
+|[operator\[\]](span-class.md#op_at)| Element access |
 
 ### Functions
 
@@ -69,7 +67,7 @@ void main()
 
 |||
 |-|-|
-| **dynamic_extent** | Indicates that the span size is determined at runtime rather than compile time. When the number of elements in the span is known at compile time, it is specified as the `Extent` template parameter. When the number isn't known until runtime, `dynamic_extent` is specified instead. |
+| **dynamic_extent** | Indicates that the span size is determined at runtime rather than compile time. When the number of elements in the span is known at compile time, it's specified as the `Extent` template parameter. When the number isn't known until runtime, `dynamic_extent` is specified instead. |
 
 ## See also
 
