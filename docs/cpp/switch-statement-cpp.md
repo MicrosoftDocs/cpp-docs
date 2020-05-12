@@ -4,7 +4,7 @@ description: "Reference to the Standard C++ switch statement in Microsoft Visual
 ms.date: "04/25/2020"
 f1_keywords: ["default_cpp", "switch_cpp", "case_cpp"]
 helpviewer_keywords: ["switch keyword [C++]", "case keyword [C++], in switch statements", "default keyword [C++]"]
-no-loc: [switch, case, default, break, while, C++, opt]
+no-loc: [switch, case, default, break, while, opt]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
 ---
 # `switch` statement (C++)

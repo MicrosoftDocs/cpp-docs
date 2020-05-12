@@ -1,0 +1,61 @@
+- name: Text and strings in MSVC
+  href: ../text/text-and-strings-in-visual-cpp.md
+- name: Unicode and MBCS
+  expanded: false
+  items: 
+    - name: Unicode and MBCS
+      href: ../text/unicode-and-mbcs.md
+    - name: International enabling
+      href: ../text/international-enabling.md
+    - name: Internationalization strategies
+      href: ../text/internationalization-strategies.md
+    - name: Locales and code pages
+      href: ../text/locales-and-code-pages.md
+    - name: Benefits of character set portability
+      href: ../text/benefits-of-character-set-portability.md
+- name: Support for Unicode
+  expanded: false
+  items: 
+    - name: Support for Unicode
+      href: ../text/support-for-unicode.md
+    - name: Support for using wmain
+      href: ../text/support-for-using-wmain.md
+    - name: Unicode programming summary
+      href: ../text/unicode-programming-summary.md
+- name: Support for multibyte character sets (MBCSs)
+  expanded: false
+  items: 
+    - name: Support for multibyte character sets (MBCSs)
+      href: ../text/support-for-multibyte-character-sets-mbcss.md
+    - name: MBCS support in MSVC
+      href: ../text/mbcs-support-in-visual-cpp.md
+    - name: MBCS programming tips
+      expanded: false
+      items: 
+        - name: MBCS programming tips
+          href: ../text/mbcs-programming-tips.md
+        - name: General MBCS programming advice
+          href: ../text/general-mbcs-programming-advice.md
+        - name: Incrementing and decrementing pointers
+          href: ../text/incrementing-and-decrementing-pointers.md
+        - name: Byte indices
+          href: ../text/byte-indices.md
+        - name: Last character in a string
+          href: ../text/last-character-in-a-string.md
+        - name: Character assignment
+          href: ../text/character-assignment.md
+        - name: Character comparison
+          href: ../text/character-comparison.md
+        - name: Buffer overflow
+          href: ../text/buffer-overflow.md
+- name: Support for ANSI
+  href: ../text/support-for-ansi.md
+- name: Generic-text mappings in tchar.h
+  expanded: false
+  items: 
+    - name: Generic-text mappings in tchar.h
+      href: ../text/generic-text-mappings-in-tchar-h.md
+    - name: Using TCHAR.H data types with _MBCS code
+      href: ../text/using-tchar-h-data-types-with-mbcs-code.md
+- name: "How to: Convert between various string types"
+  href: ../text/how-to-convert-between-various-string-types.md
