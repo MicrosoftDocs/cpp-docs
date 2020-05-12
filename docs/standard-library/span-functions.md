@@ -1,6 +1,6 @@
 ---
 title: "&lt;span&gt; functions"
-ms.date: "5/11//2020"
+ms.date: "05/11//2020"
 f1_keywords: ["span/std::span::as_bytes", "span/std::as_writeable_bytes"]
 ms.assetid: b78f2647-79f8-4c26-9588-ffa2bc82b3dc
 helpviewer_keywords: ["std::span [C++], as_writeable_bytes", "std::as_bytes [C++]"]

@@ -811,33 +811,40 @@ void main()
 `span` constructors.
 
 ```cpp
-constexpr span() noexcept
 requires (Extent == 0 || Extent == dynamic_extent) = default;
+constexpr span() noexcept
 
 template<class It>
-constexpr explicit(Extent != dynamic_extent) 
+constexpr explicit(Extent != dynamic_extent)
 span(It first, size_type count);
 
 template<class It, class End>
-constexpr explicit(Extent != dynamic_extent) 
+constexpr explicit(Extent != dynamic_extent)
 span(It first, End last);
 
 template<class T, size_t N>
+requires (_Extent == dynamic_extent || _Extent == _Size)
+              && is_convertible_v<_OtherTy (*)[], element_type (*)[]>
 constexpr span(std::array<T, N>& arr) noexcept;
 
 template<class T, size_t N>
+requires (_Extent == dynamic_extent || _Extent == _Size)
+              && is_convertible_v<const _OtherTy (*)[], element_type (*)[]>
 constexpr span(const std::array<T, N>& arr) noexcept;
 
 template<size_t N>
+requires (_Extent == dynamic_extent || _Extent == _Size)
 constexpr span(type_identity_t<element_type> (&arr)[N]) noexcept;
 
 template<class R>
+requires (_Extent == dynamic_extent || _OtherExtent == dynamic_extent || _Extent == _OtherExtent) && is_convertible_v<_OtherTy (*)[], element_type (*)[]>
 constexpr explicit(Extent != dynamic_extent) span(R&& r);
 
 // copy ctor
-constexpr span(const span& other) noexcept = default;
-
 template<class OtherElementType, size_t OtherExtent>
+requires (_Extent == dynamic_extent || _OtherExtent == dynamic_extent || _Extent == _OtherExtent)
+              && is_convertible_v<_OtherTy (*)[], element_type (*)[]>
+    constexpr explicit(_Extent != dynamic_extent && _OtherExtent == dynamic_extent)
 constexpr explicit(Extent != dynamic_extent && OtherExtent == dynamic_extent)
 span(const span<OtherElementType, OtherExtent>& s) noexcept;
 ```
@@ -1027,7 +1034,7 @@ void main()
 2
 ```
 
-## Deduction guides
+## <a name="deduction_guides"></a> Deduction guides
 
 TBD
 

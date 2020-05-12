@@ -55,21 +55,21 @@ void main()
 
 |||
 |-|-|
-|[operator=](../standard-library/span-operators.md#op_eq_eq)| Span assignment |
-|[operator\[\]](../standard-library/span-operators.md#op_at)| Element access |
+|[operator=](span.md#op_eq)| Span assignment |
+|[operator\[\]](span.md#op_at)| Element access |
 
 ### Functions
 
 |||
 |-|-|
 | [as_bytes](span-functions.md#as_bytes)| Get the underlying read-only bytes of the span. |
-| [as_writeable_bytes](span-functions.md#as_writeable_bytes) | Get the underlying bytes of the span. |
+| [as_writeable_bytes](span-functions.md#as_writable_bytes) | Get the underlying bytes of the span. |
 
 ### Constants
 
 |||
 |-|-|
-| [dynamic_extent](#const_dynamicextent) | Indicates that the span size is determined at runtime rather than compile time. When the number of elements in the span is known at compile time, it is specified as the `Extent` template parameter. When the number isn't known until runtime, `dynamic_extent` is specified instead. |
+| **dynamic_extent** | Indicates that the span size is determined at runtime rather than compile time. When the number of elements in the span is known at compile time, it is specified as the `Extent` template parameter. When the number isn't known until runtime, `dynamic_extent` is specified instead. |
 
 ## See also
 

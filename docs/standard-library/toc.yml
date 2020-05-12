@@ -883,11 +883,11 @@
       expanded: false
       items: 
         - name: <span>
-          href: standard-library/span.md
+          href: ../standard-library/span.md
         - name: <span> functions
-          href: standard-library/span-functions.md
+          href: ../standard-library/span-functions.md
         - name: span class
-          href: standard-library/span-class.md
+          href: ../standard-library/span-class.md
     - name: <sstream>
       expanded: false
       items: 
