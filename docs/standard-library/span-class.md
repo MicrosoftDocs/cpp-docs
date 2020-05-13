@@ -243,7 +243,7 @@ void main()
 
 ## <a name="empty"></a> span::empty
 
-Returns whether or not the span contains elements.
+Returns `true` if the span contains elements; otherwise `false`.
 
 ```cpp
 constexpr bool empty() const noexcept
@@ -811,42 +811,42 @@ void main()
 `span` constructors.
 
 ```cpp
-requires (Extent == 0 || Extent == dynamic_extent) = default;
 constexpr span() noexcept
+requires (Extent == 0 || Extent == dynamicExtent) = default;
 
-template<class It>
+template <It>
+constexpr explicit(Extent != dynamicExtent)
+span(It first, size_type count) noexcept
+
+template <It, End>
+constexpr explicit(Extent != dynamicExtent)
+span(It first, End last) noexcept(noexcept(last - first))
+
+template <class T, size_t N>
+requires (Extent == dynamicExtent || Extent == N) && is_convertible_v<T (*)[], T (*)[]>
+constexpr span(array<T, N>& arr) noexcept
+
+template <class T, size_t N>
+requires (Extent == dynamicExtent || Extent == N) && is_convertible_v<const T (*)[], T (*)[]>
+constexpr span(const array<T, N>& arr) noexcept
+
+template <size_t N>
+    requires (Extent == dynamicExtent || Extent == N)
+constexpr span(type_identity_t<T> (&arr)[N]) noexcept
+
+template <class R>
 constexpr explicit(Extent != dynamic_extent)
-span(It first, size_type count);
+span(R&& r)
 
-template<class It, class End>
-constexpr explicit(Extent != dynamic_extent)
-span(It first, End last);
+// default copy ctor
+constexpr span(const span& other) noexcept = default;
 
-template<class T, size_t N>
-requires (_Extent == dynamic_extent || _Extent == _Size)
-              && is_convertible_v<_OtherTy (*)[], element_type (*)[]>
-constexpr span(std::array<T, N>& arr) noexcept;
-
-template<class T, size_t N>
-requires (_Extent == dynamic_extent || _Extent == _Size)
-              && is_convertible_v<const _OtherTy (*)[], element_type (*)[]>
-constexpr span(const std::array<T, N>& arr) noexcept;
-
-template<size_t N>
-requires (_Extent == dynamic_extent || _Extent == _Size)
-constexpr span(type_identity_t<element_type> (&arr)[N]) noexcept;
-
-template<class R>
-requires (_Extent == dynamic_extent || _OtherExtent == dynamic_extent || _Extent == _OtherExtent) && is_convertible_v<_OtherTy (*)[], element_type (*)[]>
-constexpr explicit(Extent != dynamic_extent) span(R&& r);
-
-// copy ctor
-template<class OtherElementType, size_t OtherExtent>
-requires (_Extent == dynamic_extent || _OtherExtent == dynamic_extent || _Extent == _OtherExtent)
-              && is_convertible_v<_OtherTy (*)[], element_type (*)[]>
-    constexpr explicit(_Extent != dynamic_extent && _OtherExtent == dynamic_extent)
-constexpr explicit(Extent != dynamic_extent && OtherExtent == dynamic_extent)
-span(const span<OtherElementType, OtherExtent>& s) noexcept;
+// converting  ctor
+template <class T, size_t OtherExtent>
+    requires (Extent == dynamicExtent || OtherExtent == dynamicExtent || 
+                  Extent == OtherExtent) && is_convertible_v<T (*)[], T (*)[]>
+constexpr explicit(Extent != dynamicExtent && OtherExtent == dynamicExtent)
+span(const span<T, OtherExtent>& other) noexcept
 ```
 
 ### Parameters
@@ -854,23 +854,20 @@ span(const span<OtherElementType, OtherExtent>& s) noexcept;
 *arr*\
 Construct a span from this array.
 
-*count*\
-The number of elements that will be in the span.
-
 *first*\
 Iterator to the first element in the span.
 
 *last*\
-Iterator to the sentinel following the last element in the span.
+Iterator to the sentinel that follows the last element in the span.
+
+*N*\
+The number of elements that will be in the span.
 
 *other*\
 Copy from this span.
 
 *r*\
 Construct a span from this range.
-
-*s*\
-Convert a span from this existing span.
 
 ### Remarks
 
@@ -883,20 +880,26 @@ Only considered during overload resolution when the template parameter `Extent` 
 
 **`span(It first, size_type count)`**
 
-Constructs a span from the first `count` elements from iterator `first`.    
+Constructs a span from the first `count` elements from iterator `first`.  
 Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`.
 
 **`span(It first, End last)`**
 
 Constructs a span from the elements in iterator `first` until the sentinel `end` is reached.  
-Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`.
 
-**`span(std::array<T, N>& arr) noexcept;`  
-`span(const std::array<T, N>& arr) noexcept;`  
-`span(type_identity_t<element_type> (&arr)[N]) noexcept;`**  
+Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. `It` must be a `contiguous_iterator`.
+
+**`span(array<T, N>& arr) noexcept;`**
+**`span(const array<T, N>& arr) noexcept;`**
+**`span(type_identity_t<element_type> (&arr)[N]) noexcept;`**  
 
 Constructs a span from `N` elements of the specified array.  
 Only considered during overload resolution when template parameter `Extent` is `dynamic_extent` or equals `N`.
+
+**`span(R&& r)`**
+
+Constructs a span from a range.
+Only participates in overload resolution if template parameter `Extent` isn't `dynamic_extent`.
 
 **`span(const span& other)`**
 
@@ -904,13 +907,8 @@ The compiler-generated copy constructor. A shallow copy of the data pointer is s
 
 **`span(const span<OtherElementType, OtherExtent>& s) noexcept;`**
 
-Copy constructor: constructs a span from the specified span.
+Converting constructor: constructs a span from another span.
 Only participates in overload resolution if template parameter `Extent` is `dynamic_extent`, or `N` is `dynamic_extent` or  equals `Extent`.
-
-**`span(R&& r)`**
-
-Constructs a span from a range.
-Only participates in overload resolution if template parameter `Extent` isn't `dynamic_extent`.
 
 ### Example
 
@@ -1011,7 +1009,7 @@ mySpan.subspan<1>: 12
 The type of an element without `const` or `volatile` qualifications.
 
 ```cpp
-using value_type = std::remove_cv_t<_Ty>;
+using value_type = std::remove_cv_t<T>;
 ```
 
 ### Example
@@ -1036,7 +1034,29 @@ void main()
 
 ## <a name="deduction_guides"></a> Deduction guides
 
-TBD
+The following deduction guides are provided for span.
+
+```cpp
+// Allows the extent to be deduced from std::array and C++ built-in arrays
+template <class T, size_t Extent>
+span(_Ty (&)[Extent]) -> span<T, Extent>;
+
+template <class T, size_t Size>
+span(array<T, Size>&) -> span<T, Size>;
+
+template <class T, size_t Size>
+span(const array<T, Size>&) -> span<const T, Size>;
+
+// Allows the element type to be deduced from the iterator and sentinel.
+// The iterator must be contiguous
+template <contiguous_iterator It, class End>
+span(It, End) -> span<remove_reference_t<iter_reference_t<It>>>;
+
+// Allows the element type to be deduced from a range.
+// The range must be contiguous
+template <_RANGES contiguous_range Rng>
+span(Rng &&) -> span<remove_reference_t<_RANGES range_reference_t<Rng>>>;
+```
 
 ## See also
 
