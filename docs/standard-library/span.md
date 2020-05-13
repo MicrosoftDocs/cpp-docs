@@ -7,8 +7,6 @@ helpviewer_keywords: ["span header"]
 
 # &lt;span&gt;
 
-Defines the `span` container class template.
-
 A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike vector or array, it doesn't "own" the elements it provides access to. 
 
 See [span class](span-class.md) for detailed information. Here's an example of how a span can be used:
@@ -17,12 +15,16 @@ See [span class](span-class.md) for detailed information. Here's an example of h
 #include <span>
 #include <iostream>
 
-// Takes a span
 void Show(std::span<int> someValues)
 {
-    // easily iterate over the members of the span
-    // in a bounds-safe way
-    for (auto i : someValues)
+    // show values in reverse
+    for (auto rIt = someValues.rbegin(); rIt != someValues.rend(); ++rIt)
+    {
+        cout << *rIt;
+    }
+
+    // show a subspan
+    for (auto& i : someValues.subspan(1, 2))
     {
         cout << i;
     }
