@@ -875,10 +875,10 @@ A span doesn't free storage for items in the span because it doesn't own the sto
 |`span()` | Constructs an empty span. Only considered during overload resolution when the template parameter `Extent` is `0` or `dynamic_extent`.|
 |`span(It first, size_type count)` | Constructs a span from the first `count` elements from iterator `first`.  Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. |
 |`span(It first, End last)` | Constructs a span from the elements in iterator `first` until the sentinel `end` is reached. Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. `It` must be a `contiguous_iterator`.  |
-|`span(array<T, N>& arr) noexcept;`<br />`span(const array<T, N>& arr) noexcept;`<br />`span(type_identity_t<element_type> (&arr)[N]) noexcept;` |  Constructs a span from `N` elements of the specified array. Only considered during overload resolution when template parameter `Extent` is `dynamic_extent` or equals `N`. |
+|`span(array<T, N>& arr) noexcept;`<br /><br />`span(const array<T, N>& arr) noexcept;`<br /><br />`span(type_identity_t<element_type> (&arr)[N]) noexcept;` |  Constructs a span from `N` elements of the specified array. Only considered during overload resolution when template parameter `Extent` is `dynamic_extent` or equals `N`. |
 |`span(R&& r)` |  Constructs a span from a range. Only participates in overload resolution if template parameter `Extent` isn't `dynamic_extent`.|
 |`span(const span& other)` |  The compiler-generated copy constructor. A shallow copy of the data pointer is safe because the span doesn't allocate the memory to hold the elements. |
-|span(const span<OtherElementType, OtherExtent>& s) noexcept; | Converting constructor: constructs a span from another span. Only participates in overload resolution if template parameter `Extent` is `dynamic_extent`, or `N` is `dynamic_extent` or  equals `Extent`.|
+|`span(const span<OtherElementType, OtherExtent>& s) noexcept;` | Converting constructor: constructs a span from another span. Only participates in overload resolution if template parameter `Extent` is `dynamic_extent`, or `N` is `dynamic_extent` or  equals `Extent`.|
 
 ### Example
 
@@ -1006,6 +1006,7 @@ The following deduction guides are provided for span.
 
 ```cpp
 // Allows the extent to be deduced from std::array and C++ built-in arrays
+
 template <class T, size_t Extent>
 span(_Ty (&)[Extent]) -> span<T, Extent>;
 
@@ -1017,11 +1018,13 @@ span(const array<T, Size>&) -> span<const T, Size>;
 
 // Allows the element type to be deduced from the iterator and sentinel.
 // The iterator must be contiguous
+
 template <contiguous_iterator It, class End>
 span(It, End) -> span<remove_reference_t<iter_reference_t<It>>>;
 
 // Allows the element type to be deduced from a range.
 // The range must be contiguous
+
 template <_RANGES contiguous_range Rng>
 span(Rng &&) -> span<remove_reference_t<_RANGES range_reference_t<Rng>>>;
 ```
