@@ -1053,8 +1053,6 @@ When this class is imported into C++/CLI, a call to one of the overloads causes 
 
 The compiler emits error C2668 because both overloads match this argument list. In the second overload, the second argument is filled in by the default argument. To work around this problem, you can delete the redundant overload (1). Or, use the full argument list and explicitly supply the default arguments.
 
-Here's a mispelled word. DELETE BEFORE MERGE.
-
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
 ### Reinterpret_cast in a constexpr function
