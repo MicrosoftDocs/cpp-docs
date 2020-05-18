@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "03/16/2020"
+ms.date: "05/18/2020"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 ---
@@ -14,7 +14,7 @@ Microsoft C++ makes conformance improvements and bug fixes in every release. Thi
 
 Visual Studio 2019 RTW contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler (MSVC)
 
-**Note:** C++20 features will be made available in `/std:c++latest` mode until the C++20 implementation is complete for both the compiler and IntelliSense. At that time, the `/std:c++20` compiler mode will be introduced.
+**Note:** C++20 features will be made available in **`/std:c++latest`** mode until the C++20 implementation is complete for both the compiler and IntelliSense. At that time, the **`/std:c++20`** compiler mode will be introduced.
 
 ### Improved modules support for templates and error detection
 
@@ -22,9 +22,9 @@ Modules are now officially in the C++20 standard. Improved support was added in 
 
 ### Modified specification of aggregate type
 
-The specification of an aggregate type has changed in C++20 (see [Prohibit aggregates with user-declared constructors](https://wg21.link/p1008r1)). In Visual Studio 2019, under `/std:c++latest`, a class with any user-declared constructor (for example, including a constructor declared `= default` or `= delete`) isn't an aggregate. Previously, only user-provided constructors would disqualify a class from being an aggregate. This change puts additional restrictions on how such types can be initialized.
+The specification of an aggregate type has changed in C++20 (see [Prohibit aggregates with user-declared constructors](https://wg21.link/p1008r1)). In Visual Studio 2019, under **`/std:c++latest`**, a class with any user-declared constructor (for example, including a constructor declared `= default` or `= delete`) isn't an aggregate. Previously, only user-provided constructors would disqualify a class from being an aggregate. This change puts additional restrictions on how such types can be initialized.
 
-The following code compiles without errors in Visual Studio 2017 but raises errors C2280 and C2440 in Visual Studio 2019 under `/std:c++latest`:
+The following code compiles without errors in Visual Studio 2017 but raises errors C2280 and C2440 in Visual Studio 2019 under **`/std:c++latest`**:
 
 ```cpp
 struct A
@@ -44,7 +44,7 @@ B b = { 1 }; // ill-formed in C++20, previously well-formed
 
 ### Partial support for `operator <=>`
 
-[P0515R3](https://wg21.link/p0515r3) C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in `/std:c++latest` mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under `/std:c++latest`:
+[P0515R3](https://wg21.link/p0515r3) C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in **`/std:c++latest`** mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under **`/std:c++latest`**:
 
 ```cpp
 struct S
