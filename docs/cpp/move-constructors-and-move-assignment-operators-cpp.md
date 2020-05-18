@@ -167,7 +167,7 @@ The following example shows the complete move constructor and move assignment op
 
 ```cpp
 // Move constructor.
-MemoryBlock(MemoryBlock&& other)
+MemoryBlock(MemoryBlock&& other) noexcept
    : _data(nullptr)
    , _length(0)
 {
@@ -186,7 +186,7 @@ MemoryBlock(MemoryBlock&& other)
 }
 
 // Move assignment operator.
-MemoryBlock& operator=(MemoryBlock&& other)
+MemoryBlock& operator=(MemoryBlock&& other) noexcept
 {
    std::cout << "In operator=(MemoryBlock&&). length = "
              << other._length << "." << std::endl;
@@ -241,15 +241,15 @@ In MemoryBlock(size_t). length = 25.
 In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
 In ~MemoryBlock(). length = 0.
 In MemoryBlock(size_t). length = 75.
+In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
 In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
 In ~MemoryBlock(). length = 0.
-In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
 In ~MemoryBlock(). length = 0.
 In MemoryBlock(size_t). length = 50.
 In MemoryBlock(MemoryBlock&&). length = 50. Moving resource.
-In MemoryBlock(MemoryBlock&&). length = 50. Moving resource.
-In operator=(MemoryBlock&&). length = 75.
-In operator=(MemoryBlock&&). length = 50.
+In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
+In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
+In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 25. Deleting resource.
@@ -292,7 +292,7 @@ If you provide both a move constructor and a move assignment operator for your c
 
 ```cpp
 // Move constructor.
-MemoryBlock(MemoryBlock&& other)
+MemoryBlock(MemoryBlock&& other) noexcept
    : _data(nullptr)
    , _length(0)
 {
@@ -300,7 +300,7 @@ MemoryBlock(MemoryBlock&& other)
 }
 ```
 
-The [std::move](../standard-library/utility-functions.md#move) function preserves the rvalue property of the *other* parameter.
+The [std::move](../standard-library/utility-functions.md#move) function converts the lvalue `other` to an rvalue.
 
 ## See also
 
