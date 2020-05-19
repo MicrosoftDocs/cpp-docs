@@ -963,7 +963,7 @@ There are many possible fixes:
 
 Starting in Visual Studio 2019 version 16.6, the compiler implements some preexisting C++ warnings for code compiled as C. The following warnings are now enabled at different levels: C4060, C4061, C4062, C4063, C4064, C4065, C4808, and C4809. Warnings C4065 and C4060 are disabled by default in C.
 
-The warnings trigger on missing **`case`** statements, undefined **`enum`**, and bad **`bool`** switches, that is, ones that contain too many cases. For example:
+The warnings trigger on missing **`case`** statements, undefined **`enum`**, and bad **`bool`** switches (that is, ones that contain too many cases). For example:
 
 ```c
 #include <stdbool.h>
@@ -1000,7 +1000,7 @@ Starting in Visual Studio 2019 version 16.6, the behavior of `typedef` declarati
 - non-static data members,
 - member classes,
 - member enumerations,
-- and non-static data member initializations (NSDMIs).
+- and default member initializers.
 
 The same restrictions are applied recursively to each nested class. The restriction is meant to ensure the simplicity of structs that have `typedef` names for linkage purposes. They must be simple enough that no linkage calculations are necessary before the compiler gets to the `typedef` name for linkage.
 
@@ -1016,7 +1016,7 @@ typedef struct : B { // inheriting from 'B'; ill-formed
     struct U {
         void f(); // nested class has non-data member; ill-formed
     };
-    int j = 10; // NSDMI; ill-formed
+    int j = 10; // default member initializer; ill-formed
 } S;
 ```
 
