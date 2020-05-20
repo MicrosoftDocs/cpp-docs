@@ -189,6 +189,7 @@ Address as:   0012FF3C
 
 ## See also
 
+[Format Specification Syntax: printf and wprintf Functions"](../format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
