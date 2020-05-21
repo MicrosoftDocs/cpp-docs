@@ -25,7 +25,7 @@ This article covers the following topics:
 
 - [Creating a Bindable Get/Set Method](#vchowcreatingbindablegetsetmethod)
 
-##  <a name="vchowcreatingbindablestockproperty"></a> Creating a Bindable Stock Property
+## <a name="vchowcreatingbindablestockproperty"></a> Creating a Bindable Stock Property
 
 It is possible to create a data-bound stock property, although it is more likely that you will want a [bindable get/set method](#vchowcreatingbindablegetsetmethod).
 
@@ -54,7 +54,7 @@ At this point, your control can display data from a data source, but the user wi
 
 You can now build the project, which will register the control. When you insert the control in a dialog box, the **Data Field** and **Data Source** properties will have been added and you can now select a data source and field to display in the control.
 
-##  <a name="vchowcreatingbindablegetsetmethod"></a> Creating a Bindable Get/Set Method
+## <a name="vchowcreatingbindablegetsetmethod"></a> Creating a Bindable Get/Set Method
 
 In addition to a data-bound get/set method, you can also create a [bindable stock property](#vchowcreatingbindablestockproperty).
 

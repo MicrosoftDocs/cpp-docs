@@ -32,14 +32,14 @@ namespace std {
     using time_t = see below ;
 }
 ```
-    
+
 ## Structures
-    
+
 ```cpp
 struct timespec;
 struct tm;
 ```
-    
+
 ## Functions
 
 ```cpp

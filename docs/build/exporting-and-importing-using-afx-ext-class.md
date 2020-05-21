@@ -33,7 +33,7 @@ Although you can avoid creating a .def file and all of the decorated names for t
 ```
 
 > [!CAUTION]
->  Be careful when exporting inline functions, because they can create the possibility of version conflicts. An inline function gets expanded into the application code; therefore, if you later rewrite the function, it does not get updated unless the application itself is recompiled. Normally, DLL functions can be updated without rebuilding the applications that use them.
+> Be careful when exporting inline functions, because they can create the possibility of version conflicts. An inline function gets expanded into the application code; therefore, if you later rewrite the function, it does not get updated unless the application itself is recompiled. Normally, DLL functions can be updated without rebuilding the applications that use them.
 
 ## Exporting Individual Members in a Class
 
@@ -87,7 +87,7 @@ class CExampleView : public CView
 Because MFC always uses the `AFX_DATA` symbol on data items it defines within its macros, this technique works for all such scenarios. For example, it works for `DECLARE_MESSAGE_MAP`.
 
 > [!NOTE]
->  If you are exporting the entire class rather than selected members of the class, static data members are automatically exported.
+> If you are exporting the entire class rather than selected members of the class, static data members are automatically exported.
 
 ### What do you want to do?
 

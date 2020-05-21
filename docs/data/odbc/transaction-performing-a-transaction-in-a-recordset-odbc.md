@@ -9,7 +9,7 @@ ms.assetid: cf1d6b48-7fb8-4903-84f7-a1822054534d
 This topic explains how to perform a transaction in a recordset.
 
 > [!NOTE]
->  Only one level of transactions is supported; you cannot nest transactions.
+> Only one level of transactions is supported; you cannot nest transactions.
 
 #### To perform a transaction in a recordset
 
@@ -72,7 +72,7 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 ```
 
 > [!NOTE]
->  Calling `BeginTrans` again without calling `CommitTrans` or `Rollback` is an error.
+> Calling `BeginTrans` again without calling `CommitTrans` or `Rollback` is an error.
 
 ## See also
 

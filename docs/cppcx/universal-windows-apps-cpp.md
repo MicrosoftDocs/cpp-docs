@@ -8,7 +8,7 @@ ms.topic: "overview"
 
 The Universal Windows Platform (UWP) is the modern programming interface for Windows. With UWP you write an application or component once and deploy it on any Windows 10 device. You can write a component in C++ and applications written in any other UWP-compatible language can use it.
 
-Most of the UWP documentation is in the Windows content tree at [Universal Windows Platform documentation](/windows/uwp/). There you will find beginning tutorials as well as reference documentation. 
+Most of the UWP documentation is in the Windows content tree at [Universal Windows Platform documentation](/windows/uwp/). There you will find beginning tutorials as well as reference documentation.
 
 For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a new standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API. Unlike the C++/CX implementation. C++/WinRT doesn't use non-standard syntax or Microsoft language extensions, and it takes full advantage of the C++ compiler to create highly-optimized output. For more information, see [Introduction to C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt).
 

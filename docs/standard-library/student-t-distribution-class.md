@@ -57,7 +57,7 @@ The property function `n()` returns the value for the stored distribution parame
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://mathworld.wolfram.com/Studentst-Distribution.html).
+For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](https://mathworld.wolfram.com/Studentst-Distribution.html).
 
 ## Example
 
@@ -140,7 +140,7 @@ Distribution for 10 samples:
 
 **Namespace:** std
 
-## <a name="student_t_distribution"></a>  student_t_distribution::student_t_distribution
+## <a name="student_t_distribution"></a> student_t_distribution::student_t_distribution
 
 Constructs the distribution.
 
@@ -165,7 +165,7 @@ The first constructor constructs an object whose stored `n` value holds the valu
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-## <a name="param_type"></a>  student_t_distribution::param_type
+## <a name="param_type"></a> student_t_distribution::param_type
 
 Stores all the parameters of the distribution.
 

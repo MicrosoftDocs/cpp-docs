@@ -42,7 +42,7 @@ To support event maps, MFC provides the following macros:
 |[ON_OLEVERB](#on_oleverb)|Indicates a custom verb handled by the OLE control.|
 |[ON_STDOLEVERB](#on_stdoleverb)|Overrides a standard verb mapping of the OLE control.|
 
-##  <a name="declare_event_map"></a>  DECLARE_EVENT_MAP
+## <a name="declare_event_map"></a> DECLARE_EVENT_MAP
 
 Each `COleControl`-derived class in your program can provide an event map to specify the events your control will fire.
 
@@ -60,7 +60,7 @@ For more information on event maps, see the article [ActiveX Controls: Events](.
 
 **Header** afxctl.h
 
-## <a name="begin_event_map"></a>  BEGIN_EVENT_MAP
+## <a name="begin_event_map"></a> BEGIN_EVENT_MAP
 
 Begins the definition of your event map.
 
@@ -86,7 +86,7 @@ For more information on event maps and the BEGIN_EVENT_MAP macro, see the articl
 
 **Header** afxctl.h
 
-##  <a name="end_event_map"></a>  END_EVENT_MAP
+## <a name="end_event_map"></a> END_EVENT_MAP
 
 Use the END_EVENT_MAP macro to end the definition of your event map.
 
@@ -98,7 +98,7 @@ END_EVENT_MAP()
 
 **Header** afxctl.h
 
-## <a name="event_custom"></a>  EVENT_CUSTOM
+## <a name="event_custom"></a> EVENT_CUSTOM
 
 Defines an event-map entry for a custom event.
 
@@ -164,7 +164,7 @@ The `VTS_` constants and their meanings are as follows:
 
 **Header** afxctl.h
 
-## <a name="event_custom_id"></a>  EVENT_CUSTOM_ID
+## <a name="event_custom_id"></a> EVENT_CUSTOM_ID
 
 Defines an event firing function for a custom event belonging to the dispatch ID specified by *dispid*.
 
@@ -204,7 +204,7 @@ For a list of the `VTS_` constants, see [EVENT_CUSTOM](#event_custom).
 
 **Header** afxctl.h
 
-## <a name="on_oleverb"></a>  ON_OLEVERB
+## <a name="on_oleverb"></a> ON_OLEVERB
 
 This macro defines a message map entry that maps a custom verb to a specific member function of your control.
 
@@ -239,7 +239,7 @@ The values of the *lpMsg*, *hWndParent*, and *lpRect* parameters are taken from 
 
 **Header** afxole.h
 
-## <a name="on_stdoleverb"></a>  ON_STDOLEVERB
+## <a name="on_stdoleverb"></a> ON_STDOLEVERB
 
 Use this macro to override the default behavior of a standard verb.
 

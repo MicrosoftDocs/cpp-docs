@@ -89,7 +89,7 @@ The length of the least significant dimension.
 
 **Namespace:** Concurrency
 
-## <a name="ctor"></a>  tiled_index Constructor
+## <a name="ctor"></a> tiled_index Constructor
 
 Initializes a new instance of the `tiled_index` class.
 
@@ -135,7 +135,7 @@ The `tile_index` object to be copied to the constructed `tiled_index`.
 |`tiled_index(const index<rank>& _Global, const index<rank>& _Local, const index<rank>& _Tile, const index<rank>& _Tile_origin, const tile_barrier& _Barrier restrict(amp,cpu);`|Initializes a new instance of the `tile_index` class from the index of the tile in global coordinates and the relative position in the tile in local coordinates. The `_Global` and `_Tile_origin` parameters are computed.|
 |`tiled_index(    const tiled_index& _Other) restrict(amp,cpu);`|Initializes a new instance of the `tile_index` class by copying the specified `tiled_index` object.|
 
-## <a name="tiled_index__get_tile_extent"></a>  get_tile_extent
+## <a name="tiled_index__get_tile_extent"></a> get_tile_extent
 
 Returns an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 
@@ -149,7 +149,7 @@ extent<rank> get_tile_extent()restrict(amp,cpu);
 
 An `extent` object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 
-## <a name="tiled_index__barrier"></a>  barrier
+## <a name="tiled_index__barrier"></a> barrier
 
 Stores a [tile_barrier](tile-barrier-class.md) object that represents a barrier in the current tile of threads.
 
@@ -159,7 +159,7 @@ Stores a [tile_barrier](tile-barrier-class.md) object that represents a barrier 
 const tile_barrier barrier;
 ```
 
-## <a name="tiled_index__global"></a>  global
+## <a name="tiled_index__global"></a> global
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the global index of an object.
 
@@ -169,7 +169,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 const index<rank> global;
 ```
 
-## <a name="tiled_index__local"></a>  local
+## <a name="tiled_index__local"></a> local
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](tiled-extent-class.md) object.
 
@@ -179,7 +179,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 const index<rank> local;
 ```
 
-## <a name="tiled_index__rank"></a>  rank
+## <a name="tiled_index__rank"></a> rank
 
 Stores the rank of the `tiled_index` object.
 
@@ -189,7 +189,7 @@ Stores the rank of the `tiled_index` object.
 static const int rank = _Rank;
 ```
 
-## <a name="tiled_index__tile"></a>  tile
+## <a name="tiled_index__tile"></a> tile
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the coordinates of the current tile of a [tiled_extent](tiled-extent-class.md) object.
 
@@ -199,7 +199,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 const index<rank> tile;
 ```
 
-## <a name="tiled_index__tile_dim0"></a>  tile_dim0
+## <a name="tiled_index__tile_dim0"></a> tile_dim0
 
 Stores the length of the most significant dimension.
 
@@ -209,7 +209,7 @@ Stores the length of the most significant dimension.
 static const int tile_dim0 = _Dim0;
 ```
 
-## <a name="tiled_index__tile_dim1"></a>  tile_dim1
+## <a name="tiled_index__tile_dim1"></a> tile_dim1
 
 Stores the length of the next-to-most significant dimension.
 
@@ -219,7 +219,7 @@ Stores the length of the next-to-most significant dimension.
 static const int tile_dim1 = _Dim1;
 ```
 
-## <a name="tiled_index__tile_dim2"></a>  tile_dim2
+## <a name="tiled_index__tile_dim2"></a> tile_dim2
 
 Stores the length of the least significant dimension.
 
@@ -229,7 +229,7 @@ Stores the length of the least significant dimension.
 static const int tile_dim2 = _Dim2;
 ```
 
-## <a name="tiled_index__tile_origin"></a>  tile_origin
+## <a name="tiled_index__tile_origin"></a> tile_origin
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile within a [tiled_extent](tiled-extent-class.md) object.
 
@@ -239,7 +239,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 const index<rank> tile_origin
 ```
 
-## <a name="tile_extent"></a>  tile_extent
+## <a name="tile_extent"></a> tile_extent
 
 Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 

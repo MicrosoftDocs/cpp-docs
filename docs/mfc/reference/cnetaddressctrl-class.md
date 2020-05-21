@@ -76,7 +76,7 @@ This class is supported in Windows Vista and later.
 
 Additional requirements for this class are described in [Build Requirements for Windows Vista Common Controls](../../mfc/build-requirements-for-windows-vista-common-controls.md).
 
-##  <a name="cnetaddressctrl"></a>  CNetAddressCtrl::CNetAddressCtrl
+## <a name="cnetaddressctrl"></a> CNetAddressCtrl::CNetAddressCtrl
 
 Constructs a `CNetAddressCtrl` object.
 
@@ -88,7 +88,7 @@ CNetAddressCtrl();
 
 Use the [CNetAddressCtrl::Create](#create) or [CNetAddressCtrl::CreateEx](#createex) method to create a network control and attach it to the `CNetAddressCtrl` object.
 
-##  <a name="create"></a>  CNetAddressCtrl::Create
+## <a name="create"></a> CNetAddressCtrl::Create
 
 Creates a network address control with specified styles and attaches it to the current `CNetAddressCtrl` object.
 
@@ -105,7 +105,7 @@ virtual BOOL Create(
 |Parameter|Description|
 |---------------|-----------------|
 |*dwStyle*|[in] A bitwise combination of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control.|
+|*rect*|[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.|
 |*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|
 |*nID*|[in] The ID of the control.|
 
@@ -113,7 +113,7 @@ virtual BOOL Create(
 
 TRUE if this method is successful; otherwise, FALSE.
 
-##  <a name="createex"></a>  CNetAddressCtrl::CreateEx
+## <a name="createex"></a> CNetAddressCtrl::CreateEx
 
 Creates a network address control with specified extended styles and attaches it to the current `CNetAddressCtrl` object.
 
@@ -132,7 +132,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[in] A bitwise combination (OR) of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function.|
 |*dwStyle*|[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control.|
+|*rect*|[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.|
 |*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|
 |*nID*|[in] The ID of the control.|
 
@@ -140,7 +140,7 @@ virtual BOOL CreateEx(
 
 TRUE if this method is successful; otherwise, FALSE.
 
-##  <a name="displayerrortip"></a>  CNetAddressCtrl::DisplayErrorTip
+## <a name="displayerrortip"></a> CNetAddressCtrl::DisplayErrorTip
 
 Displays an error message in the balloon tip that is associated with the current network address control.
 
@@ -158,7 +158,7 @@ Use the [CNetAddressCtrl::SetAllowType](#setallowtype) method to specify the typ
 
 This message invokes the [NetAddr_DisplayErrorTip](/windows/win32/api/shellapi/nf-shellapi-netaddr_displayerrortip) macro, which is described in the Windows SDK. That macro sends the `NCM_DISPLAYERRORTIP` message.
 
-##  <a name="getaddress"></a>  CNetAddressCtrl::GetAddress
+## <a name="getaddress"></a> CNetAddressCtrl::GetAddress
 
 Retrieves a validated and parsed representation of the network address that is associated with the current network address control.
 
@@ -183,7 +183,7 @@ Use the [CNetAddressCtrl::SetAllowType](#setallowtype) method to specify the typ
 
 This method invokes the [NetAddr_GetAddress](/windows/win32/api/shellapi/nf-shellapi-netaddr_getaddress) macro, which is described in the Windows SDK. That macro sends the NCM_GETADDRESS message.
 
-##  <a name="getallowtype"></a>  CNetAddressCtrl::GetAllowType
+## <a name="getallowtype"></a> CNetAddressCtrl::GetAllowType
 
 Retrieves the type of network address that the current network address control can support.
 
@@ -199,7 +199,7 @@ A bitwise combination (OR) of flags that specifies the types of addresses the ne
 
 This message invokes the [NetAddr_GetAllowType](/windows/win32/api/shellapi/nf-shellapi-netaddr_getallowtype) macro, which is described in the Windows SDK. That macro sends the NCM_GETALLOWTYPE message.
 
-##  <a name="setallowtype"></a>  CNetAddressCtrl::SetAllowType
+## <a name="setallowtype"></a> CNetAddressCtrl::SetAllowType
 
 Sets the type of network address that the current network address control can support.
 

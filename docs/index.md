@@ -4,6 +4,9 @@ title: Visual C++ Documentation
 description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
 ms.topic: hub-page
 ---
+
+<!-- markdownlint-disable MD033 -->
+
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
@@ -54,7 +57,7 @@ ms.topic: hub-page
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>What’s new for C++ in Visual Studio</h3>
+                                    <h3>What's new for C++ in Visual Studio</h3>
                                 </div>
                             </div>
                         </div>

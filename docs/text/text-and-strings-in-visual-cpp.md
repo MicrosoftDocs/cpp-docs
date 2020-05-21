@@ -30,7 +30,7 @@ Demonstrates how to convert various Visual C++ string types into other strings.
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 Discusses international support in the C run-time library.
 
-[International Samples](https://github.com/Microsoft/VCSamples)<br/>
+[International Samples](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/International)<br/>
 Provides links to samples demonstrating internationalization in Visual C++.
 
 [Language and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>

@@ -78,7 +78,7 @@ See the MFC Advanced Concepts sample program DLLScreenCap for a complete sample.
 
 The following example illustrates an API that is defined in a regular MFC DLL that statically links to MFC. In this example, the declaration is enclosed in an `extern "C" { }` block for C++ users. This has several advantages. First, it makes your DLL APIs usable by non-C++ client applications. Second, it reduces DLL overhead because C++ name mangling will not be applied to the exported name. Lastly, it makes it easier to explicitly add to a .DEF file (for exporting by ordinal) without having to worry about name mangling.
 
-```
+```cpp
 #ifdef __cplusplus
 extern "C" {
 #endif  /* __cplusplus */

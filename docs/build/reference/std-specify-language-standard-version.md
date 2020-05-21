@@ -18,15 +18,15 @@ The **/std** option is available in Visual Studio 2017 and later. It is used to 
 
 The default **/std:c++14** option enables the set of C++14 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are changed or new in more recent versions of the language standard, with the exception of some C++17 features already implemented in previous releases of the MSVC compiler. To avoid breaking changes for users who have already taken dependencies on the features available as of Visual Studio 2015 Update 2, these features remain enabled when the **/std:c++14** option is specified:
 
-- [Rules for auto with braced-init-lists](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3922.html)
+- [Rules for auto with braced-init-lists](https://wg21.link/n3922)
 
-- [typename in template template-parameters](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html)
+- [typename in template template-parameters](https://wg21.link/n4051)
 
-- [Removing trigraphs](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4086.html)
+- [Removing trigraphs](https://wg21.link/n4086)
 
-- [Attributes for namespaces and enumerators](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4266.html)
+- [Attributes for namespaces and enumerators](https://wg21.link/n4266)
 
-- [u8 character literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
+- [u8 character literals](https://wg21.link/n4267)
 
 For additional information on which C++14 and C++17 features are enabled when **/std:c++14** is specified, see the notes in [Microsoft C++ language conformance table](../../overview/visual-cpp-language-conformance.md).
 
@@ -35,7 +35,7 @@ The **/std:c++17** option enables the full set of C++17 features implemented by 
 The **/std:c++latest** option enables the post-C++17 language and library features currently implemented in the compiler and libraries. These may include features from the C++20 Working Draft and defect updates of the C++ Standard that are not included in C++17, as well as experimental proposals for the draft standard. For a list of supported language and library features, see [What's New for Visual C++](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md). The **/std:c++latest** option does not enable features guarded by the **/experimental** switch, but may be required to enable them.
 
 > [!IMPORTANT]
-> The compiler and library features enabled by **/std:c++latest** represent features that may appear in a future C++ standard, as well as C++20 features that are approved. Features that have not been approved are subject to breaking changes or removal without notice and are provided on an as-is basis. 
+> The compiler and library features enabled by **/std:c++latest** represent features that may appear in a future C++ standard, as well as C++20 features that are approved. Features that have not been approved are subject to breaking changes or removal without notice and are provided on an as-is basis.
 
 The **/std** option in effect during a C++ compilation can be detected by use of the [\_MSVC\_LANG](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
 

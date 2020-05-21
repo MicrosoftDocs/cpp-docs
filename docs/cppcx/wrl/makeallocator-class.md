@@ -70,7 +70,7 @@ Name                                 | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="allocate"></a>MakeAllocator::Allocate
+## <a name="allocate"></a> MakeAllocator::Allocate
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -90,7 +90,7 @@ The size of the allocated memory is the size of the type specified by the curren
 
 A developer needs to override only the `Allocate()` method to implement a different memory allocation model.
 
-## <a name="detach"></a>MakeAllocator::Detach
+## <a name="detach"></a> MakeAllocator::Detach
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -104,7 +104,7 @@ Disassociates memory allocated by the [Allocate](#allocate) method from the curr
 
 If you call `Detach()`, you are responsible for deleting the memory provided by the `Allocate` method.
 
-## <a name="makeallocator"></a>MakeAllocator::MakeAllocator
+## <a name="makeallocator"></a> MakeAllocator::MakeAllocator
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -116,7 +116,7 @@ MakeAllocator();
 
 Initializes a new instance of the `MakeAllocator` class.
 
-## <a name="tilde-makeallocator"></a>MakeAllocator::~MakeAllocator
+## <a name="tilde-makeallocator"></a> MakeAllocator::~MakeAllocator
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

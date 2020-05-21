@@ -62,7 +62,7 @@ class CD2DTextLayout : public CD2DResource;
 
 **Header:** afxrendertarget.h
 
-##  <a name="_dtorcd2dtextlayout"></a>  CD2DTextLayout::~CD2DTextLayout
+## <a name="_dtorcd2dtextlayout"></a> CD2DTextLayout::~CD2DTextLayout
 
 The destructor. Called when a D2D text layout object is being destroyed.
 
@@ -70,7 +70,7 @@ The destructor. Called when a D2D text layout object is being destroyed.
 virtual ~CD2DTextLayout();
 ```
 
-##  <a name="cd2dtextlayout"></a>  CD2DTextLayout::CD2DTextLayout
+## <a name="cd2dtextlayout"></a> CD2DTextLayout::CD2DTextLayout
 
 Constructs a CD2DTextLayout object.
 
@@ -100,7 +100,7 @@ The size of the layout box.
 *bAutoDestroy*<br/>
 Indicates that the object will be destroyed by owner (pParentTarget).
 
-##  <a name="create"></a>  CD2DTextLayout::Create
+## <a name="create"></a> CD2DTextLayout::Create
 
 Creates a CD2DTextLayout.
 
@@ -112,7 +112,7 @@ virtual HRESULT Create(CRenderTarget* */);
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="destroy"></a>  CD2DTextLayout::Destroy
+## <a name="destroy"></a> CD2DTextLayout::Destroy
 
 Destroys a CD2DTextLayout object.
 
@@ -120,7 +120,7 @@ Destroys a CD2DTextLayout object.
 virtual void Destroy();
 ```
 
-##  <a name="get"></a>  CD2DTextLayout::Get
+## <a name="get"></a> CD2DTextLayout::Get
 
 Returns IDWriteTextLayout interface
 
@@ -132,7 +132,7 @@ IDWriteTextLayout* Get();
 
 Pointer to an IDWriteTextLayout interface or NULL if object is not initialized yet.
 
-##  <a name="getfontfamilyname"></a>  CD2DTextLayout::GetFontFamilyName
+## <a name="getfontfamilyname"></a> CD2DTextLayout::GetFontFamilyName
 
 Copies the font family name of the text at the specified position.
 
@@ -154,7 +154,7 @@ The range of text that has the same formatting as the text at the position speci
 
 CString object that contains the current font family name.
 
-##  <a name="getlocalename"></a>  CD2DTextLayout::GetLocaleName
+## <a name="getlocalename"></a> CD2DTextLayout::GetLocaleName
 
 Gets the locale name of the text at the specified position.
 
@@ -176,7 +176,7 @@ The range of text that has the same formatting as the text at the position speci
 
 CString object that contains the current locale name.
 
-##  <a name="isvalid"></a>  CD2DTextLayout::IsValid
+## <a name="isvalid"></a> CD2DTextLayout::IsValid
 
 Checks resource validity
 
@@ -188,7 +188,7 @@ virtual BOOL IsValid() const;
 
 TRUE if resource is valid; otherwise FALSE.
 
-##  <a name="m_ptextlayout"></a>  CD2DTextLayout::m_pTextLayout
+## <a name="m_ptextlayout"></a> CD2DTextLayout::m_pTextLayout
 
 A pointer to an IDWriteTextLayout.
 
@@ -196,7 +196,7 @@ A pointer to an IDWriteTextLayout.
 IDWriteTextLayout* m_pTextLayout;
 ```
 
-##  <a name="operator_idwritetextlayout_star"></a>  CD2DTextLayout::operator IDWriteTextLayout*
+## <a name="operator_idwritetextlayout_star"></a> CD2DTextLayout::operator IDWriteTextLayout*
 
 Returns IDWriteTextLayout interface
 
@@ -208,7 +208,7 @@ operator IDWriteTextLayout*();
 
 Pointer to an IDWriteTextLayout interface or NULL if object is not initialized yet.
 
-##  <a name="recreate"></a>  CD2DTextLayout::ReCreate
+## <a name="recreate"></a> CD2DTextLayout::ReCreate
 
 Re-creates a CD2DTextLayout.
 
@@ -220,7 +220,7 @@ virtual HRESULT ReCreate(CRenderTarget* */);
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-##  <a name="setfontfamilyname"></a>  CD2DTextLayout::SetFontFamilyName
+## <a name="setfontfamilyname"></a> CD2DTextLayout::SetFontFamilyName
 
 Sets null-terminated font family name for text within a specified text range
 
@@ -242,7 +242,7 @@ Text range to which this change applies
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE
 
-##  <a name="setlocalename"></a>  CD2DTextLayout::SetLocaleName
+## <a name="setlocalename"></a> CD2DTextLayout::SetLocaleName
 
 Sets the locale name for text within a specified text range
 

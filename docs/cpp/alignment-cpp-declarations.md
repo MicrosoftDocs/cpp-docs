@@ -2,12 +2,11 @@
 title: "Alignment"
 description: "How data alignment is specified in modern C++."
 ms.date: "12/11/2019"
-f1_keywords: ["alignas_cpp", "alignof_cpp"]
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
 ---
 # Alignment
 
-One of the low-level features of C++ is the ability to specify the precise alignment of objects in memory to take maximum advantage of a specific hardware architecture. By default, the compiler aligns class and struct members on their size value: `bool` and `char` on 1-byte boundaries, `short` on 2-byte boundaries, `int`, `long`, and `float` on 4-byte boundaries, and `long long`, `double`, and `long double` on 8-byte boundaries. 
+One of the low-level features of C++ is the ability to specify the precise alignment of objects in memory to take maximum advantage of a specific hardware architecture. By default, the compiler aligns class and struct members on their size value: `bool` and `char` on 1-byte boundaries, `short` on 2-byte boundaries, `int`, `long`, and `float` on 4-byte boundaries, and `long long`, `double`, and `long double` on 8-byte boundaries.
 
 In most scenarios, you never have to be concerned with alignment because the default alignment is already optimal. In some cases, however, you can achieve significant performance improvements, or memory savings, by specifying a custom alignment for your data structures. Before Visual Studio 2015 you could use the Microsoft-specific keywords `__alignof` and `declspec(alignas)` to specify an alignment greater than the default. Starting in Visual Studio 2015 you should use the C++11 standard keywords **alignof** and **alignas** for maximum code portability. The new keywords behave in the same way under the hood as the Microsoft-specific extensions. The documentation for those extensions also applies to the new keywords. For more information, see [__alignof Operator](../cpp/alignof-operator.md) and [align](../cpp/align-cpp.md). The C++ standard doesn't specify packing behavior for alignment on boundaries smaller than the compiler default for the target platform, so you still need to use the Microsoft #pragma [pack](../preprocessor/pack.md) in that case.
 

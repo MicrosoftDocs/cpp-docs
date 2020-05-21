@@ -39,7 +39,7 @@ Some upgraded projects and solutions can be built successfully without modificat
 
 1. Set the Platform Toolset, C++ Language Standard, and Windows SDK version (if applicable) to the preferred versions. (**Project** > **Properties** > **Configuration Properties** > **General**)
 
-1. If you have lots of errors, you can temporarily turn off some options while you fix them. To turn off the [/permissive-](../build/reference/permissive-standards-conformance.md) option, use **Project** > **Properties** > **Configuration Properties** > **C/C++** > **Language**. To turn off the [code analysis](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) option, use **Project** > **Properties** > **Configuration Properties** > **Code Analysis**.
+1. If you have lots of errors, you can temporarily turn off some options while you fix them. To turn off the [/permissive-](../build/reference/permissive-standards-conformance.md) option, use **Project** > **Properties** > **Configuration Properties** > **C/C++** > **Language**. To turn off the [code analysis](/cpp/code-quality/code-analysis-for-c-cpp-overview) option, use **Project** > **Properties** > **Configuration Properties** > **Code Analysis**.
 
 1. Ensure that all dependencies are present and that the include paths or library locations are correct. (**Project** > **Properties** > **Configuration Properties** > **VC++ Directories**)
 

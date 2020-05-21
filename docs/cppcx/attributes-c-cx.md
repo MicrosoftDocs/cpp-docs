@@ -5,7 +5,7 @@ ms.assetid: 4438e03c-4de3-433d-abcc-31aa863bc0e0
 ---
 # Attributes (C++/CX)
 
-An attribute is a special kind of ref class that can be prepended in square brackets to Windows Runtime types and methods to specify certain behaviors in metadata creation. Several predefined attributes—for example,  [Windows::Foundation::Metadata::WebHostHidden](/uwp/api/Windows.Foundation.Metadata.WebHostHiddenAttribute)—are commonly used in C++/CX code. This example shows how the attribute is applied to a class:
+An attribute is a special kind of ref class that can be prepended in square brackets to Windows Runtime types and methods to specify certain behaviors in metadata creation. Several predefined attributes—for example,  [Windows::Foundation::Metadata::WebHostHidden](/uwp/api/windows.foundation.metadata.webhosthiddenattribute)—are commonly used in C++/CX code. This example shows how the attribute is applied to a class:
 
 [!code-cpp[cx_attributes#01](../cppcx/codesnippet/CPP/cx_attributes/class1.h#01)]
 
@@ -19,19 +19,19 @@ You can also define custom attributes. Custom attributes must conform to these W
 
 - A field may be one of these types:
 
-   - int32 (int)
+  - int32 (int)
 
-   - uint32 (unsigned int)
+  - uint32 (unsigned int)
 
-   - bool
+  - bool
 
-   - Platform::String^
+  - Platform::String^
 
-   - Windows::Foundation::HResult
+  - Windows::Foundation::HResult
 
-   - Platform::Type^
+  - Platform::Type^
 
-   - public enum class (includes user-defined enums)
+  - public enum class (includes user-defined enums)
 
 The next example shows how to define a custom attribute and then initialize it when you use it.
 

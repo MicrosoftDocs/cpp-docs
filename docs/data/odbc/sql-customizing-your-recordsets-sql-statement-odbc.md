@@ -13,7 +13,7 @@ This topic explains:
 - How to override the SQL statement
 
 > [!NOTE]
->  This information applies to the MFC ODBC classes. If you are working with the MFC DAO classes, see the topic "Comparison of Microsoft Jet Database Engine SQL and ANSI SQL" in DAO Help.
+> This information applies to the MFC ODBC classes. If you are working with the MFC DAO classes, see the topic "Comparison of Microsoft Jet Database Engine SQL and ANSI SQL" in DAO Help.
 
 ## SQL Statement Construction
 
@@ -36,12 +36,12 @@ SELECT rfx-field-list FROM table-name [WHERE m_strFilter]
 where `table-name` is obtained by calling `GetDefaultSQL` and `rfx-field-list` is obtained from the RFX function calls in `DoFieldExchange`. This is what you get for a **SELECT** statement unless you replace it with an overriding version at run time, although you can also modify the default statement with parameters or a filter.
 
 > [!NOTE]
->  If you specify a column name that contains (or could contain) spaces, you must enclose the name in square brackets. For example, the name "First Name" should be "[First Name]".
+> If you specify a column name that contains (or could contain) spaces, you must enclose the name in square brackets. For example, the name "First Name" should be "[First Name]".
 
 To override the default **SELECT** statement, pass a string containing a complete **SELECT** statement when you call `Open`. Instead of constructing its own default string, the recordset uses the string you supply. If your replacement statement contains a **WHERE** clause, do not specify a filter in `m_strFilter` because you would then have two filter statements. Similarly, if your replacement statement contains an **ORDER BY** clause, do not specify a sort in `m_strSort` so that you will not have two sort statements.
 
 > [!NOTE]
->  If you use literal strings in your filters (or other parts of the SQL statement), you might have to "quote" (enclose in specified delimiters) such strings with a DBMS-specific literal prefix and literal suffix character (or characters).
+> If you use literal strings in your filters (or other parts of the SQL statement), you might have to "quote" (enclose in specified delimiters) such strings with a DBMS-specific literal prefix and literal suffix character (or characters).
 
 You might also encounter special syntactic requirements for operations such as outer joins, depending on your DBMS. Use ODBC functions to obtain this information from your driver for the DBMS. For example, call `::SQLGetTypeInfo` for a particular data type, such as `SQL_VARCHAR`, to request the LITERAL_PREFIX and LITERAL_SUFFIX characters. If you are writing database-independent code, see [Appendix C: SQL Grammar](/sql/odbc/reference/appendixes/appendix-c-sql-grammar) in the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference) for detailed syntax information.
 
@@ -63,7 +63,7 @@ One way to add the **DISTINCT** keyword to your recordset's SQL statement is to 
 ```
 
 > [!NOTE]
->  Use this technique only with a recordset opened as read-only.
+> Use this technique only with a recordset opened as read-only.
 
 ## Overriding the SQL Statement
 

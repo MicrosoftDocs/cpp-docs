@@ -8,7 +8,7 @@ helpviewer_keywords: ["Clean Build option", "output files, setting directory", "
 
 ::: moniker range=">=vs-2019"
 
-This topic applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md).
+This topic applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md). For Android projects, see [General Project Properties (Android C++)](/cpp/cross-platform/general-android-prop-page). For Android Makefile projects, see [General Project Properties (Android C++ Makefile)](/cpp/cross-platform/general-makefile-android-prop-page)
 
 When you right-click on a project node in Solution Explorer, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays these properties:
 
@@ -64,7 +64,7 @@ When you right-click on a project node in Solution Explorer, and select **Proper
 
 - **Platform Toolset**
 
-   Allows the project to target a different version of the Visual C++ libraries and compiler. Visual Studio C++ projects can target either the default toolset installed by Visual Studio, or one of the toolsets installed by several previous versions of Visual Studio, including toolsets that create executables that can run on Windowx XP. For information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
+   Allows the project to target a different version of the Visual C++ libraries and compiler. Visual Studio C++ projects can target either the default toolset installed by Visual Studio, or one of the toolsets installed by several previous versions of Visual Studio, including toolsets that create executables that can run on Windows XP. For information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - **C++ Language Standard**
 
@@ -134,14 +134,14 @@ In Visual Studio 2015 and Visual Studio 2017, when you right-click on a project 
 
 - **Platform Toolset**
 
-   Allows the project to target a different version of the Visual C++ libraries and compiler. Visual Studio C++ projects can target either the default toolset installed by Visual Studio, or one of the toolsets installed by several previous versions of Visual Studio, including toolsets that create executables that can run on Windowx XP. For information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
+   Allows the project to target a different version of the Visual C++ libraries and compiler. Visual Studio C++ projects can target either the default toolset installed by Visual Studio, or one of the toolsets installed by several previous versions of Visual Studio, including toolsets that create executables that can run on Windows XP. For information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - **Enable Managed Incremental Build**
 
    For managed projects, this enables detection of external visibility when you generate assemblies. If a change to a managed project is not visible to other projects, then dependent projects are not rebuilt. This can dramatically improve build times in solutions that include managed projects.
 
 ## Project Defaults
- 
+
 The properties in the Project Default section represent default properties that you can modify. The definition for these properties can be found in the .props files in *Installation Directory*\VC\VCProjectDefaults.
 
 - **Configuration Type**

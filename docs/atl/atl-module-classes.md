@@ -22,11 +22,11 @@ Earlier versions of ATL used `CComModule`. In ATL 7.0, `CComModule` functionalit
 
 - [CAtlModule](../atl/reference/catlmodule-class.md) The following `CAtlModule`-derived classes are customized to contain information required in a particular application type. Most members in these classes can be overridden:
 
-   - [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) Used in DLL applications. Provides code for the standard exports.
+  - [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) Used in DLL applications. Provides code for the standard exports.
 
-   - [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) Used in EXE applications. Provides code required in an EXE.
+  - [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) Used in EXE applications. Provides code required in an EXE.
 
-   - [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) Provides support to create Windows NT and Windows 2000 Services.
+  - [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) Provides support to create Windows NT and Windows 2000 Services.
 
 `CComModule` is still available for backward compatibility.
 

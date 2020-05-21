@@ -51,7 +51,7 @@ For more information on how to use `CMultiLock` objects, see the article [Multit
 
 **Header:** afxmt.h
 
-##  <a name="cmultilock"></a>  CMultiLock::CMultiLock
+## <a name="cmultilock"></a> CMultiLock::CMultiLock
 
 Constructs a `CMultiLock` object.
 
@@ -77,7 +77,7 @@ Specifies whether to initially attempt to access any of the supplied objects.
 
 This function is called after creating the array of synchronization objects to be waited on. It is usually called from within the thread that must wait for one of the synchronization objects to become available.
 
-##  <a name="islocked"></a>  CMultiLock::IsLocked
+## <a name="islocked"></a> CMultiLock::IsLocked
 
 Determines if the specified object is nonsignaled (unavailable).
 
@@ -94,7 +94,7 @@ The index in the array of objects corresponding to the object whose state is bei
 
 Nonzero if the specified object is locked; otherwise 0.
 
-##  <a name="lock"></a>  CMultiLock::Lock
+## <a name="lock"></a> CMultiLock::Lock
 
 Call this function to gain access to one or more of the resources controlled by the synchronization objects supplied to the `CMultiLock` constructor.
 
@@ -142,7 +142,7 @@ If *bWaitForAll* is TRUE, `Lock` will return successfully as soon as all the syn
 
 If `Lock` is not able to return immediately, it will wait for no more than the number of milliseconds specified in the *dwTimeOut* parameter before returning. If *dwTimeOut* is INFINITE, `Lock` will not return until access to an object is gained or a condition specified in *dwWakeMask* was met. Otherwise, if `Lock` was able to acquire a synchronization object, it will return successfully; if not, it will return failure.
 
-##  <a name="unlock"></a>  CMultiLock::Unlock
+## <a name="unlock"></a> CMultiLock::Unlock
 
 Releases the synchronization object owned by `CMultiLock`.
 

@@ -12,7 +12,7 @@ This article explains how to handle database exceptions. Most of the material in
 
 - [A database exception-handling example](#_core_a_database_exception.2d.handling_example)
 
-##  <a name="_core_approaches_to_exception_handling"></a> Approaches to Exception Handling
+## <a name="_core_approaches_to_exception_handling"></a> Approaches to Exception Handling
 
 The approach is the same whether you are working with DAO (obsolete) or ODBC.
 
@@ -38,7 +38,7 @@ For DAO exceptions, more information is typically available. You can access erro
 
 Additional information about DAO errors, the DAO Error object type, and the DAO Errors collection is available under class [CDaoException](../mfc/reference/cdaoexception-class.md).
 
-##  <a name="_core_a_database_exception.2d.handling_example"></a> A Database Exception-Handling Example
+## <a name="_core_a_database_exception.2d.handling_example"></a> A Database Exception-Handling Example
 
 The following example attempts to construct a [CRecordset](../mfc/reference/crecordset-class.md)-derived object on the heap with the **new** operator, and then open the recordset (for an ODBC data source). For a similar example for the DAO classes, see "DAO Exception Example" below.
 

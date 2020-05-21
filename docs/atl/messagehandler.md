@@ -11,7 +11,7 @@ ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
 
 ## Syntax
 
-```
+```cpp
 LRESULT MessageHandler(
     UINT uMsg,
     WPARAM wParam,

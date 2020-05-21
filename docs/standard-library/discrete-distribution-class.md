@@ -150,7 +150,7 @@ Distribution for 100 samples:
 
 **Namespace:** std
 
-## <a name="discrete_distribution"></a>  discrete_distribution::discrete_distribution
+## <a name="discrete_distribution"></a> discrete_distribution::discrete_distribution
 
 Constructs the distribution.
 
@@ -214,7 +214,7 @@ The constructor that has *count*, *low*, *high*, and *weightfunc* parameters con
 
 The constructor that has a `param_type` parameter *parm* constructs a distribution object using *parm* as the stored parameter structure.
 
-## <a name="param_type"></a>  discrete_distribution::param_type
+## <a name="param_type"></a> discrete_distribution::param_type
 
 Stores all the parameters of the distribution.
 

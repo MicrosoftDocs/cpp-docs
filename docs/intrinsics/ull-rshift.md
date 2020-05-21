@@ -15,7 +15,7 @@ on x64, shifts a 64-bit value specified by the first parameter to the right by a
 
 ```C
 unsigned __int64 __ull_rshift(
-   unsigned __int64 mask, 
+   unsigned __int64 mask,
    int nBit
 );
 ```

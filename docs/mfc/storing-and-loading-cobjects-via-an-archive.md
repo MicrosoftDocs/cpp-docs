@@ -1,7 +1,6 @@
 ---
 title: "Storing and Loading CObjects via an Archive"
 ms.date: "11/04/2016"
-f1_keywords: ["CObject"]
 helpviewer_keywords: ["CObjects [MFC], loading through archives", "CArchive class [MFC], storing and loading objects", "Serialize method, vs. CArchive operators", "CObject class [MFC], CArchive objects", "CObjects [MFC]"]
 ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
 ---
@@ -16,7 +15,7 @@ Therefore, whether you use the `CArchive` **<\<** and **>>** operators, versus c
 - When deserializing the object, you already have memory allocated for it.
 
 > [!CAUTION]
->  If you load the object using the `Serialize` function, you must also store the object using the `Serialize` function. Don't store using the `CArchive` **<<** operator and then load using the `Serialize` function, or store using the `Serialize` function and then load using `CArchive >>` operator.
+> If you load the object using the `Serialize` function, you must also store the object using the `Serialize` function. Don't store using the `CArchive` **<<** operator and then load using the `Serialize` function, or store using the `Serialize` function and then load using `CArchive >>` operator.
 
 The following example illustrates the cases:
 

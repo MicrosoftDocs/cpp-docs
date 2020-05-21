@@ -26,7 +26,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
 
 Note: `CString` is a native class. For a string class that is for use in a C++/CLI managed project, use `System.String`.
 
-##  <a name="_core_creating_cstring_objects_from_standard_c_literal_strings"></a> Creating CString Objects from Standard C Literal Strings
+## <a name="_core_creating_cstring_objects_from_standard_c_literal_strings"></a> Creating CString Objects from Standard C Literal Strings
 
 You can assign C-style literal strings to a `CString` just as you can assign one `CString` object to another.
 
@@ -43,11 +43,11 @@ You can assign C-style literal strings to a `CString` just as you can assign one
    > [!NOTE]
    > To write your application so that it can be compiled for Unicode or for ANSI, code literal strings by using the _T macro. For more information, see [Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).
 
-##  <a name="_core_accessing_individual_characters_in_a_cstring"></a> Accessing Individual Characters in a CString
+## <a name="_core_accessing_individual_characters_in_a_cstring"></a> Accessing Individual Characters in a CString
 
 You can access individual characters in a `CString` object by using the `GetAt` and `SetAt` methods. You can also use the array element, or subscript, operator ( [ ] ) instead of `GetAt` to get individual characters. (This resembles accessing array elements by index, as in standard C-style strings.) Index values for `CString` characters are zero-based.
 
-##  <a name="_core_concatenating_two_cstring_objects"></a> Concatenating Two CString Objects
+## <a name="_core_concatenating_two_cstring_objects"></a> Concatenating Two CString Objects
 
 To concatenate two `CString` objects, use the concatenation operators (+ or +=), as follows.
 
@@ -55,7 +55,7 @@ To concatenate two `CString` objects, use the concatenation operators (+ or +=),
 
 At least one argument to the concatenation operators (+ or +=) must be a `CString` object, but you can use a constant character string (for example, `"big"`) or a **char** (for example, 'x') for the other argument.
 
-##  <a name="_core_comparing_cstring_objects"></a> Comparing CString Objects
+## <a name="_core_comparing_cstring_objects"></a> Comparing CString Objects
 
 The `Compare` method and the == operator for `CString` are equivalent. `Compare`, **operator==**, and `CompareNoCase` are MBCS and Unicode aware; `CompareNoCase` is also case-insensitive. The `Collate` method of `CString` is locale-sensitive and is often slower than `Compare`. Use `Collate` only where you must abide by the sorting rules as specified by the current locale.
 
@@ -71,7 +71,7 @@ The `CStringT` class template defines the relational operators (<, \<=, >=, >, =
 
 [!code-cpp[NVC_ATLMFC_Utilities#186](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_4.cpp)]
 
-##  <a name="_core_converting_cstring_objects"></a> Converting CString Objects
+## <a name="_core_converting_cstring_objects"></a> Converting CString Objects
 
 For information about converting CString objects to other string types, see [How to: Convert Between Various String Types](../text/how-to-convert-between-various-string-types.md).
 

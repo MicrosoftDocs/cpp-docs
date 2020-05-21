@@ -13,9 +13,8 @@ Returns an iterator that points just beyond the end of the sequence.
 
 ## Syntax
 
-```
-
-    const_iterator end() const;
+```cpp
+const_iterator end() const;
 
 iterator end();
 ```

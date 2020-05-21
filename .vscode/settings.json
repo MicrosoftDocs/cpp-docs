@@ -2,6 +2,16 @@
     "files.associations": {
         "random": "cpp"
     },
-
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "markdown.docsetLanguages": [
+        "ARM assembler",
+        "C",
+        "C#",
+        "C++",
+        "HTML",
+        "JSON",
+        "Makefile",
+        "VB.NET",
+        "XML"
+    ]
 }

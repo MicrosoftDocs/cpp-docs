@@ -1,7 +1,6 @@
 ---
 title: "Control Bar Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.control"]
 helpviewer_keywords: ["control bars [MFC], classes"]
 ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
 ---

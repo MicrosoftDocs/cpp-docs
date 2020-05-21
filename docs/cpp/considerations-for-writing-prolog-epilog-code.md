@@ -10,7 +10,7 @@ ms.assetid: c7814de2-bb5c-4f5f-96d0-bcfd2ad3b182
 
 Before writing your own prolog and epilog code sequences, it is important to understand how the stack frame is laid out. It is also useful to know how to use the `__LOCAL_SIZE` symbol.
 
-##  <a name="_pluslang_c.2b2b_.stack_frame_layout"></a> Stack Frame Layout
+## <a name="_pluslang_c.2b2b_.stack_frame_layout"></a> Stack Frame Layout
 
 This example shows the standard prolog code that might appear in a 32-bit function:
 
@@ -32,7 +32,7 @@ ret                       ; Return from function
 
 The stack always grows down (from high to low memory addresses). The base pointer (`ebp`) points to the pushed value of `ebp`. The locals area begins at `ebp-4`. To access local variables, calculate an offset from `ebp` by subtracting the appropriate value from `ebp`.
 
-##  <a name="_pluslang___local_size"></a> __LOCAL_SIZE
+## <a name="_pluslang___local_size"></a> __LOCAL_SIZE
 
 The compiler provides a symbol, `__LOCAL_SIZE`, for use in the inline assembler block of function prolog code. This symbol is used to allocate space for local variables on the stack frame in custom prolog code.
 

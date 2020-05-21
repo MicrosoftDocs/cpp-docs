@@ -12,7 +12,7 @@ The `COleServerItem` class defines several overridable member functions that are
 
 In the [HIERSVR](../overview/visual-cpp-samples.md) sample, for example, the server-item class, `CServerItem`, has a member that is a pointer to an object of the class `CServerNode`. The `CServerNode` object is a node in the HIERSVR application's document, which is a tree. When the `CServerNode` object is the root node, the `CServerItem` object represents the whole document. When the `CServerNode` object is a child node, the `CServerItem` object represents a part of the document. See the MFC OLE sample [HIERSVR](../overview/visual-cpp-samples.md) for an example of this interaction.
 
-##  <a name="_core_implementing_server_items"></a> Implementing Server Items
+## <a name="_core_implementing_server_items"></a> Implementing Server Items
 
 If you use the application wizard to produce "starter" code for your application, all you have to do to include server items in your starter code is to choose one of the server options from the OLE Options page. If you are adding server items to an existing application, perform the following steps:
 
@@ -28,7 +28,7 @@ If you use the application wizard to produce "starter" code for your application
 
 1. Implement your server-item class's `OnGetExtent` member function. The framework calls this function to retrieve the size of the item. The default implementation does nothing.
 
-##  <a name="_core_a_tip_for_server.2d.item_architecture"></a> A Tip for Server-Item Architecture
+## <a name="_core_a_tip_for_server.2d.item_architecture"></a> A Tip for Server-Item Architecture
 
 As noted in [Implementing Server Items](#_core_implementing_server_items), server applications must be able to render items both in the server's view and in a metafile used by the container application. In the Microsoft Foundation Class Library's application architecture, the view class's `OnDraw` member function renders the item when it is being edited (see [CView::OnDraw](../mfc/reference/cview-class.md#ondraw) in the *Class Library Reference*). The server item's `OnDraw` renders the item into a metafile in all other cases (see [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#ondraw)).
 

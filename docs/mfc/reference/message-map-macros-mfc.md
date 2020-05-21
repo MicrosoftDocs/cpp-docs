@@ -48,7 +48,7 @@ Begins the definition of your message map.
 
 ### Syntax
 
-```
+```cpp
 BEGIN_MESSAGE_MAP( theClass, baseClass )
 ```
 
@@ -84,7 +84,7 @@ Begins the definition of a message map on a class type containing a single templ
 
 ### Syntax
 
-```
+```cpp
 BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 ```
 
@@ -111,13 +111,13 @@ For more information on implementing message maps for template classes, refer to
 
 **Header:** afxwin.h
 
-## <a name="declare_message_map"></a>  DECLARE_MESSAGE_MAP
+## <a name="declare_message_map"></a> DECLARE_MESSAGE_MAP
 
 Declares that the class defines a message map. Each `CCmdTarget`-derived class in your program must provide a message map to handle messages.
 
 ### Syntax
 
-```
+```cpp
 DECLARE_MESSAGE_MAP( )
 ```
 
@@ -126,7 +126,7 @@ DECLARE_MESSAGE_MAP( )
 Use the DECLARE_MESSAGE_MAP macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the BEGIN_MESSAGE_MAP macro, macro entries for each of your message-handler functions, and the END_MESSAGE_MAP macro.
 
 > [!NOTE]
->  If you declare any member after DECLARE_MESSAGE_MAP, you must specify a new access type (**public**, **private**, or **protected**) for them.
+> If you declare any member after DECLARE_MESSAGE_MAP, you must specify a new access type (**public**, **private**, or **protected**) for them.
 
 For more information on message maps and the DECLARE_MESSAGE_MAP macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).
 
@@ -144,13 +144,13 @@ class CMainFrame : public CMDIFrameWnd
 
 **Header:** afxwin.h
 
-## <a name="end_message_map"></a>  END_MESSAGE_MAP
+## <a name="end_message_map"></a> END_MESSAGE_MAP
 
 Ends the definition of your message map.
 
 ### Syntax
 
-```
+```cpp
 END_MESSAGE_MAP( )
 ```
 
@@ -162,13 +162,13 @@ For more information on message maps and the END_MESSAGE_MAP macro, see [Message
 
 **Header:** afxwin.h
 
-## <a name="on_command"></a>  ON_COMMAND
+## <a name="on_command"></a> ON_COMMAND
 
 This macro maps a command message to a member function.
 
 ### Syntax
 
-```
+```cpp
 ON_COMMAND( commandId, memberFxn )
 ```
 
@@ -200,13 +200,13 @@ END_MESSAGE_MAP()
 
 **Header:** afxmsg_.h
 
-## <a name="on_command_ex"></a>  ON_COMMAND_EX
+## <a name="on_command_ex"></a> ON_COMMAND_EX
 
 Extended command-handler member function.
 
 ### Syntax
 
-```
+```cpp
 ON_COMMAND_EX(commandId, memberFxn);
 ```
 
@@ -228,13 +228,13 @@ For more information, see Technical Note [TN006: Message Maps]tm006-message-maps
 
 Header file: afxmsg_.h
 
-## <a name="on_control"></a>  ON_CONTROL
+## <a name="on_control"></a> ON_CONTROL
 
 Indicates which function will handle a custom-control notification message.
 
 ### Syntax
 
-```
+```cpp
 ON_CONTROL( wNotifyCode, commandId, memberFxn )
 ```
 
@@ -261,13 +261,13 @@ For more information and examples, see [Message Handling and Mapping Topics](../
 
 **Header:** afxmsg_.h
 
-## <a name="on_message"></a>  ON_MESSAGE
+## <a name="on_message"></a> ON_MESSAGE
 
 Indicates which function will handle a user-defined message.
 
 ### Syntax
 
-```
+```cpp
 ON_MESSAGE( message, memberFxn )
 ```
 
@@ -288,7 +288,7 @@ User-defined messages are any messages that are not standard Windows WM_MESSAGE 
 There should be exactly one ON_MESSAGE macro statement in your message map for every user-defined message that must be mapped to a message-handler function.
 
 > [!NOTE]
->  In addition to user-defined messages, ON_MESSAGE handles less common Windows messages. For more information, see [Message Maps](../../mfc/tn006-message-maps.md).
+> In addition to user-defined messages, ON_MESSAGE handles less common Windows messages. For more information, see [Message Maps](../../mfc/tn006-message-maps.md).
 
 For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md) and [User-Defined Handlers](user-defined-handlers.md)
 
@@ -319,13 +319,13 @@ LRESULT CMyWnd2::OnMyMessage(WPARAM wParam, LPARAM lParam)
 
 **Header:** afxmsg_.h
 
-## <a name="on_olecmd"></a>  ON_OLECMD
+## <a name="on_olecmd"></a> ON_OLECMD
 
 Routes commands through the command dispatch interface `IOleCommandTarget`.
 
 ### Syntax
 
-```
+```cpp
 ON_OLECMD( pguid, olecmdid, commandId )
 ```
 
@@ -448,13 +448,13 @@ Dispatches the Edit Undo command. Implemented as:
 
 **Header:** afxdocob.h
 
-## <a name="on_registered_message"></a>  ON_REGISTERED_MESSAGE
+## <a name="on_registered_message"></a> ON_REGISTERED_MESSAGE
 
 The Windows `RegisterWindowMessage` function is used to define a new window message that is guaranteed to be unique throughout the system.
 
 ### Syntax
 
-```
+```cpp
 ON_REGISTERED_MESSAGE( nMessageVariable, memberFxn )
 ```
 
@@ -486,13 +486,13 @@ END_MESSAGE_MAP()
 
 **Header:** afxmsg_.h
 
-## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE
+## <a name="on_registered_thread_message"></a> ON_REGISTERED_THREAD_MESSAGE
 
 Indicates which function will handle the message registered by the Windows RegisterWindowMessage function.
 
 ### Syntax
 
-```
+```cpp
 ON_REGISTERED_THREAD_MESSAGE(nMessageVariable, memberFxn )
 ```
 
@@ -512,13 +512,13 @@ RegisterWindowMessage is used to define a new window message that is guaranteed 
 
 **Header:** afxmsg_.h
 
-## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE
+## <a name="on_thread_message"></a> ON_THREAD_MESSAGE
 
 Indicates which function will handle a user-defined message.
 
 ### Syntax
 
-```
+```cpp
 ON_THREAD_MESSAGE( message, memberFxn )
 ```
 
@@ -538,13 +538,13 @@ ON_THREAD_MESSAGE must be used instead of ON_MESSAGE when you have a `CWinThread
 
 **Header:** afxole.h
 
-## <a name="on_update_command_ui"></a>  ON_UPDATE_COMMAND_UI
+## <a name="on_update_command_ui"></a> ON_UPDATE_COMMAND_UI
 
 This macro indicates which function will handle a user-interface update command message.
 
 ### Syntax
 
-```
+```cpp
 ON_UPDATE_COMMAND_UI( messageId, memberFxn )
 ```
 
@@ -566,13 +566,13 @@ For more information and examples, see [Message Handling and Mapping Topics](../
 
 **Header:** afxole.h
 
-## <a name="on_command_range"></a>  ON_COMMAND_RANGE
+## <a name="on_command_range"></a> ON_COMMAND_RANGE
 
 Use this macro to map a contiguous range of command IDs to a single message handler function.
 
 ### Syntax
 
-```
+```cpp
 ON_COMMAND_RANGE( id1, id2, memberFxn )
 ```
 
@@ -621,13 +621,13 @@ void CChildFrame::OnRangeCmds(UINT nID)
 
 **Header:** afxmsg_.h
 
-## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE
+## <a name="on_update_command_ui_range"></a> ON_UPDATE_COMMAND_UI_RANGE
 
 Maps a contiguous range of command IDs to a single update message handler function.
 
 ### Syntax
 
-```
+```cpp
 ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
 ```
 
@@ -652,13 +652,13 @@ There is no automatic support for message map ranges, so you must place the macr
 
 **Header:** afxmsg_.h
 
-## <a name="on_control_range"></a>  ON_CONTROL_RANGE
+## <a name="on_control_range"></a> ON_CONTROL_RANGE
 
 Use this macro to map a contiguous range of control IDs to a single message handler function for a specified Windows notification message, such as BN_CLICKED.
 
 ### Syntax
 
-```
+```cpp
 ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
 ```
 

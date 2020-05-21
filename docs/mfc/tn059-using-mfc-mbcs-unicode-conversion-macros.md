@@ -7,7 +7,7 @@ ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
 # TN059: Using MFC MBCS/Unicode Conversion Macros
 
 > [!NOTE]
->  The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
+> The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
 
 This note describes how to use the macros for MBCS/Unicode conversion, which are defined in AFXPRIV.H. These macros are most useful if your application deals directly with the OLE API or for some reason, often needs to convert between Unicode and MBCS.
 
@@ -100,7 +100,7 @@ Again, there are similar macros for doing TEXTMETRIC, DEVMODE, BSTR, and OLE all
 
 Do not use the macros in a tight loop. For example, you do not want to write the following kind of code:
 
-```
+```cpp
 void BadIterateCode(LPCTSTR lpsz)
 {
     USES_CONVERSION;
@@ -112,7 +112,7 @@ void BadIterateCode(LPCTSTR lpsz)
 
 The code above could result in allocating megabytes of memory on the stack depending on what the contents of the string `lpsz` is! It also takes time to convert the string for each iteration of the loop. Instead, move such constant conversions out of the loop:
 
-```
+```cpp
 void MuchBetterIterateCode(LPCTSTR lpsz)
 {
     USES_CONVERSION;
@@ -126,7 +126,7 @@ void MuchBetterIterateCode(LPCTSTR lpsz)
 
 If the string is not constant, then encapsulate the method call into a function. This will allow the conversion buffer to be freed each time. For example:
 
-```
+```cpp
 void CallSomeMethod(int ii, LPCTSTR lpsz)
 {
     USES_CONVERSION;

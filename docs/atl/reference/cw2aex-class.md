@@ -10,7 +10,7 @@ ms.assetid: 44dc2cf5-dd30-440b-a9b9-b21b43f49843
 This class is used by the string conversion macros CT2AEX, CW2TEX, CW2CTEX, and CT2CAEX, and the typedef CW2A.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -80,7 +80,7 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 **Header:** atlconv.h
 
-##  <a name="cw2aex"></a>  CW2AEX::CW2AEX
+## <a name="cw2aex"></a> CW2AEX::CW2AEX
 
 The constructor.
 
@@ -101,7 +101,7 @@ The code page used to perform the conversion. See the code page parameter discus
 
 Allocates the buffer used in the translation process.
 
-##  <a name="dtor"></a>  CW2AEX::~CW2AEX
+## <a name="dtor"></a> CW2AEX::~CW2AEX
 
 The destructor.
 
@@ -113,7 +113,7 @@ The destructor.
 
 Frees the allocated buffer.
 
-##  <a name="m_psz"></a>  CW2AEX::m_psz
+## <a name="m_psz"></a> CW2AEX::m_psz
 
 The data member that stores the source string.
 
@@ -121,7 +121,7 @@ The data member that stores the source string.
 LPSTR m_psz;
 ```
 
-##  <a name="m_szbuffer"></a>  CW2AEX::m_szBuffer
+## <a name="m_szbuffer"></a> CW2AEX::m_szBuffer
 
 The static buffer, used to store the converted string.
 
@@ -129,7 +129,7 @@ The static buffer, used to store the converted string.
 char m_szBuffer[t_nBufferLength];
 ```
 
-##  <a name="operator_lpstr"></a>  CW2AEX::operator LPSTR
+## <a name="operator_lpstr"></a> CW2AEX::operator LPSTR
 
 Conversion operator.
 

@@ -2,7 +2,7 @@
 title: "Storage classes (C++)"
 description: "In C++, the static, extern and thread_local keywords specify the lifetime, linkage, and memory location of a variable or function."
 ms.date: "12/11/2019"
-f1_keywords: ["thread_local_cpp", "extern_cpp", "static_cpp", "register_cpp"]
+f1_keywords: ["thread_local_cpp", "static_cpp", "register_cpp"]
 helpviewer_keywords: ["storage classes [C++], basic concepts"]
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
 ---
@@ -184,7 +184,7 @@ Things to note about the **thread_local** specifier:
 
 On Windows, **thread_local** is functionally equivalent to  [__declspec(thread)](../cpp/thread.md) except that **__declspec(thread)** can be applied to a type definition and is valid in C code. Whenever possible, use **thread_local** because it is part of the C++ standard and is therefore more portable.
 
-##  <a name="register"></a>  register
+## <a name="register"></a> register
 
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **register** keyword is no longer a supported storage class. The keyword is still reserved in the standard for future use.
 

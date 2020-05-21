@@ -13,8 +13,7 @@ Describes an object that can serve as a reference to an element of the controlle
 
 ## Syntax
 
-```
-
+```cpp
 typedef T2 reference;
 ```
 

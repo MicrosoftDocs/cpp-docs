@@ -21,7 +21,7 @@ The following topics are covered:
 
 - [How to paint your control using metafiles](#_core_painting_your_control_using_metafiles)
 
-##  <a name="_core_the_painting_process_of_an_activex_control"></a> The Painting Process of an ActiveX Control
+## <a name="_core_the_painting_process_of_an_activex_control"></a> The Painting Process of an ActiveX Control
 
 When ActiveX controls are initially displayed or are redrawn, they follow a painting process similar to other applications developed using MFC, with one important distinction: ActiveX controls can be in an active or an inactive state.
 
@@ -36,16 +36,16 @@ The `OnDraw` member function handles control painting. When a control is inactiv
 The rectangle passed by the framework to the `OnDraw` member function contains the area occupied by the control. If the control is active, the upper-left corner is (0, 0) and the device context passed is for the child window that contains the control. If the control is inactive, the upper-left coordinate is not necessarily (0, 0) and the device context passed is for the control container containing the control.
 
 > [!NOTE]
->  It is important that your modifications to `OnDraw` do not depend on the rectangle's upper left point being equal to (0, 0) and that you draw only inside the rectangle passed to `OnDraw`. Unexpected results can occur if you draw beyond the rectangle's area.
+> It is important that your modifications to `OnDraw` do not depend on the rectangle's upper left point being equal to (0, 0) and that you draw only inside the rectangle passed to `OnDraw`. Unexpected results can occur if you draw beyond the rectangle's area.
 
 The default implementation provided by the MFC ActiveX Control Wizard in the control implementation file (.CPP), shown below, paints the rectangle with a white brush and fills the ellipse with the current background color.
 
 [!code-cpp[NVC_MFC_AxUI#1](../mfc/codesnippet/cpp/mfc-activex-controls-painting-an-activex-control_1.cpp)]
 
 > [!NOTE]
->  When painting a control, you should not make assumptions about the state of the device context that is passed as the *pdc* parameter to the `OnDraw` function. Occasionally the device context is supplied by the container application and will not necessarily be initialized to the default state. In particular, explicitly select the pens, brushes, colors, fonts, and other resources that your drawing code depends upon.
+> When painting a control, you should not make assumptions about the state of the device context that is passed as the *pdc* parameter to the `OnDraw` function. Occasionally the device context is supplied by the container application and will not necessarily be initialized to the default state. In particular, explicitly select the pens, brushes, colors, fonts, and other resources that your drawing code depends upon.
 
-##  <a name="_core_optimizing_your_paint_code"></a> Optimizing Your Paint Code
+## <a name="_core_optimizing_your_paint_code"></a> Optimizing Your Paint Code
 
 After the control is successfully painting itself, the next step is to optimize the `OnDraw` function.
 
@@ -53,7 +53,7 @@ The default implementation of ActiveX control painting paints the entire control
 
 The `OnDraw` function provides an easy method of optimization by passing *rcInvalid*, the rectangular area of the control that needs redrawing. Use this area, usually smaller than the entire control area, to speed up the painting process.
 
-##  <a name="_core_painting_your_control_using_metafiles"></a> Painting Your Control Using Metafiles
+## <a name="_core_painting_your_control_using_metafiles"></a> Painting Your Control Using Metafiles
 
 In most cases the *pdc* parameter to the `OnDraw` function points to a screen device context (DC). However, when printing images of the control or during a print preview session, the DC received for rendering is a special type called a "metafile DC". Unlike a screen DC, which immediately handles requests sent to it, a metafile DC stores requests to be played back at a later time. Some container applications may also choose to render the control image using a metafile DC when in design mode.
 

@@ -73,7 +73,7 @@ int main()
 regex error: unbalanced parentheses
 ```
 
-## <a name="code"></a>  regex_error::code
+## <a name="code"></a> regex_error::code
 
 Returns the error code.
 
@@ -85,7 +85,7 @@ regex_constants::error_code code() const;
 
 The member function returns the value that was passed to the object's constructor.
 
-## <a name="regex_error"></a>  regex_error::regex_error
+## <a name="regex_error"></a> regex_error::regex_error
 
 Constructs the object.
 

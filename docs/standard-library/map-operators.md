@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::operator!= (map)", "std::operator&gt; (map)", "std::
 ---
 # &lt;map&gt; operators
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests if the map object on the left side of the operator is not equal to the map object on the right side.
 
@@ -334,7 +334,7 @@ The map m1 is greater than the map m3.
 */
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> operator&gt;=
 
 Tests if the map object on the left side of the operator is greater than or equal to the map object on the right side.
 
@@ -532,7 +532,7 @@ The multimap m1 is less than the multimap m2.
 The multimap m1 is not less than the multimap m3.
 ```
 
-## <a name="op_lt_eq_multimap"></a>  operator&lt;=
+## <a name="op_lt_eq_multimap"></a> operator&lt;=
 
 Tests if the multimap object on the left side of the operator is less than or equal to the multimap object on the right side.
 

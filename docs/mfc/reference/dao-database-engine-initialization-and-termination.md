@@ -15,7 +15,7 @@ DAO is used with Access databases and is supported through Office 2013. DAO 3.6 
 |[AfxDaoInit](#afxdaoinit)|Initializes the DAO database engine.|
 |[AfxDaoTerm](#afxdaoterm)|Terminates the DAO database engine.|
 
-##  <a name="afxdaoinit"></a>  AfxDaoInit
+## <a name="afxdaoinit"></a> AfxDaoInit
 
 This function initializes the DAO database engine.
 
@@ -36,7 +36,7 @@ For related information, and for an example of calling `AfxDaoInit`, see [Techni
 
   **Header** afxdao.h
 
-##  <a name="afxdaoterm"></a>  AfxDaoTerm
+## <a name="afxdaoterm"></a> AfxDaoTerm
 
 This function terminates the DAO database engine.
 

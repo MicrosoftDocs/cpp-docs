@@ -1,7 +1,6 @@
 ---
 title: "Accelerator Keys (C++ Image Editor for Icons)"
 ms.date: "02/15/2019"
-f1_keywords: ["vc.editors.bitmap", "vc.editors.icon"]
 helpviewer_keywords: ["accelerator keys", "Image editor [C++], accelerator keys"]
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
 ---

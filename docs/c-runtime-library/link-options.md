@@ -1,7 +1,7 @@
 ---
 title: "Link Options"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["nothrownew.obj", "newmode.obj", "noenv.obj", "psetargv.obj", "loosefpmath.obj", "smallheap.obj", "fp10.obj", "nochkclr.obj", "chkstk.obj", "pcommode.obj", "pnoenv.obj", "link options [C++]", "invalidcontinue.obj", "pnothrownew.obj", "pwsetargv.obj", "pinvalidcontinue.obj", "wsetargv.obj", "binmode.obj", "setargv.obj", "noarg.obj", "pnewmode.obj", "commode.obj", "pthreadlocale.obj", "pbinmode.obj", "threadlocale.obj", "pnoarg.obj"]
+helpviewer_keywords: ["nothrownew.obj", "newmode.obj", "noenv.obj", "psetargv.obj", "legacy_stdio_float_rounding.obj", "loosefpmath.obj", "smallheap.obj", "fp10.obj", "nochkclr.obj", "chkstk.obj", "pcommode.obj", "pnoenv.obj", "link options [C++]", "invalidcontinue.obj", "pnothrownew.obj", "pwsetargv.obj", "pinvalidcontinue.obj", "wsetargv.obj", "binmode.obj", "setargv.obj", "noarg.obj", "pnewmode.obj", "commode.obj", "pthreadlocale.obj", "pbinmode.obj", "threadlocale.obj", "pnoarg.obj"]
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
 ---
 # Link Options
@@ -18,6 +18,7 @@ CLR pure mode versions of these objects are deprecated in Visual Studio 2015 and
 |exe_initialize_mta.lib|n/a|Initializes the MTA apartment during EXE startup, which allows the use of COM objects in global smart pointers. Because this option leaks an MTA apartment reference during shutdown, do not use it for DLLs. Linking to this is equivalent to including combase.h and defining _EXE_INITIALIZE_MTA. |
 |fp10.obj|n/a|Changes the default precision control to 64 bits. See [Floating-Point Support](../c-runtime-library/floating-point-support.md).|
 |invalidcontinue.obj|pinvalidcontinue.obj|Sets a default invalid parameter handler that does nothing, meaning that invalid parameters passed to CRT functions will just set errno and return an error result.|
+|legacy_stdio_float_rounding.obj|n/a|Printing floating-point values (for example, when using [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)) with the Windows 10 19041 Universal C Runtime has been fixed. It now properly rounds exactly representable floating-point numbers, and respects the floating-point rounding requested by [fesetenv](../c-runtime-library/reference/fesetenv1.md). This behavior update is available in Visual Studio 2019 version 16.2 and later. Legacy behavior is used in earlier versions of Visual Studio, or by providing this link option.|
 |loosefpmath.obj|n/a|Ensures that floating point code tolerates denormal values.|
 |newmode.obj|pnewmode.obj|Causes [malloc](../c-runtime-library/reference/malloc.md) to call the new handler on failure. See [_set_new_mode](../c-runtime-library/reference/set-new-mode.md), [_set_new_handler](../c-runtime-library/reference/set-new-handler.md), [calloc](../c-runtime-library/reference/calloc.md), and [realloc](../c-runtime-library/reference/realloc.md).|
 |noarg.obj|pnoarg.obj|Disables all processing of argc and argv.|

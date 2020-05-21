@@ -63,17 +63,17 @@ If `cmdname` contains a drive specifier or any slashes (that is, if it is a rela
 In the past, some of these functions set `errno` to zero on success; the current behavior is to leave `errno` untouched on success, as specified by the C standard. If you need to emulate the old behavior, set `errno` to zero just before calling these functions.
 
 > [!NOTE]
->  To ensure proper overlay initialization and termination, do not use the `setjmp` or `longjmp` function to enter or leave an overlay routine.
+> To ensure proper overlay initialization and termination, do not use the `setjmp` or `longjmp` function to enter or leave an overlay routine.
 
 ## Arguments for the Spawned Process
 
 To pass arguments to the new process, give one or more pointers to character strings as arguments in the `_spawn` call. These character strings form the argument list for the spawned process. The combined length of the strings forming the argument list for the new process must not exceed 1024 bytes. The terminating null character ('\0') for each string is not included in the count, but space characters (automatically inserted to separate arguments) are included.
 
 > [!NOTE]
->  Spaces embedded in strings may cause unexpected behavior; for example, passing `_spawn` the string `"hi there"` will result in the new process getting two arguments, `"hi"` and `"there"`. If the intent was to have the new process open a file named "hi there", the process would fail. You can avoid this by quoting the string: `"\"hi there\""`.
+> Spaces embedded in strings may cause unexpected behavior; for example, passing `_spawn` the string `"hi there"` will result in the new process getting two arguments, `"hi"` and `"there"`. If the intent was to have the new process open a file named "hi there", the process would fail. You can avoid this by quoting the string: `"\"hi there\""`.
 
 > [!IMPORTANT]
->  Do not pass user input to `_spawn` without explicitly checking its content. `_spawn` will result in a call to [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) so keep in mind that unqualified path names could lead to potential security vulnerabilities.
+> Do not pass user input to `_spawn` without explicitly checking its content. `_spawn` will result in a call to [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) so keep in mind that unqualified path names could lead to potential security vulnerabilities.
 
 You can pass argument pointers as separate arguments (in `_spawnl`, `_spawnle`, `_spawnlp`, and `_spawnlpe`) or as an array of pointers (in `_spawnv`, `_spawnve`, `_spawnvp`, and `_spawnvpe`). You must pass at least one argument, `arg0` or `argv`[0], to the spawned process. By convention, this argument is the name of the program as you would type it on the command line. A different value does not produce an error.
 

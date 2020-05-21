@@ -8,13 +8,13 @@ ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
 ---
 # Tracking Reference Operator (C++/CLI and C++/CX)
 
-A *tracking reference* (`%`) behaves like an ordinary C++ reference (`&`) except that when an object is assigned to a tracking reference, the object’s reference count is incremented.
+A *tracking reference* (`%`) behaves like an ordinary C++ reference (`&`) except that when an object is assigned to a tracking reference, the object's reference count is incremented.
 
 ## All Platforms
 
 A tracking reference has the following characteristics.
 
-- Assignment of an object to a tracking reference causes the object’s reference count to be incremented.
+- Assignment of an object to a tracking reference causes the object's reference count to be incremented.
 
 - A native reference (`&`) is the result when you dereference a `*`. A tracking reference (`%`) is the result when you dereference a `^`. As long as you have a `%` to an object, the object will stay alive in memory.
 

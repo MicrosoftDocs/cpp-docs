@@ -50,7 +50,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="cinterfacearray"></a>  CInterfaceArray::CInterfaceArray
+## <a name="cinterfacearray"></a> CInterfaceArray::CInterfaceArray
 
 The constructor.
 

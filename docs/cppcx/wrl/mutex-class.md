@@ -52,7 +52,7 @@ Name                                 | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="lock"></a>Mutex::Lock
+## <a name="lock"></a> Mutex::Lock
 
 Waits until the current object, or the `Mutex` object associated with the specified handle, releases the mutex or the specified time-out interval has elapsed.
 
@@ -77,7 +77,7 @@ The handle of a `Mutex` object.
 
 ### Return Value
 
-## <a name="mutex"></a>Mutex::Mutex
+## <a name="mutex"></a> Mutex::Mutex
 
 Initializes a new instance of the `Mutex` class.
 
@@ -100,7 +100,7 @@ A handle, or an rvalue-reference to a handle, to a `Mutex` object.
 
 The first constructor initializes a `Mutex` object from the specified handle. The second constructor initializes a `Mutex` object from the specified handle, and then moves ownership of the mutex to the current `Mutex` object.
 
-## <a name="operator-assign"></a>Mutex::operator=
+## <a name="operator-assign"></a> Mutex::operator=
 
 Assigns (moves) the specified `Mutex` object to the current `Mutex` object.
 

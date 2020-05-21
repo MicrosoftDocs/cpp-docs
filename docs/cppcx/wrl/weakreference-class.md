@@ -54,7 +54,7 @@ Name                                                                 | Descripti
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="tilde-weakreference"></a>WeakReference::~WeakReference
+## <a name="tilde-weakreference"></a> WeakReference::~WeakReference
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -68,7 +68,7 @@ virtual ~WeakReference();
 
 Deinitializes the current instance of the `WeakReference` class.
 
-## <a name="decrementstrongreference"></a>WeakReference::DecrementStrongReference
+## <a name="decrementstrongreference"></a> WeakReference::DecrementStrongReference
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -86,7 +86,7 @@ When the strong reference count becomes zero, the strong reference is set to `nu
 
 The decremented strong reference count.
 
-## <a name="incrementstrongreference"></a>WeakReference::IncrementStrongReference
+## <a name="incrementstrongreference"></a> WeakReference::IncrementStrongReference
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -102,7 +102,7 @@ The incremented strong reference count.
 
 Increments the strong reference count of the current `WeakReference` object.
 
-## <a name="resolve"></a>WeakReference::Resolve
+## <a name="resolve"></a> WeakReference::Resolve
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -133,7 +133,7 @@ When this operation completes, a copy of the current strong reference if the str
 
 Sets the specified pointer to the current strong reference value if the strong reference count is nonzero.
 
-## <a name="setunknown"></a>WeakReference::SetUnknown
+## <a name="setunknown"></a> WeakReference::SetUnknown
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -152,7 +152,7 @@ A pointer to the `IUnknown` interface of an object.
 
 Sets the strong reference of the current `WeakReference` object to the specified interface pointer.
 
-## <a name="weakreference"></a>WeakReference::WeakReference
+## <a name="weakreference"></a> WeakReference::WeakReference
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

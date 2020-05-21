@@ -66,7 +66,7 @@ The `operator()` member functions return the next generated value based on the U
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the Weibull distribution, see the Wolfram MathWorld article [Weibull Distribution](http://mathworld.wolfram.com/WeibullDistribution.html).
+For detailed information about the Weibull distribution, see the Wolfram MathWorld article [Weibull Distribution](https://mathworld.wolfram.com/WeibullDistribution.html).
 
 ## Example
 
@@ -185,7 +185,7 @@ Distribution for 10 samples:
 
 **Namespace:** std
 
-## <a name="weibull_distribution"></a>  weibull_distribution::weibull_distribution
+## <a name="weibull_distribution"></a> weibull_distribution::weibull_distribution
 
 ```cpp
 explicit weibull_distribution(result_type a = 1.0, result_type b = 1.0);
@@ -211,7 +211,7 @@ The first constructor constructs an object whose stored `a` value holds the valu
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-## <a name="param_type"></a>  weibull_distribution::param_type
+## <a name="param_type"></a> weibull_distribution::param_type
 
 Stores the parameters of the distribution.
 

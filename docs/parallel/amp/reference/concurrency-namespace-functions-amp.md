@@ -16,7 +16,7 @@ ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
 |[direct3d_abort](#direct3d_abort)|[direct3d_errorf](#direct3d_errorf)|[direct3d_printf](#direct3d_printf)|
 |[global_memory_fence](#global_memory_fence)|[parallel_for_each Function (C++ AMP)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|
 
-## <a name="all_memory_fence"></a>  all_memory_fence
+## <a name="all_memory_fence"></a> all_memory_fence
 
 Blocks execution of all threads in a tile until all memory accesses have been completed. This ensures that all memory accesses are visible to other threads in the thread tile, and are executed in program order.
 
@@ -29,7 +29,7 @@ inline void all_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 *_Barrier*<br/>
 A `tile_barrier` object.
 
-## <a name="amp_uninitialize"></a>  amp_uninitialize
+## <a name="amp_uninitialize"></a> amp_uninitialize
 
 Uninitializes the C++ AMP runtime. It is legal to call this function multiple times during an applications lifetime. Calling any C++ AMP API after calling this function will reinitialize the C++ AMP runtime. Note that it is illegal to use C++ AMP objects across calls to this function and doing so will result in undefined behavior. Also, concurrently calling this function and any other AMP APIs is illegal and would result in undefined behavior.
 
@@ -37,7 +37,7 @@ Uninitializes the C++ AMP runtime. It is legal to call this function multiple ti
 void __cdecl amp_uninitialize();
 ```
 
-## <a name="atomic_compare_exchange"></a>  atomic_compare_exchange
+## <a name="atomic_compare_exchange"></a> atomic_compare_exchange
 
 Atomically compares the value stored at a memory location specified in the first argument for equality with the value of the second specified argument, and if the values are the same, the value at the memory location is changed to that of the third specified argument.
 
@@ -70,7 +70,7 @@ The value to be stored to the memory location specified in by `_Dest` if `_Dest`
 
 **true** if the operation is successful; otherwise, **false**.
 
-## <a name="atomic_exchange"></a>  atomic_exchange Function (C++ AMP)
+## <a name="atomic_exchange"></a> atomic_exchange Function (C++ AMP)
 
 Sets the value of destination location as an atomic operation.
 
@@ -103,7 +103,7 @@ The new value.
 
 The original value of the destination location.
 
-## <a name="atomic_fetch_add"></a>  atomic_fetch_add Function (C++ AMP)
+## <a name="atomic_fetch_add"></a> atomic_fetch_add Function (C++ AMP)
 
 Atomically add a value to the value of a memory location.
 
@@ -131,7 +131,7 @@ The value to be added.
 
 The original value of the memory location.
 
-## <a name="atomic_fetch_and"></a>  atomic_fetch_and Function (C++ AMP)
+## <a name="atomic_fetch_and"></a> atomic_fetch_and Function (C++ AMP)
 
 Atomically performs a bitwise AND operation of a value and the value of a memory location.
 
@@ -159,7 +159,7 @@ The value to use in the bitwise AND calculation.
 
 The original value of the memory location.
 
-## <a name="atomic_fetch_dec"></a>  atomic_fetch_dec
+## <a name="atomic_fetch_dec"></a> atomic_fetch_dec
 
 Atomically decrements the value stored at the specified memory location.
 
@@ -179,7 +179,7 @@ The location in memory of the value to be decremented.
 
 The original value stored at the memory location.
 
-## <a name="atomic_fetch_inc"></a>  atomic_fetch_inc
+## <a name="atomic_fetch_inc"></a> atomic_fetch_inc
 
 Atomically increments the value stored at the specified memory location.
 
@@ -198,7 +198,7 @@ The location in memory of the value to be incremented.
 
 The original value stored at the memory location.
 
-## <a name="atomic_fetch_max"></a>  atomic_fetch_max
+## <a name="atomic_fetch_max"></a> atomic_fetch_max
 
 Atomically computes the maximum value between the value stored at the memory location specified in the first argument and the value specified in the second argument, and stores it at the same memory location.
 
@@ -226,7 +226,7 @@ The value to be compared to the value at the specified location.
 
 The original value stored at the specified location location.
 
-## <a name="atomic_fetch_min"></a>  atomic_fetch_min
+## <a name="atomic_fetch_min"></a> atomic_fetch_min
 
 Atomically computes the minimum value between the value stored at the memory location specified in the first argument and the value specified in the second argument, and stores it at the same memory location.
 
@@ -254,7 +254,7 @@ The value to be compared to the value at the specified location.
 
 The original value stored at the specified location location.
 
-## <a name="atomic_fetch_or"></a>  atomic_fetch_or Function (C++ AMP)
+## <a name="atomic_fetch_or"></a> atomic_fetch_or Function (C++ AMP)
 
 Atomically performs a bitwise OR operation with a value and the value of a memory location.
 
@@ -282,7 +282,7 @@ The value to use in the bitwise OR calculation.
 
 The original value of the memory location.
 
-## <a name="atomic_fetch_sub"></a>  atomic_fetch_sub Function (C++ AMP)
+## <a name="atomic_fetch_sub"></a> atomic_fetch_sub Function (C++ AMP)
 
 Atomically subtracts a value from a memory location.
 
@@ -310,7 +310,7 @@ The value to be subtracted.
 
 The original value of the memory location.
 
-## <a name="atomic_fetch_xor"></a>  atomic_fetch_xor Function (C++ AMP)
+## <a name="atomic_fetch_xor"></a> atomic_fetch_xor Function (C++ AMP)
 
 Atomically performs an bitwise XOR operation of a value and a memory location.
 
@@ -338,7 +338,7 @@ The value to use in the XOR calculation.
 
 The original value of the memory location.
 
-## <a name="copy"></a>  copy
+## <a name="copy"></a> copy
 
 Copies a C++ AMP object. All synchronous data transfer requirements are met. You can't copy data when running code on an accelerator. The general form of this function is `copy(src, dest)`.
 
@@ -435,7 +435,7 @@ An ending iterator into the source container.
 *value_type*<br/>
 The data type of the elements that are copied.
 
-## <a name="copy_async"></a>  copy_async
+## <a name="copy_async"></a> copy_async
 
 Copies a C++ AMP object and returns a [completion_future](completion-future-class.md) object that can be waited on. You can't copy data when running code on an accelerator.  The general form of this function is `copy(src, dest)`.
 
@@ -528,7 +528,7 @@ The data type of the elements that are copied.
 
 A `future<void>` that can be waited on.
 
-## <a name="direct3d_abort"></a>  direct3d_abort
+## <a name="direct3d_abort"></a> direct3d_abort
 
 Aborts the execution of a function with the `restrict(amp)` restriction clause. When the AMP runtime detects the call, it raises a [runtime_exception](runtime-exception-class.md) exception with the error message "Reference Rasterizer: Shader abort instruction hit".
 
@@ -536,7 +536,7 @@ Aborts the execution of a function with the `restrict(amp)` restriction clause. 
 void direct3d_abort() restrict(amp);
 ```
 
-## <a name="direct3d_errorf"></a>  direct3d_errorf
+## <a name="direct3d_errorf"></a> direct3d_errorf
 
 Prints a formatted string to the Visual Studio output window. It is called from a function with the `restrict(amp)` restriction clause. When the AMP runtime detects the call, it raises a [runtime_exception](runtime-exception-class.md) exception with the same formatting string.
 
@@ -546,7 +546,7 @@ void direct3d_errorf(
 ...) restrict(amp);
 ```
 
-## <a name="direct3d_printf"></a>  direct3d_printf
+## <a name="direct3d_printf"></a> direct3d_printf
 
 Prints a formatted string to the Visual Studio output window. It is called from a function with the `restrict(amp)` restriction clause.
 
@@ -556,7 +556,7 @@ void direct3d_printf(
 ...) restrict(amp);
 ```
 
-## <a name="global_memory_fence"></a>  global_memory_fence
+## <a name="global_memory_fence"></a> global_memory_fence
 
 Blocks execution of all threads in a tile until all global memory accesses have been completed. This ensures that global memory accesses are visible to other threads in the thread tile, and are executed in program order.
 
@@ -569,7 +569,7 @@ inline void global_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 *_Barrier*<br/>
 A tile_barrier object
 
-## <a name="parallel_for_each"></a>  parallel_for_each Function (C++ AMP)
+## <a name="parallel_for_each"></a> parallel_for_each Function (C++ AMP)
 
 Runs a function across the compute domain. For more information, see [C++ AMP Overview](../../../parallel/amp/cpp-amp-overview.md).
 
@@ -645,7 +645,7 @@ A lambda or functor.
 *_Rank*<br/>
 The rank of the extent.
 
-## <a name="tile_static_memory_fence"></a>  tile_static_memory_fence
+## <a name="tile_static_memory_fence"></a> tile_static_memory_fence
 
 Blocks execution of all threads in a tile until all outstanding `tile_static` memory accesses have been completed. This ensures that `tile_static` memory accesses are visible to other threads in the thread tile, and that accesses are executed in program order.
 

@@ -1,7 +1,6 @@
 ---
 title: "File and Database Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.file"]
 helpviewer_keywords: ["database classes [MFC], MFC", "database classes [MFC]", "file classes [MFC]"]
 ms.assetid: 580b169c-e26e-4395-b128-5408d08c98fe
 ---

@@ -7,7 +7,7 @@ ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
 
 The C++ Standard defines a set of attributes and also allows compiler vendors to define their own attributes (within a vendor-specific namespace), but compilers are required to recognize only those attributes defined in the standard.
 
-In some cases, standard attributes overlap with compiler-specific declspec parameters. In Visual C++, you can use the `[[deprecated]]` attribute instead of using `declspec(deprecated)` and the attribute will be recognized by any conformant compiler. For all other declspec parameters such as dllimport and dllexport, there is as yet no attribute equivalent so you must continue to use declspec syntax. Attributes do not affect the type system, and they don’t change the meaning of a program. Compilers ignore attribute values they don't recognize.
+In some cases, standard attributes overlap with compiler-specific declspec parameters. In Visual C++, you can use the `[[deprecated]]` attribute instead of using `declspec(deprecated)` and the attribute will be recognized by any conforming compiler. For all other declspec parameters such as dllimport and dllexport, there is as yet no attribute equivalent so you must continue to use declspec syntax. Attributes do not affect the type system, and they don’t change the meaning of a program. Compilers ignore attribute values they don't recognize.
 
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): In the scope of an attribute list, you can specify the namespace for all names with a single **using** introducer:
 
@@ -59,12 +59,12 @@ Attributes represent a standardized alternative to vendor-specific extensions su
     ```cpp
     int main()
     {
-        int arr[10]; // GSL warning 26494 will be fired
-        int* p = arr; // GSL warning 26485 will be fired
+        int arr[10]; // GSL warning C26494 will be fired
+        int* p = arr; // GSL warning C26485 will be fired
         [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1
         {
-            int* q = p + 1; // GSL warning 26481 suppressed
-            p = q--; // GSL warning 26481 suppressed
+            int* q = p + 1; // GSL warning C26481 suppressed
+            p = q--; // GSL warning C26481 suppressed
         }
     }
     ```

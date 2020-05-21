@@ -10,7 +10,7 @@ ms.assetid: fcb58cf9-a427-4be9-89eb-04e1ab5cc3a1
 This class represents an interface to a `CreateInstance` method.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 

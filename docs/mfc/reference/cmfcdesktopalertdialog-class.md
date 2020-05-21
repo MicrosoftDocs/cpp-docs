@@ -58,7 +58,7 @@ Perform the following steps to display a custom dialog in a popup window:
 
 **Header:** afxDesktopAlertDialog.h
 
-##  <a name="createfromparams"></a>  CMFCDesktopAlertDialog::CreateFromParams
+## <a name="createfromparams"></a> CMFCDesktopAlertDialog::CreateFromParams
 
 ```
 BOOL CreateFromParams(
@@ -76,7 +76,7 @@ BOOL CreateFromParams(
 
 ### Remarks
 
-##  <a name="getdlgsize"></a>  CMFCDesktopAlertDialog::GetDlgSize
+## <a name="getdlgsize"></a> CMFCDesktopAlertDialog::GetDlgSize
 
 ```
 CSize GetDlgSize();
@@ -86,7 +86,7 @@ CSize GetDlgSize();
 
 ### Remarks
 
-##  <a name="hasfocus"></a>  CMFCDesktopAlertDialog::HasFocus
+## <a name="hasfocus"></a> CMFCDesktopAlertDialog::HasFocus
 
 ```
 BOOL HasFocus() const;
@@ -96,7 +96,7 @@ BOOL HasFocus() const;
 
 ### Remarks
 
-##  <a name="pretranslatemessage"></a>  CMFCDesktopAlertDialog::PreTranslateMessage
+## <a name="pretranslatemessage"></a> CMFCDesktopAlertDialog::PreTranslateMessage
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);

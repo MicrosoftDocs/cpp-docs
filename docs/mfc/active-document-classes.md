@@ -1,7 +1,6 @@
 ---
 title: "Active Document Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.document"]
 helpviewer_keywords: ["Active document classes [MFC]"]
 ms.assetid: cc20af37-b658-406d-8148-7670737f4c03
 ---

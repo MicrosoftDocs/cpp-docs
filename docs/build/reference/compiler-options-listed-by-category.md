@@ -1,12 +1,13 @@
 ---
 title: "Compiler Options Listed by Category"
-ms.date: "01/08/2020"
+description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
+ms.date: "02/09/2020"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
 # Compiler options listed by category
 
-This article contains a categorical list of compiler options. For an alphabetical list, see [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md).
+This article contains a categorical list of compiler options. For an alphabetical list, see [Compiler options listed alphabetically](compiler-options-listed-alphabetically.md).
 
 ## Optimization
 
@@ -63,7 +64,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
 |[/Qspectre](qspectre.md)|Enable mitigations for CVE 2017-5753, for a class of Spectre attacks.|
 |[/Qspectre-load](qspectre-load.md)|Generate serializing instructions for every load instruction.|
-|[/Qspectre-load-cf](qspectre-load-cf.md)|Generate serializing instructions for every control flow instruction which loads memory.|
+|[/Qspectre-load-cf](qspectre-load-cf.md)|Generate serializing instructions for every control flow instruction that loads memory.|
 |[/Qvec-report](qvec-report-auto-vectorizer-reporting-level.md)|Enables reporting levels for automatic vectorization.|
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|Selects how the volatile keyword is interpreted.|
@@ -81,7 +82,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Fm](fm-name-mapfile.md)|Creates a mapfile.|
 |[/Fo](fo-object-file-name.md)|Creates an object file.|
 |[/Fp](fp-name-dot-pch-file.md)|Specifies a precompiled header file name.|
-|[/FR, /Fr](fr-fr-create-dot-sbr-file.md)|Name generated .sbr browser files.|
+|[/FR, /Fr](fr-fr-create-dot-sbr-file.md)|Name generated *`.sbr`* browser files.|
 
 ## Preprocessor
 
@@ -105,7 +106,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 |Option|Purpose|
 |------------|-------------|
-|[/constexpr](constexpr-control-constexpr-evaluation.md)|Control constexpr evaluation at compile-time.|
+|[/constexpr](constexpr-control-constexpr-evaluation.md)|Control **constexpr** evaluation at compile time.|
 |[/openmp](openmp-enable-openmp-2-0-support.md)|Enables [#pragma omp](../../preprocessor/omp.md) in source code.|
 |[/vd](vd-disable-construction-displacements.md)|Suppresses or enables hidden `vtordisp` class members.|
 |[/vmb](vmb-vmg-representation-method.md)|Uses best base for pointers to members.|
@@ -121,7 +122,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/ZH](zh.md)|Specifies MD5, SHA-1, or SHA-256 for checksums in debug info.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue. (x86 only)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
-|[/Zl](zl-omit-default-library-name.md)|Removes the default library name from the .obj file.|
+|[/Zl](zl-omit-default-library-name.md)|Removes the default library name from the *`.obj`* file.|
 |[/Zp](zp-struct-member-alignment.md) *n*|Packs structure members.|
 |[/Zs](zs-syntax-check-only.md)|Checks syntax only.|
 |[/ZW](zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|
@@ -135,10 +136,10 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/LDd](md-mt-ld-use-run-time-library.md)|Creates a debug dynamic-link library.|
 |[/link](link-pass-options-to-linker.md)|Passes the specified option to LINK.|
 |[/LN](ln-create-msil-module.md)|Creates an MSIL module.|
-|[/MD](md-mt-ld-use-run-time-library.md)|Compiles to create a multithreaded DLL, by using MSVCRT.lib.|
-|[/MDd](md-mt-ld-use-run-time-library.md)|Compiles to create a debug multithreaded DLL, by using MSVCRTD.lib.|
-|[/MT](md-mt-ld-use-run-time-library.md)|Compiles to create a multithreaded executable file, by using LIBCMT.lib.|
-|[/MTd](md-mt-ld-use-run-time-library.md)|Compiles to create a debug multithreaded executable file, by using LIBCMTD.lib.|
+|[/MD](md-mt-ld-use-run-time-library.md)|Compiles to create a multithreaded DLL, by using *MSVCRT.lib*.|
+|[/MDd](md-mt-ld-use-run-time-library.md)|Compiles to create a debug multithreaded DLL, by using *MSVCRTD.lib*.|
+|[/MT](md-mt-ld-use-run-time-library.md)|Compiles to create a multithreaded executable file, by using *LIBCMT.lib*.|
+|[/MTd](md-mt-ld-use-run-time-library.md)|Compiles to create a debug multithreaded executable file, by using *LIBCMTD.lib*.|
 
 ## Miscellaneous
 
@@ -149,10 +150,10 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/analyze](analyze-code-analysis.md)|Enables code analysis.|
 |[/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md)|Increases the number of addressable sections in an .obj file.|
 |[/c](c-compile-without-linking.md)|Compiles without linking.|
-|[/cgthreads](cgthreads-code-generation-threads.md)|Specifies number of cl.exe threads to use for optimization and code generation.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|Enables you to provide internal compiler error (ICE) information directly to the Microsoft C++ team.|
-|[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Displays the full path of source code files passed to cl.exe in diagnostic text.|
-|[/FS](fs-force-synchronous-pdb-writes.md)|Forces writes to the program database (PDB) file to be serialized through MSPDBSRV.EXE.|
+|[/cgthreads](cgthreads-code-generation-threads.md)|Specifies number of *cl.exe* threads to use for optimization and code generation.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
+|[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Displays the full path of source code files passed to *cl.exe* in diagnostic text.|
+|[/FS](fs-force-synchronous-pdb-writes.md)|Forces writes to the PDB file to be serialized through *MSPDBSRV.EXE*.|
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
 |[/HELP](help-compiler-command-line-help.md)|Lists the compiler options.|
 |[/J](j-default-char-type-is-unsigned.md)|Changes the default `char` type.|
@@ -177,7 +178,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/wo](compiler-option-warning-level.md)|Displays the specified warning only once.|
 |[/Wv](compiler-option-warning-level.md)|Disables warnings introduced by later versions of the compiler.|
 |[/WX](compiler-option-warning-level.md)|Treats warnings as errors.|
-|[/Yc](yc-create-precompiled-header-file.md)|Create .PCH file.|
+|[/Yc](yc-create-precompiled-header-file.md)|Create *`.PCH`* file.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Deprecated. Places complete debugging information in all object files. Use [/Zi](z7-zi-zi-debug-information-format.md) instead.|
 |[/Yl](yl-inject-pch-reference-for-debug-library.md)|Injects a PCH reference when creating a debug library.|
 |[/Yu](yu-use-precompiled-header-file.md)|Uses a precompiled header file during build.|
@@ -194,7 +195,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 ## Experimental options
 
-Experimental options may only be supported by certain versions of the compiler, and may behave differently in different compiler versions. Often the best, or only, documentation for experimental options is in the [Microsoft C++ Team Blog](https://devblogs.microsoft.com/cppblog/).
+Experimental options may only be supported by certain versions of the compiler. They may also behave differently in different compiler versions. Often the best, or only, documentation for experimental options is in the [Microsoft C++ Team Blog](https://devblogs.microsoft.com/cppblog/).
 
 |Option|Purpose|
 |------------|-------------|
@@ -206,6 +207,7 @@ Experimental options may only be supported by certain versions of the compiler, 
 |Option|Purpose|
 |------------|-------------|
 |[/clr:noAssembly](clr-common-language-runtime-compilation.md)|Deprecated. Use [/LN (Create MSIL Module)](ln-create-msil-module.md) instead.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 |[/Fr](fr-fr-create-dot-sbr-file.md)|Deprecated. Creates a browse information file without local variables.|
 |[/Ge](ge-enable-stack-probes.md)|Deprecated. Activates stack probes. On by default.|
 |[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
@@ -214,7 +216,7 @@ Experimental options may only be supported by certain versions of the compiler, 
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
 |[/Og](og-global-optimizations.md)|Deprecated. Uses global optimizations.|
 |[/QIfist](qifist-suppress-ftol.md)|Deprecated. Once used to specify how to convert from a floating-point type to an integral type.|
-|[/V](v-version-number.md)|Deprecated. Sets the .obj file version string.|
+|[/V](v-version-number.md)|Deprecated. Sets the *`.obj`* file version string.|
 |[/Wp64](wp64-detect-64-bit-portability-issues.md)|Obsolete. Detects 64-bit portability problems.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Deprecated. Places complete debugging information in all object files. Use [/Zi](z7-zi-zi-debug-information-format.md) instead.|
 |[/Zc:forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|Deprecated. Disables conformance in for loop scope.|
@@ -223,6 +225,6 @@ Experimental options may only be supported by certain versions of the compiler, 
 
 ## See also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[C/C++ building reference](c-cpp-building-reference.md)\
+[MSVC compiler options](compiler-options.md)\
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)

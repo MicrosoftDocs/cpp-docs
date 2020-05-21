@@ -99,7 +99,7 @@ converts between `char32_t` sequences encoded as UTF-32 (UCS-4) and **char** seq
 
 **Namespace:** std
 
-## <a name="always_noconv"></a>  codecvt::always_noconv
+## <a name="always_noconv"></a> codecvt::always_noconv
 
 Tests whether no conversions need to be done.
 
@@ -150,7 +150,7 @@ No conversion is needed.
 At least one conversion is required.
 ```
 
-## <a name="codecvt"></a>  codecvt::codecvt
+## <a name="codecvt"></a> codecvt::codecvt
 
 The constructor for objects of class codecvt that serves as a locale facet to handle conversions.
 
@@ -175,7 +175,7 @@ The possible values for the *refs* parameter and their significance are:
 
 The constructor initializes its `locale::facet` base object with [locale::facet](../standard-library/locale-class.md#facet_class)`(refs)`.
 
-## <a name="do_always_noconv"></a>  codecvt::do_always_noconv
+## <a name="do_always_noconv"></a> codecvt::do_always_noconv
 
 A virtual function called to test whether no conversions need to be done.
 
@@ -193,7 +193,7 @@ The template version always returns **true**.
 
 See the example for [always_noconv](#always_noconv), which calls `do_always_noconv`.
 
-## <a name="do_encoding"></a>  codecvt::do_encoding
+## <a name="do_encoding"></a> codecvt::do_encoding
 
 A virtual function that tests if the encoding of the `Byte` stream is state dependent, whether the ratio between the `Byte` values used and the `CharType` values produced is constant and, if so, determines the value of that ratio.
 
@@ -215,7 +215,7 @@ The protected virtual member function returns:
 
 See the example for [encoding](#encoding), which calls `do_encoding`.
 
-## <a name="do_in"></a>  codecvt::do_in
+## <a name="do_in"></a> codecvt::do_in
 
 A virtual function called to convert a sequence of external `Byte` values to a sequence of internal `CharType` values.
 
@@ -273,7 +273,7 @@ A return that indicates the success, partial success, or failure of the operatio
 
 See the example for [in](#in), which calls `do_in`.
 
-## <a name="do_length"></a>  codecvt::do_length
+## <a name="do_length"></a> codecvt::do_length
 
 A virtual function that determines how many `Byte` values from a given sequence of external `Byte` values produce not more than a given number of internal `CharType` values and returns that number of `Byte` values.
 
@@ -315,7 +315,7 @@ The template version always returns the lesser of *last1* - *first1* and *len2*.
 
 See the example for [length](#length), which calls `do_length`.
 
-## <a name="do_max_length"></a>  codecvt::do_max_length
+## <a name="do_max_length"></a> codecvt::do_max_length
 
 A virtual function that returns the maximum number of external `Byte` values necessary to produce one internal `CharType`.
 
@@ -335,7 +335,7 @@ The protected virtual member function returns the largest permissible value that
 
 See the example for [max_length](#max_length), which calls `do_max_length`.
 
-## <a name="do_out"></a>  codecvt::do_out
+## <a name="do_out"></a> codecvt::do_out
 
 A virtual function called to convert a sequence of internal `CharType` values to a sequence of external `Byte` values.
 
@@ -393,7 +393,7 @@ The function returns:
 
 See the example for [out](#out), which calls `do_out`.
 
-## <a name="do_unshift"></a>  codecvt::do_unshift
+## <a name="do_unshift"></a> codecvt::do_unshift
 
 A virtual function called to provide the `Byte` values needed in a state-dependent conversion to complete the last character in a sequence of `Byte` values.
 
@@ -441,7 +441,7 @@ _ *State* must represent the initial conversion state at the beginning of a new 
 
 See the example for [unshift](#unshift), which calls `do_unshift`.
 
-## <a name="encoding"></a>  codecvt::encoding
+## <a name="encoding"></a> codecvt::encoding
 
 Tests if the encoding of the `Byte` stream is state dependent, whether the ratio between the `Byte` values used and the `CharType` values produced is constant, and, if so, determines the value of that ratio.
 
@@ -492,7 +492,7 @@ int main( )
 1
 ```
 
-## <a name="extern_type"></a>  codecvt::extern_type
+## <a name="extern_type"></a> codecvt::extern_type
 
 A character type that is used for external representations.
 
@@ -504,7 +504,7 @@ typedef Byte extern_type;
 
 The type is a synonym for the template parameter `Byte`.
 
-## <a name="in"></a>  codecvt::in
+## <a name="in"></a> codecvt::in
 
 Converts an external representation of a sequence of `Byte` values to an internal representation of a sequence of `CharType` values.
 
@@ -597,7 +597,7 @@ It worked! The converted string is:
 [This is the string to be converted!]
 ```
 
-## <a name="intern_type"></a>  codecvt::intern_type
+## <a name="intern_type"></a> codecvt::intern_type
 
 A character type that is used for internal representations.
 
@@ -609,7 +609,7 @@ typedef CharType intern_type;
 
 The type is a synonym for the template parameter `CharType`.
 
-## <a name="length"></a>  codecvt::length
+## <a name="length"></a> codecvt::length
 
 Determines how many `Byte` values from a given sequence of external `Byte` values produce not more than a given number of internal `CharType` values and returns that number of `Byte` values.
 
@@ -672,7 +672,7 @@ int main( )
 The length of the string is: 50.
 ```
 
-## <a name="max_length"></a>  codecvt::max_length
+## <a name="max_length"></a> codecvt::max_length
 
 Returns the maximum number of external `Byte` values necessary to produce one internal `CharType`.
 
@@ -711,7 +711,7 @@ int main( )
 1
 ```
 
-## <a name="out"></a>  codecvt::out
+## <a name="out"></a> codecvt::out
 
 Converts a sequence of internal `CharType` values to a sequence of external `Byte` values.
 
@@ -794,7 +794,7 @@ It worked: The converted string is:
 [This is the wchar_t string to be converted.]
 ```
 
-## <a name="state_type"></a>  codecvt::state_type
+## <a name="state_type"></a> codecvt::state_type
 
 A character type that is used to represent intermediate states during conversions between internal and external representations.
 
@@ -806,7 +806,7 @@ typedef StateType state_type;
 
 The type is a synonym for the template parameter `StateType`.
 
-## <a name="unshift"></a>  codecvt::unshift
+## <a name="unshift"></a> codecvt::unshift
 
 Provides the `Byte` values needed in a state-dependent conversion to complete the last character in a sequence of `Byte` values.
 

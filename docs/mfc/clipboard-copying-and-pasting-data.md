@@ -10,7 +10,7 @@ This topic describes the minimum work necessary to implement copying to and past
 
 Before you can implement either copying or pasting, you must first provide functions to handle the Copy, Cut, and Paste options on the Edit menu.
 
-##  <a name="_core_copying_or_cutting_data"></a> Copying or Cutting Data
+## <a name="_core_copying_or_cutting_data"></a> Copying or Cutting Data
 
 #### To copy data to the Clipboard
 
@@ -26,7 +26,7 @@ Before you can implement either copying or pasting, you must first provide funct
 
 To see an example of this sequence, see the `OnEditCut` and `OnEditCopy` functions in the MFC OLE sample programs [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md). Note that these samples maintain a pointer to the currently selected data, so step 1 is already complete.
 
-##  <a name="_core_pasting_data"></a> Pasting Data
+## <a name="_core_pasting_data"></a> Pasting Data
 
 Pasting data is more complicated than copying it because you need to choose the format to use in pasting the data into your application.
 
@@ -45,7 +45,7 @@ Pasting data is more complicated than copying it because you need to choose the 
 For an example of how this works, see the implementation of the `OnEditPaste` member functions in the view classes defined in the MFC OLE sample programs [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md).
 
 > [!TIP]
->  The main benefit of separating the paste operation into its own function is that the same paste code can be used when data is dropped in your application during a drag-and-drop operation. As in OCLIENT and HIERSVR, your `OnDrop` function can also call `DoPasteItem`, reusing the code written to implement Paste operations.
+> The main benefit of separating the paste operation into its own function is that the same paste code can be used when data is dropped in your application during a drag-and-drop operation. As in OCLIENT and HIERSVR, your `OnDrop` function can also call `DoPasteItem`, reusing the code written to implement Paste operations.
 
 To handle the Paste Special option on the Edit menu, see the topic [Dialog Boxes in OLE](../mfc/dialog-boxes-in-ole.md).
 

@@ -13,8 +13,7 @@ Describes an object that can serve as a reverse iterator for the controlled sequ
 
 ## Syntax
 
-```
-
+```cpp
 typedef T7 reverse_iterator;
 ```
 

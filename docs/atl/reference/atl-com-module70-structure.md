@@ -11,7 +11,7 @@ Used by COM-related code in ATL.
 
 ## Syntax
 
-```
+```cpp
 struct _ATL_COM_MODULE70 {
     UINT cbSize;
     HINSTANCE m_hInstTypeLib;

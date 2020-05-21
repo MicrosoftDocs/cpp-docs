@@ -10,16 +10,16 @@ ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124
 This class is used by the string conversion macros CA2TEX, CA2CTEX, CT2WEX, and CT2CWEX, and the typedef CA2W.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
-```
+```cpp
 template <int t_nBufferLength = 128>
 class CA2WEX
 ```
 
-#### Parameters
+### Parameters
 
 *t_nBufferLength*<br/>
 The size of the buffer used in the translation process. The default length is 128 bytes.
@@ -80,11 +80,11 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 **Header:** atlconv.h
 
-##  <a name="ca2wex"></a>  CA2WEX::CA2WEX
+## <a name="ca2wex"></a> CA2WEX::CA2WEX
 
 The constructor.
 
-```
+```cpp
 CA2WEX(LPCSTR psz, UINT nCodePage) throw(...);
 CA2WEX(LPCSTR psz) throw(...);
 ```
@@ -101,11 +101,11 @@ The code page used to perform the conversion. See the code page parameter discus
 
 Allocates the buffer used in the translation process.
 
-##  <a name="dtor"></a>  CA2WEX::~CA2WEX
+## <a name="dtor"></a> CA2WEX::~CA2WEX
 
 The destructor.
 
-```
+```cpp
 ~CA2WEX() throw();
 ```
 
@@ -113,27 +113,27 @@ The destructor.
 
 Frees the allocated buffer.
 
-##  <a name="m_psz"></a>  CA2WEX::m_psz
+## <a name="m_psz"></a> CA2WEX::m_psz
 
 The data member that stores the source string.
 
-```
+```cpp
 LPWSTR m_psz;
 ```
 
-##  <a name="m_szbuffer"></a>  CA2WEX::m_szBuffer
+## <a name="m_szbuffer"></a> CA2WEX::m_szBuffer
 
 The static buffer, used to store the converted string.
 
-```
+```cpp
 wchar_t m_szBuffer[t_nBufferLength];
 ```
 
-##  <a name="operator_lpwstr"></a>  CA2WEX::operator LPWSTR
+## <a name="operator_lpwstr"></a> CA2WEX::operator LPWSTR
 
 Conversion operator.
 
-```
+```cpp
 operator LPWSTR() const throw();
 ```
 

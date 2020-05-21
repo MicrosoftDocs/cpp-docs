@@ -12,7 +12,7 @@ ms.assetid: d37ad471-cf05-49c5-aa47-cd10824d777f
 ```cpp
 /////////////////////////////////////////////////////////////////////////
 // CCustomSession
-class ATL_NO_VTABLE CCustomSession : 
+class ATL_NO_VTABLE CCustomSession :
    public CComObjectRootEx<CComSingleThreadModel>,
    public IGetDataSourceImpl<CCustomSession>,
    public IOpenRowsetImpl<CCustomSession>,

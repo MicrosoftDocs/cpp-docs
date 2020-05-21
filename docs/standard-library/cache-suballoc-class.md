@@ -47,7 +47,7 @@ Each chunk holds `Sz * Nelts` bytes of usable memory and the data that **operato
 
 **Namespace:** stdext
 
-## <a name="allocate"></a>  cache_suballoc::allocate
+## <a name="allocate"></a> cache_suballoc::allocate
 
 Allocates a block of memory.
 
@@ -67,7 +67,7 @@ A pointer to the allocated object.
 
 ### Remarks
 
-## <a name="cache_suballoc"></a>  cache_suballoc::cache_suballoc
+## <a name="cache_suballoc"></a> cache_suballoc::cache_suballoc
 
 Constructs an object of type `cache_suballoc`.
 
@@ -77,7 +77,7 @@ cache_suballoc();
 
 ### Remarks
 
-## <a name="deallocate"></a>  cache_suballoc::deallocate
+## <a name="deallocate"></a> cache_suballoc::deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 

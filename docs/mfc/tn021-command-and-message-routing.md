@@ -8,7 +8,7 @@ ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
 # TN021: Command and Message Routing
 
 > [!NOTE]
->  The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
+> The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
 
 This note describes the command routing and dispatch architecture as well as advanced topics in general window message routing.
 

@@ -53,7 +53,7 @@ Your MFC application can display descriptive text for each of the menu commands 
 
 In a C++ project, you can assign an access key (a mnemonic that allows the user to select the menu with the keyboard) to your menus and menu commands.
 
-- To assign an access (shortcut) key to a menu command, type an ampersand (`&`) in front of a letter in the menu name or command name to specify that letter as the corresponding access key. 
+- To assign an access (shortcut) key to a menu command, type an ampersand (`&`) in front of a letter in the menu name or command name to specify that letter as the corresponding access key.
 
    For example, "&File" sets **Alt**+**F** as the shortcut key for the **File** menu in applications written for Microsoft Windows.
 

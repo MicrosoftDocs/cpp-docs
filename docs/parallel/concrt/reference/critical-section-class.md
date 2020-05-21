@@ -110,7 +110,7 @@ A reference to the critical section.
 
 A `critical_section` object is not associated with a platform specific native handle for the Windows operating system. The method simply returns a reference to the object itself.
 
-## <a name="critical_section__scoped_lock_class"></a>  critical_section::scoped_lock Class
+## <a name="critical_section__scoped_lock_class"></a> critical_section::scoped_lock Class
 
 An exception safe RAII wrapper for a `critical_section` object.
 

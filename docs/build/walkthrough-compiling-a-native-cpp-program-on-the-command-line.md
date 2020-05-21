@@ -2,27 +2,27 @@
 title: "Walkthrough: Compiling a Native C++ Program on the Command Line"
 description: "Use the Microsoft C++ compiler from a command prompt."
 ms.custom: "conceptual"
-ms.date: "04/23/2019"
+ms.date: "04/02/2020"
 helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling programs [C++]", "command-line applications [C++], native"]
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
 ---
 # Walkthrough: Compiling a Native C++ Program on the Command Line
 
-Visual Studio includes a command-line C++ compiler that you can use to create everything from basic console apps to Universal Windows Platform apps, Desktop apps, device drivers, and .NET components.
+Visual Studio includes a command-line C and C++ compiler. You can use it to create everything from basic console apps to Universal Windows Platform apps, Desktop apps, device drivers, and .NET components.
 
 In this walkthrough, you create a basic, "Hello, World"-style C++ program by using a text editor, and then compile it on the command line. If you'd like to try the Visual Studio IDE instead of using the command line, see [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) or [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
-In this walkthrough, you can use your own Visual C++ program instead of typing the one that's shown, or you can use a Visual C++ code sample from another help article.
+In this walkthrough, you can use your own C++ program instead of typing the one that's shown. Or, you can use a C++ code sample from another help article.
 
 ## Prerequisites
 
 To complete this walkthrough, you must have installed either Visual Studio and the optional **Desktop development with C++** workload, or the command-line Build Tools for Visual Studio.
 
-Visual Studio is a powerful integrated development environment (IDE) that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on how to download and install Visual Studio, including the free Visual Studio Community edition, and to include support for C/C++ development, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
+Visual Studio is an *integrated development environment* (IDE). It supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. Versions available include the free Visual Studio Community edition, and all can support C and C++ development. For information on how to download and install Visual Studio, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
 
 The Build Tools for Visual Studio installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, look for Build Tools for Visual Studio on the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) page.
 
-Before you can build a C or C++ program on the command line, you must verify that the tools are installed, and that you can access them from the command line. Visual C++ has complex requirements for the command-line environment to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window** without doing some preparation. Fortunately, Visual C++ installs shortcuts for you to launch a developer command prompt that has the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they're located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is finding the right one to use.
+Before you can build a C or C++ program on the command line, verify that the tools are installed, and you can access them from the command line. Visual C++ has complex requirements for the command-line environment to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window** without doing some preparation. Fortunately, Visual C++ installs shortcuts for you to launch a developer command prompt that has the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they're located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is finding the right one to use.
 
 > [!NOTE]
 > A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. You must set these environment values yourself if you use a regular **Command Prompt** window. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md). We recommend you use a developer command prompt shortcut instead of building your own.
@@ -45,12 +45,12 @@ Before you can build a C or C++ program on the command line, you must verify tha
    usage: cl [ option... ] filename... [ /link linkoption... ]
    ```
 
-   There may be differences in the current directory or version numbers, depending on the version of Visual C++ and any updates installed. If the above output is similar to what you see, then you're ready to build C or C++ programs at the command line.
+   There may be differences in the current directory or version numbers. These values depend on the version of Visual C++ and any updates installed. If the above output is similar to what you see, then you're ready to build C or C++ programs at the command line.
 
    > [!NOTE]
-   > If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104 when you run the **cl** command, then either you are not using a developer command prompt, or something is wrong with your installation of Visual C++. You must fix this issue before you can continue.
+   > If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104 when you run the **`cl`** command, then either you are not using a developer command prompt, or something is wrong with your installation of Visual C++. You must fix this issue before you can continue.
 
-   If you can't find the developer command prompt shortcut, or if you get an error message when you enter `cl`, then your Visual C++ installation may have a problem. Try reinstalling the Visual C++ component in Visual Studio, or reinstall the Microsoft Visual C++ Build Tools. Don't go on to the next section until this works. For more information about installing and troubleshooting Visual C++, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
+   If you can't find the developer command prompt shortcut, or if you get an error message when you enter `cl`, then your Visual C++ installation may have a problem. Try reinstalling the Visual C++ component in Visual Studio, or reinstall the Microsoft Visual C++ Build Tools. Don't go on to the next section until the **`cl`** command works. For more information about installing and troubleshooting Visual C++, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
    > [!NOTE]
    > Depending on the version of Windows on the computer and the system security configuration, you might have to right-click to open the shortcut menu for the developer command prompt shortcut and then choose **Run as administrator** to successfully build and run the program that you create by following this walkthrough.
@@ -97,7 +97,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    ```
 
-   The dates and other details will differ on your computer. If you don't see your source code file, hello.cpp, make sure you've changed to the c:\hello directory you created, and in Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a .cpp file name extension, not a .txt extension.
+   The dates and other details will differ on your computer. If you don't see your source code file, *hello.cpp*, make sure you've changed to the *c:\\hello* directory you created. In Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension.
 
 1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
@@ -134,15 +134,15 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 ## Next steps
 
-This "Hello, World" example is about as simple as a C++ program can get. Real world programs have header files and more source files, link in libraries, and do useful work.
+This "Hello, World" example is about as simple as a C++ program can get. Real world programs usually have header files, more source files, and link to libraries.
 
-You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. You can also build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writeable directory. By default, the Visual Studio IDE creates projects in your Documents folder, in a Projects subfolder of a Visual Studio folder named for your version of Visual Studio.
+You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writeable directory. By default, the Visual Studio IDE creates projects in your user folder, in a *source\\repos* subfolder. Older versions may put projects in a *Documents\\Visual Studio \<version>\\*Projects* folder.
 
 To compile a program that has additional source code files, enter them all on the command line, like:
 
 `cl /EHsc file1.cpp file2.cpp file3.cpp`
 
-The `/EHsc` command-line option instructs the compiler to enable C++ exception handling. For more information, see [/EH (Exception Handling Model)](reference/eh-exception-handling-model.md).
+The `/EHsc` command-line option instructs the compiler to enable standard C++ exception handling behavior. Without it, thrown exceptions can result in undestroyed objects and resource leaks. For more information, see [/EH (Exception Handling Model)](reference/eh-exception-handling-model.md).
 
 When you supply additional source files, the compiler uses the first input file to create the program name. In this case, it outputs a program called file1.exe. To change the name to program1.exe, add an [/out](reference/out-output-file-name.md) linker option:
 
@@ -152,13 +152,13 @@ And to catch more programming mistakes automatically, we recommend you compile b
 
 `cl /W4 /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe`
 
-The compiler, cl.exe, has many more options you can apply to build, optimize, debug, and analyze your code. For a quick list, enter `cl /?` at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](reference/c-cpp-building-reference.md).
+The compiler, cl.exe, has many more options. You can apply them to build, optimize, debug, and analyze your code. For a quick list, enter `cl /?` at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](reference/c-cpp-building-reference.md).
 
-You can use NMAKE and makefiles, or MSBuild and project files to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](reference/nmake-reference.md) and [MSBuild](msbuild-visual-cpp.md).
+You can use NMAKE and makefiles, MSBuild and project files, or CMake, to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](reference/nmake-reference.md), [MSBuild](msbuild-visual-cpp.md), and [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md).
 
-The C and C++ languages are similar, but not the same. The MSVC compiler uses a simple rule to determine which language to use when it compiles your code. By default, the MSVC compiler treats all files that end in .c as C source code, and all files that end in .cpp as C++ source code. To force the compiler to treat all files as C++ non-dependent on file name extension, use the [/TP](reference/tc-tp-tc-tp-specify-source-file-type.md) compiler option.
+The C and C++ languages are similar, but not the same. The MSVC compiler uses a simple rule to determine which language to use when it compiles your code. By default, the MSVC compiler treats files that end in *`.c`* as C source code, and files that end in *`.cpp`* as C++ source code. To force the compiler to treat all files as C++ independent of file name extension, use the [/TP](reference/tc-tp-tc-tp-specify-source-file-type.md) compiler option.
 
-The MSVC compiler includes a C Runtime Library (CRT) that is compatible with the ISO C99 standard, but not strictly compliant. In most cases, portable code will compile and run as expected. Visual C++ doesn't support some of the CRT changes in ISO C11. Certain library functions and POSIX function names are deprecated by the MSVC compiler. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
+The MSVC compiler includes a C Runtime Library (CRT) that conforms to the ISO C99 standard, with minor exceptions. Portable code generally compiles and runs as expected. Certain obsolete library functions, and several POSIX function names, are deprecated by the MSVC compiler. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
 ## See also
 

@@ -64,7 +64,7 @@ For more information on using `CTimeSpan`, see the articles [Date and Time](../.
 
 **Header:** atltime.h
 
-##  <a name="ctimespan_comparison_operators"></a>  CTimeSpan Comparison Operators
+## <a name="ctimespan_comparison_operators"></a> CTimeSpan Comparison Operators
 
 Comparison operators.
 
@@ -90,7 +90,7 @@ These operators compare two relative time values. They return TRUE if the condit
 
 [!code-cpp[NVC_ATLMFC_Utilities#169](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_1.cpp)]
 
-##  <a name="ctimespan"></a>  CTimeSpan::CTimeSpan
+## <a name="ctimespan"></a> CTimeSpan::CTimeSpan
 
 Constructs `CTimeSpan` objects in various ways.
 
@@ -141,7 +141,7 @@ Note that the Debug version of the Microsoft Foundation Class Library asserts if
 
 [!code-cpp[NVC_ATLMFC_Utilities#162](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_2.cpp)]
 
-##  <a name="format"></a>  CTimeSpan::Format
+## <a name="format"></a> CTimeSpan::Format
 
 Generates a formatted string that corresponds to this `CTimeSpan`.
 
@@ -181,7 +181,7 @@ The Debug version of the library checks the formatting codes and asserts if the 
 
 [!code-cpp[NVC_ATLMFC_Utilities#163](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_3.cpp)]
 
-##  <a name="getdays"></a>  CTimeSpan::GetDays
+## <a name="getdays"></a> CTimeSpan::GetDays
 
 Returns a value that represents the number of complete days in this `CTimeSpan`.
 
@@ -201,7 +201,7 @@ Note that Daylight Savings Time can cause `GetDays` to return a potentially surp
 
 [!code-cpp[NVC_ATLMFC_Utilities#164](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_4.cpp)]
 
-##  <a name="gethours"></a>  CTimeSpan::GetHours
+## <a name="gethours"></a> CTimeSpan::GetHours
 
 Returns a value that represents the number of hours in the current day (-23 through 23).
 
@@ -217,7 +217,7 @@ Returns the number of hours in the current day. The range is -23 through 23.
 
 [!code-cpp[NVC_ATLMFC_Utilities#165](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_5.cpp)]
 
-##  <a name="getminutes"></a>  CTimeSpan::GetMinutes
+## <a name="getminutes"></a> CTimeSpan::GetMinutes
 
 Returns a value that represents the number of minutes in the current hour (-59 through 59).
 
@@ -233,7 +233,7 @@ Returns the number of minutes in the current hour. The range is -59 through 59.
 
 See the example for [GetHours](#gethours).
 
-##  <a name="getseconds"></a>  CTimeSpan::GetSeconds
+## <a name="getseconds"></a> CTimeSpan::GetSeconds
 
 Returns a value that represents the number of seconds in the current minute (-59 through 59).
 
@@ -249,7 +249,7 @@ Returns the number of seconds in the current minute. The range is -59 through 59
 
 See the example for [GetHours](#gethours).
 
-##  <a name="gettimespan"></a>  CTimeSpan::GetTimeSpan
+## <a name="gettimespan"></a> CTimeSpan::GetTimeSpan
 
 Returns the value of the `CTimeSpan` object.
 
@@ -261,7 +261,7 @@ __ time64_t GetTimeSpan() const throw();
 
 Returns the current value of the `CTimeSpan` object.
 
-##  <a name="gettotalhours"></a>  CTimeSpan::GetTotalHours
+## <a name="gettotalhours"></a> CTimeSpan::GetTotalHours
 
 Returns a value that represents the total number of complete hours in this `CTimeSpan`.
 
@@ -277,7 +277,7 @@ Returns the total number of complete hours in this `CTimeSpan`.
 
 [!code-cpp[NVC_ATLMFC_Utilities#166](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_6.cpp)]
 
-##  <a name="gettotalminutes"></a>  CTimeSpan::GetTotalMinutes
+## <a name="gettotalminutes"></a> CTimeSpan::GetTotalMinutes
 
 Returns a value that represents the total number of complete minutes in this `CTimeSpan`.
 
@@ -293,7 +293,7 @@ Returns the total number of complete minutes in this `CTimeSpan`.
 
 See the example for [GetTotalHours](#gettotalhours).
 
-##  <a name="gettotalseconds"></a>  CTimeSpan::GetTotalSeconds
+## <a name="gettotalseconds"></a> CTimeSpan::GetTotalSeconds
 
 Returns a value that represents the total number of complete seconds in this `CTimeSpan`.
 
@@ -309,7 +309,7 @@ Returns the total number of complete seconds in this `CTimeSpan`.
 
 See the example for [GetTotalHours](#gettotalhours).
 
-##  <a name="operator_add_-"></a>  CTimeSpan::operator +, -
+## <a name="operator_add_-"></a> CTimeSpan::operator +, -
 
 Adds and subtracts `CTimeSpan` objects.
 
@@ -335,7 +335,7 @@ These two operators allow you to add and subtract `CTimeSpan` objects to and fro
 
 [!code-cpp[NVC_ATLMFC_Utilities#167](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_7.cpp)]
 
-##  <a name="operator_add_eq_-_eq"></a>  CTimeSpan::operator +=, -=
+## <a name="operator_add_eq_-_eq"></a> CTimeSpan::operator +=, -=
 
 Adds and subtracts a `CTimeSpan` object to and from this `CTimeSpan`.
 
@@ -361,10 +361,10 @@ These operators allow you to add and subtract a `CTimeSpan` object to and from t
 
 [!code-cpp[NVC_ATLMFC_Utilities#168](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_8.cpp)]
 
-##  <a name="serialize64"></a>  CTimeSpan::Serialize64
+## <a name="serialize64"></a> CTimeSpan::Serialize64
 
 > [!NOTE]
->  This method is only available in MFC projects.
+> This method is only available in MFC projects.
 
 Serializes the data associated with the member variable to or from an archive.
 

@@ -16,12 +16,12 @@ This topic explains:
 
 - [Under what circumstances scrolling is and is not supported](#_core_when_scrolling_is_supported).
 
-##  <a name="_core_scrolling_from_one_record_to_another"></a> Scrolling from One Record to Another
+## <a name="_core_scrolling_from_one_record_to_another"></a> Scrolling from One Record to Another
 
 Class `CRecordset` provides the `Move` member functions for scrolling within a recordset. These functions move the current record by rowsets. If you have implemented bulk row fetching, a `Move` operation repositions the recordset by the size of the rowset. If you have not implemented bulk row fetching, a call to a `Move` function repositions the recordset by one record each time. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 > [!NOTE]
->  When moving through a recordset, deleted records might not be skipped. For more information, see the [IsDeleted](../../mfc/reference/crecordset-class.md#isdeleted) member function.
+> When moving through a recordset, deleted records might not be skipped. For more information, see the [IsDeleted](../../mfc/reference/crecordset-class.md#isdeleted) member function.
 
 In addition to the `Move` functions, `CRecordset` provides member functions for checking whether you have scrolled past the end or ahead of the beginning of your recordset.
 
@@ -77,15 +77,15 @@ rsCustSet.MoveFirst( );
 
 For more information about recordset navigation, see [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
 
-##  <a name="_core_when_scrolling_is_supported"></a> When Scrolling Is Supported
+## <a name="_core_when_scrolling_is_supported"></a> When Scrolling Is Supported
 
 As originally designed, SQL provided only forward scrolling, but ODBC extends scrolling capabilities. The available level of support for scrolling depends on the ODBC drivers your application works with, your driver's ODBC API conformance level, and whether the ODBC Cursor Library is loaded into memory. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and [ODBC: The ODBC Cursor Library](../../data/odbc/odbc-the-odbc-cursor-library.md).
 
 > [!TIP]
->  You can control whether the cursor library is used. See the *bUseCursorLib* and *dwOptions* parameters to [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open).
+> You can control whether the cursor library is used. See the *bUseCursorLib* and *dwOptions* parameters to [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open).
 
 > [!NOTE]
->  Unlike the MFC DAO classes, the MFC ODBC classes do not provide a set of `Find` functions for locating the next (or previous) record that meets specified criteria.
+> Unlike the MFC DAO classes, the MFC ODBC classes do not provide a set of `Find` functions for locating the next (or previous) record that meets specified criteria.
 
 ## See also
 

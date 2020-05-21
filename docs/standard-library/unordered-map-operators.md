@@ -10,7 +10,7 @@ ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
 |-|-|-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|[operator!=](#op_neq_multimap)|[operator==](#op_eq_eq_multimap)|
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests whether the [unordered_map](../standard-library/unordered-map-class.md) object on the left side of the operator is not equal to the unordered_map object on the right side.
 
@@ -74,7 +74,7 @@ int main( )
 
 `um2 != um3: true`
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests whether the [unordered_map](../standard-library/unordered-map-class.md) object on the left side of the operator is equal to the unordered_map object on the right side.
 
@@ -138,7 +138,7 @@ int main( )
 
 `um2 == um3: false`
 
-## <a name="op_neq_multimap"></a>  operator!=
+## <a name="op_neq_multimap"></a> operator!=
 
 Tests whether the [unordered_multimap](../standard-library/unordered-multimap-class.md) object on the left side of the operator is not equal to the unordered_multimap object on the right side.
 
@@ -203,7 +203,7 @@ int main( )
 
 `um2 != um3: true`
 
-## <a name="op_eq_eq_multimap"></a>  operator==
+## <a name="op_eq_eq_multimap"></a> operator==
 
 Tests whether the [unordered_multimap](../standard-library/unordered-multimap-class.md) object on the left side of the operator is equal to the unordered_multimap object on the right side.
 

@@ -35,7 +35,7 @@ class sync_per_container
 
 **Namespace:** stdext
 
-## <a name="equals"></a>  sync_per_container::equals
+## <a name="equals"></a> sync_per_container::equals
 
 Compares two caches for equality.
 

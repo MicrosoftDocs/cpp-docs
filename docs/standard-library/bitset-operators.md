@@ -63,7 +63,7 @@ bitset 3: 0001
 
 Inserts a text representation of the bit sequence into the output stream.
 
-```
+```cpp
 template <class CharType, class Traits, size_t N>
 basic_ostream<CharType, Traits>& operator<<(
     basic_ostream<CharType, Traits>& ostr,
@@ -120,7 +120,7 @@ int main( )
 
 Reads a string of bit characters into a bitset.
 
-```
+```cpp
 template <class CharType, class Traits, size_t Bits>
 basic_istream<CharType, Traits>& operator>> (
     basic_istream<CharType, Traits>& i_str,

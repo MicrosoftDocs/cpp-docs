@@ -49,7 +49,7 @@ Name                                            | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="verify"></a>VerifyInterfaceHelper::Verify
+## <a name="verify"></a> VerifyInterfaceHelper::Verify
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

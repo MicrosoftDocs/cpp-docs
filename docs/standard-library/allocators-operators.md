@@ -12,7 +12,7 @@ These are the global template operator functions defined in &lt;allocators&gt;. 
 |-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests for inequality between allocator objects of a specified class.
 
@@ -38,7 +38,7 @@ bool operator!=(
 
 The template operator returns `!(left == right)`.
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests for equality between allocator objects of a specified class.
 

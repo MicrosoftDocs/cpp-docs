@@ -53,15 +53,13 @@ The BackInsertIterator class implements the rules required by the [back_insert_i
 
 **Namespace:** Platform::Collections
 
----
-## <a name="ctor"></a>  BackInsertIterator::BackInsertIterator Constructor
+## <a name="ctor"></a> BackInsertIterator::BackInsertIterator Constructor
 
 Initializes a new instance of the `BackInsertIterator` class.
 
 ## Syntax
 
 ```
-
 explicit BackInsertIterator(
    Windows::Foundation::Collections::IVector<T>^ v);
 ```
@@ -75,7 +73,7 @@ An IVector\<T> object.
 
 A `BackInsertIterator` inserts elements after the last element of the object specified by parameter `v`.
 
-## <a name="operator-assign"></a>  BackInsertIterator::operator= Operator
+## <a name="operator-assign"></a> BackInsertIterator::operator= Operator
 
 Appends the specified object to the end of the current sequential collection.
 
@@ -94,7 +92,7 @@ The object to append to the current collection.
 
 A reference to the current BackInsertIterator.
 
-## <a name="operator-dereference"></a>  BackInsertIterator::operator* Operator
+## <a name="operator-dereference"></a> BackInsertIterator::operator* Operator
 
 Retrieves a reference to the current BackInsertIterator.
 
@@ -112,14 +110,13 @@ A reference to the current BackInsertIterator.
 
 This operator returns a reference to the current BackInsertIterator; not to any element in the current collection.
 
-## <a name="operator-increment"></a>  BackInsertIterator::operator++ Operator
+## <a name="operator-increment"></a> BackInsertIterator::operator++ Operator
 
 Returns a reference to the current BackInsertIterator. The iterator is unmodified.
 
 ## Syntax
 
 ```
-
 BackInsertIterator& operator++();
 
 BackInsertIterator operator++(int);

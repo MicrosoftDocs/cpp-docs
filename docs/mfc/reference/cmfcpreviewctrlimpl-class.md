@@ -213,7 +213,7 @@ Called by the preview handler to create a relationship between the document impl
 
 ### Syntax
 
-```
+```cpp
 void SetDocument(
    IDocument* pDocument
 );
@@ -266,7 +266,7 @@ Text color of preview window.
 *plf*<br/>
 Font used to display text in the preview window.
 
-##  <a name="setrect"></a> CMFCPreviewCtrlImpl::SetRect
+## <a name="setrect"></a> CMFCPreviewCtrlImpl::SetRect
 
 Sets a new bounding rectangle for this control.
 

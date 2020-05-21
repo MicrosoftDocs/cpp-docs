@@ -36,6 +36,7 @@ class out_of_memory : public runtime_exception;
 **Header:** amprt.h
 
 **Namespace:** Concurrency
+
 ## <a name="ctor"></a> out_of_memory
 
 Initializes a new instance of the class.

@@ -1,7 +1,6 @@
 ---
 title: "Output-File (-F) Options"
 ms.date: "11/04/2016"
-f1_keywords: ["/f"]
 helpviewer_keywords: ["output files", "output files, compiler options [C++]", "cl.exe compiler, output files"]
 ms.assetid: f6367f30-2710-4178-b43a-639eed824acb
 ---

@@ -8,7 +8,7 @@ ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
 
 Custom events differ from stock events in that they are not automatically fired by class `COleControl`. A custom event recognizes a certain action, determined by the control developer, as an event. The event map entries for custom events are represented by the EVENT_CUSTOM macro. The following section implements a custom event for an ActiveX control project that was created using the ActiveX Control Wizard.
 
-##  <a name="_core_adding_a_custom_event_with_classwizard"></a> Adding a Custom Event with the Add Event Wizard
+## <a name="_core_adding_a_custom_event_with_classwizard"></a> Adding a Custom Event with the Add Event Wizard
 
 The following procedure adds a specific custom event, ClickIn. You can use this procedure to add other custom events. Substitute your custom event name and its parameters for the ClickIn event name and parameters.
 
@@ -32,7 +32,7 @@ The following procedure adds a specific custom event, ClickIn. You can use this 
 
 1. Click **Finish** to create the event.
 
-##  <a name="_core_classwizard_changes_for_custom_events"></a> Add Event Wizard Changes for Custom Events
+## <a name="_core_classwizard_changes_for_custom_events"></a> Add Event Wizard Changes for Custom Events
 
 When you add a custom event, the Add Event Wizard makes changes to the control class .H, .CPP, and .IDL files. The following code samples are specific to the ClickIn event.
 
@@ -54,7 +54,7 @@ Finally, the following line is added to your control's .IDL file:
 
 This line assigns the ClickIn event a specific ID number, taken from the event's position in the Add Event Wizard event list. The entry in the event list allows a container to anticipate the event. For example, it might provide handler code to be executed when the event is fired.
 
-##  <a name="_core_calling_fireclickin"></a> Calling FireClickIn
+## <a name="_core_calling_fireclickin"></a> Calling FireClickIn
 
 Now that you have added the ClickIn custom event using the Add Event Wizard, you must decide when this event is to be fired. You do this by calling `FireClickIn` when the appropriate action occurs. For this discussion, the control uses the `InCircle` function inside a `WM_LBUTTONDOWN` message handler to fire the ClickIn event when a user clicks inside a circular or elliptical region. The following procedure adds the `WM_LBUTTONDOWN` handler.
 
@@ -77,7 +77,7 @@ The following code sample calls the `InCircle` function every time the left mous
 [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]
 
 > [!NOTE]
->  When the Add Event Wizard creates message handlers for mouse button actions, a call to the same message handler of the base class is automatically added. Do not remove this call. If your control uses any of the stock mouse messages, the message handlers in the base class must be called to ensure that mouse capture is handled properly.
+> When the Add Event Wizard creates message handlers for mouse button actions, a call to the same message handler of the base class is automatically added. Do not remove this call. If your control uses any of the stock mouse messages, the message handlers in the base class must be called to ensure that mouse capture is handled properly.
 
 In the following example, the event fires only when the click occurs inside a circular or elliptical region within the control. To achieve this behavior, you can place the `InCircle` function in your control's implementation (.CPP) file:
 
@@ -87,7 +87,7 @@ You will also need to add the following declaration of the `InCircle` function t
 
 [!code-cpp[NVC_MFC_AxUI#12](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_6.h)]
 
-##  <a name="_core_custom_events_with_stock_names"></a> Custom Events with Stock Names
+## <a name="_core_custom_events_with_stock_names"></a> Custom Events with Stock Names
 
 You can create custom events with the same name as stock events, however you can not implement both in the same control. For example, you might want to create a custom event called Click that does not fire when the stock event Click would normally fire. You could then fire the Click event at any time by calling its firing function.
 

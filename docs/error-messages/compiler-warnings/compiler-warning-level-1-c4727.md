@@ -42,7 +42,6 @@ You would do the following instead:
 
 ::: moniker-end
 
-
 For more information, see
 
 - [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md)

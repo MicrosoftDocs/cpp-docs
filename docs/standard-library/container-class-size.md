@@ -13,8 +13,7 @@ Returns the length of the controlled sequence, in constant time regardless of th
 
 ## Syntax
 
-```
-
+```cpp
 size_type size() const;
 ```
 

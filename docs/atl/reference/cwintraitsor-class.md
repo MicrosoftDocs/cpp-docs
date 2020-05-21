@@ -10,7 +10,7 @@ ms.assetid: 1eb7b1e8-a9bd-411b-a30a-35a8a10af989
 This class provides a method for standardizing the styles used when creating a window object.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -50,7 +50,7 @@ If you want to provide default window styles that will be used only when no othe
 
 **Header:** atlwin.h
 
-##  <a name="getwndstyle"></a>  CWinTraitsOR::GetWndStyle
+## <a name="getwndstyle"></a> CWinTraitsOR::GetWndStyle
 
 Call this function to retrieve a combination (using the logical OR operator) of the standard styles of the `CWinTraits` object and the default styles specified by *t_dwStyle*.
 
@@ -67,7 +67,7 @@ Styles used for creation of a window.
 
 A combination of styles that are passed in *dwStyle* and the default ones specified by `t_dwStyle`, using the logical OR operator.
 
-##  <a name="getwndexstyle"></a>  CWinTraitsOR::GetWndExStyle
+## <a name="getwndexstyle"></a> CWinTraitsOR::GetWndExStyle
 
 Call this function to retrieve a combination (using the logical OR operator) of the extended styles of the `CWinTraits` object and the default styles specified by `t_dwStyle`.
 

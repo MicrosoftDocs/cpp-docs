@@ -8,7 +8,7 @@ ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
 
 Resources are interface elements that provide information to the user. Bitmaps, icons, toolbars, and cursors are all resources. Some resources can perform an action such as selecting from a menu or entering data in dialog box.
 
- For more information, see [Working with Resources](../../windows/working-with-resource-files.md).
+For more information, see [Working with Resources](../../windows/working-with-resource-files.md).
 
 |File name|Directory location|Solution Explorer location|Description|
 |---------------|------------------------|--------------------------------|-----------------|

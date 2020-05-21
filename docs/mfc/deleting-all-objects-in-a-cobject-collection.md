@@ -11,7 +11,7 @@ This article explains how to delete all objects in a collection (without deletin
 To delete all the objects in a collection of `CObject`s (or of objects derived from `CObject`), you use one of the iteration techniques described in the article [Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md) to delete each object in turn.
 
 > [!CAUTION]
->  Objects in collections can be shared. That is, the collection keeps a pointer to the object, but other parts of the program may also have pointers to the same object. You must be careful not to delete an object that is shared until all the parts have finished using the object.
+> Objects in collections can be shared. That is, the collection keeps a pointer to the object, but other parts of the program may also have pointers to the same object. You must be careful not to delete an object that is shared until all the parts have finished using the object.
 
 This article shows you how to delete the objects in:
 
@@ -21,7 +21,7 @@ This article shows you how to delete the objects in:
 
 - [A map](#_core_to_delete_all_elements_in_a_map)
 
-#### <a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a>  To delete all objects in a list of pointers to CObject
+#### <a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a> To delete all objects in a list of pointers to CObject
 
 1. Use `GetHeadPosition` and `GetNext` to iterate through the list.
 
@@ -37,7 +37,7 @@ The last function call, `RemoveAll`, is a list member function that removes all 
 
 Notice the difference between deleting an element's object and removing the element itself. Removing an element from the list merely removes the list's reference to the object. The object still exists in memory. When you delete an object, it ceases to exist and its memory is reclaimed. Thus, it is important to remove an element immediately after the element's object has been deleted so that the list won't try to access objects that no longer exist.
 
-#### <a name="_core_to_delete_all_elements_in_an_array"></a>  To delete all elements in an array
+#### <a name="_core_to_delete_all_elements_in_an_array"></a> To delete all elements in an array
 
 1. Use `GetSize` and integer index values to iterate through the array.
 

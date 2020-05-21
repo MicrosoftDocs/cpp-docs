@@ -1,7 +1,7 @@
 ---
 title: "CSimpleRow Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CSimpleRow", "ATL::CSimpleRow", "ATL.CSimpleRow", "CSimpleRow::AddRefRow", "AddRefRow", "ATL.CSimpleRow.AddRefRow", "ATL::CSimpleRow::AddRefRow", "CSimpleRow.AddRefRow", "CSimpleRow.Compare", "CSimpleRow::Compare", "CSimpleRow", "ATL::CSimpleRow::CSimpleRow", "CSimpleRow.CSimpleRow", "ATL.CSimpleRow.CSimpleRow", "CSimpleRow::CSimpleRow", "ATL::CSimpleRow::ReleaseRow", "CSimpleRow::ReleaseRow", "ReleaseRow", "CSimpleRow.ReleaseRow", "ATL.CSimpleRow.ReleaseRow", "CSimpleRow.m_dwRef", "CSimpleRow::m_dwRef", "CSimpleRow::m_iRowset", "CSimpleRow.m_iRowset"]
+f1_keywords: ["CSimpleRow", "ATL::CSimpleRow", "ATL.CSimpleRow", "CSimpleRow::AddRefRow", "AddRefRow", "ATL.CSimpleRow.AddRefRow", "ATL::CSimpleRow::AddRefRow", "CSimpleRow.AddRefRow", "CSimpleRow.Compare", "CSimpleRow::Compare", "ATL::CSimpleRow::CSimpleRow", "CSimpleRow.CSimpleRow", "ATL.CSimpleRow.CSimpleRow", "CSimpleRow::CSimpleRow", "ATL::CSimpleRow::ReleaseRow", "CSimpleRow::ReleaseRow", "ReleaseRow", "CSimpleRow.ReleaseRow", "ATL.CSimpleRow.ReleaseRow", "CSimpleRow.m_dwRef", "CSimpleRow::m_dwRef", "CSimpleRow::m_iRowset", "CSimpleRow.m_iRowset"]
 helpviewer_keywords: ["CSimpleRow class", "AddRefRow method", "Compare method", "CSimpleRow class, constructor", "ReleaseRow method", "m_dwRef", "m_iRowset"]
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
 ---

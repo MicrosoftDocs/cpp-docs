@@ -10,7 +10,7 @@ ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7
 This class is used by the string conversion macros CW2CTEX and CT2CWEX, and the typedef CW2W.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -71,7 +71,7 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 
 **Header:** atlconv.h
 
-##  <a name="cw2cwex"></a>  CW2CWEX::CW2CWEX
+## <a name="cw2cwex"></a> CW2CWEX::CW2CWEX
 
 The constructor.
 
@@ -92,7 +92,7 @@ The code page. Not used in this class.
 
 Allocates the buffer used in the translation process.
 
-##  <a name="dtor"></a>  CW2CWEX::~CW2CWEX
+## <a name="dtor"></a> CW2CWEX::~CW2CWEX
 
 The destructor.
 
@@ -104,7 +104,7 @@ The destructor.
 
 Frees the allocated buffer.
 
-##  <a name="m_psz"></a>  CW2CWEX::m_psz
+## <a name="m_psz"></a> CW2CWEX::m_psz
 
 The data member that stores the source string.
 
@@ -112,7 +112,7 @@ The data member that stores the source string.
 LPCWSTR m_psz;
 ```
 
-##  <a name="operator_lpcwstr"></a>  CW2CWEX::operator LPCWSTR
+## <a name="operator_lpcwstr"></a> CW2CWEX::operator LPCWSTR
 
 Conversion operator.
 

@@ -13,9 +13,8 @@ Returns an iterator that points at the first element of the sequence (or just be
 
 ## Syntax
 
-```
-
-    const_iterator begin() const;
+```cpp
+const_iterator begin() const;
 
 iterator begin();
 ```

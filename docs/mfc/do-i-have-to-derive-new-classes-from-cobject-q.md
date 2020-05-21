@@ -1,7 +1,6 @@
 ---
 title: "Do I Have to Derive New Classes from CObject?"
 ms.date: "11/04/2016"
-f1_keywords: ["CObject"]
 helpviewer_keywords: ["derived classes [MFC], from CObject", "CObject class [MFC], when to use"]
 ms.assetid: 26021031-feaf-424c-80d1-9547c4409d6a
 ---

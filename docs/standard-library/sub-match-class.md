@@ -115,7 +115,7 @@ compare(sub) == 0
 
 **Namespace:** std
 
-## <a name="compare"></a>  sub_match::compare
+## <a name="compare"></a> sub_match::compare
 
 Compare submatch against a sequence.
 
@@ -148,7 +148,7 @@ zero if the two compare equal element by element and have the same length
 
 a positive value otherwise
 
-## <a name="difference_type"></a>  sub_match::difference_type
+## <a name="difference_type"></a> sub_match::difference_type
 
 The type of an iterator difference.
 
@@ -160,7 +160,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 
 The typedef is a synonym for `iterator_traits<BidIt>::difference_type`.
 
-## <a name="iterator"></a>  sub_match::iterator
+## <a name="iterator"></a> sub_match::iterator
 
 The type of an iterator.
 
@@ -172,7 +172,7 @@ typedef BidIt iterator;
 
 The typedef is a synonym for the template type argument `Bidit`.
 
-## <a name="length"></a>  sub_match::length
+## <a name="length"></a> sub_match::length
 
 Returns the length of a submatch.
 
@@ -184,7 +184,7 @@ difference_type length() const;
 
 The member function returns the length of the matched sequence, or zero if there was no matched sequence.
 
-## <a name="matched"></a>  sub_match::matched
+## <a name="matched"></a> sub_match::matched
 
 Indicates if match succeeded.
 
@@ -196,7 +196,7 @@ bool matched;
 
 The member holds **true** only if the capture group associated with `*this` was part of the regular expression match.
 
-## <a name="op_basic_string_lt_value_type_gt"></a>  sub_match::operator basic_string&lt;value_type&gt;
+## <a name="op_basic_string_lt_value_type_gt"></a> sub_match::operator basic_string&lt;value_type&gt;
 
 Casts submatch to a string.
 
@@ -208,7 +208,7 @@ operator basic_string<value_type>() const;
 
 The member operator returns `str()`.
 
-## <a name="str"></a>  sub_match::str
+## <a name="str"></a> sub_match::str
 
 Converts submatch to a string.
 
@@ -220,7 +220,7 @@ basic_string<value_type> str() const;
 
 The member function returns `basic_string<value_type>(first, second)`.
 
-## <a name="value_type"></a>  sub_match::value_type
+## <a name="value_type"></a> sub_match::value_type
 
 The type of an element.
 

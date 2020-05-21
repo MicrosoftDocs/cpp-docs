@@ -12,7 +12,7 @@ You can use the [Class Wizard](mfc-class-wizard.md) or the **Properties** window
 By using the **Class Wizard** or **Properties** window (in **Class View**) to define message- and event-handling functions, you can automatically update the message-dispatch table (or message map) and your class header file.
 
 > [!NOTE]
->  You can add a message handler to an ATL class using the Class Wizard; however, some results may vary. For more information, see the ATL topic [Adding an ATL Message Handler](../../atl/adding-an-atl-message-handler.md).
+> You can add a message handler to an ATL class using the Class Wizard; however, some results may vary. For more information, see the ATL topic [Adding an ATL Message Handler](../../atl/adding-an-atl-message-handler.md).
 
 ## See also
 

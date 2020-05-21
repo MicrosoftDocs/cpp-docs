@@ -60,13 +60,13 @@ If you have a value type as a function or method parameter, it is normally passe
 
 To declare a parameter that passes a value type by value, use code like the following:
 
-```
+```cpp
 void Method1(MyValueType obj);
 ```
 
 To declare a parameter that passes a value type by reference, use the reference symbol (&), as in the following:
 
-```
+```cpp
 void Method2(MyValueType& obj);
 ```
 

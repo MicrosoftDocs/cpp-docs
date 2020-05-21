@@ -4,7 +4,6 @@ ms.date: "10/24/2019"
 description: "Create a new MSBuild-based Linux project in Visual Studio."
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 ---
-
 # Create a new Linux project
 
 ::: moniker range="vs-2015"

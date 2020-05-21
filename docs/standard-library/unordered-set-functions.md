@@ -10,8 +10,7 @@ ms.assetid: 66b35671-4023-4411-ad50-83786580d8ee
 
 Swaps the contents of two containers.
 
-```
-
+```cpp
 template <class Key, class Hash, class Pred, class Alloc>
 void swap(
    unordered_set <Key, Hash, Pred, Alloc>& left,
@@ -99,7 +98,7 @@ return (0);
 
 Swaps the contents of two containers.
 
-```
+```cpp
 template <class Key, class Hash, class Pred, class Alloc>
 void swap(
    unordered_multiset <Key, Hash, Pred, Alloc>& left,

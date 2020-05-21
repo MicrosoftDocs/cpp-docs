@@ -75,21 +75,21 @@ typedef struct tagNMHDR {
 
    Notification code. This member can be a value specific to a control type, such as **TBN_BEGINADJUST** or **TTN_NEEDTEXT**, or it can be one of the common notification values listed below:
 
-   - **NM_CLICK** The user has clicked the left mouse button within the control.
+  - **NM_CLICK** The user has clicked the left mouse button within the control.
 
-   - **NM_DBLCLK** The user has double-clicked the left mouse button within the control.
+  - **NM_DBLCLK** The user has double-clicked the left mouse button within the control.
 
-   - **NM_KILLFOCUS** The control has lost the input focus.
+  - **NM_KILLFOCUS** The control has lost the input focus.
 
-   - **NM_OUTOFMEMORY** The control could not complete an operation because there is not enough memory available.
+  - **NM_OUTOFMEMORY** The control could not complete an operation because there is not enough memory available.
 
-   - **NM_RCLICK** The user has clicked the right mouse button within the control.
+  - **NM_RCLICK** The user has clicked the right mouse button within the control.
 
-   - **NM_RDBLCLK** The user has double-clicked the right mouse button within the control.
+  - **NM_RDBLCLK** The user has double-clicked the right mouse button within the control.
 
-   - **NM_RETURN** The control has the input focus, and the user has pressed the ENTER key.
+  - **NM_RETURN** The control has the input focus, and the user has pressed the ENTER key.
 
-   - **NM_SETFOCUS** The control has received the input focus.
+  - **NM_SETFOCUS** The control has received the input focus.
 
 The **TBNOTIFY** structure contains the following members:
 

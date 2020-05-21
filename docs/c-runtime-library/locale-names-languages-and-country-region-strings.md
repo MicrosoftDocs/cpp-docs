@@ -1,7 +1,6 @@
 ---
 title: "Locale Names, Languages, and Country-Region Strings"
 ms.date: "12/10/2018"
-f1_keywords: ["c.strings"]
 helpviewer_keywords: ["country/region strings", "localization, locale", "locales", "setlocale function", "language strings"]
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
 ---

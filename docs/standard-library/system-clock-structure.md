@@ -54,7 +54,7 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 **Namespace:** std::chrono
 
-## <a name="from_time_t"></a>  system_clock::from_time_t
+## <a name="from_time_t"></a> system_clock::from_time_t
 
 Static method that returns a [time_point](../standard-library/time-point-class.md) that most closely approximates the time that is represented by *Tm*.
 
@@ -67,7 +67,7 @@ static time_point from_time_t(time_t Tm) noexcept;
 *Tm*\
 A [time_t](../c-runtime-library/standard-types.md) object.
 
-## <a name="is_monotonic_constant"></a>  system_clock::is_monotonic Constant
+## <a name="is_monotonic_constant"></a> system_clock::is_monotonic Constant
 
 Static value that specifies whether the clock type is monotonic.
 
@@ -83,7 +83,7 @@ In this implementation, `system_clock::is_monotonic` always returns **false**.
 
 A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`.
 
-## <a name="is_steady_constant"></a>  system_clock::is_steady Constant
+## <a name="is_steady_constant"></a> system_clock::is_steady Constant
 
 Static value that specifies whether the clock type is *steady*.
 
@@ -99,7 +99,7 @@ In this implementation, `system_clock::is_steady` always returns **false**.
 
 A clock is *steady* if it is [monotonic](#is_monotonic_constant) and if the time between clock ticks is constant.
 
-## <a name="now"></a>  system_clock::now
+## <a name="now"></a> system_clock::now
 
 Static method that returns the current time.
 
@@ -111,7 +111,7 @@ static time_point now() noexcept;
 
 A [time_point](../standard-library/time-point-class.md) object that represents the current time.
 
-## <a name="to_time_t"></a>  system_clock::to_time_t
+## <a name="to_time_t"></a> system_clock::to_time_t
 
 Static method that returns a [time_t](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
 

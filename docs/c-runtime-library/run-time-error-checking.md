@@ -1,7 +1,6 @@
 ---
 title: "Run-Time Error Checking"
 ms.date: "11/04/2016"
-f1_keywords: ["c.runtime"]
 helpviewer_keywords: ["run-time error checking", "run-time errors, checking"]
 ms.assetid: c965dd01-57ad-4a3c-b1d6-5aa04f920501
 ---

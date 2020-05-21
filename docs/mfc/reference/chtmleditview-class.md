@@ -55,7 +55,7 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
 
 **Header:** afxhtml.h
 
-##  <a name="chtmleditview"></a>  CHtmlEditView::CHtmlEditView
+## <a name="chtmleditview"></a> CHtmlEditView::CHtmlEditView
 
 Constructs a `CHtmlEditView` object.
 
@@ -63,7 +63,7 @@ Constructs a `CHtmlEditView` object.
 CHtmlEditView();
 ```
 
-##  <a name="create"></a>  CHtmlEditView::Create
+## <a name="create"></a> CHtmlEditView::Create
 
 Creates a new window object.
 
@@ -90,7 +90,7 @@ Points to a null-terminated character string that represents the window name.
 Specifies the window style attributes. By default, the WS_VISIBLE and WS_CHILD Windows styles are set.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
 
 *pParentWnd*<br/>
 A pointer to the parent window of the control.
@@ -105,7 +105,7 @@ A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md)
 
 This method will also call the contained WebBrowser's `Navigate` method to load a default document (see [CHtmlEditView::GetStartDocument](#getstartdocument)).
 
-##  <a name="getdhtmldocument"></a>  CHtmlEditView::GetDHtmlDocument
+## <a name="getdhtmldocument"></a> CHtmlEditView::GetDHtmlDocument
 
 Returns the `IHTMLDocument2` interface on the current document.
 
@@ -118,7 +118,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 *ppDocument*<br/>
 The [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) interface.
 
-##  <a name="getstartdocument"></a>  CHtmlEditView::GetStartDocument
+## <a name="getstartdocument"></a> CHtmlEditView::GetStartDocument
 
 Retrieves the name of the default document for this view.
 

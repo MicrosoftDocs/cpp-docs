@@ -53,7 +53,7 @@ During a discrete transition, the animation variable remains at the initial valu
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="cdiscretetransition"></a>  CDiscreteTransition::CDiscreteTransition
+## <a name="cdiscretetransition"></a> CDiscreteTransition::CDiscreteTransition
 
 Constructs a discrete transition object and initializes its parameters.
 
@@ -75,7 +75,7 @@ The value of the animation variable at the end of the transition.
 *hold*<br/>
 The amount of time by which to hold the variable at its final value.
 
-##  <a name="create"></a>  CDiscreteTransition::Create
+## <a name="create"></a> CDiscreteTransition::Create
 
 Calls the transition library to create encapsulated transition COM object.
 
@@ -92,7 +92,7 @@ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/win32/api/uia
 
 TRUE if transition is created successfully; otherwise FALSE.
 
-##  <a name="m_dblfinalvalue"></a>  CDiscreteTransition::m_dblFinalValue
+## <a name="m_dblfinalvalue"></a> CDiscreteTransition::m_dblFinalValue
 
 The value of the animation variable at the end of the transition.
 
@@ -100,7 +100,7 @@ The value of the animation variable at the end of the transition.
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_delay"></a>  CDiscreteTransition::m_delay
+## <a name="m_delay"></a> CDiscreteTransition::m_delay
 
 The amount of time by which to delay the instantaneous switch to the final value.
 
@@ -108,7 +108,7 @@ The amount of time by which to delay the instantaneous switch to the final value
 UI_ANIMATION_SECONDS m_delay;
 ```
 
-##  <a name="m_hold"></a>  CDiscreteTransition::m_hold
+## <a name="m_hold"></a> CDiscreteTransition::m_hold
 
 The amount of time by which to hold the variable at its final value.
 

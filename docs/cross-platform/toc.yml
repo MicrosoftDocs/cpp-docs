@@ -1,0 +1,39 @@
+- name: Cross-platform mobile development with C++
+# Auto-expanded node
+  items:
+  - name: Cross-platform mobile development with C++
+    href: visual-cpp-for-cross-platform-mobile-development.md 
+  - name: Install cross-platform mobile development with C++
+# Auto-expanded node
+    items:
+    - name: Install cross-platform mobile development with C++
+      href: install-visual-cpp-for-cross-platform-mobile-development.md
+    - name: Install and configure tools to build using iOS
+      href: install-and-configure-tools-to-build-using-ios.md
+  - name: Create an Android Native Activity app
+    href: create-an-android-native-activity-app.md
+  - name: Build an OpenGL ES application on Android and iOS
+    href: build-an-opengl-es-application-on-android-and-ios.md
+  - name: Import an Xcode project
+    href: import-an-xcode-project.md
+  - name: Sync changes between Xcode and Visual Studio
+    href: sync-changes-between-xcode-and-visual-studio.md
+  - name: Cross-platform mobile development examples
+    href: cross-platform-mobile-development-examples.md
+  - name: C++ cross-platform property page reference
+# Auto-expanded node
+    items:
+    - name: C++ cross-platform property page reference
+      href: cross-platform-prop-pages.md
+    - name: General Project Properties (Android C++)
+      href: general-android-prop-page.md
+    - name: Android Debugger Properties
+      href: android-debugger-prop-page.md
+    - name: Clang Project Properties (Android C++)
+      href: clang-android-prop-page.md
+    - name: General Project Properties (Android C++ Makefile)
+      href: general-makefile-android-prop-page.md
+    - name: Clang Linker Properties (Android C++)
+      href: clanglink-prop-page.md
+    - name: NMake Properties (Android C++)
+      href: nmake-android-prop-page.md

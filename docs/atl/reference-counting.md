@@ -19,7 +19,7 @@ In a simple implementation, each `AddRef` call increments and each `Release` cal
 Reference counting can also be implemented so that each reference to the object (not to an individual interface) is counted. In this case, each `AddRef` and `Release` call delegates to a central implementation on the object, and `Release` frees the entire object when its reference count reaches zero.
 
 > [!NOTE]
->  When a `CComObject`-derived object is constructed using the **new** operator, the reference count is 0. Therefore, a call to `AddRef` must be made after successfully creating the `CComObject`-derived object.
+> When a `CComObject`-derived object is constructed using the **new** operator, the reference count is 0. Therefore, a call to `AddRef` must be made after successfully creating the `CComObject`-derived object.
 
 ## See also
 

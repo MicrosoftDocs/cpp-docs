@@ -10,7 +10,7 @@ ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
 This class implements `IUnknown` and is the principal interface through which a container communicates with a control.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -87,7 +87,7 @@ The [IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject) interface is th
 
 **Header:** atlctl.h
 
-##  <a name="advise"></a>  IOleObjectImpl::Advise
+## <a name="advise"></a> IOleObjectImpl::Advise
 
 Establishes an advisory connection with the control.
 
@@ -101,7 +101,7 @@ STDMETHOD(Advise)(
 
 See [IOleObject::Advise](/windows/win32/api/oleidl/nf-oleidl-ioleobject-advise) in the Windows SDK.
 
-##  <a name="close"></a>  IOleObjectImpl::Close
+## <a name="close"></a> IOleObjectImpl::Close
 
 Changes the control state from running to loaded.
 
@@ -117,7 +117,7 @@ The pointers held in the control class data members [CComControlBase::m_spInPlac
 
 See [IOleObject::Close](/windows/win32/api/oleidl/nf-oleidl-ioleobject-close) in the Windows SDK.
 
-##  <a name="doverb"></a>  IOleObjectImpl::DoVerb
+## <a name="doverb"></a> IOleObjectImpl::DoVerb
 
 Tells the control to perform one of its enumerated actions.
 
@@ -148,7 +148,7 @@ Depending on the value of `iVerb`, one of the ATL `DoVerb` helper functions is c
 
 See [IOleObject::DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
 
-##  <a name="doverbdiscardundo"></a>  IOleObjectImpl::DoVerbDiscardUndo
+## <a name="doverbdiscardundo"></a> IOleObjectImpl::DoVerbDiscardUndo
 
 Tells the control to discard any undo state it is maintaining.
 
@@ -168,7 +168,7 @@ HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 Returns S_OK.
 
-##  <a name="doverbhide"></a>  IOleObjectImpl::DoVerbHide
+## <a name="doverbhide"></a> IOleObjectImpl::DoVerbHide
 
 Deactivates and removes the control's user interface, and hides the control.
 
@@ -188,7 +188,7 @@ HRESULT DoVerbHide(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 Returns S_OK.
 
-##  <a name="doverbinplaceactivate"></a>  IOleObjectImpl::DoVerbInPlaceActivate
+## <a name="doverbinplaceactivate"></a> IOleObjectImpl::DoVerbInPlaceActivate
 
 Runs the control and installs its window, but does not install the control's user interface.
 
@@ -212,7 +212,7 @@ One of the standard HRESULT values.
 
 Activates the control in place by calling [CComControlBase::InPlaceActivate](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate). Unless the control class's data member `m_bWindowOnly` is TRUE, `DoVerbInPlaceActivate` first attempts to activate the control as a windowless control (possible only if the container supports [IOleInPlaceSiteWindowless](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless)). If that fails, the function attempts to activate the control with extended features (possible only if the container supports [IOleInPlaceSiteEx](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex)). If that fails, the function attempts to activate the control with no extended features (possible only if the container supports [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite)). If activation succeeds, the function notifies the container the control has been activated.
 
-##  <a name="doverbopen"></a>  IOleObjectImpl::DoVerbOpen
+## <a name="doverbopen"></a> IOleObjectImpl::DoVerbOpen
 
 Causes the control to be open-edited in a separate window.
 
@@ -232,7 +232,7 @@ HRESULT DoVerbOpen(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 Returns S_OK.
 
-##  <a name="doverbprimary"></a>  IOleObjectImpl::DoVerbPrimary
+## <a name="doverbprimary"></a> IOleObjectImpl::DoVerbPrimary
 
 Defines the action taken when the user double-clicks the control.
 
@@ -256,7 +256,7 @@ One of the standard HRESULT values.
 
 By default, set to display the property pages. You can override this in your control class to invoke a different behavior on double-click; for example, play a video or go in-place active.
 
-##  <a name="doverbshow"></a>  IOleObjectImpl::DoVerbShow
+## <a name="doverbshow"></a> IOleObjectImpl::DoVerbShow
 
 Tells the container to make the control visible.
 
@@ -276,7 +276,7 @@ HRESULT DoVerbShow(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 One of the standard HRESULT values.
 
-##  <a name="doverbuiactivate"></a>  IOleObjectImpl::DoVerbUIActivate
+## <a name="doverbuiactivate"></a> IOleObjectImpl::DoVerbUIActivate
 
 Activates the control's user interface and notifies the container that its menus are being replaced by composite menus.
 
@@ -296,7 +296,7 @@ HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 One of the standard HRESULT values.
 
-##  <a name="enumadvise"></a>  IOleObjectImpl::EnumAdvise
+## <a name="enumadvise"></a> IOleObjectImpl::EnumAdvise
 
 Supplies an enumeration of registered advisory connections for this control.
 
@@ -308,7 +308,7 @@ STDMETHOD(EnumAdvise)(IEnumSTATDATA** ppenumAdvise);
 
 See [IOleObject::EnumAdvise](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumadvise) in the Windows SDK.
 
-##  <a name="enumverbs"></a>  IOleObjectImpl::EnumVerbs
+## <a name="enumverbs"></a> IOleObjectImpl::EnumVerbs
 
 Supplies an enumeration of registered actions (verbs) for this control by calling `OleRegEnumVerbs`.
 
@@ -322,7 +322,7 @@ You can add verbs to your project's .rgs file. For example, see CIRCCTL.RGS in t
 
 See [IOleObject::EnumVerbs](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumverbs) in the Windows SDK.
 
-##  <a name="getclientsite"></a>  IOleObjectImpl::GetClientSite
+## <a name="getclientsite"></a> IOleObjectImpl::GetClientSite
 
 Puts the pointer in the control class data member [CComControlBase::m_spClientSite](../../atl/reference/ccomcontrolbase-class.md#m_spclientsite) into *ppClientSite* and increments the reference count on the pointer.
 
@@ -334,7 +334,7 @@ STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
 
 See [IOleObject::GetClientSite](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getclientsite) in the Windows SDK.
 
-##  <a name="getclipboarddata"></a>  IOleObjectImpl::GetClipboardData
+## <a name="getclipboarddata"></a> IOleObjectImpl::GetClipboardData
 
 Retrieves data from the Clipboard.
 
@@ -352,7 +352,7 @@ Returns E_NOTIMPL.
 
 See [IOleObject::GetClipboardData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getclipboarddata) in the Windows SDK.
 
-##  <a name="getextent"></a>  IOleObjectImpl::GetExtent
+## <a name="getextent"></a> IOleObjectImpl::GetExtent
 
 Retrieves a running control's display size in HIMETRIC units (0.01 millimeter per unit).
 
@@ -368,7 +368,7 @@ The size is stored in the control class data member [CComControlBase::m_sizeExte
 
 See [IOleObject::GetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getextent) in the Windows SDK.
 
-##  <a name="getmiscstatus"></a>  IOleObjectImpl::GetMiscStatus
+## <a name="getmiscstatus"></a> IOleObjectImpl::GetMiscStatus
 
 Returns a pointer to registered status information for the control by calling `OleRegGetMiscStatus`.
 
@@ -384,7 +384,7 @@ The status information includes behaviors supported by the control and presentat
 
 See [IOleObject::GetMiscStatus](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmiscstatus) in the Windows SDK.
 
-##  <a name="getmoniker"></a>  IOleObjectImpl::GetMoniker
+## <a name="getmoniker"></a> IOleObjectImpl::GetMoniker
 
 Retrieves the control's moniker.
 
@@ -403,7 +403,7 @@ Returns E_NOTIMPL.
 
 See [IOleObject::GetMoniker](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmoniker) in the Windows SDK.
 
-##  <a name="getuserclassid"></a>  IOleObjectImpl::GetUserClassID
+## <a name="getuserclassid"></a> IOleObjectImpl::GetUserClassID
 
 Returns the control's class identifier.
 
@@ -415,7 +415,7 @@ STDMETHOD(GetUserClassID)(CLSID* pClsid);
 
 See [IOleObject::GetUserClassID](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getuserclassid) in the Windows SDK.
 
-##  <a name="getusertype"></a>  IOleObjectImpl::GetUserType
+## <a name="getusertype"></a> IOleObjectImpl::GetUserType
 
 Returns the control's user-type name by calling `OleRegGetUserType`.
 
@@ -431,7 +431,7 @@ The user-type name is used for display in user-interfaces elements such as menus
 
 See [IOleObject::GetUserType](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getusertype) in the Windows SDK.
 
-##  <a name="initfromdata"></a>  IOleObjectImpl::InitFromData
+## <a name="initfromdata"></a> IOleObjectImpl::InitFromData
 
 Initializes the control from selected data.
 
@@ -450,7 +450,7 @@ Returns E_NOTIMPL.
 
 See [IOleObject::InitFromData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-initfromdata) in the Windows SDK.
 
-##  <a name="isuptodate"></a>  IOleObjectImpl::IsUpToDate
+## <a name="isuptodate"></a> IOleObjectImpl::IsUpToDate
 
 Checks if the control is up to date.
 
@@ -466,7 +466,7 @@ Returns S_OK.
 
 See [IOleObject::IsUpToDate](/windows/win32/api/oleidl/nf-oleidl-ioleobject-isuptodate) in the Windows SDK.
 
-##  <a name="onpostverbdiscardundo"></a>  IOleObjectImpl::OnPostVerbDiscardUndo
+## <a name="onpostverbdiscardundo"></a> IOleObjectImpl::OnPostVerbDiscardUndo
 
 Called by [DoVerbDiscardUndo](#doverbdiscardundo) after the undo state is discarded.
 
@@ -482,7 +482,7 @@ Returns S_OK.
 
 Override this method with code you want executed after the undo state is discarded.
 
-##  <a name="onpostverbhide"></a>  IOleObjectImpl::OnPostVerbHide
+## <a name="onpostverbhide"></a> IOleObjectImpl::OnPostVerbHide
 
 Called by [DoVerbHide](#doverbhide) after the control is hidden.
 
@@ -498,7 +498,7 @@ Returns S_OK.
 
 Override this method with code you want executed after the control is hidden.
 
-##  <a name="onpostverbinplaceactivate"></a>  IOleObjectImpl::OnPostVerbInPlaceActivate
+## <a name="onpostverbinplaceactivate"></a> IOleObjectImpl::OnPostVerbInPlaceActivate
 
 Called by [DoVerbInPlaceActivate](#doverbinplaceactivate) after the control is activated in place.
 
@@ -514,7 +514,7 @@ Returns S_OK.
 
 Override this method with code you want executed after the control is activated in place.
 
-##  <a name="onpostverbopen"></a>  IOleObjectImpl::OnPostVerbOpen
+## <a name="onpostverbopen"></a> IOleObjectImpl::OnPostVerbOpen
 
 Called by [DoVerbOpen](#doverbopen) after the control has been opened for editing in a separate window.
 
@@ -530,7 +530,7 @@ Returns S_OK.
 
 Override this method with code you want executed after the control has been opened for editing in a separate window.
 
-##  <a name="onpostverbshow"></a>  IOleObjectImpl::OnPostVerbShow
+## <a name="onpostverbshow"></a> IOleObjectImpl::OnPostVerbShow
 
 Called by [DoVerbShow](#doverbshow) after the control has been made visible.
 
@@ -546,7 +546,7 @@ Returns S_OK.
 
 Override this method with code you want executed after the control has been made visible.
 
-##  <a name="onpostverbuiactivate"></a>  IOleObjectImpl::OnPostVerbUIActivate
+## <a name="onpostverbuiactivate"></a> IOleObjectImpl::OnPostVerbUIActivate
 
 Called by [DoVerbUIActivate](#doverbuiactivate) after the control's user interface has been activated.
 
@@ -562,7 +562,7 @@ Returns S_OK.
 
 Override this method with code you want executed after the control's user interface has been activated.
 
-##  <a name="onpreverbdiscardundo"></a>  IOleObjectImpl::OnPreVerbDiscardUndo
+## <a name="onpreverbdiscardundo"></a> IOleObjectImpl::OnPreVerbDiscardUndo
 
 Called by [DoVerbDiscardUndo](#doverbdiscardundo) before the undo state is discarded.
 
@@ -578,7 +578,7 @@ Returns S_OK.
 
 To prevent the undo state from being discarded, override this method to return an error HRESULT.
 
-##  <a name="onpreverbhide"></a>  IOleObjectImpl::OnPreVerbHide
+## <a name="onpreverbhide"></a> IOleObjectImpl::OnPreVerbHide
 
 Called by [DoVerbHide](#doverbhide) before the control is hidden.
 
@@ -594,7 +594,7 @@ Returns S_OK.
 
 To prevent the control from being hidden, override this method to return an error HRESULT.
 
-##  <a name="onpreverbinplaceactivate"></a>  IOleObjectImpl::OnPreVerbInPlaceActivate
+## <a name="onpreverbinplaceactivate"></a> IOleObjectImpl::OnPreVerbInPlaceActivate
 
 Called by [DoVerbInPlaceActivate](#doverbinplaceactivate) before the control is activated in place.
 
@@ -610,7 +610,7 @@ Returns S_OK.
 
 To prevent the control from being activated in place, override this method to return an error HRESULT.
 
-##  <a name="onpreverbopen"></a>  IOleObjectImpl::OnPreVerbOpen
+## <a name="onpreverbopen"></a> IOleObjectImpl::OnPreVerbOpen
 
 Called by [DoVerbOpen](#doverbopen) before the control has been opened for editing in a separate window.
 
@@ -626,7 +626,7 @@ Returns S_OK.
 
 To prevent the control from being opened for editing in a separate window, override this method to return an error HRESULT.
 
-##  <a name="onpreverbshow"></a>  IOleObjectImpl::OnPreVerbShow
+## <a name="onpreverbshow"></a> IOleObjectImpl::OnPreVerbShow
 
 Called by [DoVerbShow](#doverbshow) before the control has been made visible.
 
@@ -642,7 +642,7 @@ Returns S_OK.
 
 To prevent the control from being made visible, override this method to return an error HRESULT.
 
-##  <a name="onpreverbuiactivate"></a>  IOleObjectImpl::OnPreVerbUIActivate
+## <a name="onpreverbuiactivate"></a> IOleObjectImpl::OnPreVerbUIActivate
 
 Called by [DoVerbUIActivate](#doverbuiactivate) before the control's user interface has been activated.
 
@@ -658,7 +658,7 @@ Returns S_OK.
 
 To prevent the control's user interface from being activated, override this method to return an error HRESULT.
 
-##  <a name="setclientsite"></a>  IOleObjectImpl::SetClientSite
+## <a name="setclientsite"></a> IOleObjectImpl::SetClientSite
 
 Tells the control about its client site in the container.
 
@@ -672,7 +672,7 @@ The method then returns S_OK.
 
 See [IOleObject::SetClientSite](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setclientsite) in the Windows SDK.
 
-##  <a name="setcolorscheme"></a>  IOleObjectImpl::SetColorScheme
+## <a name="setcolorscheme"></a> IOleObjectImpl::SetColorScheme
 
 Recommends a color scheme to the control's application, if any.
 
@@ -688,7 +688,7 @@ Returns E_NOTIMPL.
 
 See [IOleObject::SetColorScheme](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) in the Windows SDK.
 
-##  <a name="setextent"></a>  IOleObjectImpl::SetExtent
+## <a name="setextent"></a> IOleObjectImpl::SetExtent
 
 Sets the extent of the control's display area.
 
@@ -708,7 +708,7 @@ If the control class data member [CComControlBase::m_bRecomposeOnResize](../../a
 
 See [IOleObject::SetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setextent) in the Windows SDK.
 
-##  <a name="sethostnames"></a>  IOleObjectImpl::SetHostNames
+## <a name="sethostnames"></a> IOleObjectImpl::SetHostNames
 
 Tells the control the names of the container application and container document.
 
@@ -724,7 +724,7 @@ Returns S_OK.
 
 See [IOleObject::SetHostNames](/windows/win32/api/oleidl/nf-oleidl-ioleobject-sethostnames) in the Windows SDK.
 
-##  <a name="setmoniker"></a>  IOleObjectImpl::SetMoniker
+## <a name="setmoniker"></a> IOleObjectImpl::SetMoniker
 
 Tells the control what its moniker is.
 
@@ -742,7 +742,7 @@ Returns E_NOTIMPL.
 
 See [IOleObject::SetMoniker](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setmoniker) in the Windows SDK.
 
-##  <a name="unadvise"></a>  IOleObjectImpl::Unadvise
+## <a name="unadvise"></a> IOleObjectImpl::Unadvise
 
 Deletes the advisory connection stored in the control class's `m_spOleAdviseHolder` data member.
 
@@ -754,7 +754,7 @@ STDMETHOD(Unadvise)(DWORD dwConnection);
 
 See [IOleObject::Unadvise](/windows/win32/api/oleidl/nf-oleidl-ioleobject-unadvise) in the Windows SDK.
 
-##  <a name="update"></a>  IOleObjectImpl::Update
+## <a name="update"></a> IOleObjectImpl::Update
 
 Updates the control.
 

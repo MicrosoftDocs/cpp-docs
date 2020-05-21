@@ -13,8 +13,7 @@ Returns the length of the longest sequence that the object can control, in const
 
 ## Syntax
 
-```
-
+```cpp
 size_type max_size() const;
 ```
 

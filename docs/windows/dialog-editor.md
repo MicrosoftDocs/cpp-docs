@@ -9,7 +9,7 @@ ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
 
 The **Dialog Editor** allows you to create or edit dialog box resources.
 
-- To open the editor, double-click on a dialog’s .rc file in the **Resource View** window, or go to menu **View** > **Other Windows** > **Resource View**.
+- To open the editor, double-click on a dialog's .rc file in the **Resource View** window, or go to menu **View** > **Other Windows** > **Resource View**.
 
 One of the first steps in making a new dialog box or dialog box template, is adding controls. In the **Dialog Editor**, you can arrange controls to fit a certain size, shape, or alignment, or you can move them around to work within the dialog box. It's also easy to delete a control.
 

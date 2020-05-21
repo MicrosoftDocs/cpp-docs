@@ -41,11 +41,11 @@ To complete Unicode programming of your application, you must also:
 
 - Use the following data types for characters and character pointers:
 
-   - Use TCHAR where you would use **char**.
+  - Use TCHAR where you would use **char**.
 
-   - Use LPTSTR where you would use **char**<strong>\*</strong>.
+  - Use LPTSTR where you would use **char**<strong>\*</strong>.
 
-   - Use LPCTSTR where you would use **const char**<strong>\*</strong>. `CString` provides the operator LPCTSTR to convert between `CString` and LPCTSTR.
+  - Use LPCTSTR where you would use **const char**<strong>\*</strong>. `CString` provides the operator LPCTSTR to convert between `CString` and LPCTSTR.
 
 `CString` also supplies Unicode-aware constructors, assignment operators, and comparison operators.
 

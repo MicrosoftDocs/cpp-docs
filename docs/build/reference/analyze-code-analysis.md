@@ -28,7 +28,7 @@ Detailed analyzer results are written as XML to the file that is specified by *f
 Turns off analyzer output to the **Output** window.
 
 **/analyze:stacksize** *number*\
-The *number* parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](/visualstudio/code-quality/c6262) is generated. The space before *number* is optional. If this parameter isn't specified, the stack frame size is 16KB by default.
+The *number* parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](/cpp/code-quality/c6262) is generated. The space before *number* is optional. If this parameter isn't specified, the stack frame size is 16KB by default.
 
 **/analyze:max_paths** *number*\
 The *number* parameter that is used with this option specifies the maximum number of code paths to be analyzed. If this parameter isn't specified, the number is 256 by default. Larger values cause more thorough checking, but the analysis might take longer.
@@ -58,14 +58,14 @@ Enables the specified PREfast plugin as part of code analysis runs.
 
 ::: moniker range="<=vs-2017"
 
-LocalEspC.dll is the plugin that implements concurrency-related code analysis checks in the range of C261XX warnings. For example, [C26100](/visualstudio/code-quality/c26100), [C26101](/visualstudio/code-quality/c26101), ...,  [C26167](/visualstudio/code-quality/c26167).
+LocalEspC.dll is the plugin that implements concurrency-related code analysis checks in the range of C261XX warnings. For example, [C26100](/cpp/code-quality/c26100), [C26101](/cpp/code-quality/c26101), ...,  [C26167](/cpp/code-quality/c26167).
 
 To run LocalEspC.dll, use this compiler option: **/analyze:plugin LocalEspC.dll**
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 
-ConcurrencyCheck.dll implements concurrency-related code analysis checks in the range of C261XX warnings. For example, [C26100](/visualstudio/code-quality/c26100), [C26101](/visualstudio/code-quality/c26101), ...,  [C26167](/visualstudio/code-quality/c26167).
+ConcurrencyCheck.dll implements concurrency-related code analysis checks in the range of C261XX warnings. For example, [C26100](/cpp/code-quality/c26100), [C26101](/cpp/code-quality/c26101), ...,  [C26167](/cpp/code-quality/c26167).
 
 To run ConcurrencyCheck.dll, first run this command from a developer command prompt:
 
@@ -87,7 +87,7 @@ Then use this compiler option: **/analyze:plugin EspXEngine.dll**.
 
 ## Remarks
 
-For more information, see [Code analysis for C/C++ overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) and [Code analysis for C/C++ warnings](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings).
+For more information, see [Code analysis for C/C++ overview](/cpp/code-quality/code-analysis-for-c-cpp-overview) and [Code analysis for C/C++ warnings](/cpp/code-quality/code-analysis-for-c-cpp-warnings).
 
 ### To set this compiler option in the Visual Studio development environment
 

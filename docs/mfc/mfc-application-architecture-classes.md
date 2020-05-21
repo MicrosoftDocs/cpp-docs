@@ -1,7 +1,6 @@
 ---
 title: "MFC Application Architecture Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.mfc"]
 helpviewer_keywords: ["MFC, classes", "MFC, application development", "classes [MFC], MFC", "application architecture classes [MFC]"]
 ms.assetid: 71b2de54-b44d-407e-9c71-9baf954e18d9
 ---

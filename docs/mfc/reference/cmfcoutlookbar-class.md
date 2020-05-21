@@ -113,7 +113,7 @@ To use the `CMFCOutlookBar` control in your application, follow these steps:
 1. To add a `CWnd`-derived control (for example, [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md)) as a tab, create the control and call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add it to the Outlook bar.
 
 > [!NOTE]
->  You should use unique control IDs for each [CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md) object and for each `CWnd`-derived object.
+> You should use unique control IDs for each [CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md) object and for each `CWnd`-derived object.
 
 To dynamically add or delete new pages at runtime, use [CMFCOutlookBar::CreateCustomPage](#createcustompage) and [CMFCOutlookBar::RemoveCustomPage](#removecustompage).
 
@@ -145,7 +145,7 @@ Use [CMFCOutlookBar::SetMode2003](#setmode2003) to enable Outlook 2003 mode. Use
 
 **Header:** afxoutlookbar.h
 
-##  <a name="allowdestroyemptytabbedpane"></a>  CMFCOutlookBar::AllowDestroyEmptyTabbedPane
+## <a name="allowdestroyemptytabbedpane"></a> CMFCOutlookBar::AllowDestroyEmptyTabbedPane
 
 Specifies whether an empty tabbed pane can be destroyed.
 
@@ -161,7 +161,7 @@ TRUE if an empty tabbed pane can be destroyed; otherwise, FALSE. The default imp
 
 If an empty tabbed pane cannot be destroyed, the framework hides it instead.
 
-##  <a name="canacceptpane"></a>  CMFCOutlookBar::CanAcceptPane
+## <a name="canacceptpane"></a> CMFCOutlookBar::CanAcceptPane
 
 Determines whether another pane can be docked to the Outlook bar pane.
 
@@ -186,7 +186,7 @@ If the *pBar* parameter is NULL, this method returns FALSE.
 
 Otherwise, this method behaves as the base method [CBasePane::CanAcceptPane](../../mfc/reference/cbasepane-class.md#canacceptpane), except that even if docking is not enabled, an Outlook bar can still enable another Outlook bar to be docked over it.
 
-##  <a name="cansetcaptiontexttotabname"></a>  CMFCOutlookBar::CanSetCaptionTextToTabName
+## <a name="cansetcaptiontexttotabname"></a> CMFCOutlookBar::CanSetCaptionTextToTabName
 
 Determines whether the caption for the tabbed pane displays the same text as the active tab.
 
@@ -204,7 +204,7 @@ Use [CBaseTabbedPane::EnableSetCaptionTextToTabName](../../mfc/reference/cbaseta
 
 In Outlook 2003 mode, this setting is always enabled.
 
-##  <a name="create"></a>  CMFCOutlookBar::Create
+## <a name="create"></a> CMFCOutlookBar::Create
 
 Creates the Outlook bar control.
 
@@ -259,7 +259,7 @@ The following example demonstrates how to use the `Create` method of the `CMFCOu
 [!code-cpp[NVC_MFC_OutlookMultiViews#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_1.h)]
 [!code-cpp[NVC_MFC_OutlookMultiViews#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_2.cpp)]
 
-##  <a name="createcustompage"></a>  CMFCOutlookBar::CreateCustomPage
+## <a name="createcustompage"></a> CMFCOutlookBar::CreateCustomPage
 
 Creates a custom Outlook bar tab.
 
@@ -295,7 +295,7 @@ Use this method to enable the users to create custom Outlook bar pages. You can 
 
 Use [CMFCOutlookBar::RemoveCustomPage](#removecustompage) to delete custom pages.
 
-##  <a name="doesallowdyninsertbefore"></a>  CMFCOutlookBar::DoesAllowDynInsertBefore
+## <a name="doesallowdyninsertbefore"></a> CMFCOutlookBar::DoesAllowDynInsertBefore
 
 Specifies whether a user can dock a pane at the outer edge of the Outlook bar.
 
@@ -314,9 +314,9 @@ The framework calls the `DoesAllowDynInsertBefore` method when it looks for a lo
 Usually, you create an Outlook bar as a static non-floating control. You can override this function in a derived class and return TRUE to change this behavior.
 
 > [!NOTE]
->  Because dynamic panes check the status of docked static panes when docking, you should dock dynamic panes after static panes whenever possible.
+> Because dynamic panes check the status of docked static panes when docking, you should dock dynamic panes after static panes whenever possible.
 
-##  <a name="floattab"></a>  CMFCOutlookBar::FloatTab
+## <a name="floattab"></a> CMFCOutlookBar::FloatTab
 
 Floats a pane.
 
@@ -350,7 +350,7 @@ TRUE if the pane floated; otherwise, FALSE.
 
 This method is like [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab) except that it does not enable the last remaining tab on an Outlook bar control to float.
 
-##  <a name="getbuttonsfont"></a>  CMFCOutlookBar::GetButtonsFont
+## <a name="getbuttonsfont"></a> CMFCOutlookBar::GetButtonsFont
 
 Returns the font of the text on the page button tabs of the Outlook bar.
 
@@ -366,7 +366,7 @@ A pointer to the font object that is used to display text on Outlook bar page bu
 
 Use this function to retrieve the font that is used to display the text on Outlook page button tabs. You can set the font by calling on [CMFCOutlookBar::SetButtonsFont](#setbuttonsfont).
 
-##  <a name="gettabarea"></a>  CMFCOutlookBar::GetTabArea
+## <a name="gettabarea"></a> CMFCOutlookBar::GetTabArea
 
 Determines the size and position of the tab areas on the Outlook bar.
 
@@ -392,7 +392,7 @@ The default implementation of `GetTabArea` returns the whole client area of the 
 
 Override this method in class derived from `CMFCOutlookBar` to change this behavior.
 
-##  <a name="ismode2003"></a>  CMFCOutlookBar::IsMode2003
+## <a name="ismode2003"></a> CMFCOutlookBar::IsMode2003
 
 Specifies whether the behavior of the Outlook bar mimics that of Microsoft Office Outlook 2003.
 
@@ -408,7 +408,7 @@ Nonzero if the Outlook bar is running in Microsoft Office 2003 mode; otherwise 0
 
 You can enable this mode by using [CMFCOutlookBar::SetMode2003](#setmode2003).
 
-##  <a name="onafteranimation"></a>  CMFCOutlookBar::OnAfterAnimation
+## <a name="onafteranimation"></a> CMFCOutlookBar::OnAfterAnimation
 
 Called by [CMFCOutlookBarTabCtrl::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) after the active tab has been set using animation.
 
@@ -425,7 +425,7 @@ virtual void OnAfterAnimation(int nPage);
 
 The visual effect of setting the active tab depends on whether you have enabled animation. For more information, see [CMFCOutlookBarTabCtrl::EnableAnimation](../../mfc/reference/cmfcoutlookbartabctrl-class.md#enableanimation).
 
-##  <a name="onbeforeanimation"></a>  CMFCOutlookBar::OnBeforeAnimation
+## <a name="onbeforeanimation"></a> CMFCOutlookBar::OnBeforeAnimation
 
 Called by [CMFCOutlookBarTabCtrl::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) before a tab page is set as the active tab using animation.
 
@@ -444,7 +444,7 @@ Returns TRUE if animation should be used in setting the new active tab, or FALSE
 
 ### Remarks
 
-##  <a name="onscroll"></a>  CMFCOutlookBar::OnScroll
+## <a name="onscroll"></a> CMFCOutlookBar::OnScroll
 
 Called by the framework if the Outlook bar is scrolling up or down.
 
@@ -459,7 +459,7 @@ virtual void OnScroll(BOOL bDown);
 
 ### Remarks
 
-##  <a name="removecustompage"></a>  CMFCOutlookBar::RemoveCustomPage
+## <a name="removecustompage"></a> CMFCOutlookBar::RemoveCustomPage
 
 Removes a custom Outlook bar tab page.
 
@@ -489,7 +489,7 @@ You must provide a pointer to [CMFCOutlookBarTabCtrl Class](../../mfc/reference/
 
 Use [CBaseTabbedPane::GetUnderlyingWindow](../../mfc/reference/cbasetabbedpane-class.md#getunderlyingwindow) to obtain a pointer to the Outlook window.
 
-##  <a name="setbuttonsfont"></a>  CMFCOutlookBar::SetButtonsFont
+## <a name="setbuttonsfont"></a> CMFCOutlookBar::SetButtonsFont
 
 Sets the font of the text on the buttons of the Outlook bar.
 
@@ -511,7 +511,7 @@ void SetButtonsFont(
 
 Use this method to set a font for the text displayed on outlook tab page buttons.
 
-##  <a name="setmode2003"></a>  CMFCOutlookBar::SetMode2003
+## <a name="setmode2003"></a> CMFCOutlookBar::SetMode2003
 
 Specifies whether the behavior of the Outlook bar mimics that of Outlook 2003.
 
@@ -531,7 +531,7 @@ Use this function to enable or disable Office 2003 mode. In this mode, the Outlo
 By default, this mode is disabled.
 
 > [!NOTE]
->  This function must be called before [CMFCOutlookBar::Create](#create).
+> This function must be called before [CMFCOutlookBar::Create](#create).
 
 ## See also
 

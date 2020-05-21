@@ -42,7 +42,7 @@ For more information, see the article [Containers: Implementing a Container](../
 
 **Header:** afxole.h
 
-##  <a name="getdocument"></a>  CDocItem::GetDocument
+## <a name="getdocument"></a> CDocItem::GetDocument
 
 Call this function to get the document that contains the item.
 
@@ -58,7 +58,7 @@ A pointer to the document that contains the item; NULL, if the item is not part 
 
 This function is overridden in the derived classes [COleClientItem](../../mfc/reference/coleclientitem-class.md) and [COleServerItem](../../mfc/reference/coleserveritem-class.md), returning a pointer to either a [COleDocument](../../mfc/reference/coledocument-class.md), a [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md), or a [COleServerDoc](../../mfc/reference/coleserverdoc-class.md) object.
 
-##  <a name="isblank"></a>  CDocItem::IsBlank
+## <a name="isblank"></a> CDocItem::IsBlank
 
 Called by the framework when default serialization occurs.
 

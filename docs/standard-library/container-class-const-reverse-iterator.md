@@ -13,8 +13,7 @@ Describes an object that can serve as a constant reverse iterator for the contro
 
 ## Syntax
 
-```
-
+```cpp
 typedef T8 const_reverse_iterator;
 ```
 

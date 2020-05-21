@@ -40,7 +40,7 @@ Allocators that use `sync_per_thread` can compare equal even though blocks alloc
 
 **Namespace:** stdext
 
-## <a name="allocate"></a>  sync_per_thread::allocate
+## <a name="allocate"></a> sync_per_thread::allocate
 
 Allocates a block of memory.
 
@@ -58,7 +58,7 @@ void *allocate(std::size_t count);
 
 The member function returns the result of a call to `cache::allocate(count)` on the cache object belonging to the current thread. If no cache object has been allocated for the current thread, it first allocates one.
 
-## <a name="deallocate"></a>  sync_per_thread::deallocate
+## <a name="deallocate"></a> sync_per_thread::deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 
@@ -77,7 +77,7 @@ void deallocate(void* ptr, std::size_t count);
 
 The member function calls `deallocate` on the cache object belonging to the current thread. If no cache object has been allocated for the current thread, it first allocates one.
 
-## <a name="equals"></a>  sync_per_thread::equals
+## <a name="equals"></a> sync_per_thread::equals
 
 Compares two caches for equality.
 

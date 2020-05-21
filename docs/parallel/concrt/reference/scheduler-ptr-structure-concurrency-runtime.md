@@ -45,7 +45,7 @@ struct scheduler_ptr;
 
 **Namespace:** concurrency
 
-## <a name="get"></a>  scheduler_ptr::get Method
+## <a name="get"></a> scheduler_ptr::get Method
 
 Returns the raw pointer to the scheduler.
 
@@ -55,7 +55,7 @@ scheduler_interface* get() const;
 
 ### Return Value
 
-## <a name="operator_bool"></a>  scheduler_ptr::operator bool
+## <a name="operator_bool"></a> scheduler_ptr::operator bool
 
 Tests whether the scheduler pointer is non-null.
 
@@ -63,7 +63,7 @@ Tests whether the scheduler pointer is non-null.
 operator bool() const;
 ```
 
-## <a name="operator_ptr"></a>  scheduler_ptr::operator-&gt;
+## <a name="operator_ptr"></a> scheduler_ptr::operator-&gt;
 
 Behaves like a pointer.
 
@@ -73,7 +73,7 @@ scheduler_interface* operator->() const;
 
 ### Return Value
 
-## <a name="ctor"></a>  scheduler_ptr::scheduler_ptr Constructor
+## <a name="ctor"></a> scheduler_ptr::scheduler_ptr Constructor
 
 Creates a scheduler pointer from shared_ptr to scheduler.
 

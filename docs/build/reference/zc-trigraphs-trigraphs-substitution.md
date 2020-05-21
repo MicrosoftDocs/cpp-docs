@@ -1,7 +1,7 @@
 ---
 title: "/Zc:trigraphs (Trigraphs Substitution)"
 ms.date: "03/06/2018"
-f1_keywords: ["/Zc"]
+f1_keywords: ["/Zc:trigraphs"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "/Zc compiler options (C++)", "Conformance compiler options", "Zc compiler options (C++)"]
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
 ---

@@ -11,7 +11,7 @@ Used by windowing code in ATL.
 
 ## Syntax
 
-```
+```cpp
 struct _ATL_WIN_MODULE70 {
     UNIT cbSize;
     CRITICAL_SECTION m_csWindowCreate;

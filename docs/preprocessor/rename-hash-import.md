@@ -1,7 +1,6 @@
 ---
 title: "rename import attribute"
 ms.date: "08/29/2019"
-f1_keywords: ["Rename"]
 helpviewer_keywords: ["rename attribute"]
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975
 ---

@@ -22,7 +22,7 @@ Catching exception types derived from an interface is not supported under **/clr
 
 For more information about differences in exception handling in managed and unmanaged applications, see [Differences in Exception Handling Behavior Under Managed Extensions for C++](../dotnet/differences-in-exception-handling-behavior-under-clr.md).
 
-##  <a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a> Throwing Exceptions Under /clr
+## <a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a> Throwing Exceptions Under /clr
 
 The C++ throw expression is extended to throw a handle to a CLR type. The following example creates a custom exception type and then throws an instance of that type:
 
@@ -55,7 +55,7 @@ void GlobalFunction() {
 }
 ```
 
-##  <a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a> Try/Catch Blocks for CLR Extensions
+## <a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a> Try/Catch Blocks for CLR Extensions
 
 The same **try**/**catch** block structure can be used for catching both CLR and native exceptions:
 

@@ -84,7 +84,7 @@ The following example demonstrates how to configure a color dialog by using vari
 
 **Header:** afxcolordialog.h
 
-##  <a name="cmfccolordialog"></a>  CMFCColorDialog::CMFCColorDialog
+## <a name="cmfccolordialog"></a> CMFCColorDialog::CMFCColorDialog
 
 Constructs a `CMFCColorDialog` object.
 
@@ -114,7 +114,7 @@ CMFCColorDialog(
 
 ### Remarks
 
-##  <a name="getcolor"></a>  CMFCColorDialog::GetColor
+## <a name="getcolor"></a> CMFCColorDialog::GetColor
 
 Retrieves the color that the user selects from the color dialog.
 
@@ -130,7 +130,7 @@ A [COLORREF](/windows/win32/gdi/colorref) value that contains the RGB informatio
 
 Call this function after you call the `DoModal` method.
 
-##  <a name="getpalette"></a>  CMFCColorDialog::GetPalette
+## <a name="getpalette"></a> CMFCColorDialog::GetPalette
 
 Retrieves the color palette that is available in the current color dialog.
 
@@ -146,19 +146,19 @@ A pointer to the `CPalette` object that was specified in the `CMFCColorDialog` c
 
 The color palette specifies the colors that the user can choose.
 
-##  <a name="rebuildpalette"></a>  CMFCColorDialog::RebuildPalette
+## <a name="rebuildpalette"></a> CMFCColorDialog::RebuildPalette
 
 Derives a palette from the system palette.
 
-```
+```cpp
 void RebuildPalette();
 ```
 
-##  <a name="setcurrentcolor"></a>  CMFCColorDialog::SetCurrentColor
+## <a name="setcurrentcolor"></a> CMFCColorDialog::SetCurrentColor
 
 Sets the current color of the dialog box.
 
-```
+```cpp
 void SetCurrentColor(COLORREF rgb);
 ```
 
@@ -169,11 +169,11 @@ void SetCurrentColor(COLORREF rgb);
 
 ### Remarks
 
-##  <a name="setnewcolor"></a>  CMFCColorDialog::SetNewColor
+## <a name="setnewcolor"></a> CMFCColorDialog::SetNewColor
 
 Sets the current color to the color in the current palette that is most similar.
 
-```
+```cpp
 void SetNewColor(COLORREF rgb);
 ```
 
@@ -184,11 +184,11 @@ void SetNewColor(COLORREF rgb);
 
 ### Remarks
 
-##  <a name="setpageone"></a>  CMFCColorDialog::SetPageOne
+## <a name="setpageone"></a> CMFCColorDialog::SetPageOne
 
 Explicitly specifies the red, green, and blue components of a selected color on the first property page of a color dialog.
 
-```
+```cpp
 void SetPageOne(
     BYTE R,
     BYTE G,
@@ -208,11 +208,11 @@ void SetPageOne(
 
 ### Remarks
 
-##  <a name="setpagetwo"></a>  CMFCColorDialog::SetPageTwo
+## <a name="setpagetwo"></a> CMFCColorDialog::SetPageTwo
 
 Explicitly specifies the red, green, and blue components of a selected color on the second property page of a color dialog.
 
-```
+```cpp
 void SetPageTwo(
     BYTE R,
     BYTE G,

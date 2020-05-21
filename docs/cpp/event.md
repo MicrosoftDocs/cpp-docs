@@ -34,7 +34,7 @@ Use [__hook](../cpp/hook.md) in an event receiver to associate a handler method 
 An **__event** method declaration cannot have a definition; a definition is implicitly generated, so the event method can be called as if it were any ordinary method.
 
 > [!NOTE]
->  A templated class or struct cannot contain events.
+> A templated class or struct cannot contain events.
 
 ## Native Events
 

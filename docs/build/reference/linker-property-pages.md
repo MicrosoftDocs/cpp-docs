@@ -4,7 +4,6 @@ ms.date: "07/24/2019"
 ms.topic: "article"
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
 ---
-
 # Linker Property Pages
 
 The following properties are found under **Project** > **Properties** > **Configuration Properties** > **Linker**. For more information about the linker, see [CL Invokes the Linker](cl-invokes-the-linker.md) and [Linker Options](linker-options.md).
@@ -22,7 +21,7 @@ Prints Linker Progress Messages
 **Choices**
 
 - **Not Set** - No verbosity.
-- **Display all progress messages** - Displays all progress messages. 
+- **Display all progress messages** - Displays all progress messages.
 - **For Libraries Searched** - Displays progress messages indicating just the libraries searched.
 - **About COMDAT folding during optimized linking** - Displays information about COMDAT folding during optimized linking.
 - **About data removed during optimized linking** - Displays information about functions and data removed during optimized linking.
@@ -39,7 +38,7 @@ Enables incremental linking. ([/INCREMENTAL](incremental-link-incrementally.md),
 
 ### Suppress Startup Banner
 
-The [/NOLOGO](nologo-suppress-startup-banner-linker.md) option prevents display of the copyright message and version number. 
+The [/NOLOGO](nologo-suppress-startup-banner-linker.md) option prevents display of the copyright message and version number.
 
 ### Ignore Import Library
 
@@ -120,7 +119,7 @@ Specifies additional items to add to the link command line, for example *kernel3
 
 ### Ignore All Default Libraries
 
-The [/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) option tells the linker to remove one or more default libraries from the list of libraries it searches when resolving external references. 
+The [/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) option tells the linker to remove one or more default libraries from the list of libraries it searches when resolving external references.
 
 ### Ignore Specific Default Libraries
 
@@ -128,7 +127,7 @@ Specifies one or more names of default libraries to ignore. Separate multiple li
 
 ### Module Definition File
 
-The [/DEF](def-specify-module-definition-file.md) option passes a module-definition file (.def) to the linker. Only one .def file can be specified to LINK. 
+The [/DEF](def-specify-module-definition-file.md) option passes a module-definition file (.def) to the linker. Only one .def file can be specified to LINK.
 
 ### Add Module to Assembly
 
@@ -144,7 +143,7 @@ The [/INCLUDE](include-force-symbol-references.md) option tells the linker to ad
 
 ### Delay Loaded DLLs
 
-The [/DELAYLOAD](delayload-delay-load-import.md) option causes delayed loading of DLLs. The dll name specifies a DLL to delay load. 
+The [/DELAYLOAD](delayload-delay-load-import.md) option causes delayed loading of DLLs. The dll name specifies a DLL to delay load.
 
 ### Assembly Link Resource
 
@@ -196,8 +195,8 @@ This option enables creation of debugging information for the .exe file or the D
 
 - **No** - Produces no debugging information.
 - **Generate Debug Information** - Create a complete Program Database (PDB) ideal for distribution to Microsoft Symbol Server.
-- **Generate Debug Information optimized for faster links** - Produces a program database (PDB) ideal for edit-link-debug cycle. 
-- **Generate Debug Information optimized for sharing and publishing** - Produces a program database (PDB) ideal for edit-link-debug cycle. 
+- **Generate Debug Information optimized for faster links** - Produces a program database (PDB) ideal for edit-link-debug cycle.
+- **Generate Debug Information optimized for sharing and publishing** - Produces a program database (PDB) ideal for edit-link-debug cycle.
 
 ### Generate Program Database File
 

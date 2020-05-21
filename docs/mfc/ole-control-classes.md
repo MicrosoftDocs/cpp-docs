@@ -1,7 +1,6 @@
 ---
 title: "OLE Control Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.ole"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "custom controls [MFC], classes", "ActiveX controls [MFC], OLE control classes", "ActiveX control classes [MFC]", "OLE controls [MFC], classes", "OLE control classes [MFC]", "reusable component classes [MFC]"]
 ms.assetid: 96495ec3-319e-4163-b839-1af0428ed9dd
 ---

@@ -3,7 +3,6 @@ title: "launch.vs.json schema reference (C++)"
 ms.date: "08/20/2019"
 helpviewer_keywords: ["launch.vs.json file [C++]"]
 ---
-
 # launch.vs.json schema reference (C++)
 
 Use the *launch.vs.json* file to configure debugging parameters. To create the file. right-click on an executable file in **Solution Explorer** and choose **Debug and Launch Settings**. Choose the option that most closely matches your project and then use the following properties to modify the configuration as needed. For more information on debugging CMake projects, see [Configure CMake debugging sessions](/cpp/build/configure-cmake-debugging-sessions).
@@ -56,7 +55,6 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`coreDumpPath`|string|Optional full path to a core dump file for the specified program. Defaults to null.|
 externalConsole|boolean|If true, a console is launched for the debuggee. If `false`, no console is launched. Defaults to `false`. NOTE: This option is ignored in some cases for technical reasons.|
 |`pipeTransport`|string|When present, this tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options).|
-
 
 ## <a name="launch_setup_commands"></a> Launch setup commands
 

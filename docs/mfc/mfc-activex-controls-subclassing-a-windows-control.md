@@ -23,7 +23,7 @@ To subclass a Windows control, complete the following tasks:
    > [!NOTE]
    > Much of this work is done for you by the ActiveX Control Wizard if you select control to be subclassed using the **Select Parent Window Class** drop-down list on the **Control Settings** page.
 
-##  <a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a> Overriding IsSubclassedControl and PreCreateWindow
+## <a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a> Overriding IsSubclassedControl and PreCreateWindow
 
 To override `PreCreateWindow` and `IsSubclassedControl`, add the following lines of code to the **protected** section of the control class declaration:
 
@@ -41,7 +41,7 @@ When subclassing a Windows control, you may want to specify particular window st
 
 This operation adds the BS_CHECKBOX style flag, while leaving the default style flag (WS_CHILD) of class `COleControl` intact.
 
-##  <a name="_core_modifying_the_ondraw_member_function"></a> Modifying the OnDraw Member Function
+## <a name="_core_modifying_the_ondraw_member_function"></a> Modifying the OnDraw Member Function
 
 If you want your subclassed control to keep the same appearance as the corresponding Windows control, the `OnDraw` member function for the control should contain only a call to the `DoSuperclassPaint` member function, as in the following example:
 
@@ -50,9 +50,9 @@ If you want your subclassed control to keep the same appearance as the correspon
 The `DoSuperclassPaint` member function, implemented by `COleControl`, uses the window procedure of the Windows control to draw the control in the specified device context, within the bounding rectangle. This makes the control visible even when it is not active.
 
 > [!NOTE]
->  The `DoSuperclassPaint` member function will work only with those control types that allow a device context to be passed as the *wParam* of a WM_PAINT message. This includes some of the standard Windows controls, such as SCROLLBAR and BUTTON, and all the common controls. For controls that do not support this behavior, you will have to provide your own code to properly display an inactive control.
+> The `DoSuperclassPaint` member function will work only with those control types that allow a device context to be passed as the *wParam* of a WM_PAINT message. This includes some of the standard Windows controls, such as SCROLLBAR and BUTTON, and all the common controls. For controls that do not support this behavior, you will have to provide your own code to properly display an inactive control.
 
-##  <a name="_core_handling_reflected_window_messages"></a> Handling Reflected Window Messages
+## <a name="_core_handling_reflected_window_messages"></a> Handling Reflected Window Messages
 
 Windows controls typically send certain window messages to their parent window. Some of these messages, such as WM_COMMAND, provide notification of an action by the user. Others, such as WM_CTLCOLOR, are used to obtain information from the parent window. An ActiveX control usually communicates with the parent window by other means. Notifications are communicated by firing events (sending event notifications), and information about the control container is obtained by accessing the container's ambient properties. Because these communication techniques exist, ActiveX control containers are not expected to process any window messages sent by the control.
 

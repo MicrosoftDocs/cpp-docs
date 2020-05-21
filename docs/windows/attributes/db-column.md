@@ -15,7 +15,7 @@ Binds a specified column to a variable in the rowset.
 [ db_column(ordinal, dbtype, precision, scale, status, length) ]
 ```
 
-#### Parameters
+### Parameters
 
 *ordinal*<br/>
 The ordinal column number (`DBCOLUMNINFO` ordinal) or column name (ANSI or Unicode string) corresponding to a field in the rowset to which to bind data. If you use numbers, you can skip consecutive ordinals (for example: 1, 2, 3, 5). The name may contain spaces if the OLE DB provider you use supports it. For example, you can use either of the following formats:
@@ -48,7 +48,7 @@ Use **db_column** in conjunction with either the [db_table](db-table.md) or [db_
 
 When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.
 
-For examples of this attribute used in an application, see the samples [AtlAgent](https://github.com/Microsoft/VCSamples), and [MultiRead](https://github.com/Microsoft/VCSamples).
+For an example of this attribute used in an application, see [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
 ## Example
 

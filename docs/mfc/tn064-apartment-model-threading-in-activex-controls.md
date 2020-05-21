@@ -1,14 +1,13 @@
 ---
 title: "TN064: Apartment-Model Threading in ActiveX Controls"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.controls.activex"]
 helpviewer_keywords: ["OLE controls [MFC], container support", "containers [MFC], multithreaded", "TN064 [MFC]", "multithread container [MFC]", "apartment model threading [MFC]"]
 ms.assetid: b2ab4c88-6954-48e2-9a74-01d4a60df073
 ---
 # TN064: Apartment-Model Threading in ActiveX Controls
 
 > [!NOTE]
->  The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
+> The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
 
 This technical note explains how to enable apartment-model threading in an ActiveX control. Note that apartment-model threading is only supported in Visual C++ versions 4.2 or later.
 
@@ -32,7 +31,7 @@ If your control uses shared data, such as a static member variable, access to th
 
 Consider, for example, a control class that needs to maintain a string that is shared by all instances. This string can be maintained in a static member variable and protected by a critical section. The control's class declaration would contain the following:
 
-```
+```cpp
 class CSampleCtrl : public COleControl
 {
 ...
@@ -43,14 +42,14 @@ class CSampleCtrl : public COleControl
 
 The implementation for the class would include definitions for these variables:
 
-```
+```cpp
 int CString CSampleCtrl::_strShared;
 CCriticalSection CSampleCtrl::_critSect;
 ```
 
 Access to the `_strShared` static member can then be protected by the critical section:
 
-```
+```cpp
 void CSampleCtrl::SomeMethod()
 {
     _critSect.Lock();
@@ -66,7 +65,7 @@ if (_strShared.Empty())
 
 Controls that support apartment-model threading should indicate this capability in the registry, by adding the named value "ThreadingModel" with a value of "Apartment" in their class ID registry entry under the *class id*\\**InprocServer32** key. To cause this key to be automatically registered for your control, pass the *afxRegApartmentThreading* flag in the sixth parameter to `AfxOleRegisterControlClass`:
 
-```
+```cpp
 BOOL CSampleCtrl::CSampleCtrlFactory::UpdateRegistry(BOOL bRegister)
 {
     if (bRegister)

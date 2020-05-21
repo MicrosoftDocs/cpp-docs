@@ -28,11 +28,11 @@ Here are some common causes for this error.
 
    Possible solutions include:
 
-   - Declare the variable `extern` in the header file: `extern int global_int;`, then define it and optionally initialize it in one and only one source file: `int global_int = 17;`. This variable is now a global that you can use in any source file by declaring it `extern`, for example, by including the header file. We recommend this solution for variables that must be global, but good software engineering practice minimizes global variables.
+  - Declare the variable `extern` in the header file: `extern int global_int;`, then define it and optionally initialize it in one and only one source file: `int global_int = 17;`. This variable is now a global that you can use in any source file by declaring it `extern`, for example, by including the header file. We recommend this solution for variables that must be global, but good software engineering practice minimizes global variables.
 
-   - Declare the variable [static](../../cpp/storage-classes-cpp.md#static): `static int static_int = 17;`. This restricts the scope of the definition to the current object file, and allows multiple object files to have their own copy of the variable. We don't recommend you define static variables in header files because of the potential for confusion with global variables. Prefer to move static variable definitions into the source files that use them.
+  - Declare the variable [static](../../cpp/storage-classes-cpp.md#static): `static int static_int = 17;`. This restricts the scope of the definition to the current object file, and allows multiple object files to have their own copy of the variable. We don't recommend you define static variables in header files because of the potential for confusion with global variables. Prefer to move static variable definitions into the source files that use them.
 
-   - Declare the variable [selectany](../../cpp/selectany.md): `__declspec(selectany) int global_int = 17;`. This tells the linker to pick one definition for use by all external references and to discard the rest. This solution is sometimes useful when combining import libraries. Otherwise, we do not recommend it as a way to avoid linker errors.
+  - Declare the variable [selectany](../../cpp/selectany.md): `__declspec(selectany) int global_int = 17;`. This tells the linker to pick one definition for use by all external references and to discard the rest. This solution is sometimes useful when combining import libraries. Otherwise, we do not recommend it as a way to avoid linker errors.
 
 - This error can occur when a header file defines a function that isn't `inline`. If you include this header file in more than one source file, you get multiple definitions of the function in the executable.
 
@@ -43,24 +43,24 @@ Here are some common causes for this error.
 
    Possible solutions include:
 
-   - Add the `inline` keyword to the function:
+  - Add the `inline` keyword to the function:
 
-        ```h
-        // LNK2005_func_inline.h
-        inline int sample_function(int k) { return 42 * (k % 167); }
-        ```
+    ```h
+    // LNK2005_func_inline.h
+    inline int sample_function(int k) { return 42 * (k % 167); }
+    ```
 
-   - Remove the function body from the header file and leave only the declaration, then implement the function in one and only one source file:
+  - Remove the function body from the header file and leave only the declaration, then implement the function in one and only one source file:
 
-        ```h
-        // LNK2005_func_decl.h
-        int sample_function(int);
-        ```
+    ```h
+    // LNK2005_func_decl.h
+    int sample_function(int);
+    ```
 
-        ```cpp
-        // LNK2005_func_impl.cpp
-        int sample_function(int k) { return 42 * (k % 167); }
-        ```
+    ```cpp
+    // LNK2005_func_impl.cpp
+    int sample_function(int k) { return 42 * (k % 167); }
+    ```
 
 - This error can also occur if you define member functions outside the class declaration in a header file:
 

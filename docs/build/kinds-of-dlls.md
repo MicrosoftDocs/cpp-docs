@@ -8,7 +8,7 @@ ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
 
 This topic provides information to help you determine the kind of DLL to build.
 
-##  <a name="_core_the_different_kinds_of_dlls_available_with_visual_c.2b2b"></a> Different Kinds of DLLs Available
+## <a name="_core_the_different_kinds_of_dlls_available_with_visual_c.2b2b"></a> Different Kinds of DLLs Available
 
 Using Visual Studio, you can build Win32 DLLs in C or C++ that do not use the Microsoft Foundation Class (MFC) library. You can create a non-MFC DLL project with the Win32 Application Wizard.
 
@@ -32,7 +32,7 @@ The MFC library itself is available, in either static link libraries or in a num
 
 - [Which kind of DLL to use](#_core_which_kind_of_dll_to_use)
 
-##  <a name="_core_which_kind_of_dll_to_use"></a> Deciding Which Kind of DLL to Use
+## <a name="_core_which_kind_of_dll_to_use"></a> Deciding Which Kind of DLL to Use
 
 If your DLL does not use MFC, use Visual Studio to build a non-MFC Win32 DLL. Linking your DLL to MFC (either statically or dynamically) takes up significant disk space and memory. You should not link to MFC unless your DLL actually uses MFC.
 

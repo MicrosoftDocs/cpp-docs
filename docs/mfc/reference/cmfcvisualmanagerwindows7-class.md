@@ -105,7 +105,7 @@ The CMFCVisualManagerWindows7 inherits multiple methods from both the [CMFCVisua
 
 **Header:** afxvisualmanagerwindows7.h
 
-##  <a name="_dtorcmfcvisualmanagerwindows7"></a>  CMFCVisualManagerWindows7::~CMFCVisualManagerWindows7
+## <a name="_dtorcmfcvisualmanagerwindows7"></a> CMFCVisualManagerWindows7::~CMFCVisualManagerWindows7
 
 Default destructor.
 
@@ -113,7 +113,7 @@ Default destructor.
 virtual ~CMFCVisualManagerWindows7();
 ```
 
-##  <a name="cmfcvisualmanagerwindows7"></a>  CMFCVisualManagerWindows7::CMFCVisualManagerWindows7
+## <a name="cmfcvisualmanagerwindows7"></a> CMFCVisualManagerWindows7::CMFCVisualManagerWindows7
 
 Default constructor.
 
@@ -121,7 +121,7 @@ Default constructor.
 CMFCVisualManagerWindows7();
 ```
 
-##  <a name="getribboneditbackgroundcolor"></a>  CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor
+## <a name="getribboneditbackgroundcolor"></a> CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor
 
 Obtains the background color of a ribbon edit box.
 
@@ -153,7 +153,7 @@ The background color of the edit box *pEdit*.
 
 ### Remarks
 
-##  <a name="onfillmenuimagerect"></a>  CMFCVisualManagerWindows7::OnFillMenuImageRect
+## <a name="onfillmenuimagerect"></a> CMFCVisualManagerWindows7::OnFillMenuImageRect
 
 The framework calls this method when it fills area around a menu item image.
 

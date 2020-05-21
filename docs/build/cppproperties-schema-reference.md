@@ -3,7 +3,6 @@ title: "CppProperties.json reference"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["CppProperties.json file [C++]"]
 ---
-
 # CppProperties.json reference
 
 Open Folder projects that don't use CMake can store project configuration settings for IntelliSense in a *CppProperties.json* file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. See [Open Folder projects for C++](open-folder-projects-cpp.md) for more information about how to add configurations in an Open Folder project. The following sections summarize the various settings. For a complete description of the schema, navigate to *CppProperties_schema.json*, whose full path is given at the top of the code editor when *CppProperties.json* is open.
@@ -22,7 +21,7 @@ A configuration may have any of the following properties:
 |`forcedInclude`|Header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
 |`undefines`|The list of macros to be undefined (maps to /U for MSVC)|
 |`intelliSenseMode`|The IntelliSense engine to be used. You can specify one of the predefined architecture-specific variants for MSVC, gcc, or Clang.|
-|`environments`|User-defined sets of variables that behave like environment variables in a command prompt and are accessed with the ${env.<VARIABLE>} macro.|
+|`environments`|User-defined sets of variables that behave like environment variables in a command prompt and are accessed with the ${env.\<VARIABLE>} macro.|
 
 ### intelliSenseMode values
 

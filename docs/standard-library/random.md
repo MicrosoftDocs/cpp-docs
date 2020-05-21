@@ -203,7 +203,7 @@ This code demonstrates two different randomizations—randomize a vector of inte
 
 ## <a name="listing"></a> Categorized Listing
 
-###  <a name="urngs"></a> Uniform Random Number Generators
+### <a name="urngs"></a> Uniform Random Number Generators
 
 URNGs are often described in terms of these properties:
 
@@ -215,13 +215,13 @@ URNGs are often described in terms of these properties:
 
 The following sections list the uniform random number generators (URNGs) provided in the \<random> header.
 
-####  <a name="rd"></a> Non-Deterministic Generator
+#### <a name="rd"></a> Non-Deterministic Generator
 
 |||
 |-|-|
 |[random_device Class](../standard-library/random-device-class.md)|Generates a non-deterministic, cryptographically secure random sequence by using an external device. Usually used to seed an engine. Low performance, very high quality. For more information, see [Remarks](#comments).|
 
-####  <a name="typedefs"></a> Engine Typedefs with Predefined Parameters
+#### <a name="typedefs"></a> Engine Typedefs with Predefined Parameters
 
 For instantiating engines and engine adaptors. For more information, see [Engines and Distributions](#engdist).
 
@@ -297,7 +297,7 @@ For instantiating engines and engine adaptors. For more information, see [Engine
     typedef subtract_with_carry_engine<unsigned long long, 48, 5, 12> ranlux48_base;
     ```
 
-####  <a name="eng"></a> Engine Templates
+#### <a name="eng"></a> Engine Templates
 
 Engine templates are used as standalone URNGs or as base engines passed to [engine adaptors](#engadapt). Usually these are instantiated with a [predefined engine typedef](#typedefs) and passed to a [distribution](#distributions). For more information, see the [Engines and Distributions](#engdist) section.
 
@@ -307,7 +307,7 @@ Engine templates are used as standalone URNGs or as base engines passed to [engi
 |[mersenne_twister_engine Class](../standard-library/mersenne-twister-engine-class.md)|Generates a random sequence by using the Mersenne twister algorithm. Most complex, and is highest quality except for the random_device class. Very fast performance.|
 |[subtract_with_carry_engine Class](../standard-library/subtract-with-carry-engine-class.md)|Generates a random sequence by using the subtract-with-carry algorithm. An improvement on `linear_congruential_engine`, but much lower quality and performance than `mersenne_twister_engine`.|
 
-####  <a name="engadapt"></a> Engine Adaptor Templates
+#### <a name="engadapt"></a> Engine Adaptor Templates
 
 Engine adaptors are templates that adapt other (base) engines. Usually these are instantiated with a [predefined engine typedef](#typedefs) and passed to a [distribution](#distributions). For more information, see the [Engines and Distributions](#engdist) section.
 
@@ -319,7 +319,7 @@ Engine adaptors are templates that adapt other (base) engines. Usually these are
 
 [[Engine Templates](#eng)]
 
-###  <a name="distributions"></a> Random Number Distributions
+### <a name="distributions"></a> Random Number Distributions
 
 The following sections list the distributions provided in the \<random> header. Distributions are a post-processing mechanism, usually using URNG output as input and distributing the output by a defined statistical probability density function. For more information, see the [Engines and Distributions](#engdist) section.
 

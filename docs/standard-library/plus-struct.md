@@ -11,7 +11,7 @@ A predefined function object that performs the addition operation (binary `opera
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct plus : public binary_function <Type, Type, Type>
 {

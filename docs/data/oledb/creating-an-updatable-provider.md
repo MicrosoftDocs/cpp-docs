@@ -15,7 +15,7 @@ Next, you must make sure your provider contains all the functionality to support
 > [!NOTE]
 > [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) is an example of an updatable provider. UpdatePV is the same as MyProv but with updatable support.
 
-##  <a name="vchowmakingprovidersupdatable"></a> Making Providers Updatable
+## <a name="vchowmakingprovidersupdatable"></a> Making Providers Updatable
 
 The key to making a provider updatable is understanding what operations you want your provider to perform on the data store and how you want the provider to carry out those operations. Specifically, the major issue is whether updates to the data store are to be done immediately or deferred (batched) until an update command is issued.
 
@@ -129,7 +129,7 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
    > [!NOTE]
    > If you support notifications, you might also have some other properties as well; see the section on `IRowsetNotifyCP` for this list.
 
-##  <a name="vchowwritingtothedatasource"></a> Writing to the Data Source
+## <a name="vchowwritingtothedatasource"></a> Writing to the Data Source
 
 To read from the data source, call the `Execute` function. To write to the data source, call the `FlushData` function. (In a general sense, flush means to save modifications you make to a table or index to disk.)
 

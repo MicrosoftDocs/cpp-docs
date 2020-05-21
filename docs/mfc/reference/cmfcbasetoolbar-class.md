@@ -51,7 +51,7 @@ class CMFCBaseToolBar : public CPane
 
 **Header:** afxbasetoolbar.h
 
-##  <a name="getdockingmode"></a>  CMFCBaseToolBar::GetDockingMode
+## <a name="getdockingmode"></a> CMFCBaseToolBar::GetDockingMode
 
 Returns the docking mode.
 
@@ -63,7 +63,7 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
 
 The docking mode.
 
-##  <a name="getminsize"></a>  CMFCBaseToolBar::GetMinSize
+## <a name="getminsize"></a> CMFCBaseToolBar::GetMinSize
 
 Returns the minimum size of a toolbar.
 
@@ -76,7 +76,7 @@ virtual void GetMinSize(CSize& size) const;
 *size*<br/>
 [out] The minimum size of a toolbar.
 
-##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent
+## <a name="onafterchangeparent"></a> CMFCBaseToolBar::OnAfterChangeParent
 
 Called by the framework after the pane's parent changes.
 

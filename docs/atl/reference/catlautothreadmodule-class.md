@@ -14,7 +14,7 @@ This class implements a thread-pooled, apartment-model COM server.
 
 ## Syntax
 
-```
+```cpp
 class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
 ```
 

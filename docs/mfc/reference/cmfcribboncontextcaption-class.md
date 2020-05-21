@@ -46,7 +46,7 @@ To set the color for ribbon categories, call [CMFCRibbonCategory::SetTabColor](.
 
 **Header:** afxRibbonBar.h
 
-##  <a name="getcolor"></a>  CMFCRibbonContextCaption::GetColor
+## <a name="getcolor"></a> CMFCRibbonContextCaption::GetColor
 
 Returns the background color of the caption.
 
@@ -78,7 +78,7 @@ The returned value can be one of the following enumerated values:
 
 The color of the caption can be set by calling [CMFCRibbonCategory::SetTabColor](../../mfc/reference/cmfcribboncategory-class.md#settabcolor) or [CMFCRibbonBar::AddContextCategory](../../mfc/reference/cmfcribbonbar-class.md#addcontextcategory).
 
-##  <a name="getrighttabx"></a>  CMFCRibbonContextCaption::GetRightTabX
+## <a name="getrighttabx"></a> CMFCRibbonContextCaption::GetRightTabX
 
 Retrieves the position of the right-hand edge of the category’s ribbon tab.
 

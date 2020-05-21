@@ -57,7 +57,7 @@ The following code demonstrates how to enumerate all files in the current direct
 
 **Header:** afxinet.h
 
-##  <a name="cftpfilefind"></a>  CFtpFileFind::CFtpFileFind
+## <a name="cftpfilefind"></a> CFtpFileFind::CFtpFileFind
 
 This member function is called to construct a `CFtpFileFind` object.
 
@@ -83,7 +83,7 @@ The default value for *dwContext* is sent by MFC to the `CFtpFileFind` object fr
 
   See the example in the class overview earlier in this topic.
 
-##  <a name="findfile"></a>  CFtpFileFind::FindFile
+## <a name="findfile"></a> CFtpFileFind::FindFile
 
 Call this member function to find an FTP file.
 
@@ -123,7 +123,7 @@ After calling `FindFile` to retrieve the first FTP file, you can call [FindNextF
 
   See the earlier example in this topic.
 
-##  <a name="findnextfile"></a>  CFtpFileFind::FindNextFile
+## <a name="findnextfile"></a> CFtpFileFind::FindNextFile
 
 Call this member function to continue a file search begun with a call to the [FindFile](#findfile) member function.
 
@@ -145,7 +145,7 @@ You must call this function at least once before calling any attribute function 
 
   See the example earlier in this topic.
 
-##  <a name="getfileurl"></a>  CFtpFileFind::GetFileURL
+## <a name="getfileurl"></a> CFtpFileFind::GetFileURL
 
 Call this member function to get the URL of the specified file.
 

@@ -10,7 +10,7 @@ ms.assetid: cc70e585-362a-4007-81db-c705eb181226
 This class provides methods useful when constructing a list of heap pointers.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -51,7 +51,7 @@ This class provides a constructor and derives methods from [CAtlList](../../atl/
 
 **Header:** atlcoll.h
 
-##  <a name="cheapptrlist"></a>  CHeapPtrList::CHeapPtrList
+## <a name="cheapptrlist"></a> CHeapPtrList::CHeapPtrList
 
 The constructor.
 

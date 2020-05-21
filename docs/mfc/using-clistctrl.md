@@ -1,7 +1,6 @@
 ---
 title: "Using CListCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CListCtrl"]
 helpviewer_keywords: ["CListCtrl class [MFC], using"]
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
 ---
@@ -14,7 +13,7 @@ In some views, users can drag icons to different positions or edit icon labels. 
 For related information, see [About List-View Controls](/windows/win32/Controls/list-view-controls-overview) in the Windows SDK.
 
 > [!NOTE]
->  The Windows SDK refers to list controls as "list view controls." This usage of "view" does not refer to MFC view classes, particularly `CListView`. For more information, see [List Control and List View](../mfc/list-control-and-list-view.md).
+> The Windows SDK refers to list controls as "list view controls." This usage of "view" does not refer to MFC view classes, particularly `CListView`. For more information, see [List Control and List View](../mfc/list-control-and-list-view.md).
 
 ## What do you want to know more about
 

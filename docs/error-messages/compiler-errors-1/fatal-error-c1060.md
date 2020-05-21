@@ -31,4 +31,4 @@ The operating system or run-time library cannot fill a request for memory.
 
 1. Eliminate unused declarations.
 
-9. Split the current file into smaller files.
+1. Split the current file into smaller files.

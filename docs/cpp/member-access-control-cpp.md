@@ -39,7 +39,7 @@ The default access is **private** in a class, and **public** in a struct or unio
 Access control helps prevent you from using objects in ways they were not intended to be used. This protection is lost when explicit type conversions (casts) are performed.
 
 > [!NOTE]
->  Access control is equally applicable to all names: member functions, member data, nested classes, and enumerators.
+> Access control is equally applicable to all names: member functions, member data, nested classes, and enumerators.
 
 ## Access Control in Derived Classes
 
@@ -140,7 +140,7 @@ Note that members declared as having private access are not accessible to functi
 A **union** type cannot have a base class.
 
 > [!NOTE]
->  When specifying a private base class, it is advisable to explicitly use the **private** keyword so users of the derived class understand the member access.
+> When specifying a private base class, it is advisable to explicitly use the **private** keyword so users of the derived class understand the member access.
 
 ## Access control and static members
 
@@ -219,7 +219,7 @@ int main()
 In the preceding example, calling the virtual function `GetState` using a pointer to type `VFuncBase` calls `VFuncDerived::GetState`, and `GetState` is treated as public. However, calling `GetState` using a pointer to type `VFuncDerived` is an access-control violation because `GetState` is declared private in class `VFuncDerived`.
 
 > [!CAUTION]
->  The virtual function `GetState` can be called using a pointer to the base class `VFuncBase`. This does not mean that the function called is the base-class version of that function.
+> The virtual function `GetState` can be called using a pointer to the base class `VFuncBase`. This does not mean that the function called is the base-class version of that function.
 
 ## Access control with multiple inheritance
 

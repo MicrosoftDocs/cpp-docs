@@ -32,10 +32,10 @@ Exiting a `try-finally` statement using a `return` statement or the `longjmp` ru
 The termination handler is not called if a process is killed while executing a `try-finally` statement.
 
 > [!NOTE]
->  Structured exception handling works with C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, the C++ exception handling mechanism is much more flexible, in that it can handle exceptions of any type.
+> Structured exception handling works with C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, the C++ exception handling mechanism is much more flexible, in that it can handle exceptions of any type.
 
 > [!NOTE]
->  For C++ programs, C++ exception handling should be used instead of structured exception handling. For more information, see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md) in the *C++ Language Reference*.
+> For C++ programs, C++ exception handling should be used instead of structured exception handling. For more information, see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md) in the *C++ Language Reference*.
 
 See the example for the [try-except statement](../c-language/try-except-statement-c.md) to see how the `try-finally` statement works.
 

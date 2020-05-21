@@ -42,7 +42,7 @@ A full toolbar bitmap consists of small toolbar images (buttons) of a fixed size
 
 **Header:** afxtoolbar.h
 
-##  <a name="m_uicoldresid"></a>  CMFCToolBarInfo::m_uiColdResID
+## <a name="m_uicoldresid"></a> CMFCToolBarInfo::m_uiColdResID
 
 Specifies a resource ID for all the regular button images of a toolbar.
 
@@ -50,7 +50,7 @@ Specifies a resource ID for all the regular button images of a toolbar.
 UINT m_uiColdResID;
 ```
 
-##  <a name="m_uidisabledresid"></a>  CMFCToolBarInfo::m_uiDisabledResID
+## <a name="m_uidisabledresid"></a> CMFCToolBarInfo::m_uiDisabledResID
 
 Specifies a resource ID for the button-unavailable images of a toolbar.
 
@@ -58,7 +58,7 @@ Specifies a resource ID for the button-unavailable images of a toolbar.
 UINT m_uiDisabledResID;
 ```
 
-##  <a name="m_uihotresid"></a>  CMFCToolBarInfo::m_uiHotResID
+## <a name="m_uihotresid"></a> CMFCToolBarInfo::m_uiHotResID
 
 Specifies a resource ID for all the highlighted button images of a toolbar.
 
@@ -66,7 +66,7 @@ Specifies a resource ID for all the highlighted button images of a toolbar.
 UINT m_uiHotResID
 ```
 
-##  <a name="m_uilargecoldresid"></a>  CMFCToolBarInfo::m_uiLargeColdResID
+## <a name="m_uilargecoldresid"></a> CMFCToolBarInfo::m_uiLargeColdResID
 
 Specifies a resource ID for all the large regular button images of a toolbar.
 
@@ -74,7 +74,7 @@ Specifies a resource ID for all the large regular button images of a toolbar.
 UINT m_uiLargeColdResID
 ```
 
-##  <a name="m_uilargedisabledresid"></a>  CMFCToolBarInfo::m_uiLargeDisabledResID
+## <a name="m_uilargedisabledresid"></a> CMFCToolBarInfo::m_uiLargeDisabledResID
 
 Specifies a resource ID for all the large disabled button images of a toolbar.
 
@@ -82,7 +82,7 @@ Specifies a resource ID for all the large disabled button images of a toolbar.
 UINT m_uiLargeDisabledResID;
 ```
 
-##  <a name="m_uilargehotresid"></a>  CMFCToolBarInfo::m_uiLargeHotResID
+## <a name="m_uilargehotresid"></a> CMFCToolBarInfo::m_uiLargeHotResID
 
 Specifies a resource ID for all the large highlighted images of a toolbar.
 
@@ -90,7 +90,7 @@ Specifies a resource ID for all the large highlighted images of a toolbar.
 UINT m_uiLargeHotResID;
 ```
 
-##  <a name="m_uimenudisabledresid"></a>  CMFCToolBarInfo::m_uiMenuDisabledResID
+## <a name="m_uimenudisabledresid"></a> CMFCToolBarInfo::m_uiMenuDisabledResID
 
 Specifies a resource ID for the command-unavailable images of a toolbar.
 
@@ -98,7 +98,7 @@ Specifies a resource ID for the command-unavailable images of a toolbar.
 UINT m_uiMenuDisabledResID;
 ```
 
-##  <a name="m_uimenuresid"></a>  CMFCToolBarInfo::m_uiMenuResID
+## <a name="m_uimenuresid"></a> CMFCToolBarInfo::m_uiMenuResID
 
 Specifies a resource ID for all the regular menu item images of a toolbar.
 

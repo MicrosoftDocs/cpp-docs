@@ -11,7 +11,7 @@ ANSI X3.159-1989, *American National Standard for Information Systems* - *Progra
 This section follows the same order as the ANSI section. Each item covered includes references to the ANSI that explains the implementation-defined behavior.
 
 > [!NOTE]
->  This section describes the U.S. English-language version of the C compiler only. Implementations of Microsoft C for other languages may differ slightly.
+> This section describes the U.S. English-language version of the C compiler only. Implementations of Microsoft C for other languages may differ slightly.
 
 ## See also
 

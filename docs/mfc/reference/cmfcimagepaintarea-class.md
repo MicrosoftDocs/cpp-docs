@@ -63,7 +63,7 @@ The following example demonstrates how to construct an object of the `CMFCImageP
 
 **Header:** afximagepaintarea.h
 
-##  <a name="cmfcimagepaintarea"></a>  CMFCImagePaintArea::CMFCImagePaintArea
+## <a name="cmfcimagepaintarea"></a> CMFCImagePaintArea::CMFCImagePaintArea
 
 Constructs a `CMFCImagePaintArea` object.
 
@@ -78,7 +78,7 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
 |Parameter|Description|
 |*pParentDlg*|[in] A pointer to the dialog box that is the parent of the image editor.|
 
-##  <a name="getmode"></a>  CMFCImagePaintArea::GetMode
+## <a name="getmode"></a> CMFCImagePaintArea::GetMode
 
 Retrieves the current drawing mode.
 
@@ -90,11 +90,11 @@ IMAGE_EDIT_MODE GetMode() const;
 
 An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value that specifies the current drawing mode.
 
-##  <a name="setbitmap"></a>  CMFCImagePaintArea::SetBitmap
+## <a name="setbitmap"></a> CMFCImagePaintArea::SetBitmap
 
 Sets the bitmap image for the picture area.
 
-```
+```cpp
 void SetBitmap(CBitmap* pBitmap);
 ```
 
@@ -109,11 +109,11 @@ void SetBitmap(CBitmap* pBitmap);
 
 If *pBitmap* is NULL, this method sets the size of the modifiable paint area to zero. Otherwise, it sets the size of the modifiable paint area to the size of the provided bitmap image.
 
-##  <a name="setcolor"></a>  CMFCImagePaintArea::SetColor
+## <a name="setcolor"></a> CMFCImagePaintArea::SetColor
 
 Sets the current drawing color.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -130,11 +130,11 @@ When you select a color from the image editor palette bar or color picker, the f
 
 The drawing color is used by the image editor dialog box for all drawing modes except for IMAGE_EDIT_MODE_COLOR. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](cmfcimagepaintarea-image-edit-mode-enumeration.md).
 
-##  <a name="setmode"></a>  CMFCImagePaintArea::SetMode
+## <a name="setmode"></a> CMFCImagePaintArea::SetMode
 
 Sets the current drawing mode.
 
-```
+```cpp
 void SetMode(IMAGE_EDIT_MODE mode);
 ```
 

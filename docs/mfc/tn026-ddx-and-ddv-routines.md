@@ -201,11 +201,11 @@ Each field is delimited by a ';' character. The fields and their purpose are des
 
   *arg* is followed by 1 or 2 DDV args:
 
-   - *promptN*
+  - *promptN*
 
       String to place above the edit item (with & for accelerator).
 
-   - *fmtN*
+  - *fmtN*
 
       Format character for the arg type, one of:
 

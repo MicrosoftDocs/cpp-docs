@@ -29,7 +29,7 @@ The following example imports the type library of an external COM server (`MSCAL
 [!code-cpp[NVC_ATL_Windowing#141](../atl/codesnippet/cpp/supporting-idispeventimpl_1.h)]
 
 > [!NOTE]
->  You must have a separate `#import` statement for each external type library you will support.
+> You must have a separate `#import` statement for each external type library you will support.
 
 ## Declaring the IDispEventImpl Interfaces
 

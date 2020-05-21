@@ -1,7 +1,6 @@
 ---
 title: "Unicode Stream I/O in Text and Binary Modes"
 ms.date: "11/04/2016"
-f1_keywords: ["c.io"]
 helpviewer_keywords: ["stream I/O routines", "I/O [CRT], unicode stream", "Unicode, stream I/O routines", "Unicode stream I/O"]
 ms.assetid: 68be0c3e-a9e6-4fd5-b34a-1b5207f0e7d6
 ---

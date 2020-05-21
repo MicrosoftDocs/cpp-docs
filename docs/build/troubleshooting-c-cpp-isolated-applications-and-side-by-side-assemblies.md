@@ -16,7 +16,7 @@ If an application fails to load because it has a manifest that specifies a depen
 
 - The system cannot execute the specified program.
 
-If your application has no manifest and depends on a DLL that Windows can’t find in the typical search locations, an error message that resembles this one might be displayed:
+If your application has no manifest and depends on a DLL that Windows can't find in the typical search locations, an error message that resembles this one might be displayed:
 
 - This application has failed to start because *a required DLL* was not found. Re-installing the application may fix this problem.
 

@@ -19,11 +19,11 @@ This topic explains how the `AddNew`, `Edit`, and `Delete` member functions of c
 - [How Deleting Records Works](#_core_deleting_a_record)
 
 > [!NOTE]
->  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 As a supplement, you might want to read [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md), which describes the corresponding role of RFX in update operations.
 
-##  <a name="_core_adding_a_record"></a> Adding a Record
+## <a name="_core_adding_a_record"></a> Adding a Record
 
 Adding a new record to a recordset involves calling the recordset's [AddNew](../../mfc/reference/crecordset-class.md#addnew) member function, setting the values of the new record's field data members, and calling the [Update](../../mfc/reference/crecordset-class.md#update) member function to write the record to the data source.
 
@@ -61,7 +61,7 @@ To commit your changes, you call `Update`. When you call `Update` for the new re
    > [!TIP]
    > To detect when recordset data members change value, MFC uses a PSEUDO_NULL value appropriate to each data type that you can store in a recordset. If you must explicitly set a field to the PSEUDO_NULL value and the field happens already to be marked Null, you must also call `SetFieldNull`, passing the address of the field in the first parameter and FALSE in the second parameter.
 
-##  <a name="_core_visibility_of_added_records"></a> Visibility of Added Records
+## <a name="_core_visibility_of_added_records"></a> Visibility of Added Records
 
 When is an added record visible to your recordset? Added records sometimes show up and sometimes are not visible, depending on two things:
 
@@ -71,7 +71,7 @@ When is an added record visible to your recordset? Added records sometimes show 
 
 If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to add records. With `::SQLSetPos`, added records are visible to any updatable MFC recordset. Without support for the function, added records are not visible and you must call `Requery` to see them. Using `::SQLSetPos` is also more efficient.
 
-##  <a name="_core_editing_an_existing_record"></a> Editing an Existing Record
+## <a name="_core_editing_an_existing_record"></a> Editing an Existing Record
 
 Editing an existing record in a recordset involves scrolling to the record, calling the recordset's [Edit](../../mfc/reference/crecordset-class.md#edit) member function, setting the values of the new record's field data members, and calling the [Update](../../mfc/reference/crecordset-class.md#update) member function to write the changed record to the data source.
 
@@ -108,7 +108,7 @@ When you call `Update` for the edited record:
    > [!TIP]
    > If you call `AddNew` or `Edit` after having called either function previously but before you call `Update`, the edit buffer is refreshed with the stored record, replacing the new or edited record in progress. This behavior gives you a way to abort an `AddNew` or `Edit` and begin a new one: if you determine that the record-in-progress is faulty, simply call `Edit` or `AddNew` again.
 
-##  <a name="_core_deleting_a_record"></a> Deleting a Record
+## <a name="_core_deleting_a_record"></a> Deleting a Record
 
 Deleting a record from a recordset involves scrolling to the record and calling the recordset's [Delete](../../mfc/reference/crecordset-class.md#delete) member function. Unlike `AddNew` and `Edit`, `Delete` does not require a matching call to `Update`.
 

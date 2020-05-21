@@ -31,7 +31,7 @@ By definition, a class that provides the following static functions is a copy po
 You can replace the types `DestinationType` and *SourceType* with arbitrary data types for each copy policy.
 
 > [!NOTE]
->  Although you can define copy policy classes for any arbitrary data types, use of the classes in ATL code should limit the types that make sense. For example, when using a copy policy class with ATL's collection or enumerator implementations, `DestinationType` must be a type that can be used as a parameter in a COM interface method.
+> Although you can define copy policy classes for any arbitrary data types, use of the classes in ATL code should limit the types that make sense. For example, when using a copy policy class with ATL's collection or enumerator implementations, `DestinationType` must be a type that can be used as a parameter in a COM interface method.
 
 Use **init** to initialize data, **copy** to copy data, and **destroy** to free the data. The precise meaning of initialization, copying, and destruction are the domain of the copy policy class and will vary depending on the data types involved.
 

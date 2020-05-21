@@ -36,7 +36,7 @@ Section                                                  | Description
 [SafeInt](../safeint/safeint-class.md)                   | The `SafeInt` class.
 [SafeIntException](../safeint/safeintexception-class.md) | The exception class specific to the SafeInt library.
 
-## <a name="safeadd"></a>SafeAdd
+## <a name="safeadd"></a> SafeAdd
 
 Adds two numbers in a way that protects against overflow.
 
@@ -64,7 +64,7 @@ inline bool SafeAdd (
 
 **true** if no error occurs; **false** if an error occurs.
 
-## <a name="safecast"></a>SafeCast
+## <a name="safecast"></a> SafeCast
 
 Casts one type of number to another type.
 
@@ -88,7 +88,7 @@ inline bool SafeCast (
 
 **true** if no error occurs; **false** if an error occurs.
 
-## <a name="safedivide"></a>SafeDivide
+## <a name="safedivide"></a> SafeDivide
 
 Divides two numbers in a way that protects against dividing by zero.
 
@@ -116,7 +116,7 @@ inline bool SafeDivide (
 
 **true** if no error occurs; **false** if an error occurs.
 
-## <a name="safeequals"></a>SafeEquals
+## <a name="safeequals"></a> SafeEquals
 
 Compares two numbers to determine whether they are equal.
 
@@ -144,7 +144,7 @@ inline bool SafeEquals (
 
 The method enhances `==` because `SafeEquals` enables you to compare two different types of numbers.
 
-## <a name="safegreaterthan"></a>SafeGreaterThan
+## <a name="safegreaterthan"></a> SafeGreaterThan
 
 Compares two numbers.
 
@@ -172,7 +172,7 @@ inline bool SafeGreaterThan (
 
 `SafeGreaterThan` extends the regular comparison operator by enabling you to compare two different types of numbers.
 
-## <a name="safegreaterthanequals"></a>SafeGreaterThanEquals
+## <a name="safegreaterthanequals"></a> SafeGreaterThanEquals
 
 Compares two numbers.
 
@@ -200,7 +200,7 @@ inline bool SafeGreaterThanEquals (
 
 `SafeGreaterThanEquals` enhances the standard comparison operator because it enables you to compare two different types of numbers.
 
-## <a name="safelessthan"></a>SafeLessThan
+## <a name="safelessthan"></a> SafeLessThan
 
 Determines whether one number is less than another.
 
@@ -228,7 +228,7 @@ inline bool SafeLessThan (
 
 This method enhances the standard comparison operator because `SafeLessThan` enables you to compare two different types of number.
 
-## <a name="safelessthanequals"></a>SafeLessThanEquals
+## <a name="safelessthanequals"></a> SafeLessThanEquals
 
 Compares two numbers.
 
@@ -256,7 +256,7 @@ inline bool SafeLessThanEquals (
 
 `SafeLessThanEquals` extends the regular comparison operator by enabling you to compare two different types of numbers.
 
-## <a name="safemodulus"></a>SafeModulus
+## <a name="safemodulus"></a> SafeModulus
 
 Performs the modulus operation on two numbers.
 
@@ -284,7 +284,7 @@ inline bool SafeModulus (
 
 **true** if no error occurs; **false** if an error occurs.
 
-## <a name="safemultiply"></a>SafeMultiply
+## <a name="safemultiply"></a> SafeMultiply
 
 Multiplies two numbers together in a way that protects against overflow.
 
@@ -312,7 +312,7 @@ inline bool SafeMultiply (
 
 `true` if no error occurs; `false` if an error occurs.
 
-## <a name="safenotequals"></a>SafeNotEquals
+## <a name="safenotequals"></a> SafeNotEquals
 
 Determines if two numbers are not equal.
 
@@ -340,7 +340,7 @@ inline bool SafeNotEquals (
 
 The method enhances `!=` because `SafeNotEquals` enables you to compare two different types of numbers.
 
-## <a name="safesubtract"></a>SafeSubtract
+## <a name="safesubtract"></a> SafeSubtract
 
 Subtracts two numbers in a way that protects against overflow.
 

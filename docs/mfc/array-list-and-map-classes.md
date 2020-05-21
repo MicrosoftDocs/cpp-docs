@@ -1,7 +1,6 @@
 ---
 title: "Array, List, and Map Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.mfc"]
 helpviewer_keywords: ["arrays [MFC], classes", "list classes [MFC]", "collection classes [MFC], maps", "map classes [MFC]", "collection classes [MFC], lists"]
 ms.assetid: 81a13a7f-0c2c-4efd-b6bb-b4e624a0743d
 ---

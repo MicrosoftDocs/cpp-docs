@@ -1,7 +1,7 @@
 ---
 title: "/HEAP (Set Heap Size)"
 ms.date: "11/04/2016"
-f1_keywords: ["VC.Project.VCLinkerTool.HeapCommitSize", "/heap", "VC.Project.VCLinkerTool.HeapReserveSize"]
+f1_keywords: ["VC.Project.VCLinkerTool.HeapCommitSize", "VC.Project.VCLinkerTool.HeapReserveSize"]
 helpviewer_keywords: ["-HEAP linker option", "heap allocation, setting heap size", "/HEAP linker option", "HEAP linker option"]
 ms.assetid: a3f71927-7f1d-492c-9fdb-dfccb1a043da
 ---

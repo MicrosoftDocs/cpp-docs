@@ -1,7 +1,6 @@
 ---
 title: "Menus and Resources: Server Additions"
 ms.date: "11/04/2016"
-f1_keywords: ["IDP_OLE_INIT_FAILED"]
 helpviewer_keywords: ["OLE visual editing servers [MFC]", "accelerator tables [MFC], server applications", "visual editing [MFC], application menus and resources", "server applications [MFC], accelerator table", "string tables [MFC], visual editing applications", "servers [MFC], menu additions", "resources [MFC], server applications", "OLE server applications [MFC], menus and resources", "string editing [MFC], visual editing applications", "IDP_OLE_INIT_FAILED macro [MFC]", "server applications [MFC], OLE menus and resources", "OLE initialization failure [MFC]"]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
 ---
@@ -21,7 +20,7 @@ Topics covered in this article include:
 
 - [Miniserver Additions](#_core_mini.2d.server_additions)
 
-##  <a name="_core_server_menu_additions"></a> Server Menu Additions
+## <a name="_core_server_menu_additions"></a> Server Menu Additions
 
 Server (component) applications must have menu resources added to support OLE visual editing. The menus used when the application is run in stand-alone mode do not have to be changed, but you must add two new menu resources before building the application: one to support in-place activation and one to support the server being fully open. Both menu resources are used by full- and miniserver applications.
 
@@ -31,7 +30,7 @@ Server (component) applications must have menu resources added to support OLE vi
 
 In addition to the changes listed in this article, your resource file needs to include AFXOLESV.RC, which is required for the Microsoft Foundation Class Library implementation. This file is in the MFC\Include subdirectory.
 
-##  <a name="_core_server_application_accelerator_table_additions"></a> Server Application Accelerator Table Additions
+## <a name="_core_server_application_accelerator_table_additions"></a> Server Application Accelerator Table Additions
 
 Two new accelerator table resources must be added to server applications; they correspond directly to the new menu resources previously described. The first accelerator table is used when the server application is activated in place. It consists of all the entries in the view's accelerator table except those tied to the File and Window menus.
 
@@ -39,7 +38,7 @@ The second table is nearly an exact copy of the view's accelerator table. Any di
 
 For an example of these accelerator table changes, compare the IDR_HIERSVRTYPE_SRVR_IP and IDR_HIERSVRTYPE_SRVR_EMB accelerator tables with IDR_MAINFRAME in the HIERSVR.RC file included in the MFC OLE sample [HIERSVR](../overview/visual-cpp-samples.md). The File and Window accelerators are missing from the in-place table and exact copies of them are in the embedded table.
 
-##  <a name="_core_string_table_additions_for_server_applications"></a> String Table Additions for Server Applications
+## <a name="_core_string_table_additions_for_server_applications"></a> String Table Additions for Server Applications
 
 Only one string table addition is necessary in a server application — a string to signify that the OLE initialization failed. As an example, here is the string-table entry that the application wizard generates:
 
@@ -47,7 +46,7 @@ Only one string table addition is necessary in a server application — a string
 |--------|------------|
 |IDP_OLE_INIT_FAILED|OLE initialization failed. Make sure that the OLE libraries are the correct version.|
 
-##  <a name="_core_mini.2d.server_additions"></a> Miniserver Additions
+## <a name="_core_mini.2d.server_additions"></a> Miniserver Additions
 
 The same additions apply for miniservers as those listed above for full-servers. Because a miniserver cannot be run in stand-alone mode, its main menu is much smaller. The main menu created by the application wizard has only a File menu, containing only the items Exit and About. Embedded and in-place menus and accelerators for miniservers are the same as those for full-servers.
 

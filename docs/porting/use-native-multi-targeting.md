@@ -6,15 +6,15 @@ ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
 ---
 # Use native multi-targeting in Visual Studio to build old projects
 
-Normally, we recommend that you update your projects when you install the latest version of Visual Studio. The cost of updating your projects and code is usually more than offset by the benefits of the new IDE, compiler, libraries, and tools. However, we know that you may not be able to update some projects. You may have binaries that are tied to older libraries or platforms that for maintenance reasons you can’t upgrade. Your code may use non-standard language constructs that would break if you moved to a more recent compiler. Your code might rely on 3rd party libraries compiled for a specific version of Visual C++. Or you may produce libraries for others that must target a specific older version of Visual C++.
+Normally, we recommend that you update your projects when you install the latest version of Visual Studio. The cost of updating your projects and code is usually more than offset by the benefits of the new IDE, compiler, libraries, and tools. However, we know that you may not be able to update some projects. You may have binaries that are tied to older libraries or platforms that for maintenance reasons you can't upgrade. Your code may use non-standard language constructs that would break if you moved to a more recent compiler. Your code might rely on 3rd party libraries compiled for a specific version of Visual C++. Or you may produce libraries for others that must target a specific older version of Visual C++.
 
 Fortunately, you can use Visual Studio 2017 and Visual Studio 2015 to build projects that target older compiler toolsets and libraries. You don't have to upgrade a Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, or Visual Studio 2015 project to take advantage of new features in the IDE:
 
-  - New C++ refactoring capabilities and editor experimental features
-  - New Diagnostics tools debugger window and Error List window
-  - Revamped breakpoints, exceptions window and new PerfTips
-  - New code navigation and search tools
-  - New C++ Quick fixes and the Productivity Power Tools extensions.
+- New C++ refactoring capabilities and editor experimental features
+- New Diagnostics tools debugger window and Error List window
+- Revamped breakpoints, exceptions window and new PerfTips
+- New code navigation and search tools
+- New C++ Quick fixes and the Productivity Power Tools extensions.
 
 You can also target Visual Studio 2008 projects, but they can't be used unchanged. For details, see the **Instructions for Visual Studio 2008** section.
 

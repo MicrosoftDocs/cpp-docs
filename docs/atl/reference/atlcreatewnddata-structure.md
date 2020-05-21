@@ -11,7 +11,7 @@ This structure contains class instance data in windowing code in ATL.
 
 ## Syntax
 
-```
+```cpp
     struct _AtlCreateWndData{
     void* m_pThis;
     DWORD m_dwThreadID;

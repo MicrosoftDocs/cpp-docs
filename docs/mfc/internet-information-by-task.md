@@ -19,7 +19,7 @@ The following categories of tasks are listed in this topic:
 
 ## What do you want to do
 
-###  <a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a> ActiveX Controls, Documents and Asynchronous Moniker Tasks
+### <a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a> ActiveX Controls, Documents and Asynchronous Moniker Tasks
 
 - [Learn about Asynchronous Monikers](../mfc/asynchronous-monikers-on-the-internet.md)
 
@@ -27,7 +27,7 @@ The following categories of tasks are listed in this topic:
 
 - [Optimize an ActiveX control](../mfc/mfc-activex-controls-optimization.md)
 
-###  <a name="_core_wininet_tasks"></a> WinInet Tasks
+### <a name="_core_wininet_tasks"></a> WinInet Tasks
 
 - [Learn about WinInet, the Win32 API functions for Internet access](../mfc/wininet-basics.md)
 

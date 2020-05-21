@@ -18,7 +18,7 @@ The following styles affect the "3D" aspect of the toolbar buttons and the place
 - **TBSTYLE_LIST** Places button text to the right of button bitmaps.
 
 > [!NOTE]
->  To prevent repaint problems, the **TBSTYLE_FLAT** and **TBSTYLE_TRANSPARENT** styles should be set before the toolbar object is visible.
+> To prevent repaint problems, the **TBSTYLE_FLAT** and **TBSTYLE_TRANSPARENT** styles should be set before the toolbar object is visible.
 
 The following styles determine if the toolbar allows a user to reposition individual buttons within a toolbar object using drag and drop:
 

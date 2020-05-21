@@ -41,7 +41,7 @@ The [SafeInt class](../safeint/safeint-class.md) is the only class that uses the
 
 **Namespace:** msl::utilities
 
-## <a name="safeintexception"></a>SafeIntException::SafeIntException
+## <a name="safeintexception"></a> SafeIntException::SafeIntException
 
 Creates a `SafeIntException` object.
 

@@ -19,7 +19,7 @@ MFC uses an object of the `CArchive` class as an intermediary between the object
 A `CArchive` object uses overloaded insertion (**<\<**) and extraction (**>>**) operators to perform writing and reading operations. For more information, see [Storing and Loading CObjects via an Archive](../mfc/storing-and-loading-cobjects-via-an-archive.md) in the article Serialization: Serializing an Object.
 
 > [!NOTE]
->  Do not confuse the `CArchive` class with general-purpose iostream classes, which are for formatted text only. The `CArchive` class is for binary-format serialized objects.
+> Do not confuse the `CArchive` class with general-purpose iostream classes, which are for formatted text only. The `CArchive` class is for binary-format serialized objects.
 
 If you want, you can bypass MFC serialization to create your own mechanism for persistent data storage. You will need to override the class member functions that initiate serialization at the user's command. See the discussion in [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) of the ID_FILE_OPEN, ID_FILE_SAVE, and ID_FILE_SAVE_AS standard commands.
 

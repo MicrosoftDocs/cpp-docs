@@ -78,7 +78,7 @@ IntelliSense fails in makefile projects when certain project settings or compile
 
    - Set the **Include Search Path** property to specify the list of directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project. See [/I (Additional Include Directories)](i-additional-include-directories.md), for more information.
 
-    - For projects that are built using CL.EXE from a Command Window, set the **INCLUDE** environment variable to specify directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project.
+   - For projects that are built using CL.EXE from a Command Window, set the **INCLUDE** environment variable to specify directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project.
 
    - Set the **Forced Includes** property to specify which header files to process when building your makefile project. See [/FI (Name Forced Include File)](fi-name-forced-include-file.md), for more information.
 

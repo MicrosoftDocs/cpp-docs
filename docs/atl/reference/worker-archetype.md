@@ -47,11 +47,11 @@ These template parameters expect the class to conform to this archetype:
 
 **Header:** atlutil.h
 
-## <a name="execute"></a>WorkerArchetype::Execute
+## <a name="execute"></a> WorkerArchetype::Execute
 
 Called to process a work item.
 
-```
+```cpp
 void Execute(
     RequestType request,
     void* pvWorkerParam,
@@ -72,6 +72,7 @@ A pointer to the [OVERLAPPED](/windows/win32/api/minwinbase/ns-minwinbase-overla
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 
 Called to initialize the worker object before any requests are passed to `WorkerArchetype::Execute`.
+
 ```
 BOOL Initialize(void* pvParam) throw();
 ```
@@ -101,7 +102,7 @@ This type must be used as the first parameter of `WorkerArchetype::Execute` and 
 
 Called to uninitialize the worker object after all requests have been passed to `WorkerArchetype::Execute`).
 
-```
+```cpp
 void Terminate(void* pvParam) throw();
 ```
 

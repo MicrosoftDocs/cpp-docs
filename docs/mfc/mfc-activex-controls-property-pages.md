@@ -38,7 +38,7 @@ For more information on using property pages in an ActiveX control, see the foll
 
 For information on using property sheets in an MFC application other than an ActiveX control, see [Property Sheets](../mfc/property-sheets-mfc.md).
 
-##  <a name="_core_implementing_the_default_property_page"></a> Implementing the Default Property Page
+## <a name="_core_implementing_the_default_property_page"></a> Implementing the Default Property Page
 
 If you use the ActiveX Control Wizard to create your control project, the ActiveX Control Wizard provides a default property page class for the control derived from [COlePropertyPage Class](../mfc/reference/colepropertypage-class.md). Initially, this property page is blank, but you can add any dialog box control or set of controls to it. Because the ActiveX Control Wizard creates only one property page class by default, additional property page classes (also derived from `COlePropertyPage`) must be created using Class View. For more information on this procedure, see [MFC ActiveX Controls: Adding Another Custom Property Page](../mfc/mfc-activex-controls-adding-another-custom-property-page.md).
 
@@ -54,7 +54,7 @@ Implementing a property page (in this case, the default) is a three-step process
 
 For example purposes, the following procedures use a simple control (named "Sample"). Sample was created using the ActiveX Control Wizard and contains only the stock Caption property.
 
-##  <a name="_core_adding_controls_to_a_property_page"></a> Adding Controls to a Property Page
+## <a name="_core_adding_controls_to_a_property_page"></a> Adding Controls to a Property Page
 
 #### To add controls to a property page
 
@@ -74,7 +74,7 @@ For example purposes, the following procedures use a simple control (named "Samp
 
 Now that the user interface has been modified, you need to link the edit box with the Caption property. This is done in the following section by editing the `CSamplePropPage::DoDataExchange` function.
 
-##  <a name="_core_customizing_the_dodataexchange_function"></a> Customizing the DoDataExchange Function
+## <a name="_core_customizing_the_dodataexchange_function"></a> Customizing the DoDataExchange Function
 
 Your property page [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) function allows you to link property page values with the actual values of properties in the control. To establish links, you must map the appropriate property page fields to their respective control properties.
 

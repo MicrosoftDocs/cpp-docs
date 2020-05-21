@@ -14,7 +14,7 @@ This article covers the following topics:
 
 - [Try blocks inside catch blocks](#_core_try_blocks_inside_catch_blocks)
 
-##  <a name="_core_mixing_exception_keywords_and_macros"></a> Mixing Exception Keywords and Macros
+## <a name="_core_mixing_exception_keywords_and_macros"></a> Mixing Exception Keywords and Macros
 
 You can mix MFC exception macros and C++ exception keywords in the same program. But you cannot mix MFC macros with C++ exception keywords in the same block because the macros delete exception objects automatically when they go out of scope, whereas code using the exception-handling keywords does not. For more information, see the article [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
@@ -28,7 +28,7 @@ The problem occurs because `e` is deleted when execution passes out of the "inne
 
 [!code-cpp[NVC_MFCExceptions#11](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_2.cpp)]
 
-##  <a name="_core_try_blocks_inside_catch_blocks"></a> Try Blocks Inside Catch Blocks
+## <a name="_core_try_blocks_inside_catch_blocks"></a> Try Blocks Inside Catch Blocks
 
 You cannot re-throw the current exception from within a **try** block that is inside a **CATCH** block. The following example is invalid:
 

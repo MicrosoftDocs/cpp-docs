@@ -150,30 +150,30 @@ int main() {
 
 ### Public constructors
 
-|Name|Description| 
-|---------|-----------| 
-|[ptr::ptr](#ptr)|Constructs a `com::ptr` to wrap a COM object.| 
-|[ptr::~ptr](#tilde-ptr)|Destructs a `com::ptr`.| 
+|Name|Description|
+|---------|-----------|
+|[ptr::ptr](#ptr)|Constructs a `com::ptr` to wrap a COM object.|
+|[ptr::~ptr](#tilde-ptr)|Destructs a `com::ptr`.|
 
 ### Public methods
 
 |Name|Description|
-|---------|-----------| 
-|[ptr::Attach](#attach)|Attaches a COM object to a `com::ptr`.| 
-|[ptr::CreateInstance](#createInstance)|Creates an instance of a COM object within a `com::ptr`.| 
-|[ptr::Detach](#detach)|Gives up ownership of the COM object, returning a pointer to the object.| 
-|[ptr::GetInterface](#getInterface)|Creates an instance of a COM object within a `com::ptr`.| 
-|[ptr::QueryInterface](#queryInterface)|Queries the owned COM object for an interface and attaches the result to another `com::ptr`.| 
+|---------|-----------|
+|[ptr::Attach](#attach)|Attaches a COM object to a `com::ptr`.|
+|[ptr::CreateInstance](#createInstance)|Creates an instance of a COM object within a `com::ptr`.|
+|[ptr::Detach](#detach)|Gives up ownership of the COM object, returning a pointer to the object.|
+|[ptr::GetInterface](#getInterface)|Creates an instance of a COM object within a `com::ptr`.|
+|[ptr::QueryInterface](#queryInterface)|Queries the owned COM object for an interface and attaches the result to another `com::ptr`.|
 |[ptr::Release](#release)|Releases all owned references on the COM object.|
 
 ### Public operators
 
 |Name|Description|
-|---------|-----------| 
-|[ptr::operator-&gt;](#operator-arrow)|Member access operator, used to call methods on the owned COM object.| 
-|[ptr::operator=](#operator-assign)|Attaches a COM object to a `com::ptr`.| 
-|[ptr::operator&nbsp;bool](#operator-bool)|Operator for using `com::ptr` in a conditional expression.| 
-|[ptr::operator!](#operator-logical-not)|Operator to determine if the owned COM object is invalid.| 
+|---------|-----------|
+|[ptr::operator-&gt;](#operator-arrow)|Member access operator, used to call methods on the owned COM object.|
+|[ptr::operator=](#operator-assign)|Attaches a COM object to a `com::ptr`.|
+|[ptr::operator&nbsp;bool](#operator-bool)|Operator for using `com::ptr` in a conditional expression.|
+|[ptr::operator!](#operator-logical-not)|Operator to determine if the owned COM object is invalid.|
 
 ## Requirements
 
@@ -181,9 +181,7 @@ int main() {
 
 **Namespace** msclr::com
 
- 
-
-## <a name="ptr"></a>ptr::ptr
+## <a name="ptr"></a> ptr::ptr
 
 Returns a pointer to the owned COM object.
 
@@ -270,7 +268,7 @@ int main() {
 }
 ```
 
-## <a name="tilde-ptr"></a>ptr::~ptr
+## <a name="tilde-ptr"></a> ptr::~ptr
 
 Destructs a `com::ptr`.
 
@@ -345,7 +343,7 @@ int main() {
 }
 ```
 
-## <a name="attach"></a>ptr::Attach
+## <a name="attach"></a> ptr::Attach
 
 Attaches a COM object to a `com::ptr`.
 
@@ -446,7 +444,7 @@ int main() {
 }
 ```
 
-## <a name="createInstance"></a>ptr::CreateInstance
+## <a name="createInstance"></a> ptr::CreateInstance
 
 Creates an instance of a COM object within a `com::ptr`.
 
@@ -564,7 +562,7 @@ int main() {
 }
 ```
 
-## <a name="detach"></a>ptr::Detach
+## <a name="detach"></a> ptr::Detach
 
 Gives up ownership of the COM object, returning a pointer to the object.
 
@@ -669,7 +667,7 @@ int main() {
 }
 ```
 
-## <a name="getInterface"></a>ptr::GetInterface
+## <a name="getInterface"></a> ptr::GetInterface
 
 Returns a pointer to the owned COM object.
 
@@ -811,7 +809,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="queryInterface"></a>ptr::QueryInterface
+## <a name="queryInterface"></a> ptr::QueryInterface
 
 Queries the owned COM object for an interface and attaches the result to another `com::ptr`.
 
@@ -942,7 +940,7 @@ int main() {
 <#document>persnickety</#document>
 ```
 
-## <a name="release"></a>ptr::Release
+## <a name="release"></a> ptr::Release
 
 Releases all owned references on the COM object.
 
@@ -1030,7 +1028,7 @@ int main() {
 }
 ```
 
-## <a name="operator-arrow"></a>ptr::operator-&gt;
+## <a name="operator-arrow"></a> ptr::operator-&gt;
 
 Member access operator, used to call methods on the owned COM object.
 
@@ -1172,7 +1170,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="operator-assign"></a>ptr::operator=
+## <a name="operator-assign"></a> ptr::operator=
 
 Attaches a COM object to a `com::ptr`.
 
@@ -1348,7 +1346,7 @@ int main() {
 DOM Document created.
 ```
 
-## <a name="operator-logical-not"></a>ptr::operator!
+## <a name="operator-logical-not"></a> ptr::operator!
 
 Operator to determine if the owned COM object is invalid.
 

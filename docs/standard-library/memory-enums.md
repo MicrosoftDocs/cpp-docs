@@ -10,7 +10,7 @@ ms.assetid: b9be0a7b-0beb-40b2-8183-911de371c6b9
 
 The enumeration of possible values returned by `get_pointer_safety`.
 
-```
+```cpp
 class pointer_safety {
    relaxed,
    preferred,

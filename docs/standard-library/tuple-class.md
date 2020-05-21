@@ -11,7 +11,7 @@ Wraps a fixed-length sequence of elements.
 
 ## Syntax
 
-```
+```cpp
 class tuple {
    tuple();
    explicit tuple(P1, P2, ..., PN); // 0 < N

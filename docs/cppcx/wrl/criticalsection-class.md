@@ -49,7 +49,7 @@ Name                        | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="tilde-criticalsection"></a>CriticalSection::~CriticalSection
+## <a name="tilde-criticalsection"></a> CriticalSection::~CriticalSection
 
 Deinitializes and destroys the current `CriticalSection` object.
 
@@ -57,7 +57,7 @@ Deinitializes and destroys the current `CriticalSection` object.
 WRL_NOTHROW ~CriticalSection();
 ```
 
-## <a name="criticalsection"></a>CriticalSection::CriticalSection
+## <a name="criticalsection"></a> CriticalSection::CriticalSection
 
 Initializes a synchronization object that is similar to a mutex object, but can be used by only the threads of a single process.
 
@@ -76,7 +76,7 @@ The spin count for the critical section object. The default value is 0.
 
 For more information about critical sections and spincounts, see the `InitializeCriticalSectionAndSpinCount` function in the `Synchronization` section of the Windows API documenation.
 
-## <a name="cs"></a>CriticalSection::cs_
+## <a name="cs"></a> CriticalSection::cs_
 
 Declares a critical section data member.
 
@@ -88,7 +88,7 @@ CRITICAL_SECTION cs_;
 
 This data member is protected.
 
-## <a name="isvalid"></a>CriticalSection::IsValid
+## <a name="isvalid"></a> CriticalSection::IsValid
 
 Indicates whether the current critical section is valid.
 
@@ -100,7 +100,7 @@ bool IsValid() const;
 
 By default, always returns **true**.
 
-## <a name="lock"></a>CriticalSection::Lock
+## <a name="lock"></a> CriticalSection::Lock
 
 Waits for ownership of the specified critical section object. The function returns when the calling thread is granted ownership.
 
@@ -125,7 +125,7 @@ A lock object that can be used to unlock the current critical section.
 
 The first `Lock` function affects the current critical section object. The second `Lock` function affects a user-specified critical section.
 
-## <a name="trylock"></a>CriticalSection::TryLock
+## <a name="trylock"></a> CriticalSection::TryLock
 
 Attempts to enter a critical section without blocking. If the call is successful, the calling thread takes ownership of the critical section.
 

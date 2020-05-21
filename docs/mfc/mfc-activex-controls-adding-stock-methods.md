@@ -18,7 +18,7 @@ A stock method differs from a custom method in that it is already implemented by
 |`DoClick`|**DISP_STOCKPROP_DOCLICK( )**|Fires a Click event.|
 |`Refresh`|**DISP_STOCKPROP_REFRESH( )**|Immediately updates the control's appearance.|
 
-##  <a name="_core_adding_a_stock_method_using_classwizard"></a> Adding a Stock Method Using the Add Method Wizard
+## <a name="_core_adding_a_stock_method_using_classwizard"></a> Adding a Stock Method Using the Add Method Wizard
 
 Adding a stock method is simple using the [Add Method Wizard](../ide/add-method-wizard.md). The following procedure demonstrates adding the Refresh method to a control created using the MFC ActiveX Control Wizard.
 
@@ -38,7 +38,7 @@ Adding a stock method is simple using the [Add Method Wizard](../ide/add-method-
 
 1. Click **Finish**.
 
-##  <a name="_core_classwizard_changes_for_stock_methods"></a> Add Method Wizard Changes for Stock Methods
+## <a name="_core_classwizard_changes_for_stock_methods"></a> Add Method Wizard Changes for Stock Methods
 
 Because the stock Refresh method is supported by the control's base class, the **Add Method Wizard** does not change the control's class declaration in any way. It adds an entry for the method to the control's dispatch map and to its .IDL file. The following line is added to the control's dispatch map, located in its implementation (.CPP) file:
 

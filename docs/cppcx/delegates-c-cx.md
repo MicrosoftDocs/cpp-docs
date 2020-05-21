@@ -17,7 +17,7 @@ Delegates are most commonly used in conjunction with events. An event has a dele
 event PrimeFoundHandler^ primeFoundEvent;
 ```
 
-When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](/uwp/api/windows.foundation.typedeventhandler). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.
+When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](/uwp/api/windows.foundation.typedeventhandler-2). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.
 
 ## Consuming delegates
 

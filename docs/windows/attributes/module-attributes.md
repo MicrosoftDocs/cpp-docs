@@ -5,6 +5,7 @@ helpviewer_keywords: ["module attributes", "attributes [C++/CLI], reference topi
 ms.assetid: 46d135dc-613f-4810-90a4-e155ab8ed91a
 ---
 # Module Attributes
+
 The following attribute can only be applied to the [module](module-cpp.md) attribute.
 
 |Attribute|Description|

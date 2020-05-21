@@ -61,7 +61,7 @@ The following example demonstrates how to construct a `CMFCTabDropTarget` object
 
 **Header:** afxbasetabctrl.h
 
-##  <a name="ondragenter"></a>  CMFCTabDropTarget::OnDragEnter
+## <a name="ondragenter"></a> CMFCTabDropTarget::OnDragEnter
 
 Called by the framework when the user drags an object into a tab window.
 
@@ -103,7 +103,7 @@ This method returns DROPEFFECT_NONE if the toolbar framework is not in customiza
 
 For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).
 
-##  <a name="ondragleave"></a>  CMFCTabDropTarget::OnDragLeave
+## <a name="ondragleave"></a> CMFCTabDropTarget::OnDragLeave
 
 Called by the framework when the user drags an object outside of the tab window that has focus.
 
@@ -122,7 +122,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 
 This method calls the `CMFCBaseTabCtrl::OnDragLeave` method to perform the drag operation.
 
-##  <a name="ondragover"></a>  CMFCTabDropTarget::OnDragOver
+## <a name="ondragover"></a> CMFCTabDropTarget::OnDragOver
 
 Called by the framework when the user drags an object onto the tab window that has focus.
 
@@ -164,7 +164,7 @@ This method makes the tab that is under the cursor when a drag operation occurs 
 
 For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).
 
-##  <a name="ondropex"></a>  CMFCTabDropTarget::OnDropEx
+## <a name="ondropex"></a> CMFCTabDropTarget::OnDropEx
 
 Called by the framework when the user releases the mouse button at the end of a drag operation.
 
@@ -208,7 +208,7 @@ This method calls `CMFCBaseTabCtrl::OnDrop` if the toolbar framework is in custo
 
 For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).
 
-##  <a name="register"></a>  CMFCTabDropTarget::Register
+## <a name="register"></a> CMFCTabDropTarget::Register
 
 Registers the control as one that can be the target of an OLE drag-and-drop operation.
 

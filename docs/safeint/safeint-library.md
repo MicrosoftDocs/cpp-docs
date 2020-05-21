@@ -2,7 +2,6 @@
 title: "SafeInt Library"
 ms.custom: "index-page"
 ms.date: "03/19/2019"
-f1_keywords: ["SafeInt"]
 helpviewer_keywords: ["libraries, SafeInt", "SafeInt library"]
 ms.assetid: 5321e875-67c5-49d7-9650-85a876552d14
 ---

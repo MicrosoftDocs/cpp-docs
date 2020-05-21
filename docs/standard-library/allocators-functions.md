@@ -12,7 +12,7 @@ helpviewer_keywords: ["std::ALLOCATOR_DECL [C++]", "std::CACHE_CHUNKLIST [C++]",
 |[ALLOCATOR_DECL](#allocator_decl)|[CACHE_CHUNKLIST](#cache_chunklist)|[CACHE_FREELIST](#cache_freelist)|
 |[CACHE_SUBALLOC](#cache_suballoc)|[SYNC_DEFAULT](#sync_default)|
 
-## <a name="allocator_decl"></a>  ALLOCATOR_DECL
+## <a name="allocator_decl"></a> ALLOCATOR_DECL
 
 Yields an allocator class template.
 
@@ -52,7 +52,7 @@ public:
 };
 ```
 
-## <a name="cache_chunklist"></a>  CACHE_CHUNKLIST
+## <a name="cache_chunklist"></a> CACHE_CHUNKLIST
 
 Yields `stdext::allocators::cache_chunklist<sizeof(Type)>`.
 
@@ -62,7 +62,7 @@ Yields `stdext::allocators::cache_chunklist<sizeof(Type)>`.
 
 ### Remarks
 
-## <a name="cache_freelist"></a>  CACHE_FREELIST
+## <a name="cache_freelist"></a> CACHE_FREELIST
 
 Yields `stdext::allocators::cache_freelist<sizeof(Type), max>`.
 
@@ -72,7 +72,7 @@ Yields `stdext::allocators::cache_freelist<sizeof(Type), max>`.
 
 ### Remarks
 
-## <a name="cache_suballoc"></a>  CACHE_SUBALLOC
+## <a name="cache_suballoc"></a> CACHE_SUBALLOC
 
 Yields `stdext::allocators::cache_suballoc<sizeof(Type)>`.
 
@@ -82,7 +82,7 @@ Yields `stdext::allocators::cache_suballoc<sizeof(Type)>`.
 
 ### Remarks
 
-## <a name="sync_default"></a>  SYNC_DEFAULT
+## <a name="sync_default"></a> SYNC_DEFAULT
 
 Yields a synchronization filter.
 

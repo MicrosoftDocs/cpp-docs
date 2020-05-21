@@ -145,7 +145,6 @@ BigInt.Int[1] = 34, BigInt.Int[0] = 12
 
 **END Microsoft Specific**
 
-
 ## See also
 
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\

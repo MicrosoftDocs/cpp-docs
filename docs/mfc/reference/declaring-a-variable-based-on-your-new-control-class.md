@@ -29,9 +29,9 @@ Once you have created an MFC control class, you can declare a variable based on 
 
 1. In the **Control ID** list, pick the control that you added. The **Variable type** list should display the correct variable type, and the **Control type** box should display the correct control type.
 
-9. In the **Comment** box, add any comment you want to appear in your code.
+1. In the **Comment** box, add any comment you want to appear in your code.
 
-10. Click **OK**.
+1. Click **OK**.
 
 ## See also
 

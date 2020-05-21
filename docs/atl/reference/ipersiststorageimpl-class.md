@@ -10,7 +10,7 @@ ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
 This class implements the [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) interface.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -56,7 +56,7 @@ The implementation of this class requires class `T` to make an implementation of
 
 **Header:** atlcom.h
 
-##  <a name="getclassid"></a>  IPersistStorageImpl::GetClassID
+## <a name="getclassid"></a> IPersistStorageImpl::GetClassID
 
 Retrieves the object's CLSID.
 
@@ -68,7 +68,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 
 See [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.
 
-##  <a name="handsoffstorage"></a>  IPersistStorageImpl::HandsOffStorage
+## <a name="handsoffstorage"></a> IPersistStorageImpl::HandsOffStorage
 
 Instructs the object to release all storage objects and enter HandsOff mode.
 
@@ -84,7 +84,7 @@ Returns S_OK.
 
 See [IPersistStorage::HandsOffStorage](/windows/win32/api/objidl/nf-objidl-ipersiststorage-handsoffstorage) in the Windows SDK.
 
-##  <a name="initnew"></a>  IPersistStorageImpl::InitNew
+## <a name="initnew"></a> IPersistStorageImpl::InitNew
 
 Initializes a new storage.
 
@@ -98,7 +98,7 @@ The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/
 
 See [IPersistStorage:InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) in the Windows SDK.
 
-##  <a name="isdirty"></a>  IPersistStorageImpl::IsDirty
+## <a name="isdirty"></a> IPersistStorageImpl::IsDirty
 
 Checks whether the object's data has changed since it was last saved.
 
@@ -112,7 +112,7 @@ The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/
 
 See [IPersistStorage:IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) in the Windows SDK.
 
-##  <a name="load"></a>  IPersistStorageImpl::Load
+## <a name="load"></a> IPersistStorageImpl::Load
 
 Loads the object's properties from the specified storage.
 
@@ -126,7 +126,7 @@ The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/
 
 See [IPersistStorage:Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) in the Windows SDK.
 
-##  <a name="save"></a>  IPersistStorageImpl::Save
+## <a name="save"></a> IPersistStorageImpl::Save
 
 Saves the object's properties to the specified storage.
 
@@ -140,7 +140,7 @@ The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/
 
 See [IPersistStorage:Save](/windows/win32/api/objidl/nf-objidl-ipersiststorage-save) in the Windows SDK.
 
-##  <a name="savecompleted"></a>  IPersistStorageImpl::SaveCompleted
+## <a name="savecompleted"></a> IPersistStorageImpl::SaveCompleted
 
 Notifies an object that it can return to Normal mode to write to its storage object.
 

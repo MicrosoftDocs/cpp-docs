@@ -1,7 +1,7 @@
 ---
 title: "do-while Statement (C)"
 ms.date: "11/04/2016"
-f1_keywords: ["do", "while"]
+f1_keywords: ["do"]
 helpviewer_keywords: ["do-while keyword [C]"]
 ms.assetid: f2ac20a6-10c7-4a08-b5e3-c3b3639dbeaf
 ---

@@ -172,7 +172,7 @@ For argument matching, a function with *n* default arguments is treated as *n*+1
 The ellipsis (...) acts as a wildcard; it matches any actual argument. It can lead to many ambiguous sets, if you don't design your overloaded function sets with extreme care.
 
 > [!NOTE]
->  Ambiguity of overloaded functions can't be determined until a function call is encountered. At that point, the sets are built for each argument in the function call, and you can determine whether an unambiguous overload exists. This means that ambiguities can remain in your code until they are evoked by a particular function call.
+> Ambiguity of overloaded functions can't be determined until a function call is encountered. At that point, the sets are built for each argument in the function call, and you can determine whether an unambiguous overload exists. This means that ambiguities can remain in your code until they are evoked by a particular function call.
 
 ## Argument Type Differences
 
@@ -365,7 +365,7 @@ Both versions of `Func` require a user-defined conversion to convert type **int*
 Even though the second one requires both a standard conversion and the user-defined conversion, the two conversions are still considered equal.
 
 > [!NOTE]
->  User-defined conversions are considered conversion by construction or conversion by initialization (conversion function). Both methods are considered equal when considering the best match.
+> User-defined conversions are considered conversion by construction or conversion by initialization (conversion function). Both methods are considered equal when considering the best match.
 
 ## Argument matching and the this pointer
 

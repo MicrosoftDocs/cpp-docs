@@ -57,7 +57,7 @@ For more information on using property pages in an ActiveX control, see the foll
 
 1. In the **Dialog ID** box, select **IDD_PROPPAGE_NEWPAGE**.
 
-9. Click **Finish** to create the class.
+1. Click **Finish** to create the class.
 
 To allow the control's users access to this new property page, make the following changes to the control's property page IDs macro section (located in the control implementation file):
 

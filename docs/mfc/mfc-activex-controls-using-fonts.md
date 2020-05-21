@@ -15,7 +15,7 @@ This article covers the following topics:
 
 - [Using Custom Font Properties in Your Control](#_core_implementing_a_custom_font_property)
 
-##  <a name="_core_using_the_stock_font_property"></a> Using the Stock Font Property
+## <a name="_core_using_the_stock_font_property"></a> Using the Stock Font Property
 
 Stock Font properties are preimplemented by the class [COleControl](../mfc/reference/colecontrol-class.md). In addition, a standard Font property page is also available, allowing the user to change various attributes of the font object, such as its name, size, and style.
 
@@ -69,7 +69,7 @@ The Add Property Wizard adds the following line to the control's dispatch map, l
 
 [!code-cpp[NVC_MFC_AxFont#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_3.cpp)]
 
-##  <a name="_core_modifying_the_ondraw_function"></a> Modifying the OnDraw Function
+## <a name="_core_modifying_the_ondraw_function"></a> Modifying the OnDraw Function
 
 The default implementation of `OnDraw` uses the Windows system font for all text displayed in the control. This means that you must modify the `OnDraw` code by selecting the font object into the device context. To do this, call [COleControl::SelectStockFont](../mfc/reference/colecontrol-class.md#selectstockfont) and pass the control's device context, as shown in the following example:
 
@@ -77,7 +77,7 @@ The default implementation of `OnDraw` uses the Windows system font for all text
 
 After the `OnDraw` function has been modified to use the font object, any text within the control is displayed with characteristics from the control's stock Font property.
 
-##  <a name="_core_using_custom_font_properties_in_your_control"></a> Using Custom Font Properties in Your Control
+## <a name="_core_using_custom_font_properties_in_your_control"></a> Using Custom Font Properties in Your Control
 
 In addition to the stock Font property, the ActiveX control can have custom Font properties. To add a custom font property you must:
 
@@ -87,7 +87,7 @@ In addition to the stock Font property, the ActiveX control can have custom Font
 
 - [Implementing a new font notification interface](#_core_implementing_a_new_font_notification_interface).
 
-###  <a name="_core_implementing_a_custom_font_property"></a> Implementing a Custom Font Property
+### <a name="_core_implementing_a_custom_font_property"></a> Implementing a Custom Font Property
 
 To implement a custom Font property, you use the Add Property Wizard to add the property and then make some modifications to the code. The following sections describe how to add the custom `HeadingFont` property to the Sample control.
 
@@ -177,7 +177,7 @@ You must also increment the count parameter of your BEGIN_PROPPAGEIDS macro by o
 
 After these changes have been made, rebuild the entire project to incorporate the additional functionality.
 
-###  <a name="_core_processing_font_notifications"></a> Processing Font Notifications
+### <a name="_core_processing_font_notifications"></a> Processing Font Notifications
 
 In most cases the control needs to know when the characteristics of the font object have been modified. Each font object is capable of providing notifications when it changes by calling a member function of the `IFontNotification` interface, implemented by `COleControl`.
 
@@ -190,7 +190,7 @@ The solid lines in the figure above show that both font objects are using the sa
 
 One way to distinguish between the control's font object notifications is to create a separate implementation of the `IFontNotification` interface for each font object in the control. This technique allows you to optimize your drawing code by updating only the string, or strings, that use the recently modified font. The following sections demonstrate the steps necessary to implement separate notification interfaces for a second Font property. The second font property is assumed to be the `HeadingFont` property that was added in the previous section.
 
-###  <a name="_core_implementing_a_new_font_notification_interface"></a> Implementing a New Font Notification Interface
+### <a name="_core_implementing_a_new_font_notification_interface"></a> Implementing a New Font Notification Interface
 
 To distinguish between the notifications of two or more fonts, a new notification interface must be implemented for each font used in the control. The following sections describe how to implement a new font notification interface by modifying the control header and implementation files.
 

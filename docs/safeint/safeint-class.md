@@ -10,7 +10,7 @@ ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
 
 Extends the integer primitives to help prevent integer overflow and lets you compare different types of integers.
 
-> [!NOTE] 
+> [!NOTE]
 > The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
 
 ## Syntax
@@ -218,7 +218,7 @@ There are two options to customize the error policy. The first option is to set 
 
 **Namespace:** msl::utilities
 
-## <a name="safeint"></a>SafeInt::SafeInt
+## <a name="safeint"></a> SafeInt::SafeInt
 
 Constructs a `SafeInt` object.
 

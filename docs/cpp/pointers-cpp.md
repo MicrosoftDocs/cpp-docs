@@ -5,7 +5,6 @@ description: "About raw pointers and smart pointers in Microsoft C++."
 helpviewer_keywords: ["pointers (C++)"]
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
 ---
-
 # Pointers (C++)
 
 A pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes:

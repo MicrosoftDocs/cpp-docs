@@ -17,7 +17,7 @@ Includes the Standard C library header \<stdint.h> and adds the associated names
 ## Types
 
 ```cpp
-namespace std { 
+namespace std {
     using int8_t = signed integer type; // optional
     using int16_t = signed integer type; // optional
     using int32_t = signed integer type; // optional

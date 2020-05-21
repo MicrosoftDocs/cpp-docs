@@ -177,5 +177,5 @@ If you're adding a property to an MFC dispinterface using the [add property wiza
 |`Font`|Returns or sets the control's ambient font. Null if the control has no font.|
 |`ForeColor`|Returns or sets the control's ambient `ForeColor` property.|
 |`hWnd`|Returns or sets the control's `hWnd` property. `hWnd` has no **Member variable** implementation type.|
-|`ReadyState`|Returns or sets the control's `ReadyState` property. A control can be uninitialized, initialized, loading, interactive, or complete. For more information, see [READYSTATE](/previous-versions//aa768362\(v=vs.85\)) in the *Internet SDK*.|
+|`ReadyState`|Returns or sets the control's `ReadyState` property. A control can be uninitialized, initialized, loading, interactive, or complete. For more information, see [READYSTATE](/previous-versions/aa768362\(v=vs.85\)) in the *Internet SDK*.|
 |`Text`|Returns or sets the text contained in a control. `Text` has no **Member variable** implementation type.|

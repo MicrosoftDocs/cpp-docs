@@ -118,7 +118,7 @@ int main() {
 The result of the .* or ->\* pointer-to-member operators is an object or function of the type specified in the declaration of the pointer to member. So, in the preceding example, the result of the expression `ADerived.*pmfnFunc1()` is a pointer to a function that returns void. This result is an l-value if the second operand is an l-value.
 
 > [!NOTE]
->  If the result of one of the pointer-to-member operators is a function, then the result can be used only as an operand to the function call operator.
+> If the result of one of the pointer-to-member operators is a function, then the result can be used only as an operand to the function call operator.
 
 ## See also
 

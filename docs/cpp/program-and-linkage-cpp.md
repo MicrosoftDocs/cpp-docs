@@ -41,6 +41,7 @@ A *free function* is a function that is defined at global or namespace scope. No
 You can force a global name to have internal linkage by explicitly declaring it as **static**. This limits its visibility to the same translation unit in which it is declared. In this context, **static** means something different than when applied to local variables.
 
 The following objects have internal linkage by default:
+
 - const objects
 - constexpr objects
 - typedefs

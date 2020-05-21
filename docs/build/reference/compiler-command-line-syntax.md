@@ -27,7 +27,7 @@ You can specify any number of options, filenames, and library names, as long as 
 For information about the return value of cl.exe, see [Return Value of cl.exe](return-value-of-cl-exe.md) .
 
 > [!NOTE]
->  The command-line input limit of 1024 characters is not guaranteed to remain the same in future releases of Windows.
+> The command-line input limit of 1024 characters is not guaranteed to remain the same in future releases of Windows.
 
 ## See also
 

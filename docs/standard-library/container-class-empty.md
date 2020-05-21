@@ -13,8 +13,7 @@ Returns **true** for an empty controlled sequence.
 
 ## Syntax
 
-```
-
+```cpp
 bool empty() const;
 ```
 

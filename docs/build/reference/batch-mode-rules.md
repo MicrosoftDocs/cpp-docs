@@ -18,7 +18,7 @@ Makefiles that contain batch-mode inference rules must use NMAKE version 1.62 or
 The only syntactical difference from the standard inference rule is that the batch-mode inference rule is terminated with a double colon (::).
 
 > [!NOTE]
->  The tool being invoked must be able to handle multiple files. The batch-mode inference rule must use `$<` as the macro to access dependent files.
+> The tool being invoked must be able to handle multiple files. The batch-mode inference rule must use `$<` as the macro to access dependent files.
 
 The batch-mode inference rules can speed up the build process. It is faster to supply files to the compiler in batch, because the compiler driver is invoked only once. For example, the C and C++ compiler performs better when handling a set of files because it can remain memory resident during the process.
 

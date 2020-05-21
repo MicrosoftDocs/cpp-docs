@@ -17,7 +17,7 @@ IDs that begin with the **AFX_ID** prefix are rarely used by programmers, but yo
 IDs are not individually documented in this reference. You can find more information on them in Technical Notes [20](../../mfc/tn020-id-naming-and-numbering-conventions.md), [21](../../mfc/tn021-command-and-message-routing.md), and [22](../../mfc/tn022-standard-commands-implementation.md).
 
 > [!NOTE]
->  The header file Afxres.h is indirectly included in Afxwin.h. You must explicitly include the following statement in your application's resource script (.rc) file:
+> The header file Afxres.h is indirectly included in Afxwin.h. You must explicitly include the following statement in your application's resource script (.rc) file:
 
 [!code-cpp[NVC_MFC_Utilities#47](../../mfc/codesnippet/cpp/standard-command-and-window-ids_1.h)]
 

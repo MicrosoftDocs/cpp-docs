@@ -57,7 +57,7 @@ For more information, see the [CException Class](../../mfc/reference/cexception-
 
 **Header:** afx.h
 
-##  <a name="csimpleexception"></a>  CSimpleException::CSimpleException
+## <a name="csimpleexception"></a> CSimpleException::CSimpleException
 
 The constructor.
 
@@ -75,7 +75,7 @@ Specify TRUE if the memory for the `CSimpleException` object has been allocated 
 
 You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException](exception-processing.md#afxthrowfileexception), to throw a predefined type.
 
-##  <a name="geterrormessage"></a>  CSimpleException::GetErrorMessage
+## <a name="geterrormessage"></a> CSimpleException::GetErrorMessage
 
 Call this member function to provide text about an error that has occurred.
 

@@ -10,7 +10,7 @@ ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
 
 Provides symbolic names for all the error-code macros defined by POSIX in `<errno.h>`.
 
-```
+```cpp
 class errc {
    address_family_not_supported = EAFNOSUPPORT,
    address_in_use = EADDRINUSE,
@@ -99,7 +99,7 @@ class errc {
 
 Provides symbolic names for the error conditions in \<iostream>. Can be used to create [error_condition](../standard-library/error-condition-class.md) objects to be compared with the value that's returned by the [ios_base::failure](../standard-library/ios-base-class.md#failure)`code()` function.
 
-```
+```cpp
 class io_errc {
    stream = 1
 };

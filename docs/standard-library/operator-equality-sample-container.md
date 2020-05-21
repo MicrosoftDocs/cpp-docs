@@ -23,7 +23,7 @@ bool operator==(
 
 ## Return Value
 
-Returns `left.`[size](../standard-library/container-class-size.md) ` == right.size && equal(left.`[begin](../standard-library/container-class-begin.md)`, left.`[end](../standard-library/container-class-end.md)`, right.begin)`.
+Returns `left.`[size](../standard-library/container-class-size.md) `== right.size && equal(left.`[begin](../standard-library/container-class-begin.md)`, left.`[end](../standard-library/container-class-end.md)`, right.begin)`.
 
 ## See also
 

@@ -108,7 +108,7 @@ Point pt = Point( 3, 10 );
 The preceding example, which uses function-style conversion, shows how to convert two values (one for *x* and one for *y*) to the user-defined type `Point`.
 
 > [!CAUTION]
->  Use the explicit type conversions with care, since they override the C++ compiler's built-in type checking.
+> Use the explicit type conversions with care, since they override the C++ compiler's built-in type checking.
 
 The [cast](../cpp/cast-operator-parens.md) notation must be used for conversions to types that do not have a *simple-type-name* (pointer or reference types, for example). Conversion to types that can be expressed with a *simple-type-name* can be written in either form.
 

@@ -1,7 +1,6 @@
 ---
 title: "Robustness"
 ms.date: "11/04/2016"
-f1_keywords: ["c.runtime"]
 helpviewer_keywords: ["robustness [CRT]"]
 ms.assetid: 7f1a87f8-eff9-4b76-ae9b-d133d3de6adf
 ---

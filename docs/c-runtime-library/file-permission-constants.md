@@ -1,7 +1,6 @@
 ---
 title: "File Permission Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["_S_IWRITE", "_S_IREAD"]
 helpviewer_keywords: ["S_IWRITE constant", "constants [C++], file attributes", "S_IREAD constant", "file permissions [C++]", "_S_IWRITE constant", "_S_IREAD constant"]
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
 ---

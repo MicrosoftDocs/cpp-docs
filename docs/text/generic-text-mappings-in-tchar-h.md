@@ -44,7 +44,7 @@ For example, the generic-text function `_tcsrev`, which is defined in tchar.h, m
 For a list of generic-text mappings of routines, variables, and other objects, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the Run-Time Library Reference.
 
 > [!NOTE]
->  Do not use the `str` family of functions with Unicode strings, which are likely to contain embedded null bytes. Similarly, do not use the `wcs` family of functions with MBCS (or SBCS) strings.
+> Do not use the `str` family of functions with Unicode strings, which are likely to contain embedded null bytes. Similarly, do not use the `wcs` family of functions with MBCS (or SBCS) strings.
 
 The following code fragments illustrate the use of `_TCHAR` and `_tcsrev` for mapping to the MBCS, Unicode, and SBCS models.
 

@@ -60,7 +60,7 @@ For more information on `CFont`, see [Graphic Objects](../../mfc/graphic-objects
 
 **Header:** afxwin.h
 
-##  <a name="cfont"></a>  CFont::CFont
+## <a name="cfont"></a> CFont::CFont
 
 Constructs a `CFont` object.
 
@@ -76,7 +76,7 @@ The resulting object must be initialized with `CreateFont`, `CreateFontIndirect`
 
 [!code-cpp[NVC_MFCDocView#70](../../mfc/codesnippet/cpp/cfont-class_1.cpp)]
 
-##  <a name="createfont"></a>  CFont::CreateFont
+## <a name="createfont"></a> CFont::CreateFont
 
 Initializes a `CFont` object with the specified characteristics.
 
@@ -170,7 +170,7 @@ When you finish with the `CFont` object created by the `CreateFont` function, us
 
 [!code-cpp[NVC_MFCDocView#71](../../mfc/codesnippet/cpp/cfont-class_2.cpp)]
 
-##  <a name="createfontindirect"></a>  CFont::CreateFontIndirect
+## <a name="createfontindirect"></a> CFont::CreateFontIndirect
 
 Initializes a `CFont` object with the characteristics given in a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw)structure.
 
@@ -199,7 +199,7 @@ When you no longer need the `CFont` object created by the `CreateFontIndirect` f
 
 [!code-cpp[NVC_MFCDocView#72](../../mfc/codesnippet/cpp/cfont-class_3.cpp)]
 
-##  <a name="createpointfont"></a>  CFont::CreatePointFont
+## <a name="createpointfont"></a> CFont::CreatePointFont
 
 This function provides a simple way to create a font of a specified typeface and point size.
 
@@ -235,7 +235,7 @@ When you finish with the `CFont` object created by the `CreatePointFont` functio
 
 [!code-cpp[NVC_MFCDocView#73](../../mfc/codesnippet/cpp/cfont-class_4.cpp)]
 
-##  <a name="createpointfontindirect"></a>  CFont::CreatePointFontIndirect
+## <a name="createpointfontindirect"></a> CFont::CreatePointFontIndirect
 
 This function is the same as [CreateFontIndirect](#createfontindirect) except that the `lfHeight` member of the `LOGFONT` is interpreted in tenths of a point rather than device units.
 
@@ -267,7 +267,7 @@ When you finish with the `CFont` object created by the `CreatePointFontIndirect`
 
 [!code-cpp[NVC_MFCDocView#74](../../mfc/codesnippet/cpp/cfont-class_5.cpp)]
 
-##  <a name="fromhandle"></a>  CFont::FromHandle
+## <a name="fromhandle"></a> CFont::FromHandle
 
 Returns a pointer to a `CFont` object when given an HFONT handle to a Windows GDI font object.
 
@@ -292,7 +292,7 @@ If a `CFont` object is not already attached to the handle, a temporary `CFont` o
 
 [!code-cpp[NVC_MFCDocView#75](../../mfc/codesnippet/cpp/cfont-class_6.cpp)]
 
-##  <a name="getlogfont"></a>  CFont::GetLogFont
+## <a name="getlogfont"></a> CFont::GetLogFont
 
 Call this function to retrieve a copy of the `LOGFONT` structure for `CFont`.
 
@@ -313,7 +313,7 @@ Nonzero if the function succeeds, otherwise 0.
 
 [!code-cpp[NVC_MFCDocView#76](../../mfc/codesnippet/cpp/cfont-class_7.cpp)]
 
-##  <a name="operator_hfont"></a>  CFont::operator HFONT
+## <a name="operator_hfont"></a> CFont::operator HFONT
 
 Use this operator to get the Windows GDI handle of the font attached to the `CFont` object.
 

@@ -14,7 +14,7 @@ Each interface is based on the fundamental COM interface, [IUnknown](../atl/iunk
 Also, each interface is given a unique interface ID (IID). This uniqueness makes it easy to support interface versioning. A new version of an interface is simply a new interface, with a new IID.
 
 > [!NOTE]
->  IIDs for the standard COM and OLE interfaces are predefined.
+> IIDs for the standard COM and OLE interfaces are predefined.
 
 ## See also
 

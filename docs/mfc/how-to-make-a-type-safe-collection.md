@@ -16,7 +16,7 @@ This article explains how to make type-safe collections for your own data types.
 
 The Microsoft Foundation Class Library provides predefined type-safe collections based on C++ templates. Because they are templates, these classes help provide type safety and ease of use without the type-casting and other extra work involved in using a nontemplate class for this purpose. The MFC sample [COLLECT](../overview/visual-cpp-samples.md) demonstrates the use of template-based collection classes in an MFC application. In general, use these classes any time you write new collections code.
 
-##  <a name="_core_using_template.2d.based_classes_for_type_safety"></a> Using Template-Based Classes for Type Safety
+## <a name="_core_using_template.2d.based_classes_for_type_safety"></a> Using Template-Based Classes for Type Safety
 
 #### To use template-based classes
 
@@ -32,11 +32,11 @@ The Microsoft Foundation Class Library provides predefined type-safe collections
 
 This example shows the declaration of a list of integers. The first parameter in step 1 is the type of data stored as elements of the list. The second parameter specifies how the data is to be passed to and returned from member functions of the collection class, such as `Add` and `GetAt`.
 
-##  <a name="_core_implementing_helper_functions"></a> Implementing Helper Functions
+## <a name="_core_implementing_helper_functions"></a> Implementing Helper Functions
 
 The template-based collection classes `CArray`, `CList`, and `CMap` use five global helper functions that you can customize as needed for your derived collection class. For information on these helper functions, see [Collection Class Helpers](../mfc/reference/collection-class-helpers.md) in the *MFC Reference*. Implementation of the serialization function is necessary for most uses of the template-based collection classes.
 
-###  <a name="_core_serializing_elements"></a> Serializing Elements
+### <a name="_core_serializing_elements"></a> Serializing Elements
 
 The `CArray`, `CList`, and `CMap` classes call `SerializeElements` to store collection elements to or read them from an archive.
 
@@ -48,7 +48,7 @@ If your collection stores objects derived from `CObject` and you use the `IMPLEM
 
 The overloaded insertion operators for `CArchive` call `CObject::Serialize` (or an override of that function) for each `CPerson` object.
 
-##  <a name="_core_using_nontemplate_collection_classes"></a> Using Nontemplate Collection Classes
+## <a name="_core_using_nontemplate_collection_classes"></a> Using Nontemplate Collection Classes
 
 MFC also supports the collection classes introduced with MFC version 1.0. These classes are not based on templates. They can be used to contain data of the supported types `CObject*`, `UINT`, `DWORD`, and `CString`. You can use these predefined collections (such as `CObList`) to hold collections of any objects derived from `CObject`. MFC also provides other predefined collections to hold primitive types such as `UINT` and void pointers (`void`*). In general, however, it is often useful to define your own type-safe collections to hold objects of a more specific class and its derivatives. Note that doing so with the collection classes not based on templates is more work than using the template-based classes.
 

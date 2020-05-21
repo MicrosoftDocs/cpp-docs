@@ -10,7 +10,7 @@ ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 global heap functions.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ class CGlobalHeap : public IAtlMemMgr
 `CGlobalHeap` implements memory allocation functions using the Win32 global heap functions.
 
 > [!NOTE]
->  The global heap functions are slower than other memory management functions and do not provide as many features. Therefore, new applications should use the [heap functions](/windows/win32/Memory/heap-functions). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class. Global functions are still used by DDE and the clipboard functions.
+> The global heap functions are slower than other memory management functions and do not provide as many features. Therefore, new applications should use the [heap functions](/windows/win32/Memory/heap-functions). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class. Global functions are still used by DDE and the clipboard functions.
 
 ## Example
 
@@ -50,7 +50,7 @@ See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).
 
 **Header:** atlmem.h
 
-##  <a name="allocate"></a>  CGlobalHeap::Allocate
+## <a name="allocate"></a> CGlobalHeap::Allocate
 
 Call this method to allocate a block of memory.
 
@@ -73,7 +73,7 @@ Call [CGlobalHeap::Free](#free) or [CGlobalHeap::Reallocate](#reallocate) to fre
 
 Implemented using [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) with a flag parameter of GMEM_FIXED.
 
-##  <a name="free"></a>  CGlobalHeap::Free
+## <a name="free"></a> CGlobalHeap::Free
 
 Call this method to free a block of memory allocated by this memory manager.
 
@@ -90,7 +90,7 @@ Pointer to memory previously allocated by this memory manager. NULL is a valid v
 
 Implemented using [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree).
 
-##  <a name="getsize"></a>  CGlobalHeap::GetSize
+## <a name="getsize"></a> CGlobalHeap::GetSize
 
 Call this method to get the allocated size of a memory block allocated by this memory manager.
 
@@ -111,7 +111,7 @@ Returns the size of the allocated memory block in bytes.
 
 Implemented using [GlobalSize](/windows/win32/api/winbase/nf-winbase-globalsize).
 
-##  <a name="reallocate"></a>  CGlobalHeap::Reallocate
+## <a name="reallocate"></a> CGlobalHeap::Reallocate
 
 Call this method to reallocate memory allocated by this memory manager.
 

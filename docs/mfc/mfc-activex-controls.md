@@ -39,7 +39,7 @@ For more information, see:
 
 - [Upgrading an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)
 
-##  <a name="_core_basic_components_of_an_activex_control"></a> Basic Components of an ActiveX Control
+## <a name="_core_basic_components_of_an_activex_control"></a> Basic Components of an ActiveX Control
 
 An ActiveX control uses several programmatic elements to interact efficiently with a control container and with the user. These are class [COleControl](../mfc/reference/colecontrol-class.md), a set of event-firing functions, and a dispatch map.
 
@@ -49,7 +49,7 @@ Because the control class derives from `COleControl`, it inherits the capability
 
 The final element is a dispatch map, which is used to expose a set of functions (called methods) and attributes (called properties) to the control user. Properties allow the control container or the control user to manipulate the control in various ways. The user can change the appearance of the control, change certain values of the control, or make requests of the control, such as accessing a specific piece of data that the control maintains. This interface is determined by the control developer and is defined using **Class View**. For more information on ActiveX control methods and properties, see the articles [MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md) and [Properties](../mfc/mfc-activex-controls-properties.md).
 
-##  <a name="_core_interaction_between_controls_with_windows_and_activex_control_containers"></a> Interaction Between Controls with Windows and ActiveX Control Containers
+## <a name="_core_interaction_between_controls_with_windows_and_activex_control_containers"></a> Interaction Between Controls with Windows and ActiveX Control Containers
 
 When a control is used within a control container, it uses two mechanisms to communicate: it exposes properties and methods, and it fires events. The following figure demonstrates how these two mechanisms are implemented.
 
@@ -60,7 +60,7 @@ The previous figure also illustrates how other OLE interfaces (besides automatio
 
 All of a control's communication with the container is performed by `COleControl`. To handle some of the container's requests, `COleControl` will call member functions that are implemented in the control class. All methods and some properties are handled in this way. Your control's class can also initiate communication with the container by calling member functions of `COleControl`. Events are fired in this manner.
 
-##  <a name="_core_active_and_inactive_states_of_an_activex_control"></a> Active and Inactive States of an ActiveX Control
+## <a name="_core_active_and_inactive_states_of_an_activex_control"></a> Active and Inactive States of an ActiveX Control
 
 A control has two basic states: active and inactive. Traditionally, these states were distinguished by whether the control had a window. An active control had a window; an inactive control did not. With the introduction of windowless activation, this distinction is no longer universal, but still applies to many controls.
 
@@ -71,13 +71,13 @@ When a control with a window becomes active, it is able to interact fully with t
 ![Msg processing in active windowed ActiveX control](../mfc/media/vc37223.gif "Msg processing in active windowed ActiveX control") <br/>
 Windows Message Processing in a Windowed ActiveX Control (When Active)
 
-##  <a name="_core_serializing_activex_elements"></a> Serialization
+## <a name="_core_serializing_activex_elements"></a> Serialization
 
 The ability to serialize data, sometimes referred to as persistence, allows the control to write the value of its properties to persistent storage. Controls can then be recreated by reading the object's state from the storage.
 
 Note that a control is not responsible for obtaining access to the storage medium. Instead, the control's container is responsible for providing the control with a storage medium to use at the appropriate times. For more information on serialization, see the article [MFC ActiveX Controls: Serializing](../mfc/mfc-activex-controls-serializing.md). For information on optimizing serialization, see [Optimizing Persistence and Initialization](../mfc/optimizing-persistence-and-initialization.md) in ActiveX Controls: Optimization.
 
-##  <a name="_core_installing_activex_control_classes_and_tools"></a> Installing ActiveX Control Classes and Tools
+## <a name="_core_installing_activex_control_classes_and_tools"></a> Installing ActiveX Control Classes and Tools
 
 When you install Visual C++, the MFC ActiveX control classes and retail and debug ActiveX control run-time DLLs are automatically installed if ActiveX controls are selected in Setup (they are selected by default).
 

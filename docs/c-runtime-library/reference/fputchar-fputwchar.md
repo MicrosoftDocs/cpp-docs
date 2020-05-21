@@ -1,11 +1,11 @@
 ---
 title: "_fputchar, _fputwchar"
-ms.date: "11/04/2016"
-api_name: ["_fputchar", "_fputwchar"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_fputchar", "_fputwchar", "_o__fputchar", "_o__fputwchar"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["fputtchar", "_fputwchar", "fputwchar", "_fputtchar", "fputchar", "_fputchar"]
+f1_keywords: ["fputtchar", "_fputwchar", "fputwchar", "_fputtchar", "_fputchar"]
 helpviewer_keywords: ["fputchar function", "standard output, writing to", "_fputtchar function", "fputwchar function", "_fputwchar function", "fputtchar function", "_fputchar function"]
 ms.assetid: b92ff600-a924-4f2b-b0e7-3097ee31bdff
 ---
@@ -38,6 +38,8 @@ For more information about these and other error codes, see [_doserrno, errno, _
 ## Remarks
 
 Both of these functions writes the single character *c* to **stdout** and advances the indicator as appropriate. **_fputchar** is equivalent to `fputc( stdout )`. It is also equivalent to **putchar**, but implemented only as a function, rather than as a function and a macro. Unlike **fputc** and **putchar**, these functions are not compatible with the ANSI standard.
+
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

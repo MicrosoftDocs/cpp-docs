@@ -13,7 +13,7 @@ Encapsulates a raw interface pointer of this smart pointer's type.
 
 ## Syntax
 
-```
+```cpp
 void Attach( Interface* pInterface ) throw( );
 void Attach( Interface* pInterface, bool fAddRef ) throw( );
 ```

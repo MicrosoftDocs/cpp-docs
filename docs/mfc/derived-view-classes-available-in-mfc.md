@@ -26,7 +26,7 @@ The following table shows MFC's view classes and their relationships to one anot
 |[COleDBRecordView](../mfc/reference/coledbrecordview-class.md)|A form view that displays OLE DB records in controls. If you select OLE DB support in your project, the view's base class is `COleDBRecordView`. The view is connected to a `CRowset` object.|
 
 > [!NOTE]
->  As of MFC version 4.0, `CEditView` is derived from `CCtrlView`.
+> As of MFC version 4.0, `CEditView` is derived from `CCtrlView`.
 
 To use these classes in your application, derive the application's view classes from them. For related information, see [Scrolling and Scaling Views](../mfc/scrolling-and-scaling-views.md). For more information on the database classes, see [Overview: Database Programming](../data/data-access-programming-mfc-atl.md).
 

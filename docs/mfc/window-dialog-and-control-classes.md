@@ -1,7 +1,6 @@
 ---
 title: "Window, Dialog, and Control Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.mfc"]
 helpviewer_keywords: ["windows [MFC], dialog and control classes"]
 ms.assetid: b3610da6-9644-49b7-adbf-0e04f0d6d2b5
 ---

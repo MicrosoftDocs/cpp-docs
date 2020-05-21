@@ -32,7 +32,7 @@ If you do not specify `filename`, the .sbr file gets the same base name as the s
 **/Fr** is deprecated; use **/FR** instead. For more information, see Deprecated and Removed Compiler Options in [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
 
 > [!NOTE]
->  Do not change the .sbr extension. BSCMAKE requires the intermediary files to have that extension.
+> Do not change the .sbr extension. BSCMAKE requires the intermediary files to have that extension.
 
 ### To set this compiler option in the Visual Studio development environment
 

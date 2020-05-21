@@ -14,7 +14,7 @@ The **Image Editor** has freehand drawing and erasing tools that all work in the
 You can select drawing tools from either the **Image Editor** toolbar or the **Image** menu. When you select the **Eraser** tool, **Brush** tool, or **Airbrush** tool, the option selector displays that tool's options.
 
 > [!TIP]
->  Tool tips appear when you hover your cursor over the buttons on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md). These tips will help you identify the specific buttons mentioned here.
+> Tool tips appear when you hover your cursor over the buttons on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md). These tips will help you identify the specific buttons mentioned here.
 
 ### To select and use a drawing tool from the Image Editor toolbar
 

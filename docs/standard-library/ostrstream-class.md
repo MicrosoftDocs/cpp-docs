@@ -43,7 +43,7 @@ The object stores an object of class `strstreambuf`.
 
 **Namespace:** std
 
-## <a name="freeze"></a>  ostrstream::freeze
+## <a name="freeze"></a> ostrstream::freeze
 
 Causes a stream buffer to be unavailable through stream buffer operations.
 
@@ -64,7 +64,7 @@ The member function calls [rdbuf](#rdbuf) -> [freeze](../standard-library/strstr
 
 See [strstream::freeze](../standard-library/strstreambuf-class.md#freeze) for an example that uses `freeze`.
 
-## <a name="ostrstream"></a>  ostrstream::ostrstream
+## <a name="ostrstream"></a> ostrstream::ostrstream
 
 Constructs an object of type `ostrstream`.
 
@@ -95,7 +95,7 @@ Both constructors initialize the base class by calling [ostream](../standard-lib
 
 - Otherwise, `ptr` must designate the first element of an array of count elements that contains a C string whose first element is designated by `ptr`, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr` + `strlen`( `ptr`) ).
 
-## <a name="pcount"></a>  ostrstream::pcount
+## <a name="pcount"></a> ostrstream::pcount
 
 Returns a count of the number of elements written to the controlled sequence.
 
@@ -115,7 +115,7 @@ The member function returns [rdbuf](#rdbuf) -> [pcount](../standard-library/strs
 
 See [strstream::pcount](../standard-library/strstreambuf-class.md#pcount) for a sample that uses `pcount`.
 
-## <a name="rdbuf"></a>  ostrstream::rdbuf
+## <a name="rdbuf"></a> ostrstream::rdbuf
 
 Returns a pointer to the stream's associated strstreambuf object.
 
@@ -135,7 +135,7 @@ The member function returns the address of the stored stream buffer of type `poi
 
 See [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount) for a sample that uses `rdbuf`.
 
-## <a name="str"></a>  ostrstream::str
+## <a name="str"></a> ostrstream::str
 
 Calls [freeze](../standard-library/strstreambuf-class.md#freeze), and then returns a pointer to the beginning of the controlled sequence.
 

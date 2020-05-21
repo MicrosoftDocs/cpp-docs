@@ -13,8 +13,7 @@ Acts a synonym for the template parameter *Ty*.
 
 ## Syntax
 
-```
-
+```cpp
 typedef T4 value_type;
 ```
 

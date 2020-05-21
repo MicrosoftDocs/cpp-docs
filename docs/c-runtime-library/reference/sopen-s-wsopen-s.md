@@ -1,8 +1,8 @@
 ---
 title: "_sopen_s, _wsopen_s"
-ms.date: "11/04/2016"
-api_name: ["_sopen_s", "_wsopen_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["_sopen_s", "_wsopen_s", "_o__sopen_s", "_o__wsopen_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_sopen_s", "wsopen_s", "_wsopen_s", "sopen_s"]
@@ -71,6 +71,8 @@ In the case of an error, -1 is returned through *pfh* (unless *pfh* is a null po
 
 The **_sopen_s** function opens the file specified by *filename* and prepares the file for shared reading or writing, as defined by *oflag* and *shflag*. **_wsopen_s** is a wide-character version of **_sopen_s**; the *filename* argument to **_wsopen_s** is a wide-character string. **_wsopen_s** and **_sopen_s** behave identically otherwise.
 
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
@@ -86,7 +88,7 @@ The integer expression *oflag* is formed by combining one or more manifest const
 | **_O_CREAT** | Creates a file and opens it for writing. Has no effect if the file specified by *filename* exists. The *pmode* argument is required when **_O_CREAT** is specified. |
 | **_O_CREAT** &#124; **_O_SHORT_LIVED** | Creates a file as temporary and if possible does not flush to disk. The *pmode* argument is required when **_O_CREAT** is specified. |
 | **_O_CREAT** &#124; **_O_TEMPORARY** | Creates a file as temporary; the file is deleted when the last file descriptor is closed. The *pmode* argument is required when **_O_CREAT** is specified. |
-| **_O_CREAT** &#124; ` _O_EXCL` | Returns an error value if a file specified by *filename* exists. Applies only when used with **_O_CREAT**. |
+| **_O_CREAT** &#124; `_O_EXCL` | Returns an error value if a file specified by *filename* exists. Applies only when used with **_O_CREAT**. |
 | **_O_NOINHERIT** | Prevents creation of a shared file descriptor. |
 | **_O_RANDOM** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **_O_RDONLY** | Opens a file for reading only. Cannot be specified with **_O_RDWR** or **_O_WRONLY**. |

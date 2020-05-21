@@ -1,7 +1,6 @@
 ---
 title: "CWinApp and the MFC Application Wizard"
 ms.date: "11/04/2016"
-f1_keywords: ["CWinApp"]
 helpviewer_keywords: ["application wizards [MFC], and CWinApp", "CWinApp class [MFC], and MFC Application Wizard", "MFC, wizards"]
 ms.assetid: f8ac0491-3302-4e46-981d-0790624eb8a2
 ---

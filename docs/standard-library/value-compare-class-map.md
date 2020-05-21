@@ -1,7 +1,7 @@
 ---
 title: "value_compare Class (&lt;map&gt;)"
 ms.date: "11/04/2016"
-f1_keywords: ["std::value_compare", "std.value_compare", "map/std::value_compare", "value_compare"]
+f1_keywords: ["std::value_compare", "std.value_compare", "map/std::value_compare"]
 helpviewer_keywords: ["std::value_compare"]
 ms.assetid: ea97c1d0-04b2-4d42-8d96-23522c04cc41
 ---

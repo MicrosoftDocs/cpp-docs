@@ -82,7 +82,7 @@ void CTestProvDlg::OnRun()
 }
 ```
 
-The `CCommand`, `CDataSource`, and `CSession` classes all belong to the OLE DB consumer templates. Each class mimics a COM object in the provider. The `CCommand` object takes the `CProvider` class, declared in the header file, as a template parameter. The `CProvider` parameter represents bindings that you use to access the data from the provider. 
+The `CCommand`, `CDataSource`, and `CSession` classes all belong to the OLE DB consumer templates. Each class mimics a COM object in the provider. The `CCommand` object takes the `CProvider` class, declared in the header file, as a template parameter. The `CProvider` parameter represents bindings that you use to access the data from the provider.
 
 The lines to open each of the classes create each COM object in the provider. To locate the provider, use the `ProgID` of the provider. You can get the `ProgID` from the system registry or by looking in the Custom.rgs file (open the provider's directory and search for the `ProgID` key).
 

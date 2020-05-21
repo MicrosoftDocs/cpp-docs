@@ -60,7 +60,7 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
 ### To Use the HttpRequest Class
 
-1. In MainPage.xaml, define the [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) element as follows.
+1. In MainPage.xaml, define the [StackPanel](/uwp/api/windows.ui.xaml.controls.stackpanel) element as follows.
 
    [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]
 

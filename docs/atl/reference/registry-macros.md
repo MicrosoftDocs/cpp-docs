@@ -23,7 +23,7 @@ These macros define useful type library and registry facilities.
 
 **Header:** atlcom.h
 
-##  <a name="_atl_static_registry"></a>  _ATL_STATIC_REGISTRY
+## <a name="_atl_static_registry"></a> _ATL_STATIC_REGISTRY
 
 A symbol that indicates you want the registration code for your object to be in the object to avoid a dependency on ATL.DLL.
 
@@ -37,7 +37,7 @@ When you define ATL_STATIC_REGISTRY, you should use the following code:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#5](../../atl/codesnippet/cpp/registry-macros_1.cpp)]
 
-##  <a name="declare_libid"></a>  DECLARE_LIBID
+## <a name="declare_libid"></a> DECLARE_LIBID
 
 Provides a way for ATL to obtain the *libid* of the type library.
 
@@ -58,7 +58,7 @@ Use DECLARE_LIBID in a `CAtlModuleT`-derived class.
 
 Non-attributed wizard-generated ATL projects will have a sample of using this macro.
 
-##  <a name="declare_no_registry"></a>  DECLARE_NO_REGISTRY
+## <a name="declare_no_registry"></a> DECLARE_NO_REGISTRY
 
 Use DECLARE_NO_REGISTRY if you want to avoid any default ATL registration for the class in which this macro appears.
 
@@ -66,7 +66,7 @@ Use DECLARE_NO_REGISTRY if you want to avoid any default ATL registration for th
 DECLARE_NO_REGISTRY()
 ```
 
-##  <a name="declare_registry"></a>  DECLARE_REGISTRY
+## <a name="declare_registry"></a> DECLARE_REGISTRY
 
 Enters the standard class registration into the system registry or removes it from the system registry.
 
@@ -102,7 +102,7 @@ The standard registration consists of the CLSID, program ID, version-independent
 
 When you create an object or control using the ATL Add Class Wizard, the wizard automatically implements script-based registry support and adds the [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) macro to your files. If you do not want script-based registry support, you need to replace this macro with DECLARE_REGISTRY. DECLARE_REGISTRY only inserts the five basic keys described above into the registry. You must manually write code to insert other keys into the registry.
 
-##  <a name="declare_registry_appid_resourceid"></a>  DECLARE_REGISTRY_APPID_RESOURCEID
+## <a name="declare_registry_appid_resourceid"></a> DECLARE_REGISTRY_APPID_RESOURCEID
 
 Specifies the information required to automatically register the *appid*.
 
@@ -128,7 +128,7 @@ Use DECLARE_REGISTRY_APPID_RESOURCEID in a `CAtlModuleT`-derived class.
 
 Classes added to ATL projects with the Add Class code wizard will have a sample of using this macro.
 
-##  <a name="declare_registry_resource"></a>  DECLARE_REGISTRY_RESOURCE
+## <a name="declare_registry_resource"></a> DECLARE_REGISTRY_RESOURCE
 
 Gets the named resource containing the registry file and runs the script to either enter objects into the system registry or remove them from the system registry.
 
@@ -153,7 +153,7 @@ If you want ATL to substitute replacement values at run time, do not specify the
 
 For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).
 
-##  <a name="declare_registry_resourceid"></a>  DECLARE_REGISTRY_RESOURCEID
+## <a name="declare_registry_resourceid"></a> DECLARE_REGISTRY_RESOURCEID
 
 Same as [DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) except that it uses a wizard-generated UINT to identify the resource, rather than a string name.
 

@@ -686,6 +686,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/build-insights/vcperf-reference.md",
+      "redirect_url": "/cpp/build-insights/reference/vcperf-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build-insights/wpa-basics.md",
+      "redirect_url": "/cpp/build-insights/tutorials/wpa-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build-insights/wpa-views-reference.md",
+      "redirect_url": "/cpp/build-insights/reference/wpa-views",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/c-language/index.md",
       "redirect_url": "/cpp/c-language/c-language-reference",
       "redirect_document_id": false

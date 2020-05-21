@@ -1,7 +1,7 @@
 ---
 title: "/ALLOWBIND"
 ms.date: "11/04/2016"
-f1_keywords: ["/allowbind"]
+f1_keywords: ["/allowbind_bind"]
 helpviewer_keywords: ["ALLOWBIND editbin option", "/ALLOWBIND editbin option", "-ALLOWBIND editbin option"]
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
 ---

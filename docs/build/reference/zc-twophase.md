@@ -2,7 +2,7 @@
 title: "/Zc:twoPhase- (disable two-phase name lookup)"
 description: "Explains how /Zc:twoPhase- disables two-phase name lookup when /permissive- is specified."
 ms.date: "12/03/2019"
-f1_keywords: ["twoPhase", "/Zc:twoPhase", "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"]
+f1_keywords: ["twoPhase", "/Zc:twoPhase"]
 helpviewer_keywords: ["twoPhase", "disable two-phase name lookup", "/Zc:twoPhase"]
 ---
 # /Zc:twoPhase- (disable two-phase name lookup)

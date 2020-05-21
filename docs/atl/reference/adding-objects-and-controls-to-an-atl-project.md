@@ -7,7 +7,7 @@ ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
 ---
 # Adding Objects and Controls to an ATL Project
 
-> [!NOTE] 
+> [!NOTE]
 > The ATL COM+ 1.0 Component Wizard, ATL OLE DB Consumer wizard, and ATL Active Server Page Component wizard are not available in Visual Studio 2019 and later.
 
 You can use one of the ATL code wizards to add an object or a control to your ATL- or MFC-based projects. For each COM object or control you add, the wizard generates .cpp and .h files, as well as an .rgs file for script-based registry support. The following ATL code wizards are available in Visual Studio:

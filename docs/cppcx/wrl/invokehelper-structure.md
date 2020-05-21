@@ -138,7 +138,7 @@ Name                                 | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="callback"></a>InvokeHelper::callback_
+## <a name="callback"></a> InvokeHelper::callback_
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -152,7 +152,7 @@ Represents the event handler to call when an event occurs.
 
 The `TCallback` template parameter specifies the type of the event handler.
 
-## <a name="invoke"></a>InvokeHelper::Invoke
+## <a name="invoke"></a> InvokeHelper::Invoke
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -226,7 +226,7 @@ S_OK if successful; otherwise, an HRESULT that describes the error.
 
 Calls the event handler whose signature contains the specified number of arguments.
 
-## <a name="invokehelper"></a>InvokeHelper::InvokeHelper
+## <a name="invokehelper"></a> InvokeHelper::InvokeHelper
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

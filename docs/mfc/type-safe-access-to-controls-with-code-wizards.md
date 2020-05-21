@@ -13,7 +13,7 @@ If you simply want access to a control's value, DDX provides it. If you want to 
 Member variables can have a Control property instead of a Value property. The Value property refers to the type of data returned from the control, such as `CString` or **int**. The Control property enables direct access to the control through a data member whose type is one of the control classes in MFC, such as `CButton` or `CEdit`.
 
 > [!NOTE]
->  For a given control, you can, if you wish, have multiple member variables with the Value property and at most one member variable with the Control property. You can have only one MFC object mapped to a control because multiple objects attached to a control, or any other window, would lead to an ambiguity in the message map.
+> For a given control, you can, if you wish, have multiple member variables with the Value property and at most one member variable with the Control property. You can have only one MFC object mapped to a control because multiple objects attached to a control, or any other window, would lead to an ambiguity in the message map.
 
 You can use this object to call any member functions for the control object. Such calls affect the control in the dialog box. For example, for a check-box control represented by a variable *m_Checkbox*, of type `CButton`, you could call:
 

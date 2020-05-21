@@ -1,7 +1,6 @@
 ---
 title: "char, wchar_t, char16_t, char32_t"
 ms.date: "02/14/2018"
-f1_keywords: ["char_cpp", "char16_t_cpp", "wchar_t_cpp", "char32_t_cpp"]
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b
 ---
 # char, wchar_t, char16_t, char32_t

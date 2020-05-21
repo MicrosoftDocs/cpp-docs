@@ -1,7 +1,7 @@
 ---
 title: "deprecated pragma"
 ms.date: "08/29/2019"
-f1_keywords: ["vc-pragma.deprecated", "deprecated_CPP"]
+f1_keywords: ["vc-pragma.deprecated"]
 helpviewer_keywords: ["deprecated pragma", "pragmas, deprecated"]
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
 ---

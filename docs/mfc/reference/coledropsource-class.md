@@ -53,7 +53,7 @@ For more information, see [IDropSource](/windows/win32/api/oleidl/nn-oleidl-idro
 
 **Header:** afxole.h
 
-##  <a name="coledropsource"></a>  COleDropSource::COleDropSource
+## <a name="coledropsource"></a> COleDropSource::COleDropSource
 
 Constructs a `COleDropSource` object.
 
@@ -61,7 +61,7 @@ Constructs a `COleDropSource` object.
 COleDropSource();
 ```
 
-##  <a name="givefeedback"></a>  COleDropSource::GiveFeedback
+## <a name="givefeedback"></a> COleDropSource::GiveFeedback
 
 Called by the framework after calling [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover) or [COleDropTarget::DragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter).
 
@@ -94,7 +94,7 @@ Override this function to provide feedback to the user about what would happen i
 
 For more information, see [IDropSource::GiveFeedback](/windows/win32/api/oleidl/nf-oleidl-idropsource-givefeedback), [IDropTarget::DragOver](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover), and [IDropTarget::DragEnter](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragenter) in the Windows SDK.
 
-##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag
+## <a name="onbegindrag"></a> COleDropSource::OnBeginDrag
 
 Called by the framework when an event occurs that could begin a drag operation, such as pressing the left mouse button.
 
@@ -115,7 +115,7 @@ Nonzero if dragging is allowed, otherwise 0.
 
 Override this function if you want to modify the way the dragging process is started. The default implementation captures the mouse and stays in drag mode until the user clicks the left or right mouse button or hits ESC, at which time it releases the mouse.
 
-##  <a name="querycontinuedrag"></a>  COleDropSource::QueryContinueDrag
+## <a name="querycontinuedrag"></a> COleDropSource::QueryContinueDrag
 
 After dragging has begun, this function is called repeatedly by the framework until the drag operation is either canceled or completed.
 

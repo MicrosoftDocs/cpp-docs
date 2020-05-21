@@ -16,7 +16,7 @@ As explained in the article [Data Objects and Data Sources (OLE)](../mfc/data-ob
 
 - [Destroying data sources](#_core_destroying_data_sources)
 
-##  <a name="_core_creating_data_objects"></a> Creating Data Objects
+## <a name="_core_creating_data_objects"></a> Creating Data Objects
 
 Data objects are used by the destination application — either the client or the server. A data object in the destination application is one end of a connection between the source application and the destination application. A data object in the destination application is used to access and interact with the data in the data source.
 
@@ -26,13 +26,13 @@ In a drag-and-drop situation, you do not need to create a data object. A pointer
 
 If the application is performing a paste or paste special operation, you should create a `COleDataObject` object and call its `AttachClipboard` member function. This associates the data object with the data on the Clipboard. You can then use this data object in your paste function.
 
-##  <a name="_core_destroying_data_objects"></a> Destroying Data Objects
+## <a name="_core_destroying_data_objects"></a> Destroying Data Objects
 
 If you follow the scheme described in [Creating Data Objects](#_core_creating_data_objects), destroying data objects is a trivial aspect of data transfers. The data object that was created in your paste function will be destroyed by MFC when your paste function returns.
 
 If you follow another method of handling paste operations, make sure the data object is destroyed after your paste operation is complete. Until the data object is destroyed, it will be impossible for any application to successfully copy data to the Clipboard.
 
-##  <a name="_core_creating_data_sources"></a> Creating Data Sources
+## <a name="_core_creating_data_sources"></a> Creating Data Sources
 
 Data sources are used by the source of the data transfer, which can be either the client or the server side of the data transfer. A data source in the source application is one end of a connection between the source application and the destination application. A data object in the destination application is used to interact with the data in the data source.
 
@@ -54,7 +54,7 @@ This scenario is implemented by the MFC OLE samples [OCLIENT](../overview/visual
 
 One other situation in which you might want to create a `COleDataSource` object occurs if you are modifying the default behavior of a drag-and-drop operation. For more information, see the [OLE Drag and drop: Customize drag and drop](../mfc/drag-and-drop-ole.md#customize-drag-and-drop) article.
 
-##  <a name="_core_destroying_data_sources"></a> Destroying Data Sources
+## <a name="_core_destroying_data_sources"></a> Destroying Data Sources
 
 Data sources must be destroyed by the application currently responsible for them. In situations where you hand the data source to OLE, such as calling [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop), you need to call `pDataSrc->InternalRelease`. For example:
 

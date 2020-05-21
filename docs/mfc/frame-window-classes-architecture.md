@@ -1,7 +1,6 @@
 ---
 title: "Frame Window Classes (Architecture)"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.frame"]
 helpviewer_keywords: ["frame window classes [MFC], document/view architecture"]
 ms.assetid: 5da01fb4-f531-46cc-914f-e422e4f07f5d
 ---

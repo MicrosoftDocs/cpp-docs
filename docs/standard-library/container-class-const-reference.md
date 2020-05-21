@@ -13,8 +13,7 @@ Describes an object that can serve as a constant reference to an element of the 
 
 ## Syntax
 
-```
-
+```cpp
 typedef T3 const_reference;
 ```
 

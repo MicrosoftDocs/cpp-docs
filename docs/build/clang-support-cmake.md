@@ -4,7 +4,6 @@ ms.date: "07/01/2019"
 ms.description: "Configure a CMake project in Visual Studio to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ CMake projects"]
 ---
-
 # Clang/LLVM support in Visual Studio CMake projects
 
 ::: moniker range="<=vs-2017"
@@ -68,7 +67,7 @@ You can specify another location by setting the **CMAKE_C_COMPILER** and **CMAKE
 
 For Windows configurations, CMake by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode and links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in `C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\IDE\CommonExtensions\Microsoft\Llvm\bin`.
 
- You can modify these values in **CMake Settings** under **CMake variables and cache**. Click **Show advanced variables**. Scroll down to find **CMAKE_CXX_COMPILER**, then click the **Browse**  button to specify a different compiler path.
+You can modify these values in **CMake Settings** under **CMake variables and cache**. Click **Show advanced variables**. Scroll down to find **CMAKE_CXX_COMPILER**, then click the **Browse**  button to specify a different compiler path.
 
 ## Edit, build, and debug
 

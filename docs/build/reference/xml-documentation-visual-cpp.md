@@ -17,7 +17,7 @@ In a Visual C++ code file, XML documentation comments must be located directly p
 1. in a library whose type declarations and implementations are located in the same header file
 
 > [!NOTE]
->  In the current release, code comments are not processed on templates or anything containing a template type (for example, a function taking a parameter as a template). Adding such comments will result in undefined behavior.
+> In the current release, code comments are not processed on templates or anything containing a template type (for example, a function taking a parameter as a template). Adding such comments will result in undefined behavior.
 
 For details on creating an .xml file with documentation comments, see the following topics.
 

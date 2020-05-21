@@ -1,7 +1,6 @@
 ---
 title: "OLE Container Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.ole"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "container classes [MFC]", "OLE classes [MFC]", "visual editing [MFC], classes", "OLE [MFC], classes", "containers [MFC], OLE container applications"]
 ms.assetid: 1e27e1ab-4c22-41eb-8547-6915c72668ae
 ---

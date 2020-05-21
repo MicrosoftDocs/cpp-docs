@@ -72,7 +72,7 @@ The typename of the VectorViewIterator template class.
 
 **Namespace:** Platform::Collections
 
-## <a name="operator-arrow"></a>  VectorViewIterator::operator-&gt; Operator
+## <a name="operator-arrow"></a> VectorViewIterator::operator-&gt; Operator
 
 Retrieves the address of the element referenced by the current VectorViewIterator.
 
@@ -88,7 +88,7 @@ The value of the element that is referenced by the current VectorViewIterator.
 
 The type of the return value is an unspecified internal type that is required for the implementation of this operator.
 
-## <a name="operator-decrement"></a>  VectorViewIterator::operator-- Operator
+## <a name="operator-decrement"></a> VectorViewIterator::operator-- Operator
 
 Decrements the current VectorViewIterator.
 
@@ -109,7 +109,7 @@ The first VectorViewIterator syntax pre-decrements the current VectorViewIterato
 
 The second syntax post-decrements the current VectorViewIterator. The `int` type in the second syntax indicates a post-decrement operation, not an actual integer operand.
 
-## <a name="operator-dereference"></a>  VectorViewIterator::operator\* Operator
+## <a name="operator-dereference"></a> VectorViewIterator::operator\* Operator
 
 Retrieves a reference to the element specified by the current VectorViewIterator.
 
@@ -123,7 +123,7 @@ reference operator*() const;
 
 The element specified by the current VectorViewIterator.
 
-## <a name="operator-equality"></a>  VectorViewIterator::operator== Operator
+## <a name="operator-equality"></a> VectorViewIterator::operator== Operator
 
 Indicates whether the current VectorViewIterator is equal to a specified VectorViewIterator.
 
@@ -142,7 +142,7 @@ Another VectorViewIterator.
 
 **true** if the current `VectorViewIterator` is equal to *other*; otherwise, **false**.
 
-## <a name="operator-greater-than"></a>  VectorViewIterator::operator&gt; Operator
+## <a name="operator-greater-than"></a> VectorViewIterator::operator&gt; Operator
 
 Indicates whether the current VectorViewIterator is greater than a specified VectorViewIterator.
 
@@ -162,7 +162,7 @@ Another VectorViewIterator.
 
 **true** if the current VectorViewIterator is greater than *other*; otherwise, **false**.
 
-## <a name="operator-greater-than-or-equals"></a>  VectorViewIterator::operator&gt;= Operator
+## <a name="operator-greater-than-or-equals"></a> VectorViewIterator::operator&gt;= Operator
 
 Indicates whether the current `VectorViewIterator` is greater than or equal to the specified `VectorViewIterator`.
 
@@ -182,7 +182,7 @@ Another VectorViewIterator.
 
 **true** if the current `VectorViewIterator` is greater than or equal to *other*; otherwise, **false**.
 
-## <a name="operator-increment"></a>  VectorViewIterator::operator++ Operator
+## <a name="operator-increment"></a> VectorViewIterator::operator++ Operator
 
 Increments the current VectorViewIterator.
 
@@ -204,7 +204,7 @@ The first VectorViewIterator syntax pre-increments the current VectorViewIterato
 
 The second syntax post-increments the current VectorViewIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
-## <a name="operator-inequality"></a>  VectorViewIterator::operator!= Operator
+## <a name="operator-inequality"></a> VectorViewIterator::operator!= Operator
 
 Indicates whether the current VectorViewIterator is not equal to a specified VectorViewIterator.
 
@@ -223,7 +223,7 @@ Another VectorViewIterator.
 
 **true** if the current `VectorViewIterator` is not equal to *other*; otherwise, **false**.
 
-## <a name="operator-less-than"></a>  VectorViewIterator::operator&lt; Operator
+## <a name="operator-less-than"></a> VectorViewIterator::operator&lt; Operator
 
 Indicates whether the current VectorIterator is less than a specified VectorIterator.
 
@@ -242,7 +242,7 @@ Another `VectorIterator`.
 
 **true** if the current `VectorIterator` is less than *other*; otherwise, **false**.
 
-## <a name="operator-less-than-or-equals"></a>  VectorViewIterator::operator&lt;= Operator
+## <a name="operator-less-than-or-equals"></a> VectorViewIterator::operator&lt;= Operator
 
 Indicates whether the current `VectorIterator` is less than or equal to a specified `VectorIterator`.
 
@@ -262,7 +262,7 @@ Another `VectorIterator`.
 
 **true** if the current `VectorIterator` is less than or equal to *other*; otherwise, **false**.
 
-## <a name="operator-minus"></a>  VectorViewIterator::operator- Operator
+## <a name="operator-minus"></a> VectorViewIterator::operator- Operator
 
 Subtracts either a specified number of elements from the current iterator yielding a new iterator, or a specified iterator from the current iterator yielding the number of elements between the iterators.
 
@@ -287,7 +287,7 @@ Another VectorViewIterator.
 
 The first operator syntax returns a VectorViewIterator object that is `n` elements less than the current VectorViewIterator. The second operator syntax returns the number of elements between the current and the `other` VectorViewIterator.
 
-## <a name="operator-plus-equals"></a>  VectorViewIterator::operator+= Operator
+## <a name="operator-plus-equals"></a> VectorViewIterator::operator+= Operator
 
 Increments the current VectorViewIterator by the specified displacement.
 
@@ -306,7 +306,7 @@ A integer displacement.
 
 The updated VectorViewIterator.
 
-## <a name="operator-plus"></a>  VectorViewIterator::operator+ Operator
+## <a name="operator-plus"></a> VectorViewIterator::operator+ Operator
 
 Returns a VectorViewIterator that references the element at the specified displacement from the specified VectorViewIterator.
 
@@ -339,7 +339,7 @@ In the first syntax, a VectorViewIterator that references the element at the spe
 
 In the second syntax, a VectorViewIterator that references the element at the specified displacement from the beginning of parameter `i`.
 
-## <a name="operator-minus-assign"></a>  VectorViewIterator::operator-= Operator
+## <a name="operator-minus-assign"></a> VectorViewIterator::operator-= Operator
 
 Decrements the current VectorIterator by the specified displacement.
 
@@ -358,7 +358,7 @@ An integer displacement.
 
 The updated VectorIterator.
 
-## <a name="operator-at"></a>  VectorViewIterator::operator\[\]
+## <a name="operator-at"></a> VectorViewIterator::operator\[\]
 
 Retrieves a reference to the element that is a specified displacement from the current VectorViewIterator.
 
@@ -377,7 +377,7 @@ An integer displacement.
 
 The element that is displaced by `n` elements from the current VectorViewIterator.
 
-## <a name="ctor"></a>  VectorViewIterator::VectorViewIterator Constructor
+## <a name="ctor"></a> VectorViewIterator::VectorViewIterator Constructor
 
 Initializes a new instance of the VectorViewIterator class.
 

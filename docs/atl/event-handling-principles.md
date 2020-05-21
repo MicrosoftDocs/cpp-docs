@@ -17,7 +17,7 @@ There are three steps common to all event handling. You will need to:
 The way that you'll implement the event interface will depend on its type. An event interface can be vtable, dual, or a dispinterface. It's up to the designer of the event source to define the interface; it's up to you to implement that interface.
 
 > [!NOTE]
->  Although there are no technical reasons that an event interface can't be dual, there are a number of good design reasons to avoid the use of duals. However, this is a decision made by the designer/implementer of the event *source*. Since you're working from the perspective of the event `sink`, you need to allow for the possibility that you might not have any choice but to implement a dual event interface. For more information on dual interfaces, see [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md).
+> Although there are no technical reasons that an event interface can't be dual, there are a number of good design reasons to avoid the use of duals. However, this is a decision made by the designer/implementer of the event *source*. Since you're working from the perspective of the event `sink`, you need to allow for the possibility that you might not have any choice but to implement a dual event interface. For more information on dual interfaces, see [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md).
 
 Advising the event source can be broken down into three steps:
 

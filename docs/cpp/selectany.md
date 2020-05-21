@@ -28,7 +28,7 @@ For dynamically initialized, global objects, **selectany** will discard an unref
 A global data item can normally be initialized only once in an EXE or DLL project. **selectany** can be used in initializing global data defined by headers, when the same header appears in more than one source file. **selectany** is available in both the C and C++ compilers.
 
 > [!NOTE]
->  **selectany** can only be applied to the actual initialization of global data items that are externally visible.
+> **selectany** can only be applied to the actual initialization of global data items that are externally visible.
 
 ## Example
 

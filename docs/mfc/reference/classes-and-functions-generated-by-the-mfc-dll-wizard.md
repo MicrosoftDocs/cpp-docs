@@ -12,7 +12,7 @@ The code that the MFC DLL Wizard generates depends on the kind of DLL you are cr
 |-----------------|------------|-------------|---------------|
 |[Extension](../../build/extension-dlls-overview.md)|None|None|`DllMain`|
 |[Regular](../../build/regular-dlls-dynamically-linked-to-mfc.md)|None|Application class derived from `CWinApp`|None|
-|[Regular](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Automation|Application class derived from `CWinApp`|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|
+|[Regular](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Automation|Application class derived from `CWinApp`|`DllGetClassObject` `DllCanUnloadNow` `DllRegisterServer`|
 |[Extension](../../build/extension-dlls-overview.md)|Window Sockets|None|`DllMain`|
 |[Regular](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Window Sockets|Application class derived from `CWinApp`|`InitInstance` contains call to `AfxSocketInit`|
 

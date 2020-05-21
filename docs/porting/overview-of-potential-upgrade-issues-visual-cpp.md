@@ -45,15 +45,15 @@ If you have a static library that was built with an older version of the C Runti
 
 1. If you can't (or don't want to) rebuild the static library, you may try linking with legacy\_stdio\_definitions.lib. If it satisfies the link-time dependencies of your static library, you will want to thoroughly test the static library as it's used in the binary, to make sure that it isn't adversely affected by any of the [behavioral changes that were made to the Universal CRT](visual-cpp-change-history-2003-2015.md#BK_CRT).
 
-1. If your static library’s dependencies are not satisfied by legacy\_stdio\_definitions.lib or if the library doesn't work with the Universal CRT due to the aforementioned behavioral changes, we would recommend encapsulating your static library into a DLL that you link with the correct version of the Microsoft C Runtime. For example, if the static library was built using Visual Studio 2013, you would want to build this DLL using Visual Studio 2013 and the Visual Studio 2013 C++ libraries as well. By building the library into a DLL, you encapsulate the implementation detail that is its dependency on a particular version of the Microsoft C Runtime. You'll want to be careful that the DLL interface doesn't leak details of which C Runtime it uses, for example, by returning a FILE* across the DLL boundary or by returning a malloc-allocated pointer and expecting the caller to free it.
+1. If your static library's dependencies are not satisfied by legacy\_stdio\_definitions.lib or if the library doesn't work with the Universal CRT due to the aforementioned behavioral changes, we would recommend encapsulating your static library into a DLL that you link with the correct version of the Microsoft C Runtime. For example, if the static library was built using Visual Studio 2013, you would want to build this DLL using Visual Studio 2013 and the Visual Studio 2013 C++ libraries as well. By building the library into a DLL, you encapsulate the implementation detail that is its dependency on a particular version of the Microsoft C Runtime. You'll want to be careful that the DLL interface doesn't leak details of which C Runtime it uses, for example, by returning a FILE* across the DLL boundary or by returning a malloc-allocated pointer and expecting the caller to free it.
 
-Use of multiple CRTs in a single process isn't in and of itself problematic (indeed, most processes will end up loading multiple CRT DLLs; for example, Windows operating system components will depend on msvcrt.dll and the CLR will depend on its own private CRT). Problems arise when you jumble state from different CRTs. For example, you should not allocate memory using msvcr110.dll!malloc and attempt to deallocate that memory using msvcr120.dll!free, and you should not attempt to open a FILE using msvcr110!fopen and attempt to read from that FILE using msvcr120!fread. As long as you don’t jumble state from different CRTs, you can safely have multiple CRTs loaded in a single process.
+Use of multiple CRTs in a single process isn't in and of itself problematic (indeed, most processes will end up loading multiple CRT DLLs; for example, Windows operating system components will depend on msvcrt.dll and the CLR will depend on its own private CRT). Problems arise when you jumble state from different CRTs. For example, you should not allocate memory using msvcr110.dll!malloc and attempt to deallocate that memory using msvcr120.dll!free, and you should not attempt to open a FILE using msvcr110!fopen and attempt to read from that FILE using msvcr120!fread. As long as you don't jumble state from different CRTs, you can safely have multiple CRTs loaded in a single process.
 
 For more information, see [Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md).
 
 ## Errors due to project settings
 
-To begin the upgrade process, open an older project/solution/workspace in the latest version of Visual Studio. Visual Studio will create a new project based on the old project settings. If the older project has library or include paths that are hard-coded to non-standard locations, it's possible that the files in those paths won’t be visible to the compiler when the project uses the default settings. For more information, see [Linker OutputFile setting](porting-guide-spy-increment.md#linker_output_settings).
+To begin the upgrade process, open an older project/solution/workspace in the latest version of Visual Studio. Visual Studio will create a new project based on the old project settings. If the older project has library or include paths that are hard-coded to non-standard locations, it's possible that the files in those paths won't be visible to the compiler when the project uses the default settings. For more information, see [Linker OutputFile setting](porting-guide-spy-increment.md#linker_output_settings).
 
 In general, now is a great time to organize your project code properly in order to simplify project maintenance and help get your upgraded code compiling as quickly as possible. If your source code is already well-organized, and your older project is compiled with Visual Studio 2010 or later, you can manually edit the new project file to support compilation on both the old and new compiler. The following example shows how to compile for both Visual Studio 2015 and Visual Studio 2017:
 
@@ -66,13 +66,13 @@ In general, now is a great time to organize your project code properly in order 
 
 For unresolved symbols, you might need to fix up your project settings.
 
-- If the source file is in a non-default location, did you add the path to the project’s include directories?
+- If the source file is in a non-default location, did you add the path to the project's include directories?
 
 - If the external is defined in a .lib file, have you specified the lib path in the project properties, and is the correct version of the .lib file located there?
 
 - Are you attempting to link to a .lib file that was compiled with a different version of Visual Studio? If so, see the previous section on library and toolset dependencies.
 
-- Do the types of the arguments at the call site actually match an existing overload of the function? Verify the underlying types for any typedefs in the function’s signature and in the code that calls the function are what you expect them to be.
+- Do the types of the arguments at the call site actually match an existing overload of the function? Verify the underlying types for any typedefs in the function's signature and in the code that calls the function are what you expect them to be.
 
 To troubleshoot unresolved symbol errors, you can try using dumpbin.exe to examine the symbols defined in a binary. Try the following command line to view symbols defined in a library:
 
@@ -90,7 +90,7 @@ The `/NODEFAULTLIB` linker option (or the Ignore All Default Libraries linker pr
 
 Projects that use this option present a problem when upgrading, because the contents of some of the default libraries were refactored. Because each library has to be listed in the **Additional Dependencies** property or on the linker command line, you need to update the list of libraries to use all the current names.
 
-The following table shows the libraries whose contents changed starting with Visual Studio 2015. To upgrade, you need to add the new library names in the second column to the libraries in the first column. Some of these libraries are import libraries, but that shouldn’t matter.
+The following table shows the libraries whose contents changed starting with Visual Studio 2015. To upgrade, you need to add the new library names in the second column to the libraries in the first column. Some of these libraries are import libraries, but that shouldn't matter.
 
 |||
 |-|-|
@@ -124,7 +124,7 @@ The [/showIncludes](../build/reference/showincludes-list-include-files.md) compi
 
 ## Errors involving CRT functions
 
-Many changes have been made to the C runtime over the years. Many secure versions of functions have been added, and some have been removed. Also, as described earlier in this article, Microsoft’s implementation of the CRT was refactored in Visual Studio 2015 into new binaries and associated .lib files.
+Many changes have been made to the C runtime over the years. Many secure versions of functions have been added, and some have been removed. Also, as described earlier in this article, Microsoft's implementation of the CRT was refactored in Visual Studio 2015 into new binaries and associated .lib files.
 
 If an error involves a CRT function, search [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) or [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md) to see if those articles contain any additional information. If the error is LNK2019, unresolved external, make sure the function has not been removed. Otherwise, if you are sure that the function still exists, and the calling code is correct, check to see whether your project uses `/NODEFAULTLIB`. If so, you need to update the list of libraries so that the project uses the new universal (UCRT) libraries. For more information, see the section above on Library and dependencies.
 

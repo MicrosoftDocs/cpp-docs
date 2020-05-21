@@ -10,8 +10,8 @@ ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
 
 ## Syntax
 
-> *noexcept-expression*:
-> &nbsp;&nbsp;&nbsp;&nbsp;**noexcept**
+> *noexcept-expression*:\
+> &nbsp;&nbsp;&nbsp;&nbsp;**noexcept**\
 > &nbsp;&nbsp;&nbsp;&nbsp;**noexcept(** *constant-expression* **)**
 
 ### Parameters

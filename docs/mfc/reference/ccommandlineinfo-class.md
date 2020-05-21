@@ -73,7 +73,7 @@ Derive a new class from `CCommandLineInfo` to handle other flags and parameter v
 
 **Header:** afxwin.h
 
-##  <a name="ccommandlineinfo"></a>  CCommandLineInfo::CCommandLineInfo
+## <a name="ccommandlineinfo"></a> CCommandLineInfo::CCommandLineInfo
 
 This constructor creates a `CCommandLineInfo` object with default values.
 
@@ -91,7 +91,7 @@ The application framework calls [ParseParam](#parseparam) to fill data members o
 
 [!code-cpp[NVC_MFCDocView#54](../../mfc/codesnippet/cpp/ccommandlineinfo-class_1.cpp)]
 
-##  <a name="m_brunautomated"></a>  CCommandLineInfo::m_bRunAutomated
+## <a name="m_brunautomated"></a> CCommandLineInfo::m_bRunAutomated
 
 Indicates that the `/Automation` flag was found on the command line.
 
@@ -103,7 +103,7 @@ BOOL m_bRunAutomated;
 
 If TRUE, this means start up as an OLE automation server.
 
-##  <a name="m_brunembedded"></a>  CCommandLineInfo::m_bRunEmbedded
+## <a name="m_brunembedded"></a> CCommandLineInfo::m_bRunEmbedded
 
 Indicates that the `/Embedding` flag was found on the command line.
 
@@ -115,7 +115,7 @@ BOOL m_bRunEmbedded;
 
 If TRUE, this means start up for editing an embedded OLE item.
 
-##  <a name="m_bshowsplash"></a>  CCommandLineInfo::m_bShowSplash
+## <a name="m_bshowsplash"></a> CCommandLineInfo::m_bShowSplash
 
 Indicates that the splash screen should be displayed.
 
@@ -127,7 +127,7 @@ BOOL m_bShowSplash;
 
 If TRUE, this means the splash screen for this application should be displayed during startup. The default implementation of [ParseParam](#parseparam) sets this data member to TRUE if [m_nShellCommand](#m_nshellcommand) is equal to `CCommandLineInfo::FileNew`.
 
-##  <a name="m_nshellcommand"></a>  CCommandLineInfo::m_nShellCommand
+## <a name="m_nshellcommand"></a> CCommandLineInfo::m_nShellCommand
 
 Indicates the shell command for this instance of the application.
 
@@ -177,7 +177,7 @@ For a brief description of these values, see the following list.
 
 [!code-cpp[NVC_MFCDocView#55](../../mfc/codesnippet/cpp/ccommandlineinfo-class_2.cpp)]
 
-##  <a name="m_strdrivername"></a>  CCommandLineInfo::m_strDriverName
+## <a name="m_strdrivername"></a> CCommandLineInfo::m_strDriverName
 
 Stores the value of the third non-flag parameter on the command line.
 
@@ -189,7 +189,7 @@ CString m_strDriverName;
 
 This parameter is typically the name of the printer driver for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the `/pt` flag was found on the command line.
 
-##  <a name="m_strfilename"></a>  CCommandLineInfo::m_strFileName
+## <a name="m_strfilename"></a> CCommandLineInfo::m_strFileName
 
 Stores the value of the first non-flag parameter on the command line.
 
@@ -201,7 +201,7 @@ CString m_strFileName;
 
 This parameter is typically the name of the file to open.
 
-##  <a name="m_strportname"></a>  CCommandLineInfo::m_strPortName
+## <a name="m_strportname"></a> CCommandLineInfo::m_strPortName
 
 Stores the value of the fourth non-flag parameter on the command line.
 
@@ -213,7 +213,7 @@ CString m_strPortName;
 
 This parameter is typically the name of the printer port for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the `/pt` flag was found on the command line.
 
-##  <a name="m_strprintername"></a>  CCommandLineInfo::m_strPrinterName
+## <a name="m_strprintername"></a> CCommandLineInfo::m_strPrinterName
 
 Stores the value of the second non-flag parameter on the command line.
 
@@ -225,7 +225,7 @@ CString m_strPrinterName;
 
 This parameter is typically the name of the printer for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the `/pt` flag was found on the command line.
 
-##  <a name="m_strrestartidentifier"></a>  CCommandLineInfo::m_strRestartIdentifier
+## <a name="m_strrestartidentifier"></a> CCommandLineInfo::m_strRestartIdentifier
 
 The unique restart identifier on the command line.
 
@@ -239,7 +239,7 @@ The restart identifier is unique for each instance of the application.
 
 If the restart manager exits the application and is configured to restart it, the restart manager executes the application from the command line with the restart identifier as an optional parameter. When the restart manager uses the restart identifier, the application can reopen the previously open documents and recover autosaved files.
 
-##  <a name="parseparam"></a>  CCommandLineInfo::ParseParam
+## <a name="parseparam"></a> CCommandLineInfo::ParseParam
 
 The framework calls this function to parse/interpret individual parameters from the command line. The second version differs from the first only in Unicode projects.
 

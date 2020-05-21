@@ -13,8 +13,7 @@ Describes an object that can represent the difference between the addresses of a
 
 ## Syntax
 
-```
-
+```cpp
 typedef T1 difference_type;
 ```
 

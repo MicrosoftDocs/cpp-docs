@@ -84,7 +84,7 @@ Use this method to create an exception out of an HRESULT that is returned, for e
 
 It is strongly recommended to use CreateException to create a strongly-typed exception rather than creating a [Platform::COMException](../cppcx/platform-comexception-class.md) that merely contains the HRESULT.
 
-## <a name="ctor"></a>  Exception::Exception Constructor
+## <a name="ctor"></a> Exception::Exception Constructor
 
 Intializes a new instance of the Exception class.
 
@@ -103,7 +103,7 @@ The error HRESULT that is represented by the exception.
 *message*<br/>
 A user-specified message, such as prescriptive text, that is associated with the exception. In general you should prefer the second overload in order to provide a descriptive message that is as specific as possible about how and why the error has occurred.
 
-## <a name="hresult"></a>  Exception::HResult Property
+## <a name="hresult"></a> Exception::HResult Property
 
 The HRESULT that corresponds to the exception.
 

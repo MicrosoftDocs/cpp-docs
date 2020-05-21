@@ -38,11 +38,11 @@ Some of the security features include the following:
 
 - `Parameter Validation`. Parameters passed to CRT functions are validated, in both secure functions and in many preexisting versions of functions. These validations include:
 
-   - Checking for **NULL** values passed to the functions.
+  - Checking for **NULL** values passed to the functions.
 
-   - Checking enumerated values for validity.
+  - Checking enumerated values for validity.
 
-   - Checking that integral values are in valid ranges.
+  - Checking that integral values are in valid ranges.
 
 - For more information, see [Parameter Validation](../c-runtime-library/parameter-validation.md).
 

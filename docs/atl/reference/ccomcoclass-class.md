@@ -53,7 +53,7 @@ You can override either of these defaults by specifying another macro in your cl
 
 **Header:** atlcom.h
 
-##  <a name="createinstance"></a>  CComCoClass::CreateInstance
+## <a name="createinstance"></a> CComCoClass::CreateInstance
 
 Use these `CreateInstance` functions to create an instance of a COM object and retrieve an interface pointer without using the COM API.
 
@@ -96,7 +96,7 @@ In the following example, `CDocument` is a wizard-generated ATL class derived fr
 
 [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]
 
-##  <a name="error"></a>  CComCoClass::Error
+## <a name="error"></a> CComCoClass::Error
 
 This static function sets up the `IErrorInfo` interface to provide error information to the client.
 
@@ -173,7 +173,7 @@ To call `Error`, your object must implement the `ISupportErrorInfo Interface` in
 
 If the *hRes* parameter is nonzero, then `Error` returns the value of *hRes*. If *hRes* is zero, then the first four versions of `Error` return DISP_E_EXCEPTION. The last two versions return the result of the macro **MAKE_HRESULT( 1, FACILITY_ITF,** *nID* **)**.
 
-##  <a name="getobjectclsid"></a>  CComCoClass::GetObjectCLSID
+## <a name="getobjectclsid"></a> CComCoClass::GetObjectCLSID
 
 Provides a consistent way of retrieving the object's CLSID.
 
@@ -185,7 +185,7 @@ static const CLSID& WINAPI GetObjectCLSID();
 
 The object's class identifier.
 
-##  <a name="getobjectdescription"></a>  CComCoClass::GetObjectDescription
+## <a name="getobjectdescription"></a> CComCoClass::GetObjectDescription
 
 This static function retrieves the text description for your class object.
 

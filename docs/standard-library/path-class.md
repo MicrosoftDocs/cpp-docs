@@ -416,7 +416,7 @@ For `pval` an object of type `path`:
 
 1. `X == pval.end()` is true when `X` points just past the end of the sequence of components.
 
-3. `*X` returns a string that matches the current component
+1. `*X` returns a string that matches the current component
 
 1. `++X` designates the next component in the sequence, if present.
 

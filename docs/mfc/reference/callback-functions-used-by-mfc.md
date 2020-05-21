@@ -46,7 +46,7 @@ The callback function returns an **int**. The value of this return is user-defin
 
 The actual name must be exported.
 
-## <a name="graystring"></a>  Callback Function for CDC::GrayString
+## <a name="graystring"></a> Callback Function for CDC::GrayString
 
 *OutputFunc* is a placeholder for the application-supplied callback function name.
 
@@ -78,7 +78,7 @@ The callback function's return value must be TRUE to indicate success; otherwise
 
 The callback function (*OutputFunc*) must draw an image relative to the coordinates (0,0) rather than (*x*, *y*).
 
-## <a name="setabortproc"></a>  Callback Function for CDC::SetAbortProc
+## <a name="setabortproc"></a> Callback Function for CDC::SetAbortProc
 
 The name *AbortFunc* is a placeholder for the application-supplied function name.
 

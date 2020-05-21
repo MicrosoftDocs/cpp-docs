@@ -15,15 +15,15 @@ Active technologies include both client and server technologies, including the f
 
 - ActiveX controls are interactive objects that can be used in containers such as a Web site. For more information on ActiveX controls, see:
 
-   - [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+  - [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
 
-   - [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)
+  - [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)
 
-   - [Overview: Internet](../mfc/mfc-internet-programming-basics.md)
+  - [Overview: Internet](../mfc/mfc-internet-programming-basics.md)
 
-   - [Upgrade an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)
+  - [Upgrade an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)
 
-   - [Debugging an ActiveX Control](/visualstudio/debugger/how-to-debug-an-activex-control)
+  - [Debugging an ActiveX Control](/visualstudio/debugger/how-to-debug-an-activex-control)
 
 - Active scripting controls the integrated behavior of one or more ActiveX controls from a browser or server. For more information on active scripting, see [Active Technology on the Internet](../mfc/active-technology-on-the-internet.md).
 

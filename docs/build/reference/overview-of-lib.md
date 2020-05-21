@@ -1,8 +1,7 @@
 ---
 title: "Overview of LIB"
-description: Overview of the use and options of the library tool, lib.exe.
-ms.date: "09/25/2019"
-f1_keywords: ["Lib"]
+description: "Overview of the use and options of the library tool, lib.exe."
+ms.date: "02/09/2020"
 helpviewer_keywords: ["LIB [C++], modes"]
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
 ---
@@ -27,7 +26,7 @@ The following table lists the options for lib.exe, with a link to more informati
 |Option|Description|
 |-|-|
 |**/DEF**|Create an import library and an export file.<br/><br/>For more information, see [Building an Import Library and Export File](building-an-import-library-and-export-file.md).|
-|**/ERRORREPORT**|   Send information to Microsoft about internal errors with lib.exe.<br/><br/>For more information, see [Running LIB](running-lib.md).|
+|**/ERRORREPORT**| Deprecated. For more information, see [Running LIB](running-lib.md).|
 |**/EXPORT**|   Exports a function from your program.<br/><br/>For more information, see [Building an Import Library and Export File](building-an-import-library-and-export-file.md).|
 |**/EXTRACT**|   Create an object (.obj) file that contains a copy of a member of an existing library.<br/><br/>For more information, see [Extracting a Library Member](extracting-a-library-member.md).|
 |**/INCLUDE**|   Adds a symbol to the symbol table.<br/><br/>For more information, see [Building an Import Library and Export File](building-an-import-library-and-export-file.md).|
@@ -48,8 +47,8 @@ The following table lists the options for lib.exe, with a link to more informati
 
 ## See also
 
-[LIB Reference](lib-reference.md)<br/>
-[LIB Input Files](lib-input-files.md)<br/>
-[LIB Output Files](lib-output-files.md)<br/>
-[Other LIB Output](other-lib-output.md)<br/>
+[LIB Reference](lib-reference.md)\
+[LIB Input Files](lib-input-files.md)\
+[LIB Output Files](lib-output-files.md)\
+[Other LIB Output](other-lib-output.md)\
 [Structure of a Library](structure-of-a-library.md)

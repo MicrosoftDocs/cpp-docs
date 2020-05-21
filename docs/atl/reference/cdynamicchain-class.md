@@ -10,7 +10,7 @@ ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
 This class provides methods supporting the dynamic chaining of message maps.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -63,7 +63,7 @@ For more information about message map chaining, see [Message Maps](../../atl/me
 
 **Header:** atlwin.h
 
-##  <a name="callchain"></a>  CDynamicChain::CallChain
+## <a name="callchain"></a> CDynamicChain::CallChain
 
 Directs the Windows message to another object's message map.
 
@@ -107,7 +107,7 @@ For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_
 
 `CallChain` requires a previous call to [SetChainEntry](#setchainentry) to associate the *dwChainID* value with an object and its message map.
 
-##  <a name="cdynamicchain"></a>  CDynamicChain::CDynamicChain
+## <a name="cdynamicchain"></a> CDynamicChain::CDynamicChain
 
 The constructor.
 
@@ -115,7 +115,7 @@ The constructor.
 CDynamicChain();
 ```
 
-##  <a name="dtor"></a>  CDynamicChain::~CDynamicChain
+## <a name="dtor"></a> CDynamicChain::~CDynamicChain
 
 The destructor.
 
@@ -127,7 +127,7 @@ The destructor.
 
 Frees all allocated resources.
 
-##  <a name="removechainentry"></a>  CDynamicChain::RemoveChainEntry
+## <a name="removechainentry"></a> CDynamicChain::RemoveChainEntry
 
 Removes the specified message map from the collection.
 
@@ -144,7 +144,7 @@ BOOL RemoveChainEntry(DWORD dwChainID);
 
 TRUE if the message map is successfully removed from the collection. Otherwise, FALSE.
 
-##  <a name="setchainentry"></a>  CDynamicChain::SetChainEntry
+## <a name="setchainentry"></a> CDynamicChain::SetChainEntry
 
 Adds the specified message map to the collection.
 

@@ -1,7 +1,6 @@
 ---
 title: "default::(type_name)::Equals Method"
 ms.date: "12/30/2016"
-f1_keywords: ["VCCORLIB/Platform::Object::Equals"]
 ms.assetid: 4450f835-06fc-4758-8d0a-72cf00007873
 ---
 # default::(type_name)::Equals Method

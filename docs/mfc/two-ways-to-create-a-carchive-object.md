@@ -1,7 +1,6 @@
 ---
 title: "Two Ways to Create a CArchive Object"
 ms.date: "11/04/2016"
-f1_keywords: ["CArchive"]
 helpviewer_keywords: ["CArchive class [MFC], closing CArchive objects", "CArchive objects [MFC], closing", "I/O [MFC], creating CArchive objects", "serialization [MFC], CArchive class", "CArchive objects [MFC]", "storage [MFC], CArchive class [MFC]", "data storage [MFC], CArchive class", "CArchive class [MFC], constructor"]
 ms.assetid: aefa28ce-b55c-40dc-9e42-5f038030985d
 ---
@@ -13,7 +12,7 @@ There are two ways to create a `CArchive` object:
 
 - [Explicit creation of a CArchive object](#_core_explicit_creation_of_a_carchive_object)
 
-##  <a name="_core_implicit_creation_of_a_carchive_object_via_the_framework"></a> Implicit Creation of a CArchive Object via the Framework
+## <a name="_core_implicit_creation_of_a_carchive_object_via_the_framework"></a> Implicit Creation of a CArchive Object via the Framework
 
 The most common, and easiest, way is to let the framework create a `CArchive` object for your document on behalf of the Save, Save As, and Open commands on the File menu.
 
@@ -31,7 +30,7 @@ Your document's `Serialize` function then writes data to the `CArchive` object, 
 
 Thus, if you let the framework create the `CArchive` object for your document, all you have to do is implement the document's `Serialize` function that writes and reads to and from the archive. You also have to implement `Serialize` for any `CObject`-derived objects that the document's `Serialize` function in turn serializes directly or indirectly.
 
-##  <a name="_core_explicit_creation_of_a_carchive_object"></a> Explicit Creation of a CArchive Object
+## <a name="_core_explicit_creation_of_a_carchive_object"></a> Explicit Creation of a CArchive Object
 
 Besides serializing a document via the framework, there are other occasions when you may need a `CArchive` object. For example, you might want to serialize data to and from the Clipboard, represented by a `CSharedFile` object. Or, you may want to use a user interface for saving a file that is different from the one offered by the framework. In this case, you can explicitly create a `CArchive` object. You do this the same way the framework does, using the following procedure.
 

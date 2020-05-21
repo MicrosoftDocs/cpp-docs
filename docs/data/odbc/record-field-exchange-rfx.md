@@ -9,7 +9,7 @@ ms.assetid: f5ddfbf0-2901-48d7-9848-4fb84de3c7ee
 The MFC ODBC database classes automate moving data between the data source and a [recordset](../../data/odbc/recordset-odbc.md) object. When you derive a class from [CRecordset](../../mfc/reference/crecordset-class.md) and do not use bulk row fetching, data is transferred by the record field exchange (RFX) mechanism.
 
 > [!NOTE]
->  If you have implemented bulk row fetching in a derived `CRecordset` class, the framework uses the bulk record field exchange (Bulk RFX) mechanism to transfer data. For more information, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> If you have implemented bulk row fetching in a derived `CRecordset` class, the framework uses the bulk record field exchange (Bulk RFX) mechanism to transfer data. For more information, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 RFX is similar to dialog data exchange (DDX). Moving data between a data source and the field data members of a recordset requires multiple calls to the recordset's [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) function and considerable interaction between the framework and [ODBC](../../data/odbc/odbc-basics.md). The RFX mechanism is type-safe and saves you the work of calling ODBC functions such as `::SQLBindCol`. For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).
 

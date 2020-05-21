@@ -1,7 +1,6 @@
 ---
 title: "Country-Region Strings"
 ms.date: "11/04/2016"
-f1_keywords: ["c.strings"]
 helpviewer_keywords: ["country/region strings"]
 ms.assetid: 5baf0ccf-0d9b-40dc-83bd-323705287930
 ---

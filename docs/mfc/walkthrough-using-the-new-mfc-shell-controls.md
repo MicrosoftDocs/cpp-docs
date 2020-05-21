@@ -16,7 +16,7 @@ In this walkthrough, you'll create an application that resembles File Explorer. 
 
 ## To create a new MFC application by using the MFC Application Wizard
 
-These steps vary depending on which version of Visual Studio you are using. Make sure the version selector in the upper left of this page is set correctly.
+These steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 

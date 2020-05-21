@@ -158,7 +158,7 @@ int CanInit2::j = i;
 ```
 
 > [!NOTE]
->  The class name, `CanInit2`, must precede `i` to specify that the `i` being defined is a member of class `CanInit2`.
+> The class name, `CanInit2`, must precede `i` to specify that the `i` being defined is a member of class `CanInit2`.
 
 ## See also
 

@@ -18,13 +18,13 @@ The steps below use HTML tags to build a simple Web page. In these steps, you'll
 
 1. Type the following lines:
 
-```
-<HTML>
-<HEAD>
-<TITLE>Top HTML Tags</TITLE>
-</HEAD>
-</HTML>
-```
+    ```html
+    <HTML>
+    <HEAD>
+    <TITLE>Top HTML Tags</TITLE>
+    </HEAD>
+    </HTML>
+    ```
 
 1. From the **File** menu, choose **Save**, and save the file as c:\webpages\First.htm. Leave the file open in the editor.
 
@@ -36,12 +36,12 @@ The steps below use HTML tags to build a simple Web page. In these steps, you'll
 
 1. Switch back to Notepad, and after the \</HEAD> line, type:
 
-```
-<BODY>
-    HTML is swell.
-    Life is good.
-</BODY>
-```
+    ```html
+    <BODY>
+        HTML is swell.
+        Life is good.
+    </BODY>
+    ```
 
 1. From the **File** menu, choose **Save**.
 
@@ -51,35 +51,35 @@ The steps below use HTML tags to build a simple Web page. In these steps, you'll
 
    For all the steps that follow, insert the text anywhere between \<BODY> and \</BODY> to add to the body of your document.
 
-9. Add a header:
+1. Add a header:
 
-```
-<H3>Here's the big picture</H3>
-```
+    ```html
+    <H3>Here's the big picture</H3>
+    ```
 
-10. Add an image, using a .gif file saved in the same directory as your page:
+1. Add an image, using a .gif file saved in the same directory as your page:
 
-```
-<IMG src="yourfile.gif">
-```
+    ```html
+    <IMG src="yourfile.gif">
+    ```
 
-11. Add a list:
+1. Add a list:
 
-```
-<UL>Make me an unordered list.
-<LI>One programmer</LI>
-<LI>Ten SDKs</LI>
-<LI>Great Internet Apps</LI>
-</UL>
-```
+    ```html
+    <UL>Make me an unordered list.
+    <LI>One programmer</LI>
+    <LI>Ten SDKs</LI>
+    <LI>Great Internet Apps</LI>
+    </UL>
+    ```
 
-12. To number the list instead, use paired \<OL> and \</OL> tags in place of the \<UL> and \</UL> tags.
+1. To number the list instead, use paired \<OL> and \</OL> tags in place of the \<UL> and \</UL> tags.
 
 That should get you started. If you see a great feature on a Web page, you can find out how it was created by examining the HTML source. HTML editors such as Microsoft Front Page can be used to create both simple and advanced pages.
 
 Here's the entire HTML source for the file you've been building:
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>Top HTML Tags</TITLE>

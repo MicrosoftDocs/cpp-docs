@@ -13,7 +13,7 @@ Changes the type of the `_variant_t` object to the indicated `VARTYPE`.
 
 ## Syntax
 
-```
+```cpp
 void ChangeType(
    VARTYPE vartype,
    const _variant_t* pSrc = NULL

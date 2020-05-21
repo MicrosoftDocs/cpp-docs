@@ -4,7 +4,6 @@ ms.date: "09/25/2019"
 description: "Use filters files in Visual Studio C++ projects to define custom logical folders for files in Solution Explorer"
 helpviewer_keywords: ["vcxproj.filters", "filters file [C++]"]
 ---
-
 # vcxproj.filters files
 
 The *filters* file (\*.vcxproj.filters) is an XML file in MSBuild format that is located in the root project folder. It specifies which file types go into which logical folder in **Solution Explorer**. In the following illustration, the *.cpp* files are under the **Source Files** node. the *.h* files are under the **Header Files** node, and *.ico* and *.rc* files are under **Resource Files**. This placement is controlled by the filters file.
@@ -19,7 +18,7 @@ Visual Studio creates this file automatically. For desktop applications, the pre
 
 The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders. The `UniqueIdentifier` node is optional. It enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional. When a new file is added to a project, it is added to the topmost filter with a matching file extension. To add a file to a specific filter, right-click on the filter and choose **Add New Item**.
 
-The `ItemGroup` that contains the `ClInclude` nodes is created when the project is first launched. If you are generating your own vcxproj files, make sure that all project items also have an entry in the filters file. Values in a `ClInclude` node override the default filtering based on file extensions. When you use Visual Studio to add a new item to the project, the IDE will add an individual file entry in the filters file. The filter is not automatically reassigned if you change the file's extension. 
+The `ItemGroup` that contains the `ClInclude` nodes is created when the project is first launched. If you are generating your own vcxproj files, make sure that all project items also have an entry in the filters file. Values in a `ClInclude` node override the default filtering based on file extensions. When you use Visual Studio to add a new item to the project, the IDE will add an individual file entry in the filters file. The filter is not automatically reassigned if you change the file's extension.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -100,4 +99,3 @@ To create nested logical folders, declare all nodes in filters `ItemGroup` as sh
     </Filter>
   </ItemGroup>
 ```
-

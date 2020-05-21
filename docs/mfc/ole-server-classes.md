@@ -1,7 +1,6 @@
 ---
 title: "OLE Server Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.ole"]
 helpviewer_keywords: ["OLE server applications [MFC], server classes", "OLE server documents", "COM components, classes [MFC]", "component classes [MFC]"]
 ms.assetid: 8e9b67a2-c0ff-479c-a8d6-19b36c5e6fc6
 ---

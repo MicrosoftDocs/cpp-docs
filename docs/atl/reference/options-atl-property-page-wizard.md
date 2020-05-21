@@ -7,7 +7,6 @@ ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
 ---
 # Options, ATL Property Page Wizard
 
-
 ::: moniker range="vs-2019"
 
 The ATL Property Page wizard is not available in Visual Studio 2019 and later.

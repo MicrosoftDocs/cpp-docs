@@ -102,7 +102,7 @@ Name                                                           | Description
 
 **Namespace:** Microsoft::WRL
 
-## <a name="activationfactory"></a>ActivationFactory::ActivationFactory
+## <a name="activationfactory"></a> ActivationFactory::ActivationFactory
 
 Initializes the `ActivationFactory` class.
 
@@ -110,7 +110,7 @@ Initializes the `ActivationFactory` class.
 ActivationFactory();
 ```
 
-## <a name="addref"></a>ActivationFactory::AddRef
+## <a name="addref"></a> ActivationFactory::AddRef
 
 Increments the reference count of the current `ActivationFactory` object.
 
@@ -125,7 +125,7 @@ STDMETHOD_(
 
 S_OK if successful; otherwise, an HRESULT that describes the failure.
 
-## <a name="getiids"></a>ActivationFactory::GetIids
+## <a name="getiids"></a> ActivationFactory::GetIids
 
 Retrieves an array of implemented interface IDs.
 
@@ -147,7 +147,7 @@ When this operation completes, an array of implemented interface IDs.
 
 S_OK if successful; otherwise, an HRESULT that describes the failure. E_OUTOFMEMORY is a possible failure HRESULT.
 
-## <a name="getruntimeclassname"></a>ActivationFactory::GetRuntimeClassName
+## <a name="getruntimeclassname"></a> ActivationFactory::GetRuntimeClassName
 
 Gets the runtime class name of the object that the current `ActivationFactory` instantiates.
 
@@ -166,7 +166,7 @@ When this operation completes, a handle to a string that contains the runtime cl
 
 S_OK if successful; otherwise, an HRESULT that describes the failure.
 
-## <a name="gettrustlevel"></a>ActivationFactory::GetTrustLevel
+## <a name="gettrustlevel"></a> ActivationFactory::GetTrustLevel
 
 Gets the trust level of the object that the current `ActivationFactory` instantiates.
 
@@ -185,7 +185,7 @@ When this operation completes, the trust level of the runtime class that the `Ac
 
 S_OK if successful; otherwise, an assertion error is emitted and *trustLvl* is set to `FullTrust`.
 
-## <a name="queryinterface"></a>ActivationFactory::QueryInterface
+## <a name="queryinterface"></a> ActivationFactory::QueryInterface
 
 Retrieves a pointer to the specified interface.
 
@@ -207,7 +207,7 @@ When this operation is complete, a pointer to the interface specified by paramet
 
 S_OK if successful; otherwise, an HRESULT that describes the failure.
 
-## <a name="release"></a>ActivationFactory::Release
+## <a name="release"></a> ActivationFactory::Release
 
 Decrements the reference count of the current `ActivationFactory` object.
 

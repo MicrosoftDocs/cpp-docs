@@ -28,7 +28,7 @@ Topics covered in this article include:
 
 - [Example for a range of control IDs](#_core_example_for_a_range_of_control_ids)
 
-##  <a name="_core_writing_the_message.2d.map_entry"></a> Writing the Message-Map Entry
+## <a name="_core_writing_the_message.2d.map_entry"></a> Writing the Message-Map Entry
 
 In the .CPP file, add your message-map entry, as shown in the following example:
 
@@ -58,7 +58,7 @@ The message-map entry consists of the following items:
 
   The third macro, `ON_CONTROL_RANGE`, takes an additional first parameter: a control-notification message, such as **EN_CHANGE**.
 
-##  <a name="_core_declaring_the_handler_function"></a> Declaring the Handler Function
+## <a name="_core_declaring_the_handler_function"></a> Declaring the Handler Function
 
 Add your handler function declaration in the .H file. The following code shows how this might look, as shown below:
 
@@ -68,7 +68,7 @@ Handler functions for single commands normally take no parameters. With the exce
 
 For more information about parameter requirements for updating handler functions, see [Example for a Range of Command IDs](#_core_example_for_a_range_of_command_ids).
 
-##  <a name="_core_example_for_a_range_of_command_ids"></a> Example for a Range of Command IDs
+## <a name="_core_example_for_a_range_of_command_ids"></a> Example for a Range of Command IDs
 
 When might you use ranges One example is in handling commands like the Zoom command in the MFC sample [HIERSVR](../overview/visual-cpp-samples.md). This command zooms the view, scaling it between 25% and 300% of its normal size. HIERSVR's view class uses a range to handle the Zoom commands with a message-map entry resembling this:
 
@@ -92,7 +92,7 @@ The case of update handler functions is similar, and likely to be more widely us
 
 Update handler functions for single commands normally take a single parameter, *pCmdUI*, of type `CCmdUI*`. Unlike handler functions, update handler functions for message-map ranges do not require an extra parameter, *nID*, of type **UINT**. The command ID, which is needed to specify which command the user actually chose, is found in the `CCmdUI` object.
 
-##  <a name="_core_example_for_a_range_of_control_ids"></a> Example for a Range of Control IDs
+## <a name="_core_example_for_a_range_of_control_ids"></a> Example for a Range of Control IDs
 
 Another interesting case is mapping control-notification messages for a range of control IDs to a single handler. Suppose the user can click any of 10 buttons. To map all 10 buttons to one handler, your message-map entry would look like this:
 

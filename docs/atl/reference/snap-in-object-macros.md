@@ -23,7 +23,7 @@ These macros provide support for snap-in extensions.
 
 **Header:** atlsnap.h
 
-##  <a name="begin_extension_snapin_nodeinfo_map"></a>  BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP
+## <a name="begin_extension_snapin_nodeinfo_map"></a> BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP
 
 Marks the beginning of the snap-in extension data class map.
 
@@ -44,7 +44,7 @@ Start your snap-in extension map with the BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP ma
 
 [!code-cpp[NVC_ATL_Windowing#105](../../atl/codesnippet/cpp/snap-in-object-macros_1.h)]
 
-##  <a name="begin_snapintoolbarid_map"></a>  BEGIN_SNAPINTOOLBARID_MAP
+## <a name="begin_snapintoolbarid_map"></a> BEGIN_SNAPINTOOLBARID_MAP
 
 Declares the beginning of the toolbar ID map for the Snap-In object.
 
@@ -61,7 +61,7 @@ BEGIN_SNAPINTOOLBARID_MAP(_class)
 
 [!code-cpp[NVC_ATL_Windowing#106](../../atl/codesnippet/cpp/snap-in-object-macros_2.h)]
 
-##  <a name="end_extension_snapin_nodeinfo_map"></a>  END_EXTENSION_SNAPIN_NODEINFO_MAP
+## <a name="end_extension_snapin_nodeinfo_map"></a> END_EXTENSION_SNAPIN_NODEINFO_MAP
 
 Marks the end of the snap-in extension data class map.
 
@@ -77,7 +77,7 @@ Start your snap-in extension map with the [BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](
 
 See the example for [BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map).
 
-##  <a name="end_snapintoolbarid_map"></a>  END_SNAPINTOOLBARID_MAP
+## <a name="end_snapintoolbarid_map"></a> END_SNAPINTOOLBARID_MAP
 
 Declares the end of the toolbar ID map for the Snap-In object.
 
@@ -94,7 +94,7 @@ END_SNAPINTOOLBARID_MAP( _class )
 
 See the example for [BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map).
 
-##  <a name="extension_snapin_dataclass"></a>  EXTENSION_SNAPIN_DATACLASS
+## <a name="extension_snapin_dataclass"></a> EXTENSION_SNAPIN_DATACLASS
 
 Adds a data member to the snap-in extension data class for an **ISnapInItemImpl**-derived class.
 
@@ -115,7 +115,7 @@ This class should also be entered into a snap-in extension data class map. Start
 
 [!code-cpp[NVC_ATL_Windowing#105](../../atl/codesnippet/cpp/snap-in-object-macros_1.h)]
 
-##  <a name="extension_snapin_nodeinfo_entry"></a>  EXTENSION_SNAPIN_NODEINFO_ENTRY
+## <a name="extension_snapin_nodeinfo_entry"></a> EXTENSION_SNAPIN_NODEINFO_ENTRY
 
 Adds a snap-in extension data class to the snap-in extension data class map.
 
@@ -136,7 +136,7 @@ Start your snap-in extension data class map with the [BEGIN_EXTENSION_SNAPIN_NOD
 
 See the example for [BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map).
 
-##  <a name="snapinmenuid"></a>  SNAPINMENUID
+## <a name="snapinmenuid"></a> SNAPINMENUID
 
 Use this macro to declare the context menu resource of the Snap-In object.
 
@@ -149,7 +149,7 @@ SNAPINMENUID( id )
 *id*<br/>
 [in] Identifies the context menu of the Snap-In object.
 
-##  <a name="snapintoolbarid_entry"></a>  SNAPINTOOLBARID_ENTRY
+## <a name="snapintoolbarid_entry"></a> SNAPINTOOLBARID_ENTRY
 
 Use this macro to enter a toolbar ID into the Snap-In object's toolbar ID map.
 

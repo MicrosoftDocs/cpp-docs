@@ -52,7 +52,7 @@ The value being exchanged.
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_HREF dispatch ID.
 
-## <a name="ddx_dhtml_anchor_target"></a>  DDX_DHtml_Anchor_Target
+## <a name="ddx_dhtml_anchor_target"></a> DDX_DHtml_Anchor_Target
 
 Sets or retrieves the target window or frame.
 
@@ -78,7 +78,7 @@ The value being exchanged.
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_TARGET dispatch ID.
 
-## <a name="ddx_dhtml_elementinnerhtml"></a>  DDX_DHtml_ElementInnerHtml
+## <a name="ddx_dhtml_elementinnerhtml"></a> DDX_DHtml_ElementInnerHtml
 
 Sets or retrieves the HTML between the start and end tags of the current element.
 
@@ -104,7 +104,7 @@ The value being exchanged.
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERHTML dispatch ID.
 
-## <a name="ddx_dhtml_elementinnertext"></a>  DDX_DHtml_ElementInnerText
+## <a name="ddx_dhtml_elementinnertext"></a> DDX_DHtml_ElementInnerText
 
 Sets or retrieves the text between the start and end tags of the current element.
 
@@ -210,7 +210,7 @@ The value being exchanged.
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID.
 
-## <a name="ddx_dhtml_img_src"></a>DDX_DHtml_Img_Src
+## <a name="ddx_dhtml_img_src"></a> DDX_DHtml_Img_Src
 
 Gets or retrieves the name of an image or a video clip in the document.
 

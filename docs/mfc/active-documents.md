@@ -33,7 +33,7 @@ Every active document must have a view frame provider with this interface. If th
 
 An active document can create one or more types of [views](#requirements_for_view_objects) of its data (for example, normal, outline, page layout, and so on). Views act like filters through which the data can be seen. Even if the document has only one type of view, you may still want to support multiple views as a means of supporting new window functionality (for example, the **New Window** item on the **Window** menu in Office applications).
 
-##  <a name="requirements_for_active_documents"></a> Requirements for Active Documents
+## <a name="requirements_for_active_documents"></a> Requirements for Active Documents
 
 An active document that can be displayed in an active document container must:
 
@@ -47,7 +47,7 @@ An active document that can be displayed in an active document container must:
 
 Knowledge of when and how to use the container-side interfaces is implied in these requirements.
 
-##  <a name="requirements_for_view_objects"></a> Requirements for View Objects
+## <a name="requirements_for_view_objects"></a> Requirements for View Objects
 
 An active document can create one or more views of its data. Functionally, these views are like ports onto a particular method for displaying the data. If an active document only supports a single view, the active document and that single view can be implemented using a single class. `IOleDocument::CreateView` returns the same object's `IOleDocumentView` interface pointer.
 

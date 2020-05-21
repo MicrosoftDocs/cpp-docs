@@ -5,10 +5,9 @@ ms.assetid: bb736587-d13b-4f3c-8982-3cc2c015c59c
 ---
 # Linking
 
-In a C++ project, the *linking* step is performed after the compiler has compiled the source code into object files (*.obj). The linker (link.exe) combines the object files into a single executable file. 
+In a C++ project, the *linking* step is performed after the compiler has compiled the source code into object files (*.obj). The linker (link.exe) combines the object files into a single executable file.
 
-Linker options can be set inside or outside of Visual Studio. Within Visual Studio, you access linker options by right-clicking on a project node in **Solution Explorer** and choosing **Properties** to display the property pages. Choose **Linker** in the left pane to expand the node and see all the options. 
-
+Linker options can be set inside or outside of Visual Studio. Within Visual Studio, you access linker options by right-clicking on a project node in **Solution Explorer** and choosing **Properties** to display the property pages. Choose **Linker** in the left pane to expand the node and see all the options.
 
 ## Linker command-line syntax
 
@@ -33,7 +32,7 @@ LINK arguments
 The `arguments` include options and filenames and can be specified in any order. Options are processed first, then files. Use one or more spaces or tabs to separate arguments.
 
 > [!NOTE]
->  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
+> You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
 
 ## Command line
 
@@ -41,7 +40,7 @@ On the command line, an option consists of an option specifier, either a dash (-
 
 To pass a file to the linker, specify the filename on the command line after the LINK command. You can specify an absolute or relative path with the filename, and you can use wildcards in the filename. If you omit the dot (.) and filename extension, LINK assumes .obj for the purpose of finding the file. LINK does not use filename extensions or the lack of them to make assumptions about the contents of files; it determines the type of file by examining it, and processes it accordingly.
 
-link.exe returns zero for success (no errors).  Otherwise, the linker returns the error number that stopped the link.  For example, if the linker generates LNK1104, the linker returns 1104.  Accordingly, the lowest error number returned on an error by the linker is 1000.  A return value of 128 represents a configuration problem with either the operating system or a .config file; the loader didn’t load either link.exe or c2.dll.
+link.exe returns zero for success (no errors).  Otherwise, the linker returns the error number that stopped the link.  For example, if the linker generates LNK1104, the linker returns 1104.  Accordingly, the lowest error number returned on an error by the linker is 1000.  A return value of 128 represents a configuration problem with either the operating system or a .config file; the loader didn't load either link.exe or c2.dll.
 
 ## LINK Command Files
 

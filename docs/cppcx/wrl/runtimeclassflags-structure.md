@@ -40,7 +40,7 @@ A [RuntimeClassType Enumeration](runtimeclasstype-enumeration.md) value.
 
 **Namespace:** Microsoft::WRL
 
-## <a name="value-constant"></a>RuntimeClassFlags::value Constant
+## <a name="value-constant"></a> RuntimeClassFlags::value Constant
 
 A field that contains a [RuntimeClassType Enumeration](runtimeclasstype-enumeration.md) value.
 

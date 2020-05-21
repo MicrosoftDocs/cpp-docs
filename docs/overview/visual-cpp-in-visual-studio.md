@@ -5,11 +5,10 @@ ms.date: "07/02/2019"
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 ---
-
 # C++ in Visual Studio
 
 > [!NOTE]
-> This developer documentation applies to Visual Studio 2015 and later. Use the version selector in the upper left of the page to match your version of Visual Studio.
+> This developer documentation applies to Visual Studio 2015 and later. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 >
 > If you are looking for a Visual C++ redistributable package so that you can run a program, go to the [Microsoft Download Center](https://www.microsoft.com/download/) and enter **Visual C++** in the search box.
 
@@ -20,7 +19,7 @@ Visual Studio 2015, 2017 and 2019 can be installed side-by-side. You can use Vis
 ## What's New and Conformance History
 
 [What's New for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-Find out what’s new in Visual Studio.
+Find out what's new in Visual Studio.
 
 [What's New for C++ in Visual Studio 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 Find out what was new in C++ for each version of Visual Studio from 2003 through 2015.
@@ -59,7 +58,7 @@ Learn about C++, get an overview of Modern C++, and find links to books, article
 [Learn Visual C++](../build/vscpp-step-1-create.md)<br/>
 Start learning C++.
 
-[Visual C++ Samples](visual-cpp-samples.md)<br/>
+[Visual Studio C++ Samples](visual-cpp-samples.md)<br/>
 Information about samples.
 
 ## C++ development tools
@@ -76,7 +75,7 @@ How to use the productivity features in the C++ editor to refactor, navigate, un
 [Debugging Native Code](/visualstudio/debugger/debugging-native-code)<br/>
 Use the Visual Studio debugger with C++ projects.
 
-[Code analysis for C/C++ overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
+[Code analysis for C/C++ overview](/cpp/code-quality/code-analysis-for-c-cpp-overview)<br/>
 Use SAL annotations or the C++ Core Guidelines checkers to perform static analysis.
 
 [Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>

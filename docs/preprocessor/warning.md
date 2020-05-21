@@ -42,10 +42,10 @@ This directive is functionally equivalent to the following code:
 // Disable warning messages 4507 and 4034.
 #pragma warning( disable : 4507 34 )
 
-// Issue warning 4385 only once.
+// Issue warning C4385 only once.
 #pragma warning( once : 4385 )
 
-// Report warning 4164 as an error.
+// Report warning C4164 as an error.
 #pragma warning( error : 164 )
 ```
 

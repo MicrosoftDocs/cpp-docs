@@ -7,7 +7,7 @@ ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
 ---
 # Consuming libraries and components
 
-Often, a C++ project needs to call functions or access data in a binary file such as static library (.lib files), DLL, Windows Runtime component, COM component, or .NET assembly. In these cases, you have to configure the project so that it can find that binary at build time. The specific steps depend on the type of your project, the type of the binary, and whether the binary is being built in the same solution as your project. 
+Often, a C++ project needs to call functions or access data in a binary file such as static library (.lib files), DLL, Windows Runtime component, COM component, or .NET assembly. In these cases, you have to configure the project so that it can find that binary at build time. The specific steps depend on the type of your project, the type of the binary, and whether the binary is being built in the same solution as your project.
 
 ## Consuming libraries downloaded via vcpkg
 
@@ -18,11 +18,11 @@ To consume a library that you have downloaded by using the **vcpkg** package man
 If your static library project is being built in the same solution:
 
 1. #include the header file(s) for the static library using quotation marks. In a typical solution the path will start with `../<library project name>`. IntelliSense will help you find it.
-2. Add a reference to the static library project. Right-click on **References** under the application project node in **Solution Explorer** and choose **Add Reference**. 
+2. Add a reference to the static library project. Right-click on **References** under the application project node in **Solution Explorer** and choose **Add Reference**.
 
 If the static library is not part of the solution:
 
-1. Right-click on the application project node in **Solution Explorer** and then choose **Properties**. 
+1. Right-click on the application project node in **Solution Explorer** and then choose **Properties**.
 2. In the **VC++ Directories** property page, add the path to the directory where the .lib file is located in **Library Paths** and add the path to the library header file(s) in **Include Directories**.  
 3. In the **Linker > Input** property page, add the name of the .lib file to **Additional Dependencies**.
 
@@ -37,11 +37,11 @@ If the DLL is not part of the application solution, you need the DLL file, the h
 
 ## COM objects
 
-If your native C++ application needs to consume a COM object, and that object is *registered*, then all you have to do is call CoCreateInstance and pass in the CLSID of the object. The system will find it in the Windows Registry and load it. A C++/CLI project can consume a COM object in the same way, or by adding a reference to it from the **Add References > COM** list and consuming it through its [Runtime callable wrapper](/dotnet/framework/interop/runtime-callable-wrapper). 
+If your native C++ application needs to consume a COM object, and that object is *registered*, then all you have to do is call CoCreateInstance and pass in the CLSID of the object. The system will find it in the Windows Registry and load it. A C++/CLI project can consume a COM object in the same way, or by adding a reference to it from the **Add References > COM** list and consuming it through its [Runtime callable wrapper](/dotnet/framework/interop/runtime-callable-wrapper).
 
 ## .NET assemblies and Windows Runtime Components
 
-In UWP or C++/CLI projects, you consume .NET assemblies or Windows Runtime Components by adding a *reference* to the assembly or component. Under the **References** node in a UWP or C++/CLI project, you see references to commonly-used components. Right-click on the **References** node in **Solution Explorer** to bring up the **Reference Manager** and browse through additional components that are known to the system. Click the **Browse** button to navigate to any folder where a custom component is located. Because .NET assemblies and Windows Runtime components contain built-in type information, you can view their methods and classes by right-clicking and choosing **View in Object Browser**. 
+In UWP or C++/CLI projects, you consume .NET assemblies or Windows Runtime Components by adding a *reference* to the assembly or component. Under the **References** node in a UWP or C++/CLI project, you see references to commonly-used components. Right-click on the **References** node in **Solution Explorer** to bring up the **Reference Manager** and browse through additional components that are known to the system. Click the **Browse** button to navigate to any folder where a custom component is located. Because .NET assemblies and Windows Runtime components contain built-in type information, you can view their methods and classes by right-clicking and choosing **View in Object Browser**.
 
 ## Reference properties
 

@@ -11,7 +11,7 @@ helpviewer_keywords: ["std::operator!= (complex)", "std::operator&gt;&gt; (compl
 
 Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
-```
+```cpp
 template <class Type>
 bool operator!=(
     const complex<Type>& left,
@@ -150,8 +150,7 @@ The complex numbers cl3b & cr3b are equal.
 
 Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
-```
-
+```cpp
 template <class Type>
 complex<Type> operator*(
     const complex<Type>& left,
@@ -248,8 +247,7 @@ int main( )
 
 Adds two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
-```
-
+```cpp
 template <class Type>
 complex<Type> operator+(
     const complex<Type>& left,
@@ -713,8 +711,7 @@ The argument of c2 is: 0.523599 radians, which is 30 degrees.
 
 Tests for equality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
-```
-
+```cpp
 template <class Type>
 bool operator==(
     const complex<Type>& left,
@@ -853,8 +850,7 @@ The complex numbers cl3b & cr3b are equal.
 
 Extracts a complex value from the input stream.
 
-```
-
+```cpp
 template <class Type, class Elem, class Traits>
 basic_istream<Elem, Traits>& operator>>(
    basic_istream<Elem, Traits>& Istr,

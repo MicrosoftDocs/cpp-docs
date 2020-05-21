@@ -106,7 +106,7 @@ For an example showing how the vectorizer works in practice, see [Project Austin
 ## See also
 
 [loop](../preprocessor/loop.md)<br/>
-[Parallel Programming in Native Code](https://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
+[Parallel Programming in Native Code](/archive/blogs/nativeconcurrency)<br/>
 [/Qpar (Auto-Parallelizer)](../build/reference/qpar-auto-parallelizer.md)<br/>
 [/Qpar-report (Auto-Parallelizer Reporting Level)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [/Qvec-report (Auto-Vectorizer Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)<br/>

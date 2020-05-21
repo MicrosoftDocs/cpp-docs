@@ -55,7 +55,7 @@ To learn more about how the WinInet classes work, see the article [Internet Prog
 
 **Header:** afxinet.h
 
-##  <a name="cinternetconnection"></a>  CInternetConnection::CInternetConnection
+## <a name="cinternetconnection"></a> CInternetConnection::CInternetConnection
 
 This member function is called when a `CInternetConnection` object is created.
 
@@ -93,7 +93,7 @@ You never call `CInternetConnection` yourself; instead, call the [CInternetSessi
 
 The default value for *dwContext* is sent by MFC to the `CInternetConnection`-derived object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the **InternetConnection**-derived object. The default is set to 1; however, you can explicitly assign a specific context identifier in the [CInternetSession](../../mfc/reference/cinternetsession-class.md#cinternetsession) constructor for the connection. The object and any work it does will be associated with that context ID. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.
 
-##  <a name="getcontext"></a>  CInternetConnection::GetContext
+## <a name="getcontext"></a> CInternetConnection::GetContext
 
 Call this member function to get the context ID for this session.
 
@@ -111,7 +111,7 @@ The context ID is originally specified in [CInternetSession](../../mfc/reference
 
 For more information about how `GetContext` works with other WinInet classes to give the user status information, see the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.
 
-##  <a name="getservername"></a>  CInternetConnection::GetServerName
+## <a name="getservername"></a> CInternetConnection::GetServerName
 
 Call this member function to get the name of the server associated with this Internet connection.
 
@@ -123,7 +123,7 @@ CString GetServerName() const;
 
 The name of the server this connection object is working with.
 
-##  <a name="getsession"></a>  CInternetConnection::GetSession
+## <a name="getsession"></a> CInternetConnection::GetSession
 
 Call this member function to get a pointer to the `CInternetSession` object that's associated with this connection.
 
@@ -135,7 +135,7 @@ CInternetSession* GetSession() const;
 
 A pointer to a [CInternetSession](../../mfc/reference/cinternetsession-class.md) object associated with this Internet connection object.
 
-##  <a name="operator_hinternet"></a>  CInternetConnection::operator HINTERNET
+## <a name="operator_hinternet"></a> CInternetConnection::operator HINTERNET
 
 Use this operator to get the API-level handle for the current Internet session.
 
