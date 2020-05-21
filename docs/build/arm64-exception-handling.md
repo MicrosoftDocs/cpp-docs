@@ -301,12 +301,7 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 |`end`|            11100100: end of unwind code. Implies ret in epilog. |
 |`end_c`|        11100101: end of unwind code in current chained scope. |
 |`save_next`|        11100110: save next non-volatile Int or FP register pair. |
-|`arithmetic(add)`|    11100111'000zxxxx: add cookie reg(z) to lr (0=x28, 1=sp); `add lr, lr, reg(z)` |
-|`arithmetic(sub)`|    11100111'001zxxxx: sub cookie reg(z) from lr (0=x28, 1=sp); `sub lr, lr, reg(z)` |
-|`arithmetic(eor)`|    11100111'010zxxxx: eor lr with cookie reg(z) (0=x28, 1=sp); `eor lr, lr, reg(z)` |
-|`arithmetic(rol)`|    11100111'0110xxxx: simulated rol of lr with cookie reg (x28); xip0 = neg x28; `ror lr, xip0` |
-|`arithmetic(ror)`|    11100111'100zxxxx: ror lr with cookie reg(z) (0=x28, 1=sp); `ror lr, lr, reg(z)` |
-| |            11100111: xxxz----: ---- reserved |
+| |            11100111: reserved |
 | |              11101xxx: reserved for custom stack cases below only generated for asm routines |
 | |              11101000: Custom stack for MSFT_OP_TRAP_FRAME |
 | |              11101001: Custom stack for MSFT_OP_MACHINE_FRAME |
