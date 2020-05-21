@@ -80,7 +80,7 @@ Unlike array or vector, a span doesn't "own” the elements inside it. A span do
 
 **Namespace:** std
 
-## <a name="back"></a> span::back
+## <a name="back"></a> `span::back`
 
 Returns the last element in the span.
 
@@ -111,7 +111,7 @@ void main()
 2
 ```
 
-## <a name="begin"></a> span::begin
+## <a name="begin"></a> `span::begin`
 
 Returns an iterator pointing at the first element in the span.
 
@@ -143,7 +143,7 @@ void main()
 0
 ```
 
-## <a name="data"></a> span::data
+## <a name="data"></a> `span::data`
 
 Returns a pointer to the beginning of the span data.
 
@@ -175,7 +175,7 @@ void main()
 ```
 
 [difference_type](#difference_type)
-## <a name="difference_type"></a> span::difference_type
+## <a name="difference_type"></a> `span::difference_type`
 
 This type represents the number of elements between two elements in a span.
 
@@ -203,7 +203,7 @@ void main()
 2
 ```
 
-## <a name="element_type"></a> span::element_type
+## <a name="element_type"></a> `span::element_type`
 
 The type of the elements in the span.
 
@@ -236,7 +236,7 @@ void main()
 2
 ```
 
-## <a name="empty"></a> span::empty
+## <a name="empty"></a> `span::empty`
 
 Whether the span contains elements.
 
@@ -262,7 +262,7 @@ void main()
 }
 ```
 
-## <a name="end"></a> span::end
+## <a name="end"></a> `span::end`
 
 Returns an iterator to the end of the span.
 
@@ -290,7 +290,7 @@ for (auto it = s1.begin(); it != s1.end(); ++it)
 }
 ```
 
-## <a name="first_view"></a> span::first
+## <a name="first_view"></a> `span::first`
 
 Get a subspan, taken from the front of this span.
 
@@ -345,7 +345,7 @@ mySpan.first(2): 01
 mySpan.first<2>: 01
 ```
 
-## <a name="front"></a> span::front
+## <a name="front"></a> `span::front`
 
 Returns the first element in the span.
 
@@ -377,7 +377,7 @@ void main()
 0
 ```
 
-## <a name="iterator"></a> span::iterator
+## <a name="iterator"></a> `span::iterator`
 
 The type of an iterator over span elements.
 
@@ -409,7 +409,7 @@ void main()
 012
 ```
 
-## <a name="last_view"></a> span::last
+## <a name="last_view"></a> `span::last`
 
 Get a subspan, taken from the end of this span.
 
@@ -464,7 +464,7 @@ mySpan.last(2): 12
 mySpan.last<2>: 12
 ```
 
-## <a name="op_at"></a> span::operator[]
+## <a name="op_at"></a> `span::operator[]`
 
 Access an element in the span at a specified position.
 
@@ -500,7 +500,7 @@ void main()
 1
 ```
 
-## <a name="op_eq"></a> span::operator=
+## <a name="op_eq"></a> `span::operator=`
 
 Assign another span to this one.
 
@@ -543,7 +543,7 @@ void main()
 012
 ```
 
-## <a name="pointer"></a> span::pointer
+## <a name="pointer"></a> `span::pointer`
 
 The types for a pointer and `const` pointer to a span element.
 
@@ -579,7 +579,7 @@ void main()
 90
 ```
 
-## <a name="rbegin"></a> span::rbegin
+## <a name="rbegin"></a> `span::rbegin`
 
 Get a reverse iterator pointing to the last element of this span.
 
@@ -613,7 +613,7 @@ void main()
 210
 ```
 
-## <a name="reference"></a> span::reference
+## <a name="reference"></a> `span::reference`
 
 The types for a reference, and a `const` reference, to a span element.
 
@@ -648,7 +648,7 @@ void main()
 91
 ```
 
-## <a name="rend"></a> span::rend
+## <a name="rend"></a> `span::rend`
 
 Get a random-access iterator to the sentinel just beyond the end of the reversed span.
 
@@ -684,7 +684,7 @@ void main()
 }
 ```
 
-## <a name="reverse_iterator"></a> span::reverse_iterator
+## <a name="reverse_iterator"></a> `span::reverse_iterator`
 
 The type of a reverse iterator for a span.
 
@@ -712,7 +712,7 @@ void main()
 210
 ```
 
-## <a name="size"></a> span::size
+## <a name="size"></a> `span::size`
 
 Get the number of elements in the span.
 
@@ -742,7 +742,7 @@ void main()
 3
 ```
 
-## <a name="size_bytes"></a> span::size_bytes
+## <a name="size_bytes"></a> `span::size_bytes`
 
 Get the size of the elements in the span in bytes.
 
@@ -772,7 +772,7 @@ void main()
 12
 ```
 
-## <a name="size_type"></a> span::size_type
+## <a name="size_type"></a> `span::size_type`
 
 The size of the type of an element in the span.
 
@@ -800,7 +800,7 @@ void main()
 4
 ```
 
-## <a name="span"></a> span::span
+## <a name="span"></a> `span::span`
 
 `span` constructors.
 
@@ -904,7 +904,7 @@ void main()
 }
 ```
 
-## <a name="sub_view"></a> span::subspan
+## <a name="sub_view"></a> `span::subspan`
 
 Gets a subspan from this span.
 
@@ -972,7 +972,7 @@ mySpan.subspan<1,2>: 12
 mySpan.subspan<1>: 12
 ```
 
-## <a name="value_type"></a> span::value_type
+## <a name="value_type"></a> `span::value_type`
 
 The type of the element in the span but without any `const` or `volatile` qualifications.
 
