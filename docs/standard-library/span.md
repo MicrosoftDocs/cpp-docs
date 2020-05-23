@@ -7,7 +7,7 @@ helpviewer_keywords: ["span header"]
 
 # &lt;span&gt;
 
-A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike vector or array, it doesn't "own" the elements it provides access to. 
+A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike `vector` or `array`, it doesn't "own" the elements it provides access to. 
 
 See [span class](span-class.md) for detailed information. Here's an example of how a span can be used:
 
@@ -20,17 +20,17 @@ void Show(std::span<int> someValues)
     // show values in reverse
     for (auto rIt = someValues.rbegin(); rIt != someValues.rend(); ++rIt)
     {
-        cout << *rIt;
+        std::cout << *rIt;
     }
 
     // show a subspan
     for (auto& i : someValues.subspan(1, 2))
     {
-        cout << i;
+        std::cout << i;
     }
 }
 
-void main()
+int main()
 {
     int numbers[]{ 0,1,2,3,4 };
     Show(numbers); // note conversion from array to span
@@ -42,6 +42,8 @@ void main()
 **Header:** \<span>
 
 **Namespace:** std
+
+**Compiler Option:** /std:c++latest
 
 ## Members
 
