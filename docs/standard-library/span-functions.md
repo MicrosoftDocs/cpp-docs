@@ -1,8 +1,8 @@
 ---
 title: "&lt;span&gt; functions"
 ms.date: "05/13/2020"
-f1_keywords: ["span/std::span::as_bytes", "span/std::as_writeable_bytes"]
-helpviewer_keywords: ["std::span [C++], as_writeable_bytes", "std::as_bytes [C++]"]
+f1_keywords: ["span/std::span::as_bytes", "span/std::as_writable_bytes"]
+helpviewer_keywords: ["std::span [C++], as_writable_bytes", "std::as_bytes [C++]"]
 ---
 # &lt;span&gt; functions
 
@@ -11,7 +11,7 @@ The \<span> header includes the following non-member functions that operate on *
 | **Non-member functions** | **Description** |
 |-|-|
 |[as_bytes](#as_bytes) | Get a read-only view of the object representation of the elements in the span. |
-|[as_writeable_bytes](#as_writable_bytes) | Get a read/write view to the object representation of the elements in the span. |
+|[as_writable_bytes](#as_writable_bytes) | Get a read/write view to the object representation of the elements in the span. |
 
 ## <a name="as_bytes"></a>`as_bytes`
 
@@ -19,7 +19,7 @@ Get a read-only view of the object representation of the elements in the span.
 
 ```cpp
 template <class T, size_t Extent>
-auto as_bytes(span<T, Extent> span) noexcept
+auto as_bytes(span<T, Extent> s) noexcept;
 ```
 
 ### Parameters
@@ -28,14 +28,14 @@ auto as_bytes(span<T, Extent> span) noexcept
 The type of the elements in the span.
 
 *Extent*\
-The number of elements in the span (if known at compile time), otherwise `Dynamic_Extent` indicating that the number of elements isn't known until runtime.
+The number of elements in the span (if known at compile time), otherwise `dynamic_extent` indicating that the number of elements isn't known until runtime.
 
-*span*\
+*s*\
 The span to get the raw representation of.
 
 ### Return Value
 
-A `const byte*` to the first item stored in the span. If the span is empty, returns `nullptr`.
+A `const byte*` to the first item stored in the span. If the span is empty, returns `nullptr`. (FIXME: Actually, this returns `span<const byte, MEOW>`.)
 
 ### Example
 
@@ -57,7 +57,7 @@ If `T` isn't `const`, gets a read/write view to the raw byte representation of t
 
 ```cpp
 template <class T, size_t Extent>
-auto as_writeable_bytes(span<T, Extent> span) noexcept
+auto as_writable_bytes(span<T, Extent> s) noexcept;
 ```
 
 ### Parameters
@@ -66,14 +66,14 @@ auto as_writeable_bytes(span<T, Extent> span) noexcept
 The type of the elements in the span.
 
 *Extent*\
-The number of elements in the span (if known at compile time), otherwise `Dynamic_Extent` indicating that the number of elements isn't known until runtime.
+The number of elements in the span (if known at compile time), otherwise `dynamic_extent` indicating that the number of elements isn't known until runtime.
 
-*span*\
+*s*\
 The span to get the raw representation of.
 
 ### Return Value
 
-A `byte*` to the first item stored in the span. If the span is empty, returns `nullptr`.
+A `byte*` to the first item stored in the span. If the span is empty, returns `nullptr`. (FIXME: Actually, this returns `span<byte, MEOW>`.)
 
 ### Example
 
