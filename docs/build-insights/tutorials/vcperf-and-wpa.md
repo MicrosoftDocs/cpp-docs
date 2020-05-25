@@ -45,7 +45,7 @@ Viewing C++ Build Insights traces in WPA requires a special add-in. Follow these
     1. In Visual Studio 2019 version 16.6 and above, this file is located here: `C:\Program Files (x86)\Microsoft Visual Studio\2019\{Edition}\VC\Tools\MSVC\{Version}\bin\Host{Architecture}\{Architecture}`.
     1. In the C++ Build Insights NuGet package, this file is located here: `wpa\{Architecture}`.
     1. In the paths above, replace the variables surrounded by curly brackets as follows:
-        1. `{Edition}` is your Visual Studio 2019 edition such as Community, Professional or Enterprise.
+        1. `{Edition}` is your Visual Studio 2019 edition such as Community, Professional, or Enterprise.
         1. `{Version}` is your MSVC version. Choose the highest one available.
         1. `{Architecture}`: choose `x64` if you have a 64-bit version of Windows. Otherwise, choose `x86`.
     1. The WPA installation directory is typically: `C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit`.
@@ -89,7 +89,7 @@ Here's what a typical *vcperf.exe* command sequence looks like in a developer co
 
 - *vcperf.exe* collects information about all MSVC tools running on your system. As a result, you don't have to start your build from the same command prompt you used to collect the trace. You can build your project from either a different command prompt, or even in Visual Studio.
 
-### vcperf.exe is open source
+### vcperf.exe is open-source
 
 If you wish to build and run your own version of *vcperf.exe*, feel free to clone it from the [vcperf GitHub repository](https://github.com/microsoft/vcperf).
 
