@@ -25,33 +25,39 @@ A version of WPA that supports C++ Build Insights is currently only available in
 
 NOTE: Windows 8 or above is required for installing the Windows Performance Analyzer.
 
-1. Browse to the Windows ADK Insider Preview [download page](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewADK).
+1. Browse to the Windows ADK [download page](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
-1. Download the Windows ADK Insider Preview. It's a disk image.
-
-1. Open the disk image and run the *adksetup.exe* installer.
+1. Download and install the latest version of the Windows ADK.
 
 1. When prompted for the features that you want to install, select the **Windows Performance Toolkit**. You may select other features if you wish, but they're not required to install WPA.
 
    ![The Windows Performance Analyzer installer's feature selection screen](media/wpa-installation.png)
 
-### <a name="configuration-steps"></a> To configure Build Insights
+### <a name="configuration-steps"></a> To configure WPA
 
-1. Launch WPA.
+Viewing C++ Build Insights traces in WPA requires a special add-in. Follow these steps to install it:
 
-1. Select **Window** > **Select Tables (Experimental)**.
+1. Obtain the add-in by downloading one of the components below. You don't need to get both. Choose the one that you find most convenient.
+    1. [Visual Studio 2019 version 16.6 and above](https://visualstudio.microsoft.com/downloads/), or,
+    1. [C++ Build Insights NuGet package](https://www.nuget.org/packages/Microsoft.Cpp.BuildInsights/).
 
-1. Scroll down to the **Diagnostics** section.
+1. Copy the `perf_msvcbuildinsights.dll` file into your WPA installation directory.
+    1. In Visual Studio 2019 version 16.6 and above, this file is located here: `C:\Program Files (x86)\Microsoft Visual Studio\2019\{Edition}\VC\Tools\MSVC\{Version}\bin\Host{Architecture}\{Architecture}`.
+    1. In the C++ Build Insights NuGet package, this file is located here: `wpa\{Architecture}`.
+    1. In the paths above, replace the variables surrounded by curly brackets as follows:
+        1. `{Edition}` is your Visual Studio 2019 edition such as Community, Professional or Enterprise.
+        1. `{Version}` is your MSVC version. Choose the highest one available.
+        1. `{Architecture}`: choose `x64` if you have a 64-bit version of Windows. Otherwise, choose `x86`.
+    1. The WPA installation directory is typically: `C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit`.
 
-1. Select all the MSVC Build Insights views.
-
-   ![Windows Performance Analyzer's table selection panel](media/wpa-configuration.png)
+1. In your WPA installation directory, open the `perfcore.ini` file and add an entry for `perf_msvcbuildinsights.dll`.
 
 ## Step 2: Trace your build with vcperf.exe
 
 To view C++ Build Insights data, first collect it into a trace file by following these steps:
 
-1. Open a native tools or cross tools developer command prompt for Visual Studio 2019 in administrator mode. (Right-click the Start menu item and choose **More** > **Run as administrator**.)
+1. Open an **x64** or **x86 Native Tools Command Prompt for VS 2019** in administrator mode. (Right-click the Start menu item and choose **More** > **Run as administrator**.)
+    1. Choose **x64** if you have a 64-bit version of Windows. Otherwise, choose **x86**.
 
 1. In the command prompt window, enter this command:
 
@@ -83,13 +89,18 @@ Here's what a typical *vcperf.exe* command sequence looks like in a developer co
 
 - *vcperf.exe* collects information about all MSVC tools running on your system. As a result, you don't have to start your build from the same command prompt you used to collect the trace. You can build your project from either a different command prompt, or even in Visual Studio.
 
+### vcperf.exe is open source
+
+If you wish to build and run your own version of *vcperf.exe*, feel free to clone it from the [vcperf GitHub repository](https://github.com/microsoft/vcperf).
+
 ## Step 3: View your trace in Windows Performance Analyzer
 
 Launch WPA and open the trace you just collected. WPA should recognize it as a C++ Build Insights trace, and the following views should appear in the Graph Explorer panel on the left:
 
 - Build Explorer
 - Files
-- Function
+- Functions
+- Template Instantiations
 
 If you can't see these views, double-check that WPA is configured correctly, as described in [Step 1](#configuration-steps). You can view your build data by dragging the views into the empty Analysis window on the right, as shown here:
 
