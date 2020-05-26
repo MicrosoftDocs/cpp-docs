@@ -1,4 +1,4 @@
-- name: C++ documentation
+- name: C++ language documentation
   href: ../cpp/index.yml
 - name: C++ language reference
   expanded: true
