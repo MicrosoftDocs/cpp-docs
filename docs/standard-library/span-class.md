@@ -8,11 +8,11 @@ helpviewer_keywords: ["std::span [C++]", "std::span [C++], const_iterator", "std
 ---
 # span Class (C++ Standard Library)
 
-Provides a lightweight view over a contiguous sequence of objects. A span provides a safe way to iterate over, and index into, objects that are arranged back-to-back in memory.
+Provides a lightweight view over a contiguous sequence of objects. A span provides a safe way to iterate over, and index into, objects that are arranged back-to-back in memory (for example, objects stored in a built-in array, `std::array`, or `std::vector`).
 
-If you typically access a sequence of back-to-back objects using a pointer indexed by the size of the objects, span is a safer, lightweight alternative.
+If you typically access a sequence of back-to-back objects using a pointer and an index, span is a safer, lightweight alternative.
 
-A span's size is determined at compile time by specifying it as part of the template declaration, or at runtime by specifying `dynamic-size`.
+A span's size is determined at compile time by specifying it as a template argument, or at runtime by specifying `dynamic_extent`.
 
 ## Syntax
 
@@ -34,8 +34,8 @@ class span;
 
 | **Type Definitions** | **Description** |
 |-|-|
-| [const_pointer](#pointer) | The type of a const pointer to a span element. |
-| [const_reference](#reference) | The type of a const reference to an element. |
+| [const_pointer](#pointer) | The type of a pointer to a `const` element. |
+| [const_reference](#reference) | The type of a reference to a `const` element. |
 | [difference_type](#difference_type) | The type of a signed distance between two elements. |
 | [element_type](#element_type) | The type of a span element. |
 | [iterator](#iterator) | The type of an iterator for a span. |
@@ -66,19 +66,21 @@ class span;
 | [subspan](#sub_view) | Gets a subspan from anywhere in the span.|
 | **Operators** | **Description** |
 |[span::operator=](#op_eq)| Replaces the span.|
-|[span::operator\[\]](#op_at)| Access an element at a specified position.|
+|[span::operator\[\]](#op_at)| Access an element at a specified position. (FIXME: MENTIONED TWICE?) |
 
 ## Remarks
 
 All `span` member functions have constant time complexity.
 
-Unlike array or vector, a span doesn't "own” the elements inside it. A span doesn't free any storage for the items inside it because it doesn't own the storage for those objects.
+Unlike `array` or `vector`, a span doesn't "own" the elements inside it. A span doesn't free any storage for the items inside it because it doesn't own the storage for those objects.
 
 ## Requirements
 
 **Header:** \<span>
 
 **Namespace:** std
+
+**Compiler Option:** /std:c++latest
 
 ## <a name="back"></a> `span::back`
 
@@ -97,11 +99,12 @@ A reference to the last element in the span.
 ```cpp
 #include <span>
 #include <iostream>
+using namespace std; // FIXME: Lack of qualification occurs in many examples below; need using or std::
 
-void main()
+int main() // FIXME: void main() occurs in many examples below
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a); // FIXME, STYLE: span <int> with an unnecessary space occurs in many examples below
 
     cout << mySpan.back();
 }
@@ -116,7 +119,7 @@ void main()
 Returns an iterator pointing at the first element in the span.
 
 ```cpp
-constexpr iterator begin() const noexcept
+constexpr iterator begin() const noexcept;
 ```
 
 ### Return value
@@ -153,7 +156,7 @@ constexpr pointer data() const noexcept;
 
 ### Return Value
 
-A pointer to the first item stored in the span. If the span is empty, returns `nullptr`.
+A pointer to the first item stored in the span.
 
 ### Example
 
@@ -174,7 +177,6 @@ void main()
 0
 ```
 
-[difference_type](#difference_type)
 ## <a name="difference_type"></a> `span::difference_type`
 
 This type represents the number of elements between two elements in a span.
@@ -194,13 +196,13 @@ void main()
     int a[] = { 0,1,2 };
     span <int> mySpan(a);
 
-    pan<int>::difference_type distance = mySpan[2] - mySpan[0];
+    span<int>::difference_type distance = mySpan.end() - mySpan.begin();
     cout << distance << std::endl;
 }
 ```
 
 ```Output
-2
+3
 ```
 
 ## <a name="element_type"></a> `span::element_type`
@@ -241,7 +243,7 @@ void main()
 Whether the span contains elements.
 
 ```cpp
-constexpr bool empty() const noexcept
+constexpr bool empty() const noexcept;
 ```
 
 ### Return Value
@@ -267,7 +269,7 @@ void main()
 Returns an iterator to the end of the span.
 
 ```cpp
-constexpr iterator end() const;
+constexpr iterator end() const noexcept;
 ```
 
 ### Return Value
@@ -295,7 +297,7 @@ for (auto it = s1.begin(); it != s1.end(); ++it)
 Get a subspan, taken from the front of this span.
 
 ```cpp
-constexpr auto first(const size_type count) const noexcept;
+constexpr auto first(size_type count) const noexcept;
 template <size_t count> constexpr auto first() const noexcept;
 ```
 
@@ -368,7 +370,7 @@ void main()
     int a[] = { 0,1,2 };
     span <int> mySpan(a);
 
-    auto i = mySpan.first();
+    auto i = mySpan.front();
     cout << i;
 }
 ```
@@ -382,7 +384,7 @@ void main()
 The type of an iterator over span elements.
 
 ```cpp
-using iterator = _Span_iterator<T>;
+using iterator = implementation-defined-iterator-type;
 ```
 
 ### Remarks
@@ -469,7 +471,7 @@ mySpan.last<2>: 12
 Access an element in the span at a specified position.
 
 ```cpp
-constexpr reference operator[](const size_type offset)
+constexpr reference operator[](size_type offset) const;
 ```
 
 ### Parameters
@@ -491,7 +493,6 @@ void main()
 {
     int a[] = { 0,1,2 };
     span <int> mySpan(a);
-    auto i = mySpan.begin();
     cout << mySpan[1];
 }
 ```
@@ -531,9 +532,9 @@ void main()
 {
     int a[] = { 0,1,2 };
     span <int> mySpan(a);
-    span <int> mySpan2 = mySpan;
-    for (auto it : mySpan2)
-    {
+    span <int> mySpan2 = mySpan; // FIXME: This is a copy-initialization, not a copy assignment
+    for (auto it : mySpan2) // FIXME: Range-for iterates over elements, not iterators. This will compile and work,
+    { // FIXME: but "it" is misleadingly named (and copied). Should be "auto& i : mySpan2" like other examples.
         cout << it;
     }
 }
@@ -653,7 +654,7 @@ void main()
 Get a random-access iterator to the sentinel just beyond the end of the reversed span.
 
 ```cpp
-constexpr reverse_iterator rend() const;
+constexpr reverse_iterator rend() const noexcept;
 ```
 
 ### Return Value
@@ -774,7 +775,7 @@ void main()
 
 ## <a name="size_type"></a> `span::size_type`
 
-The size of the type of an element in the span.
+An unsigned type, suitable for storing the number of elements in a span.
 
 ```cpp
 using size_type = size_t;
@@ -791,13 +792,13 @@ void main()
     int a[] = { 0,1,2 };
     span <int> mySpan(a);
 
-    span<int>::size_type szType = sizeof(mySpan[0]);
+    span<int>::size_type szType = mySpan.size();
     cout << szType;
 }
 ```
 
 ```Output
-4
+3
 ```
 
 ## <a name="span"></a> `span::span`
@@ -805,14 +806,15 @@ void main()
 `span` constructors.
 
 ```cpp
+// FIXME: dynamicExtent should be dynamic_extent below, repeatedly
 constexpr span() noexcept
 requires (Extent == 0 || Extent == dynamicExtent) = default;
 
-template <It>
+template <class It>
 constexpr explicit(Extent != dynamicExtent)
 span(It first, size_type count) noexcept
 
-template <It, End>
+template <class It, class End>
 constexpr explicit(Extent != dynamicExtent)
 span(It first, End last) noexcept(noexcept(last - first))
 
@@ -874,7 +876,7 @@ A span doesn't free storage for items in the span because it doesn't own the sto
 |---------|---------|
 |`span()` | Constructs an empty span. Only considered during overload resolution when the template parameter `Extent` is `0` or `dynamic_extent`.|
 |`span(It first, size_type count)` | Constructs a span from the first `count` elements from iterator `first`.  Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. |
-|`span(It first, End last)` | Constructs a span from the elements in iterator `first` until the sentinel `end` is reached. Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. `It` must be a `contiguous_iterator`.  |
+|`span(It first, End last)` | Constructs a span from the elements in iterator `first` until the sentinel `last` is reached. Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. `It` must be a `contiguous_iterator`.  |
 |`span(array<T, N>& arr) noexcept;`<br /><br />`span(const array<T, N>& arr) noexcept;`<br /><br />`span(type_identity_t<element_type> (&arr)[N]) noexcept;` |  Constructs a span from `N` elements of the specified array. Only considered during overload resolution when template parameter `Extent` is `dynamic_extent` or equals `N`. |
 |`span(R&& r)` |  Constructs a span from a range. Only participates in overload resolution if template parameter `Extent` isn't `dynamic_extent`.|
 |`span(const span& other)` |  The compiler-generated copy constructor. A shallow copy of the data pointer is safe because the span doesn't allocate the memory to hold the elements. |
@@ -910,21 +912,18 @@ Gets a subspan from this span.
 
 ```cpp
 constexpr span<element_type, dynamic_extent>
-subspan(size_t offset, size_t count = dynamic_extent) const noexcept;
-
-constexpr span<element_type, dynamic_extent>
-subspan(const size_type offset, const size_type count = dynamic_extent) const noexcept;
+subspan(size_type offset, size_type count = dynamic_extent) const noexcept;
 
 template <size_t offset, size_t count = dynamic_extent>
 constexpr span<element_type,
-        count != dynamic_extent ? count : (Extent != dynamic_extent ? Extent - _Offset : )>
+        count != dynamic_extent ? count : (Extent != dynamic_extent ? Extent - _Offset : FIXME)>
         subspan() const noexcept
 ```
 
 ### Parameters
 
 *count*\
-The number of elements from the end this span to put in the subspan. If span is `dynamic_extent` (the default value), then gets the elements from `offset` to the end of this span.
+The number of elements to put in the subspan. If `count` is `dynamic_extent` (the default value), then gets the elements from `offset` to the end of this span.
 
 *offset*\
 The location in this span to start the subspan.
@@ -958,7 +957,7 @@ void main()
     {
         cout << i;
     }
-    cout << "\nmySpan.subspan<1>: ";
+    cout << "\nmySpan.subspan<1>: "; // FIXME: Doesn't match actual call
     for (auto& i : mySpan.subspan(1))
     {
         cout << i;
@@ -1025,8 +1024,8 @@ span(It, End) -> span<remove_reference_t<iter_reference_t<It>>>;
 // Allows the element type to be deduced from a range.
 // The range must be contiguous
 
-template <_RANGES contiguous_range Rng>
-span(Rng &&) -> span<remove_reference_t<_RANGES range_reference_t<Rng>>>;
+template <ranges::contiguous_range Rng>
+span(Rng &&) -> span<remove_reference_t<ranges::range_reference_t<Rng>>>;
 ```
 
 ## See also
