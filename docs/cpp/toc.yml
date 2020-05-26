@@ -8,7 +8,6 @@
     - name: Welcome back to C++ (Modern C++)
       href: ../cpp/welcome-back-to-cpp-modern-cpp.md
     - name: Lexical conventions
-      expanded: false
       items: 
         - name: Lexical conventions
           href: ../cpp/lexical-conventions.md
@@ -29,7 +28,6 @@
         - name: User-defined literals
           href: ../cpp/user-defined-literals-cpp.md
     - name: Basic concepts
-      expanded: false
       items: 
         - name: Basic concepts
           href: ../cpp/basic-concepts-cpp.md
@@ -60,7 +58,6 @@
         - name: Standard conversions
           href: ../cpp/standard-conversions.md
     - name: Built-in types
-      expanded: false
       items: 
         - name: Built-in types
           href: ../cpp/fundamental-types-cpp.md
@@ -91,7 +88,6 @@
         - name: __ptr32, __ptr64
           href: ../cpp/ptr32-ptr64.md
         - name: Numerical limits
-          expanded: false
           items: 
             - name: Numerical limits
               href: ../cpp/numerical-limits-cpp.md
@@ -100,7 +96,6 @@
             - name: Floating limits
               href: ../cpp/floating-limits.md
     - name: Declarations and definitions
-      expanded: false
       items: 
         - name: Declarations and definitions
           href: ../cpp/declarations-and-definitions-cpp.md
@@ -127,7 +122,6 @@
         - name: Attributes
           href: ../cpp/attributes.md
     - name: Built-in operators, precedence, and associativity
-      expanded: false
       items: 
         - name: Built-in operators, precedence, and associativity
           href: ../cpp/cpp-built-in-operators-precedence-and-associativity.md
@@ -198,12 +192,10 @@
         - name: "Unary plus and negation operators: + and -"
           href: ../cpp/unary-plus-and-negation-operators-plus-and.md
     - name: Expressions
-      expanded: false
       items: 
         - name: Expressions
           href: ../cpp/expressions-cpp.md
         - name: Types of expressions
-          expanded: false
           items: 
             - name: Types of expressions
               href: ../cpp/types-of-expressions.md
@@ -222,12 +214,10 @@
         - name: Semantics of expressions
           href: ../cpp/semantics-of-expressions.md
         - name: Casting
-          expanded: false
           items: 
             - name: Casting
               href: ../cpp/casting.md
             - name: Casting operators
-              expanded: false
               items: 
                 - name: Casting operators
                   href: ../cpp/casting-operators.md
@@ -242,7 +232,6 @@
                 - name: reinterpret_cast operator
                   href: ../cpp/reinterpret-cast-operator.md
             - name: Run-Time Type Information (RTTI)
-              expanded: false
               items: 
                 - name: Run-Time Type Information (RTTI)
                   href: ../cpp/run-time-type-information.md
@@ -251,7 +240,6 @@
                 - name: type_info class
                   href: ../cpp/type-info-class.md
     - name: Statements
-      expanded: false
       items: 
         - name: Statements
           href: ../cpp/statements-cpp.md
@@ -260,7 +248,6 @@
         - name: Labeled statements
           href: ../cpp/labeled-statements.md
         - name: Expression statement
-          expanded: false
           items: 
             - name: Expression statement
               href: ../cpp/expression-statement.md
@@ -269,7 +256,6 @@
         - name: Compound statements (Blocks)
           href: ../cpp/compound-statements-blocks.md
         - name: Selection statements
-          expanded: false
           items: 
             - name: Selection statements
               href: ../cpp/selection-statements-cpp.md
@@ -282,7 +268,6 @@
             - name: switch statement
               href: ../cpp/switch-statement-cpp.md
         - name: Iteration statements
-          expanded: false
           items: 
             - name: Iteration statements
               href: ../cpp/iteration-statements-cpp.md
@@ -295,7 +280,6 @@
             - name: Range-based for statement
               href: ../cpp/range-based-for-statement-cpp.md
         - name: Jump statements
-          expanded: false
           items: 
             - name: Jump statements
               href: ../cpp/jump-statements-cpp.md
@@ -316,7 +300,6 @@
     - name: Unions
       href: ../cpp/unions.md
     - name: Functions
-      expanded: false
       items: 
         - name: Functions
           href: ../cpp/functions-cpp.md
@@ -333,14 +316,12 @@
         - name: Inline functions
           href: ../cpp/inline-functions-cpp.md
     - name: Operator overloading
-      expanded: false
       items: 
         - name: Operator overloading
           href: ../cpp/operator-overloading.md
         - name: General rules for operator overloading
           href: ../cpp/general-rules-for-operator-overloading.md
         - name: Overloading unary operators
-          expanded: false
           items: 
             - name: Overloading unary operators
               href: ../cpp/overloading-unary-operators.md
@@ -357,7 +338,6 @@
         - name: Member access
           href: ../cpp/member-access.md
     - name: Classes and structs
-      expanded: false
       items: 
         - name: Classes and structs
           href: ../cpp/classes-and-structs-cpp.md
@@ -368,7 +348,6 @@
         - name: Class member overview
           href: ../cpp/class-member-overview.md
         - name: Member access control
-          expanded: false
           items: 
             - name: Member access control
               href: ../cpp/member-access-control-cpp.md
@@ -389,7 +368,6 @@
         - name: Portability at ABI boundaries
           href: ../cpp/portability-at-abi-boundaries-modern-cpp.md 
         - name: Constructors
-          expanded: false
           items: 
             - name: Constructors
               href: ../cpp/constructors-cpp.md
@@ -402,7 +380,6 @@
         - name: Destructors
           href: ../cpp/destructors-cpp.md
         - name: Overview of member functions
-          expanded: false
           items: 
             - name: Overview of member functions
               href: ../cpp/overview-of-member-functions.md
@@ -413,7 +390,6 @@
             - name: final specifier
               href: ../cpp/final-specifier.md
         - name: Inheritance
-          expanded: false
           items: 
             - name: Inheritance
               href: ../cpp/inheritance-cpp.md
@@ -460,7 +436,6 @@
         - name: Bit fields
           href: ../cpp/cpp-bit-fields.md
     - name: Lambda expressions in C++
-      expanded: false
       items: 
         - name: Lambda expressions in C++
           href: ../cpp/lambda-expressions-in-cpp.md
@@ -473,7 +448,6 @@
     - name: Arrays
       href: ../cpp/arrays-cpp.md
     - name: References
-      expanded: false
       items: 
         - name: References
           href: ../cpp/references-cpp.md
@@ -488,7 +462,6 @@
         - name: References to pointers
           href: ../cpp/references-to-pointers.md
     - name: Pointers
-      expanded: false
       items: 
         - name: Pointers
           href: ../cpp/pointers-cpp.md
@@ -511,7 +484,6 @@
         - name: Pimpl for compile-time encapsulation
           href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md  
     - name: Exception handling in C++
-      expanded: false
       items: 
         - name: Exception handling in C++
           href: ../cpp/exception-handling-in-visual-cpp.md
@@ -534,7 +506,6 @@
         - name: Unhandled C++ exceptions
           href: ../cpp/unhandled-cpp-exceptions.md
         - name: Mixing C (Structured) and C++ exceptions
-          expanded: false
           items: 
             - name: Mixing C (Structured) and C++ exceptions
               href: ../cpp/mixing-c-structured-and-cpp-exceptions.md
@@ -543,12 +514,10 @@
             - name: Handle structured exceptions in C++
               href: ../cpp/exception-handling-differences.md
         - name: Structured Exception Handling (SEH) (C/C++)
-          expanded: false
           items: 
             - name: Structured Exception Handling (SEH) (C/C++)
               href: ../cpp/structured-exception-handling-c-cpp.md
             - name: Writing an exception handler
-              expanded: false
               items: 
                 - name: Writing an exception handler
                   href: ../cpp/writing-an-exception-handler.md
@@ -563,7 +532,6 @@
                 - name: Restrictions on exception handlers
                   href: ../cpp/restrictions-on-exception-handlers.md
             - name: Writing a termination handler
-              expanded: false
               items: 
                 - name: Writing a termination handler
                   href: ../cpp/writing-a-termination-handler.md
@@ -578,21 +546,18 @@
         - name: Transporting exceptions between threads
           href: ../cpp/transporting-exceptions-between-threads.md
     - name: Assertion and user-supplied messages
-      expanded: false
       items: 
         - name: Assertion and user-supplied messages
           href: ../cpp/assertion-and-user-supplied-messages-cpp.md
         - name: static_assert
           href: ../cpp/static-assert.md
     - name: Modules
-      expanded: false
       items:
         - name: Overview of modules in C++
           href: ../cpp/modules-cpp.md
         - name: module, import, export
           href: ../cpp/import-export-module.md
     - name: Templates
-      expanded: false
       items: 
         - name: Templates
           href: ../cpp/templates-cpp.md
@@ -601,7 +566,6 @@
         - name: Class templates
           href: ../cpp/class-templates.md
         - name: Function templates
-          expanded: false
           items: 
             - name: Function templates
               href: ../cpp/function-templates.md
@@ -618,7 +582,6 @@
         - name: Template specialization
           href: ../cpp/template-specialization-cpp.md
         - name: Templates and name resolution
-          expanded: false
           items: 
             - name: Templates and name resolution
               href: ../cpp/templates-and-name-resolution.md
@@ -631,7 +594,6 @@
         - name: Source code organization (C++ templates)
           href: ../cpp/source-code-organization-cpp-templates.md
     - name: Event handling
-      expanded: false
       items: 
         - name: Event handling
           href: ../cpp/event-handling.md
@@ -648,12 +610,10 @@
         - name: Event handling in COM
           href: ../cpp/event-handling-in-com.md
     - name: Microsoft-specific modifiers
-      expanded: false
       items: 
         - name: Microsoft-specific modifiers
           href: ../cpp/microsoft-specific-modifiers.md
         - name: Based addressing
-          expanded: false
           items: 
             - name: Based addressing
               href: ../cpp/based-addressing.md
@@ -662,12 +622,10 @@
             - name: Based pointers
               href: ../cpp/based-pointers-cpp.md
         - name: Calling conventions
-          expanded: false
           items: 
             - name: Calling conventions
               href: ../cpp/calling-conventions.md
             - name: Argument passing and naming conventions
-              expanded: false
               items: 
                 - name: Argument passing and naming conventions
                   href: ../cpp/argument-passing-and-naming-conventions.md
@@ -684,14 +642,12 @@
                 - name: __vectorcall
                   href: ../cpp/vectorcall.md
             - name: "Calling example: Function prototype and call"
-              expanded: false
               items: 
                 - name: "Calling example: Function prototype and call"
                   href: ../cpp/calling-example-function-prototype-and-call.md
                 - name: Results of calling example
                   href: ../cpp/results-of-calling-example.md
             - name: Naked function calls
-              expanded: false
               items: 
                 - name: Naked function calls
                   href: ../cpp/naked-function-calls.md
@@ -708,7 +664,6 @@
         - name: tile_static keyword
           href: ../cpp/tile-static-keyword.md
         - name: __declspec
-          expanded: false
           items: 
             - name: __declspec
               href: ../cpp/declspec.md
@@ -725,7 +680,6 @@
             - name: deprecated
               href: ../cpp/deprecated-cpp.md
             - name: dllexport, dllimport
-              expanded: false
               items: 
                 - name: dllexport, dllimport
                   href: ../cpp/dllexport-dllimport.md
@@ -778,12 +732,10 @@
         - name: __func__
           href: ../cpp/func.md
     - name: Compiler COM support
-      expanded: false
       items: 
         - name: Compiler COM support
           href: ../cpp/compiler-com-support.md
         - name: Compiler COM global functions
-          expanded: false
           items: 
             - name: Compiler COM global functions
               href: ../cpp/compiler-com-global-functions.md
@@ -796,17 +748,14 @@
             - name: _set_com_error_handler
               href: ../cpp/set-com-error-handler.md
         - name: Compiler COM support classes
-          expanded: false
           items: 
             - name: Compiler COM support classes
               href: ../cpp/compiler-com-support-classes.md
             - name: _bstr_t class
-              expanded: false
               items: 
                 - name: _bstr_t class
                   href: ../cpp/bstr-t-class.md
                 - name: _bstr_t member functions
-                  expanded: false
                   items: 
                     - name: _bstr_t member functions
                       href: ../cpp/bstr-t-member-functions.md
@@ -827,7 +776,6 @@
                     - name: "_bstr_t::length"
                       href: ../cpp/bstr-t-length.md
                 - name: _bstr_t operators
-                  expanded: false
                   items: 
                     - name: _bstr_t operators
                       href: ../cpp/bstr-t-operators.md
@@ -842,12 +790,10 @@
                     - name: "_bstr_t::wchar_t*, _bstr_t::char*"
                       href: ../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md
             - name: _com_error class
-              expanded: false
               items: 
                 - name: _com_error class
                   href: ../cpp/com-error-class.md
                 - name: _com_error member functions
-                  expanded: false
                   items: 
                     - name: _com_error member functions
                       href: ../cpp/com-error-member-functions.md
@@ -876,19 +822,16 @@
                     - name: "_com_error::WCodeToHRESULT"
                       href: ../cpp/com-error-wcodetohresult.md
                 - name: _com_error operators
-                  expanded: false
                   items: 
                     - name: _com_error operators
                       href: ../cpp/com-error-operators.md
                     - name: "_com_error::operator ="
                       href: ../cpp/com-error-operator-equal.md
             - name: _com_ptr_t class
-              expanded: false
               items: 
                 - name: _com_ptr_t class
                   href: ../cpp/com-ptr-t-class.md
                 - name: _com_ptr_t member functions
-                  expanded: false
                   items: 
                     - name: _com_ptr_t member functions
                       href: ../cpp/com-ptr-t-member-functions.md
@@ -911,7 +854,6 @@
                     - name: "_com_ptr_t::Release"
                       href: ../cpp/com-ptr-t-release.md
                 - name: _com_ptr_t operators
-                  expanded: false
                   items: 
                     - name: _com_ptr_t operators
                       href: ../cpp/com-ptr-t-operators.md
@@ -924,12 +866,10 @@
                 - name: Relational function templates
                   href: ../cpp/relational-function-templates.md
             - name: _variant_t class
-              expanded: false
               items: 
                 - name: _variant_t class
                   href: ../cpp/variant-t-class.md
                 - name: _variant_t member functions
-                  expanded: false
                   items: 
                     - name: _variant_t member functions
                       href: ../cpp/variant-t-member-functions.md
@@ -946,7 +886,6 @@
                     - name: "_variant_t::SetString"
                       href: ../cpp/variant-t-setstring.md
                 - name: _variant_t operators
-                  expanded: false
                   items: 
                     - name: _variant_t operators
                       href: ../cpp/variant-t-operators.md
