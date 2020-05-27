@@ -1,0 +1,52 @@
+### YamlMime:Landing
+title: Mobile Development with C++ | Windows UWP, Android and iOS # < 60 chars
+summary: Create native C++ apps for iOS, Android and Windows devices with Visual Studio. # < 160 chars
+
+metadata:
+  title: Mobile development with C++ documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Create native C++ apps for iOS, Android, and Windows devices with Visual Studio.
+  ms.topic: landing-page
+  author: corob-msft
+  ms.author: corob
+  ms.date: 05/26/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Learn how to build cross-platform mobile apps 
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Install cross-platform mobile development with C++
+            url: install-visual-cpp-for-cross-platform-mobile-development.md
+      - linkListType: overview
+        links:
+          - text: Overview of cross-platform mobile development with C++
+            url: visual-cpp-for-cross-platform-mobile-development.md
+      - linkListType: tutorial
+        links:
+          - text: Build an OpenGL ES application on Android and iOS
+            url: build-an-opengl-es-application-on-android-and-ios.md
+          - text: Create an Android Native Activity App
+            url: create-an-android-native-activity-app.md
+      - linkListType: learn
+        links:
+          - text: Cross-platform mobile development examples
+            url: cross-platform-mobile-development-examples.md
+
+  # Card (optional)
+  - title: Cross-platform reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: C++ cross-platform property page reference
+            url: cross-platform-prop-pages.md
+          - text: Universal Windows Platform (UWP) documentation
+            url: /cpp/cppcx/universal-windows-apps-cpp
+          - text: iOS API documentation
+            url: https://developer.apple.com/reference
+          - text: Android API documentation
+            url: https://developer.android.com/guide/index.html
