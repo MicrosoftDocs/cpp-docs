@@ -35,13 +35,17 @@ The span to get the raw representation of.
 
 ### Return Value
 
-A `const byte*` to the first item stored in the span. If the span is empty, returns `nullptr`. (FIXME: Actually, this returns `span<const byte, MEOW>`.)
+A `span<const byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<const std::byte*>(s.data()), s.size_bytes()}'
+If the span is empty, returns `nullptr`.
+
 
 ### Example
 
 ```cpp
 #include <span>
 #include <iostream>
+
+using namespace std;
 
 void main()
 {
@@ -73,7 +77,8 @@ The span to get the raw representation of.
 
 ### Return Value
 
-A `byte*` to the first item stored in the span. If the span is empty, returns `nullptr`. (FIXME: Actually, this returns `span<byte, MEOW>`.)
+A `span<byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<std::byte*>(s.data()), s.size_bytes()}'
+If the span is empty, returns `nullptr`.
 
 ### Example
 
@@ -81,11 +86,13 @@ A `byte*` to the first item stored in the span. If the span is empty, returns `n
 #include <span>
 #include <iostream>
 
+using namespace std;
+
 void main()
 {
     int a[] = { 0,1,2 };
     span <int> mySpan(a);
-    auto bytes = std::as_writable_bytes(mySpan);
+    auto bytes = as_writable_bytes(mySpan);
 }
 ```
 

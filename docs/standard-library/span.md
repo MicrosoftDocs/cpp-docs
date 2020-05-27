@@ -65,7 +65,7 @@ int main()
 |||
 |-|-|
 | [as_bytes](span-functions.md#as_bytes)| Get the underlying read-only bytes of the span. |
-| [as_writeable_bytes](span-functions.md#as_writable_bytes) | Get the underlying bytes of the span. |
+| [as_writable_bytes](span-functions.md#as_writable_bytes) | Get the underlying bytes of the span. |
 
 ### Constants
 
