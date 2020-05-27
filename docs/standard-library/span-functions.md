@@ -35,7 +35,7 @@ The span to get the raw representation of.
 
 ### Return Value
 
-A `span<const byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<const std::byte*>(s.data()), s.size_bytes()}'
+A `span<const byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<const std::byte*>(s.data()), s.size_bytes()}`
 
 ### Example
 
