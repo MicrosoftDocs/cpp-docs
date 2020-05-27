@@ -55,7 +55,7 @@ class span;
 |[back](#back) | Get the last element in the span.|
 |[data](#data) | Get the address of the first element in the span.|
 |[front](#front) | Get the first element in the span.|
-|[operator\[\]](#op_at) | Get the element at the index.|
+|[operator\[\]](#op_at) | Access an element at a specified position.|
 | **Observers** | **Description** |
 |[empty](#empty)| Tests whether the span is empty.|
 |[size](#size) | Returns the number of elements in the span.|
@@ -66,7 +66,7 @@ class span;
 | [subspan](#sub_view) | Gets a subspan from anywhere in the span.|
 | **Operators** | **Description** |
 |[span::operator=](#op_eq)| Replaces the span.|
-|[span::operator\[\]](#op_at)| Access an element at a specified position. (FIXME: MENTIONED TWICE?) |
+|[span::operator\[\]](#op_at)| Access an element at a specified position. |
 
 ## Remarks
 
@@ -99,12 +99,13 @@ A reference to the last element in the span.
 ```cpp
 #include <span>
 #include <iostream>
-using namespace std; // FIXME: Lack of qualification occurs in many examples below; need using or std::
 
-int main() // FIXME: void main() occurs in many examples below
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span<int> mySpan(a); // FIXME, STYLE: span <int> with an unnecessary space occurs in many examples below
+    span<int> mySpan(a);
 
     cout << mySpan.back();
 }
@@ -132,10 +133,12 @@ An iterator that starts with the first element in the span.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     auto i = mySpan.begin();
     cout << *i;
@@ -164,10 +167,12 @@ A pointer to the first item stored in the span.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
     auto i = mySpan.data();
     cout << *i;
 }
@@ -191,10 +196,10 @@ using difference_type = std::ptrdiff_t;
 #include <span>
 #include <iostream>
 
-void main()
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     span<int>::difference_type distance = mySpan.end() - mySpan.begin();
     cout << distance << std::endl;
@@ -223,14 +228,15 @@ The type is taken from the template parameter `T` when a span is created.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     span<int>::element_type et = mySpan[2];
-    cout << et << std::endl;
-    
+    cout << et << endl;
 }
 ```
 
@@ -256,10 +262,12 @@ Returns `true` if `this->size() == 0`. Otherwise `false`.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
     bool isEmpty = mySpan.empty(); // isEmpty == false
 }
 ```
@@ -274,13 +282,13 @@ constexpr iterator end() const noexcept;
 
 ### Return Value
 
-An iterator to the sentinel just beyond the end of the span.
+An iterator to just beyond the end of the span.
 
 ### Remarks
 
 `end` is used to test whether an iterator has passed the end of its range.
 
-Don't dereference the value returned by the iterator. Use it to identify whether the iterator has reached the sentinel following the last element in the span.
+Don't dereference the value returned by the iterator. Use it to identify whether the iterator has reached beyond the last element in the span.
 
 ### Example
 
@@ -321,10 +329,12 @@ A template version of this function can be used to validate the count at compile
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
     
     auto first2 = mySpan.first(2);
     cout << "mySpan.first(2): ";
@@ -365,10 +375,12 @@ A reference to the first element in the span.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     auto i = mySpan.front();
     cout << i;
@@ -397,10 +409,12 @@ This type serves as an iterator over the elements in a span.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     span<int>::iterator it = mySpan.begin();
     cout << *it++ << *it++ << *it;
@@ -423,7 +437,7 @@ template <size_t count> constexpr span<element_type, count> last() const noexcep
 ### Parameters
 
 *count*\
-The number of elements from the end this span to put in the subspan. 
+The number of elements from the end this span to put in the subspan.
 The number can be specified as a parameter to the template, or to the function, as illustrated below.
 
 ### Return value
@@ -440,10 +454,12 @@ A template version of this function can be used instead to check the count at co
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
     
     auto first2 = mySpan.last(2);
     cout << "mySpan.last(2): ";
@@ -489,10 +505,12 @@ A reference to the element at position *offset*. If the position is invalid, the
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
     cout << mySpan[1];
 }
 ```
@@ -528,13 +546,16 @@ Assignment does a shallow copy of the data pointer and the size. A shallow copy 
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
-    span <int> mySpan2 = mySpan; // FIXME: This is a copy-initialization, not a copy assignment
-    for (auto it : mySpan2) // FIXME: Range-for iterates over elements, not iterators. This will compile and work,
-    { // FIXME: but "it" is misleadingly named (and copied). Should be "auto& i : mySpan2" like other examples.
+    span<int> mySpan(a);
+    span<int> mySpan2;
+    mySpan2 = mySpan;
+    for (auto &i : mySpan2)
+    {
         cout << it;
     }
 }
@@ -559,10 +580,12 @@ using const_pointer = const T*;
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     // pointer
     span<int>::pointer ptr = &mySpan[2];
@@ -598,10 +621,12 @@ An iterator pointing to the beginning of the reversed span.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     for (auto rIt = s1.rbegin(); rIt != s1.rend(); ++rIt)
     {
@@ -629,10 +654,12 @@ using const_reference = const T&;
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     // reference
     span<int>::reference ref = mySpan[0];
@@ -651,7 +678,7 @@ void main()
 
 ## <a name="rend"></a> `span::rend`
 
-Get a random-access iterator to the sentinel just beyond the end of the reversed span.
+Get a random-access iterator to just beyond the end of the reversed span.
 
 ```cpp
 constexpr reverse_iterator rend() const noexcept;
@@ -673,10 +700,12 @@ The value returned by `rend` shouldn't be dereferenced.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     for (auto rIt = s1.rbegin(); rIt != s1.rend(); ++rIt)
     {
@@ -699,10 +728,10 @@ using reverse_iterator = std::reverse_iterator<iterator>;
 #include <span>
 #include <iostream>
 
-void main()
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     span<int>::reverse_iterator rIt = mySpan.rbegin();
     cout << *rIt++ << *rIt++ << *rIt;
@@ -731,10 +760,12 @@ The number of elements in the span.
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
     cout << mySpan.size();
 }
 ```
@@ -761,10 +792,12 @@ The number of bytes that all of the elements in the span take up; that is, `size
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
     cout << mySpan.size_bytes(); // 3 elements * 4 (size of an int)
 }
 ```
@@ -787,10 +820,12 @@ using size_type = size_t;
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     span<int>::size_type szType = mySpan.size();
     cout << szType;
@@ -806,28 +841,27 @@ void main()
 `span` constructors.
 
 ```cpp
-// FIXME: dynamicExtent should be dynamic_extent below, repeatedly
 constexpr span() noexcept
-requires (Extent == 0 || Extent == dynamicExtent) = default;
+requires (Extent == 0 || Extent == dynamic_extent) = default;
 
 template <class It>
-constexpr explicit(Extent != dynamicExtent)
+constexpr explicit(Extent != dynamic_extent)
 span(It first, size_type count) noexcept
 
 template <class It, class End>
-constexpr explicit(Extent != dynamicExtent)
+constexpr explicit(Extent != dynamic_extent)
 span(It first, End last) noexcept(noexcept(last - first))
 
 template <class T, size_t N>
-requires (Extent == dynamicExtent || Extent == N) && is_convertible_v<T (*)[], T (*)[]>
+requires (Extent == dynamic_extent || Extent == N) && is_convertible_v<T (*)[], T (*)[]>
 constexpr span(array<T, N>& arr) noexcept
 
 template <class T, size_t N>
-requires (Extent == dynamicExtent || Extent == N) && is_convertible_v<const T (*)[], T (*)[]>
+requires (Extent == dynamic_extent || Extent == N) && is_convertible_v<const T (*)[], T (*)[]>
 constexpr span(const array<T, N>& arr) noexcept
 
 template <size_t N>
-requires (Extent == dynamicExtent || Extent == N)
+requires (Extent == dynamic_extent || Extent == N)
 constexpr span(type_identity_t<T> (&arr)[N]) noexcept
 
 template <class R>
@@ -839,9 +873,9 @@ constexpr span(const span& other) noexcept = default;
 
 // converting  ctor
 template <class T, size_t OtherExtent>
-requires (Extent == dynamicExtent || OtherExtent == dynamicExtent ||
+requires (Extent == dynamic_extent || OtherExtent == dynamic_extent ||
               Extent == OtherExtent) && is_convertible_v<T (*)[], T (*)[]>
-constexpr explicit(Extent != dynamicExtent && OtherExtent == dynamicExtent)
+constexpr explicit(Extent != dynamic_extent && OtherExtent == dynamic_extent)
 span(const span<T, OtherExtent>& other) noexcept
 ```
 
@@ -857,7 +891,7 @@ Number of elements that will be in the span.
 Iterator to the first element in the span.
 
 *last*\
-Iterator to the sentinel that follows the last element in the span.
+Iterator to just past the last element in the span.
 
 *N*\
 The number of elements that will be in the span.
@@ -876,7 +910,7 @@ A span doesn't free storage for items in the span because it doesn't own the sto
 |---------|---------|
 |`span()` | Constructs an empty span. Only considered during overload resolution when the template parameter `Extent` is `0` or `dynamic_extent`.|
 |`span(It first, size_type count)` | Constructs a span from the first `count` elements from iterator `first`.  Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. |
-|`span(It first, End last)` | Constructs a span from the elements in iterator `first` until the sentinel `last` is reached. Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. `It` must be a `contiguous_iterator`.  |
+|`span(It first, End last)` | Constructs a span from the elements in iterator `first` until the end `last` is reached. Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. `It` must be a `contiguous_iterator`.  |
 |`span(array<T, N>& arr) noexcept;`<br /><br />`span(const array<T, N>& arr) noexcept;`<br /><br />`span(type_identity_t<element_type> (&arr)[N]) noexcept;` |  Constructs a span from `N` elements of the specified array. Only considered during overload resolution when template parameter `Extent` is `dynamic_extent` or equals `N`. |
 |`span(R&& r)` |  Constructs a span from a range. Only participates in overload resolution if template parameter `Extent` isn't `dynamic_extent`.|
 |`span(const span& other)` |  The compiler-generated copy constructor. A shallow copy of the data pointer is safe because the span doesn't allocate the memory to hold the elements. |
@@ -887,43 +921,40 @@ A span doesn't free storage for items in the span because it doesn't own the sto
 ```cpp
 #include <span>
 
-void main()
+using namespace std;
+
+int main()
 {
     const int MAX=10;
     
     int x[MAX];
-    
     for (int i = 0; i < MAX; i++)
     {
         x[i] = i;
     }
     
-    span <int,dynamic_extent> span0;
     span<int, MAX> span1{ x }; // fixed-size span: compiler error if size of x doesn't match template argument MAX
     span<int> span2{ x }; // size is inferred from x
     span<const int> span3 = span2; // converting constructor
-    span<int> span4( span2); // copy constructor
+    span<int> span4( span2 ); // copy constructor
 }
 ```
 
 ## <a name="sub_view"></a> `span::subspan`
 
-Gets a subspan from this span.
+Get a subspan of this span.
 
 ```cpp
-constexpr span<element_type, dynamic_extent>
-subspan(size_type offset, size_type count = dynamic_extent) const noexcept;
+constexpr auto subspan(size_type offset, size_type count = dynamic_extent) const noexcept;
 
 template <size_t offset, size_t count = dynamic_extent>
-constexpr span<element_type,
-        count != dynamic_extent ? count : (Extent != dynamic_extent ? Extent - _Offset : FIXME)>
-        subspan() const noexcept
+constexpr auto subspan() const noexcept
 ```
 
 ### Parameters
 
 *count*\
-The number of elements to put in the subspan. If `count` is `dynamic_extent` (the default value), then gets the elements from `offset` to the end of this span.
+The number of elements to put in the subspan. If `count` is `dynamic_extent` (the default value), then gets the subspan from `offset` to the end of this span.
 
 *offset*\
 The location in this span to start the subspan.
@@ -942,23 +973,25 @@ A template version of this function is available that checks the count at compil
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
     
     cout << "mySpan.subspan(1,2): ";
-    for (auto& i : mySpan.subspan(1, 2))
+    for (auto& i : mySpan.subspan(1,2))
     {
         cout << i;
     }
     cout << "\nmySpan.subspan<1,2>: ";
-    for (auto& i : mySpan.subspan<1, 2>())
+    for (auto& i : mySpan.subspan<1,2>())
     {
         cout << i;
     }
-    cout << "\nmySpan.subspan<1>: "; // FIXME: Doesn't match actual call
-    for (auto& i : mySpan.subspan(1))
+    cout << "\nmySpan.subspan<1>: ";
+    for (auto& i : mySpan.subspan<1>)
     {
         cout << i;
     }
@@ -985,10 +1018,12 @@ using value_type = std::remove_cv_t<T>;
 #include <span>
 #include <iostream>
 
-void main()
+using namespace std;
+
+int main()
 {
     int a[] = { 0,1,2 };
-    span <int> mySpan(a);
+    span<int> mySpan(a);
 
     span<int>::value_type vType = mySpan[2];
     cout << vType;
@@ -1015,7 +1050,7 @@ span(array<T, Size>&) -> span<T, Size>;
 template <class T, size_t Size>
 span(const array<T, Size>&) -> span<const T, Size>;
 
-// Allows the element type to be deduced from the iterator and sentinel.
+// Allows the element type to be deduced from the iterator and the end of the span.
 // The iterator must be contiguous
 
 template <contiguous_iterator It, class End>
