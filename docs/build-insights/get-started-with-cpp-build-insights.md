@@ -25,7 +25,7 @@ The main components of this technology are:
 - a Windows Performance Analyzer (WPA) extension that allows you to view build traces in WPA, and
 - the C++ Build Insights SDK, a software development kit for creating your own tools that consume C++ Build Insights data.
 
-Click on the links below to quickly get started with these components:
+## Documentation sections
 
 [Tutorial: vcperf and Windows Performance Analyzer](tutorials/vcperf-and-wpa.md)\
 Learn how to collect build traces for your C++ projects and how to view them in WPA.
@@ -35,5 +35,17 @@ Discover useful WPA tips for analyzing your build traces.
 
 [C++ Build Insights SDK](reference/sdk/overview.md)\
 An overview of the C++ Build Insights SDK.
+
+## Articles
+
+Read these articles from the official C++ team blog for more information on C++ Build Insights:
+
+[Introducing C++ Build Insights](https://devblogs.microsoft.com/cppblog/introducing-c-build-insights/)
+
+[Analyze your builds programmatically with the C++ Build Insights SDK](https://devblogs.microsoft.com/cppblog/analyze-your-builds-programmatically-with-the-c-build-insights-sdk/)
+
+[Finding build bottlenecks with C++ Build Insights](https://devblogs.microsoft.com/cppblog/finding-build-bottlenecks-with-cpp-build-insights/)
+
+[Faster builds with PCH suggestions from C++ Build Insights](https://devblogs.microsoft.com/cppblog/faster-builds-with-pch-suggestions-from-c-build-insights/)
 
 ::: moniker-end

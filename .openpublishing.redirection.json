@@ -761,11 +761,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/cpp/index.md",
-      "redirect_url": "/cpp/cpp/cpp-language-reference",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/cpp/using-wmain-instead-of-main.md",
       "redirect_url": "/cpp/cpp/main-function-command-line-args",
       "redirect_document_id": false
