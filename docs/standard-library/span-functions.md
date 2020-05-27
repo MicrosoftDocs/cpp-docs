@@ -36,8 +36,6 @@ The span to get the raw representation of.
 ### Return Value
 
 A `span<const byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<const std::byte*>(s.data()), s.size_bytes()}'
-If the span is empty, returns `nullptr`.
-
 
 ### Example
 
@@ -78,7 +76,6 @@ The span to get the raw representation of.
 ### Return Value
 
 A `span<byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<std::byte*>(s.data()), s.size_bytes()}'
-If the span is empty, returns `nullptr`.
 
 ### Example
 
