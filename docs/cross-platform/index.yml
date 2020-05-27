@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Mobile Development with C++ | Windows UWP, Android and iOS # < 60 chars
-summary: Create native C++ apps for iOS, Android and Windows devices with Visual Studio. # < 160 chars
+summary: Create native C++ apps for iOS, Android, and Windows devices with Visual Studio. # < 160 chars
 
 metadata:
   title: Mobile development with C++ documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
