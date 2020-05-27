@@ -1,6 +1,6 @@
 ---
 title: "&lt;span&gt;"
-ms.date: "05/15/2020"
+ms.date: "05/28/2020"
 f1_keywords: ["<span>"]
 helpviewer_keywords: ["span header"]
 ---

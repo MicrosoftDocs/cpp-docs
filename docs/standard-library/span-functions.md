@@ -1,6 +1,6 @@
 ---
 title: "&lt;span&gt; functions"
-ms.date: "05/13/2020"
+ms.date: "05/28/2020"
 f1_keywords: ["span/std::span::as_bytes", "span/std::as_writable_bytes"]
 helpviewer_keywords: ["std::span [C++], as_writable_bytes", "std::as_bytes [C++]"]
 ---
@@ -75,7 +75,7 @@ The span to get the raw representation of.
 
 ### Return Value
 
-A `span<byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<std::byte*>(s.data()), s.size_bytes()}'
+A `span<byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<std::byte*>(s.data()), s.size_bytes()}`
 
 ### Example
 
