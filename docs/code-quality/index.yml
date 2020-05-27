@@ -7,7 +7,7 @@ metadata:
   title: C/C++ code analyzers
   description: Learn how Visual Studio can help you analyze C and C++ code quality.
   ms.topic: landing-page
-  ms.date: 02/12/2020
+  ms.date: 05/26/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,9 +21,29 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Analyze C and C++ code
+          - text: Code analysis for C/C++ overview
             url: code-analysis-for-c-cpp-overview.md
+      - linkListType: quickstart
+        links:
+          - text: Code Analysis for C/C++ quick start
+            url: code-analysis-for-c-cpp-overview.md
+      - linkListType: tutorial
+        links:
+          - text: Analyze C/C++ code for defects walkthrough
+            url: walkthrough-analyzing-c-cpp-code-for-defects.md
+          - text: Use SAL annotations to reduce C/C++ code defects
+            url: using-sal-annotations-to-reduce-c-cpp-code-defects.md
+
+  # Card
+  - title: Code analysis reference
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: C++ Core Guidelines
+            url: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
       - linkListType: reference
         links:
+          - text: C++ Core Guidelines warnings
+            url: code-analysis-for-cpp-corecheck.md
           - text: C++ code analysis warnings
             url: code-analysis-for-c-cpp-warnings.md
