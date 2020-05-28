@@ -1,28 +1,27 @@
+- name: "C++ Build Insights"
+  href: ../build-insights/index.yml
 - name: "Get started with C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
 - name: "Tutorials"
-  expanded: false
+  expanded: true
   items:
     - name: "vcperf and Windows Performance Analyzer"
       href: ../build-insights/tutorials/vcperf-and-wpa.md
     - name: "Windows Performance Analyzer basics"
       href: ../build-insights/tutorials/wpa-basics.md
 - name: "Reference"
-  expanded: false
   items:
     - name: "vcperf commands"
       href: ../build-insights/reference/vcperf-commands.md
     - name: "Windows Performance Analyzer views"
       href: ../build-insights/reference/wpa-views.md
     - name: "C++ Build Insights SDK"
-      expanded: false
       items:
         - name: "Overview"
           href: ../build-insights/reference/sdk/overview.md
         - name: "Event table"
           href: ../build-insights/reference/sdk/event-table.md
         - name: "Functions"
-          expanded: false
           items: 
             - name: "Analyze"
               href: ../build-insights/reference/sdk/functions/analyze.md
@@ -79,7 +78,6 @@
             - name: "StopTracingSessionW"
               href: ../build-insights/reference/sdk/functions/stop-tracing-session-w.md
         - name: "Event data types (C++)"
-          expanded: false
           items:
             - name: "Activity"
               href: ../build-insights/reference/sdk/cpp-event-data-types/activity.md
@@ -174,7 +172,6 @@
             - name: "WholeProgramAnalysis"
               href: ../build-insights/reference/sdk/cpp-event-data-types/whole-program-analysis.md
         - name: "Event data types (C)"
-          expanded: false
           items:
             - name: "CL_PASS_DATA"
               href: ../build-insights/reference/sdk/c-event-data-types/cl-pass-data-struct.md
@@ -213,7 +210,6 @@
             - name: "TRANSLATION_UNIT_PASS_CODE"
               href: ../build-insights/reference/sdk/c-event-data-types/translation-unit-pass-code-enum.md
         - name: "Other types"
-          expanded: false
           items:
             - name: "ANALYSIS_CALLBACKS"
               href: ../build-insights/reference/sdk/other-types/analysis-callbacks-struct.md
