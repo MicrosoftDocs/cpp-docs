@@ -1,6 +1,6 @@
 ---
 title: "CFtpFileFind Class"
-ms.date: "11/04/2016"
+ms.date: "05/28/2020"
 f1_keywords: ["CFtpFileFind", "AFXINET/CFtpFileFind", "AFXINET/CFtpFileFind::CFtpFileFind", "AFXINET/CFtpFileFind::FindFile", "AFXINET/CFtpFileFind::FindNextFile", "AFXINET/CFtpFileFind::GetFileURL"]
 helpviewer_keywords: ["CFtpFileFind [MFC], CFtpFileFind", "CFtpFileFind [MFC], FindFile", "CFtpFileFind [MFC], FindNextFile", "CFtpFileFind [MFC], GetFileURL"]
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
@@ -159,7 +159,7 @@ The file and path of the Universal Resource Locator (URL).
 
 ### Remarks
 
-`GetFileURL` is similar to the member function [CFileFind::GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath), except that it returns the URL in the form `ftp://moose/dir/file.txt`.
+`GetFileURL` is similar to the member function [CFileFind::GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath), except that in addition to providing the result in URL format, it doesn't include the filename. For example:`ftp://moose/dir`.
 
 ## See also
 
