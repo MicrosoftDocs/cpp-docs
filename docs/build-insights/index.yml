@@ -1,0 +1,48 @@
+### YamlMime:Landing
+title: C++ Build Insights | Automate build tool chain analysis # < 60 chars
+summary: Use C++ Build Insights for real-time and automated build analysis and optimization. # < 160 chars
+
+metadata:
+  title: C++ Build Insights # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to use C++ Build Insights to analyze and optimize your builds.
+  ms.topic: landing-page
+  author: corob-msft
+  ms.author: corob
+  ms.date: 05/26/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Learn how your build performs 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Get started with C++ Build Insights
+            url: get-started-with-cpp-build-insights.md
+      - linkListType: tutorial
+        links:
+          - text: vcperf and Windows Performance Analyzer
+            url: tutorials/vcperf-and-wpa.md
+          - text: Windows Performance Analyzer basics
+            url: tutorials/wpa-basics.md
+
+  # Card (optional)
+  - title: Measure build performance
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: vcperf commands
+            url: reference/vcperf-commands.md
+          - text: Windows Performance Analyzer views
+            url: reference/wpa-views.md
+
+  # Card
+  - title: Create your own build performance analysis
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: SDK reference
+            url: reference/sdk/overview.md
