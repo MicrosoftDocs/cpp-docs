@@ -5,7 +5,7 @@ ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
 ---
 # Processor manufacturer programming manuals
 
-This article provides links to websites that may contain programming information about processors that are not manufactured, sold, or supported by Microsoft. Microsoft does not own or control the websites or their content.
+This article provides links to websites that may contain programming info about processors that aren't made, sold, or supported by Microsoft. Microsoft doesn't control the websites or their content.
 
 ## Processor manufacturer websites
 
@@ -19,7 +19,7 @@ This article provides links to websites that may contain programming information
 
 ## Remarks
 
-Neither Visual Studio nor the Microsoft Macro Assembler support all processors.
+Visual Studio and the Microsoft Macro Assembler don't support all processors.
 
 ## See also
 

@@ -56,13 +56,13 @@ The ranges that are specified in the following table are inclusive-inclusive.
 |`long double`|same as `double`|none|Same as `double`|
 |`wchar_t`|2|`__wchar_t`|0 to 65,535|
 
-Depending on how it's used, a variable of `__wchar_t` designates either a wide-character type or multibyte-character type. Use the `L` prefix before a character or string constant to designate the wide-character-type constant.
+Depending on how it's used, a variable of `__wchar_t` designates either a wide-character type or multibyte-character type. Use the `L` prefix before a character or string constant to choose the wide-character-type constant.
 
 `signed` and `unsigned` are modifiers that you can use with any integral type except `bool`. Note that `char`, `signed char`, and `unsigned char` are three distinct types for the purposes of mechanisms like overloading and templates.
 
-The `int` and `unsigned int` types have a size of four bytes. However, portable code should not depend on the size of `int` because the language standard allows this to be implementation-specific.
+The `int` and `unsigned int` types have a size of 4 bytes. However, portable code shouldn't depend on the size of `int` because the language standard allows this to be implementation-specific.
 
-C/C++ in Visual Studio also supports sized integer types. For more information, see [__int8, \__int16, \__int32, \__int64](../cpp/int8-int16-int32-int64.md) and [Integer Limits](../cpp/integer-limits.md).
+C/C++ in Visual Studio also supports sized integer types. For more information, see [__int8, \__int16, \__int32, \__int64](../cpp/int8-int16-int32-int64.md), and [Integer Limits](../cpp/integer-limits.md).
 
 For more information about the restrictions of the sizes of each type, see [Built-in types](../cpp/fundamental-types-cpp.md).
 
