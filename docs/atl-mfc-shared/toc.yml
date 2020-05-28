@@ -72,8 +72,6 @@
       href: ../atl-mfc-shared/reference/cstringt-class.md
     - name: COleDateTimeSpan class
       href: ../atl-mfc-shared/reference/coledatetimespan-class.md
-    - name: IAtlStringMgr class
-      href: ../atl-mfc-shared/reference/iatlstringmgr-class.md
     - name: CFixedStringT class
       href: ../atl-mfc-shared/reference/cfixedstringt-class.md
     - name: CStrBufT class
@@ -90,3 +88,5 @@
       href: ../atl-mfc-shared/reference/csimplestringt-class.md
     - name: CTime class
       href: ../atl-mfc-shared/reference/ctime-class.md
+    - name: IAtlStringMgr class
+      href: ../atl-mfc-shared/reference/iatlstringmgr-class.md
