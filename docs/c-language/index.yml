@@ -1,0 +1,93 @@
+### YamlMime:Landing
+title: C language documentation
+summary: Learn to use C and the C runtime library.
+
+metadata:
+  title: C docs - get started, tutorials, reference.
+  description: C programming reference for users of Microsoft C/C++ and Visual Studio.
+  ms.topic: landing-page
+  ms.date: 05/28/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+landingContent:
+
+  # Card
+  - title: Get started with C in Visual Studio
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Download Visual Studio for Windows
+            url: https://visualstudio.microsoft.com/downloads
+          - text: Install C/C++ support in Visual Studio
+            url: ../build/vscpp-step-0-installation.md
+          - text: Download only the command-line build tools
+            url: https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019
+      - linkListType: tutorial
+        links:
+          - text: Compile a C program on the command line
+            url: ../build/walkthrough-compile-a-c-program-on-the-command-line.md
+
+  - title: Use the compiler and tools
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: C/C++ build reference
+            url: ../build/reference/c-cpp-building-reference.md
+          - text: Projects and build systems
+            url: ../build/projects-and-build-systems-cpp.md
+          - text: Compiler reference
+            url: ../build/reference/compiling-a-c-cpp-program.md
+          - text: Linker reference
+            url: ../build/reference/linking.md
+          - text: Additional build tools
+            url: ../build/reference/c-cpp-build-tools.md
+          - text: Errors and warnings
+            url: ../error-messages/compiler-errors-1/c-cpp-build-errors.md
+
+  - title: C language
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: C language reference
+            url: ../c-language/c-language-reference.md
+          - text: Elements of C
+            url: ../c-language/elements-of-c.md
+          - text: Program structure
+            url: ../c-language/program-structure.md
+          - text: Declarations and types
+            url: ../c-language/declarations-and-types.md
+          - text: Expressions and assignments
+            url: ../c-language/expressions-and-assignments.md
+          - text: Statements
+            url: ../c-language/statements-c.md
+          - text: Functions
+            url: ../c-language/functions-c.md
+          - text: C language syntax summary
+            url: ../c-language/c-language-syntax-summary.md
+          - text: Implementation-defined behavior
+            url: ../c-language/implementation-defined-behavior.md
+          - text: C/C++ preprocessor reference
+            url: ../preprocessor/c-cpp-preprocessor-reference.md
+
+  - title: C runtime library (CRT)
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: CRT library features
+            url: ../c-runtime-library/crt-library-features.md
+          - text: Alphabetical function reference
+            url: ../c-runtime-library/reference/crt-alphabetical-function-reference.md
+          - text: C runtime routines by category
+            url: ../c-runtime-library/run-time-routines-by-category.md
+          - text: Global variables and standard types
+            url: ../c-runtime-library/global-variables-and-standard-types.md
+          - text: Global constants
+            url: ../c-runtime-library/global-constants.md
+          - text: Global state
+            url: ../c-runtime-library/global-state.md
+          - text: Generic-text mappings
+            url: ../c-runtime-library/generic-text-mappings.md
