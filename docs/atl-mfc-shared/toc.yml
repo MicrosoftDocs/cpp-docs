@@ -6,7 +6,6 @@
     - name: ATL-MFC concepts
       href: ../atl-mfc-shared/atl-mfc-concepts.md
     - name: Date and Time
-      expanded: false
       items: 
         - name: Date and Time overview
           href: ../atl-mfc-shared/date-and-time.md
@@ -18,12 +17,10 @@
         - name: Strings (ATL-MFC)
           href: ../atl-mfc-shared/strings-atl-mfc.md
         - name: Using CStringT
-          expanded: false
           items: 
             - name: Using CStringT
               href: ../atl-mfc-shared/using-cstringt.md
             - name: Memory management with CStringT
-              expanded: false
               items: 
                 - name: Memory management with CStringT
                   href: ../atl-mfc-shared/memory-management-with-cstringt.md
@@ -38,7 +35,6 @@
             - name: Exporting String classes using CStringT
               href: ../atl-mfc-shared/exporting-string-classes-using-cstringt.md
         - name: Using CString
-          expanded: false
           items: 
             - name: Using CString
               href: ../atl-mfc-shared/using-cstring.md
@@ -59,8 +55,9 @@
             - name: Unicode and multibyte character set (MBCS) support
               href: ../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md
 - name: Reference
-  expanded: false
   items: 
+    - name: Classes Shared by MFC and ATL
+      href: ../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md
     - name: CSize class
       href: ../atl-mfc-shared/reference/csize-class.md
     - name: CTimeSpan class
@@ -69,8 +66,6 @@
       href: ../atl-mfc-shared/reference/coledatetime-class.md
     - name: CRect class
       href: ../atl-mfc-shared/reference/crect-class.md
-    - name: Classes Shared by MFC and ATL
-      href: ../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md
     - name: CPoint class
       href: ../atl-mfc-shared/reference/cpoint-class.md
     - name: CStringT class
