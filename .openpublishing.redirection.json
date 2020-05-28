@@ -701,11 +701,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/c-language/index.md",
-      "redirect_url": "/cpp/c-language/c-language-reference",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/cloud/index.md",
       "redirect_url": "/cpp/cloud/cloud-and-web-programming-in-visual-cpp",
       "redirect_document_id": false
