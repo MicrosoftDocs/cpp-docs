@@ -3,7 +3,6 @@
 - name: Download, install, and set up the Linux Development workload
   href: ../linux/download-install-and-setup-the-linux-development-workload.md
 - name: Connect to your remote Linux computer
-  expanded: true
   items:
     - name: Connect to your remote Linux computer
       href: ../linux/connect-to-your-remote-linux-computer.md
