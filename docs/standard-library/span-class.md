@@ -1041,7 +1041,7 @@ The following deduction guides are provided for span.
 // Allows the extent to be deduced from std::array and C++ built-in arrays
 
 template <class T, size_t Extent>
-span(_Ty (&)[Extent]) -> span<T, Extent>;
+span(T (&)[Extent]) -> span<T, Extent>;
 
 template <class T, size_t Size>
 span(array<T, Size>&) -> span<T, Size>;
