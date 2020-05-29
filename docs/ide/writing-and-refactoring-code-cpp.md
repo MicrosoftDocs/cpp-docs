@@ -156,7 +156,7 @@ The files are easily shareable via source control, so you can enforce coding con
 
 ![C&#43;&#43; Clang Format](../ide/media/clang-format-cpp.png "Clang Format")
 
-Visual Studio 2017 and later also supports [EditorConfig](https://editorconfig.org/), which works in a similar way. ClangFormat, however, has a more style options than EditorConfig, including rules that are specific to C++. With **EditorConfig**, you create **.editorconfig** files and place them in different folders of your codebase to specify code styles for those folders and their subfolders. An **.editorconfig** file supersedes any other **.editorconfig** files in parent folders and overwrites any formatting settings configured via **Tools** > **Options**. You can set rules for tabs vs. spaces, indent size, and more. For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options).
+Visual Studio 2017 and later also supports [EditorConfig](https://editorconfig.org/), which works in a similar way. ClangFormat, however, has more style options than EditorConfig, including rules that are specific to C++. With **EditorConfig**, you create **.editorconfig** files and place them in different folders of your codebase to specify code styles for those folders and their subfolders. An **.editorconfig** file supersedes any other **.editorconfig** files in parent folders and overwrites any formatting settings configured via **Tools** > **Options**. You can set rules for tabs vs. spaces, indent size, and more. For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options).
 
 ## Other formatting options
 
