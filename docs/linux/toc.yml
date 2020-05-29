@@ -3,7 +3,6 @@
 - name: Download, install, and set up the Linux Development workload
   href: ../linux/download-install-and-setup-the-linux-development-workload.md
 - name: Connect to your remote Linux computer
-  expanded: true
   items:
     - name: Connect to your remote Linux computer
       href: ../linux/connect-to-your-remote-linux-computer.md
@@ -11,40 +10,43 @@
       href: ../linux/set-up-fips-compliant-secure-remote-linux-development.md
     - name: ConnectionManager reference
       href: ../linux/connectionmanager-reference.md
-- name: Create a new Linux project
-  href: ../linux/create-a-new-linux-project.md
-- name: Configure a Linux project
-  href: ../linux/configure-a-linux-project.md
-- name: Create and configure a Linux CMake project
-  href: ../linux/cmake-linux-project.md
+- name: Build Linux projects with MSBuild in Visual Studio
+  items:
+  - name: Create a new Linux project
+    href: ../linux/create-a-new-linux-project.md
+  - name: Configure a Linux project
+    href: ../linux/configure-a-linux-project.md
+  - name: Deploy, run, and debug your Linux project
+    href: ../linux/deploy-run-and-debug-your-linux-project.md
+  - name: Linux Project Property Page reference
+    items:
+      - name: Linux Project Property Page reference
+        href: ../linux/prop-pages-linux.md
+      - name: General Properties (Linux)
+        href: ../linux/prop-pages/general-linux.md
+      - name: Debugging Properties (Linux)
+        href: ../linux/prop-pages/debugging-linux.md
+      - name: VC++ Directories Properties (Linux)
+        href: ../linux/prop-pages/directories-linux.md
+      - name: Copy Sources Properties (Linux)
+        href: ../linux/prop-pages/copy-sources-project.md
+      - name: C/C++ Properties (Linux)
+        href: ../linux/prop-pages/c-cpp-linux.md
+      - name: Linker Properties (Linux)
+        href: ../linux/prop-pages/linker-linux.md
+      - name: Build Event Properties (Linux)
+        href: ../linux/prop-pages/build-events-linux.md
+      - name: Custom Build Step Properties (Linux)
+        href: ../linux/prop-pages/custom-build-step-linux.md
+      - name: Makefile Project Properties (Linux)
+        href: ../linux/prop-pages/makefile-linux.md
+      - name: Remote Archive Properties (Linux)
+        href: ../linux/prop-pages/remote-ar-linux.md
+- name: Build Linux projects with CMake in Visual Studio
+  items:
+  - name: Create and configure a Linux CMake project
+    href: ../linux/cmake-linux-project.md
+  - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
+    href: ../build/get-started-linux-cmake.md
 - name: Configure Linux projects to use Address Sanitizer
   href: ../linux/linux-asan-configuration.md
-- name: Deploy, run, and debug your Linux project
-  href: ../linux/deploy-run-and-debug-your-linux-project.md
-- name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
-  href: ../build/get-started-linux-cmake.md
-- name: Linux Project Property Page reference
-  expanded: false
-  items:
-    - name: Linux Project Property Page reference
-      href: ../linux/prop-pages-linux.md
-    - name: General Properties (Linux)
-      href: ../linux/prop-pages/general-linux.md
-    - name: Debugging Properties (Linux)
-      href: ../linux/prop-pages/debugging-linux.md
-    - name: VC++ Directories Properties (Linux)
-      href: ../linux/prop-pages/directories-linux.md
-    - name: Copy Sources Properties (Linux)
-      href: ../linux/prop-pages/copy-sources-project.md
-    - name: C/C++ Properties (Linux)
-      href: ../linux/prop-pages/c-cpp-linux.md
-    - name: Linker Properties (Linux)
-      href: ../linux/prop-pages/linker-linux.md
-    - name: Build Event Properties (Linux)
-      href: ../linux/prop-pages/build-events-linux.md
-    - name: Custom Build Step Properties (Linux)
-      href: ../linux/prop-pages/custom-build-step-linux.md
-    - name: Makefile Project Properties (Linux)
-      href: ../linux/prop-pages/makefile-linux.md
-    - name: Remote Archive Properties (Linux)
-      href: ../linux/prop-pages/remote-ar-linux.md
