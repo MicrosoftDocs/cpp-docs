@@ -2,7 +2,7 @@
 title: "Walkthrough: Create a traditional Windows Desktop application (C++)"
 description: "How to create a minimal, traditional Windows Desktop application using Visual Studio, C++, and the Win32 API"
 ms.custom: "get-started-article"
-ms.date: "11/03/2019"
+ms.date: "05/28/2020"
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
 ---
 # Walkthrough: Create a traditional Windows Desktop application (C++)
@@ -354,7 +354,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    One important message to handle is the [WM_PAINT](/windows/win32/gdi/wm-paint) message. The application receives the `WM_PAINT` message when part of its displayed window must be updated. The event can occur when a user moves a window in front of your window, then moves it away again. Your application doesn't know when these events occur. Only Windows knows, so it notifies your app with a `WM_PAINT` message. When the window is first displayed, all of it must be updated.
 
-   To handle a `WM_PAINT` message, first call [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint), then handle all the logic to lay out the text, buttons, and other controls in the window, and then call [EndPaint](/windows/win32/api/winuser/nf-winuser-endpaint). For the application, the logic between the beginning call and the ending call is to display the string "Hello, Windows desktop!" in the window. In the following code, notice that the [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) function is used to display the string.
+   To handle a `WM_PAINT` message, first call [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint), then handle all the logic to lay out the text, buttons, and other controls in the window, and then call [EndPaint](/windows/win32/api/winuser/nf-winuser-endpaint). For the application, the logic between the beginning call and the ending call displays the string "Hello, Windows desktop!" in the window. In the following code, the [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) function is used to display the string.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -379,8 +379,8 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    }
    ```
 
-   `HDC` in the code is a handle to a device context, which is a data structure that Windows uses to enable your application to communicate with the graphics subsystem. The `BeginPaint` and `EndPaint` functions make your application behave like a good citizen and doesn't use the device context for longer than it needs to. The functions help make the graphics subsystem is available for use by other applications.
-
+   `HDC` in the code is a handle to a device context, which is used to draw in the window's client area. Use the `BeginPaint` and `EndPaint` functions to prepare for and complete the drawing in the client area. `BeginPaint` returns a handle to the display device context used for drawing in the client area; `EndPaint` ends the paint request and releases the device context.
+   
 1. An application typically handles many other messages. For example, [WM_CREATE](/windows/win32/winmsg/wm-create) when a window is first created, and [WM_DESTROY](/windows/win32/winmsg/wm-destroy) when the window is closed. The following code shows a basic but complete `WndProc` function.
 
    ```cpp
