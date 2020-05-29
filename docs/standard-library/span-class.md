@@ -1,11 +1,11 @@
 ---
-title: "span Class (C++ Standard Library)| Microsoft Docs"
+title: "span class (C++ Standard Library)| Microsoft Docs"
 ms.date: "05/28/2020"
 f1_keywords: ["span/std::span", "span/std::span::const_pointer", "span/std::span::const_reference", "span/std::span::difference_type", "span/std::span::element_type", "span/std::span::iterator", "span/std::span::pointer", "span/std::span::reference", "span/std::span::reverse_iterator", "span/std::span::size_type", "span/std::span::value_type", "span/std::span::at", "span/std::span::assign", "span/std::span::back", "span/std::span::begin", "span/std::span::data", "span/std::span::empty", "span/std::span::end", "span/std::span::front", "span/std::span::rbegin", "span/std::span::rend",
 "span/std::span::size", "span/std::span::size_bytes", "span/std::span::operator=", "span/std::span::operator[]"]
 helpviewer_keywords: ["std::span [C++]", "std::span [C++], const_pointer", "std::span [C++], const_reference", "std::span [C++], difference_type", "std::span [C++], element_type", "std::span [C++], iterator", "std::span [C++], pointer", "std::span [C++], reference", "std::span [C++], reverse_iterator", "std::span [C++], size_type", "std::span [C++], value_type", "std::span [C++], assign", "std::span [C++], at", "std::span [C++], back", "std::span [C++], begin", "std::span [C++], data", "std::span [C++], empty", "std::span [C++], end", "std::span [C++], front", "std::span [C++], rbegin", "std::span [C++], rend", "std::span [C++], size", "std::span [C++], size_bytes"]
 ---
-# span Class (C++ Standard Library)
+# span class (C++ Standard Library)
 
 Provides a lightweight view over a contiguous sequence of objects. A span provides a safe way to iterate over, and index into, objects that are arranged back-to-back in memory such as objects stored in a built-in array, `std::array`, or `std::vector`.
 
@@ -89,7 +89,7 @@ Get the last element in the span.
 constexpr reference back() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A reference to the last element in the span.
 
@@ -156,7 +156,7 @@ Get a pointer to the beginning of the span data.
 constexpr pointer data() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A pointer to the first item stored in the span.
 
@@ -251,7 +251,7 @@ Whether the span contains elements.
 constexpr bool empty() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 Returns `true` if `this->size() == 0`. Otherwise `false`.
 
@@ -279,7 +279,7 @@ Get an iterator to the end of the span.
 constexpr iterator end() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 An iterator pointing just beyond the end of the span.
 
@@ -314,7 +314,7 @@ template <size_t count> constexpr auto first() const noexcept;
 The number of elements from the front of this span to put in the subspan.  
 The number of elements is specified as a parameter to the template, or to the function, as illustrated below.
 
-### Return Value
+### Return value
 
 A span that contains `count` elements from the front of this span.
 
@@ -364,7 +364,7 @@ Get the first element in the span.
 constexpr reference front() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A reference to the first element in the span.
 
@@ -494,7 +494,7 @@ constexpr reference operator[](size_type offset) const;
 *offset*\
 Zero-based element in the span to access.
 
-### Return Value
+### Return value
 
 A reference to the element at position *offset*. If the position is invalid, the behavior is undefined.
 
@@ -531,7 +531,7 @@ constexpr span& operator=(const span& other) noexcept = default;
 *other*\
 The span to assign to this one.
 
-### Return Value
+### Return value
 
 `*this`
 
@@ -610,7 +610,7 @@ Get a reverse iterator pointing to the last element of this span.
 constexpr reverse_iterator rbegin() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 An iterator pointing to the beginning of the reversed span.
 
@@ -683,7 +683,7 @@ Get a random-access iterator that points just beyond the end of the reversed spa
 constexpr reverse_iterator rend() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A reverse iterator to the placeholder following the last element in the reversed span; that is, the placeholder before the first element in the unreversed span.
 
@@ -781,7 +781,7 @@ Get the size of the elements in the span in bytes.
 constexpr size_type size_bytes() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 The number of bytes that all of the elements in the span occupy; that is, `sizeof(element_type)` multiplied by the number of elements in the span.
 
@@ -958,7 +958,7 @@ The number of elements to put in the subspan. If `count` is `dynamic_extent` (th
 *offset*\
 The location in this span to start the subspan.
 
-### Return Value
+### Return value
 
 A span starting at `offset` in this span. Contains `count` elements.
 
