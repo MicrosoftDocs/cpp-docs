@@ -15,8 +15,6 @@ See [span class](span-class.md) for detailed information. Here's an example of h
 #include <span>
 #include <iostream>
 
-u
-
 void Show(std::span<int> someValues)
 {
     // show values in reverse
