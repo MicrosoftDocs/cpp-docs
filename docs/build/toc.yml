@@ -567,8 +567,10 @@
                   href: ../build/reference/gs-buffer-security-check.md
                 - name: /Gs (Control stack checking calls)
                   href: ../build/reference/gs-control-stack-checking-calls.md
-                - name: /guard (Enable Control Flow Guard)
+                - name: /guard:cf (Enable Control Flow Guard)
                   href: ../build/reference/guard-enable-control-flow-guard.md
+                - name: /guard:ehcont (Enable EH Continuation Metadata)
+                  href: ../build/reference/guard-enable-eh-continuation-metadata.md
                 - name: /GT (Support fiber-safe thread-local storage)
                   href: ../build/reference/gt-support-fiber-safe-thread-local-storage.md
                 - name: /Gw (Optimize global data)
