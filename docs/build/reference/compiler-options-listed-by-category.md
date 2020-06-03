@@ -47,7 +47,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Gs](gs-control-stack-checking-calls.md)|Controls stack probes.|
 |[/GT](gt-support-fiber-safe-thread-local-storage.md)|Supports fiber safety for data allocated by using static thread-local storage.|
 |[/guard:cf](guard-enable-control-flow-guard.md)|Adds control flow guard security checks.|
-|[/guard:ehcont](guard-enable-eh-continuation-metadat.md)|Enables EH continuation metadata.|
+|[/guard:ehcont](guard-enable-eh-continuation-metadata.md)|Enables EH continuation metadata.|
 |[/Gv](gd-gr-gv-gz-calling-convention.md)|Uses the `__vectorcall` calling convention. (x86 and x64 only)|
 |[/Gw](gw-optimize-global-data.md)|Enables whole-program global data optimization.|
 |[/GX](gx-enable-exception-handling.md)|Deprecated. Enables synchronous exception handling. Use [/EH](eh-exception-handling-model.md) instead.|
