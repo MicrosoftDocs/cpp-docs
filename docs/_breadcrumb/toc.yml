@@ -9,10 +9,10 @@
     - name: ARM and ARM64 assembler
       tocHref: /cpp/assembler/arm/
       topicHref: /cpp/assembler/arm/arm-assembler-reference
-    - name: Inline x86 assembler
+    - name: C/C++ x86 inline assembler
       tocHref: /cpp/assembler/inline/
       topicHref: /cpp/assembler/inline/inline-assembler
-    - name: MASM x86 and x64 assembler
+    - name: x86 and x64 assembler
       tocHref: /cpp/assembler/masm/
       topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
     - name: ATL
@@ -34,10 +34,10 @@
         topicHref: /cpp/build/reference/c-cpp-building-reference
     - name: Build insights
       tocHref: /cpp/build-insights/
-      topicHref: /cpp/build-insights/get-started-with-cpp-build-insights
+      topicHref: /cpp/build-insights/index
     - name: C language
       tocHref: /cpp/c-language/
-      topicHref: /cpp/c-language/c-language-reference
+      topicHref: /cpp/c-language/index
     - name: C runtime library
       tocHref: /cpp/c-runtime-library/
       topicHref: /cpp/c-runtime-library/c-run-time-library-reference
@@ -48,9 +48,12 @@
     - name: Cloud and web
       tocHref: /cpp/cloud/
       topicHref: /cpp/cloud/cloud-and-web-programming-in-visual-cpp
+    - name: Code analysis
+      tocHref: /cpp/code-quality/
+      topicHref: /cpp/code-quality/index
     - name: C++ language
       tocHref: /cpp/cpp/
-      topicHref: /cpp/cpp/cpp-language-reference
+      topicHref: /cpp/cpp/index
     - name: C++/CX
       tocHref: /cpp/cppcx/
       topicHref: /cpp/cppcx/visual-c-language-reference-c-cx
@@ -81,7 +84,7 @@
       topicHref: /cpp/intrinsics/compiler-intrinsics
     - name: Linux
       tocHref: /cpp/linux/
-      topicHref: /cpp/linux/download-install-and-setup-the-linux-development-workload
+      topicHref: /cpp/linux/index
     - name: MFC
       tocHref: /cpp/mfc/
       topicHref: /cpp/mfc/mfc-desktop-applications
