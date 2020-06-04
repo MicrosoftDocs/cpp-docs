@@ -29,9 +29,12 @@ The **/CETCOMPAT** option is available beginning in the Visual Studio 2019 Previ
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
-1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
-1. In the **Additional options** box, add **/CETCOMPAT** or **/CETCOMPAT:NO** and then choose **OK** or **Apply** to save your changes.
+1. Select the **CET Shadow Stack Compatible** property.
+
+1. In the dropdown control, choose **Yes (/CETCOMPAT)** to enable EH continuation metadata, or **No (/CETCOMPAT:NO)** to disable it.
+
 
 ### To set this linker option programmatically
 
