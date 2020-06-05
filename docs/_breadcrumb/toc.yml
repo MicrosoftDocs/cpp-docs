@@ -6,15 +6,22 @@
     tocHref: /cpp/
     topicHref: /cpp
     items:
-    - name: ARM and ARM64 assembler
-      tocHref: /cpp/assembler/arm/
+    - name: Compiler intrinsics and assembly language
+      tocHref: /cpp/intrinsics/
       topicHref: /cpp/intrinsics/index
-    - name: C/C++ x86 inline assembler
-      tocHref: /cpp/assembler/inline/
-      topicHref: /cpp/intrinsics/index
-    - name: x86 and x64 assembler
-      tocHref: /cpp/assembler/masm/
-      topicHref: /cpp/intrinsics/index
+      items:
+      - name: Compiler intrinsics
+        tocHref: /cpp/intrinsics/
+        topicHref: /cpp/intrinsics/compiler-intrinsics
+      - name: ARM and ARM64 assembler
+        tocHref: /cpp/assembler/arm/
+        topicHref: /cpp/assembler/arm/arm-assembler-reference
+      - name: C/C++ x86 inline assembler
+        tocHref: /cpp/assembler/inline/
+        topicHref: /cpp/assembler/inline/inline-assembler
+      - name: x86 and x64 assembler
+        tocHref: /cpp/assembler/masm/
+        topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
     - name: ATL
       tocHref: /cpp/atl/
       topicHref: /cpp/atl/atl-com-desktop-components
@@ -79,9 +86,6 @@
     - name: Edit, navigate, and refactor code
       tocHref: /cpp/ide/
       topicHref: /cpp/ide/read-and-understand-code-cpp
-    - name: Compiler intrinsics
-      tocHref: /cpp/intrinsics/
-      topicHref: /cpp/intrinsics/index
     - name: Linux
       tocHref: /cpp/linux/
       topicHref: /cpp/linux/index
