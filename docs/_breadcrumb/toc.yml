@@ -8,13 +8,13 @@
     items:
     - name: ARM and ARM64 assembler
       tocHref: /cpp/assembler/arm/
-      topicHref: /cpp/assembler/arm/arm-assembler-reference
+      topicHref: /cpp/intrinsics/index
     - name: C/C++ x86 inline assembler
       tocHref: /cpp/assembler/inline/
-      topicHref: /cpp/assembler/inline/inline-assembler
+      topicHref: /cpp/intrinsics/index
     - name: x86 and x64 assembler
       tocHref: /cpp/assembler/masm/
-      topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
+      topicHref: /cpp/intrinsics/index
     - name: ATL
       tocHref: /cpp/atl/
       topicHref: /cpp/atl/atl-com-desktop-components
@@ -81,7 +81,7 @@
       topicHref: /cpp/ide/read-and-understand-code-cpp
     - name: Compiler intrinsics
       tocHref: /cpp/intrinsics/
-      topicHref: /cpp/intrinsics/compiler-intrinsics
+      topicHref: /cpp/intrinsics/index
     - name: Linux
       tocHref: /cpp/linux/
       topicHref: /cpp/linux/index
