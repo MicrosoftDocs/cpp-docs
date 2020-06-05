@@ -32,11 +32,11 @@ landingContent:
           - text: x86 intrinsics list
             url: ../intrinsics/x86-intrinsics-list.md
           - text: x64 (amd64) intrinsics list
-            url: ./intrinsics/x64-amd64-intrinsics-list.md
+            url: ../intrinsics/x64-amd64-intrinsics-list.md
           - text: Intrinsics available on all architectures
-            url: ./intrinsics/intrinsics-available-on-all-architectures.md
+            url: ../intrinsics/intrinsics-available-on-all-architectures.md
           - text: Alphabetical intrinsics list
-            url: ./intrinsics/alphabetical-listing-of-intrinsic-functions.md
+            url: ../intrinsics/alphabetical-listing-of-intrinsic-functions.md
 
   # Card
   - title: Use inline assembly for x86 in Microsoft C/C++

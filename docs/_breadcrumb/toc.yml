@@ -98,9 +98,6 @@
     - name: Parallel programming
       tocHref: /cpp/parallel/
       topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
-    - name: C/C++ preprocessor
-      tocHref: /cpp/preprocessor/
-      topicHref: /cpp/preprocessor/c-cpp-preprocessor-reference
     - name: Porting and upgrading
       tocHref: /cpp/porting/
       topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide
