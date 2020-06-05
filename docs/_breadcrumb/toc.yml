@@ -4,7 +4,7 @@
   items:
   - name: Microsoft C++, C, and Assembler
     tocHref: /cpp/
-    topicHref: /cpp
+    topicHref: /cpp/index
     items:
     - name: Compiler intrinsics and assembly language
       tocHref: /cpp/intrinsics/
