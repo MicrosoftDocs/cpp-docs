@@ -95,7 +95,6 @@
     - name: Microsoft C/C++
       tocHref: /cpp/overview/
       topicHref: /cpp/overview/visual-cpp-in-visual-studio
-      items:
     - name: Parallel programming
       tocHref: /cpp/parallel/
       topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
@@ -120,4 +119,3 @@
     - name: Windows
       tocHref: /cpp/windows/
       topicHref: /cpp/windows/overview-of-windows-programming-in-cpp
-      items:
