@@ -4,58 +4,27 @@
   items:
   - name: Microsoft C++, C, and Assembler
     tocHref: /cpp/
-    topicHref: /cpp
+    topicHref: /cpp/index
     items:
-    - name: Microsoft C/C++
-      tocHref: /cpp/overview/
-      topicHref: /cpp/overview/visual-cpp-in-visual-studio
-      items:
-    - name: C++ language
-      tocHref: /cpp/cpp/
-      topicHref: /cpp/cpp/cpp-language-reference
-    - name: C language
-      tocHref: /cpp/c-language/
-      topicHref: /cpp/c-language/c-language-reference
-    - name: C/C++ preprocessor
-      tocHref: /cpp/preprocessor/
-      topicHref: /cpp/preprocessor/c-cpp-preprocessor-reference
     - name: Compiler intrinsics and assembly language
       tocHref: /cpp/intrinsics/
-      topicHref: /cpp/intrinsics/compiler-intrinsics-and-assembly-language
+      topicHref: /cpp/intrinsics/index
       items:
+      - name: Compiler intrinsics
+        tocHref: /cpp/intrinsics/
+        topicHref: /cpp/intrinsics/compiler-intrinsics
       - name: ARM and ARM64 assembler
         tocHref: /cpp/assembler/arm/
         topicHref: /cpp/assembler/arm/arm-assembler-reference
-      - name: Inline x86 assembler
+      - name: C/C++ x86 inline assembler
         tocHref: /cpp/assembler/inline/
         topicHref: /cpp/assembler/inline/inline-assembler
-      - name: MASM x86 and x64 assembler
+      - name: x86 and x64 assembler
         tocHref: /cpp/assembler/masm/
         topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
-    - name: C runtime library
-      tocHref: /cpp/c-runtime-library/
-      topicHref: /cpp/c-runtime-library/c-run-time-library-reference
-      items:
-      - name: UCRT reference
-        tocHref: /cpp/c-runtime-library/reference/
-        topicHref: /cpp/c-runtime-library/reference/crt-alphabetical-function-reference
-    - name: C++ standard library
-      tocHref: /cpp/standard-library/
-      topicHref: /cpp/standard-library/cpp-standard-library-reference 
-    - name: Windows
-      tocHref: /cpp/windows/
-      topicHref: /cpp/windows/overview-of-windows-programming-in-cpp
-      items:
     - name: ATL
       tocHref: /cpp/atl/
       topicHref: /cpp/atl/atl-com-desktop-components
-    - name: MFC
-      tocHref: /cpp/mfc/
-      topicHref: /cpp/mfc/mfc-desktop-applications
-      items:
-      - name: MFC reference
-        tocHref: /cpp/mfc/reference/
-        topicHref: /cpp/mfc/reference/mfc-classes
     - name: ATL/MFC shared classes
       tocHref: /cpp/atl-mfc-shared/
       topicHref: /cpp/atl-mfc-shared/atl-mfc-shared-classes
@@ -63,18 +32,41 @@
       - name: ATL/MFC reference
         tocHref: /cpp/atl-mfc-shared/reference/
         topicHref: /cpp/atl-mfc-shared/reference/classes-shared-by-mfc-and-atl
+    - name: Build C/C++ projects
+      tocHref: /cpp/build/
+      topicHref: /cpp/build/building-c-cpp-programs
+      items:
+      - name: Build reference
+        tocHref: /cpp/build/reference/
+        topicHref: /cpp/build/reference/c-cpp-building-reference
+    - name: Build insights
+      tocHref: /cpp/build-insights/
+      topicHref: /cpp/build-insights/index
+    - name: C language
+      tocHref: /cpp/c-language/
+      topicHref: /cpp/c-language/index
+    - name: C runtime library
+      tocHref: /cpp/c-runtime-library/
+      topicHref: /cpp/c-runtime-library/c-run-time-library-reference
+      items:
+      - name: UCRT reference
+        tocHref: /cpp/c-runtime-library/reference/
+        topicHref: /cpp/c-runtime-library/reference/crt-alphabetical-function-reference
+    - name: Cloud and web
+      tocHref: /cpp/cloud/
+      topicHref: /cpp/cloud/cloud-and-web-programming-in-visual-cpp
+    - name: Code analysis
+      tocHref: /cpp/code-quality/
+      topicHref: /cpp/code-quality/index
+    - name: C++ language
+      tocHref: /cpp/cpp/
+      topicHref: /cpp/cpp/index
     - name: C++/CX
       tocHref: /cpp/cppcx/
       topicHref: /cpp/cppcx/visual-c-language-reference-c-cx
-    - name: Linux
-      tocHref: /cpp/linux/
-      topicHref: /cpp/linux/download-install-and-setup-the-linux-development-workload
-    - name: C++/CLI for .NET
-      tocHref: /cpp/dotnet/
-      topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp
-    - name: Parallel programming
-      tocHref: /cpp/parallel/
-      topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
+    - name: Cross-platform mobile development
+      tocHref: /cpp/cross-platform/
+      topicHref: /cpp/cross-platform/index
     - name: Data access
       tocHref: /cpp/data/
       topicHref: /cpp/data/data-access-in-cpp
@@ -85,35 +77,46 @@
       - name: ODBC
         tocHref: /cpp/data/odbc/
         topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-    - name: Edit, navigate, and refactor code
-      tocHref: /cpp/ide
-      topicHref: /cpp/ide/read-and-understand-code-cpp
-      items:
-      - name: C++ in the IDE
-        tocHref: /cpp/ide/
-        topicHref: /cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development
-    - name: Build C/C++ projects
-      tocHref: /cpp/build/
-      topicHref: /cpp/build/building-c-cpp-programs
-      items:
-      - name: Build reference
-        tocHref: /cpp/build/reference/
-        topicHref: /cpp/build/reference/c-cpp-building-reference
-    - name: Build insights
-      tocHref: /cpp/build-insights/
-      topicHref: /cpp/build-insights/get-started-with-cpp-build-insights
+    - name: C++/CLI for .NET
+      tocHref: /cpp/dotnet/
+      topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp
     - name: Errors and warnings
       tocHref: /cpp/error-messages/
       topicHref: /cpp/error-messages/compiler-errors-1/c-cpp-build-errors
+    - name: Edit, navigate, and refactor code
+      tocHref: /cpp/ide/
+      topicHref: /cpp/ide/read-and-understand-code-cpp
+    - name: Linux
+      tocHref: /cpp/linux/
+      topicHref: /cpp/linux/index
+    - name: MFC
+      tocHref: /cpp/mfc/
+      topicHref: /cpp/mfc/mfc-desktop-applications
+      items:
+      - name: MFC reference
+        tocHref: /cpp/mfc/reference/
+        topicHref: /cpp/mfc/reference/mfc-classes
+    - name: Microsoft C/C++
+      tocHref: /cpp/overview/
+      topicHref: /cpp/overview/visual-cpp-in-visual-studio
+    - name: Parallel programming
+      tocHref: /cpp/parallel/
+      topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
     - name: Porting and upgrading
       tocHref: /cpp/porting/
       topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide
+    - name: C/C++ preprocessor
+      tocHref: /cpp/preprocessor/
+      topicHref: /cpp/preprocessor/c-cpp-preprocessor-reference
+    - name: Security
+      tocHref: /cpp/security/
+      topicHref: /cpp/security/security-best-practices-for-cpp
+    - name: C++ standard library
+      tocHref: /cpp/standard-library/
+      topicHref: /cpp/standard-library/cpp-standard-library-reference 
     - name: Text and strings
       tocHref: /cpp/text/
       topicHref: /cpp/text/text-and-strings-in-visual-cpp
-    - name: Security
-      tocHref: /cpp/security
-      topicHref: /cpp/security/security-best-practices-for-cpp
-    - name: Cloud and web
-      tocHref: /cpp/cloud
-      topicHref: /cpp/cloud/cloud-and-web-programming-in-visual-cpp
+    - name: Windows
+      tocHref: /cpp/windows/
+      topicHref: /cpp/windows/overview-of-windows-programming-in-cpp

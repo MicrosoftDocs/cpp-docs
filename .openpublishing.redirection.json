@@ -107,22 +107,22 @@
     },
     {
       "source_path": "docs/assembler/arm/index.md",
-      "redirect_url": "/cpp/assembler/arm/arm-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/index.md",
-      "redirect_url": "/cpp/assembler/masm/microsoft-macro-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/inline/index.md",
-      "redirect_url": "/cpp/assembler/inline/inline-assembler",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/masm/index.md",
-      "redirect_url": "/cpp/assembler/masm/microsoft-macro-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
@@ -7488,11 +7488,6 @@
     {
       "source_path": "docs/ide/specify-release-configuration.md",
       "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/intrinsics/index.md",
-      "redirect_url": "/cpp/intrinsics/compiler-intrinsics",
       "redirect_document_id": false
     },
     {

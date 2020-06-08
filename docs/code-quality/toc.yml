@@ -1,7 +1,7 @@
 - name: Code analysis documentation
   href: ../code-quality/index.yml
 - name: Overview
-  displayName: "C++ code analysis"
+  displayName: "C and C++ code analysis"
   href: ../code-quality/code-analysis-for-c-cpp-overview.md
 - name: Quickstart
   href: ../code-quality/quick-start-code-analysis-for-c-cpp.md
@@ -217,10 +217,10 @@
     href: ../code-quality/c26819.md
   - name: C26820
     href: ../code-quality/c26820.md
-- name: C/C++ warnings
+- name: C/C++ code analysis warnings
   items:
   - name: Overview
-    displayName: "C++ warnings"
+    displayName: "Code analysis warnings"
     href: ../code-quality/code-analysis-for-c-cpp-warnings.md
   - name: C1250
     href: ../code-quality/c1250.md

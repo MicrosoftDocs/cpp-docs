@@ -31,8 +31,6 @@ landingContent:
         links:
           - text: Analyze C/C++ code for defects walkthrough
             url: walkthrough-analyzing-c-cpp-code-for-defects.md
-          - text: Use SAL annotations to reduce C/C++ code defects
-            url: using-sal-annotations-to-reduce-c-cpp-code-defects.md
 
   # Card
   - title: Code analysis reference
@@ -47,3 +45,31 @@ landingContent:
             url: code-analysis-for-cpp-corecheck.md
           - text: C++ code analysis warnings
             url: code-analysis-for-c-cpp-warnings.md
+
+  # Card
+  - title: Use SAL annotations to reduce defects
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Understanding SAL
+            url: understanding-sal.md
+      - linkListType: get-started
+        links:
+          - text: SAL examples
+            url: best-practices-and-examples-sal.md
+      - linkListType: how-to-guide
+        links:
+          - text: Annotate function parameters and return values
+            url: annotating-function-parameters-and-return-values.md
+          - text: Annotate function behavior
+            url: annotating-function-behavior.md
+          - text: Annotate structs and classes
+            url: annotating-structs-and-classes.md
+          - text: Annotate locking behavior
+            url: annotating-locking-behavior.md
+          - text: Specify when and where annotations apply
+            url: specifying-when-and-where-an-annotation-applies.md
+      - linkListType: reference
+        links:
+          - text: SAL annotation intrinsics
+            url: intrinsic-functions.md
