@@ -90,11 +90,11 @@ When an embedded item is activated in place, the framework loads the in-place me
 
 Server applications should create a new toolbar and store its bitmap in a separate file. The application wizard-generated applications store this bitmap in a file called ITOOLBAR.BMP. The new toolbar replaces the container application's toolbar when your server's item is activated in place, and should contain the same items as your normal toolbar, but remove icons representing items on the File and Window menus.
 
-This toolbar is loaded in your `COleIPFrameWnd`-derived class, created for you by the application wizard. The status bar is handled by the container application. For more information on the implementation of in-place frame windows, see [Servers: Implementing a Server](../mfc/servers-implementing-a-server.md).
+This toolbar is loaded in your `COleIPFrameWnd`-derived class, created for you by the application wizard. The status bar is handled by the container application. For more information on the implementation of in-place frame windows, see [Servers: Implementing a Server](servers-implementing-a-server.md).
 
 ## See also
 
-[Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Activation](../mfc/activation-cpp.md)<br/>
-[Servers](../mfc/servers.md)<br/>
-[Containers](../mfc/containers.md)
+[Menus and Resources (OLE)](menus-and-resources-ole.md)<br/>
+[Activation](activation-cpp.md)<br/>
+[Servers](servers.md)<br/>
+[Containers](containers.md)

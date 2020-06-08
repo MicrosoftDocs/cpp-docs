@@ -22,5 +22,5 @@ You can download the complete chart from the following location: [MFC Hierarchy 
 
 ## See also
 
-[Hierarchy Chart Categories](../mfc/hierarchy-chart-categories.md)<br/>
-[Class Overview](../mfc/class-library-overview.md)
+[Hierarchy Chart Categories](hierarchy-chart-categories.md)<br/>
+[Class Overview](class-library-overview.md)

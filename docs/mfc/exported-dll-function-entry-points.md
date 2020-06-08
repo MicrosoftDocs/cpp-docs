@@ -14,7 +14,7 @@ This switching is achieved by constructing an instance of an `AFX_MODULE_STATE` 
 
 If you have an exported function, such as one that launches a dialog box in your DLL, you need to add the following code to the beginning of the function:
 
-[!code-cpp[NVC_MFCConnectionPoints#6](../mfc/codesnippet/cpp/exported-dll-function-entry-points_1.cpp)]
+[!code-cpp[NVC_MFCConnectionPoints#6](codesnippet/cpp/exported-dll-function-entry-points_1.cpp)]
 
 This swaps the current module state with the state returned from [AfxGetStaticModuleState](reference/extension-dll-macros.md#afxgetstaticmodulestate) until the end of the current scope.
 
@@ -24,4 +24,4 @@ Problems with resources in DLLs will occur if the `AFX_MANAGE_STATE` macro is no
 
 ## See also
 
-[Managing the State Data of MFC Modules](../mfc/managing-the-state-data-of-mfc-modules.md)
+[Managing the State Data of MFC Modules](managing-the-state-data-of-mfc-modules.md)

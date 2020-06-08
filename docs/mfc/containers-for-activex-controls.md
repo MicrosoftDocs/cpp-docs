@@ -48,4 +48,4 @@ The following are non-Microsoft applications that support ActiveX control contai
 
 ## See also
 
-[ActiveX Control Containers](../mfc/activex-control-containers.md)
+[ActiveX Control Containers](activex-control-containers.md)

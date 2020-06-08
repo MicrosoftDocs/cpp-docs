@@ -14,4 +14,4 @@ See the following sample programs that illustrate Microsoft Messaging Applicatio
 
 ## See also
 
-[MAPI](../mfc/mapi.md)
+[MAPI](mapi.md)

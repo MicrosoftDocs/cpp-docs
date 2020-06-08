@@ -16,10 +16,10 @@ Follow these guidelines in using the Clipboard:
 
 ## What do you want to do
 
-- [Use the OLE Clipboard mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
+- [Use the OLE Clipboard mechanism](clipboard-using-the-ole-clipboard-mechanism.md)
 
-- [Use the Windows Clipboard mechanism](../mfc/clipboard-using-the-windows-clipboard.md)
+- [Use the Windows Clipboard mechanism](clipboard-using-the-windows-clipboard.md)
 
 ## See also
 
-[Clipboard](../mfc/clipboard.md)
+[Clipboard](clipboard.md)

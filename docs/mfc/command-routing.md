@@ -34,4 +34,4 @@ Where numbered entries in the second column of the preceding table mention other
 
 ## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+[How the Framework Calls a Handler](how-the-framework-calls-a-handler.md)

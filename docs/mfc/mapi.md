@@ -6,7 +6,7 @@ ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
 ---
 # MAPI
 
-This article describes the Microsoft Messaging Application Programming Interface (MAPI) for client message application developers. MFC supplies support for a subset of MAPI in class `CDocument` but does not encapsulate the entire API. For more information, see [MAPI Support in MFC](../mfc/mapi-support-in-mfc.md).
+This article describes the Microsoft Messaging Application Programming Interface (MAPI) for client message application developers. MFC supplies support for a subset of MAPI in class `CDocument` but does not encapsulate the entire API. For more information, see [MAPI Support in MFC](mapi-support-in-mfc.md).
 
 MAPI is a set of functions that mail-enabled and mail-aware applications use to create, manipulate, transfer, and store mail messages. It gives application developers the tools to define the purpose and content of mail messages and gives them flexibility in their management of stored mail messages. MAPI also provides a common interface that application developers can use to create mail-enabled and mail-aware applications independent of the underlying messaging system.
 
@@ -16,10 +16,10 @@ For more information about MAPI, see the articles under Guide in Win32 Messaging
 
 ## In This Section
 
-[MAPI Support in MFC](../mfc/mapi-support-in-mfc.md)
+[MAPI Support in MFC](mapi-support-in-mfc.md)
 
 ## See also
 
-[CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)<br/>
-[CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)<br/>
-[COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
+[CDocument::OnFileSendMail](reference/cdocument-class.md#onfilesendmail)<br/>
+[CDocument::OnUpdateFileSendMail](reference/cdocument-class.md#onupdatefilesendmail)<br/>
+[COleDocument::OnFileSendMail](reference/coledocument-class.md#onfilesendmail)

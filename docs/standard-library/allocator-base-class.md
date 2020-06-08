@@ -21,7 +21,7 @@ class allocator_base
 |Parameter|Description|
 |---------------|-----------------|
 |*Type*|The type of elements allocated by the allocator.|
-|*Sync*|The synchronization policy for the allocator, which is [sync_none Class](../standard-library/sync-none-class.md), [sync_per_container Class](../standard-library/sync-per-container-class.md), [sync_per_thread Class](../standard-library/sync-per-thread-class.md), or [sync_shared Class](../standard-library/sync-shared-class.md).|
+|*Sync*|The synchronization policy for the allocator, which is [sync_none Class](sync-none-class.md), [sync_per_container Class](sync-per-container-class.md), [sync_per_thread Class](sync-per-thread-class.md), or [sync_shared Class](sync-shared-class.md).|
 
 ### Constructors
 
@@ -169,7 +169,7 @@ allocator_base(const allocator_base<Other, Sync>& right);
 
 ### Remarks
 
-The first constructor constructs an [allocator_base](../standard-library/allocator-base-class.md) instance. The second constructor constructs an `allocator_base` instance such that for any `allocator_base<Type, _Sync>` instance `a`, `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`.
+The first constructor constructs an [allocator_base](allocator-base-class.md) instance. The second constructor constructs an `allocator_base` instance such that for any `allocator_base<Type, _Sync>` instance `a`, `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`.
 
 ## <a name="const_pointer"></a> allocator_base::const_pointer
 
@@ -301,4 +301,4 @@ typedef Type value_type;
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

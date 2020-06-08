@@ -6,7 +6,7 @@ ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
 ---
 # Data Objects and Data Sources: Creation and Destruction
 
-As explained in the article [Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md), data objects and data sources represent both sides of a data transfer. This article explains when to create and destroy these objects and sources to perform your data transfers properly, including:
+As explained in the article [Data Objects and Data Sources (OLE)](data-objects-and-data-sources-ole.md), data objects and data sources represent both sides of a data transfer. This article explains when to create and destroy these objects and sources to perform your data transfers properly, including:
 
 - [Creating data objects](#_core_creating_data_objects)
 
@@ -52,20 +52,20 @@ Data sources are created when an application needs to copy data to the Clipboard
 
 This scenario is implemented by the MFC OLE samples [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md). Look at the source for each application's `CView`-derived class for all but the `GetClipboardData` and `OnGetClipboardData` functions. These two functions are in either the `COleClientItem` or `COleServerItem`-derived class implementations. These sample programs provide a good example of how to implement these concepts.
 
-One other situation in which you might want to create a `COleDataSource` object occurs if you are modifying the default behavior of a drag-and-drop operation. For more information, see the [OLE Drag and drop: Customize drag and drop](../mfc/drag-and-drop-ole.md#customize-drag-and-drop) article.
+One other situation in which you might want to create a `COleDataSource` object occurs if you are modifying the default behavior of a drag-and-drop operation. For more information, see the [OLE Drag and drop: Customize drag and drop](drag-and-drop-ole.md#customize-drag-and-drop) article.
 
 ## <a name="_core_destroying_data_sources"></a> Destroying Data Sources
 
-Data sources must be destroyed by the application currently responsible for them. In situations where you hand the data source to OLE, such as calling [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop), you need to call `pDataSrc->InternalRelease`. For example:
+Data sources must be destroyed by the application currently responsible for them. In situations where you hand the data source to OLE, such as calling [COleDataSource::DoDragDrop](reference/coledatasource-class.md#dodragdrop), you need to call `pDataSrc->InternalRelease`. For example:
 
 [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]
 
 If you have not handed your data source to OLE, then you are responsible for destroying it, as with any typical C++ object.
 
-For more information, see [Drag and Drop](../mfc/drag-and-drop-ole.md), [Clipboard](../mfc/clipboard.md), and [Manipulating Data Objects and Data Sources](../mfc/data-objects-and-data-sources-manipulation.md).
+For more information, see [Drag and Drop](drag-and-drop-ole.md), [Clipboard](clipboard.md), and [Manipulating Data Objects and Data Sources](data-objects-and-data-sources-manipulation.md).
 
 ## See also
 
-[Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
-[COleDataObject Class](../mfc/reference/coledataobject-class.md)<br/>
-[COleDataSource Class](../mfc/reference/coledatasource-class.md)
+[Data Objects and Data Sources (OLE)](data-objects-and-data-sources-ole.md)<br/>
+[COleDataObject Class](reference/coledataobject-class.md)<br/>
+[COleDataSource Class](reference/coledatasource-class.md)

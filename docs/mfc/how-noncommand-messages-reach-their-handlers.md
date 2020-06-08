@@ -12,4 +12,4 @@ At run time, each Windows window is attached to a window object (derived directl
 
 ## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+[How the Framework Calls a Handler](how-the-framework-calls-a-handler.md)

@@ -14,21 +14,21 @@ For non-MFC information about memory management in programs for Windows, see [Me
 
 ## What do you want to know more about
 
-- [Frame allocation](../mfc/memory-management-frame-allocation.md)
+- [Frame allocation](memory-management-frame-allocation.md)
 
-- [Heap allocation](../mfc/memory-management-heap-allocation.md)
+- [Heap allocation](memory-management-heap-allocation.md)
 
-- [Allocating memory for an array](../mfc/memory-management-examples.md)
+- [Allocating memory for an array](memory-management-examples.md)
 
-- [Deallocating memory for an array from the heap](../mfc/memory-management-examples.md)
+- [Deallocating memory for an array from the heap](memory-management-examples.md)
 
-- [Allocating memory for a data structure](../mfc/memory-management-examples.md)
+- [Allocating memory for a data structure](memory-management-examples.md)
 
-- [Allocating memory for an object](../mfc/memory-management-examples.md)
+- [Allocating memory for an object](memory-management-examples.md)
 
-- [Resizable memory blocks](../mfc/memory-management-resizable-memory-blocks.md)
+- [Resizable memory blocks](memory-management-resizable-memory-blocks.md)
 
 ## See also
 
-[Concepts](../mfc/mfc-concepts.md)<br/>
-[General MFC Topics](../mfc/general-mfc-topics.md)
+[Concepts](mfc-concepts.md)<br/>
+[General MFC Topics](general-mfc-topics.md)

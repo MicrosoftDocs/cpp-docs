@@ -15,49 +15,49 @@ The Microsoft Foundation Class (MFC) Library supports multiple threads of execut
 
 ## Application and Thread Classes
 
-[CWinApp](../mfc/reference/cwinapp-class.md)<br/>
+[CWinApp](reference/cwinapp-class.md)<br/>
 Encapsulates the code to initialize, run, and terminate the application. You will derive your application object from this class.
 
-[CWinThread](../mfc/reference/cwinthread-class.md)<br/>
+[CWinThread](reference/cwinthread-class.md)<br/>
 The base class for all threads. Use directly, or derive a class from `CWinThread` if your thread performs user-interface functions. `CWinApp` is derived from `CWinThread`.
 
 ## Synchronization Object Classes
 
-[CSyncObject](../mfc/reference/csyncobject-class.md)<br/>
+[CSyncObject](reference/csyncobject-class.md)<br/>
 Base class of the synchronization object classes.
 
-[CCriticalSection](../mfc/reference/ccriticalsection-class.md)<br/>
+[CCriticalSection](reference/ccriticalsection-class.md)<br/>
 A synchronization class that allows only one thread within a single process to access an object.
 
-[CSemaphore](../mfc/reference/csemaphore-class.md)<br/>
+[CSemaphore](reference/csemaphore-class.md)<br/>
 A synchronization class that allows between one and a specified maximum number of simultaneous accesses to an object.
 
-[CMutex](../mfc/reference/cmutex-class.md)<br/>
+[CMutex](reference/cmutex-class.md)<br/>
 A synchronization class that allows only one thread within any number of processes to access an object.
 
-[CEvent](../mfc/reference/cevent-class.md)<br/>
+[CEvent](reference/cevent-class.md)<br/>
 A synchronization class that notifies an application when an event has occurred.
 
-[CSingleLock](../mfc/reference/csinglelock-class.md)<br/>
+[CSingleLock](reference/csinglelock-class.md)<br/>
 Used in member functions of thread-safe classes to lock on one synchronization object.
 
-[CMultiLock](../mfc/reference/cmultilock-class.md)<br/>
+[CMultiLock](reference/cmultilock-class.md)<br/>
 Used in member functions of thread-safe classes to lock on one or more synchronization objects from an array of synchronization objects.
 
 ## Related Classes
 
-[CCommandLineInfo](../mfc/reference/ccommandlineinfo-class.md)<br/>
+[CCommandLineInfo](reference/ccommandlineinfo-class.md)<br/>
 Parses the command line with which your program was started.
 
-[CWaitCursor](../mfc/reference/cwaitcursor-class.md)<br/>
+[CWaitCursor](reference/cwaitcursor-class.md)<br/>
 Puts a wait cursor on the screen. Used during lengthy operations.
 
-[CDockState](../mfc/reference/cdockstate-class.md)<br/>
+[CDockState](reference/cdockstate-class.md)<br/>
 Handles persistent storage of docking state data for control bars.
 
-[CRecentFileList](../mfc/reference/crecentfilelist-class.md)<br/>
+[CRecentFileList](reference/crecentfilelist-class.md)<br/>
 Maintains the most recently used (MRU) file list.
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

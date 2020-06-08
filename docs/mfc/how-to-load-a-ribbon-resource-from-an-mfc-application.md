@@ -32,4 +32,4 @@ To use the ribbon resource in your application, modify the application to load t
 
 ## See also
 
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+[Ribbon Designer (MFC)](ribbon-designer-mfc.md)

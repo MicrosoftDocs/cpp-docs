@@ -32,5 +32,5 @@ For more information on these notifications, see [Rebar Control Reference](/wind
 
 ## See also
 
-[Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CReBarCtrl](using-crebarctrl.md)<br/>
+[Controls](controls-mfc.md)

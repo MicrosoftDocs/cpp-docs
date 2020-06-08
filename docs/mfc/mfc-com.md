@@ -15,36 +15,36 @@ Active technologies include both client and server technologies, including the f
 
 - ActiveX controls are interactive objects that can be used in containers such as a Web site. For more information on ActiveX controls, see:
 
-  - [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+  - [MFC ActiveX Controls](mfc-activex-controls.md)
 
-  - [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)
+  - [ActiveX Controls on the Internet](activex-controls-on-the-internet.md)
 
-  - [Overview: Internet](../mfc/mfc-internet-programming-basics.md)
+  - [Overview: Internet](mfc-internet-programming-basics.md)
 
-  - [Upgrade an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)
+  - [Upgrade an Existing ActiveX Control to be Used on the Internet](upgrading-an-existing-activex-control.md)
 
   - [Debugging an ActiveX Control](/visualstudio/debugger/how-to-debug-an-activex-control)
 
-- Active scripting controls the integrated behavior of one or more ActiveX controls from a browser or server. For more information on active scripting, see [Active Technology on the Internet](../mfc/active-technology-on-the-internet.md).
+- Active scripting controls the integrated behavior of one or more ActiveX controls from a browser or server. For more information on active scripting, see [Active Technology on the Internet](active-technology-on-the-internet.md).
 
-- [Automation](../mfc/automation.md) (formerly known as OLE Automation) makes it possible for one application to manipulate objects implemented in another application, or to "expose" objects so they can be manipulated.
+- [Automation](automation.md) (formerly known as OLE Automation) makes it possible for one application to manipulate objects implemented in another application, or to "expose" objects so they can be manipulated.
 
    The automated object might be local or remote (on another machine accessible across a network). Automation is available for both OLE and COM objects.
 
-- This section also provides information on how to write COM components using MFC, for example, in [Connection Points](../mfc/connection-points.md).
+- This section also provides information on how to write COM components using MFC, for example, in [Connection Points](connection-points.md).
 
-For a discussion of what is still called OLE versus what is now called active technology, see the topics on [OLE](../mfc/ole-in-mfc.md).
+For a discussion of what is still called OLE versus what is now called active technology, see the topics on [OLE](ole-in-mfc.md).
 
 ## In This Section
 
-[Active Document Containment](../mfc/active-document-containment.md)
+[Active Document Containment](active-document-containment.md)
 
-[Automation](../mfc/automation.md)
+[Automation](automation.md)
 
-[Connection Points](../mfc/connection-points.md)
+[Connection Points](connection-points.md)
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Controls](mfc-activex-controls.md)
 
 ## See also
 
-[Concepts](../mfc/mfc-concepts.md)
+[Concepts](mfc-concepts.md)

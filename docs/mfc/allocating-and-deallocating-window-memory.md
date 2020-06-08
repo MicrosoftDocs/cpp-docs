@@ -10,12 +10,12 @@ Do not use the C++ **delete** operator to destroy a frame window or view. Instea
 
 ## What do you want to know more about
 
-- [Creating windows](../mfc/creating-windows.md)
+- [Creating windows](creating-windows.md)
 
-- [Window destruction sequence](../mfc/window-destruction-sequence.md)
+- [Window destruction sequence](window-destruction-sequence.md)
 
-- [Detaching a CWnd from its HWND](../mfc/detaching-a-cwnd-from-its-hwnd.md)
+- [Detaching a CWnd from its HWND](detaching-a-cwnd-from-its-hwnd.md)
 
 ## See also
 
-[Destroying Window Objects](../mfc/destroying-window-objects.md)
+[Destroying Window Objects](destroying-window-objects.md)

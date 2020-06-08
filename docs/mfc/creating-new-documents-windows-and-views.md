@@ -19,17 +19,17 @@ Sequence in Creating a Frame Window
 ![Sequence for creating a view](../mfc/media/vc387l3.gif "Sequence for creating a view") <br/>
 Sequence in Creating a View
 
-For information about how the framework initializes the new document, view, and frame-window objects, see classes [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), and [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) in the MFC Library Reference. Also see [Technical Note 22](../mfc/tn022-standard-commands-implementation.md), which explains the creation and initialization processes further under its discussion of the framework's standard commands for the **New** and **Open** items on the **File** menu.
+For information about how the framework initializes the new document, view, and frame-window objects, see classes [CDocument](reference/cdocument-class.md), [CView](reference/cview-class.md), [CFrameWnd](reference/cframewnd-class.md), [CMDIFrameWnd](reference/cmdiframewnd-class.md), and [CMDIChildWnd](reference/cmdichildwnd-class.md) in the MFC Library Reference. Also see [Technical Note 22](tn022-standard-commands-implementation.md), which explains the creation and initialization processes further under its discussion of the framework's standard commands for the **New** and **Open** items on the **File** menu.
 
 ## <a name="_core_initializing_your_own_additions_to_these_classes"></a> Initializing Your Own Additions to These Classes
 
-The preceding figures also suggest the points at which you can override member functions to initialize your application's objects. An override of `OnInitialUpdate` in your view class is the best place to initialize the view. The `OnInitialUpdate` call occurs immediately after the frame window is created and the view within the frame window is attached to its document. For example, if your view is a scroll view (derived from `CScrollView` rather than `CView`), you should set the view size based on the document size in your `OnInitialUpdate` override. (This process is described in the description of class [CScrollView](../mfc/reference/cscrollview-class.md).) You can override the `CDocument` member functions `OnNewDocument` and `OnOpenDocument` to provide application-specific initialization of the document. Typically, you must override both since a document can be created in two ways.
+The preceding figures also suggest the points at which you can override member functions to initialize your application's objects. An override of `OnInitialUpdate` in your view class is the best place to initialize the view. The `OnInitialUpdate` call occurs immediately after the frame window is created and the view within the frame window is attached to its document. For example, if your view is a scroll view (derived from `CScrollView` rather than `CView`), you should set the view size based on the document size in your `OnInitialUpdate` override. (This process is described in the description of class [CScrollView](reference/cscrollview-class.md).) You can override the `CDocument` member functions `OnNewDocument` and `OnOpenDocument` to provide application-specific initialization of the document. Typically, you must override both since a document can be created in two ways.
 
-In most cases, your override should call the base class version. For more information, see the named member functions of classes [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), and [CWinApp](../mfc/reference/cwinapp-class.md) in the MFC Library Reference.
+In most cases, your override should call the base class version. For more information, see the named member functions of classes [CDocument](reference/cdocument-class.md), [CView](reference/cview-class.md), [CFrameWnd](reference/cframewnd-class.md), and [CWinApp](reference/cwinapp-class.md) in the MFC Library Reference.
 
 ## See also
 
-[Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
-[Document Template Creation](../mfc/document-template-creation.md)<br/>
-[Document/View Creation](../mfc/document-view-creation.md)<br/>
-[Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)
+[Document Templates and the Document/View Creation Process](document-templates-and-the-document-view-creation-process.md)<br/>
+[Document Template Creation](document-template-creation.md)<br/>
+[Document/View Creation](document-view-creation.md)<br/>
+[Relationships Among MFC Objects](relationships-among-mfc-objects.md)

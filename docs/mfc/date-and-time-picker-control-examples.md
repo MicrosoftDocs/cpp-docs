@@ -10,5 +10,5 @@ The [CMNCTRL1](../overview/visual-cpp-samples.md) sample demonstrates the variou
 
 ## See also
 
-[Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CDateTimeCtrl](using-cdatetimectrl.md)<br/>
+[Controls](controls-mfc.md)
