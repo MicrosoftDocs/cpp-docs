@@ -8,7 +8,7 @@ ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
 ---
 # SafeInt Functions
 
-The SafeInt library provides several functions that you can use without creating an instance of the [SafeInt class](../safeint/safeint-class.md). If you want to protect a single mathematical operation from integer overflow, you can use these functions. If you want to protect multiple mathematical operations, you should create `SafeInt` objects. It is more efficient to create `SafeInt` objects than to use these functions multiple times.
+The SafeInt library provides several functions that you can use without creating an instance of the [SafeInt class](safeint-class.md). If you want to protect a single mathematical operation from integer overflow, you can use these functions. If you want to protect multiple mathematical operations, you should create `SafeInt` objects. It is more efficient to create `SafeInt` objects than to use these functions multiple times.
 
 These functions enable you to compare or perform mathematical operations on two different types of parameters without having to convert them to the same type first.
 
@@ -33,8 +33,8 @@ Function                      | Description
 
 Section                                                  | Description
 -------------------------------------------------------- | ----------------------------------------------------
-[SafeInt](../safeint/safeint-class.md)                   | The `SafeInt` class.
-[SafeIntException](../safeint/safeintexception-class.md) | The exception class specific to the SafeInt library.
+[SafeInt](safeint-class.md)                   | The `SafeInt` class.
+[SafeIntException](safeintexception-class.md) | The exception class specific to the SafeInt library.
 
 ## <a name="safeadd"></a> SafeAdd
 

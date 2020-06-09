@@ -10,22 +10,22 @@ Applications written for Microsoft Windows are "message driven." In response to 
 
 The following topics introduce the key terms used in the rest of the article family to discuss messages and commands:
 
-- [Messages](../mfc/messages.md)
+- [Messages](messages.md)
 
-- [Message handlers](../mfc/message-handlers.md)
+- [Message handlers](message-handlers.md)
 
-- [Message categories](../mfc/message-categories.md)
+- [Message categories](message-categories.md)
 
-- [Windows messages and control-notification messages](../mfc/message-categories.md)
+- [Windows messages and control-notification messages](message-categories.md)
 
-- [Command messages](../mfc/message-categories.md)
+- [Command messages](message-categories.md)
 
-- [Message maps](../mfc/mapping-messages.md)
+- [Message maps](mapping-messages.md)
 
-- [User-interface objects and command IDs](../mfc/user-interface-objects-and-command-ids.md)
+- [User-interface objects and command IDs](user-interface-objects-and-command-ids.md)
 
-- [Command targets](../mfc/command-targets.md)
+- [Command targets](command-targets.md)
 
 ## See also
 
-[Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
+[Message Handling and Mapping](message-handling-and-mapping.md)

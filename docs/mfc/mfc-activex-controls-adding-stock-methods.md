@@ -6,7 +6,7 @@ ms.assetid: bc4fad78-cabd-4cc0-a798-464b1a682f0b
 ---
 # MFC ActiveX Controls: Adding Stock Methods
 
-A stock method differs from a custom method in that it is already implemented by class [COleControl](../mfc/reference/colecontrol-class.md). For example, `COleControl` contains a predefined member function that supports the Refresh method for your control. The dispatch map entry for this stock method is DISP_STOCKFUNC_REFRESH.
+A stock method differs from a custom method in that it is already implemented by class [COleControl](reference/colecontrol-class.md). For example, `COleControl` contains a predefined member function that supports the Refresh method for your control. The dispatch map entry for this stock method is DISP_STOCKFUNC_REFRESH.
 
 >[!IMPORTANT]
 > ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
@@ -42,16 +42,16 @@ Adding a stock method is simple using the [Add Method Wizard](../ide/add-method-
 
 Because the stock Refresh method is supported by the control's base class, the **Add Method Wizard** does not change the control's class declaration in any way. It adds an entry for the method to the control's dispatch map and to its .IDL file. The following line is added to the control's dispatch map, located in its implementation (.CPP) file:
 
-[!code-cpp[NVC_MFC_AxUI#16](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-methods_1.cpp)]
+[!code-cpp[NVC_MFC_AxUI#16](codesnippet/cpp/mfc-activex-controls-adding-stock-methods_1.cpp)]
 
 This makes the Refresh method available to the control's users.
 
 The following line is added to the control's .IDL file:
 
-[!code-cpp[NVC_MFC_AxUI#17](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-methods_2.idl)]
+[!code-cpp[NVC_MFC_AxUI#17](codesnippet/cpp/mfc-activex-controls-adding-stock-methods_2.idl)]
 
 This line assigns the Refresh method a specific ID number.
 
 ## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Controls](mfc-activex-controls.md)

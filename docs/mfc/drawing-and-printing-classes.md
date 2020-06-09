@@ -10,4 +10,4 @@ In Windows, all graphical output is drawn on a virtual drawing area called a dev
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

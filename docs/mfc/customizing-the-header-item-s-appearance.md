@@ -6,7 +6,7 @@ ms.assetid: b1e1e326-ec7d-4dbd-a46f-96a3e2055618
 ---
 # Customizing the Header Item&#39;s Appearance
 
-By setting the *dwStyle* parameter when you first create a header control ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#create)), you can define the appearance and behavior of header items or of the header control itself.
+By setting the *dwStyle* parameter when you first create a header control ([CHeaderCtrl::Create](reference/cheaderctrl-class.md#create)), you can define the appearance and behavior of header items or of the header control itself.
 
 Here is a sampling of the styles you can set, and their purpose:
 
@@ -22,9 +22,9 @@ Here is a sampling of the styles you can set, and their purpose:
 
    The **HDS_HIDDEN** style indicates that the header control is intended to be used as a data container and not a visual control. This style does not automatically hide the control but, instead, affects the behavior of `CHeaderCtrl::Layout`. The value returned in the *cy* member of the `WINDOWPOS` structure will be zero indicating that the control should not be visible to the user.
 
-For more information about these properties, see [Items](/windows/win32/Controls/header-controls) in the Windows SDK. For information about adding items to a header control, see [Adding Items to the Header Control](../mfc/adding-items-to-the-header-control.md).
+For more information about these properties, see [Items](/windows/win32/Controls/header-controls) in the Windows SDK. For information about adding items to a header control, see [Adding Items to the Header Control](adding-items-to-the-header-control.md).
 
 ## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CHeaderCtrl](using-cheaderctrl.md)<br/>
+[Controls](controls-mfc.md)

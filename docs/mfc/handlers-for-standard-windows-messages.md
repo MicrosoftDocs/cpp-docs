@@ -22,10 +22,10 @@ In some cases, your handler should call the overridden handler in the base class
 
 How do you determine the proper way to override a given message When the [Class Wizard](reference/mfc-class-wizard.md) writes the skeleton of the handler function for a given message — an `OnCreate` handler for **WM_CREATE**, for example — it sketches in the form of the recommended overridden member function. The following example recommends that the handler first call the base-class handler and proceed only on condition that it does not return -1.
 
-[!code-cpp[NVC_MFCMessageHandling#3](../mfc/codesnippet/cpp/handlers-for-standard-windows-messages_1.cpp)]
+[!code-cpp[NVC_MFCMessageHandling#3](codesnippet/cpp/handlers-for-standard-windows-messages_1.cpp)]
 
 By convention, the names of these handlers begin with the prefix "On." Some of these handlers take no arguments, while others take several. Some also have a return type other than **void**. The default handlers for all **WM_** messages are documented in the *MFC Reference* as member functions of class `CWnd` whose names begin with "On." The member function declarations in `CWnd` are prefixed with **afx_msg**.
 
 ## See also
 
-[Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)
+[Declaring Message Handler Functions](declaring-message-handler-functions.md)

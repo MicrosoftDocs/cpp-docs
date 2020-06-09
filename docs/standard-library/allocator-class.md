@@ -41,7 +41,7 @@ Thus, an allocator defines the following types:
 
 These `Type`s specify the form that pointers and references must take for allocated elements. ( [allocator::pointer](#pointer) is not necessarily the same as `Type*` for all allocator objects, even though it has this obvious definition for class `allocator`.)
 
-**C++11 and later:**  To enable move operations in your allocator, use the minimal allocator interface and implement copy constructor, == and != operators, allocate and deallocate. For more information and an example, see [Allocators](../standard-library/allocators.md)
+**C++11 and later:**  To enable move operations in your allocator, use the minimal allocator interface and implement copy constructor, == and != operators, allocate and deallocate. For more information and an example, see [Allocators](allocators.md)
 
 ## Members
 

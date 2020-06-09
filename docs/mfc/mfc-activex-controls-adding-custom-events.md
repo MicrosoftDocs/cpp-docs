@@ -38,19 +38,19 @@ When you add a custom event, the Add Event Wizard makes changes to the control c
 
 The following lines are added to the header (.H) file of your control class:
 
-[!code-cpp[NVC_MFC_AxUI#7](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_1.h)]
+[!code-cpp[NVC_MFC_AxUI#7](codesnippet/cpp/mfc-activex-controls-adding-custom-events_1.h)]
 
-This code declares an inline function called `FireClickIn` that calls [COleControl::FireEvent](../mfc/reference/colecontrol-class.md#fireevent) with the ClickIn event and parameters you defined using the Add Event Wizard.
+This code declares an inline function called `FireClickIn` that calls [COleControl::FireEvent](reference/colecontrol-class.md#fireevent) with the ClickIn event and parameters you defined using the Add Event Wizard.
 
 In addition, the following line is added to the event map for the control, located in the implementation (.CPP) file of your control class:
 
-[!code-cpp[NVC_MFC_AxUI#8](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_2.cpp)]
+[!code-cpp[NVC_MFC_AxUI#8](codesnippet/cpp/mfc-activex-controls-adding-custom-events_2.cpp)]
 
 This code maps the event ClickIn to the inline function `FireClickIn`, passing the parameters you defined using the Add Event Wizard.
 
 Finally, the following line is added to your control's .IDL file:
 
-[!code-cpp[NVC_MFC_AxUI#9](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_3.idl)]
+[!code-cpp[NVC_MFC_AxUI#9](codesnippet/cpp/mfc-activex-controls-adding-custom-events_3.idl)]
 
 This line assigns the ClickIn event a specific ID number, taken from the event's position in the Add Event Wizard event list. The entry in the event list allows a container to anticipate the event. For example, it might provide handler code to be executed when the event is fired.
 
@@ -74,18 +74,18 @@ Now that you have added the ClickIn custom event using the Add Event Wizard, you
 
 The following code sample calls the `InCircle` function every time the left mouse button is clicked within the control window. This sample can be found in the `WM_LBUTTONDOWN` handler function, `OnLButtonDown`, in the [Circ sample](../overview/visual-cpp-samples.md) abstract.
 
-[!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]
+[!code-cpp[NVC_MFC_AxUI#10](codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]
 
 > [!NOTE]
 > When the Add Event Wizard creates message handlers for mouse button actions, a call to the same message handler of the base class is automatically added. Do not remove this call. If your control uses any of the stock mouse messages, the message handlers in the base class must be called to ensure that mouse capture is handled properly.
 
 In the following example, the event fires only when the click occurs inside a circular or elliptical region within the control. To achieve this behavior, you can place the `InCircle` function in your control's implementation (.CPP) file:
 
-[!code-cpp[NVC_MFC_AxUI#11](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_5.cpp)]
+[!code-cpp[NVC_MFC_AxUI#11](codesnippet/cpp/mfc-activex-controls-adding-custom-events_5.cpp)]
 
 You will also need to add the following declaration of the `InCircle` function to your control's header (.H) file:
 
-[!code-cpp[NVC_MFC_AxUI#12](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_6.h)]
+[!code-cpp[NVC_MFC_AxUI#12](codesnippet/cpp/mfc-activex-controls-adding-custom-events_6.h)]
 
 ## <a name="_core_custom_events_with_stock_names"></a> Custom Events with Stock Names
 
@@ -113,6 +113,6 @@ The following procedure adds a custom Click event.
 
 ## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)<br/>
-[COleControl Class](../mfc/reference/colecontrol-class.md)
+[MFC ActiveX Controls](mfc-activex-controls.md)<br/>
+[MFC ActiveX Controls: Methods](mfc-activex-controls-methods.md)<br/>
+[COleControl Class](reference/colecontrol-class.md)

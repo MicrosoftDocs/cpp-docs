@@ -8,7 +8,7 @@ ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
 
 An active document container, such as Microsoft Office Binder or Internet Explorer, allows you to work with several documents of different application types within a single frame (instead of forcing you to create and use multiple application frames for each document type).
 
-MFC provides full support for active document containers in the `COleDocObjectItem` class. You can use the MFC Application Wizard to create an active document container by selecting the **Active document container** check box on the **Compound Document Support** page of the MFC Application Wizard. For more information, see [Creating an Active Document Container Application](../mfc/creating-an-active-document-container-application.md).
+MFC provides full support for active document containers in the `COleDocObjectItem` class. You can use the MFC Application Wizard to create an active document container by selecting the **Active document container** check box on the **Compound Document Support** page of the MFC Application Wizard. For more information, see [Creating an Active Document Container Application](creating-an-active-document-container-application.md).
 
 For more information about active document containers, see:
 
@@ -20,11 +20,11 @@ For more information about active document containers, see:
 
 - [Frame Object](#frame_object)
 
-- [Help Menu Merging](../mfc/help-menu-merging.md)
+- [Help Menu Merging](help-menu-merging.md)
 
-- [Programmatic Printing](../mfc/programmatic-printing.md)
+- [Programmatic Printing](programmatic-printing.md)
 
-- [Command Targets](../mfc/message-handling-and-command-targets.md)
+- [Command Targets](message-handling-and-command-targets.md)
 
 ## <a name="container_requirements"></a> Container Requirements
 
@@ -40,7 +40,7 @@ An active document container that integrates active documents must:
 
 - Support the active documents' extensions by implementing `IOleDocumentSite` to provide the mechanism for the container to talk to the document. Optionally, the container can implement the active document interfaces `IOleCommandTarget` and `IContinueCallback` to pick up simple commands such as printing or saving.
 
-The frame object, the view objects, and the container object can optionally implement `IOleCommandTarget` to support the dispatch of certain commands, as discussed in [Command Targets](../mfc/message-handling-and-command-targets.md). View and container objects can also optionally implement `IPrint` and `IContinueCallback`, to support programmatic printing, as discussed in [Programmatic Printing](../mfc/programmatic-printing.md).
+The frame object, the view objects, and the container object can optionally implement `IOleCommandTarget` to support the dispatch of certain commands, as discussed in [Command Targets](message-handling-and-command-targets.md). View and container objects can also optionally implement `IPrint` and `IContinueCallback`, to support programmatic printing, as discussed in [Programmatic Printing](programmatic-printing.md).
 
 The following figure shows the conceptual relationships between a container and its components (at left), and the active document and its views (at right). The active document manages storage and data, and the view displays or optionally prints that data. Interfaces in bold are those required for active document participation; those bold and italic are optional. All other interfaces are required.
 
@@ -71,8 +71,8 @@ A container that supports multiple views must be able to create multiple view si
 
 The container's frame object is, for the most part, the same frame that is used for in-place activation in OLE Documents, that is, the one that handles menu and toolbar negotiation. A view object has access to this frame object through `IOleInPlaceSite::GetWindowContext`, which also provides access to the container object representing the container document (which can handle pane-level toolbar negotiation and contained object enumeration).
 
-An active document container can augment the frame by adding `IOleCommandTarget`. This allows it to receive commands that originate in the active document's user interface in the same way that this interface can allow a container to send the same commands (such as **File New**, **Open**, **Save As**, **Print**; **Edit Copy**, **Paste**, **Undo**, and others) to an active document. For more information, see [Command Targets](../mfc/message-handling-and-command-targets.md).
+An active document container can augment the frame by adding `IOleCommandTarget`. This allows it to receive commands that originate in the active document's user interface in the same way that this interface can allow a container to send the same commands (such as **File New**, **Open**, **Save As**, **Print**; **Edit Copy**, **Paste**, **Undo**, and others) to an active document. For more information, see [Command Targets](message-handling-and-command-targets.md).
 
 ## See also
 
-[Active Document Containment](../mfc/active-document-containment.md)
+[Active Document Containment](active-document-containment.md)

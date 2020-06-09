@@ -26,7 +26,7 @@ MAPI needs to read the file to send the attachment. If the application keeps its
 
 1. Manually add the following to your document's message map:
 
-   [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
+   [!code-cpp[NVC_MFCDocView#9](codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
 
     > [!NOTE]
     >  This message map works for a document derived from either `CDocument` or `COleDocument` — it picks up the correct base class in either case, even though the message map is in your derived document class.
@@ -36,18 +36,18 @@ MAPI needs to read the file to send the attachment. If the application keeps its
 If mail support is available, MFC enables your menu item with `OnUpdateFileSendMail` and subsequently processes the command with `OnFileSendMail`. If mail support is not available, MFC automatically removes your menu item so the user will not see it.
 
 > [!TIP]
-> Rather than manually adding message map entries as previously described, you can use the class [Class Wizard](reference/mfc-class-wizard.md) to map messages to functions. For more information, see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).
+> Rather than manually adding message map entries as previously described, you can use the class [Class Wizard](reference/mfc-class-wizard.md) to map messages to functions. For more information, see [Mapping Messages to Functions](reference/mapping-messages-to-functions.md).
 
-For related information, see the [MAPI](../mfc/mapi.md) overview.
+For related information, see the [MAPI](mapi.md) overview.
 
 For more information about the `CDocument` member functions that enable MAPI, see:
 
-- [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)
+- [CDocument::OnFileSendMail](reference/cdocument-class.md#onfilesendmail)
 
-- [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)
+- [CDocument::OnUpdateFileSendMail](reference/cdocument-class.md#onupdatefilesendmail)
 
-- [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
+- [COleDocument::OnFileSendMail](reference/coledocument-class.md#onfilesendmail)
 
 ## See also
 
-[MAPI](../mfc/mapi.md)
+[MAPI](mapi.md)

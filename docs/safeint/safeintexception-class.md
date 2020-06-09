@@ -29,7 +29,7 @@ Name                                                    | Description
 
 ## Remarks
 
-The [SafeInt class](../safeint/safeint-class.md) is the only class that uses the `SafeIntException` class.
+The [SafeInt class](safeint-class.md) is the only class that uses the `SafeIntException` class.
 
 ## Inheritance Hierarchy
 

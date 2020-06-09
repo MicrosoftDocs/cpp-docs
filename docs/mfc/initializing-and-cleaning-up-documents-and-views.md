@@ -13,17 +13,17 @@ Use the following guidelines for initializing and cleaning up after your documen
 - The framework cleans up as documents and views close; you must deallocate any memory that you allocated on the heap from within the member functions of those documents and views.
 
 > [!NOTE]
-> Recall that initialization for the whole application is best done in your override of the [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) member function of class `CWinApp`, and cleanup for the whole application is best done in your override of the `CWinApp` member function [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance).
+> Recall that initialization for the whole application is best done in your override of the [InitInstance](reference/cwinapp-class.md#initinstance) member function of class `CWinApp`, and cleanup for the whole application is best done in your override of the `CWinApp` member function [ExitInstance](reference/cwinapp-class.md#exitinstance).
 
 The life cycle of a document (and its frame window and view or views) in an MDI application is as follows:
 
 1. During dynamic creation, the document constructor is called.
 
-1. For each new document, the document's [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) or [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) is called.
+1. For each new document, the document's [OnNewDocument](reference/cdocument-class.md#onnewdocument) or [OnOpenDocument](reference/cdocument-class.md#onopendocument) is called.
 
 1. The user interacts with the document throughout its lifetime. Typically this happens as the user works on document data through the view, selecting and editing the data. The view passes changes on to the document for storage and updating other views. During this time both the document and the view might handle commands.
 
-1. The framework calls [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) to delete data specific to a document.
+1. The framework calls [DeleteContents](reference/cdocument-class.md#deletecontents) to delete data specific to a document.
 
 1. The document's destructor is called.
 
@@ -31,10 +31,10 @@ In an SDI application, step 1 is performed once, when the document is first crea
 
 ## What do you want to know more about
 
-- [Initializing Documents and Views](../mfc/initializing-documents-and-views.md)
+- [Initializing Documents and Views](initializing-documents-and-views.md)
 
-- [Cleaning Up Documents and Views](../mfc/cleaning-up-documents-and-views.md)
+- [Cleaning Up Documents and Views](cleaning-up-documents-and-views.md)
 
 ## See also
 
-[Document/View Architecture](../mfc/document-view-architecture.md)
+[Document/View Architecture](document-view-architecture.md)

@@ -24,9 +24,9 @@ The following table lists the most likely member functions to override in your `
 
 `OnCancel` is usually overridden for modeless dialog boxes.
 
-For more information about these member functions, see class [CDialog](../mfc/reference/cdialog-class.md) in the *MFC Reference* and the discussion on [Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md).
+For more information about these member functions, see class [CDialog](reference/cdialog-class.md) in the *MFC Reference* and the discussion on [Working with Dialog Boxes in MFC](life-cycle-of-a-dialog-box.md).
 
 ## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Commonly Added Member Functions](../mfc/commonly-added-member-functions.md)
+[Dialog Boxes](dialog-boxes.md)<br/>
+[Commonly Added Member Functions](commonly-added-member-functions.md)

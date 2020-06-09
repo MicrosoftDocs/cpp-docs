@@ -12,7 +12,7 @@ This topic contains procedures to:
 
 - Display a modeless dialog box through a menu command.
 
-Both sample procedures are for MFC applications and will work in an application you create with the [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md).
+Both sample procedures are for MFC applications and will work in an application you create with the [MFC Application Wizard](reference/mfc-application-wizard.md).
 
 The procedures use the following names and values:
 
@@ -99,5 +99,5 @@ The procedures use the following names and values:
 
 ## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Modal and Modeless Dialog Boxes](../mfc/modal-and-modeless-dialog-boxes.md)
+[Dialog Boxes](dialog-boxes.md)<br/>
+[Modal and Modeless Dialog Boxes](modal-and-modeless-dialog-boxes.md)

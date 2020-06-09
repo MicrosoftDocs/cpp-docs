@@ -6,7 +6,7 @@ ms.assetid: 485c8055-6bb0-4051-8417-dd2971499321
 ---
 # Dialog Bars
 
-A dialog bar is a toolbar, a kind of [control bar](../mfc/control-bars.md) that can contain any kind of control. Because it has the characteristics of a modeless dialog box, a [CDialogBar](../mfc/reference/cdialogbar-class.md) object provides a more powerful toolbar.
+A dialog bar is a toolbar, a kind of [control bar](control-bars.md) that can contain any kind of control. Because it has the characteristics of a modeless dialog box, a [CDialogBar](reference/cdialogbar-class.md) object provides a more powerful toolbar.
 
 There are several key differences between a toolbar and a `CDialogBar` object. A `CDialogBar` object is created from a dialog-template resource, which you can create with the Visual C++ dialog editor and which can contain any kind of Windows control. The user can tab from control to control. And you can specify an alignment style to align the dialog bar with any part of the parent frame window or even to leave it in place if the parent is resized. The following figure shows a dialog bar with a variety of controls.
 
@@ -21,5 +21,5 @@ While it is normal to derive your own dialog classes from `CDialog`, you do not 
 
 ## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
+[User Interface Elements](user-interface-elements-mfc.md)<br/>
 [Sample](../overview/visual-cpp-samples.md)

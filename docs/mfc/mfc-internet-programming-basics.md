@@ -13,39 +13,39 @@ Microsoft provides many APIs for programming both client and server applications
 
 ![Client and server applications](../mfc/media/vc38bq1.gif "Client and server applications")
 
-MFC provides classes that support Internet programming. You can use [COleControl](../mfc/reference/colecontrol-class.md) and [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) and related MFC classes to write ActiveX controls and Active documents. You can use MFC classes such as [CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpConnection](../mfc/reference/cftpconnection-class.md), and [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) to retrieve files and information using Internet protocols such as FTP, HTTP, and gopher.
+MFC provides classes that support Internet programming. You can use [COleControl](reference/colecontrol-class.md) and [CDocObjectServer](reference/cdocobjectserver-class.md) and related MFC classes to write ActiveX controls and Active documents. You can use MFC classes such as [CInternetSession](reference/cinternetsession-class.md), [CFtpConnection](reference/cftpconnection-class.md), and [CAsyncMonikerFile](reference/casyncmonikerfile-class.md) to retrieve files and information using Internet protocols such as FTP, HTTP, and gopher.
 
 ## In This Section
 
-- [Internet-Related MFC Classes](../mfc/internet-related-mfc-classes.md)
+- [Internet-Related MFC Classes](internet-related-mfc-classes.md)
 
-- [Internet Information by Topic](../mfc/internet-information-by-topic.md)
+- [Internet Information by Topic](internet-information-by-topic.md)
 
-- [Internet Information by Task](../mfc/internet-information-by-task.md)
+- [Internet Information by Task](internet-information-by-task.md)
 
-- [Active Technology on the Internet](../mfc/active-technology-on-the-internet.md)
+- [Active Technology on the Internet](active-technology-on-the-internet.md)
 
-- [WinInet Basics](../mfc/wininet-basics.md)
+- [WinInet Basics](wininet-basics.md)
 
-- [HTML Basics](../mfc/html-basics.md)
+- [HTML Basics](html-basics.md)
 
 ## Related Sections
 
-- [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)
+- [ActiveX Controls on the Internet](activex-controls-on-the-internet.md)
 
-- [Asynchronous Monikers on the Internet](../mfc/asynchronous-monikers-on-the-internet.md)
+- [Asynchronous Monikers on the Internet](asynchronous-monikers-on-the-internet.md)
 
-- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+- [Win32 Internet Extensions (WinInet)](win32-internet-extensions-wininet.md)
 
-- [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)
+- [MFC Internet Programming Tasks](mfc-internet-programming-tasks.md)
 
-- [Application Design Choices](../mfc/application-design-choices.md)
+- [Application Design Choices](application-design-choices.md)
 
-- [Writing MFC Applications](../mfc/writing-mfc-applications.md)
+- [Writing MFC Applications](writing-mfc-applications.md)
 
-- [Testing Internet Applications](../mfc/testing-internet-applications.md)
+- [Testing Internet Applications](testing-internet-applications.md)
 
-- [Internet Security](../mfc/internet-security-cpp.md)
+- [Internet Security](internet-security-cpp.md)
 
 - [ATL Support for DHTML Controls](../atl/atl-support-for-dhtml-controls.md)
 

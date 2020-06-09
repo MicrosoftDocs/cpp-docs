@@ -9,43 +9,43 @@ ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
 
 These classes provide an interface to traditional disk files, in-memory files, Active streams, and Windows sockets. All of the classes derived from `CFile` can be used with a `CArchive` object to perform serialization.
 
-Use the following classes, particularly `CArchive` and `CFile`, if you write your own input/output processing. Normally you do not need to derive from these classes. If you use the application framework, the default implementations of the **Open** and **Save** commands on the **File** menu will handle file I/O (using class `CArchive`), as long as you override your document's `Serialize` function to supply details about how a document serializes its contents. For more information about the file classes and serialization, see the article [Files in MFC](../mfc/files-in-mfc.md) and the article [Serialization](../mfc/serialization-in-mfc.md).
+Use the following classes, particularly `CArchive` and `CFile`, if you write your own input/output processing. Normally you do not need to derive from these classes. If you use the application framework, the default implementations of the **Open** and **Save** commands on the **File** menu will handle file I/O (using class `CArchive`), as long as you override your document's `Serialize` function to supply details about how a document serializes its contents. For more information about the file classes and serialization, see the article [Files in MFC](files-in-mfc.md) and the article [Serialization](serialization-in-mfc.md).
 
-[CFile](../mfc/reference/cfile-class.md)<br/>
+[CFile](reference/cfile-class.md)<br/>
 Provides a file interface to binary disk files.
 
-[CStdioFile](../mfc/reference/cstdiofile-class.md)<br/>
+[CStdioFile](reference/cstdiofile-class.md)<br/>
 Provides a `CFile` interface to buffered stream disk files, usually in text mode.
 
-[CMemFile](../mfc/reference/cmemfile-class.md)<br/>
+[CMemFile](reference/cmemfile-class.md)<br/>
 Provides a `CFile` interface to in-memory files.
 
-[CSharedFile](../mfc/reference/csharedfile-class.md)<br/>
+[CSharedFile](reference/csharedfile-class.md)<br/>
 Provides a `CFile` interface to shared in-memory files.
 
-[COleStreamFile](../mfc/reference/colestreamfile-class.md)<br/>
+[COleStreamFile](reference/colestreamfile-class.md)<br/>
 Uses the COM `IStream` interface to provide `CFile` access to compound files.
 
-[CSocketFile](../mfc/reference/csocketfile-class.md)<br/>
+[CSocketFile](reference/csocketfile-class.md)<br/>
 Provides a `CFile` interface to a Windows Socket.
 
 ## Related Classes
 
-[CArchive](../mfc/reference/carchive-class.md)<br/>
-Cooperates with a `CFile` object to implement persistent storage for objects through serialization (see [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)).
+[CArchive](reference/carchive-class.md)<br/>
+Cooperates with a `CFile` object to implement persistent storage for objects through serialization (see [CObject::Serialize](reference/cobject-class.md#serialize)).
 
-[CArchiveException](../mfc/reference/carchiveexception-class.md)<br/>
+[CArchiveException](reference/carchiveexception-class.md)<br/>
 An archive exception.
 
-[CFileException](../mfc/reference/cfileexception-class.md)<br/>
+[CFileException](reference/cfileexception-class.md)<br/>
 A file-oriented exception.
 
-[CFileDialog](../mfc/reference/cfiledialog-class.md)<br/>
+[CFileDialog](reference/cfiledialog-class.md)<br/>
 Provides a standard dialog box for opening or saving a file.
 
-[CRecentFileList](../mfc/reference/crecentfilelist-class.md)<br/>
+[CRecentFileList](reference/crecentfilelist-class.md)<br/>
 Maintains the most recently used (MRU) file list.
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

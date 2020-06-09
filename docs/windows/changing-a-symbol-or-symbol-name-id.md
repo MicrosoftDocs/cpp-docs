@@ -14,13 +14,13 @@ For symbols associated with a single resource, you can also use the **Properties
 Normally all symbol definitions are saved in `Resource.h`. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.
 
 > [!NOTE]
-> If your project doesn't already contain an .rc file, see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
+> If your project doesn't already contain an .rc file, see [How to: Create Resources](how-to-create-a-resource-script-file.md).
 
 ## Symbol Name Restrictions
 
 The restrictions on symbol names are as follows:
 
-- All [symbols](../windows/symbols-resource-identifiers.md) must be unique within the scope of the application to prevent conflicting symbol definitions in the header files.
+- All [symbols](symbols-resource-identifiers.md) must be unique within the scope of the application to prevent conflicting symbol definitions in the header files.
 
 - Valid characters for a symbol name include A-Z, a-z, 0-9, and underscores ( _ ).
 
@@ -177,6 +177,6 @@ Win32
 
 ## See also
 
-[Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
-[How to: Create Symbols](../windows/creating-new-symbols.md)<br/>
-[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
+[Resource Identifiers (Symbols)](symbols-resource-identifiers.md)<br/>
+[How to: Create Symbols](creating-new-symbols.md)<br/>
+[Predefined Symbol IDs](predefined-symbol-ids.md)<br/>

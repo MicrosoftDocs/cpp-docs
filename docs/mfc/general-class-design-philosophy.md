@@ -30,10 +30,10 @@ The Microsoft Foundation Class Library is an object-oriented interface to Window
 
 For more on the design of the MFC Library, see:
 
-- [The Application Framework](../mfc/application-framework.md)
+- [The Application Framework](application-framework.md)
 
-- [Relationship to the C-Language API](../mfc/relationship-to-the-c-language-api.md)
+- [Relationship to the C-Language API](relationship-to-the-c-language-api.md)
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

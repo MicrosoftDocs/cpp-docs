@@ -41,5 +41,5 @@ For a complete listing of toolbar styles and extended styles, see [Toolbar Contr
 
 ## See also
 
-[Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CToolBarCtrl](using-ctoolbarctrl.md)<br/>
+[Controls](controls-mfc.md)
