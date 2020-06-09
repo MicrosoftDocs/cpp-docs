@@ -10,5 +10,5 @@ ms.assetid: 1f109428-4b84-4f7c-90a9-e71fe071311e
 
 ## See also
 
-[Hierarchy Chart](../mfc/hierarchy-chart.md)<br/>
-[MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
+[Hierarchy Chart](hierarchy-chart.md)<br/>
+[MFC Desktop Applications](mfc-desktop-applications.md)

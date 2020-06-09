@@ -8,7 +8,7 @@ ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
 
 These symbols are defined in the ATL header files, but they support standard Windows application functions and actions. These symbols are mainly used with dialog boxes.
 
-When you are working with dialogs and controls in the [Dialog Editor](../windows/dialog-editor.md), these symbols will appear in the [Properties window](/visualstudio/ide/reference/properties-window) associated with common controls. For instance, if your dialog box has a **Cancel** button, that command will be associated with the symbol IDCANCEL in the **Properties** window.
+When you are working with dialogs and controls in the [Dialog Editor](dialog-editor.md), these symbols will appear in the [Properties window](/visualstudio/ide/reference/properties-window) associated with common controls. For instance, if your dialog box has a **Cancel** button, that command will be associated with the symbol IDCANCEL in the **Properties** window.
 
 |||
 |-|-|
@@ -29,6 +29,6 @@ ATL
 
 ## See also
 
-[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
-[MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)<br/>
-[Win32 Predefined Symbols](../windows/win32-predefined-symbols.md)<br/>
+[Predefined Symbol IDs](predefined-symbol-ids.md)<br/>
+[MFC Predefined Symbols](mfc-predefined-symbols.md)<br/>
+[Win32 Predefined Symbols](win32-predefined-symbols.md)<br/>

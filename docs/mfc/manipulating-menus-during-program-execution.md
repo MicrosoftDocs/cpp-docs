@@ -8,8 +8,8 @@ ms.assetid: 722c7c00-4be2-4967-877d-f96aaa604396
 
 Use class `CMenu` to manipulate menus and menu items on the fly. `CMenu` encapsulates a Windows HMENU handle and supplies member functions for working with menus.
 
-See the overview for class [CMenu](../mfc/reference/cmenu-class.md) for details.
+See the overview for class [CMenu](reference/cmenu-class.md) for details.
 
 ## See also
 
-[Menus](../mfc/menus-mfc.md)
+[Menus](menus-mfc.md)

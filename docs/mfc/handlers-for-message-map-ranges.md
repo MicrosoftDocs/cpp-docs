@@ -32,7 +32,7 @@ Topics covered in this article include:
 
 In the .CPP file, add your message-map entry, as shown in the following example:
 
-[!code-cpp[NVC_MFCMessageHandling#6](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_1.cpp)]
+[!code-cpp[NVC_MFCMessageHandling#6](codesnippet/cpp/handlers-for-message-map-ranges_1.cpp)]
 
 The message-map entry consists of the following items:
 
@@ -62,7 +62,7 @@ The message-map entry consists of the following items:
 
 Add your handler function declaration in the .H file. The following code shows how this might look, as shown below:
 
-[!code-cpp[NVC_MFCMessageHandling#7](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_2.h)]
+[!code-cpp[NVC_MFCMessageHandling#7](codesnippet/cpp/handlers-for-message-map-ranges_2.h)]
 
 Handler functions for single commands normally take no parameters. With the exception of update handler functions, handler functions for message-map ranges require an extra parameter, *nID*, of type **UINT**. This parameter is the first parameter. The extra parameter accommodates the extra command ID needed to specify which command the user actually chose.
 
@@ -72,7 +72,7 @@ For more information about parameter requirements for updating handler functions
 
 When might you use ranges One example is in handling commands like the Zoom command in the MFC sample [HIERSVR](../overview/visual-cpp-samples.md). This command zooms the view, scaling it between 25% and 300% of its normal size. HIERSVR's view class uses a range to handle the Zoom commands with a message-map entry resembling this:
 
-[!code-cpp[NVC_MFCMessageHandling#8](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_3.cpp)]
+[!code-cpp[NVC_MFCMessageHandling#8](codesnippet/cpp/handlers-for-message-map-ranges_3.cpp)]
 
 When you write the message-map entry, you specify:
 
@@ -86,7 +86,7 @@ When you write the message-map entry, you specify:
 
 The function declaration would resemble this:
 
-[!code-cpp[NVC_MFCMessageHandling#9](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_4.h)]
+[!code-cpp[NVC_MFCMessageHandling#9](codesnippet/cpp/handlers-for-message-map-ranges_4.h)]
 
 The case of update handler functions is similar, and likely to be more widely useful. It's quite common to write `ON_UPDATE_COMMAND_UI` handlers for a number of commands and find yourself writing, or copying, the same code over and over. The solution is to map a range of command IDs to one update handler function using the `ON_UPDATE_COMMAND_UI_RANGE` macro. The command IDs must form a contiguous range. For an example, see the `OnUpdateZoom` handler and its `ON_UPDATE_COMMAND_UI_RANGE` message-map entry in the HIERSVR sample's view class.
 
@@ -96,7 +96,7 @@ Update handler functions for single commands normally take a single parameter, *
 
 Another interesting case is mapping control-notification messages for a range of control IDs to a single handler. Suppose the user can click any of 10 buttons. To map all 10 buttons to one handler, your message-map entry would look like this:
 
-[!code-cpp[NVC_MFCMessageHandling#10](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_5.cpp)]
+[!code-cpp[NVC_MFCMessageHandling#10](codesnippet/cpp/handlers-for-message-map-ranges_5.cpp)]
 
 When you write the `ON_CONTROL_RANGE` macro in your message map, you specify:
 
@@ -114,7 +114,7 @@ When you write the `ON_CONTROL_RANGE` macro in your message map, you specify:
 
 When you write the handler function, specify the extra **UINT** parameter, as shown in the following:
 
-[!code-cpp[NVC_MFCMessageHandling#11](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_6.cpp)]
+[!code-cpp[NVC_MFCMessageHandling#11](codesnippet/cpp/handlers-for-message-map-ranges_6.cpp)]
 
 The `OnButtonClicked` handler for a single **BN_CLICKED** message takes no parameters. The same handler for a range of buttons takes one **UINT**. The extra parameter allows for identifying the particular control responsible for generating the **BN_CLICKED** message.
 
@@ -122,4 +122,4 @@ The code shown in the example is typical: converting the value passed to an `int
 
 ## See also
 
-[Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)
+[Declaring Message Handler Functions](declaring-message-handler-functions.md)

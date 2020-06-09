@@ -24,7 +24,7 @@ class allocator_newdel;
 
 ## Remarks
 
-The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_FREELIST stdext::allocators::max_none), SYNC_DEFAULT, allocator_newdel);`
+The [ALLOCATOR_DECL](allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_FREELIST stdext::allocators::max_none), SYNC_DEFAULT, allocator_newdel);`
 
 ## Requirements
 
@@ -34,4 +34,4 @@ The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

@@ -16,12 +16,12 @@ The framework provides a convenient interface for automatically updating user-in
 
 The following topics explain the use of update handlers:
 
-- [When update handlers are called](../mfc/when-update-handlers-are-called.md)
+- [When update handlers are called](when-update-handlers-are-called.md)
 
-- [The ON_UPDATE_COMMAND_UI macro](../mfc/on-update-command-ui-macro.md)
+- [The ON_UPDATE_COMMAND_UI macro](on-update-command-ui-macro.md)
 
-- [The CCmdUI class](../mfc/the-ccmdui-class.md)
+- [The CCmdUI class](the-ccmdui-class.md)
 
 ## See also
 
-[Menus](../mfc/menus-mfc.md)
+[Menus](menus-mfc.md)

@@ -6,7 +6,7 @@ ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
 ---
 # Clipboard: Adding Other Formats
 
-This topic explains how to expand the list of supported formats, particularly for OLE support. The topic [Clipboard: Copying and Pasting Data](../mfc/clipboard-copying-and-pasting-data.md) describes the minimum implementation necessary to support copying and pasting from the Clipboard. If this is all you implement, the only formats placed on the Clipboard are **CF_METAFILEPICT**, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**, and possibly **CF_LINKSOURCE**. Most applications will need more formats on the Clipboard than these three.
+This topic explains how to expand the list of supported formats, particularly for OLE support. The topic [Clipboard: Copying and Pasting Data](clipboard-copying-and-pasting-data.md) describes the minimum implementation necessary to support copying and pasting from the Clipboard. If this is all you implement, the only formats placed on the Clipboard are **CF_METAFILEPICT**, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**, and possibly **CF_LINKSOURCE**. Most applications will need more formats on the Clipboard than these three.
 
 ## <a name="_core_registering_custom_formats"></a> Registering Custom Formats
 
@@ -28,12 +28,12 @@ This technique is used in the MFC OLE sample program [HIERSVR](../overview/visua
 
 ### What do you want to know more about
 
-- [OLE data objects and data sources and uniform data transfer](../mfc/data-objects-and-data-sources-ole.md)
+- [OLE data objects and data sources and uniform data transfer](data-objects-and-data-sources-ole.md)
 
-- [OLE drag and drop](../mfc/drag-and-drop-ole.md)
+- [OLE drag and drop](drag-and-drop-ole.md)
 
-- [OLE](../mfc/ole-background.md)
+- [OLE](ole-background.md)
 
 ## See also
 
-[Clipboard: Using the OLE Clipboard Mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
+[Clipboard: Using the OLE Clipboard Mechanism](clipboard-using-the-ole-clipboard-mechanism.md)

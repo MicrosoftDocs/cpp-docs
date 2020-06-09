@@ -52,7 +52,7 @@ Before an application allows the user to paste data into it, it needs to know if
 
    - Call the data object's `BeginEnumFormats` member function to start enumerating the formats available on the Clipboard. Then call `GetNextFormat` until the Clipboard returns a format your application supports or there are no more formats.
 
-If you are using **ON_UPDATE_COMMAND_UI**, you can now enable the Paste and, possibly, Paste Special items on the Edit menu. To do this, call either `CMenu::EnableMenuItem` or `CCmdUI::Enable`. For more information about what container applications should do with menu items and when, see [Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md).
+If you are using **ON_UPDATE_COMMAND_UI**, you can now enable the Paste and, possibly, Paste Special items on the Edit menu. To do this, call either `CMenu::EnableMenuItem` or `CCmdUI::Enable`. For more information about what container applications should do with menu items and when, see [Menus and Resources: Container Additions](menus-and-resources-container-additions.md).
 
 ## <a name="_core_retrieving_data_from_a_data_object"></a> Retrieving Data from a Data Object
 
@@ -72,12 +72,12 @@ The user can now insert data into the document just like for any other data in t
 
 ### What do you want to know more about
 
-- [Drag and drop](../mfc/drag-and-drop-ole.md)
+- [Drag and drop](drag-and-drop-ole.md)
 
-- [Clipboard](../mfc/clipboard.md)
+- [Clipboard](clipboard.md)
 
 ## See also
 
-[Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
-[COleDataObject Class](../mfc/reference/coledataobject-class.md)<br/>
-[COleDataSource Class](../mfc/reference/coledatasource-class.md)
+[Data Objects and Data Sources (OLE)](data-objects-and-data-sources-ole.md)<br/>
+[COleDataObject Class](reference/coledataobject-class.md)<br/>
+[COleDataSource Class](reference/coledatasource-class.md)

@@ -11,4 +11,4 @@ ms.assetid: f2eabbbb-0796-43f3-a483-5f7cf00f2e7c
 
 ## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+[User Interface Elements](user-interface-elements-mfc.md)

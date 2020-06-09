@@ -16,4 +16,4 @@ See the following sample programs that illustrate common controls:
 
 ## See also
 
-[Controls](../mfc/controls-mfc.md)
+[Controls](controls-mfc.md)

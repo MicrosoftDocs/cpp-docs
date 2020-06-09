@@ -21,7 +21,7 @@ When you (or a Code wizard) override `DoDataExchange`, you specify a call to one
 
 MFC provides many DDX functions for different kinds of exchange. The following example shows a `DoDataExchange` override in which two DDX functions and one DDV function are called:
 
-[!code-cpp[NVC_MFCControlLadenDialog#49](../mfc/codesnippet/cpp/dialog-data-exchange_1.cpp)]
+[!code-cpp[NVC_MFCControlLadenDialog#49](codesnippet/cpp/dialog-data-exchange_1.cpp)]
 
 The `DDX_` and `DDV_` lines are a data map. The sample DDX and DDV functions shown are for a check-box control and an edit-box control, respectively.
 
@@ -29,6 +29,6 @@ If the user cancels a modal dialog box, the `OnCancel` member function terminate
 
 ## See also
 
-[Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)<br/>
-[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
-[Dialog Data Validation](../mfc/dialog-data-validation.md)
+[Dialog Data Exchange and Validation](dialog-data-exchange-and-validation.md)<br/>
+[Working with Dialog Boxes in MFC](life-cycle-of-a-dialog-box.md)<br/>
+[Dialog Data Validation](dialog-data-validation.md)

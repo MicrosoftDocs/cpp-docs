@@ -10,5 +10,5 @@ For examples of header controls, see the [Header Controls](/windows/win32/Contro
 
 ## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CHeaderCtrl](using-cheaderctrl.md)<br/>
+[Controls](controls-mfc.md)

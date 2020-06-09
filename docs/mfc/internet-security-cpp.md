@@ -14,5 +14,5 @@ In the first case, you trust that the application will not do any harm and you t
 
 ## See also
 
-[MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+[MFC Internet Programming Tasks](mfc-internet-programming-tasks.md)<br/>
+[MFC Internet Programming Basics](mfc-internet-programming-basics.md)
