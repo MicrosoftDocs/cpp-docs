@@ -12,18 +12,18 @@ In multiple document interface (MDI) applications, the main window is derived fr
 
 In single document interface (SDI) applications, the main window, derived from `CFrameWnd`, contains the view of the current document.
 
-[CFrameWnd](../mfc/reference/cframewnd-class.md)<br/>
+[CFrameWnd](reference/cframewnd-class.md)<br/>
 The base class for an SDI application's main frame window. Also the base class for all other frame window classes.
 
-[CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)<br/>
+[CMDIFrameWnd](reference/cmdiframewnd-class.md)<br/>
 The base class for an MDI application's main frame window.
 
-[CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)<br/>
+[CMDIChildWnd](reference/cmdichildwnd-class.md)<br/>
 The base class for an MDI application's document frame windows.
 
-[COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)<br/>
+[COleIPFrameWnd](reference/coleipframewnd-class.md)<br/>
 Provides the frame window for a view when a server document is being edited in place.
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

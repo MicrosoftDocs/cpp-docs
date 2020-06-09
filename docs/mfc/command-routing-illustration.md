@@ -22,4 +22,4 @@ If the document did not have a handler, it would next route the command to its d
 
 ## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+[How the Framework Calls a Handler](how-the-framework-calls-a-handler.md)

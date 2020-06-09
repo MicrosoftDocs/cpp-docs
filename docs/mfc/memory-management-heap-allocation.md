@@ -14,4 +14,4 @@ Note that the total size of objects allocated on the heap is limited only by you
 
 ## See also
 
-[Memory Management](../mfc/memory-management.md)
+[Memory Management](memory-management.md)

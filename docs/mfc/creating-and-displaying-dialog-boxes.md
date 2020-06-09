@@ -12,11 +12,11 @@ Creating a dialog object is a two-phase operation. First, construct the dialog o
 
 |Dialog type|How to create it|
 |-----------------|----------------------|
-|[Modeless](../mfc/creating-modeless-dialog-boxes.md)|Construct `CDialog`, then call `Create` member function.|
-|[Modal](../mfc/creating-modal-dialog-boxes.md)|Construct `CDialog`, then call `DoModal` member function.|
+|[Modeless](creating-modeless-dialog-boxes.md)|Construct `CDialog`, then call `Create` member function.|
+|[Modal](creating-modal-dialog-boxes.md)|Construct `CDialog`, then call `DoModal` member function.|
 
-You can, if you want, create your dialog box from an [in-memory dialog template](../mfc/using-a-dialog-template-in-memory.md) that you have constructed rather than from a dialog template resource. This is an advanced topic, however.
+You can, if you want, create your dialog box from an [in-memory dialog template](using-a-dialog-template-in-memory.md) that you have constructed rather than from a dialog template resource. This is an advanced topic, however.
 
 ## See also
 
-[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)
+[Working with Dialog Boxes in MFC](life-cycle-of-a-dialog-box.md)

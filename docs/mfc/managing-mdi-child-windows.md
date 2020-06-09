@@ -18,10 +18,10 @@ An MDI frame window also works in conjunction with the current MDI child window,
 
 ## What do you want to know more about
 
-- [Creating document frame windows](../mfc/creating-document-frame-windows.md)
+- [Creating document frame windows](creating-document-frame-windows.md)
 
-- [Frame-window styles](../mfc/frame-window-styles-cpp.md)
+- [Frame-window styles](frame-window-styles-cpp.md)
 
 ## See also
 
-[Using Frame Windows](../mfc/using-frame-windows.md)
+[Using Frame Windows](using-frame-windows.md)

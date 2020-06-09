@@ -18,4 +18,4 @@ See the following sample programs that illustrate creating, editing, and updatin
 
 ## See also
 
-[Menus](../mfc/menus-mfc.md)
+[Menus](menus-mfc.md)

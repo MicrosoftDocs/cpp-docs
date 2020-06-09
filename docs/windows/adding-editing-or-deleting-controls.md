@@ -81,7 +81,7 @@ You can add custom controls to the dialog box. Select the **Custom Control** ico
 > [!NOTE]
 > This process applies only to dialog controls within an MFC project. ATL projects should use the **New Windows Messages and Event Handlers** dialog box. For more information, see [Message Types Associated with User-Interface Objects](../mfc/reference/message-types-associated-with-user-interface-objects.md), [Editing a Message Handler](../mfc/reference/editing-a-message-handler.md), and [Defining a Message Handler for a Reflected Message](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).
 
-1. In the [Dialog Editor](../windows/dialog-editor.md), select a control.
+1. In the [Dialog Editor](dialog-editor.md), select a control.
 
 1. While pressing the **Ctrl** key, double-click the dialog box control.
 
@@ -143,7 +143,7 @@ To use RichEdit controls, you must call `LoadLibrary`. For more information, see
 
 Visual Studio enables you to insert ActiveX controls into your dialog box. For more information, see [MFC ActiveX Controls](../mfc/mfc-activex-controls.md) and [ActiveX Control Containers](../mfc/activex-control-containers.md).
 
-The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls into your dialog box while using the [Dialog Editor](../windows/dialog-editor.md). This dialog contains the following properties:
+The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls into your dialog box while using the [Dialog Editor](dialog-editor.md). This dialog contains the following properties:
 
 |Property|Description|
 |---|---|

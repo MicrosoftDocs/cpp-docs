@@ -67,7 +67,7 @@ In the *OLE Programmer's Reference*, see [IStream](/windows/win32/api/objidl/nn-
 
 ## See also
 
-[Containers](../mfc/containers.md)<br/>
-[Containers: User-Interface Issues](../mfc/containers-user-interface-issues.md)<br/>
-[COleStreamFile Class](../mfc/reference/colestreamfile-class.md)<br/>
-[COleDocument Class](../mfc/reference/coledocument-class.md)
+[Containers](containers.md)<br/>
+[Containers: User-Interface Issues](containers-user-interface-issues.md)<br/>
+[COleStreamFile Class](reference/colestreamfile-class.md)<br/>
+[COleDocument Class](reference/coledocument-class.md)

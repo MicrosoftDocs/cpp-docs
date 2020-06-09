@@ -31,4 +31,4 @@ See the following sample programs that illustrate using MFC's document/view arch
 
 ## See also
 
-[Document/View Architecture](../mfc/document-view-architecture.md)
+[Document/View Architecture](document-view-architecture.md)

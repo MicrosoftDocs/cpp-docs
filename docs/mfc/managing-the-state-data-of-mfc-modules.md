@@ -23,12 +23,12 @@ State Data of Multiple Modules
 
 In other words, each module is responsible for correctly switching between module states at all of its entry points. An "entry point" is any place where the flow of execution can enter the module's code. Entry points include:
 
-- [Exported functions in a DLL](../mfc/exported-dll-function-entry-points.md)
+- [Exported functions in a DLL](exported-dll-function-entry-points.md)
 
-- [Member functions of COM interfaces](../mfc/com-interface-entry-points.md)
+- [Member functions of COM interfaces](com-interface-entry-points.md)
 
-- [Window procedures](../mfc/window-procedure-entry-points.md)
+- [Window procedures](window-procedure-entry-points.md)
 
 ## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)
+[General MFC Topics](general-mfc-topics.md)

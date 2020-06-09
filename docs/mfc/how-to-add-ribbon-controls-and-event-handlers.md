@@ -33,4 +33,4 @@ In this topic, you will open the Ribbon Designer, add a button, and then link an
 ## See also
 
 [RibbonGadgets Sample: Ribbon Gadgets Application](../overview/visual-cpp-samples.md)<br/>
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+[Ribbon Designer (MFC)](ribbon-designer-mfc.md)

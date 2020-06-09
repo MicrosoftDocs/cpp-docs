@@ -29,14 +29,14 @@ By default, MFC applications created by using the project wizard in Visual Studi
     m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS;
 ```
 
-1. Make sure the `InitInstance` method of your application calls its parent `InitInstance` method: [CWinApp::InitInstance](../mfc/reference/cwinapp-class.md#initinstance) or `CWinAppEx::InitInstance`. The `InitInstance` method is responsible for checking the *m_dwRestartManagerSupportFlags* parameter.
+1. Make sure the `InitInstance` method of your application calls its parent `InitInstance` method: [CWinApp::InitInstance](reference/cwinapp-class.md#initinstance) or `CWinAppEx::InitInstance`. The `InitInstance` method is responsible for checking the *m_dwRestartManagerSupportFlags* parameter.
 
 1. Compile and run your application.
 
 ## See also
 
-[CDataRecoveryHandler Class](../mfc/reference/cdatarecoveryhandler-class.md)<br/>
-[CWinApp::m_dwRestartManagerSupportFlags](../mfc/reference/cwinapp-class.md#m_dwrestartmanagersupportflags)<br/>
-[CWinApp Class](../mfc/reference/cwinapp-class.md)<br/>
-[CWinApp::m_nAutosaveInterval](../mfc/reference/cwinapp-class.md#m_nautosaveinterval)<br/>
-[CDocument::OnDocumentEvent](../mfc/reference/cdocument-class.md#ondocumentevent)
+[CDataRecoveryHandler Class](reference/cdatarecoveryhandler-class.md)<br/>
+[CWinApp::m_dwRestartManagerSupportFlags](reference/cwinapp-class.md#m_dwrestartmanagersupportflags)<br/>
+[CWinApp Class](reference/cwinapp-class.md)<br/>
+[CWinApp::m_nAutosaveInterval](reference/cwinapp-class.md#m_nautosaveinterval)<br/>
+[CDocument::OnDocumentEvent](reference/cdocument-class.md#ondocumentevent)

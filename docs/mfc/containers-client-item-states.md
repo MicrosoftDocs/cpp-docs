@@ -8,7 +8,7 @@ ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
 
 This article explains the different states a client item passes through in its lifetime.
 
-A client item passes through several states as it is created, activated, modified, and saved. Each time the item's state changes, the framework calls [COleClientItem::OnChange](../mfc/reference/coleclientitem-class.md#onchange) with the **OLE_CHANGED_STATE** notification. The second parameter is a value from the `COleClientItem::ItemState` enumeration. It can be one of the following:
+A client item passes through several states as it is created, activated, modified, and saved. Each time the item's state changes, the framework calls [COleClientItem::OnChange](reference/coleclientitem-class.md#onchange) with the **OLE_CHANGED_STATE** notification. The second parameter is a value from the `COleClientItem::ItemState` enumeration. It can be one of the following:
 
 - *COleClientItem::emptyState*
 
@@ -30,8 +30,8 @@ When an item has been activated in place, it passes, usually only briefly, throu
 
 ## See also
 
-[Containers](../mfc/containers.md)<br/>
-[Activation](../mfc/activation-cpp.md)<br/>
-[Containers: Client-Item Notifications](../mfc/containers-client-item-notifications.md)<br/>
-[Trackers](../mfc/trackers.md)<br/>
-[CRectTracker Class](../mfc/reference/crecttracker-class.md)
+[Containers](containers.md)<br/>
+[Activation](activation-cpp.md)<br/>
+[Containers: Client-Item Notifications](containers-client-item-notifications.md)<br/>
+[Trackers](trackers.md)<br/>
+[CRectTracker Class](reference/crecttracker-class.md)

@@ -8,15 +8,15 @@ ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
 
 Occasionally, an ActiveX control will have more properties than can reasonably fit on one property page. In this case, you can add property pages to the ActiveX control to display these properties.
 
-This article discusses adding new property pages to an ActiveX control that already has at least one property page. For more information on adding stock property pages (font, picture, or color), see the article [MFC ActiveX Controls: Using Stock Property Pages](../mfc/mfc-activex-controls-using-stock-property-pages.md).
+This article discusses adding new property pages to an ActiveX control that already has at least one property page. For more information on adding stock property pages (font, picture, or color), see the article [MFC ActiveX Controls: Using Stock Property Pages](mfc-activex-controls-using-stock-property-pages.md).
 
 The following procedures use a sample ActiveX control framework created by the ActiveX Control Wizard. Therefore, the class names and identifiers are unique to this example.
 
 For more information on using property pages in an ActiveX control, see the following articles:
 
-- [MFC ActiveX Controls: Property Pages](../mfc/mfc-activex-controls-property-pages.md)
+- [MFC ActiveX Controls: Property Pages](mfc-activex-controls-property-pages.md)
 
-- [MFC ActiveX Controls: Using Stock Property Pages](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX Controls: Using Stock Property Pages](mfc-activex-controls-using-stock-property-pages.md)
 
     > [!NOTE]
     >  It is strongly recommended that new property pages adhere to the size standard for ActiveX control property pages. The stock picture and color property pages measure 250x62 dialog units (DLU). The standard font property page is 250x110 DLUs. The default property page created by the ActiveX Control Wizard uses the 250x62 DLU standard.
@@ -49,7 +49,7 @@ For more information on using property pages in an ActiveX control, see the foll
 
 1. Double-click the **MFC Class** template.
 
-1. In the **Class Name** box in the [MFC Class Wizard](../mfc/reference/mfc-add-class-wizard.md), type a name for the new dialog class. (In this example, `CAddtlPropPage`.)
+1. In the **Class Name** box in the [MFC Class Wizard](reference/mfc-add-class-wizard.md), type a name for the new dialog class. (In this example, `CAddtlPropPage`.)
 
 1. If you want to change file names, click **Change**. Type in the names for your implementation and header files, or accept the default names.
 
@@ -61,7 +61,7 @@ For more information on using property pages in an ActiveX control, see the foll
 
 To allow the control's users access to this new property page, make the following changes to the control's property page IDs macro section (located in the control implementation file):
 
-[!code-cpp[NVC_MFC_AxUI#32](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_1.cpp)]
+[!code-cpp[NVC_MFC_AxUI#32](codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_1.cpp)]
 
 Note that you must increase the second parameter of the BEGIN_PROPPAGEIDS macro (the property page count) from 1 to 2.
 
@@ -87,16 +87,16 @@ The next step involves creating two new string resources that will provide a typ
 
 1. Repeat steps 3 and 4 using **IDS_SAMPLE_ADDPPG_CAPTION** for the ID and "Additional Property Page" for the caption.
 
-1. In the .CPP file of your new property page class (in this example, `CAddtlPropPage`) modify the `CAddtlPropPage::CAddtlPropPageFactory::UpdateRegistry` so that IDS_SAMPLE_ADDPAGE is passed by [AfxOleRegisterPropertyPageClass](../mfc/reference/registering-ole-controls.md#afxoleregisterpropertypageclass), as in the following example:
+1. In the .CPP file of your new property page class (in this example, `CAddtlPropPage`) modify the `CAddtlPropPage::CAddtlPropPageFactory::UpdateRegistry` so that IDS_SAMPLE_ADDPAGE is passed by [AfxOleRegisterPropertyPageClass](reference/registering-ole-controls.md#afxoleregisterpropertypageclass), as in the following example:
 
-   [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
+   [!code-cpp[NVC_MFC_AxUI#33](codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
 
 1. Modify the constructor of `CAddtlPropPage` so that IDS_SAMPLE_ADDPPG_CAPTION is passed to the `COlePropertyPage` constructor, as follows:
 
-   [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
+   [!code-cpp[NVC_MFC_AxUI#34](codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
 
-After you have made the necessary modifications rebuild your project and use Test Container to test the new property page. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access the test container.
+After you have made the necessary modifications rebuild your project and use Test Container to test the new property page. See [Testing Properties and Events with Test Container](testing-properties-and-events-with-test-container.md) for information on how to access the test container.
 
 ## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Controls](mfc-activex-controls.md)

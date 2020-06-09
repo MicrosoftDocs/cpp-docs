@@ -16,4 +16,4 @@ Once you have added the member variable a class, referred to as a wrapper class,
 
 ## See also
 
-[ActiveX Control Containers](../mfc/activex-control-containers.md)
+[ActiveX Control Containers](activex-control-containers.md)

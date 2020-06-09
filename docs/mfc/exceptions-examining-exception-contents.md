@@ -12,10 +12,10 @@ For example, the `CFileException` type has the `m_cause` data member, which cont
 
 The following example shows how to examine the contents of a `CFileException`. Other exception types can be examined similarly.
 
-[!code-cpp[NVC_MFCExceptions#13](../mfc/codesnippet/cpp/exceptions-examining-exception-contents_1.cpp)]
+[!code-cpp[NVC_MFCExceptions#13](codesnippet/cpp/exceptions-examining-exception-contents_1.cpp)]
 
-For more information, see [Exceptions: Freeing Objects in Exceptions](../mfc/exceptions-freeing-objects-in-exceptions.md) and [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
+For more information, see [Exceptions: Freeing Objects in Exceptions](exceptions-freeing-objects-in-exceptions.md) and [Exceptions: Catching and Deleting Exceptions](exceptions-catching-and-deleting-exceptions.md).
 
 ## See also
 
-[Exception Handling](../mfc/exception-handling-in-mfc.md)
+[Exception Handling](exception-handling-in-mfc.md)

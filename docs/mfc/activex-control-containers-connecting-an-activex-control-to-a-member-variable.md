@@ -29,4 +29,4 @@ The easiest way to access an ActiveX control from within its control container a
 
 ## See also
 
-[ActiveX Control Containers](../mfc/activex-control-containers.md)
+[ActiveX Control Containers](activex-control-containers.md)

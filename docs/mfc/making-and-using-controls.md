@@ -10,28 +10,28 @@ You make most controls for dialog boxes in the Visual C++ [dialog editor](../win
 
 ## What do you want to know more about
 
-- [Using common controls in a dialog box](../mfc/using-common-controls-in-a-dialog-box.md)
+- [Using common controls in a dialog box](using-common-controls-in-a-dialog-box.md)
 
-- [Using the dialog editor to add controls](../mfc/using-the-dialog-editor-to-add-controls.md)
+- [Using the dialog editor to add controls](using-the-dialog-editor-to-add-controls.md)
 
-- [Adding controls by hand](../mfc/adding-controls-by-hand.md) (without the dialog editor)
+- [Adding controls by hand](adding-controls-by-hand.md) (without the dialog editor)
 
-- [Deriving controls from a standard control](../mfc/deriving-controls-from-a-standard-control.md)
+- [Deriving controls from a standard control](deriving-controls-from-a-standard-control.md)
 
-- [Using a common control as a child window](../mfc/using-a-common-control-as-a-child-window.md)
+- [Using a common control as a child window](using-a-common-control-as-a-child-window.md)
 
-- [Receiving notification from common controls](../mfc/receiving-notification-from-common-controls.md)
+- [Receiving notification from common controls](receiving-notification-from-common-controls.md)
 
-- [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)
+- [Dialog Data Exchange and Validation](dialog-data-exchange-and-validation.md)
 
-- [Type-Safe Access to Controls With Code Wizards](../mfc/type-safe-access-to-controls-with-code-wizards.md)
+- [Type-Safe Access to Controls With Code Wizards](type-safe-access-to-controls-with-code-wizards.md)
 
-- Individual controls: see [Controls](../mfc/controls-mfc.md) for links to all common controls
+- Individual controls: see [Controls](controls-mfc.md) for links to all common controls
 
-- [Dialog boxes](../mfc/dialog-boxes.md)
+- [Dialog boxes](dialog-boxes.md)
 
-- [Dialog bars](../mfc/dialog-bars.md)
+- [Dialog bars](dialog-bars.md)
 
 ## See also
 
-[Controls](../mfc/controls-mfc.md)
+[Controls](controls-mfc.md)

@@ -48,4 +48,4 @@ See the following sample programs that illustrate dialog boxes and property shee
 
 ## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)
+[Dialog Boxes](dialog-boxes.md)
