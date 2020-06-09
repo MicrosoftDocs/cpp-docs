@@ -1,6 +1,6 @@
 ---
 title: "strerror_s, _strerror_s, _wcserror_s, __wcserror_s"
-ms.date: "4/2/2020"
+ms.date: "06/09/2020"
 api_name: ["__wcserror_s", "_strerror_s", "_wcserror_s", "strerror_s", "_o__strerror_s", "_o__wcserror_s", "_o_strerror_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -100,7 +100,7 @@ if (( _access( "datafile",2 )) == -1 )
 
 If *strErrMsg* is **NULL**, **_strerror_s** returns a string in *buffer* containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then **_strerror_s** returns a string in *buffer* containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
 
-These functions truncate the error message if its length exceeds the size of the buffer. The resulting string in *buffer* is always null-terminated.
+These functions truncate the error message if its length exceeds the size of the buffer - 1. The resulting string in *buffer* will always be null-terminated.
 
 The actual error number for **_strerror_s** is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). The system error messages are accessed through the variable [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **_strerror_s** accesses the appropriate error message by using the **errno** value as an index to the variable **_sys_errlist**. The value of the variable [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the **_sys_errlist** array. To produce accurate results, call **_strerror_s** immediately after a library routine returns with an error. Otherwise, subsequent calls to **strerror_s** or **_strerror_s** can overwrite the **errno** value.
 
