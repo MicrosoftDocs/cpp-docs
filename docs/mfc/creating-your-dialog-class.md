@@ -12,7 +12,7 @@ For each dialog box in your program, create a new dialog class to work with the 
 
 In the .h file:
 
-- A class declaration for the dialog class. The class is derived from [CDialog](../mfc/reference/cdialog-class.md).
+- A class declaration for the dialog class. The class is derived from [CDialog](reference/cdialog-class.md).
 
 In the .cpp file:
 
@@ -20,9 +20,9 @@ In the .cpp file:
 
 - A standard constructor for the dialog box.
 
-- An override of the [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) member function. Edit this function. It is used for dialog data exchange and validation capabilities as described later in [Dialog data exchange and validation](../mfc/dialog-data-exchange-and-validation.md).
+- An override of the [DoDataExchange](reference/cwnd-class.md#dodataexchange) member function. Edit this function. It is used for dialog data exchange and validation capabilities as described later in [Dialog data exchange and validation](dialog-data-exchange-and-validation.md).
 
 ## See also
 
-[Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md)<br/>
-[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)
+[Creating a Dialog Class with Code Wizards](creating-a-dialog-class-with-code-wizards.md)<br/>
+[Working with Dialog Boxes in MFC](life-cycle-of-a-dialog-box.md)

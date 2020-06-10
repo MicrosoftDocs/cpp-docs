@@ -10,5 +10,5 @@ The [CMNCTRL1](../overview/visual-cpp-samples.md) sample application demonstrate
 
 ## See also
 
-[Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CMonthCalCtrl](using-cmonthcalctrl.md)<br/>
+[Controls](controls-mfc.md)

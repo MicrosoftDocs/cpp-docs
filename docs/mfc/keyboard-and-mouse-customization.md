@@ -21,7 +21,7 @@ The user interacts with the keyboard tab to assign one or more keyboard shortcut
 
 All of the currently assigned keyboard shortcuts are listed in the list box in the right column. The user can also select individual shortcuts and remove them, or reset all the mappings for the application.
 
-If you want to support this customization in your application, you must create a [CKeyboardManager](../mfc/reference/ckeyboardmanager-class.md) object. To create a `CKeyboardManager` object, call the function [CWinAppEx::InitKeyboardManager](../mfc/reference/cwinappex-class.md#initkeyboardmanager). This method creates and initializes a keyboard manager. If you create a keyboard manager manually, you still must call `CWinAppEx::InitKeyboardManager` to initialize it.
+If you want to support this customization in your application, you must create a [CKeyboardManager](reference/ckeyboardmanager-class.md) object. To create a `CKeyboardManager` object, call the function [CWinAppEx::InitKeyboardManager](reference/cwinappex-class.md#initkeyboardmanager). This method creates and initializes a keyboard manager. If you create a keyboard manager manually, you still must call `CWinAppEx::InitKeyboardManager` to initialize it.
 
 If you use the Wizard to create your application, the Wizard will initialize the keyboard manager. After your application initializes the keyboard manager, the framework adds a **Keyboard** tab to the **Customization** dialog box.
 
@@ -38,19 +38,19 @@ By default, mouse customization is not enabled when you create an application by
 
 #### To enable mouse customization
 
-1. Initialize a [CMouseManager](../mfc/reference/cmousemanager-class.md) object by calling [CWinAppEx::InitMouseManager](../mfc/reference/cwinappex-class.md#initmousemanager).
+1. Initialize a [CMouseManager](reference/cmousemanager-class.md) object by calling [CWinAppEx::InitMouseManager](reference/cwinappex-class.md#initmousemanager).
 
-1. Obtain a pointer to the mouse manager by using [CWinAppEx::GetMouseManager](../mfc/reference/cwinappex-class.md#getmousemanager).
+1. Obtain a pointer to the mouse manager by using [CWinAppEx::GetMouseManager](reference/cwinappex-class.md#getmousemanager).
 
-1. Add views to the mouse manager by using the [CMouseManager::AddView](../mfc/reference/cmousemanager-class.md#addview) method. Do this for every view you want to add to the mouse manager.
+1. Add views to the mouse manager by using the [CMouseManager::AddView](reference/cmousemanager-class.md#addview) method. Do this for every view you want to add to the mouse manager.
 
 After your application initializes the mouse manager, the framework adds the **Mouse** tab to the **Customize** dialog box. If you do not add any views, accessing the tab will cause an unhandled exception. After you have created a list of views, the **Mouse** tab is available to the user.
 
-When you add a new view to the mouse manager, you give it a unique ID. If you want to support mouse customization for a window, you must process the WM_LBUTTONDBLCLICK message and call the [CWinAppEx::OnViewDoubleClick](../mfc/reference/cwinappex-class.md#onviewdoubleclick) function. When you call this function, one of the parameters is the ID for that window. It is the responsibility of the programmer to keep track of the ID numbers and the objects associated with them.
+When you add a new view to the mouse manager, you give it a unique ID. If you want to support mouse customization for a window, you must process the WM_LBUTTONDBLCLICK message and call the [CWinAppEx::OnViewDoubleClick](reference/cwinappex-class.md#onviewdoubleclick) function. When you call this function, one of the parameters is the ID for that window. It is the responsibility of the programmer to keep track of the ID numbers and the objects associated with them.
 
 ## Security Concerns
 
-As described in [User-defined Tools](../mfc/user-defined-tools.md), the user can associate a user-defined tool ID with the double-click event. When the user double-clicks a view, the application looks for a user tool that matches the associated ID. If the application finds a matching tool, it executes the tool. If the application cannot find a matching tool, it sends a WM_COMMAND message with the ID to the view that was double-clicked.
+As described in [User-defined Tools](user-defined-tools.md), the user can associate a user-defined tool ID with the double-click event. When the user double-clicks a view, the application looks for a user tool that matches the associated ID. If the application finds a matching tool, it executes the tool. If the application cannot find a matching tool, it sends a WM_COMMAND message with the ID to the view that was double-clicked.
 
 The customized settings are stored in the registry. By editing the registry, an attacker can replace a valid user tool ID with an arbitrary command. When the user double-clicks a view, the view processes the command that the attacker planted. This could cause unexpected and potentially dangerous behavior.
 
@@ -60,7 +60,7 @@ To guard against this kind of attack, add code to your application command handl
 
 ## See also
 
-[Customization for MFC](../mfc/customization-for-mfc.md)<br/>
-[CKeyboardManager Class](../mfc/reference/ckeyboardmanager-class.md)<br/>
-[CMouseManager Class](../mfc/reference/cmousemanager-class.md)<br/>
-[Security Implications of Customization](../mfc/security-implications-of-customization.md)
+[Customization for MFC](customization-for-mfc.md)<br/>
+[CKeyboardManager Class](reference/ckeyboardmanager-class.md)<br/>
+[CMouseManager Class](reference/cmousemanager-class.md)<br/>
+[Security Implications of Customization](security-implications-of-customization.md)

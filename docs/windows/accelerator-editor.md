@@ -14,7 +14,7 @@ Normally, accelerators are used as keyboard shortcuts for program commands that 
 > [!TIP]
 > When using the **Accelerator Editor**, right-click to display a shortcut menu of frequent commands. The commands available depend on what the pointer is pointing to.
 
-You can use [Class View](/visualstudio/ide/viewing-the-structure-of-code) to hook accelerator key commands to code. For a list of pre-defined accelerator keys, see [Accelerator Keys](../windows/predefined-accelerator-keys.md).
+You can use [Class View](/visualstudio/ide/viewing-the-structure-of-code) to hook accelerator key commands to code. For a list of pre-defined accelerator keys, see [Accelerator Keys](predefined-accelerator-keys.md).
 
 > [!NOTE]
 > Windows doesn't allow you to create empty accelerator tables. If you create an accelerator table with no entries, it is deleted automatically when you save the table.
@@ -157,5 +157,5 @@ Win32
 
 ## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Accelerator Keys](../windows/predefined-accelerator-keys.md)<br/>
+[Resource Editors](resource-editors.md)<br/>
+[Accelerator Keys](predefined-accelerator-keys.md)<br/>

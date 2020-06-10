@@ -21,18 +21,18 @@ Two-stage construction is always safer. In one-stage construction, the construct
 
 The following brief example shows both methods of constructing a pen object:
 
-[!code-cpp[NVC_MFCDocViewSDI#6](../mfc/codesnippet/cpp/one-stage-and-two-stage-construction-of-objects_1.cpp)]
+[!code-cpp[NVC_MFCDocViewSDI#6](codesnippet/cpp/one-stage-and-two-stage-construction-of-objects_1.cpp)]
 
 ### What do you want to know more about
 
-- [Graphic objects](../mfc/graphic-objects.md)
+- [Graphic objects](graphic-objects.md)
 
-- [Selecting a graphic object into a device context](../mfc/selecting-a-graphic-object-into-a-device-context.md)
+- [Selecting a graphic object into a device context](selecting-a-graphic-object-into-a-device-context.md)
 
-- [Device contexts](../mfc/device-contexts.md)
+- [Device contexts](device-contexts.md)
 
-- [Drawing in a View](../mfc/drawing-in-a-view.md)
+- [Drawing in a View](drawing-in-a-view.md)
 
 ## See also
 
-[Graphic Objects](../mfc/graphic-objects.md)
+[Graphic Objects](graphic-objects.md)

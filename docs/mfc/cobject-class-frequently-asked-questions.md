@@ -16,4 +16,4 @@ This section covers questions on class `CObject`.
 
 ## See also
 
-[Using CObject](../mfc/using-cobject.md)
+[Using CObject](using-cobject.md)

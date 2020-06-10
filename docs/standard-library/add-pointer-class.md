@@ -62,5 +62,5 @@ add_pointer_t<int> == int *
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)\
-[remove_pointer Class](../standard-library/remove-pointer-class.md)
+[<type_traits>](type-traits.md)\
+[remove_pointer Class](remove-pointer-class.md)

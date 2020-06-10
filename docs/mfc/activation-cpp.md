@@ -19,10 +19,10 @@ In-place activation promotes a document-centric approach to document creation. T
 
 MFC does not support nested in-place activation. If you build a container/server application, and that container/server is embedded in another container and in-place activated, it cannot in-place activate objects embedded inside it.
 
-What happens to an embedded item when the user double-clicks it depends on the verbs defined for the item. For information, see [Activation: Verbs](../mfc/activation-verbs.md).
+What happens to an embedded item when the user double-clicks it depends on the verbs defined for the item. For information, see [Activation: Verbs](activation-verbs.md).
 
 ## See also
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[Containers](../mfc/containers.md)<br/>
-[Servers](../mfc/servers.md)
+[OLE](ole-in-mfc.md)<br/>
+[Containers](containers.md)<br/>
+[Servers](servers.md)

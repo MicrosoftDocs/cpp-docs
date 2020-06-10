@@ -24,11 +24,11 @@ The framework's responsibilities are as follows:
 
 - Display the **Print** dialog box.
 
-- Create a [CDC](../mfc/reference/cdc-class.md) object for the printer.
+- Create a [CDC](reference/cdc-class.md) object for the printer.
 
-- Call the [StartDoc](../mfc/reference/cdc-class.md#startdoc) and [EndDoc](../mfc/reference/cdc-class.md#enddoc) member functions of the `CDC` object.
+- Call the [StartDoc](reference/cdc-class.md#startdoc) and [EndDoc](reference/cdc-class.md#enddoc) member functions of the `CDC` object.
 
-- Repeatedly call the [StartPage](../mfc/reference/cdc-class.md#startpage) member function of the `CDC` object, inform the view class which page should be printed, and call the [EndPage](../mfc/reference/cdc-class.md#endpage) member function of the `CDC` object.
+- Repeatedly call the [StartPage](reference/cdc-class.md#startpage) member function of the `CDC` object, inform the view class which page should be printed, and call the [EndPage](reference/cdc-class.md#endpage) member function of the `CDC` object.
 
 - Call overridable functions in the view at the appropriate times.
 
@@ -36,16 +36,16 @@ The following articles discuss how the framework supports printing and print pre
 
 ### What do you want to know more about
 
-- [How default printing is done](../mfc/how-default-printing-is-done.md)
+- [How default printing is done](how-default-printing-is-done.md)
 
-- [Multipage documents](../mfc/multipage-documents.md)
+- [Multipage documents](multipage-documents.md)
 
-- [Headers and footers](../mfc/headers-and-footers.md)
+- [Headers and footers](headers-and-footers.md)
 
-- [Allocating GDI resources for printing](../mfc/allocating-gdi-resources.md)
+- [Allocating GDI resources for printing](allocating-gdi-resources.md)
 
-- [Print preview](../mfc/print-preview-architecture.md)
+- [Print preview](print-preview-architecture.md)
 
 ## See also
 
-[Printing and Print Preview](../mfc/printing-and-print-preview.md)
+[Printing and Print Preview](printing-and-print-preview.md)

@@ -8,7 +8,7 @@ ms.assetid: 324b7ff6-58f9-4691-96a9-9836a79d0fb6
 
 Ribbon resources are easier to visualize, modify, and maintain than manually coded ribbons. This topic describes how to convert a manually coded ribbon in an MFC Project into a ribbon resource.
 
-You must have an existing MFC project that has code that uses the MFC ribbon classes, for example, [CMFCRibbonBar Class](../mfc/reference/cmfcribbonbar-class.md).
+You must have an existing MFC project that has code that uses the MFC ribbon classes, for example, [CMFCRibbonBar Class](reference/cmfcribbonbar-class.md).
 
 ### To convert an MFC ribbon to a ribbon resource
 
@@ -38,4 +38,4 @@ You must have an existing MFC project that has code that uses the MFC ribbon cla
 
 ## See also
 
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+[Ribbon Designer (MFC)](ribbon-designer-mfc.md)

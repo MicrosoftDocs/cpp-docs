@@ -7,7 +7,7 @@ ms.assetid: 50c6a5c0-d00d-4276-9285-d908fd4f6483
 ---
 # allocator_suballoc Class
 
-Describes an object that manages storage allocation and freeing for objects of type *Type* using a cache of type [cache_suballoc](../standard-library/cache-suballoc-class.md).
+Describes an object that manages storage allocation and freeing for objects of type *Type* using a cache of type [cache_suballoc](cache-suballoc-class.md).
 
 ## Syntax
 
@@ -24,7 +24,7 @@ class allocator_suballoc;
 
 ## Remarks
 
-The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_SUBALLOC, SYNC_DEFAULT, allocator_suballoc);`
+The [ALLOCATOR_DECL](allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_SUBALLOC, SYNC_DEFAULT, allocator_suballoc);`
 
 ## Requirements
 
@@ -34,4 +34,4 @@ The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

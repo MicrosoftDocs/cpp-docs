@@ -14,8 +14,8 @@ This arrangement is somewhat familiar to programmers experienced with traditiona
 
 In related topics, you will read what the framework does as it initializes and runs the application and then cleans up as the application terminates. You will also understand where the code you write fits in.
 
-For more information, see [Class CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md) and [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md).
+For more information, see [Class CWinApp: The Application Class](cwinapp-the-application-class.md) and [Document Templates and the Document/View Creation Process](document-templates-and-the-document-view-creation-process.md).
 
 ## See also
 
-[Building on the Framework](../mfc/building-on-the-framework.md)
+[Building on the Framework](building-on-the-framework.md)

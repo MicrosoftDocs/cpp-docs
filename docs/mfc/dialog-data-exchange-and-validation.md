@@ -10,11 +10,11 @@ Dialog data exchange (DDX) is an easy way to initialize the controls in your dia
 
 ## What do you want to know more about
 
-- [Dialog data exchange](../mfc/dialog-data-exchange.md)
+- [Dialog data exchange](dialog-data-exchange.md)
 
-- [Dialog data validation](../mfc/dialog-data-validation.md)
+- [Dialog data validation](dialog-data-validation.md)
 
 ## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)
+[Dialog Boxes](dialog-boxes.md)<br/>
+[Working with Dialog Boxes in MFC](life-cycle-of-a-dialog-box.md)

@@ -16,7 +16,7 @@ There are two types of Automation clients:
 
 - Clients that possess static information (provided at compile time) that specifies the properties and operations of the server.
 
-Clients of the first kind acquire information about the server's methods and properties by querying the OLE system's `IDispatch` mechanism. Although it is adequate to use for dynamic clients, `IDispatch` is difficult to use for static clients, where the objects being driven must be known at compile time. For static bound clients, the Microsoft Foundation classes provide the [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md) class.
+Clients of the first kind acquire information about the server's methods and properties by querying the OLE system's `IDispatch` mechanism. Although it is adequate to use for dynamic clients, `IDispatch` is difficult to use for static clients, where the objects being driven must be known at compile time. For static bound clients, the Microsoft Foundation classes provide the [COleDispatchDriver](reference/coledispatchdriver-class.md) class.
 
 Static bound clients use a proxy class that is statically linked with the client application. This class provides a type-safe C++ encapsulation of the server application's properties and operations.
 
@@ -30,6 +30,6 @@ If you want to handle events in your automation client, you need to add a sink i
 
 ## See also
 
-[Automation Clients: Using Type Libraries](../mfc/automation-clients-using-type-libraries.md)<br/>
-[Automation](../mfc/automation.md)<br/>
-[MFC Application Wizard](../mfc/reference/mfc-application-wizard.md)
+[Automation Clients: Using Type Libraries](automation-clients-using-type-libraries.md)<br/>
+[Automation](automation.md)<br/>
+[MFC Application Wizard](reference/mfc-application-wizard.md)
