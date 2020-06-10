@@ -1,5 +1,6 @@
 ---
 title: "return Statement (C)"
+description: "The C language return statement ends function execution and optionally returns a value to the caller."
 ms.date: "06/10/2020"
 helpviewer_keywords: ["( ) parentheses in return statements"]
 ms.assetid: 18cd82cf-f899-4b28-83ad-4eff353ddcb4
