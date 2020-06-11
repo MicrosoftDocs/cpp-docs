@@ -22,13 +22,13 @@ As a good engineering practice, always specify a return type for your functions.
 
 Many programmers use parentheses to enclose the *expression* argument of the **`return`** statement. However, C doesn't require the parentheses.
 
-The compiler may issue a diagnotic message about unreachable code if it finds any statements placed after the **`return`** statement.
+The compiler may issue a diagnostic message about unreachable code if it finds any statements placed after the **`return`** statement.
 
 In a **`main`** function, the **`return`** statement and expression are optional. What happens to the returned value, if one is specified, depends on the implementation. **Microsoft-specific**: The Microsoft C implementation returns the expression value to the process that invoked the program, such as *`cmd.exe`*. If no **`return`** expression is supplied, the Microsoft C runtime returns a value that indicates success (0) or failure (a non-zero value).
 
 ## Example
 
-This example is one program in several parts. It demonstrates the **`return`** statement, and how it's used both to terminate a function and optionally return a value. It has a **`main`** function that calls two **`void`** functions. These functions in turn each call functions that return a value.
+This example is one program in several parts. It demonstrates the **`return`** statement, and how it's used both to end function execution, and optionally, to return a value.
 
 ```C
 // C_return_statement.c
@@ -100,9 +100,13 @@ int main()
 }
 ```
 
-The **`main`** function calls two functions: `report_square` and `report_ratio`. As `report_square` takes no parameters and returns **`void`**, we don't assign its result to a variable. Likewise, `report_ratio` returns **`void`**, so we don't save its return value, either. After each of these function calls, execution continues at the next statement. Then **`main`** returns a value of `0` (typically used to report success) to end the program. 
+The **`main`** function calls two functions: `report_square` and `report_ratio`. As `report_square` takes no parameters and returns **`void`**, we don't assign its result to a variable. Likewise, `report_ratio` returns **`void`**, so we don't save its return value, either. After each of these function calls, execution continues at the next statement. Then **`main`** returns a value of `0` (typically used to report success) to end the program.
 
-The output of the example looks like this:
+To compile the example, create a source code file named *`C_return_statement.c`*. Then, copy all the example code, in the order shown. Save the file, and compile it in a Developer command prompt window by using the command:
+
+**`cl /W4 C_return_statement.c`**
+
+Then, to run the example code, enter **`C_return_statement.exe`** at the command prompt. The output of the example looks like this:
 
 ```Output
 value = 2147483647, squared = 4611686014132420609
