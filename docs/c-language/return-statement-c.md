@@ -16,7 +16,7 @@ A **`return`** statement ends the execution of a function, and returns control t
 
 The value of *expression*, if present, is returned to the calling function. If *expression* is omitted, the return value of the function is undefined. The expression, if present, is evaluated and then converted to the type returned by the function. When a **`return`** statement contains an expression in functions that have a **`void`** return type, the compiler generates a warning, and the expression isn't evaluated.
 
-If no **`return`** statement appears in a function definition, control automatically returns to the calling function after the last statement of the called function is executed. In this case, the return value of the called function is undefined.
+If no **`return`** statement appears in a function definition, control automatically returns to the calling function after the last statement of the called function is executed. In this case, the return value of the called function is undefined. If the function has a return type other than **`void`**, the compiler prints a diagnostic message. If the function has a **`void`** return type, this behavior is okay, but may be considered poor style. Use a plain **`return`** statement to make your intent clear.
 
 As a good engineering practice, always specify a return type for your functions. If a return value isn't required, declare the function to have **`void`** return type. If a return type isn't specified, the C compiler assumes a default return type of **`int`**.
 
