@@ -7,64 +7,106 @@ ms.assetid: 18cd82cf-f899-4b28-83ad-4eff353ddcb4
 ---
 # return Statement (C)
 
-The **`return`** statement ends the execution of a function and returns control to the calling function. Execution resumes in the calling function at the point immediately following the call. A **`return`** statement can also return a value to the calling function. For more information, see [Return type](../c-language/return-type.md).
+A **`return`** statement ends the execution of a function, and returns control to the calling function. Execution resumes in the calling function at the point immediately following the call. A **`return`** statement can return a value to the calling function. For more information, see [Return type](../c-language/return-type.md).
 
 ## Syntax
 
 > *jump-statement*:\
 > &nbsp;&nbsp;&nbsp;&nbsp;**`return`** *expression*&#8203;<sub>opt</sub> **`;`**
 
-## Remarks
+The value of *expression*, if present, is returned to the calling function. If *expression* is omitted, the return value of the function is undefined. The expression, if present, is evaluated and then converted to the type returned by the function. When a **`return`** statement contains an expression in functions that have a **`void`** return type, the compiler generates a warning, and the expression isn't evaluated.
 
-The value of *expression*, if present, is returned to the calling function. If *expression* is omitted, the return value of the function is undefined. The expression, if present, is evaluated and then converted to the type returned by the function. If the function was declared with return type **`void`**, a **`return`** statement containing an expression generates a warning and the expression isn't evaluated.
+If no **`return`** statement appears in a function definition, control automatically returns to the calling function after the last statement of the called function is executed. In this case, the return value of the called function is undefined.
 
-If no **`return`** statement appears in a function definition, control automatically returns to the calling function after the last statement of the called function is executed. In this case, the return value of the called function is undefined. If a return value isn't required, declare the function to have **`void`** return type; otherwise, the default return type is **`int`**.
+As a good engineering practice, always specify a return type for your functions. If a return value isn't required, declare the function to have **`void`** return type. If a return type isn't specified, the C compiler assumes a default return type of **`int`**.
 
 Many programmers use parentheses to enclose the *expression* argument of the **`return`** statement. However, C doesn't require the parentheses.
 
+The compiler may issue a diagnotic message about unreachable code if it finds any statements placed after the **`return`** statement.
+
+In a **`main`** function, the **`return`** statement and expression are optional. What happens to the returned value, if one is specified, depends on the implementation. **Microsoft-specific**: The Microsoft C implementation returns the expression value to the process that invoked the program, such as *`cmd.exe`*. If no **`return`** expression is supplied, the Microsoft C runtime returns a value that indicates success (0) or failure (a non-zero value).
+
 ## Example
 
-This example demonstrates the **`return`** statement:
+This example is one program in several parts. It demonstrates the **`return`** statement, and how it's used both to terminate a function and optionally return a value. It has a **`main`** function that calls two **`void`** functions. These functions in turn each call functions that return a value.
 
 ```C
-#include <limits.h>
-#include <stdio.h>
+// C_return_statement.c
+// Compile using: cl /W4 C_return_statement.c
+#include <limits.h>      // for INT_MAX
+#include <stdio.h>       // for printf
 
-void draw( int i, long long ll );
-long long sq( int s );
-
-int main()
+long long square( int value )
 {
-    long long y;
-    int x = INT_MAX;
-
-    y = sq( x );
-    draw( x, y );
-    return x;
-}
-
-long long sq( int s )
-{
+    // Cast one operand to long long to force the
+    // expression to be evaluated as type long long.
     // Note that parentheses around the return expression
-    // are allowed but not required here.
-    return( s * (long long)s );
-}
-
-void draw( int i, long long ll )
-{
-    printf( "i = %d, ll = %lld\n", i, ll );
-    return;
+    // are allowed, but not required here.
+    return ( value * (long long) value );
 }
 ```
 
-In this example, the `main` function calls two functions: `sq` and `draw`. The `sq` function returns the value of `x * x` to `main`, where the return value is assigned to `y`. The parentheses around the **`return`** expression in `sq` are evaluated as part of the expression, and aren't required by the **`return`** statement. Since the **`return`** expression is evaluated before it's converted to the return type, `sq` uses an explicit cast to convert the expression type to the return type. The cast prevents a possible integer overflow, which could lead to unexpected results.
+The `square` function returns the square of its argument, in a wider type to prevent an arithmetic error. In the Microsoft C implementation, the **`long long`** type is large enough to hold the product of two **`int`** values without overflow.
 
-The `draw` function is declared as a **`void`** function. It prints the values of its parameters. Then, the empty **`return`** statement ends the function and doesn't return a value. An attempt to assign the return value of `draw` would cause a diagnostic message to be issued. The `main` function then returns the value of `x` to the operating system.
+The parentheses around the **`return`** expression in `square` are evaluated as part of the expression, and aren't required by the **`return`** statement.
+
+```C
+double ratio( int numerator, int denominator )
+{
+    // Cast one operand to double to force floating-point
+    // division. Otherwise, integer division is used,
+    // then the result is converted to the return type.
+    return numerator / (double) denominator;
+}
+```
+
+The `ratio` function returns the ratio of its two **`int`** arguments as a floating-point **`double`** value. The **`return`** expression is forced to use a floating-point operation by casting one of the operands to **`double`**. Otherwise, the integer division operator would be used, and the fractional part would be lost.
+
+```C
+void report_square( void )
+{
+    int value = INT_MAX;
+    long long squared = 0LL;
+    squared = square( value );
+    printf( "value = %d, squared = %lld\n", value, squared );
+    return; // Use an empty expression to return void.
+}
+```
+
+The `report_square` function calls `square` with a parameter value of `INT_MAX`, the largest signed integer value that fits in an **`int`**. The **`long long`** result is stored in `squared`, then printed. The `report_square` function has a **`void`** return type, so it doesn't have an expression in its **`return`** statement.
+
+```C
+void report_ratio( int top, int bottom )
+{
+    double fraction = ratio( top, bottom );
+    printf( "%d / %d = %.16f\n", top, bottom, fraction );
+    // It's okay to have no return statement for functions
+    // that have void return types.
+}
+```
+
+The `report_ratio` function calls `ratio` with parameter values of `1` and `INT_MAX`. The **`double`** result is stored in `fraction`, then printed. The `report_ratio` function has a **`void`** return type, so it doesn't need to explicitly return a value. Execution of `report_ratio` "falls off the bottom" and returns no value to the caller.
+
+```C
+int main()
+{
+    int n = 1;
+    int x = INT_MAX;
+
+    report_square();
+    report_ratio( n, x );
+
+    return 0;
+}
+```
+
+The **`main`** function calls two functions: `report_square` and `report_ratio`. As `report_square` takes no parameters and returns **`void`**, we don't assign its result to a variable. Likewise, `report_ratio` returns **`void`**, so we don't save its return value, either. After each of these function calls, execution continues at the next statement. Then **`main`** returns a value of `0` (typically used to report success) to end the program. 
 
 The output of the example looks like this:
 
 ```Output
-i = 2147483647, ll = 4611686014132420609
+value = 2147483647, squared = 4611686014132420609
+1 / 2147483647 = 0.0000000004656613
 ```
 
 ## See also
