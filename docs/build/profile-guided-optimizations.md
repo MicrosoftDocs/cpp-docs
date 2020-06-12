@@ -34,6 +34,8 @@ To use profile-guided optimization, follow these steps to optimize your app:
    Your application can also directly invoke a PGO function, [PgoAutoSweep](pgoautosweep.md), to capture the profile data at the point of the call as a `.pgc` file. It can give you finer control over the code covered by the captured data in your `.pgc` files. For an example of how to use this function, see the [PgoAutoSweep](pgoautosweep.md) documentation.
 
    When you create your instrumented build, by default, data collection is done in non-thread-safe mode, which is faster but may be imprecise. By using the **EXACT** argument to **/GENPROFILE** or **/FASTGENPROFILE**, you can specify data collection in thread-safe mode, which is more precise, but slower. This option is also available if you set the deprecated [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) environment variable, or the deprecated **/POGOSAFEMODE** linker option, when you create your instrumented build.
+   
+   Note: Both .pgc and .pgd files should be considered "binary" files if stored in a source control system to avoid any automatic transformation that may be made to "text" files.
 
 - Link using **/LTCG** and **/USEPROFILE**.
 
