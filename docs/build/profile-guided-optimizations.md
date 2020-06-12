@@ -41,6 +41,9 @@ To use profile-guided optimization, follow these steps to optimize your app:
 
 It's even possible to create the optimized executable file and later determine that additional profiling would be useful to create a more optimized image. If the instrumented image and its `.pgd` file are available, you can do additional test runs and rebuild the optimized image with the newer `.pgd` file, by using the same **/LTCG** and **/USEPROFILE** linker options.
 
+> [!NOTE]
+> Both `.pgc` and `.pgd` files are binary file types. If stored in a source control system, avoid any automatic transformation that may be made to text files.
+
 ## Optimizations performed by PGO
 
 The profile-guided optimizations include these checks and improvements:
