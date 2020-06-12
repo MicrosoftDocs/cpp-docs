@@ -34,14 +34,15 @@ To use profile-guided optimization, follow these steps to optimize your app:
    Your application can also directly invoke a PGO function, [PgoAutoSweep](pgoautosweep.md), to capture the profile data at the point of the call as a `.pgc` file. It can give you finer control over the code covered by the captured data in your `.pgc` files. For an example of how to use this function, see the [PgoAutoSweep](pgoautosweep.md) documentation.
 
    When you create your instrumented build, by default, data collection is done in non-thread-safe mode, which is faster but may be imprecise. By using the **EXACT** argument to **/GENPROFILE** or **/FASTGENPROFILE**, you can specify data collection in thread-safe mode, which is more precise, but slower. This option is also available if you set the deprecated [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) environment variable, or the deprecated **/POGOSAFEMODE** linker option, when you create your instrumented build.
-   
-   Note: Both .pgc and .pgd files should be considered "binary" files if stored in a source control system to avoid any automatic transformation that may be made to "text" files.
 
 - Link using **/LTCG** and **/USEPROFILE**.
 
    Use both the **/LTCG** and [/USEPROFILE](reference/useprofile.md) linker options to create the optimized image. This step takes as input the `.pgd` file. When you specify **/USEPROFILE**, you can optionally add a **PGD=**_filename_ argument to specify a non-default name or location for the `.pgd` file. You can also specify this name by using the deprecated **/PGD** linker option. The combination of **/LTCG** and **/USEPROFILE** replaces the deprecated **/LTCG:PGOPTIMIZE** and **/LTCG:PGUPDATE** linker options.
 
 It's even possible to create the optimized executable file and later determine that additional profiling would be useful to create a more optimized image. If the instrumented image and its `.pgd` file are available, you can do additional test runs and rebuild the optimized image with the newer `.pgd` file, by using the same **/LTCG** and **/USEPROFILE** linker options.
+
+> [!NOTE]
+> Both `.pgc` and `.pgd` files are binary file types. If stored in a source control system, avoid any automatic transformation that may be made to text files.
 
 ## Optimizations performed by PGO
 
