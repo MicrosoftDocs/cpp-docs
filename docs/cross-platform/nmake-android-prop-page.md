@@ -13,13 +13,13 @@ f1_keywords:
 ---
 # NMake properties (Android C++)
 
-Property | Description
---- | ---
-Build Command Line | Specifies the command line to run for the 'Build' command.
-Rebuild All Command Line | Specifies the command line to run for the 'Rebuild All' command.
-Clean Command Line | Specifies the command line to run for the 'Clean' command.
-Output | Specifies the output file to generate.
-Preprocessor Definitions | Specifies the preprocessor defines used by the source files.
-Include Search Path | Specifies the include search path for resolving included files.
-Forced Includes | Specifies the files that are forced included.
-Additional Options | Specifies additional compiler switches to be used by IntelliSense when parsing C++ files
+| Property | Description |
+|--|--|
+| Build Command Line | Specifies the command line to run for the 'Build' command. |
+| Rebuild All Command Line | Specifies the command line to run for the 'Rebuild All' command. |
+| Clean Command Line | Specifies the command line to run for the 'Clean' command. |
+| Output | Specifies the output file to generate. |
+| Preprocessor Definitions | Specifies the preprocessor defines used by the source files. |
+| Include Search Path | Specifies the include search path for resolving included files. |
+| Forced Includes | Specifies the files that are forced included. |
+| Additional Options | Specifies additional compiler switches to be used by IntelliSense when parsing C++ files |

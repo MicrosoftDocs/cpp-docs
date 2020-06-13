@@ -11,7 +11,7 @@ helpviewer_keywords: ["std::swap (unordered_map/multimap)"]
 |-|-|
 |[swap (unordered_map)](#swap)|[swap (unordered_multimap)](#swap_function_multimap)|
 
-## <a name="swap"></a>  swap (unordered_map)
+## <a name="swap"></a> swap (unordered_map)
 
 Swaps the contents of two containers.
 
@@ -104,7 +104,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="swap_function_multimap"></a>  swap (unordered_multimap)
+## <a name="swap_function_multimap"></a> swap (unordered_multimap)
 
 Swaps the contents of two containers.
 

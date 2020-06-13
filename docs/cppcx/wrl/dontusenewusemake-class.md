@@ -38,7 +38,7 @@ Name                                             | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="operator-new"></a>DontUseNewUseMake::operator new
+## <a name="operator-new"></a> DontUseNewUseMake::operator new
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

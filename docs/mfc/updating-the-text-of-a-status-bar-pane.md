@@ -31,7 +31,7 @@ For example, suppose one pane has `ID_INDICATOR_PAGE` as its command identifier 
 The recommended way to display text in a pane is to call the `SetText` member function of class `CCmdUI` in an update handler function for the pane. For example, you might want to set up an integer variable *m_nPage* that contains the current page number and use `SetText` to set the pane's text to a string version of that number.
 
 > [!NOTE]
->  The `SetText` approach is recommended. It is possible to perform this task at a slightly lower level by calling the `CStatusBar` member function `SetPaneText`. Even so, you still need an update handler. Without such a handler for the pane, MFC automatically disables the pane, erasing its content.
+> The `SetText` approach is recommended. It is possible to perform this task at a slightly lower level by calling the `CStatusBar` member function `SetPaneText`. Even so, you still need an update handler. Without such a handler for the pane, MFC automatically disables the pane, erasing its content.
 
 The following procedure shows how to use an update handler function to display text in a pane.
 

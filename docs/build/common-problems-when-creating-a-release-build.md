@@ -20,7 +20,7 @@ The list below shows the primary differences between a debug and a release (nond
 
 See the [/GZ (Catch Release-Build Errors in Debug Build)](reference/gz-enable-stack-frame-run-time-error-checking.md) compiler option for information on how to catch release build errors in debug builds.
 
-##  <a name="_core_heap_layout"></a> Heap Layout
+## <a name="_core_heap_layout"></a> Heap Layout
 
 Heap layout will be the cause of about ninety percent of the apparent problems when an application works in debug, but not release.
 
@@ -28,17 +28,17 @@ When you build your project for debug, you are using the debug memory allocator.
 
 For more information, see [Check for Memory Overwrite](checking-for-memory-overwrites.md) and [Use the Debug Build To Check for Memory Overwrite](using-the-debug-build-to-check-for-memory-overwrite.md).
 
-##  <a name="_core_compilation"></a> Compilation
+## <a name="_core_compilation"></a> Compilation
 
 Many of the MFC macros and much of the MFC implementation changes when you build for release. In particular, the ASSERT macro evaluates to nothing in a release build, so none of the code found in ASSERTs will be executed. For more information, see [Examine ASSERT Statements](using-verify-instead-of-assert.md).
 
 Some functions are inlined for increased speed in the release build. Optimizations are generally turned on in a release build. A different memory allocator is also being used.
 
-##  <a name="_core_pointer_support"></a> Pointer Support
+## <a name="_core_pointer_support"></a> Pointer Support
 
 The lack of debugging information removes the padding from your application. In a release build, stray pointers have a greater chance of pointing to uninitialized memory instead of pointing to debug information.
 
-##  <a name="_core_optimizations"></a> Optimizations
+## <a name="_core_optimizations"></a> Optimizations
 
 Depending on the nature of certain segments of code, the optimizing compiler might generate unexpected code. This is the least likely cause of release build problems, but it does arise on occasion. For a solution, see [Optimizing Your Code](optimizing-your-code.md).
 

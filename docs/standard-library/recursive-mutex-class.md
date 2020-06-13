@@ -38,7 +38,7 @@ class recursive_mutex;
 
 **Namespace:** std
 
-## <a name="lock"></a>  lock
+## <a name="lock"></a> lock
 
 Blocks the calling thread until the thread obtains ownership of the `mutex`.
 
@@ -50,7 +50,7 @@ void lock();
 
 If the calling thread already owns the `mutex`, the method returns immediately, and the previous lock remains in effect.
 
-## <a name="recursive_mutex"></a>  recursive_mutex
+## <a name="recursive_mutex"></a> recursive_mutex
 
 Constructs a `recursive_mutex` object that is not locked.
 
@@ -70,7 +70,7 @@ Releases any resources that are used by the object.
 
 If the object is locked when the destructor runs, the behavior is undefined.
 
-## <a name="try_lock"></a>  try_lock
+## <a name="try_lock"></a> try_lock
 
 Attempts to obtain ownership of the `mutex` without blocking.
 
@@ -86,7 +86,7 @@ bool try_lock() noexcept;
 
 If the calling thread already owns the `mutex`, the function immediately returns **true**, and the previous lock remains in effect.
 
-## <a name="unlock"></a>  unlock
+## <a name="unlock"></a> unlock
 
 Releases ownership of the mutex.
 

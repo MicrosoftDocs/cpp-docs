@@ -2,7 +2,7 @@
 title: "set (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["cliext::set", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", "cliext::operator>", "cliext::operator>=", "cliext::set::begin", "cliext::set::clear", "cliext::set::const_iterator", "cliext::set::const_reference", "cliext::set::const_reverse_iterator", "cliext::set::count", "cliext::set::difference_type", "cliext::set::empty", "cliext::set::end", "cliext::set::equal_range", "cliext::set::erase", "cliext::set::find", "cliext::set::generic_container", "cliext::set::generic_iterator", "cliext::set::generic_reverse_iterator", "cliext::set::generic_value", "cliext::set::insert", "cliext::set::iterator", "cliext::set::key_comp", "cliext::set::key_compare", "cliext::set::key_type", "cliext::set::lower_bound", "cliext::set::make_value", "cliext::set::operator=", "cliext::set::rbegin", "cliext::set::reference", "cliext::set::rend", "cliext::set::reverse_iterator", "cliext::set::set", "cliext::set::size", "cliext::set::size_type", "cliext::set::swap", "cliext::set::to_array", "cliext::set::upper_bound", "cliext::set::value_comp", "cliext::set::value_compare", "cliext::set::value_type"]
+f1_keywords: ["cliext::set", "cliext::set::begin", "cliext::set::clear", "cliext::set::const_iterator", "cliext::set::const_reference", "cliext::set::const_reverse_iterator", "cliext::set::count", "cliext::set::difference_type", "cliext::set::empty", "cliext::set::end", "cliext::set::equal_range", "cliext::set::erase", "cliext::set::find", "cliext::set::generic_container", "cliext::set::generic_iterator", "cliext::set::generic_reverse_iterator", "cliext::set::generic_value", "cliext::set::insert", "cliext::set::iterator", "cliext::set::key_comp", "cliext::set::key_compare", "cliext::set::key_type", "cliext::set::lower_bound", "cliext::set::make_value", "cliext::set::operator=", "cliext::set::rbegin", "cliext::set::reference", "cliext::set::rend", "cliext::set::reverse_iterator", "cliext::set::set", "cliext::set::size", "cliext::set::size_type", "cliext::set::swap", "cliext::set::to_array", "cliext::set::upper_bound", "cliext::set::value_comp", "cliext::set::value_compare", "cliext::set::value_type"]
 helpviewer_keywords: ["<cliext/set> header [STL/CLR]", "<set> header [STL/CLR]", "set class [STL/CLR]", "operator!= (set) member [STL/CLR]", "operator< (set) member [STL/CLR]", "operator<= (set) member [STL/CLR]", "operator== (set) member [STL/CLR]", "operator> (set) member [STL/CLR]", "operator>= (set) member [STL/CLR]", "begin member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "operator= member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "set member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 27d3628c-741a-43a7-bef1-5085536f679e
 ---
@@ -134,7 +134,7 @@ Erasing or removing an element calls the destructor for its stored value. Destro
 
 ## Members
 
-## <a name="begin"></a>set::begin (STL/CLR)
+## <a name="begin"></a> set::begin (STL/CLR)
 
 Designates the beginning of the controlled sequence.
 
@@ -182,7 +182,7 @@ a b c
 *++begin() = b
 ```
 
-## <a name="clear"></a>set::clear (STL/CLR)
+## <a name="clear"></a> set::clear (STL/CLR)
 
 Removes all elements.
 
@@ -240,7 +240,7 @@ a b
 size() = 0
 ```
 
-## <a name="const_iterator"></a>set::const_iterator (STL/CLR)
+## <a name="const_iterator"></a> set::const_iterator (STL/CLR)
 
 The type of a constant iterator for the controlled sequence.
 
@@ -282,7 +282,7 @@ int main()
 a b c
 ```
 
-## <a name="const_reference"></a>set::const_reference (STL/CLR)
+## <a name="const_reference"></a> set::const_reference (STL/CLR)
 
 The type of a constant reference to an element.
 
@@ -327,7 +327,7 @@ int main()
 a b c
 ```
 
-## <a name="const_reverse_iterator"></a>set::const_reverse_iterator (STL/CLR)
+## <a name="const_reverse_iterator"></a> set::const_reverse_iterator (STL/CLR)
 
 The type of a constant reverse iterator for the controlled sequence..
 
@@ -369,7 +369,7 @@ int main()
 c b a
 ```
 
-## <a name="count"></a>set::count (STL/CLR)
+## <a name="count"></a> set::count (STL/CLR)
 
 Finds the number of elements matching a specified key.
 
@@ -422,7 +422,7 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="difference_type"></a>set::difference_type (STL/CLR)
+## <a name="difference_type"></a> set::difference_type (STL/CLR)
 
 The types of a signed distance between two elements.
 
@@ -477,7 +477,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="empty"></a>set::empty (STL/CLR)
+## <a name="empty"></a> set::empty (STL/CLR)
 
 Tests whether no elements are present.
 
@@ -529,7 +529,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="end"></a>set::end (STL/CLR)
+## <a name="end"></a> set::end (STL/CLR)
 
 Designates the end of the controlled sequence.
 
@@ -578,7 +578,7 @@ a b c
 *--end() = c
 ```
 
-## <a name="equal_range"></a>set::equal_range (STL/CLR)
+## <a name="equal_range"></a> set::equal_range (STL/CLR)
 
 Finds range that matches a specified key.
 
@@ -638,7 +638,7 @@ equal_range(L'x') empty = True
 b
 ```
 
-## <a name="erase"></a>set::erase (STL/CLR)
+## <a name="erase"></a> set::erase (STL/CLR)
 
 Removes elements at specified positions.
 
@@ -722,7 +722,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="find"></a>set::find (STL/CLR)
+## <a name="find"></a> set::find (STL/CLR)
 
 Finds an element that matches a specified key.
 
@@ -778,7 +778,7 @@ find b = b
 find C = False
 ```
 
-## <a name="generic_container"></a>set::generic_container (STL/CLR)
+## <a name="generic_container"></a> set::generic_container (STL/CLR)
 
 The type of the generic interface for the container.
 

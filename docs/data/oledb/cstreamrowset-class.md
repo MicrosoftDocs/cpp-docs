@@ -1,7 +1,7 @@
 ---
 title: "CStreamRowset Class"
 ms.date: "11/04/2016"
-f1_keywords: ["ATL::CStreamRowset<TAccessor>", "ATL::CStreamRowset", "CStreamRowset", "ATL.CStreamRowset<TAccessor>", "ATL.CStreamRowset", "CStreamRowset::CStreamRowset", "CStreamRowset.CStreamRowset", "ATL.CStreamRowset.CStreamRowset", "ATL::CStreamRowset::CStreamRowset", "CStreamRowset", "CStreamRowset<TAccessor>::CStreamRowset", "ATL::CStreamRowset<TAccessor>::CStreamRowset", "CStreamRowset<TAccessor>.Close", "ATL.CStreamRowset<TAccessor>.Close", "CStreamRowset::Close", "CStreamRowset<TAccessor>::Close", "ATL::CStreamRowset::Close", "ATL.CStreamRowset.Close", "ATL::CStreamRowset<TAccessor>::Close", "CStreamRowset.Close"]
+f1_keywords: ["ATL::CStreamRowset<TAccessor>", "ATL::CStreamRowset", "CStreamRowset", "ATL.CStreamRowset<TAccessor>", "ATL.CStreamRowset", "CStreamRowset::CStreamRowset", "CStreamRowset.CStreamRowset", "ATL.CStreamRowset.CStreamRowset", "ATL::CStreamRowset::CStreamRowset", "CStreamRowset<TAccessor>::CStreamRowset", "ATL::CStreamRowset<TAccessor>::CStreamRowset", "CStreamRowset<TAccessor>.Close", "ATL.CStreamRowset<TAccessor>.Close", "CStreamRowset::Close", "CStreamRowset<TAccessor>::Close", "ATL::CStreamRowset::Close", "ATL.CStreamRowset.Close", "ATL::CStreamRowset<TAccessor>::Close", "CStreamRowset.Close"]
 helpviewer_keywords: ["CStreamRowset class", "CStreamRowset class, constructor", "Close method"]
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
 ---
@@ -51,7 +51,7 @@ or
 SQL Server 2000 performs the XML formatting, and will return all columns and all rows of the rowset as one XML string.
 
 > [!NOTE]
->  This feature works with SQL Server 2000 only.
+> This feature works with SQL Server 2000 only.
 
 ## <a name="cstreamrowset"></a> CStreamRowset::CStreamRowset
 

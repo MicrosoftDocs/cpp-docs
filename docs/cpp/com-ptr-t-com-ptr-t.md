@@ -59,15 +59,15 @@ _com_ptr_t(
 // this smart pointer's interface type. If QueryInterface fails with
 // an E_NOINTERFACE error, a NULL smart pointer is constructed.
 explicit _com_ptr_t(
-   const CLSID& clsid, 
-   IUnknown* pOuter = NULL, 
+   const CLSID& clsid,
+   IUnknown* pOuter = NULL,
    DWORD dwClsContext = CLSCTX_ALL
 );
 
 // Calls CoCreateClass with provided CLSID retrieved from string.
 explicit _com_ptr_t(
-   LPCWSTR str, 
-   IUnknown* pOuter = NULL, 
+   LPCWSTR str,
+   IUnknown* pOuter = NULL,
    DWORD dwClsContext = CLSCTX_ALL
 );
 
@@ -84,19 +84,19 @@ explicit _com_ptr_t(
 );
 
 // Saves the interface.
-template<> 
+template<>
 _com_ptr_t(
    Interface* pInterface
 ) throw();
 
 // Make sure correct ctor is called
-template<> 
+template<>
 _com_ptr_t(
    LPSTR str
 );
 
 // Make sure correct ctor is called
-template<> 
+template<>
 _com_ptr_t(
    LPWSTR str
 );
@@ -106,7 +106,7 @@ _com_ptr_t(
 // find an interface pointer of this smart pointer's type. If
 // QueryInterface fails with an E_NOINTERFACE error, a NULL smart
 // pointer is constructed.
-template<typename _OtherIID> 
+template<typename _OtherIID>
 _com_ptr_t(
    const _com_ptr_t<_OtherIID>& p
 );
@@ -119,7 +119,7 @@ _com_ptr_t(
 
 // Disable conversion using _com_ptr_t* specialization of
 // template<typename _InterfaceType> _com_ptr_t(_InterfaceType* p)
-template<> 
+template<>
 explicit _com_ptr_t(
    _com_ptr_t* p
 );

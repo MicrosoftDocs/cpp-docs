@@ -22,4 +22,3 @@ ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
 [.FARDATA](dot-fardata.md)\
 [.FARDATA?](dot-fardata-q.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)
-

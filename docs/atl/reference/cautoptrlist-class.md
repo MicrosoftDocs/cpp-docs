@@ -10,7 +10,7 @@ ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
 This class provides methods useful when constructing a list of smart pointers.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -49,7 +49,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="cautoptrlist"></a>  CAutoPtrList::CAutoPtrList
+## <a name="cautoptrlist"></a> CAutoPtrList::CAutoPtrList
 
 The constructor.
 

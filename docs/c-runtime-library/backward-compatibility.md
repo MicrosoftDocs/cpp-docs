@@ -1,7 +1,6 @@
 ---
 title: "Backward Compatibility"
 ms.date: "11/04/2016"
-f1_keywords: ["c.programs"]
 helpviewer_keywords: ["CRT, compatibility", "backward compatibility, C run-time libraries", "compatibility, C run-time libraries", "backward compatibility"]
 ms.assetid: cc3175cf-97fd-492f-b329-5791aea63090
 ---

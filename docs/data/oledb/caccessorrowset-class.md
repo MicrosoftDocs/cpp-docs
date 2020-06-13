@@ -1,7 +1,7 @@
 ---
 title: "CAccessorRowset Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CAccessorRowset", "ATL.CAccessorRowset", "ATL::CAccessorRowset", "CAccessorRowset.Bind", "CAccessorRowset::Bind", "CAccessorRowset::CAccessorRowset", "CAccessorRowset.CAccessorRowset", "CAccessorRowset", "ATL.CAccessorRowset.CAccessorRowset", "ATL::CAccessorRowset::CAccessorRowset", "CAccessorRowset.Close", "CAccessorRowset::Close", "CAccessorRowset::FreeRecordMemory", "CAccessorRowset.FreeRecordMemory", "FreeRecordMemory", "GetColumnInfo", "CAccessorRowset.GetColumnInfo", "CAccessorRowset::GetColumnInfo"]
+f1_keywords: ["CAccessorRowset", "ATL.CAccessorRowset", "ATL::CAccessorRowset", "CAccessorRowset.Bind", "CAccessorRowset::Bind", "CAccessorRowset::CAccessorRowset", "CAccessorRowset.CAccessorRowset", "ATL.CAccessorRowset.CAccessorRowset", "ATL::CAccessorRowset::CAccessorRowset", "CAccessorRowset.Close", "CAccessorRowset::Close", "CAccessorRowset::FreeRecordMemory", "CAccessorRowset.FreeRecordMemory", "CAccessorRowset.GetColumnInfo", "CAccessorRowset::GetColumnInfo"]
 helpviewer_keywords: ["CAccessorRowset class", "CAccessorRowset class, methods", "CAccessorRowset class, members", "Bind method", "CAccessorRowset class, constructor", "Close method", "FreeRecordMemory method", "GetColumnInfo method"]
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
 ---

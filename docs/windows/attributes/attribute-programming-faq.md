@@ -27,7 +27,7 @@ This topic answers the following frequently asked questions:
 
 - [Can I use attributes on a class derived from a class that also uses attributes?](#vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor)
 
-##  <a name="vcconattributeprogrammmingfaqanchor1"></a> What is an HRESULT?
+## <a name="vcconattributeprogrammmingfaqanchor1"></a> What is an HRESULT?
 
 An HRESULT is a simple data type that is often used as a return value by attributes and ATL in general. The following table describes the various values. More values are contained in the header file winerror.h.
 
@@ -45,7 +45,7 @@ An HRESULT is a simple data type that is often used as a return value by attribu
 |E_FAIL|Unspecified failure|0x80004005|
 |E_ACCESSDENIED|General access denied error|0x80070005|
 
-##  <a name="vcconattributeprogrammmingfaqanchor2"></a> When do I have to specify the parameter name for an attribute?
+## <a name="vcconattributeprogrammmingfaqanchor2"></a> When do I have to specify the parameter name for an attribute?
 
 In most cases, if the attribute has a single parameter, that parameter is named. This name is not required when inserting the attribute in your code. For example, the following usage of the [aggregatable](aggregatable.md) attribute:
 
@@ -83,7 +83,7 @@ However, the following attributes have single, unnamed parameters:
 |[size_is](size-is.md)|[source](source-cpp.md)|[switch_is](switch-is.md)|
 |[switch_type](switch-type.md)|[transmit_as](transmit-as.md)|[wire_marshal](wire-marshal.md)|
 
-##  <a name="vcconattributeprogrammmingfaqanchor3"></a> Can I use comments in an attribute block?
+## <a name="vcconattributeprogrammmingfaqanchor3"></a> Can I use comments in an attribute block?
 
 You can use both single-line and multiple-line comments within an attribute block. However, you cannot use either style of comment within the parentheses holding the parameters to an attribute.
 
@@ -103,19 +103,19 @@ The following is disallowed:
 ]
 ```
 
-##  <a name="vcconattributeprogrammmingfaqanchor4"></a> How do attributes interact with inheritance?
+## <a name="vcconattributeprogrammmingfaqanchor4"></a> How do attributes interact with inheritance?
 
 You can inherit both attributed and unattributed classes from other classes, which may themselves be attributed or not. The result of deriving from an attributed class is the same as deriving from that class after the attribute provider has transformed its code. Attributes are not transmitted to derived classes through C++ inheritance. An attribute provider only transforms code in the vicinity of its attributes.
 
-##  <a name="vcconattributeprogrammmingfaqanchor5"></a> How can I use attributes in a nonattributed ATL project?
+## <a name="vcconattributeprogrammmingfaqanchor5"></a> How can I use attributes in a nonattributed ATL project?
 
 You may have a nonattributed ATL project, which has an .idl file, and you may want to start adding attributed objects. In this case, use the **Add Class Wizard** to provide the code.
 
-##  <a name="vcconattributeprogrammmingfaqanchor6"></a> How can I use an .idl file in an attributed project?
+## <a name="vcconattributeprogrammmingfaqanchor6"></a> How can I use an .idl file in an attributed project?
 
 You may have a .idl file that you want to use in your ATL attributed project. In this case, you would use the [importidl](importidl.md) attribute, compile the .idl file to a .h file (see the [MIDL Property Pages](../../build/reference/midl-property-pages.md) in the project's **Property Pages** dialog box), and then include the .h file in your project.
 
-##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Can I modify code that is injected by an attribute?
+## <a name="vcconattributeprogrammmingfaqanchor7"></a> Can I modify code that is injected by an attribute?
 
 Some attributes inject code into your project. You can see the injected code by using the [/Fx](../../build/reference/fx-merge-injected-code.md) compiler option. It is also possible to copy code from the injected file and paste it into your source code. This allows you to modify the behavior of the attribute. However, you may have to modify other parts of your code as well.
 
@@ -225,11 +225,11 @@ public:
 int main() {}
 ```
 
-##  <a name="vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface"></a> How can I forward declare an attributed interface?
+## <a name="vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface"></a> How can I forward declare an attributed interface?
 
 If you are going to make a forward declaration of an attributed interface, you must apply the same attributes to the forward declaration that you apply to the actual interface declaration. You must also apply the [export](export.md) attribute to your forward declaration.
 
-##  <a name="vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor"></a> Can I use attributes on a class derived from a class that also uses attributes?
+## <a name="vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor"></a> Can I use attributes on a class derived from a class that also uses attributes?
 
 No, using attributes on a class derived from a class that also uses attributes is not supported.
 

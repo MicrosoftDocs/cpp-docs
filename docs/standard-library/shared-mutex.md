@@ -60,7 +60,7 @@ The `shared_lock` class template extends support for timed locking and transfer 
 
 ## Classes
 
-###  <a name="class_shared_mutex"></a> shared_mutex Class
+### <a name="class_shared_mutex"></a> shared_mutex Class
 
 Class `shared_mutex` implements a non-recursive mutex with shared ownership semantics.
 
@@ -87,7 +87,7 @@ public:
    };
 ```
 
-###  <a name="class_shared_timed_mutex"></a> shared_timed_mutex Class
+### <a name="class_shared_timed_mutex"></a> shared_timed_mutex Class
 
 Class `shared_timed_mutex` implements a non-recursive mutex with shared ownership semantics that meets the requirements of a timed mutex type.
 
@@ -119,7 +119,7 @@ public:
    };
 ```
 
-###  <a name="class_shared_lock"></a> shared_lock Class
+### <a name="class_shared_lock"></a> shared_lock Class
 
 Class template `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.
 
@@ -167,7 +167,7 @@ private:
 
 ## Functions
 
-###  <a name="function_swap"></a> swap
+### <a name="function_swap"></a> swap
 
 Swaps the `shared_lock` objects.
 

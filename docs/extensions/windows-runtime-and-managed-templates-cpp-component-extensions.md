@@ -66,7 +66,7 @@ template<class T> public ref class R {
 };
 ```
 
-You cannot access templates defined in a referenced assembly with C++/CLI language syntax, but you can use reflection. If a template is not instantiated, it’s not emitted in the metadata. If a template is instantiated, only referenced member functions will appear in metadata.
+You cannot access templates defined in a referenced assembly with C++/CLI language syntax, but you can use reflection. If a template is not instantiated, it's not emitted in the metadata. If a template is instantiated, only referenced member functions will appear in metadata.
 
 ```cpp
 // managed_templates_3.cpp

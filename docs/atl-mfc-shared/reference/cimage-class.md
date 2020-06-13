@@ -137,15 +137,15 @@ Through `CImage`, you have access to the actual bits of a DIB section. You can u
 You can use `CImage` from either MFC or ATL.
 
 > [!NOTE]
-> When you create a project using `CImage`, you must define `CString` before you include *atlimage.h*. If your project uses ATL without MFC, include *atlstr.h* before you include *atlimage.h*. If your project uses MFC (or if it is an ATL project with MFC support), include *afxstr.h* before you include *atlimage.h*.<br/>
-> <br/>
+> When you create a project using `CImage`, you must define `CString` before you include *atlimage.h*. If your project uses ATL without MFC, include *atlstr.h* before you include *atlimage.h*. If your project uses MFC (or if it is an ATL project with MFC support), include *afxstr.h* before you include *atlimage.h*.
+>
 > Likewise, you must include *atlimage.h* before you include *atlimpl.cpp*. To accomplish this easily, include *atlimage.h* in your *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier).
 
 ## Requirements
 
 **Header:** atlimage.h
 
-##  <a name="alphablend"></a>  CImage::AlphaBlend
+## <a name="alphablend"></a> CImage::AlphaBlend
 
 Displays bitmaps that have transparent or semitransparent pixels.
 
@@ -202,7 +202,7 @@ An alpha transparency value to be used on the entire source bitmap. The default 
 The alpha-blending function for source and destination bitmaps, a global alpha value to be applied to the entire source bitmap, and format information for the source bitmap. The source and destination blend functions are currently limited to AC_SRC_OVER.
 
 *pointDest*<br/>
-A reference to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that identifies the upper left corner of the destination rectangle, in logical units.
+A reference to a [POINT](/windows/win32/api/windef/ns-windef-point) structure that identifies the upper left corner of the destination rectangle, in logical units.
 
 *nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
@@ -223,7 +223,7 @@ The width, in logical units, of the source rectangle.
 The height, in logical units, of the source rectangle.
 
 *rectDest*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, identifying the destination.
 
 *rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
@@ -238,11 +238,11 @@ Alpha-blend bitmaps support color blending on a per-pixel basis.
 
 When *bBlendOp* is set to the default of AC_SRC_OVER, the source bitmap is placed over the destination bitmap based on the alpha values of the source pixels.
 
-##  <a name="attach"></a>  CImage::Attach
+## <a name="attach"></a> CImage::Attach
 
 Attaches *hBitmap* to a `CImage` object.
 
-```
+```cpp
 void Attach(HBITMAP hBitmap, DIBOrientation eOrientation = DIBOR_DEFAULT) throw();
 ```
 
@@ -264,7 +264,7 @@ Specifies the orientation of the bitmap. Can be one of the following:
 
 The bitmap can be either a non-DIB section bitmap or a DIB section bitmap. See [IsDIBSection](#isdibsection) for a list of methods that you can use only with DIB section bitmaps.
 
-##  <a name="bitblt"></a>  CImage::BitBlt
+## <a name="bitblt"></a> CImage::BitBlt
 
 Copies a bitmap from the source device context to this current device context.
 
@@ -312,7 +312,7 @@ The logical y-coordinate of the upper left corner of the destination rectangle.
 The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.
 
 *pointDest*<br/>
-A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure indicating the upper left corner of the destination rectangle.
+A [POINT](/windows/win32/api/windef/ns-windef-point) structure indicating the upper left corner of the destination rectangle.
 
 *nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
@@ -327,7 +327,7 @@ The logical x-coordinate of the upper left corner of the source rectangle.
 The logical y-coordinate of the upper left corner of the source rectangle.
 
 *rectDest*<br/>
-A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure indicating the destination rectangle.
+A [RECT](/windows/win32/api/windef/ns-windef-rect) structure indicating the destination rectangle.
 
 *pointSrc*<br/>
 A `POINT` structure indicating the upper left corner of the source rectangle.
@@ -340,7 +340,7 @@ Nonzero if successful; otherwise zero.
 
 For more information, see [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) in the Windows SDK.
 
-##  <a name="cimage"></a>  CImage::CImage
+## <a name="cimage"></a> CImage::CImage
 
 Constructs a `CImage` object.
 
@@ -356,7 +356,7 @@ Once you have constructed the object, call [Create](#create), [Load](#load), [Lo
 
 Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#releasegdiplus) to explicitly release resources used by GDI+.
 
-##  <a name="create"></a>  CImage::Create
+## <a name="create"></a> CImage::Create
 
 Creates a `CImage` bitmap and attach it to the previously constructed `CImage` object.
 
@@ -391,7 +391,7 @@ Specifies if the bitmap object has an alpha channel. Can be a combination of zer
 
 Nonzero if successful; otherwise 0.
 
-##  <a name="createex"></a>  CImage::CreateEx
+## <a name="createex"></a> CImage::CreateEx
 
 Creates a `CImage` bitmap and attach it to the previously constructed `CImage` object.
 
@@ -424,7 +424,7 @@ Specifies the type of compression for a compressed bottom-up bitmap (top-down DI
 - BI_BITFIELDS The format is uncompressed and the color table consists of three DWORD color masks that specify the red, green, and blue components, respectively, of each pixel. This is valid when used with 16- and 32-bpp bitmaps.
 
 *pdwBitfields*<br/>
-Only used if *eCompression* is set to BI_BITFIELDS, otherwise it must be NULL. A pointer to an array of three DWORD bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) in the Windows SDK.
+Only used if *eCompression* is set to BI_BITFIELDS, otherwise it must be NULL. A pointer to an array of three DWORD bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) in the Windows SDK.
 
 *dwFlags*<br/>
 Specifies if the bitmap object has an alpha channel. Can be a combination of zero or more of the following values:
@@ -447,15 +447,15 @@ DWORD adwBitmasks[3] = { 0x0000000f, 0x000000f0, 0x00000f00 };
 m_myImage.CreateEx(100, 100, 16, BI_BITFIELDS, adwBitmasks, 0);
 ```
 
-##  <a name="destroy"></a>  CImage::Destroy
+## <a name="destroy"></a> CImage::Destroy
 
 Detaches the bitmap from the `CImage` object and destroys the bitmap.
 
-```
+```cpp
 void Destroy() throw();
 ```
 
-##  <a name="detach"></a>  CImage::Detach
+## <a name="detach"></a> CImage::Detach
 
 Detaches a bitmap from a `CImage` object.
 
@@ -467,7 +467,7 @@ HBITMAP Detach() throw();
 
 A handle to the bitmap detached, or NULL if no bitmap is attached.
 
-##  <a name="draw"></a>  CImage::Draw
+## <a name="draw"></a> CImage::Draw
 
 Copies a bitmap from the source device context to the current device context.
 
@@ -539,13 +539,13 @@ The width, in logical units, of the source rectangle.
 The height, in logical units, of the source rectangle.
 
 *rectDest*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, identifying the destination.
 
 *rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
 
 *pointDest*<br/>
-A reference to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that identifies the upper left corner of the destination rectangle, in logical units.
+A reference to a [POINT](/windows/win32/api/windef/ns-windef-point) structure that identifies the upper left corner of the destination rectangle, in logical units.
 
 ### Return Value
 
@@ -557,11 +557,11 @@ Nonzero if successful; otherwise 0.
 
 For versions of `Draw` that do not specify a source rectangle, the entire source image is the default. For the version of `Draw` that does not specify a size for the destination rectangle, the size of the source image is the default and no stretching or shrinking occurs.
 
-##  <a name="getbits"></a>  CImage::GetBits
+## <a name="getbits"></a> CImage::GetBits
 
 Retrieves a pointer to the actual bit values of a given pixel in a bitmap.
 
-```
+```cpp
 void* GetBits() throw();
 ```
 
@@ -576,7 +576,7 @@ Using this pointer, along with the value returned by [GetPitch](#getpitch), you 
 > [!NOTE]
 > This method supports only DIB section bitmaps; consequently, you access the pixels of a `CImage` object the same way you would the pixels of a DIB section. The returned pointer points to the pixel at the location (0, 0).
 
-##  <a name="getbpp"></a>  CImage::GetBPP
+## <a name="getbpp"></a> CImage::GetBPP
 
 Retrieves the bits-per-pixel value.
 
@@ -592,13 +592,13 @@ The number of bits per pixel.
 
 This value determines the number of bits that define each pixel and the maximum number of colors in the bitmap.
 
-The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the `biBitCount` member of [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) in the Windows SDK for more information about this value.
+The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the `biBitCount` member of [BITMAPINFOHEADER](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) in the Windows SDK for more information about this value.
 
-##  <a name="getcolortable"></a>  CImage::GetColorTable
+## <a name="getcolortable"></a> CImage::GetColorTable
 
 Retrieves red, green, blue (RGB) color values from a range of entries in the palette of the DIB section.
 
-```
+```cpp
 void GetColorTable(
     UINT iFirstColor,
     UINT nColors,
@@ -616,7 +616,7 @@ The number of color table entries to retrieve.
 *prgbColors*<br/>
 A pointer to the array of [RGBQUAD](/windows/win32/api/wingdi/ns-wingdi-rgbquad) structures to retrieve the color table entries.
 
-##  <a name="getdc"></a>  CImage::GetDC
+## <a name="getdc"></a> CImage::GetDC
 
 Retrieves the device context that currently has the image selected into it.
 
@@ -632,7 +632,7 @@ A handle to a device context.
 
 For each call to `GetDC`, you must have a subsequent call to [ReleaseDC](#releasedc).
 
-##  <a name="getexporterfilterstring"></a>  CImage::GetExporterFilterString
+## <a name="getexporterfilterstring"></a> CImage::GetExporterFilterString
 
 Finds image formats available for saving images.
 
@@ -715,7 +715,7 @@ where '&#124;' is the separator character specified by `chSeparator`. For exampl
 
 Use the default separator '&#124;' if you pass this string to an MFC `CFileDialog` object. Use the null separator '\0' if you pass this string to a common File Save dialog box.
 
-##  <a name="getheight"></a>  CImage::GetHeight
+## <a name="getheight"></a> CImage::GetHeight
 
 Retrieves the height, in pixels, of an image.
 
@@ -727,7 +727,7 @@ int GetHeight() const throw();
 
 The height, in pixels, of an image.
 
-##  <a name="getimporterfilterstring"></a>  CImage::GetImporterFilterString
+## <a name="getimporterfilterstring"></a> CImage::GetImporterFilterString
 
 Finds image formats available for loading images.
 
@@ -806,7 +806,7 @@ where '&#124;' is the separator character specified by *chSeparator*. For exampl
 
 Use the default separator '&#124;' if you pass this string to an MFC `CFileDialog` object. Use the null separator '\0' if you pass this string to a common **File Open** dialog box.
 
-##  <a name="getmaxcolortableentries"></a>  CImage::GetMaxColorTableEntries
+## <a name="getmaxcolortableentries"></a> CImage::GetMaxColorTableEntries
 
 Retrieves the maximum number of entries in the color table.
 
@@ -822,7 +822,7 @@ The number of entries in the color table.
 
 This method supports only DIB section bitmaps.
 
-##  <a name="getpitch"></a>  CImage::GetPitch
+## <a name="getpitch"></a> CImage::GetPitch
 
 Retrieves the pitch of an image.
 
@@ -843,7 +843,7 @@ Use `GetPitch` with [GetBits](#getbits) to find individual pixels of an image.
 > [!NOTE]
 > This method supports only DIB section bitmaps.
 
-##  <a name="getpixel"></a>  CImage::GetPixel
+## <a name="getpixel"></a> CImage::GetPixel
 
 Retrieves the color of the pixel at the location specified by *x* and *y*.
 
@@ -863,11 +863,11 @@ The y-coordinate of the pixel.
 
 The red, green, blue (RGB) value of the pixel. If the pixel is outside of the current clipping region, the return value is CLR_INVALID.
 
-##  <a name="getpixeladdress"></a>  CImage::GetPixelAddress
+## <a name="getpixeladdress"></a> CImage::GetPixelAddress
 
 Retrieves the exact address of a pixel.
 
-```
+```cpp
 void* GetPixelAddress(int x, int y) throw();
 ```
 
@@ -888,7 +888,7 @@ For formats that have less than 8 bits per pixel, this method returns the addres
 > [!NOTE]
 > This method supports only DIB section bitmaps.
 
-##  <a name="gettransparentcolor"></a>  CImage::GetTransparentColor
+## <a name="gettransparentcolor"></a> CImage::GetTransparentColor
 
 Retrieves the indexed location of the transparent color in the color palette.
 
@@ -900,7 +900,7 @@ LONG GetTransparentColor() const throw();
 
 The index of the transparent color.
 
-##  <a name="getwidth"></a>  CImage::GetWidth
+## <a name="getwidth"></a> CImage::GetWidth
 
 Retrieves the width, in pixels, of an image.
 
@@ -912,7 +912,7 @@ int GetWidth() const throw();
 
 The width of the bitmap, in pixels.
 
-##  <a name="isdibsection"></a>  CImage::IsDIBSection
+## <a name="isdibsection"></a> CImage::IsDIBSection
 
 Determines if the attached bitmap is a DIB section.
 
@@ -942,7 +942,7 @@ If the bitmap is not a DIB section, you cannot use the following `CImage` method
 
 - [SetColorTable](#setcolortable)
 
-##  <a name="isindexed"></a>  CImage::IsIndexed
+## <a name="isindexed"></a> CImage::IsIndexed
 
 Determines whether a bitmap's pixels are mapped to a color palette.
 
@@ -961,7 +961,7 @@ This method returns TRUE only if the bitmap is 8-bit (256 colors) or less.
 > [!NOTE]
 > This method supports only DIB section bitmaps.
 
-##  <a name="isnull"></a>  CImage::IsNull
+## <a name="isnull"></a> CImage::IsNull
 
 Determines if a bitmap is currently loaded.
 
@@ -973,7 +973,7 @@ bool IsNull() const throw();
 
 This method returns TRUE if a bitmap is not currently loaded; otherwise FALSE.
 
-##  <a name="istransparencysupported"></a>  CImage::IsTransparencySupported
+## <a name="istransparencysupported"></a> CImage::IsTransparencySupported
 
 Indicates whether the application supports transparent bitmaps.
 
@@ -989,7 +989,7 @@ Nonzero if the current platform supports transparency. Otherwise 0.
 
 If the return value is nonzero, and transparency is supported, a call to [AlphaBlend](#alphablend), [TransparentBlt](#transparentblt), or [Draw](#draw) will handle transparent colors.
 
-##  <a name="load"></a>  CImage::Load
+## <a name="load"></a> CImage::Load
 
 Loads an image.
 
@@ -1016,11 +1016,11 @@ Loads the image specified by *pszFileName* or *pStream*.
 
 Valid image types are BMP, GIF, JPEG, PNG, and TIFF.
 
-##  <a name="loadfromresource"></a>  CImage::LoadFromResource
+## <a name="loadfromresource"></a> CImage::LoadFromResource
 
 Loads an image from a BITMAP resource.
 
-```
+```cpp
 void LoadFromResource(
     HINSTANCE hInstance,
     LPCTSTR pszResourceName) throw();
@@ -1045,7 +1045,7 @@ The ID of the resource to load.
 
 The resource must be of type BITMAP.
 
-##  <a name="maskblt"></a>  CImage::MaskBlt
+## <a name="maskblt"></a> CImage::MaskBlt
 
 Combines the color data for the source and destination bitmaps using the specified mask and raster operation.
 
@@ -1140,11 +1140,11 @@ Nonzero if successful, otherwise 0.
 
 This method applies to Windows NT, versions 4.0 and later only.
 
-##  <a name="operator_hbitmap"></a>  CImage::operator HBITMAP
+## <a name="operator_hbitmap"></a> CImage::operator HBITMAP
 
 Use this operator to get the attached Windows GDI handle of the `CImage` object. This operator is a casting operator, which supports direct use of an HBITMAP object.
 
-##  <a name="plgblt"></a>  CImage::PlgBlt
+## <a name="plgblt"></a> CImage::PlgBlt
 
 Performs a bit-block transfer from a rectangle in a source device context into a parallelogram in a destination device context.
 
@@ -1203,10 +1203,10 @@ The x-coordinate of the upper left corner of the monochrome bitmap.
 The y-coordinate of the upper left corner of the monochrome bitmap.
 
 *rectSrc*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the coordinates of the source rectangle.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure specifying the coordinates of the source rectangle.
 
 *pointMask*<br/>
-A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure indicating the upper left corner of the mask bitmap.
+A [POINT](/windows/win32/api/windef/ns-windef-point) structure indicating the upper left corner of the mask bitmap.
 
 ### Return Value
 
@@ -1218,11 +1218,11 @@ If *hbmMask* identifies a valid monochrome bitmap, `PlgBit` uses this bitmap to 
 
 This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](/windows/win32/api/wingdi/nf-wingdi-plgblt) in the Windows SDK for more detailed information.
 
-##  <a name="releasedc"></a>  CImage::ReleaseDC
+## <a name="releasedc"></a> CImage::ReleaseDC
 
 Releases the device context.
 
-```
+```cpp
 void ReleaseDC() const throw();
 ```
 
@@ -1230,11 +1230,11 @@ void ReleaseDC() const throw();
 
 Because only one bitmap can be selected into a device context at a time, you must call `ReleaseDC` for each call to [GetDC](#getdc).
 
-##  <a name="releasegdiplus"></a>  CImage::ReleaseGDIPlus
+## <a name="releasegdiplus"></a> CImage::ReleaseGDIPlus
 
 Releases resources used by GDI+.
 
-```
+```cpp
 void ReleaseGDIPlus() throw();
 ```
 
@@ -1242,7 +1242,7 @@ void ReleaseGDIPlus() throw();
 
 This method must be called to free resources allocated by a global `CImage` object. See [CImage::CImage](#cimage).
 
-##  <a name="save"></a>  CImage::Save
+## <a name="save"></a> CImage::Save
 
 Saves an image to the specified stream or file on disk.
 
@@ -1286,11 +1286,11 @@ A standard HRESULT.
 
 Call this function to save the image using a specified name and type. If the *guidFileType* parameter is not included, the file name's file extension will be used to determine the image format. If no extension is provided, the image will be saved in BMP format.
 
-##  <a name="setcolortable"></a>  CImage::SetColorTable
+## <a name="setcolortable"></a> CImage::SetColorTable
 
 Sets the red, green, blue (RGB) color values for a range of entries in the palette of the DIB section.
 
-```
+```cpp
 void SetColorTable(
     UINT iFirstColor,
     UINT nColors,
@@ -1312,11 +1312,11 @@ A pointer to the array of [RGBQUAD](/windows/win32/api/wingdi/ns-wingdi-rgbquad)
 
 This method supports only DIB section bitmaps.
 
-##  <a name="setpixel"></a>  CImage::SetPixel
+## <a name="setpixel"></a> CImage::SetPixel
 
 Sets the color of a pixel at a given location in the bitmap.
 
-```
+```cpp
 void SetPixel(int x, int y, COLORREF color) throw();
 ```
 
@@ -1335,11 +1335,11 @@ The color to which you set the pixel.
 
 This method fails if the pixel coordinates lie outside of the selected clipping region.
 
-##  <a name="setpixelindexed"></a>  CImage::SetPixelIndexed
+## <a name="setpixelindexed"></a> CImage::SetPixelIndexed
 
 Sets the pixel color to the color located at *iIndex* in the color palette.
 
-```
+```cpp
 void SetPixelIndexed(int x, int y, int iIndex) throw();
 ```
 
@@ -1354,11 +1354,11 @@ The vertical location of the pixel to set.
 *iIndex*<br/>
 The index of a color in the color palette.
 
-##  <a name="setpixelrgb"></a>  CImage::SetPixelRGB
+## <a name="setpixelrgb"></a> CImage::SetPixelRGB
 
 Sets the pixel at the locations specified by *x* and *y* to the colors indicated by *r*, *g*, and *b*, in a red, green, blue (RGB) image.
 
-```
+```cpp
 void SetPixelRGB(
     int x,
     int y,
@@ -1388,7 +1388,7 @@ The intensity of the blue color.
 
 The red, green, and blue parameters are each represented by a number between 0 and 255. If you set all three parameters to zero, the combined resulting color is black. If you set all three parameters to 255, the combined resulting color is white.
 
-##  <a name="settransparentcolor"></a>  CImage::SetTransparentColor
+## <a name="settransparentcolor"></a> CImage::SetTransparentColor
 
 Sets a color at a given indexed location as transparent.
 
@@ -1405,7 +1405,7 @@ The index, in a color palette, of the color to set to transparent. If -1, no col
 
 The index of the color previously set as transparent.
 
-##  <a name="stretchblt"></a>  CImage::StretchBlt
+## <a name="stretchblt"></a> CImage::StretchBlt
 
 Copies a bitmap from the source device context to this current device context.
 
@@ -1463,7 +1463,7 @@ The height, in logical units, of the destination rectangle.
 The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.
 
 *rectDest*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, identifying the destination.
 
 *xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.
@@ -1488,7 +1488,7 @@ Nonzero if successful, otherwise 0.
 
 For more information, see [StretchBlt](/windows/win32/api/wingdi/nf-wingdi-stretchblt) in the Windows SDK.
 
-##  <a name="transparentblt"></a>  CImage::TransparentBlt
+## <a name="transparentblt"></a> CImage::TransparentBlt
 
 Copies a bitmap from the source device context to this current device context.
 
@@ -1546,7 +1546,7 @@ The height, in logical units, of the destination rectangle.
 The color in the source bitmap to treat as transparent. By default, CLR_INVALID, indicating that the color currently set as the transparent color of the image should be used.
 
 *rectDest*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure, identifying the destination.
 
 *xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.

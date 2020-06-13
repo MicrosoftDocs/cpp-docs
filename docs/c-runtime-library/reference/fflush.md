@@ -1,8 +1,8 @@
 ---
 title: "fflush"
-ms.date: "09/11/2019"
-api_name: ["fflush"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+ms.date: "4/2/2020"
+api_name: ["fflush", "_o_fflush"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fflush"]
@@ -45,6 +45,8 @@ For information about controlling the commit-to-disk feature, see [Stream I/O](.
 
 This function locks the calling thread and is therefore thread-safe. For a non-locking version, see **_fflush_nolock**.
 
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+
 ## Requirements
 
 |Function|Required header|
@@ -79,10 +81,10 @@ int main(void)
 
         // Write data to a file immediately instead of buffering.
         fflush(my_file);
-    
+
         if (my_number == 5)
         {
-            // Without using fflush, no data was written to the file 
+            // Without using fflush, no data was written to the file
             // prior to the crash, so the data is lost.
             *crash_the_program = 5;
         }

@@ -15,24 +15,24 @@ You have a choice between two techniques for creating graphic objects, such as p
 Two-stage construction is always safer. In one-stage construction, the constructor could throw an exception if you provide incorrect arguments or memory allocation fails. That problem is avoided by two-stage construction, although you do have to check for failure. In either case, destroying the object is the same process.
 
 > [!NOTE]
->  These techniques apply to creating any objects, not just graphic objects.
+> These techniques apply to creating any objects, not just graphic objects.
 
 ## Example of Both Construction Techniques
 
 The following brief example shows both methods of constructing a pen object:
 
-[!code-cpp[NVC_MFCDocViewSDI#6](../mfc/codesnippet/cpp/one-stage-and-two-stage-construction-of-objects_1.cpp)]
+[!code-cpp[NVC_MFCDocViewSDI#6](codesnippet/cpp/one-stage-and-two-stage-construction-of-objects_1.cpp)]
 
 ### What do you want to know more about
 
-- [Graphic objects](../mfc/graphic-objects.md)
+- [Graphic objects](graphic-objects.md)
 
-- [Selecting a graphic object into a device context](../mfc/selecting-a-graphic-object-into-a-device-context.md)
+- [Selecting a graphic object into a device context](selecting-a-graphic-object-into-a-device-context.md)
 
-- [Device contexts](../mfc/device-contexts.md)
+- [Device contexts](device-contexts.md)
 
-- [Drawing in a View](../mfc/drawing-in-a-view.md)
+- [Drawing in a View](drawing-in-a-view.md)
 
 ## See also
 
-[Graphic Objects](../mfc/graphic-objects.md)
+[Graphic Objects](graphic-objects.md)

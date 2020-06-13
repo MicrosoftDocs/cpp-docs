@@ -2,7 +2,6 @@
 title: "SafeInt Library"
 ms.custom: "index-page"
 ms.date: "03/19/2019"
-f1_keywords: ["SafeInt"]
 helpviewer_keywords: ["libraries, SafeInt", "SafeInt library"]
 ms.assetid: 5321e875-67c5-49d7-9650-85a876552d14
 ---
@@ -14,9 +13,9 @@ ms.assetid: 5321e875-67c5-49d7-9650-85a876552d14
 
 |Section|Description|
 |-------------|-----------------|
-|[SafeInt Class](../safeint/safeint-class.md)|This class protects against integer overflows.|
-|[SafeInt Functions](../safeint/safeint-functions.md)|Functions that can be used without creating a **SafeInt** object.|
-|[SafeIntException Class](../safeint/safeintexception-class.md)|A class of exceptions related to the **SafeInt** class.|
+|[SafeInt Class](safeint-class.md)|This class protects against integer overflows.|
+|[SafeInt Functions](safeint-functions.md)|Functions that can be used without creating a **SafeInt** object.|
+|[SafeIntException Class](safeintexception-class.md)|A class of exceptions related to the **SafeInt** class.|
 
 ## Related Sections
 

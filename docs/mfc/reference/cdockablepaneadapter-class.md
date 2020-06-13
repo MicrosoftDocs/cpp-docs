@@ -46,7 +46,7 @@ If you want to customize the `CDockablePaneAdapter` behavior, just derive a new 
 
 **Header:** afxDockablePaneAdapter.h
 
-##  <a name="getwrappedwnd"></a>  CDockablePaneAdapter::GetWrappedWnd
+## <a name="getwrappedwnd"></a> CDockablePaneAdapter::GetWrappedWnd
 
 Returns the underlying window for the dockable pane adapter.
 
@@ -62,7 +62,7 @@ A pointer to the wrapped window.
 
 Use this function to access the wrapped window.
 
-##  <a name="loadstate"></a>  CDockablePaneAdapter::LoadState
+## <a name="loadstate"></a> CDockablePaneAdapter::LoadState
 
 Loads the state of the pane from the registry.
 
@@ -88,7 +88,7 @@ virtual BOOL LoadState(
 
 ### Remarks
 
-##  <a name="savestate"></a>  CDockablePaneAdapter::SaveState
+## <a name="savestate"></a> CDockablePaneAdapter::SaveState
 
 Saves the state of the pane to the registry.
 
@@ -114,7 +114,7 @@ virtual BOOL SaveState(
 
 ### Remarks
 
-##  <a name="setwrappedwnd"></a>  CDockablePaneAdapter::SetWrappedWnd
+## <a name="setwrappedwnd"></a> CDockablePaneAdapter::SetWrappedWnd
 
 Sets the underlying window for the dockable pane adapter.
 

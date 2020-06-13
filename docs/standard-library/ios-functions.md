@@ -239,7 +239,7 @@ A reference to the object from which *str* is derived.
 
 [showpos](../standard-library/ios-functions.md#showpos) causes the sign to display for positive numbers.
 
-The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::internal](../standard-library/ios-base-class.md#fmtflags)`, `[ios_base::adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::internal](../standard-library/ios-base-class.md#fmtflags)`,` [ios_base::adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
 
 ### Example
 
@@ -883,7 +883,7 @@ Note that `endl` also flushes the buffer.
 
 The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::unitbuf](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
 
-## <a name="uppercase"></a>  uppercase
+## <a name="uppercase"></a> uppercase
 
 Specifies that hexadecimal digits and the exponent in scientific notation appear in uppercase.
 

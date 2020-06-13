@@ -48,7 +48,7 @@ For more information about context identifiers for Internet applications, see th
 
 **Header:** afxinet.h
 
-##  <a name="cinternetexception"></a>  CInternetException::CInternetException
+## <a name="cinternetexception"></a> CInternetException::CInternetException
 
 This member function is called when a `CInternetException` object is created.
 
@@ -65,7 +65,7 @@ The error that caused the exception.
 
 To throw a CInternetException, call the MFC global function [AfxThrowInternetException](internet-url-parsing-globals.md#afxthrowinternetexception).
 
-##  <a name="m_dwcontext"></a>  CInternetException::m_dwContext
+## <a name="m_dwcontext"></a> CInternetException::m_dwContext
 
 The context value associated with the related Internet operation.
 
@@ -77,7 +77,7 @@ DWORD_PTR m_dwContext;
 
 The context identifier is originally specified in [CInternetSession](../../mfc/reference/cinternetsession-class.md) and passed by MFC to [CInternetConnection](../../mfc/reference/cinternetconnection-class.md)- and [CInternetFile](../../mfc/reference/cinternetfile-class.md)-derived classes. You can override this default and assign any *dwContext* parameter a value of your choosing. *dwContext* is associated with any operation of the given object. *dwContext* identifies the operation's status information returned by [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).
 
-##  <a name="m_dwerror"></a>  CInternetException::m_dwError
+## <a name="m_dwerror"></a> CInternetException::m_dwError
 
 The error that caused the exception.
 

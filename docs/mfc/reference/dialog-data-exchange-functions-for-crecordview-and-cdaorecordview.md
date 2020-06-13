@@ -10,7 +10,7 @@ ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
 This topic lists the DDX_Field functions used to exchange data between a [CRecordset](../../mfc/reference/crecordset-class.md) and a [CRecordView](../../mfc/reference/crecordview-class.md) form or a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) and a [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) form. DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 
 > [!NOTE]
->  DDX_Field functions are like DDX functions in that they exchange data with controls in a form. But unlike DDX, they exchange data with the fields of the view's associated recordset object rather than with fields of the record view itself. For more information, see classes `CRecordView` and `CDaoRecordView`.
+> DDX_Field functions are like DDX functions in that they exchange data with controls in a form. But unlike DDX, they exchange data with the fields of the view's associated recordset object rather than with fields of the record view itself. For more information, see classes `CRecordView` and `CDaoRecordView`.
 
 ### DDX_Field Functions
 
@@ -28,11 +28,11 @@ This topic lists the DDX_Field functions used to exchange data between a [CRecor
 |[DDX_FieldSlider](#ddx_fieldslider)|Synchronizes the thumb position of a slider control in a record view and an `int` field data member of a recordset. |
 |[DDX_FieldText](#ddx_fieldtext)|Overloaded versions are available for transferring `int`, **UINT**, **long**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **short**, [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md), and [COleCurrency](../../mfc/reference/colecurrency-class.md) data between a recordset field data member and an edit box in a `CRecordView` or `CDaoRecordView`.|
 
-##  <a name="ddx_fieldcbindex"></a>  DDX_FieldCBIndex
+## <a name="ddx_fieldcbindex"></a> DDX_FieldCBIndex
 
 The `DDX_FieldCBIndex` function synchronizes the index of the selected item in the list box control of a combo box control in a record view and an `int` field data member of a recordset associated with the record view.
 
-```
+```cpp
 void AFXAPI DDX_FieldCBIndex(
     CDataExchange* pDX,
     int nIDC,
@@ -76,11 +76,11 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. The example
 
 **Header:** afxdao.h
 
-##  <a name="ddx_fieldcbstring"></a>  DDX_FieldCBString
+## <a name="ddx_fieldcbstring"></a> DDX_FieldCBString
 
 The `DDX_FieldCBString` function manages the transfer of [CString](../../atl-mfc-shared/reference/cstringt-class.md) data between the edit control of a combo box control in a record view and a `CString` field data member of a recordset associated with the record view.
 
-```
+```cpp
 void AFXAPI DDX_FieldCBString(
     CDataExchange* pDX,
     int nIDC,
@@ -124,11 +124,11 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. The example
 
   **Header** afxdao.h
 
-## <a name="ddx_fieldcbstringexact"></a>  DDX_FieldCBStringExact
+## <a name="ddx_fieldcbstringexact"></a> DDX_FieldCBStringExact
 
 The `DDX_FieldCBStringExact` function manages the transfer of [CString](../../atl-mfc-shared/reference/cstringt-class.md) data between the edit control of a combo box control in a record view and a `CString` field data member of a recordset associated with the record view.
 
-```
+```cpp
 void AFXAPI DDX_FieldCBStringExact(
     CDataExchange* pDX,
     int nIDC,
@@ -172,11 +172,11 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
   **Header** afxdao.h
 
-##  <a name="ddx_fieldcheck"></a>  DDX_FieldCheck
+## <a name="ddx_fieldcheck"></a> DDX_FieldCheck
 
 The `DDX_FieldCheck` function manages the transfer of **int** data between a check box control in a dialog box, form view, or control view object and an **int** data member of the dialog box, form view, or control view object.
 
-```
+```cpp
 void AFXAPI DDX_FieldCheck(
     CDataExchange* pDX,
     int nIDC,
@@ -214,11 +214,11 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
   **Header** afxdao.h
 
-##  <a name="ddx_fieldlbindex"></a>  DDX_FieldLBIndex
+## <a name="ddx_fieldlbindex"></a> DDX_FieldLBIndex
 
 The `DDX_FieldLBIndex` function synchronizes the index of the selected item in a list box control in a record view and an **int** field data member of a recordset associated with the record view.
 
-```
+```cpp
 void AFXAPI DDX_FieldLBIndex(
     CDataExchange* pDX,
     int nIDC,
@@ -262,11 +262,11 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example.
 
   **Header** afxdao.h
 
-##  <a name="ddx_fieldlbstring"></a>  DDX_FieldLBString
+## <a name="ddx_fieldlbstring"></a> DDX_FieldLBString
 
 The `DDX_FieldLBString` copies the current selection of a list box control in a record view to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) field data member of a recordset associated with the record view.
 
-```
+```cpp
 void AFXAPI DDX_FieldLBString(
     CDataExchange* pDX,
     int nIDC,
@@ -310,11 +310,11 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
   **Header** afxdao.h
 
-##  <a name="ddx_fieldlbstringexact"></a>  DDX_FieldLBStringExact
+## <a name="ddx_fieldlbstringexact"></a> DDX_FieldLBStringExact
 
 The `DDX_FieldLBStringExact` function copies the current selection of a list box control in a record view to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) field data member of a recordset associated with the record view.
 
-```
+```cpp
 void AFXAPI DDX_FieldLBStringExact(
     CDataExchange* pDX,
     int nIDC,
@@ -358,11 +358,11 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
   **Header** afxdao.h
 
-##  <a name="ddx_fieldradio"></a>  DDX_FieldRadio
+## <a name="ddx_fieldradio"></a> DDX_FieldRadio
 
 The `DDX_FieldRadio` function associates a zero-based **int** member variable of a record view's recordset with the currently selected radio button in a group of radio buttons in the record view.
 
-```
+```cpp
 void AFXAPI DDX_FieldRadio(
     CDataExchange* pDX,
     int nIDC,
@@ -406,11 +406,11 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
   **Header** afxdao.h
 
-##  <a name="ddx_fieldscroll"></a>  DDX_FieldScroll
+## <a name="ddx_fieldscroll"></a> DDX_FieldScroll
 
 The `DDX_FieldScroll` function synchronizes the scroll position of a scroll bar control in a record view and an **int** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
 
-```
+```cpp
 void AFXAPI DDX_FieldScroll(
     CDataExchange* pDX,
     int nIDC,
@@ -454,17 +454,18 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
   **Header** afxdao.h
 
-  ## <a name="ddx_fieldslider"></a>  DDX_FieldSlider
+## <a name="ddx_fieldslider"></a> DDX_FieldSlider
+
 The `DDX_FieldSlider` function synchronizes the thumb position of a slider control in a record view and an **int** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
 
 ### Syntax
 
-  ```
-   void AFXAPI DDX_FieldSlider(
-       CDataExchange* pDX,
-       int nIDC,
-       int& value,
-       CRecordset* pRecordset );
+```cpp
+void AFXAPI DDX_FieldSlider(
+    CDataExchange* pDX,
+    int nIDC,
+    int& value,
+    CRecordset* pRecordset );
 
 void AFXAPI DDX_FieldSlider(
    CDataExchange* pDX,
@@ -505,11 +506,11 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
 **Header:** afxdao.h
 
-##  <a name="ddx_fieldtext"></a>  DDX_FieldText
+## <a name="ddx_fieldtext"></a> DDX_FieldText
 
 The `DDX_FieldText` function manages the transfer of **int**, **short**, **long**, DWORD, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **BOOL**, or **BYTE** data between an edit box control and the field data members of a recordset.
 
-```
+```cpp
 void AFXAPI DDX_FieldText(
     CDataExchange* pDX,
     int nIDC,

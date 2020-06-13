@@ -29,7 +29,7 @@ Name                                                    | Description
 
 ## Remarks
 
-The [SafeInt class](../safeint/safeint-class.md) is the only class that uses the `SafeIntException` class.
+The [SafeInt class](safeint-class.md) is the only class that uses the `SafeIntException` class.
 
 ## Inheritance Hierarchy
 
@@ -41,7 +41,7 @@ The [SafeInt class](../safeint/safeint-class.md) is the only class that uses the
 
 **Namespace:** msl::utilities
 
-## <a name="safeintexception"></a>SafeIntException::SafeIntException
+## <a name="safeintexception"></a> SafeIntException::SafeIntException
 
 Creates a `SafeIntException` object.
 

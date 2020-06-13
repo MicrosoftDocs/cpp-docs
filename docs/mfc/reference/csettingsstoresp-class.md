@@ -57,7 +57,7 @@ Whenever the framework would typically access the registry, it will now dynamica
 
 **Header:** afxsettingsstore.h
 
-##  <a name="create"></a>  CSettingsStoreSP::Create
+## <a name="create"></a> CSettingsStoreSP::Create
 
 Creates a new instance of an object that is derived from the [CSettingsStore Class](../../mfc/reference/csettingsstore-class.md).
 
@@ -93,7 +93,7 @@ The following example demonstrates how to use the `Create` method of the `CSetti
 
 [!code-cpp[NVC_MFC_RibbonApp#33](../../mfc/reference/codesnippet/cpp/csettingsstoresp-class_1.cpp)]
 
-##  <a name="csettingsstoresp"></a>  CSettingsStoreSP::CSettingsStoreSP
+## <a name="csettingsstoresp"></a> CSettingsStoreSP::CSettingsStoreSP
 
 Constructs a [CSettingsStoreSP Class](../../mfc/reference/csettingsstoresp-class.md) object.
 
@@ -110,7 +110,7 @@ CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
 
 The `CSettingsStoreSP` object stores the data from *dwUserData* in the protected member variable `m_dwUserData`.
 
-##  <a name="setruntimeclass"></a>  CSettingsStoreSP::SetRuntimeClass
+## <a name="setruntimeclass"></a> CSettingsStoreSP::SetRuntimeClass
 
 Sets the runtime class. The method [CSettingsStoreSP::Create](#create) uses the runtime class to determine what type of object to create.
 

@@ -201,7 +201,7 @@ This dependency line shows how to create a directory specification for a search:
 reverse.exe : {\src\omega;e:\repo\backwards}retro.obj
 ```
 
-The target `reverse.exe` has one dependent, `retro.obj`. The brace-enclosed list specifies two directories. NMAKE searches for `retro.obj` in the current directory first. If it isn’t there, NMAKE searches the `\src\omega` directory, then the `e:\repo\backwards` directory.
+The target `reverse.exe` has one dependent, `retro.obj`. The brace-enclosed list specifies two directories. NMAKE searches for `retro.obj` in the current directory first. If it isn't there, NMAKE searches the `\src\omega` directory, then the `e:\repo\backwards` directory.
 
 ## See also
 

@@ -2,7 +2,7 @@
 title: "/ERRORREPORT (dumpbin.exe)"
 description: "Reference for the Microsoft DUMPBIN utility /ERRORREPORT command-line option."
 ms.date: "02/09/2020"
-f1_keywords: ["/ERRORREPORT"]
+f1_keywords: ["/ERRORREPORT_dumpbin"]
 helpviewer_keywords: ["-ERRORREPORT dumpbin option", "ERRORREPORT dumpbin option", "/ERRORREPORT dumpbin option"]
 ms.assetid: 51178c43-4f95-4fda-8f97-50a257d1c948
 ---

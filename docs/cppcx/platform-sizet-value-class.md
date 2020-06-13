@@ -32,7 +32,7 @@ public ref class SizeT sealed : ValueType
 
 **Metadata:** platform.winmd
 
-## <a name="ctor"></a>  SizeT::SizeT constructor
+## <a name="ctor"></a> SizeT::SizeT constructor
 
 Initializes a new instance of SizeT with the specified value.
 

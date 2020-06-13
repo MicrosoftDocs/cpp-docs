@@ -184,7 +184,7 @@ Distribution for 100 samples:
 
 **Namespace:** std
 
-## <a name="geometric_distribution"></a>  geometric_distribution::geometric_distribution
+## <a name="geometric_distribution"></a> geometric_distribution::geometric_distribution
 
 Constructs the distribution.
 
@@ -209,7 +209,7 @@ The first constructor constructs an object whose stored `p` value holds the valu
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-## <a name="param_type"></a>  geometric_distribution::param_type
+## <a name="param_type"></a> geometric_distribution::param_type
 
 Stores the parameters of the distribution.
 

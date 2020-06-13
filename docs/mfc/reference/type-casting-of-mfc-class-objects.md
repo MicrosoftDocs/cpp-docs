@@ -17,7 +17,7 @@ The following table lists the MFC type casting macros.
 |[DYNAMIC_DOWNCAST](#dynamic_downcast)|Casts a pointer to a pointer to a class object while checking to see if the cast is legal.|
 |[STATIC_DOWNCAST](#static_downcast)|Casts a pointer to an object from one class to a pointer of a related type. In a debug build, causes an ASSERT if the object is not a "kind of" the target type.|
 
-##  <a name="dynamic_downcast"></a>  DYNAMIC_DOWNCAST
+## <a name="dynamic_downcast"></a> DYNAMIC_DOWNCAST
 
 Provides a handy way to cast a pointer to a pointer to a class object while checking to see if the cast is legal.
 
@@ -39,7 +39,7 @@ The macro will cast the *pointer* parameter to a pointer to an object of the *cl
 
 If the object referenced by the pointer is a "kind of" the identified class, the macro returns the appropriate pointer. If it is not a legal cast, the macro returns NULL.
 
-##  <a name="static_downcast"></a>  STATIC_DOWNCAST
+## <a name="static_downcast"></a> STATIC_DOWNCAST
 
 Casts *pobject* to a pointer to a *class_name* object.
 

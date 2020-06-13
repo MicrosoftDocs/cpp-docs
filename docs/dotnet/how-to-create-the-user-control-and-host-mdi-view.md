@@ -12,7 +12,7 @@ The following steps show how to create a .NET Framework user control, author the
 For information about how to create a Windows Forms user control and author a control class library, see [How to: Author User Controls](/dotnet/framework/winforms/controls/how-to-author-composite-controls).
 
 > [!NOTE]
->  In some cases, Windows Forms controls, such as a third-party Grid control, might not behave reliably when hosted in an MFC application. A recommended workaround is to place a Windows Forms User Control in the MFC application and place the third-party Grid control inside the User control.
+> In some cases, Windows Forms controls, such as a third-party Grid control, might not behave reliably when hosted in an MFC application. A recommended workaround is to place a Windows Forms User Control in the MFC application and place the third-party Grid control inside the User control.
 
 This procedure assumes that you created a Windows Forms Controls Library project named WindowsFormsControlLibrary1, as per the procedure in [How to: Create the User Control and Host in a Dialog Box](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
 

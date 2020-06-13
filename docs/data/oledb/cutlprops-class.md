@@ -1,7 +1,7 @@
 ---
 title: "CUtlProps Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CUtlProps", "CUtlProps::GetPropValue", "CUtlProps.GetPropValue", "GetPropValue", "CUtlProps::IsValidValue", "CUtlProps.IsValidValue", "IsValidValue", "CUtlProps", "OnPropertyChanged", "CUtlProps.OnPropertyChanged", "CUtlProps::OnPropertyChanged", "SetPropValue", "ATL::CUtlProps<T>::SetPropValue", "ATL.CUtlProps<T>.SetPropValue", "ATL.CUtlProps.SetPropValue", "CUtlProps::SetPropValue", "CUtlProps<T>::SetPropValue", "CUtlProps.SetPropValue", "CUtlProps<T>.SetPropValue", "ATL::CUtlProps::SetPropValue"]
+f1_keywords: ["CUtlProps", "CUtlProps::GetPropValue", "CUtlProps.GetPropValue", "GetPropValue", "CUtlProps::IsValidValue", "CUtlProps.IsValidValue", "IsValidValue", "OnPropertyChanged", "CUtlProps.OnPropertyChanged", "CUtlProps::OnPropertyChanged", "SetPropValue", "ATL::CUtlProps<T>::SetPropValue", "ATL.CUtlProps<T>.SetPropValue", "ATL.CUtlProps.SetPropValue", "CUtlProps::SetPropValue", "CUtlProps<T>::SetPropValue", "CUtlProps.SetPropValue", "CUtlProps<T>.SetPropValue", "ATL::CUtlProps::SetPropValue"]
 helpviewer_keywords: ["CUtlProps class", "GetPropValue method", "IsValidValue method", "OnInterfaceRequested method", "OnPropertyChanged method", "SetPropValue method"]
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
 ---

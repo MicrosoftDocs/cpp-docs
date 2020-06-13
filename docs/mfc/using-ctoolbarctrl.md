@@ -1,7 +1,6 @@
 ---
 title: "Using CToolBarCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CToolBarCtrl"]
 helpviewer_keywords: ["CToolBarCtrl class [MFC]", "toolbar controls [MFC], creating"]
 ms.assetid: 13cf3753-135b-4a3e-a850-ed30177fcf9d
 ---

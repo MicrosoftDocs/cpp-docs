@@ -18,7 +18,7 @@ To centrally deploy Visual C++ libraries, you can use one of these two sources f
 
 - *Redistributable package* files, which are stand-alone command-line executables that contain all the Visual C++ redistributable libraries in compressed form, or
 
-- *Redistributable merge modules* (.msm files), which you can use to deploy specific libraries, and which you include in your application’s Windows Installer (.msi) file.
+- *Redistributable merge modules* (.msm files), which you can use to deploy specific libraries, and which you include in your application's Windows Installer (.msi) file.
 
 A redistributable package file installs all of the Visual C++ libraries for a particular system architecture. For example, if your application is built for x64, you can use the vcredist_x64.exe redistributable package to install all the Visual C++ libraries your application uses. You can program your application installer to run the redistributable package as a prerequisite before you install your application.
 

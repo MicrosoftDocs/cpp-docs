@@ -10,7 +10,7 @@ ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
 |-|-|
 |[swap](#istream_swap)|[ws](#ws)|
 
-## <a name="istream_swap"></a>  swap
+## <a name="istream_swap"></a> swap
 
 Exchanges the elements of two stream objects.
 
@@ -34,7 +34,7 @@ A stream.
 *right*\
 A stream.
 
-## <a name="ws"></a>  ws
+## <a name="ws"></a> ws
 
 Skips white space in the stream.
 

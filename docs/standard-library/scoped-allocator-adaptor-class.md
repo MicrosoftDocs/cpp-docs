@@ -94,7 +94,7 @@ Three types are defined for the sake of exposition:
 
 **Namespace:** std
 
-## <a name="allocate"></a>  scoped_allocator_adaptor::allocate
+## <a name="allocate"></a> scoped_allocator_adaptor::allocate
 
 Allocates memory by using the `Outer` allocator.
 
@@ -114,7 +114,7 @@ A pointer that might assist the allocator object by locating the address of an o
 
 The first member function returns `Outer_traits::allocate(outer_allocator(), count)`. The second member function returns `Outer_traits::allocate(outer_allocator(), count, hint)`.
 
-## <a name="construct"></a>  scoped_allocator_adaptor::construct
+## <a name="construct"></a> scoped_allocator_adaptor::construct
 
 Constructs an object.
 
@@ -178,7 +178,7 @@ The fifth method behaves the same as `this->construct(ptr, piecewise_construct, 
 
 The sixth method behaves the same as `this->construct(ptr, piecewise_construct, forward_as_tuple(std::forward<Uy1>(right.first), forward_as_tuple(std::forward<Uy2>(right.second))`.
 
-## <a name="deallocate"></a>  scoped_allocator_adaptor::deallocate
+## <a name="deallocate"></a> scoped_allocator_adaptor::deallocate
 
 Deallocates objects by using the outer allocator.
 
@@ -194,7 +194,7 @@ A pointer to the starting location of the objects to be deallocated.
 *count*\
 The number of objects to deallocate.
 
-## <a name="destroy"></a>  scoped_allocator_adaptor::destroy
+## <a name="destroy"></a> scoped_allocator_adaptor::destroy
 
 Destroys a specified object.
 
@@ -212,7 +212,7 @@ A pointer to the object to be destroyed.
 
 `Outermost_traits::destroy(OUTERMOST(*this), ptr)`
 
-## <a name="inner_allocator"></a>  scoped_allocator_adaptor::inner_allocator
+## <a name="inner_allocator"></a> scoped_allocator_adaptor::inner_allocator
 
 Retrieves a reference to the stored object of type `inner_allocator_type`.
 
@@ -225,7 +225,7 @@ const inner_allocator_type& inner_allocator() const noexcept;
 
 A reference to the stored object of type `inner_allocator_type`.
 
-## <a name="max_size"></a>  scoped_allocator_adaptor::max_size
+## <a name="max_size"></a> scoped_allocator_adaptor::max_size
 
 Determines the maximum number of objects that can be allocated by the outer allocator.
 
@@ -260,7 +260,7 @@ bool operator!=(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
 const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
 ```
 
-## <a name="outer_allocator"></a>  scoped_allocator_adaptor::outer_allocator
+## <a name="outer_allocator"></a> scoped_allocator_adaptor::outer_allocator
 
 Retrieves a reference to the stored object of type `outer_allocator_type`.
 
@@ -273,7 +273,7 @@ const outer_allocator_type& outer_allocator() const noexcept;
 
 A reference to the stored object of type `outer_allocator_type`.
 
-## <a name="rebind_struct"></a>  scoped_allocator_adaptor::rebind Struct
+## <a name="rebind_struct"></a> scoped_allocator_adaptor::rebind Struct
 
 Defines the type `Outer::rebind\<Other>::other` as a synonym for `scoped_allocator_adaptor\<Other, Inner...>`.
 
@@ -283,7 +283,7 @@ struct rebind{
    typedef scoped_allocator_adaptor\<Other_alloc, Inner...> other;
    };
 
-## <a name="scoped_allocator_adaptor"></a>  scoped_allocator_adaptor::scoped_allocator_adaptor Constructor
+## <a name="scoped_allocator_adaptor"></a> scoped_allocator_adaptor::scoped_allocator_adaptor Constructor
 
 Constructs a `scoped_allocator_adaptor` object. Also includes a destructor.
 
@@ -319,7 +319,7 @@ A list of allocators to be used as the inner allocators.
 
 The first constructor default constructs its stored allocator objects. Each of the next three constructors constructs its stored allocator objects from the corresponding objects in *right*. The last constructor constructs its stored allocator objects from the corresponding arguments in the argument list.
 
-## <a name="select_on_container_copy_construction"></a>  scoped_allocator_adaptor::select_on_container_copy_construction
+## <a name="select_on_container_copy_construction"></a> scoped_allocator_adaptor::select_on_container_copy_construction
 
 Creates a new `scoped_allocator_adaptor` object with each stored allocator object initialized by calling `select_on_container_copy_construction` for each corresponding allocator.
 

@@ -23,7 +23,7 @@ Functions returning an integer or pointer with the same size as an `int` are not
 
 To comply with the ANSI C standard, old-style function declarations using an ellipsis now generate an error when compiling with the /Za option and a level 4 warning when compiling with /Ze. For example:
 
-```
+```cpp
 void funct1( a, ... )  /* Generates a warning under /Ze or */
 int a;                 /* an error when compiling with /Za */
 {
@@ -32,7 +32,7 @@ int a;                 /* an error when compiling with /Za */
 
 You should rewrite this declaration as a prototype:
 
-```
+```cpp
 void funct1( int a, ... )
 {
 }

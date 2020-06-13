@@ -33,13 +33,13 @@ It is rare that you want to set the module state and then not set it back. Most 
 
 1. The DLL is loaded by OLE using `LoadLibrary`.
 
-2. `RawDllMain` is called first. It sets the module state to the known static module state for the DLL. For this reason `RawDllMain` is statically linked to the DLL.
+1. `RawDllMain` is called first. It sets the module state to the known static module state for the DLL. For this reason `RawDllMain` is statically linked to the DLL.
 
 1. The constructor for the class factory associated with our object is called. `COleObjectFactory` is derived from `CCmdTarget` and as a result, it remembers in which module state it was instantiated. This is important — when the class factory is asked to create objects, it knows now what module state to make current.
 
-4. `DllGetClassObject` is called to obtain the class factory. MFC searches the class factory list associated with this module and returns it.
+1. `DllGetClassObject` is called to obtain the class factory. MFC searches the class factory list associated with this module and returns it.
 
-5. `COleObjectFactory::XClassFactory2::CreateInstance` is called. Before creating the object and returning it, this function sets the module state to the module state that was current in step 3 (the one that was current when the `COleObjectFactory` was instantiated). This is done inside of [METHOD_PROLOGUE](com-interface-entry-points.md).
+1. `COleObjectFactory::XClassFactory2::CreateInstance` is called. Before creating the object and returning it, this function sets the module state to the module state that was current in step 3 (the one that was current when the `COleObjectFactory` was instantiated). This is done inside of [METHOD_PROLOGUE](com-interface-entry-points.md).
 
 1. When the object is created, it too is a `CCmdTarget` derivative and in the same way `COleObjectFactory` remembered which module state was active, so does this new object. Now the object knows which module state to switch to whenever it is called.
 

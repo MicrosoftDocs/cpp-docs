@@ -11,7 +11,7 @@ Contains type information used to describe a method or property on a dispinterfa
 
 ## Syntax
 
-```
+```cpp
 struct _ATL_FUNC_INFO {
     CALLCONV cc;
     VARTYPE vtReturn;

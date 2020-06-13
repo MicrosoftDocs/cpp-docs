@@ -42,7 +42,7 @@ A view object defines a subset of the rows and columns from a rowset. It has no 
 
 Only OLE DB uses the concept of accessors. An accessor describes how data is stored in a consumer. It has a set of bindings (called a column map) between rowset fields (columns) and data members that you declare in the consumer.
 
-##  <a name="vcconoledbcomponents_transactions"></a> Transactions
+## <a name="vcconoledbcomponents_transactions"></a> Transactions
 
 Transaction objects are used when committing or aborting nested transactions at other than the lowest level. A transaction is an indivisible work unit defined by the ACID test. ACID stands for:
 

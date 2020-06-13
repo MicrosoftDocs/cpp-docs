@@ -9,7 +9,7 @@ ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
 This article discusses the state data of MFC modules and how this state is updated when the flow of execution (the path code takes through an application when executing) enters and leaves a module. Switching module states with the AFX_MANAGE_STATE and METHOD_PROLOGUE macros is also discussed.
 
 > [!NOTE]
->  The term "module" here refers to an executable program, or to a DLL (or set of DLLs) that operate independently of the rest of the application, but uses a shared copy of the MFC DLL. An ActiveX control is a typical example of a module.
+> The term "module" here refers to an executable program, or to a DLL (or set of DLLs) that operate independently of the rest of the application, but uses a shared copy of the MFC DLL. An ActiveX control is a typical example of a module.
 
 As shown in the following figure, MFC has state data for each module used in an application. Examples of this data include Windows instance handles (used for loading resources), pointers to the current `CWinApp` and `CWinThread` objects of an application, OLE module reference counts, and a variety of maps that maintain the connections between Windows object handles and corresponding instances of MFC objects. However, when an application uses multiple modules, the state data of each module is not application wide. Rather, each module has its own private copy of the MFC's state data.
 
@@ -23,12 +23,12 @@ State Data of Multiple Modules
 
 In other words, each module is responsible for correctly switching between module states at all of its entry points. An "entry point" is any place where the flow of execution can enter the module's code. Entry points include:
 
-- [Exported functions in a DLL](../mfc/exported-dll-function-entry-points.md)
+- [Exported functions in a DLL](exported-dll-function-entry-points.md)
 
-- [Member functions of COM interfaces](../mfc/com-interface-entry-points.md)
+- [Member functions of COM interfaces](com-interface-entry-points.md)
 
-- [Window procedures](../mfc/window-procedure-entry-points.md)
+- [Window procedures](window-procedure-entry-points.md)
 
 ## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)
+[General MFC Topics](general-mfc-topics.md)

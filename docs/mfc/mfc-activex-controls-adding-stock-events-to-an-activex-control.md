@@ -7,9 +7,9 @@ ms.assetid: 3eeadc67-4b3d-4444-8caa-53054073988a
 ---
 # MFC ActiveX Controls: Adding Stock Events to an ActiveX Control
 
-Stock events differ from custom events in that they are automatically fired by class [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` contains predefined member functions that fire events resulting from common actions. Some common actions implemented by `COleControl` include single- and double-clicks on the control, keyboard events, and changes in the state of the mouse buttons. Event map entries for stock events are always preceded by the EVENT_STOCK prefix.
+Stock events differ from custom events in that they are automatically fired by class [COleControl](reference/colecontrol-class.md). `COleControl` contains predefined member functions that fire events resulting from common actions. Some common actions implemented by `COleControl` include single- and double-clicks on the control, keyboard events, and changes in the state of the mouse buttons. Event map entries for stock events are always preceded by the EVENT_STOCK prefix.
 
-##  <a name="_core_stock_events_supported_by_classwizard"></a> Stock Events Supported by the Add Event Wizard
+## <a name="_core_stock_events_supported_by_classwizard"></a> Stock Events Supported by the Add Event Wizard
 
 The `COleControl` class provides ten stock events, listed in the following table. You can specify the events you want in your control using the [Add Event Wizard](../ide/add-event-wizard.md).
 
@@ -28,9 +28,9 @@ The `COleControl` class provides ten stock events, listed in the following table
 |MouseUp|**void FireMouseUp( short**  `nButton` **, short**  `nShiftState` **, float**  *x* **, float**  *y*  **)**|Fired if any **BUTTONUP** (left, middle, or right) is received. The mouse capture is released before this event is fired.<br /><br /> Event map entry: **EVENT_STOCK_MOUSEUP( )**|
 |ReadyStateChange|**void FireReadyStateChange( )**|Fired when a control transitions to the next ready state due to the amount of data received.<br /><br /> Event map entry: **EVENT_STOCK_READYSTATECHANGE( )**|
 
-##  <a name="_core_adding_a_stock_event_using_classwizard"></a> Adding a Stock Event Using the Add Event Wizard
+## <a name="_core_adding_a_stock_event_using_classwizard"></a> Adding a Stock Event Using the Add Event Wizard
 
-Adding stock events requires less work than adding custom events because the firing of the actual event is handled automatically by the base class, `COleControl`. The following procedure adds a stock event to a control that was developed using [MFC ActiveX Control Wizard](../mfc/reference/mfc-activex-control-wizard.md). The event, called KeyPress, fires when a key is pressed and the control is active. This procedure can also be used to add other stock events. Substitute the selected stock event name for KeyPress.
+Adding stock events requires less work than adding custom events because the firing of the actual event is handled automatically by the base class, `COleControl`. The following procedure adds a stock event to a control that was developed using [MFC ActiveX Control Wizard](reference/mfc-activex-control-wizard.md). The event, called KeyPress, fires when a key is pressed and the control is active. This procedure can also be used to add other stock events. Substitute the selected stock event name for KeyPress.
 
 #### To add the KeyPress stock event using the Add Event Wizard
 
@@ -46,22 +46,22 @@ Adding stock events requires less work than adding custom events because the fir
 
 1. Click **Finish**.
 
-##  <a name="_core_classwizard_changes_for_stock_events"></a> Add Event Wizard Changes for Stock Events
+## <a name="_core_classwizard_changes_for_stock_events"></a> Add Event Wizard Changes for Stock Events
 
 Because stock events are handled by the control's base class, the Add Event Wizard does not change your class declaration in any way. It adds the event to the control's event map and makes an entry in its .IDL file. The following line is added to the control's event map, located in the control class implementation (.CPP) file:
 
-[!code-cpp[NVC_MFC_AxUI#5](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_1.cpp)]
+[!code-cpp[NVC_MFC_AxUI#5](codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_1.cpp)]
 
 Adding this code fires a KeyPress event when a WM_CHAR message is received and the control is active. The KeyPress event can be fired at other times by calling its firing function (for example, `FireKeyPress`) from within the control code.
 
 The Add Event Wizard adds the following line of code to the control's .IDL file:
 
-[!code-cpp[NVC_MFC_AxUI#6](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_2.idl)]
+[!code-cpp[NVC_MFC_AxUI#6](codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_2.idl)]
 
 This line associates the KeyPress event with its standard dispatch ID and allows the container to anticipate the KeyPress event.
 
 ## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)<br/>
-[COleControl Class](../mfc/reference/colecontrol-class.md)
+[MFC ActiveX Controls](mfc-activex-controls.md)<br/>
+[MFC ActiveX Controls: Methods](mfc-activex-controls-methods.md)<br/>
+[COleControl Class](reference/colecontrol-class.md)

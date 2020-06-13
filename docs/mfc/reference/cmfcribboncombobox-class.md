@@ -11,7 +11,7 @@ The `CMFCRibbonComboBox` class implements a combo box control that you can add t
 
 ## Syntax
 
-```
+```cpp
 class CMFCRibbonComboBox : public CMFCRibbonEdit
 ```
 
@@ -70,11 +70,11 @@ The following example demonstrates how to construct an object of the `CMFCRibbon
 
 **Header:** afxribboncombobox.h
 
-##  <a name="additem"></a>  CMFCRibbonComboBox::AddItem
+## <a name="additem"></a> CMFCRibbonComboBox::AddItem
 
 Appends a unique item to the list box.
 
-```
+```cpp
 virtual INT_PTR AddItem(
     LPCTSTR lpszItem,
     DWORD_PTR dwData=0);
@@ -92,11 +92,11 @@ virtual INT_PTR AddItem(
 
 The zero-based index of the appended item.
 
-##  <a name="cmfcribboncombobox"></a>  CMFCRibbonComboBox::CMFCRibbonComboBox
+## <a name="cmfcribboncombobox"></a> CMFCRibbonComboBox::CMFCRibbonComboBox
 
 Constructs a `CMFCRibbonComboBox` object.
 
-```
+```cpp
 public:
 CMFCRibbonComboBox(
     UINT nID,
@@ -130,11 +130,11 @@ CMFCRibbonComboBox();
 
 The default width is 108 pixels.
 
-##  <a name="deleteitem"></a>  CMFCRibbonComboBox::DeleteItem
+## <a name="deleteitem"></a> CMFCRibbonComboBox::DeleteItem
 
 Deletes a specified item from the list box.
 
-```
+```cpp
 BOOL DeleteItem(int iIndex);
 BOOL DeleteItem(DWORD_PTR dwData);
 
@@ -158,11 +158,11 @@ TRUE if the specified item has been deleted; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="enabledropdownlistresize"></a>  CMFCRibbonComboBox::EnableDropDownListResize
+## <a name="enabledropdownlistresize"></a> CMFCRibbonComboBox::EnableDropDownListResize
 
 Specifies whether the list box can change size when it drops down.
 
-```
+```cpp
 void EnableDropDownListResize(BOOL bEnable=FALSE);
 ```
 
@@ -175,11 +175,11 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
 
 When resizing is enabled, the list box will change size to fit the items it displays.
 
-##  <a name="finditem"></a>  CMFCRibbonComboBox::FindItem
+## <a name="finditem"></a> CMFCRibbonComboBox::FindItem
 
 Returns the index of the first item in the list box that matches a specified string.
 
-```
+```cpp
 int FindItem(LPCTSTR lpszText) const;
 ```
 
@@ -194,11 +194,11 @@ The zero-based index of the item; or -1 if the item is not found.
 
 ### Remarks
 
-##  <a name="getcount"></a>  CMFCRibbonComboBox::GetCount
+## <a name="getcount"></a> CMFCRibbonComboBox::GetCount
 
 Returns the number of items in the list box.
 
-```
+```cpp
 INT_PTR GetCount() const;
 ```
 
@@ -208,11 +208,11 @@ The number of items in the list box, or 0 if the list box contains no items.
 
 ### Remarks
 
-##  <a name="getcursel"></a>  CMFCRibbonComboBox::GetCurSel
+## <a name="getcursel"></a> CMFCRibbonComboBox::GetCurSel
 
 Gets the index of the currently selected item in the list box.
 
-```
+```cpp
 int GetCurSel() const;
 ```
 
@@ -220,11 +220,11 @@ int GetCurSel() const;
 
 The zero-based index of the currently selected item in the list box; or -1 if no item is selected.
 
-##  <a name="getdropdownheight"></a>  CMFCRibbonComboBox::GetDropDownHeight
+## <a name="getdropdownheight"></a> CMFCRibbonComboBox::GetDropDownHeight
 
 Gets the height of the list box when the list box is dropped down.
 
-```
+```cpp
 int GetDropDownHeight();
 ```
 
@@ -234,11 +234,11 @@ The height, in pixels, of the list box.
 
 ### Remarks
 
-##  <a name="getintermediatesize"></a>  CMFCRibbonComboBox::GetIntermediateSize
+## <a name="getintermediatesize"></a> CMFCRibbonComboBox::GetIntermediateSize
 
 Returns the size of the combo box as displayed in intermediate mode.
 
-```
+```cpp
 virtual CSize GetIntermediateSize(CDC* pDC);
 ```
 
@@ -255,11 +255,11 @@ The size of the combo box.
 
 The size returned is based on the size of the combo box when it displays small images.
 
-##  <a name="getitem"></a>  CMFCRibbonComboBox::GetItem
+## <a name="getitem"></a> CMFCRibbonComboBox::GetItem
 
 Returns the string associated with an item at a specified index in the list box.
 
-```
+```cpp
 LPCTSTR GetItem(int iIndex) const;
 ```
 
@@ -274,11 +274,11 @@ A pointer to the string that is associated with the item; otherwise, NULL if the
 
 ### Remarks
 
-##  <a name="getitemdata"></a>  CMFCRibbonComboBox::GetItemData
+## <a name="getitemdata"></a> CMFCRibbonComboBox::GetItemData
 
 Returns the data associated with an item at a specified index in the list box.
 
-```
+```cpp
 DWORD_PTR GetItemData(int iIndex) const;
 ```
 
@@ -291,11 +291,11 @@ DWORD_PTR GetItemData(int iIndex) const;
 
 The data associated with the item; or 0 if the item does not exist, or if the index parameter is -1 and there is no selected item in the list box.
 
-##  <a name="haseditbox"></a>  CMFCRibbonComboBox::HasEditBox
+## <a name="haseditbox"></a> CMFCRibbonComboBox::HasEditBox
 
 Indicates whether the control contains an edit box.
 
-```
+```cpp
 BOOL HasEditBox() const;
 ```
 
@@ -305,11 +305,11 @@ TRUE if the control contains an edit box; otherwise, FALSE.
 
 ### Remarks
 
-##  <a name="isresizedropdownlist"></a>  CMFCRibbonComboBox::IsResizeDropDownList
+## <a name="isresizedropdownlist"></a> CMFCRibbonComboBox::IsResizeDropDownList
 
 Indicates whether or not the list box can be resized.
 
-```
+```cpp
 BOOL IsResizeDropDownList() const;
 ```
 
@@ -321,11 +321,11 @@ TRUE if the list box can be resized; otherwise FALSE. [CMFCRibbonComboBox::Enabl
 
 You can enable list box resizing by using the [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize) method.
 
-##  <a name="onselectitem"></a>  CMFCRibbonComboBox::OnSelectItem
+## <a name="onselectitem"></a> CMFCRibbonComboBox::OnSelectItem
 
 Called by the framework when a user selects an item in the list box.
 
-```
+```cpp
 virtual void OnSelectItem(int nItem);
 ```
 
@@ -338,21 +338,21 @@ virtual void OnSelectItem(int nItem);
 
 Override this method if you want to process a user input selection.
 
-##  <a name="removeallitems"></a>  CMFCRibbonComboBox::RemoveAllItems
+## <a name="removeallitems"></a> CMFCRibbonComboBox::RemoveAllItems
 
 Deletes all items from the list box and clears the edit box.
 
-```
+```cpp
 void RemoveAllItems();
 ```
 
 ### Remarks
 
-##  <a name="selectitem"></a>  CMFCRibbonComboBox::SelectItem
+## <a name="selectitem"></a> CMFCRibbonComboBox::SelectItem
 
 Selects an item in the list box.
 
-```
+```cpp
 BOOL SelectItem(int iIndex);
 BOOL SelectItem(DWORD_PTR dwData);
 
@@ -376,11 +376,11 @@ TRUE if the method was successful; otherwise FALSE.
 
 ### Remarks
 
-##  <a name="setdropdownheight"></a>  CMFCRibbonComboBox::SetDropDownHeight
+## <a name="setdropdownheight"></a> CMFCRibbonComboBox::SetDropDownHeight
 
 Sets the height of the list box when it is dropped down.
 
-```
+```cpp
 void SetDropDownHeight(int nHeight);
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "exception Class"
 ms.date: "11/04/2016"
-f1_keywords: ["exception"]
+f1_keywords: ["exception/std::exception"]
 helpviewer_keywords: ["exception class"]
 ms.assetid: 4f181f67-5888-4b50-89a6-745091ffb2fe
 ---

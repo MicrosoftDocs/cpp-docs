@@ -14,7 +14,7 @@ This **__declspec** attribute tells the compiler that a function does not return
 If the compiler finds a function with a control path that does not return a value, it generates a warning (C4715) or error message (C2202). If the control path cannot be reached due to a function that never returns, you can use **__declspec(noreturn)** to prevent this warning or error.
 
 > [!NOTE]
->  Adding **__declspec(noreturn)** to a function that is expected to return can result in undefined behavior.
+> Adding **__declspec(noreturn)** to a function that is expected to return can result in undefined behavior.
 
 ## Example
 

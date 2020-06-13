@@ -21,7 +21,7 @@ The following graphic illustrates the relationship between your DLL, the DHTML c
 ![Elements of a DHTML control project](../atl/media/vc52en1.gif "Elements of a DHTML control project")
 
 > [!NOTE]
->  The names on this graphic are placeholders. The names of your HTML resource and the interfaces exposed on your control are based on the names you assign them in the ATL Control Wizard.
+> The names on this graphic are placeholders. The names of your HTML resource and the interfaces exposed on your control are based on the names you assign them in the ATL Control Wizard.
 
 In this graphic, the elements are:
 
@@ -29,9 +29,9 @@ In this graphic, the elements are:
 
 - **DHTML Control** (`m_spBrowser`)   The DHTML control, created using the ATL Object Wizard. This control accesses the Web browser object and its methods through the Web browser object's interface, `IWebBrowser2`. The control itself exposes the following two interfaces, in addition to the other standard interfaces required for a control.
 
-   - `IDHCTL1` The interface exposed by the control for use only by the container.
+  - `IDHCTL1` The interface exposed by the control for use only by the container.
 
-   - `IDHCTLUI1` The dispatch interface for communicating between the C++ code and the HTML user interface. The Web browser uses the control's dispatch interface to display the control. You can call various methods of this dispatch interface from the control's user interface by invoking `window.external`, followed by the method name on this dispatch interface that you want to invoke. You would access `window.external` from a SCRIPT tag within the HTML that makes up the UI for this control. For more information about invoking external methods in the resource file, see [Calling C++ Code from DHTML](../atl/calling-cpp-code-from-dhtml.md).
+  - `IDHCTLUI1` The dispatch interface for communicating between the C++ code and the HTML user interface. The Web browser uses the control's dispatch interface to display the control. You can call various methods of this dispatch interface from the control's user interface by invoking `window.external`, followed by the method name on this dispatch interface that you want to invoke. You would access `window.external` from a SCRIPT tag within the HTML that makes up the UI for this control. For more information about invoking external methods in the resource file, see [Calling C++ Code from DHTML](../atl/calling-cpp-code-from-dhtml.md).
 
 - **IDR_CTL1** The resource ID of the HTML resource. Its file name, in this case, is DHCTL1UI.htm. The DHTML control uses an HTML resource that contains standard HTML tags and external window dispatch commands that you can edit using the Text editor.
 

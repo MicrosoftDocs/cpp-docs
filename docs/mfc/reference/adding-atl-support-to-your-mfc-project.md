@@ -10,7 +10,7 @@ ms.assetid: b5fe15d6-7752-4818-b9f9-62482ad35c95
 If you have already created an MFC-based application, then you can add support for the Active Template Library (ATL) easily by using the IDE.
 
 > [!NOTE]
->  This support applies only to simple COM objects added to an MFC executable or DLL project. You can add other COM objects (including ActiveX controls) to MFC projects, but the objects might not operate as expected.
+> This support applies only to simple COM objects added to an MFC executable or DLL project. You can add other COM objects (including ActiveX controls) to MFC projects, but the objects might not operate as expected.
 
 ::: moniker range=">=vs-2019"
 

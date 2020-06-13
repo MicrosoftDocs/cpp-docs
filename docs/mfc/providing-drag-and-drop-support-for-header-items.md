@@ -11,7 +11,7 @@ To provide drag-and-drop support for header items, specify the HDS_DRAGDROP styl
 As with common drag-and-drop functionality, you can extend the default drag-and-drop behavior by handling the HDN_BEGINDRAG and HDN_ENDDRAG notifications. You can also customize the appearance of the drag image by overriding the [CHeaderCtrl::CreateDragImage](../mfc/reference/cheaderctrl-class.md#createdragimage) member function.
 
 > [!NOTE]
->  If you are providing drag-and-drop support for an embedded header control in a list control, see the Extended Style section in the [Changing List Control Styles](../mfc/changing-list-control-styles.md) topic.
+> If you are providing drag-and-drop support for an embedded header control in a list control, see the Extended Style section in the [Changing List Control Styles](../mfc/changing-list-control-styles.md) topic.
 
 ## See also
 

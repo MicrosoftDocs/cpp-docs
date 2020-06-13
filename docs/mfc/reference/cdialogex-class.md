@@ -55,7 +55,7 @@ A `CDialogEx` object can be a parent of a [CMFCPopupMenu Class](../../mfc/refere
 
 **Header:** afxdialogex.h
 
-##  <a name="cdialogex"></a>  CDialogEx::CDialogEx
+## <a name="cdialogex"></a> CDialogEx::CDialogEx
 
 Constructs a `CDialogEx` object.
 
@@ -87,11 +87,11 @@ CDialogEx(
 
 ### Remarks
 
-##  <a name="setbackgroundcolor"></a>  CDialogEx::SetBackgroundColor
+## <a name="setbackgroundcolor"></a> CDialogEx::SetBackgroundColor
 
 Sets the background color of the dialog box.
 
-```
+```cpp
 void SetBackgroundColor(
     COLORREF color,
     BOOL bRepaint=TRUE);
@@ -107,11 +107,11 @@ void SetBackgroundColor(
 
 ### Remarks
 
-##  <a name="setbackgroundimage"></a>  CDialogEx::SetBackgroundImage
+## <a name="setbackgroundimage"></a> CDialogEx::SetBackgroundImage
 
 Sets the background image of the dialog box.
 
-```
+```cpp
 void SetBackgroundImage(
     HBITMAP hBitmap,
     BackgroundLocation location=BACKGR_TILE,

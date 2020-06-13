@@ -59,7 +59,7 @@ The following classes encapsulate the functionality of the Windows common dialog
 
 **Header:** afxdlgs.h
 
-##  <a name="ccommondialog"></a>  CCommonDialog::CCommonDialog
+## <a name="ccommondialog"></a> CCommonDialog::CCommonDialog
 
 Constructs a `CCommonDialog` object.
 

@@ -52,7 +52,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="inargtype"></a>  CPrimitiveElementTraits::INARGTYPE
+## <a name="inargtype"></a> CPrimitiveElementTraits::INARGTYPE
 
 The data type to use for adding elements to the collection class object.
 
@@ -60,7 +60,7 @@ The data type to use for adding elements to the collection class object.
 typedef T INARGTYPE;
 ```
 
-##  <a name="outargtype"></a>  CPrimitiveElementTraits::OUTARGTYPE
+## <a name="outargtype"></a> CPrimitiveElementTraits::OUTARGTYPE
 
 The data type to use for retrieving elements from the collection class object.
 

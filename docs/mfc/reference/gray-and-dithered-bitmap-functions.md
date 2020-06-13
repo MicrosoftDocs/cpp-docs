@@ -29,11 +29,11 @@ MFC also provides two functions for replacing a bitmap's background with a dithe
 |[AfxDrawDitheredBitmap](#afxdrawditheredbitmap)|Draws a bitmap with a dithered background.|
 |[AfxGetDitheredBitmap](#afxgetditheredbitmap)|Copies a bitmap with a dithered background.|
 
-##  <a name="afxdrawgraybitmap"></a>  AfxDrawGrayBitmap
+## <a name="afxdrawgraybitmap"></a> AfxDrawGrayBitmap
 
 Draws a gray version of a bitmap.
 
-```
+```cpp
 void AFXAPI AfxDrawGrayBitmap(
     CDC* pDC,
     int x,
@@ -73,11 +73,11 @@ A bitmap drawn with `AfxDrawGrayBitmap` will have the appearance of a disabled c
 
 **Header:** afxwin.h
 
-##  <a name="afxgetgraybitmap"></a>  AfxGetGrayBitmap
+## <a name="afxgetgraybitmap"></a> AfxGetGrayBitmap
 
 Copies a gray version of a bitmap.
 
-```
+```cpp
 void AFXAPI AfxGetGrayBitmap(
     const CBitmap& rSrc,
     CBitmap* pDest,
@@ -109,11 +109,11 @@ A bitmap copied with `AfxGetGrayBitmap` will have the appearance of a disabled c
 
 **Header:** afxwin.h
 
-##  <a name="afxdrawditheredbitmap"></a>  AfxDrawDitheredBitmap
+## <a name="afxdrawditheredbitmap"></a> AfxDrawDitheredBitmap
 
 Draws a bitmap, replacing its background with a dithered (checker) pattern.
 
-```
+```cpp
 void AFXAPI AfxDrawDitheredBitmap(
     CDC* pDC,
     int x,
@@ -157,11 +157,11 @@ The source bitmap is drawn on the destination DC with a two-color (*cr1* and *cr
 
 **Header:** afxwin.h
 
-##  <a name="afxgetditheredbitmap"></a>  AfxGetDitheredBitmap
+## <a name="afxgetditheredbitmap"></a> AfxGetDitheredBitmap
 
 Copies a bitmap, replacing its background with a dithered (checker) pattern.
 
-```
+```cpp
 void AFXAPI AfxGetDitheredBitmap(
     const CBitmap& rSrc,
     CBitmap* pDest,

@@ -13,7 +13,6 @@ Shows you the structure of the container headers in the C++ Standard Library.
 
 ## Syntax
 
-```
-
+```cpp
 #include <sample container> // Nonfunctional header
 ```

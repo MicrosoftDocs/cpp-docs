@@ -466,9 +466,9 @@ Like other C++ libraries, you can use C++ AMP in your UWP apps. These articles d
 
 - [Bing Maps Trip Optimizer, a Window Store app in JavaScript and C++](https://go.microsoft.com/fwlink/p/?linkid=249078)
 
-- [How to use C++ AMP from C# using the Windows Runtime](https://go.microsoft.com/fwlink/p/?linkid=249080)
+- [How to use C++ AMP from C# using the Windows Runtime](https://devblogs.microsoft.com/pfxteam/how-to-use-c-amp-from-c-using-winrt/)
 
-- [How to use C++ AMP from C#](https://go.microsoft.com/fwlink/p/?linkid=249081)
+- [How to use C++ AMP from C#](https://devblogs.microsoft.com/pfxteam/how-to-use-c-amp-from-c/)
 
 - [Calling Native Functions from Managed Code](../../dotnet/calling-native-functions-from-managed-code.md)
 

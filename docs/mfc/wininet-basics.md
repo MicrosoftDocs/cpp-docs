@@ -24,19 +24,19 @@ The code excerpts below demonstrate how to create a simple browser, download a W
 
 For additional information on WinInet, see [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md).
 
-##  <a name="_core_create_a_very_simple_browser"></a> Create a Very Simple Browser
+## <a name="_core_create_a_very_simple_browser"></a> Create a Very Simple Browser
 
 [!code-cpp[NVC_MFCWinInet#1](../mfc/codesnippet/cpp/wininet-basics_1.cpp)]
 
-##  <a name="_core_download_a_web_page"></a> Download a Web Page
+## <a name="_core_download_a_web_page"></a> Download a Web Page
 
 [!code-cpp[NVC_MFCWinInet#2](../mfc/codesnippet/cpp/wininet-basics_2.cpp)]
 
-##  <a name="_core_ftp_a_file"></a> FTP a File
+## <a name="_core_ftp_a_file"></a> FTP a File
 
 [!code-cpp[NVC_MFCWinInet#3](../mfc/codesnippet/cpp/wininet-basics_3.cpp)]
 
-##  <a name="_core_retrieve_a_gopher_directory"></a> Retrieve a Gopher Directory
+## <a name="_core_retrieve_a_gopher_directory"></a> Retrieve a Gopher Directory
 
 [!code-cpp[NVC_MFCWinInet#4](../mfc/codesnippet/cpp/wininet-basics_4.cpp)]
 
@@ -50,7 +50,7 @@ The context assigned to a particular Internet object is used only to identify th
 
 When you create a `CInternetSession` object, you can specify a *dwContext* parameter to the constructor. `CInternetSession` itself doesn't use the context ID; instead, it passes the context ID on to any **InternetConnection**-derived objects that don't explicitly get a context ID of their own. In turn, those `CInternetConnection` objects will pass the context ID along to `CInternetFile` objects they create if you don't explicitly specify a different context ID. If, on the other hand, you do specify a specific context ID of your own, the object and any work it does will be associated with that context ID. You can use the context IDs to identify what status information is being given to you in your `OnStatusCallback` function.
 
-##  <a name="_core_display_progress_information_while_transferring_files"></a> Display Progress Information While Transferring Files
+## <a name="_core_display_progress_information_while_transferring_files"></a> Display Progress Information While Transferring Files
 
 For example, if you write an application that creates a connection with an FTP server to read a file and also connects to an HTTP server to get a Web page, you'll have a `CInternetSession` object, two `CInternetConnection` objects (one would be a `CFtpSession` and the other would be a `CHttpSession`), and two `CInternetFile` objects (one for each connection). If you used default values for the *dwContext* parameters, you would not be able to distinguish between the `OnStatusCallback` invocations that indicate progress for the FTP connection and the invocations that indicate progress for the HTTP connection. If you specify a *dwContext* ID, which you can later test for in `OnStatusCallback`, you will know which operation generated the callback.
 

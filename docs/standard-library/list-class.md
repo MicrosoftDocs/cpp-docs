@@ -1589,7 +1589,8 @@ After deleting the element at the beginning of the list, the first element is: 2
 Adds an element to the end of a list.
 
 ```cpp
-void push_back(void push_back(Type&& val);
+void push_back(const Type& val);
+void push_back(Type&& val);
 ```
 
 ### Parameters

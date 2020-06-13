@@ -12,7 +12,7 @@ The memory window does not interpret bytes of data as MBCS characters, even thou
 
 Visual C++ accepts double-byte characters wherever it is appropriate to do so. This includes path names and file names in dialog boxes and text entries in the Visual C++ resource editor (for example, static text in the dialog editor and static text entries in the icon editor). In addition, the preprocessor recognizes some double-byte directives — for example, file names in `#include` statements, and as arguments to the `code_seg` and `data_seg` pragmas. In the source code editor, double-byte characters in comments and string literals are accepted, although not in C/C++ language elements (such as variable names).
 
-##  <a name="_core_support_for_the_input_method_editor_.28.ime.29"></a> Support for the Input Method Editor (IME)
+## <a name="_core_support_for_the_input_method_editor_.28.ime.29"></a> Support for the Input Method Editor (IME)
 
 Applications written for East Asian markets that use MBCS (for example, Japan) normally support the Windows IME for entering both single- and double-byte characters. The Visual C++ development environment contains full support for the IME.
 

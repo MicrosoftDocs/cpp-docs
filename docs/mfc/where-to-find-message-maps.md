@@ -15,7 +15,7 @@ A class's message map is located in the .CPP file for the class. Working with th
 The message map consists of a collection of macros. Two macros, [BEGIN_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_message_map) and [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map), bracket the message map. Other macros, such as `ON_COMMAND`, fill in the message map's contents.
 
 > [!NOTE]
->  The message-map macros are not followed by semicolons.
+> The message-map macros are not followed by semicolons.
 
 When you use the Add Class wizard to create a new class, it provides a message map for the class. Alternatively, you can create a message map manually using the source code editor.
 

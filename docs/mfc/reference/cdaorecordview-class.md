@@ -37,7 +37,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 The view is a form view directly connected to a `CDaoRecordset` object. The view is created from a dialog template resource and displays the fields of the `CDaoRecordset` object in the dialog template's controls. The `CDaoRecordView` object uses dialog data exchange (DDX) and DAO record field exchange (DFX) to automate the movement of data between the controls on the form and the fields of the recordset. `CDaoRecordView` also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently in view.
 
 > [!NOTE]
->  The DAO database classes are distinct from the MFC database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes; the DAO classes generally offer superior capabilities because they use the Microsoft Jet database engine.
+> The DAO database classes are distinct from the MFC database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes; the DAO classes generally offer superior capabilities because they use the Microsoft Jet database engine.
 
 The most common way to create your record view is with the Application Wizard. The Application Wizard creates both the record view class and its associated recordset class as part of your skeleton starter application.
 
@@ -71,7 +71,7 @@ For more information about declaring and using your record view and recordset cl
 
 **Header:** afxdao.h
 
-##  <a name="cdaorecordview"></a>  CDaoRecordView::CDaoRecordView
+## <a name="cdaorecordview"></a> CDaoRecordView::CDaoRecordView
 
 When you create an object of a type derived from `CDaoRecordView`, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.
 
@@ -93,16 +93,16 @@ Contains the ID number of a dialog template resource.
 You can either identify the resource by name (pass a string as the argument to the constructor) or by its ID (pass an unsigned integer as the argument). Using a resource ID is recommended.
 
 > [!NOTE]
->  Your derived class must supply its own constructor. In the constructor of your derived class, call the constructor `CDaoRecordView::CDaoRecordView` with the resource name or ID as an argument.
+> Your derived class must supply its own constructor. In the constructor of your derived class, call the constructor `CDaoRecordView::CDaoRecordView` with the resource name or ID as an argument.
 
 `CDaoRecordView::OnInitialUpdate` calls `CWnd::UpdateData`, which calls `CWnd::DoDataExchange`. This initial call to `DoDataExchange` connects `CDaoRecordView` controls (indirectly) to `CDaoRecordset` field data members created by ClassWizard. These data members cannot be used until after you call the base class `CFormView::OnInitialUpdate` member function.
 
 > [!NOTE]
->  If you use ClassWizard, the wizard defines an **enum** value `CDaoRecordView::IDD` in the class declaration and uses it in the member initialization list for the constructor.
+> If you use ClassWizard, the wizard defines an **enum** value `CDaoRecordView::IDD` in the class declaration and uses it in the member initialization list for the constructor.
 
 [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]
 
-##  <a name="isonfirstrecord"></a>  CDaoRecordView::IsOnFirstRecord
+## <a name="isonfirstrecord"></a> CDaoRecordView::IsOnFirstRecord
 
 Call this member function to determine whether the current record is the first record in the recordset object associated with this record view.
 
@@ -120,7 +120,7 @@ This function is useful for writing your own implementations of the default comm
 
 If the user moves to the first record, the framework disables any user interface objects (for example, menu items or toolbar buttons) you have for moving to the first or the previous record.
 
-##  <a name="isonlastrecord"></a>  CDaoRecordView::IsOnLastRecord
+## <a name="isonlastrecord"></a> CDaoRecordView::IsOnLastRecord
 
 Call this member function to determine whether the current record is the last record in the recordset object associated with this record view.
 
@@ -137,9 +137,9 @@ Nonzero if the current record is the last record in the recordset; otherwise 0.
 This function is useful for writing your own implementations of the default command update handlers that ClassWizard writes to support a user interface for moving from record to record.
 
 > [!CAUTION]
->  The result of this function is reliable except that the view may not be able to detect the end of the recordset until the user has moved past it. The user might have to move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly.
+> The result of this function is reliable except that the view may not be able to detect the end of the recordset until the user has moved past it. The user might have to move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly.
 
-##  <a name="ongetrecordset"></a>  CDaoRecordView::OnGetRecordset
+## <a name="ongetrecordset"></a> CDaoRecordView::OnGetRecordset
 
 Returns a pointer to the `CDaoRecordset`-derived object associated with the record view.
 
@@ -157,7 +157,7 @@ You must override this member function to construct or obtain a recordset object
 
 For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).
 
-##  <a name="onmove"></a>  CDaoRecordView::OnMove
+## <a name="onmove"></a> CDaoRecordView::OnMove
 
 Call this member function to move to a different record in the recordset and display its fields in the controls of the record view.
 
@@ -193,7 +193,7 @@ The Application Wizard creates a menu resource with First Record, Last Record, N
 If you move past the last record in the recordset, the record view continues to display the last record. If you move backward past the first record, the record view continues to display the first record.
 
 > [!CAUTION]
->  Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, or `OnUpdateRecordPrev` — before the corresponding move operation to determine whether the recordset has any records.
+> Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, or `OnUpdateRecordPrev` — before the corresponding move operation to determine whether the recordset has any records.
 
 ## See also
 

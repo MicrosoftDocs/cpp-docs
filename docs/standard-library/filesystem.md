@@ -2,7 +2,7 @@
 title: "&lt;filesystem&gt;"
 description: "Describes the classes, functions, and types in the filesystem header of the Standard C++ library."
 ms.date: "01/22/2020"
-f1_keywords: ["filesystem/std::experimental::filesystem::directory_entry", "filesystem/std::experimental::filesystem::recursive_directory_iterator", "filesystem/std::experimental::filesystem::path", "filesystem/std::experimental::filesystem::filesystem_error", "filesystem/std::experimental::filesystem::directory_iterator", "<filesystem>"]
+f1_keywords: ["<filesystem>"]
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
 no-loc: [filesystem, experimental, char, wchar_t, char16_t, char32_t]
 ---
@@ -19,7 +19,7 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> At the release of Visual Studio 2017, the \<filesystem> header was not yet a C++ standard. C++ in Visual Studio 2017 RTW implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf). Visual Studio 2017 version 15.7 and later supports the new C++17 \<filesystem> standard.
+> At the release of Visual Studio 2017, the \<filesystem> header was not yet a C++ standard. C++ in Visual Studio 2017 RTW implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](https://wg21.link/n4100). Visual Studio 2017 version 15.7 and later supports the new C++17 \<filesystem> standard.
 > This is a completely new implementation, incompatible with the previous `std::experimental` version. It was made necessary by symlink support, bug fixes, and changes in standard-required behavior. Currently, including \<filesystem> provides the new `std::filesystem` and the previous `std::experimental::filesystem`. Including \<experimental/filesystem> provides only the old experimental implementation. The experimental implementation will be removed in the next ABI-breaking release of the libraries.
 
 This header supports file systems for one of two broad classes of host operating systems: Microsoft Windows and POSIX.

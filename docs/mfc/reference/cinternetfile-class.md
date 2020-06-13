@@ -73,7 +73,7 @@ To learn more about how `CInternetFile` works with the other MFC Internet classe
 
 **Header:** afxinet.h
 
-##  <a name="abort"></a>  CInternetFile::Abort
+## <a name="abort"></a> CInternetFile::Abort
 
 Closes the file associated with this object and makes the file unavailable for reading or writing.
 
@@ -87,7 +87,7 @@ If you have not closed the file before destroying the object, the destructor clo
 
 When handling exceptions, `Abort` differs from [Close](#close) in two important ways. First, the `Abort` function does not throw an exception on failures because it ignores failures. Second, `Abort` does not **ASSERT** if the file has not been opened or was closed previously.
 
-##  <a name="cinternetfile"></a>  CInternetFile::CInternetFile
+## <a name="cinternetfile"></a> CInternetFile::CInternetFile
 
 This member function is called when a `CInternetFile` object is created.
 
@@ -134,7 +134,7 @@ The context identifier for the `CInternetFile` object. See [WinInet Basics](../.
 
 You never create a `CInternetFile` object directly. Instead, create an object of one of its derived classes by calling [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) or [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest). You also can create a `CInternetFile` object by calling [CFtpConnection::OpenFile](../../mfc/reference/cftpconnection-class.md#openfile).
 
-##  <a name="close"></a>  CInternetFile::Close
+## <a name="close"></a> CInternetFile::Close
 
 Closes a `CInternetFile` and frees any of its resources.
 
@@ -146,7 +146,7 @@ virtual void Close();
 
 If the file was opened for writing, there is an implicit call to [Flush](#flush) to assure that all buffered data is written to the host. You should call `Close` when you are finished using a file.
 
-##  <a name="flush"></a>  CInternetFile::Flush
+## <a name="flush"></a> CInternetFile::Flush
 
 Call this member function to flush the contents of the write buffer.
 
@@ -158,7 +158,7 @@ virtual void Flush();
 
 Use `Flush` to assure that all data in memory has actually been written to the target machine and to assure your transaction with the host machine has been completed. `Flush` is only effective on `CInternetFile` objects opened for writing.
 
-##  <a name="getlength"></a>  CInternetFile::GetLength
+## <a name="getlength"></a> CInternetFile::GetLength
 
 Returns the size of the file.
 
@@ -166,7 +166,7 @@ Returns the size of the file.
 virtual ULONGLONG GetLength() const;
 ```
 
-##  <a name="m_hfile"></a>  CInternetFile::m_hFile
+## <a name="m_hfile"></a> CInternetFile::m_hFile
 
 A handle to the file associated with this object.
 
@@ -174,7 +174,7 @@ A handle to the file associated with this object.
 HINTERNET m_hFile;
 ```
 
-##  <a name="operator_hinternet"></a>  CInternetFile::operator HINTERNET
+## <a name="operator_hinternet"></a> CInternetFile::operator HINTERNET
 
 Use this operator to get the Windows handle for the current Internet session.
 
@@ -182,7 +182,7 @@ Use this operator to get the Windows handle for the current Internet session.
 operator HINTERNET() const;
 ```
 
-##  <a name="read"></a>  CInternetFile::Read
+## <a name="read"></a> CInternetFile::Read
 
 Call this member function to read into the given memory, starting at *lpvBuf*, the specified number of bytes, *nCount*.
 
@@ -210,7 +210,7 @@ The function returns the number of bytes actually read — a number that may be 
 
 To ensure all data is retrieved, an application must continue to call the `CInternetFile::Read` method until the method returns zero.
 
-##  <a name="readstring"></a>  CInternetFile::ReadString
+## <a name="readstring"></a> CInternetFile::ReadString
 
 Call this member function to read a stream of characters until it finds a newline character.
 
@@ -245,7 +245,7 @@ The function places the resulting line into the memory referenced by the *pstr* 
 
 If you call `ReadString` without first calling [SetReadBufferSize](#setreadbuffersize), you will get a buffer of 4096 bytes.
 
-##  <a name="seek"></a>  CInternetFile::Seek
+## <a name="seek"></a> CInternetFile::Seek
 
 Call this member function to reposition the pointer in a previously opened file.
 
@@ -282,13 +282,13 @@ At this time, a call to this member function is only supported for data associat
 When a file is opened, the file pointer is at offset 0, the beginning of the file.
 
 > [!NOTE]
->  Using `Seek` may cause an implicit call to [Flush](#flush).
+> Using `Seek` may cause an implicit call to [Flush](#flush).
 
 ### Example
 
   See the example for the base class implementation ( [CFile::Seek](../../mfc/reference/cfile-class.md#seek)).
 
-##  <a name="setreadbuffersize"></a>  CInternetFile::SetReadBufferSize
+## <a name="setreadbuffersize"></a> CInternetFile::SetReadBufferSize
 
 Call this member function to set the size of the temporary read buffer used by a `CInternetFile`-derived object.
 
@@ -313,7 +313,7 @@ By default, a `CInternetFile` object does not provide any buffering for reading.
 
 You can increase the buffer size at any time, but shrinking the buffer will have no effect. If you call [ReadString](#readstring) without first calling `SetReadBufferSize`, you will get a buffer of 4096 bytes.
 
-##  <a name="setwritebuffersize"></a>  CInternetFile::SetWriteBufferSize
+## <a name="setwritebuffersize"></a> CInternetFile::SetWriteBufferSize
 
 Call this member function to set the size of the temporary write buffer used by a `CInternetFile`-derived object.
 
@@ -336,7 +336,7 @@ The underlying WinInet APIs don't perform buffering, so choose a buffer size tha
 
 By default, a `CInternetFile` object does not provide any buffering for writing. If you call this member function, you must be sure that the file has been opened for write access. You can change the size of the write buffer at any time, but doing so causes an implicit call to [Flush](#flush).
 
-##  <a name="write"></a>  CInternetFile::Write
+## <a name="write"></a> CInternetFile::Write
 
 Call this member function to write into the given memory, *lpvBuf*, the specified number of bytes, *nCount*.
 
@@ -358,7 +358,7 @@ Specifies the number of bytes to be written.
 
 If any error occurs while writing the data, the function throws a [CInternetException](../../mfc/reference/cinternetexception-class.md) object describing the error.
 
-##  <a name="writestring"></a>  CInternetFile::WriteString
+## <a name="writestring"></a> CInternetFile::WriteString
 
 This function writes a null-terminated string to the associated file.
 

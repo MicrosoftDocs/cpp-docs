@@ -13,7 +13,7 @@ Links a `_bstr_t` wrapper to a `BSTR`.
 
 ## Syntax
 
-```
+```cpp
 void Attach(
    BSTR s
 );

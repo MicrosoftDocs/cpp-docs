@@ -104,7 +104,7 @@ bool is_apartment_aware() const;
 
 **true** if the task unwraps an `IAsyncInfo` interface or is descended from such a task, **false** otherwise.
 
-## <a name="is_done"></a>  task::is_done Method (Concurrency Runtime)
+## <a name="is_done"></a> task::is_done Method (Concurrency Runtime)
 
 Determines if the task is completed.
 
@@ -179,7 +179,7 @@ The task to compare.
 
 **true** if the objects refer to the same underlying task, and **false** otherwise.
 
-## <a name="scheduler"></a>  task::scheduler Method (Concurrency Runtime)
+## <a name="scheduler"></a> task::scheduler Method (Concurrency Runtime)
 
 Returns the scheduler for this task
 

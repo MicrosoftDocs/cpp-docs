@@ -10,31 +10,31 @@ MFC provides the following classes and global functions for writing Internet cli
 
 ## Classes
 
-- [CInternetSession](../mfc/reference/cinternetsession-class.md)
+- [CInternetSession](reference/cinternetsession-class.md)
 
-- [CInternetConnection](../mfc/reference/cinternetconnection-class.md)
+- [CInternetConnection](reference/cinternetconnection-class.md)
 
-   - [CFtpConnection](../mfc/reference/cftpconnection-class.md)
+  - [CFtpConnection](reference/cftpconnection-class.md)
 
-   - [CGopherConnection](../mfc/reference/cgopherconnection-class.md)
+  - [CGopherConnection](reference/cgopherconnection-class.md)
 
-   - [CHttpConnection](../mfc/reference/chttpconnection-class.md)
+  - [CHttpConnection](reference/chttpconnection-class.md)
 
-- [CInternetFile](../mfc/reference/cinternetfile-class.md)
+- [CInternetFile](reference/cinternetfile-class.md)
 
-   - [CGopherFile](../mfc/reference/cgopherfile-class.md)
+  - [CGopherFile](reference/cgopherfile-class.md)
 
-   - [CHttpFile](../mfc/reference/chttpfile-class.md)
+  - [CHttpFile](reference/chttpfile-class.md)
 
-- [CFileFind](../mfc/reference/cfilefind-class.md)
+- [CFileFind](reference/cfilefind-class.md)
 
-   - [CFtpFileFind](../mfc/reference/cftpfilefind-class.md)
+  - [CFtpFileFind](reference/cftpfilefind-class.md)
 
-   - [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md)
+  - [CGopherFileFind](reference/cgopherfilefind-class.md)
 
-- [CGopherLocator](../mfc/reference/cgopherlocator-class.md)
+- [CGopherLocator](reference/cgopherlocator-class.md)
 
-- [CInternetException](../mfc/reference/cinternetexception-class.md)
+- [CInternetException](reference/cinternetexception-class.md)
 
 ## Global Functions
 
@@ -46,6 +46,6 @@ MFC provides the following classes and global functions for writing Internet cli
 
 ## See also
 
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)<br/>
-[Writing an Internet Client Application Using MFC WinInet Classes](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[Win32 Internet Extensions (WinInet)](win32-internet-extensions-wininet.md)<br/>
+[Prerequisites for Internet Client Classes](prerequisites-for-internet-client-classes.md)<br/>
+[Writing an Internet Client Application Using MFC WinInet Classes](writing-an-internet-client-application-using-mfc-wininet-classes.md)

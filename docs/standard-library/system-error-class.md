@@ -17,7 +17,7 @@ class system_error : public runtime_error {
     system_error(error_code _Errcode, const char *_Message);
     system_error(error_code::value_type _Errval, const error_category& _Errcat, const string& _Message);
     system_error(error_code::value_type _Errval, const error_category& _Errcat, const char *_Message);
-    
+
     const error_code& code() const throw();
     const char* what() const noexcept override;
 };

@@ -75,7 +75,7 @@ Name                        | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="tilde-handlet"></a>HandleT::~HandleT
+## <a name="tilde-handlet"></a> HandleT::~HandleT
 
 Deinitializes an instance of the `HandleT` class.
 
@@ -83,7 +83,7 @@ Deinitializes an instance of the `HandleT` class.
 ~HandleT();
 ```
 
-## <a name="attach"></a>HandleT::Attach
+## <a name="attach"></a> HandleT::Attach
 
 Associates the specified handle with the current `HandleT` object.
 
@@ -98,7 +98,7 @@ void Attach(
 *h*<br/>
 A handle.
 
-## <a name="close"></a>HandleT::Close
+## <a name="close"></a> HandleT::Close
 
 Closes the current `HandleT` object.
 
@@ -112,7 +112,7 @@ The handle that underlies the current `HandleT` is closed, and the `HandleT` is 
 
 If the handle doesn't close properly, an exception is raised in the calling thread.
 
-## <a name="detach"></a>HandleT::Detach
+## <a name="detach"></a> HandleT::Detach
 
 Disassociates the current `HandleT` object from its underlying handle.
 
@@ -128,7 +128,7 @@ The underlying handle.
 
 When this operation completes, the current `HandleT` is set to the invalid state.
 
-## <a name="get"></a>HandleT::Get
+## <a name="get"></a> HandleT::Get
 
 Gets the value of the underlying handle.
 
@@ -140,7 +140,7 @@ typename HandleTraits::Type Get() const;
 
 A handle.
 
-## <a name="handle"></a>HandleT::handle_
+## <a name="handle"></a> HandleT::handle_
 
 Contains the handle that is represented by the `HandleT` object.
 
@@ -148,7 +148,7 @@ Contains the handle that is represented by the `HandleT` object.
 typename HandleTraits::Type handle_;
 ```
 
-## <a name="handlet"></a>HandleT::HandleT
+## <a name="handlet"></a> HandleT::HandleT
 
 Initializes a new instance of the `HandleT` class.
 
@@ -172,7 +172,7 @@ A handle.
 
 The first constructor initializes a `HandleT` object that is not a valid handle to an object. The second constructor creates a new `HandleT` object from parameter *h*.
 
-## <a name="internalclose"></a>HandleT::InternalClose
+## <a name="internalclose"></a> HandleT::InternalClose
 
 Closes the current `HandleT` object.
 
@@ -188,7 +188,7 @@ virtual bool InternalClose();
 
 `InternalClose()` is `protected`.
 
-## <a name="isvalid"></a>HandleT::IsValid
+## <a name="isvalid"></a> HandleT::IsValid
 
 Indicates whether the current `HandleT` object represents a handle.
 
@@ -200,7 +200,7 @@ bool IsValid() const;
 
 **true** if the `HandleT` represents a handle; otherwise, **false**.
 
-## <a name="operator-assign"></a>HandleT::operator=
+## <a name="operator-assign"></a> HandleT::operator=
 
 Moves the value of the specified `HandleT` object to the current `HandleT` object.
 

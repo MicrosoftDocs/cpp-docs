@@ -91,7 +91,7 @@ If you don't specify a localization ID, a progid is chosen according to the foll
 
 - If you don't specify a version number, the most recent version is used.
 
-###  <a name="_predir_the_23import_directive_header_files_created_by_import"></a> Header files created by import
+### <a name="_predir_the_23import_directive_header_files_created_by_import"></a> Header files created by import
 
 **#import** creates two header files that reconstruct the type library contents in C++ source code. The primary header file is similar to the one produced by the Microsoft Interface Definition Language (MIDL) compiler, but with additional compiler-generated code and data. The [primary header file](#_predir_the_primary_type_library_header_file) has the same base name as the type library, plus a .TLH extension. The secondary header file has the same base name as the type library, with a .TLI extension. It contains the implementations for compiler-generated member functions, and is included (`#include`) in the primary header file.
 

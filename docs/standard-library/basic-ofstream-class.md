@@ -80,7 +80,7 @@ int main(int argc, char **argv)
 
 **Namespace:** std
 
-## <a name="basic_ofstream"></a>  basic_ofstream::basic_ofstream
+## <a name="basic_ofstream"></a> basic_ofstream::basic_ofstream
 
 Creates an object of type `basic_ofstream`.
 
@@ -145,7 +145,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## <a name="close"></a>  basic_ofstream::close
+## <a name="close"></a> basic_ofstream::close
 
 Closes a file.
 
@@ -161,7 +161,7 @@ The member function calls [rdbuf](../standard-library/basic-ifstream-class.md#rd
 
 See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `close`.
 
-## <a name="is_open"></a>  basic_ofstream::is_open
+## <a name="is_open"></a> basic_ofstream::is_open
 
 Indicates whether a file is open.
 
@@ -199,7 +199,7 @@ int main( )
 }
 ```
 
-## <a name="open"></a>  basic_ofstream::open
+## <a name="open"></a> basic_ofstream::open
 
 Opens a file.
 
@@ -242,7 +242,7 @@ The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basi
 
 See [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) for an example that uses `open`.
 
-## <a name="op_eq"></a>  basic_ofstream::operator=
+## <a name="op_eq"></a> basic_ofstream::operator=
 
 Assigns the content of this stream object. This is a move assignment involving an `rvalue reference` that does not leave a copy behind.
 
@@ -263,7 +263,7 @@ Returns `*this`.
 
 The member operator replaces the contents of the object by using the contents of *right*, treated as an rvalue reference.
 
-## <a name="rdbuf"></a>  basic_ofstream::rdbuf
+## <a name="rdbuf"></a> basic_ofstream::rdbuf
 
 Returns the address of the stored stream buffer.
 
@@ -279,7 +279,7 @@ Returns the address of the stored stream buffer.
 
 See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `rdbuf`.
 
-## <a name="swap"></a>  basic_ofstream::swap
+## <a name="swap"></a> basic_ofstream::swap
 
 Exchanges the contents of two `basic_ofstream` objects.
 

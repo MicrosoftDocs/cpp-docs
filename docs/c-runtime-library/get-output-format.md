@@ -14,7 +14,7 @@ ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
 Gets the current value of the output format flag.
 
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+> This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
 
 ## Syntax
 

@@ -30,7 +30,7 @@ class CDBException : public CException
 The class includes two public data members you can use to determine the cause of the exception or to display a text message describing the exception. `CDBException` objects are constructed and thrown by member functions of the database classes.
 
 > [!NOTE]
->  This class is one of MFC's Open Database Connectivity (ODBC) classes. If you are instead using the newer Data Access Objects (DAO) classes, use [CDaoException](../../mfc/reference/cdaoexception-class.md) instead. All DAO class names have "CDao" as a prefix. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).
+> This class is one of MFC's Open Database Connectivity (ODBC) classes. If you are instead using the newer Data Access Objects (DAO) classes, use [CDaoException](../../mfc/reference/cdaoexception-class.md) instead. All DAO class names have "CDao" as a prefix. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).
 
 Exceptions are cases of abnormal execution involving conditions outside the program's control, such as data source or network I/O errors. Errors that you might expect to see in the normal course of executing your program are usually not considered exceptions.
 
@@ -50,7 +50,7 @@ For more information about exception handling in general, or about `CDBException
 
 **Header:** afxdb.h
 
-##  <a name="m_nretcode"></a>  CDBException::m_nRetCode
+## <a name="m_nretcode"></a> CDBException::m_nRetCode
 
 Contains an ODBC error code of type RETCODE returned by an ODBC application programming interface (API) function.
 
@@ -102,7 +102,7 @@ This type includes SQL-prefixed codes defined by ODBC and AFX_SQL-prefixed codes
 
 The SQL-prefixed codes are defined by ODBC. The AFX-prefixed codes are defined in AFXDB.H, found in MFC\INCLUDE.
 
-##  <a name="m_strerror"></a>  CDBException::m_strError
+## <a name="m_strerror"></a> CDBException::m_strError
 
 Contains a string describing the error that caused the exception.
 
@@ -110,7 +110,7 @@ Contains a string describing the error that caused the exception.
 
 The string describes the error in alphanumeric terms. For more detailed information and an example, see `m_strStateNativeOrigin`.
 
-##  <a name="m_strstatenativeorigin"></a>  CDBException::m_strStateNativeOrigin
+## <a name="m_strstatenativeorigin"></a> CDBException::m_strStateNativeOrigin
 
 Contains a string describing the error that caused the exception.
 

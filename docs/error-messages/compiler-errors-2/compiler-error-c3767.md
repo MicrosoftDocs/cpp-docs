@@ -67,4 +67,3 @@ ref class Der : public Base {
    }
 };
 ```
-

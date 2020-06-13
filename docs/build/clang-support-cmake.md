@@ -4,7 +4,6 @@ ms.date: "07/01/2019"
 ms.description: "Configure a CMake project in Visual Studio to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ CMake projects"]
 ---
-
 # Clang/LLVM support in Visual Studio CMake projects
 
 ::: moniker range="<=vs-2017"

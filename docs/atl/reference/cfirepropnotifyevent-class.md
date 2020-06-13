@@ -10,7 +10,7 @@ ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
 This class provides methods for notifying the container's sink regarding control property changes.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -39,7 +39,7 @@ For more information about creating controls, see the [ATL Tutorial](../../atl/a
 
 **Header:** atlctl.h
 
-##  <a name="fireonchanged"></a>  CFirePropNotifyEvent::FireOnChanged
+## <a name="fireonchanged"></a> CFirePropNotifyEvent::FireOnChanged
 
 Notifies all connected [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interfaces (on every connection point of the object) that the specified object property has changed.
 
@@ -63,7 +63,7 @@ One of the standard HRESULT values.
 
 This function is safe to call even if your control does not support connection points.
 
-##  <a name="fireonrequestedit"></a>  CFirePropNotifyEvent::FireOnRequestEdit
+## <a name="fireonrequestedit"></a> CFirePropNotifyEvent::FireOnRequestEdit
 
 Notifies all connected [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interfaces (on every connection point of the object) that the specified object property is about to change.
 

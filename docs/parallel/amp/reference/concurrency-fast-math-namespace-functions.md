@@ -31,7 +31,7 @@ ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
 |[tanf](#tanf)|[tanh](#tanh)|[tanhf](#tanhf)|
 |[trunc](#trunc)|[truncf](#truncf)|
 
-## <a name="acos"></a>  acos
+## <a name="acos"></a> acos
 
 Calculates the arccosine of the argument
 
@@ -48,7 +48,7 @@ Floating-point value
 
 Returns the arccosine value of the argument
 
-## <a name="acosf"></a>  acosf
+## <a name="acosf"></a> acosf
 
 Calculates the arccosine of the argument
 
@@ -65,7 +65,7 @@ Floating-point value
 
 Returns the arccosine value of the argument
 
-## <a name="asin"></a>  asin
+## <a name="asin"></a> asin
 
 Calculates the arcsine of the argument
 
@@ -82,7 +82,7 @@ Floating-point value
 
 Returns the arcsine value of the argument
 
-## <a name="asinf"></a>  asinf
+## <a name="asinf"></a> asinf
 
 Calculates the arcsine of the argument
 
@@ -99,7 +99,7 @@ Floating-point value
 
 Returns the arcsine value of the argument
 
-## <a name="atan"></a>  atan
+## <a name="atan"></a> atan
 
 Calculates the arctangent of the argument
 
@@ -116,7 +116,7 @@ Floating-point value
 
 Returns the arctangent value of the argument
 
-## <a name="atan2"></a>  atan2
+## <a name="atan2"></a> atan2
 
 Calculates the arctangent of _Y/_X
 
@@ -138,7 +138,7 @@ Floating-point value
 
 Returns the arctangent value of _Y/_X
 
-## <a name="atan2f"></a>  atan2f
+## <a name="atan2f"></a> atan2f
 
 Calculates the arctangent of _Y/_X
 
@@ -160,7 +160,7 @@ Floating-point value
 
 Returns the arctangent value of _Y/_X
 
-## <a name="atanf"></a>  atanf
+## <a name="atanf"></a> atanf
 
 Calculates the arctangent of the argument
 
@@ -177,7 +177,7 @@ Floating-point value
 
 Returns the arctangent value of the argument
 
-## <a name="ceil"></a>  ceil
+## <a name="ceil"></a> ceil
 
 Calculates the ceiling of the argument
 
@@ -194,7 +194,7 @@ Floating-point value
 
 Returns the ceiling of the argument
 
-## <a name="ceilf"></a>  ceilf
+## <a name="ceilf"></a> ceilf
 
 Calculates the ceiling of the argument
 
@@ -211,7 +211,7 @@ Floating-point value
 
 Returns the ceiling of the argument
 
-## <a name="cosf"></a>  cosf
+## <a name="cosf"></a> cosf
 
 Calculates the cosine of the argument
 
@@ -228,7 +228,7 @@ Floating-point value
 
 Returns the cosine value of the argument
 
-## <a name="coshf"></a>  coshf
+## <a name="coshf"></a> coshf
 
 Calculates the hyperbolic cosine value of the argument
 
@@ -245,7 +245,7 @@ Floating-point value
 
 Returns the hyperbolic cosine value of the argument
 
-## <a name="cos"></a>  cos
+## <a name="cos"></a> cos
 
 Calculates the cosine of the argument
 
@@ -262,7 +262,7 @@ Floating-point value
 
 Returns the cosine value of the argument
 
-## <a name="cosh"></a>  cosh
+## <a name="cosh"></a> cosh
 
 Calculates the hyperbolic cosine value of the argument
 
@@ -279,7 +279,7 @@ Floating-point value
 
 Returns the hyperbolic cosine value of the argument
 
-## <a name="exp"></a>  exp
+## <a name="exp"></a> exp
 
 Calculates the base-e exponential of the argument
 
@@ -296,7 +296,7 @@ Floating-point value
 
 Returns the base-e exponential of the argument
 
-## <a name="exp2"></a>  exp2
+## <a name="exp2"></a> exp2
 
 Calculates the base-2 exponential of the argument
 
@@ -313,7 +313,7 @@ Floating-point value
 
 Returns the base-2 exponential of the argument
 
-## <a name="exp2f"></a>  exp2f
+## <a name="exp2f"></a> exp2f
 
 Calculates the base-2 exponential of the argument
 
@@ -330,7 +330,7 @@ Floating-point value
 
 Returns the base-2 exponential of the argument
 
-## <a name="expf"></a>  expf
+## <a name="expf"></a> expf
 
 Calculates the base-e exponential of the argument
 
@@ -347,7 +347,7 @@ Floating-point value
 
 Returns the base-e exponential of the argument
 
-## <a name="fabs"></a>  fabs
+## <a name="fabs"></a> fabs
 
 Returns the absolute value of the argument
 
@@ -364,7 +364,7 @@ Integer value
 
 Returns the absolute value of the argument
 
-## <a name="fabsf"></a>  fabsf
+## <a name="fabsf"></a> fabsf
 
 Returns the absolute value of the argument
 
@@ -381,7 +381,7 @@ Floating-point value
 
 Returns the absolute value of the argument
 
-## <a name="floor"></a>  floor
+## <a name="floor"></a> floor
 
 Calculates the floor of the argument
 
@@ -398,7 +398,7 @@ Floating-point value
 
 Returns the floor of the argument
 
-## <a name="floorf"></a>  floorf
+## <a name="floorf"></a> floorf
 
 Calculates the floor of the argument
 
@@ -415,7 +415,7 @@ Floating-point value
 
 Returns the floor of the argument
 
-## <a name="fmax"></a>  fmax
+## <a name="fmax"></a> fmax
 
 Determine the maximum numeric value of the arguments
 
@@ -437,7 +437,7 @@ Integer value
 
 Return the maximum numeric value of the arguments
 
-## <a name="fmaxf"></a>  fmaxf
+## <a name="fmaxf"></a> fmaxf
 
 Determine the maximum numeric value of the arguments
 
@@ -459,7 +459,7 @@ Floating-point value
 
 Return the maximum numeric value of the arguments
 
-## <a name="fmin"></a>  fmin
+## <a name="fmin"></a> fmin
 
 Determine the minimum numeric value of the arguments
 
@@ -481,7 +481,7 @@ Integer value
 
 Return the minimum numeric value of the arguments
 
-## <a name="fminf"></a>  fminf
+## <a name="fminf"></a> fminf
 
 Determine the minimum numeric value of the arguments
 
@@ -503,7 +503,7 @@ Floating-point value
 
 Return the minimum numeric value of the arguments
 
-## <a name="fmod"></a>  fmod
+## <a name="fmod"></a> fmod
 
 Calculates the floating-point remainder of _X/_Y
 
@@ -525,7 +525,7 @@ Floating-point value
 
 Returns the floating-point remainder of _X/_Y
 
-## <a name="fmodf"></a>  fmodf
+## <a name="fmodf"></a> fmodf
 
 Calculates the floating-point remainder of _X/_Y.
 
@@ -547,7 +547,7 @@ Floating-point value
 
 Returns the floating-point remainder of _X/_Y
 
-## <a name="frexp"></a>  frexp
+## <a name="frexp"></a> frexp
 
 Gets the mantissa and exponent of _X
 
@@ -569,7 +569,7 @@ Returns the integer exponent of _X in floating-point value
 
 Returns the mantissa _X
 
-## <a name="frexpf"></a>  frexpf
+## <a name="frexpf"></a> frexpf
 
 Gets the mantissa and exponent of _X
 
@@ -591,7 +591,7 @@ Returns the integer exponent of _X in floating-point value
 
 Returns the mantissa _X
 
-## <a name="isfinite"></a>  isfinite
+## <a name="isfinite"></a> isfinite
 
 Determines whether the argument has a finite value
 
@@ -608,7 +608,7 @@ Floating-point value
 
 Returns a nonzero value if and only if the argument has a finite value
 
-## <a name="isinf"></a>  isinf
+## <a name="isinf"></a> isinf
 
 Determines whether the argument is an infinity
 
@@ -625,7 +625,7 @@ Floating-point value
 
 Returns a nonzero value if and only if the argument has an infinite value
 
-## <a name="isnan"></a>  isnan
+## <a name="isnan"></a> isnan
 
 Determines whether the argument is a NaN
 
@@ -642,7 +642,7 @@ Floating-point value
 
 Returns a nonzero value if and only if the argument has a NaN value
 
-## <a name="ldexp"></a>  ldexp
+## <a name="ldexp"></a> ldexp
 
 Computes a real number from the mantissa and exponent
 
@@ -664,7 +664,7 @@ Integer exponent
 
 Returns _X \* 2^_Exp
 
-## <a name="ldexpf"></a>  ldexpf
+## <a name="ldexpf"></a> ldexpf
 
 Computes a real number from the mantissa and exponent
 
@@ -686,7 +686,7 @@ Integer exponent
 
 Returns _X \* 2^_Exp
 
-## <a name="log"></a>  log
+## <a name="log"></a> log
 
 Calculates the base-e logarithm of the argument
 
@@ -703,7 +703,7 @@ Floating-point value
 
 Returns the base-e logarithm of the argument
 
-## <a name="log10"></a>  log10
+## <a name="log10"></a> log10
 
 Calculates the base-10 logarithm of the argument
 
@@ -720,7 +720,7 @@ Floating-point value
 
 Returns the base-10 logarithm of the argument
 
-## <a name="log10f"></a>  log10f
+## <a name="log10f"></a> log10f
 
 Calculates the base-10 logarithm of the argument
 
@@ -737,7 +737,7 @@ Floating-point value
 
 Returns the base-10 logarithm of the argument
 
-## <a name="log2"></a>  log2
+## <a name="log2"></a> log2
 
 Calculates the base-2 logarithm of the argument
 
@@ -754,7 +754,7 @@ Floating-point value
 
 Returns the base-2 logarithm of the argument
 
-## <a name="log2f"></a>  log2f
+## <a name="log2f"></a> log2f
 
 Calculates the base-2 logarithm of the argument
 
@@ -771,7 +771,7 @@ Floating-point value
 
 Returns the base-10 logarithm of the argument
 
-## <a name="logf"></a>  logf
+## <a name="logf"></a> logf
 
 Calculates the base-e logarithm of the argument
 
@@ -788,7 +788,7 @@ Floating-point value
 
 Returns the base-e logarithm of the argument
 
-## <a name="modf"></a>  modf
+## <a name="modf"></a> modf
 
 Splits _X into fractional and integer parts.
 
@@ -810,7 +810,7 @@ Receives integer part of the value
 
 Returns the signed fractional portion of _X
 
-## <a name="modff"></a>  modff
+## <a name="modff"></a> modff
 
 Splits _X into fractional and integer parts.
 
@@ -832,7 +832,7 @@ Receives integer part of the value
 
 Returns the signed fractional portion of _X
 
-## <a name="pow"></a>  pow
+## <a name="pow"></a> pow
 
 Calculates _X raised to the power of _Y
 
@@ -854,7 +854,7 @@ Floating-point value, exponent
 
 Returns the value of _X raised to the power of _Y
 
-## <a name="powf"></a>  powf
+## <a name="powf"></a> powf
 
 Calculates _X raised to the power of _Y
 
@@ -874,7 +874,7 @@ Floating-point value, exponent
 
 ### Return Value
 
-## <a name="round"></a>  round
+## <a name="round"></a> round
 
 Rounds _X to the nearest integer
 
@@ -891,7 +891,7 @@ Floating-point value
 
 Returns the nearest integer of _X
 
-## <a name="roundf"></a>  roundf
+## <a name="roundf"></a> roundf
 
 Rounds _X to the nearest integer
 
@@ -908,7 +908,7 @@ Floating-point value
 
 Returns the nearest integer of _X
 
-## <a name="rsqrt"></a>  rsqrt
+## <a name="rsqrt"></a> rsqrt
 
 Returns the reciprocal of the square root of the argument
 
@@ -925,7 +925,7 @@ Floating-point value
 
 Returns the reciprocal of the square root of the argument
 
-## <a name="rsqrtf"></a>  rsqrtf
+## <a name="rsqrtf"></a> rsqrtf
 
 Returns the reciprocal of the square root of the argument
 
@@ -942,7 +942,7 @@ Floating-point value
 
 Returns the reciprocal of the square root of the argument
 
-## <a name="signbit"></a>  signbit
+## <a name="signbit"></a> signbit
 
 Determines whether the sign of _X is negative
 
@@ -959,7 +959,7 @@ Floating-point value
 
 Returns a nonzero value if and only if the sign of _X is negative
 
-## <a name="signbitf"></a>  signbitf
+## <a name="signbitf"></a> signbitf
 
 Determines whether the sign of _X is negative
 
@@ -976,7 +976,7 @@ Floating-point value
 
 Returns a nonzero value if and only if the sign of _X is negative
 
-## <a name="sin"></a>  sin
+## <a name="sin"></a> sin
 
 Calculates the sine value of the argument
 
@@ -993,7 +993,7 @@ Floating-point value
 
 Returns the sine value of the argument
 
-## <a name="sinf"></a>  sinf
+## <a name="sinf"></a> sinf
 
 Calculates the sine value of the argument
 
@@ -1010,7 +1010,7 @@ Floating-point value
 
 Returns the sine value of the argument
 
-## <a name="sincos"></a>  sincos
+## <a name="sincos"></a> sincos
 
 Calculates sine and cosine value of _X
 
@@ -1032,7 +1032,7 @@ Returns the sine value of _X
 *_C*<br/>
 Returns the cosine value of _X
 
-## <a name="sincosf"></a>  sincosf
+## <a name="sincosf"></a> sincosf
 
 Calculates sine and cosine value of _X
 
@@ -1054,7 +1054,7 @@ Returns the sine value of _X
 *_C*<br/>
 Returns the cosine value of _X
 
-## <a name="sinh"></a>  sinh
+## <a name="sinh"></a> sinh
 
 Calculates the hyperbolic sine value of the argument
 
@@ -1071,7 +1071,7 @@ Floating-point value
 
 Returns the hyperbolic sine value of the argument
 
-## <a name="sinhf"></a>  sinhf
+## <a name="sinhf"></a> sinhf
 
 Calculates the hyperbolic sine value of the argument
 
@@ -1088,7 +1088,7 @@ Floating-point value
 
 Returns the hyperbolic sine value of the argument
 
-## <a name="sqrt"></a>  sqrt
+## <a name="sqrt"></a> sqrt
 
 Calculates the squre root of the argument
 
@@ -1105,7 +1105,7 @@ Floating-point value
 
 Returns the squre root of the argument
 
-## <a name="sqrtf"></a>  sqrtf
+## <a name="sqrtf"></a> sqrtf
 
 Calculates the squre root of the argument
 
@@ -1122,7 +1122,7 @@ Floating-point value
 
 Returns the squre root of the argument
 
-## <a name="tan"></a>  tan
+## <a name="tan"></a> tan
 
 Calculates the tangent value of the argument
 
@@ -1139,7 +1139,7 @@ Floating-point value
 
 Returns the tangent value of the argument
 
-## <a name="tanf"></a>  tanf
+## <a name="tanf"></a> tanf
 
 Calculates the tangent value of the argument
 
@@ -1156,7 +1156,7 @@ Floating-point value
 
 Returns the tangent value of the argument
 
-## <a name="tanh"></a>  tanh
+## <a name="tanh"></a> tanh
 
 Calculates the hyperbolic tangent value of the argument
 
@@ -1173,7 +1173,7 @@ Floating-point value
 
 Returns the hyperbolic tangent value of the argument
 
-## <a name="tanhf"></a>  tanhf
+## <a name="tanhf"></a> tanhf
 
 Calculates the hyperbolic tangent value of the argument
 
@@ -1190,7 +1190,7 @@ Floating-point value
 
 Returns the hyperbolic tangent value of the argument
 
-## <a name="trunc"></a>  trunc
+## <a name="trunc"></a> trunc
 
 Truncates the argument to the integer component
 
@@ -1207,7 +1207,7 @@ Floating-point value
 
 Returns the integer component of the argument
 
-## <a name="truncf"></a>  truncf
+## <a name="truncf"></a> truncf
 
 Truncates the argument to the integer component
 

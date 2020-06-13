@@ -19,7 +19,7 @@ On occasion, it is useful to determine the current position of the cursor when c
 There is a simple way to accomplish this by calling `CWnd::GetCurrentMessage`. However, this method only retrieves the cursor position at the time the message was sent. Because the cursor may have been moved since the message was sent you must call `CWnd::GetCursorPos` to get the current cursor position.
 
 > [!NOTE]
->  `CWnd::GetCurrentMessage` should only be called within a message handler.
+> `CWnd::GetCurrentMessage` should only be called within a message handler.
 
 Add the following code to the body of the notification message handler (in this example, NM_RCLICK):
 

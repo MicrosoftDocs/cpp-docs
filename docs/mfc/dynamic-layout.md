@@ -49,13 +49,13 @@ The previous procedure is useful for specifying dynamic layout properties for a 
 
 1. Find or create a place in your dialog class's implementation code where you want to specify the dynamic layout for the dialog. For example, you might want to add a method such as `AdjustLayout` in your dialog, and call it from places where the layout needs to be changed. You might first call this from the constructor, or after making changes to the dialog.
 
-1. For the dialog, call [GetDynamicLayout](../mfc/reference/cwnd-class.md#getdynamiclayout), a method of the `CWnd` class. `GetDynamicLayout` returns a pointer to a `CMFCDynamicLayout` object.
+1. For the dialog, call [GetDynamicLayout](reference/cwnd-class.md#getdynamiclayout), a method of the `CWnd` class. `GetDynamicLayout` returns a pointer to a `CMFCDynamicLayout` object.
 
     ```cpp
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();
     ```
 
-1. For the first control to which you want to add dynamic behavior, use the static methods on the dynamic layout class to create the [MoveSettings](../mfc/reference/cmfcdynamiclayout-class.md#movesettings_structure) structure that encodes the way the control should be adjusted. You do this by first choosing the appropriate static method: [CMFCDynamicLayout::MoveHorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontal), [CMFCDynamicLayout::MoveVertical](../mfc/reference/cmfcdynamiclayout-class.md#movevertical), [CMFCDynamicLayout::MoveNone](../mfc/reference/cmfcdynamiclayout-class.md#movenone), or [CMFCDynamicLayout::MoveHorizontalAndVertical](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontalandvertical). You pass in a percentage for the horizontal and/or vertical aspects of the move. These static methods all return a newly created MoveSettings object that you can use to specify a control's move behavior.
+1. For the first control to which you want to add dynamic behavior, use the static methods on the dynamic layout class to create the [MoveSettings](reference/cmfcdynamiclayout-class.md#movesettings_structure) structure that encodes the way the control should be adjusted. You do this by first choosing the appropriate static method: [CMFCDynamicLayout::MoveHorizontal](reference/cmfcdynamiclayout-class.md#movehorizontal), [CMFCDynamicLayout::MoveVertical](reference/cmfcdynamiclayout-class.md#movevertical), [CMFCDynamicLayout::MoveNone](reference/cmfcdynamiclayout-class.md#movenone), or [CMFCDynamicLayout::MoveHorizontalAndVertical](reference/cmfcdynamiclayout-class.md#movehorizontalandvertical). You pass in a percentage for the horizontal and/or vertical aspects of the move. These static methods all return a newly created MoveSettings object that you can use to specify a control's move behavior.
 
    Keep in mind that 100 means move exactly as much as the dialog changes size, which causes a control's edge to stay a fixed distance from the new border.
 
@@ -63,13 +63,13 @@ The previous procedure is useful for specifying dynamic layout properties for a 
     MoveSettings moveSettings = CMFCDynamicLayout::MoveHorizontal(100);
     ```
 
-1. Do the same thing for the size behavior, which uses the [SizeSettings](../mfc/reference/cmfcdynamiclayout-class.md#sizesettings_structure) type. For example, to specify that a control does not change size when the dialog resizes, use the following code:
+1. Do the same thing for the size behavior, which uses the [SizeSettings](reference/cmfcdynamiclayout-class.md#sizesettings_structure) type. For example, to specify that a control does not change size when the dialog resizes, use the following code:
 
     ```cpp
     SizeSettings sizeSettings = CMFCDynamicLayout::SizeNone();
     ```
 
-1. Add the control to the dynamic layout manager using the [CMFCDynamicLayout::AddItem](../mfc/reference/cmfcdynamiclayout-class.md#additem) method. There are two overloads for different ways of specifying the desired control. One takes the control's window handle (HWND), and the other takes the control ID.
+1. Add the control to the dynamic layout manager using the [CMFCDynamicLayout::AddItem](reference/cmfcdynamiclayout-class.md#additem) method. There are two overloads for different ways of specifying the desired control. One takes the control's window handle (HWND), and the other takes the control ID.
 
     ```cpp
     dynamicLayout->AddItem(hWndControl,
@@ -79,17 +79,17 @@ The previous procedure is useful for specifying dynamic layout properties for a 
 
 1. Repeat for each control that needs to be moved or resized.
 
-1. If necessary, can use the [CMFCDynamicLayout::HasItem](../mfc/reference/cmfcdynamiclayout-class.md#hasitem) method to determine if a control is already on the list of controls subjected to dynamic layout changes, or the [CMFCDynamicLayout::IsEmpty](../mfc/reference/cmfcdynamiclayout-class.md#isempty) method to determine if there are any controls that are subject to changes.
+1. If necessary, can use the [CMFCDynamicLayout::HasItem](reference/cmfcdynamiclayout-class.md#hasitem) method to determine if a control is already on the list of controls subjected to dynamic layout changes, or the [CMFCDynamicLayout::IsEmpty](reference/cmfcdynamiclayout-class.md#isempty) method to determine if there are any controls that are subject to changes.
 
-1. To enable dialog layout, call the [CWnd::EnableDynamicLayout](../mfc/reference/cwnd-class.md#enabledynamiclayout) method.
+1. To enable dialog layout, call the [CWnd::EnableDynamicLayout](reference/cwnd-class.md#enabledynamiclayout) method.
 
     ```cpp
     pDialog->EnableDynamicLayout(TRUE);
     ```
 
-1. The next time the user resizes the dialog, the [CMFCDynamicLayout::Adjust](../mfc/reference/cmfcdynamiclayout-class.md#adjust) method is called which actually applies the settings.
+1. The next time the user resizes the dialog, the [CMFCDynamicLayout::Adjust](reference/cmfcdynamiclayout-class.md#adjust) method is called which actually applies the settings.
 
-1. If you want to disable dynamic layout, call [CWnd::EnableDynamicLayout](../mfc/reference/cwnd-class.md#enabledynamiclayout) with **FALSE** as for the *bEnabled* parameter.
+1. If you want to disable dynamic layout, call [CWnd::EnableDynamicLayout](reference/cwnd-class.md#enabledynamiclayout) with **FALSE** as for the *bEnabled* parameter.
 
     ```cpp
     pDialog->EnableDynamicLayout(FALSE);
@@ -97,7 +97,7 @@ The previous procedure is useful for specifying dynamic layout properties for a 
 
 #### To set the dynamic layout programmatically from a resource file
 
-1. Use the [CMFCDynamicLayout::MoveHorizontalAndVertical](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontalandvertical) method to specify a resource name in the relevant resource script file (.rc file) that specifies dynamic layout information, as in the following example:
+1. Use the [CMFCDynamicLayout::MoveHorizontalAndVertical](reference/cmfcdynamiclayout-class.md#movehorizontalandvertical) method to specify a resource name in the relevant resource script file (.rc file) that specifies dynamic layout information, as in the following example:
 
     ```cpp
     dynamicLayout->LoadResource("IDD_DIALOG1");
@@ -137,8 +137,8 @@ The previous procedure is useful for specifying dynamic layout properties for a 
 
 ## See also
 
-[CMFCDynamicLayout Class](../mfc/reference/cmfcdynamiclayout-class.md)<br/>
-[Control Classes](../mfc/control-classes.md)<br/>
-[Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
+[CMFCDynamicLayout Class](reference/cmfcdynamiclayout-class.md)<br/>
+[Control Classes](control-classes.md)<br/>
+[Dialog Box Classes](dialog-box-classes.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)<br/>
 [Dynamic Dialog Layout for MFC in Visual C++ 2015](https://mariusbancila.ro/blog/2015/07/27/dynamic-dialog-layout-for-mfc-in-visual-c-2015/)

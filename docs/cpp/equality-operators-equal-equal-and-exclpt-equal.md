@@ -1,7 +1,7 @@
 ---
 title: "Equality Operators: == and !="
 ms.date: "11/04/2016"
-f1_keywords: ["not_eq", "!=", "=="]
+f1_keywords: ["!=", "=="]
 helpviewer_keywords: ["!= operator", "equality operator", "not equal to comparison operator", "equality operator [C++], syntax", "== operator", "not_eq operator", "equal to operator"]
 ms.assetid: ba4e9659-2392-4fb4-be5a-910a2a6df45a
 ---

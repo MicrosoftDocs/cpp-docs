@@ -9,7 +9,7 @@ ms.assetid: 106752ae-4cfc-4030-8cb2-d36a1d635a2e
 The ATL Registrar provides optimized access to the system registry through a custom interface. The Registrar is free-threaded and allows static linking of code for C++ clients.
 
 > [!NOTE]
->  The source code for the ATL Registrar can be found in atlmfc\include\atliface.h.
+> The source code for the ATL Registrar can be found in atlmfc\include\atliface.h.
 
 ## In This Section
 

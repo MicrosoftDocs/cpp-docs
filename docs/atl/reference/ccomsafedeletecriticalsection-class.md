@@ -56,7 +56,7 @@ See [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) for 
 
 **Header:** atlcore.h
 
-##  <a name="ccomsafedeletecriticalsection"></a>  CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection
+## <a name="ccomsafedeletecriticalsection"></a> CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection
 
 The constructor.
 
@@ -68,7 +68,7 @@ CComSafeDeleteCriticalSection();
 
 Sets the [m_bInitialized](#m_binitialized) data member to FALSE.
 
-##  <a name="dtor"></a>  CComSafeDeleteCriticalSection::~CComSafeDeleteCriticalSection
+## <a name="dtor"></a> CComSafeDeleteCriticalSection::~CComSafeDeleteCriticalSection
 
 The destructor.
 
@@ -80,7 +80,7 @@ The destructor.
 
 Releases the internal `CRITICAL_SECTION` object from memory if the [m_bInitialized](#m_binitialized) data member is set to TRUE.
 
-##  <a name="init"></a>  CComSafeDeleteCriticalSection::Init
+## <a name="init"></a> CComSafeDeleteCriticalSection::Init
 
 Calls the base class implementation of [Init](/visualstudio/debugger/init) and sets [m_bInitialized](#m_binitialized) to TRUE if successful.
 
@@ -92,7 +92,7 @@ HRESULT Init() throw();
 
 Returns the result of [CComCriticalSection::Init](../../atl/reference/ccomcriticalsection-class.md#init).
 
-##  <a name="lock"></a>  CComSafeDeleteCriticalSection::Lock
+## <a name="lock"></a> CComSafeDeleteCriticalSection::Lock
 
 Calls the base class implementation of [Lock](ccomcriticalsection-class.md#lock).
 
@@ -110,7 +110,7 @@ This method assumes the [m_bInitialized](#m_binitialized) data member is set to 
 
 For more information on the behavior of the function, refer to [CComCriticalSection::Lock](../../atl/reference/ccomcriticalsection-class.md#lock).
 
-##  <a name="m_binitialized"></a>  CComSafeDeleteCriticalSection::m_bInitialized
+## <a name="m_binitialized"></a> CComSafeDeleteCriticalSection::m_bInitialized
 
 Flags whether the internal `CRITICAL_SECTION` object has been initialized.
 
@@ -122,7 +122,7 @@ bool m_bInitialized;
 
 The `m_bInitialized` data member is used to track validity of the underlying `CRITICAL_SECTION` object associated with the [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) class. The underlying `CRITICAL_SECTION` object will not be attempted to be released from memory if this flag is not set to TRUE.
 
-##  <a name="term"></a>  CComSafeDeleteCriticalSection::Term
+## <a name="term"></a> CComSafeDeleteCriticalSection::Term
 
 Calls the base class implementation of [CComCriticalSection::Term](../../atl/reference/ccomcriticalsection-class.md#term) if the internal `CRITICAL_SECTION` object is valid.
 

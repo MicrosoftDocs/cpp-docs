@@ -2,7 +2,6 @@
 title: "Overview of LIB"
 description: "Overview of the use and options of the library tool, lib.exe."
 ms.date: "02/09/2020"
-f1_keywords: ["Lib"]
 helpviewer_keywords: ["LIB [C++], modes"]
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
 ---

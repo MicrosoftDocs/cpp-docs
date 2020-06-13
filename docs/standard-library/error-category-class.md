@@ -146,7 +146,6 @@ Returns the name of the category as a null-terminated byte string.
 error_category& operator=(const error_category&) = delete;
 ```
 
-
 ### <a name="op_eq_eq"></a> operator==
 
 Tests for equality between `error_category` objects.

@@ -47,7 +47,7 @@ For more information on exceptions, see the articles [Exception Handling (MFC)](
 
 **Header:** afxdisp.h
 
-##  <a name="m_dwhelpcontext"></a>  COleDispatchException::m_dwHelpContext
+## <a name="m_dwhelpcontext"></a> COleDispatchException::m_dwHelpContext
 
 Identifies a help context in your application's help (.HLP) file.
 
@@ -63,7 +63,7 @@ This member is set by the function [AfxThrowOleDispatchException](exception-proc
 
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-##  <a name="m_strdescription"></a>  COleDispatchException::m_strDescription
+## <a name="m_strdescription"></a> COleDispatchException::m_strDescription
 
 Contains a verbal error description, such as "Disk full."
 
@@ -79,7 +79,7 @@ This member is set by the function [AfxThrowOleDispatchException](exception-proc
 
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-##  <a name="m_strhelpfile"></a>  COleDispatchException::m_strHelpFile
+## <a name="m_strhelpfile"></a> COleDispatchException::m_strHelpFile
 
 The framework fills in this string with the name of the application's help file.
 
@@ -87,7 +87,7 @@ The framework fills in this string with the name of the application's help file.
 CString m_strHelpFile;
 ```
 
-##  <a name="m_strsource"></a>  COleDispatchException::m_strSource
+## <a name="m_strsource"></a> COleDispatchException::m_strSource
 
 The framework fills in this string with the name of the application that generated the exception.
 
@@ -99,7 +99,7 @@ CString m_strSource;
 
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-##  <a name="m_wcode"></a>  COleDispatchException::m_wCode
+## <a name="m_wcode"></a> COleDispatchException::m_wCode
 
 Contains an error code specific to your application.
 

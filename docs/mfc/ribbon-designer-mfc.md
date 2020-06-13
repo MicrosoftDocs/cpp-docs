@@ -19,7 +19,7 @@ The ribbon designer creates and stores the ribbon as a resource. When you create
 
 - Adds an entry in the project resource definition script (*.rc). In the following example, IDR_RIBBON is the unique name that identifies the ribbon resource, RT_RIBBON_XML is the resource type, and ribbon.mfcribbon-ms is the name of the resource file.
 
-```
+```cpp
     IDR_RIBBON RT_RIBBON_XML      "res\\ribbon.mfcribbon-ms"
 ```
 
@@ -54,7 +54,7 @@ These are the two ways to add a ribbon resource to your MFC project:
 If your project already has a manually coded ribbon, MFC has functions that you can use to convert the existing ribbon to a ribbon resource. For more information, see [How to: Convert an Existing MFC Ribbon to a Ribbon Resource](../mfc/how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource.md).
 
 > [!NOTE]
->  Ribbons cannot be created in dialog-based applications. For more information, see [Application Type, MFC Application Wizard](../mfc/reference/application-type-mfc-application-wizard.md).
+> Ribbons cannot be created in dialog-based applications. For more information, see [Application Type, MFC Application Wizard](../mfc/reference/application-type-mfc-application-wizard.md).
 
 ## Customizing Ribbons
 

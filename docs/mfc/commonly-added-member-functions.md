@@ -10,6 +10,6 @@ If your dialog box contains pushbuttons other than OK or Cancel, you need to wri
 
 ## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
-[Commonly Overridden Member Functions](../mfc/commonly-overridden-member-functions.md)
+[Dialog Boxes](dialog-boxes.md)<br/>
+[Working with Dialog Boxes in MFC](life-cycle-of-a-dialog-box.md)<br/>
+[Commonly Overridden Member Functions](commonly-overridden-member-functions.md)

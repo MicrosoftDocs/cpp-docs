@@ -10,7 +10,7 @@ ms.assetid: b680f0f7-7795-40a1-a0f6-f48768201c89
 This class provides methods for supporting Uniform Data Transfer and managing connections.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -61,7 +61,7 @@ Class `IDataObjectImpl` provides a default implementation of `IDataObject` and i
 
 **Header:** atlctl.h
 
-##  <a name="dadvise"></a>  IDataObjectImpl::DAdvise
+## <a name="dadvise"></a> IDataObjectImpl::DAdvise
 
 Establishes a connection between the data object and an advise sink.
 
@@ -81,7 +81,7 @@ To terminate the connection, call [DUnadvise](#dunadvise).
 
 See [IDataObject::DAdvise](/windows/win32/api/objidl/nf-objidl-idataobject-dadvise) in the Windows SDK.
 
-##  <a name="dunadvise"></a>  IDataObjectImpl::DUnadvise
+## <a name="dunadvise"></a> IDataObjectImpl::DUnadvise
 
 Terminates a connection previously established through [DAdvise](#dadvise).
 
@@ -93,7 +93,7 @@ HRESULT DUnadvise(DWORD dwConnection);
 
 See [IDataObject::DUnadvise](/windows/win32/api/objidl/nf-objidl-idataobject-dunadvise) in the Windows SDK.
 
-##  <a name="enumdadvise"></a>  IDataObjectImpl::EnumDAdvise
+## <a name="enumdadvise"></a> IDataObjectImpl::EnumDAdvise
 
 Creates an enumerator to iterate through the current advisory connections.
 
@@ -109,7 +109,7 @@ HRESULT DAdvise(
 
 See [IDataObject::EnumDAdvise](/windows/win32/api/objidl/nf-objidl-idataobject-enumdadvise) in the Windows SDK.
 
-##  <a name="enumformatetc"></a>  IDataObjectImpl::EnumFormatEtc
+## <a name="enumformatetc"></a> IDataObjectImpl::EnumFormatEtc
 
 Creates an enumerator to iterate through the `FORMATETC` structures supported by the data object.
 
@@ -127,7 +127,7 @@ See [IDataObject::EnumFormatEtc](/windows/win32/api/objidl/nf-objidl-idataobject
 
 Returns E_NOTIMPL.
 
-##  <a name="firedatachange"></a>  IDataObjectImpl::FireDataChange
+## <a name="firedatachange"></a> IDataObjectImpl::FireDataChange
 
 Sends a change notification back to each advise sink that is currently being managed.
 
@@ -139,7 +139,7 @@ HRESULT FireDataChange();
 
 A standard HRESULT value.
 
-##  <a name="getcanonicalformatetc"></a>  IDataObjectImpl::GetCanonicalFormatEtc
+## <a name="getcanonicalformatetc"></a> IDataObjectImpl::GetCanonicalFormatEtc
 
 Retrieves a logically equivalent `FORMATETC` structure to one that is more complex.
 
@@ -155,7 +155,7 @@ Returns E_NOTIMPL.
 
 See [IDataObject::GetCanonicalFormatEtc](/windows/win32/api/objidl/nf-objidl-idataobject-getcanonicalformatetc) in the Windows SDK.
 
-##  <a name="getdata"></a>  IDataObjectImpl::GetData
+## <a name="getdata"></a> IDataObjectImpl::GetData
 
 Transfers data from the data object to the client.
 
@@ -171,7 +171,7 @@ The *pformatetcIn* parameter must specify a storage medium type of TYMED_MFPICT.
 
 See [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.
 
-##  <a name="getdatahere"></a>  IDataObjectImpl::GetDataHere
+## <a name="getdatahere"></a> IDataObjectImpl::GetDataHere
 
 Similar to `GetData`, except the client must allocate the `STGMEDIUM` structure.
 
@@ -189,7 +189,7 @@ Returns E_NOTIMPL.
 
 See [IDataObject::GetDataHere](/windows/win32/api/objidl/nf-objidl-idataobject-getdatahere) in the Windows SDK.
 
-##  <a name="querygetdata"></a>  IDataObjectImpl::QueryGetData
+## <a name="querygetdata"></a> IDataObjectImpl::QueryGetData
 
 Determines whether the data object supports a particular `FORMATETC` structure for transferring data.
 
@@ -205,7 +205,7 @@ Returns E_NOTIMPL.
 
 See [IDataObject::QueryGetData](/windows/win32/api/objidl/nf-objidl-idataobject-querygetdata) in the Windows SDK.
 
-##  <a name="setdata"></a>  IDataObjectImpl::SetData
+## <a name="setdata"></a> IDataObjectImpl::SetData
 
 Transfers data from the client to the data object.
 

@@ -11,7 +11,7 @@ This class implements a COM server module.
 
 ## Syntax
 
-```
+```cpp
 class CAtlComModule : public _ATL_COM_MODULE
 ```
 
@@ -49,11 +49,11 @@ This class replaces the obsolete [CComModule](../../atl/reference/ccommodule-cla
 
 **Header:** atlbase.h
 
-##  <a name="catlcommodule"></a>  CAtlComModule::CAtlComModule
+## <a name="catlcommodule"></a> CAtlComModule::CAtlComModule
 
 The constructor.
 
-```
+```cpp
 CAtlComModule() throw();
 ```
 
@@ -61,11 +61,11 @@ CAtlComModule() throw();
 
 Initializes the module.
 
-##  <a name="dtor"></a>  CAtlComModule::~CAtlComModule
+## <a name="dtor"></a> CAtlComModule::~CAtlComModule
 
 The destructor.
 
-```
+```cpp
 ~CAtlComModule();
 ```
 
@@ -73,11 +73,11 @@ The destructor.
 
 Frees all class factories.
 
-##  <a name="registerserver"></a>  CAtlComModule::RegisterServer
+## <a name="registerserver"></a> CAtlComModule::RegisterServer
 
 Call this method to update the system registry for each object in the object map.
 
-```
+```cpp
 HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 ```
 
@@ -97,11 +97,11 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls the global function [AtlComModuleRegisterServer](server-registration-global-functions.md#atlcommoduleregisterserver).
 
-##  <a name="registertypelib"></a>  CAtlComModule::RegisterTypeLib
+## <a name="registertypelib"></a> CAtlComModule::RegisterTypeLib
 
 Call this method to register a type library.
 
-```
+```cpp
 HRESULT RegisterTypeLib(LPCTSTR lpszIndex);
 HRESULT RegisterTypeLib();
 ```
@@ -119,11 +119,11 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Adds information about a type library to the system registry. If the module instance contains multiple type libraries, use the first version of this method to specify which type library should be used.
 
-##  <a name="unregisterserver"></a>  CAtlComModule::UnregisterServer
+## <a name="unregisterserver"></a> CAtlComModule::UnregisterServer
 
 Call this method to unregister each object in the object map.
 
-```
+```cpp
 HRESULT UnregisterServer(
     BOOL bRegTypeLib = FALSE,
     const CLSID* pCLSID = NULL);
@@ -145,11 +145,11 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Calls the global function [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver).
 
-##  <a name="unregistertypelib"></a>  CAtlComModule::UnRegisterTypeLib
+## <a name="unregistertypelib"></a> CAtlComModule::UnRegisterTypeLib
 
 Call this method to unregister a type library.
 
-```
+```cpp
 HRESULT UnRegisterTypeLib(LPCTSTR lpszIndex);
 HRESULT UnRegisterTypeLib();
 ```

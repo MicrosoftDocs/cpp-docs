@@ -1,7 +1,6 @@
 ---
 title: "&lt;utility&gt; enums"
 ms.date: "11/04/2016"
-f1_keywords: ["utility/std::chars_format"]
 helpviewer_keywords: ["std::chars_format [C++]"]
 ---
 # &lt;utility&gt; enums

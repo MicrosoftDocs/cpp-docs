@@ -44,6 +44,7 @@ Include the STL/CLR header `<cliext/utility>` to define the template class `pair
 ## Members
 
 ## <a name="pair"></a> pair (STL/CLR)
+
 The template class describes an object that wraps a pair of values.
 
 ### Syntax

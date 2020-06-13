@@ -1,7 +1,7 @@
 ---
 title: "/SUBSYSTEM"
 ms.date: "11/04/2016"
-f1_keywords: ["/subsystem"]
+f1_keywords: ["/subsystem_editbin"]
 helpviewer_keywords: ["/SUBSYSTEM editbin option", "-SUBSYSTEM editbin option", "SUBSYSTEM editbin option"]
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
 ---

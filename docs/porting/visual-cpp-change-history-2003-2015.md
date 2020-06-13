@@ -31,7 +31,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 ## <a name="VC_2015"></a> Visual Studio 2015 Conformance Changes
 
-###  <a name="BK_CRT"></a> C Runtime Library (CRT)
+### <a name="BK_CRT"></a> C Runtime Library (CRT)
 
 #### General Changes
 
@@ -71,7 +71,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **Floating point conformance**
 
-   Many changes to the math library have been made to improve conformance to the IEEE-754 and C11 Annex F specifications with respect to special case inputs such as NaNs and infinities. For example, quiet NaN inputs, which were often treated as errors in previous versions of the library, are no longer treated as errors. See [IEEE 754 Standard](https://standards.ieee.org/standard/754-2008.html) and Annex F of the [C11 Standard](http://www.iso-9899.info/wiki/The_Standard).
+   Many changes to the math library have been made to improve conformance to the IEEE-754 and C11 Annex F specifications with respect to special case inputs such as NaNs and infinities. For example, quiet NaN inputs, which were often treated as errors in previous versions of the library, are no longer treated as errors. See [IEEE 754 Standard](https://standards.ieee.org/standard/754-2008.html) and Annex F of the [C11 Standard](https://www.iso.org/standard/57853.html).
 
    These changes won't cause compile-time errors, but might cause programs to behave differently and more correctly according to the standard.
 
@@ -296,7 +296,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    The CLOCKS_PER_SEC macro now expands to an integer of type `clock_t`, as required by the C language.
 
-####  <a name="BK_STL"></a> C++ Standard Library
+#### <a name="BK_STL"></a> C++ Standard Library
 
 To enable new optimizations and debugging checks, the Visual Studio implementation of the C++ Standard Library intentionally breaks binary compatibility from one version to the next. Therefore, when the C++ Standard Library is used, object files and static libraries that are compiled by using different versions can't be mixed in one binary (EXE or DLL), and C++ Standard Library objects can't be passed between binaries that are compiled by using different versions. Such mixing emits linker errors about _MSC_VER mismatches. (_MSC_VER is the macro that contains the compiler's major version—for example, 1800 for Visual Studio 2013.) This check can't detect DLL mixing, and can't detect mixing that involves Visual Studio 2008 or earlier.
 
@@ -378,7 +378,7 @@ To enable new optimizations and debugging checks, the Visual Studio implementati
 
    The nonstandard `launch::any` and `launch::sync` policies were removed. Instead, for `launch::any`, use `launch:async | launch:deferred`. For `launch::sync`, use `launch::deferred`. See [launch Enumeration](../standard-library/future-enums.md#launch).
 
-####  <a name="BK_MFC"></a> MFC and ATL
+#### <a name="BK_MFC"></a> MFC and ATL
 
 - **Microsoft Foundation Classes (MFC)**
 
@@ -386,7 +386,7 @@ To enable new optimizations and debugging checks, the Visual Studio implementati
 
    The Visual C++ Redistributable Package still includes this library.
 
-####  <a name="BK_ConcRT"></a> Concurrency Runtime
+#### <a name="BK_ConcRT"></a> Concurrency Runtime
 
 - **Yield macro from Windows.h conflicting with concurrency::Context::Yield**
 
@@ -414,7 +414,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - [Conformance Improvements in Update 3](#VS_Update3)
 
-###  <a name="VS_RTM"></a> Conformance Improvements in Visual Studio 2015
+### <a name="VS_RTM"></a> Conformance Improvements in Visual Studio 2015
 
 - /Zc:forScope- option
 
@@ -651,11 +651,11 @@ Although these differences can affect your source code or other build artifacts,
     enum class my_type : size_t {};
     ```
 
-   Then, change your definition of **placement new** and **delete** to use this type as the second argument instead of `size_t`. You’ll also need to update the calls to placement new to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **new** and **delete** to cast back to the integer type. You don’t need to use an **enum** for this; a class type with a `size_t` member would also work.
+   Then, change your definition of **placement new** and **delete** to use this type as the second argument instead of `size_t`. You'll also need to update the calls to placement new to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **new** and **delete** to cast back to the integer type. You don't need to use an **enum** for this; a class type with a `size_t` member would also work.
 
    An alternative solution is that you might be able to eliminate the **placement new** altogether. If your code uses **placement new** to implement a memory pool where the placement argument is the size of the object being allocated or deleted, then sized deallocation feature might be suitable to replace your own custom memory pool code, and you can get rid of the placement functions and just use your own two-argument **delete** operator instead of the placement functions.
 
-   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument delete functions don’t exist and won't cause a conflict with your **placement delete** operator.
+   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument delete functions don't exist and won't cause a conflict with your **placement delete** operator.
 
 - **Union data members**
 
@@ -1647,7 +1647,7 @@ Although these differences can affect your source code or other build artifacts,
     A::A(const A&) {}
 
     //b.cpp
-    // compile with cl.exe /nologo /LD /EHsc /Osx b.cpp
+    // compile with cl.exe /nologo /LD /EHsc /Osx b.cpp
     #pragma comment(lib, "A")
     class __declspec(dllimport) A
     {
@@ -1664,7 +1664,7 @@ Although these differences can affect your source code or other build artifacts,
     };
 
     //c.cpp
-    #pragma comment(lib, "A")
+    #pragma comment(lib, "A")
     #pragma comment(lib, "B")
     class __declspec(dllimport) A
     {
@@ -1690,7 +1690,7 @@ Although these differences can affect your source code or other build artifacts,
     C c;
     ```
 
-###  <a name="VS_Update1"></a> Conformance Improvements in Update 1
+### <a name="VS_Update1"></a> Conformance Improvements in Update 1
 
 - **Private virtual base classes and indirect inheritance**
 
@@ -2166,7 +2166,7 @@ Although these differences can affect your source code or other build artifacts,
     warning C4720: unreachable code
     ```
 
-   In many cases, this warning might only be issued when compiling with optimizations enabled, since optimizations may inline more function calls, eliminate redundant code, or otherwise make it possible to determine that certain code is unreachable. We have observed that new instances of warning C4720 have frequently occurred in **try/catch** blocks, especially in relation to use of [std::find](assetId:///std::find?qualifyHint=False&autoUpgrade=True).
+   In many cases, this warning might only be issued when compiling with optimizations enabled, since optimizations may inline more function calls, eliminate redundant code, or otherwise make it possible to determine that certain code is unreachable. We have observed that new instances of warning C4720 have frequently occurred in **try/catch** blocks, especially in relation to use of [std::find](../standard-library/algorithm-functions.md#find).
 
    Example (before)
 
@@ -2194,7 +2194,7 @@ Although these differences can affect your source code or other build artifacts,
     }
     ```
 
-###  <a name="VS_Update2"></a> Conformance Improvements in Update 2
+### <a name="VS_Update2"></a> Conformance Improvements in Update 2
 
 - **Additional warnings and errors might be issued as a result of partial support for expression SFINAE**
 
@@ -2456,7 +2456,7 @@ Although these differences can affect your source code or other build artifacts,
 
    Fixing code that's written in this way might require that the operator definitions be moved out of a header file and into a corresponding source file.
 
-###  <a name="VS_Update3"></a> Conformance Improvements in Update 3
+### <a name="VS_Update3"></a> Conformance Improvements in Update 3
 
 - **std::is_convertable now detects self-assignment**  (standard library)
 
@@ -2847,7 +2847,7 @@ Although these differences can affect your source code or other build artifacts,
 
    In Visual Studio 2012, the `E1` in expression `E1::b` resolved to `::E1` in the global scope. In Visual Studio 2013, `E1` in expression `E1::b` resolves to the `typedef E2` definition in `main()` and has type `::E2`.
 
-- Object layout has changed. On x64, the object layout of a class may change from previous releases. If it has a **virtual** function but it doesn’t have a base class that has a **virtual** function, the object model of the compiler inserts a pointer to a **virtual** function table after the data member layout. This means the layout may not be optimal in all cases. In previous releases, an optimization for x64 would try to improve the layout for you, but because it failed to work correctly in complex code situations, it was removed in Visual Studio 2013. For example, consider this code:
+- Object layout has changed. On x64, the object layout of a class may change from previous releases. If it has a **virtual** function but it doesn't have a base class that has a **virtual** function, the object model of the compiler inserts a pointer to a **virtual** function table after the data member layout. This means the layout may not be optimal in all cases. In previous releases, an optimization for x64 would try to improve the layout for you, but because it failed to work correctly in complex code situations, it was removed in Visual Studio 2013. For example, consider this code:
 
     ```cpp
     __declspec(align(16)) struct S1 {
@@ -2925,7 +2925,7 @@ The C++ compiler in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEV
 
 - You must use `#include <algorithm>` when you call `std::min()` or `std::max()`.
 
-- If your existing code uses the previous release’s simulated scoped enums—traditional unscoped enums wrapped in namespaces—you have to change it. For example, if you referred to the type `std::future_status::future_status`, now you have to say `std::future_status`. However, most code is unaffected—for example, `std::future_status::ready` still compiles.
+- If your existing code uses the previous release's simulated scoped enums—traditional unscoped enums wrapped in namespaces—you have to change it. For example, if you referred to the type `std::future_status::future_status`, now you have to say `std::future_status`. However, most code is unaffected—for example, `std::future_status::ready` still compiles.
 
 - `explicit operator bool()` is stricter than operator unspecified-bool-type(). `explicit operator bool()` permits explicit conversions to bool—for example, given `shared_ptr<X> sp`, both `static_cast<bool>(sp)` and `bool b(sp)` are valid—and Boolean-testable "contextual conversions" to bool—for example, `if (sp)`, `!sp`, `sp &&` whatever. However, `explicit operator bool()` forbids implicit conversions to bool, so you can't say `bool b = sp;` and given a bool return type, you can't say `return sp`.
 
@@ -2965,19 +2965,19 @@ The C++ compiler in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEV
 
 - Signatures are changed to accommodate message handlers. The parameter lists of the following functions have been changed to use newly added ON_WM_* message handlers:
 
-   - `CWnd::OnDisplayChange` changed to (UINT, int, int) instead of (WPARAM, LPARAM) so that the new ON_WM_DISPLAYCHANGE macro can be used in the message map.
+  - `CWnd::OnDisplayChange` changed to (UINT, int, int) instead of (WPARAM, LPARAM) so that the new ON_WM_DISPLAYCHANGE macro can be used in the message map.
 
-   - `CFrameWnd::OnDDEInitiate` changed to (CWnd*, UINT, UNIT) instead of (WPARAM, LPARAM) so that the new ON_WM_DDE_INITIATE macro can be used in the message map.
+  - `CFrameWnd::OnDDEInitiate` changed to (CWnd*, UINT, UNIT) instead of (WPARAM, LPARAM) so that the new ON_WM_DDE_INITIATE macro can be used in the message map.
 
-   - `CFrameWnd::OnDDEExecute` changed to (CWnd*, HANDLE) instead of (WPARAM, LPARAM) so that the new ON_WM_DDE_EXECUTE macro can be used in the message map.
+  - `CFrameWnd::OnDDEExecute` changed to (CWnd*, HANDLE) instead of (WPARAM, LPARAM) so that the new ON_WM_DDE_EXECUTE macro can be used in the message map.
 
-   - `CFrameWnd::OnDDETerminate` changed to (CWnd*) as the parameter instead of (WPARAM, LPARAM) so that the new ON_WM_DDE_TERMINATE macro can be used in the message map.
+  - `CFrameWnd::OnDDETerminate` changed to (CWnd*) as the parameter instead of (WPARAM, LPARAM) so that the new ON_WM_DDE_TERMINATE macro can be used in the message map.
 
-   - `CMFCMaskedEdit::OnCut` changed to no parameters instead of (WPARAM, LPARAM) so that the new ON_WM_CUT macro can be used in the message map.
+  - `CMFCMaskedEdit::OnCut` changed to no parameters instead of (WPARAM, LPARAM) so that the new ON_WM_CUT macro can be used in the message map.
 
-   - `CMFCMaskedEdit::OnClear` changed to no parameters instead of (WPARAM, LPARAM) so that the new ON_WM_CLEAR macro can be used in the message map.
+  - `CMFCMaskedEdit::OnClear` changed to no parameters instead of (WPARAM, LPARAM) so that the new ON_WM_CLEAR macro can be used in the message map.
 
-   - `CMFCMaskedEdit::OnPaste` changed to no parameters instead of (WPARAM, LPARAM) so that the new ON_WM_PASTE macro can be used in the message map.
+  - `CMFCMaskedEdit::OnPaste` changed to no parameters instead of (WPARAM, LPARAM) so that the new ON_WM_PASTE macro can be used in the message map.
 
 - `#ifdef` directives in the MFC header files are removed. Numerous `#ifdef` directives in the MFC header files related to unsupported versions of Windows (WINVER &lt; 0x0501) are removed.
 
@@ -3033,7 +3033,7 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 ### Standard Library
 
-- Following a breaking change between the C++98/03 and C++11 standards, using explicit template arguments to call `make_pair()` — as in `make_pair<int, int>(x, y)` — typically doesn't compile in Visual C++ in Visual Studio 2012. The solution is to always call `make_pair() `without explicit template arguments — as in `make_pair(x, y)`. Providing explicit template arguments defeats the purpose of the function. If you require precise control over the resulting type, use `pair` instead of `make_pair` — as in `pair<short, short>(int1, int2)`.
+- Following a breaking change between the C++98/03 and C++11 standards, using explicit template arguments to call `make_pair()` — as in `make_pair<int, int>(x, y)` — typically doesn't compile in Visual C++ in Visual Studio 2012. The solution is to always call `make_pair()` without explicit template arguments — as in `make_pair(x, y)`. Providing explicit template arguments defeats the purpose of the function. If you require precise control over the resulting type, use `pair` instead of `make_pair` — as in `pair<short, short>(int1, int2)`.
 
 - Another breaking change between the C++98/03 and C++11 standards: When A is implicitly convertible to B and B is implicitly convertible to C, but A isn't implicitly convertible to C, C++98/03 and Visual Studio 2010 permitted `pair<A, X>` to be converted (implicitly or explicitly) to `pair<C, X>`. (The other type, X, isn't of interest here, and isn't specific to the first type in the pair.) The C++ compiler in Visual Studio 2012 detects that A isn't implicitly convertible to C, and removes the pair conversion from overload resolution. This change is a positive for many scenarios. For example, overloading `func(const pair<int, int>&)` and `func(const pair<string, string>&)`, and calling `func()` with `pair<const char *, const char *>` will compile with this change. However, this change breaks code that relied on aggressive pair conversions. Such code can typically be fixed by performing one part of the conversion explicitly—for example, by passing `make_pair(static_cast<B>(a), x)` to a function that expects `pair<C, X>`.
 
@@ -3051,7 +3051,7 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 ### CRT
 
-- The C Runtime (CRT) heap, which is used for new and malloc(), is no longer private. The CRT now uses the process heap. This means that the heap isn't destroyed when a DLL is unloaded, so DLLs that link statically to the CRT must ensure memory that's allocated by the DLL code is cleaned up before it’s unloaded.
+- The C Runtime (CRT) heap, which is used for new and malloc(), is no longer private. The CRT now uses the process heap. This means that the heap isn't destroyed when a DLL is unloaded, so DLLs that link statically to the CRT must ensure memory that's allocated by the DLL code is cleaned up before it's unloaded.
 
 - The `iscsymf()` function asserts with negative values.
 
@@ -3101,81 +3101,81 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - Changed the signature of `OnExitSizeMove` method to agree with the ON_WM_EXITSIZEMOVE macro:
 
-   - `CFrameWndEx`
+  - `CFrameWndEx`
 
-   - `CMDIFrameWndEx`
+  - `CMDIFrameWndEx`
 
-   - `CPaneFrameWnd`
+  - `CPaneFrameWnd`
 
 - Changed the name and signature of `OnDWMCompositionChanged` to agree with the ON_WM_DWMCOMPOSITIONCHANGED macro:
 
-   - `CFrameWndEx`
+  - `CFrameWndEx`
 
-   - `CMDIFrameWndEx`
+  - `CMDIFrameWndEx`
 
-   - `CPaneFrameWnd`
+  - `CPaneFrameWnd`
 
 - Changed the signature of `OnMouseLeave` method to agree with the ON_WM_MOUSELEAVE macro:
 
-   - `CMFCCaptionBar`
+  - `CMFCCaptionBar`
 
-   - `CMFCColorBar`
+  - `CMFCColorBar`
 
-   - `CMFCHeaderCtrl`
+  - `CMFCHeaderCtrl`
 
-   - `CMFCProperySheetListBox`
+  - `CMFCProperySheetListBox`
 
-   - `CMFCRibbonBar`
+  - `CMFCRibbonBar`
 
-   - `CMFCRibbonPanelMenuBar`
+  - `CMFCRibbonPanelMenuBar`
 
-   - `CMFCRibbonRichEditCtrl`
+  - `CMFCRibbonRichEditCtrl`
 
-   - `CMFCSpinButtonCtrl`
+  - `CMFCSpinButtonCtrl`
 
-   - `CMFCToolBar` ReplaceThisText
+  - `CMFCToolBar` ReplaceThisText
 
-   - `CMFCToolBarComboBoxEdit`
+  - `CMFCToolBarComboBoxEdit`
 
-   - `CMFCToolBarEditCtrl`
+  - `CMFCToolBarEditCtrl`
 
-   - `CMFCAutoHideBar`
+  - `CMFCAutoHideBar`
 
 - Changed the signature of `OnPowerBroadcast` to agree with the ON_WM_POWERBROADCAST macro:
 
-   - `CFrameWndEx`
+  - `CFrameWndEx`
 
-   - `CMDIFrameWndEx`
+  - `CMDIFrameWndEx`
 
 - Changed the signature of `OnStyleChanged` to agree with the ON_WM_STYLECHANGED macro:
 
-   - `CMFCListCtrl`
+  - `CMFCListCtrl`
 
-   - `CMFCStatusBar`
+  - `CMFCStatusBar`
 
 - Renamed the internal method `FontFamalyProcFonts` to `FontFamilyProcFonts`.
 
 - Removed numerous global static `CString` objects to eliminate memory leaks in some situations (replaced with #defines), and the following class member variables:
 
-   - `CKeyBoardManager::m_strDelimiter`
+  - `CKeyBoardManager::m_strDelimiter`
 
-   - `CMFCPropertyGridProperty::m_strFormatChar`
+  - `CMFCPropertyGridProperty::m_strFormatChar`
 
-   - `CMFCPropertyGridProperty::m_strFormatShort`
+  - `CMFCPropertyGridProperty::m_strFormatShort`
 
-   - `CMFCPropertyGridProperty::m_strFormatLong`
+  - `CMFCPropertyGridProperty::m_strFormatLong`
 
-   - `CMFCPropertyGridProperty::m_strFormatUShort`
+  - `CMFCPropertyGridProperty::m_strFormatUShort`
 
-   - `CMFCPropertyGridProperty::m_strFormatULong`
+  - `CMFCPropertyGridProperty::m_strFormatULong`
 
-   - `CMFCPropertyGridProperty::m_strFormatFloat`
+  - `CMFCPropertyGridProperty::m_strFormatFloat`
 
-   - `CMFCPropertyGridProperty::m_strFormatDouble`
+  - `CMFCPropertyGridProperty::m_strFormatDouble`
 
-   - `CMFCToolBarImages::m_strPngResType`
+  - `CMFCToolBarImages::m_strPngResType`
 
-   - `CMFCPropertyGridProperty::m_strFormat`
+  - `CMFCPropertyGridProperty::m_strFormat`
 
 - Changed the signature of `CKeyboardManager::ShowAllAccelerators` and removed the accelerator delimiter parameter.
 
@@ -3185,21 +3185,21 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - Moved D2D-related methods from AFX_GLOBAL_DATA to _AFX_D2D_STATE:
 
-   - `GetDirectD2dFactory`
+  - `GetDirectD2dFactory`
 
-   - `GetWriteFactory`
+  - `GetWriteFactory`
 
-   - `GetWICFactory`
+  - `GetWICFactory`
 
-   - `InitD2D`
+  - `InitD2D`
 
-   - `ReleaseD2DRefs`
+  - `ReleaseD2DRefs`
 
-   - `IsD2DInitialized`
+  - `IsD2DInitialized`
 
-   - `D2D1MakeRotateMatrix`
+  - `D2D1MakeRotateMatrix`
 
-   - Instead of calling, for example, `afxGlobalData.IsD2DInitialized`, call `AfxGetD2DState->IsD2DInitialized`.
+  - Instead of calling, for example, `afxGlobalData.IsD2DInitialized`, call `AfxGetD2DState->IsD2DInitialized`.
 
 - Removed obsolete ATL*.CPP files from the \atlmfc\include\ folder.
 
@@ -3307,21 +3307,21 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - The compiler no longer supports multiple attributes that were directly associated with ATL Server. The following attributes are no longer supported:
 
-   - perf_counter
+  - perf_counter
 
-   - perf_object
+  - perf_object
 
-   - perfmon
+  - perfmon
 
-   - request_handler
+  - request_handler
 
-   - soap_handler
+  - soap_handler
 
-   - soap_header
+  - soap_header
 
-   - soap_method
+  - soap_method
 
-   - tag_name
+  - tag_name
 
 ### Visual Studio C++ projects
 
@@ -3339,27 +3339,27 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - The following global variables have been removed:
 
-   - _osplatform
+  - _osplatform
 
-   - _osver
+  - _osver
 
-   - _winmajor
+  - _winmajor
 
-   - _winminor
+  - _winminor
 
-   - _winver
+  - _winver
 
 - The following functions have been removed. Use the Windows API functions `GetVersion` or `GetVersionEx` instead:
 
-   - _get_osplatform
+  - _get_osplatform
 
-   - _get_osver
+  - _get_osver
 
-   - _get_winmajor
+  - _get_winmajor
 
-   - _get_winminor
+  - _get_winminor
 
-   - _get_winver
+  - _get_winver
 
 - The syntax for SAL Annotations has changed. For more information, see [SAL Annotations](../c-runtime-library/sal-annotations.md).
 
@@ -3445,15 +3445,15 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - Some functions now return const pointers. The old, non-const behavior can be reinstated by defining _CONST_RETURN. The affected functions are
 
-   - memchr, wmemchr
+  - memchr, wmemchr
 
-   - strchr, wcschr, _mbschr, _mbschr_l
+  - strchr, wcschr, _mbschr, _mbschr_l
 
-   - strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
+  - strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 
-   - strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
+  - strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 
-   - strstr, wcsstr, _mbsstr, _mbsstr_l
+  - strstr, wcsstr, _mbsstr, _mbsstr_l
 
 - When linking with Setargv.obj or Wsetargv.obj, it's no longer possible to suppress the expansion of a wildcard character on the command line by enclosing it in double quotes. For more information, see [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).
 

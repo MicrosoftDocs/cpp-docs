@@ -1,7 +1,7 @@
 ---
 title: "Logical Negation Operator: !"
 ms.date: "08/27/2018"
-f1_keywords: ["!", "Not"]
+f1_keywords: ["!"]
 helpviewer_keywords: ["! operator", "NOT operator", "logical negation"]
 ms.assetid: 650add9f-a7bc-426c-b01d-5fc6a81c8b62
 ---

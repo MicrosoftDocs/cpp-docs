@@ -34,7 +34,7 @@ The simplest and most recommended way to create an active document container app
 
    - In `CMyProjView::OnPreparePrinting`, replace the function contents with the following code:
 
-     [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
+     [!code-cpp[NVC_MFCDocView#56](codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
    `OnPreparePrinting` provides printing support. This code replaces `DoPreparePrinting`, which is the default print preparation.
 
@@ -52,4 +52,4 @@ The simplest and most recommended way to create an active document container app
 
 ## See also
 
-[Active Document Containment](../mfc/active-document-containment.md)
+[Active Document Containment](active-document-containment.md)

@@ -24,7 +24,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 > [!NOTE]
 > A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. Some of these values are different for each build configuration. You must set these environment values yourself if you don't use one of the shortcuts. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md). Because the build environment is complex, we strongly recommend you use a developer command prompt shortcut instead of building your own.
 
-These instructions vary depending on which version of Visual Studio you are using. Before continuing, make sure that the version selector in the upper left of this page is set correctly.
+These instructions vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 
@@ -53,9 +53,8 @@ If you're running a different version of Windows, look in your Start menu or Sta
 If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu, and then scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
 
 If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
-   
-::: moniker-end
 
+::: moniker-end
 
 Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 

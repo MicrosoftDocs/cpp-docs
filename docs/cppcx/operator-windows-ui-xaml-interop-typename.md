@@ -21,7 +21,7 @@ Returns a [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.intero
 
 `TypeName` is the language-neutral Windows Runtime struct for representing type information. [Platform::Type](../cppcx/platform-type-class.md) is specific to C++ and can’t be passed across the application binary interface (ABI). Here's one use of `TypeName`, in the [Navigate](/uwp/api/windows.ui.xaml.controls.frame.navigate) function:
 
-```
+```cpp
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
 
@@ -29,8 +29,7 @@ rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 
 The next example shows how to convert between `TypeName` and `Type`.
 
-```
-
+```cpp
 // Convert from Type to TypeName
 Windows::UI::Xaml::Interop::TypeName tn = TypeName(MainPage::typeid);
 
@@ -40,7 +39,7 @@ Type^ tx2 = (Type^)(tn);
 
 ## .NET Framework Equivalent
 
-.NET Framework programs project `TypeName` as [System.Type](assetId:///System.Type?qualifyHint=False&autoUpgrade=True).
+.NET Framework programs project `TypeName` as [System.Type](/dotnet/api/system.type).
 
 ### Requirements
 

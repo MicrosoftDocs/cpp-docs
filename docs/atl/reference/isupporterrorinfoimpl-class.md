@@ -51,7 +51,7 @@ Class `ISupportErrorInfoImpl` provides a default implementation of `ISupportErro
 
 **Header:** atlcom.h
 
-##  <a name="interfacesupportserrorinfo"></a>  ISupportErrorInfoImpl::InterfaceSupportsErrorInfo
+## <a name="interfacesupportserrorinfo"></a> ISupportErrorInfoImpl::InterfaceSupportsErrorInfo
 
 Indicates whether the interface identified by `riid` supports the [IErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo) interface.
 

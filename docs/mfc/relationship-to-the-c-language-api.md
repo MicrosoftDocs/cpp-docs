@@ -1,7 +1,6 @@
 ---
 title: "Relationship to the C-Language API"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.mfc"]
 helpviewer_keywords: ["books [MFC], about MFC and Windows SDK", "books [MFC]", "MFC, Windows API", "Visual C, Windows API calls", "Windows API [MFC], and MFC"]
 ms.assetid: 334e8efc-f3cc-4018-bc2e-02908b2a39fe
 ---
@@ -12,7 +11,7 @@ The single characteristic that sets the Microsoft Foundation Class (MFC) Library
 Because you sometimes need to make native Windows function calls, you should have access to the C-language Windows API documentation. This documentation is included with Microsoft Visual C++.
 
 > [!NOTE]
->  For an overview of how the MFC Library framework operates, see [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md).
+> For an overview of how the MFC Library framework operates, see [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md).
 
 ## See also
 

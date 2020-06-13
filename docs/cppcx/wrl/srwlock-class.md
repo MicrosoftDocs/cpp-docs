@@ -61,7 +61,7 @@ Name                                      | Description
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="tilde-srwlock"></a>SRWLock::~SRWLock
+## <a name="tilde-srwlock"></a> SRWLock::~SRWLock
 
 Deinitializes an instance of the `SRWLock` class.
 
@@ -69,7 +69,7 @@ Deinitializes an instance of the `SRWLock` class.
 ~SRWLock();
 ```
 
-## <a name="lockexclusive"></a>SRWLock::LockExclusive
+## <a name="lockexclusive"></a> SRWLock::LockExclusive
 
 Acquires an `SRWLock` object in exclusive mode.
 
@@ -90,7 +90,7 @@ Pointer to an `SRWLock` object.
 
 An `SRWLock` object in exclusive mode.
 
-## <a name="lockshared"></a>SRWLock::LockShared
+## <a name="lockshared"></a> SRWLock::LockShared
 
 Acquires an `SRWLock` object in shared mode.
 
@@ -111,7 +111,7 @@ Pointer to an `SRWLock` object.
 
 An `SRWLock` object in shared mode.
 
-## <a name="srwlock-constructor"></a>SRWLock::SRWLock
+## <a name="srwlock-constructor"></a> SRWLock::SRWLock
 
 Initializes a new instance of the `SRWLock` class.
 
@@ -119,7 +119,7 @@ Initializes a new instance of the `SRWLock` class.
 SRWLock();
 ```
 
-## <a name="srwlock-data-member"></a>SRWLock::SRWLock_
+## <a name="srwlock-data-member"></a> SRWLock::SRWLock_
 
 Contains the underlying lock variable for the current `SRWLock` object.
 
@@ -127,7 +127,7 @@ Contains the underlying lock variable for the current `SRWLock` object.
 SRWLOCK SRWLock_;
 ```
 
-## <a name="trylockexclusive"></a>SRWLock::TryLockExclusive
+## <a name="trylockexclusive"></a> SRWLock::TryLockExclusive
 
 Attempts to acquire a `SRWLock` object in exclusive mode for the current or specified `SRWLock` object. If the call is successful, the calling thread takes ownership of the lock.
 
@@ -148,7 +148,7 @@ Pointer to an `SRWLock` object.
 
 If successful, an `SRWLock` object in exclusive mode and the calling thread takes ownership of the lock. Otherwise, an `SRWLock` object whose state is invalid.
 
-## <a name="trylockshared"></a>SRWLock::TryLockShared
+## <a name="trylockshared"></a> SRWLock::TryLockShared
 
 Attempts to acquire a `SRWLock` object in shared mode for the current or specified `SRWLock` object.
 

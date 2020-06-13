@@ -1,7 +1,7 @@
 ---
 title: "IRowsetIdentityImpl Class"
 ms.date: "11/04/2016"
-f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IsSameRow", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow", "ATL::IRowsetIdentityImpl::IsSameRow"]
+f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow", "ATL::IRowsetIdentityImpl::IsSameRow"]
 helpviewer_keywords: ["IRowsetIdentityImpl class", "IsSameRow method"]
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
 ---

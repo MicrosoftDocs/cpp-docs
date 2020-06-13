@@ -10,7 +10,7 @@ ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
 This class provides methods for creating and managing ATL controls.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -66,7 +66,7 @@ For a demonstration of `CComControl` methods and data members, see the [CIRC](..
 
 **Header:** atlctl.h
 
-##  <a name="ccomcontrol"></a>  CComControl::CComControl
+## <a name="ccomcontrol"></a> CComControl::CComControl
 
 The constructor.
 
@@ -78,7 +78,7 @@ CComControl();
 
 Calls the [CComControlBase](ccomcontrolbase-class.md#ccomcontrolbase) constructor, passing the `m_hWnd` data member inherited through [CWindowImpl](../../atl/reference/cwindowimpl-class.md).
 
-##  <a name="controlqueryinterface"></a>  CComControl::ControlQueryInterface
+## <a name="controlqueryinterface"></a> CComControl::ControlQueryInterface
 
 Retrieves a pointer to the requested interface.
 
@@ -102,7 +102,7 @@ Only handles interfaces in the COM map table.
 
 [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/cpp/ccomcontrol-class_1.cpp)]
 
-##  <a name="createcontrolwindow"></a>  CComControl::CreateControlWindow
+## <a name="createcontrolwindow"></a> CComControl::CreateControlWindow
 
 By default, creates a window for the control by calling `CWindowImpl::Create`.
 
@@ -126,7 +126,7 @@ Override this method if you want to do something other than create a single wind
 
 [!code-cpp[NVC_ATL_COM#16](../../atl/codesnippet/cpp/ccomcontrol-class_2.cpp)]
 
-##  <a name="fireonchanged"></a>  CComControl::FireOnChanged
+## <a name="fireonchanged"></a> CComControl::FireOnChanged
 
 Notifies the container's sink that a control property has changed.
 
@@ -153,7 +153,7 @@ This method is safe to call even if your control doesn't support connection poin
 
 [!code-cpp[NVC_ATL_COM#17](../../atl/codesnippet/cpp/ccomcontrol-class_3.cpp)]
 
-##  <a name="fireonrequestedit"></a>  CComControl::FireOnRequestEdit
+## <a name="fireonrequestedit"></a> CComControl::FireOnRequestEdit
 
 Notifies the container's sink that a control property is about to change and that the object is asking the sink how to proceed.
 
@@ -180,7 +180,7 @@ This method is safe to call even if your control doesn't support connection poin
 
 [!code-cpp[NVC_ATL_COM#18](../../atl/codesnippet/cpp/ccomcontrol-class_4.cpp)]
 
-##  <a name="messagebox"></a>  CComControl::MessageBox
+## <a name="messagebox"></a> CComControl::MessageBox
 
 Call this method to create, display, and operate a message box.
 

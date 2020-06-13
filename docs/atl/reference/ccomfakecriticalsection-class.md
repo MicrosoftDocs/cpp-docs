@@ -36,7 +36,7 @@ Typically, you use `CComFakeCriticalSection` through a `typedef` name, either `A
 
 **Header:** atlcore.h
 
-##  <a name="init"></a>  CComFakeCriticalSection::Init
+## <a name="init"></a> CComFakeCriticalSection::Init
 
 Does nothing since there is no critical section.
 
@@ -48,7 +48,7 @@ HRESULT Init() throw();
 
 Returns S_OK.
 
-##  <a name="lock"></a>  CComFakeCriticalSection::Lock
+## <a name="lock"></a> CComFakeCriticalSection::Lock
 
 Does nothing since there is no critical section.
 
@@ -60,7 +60,7 @@ HRESULT Lock() throw();
 
 Returns S_OK.
 
-##  <a name="term"></a>  CComFakeCriticalSection::Term
+## <a name="term"></a> CComFakeCriticalSection::Term
 
 Does nothing since there is no critical section.
 
@@ -72,7 +72,7 @@ HRESULT Term() throw();
 
 Returns S_OK.
 
-##  <a name="unlock"></a>  CComFakeCriticalSection::Unlock
+## <a name="unlock"></a> CComFakeCriticalSection::Unlock
 
 Does nothing since there is no critical section.
 

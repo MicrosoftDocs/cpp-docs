@@ -24,7 +24,7 @@ The **/GS** compiler option causes the compiler to test for buffer overruns by i
 An expert manual code review or external analysis might determine that a function is safe from a buffer overrun. In that case, you can suppress security checks for a function by applying the **__declspec(safebuffers)** keyword to the function declaration.
 
 > [!CAUTION]
->  Buffer security checks provide important security protection and have a negligible affect on performance. Therefore, we recommend that you do not suppress them, except in the rare case where the performance of a function is a critical concern and the function is known to be safe.
+> Buffer security checks provide important security protection and have a negligible affect on performance. Therefore, we recommend that you do not suppress them, except in the rare case where the performance of a function is a critical concern and the function is known to be safe.
 
 ## Inline Functions
 

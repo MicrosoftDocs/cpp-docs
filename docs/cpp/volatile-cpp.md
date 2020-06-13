@@ -54,7 +54,7 @@ When the **/volatile:ms** compiler option is used—by default when architecture
 This enables volatile objects to be used for memory locks and releases in multithreaded applications.
 
 > [!NOTE]
->  When it relies on the enhanced guarantee that's provided when the **/volatile:ms** compiler option is used, the code is non-portable.
+> When it relies on the enhanced guarantee that's provided when the **/volatile:ms** compiler option is used, the code is non-portable.
 
 **END Microsoft Specific**
 

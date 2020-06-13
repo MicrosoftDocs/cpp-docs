@@ -1,7 +1,7 @@
 ---
 title: "Math Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["c.constants"]
+f1_keywords: ["c.constants.math"]
 helpviewer_keywords: ["M_PI constant", "M_PI_2 constant", "math constants", "M_2_PI constant", "M_1_PI constant", "M_E constant", "USE_MATH_DEFINES constant", "M_LOG2E constant", "M_LOG10E constant", "M_LN10 constant", "M_SQRT1_2 constant", "_USE_MATH_DEFINES constant", "M_PI_4 constant", "constants, math", "M_2_SQRTPI constant", "M_SQRT2 constant", "M_LN2 constant"]
 ms.assetid: db533c3f-6ae8-4520-9d35-c8fabbef3529
 ---

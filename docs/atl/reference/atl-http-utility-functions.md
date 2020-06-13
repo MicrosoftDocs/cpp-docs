@@ -153,7 +153,7 @@ Returns TRUE on success, FALSE on failure.
 
 Call this function to get the default port number associated with a particular Internet protocol or scheme.
 
-```
+```cpp
 inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();
 ```
 
@@ -170,7 +170,7 @@ The [ATL_URL_PORT](atl-typedefs.md#atl_url_port) associated with the specified s
 
 Call this function to find out whether a character is safe for use in a URL.
 
-```
+```cpp
 inline BOOL AtlIsUnsafeUrlChar(char chIn) throw();
 ```
 

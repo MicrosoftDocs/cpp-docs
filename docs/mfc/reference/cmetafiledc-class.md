@@ -62,7 +62,7 @@ For more information on `CMetaFileDC`, see [Device Contexts](../../mfc/device-co
 
 **Header:** afxext.h
 
-##  <a name="close"></a>  CMetaFileDC::Close
+## <a name="close"></a> CMetaFileDC::Close
 
 Closes the metafile device context and creates a Windows metafile handle that can be used to play the metafile by using the [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) member function.
 
@@ -80,7 +80,7 @@ The Windows metafile handle can also be used to manipulate the metafile with Win
 
 Delete the metafile after use by calling the Windows [DeleteMetaFile](/windows/win32/api/wingdi/nf-wingdi-deletemetafile) function.
 
-##  <a name="closeenhanced"></a>  CMetaFileDC::CloseEnhanced
+## <a name="closeenhanced"></a> CMetaFileDC::CloseEnhanced
 
 Closes an enhanced-metafile device context and returns a handle that identifies an enhanced-format metafile.
 
@@ -114,7 +114,7 @@ An application can use the enhanced-metafile handle returned by this function to
 
 When the application no longer needs the enhanced metafile handle, it should release the handle by calling the Win32 `DeleteEnhMetaFile` function.
 
-##  <a name="cmetafiledc"></a>  CMetaFileDC::CMetaFileDC
+## <a name="cmetafiledc"></a> CMetaFileDC::CMetaFileDC
 
 Construct a `CMetaFileDC` object in two steps.
 
@@ -126,7 +126,7 @@ CMetaFileDC();
 
 First, call `CMetaFileDC`, then call `Create`, which creates the Windows metafile device context and attaches it to the `CMetaFileDC` object.
 
-##  <a name="create"></a>  CMetaFileDC::Create
+## <a name="create"></a> CMetaFileDC::Create
 
 Construct a `CMetaFileDC` object in two steps.
 
@@ -147,7 +147,7 @@ Nonzero if the function is successful; otherwise 0.
 
 First, call the constructor `CMetaFileDC`, then call `Create`, which creates the Windows metafile device context and attaches it to the `CMetaFileDC` object.
 
-##  <a name="createenhanced"></a>  CMetaFileDC::CreateEnhanced
+## <a name="createenhanced"></a> CMetaFileDC::CreateEnhanced
 
 Creates a device context for an enhanced-format metafile.
 

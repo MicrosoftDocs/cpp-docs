@@ -33,7 +33,7 @@ This class is used by [CComHeapPtr](../../atl/reference/ccomheapptr-class.md) to
 
 **Header:** atlbase.h
 
-##  <a name="allocate"></a>  CComAllocator::Allocate
+## <a name="allocate"></a> CComAllocator::Allocate
 
 Call this static function to allocate memory.
 
@@ -54,7 +54,7 @@ Returns a void pointer to the allocated space, or NULL if there is insufficient 
 
 Allocates memory. See [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) for more details.
 
-##  <a name="free"></a>  CComAllocator::Free
+## <a name="free"></a> CComAllocator::Free
 
 Call this static function to free allocated memory.
 
@@ -71,7 +71,7 @@ Pointer to the allocated memory.
 
 Frees the allocated memory. See [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) for more details.
 
-##  <a name="reallocate"></a>  CComAllocator::Reallocate
+## <a name="reallocate"></a> CComAllocator::Reallocate
 
 Call this static function to reallocate memory.
 

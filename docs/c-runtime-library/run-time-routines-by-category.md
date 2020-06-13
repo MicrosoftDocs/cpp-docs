@@ -1,7 +1,6 @@
 ---
 title: "Universal C runtime routines by category"
 ms.date: "04/06/2018"
-f1_keywords: ["c.runtime"]
 helpviewer_keywords: ["routines, run-time", "functions [CRT], run-time", "categories, run-time functions", "functions [CRT]"]
 ms.assetid: de6f5ac4-2226-4dad-be9f-deeb31138c9d
 ---

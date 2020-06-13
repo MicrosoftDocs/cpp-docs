@@ -18,7 +18,7 @@ OLE visual editing places additional requirements on the menu and other resource
 
 This requires three separate menu layouts, one for each possible mode of the application. Accelerator tables are also necessary for each new mode. A container application may or may not support in-place activation; if it does, it needs a new menu structure and associated accelerator tables.
 
-In-place activation requires that the container and server applications must negotiate for menu, toolbar, and status bar space. All resources must be designed with this in mind. The article [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md) covers this topic in detail.
+In-place activation requires that the container and server applications must negotiate for menu, toolbar, and status bar space. All resources must be designed with this in mind. The article [Menus and Resources: Menu Merging](menus-and-resources-menu-merging.md) covers this topic in detail.
 
 Because of these issues, OLE document applications created with the application wizard can have up to four separate menus and accelerator table resources. These are used for the following reasons:
 
@@ -33,12 +33,12 @@ Each of these resource names represents a menu and, usually, an accelerator tabl
 
 The following articles discuss topics related to containers, servers, and the menu merging necessary to implement in-place activation:
 
-- [Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md)
+- [Menus and Resources: Container Additions](menus-and-resources-container-additions.md)
 
-- [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md)
+- [Menus and Resources: Server Additions](menus-and-resources-server-additions.md)
 
-- [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md)
+- [Menus and Resources: Menu Merging](menus-and-resources-menu-merging.md)
 
 ## See also
 
-[OLE](../mfc/ole-in-mfc.md)
+[OLE](ole-in-mfc.md)

@@ -73,7 +73,7 @@ The following table shows the values for the low word of the *lParam* parameter 
 |SB_THUMBTRACK|The user is dragging the scroll box. The AFX_WM_ON_HSCROLL message is sent repeatedly with this value until the user releases the mouse button. The high-order word indicates the position to which the scroll box has been dragged.|
 
 > [!NOTE]
->  The high-order word of the *lParam* parameter specifies the current position of the scroll box if the low-order word is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise, this word is not used.
+> The high-order word of the *lParam* parameter specifies the current position of the scroll box if the low-order word is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise, this word is not used.
 
 The following table lists the flag values for the *lParam* parameter of the AFX_WM_UPDATETOOLTIPS message:
 

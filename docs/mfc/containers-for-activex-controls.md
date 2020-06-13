@@ -12,7 +12,7 @@ You can use ActiveX controls developed in Visual C++ in other applications, as l
 > ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 > [!NOTE]
->  The following list is not a complete list of applications that support ActiveX controls but represents the set used most often in testing:
+> The following list is not a complete list of applications that support ActiveX controls but represents the set used most often in testing:
 
 Applications that support ActiveX control containment include:
 
@@ -48,4 +48,4 @@ The following are non-Microsoft applications that support ActiveX control contai
 
 ## See also
 
-[ActiveX Control Containers](../mfc/activex-control-containers.md)
+[ActiveX Control Containers](activex-control-containers.md)

@@ -16,7 +16,7 @@ When an exception is thrown, execution of the current function is stopped and ju
 
    In the following example, a function tries to allocate two memory blocks and throws an exception if either allocation fails:
 
-   [!code-cpp[NVC_MFCExceptions#17](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_1.cpp)]
+   [!code-cpp[NVC_MFCExceptions#17](codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_1.cpp)]
 
    If the first allocation fails, you can simply throw the memory exception. If the first allocation is successful but the second one fails, you must free the first allocation block before throwing the exception. If both allocations succeed, you can proceed normally and free the blocks when exiting the function.
 
@@ -26,11 +26,11 @@ When an exception is thrown, execution of the current function is stopped and ju
 
    The following example attempts to play a sound through a wave device and throws an exception if there is a failure.
 
-   [!code-cpp[NVC_MFCExceptions#18](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_2.cpp)]
+   [!code-cpp[NVC_MFCExceptions#18](codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_2.cpp)]
 
 > [!NOTE]
->  MFC's default handling of exceptions applies only to pointers to `CException` objects (and objects of `CException`-derived classes). The example above bypasses MFC's exception mechanism.
+> MFC's default handling of exceptions applies only to pointers to `CException` objects (and objects of `CException`-derived classes). The example above bypasses MFC's exception mechanism.
 
 ## See also
 
-[Exception Handling](../mfc/exception-handling-in-mfc.md)
+[Exception Handling](exception-handling-in-mfc.md)

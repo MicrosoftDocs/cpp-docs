@@ -46,7 +46,7 @@ j = ( i < 0 ) ? ( -i ) : ( i );
 
 This example assigns the absolute value of `i` to `j`. If `i` is less than 0, `-i` is assigned to `j`. If `i` is greater than or equal to 0, `i` is assigned to `j`.
 
-```
+```cpp
 void f1( void );
 void f2( void );
 int x;

@@ -9,7 +9,7 @@ ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
 These functions provide support for marshaling and converting marshaling data into interface pointers.
 
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
+> The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
 |||
 |-|-|
@@ -21,7 +21,7 @@ These functions provide support for marshaling and converting marshaling data in
 
 **Header:** atlbase.h
 
-##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream
+## <a name="atlfreemarshalstream"></a> AtlFreeMarshalStream
 
 Releases the marshal data in the stream, then releases the stream pointer.
 
@@ -38,7 +38,7 @@ HRESULT AtlFreeMarshalStream(IStream* pStream);
 
 See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).
 
-##  <a name="atlmarshalptrinproc"></a>  AtlMarshalPtrInProc
+## <a name="atlmarshalptrinproc"></a> AtlMarshalPtrInProc
 
 Creates a new stream object, writes the CLSID of the proxy to the stream, and marshals the specified interface pointer by writing the data needed to initialize the proxy into the stream.
 
@@ -76,7 +76,7 @@ If marshaling fails, the stream pointer is released.
 
 [!code-cpp[NVC_ATL_COM#50](../../atl/codesnippet/cpp/marshaling-global-functions_1.cpp)]
 
-##  <a name="atlunmarshalptr"></a>  AtlUnmarshalPtr
+## <a name="atlunmarshalptr"></a> AtlUnmarshalPtr
 
 Converts the stream's marshaling data into an interface pointer that can be used by the client.
 

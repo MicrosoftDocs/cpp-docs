@@ -22,7 +22,7 @@ When a client sends a query to the Internet server, you can use one of the URL p
 |[AfxThrowInternetException](#afxthrowinternetexception)|Throws an exception related to the internet connection.|
 |[AfxGetInternetHandleType](#afxgetinternethandletype)|Determines the type of an Internet handle.|
 
-##  <a name="afxparseurl"></a>  AfxParseURL
+## <a name="afxparseurl"></a> AfxParseURL
 
 This global is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
 
@@ -101,13 +101,13 @@ For example, `AfxParseURL` parses URLs of the form *service://server/dir/dir/obj
 *dwServiceType* == #service
 
 > [!NOTE]
->  To call this function, your project must include AFXINET.H.
+> To call this function, your project must include AFXINET.H.
 
 ### Requirements
 
   **Header** afxinet.h
 
-##  <a name="afxparseurlex"></a>  AfxParseURLEx
+## <a name="afxparseurlex"></a> AfxParseURLEx
 
 This global function is the extended version of [AfxParseURL](#afxparseurl) and is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
 
@@ -198,13 +198,13 @@ Nonzero if the URL was successfully parsed; otherwise, 0 if it is empty or does 
 It parses a URL string and returns the type of service and its components, as well as providing the user's name and password. The flags indicate how unsafe characters are handled.
 
 > [!NOTE]
->  To call this function, your project must include AFXINET.H.
+> To call this function, your project must include AFXINET.H.
 
 ### Requirements
 
   **Header** afxinet.h
 
-## <a name="afxgetinternethandletype"></a>  AfxGetInternetHandleType
+## <a name="afxgetinternethandletype"></a> AfxGetInternetHandleType
 
 Use this global function to determine the type of an Internet handle.
 
@@ -254,13 +254,13 @@ The following list includes possible Internet types returned by `AfxGetInternetH
 - INTERNET_HANDLE_TYPE_HTTP_REQUEST
 
 > [!NOTE]
->  In order to call this function, your project must include AFXINET.H.
+> In order to call this function, your project must include AFXINET.H.
 
 ### Requirements
 
 **Header:** afxinet.h
 
-## <a name="afxthrowinternetexception"></a>  AfxThrowInternetException
+## <a name="afxthrowinternetexception"></a> AfxThrowInternetException
 
 Throws an Internet exception.
 
@@ -283,7 +283,7 @@ The error that caused the exception.
 You are responsible for determining the cause based on the operating-system error code.
 
 > [!NOTE]
->  To call this function, your project must include AFXINET.H.
+> To call this function, your project must include AFXINET.H.
 
 ### Requirements
 

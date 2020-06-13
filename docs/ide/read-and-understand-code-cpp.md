@@ -55,7 +55,7 @@ Hover over any variable, function, or other symbol to get information about it, 
 
 ![Quick Info in C&#43;&#43;](../ide/media/quick-info-vs2019.png "Quick Info")
 
-The **Quick Info** tooltip has a **Search Online** link. Go to **Tools** > **Options** > **Text Editor** > **C++** > **View** to specify the search provider. 
+The **Quick Info** tooltip has a **Search Online** link. Go to **Tools** > **Options** > **Text Editor** > **C++** > **View** to specify the search provider.
 
 If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the Error List window.
 
@@ -83,7 +83,7 @@ Hover over a variable or function declaration, right-click, then choose **Peek D
 
 ![C&#43;&#43; Peek Definition](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
 
-##  F1 Help
+## F1 Help
 
 Place the cursor on or just after any type, keyword or function and press **F1** to go directly to the relevant reference topic on docs.microsoft.com. **F1** also works on items in the error list, and in many dialog boxes.
 

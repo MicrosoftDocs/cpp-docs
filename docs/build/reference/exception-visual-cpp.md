@@ -1,7 +1,6 @@
 ---
 title: "&lt;exception> (C++ documentation comments)"
 ms.date: "11/04/2016"
-f1_keywords: ["exception", "<exception>"]
 helpviewer_keywords: ["<exception> C++ XML tag", "exception C++ XML tag"]
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
 ---

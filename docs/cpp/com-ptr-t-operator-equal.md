@@ -30,7 +30,7 @@ _com_ptr_t& operator=(_InterfaceType* p );
 // AddRef is called to increment the reference count for the encapsulated
 // interface pointer, and Release is called to decrement the reference
 // count for the previously encapsulated pointer.
-template<> _com_ptr_t& 
+template<> _com_ptr_t&
 operator=( Interface* pInterface ) throw();
 
 // Sets a smart pointer to be a copy of another instance of the same

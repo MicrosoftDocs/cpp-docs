@@ -14,19 +14,19 @@ How the month calendar control is created depends on whether you are using the c
 
 1. Specify any styles required, using the Properties dialog box of the month calendar control.
 
-1. Use the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md) to add a member variable of type [CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md) with the Control property. You can use this member to call `CMonthCalCtrl` member functions.
+1. Use the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md) to add a member variable of type [CMonthCalCtrl](reference/cmonthcalctrl-class.md) with the Control property. You can use this member to call `CMonthCalCtrl` member functions.
 
-1. Use the [Class Wizard](reference/mfc-class-wizard.md) to map handler functions in the dialog class for any month calendar control notification messages you need to handle (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)).
+1. Use the [Class Wizard](reference/mfc-class-wizard.md) to map handler functions in the dialog class for any month calendar control notification messages you need to handle (see [Mapping Messages to Functions](reference/mapping-messages-to-functions.md)).
 
-1. In [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), set any additional styles for the `CMonthCalCtrl` object.
+1. In [OnInitDialog](reference/cdialog-class.md#oninitdialog), set any additional styles for the `CMonthCalCtrl` object.
 
 ### To use CMonthCalCtrl in a nondialog window
 
 1. Define the control in the view or window class.
 
-1. Call the control's [Create](../mfc/reference/cmonthcalctrl-class.md#create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function (if you're subclassing the control). Set the styles for the control.
+1. Call the control's [Create](reference/cmonthcalctrl-class.md#create) member function, possibly in [OnInitialUpdate](reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](reference/cwnd-class.md#oncreate) handler function (if you're subclassing the control). Set the styles for the control.
 
 ## See also
 
-[Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CMonthCalCtrl](using-cmonthcalctrl.md)<br/>
+[Controls](controls-mfc.md)

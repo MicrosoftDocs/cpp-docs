@@ -56,7 +56,7 @@ The following example demonstrates how to create an object of the `CMFCSpinButto
 
 **Header:** afxspinbuttonctrl.h
 
-##  <a name="ondraw"></a>  CMFCSpinButtonCtrl::OnDraw
+## <a name="ondraw"></a> CMFCSpinButtonCtrl::OnDraw
 
 Repaints the current spin button control.
 

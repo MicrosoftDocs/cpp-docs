@@ -264,11 +264,11 @@ Although these differences can affect your source code or other build artifacts,
     enum class my_type : size_t {};
    ```
 
-   Then, change your definition of placement **new** and **delete** to use this type as the second argument instead of `size_t`. You’ll also need to update the calls to **placement new** to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **new** and **delete** to cast back to the integer type. You don’t need to use an **enum** for this; a class type with a `size_t` member would also work.
+   Then, change your definition of placement **new** and **delete** to use this type as the second argument instead of `size_t`. You'll also need to update the calls to **placement new** to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **new** and **delete** to cast back to the integer type. You don't need to use an **enum** for this; a class type with a `size_t` member would also work.
 
    An alternative solution is that you might be able to eliminate the **placement new** altogether. If your code uses **placement new** to implement a memory pool where the placement argument is the size of the object being allocated or deleted, then sized deallocation feature might be suitable to replace your own custom memory pool code, and you can get rid of the placement functions and just use your own two-argument **delete** operator instead of the placement functions.
 
-   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument **delete** functions don’t exist and won't cause a conflict with your **placement delete** operator.
+   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument **delete** functions don't exist and won't cause a conflict with your **placement delete** operator.
 
 - **Union data members**
 
@@ -979,7 +979,7 @@ Although these differences can affect your source code or other build artifacts,
     warning C4720: unreachable code
    ```
 
-   In many cases, this warning might only be issued when compiling with optimizations enabled, since optimizations may inline more function calls, eliminate redundant code, or otherwise make it possible to determine that certain code is unreachable. We have observed that new instances of warning C4720 have frequently occurred in **try/catch** blocks, especially in relation to use of [std::find](assetId:///std::find?qualifyHint=False&autoUpgrade=True).
+   In many cases, this warning might only be issued when compiling with optimizations enabled, since optimizations may inline more function calls, eliminate redundant code, or otherwise make it possible to determine that certain code is unreachable. We have observed that new instances of warning C4720 have frequently occurred in **try/catch** blocks, especially in relation to use of [std::find](../standard-library/algorithm-functions.md#find).
 
    Example (before)
 
@@ -1544,7 +1544,7 @@ All containers now support the C++11 fine-grained element requirements.
 Support for these C++14 features:
 
 - "Transparent operator functors" less<>, greater<>, plus<>, multiplies<>, and so on.
-- make_unique<T>(args...) and make_unique<T[]>(n)
+- make_unique\<T>(args...) and make_unique<T[]>(n)
 - cbegin()/cend(), rbegin()/rend(), and crbegin()/crend() non-member functions.
 - \<atomic> received numerous performance enhancements.
 - \<type_traits> received major stabilization and code fixes.

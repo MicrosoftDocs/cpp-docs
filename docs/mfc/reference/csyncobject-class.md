@@ -58,7 +58,7 @@ For information on how to use the synchronization objects, see the article [Mult
 
 **Header:** afxmt.h
 
-##  <a name="csyncobject"></a>  CSyncObject::CSyncObject
+## <a name="csyncobject"></a> CSyncObject::CSyncObject
 
 Constructs a synchronization object with the supplied name.
 
@@ -72,7 +72,7 @@ virtual ~CSyncObject();
 *pstrName*<br/>
 The name of the object. If NULL, *pstrName* will be null.
 
-##  <a name="lock"></a>  CSyncObject::Lock
+## <a name="lock"></a> CSyncObject::Lock
 
 Call this function to gain access to the resource controlled by the synchronization object.
 
@@ -93,7 +93,7 @@ Nonzero if the function was successful; otherwise 0.
 
 If the synchronization object is signaled, `Lock` will return successfully and the thread now owns the object. If the synchronization object is nonsignaled (unavailable), `Lock` will wait for the synchronization object to become signaled up to the number of milliseconds specified in the *dwTimeOut* parameter. If the synchronization object did not become signaled in the specified amount of time, `Lock` returns failure.
 
-##  <a name="m_hobject"></a>  CSyncObject::m_hObject
+## <a name="m_hobject"></a> CSyncObject::m_hObject
 
 The handle to the underlying synchronization object.
 
@@ -101,7 +101,7 @@ The handle to the underlying synchronization object.
 HANDLE m_hObject;
 ```
 
-##  <a name="operator_handle"></a>  CSyncObject::operator HANDLE
+## <a name="operator_handle"></a> CSyncObject::operator HANDLE
 
 Use this operator to get the handle of the `CSyncObject` object.
 
@@ -117,7 +117,7 @@ If successful, the handle of the synchronization object; otherwise, NULL.
 
 You can use the handle to call Windows APIs directly.
 
-##  <a name="unlock"></a>  CSyncObject::Unlock
+## <a name="unlock"></a> CSyncObject::Unlock
 
 The declaration of `Unlock` with no parameters is a pure virtual function, and must be overridden by all classes deriving from `CSyncObject`.
 

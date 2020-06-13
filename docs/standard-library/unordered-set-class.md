@@ -104,7 +104,7 @@ The actual order of elements in the controlled sequence depends on the hash func
 
 The object allocates and frees storage for the sequence it controls through a stored allocator object of type [unordered_set::allocator_type](#allocator_type). Such an allocator object must have the same external interface as an object of type `allocator`. Note that the stored allocator object is not copied when the container object is assigned.
 
-## <a name="allocator_type"></a>  unordered_set::allocator_type
+## <a name="allocator_type"></a> unordered_set::allocator_type
 
 The type of an allocator for managing storage.
 

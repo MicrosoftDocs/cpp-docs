@@ -42,15 +42,15 @@ For more information about setting properties for a Debug build, see:
 
 ## C++ compiler and linker options
 
-C++ compiler and linker options are located under the **C/C++** and **Linker** nodes in the left pane under **Configuration Properties**. These translate directly to command-line options that will be passed to the compiler. To read documentation about a specific option, select the option in the center pane and press **F1**. Or, you can browse documentation for all the options at [MSVC Compiler Options](reference/compiler-options.md) and [MSVC Linker Options](reference/linker-options.md). 
+C++ compiler and linker options are located under the **C/C++** and **Linker** nodes in the left pane under **Configuration Properties**. These translate directly to command-line options that will be passed to the compiler. To read documentation about a specific option, select the option in the center pane and press **F1**. Or, you can browse documentation for all the options at [MSVC Compiler Options](reference/compiler-options.md) and [MSVC Linker Options](reference/linker-options.md).
 
-The **Property Pages** dialog box shows only the property pages that are relevant to the current project. For example, if the project does not have an .idl file, the MIDL property page is not displayed. For more information about the setting on each property pages, see [Property Pages (C++)](reference/property-pages-visual-cpp.md). 
+The **Property Pages** dialog box shows only the property pages that are relevant to the current project. For example, if the project does not have an .idl file, the MIDL property page is not displayed. For more information about the setting on each property pages, see [Property Pages (C++)](reference/property-pages-visual-cpp.md).
 
 ## Directory and path values
 
-MSBuild supports the use of compile-time constants called "macros" for certain string values include directories and paths. These are exposed in the property pages, where you can refer to and modify them by using the [Property Editor](#property_editor). 
+MSBuild supports the use of compile-time constants called "macros" for certain string values include directories and paths. These are exposed in the property pages, where you can refer to and modify them by using the [Property Editor](#property_editor).
 
-The following illustration shows the property pages for a Visual Studio C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](project-property-inheritance.md). 
+The following illustration shows the property pages for a Visual Studio C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](project-property-inheritance.md).
 
 ![Project property pages](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
@@ -124,7 +124,7 @@ How to create a .props file with custom build settings that can be shared or reu
 Describes the order of evaluation for the .props, .targets, .vcxproj files and environment variables in the build process.
 
 [Modify properties and targets without changing the project file](modify-project-properties-without-changing-project-file.md)<br/>
-How to create temporary build settings without having to modify a project file. 
+How to create temporary build settings without having to modify a project file.
 
 ## See also
 

@@ -11,7 +11,7 @@ This topic lists new constants that indicate variant parameter types designed fo
 
 The following is a list of class constants:
 
-##  <a name="_mfc_variant_data_constants"></a> Variant Data Constants
+## <a name="_mfc_variant_data_constants"></a> Variant Data Constants
 
 - VTS_COLOR A 32-bit integer used to represent a RGB color value.
 

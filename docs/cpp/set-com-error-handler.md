@@ -10,7 +10,7 @@ Replaces the default function that is used for COM error-handling. **_set_com_er
 
 ## Syntax
 
-```
+```cpp
 void __stdcall _set_com_error_handler(
    void (__stdcall *pHandler)(
       HRESULT hr,

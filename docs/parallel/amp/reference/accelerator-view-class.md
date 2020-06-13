@@ -98,7 +98,7 @@ accelerator_view( const accelerator_view & other );
 *other*<br/>
 The `accelerator_view` object to copy.
 
-## <a name="create_marker"></a>create_marker
+## <a name="create_marker"></a> create_marker
 
 Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.
 
@@ -126,7 +126,7 @@ void flush();
 
 Returns `void`.
 
-## <a name="get_accelerator"></a>get_accelerator
+## <a name="get_accelerator"></a> get_accelerator
 
 Returns the accelerator object for the accelerator_view object.
 
@@ -140,7 +140,7 @@ accelerator get_accelerator() const;
 
 The accelerator object for the accelerator_view object.
 
-## <a name="get_is_auto_selection"></a>get_is_auto_selection
+## <a name="get_is_auto_selection"></a> get_is_auto_selection
 
 Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the accelerator_view is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).
 
@@ -168,7 +168,7 @@ bool get_is_debug() const;
 
 A Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.
 
-## <a name="get_queuing_mode"></a>get_queuing_mode
+## <a name="get_queuing_mode"></a> get_queuing_mode
 
 Returns the queuing mode for the accelerator_view object.
 
@@ -182,7 +182,7 @@ queuing_mode get_queuing_mode() const;
 
 The queuing mode for the `accelerator_view` object.
 
-## <a name="get_version"></a>get_version
+## <a name="get_version"></a> get_version
 
 Returns the version of the accelerator_view.
 
@@ -196,7 +196,7 @@ unsigned int get_version() const;
 
 The version of the `accelerator_view`.
 
-## <a name="is_auto_selection"></a>is_auto_selection
+## <a name="is_auto_selection"></a> is_auto_selection
 
 Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the accelerator_view is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).
 
@@ -273,7 +273,7 @@ The `accelerator_view` object to compare with this one.
 
 **true** if the two objects are the same; otherwise, **false**.
 
-## <a name="queuing_mode"></a>queuing_mode
+## <a name="queuing_mode"></a> queuing_mode
 
 Gets the queuing mode for the accelerator_view object.
 

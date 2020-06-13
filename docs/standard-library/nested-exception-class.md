@@ -1,8 +1,8 @@
 ---
 title: "nested_exception Class"
 ms.date: "11/04/2016"
-f1_keywords: ["exception/std::bad_exception"]
-helpviewer_keywords: ["bad_exception class"]
+f1_keywords: ["exception/std::nested_exception"]
+helpviewer_keywords: ["nested_exception class"]
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
 ---
 # nested_exception Class

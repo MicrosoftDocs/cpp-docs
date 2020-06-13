@@ -50,7 +50,7 @@ The `CSplitterWndEx` class is used together with the [OnDrawSplitterBorder](cmfc
 
 **Header:** afxsplitterwndex.h
 
-##  <a name="ondrawsplitter"></a>  CSplitterWndEx::OnDrawSplitter
+## <a name="ondrawsplitter"></a> CSplitterWndEx::OnDrawSplitter
 
 Called by the framework to draw a splitter window.
 

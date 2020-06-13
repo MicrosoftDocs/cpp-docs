@@ -11,7 +11,7 @@ A predefined function object that performs the logical conjunction operation (`o
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct logical_and : public binary_function<Type, Type, bool>
 {

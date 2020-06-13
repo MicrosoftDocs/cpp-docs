@@ -77,7 +77,7 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 
 **Header:** afxRibbonPaletteGallery.h
 
-##  <a name="copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom
+## <a name="copyfrom"></a> CMFCRibbonGalleryMenuButton::CopyFrom
 
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -89,7 +89,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ### Remarks
 
-##  <a name="cmfcribbongallerymenubutton"></a>  CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton
+## <a name="cmfcribbongallerymenubutton"></a> CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton
 
 Constructs and initializes a [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) object.
 
@@ -138,7 +138,7 @@ The following example demonstrates how to use the constructor of the `CMFCRibbon
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]
 
-##  <a name="createpopupmenu"></a>  CMFCRibbonGalleryMenuButton::CreatePopupMenu
+## <a name="createpopupmenu"></a> CMFCRibbonGalleryMenuButton::CreatePopupMenu
 
 ```
 virtual CMFCPopupMenu* CreatePopupMenu();
@@ -148,7 +148,7 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 
 ### Remarks
 
-##  <a name="getpalette"></a>  CMFCRibbonGalleryMenuButton::GetPalette
+## <a name="getpalette"></a> CMFCRibbonGalleryMenuButton::GetPalette
 
 ```
 CMFCRibbonGallery& GetPalette();
@@ -158,7 +158,7 @@ CMFCRibbonGallery& GetPalette();
 
 ### Remarks
 
-##  <a name="hasbutton"></a>  CMFCRibbonGalleryMenuButton::HasButton
+## <a name="hasbutton"></a> CMFCRibbonGalleryMenuButton::HasButton
 
 ```
 virtual BOOL HasButton() const;
@@ -168,7 +168,7 @@ virtual BOOL HasButton() const;
 
 ### Remarks
 
-##  <a name="isemptymenuallowed"></a>  CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed
+## <a name="isemptymenuallowed"></a> CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed
 
 ```
 virtual BOOL IsEmptyMenuAllowed() const;

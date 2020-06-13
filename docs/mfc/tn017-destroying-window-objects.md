@@ -36,7 +36,7 @@ The default implementation of `CWnd::PostNcDestroy` does nothing, which is appro
 Those classes that are designed to be allocated alone on the heap override the `PostNcDestroy` method to perform a **delete this**. This statement will free any memory associated with the C++ object. Even though the default `CWnd` destructor calls `DestroyWindow` if *m_hWnd* is non-NULL, this does not lead to infinite recursion because the handle will be detached and NULL during the cleanup phase.
 
 > [!NOTE]
->  The system usually calls `CWnd::PostNcDestroy` after it processes the Windows WM_NCDESTROY message and the `HWND` and the C++ window object are no longer connected. The system will also call `CWnd::PostNcDestroy` in the implementation of most [CWnd::Create](../mfc/reference/cwnd-class.md#create) calls if failure occurs. The auto cleanup rules are described later in this topic.
+> The system usually calls `CWnd::PostNcDestroy` after it processes the Windows WM_NCDESTROY message and the `HWND` and the C++ window object are no longer connected. The system will also call `CWnd::PostNcDestroy` in the implementation of most [CWnd::Create](../mfc/reference/cwnd-class.md#create) calls if failure occurs. The auto cleanup rules are described later in this topic.
 
 ## Auto Cleanup Classes
 

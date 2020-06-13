@@ -48,7 +48,6 @@ These warnings and all warnings in later versions are suppressed by using the co
 ::: moniker-end
 ::: moniker range=">= vs-2017"
 
-
 ## Warnings introduced in Visual Studio 2017 version 15.8 (compiler version 19.15.26726.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.14`.
@@ -297,7 +296,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4703 | `potentially uninitialized local pointer variable 'name' used` |
 | C4728 | `/Yl- option ignored because PCH reference is required` |
 | C4745 | `volatile access of 'name' cannot be honored due to its size` |
-| C4746|volatile access of 'name' is subject to /volatile:<iso | ms> setting; consider using __iso_volatile_load/store intrinsic functions |
+| C4746| `volatile access of 'name' is subject to /volatile:<iso | ms> setting; consider using __iso_volatile_load/store intrinsic functions` |
 | C4872 | `floating point division by zero detected when compiling the call graph for the concurrency::parallel_for_each at: 'description'` |
 | C4880 | `casting from 'type' to 'type': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function` |
 | C4881 | `the constructor and/or the destructor will not be invoked for tile_static variable 'type'` |

@@ -51,7 +51,7 @@ To learn more about how `CHttpConnection` works with the other MFC Internet clas
 
 **Header:** afxinet.h
 
-##  <a name="chttpconnection"></a>  CHttpConnection::CHttpConnection
+## <a name="chttpconnection"></a> CHttpConnection::CHttpConnection
 
 This member function is called to construct a `CHttpConnection` object.
 
@@ -117,7 +117,7 @@ Any combination of the `INTERNET_FLAG_*` flags. See the table in the **Remarks**
 
 You never create a `CHttpConnection` directly. Rather, you create an object by calling [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).
 
-##  <a name="openrequest"></a>  CHttpConnection::OpenRequest
+## <a name="openrequest"></a> CHttpConnection::OpenRequest
 
 Call this member function to open an HTTP connection.
 

@@ -37,7 +37,7 @@ This approach is type-safe and extensible, but it's also complex and verbose.
 
 ## Alternative format options
 
-As an alternative, you can use `Boost.Format` from the Boost C++ libraries, even though it’s nonstandard. You can download any Boost library from the [Boost](https://www.boost.org/) website.
+As an alternative, you can use `Boost.Format` from the Boost C++ libraries, even though it's nonstandard. You can download any Boost library from the [Boost](https://www.boost.org/) website.
 
 Some advantages of `Boost.Format` are:
 

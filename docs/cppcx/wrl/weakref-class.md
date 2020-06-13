@@ -85,7 +85,7 @@ if (strongRef == nullptr)
 
 **Namespace:** Microsoft::WRL
 
-## <a name="tilde-weakref"></a>WeakRef::~WeakRef Destructor
+## <a name="tilde-weakref"></a> WeakRef::~WeakRef Destructor
 
 Deinitializes the current instance of the `WeakRef` class.
 
@@ -93,7 +93,7 @@ Deinitializes the current instance of the `WeakRef` class.
 ~WeakRef();
 ```
 
-## <a name="as"></a>WeakRef::As Method
+## <a name="as"></a> WeakRef::As Method
 
 Sets the specified `ComPtr` pointer parameter to represent the specified interface.
 
@@ -133,7 +133,7 @@ The first template is the form that you should use in your code. The second temp
 
 Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to `nullptr` if the weak reference could not be obtained, so you should avoid error-checking code that checks the `WeakRef` for `nullptr`. Instead, check *ptr* for `nullptr`.
 
-## <a name="asiid"></a>WeakRef::AsIID Method
+## <a name="asiid"></a> WeakRef::AsIID Method
 
 Sets the specified `ComPtr` pointer parameter to represent the specified interface ID.
 
@@ -168,7 +168,7 @@ The first template is the form that you should use in your code. The second temp
 
 Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to `nullptr` if the weak reference could not be obtained, so you should avoid error-checking code that checks the `WeakRef` for `nullptr`. Instead, check *ptr* for `nullptr`.
 
-## <a name="copyto"></a>WeakRef::CopyTo Method
+## <a name="copyto"></a> WeakRef::CopyTo Method
 
 Assigns a pointer to an interface, if available, to the specified pointer variable.
 
@@ -209,7 +209,7 @@ A return value of S_OK means that this operation succeeded, but doesn't indicate
 
 Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to `nullptr` if the weak reference could not be obtained, so you should avoid error checking code that checks the `WeakRef` for `nullptr`. Instead, check *ptr* for `nullptr`.
 
-## <a name="operator-ampersand-operator"></a>WeakRef::operator&amp; Operator
+## <a name="operator-ampersand-operator"></a> WeakRef::operator&amp; Operator
 
 Returns a `ComPtrRef` object that represents the current `WeakRef` object.
 
@@ -225,7 +225,7 @@ A `ComPtrRef` object that represents the current `WeakRef` object.
 
 This is an internal helper operator that is not meant to be used in your code.
 
-## <a name="weakref"></a>WeakRef::WeakRef Constructor
+## <a name="weakref"></a> WeakRef::WeakRef Constructor
 
 Initializes a new instance of the `WeakRef` class.
 

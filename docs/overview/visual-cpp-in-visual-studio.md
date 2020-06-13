@@ -5,11 +5,10 @@ ms.date: "07/02/2019"
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 ---
-
 # C++ in Visual Studio
 
 > [!NOTE]
-> This developer documentation applies to Visual Studio 2015 and later. Use the version selector in the upper left of the page to match your version of Visual Studio.
+> This developer documentation applies to Visual Studio 2015 and later. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 >
 > If you are looking for a Visual C++ redistributable package so that you can run a program, go to the [Microsoft Download Center](https://www.microsoft.com/download/) and enter **Visual C++** in the search box.
 
@@ -20,7 +19,7 @@ Visual Studio 2015, 2017 and 2019 can be installed side-by-side. You can use Vis
 ## What's New and Conformance History
 
 [What's New for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-Find out what’s new in Visual Studio.
+Find out what's new in Visual Studio.
 
 [What's New for C++ in Visual Studio 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 Find out what was new in C++ for each version of Visual Studio from 2003 through 2015.
@@ -59,7 +58,7 @@ Learn about C++, get an overview of Modern C++, and find links to books, article
 [Learn Visual C++](../build/vscpp-step-1-create.md)<br/>
 Start learning C++.
 
-[Visual C++ Samples](visual-cpp-samples.md)<br/>
+[Visual Studio C++ Samples](visual-cpp-samples.md)<br/>
 Information about samples.
 
 ## C++ development tools
@@ -93,7 +92,7 @@ Learn how to create traditional native C++ desktop applications for Windows.
 [.NET Programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 Learn how to create DLLs that enable interoperability between native C++ and .NET programs written in languages such as C# or Visual Basic.
 
-[Linux Programming](../linux/index.md)<br/>
+[Linux Programming](../linux/index.yml)<br/>
 Use the Visual Studio IDE to code and deploy to a remote Linux machine for compilation with GCC.
 
 [Create C/C++ DLLs in Visual Studio](../build/dlls-in-visual-cpp.md)<br/>

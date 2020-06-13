@@ -41,7 +41,7 @@ The second template is a specialization for cloaked interfaces. The third templa
 
 ## Members
 
-### <a name="public-typedefs"></a>Public Typedefs
+### <a name="public-typedefs"></a> Public Typedefs
 
 Name   | Description
 ------ | ------------------------------------------
@@ -73,7 +73,7 @@ Name                                   | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="cancastto"></a>InterfaceTraits::CanCastTo
+## <a name="cancastto"></a> InterfaceTraits::CanCastTo
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -107,7 +107,7 @@ Indicates whether the specified pointer can be cast to a pointer to `Base`.
 
 For more information about `Base`, see the [Public Typedefs](#public-typedefs) section.
 
-## <a name="casttobase"></a>InterfaceTraits::CastToBase
+## <a name="casttobase"></a> InterfaceTraits::CastToBase
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -136,7 +136,7 @@ Casts the specified pointer to a pointer to `Base`.
 
 For more information about `Base`, see the [Public Typedefs](#public-typedefs) section.
 
-## <a name="casttounknown"></a>InterfaceTraits::CastToUnknown
+## <a name="casttounknown"></a> InterfaceTraits::CastToUnknown
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -165,7 +165,7 @@ Casts the specified pointer to a pointer to `IUnknown`.
 
 For more information about `Base`, see the [Public Typedefs](#public-typedefs) section.
 
-## <a name="fillarraywithiid"></a>InterfaceTraits::FillArrayWithIid
+## <a name="fillarraywithiid"></a> InterfaceTraits::FillArrayWithIid
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -192,7 +192,7 @@ Contrary to the name of this API, only one array element is modified; not the en
 
 For more information about `Base`, see the [Public Typedefs](#public-typedefs) section.
 
-## <a name="iidcount"></a>InterfaceTraits::IidCount
+## <a name="iidcount"></a> InterfaceTraits::IidCount
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -204,7 +204,7 @@ static const unsigned long IidCount = 1;
 
 Holds the number of interface IDs associated with the current `InterfaceTraits` object.
 
-## <a name="verify"></a>InterfaceTraits::Verify
+## <a name="verify"></a> InterfaceTraits::Verify
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

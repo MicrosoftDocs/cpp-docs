@@ -20,7 +20,7 @@ OLE Automation provides ways to call methods and to access properties across app
 |[DISP_PROPERTY_PARAM](#disp_property_param)|Defines an OLE automation property that takes parameters and names the Get and Set functions.|
 |[DISP_DEFVALUE](#disp_defvalue)|Makes an existing property the default value of an object.|
 
-## <a name="declare_dispatch_map"></a>  DECLARE_DISPATCH_MAP
+## <a name="declare_dispatch_map"></a> DECLARE_DISPATCH_MAP
 
 If a `CCmdTarget`-derived class in your program supports OLE Automation, that class must provide a dispatch map to expose its methods and properties.
 
@@ -45,7 +45,7 @@ The Application Wizard and code wizards assist in creating Automation classes an
 
 **Header:** afxwin.h
 
-## <a name="begin_dispatch_map"></a>  BEGIN_DISPATCH_MAP
+## <a name="begin_dispatch_map"></a> BEGIN_DISPATCH_MAP
 
 Declares the definition of your dispatch map.
 
@@ -69,7 +69,7 @@ In the implementation (.cpp) file that defines the member functions for your cla
 
 **Header:** afxdisp.h
 
-## <a name="end_dispatch_map"></a>  END_DISPATCH_MAP
+## <a name="end_dispatch_map"></a> END_DISPATCH_MAP
 
 Ends the definition of your dispatch map.
 
@@ -85,7 +85,7 @@ It must be used in conjunction with BEGIN_DISPATCH_MAP.
 
 **Header:** afxdisp.h
 
-## <a name="disp_function"></a>  DISP_FUNCTION
+## <a name="disp_function"></a> DISP_FUNCTION
 
 Defines an OLE automation function in a dispatch map.
 
@@ -175,7 +175,7 @@ The `VTS_` constants and their meanings are as follows:
 
 **Header:** afxdisp.h
 
-## <a name="disp_property"></a>  DISP_PROPERTY
+## <a name="disp_property"></a> DISP_PROPERTY
 
 Defines an OLE automation property in a dispatch map.
 
@@ -226,7 +226,7 @@ When an external client changes the property, the value of the member variable s
 
 **Header:** afxdisp.h
 
-## <a name="disp_property_ex"></a>  DISP_PROPERTY_EX
+## <a name="disp_property_ex"></a> DISP_PROPERTY_EX
 
 Defines an OLE automation property and name the functions used to get and set the property's value in a dispatch map.
 
@@ -266,7 +266,7 @@ The *vtPropType* argument is of type VARTYPE. Possible values for this argument 
 
 **Header:** afxdisp.h
 
-## <a name="disp_property_notify"></a>  DISP_PROPERTY_NOTIFY
+## <a name="disp_property_notify"></a> DISP_PROPERTY_NOTIFY
 
 Defines an OLE automation property with notification in a dispatch map.
 
@@ -321,7 +321,7 @@ The *vtPropType* argument is of type VARTYPE. Possible values for this argument 
 
 **Header:** afxdisp.h
 
-## <a name="disp_property_param"></a>  DISP_PROPERTY_PARAM
+## <a name="disp_property_param"></a> DISP_PROPERTY_PARAM
 
 Defines a property accessed with separate `Get` and `Set` member functions.
 
@@ -381,7 +381,7 @@ These correspond to the following DISP_PROPERTY_PARAM macro in the control dispa
 
 **Header:** afxdisp.h
 
-## <a name="disp_defvalue"></a>  DISP_DEFVALUE
+## <a name="disp_defvalue"></a> DISP_DEFVALUE
 
 Makes an existing property the default value of an object.
 

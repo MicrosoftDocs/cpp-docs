@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: "02/09/2020"
+ms.date: "06/03/2020"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -47,6 +47,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Gs](gs-control-stack-checking-calls.md)|Controls stack probes.|
 |[/GT](gt-support-fiber-safe-thread-local-storage.md)|Supports fiber safety for data allocated by using static thread-local storage.|
 |[/guard:cf](guard-enable-control-flow-guard.md)|Adds control flow guard security checks.|
+|[/guard:ehcont](guard-enable-eh-continuation-metadata.md)|Enables EH continuation metadata.|
 |[/Gv](gd-gr-gv-gz-calling-convention.md)|Uses the `__vectorcall` calling convention. (x86 and x64 only)|
 |[/Gw](gw-optimize-global-data.md)|Enables whole-program global data optimization.|
 |[/GX](gx-enable-exception-handling.md)|Deprecated. Enables synchronous exception handling. Use [/EH](eh-exception-handling-model.md) instead.|

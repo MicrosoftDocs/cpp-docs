@@ -1,7 +1,6 @@
 ---
 title: "EOF, WEOF"
 ms.date: "11/04/2016"
-f1_keywords: ["EOF"]
 helpviewer_keywords: ["EOF function", "WEOF function", "end of file"]
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
 ---

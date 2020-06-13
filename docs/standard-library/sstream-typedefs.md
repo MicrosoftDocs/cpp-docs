@@ -12,7 +12,7 @@ ms.assetid: d102edd2-ecea-4a35-a398-cf96e58dd422
 |[stringstream](#stringstream)|[wistringstream](#wistringstream)|[wostringstream](#wostringstream)|
 |[wstringbuf](#wstringbuf)|[wstringstream](#wstringstream)|
 
-## <a name="istringstream"></a>  istringstream
+## <a name="istringstream"></a> istringstream
 
 Creates a type `basic_istringstream` specialized on a **char** template parameter.
 
@@ -24,7 +24,7 @@ typedef basic_istringstream<char> istringstream;
 
 The type is a synonym for class template [basic_istringstream](../standard-library/basic-istringstream-class.md), specialized for elements of type **char**.
 
-## <a name="ostringstream"></a>  ostringstream
+## <a name="ostringstream"></a> ostringstream
 
 Creates a type `basic_ostringstream` specialized on a **char** template parameter.
 
@@ -36,7 +36,7 @@ typedef basic_ostringstream<char> ostringstream;
 
 The type is a synonym for class template [basic_ostringstream](../standard-library/basic-ostringstream-class.md), specialized for elements of type **char**.
 
-## <a name="stringbuf"></a>  stringbuf
+## <a name="stringbuf"></a> stringbuf
 
 Creates a type `basic_stringbuf` specialized on a **char** template parameter.
 
@@ -48,7 +48,7 @@ typedef basic_stringbuf<char> stringbuf;
 
 The type is a synonym for class template [basic_stringbuf](../standard-library/basic-stringbuf-class.md), specialized for elements of type **char**.
 
-## <a name="stringstream"></a>  stringstream
+## <a name="stringstream"></a> stringstream
 
 Creates a type `basic_stringstream` specialized on a **char** template parameter.
 
@@ -60,7 +60,7 @@ typedef basic_stringstream<char> stringstream;
 
 The type is a synonym for class template [basic_stringstream](../standard-library/basic-stringstream-class.md), specialized for elements of type **char**.
 
-## <a name="wistringstream"></a>  wistringstream
+## <a name="wistringstream"></a> wistringstream
 
 Creates a type `basic_istringstream` specialized on a **wchar_t** template parameter.
 
@@ -72,7 +72,7 @@ typedef basic_istringstream<wchar_t> wistringstream;
 
 The type is a synonym for class template [basic_istringstream](../standard-library/basic-istringstream-class.md), specialized for elements of type **wchar_t**.
 
-## <a name="wostringstream"></a>  wostringstream
+## <a name="wostringstream"></a> wostringstream
 
 Creates a type `basic_ostringstream` specialized on a **wchar_t** template parameter.
 
@@ -84,7 +84,7 @@ typedef basic_ostringstream<wchar_t> wostringstream;
 
 The type is a synonym for class template [basic_ostringstream](../standard-library/basic-ostringstream-class.md), specialized for elements of type **wchar_t**.
 
-## <a name="wstringbuf"></a>  wstringbuf
+## <a name="wstringbuf"></a> wstringbuf
 
 Creates a type `basic_stringbuf` specialized on a **wchar_t** template parameter.
 
@@ -96,7 +96,7 @@ typedef basic_stringbuf<wchar_t> wstringbuf;
 
 The type is a synonym for class template [basic_stringbuf](../standard-library/basic-stringbuf-class.md), specialized for elements of type **wchar_t**.
 
-## <a name="wstringstream"></a>  wstringstream
+## <a name="wstringstream"></a> wstringstream
 
 Creates a type `basic_stringstream` specialized on a **wchar_t** template parameter.
 

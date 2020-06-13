@@ -1,7 +1,6 @@
 ---
 title: "Using CSliderCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CSliderCtrl"]
 helpviewer_keywords: ["CSliderCtrl class [MFC], using", "slider controls [MFC], using"]
 ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
 ---

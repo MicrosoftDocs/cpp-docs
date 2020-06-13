@@ -13,7 +13,7 @@ Calls the **Release** member function of `IUnknown` on the encapsulated interfac
 
 ## Syntax
 
-```
+```cpp
 void Release( );
 ```
 

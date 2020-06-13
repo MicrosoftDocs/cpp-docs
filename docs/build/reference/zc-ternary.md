@@ -122,7 +122,7 @@ note: or       'built-in C++ operator?(bool (__vectorcall *)(int,int), bool (__v
 note: while trying to match the argument list '(foo::<lambda_717fca3fc65510deea10bc47e2b06be4>, foo::<lambda_f6cd18702c42f6cd636bfee362b37033>)'
 ```
 
-A common source of problems found by **/Zc:ternary** comes from conditional operators used in template meta-programming. Some of the result types change under this switch. The following example demonstrates two cases where **/Zc:ternary** changes a conditional expression’s result type in a non-meta-programming context:
+A common source of problems found by **/Zc:ternary** comes from conditional operators used in template meta-programming. Some of the result types change under this switch. The following example demonstrates two cases where **/Zc:ternary** changes a conditional expression's result type in a non-meta-programming context:
 
 ```cpp
 // zcternary5.cpp

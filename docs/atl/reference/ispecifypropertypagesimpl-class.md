@@ -10,7 +10,7 @@ ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
 This class implements `IUnknown` and provides a default implementation of the [ISpecifyPropertyPages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypages) interface.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -38,7 +38,7 @@ Your class, derived from `ISpecifyPropertyPagesImpl`.
 The [ISpecifyPropertyPages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypages) interface allows a client to obtain a list of CLSIDs for the property pages supported by an object. Class `ISpecifyPropertyPagesImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
 
 > [!NOTE]
->  Do not expose the `ISpecifyPropertyPages` interface if your object does not support property pages.
+> Do not expose the `ISpecifyPropertyPages` interface if your object does not support property pages.
 
 **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)
 
@@ -52,7 +52,7 @@ The [ISpecifyPropertyPages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypa
 
 **Header:** atlcom.h
 
-##  <a name="getpages"></a>  ISpecifyPropertyPagesImpl::GetPages
+## <a name="getpages"></a> ISpecifyPropertyPagesImpl::GetPages
 
 Fills the array in the [CAUUID](/windows/win32/api/ocidl/ns-ocidl-cauuid) structure with the CLSIDs for the property pages that can be displayed in the object's property sheet.
 

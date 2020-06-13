@@ -21,7 +21,7 @@ In an event receiver class, you define event handlers, which are methods with si
 Also in an event receiver class, you use the intrinsic function [__hook](../cpp/hook.md) to associate events with event handlers and [__unhook](../cpp/unhook.md) to dissociate events from event handlers. You can hook several events to an event handler, or several event handlers to an event.
 
 > [!NOTE]
->  Typically, there are two techniques to allow a COM event receiver to access event source interface definitions. The first, as shown below, is to share a common header file. The second is to use [#import](../preprocessor/hash-import-directive-cpp.md) with the `embedded_idl` import qualifier, so that the event source type library is written to the .tlh file with the attribute-generated code preserved.
+> Typically, there are two techniques to allow a COM event receiver to access event source interface definitions. The first, as shown below, is to share a common header file. The second is to use [#import](../preprocessor/hash-import-directive-cpp.md) with the `embedded_idl` import qualifier, so that the event source type library is written to the .tlh file with the attribute-generated code preserved.
 
 ## Firing Events
 
@@ -138,7 +138,7 @@ MyHandler1 was called with value 123.
 MyHandler2 was called with value 123.
 ```
 
-##  <a name="vcconeventhandlingincomanchorlayoutdependentcomevents"></a> Layout Dependent COM Events
+## <a name="vcconeventhandlingincomanchorlayoutdependentcomevents"></a> Layout Dependent COM Events
 
 Layout dependency is only an issue for COM programming. In native and managed event handling, the signatures (return type, calling convention, and arguments) of the handlers must match their events, but the handler names do not have to match their events.
 

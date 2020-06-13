@@ -12,7 +12,7 @@ Tags are processed on constructs such as types and type members.
 Tags must immediately precede types or members.
 
 > [!NOTE]
->  Documentation comments cannot be applied to a namespace or on out of line definition for properties and events; documentation comments must on the in-class declarations.
+> Documentation comments cannot be applied to a namespace or on out of line definition for properties and events; documentation comments must on the in-class declarations.
 
 The compiler will process any tag that is valid XML. The following tags provide commonly used functionality in user documentation:
 

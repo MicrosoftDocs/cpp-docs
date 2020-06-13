@@ -29,7 +29,7 @@ If a module is compiled with **/clr**, **/FORCE** will not create an image.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Right-click on the project in **Solution Explorer** and choose **Properties**. 
+1. Right-click on the project in **Solution Explorer** and choose **Properties**.
 
 1. Click the **Linker** folder.
 

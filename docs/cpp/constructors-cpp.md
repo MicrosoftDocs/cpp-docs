@@ -232,7 +232,7 @@ public:
     }
     int Volume() { return m_width * m_height * m_length; }
     void Add_Item(string item) { m_contents.push_back(item); }
-    void Get_Contents()
+    void Print_Contents()
     {
         for (const auto& item : m_contents)
         {
@@ -262,7 +262,7 @@ int main()
     Box b1(b); // "copy"
     Box b2(get_Box()); // "move"
     cout << "b2 contents: ";
-    b2.Get_Contents(); // Prove that we have all the values
+    b2.Print_Contents(); // Prove that we have all the values
 
     char ch;
     cin >> ch; // keep window open

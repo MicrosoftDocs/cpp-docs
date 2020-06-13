@@ -1,7 +1,6 @@
 ---
 title: "File and Database Classes"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.classes.file"]
 helpviewer_keywords: ["database classes [MFC], MFC", "database classes [MFC]", "file classes [MFC]"]
 ms.assetid: 580b169c-e26e-4395-b128-5408d08c98fe
 ---
@@ -11,14 +10,14 @@ These classes allow you to store information to a database or a disk file. There
 
 The following categories of classes support data persistence.
 
-- [File I/O Classes](../mfc/file-i-o-classes.md)
+- [File I/O Classes](file-i-o-classes.md)
 
-- [OLE DB Classes](../mfc/ole-db-classes.md)
+- [OLE DB Classes](ole-db-classes.md)
 
-- [DAO Classes](../mfc/dao-classes.md)
+- [DAO Classes](dao-classes.md)
 
-- [ODBC Classes](../mfc/odbc-classes.md)
+- [ODBC Classes](odbc-classes.md)
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

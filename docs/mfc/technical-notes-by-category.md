@@ -1,7 +1,6 @@
 ---
 title: "Technical Notes by Category"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.tables.mfc.technotes"]
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
 ---
 # Technical Notes by Category

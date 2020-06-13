@@ -1,7 +1,6 @@
 ---
 title: "Using CRichEditCtrl"
 ms.date: "11/04/2016"
-f1_keywords: ["CRichEditCtrl"]
 helpviewer_keywords: ["rich edit controls [MFC], using", "CRichEditCtrl class [MFC], using"]
 ms.assetid: e400c6ed-563e-4d4c-ab3b-a3f0aa20273b
 ---

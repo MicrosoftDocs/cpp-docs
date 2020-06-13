@@ -44,6 +44,7 @@ For more information on how user interface commands are managed in MFC, see [CCm
 ## <a name="check"></a> ICommandUI::Check
 
 Sets the user interface item for this command to the appropriate check state.
+
 ```
 property UICheckState Check;
 ```
@@ -51,6 +52,7 @@ property UICheckState Check;
 ## Remarks
 
 This property sets the user interface item for this command to the appropriate check state. Set Check to the following values:
+
 - 0 Uncheck
 - 1 Check
 - 2 Set indeterminate
@@ -58,7 +60,8 @@ This property sets the user interface item for this command to the appropriate c
 ## <a name="continuerouting"></a> ICommandUI::ContinueRouting
 
 Tells the command routing mechanism to continue routing the current message down the chain of handlers.
-```
+
+```cpp
 void ContinueRouting();
 ```
 
@@ -69,6 +72,7 @@ This is an advanced member function that should be used in conjunction with an O
 ## <a name="enabled"></a> ICommandUI::Enabled
 
 Enables or disables the user interface item for this command.
+
 ```
 property bool Enabled;
 ```
@@ -80,6 +84,7 @@ This property enables or disables the user interface item for this command. Set 
 ## <a name="id"></a> ICommandUI::ID
 
 Gets the ID of the user interface object represented by the ICommandUI object.
+
 ```
 property unsigned int ID;
 ```
@@ -91,6 +96,7 @@ This property gets the ID (a handle) of the menu item, toolbar button, or other 
 ## <a name="index"></a> ICommandUI::Index
 
 Gets the index of the user interface object represented by the ICommandUI object.
+
 ```
 property unsigned int Index;
 ```
@@ -102,6 +108,7 @@ This property gets the index (a handle) of the menu item, toolbar button, or oth
 ## <a name="radio"></a> ICommandUI::Radio
 
 Sets the user interface item for this command to the appropriate check state.
+
 ```
 property bool Radio;
 ```
@@ -113,6 +120,7 @@ This property sets the user interface item for this command to the appropriate c
 ## <a name="text"></a> ICommandUI::Text
 
 Sets the text of the user interface item for this command.
+
 ```
 property String^ Text;
 ```

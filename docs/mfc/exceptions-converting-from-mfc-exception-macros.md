@@ -14,9 +14,9 @@ This article explains how to convert existing code written with Microsoft Founda
 
 - [Converting code with exception macros to use C++ exceptions](#_core_doing_the_conversion)
 
-##  <a name="_core_advantages_of_converting"></a> Advantages of Converting
+## <a name="_core_advantages_of_converting"></a> Advantages of Converting
 
-You probably do not need to convert existing code, although you should be aware of differences between the macro implementations in MFC version 3.0 and the implementations in earlier versions. These differences and subsequent changes in code behavior are discussed in [Exceptions: Changes to Exception Macros in Version 3.0](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md).
+You probably do not need to convert existing code, although you should be aware of differences between the macro implementations in MFC version 3.0 and the implementations in earlier versions. These differences and subsequent changes in code behavior are discussed in [Exceptions: Changes to Exception Macros in Version 3.0](exceptions-changes-to-exception-macros-in-version-3-0.md).
 
 The principal advantages of converting are:
 
@@ -24,7 +24,7 @@ The principal advantages of converting are:
 
 - The C++ exception-handling keywords are more versatile: They can handle exceptions of any data type that can be copied (**int**, **float**, **char**, and so on), whereas the macros handle exceptions only of class `CException` and classes derived from it.
 
-The major difference between the macros and the keywords is that code using the macros "automatically" deletes a caught exception when the exception goes out of scope. Code using the keywords does not, so you must explicitly delete a caught exception. For more information, see the article [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
+The major difference between the macros and the keywords is that code using the macros "automatically" deletes a caught exception when the exception goes out of scope. Code using the keywords does not, so you must explicitly delete a caught exception. For more information, see the article [Exceptions: Catching and Deleting Exceptions](exceptions-catching-and-deleting-exceptions.md).
 
 Another difference is syntax. The syntax for macros and keywords differs in three respects:
 
@@ -52,7 +52,7 @@ Another difference is syntax. The syntax for macros and keywords differs in thre
 
    The macros use **THROW_LAST** to re-throw the current exception. The **throw** keyword, with no argument, has the same effect.
 
-##  <a name="_core_doing_the_conversion"></a> Doing the Conversion
+## <a name="_core_doing_the_conversion"></a> Doing the Conversion
 
 #### To convert code using macros to use the C++ exception-handling keywords
 
@@ -76,24 +76,24 @@ Another difference is syntax. The syntax for macros and keywords differs in thre
 
    For example, change
 
-   [!code-cpp[NVC_MFCExceptions#6](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_1.cpp)]
+   [!code-cpp[NVC_MFCExceptions#6](codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_1.cpp)]
 
    to
 
-   [!code-cpp[NVC_MFCExceptions#7](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_2.cpp)]
+   [!code-cpp[NVC_MFCExceptions#7](codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_2.cpp)]
 
-4. Modify the code in the catch blocks so that it deletes exception objects as necessary. For more information, see the article [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
+4. Modify the code in the catch blocks so that it deletes exception objects as necessary. For more information, see the article [Exceptions: Catching and Deleting Exceptions](exceptions-catching-and-deleting-exceptions.md).
 
 Here is an example of exception-handling code using MFC exception macros. Note that because the code in the following example uses the macros, the exception `e` is deleted automatically:
 
-[!code-cpp[NVC_MFCExceptions#8](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_3.cpp)]
+[!code-cpp[NVC_MFCExceptions#8](codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_3.cpp)]
 
 The code in the next example uses the C++ exception keywords, so the exception must be explicitly deleted:
 
-[!code-cpp[NVC_MFCExceptions#9](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_4.cpp)]
+[!code-cpp[NVC_MFCExceptions#9](codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_4.cpp)]
 
-For more information, see [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
+For more information, see [Exceptions: Using MFC Macros and C++ Exceptions](exceptions-using-mfc-macros-and-cpp-exceptions.md).
 
 ## See also
 
-[Exception Handling](../mfc/exception-handling-in-mfc.md)<br/>
+[Exception Handling](exception-handling-in-mfc.md)<br/>

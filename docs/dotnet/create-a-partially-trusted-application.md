@@ -14,7 +14,7 @@ A Visual C++ application built with **/clr** will have a dependency on msvcm90.d
 If your application does not use any functionality of the C-Runtime Library and you would like to remove the dependency on this library from your code, you will have to use the **/NODEFAULTLIB:msvcmrt.lib** linker option and link with either ptrustm.lib or ptrustmd.lib. These libraries contain object files for initialization and uninitialization of an application, exception classes used by the initialization code, and managed exception handling code. Linking in one of these libraries will remove any dependency on msvcm90.dll.
 
 > [!NOTE]
->  The order of assembly uninitialization might differ for applications that use the ptrust libraries. For normal applications, assemblies are usually unloaded in the reverse order that they are loaded, but this is not guaranteed. For partial trust applications, assemblies are usually unloaded in the same order that they are loaded. This, also, is not guaranteed.
+> The order of assembly uninitialization might differ for applications that use the ptrust libraries. For normal applications, assemblies are usually unloaded in the reverse order that they are loaded, but this is not guaranteed. For partial trust applications, assemblies are usually unloaded in the same order that they are loaded. This, also, is not guaranteed.
 
 ### To create a partially trusted mixed (/clr) application
 

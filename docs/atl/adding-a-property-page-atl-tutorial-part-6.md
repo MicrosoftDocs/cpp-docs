@@ -6,7 +6,7 @@ ms.assetid: df80d255-e7ea-49d9-b940-3f012e90cf9b
 ---
 # Adding a Property Page (ATL Tutorial, Part 6)
 
-> [!NOTE] 
+> [!NOTE]
 > The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 Property pages are implemented as separate COM objects, which allow them to be shared if required. In this step, you will do the following tasks to add a property page to the control:

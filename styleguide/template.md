@@ -113,7 +113,7 @@ To link to an external file, use the full URL as the link. Use HTTPS URL if appl
 
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
-- Example: https://www.github.com
+- Example: <https://www.github.com>
 
 ### Links to APIs
 
@@ -134,6 +134,7 @@ For more information about using this notation, see [Using cross reference](http
 > Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repository: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
 
 When the UID contains the special characters \` or \#, the UID value needs to be HTML encoded as %60 and %23 respectively as in the following examples:
+
 - Example: @System.Threading.Tasks.Task\`1 becomes `@System.Threading.Tasks.Task%601`
 - Example: @System.Exception.\#ctor becomes `@System.Exception.%23ctor`
 
@@ -173,12 +174,12 @@ Lists should be surrounded by blank lines.
 - This
 - bulleted
 - list
-    - Mrs. Peacock
-    - Mr. Green
+  - Mrs. Peacock
+  - Mr. Green
 - contains  
 - other
-    1. Colonel Mustard
-    1. Mrs. White
+  1. Colonel Mustard
+  1. Mrs. White
 - lists
 
 ## Horizontal rule
@@ -239,7 +240,7 @@ Finally, you can use line numbers: `#L1-L10` would include lines 1 through 10. W
 because they are very brittle.
 
 Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
-system. However, if you need to show something that causes compile time or runtime errors, you can 
+system. However, if you need to show something that causes compile time or runtime errors, you can
 use inline code blocks.
 
 ### Inline code blocks with language identifier
@@ -254,7 +255,7 @@ namespace HelloWorld
 {
     class Hello
     {
-        static void Main() 
+        static void Main()
         {
             Console.WriteLine("Hello World!");
 
@@ -329,7 +330,7 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ## docs.microsoft extensions
 
-docs.microsoft provides a few additional extensions to GitHub Flavored Markdown. 
+docs.microsoft provides a few additional extensions to GitHub Flavored Markdown.
 
 ### Alerts
 
@@ -363,11 +364,12 @@ And they'll render like this:
 > [!div class="button"]
 [button links](../docs/core/index.md)
 
-You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
+You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices).
 
 ### Selectors
 
 > [!div class="op_single_selector"]
+
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 

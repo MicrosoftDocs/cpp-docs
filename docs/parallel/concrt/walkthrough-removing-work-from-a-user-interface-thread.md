@@ -208,7 +208,7 @@ The `CChildView::DrawMandelbrot` method, which performs the drawing task, must r
 
    [!code-cpp[concrt-mandelbrot#208](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_22.cpp)]
 
-9. Verify that the application was updated successfully by building and running it.
+1. Verify that the application was updated successfully by building and running it.
 
 When you resize the window, drawing work is performed only for the final window size. Any active drawing tasks are also canceled when the window is destroyed.
 

@@ -1,8 +1,8 @@
 ---
 title: "ARM64 intrinsics"
-description: "A list of the ARM64 intrinsics supported by the Microsoft C++ compiler."
-f1_keywords: ["__break", "__addx18byte", "__addx18word", "__addx18dword",
-"__addx18qword", "__cas8", "__cas16", "__cas32", "__cas64", "__casa8", "__casa16", "__casa32", "__casa64", "__casl8", "__casl16", "__casl32", "__casl64", "__casal8", "__casal16", "__casal32", "__casal64", "__crc32b", "__crc32h", "__crc32w", "__crc32d", "__crc32cb", "__crc32ch", "__crc32cw", "__crc32cd", "__getReg", "__getRegFp", "__getCallerReg", "__getCallerRegFp", "__hlt", "__incx18byte", "__incx18word", "__incx18dword", "__incx18qword", "__ldar8", "__ldar16", "__ldar32", "__ldar64", "__ldapr8", "__ldapr16", "__ldapr32", "__ldapr64", "__prefetch2", "__readx18byte", "__readx18word", "__readx18dword", "__readx18qword", "__setReg", "__setRegFp", "__setCallerReg", "__setCallerRegFp", "__stlr8", "__stlr16", "__stlr32", "__stlr64", "__swp8", "__swp16", "__swp32", "__swp64", "__swpa8", "__swpa16", "__swpa32", "__swpa64", "__swpl8", "__swpl16", "__swpl32", "__swpl64", "__swpal8", "__swpal16", "__swpal32", "__swpal64", "__sys", "__svc", "__writex18byte", "__writex18word", "__writex18dword", "__writex18qword"]
+description: "Reference list of ARM64 intrinsics supported by the Microsoft C++ compiler in Visual Studio."
+f1_keywords: ["__break", "__addx18byte", "__addx18word", "__addx18dword", "__addx18qword", "__cas8", "__cas16", "__cas32", "__cas64", "__casa8", "__casa16", "__casa32", "__casa64", "__casl8", "__casl16", "__casl32", "__casl64", "__casal8", "__casal16", "__casal32", "__casal64", "__crc32b", "__crc32h", "__crc32w", "__crc32d", "__crc32cb", "__crc32ch", "__crc32cw", "__crc32cd", "__getReg", "__getRegFp", "__getCallerReg", "__getCallerRegFp", "__hlt", "__incx18byte", "__incx18word", "__incx18dword", "__incx18qword", "__ldar8", "__ldar16", "__ldar32", "__ldar64", "__ldapr8", "__ldapr16", "__ldapr32", "__ldapr64", "__prefetch2", "__readx18byte", "__readx18word", "__readx18dword", "__readx18qword", "__setReg", "__setRegFp", "__setCallerReg", "__setCallerRegFp", "__stlr8", "__stlr16", "__stlr32", "__stlr64", "__swp8", "__swp16", "__swp32", "__swp64", "__swpa8", "__swpa16", "__swpa32", "__swpa64", "__swpl8", "__swpl16", "__swpl32", "__swpl64", "__swpal8", "__swpal16", "__swpal32", "__swpal64", "__sys", "__svc", "__writex18byte", "__writex18word", "__writex18dword", "__writex18qword"]
+helpviewer_keywords: ["__break ARM64 intrinsic", "__addx18byte ARM64 intrinsic", "__addx18word ARM64 intrinsic", "__addx18dword ARM64 intrinsic", "__addx18qword ARM64 intrinsic", "__cas8 ARM64 intrinsic", "__cas16 ARM64 intrinsic", "__cas32 ARM64 intrinsic", "__cas64 ARM64 intrinsic", "__casa8 ARM64 intrinsic", "__casa16 ARM64 intrinsic", "__casa32 ARM64 intrinsic", "__casa64 ARM64 intrinsic", "__casl8 ARM64 intrinsic", "__casl16 ARM64 intrinsic", "__casl32 ARM64 intrinsic", "__casl64 ARM64 intrinsic", "__casal8 ARM64 intrinsic", "__casal16 ARM64 intrinsic", "__casal32 ARM64 intrinsic", "__casal64 ARM64 intrinsic", "__crc32b ARM64 intrinsic", "__crc32h ARM64 intrinsic", "__crc32w ARM64 intrinsic", "__crc32d ARM64 intrinsic", "__crc32cb ARM64 intrinsic", "__crc32ch ARM64 intrinsic", "__crc32cw ARM64 intrinsic", "__crc32cd ARM64 intrinsic", "__getReg ARM64 intrinsic", "__getRegFp ARM64 intrinsic", "__getCallerReg ARM64 intrinsic", "__getCallerRegFp ARM64 intrinsic", "__hlt ARM64 intrinsic", "__incx18byte ARM64 intrinsic", "__incx18word ARM64 intrinsic", "__incx18dword ARM64 intrinsic", "__incx18qword ARM64 intrinsic", "__ldar8 ARM64 intrinsic", "__ldar16 ARM64 intrinsic", "__ldar32 ARM64 intrinsic", "__ldar64 ARM64 intrinsic", "__ldapr8 ARM64 intrinsic", "__ldapr16 ARM64 intrinsic", "__ldapr32 ARM64 intrinsic", "__ldapr64 ARM64 intrinsic", "__prefetch2 ARM64 intrinsic", "__readx18byte ARM64 intrinsic", "__readx18word ARM64 intrinsic", "__readx18dword ARM64 intrinsic", "__readx18qword ARM64 intrinsic", "__setReg ARM64 intrinsic", "__setRegFp ARM64 intrinsic", "__setCallerReg ARM64 intrinsic", "__setCallerRegFp ARM64 intrinsic", "__stlr8 ARM64 intrinsic", "__stlr16 ARM64 intrinsic", "__stlr32 ARM64 intrinsic", "__stlr64 ARM64 intrinsic", "__swp8 ARM64 intrinsic", "__swp16 ARM64 intrinsic", "__swp32 ARM64 intrinsic", "__swp64 ARM64 intrinsic", "__swpa8 ARM64 intrinsic", "__swpa16 ARM64 intrinsic", "__swpa32 ARM64 intrinsic", "__swpa64 ARM64 intrinsic", "__swpl8 ARM64 intrinsic", "__swpl16 ARM64 intrinsic", "__swpl32 ARM64 intrinsic", "__swpl64 ARM64 intrinsic", "__swpal8 ARM64 intrinsic", "__swpal16 ARM64 intrinsic", "__swpal32 ARM64 intrinsic", "__swpal64 ARM64 intrinsic", "__sys ARM64 intrinsic", "__svc ARM64 intrinsic", "__writex18byte ARM64 intrinsic", "__writex18word ARM64 intrinsic", "__writex18dword ARM64 intrinsic", "__writex18qword ARM64 intrinsic"]
 author: sigatrev
 ms.author: magardn
 ms.date: "11/14/2019"
@@ -17,7 +17,7 @@ The NEON vector instruction set extensions for ARM64 provide Single Instruction 
 
 NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. The MSVC support for NEON intrinsics resembles that of the ARM64 compiler, which is documented in the [ARM NEON Intrinsic Reference](https://static.docs.arm.com/ihi0073/c/IHI0073C_arm_neon_intrinsics_ref.pdf) on the ARM Infocenter website.
 
-##  <a name="A"></a> ARM64-specific intrinsics listing
+## <a name="A"></a> ARM64-specific intrinsics listing
 
 |Function Name|Instruction|Function Prototype|
 |-------------------|-----------------|------------------------|
@@ -136,7 +136,7 @@ NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. Th
 
 [[Return to top](#top)]
 
-###  <a name="BarrierRestrictions"></a> Memory barrier restrictions
+### <a name="BarrierRestrictions"></a> Memory barrier restrictions
 
 The intrinsic functions `__dmb` (data memory barrier), `__dsb` (data synchronization barrier), and `__isb` (instruction synchronization barrier) use the following predefined values to specify the memory barrier restriction in terms of the sharing domain and the kind of access that are affected by the operation.
 
@@ -157,7 +157,7 @@ The intrinsic functions `__dmb` (data memory barrier), `__dsb` (data synchroniza
 
 For the `__isb` intrinsic, the only restriction that is currently valid is _ARM64_BARRIER_SY; all other values are reserved by the architecture.
 
-###  <a name="IsoVolatileLoadStore"></a> __iso_volatile_load/store intrinsics
+### <a name="IsoVolatileLoadStore"></a> __iso_volatile_load/store intrinsics
 
 These intrinsic functions explicitly perform loads and stores that aren't subject to compiler optimizations.
 
@@ -198,7 +198,7 @@ Notice that the intrinsics take volatile pointers to accommodate volatile variab
 
 For more information about the **/volatile:iso** command-line argument, see [/volatile (volatile keyword interpretation)](../build/reference/volatile-volatile-keyword-interpretation.md).
 
-##  <a name="I"></a> ARM64 support for intrinsics from other architectures
+## <a name="I"></a> ARM64 support for intrinsics from other architectures
 
 The following table lists intrinsics from other architectures that are supported on ARM64 platforms. Where the behavior of an intrinsic on ARM64 differs from its behavior on other hardware architectures, additional details are noted.
 
@@ -270,7 +270,7 @@ Key:
 
 - **None**: Not supported
 
-###  <a name="nf_suffix"></a> _nf (no fence) suffix
+### <a name="nf_suffix"></a> _nf (no fence) suffix
 
 The `_nf` or "no fence" suffix indicates that the operation doesn't behave as any kind of memory barrier, in contrast to the other three forms (plain, `_acq`, and `_rel`), which all behave as some kind of barrier. One possible use of the `_nf` forms is to maintain a statistic counter that is updated by multiple threads at the same time but whose value isn't otherwise used while multiple threads are executing.
 

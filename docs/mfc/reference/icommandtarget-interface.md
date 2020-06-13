@@ -35,11 +35,11 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
-##  <a name="initialize"></a> ICommandTarget::Initialize
+## <a name="initialize"></a> ICommandTarget::Initialize
 
 Initializes the command target object.
 
-```
+```cpp
 void Initialize(ICommandSource^ cmdSource);
 ```
 

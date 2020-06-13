@@ -199,7 +199,7 @@ Distribution for 10 samples:
 
 **Namespace:** std
 
-## <a name="chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution
+## <a name="chi_squared_distribution"></a> chi_squared_distribution::chi_squared_distribution
 
 Constructs the distribution.
 
@@ -224,7 +224,7 @@ The first constructor constructs an object whose stored `n` value holds the valu
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-## <a name="param_type"></a>  chi_squared_distribution::param_type
+## <a name="param_type"></a> chi_squared_distribution::param_type
 
 Stores the parameters of the distribution.
 

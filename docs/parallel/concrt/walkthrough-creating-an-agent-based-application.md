@@ -32,7 +32,7 @@ This walkthrough demonstrates how to perform the following tasks:
 
 ## <a name="createapplication"></a> Creating the Console Application
 
-This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. Make sure the version selector is set correctly in the upper left of this page.
+This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range="vs-2019"
 
@@ -40,7 +40,7 @@ This section shows how to create a C++ console application that references the h
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `BasicAgent` as the name for the project, and specify the project location if desired.
 

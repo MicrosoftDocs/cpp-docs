@@ -1,7 +1,6 @@
 ---
 title: "new and delete Operators"
 ms.date: "11/19/2019"
-f1_keywords: ["delete_cpp", "new"]
 helpviewer_keywords: ["new keyword [C++]", "delete keyword [C++]"]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 ---
@@ -13,7 +12,7 @@ The **new** function in the C++ Standard Library supports the behavior specified
 
 For a list of the library files that comprise the C Runtime Library and the C++ Standard Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).
 
-##  <a id="new_operator"> </a> The new operator
+## <a id="new_operator"> </a> The new operator
 
 When a statement such as the following is encountered in a program, it translates into a call to the function **operator new**:
 
@@ -114,7 +113,7 @@ int main() {
 
 There is another way to handle failed memory allocation requests. Write a custom recovery routine to handle such a failure, then register your function by calling the [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) run-time function.
 
-##  <a id="delete_operator"> </a> The delete operator
+## <a id="delete_operator"> </a> The delete operator
 
 Memory that is dynamically allocated using the **new** operator can be freed using the **delete** operator. The delete operator calls the **operator delete** function, which frees memory back to the available pool. Using the **delete** operator also causes the class destructor (if there is one) to be called.
 

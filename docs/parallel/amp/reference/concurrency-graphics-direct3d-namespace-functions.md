@@ -11,7 +11,7 @@ ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
 |[get_sampler](#get_sampler)|[get_texture](#get_texture)|[make_sampler](#make_sampler)|
 |[make_texture](#make_texture)|[msad4](#msad4)|
 
-## <a name="get_sampler"></a>  get_sampler
+## <a name="get_sampler"></a> get_sampler
 
 Get the D3D sampler state interface on the given accelerator view that represents the specified sampler object.
 
@@ -33,7 +33,7 @@ A sampler object for which the underlying D3D sampler state interface is created
 
 The IUnknown interface pointer corresponding to the D3D sampler state that represents the given sampler.
 
-## <a name="get_texture"></a>  get_texture
+## <a name="get_texture"></a> get_texture
 
 Gets the Direct3D texture interface underlying the specified [texture](texture-class.md) object.
 
@@ -75,7 +75,7 @@ A texture or texture view associated with the accelerator_view for which the und
 
 The IUnknown interface pointer corresponding to the Direct3D texture underlying the texture.
 
-## <a name="make_sampler"></a>  make_sampler
+## <a name="make_sampler"></a> make_sampler
 
 Create a sampler from a D3D sampler state interface pointer.
 
@@ -92,7 +92,7 @@ IUnknown interface pointer of the D3D sampler state to create the sampler from.
 
 A sampler represents the provided D3D sampler state.
 
-## <a name="make_texture"></a>  make_texture
+## <a name="make_texture"></a> make_texture
 
 Creates a [texture](texture-class.md) object by using the specified parameters.
 
@@ -128,7 +128,7 @@ The DXGI format to use for views created from this texture. Pass DXGI_FORMAT_UNK
 
 A texture using the provided D3D texture.
 
-## <a name="msad4"></a>  msad4
+## <a name="msad4"></a> msad4
 
 Compares a 4-byte reference value and an 8-byte source value and accumulates a vector of 4 sums. Each sum corresponds to the masked sum of absolute differences of different byte alignments between the reference value and the source value.
 

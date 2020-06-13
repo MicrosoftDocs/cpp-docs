@@ -10,7 +10,7 @@ ms.assetid: 44e6cc6d-a2dc-4187-98e3-73cf0320dea9
 This class provides methods for assisting communication between an in-place control and its container.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ The [IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceact
 
 **Header:** atlctl.h
 
-##  <a name="contextsensitivehelp"></a>  IOleInPlaceActiveObjectImpl::ContextSensitiveHelp
+## <a name="contextsensitivehelp"></a> IOleInPlaceActiveObjectImpl::ContextSensitiveHelp
 
 Enables context-sensitive help.
 
@@ -70,7 +70,7 @@ Returns E_NOTIMPL.
 
 See [IOleWindow::ContextSensitiveHelp](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) in the Windows SDK.
 
-##  <a name="enablemodeless"></a>  IOleInPlaceActiveObjectImpl::EnableModeless
+## <a name="enablemodeless"></a> IOleInPlaceActiveObjectImpl::EnableModeless
 
 Enables modeless dialog boxes.
 
@@ -86,7 +86,7 @@ Returns S_OK.
 
 See [IOleInPlaceActiveObject::EnableModeless](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless) in the Windows SDK.
 
-##  <a name="getwindow"></a>  IOleInPlaceActiveObjectImpl::GetWindow
+## <a name="getwindow"></a> IOleInPlaceActiveObjectImpl::GetWindow
 
 The container calls this function to get the window handle of the control.
 
@@ -100,7 +100,7 @@ Some containers will not work with a control that has been windowless, even if i
 
 See [IOleWindow::GetWindow](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) in the Windows SDK.
 
-##  <a name="ondocwindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnDocWindowActivate
+## <a name="ondocwindowactivate"></a> IOleInPlaceActiveObjectImpl::OnDocWindowActivate
 
 Notifies the control when the container's document window is activated or deactivated.
 
@@ -116,7 +116,7 @@ Returns S_OK.
 
 See [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate) in the Windows SDK.
 
-##  <a name="onframewindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnFrameWindowActivate
+## <a name="onframewindowactivate"></a> IOleInPlaceActiveObjectImpl::OnFrameWindowActivate
 
 Notifies the control when the container's top-level frame window is activated or deactivated.
 
@@ -132,7 +132,7 @@ Returns S_OK.
 
 See [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) in the Windows SDK.
 
-##  <a name="resizeborder"></a>  IOleInPlaceActiveObjectImpl::ResizeBorder
+## <a name="resizeborder"></a> IOleInPlaceActiveObjectImpl::ResizeBorder
 
 Informs the control it needs to resize its borders.
 
@@ -151,7 +151,7 @@ Returns S_OK.
 
 See [IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder) in the Windows SDK.
 
-##  <a name="translateaccelerator"></a>  IOleInPlaceActiveObjectImpl::TranslateAccelerator
+## <a name="translateaccelerator"></a> IOleInPlaceActiveObjectImpl::TranslateAccelerator
 
 Processes menu accelerator-key messages from the container.
 

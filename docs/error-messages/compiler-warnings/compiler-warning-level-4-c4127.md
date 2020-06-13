@@ -38,7 +38,6 @@ int main() {
 
 This warning can also be generated when a compile-time constant is used in a conditional expression:
 
-
 ```cpp
 #include <string>
 

@@ -133,7 +133,7 @@ true :::::::::::::::::::::::::::::::::::::::::
 
 **Namespace:** std
 
-## <a name="bernoulli_distribution"></a>  bernoulli_distribution::bernoulli_distribution
+## <a name="bernoulli_distribution"></a> bernoulli_distribution::bernoulli_distribution
 
 Constructs the distribution.
 
@@ -158,7 +158,7 @@ The first constructor constructs an object whose stored `p` value holds the valu
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-## <a name="param_type"></a>  bernoulli_distribution::param_type
+## <a name="param_type"></a> bernoulli_distribution::param_type
 
 Contains the parameters of the distribution.
 

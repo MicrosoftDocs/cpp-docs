@@ -37,7 +37,7 @@ This traits class is a complement to the `CSimpleArray` class. It always returns
 
 **Header:** atlsimpcoll.h
 
-##  <a name="isequal"></a>  CSimpleArrayEqualHelperFalse::IsEqual
+## <a name="isequal"></a> CSimpleArrayEqualHelperFalse::IsEqual
 
 Returns false.
 

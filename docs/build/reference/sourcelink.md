@@ -1,6 +1,7 @@
 ---
 title: "/SOURCELINK (Include Sourcelink file in PDB)"
-ms.date: "08/20/2018"
+description: "Reference guide to the /SOURCELINK linker option in Microsoft C++."
+ms.date: "03/31/2020"
 f1_keywords: ["/sourcelink"]
 helpviewer_keywords: ["/SOURCELINK linker option", "/SOURCELINK"]
 ---
@@ -10,16 +11,16 @@ Specifies a Source Link configuration file to include in the PDB file generated 
 
 ## Syntax
 
-> **/SOURCELINK:**_filename_
+> **`/SOURCELINK:`**_`filename`_
 
 ## Arguments
 
 *filename*<br/>
-Specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs where the source file can be retrieved for display by the debugger. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md#source-link-json-schema).
+Specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs for source files to display in the debugger. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/master/accepted/2020/diagnostics/source-link.md#source-link-json-schema).
 
 ## Remarks
 
-Source Link is a language- and source-control agnostic system for providing source debugging for binaries. Source Link is supported for native C++ binaries starting in Visual Studio 2017 version 15.8. For an overview of Source Link, see [Source Link](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md). For information on how to use Source Link in your projects and how to generate the SourceLink file as part of your project, see [Using Source Link](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects).
+Source Link is a language- and source-control agnostic system for providing source debugging for binaries. Source Link is supported for native C++ binaries starting in Visual Studio 2017 version 15.8. For an overview of Source Link, see [Source Link](https://github.com/dotnet/designs/blob/master/accepted/2020/diagnostics/source-link.md). For information on how to use Source Link in your projects, and how to generate the SourceLink file as part of your project, see [Using Source Link](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects).
 
 ### To set the /SOURCELINK linker option in Visual Studio
 
@@ -27,11 +28,11 @@ Source Link is a language- and source-control agnostic system for providing sour
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. In the **Additional options** box, add **/SOURCELINK:**_filename_ and then choose **OK** or **Apply** to save your changes.
+1. In the **Additional options** box, add **`/SOURCELINK:`**_`filename`_ and then choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
 
-- This option does not have a programmatic equivalent.
+- This option doesn't have a programmatic equivalent.
 
 ## See also
 

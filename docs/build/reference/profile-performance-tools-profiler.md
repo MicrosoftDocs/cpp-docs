@@ -65,4 +65,3 @@ SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/PROFILE")
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)
-

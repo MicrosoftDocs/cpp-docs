@@ -45,7 +45,7 @@ Allowed types are:
 
 - public enum class
 
-**UnorderedMap** is basically a wrapper for [std::unordered_map](../standard-library/unordered-map-class.md) that supports storage of Windows Runtime types. It is the a concrete implementation of the [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) and [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::UnorderedMap` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_).
+**UnorderedMap** is basically a wrapper for [std::unordered_map](../standard-library/unordered-map-class.md) that supports storage of Windows Runtime types. It is the a concrete implementation of the [Windows::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2) and [IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::UnorderedMap` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2).
 
 For more information, see [Collections](../cppcx/collections-c-cx.md).
 
@@ -87,7 +87,7 @@ For more information, see [Collections](../cppcx/collections-c-cx.md).
 
 **Namespace:** Platform::Collections
 
-## <a name="clear"></a>  UnorderedMap::Clear Method
+## <a name="clear"></a> UnorderedMap::Clear Method
 
 Removes all key-value pairs from the current UnorderedMap object.
 
@@ -97,9 +97,9 @@ Removes all key-value pairs from the current UnorderedMap object.
 virtual void Clear();
 ```
 
-## <a name="first"></a>  UnorderedMap::First Method
+## <a name="first"></a> UnorderedMap::First Method
 
-Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) element in the unordered map.
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) element in the unordered map.
 
 ### Syntax
 
@@ -117,9 +117,9 @@ An iterator that specifies the first element in the map.
 
 A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myUnorderedMap->First();`.
 
-## <a name="getview"></a>  UnorderedMap::GetView Method
+## <a name="getview"></a> UnorderedMap::GetView Method
 
-Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface.
+Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView](/uwp/api/windows.foundation.collections.imapview-2) interface.
 
 ### Syntax
 
@@ -131,7 +131,7 @@ Windows::Foundation::Collections::IMapView<K, V>^ GetView();
 
 An `UnorderedMapView` object.
 
-## <a name="haskey"></a>  UnorderedMap::HasKey Method
+## <a name="haskey"></a> UnorderedMap::HasKey Method
 
 Determines whether the current UnorderedMap contains the specified key.
 
@@ -152,7 +152,7 @@ The key used to locate the UnorderedMap element. The type of *key* is typename *
 
 **true** if the key is found; otherwise, **false**.
 
-## <a name="insert"></a>  UnorderedMap::Insert Method
+## <a name="insert"></a> UnorderedMap::Insert Method
 
 Adds the specified key-value pair to the current UnorderedMap object.
 
@@ -177,7 +177,7 @@ The value portion of the key-value pair. The type of *value* is typename *V*.
 
 **true** if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. **false** if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current UnorderedMap.
 
-## <a name="lookup"></a>  UnorderedMap::Lookup Method
+## <a name="lookup"></a> UnorderedMap::Lookup Method
 
 Retrieves the value of type V that is associated with the specified key of type K.
 
@@ -198,7 +198,7 @@ The key used to locate an element in the UnorderedMap. The type of *key* is type
 
 The value that is paired with the *key*. The type of the return value is typename *V*.
 
-## <a name="mapchanged"></a>  UnorderedMap::MapChanged
+## <a name="mapchanged"></a> UnorderedMap::MapChanged
 
 Raised when an item is inserted into or removed from the map.
 
@@ -210,13 +210,13 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### Property Value/Return Value
 
-A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) and [CollectionChange Enumeration](/uwp/api/windows.foundation.collections.collectionchange).
+A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler-2) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](/uwp/api/windows.foundation.collections.imapchangedeventargs-1) and [CollectionChange Enumeration](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## .NET Framework Equivalent
 
 Windows Runtime apps that us C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.
 
-## <a name="remove"></a>  UnorderedMap::Remove Method
+## <a name="remove"></a> UnorderedMap::Remove Method
 
 Deletes the specified key-value pair from the UnorderedMap object.
 
@@ -232,9 +232,9 @@ virtual void Remove(
 *key*<br/>
 The key portion of the key-value pair. The type of *key* is typename *K*.
 
-## <a name="size"></a>  UnorderedMap::Size Method
+## <a name="size"></a> UnorderedMap::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) elements in the UnorderedMap.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) elements in the UnorderedMap.
 
 ### Syntax
 
@@ -246,7 +246,7 @@ virtual property unsigned int Size;
 
 The number of elements in the Unordered Map.
 
-## <a name="ctor"></a>  UnorderedMap::UnorderedMap Constructor
+## <a name="ctor"></a> UnorderedMap::UnorderedMap Constructor
 
 Initializes a new instance of the UnorderedMap class.
 

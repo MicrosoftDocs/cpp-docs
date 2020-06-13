@@ -51,7 +51,7 @@ Name                           | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="args"></a>ArgTraitsHelper::args
+## <a name="args"></a> ArgTraitsHelper::args
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

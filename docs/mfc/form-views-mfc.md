@@ -6,12 +6,12 @@ ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
 ---
 # Form Views (MFC)
 
-You can add forms to any Visual C++ application that supports the MFC libraries, including a [forms-based application](../mfc/reference/creating-a-forms-based-mfc-application.md) (one whose view class is derived from `CFormView`). If you did not initially create your application to support forms, Visual C++ will add this support for you when you insert a new form. In an SDI or MDI application, which implements the default [document/view architecture](../mfc/document-view-architecture.md), when the user chooses the **New** command (by default, on the **File** menu), Visual C++ prompts the user to choose from the available forms.
+You can add forms to any Visual C++ application that supports the MFC libraries, including a [forms-based application](reference/creating-a-forms-based-mfc-application.md) (one whose view class is derived from `CFormView`). If you did not initially create your application to support forms, Visual C++ will add this support for you when you insert a new form. In an SDI or MDI application, which implements the default [document/view architecture](document-view-architecture.md), when the user chooses the **New** command (by default, on the **File** menu), Visual C++ prompts the user to choose from the available forms.
 
 With an SDI application, when the user chooses the **New** command, the current instance of the form continues to run but a new instance of the application with the selected form is created if one is not found. In an MDI application, the current instance of the form continues to run when the user chooses the **New** command.
 
 > [!NOTE]
->  You can insert a form into a dialog-based application (one whose dialog class is based on `CDialog` and one in which no view class is implemented). However, without the document/view architecture, Visual C++ does not automatically implement the **File**&#124;**New** functionality. You must create a way for the user to view additional forms, such as by implementing a tabbed dialog box with various property pages.
+> You can insert a form into a dialog-based application (one whose dialog class is based on `CDialog` and one in which no view class is implemented). However, without the document/view architecture, Visual C++ does not automatically implement the **File**&#124;**New** functionality. You must create a way for the user to view additional forms, such as by implementing a tabbed dialog box with various property pages.
 
 When you insert a new form into your application, Visual C++ does the following:
 
@@ -47,10 +47,10 @@ For applications based on the document/view architecture, the **New Form** comma
 
 For more information, see:
 
-- [Create a Forms-Based Application](../mfc/reference/creating-a-forms-based-mfc-application.md)
+- [Create a Forms-Based Application](reference/creating-a-forms-based-mfc-application.md)
 
-- [Inserting a Form into a Project](../mfc/inserting-a-form-into-a-project.md)
+- [Inserting a Form into a Project](inserting-a-form-into-a-project.md)
 
 ## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+[User Interface Elements](user-interface-elements-mfc.md)

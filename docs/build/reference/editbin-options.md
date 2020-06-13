@@ -2,7 +2,6 @@
 title: "EDITBIN Options"
 description: "Reference guide to the Microsoft EDITBIN utility command-line options."
 ms.date: "02/09/2020"
-f1_keywords: ["editbin"]
 helpviewer_keywords: ["EDITBIN program, options"]
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
 ---
@@ -22,7 +21,7 @@ EDITBIN has the following options:
 |[/BIND](bind.md)|Sets the addresses for the entry points in the specified objects to speed load time.|
 |[/DYNAMICBASE](dynamicbase.md)|Specifies whether the DLL or executable image can be randomly rebased at load-time by using address space layout randomization (ASLR).|
 |[/ERRORREPORT](errorreport-editbin-exe.md)| Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
-|[/HEAP](heap.md)|Sets the size of the executable image’s heap in bytes.|
+|[/HEAP](heap.md)|Sets the size of the executable image's heap in bytes.|
 |[/HIGHENTROPYVA](highentropyva.md)|Specifies whether the DLL or executable image supports high entropy (64-bit) address space layout randomization (ASLR).|
 |[/INTEGRITYCHECK](integritycheck.md)|Specifies whether to check the digital signature at load time.|
 |[/LARGEADDRESSAWARE](largeaddressaware.md)|Specifies whether the object supports addresses that are larger than two gigabytes.|
@@ -31,7 +30,7 @@ EDITBIN has the following options:
 |[/REBASE](rebase.md)|Sets the base addresses for the specified objects.|
 |[/RELEASE](release.md)|Sets the checksum in the header.|
 |[/SECTION](section-editbin.md)|Overrides the attributes of a section.|
-|[/STACK](stack.md)|Sets the size of the executable image’s stack in bytes.|
+|[/STACK](stack.md)|Sets the size of the executable image's stack in bytes.|
 |[/SUBSYSTEM](subsystem.md)|Specifies the execution environment.|
 |[/SWAPRUN](swaprun.md)|Specifies that the executable image is copied to the swap file, and then run from there.|
 |[/TSAWARE](tsaware.md)|Specifies that the app is designed to run in a multi-user environment.|

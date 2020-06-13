@@ -16,7 +16,7 @@ This macro sets flags belonging to ActiveX controls.
 
 **Header:** atlcom.h
 
-##  <a name="declare_olemisc_status"></a>  DECLARE_OLEMISC_STATUS
+## <a name="declare_olemisc_status"></a> DECLARE_OLEMISC_STATUS
 
 Used in ATL ActiveX controls to set the OLEMISC flags.
 

@@ -1,7 +1,6 @@
 ---
 title: "How to: Define Control Access and Values (C++)"
 ms.date: "02/15/2019"
-f1_keywords: ["vc.editors.dialog.combo"]
 helpviewer_keywords: ["access keys [C++], adding", "keyboard shortcuts [C++], controls", "dialog box controls [C++], mnemonics", "access keys [C++], checking", "mnemonics [C++], checking for duplicate", "mnemonics", "mnemonics [C++], dialog box controls", "keyboard shortcuts [C++], uniqueness checking", "Check Mnemonics command", "controls [C++], access keys", "access keys [C++]", "combo boxes [C++], Data property", "controls [C++], testing values in combo boxes", "combo boxes [C++], adding values", "combo boxes [C++], previewing values", "Data property", "combo boxes [C++], testing values"]
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
 ---

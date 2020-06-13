@@ -10,11 +10,11 @@ ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
 CAtlTransactionManager class provides a wrapper to Kernel Transaction Manager (KTM) functions.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
-```
+```cpp
 class CAtlTransactionManager;
 ```
 
@@ -65,11 +65,11 @@ class CAtlTransactionManager;
 
 **Header:** atltransactionmanager.h
 
-##  <a name="dtor"></a>  ~CAtlTransactionManager
+## <a name="dtor"></a>  ~CAtlTransactionManager
 
 CAtlTransactionManager destructor.
 
-```
+```cpp
 virtual ~CAtlTransactionManager();
 ```
 
@@ -77,11 +77,11 @@ virtual ~CAtlTransactionManager();
 
 In normal processing, the transaction is automatically committed and closed. If the destructor is called during an exception unwind, the transaction is rolled back and closed.
 
-##  <a name="catltransactionmanager"></a>  CAtlTransactionManager
+## <a name="catltransactionmanager"></a> CAtlTransactionManager
 
 CAtlTransactionManager constructor.
 
-```
+```cpp
 CAtlTransactionManager(BOOL bFallback = TRUE, BOOL bAutoCreateTransaction = TRUE);
 ```
 
@@ -95,11 +95,11 @@ TRUE indicates that the transaction handler is created automatically in the cons
 
 ### Remarks
 
-##  <a name="close"></a>  Close
+## <a name="close"></a> Close
 
 Closes the transaction handle.
 
-```
+```cpp
 inline BOOL Close();
 ```
 
@@ -111,11 +111,11 @@ TRUE if successful; otherwise FALSE.
 
 This wrapper calls the `CloseHandle` function. The method is automatically called in the destructor.
 
-##  <a name="commit"></a>  Commit
+## <a name="commit"></a> Commit
 
 Requests that the transaction be committed.
 
-```
+```cpp
 inline BOOL Commit();
 ```
 
@@ -127,11 +127,11 @@ TRUE if successful; otherwise FALSE.
 
 This wrapper calls the `CommitTransaction` function. The method is automatically called in the destructor.
 
-##  <a name="create"></a>  Create
+## <a name="create"></a> Create
 
 Creates the transaction handle.
 
-```
+```cpp
 inline BOOL Create();
 ```
 
@@ -143,11 +143,11 @@ TRUE if successful; otherwise FALSE.
 
 This wrapper calls the `CreateTransaction` function. Check it for
 
-##  <a name="createfile"></a>  CreateFile
+## <a name="createfile"></a> CreateFile
 
 Creates or opens a file, file stream, or directory as a transacted operation.
 
-```
+```cpp
 inline HANDLE CreateFile(
     LPCTSTR lpFileName,
     DWORD dwDesiredAccess,
@@ -189,11 +189,11 @@ Returns a handle that can be used to access the object.
 
 This wrapper calls the `CreateFileTransacted` function.
 
-##  <a name="deletefile"></a>  DeleteFile
+## <a name="deletefile"></a> DeleteFile
 
 Deletes an existing file as a transacted operation.
 
-```
+```cpp
 inline BOOL DeleteFile(LPCTSTR lpFileName);
 ```
 
@@ -206,11 +206,11 @@ The name of the file to be deleted.
 
 This wrapper calls the `DeleteFileTransacted` function.
 
-##  <a name="findfirstfile"></a>  FindFirstFile
+## <a name="findfirstfile"></a> FindFirstFile
 
 Searches a directory for a file or subdirectory as a transacted operation.
 
-```
+```cpp
 inline HANDLE FindFirstFile(
     LPCTSTR lpFileName,
     WIN32_FIND_DATA* pNextInfo);
@@ -232,11 +232,11 @@ If the function succeeds, the return value is a search handle used in a subseque
 
 This wrapper calls the `FindFirstFileTransacted` function.
 
-##  <a name="getfileattributes"></a>  GetFileAttributes
+## <a name="getfileattributes"></a> GetFileAttributes
 
 Retrieves file system attributes for a specified file or directory as a transacted operation.
 
-```
+```cpp
 inline DWORD GetFileAttributes(LPCTSTR lpFileName);
 ```
 
@@ -249,11 +249,11 @@ The name of the file or directory.
 
 This wrapper calls the `GetFileAttributesTransacted` function.
 
-##  <a name="getfileattributesex"></a>  GetFileAttributesEx
+## <a name="getfileattributesex"></a> GetFileAttributesEx
 
 Retrieves file system attributes for a specified file or directory as a transacted operation.
 
-```
+```cpp
 inline BOOL GetFileAttributesEx(
     LPCTSTR lpFileName,
     GET_FILEEX_INFO_LEVELS fInfoLevelId,
@@ -275,11 +275,11 @@ A pointer to a buffer that receives the attribute information. The type of attri
 
 This wrapper calls the `GetFileAttributesTransacted` function.
 
-##  <a name="gethandle"></a>  GetHandle
+## <a name="gethandle"></a> GetHandle
 
 Returns the transaction handle.
 
-```
+```cpp
 HANDLE GetHandle() const;
 ```
 
@@ -289,11 +289,11 @@ Returns the transaction handle for a class. Returns NULL if the `CAtlTransaction
 
 ### Remarks
 
-##  <a name="isfallback"></a>  IsFallback
+## <a name="isfallback"></a> IsFallback
 
 Determines whether the fallback calls are enabled.
 
-```
+```cpp
 BOOL IsFallback() const;
 ```
 
@@ -303,31 +303,31 @@ Returns TRUE is the class supports fallback calls. FALSE otherwise.
 
 ### Remarks
 
-##  <a name="m_bfallback"></a>  m_bFallback
+## <a name="m_bfallback"></a> m_bFallback
 
 TRUE if the fallback is supported; FALSE otherwise.
 
-```
+```cpp
 BOOL m_bFallback;
 ```
 
 ### Remarks
 
-##  <a name="m_htransaction"></a>  m_hTransaction
+## <a name="m_htransaction"></a> m_hTransaction
 
 The transaction handle.
 
-```
+```cpp
 HANDLE m_hTransaction;
 ```
 
 ### Remarks
 
-##  <a name="movefile"></a>  MoveFile
+## <a name="movefile"></a> MoveFile
 
 Moves an existing file or a directory, including its children, as a transacted operation.
 
-```
+```cpp
 inline BOOL MoveFile(LPCTSTR lpOldFileName, LPCTSTR lpNewFileName);
 ```
 
@@ -343,11 +343,11 @@ The new name for the file or directory. This name must not already exist. A new 
 
 This wrapper calls the `MoveFileTransacted` function.
 
-##  <a name="regcreatekeyex"></a>  RegCreateKeyEx
+## <a name="regcreatekeyex"></a> RegCreateKeyEx
 
 Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.
 
-```
+```cpp
 inline LSTATUS RegCreateKeyEx(
     HKEY hKey,
     LPCTSTR lpSubKey,
@@ -397,11 +397,11 @@ If the function succeeds, the return value is ERROR_SUCCESS. If the function fai
 
 This wrapper calls the `RegCreateKeyTransacted` function.
 
-##  <a name="regdeletekey"></a>  RegDeleteKey
+## <a name="regdeletekey"></a> RegDeleteKey
 
 Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.
 
-```
+```cpp
 inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
 ```
 
@@ -420,11 +420,11 @@ If the function succeeds, the return value is ERROR_SUCCESS. If the function fai
 
 This wrapper calls the `RegDeleteKeyTransacted` function.
 
-##  <a name="regopenkeyex"></a>  RegOpenKeyEx
+## <a name="regopenkeyex"></a> RegOpenKeyEx
 
 Opens the specified registry key and associates it with a transaction.
 
-```
+```cpp
 inline LSTATUS RegOpenKeyEx(
     HKEY hKey,
     LPCTSTR lpSubKey,
@@ -458,11 +458,11 @@ If the function succeeds, the return value is ERROR_SUCCESS. If the function fai
 
 This wrapper calls the `RegOpenKeyTransacted` function.
 
-##  <a name="rollback"></a>  Rollback
+## <a name="rollback"></a> Rollback
 
 Requests that the transaction be rolled back.
 
-```
+```cpp
 inline BOOL Rollback();
 ```
 
@@ -474,11 +474,11 @@ TRUE if successful; otherwise FALSE.
 
 This wrapper calls the `RollbackTransaction` function.
 
-##  <a name="setfileattributes"></a>  SetFileAttributes
+## <a name="setfileattributes"></a> SetFileAttributes
 
 Sets the attributes for a file or directory as a transacted operation.
 
-```
+```cpp
 inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
 ```
 

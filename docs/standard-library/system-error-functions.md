@@ -22,14 +22,14 @@ The `generic_category` object is an implementation of [error_category](../standa
 ## <a name="is_error_code_enum_v"></a> is_error_code_enum_v
 
 ```cpp
-template <class T> 
+template <class T>
     inline constexpr bool is_error_code_enum_v = is_error_code_enum<T>::value;
 ```
 
 ## <a name="is_error_condition_enum_v"></a> is_error_condition_enum_v
 
 ```cpp
-template <class T> 
+template <class T>
     inline constexpr bool is_error_condition_enum_v = is_error_condition_enum<T>::value;
 ```
 

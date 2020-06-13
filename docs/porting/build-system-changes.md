@@ -50,7 +50,7 @@ When **Solution Explorer** is used to add a file to a project, the filters file 
 
 ## VC++ Directories settings
 
-Visual C++ directories settings are specified on the [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md). In Visual Studio 2008 and earlier, directories settings apply per-user and the list of excluded directories is specified in the *sysincl.dat* file. 
+Visual C++ directories settings are specified on the [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md). In Visual Studio 2008 and earlier, directories settings apply per-user and the list of excluded directories is specified in the *sysincl.dat* file.
 
 You cannot change the VC++ directories settings if you run [devenv /resetsettings](/visualstudio/ide/reference/resetsettings-devenv-exe) at the command line. You also cannot change the settings if you open the **Tools** menu, click **Import and Export Settings**, and then select the **Reset all settings** option.
 

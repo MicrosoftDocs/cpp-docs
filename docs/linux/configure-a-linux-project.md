@@ -11,9 +11,9 @@ Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-This topic describes how to configure a C++ Linux project as described in [Create a new C++ Linux project in Visual Studio](create-a-new-linux-project.md). For CMake Linux projects, see [Configure a Linux CMake Project ](cmake-linux-project.md). 
+This topic describes how to configure a C++ Linux project as described in [Create a new C++ Linux project in Visual Studio](create-a-new-linux-project.md). For CMake Linux projects, see [Configure a Linux CMake Project](cmake-linux-project.md).
 
-You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about) (WSL). 
+You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about) (WSL).
 
 ::: moniker range="vs-2019"
 
@@ -120,7 +120,7 @@ You can enable logging to help troubleshoot problems:
 ## See also
 
 [Set compiler and build properties](../build/working-with-project-properties.md)<br/>
-[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)<br/>
-[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
-[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
-[Build Event Properties (Linux C++)](../linux/prop-pages/build-events-linux.md)
+[C++ General Properties (Linux C++)](prop-pages/general-linux.md)<br/>
+[VC++ Directories (Linux C++)](prop-pages/directories-linux.md)<br/>
+[Copy Sources Project Properties (Linux C++)](prop-pages/copy-sources-project.md)<br/>
+[Build Event Properties (Linux C++)](prop-pages/build-events-linux.md)

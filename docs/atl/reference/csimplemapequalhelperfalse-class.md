@@ -35,7 +35,7 @@ The value comparison will always return false, and in addition, will call `ATLAS
 
 **Header:** atlsimpcoll.h
 
-##  <a name="isequalkey"></a>  CSimpleMapEqualHelperFalse::IsEqualKey
+## <a name="isequalkey"></a> CSimpleMapEqualHelperFalse::IsEqualKey
 
 Tests two keys for equality.
 
@@ -59,7 +59,7 @@ Returns true if the keys are equal, false otherwise.
 
 This method calls [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md).
 
-##  <a name="isequalvalue"></a>  CSimpleMapEqualHelperFalse::IsEqualValue
+## <a name="isequalvalue"></a> CSimpleMapEqualHelperFalse::IsEqualValue
 
 Returns false.
 

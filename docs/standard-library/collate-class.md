@@ -55,7 +55,7 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 **Namespace:** std
 
-## <a name="char_type"></a>  collate::char_type
+## <a name="char_type"></a> collate::char_type
 
 A type that describes a character of type `CharType`.
 
@@ -67,7 +67,7 @@ typedef CharType char_type;
 
 The type is a synonym for the template parameter `CharType`.
 
-## <a name="collate"></a>  collate::collate
+## <a name="collate"></a> collate::collate
 
 The constructor for objects of class collate that serves as a locale facet to handle string sorting conventions.
 
@@ -102,7 +102,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
-## <a name="compare"></a>  collate::compare
+## <a name="compare"></a> collate::compare
 
 Compares two character sequences according to their facet-specific rules for equality or inequality.
 
@@ -168,7 +168,7 @@ int main() {
 }
 ```
 
-## <a name="do_compare"></a>  collate::do_compare
+## <a name="do_compare"></a> collate::do_compare
 
 A virtual function called to compare two character sequences according to their facet-specific rules for equality or inequality.
 
@@ -211,7 +211,7 @@ The protected virtual member function compares the sequence at [ * first1, Last1
 
 See the example for [collate::compare](#compare), which calls `do_compare`.
 
-## <a name="do_hash"></a>  collate::do_hash
+## <a name="do_hash"></a> collate::do_hash
 
 A virtual function called to determine the hash value of sequences according to their facet-specific rules.
 
@@ -239,7 +239,7 @@ A hash value can be useful, for example, in distributing sequences pseudo-random
 
 See the example for [hash](#hash), which calls `do_hash`.
 
-## <a name="do_transform"></a>  collate::do_transform
+## <a name="do_transform"></a> collate::do_transform
 
 A virtual function called to convert a character sequence from a locale to a string that may be used in lexicographical comparisons with other character sequences similarly converted from the same locale.
 
@@ -267,7 +267,7 @@ The protected virtual member function returns an object of class [string_type](#
 
 See the example for [transform](#transform), which calls `do_transform`.
 
-## <a name="hash"></a>  collate::hash
+## <a name="hash"></a> collate::hash
 
 Determines the hash value of sequence according to their facet-specific rules.
 
@@ -321,7 +321,7 @@ int main( )
 541187293 551279837
 ```
 
-## <a name="string_type"></a>  collate::string_type
+## <a name="string_type"></a> collate::string_type
 
 A type that describes a string of type `basic_string` containing characters of type `CharType`.
 
@@ -337,7 +337,7 @@ The type describes a specialization of class template [basic_string](../standard
 
 For an example of how to declare and use `string_type`, see [transform](#transform).
 
-## <a name="transform"></a>  collate::transform
+## <a name="transform"></a> collate::transform
 
 Converts a character sequence from a locale to a string that may be used in lexicographical comparisons with other character sequences similarly converted from the same locale.
 

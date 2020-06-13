@@ -21,7 +21,7 @@ A source program can be divided into one or more "source files," or "translation
 [Overview of Declarations](../c-language/overview-of-declarations.md) gives the syntax for the `declaration` nonterminal, and the *Preprocessor Reference* explains how the [translation unit](../preprocessor/phases-of-translation.md) is processed.
 
 > [!NOTE]
->  See the introduction to [C Language Syntax Summary](../c-language/c-language-syntax-summary.md), for an explanation of the ANSI syntax conventions.
+> See the introduction to [C Language Syntax Summary](../c-language/c-language-syntax-summary.md), for an explanation of the ANSI syntax conventions.
 
 The components of a translation unit are external declarations that include function definitions and identifier declarations. These declarations and definitions can be in source files, header files, libraries, and other files the program needs. You must compile each translation unit and link the resulting object files to make a program.
 

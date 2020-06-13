@@ -188,7 +188,7 @@ Name                     | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="args"></a>ArgTraits::args
+## <a name="args"></a> ArgTraits::args
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

@@ -11,7 +11,7 @@ The **float** type contains 32 bits: 1 for the sign, 8 for the exponent, and 23 
 
 The **double** type contains 64 bits: 1 for the sign, 11 for the exponent, and 52 for the mantissa. Its range is +/- 1.7E308 with at least 15 digits of precision.
 
-The **long double** type contains 80 bits: 1 for the sign, 15 for the exponent, and 64 for the mantissa. Its range is +/- 1.2E4932 with at least 19 digits of precision. Note that with the Microsoft C compiler, the representation of type **long double** is identical to type **double**.
+The **long double** type is distinct, but has the same representation as type **double** in the Microsoft C compiler.
 
 ## See also
 

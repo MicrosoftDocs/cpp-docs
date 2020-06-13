@@ -3,7 +3,6 @@ title: "Delegating constructors (C++)"
 description: "Use delegating constructors in C++ to invoke other constructors and reduce code repetition."
 ms.date: "11/19/2019"
 ---
-
 # Delegating constructors
 
 Many classes have multiple constructors that do similar things—for example, validate parameters:

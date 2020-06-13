@@ -76,7 +76,7 @@ For more information on using `CAnimateCtrl`, see [Controls](../../mfc/controls-
 
 **Header:** afxcmn.h
 
-##  <a name="canimatectrl"></a>  CAnimateCtrl::CAnimateCtrl
+## <a name="canimatectrl"></a> CAnimateCtrl::CAnimateCtrl
 
 Constructs a `CAnimateCtrl` object.
 
@@ -92,7 +92,7 @@ You must call the [Create](#create) member function before you can perform any o
 
 [!code-cpp[NVC_MFCControlLadenDialog#56](../../mfc/codesnippet/cpp/canimatectrl-class_1.cpp)]
 
-##  <a name="close"></a>  CAnimateCtrl::Close
+## <a name="close"></a> CAnimateCtrl::Close
 
 Closes the AVI clip that was previously opened in the animation control (if any) and removes it from memory.
 
@@ -108,7 +108,7 @@ Nonzero if successful; otherwise zero.
 
   See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
 
-##  <a name="create"></a>  CAnimateCtrl::Create
+## <a name="create"></a> CAnimateCtrl::Create
 
 Creates an animation control and attaches it to a `CAnimateCtrl` object.
 
@@ -158,7 +158,7 @@ In addition to the window styles listed above, you may want to apply one or more
 
   See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
 
-##  <a name="createex"></a>  CAnimateCtrl::CreateEx
+## <a name="createex"></a> CAnimateCtrl::CreateEx
 
 Creates a control (a child window) and associates it with the `CAnimateCtrl` object.
 
@@ -180,7 +180,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the animation control's style. Apply any combination of the window and animation control styles described in [Animation Control Styles](/windows/win32/Controls/animation-control-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -196,7 +196,7 @@ Nonzero if successful; otherwise 0.
 
 Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
 
-##  <a name="isplaying"></a>  CAnimateCtrl::IsPlaying
+## <a name="isplaying"></a> CAnimateCtrl::IsPlaying
 
 Indicates whether an Audio-Video Interleaved (AVI) clip is playing.
 
@@ -212,7 +212,7 @@ TRUE if an AVI clip is playing; otherwise, FALSE.
 
 This method sends the [ACM_ISPLAYING](/windows/win32/Controls/acm-isplaying) message, which is described in the Windows SDK.
 
-##  <a name="open"></a>  CAnimateCtrl::Open
+## <a name="open"></a> CAnimateCtrl::Open
 
 Call this function to open an AVI clip and display its first frame.
 
@@ -249,7 +249,7 @@ If the animation control has the `ACS_TRANSPARENT` style, the first frame will b
 
   See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
 
-##  <a name="play"></a>  CAnimateCtrl::Play
+## <a name="play"></a> CAnimateCtrl::Play
 
 Call this function to play an AVI clip in an animation control.
 
@@ -283,7 +283,7 @@ The animation control will play the clip in the background while your thread con
 
   See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
 
-##  <a name="seek"></a>  CAnimateCtrl::Seek
+## <a name="seek"></a> CAnimateCtrl::Seek
 
 Call this function to statically display a single frame of your AVI clip.
 
@@ -308,7 +308,7 @@ If the animation control has `ACS_TRANSPARENT` style, the AVI clip will be drawn
 
 See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
 
-##  <a name="stop"></a>  CAnimateCtrl::Stop
+## <a name="stop"></a> CAnimateCtrl::Stop
 
 Call this function to stop playing an AVI clip in an animation control.
 

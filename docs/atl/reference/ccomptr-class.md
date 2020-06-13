@@ -58,7 +58,7 @@ In Debug builds, link atlsd.lib for code tracing.
 
 **Header:** atlbase.h
 
-## <a name="ccomptr"></a>  CComPtr::CComPtr
+## <a name="ccomptr"></a> CComPtr::CComPtr
 
 The constructor.
 
@@ -80,7 +80,7 @@ A COM interface.
 
 The constructors that take an argument call `AddRef` on *lp*, if it isn't a null pointer. A non-null owned object gets a `Release` call upon the CComPtr object's destruction, or if a new object is assigned to the CComPtr object.
 
-## <a name="operator_eq"></a>  CComPtr::operator =
+## <a name="operator_eq"></a> CComPtr::operator =
 
 Assignment operator.
 

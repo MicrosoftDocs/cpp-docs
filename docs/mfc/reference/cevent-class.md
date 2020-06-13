@@ -68,7 +68,7 @@ For more information about how to use `CEvent` objects, see [Multithreading: How
 
 **Header:** afxmt.h
 
-##  <a name="cevent"></a>  CEvent::CEvent
+## <a name="cevent"></a> CEvent::CEvent
 
 Constructs a named or unnamed `CEvent` object.
 
@@ -101,9 +101,9 @@ To access or release a `CEvent` object, create a [CMultiLock](../../mfc/referenc
 To change the state of a `CEvent` object to signaled (threads do not have to wait), call [SetEvent](#setevent) or [PulseEvent](#pulseevent). To set the state of a `CEvent` object to nonsignaled (threads must wait), call [ResetEvent](#resetevent).
 
 > [!IMPORTANT]
->  After creating the `CEvent` object, use [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) to ensure that the mutex didn't already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.
+> After creating the `CEvent` object, use [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) to ensure that the mutex didn't already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.
 
-##  <a name="pulseevent"></a>  CEvent::PulseEvent
+## <a name="pulseevent"></a> CEvent::PulseEvent
 
 Sets the state of the event to signaled (available), releases any waiting threads, and resets it to nonsignaled (unavailable) automatically.
 
@@ -123,7 +123,7 @@ If no threads are waiting, or no threads can be released immediately, `PulseEven
 
 `PulseEvent` uses the underlying Win32 `PulseEvent` function, which can be momentarily removed from the wait state by a kernel-mode asynchronous procedure call. Therefore, `PulseEvent` is unreliable and should not be used by new applications. For more information, see the [PulseEvent function](/windows/win32/api/winbase/nf-winbase-pulseevent).
 
-##  <a name="resetevent"></a>  CEvent::ResetEvent
+## <a name="resetevent"></a> CEvent::ResetEvent
 
 Sets the state of the event to nonsignaled until explicitly set to signaled by the [SetEvent](#setevent) member function.
 
@@ -141,7 +141,7 @@ This causes all threads wishing to access this event to wait.
 
 This member function is not used by automatic events.
 
-##  <a name="setevent"></a>  CEvent::SetEvent
+## <a name="setevent"></a> CEvent::SetEvent
 
 Sets the state of the event to signaled, releasing any waiting threads.
 
@@ -157,7 +157,7 @@ Nonzero if the function was successful, otherwise 0.
 
 If the event is manual, the event will remain signaled until [ResetEvent](#resetevent) is called. More than one thread can be released in this case. If the event is automatic, the event will remain signaled until a single thread is released. The system will then set the state of the event to nonsignaled. If no threads are waiting, the state remains signaled until one thread is released.
 
-##  <a name="unlock"></a>  CEvent::Unlock
+## <a name="unlock"></a> CEvent::Unlock
 
 Releases the event object.
 

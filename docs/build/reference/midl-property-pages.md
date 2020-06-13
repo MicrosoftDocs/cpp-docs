@@ -48,7 +48,6 @@ f1_keywords:
   - VC.Project.VCMidlTool.MinimumTargetSystem
   - vc.project.AdditionalOptionsPage
 ---
-
 # MIDL Property Pages
 
 The MIDL property pages are available as an item property on an .IDL file in a C++ project that uses COM. Use them to configure the [MIDL Compiler](/windows/win32/midl/using-the-midl-compiler-2). For information on how to programmatically access MIDL options for C++ projects, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool> object. See also [General MIDL Command-line Syntax](/windows/win32/midl/general-midl-command-line-syntax).
@@ -278,6 +277,3 @@ Redirects output from screen to a file ([/o](/windows/win32/midl/-o) file).
 ### Minimum Target System
 
 Set the minimum target system ([/target](/windows/win32/midl/-target) STRING).
-
-
-

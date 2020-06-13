@@ -24,7 +24,7 @@ Expressions can use the following operators. The operators of equal precedence a
 |**EXIST(** *path* **)**|Produces a logical value for the existence of a file at *path*.|
 |||
 |**!**|Unary logical NOT.|
-|**~**|Unary one’s complement.|
+|**~**|Unary one's complement.|
 |**-**|Unary negation.|
 |||
 |**&#42;**|Multiplication.|

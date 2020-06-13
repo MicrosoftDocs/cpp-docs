@@ -188,7 +188,7 @@ getloc == imbued == true
 match("abc") == true
 ```
 
-## <a name="assign"></a>  basic_regex::assign
+## <a name="assign"></a> basic_regex::assign
 
 Assigns a value to the regular expression object.
 
@@ -259,7 +259,7 @@ The initializer_list to copy.
 
 The member functions each replace the regular expression held by `*this` with the regular expression described by the operand sequence, then return `*this`.
 
-## <a name="basic_regex"></a>  basic_regex::basic_regex
+## <a name="basic_regex"></a> basic_regex::basic_regex
 
 Construct the regular expression object.
 
@@ -337,7 +337,7 @@ The first constructor constructs an empty `basic_regex` object. The other constr
 
 An empty `basic_regex` object does not match any character sequence when passed to [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), or [regex_replace](../standard-library/regex-functions.md#regex_replace).
 
-## <a name="flag_type"></a>  basic_regex::flag_type
+## <a name="flag_type"></a> basic_regex::flag_type
 
 The type of syntax option flags.
 
@@ -349,7 +349,7 @@ typedef regex_constants::syntax_option_type flag_type;
 
 The type is a synonym for [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type).
 
-## <a name="flags"></a>  basic_regex::flags
+## <a name="flags"></a> basic_regex::flags
 
 Returns syntax option flags.
 
@@ -361,7 +361,7 @@ flag_type flags() const;
 
 The member function returns the value of the `flag_type` argument passed to the most recent call to one of the [basic_regex::assign](#assign) member functions or, if no such call has been made, the value passed to the constructor.
 
-## <a name="getloc"></a>  basic_regex::getloc
+## <a name="getloc"></a> basic_regex::getloc
 
 Returns the stored locale object.
 
@@ -373,7 +373,7 @@ locale_type getloc() const;
 
 The member function returns `traits.`[regex_traits::getloc](../standard-library/regex-traits-class.md#getloc)`()`.
 
-## <a name="imbue"></a>  basic_regex::imbue
+## <a name="imbue"></a> basic_regex::imbue
 
 Alters the stored locale object.
 
@@ -390,7 +390,7 @@ The locale object to store.
 
 The member function empties `*this` and returns `traits.`[regex_traits::imbue](../standard-library/regex-traits-class.md#imbue)`(loc)`.
 
-## <a name="locale_type"></a>  basic_regex::locale_type
+## <a name="locale_type"></a> basic_regex::locale_type
 
 The type of the stored locale object.
 
@@ -402,7 +402,7 @@ typedef typename RXtraits::locale_type locale_type;
 
 The type is a synonym for [regex_traits::locale_type](../standard-library/regex-traits-class.md#locale_type).
 
-## <a name="mark_count"></a>  basic_regex::mark_count
+## <a name="mark_count"></a> basic_regex::mark_count
 
 Returns number of subexpressions matched.
 
@@ -414,7 +414,7 @@ unsigned mark_count() const;
 
 The member function returns the number of capture groups in the regular expression.
 
-## <a name="op_eq"></a>  basic_regex::operator=
+## <a name="op_eq"></a> basic_regex::operator=
 
 Assigns a value to the regular expression object.
 
@@ -445,7 +445,7 @@ String to copy.
 
 The operators each replace the regular expression held by `*this` with the regular expression described by the operand sequence, then return `*this`.
 
-## <a name="swap"></a>  basic_regex::swap
+## <a name="swap"></a> basic_regex::swap
 
 Swaps two regular expression objects.
 
@@ -462,7 +462,7 @@ The regular expression object to swap with.
 
 The member function swaps the regular expressions between `*this` and *right*. It does so in constant time and throws no exceptions.
 
-## <a name="value_type"></a>  basic_regex::value_type
+## <a name="value_type"></a> basic_regex::value_type
 
 The element type.
 

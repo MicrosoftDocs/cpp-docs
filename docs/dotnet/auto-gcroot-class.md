@@ -23,35 +23,34 @@ class auto_gcroot;
 The managed type to be embedded.
 
 ## Members
- 
-### Public constructors 
- 
-|Name|Description| 
-|---------|-----------| 
-|[auto_gcroot::auto_gcroot](#auto-gcroot)|The `auto_gcroot` constructor.| 
+
+### Public constructors
+
+|Name|Description|
+|---------|-----------|
+|[auto_gcroot::auto_gcroot](#auto-gcroot)|The `auto_gcroot` constructor.|
 |[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|The `auto_gcroot` destructor.
-| 
+|
 
-### Public methods 
+### Public methods
 
-|Name|Description| 
-|---------|-----------| 
-|[auto_gcroot::attach](#attach)|Attach `auto_gcroot` to an object.| 
-|[auto_gcroot::get](#get)|Gets the contained object.| 
+|Name|Description|
+|---------|-----------|
+|[auto_gcroot::attach](#attach)|Attach `auto_gcroot` to an object.|
+|[auto_gcroot::get](#get)|Gets the contained object.|
 |[auto_gcroot::release](#release)|Releases the object from `auto_gcroot` management.|
 |[auto_gcroot::reset](#reset)|Destroy the current owned object and optionally take possession of a new object.|
-|[auto_gcroot::swap](#swap)|Swaps objects with another `auto_gcroot`.| 
+|[auto_gcroot::swap](#swap)|Swaps objects with another `auto_gcroot`.|
 
- 
 ### Public operators
- 
-|Name|Description| 
+
+|Name|Description|
 |---------|-----------|
 |[auto_gcroot::operator-&gt;](#operator-arrow)|The member access operator.|  
 |[auto_gcroot::operator=](#operator-assign)|Assignment operator.|
-|[auto_gcroot::operator&nbsp;auto_gcroot](#operator-auto-gcroot)|Type-cast operator between `auto_gcroot` and compatible types.| 
+|[auto_gcroot::operator&nbsp;auto_gcroot](#operator-auto-gcroot)|Type-cast operator between `auto_gcroot` and compatible types.|
 |[auto_gcroot::operator&nbsp;bool](#operator-bool)|Operator for using `auto_gcroot` in a conditional expression.|  
-|[auto_gcroot::operator!](#operator-logical-not)|Operator for using `auto_gcroot` in a conditional expression.| 
+|[auto_gcroot::operator!](#operator-logical-not)|Operator for using `auto_gcroot` in a conditional expression.|
 
 ## Requirements
 
@@ -59,7 +58,7 @@ The managed type to be embedded.
 
 **Namespace** msclr
 
-## <a name="auto-gcroot"></a>auto_gcroot::auto_gcroot
+## <a name="auto-gcroot"></a> auto_gcroot::auto_gcroot
 
 The `auto_gcroot` constructor.
 
@@ -175,10 +174,9 @@ in RefClassA destructor: second
 done
 ```
 
-## <a name="tilde-auto-gcroot"></a>auto_gcroot::~auto_gcroot
+## <a name="tilde-auto-gcroot"></a> auto_gcroot::~auto_gcroot
 
 The `auto_gcroot` destructor.
-
 
 ```cpp
 ~auto_gcroot();
@@ -223,7 +221,7 @@ ClassA destructor
 done
 ```
 
-## <a name="attach"></a>auto_gcroot::attach
+## <a name="attach"></a> auto_gcroot::attach
 
 Attach `auto_gcroot` to an object.
 
@@ -318,7 +316,7 @@ Hello from fourth A!
 in ClassA destructor:fourth
 ```
 
-## <a name="get"></a>auto_gcroot::get
+## <a name="get"></a> auto_gcroot::get
 
 Gets the contained object.
 
@@ -378,7 +376,7 @@ Hello from first A!
 in ClassA destructor:first
 ```
 
-## <a name="release"></a>auto_gcroot::release
+## <a name="release"></a> auto_gcroot::release
 
 Releases the object from `auto_gcroot` management.
 
@@ -441,7 +439,7 @@ Hello from first A!
 done
 ```
 
-## <a name="reset"></a>auto_gcroot::reset
+## <a name="reset"></a> auto_gcroot::reset
 
 Destroy the current owned object and optionally take possession of a new object.
 
@@ -506,7 +504,7 @@ ClassA destructor: second
 done
 ```
 
-## <a name="swap"></a>auto_gcroot::swap
+## <a name="swap"></a> auto_gcroot::swap
 
 Swaps objects with another `auto_gcroot`.
 
@@ -548,7 +546,7 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="operator-arrow"></a>auto_gcroot::operator-&gt;
+## <a name="operator-arrow"></a> auto_gcroot::operator-&gt;
 
 The member access operator.
 
@@ -597,7 +595,7 @@ Hello from first A!
 a->m_i = 5
 ```
 
-## <a name="operator-assign"></a>auto_gcroot::operator=
+## <a name="operator-assign"></a> auto_gcroot::operator=
 
 Assignment operator.
 
@@ -689,7 +687,7 @@ done
 in ClassA destructor: third
 ```
 
-## <a name="operator-auto-gcroot"></a>auto_gcroot::operator auto_gcroot
+## <a name="operator-auto-gcroot"></a> auto_gcroot::operator auto_gcroot
 
 Type-cast operator between `auto_gcroot` and compatible types.
 
@@ -744,7 +742,7 @@ Hello from first B!
 Hello from first A!
 ```
 
-## <a name="operator-bool"></a>auto_gcroot::operator bool
+## <a name="operator-bool"></a> auto_gcroot::operator bool
 
 Operator for using `auto_gcroot` in a conditional expression.
 
@@ -758,7 +756,7 @@ operator bool() const;
 
 ### Remarks
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+This operator actually converts to `_detail_class::_safe_bool`, which is safer than `bool` because it can't be converted to an integral type.
 
 ### Example
 
@@ -789,7 +787,7 @@ now s is valid
 now s is invalid
 ```
 
-## <a name="operator-logical-not"></a>auto_gcroot::operator!
+## <a name="operator-logical-not"></a> auto_gcroot::operator!
 
 Operator for using `auto_gcroot` in a conditional expression.
 

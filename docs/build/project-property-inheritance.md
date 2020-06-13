@@ -4,7 +4,6 @@ description: "How property inheritance works in native (MSBuild) Visual Studio C
 ms.date: "02/21/2020"
 helpviewer_keywords: ["C++ projects, property inheritance"]
 ---
-
 # Property inheritance in Visual Studio projects
 
 The Visual Studio native project system is based on MSBuild. MSBuild defines file formats and rules for building projects of any kind. It manages most of the complexity of building for multiple configurations and platforms. You'll find it useful to understand how it works. That's especially important if you want to define custom configurations. Or, to create reusable sets of properties that you can share and import into multiple projects.

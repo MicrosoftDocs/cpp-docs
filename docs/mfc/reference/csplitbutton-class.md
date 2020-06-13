@@ -64,7 +64,7 @@ This class is supported in Windows Vista and later.
 
 Additional requirements for this class are described in [Build Requirements for Windows Vista Common Controls](../../mfc/build-requirements-for-windows-vista-common-controls.md).
 
-##  <a name="create"></a>  CSplitButton::Create
+## <a name="create"></a> CSplitButton::Create
 
 Creates a split button control with specified styles and attaches it to the current `CSplitButton` object.
 
@@ -81,7 +81,7 @@ virtual BOOL Create(
 |Parameter|Description|
 |---------------|-----------------|
 |*dwStyle*|[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).|
-|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control.|
+|*rect*|[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.|
 |*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|
 |*nID*|[in] The ID of the control.|
 
@@ -89,7 +89,7 @@ virtual BOOL Create(
 
 TRUE if this method is successful; otherwise, FALSE.
 
-##  <a name="csplitbutton"></a>  CSplitButton::CSplitButton
+## <a name="csplitbutton"></a> CSplitButton::CSplitButton
 
 Constructs a `CSplitButton` object. The constructor's parameters specify a submenu that is displayed when a user clicks the drop-down arrow of the split button control.
 
@@ -114,7 +114,7 @@ CSplitButton(CMenu* pMenu)
 
 Use the [CSplitButton::Create](#create) method to create a split button control and attach it to the `CSplitButton` object.
 
-##  <a name="ondropdown"></a>  CSplitButton::OnDropDown
+## <a name="ondropdown"></a> CSplitButton::OnDropDown
 
 Handles the BCN_DROPDOWN notification that the system sends when a user clicks the drop-down arrow of the current split button control.
 
@@ -146,11 +146,11 @@ BEGIN_MESSAGE_MAP(CMySplitButton,
 END_MESSAGE_MAP()
 ```
 
-##  <a name="setdropdownmenu"></a>  CSplitButton::SetDropDownMenu
+## <a name="setdropdownmenu"></a> CSplitButton::SetDropDownMenu
 
 Sets the drop-down menu that is displayed when a user clicks the drop-down arrow of the current split button control.
 
-```
+```cpp
 void SetDropDownMenu(
     UINT nMenuId,
     UINT nSubMenuId);

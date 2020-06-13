@@ -10,7 +10,7 @@ ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce
 This class implements `IUnknown` and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ When you create a property page, your class is typically derived from `IProperty
 
 **Header:** atlctl.h
 
-##  <a name="editproperty"></a>  IPropertyPage2Impl::EditProperty
+## <a name="editproperty"></a> IPropertyPage2Impl::EditProperty
 
 Specifies which property control will receive the focus when the property page is activated.
 

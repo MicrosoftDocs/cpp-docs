@@ -18,46 +18,46 @@ These articles explain the fundamentals of OLE programming using MFC. MFC provid
 
 - To manage the state data of MFC modules, including exported DLL function entry points, OLE/COM interface entry points, and window procedure entry points.
 
-You can also use [Automation](../mfc/automation.md).
+You can also use [Automation](automation.md).
 
 > [!NOTE]
->  The term OLE denotes the technologies associated with linking and embedding, including OLE containers, OLE servers, OLE items, in-place activation (or visual editing), trackers, drag and drop, and menu merging. The term Active applies to the Component Object Model (COM) and COM-based objects such as ActiveX controls. OLE Automation is now called Automation.
+> The term OLE denotes the technologies associated with linking and embedding, including OLE containers, OLE servers, OLE items, in-place activation (or visual editing), trackers, drag and drop, and menu merging. The term Active applies to the Component Object Model (COM) and COM-based objects such as ActiveX controls. OLE Automation is now called Automation.
 
 ## In This Section
 
-[OLE Background](../mfc/ole-background.md)<br/>
+[OLE Background](ole-background.md)<br/>
 Discusses OLE and provides conceptual information about how it works.
 
-[Activation](../mfc/activation-cpp.md)<br/>
+[Activation](activation-cpp.md)<br/>
 Describes the role of activation in editing OLE items.
 
-[Containers](../mfc/containers.md)<br/>
+[Containers](containers.md)<br/>
 Provides links to using containers in OLE.
 
-[Data Objects and Data Sources](../mfc/data-objects-and-data-sources-ole.md)<br/>
+[Data Objects and Data Sources](data-objects-and-data-sources-ole.md)<br/>
 Provides links to topics discussing the use of the `COleDataObject` and `COleDataSource` classes.
 
-[Drag and Drop](../mfc/drag-and-drop-ole.md)<br/>
+[Drag and Drop](drag-and-drop-ole.md)<br/>
 Discusses using copying and pasting with OLE.
 
-[OLE Menus and Resources](../mfc/menus-and-resources-ole.md)<br/>
+[OLE Menus and Resources](menus-and-resources-ole.md)<br/>
 Explains the use of menus and resources in MFC OLE document applications.
 
-[Registration](../mfc/registration.md)<br/>
+[Registration](registration.md)<br/>
 Discusses server installation and initialization.
 
-[Servers](../mfc/servers.md)<br/>
+[Servers](servers.md)<br/>
 Describes how to create OLE items (or components) for use by container applications.
 
-[Trackers](../mfc/trackers.md)<br/>
+[Trackers](trackers.md)<br/>
 Provides information about the `CRectTracker` class, which provides a graphical interface to enable users to interact with OLE client items.
 
 ## Related Sections
 
-[Connection Points](../mfc/connection-points.md)<br/>
+[Connection Points](connection-points.md)<br/>
 Explains how to implement connection points (formerly known as OLE connection points) using the MFC classes `CCmdTarget` and `CConnectionPoint`.
 
-[Container/Server COM Components](../mfc/containers-advanced-features.md)<br/>
+[Container/Server COM Components](containers-advanced-features.md)<br/>
 Describes the steps necessary to incorporate optional advanced features into existing container applications.
 
 [The Component Object Model](/windows/win32/com/the-component-object-model)<br/>
@@ -65,4 +65,4 @@ Describes using OLE without MFC.
 
 ## See also
 
-[Concepts](../mfc/mfc-concepts.md)
+[Concepts](mfc-concepts.md)

@@ -48,7 +48,7 @@ Each memory block holds *Sz* bytes of usable memory and the data that **operator
 
 **Namespace:** stdext
 
-## <a name="allocate"></a>  cache_freelist::allocate
+## <a name="allocate"></a> cache_freelist::allocate
 
 Allocates a block of memory.
 
@@ -68,7 +68,7 @@ A pointer to the allocated object.
 
 ### Remarks
 
-## <a name="cache_freelist"></a>  cache_freelist::cache_freelist
+## <a name="cache_freelist"></a> cache_freelist::cache_freelist
 
 Constructs an object of type `cache_freelist`.
 
@@ -78,7 +78,7 @@ cache_freelist();
 
 ### Remarks
 
-## <a name="deallocate"></a>  cache_freelist::deallocate
+## <a name="deallocate"></a> cache_freelist::deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 

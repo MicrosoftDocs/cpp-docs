@@ -38,10 +38,10 @@ You must establish a recordset object's filter after you construct the object bu
 1. Call `Open` for the new object (or `Requery` for a previously opened object).
 
 > [!TIP]
->  Using parameters in your filter is potentially the most efficient method for retrieving records.
+> Using parameters in your filter is potentially the most efficient method for retrieving records.
 
 > [!TIP]
->  Recordset filters are useful for [joining](../../data/odbc/recordset-performing-a-join-odbc.md) tables and for using [parameters](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) based on information obtained or calculated at run time.
+> Recordset filters are useful for [joining](../../data/odbc/recordset-performing-a-join-odbc.md) tables and for using [parameters](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) based on information obtained or calculated at run time.
 
 The recordset selects only those records that meet the search condition you specified. For example, to specify the course filter described above (assuming a variable `strCourseID` currently set, for instance, to "MATH101"), do the following:
 
@@ -74,7 +74,7 @@ m_strFilter = "StudentID = 100";   // incorrect for some drivers
 The quoting shown above conforms to the ODBC specification, but some DBMSs might require other quote characters. For more information, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
 > [!NOTE]
->  If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, you should not set a filter if your custom string has a **WHERE** clause. For more information about overriding the default SQL, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+> If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, you should not set a filter if your custom string has a **WHERE** clause. For more information about overriding the default SQL, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
 ## See also
 

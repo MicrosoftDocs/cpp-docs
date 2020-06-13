@@ -63,7 +63,7 @@ For more information about using connection points in ATL, see the article [Conn
 
 **Header:** atlcom.h
 
-##  <a name="advise"></a>  IConnectionPointImpl::Advise
+## <a name="advise"></a> IConnectionPointImpl::Advise
 
 Establishes a connection between the connection point and a sink.
 
@@ -79,7 +79,7 @@ Use [Unadvise](#unadvise) to terminate the connection call.
 
 See [IConnectionPoint::Advise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) in the Windows SDK.
 
-##  <a name="enumconnections"></a>  IConnectionPointImpl::EnumConnections
+## <a name="enumconnections"></a> IConnectionPointImpl::EnumConnections
 
 Creates an enumerator to iterate through the connections for the connection point.
 
@@ -91,7 +91,7 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 
 See [IConnectionPoint::EnumConnections](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) in the Windows SDK.
 
-##  <a name="getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface
+## <a name="getconnectioninterface"></a> IConnectionPointImpl::GetConnectionInterface
 
 Retrieves the IID of the interface represented by the connection point.
 
@@ -103,7 +103,7 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 
 See [IConnectionPoint::GetConnectionInterface](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) in the Windows SDK.
 
-##  <a name="getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer
+## <a name="getconnectionpointcontainer"></a> IConnectionPointImpl::GetConnectionPointContainer
 
 Retrieves an interface pointer to the connectable object.
 
@@ -115,7 +115,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 
 See [IConnectionPoint::GetConnectionPointContainer](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) in the Windows SDK.
 
-##  <a name="m_vec"></a>  IConnectionPointImpl::m_vec
+## <a name="m_vec"></a> IConnectionPointImpl::m_vec
 
 Manages the connections between the connection point object and a sink.
 
@@ -127,7 +127,7 @@ CDV m_vec;
 
 By default, `m_vec` is of type [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md).
 
-##  <a name="unadvise"></a>  IConnectionPointImpl::Unadvise
+## <a name="unadvise"></a> IConnectionPointImpl::Unadvise
 
 Terminates a connection previously established through [Advise](#advise).
 

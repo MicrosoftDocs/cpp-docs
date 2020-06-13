@@ -1,7 +1,6 @@
 ---
 title: "CL environment variables"
 ms.date: "06/06/2019"
-f1_keywords: ["cl"]
 helpviewer_keywords: ["INCLUDE environment variable", "cl.exe compiler, environment variables", "LIBPATH environment variable", "environment variables, CL compiler"]
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
 ---

@@ -250,7 +250,7 @@ A variable that is declared inside a function body is called a *local variable* 
 
 In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit`. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
 
-##  <a name="type_deduction"></a> Type deduction in return types (C++14)
+## <a name="type_deduction"></a> Type deduction in return types (C++14)
 
 In C++14, you can use **auto** to instruct the compiler to infer the return type from the function body without having to provide a trailing return type. Note that **auto** always deduces to a return-by-value. Use `auto&&` to instruct the compiler to deduce a reference.
 
@@ -266,7 +266,7 @@ auto Add2(const Lhs& lhs, const Rhs& rhs)
 
 Note that **auto** does not preserve the const-ness of the type it deduces. For forwarding functions whose return value needs to preserve the const-ness or ref-ness of its arguments, you can use the **decltype(auto)** keyword, which uses the **decltype** type inference rules and preserves all the type information. **decltype(auto)** may be used as an ordinary return value on the left side, or as a trailing return value.
 
-The following example (based on code from [N3493](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3493.html)), shows **decltype(auto)** being used to enable perfect forwarding of function arguments in a return type that isn't known until the template is instantiated.
+The following example (based on code from [N3493](https://wg21.link/n3493)), shows **decltype(auto)** being used to enable perfect forwarding of function arguments in a return type that isn't known until the template is instantiated.
 
 ```cpp
 template<typename F, typename Tuple = tuple<T...>, int... I>

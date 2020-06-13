@@ -55,7 +55,7 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 **Header:** afxwinforms.h
 
-##  <a name="cwinformsdialog"></a>  CWinFormsDialog::CWinFormsDialog
+## <a name="cwinformsdialog"></a> CWinFormsDialog::CWinFormsDialog
 
 Constructs a `CWinFormsDialog` object.
 
@@ -68,7 +68,7 @@ CWinFormsDialog(UINT nIDTemplate = IDD);
 *nIDTemplate*<br/>
 Contains the ID of a dialog box template resource. Use the dialog editor to create the dialog template and store it in the application's resource script file. For more information on dialog templates, see [CDialog Class](../../mfc/reference/cdialog-class.md).
 
-##  <a name="getcontrol"></a>  CWinFormsDialog::GetControl
+## <a name="getcontrol"></a> CWinFormsDialog::GetControl
 
 Retrieves a reference to the Windows Forms user control.
 
@@ -80,7 +80,7 @@ inline TManagedControl^ GetControl() const;
 
 Returns a reference to the Windows Forms control in the MFC dialog box.
 
-##  <a name="getcontrolhandle"></a>  CWinFormsDialog::GetControlHandle
+## <a name="getcontrolhandle"></a> CWinFormsDialog::GetControlHandle
 
 Retrieves a window handle to the Windows Forms user control.
 
@@ -92,7 +92,7 @@ inline HWND GetControlHandle() const throw();
 
 Returns a window handle to the Windows Forms user control.
 
-##  <a name="oninitdialog"></a>  CWinFormsDialog::OnInitDialog
+## <a name="oninitdialog"></a> CWinFormsDialog::OnInitDialog
 
 Initializes the MFC dialog box by creating and hosting a Windows Forms user control on it.
 
@@ -110,7 +110,7 @@ When the MFC dialog box is created (using the [Create](../../mfc/reference/cdial
 
 Override this member function if you need to perform special processing when the dialog box is initialized. For more information on using this method, see [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog).
 
-##  <a name="operator_-_gt"></a>  CWinFormsDialog::operator -&gt;
+## <a name="operator_-_gt"></a> CWinFormsDialog::operator -&gt;
 
 Replaces [CWinFormsDialog::GetControl](#getcontrol) in expressions.
 
@@ -124,7 +124,7 @@ This operator provides a convenient syntax that replaces `GetControl` in express
 
 For information on using Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-##  <a name="operator-tmanagedcontrol-hat"></a>  CWinFormsDialog::operator TManagedControl^
+## <a name="operator-tmanagedcontrol-hat"></a> CWinFormsDialog::operator TManagedControl^
 
 Casts a type as a reference to a Windows Forms user control.
 

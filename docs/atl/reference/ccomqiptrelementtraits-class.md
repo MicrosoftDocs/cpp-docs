@@ -55,7 +55,7 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-##  <a name="inargtype"></a>  CComQIPtrElementTraits::INARGTYPE
+## <a name="inargtype"></a> CComQIPtrElementTraits::INARGTYPE
 
 The data type to use for adding elements to the collection class object.
 

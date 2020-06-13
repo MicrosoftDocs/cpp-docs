@@ -61,11 +61,11 @@ The following example shows how to use the stack to temporarily disable menu ani
 
 **Header:** afxpopupmenu.h
 
-##  <a name="restore"></a>  CMFCDisableMenuAnimation::Restore
+## <a name="restore"></a> CMFCDisableMenuAnimation::Restore
 
 Restores the previous animation that the framework used to display a pop-up menu.
 
-```
+```cpp
 void Restore ();
 ```
 

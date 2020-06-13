@@ -10,7 +10,7 @@ ms.assetid: ef217c3c-020f-4cf8-871e-ef68e57865b8
 This class implements `IUnknown` and provides a default implementation of the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ The [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) i
 
 **Header:** atlcom.h
 
-##  <a name="getclassid"></a>  IPersistStreamInitImpl::GetClassID
+## <a name="getclassid"></a> IPersistStreamInitImpl::GetClassID
 
 Retrieves the object's CLSID.
 
@@ -66,7 +66,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 
 See [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.
 
-##  <a name="getsizemax"></a>  IPersistStreamInitImpl::GetSizeMax
+## <a name="getsizemax"></a> IPersistStreamInitImpl::GetSizeMax
 
 Retrieves the size of the stream needed to save the object's data.
 
@@ -82,7 +82,7 @@ Returns E_NOTIMPL.
 
 See [IPersistStreamInit::GetSizeMax](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-getsizemax) in the Windows SDK.
 
-##  <a name="initnew"></a>  IPersistStreamInitImpl::InitNew
+## <a name="initnew"></a> IPersistStreamInitImpl::InitNew
 
 Initializes a newly created object.
 
@@ -94,7 +94,7 @@ STDMETHOD(InitNew)();
 
 See [IPersistStreamInit::InitNew](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-initnew) in the Windows SDK.
 
-##  <a name="isdirty"></a>  IPersistStreamInitImpl::IsDirty
+## <a name="isdirty"></a> IPersistStreamInitImpl::IsDirty
 
 Checks whether the object's data has changed since it was last saved.
 
@@ -106,7 +106,7 @@ STDMETHOD(IsDirty)();
 
 See [IPersistStreamInit::IsDirty](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-isdirty) in the Windows SDK.
 
-##  <a name="load"></a>  IPersistStreamInitImpl::Load
+## <a name="load"></a> IPersistStreamInitImpl::Load
 
 Loads the object's properties from the specified stream.
 
@@ -120,7 +120,7 @@ ATL uses the object's property map to retrieve this information.
 
 See [IPersistStreamInit::Load](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-load) in the Windows SDK.
 
-##  <a name="save"></a>  IPersistStreamInitImpl::Save
+## <a name="save"></a> IPersistStreamInitImpl::Save
 
 Saves the object's properties to the specified stream.
 

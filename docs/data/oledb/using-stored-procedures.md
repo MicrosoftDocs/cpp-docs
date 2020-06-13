@@ -11,7 +11,7 @@ A stored procedure is an executable object stored in a database. Calling a store
 A stored procedure can have any number of (including zero) input or output parameters and can pass a return value. You can either hard code parameter values as specific data values or use a parameter marker (a question mark '?').
 
 > [!NOTE]
->  CLR SQL Server stored procedures created using Visual C++ must be compiled with the `/clr:safe` compiler option.
+> CLR SQL Server stored procedures created using Visual C++ must be compiled with the `/clr:safe` compiler option.
 
 The OLE DB provider for SQL Server (SQLOLEDB) supports the following mechanisms that stored procedures use to return data:
 

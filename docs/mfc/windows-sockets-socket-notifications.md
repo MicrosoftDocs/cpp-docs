@@ -32,9 +32,9 @@ You can take advantage of these notifications by overriding the notification fun
 During an operation such as receiving or sending data, a `CSocket` object becomes synchronous. During the synchronous state, any notifications meant for other sockets are queued while the current socket waits for the notification it wants. (For example, during a `Receive` call, the socket wants a notification to read.) Once the socket completes its synchronous operation and becomes asynchronous again, other sockets can begin receiving the queued notifications.
 
 > [!NOTE]
->  In `CSocket`, the `OnConnect` notification function is never called. For connections, you call `Connect`, which will return when the connection is completed (either successfully or in error). How connection notifications are handled is an MFC implementation detail.
+> In `CSocket`, the `OnConnect` notification function is never called. For connections, you call `Connect`, which will return when the connection is completed (either successfully or in error). How connection notifications are handled is an MFC implementation detail.
 
-For details about each notification function, see the function under class `CAsyncSocket` in the *MFC Reference*. For source code and information about MFC samples, see [MFC Samples](../overview/visual-cpp-samples.md).
+For details about each notification function, see the function under class `CAsyncSocket` in the *MFC Reference*. For source code and information about MFC samples, see [MFC Samples](../overview/visual-cpp-samples.md#mfc-samples).
 
 For more information, see:
 

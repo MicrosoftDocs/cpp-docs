@@ -1,7 +1,6 @@
 ---
 title: "Accelerator Keys (C++ Image Editor for Icons)"
 ms.date: "02/15/2019"
-f1_keywords: ["vc.editors.bitmap", "vc.editors.icon"]
 helpviewer_keywords: ["accelerator keys", "Image editor [C++], accelerator keys"]
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
 ---
@@ -58,8 +57,8 @@ None
 
 ## See also
 
-[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
-[How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
-[How to: Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
-[How to: Work with Color](../windows/working-with-color-image-editor-for-icons.md)<br/>
+[Image Editor for Icons](image-editor-for-icons.md)<br/>
+[How to: Create an Icon or Other Image](creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[How to: Edit an Image](selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[How to: Use a Drawing Tool](using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[How to: Work with Color](working-with-color-image-editor-for-icons.md)<br/>

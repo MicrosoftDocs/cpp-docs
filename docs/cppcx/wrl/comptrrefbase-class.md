@@ -57,7 +57,7 @@ Name                        | Description
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="operator-iinspectable-star-star"></a>ComPtrRefBase::operator IInspectable\*\* Operator
+## <a name="operator-iinspectable-star-star"></a> ComPtrRefBase::operator IInspectable\*\* Operator
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -73,7 +73,7 @@ An error is emitted if the current `ComPtrRefBase` doesn't derive from `IInspect
 
 This cast is available only if `__WRL_CLASSIC_COM__` is defined.
 
-## <a name="operator-iunknown-star-star"></a>ComPtrRefBase::operator IUnknown** Operator
+## <a name="operator-iunknown-star-star"></a> ComPtrRefBase::operator IUnknown** Operator
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -87,7 +87,7 @@ Casts the current [ptr_](#ptr) data member to a pointer-to-a-pointer-to the `IUn
 
 An error is emitted if the current `ComPtrRefBase` doesn't derive from `IUnknown`.
 
-## <a name="ptr"></a>ComPtrRefBase::ptr_
+## <a name="ptr"></a> ComPtrRefBase::ptr_
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

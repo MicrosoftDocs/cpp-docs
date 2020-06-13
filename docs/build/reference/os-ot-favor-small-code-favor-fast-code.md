@@ -25,14 +25,14 @@ Minimizes or maximizes the size of EXEs and DLLs.
 If you use **/Os** or **/Ot**, then you must also specify [/Og](og-global-optimizations.md) to optimize the code.
 
 > [!NOTE]
->  Information that is gathered from profiling test runs will override optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, [Profile-Guided Optimizations](../profile-guided-optimizations.md).
+> Information that is gathered from profiling test runs will override optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
 **x86 Specific**
 
 The following example code demonstrates the difference between the Favor Small Code (**/Os**) options and the Favor Fast Code (**/Ot**) option:
 
 > [!NOTE]
->  The following describes the expected behavior when using **/Os** or **/Ot**. However, compiler behavior from release to release may result in different optimizations for the code below.
+> The following describes the expected behavior when using **/Os** or **/Ot**. However, compiler behavior from release to release may result in different optimizations for the code below.
 
 ```
 /* differ.c

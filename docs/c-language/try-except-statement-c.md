@@ -36,10 +36,10 @@ The compound statement after the `__try` clause is the guarded section. The comp
 Because the `__except` expression is evaluated as a C expression, it is limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
 
 > [!NOTE]
->  Structured exception handling works with C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, the C++ exception handling mechanism is much more flexible, in that it can handle exceptions of any type.
+> Structured exception handling works with C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, the C++ exception handling mechanism is much more flexible, in that it can handle exceptions of any type.
 
 > [!NOTE]
->  For C++ programs, C++ exception handling should be used instead of structured exception handling. For more information, see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md) in the *C++ Language Reference*.
+> For C++ programs, C++ exception handling should be used instead of structured exception handling. For more information, see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md) in the *C++ Language Reference*.
 
 Each routine in an application can have its own exception handler. The `__except` expression executes in the scope of the `__try` body. This means it has access to any local variables declared there.
 

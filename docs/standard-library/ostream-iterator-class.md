@@ -57,7 +57,7 @@ The ostream_iterator class must satisfy the requirements for an output iterator.
 
 **Namespace:** std
 
-## <a name="char_type"></a>  ostream_iterator::char_type
+## <a name="char_type"></a> ostream_iterator::char_type
 
 A type that provides for the character type of the iterator.
 
@@ -106,7 +106,7 @@ by intOut are:
 */
 ```
 
-## <a name="op_star"></a>  ostream_iterator::operator*
+## <a name="op_star"></a> ostream_iterator::operator*
 
 Dereferencing operator used to implement the output iterator expression \* *ii* = *x*.
 
@@ -155,7 +155,7 @@ Elements written to output stream:
 */
 ```
 
-## <a name="op_add_add"></a>  ostream_iterator::operator++
+## <a name="op_add_add"></a> ostream_iterator::operator++
 
 A nonfunctional increment operator that returns an `ostream_iterator` to the same object it addressed before the operation was called.
 
@@ -205,7 +205,7 @@ Elements written to output stream:
 */
 ```
 
-## <a name="op_eq"></a>  ostream_iterator::operator=
+## <a name="op_eq"></a> ostream_iterator::operator=
 
 Assignment operator used to implement the output_iterator expression \* `i` = `x` for writing to an output stream.
 
@@ -259,7 +259,7 @@ Elements written to output stream:
 */
 ```
 
-## <a name="ostream_iterator"></a>  ostream_iterator::ostream_iterator
+## <a name="ostream_iterator"></a> ostream_iterator::ostream_iterator
 
 Constructs an `ostream_iterator` that is initialized and delimited to write to the output stream.
 
@@ -333,7 +333,7 @@ Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
 */
 ```
 
-## <a name="ostream_type"></a>  ostream_iterator::ostream_type
+## <a name="ostream_type"></a> ostream_iterator::ostream_type
 
 A type that provides for the stream type of the iterator.
 
@@ -349,7 +349,7 @@ The type is a synonym for [basic_ostream](../standard-library/basic-ostream-clas
 
 See [ostream_iterator](#ostream_iterator) for an example of how to declare and use `ostream_type`.
 
-## <a name="traits_type"></a>  ostream_iterator::traits_type
+## <a name="traits_type"></a> ostream_iterator::traits_type
 
 A type that provides for the character traits type of the iterator.
 

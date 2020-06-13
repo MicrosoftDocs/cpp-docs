@@ -17,7 +17,7 @@ ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
 |Case-translation convention|No case translation performed.|
 
 > [!NOTE]
->  For related information, see [Decorated Names](../build/reference/decorated-names.md).
+> For related information, see [Decorated Names](../build/reference/decorated-names.md).
 
 Place the **__cdecl** modifier before a variable or a function name. Because the C naming and calling conventions are the default, the only time you must use **__cdecl** in x86 code is when you have specified the `/Gv` (vectorcall), `/Gz` (stdcall), or `/Gr` (fastcall) compiler option. The [/Gd](../build/reference/gd-gr-gv-gz-calling-convention.md) compiler option forces the **__cdecl** calling convention.
 

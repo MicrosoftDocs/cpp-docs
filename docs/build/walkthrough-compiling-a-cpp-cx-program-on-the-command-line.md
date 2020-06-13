@@ -5,7 +5,7 @@ ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
 ---
 # Walkthrough: Compiling a C++/CX Program on the Command Line
 
-> [!NOTE] 
+> [!NOTE]
 > For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API.
 
 The Microsoft C++ compiler (MSVC) supports C++ component extensions (C++/CX), which has additional types and operators to target the Windows Runtime programming model. You can use C++/CX to build apps for Universal Windows Platform (UWP), and Windows desktop. For more information, see [A Tour of C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) and [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).

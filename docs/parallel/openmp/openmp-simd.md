@@ -3,7 +3,6 @@ title: "SIMD Extension"
 ms.date: "03/20/2019"
 helpviewer_keywords: ["SIMD", "OpenMP in Visual C++, new features", "explicit parallelization, new features"]
 ---
-
 # SIMD Extension
 
 Visual C++ currently supports the OpenMP 2.0 standard, however Visual Studio 2019 also now offers SIMD functionality.

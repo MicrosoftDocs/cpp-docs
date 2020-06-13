@@ -26,5 +26,5 @@ The following list describes the various notifications sent by the extended comb
 
 ## See also
 
-[Using CComboBoxEx](../mfc/using-ccomboboxex.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CComboBoxEx](using-ccomboboxex.md)<br/>
+[Controls](controls-mfc.md)

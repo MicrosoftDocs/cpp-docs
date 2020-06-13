@@ -1,7 +1,6 @@
 ---
 title: "Using the CArchive &lt;&lt; and &gt;&gt; Operators"
 ms.date: "11/04/2016"
-f1_keywords: ["CArchive"]
 helpviewer_keywords: ["objects [MFC], loading from previously stored values", "CArchive class [MFC], storing and loading objects", "CArchive class [MFC], operators"]
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
 ---
@@ -43,7 +42,7 @@ The library defines **<\<** and **>>** operators for `CArchive` as the first ope
 |`COleDateTime`|`COleDateTimeSpan`||
 
 > [!NOTE]
->  Storing and loading `CObject`s via an archive requires extra consideration. For more information, see [Storing and Loading CObjects via an Archive](../mfc/storing-and-loading-cobjects-via-an-archive.md).
+> Storing and loading `CObject`s via an archive requires extra consideration. For more information, see [Storing and Loading CObjects via an Archive](../mfc/storing-and-loading-cobjects-via-an-archive.md).
 
 The **CArchive <\<** and **>>** operators always return a reference to the `CArchive` object, which is the first operand. This enables you to chain the operators, as illustrated below:
 

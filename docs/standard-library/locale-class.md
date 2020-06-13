@@ -163,7 +163,7 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 
 **Namespace:** std
 
-## <a name="category"></a>  locale::category
+## <a name="category"></a> locale::category
 
 An integer type that provides bitmask values to denote standard facet families.
 
@@ -203,7 +203,7 @@ Two more useful values are:
 
 You can represent an arbitrary group of categories by using `OR` with these constants, as in `monetary` &#124; `time`.
 
-## <a name="classic"></a>  locale::classic
+## <a name="classic"></a> locale::classic
 
 The static member function returns a locale object that represents the classic C locale.
 
@@ -258,7 +258,7 @@ The previous locale was classic.
 The current locale is not classic.
 ```
 
-## <a name="combine"></a>  locale::combine
+## <a name="combine"></a> locale::combine
 
 Inserts a facet from a specified locale into a target locale.
 
@@ -306,7 +306,7 @@ int main() {
 }
 ```
 
-## <a name="facet_class"></a>  facet Class
+## <a name="facet_class"></a> facet Class
 
 A class that serves as the base class for all locale facets.
 
@@ -327,7 +327,7 @@ You can't copy or assign an object of class `facet`. You can construct and destr
 
 In such cases, the constructor for the base class `facet` should have a zero *references* argument. When the object is no longer needed, it's deleted, so you supply a nonzero *references* argument only in those rare cases where you take responsibility for the lifetime of the object.
 
-## <a name="global"></a>  locale::global
+## <a name="global"></a> locale::global
 
 Resets the default locale for the program. This call affects the global locale for both C and C++.
 
@@ -376,7 +376,7 @@ The current locale is: German_Germany.1252
 The previous locale was: C
 ```
 
-## <a name="id_class"></a>  id Class
+## <a name="id_class"></a> id Class
 
 The member class provides a unique facet identification used as an index for looking up facets in a locale.
 
@@ -393,7 +393,7 @@ class id
 
 The member class describes the static member object required by each unique locale facet. You can't copy or assign an object of class `id`.
 
-## <a name="locale"></a>  locale::locale
+## <a name="locale"></a> locale::locale
 
 Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale. Also includes a destructor.
 
@@ -489,7 +489,7 @@ int main( ) {
 }
 ```
 
-## <a name="name"></a>  locale::name
+## <a name="name"></a> locale::name
 
 Returns the stored locale name.
 
@@ -528,7 +528,7 @@ The name of the previous locale is: C.
 The name of the current locale is: German_Germany.1252.
 ```
 
-## <a name="op_eq"></a>  locale::operator=
+## <a name="op_eq"></a> locale::operator=
 
 Assigns a locale.
 
@@ -536,7 +536,7 @@ Assigns a locale.
 const locale& operator=(const locale& other) noexcept;
 ```
 
-## <a name="op_neq"></a>  locale::operator!=
+## <a name="op_neq"></a> locale::operator!=
 
 Tests two locales for inequality.
 
@@ -597,7 +597,7 @@ locales loc1 (German_Germany.1252) and
 loc3 (English_United States.1252) are not equal.
 ```
 
-## <a name="op_call"></a>  locale::operator()
+## <a name="op_call"></a> locale::operator()
 
 Compares two `basic_string` objects.
 
@@ -669,7 +669,7 @@ int main( )
 0
 ```
 
-## <a name="op_eq_eq"></a>  locale::operator==
+## <a name="op_eq_eq"></a> locale::operator==
 
 Tests two locales for equality.
 

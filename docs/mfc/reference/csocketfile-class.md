@@ -30,7 +30,7 @@ You can attach the `CSocketFile` object to a `CSocket` object for this purpose. 
 To serialize (send) data, you insert it into the archive, which calls `CSocketFile` member functions to write data to the `CSocket` object. To deserialize (receive) data, you extract from the archive. This causes the archive to call `CSocketFile` member functions to read data from the `CSocket` object.
 
 > [!TIP]
->  Besides using `CSocketFile` as described here, you can use it as a stand-alone file object, just as you can with `CFile`, its base class. You can also use `CSocketFile` with any archive-based MFC serialization functions. Because `CSocketFile` does not support all of `CFile`'s functionality, some default MFC serialize functions are not compatible with `CSocketFile`. This is particularly true of the `CEditView` class. You should not try to serialize `CEditView` data through a `CArchive` object attached to a `CSocketFile` object using `CEditView::SerializeRaw`; use `CEditView::Serialize` instead. The `SerializeRaw` function expects the file object to have functions, such as `Seek`, that `CSocketFile` does not have.
+> Besides using `CSocketFile` as described here, you can use it as a stand-alone file object, just as you can with `CFile`, its base class. You can also use `CSocketFile` with any archive-based MFC serialization functions. Because `CSocketFile` does not support all of `CFile`'s functionality, some default MFC serialize functions are not compatible with `CSocketFile`. This is particularly true of the `CEditView` class. You should not try to serialize `CEditView` data through a `CArchive` object attached to a `CSocketFile` object using `CEditView::SerializeRaw`; use `CEditView::Serialize` instead. The `SerializeRaw` function expects the file object to have functions, such as `Seek`, that `CSocketFile` does not have.
 
 When you use `CArchive` with `CSocketFile` and `CSocket`, you might encounter a situation where `CSocket::Receive` enters a loop (by `PumpMessages(FD_READ)`) waiting for the requested amount of bytes. This is because Windows sockets allow only one recv call per FD_READ notification, but `CSocketFile` and `CSocket` allow multiple recv calls per FD_READ. If you get an FD_READ when there is no data to read, the application hangs. If you never get another FD_READ, the application stops communicating over the socket.
 
@@ -54,7 +54,7 @@ For more information, see [Windows Sockets in MFC](../../mfc/windows-sockets-in-
 
 **Header:** afxsock.h
 
-##  <a name="csocketfile"></a>  CSocketFile::CSocketFile
+## <a name="csocketfile"></a> CSocketFile::CSocketFile
 
 Constructs a `CSocketFile` object.
 
@@ -77,7 +77,7 @@ Specifies whether the file object is for use with a `CArchive` object. Pass FALS
 The object's destructor disassociates itself from the socket object when the object goes out of scope or is deleted.
 
 > [!NOTE]
->  A `CSocketFile` can also be used as a (limited) file without a `CArchive` object. By default, the `CSocketFile` constructor's *bArchiveCompatible* parameter is TRUE. This specifies that the file object is for use with an archive. To use the file object without an archive, pass FALSE in the *bArchiveCompatible* parameter.
+> A `CSocketFile` can also be used as a (limited) file without a `CArchive` object. By default, the `CSocketFile` constructor's *bArchiveCompatible* parameter is TRUE. This specifies that the file object is for use with an archive. To use the file object without an archive, pass FALSE in the *bArchiveCompatible* parameter.
 
 In its "archive compatible" mode, a `CSocketFile` object provides better performance and reduces the danger of a "deadlock." A deadlock occurs when both the sending and receiving sockets are waiting on each other, or for a common resource. This situation might occur if the `CArchive` object worked with the `CSocketFile` the way it does with a `CFile` object. With `CFile`, the archive can assume that if it receives fewer bytes than it requested, the end of file has been reached.
 

@@ -13,7 +13,7 @@ Calls the `AddRef` member function of `IUnknown` on the encapsulated interface p
 
 ## Syntax
 
-```
+```cpp
 void AddRef( );
 ```
 

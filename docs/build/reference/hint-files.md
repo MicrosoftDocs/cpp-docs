@@ -23,6 +23,7 @@ A hint file contains user-customizable hints, which have the same syntax as C/C+
 
 > [!IMPORTANT]
 > If you modify or add a hint file, you need to take additional steps in order for the changes to take effect:
+>
 > - In versions before Visual Studio 2017 version 15.6: Delete the .sdf file and/or VC.db file in the solution for all changes.
 > - In Visual Studio 2017 version 15.6 and later: Close and reopen the solution after adding new hint files.
 
@@ -235,4 +236,3 @@ These notes apply to the preceding list:
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
 [SAL Annotations](../../c-runtime-library/sal-annotations.md)<br>
-

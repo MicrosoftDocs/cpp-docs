@@ -10,7 +10,7 @@ ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
 Manages your connection to a gopher Internet server.
 
 > [!NOTE]
->  The classes `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` and their members have been deprecated because they do not work on the Windows XP platform, but they will continue to work on earlier platforms.
+> The classes `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` and their members have been deprecated because they do not work on the Windows XP platform, but they will continue to work on earlier platforms.
 
 ## Syntax
 
@@ -56,7 +56,7 @@ To learn more about how `CGopherConnection` works with the other MFC Internet cl
 
 **Header:** afxinet.h
 
-##  <a name="cgopherconnection"></a>  CGopherConnection::CGopherConnection
+## <a name="cgopherconnection"></a> CGopherConnection::CGopherConnection
 
 This member function is called to construct a `CGopherConnection` object.
 
@@ -110,7 +110,7 @@ A number that identifies the TCP/IP port to use on the server.
 
 You never create a `CGopherConnection` directly. Rather, call [CInternetSession::GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection), which creates a `CGopherConnection` object and returns a pointer to it.
 
-##  <a name="createlocator"></a>  CGopherConnection::CreateLocator
+## <a name="createlocator"></a> CGopherConnection::CreateLocator
 
 Call this member function to create a gopher locator to find or identify a file on a gopher server.
 
@@ -160,7 +160,7 @@ The static version of the member function requires you to specify a server, whil
 
 In order to retrieve information from a gopher server, an application must first get a gopher locator. The application must then treat the locator as an opaque token (that is, the application can use the locator but not directly manipulate or compare it). Normally, the application uses the locator for calls to the [CGopherFileFind::FindFile](../../mfc/reference/cgopherfilefind-class.md#findfile) member function to retrieve a specific piece of information.
 
-##  <a name="getattribute"></a>  CGopherConnection::GetAttribute
+## <a name="getattribute"></a> CGopherConnection::GetAttribute
 
 Call this member function to retrieve specific attribute information about an item from the gopher server.
 
@@ -185,7 +185,7 @@ A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) tha
 
 Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
-##  <a name="openfile"></a>  CGopherConnection::OpenFile
+## <a name="openfile"></a> CGopherConnection::OpenFile
 
 Call this member function to open a file on a gopher server.
 

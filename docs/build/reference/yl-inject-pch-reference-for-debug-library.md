@@ -11,8 +11,8 @@ The **/Yl** option generates a unique symbol in a precompiled header file, and a
 
 ## Syntax
 
->**/Yl**
->**/Yl**_name_
+>**/Yl**\
+>**/Yl**_name_\
 >**/Yl-**
 
 ### Arguments

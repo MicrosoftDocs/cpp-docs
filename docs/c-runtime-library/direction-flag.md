@@ -1,7 +1,6 @@
 ---
 title: "Direction Flag"
 ms.date: "11/04/2016"
-f1_keywords: ["c.flags"]
 helpviewer_keywords: ["direction flag"]
 ms.assetid: 0836b4af-dbbb-4ab8-a4b2-156f2e2099e2
 ---

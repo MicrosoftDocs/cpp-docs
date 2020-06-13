@@ -12,30 +12,30 @@ This article discusses using the **Properties** window (in **Class View**) to in
 > ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 > [!NOTE]
->  This article uses a dialog-based ActiveX control container project named Container and an embedded control named Circ as examples in the procedures and code.
+> This article uses a dialog-based ActiveX control container project named Container and an embedded control named Circ as examples in the procedures and code.
 
 Using the Events button in the **Properties** window (in **Class View**), you can create a map of events that can occur in your ActiveX control container application. This map, called an "event sink map,'' is created and maintained by Visual C++ when you add event handlers to the control container class. Each event handler, implemented with an event map entry, maps a specific event to a container event handler member function. This event handler function is called when the specified event is fired by the ActiveX control object.
 
-For more information on event sink maps, see [Event Sink Maps](../mfc/reference/event-sink-maps.md) in the *Class Library Reference*.
+For more information on event sink maps, see [Event Sink Maps](reference/event-sink-maps.md) in the *Class Library Reference*.
 
-##  <a name="_core_event_handler_modifications_to_the_project"></a> Event Handler Modifications to the Project
+## <a name="_core_event_handler_modifications_to_the_project"></a> Event Handler Modifications to the Project
 
 When you use the **Properties** window to add event handlers, an event sink map is declared and defined in your project. The following statements are added to the control .CPP file the first time an event handler is added. This code declares an event sink map for the dialog box class (in this case, `CContainerDlg`):
 
-[!code-cpp[NVC_MFC_AxCont#8](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_1.cpp)]
-[!code-cpp[NVC_MFC_AxCont#9](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_2.cpp)]
+[!code-cpp[NVC_MFC_AxCont#8](codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_1.cpp)]
+[!code-cpp[NVC_MFC_AxCont#9](codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_2.cpp)]
 
 As you use the **Properties** window to add events, an event map entry (`ON_EVENT`) is added to the event sink map and an event handler function is added to the container's implementation (.CPP) file.
 
 The following example declares an event handler, called `OnClickInCircCtrl`, for the Circ control's `ClickIn` event:
 
-[!code-cpp[NVC_MFC_AxCont#10](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_3.cpp)]
+[!code-cpp[NVC_MFC_AxCont#10](codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_3.cpp)]
 
 In addition, the following template is added to the `CContainerDlg` class implementation (.CPP) file for the event handler member function:
 
-[!code-cpp[NVC_MFC_AxCont#11](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_4.cpp)]
+[!code-cpp[NVC_MFC_AxCont#11](codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_4.cpp)]
 
-For more information on event sink macros, see [Event Sink Maps](../mfc/reference/event-sink-maps.md) in the *Class Library Reference*.
+For more information on event sink macros, see [Event Sink Maps](reference/event-sink-maps.md) in the *Class Library Reference*.
 
 #### To create an event handler function
 
@@ -55,4 +55,4 @@ For more information on event sink macros, see [Event Sink Maps](../mfc/referenc
 
 ## See also
 
-[ActiveX Control Containers](../mfc/activex-control-containers.md)
+[ActiveX Control Containers](activex-control-containers.md)

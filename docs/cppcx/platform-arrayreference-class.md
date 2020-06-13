@@ -47,7 +47,7 @@ By using `ArrayReference` to fill a C-style array, you avoid the extra copy oper
 
 **Header:** vccorlib.h
 
-## <a name="ctor"></a>  ArrayReference::ArrayReference Constructor
+## <a name="ctor"></a> ArrayReference::ArrayReference Constructor
 
 Initializes a new instance of the [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) class.
 
@@ -71,7 +71,7 @@ An `ArrayReference` object whose data will be moved to initialize the new instan
 
 ### Remarks
 
-## <a name="operator-assign"></a>  ArrayReference::operator= Operator
+## <a name="operator-assign"></a> ArrayReference::operator= Operator
 
 Assigns the specified object to the current [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) object by using move semantics.
 
@@ -94,7 +94,7 @@ A reference to an object of type `ArrayReference`.
 
 `Platform::ArrayReference` is a standard C++ class template, not a ref class.
 
-## <a name="operator-call"></a>  ArrayReference::operator() Operator
+## <a name="operator-call"></a> ArrayReference::operator() Operator
 
 Converts the current [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) object back to a [Platform::Array](../cppcx/platform-array-class.md) class.
 

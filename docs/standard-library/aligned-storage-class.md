@@ -63,5 +63,5 @@ aligned to double == 8
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)\
-[alignment_of Class](../standard-library/alignment-of-class.md)
+[<type_traits>](type-traits.md)\
+[alignment_of Class](alignment-of-class.md)

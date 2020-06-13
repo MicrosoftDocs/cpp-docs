@@ -96,7 +96,7 @@ Name                                            | Description
 
 **Namespace:** Microsoft::WRL
 
-## <a name="addref"></a>ClassFactory::AddRef
+## <a name="addref"></a> ClassFactory::AddRef
 
 Increments the reference count for the current `ClassFactory` object.
 
@@ -111,13 +111,13 @@ STDMETHOD_(
 
 S_OK if successful; otherwise, an HRESULT that describes the failure.
 
-## <a name="classfactory"></a>ClassFactory::ClassFactory
+## <a name="classfactory"></a> ClassFactory::ClassFactory
 
 ```cpp
 WRL_NOTHROW ClassFactory();
 ```
 
-## <a name="lockserver"></a>ClassFactory::LockServer
+## <a name="lockserver"></a> ClassFactory::LockServer
 
 Increments or decrements the number of underlying objects that are tracked by the current `ClassFactory` object.
 
@@ -140,7 +140,7 @@ S_OK if successful; otherwise, E_FAIL.
 
 `ClassFactory` keeps track of objects in an underlying instance of the [Module](module-class.md) class.
 
-## <a name="queryinterface"></a>ClassFactory::QueryInterface
+## <a name="queryinterface"></a> ClassFactory::QueryInterface
 
 Retrieves a pointer to the interface specified by parameter.
 
@@ -162,7 +162,7 @@ When this operation completes, a pointer to the interface specified by parameter
 
 S_OK if successful; otherwise, an HRESULT that describes the failure.
 
-## <a name="release"></a>ClassFactory::Release
+## <a name="release"></a> ClassFactory::Release
 
 Decrements the reference count for the current `ClassFactory` object.
 

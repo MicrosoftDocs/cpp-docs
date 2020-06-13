@@ -7,7 +7,7 @@ ms.assetid: f3eef5ab-d0be-4fb2-90f9-927e6ed58736
 ---
 # Compiling a C/C++ project
 
-C and C++ compiler options can be set either in the Visual Studio IDE or on the command line. 
+C and C++ compiler options can be set either in the Visual Studio IDE or on the command line.
 
 ## In Visual Studio
 

@@ -1,7 +1,6 @@
 ---
 title: "TN036: Using CFormView with AppWizard and ClassWizard"
 ms.date: "11/04/2016"
-f1_keywords: ["CFormView"]
 helpviewer_keywords: ["TN036"]
 ms.assetid: dd54053f-ae80-4d23-9180-c7d07ddf2290
 ---

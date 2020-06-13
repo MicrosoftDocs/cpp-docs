@@ -6,7 +6,7 @@ ms.assetid: 3fe286c2-3f3d-493d-9d8c-762310939d08
 ---
 # Recordset: Declaring a Class for a Table (ODBC)
 
-> [!NOTE] 
+> [!NOTE]
 > The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.

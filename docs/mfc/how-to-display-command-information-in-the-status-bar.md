@@ -14,4 +14,4 @@ By default, the Application Wizard adds **AFX_IDS_IDLEMESSAGE**, the ID for a st
 
 ## See also
 
-[Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
+[Message Handling and Mapping](message-handling-and-mapping.md)

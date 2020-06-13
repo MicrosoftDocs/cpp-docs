@@ -10,7 +10,7 @@ An MSIL .obj file (compiled with [/clr](clr-common-language-runtime-compilation.
 You can pass an MSIL .obj file to any other Visual Studio compiler via the /addmodule compiler option (but be aware that the .obj file becomes part of the resulting assembly and must be shipped with the assembly).  For example, Visual C# and Visual Basic have the /addmodule compiler option.
 
 > [!NOTE]
->  In most cases, you will need to pass to the linker the .obj file from the compilation that created the .net module.  Passing a .dll or .netmodule MSIL module file to the linker may result in LNK1107.
+> In most cases, you will need to pass to the linker the .obj file from the compilation that created the .net module.  Passing a .dll or .netmodule MSIL module file to the linker may result in LNK1107.
 
 .obj files, along with their associated .h files, which you reference via #include in source, allow C++ applications to consume the native types in the module, whereas in a .netmodule file, only the managed types can be consumed by a C++ application.  If you attempt to pass a .obj file to #using, information about native types will not be available; #include the .obj file's .h file instead.
 

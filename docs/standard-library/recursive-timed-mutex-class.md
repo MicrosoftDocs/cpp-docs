@@ -40,7 +40,7 @@ class recursive_timed_mutex;
 
 **Namespace:** std
 
-## <a name="lock"></a>  lock
+## <a name="lock"></a> lock
 
 Blocks the calling thread until the thread obtains ownership of the `mutex`.
 
@@ -52,7 +52,7 @@ void lock();
 
 If the calling thread already owns the `mutex`, the method returns immediately, and the previous lock remains in effect.
 
-## <a name="recursive_timed_mutex"></a>  recursive_timed_mutex Constructor
+## <a name="recursive_timed_mutex"></a> recursive_timed_mutex Constructor
 
 Constructs a `recursive_timed_mutex` object that is not locked.
 
@@ -72,7 +72,7 @@ Releases any resources that are used by the `recursive_timed_mutex` object.
 
 If the object is locked when the destructor runs, the behavior is undefined.
 
-## <a name="try_lock"></a>  try_lock
+## <a name="try_lock"></a> try_lock
 
 Attempts to obtain ownership of the `mutex` without blocking.
 
@@ -88,7 +88,7 @@ bool try_lock() noexcept;
 
 If the calling thread already owns the `mutex`, the function immediately returns **true**, and the previous lock remains in effect.
 
-## <a name="try_lock_for"></a>  try_lock_for
+## <a name="try_lock_for"></a> try_lock_for
 
 Attempts to obtain ownership of the `mutex` without blocking.
 
@@ -110,7 +110,7 @@ A [chrono::duration](../standard-library/duration-class.md) object that specifie
 
 If the calling thread already owns the `mutex`, the method immediately returns **true**, and the previous lock remains in effect.
 
-## <a name="try_lock_until"></a>  try_lock_until
+## <a name="try_lock_until"></a> try_lock_until
 
 Attempts to obtain ownership of the `mutex` without blocking.
 
@@ -134,7 +134,7 @@ A point in time that specifies the threshold after which the method no longer at
 
 If the calling thread already owns the `mutex`, the method immediately returns **true**, and the previous lock remains in effect.
 
-## <a name="unlock"></a>  unlock
+## <a name="unlock"></a> unlock
 
 Releases ownership of the `mutex`.
 

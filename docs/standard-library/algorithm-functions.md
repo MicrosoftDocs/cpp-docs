@@ -499,7 +499,7 @@ An output iterator addressing the position that is one past the final element in
 
 The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.
 
-Because the algorithm copies the source elements in order beginning with the first element, the destination range can overlap with the source range provided the *last* position of the source range is not contained in the destination range. `copy` can be used to shift elements to the left but not the right, unless there is no overlap between the source and destination ranges. To shift to the right any number of positions, use the [copy_backward](../standard-library/algorithm-functions.md#copy_backward) algorithm.
+Because the algorithm copies the source elements in order beginning with the first element, the destination range can overlap with the source range provided the *last* position of the source range is not contained in the destination range. `copy` can be used to shift elements to the left but not the right, unless there is no overlap between the source and destination ranges. To shift to the right any number of positions, use the [copy_backward](algorithm-functions.md#copy_backward) algorithm.
 
 The `copy` algorithm only modifies values pointed to by the iterators, assigning new values to elements in the destination range. It cannot be used to create new elements and cannot insert elements into an empty container directly.
 
@@ -594,9 +594,9 @@ The source range must be valid and there must be sufficient space at the destina
 
 The `copy_backward` algorithm imposes more stringent requirements than that the `copy` algorithm. Both its input and output iterators must be bidirectional.
 
-The `copy_backward` and [move_backward](../standard-library/algorithm-functions.md#move_backward) algorithms are the only C++ Standard Library algorithms designating the output range with an iterator pointing to the end of the destination range.
+The `copy_backward` and [move_backward](algorithm-functions.md#move_backward) algorithms are the only C++ Standard Library algorithms designating the output range with an iterator pointing to the end of the destination range.
 
-Because the algorithm copies the source elements in order beginning with the last element, the destination range can overlap with the source range provided the *first* position of the source range is not contained in the destination range. `copy_backward` can be used to shift elements to the right but not the left, unless there is no overlap between the source and destination ranges. To shift to the left any number of positions, use the [copy](../standard-library/algorithm-functions.md#copy) algorithm.
+Because the algorithm copies the source elements in order beginning with the last element, the destination range can overlap with the source range provided the *first* position of the source range is not contained in the destination range. `copy_backward` can be used to shift elements to the right but not the left, unless there is no overlap between the source and destination ranges. To shift to the left any number of positions, use the [copy](algorithm-functions.md#copy) algorithm.
 
 The `copy_backward` algorithm only modifies values pointed to by the iterators, assigning new values to elements in the destination range. It cannot be used to create new elements and cannot insert elements into an empty container directly.
 
@@ -737,7 +737,7 @@ int main()
 
     // is_even checks if the element is even.
     auto is_even = [](int const elem) { return !(elem % 2); };
-    // use copy_if to select only even elements from li 
+    // use copy_if to select only even elements from li
     // and copy them to le, starting from le's begin position
     auto ec = copy_if(li.begin(),li.end(), le.begin(), is_even);
     le.resize(std::distance(le.begin(), ec));  // shrink le to new size
@@ -875,7 +875,7 @@ The difference type of the `InputIterator` that counts the number of elements in
 
 The `operator==` used to determine the match between an element and the specified value must impose an equivalence relation between its operands.
 
-This algorithm is generalized to count elements that satisfy any predicate with the template function [count_if](../standard-library/algorithm-functions.md#count_if).
+This algorithm is generalized to count elements that satisfy any predicate with the template function [count_if](algorithm-functions.md#count_if).
 
 ### Example
 
@@ -954,7 +954,7 @@ The number of elements that satisfy the condition specified by the predicate.
 
 ### Remarks
 
-This template function is a generalization of the algorithm [count](../standard-library/algorithm-functions.md#count), replacing the predicate "equals a specific value" with any predicate.
+This template function is a generalization of the algorithm [count](algorithm-functions.md#count), replacing the predicate "equals a specific value" with any predicate.
 
 ### Example
 
@@ -1175,7 +1175,7 @@ If no elements in the range are equivalent to *value*, the forward iterators in 
 
 ### Remarks
 
-The first iterator of the pair returned by the algorithm is [lower_bound](../standard-library/algorithm-functions.md#lower_bound), and the second iterator is [upper_bound](../standard-library/algorithm-functions.md#upper_bound).
+The first iterator of the pair returned by the algorithm is [lower_bound](algorithm-functions.md#lower_bound), and the second iterator is [upper_bound](algorithm-functions.md#upper_bound).
 
 The range must be sorted according to the predicate provided to `equal_range`. For example, if you are going to use the greater-than predicate, the range must be sorted in descending order.
 
@@ -1508,7 +1508,7 @@ An input iterator addressing the first occurrence of the specified value in the 
 
 The `operator==` used to determine the match between an element and the specified value must impose an equivalence relation between its operands.
 
-For a code example using `find()`, see [find_if](../standard-library/algorithm-functions.md#find_if).
+For a code example using `find()`, see [find_if](algorithm-functions.md#find_if).
 
 ## <a name="find_end"></a> find_end
 
@@ -1876,7 +1876,7 @@ An input iterator that refers to the first element in the range that satisfies t
 
 ### Remarks
 
-This template function is a generalization of the algorithm [find](../standard-library/algorithm-functions.md#find), replacing the predicate "equals a specific value" with any predicate. For the logical opposite (find the first element that does not satisfy the predicate), see [find_if_not](../standard-library/algorithm-functions.md#find_if_not).
+This template function is a generalization of the algorithm [find](algorithm-functions.md#find), replacing the predicate "equals a specific value" with any predicate. For the logical opposite (find the first element that does not satisfy the predicate), see [find_if_not](algorithm-functions.md#find_if_not).
 
 ### Example
 
@@ -1998,9 +1998,9 @@ An input iterator that refers to the first element in the range that does not sa
 
 ### Remarks
 
-This template function is a generalization of the algorithm [find](../standard-library/algorithm-functions.md#find), replacing the predicate "equals a specific value" with any predicate. For the logical opposite (find the first element that does satisfy the predicate), see [find_if](../standard-library/algorithm-functions.md#find_if).
+This template function is a generalization of the algorithm [find](algorithm-functions.md#find), replacing the predicate "equals a specific value" with any predicate. For the logical opposite (find the first element that does satisfy the predicate), see [find_if](algorithm-functions.md#find_if).
 
-For a code example readily adaptable to `find_if_not()`, see [find_if](../standard-library/algorithm-functions.md#find_if).
+For a code example readily adaptable to `find_if_not()`, see [find_if](algorithm-functions.md#find_if).
 
 ## <a name="for_each"></a> for_each
 
@@ -2785,7 +2785,7 @@ Returns **true** if the elements in the specified range form a heap, **false** i
 
 ### Remarks
 
-The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(first , last) == last`.
+The first template function returns [is_heap_until](algorithm-functions.md#is_heap_until)`(first , last) == last`.
 
 The second template function returns
 
@@ -3610,7 +3610,7 @@ Heaps have two properties:
 
 - Elements may be added or removed in logarithmic time.
 
-Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).
+Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](priority-queue-class.md).
 
 The complexity is linear, requiring `3 * (last - first)` comparisons.
 
@@ -3699,7 +3699,7 @@ The greater of the two objects, unless neither is greater; in that case, it retu
 
 ### Remarks
 
-The `max` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that operates on a range of elements, use [max_element](../standard-library/algorithm-functions.md#max_element) instead. Visual Studio 2017 enables **constexpr** on the overloads that take an initializer_list.
+The `max` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that operates on a range of elements, use [max_element](algorithm-functions.md#max_element) instead. Visual Studio 2017 enables **constexpr** on the overloads that take an initializer_list.
 
 ### Example
 
@@ -4106,7 +4106,7 @@ The value types of the input iterators need be less-than comparable to be ordere
 
 The complexity of the algorithm is linear with at most `(last1 - first1) - (last2 - first2) - 1` comparisons.
 
-The [list class](../standard-library/list-class.md) provides a member function "merge" to merge the elements of two lists.
+The [list class](list-class.md) provides a member function "merge" to merge the elements of two lists.
 
 ### Example
 
@@ -4264,7 +4264,7 @@ The lesser of the two objects, unless neither is lesser; in that case, it return
 
 ### Remarks
 
-The `min` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that uses a range of elements, use [min_element](../standard-library/algorithm-functions.md#min_element). [constexpr](../cpp/constexpr-cpp.md) was enabled on the `initializer_list` overloads in Visual Studio 2017.
+The `min` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that uses a range of elements, use [min_element](algorithm-functions.md#min_element). [constexpr](../cpp/constexpr-cpp.md) was enabled on the `initializer_list` overloads in Visual Studio 2017.
 
 ### Example
 
@@ -5802,7 +5802,7 @@ Heaps have two properties:
 
 - Elements may be added or removed in logarithmic time.
 
-Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).
+Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](priority-queue-class.md).
 
 The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
@@ -6086,7 +6086,7 @@ Heaps have two properties:
 
 - Elements may be added or removed in logarithmic time.
 
-Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).
+Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](priority-queue-class.md).
 
 The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
@@ -6163,7 +6163,7 @@ int main() {
 
 ## <a name="random_shuffle"></a> random_shuffle
 
-The std::random_shuffle() function is deprecated, replaced by [std::shuffle](../standard-library/algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stack Overflow post [Why are std::random_shuffle methods being deprecated in C++14?](https://go.microsoft.com/fwlink/p/?linkid=397954).
+The std::random_shuffle() function is deprecated, replaced by [std::shuffle](algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](random.md) and the Stack Overflow post [Why are std::random_shuffle methods being deprecated in C++14?](https://go.microsoft.com/fwlink/p/?linkid=397954).
 
 ## <a name="remove"></a> remove
 
@@ -6212,7 +6212,7 @@ The `operator==` used to determine the equality between elements must impose an 
 
 The complexity is linear; there are (`last` - `first`) comparisons for equality.
 
-The [list class](../standard-library/list-class.md) has a more efficient member function version of `remove`, which also relinks pointers.
+The [list class](list-class.md) has a more efficient member function version of `remove`, which also relinks pointers.
 
 ### Example
 
@@ -6413,7 +6413,7 @@ The `operator==` used to determine the equality between elements must impose an 
 
 The complexity is linear: there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
 
-For information on how these functions behave, see [Checked Iterators](../standard-library/checked-iterators.md).
+For information on how these functions behave, see [Checked Iterators](checked-iterators.md).
 
 ### Example
 
@@ -8539,7 +8539,7 @@ The random number generator that the `shuffle()` function will use for the opera
 
 ### Remarks
 
-For more information, and a code sample that uses `shuffle()`, see [\<random>](../standard-library/random.md).
+For more information, and a code sample that uses `shuffle()`, see [\<random>](random.md).
 
 ## <a name="sort"></a> sort
 
@@ -8583,7 +8583,7 @@ A random-access iterator addressing the position of the first element in the ran
 A random-access iterator addressing the position one past the final element in the range to be sorted.
 
 *pred*\
-User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. This binary predicate takes two arguments and returns **true** if the two arguments are in order and **false** otherwise. This comparator function must impose a strict weak ordering on pairs of elements from the sequence. For more information, see [Algorithms](../standard-library/algorithms.md).
+User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. This binary predicate takes two arguments and returns **true** if the two arguments are in order and **false** otherwise. This comparator function must impose a strict weak ordering on pairs of elements from the sequence. For more information, see [Algorithms](algorithms.md).
 
 ### Remarks
 
@@ -8701,7 +8701,7 @@ After the application if this algorithm, the range it was applied to is no longe
 
 This is not a stable sort because the relative order of equivalent elements is not necessarily preserved.
 
-Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).
+Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](priority-queue-class.md).
 
 The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 

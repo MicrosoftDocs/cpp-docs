@@ -1,7 +1,7 @@
 ---
 title: "&lt;list&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<list>", "std::<list>"]
+f1_keywords: ["<list>"]
 helpviewer_keywords: ["list header"]
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
 ---

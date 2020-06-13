@@ -6,9 +6,7 @@ ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
 # C++ Tools and Features in Visual Studio Editions
 
-
 ::: moniker range=">=vs-2019"
-
 
 The following C++ features are available in Visual Studio 2019. Unless stated otherwise, all features are available in all editions: Visual Studio Community, Visual Studio Professional, and Visual Studio Enterprise. Some features require specific workloads or optional components, which you can install with the Visual Studio Installer.
 
@@ -28,7 +26,7 @@ The following C++ features are available in Visual Studio 2019. Unless stated ot
 - Clang/LLVM
   - On Windows, Clang/LLVM 7.0, targeting x86 or x64 (CMake support only). Other Clang versions might work but are not officially supported.
   - On Linux, any Clang/LLVM installation supported by the distro.
- 
+
 ## C++ Workloads
 
 Visual Studio includes the following workloads for C++ development. You can install any or all of these, along with other workloads such as .NET Desktop Development, Python Development, Azure Development, Visual Studio Extension Development, and others.
@@ -36,9 +34,11 @@ Visual Studio includes the following workloads for C++ development. You can inst
 ### Desktop development with C++
 
 Included:
+
 - C++ core desktop features
 
 Optional Components:
+
 - MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)
 - Windows 10 SDK (10.0.17763.0)
 - Just-In-Time debugger
@@ -63,17 +63,20 @@ Optional Components:
 ### Linux development with C++
 
 Included:
+
 - C++ core features
 - Windows Universal C Runtime
 - C++ for Linux Development
 
 Optional Components:
+
 - C++ CMake tools for Linux
 - Embedded and IoT development tools
 
 ### Universal Windows Platform development
 
 Included:
+
 - Blend for Visual Studio
 - .NET Native and .NET Standard
 - NuGet package manager
@@ -81,6 +84,7 @@ Included:
 - Windows 10 SDK (10.0.17763.0)
 
 Optional Components:
+
 - IntelliCode
 - IntelliTrace (Enterprise only)
 - USB Device Connectivity
@@ -95,12 +99,14 @@ Optional Components:
 ### C++ Game Development
 
 Included:
+
 - C++ core features
 - Windows Universal C Runtime
 - C++ 2019 Redistributable Update
 - MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)
 
 Optional Components:
+
 - C++ profiling tools
 - Windows 10 SDK (10.0.17763.0)
 - IntelliCode
@@ -115,10 +121,12 @@ Optional Components:
 ### Mobile development with C++
 
 Included:
+
 - C++ core features
 - Android SDK setup (API level 25) (local install for Mobile development with C++)
 
 Optional Components:
+
 - Android NDK (R16B)
 - Apache Ant (1.9.3)
 - C++ Android development tools
@@ -128,7 +136,6 @@ Optional Components:
 - Android NDK (R16B) (32bit)
 - C++ iOS development tools
 - IncrediBuild - Build Acceleration
-
 
 ## Individual components
 
@@ -168,6 +175,7 @@ You can install these components independently from any workload.
 The following project templates are available depending on which workloads you have installed.
 
 Windows Desktop:
+
 - Empty Project
 - Console App
 - Windows Desktop Wizard
@@ -188,17 +196,19 @@ Windows Desktop:
 - Google Test
 
 Universal Windows Platform (C++/CX):
+
 - Blank App
 - DirectX 11 and XAML App
 - DirectX 11 App
-- DirectX 12 App 
-- Unit Test App 
-- DLL 
-- Windows Runtime Component 
-- Static Library 
+- DirectX 12 App
+- Unit Test App
+- DLL
+- Windows Runtime Component
+- Static Library
 - Windows Application Packaging Project
 
 Linux:
+
 - Console App (Linux)
 - Empty Project (Linux)
 - Raspberry Pi Blink

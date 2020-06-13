@@ -13,7 +13,7 @@ ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
 
 Reads formatted data from the console. More secure versions of these functions are available; see [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).
 
-> [!NOTE] 
+> [!NOTE]
 > In Visual Studio 2015 The `printf` and `scanf` family of functions were declared as **inline** and moved to the `<stdio.h>` and `<conio.h>` headers. If you are migrating older code you might see *LNK2019* in connection with these functions. For more information, see [Visual C++ change history 2003 - 2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 > [!IMPORTANT]

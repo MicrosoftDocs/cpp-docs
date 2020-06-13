@@ -6,7 +6,7 @@ ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
 ---
 # Recordset: How Recordsets Select Records (ODBC)
 
-> [!NOTE] 
+> [!NOTE]
 > The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.
@@ -21,7 +21,7 @@ This topic explains:
 
 Recordsets select records from a data source through an ODBC driver by sending SQL statements to the driver. The SQL sent depends on how you design and open your recordset class.
 
-##  <a name="_core_your_options_in_selecting_records"></a> Your Options in Selecting Records
+## <a name="_core_your_options_in_selecting_records"></a> Your Options in Selecting Records
 
 The following table shows your options in selecting records.
 
@@ -37,14 +37,13 @@ The following table shows your options in selecting records.
 
 |Call `Requery` to requery the recordset with the latest values on the data source|Specify new parameters, filter, or sort. See [Recordset: Requerying a Recordset (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md).|
 
-##  <a name="_core_how_a_recordset_constructs_its_sql_statement"></a> How a Recordset Constructs Its SQL Statement
+## <a name="_core_how_a_recordset_constructs_its_sql_statement"></a> How a Recordset Constructs Its SQL Statement
 
 When you call a recordset object's [Open](../../mfc/reference/crecordset-class.md#open) member function, `Open` constructs a SQL statement using some or all of the following ingredients:
 
 - The *lpszSQL* parameter passed to `Open`. If not NULL, this parameter specifies a custom SQL string or part of one. The framework parses the string. If the string is a SQL **SELECT** statement or an ODBC **CALL** statement, the framework uses the string as the recordset's SQL statement. If the string does not begin with "SELECT" or "{CALL", the framework uses what is supplied to construct a SQL **FROM** clause.
 
 - The string returned by [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql). By default, this is the name of the table you specified for the recordset in the wizard, but you can change what the function returns. The framework calls `GetDefaultSQL` — if the string does not begin with "SELECT" or "{CALL", it is assumed to be a table name, which is used to construct a SQL string.
-
 
 - The field data members of the recordset, which are to be bound to specific columns of the table. The framework binds record columns to the addresses of these members, using them as buffers. The framework determines the correlation of field data members to table columns from the [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls in the recordset's [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) member function.
 
@@ -63,7 +62,7 @@ After constructing the statement, `Open` sends the SQL to the ODBC Driver Manage
 
 You can use a combination of these techniques to open [tables](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md) and to construct a query based on a [join](../../data/odbc/recordset-performing-a-join-odbc.md) of multiple tables. With additional customization, you can call [predefined queries](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md) (stored procedures), select table columns not known at design time and [bind](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) them to recordset fields or you can perform most other data-access tasks. Tasks you cannot accomplish by customizing recordsets can still be accomplished by [calling ODBC API functions](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) or directly executing SQL statements with [CDatabase::ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql).
 
-##  <a name="_core_customizing_the_selection"></a> Customizing the Selection
+## <a name="_core_customizing_the_selection"></a> Customizing the Selection
 
 Besides supplying a filter, a sort order, or parameters, you can take the following actions to customize your recordset's selection:
 
@@ -79,7 +78,6 @@ Besides supplying a filter, a sort order, or parameters, you can take the follow
    You can have `GetDefaultSQL` return any of the items that you can pass in the *lpszSQL* parameter to `Open`. If you do not pass a custom SQL string in *lpszSQL*, the framework uses the string that `GetDefaultSQL` returns. At a minimum, `GetDefaultSQL` must return a single table name. But you can have it return multiple table names, a full **SELECT** statement, an ODBC **CALL** statement, and so on. For a list of what you can pass to *lpszSQL* — or have `GetDefaultSQL` return — see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
    If you are performing a join of two or more tables, rewrite `GetDefaultSQL` to customize the table list used in the SQL **FROM** clause. For more information, see [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
-
 
 - Manually bind additional field data members, perhaps based on information you obtain about the schema of your data source at run time. You add field data members to the recordset class, [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls for them to the [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) member function, and initializations of the data members in the class constructor. For more information, see [Recordset: Dynamically Binding Data Columns (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
 

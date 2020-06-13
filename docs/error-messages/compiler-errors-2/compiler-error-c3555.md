@@ -12,7 +12,7 @@ ms.assetid: b4311bd3-851b-479a-9965-d03f39dd8fd4
 The argument to the `decltype(`*expression*`)` type specifier is not a valid expression.
 
 > [!NOTE]
->  C3555 is not likely to occur. If the compiler emits C3555, it is probably because an internal compiler error has occurred.
+> C3555 is not likely to occur. If the compiler emits C3555, it is probably because an internal compiler error has occurred.
 
 ## See also
 

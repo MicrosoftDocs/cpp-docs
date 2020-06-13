@@ -1,5 +1,5 @@
 ---
-title: Install C++ support in Visual Studio
+title: Install C and C++ support in Visual Studio
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
 ms.date: "04/02/2019"
@@ -7,9 +7,9 @@ ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
-# Install C++ support in Visual Studio
+# Install C and C++ support in Visual Studio
 
-If you haven't downloaded and installed Visual Studio and the Visual C++ tools yet, here's how to get started.
+If you haven't downloaded and installed Visual Studio and the Microsoft C/C++ tools yet, here's how to get started.
 
 ::: moniker range="vs-2019"
 
@@ -51,9 +51,9 @@ Run the bootstrapper file to install the Visual Studio Installer. This new light
 
 1. From your **Downloads** folder, double-click the bootstrapper that matches or is similar to one of the following files:
 
-   * **vs_community.exe** for Visual Studio Community
-   * **vs_professional.exe** for Visual Studio Professional
-   * **vs_enterprise.exe** for Visual Studio Enterprise
+   - **vs_community.exe** for Visual Studio Community
+   - **vs_professional.exe** for Visual Studio Professional
+   - **vs_enterprise.exe** for Visual Studio Enterprise
 
    If you receive a User Account Control notice, choose **Yes**.
 
@@ -67,15 +67,15 @@ After the installer is installed, you can use it to customize your installation 
 
    ![Visual Studio 2019: Install a workload](../get-started/media/vs-installer-workloads.png)
 
-   For core C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
+   For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
-   Additional workloads support other kinds of C++ development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
+   Additional workloads support other kinds of development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
 
    The **Installation details** pane lists the included and optional components installed by each workload. You can select or deselect optional components in this list. For example, to support development by using the Visual Studio 2017 or 2015 compiler toolsets, choose the MSVC v141 or MSVC v140 optional components. You can add support for MFC, the experimental Modules language extension, IncrediBuild, and more.
 
 1. After you choose the workload(s) and optional components you want, choose **Install**.
 
-    Next, status screens appear that show the progress of your Visual Studio installation.
+   Next, status screens appear that show the progress of your Visual Studio installation.
 
 > [!TIP]
 > At any time after installation, you can install workloads or components that you didn't install initially. If you have Visual Studio open, go to **Tools** > **Get Tools and Features...** which opens the Visual Studio Installer. Or, open **Visual Studio Installer** from the Start menu. From there, you can choose the workloads or components that you wish to install. Then, choose **Modify**.
@@ -119,7 +119,7 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="vs-2017"
 
 ## Visual Studio 2017 Installation
 
@@ -153,7 +153,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    ![Desktop development with C++ workload](media/desktop-development-with-cpp.png "Desktop development with C++")
 
-   For C++, select the **Desktop development with C++** workload and then choose **Install**.
+   For C and C++, select the **Desktop development with C++** workload and then choose **Install**.
 
    ![Install the Desktop development with C++ workload](media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
 
@@ -179,9 +179,9 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 ## Visual Studio 2015 Installation
 
-To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. To add C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
+To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. To add C and C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
 
-In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
+In general, we highly recommend that you use the latest version of Visual Studio even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 ::: moniker-end
 

@@ -55,7 +55,7 @@ The value of the animation variable fluctuates between the specified minimum and
 
 **Header:** afxanimationcontroller.h
 
-##  <a name="create"></a>  CSinusoidalTransitionFromRange::Create
+## <a name="create"></a> CSinusoidalTransitionFromRange::Create
 
 Calls the transition library to create encapsulated transition COM object.
 
@@ -74,7 +74,7 @@ A pointer to transition library, which is responsible for creation of standard t
 
 TRUE if transition is created successfully; otherwise FALSE.
 
-##  <a name="csinusoidaltransitionfromrange"></a>  CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange
+## <a name="csinusoidaltransitionfromrange"></a> CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange
 
 Constructs a transition object.
 
@@ -104,7 +104,7 @@ The period of oscillation of the sinusoidal wave in seconds.
 *slope*<br/>
 The slope at the start of the transition.
 
-##  <a name="m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue
+## <a name="m_dblmaximumvalue"></a> CSinusoidalTransitionFromRange::m_dblMaximumValue
 
 The value of the animation variable at a peak of the sinusoidal wave.
 
@@ -112,7 +112,7 @@ The value of the animation variable at a peak of the sinusoidal wave.
 DOUBLE m_dblMaximumValue;
 ```
 
-##  <a name="m_dblminimumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMinimumValue
+## <a name="m_dblminimumvalue"></a> CSinusoidalTransitionFromRange::m_dblMinimumValue
 
 The value of the animation variable at a trough of the sinusoidal wave.
 
@@ -120,7 +120,7 @@ The value of the animation variable at a trough of the sinusoidal wave.
 DOUBLE m_dblMinimumValue;
 ```
 
-##  <a name="m_duration"></a>  CSinusoidalTransitionFromRange::m_duration
+## <a name="m_duration"></a> CSinusoidalTransitionFromRange::m_duration
 
 The duration of the transition.
 
@@ -128,7 +128,7 @@ The duration of the transition.
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-##  <a name="m_period"></a>  CSinusoidalTransitionFromRange::m_period
+## <a name="m_period"></a> CSinusoidalTransitionFromRange::m_period
 
 The period of oscillation of the sinusoidal wave in seconds.
 
@@ -136,7 +136,7 @@ The period of oscillation of the sinusoidal wave in seconds.
 UI_ANIMATION_SECONDS m_period;
 ```
 
-##  <a name="m_slope"></a>  CSinusoidalTransitionFromRange::m_slope
+## <a name="m_slope"></a> CSinusoidalTransitionFromRange::m_slope
 
 The slope at the start of the transition.
 

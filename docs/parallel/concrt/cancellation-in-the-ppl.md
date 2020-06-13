@@ -31,11 +31,11 @@ This document explains the role of cancellation in the Parallel Patterns Library
 
 - [Canceling Parallel Tasks](#tasks)
 
-    - [Using a Cancellation Token to Cancel Parallel Work](#tokens)
+  - [Using a Cancellation Token to Cancel Parallel Work](#tokens)
 
-    - [Using the cancel Method to Cancel Parallel Work](#cancel)
+  - [Using the cancel Method to Cancel Parallel Work](#cancel)
 
-    - [Using Exceptions to Cancel Parallel Work](#exceptions)
+  - [Using Exceptions to Cancel Parallel Work](#exceptions)
 
 - [Canceling Parallel Algorithms](#algorithms)
 

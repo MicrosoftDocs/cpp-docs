@@ -64,7 +64,7 @@ The following illustration shows a task group that contains three tasks:
 
 **Header:** afxTasksPane.h
 
-##  <a name="cmfctaskspanetask"></a>  CMFCTasksPaneTask::CMFCTasksPaneTask
+## <a name="cmfctaskspanetask"></a> CMFCTasksPaneTask::CMFCTasksPaneTask
 
 Creates and initializes a `CMFCTasksPaneTask` object.
 
@@ -108,7 +108,7 @@ Specifies the height of the task window.
 
 ### Remarks
 
-##  <a name="m_bautodestroywindow"></a>  CMFCTasksPaneTask::m_bAutoDestroyWindow
+## <a name="m_bautodestroywindow"></a> CMFCTasksPaneTask::m_bAutoDestroyWindow
 
 Determines whether the task window is automatically destroyed.
 
@@ -120,7 +120,7 @@ BOOL m_bAutoDestroyWindow;
 
 Set to TRUE to specify that the task window ( [CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) should be destroyed automatically; otherwise, FALSE.
 
-##  <a name="m_bisbold"></a>  CMFCTasksPaneTask::m_bIsBold
+## <a name="m_bisbold"></a> CMFCTasksPaneTask::m_bIsBold
 
 Determines whether a task label is drawn in bold text.
 
@@ -132,7 +132,7 @@ BOOL m_bIsBold;
 
 Set this member to TRUE to display bold text for the task label.
 
-##  <a name="m_dwuserdata"></a>  CMFCTasksPaneTask::m_dwUserData
+## <a name="m_dwuserdata"></a> CMFCTasksPaneTask::m_dwUserData
 
 Contains user-defined data that is associated with the task. Set to zero if no data is associated with the task.
 
@@ -142,7 +142,7 @@ DWORD m_dwUserData;
 
 ### Remarks
 
-##  <a name="m_hwndtask"></a>  CMFCTasksPaneTask::m_hwndTask
+## <a name="m_hwndtask"></a> CMFCTasksPaneTask::m_hwndTask
 
 A handle to the task window.
 
@@ -154,7 +154,7 @@ HWND m_hwndTask;
 
 To add a task window, call [CMFCTasksPane::AddWindow](../../mfc/reference/cmfctaskspane-class.md#addwindow).
 
-##  <a name="m_nicon"></a>  CMFCTasksPaneTask::m_nIcon
+## <a name="m_nicon"></a> CMFCTasksPaneTask::m_nIcon
 
 The index position in an image list that identifies an image that is displayed next to the specified task.
 
@@ -168,7 +168,7 @@ The image list is set by [CMFCTasksPane::SetIconsList](../../mfc/reference/cmfct
 
 Set `m_nIcon` to -1 if you want to display the task without an image.
 
-##  <a name="m_nwindowheight"></a>  CMFCTasksPaneTask::m_nWindowHeight
+## <a name="m_nwindowheight"></a> CMFCTasksPaneTask::m_nWindowHeight
 
 The height of the task window. If the task has no task window, this value is zero.
 
@@ -178,7 +178,7 @@ int m_nWindowHeight;
 
 ### Remarks
 
-##  <a name="m_pgroup"></a>  CMFCTasksPaneTask::m_pGroup
+## <a name="m_pgroup"></a> CMFCTasksPaneTask::m_pGroup
 
 Pointer to the [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md) to which this task belongs.
 
@@ -190,7 +190,7 @@ CMFCTasksPaneTaskGroup* m_pGroup;
 
 Every task must have a parent group. You add groups to a task pane by calling [CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#addgroup).
 
-##  <a name="m_rect"></a>  CMFCTasksPaneTask::m_rect
+## <a name="m_rect"></a> CMFCTasksPaneTask::m_rect
 
 Specifies the bounding rectangle of the task.
 
@@ -202,7 +202,7 @@ CRect m_rect;
 
 This value is calculated by the framework when the task is drawn.
 
-##  <a name="m_strname"></a>  CMFCTasksPaneTask::m_strName
+## <a name="m_strname"></a> CMFCTasksPaneTask::m_strName
 
 The name of the task.
 
@@ -212,7 +212,7 @@ CString m_strName;
 
 ### Remarks
 
-##  <a name="m_uicommandid"></a>  CMFCTasksPaneTask::m_uiCommandID
+## <a name="m_uicommandid"></a> CMFCTasksPaneTask::m_uiCommandID
 
 Specifies the command ID of the command that is executed when the user clicks the task. If this value is not a valid command ID, the task is treated as a simple label.
 
@@ -222,7 +222,7 @@ UINT m_uiCommandID;
 
 ### Remarks
 
-##  <a name="setaccdata"></a>  CMFCTasksPaneTask::SetACCData
+## <a name="setaccdata"></a> CMFCTasksPaneTask::SetACCData
 
 Determines the accessibility data for the current task.
 

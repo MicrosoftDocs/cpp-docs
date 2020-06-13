@@ -14,33 +14,33 @@ This article describes how MFC performs frame allocations and heap allocations f
 
 - [An object](#_core_allocation_of_an_object)
 
-##  <a name="_core_allocation_of_an_array_of_bytes"></a> Allocation of an Array of Bytes
+## <a name="_core_allocation_of_an_array_of_bytes"></a> Allocation of an Array of Bytes
 
 #### To allocate an array of bytes on the frame
 
 1. Define the array as shown by the following code. The array is automatically deleted and its memory reclaimed when the array variable exits its scope.
 
-   [!code-cpp[NVC_MFC_Utilities#1](../mfc/codesnippet/cpp/memory-management-examples_1.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#1](codesnippet/cpp/memory-management-examples_1.cpp)]
 
 #### To allocate an array of bytes (or any primitive data type) on the heap
 
 1. Use the **new** operator with the array syntax shown in this example:
 
-   [!code-cpp[NVC_MFC_Utilities#2](../mfc/codesnippet/cpp/memory-management-examples_2.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#2](codesnippet/cpp/memory-management-examples_2.cpp)]
 
 #### To deallocate the arrays from the heap
 
 1. Use the **delete** operator as follows:
 
-   [!code-cpp[NVC_MFC_Utilities#3](../mfc/codesnippet/cpp/memory-management-examples_3.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#3](codesnippet/cpp/memory-management-examples_3.cpp)]
 
-##  <a name="_core_allocation_of_a_data_structure"></a> Allocation of a Data Structure
+## <a name="_core_allocation_of_a_data_structure"></a> Allocation of a Data Structure
 
 #### To allocate a data structure on the frame
 
 1. Define the structure variable as follows:
 
-   [!code-cpp[NVC_MFC_Utilities#4](../mfc/codesnippet/cpp/memory-management-examples_4.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#4](codesnippet/cpp/memory-management-examples_4.cpp)]
 
    The memory occupied by the structure is reclaimed when it exits its scope.
 
@@ -48,15 +48,15 @@ This article describes how MFC performs frame allocations and heap allocations f
 
 1. Use **new** to allocate data structures on the heap and **delete** to deallocate them, as shown by the following examples:
 
-   [!code-cpp[NVC_MFC_Utilities#5](../mfc/codesnippet/cpp/memory-management-examples_5.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#5](codesnippet/cpp/memory-management-examples_5.cpp)]
 
-##  <a name="_core_allocation_of_an_object"></a> Allocation of an Object
+## <a name="_core_allocation_of_an_object"></a> Allocation of an Object
 
 #### To allocate an object on the frame
 
 1. Declare the object as follows:
 
-   [!code-cpp[NVC_MFC_Utilities#6](../mfc/codesnippet/cpp/memory-management-examples_6.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#6](codesnippet/cpp/memory-management-examples_6.cpp)]
 
    The destructor for the object is automatically invoked when the object exits its scope.
 
@@ -66,16 +66,16 @@ This article describes how MFC performs frame allocations and heap allocations f
 
    The following heap and frame examples assume that the `CPerson` constructor takes no arguments.
 
-   [!code-cpp[NVC_MFC_Utilities#7](../mfc/codesnippet/cpp/memory-management-examples_7.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#7](codesnippet/cpp/memory-management-examples_7.cpp)]
 
    If the argument for the `CPerson` constructor is a pointer to **char**, the statement for frame allocation is:
 
-   [!code-cpp[NVC_MFC_Utilities#8](../mfc/codesnippet/cpp/memory-management-examples_8.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#8](codesnippet/cpp/memory-management-examples_8.cpp)]
 
    The statement for heap allocation is:
 
-   [!code-cpp[NVC_MFC_Utilities#9](../mfc/codesnippet/cpp/memory-management-examples_9.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#9](codesnippet/cpp/memory-management-examples_9.cpp)]
 
 ## See also
 
-[Memory Management: Heap Allocation](../mfc/memory-management-heap-allocation.md)
+[Memory Management: Heap Allocation](memory-management-heap-allocation.md)

@@ -16,7 +16,7 @@ The **partial** keyword enables different parts of the same ref class to be auth
 
 ## Windows Runtime
 
-For a ref class that has two partial definitions, the **partial** keyword is applied to the first occurrence of the definition, and this is typically done by auto-generated code, so that a human coder doesn’t use the keyword very often. For all subsequent partial definitions of the class, omit the **partial** modifier from the *class-key* keyword and class identifier. When the compiler encounters a previously defined ref class and class identifier but no **partial** keyword, it internally combines all of the parts of the ref class definition into one definition.
+For a ref class that has two partial definitions, the **partial** keyword is applied to the first occurrence of the definition, and this is typically done by auto-generated code, so that a human coder doesn't use the keyword very often. For all subsequent partial definitions of the class, omit the **partial** modifier from the *class-key* keyword and class identifier. When the compiler encounters a previously defined ref class and class identifier but no **partial** keyword, it internally combines all of the parts of the ref class definition into one definition.
 
 ### Syntax
 

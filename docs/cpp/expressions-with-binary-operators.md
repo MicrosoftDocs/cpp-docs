@@ -10,75 +10,75 @@ Binary operators act on two operands in an expression. The binary operators are:
 
 - [Multiplicative operators](../cpp/multiplicative-operators-and-the-modulus-operator.md)
 
-   - Multiplication (*)
+  - Multiplication (*)
 
-   - Division (/)
+  - Division (/)
 
-   - Modulus (%)
+  - Modulus (%)
 
 - [Additive operators](../cpp/additive-operators-plus-and.md)
 
-   - Addition (+)
+  - Addition (+)
 
-   - Subtraction (-)
+  - Subtraction (-)
 
 - [Shift operators](../cpp/left-shift-and-right-shift-operators-input-and-output.md)
 
-   - Right shift (>>)
+  - Right shift (>>)
 
-   - Left shift (<<)
+  - Left shift (<<)
 
 - [Relational and equality operators](../cpp/relational-operators-equal-and-equal.md)
 
-   - Less than (\<)
+  - Less than (\<)
 
-   - Greater than (>)
+  - Greater than (>)
 
-   - Less than or equal to (\<=)
+  - Less than or equal to (\<=)
 
-   - Greater than or equal to (>=)
+  - Greater than or equal to (>=)
 
-   - Equal to (==)
+  - Equal to (==)
 
-   - Not equal to (!=)
+  - Not equal to (!=)
 
 - Bitwise operators
 
-   - [Bitwise AND (&)](../cpp/bitwise-and-operator-amp.md)
+  - [Bitwise AND (&)](../cpp/bitwise-and-operator-amp.md)
 
-   - [Bitwise exclusive OR (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
+  - [Bitwise exclusive OR (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
 
-   - [Bitwise inclusive OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
+  - [Bitwise inclusive OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
 
 - Logical operators
 
-   - [Logical AND (&&)](../cpp/logical-and-operator-amp-amp.md)
+  - [Logical AND (&&)](../cpp/logical-and-operator-amp-amp.md)
 
-   - [Logical OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
+  - [Logical OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
 
 - [Assignment operators](../cpp/assignment-operators.md)
 
-   - Assignment (=)
+  - Assignment (=)
 
-   - Addition assignment (+=)
+  - Addition assignment (+=)
 
-   - Subtraction assignment (-=)
+  - Subtraction assignment (-=)
 
-   - Multiplication assignment (*=)
+  - Multiplication assignment (*=)
 
-   - Division assignment (/=)
+  - Division assignment (/=)
 
-   - Modulus assignment (%=)
+  - Modulus assignment (%=)
 
-   - Left shift assignment (<\<=)
+  - Left shift assignment (<\<=)
 
-   - Right shift assignment (>>=)
+  - Right shift assignment (>>=)
 
-   - Bitwise AND assignment (&=)
+  - Bitwise AND assignment (&=)
 
-   - Bitwise exclusive OR assignment (^=)
+  - Bitwise exclusive OR assignment (^=)
 
-   - Bitwise inclusive OR assignment (&#124;=)
+  - Bitwise inclusive OR assignment (&#124;=)
 
 - [Comma Operator](../cpp/comma-operator.md) (,)
 

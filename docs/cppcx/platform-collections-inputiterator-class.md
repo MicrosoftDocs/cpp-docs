@@ -60,7 +60,7 @@ The typename of the InputIterator template class.
 
 **Namespace:** Platform::Collections
 
-## <a name="ctor"></a>  InputIterator::InputIterator Constructor
+## <a name="ctor"></a> InputIterator::InputIterator Constructor
 
 Initializes a new instance of the InputIterator class.
 
@@ -76,7 +76,7 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 *iterator*<br/>
 An iterator object.
 
-## <a name="operator-arrow"></a>  InputIterator::operator-&gt; Operator
+## <a name="operator-arrow"></a> InputIterator::operator-&gt; Operator
 
 Retrieves the address of the element specified by the current InputIterator.
 
@@ -90,7 +90,7 @@ pointer operator->() const;
 
 The address of the element specified by the current InputIterator.
 
-## <a name="operator-dereference"></a>  InputIterator::operator\* Operator
+## <a name="operator-dereference"></a> InputIterator::operator\* Operator
 
 Retrieves a reference to the element specified by the current InputIterator.
 
@@ -104,7 +104,7 @@ reference operator*() const;
 
 The element specified by the current InputIterator.
 
-## <a name="operator-equality"></a>  InputIterator::operator== Operator
+## <a name="operator-equality"></a> InputIterator::operator== Operator
 
 Indicates whether the current InputIterator is equal to a specified InputIterator.
 
@@ -123,7 +123,7 @@ Another InputIterator.
 
 **true** if the current InputIterator is equal to *other*; otherwise, **false**.
 
-## <a name="operator-increment"></a>  InputIterator::operator++ Operator
+## <a name="operator-increment"></a> InputIterator::operator++ Operator
 
 Increments the current InputIterator.
 
@@ -144,7 +144,7 @@ The first InputIterator syntax pre-increments the current InputIterator.
 
 The second syntax post-increments the current InputIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
-## <a name="operator-inequality"></a>  InputIterator::operator!= Operator
+## <a name="operator-inequality"></a> InputIterator::operator!= Operator
 
 Indicates whether the current InputIterator is not equal to a specified InputIterator.
 

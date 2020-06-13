@@ -48,7 +48,7 @@ rsStudent.Open( );
 The recordset contains all of the student records, sorted in descending order (Z to A) by last name, then by first name.
 
 > [!NOTE]
->  If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, do not set a sort if your custom string has an **ORDER BY** clause.
+> If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, do not set a sort if your custom string has an **ORDER BY** clause.
 
 ## See also
 

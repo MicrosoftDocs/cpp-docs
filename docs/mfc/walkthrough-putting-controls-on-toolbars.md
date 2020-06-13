@@ -23,7 +23,7 @@ To add a control to a toolbar, follow these steps:
    1. Replace the dummy button with the new control by using [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton). You can construct the button object on the stack, because `ReplaceButton` copies the button object and maintains the copy.
 
 > [!NOTE]
->  If you enabled customization in your application, you may have to reset the toolbar by using the **Reset** button on the **Toolbars** tab of the **Customize** dialog box to see the updated control in your application after recompiling. The toolbar state is saved in the Windows registry, and the registry information is loaded and applied after the `ReplaceButton` method is executed during application startup.
+> If you enabled customization in your application, you may have to reset the toolbar by using the **Reset** button on the **Toolbars** tab of the **Customize** dialog box to see the updated control in your application after recompiling. The toolbar state is saved in the Windows registry, and the registry information is loaded and applied after the `ReplaceButton` method is executed during application startup.
 
 ## Toolbar Controls and Customization
 

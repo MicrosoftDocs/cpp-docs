@@ -1,7 +1,7 @@
 ---
 title: "AFX_GLOBAL_DATA Structure"
 ms.date: "11/04/2016"
-f1_keywords: ["AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::~AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::CleanUp", "AFXGLOBALS/AFX_GLOBAL_DATA::D2D1MakeRotateMatrix", "AFXGLOBALS/AFX_GLOBAL_DATA::DrawParentBackground", "AFXGLOBALS/AFX_GLOBAL_DATA::DrawTextOnGlass", "AFXGLOBALS/AFX_GLOBAL_DATA::ExcludeTag", "AFXGLOBALS/AFX_GLOBAL_DATA::GetColor", "AFXGLOBALS/AFX_GLOBAL_DATA::GetDirect2dFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::GetHandCursor", "AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList", "AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList3", "AFXGLOBALS/AFX_GLOBAL_DATA::GetNonClientMetrics", "AFXGLOBALS/AFX_GLOBAL_DATA::GetShellAutohideBars", "AFXGLOBALS/AFX_GLOBAL_DATA::GetTextHeight", "AFXGLOBALS/AFX_GLOBAL_DATA::GetWICFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::GetWriteFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized", "AFXGLOBALS/AFX_GLOBAL_DATA::Is32BitIcons", "AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized", "AFXGLOBALS/AFX_GLOBAL_DATA::IsDwmCompositionEnabled", "AFXGLOBALS/AFX_GLOBAL_DATA::IsHighContrastMode", "AFXGLOBALS/AFX_GLOBAL_DATA::OnSettingChange", "AFXGLOBALS/AFX_GLOBAL_DATA::RegisterWindowClass", "AFXGLOBALS/AFX_GLOBAL_DATA::ReleaseTaskBarRefs", "AFXGLOBALS/AFX_GLOBAL_DATA::Resume", "AFXGLOBALS/AFX_GLOBAL_DATA::SetLayeredAttrib", "AFXGLOBALS/AFX_GLOBAL_DATA::SetMenuFont", "AFXGLOBALS/AFX_GLOBAL_DATA::ShellCreateItemFromParsingName", "AFXGLOBALS/AFX_GLOBAL_DATA::UpdateFonts", "AFXGLOBALS/AFX_GLOBAL_DATA::UpdateSysColors", "AFXGLOBALS/AFX_GLOBAL_DATA::EnableAccessibilitySupport", "AFXGLOBALS/AFX_GLOBAL_DATA::IsAccessibilitySupport", "AFXGLOBALS/AFX_GLOBAL_DATA::IsWindowsLayerSupportAvailable", "AFXGLOBALS/AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport", "AFXGLOBALS/AFX_GLOBAL_DATA::bIsWindows7", "AFXGLOBALS/AFX_GLOBAL_DATA::clrActiveCaptionGradient", "AFXGLOBALS/AFX_GLOBAL_DATA::clrInactiveCaptionGradient", "AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons", "AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseSystemFont", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurHand", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretch", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretchVert", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hiconTool", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessDock", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat"]
+f1_keywords: ["AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::~AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::CleanUp", "AFXGLOBALS/AFX_GLOBAL_DATA::D2D1MakeRotateMatrix", "AFXGLOBALS/AFX_GLOBAL_DATA::DrawParentBackground", "AFXGLOBALS/AFX_GLOBAL_DATA::DrawTextOnGlass", "AFXGLOBALS/AFX_GLOBAL_DATA::ExcludeTag", "AFXGLOBALS/AFX_GLOBAL_DATA::GetColor", "AFXGLOBALS/AFX_GLOBAL_DATA::GetDirect2dFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::GetHandCursor", "AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList", "AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList3", "AFXGLOBALS/AFX_GLOBAL_DATA::GetNonClientMetrics", "AFXGLOBALS/AFX_GLOBAL_DATA::GetShellAutohideBars", "AFXGLOBALS/AFX_GLOBAL_DATA::GetTextHeight", "AFXGLOBALS/AFX_GLOBAL_DATA::GetWICFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::GetWriteFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::InitD2D", "AFXGLOBALS/AFX_GLOBAL_DATA::Is32BitIcons", "AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized", "AFXGLOBALS/AFX_GLOBAL_DATA::IsDwmCompositionEnabled", "AFXGLOBALS/AFX_GLOBAL_DATA::IsHighContrastMode", "AFXGLOBALS/AFX_GLOBAL_DATA::OnSettingChange", "AFXGLOBALS/AFX_GLOBAL_DATA::RegisterWindowClass", "AFXGLOBALS/AFX_GLOBAL_DATA::ReleaseTaskBarRefs", "AFXGLOBALS/AFX_GLOBAL_DATA::Resume", "AFXGLOBALS/AFX_GLOBAL_DATA::SetLayeredAttrib", "AFXGLOBALS/AFX_GLOBAL_DATA::SetMenuFont", "AFXGLOBALS/AFX_GLOBAL_DATA::ShellCreateItemFromParsingName", "AFXGLOBALS/AFX_GLOBAL_DATA::UpdateFonts", "AFXGLOBALS/AFX_GLOBAL_DATA::UpdateSysColors", "AFXGLOBALS/AFX_GLOBAL_DATA::EnableAccessibilitySupport", "AFXGLOBALS/AFX_GLOBAL_DATA::IsAccessibilitySupport", "AFXGLOBALS/AFX_GLOBAL_DATA::IsWindowsLayerSupportAvailable", "AFXGLOBALS/AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport", "AFXGLOBALS/AFX_GLOBAL_DATA::bIsWindows7", "AFXGLOBALS/AFX_GLOBAL_DATA::clrActiveCaptionGradient", "AFXGLOBALS/AFX_GLOBAL_DATA::clrInactiveCaptionGradient", "AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons", "AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseSystemFont", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurHand", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretch", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretchVert", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hiconTool", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessDock", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat"]
 helpviewer_keywords: ["AFX_GLOBAL_DATA structure [MFC]", "AFX_GLOBAL_DATA constructor"]
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
 ---
@@ -43,7 +43,7 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::GetTextHeight](#gettextheight)|Retrieves the height of text characters in the current font.|
 |[AFX_GLOBAL_DATA::GetWICFactory](#getwicfactory)|Returns a pointer to the `IWICImagingFactory` interface that is stored in the global data. If the interface is not initialized, it is created and has the default parameters.|
 |[AFX_GLOBAL_DATA::GetWriteFactory](#getwritefactory)|Returns a pointer to the `IDWriteFactory` interface that is stored in the global data. If the interface is not initialized, it is created and has the default parameters.|
-|[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|Initializes `D2D`, `DirectWrite`, and `WIC` factories. Call this method before the main window is initialized.|
+|[AFX_GLOBAL_DATA::InitD2D](#initd2d)|Initializes `D2D`, `DirectWrite`, and `WIC` factories. Call this method before the main window is initialized.|
 |[AFX_GLOBAL_DATA::Is32BitIcons](#is32biticons)|Indicates whether predefined 32-bit icons are supported.|
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|Determines whether the `D2D` was initialized.|
 |[AFX_GLOBAL_DATA::IsDwmCompositionEnabled](#isdwmcompositionenabled)|Provides a simple way to call the Windows [DwmIsCompositionEnabled](/windows/win32/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) method.|
@@ -113,7 +113,7 @@ TRUE indicates alpha blending is supported; otherwise, FALSE.
 
 Releases resources that are allocated by the framework, such as brushes, fonts, and DLLs.
 
-```
+```cpp
 void CleanUp();
 ```
 
@@ -231,7 +231,7 @@ A theme defines the visual style of an application. A theme is not used to draw 
 
 Enables or disables Microsoft Active Accessibility support.
 
-```
+```cpp
 void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```
 
@@ -325,7 +325,7 @@ ID2D1Factory* GetDirect2dFactory();
 
 A pointer to ID2D1Factory interface if creation of a factory succeeds, or NULL if creation fails or current Operation System don't have D2D support.
 
-## <a name="gethandcursor"></a>  AFX_GLOBAL_DATA::GetHandCursor
+## <a name="gethandcursor"></a> AFX_GLOBAL_DATA::GetHandCursor
 
 Retrieves the predefined cursor that resembles a hand and whose identifier is IDC_HAND.
 
@@ -478,6 +478,7 @@ TRUE if [Desktop Window Manager](/windows/win32/dwm/dwm-overview) (DWM) composit
 ## <a name="ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
 
 Indicates whether images are currently displayed in high contrast.
+
 ```
 BOOL IsHighContrastMode() const;
 ```
@@ -618,7 +619,7 @@ The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 4 
 
 Detects the current state of the desktop's menu animation and taskbar autohide features.
 
-```
+```cpp
 void OnSettingChange();
 ```
 
@@ -723,7 +724,7 @@ This method creates a horizontal regular font, an underlined font, and a bold fo
 
 Reintializes the logical fonts that are used by the framework.
 
-```
+```cpp
 void UpdateFonts();
 ```
 
@@ -735,7 +736,7 @@ For more information about logical fonts, see `CFont::CreateFontIndirect`.
 
 Initializes the colors, color depth, brushes, pens, and images that are used by the framework.
 
-```
+```cpp
 void UpdateSysColors();
 ```
 
@@ -803,7 +804,7 @@ An integer value with encoded flags that specify positions of auto hide bars. It
 
 Releases interfaces obtained through the `GetITaskbarList` and `GetITaskbarList3` methods.
 
-```
+```cpp
 void ReleaseTaskBarRefs();
 ```
 

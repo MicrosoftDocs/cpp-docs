@@ -50,10 +50,10 @@ The `cmdname` parameter specifies the file to be executed as the new process. It
 Parameters are passed to the new process by giving one or more pointers to character strings as parameters in the `_exec` call. These character strings form the parameter list for the new process. The combined length of the inherited environment settings and the strings forming the parameter list for the new process must not exceed 32 kilobytes. The terminating null character ('\0') for each string is not included in the count, but space characters (inserted automatically to separate the parameters) are counted.
 
 > [!NOTE]
->  Spaces embedded in strings may cause unexpected behavior; for example, passing `_exec` the string `"hi there"` will result in the new process getting two arguments, `"hi"` and `"there"`. If the intent was to have the new process open a file named "hi there", the process would fail. You can avoid this by quoting the string: `"\"hi there\""`.
+> Spaces embedded in strings may cause unexpected behavior; for example, passing `_exec` the string `"hi there"` will result in the new process getting two arguments, `"hi"` and `"there"`. If the intent was to have the new process open a file named "hi there", the process would fail. You can avoid this by quoting the string: `"\"hi there\""`.
 
 > [!IMPORTANT]
->  Do not pass user input to `_exec` without explicitly checking its content. `_exec` will result in a call to [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) so keep in mind that unqualified path names could lead to potential security vulnerabilities.
+> Do not pass user input to `_exec` without explicitly checking its content. `_exec` will result in a call to [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) so keep in mind that unqualified path names could lead to potential security vulnerabilities.
 
 The `_exec` functions validate their parameters. If expected parameters are null pointers, empty strings, or omitted, the `_exec` functions invoke the invalid parameter handler as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is executed.
 

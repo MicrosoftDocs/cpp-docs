@@ -10,7 +10,7 @@ ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
 This class exposes [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interface as an outgoing interface on a connectable object.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 

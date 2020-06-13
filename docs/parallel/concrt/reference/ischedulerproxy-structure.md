@@ -42,7 +42,7 @@ The Resource Manager hands an `ISchedulerProxy` interface to every scheduler tha
 
 **Namespace:** concurrency
 
-## <a name="bindcontext"></a>  ISchedulerProxy::BindContext Method
+## <a name="bindcontext"></a> ISchedulerProxy::BindContext Method
 
 Associates an execution context with a thread proxy, if it is not already associated with one.
 
@@ -61,7 +61,7 @@ Normally, the [IThreadProxy::SwitchTo](ithreadproxy-structure.md#switchto) metho
 
 `invalid_argument` is thrown if the parameter `pContext` has the value `NULL`.
 
-## <a name="createoversubscriber"></a>  ISchedulerProxy::CreateOversubscriber Method
+## <a name="createoversubscriber"></a> ISchedulerProxy::CreateOversubscriber Method
 
 Creates a new virtual processor root on the hardware thread associated with an existing execution resource.
 
@@ -84,7 +84,7 @@ Use this method when your scheduler wants to oversubscribe a particular hardware
 
 You can even oversubscribe an existing virtual processor root, because the `IVirtualProcessorRoot` interface inherits from the `IExecutionResource` interface.
 
-## <a name="requestinitialvirtualprocessors"></a>  ISchedulerProxy::RequestInitialVirtualProcessors Method
+## <a name="requestinitialvirtualprocessors"></a> ISchedulerProxy::RequestInitialVirtualProcessors Method
 
 Requests an initial allocation of virtual processor roots. Every virtual processor root represents the ability to execute one thread that can perform work for the scheduler.
 
@@ -113,7 +113,7 @@ When determining which hardware threads are selected, the Resource Manager will 
 
 The act of subscribing a thread increases the subscription level of the underlying hardware thread by one. The subscription level is reduced by one when the subscription is terminated. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## <a name="shutdown"></a>  ISchedulerProxy::Shutdown Method
+## <a name="shutdown"></a> ISchedulerProxy::Shutdown Method
 
 Notifies the Resource Manager that the scheduler is shutting down. This will cause the Resource Manager to immediately reclaim all resources granted to the scheduler.
 
@@ -129,7 +129,7 @@ If your scheduler had any deactivated virtual processor roots, you must activate
 
 It is not necessary for the scheduler to individually return all of the virtual processor roots the Resource Manager granted to it via calls to the `Remove` method because all virtual processors roots will be returned to the Resource Manager at shutdown.
 
-## <a name="subscribecurrentthread"></a>  ISchedulerProxy::SubscribeCurrentThread Method
+## <a name="subscribecurrentthread"></a> ISchedulerProxy::SubscribeCurrentThread Method
 
 Registers the current thread with the Resource Manager, associating it with this scheduler.
 
@@ -149,7 +149,7 @@ The execution resource received via this method should be returned to the Resour
 
 The act of subscribing a thread increases the subscription level of the underlying hardware thread by one. The subscription level is reduced by one when the subscription is terminated. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## <a name="unbindcontext"></a>  ISchedulerProxy::UnbindContext Method
+## <a name="unbindcontext"></a> ISchedulerProxy::UnbindContext Method
 
 Disassociates a thread proxy from the execution context specified by the `pContext` parameter and returns it to the thread proxy factory's free pool. This method may only be called on an execution context which was bound via the [ISchedulerProxy::BindContext](#bindcontext) method and has not yet been started via being the `pContext` parameter of an [IThreadProxy::SwitchTo](ithreadproxy-structure.md#switchto) method call.
 

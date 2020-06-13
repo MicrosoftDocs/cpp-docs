@@ -1,7 +1,6 @@
 ---
 title: "CL Invokes the Linker"
 ms.date: "11/04/2016"
-f1_keywords: ["cl"]
 helpviewer_keywords: ["compiling source code [C++], without linking", "invoking linker from the compiler", "LINK tool [C++], invoking from CL compiler", "cl.exe compiler [C++], compiling without linking", "cl.exe compiler [C++], controlling linker"]
 ms.assetid: eae47ef7-09eb-40c9-b318-7c714cd452fc
 ---

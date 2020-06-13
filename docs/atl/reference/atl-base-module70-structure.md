@@ -11,7 +11,7 @@ Used by any project that uses ATL.
 
 ## Syntax
 
-```
+```cpp
 struct _ATL_BASE_MODULE70 {
     UINT cbSize;
     HINSTANCE m_hInst;

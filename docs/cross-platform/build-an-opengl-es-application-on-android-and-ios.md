@@ -103,7 +103,7 @@ The solution created by the template sets the Android app as the default project
 
    The generated Android Native Activity app and library projects put the C++ shared code in a dynamic library. It includes "glue" code to interface with the Android platform. Most of the app code is in the library. The manifest, resources, and build instructions are in the packaging project. The shared code is called from main.cpp in the NativeActivity project. For more information about how to program an Android Native Activity, see the Android Developer NDK [Concepts](https://developer.android.com/ndk/guides/concepts.html) page.
 
-   Visual Studio builds Android Native Activity projects by using the Android NDK. It uses Clang as the platform toolset. Visual Studio maps the project's properties into the compile, link, and debug commands on the target platform. For details, open the **Property Pages** dialog for the MyOpenGLESApp.Android.NativeActivity project. For more information about the command-line switches, see the [Clang Compiler User's Manual](http://clang.llvm.org/docs/UsersManual.html).
+   Visual Studio builds Android Native Activity projects by using the Android NDK. It uses Clang as the platform toolset. Visual Studio maps the project's properties into the compile, link, and debug commands on the target platform. For details, open the **Property Pages** dialog for the MyOpenGLESApp.Android.NativeActivity project. For more information about the command-line switches, see the [Clang Compiler User's Manual](https://clang.llvm.org/docs/UsersManual.html).
 
 ## Build and run the iOS app on an iOS device
 

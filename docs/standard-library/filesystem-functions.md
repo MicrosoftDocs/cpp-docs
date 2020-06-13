@@ -202,7 +202,7 @@ void current_path(const path& pval, error_code& ec) noexcept;
 
 The functions with no parameter *pval* return the pathname for the current directory. The remaining functions set the current directory to *pval*.
 
-## <a name="end"></a>  end
+## <a name="end"></a> end
 
 ```cpp
 directory_iterator& end(const directory_iterator& iter) noexcept;
@@ -220,7 +220,7 @@ bool equivalent(const path& left, const path& right, error_code& ec) noexcept;
 
 The functions return **true** only if *left* and *right* choose the same filesystem entity.
 
-## <a name="exists"></a>  exists
+## <a name="exists"></a> exists
 
 ```cpp
 bool exists(file_status stat) noexcept;
@@ -467,7 +467,7 @@ The function exchanges the contents of *left* and *right*.
 
 ```cpp
 file_status symlink_status(const path& pval);
-file_status symlink_status(const path& pval, erroxr_code& ec) noexcept;
+file_status symlink_status(const path& pval, error_code& ec) noexcept;
 ```
 
 The functions return the pathname symlink status, the file type, and permissions, associated with *pval*. The functions behave the same as `status(pval)` except that a symlink is itself tested, not the file it chooses.

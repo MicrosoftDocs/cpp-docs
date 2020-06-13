@@ -14,7 +14,7 @@ ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
 |[WinRTInitializationType](#winrtinitializationtype)|[agent_status](#agent_status)|[join_type](#join_type)|
 |[message_status](#message_status)|[task_group_status](#task_group_status)|
 
-## <a name="agent_status"></a>  agent_status Enumeration
+## <a name="agent_status"></a> agent_status Enumeration
 
 The valid states for an `agent`.
 
@@ -40,7 +40,7 @@ For more information, see [Asynchronous Agents](../../../parallel/concrt/asynchr
 
 **Header:** concrt.h
 
-## <a name="agents_eventtype"></a>  Agents_EventType Enumeration
+## <a name="agents_eventtype"></a> Agents_EventType Enumeration
 
 The types of events that can be traced using the tracing functionality offered by the Agents Library
 
@@ -65,7 +65,7 @@ enum Agents_EventType;
 
 **Header:** concrt.h
 
-## <a name="concrt_eventtype"></a>  ConcRT_EventType Enumeration
+## <a name="concrt_eventtype"></a> ConcRT_EventType Enumeration
 
 The types of events that can be traced using the tracing functionality offered by the Concurrency Runtime.
 
@@ -92,7 +92,7 @@ enum ConcRT_EventType;
 **Header:** concrt.h
 **Namespace:** concurrency
 
-## <a name="concrt_traceflags"></a>  Concrt_TraceFlags Enumeration
+## <a name="concrt_traceflags"></a> Concrt_TraceFlags Enumeration
 
 Trace flags for the event types
 
@@ -116,7 +116,7 @@ enum Concrt_TraceFlags;
 
 **Header:** concrt.h
 
-## <a name="criticalregiontype"></a>  CriticalRegionType Enumeration
+## <a name="criticalregiontype"></a> CriticalRegionType Enumeration
 
 The type of critical region a context is inside.
 
@@ -136,7 +136,7 @@ enum CriticalRegionType;
 
 **Header:** concrtrm.h
 
-## <a name="dynamicprogressfeedbacktype"></a>  DynamicProgressFeedbackType Enumeration
+## <a name="dynamicprogressfeedbacktype"></a> DynamicProgressFeedbackType Enumeration
 
 Used by the `DynamicProgressFeedback` policy to describe whether resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on virtual processors going in and out of the idle state through calls to the `Activate` and `Deactivate` methods on the `IVirtualProcessorRoot` interface. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md).
 
@@ -151,7 +151,7 @@ enum DynamicProgressFeedbackType;
 |`ProgressFeedbackDisabled`|The scheduler does not gather progress information. Rebalancing is done based solely on the subscription level of the underlying hardware thread. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](IExecutionResource-structure.md).<br /><br /> This value is reserved for use by the runtime.|
 |`ProgressFeedbackEnabled`|The scheduler gathers progress information and passes it to the resource manager. The resource manager will utilize this statistical information to rebalance resources on behalf of the scheduler in addition to the subscription level of the underlying hardware thread. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](IExecutionResource-structure.md).|
 
-## <a name="join_type"></a>  join_type Enumeration
+## <a name="join_type"></a> join_type Enumeration
 
 The type of a `join` messaging block.
 
@@ -170,7 +170,7 @@ enum join_type;
 
 **Header:** agents.h
 
-## <a name="message_status"></a>  message_status Enumeration
+## <a name="message_status"></a> message_status Enumeration
 
 The valid responses for an offer of a `message` object to a block.
 
@@ -191,7 +191,7 @@ enum message_status;
 
 **Header:** agents.h
 
-## <a name="policyelementkey"></a>  PolicyElementKey Enumeration
+## <a name="policyelementkey"></a> PolicyElementKey Enumeration
 
 Policy keys describing aspects of scheduler behavior. Each policy element is described by a key-value pair. For more information about scheduler policies and their impact on schedulers, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
@@ -219,7 +219,7 @@ enum PolicyElementKey;
 
 **Header:** concrt.h
 
-## <a name="schedulertype"></a>  SchedulerType Enumeration
+## <a name="schedulertype"></a> SchedulerType Enumeration
 
 Used by the `SchedulerKind` policy to describe the type of threads that the scheduler should utilize for underlying execution contexts. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md).
 
@@ -238,7 +238,7 @@ enum SchedulerType;
 
 **Header:** concrt.h
 
-## <a name="schedulingprotocoltype"></a>  SchedulingProtocolType Enumeration
+## <a name="schedulingprotocoltype"></a> SchedulingProtocolType Enumeration
 
 Used by the `SchedulingProtocol` policy to describe which scheduling algorithm will be utilized for the scheduler. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md).
 
@@ -257,7 +257,7 @@ enum SchedulingProtocolType;
 
 **Header:** concrt.h
 
-## <a name="switchingproxystate"></a>  SwitchingProxyState Enumeration
+## <a name="switchingproxystate"></a> SwitchingProxyState Enumeration
 
 Used to denote the state a thread proxy is in, when it is executing a cooperative context switch to a different thread proxy.
 
@@ -279,7 +279,7 @@ A parameter of type `SwitchingProxyState` is passed in to the method `IThreadPro
 
 For more information on how this type is used, see [IThreadProxy::SwitchTo](ithreadproxy-structure.md#switchto).
 
-## <a name="task_group_status"></a>  task_group_status Enumeration
+## <a name="task_group_status"></a> task_group_status Enumeration
 
 Describes the execution status of a `task_group` or `structured_task_group` object. A value of this type is returned by numerous methods that wait on tasks scheduled to a task group to complete.
 
@@ -299,7 +299,7 @@ enum task_group_status;
 
 **Header:** pplinterface.h
 
-## <a name="winrtinitializationtype"></a>  WinRTInitializationType Enumeration
+## <a name="winrtinitializationtype"></a> WinRTInitializationType Enumeration
 
 Used by the `WinRTInitialization` policy to describe whether and how the Windows Runtime will be initialized on scheduler threads for an application which runs on operating systems with version Windows 8 or higher. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md).
 

@@ -12,7 +12,7 @@ ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
 |[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|[operator&lt;=](#op_lt_eq)|
 |[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Not equal comparison for various objects.
 
@@ -131,7 +131,7 @@ sub != "aab" == true
 sub != 'a' == true
 ```
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> operator&lt;
 
 Less than comparison for various objects.
 
@@ -241,7 +241,7 @@ sub < "aab" == true
 sub < 'a' == false
 ```
 
-## <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a> operator&lt;&lt;
 
 Inserts a sub_match in a stream.
 
@@ -301,7 +301,7 @@ int main()
 whole match: caaa
 ```
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> operator&lt;=
 
 Less than or equal comparison for various objects.
 
@@ -411,7 +411,7 @@ sub <= "aab" == true
 sub <= 'a' == false
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Equal comparison for various objects.
 
@@ -538,7 +538,7 @@ sub == "aab" == false
 sub == 'a' == false
 ```
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> operator&gt;
 
 Greater than comparison for various objects.
 
@@ -648,7 +648,7 @@ sub > "aab" == false
 sub > 'a' == true
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> operator&gt;=
 
 Greater than or equal comparison for various objects.
 

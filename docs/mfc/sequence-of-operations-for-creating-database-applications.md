@@ -9,7 +9,7 @@ ms.assetid: 9371da59-8536-43cd-8314-706ad320e2ec
 The following table shows your role and the framework's role in writing database applications.
 
 > [!NOTE]
->  The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use ODBC for new MFC projects. You should only use DAO in maintaining existing applications.
+> The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use ODBC for new MFC projects. You should only use DAO in maintaining existing applications.
 
 ### Creating Database Applications
 

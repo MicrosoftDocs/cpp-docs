@@ -1,7 +1,7 @@
 ---
 title: "/ALLOWISOLATION"
 ms.date: "11/04/2016"
-f1_keywords: ["/ALLOWISOLATION"]
+f1_keywords: ["/ALLOWISOLATION_EDITBIN"]
 helpviewer_keywords: ["-ALLOWISOLATION editbin option", "/ALLOWISOLATION editbin option", "ALLOWISOLATION editbin option"]
 ms.assetid: 91430344-f64f-491a-a5a5-7ea3b21cbe68
 ---

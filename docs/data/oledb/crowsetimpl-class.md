@@ -1,7 +1,7 @@
 ---
 title: "CRowsetImpl Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl", "CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID", "CRowsetImpl.SetCommandText", "CRowsetImpl::SetCommandText", "GetColumnInfo", "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo", "CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID", "CRowsetImpl.ValidateCommandID", "CRowsetImpl::ValidateCommandID", "CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData", "CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText", "CRowsetImpl::m_strIndexText", "CRowsetImpl.m_strIndexText"]
+f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl", "CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID", "CRowsetImpl.SetCommandText", "CRowsetImpl::SetCommandText", "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo", "CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID", "CRowsetImpl.ValidateCommandID", "CRowsetImpl::ValidateCommandID", "CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData", "CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText", "CRowsetImpl::m_strIndexText", "CRowsetImpl.m_strIndexText"]
 helpviewer_keywords: ["CRowsetImpl class", "NameFromDBID method", "SetCommandText method", "GetColumnInfo method", "GetCommandFromID method", "ValidateCommandID method", "m_rgRowData", "m_strCommandText", "m_strIndexText"]
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
 ---
@@ -20,7 +20,7 @@ template <
    class RowClass = CSimpleRow,
    class RowsetInterface = IRowsetImpl <T, IRowset>
 >
-class CRowsetImpl : 
+class CRowsetImpl :
    public CComObjectRootEx<CreatorClass::_ThreadModel>,
    public CRowsetBaseImpl<T, Storage, ArrayType, RowsetInterface>,
    public IRowsetInfoImpl<T, CreatorClass::_PropClass>

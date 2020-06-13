@@ -1,7 +1,7 @@
 ---
 title: "/SECTION (EDITBIN)"
 ms.date: "11/04/2016"
-f1_keywords: ["/section"]
+f1_keywords: ["/section_editbin"]
 helpviewer_keywords: ["-SECTION editbin option", "SECTION editbin option", "alignment characters in sections", "/SECTION editbin option"]
 ms.assetid: 4680ab4e-c984-4251-8241-93440cad7615
 ---

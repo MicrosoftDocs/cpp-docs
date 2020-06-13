@@ -35,7 +35,7 @@ The namespace `regex_constants` encapsulates several flag types and their associ
 
 **Namespace:** std
 
-## <a name="error_type"></a>  regex_constants::error_type
+## <a name="error_type"></a> regex_constants::error_type
 
 Flags for reporting regular expression syntax errors.
 
@@ -96,7 +96,7 @@ The type is an enumerated type that describes an object that can hold error flag
 
 `error_backref` -- the expression contained an invalid back reference
 
-## <a name="match_flag_type"></a>  regex_constants::match_flag_type
+## <a name="match_flag_type"></a> regex_constants::match_flag_type
 
 Flags for regular expression matching options.
 
@@ -154,7 +154,7 @@ The format flags are:
 
 `format_first_only` -- do not search for matches after the first one
 
-## <a name="syntax_option_type"></a>  regex_constants::syntax_option_type
+## <a name="syntax_option_type"></a> regex_constants::syntax_option_type
 
 Flags for selecting syntax options.
 

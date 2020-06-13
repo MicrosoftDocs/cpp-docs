@@ -180,7 +180,7 @@ next submatch: matched == false
 empty == false
 ```
 
-## <a name="allocator_type"></a>  match_results::allocator_type
+## <a name="allocator_type"></a> match_results::allocator_type
 
 The type of an allocator for managing storage.
 
@@ -192,7 +192,7 @@ typedef Alloc allocator_type;
 
 The typedef is a synonym for the template argument *Alloc*.
 
-## <a name="begin"></a>  match_results::begin
+## <a name="begin"></a> match_results::begin
 
 Designates beginning of submatch sequence.
 
@@ -204,7 +204,7 @@ const_iterator begin() const;
 
 The member function returns a random access iterator that points at the first element of the sequence (or just beyond the end of an empty sequence).
 
-## <a name="char_type"></a>  match_results::char_type
+## <a name="char_type"></a> match_results::char_type
 
 The type of an element.
 
@@ -216,7 +216,7 @@ typedef typename iterator_traits<BidIt>::value_type char_type;
 
 The typedef is a synonym for the type `iterator_traits<BidIt>::value_type`, which is the element type of the character sequence that was searched.
 
-## <a name="const_iterator"></a>  match_results::const_iterator
+## <a name="const_iterator"></a> match_results::const_iterator
 
 The const iterator type for submatches.
 
@@ -228,7 +228,7 @@ typedef T0 const_iterator;
 
 The typedef describes an object that can serve as a constant random-access iterator for the controlled sequence.
 
-## <a name="const_reference"></a>  match_results::const_reference
+## <a name="const_reference"></a> match_results::const_reference
 
 The type of an element const reference.
 
@@ -240,7 +240,7 @@ typedef const typename Alloc::const_reference const_reference;
 
 The typedef describes an object that can serve as a constant reference to an element of the controlled sequence.
 
-## <a name="difference_type"></a>  match_results::difference_type
+## <a name="difference_type"></a> match_results::difference_type
 
 The type of an iterator difference.
 
@@ -252,7 +252,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 
 The typedef is a synonym for the type `iterator_traits<BidIt>::difference_type`; it describes an object that can represent the difference between any two iterators that point at elements of the controlled sequence.
 
-## <a name="empty"></a>  match_results::empty
+## <a name="empty"></a> match_results::empty
 
 Tests for no submatches.
 
@@ -264,7 +264,7 @@ bool empty() const;
 
 The member function returns true only if the regular expression search failed.
 
-## <a name="end"></a>  match_results::end
+## <a name="end"></a> match_results::end
 
 Designates end of submatch sequence.
 
@@ -276,7 +276,7 @@ const_iterator end() const;
 
 The member function returns an iterator that points just beyond the end of the sequence.
 
-## <a name="format"></a>  match_results::format
+## <a name="format"></a> match_results::format
 
 Formats submatches.
 
@@ -308,7 +308,7 @@ Each member function generates formatted text under the control of the format *f
 
 To generate formatted text. literal text in the format string is ordinarily copied to the target sequence. Each escape sequence in the format string is replaced by the text that it represents. The details of the copying and replacement are controlled by the format flags passed to the function.
 
-## <a name="get_allocator"></a>  match_results::get_allocator
+## <a name="get_allocator"></a> match_results::get_allocator
 
 Returns the stored allocator.
 
@@ -320,7 +320,7 @@ allocator_type get_allocator() const;
 
 The member function returns a copy of the allocator object used by `*this` to allocate its `sub_match` objects.
 
-## <a name="iterator"></a>  match_results::iterator
+## <a name="iterator"></a> match_results::iterator
 
 The iterator type for submatches.
 
@@ -332,7 +332,7 @@ typedef const_iterator iterator;
 
 The type describes an object that can serve as a random-access iterator for the controlled sequence.
 
-## <a name="length"></a>  match_results::length
+## <a name="length"></a> match_results::length
 
 Returns length of a submatch.
 
@@ -349,7 +349,7 @@ The index of the submatch.
 
 The member function returns `(*this)[sub].length()`.
 
-## <a name="match_results"></a>  match_results::match_results
+## <a name="match_results"></a> match_results::match_results
 
 Constructs the object.
 
@@ -371,7 +371,7 @@ The match_results object to copy.
 
 The first constructor constructs a `match_results` object that holds no submatches. The second constructor constructs a `match_results` object that is a copy of *right*.
 
-## <a name="max_size"></a>  match_results::max_size
+## <a name="max_size"></a> match_results::max_size
 
 Gets largest number of submatches.
 
@@ -383,7 +383,7 @@ size_type max_size() const;
 
 The member function returns the length of the longest sequence that the object can control.
 
-## <a name="op_eq"></a>  match_results::operator=
+## <a name="op_eq"></a> match_results::operator=
 
 Copy a match_results object.
 
@@ -400,7 +400,7 @@ The match_results object to copy.
 
 The member operator replaces the sequence controlled by `*this` with a copy of the sequence controlled by *right*.
 
-## <a name="op_at"></a>  match_results::operator[]
+## <a name="op_at"></a> match_results::operator[]
 
 Access a subobject.
 
@@ -417,7 +417,7 @@ Index of the submatch.
 
 The member function returns a reference to element *n* of the controlled sequence, or a reference to an empty `sub_match` object if `size() <= n` or if capture group *n* was not part of the match.
 
-## <a name="position"></a>  match_results::position
+## <a name="position"></a> match_results::position
 
 Get starting offset of a subgroup.
 
@@ -434,7 +434,7 @@ Index of the submatch.
 
 The member function returns `std::distance(prefix().first, (*this)[sub].first)`, that is, the distance from the first character in the target sequence to the first character in the submatch pointed to by element `n` of the controlled sequence.
 
-## <a name="prefix"></a>  match_results::prefix
+## <a name="prefix"></a> match_results::prefix
 
 Gets sequence before first submatch.
 
@@ -446,7 +446,7 @@ const_reference prefix() const;
 
 The member function returns a reference to an object of type `sub_match<BidIt>` that points to the character sequence that begins at the start of the target sequence and ends at `(*this)[0].first`, that is, it points to the text that precedes the matched subsequence.
 
-## <a name="reference"></a>  match_results::reference
+## <a name="reference"></a> match_results::reference
 
 The type of an element reference.
 
@@ -458,7 +458,7 @@ typedef const_reference reference;
 
 The type is a synonym for the type `const_reference`.
 
-## <a name="size"></a>  match_results::size
+## <a name="size"></a> match_results::size
 
 Counts number of submatches.
 
@@ -470,7 +470,7 @@ size_type size() const;
 
 The member function returns one more than the number of capture groups in the regular expression that was used for the search, or zero if no search has been made.
 
-## <a name="size_type"></a>  match_results::size_type
+## <a name="size_type"></a> match_results::size_type
 
 The type of a submatch count.
 
@@ -482,7 +482,7 @@ typedef typename Alloc::size_type size_type;
 
 The type is a synonym for the type `Alloc::size_type`.
 
-## <a name="str"></a>  match_results::str
+## <a name="str"></a> match_results::str
 
 Returns a submatch.
 
@@ -499,7 +499,7 @@ Index of the submatch.
 
 The member function returns `string_type((*this)[sub])`.
 
-## <a name="string_type"></a>  match_results::string_type
+## <a name="string_type"></a> match_results::string_type
 
 The type of a string.
 
@@ -511,7 +511,7 @@ typedef basic_string<char_type> string_type;
 
 The type is a synonym for the type `basic_string<char_type>`.
 
-## <a name="suffix"></a>  match_results::suffix
+## <a name="suffix"></a> match_results::suffix
 
 Gets sequence after last submatch.
 
@@ -523,7 +523,7 @@ const_reference suffix() const;
 
 The member function returns a reference to an object of type `sub_match<BidIt>` that points to the character sequence that begins at `(*this)[size() - 1].second` and ends at the end of the target sequence, that is, it points to the text that follows the matched subsequence.
 
-## <a name="swap"></a>  match_results::swap
+## <a name="swap"></a> match_results::swap
 
 Swaps two match_results objects.
 
@@ -540,7 +540,7 @@ The match_results object to swap with.
 
 The member function swaps the contents of `*this` and *right* in constant time and does not throw exceptions.
 
-## <a name="value_type"></a>  match_results::value_type
+## <a name="value_type"></a> match_results::value_type
 
 The type of a submatch.
 

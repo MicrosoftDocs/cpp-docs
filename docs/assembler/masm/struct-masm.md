@@ -11,13 +11,13 @@ Declares a structure type having the specified *field-declarations*. Each field 
 
 ## Syntax
 
-> *name* **STRUCT** ⟦*alignment*⟧ ⟦__,__ **NONUNIQUE**⟧
+> *name* **STRUCT** ⟦*alignment*⟧ ⟦__,__ **NONUNIQUE**⟧\
 > *field-declarations*\
 > *name* **ENDS**
 
 ## Remarks
 
-The *name* argument must be the same in the opening and closing statement. 
+The *name* argument must be the same in the opening and closing statement.
 
 ## See also
 

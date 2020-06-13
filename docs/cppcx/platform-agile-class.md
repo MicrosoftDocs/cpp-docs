@@ -69,7 +69,7 @@ The `Agile<T>` class is a native, standard C++ class and requires `agile.h`. It 
 
 **Header:** agile.h
 
-## <a name="ctor"></a>  Agile::Agile Constructor
+## <a name="ctor"></a> Agile::Agile Constructor
 
 Initializes a new instance of the Agile class.
 
@@ -94,7 +94,7 @@ In the second version of this constructor, an object used to initialize a new Ag
 
 The first version of this constructor is the default constructor. The second version initializes new Agile instance class from the object specified by the `object` parameter. The third version is the copy constructor. The fourth version is the move constructor. This constructor cannot throw exceptions.
 
-## <a name="dtor"></a>  Agile::~Agile Destructor
+## <a name="dtor"></a> Agile::~Agile Destructor
 
 Destroys the current instance of the Agile class.
 
@@ -108,7 +108,7 @@ Destroys the current instance of the Agile class.
 
 This destructor also releases the object represented by the current Agile object.
 
-## <a name="get"></a>   Agile::Get Method
+## <a name="get"></a> Agile::Get Method
 
 Returns a handle to the object that is represented by the current Agile object.
 
@@ -124,7 +124,7 @@ A handle to the object that is represented by the current Agile object.
 
 The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.
 
-## <a name="getaddressof"></a>  Agile::GetAddressOf Method
+## <a name="getaddressof"></a> Agile::GetAddressOf Method
 
 Reinitializes the current Agile object, and then returns the address of a handle to an object of type `T`.
 
@@ -147,7 +147,7 @@ The address of a handle to an object of type `T`.
 
 This operation releases the current representation of a object of type `T`, if any; reinitializes the Agile object's data members; acquires the current threading context; and then returns the address of a handle-to-object variable that can represent a non-agile object. To cause an Agile class instance to represent an object, use the assignment operator ([Agile::operator=](#operator-assign)) to assign the object to the Agile class instance.
 
-## <a name="getaddressofforinout"></a>  Agile::GetAddressOfForInOut Method
+## <a name="getaddressofforinout"></a> Agile::GetAddressOfForInOut Method
 
 Returns the address of a handle to the object represented by the current Agile object.
 
@@ -170,7 +170,7 @@ The address of a handle to the object represented by the current Agile object.
 
 This operation acquires the current threading context and then returns the address of a handle to the underlying the object.
 
-## <a name="release"></a>  Agile::Release Method
+## <a name="release"></a> Agile::Release Method
 
 Discards the current Agile object's underlying object and context.
 
@@ -184,7 +184,7 @@ void Release() throw();
 
 The current Agile object's underlying object and context are discarded, if they exist, and then the value of the Agile object is set to null.
 
-## <a name="operator-arrow"></a>  Agile::operator-&gt; Operator
+## <a name="operator-arrow"></a> Agile::operator-&gt; Operator
 
 Retrieves a handle to the object represented by the current Agile object.
 
@@ -200,7 +200,7 @@ A handle to the object represented by the current Agile object.
 
 This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword.
 
-## <a name="operator-assign"></a>  Agile::operator= Operator
+## <a name="operator-assign"></a> Agile::operator= Operator
 
 Assigns the specified object to the current Agile object.
 

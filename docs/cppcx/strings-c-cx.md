@@ -51,7 +51,7 @@ Note that `StringReference` is a standard C++ class type, not a ref class, you c
 
 The following example shows how to use StringReference:
 
-```
+```cpp
 void GetDecodedStrings(std::vector<std::wstring> strings)
 {
     using namespace Windows::Security::Cryptography;

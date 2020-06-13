@@ -57,7 +57,7 @@ The interface to a delegate that represents an event handler.
 
 **Namespace:** Microsoft::WRL
 
-## <a name="add"></a>EventSource::Add
+## <a name="add"></a> EventSource::Add
 
 Appends the event handler represented by the specified delegate interface to the set of event handlers for the current `EventSource` object.
 
@@ -80,7 +80,7 @@ When this operation completes, a handle that represents the event. Use this toke
 
 S_OK if successful; otherwise, an HRESULT that indicates the error.
 
-## <a name="addremovelock"></a>EventSource::addRemoveLock_
+## <a name="addremovelock"></a> EventSource::addRemoveLock_
 
 Synchronizes access to the [targets_](#targets) array when adding, removing, or invoking event handlers.
 
@@ -88,7 +88,7 @@ Synchronizes access to the [targets_](#targets) array when adding, removing, or 
 Wrappers::SRWLock addRemoveLock_;
 ```
 
-## <a name="eventsource"></a>EventSource::EventSource
+## <a name="eventsource"></a> EventSource::EventSource
 
 Initializes a new instance of the `EventSource` class.
 
@@ -96,7 +96,7 @@ Initializes a new instance of the `EventSource` class.
 EventSource();
 ```
 
-## <a name="getsize"></a>EventSource::GetSize
+## <a name="getsize"></a> EventSource::GetSize
 
 Retrieves the number of event handlers associated with the current `EventSource` object.
 
@@ -108,7 +108,7 @@ size_t GetSize() const;
 
 The number of event handlers in [targets_](#targets).
 
-## <a name="invokeall"></a>EventSource::InvokeAll
+## <a name="invokeall"></a> EventSource::InvokeAll
 
 Calls each event handler associated with the current `EventSource` object using the specified argument types and arguments.
 
@@ -328,7 +328,7 @@ The eighth event handler argument.
 *arg9*<br/>
 The ninth event handler argument.
 
-## <a name="remove"></a>EventSource::Remove
+## <a name="remove"></a> EventSource::Remove
 
 Deletes the event handler represented by the specified event registration token from the set of event handlers associated with the current `EventSource` object.
 
@@ -351,7 +351,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 For more information about the `EventRegistrationToken` structure, see the **Windows::Foundation::EventRegistrationToken Structure** topic in the **Windows Runtime** reference documentation.
 
-## <a name="targets"></a>EventSource::targets_
+## <a name="targets"></a> EventSource::targets_
 
 An array of one or more event handlers.
 
@@ -363,7 +363,7 @@ ComPtr<Details::EventTargetArray> targets_;
 
 When the event that is represented by the current `EventSource` object occurs, the event handlers are called.
 
-## <a name="targetspointerlock"></a>EventSource::targetsPointerLock_
+## <a name="targetspointerlock"></a> EventSource::targetsPointerLock_
 
 Synchronizes access to internal data members even while event handlers for this `EventSource` are being added, removed, or invoked.
 

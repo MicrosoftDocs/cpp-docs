@@ -46,7 +46,7 @@ The **Binary Editor** enables you:
 1. In the **Open With** dialog box, choose **Binary Editor**.
 
 > [!NOTE]
-> You can use the [Image Editor](../windows/image-editor-for-icons.md) and the **Binary Editor** to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.
+> You can use the [Image Editor](image-editor-for-icons.md) and the **Binary Editor** to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.
 
 ### To edit a resource
 
@@ -77,7 +77,7 @@ You can search for either ASCII strings or hexadecimal bytes. For example, to fi
 
 You can create a new custom or data resource by placing the resource in a separate file using normal resource script (.rc) file syntax, and then including that file by right-clicking your project in **Solution Explorer** and selecting **Resource Includes**.
 
-1. [Create a .rc file](../windows/how-to-create-a-resource-script-file.md) that contains the custom or data resource.
+1. [Create a .rc file](how-to-create-a-resource-script-file.md) that contains the custom or data resource.
 
    You can type custom data in a .rc file as null-terminated quoted strings, or as integers in decimal, hexadecimal, or octal format.
 
@@ -104,4 +104,4 @@ None
 
 ## See also
 
-[Resource Editors](../windows/resource-editors.md)
+[Resource Editors](resource-editors.md)

@@ -37,7 +37,7 @@ The view is a form view directly connected to a `CRowset` object. The view is cr
 You can use DDX functions with `COleDbRecordView` to get data directly from the database recordset and display it in a dialog control. You should use the `DDX_*` methods (such as `DDX_Text`), not the `DDX_Field*` functions (such as `DDX_FieldText`) with `COleDbRecordView`. `DDX_FieldText` will not work with `COleDbRecordView` because `DDX_FieldText` takes an additional argument of type `CRecordset*` (for `CRecordView`) or `CDaoRecordset*` (for `CDaoRecordView`).
 
 > [!NOTE]
->  If you are working with the Data Access Objects (DAO) classes rather than the OLE DB Consumer Template classes, use class [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) instead. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).
+> If you are working with the Data Access Objects (DAO) classes rather than the OLE DB Consumer Template classes, use class [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) instead. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).
 
 `COleDBRecordView` keeps track of the user's position in the rowset so that the record view can update the user interface. When the user moves to either end of the rowset, the record view disables user interface objects — such as menu items or toolbar buttons — for moving further in the same direction.
 
@@ -63,7 +63,7 @@ For more information about rowset classes, see the [Using OLE DB Consumer Templa
 
 **Header:** afxoledb.h
 
-##  <a name="coledbrecordview"></a>  COleDBRecordView::COleDBRecordView
+## <a name="coledbrecordview"></a> COleDBRecordView::COleDBRecordView
 
 Constructs a `COleDBRecordView` object.
 
@@ -85,9 +85,9 @@ Contains the ID number of a dialog-template resource.
 When you create an object of a type derived from `COleDBRecordView`, invoke one of the constructors to create the view object and identify the dialog resource on which the view is based. You can identify the resource either by name (pass a string as the argument to the constructor) or by its ID (pass an unsigned integer as the argument).
 
 > [!NOTE]
->  Your derived class *must* supply its own constructor. In the constructor, invoke the constructor, `COleDBRecordView::COleDBRecordView`, with the resource name or ID as an argument.
+> Your derived class *must* supply its own constructor. In the constructor, invoke the constructor, `COleDBRecordView::COleDBRecordView`, with the resource name or ID as an argument.
 
-##  <a name="ongetrowset"></a>  COleDBRecordView::OnGetRowset
+## <a name="ongetrowset"></a> COleDBRecordView::OnGetRowset
 
 Returns a handle for the **CRowset<>** object associated with the record view.
 
@@ -104,7 +104,7 @@ A standard HRESULT value.
 You must override this member function to construct or obtain a rowset object and return a handle to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the rowset handle stored in the record view if one exists. If not, it constructs a rowset object of the type you specified with ClassWizard and calls its `Open` member function to open the table or run the query, and then returns a handle to the object.
 
 > [!NOTE]
->  Previous to MFC 7.0, `OnGetRowset` returned a pointer to `CRowset`. If you have code that calls `OnGetRowset`, you need to change the return type to the templatized class **CRowset<>**.
+> Previous to MFC 7.0, `OnGetRowset` returned a pointer to `CRowset`. If you have code that calls `OnGetRowset`, you need to change the return type to the templatized class **CRowset<>**.
 
 ### Example
 
@@ -112,7 +112,7 @@ You must override this member function to construct or obtain a rowset object an
 
 For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).
 
-##  <a name="onmove"></a>  COleDBRecordView::OnMove
+## <a name="onmove"></a> COleDBRecordView::OnMove
 
 Moves to a different record in the rowset and display its fields in the controls of the record view.
 

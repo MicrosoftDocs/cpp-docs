@@ -5,7 +5,7 @@ ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 ---
 # Overview of Windows Programming in C++
 
-There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library and third-party C++ libraries can be used in any of them. 
+There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library and third-party C++ libraries can be used in any of them.
 
 This section discusses how to use Visual Studio and the MFC/ATL wrapper libraries to create Windows programs. For documentation on the Windows platform itself, see [Windows documentation](/windows/index).
 
@@ -90,6 +90,7 @@ Other platforms such as Xbox and Azure have their own SDKs that you may have to 
 Visual Studio includes a powerful debugger for native code, static analysis tools, graphics debugging tools, a full-featured code editor, support for unit tests, and many other tools and utilities. For more information, see [Get started developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio), and [Overview of C++ development in Visual Studio](../overview/overview-of-cpp-development.md).
 
 ## In this section
+
 |Title|Description|
 |-----------|-----------------|
 |[Walkthrough: Creating a Standard C++ Program](walkthrough-creating-a-standard-cpp-program-cpp.md)| Create a Windows console application.|

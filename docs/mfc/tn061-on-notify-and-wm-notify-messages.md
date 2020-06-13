@@ -64,7 +64,7 @@ Some notifications are common to all of the new Windows controls. These notifica
 |NM_KILLFOCUS|Control has lost input focus|
 |NM_OUTOFMEMORY|Control could not complete an operation because there was not enough memory available|
 
-##  <a name="_mfcnotes_on_notify.3a_.handling_wm_notify_messages_in_mfc_applications"></a> ON_NOTIFY: Handling WM_NOTIFY Messages in MFC Applications
+## <a name="_mfcnotes_on_notify.3a_.handling_wm_notify_messages_in_mfc_applications"></a> ON_NOTIFY: Handling WM_NOTIFY Messages in MFC Applications
 
 The function `CWnd::OnNotify` handles notification messages. Its default implementation checks the message map for notification handlers to call. In general, you do not override `OnNotify`. Instead, you provide a handler function and add a message-map entry for that handler to the message map of your owner window's class.
 
@@ -125,7 +125,7 @@ void CMessageReflectionDlg::OnKeydownList1(NMHDR* pNMHDR, LRESULT* pResult)
 
 Note that ClassWizard provides a pointer of the proper type automatically. You can access the notification structure through either *pNMHDR* or *pLVKeyDow*.
 
-##  <a name="_mfcnotes_on_notify_range"></a> ON_NOTIFY_RANGE
+## <a name="_mfcnotes_on_notify_range"></a> ON_NOTIFY_RANGE
 
 If you need to process the same WM_NOTIFY message for a set of controls, you can use ON_NOTIFY_RANGE rather than ON_NOTIFY. For instance, you may have a set of buttons for which you want to perform the same action for a certain notification message.
 
@@ -170,7 +170,7 @@ A pointer to the notification structure, as described above.
 *result*<br/>
 A pointer to the result code you'll set before you return.
 
-##  <a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a> ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE
+## <a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a> ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE
 
 If you want more than one object in the notification routing to handle a message, you can use ON_NOTIFY_EX (or ON_NOTIFY_EX_RANGE) rather than ON_NOTIFY (or ON_NOTIFY_RANGE). The only difference between the **EX** version and the regular version is that the member function called for the **EX** version returns a **BOOL** that indicates whether or not message processing should continue. Returning **FALSE** from this function allows you to process the same message in more than one object.
 

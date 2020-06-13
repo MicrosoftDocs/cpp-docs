@@ -61,7 +61,7 @@ k = ((++i)<(j))?(j):(++i);
 If `i` is greater than or equal to `j` or less than `j` by 1, it will be incremented twice.
 
 > [!NOTE]
->  C++ inline functions are preferable to macros in many cases because they eliminate side effects such as those described here, and allow the language to perform more complete type checking.
+> C++ inline functions are preferable to macros in many cases because they eliminate side effects such as those described here, and allow the language to perform more complete type checking.
 
 ## See also
 

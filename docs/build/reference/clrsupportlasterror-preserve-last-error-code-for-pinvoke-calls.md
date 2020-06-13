@@ -53,7 +53,7 @@ You can minimize the performance impact by linking with **/CLRSUPPORTLASTERROR:S
 |WSNMP32.DLL|WSOCK32.DLL|WTSAPI32.DLL|XOLEHLP.DLL|
 
 > [!NOTE]
->  Preserving the last error is not supported for unmanaged functions that are consumed by CLR code, in the same module.
+> Preserving the last error is not supported for unmanaged functions that are consumed by CLR code, in the same module.
 
 - For more information, see [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md).
 

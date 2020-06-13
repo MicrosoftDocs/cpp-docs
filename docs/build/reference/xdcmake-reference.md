@@ -18,7 +18,7 @@ xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc fil
 1. Click the **XML Document Comments** property page.
 
 > [!NOTE]
->  xdcmake.exe options at the command line differ from the options when xdcmake.exe is used in the development environment (property pages). For information on using xdcmake.exe in the development environment, see [XML Document Generator Tool Property Pages](xml-document-generator-tool-property-pages.md).
+> xdcmake.exe options at the command line differ from the options when xdcmake.exe is used in the development environment (property pages). For information on using xdcmake.exe in the development environment, see [XML Document Generator Tool Property Pages](xml-document-generator-tool-property-pages.md).
 
 ## Syntax
 
