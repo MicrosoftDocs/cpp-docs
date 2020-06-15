@@ -1,44 +1,49 @@
 ---
-title: "Function Call Operator: ()"
-ms.date: "11/04/2016"
+title: "Function-call operator: ()"
+ms.date: "06/11/2020"
 helpviewer_keywords: ["( ) function call operator", "function calls, C++ functions", "() function call operator", "postfix operators [C++]", "function calls, operator", "functions [C++], function-call operator", "function call operator ()"]
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
+no-loc: [ opt ]
 ---
 # Function Call Operator: ()
 
-A postfix-expression followed by the function-call operator, **( )**, specifies a function call.
+A function call is a kind of *`postfix-expression`*, formed by an expression that identifies a function followed by the function-call operator, **`()`**. An object can declare an `operator ()` function, which provides function call semantics for the object.
 
 ## Syntax
 
-```
-postfix-expression
-( [argument-expression-list ] )
-```
+> *`postfix-expression`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp;*`postfix-expression`* **`(`** *`argument-expression-list`* <sub>opt</sub> **`)`**
 
 ## Remarks
 
-The arguments to the function-call operator are zero or more expressions separated by commas — the actual arguments to the function.
+The arguments to the function-call operator come from an *`argument-expression-list`*, a comma-separated list of expressions. The values of these expressions are passed to the function as arguments. The *argument-expression-list* can be empty. Before C++ 17, the order of evaluation of the function expression and the argument expressions is unspecified and may occur in any order. In C++17 and later, the function expression is evaluated before any argument expressions or default arguments. The argument expressions are evaluated in an indeterminate sequence.
 
-The *postfix-expression* must evaluate to a function address (for example, a function identifier or the value of a function pointer), and *argument-expression-list* is a list of expressions (separated by commas) whose values (the arguments) are passed to the function. The *argument-expression-list* argument can be empty.
+The *`postfix-expression`* identifies the function to call. It must evaluate to a function address. It can take any of several forms:
 
-The *postfix-expression* must be of one of these types:
+- a function or function object name or pointer,
+- an lvalue expression that refers to a function or function object,
+- a member function accessor, either explicit or implied.
+
+The function specified by the *`postfix-expression`* may be an overloaded function. The usual rules for overload resolution determine the actual function to call.
+
+Some example declarations:
 
 - Function returning type `T`. An example declaration is
 
     ```cpp
-    T func( int i )
+    T func( int i );
     ```
 
 - Pointer to a function returning type `T`. An example declaration is
 
     ```cpp
-    T (*func)( int i )
+    T (*func)( int i );
     ```
 
 - Reference to a function returning type `T`. An example declaration is
 
     ```cpp
-    T (&func)(int i)
+    T (&func)(int i);
     ```
 
 - Pointer-to-member function dereference returning type `T`. Example function calls are
@@ -84,7 +89,7 @@ Welcome to C++
 
 ## Function call results
 
-A function call evaluates to an r-value unless the function is declared as a reference type. Functions with reference return type evaluate to l-values, and can be used on the left side of an assignment statement as follows:
+A function call evaluates to an rvalue unless the function is declared as a reference type. Functions with reference return types evaluate to lvalues. These functions can be used on the left side of an assignment statement, as seen here:
 
 ```cpp
 // expre_Function_Call_Results.cpp
@@ -118,7 +123,7 @@ int main()
 
 The preceding code defines a class called `Point`, which contains private data objects that represent *x* and *y* coordinates. These data objects must be modified and their values retrieved. This program is only one of several designs for such a class; use of the `GetX` and `SetX` or `GetY` and `SetY` functions is another possible design.
 
-Functions that return class types, pointers to class types, or references to class types can be used as the left operand to member-selection operators. Therefore, the following code is legal:
+Functions that return class types, pointers to class types, or references to class types can be used as the left operand to member-selection operators. The following code is legal:
 
 ```cpp
 // expre_Function_Results2.cpp
@@ -165,6 +170,6 @@ Functions can be called recursively. For more information about function declara
 
 ## See also
 
-[Postfix Expressions](../cpp/postfix-expressions.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Function Call](../c-language/function-call-c.md)
+[Postfix expressions](../cpp/postfix-expressions.md)<br/>
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Function call](../c-language/function-call-c.md)
