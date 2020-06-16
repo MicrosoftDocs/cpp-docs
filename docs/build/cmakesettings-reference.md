@@ -64,7 +64,7 @@ A `configuration` has these properties:
 
 Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate Visual Studio projects instead.
 
-To specify a Visual Studio generator in Visual Studio 2017, open the  from the main menu by choosing **CMake | Change CMake Settings**. Delete "Ninja" and type "V". This activates IntelliSense, which enables you to choose the generator you want.
+To specify a Visual Studio generator in Visual Studio 2017, open the settings editor from the main menu by choosing **CMake | Change CMake Settings**. Delete "Ninja" and type "V". This activates IntelliSense, which enables you to choose the generator you want.
 
 To specify a Visual Studio generator in Visual Studio 2019, right-click on the *CMakeLists.txt* file in **Solution Explorer** and choose **CMake Settings for project** > **Show Advanced Settings** > **CMake Generator**.
 
