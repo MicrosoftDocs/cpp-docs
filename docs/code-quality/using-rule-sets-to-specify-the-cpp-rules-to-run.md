@@ -104,7 +104,7 @@ The following example shows a basic rule set file that you can use as a starting
 ::: moniker-end
 
 ## Ruleset schema
-The ruleset schema describes the XML schema of a ruleset file. This is useful if you want to author your own rulesets programmatically. You can find the ruleset schema below.
+The ruleset schema below describes the XML schema you can use to author your own rulesets programmatically.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
