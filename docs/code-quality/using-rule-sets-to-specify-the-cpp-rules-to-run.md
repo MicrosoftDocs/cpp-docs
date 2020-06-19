@@ -104,7 +104,7 @@ The following example shows a basic rule set file that you can use as a starting
 ::: moniker-end
 
 ## Ruleset schema
-The ruleset schema below describes the XML schema you can use to author your own rulesets programmatically.
+The ruleset schema below describes the XML schema of a ruleset file. It is stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`. You can use it to author your own rulesets programmatically, and/or validate if your custom rulesets adhere to the right format. For more information, see [How to: Create an XML document based on an XSD schema](https://docs.microsoft.com/en-us/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -226,3 +226,19 @@ The ruleset schema below describes the XML schema you can use to author your own
 </xs:schema>
 
 ```
+For the meaning of each schema element, see below.
+
+- TLocalization: Localization information including name of the ruleset file, description of the ruleset file, name of the resource assembly containing the localized resource, and base name of the localized resource.
+- TRuleHintPaths: File paths used as hints to search for ruleset files.
+- TName: Name of the current ruleset file.
+- TDescription: Description of the current ruleset file.
+- TInclude: Path to an included ruleset with rule action.
+- TIncludeAll: Rule action for all rules.
+- TRule: Rule ID with rule action.
+- TRules: Collection of one or more rules.
+- TRuleSet: Ruleset file format consisting of localization information, rule hint paths, include all information, include information,  rules information, name, description, and tools version information.
+- TRuleAction: Enumeration describing a rule action such as an error, warning, info, hidden, or none.
+- TIncludeAction: Enumeration describing a rule action such as an error, warning, info, hidden, none, or default.
+- TIncludeAllAction: Enumeration describing a rule action such as an error, warning, info, or hidden.
+
+To see an example of a ruleset, see [To create a rule set in a text editor](using-rule-sets-to-specify-the-cpp-rules-to-run#to-create-a-rule-set-in-a-text-editor), or any of the default rulesets stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
