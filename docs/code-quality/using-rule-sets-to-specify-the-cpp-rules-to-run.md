@@ -102,3 +102,145 @@ The following example shows a basic rule set file that you can use as a starting
 ```
 
 ::: moniker-end
+
+## Ruleset schema
+
+The following ruleset schema describes the XML schema of a ruleset file. The ruleset schema is stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`. You can use it to author your own rulesets programmatically or to validate whether your custom rulesets adhere to the correct format. For more information, see [How to: Create an XML document based on an XSD schema](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+            Visual Studio Code Analysis Rule Set Schema Definition Language.
+            Copyright (c) Microsoft Corporation. All rights reserved.
+        </xs:documentation>
+  </xs:annotation>
+
+  <!-- Every time this file changes, be sure to change the Validate method for the corresponding object in the code -->
+
+  <xs:element name="RuleSet" type="TRuleSet">
+  </xs:element>
+
+  <xs:complexType name="TLocalization">
+    <xs:all>
+      <xs:element name="Name" type="TName" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Description" type="TDescription" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+    <xs:attribute name="ResourceAssembly" type="TNonEmptyString" use="required" />
+    <xs:attribute name="ResourceBaseName" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TRuleHintPaths">
+    <xs:sequence>
+      <xs:element name="Path" type="TNonEmptyString" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="TName">
+    <xs:attribute name="Resource" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TDescription">
+    <xs:attribute name="Resource" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TInclude">
+    <xs:attribute name="Path" type="TNonEmptyString" use="required" />
+    <xs:attribute name="Action" type="TIncludeAction" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TIncludeAll">
+    <xs:attribute name="Action" type="TIncludeAllAction" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TRule">
+    <xs:attribute name="Id" type="TNonEmptyString" use="required" />
+    <xs:attribute name="Action" type="TRuleAction" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TRules">
+    <xs:sequence>
+      <xs:element name="Rule" type="TRule" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="AnalyzerId" type="TNonEmptyString" use="required" />
+    <xs:attribute name="RuleNamespace" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TRuleSet">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:element name="Localization" type="TLocalization" minOccurs="0" maxOccurs="1" />
+      <xs:element name="RuleHintPaths" type="TRuleHintPaths" minOccurs="0" maxOccurs="1" />
+      <xs:element name="IncludeAll" type="TIncludeAll" minOccurs="0" maxOccurs="1" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Include" type="TInclude" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Rules" type="TRules" minOccurs="0" maxOccurs="unbounded">
+          <xs:unique name="UniqueRuleName">
+            <xs:selector xpath="Rule" />
+            <xs:field xpath="@Id" />
+          </xs:unique>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="Name" type="TNonEmptyString" use="required" />
+    <xs:attribute name="Description" type="xs:string" use="optional" />
+    <xs:attribute name="ToolsVersion" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:simpleType name="TRuleAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error"/>
+      <xs:enumeration value="Warning"/>
+      <xs:enumeration value="Info"/>
+      <xs:enumeration value="Hidden"/>
+      <xs:enumeration value="None"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TIncludeAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error"/>
+      <xs:enumeration value="Warning"/>
+      <xs:enumeration value="Info"/>
+      <xs:enumeration value="Hidden"/>
+      <xs:enumeration value="None"/>
+      <xs:enumeration value="Default"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TIncludeAllAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error"/>
+      <xs:enumeration value="Warning"/>
+      <xs:enumeration value="Info"/>
+      <xs:enumeration value="Hidden"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TNonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>
+
+```
+
+Schema element details:
+
+- TLocalization: Localization information including name of the ruleset file, description of the ruleset file, name of the resource assembly containing the localized resource, and base name of the localized resource.
+- TRuleHintPaths: File paths used as hints to search for ruleset files.
+- TName: Name of the current ruleset file.
+- TDescription: Description of the current ruleset file.
+- TInclude: Path to an included ruleset with rule action.
+- TIncludeAll: Rule action for all rules.
+- TRule: Rule ID with rule action.
+- TRules: Collection of one or more rules.
+- TRuleSet: Ruleset file format consisting of localization information, rule hint paths, include all information, include information,  rules information, name, description, and tools version information.
+- TRuleAction: Enumeration describing a rule action such as an error, warning, info, hidden, or none.
+- TIncludeAction: Enumeration describing a rule action such as an error, warning, info, hidden, none, or default.
+- TIncludeAllAction: Enumeration describing a rule action such as an error, warning, info, or hidden.
+
+To see an example of a ruleset, see [To create a rule set in a text editor](using-rule-sets-to-specify-the-cpp-rules-to-run#to-create-a-rule-set-in-a-text-editor), or any of the default rulesets stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
