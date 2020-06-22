@@ -1,6 +1,6 @@
 ---
 title: "Configure a C++ Linux project in Visual Studio"
-ms.date: "06/11/2019"
+ms.date: "06/22/2020"
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
 # Configure a Linux project
@@ -116,6 +116,10 @@ You can enable logging to help troubleshoot problems:
 ![Remote Logging](media/remote-logging-vs2019.png)
 
 ::: moniker-end
+
+## <a name="locale"></a> Linux target locale
+
+Visual Studio language settings are not propagated to Linux targets because Visual Studio doesn't manage or configure installed packages. Messages shown in the **Output** window, such as build errors, are shown using the language and locale of the Linux target. You'll need to configure your Linux targets for the desired locale.
 
 ## See also
 
