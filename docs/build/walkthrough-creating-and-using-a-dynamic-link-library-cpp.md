@@ -215,7 +215,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
    // Initialize a Fibonacci relation sequence
    // such that F(0) = a, F(1) = b.
    // This function must be called before any other function.
-   void fibonacci_init(
+   MATHLIBRARY_API void fibonacci_init(
        const unsigned long long a,
        const unsigned long long b)
    {
@@ -226,7 +226,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
 
    // Produce the next value in the sequence.
    // Returns true on success, false on overflow.
-   bool fibonacci_next()
+   MATHLIBRARY_API bool fibonacci_next()
    {
        // check to see if we'd overflow result or position
        if ((ULLONG_MAX - previous_ < current_) ||
@@ -247,13 +247,13 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
    }
 
    // Get the current value in the sequence.
-   unsigned long long fibonacci_current()
+   MATHLIBRARY_API unsigned long long fibonacci_current()
    {
        return current_;
    }
 
    // Get the current index position in the sequence.
-   unsigned fibonacci_index()
+   MATHLIBRARY_API unsigned fibonacci_index()
    {
        return index_;
    }
@@ -282,7 +282,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
    // Initialize a Fibonacci relation sequence
    // such that F(0) = a, F(1) = b.
    // This function must be called before any other function.
-   void fibonacci_init(
+   MATHLIBRARY_API void fibonacci_init(
        const unsigned long long a,
        const unsigned long long b)
    {
@@ -293,7 +293,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
 
    // Produce the next value in the sequence.
    // Returns true on success, false on overflow.
-   bool fibonacci_next()
+   MATHLIBRARY_API bool fibonacci_next()
    {
        // check to see if we'd overflow result or position
        if ((ULLONG_MAX - previous_ < current_) ||
@@ -314,13 +314,13 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
    }
 
    // Get the current value in the sequence.
-   unsigned long long fibonacci_current()
+   MATHLIBRARY_API unsigned long long fibonacci_current()
    {
        return current_;
    }
 
    // Get the current index position in the sequence.
-   unsigned fibonacci_index()
+   MATHLIBRARY_API unsigned fibonacci_index()
    {
        return index_;
    }
