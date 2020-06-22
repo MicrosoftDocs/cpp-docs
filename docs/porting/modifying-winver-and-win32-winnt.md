@@ -1,13 +1,13 @@
 ---
 title: "Update WINVER and _WIN32_WINNT"
 description: "When and how to update WINVER and _WIN32_WINNT macros in upgraded Visual Studio C++ projects."
-ms.date: "01/22/2020"
+ms.date: "06/19/2020"
 helpviewer_keywords: ["WINVER in an upgraded Visual Studio C++ project", "_WIN32_WINNT in an upgraded Visual Studio C++ project"]
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
 ---
 # Update WINVER and _WIN32_WINNT
 
-When you use the Windows SDK, you can specify which versions of Windows your code can run on. The preprocessor macros **WINVER** and **_WIN32_WINNT** specify the minimum operating system version your code supports. Visual Studio and the Microsoft C++ compiler support targeting Windows 7 SP1 and later. Older toolsets include support for Windows XP SP4, Windows Server 2003 SP4, Vista, and Windows Server 2008. Windows 95, Windows 98, Windows ME, Windows NT, and Windows 2000 are unsupported.
+When you use the Windows SDK, you can specify which versions of Windows your code can run on. The preprocessor macros **WINVER** and **_WIN32_WINNT** specify the minimum operating system version your code supports. Visual Studio and the Microsoft C++ compiler support targeting Windows 7 SP1 and later. Older toolsets include support for Windows XP SP2, Windows Server 2003 SP1, Vista, and Windows Server 2008. Windows 95, Windows 98, Windows ME, Windows NT, and Windows 2000 are unsupported.
 
 When you upgrade an older project, you may need to update your **WINVER** or **_WIN32_WINNT** macros. If they're assigned values for an unsupported version of Windows, you may see compilation errors related to these macros.
 
