@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a Linux CMake project in Visual Studio"
 description: "How to create, configure, edit, and compile a Linux CMake project in Visual Studio"
-ms.date: "05/03/2020"
+ms.date: "06/22/2020"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
 # Create and configure a Linux CMake project
@@ -114,7 +114,13 @@ After you select a target, CMake runs automatically on the Linux system to gener
 
 ![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 
+### Intellisense
+
 To provide IntelliSense support for headers on remote Linux systems, Visual Studio automatically copies them from the Linux machine to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
+
+### Locale
+
+For more information, see [Linux target locale](configure-a-linux-project.md#locale).
 
 ## <a name="debug_cmake_project"></a> Debug the CMake project
 
