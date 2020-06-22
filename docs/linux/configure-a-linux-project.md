@@ -117,6 +117,10 @@ You can enable logging to help troubleshoot problems:
 
 ::: moniker-end
 
+## <a name="locale"></a> Linux targets' locale
+
+Visual Studio does not manage nor configure the installed packages or the locale of the Linux targets, hence the Visual Studio language settings are not propagated to the Linux targets. All the messages (e.g. the build errors) shown on the Output window are expressed in the language and locale set in the Linux target. It is up to the user to configure the Linux targets with the desired locale.
+
 ## See also
 
 [Set compiler and build properties](../build/working-with-project-properties.md)<br/>
