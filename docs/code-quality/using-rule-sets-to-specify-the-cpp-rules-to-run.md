@@ -104,7 +104,8 @@ The following example shows a basic rule set file that you can use as a starting
 ::: moniker-end
 
 ## Ruleset schema
-The ruleset schema below describes the XML schema of a ruleset file. It is stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`. You can use it to author your own rulesets programmatically, and/or validate if your custom rulesets adhere to the right format. For more information, see [How to: Create an XML document based on an XSD schema](https://docs.microsoft.com/en-us/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
+
+The following ruleset schema describes the XML schema of a ruleset file. The ruleset schema is stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`. You can use it to author your own rulesets programmatically or to validate whether your custom rulesets adhere to the correct format. For more information, see [How to: Create an XML document based on an XSD schema](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -226,7 +227,8 @@ The ruleset schema below describes the XML schema of a ruleset file. It is store
 </xs:schema>
 
 ```
-For the meaning of each schema element, see below.
+
+Schema element details:
 
 - TLocalization: Localization information including name of the ruleset file, description of the ruleset file, name of the resource assembly containing the localized resource, and base name of the localized resource.
 - TRuleHintPaths: File paths used as hints to search for ruleset files.
