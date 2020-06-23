@@ -1,6 +1,6 @@
 ---
 title: "SafeInt Functions"
-ms.date: "10/22/2018"
+ms.date: "06/23/2020"
 ms.topic: "reference"
 f1_keywords: ["SafeInt functions", "SafeAdd", "SafeCast", "SafeDivide", "SafeEquals", "SafeGreaterThan", "SafeGreaterThanEquals", "SafeLessThan", "SafeLessThanEquals", "SafeModulus", "SafeMultiply", "SafeNotEquals", "SafeSubtract"]
 helpviewer_keywords: ["functions, SafeInt", "SafeAdd function", "SafeCast function", "SafeDivide function", "SafeEquals function", "SafeGreaterThan function", "SafeGreaterThanEquals function", "SafeLessThan function", "SafeLessThanEquals function", "SafeModulus function", "SafeMultiply function", "SafeNotEquals function", "SafeSubtract function"]
@@ -104,10 +104,10 @@ inline bool SafeDivide (
 ### Parameters
 
 *t*<br/>
-[in] The divisor. This must be of type T.
+[in] The dividend. This must be of type T.
 
 *u*<br/>
-[in] The dividend. This must be of type U.
+[in] The divisor. This must be of type U.
 
 *result*<br/>
 [out] The parameter where `SafeDivide` stores the result.

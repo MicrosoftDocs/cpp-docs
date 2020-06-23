@@ -1,6 +1,6 @@
 ---
 title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
-ms.date: "11/04/2016"
+ms.date: "06/23/2020"
 api_name: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -11,7 +11,7 @@ ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
 ---
 # sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 
-Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of **swprintf** and **_swprintf_l** do not take a *count* parameter.
+Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of **swprintf** and **_swprintf_l** take the size of the buffer as a parameter.
 
 ## Syntax
 
