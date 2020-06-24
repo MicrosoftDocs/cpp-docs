@@ -41,7 +41,7 @@ There are five categories of iterators. In order of increasing power, the catego
 
 - **Bidirectional**. A *bidirectional iterator* `X` can take the place of a forward iterator. You can, however, also decrement a bidirectional iterator, as in `--X`, `X--`, or `(V = *X--)`. You can access element members and compare bidirectional iterators in the same way as forward iterators.
 
-- **Random access**. A *random-access iterator* `X` can take the place of a bidirectional iterator. With a random access iterator, you can use the subscript operator `[]` to access elements. You can use the `+, `-`, `+=` and `-=` operators to move forward or backward a specified number of elements and to calculate the distance between iterators. You can compare bidirectional iterators by using `==`, `!=`, `<`, `>`, `<=`, and `>=`.
+- **Random access**. A *random-access iterator* `X` can take the place of a bidirectional iterator. With a random access iterator, you can use the subscript operator `[]` to access elements. You can use the `+`, `-`, `+=` and `-=` operators to move forward or backward a specified number of elements and to calculate the distance between iterators. You can compare bidirectional iterators by using `==`, `!=`, `<`, `>`, `<=`, and `>=`.
 
 All iterators can be assigned or copied. They're assumed to be lightweight objects and are often passed and returned by value, not by reference. Note also that none of the operations previously described can throw an exception when performed on a valid iterator.
 
