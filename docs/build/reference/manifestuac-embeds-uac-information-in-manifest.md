@@ -19,11 +19,14 @@ Specifies whether User Account Control (UAC) information is embedded in the prog
 
 ### Parameters
 
+**`NO`**<br/>
+The linker doesn't embed UAC information in the program manifest.
+
 *`level`*<br/>
 **`level=`** followed by one of **`'asInvoker'`**, **`'highestAvailable'`**, or **`'requireAdministrator'`**. Defaults to **`'asInvoker'`**. For more information, see the [Remarks](#remarks) section.
 
 *`uiAccess`*<br/>
-**`uiAccess='true'`** if you want the application to bypass user interface protection levels and drive input to higher-permission windows on the desktop; otherwise, **`uiAccess='false'`**. Defaults to **`uiAccess='false'`**. Set this argument to **true** only for user interface accessibility applications.
+**`uiAccess='true'`** if you want the application to bypass user interface protection levels and drive input to higher-permission windows on the desktop; otherwise, **`uiAccess='false'`**. Defaults to **`uiAccess='false'`**. Set this argument to **`uiAccess='true'`** only for user interface accessibility applications.
 
 *`fragment`*<br/>
 A string that contains the *`level`* and *`uiAccess`* values. May optionally be enclosed in double quotes. For more information, see the [Remarks](#remarks) section.
