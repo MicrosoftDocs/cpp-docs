@@ -3,7 +3,9 @@
     "DOCSMD006": false,
     "MD001": false,
     "MD013": false,
-    "MD024": false,
+    "MD024": {
+        "siblings_only": true
+    },
     "MD025": {
         "front_matter_title": ""
     },
