@@ -11,7 +11,7 @@ ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
 Extends the integer primitives to help prevent integer overflow and lets you compare different types of integers.
 
 > [!NOTE]
-> The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
+> The latest version of the SafeInt library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt). To use the SafeInt library, clone the repo and `#include "SafeInt.hpp"`
 
 ## Syntax
 
@@ -214,7 +214,10 @@ There are two options to customize the error policy. The first option is to set 
 
 ## Requirements
 
-**Header:** safeint.h
+**Header:** SafeInt.hpp
+> [!NOTE]
+> The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt). Clone the library and include SafeInt.hpp to use the SafeInt library.
+> Prefer this github repo to <safeint.h>. It is a modern version of <safeint.h> that includes a small number of bug fixes, uses modern features of C++ resulting in more efficient code, and is portable to any platform using gcc, clang, or Intel compilers.
 
 **Namespace:** msl::utilities
 
@@ -225,38 +228,46 @@ Constructs a `SafeInt` object.
 ```cpp
 SafeInt() throw
 
-SafeInt (
-   const T& i
-) throw ()
+SafeInt (const T& i) throw ()
 
-SafeInt (
-   bool b
-) throw ()
+SafeInt (bool b) throw ()
 
 template <typename U>
-SafeInt (
-   const SafeInt <U, E>& u
-)
+SafeInt (const SafeInt <U, E>& u)
 
 I template <typename U>
-SafeInt (
-   const U& i
-)
+SafeInt (const U& i)
 ```
 
 ### Parameters
 
-*i*<br/>
+`i`<br/>
 [in] The value for the new `SafeInt` object. This must be a parameter of type T or U, depending on the constructor.
 
-*b*<br/>
+`b`<br/>
 [in] The Boolean value for the new `SafeInt` object.
 
-*u*<br/>
+`u`<br/>
 [in] A `SafeInt` of type U. The new `SafeInt` object will have the same value as *u*, but will be of type T.
 
-U
+`U`
 The type of data stored in the `SafeInt`. This can be either a Boolean, character, or integer type. If it is an integer type, it can be signed or unsigned and be between 8 and 64 bits.
+
+### Example
+
+```c
+#include "SafeInt.hpp" // set path to your clone of the SafeInt GitHub repo (https://github.com/dcleblanc/SafeInt)
+
+int main()
+{
+    int divisor = 3;
+    int dividend = 6;
+    int result;
+
+    bool success = SafeDivide(dividend, divisor, result); // result = 2
+    success = SafeDivide(dividend, 0, result); // expect fail. result is not modified.
+}
+```
 
 ### Remarks
 

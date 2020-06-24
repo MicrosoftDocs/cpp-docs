@@ -61,7 +61,7 @@ virtual error_condition default_error_condition(int _Errval) const;
 
 ### Parameters
 
-*_Errval*\
+`_Errval`\
 The error code value to store in the [error_condition](../standard-library/error-condition-class.md).
 
 ### Return Value
@@ -124,7 +124,7 @@ The error code value to describe.
 
 #### Return Value
 
-Returns a descriptive name of the error code *val* for the category.
+Returns a descriptive name of the error code *val* for the category. If the error code is unrecognized, returns `"unknown error"`.
 
 #### Remarks
 

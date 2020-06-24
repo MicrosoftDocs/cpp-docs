@@ -1,6 +1,6 @@
 ---
 title: "vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l"
-ms.date: "11/04/2016"
+ms.date: "06/24/2020"
 api_name: ["_vsnprintf", "_vsnprintf_l", "_vsnwprintf", "_vsnwprintf_l", "_vsnprintf", "_vsnprintf;", "vsnprintf; _vsnprintf", "_vsnwprintf;", "_vsnprintf_l;", "_vsnwprintf_l;"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll"]
 api_type: ["DLLExport"]
@@ -112,9 +112,11 @@ The **vsnprintf** function returns the number of characters written, not countin
 
 Both **_vsnprintf** and **_vsnwprintf** functions return the number of characters written if the number of characters to write is less than or equal to *count*; if the number of characters to write is greater than *count*, these functions return -1 indicating that output has been truncated.
 
-The value returned by all these functions does not include the terminating null, whether one is written or not. When *count* is zero, the value returned is the number of characters the functions would write, not including any terminating null. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
+The value returned by all these functions does not include the terminating null, whether one is written or not.
 
-If *format* is **NULL**, or if *buffer* is **NULL** and *count* is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+- If *count* is zero and *buffer* is **NULL**, the value returned is the number of characters the functions would write, not including any terminating null. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
+- If *count* is zero but *buffer* is not **NULL**, nothing is written and the function returns `-1`.
+- If *format* is **NULL**, or if *buffer* is **NULL** and *count* is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 ## Remarks
 
