@@ -243,4 +243,4 @@ Schema element details:
 - TIncludeAction: Enumeration describing a rule action such as an error, warning, info, hidden, none, or default.
 - TIncludeAllAction: Enumeration describing a rule action such as an error, warning, info, or hidden.
 
-To see an example of a ruleset, see [To create a rule set in a text editor](using-rule-sets-to-specify-the-cpp-rules-to-run#to-create-a-rule-set-in-a-text-editor), or any of the default rulesets stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+To see an example of a ruleset, see [To create a rule set in a text editor](#to-create-a-rule-set-in-a-text-editor), or any of the default rulesets stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
