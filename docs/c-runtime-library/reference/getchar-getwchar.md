@@ -28,9 +28,9 @@ To indicate a read error or end-of-file condition, **getchar** returns **EOF**, 
 
 ## Remarks
 
-Each routine reads a single character from **stdin** and increments the associated file pointer to point to the next character. **getchar** is the same as [_fgetchar](fgetc-fgetwc.md), but it is implemented as a function and as a macro.
+Each routine reads a single character from **stdin** and increments the associated file pointer to point to the next character. **getchar** is the same as [_fgetchar](fgetc-fgetwc.md), but it's implemented as a function and as a macro.
 
-These functions also lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md).
+These functions also lock the calling thread and are thread-safe. For a non-locking version, see [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -47,7 +47,7 @@ By default, this function's global state is scoped to the application. To change
 |**getchar**|\<stdio.h>|
 |**getwchar**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
