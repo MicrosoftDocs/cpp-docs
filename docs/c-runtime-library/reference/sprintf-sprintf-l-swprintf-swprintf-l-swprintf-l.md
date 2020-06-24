@@ -1,6 +1,6 @@
 ---
 title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
-ms.date: "11/04/2016"
+ms.date: "06/23/2020"
 api_name: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -11,7 +11,7 @@ ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
 ---
 # sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 
-Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of **swprintf** and **_swprintf_l** do not take a *count* parameter.
+Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of **swprintf** and **_swprintf_l** take the size of the buffer as a parameter.
 
 ## Syntax
 
@@ -91,9 +91,9 @@ The number of characters written, or -1 if an error occurred. If *buffer* or *fo
 The **sprintf** function formats and stores a series of characters and values in *buffer*. Each *argument* (if any) is converted and output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
-> Using **sprintf**, there is no way to limit the number of characters written, which means that code using **sprintf** is susceptible to buffer overruns. Consider using the related function [_snprintf](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), which specifies a maximum number of characters to be written to *buffer*, or use [_scprintf](scprintf-scprintf-l-scwprintf-scwprintf-l.md) to determine how large a buffer is required. Also, ensure that *format* is not a user-defined string.
+> Using **sprintf**, there is no way to limit the number of characters written, which means that code using **sprintf** is susceptible to buffer overruns. Consider using the related function [_snprintf](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), which specifies a maximum number of characters to write to *buffer*, or use [_scprintf](scprintf-scprintf-l-scwprintf-scwprintf-l.md) to determine how large a buffer is required. Also, ensure that *format* is not a user-defined string.
 
-**swprintf** is a wide-character version of **sprintf**; the pointer arguments to **swprintf** are wide-character strings. Detection of encoding errors in **swprintf** may differ from that in **sprintf**. **swprintf** and **fwprintf** behave identically except that **swprintf** writes output to a string rather than to a destination of type **FILE**, and **swprintf** requires the *count* parameter to specify the maximum number of characters to be written. The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+**swprintf** is a wide-character version of **sprintf**; the pointer arguments to **swprintf** are wide-character strings. Detection of encoding errors in **swprintf** may differ from **sprintf**. **swprintf** and **fwprintf** behave identically except **swprintf** writes output to a string rather than to a destination of type **FILE**, and **swprintf** requires the *count* parameter to specify the maximum number of characters to write. The versions of these functions with the **_l** suffix are identical except they use the locale parameter passed in instead of the current thread locale.
 
 **swprintf** conforms to the ISO C Standard, which requires the second parameter, *count*, of type **size_t**. To force the old nonstandard behavior, define **_CRT_NON_CONFORMING_SWPRINTFS**. In a future version, the old behavior may be removed, so code should be changed to use the new conformant behavior.
 
