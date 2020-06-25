@@ -17,7 +17,7 @@ class CMultiDocTemplate : public CDocTemplate
 
 ## Members
 
-> [!Note] The member functions for this class are virtual. See [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) and [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) for documentation.
+> [!NOTE] The member functions for this class are virtual. See [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) and [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) for documentation.
 
 ### Public Constructors
 
