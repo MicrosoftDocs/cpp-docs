@@ -767,13 +767,13 @@ DWORD GetMDITabsContextMenuAllowedItems();
 
 A bitwise-OR combination of the following flags:
 
-- BCGP_MDI_CREATE_VERT_GROUP - can create a vertical tab group.
+- AFX_MDI_CREATE_VERT_GROUP - can create a vertical tab group.
 
-- BCGP_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.
+- AFX_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.
 
-- BCGP_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.
+- AFX_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.
 
-- BCGP_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.
+- AFX_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.
 
 ### Remarks
 
@@ -1058,7 +1058,7 @@ To load or save the state of MDI tabs and groups and the list of opened document
 
 - Call [CMDIFrameWndEx::SaveMDIState](#savemdistate) when the main frame is being closed
 
-- Call [CMDIFrameWndEx::LoadMDIState](#loadmdistate) when the main frame is being created. The recommended place for this call is before the main frame is displayed for the first time. Add `CWinAppEx::EnableLoadWindowPlacement` `(FALSE);` before `pMainFrame->LoadFrame (IDR_MAINFRAME);.` Add `CBCGPWorkspace::ReloadWindowPlacement` `(pMainFrame);` after the call to `LoadMDIState` to display the main frame at the position that was stored in the registry.
+- Call [CMDIFrameWndEx::LoadMDIState](#loadmdistate) when the main frame is being created. The recommended place for this call is before the main frame is displayed for the first time. Add `CWinAppEx::EnableLoadWindowPlacement` `(FALSE);` before `pMainFrame->LoadFrame (IDR_MAINFRAME);.` Add `CWinAppEx::ReloadWindowPlacement` `(pMainFrame);` after the call to `LoadMDIState` to display the main frame at the position that was stored in the registry.
 
 - Override `GetDocumentName` in the `CMDIChildWndEx`- derived class if your application displays documents that are not stored as files. The returned string will be saved in the registry as the document identifier. The base implementation of [CMDIChildWndEx::GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname) returns a value obtained from [CDocument::GetPathName](../../mfc/reference/cdocument-class.md#getpathname).
 
@@ -1440,22 +1440,22 @@ virtual BOOL OnShowMDITabContextMenu(
 *dwAllowedItems*<br/>
 [in] A bitwise-OR combination of flags that indicates what actions are allowed for the current tab:
 
-- BCGP_MDI_CREATE_VERT_GROUP - can create a vertical tab group.
+- AFX_MDI_CREATE_VERT_GROUP - can create a vertical tab group.
 
-- BCGP_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.
+- AFX_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.
 
-- BCGP_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.
+- AFX_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.
 
-- BCGP_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.
+- AFX_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.
 
-- BCGP_MDI_CAN_BE_DOCKED - switch a tabbed document to docked state (relevant for tabbed documents only).
+- AFX_MDI_CAN_BE_DOCKED - switch a tabbed document to docked state (relevant for tabbed documents only).
 
 *bTabDrop*<br/>
 [in] TRUE to display the menu as a result of dragging the tab onto another tabbed group. FALSE to display the menu as a shortcut menu on the currently active tab.
 
 ### Return Value
 
-Override this method in a [CBCGPMDIFrameWnd](../../mfc/reference/cmdiframewndex-class.md)-derived class.
+Override this method in a [CMDIFrameWndEx](../../mfc/reference/cmdiframewndex-class.md)-derived class.
 
 ### Remarks
 
