@@ -157,26 +157,26 @@ The `SafeInt` class protects against integer overflow in mathematical operations
 
 The `SafeInt` class checks whether an arithmetic overflow occurs or whether the code tries to divide by zero. In both cases, the class calls the error handler to warn the program of the potential problem.
 
-This class also lets you compare two different types of integers as long as they are `SafeInt` objects. Typically, when you perform a comparison, you must first convert the numbers to be the same type. Casting one number to another type often requires checks to make sure that there is no loss of data.
+This class also lets you compare two different types of integers as long as they are `SafeInt` objects. Typically, when you do a comparison, you must first convert the numbers to be the same type. Casting one number to another type often requires checks to make sure that there is no loss of data.
 
 The Operators table in this topic lists the mathematical and comparison operators supported by the `SafeInt` class. Most mathematical operators return a `SafeInt` object of type `T`.
 
 Comparison operations between a `SafeInt` and an integral type can be performed in either direction. For example, both `SafeInt<int>(x) < y` and `y> SafeInt<int>(x)` are valid and will return the same result.
 
-Many binary operators do not support using two different `SafeInt` types. One example of this is the `&` operator. `SafeInt<T, E> & int` is supported, but `SafeInt<T, E> & SafeInt<U, E>` is not. In the latter example, the compiler does not know what type of parameter to return. One solution to this problem is to cast the second parameter back to the base type. By using the same parameters, this can be done with `SafeInt<T, E> & (U)SafeInt<U, E>`.
+Many binary operators don't support using two different `SafeInt` types. One example of this is the `&` operator. `SafeInt<T, E> & int` is supported, but `SafeInt<T, E> & SafeInt<U, E>` isn't. In the latter example, the compiler does not know what type of parameter to return. One solution to this problem is to cast the second parameter back to the base type. By using the same parameters, this can be done with `SafeInt<T, E> & (U)SafeInt<U, E>`.
 
 > [!NOTE]
-> For any bitwise operations, the two different parameters should be the same size. If the sizes differ, the compiler will throw an [ASSERT](../mfc/reference/diagnostic-services.md#assert) exception. The results of this operation cannot be guaranteed to be accurate. To resolve this issue, cast the smaller parameter until it is the same size as the larger parameter.
+> For any bitwise operations, the two different parameters should be the same size. If the sizes differ, the compiler will throw an [ASSERT](../mfc/reference/diagnostic-services.md#assert) exception. The results of this operation can't be guaranteed to be accurate. To resolve this issue, cast the smaller parameter until it's the same size as the larger parameter.
 
 For the shift operators, shifting more bits than exist for the template type will throw an ASSERT exception. This will have no effect in release mode. Mixing two types of SafeInt parameters is possible for the shift operators because the return type is the same as the original type. The number on the right side of the operator only indicates the number of bits to shift.
 
-When you perform a logical comparison with a SafeInt object, the comparison is strictly arithmetic. For example, consider these expressions:
+When you do a logical comparison with a SafeInt object, the comparison is strictly arithmetic. For example, consider these expressions:
 
 - `SafeInt<uint>((uint)~0) > -1`
 
 - `((uint)~0) > -1`
 
-The first statement resolves to **true**, but the second statement resolves to `false`. The bitwise negation of 0 is 0xFFFFFFFF. In the second statement, the default comparison operator compares 0xFFFFFFFF to 0xFFFFFFFF and considers them to be equal. The comparison operator for the `SafeInt` class realizes that the second parameter is negative whereas the first parameter is unsigned. Therefore, although the bit representation is identical, the `SafeInt` logical operator realizes that the unsigned integer is larger than -1.
+The first statement resolves to **true**, but the second statement resolves to `false`. The bitwise negation of 0 is 0xFFFFFFFF. In the second statement, the default comparison operator compares 0xFFFFFFFF to 0xFFFFFFFF and considers them to be equal. The comparison operator for the `SafeInt` class realizes that the second parameter is negative but the first parameter is unsigned. So, although the bit representation is identical, the `SafeInt` logical operator realizes that the unsigned integer is larger than -1.
 
 Be careful when you use the `SafeInt` class together with the `?:` ternary operator. Consider the following line of code.
 
@@ -206,7 +206,7 @@ Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;
 There are two options to customize the error policy. The first option is to set the parameter `E` when you create a `SafeInt`. Use this option when you want to change the error handling policy for just one `SafeInt`. The other option is to define _SAFEINT_DEFAULT_ERROR_POLICY to be your customized error-handling class before you include the `SafeInt` library. Use this option when you want to change the default error handling policy for all instances of the `SafeInt` class in your code.
 
 > [!NOTE]
-> A customized class that handles errors from the SafeInt library should not return control to the code that called the error handler. After the error handler is called, the result of the `SafeInt` operation cannot be trusted.
+> A customized class that handles errors from the SafeInt library should not return control to the code that called the error handler. After the error handler is called, the result of the `SafeInt` operation can't be trusted.
 
 ## Inheritance Hierarchy
 
@@ -217,9 +217,25 @@ There are two options to customize the error policy. The first option is to set 
 **Header:** SafeInt.hpp
 > [!NOTE]
 > The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt). Clone the library and include SafeInt.hpp to use the SafeInt library.
-> Prefer this github repo to <safeint.h>. It is a modern version of <safeint.h> that includes a small number of bug fixes, uses modern features of C++ resulting in more efficient code, and is portable to any platform using gcc, clang, or Intel compilers.
+> Prefer this github repo to <safeint.h>. it's a modern version of <safeint.h> that includes a small number of bug fixes, uses modern features of C++ resulting in more efficient code, and is portable to any platform using gcc, clang, or Intel compilers.
 
-**Namespace:** msl::utilities
+### Example
+
+```c
+#include "SafeInt.hpp" // set path to your clone of the SafeInt GitHub repo (https://github.com/dcleblanc/SafeInt)
+
+int main()
+{
+    int divisor = 3;
+    int dividend = 6;
+    int result;
+
+    bool success = SafeDivide(dividend, divisor, result); // result = 2
+    success = SafeDivide(dividend, 0, result); // expect fail. result isn't modified.
+}
+```
+
+**Namespace:** none
 
 ## <a name="safeint"></a> SafeInt::SafeInt
 
@@ -251,28 +267,12 @@ SafeInt (const U& i)
 [in] A `SafeInt` of type U. The new `SafeInt` object will have the same value as *u*, but will be of type T.
 
 `U`
-The type of data stored in the `SafeInt`. This can be either a Boolean, character, or integer type. If it is an integer type, it can be signed or unsigned and be between 8 and 64 bits.
-
-### Example
-
-```c
-#include "SafeInt.hpp" // set path to your clone of the SafeInt GitHub repo (https://github.com/dcleblanc/SafeInt)
-
-int main()
-{
-    int divisor = 3;
-    int dividend = 6;
-    int result;
-
-    bool success = SafeDivide(dividend, divisor, result); // result = 2
-    success = SafeDivide(dividend, 0, result); // expect fail. result is not modified.
-}
-```
+The type of data stored in the `SafeInt`. This can be either a Boolean, character, or integer type. If it's an integer type, it can be signed or unsigned and be between 8 and 64 bits.
 
 ### Remarks
 
-The input parameter for the constructor, *i* or *u*, must be a Boolean, character, or integer type. If it is another type of parameter, the `SafeInt` class calls [static_assert](../cpp/static-assert.md) to indicate an invalid input parameter.
+The input parameter for the constructor, *i* or *u*, must be a Boolean, character, or integer type. If it's another type of parameter, the `SafeInt` class calls [static_assert](../cpp/static-assert.md) to indicate an invalid input parameter.
 
-The constructors that use the template type `U` automatically convert the input parameter to the type specified by `T`. The `SafeInt` class converts the data without any loss of data. It reports to the error handler `E` if it cannot convert the data to type `T` without data loss.
+The constructors that use the template type `U` automatically convert the input parameter to the type specified by `T`. The `SafeInt` class converts the data without any loss of data. It reports to the error handler `E` if it can't convert the data to type `T` without data loss.
 
-If you create a `SafeInt` from a Boolean parameter, you need to initialize the value immediately. You cannot construct a `SafeInt` using the code `SafeInt<bool> sb;`. This will generate a compile error.
+If you create a `SafeInt` from a Boolean parameter, you need to initialize the value immediately. You can't construct a `SafeInt` using the code `SafeInt<bool> sb;`. This will generate a compile error.

@@ -65,7 +65,7 @@ Set of delimiter characters.
 Locale to use.
 
 *context*<br/>
-Points to memory used to store the internal state of the parser so that the parser can continue from where it left off during subsequent calls.
+Points to memory used to store the internal state of the parser so that the parser can continue from where it left off the next time you call **wcstok**.
 
 ## Return Value
 
