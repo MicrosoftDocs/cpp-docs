@@ -34,7 +34,7 @@ class CAsyncSocket : public CObject
 |[CAsyncSocket::Close](#close)|Closes the socket.|
 |[CAsyncSocket::Connect](#connect)|Establishes a connection to a peer socket.|
 |[CAsyncSocket::Create](#create)|Creates a socket.|
-|[CAsyncSocket::CreateEx](#createex)|Creates a socket.|
+|[CAsyncSocket::CreateEx](#createex)|Creates a socket with advanced options.|
 |[CAsyncSocket::Detach](#detach)|Detaches a socket handle from a `CAsyncSocket` object.|
 |[CAsyncSocket::FromHandle](#fromhandle)|Returns a pointer to a `CAsyncSocket` object, given a socket handle.|
 |[CAsyncSocket::GetLastError](#getlasterror)|Gets the error status for the last operation that failed.|
