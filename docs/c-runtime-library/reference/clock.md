@@ -49,7 +49,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 #include <stdlib.h>
 #include <time.h>
 
-// Pauses for a specified number of milliseconds.
+// Pauses for a specified number of clock cycles.
 void do_sleep( clock_t wait )
 {
    clock_t goal;
