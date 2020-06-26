@@ -34,7 +34,7 @@ class CAsyncSocket : public CObject
 |[CAsyncSocket::Close](#close)|Closes the socket.|
 |[CAsyncSocket::Connect](#connect)|Establishes a connection to a peer socket.|
 |[CAsyncSocket::Create](#create)|Creates a socket.|
-|[CAsyncSocket::Create](#createex)|Creates a socket.|
+|[CAsyncSocket::CreateEx](#createex)|Creates a socket.|
 |[CAsyncSocket::Detach](#detach)|Detaches a socket handle from a `CAsyncSocket` object.|
 |[CAsyncSocket::FromHandle](#fromhandle)|Returns a pointer to a `CAsyncSocket` object, given a socket handle.|
 |[CAsyncSocket::GetLastError](#getlasterror)|Gets the error status for the last operation that failed.|
@@ -477,7 +477,7 @@ BOOL CreateEx(
 ### Parameters
 
 *pAI*<br/>
-pAI: A pointer to a [ADDRINFOT](https://docs.microsoft.com/windows/win32/api/ws2def/ns-ws2def-addrinfoa) to hold socket info such as the family and socket type.
+A pointer to a [ADDRINFOT](https://docs.microsoft.com/windows/win32/api/ws2def/ns-ws2def-addrinfoa) to hold socket info such as the family and socket type.
 
 *lEvent*<br/>
 A bitmask which specifies a combination of network events in which the application is interested.
