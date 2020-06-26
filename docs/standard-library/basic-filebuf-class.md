@@ -375,25 +375,21 @@ If the buffer is already open, or if the file pointer is a null pointer, the fun
 
 ### Remarks
 
-The member function opens the file with name *filename*, by calling [`fopen`](../c-runtime-library/reference/fopen-wfopen.md)`(filename, strmode)`. `strmode` is determined from `mode & ~(`[`ate`](../standard-library/ios-base-class.md#openmode) `|` [`binary`](../standard-library/ios-base-class.md#openmode)`)`:
+This function uses a `FILE *` to back the `basic_filebuf` as though you had called [`fopen/wfopen`](../c-runtime-library/reference/fopen-wfopen.md)`(filename, strmode)`. `strmode` is determined from `mode & ~(`[`ate`](../standard-library/ios-base-class.md#openmode) `|` [`binary`](../standard-library/ios-base-class.md#openmode)`)`:
 
 - `ios_base::in` becomes `"r"` (open existing file for reading).
-
 - [ios_base::out](../standard-library/ios-base-class.md#fmtflags) or `ios_base::out | ios_base::trunc` becomes `"w"` (truncate existing file or create for writing).
-
 - `ios_base::out | app` becomes `"a"` (open existing file for appending all writes).
-
 - `ios_base::in | ios_base::out` becomes `"r+"` (open existing file for reading and writing).
-
 - `ios_base::in | ios_base::out | ios_base::trunc` becomes `"w+"` (truncate existing file or create for reading and writing).
-
 - `ios_base::in | ios_base::out | ios_base::app` becomes `"a+"` (open existing file for reading and for appending all writes).
 
-If `mode & ios_base::binary` is nonzero, the function appends `b` to `strmode` to open a binary stream instead of a text stream. It then stores the value returned by `fopen` in the file pointer `fp`. If `mode & ios_base::ate` is nonzero and the file pointer isn't a null pointer, the function calls `fseek(fp, 0, SEEK_END)` to position the stream at end of file. If that positioning operation fails, the function calls [`close`](#close)`(fp)` and stores a null pointer in the file pointer.
+If `mode & ios_base::binary` is nonzero, the function appends `b` to `strmode` to open a binary stream instead of a text stream.
+If `mode & ios_base::ate` is nonzero and the file was succesfully opened, the current location in the stream is positioned at the end of file. If that fails, the file is closed.
 
-If the file pointer isn't a null pointer, the function determines the file conversion facet: `use_facet<codecvt<Char_T, char, traits_type::`[`state_type`](../standard-library/char-traits-struct.md#state_type)`> >(`[`getloc`](../standard-library/basic-streambuf-class.md#getloc)`)`, for use by [underflow](#underflow) and [overflow](#overflow).
+If the above operations completed successfully, the file conversion facet is determined: `use_facet<codecvt<Char_T, char, traits_type::`[`state_type`](../standard-library/char-traits-struct.md#state_type)`> >(`[`getloc`](../standard-library/basic-streambuf-class.md#getloc)`)`, for use by [underflow](#underflow) and [overflow](#overflow).
 
-If the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **this**.
+If the file could not be succesfully opened, null is returned.
 
 ### Example
 
