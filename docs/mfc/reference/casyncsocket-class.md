@@ -1,6 +1,6 @@
 ---
 title: "CAsyncSocket Class"
-ms.date: "09/03/2019"
+ms.date: "06/25/2020"
 f1_keywords: ["CAsyncSocket", "AFXSOCK/CAsyncSocket", "AFXSOCK/CAsyncSocket::CAsyncSocket", "AFXSOCK/CAsyncSocket::Accept", "AFXSOCK/CAsyncSocket::AsyncSelect", "AFXSOCK/CAsyncSocket::Attach", "AFXSOCK/CAsyncSocket::Bind", "AFXSOCK/CAsyncSocket::Close", "AFXSOCK/CAsyncSocket::Connect", "AFXSOCK/CAsyncSocket::Create", "AFXSOCK/CAsyncSocket::Detach", "AFXSOCK/CAsyncSocket::FromHandle", "AFXSOCK/CAsyncSocket::GetLastError", "AFXSOCK/CAsyncSocket::GetPeerName", "AFXSOCK/CAsyncSocket::GetPeerNameEx", "AFXSOCK/CAsyncSocket::GetSockName", "AFXSOCK/CAsyncSocket::GetSockNameEx", "AFXSOCK/CAsyncSocket::GetSockOpt", "AFXSOCK/CAsyncSocket::IOCtl", "AFXSOCK/CAsyncSocket::Listen", "AFXSOCK/CAsyncSocket::Receive", "AFXSOCK/CAsyncSocket::ReceiveFrom", "AFXSOCK/CAsyncSocket::ReceiveFromEx", "AFXSOCK/CAsyncSocket::Send", "AFXSOCK/CAsyncSocket::SendTo", "AFXSOCK/CAsyncSocket::SendToEx", "AFXSOCK/CAsyncSocket::SetSockOpt", "AFXSOCK/CAsyncSocket::ShutDown", "AFXSOCK/CASyncSocket::Socket", "AFXSOCK/CAsyncSocket::OnAccept", "AFXSOCK/CAsyncSocket::OnClose", "AFXSOCK/CAsyncSocket::OnConnect", "AFXSOCK/CAsyncSocket::OnOutOfBandData", "AFXSOCK/CAsyncSocket::OnReceive", "AFXSOCK/CAsyncSocket::OnSend", "AFXSOCK/CAsyncSocket::m_hSocket"]
 helpviewer_keywords: ["CAsyncSocket [MFC], CAsyncSocket", "CAsyncSocket [MFC], Accept", "CAsyncSocket [MFC], AsyncSelect", "CAsyncSocket [MFC], Attach", "CAsyncSocket [MFC], Bind", "CAsyncSocket [MFC], Close", "CAsyncSocket [MFC], Connect", "CAsyncSocket [MFC], Create", "CAsyncSocket [MFC], Detach", "CAsyncSocket [MFC], FromHandle", "CAsyncSocket [MFC], GetLastError", "CAsyncSocket [MFC], GetPeerName", "CAsyncSocket [MFC], GetPeerNameEx", "CAsyncSocket [MFC], GetSockName", "CAsyncSocket [MFC], GetSockNameEx", "CAsyncSocket [MFC], GetSockOpt", "CAsyncSocket [MFC], IOCtl", "CAsyncSocket [MFC], Listen", "CAsyncSocket [MFC], Receive", "CAsyncSocket [MFC], ReceiveFrom", "CAsyncSocket [MFC], ReceiveFromEx", "CAsyncSocket [MFC], Send", "CAsyncSocket [MFC], SendTo", "CAsyncSocket [MFC], SendToEx", "CAsyncSocket [MFC], SetSockOpt", "CAsyncSocket [MFC], ShutDown", "CASyncSocket [MFC], Socket", "CAsyncSocket [MFC], OnAccept", "CAsyncSocket [MFC], OnClose", "CAsyncSocket [MFC], OnConnect", "CAsyncSocket [MFC], OnOutOfBandData", "CAsyncSocket [MFC], OnReceive", "CAsyncSocket [MFC], OnSend", "CAsyncSocket [MFC], m_hSocket"]
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
@@ -34,6 +34,7 @@ class CAsyncSocket : public CObject
 |[CAsyncSocket::Close](#close)|Closes the socket.|
 |[CAsyncSocket::Connect](#connect)|Establishes a connection to a peer socket.|
 |[CAsyncSocket::Create](#create)|Creates a socket.|
+|[CAsyncSocket::CreateEx](#createex)|Creates a socket with advanced options.|
 |[CAsyncSocket::Detach](#detach)|Detaches a socket handle from a `CAsyncSocket` object.|
 |[CAsyncSocket::FromHandle](#fromhandle)|Returns a pointer to a `CAsyncSocket` object, given a socket handle.|
 |[CAsyncSocket::GetLastError](#getlasterror)|Gets the error status for the last operation that failed.|
@@ -460,6 +461,46 @@ Nonzero if the function is successful; otherwise 0, and a specific error code ca
 > `Create` is **not** thread-safe.  If you are calling it in a multi-threaded environment where it could be invoked simultaneously by different threads, be sure to protect each call with a mutex or other synchronization lock.
 
 For more information about stream and datagram sockets, see the articles [Windows Sockets: Background](../../mfc/windows-sockets-background.md) and [Windows Sockets: Ports and Socket Addresses](../../mfc/windows-sockets-ports-and-socket-addresses.md) and [Windows Sockets 2 API](/windows/win32/WinSock/windows-sockets-start-page-2).
+
+## <a name="createex"></a> CAsyncSocket::CreateEx
+
+Call the `CreateEx` member function after constructing a socket object to create the Windows socket and attach it.
+
+Use this function when you need to supply advanced options such as the socket type.
+
+```
+BOOL CreateEx(
+    ADDRINFOT* pAI, 
+    long lEvent = FD_READ | FD_WRITE | FD_OOB | FD_ACCEPT | FD_CONNECT | FD_CLOSE);
+```
+
+### Parameters
+
+*pAI*<br/>
+A pointer to a [ADDRINFOT](https://docs.microsoft.com/windows/win32/api/ws2def/ns-ws2def-addrinfoa) to hold socket info such as the family and socket type.
+
+*lEvent*<br/>
+A bitmask which specifies a combination of network events in which the application is interested.
+
+- FD_READ Want to receive notification of readiness for reading.
+
+- FD_WRITE Want to receive notification of readiness for writing.
+
+- FD_OOB Want to receive notification of the arrival of out-of-band data.
+
+- FD_ACCEPT Want to receive notification of incoming connections.
+
+- FD_CONNECT Want to receive notification of completed connection.
+
+- FD_CLOSE Want to receive notification of socket closure.
+
+### Return Value
+
+See the return value for [Create()](#return-value-5).
+
+### Remarks
+
+See the remarks for [Create()](#remarks-8).
 
 ## <a name="detach"></a> CAsyncSocket::Detach
 
