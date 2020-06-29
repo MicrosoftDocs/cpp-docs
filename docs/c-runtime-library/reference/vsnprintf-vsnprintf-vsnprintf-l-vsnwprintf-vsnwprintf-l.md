@@ -1,6 +1,6 @@
 ---
 title: "vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l"
-ms.date: "11/04/2016"
+ms.date: "06/24/2020"
 api_name: ["_vsnprintf", "_vsnprintf_l", "_vsnwprintf", "_vsnwprintf_l", "_vsnprintf", "_vsnprintf;", "vsnprintf; _vsnprintf", "_vsnwprintf;", "_vsnprintf_l;", "_vsnwprintf_l;"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll"]
 api_type: ["DLLExport"]
@@ -108,27 +108,29 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-The **vsnprintf** function returns the number of characters written, not counting the terminating null character. If the buffer size specified by *count* is not sufficiently large to contain the output specified by *format* and *argptr*, the return value of **vsnprintf** is the number of characters that would be written, not counting the null character, if *count* were sufficiently large. If the return value is greater than *count* - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
+The **vsnprintf** function returns the number of characters that are written, not counting the terminating null character. If the buffer size specified by *count* isn't sufficiently large to contain the output specified by *format* and *argptr*, the return value of **vsnprintf** is the number of characters that would be written, not counting the null character, if *count* were sufficiently large. If the return value is greater than *count* - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
 
-Both **_vsnprintf** and **_vsnwprintf** functions return the number of characters written if the number of characters to write is less than or equal to *count*; if the number of characters to write is greater than *count*, these functions return -1 indicating that output has been truncated.
+Both **_vsnprintf** and **_vsnwprintf** functions return the number of characters written if the number of characters to write is less than or equal to *count*. If the number of characters to write is greater than *count*, these functions return -1 indicating that output has been truncated.
 
-The value returned by all these functions does not include the terminating null, whether one is written or not. When *count* is zero, the value returned is the number of characters the functions would write, not including any terminating null. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
+The value returned by all these functions doesn't include the terminating null, whether one is written or not.
 
-If *format* is **NULL**, or if *buffer* is **NULL** and *count* is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+- If *count* is zero and *buffer* is **NULL**, the value returned is the number of characters the functions would write. The value does not take into account a terminating **NULL**. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
+- If *count* is zero but *buffer* isn't **NULL**, nothing is written and the function returns `-1`.
+- If *format* is **NULL**, or if *buffer* is **NULL** and *count* isn't equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *count* characters  to the memory pointed to by *buffer*. The **vsnprintf** function always writes a null terminator, even if it truncates the output. When using **_vsnprintf** and **_vsnwprintf**, the buffer will be null-terminated only if there is room at the end (that is, if the number of characters to write is less than *count*).
+Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *count* characters  to the memory pointed to by *buffer*. The **vsnprintf** function always writes a null terminator, even if it truncates the output. When using **_vsnprintf** and **_vsnwprintf**, the buffer will be null-terminated only if there's room at the end (that is, if the number of characters to write is less than *count*).
 
 > [!IMPORTANT]
-> To prevent certain kinds of security risks, ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+> To prevent certain kinds of security risks, ensure that *format* isn't a user-defined string. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 > [!NOTE]
-> To ensure that there is room for the terminating null when calling **_vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** and **_vsnwprintf_l**, be sure that *count* is strictly less than the buffer length and initialize the buffer to null prior to calling the function.
+> To ensure that there's room for the terminating null when calling **_vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** and **_vsnwprintf_l**, be sure that *count* is strictly less than the buffer length and initialize the buffer to null prior to calling the function.
 >
 > Because **vsnprintf** always writes the terminating null, the *count* parameter may be equal to the size of the buffer.
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10,         **vsnprintf** is no longer identical to **_vsnprintf**. The **vsnprintf** function complies with the C99 standard; **_vnsprintf** is retained for backward compatibility with older Visual Studio code.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10,         **vsnprintf** is no longer identical to **_vsnprintf**. The **vsnprintf** function complies with the C99 standard; **_vnsprintf** is kept for backward compatibility with older Visual Studio code.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
