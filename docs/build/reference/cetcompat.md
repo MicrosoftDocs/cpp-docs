@@ -1,6 +1,6 @@
 ---
 title: "/CETCOMPAT (CET Shadow Stack compatible)"
-ms.date: "02/19/2019"
+ms.date: "06/30/2020"
 f1_keywords: ["/CETCOMPAT"]
 helpviewer_keywords: ["/CETCOMPAT linker option", "/CETCOMPAT"]
 ---
@@ -10,22 +10,25 @@ Specifies whether to mark an executable image as compatible with Control-flow En
 
 ## Syntax
 
-> **/CETCOMPAT**\[**:NO**]
+> **`/CETCOMPAT`**\
+> **`/CETCOMPAT:NO`**
 
 ## Arguments
 
-**NO**<br/>
-Specifies that the executable should not be marked compatible with CET Shadow Stack.
+**`NO`**<br/>
+Specifies that the executable shouldn't be marked compatible with CET Shadow Stack.
 
 ## Remarks
 
-Control-flow Enforcement Technology (CET) Shadow Stack is a computer processor feature that provides capabilities to defend against return oriented programming (ROP) based malware attacks. For more information, see [Intel Control-flow Enforcement Technology Preview](https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf).
+Control-flow Enforcement Technology (CET) Shadow Stack is a computer processor feature that provides capabilities to defend against return-oriented programming (ROP) based malware attacks. For more information, see [Intel Control-flow Enforcement Technology Preview](https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf).
 
-The **/CETCOMPAT** linker option tells the linker to mark the binary as CET Shadow Stack-compatible. **/CETCOMPAT:NO** marks the binary as not compatible with CET Shadow Stack. If both options are specified on the command line, the last one specified is used. This switch is currently only applicable to x86 and x64 architectures.
+The **`/CETCOMPAT`** linker option tells the linker to mark the binary as CET Shadow Stack-compatible. **`/CETCOMPAT:NO`** marks the binary as not compatible with CET Shadow Stack. If both options are specified on the command line, the last one specified is used. This switch is currently only applicable to x86 and x64 architectures.
 
-The **/CETCOMPAT** option is available beginning in the Visual Studio 2019 Preview 3 toolset.
+The **`/CETCOMPAT`** option is available beginning in Visual Studio 2019.
 
-### To set the /CETCOMPAT linker option in Visual Studio
+### To set the `/CETCOMPAT` linker option in Visual Studio
+
+Starting in Visual Studio 2019 version 16.7:
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
@@ -33,13 +36,20 @@ The **/CETCOMPAT** option is available beginning in the Visual Studio 2019 Previ
 
 1. Select the **CET Shadow Stack Compatible** property.
 
-1. In the dropdown control, choose **Yes (/CETCOMPAT)** to enable EH continuation metadata, or **No (/CETCOMPAT:NO)** to disable it.
+1. In the dropdown control, choose **`Yes (/CETCOMPAT)`** to enable EH continuation metadata, or **`No (/CETCOMPAT:NO)`** to disable it.
 
+In previous versions of Visual Studio 2019:
+
+1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
+
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
+
+1. In the **Additional Options** edit control, add *`/CETCOMPAT`* to enable EH continuation metadata, or *`/CETCOMPAT:NO`* to explicitly disable it.
 
 ### To set this linker option programmatically
 
-This option does not have a programmatic equivalent.
+This option doesn't have a programmatic equivalent.
 
 ## See also
 
-[Linker Options](linker-options.md)
+[Linker options](linker-options.md)
