@@ -380,7 +380,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    ```
 
    `HDC` in the code is a handle to a device context, which is used to draw in the window's client area. Use the `BeginPaint` and `EndPaint` functions to prepare for and complete the drawing in the client area. `BeginPaint` returns a handle to the display device context used for drawing in the client area; `EndPaint` ends the paint request and releases the device context.
-   
+
 1. An application typically handles many other messages. For example, [WM_CREATE](/windows/win32/winmsg/wm-create) when a window is first created, and [WM_DESTROY](/windows/win32/winmsg/wm-destroy) when the window is closed. The following code shows a basic but complete `WndProc` function.
 
    ```cpp

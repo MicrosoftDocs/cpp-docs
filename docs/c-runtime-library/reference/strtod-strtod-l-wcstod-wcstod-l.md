@@ -52,6 +52,7 @@ The locale to use.
 **strtod** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VAL**. The sign of **HUGE_VAL** matches the sign of the value that cannot be represented. **strtod** returns `0` if no conversion can be performed or an underflow occurs.
 
 **wcstod** returns values analogously to **strtod**:
+
 - For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs.
 - If there are invalid parameters, **errno** is set to **EINVAL** and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 

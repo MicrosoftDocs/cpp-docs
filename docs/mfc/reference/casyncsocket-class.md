@@ -470,7 +470,7 @@ Use this function when you need to supply advanced options such as the socket ty
 
 ```
 BOOL CreateEx(
-    ADDRINFOT* pAI, 
+    ADDRINFOT* pAI,
     long lEvent = FD_READ | FD_WRITE | FD_OOB | FD_ACCEPT | FD_CONNECT | FD_CLOSE);
 ```
 

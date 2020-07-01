@@ -179,11 +179,11 @@ This data member is a public variable of type **int**. The enumerators and their
 | `CFileException::diskFull` | 13: The disk is full. |
 | `CFileException::endOfFile` | 14: The end of file was reached. |
 
-    > [!NOTE]
-    >  These `CFileException` cause enumerators are distinct from the `CArchiveException` cause enumerators.
+> [!NOTE]
+> These `CFileException` cause enumerators are distinct from the `CArchiveException` cause enumerators.
 
-    > [!NOTE]
-    > `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, the resulting syntax errors are not easy to decipher.
+> [!NOTE]
+> `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, the resulting syntax errors are not easy to decipher.
 
 ### Example
 
