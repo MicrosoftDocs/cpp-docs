@@ -7,7 +7,7 @@ helpviewer_keywords: ["span header"]
 
 # &lt;span&gt;
 
-A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike `vector` or `array`, it doesn't "own" the elements it provides access to. 
+A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike `vector` or `array`, it doesn't "own" the elements it provides access to.
 
 See [span class](span-class.md) for detailed information. Here's an example of how a span can be used:
 
