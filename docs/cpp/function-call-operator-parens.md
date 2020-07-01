@@ -20,7 +20,7 @@ The arguments to the function-call operator come from an *`argument-expression-l
 
 The *`postfix-expression`* evaluates to the function to call. It can take any of several forms:
 
-- a function identifier, visible in the current scope or in the scope of any of the function arguments provided, 
+- a function identifier, visible in the current scope or in the scope of any of the function arguments provided,
 - an expression that evaluates to a function, a function pointer, a callable object, or to a reference to one,
 - a member function accessor, either explicit or implied,
 - a dereferenced pointer to a member function.

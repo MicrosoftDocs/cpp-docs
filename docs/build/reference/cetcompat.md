@@ -35,7 +35,6 @@ The **/CETCOMPAT** option is available beginning in the Visual Studio 2019 Previ
 
 1. In the dropdown control, choose **Yes (/CETCOMPAT)** to enable EH continuation metadata, or **No (/CETCOMPAT:NO)** to disable it.
 
-
 ### To set this linker option programmatically
 
 This option does not have a programmatic equivalent.
