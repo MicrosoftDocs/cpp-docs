@@ -57,6 +57,36 @@ portaudio   19.0.6.00  PortAudio Portable Cross-platform Audio I/O API P...
 taglib      1.11.1-2   TagLib Audio Meta-Data Library
 ```
 
+### Install a library on your local machine
+
+After you get the name of a library by using **`vcpkg search`**, you use **`vcpkg install`** to download the library and compile it. vcpkg uses the library's portfile in the *ports* directory. If a triplet isn't specified, vcpkg installs and compiles for the default triplet for the target platform: x86-windows, x64-linux.cmake, or x64-osx.cmake.
+
+For Linux libraries, vcpkg depends on gcc being installed on the local machine. On macOS, vcpkg uses Clang.
+
+When the portfile specifies dependencies, vcpkg downloads and installs them too. After downloading, vcpkg builds the library by using the same build system the library uses. CMake and (on Windows) MSBuild projects are preferred, but MAKE is supported along with any other build system. If vcpkg can't find the specified build system on the local machine, it downloads and installs it.
+
+```cmd
+> vcpkg install boost:x86-windows
+
+The following packages will be built and installed:
+    boost:x86-windows
+  * bzip2:x86-windows
+  * zlib:x86-windows
+Additional packages (*) will be installed to complete this operation.
+```
+
+For CMake projects, use `CMAKE_TOOLCHAIN_FILE` to make libraries available with `find_package()`. For example, on Linux or macOS:
+
+```cmd
+cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
+```
+
+On Windows:
+
+```cmd
+cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg\scripts\buildsystems\vcpkg.cmake
+```
+
 Some libraries include installable options. For example, when you search for the curl library, you'll also see a list of supported options in square brackets:
 
 ```cmd
@@ -89,36 +119,6 @@ curl[ssl]:x86-windows                  Default SSL backend
 curl[sspi]:x86-windows                 SSPI support
 curl[winssl]:x86-windows               SSL support (Secure Channel / "WinSSL")
 zlib:x86-windows            1.2.11-6   A compression library
-```
-
-### Install a library on your local machine
-
-After you get the name of a library by using **`vcpkg search`**, you use **`vcpkg install`** to download the library and compile it. vcpkg uses the library's portfile in the *ports* directory. If a triplet isn't specified, vcpkg installs and compiles for the default triplet for the target platform: x86-windows, x64-linux.cmake, or x64-osx.cmake.
-
-For Linux libraries, vcpkg depends on gcc being installed on the local machine. On macOS, vcpkg uses Clang.
-
-When the portfile specifies dependencies, vcpkg downloads and installs them too. After downloading, vcpkg builds the library by using the same build system the library uses. CMake and (on Windows) MSBuild projects are preferred, but MAKE is supported along with any other build system. If vcpkg can't find the specified build system on the local machine, it downloads and installs it.
-
-```cmd
-> vcpkg install boost:x86-windows
-
-The following packages will be built and installed:
-    boost:x86-windows
-  * bzip2:x86-windows
-  * zlib:x86-windows
-Additional packages (*) will be installed to complete this operation.
-```
-
-For CMake projects, use `CMAKE_TOOLCHAIN_FILE` to make libraries available with `find_package()`. For example, on Linux or macOS:
-
-```cmd
-cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
-```
-
-On Windows:
-
-```cmd
-cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg\scripts\buildsystems\vcpkg.cmake
 ```
 
 ## List the libraries already installed
