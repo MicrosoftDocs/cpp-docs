@@ -1,12 +1,12 @@
 ---
-title: "/Gh (Enable _penter Hook Function)"
+title: "/Gh (Enable _penter hook function)"
 description: "Describes the /Gh compiler option to call the supplied _penter function."
 ms.date: "07/06/2020"
 f1_keywords: ["_penter"]
 helpviewer_keywords: ["/Gh compiler option [C++]", "Gh compiler option [C++]", "_penter function", "-Gh compiler option [C++]"]
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f
 ---
-# /Gh (Enable _penter Hook Function)
+# /Gh (Enable _penter hook function)
 
 Causes a call to the `_penter` function at the start of every method or function.
 

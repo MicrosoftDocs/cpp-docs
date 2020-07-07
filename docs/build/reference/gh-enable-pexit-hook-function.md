@@ -1,12 +1,12 @@
 ---
-title: "/GH (Enable _pexit Hook Function)"
+title: "/GH (Enable _pexit hook function)"
 description: "Describes the /GH compiler option to set a local _pexit hook function."
 ms.date: "07/06/2020"
 f1_keywords: ["_pexit"]
 helpviewer_keywords: ["/Gh compiler option [C++]", "Gh compiler option [C++]", "_pexit function", "-Gh compiler option [C++]"]
 ms.assetid: 93181453-2676-42e5-bf63-3b19e07299b6
 ---
-# /GH (Enable _pexit Hook Function)
+# /GH (Enable _pexit hook function)
 
 Calls the `_pexit` function at the end of every method or function.
 
@@ -42,6 +42,6 @@ This declaration isn't available for 64-bit projects.
 
 ## See also
 
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC compiler options](compiler-options.md)<br/>
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)<br/>
 [`/Gh` (Enable _penter hook function)](gh-enable-penter-hook-function.md)
