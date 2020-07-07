@@ -39,5 +39,4 @@ This example link command creates an executable *main.exe* that has heap reserve
 ## See also
 
 [EDITBIN options](editbin-options.md)\
-[MSVC linker reference](linking.md)\
 [MSVC linker options](linker-options.md)
