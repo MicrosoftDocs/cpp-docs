@@ -23,9 +23,6 @@ Minimizes or maximizes the size of EXEs and DLLs.
 **/Ot** (Favor Fast Code) maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. (This is the default.) The compiler can reduce many C and C++ constructs to functionally similar sequences of machine code. Occasionally, these differences offer tradeoffs of size versus speed. The **/Ot** option is implied by the Maximize Speed ([/O2](o1-o2-minimize-size-maximize-speed.md)) option. The **/O2** option combines several options to produce very fast code.
 
 > [!NOTE]
-> **/Os** or **/Ot** only takes effect if code optimization is enabled. For more information on optimizations, see [/O1, /O2 (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) or [/Ox (Enable Most Speed Optimizations)](ox-full-optimization.md).
-
-> [!NOTE]
 > Information that is gathered from profiling test runs will override optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
 **x86 Specific**
