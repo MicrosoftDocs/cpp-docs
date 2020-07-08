@@ -3,7 +3,6 @@ title: "new and delete operators"
 description: "The C++ language new and delete operators allow control over allocation."
 ms.date: 07/07/2020
 helpviewer_keywords: ["new keyword [C++]", "delete keyword [C++]"]
-ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 ---
 # `new` and `delete` operators
 
