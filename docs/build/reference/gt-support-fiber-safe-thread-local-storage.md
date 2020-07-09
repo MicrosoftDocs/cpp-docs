@@ -18,7 +18,7 @@ Supports fiber safety for data allocated using static thread-local storage, that
 
 Data declared with `__declspec(thread)` is referenced through a thread-local storage (TLS) array. The TLS array is an array of addresses that the system maintains for each thread. Each address in this array gives the location of thread-local storage data.
 
-A fiber is a lightweight object that consists of a stack and a register context and can be scheduled on various threads. A fiber can run on any thread. Because a fiber may get swapped out and restarted later on a different thread, the address of the TLS array must not be cached or optimized as a common subexpression across a function call. **`/GT`** prevents such optimizations.
+A fiber is a lightweight object that consists of a stack and a register context and can be scheduled on various threads. A fiber can run on any thread. Because a fiber may get swapped out and restarted later on a different thread, the compiler mustn't cache the address of the TLS array, or optimize it as a common subexpression across a function call. **`/GT`** prevents such optimizations.
 
 ### To set this compiler option in the Visual Studio development environment
 

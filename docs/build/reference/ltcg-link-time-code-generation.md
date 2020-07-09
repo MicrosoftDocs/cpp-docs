@@ -21,13 +21,13 @@ These options are deprecated starting in Visual Studio 2015:
 ### Arguments
 
 **`INCREMENTAL`**<br/>
-(Optional) Specifies that the linker only applies whole program optimization or link-time code generation (LTCG) to the set of files affected by an edit, instead of the entire project. By default, this flag is not set when **`/LTCG`** is specified, and the entire project is linked by using whole program optimization.
+(Optional) Specifies that the linker only applies whole program optimization or link-time code generation (LTCG) to files affected by an edit, instead of the entire project. By default, this flag isn't set when **`/LTCG`** is specified, and the entire project is linked by using whole program optimization.
 
 **`NOSTATUS`** &#124; **`STATUS`**<br/>
-(Optional) Specifies whether the linker displays a progress indicator that shows what percentage of the link is complete. By default, this status information is not displayed.
+(Optional) Specifies whether the linker displays a progress indicator that shows what percentage of the link is complete. By default, this status information isn't displayed.
 
 **`OFF`**<br/>
-(Optional) Disables link-time code generation. This behavior is the same as when **`/LTCG`** is not specified on the command line.
+(Optional) Disables link-time code generation. This behavior is the same as when **`/LTCG`** isn't specified on the command line.
 
 **`PGINSTRUMENT`**<br/>
 (Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **`/LTCG`** and `[/GENPROFILE` or `/FASTGENPROFILE`](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **`/LTCG:PGI`**.
@@ -42,7 +42,7 @@ These options are deprecated starting in Visual Studio 2015:
 
 The **`/LTCG`** option tells the linker to call the compiler and perform whole-program optimization. You can also do profile guided optimization. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
-With the following exceptions, you cannot add linker options to the PGO combination of **`/LTCG`** and **`/USEPROFILE`** that were not specified in the previous PGO initialization combination of **`/LTCG`** and **`/GENPROFILE`** options:
+With the following exceptions, you can't add linker options to the PGO combination of **`/LTCG`** and **`/USEPROFILE`** that weren't specified in the previous PGO initialization combination of **`/LTCG`** and **`/GENPROFILE`** options:
 
 - [`/BASE`](base-base-address.md)
 
@@ -68,17 +68,17 @@ With the following exceptions, you cannot add linker options to the PGO combinat
 
 - [`/VERBOSE`](verbose-print-progress-messages.md)
 
-Any linker options that are specified together with the **`/LTCG`** and **`/GENPROFILE`** options to initialize PGO do not have to be specified when you build by using **`/LTCG`** and **`/USEPROFILE`**; they are implied.
+Any linker options that are specified together with the **`/LTCG`** and **`/GENPROFILE`** options to initialize PGO don't have to be specified when you build by using **`/LTCG`** and **`/USEPROFILE`**; they're implied.
 
-The rest of this article discusses **`/LTCG`** in terms of link-time code generation.
+The rest of this article discusses the link-time code generation done by **`/LTCG`**.
 
 **`/LTCG`** is implied with [`/GL`](gl-whole-program-optimization.md).
 
-The linker invokes link-time code generation if it is passed a module that was compiled by using **`/GL`** or an MSIL module (see [`.netmodule` Files as Linker Input](netmodule-files-as-linker-input.md)). If you do not explicitly specify **`/LTCG`** when you pass **`/GL`** or MSIL modules to the linker, the linker eventually detects this and restarts the link by using **`/LTCG`**. Explicitly specify **`/LTCG`** when you pass **`/GL`** and MSIL modules to the linker for the fastest possible build performance.
+The linker invokes link-time code generation if it's passed a module that was compiled by using **`/GL`** or an MSIL module (see [`.netmodule` Files as Linker Input](netmodule-files-as-linker-input.md)). If you don't explicitly specify **`/LTCG`** when you pass **`/GL`** or MSIL modules to the linker, the linker eventually detects this situation and restarts the link by using **`/LTCG`**. Explicitly specify **`/LTCG`** when you pass **`/GL`** and MSIL modules to the linker for the fastest possible build performance.
 
-For even faster performance, use **`/LTCG:INCREMENTAL`**. This option tells the linker to only re-optimize the set of files that is affected by a source file change, instead of the entire project. This can significantly reduce the link time required. This is not the same option as incremental linking.
+For even faster performance, use **`/LTCG:INCREMENTAL`**. This option tells the linker to reoptimize only the files affected by a source file change, instead of the entire project. This option can significantly reduce the link time required. This option isn't the same option as [incremental linking](incremental-link-incrementally.md).
 
-**`/LTCG`** is not valid for use with [`/INCREMENTAL`](incremental-link-incrementally.md).
+**`/LTCG`** isn't valid for use with [`/INCREMENTAL`](incremental-link-incrementally.md).
 
 When **`/LTCG`** is used to link modules compiled by using [`/Og`](og-global-optimizations.md), [`/O1`](o1-o2-minimize-size-maximize-speed.md), [`/O2`](o1-o2-minimize-size-maximize-speed.md), or [`/Ox`](ox-full-optimization.md), the following optimizations are performed:
 
@@ -99,7 +99,7 @@ When **`/LTCG`** is used to link modules compiled by using [`/Og`](og-global-opt
 
 Using **`/LTCG`** and **`/O2`** causes double-alignment optimization.
 
-If **`/LTCG`** and **`/O1`** are specified, double alignment is not performed. If most of the functions in an application are compiled for speed, with a few functions compiled for size (for example, by using the [`optimize`](../../preprocessor/optimize.md) pragma), the compiler double-aligns the functions that are optimized for size if they call functions that require double alignment.
+If **`/LTCG`** and **`/O1`** are specified, double alignment isn't performed. If most of the functions in an application are compiled for speed, with a few functions compiled for size (for example, by using the [`optimize`](../../preprocessor/optimize.md) pragma), the compiler double-aligns the functions that are optimized for size if they call functions that require double alignment.
 
 If the compiler can identify all of the call sites of a function, the compiler ignores explicit calling-convention modifiers on a function and tries to optimize the function's calling convention:
 
@@ -109,7 +109,7 @@ If the compiler can identify all of the call sites of a function, the compiler i
 
 - remove unused parameters
 
-If a function is called through a function pointer, or if a function is called from outside a module that is compiled by using **`/GL`**, the compiler does not attempt to optimize the function's calling convention.
+If a function is called through a function pointer, or if a function is called from outside a module that is compiled by using **`/GL`**, the compiler doesn't attempt to optimize the function's calling convention.
 
 > [!NOTE]
 > If you use **`/LTCG`** and redefine `mainCRTStartup`, your application can have unpredictable behavior that relates to user code that executes before global objects are initialized. There are three ways to address this issue: do not redefine `mainCRTStartup`, do not compile the file that contains `mainCRTStartup` by using **`/LTCG`**, or initialize global variables and objects statically.
@@ -120,7 +120,7 @@ Modules that are compiled by using [`/GL`](gl-whole-program-optimization.md) and
 
 - **`/LTCG`** can accept native object files, and mixed native/managed object files (compiled by using **`/clr`**). The **`/clr:pure`** and **`/clr:safe`** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
-- **`/LTCG:PGI`** does not accept native modules compiled by using **`/GL`** and **`/clr`**
+- **`/LTCG:PGI`** doesn't accept native modules compiled by using **`/GL`** and **`/clr`**
 
 ### To set this compiler option in the Visual Studio development environment
 

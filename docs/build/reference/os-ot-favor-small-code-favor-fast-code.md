@@ -19,7 +19,7 @@ Minimizes or maximizes the size of EXEs and DLLs.
 
 **`/Os`** (Favor Small Code) minimizes the size of EXEs and DLLs by instructing the compiler to favor size over speed. The compiler can reduce many C and C++ constructs to functionally similar sequences of machine code. Occasionally these differences offer tradeoffs of size versus speed. The **`/Os`** and **`/Ot`** options allow you to specify a preference for one over the other:
 
-**`/Ot`** (Favor Fast Code) maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. This is the default when optimizations are enabled. The compiler can reduce many C and C++ constructs to functionally similar sequences of machine code. Occasionally, these differences offer tradeoffs of size versus speed. The **`/Ot`** option is implied by the [`/O2`](o1-o2-minimize-size-maximize-speed.md) (Maximize speed) option. The **`/O2`** option combines several options to produce very fast code.
+**`/Ot`** (Favor Fast Code) maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. **`/Ot`** is the default when optimizations are enabled. The compiler can reduce many C and C++ constructs to functionally similar sequences of machine code. Occasionally, these differences offer tradeoffs of size versus speed. The **`/Ot`** option is implied by the [`/O2`](o1-o2-minimize-size-maximize-speed.md) (Maximize speed) option. The **`/O2`** option combines several options to produce faster code.
 
 > [!NOTE]
 > Information that's gathered from profiling test runs overrides any optimizations that would otherwise be in effect if you specify **`/Ob`**, **`/Os`**, or **`/Ot`**. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).

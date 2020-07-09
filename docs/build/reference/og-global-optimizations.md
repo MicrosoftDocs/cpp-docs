@@ -16,13 +16,13 @@ Deprecated. Provides local and global optimizations, automatic-register allocati
 
 ## Remarks
 
-**`/Og`** is deprecated. These optimizations are now generally enabled by default. For more information on optimizations, see [`/O1`, `/O2` (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) or [`/Ox` (Enable Most Speed Optimizations)](ox-full-optimization.md).
+**`/Og`** is deprecated. These optimizations are now enabled by default when any optimizations are enabled. For more information on optimizations, see [`/O1`, `/O2` (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md), or [`/Ox` (Enable Most Speed Optimizations)](ox-full-optimization.md).
 
 The following optimizations are available under **`/Og`**:
 
 - Local and global common subexpression elimination
 
-   In this optimization, the value of a common subexpression is calculated once. In the following example, if the values of `b` and `c` do not change between the three expressions, the compiler can assign the calculation of `b + c` to a temporary variable, and substitute the variable for `b + c`:
+   In this optimization, the value of a common subexpression is calculated once. In the following example, if the values of `b` and `c` don't change between the three expressions, the compiler can assign the calculation of `b + c` to a temporary variable, and use that variable for `b + c`:
 
     ```C
     a = b + c;
@@ -38,7 +38,7 @@ The following optimizations are available under **`/Og`**:
 
 - Loop optimization
 
-   This optimization removes invariant subexpressions from the body of a loop. An optimal loop contains only expressions whose values change through each execution of the loop. In the following example, the expression `x + y` does not change in the loop body:
+   This optimization removes invariant subexpressions from the body of a loop. An optimal loop contains only expressions whose values change through each execution of the loop. In the following example, the expression `x + y` doesn't change in the loop body:
 
     ```C
     i = -100;

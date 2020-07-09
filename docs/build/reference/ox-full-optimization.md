@@ -8,7 +8,7 @@ ms.assetid: 3ad7c30b-c615-428c-b1d0-2e024f81c760
 ---
 # `/Ox` (Enable Most Speed Optimizations)
 
-The **`/Ox`** compiler option enables a combination of optimizations that favor speed. In some versions of the Visual Studio IDE and the compiler help message, this is called *full optimization*, but the **`/Ox`** compiler option enables only a subset of the speed optimization options enabled by **`/O2`**.
+The **`/Ox`** compiler option enables a combination of optimizations that favor speed. In some versions of the Visual Studio IDE and the compiler help message, it's called *full optimization*, but the **`/Ox`** compiler option enables only a subset of the speed optimization options enabled by **`/O2`**.
 
 ## Syntax
 
@@ -16,7 +16,7 @@ The **`/Ox`** compiler option enables a combination of optimizations that favor 
 
 ## Remarks
 
-The **`/Ox`** compiler option enables the **`/O`** compiler options that favor speed. The **`/Ox`** compiler option does not include the additional [`/GF` (Eliminate Duplicate Strings)](gf-eliminate-duplicate-strings.md) and [`/Gy` (Enable Function-Level Linking)](gy-enable-function-level-linking.md) options enabled by [`/O1` or `/O2` (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md). The additional options applied by **`/O1`** and **`/O2`** can cause pointers to strings or to functions to share a target address, which can affect debugging and strict language conformance. The **`/Ox`** option is an easy way to enable most optimizations without including **`/GF`** and **`/Gy`**. For more information, see the descriptions of the [`/GF`](gf-eliminate-duplicate-strings.md) and [`/Gy`](gy-enable-function-level-linking.md) options.
+The **`/Ox`** compiler option enables the **`/O`** compiler options that favor speed. The **`/Ox`** compiler option doesn't include the additional [`/GF` (Eliminate Duplicate Strings)](gf-eliminate-duplicate-strings.md) and [`/Gy` (Enable Function-Level Linking)](gy-enable-function-level-linking.md) options enabled by [`/O1` or `/O2` (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md). The additional options applied by **`/O1`** and **`/O2`** can cause pointers to strings or to functions to share a target address, which can affect debugging and strict language conformance. The **`/Ox`** option is an easy way to enable most optimizations without including **`/GF`** and **`/Gy`**. For more information, see the descriptions of the [`/GF`](gf-eliminate-duplicate-strings.md) and [`/Gy`](gy-enable-function-level-linking.md) options.
 
 The **`/Ox`** compiler option is the same as using the following options in combination:
 
