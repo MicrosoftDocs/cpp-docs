@@ -1,23 +1,24 @@
 ---
 title: "/Og (Global Optimizations)"
-ms.date: "09/22/2017"
+description: "Describes the deprecated MSVC compiler option /Og, formerly used to enable global optimizations."
+ms.date: 07/08/2020
 f1_keywords: ["VC.Project.VCCLCompilerTool.GlobalOptimizations", "/og"]
 helpviewer_keywords: ["-Og compiler option [C++]", "global optimizations compiler option [C++]", "automatic register allocation", "/Og compiler option [C++]", "loop structures, optimizing", "common subexpression elimination", "Og compiler option [C++]"]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
 ---
-# /Og (Global Optimizations)
+# `/Og` (Global Optimizations)
 
-Deprecated. Provides local and global optimizations, automatic-register allocation, and loop optimization. We recommend you use either [/O1 (Minimize Size)](o1-o2-minimize-size-maximize-speed.md) or [/O2 (Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) instead.
+Deprecated. Provides local and global optimizations, automatic-register allocation, and loop optimization. We recommend you use either [`/O1` (Minimize Size)](o1-o2-minimize-size-maximize-speed.md) or [`/O2` (Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) instead.
 
 ## Syntax
 
-> /Og
+> **`/Og`**
 
 ## Remarks
 
-**/Og** is deprecated. These optimizations are now generally enabled by default. For more information on optimizations, see [/O1, /O2 (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) or [/Ox (Enable Most Speed Optimizations)](ox-full-optimization.md).
+**`/Og`** is deprecated. These optimizations are now generally enabled by default. For more information on optimizations, see [`/O1`, `/O2` (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) or [`/Ox` (Enable Most Speed Optimizations)](ox-full-optimization.md).
 
-The following optimizations are available under **/Og**:
+The following optimizations are available under **`/Og`**:
 
 - Local and global common subexpression elimination
 
@@ -56,20 +57,18 @@ The following optimizations are available under **/Og**:
     }
     ```
 
-   Loop optimization is much more effective when the compiler can assume no aliasing, which you set with [__restrict](../../cpp/extension-restrict.md), [noalias](../../cpp/noalias.md), or [restrict](../../cpp/restrict.md).
+   Loop optimization is much more effective when the compiler can assume no aliasing, which you set with [`__restrict`](../../cpp/extension-restrict.md), [`noalias`](../../cpp/noalias.md), or [`restrict`](../../cpp/restrict.md).
 
    > [!NOTE]
    > You can enable or disable global optimization on a function-by-function basis using the `optimize` pragma together with the `g` option.
 
-For related information, see [/Oi (Generate Intrinsic Functions)](oi-generate-intrinsic-functions.md) and [/Ox (Enable Most Speed Optimizations)](ox-full-optimization.md).
+For related information, see [`/Oi` (Generate intrinsic functions)](oi-generate-intrinsic-functions.md) and [`/Ox `(Enable most speed optimizations)](ox-full-optimization.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Enter the compiler option in the **Additional Options** box.
 

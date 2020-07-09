@@ -122,7 +122,7 @@ Even with **__forceinline**, the compiler cannot inline code in all circumstance
 
 - The function has a variable argument list.
 
-- The function uses inline assembly, unless compiled with /Og, /Ox, /O1, or /O2.
+- The function uses inline assembly, unless compiled with /Ox, /O1, or /O2.
 
 - The function is recursive and not accompanied by **#pragma inline_recursion(on)**. With the pragma, recursive functions are inlined to a default depth of 16 calls. To reduce the inlining depth, use [inline_depth](../preprocessor/inline-depth.md) pragma.
 
