@@ -8,7 +8,7 @@ ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
 ---
 # Compiler Warning (level 3) C4996
 
-Your code uses a function, class member, variable, or typedef that's marked *deprecated*. Symbols are deprecated by using a `[__declspec(deprecated)`](../../cpp/deprecated-cpp.md) modifier, or the C++14 [`[[deprecated]]`](../../cpp/attributes.md) attribute. The actual C4996 warning message is specified by the `deprecated` modifier or attribute of the declaration.
+Your code uses a function, class member, variable, or typedef that's marked *deprecated*. Symbols are deprecated by using a [`__declspec(deprecated)`](../../cpp/deprecated-cpp.md) modifier, or the C++14 [`[[deprecated]]`](../../cpp/attributes.md) attribute. The actual C4996 warning message is specified by the `deprecated` modifier or attribute of the declaration.
 
 > [!IMPORTANT]
 > This warning is always a deliberate message from the author of the header file that declares the symbol. Don't use the deprecated symbol without understanding the consequences.
