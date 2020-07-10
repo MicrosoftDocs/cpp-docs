@@ -1,6 +1,6 @@
 ---
 title: "C++ standard library header files"
-ms.date: "07/12/2019"
+ms.date: "07/01/2020"
 helpviewer_keywords: ["header files, C++ Standard Library", "C++ Standard Library, header files"]
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
 ---
@@ -35,7 +35,7 @@ Header files for the C++ standard library and extensions, by category.
 | Multithreading | [\<atomic>](atomic.md)<sup>11</sup>, [\<condition_variable>](condition-variable.md)<sup>11</sup>, [\<future>](future.md)<sup>11</sup>, [\<mutex>](mutex.md)<sup>11</sup>, [\<shared_mutex>](shared-mutex.md)<sup>14</sup>, [\<thread>](thread.md)<sup>11</sup> |
 | Ranges | \<ranges><sup>20</sup> |
 | Regular expressions | [\<regex>](regex.md)<sup>11</sup> |
-| Strings and character data | [\<cctype>](cctype.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<cuchar>](cuchar.md)<sup>11</sup>, [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md), [\<regex>](regex.md)<sup>11</sup>, [\<string>](string.md), [\<string_view>](string-view.md)<sup>17</sup> |
+| Strings and character data | [\<charconv>](charconv.md)<sup>17</sup>, [\<cctype>](cctype.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<cuchar>](cuchar.md)<sup>11</sup>, [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md), [\<regex>](regex.md)<sup>11</sup>, [\<string>](string.md), [\<string_view>](string-view.md)<sup>17</sup> |
 | Time | [\<chrono>](chrono.md)<sup>11</sup>, [\<ctime>](ctime.md) |
 
 <sup>11</sup> Added in the C++11 standard.\

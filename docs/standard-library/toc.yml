@@ -115,7 +115,14 @@
       href: ../standard-library/cfenv.md
     - name: <cfloat>
       href: ../standard-library/cfloat.md
-    - name: <chrono>
+    - name: <charconv>
+      expanded: false
+      items: 
+        - name: <charconv>
+          href: ../standard-library/charconv.md
+        - name: <charconv> functions
+          href: ../standard-library/charconv-functions.md
+      - name: <chrono>
       expanded: false
       items: 
         - name: <chrono>
