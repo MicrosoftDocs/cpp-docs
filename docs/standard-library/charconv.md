@@ -7,10 +7,8 @@ helpviewer_keywords: ["charconv header"]
 
 # &lt;charconv&gt;
 
-Quickly convert a character sequence to an integer or floating point value, and vice-versa.
+Quickly convert a character sequence to an integer or floating point value, and the other way around.
 Can be used to quickly and accurately roundtrip floating point values to JSON, text files, and so on.
-
-<statement of advantages over strtod()/strtol(), and std::to_string(), e.g. std::to_string limits precision to 6 digits, MORE JTW>
 
 ## Requirements
 
@@ -24,7 +22,7 @@ Can be used to quickly and accurately roundtrip floating point values to JSON, t
 
 ### Types
 
-|||
+| Type | Description |
 |-|:-|
 | [chars_format](chars-format-enum.md) | Specifies formatting type such as scientific, hex, and so on. |
 | [from_chars_result](from-chars-result-structure.md) | Holds the result of a `from_chars` conversion. |
@@ -32,11 +30,11 @@ Can be used to quickly and accurately roundtrip floating point values to JSON, t
 
 ### Functions
 
-|||
+| Function | Description |
 |-|:-|
-| [to_chars](charconv-functions.md#to_chars)| Convert a integer, float, or double. |
-| [from_chars](charconv-functions.md#from_chars) | Convert chars to a integer, float, or double. |
+| [to_chars](charconv-functions.md#to_chars)| Convert an integer, float, or double. |
+| [from_chars](charconv-functions.md#from_chars) | Convert chars to an integer, float, or double. |
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+[Header Files Reference](cpp-standard-library-header-files.md)

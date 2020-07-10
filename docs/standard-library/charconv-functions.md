@@ -75,9 +75,9 @@ A [to_chars_result](to-chars-result-structure.md) containing the result of the c
 
 ### Remarks
 
-Regarding floating point to chars conversions:
+About floating point to chars conversions:
 
-`value` is converted to a string using `printf()` in the "C" locale style. The conversion specifier is `f` or `e`, chosen by whichever one provides the shortest representation. In the case of a tie, `f` is used.
+`value` is converted to a string using `printf()` in the "C" locale style. The conversion specifier is `f` or `e`, chosen by whichever one provides the shortest representation. If there is a tie, `f` is used.
 
 Functions that take a floating-point `value` but not a `precision` parameter ensure that the string representation consists of the smallest  number of characters such that there is at least one digit before the radix point (if present). Parsing the representation using the corresponding `from_chars` function will recover the value exactly.
 
@@ -123,7 +123,7 @@ int main()
 }
 ```
 
-## `from_char`
+## `from_chars`
 
 Convert a sequence of `char` to an integer or floating point type.
 
@@ -177,9 +177,9 @@ points to `first`, and `from_chars_result.ec` is `errc::invalid_argument`.
 If only some characters match a number pattern, `from_chars_result.ptr` points to the first character not
 matching the pattern, or has the value of the `last` parameter if all characters match.
 
-If the parsed value is not in the range representable by the type of value, value is unmodified and `from_chars_result.ec` is `errc::result_out_of_range`.
+If the parsed value isn't in the range representable by the type of `value`, `value` is unmodified and `from_chars_result.ec` is `errc::result_out_of_range`.
 
-Otherwise, `value` is set to the parsed value, after rounding, and `from_chars_result.ec` is value-initialized, i.e. `std::errc{}`.
+Otherwise, `value` is set to the parsed value, after rounding, and `from_chars_result.ec` is value-initialized, that is `std::errc{}`.
 
 ### Example
 
