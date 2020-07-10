@@ -17,10 +17,10 @@ struct to_chars_result {
 
 ## Members
 
-`ptr`, If `ec` is the value of a value-initialized errc, the conversion was successful
-and `ptr` is one-past-the-end pointer of the characters written. Otherwise, `ptr` has the value of the to_chars() parameter `last`, and the contents of the range \[first, last) are unspecified.
+`ptr`, If `ec` is the value of a value-initialized `errc`, the conversion was successful
+and `ptr` points one-past-the-end pointer of the characters written. Otherwise, `ptr` has the value of the to_chars() parameter `last`, and the contents of the range \[first, last) are unspecified.
 
-`ec`, the conversion error code. For specific error codes, see [errc](..\standard-library/system-error-enum.md).
+`ec`, the conversion error code. For specific error codes, see [errc](system-error-enums.md#errc).
 
 ## Requirements
 
@@ -30,4 +30,4 @@ and `ptr` is one-past-the-end pointer of the characters written. Otherwise, `ptr
 
 ## See also
 
-[to_char functions](../standard-library/charconv-functions.md#to_char)
+[to_chars functions](charconv-functions.md#to_chars)

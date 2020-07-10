@@ -8,7 +8,7 @@ helpviewer_keywords: ["charconv header"]
 # &lt;charconv&gt;
 
 Quickly convert a character sequence to an integer or floating point value, and the other way around.
-Can be used to quickly and accurately roundtrip floating point values to JSON, text files, and so on.
+Use to write and roundtrip floating point values to JSON and text files.
 
 ## Requirements
 
