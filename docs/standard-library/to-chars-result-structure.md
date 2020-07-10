@@ -30,4 +30,4 @@ and `ptr` points one-past-the-end pointer of the characters written. Otherwise, 
 
 ## See also
 
-[to_chars functions](charconv-functions.md#to_chars)
+[to_chars](charconv-functions.md#to_chars)
