@@ -10,12 +10,12 @@ The \<charconv> header includes the following non-member functions:
 
 | **Non-member functions** | **Description** |
 |-|-|
-|[to_chars](#to_chars) | Convert an integer or floating point type to a sequence of `char`. |
-|[from_chars](#from_chars) | Convert a sequence of `char` to  an integer or floating point type. |
+|[to_chars](#to_chars) | Convert an integer or floating point value to a sequence of `char`. |
+|[from_chars](#from_chars) | Convert a sequence of `char` to  an integer or floating point value. |
 
 ## `to_chars`
 
-Convert an integer or floating point type value to a sequence of `char`.
+Convert an integer or floating point value to a sequence of `char`.
 
 Converts `value` into a character string by filling the range \[first, last), where \[first, last) must be a valid range. 
 If  the conversion is successful, as indicated by `to_char_result.ec`, the member ptr is the one-past-the-end pointer of the characters written. Otherwise, `to_char_result.ec` has the value `errc::value_too_large`, `to_char_result.ptr` has the value `last`, and the contents of the range
@@ -125,10 +125,10 @@ int main()
 
 ## `from_chars`
 
-Convert a sequence of `char` to an integer or floating point type.
+Convert a sequence of `char` to an integer or floating point value.
 
 ```cpp
-// char to an integer type
+// char to an integer value
 
 inline from_chars_result from_chars(const char* const first, const char* const last, char& value, const int base = 10)
 inline from_chars_result from_chars(const char* const first, const char* const last, signed char& value,const int base = 10)
@@ -142,7 +142,7 @@ inline from_chars_result from_chars(const char* const first, const char* const l
 inline from_chars_result from_chars(const char* const first, const char* const last, long long& value,const int base = 10)
 inline from_chars_result from_chars(const char* const first, const char* const last, unsigned long long& value, const int base = 10)
 
-// char to a floating point type
+// char to a floating point value
 
 inline from_chars_result from_chars(const char* const first, const char* const last, float& value,const chars_format fmt = chars_format::general)
 inline from_chars_result from_chars(const char* const first, const char* const last, double& value,const chars_format fmt = chars_format::general)
