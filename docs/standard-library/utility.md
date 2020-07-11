@@ -34,7 +34,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Objects
 
-|Template||
+|Template|Description|
 |-|-|
 |[index_sequence](../standard-library/utility-functions.md#index_sequence)|An alias template defined for the common case where `T` is std::size_t  |
 |[index_sequence_for](../standard-library/utility-functions.md#index_sequence_for)|Helper template to convert any type parameter pack into an index sequence of the same length|
