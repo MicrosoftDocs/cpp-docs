@@ -1,10 +1,10 @@
 ---
-title: "chars_format Class"
+title: "chars_format enum"
 ms.date: "07/14/2020"
 f1_keywords: ["utility/std::chars_format", "charconv/std::chars_format"]
 helpviewer_keywords: ["std::chars_format"]
 ---
-# chars_format Class
+# chars_format enum
 
 Floating-point format for primitive numerical conversion.
 
