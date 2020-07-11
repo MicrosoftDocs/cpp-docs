@@ -34,12 +34,12 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Objects
 
-|Object||
+|Template||
 |-|-|
-|[index_sequence](../standard-library/utility-functions.md#index_sequence)||
-|[index_sequence_for](../standard-library/utility-functions.md#index_sequence_for)||
-|[make_index_sequence](../standard-library/utility-functions.md#make_index_sequence)||
-|[make_integer_sequence](../standard-library/utility-functions.md#make_integer_sequence)||
+|[index_sequence](../standard-library/utility-functions.md#index_sequence)|An alias template defined for the common case where `T` is std::size_t  |
+|[index_sequence_for](../standard-library/utility-functions.md#index_sequence_for)|Helper template to convert any type parameter pack into an index sequence of the same length|
+|[make_index_sequence](../standard-library/utility-functions.md#make_index_sequence)| Helper alias template to simplify the creation of a `std::index_sequence` type. |
+|[make_integer_sequence](../standard-library/utility-functions.md#make_integer_sequence)|Helper alias template to simplify the creation of a `std::integer_sequence` type.|
 
 ### Functions
 
