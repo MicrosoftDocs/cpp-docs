@@ -1,6 +1,6 @@
 ---
 title: Using Rule Sets to Specify the C++ Rules to Run
-ms.date: 04/28/2018
+ms.date: 07/13/2020
 ms.topic: "conceptual"
 f1_keywords:
   - "vs.codeanalysis.rulesets.native"
@@ -230,17 +230,19 @@ The following ruleset schema describes the XML schema of a ruleset file. The rul
 
 Schema element details:
 
-- TLocalization: Localization information including name of the ruleset file, description of the ruleset file, name of the resource assembly containing the localized resource, and base name of the localized resource.
-- TRuleHintPaths: File paths used as hints to search for ruleset files.
-- TName: Name of the current ruleset file.
-- TDescription: Description of the current ruleset file.
-- TInclude: Path to an included ruleset with rule action.
-- TIncludeAll: Rule action for all rules.
-- TRule: Rule ID with rule action.
-- TRules: Collection of one or more rules.
-- TRuleSet: Ruleset file format consisting of localization information, rule hint paths, include all information, include information,  rules information, name, description, and tools version information.
-- TRuleAction: Enumeration describing a rule action such as an error, warning, info, hidden, or none.
-- TIncludeAction: Enumeration describing a rule action such as an error, warning, info, hidden, none, or default.
-- TIncludeAllAction: Enumeration describing a rule action such as an error, warning, info, or hidden.
+| Schema element | Description |
+|--------------------|--------------|
+| `TLocalization` | Localization information including name of the ruleset file, description of the ruleset file, name of the resource assembly containing the localized resource, and base name of the localized resource |
+| `TRuleHintPaths` | File paths used as hints to search for ruleset files |
+| `TName` | Name of the current ruleset file |
+| `TDescription` | Description of the current ruleset file |
+| `TInclude` | Path to an included ruleset with rule action |
+| `TIncludeAll` | Rule action for all rules |
+| `TRule` | Rule ID with rule action |
+| `TRules` | Collection of one or more rules |
+| `TRuleSet` | Ruleset file format consisting of localization information, rule hint paths, include all information, include information,  rules information, name, description, and tools version information |
+| `TRuleAction` | Enumeration describing a rule action such as an error, warning, info, hidden, or none |
+| `TIncludeAction` | Enumeration describing a rule action such as an error, warning, info, hidden, none, or default |
+| `TIncludeAllAction` | Enumeration describing a rule action such as an error, warning, info, or hidden |
 
 To see an example of a ruleset, see [To create a rule set in a text editor](#to-create-a-rule-set-in-a-text-editor), or any of the default rulesets stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
