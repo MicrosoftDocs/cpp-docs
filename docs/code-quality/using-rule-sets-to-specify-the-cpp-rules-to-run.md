@@ -1,6 +1,6 @@
 ---
 title: Using Rule Sets to Specify the C++ Rules to Run
-ms.date: 04/28/2018
+ms.date: 07/13/2020
 ms.topic: "conceptual"
 f1_keywords:
   - "vs.codeanalysis.rulesets.native"
@@ -9,9 +9,9 @@ f1_keywords:
 
 In Visual Studio, you can create and modify a custom *rule set* to meet specific project needs associated with code analysis. The default rule sets are stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 version 15.7 and later:** You can create custom rule sets using any text editor and apply them in command line builds no matter what build system you are using. For more information, see [/analyze:ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 version 15.7 and later:** You can create custom rule sets using any text editor and apply them in command line builds no matter what build system you're using. For more information, see [/analyze:ruleset](/cpp/build/reference/analyze-code-analysis).
 
-To create a custom C++ rule set in Visual Studio, a C/C++ project must be open in the Visual Studio IDE. You then open a standard rule set in the rule set editor and then add or remove specific rules and optionally change the action that occurs when code analysis determines that a rule has been violated.
+To create a custom C++ rule set in Visual Studio, a C/C++ project must be open in the Visual Studio IDE. You then open a standard rule set in the rule set editor and then add or remove specific rules and optionally change the action that occurs when code analysis determines a rule has been violated.
 
 To create a new custom rule set, you save it by using a new file name. The custom rule set is automatically assigned to the project.
 
@@ -27,7 +27,7 @@ To create a new custom rule set, you save it by using a new file name. The custo
 
      \- or -
 
-   - Choose **\<Browse...>** to specify an existing rule set that is not in the list.
+   - Choose **\<Browse...>** to specify an existing rule set that isn't in the list.
 
 1. Choose **Open** to display the rules in the rule set editor.
 
@@ -59,7 +59,7 @@ To create a new custom rule set, you save it by using a new file name. The custo
 
 - To add or remove fields in rule columns, choose **Column Options**.
 
-- To hide rules that do not apply to the current solution, choose **Hide rules that do not apply to the current solution**.
+- To hide rules that don't apply to the current solution, choose **Hide rules that do not apply to the current solution**.
 
 - To switch between showing and hiding rules that are assigned the Error action, choose **Show rules that can generate Code Analysis errors**.
 
@@ -230,17 +230,19 @@ The following ruleset schema describes the XML schema of a ruleset file. The rul
 
 Schema element details:
 
-- TLocalization: Localization information including name of the ruleset file, description of the ruleset file, name of the resource assembly containing the localized resource, and base name of the localized resource.
-- TRuleHintPaths: File paths used as hints to search for ruleset files.
-- TName: Name of the current ruleset file.
-- TDescription: Description of the current ruleset file.
-- TInclude: Path to an included ruleset with rule action.
-- TIncludeAll: Rule action for all rules.
-- TRule: Rule ID with rule action.
-- TRules: Collection of one or more rules.
-- TRuleSet: Ruleset file format consisting of localization information, rule hint paths, include all information, include information,  rules information, name, description, and tools version information.
-- TRuleAction: Enumeration describing a rule action such as an error, warning, info, hidden, or none.
-- TIncludeAction: Enumeration describing a rule action such as an error, warning, info, hidden, none, or default.
-- TIncludeAllAction: Enumeration describing a rule action such as an error, warning, info, or hidden.
+| Schema element | Description |
+|--------------------|--------------|
+| `TLocalization` | Localization information including name of the ruleset file, description of the ruleset file, name of the resource assembly containing the localized resource, and base name of the localized resource |
+| `TRuleHintPaths` | File paths used as hints to search for ruleset files |
+| `TName` | Name of the current ruleset file |
+| `TDescription` | Description of the current ruleset file |
+| `TInclude` | Path to an included ruleset with rule action |
+| `TIncludeAll` | Rule action for all rules |
+| `TRule` | Rule ID with rule action |
+| `TRules` | Collection of one or more rules |
+| `TRuleSet` | Ruleset file format consisting of localization information, rule hint paths, include all information, include information,  rules information, name, description, and tools version information |
+| `TRuleAction` | Enumeration describing a rule action such as an error, warning, info, hidden, or none |
+| `TIncludeAction` | Enumeration describing a rule action such as an error, warning, info, hidden, none, or default |
+| `TIncludeAllAction` | Enumeration describing a rule action such as an error, warning, info, or hidden |
 
 To see an example of a ruleset, see [To create a rule set in a text editor](#to-create-a-rule-set-in-a-text-editor), or any of the default rulesets stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
