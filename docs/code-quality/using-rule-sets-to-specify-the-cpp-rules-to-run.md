@@ -9,9 +9,9 @@ f1_keywords:
 
 In Visual Studio, you can create and modify a custom *rule set* to meet specific project needs associated with code analysis. The default rule sets are stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 version 15.7 and later:** You can create custom rule sets using any text editor and apply them in command line builds no matter what build system you are using. For more information, see [/analyze:ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 version 15.7 and later:** You can create custom rule sets using any text editor and apply them in command line builds no matter what build system you're using. For more information, see [/analyze:ruleset](/cpp/build/reference/analyze-code-analysis).
 
-To create a custom C++ rule set in Visual Studio, a C/C++ project must be open in the Visual Studio IDE. You then open a standard rule set in the rule set editor and then add or remove specific rules and optionally change the action that occurs when code analysis determines that a rule has been violated.
+To create a custom C++ rule set in Visual Studio, a C/C++ project must be open in the Visual Studio IDE. You then open a standard rule set in the rule set editor and then add or remove specific rules and optionally change the action that occurs when code analysis determines a rule has been violated.
 
 To create a new custom rule set, you save it by using a new file name. The custom rule set is automatically assigned to the project.
 
@@ -27,7 +27,7 @@ To create a new custom rule set, you save it by using a new file name. The custo
 
      \- or -
 
-   - Choose **\<Browse...>** to specify an existing rule set that is not in the list.
+   - Choose **\<Browse...>** to specify an existing rule set that isn't in the list.
 
 1. Choose **Open** to display the rules in the rule set editor.
 
@@ -59,7 +59,7 @@ To create a new custom rule set, you save it by using a new file name. The custo
 
 - To add or remove fields in rule columns, choose **Column Options**.
 
-- To hide rules that do not apply to the current solution, choose **Hide rules that do not apply to the current solution**.
+- To hide rules that don't apply to the current solution, choose **Hide rules that do not apply to the current solution**.
 
 - To switch between showing and hiding rules that are assigned the Error action, choose **Show rules that can generate Code Analysis errors**.
 
