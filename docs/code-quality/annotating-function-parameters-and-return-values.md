@@ -131,13 +131,13 @@ This article describes typical uses of annotations for simple function parameter
 
 ## Pointer parameters
 
-For the annotations in the following table, when a pointer parameter is being annotated, the analyzer reports an error if the pointer is null. This annotation applies to pointers and to any data item that's pointed to.
+For the annotations in the following table, when a pointer parameter is annotated, the analyzer reports an error if the pointer is null. This annotation applies to pointers and to any data item that's pointed to.
 
 ### Annotations and descriptions
 
 - `_In_`
 
-     Annotates input parameters that are scalars, structures, pointers to structures and the like. Explicitly may be used on simple scalars. The parameter must be valid in pre-state and will not be modified.
+     Annotates input parameters that are scalars, structures, pointers to structures and the like. Explicitly may be used on simple scalars. The parameter must be valid in pre-state and won't be modified.
 
 - `_Out_`
 
@@ -314,7 +314,7 @@ Output pointer parameters require special notation to disambiguate nullness on t
 
    `_COM_Outptr_opt_result_maybenull_`
 
-   The returned pointer has COM semantics, and therefore carries an `_On_failure_` post-condition that the returned pointer is null.
+   The returned pointer has COM semantics, which is why it carries an `_On_failure_` post-condition that the returned pointer is null.
 
 - `_Outptr_result_buffer_(s)`
 
@@ -516,10 +516,6 @@ The return value of a function resembles an `_Out_` parameter but is at a differ
      The buffer size in bytes of a parameter `pM` of type `MyStruct *` is then taken to be:
 
      `min(pM->nSize, sizeof(MyStruct))`
-
-## Related resources
-
-[Code Analysis Team Blog](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## See also
 

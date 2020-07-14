@@ -11,7 +11,7 @@ Use this wizard to create an MFC class from an interface in an available type li
 > [!NOTE]
 > You do not need to create your MFC project with Automation enabled to add a class from a type library.
 
-A type library contains a binary description of the interfaces exposed by a component, defining the methods along with their parameters and return types. Your type library must be registered for it to appear in the **Available type libraries** list in the Add Class from Typelib Wizard. See "Inside Distributed COM: Type Libraries and Language Integration" in the MSDN library for more information.
+A type library contains a binary description of the interfaces exposed by a component, defining the methods along with their parameters and return types. Your type library must be registered for it to appear in the **Available type libraries** list in the Add Class from Typelib Wizard.
 
 ### To add an MFC class from a type library
 

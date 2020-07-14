@@ -34,7 +34,7 @@ With a small amount of extra code, you can:
 
 Your recordset still contains data members for the columns you knew about at design time. It also contains a small amount of extra code that dynamically determines whether any new columns have been added to your target table and, if so, binds these new columns to dynamically allocated storage (rather than to recordset data members).
 
-This topic does not cover other dynamic binding cases, such as dropped tables or columns. For those cases, you need to use ODBC API calls more directly. For information, see the ODBC SDK *Programmer's Reference* on the MSDN Library CD.
+This topic does not cover other dynamic binding cases, such as dropped tables or columns. For those cases, you need to use ODBC API calls more directly. For information, see the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference).
 
 ## <a name="_core_how_to_bind_columns_dynamically"></a> How to Bind Columns Dynamically
 

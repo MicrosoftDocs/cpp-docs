@@ -41,7 +41,7 @@ The following table lists the member functions provided by `CRecordset` to suppo
 
 Although bulk row fetching is a performance gain, certain features operate differently. Before you decide to implement bulk row fetching, consider the following:
 
-- The framework automatically calls the `DoBulkFieldExchange` member function to transfer data from the data source to the recordset object. However, data is not transferred from the recordset back to the data source. Calling the `AddNew`, `Edit`, `Delete`, or `Update` member functions results in a failed assertion. Although `CRecordset` currently does not provide a mechanism for updating bulk rows of data, you can write your own functions by using the ODBC API function `SQLSetPos`. For more information about `SQLSetPos`, see the *ODBC SDK Programmer's Reference* in the MSDN documentation.
+- The framework automatically calls the `DoBulkFieldExchange` member function to transfer data from the data source to the recordset object. However, data is not transferred from the recordset back to the data source. Calling the `AddNew`, `Edit`, `Delete`, or `Update` member functions results in a failed assertion. Although `CRecordset` currently does not provide a mechanism for updating bulk rows of data, you can write your own functions by using the ODBC API function `SQLSetPos`. For more information about `SQLSetPos`, see the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference).
 
 - The member functions `IsDeleted`, `IsFieldDirty`, `IsFieldNull`, `IsFieldNullable`, `SetFieldDirty`, and `SetFieldNull` cannot be used on recordsets that implement bulk row fetching. However, you can call `GetRowStatus` in place of `IsDeleted`, and `GetODBCFieldInfo` in place of `IsFieldNullable`.
 

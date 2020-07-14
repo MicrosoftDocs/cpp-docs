@@ -12,7 +12,7 @@ Most of the UWP documentation is in the Windows content tree at [Universal Windo
 
 For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a new standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API. Unlike the C++/CX implementation. C++/WinRT doesn't use non-standard syntax or Microsoft language extensions, and it takes full advantage of the C++ compiler to create highly-optimized output. For more information, see [Introduction to C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt).
 
-You can use the Desktop Bridge app converter to package your existing desktop application for deployment through the Microsoft Store. For more information, see [Using Visual C++ Runtime in Centennial project](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) and [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
+You can use the Desktop Bridge app converter to package your existing desktop application for deployment through the Microsoft Store. For more information, see [Using Visual C++ Runtime in Centennial project](https://devblogs.microsoft.com/cppblog/using-visual-c-runtime-in-centennial-project/) and [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
 ## UWP apps that use C++/CX
 

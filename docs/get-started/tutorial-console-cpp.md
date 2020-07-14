@@ -375,7 +375,7 @@ Congratulations! You've completed the code for the calculator app, and built and
 
 ## Next steps
 
-[Learn more about Visual Studio for C++](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
+[Learn more about Visual Studio for C++](https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
 ::: moniker-end
 
@@ -746,6 +746,6 @@ Congratulations! You've completed the code for the calculator app, and built and
 
 ## Next steps
 
-[Learn more about Visual Studio for C++](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
+[Learn more about Visual Studio for C++](https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
 ::: moniker-end
