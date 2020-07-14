@@ -51,7 +51,7 @@ The functions return the data output. There is no error return.
 
 The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double word, respectively, to the specified output port. The *port* argument can be any unsigned integer in the range 0 - 65,535; *databyte* can be any integer in the range 0 - 255; and *dataword* can be any value in the range of an integer, an unsigned short integer, and an unsigned long integer, respectively.
 
-Because these functions write directly to an I/O port, they cannot be used in user code. For information about using I/O ports in these operating systems, search for "Serial Communications in Win32" at MSDN.
+Because these functions write directly to an I/O port, they cannot be used in user-mode Windows code. For information about using I/O ports in the Windows operating system, see [Serial Communications](https://docs.microsoft.com/previous-versions/ff802693(v=msdn.10)).
 
 The `outp` and `outpw` names are older, deprecated names for the `_outp` and `_outpw` functions. For more information, see [POSIX function names](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names).
 
