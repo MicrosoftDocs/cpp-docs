@@ -70,7 +70,7 @@ A function that has the `restrict(amp)` clause has the following limitations:
 
   - Varargs.
 
-For a discussion of function limitations, see [restrict(amp) restrictions](https://docs.microsoft.com/en-us/archive/blogs/nativeconcurrency/restrictamp-restrictions-part-0-of-n-introduction).
+For a discussion of function limitations, see [restrict(amp) restrictions](/archive/blogs/nativeconcurrency/restrictamp-restrictions-part-0-of-n-introduction).
 
 ## Example
 

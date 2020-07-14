@@ -1,5 +1,5 @@
 ---
-title: Create a C++ console app project
+title: "Create a console calculator in C++"
 description: "Create a Hello World console app and a calculator app in Visual C++"
 ms.custom: "mvc"
 ms.date: 08/19/2019
@@ -7,11 +7,11 @@ ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
-# Create a C++ console app project
+# Create a console calculator in C++
 
 ::: moniker range=">=vs-2019"
 
-The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create in Visual Studio in this article, and then we'll move on to something more challenging: a calculator app.
+The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create first in Visual Studio in this article, and then we'll move on to something more challenging: a calculator app.
 
 ## Prerequisites
 

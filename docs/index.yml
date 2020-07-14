@@ -63,7 +63,7 @@ conceptualContent:
     # Card
     - title: Write C++ and C apps in Visual Studio
       links:
-        - text: Create a console app 
+        - text: Create a console calculator app 
           url: get-started/tutorial-console-cpp.md
           itemType: tutorial
         - text: Create a Windows Desktop app with Win32
