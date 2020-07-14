@@ -139,6 +139,9 @@ As in the **printf** function, the **#** flag may prefix any formatting code. In
 
 The ISO 8601 week and week-based year produced by **%V**, **%g**, and **%G**, uses a week that begins on Monday, where week 1 is the week that contains January 4th, which is the first week that includes at least four days of the year. If the first Monday of the year is the 2nd, 3rd, or 4th, the preceding days are part of the last week of the preceding year. For those days, **%V** is replaced by 53, and both **%g** and **%G** are replaced by the digits of the preceding year.
 
+> [!NOTE]
+> When using one of the `strftime` functions with a `tm` pointer returned from `gmtime`, the values printed via the `%Z` and `%z` specifiers will not be accurate. This is because the `tm` struct as specified by the C Standard does not contain the information for time zone name nor offset. Instead, the timezone information is populated via the global variables [`_timezone` and `_dstbias`](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+
 ## Requirements
 
 |Routine|Required header|
