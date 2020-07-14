@@ -20,7 +20,7 @@ The **/JMC** option requires that your code links to the C Runtime Library (CRT)
 
 By default, the **/JMC** compiler option is off. However, starting in Visual Studio 2017 version 15.8 this option is enabled in most Visual Studio project templates. To explicitly disable this option, use the **/JMC-** option on the command line. In Visual Studio, open the project Property Pages dialog box, and change the **Support Just My Code Debugging** property in the **Configuration Properties** > **C/C++** > **General** property page to **No**.
 
-For more information, see [C++ Just My Code](/visualstudio/debugger/just-my-code#BKMK_C___Just_My_Code) in [Specify whether to debug only user code using Just My Code in Visual Studio](/visualstudio/debugger/just-my-code), and the Visual C++ Team Blog post [Announcing C++ Just My Code Stepping in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/).
+For more information, see [C++ Just My Code](/visualstudio/debugger/just-my-code#BKMK_C___Just_My_Code) in [Specify whether to debug only user code using Just My Code in Visual Studio](/visualstudio/debugger/just-my-code), and the Visual C++ Team Blog post [Announcing C++ Just My Code Stepping in Visual Studio](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/).
 
 ### To set this compiler option in the Visual Studio development environment
 

@@ -120,7 +120,7 @@ Before you can build a C or C++ program on the command line, verify that the too
    > If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104, your developer command prompt is not set up correctly. For information on how to fix this issue, go back to the **Open a developer command prompt** section.
 
    > [!NOTE]
-   > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box on this MSDN page to look for the error number.
+   > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box to look for the error number.
 
 1. To run the hello.exe program, at the command prompt, enter `hello`.
 
