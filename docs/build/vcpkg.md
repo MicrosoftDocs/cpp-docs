@@ -161,7 +161,7 @@ Run **`vcpkg integrate install`** to configure Visual Studio Code on Linux/macOS
 
 ## Target Linux from Windows via WSL
 
-You can produce Linux binaries on a Windows machine by using the Windows Subsystem for Linux, or WSL. Follow the instructions to [Set up WSL on Windows 10](/windows/wsl/install-win10). Then, configure it with the [Visual Studio extension for Linux](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/). It's okay to put all your built libraries for Windows and Linux into the same folder. They're accessible from both Windows and WSL.
+You can produce Linux binaries on a Windows machine by using the Windows Subsystem for Linux, or WSL. Follow the instructions to [Set up WSL on Windows 10](/windows/wsl/install-win10). Then, configure it with the [Visual Studio extension for Linux](https://devblogs.microsoft.com/cppblog/targeting-windows-subsystem-for-linux-from-visual-studio/). It's okay to put all your built libraries for Windows and Linux into the same folder. They're accessible from both Windows and WSL.
 
 ## <a name="export_binaries_per_project"></a> Export compiled binaries and headers
 
