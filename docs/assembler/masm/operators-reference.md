@@ -122,7 +122,7 @@ ms.assetid: c069cab7-d6b0-4f82-a6ce-0ca3fc7e6428
       [`HIGH` (high 8 bits of lowest 16 bits)](operator-high.md)<br/>[`HIGH32` (high 32 bits of 64 bits)](operator-high32.md)<br/>[`HIGHWORD` (high 16 bits of lowest 32 bits)](operator-highword.md)<br/>[`LENGTH` (number of elements in array)](operator-length.md)<br/>[`LENGTHOF` (number of elements in array)](operator-lengthof.md)<br/>[`LOW` (low 8 bits)](operator-low.md)
    :::column-end:::
    :::column span="":::
-      [`LOW32` (low 32 bits)](operator-low32.md)<br/>[`LOWWORD` (low 16 bits)](operator-lowword.md)[`OPATTR` (get argument type info)]<br/>(operator-opattr.md)<br/>[`PTR` (pointer to or as type)](operator-ptr.md)<br/>[`SHORT` (mark short label type)](operator-short.md)
+      [`LOW32` (low 32 bits)](operator-low32.md)<br/>[`LOWWORD` (low 16 bits)](operator-lowword.md)<br/>[`OPATTR` (get argument type info)](operator-opattr.md)<br/>[`PTR` (pointer to or as type)](operator-ptr.md)<br/>[`SHORT` (mark short label type)](operator-short.md)
    :::column-end:::
    :::column span="":::
       [`SIZE` (size of type or variable)](operator-size.md)<br/>[`SIZEOF` (size of type or variable)](operator-sizeof.md)<br/>[`THIS` (current location)](operator-this.md)<br/>[`TYPE` (get expression type)](operator-type.md)<br/>[`.TYPE` (get argument type info)](operator-dot-type.md)
