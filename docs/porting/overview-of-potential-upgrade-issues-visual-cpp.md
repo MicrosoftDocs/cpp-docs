@@ -150,7 +150,7 @@ Over the years, secure versions of C runtime functions have been introduced. Alt
 
 Over the years, Windows APIs and data types have been added, and sometimes changed or removed. Also, other SDKs that did not belong to the core operating system have come and gone. Older programs may therefore contain calls to APIs that no longer exist. They may also contain calls to APIs in other Microsoft SDKs that are no longer supported. If you see an error involving a Windows API or an API from an older Microsoft SDK, it's possible that an API has been removed and/or superseded by a newer, more secure function.
 
-For more information about the current API set and the minimum supported operating systems for a specific Windows API, see [Microsoft API and reference catalog](https://msdn.microsoft.com/library) and navigate to the API in question.
+For more information about the current API set and the minimum supported operating systems for a specific Windows API, see [API Index for desktop Windows applications](/windows/win32/apiindex/api-index-portal) and navigate to the API in question.
 
 ### Windows version
 

@@ -592,7 +592,7 @@ The Visual C++ Build tools (previously available as a standalone product) are no
 
 ## Linux development with C++
 
-The popular extension [Visual C++ for Linux Development](https://visualstudiogallery.msdn.microsoft.com/725025cf-7067-45c2-8d01-1e0fd359ae6e) is now part of Visual Studio. This installation provides everything you need to develop and debug C++ applications running on a Linux environment.
+The popular extension [Visual C++ for Linux Development](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.VisualCforLinuxDevelopment) is now part of Visual Studio. This installation provides everything you need to develop and debug C++ applications running on a Linux environment.
 
 ##### Visual Studio 2017 version 15.2
 

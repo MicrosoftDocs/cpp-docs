@@ -1,5 +1,5 @@
 ---
-title: Create a C++ console app project
+title: "Create a console calculator in C++"
 description: "Create a Hello World console app and a calculator app in Visual C++"
 ms.custom: "mvc"
 ms.date: 08/19/2019
@@ -7,11 +7,11 @@ ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
-# Create a C++ console app project
+# Create a console calculator in C++
 
 ::: moniker range=">=vs-2019"
 
-The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create in Visual Studio in this article, and then we'll move on to something more challenging: a calculator app.
+The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create first in Visual Studio in this article, and then we'll move on to something more challenging: a calculator app.
 
 ## Prerequisites
 
@@ -375,7 +375,7 @@ Congratulations! You've completed the code for the calculator app, and built and
 
 ## Next steps
 
-[Learn more about Visual Studio for C++](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
+[Learn more about Visual Studio for C++](https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
 ::: moniker-end
 
@@ -746,6 +746,6 @@ Congratulations! You've completed the code for the calculator app, and built and
 
 ## Next steps
 
-[Learn more about Visual Studio for C++](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
+[Learn more about Visual Studio for C++](https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
 ::: moniker-end

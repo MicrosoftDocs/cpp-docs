@@ -17,7 +17,7 @@ The bitwise shift operators are the right-shift operator (**&gt;&gt;**), which m
 ## Remarks
 
 > [!IMPORTANT]
-> The following descriptions and examples are valid on Windows for x86 and x64 architectures. The implementation of left-shift and right-shift operators is significantly different on Windows for ARM devices. For more information, see the "Shift Operators" section of the [Hello ARM](https://blogs.msdn.com/b/vcblog/archive/2012/10/25/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c.aspx) blog post.
+> The following descriptions and examples are valid on Windows for x86 and x64 architectures. The implementation of left-shift and right-shift operators is significantly different on Windows for ARM devices. For more information, see the "Shift Operators" section of the [Hello ARM](https://devblogs.microsoft.com/cppblog/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c/) blog post.
 
 ## Left Shifts
 

@@ -29,8 +29,6 @@ Use this wizard to add an MFC class from an available type library. The wizard c
 
    Lists the type libraries currently registered in the system. Select a type library from this list to display its interfaces in the **Interfaces** list.
 
-   See "Inside Distributed COM: Type Libraries and Language Integration" in the MSDN library for more information about registering type libraries.
-
 - **Location**
 
    Specifies the location of the type library. If you click **File** under **Add Class From**, you can provide the location of the file containing the type library. To browse to the location of the file, click the ellipsis button.

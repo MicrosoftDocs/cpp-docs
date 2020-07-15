@@ -27,10 +27,10 @@ void * memcpy(
 );
 ```
 
-Can you tell what this function does? When a function is implemented or called, certain properties must be maintained to ensure program correctness. Just by looking at a declaration such as the one in the example, you don't know what they are. Without SAL annotations, you'd have to rely on documentation or code comments. Here's what the MSDN documentation for `memcpy` says:
+Can you tell what this function does? When a function is implemented or called, certain properties must be maintained to ensure program correctness. Just by looking at a declaration such as the one in the example, you don't know what they are. Without SAL annotations, you'd have to rely on documentation or code comments. Here's what the documentation for `memcpy` says:
 
-> "Copies count bytes of src to dest. If the source and destination overlap, the behavior of memcpy is undefined. Use memmove to handle overlapping regions.\
-> **Security Note:** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see Avoiding Buffer Overruns."
+> "`memcpy` copies *count* bytes from *src* to *dest*; `wmemcpy` copies *count* wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy` is undefined. Use `memmove` to handle overlapping regions.\
+> **Important:** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see Avoiding Buffer Overruns."
 
 The documentation contains a couple of bits of information that suggest that your code has to maintain certain properties to ensure program correctness:
 
@@ -49,7 +49,7 @@ void * memcpy(
 );
 ```
 
-Notice that these annotations resemble the information in the MSDN documentation, but they are more concise and they follow a semantic pattern. When you read this code, you can quickly understand the properties of this function and how to avoid buffer overrun security issues. Even better, the semantic patterns that SAL provides can improve the efficiency and effectiveness of automated code analysis tools in the early discovery of potential bugs. Imagine that someone writes this buggy implementation of `wmemcpy`:
+Notice that these annotations resemble the information in the documentation, but they are more concise and they follow a semantic pattern. When you read this code, you can quickly understand the properties of this function and how to avoid buffer overrun security issues. Even better, the semantic patterns that SAL provides can improve the efficiency and effectiveness of automated code analysis tools in the early discovery of potential bugs. Imagine that someone writes this buggy implementation of `wmemcpy`:
 
 ```cpp
 
@@ -392,10 +392,6 @@ Here are some guidelines:
 - Annotate driver properties and other domain-specific properties.
 
 Or you can annotate all parameters to make your intent clear throughout and to make it easy to check that annotations have been done.
-
-## Related Resources
-
-[Code Analysis Team Blog](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## See also
 

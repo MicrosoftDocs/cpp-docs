@@ -1406,7 +1406,7 @@ With support for generalized **constexpr** and non-static data member initializa
 
 ### C++11: Expression SFINAE support in more libraries
 
-The compiler continues to improve its support for expression SFINAE. It's required for template argument deduction and substitution where **decltype** and **constexpr** expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in Visual Studio 2017 RC](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/expression-sfinae-improvements-in-vs-2015-update-3).
+The compiler continues to improve its support for expression SFINAE. It's required for template argument deduction and substitution where **decltype** and **constexpr** expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in Visual Studio 2017 RC](https://devblogs.microsoft.com/cppblog/expression-sfinae-improvements-in-vs-2015-update-3/).
 
 ### C++14: NSDMI for Aggregates
 

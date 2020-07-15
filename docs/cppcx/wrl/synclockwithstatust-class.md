@@ -83,7 +83,7 @@ The result of a wait operation on the object that is based on the `SyncLockWithS
 
 Retrieves the wait status of the current `SyncLockWithStatusT` object.
 
-The GetStatus() function retrieves the value of the underlying [status_](#status) data member. When an object based on the `SyncLockWithStatusT` class performs a lock operation, the object first waits for the object to become available. The result of that wait operation is stored in the `status_` data member. The possible values of the `status_` data member are the return values of the wait operation. For more information, see the return values of the `WaitForSingleObjectEx()` function in the MSDN Library.
+The GetStatus() function retrieves the value of the underlying [status_](#status) data member. When an object based on the `SyncLockWithStatusT` class performs a lock operation, the object first waits for the object to become available. The result of that wait operation is stored in the `status_` data member. The possible values of the `status_` data member are the return values of the wait operation. For more information, see the return values of the [`WaitForSingleObjectEx`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) function.
 
 ## <a name="islocked"></a> SyncLockWithStatusT::IsLocked
 
