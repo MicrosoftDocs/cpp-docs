@@ -405,4 +405,4 @@ You run all the threads in a given tile to the line that contains the cursor by 
 [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)<br/>
 [How to: Use the GPU Threads Window](/visualstudio/debugger/how-to-use-the-gpu-threads-window)<br/>
 [How to: Use the Parallel Watch Window](/visualstudio/debugger/how-to-use-the-parallel-watch-window)<br/>
-[Analyzing C++ AMP Code with the Concurrency Visualizer](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
+[Analyzing C++ AMP Code with the Concurrency Visualizer](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)

@@ -23,15 +23,15 @@ Outputs, at a port, a byte (`outp`, `_outp`), a word (`outpw`, `_outpw`), or a d
 ```cpp
 int _outp(
    unsigned short port,
-   int databyte
+   int data_byte
 );
 unsigned short _outpw(
    unsigned short port,
-   unsigned short dataword
+   unsigned short data_word
 );
 unsigned long _outpd(
    unsigned short port,
-   unsigned long dataword
+   unsigned long data_word
 );
 ```
 
@@ -40,18 +40,20 @@ unsigned long _outpd(
 *port*\
 Port number.
 
-*databyte, dataword*\
+*data_byte, data_word*\
 Output values.
 
 ## Return Value
 
-The functions return the data output. There is no error return.
+The functions return the data output. There's no error return.
 
 ## Remarks
 
-The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double word, respectively, to the specified output port. The *port* argument can be any unsigned integer in the range 0 - 65,535; *databyte* can be any integer in the range 0 - 255; and *dataword* can be any value in the range of an integer, an unsigned short integer, and an unsigned long integer, respectively.
+The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double word, respectively, to the specified output port. The *port* argument can be any unsigned integer in the range 0 - 65,535. *data_byte* can be any integer in the range 0 - 255. *data_word* can be any value in the range of an integer, an unsigned short integer, and an unsigned long integer, respectively.
 
-Because these functions write directly to an I/O port, they cannot be used in user-mode Windows code. For information about using I/O ports in the Windows operating system, see [Serial Communications](https://docs.microsoft.com/previous-versions/ff802693(v=msdn.10)).
+Because these functions write directly to an I/O port, they can't be used in user-mode Windows code.
+
+For information about using I/O ports in the Windows operating system, see [Serial Communications](https://docs.microsoft.com/previous-versions/ff802693(v=msdn.10)).
 
 The `outp` and `outpw` names are older, deprecated names for the `_outp` and `_outpw` functions. For more information, see [POSIX function names](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names).
 
@@ -72,4 +74,4 @@ All versions of the [C run-time libraries](../c-runtime-library/crt-library-feat
 ## See also
 
 [Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)\
-[inp, inpw, _inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)
+[`inp`, `inpw`, `_inp`, `_inpw`, `_inpd`](../c-runtime-library/inp-inpw-inpd.md)

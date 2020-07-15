@@ -30,7 +30,7 @@ landingContent:
         links:
           - text: Hello world in Visual Studio with C++
             url: ../build/vscpp-step-1-create.md
-          - text: Create a calculator in C++
+          - text: Create a console calculator in C++
             url: ../get-started/tutorial-console-cpp.md
       - linkListType: video
         links:
