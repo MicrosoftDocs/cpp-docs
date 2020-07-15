@@ -166,7 +166,7 @@ The device paths of three special accelerators are available as properties of th
 
 - [accelerator::direct3d_warp Data Member](reference/accelerator-class.md#direct3d_warp): This accelerator provides a fallback solution for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).
 
-- [accelerator::cpu_accelerator Data Member](reference/accelerator-class.md#cpu_accelerator): You can use this accelerator for setting up staging arrays. It cannot execute C++ AMP code. For more information, see the [Staging Arrays in C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2011/11/09/staging-arrays-in-c-amp/) post on the Parallel Programming in Native Code blog.
+- [accelerator::cpu_accelerator Data Member](reference/accelerator-class.md#cpu_accelerator): You can use this accelerator for setting up staging arrays. It cannot execute C++ AMP code. For more information, see the [Staging Arrays in C++ AMP](/archive/blogs/nativeconcurrency/staging-arrays-in-c-amp) post on the Parallel Programming in Native Code blog.
 
 ## Interoperability
 

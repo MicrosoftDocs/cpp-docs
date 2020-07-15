@@ -88,9 +88,9 @@ For example, if you use an AVX2 intrinsic, but don't specify the [/ARCH:AVX2](..
 
 C++ language conformance work that was done in Visual Studio 2005 made **wchar_t** a native type by default. If not all files have been compiled by using the same **/Zc:wchar_t** settings, type references may not resolve to compatible types. Make sure **wchar_t** types in all library and object files are compatible. Either update from a **wchar_t** typedef, or use consistent **/Zc:wchar_t** settings when you compile.
 
-## Third-party library issues and Vcpkg
+## Third-party library issues and vcpkg
 
-If you see this error when you're trying to configure a third-party library as part of your build, consider using [Vcpkg](../../vcpkg.md), the Visual C++ Package Manager, to install and build the library. Vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project. For more information, see the related [Visual C++ Blog](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) post.
+If you see this error when you're trying to configure a third-party library as part of your build, consider using [vcpkg](../../vcpkg.md), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## Diagnosis tools
 

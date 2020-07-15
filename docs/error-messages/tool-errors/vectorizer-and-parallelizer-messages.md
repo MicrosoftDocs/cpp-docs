@@ -955,7 +955,7 @@ void code_1505(int *A, int *B)
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md)
 [Auto-parallelization and auto-vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md) \
-[Auto-Vectorizer in Visual Studio 2012 – Overview](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/) \
+[Auto-Vectorizer in Visual Studio 2012 – Overview](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview) \
 [#pragma loop()](../../preprocessor/loop.md) \
 [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md) \
 [/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) \

@@ -53,7 +53,7 @@ The following table shows the sequence of RFX operations when you open a records
 |||6. ODBC does the move and fills in the data.|
 ||7. Fix up the data for C++.||
 
-Recordsets use ODBC's prepared execution to allow for fast requerying with the same SQL statement. For more information about prepared execution, see the ODBC SDK *Programmer's Reference* in the MSDN Library.
+Recordsets use ODBC's prepared execution to allow for fast requerying with the same SQL statement. For more information about prepared execution, see the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference).
 
 ### <a name="_mfc_rfx.3a_.scrolling"></a> RFX: Scrolling
 

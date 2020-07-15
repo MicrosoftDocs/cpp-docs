@@ -189,7 +189,7 @@ If you want complete control over your deployment, you can append the following 
 
 ## Next steps
 
-- To debug ARM devices on Linux, see this blog post: [Debugging an embedded ARM device in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/).
+- To debug ARM devices on Linux, see this blog post: [Debugging an embedded ARM device in Visual Studio](https://devblogs.microsoft.com/cppblog/debugging-an-embedded-arm-device-in-visual-studio/).
 
 ## See also
 
