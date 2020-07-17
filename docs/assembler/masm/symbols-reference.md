@@ -1,6 +1,6 @@
 ---
 title: "Symbols reference"
-ms.date: "11/06/2018"
+ms.date: 07/15/2020
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), symbols reference"]
 ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 ---
@@ -8,46 +8,96 @@ ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 
 ## Date and time information
 
-|||
-|-|-|
-|[\@Date](at-date.md)|[\@Time](at-time.md)|
+:::row:::
+   :::column span="":::
+      [`@Date`](at-date.md)
+   :::column-end:::
+   :::column span="3":::
+      [`@Time`](at-time.md)
+   :::column-end:::
+:::row-end:::
 
 ## Environment information
 
-|||
-|-|-|
-|[\@Cpu](at-cpu.md)|[\@Environ](at-environ.md)|
-|[\@Interface](at-interface.md)|[\@Version](at-version.md)|
+:::row:::
+   :::column span="":::
+      [`@Cpu`](at-cpu.md)
+   :::column-end:::
+   :::column span="":::
+      [`@Environ`](at-environ.md)
+   :::column-end:::
+   :::column span="":::
+      [`@Interface`](at-interface.md)
+   :::column-end:::
+   :::column span="":::
+      [`@Version`](at-version.md)
+   :::column-end:::
+:::row-end:::
 
 ## File information
 
-|||
-|-|-|
-|[\@FileCur](at-filecur.md)|[\@FileName](at-filename.md)|
-|[\@Line](at-line.md)||
+:::row:::
+   :::column span="":::
+      [`@FileCur`](at-filecur.md)
+   :::column-end:::
+   :::column span="":::
+      [`@FileName`](at-filename.md)
+   :::column-end:::
+   :::column span="2":::
+      [`@Line`](at-line.md)
+   :::column-end:::
+:::row-end:::
 
 ## Macro functions
 
-|||
-|-|-|
-|[\@CatStr](at-catstr.md)|[\@InStr](at-instr.md)|
-|[\@SizeStr](at-sizestr.md)|[\@SubStr](at-substr.md)|
+:::row:::
+   :::column span="":::
+      [`@CatStr`](at-catstr.md)
+   :::column-end:::
+   :::column span="":::
+      [`@InStr`](at-instr.md)
+   :::column-end:::
+   :::column span="":::
+      [`@SizeStr`](at-sizestr.md)
+   :::column-end:::
+   :::column span="":::
+      [`@SubStr`](at-substr.md)
+   :::column-end:::
+:::row-end:::
 
 ## Miscellaneous
 
-||||
-|-|-|-|
-|[\$](dollar.md)|[\?](q.md)|[\@\@:](at-at.md)|
-|[\@B](at-b.md)|[\@F](at-f.md)||
+:::row:::
+   :::column span="":::
+      [`$`](dollar.md)<br/>[`?`](q.md)
+   :::column-end:::
+   :::column span="":::
+      [`@@:`](at-at.md)
+   :::column-end:::
+   :::column span="":::
+      [`@B`](at-b.md)
+   :::column-end:::
+   :::column span="":::
+      [`@F`](at-f.md)
+   :::column-end:::
+:::row-end:::
 
 ## Segment information
 
-||||
-|-|-|-|
-|[\@code](at-code.md)|[\@CodeSize](at-codesize.md)|[\@CurSeg](at-curseg.md)|
-|[\@data](at-data.md)|[\@DataSize](at-datasize.md)|[\@fardata](at-fardata.md)|
-|[\@fardata?](at-fardata-q.md)|[\@Model](at-model.md)|[\@stack](at-stack.md)|
-|[\@WordSize](at-wordsize.md)|||
+:::row:::
+   :::column span="":::
+      [`@code`](at-code.md)<br/>[`@CodeSize`](at-codesize.md)<br/>[`@CurSeg`](at-curseg.md)
+   :::column-end:::
+   :::column span="":::
+      [`@data`](at-data.md)<br/>[`@DataSize`](at-datasize.md)<br/>[`@fardata`](at-fardata.md)
+   :::column-end:::
+   :::column span="":::
+      [`@fardata?`](at-fardata-q.md)<br/>[`@Model`](at-model.md)
+   :::column-end:::
+   :::column span="":::
+      [`@stack`](at-stack.md)<br/>[`@WordSize`](at-wordsize.md)
+   :::column-end:::
+:::row-end:::
 
 ## See also
 
