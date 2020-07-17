@@ -30,12 +30,85 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2017 version 15.8 | 19.15.26726.0 |
 | Visual Studio 2017 version 15.9 | 19.16.26926.0 |
 | Visual Studio 2019 RTM | 19.20.27004.0 |
+| Visual Studio 2019 version 16.1 | 19.21.27702.0 |
+| Visual Studio 2019 version 16.2 | 19.22.27905.0 |
+| Visual Studio 2019 version 16.3 | 19.23.28105.0 |
+| Visual Studio 2019 version 16.4| 19.24.28314.0 |
+| Visual Studio 2019 version 16.5 | 19.25.28610.0 |
+| Visual Studio 2019 version 16.6 | 19.26.28805.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the `/Wv` option. The compiler reports all warnings that match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, `/Wv:17` reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use `/Wv:19.00.23506`. Use `/Wv:19.11` to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the `/Wv` compiler option. The `/Wv` option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= vs-2019"
+
+## Warnings introduced in Visual Studio 2019 version 16.6 (compiler version 19.26.28805.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.25`.
+
+|||
+|-|-|
+| C5207 | `the simple requirement asserts the validity of expression 'e->id'. Did you mean '{ e } -> id'? You can suppress the warning using '{ e->id }'` |
+| C5208 | `unnamed class used in typedef name cannot declare members other than non-static data members, member enumerations, or member classes` |
+
+## Warnings introduced in Visual Studio 2019 version 16.5 (compiler version 19.25.28610.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.24`.
+
+|||
+|-|-|
+| C5061 | `the use of a comma operator as a subscript expression has been deprecated` |
+| C5062 | `enum direct list initialization between 'type-1' and 'type-2' is no longer supported` |
+| C5063 | `'std::is_constant_evaluated' always evaluates to true in manifestly constant-evaluated expressions` |
+| C5108 | `__VA_OPT__ is reserved for use in variadic macros` |
+| C5204 | `'type-name': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly` |
+| C5205 | `delete of an abstract class 'type-name' that has a non-virtual destructor results in undefined behavior` |
+| C5206 | `deduced return types for coroutines is a non-standard extension` |
+
+## Warnings introduced in Visual Studio 2019 version 16.4 (compiler version 19.24.28314.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.23`.
+
+|||
+|-|-|
+| C5200 | `feature 'feature-name' requires compiler flag 'option-name'` | // Warning equivalent to C2429 for language features
+| C5201 | `a module declaration can appear only at the start of a translation unit unless a global module fragment is used` |
+| C5202 | `a global module fragment can only contain preprocessor directives` |
+| C5203 | `a parenthesized declarator name after 'explicit' will be considered an explicit-specifier in C++20` |
+
+## Warnings introduced in Visual Studio 2019 version 16.3 (compiler version 19.23.28105.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.22`.
+
+|||
+|-|-|
+| C4856 | `'value' is not a valid argument for '/d1initAll:FillPattern' (value must be between 0 and 255). Command-line flag ignored` |
+| C4857 | `C++/CLI mode does not support C++ versions newer than C++17; setting language to /std:c++17` |
+
+## Warnings introduced in Visual Studio 2019 version 16.2 (compiler version 19.22.27905.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.21`.
+
+|||
+|-|-|
+| C4855 | `implicit capture of 'this' via '[=]' is deprecated in 'version'` |
+| C5054 | `operator 'operator-name': deprecated between enumerations of different types` |
+| C5055 | `operator 'operator-name': deprecated between enumerations and floating-point types` |
+| C5056 | `operator 'operator-name': deprecated for array types` |
+| C5057 | `header unit reference to 'name' already exists.  Ignoring header unit 'header-name'` |
+| C5058 | `file system error: cannot find header file 'file-name' for header unit 'unit-name'` |
+| C5059 | `runtime checks and address sanitizer is not currently supported - disabling runtime checks` |
+| C5060 | `/Qpar and address sanitizer not currently supported - disabling auto-parallelization` |
+
+## Warnings introduced in Visual Studio 2019 version 16.1 (compiler version 19.21.27702.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.20`.
+
+|||
+|-|-|
+| C5052 | `Keyword 'keyword-name' was introduced in C++<version> and requires use of the 'option-name' command-line option` |
+| C5053 | `support for 'explicit(<expr>)' in C++17 and earlier is a vendor extension` |
 
 ## Warnings introduced in Visual Studio 2019 RTW (compiler version 19.20.27004.0)
 
@@ -44,6 +117,8 @@ These warnings and all warnings in later versions are suppressed by using the co
 |||
 |-|-|
 | C4848 | `support for standard attribute 'no_unique_address' in C++17 and earlier is a vendor extension` |
+| C4854 | `binding dereferenced null pointer to reference has undefined behavior` |
+| C5051 | `attribute 'attribute-name' requires at least 'standard-level'; ignored` |
 
 ::: moniker-end
 ::: moniker range=">= vs-2017"

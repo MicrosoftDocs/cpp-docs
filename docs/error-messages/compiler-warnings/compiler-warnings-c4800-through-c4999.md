@@ -1,8 +1,8 @@
 ---
 title: "Compiler warnings C4800 Through C5999"
 ms.date: "04/21/2019"
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107"]
+f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207"]
+helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207"]
 ---
 # Compiler warnings C4800 Through C5999
 
@@ -49,6 +49,10 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 4) C4846 | '*value*' is not a valid argument for '/d1initall': command-line flag ignored |
 | Compiler warning (level 4) C4847 | '\_\_declspec(no\_init\_all)' can only be applied to a function, a class type, or a local variable: ignored |
 | Compiler warning (level 1) C4848 | support for standard attribute 'no\_unique\_address' in C++17 and earlier is a vendor extension |
+| Compiler warning C4854 | binding dereferenced null pointer to reference has undefined behavior |
+| Compiler warning C4855 | implicit capture of 'this' via '[=]' is deprecated in 'version' |
+| Compiler warning C4856 | 'value' is not a valid argument for '/d1initAll:FillPattern' (value must be between 0 and 255). Command-line flag ignored |
+| Compiler warning C4857 | C++/CLI mode does not support C++ versions newer than C++17; setting language to /std:c++17 |
 |[Compiler warning (level 4) C4866](c4866.md)| compiler may not enforce left-to-right evaluation order for call to *operator_name*|
 |[Compiler warning (Error) C4867](compiler-warning-c4867.md)|'*function*': function call missing argument list; use '*call*' to create a pointer to member|
 |[Compiler warning (level 4) C4868](compiler-warning-c4868.md)|'_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list|
@@ -153,6 +157,19 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C5048 | Use of macro '*macroname*' may result in non-deterministic output |
 | Compiler warning (level 1) C5049 | '*string*': Embedding a full path may result in machine-dependent output |
 | Compiler warning (level 1) C5050 | Possible incompatible environment while importing module '*module_name*': *issue* |
+| Compiler warning C5051 | attribute 'attribute-name' requires at least 'standard-level'; ignored |
+| Compiler warning C5052 | Keyword 'keyword-name' was introduced in C++\<version> and requires use of the 'option-name' command-line option |
+| Compiler warning C5053 | support for 'explicit(\<expr>)' in C++17 and earlier is a vendor extension |
+| Compiler warning C5054 | operator 'operator-name': deprecated between enumerations of different types |
+| Compiler warning C5055 | operator 'operator-name': deprecated between enumerations and floating-point types |
+| Compiler warning C5056 | operator 'operator-name': deprecated for array types |
+| Compiler warning C5057 | header unit reference to 'name' already exists.  Ignoring header unit 'header-name' |
+| Compiler warning C5058 | file system error: cannot find header file 'file-name' for header unit 'unit-name' |
+| Compiler warning C5059 | runtime checks and address sanitizer is not currently supported - disabling runtime checks |
+| Compiler warning C5060 | /Qpar and address sanitizer not currently supported - disabling auto-parallelization |
+| Compiler warning C5061 | the use of a comma operator as a subscript expression has been deprecated |
+| Compiler warning C5062 | enum direct list initialization between 'type-1' and 'type-2' is no longer supported |
+| Compiler warning C5063 | 'std::is_constant_evaluated' always evaluates to true in manifestly constant-evaluated expressions |
 | Compiler warning (level 1) C5100 | \_\_VA\_ARGS\_\_ is reserved for use in variadic macros |
 | Compiler warning (level 1) C5101 | use of preprocessor directive in function-like macro argument list is undefined behavior |
 | Compiler warning (level 1) C5102 | ignoring invalid command-line macro definition '*value*' |
@@ -161,6 +178,16 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1) C5105](c5105.md) | macro expansion producing 'defined' has undefined behavior |
 | Compiler warning (level 1) C5106 | macro redefined with different parameter names |
 | Compiler warning (level 1) C5107 | missing terminating '*char*' character |
+| Compiler warning C5108 | `__VA_OPT__` is reserved for use in variadic macros |
+| Compiler warning C5200 | feature 'feature-name' requires compiler flag 'option-name' |
+| Compiler warning C5201 | a module declaration can appear only at the start of a translation unit unless a global module fragment is used |
+| Compiler warning C5202 | a global module fragment can only contain preprocessor directives |
+| Compiler warning C5203 | a parenthesized declarator name after 'explicit' will be considered an explicit-specifier in C++20 |
+| Compiler warning C5204 | 'type-name': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly |
+| Compiler warning C5205 | delete of an abstract class 'type-name' that has a non-virtual destructor results in undefined behavior |
+| Compiler warning C5206 | deduced return types for coroutines is a non-standard extension |
+| Compiler warning C5207 | the simple requirement asserts the validity of expression 'e->id'. Did you mean '{ e } -> id'? You can suppress the warning using '{ e->id }' |
+| [Compiler warning (level 1) C5208](c5208.md) | unnamed class used in typedef name cannot declare members other than non-static data members, member enumerations, or member classes |
 
 ## See also
 
