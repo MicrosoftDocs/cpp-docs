@@ -12,169 +12,169 @@ The articles in this section of the documentation explain a subset of the warnin
 
 ## Warning messages
 
-|Warning|Message|
-|-------------|------------|
-|[Compiler warning (level 4) C4800](compiler-warning-level-3-c4800.md)| Implicit conversion from '*type*' to bool. Possible information loss |
-|[Compiler warning (level 1) C4803](compiler-warning-level-1-c4803.md)|'*method*': the raise method has a different storage class from that of the event, '*event*'|
-|[Compiler warning (level 1) C4804](compiler-warning-level-1-c4804.md)|'*operation*': unsafe use of type 'bool' in operation|
-|[Compiler warning (level 1) C4805](compiler-warning-level-1-c4805.md)|'*operation*': unsafe mix of type '*type1*' and type '*type2*' in operation|
-|[Compiler warning (level 1) C4806](compiler-warning-level-1-c4806.md)|'*operation*': unsafe operation: no value of type '*type1*' promoted to type '*type2*' can equal the given constant|
-|[Compiler warning (level 1) C4807](compiler-warning-level-1-c4807.md)|'*operation*': unsafe mix of type '*type1*' and signed bit field of type '*type2*'|
-|Compiler warning (level 1) C4808|case '*value*' is not a valid value for switch condition of type 'bool'|
-|Compiler warning (level 1) C4809|switch statement has redundant 'default' label; all possible 'case' labels are given|
-|[Compiler warning (level 1) C4810](compiler-warning-level-1-c4810.md)|value of pragma pack(show) == n|
-|[Compiler warning (level 1) C4811](compiler-warning-level-1-c4811.md)|value of pragma conform(forScope, show) == value|
-|[Compiler warning (level 1) C4812](compiler-warning-level-1-c4812.md)|obsolete declaration style: please use '*new_syntax*' instead|
-|[Compiler warning (level 1) C4813](compiler-warning-level-1-c4813.md)|'*function*': a friend function of a local class must have been previously declared|
-|[Compiler warning (level 4) C4816](compiler-warning-level-4-c4816.md)|'*param*': parameter has a zero-sized array which will be truncated (unless the object is passed by reference)|
-|[Compiler warning (level 1) C4817](compiler-warning-level-1-c4817.md)|'*member*': illegal use of '.' to access this member; compiler replaced with '->'|
-|[Compiler warning (level 1) C4819](compiler-warning-level-1-c4819.md)|The file contains a character that cannot be represented in the current code page (number). Save the file in Unicode format to prevent data loss|
-|[Compiler warning (level 4) C4820](compiler-warning-level-4-c4820.md)|'*bytes*' bytes padding added after construct '*member_name*'|
-|[Compiler warning (level 1) C4821](compiler-warning-level-1-c4821.md)|Unable to determine Unicode encoding type, please save the file with signature (BOM)|
-|[Compiler warning (level 1) C4822](compiler-warning-level-1-c4822.md)|'member function': local class member function does not have a body|
-|[Compiler warning (level 3) C4823](compiler-warning-level-3-c4823.md)|'*function*': uses pinning pointers but unwind semantics are not enabled. Consider using /EHa|
-|Compiler warning (level 2) C4826|Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior.|
-|Compiler warning (level 3) C4827|A public 'ToString' method with 0 parameters should be marked as virtual and override|
-|[Compiler warning (level 1) C4829](compiler-warning-level-1-c4829.md)|Possibly incorrect parameters to function main. Consider 'int main(Platform::Array\<Platform::String^>^ argv)'|
-|[Compiler warning (level 1) C4835](compiler-warning-level-1-c4835.md)|'*variable*': the initializer for exported data will not be run until managed code is first executed in the host assembly|
-|Compiler warning (level 4) C4837|trigraph detected: '??*character*' replaced by '*character*'|
-|[Compiler warning (level 1) C4838](compiler-warning-level-1-c4838.md)|conversion from '*type_1*' to '*type_2*' requires a narrowing conversion|
-|[Compiler warning (level 3) C4839](compiler-warning-level-3-c4839.md)|non-standard use of class '*type*' as an argument to a variadic function|
-|[Compiler warning (level 4) C4840](compiler-warning-level-4-c4840.md)|non-portable use of class '*type*' as an argument to a variadic function|
-|Compiler warning (level 4) C4841|non-standard extension used: compound member designator used in offsetof|
-|Compiler warning (level 4) C4842|the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases|
-|Compiler warning C4843|'*type1*': An exception handler of reference to array or function type is unreachable, use '*type2*' instead|
-|Compiler warning C4844|'export module *module_name*;' is now the preferred syntax for declaring a module interface|
-| Compiler warning (level 4) C4845 | '\_\_declspec(no\_init\_all)' is ignored if '/d1initall\[0\|1\|2\|3]' was not specified on the command line |
-| Compiler warning (level 4) C4846 | '*value*' is not a valid argument for '/d1initall': command-line flag ignored |
-| Compiler warning (level 4) C4847 | '\_\_declspec(no\_init\_all)' can only be applied to a function, a class type, or a local variable: ignored |
-| Compiler warning (level 1) C4848 | support for standard attribute 'no\_unique\_address' in C++17 and earlier is a vendor extension |
+| Warning | Message |
+|--|--|
+| [Compiler warning (level 4) C4800](compiler-warning-level-3-c4800.md) | Implicit conversion from '*type*' to `bool`. Possible information loss |
+| [Compiler warning (level 1) C4803](compiler-warning-level-1-c4803.md) | '*method*': the raise method has a different storage class from that of the event, '*event*' |
+| [Compiler warning (level 1) C4804](compiler-warning-level-1-c4804.md) | '*operation*': unsafe use of type '`bool`' in operation |
+| [Compiler warning (level 1) C4805](compiler-warning-level-1-c4805.md) | '*operation*': unsafe mix of type '*type1*' and type '*type2*' in operation |
+| [Compiler warning (level 1) C4806](compiler-warning-level-1-c4806.md) | '*operation*': unsafe operation: no value of type '*type1*' promoted to type '*type2*' can equal the given constant |
+| [Compiler warning (level 1) C4807](compiler-warning-level-1-c4807.md) | '*operation*': unsafe mix of type '*type1*' and signed bit field of type '*type2*' |
+| Compiler warning (level 1) C4808 | `case` '*value*' is not a valid value for `switch` condition of type '`bool`' |
+| Compiler warning (level 1) C4809 | `switch` statement has redundant '`default`' label; all possible '`case`' labels are given |
+| [Compiler warning (level 1) C4810](compiler-warning-level-1-c4810.md) | value of `pragma pack(show)` == n |
+| [Compiler warning (level 1) C4811](compiler-warning-level-1-c4811.md) | value of `pragma conform(forScope, show)` == *value* |
+| [Compiler warning (level 1) C4812](compiler-warning-level-1-c4812.md) | obsolete declaration style: please use '*new_syntax*' instead |
+| [Compiler warning (level 1) C4813](compiler-warning-level-1-c4813.md) | '*function*': a friend function of a local class must have been previously declared |
+| [Compiler warning (level 4) C4816](compiler-warning-level-4-c4816.md) | '*param*': parameter has a zero-sized array which will be truncated (unless the object is passed by reference) |
+| [Compiler warning (level 1) C4817](compiler-warning-level-1-c4817.md) | '*member*': illegal use of '.' to access this member; compiler replaced with '->' |
+| [Compiler warning (level 1) C4819](compiler-warning-level-1-c4819.md) | The file contains a character that cannot be represented in the current code page (number). Save the file in Unicode format to prevent data loss |
+| [Compiler warning (level 4) C4820](compiler-warning-level-4-c4820.md) | '*bytes*' bytes padding added after construct '*member_name*' |
+| [Compiler warning (level 1) C4821](compiler-warning-level-1-c4821.md) | Unable to determine Unicode encoding type, please save the file with signature (BOM) |
+| [Compiler warning (level 1) C4822](compiler-warning-level-1-c4822.md) | 'member function': local class member function does not have a body |
+| [Compiler warning (level 3) C4823](compiler-warning-level-3-c4823.md) | '*function*': uses pinning pointers but unwind semantics are not enabled. Consider using `/EHa` |
+| Compiler warning (level 2) C4826 | Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior. |
+| Compiler warning (level 3) C4827 | A public '`ToString`' method with 0 parameters should be marked as `virtual` and `override` |
+| [Compiler warning (level 1) C4829](compiler-warning-level-1-c4829.md) | Possibly incorrect parameters to function `main`. Consider '`int main(Platform::Array<Platform::String^>^ argv)`' |
+| [Compiler warning (level 1) C4835](compiler-warning-level-1-c4835.md) | '*variable*': the initializer for exported data will not be run until managed code is first executed in the host assembly |
+| Compiler warning (level 4) C4837 | trigraph detected: '`??`*character*' replaced by '*character*' |
+| [Compiler warning (level 1) C4838](compiler-warning-level-1-c4838.md) | conversion from '*type_1*' to '*type_2*' requires a narrowing conversion |
+| [Compiler warning (level 3) C4839](compiler-warning-level-3-c4839.md) | non-standard use of class '*type*' as an argument to a variadic function |
+| [Compiler warning (level 4) C4840](compiler-warning-level-4-c4840.md) | non-portable use of class '*type*' as an argument to a variadic function |
+| Compiler warning (level 4) C4841 | non-standard extension used: compound member designator used in `offsetof` |
+| Compiler warning (level 4) C4842 | the result of '`offsetof`' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases |
+| Compiler warning C4843 | '*type1*': An exception handler of reference to array or function type is unreachable, use '*type2*' instead |
+| Compiler warning C4844 | '`export module` *`module_name`*`;`' is now the preferred syntax for declaring a module interface |
+| Compiler warning (level 4) C4845 | '`__declspec(no_init_all)`' is ignored if '`/d1initall[0|1|2|3]`' was not specified on the command line |
+| Compiler warning (level 4) C4846 | '*value*' is not a valid argument for '`/d1initall`': command-line flag ignored |
+| Compiler warning (level 4) C4847 | '`__declspec(no_init_all)`' can only be applied to a function, a class type, or a local variable: ignored |
+| Compiler warning (level 1) C4848 | support for standard attribute '`no_unique_address`' in C++17 and earlier is a vendor extension |
 | Compiler warning C4854 | binding dereferenced null pointer to reference has undefined behavior |
-| Compiler warning C4855 | implicit capture of 'this' via '[=]' is deprecated in 'version' |
-| Compiler warning C4856 | 'value' is not a valid argument for '/d1initAll:FillPattern' (value must be between 0 and 255). Command-line flag ignored |
-| Compiler warning C4857 | C++/CLI mode does not support C++ versions newer than C++17; setting language to /std:c++17 |
-|[Compiler warning (level 4) C4866](c4866.md)| compiler may not enforce left-to-right evaluation order for call to *operator_name*|
-|[Compiler warning (Error) C4867](compiler-warning-c4867.md)|'*function*': function call missing argument list; use '*call*' to create a pointer to member|
-|[Compiler warning (level 4) C4868](compiler-warning-c4868.md)|'_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list|
-|Compiler warning (level 2) C4872|floating point division by zero detected when compiling the call graph for the concurrency::parallel_for_each at: '*location*'|
-|Compiler warning (level 1) C4880|casting from 'const *type_1*' to '*type_2*': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function|
-|Compiler warning (level 4) C4881|the constructor and/or the destructor will not be invoked for tile_static variable '*variable*'|
-|Compiler warning (level 1) C4882|passing functors with non-const call operators to concurrency::parallel_for_each is deprecated|
-|[Compiler warning C4900](compiler-warning-level-1-c4900.md)|Il mismatch between '*tool1*' version '*version1*' and '*tool2*' version '*version2*'|
-|[Compiler warning (level 1) C4905](compiler-warning-level-1-c4905.md)|wide string literal cast to 'LPSTR'|
-|[Compiler warning (level 1) C4906](compiler-warning-level-1-c4906.md)|string literal cast to 'LPWSTR'|
-|[Compiler warning (level 1) C4910](compiler-warning-level-1-c4910.md)|'\<identifier>: '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation|
-|[Compiler warning (level 1) C4912](compiler-warning-level-1-c4912.md)|'*attribute*': attribute has undefined behavior on a nested UDT|
-|[Compiler warning (level 4) C4913](compiler-warning-level-4-c4913.md)|user defined binary operator ',' exists but no overload could convert all operands, default built-in binary operator ',' used|
-|Compiler warning (level 1) C4916|in order to have a dispid, '*description*': must be introduced by an interface|
-|[Compiler warning (level 1) C4917](compiler-warning-level-1-c4917.md)|'*declarator*': a GUID can only be associated with a class, interface or namespace|
-|[Compiler warning (level 4) C4918](compiler-warning-level-4-c4918.md)|'*character*': invalid character in pragma optimization list|
-|[Compiler warning (level 1) C4920](compiler-warning-level-1-c4920.md)|enum enum member member_1=value_1 already seen in enum enum as member_2=value_2|
-|Compiler warning (level 3) C4921|'*description*': attribute value '*attribute*' should not be multiply specified|
-|[Compiler warning (level 1) C4925](compiler-warning-level-1-c4925.md)|'*method*': dispinterface method cannot be called from script|
-|[Compiler warning (level 1) C4926](compiler-warning-level-1-c4926.md)|'*identifier*': symbol is already defined: attributes ignored|
-|[Compiler warning (level 1) C4927](compiler-warning-level-1-c4927.md)|illegal conversion; more than one user-defined conversion has been implicitly applied|
-|[Compiler warning (level 1) C4928](compiler-warning-level-1-c4928.md)|illegal copy-initialization; more than one user-defined conversion has been implicitly applied|
-|[Compiler warning (level 1) C4929](compiler-warning-level-1-c4929.md)|'*file*': typelibrary contains a union; ignoring the 'embedded_idl' qualifier|
-|[Compiler warning (level 1) C4930](compiler-warning-level-1-c4930.md)|'*prototype*': prototyped function not called (was a variable definition intended?)|
-|[Compiler warning (level 4) C4931](compiler-warning-level-4-c4931.md)|we are assuming the type library was built for number-bit pointers|
-|[Compiler warning (level 4) C4932](compiler-warning-level-4-c4932.md)|__identifier(*identifier*) and \__identifier(*identifier*) are indistinguishable|
-|Compiler warning (level 1) C4934|'__delegate(multicast)' is deprecated, use '\__delegate' instead|
-|[Compiler warning (level 1) C4935](compiler-warning-level-1-c4935.md)|assembly access specifier modified from '*access*'|
-|[Compiler warning (level 1, Error) C4936](compiler-warning-c4936.md)|this __declspec is supported only when compiled with /clr or /clr:pure|
-|[Compiler warning (level 4) C4937](compiler-warning-level-4-c4937.md)|'*text1*' and '*text2*' are indistinguishable as arguments to '*directive*'|
-|[Compiler warning (level 4) C4938](compiler-warning-level-4-c4938.md)|'*var*': Floating point reduction variable may cause inconsistent results under /fp:strict or #pragma fenv_access|
-|[Compiler warning C4939](compiler-warning-level-1-c4939.md)|#pragma vtordisp is deprecated and will be removed in a future release of Visual C++|
-|[Compiler warning (level 1) C4944](compiler-warning-level-1-c4944.md)|'*symbol*': cannot import symbol from '*assembly1*': as '*symbol*' already exists in the current scope|
-|[Compiler warning (level 1) C4945](compiler-warning-level-1-c4945.md)|'*symbol*': cannot import symbol from '*assembly1*': as '*symbol*' has already been imported from another assembly '*assembly2*'|
-|[Compiler warning (level 1) C4946](compiler-warning-level-1-c4946.md)|reinterpret_cast used between related classes: '*class1*' and '*class2*'|
-|[Compiler warning (level 1) C4947](compiler-warning-level-1-c4947.md)|'*type_or_member*': marked as obsolete|
-|[Compiler warning (level 2) C4948](compiler-warning-level-2-c4948.md)|return type of '*accessor*' does not match the last parameter type of the corresponding setter|
-|[Compiler warning (level 1 and level 4) C4949](compiler-warning-level-1-and-level-4-c4949.md)|pragmas 'managed' and 'unmanaged' are meaningful only when compiled with '/clr[:option]'|
-|[Compiler warning (level 1, Error) C4950](compiler-warning-c4950.md)|'*type_or_member*': marked as obsolete|
-|[Compiler warning (level 1) C4951](compiler-warning-level-1-c4951.md)|'*function*' has been edited since profile data was collected, function profile data not used|
-|[Compiler warning (level 1) C4952](compiler-warning-level-1-c4952.md)|'*function*': no profile data found in program database '*pgd_file*'|
-|[Compiler warning (level 1) C4953](compiler-warning-level-1-c4953.md)|Inlinee '*function*' has been edited since profile data was collected, profile data not used|
-|Compiler warning C4954|'*function*': not profiled (contains __int64 switch expression)|
-|Compiler warning C4955|'*import2*': import ignored; already imported from '*import1*'|
-|[Compiler warning (level 1, Error) C4956](compiler-warning-c4956.md)|'*type*': this type is not verifiable|
-|[Compiler warning (level 1, Error) C4957](compiler-warning-c4957.md)|'*cast*': explicit cast from '*cast_from*' to '*cast_to*' is not verifiable|
-|[Compiler warning (level 1, Error) C4958](compiler-warning-c4958.md)|'*operation*': pointer arithmetic is not verifiable|
-|[Compiler warning (level 1, Error) C4959](compiler-warning-c4959.md)|cannot define unmanaged type '*type*' in /clr:safe because accessing its members yields unverifiable code|
-|[Compiler warning (level 4) C4960](compiler-warning-level-4-c4960.md)|'*function*' is too big to be profiled|
-|[Compiler warning (level 1) C4961](compiler-warning-c4961.md)|No profile data was merged into '.pgd file', profile-guided optimizations disabled|
-|[Compiler warning (level 4) C4962](compiler-warning-c4962.md)|'*function*': Profile-guided optimizations disabled because optimizations caused profile data to become inconsistent|
-|Compiler warning (level 1) C4963|'*description*': no profile data found; different compiler options were used in instrumented build|
-|[Compiler warning (level 1) C4964](compiler-warning-level-1-c4964.md)|No optimization options were specified; profile info will not be collected|
-|[Compiler warning (level 1) C4965](compiler-warning-level-1-c4965.md)|implicit box of integer 0; use nullptr or explicit cast|
-|Compiler warning (level 1) C4966|'*function*' has __code_seg annotation with unsupported segment name, annotation ignored|
-|Compiler warning C4970|delegate constructor: target object ignored since '*type*' is static|
-|Compiler warning (level 1) C4971|Argument order: \<target object>, \<target function> for delegate constructor is deprecated, use \<target function>, \<target object="">|
-|[Compiler warning (level 1, Error) C4972](compiler-warning-c4972.md)|Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable|
-|Compiler warning (level 1) C4973|'*symbol*': marked as deprecated|
-|Compiler warning (level 1) C4974|'*symbol*': marked as deprecated|
-|Compiler warning (level 3) C4981|Warbird: function '*function*' marked as __forceinline not inlined because it contains exception semantics|
-|[Compiler warning C4984](compiler-warning-c4984.md)|'if constexpr' is a C++17 language extension|
-|[Compiler warning (level 4) C4985](compiler-warning-level-4-c4985.md)|'*symbol_name*': attributes not present on previous declaration.|
-|[Compiler warning C4986](compiler-warning-c4986.md)|'*declaration*': exception specification does not match previous declaration|
-|Compiler warning (level 4) C4987|nonstandard extension used: 'throw (...)'|
-|Compiler warning (level 4) C4988|'*variable*': variable declared outside class/function scope|
-|Compiler warning (level 4) C4989|'*type*': type has conflicting definitions.|
-|Compiler warning (level 3) C4990|Warbird: *message*|
-|Compiler warning (level 3) C4991|Warbird: function '*function*' marked as __forceinline not inlined because protection level of inlinee is greater than the parent|
-|Compiler warning (level 3) C4992|Warbird: function '*function*' marked as __forceinline not inlined because it contains inline assembly which cannot be protected|
-|[Compiler warning (level 3) C4995](compiler-warning-level-3-c4995.md)|'*function*': name was marked as #pragma deprecated|
-|[Compiler warning (level 3) C4996](compiler-warning-level-3-c4996.md)|'*deprecated-declaration*': *deprecation-message* (or "was declared deprecated")|
-|[Compiler warning (level 1) C4997](compiler-warning-level-1-c4997.md)|'*class*': coclass does not implement a COM interface or pseudo-interface|
-|Compiler warning (level 1) C4998|EXPECTATION FAILED: *expectation*(*value*)|
-|[Compiler warning C4999](compiler-warning-level-1-c4999.md)|UNKNOWN WARNING Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
-|Compiler warning C5022|'*type*': multiple move constructors specified|
-|Compiler warning C5023|'*type*': multiple move assignment operators specified|
-|Compiler warning (level 4) C5024|'*type*': move constructor was implicitly defined as deleted|
-|Compiler warning (level 4) C5025|'*type*': move assignment operator was implicitly defined as deleted|
-|Compiler warning (level 1 and level 4) C5026|'*type*': move constructor was implicitly defined as deleted|
-|Compiler warning (level 1 and level 4) C5027|'*type*': move assignment operator was implicitly defined as deleted|
-|Compiler warning (level 1) C5028|'*name*': Alignment specified in prior declaration (*number*) not specified in definition|
-|Compiler warning (level 4) C5029|nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only|
-|Compiler warning (level 3) C5030|attribute '*attribute*' is not recognized|
-|Compiler warning (level 4) C5031|#pragma warning(pop): likely mismatch, popping warning state pushed in different file|
-|Compiler warning (level 4) C5032|detected #pragma warning(push) with no corresponding #pragma warning(pop)|
-|Compiler warning (level 1) C5033|'*storage-class*' is no longer a supported storage class|
-|Compiler warning C5034|use of intrinsic '*intrinsic*' causes function *function* to be compiled as guest code|
-|Compiler warning C5035|use of feature '*feature*' causes function *function* to be compiled as guest code|
-|Compiler warning (level 1) C5036|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*'|
-|Compiler warning (error) C5037|'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments|
-|[Compiler warning (level 4) C5038](c5038.md)|data member '*member1*' will be initialized after data member '*member2*'|
-|Compiler warning (level 4) C5039|'*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception.|
-|Compiler warning (level 3) C5040|dynamic exception specifications are valid only in C++14 and earlier; treating as noexcept(false)|
-|Compiler warning (level 1) C5041|'*definition*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17|
-|Compiler warning (level 3) C5042|'*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier|
-|Compiler warning (level 2) C5043|'*specification*': exception specification does not match previous declaration|
-|Compiler warning (level 4) C5044|An argument to command-line option *option* points to a path '*path*' that does not exist|
+| Compiler warning C4855 | implicit capture of '`this`' via '`[=]`' is deprecated in 'version' |
+| Compiler warning C4856 | '*value*' is not a valid argument for '`/d1initAll:FillPattern`' (value must be between 0 and 255). Command-line flag ignored |
+| Compiler warning C4857 | C++/CLI mode does not support C++ versions newer than C++17; setting language to `/std:c++17` |
+| [Compiler warning (level 4) C4866](c4866.md) | compiler may not enforce left-to-right evaluation order for call to *operator_name* |
+| [Compiler warning (Error) C4867](compiler-warning-c4867.md) | '*function*': function call missing argument list; use '*call*' to create a pointer to member |
+| [Compiler warning (level 4) C4868](compiler-warning-c4868.md) | '_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
+| Compiler warning (level 2) C4872 | floating point division by zero detected when compiling the call graph for the `concurrency::parallel_for_each` at: '*location*' |
+| Compiler warning (level 1) C4880 | casting from 'const *type_1*' to '*type_2*': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function |
+| Compiler warning (level 4) C4881 | the constructor and/or the destructor will not be invoked for `tile_static` variable '*variable-name*' |
+| Compiler warning (level 1) C4882 | passing functors with non-const call operators to `concurrency::parallel_for_each` is deprecated |
+| [Compiler warning C4900](compiler-warning-level-1-c4900.md) | Il mismatch between '*tool1*' version '*version1*' and '*tool2*' version '*version2*' |
+| [Compiler warning (level 1) C4905](compiler-warning-level-1-c4905.md) | wide string literal cast to '`LPSTR`' |
+| [Compiler warning (level 1) C4906](compiler-warning-level-1-c4906.md) | string literal cast to '`LPWSTR`' |
+| [Compiler warning (level 1) C4910](compiler-warning-level-1-c4910.md) | '\<identifier>: '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation |
+| [Compiler warning (level 1) C4912](compiler-warning-level-1-c4912.md) | '*attribute*': attribute has undefined behavior on a nested UDT |
+| [Compiler warning (level 4) C4913](compiler-warning-level-4-c4913.md) | user defined binary operator '`,`' exists but no overload could convert all operands, default built-in binary operator '`,`' used |
+| Compiler warning (level 1) C4916 | in order to have a `dispid`, '*description*': must be introduced by an interface |
+| [Compiler warning (level 1) C4917](compiler-warning-level-1-c4917.md) | '*declarator*': a GUID can only be associated with a class, interface or namespace |
+| [Compiler warning (level 4) C4918](compiler-warning-level-4-c4918.md) | '*character*': invalid character in pragma optimization list |
+| [Compiler warning (level 1) C4920](compiler-warning-level-1-c4920.md) | enum *enum-name* member *member_1*=*value_1* already seen in enum *enum-name* as *member_2*=*value_2* |
+| Compiler warning (level 3) C4921 | '*description*': attribute value '*attribute*' should not be multiply specified |
+| [Compiler warning (level 1) C4925](compiler-warning-level-1-c4925.md) | '*method*': dispinterface method cannot be called from script |
+| [Compiler warning (level 1) C4926](compiler-warning-level-1-c4926.md) | '*identifier*': symbol is already defined: attributes ignored |
+| [Compiler warning (level 1) C4927](compiler-warning-level-1-c4927.md) | illegal conversion; more than one user-defined conversion has been implicitly applied |
+| [Compiler warning (level 1) C4928](compiler-warning-level-1-c4928.md) | illegal copy-initialization; more than one user-defined conversion has been implicitly applied |
+| [Compiler warning (level 1) C4929](compiler-warning-level-1-c4929.md) | '*file*': typelibrary contains a union; ignoring the 'embedded_idl' qualifier |
+| [Compiler warning (level 1) C4930](compiler-warning-level-1-c4930.md) | '*prototype*': prototyped function not called (was a variable definition intended?) |
+| [Compiler warning (level 4) C4931](compiler-warning-level-4-c4931.md) | we are assuming the type library was built for *number*-bit pointers |
+| [Compiler warning (level 4) C4932](compiler-warning-level-4-c4932.md) | `__identifier(`*identifier*`)` and `__identifier(`*identifier*`)` are indistinguishable |
+| Compiler warning (level 1) C4934 | '`__delegate(multicast)`' is deprecated, use '`__delegate`' instead |
+| [Compiler warning (level 1) C4935](compiler-warning-level-1-c4935.md) | assembly access specifier modified from '*access*' |
+| [Compiler warning (level 1, Error) C4936](compiler-warning-c4936.md) | this __declspec is supported only when compiled with `/clr` or `/clr:pure` |
+| [Compiler warning (level 4) C4937](compiler-warning-level-4-c4937.md) | '*text1*' and '*text2*' are indistinguishable as arguments to '*directive*' |
+| [Compiler warning (level 4) C4938](compiler-warning-level-4-c4938.md) | '*var*': Floating point reduction variable may cause inconsistent results under `/fp:strict` or `#pragma fenv_access` |
+| [Compiler warning C4939](compiler-warning-level-1-c4939.md) | #pragma vtordisp is deprecated and will be removed in a future release of Visual C++ |
+| [Compiler warning (level 1) C4944](compiler-warning-level-1-c4944.md) | '*symbol*': cannot import symbol from '*assembly1*': as '*symbol*' already exists in the current scope |
+| [Compiler warning (level 1) C4945](compiler-warning-level-1-c4945.md) | '*symbol*': cannot import symbol from '*assembly1*': as '*symbol*' has already been imported from another assembly '*assembly2*' |
+| [Compiler warning (level 1) C4946](compiler-warning-level-1-c4946.md) | `reinterpret_cast` used between related classes: '*class1*' and '*class2*' |
+| [Compiler warning (level 1) C4947](compiler-warning-level-1-c4947.md) | '*type_or_member*': marked as obsolete |
+| [Compiler warning (level 2) C4948](compiler-warning-level-2-c4948.md) | return type of '*accessor*' does not match the last parameter type of the corresponding setter |
+| [Compiler warning (level 1 and level 4) C4949](compiler-warning-level-1-and-level-4-c4949.md) | pragmas '`managed`' and '`unmanaged`' are meaningful only when compiled with '`/clr[:option]`' |
+| [Compiler warning (level 1, Error) C4950](compiler-warning-c4950.md) | '*type_or_member*': marked as obsolete |
+| [Compiler warning (level 1) C4951](compiler-warning-level-1-c4951.md) | '*function*' has been edited since profile data was collected, function profile data not used |
+| [Compiler warning (level 1) C4952](compiler-warning-level-1-c4952.md) | '*function*': no profile data found in program database '*pgd-file*' |
+| [Compiler warning (level 1) C4953](compiler-warning-level-1-c4953.md) | Inlinee '*function*' has been edited since profile data was collected, profile data not used |
+| Compiler warning C4954 | '*function*': not profiled (contains `__int64` switch expression) |
+| Compiler warning C4955 | '*import2*': import ignored; already imported from '*import1*' |
+| [Compiler warning (level 1, Error) C4956](compiler-warning-c4956.md) | '*type*': this type is not verifiable |
+| [Compiler warning (level 1, Error) C4957](compiler-warning-c4957.md) | '*cast*': explicit cast from '*cast_from*' to '*cast_to*' is not verifiable |
+| [Compiler warning (level 1, Error) C4958](compiler-warning-c4958.md) | '*operation*': pointer arithmetic is not verifiable |
+| [Compiler warning (level 1, Error) C4959](compiler-warning-c4959.md) | cannot define unmanaged type '*type*' in `/clr:safe` because accessing its members yields unverifiable code |
+| [Compiler warning (level 4) C4960](compiler-warning-level-4-c4960.md) | '*function*' is too big to be profiled |
+| [Compiler warning (level 1) C4961](compiler-warning-c4961.md) | No profile data was merged into '*pgd-file*', profile-guided optimizations disabled |
+| [Compiler warning (level 4) C4962](compiler-warning-c4962.md) | '*function*': Profile-guided optimizations disabled because optimizations caused profile data to become inconsistent |
+| Compiler warning (level 1) C4963 | '*description*': no profile data found; different compiler options were used in instrumented build |
+| [Compiler warning (level 1) C4964](compiler-warning-level-1-c4964.md) | No optimization options were specified; profile info will not be collected |
+| [Compiler warning (level 1) C4965](compiler-warning-level-1-c4965.md) | implicit box of integer 0; use nullptr or explicit cast |
+| Compiler warning (level 1) C4966 | '*function*' has `__code_seg` annotation with unsupported segment name, annotation ignored |
+| Compiler warning C4970 | delegate constructor: target object ignored since '*type*' is static |
+| Compiler warning (level 1) C4971 | Argument order: \<target object>, \<target function> for delegate constructor is deprecated, use \<target function>, \<target object=""> |
+| [Compiler warning (level 1, Error) C4972](compiler-warning-c4972.md) | Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable |
+| Compiler warning (level 1) C4973 | '*symbol*': marked as deprecated |
+| Compiler warning (level 1) C4974 | '*symbol*': marked as deprecated |
+| Compiler warning (level 3) C4981 | Warbird: function '*function*' marked as __forceinline not inlined because it contains exception semantics |
+| [Compiler warning C4984](compiler-warning-c4984.md) | '`if constexpr`' is a C++17 language extension |
+| [Compiler warning (level 4) C4985](compiler-warning-level-4-c4985.md) | '*symbol_name*': attributes not present on previous declaration. |
+| [Compiler warning C4986](compiler-warning-c4986.md) | '*declaration*': exception specification does not match previous declaration |
+| Compiler warning (level 4) C4987 | nonstandard extension used: '`throw (...)`' |
+| Compiler warning (level 4) C4988 | '*variable*': variable declared outside class/function scope |
+| Compiler warning (level 4) C4989 | '*type*': type has conflicting definitions. |
+| Compiler warning (level 3) C4990 | Warbird: *message* |
+| Compiler warning (level 3) C4991 | Warbird: function '*function*' marked as `__forceinline` not inlined because protection level of inlinee is greater than the parent |
+| Compiler warning (level 3) C4992 | Warbird: function '*function-name*' marked as `__forceinline` not inlined because it contains inline assembly which cannot be protected |
+| [Compiler warning (level 3) C4995](compiler-warning-level-3-c4995.md) | '*function*': name was marked as #pragma deprecated |
+| [Compiler warning (level 3) C4996](compiler-warning-level-3-c4996.md) | '*deprecated-declaration*': *deprecation-message* (or "was declared deprecated") |
+| [Compiler warning (level 1) C4997](compiler-warning-level-1-c4997.md) | '*class*': coclass does not implement a COM interface or pseudo-interface |
+| Compiler warning (level 1) C4998 | EXPECTATION FAILED: *expectation*(*value*) |
+| [Compiler warning C4999](compiler-warning-level-1-c4999.md) | UNKNOWN WARNING Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
+| Compiler warning C5022 | '*type*': multiple move constructors specified |
+| Compiler warning C5023 | '*type*': multiple move assignment operators specified |
+| Compiler warning (level 4) C5024 | '*type*': move constructor was implicitly defined as deleted |
+| Compiler warning (level 4) C5025 | '*type*': move assignment operator was implicitly defined as deleted |
+| Compiler warning (level 1 and level 4) C5026 | '*type*': move constructor was implicitly defined as deleted |
+| Compiler warning (level 1 and level 4) C5027 | '*type*': move assignment operator was implicitly defined as deleted |
+| Compiler warning (level 1) C5028 | '*name*': Alignment specified in prior declaration (*number*) not specified in definition |
+| Compiler warning (level 4) C5029 | nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only |
+| Compiler warning (level 3) C5030 | attribute '*attribute-name*' is not recognized |
+| Compiler warning (level 4) C5031 | `#pragma warning(pop)`: likely mismatch, popping warning state pushed in different file |
+| Compiler warning (level 4) C5032 | detected `#pragma warning(push)` with no corresponding `#pragma warning(pop)` |
+| Compiler warning (level 1) C5033 | '*storage-class*' is no longer a supported storage class |
+| Compiler warning C5034 | use of intrinsic '*intrinsic*' causes function *function-name* to be compiled as guest code |
+| Compiler warning C5035 | use of feature '*feature*' causes function *function-name* to be compiled as guest code |
+| Compiler warning (level 1) C5036 | varargs function pointer conversion when compiling with `/hybrid:x86arm64` '*type1*' to '*type2*' |
+| Compiler warning (error) C5037 | '*member-function*': an out-of-line definition of a member of a class template cannot have default arguments |
+| [Compiler warning (level 4) C5038](c5038.md) | data member '*member1*' will be initialized after data member '*member2*' |
+| Compiler warning (level 4) C5039 | '*function*': pointer or reference to potentially throwing function passed to `extern C` function under `-EHc`. Undefined behavior may occur if this function throws an exception. |
+| Compiler warning (level 3) C5040 | dynamic exception specifications are valid only in C++14 and earlier; treating as noexcept(false) |
+| Compiler warning (level 1) C5041 | '*definition*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17 |
+| Compiler warning (level 3) C5042 | '*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier |
+| Compiler warning (level 2) C5043 | '*specification*': exception specification does not match previous declaration |
+| Compiler warning (level 4) C5044 | An argument to command-line option *option-name* points to a path '*path-name*' that does not exist |
 | [Compiler warning C5045](c5045.md) | Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified |
-| [Compiler warning (level 2) C5046](c5046.md) | '*function*' : Symbol involving type with internal linkage not defined |
-| Compiler warning (level 1) C5047 | use of nonstandard \_\_if\_exists with modules is not supported |
+| [Compiler warning (level 2) C5046](c5046.md) | '*function*': Symbol involving type with internal linkage not defined |
+| Compiler warning (level 1) C5047 | use of nonstandard `__if_exists` with modules is not supported |
 | Compiler warning (level 1) C5048 | Use of macro '*macroname*' may result in non-deterministic output |
 | Compiler warning (level 1) C5049 | '*string*': Embedding a full path may result in machine-dependent output |
 | Compiler warning (level 1) C5050 | Possible incompatible environment while importing module '*module_name*': *issue* |
 | Compiler warning C5051 | attribute 'attribute-name' requires at least 'standard-level'; ignored |
 | Compiler warning C5052 | Keyword 'keyword-name' was introduced in C++\<version> and requires use of the 'option-name' command-line option |
-| Compiler warning C5053 | support for 'explicit(\<expr>)' in C++17 and earlier is a vendor extension |
+| Compiler warning C5053 | support for '`explicit(<expr>)`' in C++17 and earlier is a vendor extension |
 | Compiler warning C5054 | operator 'operator-name': deprecated between enumerations of different types |
 | Compiler warning C5055 | operator 'operator-name': deprecated between enumerations and floating-point types |
 | Compiler warning C5056 | operator 'operator-name': deprecated for array types |
 | Compiler warning C5057 | header unit reference to 'name' already exists.  Ignoring header unit 'header-name' |
 | Compiler warning C5058 | file system error: cannot find header file 'file-name' for header unit 'unit-name' |
 | Compiler warning C5059 | runtime checks and address sanitizer is not currently supported - disabling runtime checks |
-| Compiler warning C5060 | /Qpar and address sanitizer not currently supported - disabling auto-parallelization |
+| Compiler warning C5060 | `/Qpar` and address sanitizer not currently supported - disabling auto-parallelization |
 | Compiler warning C5061 | the use of a comma operator as a subscript expression has been deprecated |
 | Compiler warning C5062 | enum direct list initialization between 'type-1' and 'type-2' is no longer supported |
-| Compiler warning C5063 | 'std::is_constant_evaluated' always evaluates to true in manifestly constant-evaluated expressions |
-| Compiler warning (level 1) C5100 | \_\_VA\_ARGS\_\_ is reserved for use in variadic macros |
+| Compiler warning C5063 | '`std::is_constant_evaluated`' always evaluates to true in manifestly constant-evaluated expressions |
+| Compiler warning (level 1) C5100 | `__VA_ARGS__` is reserved for use in variadic macros |
 | Compiler warning (level 1) C5101 | use of preprocessor directive in function-like macro argument list is undefined behavior |
 | Compiler warning (level 1) C5102 | ignoring invalid command-line macro definition '*value*' |
 | Compiler warning (level 1) C5103 | pasting '*token1*' and '*token2*' does not result in a valid preprocessing token |
-| Compiler warning (level 1) C5104 | found '*string1*#*string2*' in macro replacement list, did you mean '*string1*""#*string2*'? |
+| Compiler warning (level 1) C5104 | found '*string1*`#`*string2*' in macro replacement list, did you mean '*string1*`""#`*string2*'? |
 | [Compiler warning (level 1) C5105](c5105.md) | macro expansion producing 'defined' has undefined behavior |
 | Compiler warning (level 1) C5106 | macro redefined with different parameter names |
 | Compiler warning (level 1) C5107 | missing terminating '*char*' character |
@@ -186,8 +186,8 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning C5204 | 'type-name': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly |
 | Compiler warning C5205 | delete of an abstract class 'type-name' that has a non-virtual destructor results in undefined behavior |
 | Compiler warning C5206 | deduced return types for coroutines is a non-standard extension |
-| Compiler warning C5207 | the simple requirement asserts the validity of expression 'e->id'. Did you mean '{ e } -> id'? You can suppress the warning using '{ e->id }' |
-| [Compiler warning (level 1) C5208](c5208.md) | unnamed class used in typedef name cannot declare members other than non-static data members, member enumerations, or member classes |
+| Compiler warning C5207 | the simple requirement asserts the validity of expression '`e->id`'. Did you mean '`{ e } -> id`'? You can suppress the warning using '`{ e->id }`' |
+| [Compiler warning (level 1) C5208](c5208.md) | unnamed class used in `typedef` name cannot declare members other than non-static data members, member enumerations, or member classes |
 
 ## See also
 
