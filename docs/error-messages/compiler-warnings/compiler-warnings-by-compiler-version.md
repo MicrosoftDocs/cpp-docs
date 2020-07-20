@@ -5,12 +5,12 @@ helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting
 ---
 # Compiler Warnings by compiler version
 
-The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This option is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option only suppresses warnings, not new error messages. Don't suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, `/W4`, and remove the `/Wv` option in your build as soon as practical.
+The compiler can suppress warnings that were introduced after a version you specify by using the [`/Wv`](../../build/reference/compiler-option-warning-level.md) compiler option. This option is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option only suppresses warnings, not new error messages. Don't suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, **`/W4`**, and remove the **`/Wv`** option in your build as soon as practical.
 
 These versions of the compiler introduced new warnings:
 
 | Product | Compiler version number |
-|-|-|
+|--|--|
 | Visual Studio 2002 | 13.00.9466 |
 | Visual Studio 2003 | 13.10.3077 |
 | Visual Studio 2005 | 14.00.50727.762 |
@@ -30,30 +30,105 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2017 version 15.8 | 19.15.26726.0 |
 | Visual Studio 2017 version 15.9 | 19.16.26926.0 |
 | Visual Studio 2019 RTM | 19.20.27004.0 |
+| Visual Studio 2019 version 16.1 | 19.21.27702.0 |
+| Visual Studio 2019 version 16.2 | 19.22.27905.0 |
+| Visual Studio 2019 version 16.3 | 19.23.28105.0 |
+| Visual Studio 2019 version 16.4 | 19.24.28314.0 |
+| Visual Studio 2019 version 16.5 | 19.25.28610.0 |
+| Visual Studio 2019 version 16.6 | 19.26.28805.0 |
 
-You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the `/Wv` option. The compiler reports all warnings that match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, `/Wv:17` reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use `/Wv:19.00.23506`. Use `/Wv:19.11` to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
+You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
-The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the `/Wv` compiler option. The `/Wv` option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
+The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= vs-2019"
 
+## Warnings introduced in Visual Studio 2019 version 16.6 (compiler version 19.26.28805.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.25`**.
+
+| Warning | Message |
+|--|--|
+| C5207 | `the simple requirement asserts the validity of expression 'e->id'. Did you mean '{ e } -> id'? You can suppress the warning using '{ e->id }'` |
+| C5208 | `unnamed class used in typedef name cannot declare members other than non-static data members, member enumerations, or member classes` |
+
+## Warnings introduced in Visual Studio 2019 version 16.5 (compiler version 19.25.28610.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.24`**.
+
+|Warning|Message|
+|-|-|
+| C5061 | `the use of a comma operator as a subscript expression has been deprecated` |
+| C5062 | `enum direct list initialization between 'type-1' and 'type-2' is no longer supported` |
+| C5063 | `'std::is_constant_evaluated' always evaluates to true in manifestly constant-evaluated expressions` |
+| C5108 | `__VA_OPT__ is reserved for use in variadic macros` |
+| C5204 | `'type-name': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly` |
+| C5205 | `delete of an abstract class 'type-name' that has a non-virtual destructor results in undefined behavior` |
+| C5206 | `deduced return types for coroutines is a non-standard extension` |
+
+## Warnings introduced in Visual Studio 2019 version 16.4 (compiler version 19.24.28314.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.23`**.
+
+| Warning | Message |
+|--|--|
+| C5200 | `feature 'feature-name' requires compiler flag 'option-name'` | // Warning equivalent to C2429 for language features
+| C5201 | `a module declaration can appear only at the start of a translation unit unless a global module fragment is used` |
+| C5202 | `a global module fragment can only contain preprocessor directives` |
+| C5203 | `a parenthesized declarator name after 'explicit' will be considered an explicit-specifier in C++20` |
+
+## Warnings introduced in Visual Studio 2019 version 16.3 (compiler version 19.23.28105.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.22`**.
+
+| Warning | Message |
+|--|--|
+| C4856 | `'value' is not a valid argument for '/d1initAll:FillPattern' (value must be between 0 and 255). Command-line flag ignored` |
+| C4857 | `C++/CLI mode does not support C++ versions newer than C++17; setting language to /std:c++17` |
+
+## Warnings introduced in Visual Studio 2019 version 16.2 (compiler version 19.22.27905.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.21`**.
+
+| Warning | Message |
+|--|--|
+| C4855 | `implicit capture of 'this' via '[=]' is deprecated in 'version'` |
+| C5054 | `operator 'operator-name': deprecated between enumerations of different types` |
+| C5055 | `operator 'operator-name': deprecated between enumerations and floating-point types` |
+| C5056 | `operator 'operator-name': deprecated for array types` |
+| C5057 | `header unit reference to 'name' already exists.  Ignoring header unit 'header-name'` |
+| C5058 | `file system error: cannot find header file 'file-name' for header unit 'unit-name'` |
+| C5059 | `runtime checks and address sanitizer is not currently supported - disabling runtime checks` |
+| C5060 | `/Qpar and address sanitizer not currently supported - disabling auto-parallelization` |
+
+## Warnings introduced in Visual Studio 2019 version 16.1 (compiler version 19.21.27702.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.20`**.
+
+| Warning | Message |
+|--|--|
+| C5052 | `Keyword 'keyword-name' was introduced in C++<version> and requires use of the 'option-name' command-line option` |
+| C5053 | `support for 'explicit(<expr>)' in C++17 and earlier is a vendor extension` |
+
 ## Warnings introduced in Visual Studio 2019 RTW (compiler version 19.20.27004.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.15`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.15`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4848 | `support for standard attribute 'no_unique_address' in C++17 and earlier is a vendor extension` |
+| C4854 | `binding dereferenced null pointer to reference has undefined behavior` |
+| C5051 | `attribute 'attribute-name' requires at least 'standard-level'; ignored` |
 
 ::: moniker-end
 ::: moniker range=">= vs-2017"
 
 ## Warnings introduced in Visual Studio 2017 version 15.8 (compiler version 19.15.26726.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.14`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.14`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4643 | `Forward declaring 'identifier' in namespace std is not permitted by the C++ Standard.` |
 | C4644 | `usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead` |
 | C4845 | `'__declspec(no_init_all)' is ignored if '/d1initall[0|1|2|3]' was not specified on the command line` |
@@ -76,27 +151,27 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 version 15.7 (compiler version 19.14.26428.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.13`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.13`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4642 | `'issue': could not import the constraints for generic parameter 'parameter'` |
 | C5045 | `Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified` |
 
 ## Warnings introduced in Visual Studio 2017 version 15.6 (compiler version 19.13.26128.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.12`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.12`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C5044 | `An argument to command-line option option points to a path 'path' that does not exist` |
 
 ## Warnings introduced in Visual Studio 2017 version 15.5 (compiler version 19.12.25830.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.11`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.11`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4843 | `'type1': An exception handler of reference to array or function type is unreachable, use 'type2' instead` |
 | C4844 | `'export module module_name;' is now the preferred syntax for declaring a module interface` |
 | C5039 | `'function': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception.` |
@@ -107,10 +182,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 version 15.3 (compiler version 19.11.25506.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.10`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.10`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4597 | `undefined behavior: description` |
 | C4604 | `'type': passing argument by value across native and managed boundary requires valid copy constructor. Otherwise the runtime behavior is undefined` |
 | C4749 | `conditionally supported: description` |
@@ -129,10 +204,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 RTM (compiler version 19.10.25017.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.00`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.00`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4468 | `'fallthrough': attribute must be followed by a case label or a default label` |
 | C4698 | `'feature' is for evaluation purposes only and is subject to change or removal in future updates.` |
 | C4839 | `non-standard use of class 'class' as an argument to a variadic function` |
@@ -142,10 +217,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2015 Update 3 (compiler version 19.00.24215.1)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.00.23918`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.00.23918`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4467 | `usage of ATL attributes is deprecated` |
 | C4596 | `'name': illegal qualified name in member declaration` |
 | C4598 | `'#include <header>': header number number in the source does not match source at that position` |
@@ -153,10 +228,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2015 Update 2 (compiler version 19.00.23918.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.00.23506`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.00.23506`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4466 | `Could not perform coroutine heap elision` |
 | C4595 | `'class': non-member operator new or delete functions may not be declared inline` |
 | C4828 | `The file contains a character starting at offset 0xvalue that is illegal in the current source character set (codepage number).` |
@@ -164,10 +239,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2015 Update 1 (compiler version 19.00.23506.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.00.23026`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.00.23026`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4426 | `optimization flags changed after including header, may be due to #pragma optimize()` |
 | C4654 | `Code placed before include of precompiled header line will be ignored. Add code to precompiled header.` |
 | C5031 | `#pragma warning(pop): likely mismatch, popping warning state pushed in different file` |
@@ -175,10 +250,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2015 RTM (compiler version 19.00.23026.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:18`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:18`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4427 | `'error': overflow in constant division, undefined behavior` |
 | C4438 | `'type': cannot be called safely in /await:clrcompat mode. If 'type' calls into the CLR it may result in CLR head corruption` |
 | C4455 | `'operator name': literal suffix identifiers that do not start with an underscore are reserved` |
@@ -234,10 +309,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2013 (compiler version 18.00.21005.1)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:17`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:17`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4301 | `'type': overriding virtual function only differs from 'declaration' by const/volatile qualifier` |
 | C4316 | `'type': object allocated on the heap may not be aligned number` |
 | C4380 | `'type': A default constructor cannot be deprecated` |
@@ -263,10 +338,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2012 (compiler version 17.00.51106.1)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:16`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:16`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4330 | `attribute 'attribute' for section 'section' ignored` |
 | C4415 | `duplicate __declspec(code_seg('name'))` |
 | C4416 | `__declspec(code_seg(...)) contains empty string: ignored` |
@@ -296,7 +371,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4703 | `potentially uninitialized local pointer variable 'name' used` |
 | C4728 | `/Yl- option ignored because PCH reference is required` |
 | C4745 | `volatile access of 'name' cannot be honored due to its size` |
-| C4746| `volatile access of 'name' is subject to /volatile:<iso | ms> setting; consider using __iso_volatile_load/store intrinsic functions` |
+| C4746 | `volatile access of 'name' is subject to /volatile:<iso | ms> setting; consider using __iso_volatile_load/store intrinsic functions` |
 | C4872 | `floating point division by zero detected when compiling the call graph for the concurrency::parallel_for_each at: 'description'` |
 | C4880 | `casting from 'type' to 'type': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function` |
 | C4881 | `the constructor and/or the destructor will not be invoked for tile_static variable 'type'` |
@@ -306,10 +381,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2010 (compiler version 16.00.40219.01)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:15`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:15`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4352 | `'name': intrinsic function already defined` |
 | C4573 | `the usage of 'type' requires the compiler to capture 'this' but the current default capture mode does not allow it` |
 | C4574 | `'name' is defined to be '0': did you mean to use '#if name'?` |
@@ -322,10 +397,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2008 (compiler version 15.00.21022.08)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:14`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:14`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4396 | `'type': the inline specifier cannot be used when a friend declaration refers to a specialization of a function template` |
 | C4413 | `'declaration': reference member is initialized to a temporary that doesn't persist after the constructor exits` |
 | C4491 | `'description': has an illegal IDL version format` |
@@ -337,10 +412,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2005 (compiler version 14.00.50727.762)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:13`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:13`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4000 | `UNKNOWN WARNING    Please choose the Technical Support command on the Visual C++     Help menu, or open the Technical Support help file for more information` |
 | C4272 | `'type': is marked __declspec(dllimport); must specify native calling convention when importing a function.` |
 | C4333 | `'expression': right shift by too large amount, data loss` |
@@ -480,10 +555,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2003 (compiler version 13.10.3077)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:13.00.9466`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:13.00.9466`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4343 | `#pragma optimize(description,off) overrides /Og option` |
 | C4344 | `behavior change: use of explicit template arguments results in call to 'declaration'` |
 | C4346 | `'type': dependent name is not a type` |
@@ -516,10 +591,10 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2002 (compiler version 13.00.9466)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:12`.
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:12`**.
 
-|||
-|-|-|
+| Warning | Message |
+|--|--|
 | C4096 | `'type': interface is not a COM interface; will not be emitted to IDL` |
 | C4097 | `expected pragma parameter to be 'restore' or 'off'` |
 | C4165 | `'HRESULT' is being converted to 'bool'; are you sure this is what you want?` |
