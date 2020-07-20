@@ -1,6 +1,6 @@
 ---
 title: "locale Class"
-ms.date: "03/19/2019"
+ms.date: "07/20/2020"
 f1_keywords: ["xlocale/std::locale", "xlocale/std::locale::category", "xlocale/std::locale::combine", "xlocale/std::locale::name", "xlocale/std::locale::classic", "xlocale/std::locale::global", "xlocale/std::locale::operator( )", "xlocale/std::locale::facet", "xlocale/std::locale::id"]
 helpviewer_keywords: ["std::locale [C++]", "std::locale [C++], category", "std::locale [C++], combine", "std::locale [C++], name", "std::locale [C++], classic", "std::locale [C++], global", "std::locale [C++], facet", "std::locale [C++], id"]
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
@@ -599,7 +599,7 @@ loc3 (English_United States.1252) are not equal.
 
 ## <a name="op_call"></a> locale::operator()
 
-Compares two `basic_string` objects.
+Compares two `basic_string` objects according to the lexicographic comparison rules defined by this locale's std::collate<charT> facet.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -611,20 +611,14 @@ bool operator()(
 ### Parameters
 
 *left*\
-The left string.
+The first string to compare.
 
 *right*\
-The right string.
+The second string to compare.
 
 ### Return Value
 
-The member function returns:
-
-- -1 if the first sequence compares less than the second sequence.
-
-- +1 if the second sequence compares less than the first sequence.
-
-- 0 if the sequences are equivalent.
+- `true` if `left` is lexicographically less than `right`, otherwise `false`.
 
 ### Remarks
 
@@ -650,8 +644,8 @@ It means you can use a locale object as a function object.
 int main( )
 {
    using namespace std;
-   wchar_t *sa = L"ztesting";
-   wchar_t *sb = L"\0x00DFtesting";
+   const wchar_t *sa = L"ztesting";
+   const wchar_t *sb = L"\0x00DFtesting";
    basic_string<wchar_t> a( sa );
    basic_string<wchar_t> b( sb );
 
