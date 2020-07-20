@@ -618,7 +618,7 @@ The second string to compare.
 
 ### Return Value
 
-- `true` if `left` is lexicographically less than `right`, otherwise `false`.
+- `true` if *left* is lexicographically less than *right*, otherwise `false`.
 
 ### Remarks
 
