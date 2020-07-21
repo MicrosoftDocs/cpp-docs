@@ -84,7 +84,7 @@ For more information, see [Message Passing Functions](../../../parallel/concrt/m
 
 Cancels the currently executing task. This function can be called from within the body of a task to abort the task's execution and cause it to enter the `canceled` state.
 
-It is not a supported scenario to call this function if you are not within the body of a `task`. Doing so will result in undefined behavior such as a crash or a hang in your application.
+It is not a supported scenario to call this function if you are not within the body of a `task`. Doing so will result in undefined behavior such as a crash or unresponsiveness in your application.
 
 ```cpp
 inline __declspec(noreturn) void __cdecl cancel_current_task();

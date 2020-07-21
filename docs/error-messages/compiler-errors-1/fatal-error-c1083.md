@@ -53,9 +53,9 @@ Relative paths can also be used with directories on the include search path. If 
 
 then the file is not found. Use the correct path relative to the directory specified in the include search path. In this example, you could change the include search path to \path\example\, or remove the headers\ path segment from the `#include` directive.
 
-## Third-party library issues and Vcpkg
+## Third-party library issues and vcpkg
 
-If you see this error when you are trying to configure a third-party library as part of your build, consider using [Vcpkg](../../vcpkg.md), the Visual C++ Package Manager, to install and build the library. Vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports), and sets all the configuration properties and dependencies required for successful builds as part of your project. For more information, see the related [Visual C++ Blog](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) post.
+If you see this error when you are trying to configure a third-party library as part of your build, consider using [vcpkg](../../vcpkg.md), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports), and sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## The file is in your project, but not the include search path
 

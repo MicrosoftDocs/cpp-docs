@@ -64,7 +64,7 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
 - The runtime dynamic linking detection for the parallel algorithms library no longer uses an entire page to store the function pointer array. Marking this memory read-only was considered no longer relevant for security purposes.
 
-- `std::thread`'s constructor no longer waits for the thread to start, and no longer inserts so many layers of function calls between the underlying C library `_beginthreadex` and the supplied callable object. Previously `std::thread` put six functions between `_beginthreadex` and the supplied callable object. This number has been reduced to only three, two of which are just `std::invoke`. This change also resolves an obscure timing bug, where a `std::thread` constructor would hang if the system clock changed at the exact moment the `std::thread` was being created.
+- `std::thread`'s constructor no longer waits for the thread to start, and no longer inserts so many layers of function calls between the underlying C library `_beginthreadex` and the supplied callable object. Previously `std::thread` put six functions between `_beginthreadex` and the supplied callable object. This number has been reduced to only three, two of which are just `std::invoke`. This change also resolves an obscure timing bug, where a `std::thread` constructor would stop responding if the system clock changed at the exact moment the `std::thread` was being created.
 
 - Fixed a performance regression in `std::hash` that we introduced when implementing `std::hash<std::filesystem::path>`.
 
@@ -584,7 +584,7 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
 We now provide a more granular installation experience for installing the original C++ workload. We have added selectable components that enable you to install just the tools that you need. The indicated installation sizes for the components listed in the installer UI are incorrect, and underestimate the total size.
 
-To successfully create Win32 projects in the C++ desktop workload, you must install both a toolset and a Windows SDK. Install the recommended (selected) components **VC++ 2017 v141 toolset (x86, x64)** and **Windows 10 SDK (10.0.nnnnn)** to make sure it works. If the necessary tools aren't installed, projects won't be created successfully, and the wizard will hang.
+To successfully create Win32 projects in the C++ desktop workload, you must install both a toolset and a Windows SDK. Install the recommended (selected) components **VC++ 2017 v141 toolset (x86, x64)** and **Windows 10 SDK (10.0.nnnnn)** to make sure it works. If the necessary tools aren't installed, projects won't be created successfully, and the wizard will stop responding.
 
 ##### Visual Studio 2017 version 15.5
 
@@ -592,7 +592,7 @@ The Visual C++ Build tools (previously available as a standalone product) are no
 
 ## Linux development with C++
 
-The popular extension [Visual C++ for Linux Development](https://visualstudiogallery.msdn.microsoft.com/725025cf-7067-45c2-8d01-1e0fd359ae6e) is now part of Visual Studio. This installation provides everything you need to develop and debug C++ applications running on a Linux environment.
+The popular extension [Visual C++ for Linux Development](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.VisualCforLinuxDevelopment) is now part of Visual Studio. This installation provides everything you need to develop and debug C++ applications running on a Linux environment.
 
 ##### Visual Studio 2017 version 15.2
 

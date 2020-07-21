@@ -122,4 +122,3 @@ Smart locks typically wrap native locks and manage their lifetime. The following
 - [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [Intrinsic Functions](../code-quality/intrinsic-functions.md)
 - [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)
-- [Code Analysis Team Blog](https://blogs.msdn.microsoft.com/codeanalysis/)

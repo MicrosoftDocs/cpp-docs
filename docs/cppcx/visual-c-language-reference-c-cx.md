@@ -22,14 +22,14 @@ By using C++/CX, you can create:
 
 ## Related articles
 
-|||
-|-|-|
-|[Quick Reference](../cppcx/quick-reference-c-cx.md)|Table of keywords and operators for C++/CX.|
-|[Type System](../cppcx/type-system-c-cx.md)|Describes basic C++/CX types and programming constructs, and how to utilize C++/CX to consume and create Windows Runtime types.|
-|[Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)|Discusses how to use the IDE to build apps and link to static libraries and DLLs.|
-|[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)|Discusses how components that are written by using C++/CX can be used with components that are written in JavaScript, any managed language, or the Windows Runtime C++ Template Library.|
-|[Threading and Marshaling](../cppcx/threading-and-marshaling-c-cx.md)|Discusses how to specify the threading and marshaling behavior of components that you create.|
-|[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)|Reference documentation for the default namespace, the Platform namespace, Platform::Collections, and related namespaces.|
-|[CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)|Lists the CRT functions that are not available for use in Windows Runtime apps.|
-|[Get started with Windows 10 apps](/windows/uwp/get-started/)|Provides high-level guidance about Windows 10 apps and links to more information.|
-|[C++/CX Part 0 of \[n\]: An Introduction](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction/)<br /><br />[C++/CX Part 1 of \[n\]: A Simple Class](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class/)<br /><br />[C++/CX Part 2 of \[n\]: Types That Wear Hats](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C++/CX Part 3 of \[n\]: Under Construction](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)<br /><br />[C++/CX Part 4 of \[n\]: Static Member Functions](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions/)|An introductory blog series on C++/CX.|
+| Link | Description |
+|--|--|
+| [Quick Reference](../cppcx/quick-reference-c-cx.md) | Table of keywords and operators for C++/CX. |
+| [Type System](../cppcx/type-system-c-cx.md) | Describes basic C++/CX types and programming constructs, and how to utilize C++/CX to consume and create Windows Runtime types. |
+| [Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md) | Discusses how to use the IDE to build apps and link to static libraries and DLLs. |
+| [Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md) | Discusses how components that are written by using C++/CX can be used with components that are written in JavaScript, any managed language, or the Windows Runtime C++ Template Library. |
+| [Threading and Marshaling](../cppcx/threading-and-marshaling-c-cx.md) | Discusses how to specify the threading and marshaling behavior of components that you create. |
+| [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md) | Reference documentation for the default namespace, the Platform namespace, Platform::Collections, and related namespaces. |
+| [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) | Lists the CRT functions that are not available for use in Windows Runtime apps. |
+| [Get started with Windows 10 apps](/windows/uwp/get-started/) | Provides high-level guidance about Windows 10 apps and links to more information. |
+| [C++/CX Part 0 of \[n\]: An Introduction](https://devblogs.microsoft.com/cppblog/ccx-part-0-of-n-an-introduction/)<br /><br />[C++/CX Part 1 of \[n\]: A Simple Class](https://devblogs.microsoft.com/cppblog/ccx-part-1-of-n-a-simple-class/)<br /><br />[C++/CX Part 2 of \[n\]: Types That Wear Hats](https://devblogs.microsoft.com/cppblog/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C++/CX Part 3 of \[n\]: Under Construction](https://devblogs.microsoft.com/cppblog/ccx-part-3-of-n-under-construction/)<br /><br />[C++/CX Part 4 of \[n\]: Static Member Functions](https://devblogs.microsoft.com/cppblog/ccx-part-4-of-n-static-member-functions/)| An introductory blog series on C++/CX. |

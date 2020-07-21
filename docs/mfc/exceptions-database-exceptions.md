@@ -24,7 +24,7 @@ The most pragmatic approach to catching database exceptions is to test your appl
 
 In addition to return codes defined by the framework, which have names of the form **AFX_SQL_ERROR_XXX**, some [CDBExceptions](reference/cdbexception-class.md) are based on [ODBC](../data/odbc/odbc-basics.md) return codes. The return codes for such exceptions have names of the form **SQL_ERROR_XXX**.
 
-The return codes — both framework-defined and ODBC-defined — that the database classes can return are documented under the [m_nRetCode](reference/cdbexception-class.md#m_nretcode) data member of class `CDBException`. Additional information about return codes defined by ODBC is available in the ODBC SDK *Programmer's Reference* in the MSDN Library.
+The return codes — both framework-defined and ODBC-defined — that the database classes can return are documented under the [m_nRetCode](reference/cdbexception-class.md#m_nretcode) data member of class `CDBException`. Additional information about return codes defined by ODBC is available in the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference).
 
 ### Error Codes Used for DAO Exceptions
 

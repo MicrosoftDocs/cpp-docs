@@ -486,7 +486,7 @@ The Concurrency Visualizer includes support for analyzing performance of C++ AMP
 
 - [Channels (Threads View)](/visualstudio/profiling/channels-threads-view)
 
-- [Analyzing C++ AMP Code with the Concurrency Visualizer](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
+- [Analyzing C++ AMP Code with the Concurrency Visualizer](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)
 
 ## Performance Recommendations
 
