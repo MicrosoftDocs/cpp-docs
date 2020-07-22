@@ -9,7 +9,10 @@ helpviewer_keywords: ["from_chars_result class", "from_chars_result structure"]
 ## Syntax
 
 ```cpp
-struct from_chars_result { const char* ptr; errc ec; };
+struct from_chars_result {
+    const char* ptr;
+    errc ec;
+};
 ```
 
 |Member|Description|

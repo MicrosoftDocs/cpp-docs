@@ -26,7 +26,7 @@ Some of the benefits of using the `<charconv>` library are:
 
 **Namespace:** std
 
-**Compiler option:** /std:c++17
+/std:c++17, or later, is required.
 
 ## Members
 
@@ -34,7 +34,7 @@ Some of the benefits of using the `<charconv>` library are:
 
 | Type | Description |
 |-|:-|
-| [chars_format](chars-format-enum.md) | Specifies formatting type such as scientific, hex, and so on. |
+| [chars_format](chars-format-enumJTW.md) | Specifies formatting type such as scientific, hex, and so on. |
 | [from_chars_result](from-chars-result-structure.md) | Holds the result of a `from_chars` conversion. |
 | [to_chars_result](to-chars-result-structure.md) | Holds the result of a `to_chars` conversion. |
 

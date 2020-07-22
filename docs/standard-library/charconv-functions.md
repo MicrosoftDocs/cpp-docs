@@ -1,6 +1,6 @@
 ---
 title: "&lt;charconv&gt; functions"
-ms.date: "07/14/2020"
+ms.date: "07/22/2020"
 f1_keywords: ["charconv/std::to_chars", "charconv/std::from_chars"]
 helpviewer_keywords: ["std::charconv [C++], to_chars", "std::charconv [C++], from_chars"]
 ---
@@ -25,9 +25,9 @@ These conversion functions are tuned for performance, and also support shortest-
 
 Convert an integer or floating point value to a sequence of `char`.
 
-Converts `value` into a character string by filling the range \[first, last), where \[first, last) must be a valid range.
+Converts `value` into a character string by filling the range \[`first`, `last`), where \[`first`, `last`) must be a valid range.
 Returns a [to_chars_result structure](to-chars-result-structure.md). If  the conversion is successful, as indicated by `to_char_result.ec`, the member `ptr` is the one-past-the-end pointer of the characters written. Otherwise, `to_char_result.ec` has the value `errc::value_too_large`, `to_char_result.ptr` has the value `last`, and the contents of the range
-\[first, last) are unspecified.
+\[`first`, `last`) are unspecified.
 
 The only way that `to_chars` can fail is if you provide an insufficiently large buffer to hold the result.
 
@@ -178,7 +178,7 @@ For floating point conversions, the format of the sequence of chars being conver
 
 ### Remarks
 
-The `from_chars()` functions analyze the string [first, last) for a number pattern, where [first, last) is required to be a valid range.
+The `from_chars()` functions analyze the string \[`first`, `last`) for a number pattern, where \[`first`, `last`) is required to be a valid range.
 
 When parsing chars, whitespace is not ignored. Unlike `strtod()`, for example, the buffer must start with a valid numeric representation.
 
