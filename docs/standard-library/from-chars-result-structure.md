@@ -1,10 +1,10 @@
 ---
-title: "from_chars_result structure"
+title: "from_chars_result struct"
 ms.date: "7/22/2020"
 f1_keywords: ["std::from_chars_result"]
 helpviewer_keywords: ["from_chars_result class", "from_chars_result structure"]
 ---
-# from_chars_result Structure
+# from_chars_result struct
 
 ## Syntax
 

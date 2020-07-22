@@ -10,15 +10,15 @@ helpviewer_keywords: ["charconv header"]
 Quickly convert a character sequence to an integer or floating-point value, and the other way around.
 Use to write and roundtrip floating point values in JSON and text files.
 
-The conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means that when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point. No other CRT or STL function provides this capability.
+The conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point. No other CRT or STL function provides this capability.
 
 Some of the benefits of using the `<charconv>` library are:
 
-- When converting chars to a number, the numeric value does not need to be null-terminated. Likewise, when converting a number to chars, the result is not null-terminated.
-- The conversions functions do not allocate memory. You own the buffer in all cases.
-- The conversions functions do not throw. A result is returned from which you can determine if the conversion succeeded.
-- The conversions are not runtime rounding-mode sensitive.
-- The conversions are not locale aware. They always print and parse decimal points as `'.'`, and never as ',' for locales that use commas.
+- The sequence of chars representing a numeric value doesn't need to be null-terminated. Likewise, when a number is converted to chars, the result isn't null-terminated.
+- Conversion functions don't allocate memory. You own the buffer in all cases.
+- Conversion functions don't throw. They return a structure that contains error information.
+- Conversions aren't runtime rounding-mode sensitive.
+- Conversions aren't locale aware. They always print and parse decimal points as '.', never as ',' for locales that use commas.
 
 ## Requirements
 
@@ -26,7 +26,7 @@ Some of the benefits of using the `<charconv>` library are:
 
 **Namespace:** std
 
-**Compiler Option:** /std:c++17
+**Compiler option:** /std:c++17
 
 ## Members
 

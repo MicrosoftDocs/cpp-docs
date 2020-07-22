@@ -1,10 +1,10 @@
 ---
-title: "to_chars_result structure"
+title: "to_chars_result struct"
 ms.date: "07/22/2020"
 f1_keywords: ["charconv/std::to_chars_result"]
 helpviewer_keywords: ["to_chars_result class", "to_chars_result structure"]
 ---
-# to_chars_result Structure
+# to_chars_result struct
 
 ## Syntax
 
