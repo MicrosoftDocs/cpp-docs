@@ -1,20 +1,20 @@
 ---
 title: "Create and configure a Linux CMake project in Visual Studio"
 description: "How to create, configure, edit, and compile a Linux CMake project in Visual Studio"
-ms.date: "07/22/2020"
+ms.date: "07/23/2020"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
 # Create and configure a Linux CMake project
 
+::: moniker range="vs-2015"
+Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 We recommend that you use CMake for projects that are cross-platform or that you think you might make open-source. You can use CMake projects to build and debug the same source code on Windows, the Windows Subsystem for Linux (WSL), and remote systems.
 
 This article describes how to create a new CMake project and configure it to build and debug on a remote Linux system or WSL.
 
-::: moniker range="vs-2015"
-Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
-
-::: moniker-end
-::: moniker range=">=vs-2017"
 ## Before you begin
 
 First, make sure you have the Visual Studio Linux workload installed, including the CMake component. That's the **Linux development with C++** workload in the Visual Studio installer. See [Install the C++ Linux workload in Visual Studio](download-install-and-setup-the-linux-development-workload.md) if you aren't sure that you have that installed.
@@ -26,16 +26,15 @@ Also, make sure the following are installed on the remote machine:
 - rsync
 - zip
 - ninja-build
-
 ::: moniker-end
-::: moniker range="vs-2017"
 
+::: moniker range="vs-2017"
 The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
 The binaries are installed in `~/.vs/cmake`. After deploying the binaries, your project automatically regenerates. If the CMake specified by the `cmakeExecutable` field in *CMakeSettings.json* is invalid (it doesn't exist or is an unsupported version), and the prebuilt binaries are present, Visual Studio ignores `cmakeExecutable` and uses the prebuilt binaries.
 ::: moniker-end
-::: moniker range=">=vs-2019"
 
+::: moniker range=">=vs-2019"
 Linux support for CMake projects requires that the target machine have a recent version of CMake. Often, the version offered by a distribution's default package manager isn't recent enough to support all the features required by Visual Studio. Visual Studio 2019 detects whether a recent version of CMake is installed on the Linux system. If none is found, Visual Studio shows an info-bar at the top of the editor pane. It offers to install CMake for you from [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
 You can use Visual Studio 2019 to build and debug on a remote Linux system or WSL, and CMake will be invoked on that system. Cmake version 3.14 or later should be installed on the target machine.
