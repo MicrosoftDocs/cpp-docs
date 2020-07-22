@@ -177,14 +177,13 @@ For floating point conversions, the format of the sequence of chars being conver
 
 ### Remarks
 
-The `from_chars()` functions analyze the string [first, last) for a number pattern, where [first, last) is
-required to be a valid range.
+The `from_chars()` functions analyze the string [first, last) for a number pattern, where [first, last) is required to be a valid range.
 
-If no characters match a number pattern, `value` is unmodified, `from_chars_result.ptr`
-points to `first`, and `from_chars_result.ec` is `errc::invalid_argument`.
+When parsing a string, whitespace is not ignored.
 
-If only some characters match a number pattern, `from_chars_result.ptr` points to the first character not
-matching the pattern, or has the value of the `last` parameter if all characters match.
+If no characters match a number pattern, `value` is unmodified, `from_chars_result.ptr`points to `first`, and `from_chars_result.ec` is `errc::invalid_argument`.
+
+If only some characters match a number pattern, `from_chars_result.ptr` points to the first character not matching the pattern, or has the value of the `last` parameter if all characters match.
 
 If the parsed value isn't in the range representable by the type of `value`, `value` is unmodified and `from_chars_result.ec` is `errc::result_out_of_range`.
 
