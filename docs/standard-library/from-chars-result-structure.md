@@ -1,5 +1,5 @@
 ---
-title: "from_chars_result Structure"
+title: "from_chars_result structure"
 ms.date: "7/22/2020"
 f1_keywords: ["std::from_chars_result"]
 helpviewer_keywords: ["from_chars_result class", "from_chars_result structure"]

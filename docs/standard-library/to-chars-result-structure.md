@@ -1,5 +1,5 @@
 ---
-title: "to_chars_result Structure"
+title: "to_chars_result structure"
 ms.date: "07/22/2020"
 f1_keywords: ["charconv/std::to_chars_result"]
 helpviewer_keywords: ["to_chars_result class", "to_chars_result structure"]
