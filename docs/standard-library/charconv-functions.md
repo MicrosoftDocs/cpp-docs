@@ -13,6 +13,15 @@ The \<charconv> header includes the following non-member functions:
 |[to_chars](#to_chars) | Convert an integer or floating point value to a sequence of `char`. |
 |[from_chars](#from_chars) | Convert a sequence of `char` to  an integer or floating point value. |
 
+These conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means that when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point.
+
+- When converting chars to a number, the numeric value does not need to be null-terminated. Likewise, when converting a number to chars, the result is not null-terminated.
+- The conversions functions do not allocate memory. You own the buffer in all cases.
+- The conversions functions do not throw. A result is returned from which you can determine if the conversion succeeded.
+- The conversions are not runtime rounding-mode sensitive.
+- The conversions are not locale aware. They always print and parse decimal points as `'.'`, and never as ',' for locales that use commas.
+
+
 ## `to_chars`
 
 Convert an integer or floating point value to a sequence of `char`.
