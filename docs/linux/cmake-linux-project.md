@@ -1,24 +1,25 @@
 ---
 title: "Create and configure a Linux CMake project in Visual Studio"
 description: "How to create, configure, edit, and compile a Linux CMake project in Visual Studio"
-ms.date: "06/22/2020"
+ms.date: "07/22/2020"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
 # Create and configure a Linux CMake project
 
-::: moniker range="vs-2015"
+We recommend that you use CMake for projects that are cross-platform or that you think you might make open-source. You can use CMake projects to build and debug the same source code on Windows, the Windows Subsystem for Linux (WSL), and remote systems.
 
+This article describes how to create a new CMake project and configure it to build and debug on a remote Linux system or WSL.
+
+::: moniker range="vs-2015"
 Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-
 ::: moniker range=">=vs-2017"
-
 ## Before you begin
 
-First, make sure you have the **Linux development with C++** workload installed, including the CMake component. See [Install the C++ Linux workload in Visual Studio](download-install-and-setup-the-linux-development-workload.md).
+First, make sure you have the Visual Studio Linux workload installed, including the CMake component. That's the **Linux development with C++** workload in the Visual Studio installer. See [Install the C++ Linux workload in Visual Studio](download-install-and-setup-the-linux-development-workload.md) if you aren't sure that you have that installed.
 
-On the Linux system, make sure that the following are installed:
+Also, make sure the following are installed on the remote machine:
 
 - gcc
 - gdb
@@ -27,23 +28,19 @@ On the Linux system, make sure that the following are installed:
 - ninja-build
 
 ::: moniker-end
-
-::: moniker range="vs-2019"
-
-Linux support for CMake projects requires the target machine to have a recent version of CMake. Often, the version offered by a distribution’s default package manager isn't recent enough to support all the features required by Visual Studio. Visual Studio 2019 detects whether a recent version of CMake is installed on the Linux system. If none is found, Visual Studio shows an info-bar at the top of the editor pane. It offers to install CMake for you from [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
-
-The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. In Visual Studio 2019, version 3.14 or later is recommended.
-
-::: moniker-end
-
 ::: moniker range="vs-2017"
 
 The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
 The binaries are installed in `~/.vs/cmake`. After deploying the binaries, your project automatically regenerates. If the CMake specified by the `cmakeExecutable` field in *CMakeSettings.json* is invalid (it doesn't exist or is an unsupported version), and the prebuilt binaries are present, Visual Studio ignores `cmakeExecutable` and uses the prebuilt binaries.
+::: moniker-end
+::: moniker range=">=vs-2019"
 
-:::moniker-end
+Linux support for CMake projects requires that the target machine have a recent version of CMake. Often, the version offered by a distribution's default package manager isn't recent enough to support all the features required by Visual Studio. Visual Studio 2019 detects whether a recent version of CMake is installed on the Linux system. If none is found, Visual Studio shows an info-bar at the top of the editor pane. It offers to install CMake for you from [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
+You can use Visual Studio 2019 to build and debug on a remote Linux system or WSL, and CMake will be invoked on that system. Cmake version 3.14 or later should be installed on the target machine.
+
+::: moniker-end
 ::: moniker range="vs-2019"
 
 ## Create a new Linux CMake project
@@ -55,11 +52,14 @@ To create a new Linux CMake project in Visual Studio 2019:
 
 Visual Studio creates a minimal *CMakeLists.txt* file with only the name of the executable and the minimum CMake version required. You can manually edit this file however you like; Visual Studio will never overwrite your changes. You can specify CMake command-line arguments and environment variables in this file. Right-click on the root *CMakeLists.txt* file in **Solution Explorer** and choose **CMake settings for project**. To specify options for debugging, right-click on the project node and choose **Debug and launch settings**.
 
+Alternatively, you can bring your own CMake project to Visual Studio 2019 by opening any folder containing a root `CMakeLists.txt` directly in Visual Studio. The following section explains how to use "Open Folder" to open an existing repo.
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
 ## Open a CMake project folder
+
+You can bring your own CMake project to Visual Studio by opening any folder containing a root `CMakeLists.txt`.
 
 When you open a folder that contains an existing CMake project, Visual Studio uses variables in the CMake cache to automatically configure IntelliSense and builds. Local configuration and debugging settings get stored in JSON files. You can optionally share these files with others who are using Visual Studio.
 
@@ -92,7 +92,7 @@ add_executable(hello-cmake hello.cpp)
 
 ## Choose a Linux target
 
-As soon as you open the folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, change the project settings to **Linux-Debug** or **Linux-Release**. (See [Configure CMake settings for Linux](#configure_cmake_linux) below.)
+After you open the folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, change the project settings to **Linux-Debug** or **Linux-Release**. (See [Configure CMake settings for Linux](#configure_cmake_linux) below.)
 
 ::: moniker-end
 
@@ -106,7 +106,9 @@ To target Windows Subsystem for Linux, click on **Manage Configurations** in the
 
 ::: moniker range=">=vs-2017"
 
-Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets. If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
+Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets. 
+
+If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
 If you specify a remote Linux target, your source is copied to the remote system.
 
@@ -126,7 +128,7 @@ For more information, see [Linux target locale](configure-a-linux-project.md#loc
 
 To debug your code on the specified target system, set a breakpoint. Select the CMake target as the startup item in the toolbar menu next to the project setting. Then choose **&#x23f5; Start** on the toolbar, or press **F5**.
 
-To customize your program’s command-line arguments, press the **Switch Targets** button at the top of **Solution Explorer** and then choose **Targets View**. Then right-click on the target and select **Debug and Launch Settings**. This command opens or creates a *launch.vs.json* configuration file that contains information about your program. To specify the location for source files, add a **sourceFileMap** property to the file, as shown in this example:
+To customize your program's command-line arguments, press the **Switch Targets** button at the top of **Solution Explorer** and then choose **Targets View**. Then right-click on the target and select **Debug and Launch Settings**. This command opens or creates a *launch.vs.json* configuration file that contains information about your program. To specify the location for source files, add a **sourceFileMap** property to the file, as shown in this example:
 
 ```json
 "MIMode": "gdb",
