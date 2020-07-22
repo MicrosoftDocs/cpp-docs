@@ -10,8 +10,8 @@ The \<charconv> header includes the following non-member functions:
 
 | **Non-member functions** | **Description** |
 |-|-|
-|[to_chars](#to_chars) | Convert an integer or floating point value to a sequence of `char`. |
-|[from_chars](#from_chars) | Convert a sequence of `char` to  an integer or floating point value. |
+|[to_chars](#to_chars) | Convert an integer or floating-point value to a sequence of `char`. |
+|[from_chars](#from_chars) | Convert a sequence of `char` to  an integer or floating-point value. |
 
 These conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means that when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point.
 
@@ -23,7 +23,7 @@ These conversion functions are tuned for performance, and also support shortest-
 
 ## `to_chars`
 
-Convert an integer or floating point value to a sequence of `char`.
+Convert an integer or floating-point value to a sequence of `char`.
 
 Converts `value` into a character string by filling the range \[`first`, `last`), where \[`first`, `last`) must be a valid range.
 Returns a [to_chars_result structure](to-chars-result-structure.md). If  the conversion is successful, as indicated by `to_char_result.ec`, the member `ptr` is the one-past-the-end pointer of the characters written. Otherwise, `to_char_result.ec` has the value `errc::value_too_large`, `to_char_result.ptr` has the value `last`, and the contents of the range
@@ -47,7 +47,7 @@ to_chars_result to_chars(char* first, char* last, const long long value, const i
 to_chars_result to_chars(char* first, char* last, const unsigned long long value, const int base = 10);
 to_chars_result to_chars(char* first, char* last, const bool value, const int base = 10) = delete;
 
-// floating point to chars
+// floating-point to chars
 
 to_chars_result to_chars(char* first, char* last, const float value);
 to_chars_result to_chars(char* first, char* last, const double value);
@@ -75,10 +75,10 @@ The value to convert. If `value` is negative, the representation starts with `-`
 For integer conversions, the base to use when converting `value` to chars. Must be between 2 and 36, inclusive. There will be no leading zeros. Digits in the range 10..35 (inclusive) are represented as lowercase characters a..z
 
 *fmt*\
-For floating point conversions, a bitmask specifying the conversion format to use such as scientific, fixed, or hexadecimal. See [chars_format](chars-format-enum.md) for details.
+For floating-point conversions, a bitmask specifying the conversion format to use such as scientific, fixed, or hexadecimal. See [chars_format](chars-format-enum.md) for details.
 
 *precision*\
-For floating point conversions, the number of digits of precision for the converted value.
+For floating-point conversions, the number of digits of precision for the converted value.
 
 ### Return value
 
@@ -86,7 +86,7 @@ A [to_chars_result](to-chars-result-structure.md) containing the result of the c
 
 ### Remarks
 
-About floating point to chars conversions:
+About floating-point to chars conversions:
 
 When either the `fmt` or `precision` parameter isn't supplied, `value` is converted to a string using the smallest number of characters such that there is at least one digit before the radix point (if present). Parsing the representation using the corresponding `from_chars` function will recover the value exactly. This behavior can't be obtained by any combination of `fmt` or `precision` arguments. If there are several such representations, the representation with the smallest difference from the floating-point argument value is chosen.
 
@@ -135,7 +135,7 @@ int main()
 
 ## `from_chars`
 
-Convert a sequence of `char` to an integer or floating point value.
+Convert a sequence of `char` to an integer or floating-point value.
 
 ```cpp
 // char to an integer value
@@ -152,7 +152,7 @@ from_chars_result from_chars(char* first, char* last, unsigned long& value,int b
 from_chars_result from_chars(char* first, char* last, long long& value,int base = 10)
 from_chars_result from_chars(char* first, char* last, unsigned long long& value, int base = 10)
 
-// char to a floating point value
+// char to a floating-point value
 
 from_chars_result from_chars(char* first, char* last, float& value,chars_format fmt = chars_format::general)
 from_chars_result from_chars(char* first, char* last, double& value,chars_format fmt = chars_format::general)
@@ -174,7 +174,7 @@ If the conversion is successful, contains the result of the conversion.
 For integer conversions, the base to use during the conversion. Must be between 2 and 36, inclusive.
 
 *fmt*\
-For floating point conversions, the format of the sequence of chars being converted. See [chars_format](chars-format-enum.md) for details.
+For floating-point conversions, the format of the sequence of chars being converted. See [chars_format](chars-format-enum.md) for details.
 
 ### Remarks
 

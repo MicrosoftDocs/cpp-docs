@@ -8,7 +8,7 @@ helpviewer_keywords: ["charconv header"]
 # &lt;charconv&gt;
 
 Quickly convert a character sequence to an integer or floating-point value, and the other way around.
-Use to write and roundtrip floating point values in JSON and text files.
+Use to write and roundtrip floating-point values in JSON and text files.
 
 The conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point. No other CRT or STL function provides this capability.
 
@@ -34,7 +34,7 @@ Some of the benefits of using the `<charconv>` library are:
 
 | Type | Description |
 |-|:-|
-| [chars_format](chars-format-enumJTW.md) | Specifies formatting type such as scientific, hex, and so on. |
+| [chars_format](chars-format-enum.md) | Specifies formatting type such as scientific, hex, and so on. |
 | [from_chars_result](from-chars-result-structure.md) | Holds the result of a `from_chars` conversion. |
 | [to_chars_result](to-chars-result-structure.md) | Holds the result of a `to_chars` conversion. |
 
