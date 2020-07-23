@@ -122,11 +122,11 @@
           href: ../standard-library/charconv.md
         - name: <charconv> functions
           href: ../standard-library/charconv-functions.md
-        - name: chars_format
+        - name: chars_format enum
           href: ../standard-library/chars-format-enum.md
-        - name: from_chars_result
+        - name: from_chars_result struct
           href: ../standard-library/from-chars-result-structure.md
-        - name: to_chars_result
+        - name: to_chars_result struct
           href: ../standard-library/to-chars-result-structure.md
     - name: <chrono>
       expanded: false
