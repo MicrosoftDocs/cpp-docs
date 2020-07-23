@@ -123,7 +123,7 @@
         - name: <charconv> functions
           href: ../standard-library/charconv-functions.md
         - name: chars_format enum
-          href: ../standard-library/chars-format-enum.md
+          href: ../standard-library/chars-format-class.md
         - name: from_chars_result struct
           href: ../standard-library/from-chars-result-structure.md
         - name: to_chars_result struct

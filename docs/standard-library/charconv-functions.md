@@ -75,7 +75,7 @@ The value to convert. If `value` is negative, the representation starts with `-`
 For integer conversions, the base to use when converting `value` to chars. Must be between 2 and 36, inclusive. There will be no leading zeros. Digits in the range 10..35 (inclusive) are represented as lowercase characters a..z
 
 *fmt*\
-For floating-point conversions, a bitmask specifying the conversion format to use such as scientific, fixed, or hexadecimal. See [chars_format](chars-format-enum.md) for details.
+For floating-point conversions, a bitmask specifying the conversion format to use such as scientific, fixed, or hexadecimal. See [chars_format](chars-format-class.md) for details.
 
 *precision*\
 For floating-point conversions, the number of digits of precision for the converted value.
@@ -86,7 +86,7 @@ A [to_chars_result](to-chars-result-structure.md) containing the result of the c
 
 ### Remarks
 
-Functions taking a [chars_format](chars-format-enum.md) parameter determine the conversion specifier as if they were using `printf()` as follows:
+Functions taking a [chars_format](chars-format-class.md) parameter determine the conversion specifier as if they were using `printf()` as follows:
 The conversion specifier is `f` if `fmt` is `chars_format::fixed`, `e` if `fmt` is `chars_format::scientific`, `a` (without leading "0x" in the result) if `fmt` is `chars_format::hex`, and `g` if `fmt` is `chars_format::general`. Specifying the shortest fixed notation may still result in lengthy output because it may be the shortest possible representation when the value is very large or very small.
 
 The following table describes the conversion behavior given different combinations of `fmt` and `precision` parameters. The term "shortest round-trip" refers to writing the fewest number of digits necessary such that parsing that representation using the corresponding `from_chars` function will recover the value exactly.
@@ -176,7 +176,7 @@ If the conversion is successful, contains the result of the conversion.
 For integer conversions, the base to use during the conversion. Must be between 2 and 36, inclusive.
 
 *fmt*\
-For floating-point conversions, the format of the sequence of chars being converted. See [chars_format](chars-format-enum.md) for details.
+For floating-point conversions, the format of the sequence of chars being converted. See [chars_format](chars-format-class.md) for details.
 
 ### Remarks
 

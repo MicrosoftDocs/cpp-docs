@@ -28,7 +28,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 |Type|Description|
 |-|-|
-|[chars_format](../standard-library/chars-format-enum.md)|Floating-point format for primitive numerical conversion.|
+|[chars_format](../standard-library/chars-format-classmd)|Floating-point format for primitive numerical conversion.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|A class that wraps the type of a `pair` element.|
 |[tuple_size](../standard-library/tuple-size-class-tuple.md)|A class that wraps `pair` element count.|
 
