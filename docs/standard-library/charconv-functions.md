@@ -18,8 +18,8 @@ These conversion functions are tuned for performance, and also support shortest-
 - When converting chars to a number, the numeric value does not need to be null-terminated. Likewise, when converting a number to chars, the result is not null-terminated.
 - The conversion functions don't allocate memory. You own the buffer in all cases.
 - The conversion functions don't throw. A result is returned from which you can determine if the conversion succeeded.
-- The conversion are not runtime rounding-mode sensitive.
-- The conversion are not locale aware. They always print and parse decimal points as `'.'`, and never as ',' for locales that use commas.
+- The conversion functions are not runtime rounding-mode sensitive.
+- The conversion functions are not locale aware. They always print and parse decimal points as `'.'`, and never as ',' for locales that use commas.
 
 ## `to_chars`
 
@@ -36,9 +36,9 @@ The only way that `to_chars` can fail is if you provide an insufficiently large 
 
 to_chars_result to_chars(char* first, char* last, char value, int base = 10);
 to_chars_result to_chars(char* first, char* last, signed char value, int base = 10);
-to_chars_result to_chars(char* first, char* last, char value, int base = 10);
+to_chars_result to_chars(char* first, char* last, unsigned char value, int base = 10);
 to_chars_result to_chars(char* first, char* last, short value, int base = 10);
-to_chars_result to_chars(char* first, char* last, short value, int base = 10);
+to_chars_result to_chars(char* first, char* last, unsigned short value, int base = 10);
 to_chars_result to_chars(char* first, char* last, int value, int base = 10);
 to_chars_result to_chars(char* first, char* last, unsigned int value, int base = 10);
 to_chars_result to_chars(char* first, char* last, long value, int base = 10);
@@ -87,9 +87,9 @@ A [to_chars_result](to-chars-result-structure.md) containing the result of the c
 ### Remarks
 
 Functions taking a [chars_format](chars-format-enum.md) parameter determine the conversion specifier as if they were using `printf()` as follows:
-The conversion specifier is `f` if `fmt` is `chars_format::fixed`, `e` if `fmt` is `chars_format::scientific`, `a` (without leading "0x" in the result) if `fmt` is `chars_format::hex`, and `g` if `fmt` is `chars_format::general`. Specifying the shortest fixed notation may still result in lengthy output because it may be shortest possible representation when the value is very large or very small.
+The conversion specifier is `f` if `fmt` is `chars_format::fixed`, `e` if `fmt` is `chars_format::scientific`, `a` (without leading "0x" in the result) if `fmt` is `chars_format::hex`, and `g` if `fmt` is `chars_format::general`. Specifying the shortest fixed notation may still result in lengthy output because it may be the shortest possible representation when the value is very large or very small.
 
-The following table describes the conversion behavior given different combinations of `fmt` and `precision`parameters. The term "shortest round-trip" refers to writing the fewest number of digits necessary such that parsing that representation using the corresponding `from_chars` function will recover the value exactly.
+The following table describes the conversion behavior given different combinations of `fmt` and `precision` parameters. The term "shortest round-trip" refers to writing the fewest number of digits necessary such that parsing that representation using the corresponding `from_chars` function will recover the value exactly.
 
 | `fmt` and `precision` combination | Output |
 |--|--|
@@ -231,4 +231,5 @@ int main()
 
 ## See also
 
-[\<charconv>](charconv.md)
+[\<charconv>](charconv.md)  
+[The shortest decimal string that round-trips](https://www.exploringbinary.com/the-shortest-decimal-string-that-round-trips-examples/)
