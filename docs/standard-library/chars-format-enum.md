@@ -28,7 +28,7 @@ For the [to_chars](charconv-functions.md#to_chars) functions, it describes what 
 
 - `scientific` causes `from_chars()` to expect and parse an exponent. It is like the ``e`` `printf()` format specifier, which formats for scientific notation, such as `"1.729e+01"`
 - `fixed` causes `from_chars()` not to expect or parse an exponent. It is like the ``f`` `printf()` format specifier, which formats for floating-point, such as `"17.29"`.
-- `hex`, causes `from_chars()` to format the number in hexadecimal format, though without the leading "0x".
+- `hex`, causes `from_chars()` to expect the number in hexadecimal format, though without a leading "0x".
 - `general` causes `from_chars()` to accept (but not require) an exponent. For `to_chars()`, it is like the `g` printf() format specifier, which switches between scientific notation or fixed. It takes into consideration what the exponent will be so that it can generate reasonably compact output. For example: `1e-5` results in `"1e-05"`, but `1e-4` results in `"0.001"`. `1e5` results in `100000`, while `1e6` results in `1e+06`. `1e0` produces `1`.
 
 See the [printf() format specifiers](..\c-runtime-library\format-specification-syntax-printf-and-wprintf-functions.md) for details.

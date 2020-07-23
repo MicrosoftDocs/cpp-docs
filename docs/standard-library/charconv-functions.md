@@ -16,10 +16,10 @@ The \<charconv> header includes the following non-member functions:
 These conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means that when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point.
 
 - When converting chars to a number, the numeric value does not need to be null-terminated. Likewise, when converting a number to chars, the result is not null-terminated.
-- The conversions functions do not allocate memory. You own the buffer in all cases.
-- The conversions functions do not throw. A result is returned from which you can determine if the conversion succeeded.
-- The conversions are not runtime rounding-mode sensitive.
-- The conversions are not locale aware. They always print and parse decimal points as `'.'`, and never as ',' for locales that use commas.
+- The conversion functions don't allocate memory. You own the buffer in all cases.
+- The conversion functions don't throw. A result is returned from which you can determine if the conversion succeeded.
+- The conversion are not runtime rounding-mode sensitive.
+- The conversion are not locale aware. They always print and parse decimal points as `'.'`, and never as ',' for locales that use commas.
 
 ## `to_chars`
 
@@ -34,30 +34,30 @@ The only way that `to_chars` can fail is if you provide an insufficiently large 
 ```cpp
 // integer to chars
 
-to_chars_result to_chars(char* first, char* last, const char value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const signed char value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const unsigned char value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const short value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const unsigned short value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const int value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const unsigned int value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const long value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const unsigned long value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const long long value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const unsigned long long value, const int base = 10);
-to_chars_result to_chars(char* first, char* last, const bool value, const int base = 10) = delete;
+to_chars_result to_chars(char* first, char* last, char value, int base = 10);
+to_chars_result to_chars(char* first, char* last, signed char value, int base = 10);
+to_chars_result to_chars(char* first, char* last, char value, int base = 10);
+to_chars_result to_chars(char* first, char* last, short value, int base = 10);
+to_chars_result to_chars(char* first, char* last, short value, int base = 10);
+to_chars_result to_chars(char* first, char* last, int value, int base = 10);
+to_chars_result to_chars(char* first, char* last, unsigned int value, int base = 10);
+to_chars_result to_chars(char* first, char* last, long value, int base = 10);
+to_chars_result to_chars(char* first, char* last, unsigned long value, int base = 10);
+to_chars_result to_chars(char* first, char* last, long long value, int base = 10);
+to_chars_result to_chars(char* first, char* last, unsigned long long value, int base = 10);
+to_chars_result to_chars(char* first, char* last, bool value, int base = 10) = delete;
 
 // floating-point to chars
 
-to_chars_result to_chars(char* first, char* last, const float value);
-to_chars_result to_chars(char* first, char* last, const double value);
-to_chars_result to_chars(char* first, char* last, const long double value);
-to_chars_result to_chars(char* first, char* last, const float value, const chars_format fmt);
-to_chars_result to_chars(char* first, char* last, const double value, const chars_format fmt);
-to_chars_result to_chars(char* first, char* last, const long double value, const chars_format fmt);
-to_chars_result to_chars(char* first, char* last, const float value, const chars_format fmt, const int precision);
-to_chars_result to_chars(char* first, char* last, const double value, const chars_format fmt, const int precision);
-to_chars_result to_chars(char* first, char* last, const long double value, const chars_format fmt, const int precision);
+to_chars_result to_chars(char* first, char* last, float value);
+to_chars_result to_chars(char* first, char* last, double value);
+to_chars_result to_chars(char* first, char* last, long double value);
+to_chars_result to_chars(char* first, char* last, float value, chars_format fmt);
+to_chars_result to_chars(char* first, char* last, double value, chars_format fmt);
+to_chars_result to_chars(char* first, char* last, long double value, chars_format fmt);
+to_chars_result to_chars(char* first, char* last, float value, chars_format fmt, int precision);
+to_chars_result to_chars(char* first, char* last, double value, chars_format fmt, int precision);
+to_chars_result to_chars(char* first, char* last, long double value, chars_format fmt, int precision);
 ```
 
 ### Parameters
@@ -86,14 +86,16 @@ A [to_chars_result](to-chars-result-structure.md) containing the result of the c
 
 ### Remarks
 
-About floating-point to chars conversions:
+Functions taking a [chars_format](chars-format-enum.md) parameter determine the conversion specifier as if they were using `printf()` as follows:
+The conversion specifier is `f` if `fmt` is `chars_format::fixed`, `e` if `fmt` is `chars_format::scientific`, `a` (without leading "0x" in the result) if `fmt` is `chars_format::hex`, and `g` if `fmt` is `chars_format::general`. Specifying the shortest fixed notation may still result in lengthy output because it may be shortest possible representation when the value is very large or very small.
 
-When either the `fmt` or `precision` parameter isn't supplied, `value` is converted to a string using the smallest number of characters such that there is at least one digit before the radix point (if present). Parsing the representation using the corresponding `from_chars` function will recover the value exactly. This behavior can't be obtained by any combination of `fmt` or `precision` arguments. If there are several such representations, the representation with the smallest difference from the floating-point argument value is chosen.
+The following table describes the conversion behavior given different combinations of `fmt` and `precision`parameters. The term "shortest round-trip" refers to writing the fewest number of digits necessary such that parsing that representation using the corresponding `from_chars` function will recover the value exactly.
 
-The functions taking a [chars_format](chars-format-enum.md) parameter determine the conversion specifier as if they were using `printf()` as follows:
-The conversion specifier is `f` if `fmt` is `chars_format::fixed`, `e` if `fmt` is `chars_format::scientific`, `a` (without leading "0x" in the result) if `fmt` is `chars_format::hex`, and `g` if `fmt` is `chars_format::general`.
-
-Specifying the shortest fixed notation may still result in lengthy output because that output is the shortest possible when the value is very large or very small.
+| `fmt` and `precision` combination | Output |
+|--|--|
+|  Neither | Whichever of fixed or scientific notation is shorter, preferring fixed as a tiebreaker.</br>This behavior can't be simulated by any overload that takes the `fmt` parameter. |
+| `fmt` | The shortest round-trip behavior for the specified format, such as the shortest scientific format. |
+| `fmt` and `precision` | Uses the given precision, following `printf()` style, without  shortest round-trip behavior. |
 
 ### Return value
 
@@ -122,7 +124,7 @@ template <typename T> void TestToChars(const T t)
     }
     else // probably std::errc::value_too_large
     {
-        printf("Error: %d\n", static_cast<int>res.ec);
+        printf("Error: %d\n", static_cast<int>(res.ec));
     }
 }
 
@@ -140,23 +142,23 @@ Convert a sequence of `char` to an integer or floating-point value.
 ```cpp
 // char to an integer value
 
-from_chars_result from_chars(char* first, char* last, char& value, int base = 10)
-from_chars_result from_chars(char* first, char* last, signed char& value,int base = 10)
-from_chars_result from_chars(char* first, char* last, unsigned char& value,int base = 10)
-from_chars_result from_chars(char* first, char* last, short& value,int base = 10)
-from_chars_result from_chars(char* first, char* last, unsigned short& value,int base = 10)
-from_chars_result from_chars(char* first, char* last, int& value, int base = 10)
-from_chars_result from_chars(char* first, char* last, unsigned int& value,int base = 10)
-from_chars_result from_chars(char* first, char* last, long& value, int base = 10)
-from_chars_result from_chars(char* first, char* last, unsigned long& value,int base = 10)
-from_chars_result from_chars(char* first, char* last, long long& value,int base = 10)
-from_chars_result from_chars(char* first, char* last, unsigned long long& value, int base = 10)
+from_chars_result from_chars(const char* first, const char* last, char& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, signed char& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, unsigned char& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, short& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, unsigned short& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, int& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, unsigned int& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, long& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, unsigned long& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, long long& value, int base = 10);
+from_chars_result from_chars(const char* first, const char* last, unsigned long long& value, int base = 10);
 
 // char to a floating-point value
 
-from_chars_result from_chars(char* first, char* last, float& value,chars_format fmt = chars_format::general)
-from_chars_result from_chars(char* first, char* last, double& value,chars_format fmt = chars_format::general)
-from_chars_result from_chars(char* first, char* last, long double& value,chars_format fmt = chars_format::general)
+from_chars_result from_chars(const char* first, const char* last, float& value, chars_format fmt = chars_format::general);
+from_chars_result from_chars(const char* first, const char* last, double& value, chars_format fmt = chars_format::general);
+from_chars_result from_chars(const char* first, const char* last, long double& value, chars_format fmt = chars_format::general);
 ```
 
 ### Parameters
@@ -180,11 +182,11 @@ For floating-point conversions, the format of the sequence of chars being conver
 
 The `from_chars()` functions analyze the string \[`first`, `last`) for a number pattern, where \[`first`, `last`) is required to be a valid range.
 
-When parsing chars, whitespace is not ignored. Unlike `strtod()`, for example, the buffer must start with a valid numeric representation.
+When parsing chars, whitespace isn't ignored. Unlike `strtod()`, for example, the buffer must start with a valid numeric representation.
 
 Returns a [from_chars_result structure](from-chars-result-structure.md).
 
-If no characters match a number pattern, `value` is unmodified, `from_chars_result.ptr`points to `first`, and `from_chars_result.ec` is `errc::invalid_argument`.
+If no characters match a number pattern, `value` is unmodified, `from_chars_result.ptr` points to `first`, and `from_chars_result.ec` is `errc::invalid_argument`.
 
 If only some characters match a number pattern, `from_chars_result.ptr` points to the first character not matching the pattern, or has the value of the `last` parameter if all characters match.
 
@@ -214,7 +216,7 @@ double TestFromChars(const std::string_view sv)
     }
     else
     {
-        printf("Error: %d\n", static_cast<int>(res.ec);
+        printf("Error: %d\n", static_cast<int>(res.ec));
     }
 
     return dbl;

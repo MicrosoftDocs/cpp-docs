@@ -10,7 +10,7 @@ helpviewer_keywords: ["to_chars_result class", "to_chars_result structure"]
 
 ```cpp
 struct to_chars_result {
-    const char* ptr;
+    char* ptr;
     errc ec;
 };
 ```
@@ -19,7 +19,7 @@ struct to_chars_result {
 
 |Member|Description|
 |--|--|
-|`ptr`| If `ec` is equal to `errc{}`, the conversion was successful and `ptr` points one past the end pointer of the characters written. Otherwise, `ptr` has the value of the to_chars() parameter `last`, and the contents of the range \[first, last) are unspecified.|
+|`ptr`| If `ec` is equal to `errc{}`, the conversion was successful and `ptr` is the one-past-the-end pointer of the written characters. Otherwise, `ptr` has the value of the `to_chars()` parameter `last`, and the contents of the range \[first, last) are unspecified.|
 |`ec` | The conversion error code. For specific error codes, see [`errc`](system-error-enums.md#errc).|
 
 ## Requirements
@@ -28,7 +28,7 @@ struct to_chars_result {
 
 **Namespace:** std
 
-/std:c++17, or later, is required
+**Compiler option:** /std:c++17, or later, is required
 
 ## See also
 
