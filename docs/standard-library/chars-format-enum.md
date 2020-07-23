@@ -21,7 +21,7 @@ enum class chars_format {
 
 ### Members
 
-|||
+|Element|Description|
 |-|-|
 | `scientific` | Causes `from_chars()` to expect and parse an exponent. It is like the `'e'` `printf()` format specifier, which formats for scientific notation, such as `"1.729e+01"` |
 | `fixed` | Causes `from_chars()` not to expect or parse an exponent. It is like the `'f'` `printf()` format specifier, which formats for floating-point, such as `"17.29"`.|
