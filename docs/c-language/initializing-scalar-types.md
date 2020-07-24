@@ -6,34 +6,34 @@ ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
 ---
 # Initializing Scalar Types
 
-When initializing scalar types, the value of the *assignment-expression* is assigned to the variable. The conversion rules for assignment apply. (See [Type Conversions](../c-language/type-conversions-c.md) for information on conversion rules.)
+When initializing scalar types, the value of the *`assignment-expression`* is assigned to the variable. The conversion rules for assignment apply. (See [Type Conversions](../c-language/type-conversions-c.md) for information on conversion rules.)
 
 ## Syntax
 
-*declaration*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers* *init-declarator-list*<sub>opt</sub> **;**
+*`declaration`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`* *`init-declarator-list`*<sub>opt</sub> **`;`**
 
-*declaration-specifiers*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *declaration-specifiers*<sub>opt</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier* *declaration-specifiers*<sub>opt</sub>
+*`declaration-specifiers`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`storage-class-specifier`* *`declaration-specifiers`*<sub>opt</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-specifier`* *`declaration-specifiers`*<sub>opt</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-qualifier`* *`declaration-specifiers`*<sub>opt</sub>
 
-*init-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*
+*`init-declarator-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator-list`* **`,`** *`init-declarator`*
 
-*init-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declarator* **=** *initializer* /\* For scalar initialization \*/
+*`init-declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`* **`=`** *`initializer`* /\* For scalar initialization \*/
 
-*initializer*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*assignment-expression*
+*`initializer`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`assignment-expression`*
 
 You can initialize variables of any type, provided that you obey the following rules:
 
 - Variables declared at the file-scope level can be initialized. If you do not explicitly initialize a variable at the external level, it is initialized to 0 by default.
 
-- A constant expression can be used to initialize any global variable declared with the **`static`** *storage-class-specifier*. Variables declared to be **`static`** are initialized when program execution begins. If you do not explicitly initialize a global **`static`** variable, it is initialized to 0 by default, and every member that has pointer type is assigned a null pointer.
+- A constant expression can be used to initialize any global variable declared with the **`static`** *`storage-class-specifier`*. Variables declared to be **`static`** are initialized when program execution begins. If you do not explicitly initialize a global **`static`** variable, it is initialized to 0 by default, and every member that has pointer type is assigned a null pointer.
 
 - Variables declared with the **`auto`** or **`register`** storage-class specifier are initialized each time execution control passes to the block in which they are declared. If you omit an initializer from the declaration of an **`auto`** or **`register`** variable, the initial value of the variable is undefined. For automatic and register values, the initializer is not restricted to being a constant; it can be any expression involving previously defined values, even function calls.
 
@@ -61,7 +61,7 @@ The pointer `px` is initialized to 0, producing a "null" pointer.
 const int c = (3 * 1024);
 ```
 
-This example uses a constant expression `(3 * 1024)` to initialize `c` to a constant value that cannot be modified because of the **const** keyword.
+This example uses a constant expression `(3 * 1024)` to initialize `c` to a constant value that cannot be modified because of the **`const`** keyword.
 
 ```C
 int *b = &x;
