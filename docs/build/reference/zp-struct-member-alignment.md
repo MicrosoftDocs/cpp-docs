@@ -36,7 +36,7 @@ You can also use [pack](../../preprocessor/pack.md) to control structure packing
 
 - [align](../../cpp/align-cpp.md)
 
-- [__alignof Operator](../../cpp/alignof-operator.md)
+- [alignof Operator](../../cpp/alignof-operator.md)
 
 - [__unaligned](../../cpp/unaligned.md)
 

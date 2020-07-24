@@ -11,7 +11,7 @@ Imports metadata into a program compiled with [/clr](../build/reference/clr-comm
 
 ## Syntax
 
-> **#using** *file* [**as_friend**]
+> **`#using`** *file* [**`as_friend`**]
 
 ### Parameters
 
@@ -20,7 +20,7 @@ An MSIL .dll, .exe, .netmodule, or .obj. For example,
 
 `#using <MyComponent.dll>`
 
-**as_friend**\
+**`as_friend`**\
 Specifies that all types in *file* are accessible. For more information, see [Friend Assemblies (C++)](../dotnet/friend-assemblies-cpp.md).
 
 ## Remarks

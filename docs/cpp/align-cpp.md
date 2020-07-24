@@ -23,7 +23,7 @@ Writing applications that use the latest processor instructions introduces some 
 
 \# is the alignment value. Valid entries are integer powers of two from 1 to 8192 (bytes), such as 2, 4, 8, 16, 32, or 64. `declarator` is the data that you are declaring as aligned.
 
-For information about how to return a value of type `size_t` that is the alignment requirement of the type, see [__alignof](../cpp/alignof-operator.md). For information about how to declare unaligned pointers when targeting 64-bit processors, see [__unaligned](../cpp/unaligned.md).
+For information about how to return a value of type `size_t` that is the alignment requirement of the type, see [alignof](../cpp/alignof-operator.md). For information about how to declare unaligned pointers when targeting 64-bit processors, see [__unaligned](../cpp/unaligned.md).
 
 You can use `__declspec(align(#))` when you define a **struct**, **union**, or **class**, or when you declare a variable.
 

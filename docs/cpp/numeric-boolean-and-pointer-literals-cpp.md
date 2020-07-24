@@ -17,13 +17,13 @@ bool b = true;              // boolean literal
 MyClass* mc = nullptr;      // pointer literal
 ```
 
-Sometimes it's important to tell the compiler how to interpret a literal, or what specific type to give to it. You do this by appending prefixes or suffixes to the literal. For example, the  prefix 0x tells the compiler to interpret the number that follows it as a hexadecimal value, for example 0x35. The ULL suffix tells the compiler to treat the value as an **unsigned long long** type, as in 5894345ULL. See the following sections for the complete list of prefixes and suffixes for each literal type.
+Sometimes it's important to tell the compiler how to interpret a literal, or what specific type to give to it. You do this by appending prefixes or suffixes to the literal. For example, the  prefix 0x tells the compiler to interpret the number that follows it as a hexadecimal value, for example 0x35. The ULL suffix tells the compiler to treat the value as an **`unsigned long long`** type, as in 5894345ULL. See the following sections for the complete list of prefixes and suffixes for each literal type.
 
 ## Integer literals
 
 Integer literals begin with a digit and have no fractional parts or exponents. You can specify integer literals in decimal, octal, or hexadecimal form. They can specify signed or unsigned types and long or short types.
 
-When no prefix or suffix is present, the compiler will give an integral literal value type **int** (32 bits), if the value will fit, otherwise it will give it type **long long** (64 bits).
+When no prefix or suffix is present, the compiler will give an integral literal value type **`int`** (32 bits), if the value will fit, otherwise it will give it type **`long long`** (64 bits).
 
 To specify a decimal integral literal, begin the specification with a nonzero digit. For example:
 
@@ -68,9 +68,9 @@ long long i = 24'847'458'121
 
 ## Floating point literals
 
-Floating-point literals specify values that must have a fractional part. These values contain decimal points (**.**) and can contain exponents.
+Floating-point literals specify values that must have a fractional part. These values contain decimal points (**`.`**) and can contain exponents.
 
-Floating-point literals have a "mantissa," which specifies the value of the number, an "exponent," which specifies the magnitude of the number, and an optional suffix that specifies the literal's type. The mantissa is specified as a sequence of digits followed by a period, followed by an optional sequence of digits representing the fractional part of the number. For example:
+Floating-point literals have a *significand* (sometimes called a *mantissa*), which specifies the value of the number, an *exponent*, which specifies the magnitude of the number, and an optional suffix that specifies the literal's type. The significand is specified as a sequence of digits followed by a period, followed by an optional sequence of digits representing the fractional part of the number. For example:
 
 ```cpp
 18.46
@@ -86,9 +86,9 @@ The exponent, if present, specifies the magnitude of the number as a power of 10
 
 The exponent may be specified using `e` or `E`, which have the same meaning, followed by an optional sign (+ or -) and a sequence of digits.  If an exponent is present, the trailing decimal point is unnecessary in whole numbers such as `18E0`.
 
-Floating-point literals default to type **double**. By using the suffixes `f` or `l` (or `F` or `L` — the suffix is not case sensitive), the literal can be specified as **float** or **long double**, respectively.
+Floating-point literals default to type **`double`**. By using the suffixes `f` or `l` (or `F` or `L` — the suffix is not case sensitive), the literal can be specified as **`float`** or **long double**, respectively.
 
-Although **long double** and **double** have the same representation, they are not the same type. For example, you can have overloaded functions like
+Although **`long double`** and **`double`** have the same representation, they are not the same type. For example, you can have overloaded functions like
 
 ```cpp
 void func( double );
@@ -102,11 +102,11 @@ void func( long double );
 
 ## Boolean literals
 
-The boolean literals are **true** and **false**.
+The boolean literals are **`true`** and **`false`**.
 
 ## Pointer literal (C++11)
 
-C++ introduces the [nullptr](../cpp/nullptr.md) literal to specify a zero-initialized pointer. In portable code, **nullptr** should be used instead of integral-type zero or macros such as NULL.
+C++ introduces the [`nullptr`](../cpp/nullptr.md) literal to specify a zero-initialized pointer. In portable code, **`nullptr`** should be used instead of integral-type zero or macros such as NULL.
 
 ## Binary literals (C++14)
 

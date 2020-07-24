@@ -30,7 +30,7 @@ Unary operators act on only one operand in an expression. The unary operators ar
 
 - [__uuidof operator](../cpp/uuidof-operator.md)
 
-- [__alignof operator](../cpp/alignof-operator.md)
+- [alignof operator](../cpp/alignof-operator.md)
 
 - [new operator](../cpp/new-operator-cpp.md)
 
