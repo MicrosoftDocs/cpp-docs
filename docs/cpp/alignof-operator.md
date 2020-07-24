@@ -24,7 +24,7 @@ For example:
 | **`alignof( char )`** | 1 |
 | **`alignof( short )`** | 2 |
 | **`alignof( int )`** | 4 |
-| **`alignof( __int64 )`** | 8 |
+| **`alignof( long long )`** | 8 |
 | **`alignof( float )`** | 4 |
 | **`alignof( double )`** | 8 |
 
