@@ -21,7 +21,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
         [`asm`](../assembler/inline/asm.md) <sup>a</sup><br/>
         [`auto`](auto-keyword.md)<br/>
         [`bitand`](bitwise-and-operator-amp.md) <sup>b</sup><br/>
-        [`bitor`](bitwise-inclusive-or-operator-hat.md) <sup>b</sup><br/>
+        [`bitor`](bitwise-inclusive-or-operator-pipe.md) <sup>b</sup><br/>
         [`bool`](bool-cpp.md)<br/>
         [`break`](break-statement-cpp.md)<br/>
         [`case`](switch-statement-cpp.md)<br/>
