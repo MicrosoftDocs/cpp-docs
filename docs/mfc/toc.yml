@@ -2706,6 +2706,8 @@
           href: reference/afx-messages.md
         - name: ToolBar control styles
           href: reference/toolbar-control-styles.md
+        - name: BufferCommand enumeration
+          href: reference/buffercommand-enumeration.md
         - name: "CMFCImagePaintArea::IMAGE_EDIT_MODE enumeration"
           href: reference/cmfcimagepaintarea-image-edit-mode-enumeration.md
         - name: UICheckState enumeration
