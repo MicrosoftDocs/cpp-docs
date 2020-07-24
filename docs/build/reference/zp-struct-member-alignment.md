@@ -11,17 +11,17 @@ Controls how the members of a structure are packed into memory and specifies the
 
 ## Syntax
 
-> **/Zp**[**1**|**2**|**4**|**8**|**16**]
+> **`/Zp`**[**`1`**|**`2`**|**`4`**|**`8`**|**`16`**]
 
 ## Remarks
 
-The **/Zp**_n_ option tells the compiler where to store each structure member. The compiler stores members after the first one on a boundary that's the smaller of either the size of the member type, or an *n*-byte boundary.
+The **`/ZpN`** option tells the compiler where to store each structure member. The compiler stores members after the first one on a boundary that's the smaller of either the size of the member type, or an *N*-byte boundary.
 
 The available packing values are described in the following table:
 
 |/Zp argument|Effect|
 |-|-|
-|1|Packs structures on 1-byte boundaries. Same as **/Zp**.|
+|1|Packs structures on 1-byte boundaries. Same as **`/Zp`**.|
 |2|Packs structures on 2-byte boundaries.|
 |4|Packs structures on 4-byte boundaries.|
 |8|Packs structures on 8-byte boundaries (default for x86, ARM, and ARM64).|
@@ -30,17 +30,17 @@ The available packing values are described in the following table:
 Don't use this option unless you have specific alignment requirements.
 
 > [!WARNING]
-> C++ headers in the Windows SDK set and assume **/Zp8** packing internally. Memory corruption may occur if the **/Zp** setting is changed inside the Windows SDK headers. The headers aren't affected by any **/Zp** option you set on the command line.
+> C++ headers in the Windows SDK set and assume **`/Zp8`** packing internally. Memory corruption may occur if the **`/Zp`** setting is changed inside the Windows SDK headers. The headers aren't affected by any **`/Zp`** option you set on the command line.
 
-You can also use [pack](../../preprocessor/pack.md) to control structure packing. For more information about alignment, see:
+You can also use [`pack`](../../preprocessor/pack.md) to control structure packing. For more information about alignment, see:
 
-- [align](../../cpp/align-cpp.md)
+- [`align`](../../cpp/align-cpp.md)
 
-- [alignof Operator](../../cpp/alignof-operator.md)
+- [`alignof` Operator](../../cpp/alignof-operator.md)
 
-- [__unaligned](../../cpp/unaligned.md)
+- [`__unaligned`](../../cpp/unaligned.md)
 
-- [/ALIGN (Section Alignment)](align-section-alignment.md)
+- [`/ALIGN` (Section Alignment)](align-section-alignment.md)
 
 ### To set this compiler option in the Visual Studio development environment
 

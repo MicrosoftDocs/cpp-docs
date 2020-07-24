@@ -33,11 +33,11 @@ You can initialize variables of any type, provided that you obey the following r
 
 - Variables declared at the file-scope level can be initialized. If you do not explicitly initialize a variable at the external level, it is initialized to 0 by default.
 
-- A constant expression can be used to initialize any global variable declared with the **static** *storage-class-specifier*. Variables declared to be **static** are initialized when program execution begins. If you do not explicitly initialize a global **static** variable, it is initialized to 0 by default, and every member that has pointer type is assigned a null pointer.
+- A constant expression can be used to initialize any global variable declared with the **`static`** *storage-class-specifier*. Variables declared to be **`static`** are initialized when program execution begins. If you do not explicitly initialize a global **`static`** variable, it is initialized to 0 by default, and every member that has pointer type is assigned a null pointer.
 
-- Variables declared with the **auto** or **register** storage-class specifier are initialized each time execution control passes to the block in which they are declared. If you omit an initializer from the declaration of an **auto** or **register** variable, the initial value of the variable is undefined. For automatic and register values, the initializer is not restricted to being a constant; it can be any expression involving previously defined values, even function calls.
+- Variables declared with the **`auto`** or **`register`** storage-class specifier are initialized each time execution control passes to the block in which they are declared. If you omit an initializer from the declaration of an **`auto`** or **`register`** variable, the initial value of the variable is undefined. For automatic and register values, the initializer is not restricted to being a constant; it can be any expression involving previously defined values, even function calls.
 
-- The initial values for external variable declarations and for all **static** variables, whether external or internal, must be constant expressions. (For more information, see [Constant Expressions](../c-language/c-constant-expressions.md).) Since the address of any externally declared or static variable is constant, it can be used to initialize an internally declared **static** pointer variable. However, the address of an **auto** variable cannot be used as a static initializer because it may be different for each execution of the block. You can use either constant or variable values to initialize **auto** and **register** variables.
+- The initial values for external variable declarations and for all **`static`** variables, whether external or internal, must be constant expressions. (For more information, see [Constant Expressions](../c-language/c-constant-expressions.md).) Since the address of any externally declared or static variable is constant, it can be used to initialize an internally declared **`static`** pointer variable. However, the address of an **`auto`** variable cannot be used as a static initializer because it may be different for each execution of the block. You can use either constant or variable values to initialize **`auto`** and **`register`** variables.
 
 - If the declaration of an identifier has block scope, and the identifier has external linkage, the declaration cannot have an initialization.
 
@@ -73,7 +73,7 @@ This statement initializes the pointer `b` with the address of another variable,
 int *const a = &z;
 ```
 
-The pointer `a` is initialized with the address of a variable named `z`. However, since it is specified to be a **const**, the variable `a` can only be initialized, never modified. It always points to the same location.
+The pointer `a` is initialized with the address of a variable named `z`. However, since it is specified to be a **`const`**, the variable `a` can only be initialized, never modified. It always points to the same location.
 
 ```C
 int GLOBAL ;
@@ -87,7 +87,7 @@ int function( void )
 }
 ```
 
-The global variable `GLOBAL` is declared at the external level, so it has global lifetime. The local variable `LOCAL` has **auto** storage class and only has an address during the execution of the function in which it is declared. Therefore, attempting to initialize the **static** pointer variable `lp` with the address of `LOCAL` is not permitted. The **static** pointer variable `gp` can be initialized to the address of `GLOBAL` because that address is always the same. Similarly, `*rp` can be initialized because `rp` is a local variable and can have a nonconstant initializer. Each time the block is entered, `LOCAL` has a new address, which is then assigned to `rp`.
+The global variable `GLOBAL` is declared at the external level, so it has global lifetime. The local variable `LOCAL` has **`auto`** storage class and only has an address during the execution of the function in which it is declared. Therefore, attempting to initialize the **`static`** pointer variable `lp` with the address of `LOCAL` is not permitted. The **`static`** pointer variable `gp` can be initialized to the address of `GLOBAL` because that address is always the same. Similarly, `*rp` can be initialized because `rp` is a local variable and can have a non-constant initializer. Each time the block is entered, `LOCAL` has a new address, which is then assigned to `rp`.
 
 ## See also
 

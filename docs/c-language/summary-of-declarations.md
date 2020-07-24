@@ -17,7 +17,7 @@ ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
 &nbsp;&nbsp;&nbsp;&nbsp;*attribute* *attribute-seq*<sub>opt</sub>
 
 *attribute* : one of&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;[__asm](../assembler/inline/asm.md) [__clrcall](../cpp/clrcall.md) [__stdcall](../cpp/stdcall.md) [__based](../cpp/based-grammar.md) [__fastcall](../cpp/fastcall.md) [__thiscall](../cpp/thiscall.md) [__cdecl](../cpp/cdecl.md) [__inline](../cpp/inline-functions-cpp.md) [__vectorcall](../cpp/vectorcall.md)
+&nbsp;&nbsp;&nbsp;&nbsp;[`__asm`](../assembler/inline/asm.md) [`__clrcall`](../cpp/clrcall.md) [`__stdcall`](../cpp/stdcall.md) [`__based`](../cpp/based-grammar.md) [`__fastcall`](../cpp/fastcall.md) [`__thiscall`](../cpp/thiscall.md) [`__cdecl`](../cpp/cdecl.md) [`__inline`](../cpp/inline-functions-cpp.md) [`__vectorcall`](../cpp/vectorcall.md)
 
 *init-declarator-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
@@ -28,34 +28,34 @@ ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
 &nbsp;&nbsp;&nbsp;&nbsp;*declarator*  **=**  *initializer* /\* For scalar initialization \*/
 
 *storage-class-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**auto**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**register**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**static**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**extern**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**typedef**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *extended-decl-modifier-seq* **)** /\* Microsoft-specific \*/
+&nbsp;&nbsp;&nbsp;&nbsp;**`auto`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`register`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`static`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`extern`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`typedef`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__declspec (`** *extended-decl-modifier-seq* **`)`** /\* Microsoft-specific \*/
 
 *type-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**void**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**char**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**short**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**int**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int8** /\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int16** /\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int32** /\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int64** /\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**long**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**float**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**double**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**signed**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**unsigned**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`void`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`char`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`short`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`int`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int8`** /\* Microsoft-specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int16`** /\* Microsoft-specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int32`** /\* Microsoft-specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int64`** /\* Microsoft-specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`long`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`float`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`double`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`signed`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`unsigned`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union-specifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*
 
 *type-qualifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**const**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**volatile**
+&nbsp;&nbsp;&nbsp;&nbsp;**`const`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`volatile`**
 
 *declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*
@@ -161,10 +161,10 @@ ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
 &nbsp;&nbsp;&nbsp;&nbsp;*extended-decl-modifier-seq* *extended-decl-modifier*
 
 *extended-decl-modifier*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**thread**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**naked**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**dllimport**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**dllexport**
+&nbsp;&nbsp;&nbsp;&nbsp;**`thread`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`naked`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`dllimport`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`dllexport`**
 
 ## See also
 

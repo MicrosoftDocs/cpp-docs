@@ -17,7 +17,7 @@ This warning is emitted when compiler finds that **`alignof`** for the variable 
 
 To resolve this warning, either use the same type definition or use different names for the variables.
 
-For more information, see [pack](../../preprocessor/pack.md) and [alignof operator](../../cpp/alignof-operator.md).
+For more information, see [`pack`](../../preprocessor/pack.md) and [`alignof` operator](../../cpp/alignof-operator.md).
 
 ## Example
 
