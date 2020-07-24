@@ -1,19 +1,23 @@
 ---
 title: "Compiler Warning (Level 1) C4742"
-ms.date: "11/04/2016"
+ms.date: 07/22/2020
 f1_keywords: ["C4742"]
 helpviewer_keywords: ["C4742"]
 ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
 ---
 # Compiler Warning (Level 1) C4742
 
-'var' has different alignment in 'file1' and 'file2': number and number
+> '*variable*' has different alignment in '*file1*' and '*file2*': *number1* and *number2*
 
-An external variable that was referenced or defined in two files has different alignment in those files. This warning is emitted when compiler finds that `__alignof` for the variable in *file1* differs from `__alignof` for the variable in *file2*. This can be caused by using incompatible types when declaring variable in different files, or by using non-matching `#pragma pack` in different files.
+An external variable that was referenced or defined in two files has different alignment in those files.
+
+## Remarks
+
+This warning is emitted when compiler finds that **`alignof`** for the variable in *file1* differs from **`alignof`** for the variable in *file2*. This can be caused by using incompatible types when declaring variable in different files, or by using non-matching `#pragma pack` in different files.
 
 To resolve this warning, either use the same type definition or use different names for the variables.
 
-For more information, see [pack](../../preprocessor/pack.md) and [__alignof Operator](../../cpp/alignof-operator.md).
+For more information, see [pack](../../preprocessor/pack.md) and [alignof operator](../../cpp/alignof-operator.md).
 
 ## Example
 
@@ -26,8 +30,6 @@ struct X {
    char x, y, z, w;
 } global;
 ```
-
-## Example
 
 The following sample generates C4742.
 

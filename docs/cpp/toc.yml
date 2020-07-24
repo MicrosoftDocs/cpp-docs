@@ -125,7 +125,7 @@
       items: 
         - name: Built-in operators, precedence, and associativity
           href: ../cpp/cpp-built-in-operators-precedence-and-associativity.md
-        - name: __alignof operator
+        - name: alignof operator
           href: ../cpp/alignof-operator.md
         - name: __uuidof operator
           href: ../cpp/uuidof-operator.md

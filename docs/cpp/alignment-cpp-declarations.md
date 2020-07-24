@@ -8,7 +8,7 @@ ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
 
 One of the low-level features of C++ is the ability to specify the precise alignment of objects in memory to take maximum advantage of a specific hardware architecture. By default, the compiler aligns class and struct members on their size value: `bool` and `char` on 1-byte boundaries, `short` on 2-byte boundaries, `int`, `long`, and `float` on 4-byte boundaries, and `long long`, `double`, and `long double` on 8-byte boundaries.
 
-In most scenarios, you never have to be concerned with alignment because the default alignment is already optimal. In some cases, however, you can achieve significant performance improvements, or memory savings, by specifying a custom alignment for your data structures. Before Visual Studio 2015 you could use the Microsoft-specific keywords `__alignof` and `declspec(alignas)` to specify an alignment greater than the default. Starting in Visual Studio 2015 you should use the C++11 standard keywords **alignof** and **alignas** for maximum code portability. The new keywords behave in the same way under the hood as the Microsoft-specific extensions. The documentation for those extensions also applies to the new keywords. For more information, see [__alignof Operator](../cpp/alignof-operator.md) and [align](../cpp/align-cpp.md). The C++ standard doesn't specify packing behavior for alignment on boundaries smaller than the compiler default for the target platform, so you still need to use the Microsoft #pragma [pack](../preprocessor/pack.md) in that case.
+In most scenarios, you never have to be concerned with alignment because the default alignment is already optimal. In some cases, however, you can achieve significant performance improvements, or memory savings, by specifying a custom alignment for your data structures. Before Visual Studio 2015 you could use the Microsoft-specific keywords **`__alignof`** and **`__declspec(align)`** to specify an alignment greater than the default. Starting in Visual Studio 2015 you should use the C++11 standard keywords **`alignof`** and **`alignas`** for maximum code portability. The new keywords behave in the same way under the hood as the Microsoft-specific extensions. The documentation for those extensions also applies to the new keywords. For more information, see [`alignof` Operator](../cpp/alignof-operator.md) and [align](../cpp/align-cpp.md). The C++ standard doesn't specify packing behavior for alignment on boundaries smaller than the compiler default for the target platform, so you still need to use the Microsoft #pragma [pack](../preprocessor/pack.md) in that case.
 
 Use the [aligned_storage class](../standard-library/aligned-storage-class.md) for memory allocation of data structures with custom alignments. The [aligned_union class](../standard-library/aligned-union-class.md) is for specifying alignment for unions with non-trivial constructors or destructors.
 
@@ -92,11 +92,11 @@ adr offset   element
 
 ## alignof and alignas
 
-The **alignas** type specifier is a portable, C++ standard way to specify custom alignment of variables and user defined types. The **alignof** operator is likewise a standard, portable way to obtain the alignment of a specified type or variable.
+The **`alignas`** type specifier is a portable, C++ standard way to specify custom alignment of variables and user defined types. The **`alignof`** operator is likewise a standard, portable way to obtain the alignment of a specified type or variable.
 
 ## Example
 
-You can use **alignas** on a class, struct or union, or on individual members. When multiple **alignas** specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).
+You can use **`alignas`** on a class, struct or union, or on individual members. When multiple **`alignas`** specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).
 
 ```cpp
 // alignas_alignof.cpp

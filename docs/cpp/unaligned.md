@@ -21,7 +21,7 @@ For more information about alignment, see:
 
 - [align](../cpp/align-cpp.md)
 
-- [__alignof Operator](../cpp/alignof-operator.md)
+- [alignof Operator](../cpp/alignof-operator.md)
 
 - [pack](../preprocessor/pack.md)
 
