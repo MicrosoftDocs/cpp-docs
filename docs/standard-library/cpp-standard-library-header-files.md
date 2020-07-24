@@ -1,6 +1,6 @@
 ---
 title: "C++ standard library header files"
-ms.date: "07/12/2019"
+ms.date: "07/23/2020"
 helpviewer_keywords: ["header files, C++ Standard Library", "C++ Standard Library, header files"]
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
 ---
@@ -25,7 +25,7 @@ Header files for the C++ standard library and extensions, by category.
 | Container adaptors | [\<queue>](queue.md), [\<stack>](stack.md) |
 | Container views | [\<span>](span.md)<sup>20</sup> |
 | [Errors and exception handling](../cpp/errors-and-exception-handling-modern-cpp.md) | [\<cassert>](cassert.md), [\<exception>](exception.md), [\<stdexcept>](stdexcept.md), [\<system_error>](system-error.md)<sup>11</sup> |
-| General utilities | \<any><sup>17</sup>, [\<bitset>](bitset.md), \<charconv><sup>17</sup>, [\<cstdlib>](cstdlib.md), \<execution><sup>17</sup>, [\<functional>](functional.md), [\<memory>](memory.md), \<memory_resource><sup>17</sup>, \<optional><sup>17</sup>, [\<ratio>](ratio.md)<sup>11</sup>, [\<scoped_allocator>](scoped-allocator.md)<sup>11</sup>, [\<tuple>](tuple.md)<sup>11</sup>, [\<type_traits>](type-traits.md)<sup>11</sup>, [\<typeindex>](typeindex.md)<sup>11</sup>, [\<utility>](utility.md), \<variant><sup>17</sup> |
+| General utilities | \<any><sup>17</sup>, [\<bitset>](bitset.md), [\<cstdlib>](cstdlib.md), \<execution><sup>17</sup>, [\<functional>](functional.md), [\<memory>](memory.md), \<memory_resource><sup>17</sup>, \<optional><sup>17</sup>, [\<ratio>](ratio.md)<sup>11</sup>, [\<scoped_allocator>](scoped-allocator.md)<sup>11</sup>, [\<tuple>](tuple.md)<sup>11</sup>, [\<type_traits>](type-traits.md)<sup>11</sup>, [\<typeindex>](typeindex.md)<sup>11</sup>, [\<utility>](utility.md), \<variant><sup>17</sup> |
 | [I/O and formatting](../text/string-and-i-o-formatting-modern-cpp.md) | [\<cinttypes>](cinttypes.md)<sup>11</sup>, [\<cstdio>](cstdio.md), [\<filesystem>](filesystem.md)<sup>17</sup>, [\<fstream>](fstream.md), [\<iomanip>](iomanip.md), [\<ios>](ios.md), [\<iosfwd>](iosfwd.md), [\<iostream>](iostream.md), [\<istream>](istream.md), [\<ostream>](ostream.md), [\<sstream>](sstream.md), [\<streambuf>](streambuf.md), [\<strstream>](strstream.md)<sup>c</sup>, \<syncstream><sup>20</sup> |
 | Iterators | [\<iterator>](iterator.md) |
 | Language support | [\<cfloat>](cfloat.md), [\<climits>](climits.md), [\<codecvt>](codecvt.md)<sup>11 a</sup>, \<compare><sup>20</sup>, \<contract><sup>20</sup>, \<coroutine><sup>20</sup>, [\<csetjmp>](csetjmp.md), [\<csignal>](csignal.md), [\<cstdarg>](cstdarg.md), [\<cstddef>](cstddef.md), [\<cstdint>](cstdint.md)<sup>11</sup>, [\<cstdlib>](cstdlib.md), [\<exception>](exception.md), [\<initializer_list>](initializer-list.md)<sup>11</sup>, [\<limits>](limits.md), [\<new>](new.md), [\<typeinfo>](typeinfo.md), \<version><sup>20</sup> |
@@ -35,7 +35,7 @@ Header files for the C++ standard library and extensions, by category.
 | Multithreading | [\<atomic>](atomic.md)<sup>11</sup>, [\<condition_variable>](condition-variable.md)<sup>11</sup>, [\<future>](future.md)<sup>11</sup>, [\<mutex>](mutex.md)<sup>11</sup>, [\<shared_mutex>](shared-mutex.md)<sup>14</sup>, [\<thread>](thread.md)<sup>11</sup> |
 | Ranges | \<ranges><sup>20</sup> |
 | Regular expressions | [\<regex>](regex.md)<sup>11</sup> |
-| Strings and character data | [\<cctype>](cctype.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<cuchar>](cuchar.md)<sup>11</sup>, [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md), [\<regex>](regex.md)<sup>11</sup>, [\<string>](string.md), [\<string_view>](string-view.md)<sup>17</sup> |
+| Strings and character data | [\<charconv>](charconv.md)<sup>17</sup>, [\<cctype>](cctype.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<cuchar>](cuchar.md)<sup>11</sup>, [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md), [\<regex>](regex.md)<sup>11</sup>, [\<string>](string.md), [\<string_view>](string-view.md)<sup>17</sup> |
 | Time | [\<chrono>](chrono.md)<sup>11</sup>, [\<ctime>](ctime.md) |
 
 <sup>11</sup> Added in the C++11 standard.\

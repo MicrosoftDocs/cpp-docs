@@ -26,7 +26,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Classes
 
-|||
+|Type|Description|
 |-|-|
 |[chars_format](../standard-library/chars-format-class.md)|Floating-point format for primitive numerical conversion.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|A class that wraps the type of a `pair` element.|
@@ -34,16 +34,16 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Objects
 
-|||
+|Template|Description|
 |-|-|
-|[index_sequence](../standard-library/utility-functions.md#index_sequence)||
-|[index_sequence_for](../standard-library/utility-functions.md#index_sequence_for)||
-|[make_index_sequence](../standard-library/utility-functions.md#make_index_sequence)||
-|[make_integer_sequence](../standard-library/utility-functions.md#make_integer_sequence)||
+|[index_sequence](../standard-library/utility-functions.md#index_sequence)|An alias template defined for the common case where `T` is `std::size_t`  |
+|[index_sequence_for](../standard-library/utility-functions.md#index_sequence_for)|Helper alias template to convert any type parameter pack into an index sequence of the same length|
+|[make_index_sequence](../standard-library/utility-functions.md#make_index_sequence)| Helper alias template to simplify the creation of a `std::index_sequence` type. |
+|[make_integer_sequence](../standard-library/utility-functions.md#make_integer_sequence)|Helper alias template to simplify the creation of a `std::integer_sequence` type.|
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[as_const](../standard-library/utility-functions.md#asconst)|Returns type.|
 |[declval](../standard-library/utility-functions.md#declval)|Shorthand expression evaluation.|
@@ -59,7 +59,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!=](../standard-library/utility-operators.md#op_neq)|Tests if the pair object on the left side of the operator is not equal to the pair object on the right side.|
 |[operator==](../standard-library/utility-operators.md#op_eq_eq)|Tests if the pair object on the left side of the operator is equal to the pair object on the right side.|
@@ -70,7 +70,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Structs
 
-|||
+|Struct|Description|
 |-|-|
 |[from_chars_result](../standard-library/from-chars-result-structure.md)|A struct used for `from_chars`.|
 |[identity](../standard-library/identity-structure.md)|A struct that provides a type definition as the template parameter.|

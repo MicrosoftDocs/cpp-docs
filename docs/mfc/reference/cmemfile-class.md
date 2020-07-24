@@ -1,8 +1,9 @@
 ---
 title: "CMemFile Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CMemFile", "AFX/CMemFile", "AFX/CMemFile::CMemFile", "AFX/CMemFile::Attach", "AFX/CMemFile::Detach", "AFX/CMemFile::Alloc", "AFX/CMemFile::Free", "AFX/CMemFile::GrowFile", "AFX/CMemFile::Memcpy", "AFX/CMemFile::Realloc"]
-helpviewer_keywords: ["CMemFile [MFC], CMemFile", "CMemFile [MFC], Attach", "CMemFile [MFC], Detach", "CMemFile [MFC], Alloc", "CMemFile [MFC], Free", "CMemFile [MFC], GrowFile", "CMemFile [MFC], Memcpy", "CMemFile [MFC], Realloc"]
+description: "Describes the functions available in the CMemFile class which allows you to work with memory files."
+ms.date: "07/23/2020"
+f1_keywords: ["CMemFile", "AFX/CMemFile", "AFX/CMemFile::CMemFile", "AFX/CMemFile::Attach", "AFX/CMemFile::Detach", "AFX/CMemFile::Alloc", "AFX/CMemFile::Free", "AFX/CmemFile::GetBufferPtr", AFX/CMemFile::GrowFile", "AFX/CMemFile::Memcpy", "AFX/CMemFile::Realloc"]
+helpviewer_keywords: ["CMemFile [MFC], CMemFile", "CMemFile [MFC], Attach", "CMemFile [MFC], Detach", "CMemFile [MFC], Alloc", "CMemFile [MFC], Free", "CMemFile [MFC], GetBufferPtr", "CMemFile [MFC], GrowFile", "CMemFile [MFC], Memcpy", "CMemFile [MFC], Realloc"]
 ms.assetid: 20e86515-e465-4f73-b2ea-e49789d63165
 ---
 # CMemFile Class
@@ -29,6 +30,7 @@ class CMemFile : public CFile
 |----------|-----------------|
 |[CMemFile::Attach](#attach)|Attaches a block of memory to `CMemFile`.|
 |[CMemFile::Detach](#detach)|Detaches the block of memory from `CMemFile` and returns a pointer to the block of memory detached.|
+|[CMemFile::GetBufferPtr](#getbufferptr)|Get or write to the memory buffer that backs a memory file.|
 
 ### Protected Methods
 
@@ -42,17 +44,21 @@ class CMemFile : public CFile
 
 ## Remarks
 
-These memory files behave like disk files except that the file is stored in RAM rather than on disk. A memory file is useful for fast temporary storage or for transferring raw bytes or serialized objects between independent processes.
+These memory files behave like disk files except the file is stored in RAM rather than on disk. A memory file is useful for:
 
-`CMemFile` objects can automatically allocate their own memory or you can attach your own memory block to the `CMemFile` object by calling [Attach](#attach). In either case, memory for growing the memory file automatically is allocated in `nGrowBytes`-sized increments if `nGrowBytes` is not zero.
+- fast temporary storage
+- transferring raw bytes between independent processes
+- transferring serialized objects between independent processes
+
+`CMemFile` objects can automatically allocate their own memory. Or, you can attach your own memory block to the `CMemFile` object by calling [Attach](#attach). In either case, memory for growing the memory file automatically is allocated in `nGrowBytes`-sized increments if `nGrowBytes` isn't zero.
 
 The memory block will automatically be deleted upon destruction of the `CMemFile` object if the memory was originally allocated by the `CMemFile` object; otherwise, you are responsible for deallocating the memory you attached to the object.
 
 You can access the memory block through the pointer supplied when you detach it from the `CMemFile` object by calling [Detach](#detach).
 
-The most common use of `CMemFile` is to create a `CMemFile` object and use it by calling [CFile](../../mfc/reference/cfile-class.md) member functions. Note that creating a `CMemFile` automatically opens it: you do not call [CFile::Open](../../mfc/reference/cfile-class.md#open), which is only used for disk files. Because `CMemFile` doesn't use a disk file, the data member `CFile::m_hFile` is not used.
+The most common use of `CMemFile` is to create a `CMemFile` object and use it by calling [CFile](../../mfc/reference/cfile-class.md) member functions. Creating a `CMemFile` automatically opens it: you don't call [CFile::Open](../../mfc/reference/cfile-class.md#open), which is only used for disk files. Because `CMemFile` doesn't use a disk file, the data member `CFile::m_hFile` isn't used.
 
-The `CFile` member functions [Duplicate](../../mfc/reference/cfile-class.md#duplicate), [LockRange](../../mfc/reference/cfile-class.md#lockrange), and [UnlockRange](../../mfc/reference/cfile-class.md#unlockrange) are not implemented for `CMemFile`. If you call these functions on a `CMemFile` object, you will get a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).
+The `CFile` member functions [Duplicate](../../mfc/reference/cfile-class.md#duplicate), [LockRange](../../mfc/reference/cfile-class.md#lockrange), and [UnlockRange](../../mfc/reference/cfile-class.md#unlockrange) are not implemented for `CMemFile`. If you call these functions on a `CMemFile` object, you'll get a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).
 
 `CMemFile` uses the run-time library functions [malloc](../../c-runtime-library/reference/malloc.md), [realloc](../../c-runtime-library/reference/realloc.md), and [free](../../c-runtime-library/reference/free.md) to allocate, reallocate, and deallocate memory; and the intrinsic [memcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md) to block copy memory when reading and writing. If you'd like to change this behavior or the behavior when `CMemFile` grows a file, derive your own class from `CMemFile` and override the appropriate functions.
 
@@ -119,9 +125,9 @@ The memory allocation increment in bytes.
 
 This causes `CMemFile` to use the block of memory as the memory file.
 
-If *nGrowBytes* is 0, `CMemFile` will set the file length to *nBufferSize*. This means that the data in the memory block before it was attached to `CMemFile` will be used as the file. Memory files created in this manner cannot be grown.
+If *nGrowBytes* is 0, `CMemFile` will set the file length to *nBufferSize*. This means that the data in the memory block before it was attached to `CMemFile` will be used as the file. Memory files created in this manner can't be grown.
 
-Since the file cannot be grown, be careful not to cause `CMemFile` to attempt to grow the file. For example, don't call the `CMemFile` overrides of [CFile:Write](../../mfc/reference/cfile-class.md#write) to write past the end or don't call [CFile:SetLength](../../mfc/reference/cfile-class.md#setlength) with a length longer than *nBufferSize*.
+Since the file can't be grown, be careful not to cause `CMemFile` to attempt to grow the file. For example, don't call the `CMemFile` overrides of [CFile:Write](../../mfc/reference/cfile-class.md#write) to write past the end or don't call [CFile:SetLength](../../mfc/reference/cfile-class.md#setlength) with a length longer than *nBufferSize*.
 
 If *nGrowBytes* is greater than 0, `CMemFile` will ignore the contents of the memory block you've attached. You'll have to write the contents of the memory file from scratch using the `CMemFile` override of `CFile::Write`. If you attempt to write past the end of the file or grow the file by calling the `CMemFile` override of `CFile::SetLength`, `CMemFile` will grow the memory allocation in increments of *nGrowBytes*. Growing the memory allocation will fail if the memory block you pass to `Attach` wasn't allocated with a method compatible with [Alloc](#alloc). To be compatible with the default implementation of `Alloc`, you must allocate the memory with the run-time library function [malloc](../../c-runtime-library/reference/malloc.md) or [calloc](../../c-runtime-library/reference/calloc.md).
 
@@ -143,7 +149,7 @@ CMemFile(
 *nGrowBytes*<br/>
 The memory allocation increment in bytes.
 
-*lpBuffe*r
+*lpBuffer*
 Pointer to a buffer that receives information of the size *nBufferSize*.
 
 *nBufferSize*<br/>
@@ -151,7 +157,7 @@ An integer that specifies the size of the file buffer, in bytes.
 
 ### Remarks
 
-Note that the file is opened by the constructor and that you should not call [CFile::Open](../../mfc/reference/cfile-class.md#open).
+The file is opened by the constructor. Don't call [CFile::Open](../../mfc/reference/cfile-class.md#open).
 
 The second overload acts the same as if you used the first constructor and immediately called [Attach](#attach) with the same parameters. See `Attach` for details.
 
@@ -173,7 +179,7 @@ A pointer to the memory block that contains the contents of the memory file.
 
 ### Remarks
 
-Calling this function also closes the `CMemFile`. You can reattach the memory block to `CMemFile` by calling [Attach](#attach). If you want to reattach the file and use the data in it, you should call [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) to get the length of the file before calling `Detach`. Note that if you attach a memory block to `CMemFile` so that you can use its data ( `nGrowBytes` == 0), then you won't be able to grow the memory file.
+Calling this function also closes the `CMemFile`. You can reattach the memory block to `CMemFile` by calling [Attach](#attach). If you want to reattach the file and use the data in it, you should call [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) to get the length of the file before calling `Detach`. If you attach a memory block to `CMemFile` so that you can use its data ( `nGrowBytes` == 0), then you can't grow the memory file.
 
 ## <a name="free"></a> CMemFile::Free
 
@@ -191,6 +197,50 @@ Pointer to the memory to be deallocated.
 ### Remarks
 
 Override this function to implement custom memory deallocation. If you override this function, you'll probably want to override [Alloc](#alloc) and [Realloc](#realloc) as well.
+
+## <a name="getbufferptr"></a> CMemFile::GetBufferPtr
+
+Get or write to the memory buffer that backs a memory file.
+
+```cpp
+virtual UINT GetBufferPtr(
+    UINT nCommand,
+    UINT nCount = 0,
+    void** ppBufStart = NULL,
+    void** ppBufMax = NULL
+);
+```
+
+### Parameters
+
+*nCommand*<br/>
+The [bufferCommand](buffercommand-enumeration.md) to carry out (`bufferCheck`, `bufferCommit`, `bufferRead`, or `bufferWrite` ).
+
+*nCount*<br/>
+Depending on *nCommand*, the number of bytes in the buffer to read, write, or commit. When reading from the buffer, specify -1 to return a buffer from the current position to the end of the file.
+
+*ppBufStart*<br/>
+[out] The start of the buffer. Must be `NULL` when *nCommand* is `bufferCommit`.
+
+*ppBufMax*<br/>
+[out] The end of the buffer. Must be `NULL` when nCommand is `bufferCommit`.
+
+### Return Value
+
+| *command* value | Return value |
+|--|--|
+| `buffercheck` | Returns [bufferDirect](buffercommand-enumeration.md) if direct buffering is supported, otherwise 0. |
+| `bufferCommit` | Returns `0` |
+| `bufferRead` or `bufferWrite` | Returns the number of bytes in the returned buffer space. *ppBufStart* and *ppBufMax* point to the start and end of the read/written buffer.  |
+
+### Remarks
+
+The current position in the memory buffer (`m_nPosition`) is advanced in the following ways, depending on *nCommand*:
+
+| *nCommand* | buffer position |
+|-|-|
+| `bufferCommit` | The current position advances by the size of the committed buffer. |
+| `bufferRead` | The current position advances by the size of the read buffer. |
 
 ## <a name="growfile"></a> CMemFile::GrowFile
 
