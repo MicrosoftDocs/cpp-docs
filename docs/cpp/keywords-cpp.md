@@ -104,8 +104,8 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
         [`typename`](typename.md)<br/>
         [`union`](unions.md)<br/>
         [`unsigned`](fundamental-types-cpp.md)<br/>
-        [`using`](using-declaration.md) declaration
-        [`using`](namespaces-cpp.md#using_directives) directive
+        [`using`](using-declaration.md) declaration<br/>
+        [`using`](namespaces-cpp.md#using_directives) directive<br/>
         [`virtual`](virtual-cpp.md)<br/>
         [`void`](void-cpp.md)<br/>
         [`volatile`](volatile-cpp.md)<br/>
