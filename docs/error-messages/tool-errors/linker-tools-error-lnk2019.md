@@ -190,7 +190,7 @@ int main() {
 
 ### Inconsistent wchar_t type definitions
 
-This sample creates a DLL that has an export that uses `WCHAR`, which resolves to `wchar_t`.
+This sample creates a DLL that has an export that uses `WCHAR`, which resolves to **`wchar_t`**.
 
 ```cpp
 // LNK2019g.cpp
@@ -213,7 +213,7 @@ int main() {
 }
 ```
 
-To fix this error, change `unsigned short` to `wchar_t` or `WCHAR`, or compile LNK2019g.cpp by using **/Zc:wchar_t-**.
+To fix this error, change **`unsigned short`** to **`wchar_t`** or `WCHAR`, or compile LNK2019g.cpp by using **/Zc:wchar_t-**.
 
 ## Additional resources
 

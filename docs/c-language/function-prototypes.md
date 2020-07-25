@@ -51,7 +51,7 @@ The converted type of each parameter determines the interpretation of the argume
 
 A prototype establishes the attributes of a function so that calls to the function that precede its definition (or occur in other source files) can be checked for argument-type and return-type mismatches. For example, if you specify the **static** storage-class specifier in a prototype, you must also specify the **static** storage class in the function definition.
 
-Complete parameter declarations (`int a`) can be mixed with abstract declarators (`int`) in the same declaration. For example, the following declaration is legal:
+Complete parameter declarations (`int a`) can be mixed with abstract declarators (**`int`**) in the same declaration. For example, the following declaration is legal:
 
 ```C
 int add( int a, int );

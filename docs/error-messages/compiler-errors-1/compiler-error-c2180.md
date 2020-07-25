@@ -9,7 +9,7 @@ ms.assetid: ea71b39e-b977-48a7-b7bd-af68ef5e263b
 
 controlling expression has type 'type'
 
-The controlling expression in an `if`, `while`, `for`, or `do` statement is an expression cast to `void`. To fix this issue, change the controlling expression to one that produces a `bool` or a type that can be converted to `bool`.
+The controlling expression in an `if`, `while`, `for`, or `do` statement is an expression cast to **`void`**. To fix this issue, change the controlling expression to one that produces a **`bool`** or a type that can be converted to **`bool`**.
 
 The following sample generates C2180:
 

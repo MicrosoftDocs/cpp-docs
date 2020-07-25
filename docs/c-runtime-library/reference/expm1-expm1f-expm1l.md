@@ -44,7 +44,7 @@ The **expm1** functions return a floating-point value that represents e<sup>x</s
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **expm1** that take and return **float** and **long** **double** values. In a C program, **expm1** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **expm1** that take and return **float** and **`long double`** values. In a C program, **expm1** always takes and returns a **double**.
 
 ## Requirements
 

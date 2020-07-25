@@ -303,7 +303,7 @@ The type of the deleter of the owned object, stored for later deletion of the ob
 
 ### Remarks
 
-The operators all decrement the reference count for the resource currently owned by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If the reference count falls to zero, the resource is released. If an operator fails, it leaves `*this` unchanged.
+The operators all decrement the reference count for the resource currently owned by **`*this`** and assign ownership of the resource named by the operand sequence to **`*this`**. If the reference count falls to zero, the resource is released. If an operator fails, it leaves **`*this`** unchanged.
 
 ### Example
 
@@ -390,7 +390,7 @@ An lvalue reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
 
-The template member function returns true if `*this` is ordered before `ptr`.
+The template member function returns true if **`*this`** is ordered before `ptr`.
 
 ## <a name="reset"></a> reset
 
@@ -436,7 +436,7 @@ The allocator to copy.
 
 ### Remarks
 
-The operators all decrement the reference count for the resource currently owned by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If the reference count falls to zero, the resource is released. If an operator fails, it leaves `*this` unchanged.
+The operators all decrement the reference count for the resource currently owned by **`*this`** and assign ownership of the resource named by the operand sequence to **`*this`**. If the reference count falls to zero, the resource is released. If an operator fails, it leaves **`*this`** unchanged.
 
 ### Example
 
@@ -652,7 +652,7 @@ Destroys a `shared_ptr`.
 
 ### Remarks
 
-The destructor decrements the reference count for the resource currently owned by `*this`. If the reference count falls to zero, the resource is released.
+The destructor decrements the reference count for the resource currently owned by **`*this`**. If the reference count falls to zero, the resource is released.
 
 ### Example
 
@@ -704,7 +704,7 @@ The shared pointer to swap with.
 
 ### Remarks
 
-The member function leaves the resource originally owned by `*this` subsequently owned by *sp*, and the resource originally owned by *sp* subsequently owned by `*this`. The function does not change the reference counts for the two resources and it does not throw any exceptions.
+The member function leaves the resource originally owned by **`*this`** subsequently owned by *sp*, and the resource originally owned by *sp* subsequently owned by **`*this`**. The function does not change the reference counts for the two resources and it does not throw any exceptions.
 
 ### Example
 
@@ -760,7 +760,7 @@ bool unique() const noexcept;
 
 ### Remarks
 
-The member function returns **true** if no other `shared_ptr` object owns the resource that is owned by `*this`, otherwise **false**.
+The member function returns **true** if no other `shared_ptr` object owns the resource that is owned by **`*this`**, otherwise **false**.
 
 ### Example
 
@@ -799,7 +799,7 @@ long use_count() const noexcept;
 
 ### Remarks
 
-The member function returns the number of `shared_ptr` objects that own the resource that is owned by `*this`.
+The member function returns the number of `shared_ptr` objects that own the resource that is owned by **`*this`**.
 
 ### Example
 

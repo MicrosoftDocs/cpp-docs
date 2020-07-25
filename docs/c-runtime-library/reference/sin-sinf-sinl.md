@@ -44,7 +44,7 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **sin** that take and return **float** or **long** **double** values. In a C program, **sin** always takes and returns **double**.
+Because C++ allows overloading, you can call overloads of **sin** that take and return **float** or **`long double`** values. In a C program, **sin** always takes and returns **double**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

@@ -251,7 +251,7 @@ An rvalue reference to a `basic_ifstream` object.
 
 ### Return Value
 
-Returns `*this`.
+Returns **`*this`**.
 
 ### Remarks
 

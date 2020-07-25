@@ -143,7 +143,7 @@ An allocator object.
 
 ### Remarks
 
-The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object *Ax*.
+The member functions each replace the `callable object` held by **`*this`** with the callable object passed as the `operand`. Both allocate storage with the allocator object *Ax*.
 
 ## <a name="function"></a> function
 
@@ -325,7 +325,7 @@ The Nth call argument.
 
 ### Remarks
 
-The member function returns `INVOKE(fn, t1, t2, ..., tN, Ret)`, where `fn` is the target object stored in `*this`. You use it to call the wrapped callable object.
+The member function returns `INVOKE(fn, t1, t2, ..., tN, Ret)`, where `fn` is the target object stored in **`*this`**. You use it to call the wrapped callable object.
 
 ### Example
 
@@ -384,7 +384,7 @@ The callable object reference to wrap.
 
 ### Remarks
 
-The operators each replace the callable object held by `*this` with the callable object passed as the operand.
+The operators each replace the callable object held by **`*this`** with the callable object passed as the operand.
 
 ### Example
 
@@ -494,7 +494,7 @@ The function object to swap with.
 
 ### Remarks
 
-The member function swaps the target objects between `*this` and *right*. It does so in constant time and throws no exceptions.
+The member function swaps the target objects between **`*this`** and *right*. It does so in constant time and throws no exceptions.
 
 ### Example
 
@@ -609,7 +609,7 @@ const std::type_info& target_type() const;
 
 ### Remarks
 
-The member function returns `typeid(void)` if `*this` is empty, otherwise it returns `typeid(T)`, where `T` is the type of the target object.
+The member function returns `typeid(void)` if **`*this`** is empty, otherwise it returns `typeid(T)`, where `T` is the type of the target object.
 
 ### Example
 

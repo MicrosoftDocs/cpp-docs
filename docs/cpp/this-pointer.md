@@ -43,7 +43,7 @@ void Date::setMonth( int mn )
 }
 ```
 
-The expression `*this` is commonly used to return the current object from a member function:
+The expression **`*this`** is commonly used to return the current object from a member function:
 
 ```cpp
 return *this;

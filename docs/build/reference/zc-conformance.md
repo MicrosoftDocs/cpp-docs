@@ -20,24 +20,24 @@ These are the **`/Zc`** compiler options:
 
 | Option | Behavior |
 |--|--|
-| [`alignedNew`\[-\]](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation (on by default in C++17). |
-| [`auto`\[-\]](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`** (on by default). |
-| [`__cplusplus`\[-\]](zc-cplusplus.md) | Enable the `__cplusplus` macro to report the supported standard (off by default). |
-| [`externConstexpr`\[-\]](zc-externconstexpr.md) | Enable external linkage for `constexpr` variables (off by default). |
-| [`forScope`\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
-| [`implicitNoexcept`\[-\]](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
-| [`inline`\[-\]](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced function or data if it is COMDAT or has internal linkage only (off by default). |
-| [`noexceptTypes`\[-\]](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules (on by default in C++17 or later). |
-| [`referenceBinding`\[-\]](zc-referencebinding-enforce-reference-binding-rules.md) | A UDT temporary will not bind to an non-const lvalue reference (off by default). |
-| [`rvalueCast`\[-\]](zc-rvaluecast-enforce-type-conversion-rules.md) | Enforce Standard C++ explicit type conversion rules (off by default). |
-| [`sizedDealloc`\[-\]](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | Enable C++14 global sized deallocation functions (on by default). |
-| [`strictStrings`\[-\]](zc-strictstrings-disable-string-literal-type-conversion.md) | Disable string-literal to `char*` or `wchar_t*` conversion (off by default). |
-| [`ternary`\[-\]](zc-ternary.md) | Enforce conditional operator rules on operand types (off by default). |
-| [`threadSafeInit`\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md) | Enable thread-safe local static initialization (on by default). |
-| [`throwingNew`\[-\]](zc-throwingnew-assume-operator-new-throws.md) | Assume `operator new` throws on failure (off by default). |
-| [`trigraphs`\[-\]](zc-trigraphs-trigraphs-substitution.md) | Enable trigraphs (obsolete, off by default). |
-| [`twoPhase`\[-\]](zc-twophase.md) | Use non-conforming template parsing behavior (conforming by default). |
-| [`wchar_t`\[-\]](zc-wchar-t-wchar-t-is-native-type.md) | `wchar_t` is a native type, not a typedef (on by default). |
+| [`/Zc:alignedNew`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation (on by default in C++17). |
+| [`/Zc:auto`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`** (on by default). |
+| [`/Zc__cplusplus`](zc-cplusplus.md) | Enable the `__cplusplus` macro to report the supported standard (off by default). |
+| [`/Zc:externConstexpr`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
+| [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
+| [`/ZcimplicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
+| [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced function or data if it is COMDAT or has internal linkage only (off by default). |
+| [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules (on by default in C++17 or later). |
+| [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md) | A UDT temporary will not bind to an non-const lvalue reference (off by default). |
+| [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) | Enforce Standard C++ explicit type conversion rules (off by default). |
+| [`/Zc:sizedDealloc`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | Enable C++14 global sized deallocation functions (on by default). |
+| [`/Zc:strictStrings`](zc-strictstrings-disable-string-literal-type-conversion.md) | Disable string-literal to `char*` or `wchar_t*` conversion (off by default). |
+| [`/Zc:ternary`](zc-ternary.md) | Enforce conditional operator rules on operand types (off by default). |
+| [`/Zc:threadSafeInit`](zc-threadsafeinit-thread-safe-local-static-initialization.md) | Enable thread-safe local static initialization (on by default). |
+| [`/Zc:throwingNew`](zc-throwingnew-assume-operator-new-throws.md) | Assume **`operator new`** throws on failure (off by default). |
+| [`/Zc:trigraphs`](zc-trigraphs-trigraphs-substitution.md) | Enable trigraphs (obsolete, off by default). |
+| [`/Zc:twoPhase`](zc-twophase.md) | Use non-conforming template parsing behavior (conforming by default). |
+| [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** is a native type, not a typedef (on by default). |
 
 For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 

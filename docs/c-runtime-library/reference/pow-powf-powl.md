@@ -55,7 +55,7 @@ Returns the value of *x*<sup>*y*</sup>. No error message is printed on overflow 
 
 Because C++ allows overloading, you can call any of the various overloads of **pow**. In a C program, **pow** always takes two **double** values and returns a **double** value.
 
-The `pow(int, int)` overload is no longer available. If you use this overload, the compiler may emit [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md). To avoid this problem, cast the first parameter to **double**, **float**, or **long** **double**.
+The `pow(int, int)` overload is no longer available. If you use this overload, the compiler may emit [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md). To avoid this problem, cast the first parameter to **double**, **float**, or **`long double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

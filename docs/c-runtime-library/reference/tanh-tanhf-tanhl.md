@@ -40,7 +40,7 @@ The **tanh** functions return the hyperbolic tangent of *x*. There is no error r
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **tanh** that take and return **float** or **long** **double** values. In a C program, **tanh** always takes and returns **double**.
+Because C++ allows overloading, you can call overloads of **tanh** that take and return **float** or **`long double`** values. In a C program, **tanh** always takes and returns **double**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

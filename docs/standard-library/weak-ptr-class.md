@@ -97,7 +97,7 @@ bool expired() const noexcept;
 
 ### Remarks
 
-The member function returns **true** if `*this` has expired, otherwise **false**.
+The member function returns **true** if **`*this`** has expired, otherwise **false**.
 
 ### Example
 
@@ -146,7 +146,7 @@ shared_ptr<T> lock() const noexcept;
 
 ### Remarks
 
-The member function returns an empty [shared_ptr](shared-ptr-class.md) object if `*this` has expired; otherwise it returns a `shared_ptr<T>` object that owns the resource that `*this` points to. Returns a value equivalent to the atomic execution of `expired() ? shared_ptr<T>() : shared_ptr<T>(*this)`.
+The member function returns an empty [shared_ptr](shared-ptr-class.md) object if **`*this`** has expired; otherwise it returns a `shared_ptr<T>` object that owns the resource that **`*this`** points to. Returns a value equivalent to the atomic execution of `expired() ? shared_ptr<T>() : shared_ptr<T>(*this)`.
 
 ### Example
 
@@ -209,7 +209,7 @@ The weak pointer or shared pointer to copy.
 
 ### Remarks
 
-The operators all release the resource currently pointed to by `*this` and assign ownership of the resource named by *ptr* to `*this`. If an operator fails, it leaves `*this` unchanged. Each operator has an effect equivalent to `weak_ptr(ptr).swap(*this)`.
+The operators all release the resource currently pointed to by **`*this`** and assign ownership of the resource named by *ptr* to **`*this`**. If an operator fails, it leaves **`*this`** unchanged. Each operator has an effect equivalent to `weak_ptr(ptr).swap(*this)`.
 
 ### Example
 
@@ -262,7 +262,7 @@ An lvalue reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
 
-The template member function returns **true** if `*this` is ordered before *ptr*.
+The template member function returns **true** if **`*this`** is ordered before *ptr*.
 
 ## <a name="reset"></a> reset
 
@@ -274,7 +274,7 @@ void reset() noexcept;
 
 ### Remarks
 
-The member function releases the resource pointed to by `*this` and converts `*this` to an empty `weak_ptr` object.
+The member function releases the resource pointed to by **`*this`** and converts **`*this`** to an empty `weak_ptr` object.
 
 ### Example
 
@@ -328,7 +328,7 @@ The weak pointer to swap with.
 
 ### Remarks
 
-After a `swap`, the resource originally pointed to by `*this` is pointed to by *wp*, and the resource originally pointed to by *wp* is pointed to by `*this`. The function doesn't change the reference counts for the two resources and it doesn't throw any exceptions. The effect of the template specialization is the equivalent of `a.swap(b)`.
+After a `swap`, the resource originally pointed to by **`*this`** is pointed to by *wp*, and the resource originally pointed to by *wp* is pointed to by **`*this`**. The function doesn't change the reference counts for the two resources and it doesn't throw any exceptions. The effect of the template specialization is the equivalent of `a.swap(b)`.
 
 ### Example
 
@@ -385,7 +385,7 @@ long use_count() const noexcept;
 
 ### Remarks
 
-The member function returns the number of `shared_ptr` objects that own the resource pointed to by `*this`.
+The member function returns the number of `shared_ptr` objects that own the resource pointed to by **`*this`**.
 
 ### Example
 

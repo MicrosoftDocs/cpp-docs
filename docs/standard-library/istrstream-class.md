@@ -71,7 +71,7 @@ The contents with which the buffer is initialized.
 
 ### Remarks
 
-All the constructors initialize the base class by calling [istream](../standard-library/istream-typedefs.md#istream)(**sb**), where `sb` is the stored object of class [strstreambuf](../standard-library/strstreambuf-class.md). The first two constructors also initialize `sb` by calling `strstreambuf`( ( **const**`char` \*) `ptr`, 0 ). The remaining two constructors instead call `strstreambuf`( ( **const**`char` *) `ptr`, `count` ).
+All the constructors initialize the base class by calling [istream](../standard-library/istream-typedefs.md#istream)(**sb**), where `sb` is the stored object of class [strstreambuf](../standard-library/strstreambuf-class.md). The first two constructors also initialize `sb` by calling `strstreambuf( ( const char *) ptr, 0 )`. The remaining two constructors instead call `strstreambuf( ( const char *) ptr, count )`.
 
 ## <a name="rdbuf"></a> istrstream::rdbuf
 

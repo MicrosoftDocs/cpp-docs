@@ -165,7 +165,7 @@ static bool __cdecl IsCurrentTaskCollectionCanceling();
 
 ### Return Value
 
-If a scheduler is attached to the calling context and a task group is executing a task inline on that context, an indication of whether that task group is in the midst of an active cancellation (or will be shortly); otherwise, the value `false`.
+If a scheduler is attached to the calling context and a task group is executing a task inline on that context, an indication of whether that task group is in the midst of an active cancellation (or will be shortly); otherwise, the value **`false`**.
 
 ## <a name="issynchronouslyblocked"></a> IsSynchronouslyBlocked
 

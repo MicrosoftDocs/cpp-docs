@@ -6,7 +6,7 @@ ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
 ---
 # C Relational and Equality Operators
 
-The binary relational and equality operators compare their first operand to their second operand to test the validity of the specified relationship. The result of a relational expression is 1 if the tested relationship is true and 0 if it is false. The type of the result is `int`.
+The binary relational and equality operators compare their first operand to their second operand to test the validity of the specified relationship. The result of a relational expression is 1 if the tested relationship is true and 0 if it is false. The type of the result is **`int`**.
 
 **Syntax**
 
@@ -43,7 +43,7 @@ The operands can have integral, floating, or pointer type. The types of the oper
 
 - A pointer value can be compared to the constant value 0 for equality (`==`) or inequality (`!=`). A pointer with a value of 0 is called a "null" pointer; that is, it does not point to a valid memory location.
 
-- The equality operators follow the same rules as the relational operators, but permit additional possibilities: a pointer can be compared to a constant integral expression with value 0, or to a pointer to `void`. If two pointers are both null pointers, they compare as equal. Equality operators compare both segment and offset.
+- The equality operators follow the same rules as the relational operators, but permit additional possibilities: a pointer can be compared to a constant integral expression with value 0, or to a pointer to **`void`**. If two pointers are both null pointers, they compare as equal. Equality operators compare both segment and offset.
 
 ## Examples
 

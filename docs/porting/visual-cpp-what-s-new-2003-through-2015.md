@@ -1527,7 +1527,7 @@ MSVC supports these ISO C++11 language features:
 - Compound literals.
 - Designated initializers.
 - Mixing declarations with code.
-- String literal conversion to modifiable values can be disallowed by using the new compiler option `/Zc:strictStrings`. In C++98, conversion from string literals to `char*` (and wide string literals to `wchar_t*`) was deprecated. In C++11, the conversion was removed entirely. Although the compiler could strictly conform to the standard, instead it provides the `/Zc:strictStrings` option so that you can control conversion. By default, the option is off. Note that when you are using this option in debug mode, the STL will not compile.
+- String literal conversion to modifiable values can be disallowed by using the new compiler option `/Zc:strictStrings`. In C++98, conversion from string literals to **`char*`** (and wide string literals to `wchar_t*`) was deprecated. In C++11, the conversion was removed entirely. Although the compiler could strictly conform to the standard, instead it provides the `/Zc:strictStrings` option so that you can control conversion. By default, the option is off. Note that when you are using this option in debug mode, the STL will not compile.
 - rvalue/lvalue Reference Casts. With rvalue references, C++11 can clearly distinguish between lvalues and rvalues. Previously, the compiler did not provide this in specific casting scenarios. A new compiler option, `/Zc:rvalueCast`, has been added to make the compiler conformant with the C++ Language Working Paper(see section 5.4, [expr.cast]/1). The default behavior when this option is not specified is the same as in Visual Studio 2012.
 
 > [!NOTE]

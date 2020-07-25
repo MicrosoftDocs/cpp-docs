@@ -10,7 +10,7 @@ An enumeration consists of a set of named integer constants. An enumeration type
 
 Variables of `enum` type can be used in indexing expressions and as operands of all arithmetic and relational operators. Enumerations provide an alternative to the `#define` preprocessor directive with the advantages that the values can be generated for you and obey normal scoping rules.
 
-In ANSI C, the expressions that define the value of an enumerator constant always have `int` type; thus, the storage associated with an enumeration variable is the storage required for a single `int` value. An enumeration constant or a value of enumerated type can be used anywhere the C language permits an integer expression.
+In ANSI C, the expressions that define the value of an enumerator constant always have **`int`** type; thus, the storage associated with an enumeration variable is the storage required for a single **`int`** value. An enumeration constant or a value of enumerated type can be used anywhere the C language permits an integer expression.
 
 ## Syntax
 
@@ -46,7 +46,7 @@ If the declaration of a tag is visible, subsequent declarations that use the tag
 
 Each *enumeration-constant* in an *enumeration-list* names a value of the enumeration set. By default, the first *enumeration-constant* is associated with the value 0. The next *enumeration-constant* in the list is associated with the value of ( *constant-expression* + 1 ), unless you explicitly associate it with another value. The name of an *enumeration-constant* is equivalent to its value.
 
-You can use *enumeration-constant = constant-expression* to override the default sequence of values. Thus, if *enumeration-constant = constant-expression* appears in the *enumerator-list*, the *enumeration-constant* is associated with the value given by *constant-expression*. The *constant-expression* must have `int` type and can be negative.
+You can use *enumeration-constant = constant-expression* to override the default sequence of values. Thus, if *enumeration-constant = constant-expression* appears in the *enumerator-list*, the *enumeration-constant* is associated with the value given by *constant-expression*. The *constant-expression* must have **`int`** type and can be negative.
 
 The following rules apply to the members of an enumeration set:
 

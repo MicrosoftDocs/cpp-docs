@@ -51,7 +51,7 @@ The floating-point value to test.
 
 ## Remarks
 
-In C, **fpclassify** is a macro; in C++, **fpclassify** is a function overloaded using argument types of **float**, **double**, or **long** **double**. In either case, the value returned depends on the effective type of the argument expression, and not on any intermediate representation. For example, a normal **double** or **long** **double** value can become an infinity, denormal, or zero value when converted to a **float**.
+In C, **fpclassify** is a macro; in C++, **fpclassify** is a function overloaded using argument types of **float**, **double**, or **`long double`**. In either case, the value returned depends on the effective type of the argument expression, and not on any intermediate representation. For example, a normal **double** or **`long double`** value can become an infinity, denormal, or zero value when converted to a **float**.
 
 ## Requirements
 

@@ -86,7 +86,7 @@ The Microsoft run-time library defines the following standard types and typedefs
 |`_utimbuf32` structure|Stores file access and modification times used by [_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) and [_futime, _futime32, _futime64](../c-runtime-library/reference/futime-futime32-futime64.md) to change file-modification dates.|SYS\UTIME.H|
 |`__utimbuf64` structure|Used by [_utime64, _wutime64](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) and [_futime64](../c-runtime-library/reference/futime-futime32-futime64.md) to store the current time.|SYS\UTIME.H|
 |`va_list` structure|Used to hold information needed by [va_arg](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) and [va_end](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) macros. Called function declares variable of type `va_list` that can be passed as argument to another function.|STDARG.H,<br /><br /> CRTDEFS.H|
-|`wchar_t` wide character|Useful for writing portable programs for international markets.|STDDEF.H, STDLIB.H,<br /><br /> CRTDEFS.H,<br /><br /> SYS\STAT.H|
+|**`wchar_t`** wide character|Useful for writing portable programs for international markets.|STDDEF.H, STDLIB.H,<br /><br /> CRTDEFS.H,<br /><br /> SYS\STAT.H|
 |`wctrans_t` integer|Represents locale-specific character mappings.|WCTYPE.H|
 |`wctype_t` integer|Can represent all characters of any language character set.|WCHAR.H,<br /><br /> CRTDEFS.H|
 |`wint_t` integer|Type of data object that can hold any wide character or wide end-of-file value.|WCHAR.H,<br /><br /> CRTDEFS.H|

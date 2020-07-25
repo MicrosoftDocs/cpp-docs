@@ -9,6 +9,6 @@ ms.assetid: 44f8ada1-974f-4e81-a408-33ac6695aa53
 
 'function' : actual parameter has type 'void' : parameter 'number'
 
-The parameter passed to the function is type `void`, which is not allowed. Use a pointer to void ( `void *`) instead.
+The parameter passed to the function is type **`void`**, which is not allowed. Use a pointer to void ( `void *`) instead.
 
-The `number` indicates which parameter is `void`.
+The `number` indicates which parameter is **`void`**.

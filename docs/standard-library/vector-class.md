@@ -31,7 +31,7 @@ Vectors allow constant time insertions and deletions at the end of the sequence.
 
 Vector reallocation occurs when a member function must increase the sequence contained in the vector object beyond its current storage capacity. Other insertions and erasures may alter various storage addresses within the sequence. In all such cases, iterators or references that point at altered portions of the sequence become invalid. If no reallocation happens, only iterators and references before the insertion/deletion point remain valid.
 
-The [vector\<bool> class](../standard-library/vector-bool-class.md) is a full specialization of the class template vector for elements of type `bool`. It has an allocator for the underlying type used by the specialization.
+The [vector\<bool> class](../standard-library/vector-bool-class.md) is a full specialization of the class template vector for elements of type **`bool`**. It has an allocator for the underlying type used by the specialization.
 
 The [vector\<bool> reference class](../standard-library/vector-bool-class.md#reference_class) is a nested class whose objects can provide references to elements (single bits) within a vector\<bool> object.
 

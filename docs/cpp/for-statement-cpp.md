@@ -93,7 +93,7 @@ for (int i = 10; i > 0; i--) {
 
 A **for** loop terminates when a [break](../cpp/break-statement-cpp.md), [return](../cpp/return-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md) (to a labeled statement outside the **for** loop) within `statement` is executed. A [continue](../cpp/continue-statement-cpp.md) statement in a **for** loop terminates only the current iteration.
 
-If `cond-expression` is omitted, it's considered `true`, and the **for** loop won't terminate without a **break**, **return**, or **goto** within `statement`.
+If `cond-expression` is omitted, it's considered **`true`**, and the **for** loop won't terminate without a **break**, **return**, or **goto** within `statement`.
 
 Although the three fields of the **for** statement are normally used for initialization, testing for termination, and incrementing, they're not restricted to these uses. For example, the following code prints the numbers 0 through 4. In this case, `statement` is the null statement:
 

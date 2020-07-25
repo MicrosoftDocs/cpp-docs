@@ -257,7 +257,7 @@ The initializer_list to copy.
 
 ### Remarks
 
-The member functions each replace the regular expression held by `*this` with the regular expression described by the operand sequence, then return `*this`.
+The member functions each replace the regular expression held by **`*this`** with the regular expression described by the operand sequence, then return **`*this`**.
 
 ## <a name="basic_regex"></a> basic_regex::basic_regex
 
@@ -388,7 +388,7 @@ The locale object to store.
 
 ### Remarks
 
-The member function empties `*this` and returns `traits.`[regex_traits::imbue](../standard-library/regex-traits-class.md#imbue)`(loc)`.
+The member function empties **`*this`** and returns `traits.`[regex_traits::imbue](../standard-library/regex-traits-class.md#imbue)`(loc)`.
 
 ## <a name="locale_type"></a> basic_regex::locale_type
 
@@ -443,7 +443,7 @@ String to copy.
 
 ### Remarks
 
-The operators each replace the regular expression held by `*this` with the regular expression described by the operand sequence, then return `*this`.
+The operators each replace the regular expression held by **`*this`** with the regular expression described by the operand sequence, then return **`*this`**.
 
 ## <a name="swap"></a> basic_regex::swap
 
@@ -460,7 +460,7 @@ The regular expression object to swap with.
 
 ### Remarks
 
-The member function swaps the regular expressions between `*this` and *right*. It does so in constant time and throws no exceptions.
+The member function swaps the regular expressions between **`*this`** and *right*. It does so in constant time and throws no exceptions.
 
 ## <a name="value_type"></a> basic_regex::value_type
 

@@ -8,9 +8,9 @@ ms.assetid: 1943c469-200d-4724-b18f-781d70520f9e
 
 A multibyte character is a character composed of sequences of one or more bytes. Each byte sequence represents a single character in the extended character set. Multibyte characters are used in character sets such as Kanji.
 
-Wide characters are multilingual character codes that are always 16 bits wide. The type for character constants is `char`; for wide characters, the type is `wchar_t`. Since wide characters are always a fixed size, using wide characters simplifies programming with international character sets.
+Wide characters are multilingual character codes that are always 16 bits wide. The type for character constants is **`char`**; for wide characters, the type is **`wchar_t`**. Since wide characters are always a fixed size, using wide characters simplifies programming with international character sets.
 
-The wide-character-string literal `L"hello"` becomes an array of six integers of type `wchar_t`.
+The wide-character-string literal `L"hello"` becomes an array of six integers of type **`wchar_t`**.
 
 ```
 {L'h', L'e', L'l', L'l', L'o', 0}

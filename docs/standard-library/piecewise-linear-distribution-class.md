@@ -286,7 +286,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-constructs a distribution object with *count* intervals distributed uniformly over [ `xmin,xmax`], assigning each interval weights according to the function *weightfunc*, and *weightfunc* must accept one parameter and have a return value, both of which are convertible to `double`. **Precondition:**`xmin < xmax`.
+constructs a distribution object with *count* intervals distributed uniformly over [ `xmin,xmax`], assigning each interval weights according to the function *weightfunc*, and *weightfunc* must accept one parameter and have a return value, both of which are convertible to **`double`**. **Precondition:**`xmin < xmax`.
 
 The constructor defined as
 

@@ -9,7 +9,7 @@ ms.assetid: fc0ee40f-c8f3-408f-b89d-745d149c4169
 
 'function' : static member functions do not have 'this' pointers
 
-A `static` member function tried to access `this`.
+A `static` member function tried to access **`this`**.
 
 The following sample generates C2671:
 

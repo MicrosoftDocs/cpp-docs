@@ -649,7 +649,7 @@ A `memory_order` constraint.
 
 ### Remarks
 
-This member function atomically stores *Value* in `*this`, within the memory constraints that are specified by *Order*.
+This member function atomically stores *Value* in **`*this`**, within the memory constraints that are specified by *Order*.
 
 ## See also
 

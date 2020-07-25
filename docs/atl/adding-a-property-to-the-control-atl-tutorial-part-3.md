@@ -18,7 +18,7 @@ ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
 
 1. Type `Sides` as the **Property Name**.
 
-1. In the drop-down list of **Property Type**, select `short`.
+1. In the drop-down list of **Property Type**, select **`short`**.
 
 1. Click **OK** to finish adding the property.
 

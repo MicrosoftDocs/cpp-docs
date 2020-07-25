@@ -48,4 +48,4 @@ struct Y : X {
 };
 ```
 
-To fix it, change the return type of `Y::func` to `void`.
+To fix it, change the return type of `Y::func` to **`void`**.

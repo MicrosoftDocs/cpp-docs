@@ -37,7 +37,7 @@ The conceptual memory layout of an object of type `Date` is shown in the followi
 ![Memory layout of a date object](../cpp/media/vc38uq1.png "Memory layout of a date object") <br/>
 Memory Layout of Date Object
 
-Note that `nYear` is 8 bits long and would overflow the word boundary of the declared type, **unsigned** **short**. Therefore, it is begun at the beginning of a new **unsigned** **short**. It is not necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
+Note that `nYear` is 8 bits long and would overflow the word boundary of the declared type, **`unsigned short`**. Therefore, it is begun at the beginning of a new **`unsigned short`**. It is not necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
 
 **Microsoft Specific**
 

@@ -11,11 +11,11 @@ When specified, the compiler requires strict **`const`**-qualification conforman
 
 ## Syntax
 
-> **`/Zc:strictStrings`**[**-**]
+> **`/Zc:strictStrings`**[**`-`**]
 
 ## Remarks
 
-If **/Zc:strictStrings** is specified, the compiler enforces the standard C++ **`const`** qualifications for string literals, as type 'array of `const char`' or 'array of `const wchar_t`', depending on the declaration. String literals are immutable, and an attempt to modify the contents of one results in an access violation error at run time. You must declare a string pointer as **`const`** to initialize it by using a string literal, or use an explicit **`const_cast`** to initialize a non-**`const`** pointer. By default, or if **`/Zc:strictStrings-`** is specified, the compiler does not enforce the standard C++ **`const`** qualifications for string pointers initialized by using string literals.
+If **`/Zc:strictStrings`** is specified, the compiler enforces the standard C++ **`const`** qualifications for string literals, as type 'array of `const char`' or 'array of `const wchar_t`', depending on the declaration. String literals are immutable, and an attempt to modify the contents of one results in an access violation error at run time. You must declare a string pointer as **`const`** to initialize it by using a string literal, or use an explicit **`const_cast`** to initialize a non-**`const`** pointer. By default, or if **`/Zc:strictStrings-`** is specified, the compiler does not enforce the standard C++ **`const`** qualifications for string pointers initialized by using string literals.
 
 The **`/Zc:strictStrings`** option is off by default. The [`/permissive-`](permissive-standards-conformance.md) compiler option implicitly sets this option, but it can be overridden by using **`/Zc:strictStrings-`**.
 

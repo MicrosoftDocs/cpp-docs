@@ -145,7 +145,7 @@ int main() {
 [ 0 2 4 6 8 ]
 ```
 
-The next sample shows how to call the default indexer by using the `this` pointer.
+The next sample shows how to call the default indexer by using the **`this`** pointer.
 
 ```cpp
 // call_default_indexer_through_this_pointer.cpp

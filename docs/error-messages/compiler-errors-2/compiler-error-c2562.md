@@ -9,7 +9,7 @@ ms.assetid: 2c41e511-9952-4b98-9976-6b1523613e1b
 
 'identifier' : 'void' function returning a value
 
-The function is declared as `void` but returns a value.
+The function is declared as **`void`** but returns a value.
 
 This error can be caused by an incorrect function prototype.
 

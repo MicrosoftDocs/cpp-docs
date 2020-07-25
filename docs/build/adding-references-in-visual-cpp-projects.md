@@ -149,7 +149,7 @@ The following properties are found on COM and .NET assembly references, and cann
 
 - **Strong Name**
 
-   `true` if the referenced assembly has a strong name. A strong named assembly is uniquely versioned.
+   **`true`** if the referenced assembly has a strong name. A strong named assembly is uniquely versioned.
 
 - **Version**
 

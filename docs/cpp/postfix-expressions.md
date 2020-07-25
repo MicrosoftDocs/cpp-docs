@@ -26,7 +26,7 @@ primary-expression
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )
 ```
 
-The *postfix-expression* above may be a primary expression or another postfix expression.  See **primary expressions**.  Postfix expressions group left to right, thus allowing the expressions to be chained together as follows:
+The *postfix-expression* above may be a [primary expression](primary-expressions.md) or another postfix expression. Postfix expressions group left to right, thus allowing the expressions to be chained together as follows:
 
 ```cpp
 func(1)->GetValue()++
@@ -44,7 +44,7 @@ simple-type-name ( expression-list )
 
 indicates the invocation of the constructor.  If the simple-type-name is a fundamental type, the expression list must be a single expression, and this expression indicates a cast of the expression's value to the fundamental type.  This type of cast expression mimics a constructor.  Because this form allows fundamental types and classes to be constructed using the same syntax, this form is especially useful when defining template classes.
 
-The *cast-keyword* is one of **dynamic_cast**, **static_cast** or **reinterpret_cast**.  More information may be found in **dynamic_cast**, **static_cast** and **reinterpet_cast**.
+The *cast-keyword* is one of **`dynamic_cast`**, **`static_cast`** or **`reinterpret_cast`**.  More information may be found in [`dynamic_cast`](dynamic-cast-operator.md), [`static_cast`](static-cast-operator.md) and [`reinterpet_cast`](reinterpret-cast-operator.md).
 
 The **typeid** operator is considered a postfix expression.  See **typeid operator**.
 
@@ -73,7 +73,7 @@ When a function is called, the following tasks are performed:
 
    Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md)).
 
-   Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type **int**, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).
+   Therefore, if the function prototype (declaration) calls for an argument of type **`long`**, and if the calling program supplies an actual argument of type **`int`**, the actual argument is promoted using a standard type conversion to type **`long`** (see [Standard Conversions](../cpp/standard-conversions.md)).
 
    It is an error to supply an actual argument for which there is no standard or user-defined conversion to the type of the formal argument.
 
@@ -102,11 +102,11 @@ void func( long param1, double param2 )
 }
 ```
 
-When `func` is called from main, the formal parameter `param1` is initialized with the value of `i` (`i` is converted to type **long** to correspond to the correct type using a standard conversion), and the formal parameter `param2` is initialized with the value of `j` (`j` is converted to type **double** using a standard conversion).
+When `func` is called from main, the formal parameter `param1` is initialized with the value of `i` (`i` is converted to type **`long`** to correspond to the correct type using a standard conversion), and the formal parameter `param2` is initialized with the value of `j` (`j` is converted to type **`double`** using a standard conversion).
 
 ## Treatment of argument types
 
-Formal arguments declared as const types cannot be changed within the body of a function. Functions can change any argument that is not of type **const**. However, the change is local to the function and does not affect the actual argument's value unless the actual argument was a reference to an object not of type **const**.
+Formal arguments declared as **`const`** types cannot be changed within the body of a function. Functions can change any argument that is not of type **`const`**. However, the change is local to the function and does not affect the actual argument's value unless the actual argument was a reference to an object not of type **`const`**.
 
 The following functions illustrate some of these concepts:
 
@@ -132,9 +132,9 @@ Functions can be declared to accept fewer arguments than specified in the functi
 
 Ellipsis denotes that arguments may be required but that the number and types are not specified in the declaration. This is normally poor C++ programming practice because it defeats one of the benefits of C++: type safety. Different conversions are applied to functions declared with ellipsis than to those functions for which the formal and actual argument types are known:
 
-- If the actual argument is of type **float**, it is promoted to type **double** prior to the function call.
+- If the actual argument is of type **`float`**, it is promoted to type **`double`** prior to the function call.
 
-- Any signed or unsigned **char**, **short**, enumerated type, or bit field is converted to either a signed or an unsigned **int** using integral promotion.
+- Any **`signed char`** or **`unsigned char`**, **`signed short`** or **`unsigned short`**, enumerated type, or bit field is converted to either a **`signed int`** or an **`unsigned int`** using integral promotion.
 
 - Any argument of class type is passed by value as a data structure; the copy is created by binary copying instead of by invoking the class's copy constructor (if one exists).
 

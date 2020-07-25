@@ -432,7 +432,7 @@ The value with which the object being constructed is to be initialized.
 
 #### Remarks
 
-The first member function is equivalent to **new** ((`void` \*) `ptr`) **Type** (`val`).
+The first member function is equivalent to `new ((void *) ptr) Type(val)`.
 
 #### Example
 

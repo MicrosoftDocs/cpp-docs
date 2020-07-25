@@ -10,7 +10,7 @@ Visual C++ allows access to .NET features through managed types, which provide s
 
 ## <a name="main_functions"></a> Managed Types and the main Function
 
-When writing an application using **/clr**, the arguments of the **main()** function cannot be of a managed type.
+When writing an application using **`/clr`**, the arguments of the **main()** function cannot be of a managed type.
 
 An example of a proper signature is:
 
@@ -26,21 +26,21 @@ The following table shows the keywords for built-in Visual C++ types, which are 
 
 |Visual C++ type|.NET Framework type|
 |-----------------------|-------------------------|
-|**void**|<xref:System.Void?displayProperty=nameWithType>|
-|**bool**|<xref:System.Boolean?displayProperty=nameWithType>|
-|**signed char** |<xref:System.SByte?displayProperty=nameWithType>|
-|**unsigned char**|<xref:System.Byte?displayProperty=nameWithType>|
-|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|
-|**short** and **signed short**|<xref:System.Int16?displayProperty=nameWithType>|
-|**unsigned short**|<xref:System.UInt16?displayProperty=nameWithType>|
-|**int**, **signed int**, **long**, and **signed long**|<xref:System.Int32?displayProperty=nameWithType>|
-|**unsigned int** and **unsigned long**|<xref:System.UInt32?displayProperty=nameWithType>|
-|**__int64** and **signed __int64**|<xref:System.Int64?displayProperty=nameWithType>|
-|**unsigned __int64**|<xref:System.UInt64?displayProperty=nameWithType>|
-|**float**|<xref:System.Single?displayProperty=nameWithType>|
-|**double** and **long double**|<xref:System.Double?displayProperty=nameWithType>|
+|**`void`**|<xref:System.Void?displayProperty=nameWithType>|
+|**`bool`**|<xref:System.Boolean?displayProperty=nameWithType>|
+|**`signed char`** |<xref:System.SByte?displayProperty=nameWithType>|
+|**`unsigned char`**|<xref:System.Byte?displayProperty=nameWithType>|
+|**`wchar_t`**|<xref:System.Char?displayProperty=nameWithType>|
+|**`short`** and **`signed short`**|<xref:System.Int16?displayProperty=nameWithType>|
+|**`unsigned short`**|<xref:System.UInt16?displayProperty=nameWithType>|
+|**`int`**, **`signed int`**, **`long`**, and **`signed long`**|<xref:System.Int32?displayProperty=nameWithType>|
+|**`unsigned int`** and **`unsigned long`**|<xref:System.UInt32?displayProperty=nameWithType>|
+|**`__int64`** and **`signed __int64`**|<xref:System.Int64?displayProperty=nameWithType>|
+|**`unsigned __int64`**|<xref:System.UInt64?displayProperty=nameWithType>|
+|**`float`**|<xref:System.Single?displayProperty=nameWithType>|
+|**`double`** and **`long double`**|<xref:System.Double?displayProperty=nameWithType>|
 
-For more information about the compiler option to default to signed or unsigned **char**, see [/J (Default char type Is unsigned)](../build/reference/j-default-char-type-is-unsigned.md).
+For more information about the compiler option to default to **`signed char`** or **`unsigned char`**, see [`/J` (Default **`char`** type is `unsigned`)](../build/reference/j-default-char-type-is-unsigned.md).
 
 ## <a name="version_issues"></a> Version Issues for Value Types Nested in Native Types
 

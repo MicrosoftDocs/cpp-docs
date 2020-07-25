@@ -512,7 +512,7 @@ int* f(bool* p) {
 
 ### Standard rules for types of integer literals
 
-In conformance mode (enabled by [`/permissive-`](../build/reference/permissive-standards-conformance.md)), MSVC uses the standard rules for types of integer literals. Decimal literals too large to fit in a signed **`int`** were previously given type **`unsigned int`**. Now such literals are given the next largest signed integer type, **`long long`**. Additionally, literals with the 'll' suffix that are too large to fit in a signed type are given type **`unsigned long long`**.
+In conformance mode (enabled by [`/permissive-`](../build/reference/permissive-standards-conformance.md)), MSVC uses the standard rules for types of integer literals. Decimal literals too large to fit in a **`signed int`** were previously given type **`unsigned int`**. Now such literals are given the next largest **`signed`** integer type, **`long long`**. Additionally, literals with the 'll' suffix that are too large to fit in a **`signed`** type are given type **`unsigned long long`**.
 
 This change can lead to different warning diagnostics being generated, and behavior differences for arithmetic operations on literals.
 
@@ -886,7 +886,7 @@ U u{ 0 };
 
 ### Standard library streams reject insertions of mis-encoded character types
 
-Traditionally, inserting a `wchar_t` into a `std::ostream`, and inserting `char16_t` or `char32_t` into a `std::ostream` or `std::wostream`, outputs its integral value. Inserting pointers to those character types outputs the pointer value. Programmers don't find either case intuitive. They often expect the standard library to transcode the character or null-terminated character string instead, and to output the result.
+Traditionally, inserting a **`wchar_t`** into a `std::ostream`, and inserting `char16_t` or `char32_t` into a `std::ostream` or `std::wostream`, outputs its integral value. Inserting pointers to those character types outputs the pointer value. Programmers don't find either case intuitive. They often expect the standard library to transcode the character or null-terminated character string instead, and to output the result.
 
 The C++20 proposal [P1423R3](https://wg21.link/p1423r3) adds deleted stream insertion operator overloads for these combinations of stream and character or character pointer types. Under **`/std:c++latest`**, the overloads make these insertions ill-formed, instead of behaving in what is likely an unintended manner. The compiler raises error C2280 when one is found. You can define the "escape hatch" macro `_HAS_STREAM_INSERTION_OPERATORS_DELETED_IN_CXX20` to `1` to restore the old behavior. (The proposal also deletes stream insertion operators for `char8_t`. Our standard library implemented similar overloads when we added `char8_t` support, so the "wrong" behavior has never been available for `char8_t`.)
 
@@ -916,7 +916,7 @@ error C2280: 'std::basic_ostream<wchar_t,std::char_traits<wchar_t>> &std::<<<std
 error C2280: 'std::basic_ostream<wchar_t,std::char_traits<wchar_t>> &std::<<<std::char_traits<wchar_t>>(std::basic_ostream<wchar_t,std::char_traits<wchar_t>> &,char32_t)': attempting to reference a deleted function
 ```
 
-You can achieve the effect of the old behavior in all language modes by converting character types to `unsigned int`, or pointer-to-character types to `const void*`:
+You can achieve the effect of the old behavior in all language modes by converting character types to **`unsigned int`**, or pointer-to-character types to `const void*`:
 
 ```c++
 #include <iostream>
@@ -1070,7 +1070,7 @@ To avoid the error, remove the **constexpr** modifier from the function declarat
 
 ### Correct diagnostics for basic_string range constructor
 
-In Visual Studio 2019, the `basic_string` range constructor no longer suppresses compiler diagnostics with `static_cast`. The following code compiles without warnings in Visual Studio 2017, despite the possible loss of data from `wchar_t` to **char** when initializing `out`:
+In Visual Studio 2019, the `basic_string` range constructor no longer suppresses compiler diagnostics with `static_cast`. The following code compiles without warnings in Visual Studio 2017, despite the possible loss of data from **`wchar_t`** to **char** when initializing `out`:
 
 ```cpp
 std::wstring ws = /* … */;
@@ -1460,7 +1460,7 @@ There's now an implicit and non-narrowing conversion from a scoped enumeration's
 
 ### Capturing `*this` by value
 
-The `*this` object in a lambda expression may now be captured by value. This change enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as \[=,\*this\]](https://wg21.link/p0018r3).
+The **`*this`** object in a lambda expression may now be captured by value. This change enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as \[=,\*this\]](https://wg21.link/p0018r3).
 
 ### Removing `operator++` for **bool**
 
@@ -2499,7 +2499,7 @@ int main()
 
 ### Exception handlers
 
-Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this rule and raises a level 4 warning. It also no longer matches a handler of `char*` or `wchar_t*` to a string literal when **`/Zc:strictStrings`** is used.
+Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this rule and raises a level 4 warning. It also no longer matches a handler of **`char*`** or `wchar_t*` to a string literal when **`/Zc:strictStrings`** is used.
 
 ```cpp
 int main()

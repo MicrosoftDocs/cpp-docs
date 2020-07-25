@@ -142,7 +142,7 @@ The first syntax increments and then returns the current InputIterator. The seco
 
 The first InputIterator syntax pre-increments the current InputIterator.
 
-The second syntax post-increments the current InputIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
+The second syntax post-increments the current InputIterator. The **`int`** type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
 ## <a name="operator-inequality"></a> InputIterator::operator!= Operator
 

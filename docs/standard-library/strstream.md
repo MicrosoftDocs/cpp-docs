@@ -17,7 +17,7 @@ Defines several classes that support iostreams operations on sequences stored in
 
 ## Remarks
 
-Objects of type `strstream` work with `char` *, which are C strings. Use [\<sstream>](../standard-library/sstream.md) to work with objects of type [basic_string](../standard-library/basic-string-class.md).
+Objects of type `strstream` work with **`char`** *, which are C strings. Use [\<sstream>](../standard-library/sstream.md) to work with objects of type [basic_string](../standard-library/basic-string-class.md).
 
 > [!NOTE]
 > The classes in \<strstream> are deprecated. Consider using the classes in \<sstream> instead.

@@ -37,12 +37,12 @@ The union content is defined to be
 
 A variable with **union** type stores one of the values defined by that type. The same rules govern structure and union declarations. Unions can also have bit fields.
 
-Members of unions cannot have an incomplete type, type `void`, or function type. Therefore members cannot be an instance of the union but can be pointers to the union type being declared.
+Members of unions cannot have an incomplete type, type **`void`**, or function type. Therefore members cannot be an instance of the union but can be pointers to the union type being declared.
 
 A union type declaration is a template only. Memory is not reserved until the variable is declared.
 
 > [!NOTE]
-> If a union of two types is declared and one value is stored, but the union is accessed with the other type, the results are unreliable. For example, a union of **float** and `int` is declared. A **float** value is stored, but the program later accesses the value as an `int`. In such a situation, the value would depend on the internal storage of **float** values. The integer value would not be reliable.
+> If a union of two types is declared and one value is stored, but the union is accessed with the other type, the results are unreliable. For example, a union of **float** and **`int`** is declared. A **float** value is stored, but the program later accesses the value as an **`int`**. In such a situation, the value would depend on the internal storage of **float** values. The integer value would not be reliable.
 
 ## Examples
 
@@ -70,7 +70,7 @@ union               /* Defines a two-dimensional */
 } screen[25][80];
 ```
 
-The `screen` array contains 2,000 elements. Each element of the array is an individual union with two members: `window1` and `screenval`. The `window1` member is a structure with two bit-field members, `icon` and `color`. The `screenval` member is an `int`. At any given time, each union element holds either the `int` represented by `screenval` or the structure represented by `window1`.
+The `screen` array contains 2,000 elements. Each element of the array is an individual union with two members: `window1` and `screenval`. The `window1` member is a structure with two bit-field members, `icon` and `color`. The `screenval` member is an **`int`**. At any given time, each union element holds either the **`int`** represented by `screenval` or the structure represented by `window1`.
 
 **Microsoft Specific**
 

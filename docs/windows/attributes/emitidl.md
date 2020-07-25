@@ -18,11 +18,11 @@ Specifies whether all subsequent IDL attributes are processed and placed in the 
 ### Parameters
 
 *state*<br/>
-One of these possible values: `true`, `false`, `forced`, `restricted`, `push`, or `pop`.
+One of these possible values: **`true`**, **`false`**, `forced`, `restricted`, `push`, or `pop`.
 
-- If `true`, any IDL category attributes encountered in a source code file are placed in the generated .idl file. This is the default setting for **emitidl**.
+- If **`true`**, any IDL category attributes encountered in a source code file are placed in the generated .idl file. This is the default setting for **emitidl**.
 
-- If `false`, any IDL category attributes encountered in a source code file are not placed in the generated .idl file.
+- If **`false`**, any IDL category attributes encountered in a source code file are not placed in the generated .idl file.
 
 - If `restricted`, allows IDL attributes to be in the file without a [module](module-cpp.md) attribute. The compiler does not generate an .idl file.
 

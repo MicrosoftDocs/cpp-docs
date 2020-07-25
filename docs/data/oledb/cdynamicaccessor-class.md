@@ -414,7 +414,7 @@ bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();
 
 ### Return Value
 
-If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
+If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return **`void*`**, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
 
 For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.
 
@@ -575,7 +575,7 @@ bool SetValue(
 
 ### Return Value
 
-If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
+If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return **`void*`**, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
 
 For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.
 

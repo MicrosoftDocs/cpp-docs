@@ -50,7 +50,7 @@ The second task to combine into the resulting task.
 
 ### Return Value
 
-A task that completes successfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type **`void`** the output task will also be a `task<void>`.
 
 ### Remarks
 
@@ -99,7 +99,7 @@ The second task to combine into the resulting task.
 
 ### Return Value
 
-A task that completes successfully when both of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when both of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type **`void`** the output task will also be a `task<void>`.
 
 ### Remarks
 

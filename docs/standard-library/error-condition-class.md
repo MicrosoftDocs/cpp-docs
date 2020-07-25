@@ -234,7 +234,7 @@ A reference to the `error_condition` object that is being assigned the new enume
 
 #### Remarks
 
-The member operator stores `(value_type)error` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns `*this`.
+The member operator stores `(value_type)error` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns **`*this`**.
 
 ### <a name="op_bool"></a> operator bool
 

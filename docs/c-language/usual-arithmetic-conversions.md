@@ -10,7 +10,7 @@ Most C operators perform type conversions to bring the operands of an expression
 
 The arithmetic conversions summarized below are called "usual arithmetic conversions." These steps are applied only for binary operators that expect arithmetic type. The purpose is to yield a common type which is also the type of the result. To determine which conversions actually take place, the compiler applies the following algorithm to binary operations in the expression. The steps below are not a precedence order.
 
-1. If either operand is of type `long double`, the other operand is converted to type `long double`.
+1. If either operand is of type **`long double`**, the other operand is converted to type **`long double`**.
 
 1. If the above condition is not met and either operand is of type **double**, the other operand is converted to type **double**.
 
@@ -18,15 +18,15 @@ The arithmetic conversions summarized below are called "usual arithmetic convers
 
 1. If the above three conditions are not met (none of the operands are of floating types), then integral conversions are performed on the operands as follows:
 
-   - If either operand is of type `unsigned long`, the other operand is converted to type `unsigned long`.
+   - If either operand is of type **`unsigned long`**, the other operand is converted to type **`unsigned long`**.
 
-   - If the above condition is not met and either operand is of type **long** and the other of type `unsigned int`, both operands are converted to type `unsigned long`.
+   - If the above condition is not met and either operand is of type **long** and the other of type **`unsigned int`**, both operands are converted to type **`unsigned long`**.
 
    - If the above two conditions are not met, and either operand is of type **long**, the other operand is converted to type **long**.
 
-   - If the above three conditions are not met, and either operand is of type `unsigned int`, the other operand is converted to type `unsigned int`.
+   - If the above three conditions are not met, and either operand is of type **`unsigned int`**, the other operand is converted to type **`unsigned int`**.
 
-   - If none of the above conditions are met, both operands are converted to type `int`.
+   - If none of the above conditions are met, both operands are converted to type **`int`**.
 
 The following code illustrates these conversion rules:
 

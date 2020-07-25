@@ -28,9 +28,9 @@ The type of the result of a conditional operation depends on the type of the *ex
 
 - If both *expression* and *conditional-expression* have the same structure, union, or pointer type, the type of the result is the same structure, union, or pointer type.
 
-- If both operands have type `void`, the result has type `void`.
+- If both operands have type **`void`**, the result has type **`void`**.
 
-- If either operand is a pointer to an object of any type, and the other operand is a pointer to `void`, the pointer to the object is converted to a pointer to `void` and the result is a pointer to `void`.
+- If either operand is a pointer to an object of any type, and the other operand is a pointer to **`void`**, the pointer to the object is converted to a pointer to **`void`** and the result is a pointer to **`void`**.
 
 - If either *expression* or *conditional-expression* is a pointer and the other operand is a constant expression with the value 0, the type of the result is the pointer type.
 

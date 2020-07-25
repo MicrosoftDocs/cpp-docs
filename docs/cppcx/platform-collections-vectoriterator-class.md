@@ -108,7 +108,7 @@ The first syntax decrements and then returns the current VectorIterator. The sec
 
 The first VectorIterator syntax pre-decrements the current VectorIterator.
 
-The second syntax post-decrements the current VectorIterator. The `int` type in the second syntax indicates a post-decrement operation, not an actual integer operand.
+The second syntax post-decrements the current VectorIterator. The **`int`** type in the second syntax indicates a post-decrement operation, not an actual integer operand.
 
 ## <a name="operator-dereference"></a> VectorIterator::operator\* Operator
 
@@ -200,7 +200,7 @@ The first syntax increments and then returns the current VectorIterator. The sec
 
 The first VectorIterator syntax pre-increments the current VectorIterator.
 
-The second syntax post-increments the current VectorIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
+The second syntax post-increments the current VectorIterator. The **`int`** type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
 ## <a name="operator-inequality"></a> VectorIterator::operator!= Operator
 

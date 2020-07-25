@@ -163,7 +163,7 @@ Multiple subsequent calls to this method will return the same instance of the Re
 
 ## <a name="create_task"></a> create_task
 
-Creates a PPL [task](task-class.md) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.
+Creates a PPL [task](task-class.md) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the **`auto`** keyword while creating tasks.
 
 ```cpp
 template<typename T>
@@ -372,7 +372,7 @@ You should not catch the internal cancellation exception thrown by the `interrup
 
 ## <a name="is_current_task_group_canceling"></a> is_current_task_group_canceling
 
-Returns an indication of whether the task group which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly). Note that if there is no task group currently executing inline on the current context, `false` will be returned.
+Returns an indication of whether the task group which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly). Note that if there is no task group currently executing inline on the current context, **`false`** will be returned.
 
 ```cpp
 bool __cdecl is_current_task_group_canceling();
@@ -1607,7 +1607,7 @@ A filter function which determines whether messages should be accepted.
 
 ### Return Value
 
-A `bool` value indicating whether or not a payload was placed in `_value`.
+A **`bool`** value indicating whether or not a payload was placed in `_value`.
 
 ### Remarks
 
@@ -1660,7 +1660,7 @@ The `task_options` object.
 
 ### Return Value
 
-A task that completes successfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type **`void`** the output task will also be a `task<void>`.
 
 ### Remarks
 
@@ -1713,7 +1713,7 @@ The cancellation token which controls cancellation of the returned task. If you 
 
 ### Return Value
 
-A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type `void` the output is a `task<size_t>`, where the result is the index of the completing task.
+A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type **`void`** the output is a `task<size_t>`, where the result is the index of the completing task.
 
 ### Remarks
 

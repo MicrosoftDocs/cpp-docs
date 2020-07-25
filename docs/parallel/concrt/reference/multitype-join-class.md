@@ -253,7 +253,7 @@ A pointer to the target block that is calling the `reserve` method.
 
 ### Return Value
 
-`true` if the message was successfully reserved, `false` otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
+**`true`** if the message was successfully reserved, **`false`** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
 
 ### Remarks
 

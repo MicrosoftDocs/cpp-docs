@@ -165,9 +165,9 @@ The operator inserts `val` into memory, and then returns a reference to the raw 
 
 #### Remarks
 
-The requirements for a `ForwardIterator` state that the raw storage iterator must satisfy require only the expression \* *ii* = *t* be valid, and that it says nothing about the **operator** or the `operator=` on their own. These member operators return **\*this**.
+The requirements for a `ForwardIterator` state that the raw storage iterator must satisfy require only the expression \* *ii* = *t* be valid, and that it says nothing about the **operator** or the `operator=` on their own. These member operators return **`*this`**.
 
-The assignment operator constructs the next object in the output sequence using the stored iterator value first, by evaluating the placement new expression **new** ( ( `void` \*)&\* **first**) **Type**( `val`).
+The assignment operator constructs the next object in the output sequence using the stored iterator value `first`, by evaluating the placement new expression `new ( (void*) & *first ) Type( val )`.
 
 #### Example
 

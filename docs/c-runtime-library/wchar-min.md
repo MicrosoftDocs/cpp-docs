@@ -7,7 +7,7 @@ ms.assetid: f2d192d7-4412-483f-9839-c29e4f174b83
 ---
 # WCHAR_MIN
 
-Minimum value for type `wchar_t`.
+Minimum value for type **`wchar_t`**.
 
 ## Syntax
 

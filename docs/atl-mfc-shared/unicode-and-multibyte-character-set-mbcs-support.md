@@ -7,7 +7,7 @@ helpviewer_keywords: ["MFC [C++], character set support", "MBCS [C++], strings a
 
 Some languages, for example, Japanese and Chinese, have large character sets. To support programming for these markets, the Microsoft Foundation Class Library (MFC) enables two different approaches to handling large character sets:
 
-- [Unicode](#mfc-support-for-unicode-strings), `wchar_t` based wide-characters and strings encoded as UTF-16.
+- [Unicode](#mfc-support-for-unicode-strings), **`wchar_t`** based wide-characters and strings encoded as UTF-16.
 
 - [Multibyte Character Sets (MBCS)](#mfc-support-for-mbcs-strings), **char** based single or double-byte characters and strings encoded in a locale-specific character set.
 
@@ -29,7 +29,7 @@ These library, debugger, and DLL files are used to support Unicode in MFC:
 
 (*version* represents the version number of the file; for example, '140' means version 14.0.)
 
-`CString` is based on the TCHAR data type. If the symbol _UNICODE is defined for a build of your program, TCHAR is defined as type `wchar_t`, a 16-bit character encoding type. Otherwise, TCHAR is defined as **char**, the normal 8-bit character encoding. Therefore, under Unicode, a `CString` is composed of 16-bit characters. Without Unicode, it is composed of characters of type **char**.
+`CString` is based on the TCHAR data type. If the symbol _UNICODE is defined for a build of your program, TCHAR is defined as type **`wchar_t`**, a 16-bit character encoding type. Otherwise, TCHAR is defined as **char**, the normal 8-bit character encoding. Therefore, under Unicode, a `CString` is composed of 16-bit characters. Without Unicode, it is composed of characters of type **char**.
 
 To complete Unicode programming of your application, you must also:
 
@@ -77,7 +77,7 @@ Under DBCS, a given string can contain all single-byte ANSI characters, all doub
 
 Generic-text function mappings for all of the run-time string-handling routines are discussed in [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md). For a list, see [Internationalization](../c-runtime-library/internationalization.md).
 
-Similarly, `CString` methods are implemented by using generic data type mappings. To enable both MBCS and Unicode, MFC uses TCHAR for **char** or `wchar_t`, LPTSTR for **char**<strong>\*</strong> or `wchar_t*`, and LPCTSTR for **const char**<strong>\*</strong> or `const wchar_t*`. These ensure the correct mappings for either MBCS or Unicode.
+Similarly, `CString` methods are implemented by using generic data type mappings. To enable both MBCS and Unicode, MFC uses TCHAR for **char** or **`wchar_t`**, LPTSTR for **char**<strong>\*</strong> or `wchar_t*`, and LPCTSTR for **const char**<strong>\*</strong> or `const wchar_t*`. These ensure the correct mappings for either MBCS or Unicode.
 
 ## See also
 

@@ -85,7 +85,7 @@ CString cs("meow");
 wcout << (const wchar_t*) cs << endl;
 ```
 
-Without the cast, `cs` is treated as a `void*` and `wcout` prints the address of the object. This behavior is caused by subtle interactions between template argument deduction and overload resolution which are in themselves correct and conformant with the C++ standard.
+Without the cast, `cs` is treated as a **`void*`** and `wcout` prints the address of the object. This behavior is caused by subtle interactions between template argument deduction and overload resolution which are in themselves correct and conformant with the C++ standard.
 
 ## See also
 

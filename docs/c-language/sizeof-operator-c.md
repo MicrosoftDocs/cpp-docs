@@ -30,7 +30,7 @@ If an unsized array is the last element of a structure, the `sizeof` operator re
 buffer = calloc(100, sizeof (int) );
 ```
 
-This example uses the `sizeof` operator to pass the size of an `int`, which varies among machines, as an argument to a run-time function named `calloc`. The value returned by the function is stored in `buffer`.
+This example uses the `sizeof` operator to pass the size of an **`int`**, which varies among machines, as an argument to a run-time function named `calloc`. The value returned by the function is stored in `buffer`.
 
 ```
 static char *strings[] = {
@@ -41,7 +41,7 @@ static char *strings[] = {
 const int string_no = ( sizeof strings ) / ( sizeof strings[0] );
 ```
 
-In this example, `strings` is an array of pointers to `char`. The number of pointers is the number of elements in the array, but is not specified. It is easy to determine the number of pointers by using the `sizeof` operator to calculate the number of elements in the array. The **const** integer value `string_no` is initialized to this number. Because it is a **const** value, `string_no` cannot be modified.
+In this example, `strings` is an array of pointers to **`char`**. The number of pointers is the number of elements in the array, but is not specified. It is easy to determine the number of pointers by using the `sizeof` operator to calculate the number of elements in the array. The **const** integer value `string_no` is initialized to this number. Because it is a **const** value, `string_no` cannot be modified.
 
 ## See also
 

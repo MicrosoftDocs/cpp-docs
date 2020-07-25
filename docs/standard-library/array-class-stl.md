@@ -1040,7 +1040,7 @@ Container to copy.
 
 ### Remarks
 
-The member operator assigns each element of *right* to the corresponding element of the controlled sequence, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator assigns each element of *right* to the corresponding element of the controlled sequence, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
 
 ### Example
 
@@ -1404,7 +1404,7 @@ Array to swap contents with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and *right*. It performs a number of element assignments and constructor calls proportional to `N`.
+The member function swaps the controlled sequences between **`*this`** and *right*. It performs a number of element assignments and constructor calls proportional to `N`.
 
 There is also a non-member [swap](array-functions.md#swap) function available to swap two **array** instances.
 

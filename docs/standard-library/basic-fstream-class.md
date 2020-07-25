@@ -224,7 +224,7 @@ An lvalue reference to a `basic_fstream` object.
 
 ### Return Value
 
-Returns `*this`.
+Returns **`*this`**.
 
 ### Remarks
 

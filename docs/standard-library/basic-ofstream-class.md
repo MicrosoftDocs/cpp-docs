@@ -26,7 +26,7 @@ The traits of the basic element of the file buffer (usually `char_traits`< `Elem
 
 ## Remarks
 
-When the **wchar_t** specialization of `basic_ofstream` writes to the file, if the file is opened in text mode it will write a MBCS sequence. The internal representation will use a buffer of `wchar_t` characters.
+When the **wchar_t** specialization of `basic_ofstream` writes to the file, if the file is opened in text mode it will write a MBCS sequence. The internal representation will use a buffer of **`wchar_t`** characters.
 
 The object stores an object of class `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -257,7 +257,7 @@ An rvalue reference to a `basic_ofstream` object.
 
 ### Return Value
 
-Returns `*this`.
+Returns **`*this`**.
 
 ### Remarks
 

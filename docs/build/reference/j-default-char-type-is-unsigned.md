@@ -7,7 +7,7 @@ ms.assetid: 50973667-6638-491e-9c41-bff73acae19f
 ---
 # /J (Default char Type Is unsigned)
 
-Changes the default `char` type from `signed char` to `unsigned char`, and the `char` type is zero-extended when it is widened to an `int` type.
+Changes the default **`char`** type from **`signed char`** to **`unsigned char`**, and the **`char`** type is zero-extended when it is widened to an **`int`** type.
 
 ## Syntax
 
@@ -17,11 +17,11 @@ Changes the default `char` type from `signed char` to `unsigned char`, and the `
 
 ## Remarks
 
-If a `char` value is explicitly declared as `signed`, the **/J** option does not affect it, and the value is sign-extended when it is widened to an `int` type.
+If a **`char`** value is explicitly declared as `signed`, the **/J** option does not affect it, and the value is sign-extended when it is widened to an **`int`** type.
 
-The **/J** option defines `_CHAR_UNSIGNED`, which is used with `#ifndef` in the LIMITS.h file to define the range of the default `char` type.
+The **/J** option defines `_CHAR_UNSIGNED`, which is used with `#ifndef` in the LIMITS.h file to define the range of the default **`char`** type.
 
-ANSI C and C++ do not require a specific implementation of the `char` type. This option is useful when you are working with character data that will eventually be translated into a language other than English.
+ANSI C and C++ do not require a specific implementation of the **`char`** type. This option is useful when you are working with character data that will eventually be translated into a language other than English.
 
 > [!NOTE]
 > If you use this compiler option with ATL/MFC, an error might be generated. Although you could disable this error by defining `_ATL_ALLOW_CHAR_UNSIGNED`, this workaround is not supported and may not always work.
