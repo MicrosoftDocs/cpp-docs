@@ -40,7 +40,7 @@ In this example, the steps are numbered in order and can be interpreted as follo
 
 1. pointers to
 
-1. `char` values.
+1. **`char`** values.
 
 ## Examples
 
@@ -50,13 +50,13 @@ The following examples illustrate other complex declarations and show how parent
 int *var[5]; /* Array of pointers to int values */
 ```
 
-The array modifier has higher priority than the pointer modifier, so `var` is declared to be an array. The pointer modifier applies to the type of the array elements; therefore, the array elements are pointers to `int` values.
+The array modifier has higher priority than the pointer modifier, so `var` is declared to be an array. The pointer modifier applies to the type of the array elements; therefore, the array elements are pointers to **`int`** values.
 
 ```
 int (*var)[5]; /* Pointer to array of int values */
 ```
 
-In this declaration for `var`, parentheses give the pointer modifier higher priority than the array modifier, and `var` is declared to be a pointer to an array of five `int` values.
+In this declaration for `var`, parentheses give the pointer modifier higher priority than the array modifier, and `var` is declared to be a pointer to an array of five **`int`** values.
 
 ```
 long *var( long, long ); /* Function returning pointer to long */

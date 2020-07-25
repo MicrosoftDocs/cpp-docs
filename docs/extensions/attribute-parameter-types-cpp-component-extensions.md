@@ -25,7 +25,7 @@ Values passed to attributes must be known to the compiler at compile time.  Attr
 
 - **wchar_t**
 
-- `char*` or `wchar_t*` or `System::String*`
+- **`char*`** or `wchar_t*` or `System::String*`
 
 - `System::Type ^`
 

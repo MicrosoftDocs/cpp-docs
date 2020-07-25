@@ -76,7 +76,7 @@ The `concurrent_vector` class closely resembles the `vector` class. The complexi
 
 - A `concurrent_vector` object does not relocate its elements when you append to it or resize it. This enables existing pointers and iterators to remain valid during concurrent operations.
 
-- The runtime does not define a specialized version of `concurrent_vector` for type `bool`.
+- The runtime does not define a specialized version of `concurrent_vector` for type **`bool`**.
 
 ### <a name="vector-safety"></a> Concurrency-Safe Operations
 

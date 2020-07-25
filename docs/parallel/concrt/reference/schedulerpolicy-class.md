@@ -67,7 +67,7 @@ The policy key to retrieve a value for.
 
 ### Return Value
 
-If the key specified by the `key` parameter is supported, the policy value for the key cast to an `unsigned int`.
+If the key specified by the `key` parameter is supported, the policy value for the key cast to an **`unsigned int`**.
 
 ### Remarks
 
@@ -177,7 +177,7 @@ The value to set the policy key to.
 
 ### Return Value
 
-If the key specified by the `key` parameter is supported, the old policy value for the key cast to an `unsigned int`.
+If the key specified by the `key` parameter is supported, the old policy value for the key cast to an **`unsigned int`**.
 
 ### Remarks
 

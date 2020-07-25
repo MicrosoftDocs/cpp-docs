@@ -199,7 +199,7 @@ A `unique_ptr` reference used to assign the value of to the current `unique_ptr`
 
 #### Remarks
 
-The member functions call `reset(right.release())` and move `right.stored_deleter` to `stored_deleter`, then return `*this`.
+The member functions call `reset(right.release())` and move `right.stored_deleter` to `stored_deleter`, then return **`*this`**.
 
 ### <a name="pointer"></a> pointer
 

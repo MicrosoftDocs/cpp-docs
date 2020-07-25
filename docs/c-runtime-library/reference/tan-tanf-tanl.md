@@ -42,7 +42,7 @@ The **tan** functions return the tangent of *x*. If *x* is greater than or equal
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **tan** that take and return **float** or **long** **double** values. In a C program, **tan** always takes and returns **double**.
+Because C++ allows overloading, you can call overloads of **tan** that take and return **float** or **`long double`** values. In a C program, **tan** always takes and returns **double**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

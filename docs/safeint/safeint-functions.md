@@ -310,7 +310,7 @@ inline bool SafeMultiply (
 
 ### Return Value
 
-`true` if no error occurs; `false` if an error occurs.
+**`true`** if no error occurs; **`false`** if an error occurs.
 
 ## <a name="safenotequals"></a> SafeNotEquals
 

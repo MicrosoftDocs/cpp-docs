@@ -1285,13 +1285,13 @@ operator bool();
 
 ### Return value
 
-`true` if the owned COM object is valid; `false` otherwise.
+**`true`** if the owned COM object is valid; **`false`** otherwise.
 
 ### Remarks
 
 The owned COM object is valid if it's not `nullptr`.
 
-This operator converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+This operator converts to `_detail_class::_safe_bool` which is safer than **`bool`** because it can't be converted to an integral type.
 
 ### Example
 
@@ -1356,7 +1356,7 @@ bool operator!();
 
 ### Return value
 
-`true` if the owned COM object is invalid; `false` otherwise.
+**`true`** if the owned COM object is invalid; **`false`** otherwise.
 
 ### Remarks
 

@@ -505,7 +505,7 @@ __declspec(property(get= get_supports_double_precision)) bool supports_double_pr
 
 ## <a name="supports_limited_double_precision"></a> supports_limited_double_precision
 
-Gets a Boolean value that indicates whether the accelerator has limited support for double precision math. If the accelerator has only limited support, then fused multiply add (FMA), division, reciprocal, and casting between `int` and `double` are not supported.
+Gets a Boolean value that indicates whether the accelerator has limited support for double precision math. If the accelerator has only limited support, then fused multiply add (FMA), division, reciprocal, and casting between **`int`** and **`double`** are not supported.
 
 ```cpp
 __declspec(property(get= get_supports_limited_double_precision)) bool supports_limited_double_precision;

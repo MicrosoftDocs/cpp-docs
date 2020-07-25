@@ -206,7 +206,7 @@ Unlike all other asynchronous message block types that are provided by the Agent
 
 ### Example
 
-The following example shows the basic structure of how to work with the `transformer` class. This example creates a `transformer` object that multiples each input `int` value by 0.33 in order to produce a `double` value as output. The example then receives the transformed values from the same `transformer` object and prints them to the console.
+The following example shows the basic structure of how to work with the `transformer` class. This example creates a `transformer` object that multiples each input **`int`** value by 0.33 in order to produce a **`double`** value as output. The example then receives the transformed values from the same `transformer` object and prints them to the console.
 
 [!code-cpp[concrt-transformer-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_5.cpp)]
 

@@ -7,7 +7,7 @@ ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
 ---
 # Platform::Box Class
 
-Enables a value type such as `Windows::Foundation::DateTime` or a scalar type such as `int` to be stored in a `Platform::Object` type. It is usually not necessary to use `Box` explicitly because boxing happens implicitly when you cast a value type to `Object^`.
+Enables a value type such as `Windows::Foundation::DateTime` or a scalar type such as **`int`** to be stored in a `Platform::Object` type. It is usually not necessary to use `Box` explicitly because boxing happens implicitly when you cast a value type to `Object^`.
 
 ### Syntax
 
@@ -46,7 +46,7 @@ Box(T valueArg);
 ### Parameters
 
 *valueArg*<br/>
-The type of value to be boxed—for example, `int`, `bool`, `float64`, `DateTime`.
+The type of value to be boxed—for example, **`int`**, **`bool`**, `float64`, `DateTime`.
 
 ## <a name="box-const-t"></a> Box::operator Box&lt;const T&gt;^ Operator
 

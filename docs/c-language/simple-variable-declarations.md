@@ -32,7 +32,7 @@ int x, y;        /* Declares two simple variables of type int */
 int const z = 1; /* Declares a constant value of type int */
 ```
 
-The variables `x` and `y` can hold any value in the set defined by the `int` type for a particular implementation. The simple object `z` is initialized to the value 1 and is not modifiable.
+The variables `x` and `y` can hold any value in the set defined by the **`int`** type for a particular implementation. The simple object `z` is initialized to the value 1 and is not modifiable.
 
 If the declaration of `z` was for an uninitialized static variable or was at file scope, it would receive an initial value of 0, and that value would be unmodifiable.
 
@@ -41,7 +41,7 @@ unsigned long reply, flag; /* Declares two variables
                               named reply and flag     */
 ```
 
-In this example, both the variables, `reply` and `flag`, have `unsigned long` type and hold unsigned integral values.
+In this example, both the variables, `reply` and `flag`, have **`unsigned long`** type and hold unsigned integral values.
 
 ## See also
 

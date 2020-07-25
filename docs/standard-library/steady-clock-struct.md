@@ -28,7 +28,7 @@ A clock is *monotonic* if the value that is returned by a first call to `now` is
 |----------|-----------------|
 |`steady_clock::duration`|A synonym for `nanoseconds`, defined in \<chrono>.|
 |`steady_clock::period`|A synonym for `nano`, defined in \<ratio>.|
-|`steady_clock::rep`|A synonym for **long** **long**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
+|`steady_clock::rep`|A synonym for **`long long`**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
 |`steady_clock::time_point`|A synonym for `chrono::time_point<steady_clock>`.|
 
 ## Public functions

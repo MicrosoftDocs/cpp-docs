@@ -64,7 +64,7 @@ will call visit with the arguments `path("abc/def/ghi")` and `path("abc/jkl")`. 
 |-|-|
 |[operator!=](#op_neq)|Returns `!(*this == right)`.|
 |[operator=](#op_as)|The defaulted member assignment operators behave as expected.|
-|[operator==](#op_eq)|Returns **true** only if both `*this` and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.|
+|[operator==](#op_eq)|Returns **true** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.|
 |[operator*](#op_multiply)|Returns `myentry`.|
 |[operator->](#op_cast)|Returns `&**this`.|
 |[operator++](#op_increment)|Increments the `recursive_directory_iterator`.|
@@ -137,7 +137,7 @@ The [recursive_directory_iterator](../standard-library/recursive-directory-itera
 
 ## <a name="op_eq"></a> recursive_directory_iterator::operator==
 
-Returns **true** only if both `*this` and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.
+Returns **true** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.
 
 ```cpp
 bool operator==(const recursive_directory_iterator& right) const;
@@ -181,7 +181,7 @@ The specified increment.
 
 ### Remarks
 
-The first member function calls `increment()`, then returns `*this`. The second member function makes a copy of the object, calls `increment()`, then returns the copy.
+The first member function calls `increment()`, then returns **`*this`**. The second member function makes a copy of the object, calls `increment()`, then returns the copy.
 
 ## <a name="options"></a> recursive_directory_iterator::options
 

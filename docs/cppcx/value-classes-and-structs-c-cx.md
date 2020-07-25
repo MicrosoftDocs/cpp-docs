@@ -82,7 +82,7 @@ You can also use a pointer symbol (*) to pass a value type by reference. The beh
 
 ## Nullable value types
 
-As mentioned earlier, a value class or value struct can have a field of type [Platform::IBox\<T>^](../cppcx/platform-ibox-interface.md)—for example, `IBox<int>^`. Such a field can have any numeric value that is valid for the `int` type, or it can have a value of `nullptr`. You can pass a nullable field as an argument to a method whose parameter is declared as optional, or anywhere else that a value type is not required to have a value.
+As mentioned earlier, a value class or value struct can have a field of type [Platform::IBox\<T>^](../cppcx/platform-ibox-interface.md)—for example, `IBox<int>^`. Such a field can have any numeric value that is valid for the **`int`** type, or it can have a value of `nullptr`. You can pass a nullable field as an argument to a method whose parameter is declared as optional, or anywhere else that a value type is not required to have a value.
 
 The following example shows how to initialize a struct that has a nullable field.
 

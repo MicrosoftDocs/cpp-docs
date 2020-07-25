@@ -21,7 +21,7 @@ These are the `/Zc` compiler options:
 |Option|Behavior|
 |---|---|
 |[alignedNew\[-\]](zc-alignednew.md)|Enable C++17 over-aligned dynamic allocation (on by default in C++17).|
-|[auto\[-\]](zc-auto-deduce-variable-type.md)|Enforce the new Standard C++ meaning for `auto` (on by default).|
+|[auto\[-\]](zc-auto-deduce-variable-type.md)|Enforce the new Standard C++ meaning for **`auto`** (on by default).|
 |[__cplusplus\[-\]](zc-cplusplus.md)|Enable the **__cplusplus** macro to report the supported standard (off by default).|
 |[externConstexpr\[-\]](zc-externconstexpr.md)|Enable external linkage for `constexpr` variables (off by default).|
 |[forScope\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md)|Enforce Standard C++ `for` scoping rules (on by default).|
@@ -31,13 +31,13 @@ These are the `/Zc` compiler options:
 |[referenceBinding\[-\]](zc-referencebinding-enforce-reference-binding-rules.md)|A UDT temporary will not bind to an non-const lvalue reference (off by default).|
 |[rvalueCast\[-\]](zc-rvaluecast-enforce-type-conversion-rules.md)|Enforce Standard C++ explicit type conversion rules (off by default).|
 |[sizedDealloc\[-\]](zc-sizeddealloc-enable-global-sized-dealloc-functions.md)|Enable C++14 global sized deallocation functions (on by default).|
-|[strictStrings\[-\]](zc-strictstrings-disable-string-literal-type-conversion.md)|Disable string-literal to `char*` or `wchar_t*` conversion (off by default).|
+|[strictStrings\[-\]](zc-strictstrings-disable-string-literal-type-conversion.md)|Disable string-literal to **`char*`** or `wchar_t*` conversion (off by default).|
 |[ternary\[-\]](zc-ternary.md)|Enforce conditional operator rules on operand types (off by default).|
 |[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|Enable thread-safe local static initialization (on by default).|
 |[throwingNew\[-\]](zc-throwingnew-assume-operator-new-throws.md)|Assume `operator new` throws on failure (off by default).|
 |[trigraphs\[-\]](zc-trigraphs-trigraphs-substitution.md)|Enable trigraphs (obsolete, off by default).|
 |[twoPhase-](zc-twophase.md)|Use non-conforming template parsing behavior (conforming by default).|
-|[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|`wchar_t` is a native type, not a typedef (on by default).|
+|[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|**`wchar_t`** is a native type, not a typedef (on by default).|
 
 For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 

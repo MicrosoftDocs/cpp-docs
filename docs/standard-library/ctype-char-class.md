@@ -99,9 +99,9 @@ protected:
 
 The explicit specialization differs from the class template in several ways:
 
-- An object of class ctype< `char`> stores a pointer to the first element of a ctype mask table, an array of UCHAR_MAX + 1 elements of type `ctype_base::mask`. It also stores a Boolean object that indicates whether the array should be deleted (using `operator delete[]`) when the ctype\< **Elem**> object is destroyed.
+- An object of class `ctype<char>` stores a pointer to the first element of a ctype mask table, an array of UCHAR_MAX + 1 elements of type `ctype_base::mask`. It also stores a Boolean object that indicates whether the array should be deleted (using `operator delete[]`) when the ctype\< **Elem**> object is destroyed.
 
-- Its sole public constructor lets you specify `tab`, the ctype mask table, and `del`, the Boolean object that is true if the array should be deleted when the ctype< `char`> object is destroyed, as well as the reference-count parameter refs.
+- Its sole public constructor lets you specify `tab`, the ctype mask table, and `del`, the Boolean object that is true if the array should be deleted when the `ctype<char>` object is destroyed, as well as the reference-count parameter refs.
 
 - The protected member function `table` returns the stored ctype mask table.
 

@@ -6,7 +6,7 @@ ms.assetid: 54fed939-9902-49db-9f29-e98fd9821508
 ---
 # Concurrency::fast_math Namespace
 
-Functions in the `fast_math` namespace have lower accuracy, support only single-precision (`float`), and call the DirectX intrinsics. There are two versions of each function, for example `cos` and `cosf`. Both versions take and return a `float`, but each calls the same DirectX intrinsic.
+Functions in the `fast_math` namespace have lower accuracy, support only single-precision (**`float`**), and call the DirectX intrinsics. There are two versions of each function, for example `cos` and `cosf`. Both versions take and return a **`float`**, but each calls the same DirectX intrinsic.
 
 ## Syntax
 

@@ -40,7 +40,7 @@ The following steps show how to adapt the code example to use the Concurrency Ru
 
 [!code-cpp[concrt-migration-lwt#3](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_3.cpp)]
 
-1. Change the declaration of `MyThreadFunction` to use the `__cdecl` calling convention and to return `void`.
+1. Change the declaration of `MyThreadFunction` to use the `__cdecl` calling convention and to return **`void`**.
 
 [!code-cpp[concrt-migration-lwt#4](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_4.cpp)]
 

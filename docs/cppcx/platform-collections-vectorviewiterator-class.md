@@ -107,7 +107,7 @@ The first syntax decrements and then returns the current VectorViewIterator. The
 
 The first VectorViewIterator syntax pre-decrements the current VectorViewIterator.
 
-The second syntax post-decrements the current VectorViewIterator. The `int` type in the second syntax indicates a post-decrement operation, not an actual integer operand.
+The second syntax post-decrements the current VectorViewIterator. The **`int`** type in the second syntax indicates a post-decrement operation, not an actual integer operand.
 
 ## <a name="operator-dereference"></a> VectorViewIterator::operator\* Operator
 
@@ -202,7 +202,7 @@ The first syntax increments and then returns the current VectorViewIterator. The
 
 The first VectorViewIterator syntax pre-increments the current VectorViewIterator.
 
-The second syntax post-increments the current VectorViewIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
+The second syntax post-increments the current VectorViewIterator. The **`int`** type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
 ## <a name="operator-inequality"></a> VectorViewIterator::operator!= Operator
 

@@ -22,7 +22,7 @@ The `Context` class lets you block or yield the current execution context. Block
 
 [!code-cpp[concrt-cooperative-semaphore#2](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_2.cpp)]
 
-1. In the `public` section of the `semaphore` class, implement the constructor. The constructor takes a `long long` value that specifies the maximum number of contexts that can concurrently hold the lock.
+1. In the `public` section of the `semaphore` class, implement the constructor. The constructor takes a **`long long`** value that specifies the maximum number of contexts that can concurrently hold the lock.
 
 [!code-cpp[concrt-cooperative-semaphore#3](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_3.cpp)]
 

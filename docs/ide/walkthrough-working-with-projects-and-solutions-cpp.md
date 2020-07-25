@@ -114,7 +114,7 @@ This part of the walkthrough shows how to add a class to the project. When you a
 
       `Cardgame();`
 
-      Modify the constructor to take one parameter of type `int`, named *players*.
+      Modify the constructor to take one parameter of type **`int`**, named *players*.
 
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
       `Cardgame(int players);`

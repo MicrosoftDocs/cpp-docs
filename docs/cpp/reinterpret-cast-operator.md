@@ -19,7 +19,7 @@ reinterpret_cast < type-id > ( expression )
 
 Misuse of the **reinterpret_cast** operator can easily be unsafe. Unless the desired conversion is inherently low-level, you should use one of the other cast operators.
 
-The **reinterpret_cast** operator can be used for conversions such as `char*` to `int*`, or `One_class*` to `Unrelated_class*`, which are inherently unsafe.
+The **reinterpret_cast** operator can be used for conversions such as **`char*`** to **`int*`**, or `One_class*` to `Unrelated_class*`, which are inherently unsafe.
 
 The result of a **reinterpret_cast** cannot safely be used for anything other than being cast back to its original type. Other uses are, at best, nonportable.
 

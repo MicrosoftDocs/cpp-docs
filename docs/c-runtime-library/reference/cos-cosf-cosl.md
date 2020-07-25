@@ -42,7 +42,7 @@ The cosine of *x*. If *x* is greater than or equal to 263, or less than or equal
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cos** that take and return **float** or **long** **double** values. In a C program, **cos** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **cos** that take and return **float** or **`long double`** values. In a C program, **cos** always takes and returns a **double**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

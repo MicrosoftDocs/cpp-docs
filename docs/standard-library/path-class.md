@@ -78,7 +78,7 @@ class path;
 |[u32string](#u32string)|Converts the sequence stored in `mypath` to UTF-32 and returns it stored in an object of type `u32string`.|
 |[u8string](#u8string)|Converts the sequence stored in `mypath` to UTF-8 and returns it stored in an object of type `u8string`.|
 |[value_type](#value_type)|The type describes the path elements favored by the host operating system.|
-|[wstring](#wstring)|Converts the sequence stored in `mypath` to the encoding favored by the host system for a `wchar_t` sequence and returns it stored in an object of type `wstring`.|
+|[wstring](#wstring)|Converts the sequence stored in `mypath` to the encoding favored by the host system for a **`wchar_t`** sequence and returns it stored in an object of type `wstring`.|
 
 ### Operators
 

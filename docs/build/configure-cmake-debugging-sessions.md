@@ -117,7 +117,7 @@ In Visual Studio 2019 version 16.6, we added a new debug configuration of `type:
 Use the following options to separate your build machine (defined in CMakeSettings.json) from your remote debug machine.
 
 - `remoteMachineName`: Remote debug machine. Only required if different than the build machine. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
-- `disableDeploy`: Defaults to `false`. Indicates whether build/debug separation is disabled. When `false`, this option allows build and debug to occur on two separate machines.
+- `disableDeploy`: Defaults to **`false`**. Indicates whether build/debug separation is disabled. When **`false`**, this option allows build and debug to occur on two separate machines.
 - `deployDirectory`: Full Unix path to the directory on `remoteMachineName` that the executable gets copied to.
 - `deploy`: An array of advanced deployment settings. You only need to configure these settings when you want more granular control over the deployment process. By default, only the files necessary for the process to debug get deployed to the remote debug machine.
   - `sourceMachine`: The machine from which the file or directory is copied. Press **Ctrl+Space** to view a list of all the remote connections stored in the Connection Manager. When building natively on WSL, this option is ignored.
@@ -204,7 +204,7 @@ The following options can be used when debugging on a remote system or WSL using
 
 - `visualizerFile`: A [.natvis file](/visualstudio/debugger/create-custom-views-of-native-objects) to use when debugging this process. This option is incompatible with `gdb` pretty printing. Also set `showDisplayString` when you set this property.
 
-- `showDisplayString`: A boolean that enables the display string when a `visualizerFile` is specified. Setting this option to `true` can cause slower performance during debugging.
+- `showDisplayString`: A boolean that enables the display string when a `visualizerFile` is specified. Setting this option to **`true`** can cause slower performance during debugging.
 
 - `setupCommands`: One or more `gdb` command(s) to execute, to set up the underlying debugger.
 

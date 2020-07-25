@@ -93,7 +93,7 @@ void f(Args... args) {
 
 To use lambda expressions in the body of a class method, pass the **this** pointer to the capture clause to provide access to the methods and data members of the enclosing class.
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **this** pointer may be captured by value by specifying `*this` in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA.
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **this** pointer may be captured by value by specifying **`*this`** in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA.
 
 For an example that shows how to use lambda expressions with class methods, see "Example: Using a Lambda Expression in a Method" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).
 

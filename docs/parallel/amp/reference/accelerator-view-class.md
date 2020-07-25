@@ -124,7 +124,7 @@ void flush();
 
 ### Return Value
 
-Returns `void`.
+Returns **`void`**.
 
 ## <a name="get_accelerator"></a> get_accelerator
 
@@ -305,7 +305,7 @@ void wait();
 
 ### Return Value
 
-Returns `void`.
+Returns **`void`**.
 
 ### Remarks
 

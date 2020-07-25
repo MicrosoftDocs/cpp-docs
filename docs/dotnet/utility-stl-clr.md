@@ -179,7 +179,7 @@ Pair to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the stored pair of values with a copy of the stored pair of values in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the stored pair of values with a copy of the stored pair of values in *right*.
 
 ### Example
 
@@ -382,7 +382,7 @@ Pair to swap contents with.
 
 ### Remarks
 
-The member function swaps the stored pair of values between `*this` and *right*.
+The member function swaps the stored pair of values between **`*this`** and *right*.
 
 ### Example
 

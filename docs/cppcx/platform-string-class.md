@@ -150,7 +150,7 @@ If `str1` is `null` and `str2` is not, `str1` is returned. If `str2` is `null` a
 
 ## <a name="data"></a> String::Data Method
 
-Returns a pointer to the beginning of the object's data buffer as a C-style array of `char16` (`wchar_t`) elements.
+Returns a pointer to the beginning of the object's data buffer as a C-style array of `char16` (**`wchar_t`**) elements.
 
 ### Syntax
 
@@ -160,7 +160,7 @@ const char16* Data();
 
 ### Return Value
 
-A pointer to the beginning of a `const char16` array of Unicode characters (`char16` is a typedef for `wchar_t`).
+A pointer to the beginning of a `const char16` array of Unicode characters (`char16` is a typedef for **`wchar_t`**).
 
 ### Remarks
 

@@ -27,7 +27,7 @@ The data type of the payload within the messages accepted by the target block.
 
 |Name|Description|
 |----------|-----------------|
-|`filter_method`|The signature of any method used by the block that returns a `bool` value to determine whether an offered message should be accepted.|
+|`filter_method`|The signature of any method used by the block that returns a **`bool`** value to determine whether an offered message should be accepted.|
 |`type`|A type alias for `T`.|
 
 ### Public Constructors

@@ -38,9 +38,9 @@ The return type of a function establishes the size and type of the value returne
 &nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*
 
-The *type-specifier* can specify any fundamental, structure, or union type. If you do not include *type-specifier*, the return type `int` is assumed.
+The *type-specifier* can specify any fundamental, structure, or union type. If you do not include *type-specifier*, the return type **`int`** is assumed.
 
-The return type given in the function definition must match the return type in declarations of the function elsewhere in the program. A function returns a value when a `return` statement containing an expression is executed. The expression is evaluated, converted to the return value type if necessary, and returned to the point at which the function was called. If a function is declared with return type `void`, a return statement containing an expression generates a warning and the expression is not evaluated.
+The return type given in the function definition must match the return type in declarations of the function elsewhere in the program. A function returns a value when a `return` statement containing an expression is executed. The expression is evaluated, converted to the return value type if necessary, and returned to the point at which the function was called. If a function is declared with return type **`void`**, a return statement containing an expression generates a warning and the expression is not evaluated.
 
 The following examples illustrate function return values.
 
@@ -80,9 +80,9 @@ char *smallstr( char s1[], char s2[] )
 }
 ```
 
-This example defines a function returning a pointer to an array of characters. The function takes two character arrays (strings) as arguments and returns a pointer to the shorter of the two strings. A pointer to an array points to the first of the array elements and has its type; thus, the return type of the function is a pointer to type `char`.
+This example defines a function returning a pointer to an array of characters. The function takes two character arrays (strings) as arguments and returns a pointer to the shorter of the two strings. A pointer to an array points to the first of the array elements and has its type; thus, the return type of the function is a pointer to type **`char`**.
 
-You need not declare functions with `int` return type before you call them, although prototypes are recommended so that correct type checking for arguments and return values is enabled.
+You need not declare functions with **`int`** return type before you call them, although prototypes are recommended so that correct type checking for arguments and return values is enabled.
 
 ## See also
 

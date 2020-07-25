@@ -154,7 +154,7 @@ If the wait was satisfied, the index within the array supplied in the `_PPEvents
 
 ### Remarks
 
-If the parameter `_FWaitAll` is set to the value `true` to indicate that all events must become signaled to satisfy the wait, the index returned by the function carries no special significance other than the fact that it is not the value `COOPERATIVE_WAIT_TIMEOUT`.
+If the parameter `_FWaitAll` is set to the value **`true`** to indicate that all events must become signaled to satisfy the wait, the index returned by the function carries no special significance other than the fact that it is not the value `COOPERATIVE_WAIT_TIMEOUT`.
 
 > [!IMPORTANT]
 > In a Universal Windows Platform (UWP) app, do not call `wait_for_multiple` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.

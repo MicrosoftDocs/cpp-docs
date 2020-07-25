@@ -55,8 +55,8 @@ A `move_iterator` might be capable of operations that are not defined by the wra
 |[move_iterator::operator-](#operator-)|Returns `move_iterator(*this) -=` by first subtracting the right-hand value from the current position.|
 |[move_iterator::operator[]](#op_at)|Returns `(reference)*(*this + off)`. Allows you to specify an offset from the current base to obtain the value at that location.|
 |[move_iterator::operator+](#op_add)|Returns `move_iterator(*this) +=` the value. Allows you to add an offset to the base to obtain the value at that location.|
-|[move_iterator::operator+=](#op_add_eq)|Adds the right-hand value to the stored iterator, and returns `*this`.|
-|[move_iterator::operator-=](#operator-_eq)|Subtracts the right-hand value from the stored iterator, and returns `*this`.|
+|[move_iterator::operator+=](#op_add_eq)|Adds the right-hand value to the stored iterator, and returns **`*this`**.|
+|[move_iterator::operator-=](#operator-_eq)|Subtracts the right-hand value from the stored iterator, and returns **`*this`**.|
 
 ## Requirements
 
@@ -151,7 +151,7 @@ Returns the new current element.
 
 ### Remarks
 
-The operator adds *_Off* to the stored iterator. Then returns `*this`.
+The operator adds *_Off* to the stored iterator. Then returns **`*this`**.
 
 ## <a name="operator-_eq"></a> move_iterator::operator-=
 
@@ -165,7 +165,7 @@ move_iterator& operator-=(difference_type _Off);
 
 ### Remarks
 
-The operator evaluates `*this += -_Off`. Then returns `*this`.
+The operator evaluates `*this += -_Off`. Then returns **`*this`**.
 
 ## <a name="op_add_add"></a> move_iterator::operator++
 
@@ -180,9 +180,9 @@ move_iterator operator++(int);
 
 ### Remarks
 
-The first (preincrement) operator increments the stored iterator. Then returns `*this`.
+The first (preincrement) operator increments the stored iterator. Then returns **`*this`**.
 
-The second (postincrement) operator makes a copy of `*this`, evaluates `++*this`. Then returns the copy.
+The second (postincrement) operator makes a copy of **`*this`**, evaluates `++*this`. Then returns the copy.
 
 ## <a name="op_add"></a> move_iterator::operator+
 
@@ -225,9 +225,9 @@ move_iterator operator--();
 
 ### Remarks
 
-The first member operator (predecrement) decrements the stored iterator. Then returns `*this`.
+The first member operator (predecrement) decrements the stored iterator. Then returns **`*this`**.
 
-The second (postdecrement) operator makes a copy of `*this`, evaluates `--*this`. Then returns the copy.
+The second (postdecrement) operator makes a copy of **`*this`**, evaluates `--*this`. Then returns the copy.
 
 ## <a name="operator-"></a> move_iterator::operator-
 

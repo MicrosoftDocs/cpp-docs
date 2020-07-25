@@ -5338,7 +5338,7 @@ Note that the features of Microsoft Visual C++ simplify the creation of the call
 
 You also do not have to export the function name in an **EXPORTS** statement in your application's module-definition file. You can instead use the **EXPORT** function modifier, as in
 
-**BOOL CALLBACK EXPORT** AFunction( **HDC**, `int`**);**
+`BOOL CALLBACK EXPORT AFunction( HDC, int );`
 
 to cause the compiler to emit the proper export record for export by name without aliasing. This works for most needs. For some special cases, such as exporting a function by ordinal or aliasing the export, you still need to use an **EXPORTS** statement in a module-definition file.
 

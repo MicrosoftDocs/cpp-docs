@@ -15,7 +15,7 @@ Here are some common issues and solutions in greater detail.
 
 ## The identifier is undeclared
 
-If the identifier is a variable or a function name, you must declare it before it can be used. A function declaration must also include the types of its parameters before the function can be used. If the variable is declared using `auto`, the compiler must be able to infer the type from its initializer.
+If the identifier is a variable or a function name, you must declare it before it can be used. A function declaration must also include the types of its parameters before the function can be used. If the variable is declared using **`auto`**, the compiler must be able to infer the type from its initializer.
 
 If the identifier is a member of a class or struct, or declared in a namespace, it must be qualified by the class or struct name, or the namespace name, when used outside the struct, class, or namespace scope. Alternatively, the namespace must be brought into scope by a `using` directive such as `using namespace std;`, or the member name must be brought into scope by a `using` declaration, such as `using std::string;`. Otherwise, the unqualified name is considered to be an undeclared identifier in the current scope.
 

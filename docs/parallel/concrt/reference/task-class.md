@@ -42,7 +42,7 @@ The type of the result that the task produces.
 
 |Name|Description|
 |----------|-----------------|
-|[get](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.|
+|[get](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of **`void`**.|
 |[is_apartment_aware](#is_apartment_aware)|Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.|
 |[is_done](#is_done)|Determines if the task is completed.|
 |[scheduler](#scheduler)|Returns the scheduler for this task|
@@ -73,7 +73,7 @@ For more information, see [Task Parallelism](../../../parallel/concrt/task-paral
 
 ## <a name="get"></a> get
 
-Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.
+Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of **`void`**.
 
 ```cpp
 _ResultType get() const;

@@ -25,12 +25,12 @@ ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
 
 These routines test characters for specified conditions.
 
-The **is** routines produce meaningful results for any integer argument from -1 (`EOF`) to **UCHAR_MAX** (0xFF), inclusive. The expected argument type is `int`.
+The **is** routines produce meaningful results for any integer argument from -1 (`EOF`) to **UCHAR_MAX** (0xFF), inclusive. The expected argument type is **`int`**.
 
 > [!CAUTION]
-> For the **is** routines, passing an argument of type `char` may yield unpredictable results. An SBCS or MBCS single-byte character of type `char` with a value greater than 0x7F is negative. If a `char` is passed, the compiler may convert the value to a signed `int` or a signed **long**. This value may be sign-extended by the compiler, with unexpected results.
+> For the **is** routines, passing an argument of type **`char`** may yield unpredictable results. An SBCS or MBCS single-byte character of type **`char`** with a value greater than 0x7F is negative. If a **`char`** is passed, the compiler may convert the value to a **`signed int`** or a **`signed long`**. This value may be sign-extended by the compiler, with unexpected results.
 
-The **isw** routines produce meaningful results for any integer value from - 1 (**WEOF**) to 0xFFFF, inclusive. The **wint_t** data type is defined in WCHAR.H as an **unsigned short**; it can hold any wide character or the wide-character end-of-file (**WEOF**) value.
+The **isw** routines produce meaningful results for any integer value from - 1 (**WEOF**) to 0xFFFF, inclusive. The **wint_t** data type is defined in WCHAR.H as an **`unsigned short`**; it can hold any wide character or the wide-character end-of-file (**WEOF**) value.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead.
 

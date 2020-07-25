@@ -1290,7 +1290,7 @@ typedef typename allocator_type::const_pointer const_pointer;
 
 The type is a synonym for `allocator_type::const_pointer`.
 
-For type `string`, it's equivalent to `char*`.
+For type `string`, it's equivalent to **`char*`**.
 
 Pointers that are declared const must be initialized when they are declared. Const pointers always point to the same memory location and may point to constant or nonconstant data.
 

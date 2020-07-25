@@ -247,7 +247,7 @@ A buffer in which to write.
 
 ### Return Value
 
-The parameterless form of get returns the element read as an integer or end of file. The remaining forms return the stream (* `this`).
+The parameterless form of get returns the element read as an integer or end of file. The remaining forms return the stream (* **`this`**).
 
 ### Remarks
 
@@ -672,7 +672,7 @@ The number of characters to read.
 
 ### Return Value
 
-The stream ( `*this`).
+The stream ( **`*this`**).
 
 ### Remarks
 

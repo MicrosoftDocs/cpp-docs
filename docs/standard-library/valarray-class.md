@@ -1786,7 +1786,7 @@ A `valarray` providing the elements to be swapped.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and *right*. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.
+The member function swaps the controlled sequences between **`*this`** and *right*. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.
 
 ## <a name="valarray"></a> valarray
 

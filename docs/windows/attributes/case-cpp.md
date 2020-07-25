@@ -20,9 +20,9 @@ Used with the [switch_type](switch-type.md) attribute in a **union**.
 *value*<br/>
 A possible input value for which you want to provide processing. The type of **value** can be one of the following types:
 
-- `int`
+- **`int`**
 
-- `char`
+- **`char`**
 
 - `boolean`
 

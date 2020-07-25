@@ -94,7 +94,7 @@ A pointer to the lowest byte address of the newly-allocated storage. Or *ptr*.
 
 The first function is called by a new expression to allocate `count` bytes of storage suitably aligned to represent any object of that size. The program can define an alternate function with this function signature that replaces the default version defined by the C++ Standard Library and so is replaceable.
 
-The required behavior is to return a nonnull pointer only if storage can be allocated as requested. Each such allocation yields a pointer to storage disjoint from any other allocated storage. The order and contiguity of storage allocated by successive calls is unspecified. The initial stored value is unspecified. The returned pointer points to the start (lowest byte address) of the allocated storage. If count is zero, the value returned does not compare equal to any other value returned by the function.
+The required behavior is to return a non-null pointer only if storage can be allocated as requested. Each such allocation yields a pointer to storage disjoint from any other allocated storage. The order and contiguity of storage allocated by successive calls is unspecified. The initial stored value is unspecified. The returned pointer points to the start (lowest byte address) of the allocated storage. If count is zero, the value returned does not compare equal to any other value returned by the function.
 
 The default behavior is to execute a loop. Within the loop, the function first attempts to allocate the requested storage. Whether the attempt involves a call to `malloc`( **size_t**) is unspecified. If the attempt is successful, the function returns a pointer to the allocated storage. Otherwise, the function calls the designated [new handler](../standard-library/new-typedefs.md#new_handler). If the called function returns, the loop repeats. The loop terminates when an attempt to allocate the requested storage is successful or when a called function does not return.
 
@@ -102,9 +102,9 @@ The required behavior of a new handler is to perform one of the following operat
 
 - Make more storage available for allocation and then return.
 
-- Call either **abort** or **exit**(`int`).
+- Call either `abort` or `exit`.
 
-- Throw an object of type **bad_alloc.**
+- Throw an object of type `bad_alloc`.
 
 The default behavior of a [new handler](../standard-library/new-typedefs.md#new_handler) is to throw an object of type `bad_alloc`. A null pointer designates the default new handler.
 
@@ -114,7 +114,7 @@ The second function is called by a placement new expression to allocate `count` 
 
 The default behavior is to return `operator new`(`count`) if that function succeeds. Otherwise, it returns a null pointer.
 
-The third function is called by a placement **new** expression, of the form **new** ( *args*) T. Here, *args* consists of a single object pointer. This can be useful for constructing an object at a known address. The function returns *ptr*.
+The third function is called by a placement **new** expression, of the form `new ( args ) T`. Here, *args* consists of a single object pointer. This can be useful for constructing an object at a known address. The function returns *ptr*.
 
 To free storage allocated by **operator new**, call [operator delete](../standard-library/new-operators.md#op_delete).
 

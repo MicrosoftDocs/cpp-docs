@@ -524,7 +524,7 @@ The `ios_base` object to move values from.
 
 ### Remarks
 
-The protected member function moves all the values stored in *right* to `*this` except the stored `stream buffer pointer`, which is unchanged in *right* and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in *right*.
+The protected member function moves all the values stored in *right* to **`*this`** except the stored `stream buffer pointer`, which is unchanged in *right* and set to a null pointer in **`*this`**. The stored `tie pointer` is set to a null pointer in *right*.
 
 ## <a name="narrow"></a> basic_ios::narrow
 
@@ -925,7 +925,7 @@ The `basic_ios` object that is used to exchange values.
 
 ### Remarks
 
-The protected member function exchanges all the values stored in *right* with `*this` except the stored `stream buffer pointer`.
+The protected member function exchanges all the values stored in *right* with **`*this`** except the stored `stream buffer pointer`.
 
 ## See also
 

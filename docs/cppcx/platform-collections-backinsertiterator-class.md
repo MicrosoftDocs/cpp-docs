@@ -128,7 +128,7 @@ A reference to the current BackInsertIterator.
 
 ### Remarks
 
-By design, the first syntax example pre-increments the current BackInsertIterator, and the second syntax post-increments the current BackInsertIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
+By design, the first syntax example pre-increments the current BackInsertIterator, and the second syntax post-increments the current BackInsertIterator. The **`int`** type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
 However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#operator-dereference).
 

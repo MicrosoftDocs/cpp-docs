@@ -205,7 +205,7 @@ A reference to a location to store the dequeued item.
 
 ### Remarks
 
-If an item was successfully dequeued, the parameter `_Dest` receives the dequeued value, the original value held in the queue is destroyed, and this function returns **true**. If there was no item to dequeue, this function returns `false` without blocking, and the contents of the `_Dest` parameter are undefined.
+If an item was successfully dequeued, the parameter `_Dest` receives the dequeued value, the original value held in the queue is destroyed, and this function returns **true**. If there was no item to dequeue, this function returns **`false`** without blocking, and the contents of the `_Dest` parameter are undefined.
 
 `try_pop` is concurrency-safe with respect to calls to the methods `push`, `try_pop`, and `empty`.
 

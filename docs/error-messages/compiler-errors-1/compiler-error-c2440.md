@@ -13,7 +13,7 @@ The compiler cannot cast from `type1` to `type2`.
 
 ## Example
 
-C2440 can be caused if you attempt to initialize a non-const `char*` (or `wchar_t*`) by using a string literal in C++ code, when the compiler conformance option [/Zc:strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) is set. In C, the type of a string literal is array of `char`, but in C++, it is array of `const char`. This sample generates C2440:
+C2440 can be caused if you attempt to initialize a non-const **`char*`** (or `wchar_t*`) by using a string literal in C++ code, when the compiler conformance option [/Zc:strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) is set. In C, the type of a string literal is array of **`char`**, but in C++, it is array of `const char`. This sample generates C2440:
 
 ```cpp
 // C2440s.cpp

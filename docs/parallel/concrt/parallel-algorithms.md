@@ -247,7 +247,7 @@ These parallel sorting algorithms follow the rules of cancellation and exception
 > [!TIP]
 > These parallel sorting algorithms support move semantics. You can define a move assignment operator to enable swap operations to occur more efficiently. For more information about move semantics and the move assignment operator, see [Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md), and [Move Constructors and Move Assignment Operators (C++)](../../cpp/move-constructors-and-move-assignment-operators-cpp.md). If you do not provide a move assignment operator or swap function, the sorting algorithms use the copy constructor.
 
-The following basic example shows how to use `parallel_sort` to sort a `vector` of `int` values. By default, `parallel_sort` uses [std::less](../../standard-library/less-struct.md) to compare values.
+The following basic example shows how to use `parallel_sort` to sort a `vector` of **`int`** values. By default, `parallel_sort` uses [std::less](../../standard-library/less-struct.md) to compare values.
 
 [!code-cpp[concrt-basic-parallel-sort#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_10.cpp)]
 

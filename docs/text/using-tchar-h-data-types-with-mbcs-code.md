@@ -8,9 +8,9 @@ ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
 
 When the manifest constant `_MBCS` is defined, a given generic-text routine maps to one of the following kinds of routines:
 
-- An SBCS routine that handles multibyte bytes, characters, and strings appropriately. In this case, the string arguments are expected to be of type `char*`. For example, `_tprintf` maps to `printf`; the string arguments to `printf` are of type `char*`. If you use the `_TCHAR` generic-text data type for your string types, the formal and actual parameter types for `printf` match because `_TCHAR*` maps to `char*`.
+- An SBCS routine that handles multibyte bytes, characters, and strings appropriately. In this case, the string arguments are expected to be of type **`char*`**. For example, `_tprintf` maps to `printf`; the string arguments to `printf` are of type **`char*`**. If you use the `_TCHAR` generic-text data type for your string types, the formal and actual parameter types for `printf` match because `_TCHAR*` maps to **`char*`**.
 
-- An MBCS-specific routine. In this case, the string arguments are expected to be of type `unsigned char*`. For example, `_tcsrev` maps to `_mbsrev`, which expects and returns a string of type `unsigned char*`. If you use the `_TCHAR` generic-text data type for your string types, there is a potential type conflict because `_TCHAR` maps to type `char`.
+- An MBCS-specific routine. In this case, the string arguments are expected to be of type `unsigned char*`. For example, `_tcsrev` maps to `_mbsrev`, which expects and returns a string of type `unsigned char*`. If you use the `_TCHAR` generic-text data type for your string types, there is a potential type conflict because `_TCHAR` maps to type **`char`**.
 
 Following are three solutions for preventing this type conflict (and the C compiler warnings or C++ compiler errors that would result):
 

@@ -64,7 +64,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **tgamma** that take and return **float** and **long** **double** types. In a C program, **tgamma** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **tgamma** that take and return **float** and **`long double`** types. In a C program, **tgamma** always takes and returns a **double**.
 
 If x is a natural number, this function returns the factorial of (x-1).
 

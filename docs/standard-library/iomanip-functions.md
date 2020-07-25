@@ -35,7 +35,7 @@ If **true**, use international format. The default value is **false**.
 
 The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `money_get` associated with `str`, using *use_intl* to indicate international format. If successful, the call stores in *amount* the extracted monetary value. The manipulator then returns `str`.
 
-`Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.
+`Money` must be of type **`long double`** or an instantiation of `basic_string` with the same element and traits parameters as `str`.
 
 ## <a name="iomanip_get_time"></a> get_time
 
@@ -83,7 +83,7 @@ Returns `str`.
 
 The manipulator returns an object that, when inserted into the stream `str`, behaves as a formatted output function that calls the member function `put` for the locale facet `money_put` associated with `str`. If successful, the call inserts `amount` suitably formatted, using *use_intl* to indicate international format and `str.fill()`, as the fill element. The manipulator then returns `str`.
 
-`Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.
+`Money` must be of type **`long double`** or an instantiation of `basic_string` with the same element and traits parameters as `str`.
 
 ## <a name="iomanip_put_time"></a> put_time
 

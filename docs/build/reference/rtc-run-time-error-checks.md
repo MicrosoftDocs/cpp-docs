@@ -24,9 +24,9 @@ Used to enable and disable the run-time error checks feature, in conjunction wit
 Equivalent of **/RTC**`su`.
 
 **c**<br/>
-Reports when a value is assigned to a smaller data type and results in a data loss. For example, if a value of type `short 0x101` is assigned to a variable of type `char`.
+Reports when a value is assigned to a smaller data type and results in a data loss. For example, if a value of type `short 0x101` is assigned to a variable of type **`char`**.
 
-This option reports situations in which you intend to truncate, for example, if you want the first eight bits of an `int` returned as a `char`. Because **/RTC**`c` causes a run-time error if any information is lost as a result of the assignment, you can mask off the information you need to avoid a run-time error as a result of **/RTC**`c`. For example:
+This option reports situations in which you intend to truncate, for example, if you want the first eight bits of an **`int`** returned as a **`char`**. Because **/RTC**`c` causes a run-time error if any information is lost as a result of the assignment, you can mask off the information you need to avoid a run-time error as a result of **/RTC**`c`. For example:
 
 ```
 #include <crtdbg.h>

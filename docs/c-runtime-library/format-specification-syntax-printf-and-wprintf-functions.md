@@ -34,9 +34,9 @@ A basic conversion specification contains only the percent sign and a *type* cha
 
 The *type* conversion specifier character specifies whether to interpret the corresponding argument as a character, a string, a pointer, an integer, or a floating-point number. The *type* character is the only required conversion specification field, and it appears after any optional fields.
 
-The arguments that follow the format string are interpreted according to the corresponding *type* character and the optional [size](#size) prefix. Conversions for character types `char` and `wchar_t` are specified by using **c** or **C**, and single-byte and multi-byte or wide character strings are specified by using **s** or **S**, depending on which formatting function is being used. Character and string arguments that are specified by using **c** and **s** are interpreted as `char` and `char*` by `printf` family functions, or as `wchar_t` and `wchar_t*` by `wprintf` family functions. Character and string arguments that are specified by using **C** and **S** are interpreted as `wchar_t` and `wchar_t*` by `printf` family functions, or as `char` and `char*` by `wprintf` family functions. This behavior is Microsoft-specific.
+The arguments that follow the format string are interpreted according to the corresponding *type* character and the optional [size](#size) prefix. Conversions for character types **`char`** and **`wchar_t`** are specified by using **c** or **C**, and single-byte and multi-byte or wide character strings are specified by using **s** or **S**, depending on which formatting function is being used. Character and string arguments that are specified by using **c** and **s** are interpreted as **`char`** and **`char*`** by `printf` family functions, or as **`wchar_t`** and `wchar_t*` by `wprintf` family functions. Character and string arguments that are specified by using **C** and **S** are interpreted as **`wchar_t`** and `wchar_t*` by `printf` family functions, or as **`char`** and **`char*`** by `wprintf` family functions. This behavior is Microsoft-specific.
 
-Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` variants, are specified by using **d**, **i**, **o**, **u**, **x**, and **X**. Floating-point types such as `float`, `double`, and `long double`, are specified by using **a**, **A**, **e**, **E**, **f**, **F**, **g**, and **G**. By default, unless they are modified by a *size* prefix, integer arguments are coerced to `int` type, and floating-point arguments are coerced to `double`. On 64-bit systems, an `int` is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a *size* prefix of **ll** or **I64** is used. Pointer types that are specified by **p** use the default pointer size for the platform.
+Integer types such as **`short`**, **`int`**, **`long`**, **`long long`**, and their `unsigned` variants, are specified by using **d**, **i**, **o**, **u**, **x**, and **X**. Floating-point types such as **`float`**, **`double`**, and **`long double`**, are specified by using **a**, **A**, **e**, **E**, **f**, **F**, **g**, and **G**. By default, unless they are modified by a *size* prefix, integer arguments are coerced to **`int`** type, and floating-point arguments are coerced to **`double`**. On 64-bit systems, an **`int`** is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a *size* prefix of **ll** or **I64** is used. Pointer types that are specified by **p** use the default pointer size for the platform.
 
 > [!NOTE]
 > **Microsoft-specific:**\
@@ -125,7 +125,7 @@ In a conversion specification, the optional width specification field appears af
 
 The width specification never causes a value to be truncated. If the number of characters in the output value is greater than the specified width, or if *width* isn't given, all characters of the value are output, subject to the *precision* specification.
 
-If the width specification is an asterisk (`*`), an `int` argument from the argument list supplies the value. The *width* argument must precede the value that's being formatted in the argument list, as shown in this example:
+If the width specification is an asterisk (`*`), an **`int`** argument from the argument list supplies the value. The *width* argument must precede the value that's being formatted in the argument list, as shown in this example:
 
 `printf("%0*d", 5, 3);  /* 00003 is output */`
 
@@ -141,7 +141,7 @@ Unlike the width specification, the precision specification can cause either tru
 
 `printf( "%.0d", 0 );      /* No characters output */`
 
-If the precision specification is an asterisk (\*), an `int` argument from the argument list supplies the value. In the argument list, the *precision* argument must precede the value that's being formatted, as shown in this example:
+If the precision specification is an asterisk (\*), an **`int`** argument from the argument list supplies the value. In the argument list, the *precision* argument must precede the value that's being formatted, as shown in this example:
 
 `printf( "%.*f", 3, 3.14159265 );  /* 3.142 output */`
 
@@ -163,7 +163,7 @@ The *type* character determines either the interpretation of *precision* or the 
 
 ## Argument size specification
 
-In a conversion specification, the *size* field is an argument length modifier for the *type* conversion specifier. The *size* field prefixes to the *type* field—**hh**, **h**, **j**, **l** (lowercase L), **L**, **ll**, **t**, **w**, **z**, **I** (uppercase i), **I32**, and **I64**—specify the "size" of the corresponding argument—long or short, 32-bit or 64-bit, single-byte character or wide character—depending on the conversion specifier that they modify. These size prefixes are used with *type* characters in the `printf` and `wprintf` families of functions to specify the interpretation of argument sizes, as shown in the following table. The *size* field is optional for some argument types. When no size prefix is specified, the formatter consumes integer arguments—for example, signed or unsigned `char`, `short`, `int`, `long`, and enumeration types—as 32-bit `int` types, and `float`, `double`, and `long double` floating-point arguments are consumed as 64-bit `double` types. This behavior matches the default argument promotion rules for variable argument lists. For more information about argument promotion, see Ellipsis and Default Arguments in [Postfix expressions](../cpp/postfix-expressions.md). On both 32-bit and 64-bit systems, the conversion specification of a 64-bit integer argument must include a size prefix of **ll** or **I64**. Otherwise, the behavior of the formatter is undefined.
+In a conversion specification, the *size* field is an argument length modifier for the *type* conversion specifier. The *size* field prefixes to the *type* field—**hh**, **h**, **j**, **l** (lowercase L), **L**, **ll**, **t**, **w**, **z**, **I** (uppercase i), **I32**, and **I64**—specify the "size" of the corresponding argument—long or short, 32-bit or 64-bit, single-byte character or wide character—depending on the conversion specifier that they modify. These size prefixes are used with *type* characters in the `printf` and `wprintf` families of functions to specify the interpretation of argument sizes, as shown in the following table. The *size* field is optional for some argument types. When no size prefix is specified, the formatter consumes integer arguments—for example, signed or unsigned **`char`**, **`short`**, **`int`**, **`long`**, and enumeration types—as 32-bit **`int`** types, and **`float`**, **`double`**, and **`long double`** floating-point arguments are consumed as 64-bit **`double`** types. This behavior matches the default argument promotion rules for variable argument lists. For more information about argument promotion, see Ellipsis and Default Arguments in [Postfix expressions](../cpp/postfix-expressions.md). On both 32-bit and 64-bit systems, the conversion specification of a 64-bit integer argument must include a size prefix of **ll** or **I64**. Otherwise, the behavior of the formatter is undefined.
 
 Some types are different sizes in 32-bit and 64-bit code. For example, `size_t` is 32 bits long in code compiled for x86, and 64 bits in code compiled for x64. To create platform-agnostic formatting code for variable-width types, you can use a variable-width argument size modifier. Alternatively, use a 64-bit argument size modifier and explicitly promote the variable-width argument type to 64 bits. The Microsoft-specific **I** (uppercase i) argument size modifier handles variable-width integer arguments, but we recommend the type-specific **j**, **t**, and **z** modifiers for portability.
 
@@ -171,12 +171,12 @@ Some types are different sizes in 32-bit and 64-bit code. For example, `size_t` 
 
 |To specify|Use prefix|With type specifier|
 |----------------|----------------|-------------------------|
-|`char`<br />`unsigned char`|**hh**|**d**, **i**, **o**, **u**, **x**, or **X**|
+|**`char`**<br />**`unsigned char`**|**hh**|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`short int`<br />`short unsigned int`|**h**|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`__int32`<br />`unsigned __int32`|**I32**|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`__int64`<br />`unsigned __int64`|**I64**|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`intmax_t`<br />`uintmax_t`|**j** or **I64**|**d**, **i**, **o**, **u**, **x**, or **X**|
-|`long double`|**l** (lowercase L) or **L**|**a**, **A**, **e**, **E**, **f**, **F**, **g**, or **G**|
+|**`long double`**|**l** (lowercase L) or **L**|**a**, **A**, **e**, **E**, **f**, **F**, **g**, or **G**|
 |`long int`<br />`long unsigned int`|**l** (lowercase L)|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`long long int`<br />`unsigned long long int`|**ll**  (lowercase LL)|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`ptrdiff_t`|**t** or **I** (uppercase i)|**d**, **i**, **o**, **u**, **x**, or **X**|
@@ -188,13 +188,13 @@ Some types are different sizes in 32-bit and 64-bit code. For example, `size_t` 
 
 The `ptrdiff_t` and `size_t` types are `__int32` or `unsigned __int32` on 32-bit platforms, and `__int64` or `unsigned __int64` on 64-bit platforms. The **I** (uppercase i), **j**, **t**, and **z** size prefixes take the correct argument width for the platform.
 
-In Visual C++, although `long double` is a distinct type, it has the same internal representation as `double`.
+In Visual C++, although **`long double`** is a distinct type, it has the same internal representation as **`double`**.
 
 An **hc** or **hC** type specifier is synonymous with **c** in `printf` functions and with **C** in `wprintf` functions. An **lc**, **lC**, **wc**, or **wC** type specifier is synonymous with **C** in `printf` functions and with **c** in `wprintf` functions. An **hs** or **hS** type specifier is synonymous with **s** in `printf` functions and with **S** in `wprintf` functions. An **ls**, **lS**, **ws** or **wS** type specifier is synonymous with **S** in `printf` functions and with **s** in `wprintf` functions.
 
 > [!NOTE]
 > **Microsoft-specific:**\
-> The **I** (uppercase i), **I32**, **I64**, and **w** argument size modifier prefixes are Microsoft extensions and are not ISO C-compatible. The **h** prefix when it's used with data of type `char` and the **l** (lowercase L) prefix when it's used with data of type `double` are Microsoft extensions.
+> The **I** (uppercase i), **I32**, **I64**, and **w** argument size modifier prefixes are Microsoft extensions and are not ISO C-compatible. The **h** prefix when it's used with data of type **`char`** and the **l** (lowercase L) prefix when it's used with data of type **`double`** are Microsoft extensions.
 
 ## See also
 

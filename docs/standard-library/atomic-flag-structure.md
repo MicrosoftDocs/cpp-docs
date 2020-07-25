@@ -35,7 +35,7 @@ struct atomic_flag;
 
 ## <a name="clear"></a> atomic_flag::clear
 
-Sets the **bool** flag that is stored in `*this` to **false**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
+Sets the **bool** flag that is stored in **`*this`** to **false**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
 
 ```cpp
 void atomic_flag::clear(memory_order Order = memory_order_seq_cst) volatile noexcept;
@@ -49,7 +49,7 @@ A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="test_and_set"></a> atomic_flag::test_and_set
 
-Sets the **bool** flag that is stored in `*this` to **true**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
+Sets the **bool** flag that is stored in **`*this`** to **true**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
 
 ```cpp
 bool atomic_flag::test_and_set(memory_order Order = memory_order_seq_cst) volatile noexcept;
@@ -63,7 +63,7 @@ A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### Return Value
 
-The initial value of the flag that is stored in `*this`.
+The initial value of the flag that is stored in **`*this`**.
 
 ## See also
 

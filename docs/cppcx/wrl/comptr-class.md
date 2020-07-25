@@ -480,9 +480,9 @@ A reference to another `ComPtr` object.
 
 ### Return Value
 
-The first operator yields `true` if object *a* is equal to object *b*; otherwise, `false`.
+The first operator yields **`true`** if object *a* is equal to object *b*; otherwise, **`false`**.
 
-The second and third operators yield `true` if object *a* is equal to `nullptr`; otherwise, `false`.
+The second and third operators yield **`true`** if object *a* is equal to `nullptr`; otherwise, **`false`**.
 
 ## <a name="operator-inequality"></a> ComPtr::operator!=
 
@@ -515,9 +515,9 @@ A reference to another `ComPtr` object.
 
 ### Return Value
 
-The first operator yields `true` if object *a* isn't equal to object *b*; otherwise, `false`.
+The first operator yields **`true`** if object *a* is not equal to object *b*; otherwise, **`false`**.
 
-The second and third operators yield `true` if object *a* isn't equal to `nullptr`; otherwise, `false`.
+The second and third operators yield **`true`** if object *a* is not equal to **`nullptr`**; otherwise, **`false`**.
 
 ## <a name="operator-microsoft-wrl-details-booltype"></a> ComPtr::operator Microsoft::WRL::Details::BoolType
 

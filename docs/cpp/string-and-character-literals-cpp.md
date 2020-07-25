@@ -66,7 +66,7 @@ A *character literal* is composed of a constant character. It's represented by t
 
 - UTF-8 character literals of type **char** (**char8_t** in C++20), for example `u8'a'`
 
-- Wide-character literals of type `wchar_t`, for example `L'a'`
+- Wide-character literals of type **`wchar_t`**, for example `L'a'`
 
 - UTF-16 character literals of type `char16_t`, for example `u'a'`
 
@@ -311,14 +311,14 @@ u32string str6{ UR"(She said "hello.")"s };
 
 ### Size of string literals
 
-For ANSI `char*` strings and other single-byte encodings (but not UTF-8), the size (in bytes) of a string literal is the number of characters plus 1 for the terminating null character. For all other string types, the size isn't strictly related to the number of characters. UTF-8 uses up to four **char** elements to encode some *code units*, and `char16_t` or `wchar_t` encoded as UTF-16 may use two elements (for a total of four bytes) to encode a single *code unit*. This example shows the size of a wide string literal in bytes:
+For ANSI **`char*`** strings and other single-byte encodings (but not UTF-8), the size (in bytes) of a string literal is the number of characters plus 1 for the terminating null character. For all other string types, the size isn't strictly related to the number of characters. UTF-8 uses up to four **char** elements to encode some *code units*, and `char16_t` or **`wchar_t`** encoded as UTF-16 may use two elements (for a total of four bytes) to encode a single *code unit*. This example shows the size of a wide string literal in bytes:
 
 ```cpp
 const wchar_t* str = L"Hello!";
 const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
 ```
 
-Notice that `strlen()` and `wcslen()` don't include the size of the terminating null character, whose size is equal to the element size of the string type: one byte on a `char*` or `char8_t*` string, two bytes on `wchar_t*` or `char16_t*` strings, and four bytes on `char32_t*` strings.
+Notice that `strlen()` and `wcslen()` don't include the size of the terminating null character, whose size is equal to the element size of the string type: one byte on a **`char*`** or `char8_t*` string, two bytes on `wchar_t*` or `char16_t*` strings, and four bytes on `char32_t*` strings.
 
 The maximum length of a string literal is 65,535 bytes. This limit applies to both narrow string literals and wide string literals.
 

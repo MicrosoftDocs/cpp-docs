@@ -450,7 +450,7 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a `CString` to the other string types listed above. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` is not defined, `TCHAR` is defined to be char and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be `wchar_t` and `CString` contains a wide character string.
+This example demonstrates how to convert from a `CString` to the other string types listed above. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` is not defined, `TCHAR` is defined to be char and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be **`wchar_t`** and `CString` contains a wide character string.
 
 `CStringA` is the multibyte string always version of `CString`, `CStringW` is the wide character string only version. Neither `CStringA` nor `CStringW` use `_UNICODE` to determine how they should compile. `CStringA` and `CStringW` are used in this example to clarify minor differences in buffer size allocation and output handling.
 

@@ -199,7 +199,7 @@ extent<_Rank> operator++(int)restrict(amp,cpu);
 
 ### Return Value
 
-For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.
+For the prefix operator, the `extent` object (**`*this`**). For the suffix operator, a new `extent` object.
 
 ## <a name="operator_add_eq"></a> operator+=
 
@@ -254,7 +254,7 @@ extent<_Rank> operator--(int)restrict(amp,cpu);
 
 ### Return Value
 
-For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.
+For the prefix operator, the `extent` object (**`*this`**). For the suffix operator, a new `extent` object.
 
 ## <a name="operator_div_eq"></a> operator/=
 

@@ -40,7 +40,7 @@ In line 9, a variable named `obj` of type `C` is declared. However, this declara
 
 In line 10, a variable named `str` of type `std::string` is declared. The name `std::string` is visible because it is introduced in the `string` [header file](header-files-cpp.md) which is merged into the source file in line 1. `std` is the namespace in which the `string` class is declared.
 
-In line 11, an error is raised because the name `j` has not been declared. A declaration must provide a type, unlike other languages such as javaScript. In line 12, the `auto` keyword is used, which tells the compiler to infer the type of `k` based on the value that it is initialized with. The compiler in this case chooses `int` for the type.  
+In line 11, an error is raised because the name `j` has not been declared. A declaration must provide a type, unlike other languages such as javaScript. In line 12, the **`auto`** keyword is used, which tells the compiler to infer the type of `k` based on the value that it is initialized with. The compiler in this case chooses **`int`** for the type.  
 
 ## Declaration scope
 
@@ -48,7 +48,7 @@ The name that is introduced by a declaration is valid within the *scope* where t
 
 ## Definitions
 
-Some entities, including functions, classes, enums, and constant variables, must be defined in addition to being declared. A *definition* provides the compiler with all the information it needs to generate machine code when the entity is used later in the program. In the previous example, line 3 contains a declaration for the function `f` but the *definition* for the function is provided in lines 15 through 18. On line 21, the class `C` is both declared and defined (although as defined the class doesn't do anything). A constant variable must be defined, in other words assigned a value, in the same statement in which it is declared. A declaration of a built-in type such as `int` is automatically a definition because the compiler knows how much space to allocate for it.
+Some entities, including functions, classes, enums, and constant variables, must be defined in addition to being declared. A *definition* provides the compiler with all the information it needs to generate machine code when the entity is used later in the program. In the previous example, line 3 contains a declaration for the function `f` but the *definition* for the function is provided in lines 15 through 18. On line 21, the class `C` is both declared and defined (although as defined the class doesn't do anything). A constant variable must be defined, in other words assigned a value, in the same statement in which it is declared. A declaration of a built-in type such as **`int`** is automatically a definition because the compiler knows how much space to allocate for it.
 
 The following example shows declarations that are also definitions:
 

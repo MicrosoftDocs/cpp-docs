@@ -146,9 +146,9 @@ The initializer_list to copy.
 
 ### Remarks
 
-If the forward_list is an integer type, the first member function behaves the same as `assign((size_type)First, (Type)Last)`. Otherwise, the first member function replaces the sequence controlled by `*this` with the sequence [ `First, Last)`, which must not overlap the initial controlled sequence.
+If the forward_list is an integer type, the first member function behaves the same as `assign((size_type)First, (Type)Last)`. Otherwise, the first member function replaces the sequence controlled by **`*this`** with the sequence [ `First, Last)`, which must not overlap the initial controlled sequence.
 
-The second member function replaces the sequence controlled by `*this` with a repetition of `Count` elements of value `Val`.
+The second member function replaces the sequence controlled by **`*this`** with a repetition of `Count` elements of value `Val`.
 
 The third member function copies the elements of the initializer_list into the forward_list.
 
@@ -925,7 +925,7 @@ The forward list providing the elements to be exchanged.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and *right*. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
+The member function swaps the controlled sequences between **`*this`** and *right*. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
 
 ## <a name="unique"></a> unique
 

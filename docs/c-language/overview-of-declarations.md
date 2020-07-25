@@ -41,7 +41,7 @@ In the general form of a variable declaration, *type-specifier* gives the data t
 int const *fp;
 ```
 
-declares a variable named `fp` as a pointer to a nonmodifiable (**const**) `int` value. You can define more than one variable in a declaration by using multiple declarators, separated by commas.
+declares a variable named `fp` as a pointer to a nonmodifiable (**const**) **`int`** value. You can define more than one variable in a declaration by using multiple declarators, separated by commas.
 
 A declaration must have at least one declarator, or its type specifier must declare a structure tag, union tag, or members of an enumeration. Declarators provide any remaining information about an identifier. A declarator is an identifier that can be modified with brackets (**[ ]**), asterisks (<strong>\*</strong>), or parentheses ( **( )** ) to declare an array, pointer, or function type, respectively. When you declare simple variables (such as character, integer, and floating-point items), or structures and unions of simple variables, the `declarator` is just an identifier. For more information on declarators, see [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md).
 
@@ -53,7 +53,7 @@ The *storage-class-specifier* terminals defined in C include **auto**, `extern`,
 
 The location of the declaration within the source program and the presence or absence of other declarations of the variable are important factors in determining the lifetime of variables. There can be multiple redeclarations but only one definition. However, a definition can appear in more than one translation unit. For objects with internal linkage, this rule applies separately to each translation unit, because internally linked objects are unique to a translation unit. For objects with external linkage, this rule applies to the entire program. See [Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md) for more information about visibility.
 
-Type specifiers provide some information about the data types of identifiers. The default type specifier is `int`. For more information, see [Type Specifiers](../c-language/c-type-specifiers.md). Type specifiers can also define type tags, structure and union component names, and enumeration constants. For more information see [Enumeration Declarations](../c-language/c-enumeration-declarations.md), [Structure Declarations](../c-language/structure-declarations.md), and [Union Declarations](../c-language/union-declarations.md).
+Type specifiers provide some information about the data types of identifiers. The default type specifier is **`int`**. For more information, see [Type Specifiers](../c-language/c-type-specifiers.md). Type specifiers can also define type tags, structure and union component names, and enumeration constants. For more information see [Enumeration Declarations](../c-language/c-enumeration-declarations.md), [Structure Declarations](../c-language/structure-declarations.md), and [Union Declarations](../c-language/union-declarations.md).
 
 There are two *type-qualifier* terminals: **const** and `volatile`. These qualifiers specify additional properties of types that are relevant only when accessing objects of that type through l-values. For more information on **const** and `volatile`, see [Type Qualifiers](../c-language/type-qualifiers.md). For a definition of l-values, see [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md).
 

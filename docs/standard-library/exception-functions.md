@@ -308,7 +308,7 @@ An unexpected handler may not return to its caller. It may terminate execution b
 
 - Throwing an object of type [bad_exception](../standard-library/bad-exception-class.md).
 
-- Calling [terminate](../standard-library/exception-functions.md#terminate), `abort` or **exit**(`int`).
+- Calling [terminate](../standard-library/exception-functions.md#terminate), `abort` or `exit`.
 
 At program startup, the unexpected handler is a function that calls [terminate](../standard-library/exception-functions.md#terminate).
 

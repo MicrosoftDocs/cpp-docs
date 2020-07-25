@@ -98,13 +98,13 @@ If you want to handle Windows notification messages sent by a combo box to its p
 
 Each message-map entry takes the following form:
 
-**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
+`ON_Notification( id, memberFxn )`
 
 where `id` specifies the child-window ID of the combo-box control sending the notification and `memberFxn` is the name of the parent member function you have written to handle the notification.
 
 The parent's function prototype is as follows:
 
-**afx_msg** `void` `memberFxn` **( );**
+`afx_msg void memberFxn( );`
 
 The order in which certain notifications will be sent cannot be predicted. In particular, a CBN_SELCHANGE notification may occur either before or after a CBN_CLOSEUP notification.
 

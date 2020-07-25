@@ -174,7 +174,7 @@ Any expression that returns **true** or **false**.
 
 Methods that return a `cv_status` type return `cv_status::timeout` if the wait terminates when *Abs_time* elapses. Otherwise, the methods return `cv_status::no_timeout`.
 
-Methods that return a `bool` return the value of *Pred*.
+Methods that return a **`bool`** return the value of *Pred*.
 
 ### Remarks
 

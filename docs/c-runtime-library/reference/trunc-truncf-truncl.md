@@ -47,7 +47,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **trunc** that take and return **float** and **long** **double** types. In a C program, **trunc** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **trunc** that take and return **float** and **`long double`** types. In a C program, **trunc** always takes and returns a **double**.
 
 Because the largest floating-point values are exact integers, this function will not overflow on its own. However, you may cause the function to overflow by returning a value into an integer type.
 

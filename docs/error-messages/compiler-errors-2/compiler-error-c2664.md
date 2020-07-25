@@ -224,7 +224,7 @@ library myproj1 {
 }
 ```
 
-C2664 is also raised by using `wchar_t` when porting code from Visual C++ 6.0 to later versions. In Visual C++ 6.0 and earlier, `wchar_t` was a `typedef` for `unsigned short` and was therefore implicitly convertible to that type. After Visual C++ 6.0, `wchar_t` is its own built-in type, as specified in the C++ standard, and is no longer implicitly convertible to `unsigned short`. See [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+C2664 is also raised by using **`wchar_t`** when porting code from Visual C++ 6.0 to later versions. In Visual C++ 6.0 and earlier, **`wchar_t`** was a `typedef` for **`unsigned short`** and was therefore implicitly convertible to that type. After Visual C++ 6.0, **`wchar_t`** is its own built-in type, as specified in the C++ standard, and is no longer implicitly convertible to **`unsigned short`**. See [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ## Example
 

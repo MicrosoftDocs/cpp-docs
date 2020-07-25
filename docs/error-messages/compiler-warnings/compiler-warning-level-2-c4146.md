@@ -13,11 +13,11 @@ Unsigned types can hold only non-negative values, so unary minus (negation) does
 
 Practically, this occurs when the programmer is trying to express the minimum integer value, which is -2147483648. This value cannot be written as -2147483648 because the expression is processed in two stages:
 
-1. The number 2147483648 is evaluated. Because it is greater than the maximum integer value of 2147483647, the type of 2147483648 is not [int](../../c-language/integer-types.md), but `unsigned int`.
+1. The number 2147483648 is evaluated. Because it is greater than the maximum integer value of 2147483647, the type of 2147483648 is not [int](../../c-language/integer-types.md), but **`unsigned int`**.
 
 1. Unary minus is applied to the value, with an unsigned result, which also happens to be 2147483648.
 
-The unsigned type of the result can cause unexpected behavior. If the result is used in a comparison, then an unsigned comparison might be used, for example, when the other operand is an `int`. This explains why the example program below prints just one line.
+The unsigned type of the result can cause unexpected behavior. If the result is used in a comparison, then an unsigned comparison might be used, for example, when the other operand is an **`int`**. This explains why the example program below prints just one line.
 
 The expected second line, `1 is greater than the most negative int`, is not printed because `((unsigned int)1) > 2147483648` is false.
 
