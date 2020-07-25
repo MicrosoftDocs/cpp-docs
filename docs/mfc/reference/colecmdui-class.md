@@ -11,7 +11,7 @@ Implements a method for MFC to update the state of user-interface objects relate
 
 ## Syntax
 
-```
+```cpp
 class COleCmdUI : public CCmdUI
 ```
 
@@ -47,13 +47,13 @@ For further information on DocObjects, see [CDocObjectServer](../../mfc/referenc
 
 ## Requirements
 
-**Header:** afxdocobj.h
+**Header:** afxdocob.h
 
 ## <a name="colecmdui"></a> COleCmdUI::COleCmdUI
 
 Constructs a `COleCmdUI` object associated with a particular user-interface command.
 
-```
+```cpp
 COleCmdUI(
     OLECMD* rgCmds,
     ULONG cCmds,
@@ -79,7 +79,7 @@ The `COleCmdUI` object provides a programmatic interface for updating DocObject 
 
 Call this function to set the command flag of the `COleCmdUI` object to OLECOMDF_ENABLED, which tells the interface the command is available and enabled, or to clear the command flag.
 
-```
+```cpp
 virtual void Enable(BOOL bOn);
 ```
 
@@ -92,7 +92,7 @@ Indicates whether the command associated with the `COleCmdUI` object should be e
 
 Call this function to set the state of an on/off toggle command.
 
-```
+```cpp
 virtual void SetCheck(int nCheck);
 ```
 
@@ -111,7 +111,7 @@ A value determining the state to set an on/off toggle command. Values are:
 
 Call this function to return a text name or status string for a command.
 
-```
+```cpp
 virtual void SetText(LPCTSTR lpszText);
 ```
 
