@@ -32,12 +32,12 @@ A vector of [IAnalyzer](../other-types/ianalyzer-class.md) pointers included in 
 
 ### Return Value
 
-A dynamic analyzer group. Use the **auto** keyword to capture the return value.
+A dynamic analyzer group. Use the **`auto`** keyword to capture the return value.
 
 ## Remarks
 
-Unlike static analyzer groups, the members of a dynamic analyzer group don't need to be known at compile time. You can choose analyzer group members at runtime based on program input, or based on other values that are unknown at compile time. Unlike static analyzer groups, [IAnalyzer](../other-types/ianalyzer-class.md) pointers within a dynamic analyzer group have polymorphic behavior, and virtual function calls are dispatched correctly. This flexibility comes at the cost of a possibly slower event processing time. When all analyzer group members are known at compile time, and if you don't need polymorphic behavior, consider using a static analyzer group. To use a static analyzer group, call [MakeStaticAnalyzerGroup](make-static-analyzer-group.md) instead.
+Unlike static analyzer groups, the members of a dynamic analyzer group don't need to be known at compile time. You can choose analyzer group members at runtime based on program input, or based on other values that are unknown at compile time. Unlike static analyzer groups, [`IAnalyzer`](../other-types/ianalyzer-class.md) pointers within a dynamic analyzer group have polymorphic behavior, and virtual function calls are dispatched correctly. This flexibility comes at the cost of a possibly slower event processing time. When all analyzer group members are known at compile time, and if you don't need polymorphic behavior, consider using a static analyzer group. To use a static analyzer group, call [`MakeStaticAnalyzerGroup`](make-static-analyzer-group.md) instead.
 
-A dynamic analyzer group can be encapsulated inside a static analyzer group. It's done by passing its address to [MakeStaticAnalyzerGroup](make-static-analyzer-group.md). Use this technique for passing dynamic analyzer groups to functions such as [Analyze](analyze.md), which only accept static analyzer groups.
+A dynamic analyzer group can be encapsulated inside a static analyzer group. It's done by passing its address to [`MakeStaticAnalyzerGroup`](make-static-analyzer-group.md). Use this technique for passing dynamic analyzer groups to functions such as [`Analyze`](analyze.md), which only accept static analyzer groups.
 
 ::: moniker-end

@@ -1208,17 +1208,17 @@ Although these differences can affect your source code or other build artifacts,
 
    To fix the code, you can change the catch block to `catch (const D &)` but the better solution is usually to use the MFC TRY/CATCH macros.
 
-- **alignof is now a keyword**
+- **`alignof` is now a keyword**
 
-   The following code now produces error C2332: 'class': missing tag name. To fix the code you must rename the class or, if the class is performing the same work as **alignof**, just replace the class with the new keyword.
+   The following code now produces error C2332: 'class': missing tag name. To fix the code you must rename the class or, if the class is performing the same work as **`alignof`**, just replace the class with the new keyword.
 
     ```cpp
     class alignof{}
     ```
 
-- **constexpr is now a keyword**
+- **`constexpr` is now a keyword**
 
-   The following code now produces error C2059: syntax error: ')'. To fix the code, you must rename any function or variable names that are called "constexpr".
+   The following code now produces error C2059: syntax error: ')'. To fix the code, you must rename any function or variable names that are called `constexpr`.
 
     ```cpp
     int constexpr() {return 1;}
