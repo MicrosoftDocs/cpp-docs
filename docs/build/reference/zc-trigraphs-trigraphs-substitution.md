@@ -16,9 +16,9 @@ When **`/Zc:trigraphs`** is specified, the compiler replaces a trigraph characte
 
 ## Remarks
 
-A *trigraph* consists of two consecutive question marks (**`??`**) followed by a unique third character. The C language standard supports trigraphs for source files that use a character set that does not contain convenient graphic representations for some punctuation characters. For example, when trigraphs are enabled, the compiler replaces the **`??=`** trigraph by using the **`#`** character. Through C++14, trigraphs are supported as in C. The C++17 standard removes trigraphs from the C++ language. In C++ code, the **`/Zc:trigraphs`** compiler option enables substitution of trigraph sequences by the corresponding punctuation character. **`/Zc:trigraphs-`** disables trigraph substitution.
+A *trigraph* consists of two consecutive question marks (**`??`**) followed by a unique third character. The C language standard supports trigraphs for source files that use a character set that doesn't contain convenient graphic representations for some punctuation characters. For example, when trigraphs are enabled, the compiler replaces the **`??=`** trigraph by using the **`#`** character. Through C++14, trigraphs are supported as in C. The C++17 standard removes trigraphs from the C++ language. In C++ code, the **`/Zc:trigraphs`** compiler option enables substitution of trigraph sequences by the corresponding punctuation character. **`/Zc:trigraphs-`** disables trigraph substitution.
 
-The **`/Zc:trigraphs`** option is off by default, and the option is not affected when the [`/permissive-`](permissive-standards-conformance.md) option is specified.
+The **`/Zc:trigraphs`** option is off by default, and the option isn't affected when the [`/permissive-`](permissive-standards-conformance.md) option is specified.
 
 For a list of C/C++ trigraphs, and an example that shows how to use trigraphs, see [Trigraphs](../../c-language/trigraphs.md).
 
