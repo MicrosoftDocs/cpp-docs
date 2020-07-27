@@ -7,7 +7,7 @@ ms.assetid: 250fac30-9663-4133-9051-6303f76ea259
 ---
 # const_mem_fun1_t Class
 
-An adapter class that allows a **const** member function that takes a single argument to be called as a binary function object when initialized with a pointer argument. Deprecated in C++11, removed in C++17.
+An adapter class that allows a **`const`** member function that takes a single argument to be called as a binary function object when initialized with a pointer argument. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ class const_mem_fun1_t : public binary_function<const Type *, Arg, Result>
 A pointer to the member function of class `Type` to be converted to a function object.
 
 *left*\
-The **const** object that the *member_ptr* member function is called on.
+The **`const`** object that the *member_ptr* member function is called on.
 
 *right*\
 The argument that is being given to *member_ptr*.

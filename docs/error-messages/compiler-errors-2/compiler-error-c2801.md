@@ -23,7 +23,7 @@ Possible C2801 causes:
 
 - Overloaded operator is not a class, structure, or union member.
 
-- Overloaded operator is declared `static`.
+- Overloaded operator is declared **`static`**.
 
 - The following sample generates C2801:
 

@@ -23,16 +23,16 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 - Null-terminated character arrays often referred to as C strings.
 
-- class template objects, of type `basic_string`, that handle all **char**-like template arguments.
+- class template objects, of type `basic_string`, that handle all **`char`**-like template arguments.
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|[string](../standard-library/string-typedefs.md#string)|A type that describes a specialization of the class template `basic_string` with elements of type **char** as a `string`.|
-|[wstring](../standard-library/string-typedefs.md#wstring)|A type that describes a specialization of the class template `basic_string` with elements of type **wchar_t** as a `wstring`.|
-|[u16string](../standard-library/string-typedefs.md#u16string)|A type that describes a specialization of the class template `basic_string` based on elements of type `char16_t`.|
-|[u32string](../standard-library/string-typedefs.md#u32string)|A type that describes a specialization of the class template `basic_string` based on elements of type `char32_t`.|
+|[string](../standard-library/string-typedefs.md#string)|A type that describes a specialization of the class template `basic_string` with elements of type **`char`** as a `string`.|
+|[wstring](../standard-library/string-typedefs.md#wstring)|A type that describes a specialization of the class template `basic_string` with elements of type **`wchar_t`** as a `wstring`.|
+|[u16string](../standard-library/string-typedefs.md#u16string)|A type that describes a specialization of the class template `basic_string` based on elements of type **`char16_t`**.|
+|[u32string](../standard-library/string-typedefs.md#u32string)|A type that describes a specialization of the class template `basic_string` based on elements of type **`char32_t`**.|
 
 ### Operators
 
@@ -54,13 +54,13 @@ The C++ language and the C++ Standard Library support two types of strings:
 |-|-|
 |hash|Produces a hash of a string.|
 |[swap](../standard-library/string-functions.md#swap)|Exchanges the arrays of characters of two strings.|
-|[stod](../standard-library/string-functions.md#stod)|Converts a character sequence to a **double**.|
-|[stof](../standard-library/string-functions.md#stof)|Converts a character sequence to a **float**.|
+|[stod](../standard-library/string-functions.md#stod)|Converts a character sequence to a **`double`**.|
+|[stof](../standard-library/string-functions.md#stof)|Converts a character sequence to a **`float`**.|
 |[stoi](../standard-library/string-functions.md#stoi)|Converts a character sequence to an integer.|
-|[stold](../standard-library/string-functions.md#stold)|Converts a character sequence to a **long double**.|
-|[stoll](../standard-library/string-functions.md#stoll)|Converts a character sequence to a **long long**.|
-|[stoul](../standard-library/string-functions.md#stoul)|Converts a character sequence to an **unsigned long**.|
-|[stoull](../standard-library/string-functions.md#stoull)|Converts a character sequence to an **unsigned long long**.|
+|[stold](../standard-library/string-functions.md#stold)|Converts a character sequence to a **`long double`**.|
+|[stoll](../standard-library/string-functions.md#stoll)|Converts a character sequence to a **`long long`**.|
+|[stoul](../standard-library/string-functions.md#stoul)|Converts a character sequence to an **`unsigned long`**.|
+|[stoull](../standard-library/string-functions.md#stoull)|Converts a character sequence to an **`unsigned long long`**.|
 |[to_string](../standard-library/string-functions.md#to_string)|Converts a value to a `string`.|
 |[to_wstring](../standard-library/string-functions.md#to_wstring)|Converts a value to a wide `string`.|
 
@@ -81,10 +81,10 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 |||
 |-|-|
-|[char_traits\<char> Struct](../standard-library/char-traits-char-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type `char`.|
-|[char_traits<wchar_t> Struct](../standard-library/char-traits-wchar-t-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type `wchar_t`.|
-|[char_traits<char16_t> Struct](../standard-library/char-traits-char16-t-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type `char16_t`.|
-|[char_traits<char32_t> Struct](../standard-library/char-traits-char32-t-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type `char32_t`.|
+|[char_traits\<char> Struct](../standard-library/char-traits-char-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type **`char`**.|
+|[char_traits<wchar_t> Struct](../standard-library/char-traits-wchar-t-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type **`wchar_t`**.|
+|[char_traits<char16_t> Struct](../standard-library/char-traits-char16-t-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type **`char16_t`**.|
+|[char_traits<char32_t> Struct](../standard-library/char-traits-char32-t-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type **`char32_t`**.|
 
 ## Requirements
 

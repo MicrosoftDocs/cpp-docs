@@ -11,10 +11,10 @@ Integers contain 32 bits (four bytes). Signed integers are represented in two's-
 
 |Type|Minimum and Maximum|
 |----------|-------------------------|
-|**unsigned short**|0 to 65535|
-|`signed short`|-32768 to 32767|
-|`unsigned long`|0 to 4294967295|
-|**signed long**|-2147483648 to 2147483647|
+|**`unsigned short`**|0 to 65535|
+|**`signed short`**|-32768 to 32767|
+|**`unsigned long`**|0 to 4294967295|
+|**`signed long`**|-2147483648 to 2147483647|
 
 ## See also
 

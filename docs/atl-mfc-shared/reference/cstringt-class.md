@@ -23,28 +23,28 @@ class CStringT :
 *BaseType*<br/>
 The character type of the string class. Can be one of the following:
 
-- **char** (for ANSI character strings).
+- **`char`** (for ANSI character strings).
 
-- **wchar_t** (for Unicode character strings).
+- **`wchar_t`** (for Unicode character strings).
 
 - TCHAR (for both ANSI and Unicode character strings).
 
 *StringTraits*<br/>
 Determines if the string class needs C Run-Time (CRT) Library support and where string resources are located. Can be one of the following:
 
-- **StrTraitATL< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **char** &#124; **TCHAR > >**
+- **StrTraitATL< wchar_t** &#124; **`char`** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **`char`** &#124; **TCHAR > >**
 
    The class requires CRT support and searches for resource strings in the module specified by `m_hInstResource` (a member of the application's module class).
 
-- **StrTraitATL< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **char** &#124; **TCHAR > >**
+- **StrTraitATL< wchar_t** &#124; **`char`** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **`char`** &#124; **TCHAR > >**
 
    The class does not require CRT support and searches for resource strings in the module specified by `m_hInstResource` (a member of the application's module class).
 
-- **StrTraitMFC< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **char** &#124; **TCHAR > >**
+- **StrTraitMFC< wchar_t** &#124; **`char`** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **`char`** &#124; **TCHAR > >**
 
    The class requires CRT support and searches for resource strings using the standard MFC search algorithm.
 
-- **StrTraitMFC< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **char** &#124; **TCHAR > >**
+- **StrTraitMFC< wchar_t** &#124; **`char`** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **`char`** &#124; **TCHAR > >**
 
    The class does not require CRT support and searches for resource strings using the standard MFC search algorithm.
 
@@ -171,12 +171,12 @@ Because `CStringT` uses a template argument to define the character type (either
 
 |Name|Description|
 |----------|-----------------|
-|`XCHAR`|A single character (either **wchar_t** or **char**) with the same character type as the `CStringT` object.|
-|`YCHAR`|A single character (either **wchar_t** or **char**) with the opposite character type as the `CStringT` object.|
-|`PXSTR`|A pointer to a character string (either **wchar_t** or **char**) with the same character type as the `CStringT` object.|
-|`PYSTR`|A pointer to a character string (either **wchar_t** or **char**) with the opposite character type as the `CStringT` object.|
-|`PCXSTR`|A pointer to a **const** character string (either **wchar_t** or **char**) with the same character type as the `CStringT` object.|
-|`PCYSTR`|A pointer to a **const** character string (either **wchar_t** or **char**) with the opposite character type as the `CStringT` object.|
+|`XCHAR`|A single character (either **`wchar_t`** or **`char`**) with the same character type as the `CStringT` object.|
+|`YCHAR`|A single character (either **`wchar_t`** or **`char`**) with the opposite character type as the `CStringT` object.|
+|`PXSTR`|A pointer to a character string (either **`wchar_t`** or **`char`**) with the same character type as the `CStringT` object.|
+|`PYSTR`|A pointer to a character string (either **`wchar_t`** or **`char`**) with the opposite character type as the `CStringT` object.|
+|`PCXSTR`|A pointer to a **`const`** character string (either **`wchar_t`** or **`char`**) with the same character type as the `CStringT` object.|
+|`PCYSTR`|A pointer to a **`const`** character string (either **`wchar_t`** or **`char`**) with the opposite character type as the `CStringT` object.|
 
 > [!NOTE]
 > Code that previously used undocumented methods of `CString` (such as `AssignCopy`) must be replaced with code that uses the following documented methods of `CStringT` (such as `GetBuffer` or `ReleaseBuffer`). These methods are inherited from `CSimpleStringT`.
@@ -467,9 +467,9 @@ A variant object to be copied into this `CStringT` object.
 *BaseType*<br/>
 The character type of the string class. Can be one of the following:
 
-**char** (for ANSI character strings).
+**`char`** (for ANSI character strings).
 
-**wchar_t** (for Unicode character strings).
+**`wchar_t`** (for Unicode character strings).
 
 TCHAR (for both ANSI and Unicode character strings).
 
@@ -490,12 +490,12 @@ Because the constructors copy the input data into new allocated storage, you sho
 
 - `CStringT(` `LPCWSTR` `lpsz` ): Constructs a `CStringT` from a Unicode string.
 
-- `CStringT`( `const unsigned char*` `psz` ): Allows you to construct a `CStringT` from a pointer to **unsigned char**.
+- `CStringT`( `const unsigned char*` `psz` ): Allows you to construct a `CStringT` from a pointer to **`unsigned char`**.
 
 > [!NOTE]
 > Define the _CSTRING_DISABLE_NARROW_WIDE_CONVERSION macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.
 
-Note that the *strSrc* parameter can be either a `CStringT` or `CThisSimpleString` object. For `CStringT`, use one of its default instantiations (`CString`, `CStringA`, or `CStringW`); for `CThisSimpleString`, use a **this** pointer. `CThisSimpleString` declares an instance of the [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md), which is a smaller string class with less built-in functionality than the `CStringT` class.
+Note that the *strSrc* parameter can be either a `CStringT` or `CThisSimpleString` object. For `CStringT`, use one of its default instantiations (`CString`, `CStringA`, or `CStringW`); for `CThisSimpleString`, use a **`this`** pointer. `CThisSimpleString` declares an instance of the [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md), which is a smaller string class with less built-in functionality than the `CStringT` class.
 
 The overload operator `CSimpleStringT<>&()` constructs a `CStringT` object from a `CSimpleStringT` declaration.
 

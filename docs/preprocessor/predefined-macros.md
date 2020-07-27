@@ -18,7 +18,7 @@ MSVC supports the predefined preprocessor macros required by the ANSI/ISO C99 st
 
 The compiler supports this predefined identifier specified by ISO C99 and ISO C++11.
 
-- `__func__` The unqualified and unadorned name of the enclosing function as a function-local **static const** array of **char**.
+- `__func__` The unqualified and unadorned name of the enclosing function as a function-local **static const** array of **`char`**.
 
     ```cpp
     void example(){
@@ -156,7 +156,7 @@ MSVC supports these additional predefined macros.
 
    [!code-cpp[NVC_Predefined_Macros_Examples#1](../preprocessor/codesnippet/CPP/predefined-macros_1.cpp)]
 
-- `__FUNCSIG__` Defined as a string literal that contains the signature of the enclosing function. The macro is defined only within a function. The `__FUNCSIG__` macro isn't expanded if you use the [**`/EP`**](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [**`/P`**](../build/reference/p-preprocess-to-a-file.md) compiler option. When compiled for a 64-bit target, the calling convention is `__cdecl` by default. For an example of usage, see the `__FUNCDNAME__` macro.
+- `__FUNCSIG__` Defined as a string literal that contains the signature of the enclosing function. The macro is defined only within a function. The `__FUNCSIG__` macro isn't expanded if you use the [**`/EP`**](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [**`/P`**](../build/reference/p-preprocess-to-a-file.md) compiler option. When compiled for a 64-bit target, the calling convention is **`__cdecl`** by default. For an example of usage, see the `__FUNCDNAME__` macro.
 
 - `__FUNCTION__` Defined as a string literal that contains the undecorated name of the enclosing function. The macro is defined only within a function. The `__FUNCTION__` macro isn't expanded if you use the [**`/EP`**](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [**`/P`**](../build/reference/p-preprocess-to-a-file.md) compiler option. For an example of usage, see the `__FUNCDNAME__` macro.
 

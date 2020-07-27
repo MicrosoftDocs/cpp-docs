@@ -15,4 +15,4 @@ Two pointer expressions refer to different base types. The expressions are used 
 
 1. Mixing signed and unsigned types.
 
-1. Mixing **short** and **long** types.
+1. Mixing **`short`** and **`long`** types.

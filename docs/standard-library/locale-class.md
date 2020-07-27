@@ -181,7 +181,7 @@ static const int none = 0;
 
 ### Remarks
 
-The type is a synonym for an **int** type that can represent a group of distinct elements of a bitmask type local to class locale or can be used to represent any of the corresponding C locale categories. The elements are:
+The type is a synonym for an **`int`** type that can represent a group of distinct elements of a bitmask type local to class locale or can be used to represent any of the corresponding C locale categories. The elements are:
 
 - `collate`, corresponding to the C category LC_COLLATE
 
@@ -551,7 +551,7 @@ One of the locales to be tested for inequality.
 
 ### Return Value
 
-A Boolean value that is **true** if the locales aren't copies of the same locale. It's **false** if the locales are copies of the same locale.
+A Boolean value that is **`true`** if the locales aren't copies of the same locale. It's **`false`** if the locales are copies of the same locale.
 
 ### Remarks
 
@@ -618,7 +618,7 @@ The second string to compare.
 
 ### Return Value
 
-- `true` if *left* is lexicographically less than *right*, otherwise `false`.
+- **`true`** if *left* is lexicographically less than *right*, otherwise **`false`**.
 
 ### Remarks
 
@@ -678,7 +678,7 @@ One of the locales to be tested for equality.
 
 ### Return Value
 
-A Boolean value that is **true** if the locales are copies of the same locale. It's **false** if the locales aren't copies of the same locale.
+A Boolean value that is **`true`** if the locales are copies of the same locale. It's **`false`** if the locales aren't copies of the same locale.
 
 ### Remarks
 

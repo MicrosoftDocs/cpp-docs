@@ -56,7 +56,7 @@ class CMyClass
 
 |||
 |-|-|
-|**Applies to**|**class**|
+|**Applies to**|**`class`**|
 |**Repeatable**|Yes|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

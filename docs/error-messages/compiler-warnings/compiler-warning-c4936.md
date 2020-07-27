@@ -13,7 +13,7 @@ ms.assetid: 6676de35-bf1b-4d0b-a70f-b5734130336c
 
 The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
-A `__declspec` modifier was used but that `__declspec` modifier is only valid when compiled with one of the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) options.
+A **`__declspec`** modifier was used but that **`__declspec`** modifier is only valid when compiled with one of the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) options.
 
 For more information, see [appdomain](../../cpp/appdomain.md) and [process](../../cpp/process.md).
 

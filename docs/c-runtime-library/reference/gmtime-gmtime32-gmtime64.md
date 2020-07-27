@@ -28,7 +28,7 @@ Pointer to the stored time. The time is represented as seconds elapsed since mid
 
 ## Return Value
 
-A pointer to a structure of type [tm](../../c-runtime-library/standard-types.md). The fields of the returned structure hold the evaluated value of the *sourceTime* argument in UTC rather than in local time. Each of the structure fields is of type **int**, as follows:
+A pointer to a structure of type [tm](../../c-runtime-library/standard-types.md). The fields of the returned structure hold the evaluated value of the *sourceTime* argument in UTC rather than in local time. Each of the structure fields is of type **`int`**, as follows:
 
 |Field|Description|
 |-|-|

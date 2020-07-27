@@ -9,7 +9,7 @@ ms.assetid: a6f2b437-ca93-4dcd-b9cb-df415e10df86
 
 'override_function' : matches base ref class method 'base_class_function ', but is not marked 'new' or 'override'; 'new' (and 'virtual') is assumed
 
-An accessor overrides, with or without the `virtual` keyword, a base class accessor function, but the `override` or `new` specifier was not part of the overriding function signature. Add the `new` or `override` specifier to resolve this warning.
+An accessor overrides, with or without the **`virtual`** keyword, a base class accessor function, but the `override` or **`new`** specifier was not part of the overriding function signature. Add the **`new`** or `override` specifier to resolve this warning.
 
 See [override](../../extensions/override-cpp-component-extensions.md) and [new (new slot in vtable)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md) for more information.
 

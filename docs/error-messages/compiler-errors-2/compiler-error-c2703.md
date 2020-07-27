@@ -9,7 +9,7 @@ ms.assetid: 384295c3-643d-47ae-a9a6-865b3036aa84
 
 illegal __leave statement
 
-A `__leave` statement must be inside a `__try` block.
+A **`__leave** statement must be inside a `__try` block.
 
 The following sample generates C2703:
 

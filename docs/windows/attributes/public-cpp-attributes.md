@@ -17,11 +17,11 @@ Ensures that a typedef will go into the type library even if it is not reference
 
 ## Remarks
 
-The **public** C++ attribute has the same functionality as the [public](/windows/win32/Midl/public) MIDL attribute.
+The **`public`** C++ attribute has the same functionality as the [public](/windows/win32/Midl/public) MIDL attribute.
 
 ## Example
 
-The following code shows how to use the **public** attribute:
+The following code shows how to use the **`public`** attribute:
 
 ```cpp
 // cpp_attr_ref_public.cpp
@@ -43,7 +43,7 @@ __interface IFireTabCtrl : IDispatch
 
 |||
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

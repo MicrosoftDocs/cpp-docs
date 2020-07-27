@@ -367,7 +367,7 @@ void AfxThrowMemoryException();
 
 ### Remarks
 
-Call this function if calls to underlying system memory allocators (such as **malloc** and the [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) Windows function) fail. You do not need to call it for **new** because **new** will throw a memory exception automatically if the memory allocation fails.
+Call this function if calls to underlying system memory allocators (such as **malloc** and the [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) Windows function) fail. You do not need to call it for **`new`** because **`new`** will throw a memory exception automatically if the memory allocation fails.
 
 ### Requirements
 

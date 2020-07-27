@@ -37,7 +37,7 @@ To consume the Microsoft Standard Library module, compile your program with [/EH
 
 ## Basic example
 
-The following example shows a simple module definition in a source file called **Foo.ixx**. The **.ixx** extension is required for module interface files in Visual Studio. In this example, the interface file contains the function definition as well as the declaration. However, the definitions can be also placed in one or more separate files (as shown in a later example). The **export module Foo** statement indicates that this file is the primary interface for a module called `Foo`. The **export** modifier on `f()` indicates that this function will be visible when `Foo` is imported by another program or module. Note that the module references a namespace `Bar`.
+The following example shows a simple module definition in a source file called **Foo.ixx**. The **.ixx** extension is required for module interface files in Visual Studio. In this example, the interface file contains the function definition as well as the declaration. However, the definitions can be also placed in one or more separate files (as shown in a later example). The **export module Foo** statement indicates that this file is the primary interface for a module called `Foo`. The **`export`** modifier on `f()` indicates that this function will be visible when `Foo` is imported by another program or module. Note that the module references a namespace `Bar`.
 
 ```cpp
 export module Foo;
@@ -78,7 +78,7 @@ The import declaration can appear only at global scope.
 
 ## Implementing modules
 
-You can create a module with a single interface file (.ixx) that exports names and includes implementations of all functions and types. You can also put the implementations in one or more separate implementation files, similar to how .h and .cpp files are used. The **export** keyword is used in the interface file only. An implementation file can **import** another module, but cannot **export** any names. Implementation files may be named with any extension. An interface file and the set of implementation files that back it are treated as a special kind of translation unit called a *module unit*. A name that is declared in any implementation file is automatically visible in all other files within the same module unit.
+You can create a module with a single interface file (.ixx) that exports names and includes implementations of all functions and types. You can also put the implementations in one or more separate implementation files, similar to how .h and .cpp files are used. The **`export`** keyword is used in the interface file only. An implementation file can **import** another module, but cannot **`export`** any names. Implementation files may be named with any extension. An interface file and the set of implementation files that back it are treated as a special kind of translation unit called a *module unit*. A name that is declared in any implementation file is automatically visible in all other files within the same module unit.
 
 For larger modules, you can split the module into multiple module units called *partitions*. Each partition consists of an interface file backed by one or more implementation files. (As of Visual Studio 2019 version 16.2, partitions are not yet fully implemented.)
 

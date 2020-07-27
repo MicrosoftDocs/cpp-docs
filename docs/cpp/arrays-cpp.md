@@ -37,7 +37,7 @@ In a C++ array declaration, the array size is specified after the variable name,
 
 The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. It is your responsibility to ensure that your program never passes a value to the subscript operator that is greater than `(size - 1)`.
 
-A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
+A zero-sized array is legal only when the array is the last field in a **`struct`** or **`union`** and when the Microsoft extensions (/Ze) are enabled.
 
 Stack-based arrays are faster to allocate and access than heap-based arrays, but the number of elements can't be so large that it uses up too much stack memory. How much is too much depends on your program. You can use profiling tools to determine whether an array is too large.
 
@@ -122,9 +122,9 @@ You can initialize an array in a loop, one element at a time, or in a single sta
 
 ## Passing arrays to functions
 
-When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. This behavior also implies that the array elements are not copied when the array is passed to a function. To prevent the function from modifying the elements, specify the parameter as a pointer to **const** elements.
+When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. This behavior also implies that the array elements are not copied when the array is passed to a function. To prevent the function from modifying the elements, specify the parameter as a pointer to **`const`** elements.
 
-The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter is not **const**, the function can modify the array elements.
+The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter is not **`const`**, the function can modify the array elements.
 
 ```cpp
 void process(double p*, const size_t len)
@@ -161,7 +161,7 @@ Arrays constructed from other arrays are multidimensional arrays. These multidim
 int i2[5][7];
 ```
 
-It specifies an array of type **int**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:
+It specifies an array of type **`int`**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:
 
 ![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "Conceptual layout of a multi&#45;dimensional array") <br/>
 Conceptual layout of a multi-dimensional array
@@ -274,7 +274,7 @@ int main()
 
 The first element of `aPoint` is constructed using the constructor `Point( int, int )`; the remaining two elements are constructed using the default constructor.
 
-Static member arrays (whether **const** or not) can be initialized in their definitions (outside the class declaration). For example:
+Static member arrays (whether **`const`** or not) can be initialized in their definitions (outside the class declaration). For example:
 
 ```cpp
 // initializing_arrays2.cpp
@@ -327,7 +327,7 @@ int main() {
 }
 ```
 
-In the preceding code, `multi` is a three-dimensional array of type **double**. The `p2multi` pointer points to an array of type **double** of size three. In this example, the array is used with one, two, and three subscripts. Although it is more common to specify all subscripts, as in the `cout` statement, it is sometimes useful to select a specific subset of array elements, as shown in the statements that follow `cout`.
+In the preceding code, `multi` is a three-dimensional array of type **`double`**. The `p2multi` pointer points to an array of type **`double`** of size three. In this example, the array is used with one, two, and three subscripts. Although it is more common to specify all subscripts, as in the `cout` statement, it is sometimes useful to select a specific subset of array elements, as shown in the statements that follow `cout`.
 
 ## Overloading subscript operator
 
@@ -343,7 +343,7 @@ Similarly, for multidimensional arrays, the address is derived using the followi
 
 ## Arrays in Expressions
 
-When an identifier of an array type appears in an expression other than `sizeof`, address-of (`&`), or initialization of a reference, it is converted to a pointer to the first array element. For example:
+When an identifier of an array type appears in an expression other than **`sizeof`**, address-of (`&`), or initialization of a reference, it is converted to a pointer to the first array element. For example:
 
 ```cpp
 char szError1[] = "Error: Disk drive not ready.";

@@ -199,7 +199,7 @@ A COM interface pointer.
 
 ### Remarks
 
-The no-argument constructor assigns `nullptr` to the underlying object handle. Future calls to the `com::ptr` will validate the internal object and silently fail until an object is created or attached.
+The no-argument constructor assigns **`nullptr`** to the underlying object handle. Future calls to the `com::ptr` will validate the internal object and silently fail until an object is created or attached.
 
 The one-argument constructor adds a reference to the COM object but doesn't release the caller's reference, so the caller must call `Release` on the COM object to truly give up control. When the `com::ptr`'s destructor is called it will automatically release its references on the COM object.
 
@@ -282,7 +282,7 @@ On destruction, the `com::ptr` releases all references it owns to its COM object
 
 ### Example
 
-This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object.  In the `main` function, the two `XmlDocument` objects' destructors will be called when they go out of the scope of the `try` block, resulting in the underlying `com::ptr` destructor being called, releasing all owned references to the COM object.
+This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object.  In the `main` function, the two `XmlDocument` objects' destructors will be called when they go out of the scope of the **`try`** block, resulting in the underlying `com::ptr` destructor being called, releasing all owned references to the COM object.
 
 ```cpp
 // comptr_dtor.cpp
@@ -950,7 +950,7 @@ void Release();
 
 ### Remarks
 
-Calling this function releases all owned references on the COM object and sets the internal handle to the COM object to `nullptr`.  If no other references on the COM object exist, it will be destroyed.
+Calling this function releases all owned references on the COM object and sets the internal handle to the COM object to **`nullptr`**.  If no other references on the COM object exist, it will be destroyed.
 
 ### Example
 
@@ -1285,13 +1285,13 @@ operator bool();
 
 ### Return value
 
-`true` if the owned COM object is valid; `false` otherwise.
+**`true`** if the owned COM object is valid; **`false`** otherwise.
 
 ### Remarks
 
-The owned COM object is valid if it's not `nullptr`.
+The owned COM object is valid if it's not **`nullptr`**.
 
-This operator converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+This operator converts to `_detail_class::_safe_bool` which is safer than **`bool`** because it can't be converted to an integral type.
 
 ### Example
 
@@ -1356,11 +1356,11 @@ bool operator!();
 
 ### Return value
 
-`true` if the owned COM object is invalid; `false` otherwise.
+**`true`** if the owned COM object is invalid; **`false`** otherwise.
 
 ### Remarks
 
-The owned COM object is valid if it's not `nullptr`.
+The owned COM object is valid if it's not **`nullptr`**.
 
 ### Example
 

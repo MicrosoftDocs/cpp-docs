@@ -34,7 +34,7 @@ Pointer to the `VARIANT` to be compared with the `_variant_t` object.
 
 ## Return Value
 
-Returns **true** if comparison holds, **false** if not.
+Returns **`true`** if comparison holds, **`false`** if not.
 
 ## Remarks
 

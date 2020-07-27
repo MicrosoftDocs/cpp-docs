@@ -20,7 +20,7 @@ public ref class Platform::Type :
 
 ### Remarks
 
-The `Type` class is useful in applications that must direct processing by using an `if` or `switch` statement that branches based on the run-time type of an object. The type code that describes the category of a type is retrieved by using the [Type::GetTypeCode](#gettypecode) member function.
+The `Type` class is useful in applications that must direct processing by using an **`if`** or **`switch`** statement that branches based on the run-time type of an object. The type code that describes the category of a type is retrieved by using the [Type::GetTypeCode](#gettypecode) member function.
 
 ## Public methods
 
@@ -95,7 +95,7 @@ One of the Platform::TypeCode enumerated values.
 
 ### Remarks
 
-The equivalent of the GetTypeCode() member method is the `typeid` property.
+The equivalent of the GetTypeCode() member method is the **`typeid`** property.
 
 ## <a name="tostring"></a> Type::ToString Method
 

@@ -163,7 +163,7 @@ ATL_NO_VTABLE
 
 ### Remarks
 
-If the vtable pointer is prevented from being initialized in the class's constructor and destructor, the linker can eliminate the vtable and all of the functions to which it points. Expands to **__declspec(novtable)**.
+If the vtable pointer is prevented from being initialized in the class's constructor and destructor, the linker can eliminate the vtable and all of the functions to which it points. Expands to **`__declspec(novtable)`**.
 
 ### Example
 
@@ -188,7 +188,7 @@ The function that should not be inlined.
 
 ### Remarks
 
-Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to **__declspec(noinline)**.
+Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to **`__declspec(noinline)`**.
 
 ## <a name="_atl_single_threaded"></a> _ATL_SINGLE_THREADED
 

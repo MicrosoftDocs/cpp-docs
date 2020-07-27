@@ -126,7 +126,7 @@ DECLARE_MESSAGE_MAP( )
 Use the DECLARE_MESSAGE_MAP macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the BEGIN_MESSAGE_MAP macro, macro entries for each of your message-handler functions, and the END_MESSAGE_MAP macro.
 
 > [!NOTE]
-> If you declare any member after DECLARE_MESSAGE_MAP, you must specify a new access type (**public**, **private**, or **protected**) for them.
+> If you declare any member after DECLARE_MESSAGE_MAP, you must specify a new access type (**`public`**, **`private`**, or **`protected`**) for them.
 
 For more information on message maps and the DECLARE_MESSAGE_MAP macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).
 

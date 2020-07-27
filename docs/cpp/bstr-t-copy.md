@@ -20,7 +20,7 @@ BSTR copy( bool fCopy = true ) const;
 #### Parameters
 
 *fCopy*<br/>
-If TRUE, **copy** returns a copy of the contained `BSTR`, otherwise **copy** returns the actual BSTR.
+If **`true`**, **copy** returns a copy of the contained `BSTR`, otherwise **copy** returns the actual BSTR.
 
 ## Remarks
 

@@ -83,7 +83,7 @@ An object of class **basic_ios\<class Elem, class Traits>** stores:
 
 |Operator|Description|
 |-|-|
-|[explicit operator bool](#op_bool)|Allows use of a `basic_ios` object as a **bool**. Automatic type conversion is disabled to prevent common, unintended side effects.|
+|[explicit operator bool](#op_bool)|Allows use of a `basic_ios` object as a **`bool`**. Automatic type conversion is disabled to prevent common, unintended side effects.|
 |[operator void *](#op_void_star)|Indicates if the stream is still good.|
 |[operator!](#op_not)|Indicates if the stream is not bad.|
 
@@ -103,7 +103,7 @@ bool bad() const;
 
 ### Return Value
 
-**true** if `rdstate & badbit` is nonzero; otherwise **false**.
+**`true`** if `rdstate & badbit` is nonzero; otherwise **`false`**.
 
 For more information on `badbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -167,7 +167,7 @@ void clear(io_state state);
 (Optional) The flags you want to set after clearing all flags. Defaults to `goodbit`.
 
 *reraise*\
-(Optional) Specifies whether the exception should be re-raised. Defaults to **false** (will not re-raise the exception).
+(Optional) Specifies whether the exception should be re-raised. Defaults to **`false`** (will not re-raise the exception).
 
 ### Remarks
 
@@ -199,7 +199,7 @@ The stream whose flags you want to copy.
 
 ### Return Value
 
-The **this** object for the stream to which you are copying the flags.
+The **`this`** object for the stream to which you are copying the flags.
 
 ### Remarks
 
@@ -236,11 +236,11 @@ bool eof() const;
 
 ### Return Value
 
-**true** if the end of the stream has been reached, **false** otherwise.
+**`true`** if the end of the stream has been reached, **`false`** otherwise.
 
 ### Remarks
 
-The member function returns **true** if [rdstate](#rdstate) `& eofbit` is nonzero. For more information on `eofbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
+The member function returns **`true`** if [rdstate](#rdstate) `& eofbit` is nonzero. For more information on `eofbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
 ### Example
 
@@ -333,7 +333,7 @@ bool fail() const;
 
 ### Return Value
 
-**true** if [rdstate](#rdstate) `& (badbit|failbit)` is nonzero, otherwise **false**.
+**`true`** if [rdstate](#rdstate) `& (badbit|failbit)` is nonzero, otherwise **`false`**.
 
 For more information on `failbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -410,7 +410,7 @@ bool good() const;
 
 ### Return Value
 
-**true** if [rdstate](#rdstate) `== goodbit` (no state flags are set), otherwise, **false**.
+**`true`** if [rdstate](#rdstate) `== goodbit` (no state flags are set), otherwise, **`false`**.
 
 For more information on `goodbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -524,7 +524,7 @@ The `ios_base` object to move values from.
 
 ### Remarks
 
-The protected member function moves all the values stored in *right* to `*this` except the stored `stream buffer pointer`, which is unchanged in *right* and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in *right*.
+The protected member function moves all the values stored in *right* to **`*this`** except the stored `stream buffer pointer`, which is unchanged in *right* and set to a null pointer in **`*this`**. The stored `tie pointer` is set to a null pointer in *right*.
 
 ## <a name="narrow"></a> basic_ios::narrow
 
@@ -537,14 +537,14 @@ char narrow(char_type Char, char Default = '\0') const;
 ### Parameters
 
 *Char*\
-The **char** to convert.
+The **`char`** to convert.
 
 *Default*\
-The **char** that you want returned if no equivalent is found.
+The **`char`** that you want returned if no equivalent is found.
 
 ### Return Value
 
-The equivalent **char** to a given `char_type`.
+The equivalent **`char`** to a given `char_type`.
 
 ### Remarks
 
@@ -641,7 +641,7 @@ int main( )
 
 ## <a name="op_bool"></a> basic_ios::operator bool
 
-Allows use of a `basic_ios` object as a **bool**. Automatic type conversion is disabled to prevent common, unintended side effects.
+Allows use of a `basic_ios` object as a **`bool`**. Automatic type conversion is disabled to prevent common, unintended side effects.
 
 ```cpp
 explicit operator bool() const;
@@ -649,7 +649,7 @@ explicit operator bool() const;
 
 ### Remarks
 
-The operator returns a value convertible to **false** only if `fail()`. The return type is convertible only to **bool**, not to `void *` or other known scalar type.
+The operator returns a value convertible to **`false`** only if `fail()`. The return type is convertible only to **`bool`**, not to `void *` or other known scalar type.
 
 ## <a name="pos_type"></a> basic_ios::pos_type
 
@@ -871,7 +871,7 @@ typedef Traits traits_type;
 
 ## <a name="widen"></a> basic_ios::widen
 
-Finds the equivalent `char_type` to a given **char**.
+Finds the equivalent `char_type` to a given **`char`**.
 
 ```cpp
 char_type widen(char Char) const;
@@ -884,7 +884,7 @@ The character to convert.
 
 ### Return Value
 
-Finds the equivalent `char_type` to a given **char**.
+Finds the equivalent `char_type` to a given **`char`**.
 
 ### Remarks
 
@@ -925,7 +925,7 @@ The `basic_ios` object that is used to exchange values.
 
 ### Remarks
 
-The protected member function exchanges all the values stored in *right* with `*this` except the stored `stream buffer pointer`.
+The protected member function exchanges all the values stored in *right* with **`*this`** except the stored `stream buffer pointer`.
 
 ## See also
 

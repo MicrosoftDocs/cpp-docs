@@ -43,7 +43,7 @@ Pointer to a buffer containing the absolute or full path name, or **NULL**.
 Relative path name.
 
 *maxLength*<br/>
-Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for **_fullpath** but in wide characters (**wchar_t**) for **_wfullpath**.
+Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for **_fullpath** but in wide characters (**`wchar_t`**) for **_wfullpath**.
 
 *blockType*<br/>
 Requested type of memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.

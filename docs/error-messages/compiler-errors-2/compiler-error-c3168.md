@@ -9,7 +9,7 @@ ms.assetid: 4c36fcfb-c351-48ff-b4eb-78d2aa1b4d55
 
 'type' : illegal underlying type for enum
 
-The underlying type you specified for the `enum` type was not valid. The underlying type must be an integral C++ type or a corresponding CLR type.
+The underlying type you specified for the **`enum`** type was not valid. The underlying type must be an integral C++ type or a corresponding CLR type.
 
 The following sample generates C3168:
 

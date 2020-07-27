@@ -131,7 +131,7 @@ explicit _com_ptr_t(
 A raw interface pointer.
 
 *fAddRef*<br/>
-If TRUE, `AddRef` is called to increment the reference count of the encapsulated interface pointer.
+If **`true`**, `AddRef` is called to increment the reference count of the encapsulated interface pointer.
 
 *cp*<br/>
 A **_com_ptr_t** object.

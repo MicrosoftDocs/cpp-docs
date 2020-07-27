@@ -9,7 +9,7 @@ ms.assetid: e53a77b7-825c-42d1-a655-90e1c93b833e
 
 'identifier' : const object must be initialized if not extern
 
-The identifier is declared `const` but not initialized or `extern`.
+The identifier is declared **`const`** but not initialized or **`extern`**.
 
 The following sample generates C2734:
 

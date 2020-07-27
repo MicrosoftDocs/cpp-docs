@@ -9,7 +9,7 @@ ms.assetid: 26d581cc-2153-4ee0-b814-a371184be3e1
 
 'method': an non-managed event source method must return void or an integral type
 
-You defined a method in the event source that did not return void or an integral type. To fix this error, make the event and event handler have a return type of `void` or an integral type such as `int` or `long`.
+You defined a method in the event source that did not return void or an integral type. To fix this error, make the event and event handler have a return type of **`void`** or an integral type such as **`int`** or **`long`**.
 
 The following sample generates C3711:
 

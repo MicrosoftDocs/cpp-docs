@@ -71,7 +71,7 @@ BoolType BoolType();
 
 ## <a name="resolve"></a> WeakReference::Resolve Method (Platform namespace)
 
-Returns a handle to the original ref class, or `nullptr` if the object no longer exists.
+Returns a handle to the original ref class, or **`nullptr`** if the object no longer exists.
 
 ### Syntax
 

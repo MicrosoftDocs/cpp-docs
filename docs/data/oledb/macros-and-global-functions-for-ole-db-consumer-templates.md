@@ -114,7 +114,7 @@ BEGIN_ACCESSOR(num, bAuto)
 [in] The zero-offset number for the accessor in this accessor map.
 
 *bAuto*<br/>
-[in] Specifies if this accessor is an auto accessor or a manual accessor. If **true**, the accessor is auto; if **false**, the accessor is manual. An auto accessor means data is fetched for you on move operations.
+[in] Specifies if this accessor is an auto accessor or a manual accessor. If **`true`**, the accessor is auto; if **`false`**, the accessor is manual. An auto accessor means data is fetched for you on move operations.
 
 #### Remarks
 

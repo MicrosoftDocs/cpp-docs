@@ -118,7 +118,7 @@ Following is a list of potential message-map entries and a description of the ca
 
 If you create a `CListBox` object within a dialog box (through a dialog resource), the `CListBox` object is automatically destroyed when the user closes the dialog box.
 
-If you create a `CListBox` object within a window, you may need to destroy the `CListBox` object. If you create the `CListBox` object on the stack, it is destroyed automatically. If you create the `CListBox` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the user closes the parent window.
+If you create a `CListBox` object within a window, you may need to destroy the `CListBox` object. If you create the `CListBox` object on the stack, it is destroyed automatically. If you create the `CListBox` object on the heap by using the **`new`** function, you must call **`delete`** on the object to destroy it when the user closes the parent window.
 
 If you allocate any memory in the `CListBox` object, override the `CListBox` destructor to dispose of the allocation.
 
@@ -373,7 +373,7 @@ int Dir(
 ### Parameters
 
 *attr*<br/>
-Can be any combination of the **enum** values described in `CFile::GetStatu`[s](../../mfc/reference/cfile-class.md#getstatus), or any combination of the following values:
+Can be any combination of the **`enum`** values described in `CFile::GetStatu`[s](../../mfc/reference/cfile-class.md#getstatus), or any combination of the following values:
 
 |Value|Meaning|
 |-----------|-------------|
@@ -611,7 +611,7 @@ The doubleword value was the *dwItemData* parameter of a [SetItemData](#setitemd
 
 ## <a name="getitemdataptr"></a> CListBox::GetItemDataPtr
 
-Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer (**void** <strong>\*</strong>).
+Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer (**`void`** <strong>\*</strong>).
 
 ```cpp
 void* GetItemDataPtr(int nIndex) const;
@@ -1211,7 +1211,7 @@ LB_ERR if an error occurs.
 
 ## <a name="setitemdataptr"></a> CListBox::SetItemDataPtr
 
-Sets the 32-bit value associated with the specified item in a list box to be the specified pointer ( **void** <strong>\*</strong>).
+Sets the 32-bit value associated with the specified item in a list box to be the specified pointer ( **`void`** <strong>\*</strong>).
 
 ```
 int SetItemDataPtr(

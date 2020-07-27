@@ -36,7 +36,7 @@ All these methods can be used in the same program. When LINK builds a program th
 LINK uses decorated forms of identifiers. The compiler decorates an identifier when it creates the .obj file. If *entryname* is specified to the linker in its undecorated form (as it appears in the source code), LINK attempts to match the name. If it cannot find a unique match, LINK issues an error message. Use the [DUMPBIN](dumpbin-reference.md) tool to get the [decorated name](decorated-names.md) form of an identifier when you need to specify it to the linker.
 
 > [!NOTE]
-> Do not specify the decorated form of C identifiers that are declared `__cdecl` or `__stdcall`.
+> Do not specify the decorated form of C identifiers that are declared **`__cdecl`** or **`__stdcall`**.
 
 If you need to export an undecorated function name, and have different exports depending on the build configuration (for example, in 32-bit or 64-bit builds), you can use different DEF files for each configuration. (Preprocessor conditional directives are not allowed in DEF files.) As an alternative, you can use a `#pragma comment` directive before a function declaration as shown here, where `PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
 

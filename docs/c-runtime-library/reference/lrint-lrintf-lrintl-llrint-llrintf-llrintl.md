@@ -72,7 +72,7 @@ If successful, returns the rounded integral value of *x*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **lrint** and **llrint** that take **float** and **long** **double** types. In a C program, **lrint** and **llrint** always take a **double**.
+Because C++ allows overloading, you can call overloads of **lrint** and **llrint** that take **`float`** and **`long double`** types. In a C program, **lrint** and **llrint** always take a **`double`**.
 
 If *x* does not represent the floating-point equivalent of an integral value, these functions raise **FE_INEXACT**.
 

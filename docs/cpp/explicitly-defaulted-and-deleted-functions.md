@@ -37,7 +37,7 @@ This is convenient for simple types, but complex types often define one or more 
 >
 > In both cases, Visual Studio continues to automatically generate the necessary functions implicitly, and does not emit a warning.
 
-The consequences of these rules can also leak into object hierarchies. For example, if for any reason a base class fails to have a default constructor that's callable from a deriving class—that is, a **public** or **protected** constructor that takes no parameters—then a class that derives from it cannot automatically generate its own default constructor.
+The consequences of these rules can also leak into object hierarchies. For example, if for any reason a base class fails to have a default constructor that's callable from a deriving class—that is, a **`public`** or **`protected`** constructor that takes no parameters—then a class that derives from it cannot automatically generate its own default constructor.
 
 These rules can complicate the implementation of what should be straight-forward, user-defined types and common C++ idioms—for example, making a user-defined type non-copyable by declaring the copy constructor and copy-assignment operator privately and not defining them.
 
@@ -126,7 +126,7 @@ void call_with_true_double_only(float) =delete;
 void call_with_true_double_only(double param) { return; }
 ```
 
-Notice in the preceding sample that calling `call_with_true_double_only` by using a **float** argument would cause a compiler error, but calling `call_with_true_double_only` by using an **int** argument would not; in the **int** case, the argument will be promoted from **int** to **double** and successfully call the **double** version of the function, even though that might not be what's intended. To ensure that any call to this function by using a non-double argument causes a compiler error, you can declare a template version of the function that's deleted.
+Notice in the preceding sample that calling `call_with_true_double_only` by using a **`float`** argument would cause a compiler error, but calling `call_with_true_double_only` by using an **`int`** argument would not; in the **`int`** case, the argument will be promoted from **`int`** to **`double`** and successfully call the **`double`** version of the function, even though that might not be what's intended. To ensure that any call to this function by using a non-double argument causes a compiler error, you can declare a template version of the function that's deleted.
 
 ```cpp
 template < typename T >

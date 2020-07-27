@@ -67,7 +67,7 @@ This article covers:
 
 1. Destroy the `CAsyncSocket` object.
 
-   If you created the socket object on the stack, its destructor is called when the containing function goes out of scope. If you created the socket object on the heap, using the **new** operator, you are responsible for using the **delete** operator to destroy the object.
+   If you created the socket object on the stack, its destructor is called when the containing function goes out of scope. If you created the socket object on the heap, using the **`new`** operator, you are responsible for using the **`delete`** operator to destroy the object.
 
    The destructor calls the object's [Close](../mfc/reference/casyncsocket-class.md#close) member function before destroying the object.
 

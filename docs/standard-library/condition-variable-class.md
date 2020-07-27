@@ -91,7 +91,7 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Remarks
 
@@ -130,7 +130,7 @@ A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Return Value
 
@@ -188,13 +188,13 @@ A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 A [chrono::time_point](../standard-library/time-point-class.md) object.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Return Value
 
 Methods that return a `cv_status` type return `cv_status::timeout` if the wait terminates when *Abs_time* elapses. Otherwise, the methods return `cv_status::no_timeout`.
 
-Methods that return a **bool** return the value of *Pred*.
+Methods that return a **`bool`** return the value of *Pred*.
 
 ### Remarks
 

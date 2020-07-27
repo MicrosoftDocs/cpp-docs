@@ -10,7 +10,7 @@ The source character set of C source programs is contained within the 7-bit ASCI
 
 C++17 removes trigraphs from the language. Implementations may continue to support trigraphs as part of the  implementation-defined mapping from the physical source file to the *basic source character set*, though the standard encourages implementations not to do so. Through C++14, trigraphs are supported as in C.
 
-Visual C++  continues to support trigraph substitution, but it's disabled by default. For information on how to enable trigraph substitution, see [/Zc:trigraphs (Trigraphs Substitution)](../build/reference/zc-trigraphs-trigraphs-substitution.md).
+Visual C++  continues to support trigraph substitution, but it's disabled by default. For information on how to enable trigraph substitution, see [`/Zc:trigraphs` (Trigraphs Substitution)](../build/reference/zc-trigraphs-trigraphs-substitution.md).
 
 The following table shows the nine trigraph sequences. All occurrences in a source file of the punctuation characters in the first column are replaced with the corresponding character in the second column.
 
@@ -18,19 +18,19 @@ The following table shows the nine trigraph sequences. All occurrences in a sour
 
 | Trigraph | Punctuation Character |
 |----------|-----------------------|
-| ??= | # |
-| ??( | \[ |
-| ??/ | \\ |
-| ??) | ] |
-| ??' | ^ |
-| ??\< | { |
-| ??! | &#124; |
-| ??> | } |
-| ??- | ~ |
+| `??=` | `#` |
+| `??(` | `[` |
+| `??/` | `\` |
+| `??)` | `]` |
+| `??'` | `^` |
+| `??<` | `{` |
+| `??!` | `|` |
+| `??>` | `}` |
+| `??-` | `~` |
 
 A trigraph is always treated as a single source character. The translation of trigraphs takes place in the first [translation phase](../preprocessor/phases-of-translation.md), before the recognition of escape characters in string literals and character constants. Only the nine trigraphs shown in the above table are recognized. All other character sequences are left untranslated.
 
-The character escape sequence, **\\?**, prevents the misinterpretation of trigraph-like character sequences. (For information about escape sequences, see [Escape Sequences](../c-language/escape-sequences.md).) For example, if you attempt to print the string `What??!` with this `printf` statement
+The character escape sequence, **`\?`**, prevents the misinterpretation of trigraph-like character sequences. (For information about escape sequences, see [Escape Sequences](../c-language/escape-sequences.md).) For example, if you attempt to print the string `What??!` with this `printf` statement
 
 ```C
 printf( "What??!\n" );
@@ -46,5 +46,5 @@ In this `printf` statement, a backslash escape character in front of the second 
 
 ## See also
 
-[/Zc:trigraphs (Trigraphs Substitution)](../build/reference/zc-trigraphs-trigraphs-substitution.md)<br/>
+[`/Zc:trigraphs` (Trigraphs Substitution)](../build/reference/zc-trigraphs-trigraphs-substitution.md)<br/>
 [C Identifiers](../c-language/c-identifiers.md)

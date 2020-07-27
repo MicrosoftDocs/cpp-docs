@@ -11,7 +11,7 @@ ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
 ---
 # assert Macro, _assert, _wassert
 
-Evaluates an expression and, when the result is **false**, prints a diagnostic message and aborts the program.
+Evaluates an expression and, when the result is **`false`**, prints a diagnostic message and aborts the program.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ void _wassert(
 ### Parameters
 
 *expression*<br/>
-A scalar expression (including pointer expressions) that evaluates to nonzero (**true**) or 0 (**false**).
+A scalar expression (including pointer expressions) that evaluates to nonzero (**`true`**) or 0 (**`false`**).
 
 *message*<br/>
 The message to display.
@@ -47,9 +47,9 @@ The line number in the source file of the failed assertion.
 
 ## Remarks
 
-The **assert** macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the *expression* argument to evaluate to **false** only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro **NDEBUG**. You can turn off the **assert** macro without modifying your source files by using a **/DNDEBUG** command-line option. You can turn off the **assert** macro in your source code by using a `#define NDEBUG` directive before \<assert.h> is included.
+The **assert** macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the *expression* argument to evaluate to **`false`** only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro **NDEBUG**. You can turn off the **assert** macro without modifying your source files by using a **/DNDEBUG** command-line option. You can turn off the **assert** macro in your source code by using a `#define NDEBUG` directive before \<assert.h> is included.
 
-The **assert** macro prints a diagnostic message when *expression* evaluates to **false** (0) and calls [abort](abort.md) to terminate program execution. No action is taken if *expression* is **true** (nonzero). The diagnostic message includes the failed expression, the name of the source file and line number where the assertion failed.
+The **assert** macro prints a diagnostic message when *expression* evaluates to **`false`** (0) and calls [abort](abort.md) to terminate program execution. No action is taken if *expression* is **`true`** (nonzero). The diagnostic message includes the failed expression, the name of the source file and line number where the assertion failed.
 
 The diagnostic message is printed in wide characters. Thus, it will work as expected even if there are Unicode characters in the expression.
 

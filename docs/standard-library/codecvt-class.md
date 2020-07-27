@@ -31,7 +31,7 @@ A type that can be used to represent intermediate states of a conversion between
 
 The class template describes an object that can serve as a [locale facet](../standard-library/locale-class.md#facet_class), to control conversions between a sequence of values of type *CharType* and a sequence of values of type *Byte*. The class *StateType* characterizes the transformation -- and an object of class *StateType* stores any necessary state information during a conversion.
 
-The internal encoding uses a representation with a fixed number of bytes per character, usually either type **char** or type **wchar_t**.
+The internal encoding uses a representation with a fixed number of bytes per character, usually either type **`char`** or type **`wchar_t`**.
 
 As with any locale facet, the static object `id` has an initial stored value of zero. The first attempt to access its stored value stores a unique positive value in `id`.
 
@@ -44,21 +44,21 @@ template<>
 codecvt<wchar_t, char, mbstate_t>
 ```
 
-converts between **wchar_t** and **char** sequences.
+converts between **`wchar_t`** and **`char`** sequences.
 
 ```cpp
 template<>
 codecvt<char16_t, char, mbstate_t>
 ```
 
-converts between `char16_t` sequences encoded as UTF-16 and **char** sequences encoded as UTF-8.
+converts between **`char16_t`** sequences encoded as UTF-16 and **`char`** sequences encoded as UTF-8.
 
 ```cpp
 template<>
 codecvt<char32_t, char, mbstate_t>
 ```
 
-converts between `char32_t` sequences encoded as UTF-32 (UCS-4) and **char** sequences encoded as UTF-8.
+converts between **`char32_t`** sequences encoded as UTF-32 (UCS-4) and **`char`** sequences encoded as UTF-8.
 
 ### Constructors
 
@@ -109,7 +109,7 @@ bool always_noconv() const throw();
 
 ### Return Value
 
-A Boolean value that is **true** if no conversions need to be done; **false** if at least one needs to be done.
+A Boolean value that is **`true`** if no conversions need to be done; **`false`** if at least one needs to be done.
 
 ### Remarks
 
@@ -185,9 +185,9 @@ virtual bool do_always_noconv() const throw();
 
 ### Return Value
 
-The protected virtual member function returns **true** only if every call to [do_in](#do_in) or [do_out](#do_out) returns `noconv`.
+The protected virtual member function returns **`true`** only if every call to [do_in](#do_in) or [do_out](#do_out) returns `noconv`.
 
-The template version always returns **true**.
+The template version always returns **`true`**.
 
 ### Example
 

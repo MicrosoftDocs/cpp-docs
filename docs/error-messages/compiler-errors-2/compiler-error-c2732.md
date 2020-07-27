@@ -13,7 +13,7 @@ The function is already declared with a different linkage specifier.
 
 This error can be caused by include files with different linkage specifiers.
 
-To fix this error, change the `extern` statements so that the linkages agree. In particular, do not wrap `#include` directives in `extern "C"` blocks.
+To fix this error, change the **`extern`** statements so that the linkages agree. In particular, do not wrap `#include` directives in `extern "C"` blocks.
 
 ## Example
 

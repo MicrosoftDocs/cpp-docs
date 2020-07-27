@@ -41,7 +41,7 @@ Storage location for the path, or **NULL**.
 If **NULL** is specified, this function allocates a buffer of at least *maxlen* size by using **malloc**, and the return value of **_getdcwd** is a pointer to the allocated buffer. The buffer can be freed by calling **free** and passing it the pointer.
 
 *maxlen*<br/>
-A nonzero positive integer that specifies the maximum length of the path, in characters: **char** for **_getdcwd** and **wchar_t** for **_wgetdcwd**.
+A nonzero positive integer that specifies the maximum length of the path, in characters: **`char`** for **_getdcwd** and **`wchar_t`** for **_wgetdcwd**.
 
 If *maxlen* is less than or equal to zero, the invalid-parameter handler is invoked. For more information, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 

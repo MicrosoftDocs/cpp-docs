@@ -40,7 +40,7 @@ Disk drive.
 Storage location for the path.
 
 *maxlen*<br/>
-Maximum length of path in characters: **char** for **_getdcwd** and **wchar_t** for **_wgetdcwd**.
+Maximum length of path in characters: **`char`** for **_getdcwd** and **`wchar_t`** for **_wgetdcwd**.
 
 ## Return Value
 

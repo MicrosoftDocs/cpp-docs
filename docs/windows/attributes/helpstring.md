@@ -34,7 +34,7 @@ See the example for [defaultvalue](defaultvalue.md) for an example of how to use
 
 |||
 |-|-|
-|**Applies to**|**interface**, **typedef**, **class**, method, property|
+|**Applies to**|**interface**, **`typedef`**, **`class`**, method, property|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

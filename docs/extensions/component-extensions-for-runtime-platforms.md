@@ -32,18 +32,18 @@ The following table lists keywords in the C++ language extension.
 |**value class**<br /><br /> **value struct**|No|Declares a value class.|[Classes and Structs](classes-and-structs-cpp-component-extensions.md)|
 |**interface class**<br /><br /> **interface struct**|No|Declares an interface.|[interface class](interface-class-cpp-component-extensions.md)|
 |**enum class**<br /><br /> **enum struct**|No|Declares an enumeration.|[enum class](enum-class-cpp-component-extensions.md)|
-|**property**|Yes|Declares a property.|[property](property-cpp-component-extensions.md)|
+|**`property`**|Yes|Declares a property.|[property](property-cpp-component-extensions.md)|
 |**delegate**|Yes|Declares a delegate.|[delegate  (C++/CLI and C++/CX)](delegate-cpp-component-extensions.md)|
 |**event**|Yes|Declares an event.|[event](event-cpp-component-extensions.md)|
 
 ## Override Specifiers
 
-You can use the following keywords to qualify override behavior for derivation. Although the **new** keyword is not an extension of C++, it is listed here because it can be used in an additional context. Some specifiers are also valid for native programming. For more information, see [How to: Declare Override Specifiers in Native Compilations (C++/CLI)](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
+You can use the following keywords to qualify override behavior for derivation. Although the **`new`** keyword is not an extension of C++, it is listed here because it can be used in an additional context. Some specifiers are also valid for native programming. For more information, see [How to: Declare Override Specifiers in Native Compilations (C++/CLI)](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
 |Keyword|Context Sensitive|Purpose|Reference|
 |-------------|-----------------------|-------------|---------------|
 |**abstract**|Yes|Indicates that functions or classes are abstract.|[abstract](abstract-cpp-component-extensions.md)|
-|**new**|No|Indicates that a function is not an override of a base class version.|[new (new slot in vtable)](new-new-slot-in-vtable-cpp-component-extensions.md)|
+|**`new`**|No|Indicates that a function is not an override of a base class version.|[new (new slot in vtable)](new-new-slot-in-vtable-cpp-component-extensions.md)|
 |**override**|Yes|Indicates that a method must be an override of a base-class version.|[override](override-cpp-component-extensions.md)|
 |**sealed**|Yes|Prevents classes from being used as base classes.|[sealed](sealed-cpp-component-extensions.md)|
 
@@ -64,11 +64,11 @@ The following keywords have been added to the C++ extensions.
 |-------------|-----------------------|-------------|---------------|
 |**finally**|Yes|Indicates default exception handlings behavior.|[Exception Handling](exception-handling-cpp-component-extensions.md)|
 |**for each, in**|No|Enumerates elements of a collection.|[for each, in](../dotnet/for-each-in.md)|
-|**gcnew**|No|Allocates types on the garbage-collected heap. Use instead of **new** and **delete**.|[ref new, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
-|**ref new**|Yes|Allocates a Windows Runtime type. Use instead of **new** and **delete**.|[ref new, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
+|**gcnew**|No|Allocates types on the garbage-collected heap. Use instead of **`new`** and **`delete`**.|[ref new, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
+|**ref new**|Yes|Allocates a Windows Runtime type. Use instead of **`new`** and **`delete`**.|[ref new, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
 |**initonly**|Yes|Indicates that a member can only be initialized at declaration or in a static constructor.|[initonly (C++/CLI)](../dotnet/initonly-cpp-cli.md)|
 |**literal**|Yes|Creates a literal variable.|[literal](literal-cpp-component-extensions.md)|
-|**nullptr**|No|Indicates that a handle or pointer does not point at an object.|[nullptr](nullptr-cpp-component-extensions.md)|
+|**`nullptr`**|No|Indicates that a handle or pointer does not point at an object.|[nullptr](nullptr-cpp-component-extensions.md)|
 
 ## Template Constructs
 
@@ -80,7 +80,7 @@ The following language constructs are implemented as templates, instead of as ke
 |**interior_ptr**|(CLR only) Points to data in a reference type.|[interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md)|
 |**pin_ptr**|(CLR only) Points to CLR reference types to temporarily suppress the garbage-collection system.|[pin_ptr (C++/CLI)](pin-ptr-cpp-cli.md)|
 |**safe_cast**|Determines and executes the optimal casting method for a runtime type.|[safe_cast](safe-cast-cpp-component-extensions.md)|
-|**typeid**|(CLR only) Retrieves a <xref:System.Type?displayProperty=fullName> object that describes the given type or object.|[typeid](typeid-cpp-component-extensions.md)|
+|**`typeid`**|(CLR only) Retrieves a <xref:System.Type?displayProperty=fullName> object that describes the given type or object.|[typeid](typeid-cpp-component-extensions.md)|
 
 ## Declarators
 
@@ -100,7 +100,7 @@ This section lists additional programming constructs, and topics that pertain to
 |[__identifier (C++/CLI)](identifier-cpp-cli.md)|(Windows Runtime and CLR) Enables the use of keywords as identifiers.|
 |[Variable Argument Lists (...) (C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)|(Windows Runtime and CLR) Enables a function to take a variable number of arguments.|
 |[.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)|Lists the CLR types that are used in place of C++ integral types.|
-|[appdomain](../cpp/appdomain.md) **__declspec** modifier|**__declspec** modifier that mandates that static and global variables exist per appdomain.|
+|[appdomain](../cpp/appdomain.md) **`__declspec`** modifier|**`__declspec`** modifier that mandates that static and global variables exist per appdomain.|
 |[C-Style Casts with /clr (C++/CLI)](c-style-casts-with-clr-cpp-cli.md)|Describes how C-style casts are interpreted.|
 |[__clrcall](../cpp/clrcall.md) calling convention|Indicates the CLR-compliant calling convention.|
 |`__cplusplus_cli`|[Predefined Macros](../preprocessor/predefined-macros.md)|
@@ -111,7 +111,7 @@ This section lists additional programming constructs, and topics that pertain to
 |[Boxing](boxing-cpp-component-extensions.md)|Demonstrates the conditions in which values types are boxed.|
 |[Compiler Support for Type Traits](compiler-support-for-type-traits-cpp-component-extensions.md)|Discusses how to detect characteristics of types at compile time.|
 |[managed, unmanaged](../preprocessor/managed-unmanaged.md) pragmas|Demonstrates how managed and unmanaged functions can co-exist in the same module.|
-|[process](../cpp/process.md) **__declspec** modifier|**__declspec** modifier that mandates that static and global variables exist per process.|
+|[process](../cpp/process.md) **`__declspec`** modifier|**`__declspec`** modifier that mandates that static and global variables exist per process.|
 |[Reflection (C++/CLI)](../dotnet/reflection-cpp-cli.md)|Demonstrates the CLR version of run-time type information.|
 |[String](string-cpp-component-extensions.md)|Discusses compiler conversion of string literals to <xref:System.String>.|
 |[Type Forwarding (C++/CLI)](type-forwarding-cpp-cli.md)|Enables the movement of a type in a shipping assembly to another assembly so that client code does not have to be recompiled.|

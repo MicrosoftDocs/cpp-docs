@@ -9,7 +9,7 @@ ms.assetid: 6122dc81-4ee3-49a5-a67d-d867808c9bac
 
 'operator' : illegal operand 'nullptr'
 
-`nullptr` cannot be an operand.
+**`nullptr`** cannot be an operand.
 
 The following sample generates C2389:
 

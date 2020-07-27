@@ -15,7 +15,7 @@ To fix by checking the following possible causes:
 
 - A member function of a derived class has a different return type from the corresponding member function of the base class.
 
-- A type defined with the `typedef` command is redefined using different syntax.
+- A type defined with the **`typedef`** command is redefined using different syntax.
 
 The following sample generates C4142:
 

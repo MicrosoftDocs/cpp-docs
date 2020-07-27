@@ -87,7 +87,7 @@ These class templates and functions are permitted unusual latitude in the intere
 
 |||
 |-|-|
-|[valarray\<bool> Class](../standard-library/valarray-bool-class.md)|A specialized version of the class template valarray\<**Type**> to elements of type **bool**.|
+|[valarray\<bool> Class](../standard-library/valarray-bool-class.md)|A specialized version of the class template valarray\<**Type**> to elements of type **`bool`**.|
 
 ## See also
 

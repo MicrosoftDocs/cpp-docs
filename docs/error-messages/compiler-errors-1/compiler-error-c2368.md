@@ -9,4 +9,4 @@ ms.assetid: a824626f-9fb5-453b-a3a4-da89d1e32218
 
 'identifier' : redefinition; different allocation specifiers
 
-The declaration and definition of the symbol specify different `__declspec` attributes.
+The declaration and definition of the symbol specify different **`__declspec`** attributes.

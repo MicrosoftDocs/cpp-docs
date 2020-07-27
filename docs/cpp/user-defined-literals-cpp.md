@@ -35,11 +35,11 @@ ReturnType operator "" _r(const char*);              // Raw literal operator
 template<char...> ReturnType operator "" _t();       // Literal operator template
 ```
 
-The operator names in the previous example are placeholders for whatever name you provide; however, the leading underscore is required. (Only the Standard Library is allowed to define literals without the underscore.) The return type is where you customize the conversion or other operations done by the literal. Also, any of these operators can be defined as `constexpr`.
+The operator names in the previous example are placeholders for whatever name you provide; however, the leading underscore is required. (Only the Standard Library is allowed to define literals without the underscore.) The return type is where you customize the conversion or other operations done by the literal. Also, any of these operators can be defined as **`constexpr`**.
 
 ## Cooked literals
 
-In source code, any literal, whether user-defined or not, is essentially a sequence of alphanumeric characters, such as `101`, or `54.7`, or `"hello"` or `true`. The compiler interprets the sequence as an integer, float, const char\* string, and so on. A user-defined literal that accepts as input whatever type the compiler assigned to the literal value is informally known as a *cooked literal*. All the operators above except `_r` and `_t` are cooked literals. For example, a literal `42.0_km` would bind to an operator named _km that had a signature similar to _b and the literal `42_km` would bind to an operator with a signature similar to _a.
+In source code, any literal, whether user-defined or not, is essentially a sequence of alphanumeric characters, such as `101`, or `54.7`, or `"hello"` or **`true`**. The compiler interprets the sequence as an integer, float, const char\* string, and so on. A user-defined literal that accepts as input whatever type the compiler assigned to the literal value is informally known as a *cooked literal*. All the operators above except `_r` and `_t` are cooked literals. For example, a literal `42.0_km` would bind to an operator named _km that had a signature similar to _b and the literal `42_km` would bind to an operator with a signature similar to _a.
 
 The following example shows how user-defined literals can encourage callers to be explicit about their input. To construct a `Distance`, the user must explicitly specify kilometers or miles by using the appropriate user-defined literal. You can achieve the same result in other ways, but user-defined literals are less verbose than the alternatives.
 
@@ -102,7 +102,7 @@ int main()
 }
 ```
 
-The literal number must use a decimal. Otherwise, the number would be interpreted as an integer, and the type wouldn't be compatible with the operator. For floating point input, the type must be **long double**, and for integral types it must be **long long**.
+The literal number must use a decimal. Otherwise, the number would be interpreted as an integer, and the type wouldn't be compatible with the operator. For floating point input, the type must be **`long double`**, and for integral types it must be **`long long`**.
 
 ## Raw literals
 

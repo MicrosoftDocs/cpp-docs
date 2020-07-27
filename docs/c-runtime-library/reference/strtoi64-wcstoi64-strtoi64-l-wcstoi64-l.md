@@ -11,7 +11,7 @@ ms.assetid: ea2abc50-7bfe-420e-a46b-703c3153593a
 ---
 # _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l
 
-Convert a string to an **__int64** value.
+Convert a string to an **`__int64`** value.
 
 ## Syntax
 
@@ -66,7 +66,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The **_strtoi64** function converts *strSource* to an **__int64**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. **_wcstoi64** is a wide-character version of **_strtoi64**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
+The **_strtoi64** function converts *strSource* to an **`__int64`**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. **_wcstoi64** is a wide-character version of **_strtoi64**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

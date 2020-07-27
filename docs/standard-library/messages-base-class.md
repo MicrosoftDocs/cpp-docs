@@ -7,7 +7,7 @@ ms.assetid: 9aad38c6-4c13-445d-b096-364bd0836efb
 ---
 # messages_base Class
 
-The base class describes an **int** type for the catalog of messages.
+The base class describes an **`int`** type for the catalog of messages.
 
 ## Syntax
 
@@ -20,7 +20,7 @@ struct messages_base : locale::facet {
 
 ## Remarks
 
-The type catalog is a synonym for type **int** that describes the possible return values from messages:: [do_open](../standard-library/messages-class.md#do_open).
+The type catalog is a synonym for type **`int`** that describes the possible return values from messages:: [do_open](../standard-library/messages-class.md#do_open).
 
 ## Requirements
 

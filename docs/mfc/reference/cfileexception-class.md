@@ -159,7 +159,7 @@ int m_cause;
 
 ### Remarks
 
-This data member is a public variable of type **int**. The enumerators and their meanings are as follows:
+This data member is a public variable of type **`int`**. The enumerators and their meanings are as follows:
 
 | Error | Value and meaning |
 |--|--|

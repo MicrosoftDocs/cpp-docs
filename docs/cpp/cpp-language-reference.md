@@ -47,16 +47,16 @@ A programming technique that implicitly defines a function object class and cons
 Expression, null, compound, selection, iteration, jump, and declaration statements.
 
 [Classes and structs](../cpp/classes-and-structs-cpp.md)<br/>
-Introduction to classes, structures, and unions. Also, member functions, special member functions, data members, bit fields, **this** pointer, nested classes.
+Introduction to classes, structures, and unions. Also, member functions, special member functions, data members, bit fields, **`this`** pointer, nested classes.
 
 [Unions](unions.md)<br/>
 User-defined types in which all members share the same memory location.
 
 [Derived Classes](../cpp/inheritance-cpp.md)<br/>
-Single and multiple inheritance, **virtual** functions, multiple base classes, **abstract** classes, scope rules. Also, the **__super** and **__interface** keywords.
+Single and multiple inheritance, **`virtual`** functions, multiple base classes, **abstract** classes, scope rules. Also, the **`__super`** and **`__interface`** keywords.
 
 [Member-Access Control](../cpp/member-access-control-cpp.md)<br/>
-Controlling access to class members: **public**, **private**, and **protected** keywords. Friend functions and classes.
+Controlling access to class members: **`public`**, **`private`**, and **`protected`** keywords. Friend functions and classes.
 
 [Overloading](operator-overloading.md)<br/>
 Overloaded operators, rules for operator overloading.
@@ -65,19 +65,19 @@ Overloaded operators, rules for operator overloading.
 C++ exception handling, structured exception handling (SEH), keywords used in writing exception handling statements.
 
 [Assertion and User-Supplied Messages](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
-`#error` directive, the **static_assert** keyword, the `assert` macro.
+`#error` directive, the **`static_assert`** keyword, the `assert` macro.
 
 [Templates](../cpp/templates-cpp.md)<br/>
-Template specifications, function templates, class templates, **typename** keyword, templates vs. macros, templates and smart pointers.
+Template specifications, function templates, class templates, **`typename`** keyword, templates vs. macros, templates and smart pointers.
 
 [Event Handling](../cpp/event-handling.md)<br/>
 Declaring events and event handlers.
 
 [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)<br/>
-Modifiers specific to Microsoft C++. Memory addressing, calling conventions, **naked** functions, extended storage-class attributes (**__declspec**), **__w64**.
+Modifiers specific to Microsoft C++. Memory addressing, calling conventions, **`naked`** functions, extended storage-class attributes (**`__declspec`**), **`__w64`**.
 
 [Inline Assembler](../assembler/inline/inline-assembler.md)<br/>
-Using assembly language and C++ in **__asm** blocks.
+Using assembly language and C++ in **`__asm`** blocks.
 
 [Compiler COM Support](../cpp/compiler-com-support.md)<br/>
 A reference to Microsoft-specific classes and global functions used to support COM types.

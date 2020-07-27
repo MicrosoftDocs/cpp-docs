@@ -79,7 +79,7 @@ int main( )
 }
 ```
 
-The `write` function does not stop when it reaches a null character, so the complete class structure is written. The function takes two arguments: a **char** pointer and a count of characters to write. Note the required cast to **char**<strong>\*</strong> before the address of the structure object.
+The `write` function does not stop when it reaches a null character, so the complete class structure is written. The function takes two arguments: a **`char`** pointer and a count of characters to write. Note the required cast to **`char`**<strong>\*</strong> before the address of the structure object.
 
 ## The seekp and tellp Functions
 
@@ -97,10 +97,10 @@ Use these member functions to test for errors while writing to a stream:
 
 |Function|Return value|
 |--------------|------------------|
-|[bad](basic-ios-class.md#bad)|Returns **true** if there is an unrecoverable error.|
-|[fail](basic-ios-class.md#fail)|Returns **true** if there is an unrecoverable error or an "expected" condition, such as a conversion error, or if the file is not found. Processing can often resume after a call to `clear` with a zero argument.|
-|[good](basic-ios-class.md#good)|Returns **true** if there is no error condition (unrecoverable or otherwise) and the end-of-file flag is not set.|
-|[eof](basic-ios-class.md#eof)|Returns **true** on the end-of-file condition.|
+|[bad](basic-ios-class.md#bad)|Returns **`true`** if there is an unrecoverable error.|
+|[fail](basic-ios-class.md#fail)|Returns **`true`** if there is an unrecoverable error or an "expected" condition, such as a conversion error, or if the file is not found. Processing can often resume after a call to `clear` with a zero argument.|
+|[good](basic-ios-class.md#good)|Returns **`true`** if there is no error condition (unrecoverable or otherwise) and the end-of-file flag is not set.|
+|[eof](basic-ios-class.md#eof)|Returns **`true`** on the end-of-file condition.|
 |[clear](basic-ios-class.md#clear)|Sets the internal error state. If called with the default arguments, it clears all error bits.|
 |[rdstate](basic-ios-class.md#rdstate|Returns the current error state.|
 

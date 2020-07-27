@@ -58,7 +58,7 @@ The following procedure demonstrates the most basic use of the `CTaskDialog`, wh
     }
     ```
 
-1. Insert the following code between the brackets after the `if` statement from step 5. This code creates the `CTaskDialog`.
+1. Insert the following code between the brackets after the **`if`** statement from step 5. This code creates the `CTaskDialog`.
 
     ```cpp
     CTaskDialog taskDialog(message, emptyString, dialogTitle, TDCBF_OK_BUTTON);
@@ -169,7 +169,7 @@ The following procedure shows you how to display a `CTaskDialog` without first c
 
 1. Navigate to the closing bracket for the `if (CTaskDialog::IsSupported())` statement.
 
-1. Insert the following code immediately before the closing bracket of the `if` statement (before the `else` block):
+1. Insert the following code immediately before the closing bracket of the **`if`** statement (before the **`else`** block):
 
     ```cpp
     HRESULT result2 = CTaskDialog::ShowDialog(L"My error message",

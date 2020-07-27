@@ -11,7 +11,7 @@ ms.assetid: 8e874903-f499-45ef-8291-f821eee4cc1c
 
 A type appears as the right operand of a member-access (.) operator.
 
-This error can be caused by trying to access a user-defined type conversion. Use the keyword `operator` between the period and `type`.
+This error can be caused by trying to access a user-defined type conversion. Use the keyword **`operator`** between the period and `type`.
 
 The following sample generates C2286:
 

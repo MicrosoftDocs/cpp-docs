@@ -205,7 +205,7 @@ unsigned m_bCancelWhenExecuting:1;
 
 ### Remarks
 
-Defaults to **true** (can be canceled).
+Defaults to **`true`** (can be canceled).
 
 ## <a name="bisexecuting"></a> ICommandImpl::m_bIsExecuting
 
@@ -219,7 +219,7 @@ unsigned m_bIsExecuting:1;
 
 ### Remarks
 
-The `Execute` method of your command class can set this variable to **true**.
+The `Execute` method of your command class can set this variable to **`true`**.
 
 ## See also
 

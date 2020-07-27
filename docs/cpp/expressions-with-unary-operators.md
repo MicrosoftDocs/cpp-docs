@@ -26,15 +26,15 @@ Unary operators act on only one operand in an expression. The unary operators ar
 
 - [Cast operator ()](../cpp/cast-operator-parens.md)
 
-- [sizeof operator](../cpp/sizeof-operator.md)
+- [`sizeof` operator](../cpp/sizeof-operator.md)
 
-- [__uuidof operator](../cpp/uuidof-operator.md)
+- [`__uuidof` operator](../cpp/uuidof-operator.md)
 
-- [__alignof operator](../cpp/alignof-operator.md)
+- [`alignof` operator](../cpp/alignof-operator.md)
 
-- [new operator](../cpp/new-operator-cpp.md)
+- [`new` operator](../cpp/new-operator-cpp.md)
 
-- [delete operator](../cpp/delete-operator-cpp.md)
+- [`delete` operator](../cpp/delete-operator-cpp.md)
 
 These operators have right-to-left associativity. Unary expressions generally involve syntax that precedes a postfix or primary expression.
 
@@ -48,7 +48,7 @@ The following are the possible forms of unary expressions.
 
 - *unary-operator* *cast-expression*
 
-- **sizeof** *unary-expression*
+- **`sizeof`** *unary-expression*
 
 - `sizeof(` *type-name* `)`
 
@@ -66,7 +66,7 @@ The *cast-expression* is a unary expression with an optional cast to change the 
 
 An *expression* can be any expression. For more information, see [Expressions](../cpp/expressions-cpp.md).
 
-The *allocation-expression* refers to the **new** operator. The *deallocation-expression* refers to the **delete** operator. For more information, see the links earlier in this topic.
+The *allocation-expression* refers to the **`new`** operator. The *deallocation-expression* refers to the **`delete`** operator. For more information, see the links earlier in this topic.
 
 ## See also
 

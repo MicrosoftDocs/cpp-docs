@@ -35,7 +35,7 @@ Specifies the section (segment) where [const](../cpp/const-cpp.md) variables are
 
 A *section* in an object file is a named block of data that's loaded into memory as a unit. A *const section* is a section that contains constant data. In this article, the terms *segment* and *section* have the same meaning.
 
-The **const_seg** pragma directive tells the compiler to put all constant data items from the translation unit into a const section named *section-name*. The default section in the object file for **const** variables is `.rdata`. Some **const** variables, such as scalars, are automatically inlined into the code stream. Inlined code doesn't appear in `.rdata`. A **const_seg** pragma directive without a *section-name* parameter resets the section name for the subsequent **const** data items to `.rdata`.
+The **const_seg** pragma directive tells the compiler to put all constant data items from the translation unit into a const section named *section-name*. The default section in the object file for **`const`** variables is `.rdata`. Some **`const`** variables, such as scalars, are automatically inlined into the code stream. Inlined code doesn't appear in `.rdata`. A **const_seg** pragma directive without a *section-name* parameter resets the section name for the subsequent **`const`** data items to `.rdata`.
 
 If you define an object that requires dynamic initialization in a `const_seg`, the result is undefined behavior.
 

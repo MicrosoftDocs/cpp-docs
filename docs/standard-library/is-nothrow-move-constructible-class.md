@@ -7,7 +7,7 @@ ms.assetid: d186d97b-7b89-470a-8d30-993046a83379
 ---
 # is_nothrow_move_constructible Class
 
-Tests whether type has a **nothrow** move constructor.
+Tests whether type has a **`nothrow`** move constructor.
 
 ## Syntax
 

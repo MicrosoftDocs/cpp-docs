@@ -121,7 +121,7 @@ Another InputIterator.
 
 ### Return Value
 
-**true** if the current InputIterator is equal to *other*; otherwise, **false**.
+**`true`** if the current InputIterator is equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-increment"></a> InputIterator::operator++ Operator
 
@@ -142,7 +142,7 @@ The first syntax increments and then returns the current InputIterator. The seco
 
 The first InputIterator syntax pre-increments the current InputIterator.
 
-The second syntax post-increments the current InputIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
+The second syntax post-increments the current InputIterator. The **`int`** type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
 ## <a name="operator-inequality"></a> InputIterator::operator!= Operator
 
@@ -161,7 +161,7 @@ Another InputIterator.
 
 ### Return Value
 
-**true** if the current InputIterator is not equal to *other*; otherwise, **false**.
+**`true`** if the current InputIterator is not equal to *other*; otherwise, **`false`**.
 
 ## See also
 

@@ -28,7 +28,7 @@ Bytes to be allocated from the stack.
 
 ## Return Value
 
-The **_malloca** routine returns a **void** pointer to the allocated space, which is guaranteed to be suitably aligned for storage of any type of object. If *size* is 0, **_malloca** allocates a zero-length item and returns a valid pointer to that item.
+The **_malloca** routine returns a **`void`** pointer to the allocated space, which is guaranteed to be suitably aligned for storage of any type of object. If *size* is 0, **_malloca** allocates a zero-length item and returns a valid pointer to that item.
 
 If *size* is greater than **_ALLOCA_S_THRESHOLD**, then **_malloca** attempts to allocate on the heap, and returns a null pointer if the space can't be allocated. If *size* is less than or equal to **_ALLOCA_S_THRESHOLD**, then **_malloca** attempts to allocate on the stack, and a stack overflow exception is generated if the space can't be allocated. The stack overflow exception isn't a C++ exception; it's a structured exception. Instead of using C++ exception handling, you must use [Structured Exception Handling](../../cpp/structured-exception-handling-c-cpp.md) (SEH) to catch this exception.
 
@@ -38,9 +38,9 @@ If *size* is greater than **_ALLOCA_S_THRESHOLD**, then **_malloca** attempts to
 
 There are restrictions to explicitly calling **_malloca** in an exception handler (EH). EH routines that run on x86-class processors operate in their own memory frame: They perform their tasks in memory space that is not based on the current location of the stack pointer of the enclosing function. The most common implementations include Windows NT structured exception handling (SEH) and C++ catch clause expressions. Therefore, explicitly calling **_malloca** in any of the following scenarios results in program failure during the return to the calling EH routine:
 
-- Windows NT SEH exception filter expression: **__except** (`_malloca ()` )
+- Windows NT SEH exception filter expression: **`__except`** (`_malloca ()` )
 
-- Windows NT SEH final exception handler: **__finally** {`_malloca ()` }
+- Windows NT SEH final exception handler: **`__finally`** {`_malloca ()` }
 
 - C++ EH catch clause expression
 
@@ -49,7 +49,7 @@ However, **_malloca** can be called directly from within an EH routine or from a
 > [!IMPORTANT]
 > In Windows XP, if **_malloca** is called inside a try/catch block, you must call [_resetstkoflw](resetstkoflw.md) in the catch block.
 
-In addition to the above restrictions, when using the [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option, **_malloca** cannot be used in **__except** blocks. For more information, see [/clr Restrictions](../../build/reference/clr-restrictions.md).
+In addition to the above restrictions, when using the [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option, **_malloca** cannot be used in **`__except`** blocks. For more information, see [/clr Restrictions](../../build/reference/clr-restrictions.md).
 
 ## Requirements
 

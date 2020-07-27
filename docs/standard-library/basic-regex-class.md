@@ -26,13 +26,13 @@ Traits class for elements.
 
 ## Remarks
 
-The class template describes an object that holds a regular expression. Objects of this class template can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this class template, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type **char**, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type **wchar_t**.
+The class template describes an object that holds a regular expression. Objects of this class template can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this class template, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type **`char`**, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type **`wchar_t`**.
 
 The template argument *RXtraits* describes various important properties of the syntax of the regular expressions that the class template supports. A class that specifies these regular expression traits must have the same external interface as an object of type [regex_traits Class](../standard-library/regex-traits-class.md).
 
 Some functions take an operand sequence that defines a regular expression. You can specify such an operand sequence several ways:
 
-`ptr` -- a null-terminated sequence (such as a C string, for *Elem* of type **char**) beginning at `ptr` (which must not be a null pointer), where the terminating element is the value `value_type()` and is not part of the operand sequence
+`ptr` -- a null-terminated sequence (such as a C string, for *Elem* of type **`char`**) beginning at `ptr` (which must not be a null pointer), where the terminating element is the value `value_type()` and is not part of the operand sequence
 
 `ptr`, `count` -- a sequence of `count` elements beginning at `ptr` (which must not be a null pointer)
 
@@ -257,7 +257,7 @@ The initializer_list to copy.
 
 ### Remarks
 
-The member functions each replace the regular expression held by `*this` with the regular expression described by the operand sequence, then return `*this`.
+The member functions each replace the regular expression held by **`*this`** with the regular expression described by the operand sequence, then return **`*this`**.
 
 ## <a name="basic_regex"></a> basic_regex::basic_regex
 
@@ -388,7 +388,7 @@ The locale object to store.
 
 ### Remarks
 
-The member function empties `*this` and returns `traits.`[regex_traits::imbue](../standard-library/regex-traits-class.md#imbue)`(loc)`.
+The member function empties **`*this`** and returns `traits.`[regex_traits::imbue](../standard-library/regex-traits-class.md#imbue)`(loc)`.
 
 ## <a name="locale_type"></a> basic_regex::locale_type
 
@@ -443,7 +443,7 @@ String to copy.
 
 ### Remarks
 
-The operators each replace the regular expression held by `*this` with the regular expression described by the operand sequence, then return `*this`.
+The operators each replace the regular expression held by **`*this`** with the regular expression described by the operand sequence, then return **`*this`**.
 
 ## <a name="swap"></a> basic_regex::swap
 
@@ -460,7 +460,7 @@ The regular expression object to swap with.
 
 ### Remarks
 
-The member function swaps the regular expressions between `*this` and *right*. It does so in constant time and throws no exceptions.
+The member function swaps the regular expressions between **`*this`** and *right*. It does so in constant time and throws no exceptions.
 
 ## <a name="value_type"></a> basic_regex::value_type
 

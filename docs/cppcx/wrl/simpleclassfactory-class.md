@@ -83,7 +83,7 @@ STDMETHOD( CreateInstance )(
 #### Parameters
 
 *pUnkOuter*<br/>
-Must be `nullptr`; otherwise, the return value is CLASS_E_NOAGGREGATION.
+Must be **`nullptr`**; otherwise, the return value is CLASS_E_NOAGGREGATION.
 
 SimpleClassFactory doesn't support aggregation. If aggregation were supported and the object being created was part of an aggregate, *pUnkOuter* would be a pointer to the controlling `IUnknown` interface of the aggregate.
 

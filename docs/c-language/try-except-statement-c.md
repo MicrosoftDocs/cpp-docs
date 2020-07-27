@@ -19,21 +19,21 @@ Exceptions can be either hardware- or software-based. Even when applications can
 
 **__except (**  *expression*  **)**  *compound-statement*
 
-The compound statement after the `__try` clause is the guarded section. The compound statement after the `__except` clause is the exception handler. The handler specifies a set of actions to be taken if an exception is raised during execution of the guarded section. Execution proceeds as follows:
+The compound statement after the `__try` clause is the guarded section. The compound statement after the **`__except`** clause is the exception handler. The handler specifies a set of actions to be taken if an exception is raised during execution of the guarded section. Execution proceeds as follows:
 
 1. The guarded section is executed.
 
-1. If no exception occurs during execution of the guarded section, execution continues at the statement after the `__except` clause.
+1. If no exception occurs during execution of the guarded section, execution continues at the statement after the **`__except`** clause.
 
-1. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the `__except` expression is evaluated and the value returned determines how the exception is handled. There are three values:
+1. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the **`__except`** expression is evaluated and the value returned determines how the exception is handled. There are three values:
 
    `EXCEPTION_CONTINUE_SEARCH` Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
 
    `EXCEPTION_CONTINUE_EXECUTION` Exception is recognized but dismissed. Continue execution at the point where the exception occurred.
 
-   `EXCEPTION_EXECUTE_HANDLER` Exception is recognized. Transfer control to the exception handler by executing the `__except` compound statement, then continue execution at the point the exception occurred.
+   `EXCEPTION_EXECUTE_HANDLER` Exception is recognized. Transfer control to the exception handler by executing the **`__except`** compound statement, then continue execution at the point the exception occurred.
 
-Because the `__except` expression is evaluated as a C expression, it is limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
+Because the **`__except`** expression is evaluated as a C expression, it is limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
 
 > [!NOTE]
 > Structured exception handling works with C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, the C++ exception handling mechanism is much more flexible, in that it can handle exceptions of any type.
@@ -41,9 +41,9 @@ Because the `__except` expression is evaluated as a C expression, it is limited 
 > [!NOTE]
 > For C++ programs, C++ exception handling should be used instead of structured exception handling. For more information, see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md) in the *C++ Language Reference*.
 
-Each routine in an application can have its own exception handler. The `__except` expression executes in the scope of the `__try` body. This means it has access to any local variables declared there.
+Each routine in an application can have its own exception handler. The **`__except`** expression executes in the scope of the `__try` body. This means it has access to any local variables declared there.
 
-The `__leave` keyword is valid within a **try-except** statement block. The effect of `__leave` is to jump to the end of the **try-except** block. Execution resumes after the end of the exception handler. Although a `goto` statement can be used to accomplish the same result, a `goto` statement causes stack unwinding. The `__leave` statement is more efficient because it does not involve stack unwinding.
+The **`__leave** keyword is valid within a **try-except** statement block. The effect of **`__leave** is to jump to the end of the **try-except** block. Execution resumes after the end of the exception handler. Although a **`goto`** statement can be used to accomplish the same result, a **`goto`** statement causes stack unwinding. The **`__leave** statement is more efficient because it does not involve stack unwinding.
 
 Exiting a **try-except** statement using the `longjmp` run-time function is considered abnormal termination. It is illegal to jump into a `__try` statement, but legal to jump out of one. The exception handler is not called if a process is killed in the middle of executing a **try-except** statement.
 

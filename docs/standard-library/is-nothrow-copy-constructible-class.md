@@ -7,7 +7,7 @@ ms.assetid: f13a0bea-63b1-492a-9a45-d445df35c282
 ---
 # is_nothrow_copy_constructible Class
 
-Tests whether type has a **nothrow** copy constructor.
+Tests whether type has a **`nothrow`** copy constructor.
 
 ## Syntax
 

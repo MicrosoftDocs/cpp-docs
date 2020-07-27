@@ -206,7 +206,7 @@ Unlike all other asynchronous message block types that are provided by the Agent
 
 ### Example
 
-The following example shows the basic structure of how to work with the `transformer` class. This example creates a `transformer` object that multiples each input `int` value by 0.33 in order to produce a `double` value as output. The example then receives the transformed values from the same `transformer` object and prints them to the console.
+The following example shows the basic structure of how to work with the `transformer` class. This example creates a `transformer` object that multiples each input **`int`** value by 0.33 in order to produce a **`double`** value as output. The example then receives the transformed values from the same `transformer` object and prints them to the console.
 
 [!code-cpp[concrt-transformer-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_5.cpp)]
 
@@ -288,7 +288,7 @@ The concurrency::[timer class](../../parallel/concrt/reference/timer-class.md) a
 
 The `timer` class sends its message to just one target. If you set the `_PTarget` parameter in the constructor to `NULL`, you can later specify the target by calling the [concurrency::ISource::link_target](reference/source-block-class.md#link_target) method.
 
-A `timer` object can be repeating or non-repeating. To create a repeating timer, pass **true** for the `_Repeating` parameter when you call the constructor. Otherwise, pass **false** for the `_Repeating` parameter to create a non-repeating timer. If the timer is repeating, it sends the same message to its target after each interval.
+A `timer` object can be repeating or non-repeating. To create a repeating timer, pass **`true`** for the `_Repeating` parameter when you call the constructor. Otherwise, pass **`false`** for the `_Repeating` parameter to create a non-repeating timer. If the timer is repeating, it sends the same message to its target after each interval.
 
 The Agents Library creates `timer` objects in the non-started state. To start a timer object, call the [concurrency::timer::start](reference/timer-class.md#start) method. To stop a `timer` object, destroy the object or call the [concurrency::timer::stop](reference/timer-class.md#stop) method. To pause a repeating timer, call the [concurrency::timer::pause](reference/timer-class.md#pause) method.
 

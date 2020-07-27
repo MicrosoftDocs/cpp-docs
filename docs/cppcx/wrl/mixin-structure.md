@@ -30,7 +30,7 @@ A type derived from the [Implements](implements-structure.md) structure.
 A base type.
 
 *hasImplements*<br/>
-**true** if *MixInType* is derived from the current implementation the base type; **false** otherwise.
+**`true`** if *MixInType* is derived from the current implementation the base type; **`false`** otherwise.
 
 ## Remarks
 

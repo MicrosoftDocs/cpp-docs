@@ -9,7 +9,7 @@ ms.assetid: ea47bf57-f55d-4171-8e98-95a71d62820e
 
 'operator' : new/delete cannot have formal list modifiers
 
-The operator (`new` or `delete`) is declared with a memory-model specifier.
+The operator (**`new`** or **`delete`**) is declared with a memory-model specifier.
 
 The following sample generates C2271:
 

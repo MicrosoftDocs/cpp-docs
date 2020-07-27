@@ -7,7 +7,7 @@ ms.assetid: 1a9a5704-f02f-46ae-ad65-f0f2b6dbabc3
 ---
 # new (new slot in vtable)  (C++/CLI and C++/CX)
 
-The **new** keyword indicates that a virtual member will get a new slot in the vtable.
+The **`new`** keyword indicates that a virtual member will get a new slot in the vtable.
 
 ## All Runtimes
 
@@ -21,9 +21,9 @@ Not supported in Windows Runtime.
 
 ### Remarks
 
-In a `/clr` compilation, **new** indicates that a virtual member will get a new slot in the vtable; that the function does not override a base class method.
+In a `/clr` compilation, **`new`** indicates that a virtual member will get a new slot in the vtable; that the function does not override a base class method.
 
-**new** causes the newslot modifier to be added to the IL for the function.  For more information about newslot, see:
+**`new`** causes the newslot modifier to be added to the IL for the function.  For more information about newslot, see:
 
 - <xref:System.Reflection.MethodInfo.GetBaseDefinition?displayProperty=nameWithType>
 
@@ -35,7 +35,7 @@ Compiler option: `/clr`
 
 ### Examples
 
-The following sample shows the effect of **new**.
+The following sample shows the effect of **`new`**.
 
 ```cpp
 // newslot.cpp

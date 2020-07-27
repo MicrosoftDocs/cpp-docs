@@ -15,13 +15,13 @@ typeid(expression)
 
 ## Remarks
 
-The **typeid** operator allows the type of an object to be determined at run time.
+The **`typeid`** operator allows the type of an object to be determined at run time.
 
-The result of **typeid** is a `const type_info&`. The value is a reference to a `type_info` object that represents either the *type-id* or the type of the *expression*, depending on which form of **typeid** is used. For more information, see [type_info Class](../cpp/type-info-class.md).
+The result of **`typeid`** is a `const type_info&`. The value is a reference to a `type_info` object that represents either the *type-id* or the type of the *expression*, depending on which form of **`typeid`** is used. For more information, see [type_info Class](../cpp/type-info-class.md).
 
-The **typeid** operator doesn't work with managed types (abstract declarators or instances). For information on getting the <xref:System.Type> of a specified type, see [typeid](../extensions/typeid-cpp-component-extensions.md).
+The **`typeid`** operator doesn't work with managed types (abstract declarators or instances). For information on getting the <xref:System.Type> of a specified type, see [typeid](../extensions/typeid-cpp-component-extensions.md).
 
-The **typeid** operator does a run-time check when applied to an l-value of a polymorphic class type, where the true type of the object can't be determined by the static information provided. Such cases are:
+The **`typeid`** operator does a run-time check when applied to an l-value of a polymorphic class type, where the true type of the object can't be determined by the static information provided. Such cases are:
 
 - A reference to a class
 
@@ -56,7 +56,7 @@ int main() {
 }
 ```
 
-If the *expression* is dereferencing a pointer, and that pointer's value is zero, **typeid** throws a [bad_typeid exception](../cpp/bad-typeid-exception.md). If the pointer doesn't point to a valid object, a `__non_rtti_object` exception is thrown. It indicates an attempt to analyze the RTTI that triggered a fault because the object is somehow invalid. (For example, it's a bad pointer, or the code wasn't compiled with [/GR](../build/reference/gr-enable-run-time-type-information.md)).
+If the *expression* is dereferencing a pointer, and that pointer's value is zero, **`typeid`** throws a [bad_typeid exception](../cpp/bad-typeid-exception.md). If the pointer doesn't point to a valid object, a `__non_rtti_object` exception is thrown. It indicates an attempt to analyze the RTTI that triggered a fault because the object is somehow invalid. (For example, it's a bad pointer, or the code wasn't compiled with [/GR](../build/reference/gr-enable-run-time-type-information.md)).
 
 If the *expression* is not a pointer, and not a reference to a base class of the object, the result is a `type_info` reference representing the static type of the *expression*. The *static type* of an expression refers to the type of an expression as it is known at compile time. Execution semantics are ignored when evaluating the static type of an expression. Furthermore, references are ignored when possible when determining the static type of an expression:
 
@@ -70,7 +70,7 @@ int main()
 }
 ```
 
-**typeid** can also be used in templates to determine the type of a template parameter:
+**`typeid`** can also be used in templates to determine the type of a template parameter:
 
 ```cpp
 // expre_typeid_Operator_3.cpp

@@ -11,19 +11,19 @@ A partial class is a construct that supports scenarios in which you are modifyin
 
 To define a partial class, use the `partial` keyword immediately before the class-key of what would otherwise be a normal class definition. A keyword such as `partial ref class` is a contextual keyword that contains whitespace characters. Partial definitions are supported in the following constructs.
 
-- `class` or `struct`
+- **`class`** or **`struct`**
 
-- `ref class` or `ref struct`
+- **`ref class`** or **`ref struct`**
 
-- `value class` or `value struct`
+- **`value class`** or **`value struct`**
 
-- `enum` or `enum class`
+- **`enum`** or **`enum class`**
 
-- `ref interface`, `interface class`, `interface struct`, or `__interface`
+- `ref interface`, **`interface class`**, **`interface struct`**, or **`__interface**
 
-- `union`
+- **`union`**
 
-This example demonstrates a partial `ref class`:
+This example demonstrates a partial **`ref class`**:
 
 [!code-cpp[cx_partial#01](../cppcx/codesnippet/CPP/partialclassexample/class1.h#01)]
 
@@ -55,7 +55,7 @@ There can be zero or more partial class definitions for every full definition of
 
 Every partial class definition of a class  must lexically precede the one full definition of that class, but doesn't have to precede forward declarations of the class. If there's no full definition of the class, then the partial class declarations can only be forward declarations.
 
-All class-keys such as `class` and `struct` must match. For example, it's an error to code `partial class X {}; struct X {};`.
+All class-keys such as **`class`** and **`struct`** must match. For example, it's an error to code `partial class X {}; struct X {};`.
 
 The following example demonstrates number and ordering. The last partial declaration fails because the class is already defined.
 
@@ -79,7 +79,7 @@ A partial class can't be a template.
 
 A partial class can't span beyond one translation unit.
 
-The `partial` keyword is supported only in combination with the `ref class` keyword or the `value class` keyword.
+The `partial` keyword is supported only in combination with the **`ref class`** keyword or the **`value class`** keyword.
 
 ### Examples
 

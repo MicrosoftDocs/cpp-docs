@@ -149,7 +149,7 @@ bool try_lock();
 
 ### Return Value
 
-If the lock was acquired, the value **true**; otherwise, the value **false**.
+If the lock was acquired, the value **`true`**; otherwise, the value **`false`**.
 
 ## <a name="try_lock_for"></a> try_lock_for
 
@@ -166,7 +166,7 @@ The number of milliseconds to wait before timing out.
 
 ### Return Value
 
-If the lock was acquired, the value **true**; otherwise, the value **false**.
+If the lock was acquired, the value **`true`**; otherwise, the value **`false`**.
 
 ## <a name="unlock"></a> unlock
 

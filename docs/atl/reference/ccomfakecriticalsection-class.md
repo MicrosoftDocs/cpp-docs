@@ -30,7 +30,7 @@ class CComFakeCriticalSection
 
 `CComFakeCriticalSection` mirrors the methods found in [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md). However, `CComFakeCriticalSection` does not provide a critical section; therefore, its methods do nothing.
 
-Typically, you use `CComFakeCriticalSection` through a `typedef` name, either `AutoCriticalSection` or `CriticalSection`. When using [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), both of these `typedef` names reference `CComFakeCriticalSection`. When using [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), they reference [CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md) and `CComCriticalSection`, respectively.
+Typically, you use `CComFakeCriticalSection` through a **`typedef`** name, either `AutoCriticalSection` or `CriticalSection`. When using [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), both of these **`typedef`** names reference `CComFakeCriticalSection`. When using [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), they reference [CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md) and `CComCriticalSection`, respectively.
 
 ## Requirements
 

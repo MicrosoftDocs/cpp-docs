@@ -38,10 +38,10 @@ The class library supplies RFX functions for transferring many different data ty
 |`RFX_Bool`|**BOOL**|
 |`RFX_Byte`|**BYTE**|
 |`RFX_Binary`|`CByteArray`|
-|`RFX_Double`|**double**|
-|`RFX_Single`|**float**|
-|`RFX_Int`|**int**|
-|`RFX_Long`|**long**|
+|`RFX_Double`|**`double`**|
+|`RFX_Single`|**`float`**|
+|`RFX_Int`|**`int`**|
+|`RFX_Long`|**`long`**|
 |`RFX_LongBinary`|`CLongBinary`|
 |`RFX_Text`|`CString`|
 |`RFX_Date`|`CTime`|

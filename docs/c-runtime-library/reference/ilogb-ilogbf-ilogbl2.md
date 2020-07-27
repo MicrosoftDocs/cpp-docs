@@ -44,7 +44,7 @@ The specified value.
 
 ## Return Value
 
-If successful, return the base-2 exponent of *x* as a signed **int** value.
+If successful, return the base-2 exponent of *x* as a **`signed int`** value.
 
 Otherwise, returns one of the following values, defined in \<math.h>:
 
@@ -57,9 +57,9 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **ilogb** that take and return **float** and **long** **double** types. In a C program, **ilogb** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **ilogb** that take and return **`float`** and **`long double`** types. In a C program, **ilogb** always takes and returns a **`double`**.
 
-Calling this function is similar to calling the equivalent **logb** function, then casting the return value to **int**.
+Calling this function is similar to calling the equivalent **logb** function, then casting the return value to **`int`**.
 
 ## Requirements
 

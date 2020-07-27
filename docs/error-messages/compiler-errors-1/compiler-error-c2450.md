@@ -9,7 +9,7 @@ ms.assetid: 929f1c06-8774-468b-be2a-f428757875a2
 
 switch expression of type 'type' is illegal
 
-The `switch` expression evaluates to an invalid type. It must evaluate to an integer type or a class type with unambiguous conversion to an integer type. If it evaluates to a user-defined type, you must supply a conversion operator.
+The **`switch`** expression evaluates to an invalid type. It must evaluate to an integer type or a class type with unambiguous conversion to an integer type. If it evaluates to a user-defined type, you must supply a conversion operator.
 
 The following sample generates C2450:
 

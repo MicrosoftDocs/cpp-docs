@@ -81,7 +81,7 @@ Returns a copy of the `IAtlStringMgr` object.
 
 ### Remarks
 
-Commonly called by the framework when a string manager is needed for a new string. In most cases, the **this** pointer is returned.
+Commonly called by the framework when a string manager is needed for a new string. In most cases, the **`this`** pointer is returned.
 
 However, if the memory manager does not support being used by multiple instances of `CSimpleStringT`, a pointer to a sharable string manager should be returned.
 

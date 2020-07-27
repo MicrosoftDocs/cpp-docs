@@ -9,7 +9,7 @@ ms.assetid: ccc83553-90ed-4e94-b5e9-38b58ae38e31
 
 'void' cannot be an argument type, except for '(void)'
 
-Type `void` cannot be used as an argument type with other arguments.
+Type **`void`** cannot be used as an argument type with other arguments.
 
 The following sample generates C2860:
 

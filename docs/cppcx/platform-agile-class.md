@@ -122,7 +122,7 @@ T^ Get() const;
 
 A handle to the object that is represented by the current Agile object.
 
-The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.
+The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **`auto`** type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.
 
 ## <a name="getaddressof"></a> Agile::GetAddressOf Method
 
@@ -198,7 +198,7 @@ T^ operator->() const throw();
 
 A handle to the object represented by the current Agile object.
 
-This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword.
+This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **`auto`** type deduction keyword.
 
 ## <a name="operator-assign"></a> Agile::operator= Operator
 

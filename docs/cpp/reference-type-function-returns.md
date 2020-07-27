@@ -77,7 +77,7 @@ Note also that in main, ThePoint object remains in scope, and therefore its refe
 
 Declarations of reference types must contain initializers except in the following cases:
 
-- Explicit **extern** declaration
+- Explicit **`extern`** declaration
 
 - Declaration of a class member
 

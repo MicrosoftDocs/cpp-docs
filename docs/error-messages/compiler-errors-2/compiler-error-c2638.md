@@ -9,7 +9,7 @@ ms.assetid: 9d4275e8-406d-455e-afee-3a37799230e0
 
 'identifier' : __based modifier illegal on pointer to member
 
-The `__based` modifier cannot be used for pointers to members.
+The **`__based`** modifier cannot be used for pointers to members.
 
 The following sample generates C2638:
 

@@ -17,7 +17,7 @@ A compound statement consists of zero or more statements enclosed in curly brace
 
 ## Remarks
 
-The following example uses a compound statement as the *statement* part of the **if** statement (see [The if Statement](../cpp/if-else-statement-cpp.md) for details about the syntax):
+The following example uses a compound statement as the *statement* part of the **`if`** statement (see [The if Statement](../cpp/if-else-statement-cpp.md) for details about the syntax):
 
 ```cpp
 if( Amount > 100 )

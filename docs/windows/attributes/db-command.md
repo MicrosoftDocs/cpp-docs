@@ -234,7 +234,7 @@ int main() {
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**, member, method, local|
+|**Applies to**|**`class`**, **`struct`**, member, method, local|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

@@ -48,15 +48,15 @@ The result of a conversion is an l-value only if it produces a reference type. F
 
 Objects of an integral type can be converted to another wider integral type, that is, a type that can represent a larger set of values. This widening type of conversion is called *integral promotion*. With integral promotion, you can use the following types in an expression wherever another integral type can be used:
 
-- Objects, literals, and constants of type **char** and **short int**
+- Objects, literals, and constants of type **`char`** and **`short int`**
 
 - Enumeration types
 
-- **int** bit fields
+- **`int`** bit fields
 
 - Enumerators
 
-C++ promotions are "value-preserving," as the value after the promotion is guaranteed to be the same as the value before the promotion. In value-preserving promotions, objects of shorter integral types (such as bit fields or objects of type **char**) are promoted to type **int** if **int** can represent the full range of the original type. If **int** can't represent the full range of values, then the object is promoted to type **unsigned int**.  Although this strategy is the same as the one used by Standard C, value-preserving conversions don't preserve the "signedness" of the object.
+C++ promotions are "value-preserving," as the value after the promotion is guaranteed to be the same as the value before the promotion. In value-preserving promotions, objects of shorter integral types (such as bit fields or objects of type **`char`**) are promoted to type **`int`** if **`int`** can represent the full range of the original type. If **`int`** can't represent the full range of values, then the object is promoted to type **`unsigned int`**.  Although this strategy is the same as the one used by Standard C, value-preserving conversions don't preserve the "signedness" of the object.
 
 Value-preserving promotions and promotions that preserve signedness normally produce the same results. However, they can produce different results if the promoted object appears as:
 
@@ -72,7 +72,7 @@ Value-preserving promotions and promotions that preserve signedness normally pro
 
 ## Integral conversions
 
-*Integral conversions* are conversions between integral types. The integral types are **char**, **short** (or **short int**), **int**, **long**, and **long long**. These types may be qualified with **signed** or **unsigned**, and **unsigned** can be used as shorthand for **unsigned int**.
+*Integral conversions* are conversions between integral types. The integral types are **`char`**, **`short`** (or **`short int`**), **`int`**, **`long`**, and **`long long`**. These types may be qualified with **`signed`** or **`unsigned`**, and **`unsigned`** can be used as shorthand for **`unsigned int`**.
 
 ### Signed to unsigned
 
@@ -92,7 +92,7 @@ int main()
 // Output: 65533
 ```
 
-In the preceding example, a **signed short**, `i`, is defined and initialized to a negative number. The expression `(u = i)` causes `i` to be converted to an **unsigned short** before the assignment to `u`.
+In the preceding example, a **`signed short`**, `i`, is defined and initialized to a negative number. The expression `(u = i)` causes `i` to be converted to an **`unsigned short`** before the assignment to `u`.
 
 ### Unsigned to signed
 
@@ -112,11 +112,11 @@ cout << (i = u) << "\n";
 //Output: -3
 ```
 
-In the preceding example, `u` is an **unsigned short** integral object that must be converted to a signed quantity to evaluate the expression `(i = u)`. Because its value can't be properly represented in a **signed short**, the data is misinterpreted as shown.
+In the preceding example, `u` is an **`unsigned short`** integral object that must be converted to a signed quantity to evaluate the expression `(i = u)`. Because its value can't be properly represented in a **`signed short`**, the data is misinterpreted as shown.
 
 ## Floating point conversions
 
-An object of a floating type can be safely converted to a more precise floating type — that is, the conversion causes no loss of significance. For example, conversions from **float** to **double** or from **double** to **long double** are safe, and the value is unchanged.
+An object of a floating type can be safely converted to a more precise floating type — that is, the conversion causes no loss of significance. For example, conversions from **`float`** to **`double`** or from **`double`** to **`long double`** are safe, and the value is unchanged.
 
 An object of a floating type can also be converted to a less precise type, if it's in a range representable by that type. (See [Floating Limits](../cpp/floating-limits.md) for the ranges of floating types.) If the original value isn't representable precisely, it can be converted to either the next higher or the next lower representable value. The result is undefined if no such value exists. Consider the following example:
 
@@ -124,7 +124,7 @@ An object of a floating type can also be converted to a less precise type, if it
 cout << (float)1E300 << endl;
 ```
 
-The maximum value representable by type **float** is 3.402823466E38 — a much smaller number than 1E300. Therefore, the number is converted to infinity, and the result is "inf".
+The maximum value representable by type **`float`** is 3.402823466E38 — a much smaller number than 1E300. Therefore, the number is converted to infinity, and the result is "inf".
 
 ## Conversions between integral and floating point types
 
@@ -140,10 +140,10 @@ Many binary operators (discussed in [Expressions with binary operators](../cpp/e
 
 |Conditions Met|Conversion|
 |--------------------|----------------|
-|Either operand is of type **long double**.|Other operand is converted to type **long double**.|
-|Preceding condition not met and either operand is of type **double**.|Other operand is converted to type **double**.|
-|Preceding conditions not met and either operand is of type **float**.|Other operand is converted to type **float**.|
-|Preceding conditions not met (none of the operands are of floating types).|Operands get integral promotions as follows:<br /><br />- If either operand is of type **unsigned long**, the other operand is converted to type **unsigned long**.<br />- If preceding condition not met, and if either operand is of type **long** and the other of type **unsigned int**, both operands are converted to type **unsigned long**.<br />- If the preceding two conditions aren't met, and if either operand is of type **long**, the other operand is converted to type **long**.<br />- If the preceding three conditions aren't met, and if either operand is of type **unsigned int**, the other operand is converted to type **unsigned int**.<br />- If none of the preceding conditions are met, both operands are converted to type **int**.|
+|Either operand is of type **`long double`**.|Other operand is converted to type **`long double`**.|
+|Preceding condition not met and either operand is of type **`double`**.|Other operand is converted to type **`double`**.|
+|Preceding conditions not met and either operand is of type **`float`**.|Other operand is converted to type **`float`**.|
+|Preceding conditions not met (none of the operands are of floating types).|Operands get integral promotions as follows:<br /><br />- If either operand is of type **`unsigned long`**, the other operand is converted to type **`unsigned long`**.<br />- If preceding condition not met, and if either operand is of type **`long`** and the other of type **`unsigned int`**, both operands are converted to type **`unsigned long`**.<br />- If the preceding two conditions aren't met, and if either operand is of type **`long`**, the other operand is converted to type **`long`**.<br />- If the preceding three conditions aren't met, and if either operand is of type **`unsigned int`**, the other operand is converted to type **`unsigned int`**.<br />- If none of the preceding conditions are met, both operands are converted to type **`int`**.|
 
 The following code illustrates the conversion rules described in the table:
 
@@ -164,9 +164,9 @@ int main() {
 }
 ```
 
-The first statement in the preceding example shows multiplication of two integral types, `iVal` and `ulVal`. The condition met is that neither operand is of floating type, and one operand is of type **unsigned int**. So, the other operand, `iVal`, is converted to type **unsigned int**. The result is then assigned to `dVal`. The condition met here is that one operand is of type **double**, so the **unsigned int** result of the multiplication is converted to type **double**.
+The first statement in the preceding example shows multiplication of two integral types, `iVal` and `ulVal`. The condition met is that neither operand is of floating type, and one operand is of type **`unsigned int`**. So, the other operand, `iVal`, is converted to type **`unsigned int`**. The result is then assigned to `dVal`. The condition met here is that one operand is of type **`double`**, so the **`unsigned int`** result of the multiplication is converted to type **`double`**.
 
-The second statement in the preceding example shows addition of a **float** and an integral type: `fVal` and `ulVal`. The `ulVal` variable is converted to type **float** (third condition in the table). The result of the addition is converted to type **double** (second condition in the table) and assigned to `dVal`.
+The second statement in the preceding example shows addition of a **`float`** and an integral type: `fVal` and `ulVal`. The `ulVal` variable is converted to type **`float`** (third condition in the table). The result of the addition is converted to type **`double`** (second condition in the table) and assigned to `dVal`.
 
 ## Pointer conversions
 
@@ -238,13 +238,13 @@ A pointer to a function can be converted to type `void *`, if type `void *` is l
 
 ### Pointer to void
 
-Pointers to type **void** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). A pointer to any type can be converted implicitly to a pointer to type **void**. A pointer to an incomplete object of a type can be converted to a pointer to **void** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it's declared, but there's insufficient information available to determine its size or base class.
+Pointers to type **`void`** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). A pointer to any type can be converted implicitly to a pointer to type **`void`**. A pointer to an incomplete object of a type can be converted to a pointer to **`void`** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it's declared, but there's insufficient information available to determine its size or base class.
 
-A pointer to any object that is not **const** or **volatile** can be implicitly converted to a pointer of type `void *`.
+A pointer to any object that is not **`const`** or **`volatile`** can be implicitly converted to a pointer of type `void *`.
 
 ### const and volatile pointers
 
-C++ doesn't supply a standard conversion from a **const** or **volatile** type to a type that's not **const** or **volatile**. However, any sort of conversion can be specified using explicit type casts (including conversions that are unsafe).
+C++ doesn't supply a standard conversion from a **`const`** or **`volatile`** type to a type that's not **`const`** or **`volatile`**. However, any sort of conversion can be specified using explicit type casts (including conversions that are unsafe).
 
 > [!NOTE]
 > C++ pointers to members, except pointers to static members, are different from normal pointers and don't have the same standard conversions. Pointers to static members are normal pointers and have the same conversions as normal pointers.

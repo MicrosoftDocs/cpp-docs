@@ -9,7 +9,7 @@ ms.assetid: 686a5a81-3857-4753-84a0-5c2e7149cbee
 
 illegal default
 
-The keyword `default` can appear only in a `switch` statement.
+The keyword **`default`** can appear only in a **`switch`** statement.
 
 The following sample generates C2047:
 

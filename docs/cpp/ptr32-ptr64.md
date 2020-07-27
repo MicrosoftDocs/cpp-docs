@@ -9,7 +9,7 @@ ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
 
 **Microsoft Specific**
 
-**__ptr32** represents a native pointer on a 32-bit system, while **__ptr64** represents a native pointer on a 64-bit system.
+**`__ptr32`** represents a native pointer on a 32-bit system, while **`__ptr64`** represents a native pointer on a 64-bit system.
 
 The following example shows how to declare each of these pointer types:
 
@@ -18,16 +18,16 @@ int * __ptr32 p32;
 int * __ptr64 p64;
 ```
 
-On a 32-bit system, a pointer declared with **__ptr64** is truncated to a 32-bit pointer. On a 64-bit system, a pointer declared with **__ptr32** is coerced to a 64-bit pointer.
+On a 32-bit system, a pointer declared with **`__ptr64`** is truncated to a 32-bit pointer. On a 64-bit system, a pointer declared with **`__ptr32`** is coerced to a 64-bit pointer.
 
 > [!NOTE]
-> You cannot use **__ptr32** or **__ptr64** when compiling with **/clr:pure**. Otherwise, Compiler Error C2472 will be generated. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+> You cannot use **`__ptr32`** or **`__ptr64`** when compiling with **/clr:pure**. Otherwise, Compiler Error C2472 will be generated. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
-For compatibility with previous versions, **_ptr32** and **_ptr64** are synonyms for **__ptr32** and **__ptr64** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **_ptr32** and **_ptr64** are synonyms for **`__ptr32`** and **`__ptr64`** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 
-The following example shows how to declare and allocate pointers with the **__ptr32** and **__ptr64** keywords.
+The following example shows how to declare and allocate pointers with the **`__ptr32`** and **`__ptr64`** keywords.
 
 ```cpp
 #include <cstdlib>

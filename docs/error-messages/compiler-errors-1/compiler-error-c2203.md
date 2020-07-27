@@ -9,7 +9,7 @@ ms.assetid: 5497df43-86f6-43d5-b6cb-723c4c589b10
 
 delete operator cannot specify bounds for an array
 
-With the **/Za** (ANSI) option, the `delete` operator can delete an entire array but not parts or specific members of the array.
+With the **/Za** (ANSI) option, the **`delete`** operator can delete an entire array but not parts or specific members of the array.
 
 The following sample generates C2203:
 

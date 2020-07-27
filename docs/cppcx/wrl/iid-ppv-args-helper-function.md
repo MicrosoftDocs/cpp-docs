@@ -32,7 +32,7 @@ A doubly-indirect pointer.
 
 ## Return Value
 
-Argument *pp* cast to a pointer-to-a-pointer to **void**.
+Argument *pp* cast to a pointer-to-a-pointer to **`void`**.
 
 ## Remarks
 

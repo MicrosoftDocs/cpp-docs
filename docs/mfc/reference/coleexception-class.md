@@ -87,7 +87,7 @@ An OLE status code.
 ### Remarks
 
 > [!NOTE]
-> This function is **static**.
+> This function is **`static`**.
 
 For more information on SCODE, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes) in the Windows SDK.
 

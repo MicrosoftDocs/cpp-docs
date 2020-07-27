@@ -34,7 +34,7 @@ A `CString` object represents a sequence of a variable number of characters. `CS
 
 ## <a name="_core_unicode_and_mbcs_provide_portability"></a> Unicode and MBCS Provide Portability
 
-With MFC version 3.0 and later, MFC, including `CString`, is enabled for both Unicode and multibyte character sets (MBCS). This support makes it easier for you to write portable applications that you can build for either Unicode or ANSI characters. To enable this portability, each character in a `CString` object is of type TCHAR, which is defined as `wchar_t` if you define the symbol _UNICODE when you build your application, or as `char` if not. A `wchar_t` character is 16 bits wide. MBCS is enabled if you build with the symbol _MBCS defined. MFC itself is built with either the _MBCS symbol (for the NAFX libraries) or the _UNICODE symbol (for the UAFX libraries) defined.
+With MFC version 3.0 and later, MFC, including `CString`, is enabled for both Unicode and multibyte character sets (MBCS). This support makes it easier for you to write portable applications that you can build for either Unicode or ANSI characters. To enable this portability, each character in a `CString` object is of type TCHAR, which is defined as **`wchar_t`** if you define the symbol _UNICODE when you build your application, or as **`char`** if not. A **`wchar_t`** character is 16 bits wide. MBCS is enabled if you build with the symbol _MBCS defined. MFC itself is built with either the _MBCS symbol (for the NAFX libraries) or the _UNICODE symbol (for the UAFX libraries) defined.
 
 > [!NOTE]
 > The `CString` examples in this and the accompanying articles on strings show literal strings properly formatted for Unicode portability, using the _T macro, which translates the literal string to the form:

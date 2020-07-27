@@ -141,7 +141,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the queue is empty; **false** if the queue is nonempty.
+**`true`** if the queue is empty; **`false`** if the queue is nonempty.
 
 ### Example
 
@@ -347,7 +347,7 @@ explicit queue(const container_type& right);
 ### Parameters
 
 *right*\
-The **const** container of which the constructed queue is to be a copy.
+The **`const`** container of which the constructed queue is to be a copy.
 
 ### Remarks
 

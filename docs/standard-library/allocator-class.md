@@ -432,7 +432,7 @@ The value with which the object being constructed is to be initialized.
 
 #### Remarks
 
-The first member function is equivalent to **new** ((`void` \*) `ptr`) **Type** (`val`).
+The first member function is equivalent to `new ((void *) ptr) Type(val)`.
 
 #### Example
 
@@ -838,7 +838,7 @@ The type of element for which memory is being allocated.
 
 This structure is useful for allocating memory for type that differs from the element type of the container being implemented.
 
-The member class template defines the type other. Its sole purpose is to provide the type name **allocator**\<_ **Other**>, given the type name **allocator**\< **Type**>.
+The member class template defines the type other. Its sole purpose is to provide the type name `allocator<_Other>`, given the type name `allocator<Type>`.
 
 For example, given an allocator object `al` of type `A`, you can allocate an object of type `_Other` with the expression:
 

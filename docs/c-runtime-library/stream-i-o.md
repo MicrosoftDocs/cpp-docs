@@ -42,12 +42,12 @@ These functions process data in different sizes and formats, from single charact
 |[getchar, getwchar](../c-runtime-library/reference/getc-getwc.md)|Read character from **stdin** (macro versions of **fgetchar** and **fgetwchar**)|
 |[_getmaxstdio](../c-runtime-library/reference/getmaxstdio.md)|Returns the number of simultaneously open files permitted at the stream I/O level.|
 |[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|Read line from **stdin**|
-|[_getw](../c-runtime-library/reference/getw.md)|Read binary **int** from stream|
+|[_getw](../c-runtime-library/reference/getw.md)|Read binary **`int`** from stream|
 |[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md),[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|Write formatted data to **stdout**|
 |[putc, putwc](../c-runtime-library/reference/putc-putwc.md)|Write character to a stream (macro versions of **fputc** and **fputwc**)|
 |[putchar, putwchar](../c-runtime-library/reference/putc-putwc.md)|Write character to **stdout** (macro versions of **fputchar** and **fputwchar**)|
 |[puts, _putws](../c-runtime-library/reference/puts-putws.md)|Write line to stream|
-|[_putw](../c-runtime-library/reference/putw.md)|Write binary **int** to stream|
+|[_putw](../c-runtime-library/reference/putw.md)|Write binary **`int`** to stream|
 |[rewind](../c-runtime-library/reference/rewind.md)|Move file position to beginning of stream|
 |[_rmtmp](../c-runtime-library/reference/rmtmp.md)|Remove temporary files created by **tmpfile**|
 |[scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md),[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)|Read formatted data from **stdin**|

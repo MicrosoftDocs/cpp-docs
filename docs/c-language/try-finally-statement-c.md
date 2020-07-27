@@ -13,9 +13,9 @@ The `try-finally` statement is a Microsoft extension to the C language that enab
 *try-finally-statement*:
 **__try**  *compound-statement*
 
-**__finally**  *compound-statement*
+**`__finally`**  *compound-statement*
 
-The compound statement after the `__try` clause is the guarded section. The compound statement after the `__finally` clause is the termination handler. The handler specifies a set of actions that execute when the guarded section is exited, whether the guarded section is exited by an exception (abnormal termination) or by standard fall through (normal termination).
+The compound statement after the `__try` clause is the guarded section. The compound statement after the **`__finally`** clause is the termination handler. The handler specifies a set of actions that execute when the guarded section is exited, whether the guarded section is exited by an exception (abnormal termination) or by standard fall through (normal termination).
 
 Control reaches a `__try` statement by simple sequential execution (fall through). When control enters the `__try` statement, its associated handler becomes active. Execution proceeds as follows:
 
@@ -23,11 +23,11 @@ Control reaches a `__try` statement by simple sequential execution (fall through
 
 1. The termination handler is invoked.
 
-1. When the termination handler completes, execution continues after the `__finally` statement. Regardless of how the guarded section ends (for example, via a `goto` statement out of the guarded body or via a `return` statement), the termination handler is executed before the flow of control moves out of the guarded section.
+1. When the termination handler completes, execution continues after the **`__finally`** statement. Regardless of how the guarded section ends (for example, via a **`goto`** statement out of the guarded body or via a **`return`** statement), the termination handler is executed before the flow of control moves out of the guarded section.
 
-The `__leave` keyword is valid within a `try-finally` statement block. The effect of `__leave` is to jump to the end of the `try-finally` block. The termination handler is immediately executed. Although a `goto` statement can be used to accomplish the same result, a `goto` statement causes stack unwinding. The `__leave` statement is more efficient because it does not involve stack unwinding.
+The **`__leave** keyword is valid within a `try-finally` statement block. The effect of **`__leave** is to jump to the end of the `try-finally` block. The termination handler is immediately executed. Although a **`goto`** statement can be used to accomplish the same result, a **`goto`** statement causes stack unwinding. The **`__leave** statement is more efficient because it does not involve stack unwinding.
 
-Exiting a `try-finally` statement using a `return` statement or the `longjmp` run-time function is considered abnormal termination. It is illegal to jump into a `__try` statement, but legal to jump out of one. All `__finally` statements that are active between the point of departure and the destination must be run. This is called a "local unwind."
+Exiting a `try-finally` statement using a **`return`** statement or the `longjmp` run-time function is considered abnormal termination. It is illegal to jump into a `__try` statement, but legal to jump out of one. All **`__finally`** statements that are active between the point of departure and the destination must be run. This is called a "local unwind."
 
 The termination handler is not called if a process is killed while executing a `try-finally` statement.
 

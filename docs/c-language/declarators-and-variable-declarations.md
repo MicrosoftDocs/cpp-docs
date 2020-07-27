@@ -27,7 +27,7 @@ In the declarator
 __declspec(thread) char *var;
 ```
 
-`char` is the type specifier, `__declspec(thread)` and `*` are the modifiers, and `var` is the identifier's name.
+**`char`** is the type specifier, `__declspec(thread)` and `*` are the modifiers, and `var` is the identifier's name.
 
 **END Microsoft Specific**
 

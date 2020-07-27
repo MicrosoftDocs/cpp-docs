@@ -9,7 +9,7 @@ ms.assetid: f4e09e3e-ac87-4489-8e3f-c8f76b82e721
 
 nonstandard extension used : extended initializer form
 
-With Microsoft extensions (/Ze), you can initialize an unsized array of `char` using a string within braces.
+With Microsoft extensions (/Ze), you can initialize an unsized array of **`char`** using a string within braces.
 
 ## Example
 

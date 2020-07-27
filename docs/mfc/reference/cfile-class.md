@@ -106,7 +106,7 @@ If you haven't closed the file before destroying the object, the destructor clos
 
 When handling exceptions, `CFile::Abort` differs from `CFile::Close` in two important ways. First, the `Abort` function won't throw an exception on failures, because failures are ignored by `Abort`. Second, `Abort` won't **ASSERT** if the file hasn't been opened, or was closed previously.
 
-If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Abort` sets `m_hFile` to `CFile::hFileNull`.
+If you used **`new`** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Abort` sets `m_hFile` to `CFile::hFileNull`.
 
 ### Example
 
@@ -222,7 +222,7 @@ virtual void Close();
 
 If you haven't closed the file before destroying the object, the destructor closes it for you.
 
-If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Close` sets `m_hFile` to `CFile::hFileNull`.
+If you used **`new`** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Close` sets `m_hFile` to `CFile::hFileNull`.
 
 ### Example
 

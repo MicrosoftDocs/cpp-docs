@@ -9,7 +9,7 @@ ms.assetid: c8ee23da-6568-40db-93a6-3ddb7ac47712
 
 "expected a late specified return type"
 
-If you use the `auto` keyword as a placeholder for the return type of a function, you must provide a late-specified return type. In the following example, the late-specified return type of function `myFunction` is a pointer to an array of four elements of type `int`.
+If you use the **`auto`** keyword as a placeholder for the return type of a function, you must provide a late-specified return type. In the following example, the late-specified return type of function `myFunction` is a pointer to an array of four elements of type **`int`**.
 
 ```
 auto myFunction()->int(*)[4];

@@ -21,9 +21,9 @@ class CSimpleStringT
 *BaseType*<br/>
 The character type of the string class. Can be one of the following:
 
-- **char** (for ANSI character strings).
+- **`char`** (for ANSI character strings).
 
-- **wchar_t** (for Unicode character strings).
+- **`wchar_t`** (for Unicode character strings).
 
 - TCHAR (for both ANSI and Unicode character strings).
 
@@ -255,7 +255,7 @@ Construct a new `CSimpleStringT` object. Because the constructors copy the input
 
 ### Example
 
-The following example demonstrates the use of `CSimpleStringT::CSimpleStringT` by using the ATL **typedef** `CSimpleString`. `CSimpleString` is a commonly used specialization of the class template `CSimpleStringT`.
+The following example demonstrates the use of `CSimpleStringT::CSimpleStringT` by using the ATL **`typedef`** `CSimpleString`. `CSimpleString` is a commonly used specialization of the class template `CSimpleStringT`.
 
 ```cpp
 CSimpleString s1(pMgr);
@@ -466,7 +466,7 @@ A `PXSTR` pointer to the object's (null-terminated) character buffer.
 
 ### Remarks
 
-Call this method to retrieve a specified length of the internal buffer of the `CSimpleStringT` object. The returned `PXSTR` pointer is not **const** and thus allows direct modification of `CSimpleStringT` contents.
+Call this method to retrieve a specified length of the internal buffer of the `CSimpleStringT` object. The returned `PXSTR` pointer is not **`const`** and thus allows direct modification of `CSimpleStringT` contents.
 
 If you use the pointer returned by [GetBufferSetLength](#getbuffersetlength) to change the string contents, call `ReleaseBuffer` to update the internal state of `CsimpleStringT` before you use any other `CSimpleStringT` methods.
 
@@ -559,7 +559,7 @@ A pointer to a null-terminated character string.
 Call this method to retrieve the character string associated with the `CSimpleStringT` object.
 
 > [!NOTE]
-> The returned `PCXSTR` pointer is **const** and does not allow direct modification of `CSimpleStringT` contents.
+> The returned `PCXSTR` pointer is **`const`** and does not allow direct modification of `CSimpleStringT` contents.
 
 ### Example
 

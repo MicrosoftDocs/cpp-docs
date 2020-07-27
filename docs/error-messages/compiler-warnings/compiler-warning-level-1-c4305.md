@@ -33,4 +33,4 @@ int main()
 }
 ```
 
-To fix this issue, initialize by using a value of the correct type, or use an explicit cast to the correct type. For example, use a **float** literal such as 2.71828f instead of a **double** (the default type for floating-point literals) to initialize a **float** variable, or to pass to a constructor that takes a **float** argument.
+To fix this issue, initialize by using a value of the correct type, or use an explicit cast to the correct type. For example, use a **`float`** literal such as 2.71828f instead of a **`double`** (the default type for floating-point literals) to initialize a **`float`** variable, or to pass to a constructor that takes a **`float`** argument.

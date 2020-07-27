@@ -9,6 +9,6 @@ ms.assetid: c6dbb57a-c65e-4040-8dd2-85bd9d4fd337
 
 'declaration' : property can only be applied to a function
 
-The `property` keyword can only be a applied to a function definition.
+The **`property`** keyword can only be a applied to a function definition.
 
 C3817 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

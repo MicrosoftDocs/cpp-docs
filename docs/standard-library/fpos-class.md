@@ -100,7 +100,7 @@ The file-position indicator against which to compare.
 
 ### Return Value
 
-**true** if the file-position indicators are not equal, otherwise **false**.
+**`true`** if the file-position indicators are not equal, otherwise **`false`**.
 
 ### Remarks
 
@@ -274,7 +274,7 @@ The file-position indicator against which to compare.
 
 ### Return Value
 
-**true** if the file-position indicators are equal; otherwise **false**.
+**`true`** if the file-position indicators are equal; otherwise **`false`**.
 
 ### Remarks
 

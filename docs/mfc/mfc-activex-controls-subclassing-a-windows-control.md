@@ -25,7 +25,7 @@ To subclass a Windows control, complete the following tasks:
 
 ## <a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a> Overriding IsSubclassedControl and PreCreateWindow
 
-To override `PreCreateWindow` and `IsSubclassedControl`, add the following lines of code to the **protected** section of the control class declaration:
+To override `PreCreateWindow` and `IsSubclassedControl`, add the following lines of code to the **`protected`** section of the control class declaration:
 
 [!code-cpp[NVC_MFC_AxSub#1](codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_1.h)]
 

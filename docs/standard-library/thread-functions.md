@@ -65,7 +65,7 @@ This function does not throw any exceptions.
 
 ## <a name="swap"></a> swap
 
-Swaps the states of two **thread** objects.
+Swaps the states of two `thread` objects.
 
 ```cpp
 void swap(thread& Left, thread& Right) noexcept;
@@ -74,10 +74,10 @@ void swap(thread& Left, thread& Right) noexcept;
 ### Parameters
 
 *Left*\
-The left **thread** object.
+The left `thread` object.
 
 *Right*\
-The right **thread** object.
+The right `thread` object.
 
 ### Remarks
 

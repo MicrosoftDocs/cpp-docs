@@ -7,7 +7,7 @@ ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
 ---
 # /constexpr (Control constexpr evaluation)
 
-Use the **/constexpr** compiler options to control parameters for **constexpr** evaluation at compile time.
+Use the **/constexpr** compiler options to control parameters for **`constexpr`** evaluation at compile time.
 
 ## Syntax
 
@@ -18,17 +18,17 @@ Use the **/constexpr** compiler options to control parameters for **constexpr** 
 ## Arguments
 
 **depth**<em>N</em>
-Limit the depth of recursive **constexpr** function invocation to *N* levels. The default is 512.
+Limit the depth of recursive **`constexpr`** function invocation to *N* levels. The default is 512.
 
 **backtrace**<em>N</em>
-Show up to *N* **constexpr** evaluations in diagnostics. The default is 10.
+Show up to *N* **`constexpr`** evaluations in diagnostics. The default is 10.
 
 **steps**<em>N</em>
-Terminate **constexpr** evaluation after *N* steps. The default is 100,000.
+Terminate **`constexpr`** evaluation after *N* steps. The default is 100,000.
 
 ## Remarks
 
-The **/constexpr** compiler options control compile-time evaluation of **constexpr** expressions. Evaluation steps, recursion levels, and backtrace depth are controlled to prevent the compiler from spending too much time on **constexpr** evaluation. For more information on the **constexpr** language element, see [constexpr (C++)](../../cpp/constexpr-cpp.md).
+The **/constexpr** compiler options control compile-time evaluation of **`constexpr`** expressions. Evaluation steps, recursion levels, and backtrace depth are controlled to prevent the compiler from spending too much time on **`constexpr`** evaluation. For more information on the **`constexpr`** language element, see [constexpr (C++)](../../cpp/constexpr-cpp.md).
 
 The **/constexpr** options are available beginning in Visual Studio 2015.
 

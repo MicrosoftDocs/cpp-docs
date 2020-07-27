@@ -45,7 +45,7 @@ The following code shows a use of **wire_marshal**:
 
 |||
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

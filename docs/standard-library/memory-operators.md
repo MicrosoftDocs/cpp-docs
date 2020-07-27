@@ -43,7 +43,7 @@ The type controlled by the right shared pointer.
 
 ### Return Value
 
-**true** if the objects are not equal; **false** if objects are equal.
+**`true`** if the objects are not equal; **`false`** if objects are equal.
 
 ### Remarks
 
@@ -144,7 +144,7 @@ The type controlled by the right shared pointer.
 
 ### Return Value
 
-**true** if the objects are equal, **false** if objects are not equal.
+**`true`** if the objects are equal, **`false`** if objects are not equal.
 
 ### Remarks
 

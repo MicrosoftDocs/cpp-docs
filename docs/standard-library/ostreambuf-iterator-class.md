@@ -18,7 +18,7 @@ template <class CharType = char class Traits = char_traits <CharType>>
 ### Parameters
 
 *CharType*\
-The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is **char**.
+The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is **`char`**.
 
 *Traits*\
 The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
@@ -122,11 +122,11 @@ bool failed() const throw();
 
 ### Return Value
 
-**true** if no insertion into the output stream buffer has failed earlier; otherwise **false**.
+**`true`** if no insertion into the output stream buffer has failed earlier; otherwise **`false`**.
 
 ### Remarks
 
-The member function returns **true** if, in any prior use of member `operator=`, the call to **subf**_-> `sputc` returned **eof**.
+The member function returns **`true`** if, in any prior use of member `operator=`, the call to **subf**_-> `sputc` returned **eof**.
 
 ### Example
 
@@ -392,7 +392,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 
 ### Remarks
 
-The type is a synonym for `basic_streambuf`\< **CharType**, **Traits**>, a stream class for I/O buffers that becomes `streambuf` when specialized to character type **char**.
+The type is a synonym for `basic_streambuf`\< **CharType**, **Traits**>, a stream class for I/O buffers that becomes `streambuf` when specialized to character type **`char`**.
 
 ### Example
 

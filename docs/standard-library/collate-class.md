@@ -229,7 +229,7 @@ A pointer to the last character in the sequence whose has value is to be determi
 
 ### Return Value
 
-A hash value of type **long** for the sequence.
+A hash value of type **`long`** for the sequence.
 
 ### Remarks
 
@@ -285,7 +285,7 @@ A pointer to the last character in the sequence whose has value is to be determi
 
 ### Return Value
 
-A hash value of type **long** for the sequence.
+A hash value of type **`long`** for the sequence.
 
 ### Remarks
 

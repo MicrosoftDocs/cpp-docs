@@ -324,7 +324,7 @@ virtual void Close();
 
 ### Remarks
 
-The ODBC HSTMT and all memory the framework allocated for the recordset are deallocated. Usually after calling `Close`, you delete the C++ recordset object if it was allocated with **new**.
+The ODBC HSTMT and all memory the framework allocated for the recordset are deallocated. Usually after calling `Close`, you delete the C++ recordset object if it was allocated with **`new`**.
 
 You can call `Open` again after calling `Close`. This lets you reuse the recordset object. The alternative is to call `Requery`.
 
@@ -839,7 +839,7 @@ const CString& GetSQL() const;
 
 ### Return Value
 
-A **const** reference to a `CString` that contains the SQL statement.
+A **`const`** reference to a `CString` that contains the SQL statement.
 
 ### Remarks
 
@@ -860,7 +860,7 @@ const CString& GetTableName() const;
 
 ### Return Value
 
-A **const** reference to a `CString` that contains the table name, if the recordset is based on a table; otherwise, an empty string.
+A **`const`** reference to a `CString` that contains the table name, if the recordset is based on a table; otherwise, an empty string.
 
 ### Remarks
 

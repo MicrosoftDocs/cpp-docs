@@ -10,7 +10,7 @@ ms.assetid: 81fd5b7d-15eb-4c11-a8c8-e1621ff54fd3
 
 When an integral number is cast to a floating-point value that cannot exactly represent the value, the value is rounded (up or down) to the nearest suitable value.
 
-For example, casting an **unsigned long** (with 32 bits of precision) to a **float** (whose mantissa has 23 bits of precision) rounds the number to the nearest multiple of 256. The **long** values 4,294,966,913 to 4,294,967,167 are all rounded to the **float** value 4,294,967,040.
+For example, casting an **`unsigned long`** (with 32 bits of precision) to a **`float`** (whose mantissa has 23 bits of precision) rounds the number to the nearest multiple of 256. The **`long`** values 4,294,966,913 to 4,294,967,167 are all rounded to the **`float`** value 4,294,967,040.
 
 ## See also
 

@@ -9,4 +9,4 @@ ms.assetid: 780c6ed3-43a0-4112-8d00-b7bf79086c05
 
 explicit instantiation; storage class specifier 'specifier' not permitted on specialization
 
-You cannot use storage-class specifiers (such as `extern`) in a specialization of a template class that was previously explicitly instantiated.
+You cannot use storage-class specifiers (such as **`extern`**) in a specialization of a template class that was previously explicitly instantiated.

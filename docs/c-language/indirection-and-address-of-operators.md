@@ -40,7 +40,7 @@ This statement uses the address-of operator (**&**) to take the address of the s
 pa = &a[5];
 ```
 
-The indirection operator (__&#42;__) is used in this example to access the `int` value at the address stored in `pa`. The value is assigned to the integer variable `x`:
+The indirection operator (__&#42;__) is used in this example to access the **`int`** value at the address stored in `pa`. The value is assigned to the integer variable `x`:
 
 ```C
 x = *pa;

@@ -22,7 +22,7 @@ The C++ standard recommends limits for various language constructs. The followin
 
 - Scope qualifications of one identifier - C++ standard: 256, Microsoft C++ compiler: 127.
 
-- Nested **extern** specifications - C++ standard: 1024, Microsoft C++ compiler: 9 (not counting the implicit **extern** specification in global scope, or 10, if you count the implicit **extern** specification in global scope..
+- Nested **`extern`** specifications - C++ standard: 1024, Microsoft C++ compiler: 9 (not counting the implicit **`extern`** specification in global scope, or 10, if you count the implicit **`extern`** specification in global scope..
 
 - Template arguments in a template declaration - C++ standard: 1024, Microsoft C++ compiler: 2046.
 

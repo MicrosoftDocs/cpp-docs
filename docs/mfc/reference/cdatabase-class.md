@@ -301,7 +301,7 @@ const CString GetConnect() const;
 
 ### Return Value
 
-A **const**[CString](../../atl-mfc-shared/reference/cstringt-class.md) containing the connection string if `OpenEx` or `Open` has been called; otherwise, an empty string.
+A **`const`**[CString](../../atl-mfc-shared/reference/cstringt-class.md) containing the connection string if `OpenEx` or `Open` has been called; otherwise, an empty string.
 
 ### Remarks
 
@@ -391,7 +391,7 @@ Contains a public handle to an ODBC data source connection — a "connection han
 
 ### Remarks
 
-Normally, you will have no need to access this member variable directly. Instead, the framework allocates the handle when you call `OpenEx` or `Open`. The framework deallocates the handle when you call the **delete** operator on the `CDatabase` object. Note that the `Close` member function does not deallocate the handle.
+Normally, you will have no need to access this member variable directly. Instead, the framework allocates the handle when you call `OpenEx` or `Open`. The framework deallocates the handle when you call the **`delete`** operator on the `CDatabase` object. Note that the `Close` member function does not deallocate the handle.
 
 Under some circumstances, however, you may need to use the handle directly. For example, if you need to call ODBC API functions directly rather than through class `CDatabase`, you may need a connection handle to pass as a parameter. See the code example below.
 

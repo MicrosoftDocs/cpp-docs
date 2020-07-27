@@ -49,7 +49,7 @@ class CMyClass {};
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|Yes|
 |**Required attributes**|One of the following: `coclass`, `progid`, or `vi_progid`|
 |**Invalid attributes**|None|

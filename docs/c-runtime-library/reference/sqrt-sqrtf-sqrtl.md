@@ -40,7 +40,7 @@ Non-negative floating-point value
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **sqrt** that take **float** or **long** **double** types. In a C program, **sqrt** always takes and returns **double**.
+Because C++ allows overloading, you can call overloads of **sqrt** that take **`float`** or **`long double`** types. In a C program, **sqrt** always takes and returns **`double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

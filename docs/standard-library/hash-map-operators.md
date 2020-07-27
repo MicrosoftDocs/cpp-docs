@@ -32,7 +32,7 @@ An object of type `hash_map`.
 
 ### Return Value
 
-**true** if the hash_maps are not equal; **false** if hash_maps are equal.
+**`true`** if the hash_maps are not equal; **`false`** if hash_maps are equal.
 
 ### Remarks
 
@@ -101,7 +101,7 @@ An object of type `hash_map`.
 
 ### Return Value
 
-**true** if the hash_map on the left side of the operator is equal to the hash_map on the right side of the operator; otherwise **false**.
+**`true`** if the hash_map on the left side of the operator is equal to the hash_map on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -168,7 +168,7 @@ An object of type `hash_multimap`.
 
 ### Return Value
 
-**true** if the hash_multimaps are not equal; **false** if hash_multimaps are equal.
+**`true`** if the hash_multimaps are not equal; **`false`** if hash_multimaps are equal.
 
 ### Remarks
 
@@ -235,7 +235,7 @@ An object of type `hash_multimap`.
 
 ### Return Value
 
-**true** if the hash_multimap on the left side of the operator is equal to the hash_multimap on the right side of the operator; otherwise **false**.
+**`true`** if the hash_multimap on the left side of the operator is equal to the hash_multimap on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
