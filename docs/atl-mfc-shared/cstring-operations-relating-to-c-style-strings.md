@@ -6,7 +6,7 @@ ms.assetid: 5048de8a-5298-4891-b8a0-c554b5a3ac1b
 ---
 # CString Operations Relating to C-Style Strings
 
-A [CString](../atl-mfc-shared/using-cstring.md) object contains character string data. `CString` inherits the set of the [methods and operators](../atl-mfc-shared/reference/cstringt-class.md) that are defined in the class template [CStringT](../atl-mfc-shared/reference/cstringt-class.md) to work with string data. (`CString` is a **typedef** that specializes `CStringT` to work with the kind of character data that `CString` supports.)
+A [CString](../atl-mfc-shared/using-cstring.md) object contains character string data. `CString` inherits the set of the [methods and operators](../atl-mfc-shared/reference/cstringt-class.md) that are defined in the class template [CStringT](../atl-mfc-shared/reference/cstringt-class.md) to work with string data. (`CString` is a **`typedef`** that specializes `CStringT` to work with the kind of character data that `CString` supports.)
 
 `CString` does not store character data internally as a C-style null-terminated string. Instead, `CString` tracks the length of character data so that it can more securely watch the data and the space it requires.
 
@@ -73,9 +73,9 @@ To use a `CString` object in a variable argument function, explicitly cast the `
 
 ## <a name="_core_specifying_cstring_formal_parameters"></a> Specifying CString Formal Parameters
 
-For most functions that need a string argument, it is best to specify the formal parameter in the function prototype as a `const` pointer to a character (`LPCTSTR`) instead of a `CString`. When a formal parameter is specified as a `const` pointer to a character, you can pass either a pointer to a TCHAR array, a literal string [`"hi there"`], or a `CString` object. The `CString` object will be automatically converted to an LPCTSTR. Any place you can use an LPCTSTR, you can also use a `CString` object.
+For most functions that need a string argument, it is best to specify the formal parameter in the function prototype as a **`const`** pointer to a character (`LPCTSTR`) instead of a `CString`. When a formal parameter is specified as a **`const`** pointer to a character, you can pass either a pointer to a TCHAR array, a literal string [`"hi there"`], or a `CString` object. The `CString` object will be automatically converted to an LPCTSTR. Any place you can use an LPCTSTR, you can also use a `CString` object.
 
-You can also specify a formal parameter as a constant string reference (that is, `const CString&`) if the argument will not be modified. Drop the **const** modifier if the string will be modified by the function. If a default null value is desired, initialize it to the null string [`""`], as shown below:
+You can also specify a formal parameter as a constant string reference (that is, `const CString&`) if the argument will not be modified. Drop the **`const`** modifier if the string will be modified by the function. If a default null value is desired, initialize it to the null string [`""`], as shown below:
 
 [!code-cpp[NVC_ATLMFC_Utilities#191](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_3.cpp)]
 

@@ -153,7 +153,7 @@ If your project has an include folder and also includes *windows.h* and other co
 
 ## Troubleshoot IntelliSense errors
 
-If you are not seeing the IntelliSense that you expect, you can troubleshoot by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Advanced** and setting **Enable Logging** to **true**. To start with, try setting **Logging Level** to 5, and **Logging Filters** to 8.
+If you are not seeing the IntelliSense that you expect, you can troubleshoot by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Advanced** and setting **Enable Logging** to **`true`**. To start with, try setting **Logging Level** to 5, and **Logging Filters** to 8.
 
 ![Diagnostic logging](media/diagnostic-logging.png)
 

@@ -59,7 +59,7 @@ The relationship between the multiplicative operators is given by the identity (
 
 ## Example
 
-The following program demonstrates the multiplicative operators. Note that either operand of `10 / 3` must be explicitly cast to type **float** to avoid truncation so that both operands are of type **float** before division.
+The following program demonstrates the multiplicative operators. Note that either operand of `10 / 3` must be explicitly cast to type **`float`** to avoid truncation so that both operands are of type **`float`** before division.
 
 ```cpp
 // expre_Multiplicative_Operators.cpp

@@ -6,7 +6,7 @@ ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
 ---
 # texture Class
 
-A texture is a data aggregate on an `accelerator_view` in the extent domain. It is a collection of variables, one for each element in an extent domain. Each variable holds a value corresponding to C++ primitive type ( `unsigned int`, `int`, `float`, `double`), a scalar type ( `norm`, or `unorm`), or a short vector type.
+A texture is a data aggregate on an `accelerator_view` in the extent domain. It is a collection of variables, one for each element in an extent domain. Each variable holds a value corresponding to C++ primitive type ( **`unsigned int`**, **`int`**, **`float`**, **`double`**), a scalar type ( `norm`, or `unorm`), or a short vector type.
 
 ## Syntax
 

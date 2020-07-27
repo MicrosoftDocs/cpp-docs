@@ -82,7 +82,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
 
 ### /Zc:wchar_t (wchar_t Is Native Type)
 
-(In Microsoft Visual C++ 6.0 and earlier, **wchar_t** was not implemented as a built-in type, but was declared in wchar.h as a typedef for unsigned short.) The C++ standard requires that **wchar_t** is a built-in type. Using the typedef version can cause portability problems. If you upgrade from earlier versions of Visual Studio and encounter compiler error C2664 because the code is trying to implicitly convert a **wchar_t** to **unsigned short**, we recommend that you change the code to fix the error, instead of setting `/Zc:wchar_t-`. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+(In Microsoft Visual C++ 6.0 and earlier, **`wchar_t`** was not implemented as a built-in type, but was declared in wchar.h as a typedef for unsigned short.) The C++ standard requires that **`wchar_t`** is a built-in type. Using the typedef version can cause portability problems. If you upgrade from earlier versions of Visual Studio and encounter compiler error C2664 because the code is trying to implicitly convert a **`wchar_t`** to **`unsigned short`**, we recommend that you change the code to fix the error, instead of setting `/Zc:wchar_t-`. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ### Upgrading with the linker options /NODEFAULTLIB, /ENTRY, and /NOENTRY
 

@@ -34,7 +34,7 @@ size_t mbrtoc32(
 ### Parameters
 
 *destination*\
-Pointer to the **char16_t** or **char32_t** equivalent of the UTF-8 multibyte character to convert. If null, the function doesn't store a value.
+Pointer to the **`char16_t`** or **`char32_t`** equivalent of the UTF-8 multibyte character to convert. If null, the function doesn't store a value.
 
 *source*\
 Pointer to the UTF-8 multibyte character string to convert.

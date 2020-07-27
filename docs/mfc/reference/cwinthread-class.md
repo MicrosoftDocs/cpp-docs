@@ -524,7 +524,7 @@ virtual int Run();
 
 ### Return Value
 
-An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).
+An **`int`** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).
 
 ### Remarks
 

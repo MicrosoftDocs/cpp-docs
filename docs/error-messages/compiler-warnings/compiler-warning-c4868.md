@@ -17,7 +17,7 @@ This warning is off by default. Use `/Wall` to activate this warning.
 
 To resolve this warning, first consider whether left-to-right evaluation of the initializer list elements is necessary, such as when evaluation of the elements might produce order-dependent side-effects. In many cases, the order in which elements are evaluated does not have an observable effect.
 
-If the order of evaluation must be left-to-right, consider if it's possible to pass the elements by `const` reference instead. A change such as this eliminates the warning in the following code sample.
+If the order of evaluation must be left-to-right, consider if it's possible to pass the elements by **`const`** reference instead. A change such as this eliminates the warning in the following code sample.
 
 ## Example
 

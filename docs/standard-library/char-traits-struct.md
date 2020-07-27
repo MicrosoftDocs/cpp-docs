@@ -293,7 +293,7 @@ static char_type *_Copy_s(
 The string or character array targeted to receive the copied sequence of characters.
 
 *dest_size*\
-The size of *dest*. If `char_type` is **char**, then this size is in bytes. If `char_type` is **wchar_t**, then this size is in words.
+The size of *dest*. If `char_type` is **`char`**, then this size is in bytes. If `char_type` is **`wchar_t`**, then this size is in words.
 
 *_From*\
 The source string or character array to be copied.
@@ -356,7 +356,7 @@ The EOF character.
 
 A value that represents end of file (such as EOF or WEOF).
 
-The C++ standard states that this value must not correspond to a valid `char_type` value. The Microsoft C++ compiler enforces this constraint for type **char**, but not for type **wchar_t**. The example below demonstrates this.
+The C++ standard states that this value must not correspond to a valid `char_type` value. The Microsoft C++ compiler enforces this constraint for type **`char`**, but not for type **`wchar_t`**. The example below demonstrates this.
 
 ### Example
 
@@ -409,7 +409,7 @@ The second of two characters to be tested for equality.
 
 ### Return Value
 
-**true** if the first character is equal to the second character; otherwise **false**.
+**`true`** if the first character is equal to the second character; otherwise **`false`**.
 
 ### Example
 
@@ -469,7 +469,7 @@ The second of the two characters to be tested for equality as `int_type`s.
 
 ### Return Value
 
-**true** if the first character is equal to the second character; otherwise **false**.
+**`true`** if the first character is equal to the second character; otherwise **`false`**.
 
 ### Example
 
@@ -680,7 +680,7 @@ The second of two characters to be tested for less than.
 
 ### Return Value
 
-**true** if the first character is less than the second character; otherwise **false**.
+**`true`** if the first character is less than the second character; otherwise **`false`**.
 
 ### Example
 
@@ -816,7 +816,7 @@ static char_type *_Move_s(
 The element at the beginning of the string or character array targeted to receive the copied sequence of characters.
 
 *dest_size*\
-The size of *dest*. If `char_type` is **char**, then this is in bytes. If `char_type` is **wchar_t**, then this is in words.
+The size of *dest*. If `char_type` is **`char`**, then this is in bytes. If `char_type` is **`wchar_t`**, then this is in words.
 
 *_From*\
 The element at the beginning of the source string or character array to be copied.
@@ -895,7 +895,7 @@ The character represented as an `int_type` to be tested for whether it is the EO
 
 The `int_type` representation of the character tested, if the `int_type` of the character is not equal to that of the EOF character.
 
-If the character `int_type` value is equal to the EOF `int_type` value, then **false**.
+If the character `int_type` value is equal to the EOF `int_type` value, then **`false`**.
 
 ### Example
 

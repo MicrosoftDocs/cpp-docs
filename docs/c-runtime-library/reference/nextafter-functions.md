@@ -52,7 +52,7 @@ Returns the next representable floating-point value of the return type after *x*
 
 The **nextafter** and **nexttoward** function families are equivalent, except for the parameter type of *y*. If *x* and *y* are equal, the value returned is *y* converted to the return type.
 
-Because C++ allows overloading, if you include \<cmath> you can call overloads of **nextafter** and **nexttoward** that return **float** and **long** **double** types. In a C program, **nextafter** and **nexttoward** always return **double**.
+Because C++ allows overloading, if you include \<cmath> you can call overloads of **nextafter** and **nexttoward** that return **`float`** and **`long double`** types. In a C program, **nextafter** and **nexttoward** always return **`double`**.
 
 The **_nextafter** and **_nextafterf** functions are Microsoft-specific. The **_nextafterf** function is only available when compiling for x64.
 

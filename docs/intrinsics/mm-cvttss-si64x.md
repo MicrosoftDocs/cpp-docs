@@ -22,7 +22,7 @@ __int64 _mm_cvttss_si64x(
 ### Parameters
 
 *value*\
-[in] An `__m128` structure containing single-precision floating-point values.
+[in] An **`__m128`** structure containing single-precision floating-point values.
 
 ## Return value
 
@@ -38,7 +38,7 @@ The result of the conversion of the first floating-point value to a 64-bit integ
 
 ## Remarks
 
-The intrinsic differs from `_mm_cvtss_si64x` only in that inexact conversions are truncated toward zero. Because the `__m128` structure represents an XMM register, the instruction generated moves data from an XMM register into system memory.
+The intrinsic differs from `_mm_cvtss_si64x` only in that inexact conversions are truncated toward zero. Because the **`__m128`** structure represents an XMM register, the instruction generated moves data from an XMM register into system memory.
 
 This routine is only available as an intrinsic.
 

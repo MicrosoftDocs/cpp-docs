@@ -143,17 +143,17 @@ In conformance mode under **/permissive-**, the call `tfunc(1729)` resolves to t
 
 ### Update your code for two-phase conformance
 
-Older versions of the compiler don't require the keywords `template` and `typename` everywhere the C++ Standard requires them. These keywords are needed in some positions to disambiguate how compilers should parse a dependent name during the first phase of lookup. For example:
+Older versions of the compiler don't require the keywords **`template`** and **`typename`** everywhere the C++ Standard requires them. These keywords are needed in some positions to disambiguate how compilers should parse a dependent name during the first phase of lookup. For example:
 
 `T::Foo<a || b>(c);`
 
-A conforming compiler parses `Foo` as a variable in the scope of `T`, meaning this code is a logical-or expression with `T::foo < a` as the left operand and `b > (c)` as the right operand. If you mean to use `Foo` as a function template, you must indicate that it's a template by adding the `template` keyword:
+A conforming compiler parses `Foo` as a variable in the scope of `T`, meaning this code is a logical-or expression with `T::foo < a` as the left operand and `b > (c)` as the right operand. If you mean to use `Foo` as a function template, you must indicate that it's a template by adding the **`template`** keyword:
 
 `T::template Foo<a || b>(c);`
 
-In versions Visual Studio 2017 version 15.3 and later, when **/permissive-** and **/Zc:twoPhase-** are specified, the compiler allows this code without the `template` keyword. It interprets the code as a call to a function template with an argument of `a || b`, because it only parses templates in a limited fashion. The code above isn't parsed at all in the first phase. During the second phase, there's enough context to tell that `T::Foo` is a template rather than a variable, so the compiler doesn't enforce use of the keyword.
+In versions Visual Studio 2017 version 15.3 and later, when **/permissive-** and **/Zc:twoPhase-** are specified, the compiler allows this code without the **`template`** keyword. It interprets the code as a call to a function template with an argument of `a || b`, because it only parses templates in a limited fashion. The code above isn't parsed at all in the first phase. During the second phase, there's enough context to tell that `T::Foo` is a template rather than a variable, so the compiler doesn't enforce use of the keyword.
 
-This behavior can also be seen by eliminating the keyword `typename` before names in function template bodies, initializers, default arguments, and noexcept arguments. For example:
+This behavior can also be seen by eliminating the keyword **`typename`** before names in function template bodies, initializers, default arguments, and noexcept arguments. For example:
 
 ```cpp
 template<typename T>
@@ -163,7 +163,7 @@ typename T::TYPE func(typename T::TYPE*)
 }
 ```
 
-If you don't use the keyword `typename` in the function body, this code compiles under **/permissive- /Zc:twoPhase-**, but not under **/permissive-** alone. The `typename` keyword is required to indicate that the `TYPE` is dependent. Because the body isn't parsed under **/Zc:twoPhase-**, the compiler does't require the keyword. In **/permissive-** conformance mode, code without the `typename` keyword generates errors. To migrate your code to conformance in Visual Studio 2017 version 15.3 and beyond, insert the `typename` keyword where it's missing.
+If you don't use the keyword **`typename`** in the function body, this code compiles under **/permissive- /Zc:twoPhase-**, but not under **/permissive-** alone. The **`typename`** keyword is required to indicate that the `TYPE` is dependent. Because the body isn't parsed under **/Zc:twoPhase-**, the compiler does't require the keyword. In **/permissive-** conformance mode, code without the **`typename`** keyword generates errors. To migrate your code to conformance in Visual Studio 2017 version 15.3 and beyond, insert the **`typename`** keyword where it's missing.
 
 Similarly, consider this code sample:
 
@@ -175,7 +175,7 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 }
 ```
 
-Under **/permissive- /Zc:twoPhase-** and in older compilers, the compiler only requires the `template` keyword on line 2. In conformance mode, the compiler now also requires the `template` keyword on line 4 to indicate that `T::X<T>` is a template. Look for code that is missing this keyword, and supply it to make your code conform to the standard.
+Under **/permissive- /Zc:twoPhase-** and in older compilers, the compiler only requires the **`template`** keyword on line 2. In conformance mode, the compiler now also requires the **`template`** keyword on line 4 to indicate that `T::X<T>` is a template. Look for code that is missing this keyword, and supply it to make your code conform to the standard.
 
 For more information about conformance issues, see [C++ conformance improvements in Visual Studio](../../overview/cpp-conformance-improvements.md) and [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 

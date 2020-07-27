@@ -35,7 +35,7 @@ The trace output will appear as shown below:
 
 The first part of each trace will always be `ATL: QIThunk`. Next is a value identifying the particular *interface thunk* being used. An interface thunk is an object used to maintain a reference count and provide the tracing capability used here. A new interface thunk is created on every call to `QueryInterface` except for requests for the `IUnknown` interface (in this case, the same thunk is returned every time to comply with COM's identity rules).
 
-Next you'll see `AddRef` or `Release` indicating which method was called. Following that, you'll see a value identifying the object whose interface reference count was changed. The value traced is the **this** pointer of the object.
+Next you'll see `AddRef` or `Release` indicating which method was called. Following that, you'll see a value identifying the object whose interface reference count was changed. The value traced is the **`this`** pointer of the object.
 
 The reference count that is traced is the reference count on that thunk after `AddRef` or `Release` was called. Note that this reference count may not match the reference count for the object. Each thunk maintains its own reference count to help you fully comply with COM's reference-counting rules.
 

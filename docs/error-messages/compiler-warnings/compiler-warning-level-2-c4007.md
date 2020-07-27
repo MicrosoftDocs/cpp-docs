@@ -9,4 +9,4 @@ ms.assetid: 56a70c07-59a5-4fd7-80ed-63592c65cbb7
 
 'function' : must be 'attribute'
 
-A required attribute for a function is not explicitly stated. For example, the function **main** must have the `__cdecl` attribute. The compiler forces the attribute.
+A required attribute for a function is not explicitly stated. For example, the function **main** must have the **`__cdecl`** attribute. The compiler forces the attribute.

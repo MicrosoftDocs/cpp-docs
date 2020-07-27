@@ -33,11 +33,11 @@ The following example shows how a `unique_ptr` smart pointer type from the C++ S
 
 The example demonstrates the following essential steps for using smart pointers.
 
-1. Declare the smart pointer as an automatic (local) variable. (Do not use the **new** or `malloc` expression on the smart pointer itself.)
+1. Declare the smart pointer as an automatic (local) variable. (Do not use the **`new`** or `malloc` expression on the smart pointer itself.)
 
 1. In the type parameter, specify the pointed-to type of the encapsulated pointer.
 
-1. Pass a raw pointer to a **new**-ed object in the smart pointer constructor. (Some utility functions or smart pointer constructors do this for you.)
+1. Pass a raw pointer to a **`new`**-ed object in the smart pointer constructor. (Some utility functions or smart pointer constructors do this for you.)
 
 1. Use the overloaded `->` and `*` operators to access the object.
 

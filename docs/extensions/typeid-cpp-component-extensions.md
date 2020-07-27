@@ -61,15 +61,15 @@ The name of a type (abstract declarator) for which you want the `System::Type` o
 
 ### Remarks
 
-`typeid` is used to get the <xref:System.Type> for a type at compile time.
+**`typeid`** is used to get the <xref:System.Type> for a type at compile time.
 
-`typeid` is similar to getting the System::Type for a type at run time using <xref:System.Type.GetType%2A> or <xref:System.Object.GetType%2A>. However, typeid only accepts a type name as a parameter.  If you want to use an instance of a type to get its System::Type name, use GetType.
+**`typeid`** is similar to getting the `System::Type` for a type at run time using <xref:System.Type.GetType%2A> or <xref:System.Object.GetType%2A>. However, **`typeid`** only accepts a type name as a parameter.  If you want to use an instance of a type to get its `System::Type` name, use `GetType`.
 
-`typeid` must be able to evaluate a type name (type) at compile time, whereas GetType evaluates the type to return at run time.
+**`typeid`** must be able to evaluate a type name (type) at compile time, whereas GetType evaluates the type to return at run time.
 
-`typeid` can take a native type name or common language runtime alias for the native type name; see [.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) for more information.
+**`typeid`** can take a native type name or common language runtime alias for the native type name; see [.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) for more information.
 
-`typeid` also works with native types, although it will still return a System::Type.  To get a type_info structure, use [typeid Operator](../cpp/typeid-operator.md).
+**`typeid`** also works with native types, although it will still return a `System::Type`.  To get a type_info structure, use [`typeid` Operator](../cpp/typeid-operator.md).
 
 ### Requirements
 
@@ -109,7 +109,7 @@ G
 System.Single*
 ```
 
-The following sample shows that a variable of type System::Type can be used to get the attributes on a type.  It also shows that for some types, you will have to create a typedef to use `typeid`.
+The following sample shows that a variable of type System::Type can be used to get the attributes on a type.  It also shows that for some types, you will have to create a typedef to use **`typeid`**.
 
 ```cpp
 // keyword__typeid_2.cpp

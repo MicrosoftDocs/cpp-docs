@@ -39,11 +39,11 @@ Equivalent to `#pragma vtordisp(0)`.
 
 The **vtordisp** pragma is applicable only to code that uses virtual bases. If a derived class overrides a virtual function that it inherits from a virtual base class, and if a constructor or destructor for the derived class calls that function using a pointer to the virtual base class, the compiler might introduce additional hidden `vtordisp` fields into classes with virtual bases.
 
-The **vtordisp** pragma affects the layout of classes that follow it. The `/vd0`, `/vd1`, and `/vd2` options specify the same behavior for complete modules. Specifying 0 or **off** suppresses the hidden `vtordisp` members. Turn off **vtordisp** only if there's no possibility that the class's constructors and destructors call virtual functions on the object pointed to by the `this` pointer.
+The **vtordisp** pragma affects the layout of classes that follow it. The `/vd0`, `/vd1`, and `/vd2` options specify the same behavior for complete modules. Specifying 0 or **off** suppresses the hidden `vtordisp` members. Turn off **vtordisp** only if there's no possibility that the class's constructors and destructors call virtual functions on the object pointed to by the **`this`** pointer.
 
 Specifying 1 or **on**, the default, enables the hidden `vtordisp` members where they're necessary.
 
-Specifying 2 enables the hidden `vtordisp` members for all virtual bases with virtual functions.  `#pragma vtordisp(2)` might be necessary to ensure correct performance of **dynamic_cast** on a partially constructed object. For more information, see [Compiler Warning (level 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md).
+Specifying 2 enables the hidden `vtordisp` members for all virtual bases with virtual functions.  `#pragma vtordisp(2)` might be necessary to ensure correct performance of **`dynamic_cast`** on a partially constructed object. For more information, see [Compiler Warning (level 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md).
 
 `#pragma vtordisp()`, with no arguments, restores the `vtordisp` setting to its initial setting.
 

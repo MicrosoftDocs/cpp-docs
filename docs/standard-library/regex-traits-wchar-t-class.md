@@ -7,7 +7,7 @@ ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b
 ---
 # regex_traits&lt;wchar_t&gt; Class
 
-Specialization of `regex_traits` for **wchar_t**.
+Specialization of `regex_traits` for **`wchar_t`**.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ class regex_traits<wchar_t>
 
 ## Remarks
 
-The class is an explicit specialization of class template [regex_traits](../standard-library/regex-traits-class.md) for elements of type **wchar_t** (so that it can take advantage of library functions that manipulate objects of this type).
+The class is an explicit specialization of class template [regex_traits](../standard-library/regex-traits-class.md) for elements of type **`wchar_t`** (so that it can take advantage of library functions that manipulate objects of this type).
 
 ## Requirements
 

@@ -17,12 +17,12 @@ This topic lists the DDX_OC functions used to exchange data between a property o
 |[DDX_OCBoolRO](#ddx_ocboolro)|Manages the transfer of **BOOL** data between a read-only property of an OLE control and a **BOOL** data member.|
 |[DDX_OCColor](#ddx_occolor)|Manages the transfer of **OLE_COLOR** data between a property of an OLE control and an **OLE_COLOR** data member.|
 |[DDX_OCColorRO](#ddx_occolorro)|Manages the transfer of **OLE_COLOR** data between a read-only property of an OLE control and an **OLE_COLOR** data member.|
-|[DDX_OCFloat](#ddx_ocfloat)|Manages the transfer of **float** (or **double**) data between a property of an OLE control and a **float** (or **double**) data member.|
-|[DDX_OCFloatRO](#ddx_ocfloatro)|Manages the transfer of **float** (or **double**) data between a read-only property of an OLE control and a **float** (or **double**) data member.|
-|[DDX_OCInt](#ddx_ocint)|Manages the transfer of **int** (or **long**) data between a property of an OLE control and an **int** (or **long**) data member.|
-|[DDX_OCIntRO](#ddx_ocintro)|Manages the transfer of **int** (or **long**) data between a read-only property of an OLE control and an **int** (or **long**) data member.|
-|[DDX_OCShort](#ddx_ocshort)|Manages the transfer of **short** data between a property of an OLE control and a **short** data member.|
-|[DDX_OCShortRO](#ddx_ocshortro)|Manages the transfer of **short** data between a read-only property of an OLE control and a **short** data member.|
+|[DDX_OCFloat](#ddx_ocfloat)|Manages the transfer of **`float`** (or **`double`**) data between a property of an OLE control and a **`float`** (or **`double`**) data member.|
+|[DDX_OCFloatRO](#ddx_ocfloatro)|Manages the transfer of **`float`** (or **`double`**) data between a read-only property of an OLE control and a **`float`** (or **`double`**) data member.|
+|[DDX_OCInt](#ddx_ocint)|Manages the transfer of **`int`** (or **`long`**) data between a property of an OLE control and an **`int`** (or **`long`**) data member.|
+|[DDX_OCIntRO](#ddx_ocintro)|Manages the transfer of **`int`** (or **`long`**) data between a read-only property of an OLE control and an **`int`** (or **`long`**) data member.|
+|[DDX_OCShort](#ddx_ocshort)|Manages the transfer of **`short`** data between a property of an OLE control and a **`short`** data member.|
+|[DDX_OCShortRO](#ddx_ocshortro)|Manages the transfer of **`short`** data between a read-only property of an OLE control and a **`short`** data member.|
 |[DDX_OCText](#ddx_octext)|Manages the transfer of **CString** data between a property of an OLE control and a **CString** data member.|
 |[DDX_OCTextRO](#ddx_octextro)|Manages the transfer of **CString** data between a read-only property of an OLE control and a **CString** data member.|
 
@@ -164,7 +164,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_ocfloat"></a> DDX_OCFloat
 
-The `DDX_OCFloat` function manages the transfer of **float** (or **double**) data between a property of an OLE control in a dialog box, form view, or control view object and a **float** (or **double**) data member of the dialog box, form view, or control view object.
+The `DDX_OCFloat` function manages the transfer of **`float`** (or **`double`**) data between a property of an OLE control in a dialog box, form view, or control view object and a **`float`** (or **`double`**) data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_OCFloat(
@@ -204,7 +204,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_ocfloatro"></a> DDX_OCFloatRO
 
-The `DDX_OCFloatRO` function manages the transfer of **float** (or **double**) data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **float** (or **double**) data member of the dialog box, form view, or control view object.
+The `DDX_OCFloatRO` function manages the transfer of **`float`** (or **`double`**) data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **`float`** (or **`double`**) data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_OCFloatRO(
@@ -244,7 +244,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_ocint"></a> DDX_OCInt
 
-The `DDX_OCInt` function manages the transfer of **int** (or **long**) data between a property of an OLE control in a dialog box, form view, or control view object and a **int** (or **long**) data member of the dialog box, form view, or control view object.
+The `DDX_OCInt` function manages the transfer of **`int`** (or **`long`**) data between a property of an OLE control in a dialog box, form view, or control view object and a **`int`** (or **`long`**) data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_OCInt(
@@ -284,7 +284,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_ocintro"></a> DDX_OCIntRO
 
-The `DDX_OCIntRO` function manages the transfer of **int** (or **long**) data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **int** (or **long**) data member of the dialog box, form view, or control view object.
+The `DDX_OCIntRO` function manages the transfer of **`int`** (or **`long`**) data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **`int`** (or **`long`**) data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_OCIntRO(

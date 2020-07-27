@@ -46,7 +46,7 @@ Create a static control in two steps. First, call the constructor to construct t
 
 If you create a `CStatic` object within a dialog box (through a dialog resource), the `CStatic` object is automatically destroyed when the user closes the dialog box.
 
-If you create a `CStatic` object within a window, you may also need to destroy it. A `CStatic` object created on the stack within a window is automatically destroyed. If you create the `CStatic` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when you are done with it.
+If you create a `CStatic` object within a window, you may also need to destroy it. A `CStatic` object created on the stack within a window is automatically destroyed. If you create the `CStatic` object on the heap by using the **`new`** function, you must call **`delete`** on the object to destroy it when you are done with it.
 
 ## Inheritance Hierarchy
 

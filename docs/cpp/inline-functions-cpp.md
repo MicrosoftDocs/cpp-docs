@@ -143,7 +143,7 @@ Recursive functions can be replaced with inline code to a depth specified by the
 
 **END Microsoft Specific**
 
-For more information on using the **inline** specifier, see:
+For more information on using the **`inline`** specifier, see:
 
 - [Inline Class Member Functions](../cpp/inline-functions-cpp.md)
 

@@ -9,7 +9,7 @@ ms.assetid: 2055418d-3c42-4d28-a7db-111586119ed9
 > [!NOTE]
 > This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
-Returns **true** for an empty controlled sequence.
+Returns **`true`** for an empty controlled sequence.
 
 ## Syntax
 

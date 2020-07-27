@@ -9,7 +9,7 @@ ms.assetid: e4d137ab-ed1d-457c-9eec-b70d97f1b0b4
 
 'identifier' : __based modifier illegal on reference
 
-The `__based` modifier can be used on pointers only.
+The **`__based`** modifier can be used on pointers only.
 
 The following sample generates C2640:
 

@@ -8,7 +8,7 @@ ms.assetid: 9cd8c7ea-5e24-429e-b6d9-d7b6041d8ba6
 
 When you create a window of your own, such as a child window, the framework uses much the same process as that described in [Document/View Creation](document-view-creation.md).
 
-All the window classes provided by MFC employ [two-stage construction](one-stage-and-two-stage-construction-of-objects.md). That is, during an invocation of the C++ **new** operator, the constructor allocates and initializes a C++ object but does not create a corresponding Windows window. That is done afterward by calling the [Create](reference/cwnd-class.md#create) member function of the window object.
+All the window classes provided by MFC employ [two-stage construction](one-stage-and-two-stage-construction-of-objects.md). That is, during an invocation of the C++ **`new`** operator, the constructor allocates and initializes a C++ object but does not create a corresponding Windows window. That is done afterward by calling the [Create](reference/cwnd-class.md#create) member function of the window object.
 
 The `Create` member function makes the Windows window and stores its `HWND` in the C++ object's public data member [m_hWnd](reference/cwnd-class.md#m_hwnd). `Create` gives complete flexibility over the creation parameters. Before calling `Create`, you may want to register a window class with the global function [AfxRegisterWndClass](reference/application-information-and-management.md#afxregisterwndclass) in order to set the icon and class styles for the frame.
 

@@ -9,7 +9,7 @@ ms.assetid: 284bfb7e-ab85-4fcb-9864-1ddf7f6c94ae
 
 'operator' : illegal operand of type 'void'
 
-The operator has a `void` operand.
+The operator has a **`void`** operand.
 
 The following sample generates C2186:
 

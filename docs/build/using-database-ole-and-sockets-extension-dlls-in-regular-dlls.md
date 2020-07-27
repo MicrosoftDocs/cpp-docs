@@ -83,7 +83,7 @@ extern "C" void WINAPI InitYourExtDLL()
 }
 ```
 
-Be sure to export the **InitYourExtDLL** function. This could be done using **__declspec(dllexport)** or in your DLL's .def file as follows:
+Be sure to export the **InitYourExtDLL** function. This could be done using **`__declspec(dllexport)`** or in your DLL's .def file as follows:
 
 ```
 // YourExtDLL.Def:

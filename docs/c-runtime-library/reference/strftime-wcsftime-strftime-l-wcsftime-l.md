@@ -50,7 +50,7 @@ size_t _wcsftime_l(
 Output string.
 
 *maxsize*<br/>
-Size of the *strDest* buffer, measured in characters (**char** or **wchar_t**).
+Size of the *strDest* buffer, measured in characters (**`char`** or **`wchar_t`**).
 
 *format*<br/>
 Format-control string.

@@ -17,9 +17,9 @@ __declspec(jitintrinsic)
 
 ## Remarks
 
-**jitintrinsic** adds a MODOPT (<xref:System.Runtime.CompilerServices.IsJitIntrinsic>) to a function signature.
+**`jitintrinsic`** adds a MODOPT (<xref:System.Runtime.CompilerServices.IsJitIntrinsic>) to a function signature.
 
-Users are discouraged from using this **__declspec** modifier, as unexpected results can occur.
+Users are discouraged from using this **`__declspec`** modifier, as unexpected results can occur.
 
 ## See also
 

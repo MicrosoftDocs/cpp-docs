@@ -43,9 +43,9 @@ The threading model of the class. This parameter defaults to the global object t
 
 ## To use this class:
 
-- **typedef** a specialization of this class.
+- **`typedef`** a specialization of this class.
 
-- Use the **typedef** as the template argument in a specialization of `CComObject`.
+- Use the **`typedef`** as the template argument in a specialization of `CComObject`.
 
 - Create an instance of the `CComObject` specialization.
 
@@ -79,7 +79,7 @@ This template function can be used to implement the `_NewEnum` property of a col
 
 [!code-cpp[NVC_ATL_COM#33](../../atl/codesnippet/cpp/ccomenum-class_2.h)]
 
-This code creates a **typedef** for `CComEnum` that exposes a vector of VARIANTs through the `IEnumVariant` interface. The `CVariantArrayCollection` class simply specializes `CreateEnumerator` to work with enumerator objects of this type and passes the necessary arguments.
+This code creates a **`typedef`** for `CComEnum` that exposes a vector of VARIANTs through the `IEnumVariant` interface. The `CVariantArrayCollection` class simply specializes `CreateEnumerator` to work with enumerator objects of this type and passes the necessary arguments.
 
 ## See also
 

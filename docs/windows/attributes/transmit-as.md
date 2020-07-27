@@ -62,7 +62,7 @@ struct _TREE_NODE_TYPE * right;
 
 |||
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

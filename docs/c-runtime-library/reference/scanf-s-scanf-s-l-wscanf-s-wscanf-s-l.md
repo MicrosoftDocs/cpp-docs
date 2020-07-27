@@ -71,7 +71,7 @@ scanf_s("%9s", s, (unsigned)_countof(s)); // buffer size is 10, width specificat
 The buffer size includes the terminal null. You can use a width specification field to ensure the token that's read in fits into the buffer. When a token is too large to fit, nothing is written to the buffer unless there's a width specification.
 
 > [!NOTE]
-> The size parameter is of type **unsigned**, not **size_t**. Use a static cast to convert a **size_t** value to **unsigned** for 64-bit build configurations.
+> The size parameter is of type **`unsigned`**, not **size_t**. Use a static cast to convert a **size_t** value to **`unsigned`** for 64-bit build configurations.
 
 The buffer size parameter describes the maximum number of characters, not bytes. In this example, the width of the buffer type doesn't match the width of the format specifier.
 

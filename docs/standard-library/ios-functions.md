@@ -9,7 +9,7 @@ helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::d
 
 ## <a name="boolalpha"></a> boolalpha
 
-Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as **true** or **false** in the stream.
+Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as **`true`** or **`false`** in the stream.
 
 ```cpp
 ios_base& boolalpha(ios_base& str);
@@ -26,7 +26,7 @@ A reference to the object from which *str* is derived.
 
 ### Remarks
 
-By default, variables of type **bool** are displayed as 1 or 0.
+By default, variables of type **`bool`** are displayed as 1 or 0.
 
 `boolalpha` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::boolalpha`), and then returns *str*.
 

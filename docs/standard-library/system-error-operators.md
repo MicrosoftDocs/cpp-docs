@@ -31,7 +31,7 @@ The object to be tested for equality.
 
 ### Return Value
 
-**true** if the objects are equal; **false** if objects are not equal.
+**`true`** if the objects are equal; **`false`** if objects are not equal.
 
 ### Remarks
 
@@ -58,7 +58,7 @@ The object to be tested for inequality.
 
 ### Return Value
 
-**true** if the object passed in *left* is not equal to the object passed in *right*; otherwise **false**.
+**`true`** if the object passed in *left* is not equal to the object passed in *right*; otherwise **`false`**.
 
 ### Remarks
 
@@ -102,7 +102,7 @@ The object to be compared.
 
 ### Return Value
 
-**true** if the object passed in *left* is less than the object passed in *right*; Otherwise, **false**.
+**`true`** if the object passed in *left* is less than the object passed in *right*; Otherwise, **`false`**.
 
 ### Remarks
 

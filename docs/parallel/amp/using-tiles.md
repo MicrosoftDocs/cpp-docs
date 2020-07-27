@@ -159,7 +159,7 @@ The previous example illustrates the tile layout and indices, but is not in itse
 
 5. There is a line of code to copy the values in each tile to the `tile_static` array. For each thread, after the value is copied to the array, execution on the thread stops due to the call to `tile_barrier::wait`.
 
-6. When all of the threads in a tile have reached the barrier, the average can be calculated. Because the code executes for every thread, there is an `if` statement to only calculate the average on one thread. The average is stored in the averages variable. The barrier is essentially the construct that controls calculations by tile, much as you might use a `for` loop.
+6. When all of the threads in a tile have reached the barrier, the average can be calculated. Because the code executes for every thread, there is an `if` statement to only calculate the average on one thread. The average is stored in the averages variable. The barrier is essentially the construct that controls calculations by tile, much as you might use a **`for`** loop.
 
 7. The data in the `averages` variable, because it is an `array` object, must be copied back to the host. This example uses the vector conversion operator.
 

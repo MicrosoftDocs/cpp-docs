@@ -127,7 +127,7 @@ They have values of 10 & 20.
 
 ## <a name="all_of"></a> all_of
 
-Returns **true** when a condition is present at each element in the given range.
+Returns **`true`** when a condition is present at each element in the given range.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -156,15 +156,15 @@ An input iterator that indicates where to start to check for a condition. The it
 An input iterator that indicates the end of the range of elements to check for a condition.
 
 *pred*\
-A condition to test for. This is a user-defined predicate function object that defines the condition to be satisfied by an element being checked. A unary predicate takes a single argument and returns **true** or **false**.
+A condition to test for. This is a user-defined predicate function object that defines the condition to be satisfied by an element being checked. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
 
-Returns **true** if the condition is detected at each element in the indicated range or if the range is empty, and **false** otherwise.
+Returns **`true`** if the condition is detected at each element in the indicated range or if the range is empty, and **`false`** otherwise.
 
 ### Remarks
 
-The template function returns **true** only if, for each `N` in the range `[0, last - first)`, the predicate `pred(*(first + N))` is **true**.
+The template function returns **`true`** only if, for each `N` in the range `[0, last - first)`, the predicate `pred(*(first + N))` is **`true`**.
 
 ### Example
 
@@ -203,7 +203,7 @@ All the elements are even numbers.
 
 ## <a name="any_of"></a> any_of
 
-Returns **true** when a condition is present at least once in the specified range of elements.
+Returns **`true`** when a condition is present at least once in the specified range of elements.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -232,15 +232,15 @@ An input iterator that indicates where to start checking a range of elements for
 An input iterator that indicates the end of the range of elements to check for a condition.
 
 *pred*\
-A condition to test for. This is provided by a user-defined predicate function object. The predicate defines the condition to be satisfied by the element being tested. A unary predicate takes a single argument and returns **true** or **false**.
+A condition to test for. This is provided by a user-defined predicate function object. The predicate defines the condition to be satisfied by the element being tested. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
 
-Returns **true** if the condition is detected at least once in the indicated range, **false** if the condition is never detected.
+Returns **`true`** if the condition is detected at least once in the indicated range, **`false`** if the condition is never detected.
 
 ### Remarks
 
-The template function returns **true** only if, for some `N` in the range
+The template function returns **`true`** only if, for some `N` in the range
 
 `[0, last - first)`, the predicate `pred(*(first + N))` is true.
 
@@ -309,11 +309,11 @@ A forward iterator addressing the position one past the final element in the ran
 The value required to be matched by the value of the element or that must satisfy the condition with the element value specified by the binary predicate.
 
 *pred*\
-User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
-**true** if an element is found in the range that is equal or equivalent to the specified value; otherwise, **false**.
+**`true`** if an element is found in the range that is equal or equivalent to the specified value; otherwise, **`false`**.
 
 ### Remarks
 
@@ -448,7 +448,7 @@ The lower bound of values to clamp *value* to.
 The upper bound of values to clamp *value* to.
 
 *pred*\
-A predicate used to compare *value* to *lower* or *upper*. A comparison predicate takes two arguments and returns **true** if the first is in some sense less than the second, and otherwise, **false**.
+A predicate used to compare *value* to *lower* or *upper*. A comparison predicate takes two arguments and returns **`true`** if the first is in some sense less than the second, and otherwise, **`false`**.
 
 ### Return value
 
@@ -660,7 +660,7 @@ v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
 
 ## <a name="copy_if"></a> copy_if
 
-In a range of elements, copies the elements that are **true** for the specified condition.
+In a range of elements, copies the elements that are **`true`** for the specified condition.
 
 ```cpp
 template<class InputIterator, class OutputIterator, class UnaryPredicate>
@@ -694,7 +694,7 @@ An input iterator that indicates the end of the range.
 The output iterator that indicates the destination for the copied elements.
 
 *pred*\
-The condition against which every element in the range is tested. This condition is provided by a user-defined predicate function object. A unary predicate takes one argument and returns **true** or **false**.
+The condition against which every element in the range is tested. This condition is provided by a user-defined predicate function object. A unary predicate takes one argument and returns **`true`** or **`false`**.
 
 ### Return value
 
@@ -946,7 +946,7 @@ An input iterator addressing the position of the first element in the range to b
 An input iterator addressing the position one past the final element in the range to be searched.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if an element is to be counted. A unary predicate takes a single argument and returns **true** or **false**.
+User-defined predicate function object that defines the condition to be satisfied if an element is to be counted. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
 
@@ -1087,17 +1087,17 @@ An input iterator addressing the position of the first element in the second ran
 An input iterator addressing the position of one past the last element in the second range to be tested.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
-**true** if and only if the ranges are identical or equivalent under the binary predicate when compared element by element; otherwise, **false**.
+**`true`** if and only if the ranges are identical or equivalent under the binary predicate when compared element by element; otherwise, **`false`**.
 
 ### Remarks
 
 The range to be searched must be valid; all iterators must be dereferenceable and the last position is reachable from the first by incrementation.
 
-If the two ranges are equal length, then the time complexity of the algorithm is linear in the number of elements contained in the range. Otherwise the function immediately returns **false**.
+If the two ranges are equal length, then the time complexity of the algorithm is linear in the number of elements contained in the range. Otherwise the function immediately returns **`false`**.
 
 Neither the `operator==` nor the user-defined predicate is required to impose an equivalence relation that symmetric, reflexive and transitive between its operands.
 
@@ -1165,7 +1165,7 @@ A forward iterator addressing the position one past the final element in the ran
 The value being searched for in the ordered range.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -1566,7 +1566,7 @@ A forward iterator addressing the position of the first element in the range to 
 A forward iterator addressing the position one past the last element in the range to search for.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -1730,7 +1730,7 @@ A forward iterator addressing the position of the first element in the range to 
 A forward iterator addressing the position one past the final element in the range to be matched.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -1868,11 +1868,11 @@ An input iterator addressing the position of the first element in the range to b
 An input iterator addressing the position one past the final element in the range to be searched.
 
 *pred*\
-User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **true** if satisfied, or **false** if not satisfied. The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **const** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
+User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** if satisfied, or **`false`** if not satisfied. The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **`const`** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
 
 ### Return value
 
-An input iterator that refers to the first element in the range that satisfies the condition specified by the predicate (the predicate results in **true**). If no element is found to satisfy the predicate, returns *last*.
+An input iterator that refers to the first element in the range that satisfies the condition specified by the predicate (the predicate results in **`true`**). If no element is found to satisfy the predicate, returns *last*.
 
 ### Remarks
 
@@ -1990,11 +1990,11 @@ An input iterator addressing the position of the first element in the range to b
 An input iterator addressing the position one past the final element in the range to be searched.
 
 *pred*\
-User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be not satisfied by the element being searched for. A unary predicate takes a single argument and returns **true** if satisfied, or **false** if not satisfied. The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **const** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
+User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be not satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** if satisfied, or **`false`** if not satisfied. The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **`const`** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
 
 ### Return value
 
-An input iterator that refers to the first element in the range that does not satisfy the condition specified by the predicate (the predicate results in **false**). If all elements satisfy the predicate (the predicate results in **true** for every element), returns *last*.
+An input iterator that refers to the first element in the range that does not satisfy the condition specified by the predicate (the predicate results in **`false`**). If all elements satisfy the predicate (the predicate results in **`true`** for every element), returns *last*.
 
 ### Remarks
 
@@ -2396,11 +2396,11 @@ An input iterator addressing the position of the first element in second of two 
 An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be tested for whether all the elements of the second are contained in the first.
 
 *pred*\
-User-defined predicate function object that defines sense in which one element is less than another. A comparison predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
-**true** if the first sorted range contains all the elements in the second sorted range; otherwise, **false**.
+**`true`** if the first sorted range contains all the elements in the second sorted range; otherwise, **`false`**.
 
 ### Remarks
 
@@ -2614,7 +2614,7 @@ A bidirectional iterator addressing the position of the first element in the sec
 A bidirectional iterator addressing the position one past the last element in the second of two consecutive sorted ranges to be combined and sorted into a single range.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.
+User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Remarks
 
@@ -2737,7 +2737,7 @@ vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 
 ## <a name="is_heap"></a> is_heap
 
-Returns **true** if the elements in the specified range form a heap.
+Returns **`true`** if the elements in the specified range form a heap.
 
 ```cpp
 template<class RandomAccessIterator>
@@ -2777,11 +2777,11 @@ A random access iterator that indicates the start of a range to check for a heap
 A random access iterator that indicates the end of a range.
 
 *pred*\
-A condition to test to order elements. A comparison predicate takes two arguments and returns **true** or **false**.
+A condition to test to order elements. A comparison predicate takes two arguments and returns **`true`** or **`false`**.
 
 ### Return value
 
-Returns **true** if the elements in the specified range form a heap, **false** if they do not.
+Returns **`true`** if the elements in the specified range form a heap, **`false`** if they do not.
 
 ### Remarks
 
@@ -2847,7 +2847,7 @@ The second template function behaves the same as the first, except that it uses 
 
 ## <a name="is_partitioned"></a> is_partitioned
 
-Returns **true** if all the elements in the given range that test **true** for a condition come before any elements that test **false**.
+Returns **`true`** if all the elements in the given range that test **`true`** for a condition come before any elements that test **`false`**.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -2876,15 +2876,15 @@ An input iterator that indicates where a range starts to check for a condition.
 An input iterator that indicates the end of a range.
 
 *pred*\
-The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **true** or **false**.
+The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
 
-Returns **true** when all of the elements in the given range that test **true** for a condition come before any elements that test **false**, and otherwise, returns **false**.
+Returns **`true`** when all of the elements in the given range that test **`true`** for a condition come before any elements that test **`false`**, and otherwise, returns **`false`**.
 
 ### Remarks
 
-The template function returns **true** only if all elements in `[first, last)` are partitioned by *pred*; that is, all elements `X` in `[first, last)` for which `pred (X)` is true occur before all elements `Y` for which `pred (Y)` is **false**.
+The template function returns **`true`** only if all elements in `[first, last)` are partitioned by *pred*; that is, all elements `X` in `[first, last)` for which `pred (X)` is true occur before all elements `Y` for which `pred (Y)` is **`false`**.
 
 ## <a name="is_permutation"></a> is_permutation
 
@@ -2936,17 +2936,17 @@ A forward iterator that refers to the first element of a second range, used for 
 A forward iterator that refers to one past the last element of a second range, used for comparison.
 
 *pred*\
-A predicate that tests for equivalence and returns a **bool**.
+A predicate that tests for equivalence and returns a **`bool`**.
 
 ### Return value
 
-**true** when the ranges can be rearranged so as to be identical according to the comparator predicate; otherwise, **false**.
+**`true`** when the ranges can be rearranged so as to be identical according to the comparator predicate; otherwise, **`false`**.
 
 ### Remarks
 
 `is_permutation` has quadratic complexity in the worst case.
 
-The first template function assumes that there are as many elements in the range beginning at *first2* as there are in the range designated by `[first1, last1)`. If there are more elements in the second range, they are ignored; if there are less, undefined behavior will occur. The third template function (C++14 and later) does not make this assumption. Both return **true** only if, for each element X in the range designated by `[first1, last1)` there are as many elements Y in the same range for which X == Y as there are in the range beginning at *first2* or `[first2, last2)`. Here, `operator==` must perform a pairwise comparison between its operands.
+The first template function assumes that there are as many elements in the range beginning at *first2* as there are in the range designated by `[first1, last1)`. If there are more elements in the second range, they are ignored; if there are less, undefined behavior will occur. The third template function (C++14 and later) does not make this assumption. Both return **`true`** only if, for each element X in the range designated by `[first1, last1)` there are as many elements Y in the same range for which X == Y as there are in the range beginning at *first2* or `[first2, last2)`. Here, `operator==` must perform a pairwise comparison between its operands.
 
 The second and fourth template functions behave the same, except that they replace `operator==(X, Y)` with `Pred(X, Y)`. To behave correctly, the predicate must be symmetric, reflexive and transitive.
 
@@ -3008,7 +3008,7 @@ int main()
 
 ## <a name="is_sorted"></a> is_sorted
 
-Returns **true** if the elements in the specified range are in sorted order.
+Returns **`true`** if the elements in the specified range are in sorted order.
 
 ```cpp
 template<class ForwardIterator>
@@ -3048,7 +3048,7 @@ A forward iterator that indicates where the range to check begins.
 A forward iterator that indicates the end of a range.
 
 *pred*\
-The condition to test to determine an order between two elements. A comparison predicate takes two arguments and returns **true** or **false**. This performs the same task as `operator<`.
+The condition to test to determine an order between two elements. A comparison predicate takes two arguments and returns **`true`** or **`false`**. This performs the same task as `operator<`.
 
 ### Remarks
 
@@ -3060,7 +3060,7 @@ The second template function returns `is_sorted_until( first, last , pred ) == l
 
 Returns a `ForwardIterator` that is set to the last element that is in sorted order from a specified range.
 
-The second version lets you provide a comparison function object that returns **true** when two given elements are in sorted order, and **false** otherwise.
+The second version lets you provide a comparison function object that returns **`true`** when two given elements are in sorted order, and **`false`** otherwise.
 
 ```cpp
 template<class ForwardIterator>
@@ -3100,7 +3100,7 @@ A forward iterator that indicates where the range to check starts.
 A forward iterator that indicates the end of a range.
 
 *pred*\
-The condition to test to determine an order between two elements. A comparison predicate takes two arguments and returns **true** or **false**.
+The condition to test to determine an order between two elements. A comparison predicate takes two arguments and returns **`true`** or **`false`**.
 
 ### Return value
 
@@ -3324,11 +3324,11 @@ An input iterator addressing the position of the first element in the second ran
 An input iterator addressing the position one past the final element in the second range to be compared.
 
 *pred*\
-User-defined predicate function object that defines sense in which one element is less than another. A comparison predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
-**true** if the first range is lexicographically less than the second range; otherwise **false**.
+**`true`** if the first range is lexicographically less than the second range; otherwise **`false`**.
 
 ### Remarks
 
@@ -3338,7 +3338,7 @@ A lexicographical comparison between sequences compares them element by element 
 
 - No inequalities are found, but one sequence has more elements than the other, and the shorter sequence is considered less than the longer sequence.
 
-- No inequalities are found and the sequences have the same number of elements, and so the sequences are equal and the result of the comparison is **false**.
+- No inequalities are found and the sequences have the same number of elements, and so the sequences are equal and the result of the comparison is **`false`**.
 
 ### Example
 
@@ -3466,7 +3466,7 @@ A forward iterator addressing the position one past the final element in the ran
 The value whose first position or possible first position is being searched for in the ordered range.
 
 *pred*\
-User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -3600,7 +3600,7 @@ A random-access iterator addressing the position of the first element in the ran
 A random-access iterator addressing the position one past the final element in the range to be converted into a heap.
 
 *pred*\
-User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
 
@@ -3699,7 +3699,7 @@ The greater of the two objects, unless neither is greater; in that case, it retu
 
 ### Remarks
 
-The `max` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that operates on a range of elements, use [max_element](algorithm-functions.md#max_element) instead. Visual Studio 2017 enables **constexpr** on the overloads that take an initializer_list.
+The `max` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that operates on a range of elements, use [max_element](algorithm-functions.md#max_element) instead. Visual Studio 2017 enables **`constexpr`** on the overloads that take an initializer_list.
 
 ### Example
 
@@ -3911,7 +3911,7 @@ A forward iterator addressing the position of the first element in the range to 
 A forward iterator addressing the position one past the final element in the range to be searched for the largest element.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.
+User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
 
@@ -4086,7 +4086,7 @@ An input iterator addressing the position one past the last element in second of
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be combined into a single sorted range.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **true** when the first element is less than the second element, and **false** otherwise.
+User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first element is less than the second element, and **`false`** otherwise.
 
 ### Return value
 
@@ -4475,7 +4475,7 @@ A forward iterator addressing the position of the first element in the range to 
 A forward iterator addressing the position one past the final element in the range to be searched for the smallest element.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **true** when the first element is less than the second element, and **false** otherwise.
+User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first element is less than the second element, and **`false`** otherwise.
 
 ### Return value
 
@@ -4639,7 +4639,7 @@ A forward iterator that indicates the beginning of a range.
 A forward iterator that indicates the end of a range.
 
 *pred*\
-A user-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **true** when the first is less than the second, and **false** otherwise.
+A user-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first is less than the second, and **`false`** otherwise.
 
 ### Return value
 
@@ -4801,7 +4801,7 @@ An input iterator addressing the position of the first element in the second ran
 An input iterator addressing the position of one past the last element in the second range to be tested.
 
 *pred*\
-User-defined predicate function object that compares the current elements in each range and determines whether they are equivalent. It returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that compares the current elements in each range and determines whether they are equivalent. It returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -5004,11 +5004,11 @@ A bidirectional iterator pointing to the position of the first element in the ra
 A bidirectional iterator pointing to the position one past the final element in the range to be permuted.
 
 *pred*\
-User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
-**true** if the lexicographically next permutation exists and has replaced the original ordering of the range; otherwise **false**, in which case the ordering is transformed into the lexicographically smallest permutation.
+**`true`** if the lexicographically next permutation exists and has replaced the original ordering of the range; otherwise **`false`**, in which case the ordering is transformed into the lexicographically smallest permutation.
 
 ### Remarks
 
@@ -5206,7 +5206,7 @@ A random-access iterator addressing the position of element to be correctly orde
 A random-access iterator addressing the position one past the final element in the range to be partitioned.
 
 *pred*\
-User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A comparison predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
 
@@ -5286,7 +5286,7 @@ int main() {
 
 ## <a name="none_of"></a> none_of
 
-Returns **true** when a condition is never present among elements in the given range.
+Returns **`true`** when a condition is never present among elements in the given range.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -5315,15 +5315,15 @@ An input iterator that indicates where to start to check a range of elements for
 An input iterator that indicates the end of a range of elements.
 
 *pred*\
-The condition to test for. This is provided by a user-defined predicate function object that defines the condition. A unary predicate takes a single argument and returns **true** or **false**.
+The condition to test for. This is provided by a user-defined predicate function object that defines the condition. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
 
-Returns **true** if the condition is not detected at least once in the indicated range, and **false** if the condition is detected.
+Returns **`true`** if the condition is not detected at least once in the indicated range, and **`false`** if the condition is detected.
 
 ### Remarks
 
-The template function returns **true** only if, for some `N` in the range `[0, last - first)`, the predicate `pred(*(first + N))` is always **false**.
+The template function returns **`true`** only if, for some `N` in the range `[0, last - first)`, the predicate `pred(*(first + N))` is always **`false`**.
 
 ## <a name="partial_sort"></a> partial_sort
 
@@ -5374,7 +5374,7 @@ A random-access iterator addressing the position one past the final element in t
 A random-access iterator addressing the position one past the final element in the range to be partially sorted.
 
 *pred*\
-User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
 
@@ -5512,7 +5512,7 @@ A random-access iterator addressing the position of the first element in the sor
 A random-access iterator addressing the position one past the final element in the sorted destination range.
 
 *pred*\
-User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -5631,7 +5631,7 @@ A bidirectional iterator addressing the position of the first element in the ran
 A bidirectional iterator addressing the position one past the final element in the range to be partitioned.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if an element is to be classified. A unary predicate takes a single argument and returns **true** or **false**.
+User-defined predicate function object that defines the condition to be satisfied if an element is to be classified. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
 
@@ -5688,7 +5688,7 @@ int main()
 
 ## <a name="partition_copy"></a> partition_copy
 
-Copies elements for which a condition is **true** to one destination, and for which the condition is **false** to another. The elements must come from a specified range.
+Copies elements for which a condition is **`true`** to one destination, and for which the condition is **`false`** to another. The elements must come from a specified range.
 
 ```cpp
 template<class InputIterator, class OutputIterator1, class OutputIterator2, class UnaryPredicate>
@@ -5727,7 +5727,7 @@ An output iterator used to copy elements that return true for a condition tested
 An output iterator used to copy elements that return false for a condition tested by using *pred*.
 
 *pred*\
-The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be tested. A unary predicate takes a single argument and returns **true** or **false**.
+The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be tested. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Remarks
 
@@ -5754,7 +5754,7 @@ A `ForwardIterator` that indicates the start of a range to check for a condition
 A `ForwardIterator` that indicates the end of a range.
 
 *pred*\
-The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **true** or **false**.
+The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
 
@@ -5762,7 +5762,7 @@ Returns a `ForwardIterator` that refers to the first element that does not fulfi
 
 ### Remarks
 
-The template function finds the first iterator `it` in `[first, last)` for which `pred(*it)` is **false**. The sequence must be ordered by *pred*.
+The template function finds the first iterator `it` in `[first, last)` for which `pred(*it)` is **`false`**. The sequence must be ordered by *pred*.
 
 ## <a name="pop_heap"></a> pop_heap
 
@@ -5790,7 +5790,7 @@ A random-access iterator addressing the position of the first element in the hea
 A random-access iterator addressing the position one past the final element in the heap.
 
 *pred*\
-User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
 
@@ -5899,11 +5899,11 @@ A bidirectional iterator pointing to the position of the first element in the ra
 A bidirectional iterator pointing to the position one past the final element in the range to be permuted.
 
 *pred*\
-User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
-**true** if the lexicographically previous permutation exists and has replaced the original ordering of the range; otherwise **false**, in which case the ordering is transformed into the lexicographically largest permutation.
+**`true`** if the lexicographically previous permutation exists and has replaced the original ordering of the range; otherwise **`false`**, in which case the ordering is transformed into the lexicographically largest permutation.
 
 ### Remarks
 
@@ -6074,7 +6074,7 @@ A random-access iterator addressing the position of the first element in the hea
 A random-access iterator addressing the position one past the final element in the range to be converted into a heap.
 
 *pred*\
-User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
 
@@ -7441,7 +7441,7 @@ A forward iterator addressing the position of the first element in the range to 
 A forward iterator addressing the position one past the final element in the range to be matched.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 *searcher*\
 The searcher that encapsulates the pattern to look for and the search algorithm to use. For more information on searchers, see [default_searcher class](default-searcher-class.md), [boyer_moore_horspool_searcher class](boyer-moore-horspool-searcher-class.md), and [boyer_moore_searcher class](boyer-moore-searcher-class.md).
@@ -7613,7 +7613,7 @@ The size of the subsequence being searched for.
 The value of the elements in the sequence being searched for.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -7773,7 +7773,7 @@ An input iterator addressing the position one past the last element in second of
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the difference of the two source ranges.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.
+User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
 
@@ -7975,7 +7975,7 @@ An input iterator addressing the position one past the last element in second of
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the intersection of the two source ranges.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.
+User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
 
@@ -8173,7 +8173,7 @@ An input iterator addressing the position one past the last element in second of
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the symmetric difference of the two source ranges.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.
+User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
 
@@ -8375,7 +8375,7 @@ An input iterator addressing the position one past the last element in second of
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the union of the two source ranges.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.
+User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
 
@@ -8583,7 +8583,7 @@ A random-access iterator addressing the position of the first element in the ran
 A random-access iterator addressing the position one past the final element in the range to be sorted.
 
 *pred*\
-User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. This binary predicate takes two arguments and returns **true** if the two arguments are in order and **false** otherwise. This comparator function must impose a strict weak ordering on pairs of elements from the sequence. For more information, see [Algorithms](algorithms.md).
+User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. This binary predicate takes two arguments and returns **`true`** if the two arguments are in order and **`false`** otherwise. This comparator function must impose a strict weak ordering on pairs of elements from the sequence. For more information, see [Algorithms](algorithms.md).
 
 ### Remarks
 
@@ -8687,7 +8687,7 @@ A random-access iterator addressing the position of the first element in the tar
 A random-access iterator addressing the position one past the final element in the target heap.
 
 *pred*\
-User-defined predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
 
@@ -8792,7 +8792,7 @@ A bidirectional iterator addressing the position of the first element in the ran
 A bidirectional iterator addressing the position one past the final element in the range to be partitioned.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if an element is to be classified. A unary predicate takes a single argument and returns **true** if satisfied, or **false** if not satisfied.
+User-defined predicate function object that defines the condition to be satisfied if an element is to be classified. A unary predicate takes a single argument and returns **`true`** if satisfied, or **`false`** if not satisfied.
 
 ### Return value
 
@@ -8893,7 +8893,7 @@ A bidirectional iterator addressing the position of the first element in the ran
 A bidirectional iterator addressing the position one past the final element in the range to be sorted.
 
 *pred*\
-User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
 
@@ -9355,7 +9355,7 @@ A forward iterator addressing the position of the first element in the range to 
 A forward iterator addressing the position one past the final element in the range to be scanned for duplicate removal.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -9511,7 +9511,7 @@ A forward iterator addressing the position one past the final element in the sou
 An output iterator addressing the position of the first element in the destination range that is receiving the copy with consecutive duplicates removed.
 
 *pred*\
-User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
@@ -9630,7 +9630,7 @@ The position one past the final element in the range to be searched.
 The value in the ordered range that needs to be exceeded by the value of the element addressed by the iterator returned.
 
 *pred*\
-User-defined comparison predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
+User-defined comparison predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 

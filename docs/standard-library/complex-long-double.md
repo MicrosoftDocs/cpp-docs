@@ -7,7 +7,7 @@ ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
 ---
 # complex&lt;long double&gt;
 
-This explicitly specialized class template describes an object that stores an ordered pair of objects, both of type **long double**, the first representing the real part of a complex number and the second representing the imaginary part.
+This explicitly specialized class template describes an object that stores an ordered pair of objects, both of type **`long double`**, the first representing the real part of a complex number and the second representing the imaginary part.
 
 ## Syntax
 
@@ -29,25 +29,25 @@ complex(
 ### Parameters
 
 *_RealVal*\
-The value of type **long double** for the real part of the complex number being constructed.
+The value of type **`long double`** for the real part of the complex number being constructed.
 
 *_ImagVal*\
-The value of type **long double** for the imaginary part of the complex number being constructed.
+The value of type **`long double`** for the imaginary part of the complex number being constructed.
 
 *complexNum*\
-The complex number of type **double** or of type **float** whose real and imaginary parts are used to initialize a complex number of type **long double** being constructed.
+The complex number of type **`double`** or of type **`float`** whose real and imaginary parts are used to initialize a complex number of type **`long double`** being constructed.
 
 ## Return Value
 
-A complex number of type **long double**.
+A complex number of type **`long double`**.
 
 ## Remarks
 
-The explicit specialization of the class template `complex` to a complex class of type **long double** differs from the class template only in the constructors it defines. The conversion from **long double** to **float** is allowed to be implicit, but the conversion from **double** to **long double** is required to be **explicit**. The use of **explicit** rules out the initiation with type conversion using assignment syntax.
+The explicit specialization of the class template `complex` to a complex class of type **`long double`** differs from the class template only in the constructors it defines. The conversion from **`long double`** to **`float`** is allowed to be implicit, but the conversion from **`double`** to **`long double`** is required to be **`explicit`**. The use of **`explicit`** rules out the initiation with type conversion using assignment syntax.
 
 For more information on the class template `complex` and its members, see [complex Class](../standard-library/complex-class.md).
 
-**Microsoft-specific**: The **long double** and **double** types have the same representation, but are distinct types. For more information, see [Built-in types](../cpp/fundamental-types-cpp.md).
+**Microsoft-specific**: The **`long double`** and **`double`** types have the same representation, but are distinct types. For more information, see [Built-in types](../cpp/fundamental-types-cpp.md).
 
 ## Example
 

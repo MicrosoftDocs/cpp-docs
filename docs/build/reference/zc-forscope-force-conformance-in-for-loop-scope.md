@@ -15,7 +15,7 @@ Used to implement standard C++ behavior for [for](../../cpp/for-statement-cpp.md
 
 ## Remarks
 
-Standard behavior is to let a **for** loop's initializer go out of scope after the **for** loop. Under **/Zc:forScope-** and [/Ze](za-ze-disable-language-extensions.md), the **for** loop's initializer remains in scope until the local scope ends.
+Standard behavior is to let a **`for`** loop's initializer go out of scope after the **`for`** loop. Under **/Zc:forScope-** and [/Ze](za-ze-disable-language-extensions.md), the **`for`** loop's initializer remains in scope until the local scope ends.
 
 The **/Zc:forScope** option is on by default. **/Zc:forScope** is not affected when the [/permissive-](permissive-standards-conformance.md) option is specified.
 

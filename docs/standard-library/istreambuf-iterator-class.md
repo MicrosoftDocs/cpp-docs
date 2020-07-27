@@ -127,7 +127,7 @@ The iterator for which to check for equality.
 
 ### Return Value
 
-**true** if both `istreambuf_iterator`s are end-of-stream iterators or if neither is an end-of-stream iterator; otherwise **false**.
+**`true`** if both `istreambuf_iterator`s are end-of-stream iterators or if neither is an end-of-stream iterator; otherwise **`false`**.
 
 ### Remarks
 

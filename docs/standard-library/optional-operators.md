@@ -73,7 +73,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **`false`**.
 
 ## <a name="op_lt_eq"></a> operator&lt;=
 
@@ -97,7 +97,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -125,7 +125,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -153,7 +153,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
-**true** if the `optional` on the left side of the operator is greater than or equal to the `optional` on the right side of the operator; otherwise **false**.
+**`true`** if the `optional` on the left side of the operator is greater than or equal to the `optional` on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

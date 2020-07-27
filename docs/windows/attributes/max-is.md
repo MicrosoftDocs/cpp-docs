@@ -30,7 +30,7 @@ The **max_is** C++ attribute has the same functionality as the [max_is](/windows
 
 |||
 |-|-|
-|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|**size_is**|

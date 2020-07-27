@@ -245,7 +245,7 @@ Do all drawing through the member functions of a `CDC` object. The class provide
 To use a `CDC` object, construct it, and then call its member functions that parallel Windows functions that use device contexts.
 
 > [!NOTE]
-> Under Windows 95/98, all screen coordinates are limited to 16 bits. Therefore, an **int** passed to a `CDC` member function must lie in the range -32768 to 32767.
+> Under Windows 95/98, all screen coordinates are limited to 16 bits. Therefore, an **`int`** passed to a `CDC` member function must lie in the range -32768 to 32767.
 
 For specific uses, the Microsoft Foundation Class Library provides several classes derived from `CDC` . `CPaintDC` encapsulates calls to `BeginPaint` and `EndPaint`. `CClientDC` manages a display context associated with a window's client area. `CWindowDC` manages a display context associated with an entire window, including its frame and controls. `CMetaFileDC` associates a device context with a metafile.
 
@@ -3711,7 +3711,7 @@ If *lpfnOutput* is NULL, GDI uses the Windows [TextOut](/windows/win32/api/wingd
 
 Also note that all callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
 
-The callback function passed to `GrayString` must use the `__stdcall` calling convention and must be exported with `__declspec`.
+The callback function passed to `GrayString` must use the **`__stdcall`** calling convention and must be exported with **`__declspec`**.
 
 When the framework is in preview mode, a call to the `GrayString` member function is translated to a `TextOut` call, and the callback function is not called.
 
@@ -5334,11 +5334,11 @@ Specifies the outcome of the `SetAbortProc` function. Some of the following valu
 
 If an application is to allow the print job to be canceled during spooling, it must set the abort function before the print job is started with the [StartDoc](#startdoc) member function. The Print Manager calls the abort function during spooling to allow the application to cancel the print job or to process out-of-disk-space conditions. If no abort function is set, the print job will fail if there is not enough disk space for spooling.
 
-Note that the features of Microsoft Visual C++ simplify the creation of the callback function passed to `SetAbortProc`. The address passed to the `EnumObjects` member function is a pointer to a function exported with `__declspec(dllexport)` and with the `__stdcall` calling convention.
+Note that the features of Microsoft Visual C++ simplify the creation of the callback function passed to `SetAbortProc`. The address passed to the `EnumObjects` member function is a pointer to a function exported with `__declspec(dllexport)` and with the **`__stdcall`** calling convention.
 
 You also do not have to export the function name in an **EXPORTS** statement in your application's module-definition file. You can instead use the **EXPORT** function modifier, as in
 
-**BOOL CALLBACK EXPORT** AFunction( **HDC**, `int`**);**
+`BOOL CALLBACK EXPORT AFunction( HDC, int );`
 
 to cause the compiler to emit the proper export record for export by name without aliasing. This works for most needs. For some special cases, such as exporting a function by ordinal or aliasing the export, you still need to use an **EXPORTS** statement in a module-definition file.
 

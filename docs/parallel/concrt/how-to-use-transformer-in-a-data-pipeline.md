@@ -34,7 +34,7 @@ This example produces the following output:
 The result is -42.
 ```
 
-It is common for a stage in a data pipeline to output a value whose type differs from its input value. In this example, the second stage takes a value of type `int` as its input and produces the square root of that value (a `double`) as its output.
+It is common for a stage in a data pipeline to output a value whose type differs from its input value. In this example, the second stage takes a value of type **`int`** as its input and produces the square root of that value (a **`double`**) as its output.
 
 > [!NOTE]
 > The data pipeline in this example is for illustration. Because each transformation operation performs little work, the overhead that is required to perform message-passing can outweigh the benefits of using a data pipeline.

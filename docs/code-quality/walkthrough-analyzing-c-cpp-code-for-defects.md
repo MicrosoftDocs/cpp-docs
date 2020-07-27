@@ -90,9 +90,9 @@ In this walkthrough, you'll:
 
      C6230: Implicit cast between semantically different types: using HRESULT in a Boolean context.
 
-     The code editor displays the line that caused the warning inside the function `bool ProcessDomain()`. This warning indicates that a `HRESULT` is being used in an 'if' statement where a Boolean result is expected. It's typically a mistake, because when the `S_OK` HRESULT is returned from a function it indicates success, but when converted into a boolean value it evaluates to `false`.
+     The code editor displays the line that caused the warning inside the function `bool ProcessDomain()`. This warning indicates that a `HRESULT` is being used in an 'if' statement where a Boolean result is expected. It's typically a mistake, because when the `S_OK` HRESULT is returned from a function it indicates success, but when converted into a boolean value it evaluates to **`false`**.
 
-1. Correct this warning by using the `SUCCEEDED` macro, which converts to `true` when a `HRESULT` return value indicates success. Your code should resemble the following code:
+1. Correct this warning by using the `SUCCEEDED` macro, which converts to **`true`** when a `HRESULT` return value indicates success. Your code should resemble the following code:
 
    ```cpp
    if (SUCCEEDED(ReadUserAccount()))

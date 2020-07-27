@@ -161,7 +161,7 @@ For the annotations in the following table, when a pointer parameter is annotate
 
      A pointer to an array, which is read by the function. The array is of size `s` elements, all of which must be valid.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_In_reads_z_(s)`
 
@@ -184,7 +184,7 @@ For the annotations in the following table, when a pointer parameter is annotate
 
      In this example, the caller provides a buffer of `size` elements for `p1`. `MyStringCopy` makes some of those elements valid. More importantly, the `_Null_terminated_` annotation on `PWSTR` means that `p1` is null-terminated in post-state. In this way, the number of valid elements is still well-defined, but a specific element count isn't required.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_Out_writes_z_(s)`
 
@@ -196,7 +196,7 @@ For the annotations in the following table, when a pointer parameter is annotate
 
      A pointer to an array, which is both read and written to in the function. It's of size `s` elements, and valid in pre-state and post-state.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_Inout_updates_z_(s)`
 
@@ -225,7 +225,7 @@ For the annotations in the following table, when a pointer parameter is annotate
 
      A pointer to an array, which is both read and written by the function. It's of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_Inout_updates_all_(s)`
 
@@ -237,7 +237,7 @@ For the annotations in the following table, when a pointer parameter is annotate
 
      In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the pre-state and post-state.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_In_reads_to_ptr_(p)`
 

@@ -65,7 +65,7 @@ The **localtime_s** function converts a time stored as a [time_t](../../c-runtim
 
 **localtime_s** is an inline function which evaluates to **_localtime64_s**, and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. Doing this will cause **localtime_s** to evaluate to **_localtime32_s**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
 
-The fields of the structure type [tm](../../c-runtime-library/standard-types.md) store the following values, each of which is an **int**.
+The fields of the structure type [tm](../../c-runtime-library/standard-types.md) store the following values, each of which is an **`int`**.
 
 |Field|Description|
 |-|-|

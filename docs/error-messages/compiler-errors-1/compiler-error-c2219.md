@@ -9,4 +9,4 @@ ms.assetid: 2cfe9a75-6890-46a1-a127-79a7def78e94
 
 syntax error : type qualifier must be after '*'
 
-Type qualifier (`const` or `volatile`) appears where it is not permitted.
+Type qualifier (**`const`** or **`volatile`**) appears where it is not permitted.

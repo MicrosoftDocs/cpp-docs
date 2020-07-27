@@ -9,7 +9,7 @@ ms.assetid: e44d129b-8d3e-4ce9-9d79-6791ee77f25e
 
 'try' block starting on line 'number' has no catch handlers
 
-A `try` block must have at least one catch handler.
+A **`try`** block must have at least one catch handler.
 
 The following sample generates C2317:
 

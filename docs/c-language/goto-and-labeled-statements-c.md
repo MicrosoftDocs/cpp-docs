@@ -7,7 +7,7 @@ ms.assetid: 3d0473dc-4b18-4fcc-9616-31a38499d7d7
 ---
 # goto and Labeled Statements (C)
 
-The `goto` statement transfers control to a label. The given label must reside in the same function and can appear before only one statement in the same function.
+The **`goto`** statement transfers control to a label. The given label must reside in the same function and can appear before only one statement in the same function.
 
 ## Syntax
 
@@ -16,18 +16,18 @@ The `goto` statement transfers control to a label. The given label must reside i
 &nbsp;&nbsp;&nbsp;&nbsp;*jump-statement*
 
 *jump-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**goto**  *identifier*  **;**
+&nbsp;&nbsp;&nbsp;&nbsp;**`goto`**  *identifier*  **;**
 
 *labeled-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*identifier*  **:**  *statement*
 
-A statement label is meaningful only to a `goto` statement; in any other context, a labeled statement is executed without regard to the label.
+A statement label is meaningful only to a **`goto`** statement; in any other context, a labeled statement is executed without regard to the label.
 
-A *jump-statement* must reside in the same function and can appear before only one statement in the same function. The set of *identifier* names following a `goto` has its own name space so the names do not interfere with other identifiers. Labels cannot be redeclared. See [Name Spaces](../c-language/name-spaces.md) for more information.
+A *jump-statement* must reside in the same function and can appear before only one statement in the same function. The set of *identifier* names following a **`goto`** has its own name space so the names do not interfere with other identifiers. Labels cannot be redeclared. See [Name Spaces](../c-language/name-spaces.md) for more information.
 
-It is good programming style to use the **break**, **continue**, and `return` statement in preference to `goto` whenever possible. Since the **break** statement only exits from one level of the loop, a `goto` may be necessary for exiting a loop from within a deeply nested loop.
+It is good programming style to use the **`break`**, **`continue`**, and **`return`** statement in preference to **`goto`** whenever possible. Since the **`break`** statement only exits from one level of the loop, a **`goto`** may be necessary for exiting a loop from within a deeply nested loop.
 
-This example demonstrates the `goto` statement:
+This example demonstrates the **`goto`** statement:
 
 ```c
 // goto.c
@@ -55,7 +55,7 @@ int main()
 }
 ```
 
-In this example, a `goto` statement transfers control to the point labeled `stop` when `i` equals 5.
+In this example, a **`goto`** statement transfers control to the point labeled `stop` when `i` equals 5.
 
 ## See also
 

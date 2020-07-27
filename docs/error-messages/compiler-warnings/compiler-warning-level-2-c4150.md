@@ -9,7 +9,7 @@ ms.assetid: ff1760ec-0d9f-4d45-b797-94261624becf
 
 deletion of pointer to incomplete type 'type'; no destructor called
 
-The **delete** operator is called to delete a type that was declared but not defined, so the compiler cannot find a destructor.
+The **`delete`** operator is called to delete a type that was declared but not defined, so the compiler cannot find a destructor.
 
 The following sample generates C4150:
 

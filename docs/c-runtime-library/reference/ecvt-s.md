@@ -11,7 +11,7 @@ ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
 ---
 # _ecvt_s
 
-Converts a **double** number to a string. This is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a **`double`** number to a string. This is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 

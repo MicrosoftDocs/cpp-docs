@@ -53,7 +53,7 @@ public:
 ### Parameters
 
 *RealType*\
-The floating point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+The floating point result type, defaults to **`double`**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
@@ -243,7 +243,7 @@ The lowest value in the distribution range.
 The highest value in the distribution range. Must be greater than *xmin*.
 
 *weightfunc*\
-The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **`double`**.
 
 *parm*\
 The parameter structure used to construct the distribution.
@@ -286,7 +286,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-constructs a distribution object with *count* intervals distributed uniformly over [ `xmin,xmax`], assigning each interval weights according to the function *weightfunc*, and *weightfunc* must accept one parameter and have a return value, both of which are convertible to `double`. **Precondition:**`xmin < xmax`.
+constructs a distribution object with *count* intervals distributed uniformly over [ `xmin,xmax`], assigning each interval weights according to the function *weightfunc*, and *weightfunc* must accept one parameter and have a return value, both of which are convertible to **`double`**. **Precondition:**`xmin < xmax`.
 
 The constructor defined as
 

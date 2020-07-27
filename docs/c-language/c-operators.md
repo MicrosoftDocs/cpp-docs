@@ -8,7 +8,7 @@ ms.assetid: 13bc4c8e-2dc9-4b23-9f3a-25064e8777ed
 
 The C operators are a subset of the [C++ built-in operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md).
 
-There are three types of operators. A unary expression consists of either a unary operator prepended to an operand, or the **sizeof** keyword followed by an expression. The expression can be either the name of a variable or a cast expression. If the expression is a cast expression, it must be enclosed in parentheses. A binary expression consists of two operands joined by a binary operator. A ternary expression consists of three operands joined by the conditional-expression operator.
+There are three types of operators. A unary expression consists of either a unary operator prepended to an operand, or the **`sizeof`** keyword followed by an expression. The expression can be either the name of a variable or a cast expression. If the expression is a cast expression, it must be enclosed in parentheses. A binary expression consists of two operands joined by a binary operator. A ternary expression consists of three operands joined by the conditional-expression operator.
 
 C includes the following unary operators:
 
@@ -16,7 +16,7 @@ C includes the following unary operators:
 |------------|----------|
 |**-** **~** **!**|Negation and complement operators|
 |**&#42;** **&**|Indirection and address-of operators|
-|**sizeof**|Size operator|
+|**`sizeof`**|Size operator|
 |**+**|Unary plus operator|
 |**++** **--**|Unary increment and decrement operators|
 

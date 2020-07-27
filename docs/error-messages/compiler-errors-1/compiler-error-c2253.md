@@ -9,7 +9,7 @@ ms.assetid: bd6445ae-b2c1-4669-9657-a8f4acf80b16
 
 'function' : pure specifier or abstract override specifier only allowed on virtual function
 
-A nonvirtual function is specified as pure `virtual`.
+A nonvirtual function is specified as pure **`virtual`**.
 
 The following sample generates C2253:
 

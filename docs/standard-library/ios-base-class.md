@@ -15,13 +15,13 @@ An object of class ios_base stores formatting information, which consists of:
 
 - An exception mask in an object of type [`iostate`](#iostate).
 
-- A field width in an object of type **int**.
+- A field width in an object of type **`int`**.
 
-- A display precision in an object of type **int**.
+- A display precision in an object of type **`int`**.
 
 - A locale object in an object of type `locale`.
 
-- Two extensible arrays, with elements of type **long** and **void** pointer.
+- Two extensible arrays, with elements of type **`long`** and **`void`** pointer.
 
 An object of class ios_base also stores stream state information, in an object of type [`iostate`](#iostate), and a callback stack.
 
@@ -60,7 +60,7 @@ An object of class ios_base also stores stream state information, in an object o
 |[basefield](#fmtflags)|A bitmask defined as `dec` &#124; `hex` &#124; `oct`.|
 |[beg](#seekdir)|Specifies seeking relative to the beginning of a sequence.|
 |[binary](#openmode)|Specifies that a file should be read as a binary stream, rather than as a text stream.|
-|[boolalpha](#fmtflags)|Specifies insertion or extraction of objects of type **bool** as names (such as **true** and **false**) rather than as numeric values.|
+|[boolalpha](#fmtflags)|Specifies insertion or extraction of objects of type **`bool`** as names (such as **`true`** and **`false`**) rather than as numeric values.|
 |[cur](#seekdir)|Specifies seeking relative to the current position within a sequence.|
 |[dec](#fmtflags)|Specifies insertion or extraction of integer values in decimal format.|
 |[end](#seekdir)|Specifies seeking relative to the end of a sequence.|
@@ -319,7 +319,7 @@ The type is a bitmask type that describes an object that can store format flags.
 
 - `right`, to pad to a field width as needed by inserting fill characters at the beginning of a generated field (right justification).
 
-- `boolalpha`, to insert or extract objects of type **bool** as names (such as **true** and **false**) rather than as numeric values.
+- `boolalpha`, to insert or extract objects of type **`bool`** as names (such as **`true`** and **`false`**) rather than as numeric values.
 
 - `fixed`, to insert floating-point values in fixed-point format (with no exponent field).
 
@@ -467,7 +467,7 @@ The index of the value to store as an `iword`.
 
 ### Remarks
 
-The member function returns a reference to element *idx* of the extensible array with elements of type **long**. All elements are effectively present and initially store the value zero. The returned reference is invalid after the next call to `iword` for the object, after the object is altered by a call to `basic_ios::`[copyfmt](../standard-library/basic-ios-class.md#copyfmt), or after the object is destroyed.
+The member function returns a reference to element *idx* of the extensible array with elements of type **`long`**. All elements are effectively present and initially store the value zero. The returned reference is invalid after the next call to `iword` for the object, after the object is altered by a call to `basic_ios::`[copyfmt](../standard-library/basic-ios-class.md#copyfmt), or after the object is destroyed.
 
 If *idx* is negative or if unique storage is unavailable for the element, the function calls [`setstate`](../standard-library/basic-ios-class.md#setstate)`(badbit)` and returns a reference that might not be unique.
 
@@ -611,7 +611,7 @@ The index of the value to store as a `pword`.
 
 ### Remarks
 
-The member function returns a reference to element *index* of the extensible array with elements of type **void** pointer. All elements are effectively present and initially store the null pointer. The returned reference is invalid after the next call to `pword` for the object, after the object is altered by a call to `basic_ios::`[copyfmt](../standard-library/basic-ios-class.md#copyfmt), or after the object is destroyed.
+The member function returns a reference to element *index* of the extensible array with elements of type **`void`** pointer. All elements are effectively present and initially store the null pointer. The returned reference is invalid after the next call to `pword` for the object, after the object is altered by a call to `basic_ios::`[copyfmt](../standard-library/basic-ios-class.md#copyfmt), or after the object is destroyed.
 
 If *index* is negative, or if unique storage is unavailable for the element, the function calls [`setstate`](../standard-library/basic-ios-class.md#setstate)`(badbit)` and returns a reference that might not be unique.
 
@@ -858,7 +858,7 @@ Previous setting for this function.
 
 ### Remarks
 
-The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [`iostreams`](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
+The static member function stores a `stdio` sync flag, which is initially **`true`**. When **`true`**, this flag ensures that operations on the same file are properly synchronized between the [`iostreams`](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
 
 ## <a name="unsetf"></a> unsetf
 

@@ -7,7 +7,7 @@ ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
 ---
 # struct (C++)
 
-The **struct** keyword defines a structure type and/or a variable of a structure type.
+The **`struct`** keyword defines a structure type and/or a variable of a structure type.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ The **struct** keyword defines a structure type and/or a variable of a structure
 Optional template specifications. For more information, refer to [Template Specifications](templates-cpp.md).
 
 *struct*<br/>
-The **struct** keyword.
+The **`struct`** keyword.
 
 *ms-decl-spec*<br/>
 Optional storage-class specification. For more information, refer to the [__declspec](../cpp/declspec.md) keyword.
@@ -37,22 +37,22 @@ The type name given to the structure. The tag becomes a reserved word within the
 Optional list of classes or structures this structure will derive its members from. See [Base Classes](../cpp/base-classes.md) for more information. Each base class or structure name can be preceded by an access specifier ([public](../cpp/public-cpp.md), [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md)) and the [virtual](../cpp/virtual-cpp.md) keyword. See the member-access table in [Controlling Access to Class Members](member-access-control-cpp.md) for more information.
 
 *member-list*<br/>
-List of structure members. Refer to [Class Member Overview](../cpp/class-member-overview.md) for more information. The only difference here is that **struct** is used in place of **class**.
+List of structure members. Refer to [Class Member Overview](../cpp/class-member-overview.md) for more information. The only difference here is that **`struct`** is used in place of **`class`**.
 
 *declarators*<br/>
-Declarator list specifying the names of the structure. Declarator lists declare one or more instances of the structure type. Declarators may include initializer lists if all data members of the structure are **public**. Initializer lists are common in structures because data members are **public** by default.  See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.
+Declarator list specifying the names of the structure. Declarator lists declare one or more instances of the structure type. Declarators may include initializer lists if all data members of the structure are **`public`**. Initializer lists are common in structures because data members are **`public`** by default.  See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.
 
 ## Remarks
 
 A structure type is a user-defined composite type. It is composed of fields or members that can have different types.
 
-In C++, a structure is the same as a class except that its members are **public** by default.
+In C++, a structure is the same as a class except that its members are **`public`** by default.
 
 For information on managed classes and structs in C++/CLI, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ## Using a Structure
 
-In C, you must explicitly use the **struct** keyword to declare a structure. In C++, you do not need to use the **struct** keyword after the type has been defined.
+In C, you must explicitly use the **`struct`** keyword to declare a structure. In C++, you do not need to use the **`struct`** keyword after the type has been defined.
 
 You have the option of declaring variables when the structure type is defined by placing one or more comma-separated variable names between the closing brace and the semicolon.
 

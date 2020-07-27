@@ -9,7 +9,7 @@ ms.assetid: 49bb3d7e-3bdf-4af6-937c-fa627be412a9
 
 'function' : pure specifier or abstract override specifier not allowed on friend function
 
-A `friend` function is specified as pure `virtual`.
+A **`friend`** function is specified as pure **`virtual`**.
 
 The following sample generates C2254:
 

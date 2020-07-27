@@ -24,7 +24,7 @@ The following example illustrates the consequence of this difference between MFC
 
 [!code-cpp[NVC_MFCExceptions#1](codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_1.cpp)]
 
-This code behaves differently in version 3.0 because control always passes to the first **catch** block with a matching exception-declaration. The result of the throw expression
+This code behaves differently in version 3.0 because control always passes to the first **`catch`** block with a matching exception-declaration. The result of the throw expression
 
 [!code-cpp[NVC_MFCExceptions#19](codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_2.cpp)]
 

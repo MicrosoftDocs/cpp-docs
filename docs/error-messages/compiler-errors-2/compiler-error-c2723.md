@@ -9,7 +9,7 @@ ms.assetid: 86925601-2297-4cfd-94e2-2caf27c474c4
 
 'function' : 'specifier' specifier illegal on function definition
 
-The specifier cannot appear with a function definition outside of a class declaration. The `virtual` specifier can be specified only on a member function declaration within a class declaration.
+The specifier cannot appear with a function definition outside of a class declaration. The **`virtual`** specifier can be specified only on a member function declaration within a class declaration.
 
 The following sample generates C2723 and shows how to fix it:
 

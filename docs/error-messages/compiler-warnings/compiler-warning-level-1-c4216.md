@@ -9,7 +9,7 @@ ms.assetid: 211079dc-59d0-42a7-801c-2ddab21d7232
 
 nonstandard extension used : float long
 
-The default Microsoft extensions (/Ze) treat **float long** as **double**. ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) does not. Use **double** to maintain compatibility. The following sample generates C4216:
+The default Microsoft extensions (/Ze) treat **float long** as **`double`**. ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) does not. Use **`double`** to maintain compatibility. The following sample generates C4216:
 
 ```cpp
 // C4216.cpp

@@ -9,7 +9,7 @@ ms.assetid: 89d78d0e-78e5-4c2c-a0f9-a60110e9395e
 
 'token' : unexpected token following 'template', identifier expected
 
-The token following the keyword `template` was not an identifier.
+The token following the keyword **`template`** was not an identifier.
 
 The following sample generates C2902:
 

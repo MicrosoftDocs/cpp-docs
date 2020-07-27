@@ -8,7 +8,7 @@ ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 
 C++ allows specification of more than one function of the same name in the same scope. These functions are called *overloaded* functions. Overloaded functions enable you to supply different semantics for a function, depending on the types and number of arguments.
 
-For example, a `print` function that takes a `std::string`  argument might perform very different tasks than one that takes an argument of type **double**. Overloading saves you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the type of arguments passed in by the caller.  If you call `print(42.0)`, then the `void print(double d)` function will be invoked. If you call `print("hello world")`, then the `void print(std::string)` overload will be invoked.
+For example, a `print` function that takes a `std::string`  argument might perform very different tasks than one that takes an argument of type **`double`**. Overloading saves you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the type of arguments passed in by the caller.  If you call `print(42.0)`, then the `void print(double d)` function will be invoked. If you call `print("hello world")`, then the `void print(std::string)` overload will be invoked.
 
 You can overload both member functions and non-member functions. The following table shows what parts of a function declaration C++ uses to differentiate between groups of functions with the same name in the same scope.
 
@@ -20,9 +20,9 @@ You can overload both member functions and non-member functions. The following t
 |Number of arguments|Yes|
 |Type of arguments|Yes|
 |Presence or absence of ellipsis|Yes|
-|Use of **typedef** names|No|
+|Use of **`typedef`** names|No|
 |Unspecified array bounds|No|
-|**const** or **volatile**|Yes, when applied to entire function|
+|**`const`** or **`volatile`**|Yes, when applied to entire function|
 |[Ref-qualifiers](#ref-qualifiers)|Yes|
 
 ## Example
@@ -146,9 +146,9 @@ F1 = Add( F2, 23 );
 
 The preceding statement builds two sets:
 
-|Set 1: Candidate Functions That Have First Argument of Type Fraction|Set 2: Candidate Functions Whose Second Argument Can Be Converted to Type **int**|
+|Set 1: Candidate Functions That Have First Argument of Type Fraction|Set 2: Candidate Functions Whose Second Argument Can Be Converted to Type **`int`**|
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-|Variant 1|Variant 1 (**int** can be converted to **long** using a standard conversion)|
+|Variant 1|Variant 1 (**`int`** can be converted to **`long`** using a standard conversion)|
 |Variant 3||
 
 Functions in Set 2 are functions for which there are implicit conversions from actual parameter type to formal parameter type, and among such functions there's a function for which the "cost" of converting the actual parameter type to its formal parameter type is the smallest.
@@ -161,9 +161,9 @@ F1 = Add( 3, 6 );
 
 The preceding function call builds the following sets:
 
-|Set 1: Candidate Functions That Have First Argument of Type **int**|Set 2: Candidate Functions That Have Second Argument of Type **int**|
+|Set 1: Candidate Functions That Have First Argument of Type **`int`**|Set 2: Candidate Functions That Have Second Argument of Type **`int`**|
 |---------------------------------------------------------------------|----------------------------------------------------------------------|
-|Variant 2 (**int** can be converted to **long** using a standard conversion)|Variant 1 (**int** can be converted to **long** using a standard conversion)|
+|Variant 2 (**`int`** can be converted to **`long`** using a standard conversion)|Variant 1 (**`int`** can be converted to **`long`** using a standard conversion)|
 
 Because the intersection of these two sets is empty, the compiler generates an error message.
 
@@ -178,9 +178,9 @@ The ellipsis (...) acts as a wildcard; it matches any actual argument. It can le
 
 Overloaded functions differentiate between argument types that take different initializers. Therefore, an argument of a given type and a reference to that type are considered the same for the purposes of overloading. They are considered the same because they take the same initializers. For example, `max( double, double )` is considered the same as `max( double &, double & )`. Declaring two such functions causes an error.
 
-For the same reason, function arguments of a type modified by **const** or **volatile** are not treated differently than the base type for the purposes of overloading.
+For the same reason, function arguments of a type modified by **`const`** or **`volatile`** are not treated differently than the base type for the purposes of overloading.
 
-However, the function overloading mechanism can distinguish between references that are qualified by **const** and **volatile** and references to the base type. It makes code such as the following possible:
+However, the function overloading mechanism can distinguish between references that are qualified by **`const`** and **`volatile`** and references to the base type. It makes code such as the following possible:
 
 ```cpp
 // argument_type_differences.cpp
@@ -218,7 +218,7 @@ Over default constructor
 volatile Over&
 ```
 
-Pointers to **const** and **volatile** objects are also considered different from pointers to the base type for the purposes of overloading.
+Pointers to **`const`** and **`volatile`** objects are also considered different from pointers to the base type for the purposes of overloading.
 
 ## Argument matching and conversions
 
@@ -228,11 +228,11 @@ When the compiler tries to match actual arguments against the arguments in funct
 
 - Sequences of conversions that can be shortened by removing intermediate conversions are not considered.
 
-The resultant sequence of conversions, if any, is called the best matching sequence. There are several ways to convert an object of type **int** to type **unsigned long** using standard conversions (described in [Standard Conversions](../cpp/standard-conversions.md)):
+The resultant sequence of conversions, if any, is called the best matching sequence. There are several ways to convert an object of type **`int`** to type **`unsigned long`** using standard conversions (described in [Standard Conversions](../cpp/standard-conversions.md)):
 
-- Convert from **int** to **long** and then from **long** to **unsigned long**.
+- Convert from **`int`** to **`long`** and then from **`long`** to **`unsigned long`**.
 
-- Convert from **int** to **unsigned long**.
+- Convert from **`int`** to **`unsigned long`**.
 
 The first sequence, although it achieves the desired goal, isn't the best matching sequence — a shorter sequence exists.
 
@@ -246,24 +246,24 @@ The following table shows a group of conversions, called trivial conversions, th
 |*type-name* **&**|*type-name*|
 |*type-name* **[ ]**|*type-name* __\*__|
 |*type-name* **(** *argument-list* **)**|**(** __\*__ *type-name* **) (** *argument-list* **)**|
-|*type-name*|**const** *type-name*|
-|*type-name*|**volatile** *type-name*|
-|*type-name* __\*__|**const** *type-name* __\*__|
-|*type-name* __\*__|**volatile** *type-name* __\*__|
+|*type-name*|**`const`** *type-name*|
+|*type-name*|**`volatile`** *type-name*|
+|*type-name* __\*__|**`const`** *type-name* __\*__|
+|*type-name* __\*__|**`volatile`** *type-name* __\*__|
 
 The sequence in which conversions are attempted is as follows:
 
 1. Exact match. An exact match between the types with which the function is called and the types declared in the function prototype is always the best match. Sequences of trivial conversions are classified as exact matches. However, sequences that don't make any of these conversions are considered better than sequences that convert:
 
-   - From pointer, to pointer to **const** (`type` <strong>\*</strong> to **const** `type` <strong>\*</strong>).
+   - From pointer, to pointer to **`const`** (`type` <strong>\*</strong> to **`const`** `type` <strong>\*</strong>).
 
-   - From pointer, to pointer to **volatile** (`type` <strong>\*</strong> to **volatile** `type` <strong>\*</strong>).
+   - From pointer, to pointer to **`volatile`** (`type` <strong>\*</strong> to **`volatile`** `type` <strong>\*</strong>).
 
-   - From reference, to reference to **const** (`type` **&** to **const** `type` **&**).
+   - From reference, to reference to **`const`** (`type` **&** to **`const`** `type` **&**).
 
-   - From reference, to reference to **volatile** (`type` **&** to **volatile** `type` **&**).
+   - From reference, to reference to **`volatile`** (`type` **&** to **`volatile`** `type` **&**).
 
-1. Match using promotions. Any sequence not classified as an exact match that contains only integral promotions, conversions from **float** to **double**, and trivial conversions is classified as a match using promotions. Although not as good a match as any exact match, a match using promotions is better than a match using standard conversions.
+1. Match using promotions. Any sequence not classified as an exact match that contains only integral promotions, conversions from **`float`** to **`double`**, and trivial conversions is classified as a match using promotions. Although not as good a match as any exact match, a match using promotions is better than a match using standard conversions.
 
 1. Match using standard conversions. Any sequence not classified as an exact match or a match using promotions that contains only standard conversions and trivial conversions is classified as a match using standard conversions. Within this category, the following rules are applied:
 
@@ -317,7 +317,7 @@ int main()
 }
 ```
 
-The available user-defined conversions for class `UDC` are from type **int** and type **long**. Therefore, the compiler considers conversions for the type of the object being matched: `UDC`. A conversion to **int** exists, and it is selected.
+The available user-defined conversions for class `UDC` are from type **`int`** and type **`long`**. Therefore, the compiler considers conversions for the type of the object being matched: `UDC`. A conversion to **`int`** exists, and it is selected.
 
 During the process of matching arguments, standard conversions can be applied to both the argument and the result of a user-defined conversion. Therefore, the following code works:
 
@@ -328,7 +328,7 @@ UDC udc;
 LogToFile( udc );
 ```
 
-In the preceding example, the user-defined conversion, **operator long**, is invoked to convert `udc` to type **long**. If no user-defined conversion to type **long** had been defined, the conversion would have proceeded as follows: Type `UDC` would have been converted to type **int** using the user-defined conversion. Then the standard conversion from type **int** to type **long** would have been applied to match the argument in the declaration.
+In the preceding example, the user-defined conversion, **operator long**, is invoked to convert `udc` to type **`long`**. If no user-defined conversion to type **`long`** had been defined, the conversion would have proceeded as follows: Type `UDC` would have been converted to type **`int`** using the user-defined conversion. Then the standard conversion from type **`int`** to type **`long`** would have been applied to match the argument in the declaration.
 
 If any user-defined conversions are required to match an argument, the standard conversions aren't used when evaluating the best match. Even if more than one candidate function requires a user-defined conversion, the functions are considered equal. For example:
 
@@ -356,11 +356,11 @@ int main()
 }
 ```
 
-Both versions of `Func` require a user-defined conversion to convert type **int** to the class type argument. The possible conversions are:
+Both versions of `Func` require a user-defined conversion to convert type **`int`** to the class type argument. The possible conversions are:
 
-- Convert from type **int** to type `UDC1` (a user-defined conversion).
+- Convert from type **`int`** to type `UDC1` (a user-defined conversion).
 
-- Convert from type **int** to type **long**; then convert to type `UDC2` (a two-step conversion).
+- Convert from type **`int`** to type **`long`**; then convert to type `UDC2` (a two-step conversion).
 
 Even though the second one requires both a standard conversion and the user-defined conversion, the two conversions are still considered equal.
 
@@ -369,13 +369,13 @@ Even though the second one requires both a standard conversion and the user-defi
 
 ## Argument matching and the this pointer
 
-Class member functions are treated differently, depending on whether they are declared as **static**. Because nonstatic functions have an implicit argument that supplies the **this** pointer, nonstatic functions are considered to have one more argument than static functions; otherwise, they are declared identically.
+Class member functions are treated differently, depending on whether they are declared as **`static`**. Because nonstatic functions have an implicit argument that supplies the **`this`** pointer, nonstatic functions are considered to have one more argument than static functions; otherwise, they are declared identically.
 
-These nonstatic member functions require that the implied **this** pointer match the object type through which the function is being called, or, for overloaded operators, they require that the first argument match the object on which the operator is being applied. (For more information about overloaded operators, see [Overloaded Operators](../cpp/operator-overloading.md).)
+These nonstatic member functions require that the implied **`this`** pointer match the object type through which the function is being called, or, for overloaded operators, they require that the first argument match the object on which the operator is being applied. (For more information about overloaded operators, see [Overloaded Operators](../cpp/operator-overloading.md).)
 
-Unlike other arguments in overloaded functions, no temporary objects are introduced and no conversions are attempted when trying to match the **this** pointer argument.
+Unlike other arguments in overloaded functions, no temporary objects are introduced and no conversions are attempted when trying to match the **`this`** pointer argument.
 
-When the `->` member-selection operator is used to access a member function of class `class_name`, the **this** pointer argument has a type of `class_name * const`. If the members are declared as **const** or **volatile**, the types are `const class_name * const` and `volatile class_name * const`, respectively.
+When the `->` member-selection operator is used to access a member function of class `class_name`, the **`this`** pointer argument has a type of `class_name * const`. If the members are declared as **`const`** or **`volatile`**, the types are `const class_name * const` and `volatile class_name * const`, respectively.
 
 The `.` member-selection operator works exactly the same way, except that an implicit `&` (address-of) operator is prefixed to the object name. The following example shows how this works:
 
@@ -391,7 +391,7 @@ The left operand of the `->*` and `.*` (pointer to member) operators are treated
 
 ## <a name="ref-qualifiers"></a> Ref-qualifiers on member functions
 
-Ref qualifiers make it possible to overload a member function on the basis of whether the object pointed to by **this** is an rvalue or an lvalue.  This feature can be used to avoid unnecessary copy operations in scenarios where you choose not to provide pointer access to the data. For example, assume class `C` initializes some data in its constructor, and returns a copy of that data in member function `get_data()`. If an object of type `C` is an rvalue that is about to be destroyed, then the compiler will choose the `get_data() &&` overload, which moves the data rather than copy it.
+Ref qualifiers make it possible to overload a member function on the basis of whether the object pointed to by **`this`** is an rvalue or an lvalue.  This feature can be used to avoid unnecessary copy operations in scenarios where you choose not to provide pointer access to the data. For example, assume class `C` initializes some data in its constructor, and returns a copy of that data in member function `get_data()`. If an object of type `C` is an rvalue that is about to be destroyed, then the compiler will choose the `get_data() &&` overload, which moves the data rather than copy it.
 
 ```cpp
 #include <iostream>
@@ -444,7 +444,7 @@ You can overload **operator new** solely on the basis of return type — specifi
 
 - Member functions can't be overloaded solely on the basis of one being static and the other nonstatic.
 
-- **typedef** declarations do not define new types; they introduce synonyms for existing types. They don't affect the overloading mechanism. Consider the following code:
+- **`typedef`** declarations do not define new types; they introduce synonyms for existing types. They don't affect the overloading mechanism. Consider the following code:
 
     ```cpp
     typedef char * PSTR;
@@ -508,7 +508,7 @@ int main()
 }
 ```
 
-The preceding code shows two definitions from the function `func`. The definition that takes an argument of type `char *` is local to `main` because of the **extern** statement. Therefore, the definition that takes an argument of type **int** is hidden, and the first call to `func` is in error.
+The preceding code shows two definitions from the function `func`. The definition that takes an argument of type `char *` is local to `main` because of the **`extern`** statement. Therefore, the definition that takes an argument of type **`int`** is hidden, and the first call to `func` is in error.
 
 For overloaded member functions, different versions of the function can be given different access privileges. They are still considered to be in the scope of the enclosing class and thus are overloaded functions. Consider the following code, in which the member function `Deposit` is overloaded; one version is public, the other, private.
 

@@ -9,7 +9,7 @@ ms.assetid: 6def15d4-9a8d-43e7-ae35-42d7cb57c27e
 
 __except may not appear in termination block
 
-An exception handler (`__try`/`__except`) cannot be nested inside a `__finally` block.
+An exception handler (`__try`/**`__except`**) cannot be nested inside a **`__finally`** block.
 
 The following sample generates C2702:
 

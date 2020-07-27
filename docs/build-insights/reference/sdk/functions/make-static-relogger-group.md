@@ -28,14 +28,14 @@ auto MakeStaticReloggerGroup(TReloggerPtrs... reloggers);
 This parameter is always deduced.
 
 *reloggers*\
-A parameter pack of [IRelogger](../other-types/irelogger-class.md) pointers that's included in the static relogger group. These pointers can be raw, `std::unique_ptr`, or `std::shared_ptr`. [IAnalyzer](../other-types/ianalyzer-class.md) pointers are also considered `IRelogger` pointers because of an inheritance relationship.
+A parameter pack of [`IRelogger`](../other-types/irelogger-class.md) pointers that's included in the static relogger group. These pointers can be raw, `std::unique_ptr`, or `std::shared_ptr`. [`IAnalyzer`](../other-types/ianalyzer-class.md) pointers are also considered `IRelogger` pointers because of an inheritance relationship.
 
 ### Return Value
 
-A static relogger group. Use the **auto** keyword to capture the return value.
+A static relogger group. Use the **`auto`** keyword to capture the return value.
 
 ## Remarks
 
-Unlike dynamic relogger groups, the members of a static relogger group must be known at compile time. Additionally, a static relogger group contains [IRelogger](../other-types/irelogger-class.md) pointers that don't have polymorphic behavior. When using a static relogger group to analyze an Event Tracing for Windows (ETW) trace, calls to the `IRelogger` interface always resolve to the object directly pointed to by the relogger group member. This loss of flexibility comes with a possibility of faster event processing times. If the members of a relogger group can't be known at compile time, or if you require polymorphic behavior on your `IRelogger` pointers, consider using a dynamic relogger group. You can use a dynamic relogger group by calling [MakeDynamicReloggerGroup](make-dynamic-relogger-group.md) instead.
+Unlike dynamic relogger groups, the members of a static relogger group must be known at compile time. Additionally, a static relogger group contains [`IRelogger`](../other-types/irelogger-class.md) pointers that don't have polymorphic behavior. When using a static relogger group to analyze an Event Tracing for Windows (ETW) trace, calls to the `IRelogger` interface always resolve to the object directly pointed to by the relogger group member. This loss of flexibility comes with a possibility of faster event processing times. If the members of a relogger group can't be known at compile time, or if you require polymorphic behavior on your `IRelogger` pointers, consider using a dynamic relogger group. You can use a dynamic relogger group by calling [`MakeDynamicReloggerGroup`](make-dynamic-relogger-group.md) instead.
 
 ::: moniker-end

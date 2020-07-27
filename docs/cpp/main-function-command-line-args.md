@@ -10,8 +10,8 @@ no-loc: [main, wmain, inline, static, _tmain, void, exit, argc, argv, envp, Crea
 All C++ programs must have a `main` function. If you try to compile a C++ *.exe* project without a main function, the compiler will raise an error. (Dynamic-link libraries and static libraries don't have a `main` function.) The `main` function is where your source code begins execution, but before a program enters the `main` function, all static class members without explicit initializers are set to zero. In Microsoft C++, global static objects are also initialized before entry to `main`. Several restrictions apply to the `main` function that do not apply to any other C++ functions. The `main` function:
 
 - Cannot be overloaded (see [Function Overloading](function-overloading.md)).
-- Cannot be declared as **inline**.
-- Cannot be declared as **static**.
+- Cannot be declared as **`inline`**.
+- Cannot be declared as **`static`**.
 - Cannot have its address taken.
 - Cannot be called.
 
@@ -33,7 +33,7 @@ int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
 
 You can also use `_tmain`, which is defined in tchar.h. `_tmain` resolves to `main` unless _UNICODE is defined. In that case, `_tmain` resolves to `wmain`.
 
-If no return value is specified, the compiler supplies a return value of zero. Alternatively, the `main` and `wmain` functions can be declared as returning **void** (no return value). If you declare `main` or `wmain` as returning **void**, you cannot return an exit code to the parent process or operating system by using a [return](../cpp/return-statement-in-program-termination-cpp.md) statement. To return an exit code when `main` or `wmain` is declared as **void**, you must use the [exit](../cpp/exit-function.md) function.
+If no return value is specified, the compiler supplies a return value of zero. Alternatively, the `main` and `wmain` functions can be declared as returning **`void`** (no return value). If you declare `main` or `wmain` as returning **`void`**, you cannot return an exit code to the parent process or operating system by using a [return](../cpp/return-statement-in-program-termination-cpp.md) statement. To return an exit code when `main` or `wmain` is declared as **`void`**, you must use the [exit](../cpp/exit-function.md) function.
 
 **END Microsoft Specific**
 
@@ -62,7 +62,7 @@ The first command-line argument is always `argv[1]` and the last one is `argv[ar
 **Microsoft Specific**
 
 *envp*<br/>
-The *envp* array, which is a common extension in many UNIX systems, is used in Microsoft C++. It is an array of strings representing the variables set in the user's environment. This array is terminated by a NULL entry. It can be declared as an array of pointers to **char** (`char *envp[]`) or as a pointer to pointers to **char** (`char **envp`). If your program uses `wmain` instead of `main`, use the **wchar_t** data type instead of **char**. The environment block passed to `main` and `wmain` is a "frozen" copy of the current environment. If you subsequently change the environment via a call to `putenv` or `_wputenv`, the current environment (as returned by `getenv` or `_wgetenv` and the `_environ` or  `_wenviron` variable) will change, but the block pointed to by envp will not change. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing environment processing. This argument is ANSI compatible in C, but not in C++.
+The *envp* array, which is a common extension in many UNIX systems, is used in Microsoft C++. It is an array of strings representing the variables set in the user's environment. This array is terminated by a NULL entry. It can be declared as an array of pointers to **`char`** (`char *envp[]`) or as a pointer to pointers to **`char`** (`char **envp`). If your program uses `wmain` instead of `main`, use the **`wchar_t`** data type instead of **`char`**. The environment block passed to `main` and `wmain` is a "frozen" copy of the current environment. If you subsequently change the environment via a call to `putenv` or `_wputenv`, the current environment (as returned by `getenv` or `_wgetenv` and the `_environ` or  `_wenviron` variable) will change, but the block pointed to by envp will not change. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing environment processing. This argument is ANSI compatible in C, but not in C++.
 
 **END Microsoft Specific**
 

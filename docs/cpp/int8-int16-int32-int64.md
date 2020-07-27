@@ -7,9 +7,9 @@ ms.assetid: 8e384602-2578-4980-8cc8-da63842356b2
 ---
 # __int8, __int16, __int32, __int64
 
-**Microsoft Specific**
+**Microsoft-specific**
 
-Microsoft C/C++ features support for sized integer types. You can declare 8-, 16-, 32-, or 64-bit integer variables by using the **__int**<em>n</em> type specifier, where *n* is 8, 16, 32, or 64.
+Microsoft C/C++ features support for sized integer types. You can declare 8-, 16-, 32-, or 64-bit integer variables by using the **`__intN`** type specifier, where ***`N`*** is 8, 16, 32, or 64.
 
 The following example declares one variable for each of these types of sized integers:
 
@@ -20,13 +20,13 @@ __int32 nLarge;     // Declares 32-bit integer
 __int64 nHuge;      // Declares 64-bit integer
 ```
 
-The types **__int8**, **__int16**, and **__int32** are synonyms for the ANSI types that have the same size, and are useful for writing portable code that behaves identically across multiple platforms. The **__int8** data type is synonymous with type **char**, **__int16** is synonymous with type **short**, and **__int32** is synonymous with type **int**. The **__int64** type is synonymous with type **long long**.
+The types **`__int8`**, **`__int16`**, and **`__int32`** are synonyms for the ANSI types that have the same size, and are useful for writing portable code that behaves identically across multiple platforms. The **`__int8`** data type is synonymous with type **`char`**, **`__int16`** is synonymous with type **`short`**, and **`__int32`** is synonymous with type **`int`**. The **`__int64`** type is synonymous with type **`long long`**.
 
-For compatibility with previous versions, **_int8**, **_int16**, **_int32**, and **_int64** are synonyms for **__int8**, **__int16**, **__int32**, and **__int64** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **`_int8`**, **`_int16`**, **`_int32`**, and **`_int64`** are synonyms for **`__int8`**, **`__int16`**, **`__int32`**, and **`__int64`** unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 
-The following sample shows that an __int*xx* parameter will be promoted to **int**:
+The following sample shows that an `__intN` parameter will be promoted to **`int`**:
 
 ```cpp
 // sized_int_types.cpp
@@ -48,8 +48,6 @@ int main()
 ```Output
 func
 ```
-
-**END Microsoft Specific**
 
 ## See also
 

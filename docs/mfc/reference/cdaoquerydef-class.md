@@ -184,7 +184,7 @@ The object can represent an existing querydef stored in the database's QueryDefs
 
 To set the attributes of the querydef, you can use the [SetName](#setname), [SetSQL](#setsql), [SetConnect](#setconnect), [SetODBCTimeout](#setodbctimeout), and [SetReturnsRecords](#setreturnsrecords) member functions.
 
-When you finish with the querydef object, call its [Close](#close) member function. If you have a pointer to the querydef, use the **delete** operator to destroy the C++ object.
+When you finish with the querydef object, call its [Close](#close) member function. If you have a pointer to the querydef, use the **`delete`** operator to destroy the C++ object.
 
 ## <a name="close"></a> CDaoQueryDef::Close
 

@@ -10,16 +10,16 @@ ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
 The following classes are ready-to-use map classes.
 
 [CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md)<br/>
-Uses **void** pointers as keys for finding other **void** pointers.
+Uses **`void`** pointers as keys for finding other **`void`** pointers.
 
 [CMapPtrToWord](../mfc/reference/cmapptrtoword-class.md)<br/>
-Uses **void** pointers as keys for finding data of type **WORD**.
+Uses **`void`** pointers as keys for finding data of type **WORD**.
 
 [CMapStringToOb](../mfc/reference/cmapstringtoob-class.md)<br/>
 Uses `CString` objects as keys for finding `CObject` pointers.
 
 [CMapStringToPtr](../mfc/reference/cmapstringtoptr-class.md)<br/>
-Uses `CString` objects as keys for finding **void** pointers.
+Uses `CString` objects as keys for finding **`void`** pointers.
 
 [CMapStringToString](../mfc/reference/cmapstringtostring-class.md)<br/>
 Uses `CString` objects as keys for finding other `CString` objects.
@@ -28,7 +28,7 @@ Uses `CString` objects as keys for finding other `CString` objects.
 Uses data of type **WORD** to find `CObject` pointers.
 
 [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)<br/>
-Uses data of type **WORD** to find **void** pointers.
+Uses data of type **WORD** to find **`void`** pointers.
 
 ## See also
 

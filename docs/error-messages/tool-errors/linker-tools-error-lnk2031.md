@@ -44,7 +44,7 @@ int main() {
 
 ## Example
 
-The following sample shows how to consume the native function from a pure image. Note the explicit **__cdecl** calling convention specifier.
+The following sample shows how to consume the native function from a pure image. Note the explicit **`__cdecl`** calling convention specifier.
 
 ```cpp
 // LNK2031_c.cpp

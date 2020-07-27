@@ -9,13 +9,13 @@ ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
 
 This topic is about the Microsoft-specific deprecated declspec declaration. For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs. the Microsoft-specific declspec or pragma, see [C++ Standard Attributes](attributes.md).
 
-With the exceptions noted below, the **deprecated** declaration offers the same functionality as the [deprecated](../preprocessor/deprecated-c-cpp.md) pragma:
+With the exceptions noted below, the **`deprecated`** declaration offers the same functionality as the [deprecated](../preprocessor/deprecated-c-cpp.md) pragma:
 
-- The **deprecated** declaration lets you specify particular forms of function overloads as deprecated, whereas the pragma form applies to all overloaded forms of a function name.
+- The **`deprecated`** declaration lets you specify particular forms of function overloads as deprecated, whereas the pragma form applies to all overloaded forms of a function name.
 
-- The **deprecated** declaration lets you specify a message that will display at compile time. The text of the message can be from a macro.
+- The **`deprecated`** declaration lets you specify a message that will display at compile time. The text of the message can be from a macro.
 
-- Macros can only be marked as deprecated with the **deprecated** pragma.
+- Macros can only be marked as deprecated with the **`deprecated`** pragma.
 
 If the compiler encounters the use of a deprecated identifier or the standard [`[[deprecated]]`](attributes.md) attribute, a [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) warning is thrown.
 

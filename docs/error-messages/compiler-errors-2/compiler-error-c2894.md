@@ -9,7 +9,7 @@ ms.assetid: 4e250579-2b59-4993-a6f4-49273e7ecf06
 
 templates cannot be declared to have 'C' linkage
 
-This error can be caused by a template defined inside an `extern` "C" block.
+This error can be caused by a template defined inside an `extern "C"` block.
 
 The following sample generates C2894:
 

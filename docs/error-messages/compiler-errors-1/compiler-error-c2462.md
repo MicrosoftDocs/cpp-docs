@@ -9,7 +9,7 @@ ms.assetid: a8601bf8-f5ce-41de-9117-e2632bd4996b
 
 'identifier' : cannot define a type in a 'new-expression'
 
-You cannot define a type in the operand field of the `new` operator. Put the type definition in a separate statement.
+You cannot define a type in the operand field of the **`new`** operator. Put the type definition in a separate statement.
 
 The following sample generates C2462:
 

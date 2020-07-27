@@ -40,11 +40,11 @@ Additional information about DAO errors, the DAO Error object type, and the DAO 
 
 ## <a name="_core_a_database_exception.2d.handling_example"></a> A Database Exception-Handling Example
 
-The following example attempts to construct a [CRecordset](reference/crecordset-class.md)-derived object on the heap with the **new** operator, and then open the recordset (for an ODBC data source). For a similar example for the DAO classes, see "DAO Exception Example" below.
+The following example attempts to construct a [CRecordset](reference/crecordset-class.md)-derived object on the heap with the **`new`** operator, and then open the recordset (for an ODBC data source). For a similar example for the DAO classes, see "DAO Exception Example" below.
 
 ### ODBC Exception Example
 
-The [Open](reference/crecordset-class.md#open) member function could throw an exception (of type [CDBException](reference/cdbexception-class.md) for the ODBC classes), so this code brackets the `Open` call with a **try** block. The subsequent **catch** block will catch a `CDBException`. You could examine the exception object itself, called `e`, but in this case it is enough to know that the attempt to create a recordset has failed. The **catch** block displays a message box and cleans up by deleting the recordset object.
+The [Open](reference/crecordset-class.md#open) member function could throw an exception (of type [CDBException](reference/cdbexception-class.md) for the ODBC classes), so this code brackets the `Open` call with a **`try`** block. The subsequent **`catch`** block will catch a `CDBException`. You could examine the exception object itself, called `e`, but in this case it is enough to know that the attempt to create a recordset has failed. The **`catch`** block displays a message box and cleans up by deleting the recordset object.
 
 [!code-cpp[NVC_MFCDatabase#36](codesnippet/cpp/exceptions-database-exceptions_1.cpp)]
 

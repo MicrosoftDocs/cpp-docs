@@ -9,7 +9,7 @@ ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
 
 'type': incorrect usage of 'auto'
 
-The indicated type cannot be declared with the `auto` keyword. For example, you cannot use the `auto` keyword to declare an array or a method return type.
+The indicated type cannot be declared with the **`auto`** keyword. For example, you cannot use the **`auto`** keyword to declare an array or a method return type.
 
 ### To correct this error
 
@@ -19,7 +19,7 @@ The indicated type cannot be declared with the `auto` keyword. For example, you 
 
 ## Example
 
-The following example yields C3532 because the `auto` keyword cannot declare a method return type.
+The following example yields C3532 because the **`auto`** keyword cannot declare a method return type.
 
 ```cpp
 // C3532a.cpp
@@ -29,7 +29,7 @@ auto f(){}   // C3532
 
 ## Example
 
-The following example yields C3532 because the `auto` keyword cannot declare an array.
+The following example yields C3532 because the **`auto`** keyword cannot declare an array.
 
 ```cpp
 // C3532b.cpp

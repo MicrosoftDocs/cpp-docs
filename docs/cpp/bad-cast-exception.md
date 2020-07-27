@@ -7,7 +7,7 @@ ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
 ---
 # bad_cast exception
 
-The **bad_cast** exception is thrown by the **dynamic_cast** operator as the result of a failed cast to a reference type.
+The **bad_cast** exception is thrown by the **`dynamic_cast`** operator as the result of a failed cast to a reference type.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ The interface for **bad_cast** is:
 class bad_cast : public exception
 ```
 
-The following code contains an example of a failed **dynamic_cast** that throws the **bad_cast** exception.
+The following code contains an example of a failed **`dynamic_cast`** that throws the **bad_cast** exception.
 
 ```cpp
 // expre_bad_cast_Exception.cpp
@@ -62,7 +62,7 @@ Circle circle_instance;
 Circle& ref_circle = circle_instance;
 ```
 
-Then reverse the sense of the cast in the **try** block as follows:
+Then reverse the sense of the cast in the **`try`** block as follows:
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);

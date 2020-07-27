@@ -7,7 +7,7 @@ ms.assetid: 8220d373-fa1c-44be-a21d-96d49b3ea6bb
 ---
 # const_mem_fun1_ref_t Class
 
-An adapter class that allows a **const** member function that takes a single argument to be called as a binary function object when initialized with a reference argument. Deprecated in C++11, removed in C++17.
+An adapter class that allows a **`const`** member function that takes a single argument to be called as a binary function object when initialized with a reference argument. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 
@@ -27,7 +27,7 @@ template <class Result, class Type, class Arg>
 A pointer to the member function of class `Type` to be converted to a function object.
 
 *left*\
-The **const** object that the *Pm* member function is called on.
+The **`const`** object that the *Pm* member function is called on.
 
 *right*\
 The argument that is being given to *Pm*.
@@ -38,7 +38,7 @@ An adaptable binary function.
 
 ## Remarks
 
-The class template stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (`left`.\* *Pm*)(`right`) **const**.
+The class template stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (`left`.\* *Pm*)(`right`) **`const`**.
 
 ## Example
 

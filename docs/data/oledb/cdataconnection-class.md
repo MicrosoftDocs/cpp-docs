@@ -157,7 +157,7 @@ operator bool() throw();
 
 ### Remarks
 
-Returns a **bool** (C++ data type) value. **true** means the current session is open; **false** means the current session is closed.
+Returns a **`bool`** (C++ data type) value. **`true`** means the current session is open; **`false`** means the current session is closed.
 
 ## <a name="op_cdata_amp"></a> CDataConnection::operator CDataSource&amp;
 

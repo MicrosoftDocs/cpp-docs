@@ -82,7 +82,7 @@ int m_cause;
 
 ### Remarks
 
-This data member is a public variable of type **int**. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:
+This data member is a public variable of type **`int`**. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:
 
 - `CArchiveException::none` No error occurred.
 

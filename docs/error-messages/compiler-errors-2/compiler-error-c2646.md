@@ -9,7 +9,7 @@ ms.assetid: 92ff1f02-5eaf-40a5-8b7a-a682f149e967
 
 an anonymous struct or union at global or namespace scope must be declared static
 
-An anonymous struct or union has global or namespace scope but is not declared `static`.
+An anonymous struct or union has global or namespace scope but is not declared **`static`**.
 
 The following sample generates C2646 and shows how to fix it:
 

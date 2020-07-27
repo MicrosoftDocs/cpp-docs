@@ -51,7 +51,7 @@ The choice of container type should be based in general on the type of searching
 
 The multiset should be the associative container of choice when the conditions associating the values with their keys are satisfies by the application. The elements of a multiset may be multiple and serve as their own sort keys, so keys are not unique. A model for this type of structure is an ordered list of, say, words in which the words may occur more than once. Had multiple occurrences of the words not been allowed, then a set would have been the appropriate container structure. If unique definitions were attached as values to the list of unique key words, then a map would be an appropriate structure to contain this data. If instead the definitions were not unique, then a multimap would be the container of choice.
 
-The multiset orders the sequence it controls by calling a stored function object of type *Compare*. This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **true** or **false**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
+The multiset orders the sequence it controls by calling a stored function object of type *Compare*. This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
@@ -66,10 +66,10 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A typedef for the `allocator` class for the `multiset` object.|
-|[const_iterator](#const_iterator)|A typedef for a bidirectional iterator that can read a **const** element in the `multiset`.|
-|[const_pointer](#const_pointer)|A typedef for a pointer to a **const** element in a `multiset`.|
-|[const_reference](#const_reference)|A typedef for a reference to a **const** element stored in a `multiset` for reading and performing **const** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A typedef for a bidirectional iterator that can read any **const** element in the `multiset`.|
+|[const_iterator](#const_iterator)|A typedef for a bidirectional iterator that can read a **`const`** element in the `multiset`.|
+|[const_pointer](#const_pointer)|A typedef for a pointer to a **`const`** element in a `multiset`.|
+|[const_reference](#const_reference)|A typedef for a reference to a **`const`** element stored in a `multiset` for reading and performing **`const`** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A typedef for a bidirectional iterator that can read any **`const`** element in the `multiset`.|
 |[difference_type](#difference_type)|A signed integer typedef for the number of elements of a `multiset` in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A typedef for a bidirectional iterator that can read or modify any element in a `multiset`.|
 |[key_compare](#key_compare)|A typedef for a function object that can compare two keys to determine the relative order of two elements in the `multiset`.|
@@ -196,7 +196,7 @@ The first element of ms1 is now 2
 
 ## <a name="cbegin"></a> multiset::cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Returns a **`const`** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -204,13 +204,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A **const** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **`const`** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -222,7 +222,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a> multiset::cend
 
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
+Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -230,13 +230,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A **const** bidirectional-access iterator that points just beyond the end of the range.
+A **`const`** bidirectional-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -288,7 +288,7 @@ The size of the multiset after clearing is 0.
 
 ## <a name="const_iterator"></a> multiset::const_iterator
 
-A type that provides a bidirectional iterator that can read a **const** element in the multiset.
+A type that provides a bidirectional iterator that can read a **`const`** element in the multiset.
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -304,7 +304,7 @@ See the example for [begin](#begin) for an example using `const_iterator`.
 
 ## <a name="const_pointer"></a> multiset::const_pointer
 
-A type that provides a pointer to a **const** element in a multiset.
+A type that provides a pointer to a **`const`** element in a multiset.
 
 ```cpp
 typedef typename allocator_type::const_pointer const_pointer;
@@ -318,7 +318,7 @@ In most cases, an [iterator](#iterator) should be used to access the elements in
 
 ## <a name="const_reference"></a> multiset::const_reference
 
-A type that provides a reference to a **const** element stored in a multiset for reading and performing **const** operations.
+A type that provides a reference to a **`const`** element stored in a multiset for reading and performing **`const`** operations.
 
 ```cpp
 typedef typename allocator_type::const_reference const_reference;
@@ -359,7 +359,7 @@ The first element in the multiset is 10.
 
 ## <a name="const_reverse_iterator"></a> multiset::const_reverse_iterator
 
-A type that provides a bidirectional iterator that can read any **const** element in the multiset.
+A type that provides a bidirectional iterator that can read any **`const`** element in the multiset.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -710,7 +710,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the multiset is empty; **false** if the multiset is nonempty.
+**`true`** if the multiset is empty; **`false`** if the multiset is nonempty.
 
 ### Example
 
@@ -1491,7 +1491,7 @@ All constructors initialize their multiset.
 
 All constructors store a function object of type Compare that is used to establish an order among the keys of the multiset and that can later be returned by calling [key_comp](#key_comp).
 
-The first three constructors specify an empty initial multiset, the second specifying the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (*Al*) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
+The first three constructors specify an empty initial multiset, the second specifying the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (*Al*) to be used. The keyword **`explicit`** suppresses certain kinds of automatic type conversion.
 
 The fourth constructor specifies a copy of the multiset *Right*.
 

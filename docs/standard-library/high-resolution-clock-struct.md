@@ -28,7 +28,7 @@ class high_resolution_clock
 |----------|-----------------|
 |`duration`|A synonym for `nanoseconds`, defined in \<chrono>.|
 |`period`|A synonym for `nano`, defined in \<ratio>.|
-|`rep`|A synonym for **long** **long**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
+|`rep`|A synonym for **`long long`**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
 |`time_point`|A synonym for `chrono::time_point<high_resolution_clock>`.|
 
 ## Functions
@@ -41,4 +41,4 @@ class high_resolution_clock
 
 |Name|Description|
 |----------|-----------------|
-|`is_steady`|Holds **true**. A `high_resolution_clock` is *steady*.|
+|`is_steady`|Holds **`true`**. A `high_resolution_clock` is *steady*.|

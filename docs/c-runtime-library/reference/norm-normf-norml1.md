@@ -37,7 +37,7 @@ The squared magnitude of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **norm** that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long double** values. In a C program, **norm** always takes a **_Dcomplex** value and returns a **double** value.
+Because C++ allows overloading, you can call overloads of **norm** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, **norm** always takes a **_Dcomplex** value and returns a **`double`** value.
 
 ## Requirements
 

@@ -9,7 +9,7 @@ ms.assetid: 2c2c8f97-a5c4-47cd-8dd2-beea172613f3
 
 case constant 'constant' too big for the type of the switch expression
 
-A case constant in a `switch` expression does not fit in the type to which it is assigned.
+A case constant in a **`switch`** expression does not fit in the type to which it is assigned.
 
 ## Example
 

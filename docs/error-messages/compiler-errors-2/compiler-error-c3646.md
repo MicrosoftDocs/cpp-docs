@@ -13,7 +13,7 @@ ms.assetid: 4391ead2-9637-4ca3-aeda-5a991b18d66d
 
 The compiler found a token in the position where it expected to find an override specifier, but the token was not recognized by the compiler.
 
-For example, if the unrecognized *specifier* is **_NOEXCEPT**, replace it with the keyword **noexcept**.
+For example, if the unrecognized *specifier* is **_NOEXCEPT**, replace it with the keyword **`noexcept`**.
 
 For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).
 

@@ -60,11 +60,11 @@ The *constant-expression* is an integer constant expression with these additiona
 
 - Expressions must have integral type and can include only integer constants, character constants, and the **defined** operator.
 
-- The expression can't use `sizeof` or a type-cast operator.
+- The expression can't use **`sizeof`** or a type-cast operator.
 
 - The target environment may be unable to represent all ranges of integers.
 
-- The translation represents type **int** the same way as type **long**, and **unsigned int** the same way as **unsigned long**.
+- The translation represents type **`int`** the same way as type **`long`**, and **`unsigned int`** the same way as **`unsigned long`**.
 
 - The translator can translate character constants to a set of code values different from the set for the target environment. To determine the properties of the target environment, use an app built for that environment to check the values of the *LIMITS.H* macros.
 

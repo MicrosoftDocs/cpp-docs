@@ -9,4 +9,4 @@ ms.assetid: 0a9afb9f-60d8-4df7-b2ae-5c36e86df891
 
 PTR operator used with register in 'context'
 
-The `PTR` operator cannot be used with a `register` operand.
+The `PTR` operator cannot be used with a **`register`** operand.

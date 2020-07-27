@@ -95,7 +95,7 @@ The [error_code](../standard-library/error-code-class.md) object to compare.
 
 #### Return Value
 
-**true** if the category and value are equal; otherwise, **false**.
+**`true`** if the category and value are equal; otherwise, **`false`**.
 
 #### Remarks
 
@@ -161,7 +161,7 @@ The object to be tested for equality.
 
 #### Return Value
 
-**true** if the objects are equal; **false** if the objects are not equal.
+**`true`** if the objects are equal; **`false`** if the objects are not equal.
 
 #### Remarks
 
@@ -182,7 +182,7 @@ The object to be tested for inequality.
 
 #### Return Value
 
-**true** if the `error_category` object is not equal to the `error_category` object passed in *right*; otherwise **false**.
+**`true`** if the `error_category` object is not equal to the `error_category` object passed in *right*; otherwise **`false`**.
 
 #### Remarks
 
@@ -203,7 +203,7 @@ The `error_category` object to be compared.
 
 #### Return Value
 
-**true** if the `error_category` object is less than the `error_category` object passed in for comparison; Otherwise, **false**.
+**`true`** if the `error_category` object is less than the `error_category` object passed in for comparison; Otherwise, **`false`**.
 
 #### Remarks
 
@@ -225,4 +225,4 @@ typedef int value_type;
 
 #### Remarks
 
-This type definition is a synonym for **int**.
+This type definition is a synonym for **`int`**.

@@ -221,11 +221,11 @@ short __cdecl _fdnorm(unsigned short* ps);
 ### Parameters
 
 *ps*<br/>
-Pointer to the bitwise representation of a floating-point value expressed as an array of **unsigned** **short**.
+Pointer to the bitwise representation of a floating-point value expressed as an array of **`unsigned short`**.
 
 ### Remarks
 
-These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **unsigned** **short** through the `_double_val`, `_ldouble_val`, or `_float_val` type punning union declared in math.h. The return value is the result of **fpclassify** on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
+These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **`unsigned short`** through the `_double_val`, `_ldouble_val`, or `_float_val` type punning union declared in math.h. The return value is the result of **fpclassify** on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
 
 ## _dpoly, _ldpoly, _fdpoly
 

@@ -15,7 +15,7 @@ int y;
 x = y;
 ```
 
-In this example, the value of `y` is converted to type **double** and assigned to `x`.
+In this example, the value of `y` is converted to type **`double`** and assigned to `x`.
 
 ## See also
 

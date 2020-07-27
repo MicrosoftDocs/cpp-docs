@@ -63,7 +63,7 @@ The **_cscanf_s** function reads data directly from the console into the locatio
 Like other secure versions of functions in the **scanf** family, **_cscanf_s** and **_cswscanf_s** require size arguments for the type field characters **c**, **C**, **s**, **S**, and **[**. For more information, see [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
-> The size parameter is of type **unsigned**, not **size_t**.
+> The size parameter is of type **`unsigned`**, not **size_t**.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

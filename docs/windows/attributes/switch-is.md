@@ -29,7 +29,7 @@ See the [case](case-cpp.md) example for a sample use of **switch_is**.
 
 |||
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

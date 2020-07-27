@@ -45,11 +45,11 @@ Adds a generic C++ class to a project. The class doesn't inherit from ATL or MFC
 
 - **Access**
 
-  Sets access to the base class members for the new class. Access modifiers are keywords that specify the level of access that other classes have to the class member functions. For more information about how to specify access, see [Member access control](../cpp/member-access-control-cpp.md). By default, the class access level is set to `public`.
+  Sets access to the base class members for the new class. Access modifiers are keywords that specify the level of access that other classes have to the class member functions. For more information about how to specify access, see [Member access control](../cpp/member-access-control-cpp.md). By default, the class access level is set to **`public`**.
 
-  - `public`
-  - `protected`
-  - `private`
+  - **`public`**
+  - **`protected`**
+  - **`private`**
   - **Default** (No access modifier is generated.)
 
 - **Virtual destructor**

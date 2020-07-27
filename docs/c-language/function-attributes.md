@@ -8,7 +8,7 @@ ms.assetid: f0c03e20-94f2-47b5-a166-993a949a1a40
 
 **Microsoft Specific**
 
-The optional *attribute-seq* nonterminal allows you to select a calling convention on a per-function basis. You can also specify functions as `__fastcall` or `__inline`.
+The optional *attribute-seq* nonterminal allows you to select a calling convention on a per-function basis. You can also specify functions as **`__fastcall`** or **`__inline`**.
 
 **END Microsoft Specific**
 

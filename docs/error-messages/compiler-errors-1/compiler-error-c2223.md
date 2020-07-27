@@ -11,4 +11,4 @@ left of '->identifier' must point to struct/union
 
 The operand to the left of `->` is not a pointer to a class, structure, or union.
 
-This error can be caused by a left operand that is an undefined variable (therefore type `int`).
+This error can be caused by a left operand that is an undefined variable (therefore type **`int`**).

@@ -523,7 +523,7 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 
 ### Return Value
 
-This method always returns the **this** pointer.
+This method always returns the **`this`** pointer.
 
 ### Remarks
 

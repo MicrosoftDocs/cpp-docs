@@ -81,7 +81,7 @@ The *category* argument specifies the parts of a program's locale information th
 
 This function validates the category parameter. If the category parameter isn't one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL** and returns **NULL**.
 
-The *locale* argument is a pointer to a string that specifies the locale. For information about the format of the *locale* argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). If *locale* points to an empty string, the locale is the implementation-defined native environment. A value of **C** specifies the minimal ANSI conforming environment for C translation. The **C** locale assumes that all **char** data types are 1 byte and that their value is always less than 256.
+The *locale* argument is a pointer to a string that specifies the locale. For information about the format of the *locale* argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). If *locale* points to an empty string, the locale is the implementation-defined native environment. A value of **C** specifies the minimal ANSI conforming environment for C translation. The **C** locale assumes that all **`char`** data types are 1 byte and that their value is always less than 256.
 
 At program startup, the equivalent of the following statement is executed:
 

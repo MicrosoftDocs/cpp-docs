@@ -15,7 +15,7 @@ The following table summarizes the precedence and associativity (the order in wh
 | Symbol <sup>1</sup> | Type of operation | Associativity |
 |-------------|-----------------------|-------------------|
 | `[` `]` `(` `)` `.` `->`<br/>`++` `--` (postfix) | Expression | Left to right |
-| **sizeof** `&` `*` `+` `-` `~` `!`<br/>`++` `--` (prefix) | Unary | Right to left |
+| **`sizeof`** `&` `*` `+` `-` `~` `!`<br/>`++` `--` (prefix) | Unary | Right to left |
 | *typecasts* | Unary | Right to left |
 | `*` `/` `%` | Multiplicative | Left to right |
 | `+` `-` | Additive | Left to right |

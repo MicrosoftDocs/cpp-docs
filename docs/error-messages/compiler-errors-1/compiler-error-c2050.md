@@ -9,7 +9,7 @@ ms.assetid: 66aaed7d-00db-4ce1-a9d6-4447c1cf07ce
 
 switch expression not integral
 
-The `switch` expression evaluates to a noninteger value. To resolve the error, use only integral values in switch statements.
+The **`switch`** expression evaluates to a noninteger value. To resolve the error, use only integral values in switch statements.
 
 The following sample generates C2050:
 

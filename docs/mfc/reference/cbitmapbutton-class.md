@@ -72,7 +72,7 @@ When creating a bitmap-button control, set the BS_OWNERDRAW style to specify tha
 
 1. In your application's dialog class (derived from `CDialog`), add a `CBitmapButton` member object.
 
-1. In the `CDialog` object's [OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog) routine, call the `CBitmapButton` object's [AutoLoad](#autoload) function, using as parameters the button's control ID and the `CDialog` object's **this** pointer.
+1. In the `CDialog` object's [OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog) routine, call the `CBitmapButton` object's [AutoLoad](#autoload) function, using as parameters the button's control ID and the `CDialog` object's **`this`** pointer.
 
 If you want to handle Windows notification messages, such as BN_CLICKED, sent by a bitmap-button control to its parent (usually a class derived from `CDialog`), add to the `CDialog`-derived object a message-map entry and message-handler member function for each message. The notifications sent by a `CBitmapButton` object are the same as those sent by a [CButton](../../mfc/reference/cbutton-class.md) object.
 

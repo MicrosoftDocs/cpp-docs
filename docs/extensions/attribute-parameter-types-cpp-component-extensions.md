@@ -9,29 +9,29 @@ ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
 
 Values passed to attributes must be known to the compiler at compile time.  Attribute parameters can be of the following types:
 
-- **bool**
+- **`bool`**
 
-- **char**, **unsigned char**
+- **`char`**, **`unsigned char`**
 
-- **short**, **unsigned short**
+- **`short`**, **`unsigned short`**
 
-- **int**, **unsigned int**
+- **`int`**, **`unsigned int`**
 
-- **long**, **unsigned long**
+- **`long`**, **`unsigned long`**
 
-- **__int64**, **unsigned __int64**
+- **`__int64`**, **unsigned __int64**
 
-- **float**, **double**
+- **`float`**, **`double`**
 
-- **wchar_t**
+- **`wchar_t`**
 
-- `char*` or `wchar_t*` or `System::String*`
+- **`char*`** or `wchar_t*` or `System::String*`
 
 - `System::Type ^`
 
 - `System::Object ^`
 
-- **enum**
+- **`enum`**
 
 ## Example
 

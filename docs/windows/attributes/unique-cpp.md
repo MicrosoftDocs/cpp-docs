@@ -29,7 +29,7 @@ See the [ref](ref-cpp.md) example for a sample use of **unique**.
 
 |||
 |-|-|
-|**Applies to**|**typedef**, **struct**, **union**, interface parameter, interface method|
+|**Applies to**|**`typedef`**, **`struct`**, **`union`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

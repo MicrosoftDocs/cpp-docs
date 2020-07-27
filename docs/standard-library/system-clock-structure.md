@@ -77,7 +77,7 @@ static const bool is_monotonic = false;
 
 ### Return Value
 
-In this implementation, `system_clock::is_monotonic` always returns **false**.
+In this implementation, `system_clock::is_monotonic` always returns **`false`**.
 
 ### Remarks
 
@@ -93,7 +93,7 @@ static const bool is_steady = false;
 
 ### Return Value
 
-In this implementation, `system_clock::is_steady` always returns **false**.
+In this implementation, `system_clock::is_steady` always returns **`false`**.
 
 ### Remarks
 

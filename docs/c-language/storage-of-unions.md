@@ -16,7 +16,7 @@ union         /* Defines a union named x */
 } x;
 ```
 
-The members of the `x` union are, in order of their declaration, a pointer to a `char` value, a `char` value, and an array of **float** values. The storage allocated for `x` is the storage required for the 20-element array `f`, since `f` is the longest member of the union. Because no tag is associated with the union, its type is unnamed or "anonymous."
+The members of the `x` union are, in order of their declaration, a pointer to a **`char`** value, a **`char`** value, and an array of **`float`** values. The storage allocated for `x` is the storage required for the 20-element array `f`, since `f` is the longest member of the union. Because no tag is associated with the union, its type is unnamed or "anonymous."
 
 ## See also
 

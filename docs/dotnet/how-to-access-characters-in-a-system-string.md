@@ -7,7 +7,7 @@ ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
 ---
 # How to: Access Characters in a System::String
 
-You can access characters of a <xref:System.String> object for high-performance calls to unmanaged functions that take `wchar_t*` strings. The method yields an interior pointer to the first character of the <xref:System.String> object. This pointer can be manipulated directly or pinned and passed to a function expecting an ordinary `wchar_t` string.
+You can access characters of a <xref:System.String> object for high-performance calls to unmanaged functions that take `wchar_t*` strings. The method yields an interior pointer to the first character of the <xref:System.String> object. This pointer can be manipulated directly or pinned and passed to a function expecting an ordinary **`wchar_t`** string.
 
 ## Example
 

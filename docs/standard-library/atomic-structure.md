@@ -32,14 +32,14 @@ struct atomic;
 |[atomic::operator&#124;=](#op_or_eq)|Performs a bitwise or on a specified value and the stored value. Used only by integral specializations.|
 |[atomic::operator^=](#op_xor_eq)|Performs a bitwise exclusive or on a specified value and the stored value. Used only by integral specializations.|
 |**Functions**||
-|[compare_exchange_strong](#compare_exchange_strong)|Performs an *atomic_compare_and_exchange* operation on **this** and returns the result.|
-|[compare_exchange_weak](#compare_exchange_weak)|Performs a *weak_atomic_compare_and_exchange* operation on **this** and returns the result.|
+|[compare_exchange_strong](#compare_exchange_strong)|Performs an *atomic_compare_and_exchange* operation on **`this`** and returns the result.|
+|[compare_exchange_weak](#compare_exchange_weak)|Performs a *weak_atomic_compare_and_exchange* operation on **`this`** and returns the result.|
 |[fetch_add](#fetch_add)|Adds a specified value to the stored value.|
 |[fetch_and](#fetch_and)|Performs a bitwise and on a specified value and the stored value.|
 |[fetch_or](#fetch_or)|Performs a bitwise or on a specified value and the stored value.|
 |[fetch_sub](#fetch_sub)|Subtracts a specified value from the stored value.|
 |[fetch_xor](#fetch_xor)|Performs a bitwise exclusive or on a specified value and the stored value.|
-|[is_lock_free](#is_lock_free)|Specifies whether atomic operations on **this** are *lock free*. An atomic type is *lock free* if no atomic operations on that type use locks.|
+|[is_lock_free](#is_lock_free)|Specifies whether atomic operations on **`this`** are *lock free*. An atomic type is *lock free* if no atomic operations on that type use locks.|
 |[load](#load)|Reads and returns the stored value.|
 |[store](#store)|Uses a specified value to replace the stored value.|
 
@@ -49,7 +49,7 @@ The type *Ty* must be *trivially copyable*. That is, using [memcpy](../c-runtime
 
 A partial specialization, **atomic\<Ty \*>**, exists for all pointer types. The specialization enables the addition of an offset to the managed pointer value or the subtraction of an offset from it. The arithmetic operations take an argument of type `ptrdiff_t` and adjust that argument according to the size of *Ty* to be consistent with ordinary address arithmetic.
 
-A specialization exists for every integral type except **bool**. Each specialization provides a rich set of methods for atomic arithmetic and logical operations.
+A specialization exists for every integral type except **`bool`**. Each specialization provides a rich set of methods for atomic arithmetic and logical operations.
 
 ||||
 |-|-|-|
@@ -333,7 +333,7 @@ Second `memory_order` argument.
 
 ### Return Value
 
-A **bool** that indicates the result of the value comparison.
+A **`bool`** that indicates the result of the value comparison.
 
 ### Remarks
 
@@ -388,7 +388,7 @@ Second `memory_order` argument.
 
 ### Return Value
 
-A **bool** that indicates the result of the value comparison.
+A **`bool`** that indicates the result of the value comparison.
 
 ### Remarks
 
@@ -649,7 +649,7 @@ A `memory_order` constraint.
 
 ### Remarks
 
-This member function atomically stores *Value* in `*this`, within the memory constraints that are specified by *Order*.
+This member function atomically stores *Value* in **`*this`**, within the memory constraints that are specified by *Order*.
 
 ## See also
 

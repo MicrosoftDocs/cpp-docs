@@ -48,7 +48,7 @@ To eat, a philosopher must hold two chopsticks. If every philosopher holds just 
 
 The following example shows a naïve implementation of the dining philosophers problem. The `philosopher` class, which derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md), enables each philosopher to act independently. The example uses a shared array of [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) objects to give each `philosopher` object exclusive access to a pair of chopsticks.
 
-To relate the implementation to the illustration, the `philosopher` class represents one philosopher. An `int` variable represents each chopstick. The `critical_section` objects serve as holders on which the chopsticks rest. The `run` method simulates the life of the philosopher. The `think` method simulates the act of thinking and the `eat` method simulates the act of eating.
+To relate the implementation to the illustration, the `philosopher` class represents one philosopher. An **`int`** variable represents each chopstick. The `critical_section` objects serve as holders on which the chopsticks rest. The `run` method simulates the life of the philosopher. The `think` method simulates the act of thinking and the `eat` method simulates the act of eating.
 
 A `philosopher` object locks both `critical_section` objects to simulate the removal of the chopsticks from the holders before it calls the `eat` method. After the call to `eat`, the `philosopher` object returns the chopsticks to the holders by setting the `critical_section` objects back to the unlocked state.
 

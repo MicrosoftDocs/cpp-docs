@@ -9,7 +9,7 @@ ms.assetid: 185de401-231e-4999-a149-172ee4c69d84
 
 'function' : the function used to create a delegate cannot have return type 'type'
 
-The following types are invalid as return types for a `delegate`:
+The following types are invalid as return types for a **`delegate`**:
 
 - Pointer to function
 

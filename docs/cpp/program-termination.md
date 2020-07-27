@@ -18,7 +18,7 @@ In C++, you can exit a program in these ways:
 
 The [exit](../c-runtime-library/reference/exit-exit-exit.md) function, declared in \<stdlib.h>, terminates a C++ program. The value supplied as an argument to `exit` is returned to the operating system as the program's return code or exit code. By convention, a return code of zero means that the program completed successfully. You can use the constants EXIT_FAILURE and EXIT_SUCCESS, also defined in \<stdlib.h>, to indicate success or failure of your program.
 
-Issuing a **return** statement from the `main` function is equivalent to calling the `exit` function with the return value as its argument.
+Issuing a **`return`** statement from the `main` function is equivalent to calling the `exit` function with the return value as its argument.
 
 ## abort function
 
@@ -42,15 +42,15 @@ int main()
 }
 ```
 
-The `exit` and **return** statements in the preceding example are functionally identical. However, C++ requires that functions that have return types other than **void** return a value. The **return** statement allows you to return a value from `main`.
+The `exit` and **`return`** statements in the preceding example are functionally identical. However, C++ requires that functions that have return types other than **`void`** return a value. The **`return`** statement allows you to return a value from `main`.
 
 ## Destruction of static objects
 
-When you call `exit` or execute a **return** statement from `main`, static objects are destroyed in the reverse order of their initialization (after the call to `atexit` if one exists). The following example shows how such initialization and cleanup works.
+When you call `exit` or execute a **`return`** statement from `main`, static objects are destroyed in the reverse order of their initialization (after the call to `atexit` if one exists). The following example shows how such initialization and cleanup works.
 
 ### Example
 
-In the following example, the static objects `sd1` and `sd2` are created and initialized before entry to `main`. After this program terminates using the **return** statement, first `sd2` is destroyed and then `sd1`. The destructor for the `ShowData` class closes the files associated with these static objects.
+In the following example, the static objects `sd1` and `sd2` are created and initialized before entry to `main`. After this program terminates using the **`return`** statement, first `sd2` is destroyed and then `sd1`. The destructor for the `ShowData` class closes the files associated with these static objects.
 
 ```cpp
 // using_exit_or_return1.cpp

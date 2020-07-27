@@ -16,9 +16,9 @@ Exceptions thrown by the framework or by your application interrupt normal progr
 
 There are two primary methods to do this.
 
-- Handle exceptions locally using the **try** and **catch** keywords, then destroy all objects with one statement.
+- Handle exceptions locally using the **`try`** and **`catch`** keywords, then destroy all objects with one statement.
 
-- Destroy any object in the **catch** block before throwing the exception outside the block for further handling.
+- Destroy any object in the **`catch`** block before throwing the exception outside the block for further handling.
 
 These two approaches are illustrated below as solutions to the following problematic example:
 
@@ -36,7 +36,7 @@ This new example sets up an exception handler to catch the exception and handle 
 
 ## <a name="_core_throwing_exceptions_after_destroying_objects"></a> Throwing Exceptions After Destroying Objects
 
-Another way to handle exceptions is to pass them on to the next outer exception-handling context. In your **catch** block, you can do some cleanup of your locally allocated objects and then throw the exception on for further processing.
+Another way to handle exceptions is to pass them on to the next outer exception-handling context. In your **`catch`** block, you can do some cleanup of your locally allocated objects and then throw the exception on for further processing.
 
 The throwing function may or may not need to deallocate heap objects. If the function always deallocates the heap object before returning in the normal case, then the function should also deallocate the heap object before throwing the exception. On the other hand, if the function does not normally deallocate the object before returning in the normal case, then you must decide on a case-by-case basis whether the heap object should be deallocated.
 

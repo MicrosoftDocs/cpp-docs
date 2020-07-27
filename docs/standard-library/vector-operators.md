@@ -25,7 +25,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vectors are not equal; **false** if the vectors are equal.
+**`true`** if the vectors are not equal; **`false`** if the vectors are equal.
 
 ### Remarks
 
@@ -76,7 +76,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is less than the vector on the right side of the operator; otherwise **false**.
+**`true`** if the vector on the left side of the operator is less than the vector on the right side of the operator; otherwise **`false`**.
 
 ### Example
 
@@ -127,7 +127,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is less than or equal to the vector on the right side of the operator; otherwise **false**.
+**`true`** if the vector on the left side of the operator is less than or equal to the vector on the right side of the operator; otherwise **`false`**.
 
 ### Example
 
@@ -178,7 +178,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is equal to the vector on the right side of the operator; otherwise **false**.
+**`true`** if the vector on the left side of the operator is equal to the vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -229,7 +229,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is greater than the vector on the right side of the operator; otherwise **false**.
+**`true`** if the vector on the left side of the operator is greater than the vector on the right side of the operator; otherwise **`false`**.
 
 ### Example
 
@@ -281,7 +281,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is greater than or equal to the vector on the right side of the vector; otherwise **false**.
+**`true`** if the vector on the left side of the operator is greater than or equal to the vector on the right side of the vector; otherwise **`false`**.
 
 ### Example
 

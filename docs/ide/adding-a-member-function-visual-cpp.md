@@ -35,10 +35,10 @@ Once you've added the member function using the wizard, you can edit the code in
 
   | | | |
   |---|---|---|
-  | `char` | `int` | `unsigned int` |
-  | `double` | `long` | `unsigned long` |
-  | `float` | `short` | `void` |
-  | `HRESULT` | `unsigned char` | |
+  | **`char`** | **`int`** | **`unsigned int`** |
+  | **`double`** | **`long`** | **`unsigned long`** |
+  | **`float`** | **`short`** | **`void`** |
+  | `HRESULT` | **`unsigned char`** | |
 
 - **Function name**
 
@@ -50,9 +50,9 @@ Once you've added the member function using the wizard, you can edit the code in
 
   | | | |
   |---|---|---|
-  | `char` | `int` | `unsigned char` |
-  | `double` | `long` | `unsigned int` |
-  | `float` | `short` | `unsigned long` |
+  | **`char`** | **`int`** | **`unsigned char`** |
+  | **`double`** | **`long`** | **`unsigned int`** |
+  | **`float`** | **`short`** | **`unsigned long`** |
 
 - **Parameter name**
 
@@ -64,7 +64,7 @@ Once you've added the member function using the wizard, you can edit the code in
 
 - **Access**
 
-  Sets the access to the member function. Access modifiers are keywords that specify the access other classes have to the member function. For more information about specifying access, see [Member-access control](../cpp/member-access-control-cpp.md). The member function access level is set to `public` by default.
+  Sets the access to the member function. Access modifiers are keywords that specify the access other classes have to the member function. For more information about specifying access, see [Member-access control](../cpp/member-access-control-cpp.md). The member function access level is set to **`public`** by default.
 
   - [public](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)

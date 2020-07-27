@@ -58,7 +58,7 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 The critical section object.
 
 *bInitialLock*<br/>
-The initial lock state: **true** means locked.
+The initial lock state: **`true`** means locked.
 
 ### Remarks
 

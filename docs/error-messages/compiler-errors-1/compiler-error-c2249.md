@@ -9,7 +9,7 @@ ms.assetid: bdd6697c-e04b-49b9-8e40-d9eb6d74f2b6
 
 'member' : no accessible path to access member declared in virtual base 'class'
 
-The `member` is inherited from a nonpublic `virtual` base class or structure.
+The `member` is inherited from a nonpublic **`virtual`** base class or structure.
 
 ## Example
 

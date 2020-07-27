@@ -7,7 +7,7 @@ ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
 ---
 # /Zc:noexceptTypes (C++17 noexcept rules)
 
-The C++17 standard makes `throw()` an alias for `noexcept`, removes `throw(`*`type-list`*`)` and `throw(...)`, and allows certain types to include `noexcept`. This change can cause a number of source compatibility issues in code that conforms to C++14 or earlier. The **`/Zc:noexceptTypes`** option specifies conformance to the C++17 standard. **`/Zc:noexceptTypes-`**  allows the C++14 and earlier behavior when code is compiled in C++17 mode.
+The C++17 standard makes `throw()` an alias for **`noexcept`**, removes `throw(`*`type-list`*`)` and `throw(...)`, and allows certain types to include **`noexcept`**. This change can cause a number of source compatibility issues in code that conforms to C++14 or earlier. The **`/Zc:noexceptTypes`** option specifies conformance to the C++17 standard. **`/Zc:noexceptTypes-`**  allows the C++14 and earlier behavior when code is compiled in C++17 mode.
 
 ## Syntax
 

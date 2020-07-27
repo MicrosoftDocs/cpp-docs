@@ -205,7 +205,7 @@ Next:
 
 ## Debugging the CPU Code
 
-In this procedure, you will use the Local Windows Debugger to make sure that the CPU code in this application is correct. The segment of the CPU code in this application that is especially interesting is the `for` loop in the `reduction_sum_gpu_kernel` function. It controls the tree-based parallel reduction that is run on the GPU.
+In this procedure, you will use the Local Windows Debugger to make sure that the CPU code in this application is correct. The segment of the CPU code in this application that is especially interesting is the **`for`** loop in the `reduction_sum_gpu_kernel` function. It controls the tree-based parallel reduction that is run on the GPU.
 
 ### To debug the CPU code
 

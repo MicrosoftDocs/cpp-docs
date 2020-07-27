@@ -31,7 +31,7 @@ In the property map, add a [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-in
 
 The Microsoft OLE DB Providers ignore the following OLE DB properties:
 
-- `DBPROP_MAXROWS` only works for read-only providers (that is, where `DBPROP_IRowsetChange` and `DBPROP_IRowsetUpdate` are **false**); otherwise this property isn't supported.
+- `DBPROP_MAXROWS` only works for read-only providers (that is, where `DBPROP_IRowsetChange` and `DBPROP_IRowsetUpdate` are **`false`**); otherwise this property isn't supported.
 
 - `DBPROP_MAXPENDINGROWS` is ignored; the provider specifies its own limit.
 

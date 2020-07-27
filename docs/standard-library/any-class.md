@@ -29,7 +29,7 @@ class any
 |||
 |-|-|
 |[emplace](#emplace)|Sets an any value.|
-|[has_value](#has_value)|Returns **true** if any has a value.|
+|[has_value](#has_value)|Returns **`true`** if any has a value.|
 |[reset](#reset)|Resets an any.|
 |[swap](#swap)|Swaps two any objects.|
 |[type](#type)|Returns the any type.|
@@ -71,7 +71,7 @@ template <class T, class U, class... Args>
 
 ## <a name="has_value"></a> has_value
 
-Returns **true** if any has a value.
+Returns **`true`** if any has a value.
 
 ```cpp
 bool has_value() const noexcept;

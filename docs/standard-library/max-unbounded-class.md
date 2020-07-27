@@ -47,7 +47,7 @@ void allocated(std::size_t _Nx = 1);
 
 ### Remarks
 
-This member function does nothing. It is called after each successful call by `cache_freelist::allocate` to operator **new**. The argument *_Nx* is the number of memory blocks in the chunk allocated by operator **new**.
+This member function does nothing. It is called after each successful call by `cache_freelist::allocate` to operator **`new`**. The argument *_Nx* is the number of memory blocks in the chunk allocated by operator **`new`**.
 
 ## <a name="deallocated"></a> max_unbounded::deallocated
 
@@ -65,7 +65,7 @@ void deallocated(std::size_t _Nx = 1);
 
 ### Remarks
 
-The member function does nothing. This member function is called after each call by `cache_freelist::deallocate` to operator **delete**. The argument *_Nx* is the number of memory blocks in the chunk deallocated by operator **delete**.
+The member function does nothing. This member function is called after each call by `cache_freelist::deallocate` to operator **`delete`**. The argument *_Nx* is the number of memory blocks in the chunk deallocated by operator **`delete`**.
 
 ## <a name="full"></a> max_unbounded::full
 
@@ -77,11 +77,11 @@ bool full();
 
 ### Return Value
 
-The member function always returns **false**.
+The member function always returns **`false`**.
 
 ### Remarks
 
-This member function is called by `cache_freelist::deallocate`. If the call returns **true**, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
+This member function is called by `cache_freelist::deallocate`. If the call returns **`true`**, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **`delete`** to deallocate the block.
 
 ## <a name="released"></a> max_unbounded::released
 

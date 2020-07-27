@@ -82,7 +82,7 @@ bool try_lock();
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -104,7 +104,7 @@ A [chrono::duration](../standard-library/duration-class.md) object that specifie
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -128,7 +128,7 @@ A point in time that specifies the threshold after which the method no longer at
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 

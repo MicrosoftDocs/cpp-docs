@@ -623,11 +623,11 @@ operator bool();
 
 ### Return value
 
-`true` if the wrapped object is valid; `false` otherwise.
+**`true`** if the wrapped object is valid; **`false`** otherwise.
 
 ### Remarks
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+This operator actually converts to `_detail_class::_safe_bool` which is safer than **`bool`** because it can't be converted to an integral type.
 
 ### Example
 
@@ -668,7 +668,7 @@ bool operator!();
 
 ### Return value
 
-`true` if the wrapped object is invalid; `false` otherwise.
+**`true`** if the wrapped object is invalid; **`false`** otherwise.
 
 ### Example
 
