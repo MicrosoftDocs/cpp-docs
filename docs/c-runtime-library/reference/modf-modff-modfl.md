@@ -44,7 +44,7 @@ The **modf** functions break down the floating-point value *x* into fractional a
 
 **modf** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
-C++ allows overloading, so you can call overloads of **modf** that take and return **float** or **`long double`** parameters. In a C program, **modf** always takes two double values and returns a double value.
+C++ allows overloading, so you can call overloads of **modf** that take and return **`float`** or **`long double`** parameters. In a C program, **modf** always takes two double values and returns a double value.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

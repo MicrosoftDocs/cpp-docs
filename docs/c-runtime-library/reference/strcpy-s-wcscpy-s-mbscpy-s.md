@@ -73,7 +73,7 @@ errno_t _mbscpy_s_l(
 Location of the destination string buffer.
 
 *dest_size*<br/>
-Size of the destination string buffer in **char** units for narrow and multi-byte functions, and **wchar_t** units for wide functions. This value must be greater than zero and not greater than **RSIZE_MAX**. Ensure that this size accounts for the terminating `NULL` following the string.
+Size of the destination string buffer in **`char`** units for narrow and multi-byte functions, and **`wchar_t`** units for wide functions. This value must be greater than zero and not greater than **RSIZE_MAX**. Ensure that this size accounts for the terminating `NULL` following the string.
 
 *src*<br/>
 Null-terminated source string buffer.

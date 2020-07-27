@@ -31,7 +31,7 @@ class PaperbackBook : public Book {};
 
 The base class from which each class is derived is declared before the declaration of the derived class. It is not sufficient to provide a forward-referencing declaration for a base class; it must be a complete declaration.
 
-In the preceding example, the access specifier **public** is used. The meaning of public, protected, and private inheritance is described in [Member-Access Control.](../cpp/member-access-control-cpp.md)
+In the preceding example, the access specifier **`public`** is used. The meaning of public, protected, and private inheritance is described in [Member-Access Control.](../cpp/member-access-control-cpp.md)
 
 A class can serve as the base class for many specific classes, as illustrated in the following figure.
 

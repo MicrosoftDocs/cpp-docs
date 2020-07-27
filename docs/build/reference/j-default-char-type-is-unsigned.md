@@ -17,7 +17,7 @@ Changes the default **`char`** type from **`signed char`** to **`unsigned char`*
 
 ## Remarks
 
-If a **`char`** value is explicitly declared as `signed`, the **/J** option does not affect it, and the value is sign-extended when it is widened to an **`int`** type.
+If a **`char`** value is explicitly declared as **`signed`**, the **/J** option does not affect it, and the value is sign-extended when it is widened to an **`int`** type.
 
 The **/J** option defines `_CHAR_UNSIGNED`, which is used with `#ifndef` in the LIMITS.h file to define the range of the default **`char`** type.
 

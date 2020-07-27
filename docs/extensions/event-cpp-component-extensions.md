@@ -32,7 +32,7 @@ modifiereventdelegate^ event_name
 ### Parameters
 
 *modifier*<br/>
-A modifier that can be used on either the event declaration or an event accessor method.  Possible values are **static** and **virtual**.
+A modifier that can be used on either the event declaration or an event accessor method.  Possible values are **`static`** and **`virtual`**.
 
 *delegate*<br/>
 The [delegate](delegate-cpp-component-extensions.md), whose signature the event handler must match.
@@ -41,7 +41,7 @@ The [delegate](delegate-cpp-component-extensions.md), whose signature the event 
 The name of the event.
 
 *return_value*<br/>
-The return value of the event accessor method.  To be verifiable, the return type must be **void**.
+The return value of the event accessor method.  To be verifiable, the return type must be **`void`**.
 
 *parameters*<br/>
 (optional) Parameters for the `raise` method, which match the signature of the *delegate* parameter.
@@ -96,7 +96,7 @@ modifiereventdelegate^ event_name
 ### Parameters
 
 *modifier*<br/>
-A modifier that can be used on either the event declaration or an event accessor method.  Possible values are **static** and **virtual**.
+A modifier that can be used on either the event declaration or an event accessor method.  Possible values are **`static`** and **`virtual`**.
 
 *delegate*<br/>
 The [delegate](delegate-cpp-component-extensions.md), whose signature the event handler must match.
@@ -105,7 +105,7 @@ The [delegate](delegate-cpp-component-extensions.md), whose signature the event 
 The name of the event.
 
 *return_value*<br/>
-The return value of the event accessor method.  To be verifiable, the return type must be **void**.
+The return value of the event accessor method.  To be verifiable, the return type must be **`void`**.
 
 *parameters*<br/>
 (optional) Parameters for the `raise` method, which match the signature of the *delegate* parameter.
@@ -221,7 +221,7 @@ OnClick: 7, 3.14159
 OnDblClick: Hello
 ```
 
-The following code example demonstrates the logic used to generate the `raise` method of a trivial event: If the event has one or more subscribers, calling the `raise` method implicitly or explicitly calls the delegate. If the delegate's return type is not **void** and if there are zero event subscribers, the `raise` method returns the default value for the delegate type. If there are no event subscribers, calling the `raise` method simply returns and no exception is raised. If the delegate return type is not **void**, the delegate type is returned.
+The following code example demonstrates the logic used to generate the `raise` method of a trivial event: If the event has one or more subscribers, calling the `raise` method implicitly or explicitly calls the delegate. If the delegate's return type is not **`void`** and if there are zero event subscribers, the `raise` method returns the default value for the delegate type. If there are no event subscribers, calling the `raise` method simply returns and no exception is raised. If the delegate return type is not **`void`**, the delegate type is returned.
 
 ```cpp
 // trivial_events.cpp

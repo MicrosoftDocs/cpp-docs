@@ -11,7 +11,7 @@ ms.assetid: a71f1341-a4a1-4060-ad1e-9322531883ed
 
 ## Remarks
 
-A symbol was redefined or redeclared and the second definition or declaration, unlike the first definition or declaration, did not have a `__declspec` modifier (*modifier*). This warning is informational. To fix this warning, delete one of the definitions.
+A symbol was redefined or redeclared and the second definition or declaration, unlike the first definition or declaration, did not have a **`__declspec`** modifier (*modifier*). This warning is informational. To fix this warning, delete one of the definitions.
 
 ## Example
 

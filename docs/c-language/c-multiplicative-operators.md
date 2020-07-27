@@ -52,7 +52,7 @@ This statement uses the multiplication operator:
 y = x * i;
 ```
 
-In this case, `x` is multiplied by `i` to give the value 20.0. The result has **double** type.
+In this case, `x` is multiplied by `i` to give the value 20.0. The result has **`double`** type.
 
 ```
 n = i / j;

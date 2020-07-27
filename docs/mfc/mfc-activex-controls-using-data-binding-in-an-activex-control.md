@@ -77,7 +77,7 @@ In addition to a data-bound get/set method, you can also create a [bindable stoc
 
 1. Type the property name in the **Property Name** box. Use `MyProp` for this example.
 
-1. Select a data type from the **Property Type** drop-down list box. Use **short** for this example.
+1. Select a data type from the **Property Type** drop-down list box. Use **`short`** for this example.
 
 1. For **Implementation Type**, click **Get/Set Methods**.
 

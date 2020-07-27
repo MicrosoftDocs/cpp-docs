@@ -49,7 +49,7 @@ There are three ways to construct an MDI child window:
 
 - Indirectly construct it through a document template.
 
-Before you call `Create` or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling `Create` you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.
+Before you call `Create` or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **`new`** operator. Before calling `Create` you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.
 
 Use the `Create` member function to pass the frame's creation parameters as immediate arguments.
 
@@ -65,7 +65,7 @@ The `CMDIChildWnd` class inherits much of its default implementation from `CFram
 
 - The currently active MDI child window menu entirely replaces the MDI frame window's menu, and the caption of the currently active MDI child window is added to the MDI frame window's caption. For further examples of MDI child window functions that are implemented in conjunction with an MDI frame window, see the `CMDIFrameWnd` class description.
 
-Do not use the C++ **delete** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.
+Do not use the C++ **`delete`** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.
 
 For more information on `CMDIChildWnd`, see [Frame Windows](../../mfc/frame-windows.md).
 

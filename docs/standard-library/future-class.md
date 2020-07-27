@@ -89,7 +89,7 @@ Before it retrieves the result, this method blocks the current thread until the 
 
 For the partial specialization `future<Ty&>`, the stored value is effectively a reference to the object that was passed to the asynchronous provider as the return value.
 
-Because no stored value exists for the specialization `future<void>`, the method returns **void**.
+Because no stored value exists for the specialization `future<void>`, the method returns **`void`**.
 
 In other specializations, the method moves its return value from the stored value. Therefore, call this method only once.
 
@@ -136,7 +136,7 @@ bool valid() noexcept;
 
 ### Return Value
 
-**true** if the object has an associated asynchronous state; otherwise, **false**.
+**`true`** if the object has an associated asynchronous state; otherwise, **`false`**.
 
 ## <a name="wait"></a> future::wait
 

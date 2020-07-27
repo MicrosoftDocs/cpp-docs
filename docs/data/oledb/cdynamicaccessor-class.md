@@ -198,7 +198,7 @@ bool GetColumnFlags(DBORDINAL nColumn,
 
 ### Return Value
 
-Returns **true** if the column characteristics are successfully retrieved. Otherwise, it returns **false**.
+Returns **`true`** if the column characteristics are successfully retrieved. Otherwise, it returns **`false`**.
 
 ### Remarks
 
@@ -279,7 +279,7 @@ bool GetColumnType(DBORDINAL nColumn,
 
 ### Return Value
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
 ## <a name="getlength"></a> CDynamicAccessor::GetLength
 
@@ -311,7 +311,7 @@ bool GetLength(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if the specified column is found. Otherwise, this function returns **false**.
+Returns **`true`** if the specified column is found. Otherwise, this function returns **`false`**.
 
 ### Remarks
 
@@ -341,7 +341,7 @@ bool GetOrdinal(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if a column with the specified name is found. Otherwise, this function returns **false**.
+Returns **`true`** if a column with the specified name is found. Otherwise, this function returns **`false`**.
 
 ## <a name="getstatus"></a> CDynamicAccessor::GetStatus
 
@@ -373,7 +373,7 @@ bool GetStatus(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if the specified column is found. Otherwise, this function returns **false**.
+Returns **`true`** if the specified column is found. Otherwise, this function returns **`false`**.
 
 ## <a name="getvalue"></a> CDynamicAccessor::GetValue
 
@@ -416,7 +416,7 @@ bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();
 
 If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return **`void*`**, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
 
-For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.
+For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **`true`** on success or **`false`** on failure.
 
 ### Remarks
 
@@ -502,7 +502,7 @@ bool SetLength(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if the specified column length is set successfully. Otherwise, this function returns **false**.
+Returns **`true`** if the specified column length is set successfully. Otherwise, this function returns **`false`**.
 
 ## <a name="setstatus"></a> CDynamicAccessor::SetStatus
 
@@ -534,7 +534,7 @@ bool SetStatus(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if the specified column status is set successfully. Otherwise, this function returns **false**.
+Returns **`true`** if the specified column status is set successfully. Otherwise, this function returns **`false`**.
 
 ## <a name="setvalue"></a> CDynamicAccessor::SetValue
 
@@ -577,7 +577,7 @@ bool SetValue(
 
 If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return **`void*`**, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
 
-For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.
+For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **`true`** on success or **`false`** on failure.
 
 ## See also
 

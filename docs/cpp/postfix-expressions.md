@@ -46,7 +46,7 @@ indicates the invocation of the constructor.  If the simple-type-name is a funda
 
 The *cast-keyword* is one of **`dynamic_cast`**, **`static_cast`** or **`reinterpret_cast`**.  More information may be found in [`dynamic_cast`](dynamic-cast-operator.md), [`static_cast`](static-cast-operator.md) and [`reinterpet_cast`](reinterpret-cast-operator.md).
 
-The **typeid** operator is considered a postfix expression.  See **typeid operator**.
+The **`typeid`** operator is considered a postfix expression.  See **typeid operator**.
 
 ## Formal and actual arguments
 

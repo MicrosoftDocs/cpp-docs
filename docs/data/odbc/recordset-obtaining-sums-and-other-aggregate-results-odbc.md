@@ -37,7 +37,7 @@ You can limit the number of records you use to obtain aggregate results by filte
 > [!CAUTION]
 > Some aggregation operators return a different data type from the columns over which they are aggregating.
 
-- **SUM** and **AVG** might return the next larger data type (for example, calling with **`int`** returns **LONG** or **double**).
+- **SUM** and **AVG** might return the next larger data type (for example, calling with **`int`** returns **LONG** or **`double`**).
 
 - **COUNT** usually returns **LONG** regardless of target column type.
 

@@ -50,7 +50,7 @@ The **ceil** functions return a floating-point value that represents the smalles
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **ceil** that take **float** or **`long double`** types. In a C program, **ceil** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **ceil** that take **`float`** or **`long double`** types. In a C program, **ceil** always takes and returns a **`double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

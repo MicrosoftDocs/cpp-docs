@@ -63,7 +63,7 @@ These examples illustrate array declarations:
 float matrix[10][15];
 ```
 
-The two-dimensional array named `matrix` has 150 elements, each having **float** type.
+The two-dimensional array named `matrix` has 150 elements, each having **`float`** type.
 
 ```C
 struct {

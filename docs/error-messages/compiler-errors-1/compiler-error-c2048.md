@@ -9,7 +9,7 @@ ms.assetid: 44704726-85fc-42f0-afb9-194df8c4ca7c
 
 more than one default
 
-A `switch` statement contains multiple `default` labels. Delete one of the `default` labels to resolve the error.
+A **`switch`** statement contains multiple **`default`** labels. Delete one of the **`default`** labels to resolve the error.
 
 The following sample generates C2048:
 

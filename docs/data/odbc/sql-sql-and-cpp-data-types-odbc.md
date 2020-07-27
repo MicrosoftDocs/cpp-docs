@@ -17,11 +17,11 @@ The following table maps ANSI SQL data types to C++ data types. This augments th
 |------------------------|---------------------|
 |**CHAR**|`CString`|
 |**DECIMAL**|`CString` 1|
-|**SMALLINT**|**int**|
-|**REAL**|**float**|
-|**INTEGER**|**long**|
-|**FLOAT**|**double**|
-|**DOUBLE**|**double**|
+|**SMALLINT**|**`int`**|
+|**REAL**|**`float`**|
+|**INTEGER**|**`long`**|
+|**FLOAT**|**`double`**|
+|**DOUBLE**|**`double`**|
 |**NUMERIC**|`CString` 1|
 |**VARCHAR**|`CString`|
 |**LONGVARCHAR**|`CLongBinary`, `CString` 2|

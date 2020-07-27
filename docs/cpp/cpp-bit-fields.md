@@ -74,7 +74,7 @@ The following list details erroneous operations on bit fields:
 
 - Taking the address of a bit field.
 
-- Initializing a non-**const** reference with a bit field.
+- Initializing a non-**`const`** reference with a bit field.
 
 ## See also
 

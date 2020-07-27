@@ -38,7 +38,7 @@ wchar_t *_wgetcwd_dbg(
 Storage location for the path.
 
 *maxlen*<br/>
-Maximum length of the path in characters: **char** for **_getcwd_dbg** and **wchar_t** for **_wgetcwd_dbg**.
+Maximum length of the path in characters: **`char`** for **_getcwd_dbg** and **`wchar_t`** for **_wgetcwd_dbg**.
 
 *blockType*<br/>
 Requested type of the memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.

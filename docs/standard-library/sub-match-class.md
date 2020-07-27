@@ -194,7 +194,7 @@ bool matched;
 
 ### Remarks
 
-The member holds **true** only if the capture group associated with **`*this`** was part of the regular expression match.
+The member holds **`true`** only if the capture group associated with **`*this`** was part of the regular expression match.
 
 ## <a name="op_basic_string_lt_value_type_gt"></a> sub_match::operator basic_string&lt;value_type&gt;
 

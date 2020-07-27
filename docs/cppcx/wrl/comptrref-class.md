@@ -140,11 +140,11 @@ A reference to another `ComPtrRef` object, or a pointer to an anonymous type (**
 
 ### Return Value
 
-The first operator yields **true** if object *a* is equal to object *b*; otherwise, **false**.
+The first operator yields **`true`** if object *a* is equal to object *b*; otherwise, **`false`**.
 
-The second and third operators yield **true** if object *a* is equal to **nullptr**; otherwise, **false**.
+The second and third operators yield **`true`** if object *a* is equal to **`nullptr`**; otherwise, **`false`**.
 
-The fourth and fifth operators yield **true** if object *a* is equal to object *b*; otherwise, **false**.
+The fourth and fifth operators yield **`true`** if object *a* is equal to object *b*; otherwise, **`false`**.
 
 ### Remarks
 
@@ -191,17 +191,17 @@ A reference to another `ComPtrRef` object, or a pointer to an anonymous object (
 
 ### Return Value
 
-The first operator yields **true** if object *a* is not equal to object *b*; otherwise, **false**.
+The first operator yields **`true`** if object *a* is not equal to object *b*; otherwise, **`false`**.
 
-The second and third operators yield **true** if object *a* is not equal to **nullptr**; otherwise, **false**.
+The second and third operators yield **`true`** if object *a* is not equal to **`nullptr`**; otherwise, **`false`**.
 
-The fourth and fifth operators yield **true** if object *a* is not equal to object *b*; otherwise, **false**.
+The fourth and fifth operators yield **`true`** if object *a* is not equal to object *b*; otherwise, **`false`**.
 
 ### Remarks
 
 Indicates whether two `ComPtrRef` objects are not equal.
 
-## <a name="operator-interfacetype-star-star"></a> ComPtrRef::operator InterfaceType**
+## <a name="operator-interfacetype-star-star"></a> ComPtrRef::operator InterfaceType\*\*
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

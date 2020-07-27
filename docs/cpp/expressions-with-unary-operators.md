@@ -48,7 +48,7 @@ The following are the possible forms of unary expressions.
 
 - *unary-operator* *cast-expression*
 
-- `sizeof` *unary-expression*
+- **`sizeof`** *unary-expression*
 
 - `sizeof(` *type-name* `)`
 

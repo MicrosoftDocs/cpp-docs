@@ -72,7 +72,7 @@ std::list<int, alloc<int> > _List1;
 
 _Lst1 allocates nodes with `allocator_chunklist` and the [sync_per_thread](sync-per-thread-class.md) synchronization filter.
 
-A block allocator is a cache or a filter. A cache is a class template that takes one argument of type std::size_t. It defines a block allocator that allocates and deallocates memory blocks of a single size. It must obtain memory using operator **new**, but it need not make a separate call to operator **new** for each block. It may, for example, suballocate from a larger block or cache deallocated blocks for subsequent reallocation.
+A block allocator is a cache or a filter. A cache is a class template that takes one argument of type std::size_t. It defines a block allocator that allocates and deallocates memory blocks of a single size. It must obtain memory using operator **`new`**, but it need not make a separate call to operator **`new`** for each block. It may, for example, suballocate from a larger block or cache deallocated blocks for subsequent reallocation.
 
 With a compiler that cannot rebind the value of the std::size_t argument used when the template was instantiated is not necessarily the value of the argument _Sz passed to a cache's member functions allocate and deallocate.
 

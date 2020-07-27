@@ -17,9 +17,9 @@ name
 
 A *literal* is a constant primary expression. Its type depends on the form of its specification. See [Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md) for complete information about specifying literals.
 
-The **this** keyword is a pointer to a class object. It is available within nonstatic member functions and points to the instance of the class for which the function was invoked. The **this** keyword cannot be used outside the body of a class-member function.
+The **`this`** keyword is a pointer to a class object. It is available within nonstatic member functions and points to the instance of the class for which the function was invoked. The **`this`** keyword cannot be used outside the body of a class-member function.
 
-The type of the **this** pointer is `type` **\*const** (where `type` is the class name) within functions not specifically modifying the **this** pointer. The following example shows member function declarations and the types of **this**:
+The type of the **`this`** pointer is `type` **\*const** (where `type` is the class name) within functions not specifically modifying the **`this`** pointer. The following example shows member function declarations and the types of **`this`**:
 
 ```cpp
 // expre_Primary_Expressions.cpp
@@ -33,7 +33,7 @@ public:
 };
 ```
 
-See [this Pointer](this-pointer.md) for more information about modifying the type of the **this** pointer.
+See [this Pointer](this-pointer.md) for more information about modifying the type of the **`this`** pointer.
 
 The scope-resolution operator (`::`) followed by a name constitutes a primary expression.  Such names must be names at global scope, not member names.  The type of this expression is determined by the declaration of the name. It is an l-value (that is, it can appear on the left hand side of an assignment operator expression) if the declaring name is an l-value. The scope-resolution operator allows a global name to be referred to, even if that name is hidden in the current scope. See [Scope](../cpp/scope-visual-cpp.md) for an example of how to use the scope-resolution operator.
 

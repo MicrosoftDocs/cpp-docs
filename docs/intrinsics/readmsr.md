@@ -9,7 +9,7 @@ ms.assetid: 7ab1f8e8-72cb-4ce4-817d-3e728a3c9716
 
 **Microsoft Specific**
 
-Generates the `rdmsr` instruction, which reads the model-specific register specified by `register` and returns its value.
+Generates the `rdmsr` instruction, which reads the model-specific register specified by **`register`** and returns its value.
 
 ## Syntax
 

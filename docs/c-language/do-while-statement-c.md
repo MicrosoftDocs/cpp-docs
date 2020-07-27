@@ -12,7 +12,7 @@ The *do-while* statement lets you repeat a statement or compound statement until
 ## Syntax
 
 *iteration-statement*:
-&nbsp;&nbsp;&nbsp;&nbsp;**do**  *statement*  **while (**  *expression*  **) ;**
+&nbsp;&nbsp;&nbsp;&nbsp;**`do`**  *statement*  **while (**  *expression*  **) ;**
 
 The *expression* in a *do-while* statement is evaluated after the body of the loop is executed. Therefore, the body of the loop is always executed at least once.
 
@@ -22,7 +22,7 @@ The *expression* must have arithmetic or pointer type. Execution proceeds as fol
 
 1. Next, *expression* is evaluated. If *expression* is false, the *do-while* statement terminates and control passes to the next statement in the program. If *expression* is true (nonzero), the process is repeated, beginning with step 1.
 
-The *do-while* statement can also terminate when a **break**, **goto**, or **return** statement is executed within the statement body.
+The *do-while* statement can also terminate when a **`break`**, **`goto`**, or **`return`** statement is executed within the statement body.
 
 This is an example of the *do-while* statement:
 

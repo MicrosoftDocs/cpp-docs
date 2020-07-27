@@ -55,7 +55,7 @@ Creating the new view class is made easy by using the **New Class** command avai
 
 Once you have added the class to the project, you need to change the accessibility of some view class members.
 
-Modify *NEWVIEW.H* by changing the access specifier from **protected** to **public** for the constructor and destructor. This allows the class to be created and destroyed dynamically and to modify the view appearance before it is visible.
+Modify *NEWVIEW.H* by changing the access specifier from **`protected`** to **`public`** for the constructor and destructor. This allows the class to be created and destroyed dynamically and to modify the view appearance before it is visible.
 
 Save your changes and continue to the next step.
 

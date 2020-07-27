@@ -7,7 +7,7 @@ ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
 ---
 # case (C++)
 
-Used with the [switch_type](switch-type.md) attribute in a **union**.
+Used with the [switch_type](switch-type.md) attribute in a **`union`**.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ A possible input value for which you want to provide processing. The type of **v
 
 - `boolean`
 
-- `enum`
+- **`enum`**
 
 or an identifier of such a type.
 
@@ -61,7 +61,7 @@ struct SizedValue2 {
 
 |||
 |-|-|
-|**Applies to**|Member of a **class** or **struct**|
+|**Applies to**|Member of a **`class`** or **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

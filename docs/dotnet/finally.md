@@ -6,17 +6,17 @@ ms.assetid: b55f3c8e-1af0-43e8-bcfb-99c3685d2578
 ---
 # finally
 
-In addition to `try` and `catch` clauses, CLR exception handling supports a `finally` clause. The semantics are identical to the `__finally` block in structured exception handling (SEH). A `__finally` block can follow a `try` or `catch` block.
+In addition to **`try`** and **`catch`** clauses, CLR exception handling supports a **`finally`** clause. The semantics are identical to the **`__finally`** block in structured exception handling (SEH). A **`__finally`** block can follow a **`try`** or **`catch`** block.
 
 ## Remarks
 
-The purpose of the `finally` block is to clean up any resources left after the exception occurred. Note that the `finally` block is always executed, even if no exception was thrown. The `catch` block is only executed if a managed exception is thrown within the associated `try` block.
+The purpose of the **`finally`** block is to clean up any resources left after the exception occurred. Note that the **`finally`** block is always executed, even if no exception was thrown. The **`catch`** block is only executed if a managed exception is thrown within the associated **`try`** block.
 
 `finally` is a context-sensitive keyword; see [Context-Sensitive Keywords](../extensions/context-sensitive-keywords-cpp-component-extensions.md) for more information.
 
 ## Example
 
-The following example demonstrates a simple `finally` block:
+The following example demonstrates a simple **`finally`** block:
 
 ```cpp
 // keyword__finally.cpp

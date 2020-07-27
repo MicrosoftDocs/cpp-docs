@@ -59,7 +59,7 @@ The following illustration shows a `range for` loop over an `IVector<Person^>`. 
 
 ![VectorProxy in range&#45;based for loop](../cppcx/media/vectorproxy-1.png "VectorProxy in range&#45;based for loop")
 
-One scenario in which you have to code around the proxy object is when you have to perform a `dynamic_cast` on the elements—for example, when you are looking for XAML objects of a particular type in a `UIElement` element collection. In this case, you must first cast the element to [Platform::Object](../cppcx/platform-object-class.md)^ and then perform the dynamic cast:
+One scenario in which you have to code around the proxy object is when you have to perform a **`dynamic_cast`** on the elements—for example, when you are looking for XAML objects of a particular type in a `UIElement` element collection. In this case, you must first cast the element to [Platform::Object](../cppcx/platform-object-class.md)^ and then perform the dynamic cast:
 
 ```cpp
 void FindButton(UIElementCollection^ col)
@@ -115,7 +115,7 @@ An STL iterator that satisfies the requirements of an STL input iterator.
 An STL iterator that satisfies the requirements of an STL mutable random-access iterator.
 
 [Platform::Collections::VectorViewIterator Class](../cppcx/platform-collections-vectorviewiterator-class.md)<br/>
-An STL iterator that satisfies the requirements of an STL  `const` random-access iterator.
+An STL iterator that satisfies the requirements of an STL  **`const`** random-access iterator.
 
 ### begin() and end() functions
 

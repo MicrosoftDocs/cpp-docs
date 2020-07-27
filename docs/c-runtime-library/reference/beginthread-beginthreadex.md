@@ -76,13 +76,13 @@ For more information about **uintptr_t**, see [Standard Types](../../c-runtime-l
 
 ## Remarks
 
-The **_beginthread** function creates a thread that begins execution of a routine at *start_address*. The routine at *start_address* must use the **__cdecl** (for native code) or **__clrcall** (for managed code) calling convention and should have no return value. When the thread returns from that routine, it is terminated automatically. For more information about threads, see [Multithreading Support for Older Code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
+The **_beginthread** function creates a thread that begins execution of a routine at *start_address*. The routine at *start_address* must use the **`__cdecl`** (for native code) or **__clrcall** (for managed code) calling convention and should have no return value. When the thread returns from that routine, it is terminated automatically. For more information about threads, see [Multithreading Support for Older Code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
 **_beginthreadex** resembles the Win32 [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) API more closely than **_beginthread** does. **_beginthreadex** differs from **_beginthread** in the following ways:
 
 - **_beginthreadex** has three additional parameters: *initflag*, *Security*, and **threadaddr**. The new thread can be created in a suspended state, with a specified security, and can be accessed by using *thrdaddr*, which is the thread identifier.
 
-- The routine at *start_address* that's passed to **_beginthreadex** must use the **__stdcall** (for native code) or **__clrcall** (for managed code) calling convention and must return a thread exit code.
+- The routine at *start_address* that's passed to **_beginthreadex** must use the **`__stdcall`** (for native code) or **__clrcall** (for managed code) calling convention and must return a thread exit code.
 
 - **_beginthreadex** returns 0 on failure, rather than -1L.
 

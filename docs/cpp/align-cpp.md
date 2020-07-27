@@ -45,7 +45,7 @@ This type now has a 32-byte alignment attribute. It means that all static and au
 
 Here, `sizeof(struct Str1)` is equal to 32. It implies that if an array of `Str1` objects is created, and the base of the array is 32-byte aligned, each member of the array is also 32-byte aligned. To create an array whose base is correctly aligned in dynamic memory, use [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md). Or, write your own allocator.
 
-The `sizeof` value for any structure is the offset of the final member, plus that member's size, rounded up to the nearest multiple of the largest member alignment value or the whole structure alignment value, whichever is larger.
+The **`sizeof`** value for any structure is the offset of the final member, plus that member's size, rounded up to the nearest multiple of the largest member alignment value or the whole structure alignment value, whichever is larger.
 
 The compiler uses these rules for structure alignment:
 

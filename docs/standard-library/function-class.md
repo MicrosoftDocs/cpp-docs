@@ -272,7 +272,7 @@ operator unspecified();
 
 ### Remarks
 
-The operator returns a value that is convertible to **bool** with a true value only if the object is not empty. You use it to test whether the object is empty.
+The operator returns a value that is convertible to **`bool`** with a true value only if the object is not empty. You use it to test whether the object is empty.
 
 ### Example
 
@@ -558,7 +558,7 @@ The target callable object type to test.
 
 The type *Fty2* must be callable for the argument types `T1, T2, ..., TN` and the return type `Ret`. If `target_type() == typeid(Fty2)`, the member template function returns the address of the target object; otherwise, it returns 0.
 
-A type *Fty2* is callable for the argument types `T1, T2, ..., TN` and the return type `Ret` if, for lvalues `fn, t1, t2, ..., tN` of types `Fty2, T1, T2, ..., TN`, respectively, `INVOKE(fn, t1, t2, ..., tN)` is well-formed and, if `Ret` is not **void**, convertible to `Ret`.
+A type *Fty2* is callable for the argument types `T1, T2, ..., TN` and the return type `Ret` if, for lvalues `fn, t1, t2, ..., tN` of types `Fty2, T1, T2, ..., TN`, respectively, `INVOKE(fn, t1, t2, ..., tN)` is well-formed and, if `Ret` is not **`void`**, convertible to `Ret`.
 
 ### Example
 

@@ -43,7 +43,7 @@ The **vtordisp** pragma affects the layout of classes that follow it. The `/vd0`
 
 Specifying 1 or **on**, the default, enables the hidden `vtordisp` members where they're necessary.
 
-Specifying 2 enables the hidden `vtordisp` members for all virtual bases with virtual functions.  `#pragma vtordisp(2)` might be necessary to ensure correct performance of **dynamic_cast** on a partially constructed object. For more information, see [Compiler Warning (level 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md).
+Specifying 2 enables the hidden `vtordisp` members for all virtual bases with virtual functions.  `#pragma vtordisp(2)` might be necessary to ensure correct performance of **`dynamic_cast`** on a partially constructed object. For more information, see [Compiler Warning (level 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md).
 
 `#pragma vtordisp()`, with no arguments, restores the `vtordisp` setting to its initial setting.
 

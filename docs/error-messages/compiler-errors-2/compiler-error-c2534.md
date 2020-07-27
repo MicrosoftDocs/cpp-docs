@@ -11,7 +11,7 @@ ms.assetid: 481f9f54-5b51-4aa0-8eea-218f10807705
 
 A constructor cannot return a value or have a return type (not even a **`void`** return type).
 
-This error may be fixed by removing the `return` statement from the constructor definition.
+This error may be fixed by removing the **`return`** statement from the constructor definition.
 
 The following sample generates C2534:
 

@@ -17,7 +17,7 @@ You may not change the attributes of a standard section. For example:
 #pragma section(".sdata", long)
 ```
 
-This would overwrite the `.sdata` standard section which uses the **short** data type with the **long** data type.
+This would overwrite the `.sdata` standard section which uses the **`short`** data type with the **`long`** data type.
 
 Standard sections whose attributes you may not change include,
 

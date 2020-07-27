@@ -54,7 +54,7 @@ For more information about **errno** and possible error return values, see [errn
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **ldexp** that take **float** or **`long double`** types. In a C program, **ldexp** always takes a **double** and an **int** and returns a **double**.
+Because C++ allows overloading, you can call overloads of **ldexp** that take **`float`** or **`long double`** types. In a C program, **ldexp** always takes a **`double`** and an **`int`** and returns a **`double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

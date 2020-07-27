@@ -1432,7 +1432,7 @@ See [InvalidateRgn](/windows/win32/api/winuser/nf-winuser-invalidatergn) in the 
 
 ### Remarks
 
-Specifies a **void** return type, while the `InvalidateRgn` Win32 function always returns TRUE.
+Specifies a **`void`** return type, while the `InvalidateRgn` Win32 function always returns TRUE.
 
 ## <a name="ischild"></a> CWindow::IsChild
 

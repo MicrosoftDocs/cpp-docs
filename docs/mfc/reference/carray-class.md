@@ -415,7 +415,7 @@ Index of the element to be accessed.
 
 ### Remarks
 
-The first operator, called for arrays that are not **const**, may be used on either the right (r-value) or the left (l-value) of an assignment statement. The second, called for **const** arrays, may be used only on the right.
+The first operator, called for arrays that are not **`const`**, may be used on either the right (r-value) or the left (l-value) of an assignment statement. The second, called for **`const`** arrays, may be used only on the right.
 
 The Debug version of the library asserts if the subscript (either on the left or right side of an assignment statement) is out of bounds.
 

@@ -31,7 +31,7 @@ Comma-separated list of identifiers for the type parameters.
 Takes the form specified in [Constraints on Generic Type Parameters (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
 
 *accessibility-modifiers*<br/>
-(Optional) Accessibility modifiers (e.g. **public**, **private**).
+(Optional) Accessibility modifiers (e.g. **`public`**, **`private`**).
 
 *result-type*<br/>
 The return type of the delegate.

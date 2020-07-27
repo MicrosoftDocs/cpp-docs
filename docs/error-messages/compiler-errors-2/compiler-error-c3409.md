@@ -48,7 +48,7 @@ class b : public x {};
 
 ## Example
 
-The following example generates C3409 because a lambda expression uses the `mutable` specification, but does not provide a parameter list. The compiler cannot determine whether the square brackets are part of the definition of a lambda expression or of an attribute block.
+The following example generates C3409 because a lambda expression uses the **`mutable`** specification, but does not provide a parameter list. The compiler cannot determine whether the square brackets are part of the definition of a lambda expression or of an attribute block.
 
 ```cpp
 // C3409b.cpp

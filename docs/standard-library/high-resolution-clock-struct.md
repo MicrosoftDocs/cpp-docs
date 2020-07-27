@@ -41,4 +41,4 @@ class high_resolution_clock
 
 |Name|Description|
 |----------|-----------------|
-|`is_steady`|Holds **true**. A `high_resolution_clock` is *steady*.|
+|`is_steady`|Holds **`true`**. A `high_resolution_clock` is *steady*.|

@@ -143,7 +143,7 @@ Use this page of the Add Property Wizard to specify any interface definition lan
 
 - `helpstring`
 
-  Specifies a character string that's used to describe the element to which it applies. By default, it's set to `property`&nbsp;*Property&nbsp;name*. See [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a character string that's used to describe the element to which it applies. By default, it's set to **`property`**&nbsp;*Property&nbsp;name*. See [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
 ### Other options
 

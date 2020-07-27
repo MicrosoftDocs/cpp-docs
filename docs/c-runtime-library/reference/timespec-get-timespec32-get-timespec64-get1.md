@@ -48,7 +48,7 @@ The **timespec_get** functions set the current time in the struct pointed to by 
 
 **Microsoft Specific**
 
-These functions support only **TIME_UTC** as the *base* value. This sets the *time_spec* value to the number of seconds and nanoseconds since the epoch start, Midnight, January 1, 1970, Coordinated Universal Time (UTC). In a **struct** **_timespec32**, **tv_sec** is a **__time32_t** value. In a **struct** **_timespec64**, **tv_sec** is a **__time64_t** value. In a **struct** **timespec**, **tv_sec** is a **time_t** type, which is 32 bits or 64 bits in length depending on whether the preprocessor macro  _USE_32BIT_TIME_T is defined. The **timespec_get** function is an inline function that calls **_timespec32_get** if _USE_32BIT_TIME_T is defined; otherwise it calls **_timespec64_get**.
+These functions support only **TIME_UTC** as the *base* value. This sets the *time_spec* value to the number of seconds and nanoseconds since the epoch start, Midnight, January 1, 1970, Coordinated Universal Time (UTC). In a **`struct`** **_timespec32**, **tv_sec** is a **__time32_t** value. In a **`struct`** **_timespec64**, **tv_sec** is a **__time64_t** value. In a **`struct`** **timespec**, **tv_sec** is a **time_t** type, which is 32 bits or 64 bits in length depending on whether the preprocessor macro  _USE_32BIT_TIME_T is defined. The **timespec_get** function is an inline function that calls **_timespec32_get** if _USE_32BIT_TIME_T is defined; otherwise it calls **_timespec64_get**.
 
 **End Microsoft Specific**
 

@@ -102,7 +102,7 @@ virtual void Clear();
 
 ## <a name="first"></a> Map::First Method
 
-Returns an iterator that specifies the first element in the map, or `nullptr` if the map is empty.
+Returns an iterator that specifies the first element in the map, or **`nullptr`** if the map is empty.
 
 ### Syntax
 
@@ -117,7 +117,7 @@ An iterator that specifies the first element in the map.
 
 ### Remarks
 
-A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myMap->First();`.
+A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **`auto`** type deduction keyword. For example, `auto x = myMap->First();`.
 
 ## <a name="getview"></a> Map::GetView Method
 
@@ -150,7 +150,7 @@ The key used to locate the Map element. The type of *key* is typename *K*.
 
 ### Return Value
 
-**true** if the key is found; otherwise, **false**.
+**`true`** if the key is found; otherwise, **`false`**.
 
 ## <a name="insert"></a> Map::Insert Method
 
@@ -172,7 +172,7 @@ The value portion of the key-value pair. The type of *value* is typename *V*.
 
 ### Return Value
 
-**true** if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. **false** if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current Map.
+**`true`** if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. **`false`** if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current Map.
 
 ## <a name="lookup"></a> Map::Lookup Method
 

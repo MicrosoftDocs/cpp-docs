@@ -32,21 +32,21 @@ While most functionality is common to both operating systems, this document iden
 
 Another significant difference is the native representation of pathnames:
 
-- Windows uses a null-terminated sequence of **wchar_t**, encoded as UTF-16 (one or more elements for each character).
+- Windows uses a null-terminated sequence of **`wchar_t`**, encoded as UTF-16 (one or more elements for each character).
 
-- POSIX uses a null-terminated sequence of **char**, encoded as UTF-8 (one or more elements for each character).
+- POSIX uses a null-terminated sequence of **`char`**, encoded as UTF-8 (one or more elements for each character).
 
 - An object of class `path` stores the pathname in native form, but supports easy conversion between this stored form and several external forms:
 
-  - A null-terminated sequence of **char**, encoded as favored by the operating system.
+  - A null-terminated sequence of **`char`**, encoded as favored by the operating system.
 
-  - A null-terminated sequence of **char**, encoded as UTF-8.
+  - A null-terminated sequence of **`char`**, encoded as UTF-8.
 
-  - A null-terminated sequence of **wchar_t**, encoded as favored by the operating system.
+  - A null-terminated sequence of **`wchar_t`**, encoded as favored by the operating system.
 
-  - A null-terminated sequence of **char16_t**, encoded as UTF-16.
+  - A null-terminated sequence of **`char16_t`**, encoded as UTF-16.
 
-  - A null-terminated sequence of **char32_t**, encoded as UTF-32.
+  - A null-terminated sequence of **`char32_t`**, encoded as UTF-32.
 
   Interconversions between these representations are mediated, as needed, by the use of one or more `codecvt` facets. If no specific locale object is specified, these facets are obtained from the global locale.
 

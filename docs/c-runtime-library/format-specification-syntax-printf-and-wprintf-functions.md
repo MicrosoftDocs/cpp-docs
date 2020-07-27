@@ -28,7 +28,7 @@ A basic conversion specification contains only the percent sign and a *type* cha
 <a name="type"></a>
 
 > [!NOTE]
-> In Visual Studio 2015 The `printf` and `scanf` family of functions were declared as **inline** and moved to the `<stdio.h>` and `<conio.h>` headers. If you are migrating older code you might see *LNK2019* in connection with these functions. For more information, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
+> In Visual Studio 2015 The `printf` and `scanf` family of functions were declared as **`inline`** and moved to the `<stdio.h>` and `<conio.h>` headers. If you are migrating older code you might see *LNK2019* in connection with these functions. For more information, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 ## Type conversion specifier
 
@@ -36,7 +36,7 @@ The *type* conversion specifier character specifies whether to interpret the cor
 
 The arguments that follow the format string are interpreted according to the corresponding *type* character and the optional [size](#size) prefix. Conversions for character types **`char`** and **`wchar_t`** are specified by using **c** or **C**, and single-byte and multi-byte or wide character strings are specified by using **s** or **S**, depending on which formatting function is being used. Character and string arguments that are specified by using **c** and **s** are interpreted as **`char`** and **`char*`** by `printf` family functions, or as **`wchar_t`** and `wchar_t*` by `wprintf` family functions. Character and string arguments that are specified by using **C** and **S** are interpreted as **`wchar_t`** and `wchar_t*` by `printf` family functions, or as **`char`** and **`char*`** by `wprintf` family functions. This behavior is Microsoft-specific.
 
-Integer types such as **`short`**, **`int`**, **`long`**, **`long long`**, and their `unsigned` variants, are specified by using **d**, **i**, **o**, **u**, **x**, and **X**. Floating-point types such as **`float`**, **`double`**, and **`long double`**, are specified by using **a**, **A**, **e**, **E**, **f**, **F**, **g**, and **G**. By default, unless they are modified by a *size* prefix, integer arguments are coerced to **`int`** type, and floating-point arguments are coerced to **`double`**. On 64-bit systems, an **`int`** is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a *size* prefix of **ll** or **I64** is used. Pointer types that are specified by **p** use the default pointer size for the platform.
+Integer types such as **`short`**, **`int`**, **`long`**, **`long long`**, and their **`unsigned`** variants, are specified by using **d**, **i**, **o**, **u**, **x**, and **X**. Floating-point types such as **`float`**, **`double`**, and **`long double`**, are specified by using **a**, **A**, **e**, **E**, **f**, **F**, **g**, and **G**. By default, unless they are modified by a *size* prefix, integer arguments are coerced to **`int`** type, and floating-point arguments are coerced to **`double`**. On 64-bit systems, an **`int`** is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a *size* prefix of **ll** or **I64** is used. Pointer types that are specified by **p** use the default pointer size for the platform.
 
 > [!NOTE]
 > **Microsoft-specific:**\
@@ -172,13 +172,13 @@ Some types are different sizes in 32-bit and 64-bit code. For example, `size_t` 
 |To specify|Use prefix|With type specifier|
 |----------------|----------------|-------------------------|
 |**`char`**<br />**`unsigned char`**|**hh**|**d**, **i**, **o**, **u**, **x**, or **X**|
-|`short int`<br />`short unsigned int`|**h**|**d**, **i**, **o**, **u**, **x**, or **X**|
-|`__int32`<br />`unsigned __int32`|**I32**|**d**, **i**, **o**, **u**, **x**, or **X**|
-|`__int64`<br />`unsigned __int64`|**I64**|**d**, **i**, **o**, **u**, **x**, or **X**|
+|**`short int`**<br />**`short unsigned int`**|**h**|**d**, **i**, **o**, **u**, **x**, or **X**|
+|**`__int32`**<br />**`unsigned __int32`**|**I32**|**d**, **i**, **o**, **u**, **x**, or **X**|
+|**`__int64`**<br />**`unsigned __int64`**|**I64**|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`intmax_t`<br />`uintmax_t`|**j** or **I64**|**d**, **i**, **o**, **u**, **x**, or **X**|
 |**`long double`**|**l** (lowercase L) or **L**|**a**, **A**, **e**, **E**, **f**, **F**, **g**, or **G**|
-|`long int`<br />`long unsigned int`|**l** (lowercase L)|**d**, **i**, **o**, **u**, **x**, or **X**|
-|`long long int`<br />`unsigned long long int`|**ll**  (lowercase LL)|**d**, **i**, **o**, **u**, **x**, or **X**|
+|**`long int`**<br />**`long unsigned int`**|**l** (lowercase L)|**d**, **i**, **o**, **u**, **x**, or **X**|
+|**`long long int`**<br />**`unsigned long long int`**|**ll**  (lowercase LL)|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`ptrdiff_t`|**t** or **I** (uppercase i)|**d**, **i**, **o**, **u**, **x**, or **X**|
 |`size_t`|**z** or **I** (uppercase i)|**d**, **i**, **o**, **u**, **x**, or **X**|
 |Single-byte character|**h**|**c** or **C**|
@@ -186,7 +186,7 @@ Some types are different sizes in 32-bit and 64-bit code. For example, `size_t` 
 |Single-byte character string|**h**|**s**, **S**, or **Z**|
 |Wide-character string|**l** (lowercase L) or **w**|**s**, **S**, or **Z**|
 
-The `ptrdiff_t` and `size_t` types are `__int32` or `unsigned __int32` on 32-bit platforms, and `__int64` or `unsigned __int64` on 64-bit platforms. The **I** (uppercase i), **j**, **t**, and **z** size prefixes take the correct argument width for the platform.
+The `ptrdiff_t` and `size_t` types are **`__int32`** or **`unsigned __int32`** on 32-bit platforms, and **`__int64`** or **`unsigned __int64`** on 64-bit platforms. The **I** (uppercase i), **j**, **t**, and **z** size prefixes take the correct argument width for the platform.
 
 In Visual C++, although **`long double`** is a distinct type, it has the same internal representation as **`double`**.
 

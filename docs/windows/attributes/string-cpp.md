@@ -7,7 +7,7 @@ ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
 ---
 # string (C++)
 
-Indicates that the one-dimensional **char**, **wchar_t**, `byte` (or equivalent) array or the pointer to such an array must be treated as a string.
+Indicates that the one-dimensional **`char`**, **`wchar_t`**, `byte` (or equivalent) array or the pointer to such an array must be treated as a string.
 
 ## Syntax
 

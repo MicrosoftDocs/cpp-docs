@@ -99,7 +99,7 @@ Indicates whether the current `SyncLockWithStatusT` object owns a resource; that
 
 ### Return Value
 
-**true** if the `SyncLockWithStatusT` object is locked; otherwise, **false**.
+**`true`** if the `SyncLockWithStatusT` object is locked; otherwise, **`false`**.
 
 ## <a name="status"></a> SyncLockWithStatusT::status_
 
@@ -143,4 +143,4 @@ The value of the [status_](#status) data member of the *other* parameter or the 
 
 Initializes a new instance of the `SyncLockWithStatusT` class.
 
-The first constructor initializes the current `SyncLockWithStatusT` object from another `SyncLockWithStatusT` specified by parameter *other*, and then invalidates the other `SyncLockWithStatusT` object. The second constructor is `protected`, and initializes the current `SyncLockWithStatusT` object to an invalid state.
+The first constructor initializes the current `SyncLockWithStatusT` object from another `SyncLockWithStatusT` specified by parameter *other*, and then invalidates the other `SyncLockWithStatusT` object. The second constructor is **`protected`**, and initializes the current `SyncLockWithStatusT` object to an invalid state.

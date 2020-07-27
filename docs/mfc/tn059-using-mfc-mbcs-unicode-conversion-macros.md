@@ -83,7 +83,7 @@ Besides doing text conversions, there are also macros and helper functions for c
 
 ## OLE Conversion Macros
 
-The OLE conversion macros are designed specifically for handling functions that expect **OLESTR** characters. If you examine the OLE headers, you will see many references to **LPCOLESTR** and **OLECHAR**. These types are used to refer to the type of characters used in OLE interfaces in a way that is not specific to the platform. **OLECHAR** maps to **char** in Win16 and Macintosh platforms and **WCHAR** in Win32.
+The OLE conversion macros are designed specifically for handling functions that expect **OLESTR** characters. If you examine the OLE headers, you will see many references to **LPCOLESTR** and **OLECHAR**. These types are used to refer to the type of characters used in OLE interfaces in a way that is not specific to the platform. **OLECHAR** maps to **`char`** in Win16 and Macintosh platforms and **WCHAR** in Win32.
 
 In order to keep the number of **#ifdef** directives in the MFC code to a minimum we have a similar macro for each conversion that where OLE strings are involved. The following macros are the most commonly used:
 

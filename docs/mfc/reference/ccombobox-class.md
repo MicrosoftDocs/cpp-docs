@@ -134,7 +134,7 @@ Potential message-map entries are the following:
 
 If you create a `CComboBox` object within a dialog box (through a dialog resource), the `CComboBox` object is automatically destroyed when the user closes the dialog box.
 
-If you embed a `CComboBox` object within another window object, you do not need to destroy it. If you create the `CComboBox` object on the stack, it is destroyed automatically. If you create the `CComboBox` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the Windows combo box is destroyed.
+If you embed a `CComboBox` object within another window object, you do not need to destroy it. If you create the `CComboBox` object on the stack, it is destroyed automatically. If you create the `CComboBox` object on the heap by using the **`new`** function, you must call **`delete`** on the object to destroy it when the Windows combo box is destroyed.
 
 **Note** If you want to handle WM_KEYDOWN and WM_CHAR messages, you have to subclass the combo box's edit and list box controls, derive classes from `CEdit` and `CListBox`, and add handlers for those messages to the derived classes. For more information, see [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).
 
@@ -388,7 +388,7 @@ int Dir(
 ### Parameters
 
 *attr*<br/>
-Can be any combination of the **enum** values described in [CFile::GetStatus](../../mfc/reference/cfile-class.md#getstatus) or any combination of the following values:
+Can be any combination of the **`enum`** values described in [CFile::GetStatus](../../mfc/reference/cfile-class.md#getstatus) or any combination of the following values:
 
 - DDL_READWRITE File can be read from or written to.
 
@@ -730,7 +730,7 @@ The 32-bit value associated with the item, or CB_ERR if an error occurs.
 
 ### Remarks
 
-The 32-bit value can be set with the *dwItemData* parameter of a [SetItemData](#setitemdata) member function call. Use the `GetItemDataPtr` member function if the 32-bit value to be retrieved is a pointer (**void** <strong>\*</strong>).
+The 32-bit value can be set with the *dwItemData* parameter of a [SetItemData](#setitemdata) member function call. Use the `GetItemDataPtr` member function if the 32-bit value to be retrieved is a pointer (**`void`** <strong>\*</strong>).
 
 ### Example
 
@@ -738,7 +738,7 @@ The 32-bit value can be set with the *dwItemData* parameter of a [SetItemData](#
 
 ## <a name="getitemdataptr"></a> CComboBox::GetItemDataPtr
 
-Retrieves the application-supplied 32-bit value associated with the specified combo-box item as a pointer (**void** <strong>\*</strong>).
+Retrieves the application-supplied 32-bit value associated with the specified combo-box item as a pointer (**`void`** <strong>\*</strong>).
 
 ```cpp
 void* GetItemDataPtr(int nIndex) const;
@@ -1276,7 +1276,7 @@ Use the `SetItemDataPtr` member function if the 32-bit item is to be a pointer.
 
 ## <a name="setitemdataptr"></a> CComboBox::SetItemDataPtr
 
-Sets the 32-bit value associated with the specified item in a combo box to be the specified pointer (**void** <strong>\*</strong>).
+Sets the 32-bit value associated with the specified item in a combo box to be the specified pointer (**`void`** <strong>\*</strong>).
 
 ```
 int SetItemDataPtr(

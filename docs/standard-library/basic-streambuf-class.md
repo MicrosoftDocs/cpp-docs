@@ -690,7 +690,7 @@ Size of the buffer.
 
 ### Return Value
 
-The default behavior is to return **this**.
+The default behavior is to return **`this`**.
 
 ### Remarks
 

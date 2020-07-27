@@ -44,14 +44,14 @@ public:
 ### Parameters
 
 *IntType*\
-The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
+The integer result type, defaults to **`int`**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*\
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The class template describes a distribution that produces values of a user-specified integral type, or type **int** if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified integral type, or type **`int`** if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

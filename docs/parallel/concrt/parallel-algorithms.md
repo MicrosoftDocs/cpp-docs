@@ -40,7 +40,7 @@ The `parallel_for` algorithm partitions tasks in an optimum way for parallel exe
 
 The `parallel_for` algorithm has several overloaded versions. The first version takes a start value, an end value, and a work function (a lambda expression, function object, or function pointer). The second version takes a start value, an end value, a value by which to step, and a work function. The first version of this function uses 1 as the step value. The remaining versions take partitioner objects, which enable you to specify how `parallel_for` should partition ranges among threads. Partitioners are explained in greater detail in the section [Partitioning Work](#partitions) in this document.
 
-You can convert many `for` loops to use `parallel_for`. However, the `parallel_for` algorithm differs from the `for` statement in the following ways:
+You can convert many **`for`** loops to use `parallel_for`. However, the `parallel_for` algorithm differs from the **`for`** statement in the following ways:
 
 - The `parallel_for` algorithm `parallel_for` does not execute the tasks in a pre-determined order.
 
@@ -50,7 +50,7 @@ You can convert many `for` loops to use `parallel_for`. However, the `parallel_f
 
 - The loop iteration must be forward. The `parallel_for` algorithm throws an exception of type [std::invalid_argument](../../standard-library/invalid-argument-class.md) if the `_Step` parameter is less than 1.
 
-- The exception-handling mechanism for the `parallel_for` algorithm differs from that of a `for` loop. If multiple exceptions occur simultaneously in a parallel loop body, the runtime propagates only one of the exceptions to the thread that called `parallel_for`. In addition, when one loop iteration throws an exception, the runtime does not immediately stop the overall loop. Instead, the loop is placed in the canceled state and the runtime discards any tasks that have not yet started. For more information about exception-handling and parallel algorithms, see [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
+- The exception-handling mechanism for the `parallel_for` algorithm differs from that of a **`for`** loop. If multiple exceptions occur simultaneously in a parallel loop body, the runtime propagates only one of the exceptions to the thread that called `parallel_for`. In addition, when one loop iteration throws an exception, the runtime does not immediately stop the overall loop. Instead, the loop is placed in the canceled state and the runtime discards any tasks that have not yet started. For more information about exception-handling and parallel algorithms, see [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 
 Although the `parallel_for` algorithm does not support arbitrary termination conditions, you can use cancellation to stop all tasks. For more information about cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).
 
@@ -130,7 +130,7 @@ For complete examples that use the `parallel_invoke` algorithm, see [How to: Use
 The [concurrency::parallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) and [concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) algorithms are parallel versions of the C++ Standard Library algorithms [std::transform](../../standard-library/algorithm-functions.md#transform) and [std::accumulate](../../standard-library/numeric-functions.md#accumulate), respectively. The Concurrency Runtime versions behave like the C++ Standard Library versions except that the operation order is not determined because they execute in parallel. Use these algorithms when you work with a set that is large enough to get performance and scalability benefits from being processed in parallel.
 
 > [!IMPORTANT]
-> The `parallel_transform` and `parallel_reduce` algorithms support only random access, bi-directional, and forward iterators because these iterators produce stable memory addresses. Also, these iterators must produce non-`const` l-values.
+> The `parallel_transform` and `parallel_reduce` algorithms support only random access, bi-directional, and forward iterators because these iterators produce stable memory addresses. Also, these iterators must produce non-**`const`** l-values.
 
 ### <a name="parallel_transform"></a> The parallel_transform Algorithm
 
@@ -211,7 +211,7 @@ Typically, these partitioners are used in the same way, except for `affinity_par
 
 [!code-cpp[concrt-static-partitioner#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_8.cpp)]
 
-However, you must pass an `affinity_partitioner` object as a non-`const`, l-value reference so that the algorithm can store state for future loops to reuse. The following example shows a basic application that performs the same operation on a data set in parallel multiple times. The use of `affinity_partitioner` can improve performance because the array is likely to fit in cache.
+However, you must pass an `affinity_partitioner` object as a non-**`const`**, l-value reference so that the algorithm can store state for future loops to reuse. The following example shows a basic application that performs the same operation on a data set in parallel multiple times. The use of `affinity_partitioner` can improve performance because the array is likely to fit in cache.
 
 [!code-cpp[concrt-affinity-partitioner#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_9.cpp)]
 
@@ -267,7 +267,7 @@ This example uses a lambda expression as the hash function. You can also use one
 
 [!code-cpp[concrt-parallel-sort-points#3](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_14.cpp)]
 
-The hash function must return an integral type ([std::is_integral::value](../../standard-library/is-integral-class.md) must be **true**). This integral type must be convertible to type `size_t`.
+The hash function must return an integral type ([std::is_integral::value](../../standard-library/is-integral-class.md) must be **`true`**). This integral type must be convertible to type `size_t`.
 
 ### <a name="choose_sort"></a> Choosing a Sorting Algorithm
 

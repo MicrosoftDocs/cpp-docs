@@ -8,7 +8,7 @@ ms.assetid: 83a344c1-73c9-4ace-8b93-cccfb62c6133
 
 C++ offers new capabilities, some of which supplant the ones offered by the ANSI C preprocessor. These new capabilities enhance the type safety and predictability of the language:
 
-- In C++, objects declared as **const** can be used in constant expressions. It allows programs to declare constants that have type and value information. They can declare enumerations that can be viewed symbolically with the debugger. When you use the preprocessor `#define` directive to define constants, it's not as precise, and not type-safe. No storage is allocated for a **const** object, unless the program contains an expression that takes its address.
+- In C++, objects declared as **`const`** can be used in constant expressions. It allows programs to declare constants that have type and value information. They can declare enumerations that can be viewed symbolically with the debugger. When you use the preprocessor `#define` directive to define constants, it's not as precise, and not type-safe. No storage is allocated for a **`const`** object, unless the program contains an expression that takes its address.
 
 - The C++ inline function capability supplants function-type macros. The advantages of using inline functions over macros are:
 

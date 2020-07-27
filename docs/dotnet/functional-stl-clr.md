@@ -27,9 +27,9 @@ Include the STL/CLR header `<cliext/functional>` to define the a number of templ
 |Delegate|Description|
 |--------------|-----------------|
 |[binary_delegate (STL/CLR)](#binary_delegate)|Two-argument delegate.|
-|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|Two-argument delegate returning **void**.|
+|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|Two-argument delegate returning **`void`**.|
 |[unary_delegate (STL/CLR)](#unary_delegate)|One-argument delegate.|
-|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|One-argument delegate returning **void**.|
+|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|One-argument delegate returning **`void`**.|
 
 |Class|Description|
 |-----------|-----------------|
@@ -140,7 +140,7 @@ compare(L'b', L'a') = False
 
 ## <a name="binary_delegate_noreturn"></a> binary_delegate_noreturn (STL/CLR)
 
-The genereic class describes a two-argument delegate that returns **void**. You use it specify a delegate in terms of its argument.
+The genereic class describes a two-argument delegate that returns **`void`**. You use it specify a delegate in terms of its argument.
 
 ### Syntax
 
@@ -160,7 +160,7 @@ The type of the second argument.
 
 ### Remarks
 
-The genereic delegate describes a two-argument function that returns **void**.
+The genereic delegate describes a two-argument function that returns **`void`**.
 
 Note that for:
 
@@ -2408,7 +2408,7 @@ hash(L'b') = 22
 
 ## <a name="unary_delegate_noreturn"></a> unary_delegate_noreturn (STL/CLR)
 
-The genereic class describes a one-argument delegate that returns **void**. You use it specify a delegate in terms of its argument type.
+The genereic class describes a one-argument delegate that returns **`void`**. You use it specify a delegate in terms of its argument type.
 
 ### Syntax
 
@@ -2424,7 +2424,7 @@ The type of the argument.
 
 ### Remarks
 
-The genereic delegate describes a one-argument function that returns **void**.
+The genereic delegate describes a one-argument function that returns **`void`**.
 
 Note that for:
 

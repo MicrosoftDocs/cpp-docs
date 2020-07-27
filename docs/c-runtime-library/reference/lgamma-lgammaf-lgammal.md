@@ -48,7 +48,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **lgamma** that take and return **float** and **`long double`** types. In a C program, **lgamma** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **lgamma** that take and return **`float`** and **`long double`** types. In a C program, **lgamma** always takes and returns a **`double`**.
 
 If x is a rational number, this function returns the logarithm of the factorial of (x - 1).
 

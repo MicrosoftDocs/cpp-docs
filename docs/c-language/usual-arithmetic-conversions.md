@@ -12,17 +12,17 @@ The arithmetic conversions summarized below are called "usual arithmetic convers
 
 1. If either operand is of type **`long double`**, the other operand is converted to type **`long double`**.
 
-1. If the above condition is not met and either operand is of type **double**, the other operand is converted to type **double**.
+1. If the above condition is not met and either operand is of type **`double`**, the other operand is converted to type **`double`**.
 
-1. If the above two conditions are not met and either operand is of type **float**, the other operand is converted to type **float**.
+1. If the above two conditions are not met and either operand is of type **`float`**, the other operand is converted to type **`float`**.
 
 1. If the above three conditions are not met (none of the operands are of floating types), then integral conversions are performed on the operands as follows:
 
    - If either operand is of type **`unsigned long`**, the other operand is converted to type **`unsigned long`**.
 
-   - If the above condition is not met and either operand is of type **long** and the other of type **`unsigned int`**, both operands are converted to type **`unsigned long`**.
+   - If the above condition is not met and either operand is of type **`long`** and the other of type **`unsigned int`**, both operands are converted to type **`unsigned long`**.
 
-   - If the above two conditions are not met, and either operand is of type **long**, the other operand is converted to type **long**.
+   - If the above two conditions are not met, and either operand is of type **`long`**, the other operand is converted to type **`long`**.
 
    - If the above three conditions are not met, and either operand is of type **`unsigned int`**, the other operand is converted to type **`unsigned int`**.
 

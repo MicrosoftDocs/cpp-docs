@@ -21,7 +21,7 @@ The unsigned type of the result can cause unexpected behavior. If the result is 
 
 The expected second line, `1 is greater than the most negative int`, is not printed because `((unsigned int)1) > 2147483648` is false.
 
-You can avoid C4146 by using INT_MIN from limits.h, which has the type **signed int**.
+You can avoid C4146 by using INT_MIN from limits.h, which has the type **`signed int`**.
 
 ## Example
 

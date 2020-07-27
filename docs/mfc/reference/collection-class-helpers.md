@@ -56,7 +56,7 @@ The `CMap` calls use the `CMap` template parameters *KEY* and *ARG_KEY*.
 
 The default implementation returns the result of the comparison of *\*pElement1* and *\*pElement2*. Override this function so that it compares the elements in a way that is appropriate for your application.
 
-The C++ language defines the comparison operator ( `==`) for simple types (**char**, **int**, **float**, and so on) but does not define a comparison operator for classes and structures. If you want to use `CompareElements` or to instantiate one of the collection classes that uses it, you must either define the comparison operator or overload `CompareElements` with a version that returns appropriate values.
+The C++ language defines the comparison operator ( `==`) for simple types (**`char`**, **`int`**, **`float`**, and so on) but does not define a comparison operator for classes and structures. If you want to use `CompareElements` or to instantiate one of the collection classes that uses it, you must either define the comparison operator or overload `CompareElements` with a version that returns appropriate values.
 
 ### Requirements
 

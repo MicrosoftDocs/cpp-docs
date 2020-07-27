@@ -14,7 +14,7 @@ For the Microsoft 32-bit and 64-bit C compilers, a based pointer is a 32-bit or 
 
 > *type* **__based(** *base* **)** *declarator*
 
-The "based on pointer" variant of based addressing enables specification of a pointer as a base. The based pointer, then, is an offset into the memory section starting at the beginning of the pointer on which it is based. Pointers based on pointer addresses are the only form of the `__based` keyword valid in 32-bit and 64-bit compilations. In such compilations, they are 32-bit or 64-bit displacements from a 32-bit or 64-bit base.
+The "based on pointer" variant of based addressing enables specification of a pointer as a base. The based pointer, then, is an offset into the memory section starting at the beginning of the pointer on which it is based. Pointers based on pointer addresses are the only form of the **`__based`** keyword valid in 32-bit and 64-bit compilations. In such compilations, they are 32-bit or 64-bit displacements from a 32-bit or 64-bit base.
 
 One use for pointers based on pointers is for persistent identifiers that contain pointers. A linked list that consists of pointers based on a pointer can be saved to disk, then reloaded to another place in memory, with the pointers remaining valid.
 

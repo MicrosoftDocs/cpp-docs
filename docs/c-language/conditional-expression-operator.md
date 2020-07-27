@@ -34,7 +34,7 @@ The type of the result of a conditional operation depends on the type of the *ex
 
 - If either *expression* or *conditional-expression* is a pointer and the other operand is a constant expression with the value 0, the type of the result is the pointer type.
 
-In the type comparison for pointers, any type qualifiers (**const** or `volatile`) in the type to which the pointer points are insignificant, but the result type inherits the qualifiers from both components of the conditional.
+In the type comparison for pointers, any type qualifiers (**`const`** or **`volatile`**) in the type to which the pointer points are insignificant, but the result type inherits the qualifiers from both components of the conditional.
 
 ## Examples
 

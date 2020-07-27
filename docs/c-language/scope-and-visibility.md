@@ -22,7 +22,7 @@ The declarator or type specifier for an identifier with block scope appears insi
 Function-prototype scope
 The declarator or type specifier for an identifier with function-prototype scope appears within the list of parameter declarations in a function prototype (not part of the function declaration). Its scope terminates at the end of the function declarator.
 
-The appropriate declarations for making variables visible in other source files are described in [Storage Classes](../c-language/c-storage-classes.md). However, variables and functions declared at the external level with the **static** storage-class specifier are visible only within the source file in which they are defined. All other functions are globally visible.
+The appropriate declarations for making variables visible in other source files are described in [Storage Classes](../c-language/c-storage-classes.md). However, variables and functions declared at the external level with the **`static`** storage-class specifier are visible only within the source file in which they are defined. All other functions are globally visible.
 
 ## See also
 

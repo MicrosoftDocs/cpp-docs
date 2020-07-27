@@ -52,7 +52,7 @@ const int c = std::launder(p)->n; // OK
 
 ## <a name="nothrow"></a> nothrow
 
-Provides an object to be used as an argument for the **nothrow** versions of **new** and **delete**.
+Provides an object to be used as an argument for the **`nothrow`** versions of **`new`** and **`delete`**.
 
 ```cpp
 extern const std::nothrow_t nothrow;

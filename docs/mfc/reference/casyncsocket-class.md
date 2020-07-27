@@ -743,7 +743,7 @@ BOOL GetSockOpt(
 The socket option for which the value is to be retrieved.
 
 *lpOptionValue*<br/>
-A pointer to the buffer in which the value for the requested option is to be returned. The value associated with the selected option is returned in the buffer *lpOptionValue*. The integer pointed to by *lpOptionLen* should originally contain the size of this buffer in bytes; and on return, it will be set to the size of the value returned. For SO_LINGER, this will be the size of a `LINGER` structure; for all other options it will be the size of a BOOL or an **int**, depending on the option. See the list of options and their sizes in the Remarks section.
+A pointer to the buffer in which the value for the requested option is to be returned. The value associated with the selected option is returned in the buffer *lpOptionValue*. The integer pointed to by *lpOptionLen* should originally contain the size of this buffer in bytes; and on return, it will be set to the size of the value returned. For SO_LINGER, this will be the size of a `LINGER` structure; for all other options it will be the size of a BOOL or an **`int`**, depending on the option. See the list of options and their sizes in the Remarks section.
 
 *lpOptionLen*<br/>
 A pointer to the size of the *lpOptionValue* buffer in bytes.
@@ -780,26 +780,26 @@ The following options are supported for `GetSockOpt`. The Type identifies the ty
 |SO_DEBUG|BOOL|Debugging is enabled.|
 |SO_DONTLINGER|BOOL|If true, the SO_LINGER option is disabled.|
 |SO_DONTROUTE|BOOL|Routing is disabled.|
-|SO_ERROR|**int**|Retrieve error status and clear.|
+|SO_ERROR|**`int`**|Retrieve error status and clear.|
 |SO_KEEPALIVE|BOOL|Keep-alives are being sent.|
 |SO_LINGER|`struct LINGER`|Returns the current linger options.|
 |SO_OOBINLINE|BOOL|Out-of-band data is being received in the normal data stream.|
 |SO_RCVBUF|int|Buffer size for receives.|
 |SO_REUSEADDR|BOOL|The socket can be bound to an address which is already in use.|
-|SO_SNDBUF|**int**|Buffer size for sends.|
-|SO_TYPE|**int**|The type of the socket (for example, SOCK_STREAM).|
+|SO_SNDBUF|**`int`**|Buffer size for sends.|
+|SO_TYPE|**`int`**|The type of the socket (for example, SOCK_STREAM).|
 |TCP_NODELAY|BOOL|Disables the Nagle algorithm for send coalescing.|
 
 Berkeley Software Distribution (BSD) options not supported for `GetSockOpt` are:
 
 |Value|Type|Meaning|
 |-----------|----------|-------------|
-|SO_RCVLOWAT|**int**|Receive low water mark.|
-|SO_RCVTIMEO|**int**|Receive timeout.|
-|SO_SNDLOWAT|**int**|Send low water mark.|
-|SO_SNDTIMEO|**int**|Send timeout.|
+|SO_RCVLOWAT|**`int`**|Receive low water mark.|
+|SO_RCVTIMEO|**`int`**|Receive timeout.|
+|SO_SNDLOWAT|**`int`**|Send low water mark.|
+|SO_SNDTIMEO|**`int`**|Send timeout.|
 |IP_OPTIONS||Get options in IP header.|
-|TCP_MAXSEG|**int**|Get TCP maximum segment size.|
+|TCP_MAXSEG|**`int`**|Get TCP maximum segment size.|
 
 Calling `GetSockOpt` with an unsupported option will result in an error code of WSAENOPROTOOPT being returned from `GetLastError`.
 
@@ -1689,9 +1689,9 @@ The following options are supported for `SetSockOpt`. The Type identifies the ty
 |SO_KEEPALIVE|BOOL|Send keep-alives.|
 |SO_LINGER|`struct LINGER`|Linger on `Close` if unsent data is present.|
 |SO_OOBINLINE|BOOL|Receive out-of-band data in the normal data stream.|
-|SO_RCVBUF|**int**|Specify buffer size for receives.|
+|SO_RCVBUF|**`int`**|Specify buffer size for receives.|
 |SO_REUSEADDR|BOOL|Allow the socket to be bound to an address which is already in use. (See [Bind](#bind).)|
-|SO_SNDBUF|**int**|Specify buffer size for sends.|
+|SO_SNDBUF|**`int`**|Specify buffer size for sends.|
 |TCP_NODELAY|BOOL|Disables the Nagle algorithm for send coalescing.|
 
 Berkeley Software Distribution (BSD) options not supported for `SetSockOpt` are:
@@ -1699,12 +1699,12 @@ Berkeley Software Distribution (BSD) options not supported for `SetSockOpt` are:
 |Value|Type|Meaning|
 |-----------|----------|-------------|
 |SO_ACCEPTCONN|BOOL|Socket is listening|
-|SO_ERROR|**int**|Get error status and clear.|
-|SO_RCVLOWAT|**int**|Receive low water mark.|
-|SO_RCVTIMEO|**int**|Receive timeout|
-|SO_SNDLOWAT|**int**|Send low water mark.|
-|SO_SNDTIMEO|**int**|Send timeout.|
-|SO_TYPE|**int**|Type of the socket.|
+|SO_ERROR|**`int`**|Get error status and clear.|
+|SO_RCVLOWAT|**`int`**|Receive low water mark.|
+|SO_RCVTIMEO|**`int`**|Receive timeout|
+|SO_SNDLOWAT|**`int`**|Send low water mark.|
+|SO_SNDTIMEO|**`int`**|Send timeout.|
+|SO_TYPE|**`int`**|Type of the socket.|
 |IP_OPTIONS||Set options field in IP header.|
 
 ## <a name="shutdown"></a> CAsyncSocket::ShutDown

@@ -10,7 +10,7 @@ ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
 Deduces the type of a declared variable from its initialization expression.
 
 > [!NOTE]
-> The C++ standard defines an original and a revised meaning for this keyword. Before Visual Studio 2010, the **auto** keyword declares a variable in the *automatic* storage class; that is, a variable that has a local lifetime. Starting with Visual Studio 2010, the **`auto`** keyword declares a variable whose type is deduced from the initialization expression in its declaration. The [`/Zc:auto`&#91;-&#93;](../build/reference/zc-auto-deduce-variable-type.md) compiler option controls the meaning of the **`auto`** keyword.
+> The C++ standard defines an original and a revised meaning for this keyword. Before Visual Studio 2010, the **`auto`** keyword declares a variable in the *automatic* storage class; that is, a variable that has a local lifetime. Starting with Visual Studio 2010, the **`auto`** keyword declares a variable whose type is deduced from the initialization expression in its declaration. The [`/Zc:auto`&#91;-&#93;](../build/reference/zc-auto-deduce-variable-type.md) compiler option controls the meaning of the **`auto`** keyword.
 
 ## Syntax
 

@@ -105,7 +105,7 @@ DWORD m_dwStatus;
 
 ### Remarks
 
-These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following **enum** values:
+These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following **`enum`** values:
 
 ```cpp
 enum DATASOURCE_FLAGS {

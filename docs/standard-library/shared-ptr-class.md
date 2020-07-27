@@ -199,7 +199,7 @@ explicit operator bool() const noexcept;
 
 ### Remarks
 
-The operator returns a value of **true** when `get() != nullptr`, otherwise **false**.
+The operator returns a value of **`true`** when `get() != nullptr`, otherwise **`false`**.
 
 ### Example
 
@@ -760,7 +760,7 @@ bool unique() const noexcept;
 
 ### Remarks
 
-The member function returns **true** if no other `shared_ptr` object owns the resource that is owned by **`*this`**, otherwise **false**.
+The member function returns **`true`** if no other `shared_ptr` object owns the resource that is owned by **`*this`**, otherwise **`false`**.
 
 ### Example
 

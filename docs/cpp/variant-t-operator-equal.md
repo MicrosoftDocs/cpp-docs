@@ -115,13 +115,13 @@ The operator assigns a new value to the `_variant_t` object:
 
 - **operator=(**  *var_t_Src*  **)** Assigns an existing `_variant_t` object to a `_variant_t` object.
 
-- **operator=(**  *sSrc*  **)** Assigns a **short** integer value to a `_variant_t` object.
+- **operator=(**  *sSrc*  **)** Assigns a **`short`** integer value to a `_variant_t` object.
 
-- **operator=(**  `lSrc`  **)** Assigns a **long** integer value to a `_variant_t` object.
+- **operator=(**  `lSrc`  **)** Assigns a **`long`** integer value to a `_variant_t` object.
 
-- **operator=(**  *fltSrc*  **)** Assigns a **float** numerical value to a `_variant_t` object.
+- **operator=(**  *fltSrc*  **)** Assigns a **`float`** numerical value to a `_variant_t` object.
 
-- **operator=(**  *dblSrc*  **)** Assigns a **double** numerical value to a `_variant_t` object.
+- **operator=(**  *dblSrc*  **)** Assigns a **`double`** numerical value to a `_variant_t` object.
 
 - **operator=(**  *cySrc*  **)** Assigns a `CY` object to a `_variant_t` object.
 
@@ -131,7 +131,7 @@ The operator assigns a new value to the `_variant_t` object:
 
 - **operator=(**  `strSrc`  **)** Assigns a multibyte string to a `_variant_t` object.
 
-- **operator=(**  `bSrc` **)** Assigns a **bool** value to a `_variant_t` object.
+- **operator=(**  `bSrc` **)** Assigns a **`bool`** value to a `_variant_t` object.
 
 - **operator=(**  *pDispSrc*  **)** Assigns a `VT_DISPATCH` object to a `_variant_t` object.
 

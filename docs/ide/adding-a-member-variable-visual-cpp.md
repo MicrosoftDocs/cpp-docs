@@ -52,7 +52,7 @@ This wizard adds a member variable declaration to the header file. Depending on 
 
 - **Access**
 
-  Sets the access to the member variable. Access modifiers are keywords that specify the access other classes have to the member variable. For more information about specifying access, see [member-access control](../cpp/member-access-control-cpp.md). The member variable access level is set to `public` by default.
+  Sets the access to the member variable. Access modifiers are keywords that specify the access other classes have to the member variable. For more information about specifying access, see [member-access control](../cpp/member-access-control-cpp.md). The member variable access level is set to **`public`** by default.
 
   - [public](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)

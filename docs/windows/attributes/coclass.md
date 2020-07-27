@@ -123,7 +123,7 @@ public:
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

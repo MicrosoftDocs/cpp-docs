@@ -25,7 +25,7 @@ The type to query.
 
 An instance of the type predicate holds true if the type *Ty* is a floating point type or a `cv-qualified` form of a floating point type, otherwise it holds false.
 
-A floating point type is one of **float**, **double**, or **long double**.
+A floating point type is one of **`float`**, **`double`**, or **`long double`**.
 
 ## Example
 

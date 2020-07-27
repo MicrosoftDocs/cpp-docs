@@ -77,7 +77,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **fma** that take and return **float** and **`long double`** types. In a C program, **fma** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **fma** that take and return **`float`** and **`long double`** types. In a C program, **fma** always takes and returns a **`double`**.
 
 This function computes the value as though it were taken to infinite precision, and then rounds the final result.
 

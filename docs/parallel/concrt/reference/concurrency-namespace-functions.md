@@ -74,7 +74,7 @@ A reference to the data to be sent.
 
 ### Return Value
 
-**true** if the message was accepted before the method returned, **false** otherwise.
+**`true`** if the message was accepted before the method returned, **`false`** otherwise.
 
 ### Remarks
 
@@ -380,7 +380,7 @@ bool __cdecl is_current_task_group_canceling();
 
 ### Return Value
 
-**true** if the task group which is currently executing is canceling, **false** otherwise.
+**`true`** if the task group which is currently executing is canceling, **`false`** otherwise.
 
 ### Remarks
 
@@ -643,7 +643,7 @@ A random-access iterator addressing the position one past the final element in t
 An instance of a C++ Standard Library compatible memory allocator.
 
 *_Func*<br/>
-A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
+A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
 
 *_Chunk_size*<br/>
 The mimimum size of a chunk that will be split into two for parallel execution.
@@ -731,7 +731,7 @@ The value by which to step when iterating from `first` to `last`. The step must 
 The function to be executed at each iteration. This may be a lambda expression, a function pointer, or any object that supports a version of the function call operator with the signature `void operator()(_Index_type)`.
 
 *_Part*<br/>
-A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
+A reference to the partitioner object. The argument can be one of **`const`** [auto_partitioner](auto-partitioner-class.md)`&`, **`const`** [static_partitioner](static-partitioner-class.md)`&`, **`const`** [simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
 
 ### Remarks
 
@@ -775,7 +775,7 @@ An iterator addressing the position one past the final element to be included in
 A user-defined function object that is applied to each element in the range.
 
 *_Part*<br/>
-A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
+A reference to the partitioner object. The argument can be one of **`const`** [auto_partitioner](auto-partitioner-class.md)`&`, **`const`** [static_partitioner](static-partitioner-class.md)`&`, **`const`** [simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
 
 ### Remarks
 
@@ -1173,7 +1173,7 @@ A random-access iterator addressing the position of the first element in the ran
 A random-access iterator addressing the position one past the final element in the range to be sorted.
 
 *_Func*<br/>
-A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
+A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
 
 *_Chunk_size*<br/>
 The minimum size of a chunk that will be split into two for parallel execution.
@@ -1289,7 +1289,7 @@ An output iterator addressing the position of the first element in the destinati
 A user-defined unary function object that is applied to each element in the source range.
 
 *_Part*<br/>
-A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
+A reference to the partitioner object. The argument can be one of **`const`** [auto_partitioner](auto-partitioner-class.md)`&`, **`const`** [static_partitioner](static-partitioner-class.md)`&`, **`const`** [simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
 
 *first2*<br/>
 An input iterator addressing the position of the first element in the second source range to be operated on.
@@ -1416,7 +1416,7 @@ A reference to the data to be sent.
 
 ### Return Value
 
-**true** if the message was accepted, **false** otherwise.
+**`true`** if the message was accepted, **`false`** otherwise.
 
 ### Remarks
 
@@ -1569,7 +1569,7 @@ The name for the given object.
 
 ## <a name="try_receive"></a> try_receive
 
-A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return **false**.
+A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return **`false`**.
 
 ```cpp
 template <class T>

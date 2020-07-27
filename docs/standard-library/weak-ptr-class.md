@@ -43,7 +43,7 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 | **Member functions** | |
 |[expired](#expired)|Tests if ownership has expired.|
 |[lock](#lock)|Obtains exclusive ownership of a resource.|
-|[owner_before](#owner_before)|Returns **true** if this `weak_ptr` is ordered before (or less than) the provided pointer.|
+|[owner_before](#owner_before)|Returns **`true`** if this `weak_ptr` is ordered before (or less than) the provided pointer.|
 |[reset](#reset)|Releases owned resource.|
 |[swap](#swap)|Swaps two `weak_ptr` objects.|
 |[use_count](#use_count)|Counts number of `shared_ptr` objects.|
@@ -97,7 +97,7 @@ bool expired() const noexcept;
 
 ### Remarks
 
-The member function returns **true** if **`*this`** has expired, otherwise **false**.
+The member function returns **`true`** if **`*this`** has expired, otherwise **`false`**.
 
 ### Example
 
@@ -245,7 +245,7 @@ int main()
 
 ## <a name="owner_before"></a> owner_before
 
-Returns **true** if this `weak_ptr` is ordered before (or less than) the provided pointer.
+Returns **`true`** if this `weak_ptr` is ordered before (or less than) the provided pointer.
 
 ```cpp
 template <class Other>
@@ -262,7 +262,7 @@ An lvalue reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
 
-The template member function returns **true** if **`*this`** is ordered before *ptr*.
+The template member function returns **`true`** if **`*this`** is ordered before *ptr*.
 
 ## <a name="reset"></a> reset
 

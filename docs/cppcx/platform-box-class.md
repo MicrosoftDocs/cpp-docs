@@ -26,11 +26,11 @@ ref class Box abstract;
 |Member|Description|
 |------------|-----------------|
 |[Box](#ctor) | Creates a `Box` that can encapsulate a value of the specified type. |
-|[operator Box&lt;const T&gt;^](#box-const-t) | Enables boxing conversions from a `const` value class `T` or `enum` class `T` to `Box<T>`. |
-|[operator Box&lt;const volatile T&gt;^](#box-const-volatile-t) | Enables boxing conversions from a `const volatile` value class `T` or `enum` type `T` to `Box<T>`. |
+|[operator Box&lt;const T&gt;^](#box-const-t) | Enables boxing conversions from a **`const`** value class `T` or **`enum`** class `T` to `Box<T>`. |
+|[operator Box&lt;const volatile T&gt;^](#box-const-volatile-t) | Enables boxing conversions from a **`const volatile`** value class `T` or **`enum`** type `T` to `Box<T>`. |
 |[operator Box&lt;T&gt;^](#box-t) | Enables boxing conversions from a value class `T` to `Box<T>`. |
-|[operator Box&lt;volatile T&gt;^](#box-volatile-t) | Enables boxing conversions from a `volatile` value class `T` or `enum` type `T` to `Box<T>`. |
-|[Box::operator T](#t) | Enables boxing conversions from a value class `T` or `enum` class `T` to `Box<T>`. |
+|[operator Box&lt;volatile T&gt;^](#box-volatile-t) | Enables boxing conversions from a **`volatile`** value class `T` or **`enum`** type `T` to `Box<T>`. |
+|[Box::operator T](#t) | Enables boxing conversions from a value class `T` or **`enum`** class `T` to `Box<T>`. |
 |[Value property](#value) | Returns the value that is encapsulated in the `Box` object. |
 
 ## <a name="ctor"></a> Box::Box Constructor
@@ -50,7 +50,7 @@ The type of value to be boxed—for example, **`int`**, **`bool`**, `float64`, `
 
 ## <a name="box-const-t"></a> Box::operator Box&lt;const T&gt;^ Operator
 
-Enables boxing conversions from a `const` value class `T` or `enum` class `T` to `Box<T>`.
+Enables boxing conversions from a **`const`** value class `T` or **`enum`** class `T` to `Box<T>`.
 
 ### Syntax
 
@@ -69,7 +69,7 @@ A `Platform::Box<T>^` instance that represents the original value boxed in a ref
 
 ## <a name="box-const-volatile-t"></a> Box::operator Box&lt;const volatile T&gt;^ Operator
 
-Enables boxing conversions from a `const volatile` value class `T` or `enum` type `T` to `Box<T>`.
+Enables boxing conversions from a **`const volatile`** value class `T` or **`enum`** type `T` to `Box<T>`.
 
 ### Syntax
 
@@ -107,7 +107,7 @@ A `Platform::Box<T>^` instance that represents the original value boxed in a ref
 
 ## <a name="box-volatile-t"></a> Box::operator Box&lt;volatile T&gt;^ Operator
 
-Enables boxing conversions from a `volatile` value class `T` or `enum` type `T` to `Box<T>`.
+Enables boxing conversions from a **`volatile`** value class `T` or **`enum`** type `T` to `Box<T>`.
 
 ### Syntax
 
@@ -126,7 +126,7 @@ A `Platform::Box<T>^` instance that represents the original value boxed in a ref
 
 ## <a name="t"></a> Box::operator T Operator
 
-Enables boxing conversions from a value class `T` or `enum` class `T` to `Box<T>`.
+Enables boxing conversions from a value class `T` or **`enum`** class `T` to `Box<T>`.
 
 ### Syntax
 

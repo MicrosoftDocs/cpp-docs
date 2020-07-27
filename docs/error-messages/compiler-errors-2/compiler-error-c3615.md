@@ -9,11 +9,11 @@ ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
 
 > constexpr function '*function*' cannot result in a constant expression
 
-The function *function* could not be evaluated as `constexpr` at compile time. To be `constexpr`, a function can only call other `constexpr` functions.
+The function *function* could not be evaluated as **`constexpr`** at compile time. To be **`constexpr`**, a function can only call other **`constexpr`** functions.
 
 ## Example
 
-Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation is not valid in a `constexpr` context. The following code compiles in Visual Studio 2015 but not in Visual Studio 2017.
+Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation is not valid in a **`constexpr`** context. The following code compiles in Visual Studio 2015 but not in Visual Studio 2017.
 
 ```cpp
 // C3615.cpp
@@ -31,4 +31,4 @@ constexpr bool f(const myarray<1> &arr)
 }
 ```
 
-To fix this issue, either declare the `array::size()` function as `constexpr` or remove the `constexpr` qualifier from `f`.
+To fix this issue, either declare the `array::size()` function as **`constexpr`** or remove the **`constexpr`** qualifier from `f`.

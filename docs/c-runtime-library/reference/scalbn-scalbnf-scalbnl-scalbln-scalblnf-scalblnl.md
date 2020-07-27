@@ -76,7 +76,7 @@ For more information about **errno** and possible error return values, see [errn
 
 **FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [ldexp](ldexp.md).
 
-Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **float** or **`long double`** types. In a C program, **scalbn** always takes a **double** and an **int** and returns a **double**, and **scalbln** always takes a **double** and a **long** and returns a **double**.
+Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **`float`** or **`long double`** types. In a C program, **scalbn** always takes a **`double`** and an **`int`** and returns a **`double`**, and **scalbln** always takes a **`double`** and a **`long`** and returns a **`double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

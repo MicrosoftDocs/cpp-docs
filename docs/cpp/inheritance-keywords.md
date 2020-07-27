@@ -35,7 +35,7 @@ In the code above, `p` is declared to be a pointer to integer member of class S.
 
 - Using the [pointers_to_members](../preprocessor/pointers-to-members.md) pragma
 
-- Using the inheritance keywords **__single_inheritance**, **__multiple_inheritance**, and **__virtual_inheritance**. This technique controls the inheritance model on a per-class basis.
+- Using the inheritance keywords **`__single_inheritance`**, **`__multiple_inheritance`**, and **`__virtual_inheritance`**. This technique controls the inheritance model on a per-class basis.
 
     > [!NOTE]
     >  If you always declare a pointer to a member of a class after defining the class, you don't need to use any of these options.
@@ -54,7 +54,7 @@ regardless of command-line options or pragmas, pointers to members of `class S` 
 > [!NOTE]
 > The same forward declaration of a class pointer-to-member representation should occur in every translation unit that declares pointers to members of that class, and the declaration should occur before the pointers to members are declared.
 
-For compatibility with previous versions, **_single_inheritance**, **_multiple_inheritance**, and **_virtual_inheritance** are synonyms for **__single_inheritance**, **__multiple_inheritance**, and **__virtual_inheritance** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **_single_inheritance**, **_multiple_inheritance**, and **_virtual_inheritance** are synonyms for **`__single_inheritance`**, **`__multiple_inheritance`**, and **`__virtual_inheritance`** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 **END Microsoft Specific**
 

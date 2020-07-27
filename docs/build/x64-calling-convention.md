@@ -38,7 +38,7 @@ Integer valued arguments in the leftmost four positions are passed in left-to-ri
 
 Any floating-point and double-precision arguments in the first four parameters are passed in XMM0 - XMM3, depending on position. Floating-point values are only placed in the integer registers RCX, RDX, R8, and R9 when there are varargs arguments. For details, see [Varargs](#varargs). Similarly, the XMM0 - XMM3 registers are ignored when the corresponding argument is an integer or pointer type.
 
-[`__m128`](../cpp/m128.md) types, arrays, and strings are never passed by immediate value. Instead, a pointer is passed to memory allocated by the caller. Structs and unions of size 8, 16, 32, or 64 bits, and `__m64` types, are passed as if they were integers of the same size. Structs or unions of other sizes are passed as a pointer to memory allocated by the caller. For these aggregate types passed as a pointer, including `__m128`, the caller-allocated temporary memory must be 16-byte aligned.
+[`__m128`](../cpp/m128.md) types, arrays, and strings are never passed by immediate value. Instead, a pointer is passed to memory allocated by the caller. Structs and unions of size 8, 16, 32, or 64 bits, and **`__m64`** types, are passed as if they were integers of the same size. Structs or unions of other sizes are passed as a pointer to memory allocated by the caller. For these aggregate types passed as a pointer, including **`__m128`**, the caller-allocated temporary memory must be 16-byte aligned.
 
 Intrinsic functions that don't allocate stack space, and don't call other functions, sometimes use other volatile registers to pass additional register arguments. This optimization is made possible by the tight binding between the compiler and the intrinsic function implementation.
 
@@ -50,9 +50,9 @@ The following table summarizes how parameters are passed, by type and position f
 |-|-|-|-|-|-|
 | floating-point | stack | XMM3 | XMM2 | XMM1 | XMM0 |
 | integer | stack | R9 | R8 | RDX | RCX |
-| Aggregates (8, 16, 32, or 64 bits) and `__m64` | stack | R9 | R8 | RDX | RCX |
+| Aggregates (8, 16, 32, or 64 bits) and **`__m64`** | stack | R9 | R8 | RDX | RCX |
 | Other aggregates, as pointers | stack | R9 | R8 | RDX | RCX |
-| `__m128`, as a pointer | stack | R9 | R8 | RDX | RCX |
+| **`__m128`**, as a pointer | stack | R9 | R8 | RDX | RCX |
 
 ### Example of argument passing 1 - all integers
 
@@ -100,7 +100,7 @@ func2() {   // RCX = 2, RDX = XMM1 = 1.0, and R8 = 7
 
 ## Return values
 
-A scalar return value that can fit into 64 bits, including the `__m64` type, is returned through RAX. Non-scalar types including floats, doubles, and vector types such as [`__m128`](../cpp/m128.md), [`__m128i`](../cpp/m128i.md), [`__m128d`](../cpp/m128d.md) are returned in XMM0. The state of unused bits in the value returned in RAX or XMM0 is undefined.
+A scalar return value that can fit into 64 bits, including the **`__m64`** type, is returned through RAX. Non-scalar types including floats, doubles, and vector types such as [`__m128`](../cpp/m128.md), [`__m128i`](../cpp/m128i.md), [`__m128d`](../cpp/m128d.md) are returned in XMM0. The state of unused bits in the value returned in RAX or XMM0 is undefined.
 
 User-defined types can be returned by value from global functions and static member functions. To return a user-defined type by value in RAX, it must have a length of 1, 2, 4, 8, 16, 32, or 64 bits. It must also have no user-defined constructor, destructor, or copy assignment operator. It can have no private or protected non-static data members, and no non-static data members of reference type. It can't have base classes or virtual functions. And, it can only have data members that also meet these requirements. (This definition is essentially the same as a C++03 POD type. Because the definition has changed in the C++11 standard, we don't recommend using `std::is_pod` for this test.) Otherwise, the caller must allocate memory for the return value and pass a pointer to it as the first argument. The remaining arguments are then shifted one argument to the right. The same pointer must be returned by the callee in RAX.
 
@@ -206,7 +206,7 @@ Make no assumptions about the MXCSR register's volatile portion state across a f
 
 ## setjmp/longjmp
 
-When you include setjmpex.h or setjmp.h, all calls to [`setjmp`](../c-runtime-library/reference/setjmp.md) or [`longjmp`](../c-runtime-library/reference/longjmp.md) result in an unwind that invokes destructors and `__finally` calls.  This behavior differs from x86, where including setjmp.h results in `__finally` clauses and destructors not being invoked.
+When you include setjmpex.h or setjmp.h, all calls to [`setjmp`](../c-runtime-library/reference/setjmp.md) or [`longjmp`](../c-runtime-library/reference/longjmp.md) result in an unwind that invokes destructors and **`__finally`** calls.  This behavior differs from x86, where including setjmp.h results in **`__finally`** clauses and destructors not being invoked.
 
 A call to `setjmp` preserves the current stack pointer, non-volatile registers, and MXCSR registers.  Calls to `longjmp` return to the most recent `setjmp` call site and resets the stack pointer, non-volatile registers, and MXCSR registers, back to the state as preserved by the most recent `setjmp` call.
 

@@ -9,7 +9,7 @@ ms.assetid: 32f2ec15-a7cd-4049-a64b-131746d3152b
 
 local classes cannot be used to declare 'extern' variables
 
-A local class or structure cannot be used to declare `extern` variables.
+A local class or structure cannot be used to declare **`extern`** variables.
 
 The following sample generates C2624:
 

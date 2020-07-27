@@ -388,7 +388,7 @@ Pointer to the type specified by the current template type name.
 
 ### Remarks
 
-This helper function removes unnecessary overhead caused by using the STDMETHOD macro. This function makes `IUnknown` types `private` instead of `virtual`.
+This helper function removes unnecessary overhead caused by using the STDMETHOD macro. This function makes `IUnknown` types **`private`** instead of **`virtual`**.
 
 ## <a name="operator-assign"></a> ComPtr::operator=
 
@@ -482,7 +482,7 @@ A reference to another `ComPtr` object.
 
 The first operator yields **`true`** if object *a* is equal to object *b*; otherwise, **`false`**.
 
-The second and third operators yield **`true`** if object *a* is equal to `nullptr`; otherwise, **`false`**.
+The second and third operators yield **`true`** if object *a* is equal to **`nullptr`**; otherwise, **`false`**.
 
 ## <a name="operator-inequality"></a> ComPtr::operator!=
 
@@ -529,7 +529,7 @@ WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
 
 ### Return Value
 
-If an interface is associated with this `ComPtr`, the address of the [BoolStruct::Member](boolstruct-structure.md#member) data member; otherwise, `nullptr`.
+If an interface is associated with this `ComPtr`, the address of the [BoolStruct::Member](boolstruct-structure.md#member) data member; otherwise, **`nullptr`**.
 
 ## <a name="ptr"></a> ComPtr::ptr_
 

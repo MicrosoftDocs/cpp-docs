@@ -128,7 +128,7 @@ operator bool() const noexcept;
 
 ### Return Value
 
-**true** if the object has an associated asynchronous state; otherwise, **false**.
+**`true`** if the object has an associated asynchronous state; otherwise, **`false`**.
 
 ## <a name="packaged_task"></a> packaged_task::packaged_task Constructor
 
@@ -213,7 +213,7 @@ bool valid() const;
 
 ### Return Value
 
-**true** if the object has an associated asynchronous state; otherwise, **false**.
+**`true`** if the object has an associated asynchronous state; otherwise, **`false`**.
 
 ## See also
 

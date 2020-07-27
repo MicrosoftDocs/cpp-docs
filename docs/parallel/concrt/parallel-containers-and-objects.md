@@ -116,7 +116,7 @@ The data type of the vector elements, `T`, must meet the following requirements.
 
 - The destructor must not throw.
 
-- If the default or copy constructor throws, the destructor must not be declared by using the `virtual` keyword and it must work correctly with zero-initialized memory.
+- If the default or copy constructor throws, the destructor must not be declared by using the **`virtual`** keyword and it must work correctly with zero-initialized memory.
 
 [[Top](#top)]
 

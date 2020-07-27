@@ -59,10 +59,10 @@ The C++ language specifies certain compatibilities when specifying operands. The
 
 |Type expected|Types allowed|
 |-------------------|-------------------|
-|*type*|`const` *type*<br /> `volatile` *type*<br /> *type*&<br /> `const` *type*&<br /> `volatile` *type*&<br /> `volatile const` *type*<br /> `volatile const` *type*&|
-|*type* \*|*type* \*<br /> `const` *type* \*<br /> `volatile` *type* \*<br /> `volatile const` *type* \*|
-|`const` *type*|*type*<br /> `const` *type*<br />`const` *type*&|
-|`volatile` *type*|*type*<br /> `volatile` *type*<br /> `volatile` *type*&|
+|*type*|**`const`** *type*<br /> **`volatile`** *type*<br /> *type*&<br /> **`const`** *type*&<br /> **`volatile`** *type*&<br /> `volatile const` *type*<br /> `volatile const` *type*&|
+|*type* \*|*type* \*<br /> **`const`** *type* \*<br /> **`volatile`** *type* \*<br /> `volatile const` *type* \*|
+|**`const`** *type*|*type*<br /> **`const`** *type*<br />**`const`** *type*&|
+|**`volatile`** *type*|*type*<br /> **`volatile`** *type*<br /> **`volatile`** *type*&|
 
 Because the preceding rules can always be used in combination, a const pointer to a volatile object can be supplied where a pointer is expected.
 

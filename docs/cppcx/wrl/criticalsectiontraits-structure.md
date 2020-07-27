@@ -22,7 +22,7 @@ struct CriticalSectionTraits;
 
 Name   | Description
 ------ | -----------------------------------------------------------------------------------------------------------------
-`Type` | A `typedef` that defines a pointer to a critical section. `Type` is defined as `typedef CRITICAL_SECTION* Type;`.
+`Type` | A **`typedef`** that defines a pointer to a critical section. `Type` is defined as `typedef CRITICAL_SECTION* Type;`.
 
 ### Public Methods
 

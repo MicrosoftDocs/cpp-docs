@@ -27,7 +27,7 @@ EXCEPTION_DISPOSITION __CxxFrameHandler(
 #### Parameters
 
 *pExcept*<br/>
-Exception record that is passed to the possible `catch` statements.
+Exception record that is passed to the possible **`catch`** statements.
 
 *pRN*<br/>
 Dynamic information about the stack frame that is used to handle the exception. For more information, see ehdata.h.

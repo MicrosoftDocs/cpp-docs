@@ -9,7 +9,7 @@ ms.assetid: efbdaeb9-891c-4f7d-97da-89088a8413f3
 
 initialization of 'identifier' is skipped by 'default' label
 
-The initialization of `identifier` can be skipped in a `switch` statement. You cannot jump past a declaration with an initializer unless the declaration is enclosed in a block. (Unless it is declared within a block, the variable is within scope until the end of the `switch` statement.)
+The initialization of `identifier` can be skipped in a **`switch`** statement. You cannot jump past a declaration with an initializer unless the declaration is enclosed in a block. (Unless it is declared within a block, the variable is within scope until the end of the **`switch`** statement.)
 
 The following sample generates C2361:
 

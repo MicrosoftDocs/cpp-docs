@@ -45,7 +45,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**true** if the object on the left side of the operator is not lexicographically equal to the object on the right side; otherwise **false**.
+**`true`** if the object on the left side of the operator is not lexicographically equal to the object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -84,7 +84,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**true** if the object on the left side of the operator is lexicographically equal to the object on the right side; otherwise **false**.
+**`true`** if the object on the left side of the operator is lexicographically equal to the object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -123,7 +123,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**true** if the object on the left side of the operator is lexicographically less than the object on the right side; otherwise **false**.
+**`true`** if the object on the left side of the operator is lexicographically less than the object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -184,7 +184,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**true** if the object on the left side of the operator is lexicographically less than or equal to the object on the right side; otherwise **false**.
+**`true`** if the object on the left side of the operator is lexicographically less than or equal to the object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -247,7 +247,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**true** if the object on the left side of the operator is lexicographically greater than the string_view object on the right side; otherwise **false**.
+**`true`** if the object on the left side of the operator is lexicographically greater than the string_view object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -284,7 +284,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**true** if the object on the left side of the operator is lexicographically greater than or equal to the object on the right side; otherwise **false**.
+**`true`** if the object on the left side of the operator is lexicographically greater than or equal to the object on the right side; otherwise **`false`**.
 
 ### Remarks
 

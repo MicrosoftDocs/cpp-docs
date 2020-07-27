@@ -20,7 +20,7 @@ A client item passes through several states as it is created, activated, modifie
 
 - *COleClientItem::activeUIState*
 
-In the empty state, a client item is not yet completely an item. Memory has been allocated for it, but it has not yet been initialized with the OLE item's data. This is the state a client item is in when it has been created through a call to **new** but has not yet undergone the second step of the typical two-step creation.
+In the empty state, a client item is not yet completely an item. Memory has been allocated for it, but it has not yet been initialized with the OLE item's data. This is the state a client item is in when it has been created through a call to **`new`** but has not yet undergone the second step of the typical two-step creation.
 
 In the second step, performed through a call to `COleClientItem::CreateFromFile` or another `CreateFrom`*xxxx* function, the item is completely created. The OLE data (from a file or some other source, such as the Clipboard) has been associated with the `COleClientItem`-derived object. Now the item is in the loaded state.
 

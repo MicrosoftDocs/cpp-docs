@@ -23,7 +23,7 @@ Controls the optimizations that LINK performs during a build.
 
 When /OPT:REF is enabled, LINK removes unreferenced packaged functions and data, known as *COMDATs*. This optimization is known as transitive COMDAT elimination. The **/OPT:REF** option also disables incremental linking.
 
-Inlined functions and member functions defined inside a class declaration are always COMDATs. All of the functions in an object file are made into COMDATs if it is compiled by using the [/Gy](gy-enable-function-level-linking.md) option. To place **const** data in COMDATs, you must declare it by using `__declspec(selectany)`. For information about how to specify data for removal or folding, see [selectany](../../cpp/selectany.md).
+Inlined functions and member functions defined inside a class declaration are always COMDATs. All of the functions in an object file are made into COMDATs if it is compiled by using the [/Gy](gy-enable-function-level-linking.md) option. To place **`const`** data in COMDATs, you must declare it by using `__declspec(selectany)`. For information about how to specify data for removal or folding, see [selectany](../../cpp/selectany.md).
 
 By default, **/OPT:REF** is enabled by the linker unless **/OPT:NOREF** or [/DEBUG](debug-generate-debug-info.md) is specified. To override this default and keep unreferenced COMDATs in the program, specify **/OPT:NOREF**. You can use the [/INCLUDE](include-force-symbol-references.md) option to override the removal of a specific symbol.
 
@@ -38,7 +38,7 @@ By default, **/OPT:ICF** is enabled by the linker unless **/OPT:NOICF** or [/DEB
 In a debug build, you must explicitly specify **/OPT:ICF** to enable COMDAT folding. However, because **/OPT:ICF** can merge identical data or functions, it can change the function names that appear in stack traces. It can also make it impossible to set breakpoints in certain functions or to examine some data in the debugger, and can take you into unexpected functions when you single-step through your code. The behavior of the code is identical, but the debugger presentation can be very confusing. Therefore, we do not recommend that you use **/OPT:ICF** in debug builds unless the advantages of smaller code outweigh these disadvantages.
 
 > [!NOTE]
-> Because **/OPT:ICF** can cause the same address to be assigned to different functions or read-only data members (that is, **const** variables when compiled by using **/Gy**), it can break a program that depends on unique addresses for functions or read-only data members. For more information, see [/Gy (Enable Function-Level Linking)](gy-enable-function-level-linking.md).
+> Because **/OPT:ICF** can cause the same address to be assigned to different functions or read-only data members (that is, **`const`** variables when compiled by using **/Gy**), it can break a program that depends on unique addresses for functions or read-only data members. For more information, see [/Gy (Enable Function-Level Linking)](gy-enable-function-level-linking.md).
 
 **LBR** &#124; **NOLBR**
 

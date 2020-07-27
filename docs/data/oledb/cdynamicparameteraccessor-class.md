@@ -107,7 +107,7 @@ A templated parameter that is the data type.
 
 ### Return Value
 
-For nontemplated versions, points to the memory containing the data retrieved from the buffer. For templated versions, returns **true** on success or **false** on failure.
+For nontemplated versions, points to the memory containing the data retrieved from the buffer. For templated versions, returns **`true`** on success or **`false`** on failure.
 
 Use `GetParam` to retrieve nonstring parameter data from the buffer. Use [GetParamString](../../data/oledb/cdynamicparameteraccessor-getparamstring.md) to retrieve string parameter data from the buffer.
 
@@ -156,7 +156,7 @@ enum DBPARAMIOENUM {
 
 ### Return Value
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
 ## <a name="getparamlength"></a> CDynamicParameterAccessor::GetParamLength
 
@@ -181,7 +181,7 @@ DBLENGTH* GetParamLength(DBORDINAL nParam) const throw();
 
 ### Remarks
 
-The first override returns **true** on success or **false** on failure. The second override points to the memory containing the length of the parameter.
+The first override returns **`true`** on success or **`false`** on failure. The second override points to the memory containing the length of the parameter.
 
 ## <a name="getparamname"></a> CDynamicParameterAccessor::GetParamName
 
@@ -225,7 +225,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 
 ### Remarks
 
-The first override returns **true** on success or **false** on failure. The second override points to the memory containing the status of the specified parameter.
+The first override returns **`true`** on success or **`false`** on failure. The second override points to the memory containing the status of the specified parameter.
 
 ## <a name="getparamstring"></a> CDynamicParameterAccessor::GetParamString
 
@@ -267,9 +267,9 @@ bool GetParamString(DBORDINAL nParam,
 
 ### Remarks
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
-If *pBuffer* is NULL, this method will set the required buffer size in the memory pointed to by *pMaxLen* and return **true** without copying the data.
+If *pBuffer* is NULL, this method will set the required buffer size in the memory pointed to by *pMaxLen* and return **`true`** without copying the data.
 
 This method will fail if the buffer *pBuffer* is not large enough to contain the whole string.
 
@@ -296,7 +296,7 @@ bool GetParamType(DBORDINAL nParam,
 
 ### Return Value
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
 ## <a name="setparam"></a> CDynamicParameterAccessor::SetParam
 
@@ -337,7 +337,7 @@ A templated parameter that is the data type.
 
 ### Return Value
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
 Use `SetParam` to set nonstring parameter data in the buffer. Use [SetParamString](../../data/oledb/cdynamicparameteraccessor-setparamstring.md) to set string parameter data in the buffer.
 
@@ -362,7 +362,7 @@ bool SetParamLength(DBORDINAL nParam,
 
 ### Remarks
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
 ## <a name="setparamstatus"></a> CDynamicParameterAccessor::SetParamStatus
 
@@ -385,7 +385,7 @@ bool SetParamStatus(DBORDINAL nParam,
 
 ### Remarks
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
 ## <a name="setparamstring"></a> CDynamicParameterAccessor::SetParamString
 
@@ -414,7 +414,7 @@ bool SetParamString(DBORDINAL nParam,
 
 ### Remarks
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
 `SetParamString` will fail if you try to set a string that is larger than the maximum size specified for *pString*.
 

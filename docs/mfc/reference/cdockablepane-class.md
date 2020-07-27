@@ -671,7 +671,7 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 
 ### Return Value
 
-If the pane was docked to a tabbed window, or if a tabbed window was created as a result of docking, this method returns a pointer to the tabbed window. If the pane was otherwise successfully docked, this method returns the **this** pointer. If docking failed, this method returns NULL.
+If the pane was docked to a tabbed window, or if a tabbed window was created as a result of docking, this method returns a pointer to the tabbed window. If the pane was otherwise successfully docked, this method returns the **`this`** pointer. If docking failed, this method returns NULL.
 
 ## <a name="docktorecentpos"></a> CDockablePane::DockToRecentPos
 
@@ -1415,7 +1415,7 @@ void SetLastPercentInPaneContainer(int n);
 ### Parameters
 
 *n*<br/>
-[in] An **int** that specifies the percentage of space that the pane occupies in its container.
+[in] An **`int`** that specifies the percentage of space that the pane occupies in its container.
 
 ### Remarks
 

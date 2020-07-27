@@ -9,7 +9,7 @@ ms.assetid: 8b4d43e3-3fb5-4360-86c8-de59d8736d4f
 
 'name' : introduced by using-declaration conflicts with local function 'function'
 
-You tried to define a function more than once. The first definition is a local definition. The second is from a namespace with a `using` declaration.
+You tried to define a function more than once. The first definition is a local definition. The second is from a namespace with a **`using`** declaration.
 
 The following sample generates C2884:
 

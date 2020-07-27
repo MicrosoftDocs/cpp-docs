@@ -45,8 +45,8 @@ class allocator_base
 
 |Member function|Description|
 |-|-|
-|[_Charalloc](#charalloc)|Allocates storage for an array of type **char**.|
-|[_Chardealloc](#chardealloc)|Frees storage for the array containing elements of type **char**.|
+|[_Charalloc](#charalloc)|Allocates storage for an array of type **`char`**.|
+|[_Chardealloc](#chardealloc)|Frees storage for the array containing elements of type **`char`**.|
 |[address](#address)|Finds the address of an object whose value is specified.|
 |[allocate](#allocate)|Allocates a block of memory large enough to store at least some specified number of elements.|
 |[construct](#construct)|Constructs a specific type of object at a specified address that is initialized with a specified value.|
@@ -62,7 +62,7 @@ class allocator_base
 
 ## <a name="charalloc"></a> allocator_base::_Charalloc
 
-Allocates storage for an array of type **char**.
+Allocates storage for an array of type **`char`**.
 
 ```cpp
 char *_Charalloc(size_type count);
@@ -84,7 +84,7 @@ This member function is used by containers when compiled with a compiler that ca
 
 ## <a name="chardealloc"></a> allocator_base::_Chardealloc
 
-Frees storage for the array containing elements of type **char**.
+Frees storage for the array containing elements of type **`char`**.
 
 ```cpp
 void _Chardealloc(void* ptr, size_type count);

@@ -106,13 +106,13 @@ The copy constructor initializes the contained value from the contained value of
 The move constructor initializes the contained value by moving from the contained value of the argument. It doesn't participate in overload resolution unless `is_move_constructible_v<T>` is true, and it's trivial if `is_trivially_move_constructible_v<T>` is true.
 
 `template <class... Args> constexpr explicit optional(in_place_t, Args&&... args);`
-Direct initializes the contained value as if using the arguments `std::forward<Args>(args)`. This constructor is `constexpr` if the `T` constructor used is `constexpr`. It doesn't participate in overload resolution unless `is_constructible_v<T, Args...>` is true.
+Direct initializes the contained value as if using the arguments `std::forward<Args>(args)`. This constructor is **`constexpr`** if the `T` constructor used is **`constexpr`**. It doesn't participate in overload resolution unless `is_constructible_v<T, Args...>` is true.
 
 `template <class U, class... Args> constexpr explicit optional(in_place_t, initializer_list<U> i_list, Args&&... args);`
-Direct initializes the contained value as if using the arguments `i_list, std::forward<Args>(args)`. This constructor is `constexpr` if the `T` constructor used is `constexpr`. It doesn't participate in overload resolution unless `is_constructible_v<T, initializer_list<U>&, Args&&...>` is true.
+Direct initializes the contained value as if using the arguments `i_list, std::forward<Args>(args)`. This constructor is **`constexpr`** if the `T` constructor used is **`constexpr`**. It doesn't participate in overload resolution unless `is_constructible_v<T, initializer_list<U>&, Args&&...>` is true.
 
 `template <class U = T> explicit constexpr optional(U&& rhs);`
-Direct initializes the contained value as if using `std::forward<U>(v)`. This constructor is `constexpr` if the `T` constructor used is `constexpr`. It doesn't participate in overload resolution unless `is_constructible_v<T, U&&>` is true, and `is_same_v<remove_cvref_t<U>, in_place_t>` and `is_same_v<remove_cvref_t<U>, optional>` are false.
+Direct initializes the contained value as if using `std::forward<U>(v)`. This constructor is **`constexpr`** if the `T` constructor used is **`constexpr`**. It doesn't participate in overload resolution unless `is_constructible_v<T, U&&>` is true, and `is_same_v<remove_cvref_t<U>, in_place_t>` and `is_same_v<remove_cvref_t<U>, optional>` are false.
 
 `template <class U> explicit optional(const optional<U>& rhs);`
 If *rhs* contains a value, direct initializes the contained value from the contained value of the argument. It doesn't participate in overload resolution unless `is_constructible_v<T, const U&>` is true, and `is_constructible_v<T, optional<U>&>`, `is_constructible_v<T, optional<U>&&>`, `is_constructible_v<T, const optional<U>&>`, `is_constructible_v<T, const optional<U>&&>`, `is_convertible_v<optional<U>&, T>`, `is_convertible_v<optional<U>&&, T>`, `is_convertible_v<const optional<U>&, T>`, and `is_convertible_v<const optional<U>&&, T>` are all false.

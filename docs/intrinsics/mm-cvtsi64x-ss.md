@@ -23,14 +23,14 @@ __m128 _mm_cvtsi64x_ss(
 ### Parameters
 
 *a*\
-[in] An `__m128` structure containing four single-precision floating-point values.
+[in] An **`__m128`** structure containing four single-precision floating-point values.
 
 *b*\
 [in] A 64-bit integer to be converted into a floating-point value.
 
 ## Return value
 
-An `__m128` structure whose first floating-point value is the result of the conversion. The other three values are copied unchanged from *a*.
+An **`__m128`** structure whose first floating-point value is the result of the conversion. The other three values are copied unchanged from *a*.
 
 ## Requirements
 
@@ -42,7 +42,7 @@ An `__m128` structure whose first floating-point value is the result of the conv
 
 ## Remarks
 
-The `__m128` structure represents an XMM register, so the intrinsic allows the value *b* from system memory to be moved into an XMM register.
+The **`__m128`** structure represents an XMM register, so the intrinsic allows the value *b* from system memory to be moved into an XMM register.
 
 This routine is only available as an intrinsic.
 

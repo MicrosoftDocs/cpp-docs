@@ -10,7 +10,7 @@ ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
 > [!NOTE]
 > In C++17 and later, the **std::variant** class is a type-safe alternative for unions.
 
-A **union** is a user-defined type in which all members share the same memory location. This means that at any given time a union can contain no more than one object from its list of members. It also means that no matter how many members a union has, it always uses only enough memory to store the largest member.
+A **`union`** is a user-defined type in which all members share the same memory location. This means that at any given time a union can contain no more than one object from its list of members. It also means that no matter how many members a union has, it always uses only enough memory to store the largest member.
 
 Unions can be useful for conserving memory when you have lots of objects and/or limited memory. However they require extra care to use correctly because you are responsible for ensuring that you always access the last member that was written to. If any member types have a non-trivial constructor, then you must write additional code to explicitly construct and destroy that member. Before using a union, consider whether the problem you are trying to solve could be better expressed by using a base class and derived classes.
 
@@ -32,7 +32,7 @@ Members that the union can contain. See Remarks.
 
 ## Declaring a Union
 
-Begin the declaration of a union with the **union** keyword, and enclose the member list in curly braces:
+Begin the declaration of a union with the **`union`** keyword, and enclose the member list in curly braces:
 
 ```cpp
 // declaring_a_union.cpp
@@ -639,9 +639,9 @@ Names declared in an anonymous union are used directly, like nonmember variables
 
 In addition to the restrictions for named unions, anonymous unions are subject to these additional restrictions:
 
-- They must also be declared as **static** if declared in file or namespace scope.
+- They must also be declared as **`static`** if declared in file or namespace scope.
 
-- They can have only **public** members; **private** and **protected** members in anonymous unions generate errors.
+- They can have only **`public`** members; **`private`** and **`protected`** members in anonymous unions generate errors.
 
 - They cannot have member functions.
 

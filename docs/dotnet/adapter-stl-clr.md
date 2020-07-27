@@ -241,7 +241,7 @@ The constructor:
 
 `collection_adapter();`
 
-initializes the stored handle with `nullptr`.
+initializes the stored handle with **`nullptr`**.
 
 The constructor:
 

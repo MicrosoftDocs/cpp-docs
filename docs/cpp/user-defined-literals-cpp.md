@@ -35,7 +35,7 @@ ReturnType operator "" _r(const char*);              // Raw literal operator
 template<char...> ReturnType operator "" _t();       // Literal operator template
 ```
 
-The operator names in the previous example are placeholders for whatever name you provide; however, the leading underscore is required. (Only the Standard Library is allowed to define literals without the underscore.) The return type is where you customize the conversion or other operations done by the literal. Also, any of these operators can be defined as `constexpr`.
+The operator names in the previous example are placeholders for whatever name you provide; however, the leading underscore is required. (Only the Standard Library is allowed to define literals without the underscore.) The return type is where you customize the conversion or other operations done by the literal. Also, any of these operators can be defined as **`constexpr`**.
 
 ## Cooked literals
 
@@ -102,7 +102,7 @@ int main()
 }
 ```
 
-The literal number must use a decimal. Otherwise, the number would be interpreted as an integer, and the type wouldn't be compatible with the operator. For floating point input, the type must be **long double**, and for integral types it must be **long long**.
+The literal number must use a decimal. Otherwise, the number would be interpreted as an integer, and the type wouldn't be compatible with the operator. For floating point input, the type must be **`long double`**, and for integral types it must be **`long long`**.
 
 ## Raw literals
 

@@ -44,7 +44,7 @@ public:
 ### Parameters
 
 *RealType*\
-The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+The floating-point result type, defaults to **`double`**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 

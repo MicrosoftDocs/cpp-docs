@@ -23,7 +23,7 @@ The *code-page* is the ANSI/OEM code page that's associated with the locale. The
 
 If you use only the code page to specify the locale, the user's default language and country/region as reported by [GetUserDefaultLocaleName](/windows/win32/api/winnls/nf-winnls-getuserdefaultlocalename) are used. For example, if you specify `".1254"` (ANSI Turkish) as the locale for a user that's configured for English (United States), the locale that's stored is `English_United States.1254`. We do not recommend this form, because it could lead to inconsistent behavior.
 
-A *locale* argument value of `C` specifies the minimal ANSI conforming environment for C translation. The `C` locale assumes that every **char** data type is 1 byte and its value is always less than 256. If *locale* points to an empty string, the locale is the implementation-defined native environment.
+A *locale* argument value of `C` specifies the minimal ANSI conforming environment for C translation. The `C` locale assumes that every **`char`** data type is 1 byte and its value is always less than 256. If *locale* points to an empty string, the locale is the implementation-defined native environment.
 
 You can specify all of the locale categories at the same time for the `setlocale` and `_wsetlocale` functions by using the `LC_ALL` category. The categories can all be set to the same locale, or you can set each category individually by using a locale argument that has this form:
 

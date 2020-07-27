@@ -212,7 +212,7 @@ in Public_Class
 
 ## <a name="BKMK_Member_visibility"></a> Member visibility
 
-You can make access to a member of a public class from within the same assembly different than access to it from outside the assembly by using pairs of the access specifiers `public`, `protected`, and `private`
+You can make access to a member of a public class from within the same assembly different than access to it from outside the assembly by using pairs of the access specifiers **`public`**, **`protected`**, and **`private`**
 
 This table summarizes the effect of the various access specifiers:
 
@@ -799,7 +799,7 @@ If your type is being consumed by a client that's written in another language, t
 
 - On a call to `Dispose(void)` on the type.
 
-- If the type goes out of scope in a C# `using` statement.
+- If the type goes out of scope in a C# **`using`** statement.
 
 If you create an object of a reference type on the managed heap (not using stack semantics for reference types), use [try-finally](../cpp/try-finally-statement.md) syntax to ensure that an exception doesn't prevent the destructor from running.
 
@@ -820,7 +820,7 @@ int main() {
 }
 ```
 
-If your type has a destructor, the compiler generates a `Dispose` method that implements <xref:System.IDisposable>. If a type that's written in Visual C++ and has a destructor that's consumed from another language, calling `IDisposable::Dispose` on that type causes the type's destructor to be called. When the type is consumed from a Visual C++ client, you can't directly call `Dispose`; instead, call the destructor by using the `delete` operator.
+If your type has a destructor, the compiler generates a `Dispose` method that implements <xref:System.IDisposable>. If a type that's written in Visual C++ and has a destructor that's consumed from another language, calling `IDisposable::Dispose` on that type causes the type's destructor to be called. When the type is consumed from a Visual C++ client, you can't directly call `Dispose`; instead, call the destructor by using the **`delete`** operator.
 
 If your type has a finalizer, the compiler generates a `Finalize(void)` method that overrides <xref:System.Object.Finalize%2A>.
 

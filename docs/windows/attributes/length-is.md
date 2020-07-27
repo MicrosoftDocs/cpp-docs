@@ -34,7 +34,7 @@ See [first_is](first-is.md) for an example of how to specify a section of an arr
 
 |||
 |-|-|
-|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

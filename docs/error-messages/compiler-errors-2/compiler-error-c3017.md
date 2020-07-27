@@ -9,7 +9,7 @@ ms.assetid: 12ab2c2a-d0d2-4900-9cbf-39be0af590dd
 
 termination test in OpenMP 'for' statement has improper form
 
-A `for` loop in an OpenMP statement must be fully and explicitly specified.
+A **`for`** loop in an OpenMP statement must be fully and explicitly specified.
 
 The following sample generates C3017:
 

@@ -7,7 +7,7 @@ ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
 ---
 # strstreambuf Class
 
-Describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a **char** array object.
+Describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a **`char`** array object.
 
 ## Syntax
 
@@ -72,7 +72,7 @@ void freeze(bool _Freezeit = true);
 ### Parameters
 
 *_Freezeit*\
-A **bool** indicating whether you want the stream to be frozen.
+A **`bool`** indicating whether you want the stream to be frozen.
 
 ### Remarks
 

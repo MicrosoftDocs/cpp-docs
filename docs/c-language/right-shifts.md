@@ -11,7 +11,7 @@ Shifting a negative value to the right yields half the absolute value, rounded d
 
 Right shifts preserve the sign bit of signed integral types. When a signed integer shifts right, the most-significant bit remains set. For example, if 0xF0000000 is a signed **`int`**, a right shift produces 0xF8000000. Shifting a negative **`int`** right 32 times produces 0xFFFFFFFF.
 
-When an unsigned integer shifts right, the most-significant bit is cleared. For example, if 0xF000 is unsigned, the result is 0x7800. Shifting an `unsigned` or positive **`int`** right 32 times produces 0x00000000.
+When an unsigned integer shifts right, the most-significant bit is cleared. For example, if 0xF000 is unsigned, the result is 0x7800. Shifting an **`unsigned`** or positive **`int`** right 32 times produces 0x00000000.
 
 ## See also
 

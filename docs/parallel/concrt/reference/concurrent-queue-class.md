@@ -31,8 +31,8 @@ The type that represents the stored allocator object that encapsulates details a
 |Name|Description|
 |----------|-----------------|
 |`allocator_type`|A type that represents the allocator class for the concurrent queue.|
-|`const_iterator`|A type that represents a non-thread-safe `const` iterator over elements in a concurrent queue.|
-|`const_reference`|A type that provides a reference to a `const` element stored in a concurrent queue for reading and performing `const` operations.|
+|`const_iterator`|A type that represents a non-thread-safe **`const`** iterator over elements in a concurrent queue.|
+|`const_reference`|A type that provides a reference to a **`const`** element stored in a concurrent queue for reading and performing **`const`** operations.|
 |`difference_type`|A type that provides the signed distance between two elements in a concurrent queue.|
 |`iterator`|A type that represents a non-thread-safe iterator over the elements in a concurrent queue.|
 |`reference`|A type that provides a reference to an element stored in a concurrent queue.|
@@ -149,7 +149,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the concurrent queue was empty at the moment we looked, **false** otherwise.
+**`true`** if the concurrent queue was empty at the moment we looked, **`false`** otherwise.
 
 ### Remarks
 
@@ -201,11 +201,11 @@ A reference to a location to store the dequeued item.
 
 ### Return Value
 
-**true** if an item was successfully dequeued, **false** otherwise.
+**`true`** if an item was successfully dequeued, **`false`** otherwise.
 
 ### Remarks
 
-If an item was successfully dequeued, the parameter `_Dest` receives the dequeued value, the original value held in the queue is destroyed, and this function returns **true**. If there was no item to dequeue, this function returns **`false`** without blocking, and the contents of the `_Dest` parameter are undefined.
+If an item was successfully dequeued, the parameter `_Dest` receives the dequeued value, the original value held in the queue is destroyed, and this function returns **`true`**. If there was no item to dequeue, this function returns **`false`** without blocking, and the contents of the `_Dest` parameter are undefined.
 
 `try_pop` is concurrency-safe with respect to calls to the methods `push`, `try_pop`, and `empty`.
 

@@ -38,7 +38,7 @@ int main() {
 
 ## Example
 
-This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: missing `typename` keyword.
+This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: missing **`typename`** keyword.
 
 The following sample compiles in Visual Studio .NET 2002 but will fail in Visual Studio .NET 2003:
 

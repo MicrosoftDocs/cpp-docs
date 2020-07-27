@@ -23,7 +23,7 @@ The following example generates an error message for the line that declares `j`.
 
 To determine the cause of the error, examine not only the line that's listed in the error message, but also the lines above it. If examining the lines yields no clue about the problem, try commenting out the line that's listed in the error message and perhaps several lines above it.
 
-If the error message occurs on a symbol that immediately follows a `typedef` variable, make sure that the variable is defined in the source code.
+If the error message occurs on a symbol that immediately follows a **`typedef`** variable, make sure that the variable is defined in the source code.
 
 C2059 is raised when a preprocessor symbol name is re-used as an identifier. In the following example, the compiler sees `DIGITS.ONE` as the number 1, which is not valid as an enum element name:
 
@@ -103,7 +103,7 @@ namespace A  {
 }
 ```
 
-C2059 can occur when an operator that can qualify a name (`::`, `->`, and `.`) must be followed by the keyword `template`, as shown in this example:
+C2059 can occur when an operator that can qualify a name (`::`, `->`, and `.`) must be followed by the keyword **`template`**, as shown in this example:
 
 ```cpp
 template <typename T> struct Allocator {
@@ -117,7 +117,7 @@ template <typename X, typename AY> struct Container {
 };
 ```
 
-By default, C++ assumes that `AY::Rebind` isn't a template; therefore, the following `<` is interpreted as a less-than sign.  You must tell the compiler explicitly that `Rebind` is a template so that it can correctly parse the angle bracket. To correct this error, use the `template` keyword on the dependent type's name, as shown here:
+By default, C++ assumes that `AY::Rebind` isn't a template; therefore, the following `<` is interpreted as a less-than sign.  You must tell the compiler explicitly that `Rebind` is a template so that it can correctly parse the angle bracket. To correct this error, use the **`template`** keyword on the dependent type's name, as shown here:
 
 ```cpp
 template <typename T> struct Allocator {

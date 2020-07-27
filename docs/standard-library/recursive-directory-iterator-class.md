@@ -24,7 +24,7 @@ The class template stores:
 
 1. an object of type `directory_entry` called `myentry` here, which represents the current filename in the directory sequence
 
-1. an object of type **bool**, called `no_push` here, which records whether recursive descent into subdirectories is disabled
+1. an object of type **`bool`**, called `no_push` here, which records whether recursive descent into subdirectories is disabled
 
 1. an object of type `directory_options`, called `myoptions` here, which records the options established at construction
 
@@ -52,7 +52,7 @@ will call visit with the arguments `path("abc/def/ghi")` and `path("abc/jkl")`. 
 |Member function|Description|
 |-|-|
 |[depth](#depth)|Returns `mystack.size() - 1`, so `pval` is at depth zero.|
-|[disable_recursion_pending](#disable_recursion_pending)|Stores **true** in `no_push`.|
+|[disable_recursion_pending](#disable_recursion_pending)|Stores **`true`** in `no_push`.|
 |[increment](#increment)|Advances to the next filename in sequence.|
 |[options](#options)|Returns `myoptions`.|
 |[pop](#pop)|Returns the next object.|
@@ -64,7 +64,7 @@ will call visit with the arguments `path("abc/def/ghi")` and `path("abc/jkl")`. 
 |-|-|
 |[operator!=](#op_neq)|Returns `!(*this == right)`.|
 |[operator=](#op_as)|The defaulted member assignment operators behave as expected.|
-|[operator==](#op_eq)|Returns **true** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.|
+|[operator==](#op_eq)|Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.|
 |[operator*](#op_multiply)|Returns `myentry`.|
 |[operator->](#op_cast)|Returns `&**this`.|
 |[operator++](#op_increment)|Increments the `recursive_directory_iterator`.|
@@ -85,7 +85,7 @@ int depth() const;
 
 ## <a name="disable_recursion_pending"></a> recursive_directory_iterator::disable_recursion_pending
 
-Stores **true** in `no_push`.
+Stores **`true`** in `no_push`.
 
 ```cpp
 void disable_recursion_pending();
@@ -137,7 +137,7 @@ The [recursive_directory_iterator](../standard-library/recursive-directory-itera
 
 ## <a name="op_eq"></a> recursive_directory_iterator::operator==
 
-Returns **true** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.
+Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.
 
 ```cpp
 bool operator==(const recursive_directory_iterator& right) const;
@@ -247,7 +247,7 @@ The `recursive_directory_iterator` of which the constructed `recursive_directory
 
 ### Remarks
 
-The first constructor produces an end-of-sequence iterator. The second and third constructors store **false** in `no_push` and `directory_options::none` in `myoptions`, then attempt to open and read *pval* as a directory. If successful, they initialize `mystack` and `myentry` to designate the first non-directory filename in the nested sequence; otherwise they produce an end-of-sequence iterator.
+The first constructor produces an end-of-sequence iterator. The second and third constructors store **`false`** in `no_push` and `directory_options::none` in `myoptions`, then attempt to open and read *pval* as a directory. If successful, they initialize `mystack` and `myentry` to designate the first non-directory filename in the nested sequence; otherwise they produce an end-of-sequence iterator.
 
 The fourth and fifth constructors behave the same as the second and third, except that they first store *opts* in `myoptions`. The defaulted construtors behave as expected.
 

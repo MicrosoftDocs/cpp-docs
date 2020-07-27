@@ -6,7 +6,7 @@ ms.assetid: 31d63524-0e8c-419f-b87c-061f4c0ea470
 ---
 # Restrictions on exception handlers
 
-The principal limitation to using exception handlers in code is that you cannot use a **goto** statement to jump into a **__try** statement block. Instead, you must enter the statement block through normal flow of control. You can jump out of a **__try** statement block and nest exception handlers as you choose.
+The principal limitation to using exception handlers in code is that you cannot use a **`goto`** statement to jump into a **__try** statement block. Instead, you must enter the statement block through normal flow of control. You can jump out of a **__try** statement block and nest exception handlers as you choose.
 
 ## See also
 

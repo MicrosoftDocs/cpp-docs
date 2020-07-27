@@ -7,9 +7,9 @@ ms.assetid: 5dfd07ab-351d-49c9-b54e-f0a104776ab8
 ---
 # Compiler Error C2494
 
-'keyword' cannot be called from within a filter expression or __finally/finally block
+> '*keyword*' cannot be called from within a filter expression or __finally/finally block
 
-You cannot use `keyword` in a `__finally` or finally block.
+You cannot use *keyword* in a **`__finally`** or **`finally`** block.
 
 The following sample generates C2494:
 

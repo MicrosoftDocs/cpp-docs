@@ -55,7 +55,7 @@ void main()
 
 ## <a name="as_writable_bytes"></a>`as_writable_bytes`
 
-If `T` isn't `const`, gets a read/write view of the raw byte representation of the elements in the span.
+If `T` isn't **`const`**, gets a read/write view of the raw byte representation of the elements in the span.
 
 ```cpp
 template <class T, size_t Extent>

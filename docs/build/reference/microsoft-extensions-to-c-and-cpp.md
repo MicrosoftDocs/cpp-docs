@@ -146,7 +146,7 @@ The C compiler supports the following data declaration and definition features.
    char arr[5] = {'a', 'b', "cde"};
    ```
 
-- Bit fields that have base types other than **unsigned int** or **signed int**.
+- Bit fields that have base types other than **`unsigned int`** or **`signed int`**.
 
 - Declarators that don't have a type:
 

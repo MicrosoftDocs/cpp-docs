@@ -14,7 +14,7 @@ An *incomplete type* is a type that describes an identifier but lacks informatio
 
 - An array type whose dimension you have not yet specified.
 
-The **void** type is an incomplete type that cannot be completed. To complete an incomplete type, specify the missing information. The following examples show how to create and complete the incomplete types.
+The **`void`** type is an incomplete type that cannot be completed. To complete an incomplete type, specify the missing information. The following examples show how to create and complete the incomplete types.
 
 - To create an incomplete structure type, declare a structure type without specifying its members. In this example, the `ps` pointer points to an incomplete structure type called `student`.
 

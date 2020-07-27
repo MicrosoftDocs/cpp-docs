@@ -87,7 +87,7 @@ int main()
 
 ### `reinterpret_cast` from an overloaded function
 
-The argument to `reinterpret_cast` isn't one of the contexts in which the address of an overloaded function is permitted. The following code compiles without errors in Visual Studio 2017, but in Visual Studio 2019 it raises error C2440: `cannot convert from 'overloaded-function' to 'fp'`:
+The argument to **`reinterpret_cast`** isn't one of the contexts in which the address of an overloaded function is permitted. The following code compiles without errors in Visual Studio 2017, but in Visual Studio 2019 it raises error C2440: `cannot convert from 'overloaded-function' to 'fp'`:
 
 ```cpp
 int f(int) { return 1; }
@@ -115,7 +115,7 @@ int main()
 
 ### Lambda closures
 
-In C++14, lambda closure types aren't literals. The primary consequence of this rule is that a lambda may not be assigned to a **constexpr** variable. The following code compiles without errors in Visual Studio 2017, but in Visual Studio 2019 it raises error C2127: `'l': illegal initialization of 'constexpr' entity with a non-constant expression`:
+In C++14, lambda closure types aren't literals. The primary consequence of this rule is that a lambda may not be assigned to a **`constexpr`** variable. The following code compiles without errors in Visual Studio 2017, but in Visual Studio 2019 it raises error C2127: `'l': illegal initialization of 'constexpr' entity with a non-constant expression`:
 
 ```cpp
 int main()
@@ -124,7 +124,7 @@ int main()
 }
 ```
 
-To avoid the error, either remove the **constexpr** qualifier, or else change the conformance mode to `/std:c++17`.
+To avoid the error, either remove the **`constexpr`** qualifier, or else change the conformance mode to `/std:c++17`.
 
 ### `std::create_directory` failure codes
 
@@ -140,7 +140,7 @@ New parallel versions of `is_sorted`, `is_sorted_until`, `is_partitioned`, `set_
 
 ### atomic initialization
 
-[P0883 "Fixing atomic initialization"](https://wg21.link/p0883r1) changes `std::atomic` to value-initialize the contained T rather than default-initializing it. The fix is enabled when using Clang/LLVM with the Microsoft standard library. It's currently disabled for the Microsoft C++ compiler, as a workaround for a bug in **constexpr** processing.
+[P0883 "Fixing atomic initialization"](https://wg21.link/p0883r1) changes `std::atomic` to value-initialize the contained T rather than default-initializing it. The fix is enabled when using Clang/LLVM with the Microsoft standard library. It's currently disabled for the Microsoft C++ compiler, as a workaround for a bug in **`constexpr`** processing.
 
 ### `remove_cvref` and `remove_cvref_t`
 
@@ -158,7 +158,7 @@ Implemented the `remove_cvref` and `remove_cvref_t` type traits from [P0550](htt
 
 ### char8_t
 
-[P0482r6](https://wg21.link/p0482r6). C++20 adds a new character type that is used to represent UTF-8 code units. `u8` string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C standard in [N2231](https://wg14.link/n2231). Suggestions for `char8_t` backward compatibility remediation are given in [P1423r3](https://wg21.link/p1423r3). The Microsoft C++ compiler adds support for `char8_t` in Visual Studio 2019 version 16.1 when you specify the **`/Zc:char8_t`** compiler option. In the future, it will be supported with [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **`/Zc:char8_t-`**. The EDG compiler that powers IntelliSense doesn't yet support it, so you'll see spurious IntelliSense-only errors that don't impact the actual compilation.
+[P0482r6](https://wg21.link/p0482r6). C++20 adds a new character type that is used to represent UTF-8 code units. `u8` string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C standard in [N2231](https://wg14.link/n2231). Suggestions for **`char8_t`** backward compatibility remediation are given in [P1423r3](https://wg21.link/p1423r3). The Microsoft C++ compiler adds support for **`char8_t`** in Visual Studio 2019 version 16.1 when you specify the **`/Zc:char8_t`** compiler option. In the future, it will be supported with [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **`/Zc:char8_t-`**. The EDG compiler that powers IntelliSense doesn't yet support it, so you'll see spurious IntelliSense-only errors that don't impact the actual compilation.
 
 #### Example
 
@@ -237,7 +237,7 @@ void f() {
 
 ### noexcept constexpr functions
 
-Constexpr functions are no longer considered **noexcept** by default when used in a constant expression. This behavior change comes from the resolution of [CWG 1351](https://wg21.link/cwg1351) and is enabled in [/permissive-](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
+Constexpr functions are no longer considered **`noexcept`** by default when used in a constant expression. This behavior change comes from the resolution of [CWG 1351](https://wg21.link/cwg1351) and is enabled in [/permissive-](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
 
 ```cpp
 constexpr int f() { return 0; }
@@ -247,7 +247,7 @@ int main() {
 }
 ```
 
-To fix the error, add the **noexcept** expression to the function declaration:
+To fix the error, add the **`noexcept`** expression to the function declaration:
 
 ```cpp
 constexpr int f() noexcept { return 0; }
@@ -399,7 +399,7 @@ char x[42];
 std::cin >> x;
 ```
 
-### New keywords **`requires`** and **`concept`**
+### New keywords `requires` and `concept`
 
 New keywords **`requires`** and **`concept`** have been added to the Microsoft C++ compiler. If you attempt to use either one as an identifier in [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the compiler will raise C2059: `syntax error`.
 
@@ -500,7 +500,7 @@ int* f(bool* p) {
 }
 ```
 
-To fix the error, use **nullptr** instead of **false**. A literal 0 is still allowed:
+To fix the error, use **`nullptr`** instead of **`false`**. A literal 0 is still allowed:
 
 ```cpp
 int* f(bool* p) {
@@ -564,7 +564,7 @@ void f(T (&buffer)[Size], int& size_read)
 
 ### User-provided specializations of type traits
 
-In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified `type_traits` templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error C2338.
+In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified `type_traits` templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the **`static_assert`** fails with error C2338.
 
 ```cpp
 #include <type_traits>
@@ -596,7 +596,7 @@ static_assert(my_is_fundamental<S>::value, "fail");
 
 The MSVC compiler now implements the following changes to comparison operators per [P1630R1](https://wg21.link/p1630r1) when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is enabled:
 
-The compiler no longer rewrites expressions using `operator==` if they involve a return type that isn't a **bool**. The following code now produces error C2088: `'!=': illegal for struct`:
+The compiler no longer rewrites expressions using `operator==` if they involve a return type that isn't a **`bool`**. The following code now produces error C2088: `'!=': illegal for struct`:
 
 ```cpp
 struct U {
@@ -886,9 +886,9 @@ U u{ 0 };
 
 ### Standard library streams reject insertions of mis-encoded character types
 
-Traditionally, inserting a **`wchar_t`** into a `std::ostream`, and inserting `char16_t` or `char32_t` into a `std::ostream` or `std::wostream`, outputs its integral value. Inserting pointers to those character types outputs the pointer value. Programmers don't find either case intuitive. They often expect the standard library to transcode the character or null-terminated character string instead, and to output the result.
+Traditionally, inserting a **`wchar_t`** into a `std::ostream`, and inserting **`char16_t`** or **`char32_t`** into a `std::ostream` or `std::wostream`, outputs its integral value. Inserting pointers to those character types outputs the pointer value. Programmers don't find either case intuitive. They often expect the standard library to transcode the character or null-terminated character string instead, and to output the result.
 
-The C++20 proposal [P1423R3](https://wg21.link/p1423r3) adds deleted stream insertion operator overloads for these combinations of stream and character or character pointer types. Under **`/std:c++latest`**, the overloads make these insertions ill-formed, instead of behaving in what is likely an unintended manner. The compiler raises error C2280 when one is found. You can define the "escape hatch" macro `_HAS_STREAM_INSERTION_OPERATORS_DELETED_IN_CXX20` to `1` to restore the old behavior. (The proposal also deletes stream insertion operators for `char8_t`. Our standard library implemented similar overloads when we added `char8_t` support, so the "wrong" behavior has never been available for `char8_t`.)
+The C++20 proposal [P1423R3](https://wg21.link/p1423r3) adds deleted stream insertion operator overloads for these combinations of stream and character or character pointer types. Under **`/std:c++latest`**, the overloads make these insertions ill-formed, instead of behaving in what is likely an unintended manner. The compiler raises error C2280 when one is found. You can define the "escape hatch" macro `_HAS_STREAM_INSERTION_OPERATORS_DELETED_IN_CXX20` to `1` to restore the old behavior. (The proposal also deletes stream insertion operators for **`char8_t`**. Our standard library implemented similar overloads when we added **`char8_t`** support, so the "wrong" behavior has never been available for **`char8_t`**.)
 
 This sample shows the behavior with this change:
 
@@ -995,14 +995,14 @@ int main() {
 
 ### Unnamed classes in `typedef` declarations
 
-Starting in Visual Studio 2019 version 16.6, the behavior of `typedef` declarations has been restricted to conform to [P1766R1](https://wg21.link/P1766R1). With this update, unnamed classes within a `typedef` declaration can't have any members other than:
+Starting in Visual Studio 2019 version 16.6, the behavior of **`typedef`** declarations has been restricted to conform to [P1766R1](https://wg21.link/P1766R1). With this update, unnamed classes within a **`typedef`** declaration can't have any members other than:
 
 - non-static data members,
 - member classes,
 - member enumerations,
 - and default member initializers.
 
-The same restrictions are applied recursively to each nested class. The restriction is meant to ensure the simplicity of structs that have `typedef` names for linkage purposes. They must be simple enough that no linkage calculations are necessary before the compiler gets to the `typedef` name for linkage.
+The same restrictions are applied recursively to each nested class. The restriction is meant to ensure the simplicity of structs that have **`typedef`** names for linkage purposes. They must be simple enough that no linkage calculations are necessary before the compiler gets to the **`typedef`** name for linkage.
 
 This change affects all standards modes of the compiler. In default (**`/std:c++14`**) and  **`/std:c++17`** modes, the compiler emits warning C5208 for non-conforming code. If **`/permissive-`** is specified, the compiler emits warning C5208 as an error under **`/std:c++14`** and emits error C7626 under **`/std:c++17`**. The compiler emits error C7626 for non-conforming code when **`/std:c++latest`** is specified.
 
@@ -1057,7 +1057,7 @@ The compiler emits error C2668 because both overloads match this argument list. 
 
 ### Reinterpret_cast in a constexpr function
 
-A **reinterpret_cast** is illegal in a **constexpr** function. The Microsoft C++ compiler would previously reject **reinterpret_cast** only if it were used in a **constexpr** context. In Visual Studio 2019, in all language standards modes, the compiler correctly diagnoses a **reinterpret_cast** in the definition of a **constexpr** function. The following code now produces C3615: `constexpr function 'f' cannot result in a constant expression`.
+A **`reinterpret_cast`** is illegal in a **`constexpr`** function. The Microsoft C++ compiler would previously reject **`reinterpret_cast`** only if it were used in a **`constexpr`** context. In Visual Studio 2019, in all language standards modes, the compiler correctly diagnoses a **`reinterpret_cast`** in the definition of a **`constexpr`** function. The following code now produces C3615: `constexpr function 'f' cannot result in a constant expression`.
 
 ```cpp
 long long i = 0;
@@ -1066,11 +1066,11 @@ constexpr void f() {
 }
 ```
 
-To avoid the error, remove the **constexpr** modifier from the function declaration.
+To avoid the error, remove the **`constexpr`** modifier from the function declaration.
 
 ### Correct diagnostics for basic_string range constructor
 
-In Visual Studio 2019, the `basic_string` range constructor no longer suppresses compiler diagnostics with `static_cast`. The following code compiles without warnings in Visual Studio 2017, despite the possible loss of data from **`wchar_t`** to **char** when initializing `out`:
+In Visual Studio 2019, the `basic_string` range constructor no longer suppresses compiler diagnostics with **`static_cast`**. The following code compiles without warnings in Visual Studio 2017, despite the possible loss of data from **`wchar_t`** to **`char`** when initializing `out`:
 
 ```cpp
 std::wstring ws = /* … */;
@@ -1105,7 +1105,7 @@ To avoid the error in this example, use the operator with the ToString() method:
 
 ### Initializers for inline static data members
 
-Invalid member accesses within **inline** and **static constexpr** initializers are now correctly detected. The following example compiles without error in Visual Studio 2017, but in Visual Studio 2019 under **`/std:c++17`** mode it raises error C2248: `cannot access private member declared in class 'X'`.
+Invalid member accesses within **`inline`** and **static constexpr** initializers are now correctly detected. The following example compiles without error in Visual Studio 2017, but in Visual Studio 2019 under **`/std:c++17`** mode it raises error C2248: `cannot access private member declared in class 'X'`.
 
 ```cpp
 struct X
@@ -1132,7 +1132,7 @@ struct X
 
 ### C4800 reinstated
 
-MSVC used to have a performance warning C4800 about implicit conversion to **bool**. It was too noisy and couldn't be suppressed, leading us to remove it in Visual Studio 2017. However, over the lifecycle of Visual Studio 2017 we got lots of feedback on the useful cases it was solving. We bring back in Visual Studio 2019 a carefully tailored C4800, along with the explanatory C4165. Both of these warnings are easy to suppress: either by using an explicit cast, or by comparison to 0 of the appropriate type. C4800 is an off-by-default level 4 warning, and C4165 is an off-by-default level 3 warning. Both are discoverable by using the `/Wall` compiler option.
+MSVC used to have a performance warning C4800 about implicit conversion to **`bool`**. It was too noisy and couldn't be suppressed, leading us to remove it in Visual Studio 2017. However, over the lifecycle of Visual Studio 2017 we got lots of feedback on the useful cases it was solving. We bring back in Visual Studio 2019 a carefully tailored C4800, along with the explanatory C4165. Both of these warnings are easy to suppress: either by using an explicit cast, or by comparison to 0 of the appropriate type. C4800 is an off-by-default level 4 warning, and C4165 is an off-by-default level 3 warning. Both are discoverable by using the `/Wall` compiler option.
 
 The following example raises C4800 and C4165 under `/Wall`:
 
@@ -1205,7 +1205,7 @@ int main()
 }
 ```
 
-To avoid the error, add the **typename** keyword to the declaration of `a`: `typename T::Type a;`.
+To avoid the error, add the **`typename`** keyword to the declaration of `a`: `typename T::Type a;`.
 
 ### Inline assembly code isn't supported in a lambda expression
 
@@ -1282,7 +1282,7 @@ The standard library's macro replacing a keyword enforcement \<xkeycheck.h> was 
 
 ### Correct warning for narrowing string conversions
 
-Removed a spurious `static_cast` from `std::string` that wasn't called for by the standard, and that accidentally suppressed C4244 narrowing warnings. Attempts to call `std::string::string(const wchar_t*, const wchar_t*)` now properly emit C4244 `narrowing a wchar_t into a char`.
+Removed a spurious **`static_cast`** from `std::string` that wasn't called for by the standard, and that accidentally suppressed C4244 narrowing warnings. Attempts to call `std::string::string(const wchar_t*, const wchar_t*)` now properly emit C4244 `narrowing a wchar_t into a char`.
 
 ### Various \<filesystem> correctness fixes
 
@@ -1350,7 +1350,7 @@ Fixed a minor type traits bug, where `add_const_t` and related functions are sup
 
 ### Const comparators for associative containers
 
-Code for search and insertion in [set](../standard-library/set-class.md), [map](../standard-library/map-class.md), [multiset](../standard-library/multiset-class.md), and [multimap](../standard-library/multimap-class.md) has been merged for reduced code size. Insertion operations now call the less-than comparison on a **const** comparison functor, in the same way that search operations have done previously. The following code compiles in Visual Studio 2019 version 16.1 and earlier, but raises C3848 in Visual Studio 2019 version 16.2:
+Code for search and insertion in [set](../standard-library/set-class.md), [map](../standard-library/map-class.md), [multiset](../standard-library/multiset-class.md), and [multimap](../standard-library/multimap-class.md) has been merged for reduced code size. Insertion operations now call the less-than comparison on a **`const`** comparison functor, in the same way that search operations have done previously. The following code compiles in Visual Studio 2019 version 16.1 and earlier, but raises C3848 in Visual Studio 2019 version 16.2:
 
 ```cpp
 #include <iostream>
@@ -1385,7 +1385,7 @@ int main() {
 }
 ```
 
-To avoid the error, make the comparison operator **const**:
+To avoid the error, make the comparison operator **`const`**:
 
 ```cpp
 struct Comparer  {
@@ -1402,23 +1402,23 @@ struct Comparer  {
 
 ## <a name="improvements_150"></a> Conformance improvements in Visual Studio 2017 RTW (version 15.0)
 
-With support for generalized **constexpr** and non-static data member initialization (NSDMI) for aggregates, the Microsoft C++ compiler in Visual Studio 2017 is now complete for features added in the C++14 standard. However, the compiler still lacks a few features from the C++11 and C++98 standards. See [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
+With support for generalized **`constexpr`** and non-static data member initialization (NSDMI) for aggregates, the Microsoft C++ compiler in Visual Studio 2017 is now complete for features added in the C++14 standard. However, the compiler still lacks a few features from the C++11 and C++98 standards. See [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
 ### C++11: Expression SFINAE support in more libraries
 
-The compiler continues to improve its support for expression SFINAE. It's required for template argument deduction and substitution where **decltype** and **constexpr** expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in Visual Studio 2017 RC](https://devblogs.microsoft.com/cppblog/expression-sfinae-improvements-in-vs-2015-update-3/).
+The compiler continues to improve its support for expression SFINAE. It's required for template argument deduction and substitution where **`decltype`** and **`constexpr`** expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in Visual Studio 2017 RC](https://devblogs.microsoft.com/cppblog/expression-sfinae-improvements-in-vs-2015-update-3/).
 
 ### C++14: NSDMI for Aggregates
 
 An aggregate is an array or a class that has no user-provided constructor, no private or protected non-static data members, no base classes, and no virtual functions. Beginning in C++14, aggregates may contain member initializers. For more information, see [Member initializers and aggregates](https://wg21.link/n3605).
 
-### C++14: Extended **constexpr**
+### C++14: Extended `constexpr`
 
-Expressions declared as **constexpr** are now allowed to contain certain kinds of declarations, if and switch statements, loop statements, and mutation of objects whose lifetime began within the constexpr expression evaluation. There's no longer a requirement that a **constexpr** non-static member function must be implicitly **const**. For more information, see [Relaxing constraints on constexpr functions](https://wg21.link/n3652).
+Expressions declared as **`constexpr`** are now allowed to contain certain kinds of declarations, if and switch statements, loop statements, and mutation of objects whose lifetime began within the constexpr expression evaluation. There's no longer a requirement that a **`constexpr`** non-static member function must be implicitly **`const`**. For more information, see [Relaxing constraints on constexpr functions](https://wg21.link/n3652).
 
 ### C++17: Terse `static_assert`
 
-the message parameter for `static_assert` is optional. For more information, see [Extending static_assert, v2](https://wg21.link/n3928).
+the message parameter for **`static_assert`** is optional. For more information, see [Extending static_assert, v2](https://wg21.link/n3928).
 
 ### C++17: `[[fallthrough]]` attribute
 
@@ -1430,17 +1430,17 @@ Range-based for loops no longer require that `begin()` and `end()` return object
 
 ## <a name="improvements_153"></a> Conformance improvements in 15.3
 
-### constexpr lambdas
+### `constexpr` lambdas
 
-Lambda expressions may now be used in constant expressions. For more information, see [constexpr lambda expressions in C++](../cpp/lambda-expressions-constexpr.md).
+Lambda expressions may now be used in constant expressions. For more information, see [`constexpr` lambda expressions in C++](../cpp/lambda-expressions-constexpr.md).
 
-### **if constexpr** in function templates
+### `if constexpr` in function templates
 
-A function template may contain **if constexpr** statements to enable compile-time branching. For more information, see [if constexpr statements](../cpp/if-else-statement-cpp.md#if_constexpr).
+A function template may contain **`if constexpr`** statements to enable compile-time branching. For more information, see [`if constexpr` statements](../cpp/if-else-statement-cpp.md#if_constexpr).
 
 ### Selection statements with initializers
 
-An **if** statement may include an initializer that introduces a variable at block scope within the statement itself. For more information, see [if statements with initializer](../cpp/if-else-statement-cpp.md#if_with_init).
+An **`if`** statement may include an initializer that introduces a variable at block scope within the statement itself. For more information, see [`if` statements with initializer](../cpp/if-else-statement-cpp.md#if_with_init).
 
 ### `[[maybe_unused]]` and `[[nodiscard]]` attributes
 
@@ -1454,7 +1454,7 @@ New syntax to enable only a single namespace identifier in an attribute list. Fo
 
 It's now possible in a single declaration to store a value with individual names for its components, when the value is an array, a `std::tuple` or `std::pair`, or has all public non-static data members. For more information, see [Structured Bindings](https://wg21.link/p0144r0) and [Returning multiple values from a function](../cpp/functions-cpp.md#multi_val).
 
-### Construction rules for **enum class** values
+### Construction rules for `enum class` values
 
 There's now an implicit and non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself. The conversion is available when its definition doesn't introduce an enumerator, and when the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values](https://wg21.link/p0138r2) and [Enumerations](../cpp/enumerations-cpp.md#no_enumerators).
 
@@ -1462,21 +1462,21 @@ There's now an implicit and non-narrowing conversion from a scoped enumeration's
 
 The **`*this`** object in a lambda expression may now be captured by value. This change enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as \[=,\*this\]](https://wg21.link/p0018r3).
 
-### Removing `operator++` for **bool**
+### Removing `operator++` for `bool`
 
-`operator++` is no longer supported on **bool** types. For more information, see [Remove Deprecated operator++(bool)](https://wg21.link/p0002r1).
+`operator++` is no longer supported on **`bool`** types. For more information, see [Remove Deprecated operator++(bool)](https://wg21.link/p0002r1).
 
-### Removing deprecated **register** keyword
+### Removing deprecated `register` keyword
 
-The **register** keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the register Keyword](https://wg21.link/p0001r1).
+The **`register`** keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the `register` Keyword](https://wg21.link/p0001r1).
 
 ## <a name="improvements_155"></a> Conformance improvements in 15.5
 
 Features marked with \[14] are available unconditionally even in **`/std:c++14`** mode.
 
-### New compiler switch for **extern constexpr**
+### New compiler switch for `extern constexpr`
 
-In earlier versions of Visual Studio, the compiler always gave a **constexpr** variable internal linkage, even when the variable was marked **extern**. In Visual Studio 2017 version 15.5, a new compiler switch, [`/Zc:externConstexpr`](../build/reference/zc-externconstexpr.md), enables correct and standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
+In earlier versions of Visual Studio, the compiler always gave a **`constexpr`** variable internal linkage, even when the variable was marked **`extern`**. In Visual Studio 2017 version 15.5, a new compiler switch, [`/Zc:externConstexpr`](../build/reference/zc-externconstexpr.md), enables correct and standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
 
 ### Removing dynamic exception specifications
 
@@ -1532,7 +1532,7 @@ Improved conformance in `<iostream>` by avoiding a non-standard extension (in-cl
 
 The standard library now uses variable templates internally.
 
-The standard library was updated in response to C++17 compiler changes. Updates include the addition of **noexcept** in the type system, and the removal of dynamic-exception-specifications.
+The standard library was updated in response to C++17 compiler changes. Updates include the addition of **`noexcept`** in the type system, and the removal of dynamic-exception-specifications.
 
 ## <a name="improvements_156"></a> Conformance improvements in 15.6
 
@@ -1548,7 +1548,7 @@ The standard library was updated in response to C++17 compiler changes. Updates 
 
 ### C++17: Rewording inheriting constructors
 
-[P0136R1](https://wg21.link/p0136r1) specifies that a **using** declaration that names a constructor now makes the corresponding base class constructors visible to initializations of the derived class, rather than declaring additional derived class constructors. This rewording is a change from C++14. In Visual Studio 2017 version 15.7 and later, in **`/std:c++17`** mode, code that is valid in C++14 and uses inheriting constructors may not be valid, or may have different semantics.
+[P0136R1](https://wg21.link/p0136r1) specifies that a **`using`** declaration that names a constructor now makes the corresponding base class constructors visible to initializations of the derived class, rather than declaring additional derived class constructors. This rewording is a change from C++14. In Visual Studio 2017 version 15.7 and later, in **`/std:c++17`** mode, code that is valid in C++14 and uses inheriting constructors may not be valid, or may have different semantics.
 
 The following example shows C++14 behavior:
 
@@ -1634,7 +1634,7 @@ Derived d2 {}; // error C2248: 'Base::Base': cannot access
 
 [P0127R2](https://wg21.link/p0127r2)
 
-In **`/std:c++17`** mode, the compiler can now deduce the type of a non-type template argument that is declared with **auto**:
+In **`/std:c++17`** mode, the compiler can now deduce the type of a non-type template argument that is declared with **`auto`**:
 
 ```cpp
 template <auto x> constexpr auto constant = x;
@@ -1686,7 +1686,7 @@ void sample(A<0> *p)
 
 ### C++17: `hypot(x, y, z)`
 
-[P0030R1](https://wg21.link/p0030r1) Adds three new overloads to `std::hypot`, for types **float**, **double**, and **long double**, each of which has three input parameters.
+[P0030R1](https://wg21.link/p0030r1) Adds three new overloads to `std::hypot`, for types **`float`**, **`double`**, and **`long double`**, each of which has three input parameters.
 
 ### C++17: \<filesystem>
 
@@ -1704,7 +1704,7 @@ void sample(A<0> *p)
 
 [P0682R1](https://wg21.link/p0682r1) Move the new elementary string conversion functions from P0067R5 into a new header \<charconv> and make other improvements, including changing error handling to use `std::errc` instead of `std::error_code`.
 
-### C++17: **constexpr** for `char_traits` (partial)
+### C++17: `constexpr` for `char_traits` (partial)
 
 [P0426R1](https://wg21.link/p0426r1) Changes to `std::traits_type` member functions `length`, `compare`, and `find` to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
@@ -1839,7 +1839,7 @@ int main()
 }
 ```
 
-### **constexpr**
+### `constexpr`
 
 Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation isn't valid in a constexpr context. The following code compiles in Visual Studio 2015, but not in Visual Studio 2017, where it raises C3615 `constexpr function 'f' cannot result in a constant expression`:
 
@@ -1856,7 +1856,7 @@ constexpr bool f(const array<1> &arr)
 }
 ```
 
-To correct the error, either declare the `array::size()` function as **constexpr** or remove the **constexpr** qualifier from `f`.
+To correct the error, either declare the `array::size()` function as **`constexpr`** or remove the **`constexpr`** qualifier from `f`.
 
 ### Class types passed to variadic functions
 
@@ -1925,7 +1925,7 @@ struct S
 int i = (const S)0; // error C2440
 ```
 
-To correct the error, declare `operator int()` as **const**.
+To correct the error, declare `operator int()` as **`const`**.
 
 ### Access checking on qualified names in templates
 
@@ -1962,7 +1962,7 @@ template <class T, ListNodeMember M> class ListHead; // C2955: 'ListNodeMember':
 
 ### Expression-SFINAE
 
-To support expression-SFINAE, the compiler now parses **decltype** arguments when the templates are declared rather than instantiated. Consequently, if a non-dependent specialization is found in the decltype argument, it's not deferred to instantiation-time. It's processed immediately, and any resulting errors are diagnosed at that time.
+To support expression-SFINAE, the compiler now parses **`decltype`** arguments when the templates are declared rather than instantiated. Consequently, if a non-dependent specialization is found in the decltype argument, it's not deferred to instantiation-time. It's processed immediately, and any resulting errors are diagnosed at that time.
 
 The following example shows such a compiler error that is raised at the point of declaration:
 
@@ -2011,7 +2011,7 @@ value struct V
 
 ### Default indexers (C++/CLI)
 
-In Visual Studio 2015 and earlier, the compiler in some cases misidentified a default property as a default indexer. It was possible to work around the issue by using the identifier **default** to access the property. The workaround itself became problematic after **default** was introduced as a keyword in C++11. In Visual Studio 2017, the bugs that required the workaround were fixed. The compiler now raises an error when **default** is used to access the default property for a class.
+In Visual Studio 2015 and earlier, the compiler in some cases misidentified a default property as a default indexer. It was possible to work around the issue by using the identifier **`default`** to access the property. The workaround itself became problematic after **`default`** was introduced as a keyword in C++11. In Visual Studio 2017, the bugs that required the workaround were fixed. The compiler now raises an error when **`default`** is used to access the default property for a class.
 
 ```cpp
 //class1.cs
@@ -2083,7 +2083,7 @@ void g()
 }
 ```
 
-To fix the error, declare `i` as **int**.
+To fix the error, declare `i` as **`int`**.
 
 ### Pre-condition checks for type traits
 
@@ -2178,7 +2178,7 @@ template <typename T>
 void S::f(T t) {}
 ```
 
-### Attempting to take the address of **this** pointer
+### Attempting to take the address of `this` pointer
 
 In C++, **`this`** is a prvalue of type pointer to X. You can't take the address of **`this`** or bind it to an lvalue reference. In previous versions of Visual Studio, the compiler would allow you to circumvent this restriction by use of a cast. In Visual Studio 2017 version 15.3, the compiler produces error C2664.
 
@@ -2275,9 +2275,9 @@ extern "C" __declspec(noinline) HRESULT __stdcall
 
 This warning is off by default in 15.3, but on by default in 15.5, and only impacts code compiled with  **`/Wall`** **`/WX`**.
 
-### **decltype** and calls to deleted destructors
+### `decltype` and calls to deleted destructors
 
-In previous versions of Visual Studio, the compiler didn't detect when a call to a deleted destructor occurred in the context of the expression associated with **decltype**. In Visual Studio 2017 version 15.3, the following code produces error C2280: `'A<T>::~A(void)': attempting to reference a deleted function`:
+In previous versions of Visual Studio, the compiler didn't detect when a call to a deleted destructor occurred in the context of the expression associated with **`decltype`**. In Visual Studio 2017 version 15.3, the following code produces error C2280: `'A<T>::~A(void)': attempting to reference a deleted function`:
 
 ```cpp
 template<typename T>
@@ -2300,7 +2300,7 @@ void h()
 
 ### Uninitialized const variables
 
-Visual Studio 2017 RTW release had a regression: the C++ compiler wouldn't issue a diagnostic for an uninitialized **const** variable. This regression has been fixed in Visual Studio 2017 version 15.3. The following code now produces warning C4132: `'Value': const object should be initialized`:
+Visual Studio 2017 RTW release had a regression: the C++ compiler wouldn't issue a diagnostic for an uninitialized **`const`** variable. This regression has been fixed in Visual Studio 2017 version 15.3. The following code now produces warning C4132: `'Value': const object should be initialized`:
 
 ```cpp
 const int Value; //C4132
@@ -2683,7 +2683,7 @@ This new warning C4768 is given on some Windows SDK headers that were shipped wi
 
 ### <a name="extern_linkage"></a> Extern constexpr linkage
 
-In earlier versions of Visual Studio, the compiler always gave a **constexpr** variable internal linkage even when the variable was marked **extern**. In Visual Studio 2017 version 15.5, a new compiler switch (**`/Zc:externConstexpr`**) enables correct, standards-conforming behavior. Eventually this behavior will become the default.
+In earlier versions of Visual Studio, the compiler always gave a **`constexpr`** variable internal linkage even when the variable was marked **`extern`**. In Visual Studio 2017 version 15.5, a new compiler switch (**`/Zc:externConstexpr`**) enables correct, standards-conforming behavior. Eventually this behavior will become the default.
 
 ```cpp
 extern constexpr int x = 10;
@@ -2699,7 +2699,7 @@ If a header file contains a variable declared **extern constexpr**, it needs to 
 extern constexpr __declspec(selectany) int x = 10;
 ```
 
-### **typeid** can't be used on incomplete class type
+### `typeid` can't be used on incomplete class type
 
 In earlier versions of Visual Studio, the compiler incorrectly allowed the following code, resulting in potentially incorrect type information. In Visual Studio 2017 version 15.5, the compiler correctly raises an error:
 
@@ -2739,9 +2739,9 @@ struct D : public B { virtual ~D(); };
 static_assert(std::is_convertible<D *, B *>::value, "fail");
 ```
 
-### <a name="noexcept_removal"></a> Dynamic exception specification removal and **noexcept**
+### <a name="noexcept_removal"></a> Dynamic exception specification removal and `noexcept`
 
-In C++17, `throw()` is an alias for **noexcept**, `throw(<type list>)` and `throw(...)` are removed, and certain types may include **noexcept**. This change can cause source compatibility issues with code that conforms to C++14 or earlier. The **`/Zc:noexceptTypes-`** switch can be used to revert to the C++14 version of **noexcept** while using C++17 mode in general. It enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time.
+In C++17, `throw()` is an alias for **`noexcept`**, `throw(<type list>)` and `throw(...)` are removed, and certain types may include **`noexcept`**. This change can cause source compatibility issues with code that conforms to C++14 or earlier. The **`/Zc:noexceptTypes-`** switch can be used to revert to the C++14 version of **`noexcept`** while using C++17 mode in general. It enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time.
 
 The compiler also now diagnoses more mismatched exception specifications in declarations in C++17 mode or with [/permissive-](../build/reference/permissive-standards-conformance.md) with the new warning C5043.
 
@@ -2761,7 +2761,7 @@ struct B : A {
 };
 ```
 
-To remove the errors while still using **`/std:c++17`**, either add the **`/Zc:noexceptTypes-`** switch to the command line, or else update your code to use **noexcept**, as shown in the following example:
+To remove the errors while still using **`/std:c++17`**, either add the **`/Zc:noexceptTypes-`** switch to the command line, or else update your code to use **`noexcept`**, as shown in the following example:
 
 ```cpp
 void f() noexcept;
@@ -2834,11 +2834,11 @@ int main()
 }
 ```
 
-### **noexcept** and partial specializations
+### `noexcept` and partial specializations
 
-With **noexcept** in the type system, partial specializations for matching particular "callable" types may not compile, or fail to choose the primary template, because of a missing partial specialization for pointers-to-noexcept-functions.
+With **`noexcept`** in the type system, partial specializations for matching particular "callable" types may not compile, or fail to choose the primary template, because of a missing partial specialization for pointers-to-noexcept-functions.
 
-In such cases, you may need to add additional partial specializations to handle the **noexcept** function pointers and **noexcept** pointers to member functions. These overloads are only legal in **`/std:c++17`** mode. If backwards-compatibility with C++14 must be maintained, and you're writing code that others consume, then you should guard these new overloads inside `#ifdef` directives. If you're working in a self-contained module, then instead of using `#ifdef` guards you can just compile with the **`/Zc:noexceptTypes-`** switch.
+In such cases, you may need to add additional partial specializations to handle the **`noexcept`** function pointers and **`noexcept`** pointers to member functions. These overloads are only legal in **`/std:c++17`** mode. If backwards-compatibility with C++14 must be maintained, and you're writing code that others consume, then you should guard these new overloads inside `#ifdef` directives. If you're working in a self-contained module, then instead of using `#ifdef` guards you can just compile with the **`/Zc:noexceptTypes-`** switch.
 
 The following code compiles under **`/std:c++14`** but fails under **`/std:c++17`** with `error C2027: use of undefined type 'A<T>'`:
 
@@ -2944,7 +2944,7 @@ struct D : B<T*> {
 };
 ```
 
-Visual Studio 2017 version 15.7, in **`/std:c++17`** mode, requires the **typename** keyword in the **using** statement in D. Without **typename**, the compiler raises warning C4346: `'B<T*>::type': dependent name is not a type` and error C2061: `syntax error: identifier 'type'`:
+Visual Studio 2017 version 15.7, in **`/std:c++17`** mode, requires the **`typename`** keyword in the **`using`** statement in D. Without **`typename`**, the compiler raises warning C4346: `'B<T*>::type': dependent name is not a type` and error C2061: `syntax error: identifier 'type'`:
 
 ```cpp
 template<typename T>
@@ -2960,7 +2960,7 @@ struct D : B<T*> {
 
 ### C++17: `[[nodiscard]]` attribute - warning level increase
 
-In Visual Studio 2017 version 15.7 in **`/std:c++17`** mode, the warning level of C4834 `discarding return value of function with 'nodiscard' attribute` is increased from W3 to W1. You can disable the warning with a cast to **void**, or by passing **`/wd:4834`** to the compiler
+In Visual Studio 2017 version 15.7 in **`/std:c++17`** mode, the warning level of C4834 `discarding return value of function with 'nodiscard' attribute` is increased from W3 to W1. You can disable the warning with a cast to **`void`**, or by passing **`/wd:4834`** to the compiler
 
 ```cpp
 [[nodiscard]] int f() { return 0; }
@@ -2994,9 +2994,9 @@ D<int> d;
 
 To fix the error, change the B() expression to B\<T>().
 
-### **constexpr** aggregate initialization
+### `constexpr` aggregate initialization
 
-Previous versions of the C++ compiler incorrectly handled **constexpr** aggregate initialization. The compiler accepted invalid code in which the aggregate-init-list had too many elements, and produced bad codegen for it. The following code is an example of such code:
+Previous versions of the C++ compiler incorrectly handled **`constexpr`** aggregate initialization. The compiler accepted invalid code in which the aggregate-init-list had too many elements, and produced bad codegen for it. The following code is an example of such code:
 
 ```cpp
 #include <array>
@@ -3036,9 +3036,9 @@ int main() {
 
 The compiler changes in Visual Studio 2017 version 15.8 are all bug fixes and behavior changes. They're listed below:
 
-### **typename** on unqualified identifiers
+### `typename` on unqualified identifiers
 
-In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, spurious **typename** keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 `'T': 'typename' keyword must be followed by a qualified name`:
+In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, spurious **`typename`** keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 `'T': 'typename' keyword must be followed by a qualified name`:
 
 ```cpp
 template <typename T>
@@ -3087,7 +3087,7 @@ struct S : Base<T> {
 };
 ```
 
-To fix the error, change the `return` statement to `return this->base_value;`.
+To fix the error, change the **`return`** statement to `return this->base_value;`.
 
 **Note:** In the Boost python library, there's been an MSVC-specific workaround for a template forward declaration in [unwind_type.hpp](https://github.com/boostorg/python/blame/develop/include/boost/python/detail/unwind_type.hpp). Under [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode starting in Visual Studio 2017 version 15.8 (\_MSC\_VER=1915), the MSVC compiler does argument-dependent name lookup (ADL) correctly. It's now consistent with other compilers, making this workaround guard unnecessary. To avoid error C3861: `'unwind_type': identifier not found`, see [PR 229](https://github.com/boostorg/python/pull/229) in the Boost repo to update the header file. We've already patched the [vcpkg](../build/vcpkg.md) Boost package, so if you get or upgrade your Boost sources from vcpkg then you don't need to apply the patch separately.
 
@@ -3140,7 +3140,7 @@ public:
 
 [offsetof](../c-runtime-library/reference/offsetof-macro.md) has traditionally been implemented using a macro that requires a [reinterpret_cast](../cpp/reinterpret-cast-operator.md). This usage is illegal in contexts that require a constant expression, but the Microsoft C++ compiler has traditionally allowed it. The `offsetof` macro that is shipped as part of the standard library correctly uses a compiler intrinsic (**__builtin_offsetof**), but many people have used the macro trick to define their own `offsetof`.
 
-In Visual Studio 2017 version 15.8, the compiler constrains the areas that these `reinterpret_cast` operators can appear in the default mode, to help code conform to standard C++ behavior. Under [/permissive-](../build/reference/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an `offsetof` in places that require constant expressions may result in code that issues warning C4644 `usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead` or C2975 `invalid template argument, expected compile-time constant expression`.
+In Visual Studio 2017 version 15.8, the compiler constrains the areas that these **`reinterpret_cast`** operators can appear in the default mode, to help code conform to standard C++ behavior. Under [/permissive-](../build/reference/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an `offsetof` in places that require constant expressions may result in code that issues warning C4644 `usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead` or C2975 `invalid template argument, expected compile-time constant expression`.
 
 The following code raises C4644 in **`/default`** and **`/std:c++17`** modes, and C2975 in [/permissive-](../build/reference/permissive-standards-conformance.md) mode:
 
@@ -3198,9 +3198,9 @@ int main()
 }
 ```
 
-### **template** keyword and nested-name-specifiers
+### `template` keyword and nested-name-specifiers
 
-In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the compiler now requires the **template** keyword to precede a template-name when it comes after a dependent nested-name-specifier.
+In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the compiler now requires the **`template`** keyword to precede a template-name when it comes after a dependent nested-name-specifier.
 
 The following code in [/permissive-](../build/reference/permissive-standards-conformance.md) mode now raises C7510: `'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled`:
 
@@ -3220,7 +3220,7 @@ struct X : Base<T>
 };
 ```
 
-To fix the error, add the **template** keyword to the `Base<T>::example<int>();` statement, as shown in the following example:
+To fix the error, add the **`template`** keyword to the `Base<T>::example<int>();` statement, as shown in the following example:
 
 ```cpp
 template<typename T> struct Base
@@ -3420,7 +3420,7 @@ note: failure was caused by call of undefined function or one not declared 'cons
 note: see usage of 'g'.
 ```
 
-To avoid the error, remove the **constexpr** qualifier from the explicit instantiation of the function `f()`.
+To avoid the error, remove the **`constexpr`** qualifier from the explicit instantiation of the function `f()`.
 
 ::: moniker-end
 

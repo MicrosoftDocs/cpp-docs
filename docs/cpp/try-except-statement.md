@@ -32,33 +32,33 @@ Exceptions may be either hardware-based or software-based. Structured exception 
 > [!NOTE]
 > Structured exception handling works with Win32 for both C and C++ source files. However, it's not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, C++ exception handling is more flexible, in that it can handle exceptions of any type. For C++ programs, we recommend you use native C++ exception-handling: [try, catch, and throw](../cpp/try-throw-and-catch-statements-cpp.md) statements.
 
-The compound statement after the **__try** clause is the *body* or *guarded* section. The **__except** expression is also known as the *filter* expression. Its value determines how the exception is handled. The compound statement after the **__except** clause is the exception handler. The handler specifies the actions to take if an exception is raised during execution of the body section. Execution proceeds as follows:
+The compound statement after the **__try** clause is the *body* or *guarded* section. The **`__except`** expression is also known as the *filter* expression. Its value determines how the exception is handled. The compound statement after the **`__except`** clause is the exception handler. The handler specifies the actions to take if an exception is raised during execution of the body section. Execution proceeds as follows:
 
 1. The guarded section is executed.
 
-1. If no exception occurs during execution of the guarded section, execution continues at the statement after the **__except** clause.
+1. If no exception occurs during execution of the guarded section, execution continues at the statement after the **`__except`** clause.
 
-1. If an exception occurs during execution of the guarded section, or in any routine the guarded section calls, the **__except** expression is evaluated. There are three possible values:
+1. If an exception occurs during execution of the guarded section, or in any routine the guarded section calls, the **`__except`** expression is evaluated. There are three possible values:
 
    - `EXCEPTION_CONTINUE_EXECUTION` (-1) Exception is dismissed. Continue execution at the point where the exception occurred.
 
    - `EXCEPTION_CONTINUE_SEARCH` (0) Exception isn't recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
 
-   - `EXCEPTION_EXECUTE_HANDLER` (1) Exception is recognized. Transfer control to the exception handler by executing the **__except** compound statement, then continue execution after the **__except** block.
+   - `EXCEPTION_EXECUTE_HANDLER` (1) Exception is recognized. Transfer control to the exception handler by executing the **`__except`** compound statement, then continue execution after the **`__except`** block.
 
-The **__except** expression is evaluated as a C expression. It's limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
+The **`__except`** expression is evaluated as a C expression. It's limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
 
 Each application can have its own exception handler.
 
 It's not valid to jump into a **__try** statement, but valid to jump out of one. The exception handler isn't called if a process is terminated in the middle of executing a **try-except** statement.
 
-For compatibility with previous versions, **_try**, **_except**, and **_leave** are synonyms for **__try**, **__except**, and **__leave** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **_try**, **_except**, and **_leave** are synonyms for **__try**, **`__except`**, and **`__leave`** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ### The __leave Keyword
 
-The **__leave** keyword is valid only within the guarded section of a **try-except** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement after the exception handler.
+The **`__leave`** keyword is valid only within the guarded section of a **try-except** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement after the exception handler.
 
-A **goto** statement can also jump out of the guarded section, and it doesn't degrade performance as it does in a **try-finally** statement. That's because stack unwinding doesn't occur. However, we recommend that you use the **__leave** keyword rather than a **goto** statement. The reason is because you're less likely to make a programming mistake if the guarded section is large or complex.
+A **`goto`** statement can also jump out of the guarded section, and it doesn't degrade performance as it does in a **try-finally** statement. That's because stack unwinding doesn't occur. However, we recommend that you use the **`__leave`** keyword rather than a **`goto`** statement. The reason is because you're less likely to make a programming mistake if the guarded section is large or complex.
 
 ### Structured Exception Handling Intrinsic Functions
 

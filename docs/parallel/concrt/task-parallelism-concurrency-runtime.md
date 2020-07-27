@@ -79,7 +79,7 @@ For more information about lambda expressions, see [Lambda Expressions](../../cp
 
 You can use the [concurrency::task](../../parallel/concrt/reference/task-class.md) class to compose tasks into a set of dependent operations. This composition model is supported by the notion of *continuations*. A continuation enables code to be executed when the previous, or *antecedent*, task completes. The result of the antecedent task is passed as the input to the one or more continuation tasks. When an antecedent task completes, any continuation tasks that are waiting on it are scheduled for execution. Each continuation task receives a copy of the result of the antecedent task. In turn, those continuation tasks may also be antecedent tasks for other continuations, thereby creating a chain of tasks. Continuations help you create arbitrary-length chains of tasks that have specific dependencies among them. In addition, a task can participate in cancellation either before a tasks starts or in a cooperative manner while it is running. For more information about this cancellation model, see [Cancellation in the PPL](cancellation-in-the-ppl.md).
 
-`task` is a template class. The type parameter `T` is the type of the result that is produced by the task. This type can be **`void`** if the task does not return a value. `T` cannot use the `const` modifier.
+`task` is a template class. The type parameter `T` is the type of the result that is produced by the task. This type can be **`void`** if the task does not return a value. `T` cannot use the **`const`** modifier.
 
 When you create a task, you provide a *work function* that performs the task body. This work function comes in the form of a lambda function, function pointer, or function object. To wait for a task to finish without obtaining the result, call the [concurrency::task::wait](reference/task-class.md#wait) method. The `task::wait` method returns a [concurrency::task_status](reference/concurrency-namespace-enums.md#task_group_status) value that describes whether the task was completed or canceled. To get the result of the task, call the [concurrency::task::get](reference/task-class.md#get) method. This method calls `task::wait` to wait for the task to finish, and therefore blocks execution of the current thread until the result is available.
 
@@ -182,7 +182,7 @@ Consider a UWP app that uses C++ and XAML and writes a set of files to disk. The
 
 [!code-xml[concrt-eh-when_all#3](../../parallel/concrt/codesnippet/xaml/task-parallelism-concurrency-runtime_12.xaml)]
 
-1. In MainPage.xaml.h, add these forward declarations to the `private` section of the `MainPage` class declaration.
+1. In MainPage.xaml.h, add these forward declarations to the **`private`** section of the `MainPage` class declaration.
 
 [!code-cpp[concrt-eh-when_all#4](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_13.h)]
 
@@ -231,7 +231,7 @@ It is sometimes necessary to delay the execution of a task until a condition is 
 
 Two ways to accomplish this are to use a continuation or to start a task and wait on an event inside the task's work function. However, there are cases where is it not possible to use one of these techniques. For example, to create a continuation, you must have the antecedent task. However, if you do not have the antecedent task, you can create a *task completion event* and later chain that completion event to the antecedent task when it becomes available. In addition, because a waiting task also blocks a thread, you can use task completion events to perform work when an asynchronous operation completes, and thereby free a thread.
 
-The [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) class helps simplify such composition of tasks. Like the `task` class, the type parameter `T` is the type of the result that is produced by the task. This type can be **`void`** if the task does not return a value. `T` cannot use the `const` modifier. Typically, a `task_completion_event` object is provided to a thread or task that will signal it when the value for it becomes available. At the same time, one or more tasks are set as listeners of that event. When the event is set, the listener tasks complete and their continuations are scheduled to run.
+The [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) class helps simplify such composition of tasks. Like the `task` class, the type parameter `T` is the type of the result that is produced by the task. This type can be **`void`** if the task does not return a value. `T` cannot use the **`const`** modifier. Typically, a `task_completion_event` object is provided to a thread or task that will signal it when the value for it becomes available. At the same time, one or more tasks are set as listeners of that event. When the event is set, the listener tasks complete and their continuations are scheduled to run.
 
 For an example that uses `task_completion_event` to implement a task that completes after a delay, see [How to: Create a Task that Completes After a Delay](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md).
 

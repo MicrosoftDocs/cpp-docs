@@ -32,9 +32,9 @@ One of these possible values: **`true`**, **`false`**, `forced`, `restricted`, `
 
 `defaultimports=`*boolean* \(optional)
 
-- If *boolean* is **true**, docobj.idl is imported into the generated .idl file. Also, if an .idl file with the same name as an .h file that you `#include` into your source code is found in the same directory as the .h file, then the generated .idl file contains an import statement for that .idl file.
+- If *boolean* is **`true`**, docobj.idl is imported into the generated .idl file. Also, if an .idl file with the same name as an .h file that you `#include` into your source code is found in the same directory as the .h file, then the generated .idl file contains an import statement for that .idl file.
 
-- If *boolean* is **false**, docobj.idl is not imported into the generated .idl file. You must explicitly import .idl files with [import](import.md).
+- If *boolean* is **`false`**, docobj.idl is not imported into the generated .idl file. You must explicitly import .idl files with [import](import.md).
 
 ## Remarks
 
@@ -42,7 +42,7 @@ After the **emitidl** C++ attribute is encountered in a source code file, IDL ca
 
 It is possible to have multiple **emitidl** attributes in a source code file. If `[emitidl(false)];` is encountered in a file without a subsequent `[emitidl(true)];`, then no attributes are processed into the generated .idl file.
 
-Each time the compiler encounters a new file, **emitidl** is implicitly set to **true**.
+Each time the compiler encounters a new file, **emitidl** is implicitly set to **`true`**.
 
 ## Requirements
 

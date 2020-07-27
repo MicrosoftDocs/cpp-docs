@@ -65,7 +65,7 @@ The **errno** value is set to ERANGE if *x* = -1. The **errno** value is set to 
 
 The **log1p** functions may be more accurate than using `log(x + 1)` when *x* is near 0.
 
-Because C++ allows overloading, you can call overloads of **log1p** that take and return **float** and **`long double`** types. In a C program, **log1p** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **log1p** that take and return **`float`** and **`long double`** types. In a C program, **log1p** always takes and returns a **`double`**.
 
 If *x* is a natural number, this function returns the logarithm of the factorial of (*x* - 1).
 

@@ -201,7 +201,7 @@ Pointer to the new `CFile` or `CFile`-derived object containing the data if succ
 Depending on the medium the data is stored in, the actual type pointed to by the return value may be `CFile`, `CSharedFile`, or `COleStreamFile`.
 
 > [!NOTE]
-> The `CFile` object accessed by the return value of this function is owned by the caller. It is the responsibility of the caller to **delete** the `CFile` object, thereby closing the file.
+> The `CFile` object accessed by the return value of this function is owned by the caller. It is the responsibility of the caller to **`delete`** the `CFile` object, thereby closing the file.
 
 For more information, see [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 

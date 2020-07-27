@@ -103,7 +103,7 @@ bool cancel();
 
 ### Return Value
 
-**true** if the agent was canceled, **false** otherwise. An agent cannot be canceled if it has already started running or has already completed.
+**`true`** if the agent was canceled, **`false`** otherwise. An agent cannot be canceled if it has already started running or has already completed.
 
 ## <a name="done"></a> done
 
@@ -115,7 +115,7 @@ bool done();
 
 ### Return Value
 
-**true** if the agent is moved to the `agent_done` state, **false** otherwise. An agent that has been canceled cannot be moved to the `agent_done` state.
+**`true`** if the agent is moved to the `agent_done` state, **`false`** otherwise. An agent that has been canceled cannot be moved to the `agent_done` state.
 
 ### Remarks
 
@@ -143,7 +143,7 @@ bool start();
 
 ### Return Value
 
-**true** if the agent started correctly, **false** otherwise. An agent that has been canceled cannot be started.
+**`true`** if the agent started correctly, **`false`** otherwise. An agent that has been canceled cannot be started.
 
 ## <a name="status"></a> status
 

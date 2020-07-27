@@ -40,7 +40,7 @@ The following table shows the keywords for built-in Visual C++ types, which are 
 |**`float`**|<xref:System.Single?displayProperty=nameWithType>|
 |**`double`** and **`long double`**|<xref:System.Double?displayProperty=nameWithType>|
 
-For more information about the compiler option to default to **`signed char`** or **`unsigned char`**, see [`/J` (Default **`char`** type is `unsigned`)](../build/reference/j-default-char-type-is-unsigned.md).
+For more information about the compiler option to default to **`signed char`** or **`unsigned char`**, see [`/J` (Default **`char`** type is **`unsigned`**)](../build/reference/j-default-char-type-is-unsigned.md).
 
 ## <a name="version_issues"></a> Version Issues for Value Types Nested in Native Types
 

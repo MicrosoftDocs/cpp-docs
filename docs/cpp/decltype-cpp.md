@@ -7,7 +7,7 @@ ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
 ---
 # decltype  (C++)
 
-The **decltype** type specifier yields the type of a specified expression. The **`decltype`** type specifier, together with the [`auto` keyword](../cpp/auto-cpp.md), is useful primarily to developers who write template libraries. Use **`auto`** and **`decltype`** to declare a template function whose return type depends on the types of its template arguments. Or, use **`auto`** and **`decltype`** to declare a template function that wraps a call to another function, and then returns the return type of the wrapped function.
+The **`decltype`** type specifier yields the type of a specified expression. The **`decltype`** type specifier, together with the [`auto` keyword](../cpp/auto-cpp.md), is useful primarily to developers who write template libraries. Use **`auto`** and **`decltype`** to declare a template function whose return type depends on the types of its template arguments. Or, use **`auto`** and **`decltype`** to declare a template function that wraps a call to another function, and then returns the return type of the wrapped function.
 
 ## Syntax
 

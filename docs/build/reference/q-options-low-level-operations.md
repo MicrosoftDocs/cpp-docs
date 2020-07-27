@@ -12,7 +12,7 @@ You can use the **/Q** compiler options to perform the following low-level compi
 
 - [/QIfist (Suppress _ftol)](qifist-suppress-ftol.md): Suppresses `_ftol` when a conversion from a floating-point type to an integer type is required (x86 only).
 
-- [/Qimprecise_fwaits (Remove fwaits Inside Try Blocks)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): Removes `fwait` commands inside `try` blocks.
+- [/Qimprecise_fwaits (Remove fwaits Inside Try Blocks)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): Removes `fwait` commands inside **`try`** blocks.
 
 - [/QIntel-jcc-erratum](qintel-jcc-erratum.md): Mitigates the performance impact caused by the Intel Jump Conditional Code (JCC) erratum microcode update.
 

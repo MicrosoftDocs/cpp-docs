@@ -41,7 +41,7 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**Applies to**|**typedef**, interface parameter, interface method|
+|**Applies to**|**`typedef`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

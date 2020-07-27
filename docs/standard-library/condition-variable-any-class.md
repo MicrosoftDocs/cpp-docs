@@ -79,7 +79,7 @@ void wait(Lock& Lck, Predicate Pred);
 A `mutex` object of any type.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Remarks
 
@@ -113,7 +113,7 @@ A `mutex` object of any type.
 A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Return Value
 
@@ -168,7 +168,7 @@ A mutex object.
 A [chrono::time_point](../standard-library/time-point-class.md) object.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Return Value
 

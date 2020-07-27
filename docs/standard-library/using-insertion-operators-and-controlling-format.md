@@ -48,7 +48,7 @@ int main( )
 
 Leading blanks are added to any value fewer than 10 characters wide.
 
-To pad a field, use the `fill` member function, which sets the value of the padding character for fields that have a specified width. The default is a blank. To pad the column of numbers with asterisks, modify the previous **for** loop as follows:
+To pad a field, use the `fill` member function, which sets the value of the padding character for fields that have a specified width. The default is a blank. To pad the column of numbers with asterisks, modify the previous **`for`** loop as follows:
 
 ```cpp
 for (int i = 0; i <4; i++)
@@ -100,7 +100,7 @@ Neither `setw` nor `width` truncates values. If formatted output exceeds the wid
 
 ## <a name="vclrfalignmentanchor4"></a> Alignment
 
-Output streams default to right-aligned text. To left-align the names in the previous example and right-align the numbers, replace the **for** loop as follows:
+Output streams default to right-aligned text. To left-align the names in the previous example and right-align the numbers, replace the **`for`** loop as follows:
 
 ```cpp
 for (int i = 0; i <4; i++)
@@ -125,7 +125,7 @@ The left-align flag is set by using the [setiosflags](../standard-library/iomani
 
 The default value for floating-point precision is six. For example, the number 3466.9768 prints as 3466.98. To change the way this value prints, use the [setprecision](../standard-library/iomanip-functions.md#setprecision) manipulator. The manipulator has two flags: [fixed](../standard-library/ios-functions.md#fixed) and [scientific](../standard-library/ios-functions.md#scientific). If [fixed](../standard-library/ios-functions.md#fixed) is set, the number prints as 3466.976800. If `scientific` is set, it prints as 3.4669773+003.
 
-To display the floating-point numbers shown in [Alignment](#vclrfalignmentanchor4) with one significant digit, replace the **for** loop as follows:
+To display the floating-point numbers shown in [Alignment](#vclrfalignmentanchor4) with one significant digit, replace the **`for`** loop as follows:
 
 ```cpp
 for (int i = 0; i <4; i++)
@@ -148,7 +148,7 @@ Al        7e+02
 Stan      4e+03
 ```
 
-To eliminate scientific notation, insert this statement before the **for** loop:
+To eliminate scientific notation, insert this statement before the **`for`** loop:
 
 ```cpp
 cout << setiosflags(ios::fixed);

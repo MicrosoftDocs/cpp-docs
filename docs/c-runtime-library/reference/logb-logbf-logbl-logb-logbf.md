@@ -52,7 +52,7 @@ A floating-point value.
 
 The **logb** functions extract the exponential value of the floating-point argument *x*, as though *x* were represented with infinite range. If the argument *x* is denormalized, it is treated as if it were normalized.
 
-Because C++ allows overloading, you can call overloads of **logb** that take and return **float** or **`long double`** values. In a C program, **logb** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **logb** that take and return **`float`** or **`long double`** values. In a C program, **logb** always takes and returns a **`double`**.
 
 |Input|SEH exception|Matherr exception|
 |-----------|-------------------|-----------------------|

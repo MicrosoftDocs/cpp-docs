@@ -2,7 +2,7 @@
 title: "Keywords (C++)"
 description: "Lists the C++ standard language keywords, Microsoft-specific keywords, and context-specific keywords."
 ms.custom: "index-page"
-ms.date: 07/24/2020
+ms.date: 07/25/2020
 helpviewer_keywords: ["keywords [C++]"]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
 ---
@@ -130,7 +130,7 @@ Microsoft extensions are enabled by default. To ensure that your programs are fu
 
 When Microsoft extensions are enabled, you can use the Microsoft-specific keywords in your programs. For ANSI compliance, these keywords are prefaced by a double underscore. For backward compatibility, single-underscore versions of many of the double-underscored keywords are supported. The **`__cdecl`** keyword is available with no leading underscore.
 
-The **`__asm`** keyword replaces C++ `asm` syntax. `asm` is reserved for compatibility with other C++ implementations, but not implemented. Use **`__asm`**.
+The **`__asm`** keyword replaces C++ **`asm`** syntax. **`asm`** is reserved for compatibility with other C++ implementations, but not implemented. Use **`__asm`**.
 
 The **`__based`** keyword has limited uses for 32-bit and 64-bit target compilations.
 

@@ -163,7 +163,7 @@ The ojbect to be tested for equality.
 
 #### Return Value
 
-**true** if the objects are equal; **false** if objects are not equal.
+**`true`** if the objects are equal; **`false`** if objects are not equal.
 
 #### Remarks
 
@@ -184,7 +184,7 @@ The object to be tested for inequality.
 
 #### Return Value
 
-**true** if the `error_condition` object is not equal to the `error_condition` object passed in *right*; otherwise **false**.
+**`true`** if the `error_condition` object is not equal to the `error_condition` object passed in *right*; otherwise **`false`**.
 
 #### Remarks
 
@@ -205,7 +205,7 @@ The `error_condition` object to be compared.
 
 #### Return Value
 
-**true** if the `error_condition` object is less than the `error_condition` object passed in for comparison; Otherwise, **false**.
+**`true`** if the `error_condition` object is less than the `error_condition` object passed in for comparison; Otherwise, **`false`**.
 
 #### Remarks
 
@@ -250,7 +250,7 @@ The Boolean value of the `error_condition` object.
 
 #### Remarks
 
-The operator returns a value convertible to **true** only if [value](#value) is not equal to zero. The return type is convertible only to **bool**, not to `void *` or other known scalar types.
+The operator returns a value convertible to **`true`** only if [value](#value) is not equal to zero. The return type is convertible only to **`bool`**, not to `void *` or other known scalar types.
 
 ### <a name="value"></a> value
 
@@ -276,4 +276,4 @@ typedef int value_type;
 
 #### Remarks
 
-The type definition is a synonym for **int**.
+The type definition is a synonym for **`int`**.

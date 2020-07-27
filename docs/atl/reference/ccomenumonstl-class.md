@@ -44,17 +44,17 @@ A C++ Standard Library container class.
 
 ## To use this class with ICollectionOnSTLImpl:
 
-- **typedef** a specialization of this class.
+- **`typedef`** a specialization of this class.
 
-- Use the **typedef** as the final template argument in a specialization of `ICollectionOnSTLImpl`.
+- Use the **`typedef`** as the final template argument in a specialization of `ICollectionOnSTLImpl`.
 
 See [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md) for an example.
 
 ## To use this class independently of ICollectionOnSTLImpl:
 
-- **typedef** a specialization of this class.
+- **`typedef`** a specialization of this class.
 
-- Use the **typedef** as the template argument in a specialization of `CComObject`.
+- Use the **`typedef`** as the template argument in a specialization of `CComObject`.
 
 - Create an instance of the `CComObject` specialization.
 
@@ -88,7 +88,7 @@ This template function can be used to implement the `_NewEnum` property of a col
 
 [!code-cpp[NVC_ATL_COM#35](../../atl/codesnippet/cpp/ccomenumonstl-class_2.h)]
 
-This code creates a **typedef** for `CComEnumOnSTL` that exposes a vector of `CComVariant`s by means of the `IEnumVariant` interface. The `CVariantCollection` class simply specializes `CreateSTLEnumerator` to work with enumerator objects of this type.
+This code creates a **`typedef`** for `CComEnumOnSTL` that exposes a vector of `CComVariant`s by means of the `IEnumVariant` interface. The `CVariantCollection` class simply specializes `CreateSTLEnumerator` to work with enumerator objects of this type.
 
 ## See also
 

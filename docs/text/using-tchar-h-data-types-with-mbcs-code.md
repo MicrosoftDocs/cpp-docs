@@ -49,7 +49,7 @@ Following are three solutions for preventing this type conflict (and the C compi
     #define _tcschr _mbschr
     ```
 
-   When you take this approach, you must be careful to ensure use of appropriate data types for string arguments and string return values. You can use type casting to ensure proper type matching or you can use the `_TXCHAR` generic-text data type. `_TXCHAR` maps to type **char** in SBCS code but maps to type **unsigned char** in MBCS code. For more information about generic-text macros, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the *Run-Time Library Reference*.
+   When you take this approach, you must be careful to ensure use of appropriate data types for string arguments and string return values. You can use type casting to ensure proper type matching or you can use the `_TXCHAR` generic-text data type. `_TXCHAR` maps to type **`char`** in SBCS code but maps to type **`unsigned char`** in MBCS code. For more information about generic-text macros, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the *Run-Time Library Reference*.
 
 ## See also
 

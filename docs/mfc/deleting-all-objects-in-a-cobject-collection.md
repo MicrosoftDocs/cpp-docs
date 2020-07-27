@@ -25,7 +25,7 @@ This article shows you how to delete the objects in:
 
 1. Use `GetHeadPosition` and `GetNext` to iterate through the list.
 
-1. Use the **delete** operator to delete each object as it is encountered in the iteration.
+1. Use the **`delete`** operator to delete each object as it is encountered in the iteration.
 
 1. Call the `RemoveAll` function to remove all elements from the list after the objects associated with those elements have been deleted.
 
@@ -41,7 +41,7 @@ Notice the difference between deleting an element's object and removing the elem
 
 1. Use `GetSize` and integer index values to iterate through the array.
 
-1. Use the **delete** operator to delete each element as it is encountered in the iteration.
+1. Use the **`delete`** operator to delete each element as it is encountered in the iteration.
 
 1. Call the `RemoveAll` function to remove all elements from the array after they have been deleted.
 
@@ -55,7 +55,7 @@ As with the list example above, you can call `RemoveAll` to remove all elements 
 
 1. Use `GetStartPosition` and `GetNextAssoc` to iterate through the array.
 
-1. Use the **delete** operator to delete the key and/or value for each map element as it is encountered in the iteration.
+1. Use the **`delete`** operator to delete the key and/or value for each map element as it is encountered in the iteration.
 
 1. Call the `RemoveAll` function to remove all elements from the map after they have been deleted.
 

@@ -221,7 +221,7 @@ int main()
 
 You can also insert an unboxed value type into an STL/CLR container. An unboxed value type is a value type that has not been *boxed* into a reference type.
 
-A value type element can be one of the standard value types, such as an **`int`**, or it can be a user-defined value type, such as a `value class`. For more information, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)
+A value type element can be one of the standard value types, such as an **`int`**, or it can be a user-defined value type, such as a **`value class`**. For more information, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 #### Example
 

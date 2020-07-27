@@ -67,7 +67,7 @@ You can use the default capture mode (*capture-default* in the Standard syntax) 
 
 Only variables that are mentioned in the lambda are captured when a capture-default is used.
 
-If a capture clause includes a capture-default `&`, then no `identifier` in a `capture` of that capture clause can have the form `& identifier`. Likewise, if the capture clause includes a capture-default `=`, then no `capture` of that capture clause can have the form `= identifier`. An identifier or **this** cannot appear more than once in a capture clause. The following code snippet illustrates some examples.
+If a capture clause includes a capture-default `&`, then no `identifier` in a `capture` of that capture clause can have the form `& identifier`. Likewise, if the capture clause includes a capture-default `=`, then no `capture` of that capture clause can have the form `= identifier`. An identifier or **`this`** cannot appear more than once in a capture clause. The following code snippet illustrates some examples.
 
 ```cpp
 struct S { void f(int i); };
@@ -91,15 +91,15 @@ void f(Args... args) {
 }
 ```
 
-To use lambda expressions in the body of a class method, pass the **this** pointer to the capture clause to provide access to the methods and data members of the enclosing class.
+To use lambda expressions in the body of a class method, pass the **`this`** pointer to the capture clause to provide access to the methods and data members of the enclosing class.
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **this** pointer may be captured by value by specifying **`*this`** in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA.
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **`this`** pointer may be captured by value by specifying **`*this`** in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA.
 
 For an example that shows how to use lambda expressions with class methods, see "Example: Using a Lambda Expression in a Method" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).
 
 When you use the capture clause, we recommend that you keep these points in mind, particularly when you use lambdas with multithreading:
 
-- Reference captures can be used to modify variables outside, but value captures cannot. (**mutable** allows copies to be modified, but not originals.)
+- Reference captures can be used to modify variables outside, but value captures cannot. (**`mutable`** allows copies to be modified, but not originals.)
 
 - Reference captures reflect updates to variables outside, but value captures do not.
 

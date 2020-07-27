@@ -32,9 +32,9 @@ Compiler option: **/ZW**
 
 1. In the component, specify an assembly attribute <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>, and pass the name of the client assembly or .netmodule that will access types at namespace scope or global scope in the component.  You can specify multiple client assemblies or .netmodules by specifying additional attributes.
 
-1. In the client assembly or .netmodule, when you reference the component assembly by using `#using`, pass the `as_friend` attribute.  If you specify the `as_friend` attribute for an assembly that does not specify `InternalsVisibleToAttribute`, a runtime exception will be thrown if you try to access a type at namespace scope or global scope in the component.
+1. In the client assembly or .netmodule, when you reference the component assembly by using `#using`, pass the **`as_friend`** attribute.  If you specify the **`as_friend`** attribute for an assembly that does not specify `InternalsVisibleToAttribute`, a runtime exception will be thrown if you try to access a type at namespace scope or global scope in the component.
 
-A build error will result if the assembly that contains the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute does not have a strong name but the client assembly that uses the `as_friend` attribute does.
+A build error will result if the assembly that contains the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute does not have a strong name but the client assembly that uses the **`as_friend`** attribute does.
 
 Although types at namespace scope and global scope can be known to a client assembly or .netmodule, member accessibility is still in effect.  For example, you cannot access a private member.
 

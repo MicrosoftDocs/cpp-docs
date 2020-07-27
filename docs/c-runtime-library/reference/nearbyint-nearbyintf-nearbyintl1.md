@@ -49,7 +49,7 @@ The primary difference between this function and [rint](rint-rintf-rintl.md) is 
 
 Because the maximum floating-point values are exact integers, this function will never overflow by itself; rather, the output may overflow the return value, depending on which version of the function you use.
 
-C++ allows overloading, so you can call overloads of **nearbyint** that take and return **float** or **`long double`** parameters. In a C program, **nearbyint** always takes two double values and returns a double value.
+C++ allows overloading, so you can call overloads of **nearbyint** that take and return **`float`** or **`long double`** parameters. In a C program, **nearbyint** always takes two double values and returns a double value.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

@@ -304,9 +304,9 @@ A reference to, or copy of, the element.
 
 ### Remarks
 
-If the list is **const**, `GetAt` returns a copy of the element. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
+If the list is **`const`**, `GetAt` returns a copy of the element. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
 
-If the list is not **const**, `GetAt` returns a reference to the element. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
+If the list is not **`const`**, `GetAt` returns a reference to the element. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
 
 In debug builds, an assertion failure will occur if *pos* is equal to NULL.
 
@@ -345,9 +345,9 @@ Returns a reference to, or a copy of, the element at the head of the list.
 
 ### Remarks
 
-If the list is **const**, `GetHead` returns a copy of the element at the head of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
+If the list is **`const`**, `GetHead` returns a copy of the element at the head of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
 
-If the list is not **const**, `GetHead` returns a reference to the element at the head of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
+If the list is not **`const`**, `GetHead` returns a reference to the element at the head of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
 
 In debug builds, an assertion failure will occur if the head of the list points to NULL.
 
@@ -391,9 +391,9 @@ A POSITION value, returned by a previous call to `GetNext`, [CAtlList::GetHeadPo
 
 ### Return Value
 
-If the list is **const**, `GetNext` returns a copy of the next element of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
+If the list is **`const`**, `GetNext` returns a copy of the next element of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
 
-If the list is not **const**, `GetNext` returns a reference to the next element of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
+If the list is not **`const`**, `GetNext` returns a reference to the next element of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
 
 ### Remarks
 
@@ -419,9 +419,9 @@ A POSITION value, returned by a previous call to `GetPrev`, [CAtlList::GetTailPo
 
 ### Return Value
 
-If the list is **const**, `GetPrev` returns a copy of an element of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
+If the list is **`const`**, `GetPrev` returns a copy of an element of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
 
-If the list is not **const**, `GetPrev` returns a reference to an element of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
+If the list is not **`const`**, `GetPrev` returns a reference to an element of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
 
 ### Remarks
 
@@ -446,9 +446,9 @@ Returns a reference to, or a copy of, the element at the tail of the list.
 
 ### Remarks
 
-If the list is **const**, `GetTail` returns a copy of the element at the head of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
+If the list is **`const`**, `GetTail` returns a copy of the element at the head of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.
 
-If the list is not **const**, `GetTail` returns a reference to the element at the head of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
+If the list is not **`const`**, `GetTail` returns a reference to the element at the head of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.
 
 In debug builds, an assertion failure will occur if the tail of the list points to NULL.
 

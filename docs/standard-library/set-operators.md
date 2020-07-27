@@ -25,7 +25,7 @@ An object of type `set`.
 
 ### Return Value
 
-**true** if the sets are not equal; **false** if sets are equal.
+**`true`** if the sets are not equal; **`false`** if sets are equal.
 
 ### Remarks
 
@@ -86,7 +86,7 @@ An object of type `set`.
 
 ### Return Value
 
-**true** if the set on the left side of the operator is strictly less than the set on the right side of the operator; otherwise **false**.
+**`true`** if the set on the left side of the operator is strictly less than the set on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -147,7 +147,7 @@ An object of type `set`.
 
 ### Return Value
 
-**true** if the set on the left side of the operator is less than or equal to the set on the right side of the operator; otherwise **false**.
+**`true`** if the set on the left side of the operator is less than or equal to the set on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -216,7 +216,7 @@ An object of type `set`.
 
 ### Return Value
 
-**true** if the set on the left side of the operator is equal to the set on the right side of the operator; otherwise **false**.
+**`true`** if the set on the left side of the operator is equal to the set on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -278,7 +278,7 @@ An object of type `set`.
 
 ### Return Value
 
-**true** if the set on the left side of the operator is greater than the set on the right side of the operator; otherwise **false**.
+**`true`** if the set on the left side of the operator is greater than the set on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -339,7 +339,7 @@ An object of type `set`.
 
 ### Return Value
 
-**true** if the set on the left side of the operator is greater than or equal to the set on the right side of the list; otherwise **false**.
+**`true`** if the set on the left side of the operator is greater than or equal to the set on the right side of the list; otherwise **`false`**.
 
 ### Remarks
 
@@ -408,7 +408,7 @@ An object of type `multiset`.
 
 ### Return Value
 
-**true** if the sets or multisets are not equal; **false** if sets or multisets are equal.
+**`true`** if the sets or multisets are not equal; **`false`** if sets or multisets are equal.
 
 ### Remarks
 
@@ -470,7 +470,7 @@ An object of type `multiset`.
 
 ### Return Value
 
-**true** if the multiset on the left side of the operator is strictly less than the multiset on the right side of the operator; otherwise **false**.
+**`true`** if the multiset on the left side of the operator is strictly less than the multiset on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -536,7 +536,7 @@ An object of type `multiset`.
 
 ### Return Value
 
-**true** if the multiset on the left side of the operator is less than or equal to the multiset on the right side of the operator; otherwise **false**.
+**`true`** if the multiset on the left side of the operator is less than or equal to the multiset on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -611,7 +611,7 @@ An object of type `multiset`.
 
 ### Return Value
 
-**true** if the multiset on the left side of the operator is equal to the multiset on the right side of the operator; otherwise **false**.
+**`true`** if the multiset on the left side of the operator is equal to the multiset on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -673,7 +673,7 @@ An object of type `multiset`.
 
 ### Return Value
 
-**true** if the multiset on the left side of the operator is greater than the multiset on the right side of the operator; otherwise **false**.
+**`true`** if the multiset on the left side of the operator is greater than the multiset on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -739,7 +739,7 @@ An object of type `multiset`.
 
 ### Return Value
 
-**true** if the multiset on the left side of the operator is greater than or equal to the multiset on the right side of the list; otherwise **false**.
+**`true`** if the multiset on the left side of the operator is greater than or equal to the multiset on the right side of the list; otherwise **`false`**.
 
 ### Remarks
 

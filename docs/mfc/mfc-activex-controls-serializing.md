@@ -41,13 +41,13 @@ The following table lists the possible property exchange functions you can use t
 |**PX_Bool( )**|Serializes a type Boolean property.|
 |**PX_Color( )**|Serializes a type color property.|
 |**PX_Currency( )**|Serializes a type **CY** (currency) property.|
-|**PX_Double( )**|Serializes a type **double** property.|
+|**PX_Double( )**|Serializes a type **`double`** property.|
 |**PX_Font( )**|Serializes a Font type property.|
-|**PX_Float( )**|Serializes a type **float** property.|
+|**PX_Float( )**|Serializes a type **`float`** property.|
 |**PX_IUnknown( )**|Serializes a property of type `LPUNKNOWN`.|
-|**PX_Long( )**|Serializes a type **long** property.|
+|**PX_Long( )**|Serializes a type **`long`** property.|
 |**PX_Picture( )**|Serializes a type Picture property.|
-|**PX_Short( )**|Serializes a type **short** property.|
+|**PX_Short( )**|Serializes a type **`short`** property.|
 |**PXstring( )**|Serializes a type `CString` property.|
 |**PX_ULong( )**|Serializes a type **ULONG** property.|
 |**PX_UShort( )**|Serializes a type **USHORT** property.|

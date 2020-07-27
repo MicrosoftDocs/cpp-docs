@@ -125,19 +125,19 @@ CComVariant(const CComBSTR& bstrSrc);
 [in] The character string used to initialize the `CComVariant` object. You can pass a zero-terminated wide (Unicode) character string to the LPCOLESTR version of the constructor or an ANSI string to the LPCSTR version. In either case the string is converted to a Unicode BSTR allocated using `SysAllocString`. The type of the `CComVariant` object will be VT_BSTR.
 
 *bSrc*<br/>
-[in] The **bool** used to initialize the `CComVariant` object. The **bool** argument is converted to a VARIANT_BOOL before being stored. The type of the `CComVariant` object will be VT_BOOL.
+[in] The **`bool`** used to initialize the `CComVariant` object. The **`bool`** argument is converted to a VARIANT_BOOL before being stored. The type of the `CComVariant` object will be VT_BOOL.
 
 *nSrc*<br/>
-[in] The **int**, **BYTE**, **short**, **long**, LONGLONG, ULONGLONG, **unsigned short**, **unsigned long**, or **unsigned int** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4, or VT_UI4, respectively.
+[in] The **`int`**, **BYTE**, **`short`**, **`long`**, LONGLONG, ULONGLONG, **`unsigned short`**, **`unsigned long`**, or **`unsigned int`** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4, or VT_UI4, respectively.
 
 *vtSrc*<br/>
-[in] The type of the variant. When the first parameter is **int**, valid types are VT_I4 and VT_INT. When the first parameter is **long**, valid types are VT_I4 and VT_ERROR. When the first parameter is **double**, valid types are VT_R8 and VT_DATE. When the first parameter is **unsigned int**, valid types are VT_UI4 and VT_UINT.
+[in] The type of the variant. When the first parameter is **`int`**, valid types are VT_I4 and VT_INT. When the first parameter is **`long`**, valid types are VT_I4 and VT_ERROR. When the first parameter is **`double`**, valid types are VT_R8 and VT_DATE. When the first parameter is **`unsigned int`**, valid types are VT_UI4 and VT_UINT.
 
 *fltSrc*<br/>
-[in] The **float** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_R4.
+[in] The **`float`** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_R4.
 
 *dblSrc*<br/>
-[in] The **double** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_R8.
+[in] The **`double`** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_R8.
 
 *cySrc*<br/>
 [in] The `CY` used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_CY.
@@ -148,7 +148,7 @@ CComVariant(const CComBSTR& bstrSrc);
 Or, the SAFERRAY pointer used to initialize the `CComVariant` object. A copy of the SAFEARRAY is stored in the `CComVariant` object. The type of the `CComVariant` object will be a combination of the original type of the SAFEARRAY and VT_ARRAY.
 
 *cSrc*<br/>
-[in] The **char** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_I1.
+[in] The **`char`** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_I1.
 
 *bstrSrc*<br/>
 [in] The BSTR used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_BSTR.
@@ -270,7 +270,7 @@ Note that the contents of the VARIANT referenced by *pDest* will automatically b
 
 ## <a name="getsize"></a> CComVariant::GetSize
 
-For simple-fixed size VARIANTs, this method returns the **sizeof** the underlying data type plus **sizeof(VARTYPE)**.
+For simple-fixed size VARIANTs, this method returns the **`sizeof`** value for the underlying data type plus **sizeof(VARTYPE)**.
 
 ```
 ULONG GetSize() const;
@@ -282,7 +282,7 @@ The size in bytes of the current contents of the `CComVariant` object.
 
 ### Remarks
 
-If the VARIANT contains an interface pointer, `GetSize` queries for `IPersistStream` or `IPersistStreamInit`. If successful, the return value is the low-order 32 bits of the value returned by `GetSizeMax` plus the **sizeof** a CLSID and **sizeof(VARTYPE)**. If the interface pointer is NULL, `GetSize` returns the **sizeof** a CLSID plus **sizeof(VARTYPE)**. If the total size is larger than ULONG_MAX, `GetSize` returns **sizeof(VARTYPE)** which indicates an error.
+If the VARIANT contains an interface pointer, `GetSize` queries for `IPersistStream` or `IPersistStreamInit`. If successful, the return value is the low-order 32 bits of the value returned by `GetSizeMax` plus `sizeof(CLSID)` and `sizeof(VARTYPE)`. If the interface pointer is NULL, `GetSize` returns `sizeof(CLSID)` plus `sizeof(VARTYPE)`. If the total size is larger than ULONG_MAX, `GetSize` returns `sizeof(VARTYPE)` which indicates an error.
 
 In all other cases, a temporary VARIANT of type VT_BSTR is coerced from the current VARIANT. The length of this BSTR is calculated as the size of the length of the string plus the length of the string itself plus the size of the null character plus **sizeof(VARTYPE)**. If the VARIANT cannot be coerced to a VARIANT of type VT_BSTR, `GetSize` returns **sizeof(VARTYPE)**.
 
@@ -329,16 +329,16 @@ CComVariant& operator=(char cSrc) throw();
 [in] The character string to be assigned to the `CComVariant` object. You can pass a zero-terminated wide (Unicode) character string to the LPCOLESTR version of the operator or an ANSI string to the LPCSTR version. In either case, the string is converted to a Unicode BSTR allocated using `SysAllocString`. The type of the `CComVariant` object will be VT_BSTR.
 
 *bSrc*<br/>
-[in] The **bool** to be assigned to the `CComVariant` object. The **bool** argument is converted to a VARIANT_BOOL before being stored. The type of the `CComVariant` object will be VT_BOOL.
+[in] The **`bool`** to be assigned to the `CComVariant` object. The **`bool`** argument is converted to a VARIANT_BOOL before being stored. The type of the `CComVariant` object will be VT_BOOL.
 
 *nSrc*<br/>
-[in] The **int**, BYTE, **short**, **long**, LONGLONG, ULONGLONG, **unsigned short**, **unsigned long**, or **unsigned int** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4, or VT_UI4, respectively.
+[in] The **`int`**, BYTE, **`short`**, **`long`**, LONGLONG, ULONGLONG, **`unsigned short`**, **`unsigned long`**, or **`unsigned int`** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4, or VT_UI4, respectively.
 
 *fltSrc*<br/>
-[in] The **float** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_R4.
+[in] The **`float`** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_R4.
 
 *dblSrc*<br/>
-[in] The **double** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_R8.
+[in] The **`double`** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_R8.
 
 *cySrc*<br/>
 [in] The `CY` to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_CY.
@@ -436,7 +436,7 @@ void SetByRef(T* pT) throw();
 ### Parameters
 
 *T*<br/>
-The type of VARIANT, for example, BSTR, **int**, or **char**.
+The type of VARIANT, for example, BSTR, **`int`**, or **`char`**.
 
 *pT*<br/>
 The pointer used to initialize the `CComVariant` object.

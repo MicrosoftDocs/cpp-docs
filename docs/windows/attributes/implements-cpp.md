@@ -34,7 +34,7 @@ By default, only COM-interfaces that are base classes of the `coclass` are added
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|Yes|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

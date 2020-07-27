@@ -59,7 +59,7 @@ The **_gmtime32_s** function breaks down the *sourceTime* value and stores it in
 > [!NOTE]
 > The target environment should try to determine whether daylight savings time is in effect. The C run-time library assumes the United States rules for implementing the calculation of daylight saving time .
 
-Each of the structure fields is of type **int**, as shown in the following table.
+Each of the structure fields is of type **`int`**, as shown in the following table.
 
 |Field|Description|
 |-|-|

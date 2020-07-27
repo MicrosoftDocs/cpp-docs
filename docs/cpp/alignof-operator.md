@@ -28,7 +28,7 @@ For example:
 | **`alignof( float )`** | 4 |
 | **`alignof( double )`** | 8 |
 
-The **`alignof`** value is the same as the value for `sizeof` for basic types. Consider, however, this example:
+The **`alignof`** value is the same as the value for **`sizeof`** for basic types. Consider, however, this example:
 
 ```cpp
 typedef struct { int a; double b; } S;

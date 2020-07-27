@@ -9,7 +9,7 @@ ms.assetid: b5d2df4f-87d0-4292-9981-25c6a6013c05
 
 'argument': not a valid named attribute argument
 
-In order for an attribute class data member to be a valid named argument, it must not be marked `static`, `const`, or `literal`. If a property, the property must not be `static` and must have get and set accessors.
+In order for an attribute class data member to be a valid named argument, it must not be marked **`static`**, **`const`**, or **`literal`**. If a property, the property must not be **`static`** and must have get and set accessors.
 
 For more information, see [property](../../extensions/property-cpp-component-extensions.md) and [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 

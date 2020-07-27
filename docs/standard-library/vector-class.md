@@ -48,10 +48,10 @@ The [vector\<bool> reference class](../standard-library/vector-bool-class.md#ref
 |||
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the vector object.|
-|[const_iterator](#const_iterator)|A type that provides a random-access iterator that can read a **const** element in a vector.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a vector.|
-|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a vector. It's used for reading and performing **const** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a random-access iterator that can read any **const** element in the vector.|
+|[const_iterator](#const_iterator)|A type that provides a random-access iterator that can read a **`const`** element in a vector.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **`const`** element in a vector.|
+|[const_reference](#const_reference)|A type that provides a reference to a **`const`** element stored in a vector. It's used for reading and performing **`const`** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a random-access iterator that can read any **`const`** element in the vector.|
 |[difference_type](#difference_type)|A type that provides the difference between the addresses of two elements in a vector.|
 |[iterator](#iterator)|A type that provides a random-access iterator that can read or modify any element in a vector.|
 |[pointer](#pointer)|A type that provides a pointer to an element in a vector.|
@@ -401,7 +401,7 @@ The length of storage allocated is now 2.
 
 ## <a name="cbegin"></a> cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Returns a **`const`** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -409,13 +409,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **`const`** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range can't be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -427,7 +427,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a> cend
 
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
+Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -435,13 +435,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A **const** random-access iterator that points just beyond the end of the range.
+A **`const`** random-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -491,7 +491,7 @@ The size of v1 after clearing is 0
 
 ## <a name="const_iterator"></a> const_iterator
 
-A type that provides a random-access iterator that can read a **const** element in a vector.
+A type that provides a random-access iterator that can read a **`const`** element in a vector.
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -507,7 +507,7 @@ See the example for [back](#back) for an example that uses `const_iterator`.
 
 ## <a name="const_pointer"></a> const_pointer
 
-A type that provides a pointer to a **const** element in a vector.
+A type that provides a pointer to a **`const`** element in a vector.
 
 ```cpp
 typedef typename Allocator::const_pointer const_pointer;
@@ -521,7 +521,7 @@ An [iterator](#iterator) is more commonly used to access a vector element.
 
 ## <a name="const_reference"></a> const_reference
 
-A type that provides a reference to a **const** element stored in a vector. It's used for reading and performing **const** operations.
+A type that provides a reference to a **`const`** element stored in a vector. It's used for reading and performing **`const`** operations.
 
 ```cpp
 typedef typename Allocator::const_reference const_reference;
@@ -565,7 +565,7 @@ The second element is 20
 
 ## <a name="const_reverse_iterator"></a> const_reverse_iterator
 
-A type that provides a random-access iterator that can read any **const** element in the vector.
+A type that provides a random-access iterator that can read any **`const`** element in the vector.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -899,7 +899,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the vector is empty; **false** if the vector isn't empty.
+**`true`** if the vector is empty; **`false`** if the vector isn't empty.
 
 ### Example
 

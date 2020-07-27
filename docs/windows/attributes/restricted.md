@@ -59,9 +59,9 @@ class c : public a, public b
 
 |||
 |-|-|
-|**Applies to**|Interface method, **interface**, **class**, **struct**|
+|**Applies to**|Interface method, **interface**, **`class`**, **`struct`**|
 |**Repeatable**|No|
-|**Required attributes**|**coclass** (when applied to **class** or **struct**)|
+|**Required attributes**|**coclass** (when applied to **`class`** or **`struct`**)|
 |**Invalid attributes**|None|
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).

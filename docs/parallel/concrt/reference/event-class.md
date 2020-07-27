@@ -143,7 +143,7 @@ An array of events to wait on. The number of events within the array is indicate
 The count of events within the array supplied in the `_PPEvents` parameter.
 
 *_FWaitAll*<br/>
-If set to the value **true**, the parameter specifies that all events within the array supplied in the `_PPEvents` parameter must become signaled in order to satisfy the wait. If set to the value **false**, it specifies that any event within the array supplied in the `_PPEvents` parameter becoming signaled will satisfy the wait.
+If set to the value **`true`**, the parameter specifies that all events within the array supplied in the `_PPEvents` parameter must become signaled in order to satisfy the wait. If set to the value **`false`**, it specifies that any event within the array supplied in the `_PPEvents` parameter becoming signaled will satisfy the wait.
 
 *_Timeout*<br/>
 Indicates the number of milliseconds before the wait times out. The value `COOPERATIVE_TIMEOUT_INFINITE` signifies that there is no timeout.

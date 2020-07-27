@@ -64,7 +64,7 @@ The function does not cause [_matherr](matherr.md) to be invoked, cause any floa
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **fmin** that take and return **float** and **`long double`** types. In a C program, **fmin** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **fmin** that take and return **`float`** and **`long double`** types. In a C program, **fmin** always takes and returns a **`double`**.
 
 ## Requirements
 

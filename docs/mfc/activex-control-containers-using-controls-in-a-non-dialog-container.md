@@ -44,7 +44,7 @@ Implementing this feature is a four-step process.
 
 1. Add a `WM_CREATE` message handler to class `CMyView`.
 
-1. In the handler function, `CMyView::OnCreate`, make a call to the control's `Create` function using the **this** pointer as the parent window:
+1. In the handler function, `CMyView::OnCreate`, make a call to the control's `Create` function using the **`this`** pointer as the parent window:
 
    [!code-cpp[NVC_MFC_AxCont#15](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_4.cpp)]
 

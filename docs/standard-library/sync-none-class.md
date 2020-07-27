@@ -90,7 +90,7 @@ bool equals(const sync<Cache>& Other) const;
 
 ### Return Value
 
-The member function always returns **true**.
+The member function always returns **`true`**.
 
 ### Remarks
 

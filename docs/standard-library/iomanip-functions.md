@@ -29,7 +29,7 @@ T7 get_money(Money& amount, bool use_intl);
 The extracted monetary value.
 
 *use_intl*\
-If **true**, use international format. The default value is **false**.
+If **`true`**, use international format. The default value is **`false`**.
 
 ### Remarks
 
@@ -73,7 +73,7 @@ T8 put_money(const Money& amount, bool use_intl);
 The monetary amount to insert into the stream.
 
 *use_intl*\
-Set to **true** if manipulator should use international format, **false** if it should not.
+Set to **`true`** if manipulator should use international format, **`false`** if it should not.
 
 ### Return Value
 

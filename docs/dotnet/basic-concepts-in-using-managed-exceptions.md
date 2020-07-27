@@ -57,7 +57,7 @@ void GlobalFunction() {
 
 ## <a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a> Try/Catch Blocks for CLR Extensions
 
-The same **try**/**catch** block structure can be used for catching both CLR and native exceptions:
+The same **`try`**/**`catch`** block structure can be used for catching both CLR and native exceptions:
 
 ```cpp
 // clr_exception_handling_3.cpp
@@ -127,11 +127,11 @@ The order of events for a thrown exception is as follows:
 
 ### Catching Unmanaged Types
 
-When an unmanaged object type is thrown, it is wrapped with an exception of type <xref:System.Runtime.InteropServices.SEHException>. When searching for the appropriate **catch** clause, there are two possibilities.
+When an unmanaged object type is thrown, it is wrapped with an exception of type <xref:System.Runtime.InteropServices.SEHException>. When searching for the appropriate **`catch`** clause, there are two possibilities.
 
 - If a native C++ type is encountered, the exception is unwrapped and compared to the type encountered. This comparison allows a native C++ type to be caught in the normal way.
 
-- However, if a **catch** clause of type **SEHException** or any of its base classes is examined first, the clause will intercept the exception. Therefore, you should place all catch clauses that catch native C++ types first before any catch clauses of CLR types.
+- However, if a **`catch`** clause of type **SEHException** or any of its base classes is examined first, the clause will intercept the exception. Therefore, you should place all catch clauses that catch native C++ types first before any catch clauses of CLR types.
 
 Note that
 

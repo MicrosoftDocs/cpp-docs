@@ -47,7 +47,7 @@ If you create a `CScrollBar` object within a dialog box (through a dialog resour
 
 If you create a `CScrollBar` object within a window, you may also need to destroy it.
 
-If you create the `CScrollBar` object on the stack, it is destroyed automatically. If you create the `CScrollBar` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the user terminates the Windows scroll bar.
+If you create the `CScrollBar` object on the stack, it is destroyed automatically. If you create the `CScrollBar` object on the heap by using the **`new`** function, you must call **`delete`** on the object to destroy it when the user terminates the Windows scroll bar.
 
 If you allocate any memory in the `CScrollBar` object, override the `CScrollBar` destructor to dispose of the allocations.
 

@@ -23,7 +23,7 @@ There are three main C++ language elements to run-time type information:
 
 - The [type_info](../cpp/type-info-class.md) class.
 
-   Used to hold the type information returned by the **typeid** operator.
+   Used to hold the type information returned by the **`typeid`** operator.
 
 ## See also
 

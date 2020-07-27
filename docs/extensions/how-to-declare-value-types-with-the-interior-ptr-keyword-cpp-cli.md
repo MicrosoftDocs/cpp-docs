@@ -61,9 +61,9 @@ int main() {
 
 ### Description
 
-In a value type, the **this** pointer evaluates to an interior_ptr.
+In a value type, the **`this`** pointer evaluates to an interior_ptr.
 
-In the body of a non-static member-function of a value type `V`, **this** is an expression of type `interior_ptr<V>` whose value is the address of the object for which the function is called.
+In the body of a non-static member-function of a value type `V`, **`this`** is an expression of type `interior_ptr<V>` whose value is the address of the object for which the function is called.
 
 ### Code
 

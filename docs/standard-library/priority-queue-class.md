@@ -103,7 +103,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the priority_queue is empty; **false** if the priority_queue is nonempty.
+**`true`** if the priority_queue is empty; **`false`** if the priority_queue is nonempty.
 
 ### Example
 
@@ -237,7 +237,7 @@ The position of the first element beyond the range of elements to be copied.
 
 ### Remarks
 
-Each of the first three constructors specifies an empty initial priority_queue, the second also specifying the type of comparison function (`comp`) to be used in establishing the order of the elements and the third explicitly specifying the `container_type` (`_Cont`) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
+Each of the first three constructors specifies an empty initial priority_queue, the second also specifying the type of comparison function (`comp`) to be used in establishing the order of the elements and the third explicitly specifying the `container_type` (`_Cont`) to be used. The keyword **`explicit`** suppresses certain kinds of automatic type conversion.
 
 The fourth constructor specifies a copy of the priority_queue *right*.
 

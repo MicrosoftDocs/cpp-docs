@@ -21,7 +21,7 @@ The only requirement in any function call is that the expression before the pare
 
 ## Example
 
-This example illustrates function calls called from a `switch` statement:
+This example illustrates function calls called from a **`switch`** statement:
 
 ```
 int main()
@@ -71,9 +71,9 @@ work( count, lift );
 
 passes an integer variable, `count`, and the address of the function `lift` to the function `work`. Note that the function address is passed simply by giving the function identifier, since a function identifier evaluates to a pointer expression. To use a function identifier in this way, the function must be declared or defined before the identifier is used; otherwise, the identifier is not recognized. In this case, a prototype for `work` is given at the beginning of the `main` function.
 
-The parameter `function` in `work` is declared to be a pointer to a function taking one **`int`** argument and returning a **long** value. The parentheses around the parameter name are required; without them, the declaration would specify a function returning a pointer to a **long** value.
+The parameter `function` in `work` is declared to be a pointer to a function taking one **`int`** argument and returning a **`long`** value. The parentheses around the parameter name are required; without them, the declaration would specify a function returning a pointer to a **`long`** value.
 
-The function `work` calls the selected function from inside the **for** loop by using the following function call:
+The function `work` calls the selected function from inside the **`for`** loop by using the following function call:
 
 ```
 ( *function )( i );

@@ -14,7 +14,7 @@ Declarations of pointers to members are special cases of pointer declarations.  
 
    - An optional storage class specifier.
 
-   - Optional **const** and **volatile** specifiers.
+   - Optional **`const`** and **`volatile`** specifiers.
 
    - The type specifier: the name of a type. It's the type of the member to be pointed to, not the class.
 
@@ -28,7 +28,7 @@ Declarations of pointers to members are special cases of pointer declarations.  
 
    - The __`*`__ operator.
 
-   - Optional **const** and **volatile** specifiers.
+   - Optional **`const`** and **`volatile`** specifiers.
 
    - The identifier naming the pointer to member.
 

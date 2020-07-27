@@ -42,7 +42,7 @@ The mask shifted by `nBit` bits.
 
 ## Remarks
 
-If the second parameter is greater than 64 on x64 (32 on x86), that number is taken modulo 64 (32 on x86) to determine the number of bits to shift. The `ll` prefix indicates that it's an operation on **`long long`**, another name for `__int64`, the 64-bit signed integral type.
+If the second parameter is greater than 64 on x64 (32 on x86), that number is taken modulo 64 (32 on x86) to determine the number of bits to shift. The `ll` prefix indicates that it's an operation on **`long long`**, another name for **`__int64`**, the 64-bit signed integral type.
 
 ## Example
 

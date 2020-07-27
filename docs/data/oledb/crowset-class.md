@@ -452,7 +452,7 @@ HRESULT MoveNext(LONG lSkip,
 [in] The number of rows to skip before fetching.
 
 *bForward*<br/>
-[in] Pass **true** to move forward to the next record, **false** to move backward.
+[in] Pass **`true`** to move forward to the next record, **`false`** to move backward.
 
 ### Return Value
 

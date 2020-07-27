@@ -68,7 +68,7 @@ HRESULT GetInitializationString(BSTR* pInitializationString,
 [out] A pointer to the initialization string.
 
 *bIncludePassword*<br/>
-[in] **true** if string includes a password; otherwise **false**.
+[in] **`true`** if string includes a password; otherwise **`false`**.
 
 ### Return Value
 
@@ -272,9 +272,9 @@ HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
 [in] The initialization string.
 
 *fPromptForInfo*<br/>
-[in] If this argument is set to **true**, then `OpenFromInitializationString` will set the DBPROP_INIT_PROMPT property to DBPROMPT_COMPLETEREQUIRED, which specifies that the user be prompted only if more information is needed. This is useful for situations in which the initialization string specifies a database that requires a password, but the string does not contain the password. The user will be prompted for a password (or any other missing information) when trying to connect to the database.
+[in] If this argument is set to **`true`**, then `OpenFromInitializationString` will set the DBPROP_INIT_PROMPT property to DBPROMPT_COMPLETEREQUIRED, which specifies that the user be prompted only if more information is needed. This is useful for situations in which the initialization string specifies a database that requires a password, but the string does not contain the password. The user will be prompted for a password (or any other missing information) when trying to connect to the database.
 
-The default value is **false**, which specifies that the user never be prompted (sets DBPROP_INIT_PROMPT to DBPROMPT_NOPROMPT).
+The default value is **`false`**, which specifies that the user never be prompted (sets DBPROP_INIT_PROMPT to DBPROMPT_NOPROMPT).
 
 ### Return Value
 

@@ -9,7 +9,7 @@ ms.assetid: d52b2fe4-566a-40a9-b8e2-8dce1f287668
 
 illegal else without matching if
 
-Each `else` must have a matching `if`.
+Each **`else`** must have a matching **`if`**.
 
 The following sample generates C2181:
 
