@@ -54,7 +54,7 @@ The following procedure adds a parameterized property, called Array, which can b
 
 1. In the **Property Name** box, type `Array`.
 
-1. In the **Property Type** box, select **short**.
+1. In the **Property Type** box, select **`short`**.
 
 1. For **Implementation** Type, click **Get/Set Methods**.
 
@@ -82,7 +82,7 @@ In addition, the Add Property Wizard adds the following lines to the control dis
 
 Finally, the implementations of the `GetArray` and `SetArray` functions are added to the end of the .CPP file. In most cases, you will modify the Get function to return the value of the property. The Set function will usually contain code that should execute, either before or after the property changes.
 
-For this property to be useful, you could declare a two-dimensional array member variable in the control class, of type **short**, to store values for the parameterized property. You could then modify the Get function to return the value stored at the proper row and column, as indicated by the parameters, and modify the Set function to update the value referenced by the row and column parameters.
+For this property to be useful, you could declare a two-dimensional array member variable in the control class, of type **`short`**, to store values for the parameterized property. You could then modify the Get function to return the value stored at the proper row and column, as indicated by the parameters, and modify the Set function to update the value referenced by the row and column parameters.
 
 ## <a name="_core_handling_errors_in_your_activex_control"></a> Handling Errors in Your ActiveX Control
 

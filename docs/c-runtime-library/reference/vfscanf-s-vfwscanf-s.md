@@ -51,7 +51,7 @@ The **vfscanf_s** function reads data from the current position of *stream* into
 The main difference between the more secure functions (that have the **_s** suffix) and the other versions is that the more secure functions require the size in characters of each **c**, **C**, **s**, **S**, and **[** type field to be passed as an argument immediately following the variable. For more information, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
-> The size parameter is of type **unsigned**, not **size_t**.
+> The size parameter is of type **`unsigned`**, not **size_t**.
 
 ### Generic-Text Routine Mappings
 

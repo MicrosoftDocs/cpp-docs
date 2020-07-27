@@ -45,9 +45,9 @@ int main() {
 
 ## Example
 
-C2676 can also occur if you attempt to do pointer arithmetic on the `this` pointer of a reference type.
+C2676 can also occur if you attempt to do pointer arithmetic on the **`this`** pointer of a reference type.
 
-The `this` pointer is of type handle in a reference type. For more information, see [Semantics of the this pointer](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).
+The **`this`** pointer is of type handle in a reference type. For more information, see [Semantics of the this pointer](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).
 
 The following sample generates C2676.
 

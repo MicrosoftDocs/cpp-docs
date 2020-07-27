@@ -62,7 +62,7 @@ The `is_nothrow_invocable` type predicate holds true if the callable type *Calla
 
 The `is_nothrow_invocable_r` type predicate holds true if the callable type *Callable* can be invoked using the arguments *Args* in an unevaluated context to produce a result type convertible to *Convertible*, and that such a call is known not to throw an exception.
 
-Each of the types *Convertible*, *Callable*, and the types in the parameter pack *Args* must be a complete type, an array of unknown bound, or a possibly cv-qualified **void**. Otherwise, the behavior of the predicate is undefined.
+Each of the types *Convertible*, *Callable*, and the types in the parameter pack *Args* must be a complete type, an array of unknown bound, or a possibly cv-qualified **`void`**. Otherwise, the behavior of the predicate is undefined.
 
 ## Example
 

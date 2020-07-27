@@ -7,7 +7,7 @@ ms.assetid: 2b5f8bfd-9098-47fc-be8f-598a0c975ed4
 ---
 # WCHAR_MAX
 
-Maximum value for type `wchar_t`.
+Maximum value for type **`wchar_t`**.
 
 ## Syntax
 

@@ -118,7 +118,7 @@ When you write the handler function, specify the extra **UINT** parameter, as sh
 
 The `OnButtonClicked` handler for a single **BN_CLICKED** message takes no parameters. The same handler for a range of buttons takes one **UINT**. The extra parameter allows for identifying the particular control responsible for generating the **BN_CLICKED** message.
 
-The code shown in the example is typical: converting the value passed to an `int` within the message range and asserting that this is the case. Then you might take some different action depending on which button was clicked.
+The code shown in the example is typical: converting the value passed to an **`int`** within the message range and asserting that this is the case. Then you might take some different action depending on which button was clicked.
 
 ## See also
 

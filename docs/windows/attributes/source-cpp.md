@@ -66,7 +66,7 @@ class NN : public b
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**, **interface**|
+|**Applies to**|**`class`**, **`struct`**, **interface**|
 |**Repeatable**|No|
 |**Required attributes**|`coclass` (when applied to class or struct)|
 |**Invalid attributes**|None|

@@ -978,7 +978,7 @@ A handle to the icon that contains the bitmap and mask for the new image.
 
 The version returning BOOL returns nonzero if successful; otherwise 0.
 
-The version returning **int** returns the zero-based index of the image if successful; otherwise - 1.
+The version returning **`int`** returns the zero-based index of the image if successful; otherwise - 1.
 
 ### Remarks
 

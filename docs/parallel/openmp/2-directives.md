@@ -202,7 +202,7 @@ There's an implicit barrier at the end of a `for` construct unless a `nowait` cl
 
 Restrictions to the `for` directive are as follows:
 
-- The `for` loop must be a structured block, and, in addition, its execution must not be terminated by a `break` statement.
+- The `for` loop must be a structured block, and, in addition, its execution must not be terminated by a **`break`** statement.
 
 - The values of the loop control expressions of the `for` loop associated with a `for` directive must be the same for all the threads in the team.
 
@@ -583,7 +583,7 @@ void f(int n) {
 
 Several directives accept clauses that allow a user to control the sharing attributes of variables for the duration of the region. Sharing attribute clauses apply only to variables in the lexical extent of the directive on which the clause appears. Not all of the following clauses are allowed on all directives. The list of clauses that are valid on a particular directive are described with the directive.
 
-If a variable is visible when a parallel or work-sharing construct is encountered, and the variable isn't specified in a sharing attribute clause or `threadprivate` directive, then the variable is shared. Static variables declared within the dynamic extent of a parallel region are shared. Heap allocated memory (for example, using `malloc()` in C or C++ or the `new` operator in C++) is shared. (The pointer to this memory, however, can be either private or shared.) Variables with automatic storage duration declared within the dynamic extent of a parallel region are private.
+If a variable is visible when a parallel or work-sharing construct is encountered, and the variable isn't specified in a sharing attribute clause or `threadprivate` directive, then the variable is shared. Static variables declared within the dynamic extent of a parallel region are shared. Heap allocated memory (for example, using `malloc()` in C or C++ or the **`new`** operator in C++) is shared. (The pointer to this memory, however, can be either private or shared.) Variables with automatic storage duration declared within the dynamic extent of a parallel region are private.
 
 Most of the clauses accept a *variable-list* argument, which is a comma-separated list of variables that are visible. If a variable referenced in a data-sharing attribute clause has a type derived from a template, and there are no other references to that variable in the program, the behavior is undefined.
 
@@ -616,7 +616,7 @@ The restrictions to the `private` clause are as follows:
 
 - A variable with a class type that's specified in a `private` clause must have an accessible, unambiguous default constructor.
 
-- A variable specified in a `private` clause must not have a `const`-qualified type unless it has a class type with a `mutable` member.
+- A variable specified in a `private` clause must not have a **`const`**-qualified type unless it has a class type with a `mutable` member.
 
 - A variable specified in a `private` clause must not have an incomplete type or a reference type.
 
@@ -676,7 +676,7 @@ The `default` clause allows the user to affect the data-sharing attributes of va
 default(shared | none)
 ```
 
-Specifying `default(shared)` is equivalent to explicitly listing each currently visible variable in a `shared` clause, unless it's `threadprivate` or `const`-qualified. In the absence of an explicit `default` clause, the default behavior is the same as if `default(shared)` were specified.
+Specifying `default(shared)` is equivalent to explicitly listing each currently visible variable in a `shared` clause, unless it's `threadprivate` or **`const`**-qualified. In the absence of an explicit `default` clause, the default behavior is the same as if `default(shared)` were specified.
 
 Specifying `default(none)` requires that at least one of the following must be true for every reference to a variable in the lexical extent of the parallel construct:
 
@@ -686,7 +686,7 @@ Specifying `default(none)` requires that at least one of the following must be t
 
 - The variable is `threadprivate`.
 
-- The variable has a `const`-qualified type.
+- The variable has a **`const`**-qualified type.
 
 - The variable is the loop control variable for a `for` loop that immediately follows a `for` or `parallel for` directive, and the variable reference appears inside the loop.
 
@@ -774,7 +774,7 @@ The restrictions to the `reduction` clause are as follows:
 
 - The type of the variables in the `reduction` clause must be valid for the reduction operator except that pointer types and reference types are never permitted.
 
-- A variable that's specified in the `reduction` clause must not be `const`-qualified.
+- A variable that's specified in the `reduction` clause must not be **`const`**-qualified.
 
 - Variables that are private within a parallel region or that appear in the `reduction` clause of a `parallel` directive can't be specified in a `reduction` clause on a work-sharing directive that binds to the parallel construct.
 

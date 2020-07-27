@@ -34,7 +34,7 @@ This topic lists the standard dialog data exchange (DDX) routines used for commo
 
 ## <a name="ddx_cbindex"></a> DDX_CBIndex
 
-The `DDX_CBIndex` function manages the transfer of **int** data between a combo box control in a dialog box, form view, or control view object and a **int** data member of the dialog box, form view, or control view object.
+The `DDX_CBIndex` function manages the transfer of **`int`** data between a combo box control in a dialog box, form view, or control view object and a **`int`** data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_CBIndex(
@@ -136,7 +136,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_check"></a> DDX_Check
 
-The `DDX_Check` function manages the transfer of **int** data between a check box control in a dialog box, form view, or control view object and a **int** data member of the dialog box, form view, or control view object.
+The `DDX_Check` function manages the transfer of **`int`** data between a check box control in a dialog box, form view, or control view object and a **`int`** data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_Check(
@@ -320,7 +320,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_lbindex"></a> DDX_LBIndex
 
-The `DDX_LBIndex` function manages the transfer of **int** data between a list box control in a dialog box, form view, or control view object and an **int** data member of the dialog box, form view, or control view object.
+The `DDX_LBIndex` function manages the transfer of **`int`** data between a list box control in a dialog box, form view, or control view object and an **`int`** data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_LBIndex(
@@ -466,7 +466,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_radio"></a> DDX_Radio
 
-The `DDX_Radio` function manages the transfer of **int** data between a radio control group in a dialog box, form view, or control view object and a **int** data member of the dialog box, form view, or control view object. The value of the **int** data member is determined according to which radio button within the group is selected.
+The `DDX_Radio` function manages the transfer of **`int`** data between a radio control group in a dialog box, form view, or control view object and a **`int`** data member of the dialog box, form view, or control view object. The value of the **`int`** data member is determined according to which radio button within the group is selected.
 
 ```cpp
 void AFXAPI DDX_Radio(
@@ -490,7 +490,7 @@ A reference to a member variable of the dialog box, form view, or control view o
 
 When `DDX_Radio` is called, *value* is set to the current state of the radio control group. The value is set as a 0-based index of the radio control that is currently checked, or -1 if no radio controls are checked.
 
-For example, in case that the first radio button in the group is checked (the button with WS_GROUP style) the value of the **int** member is 0 and so on.
+For example, in case that the first radio button in the group is checked (the button with WS_GROUP style) the value of the **`int`** member is 0 and so on.
 
 For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -500,7 +500,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_scroll"></a> DDX_Scroll
 
-The `DDX_Scroll` function manages the transfer of **int** data between a scroll-bar control in a dialog box, form view, or control view object and an **int** data member of the dialog box, form view, or control view object.
+The `DDX_Scroll` function manages the transfer of **`int`** data between a scroll-bar control in a dialog box, form view, or control view object and an **`int`** data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_Scroll(
@@ -532,7 +532,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_slider"></a> DDX_Slider
 
-The `DDX_Slider` function manages the transfer of **int** data between a slider control in a dialog box or form view and an **int** data member of the dialog box or form view object.
+The `DDX_Slider` function manages the transfer of **`int`** data between a slider control in a dialog box or form view and an **`int`** data member of the dialog box or form view object.
 
 ```cpp
 void AFXAPI DDX_Slider(
@@ -564,7 +564,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_text"></a> DDX_Text
 
-The `DDX_Text` function manages the transfer of **int**, **UINT**, **long**, DWORD, `CString`, **float**, or **double** data between an edit control in a dialog box, form view, or control view and a [CString](../../atl-mfc-shared/reference/cstringt-class.md) data member of the dialog box, form view, or control view object.
+The `DDX_Text` function manages the transfer of **`int`**, **UINT**, **`long`**, DWORD, `CString`, **`float`**, or **`double`** data between an edit control in a dialog box, form view, or control view and a [CString](../../atl-mfc-shared/reference/cstringt-class.md) data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_Text(

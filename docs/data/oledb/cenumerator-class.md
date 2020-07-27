@@ -51,7 +51,7 @@ bool Find(TCHAR* szSearchName) throw();
 
 ### Return Value
 
-**true** if the name was found. Otherwise, **false**.
+**`true`** if the name was found. Otherwise, **`false`**.
 
 ### Remarks
 

@@ -9,7 +9,7 @@ ms.assetid: 74aa5714-e930-4f9e-9061-68ccce7f0d38
 
 'operation' : not allowed on operand of type 'bool'
 
-You cannot apply a decrement operator to objects of type `bool`.
+You cannot apply a decrement operator to objects of type **`bool`**.
 
 The following sample generates C2428:
 

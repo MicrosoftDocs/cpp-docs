@@ -28,7 +28,7 @@ An object of type `unordered_map`.
 
 ### Return Value
 
-**true** if the unordered_maps are not equal; **false** if they are equal.
+**`true`** if the unordered_maps are not equal; **`false`** if they are equal.
 
 ### Remarks
 
@@ -92,7 +92,7 @@ An object of type `unordered_map`.
 
 ### Return Value
 
-**true** if the unordered_maps are equal; **false** if they are not equal.
+**`true`** if the unordered_maps are equal; **`false`** if they are not equal.
 
 ### Remarks
 
@@ -156,7 +156,7 @@ An object of type `unordered_multimap`.
 
 ### Return Value
 
-**true** if the unordered_multimaps are not equal; **false** if they are equal.
+**`true`** if the unordered_multimaps are not equal; **`false`** if they are equal.
 
 ### Remarks
 
@@ -221,7 +221,7 @@ An object of type `unordered_multimap`.
 
 ### Return Value
 
-**true** if the unordered_multimaps are equal; **false** if they are not equal.
+**`true`** if the unordered_multimaps are equal; **`false`** if they are not equal.
 
 ### Remarks
 

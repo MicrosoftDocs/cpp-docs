@@ -14,7 +14,7 @@ You can use only the digits 0 through 7 in an octal escape sequence. Octal escap
 
 Similarly, you must use at least one digit for a hexadecimal escape sequence, but you can omit the second and third digits. Therefore you could specify the hexadecimal escape sequence for the backspace character as either **\x8**, **\x08**, or **\x008**.
 
-The value of the octal or hexadecimal escape sequence must be in the range of representable values for type **unsigned char** for a character constant and type `wchar_t` for a wide-character constant. See [Multibyte and Wide Characters](../c-language/multibyte-and-wide-characters.md) for information on wide-character constants.
+The value of the octal or hexadecimal escape sequence must be in the range of representable values for type **`unsigned char`** for a character constant and type **`wchar_t`** for a wide-character constant. See [Multibyte and Wide Characters](../c-language/multibyte-and-wide-characters.md) for information on wide-character constants.
 
 Unlike octal escape constants, the number of hexadecimal digits in an escape sequence is unlimited. A hexadecimal escape sequence terminates at the first character that is not a hexadecimal digit. Because hexadecimal digits include the letters **a** through **f**, care must be exercised to make sure the escape sequence terminates at the intended digit. To avoid confusion, you can place octal or hexadecimal character definitions in a macro definition:
 

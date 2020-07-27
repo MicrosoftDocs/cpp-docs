@@ -15,8 +15,8 @@ A "structure declaration" names a type and specifies a sequence of variable valu
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union* *identifier*
 
 *struct-or-union*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**struct**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**union**
+&nbsp;&nbsp;&nbsp;&nbsp;**`struct`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`union`**
 
 *struct-declaration-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-declaration*<br/>
@@ -42,7 +42,7 @@ A previously defined *identifier* (tag) can be used to refer to a structure type
 
 The *struct-declaration-list* specifies the types and names of the structure members. A *struct-declaration-list* argument contains one or more variable or bit-field declarations.
 
-Each variable declared in *struct-declaration-list* is defined as a member of the structure type. Variable declarations within *struct-declaration-list* have the same form as other variable declarations discussed in this section, except that the declarations cannot contain storage-class specifiers or initializers. The structure members can have any variable types except type `void`, an incomplete type, or a function type.
+Each variable declared in *struct-declaration-list* is defined as a member of the structure type. Variable declarations within *struct-declaration-list* have the same form as other variable declarations discussed in this section, except that the declarations cannot contain storage-class specifiers or initializers. The structure members can have any variable types except type **`void`**, an incomplete type, or a function type.
 
 A member cannot be declared to have the type of the structure in which it appears. However, a member can be declared as a pointer to the structure type in which it appears as long as the structure type has a tag. This allows you to create linked lists of structures.
 
@@ -83,7 +83,7 @@ struct employee   /* Defines a structure variable named temp */
 } temp;
 ```
 
-The `employee` structure has three members: `name`, `id`, and `class`. The `name` member is a 20-element array, and `id` and `class` are simple members with `int` and **long** type, respectively. The identifier `employee` is the structure identifier.
+The `employee` structure has three members: `name`, `id`, and `class`. The `name` member is a 20-element array, and `id` and `class` are simple members with **`int`** and **`long`** type, respectively. The identifier `employee` is the structure identifier.
 
 ```C
 struct employee student, faculty, staff;
@@ -98,7 +98,7 @@ struct           /* Defines an anonymous struct and a */
 } complex;
 ```
 
-The `complex` structure has two members with **float** type, `x` and `y`. The structure type has no tag and is therefore unnamed or anonymous.
+The `complex` structure has two members with **`float`** type, `x` and `y`. The structure type has no tag and is therefore unnamed or anonymous.
 
 ```C
 struct sample   /* Defines a structure named x */
@@ -109,7 +109,7 @@ struct sample   /* Defines a structure named x */
 } x;
 ```
 
-The first two members of the structure are a `char` variable and a pointer to a **float** value. The third member, `next`, is declared as a pointer to the structure type being defined (`sample`).
+The first two members of the structure are a **`char`** variable and a pointer to a **`float`** value. The third member, `next`, is declared as a pointer to the structure type being defined (`sample`).
 
 Anonymous structures can be useful when the tag named is not needed. This is the case when one declaration defines all structure instances. For example:
 
@@ -138,9 +138,9 @@ struct somestruct
 
 The compiler allows an unsized or zero-sized array as the last member of a structure. This can be useful if the size of a constant array differs when used in various situations. The declaration of such a structure looks like this:
 
-**struct** *identifier* **{** *set-of-declarations* *type* <em>array-name</em>**\[]; };**
+**`struct`** *identifier* **{** *set-of-declarations* *type* <em>array-name</em>**\[]; };**
 
-Unsized arrays can appear only as the last member of a structure. Structures containing unsized array declarations can be nested within other structures as long as no further members are declared in any enclosing structures. Arrays of such structures are not allowed. The `sizeof` operator, when applied to a variable of this type or to the type itself, assumes 0 for the size of the array.
+Unsized arrays can appear only as the last member of a structure. Structures containing unsized array declarations can be nested within other structures as long as no further members are declared in any enclosing structures. Arrays of such structures are not allowed. The **`sizeof`** operator, when applied to a variable of this type or to the type itself, assumes 0 for the size of the array.
 
 Structure declarations can also be specified without a declarator when they are members of another structure or union. The field names are promoted into the enclosing structure. For example, a nameless structure looks like this:
 

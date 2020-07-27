@@ -33,7 +33,7 @@ A generic declaration contains one or more unknown types known as *type paramete
 
 ### Type Arguments
 
-The *type argument* is the actual type used in place of the type parameter when the generic is specialized for a specific type or types. For example, **int** is the type argument in `List<int>`. Value types and handle types are the only types allowed in as a generic type argument.
+The *type argument* is the actual type used in place of the type parameter when the generic is specialized for a specific type or types. For example, **`int`** is the type argument in `List<int>`. Value types and handle types are the only types allowed in as a generic type argument.
 
 ### Constructed Type
 

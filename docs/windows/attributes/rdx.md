@@ -38,7 +38,7 @@ This attribute can be used in conjunction with the [coclass](coclass.md), [progi
 
 |||
 |-|-|
-|**Applies to**|**class** or **struct** member|
+|**Applies to**|**`class`** or **`struct`** member|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

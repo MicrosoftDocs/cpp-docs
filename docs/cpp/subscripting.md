@@ -10,7 +10,7 @@ The subscript operator (**[ ]**), like the function-call operator, is considered
 
 ## Example
 
-The following example demonstrates how to create a vector of type **int** that implements bounds checking:
+The following example demonstrates how to create a vector of type **`int`** that implements bounds checking:
 
 ```cpp
 // subscripting.cpp

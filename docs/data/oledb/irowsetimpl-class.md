@@ -297,7 +297,7 @@ unsigned m_bCanFetchBack:1;
 
 ### Remarks
 
-Linked to the `DBPROP_CANFETCHBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANFETCHBACKWARDS` for `m_bCanFetchBackwards` to be **true**.
+Linked to the `DBPROP_CANFETCHBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANFETCHBACKWARDS` for `m_bCanFetchBackwards` to be **`true`**.
 
 ## <a name="bcanscrollback"></a> IRowsetImpl::m_bCanScrollBack
 
@@ -311,7 +311,7 @@ unsigned  m_bCanScrollBack:1;
 
 ### Remarks
 
-Linked to the `DBPROP_CANSCROLLBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANSCROLLBACKWARDS` for `m_bCanFetchBackwards` to be **true**.
+Linked to the `DBPROP_CANSCROLLBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANSCROLLBACKWARDS` for `m_bCanFetchBackwards` to be **`true`**.
 
 ## <a name="breset"></a> IRowsetImpl::m_bReset
 
@@ -325,7 +325,7 @@ unsigned m_bReset:1;
 
 ### Remarks
 
-If the consumer calls [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) with a negative `lOffset` or *cRows* and `m_bReset` is true, `GetNextRows` moves to the end of the rowset. If `m_bReset` is false, the consumer receives an error code, in conformance with the OLE DB specification. The `m_bReset` flag gets set to **true** when the rowset is first created and when the consumer calls [IRowsetImpl::RestartPosition](../../data/oledb/irowsetimpl-restartposition.md). It gets set to **false** when you call `GetNextRows`.
+If the consumer calls [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) with a negative `lOffset` or *cRows* and `m_bReset` is true, `GetNextRows` moves to the end of the rowset. If `m_bReset` is false, the consumer receives an error code, in conformance with the OLE DB specification. The `m_bReset` flag gets set to **`true`** when the rowset is first created and when the consumer calls [IRowsetImpl::RestartPosition](../../data/oledb/irowsetimpl-restartposition.md). It gets set to **`false`** when you call `GetNextRows`.
 
 ## <a name="irowset"></a> IRowsetImpl::m_iRowset
 

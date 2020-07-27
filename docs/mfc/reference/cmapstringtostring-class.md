@@ -17,7 +17,7 @@ class CMapStringToString : public CObject
 
 ## Members
 
-The member functions of `CMapStringToString` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a return value or "output" function parameter, substitute a pointer to **char**. Wherever you see a `CObject` pointer as an "input" function parameter, substitute a pointer to **char**.
+The member functions of `CMapStringToString` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a return value or "output" function parameter, substitute a pointer to **`char`**. Wherever you see a `CObject` pointer as an "input" function parameter, substitute a pointer to **`char`**.
 
 `BOOL CMapStringToString::Lookup(LPCTSTR<key>, CString&<rValue>) const;`
 

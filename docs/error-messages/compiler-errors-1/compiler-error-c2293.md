@@ -9,7 +9,7 @@ ms.assetid: 17e7b4e2-368b-4dd7-a01b-d82be60f8e56
 
 'identifier': illegal to have a member variable as a __based specifier
 
-Specifiers for `__based` modifier must be nonmember pointers.
+Specifiers for **`__based`** modifier must be nonmember pointers.
 
 The following sample generates C2293:
 

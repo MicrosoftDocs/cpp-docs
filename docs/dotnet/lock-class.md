@@ -38,7 +38,7 @@ Internally, the lock class uses <xref:System.Threading.Monitor> to synchronize a
 |[lock::acquire](#acquire)|Acquires a lock on an object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.|
 |[lock::is_locked](#is-locked)|Indicates whether a lock is being held.|
 |[lock::release](#release)|Releases a lock.|
-|[lock::try_acquire](#try-acquire)|Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.|
+|[lock::try_acquire](#try-acquire)|Acquires a lock on an object, waiting for a specified amount of time and returning a **`bool`** to report the success of acquisition instead of throwing an exception.|
 
 ### Public operators
 
@@ -419,7 +419,7 @@ bool is_locked();
 
 ### Return value
 
-`true` if a lock is held, `false` otherwise.
+**`true`** if a lock is held, **`false`** otherwise.
 
 ### Example
 
@@ -522,11 +522,11 @@ operator bool();
 
 ### Return value
 
-`true` if a lock is held, `false` otherwise.
+**`true`** if a lock is held, **`false`** otherwise.
 
 ### Remarks
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+This operator actually converts to `_detail_class::_safe_bool` which is safer than **`bool`** because it can't be converted to an integral type.
 
 ### Example
 
@@ -725,7 +725,7 @@ All threads completed.
 
 ## <a name="try-acquire"></a> lock::try_acquire
 
-Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.
+Acquires a lock on an object, waiting for a specified amount of time and returning a **`bool`** to report the success of acquisition instead of throwing an exception.
 
 ```cpp
 bool try_acquire(
@@ -743,7 +743,7 @@ Timeout value in milliseconds or as a <xref:System.TimeSpan>.
 
 ### Return value
 
-`true` if lock was acquired, `false` otherwise.
+**`true`** if lock was acquired, **`false`** otherwise.
 
 ### Remarks
 
@@ -856,7 +856,7 @@ The object to compare for equality.
 
 ### Return value
 
-Returns `true` if `t` is the same as the lock's object, `false` otherwise.
+Returns **`true`** if `t` is the same as the lock's object, **`false`** otherwise.
 
 ### Example
 
@@ -899,7 +899,7 @@ The object to compare for inequality.
 
 ### Return value
 
-Returns `true` if `t` differs from the lock's object, `false` otherwise.
+Returns **`true`** if `t` differs from the lock's object, **`false`** otherwise.
 
 ### Example
 

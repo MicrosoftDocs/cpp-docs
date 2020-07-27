@@ -9,7 +9,7 @@ ms.assetid: 8532bd68-54dc-4526-8597-f61dcb0a0129
 
 nonstandard extension used : 'identifier' : cannot be initialized using address of automatic variable
 
-With the default Microsoft extensions (/Ze), you can initialize an aggregate type (**array**, `struct`, or **union**) with the address of a local (automatic) variable.
+With the default Microsoft extensions (/Ze), you can initialize an aggregate type (**array**, **`struct`**, or **`union`**) with the address of a local (automatic) variable.
 
 ## Example
 

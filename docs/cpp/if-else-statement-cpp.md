@@ -8,9 +8,9 @@ ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
 ---
 # if-else Statement (C++)
 
-Controls conditional branching. Statements in the *if-block* are executed only if the *if-expression* evaluates to a non-zero value (or TRUE). If the value of *expression* is nonzero, *statement1* and any other statements in the block are executed and the else-block, if present, is skipped. If the value of *expression* is zero, then the if-block is skipped and the else-block, if present, is executed. Expressions that evaluate to non-zero are
+Controls conditional branching. Statements in the *if-block* are executed only if the *if-expression* evaluates to a non-zero value (or **`true`**). If the value of *expression* is nonzero, *statement1* and any other statements in the block are executed and the else-block, if present, is skipped. If the value of *expression* is zero, then the if-block is skipped and the else-block, if present, is executed. Expressions that evaluate to non-zero are
 
-- TRUE
+- **`true`**
 - a non-null pointer,
 - any non-zero arithmetic value, or
 - a class type that defines an unambiguous conversion to an arithmetic, boolean or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)
@@ -103,7 +103,7 @@ int main()
 
 ## <a name="if_with_init"></a> if statement with an initializer
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): An **if** statement may also contain an expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-block.
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): An **`if`** statement may also contain an expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-block.
 
 ## Example
 
@@ -149,9 +149,9 @@ int main()
 }
 ```
 
-In all forms of the **if** statement, *expression*, which can have any value except a structure, is evaluated, including all side effects. Control passes from the **if** statement to the next statement in the program unless one of the *statement*s contains a [break](../cpp/break-statement-cpp.md), [continue](../cpp/continue-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md).
+In all forms of the **`if`** statement, *expression*, which can have any value except a structure, is evaluated, including all side effects. Control passes from the **`if`** statement to the next statement in the program unless one of the *statement*s contains a [break](../cpp/break-statement-cpp.md), [continue](../cpp/continue-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md).
 
-The **else** clause of an `if...else` statement is associated with the closest previous **if** statement in the same scope that does not have a corresponding **else** statement.
+The **`else`** clause of an `if...else` statement is associated with the closest previous **`if`** statement in the same scope that does not have a corresponding **`else`** statement.
 
 ## <a name="if_constexpr"> if constexpr statements
 

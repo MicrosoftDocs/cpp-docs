@@ -314,11 +314,11 @@ A reference to the last element inserted at the back of the container.
 
 The first member operator evaluates `Container.push_back( val)`,
 
-then returns `*this`. The second member operator evaluates
+then returns **`*this`**. The second member operator evaluates
 
 `container->push_back((typename Container::value_type&&)val)`,
 
-then returns `*this`.
+then returns **`*this`**.
 
 ### Example
 

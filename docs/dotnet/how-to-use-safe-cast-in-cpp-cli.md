@@ -61,7 +61,7 @@ in B::Test2
 
 ## Downcasting
 
-A downcast is a cast from a base class to a class that's derived from the base class.  A downcast is safe only if the object that's addressed at runtime is actually addressing a derived class object.  Unlike `static_cast`, `safe_cast` performs a dynamic check and throws <xref:System.InvalidCastException> if the conversion fails.
+A downcast is a cast from a base class to a class that's derived from the base class.  A downcast is safe only if the object that's addressed at runtime is actually addressing a derived class object.  Unlike **`static_cast`**, `safe_cast` performs a dynamic check and throws <xref:System.InvalidCastException> if the conversion fails.
 
 ```cpp
 // safe_downcast.cpp
@@ -236,7 +236,7 @@ int main() {
 
 Unboxing is defined as a compiler-injected, user-defined conversion.  Therefore, you can use `safe_cast` to unbox a value on the CLR heap.
 
-Unboxing is a user-defined conversion, but unlike boxing, unboxing must be explicit—that is, it must be performed by a `static_cast`, C-style cast, or `safe_cast`; unboxing cannot be performed implicitly.
+Unboxing is a user-defined conversion, but unlike boxing, unboxing must be explicit—that is, it must be performed by a **`static_cast`**, C-style cast, or `safe_cast`; unboxing cannot be performed implicitly.
 
 ```cpp
 // safe_cast_unboxing.cpp

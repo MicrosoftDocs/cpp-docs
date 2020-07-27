@@ -11,7 +11,7 @@ ms.assetid: d44d2c4e-9456-42d3-b35b-4ba4b2d42ec7
 
 ## Remarks
 
-A function returned a type other than *type1*. For example, using [/Za](../../build/reference/za-ze-disable-language-extensions.md), **main** did not return an **int**.
+A function returned a type other than *type1*. For example, using [/Za](../../build/reference/za-ze-disable-language-extensions.md), **main** did not return an **`int`**.
 
 ## Example
 

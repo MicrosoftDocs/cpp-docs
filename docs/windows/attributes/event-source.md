@@ -40,7 +40,7 @@ When *type* is `native`, you can specify `decorate=false`, to indicate that the 
 
 The **event_source** C++ attribute specifies that the class or structure to which it is applied will be an event source.
 
-**event_source** is used in conjunction with the [event_receiver](event-receiver.md) attribute and the [__event](../../cpp/event.md) keyword. Use `event_receiver` to create event receivers. Use **__event** on methods within the event source to specify those methods as events.
+**event_source** is used in conjunction with the [event_receiver](event-receiver.md) attribute and the [__event](../../cpp/event.md) keyword. Use `event_receiver` to create event receivers. Use **`__event`** on methods within the event source to specify those methods as events.
 
 > [!NOTE]
 > A templated class or struct cannot contain events.
@@ -51,7 +51,7 @@ The **event_source** C++ attribute specifies that the class or structure to whic
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|**coclass** when `type`=`com`|
 |**Invalid attributes**|None|

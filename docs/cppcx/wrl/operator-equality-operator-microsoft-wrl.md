@@ -56,7 +56,7 @@ The right object.
 
 ## Return Value
 
-**true** if the objects are equal; otherwise, **false**.
+**`true`** if the objects are equal; otherwise, **`false`**.
 
 ## Requirements
 

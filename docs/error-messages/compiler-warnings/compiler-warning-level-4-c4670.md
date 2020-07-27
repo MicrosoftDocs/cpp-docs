@@ -9,7 +9,7 @@ ms.assetid: e172b134-b1fb-4dfe-8e9d-209ea08b73c7
 
 'identifier' : this base class is inaccessible
 
-The specified base class of an object to be thrown in a **try** block is not accessible. The object cannot be instantiated if it is thrown. Check that the base class is inherited with the correct access specifier.
+The specified base class of an object to be thrown in a **`try`** block is not accessible. The object cannot be instantiated if it is thrown. Check that the base class is inherited with the correct access specifier.
 
 The following sample generates C4670:
 

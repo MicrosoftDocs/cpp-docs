@@ -9,21 +9,21 @@ no-loc: [extern, const, constexpr, permissive]
 ---
 # extern (C++)
 
-The **extern** keyword may be applied to a global variable, function, or template declaration. It specifies that the symbol has *external linkage*. For background information on linkage and why the use of global variables is discouraged, see [Translation units and linkage](program-and-linkage-cpp.md).
+The **`extern`** keyword may be applied to a global variable, function, or template declaration. It specifies that the symbol has *external linkage*. For background information on linkage and why the use of global variables is discouraged, see [Translation units and linkage](program-and-linkage-cpp.md).
 
-The **extern** keyword has four meanings depending on the context:
+The **`extern`** keyword has four meanings depending on the context:
 
-- In a non-**const** global variable declaration, **extern** specifies that the variable or function is defined in another translation unit. The **extern** must be applied in all files except the one where the variable is defined.
+- In a non-**`const`** global variable declaration, **`extern`** specifies that the variable or function is defined in another translation unit. The **`extern`** must be applied in all files except the one where the variable is defined.
 
-- In a **const** variable declaration, it specifies that the variable has external linkage. The **extern** must be applied to all declarations in all files. (Global **const** variables have internal linkage by default.)
+- In a **`const`** variable declaration, it specifies that the variable has external linkage. The **`extern`** must be applied to all declarations in all files. (Global **`const`** variables have internal linkage by default.)
 
 - **extern "C"** specifies that the function is defined elsewhere and uses the C-language calling convention. The extern "C" modifier may also be applied to multiple function declarations in a block.
 
-- In a template declaration, **extern** specifies that the template has already been instantiated elsewhere. **extern** tells the compiler it can reuse the other instantiation, rather than create a new one at the current location. For more information about this use of **extern**, see [Explicit instantiation](explicit-instantiation.md).
+- In a template declaration, **`extern`** specifies that the template has already been instantiated elsewhere. **`extern`** tells the compiler it can reuse the other instantiation, rather than create a new one at the current location. For more information about this use of **`extern`**, see [Explicit instantiation](explicit-instantiation.md).
 
 ## extern linkage for non-const globals
 
-When the linker sees **extern** before a global variable declaration, it looks for the definition in another translation unit. Declarations of non-**const** variables at global scope are external by default. Only apply **extern** to the declarations that don't provide the definition.
+When the linker sees **`extern`** before a global variable declaration, it looks for the definition in another translation unit. Declarations of non-**`const`** variables at global scope are external by default. Only apply **`extern`** to the declarations that don't provide the definition.
 
 ```cpp
 //fileA.cpp
@@ -42,7 +42,7 @@ extern int i = 43; // same error (extern is ignored on definitions)
 
 ## extern linkage for const globals
 
-A **const** global variable has internal linkage by default. If you want the variable to have external linkage, apply the **extern** keyword to the definition, and to all other declarations in other files:
+A **`const`** global variable has internal linkage by default. If you want the variable to have external linkage, apply the **`extern`** keyword to the definition, and to all other declarations in other files:
 
 ```cpp
 //fileA.cpp
@@ -54,13 +54,13 @@ extern const int i;  // declaration only. same as i in FileA
 
 ## extern constexpr linkage
 
-In Visual Studio 2017 version 15.3 and earlier, the compiler always gave a **constexpr** variable internal linkage, even when the variable was marked **extern**. In Visual Studio 2017 version 15.5 and later, the [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler switch enables correct standards-conforming behavior. Eventually the option will become the default. The [/permissive-](../build/reference/permissive-standards-conformance.md) option doesn't enable **/Zc:externConstexpr**.
+In Visual Studio 2017 version 15.3 and earlier, the compiler always gave a **`constexpr`** variable internal linkage, even when the variable was marked **`extern`**. In Visual Studio 2017 version 15.5 and later, the [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler switch enables correct standards-conforming behavior. Eventually the option will become the default. The [/permissive-](../build/reference/permissive-standards-conformance.md) option doesn't enable **/Zc:externConstexpr**.
 
 ```cpp
 extern constexpr int x = 10; //error LNK2005: "int const x" already defined
 ```
 
-If a header file contains a variable declared **extern** **constexpr**, it must be marked `__declspec(selectany)` to correctly have its duplicate declarations combined:
+If a header file contains a variable declared **`extern`** **`constexpr`**, it must be marked `__declspec(selectany)` to correctly have its duplicate declarations combined:
 
 ```cpp
 extern constexpr __declspec(selectany) int x = 10;
@@ -68,7 +68,7 @@ extern constexpr __declspec(selectany) int x = 10;
 
 ## extern "C" and extern "C++" function declarations
 
-In C++, when used with a string, **extern** specifies that the linkage conventions of another language are being used for the declarator(s). C functions and data can be accessed only if they're previously declared as having C linkage. However, they must be defined in a separately compiled translation unit.
+In C++, when used with a string, **`extern`** specifies that the linkage conventions of another language are being used for the declarator(s). C functions and data can be accessed only if they're previously declared as having C linkage. However, they must be defined in a separately compiled translation unit.
 
 Microsoft C++ supports the strings **"C"** and **"C++"** in the *string-literal* field. All of the standard include files use the **extern "C"** syntax to allow the run-time library functions to be used in C++ programs.
 

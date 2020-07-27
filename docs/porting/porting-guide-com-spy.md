@@ -109,7 +109,7 @@ for (i=0;i<lCount;i++)
     CoTaskMemFree(pKeys[i]);
 ```
 
-The problem is that `i` is declared as `UINT` and `lCount` is declared as **long**, hence the signed/unsigned mismatch. It would be inconvenient to change the type of `lCount` to `UINT`, since it gets its value from `IMtsEventInfo::get_Count`, which uses the type **long**, and is not in user code. So we add a cast to the code. A C-style cast would do for a numerical cast such as this, but **static_cast** is the recommended style.
+The problem is that `i` is declared as `UINT` and `lCount` is declared as **`long`**, hence the signed/unsigned mismatch. It would be inconvenient to change the type of `lCount` to `UINT`, since it gets its value from `IMtsEventInfo::get_Count`, which uses the type **`long`**, and is not in user code. So we add a cast to the code. A C-style cast would do for a numerical cast such as this, but **`static_cast`** is the recommended style.
 
 ```cpp
 for (i=0;i<static_cast<UINT>(lCount);i++)

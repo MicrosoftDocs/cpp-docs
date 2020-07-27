@@ -27,7 +27,7 @@ If none of the casts listed above is valid, and if the type of the expression an
 
 A C-style cast is not recommended. When compiling with [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md), use [safe_cast](safe-cast-cpp-component-extensions.md).
 
-The following sample shows a C-style cast that maps to a **const_cast**.
+The following sample shows a C-style cast that maps to a **`const_cast`**.
 
 ```cpp
 // cstyle_casts_1.cpp
@@ -53,7 +53,7 @@ int main() {
 }
 ```
 
-The following sample shows a C-style cast that maps to a **safe_cast** plus **const_cast**.
+The following sample shows a C-style cast that maps to a **safe_cast** plus **`const_cast`**.
 
 ```cpp
 // cstyle_casts_3.cpp
@@ -74,7 +74,7 @@ int main() {
 }
 ```
 
-The following sample shows a C-style cast that maps to a **static_cast**.
+The following sample shows a C-style cast that maps to a **`static_cast`**.
 
 ```cpp
 // cstyle_casts_4.cpp
@@ -95,7 +95,7 @@ int main() {
 }
 ```
 
-The following sample shows a C-style cast that maps to a **static_cast** plus **const_cast**.
+The following sample shows a C-style cast that maps to a **`static_cast`** plus **`const_cast`**.
 
 ```cpp
 // cstyle_casts_5.cpp

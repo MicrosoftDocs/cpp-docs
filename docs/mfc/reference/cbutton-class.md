@@ -94,7 +94,7 @@ Potential message-map entries are as follows:
 
 If you create a `CButton` object from a dialog resource, the `CButton` object is automatically destroyed when the user closes the dialog box.
 
-If you create a `CButton` object within a window, you may need to destroy it. If you create the `CButton` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the user closes the Windows button control. If you create the `CButton` object on the stack, or it is embedded in the parent dialog object, it is destroyed automatically.
+If you create a `CButton` object within a window, you may need to destroy it. If you create the `CButton` object on the heap by using the **`new`** function, you must call **`delete`** on the object to destroy it when the user closes the Windows button control. If you create the `CButton` object on the stack, or it is embedded in the parent dialog object, it is destroyed automatically.
 
 ## Inheritance Hierarchy
 

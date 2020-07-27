@@ -25,7 +25,7 @@ Also in an event receiver class, you use the intrinsic function [__hook](../cpp/
 
 ## Firing Events
 
-To fire an event, simply call a method in the interface declared with the **__event** keyword in the event source class. If handlers have been hooked to the event, the handlers will be called.
+To fire an event, simply call a method in the interface declared with the **`__event`** keyword in the event source class. If handlers have been hooked to the event, the handlers will be called.
 
 ### COM Event Code
 
@@ -142,9 +142,9 @@ MyHandler2 was called with value 123.
 
 Layout dependency is only an issue for COM programming. In native and managed event handling, the signatures (return type, calling convention, and arguments) of the handlers must match their events, but the handler names do not have to match their events.
 
-However, in COM event handling, when you set the *layout_dependent* parameter of `event_receiver` to **true**, the name and signature matching is enforced. This means that the names and signatures of the handlers in the event receiver must exactly match the names and signatures of the events to which they are hooked.
+However, in COM event handling, when you set the *layout_dependent* parameter of `event_receiver` to **`true`**, the name and signature matching is enforced. This means that the names and signatures of the handlers in the event receiver must exactly match the names and signatures of the events to which they are hooked.
 
-When *layout_dependent* is set to **false**, the calling convention and storage class (virtual, static, and so on) can be mixed and matched between the firing event method and the hooking methods (its delegates). It is slightly more efficient to have *layout_dependent*=**true**.
+When *layout_dependent* is set to **`false`**, the calling convention and storage class (virtual, static, and so on) can be mixed and matched between the firing event method and the hooking methods (its delegates). It is slightly more efficient to have *layout_dependent*=**`true`**.
 
 For example, suppose `IEventSource` is defined to have the following methods:
 

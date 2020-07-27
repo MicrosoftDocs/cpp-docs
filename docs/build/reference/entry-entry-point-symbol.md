@@ -20,15 +20,15 @@ A function that specifies a user-defined starting address for an .exe file or DL
 
 The /ENTRY option specifies an entry point function as the starting address for an .exe file or DLL.
 
-The function must be defined to use the `__stdcall` calling convention. The parameters and return value depend on if the program is a console application, a windows application or a DLL. It is recommended that you let the linker set the entry point so that the C run-time library is initialized correctly, and C++ constructors for static objects are executed.
+The function must be defined to use the **`__stdcall`** calling convention. The parameters and return value depend on if the program is a console application, a windows application or a DLL. It is recommended that you let the linker set the entry point so that the C run-time library is initialized correctly, and C++ constructors for static objects are executed.
 
 By default, the starting address is a function name from the C run-time library. The linker selects it according to the attributes of the program, as shown in the following table.
 
 |Function name|Default for|
 |-------------------|-----------------|
 |**mainCRTStartup** (or **wmainCRTStartup**)|An application that uses /SUBSYSTEM:CONSOLE; calls `main` (or `wmain`)|
-|**WinMainCRTStartup** (or **wWinMainCRTStartup**)|An application that uses /SUBSYSTEM:**WINDOWS**; calls `WinMain` (or `wWinMain`), which must be defined to use `__stdcall`|
-|**_DllMainCRTStartup**|A DLL; calls `DllMain` if it exists, which must be defined to use `__stdcall`|
+|**WinMainCRTStartup** (or **wWinMainCRTStartup**)|An application that uses /SUBSYSTEM:**WINDOWS**; calls `WinMain` (or `wWinMain`), which must be defined to use **`__stdcall`**|
+|**_DllMainCRTStartup**|A DLL; calls `DllMain` if it exists, which must be defined to use **`__stdcall`**|
 
 If the [/DLL](dll-build-a-dll.md) or [/SUBSYSTEM](subsystem-specify-subsystem.md) option is not specified, the linker selects a subsystem and entry point depending on whether `main` or `WinMain` is defined.
 

@@ -62,7 +62,7 @@ The **copysign** functions return a floating-point value that combines the magni
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **copysign** that take and return **float** or **long** **double** values. In a C program, **copysign** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **copysign** that take and return **`float`** or **`long double`** values. In a C program, **copysign** always takes and returns a **`double`**.
 
 ## Requirements
 

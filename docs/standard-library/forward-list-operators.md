@@ -49,7 +49,7 @@ An object of type `forward_list`.
 
 ### Return Value
 
-**true** if the lists are not equal; **false** if the lists are equal.
+**`true`** if the lists are not equal; **`false`** if the lists are equal.
 
 ### Remarks
 
@@ -75,7 +75,7 @@ An object of type `forward_list`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -101,7 +101,7 @@ An object of type `forward_list`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -127,7 +127,7 @@ An object of type `forward_list`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -153,7 +153,7 @@ An object of type `forward_list`.
 
 ### Return Value
 
-**true** if the forward list on the left side of the operator is greater than or equal to the forward list on the right side of the operator; otherwise **false**.
+**`true`** if the forward list on the left side of the operator is greater than or equal to the forward list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

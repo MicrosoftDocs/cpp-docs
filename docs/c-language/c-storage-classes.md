@@ -15,18 +15,18 @@ C provides the following storage-class specifiers:
 ## Syntax
 
 *storage-class-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**auto**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**register**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**static**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**extern**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**typedef**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *extended-decl-modifier-seq* **)** /\* Microsoft-specific \*/
+&nbsp;&nbsp;&nbsp;&nbsp;**`auto`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`register`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`static`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`extern`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`typedef`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__declspec (`** *extended-decl-modifier-seq* **`)`** /\* Microsoft-specific \*/
 
-Except for `__declspec`, you can use only one *storage-class-specifier* in the *declaration-specifier* in a declaration. If no storage-class specification is made, declarations within a block create automatic objects.
+Except for **`__declspec`**, you can use only one *storage-class-specifier* in the *declaration-specifier* in a declaration. If no storage-class specification is made, declarations within a block create automatic objects.
 
-Items declared with the **auto** or **register** specifier have local lifetimes. Items declared with the **static** or `extern` specifier have global lifetimes.
+Items declared with the **`auto`** or **`register`** specifier have local lifetimes. Items declared with the **`static`** or **`extern`** specifier have global lifetimes.
 
-Since `typedef` and `__declspec` are semantically different from the other four *storage-class-specifier* terminals, they are discussed separately. For specific information on `typedef`, see [Typedef Declarations](../c-language/typedef-declarations.md). For specific information on `__declspec`, see [Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md).
+Since **`typedef`** and **`__declspec`** are semantically different from the other four *storage-class-specifier* terminals, they are discussed separately. For specific information on **`typedef`**, see [`typedef` Declarations](../c-language/typedef-declarations.md). For specific information on **`__declspec`**, see [Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md).
 
 The placement of variable and function declarations within source files also affects storage class and visibility. Declarations outside all function definitions are said to appear at the "external level." Declarations within function definitions appear at the "internal level."
 

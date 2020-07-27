@@ -50,7 +50,7 @@ The second task to combine into the resulting task.
 
 ### Return Value
 
-A task that completes successfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type **`void`** the output task will also be a `task<void>`.
 
 ### Remarks
 
@@ -99,7 +99,7 @@ The second task to combine into the resulting task.
 
 ### Return Value
 
-A task that completes successfully when both of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when both of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type **`void`** the output task will also be a `task<void>`.
 
 ### Remarks
 
@@ -135,7 +135,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is equal to the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is equal to the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -173,7 +173,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vectors are not equal; **false** if the concurrent vectors are equal.
+**`true`** if the concurrent vectors are not equal; **`false`** if the concurrent vectors are equal.
 
 ### Remarks
 
@@ -211,7 +211,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is less than the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is less than the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -249,7 +249,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is less than or equal to the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is less than or equal to the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -287,7 +287,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is greater than the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is greater than the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -325,7 +325,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is greater than or equal to the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is greater than or equal to the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

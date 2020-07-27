@@ -9,7 +9,7 @@ ms.assetid: c54d9925-ed14-4976-b8db-e8d4dc84e536
 
 'member' : __declspec(dllexport)/\__declspec(dllimport) cannot be applied to a member of a managed or WinRT type
 
-The `dllimport` and [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` modifiers are not valid on members of a managed or Windows Runtime type.
+The `dllimport` and [dllexport](../../cpp/dllexport-dllimport.md) **`__declspec`** modifiers are not valid on members of a managed or Windows Runtime type.
 
 The following sample generates C3387 and shows how to fix it:
 

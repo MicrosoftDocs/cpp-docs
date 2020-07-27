@@ -19,9 +19,9 @@ You can resolve C4571 in one of the following ways,
 
 - Compile with **/EHa** if you still want your catch(...) blocks to catch structured exceptions.
 
-- Do not enable C4571 if you do not want your catch(...) blocks to catch structured exceptions, but you still want to use catch(...) blocks.  You can still catch structured exceptions using the structured exception handling keywords (**__try**, **__except**, and **__finally**).  But remember, when compiled **/EHs** destructors will only be called when a C++ exception is thrown, not when an SEH exception occurs.
+- Do not enable C4571 if you do not want your catch(...) blocks to catch structured exceptions, but you still want to use catch(...) blocks.  You can still catch structured exceptions using the structured exception handling keywords (**__try**, **`__except`**, and **`__finally`**).  But remember, when compiled **/EHs** destructors will only be called when a C++ exception is thrown, not when an SEH exception occurs.
 
-- Replace catch(...) block with catch blocks for specific C++ exceptions, and optionally, add structured exception handling around the C++ exception handling (**__try**, **__except**, and **__finally**).  See [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md) for more information.
+- Replace catch(...) block with catch blocks for specific C++ exceptions, and optionally, add structured exception handling around the C++ exception handling (**__try**, **`__except`**, and **`__finally`**).  See [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md) for more information.
 
 See [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md) for more information.
 

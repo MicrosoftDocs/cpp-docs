@@ -10,8 +10,8 @@ The \<charconv> header includes the following non-member functions:
 
 | **Non-member functions** | **Description** |
 |-|-|
-|[to_chars](#to_chars) | Convert an integer or floating-point value to a sequence of `char`. |
-|[from_chars](#from_chars) | Convert a sequence of `char` to  an integer or floating-point value. |
+|[to_chars](#to_chars) | Convert an integer or floating-point value to a sequence of **`char`**. |
+|[from_chars](#from_chars) | Convert a sequence of **`char`** to  an integer or floating-point value. |
 
 These conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means that when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point.
 
@@ -23,7 +23,7 @@ These conversion functions are tuned for performance, and also support shortest-
 
 ## `to_chars`
 
-Convert an integer or floating-point value to a sequence of `char`.
+Convert an integer or floating-point value to a sequence of **`char`**.
 
 Converts `value` into a character string by filling the range \[`first`, `last`), where \[`first`, `last`) must be a valid range.
 Returns a [to_chars_result structure](to-chars-result-structure.md). If  the conversion is successful, as indicated by `to_char_result.ec`, the member `ptr` is the one-past-the-end pointer of the characters written. Otherwise, `to_char_result.ec` has the value `errc::value_too_large`, `to_char_result.ptr` has the value `last`, and the contents of the range
@@ -137,7 +137,7 @@ int main()
 
 ## `from_chars`
 
-Convert a sequence of `char` to an integer or floating-point value.
+Convert a sequence of **`char`** to an integer or floating-point value.
 
 ```cpp
 // char to an integer value

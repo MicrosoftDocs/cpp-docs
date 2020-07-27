@@ -42,9 +42,9 @@ A "memory leak" occurs when memory for an object is allocated on the heap but no
 
 - Using the Windows API memory management functions, `LocalAlloc`/ `LocalFree` and `GlobalAlloc`/ `GlobalFree`.
 
-- Using the C++ **new** and **delete** operators.
+- Using the C++ **`new`** and **`delete`** operators.
 
-The `CMemoryState` diagnostics only help detect memory leaks caused when memory allocated using the **new** operator is not deallocated using **delete**. The other two groups of memory-management functions are for non-C++ programs, and mixing them with **new** and **delete** in the same program is not recommended. An additional macro, DEBUG_NEW, is provided to replace the **new** operator when you need file and line-number tracking of memory allocations. DEBUG_NEW is used whenever you would normally use the **new** operator.
+The `CMemoryState` diagnostics only help detect memory leaks caused when memory allocated using the **`new`** operator is not deallocated using **`delete`**. The other two groups of memory-management functions are for non-C++ programs, and mixing them with **`new`** and **`delete`** in the same program is not recommended. An additional macro, DEBUG_NEW, is provided to replace the **`new`** operator when you need file and line-number tracking of memory allocations. DEBUG_NEW is used whenever you would normally use the **`new`** operator.
 
 As with other diagnostics, the `CMemoryState` diagnostics are only available in debug versions of your program. A debug version must have the _DEBUG constant defined.
 

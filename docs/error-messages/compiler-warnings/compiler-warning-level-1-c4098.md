@@ -9,4 +9,4 @@ ms.assetid: 8c8aef1c-1639-44ec-a3dd-c0dfe9aa727d
 
 'function' : void function returning a value
 
-A function declared with return type [void](../../cpp/void-cpp.md) has a `return` statement that returns a value. The compiler assumes the function returns a value of type `int`.
+A function declared with return type [void](../../cpp/void-cpp.md) has a **`return`** statement that returns a value. The compiler assumes the function returns a value of type **`int`**.

@@ -8,7 +8,7 @@ ms.assetid: e99f5a28-0381-4090-8ece-6af8f2436a49
 
 **Microsoft Specific**
 
-A great convenience of inline assembly is the ability to refer to C or C++ variables by name. An `__asm` block can refer to any symbols, including variable names, that are in scope where the block appears. For instance, if the C variable `var` is in scope, the instruction
+A great convenience of inline assembly is the ability to refer to C or C++ variables by name. An **`__asm`** block can refer to any symbols, including variable names, that are in scope where the block appears. For instance, if the C variable `var` is in scope, the instruction
 
 ```cpp
 __asm mov eax, var
@@ -16,7 +16,7 @@ __asm mov eax, var
 
 stores the value of `var` in EAX.
 
-If a class, structure, or union member has a unique name, an `__asm` block can refer to it using only the member name, without specifying the variable or `typedef` name before the period (**.**) operator. If the member name is not unique, however, you must place a variable or `typedef` name immediately before the period operator. For example, the structure types in the following sample share `same_name` as their member name:.
+If a class, structure, or union member has a unique name, an **`__asm`** block can refer to it using only the member name, without specifying the variable or **`typedef`** name before the period (**.**) operator. If the member name is not unique, however, you must place a variable or **`typedef`** name immediately before the period operator. For example, the structure types in the following sample share `same_name` as their member name:.
 
 If you declare variables with the types
 

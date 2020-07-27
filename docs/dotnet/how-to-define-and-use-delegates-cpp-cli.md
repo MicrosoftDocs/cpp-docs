@@ -10,7 +10,7 @@ This article shows how to define and consume delegates in C++/CLI.
 
 Although the .NET Framework provides a number of delegates, sometimes you might have to define new delegates.
 
-The following code example defines a delegate that's named `MyCallback`. The event-handling code—the function that's called when this new delegate is fired—must have a return type of `void` and take a <xref:System.String> reference.
+The following code example defines a delegate that's named `MyCallback`. The event-handling code—the function that's called when this new delegate is fired—must have a return type of **`void`** and take a <xref:System.String> reference.
 
 The main function uses a static method that's defined by `SomeClass` to instantiate the `MyCallback` delegate. The delegate then becomes an alternate method of calling this function, as demonstrated by sending the string "single" to the delegate object. Next, additional instances of `MyCallback` are linked together and then executed by one call to the delegate object.
 
@@ -262,7 +262,7 @@ Here's how to declare, instantiate, and call bound and unbound delegates:
 
 |Action|Bound Delegates|Unbound Delegates|
 |------------|---------------------|-----------------------|
-|Declare|The delegate signature must match the signature of the function you want to call through the delegate.|The first parameter of the delegate signature is the type of `this` for the object you want to call.<br /><br /> After the first parameter, the delegate signature must match the signature of the function you want to call through the delegate.|
+|Declare|The delegate signature must match the signature of the function you want to call through the delegate.|The first parameter of the delegate signature is the type of **`this`** for the object you want to call.<br /><br /> After the first parameter, the delegate signature must match the signature of the function you want to call through the delegate.|
 |Instantiate|When you instantiate a bound delegate, you can specify an instance function, or a global or static member function.<br /><br /> To specify an instance function, the first parameter is an instance of the type whose member function you want to call and the second parameter is the address of the function you want to call.<br /><br /> If you want to call a global or static member function, just pass the name of a global function or the name of the static member function.|When you instantiate an unbound delegate, just pass the address of the function you want to call.|
 |Call|When you call a bound delegate, just pass the parameters that are required by the delegate signature.|Same as a bound delegate, but remember that the first parameter must be an instance of the object that contains the function you want to call.|
 

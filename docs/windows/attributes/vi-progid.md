@@ -42,7 +42,7 @@ See the [coclass](coclass.md) example for a sample use of **vi_progid**.
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

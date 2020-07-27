@@ -51,7 +51,7 @@ A [_variant_t](../cpp/variant-t-class.md) object.
 An existing `BSTR` object.
 
 *fCopy*<br/>
-If FALSE, the *bstr* argument is attached to the new object without making a copy by calling `SysAllocString`.
+If **`false`**, the *bstr* argument is attached to the new object without making a copy by calling `SysAllocString`.
 
 ## Remarks
 

@@ -52,7 +52,7 @@ bool equals(const sync_per_container<Cache>& Other) const;
 
 ### Return Value
 
-The member function always returns **false**.
+The member function always returns **`false`**.
 
 ### Remarks
 

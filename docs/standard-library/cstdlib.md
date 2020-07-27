@@ -10,7 +10,7 @@ ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
 Includes the C Standard library header \<stdlib.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
 
 > [!NOTE]
-> \<stdlib.h> doesn't include the type **wchar_t**.
+> \<stdlib.h> doesn't include the type **`wchar_t`**.
 
 ## Requirements
 

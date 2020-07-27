@@ -19,8 +19,8 @@ The MFC framework is Unicode-enabled throughout, and MFC accomplishes Unicode en
 
 |Non-portable data type|Replaced by this macro|
 |-----------------------------|----------------------------|
-|`char`, `wchar_t`|`_TCHAR`|
-|`char*`, `LPSTR` (Win32 data type), `LPWSTR`|`LPTSTR`|
+|**`char`**, **`wchar_t`**|`_TCHAR`|
+|**`char*`**, `LPSTR` (Win32 data type), `LPWSTR`|`LPTSTR`|
 |`const char*`, `LPCSTR` (Win32 data type), `LPCWSTR`|`LPCTSTR`|
 
 Class `CString` uses `_TCHAR` as its base and provides constructors and operators for easy conversions. Most string operations for Unicode can be written by using the same logic used for handling the Windows ANSI character set, except that the basic unit of operation is a 16-bit character instead of an 8-bit byte. Unlike working with multibyte character sets, you do not have to (and should not) treat a Unicode character as if it were two distinct bytes. You do, however, have to deal with the possibility of a single character represented by a surrogate pair of wide characters. In general, do not write code that assumes the length of a string is the same as the number of characters, whether narrow or wide, that it contains.

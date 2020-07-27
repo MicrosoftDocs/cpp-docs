@@ -7,7 +7,7 @@ ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
 ---
 # &lt;codecvt&gt;
 
-Defines several class templates that describe objects based on class template [codecvt](../standard-library/codecvt-class.md). These objects can serve as [locale facets](../standard-library/locale-class.md#facet_class) that control conversions between a sequence of values of type `Elem` and a sequence of values of type **char**.
+Defines several class templates that describe objects based on class template [codecvt](../standard-library/codecvt-class.md). These objects can serve as [locale facets](../standard-library/locale-class.md#facet_class) that control conversions between a sequence of values of type `Elem` and a sequence of values of type **`char`**.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ The locale facets declared in this header convert between several character enco
 
 - UTF-16 is Unicode encoded within the program as either one or two 16-bit integers. (Note that this does not meet all the requirements of a valid wide-character encoding for Standard C or Standard C++. Nevertheless it is widely used as such.)
 
-For byte streams (stored in a file, transmitted as a byte sequence, or stored within the program in an array of **char**):
+For byte streams (stored in a file, transmitted as a byte sequence, or stored within the program in an array of **`char`**):
 
 - UTF-8 is Unicode encoded within a byte stream as one or more eight-bit bytes with a deterministic byte order.
 

@@ -45,7 +45,7 @@ path canonical(const path& pval, const path& base, error_code& ec);
 
 The functions all form an absolute pathname `pabs = absolute(pval, base)` (or `pabs = absolute(pval)` for the overload with no base parameter), then reduce it to a canonical form in the following sequence of steps:
 
-1. Every path component `X` for which `is_symlink(X)` is **true** is replaced by `read_symlink(X)`.
+1. Every path component `X` for which `is_symlink(X)` is **`true`** is replaced by `read_symlink(X)`.
 
 1. Every path component `.` (dot is the current directory established by previous path components) is removed.
 
@@ -131,7 +131,7 @@ If `exists(to) && !(opts & (copy_options::skip_existing | copy_options::overwrit
 
 Otherwise, if `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options:update_existing))`, then attempt to copy the contents and attributes of the file *from* to the file *to*. Report as an error if the copy attempt fails.
 
-The functions return **true** if the copy is attempted and succeeds, otherwise **false**.
+The functions return **`true`** if the copy is attempted and succeeds, otherwise **`false`**.
 
 ## <a name="copy_symlink"></a> copy_symlink
 
@@ -149,7 +149,7 @@ bool create_directories(const path& pval);
 bool create_directories(const path& pval, error_code& ec) noexcept;
 ```
 
-For a pathname such as a\/b\/c, the function creates directories a and a\/b as needed so that it can create the directory a\/b\/c as needed. It returns **true** only if it actually creates the directory *pval*.
+For a pathname such as a\/b\/c, the function creates directories a and a\/b as needed so that it can create the directory a\/b\/c as needed. It returns **`true`** only if it actually creates the directory *pval*.
 
 ## <a name="create_directory"></a> create_directory
 
@@ -218,7 +218,7 @@ bool equivalent(const path& left, const path& right);
 bool equivalent(const path& left, const path& right, error_code& ec) noexcept;
 ```
 
-The functions return **true** only if *left* and *right* choose the same filesystem entity.
+The functions return **`true`** only if *left* and *right* choose the same filesystem entity.
 
 ## <a name="exists"></a> exists
 
@@ -400,7 +400,7 @@ bool remove(const path& pval);
 bool remove(const path& pval, error_code& ec) noexcept;
 ```
 
-The functions return **true** only if `exists(symlink_status(pval))` and the file is successfully removed. A symlink is itself removed, not the file it chooses.
+The functions return **`true`** only if `exists(symlink_status(pval))` and the file is successfully removed. A symlink is itself removed, not the file it chooses.
 
 ## <a name="remove_all"></a> remove_all
 

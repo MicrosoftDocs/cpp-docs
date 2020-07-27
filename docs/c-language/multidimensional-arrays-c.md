@@ -18,7 +18,7 @@ Expressions with multiple subscripts refer to elements of "multidimensional arra
 
 ## Examples
 
-For the following examples, an array named `prop` is declared with three elements, each of which is a 4-by-6 array of `int` values.
+For the following examples, an array named `prop` is declared with three elements, each of which is a 4-by-6 array of **`int`** values.
 
 ```
 int prop[3][4][6];
@@ -31,7 +31,7 @@ A reference to the `prop` array looks like this:
 i = prop[0][0][1];
 ```
 
-The example above shows how to refer to the second individual `int` element of `prop`. Arrays are stored by row, so the last subscript varies most quickly; the expression `prop[0][0][2]` refers to the next (third) element of the array, and so on.
+The example above shows how to refer to the second individual **`int`** element of `prop`. Arrays are stored by row, so the last subscript varies most quickly; the expression `prop[0][0][2]` refers to the next (third) element of the array, and so on.
 
 ```
 i = prop[2][1][3];
@@ -39,13 +39,13 @@ i = prop[2][1][3];
 
 This statement is a more complex reference to an individual element of `prop`. The expression is evaluated as follows:
 
-1. The first subscript, `2`, is multiplied by the size of a 4-by-6 `int` array and added to the pointer value `prop`. The result points to the third 4-by-6 array of `prop`.
+1. The first subscript, `2`, is multiplied by the size of a 4-by-6 **`int`** array and added to the pointer value `prop`. The result points to the third 4-by-6 array of `prop`.
 
-1. The second subscript, `1`, is multiplied by the size of the 6-element `int` array and added to the address represented by `prop[2]`.
+1. The second subscript, `1`, is multiplied by the size of the 6-element **`int`** array and added to the address represented by `prop[2]`.
 
-1. Each element of the 6-element array is an `int` value, so the final subscript, `3`, is multiplied by the size of an `int` before it is added to `prop[2][1]`. The resulting pointer addresses the fourth element of the 6-element array.
+1. Each element of the 6-element array is an **`int`** value, so the final subscript, `3`, is multiplied by the size of an **`int`** before it is added to `prop[2][1]`. The resulting pointer addresses the fourth element of the 6-element array.
 
-1. The indirection operator is applied to the pointer value. The result is the `int` element at that address.
+1. The indirection operator is applied to the pointer value. The result is the **`int`** element at that address.
 
 These next two examples show cases where the indirection operator is not applied.
 

@@ -10,9 +10,9 @@ Thread Local Storage (TLS) is the method by which each thread in a given multith
 
 ## <a name="_core_compiler_implementation_for_tls"></a> Compiler Implementation for TLS
 
-**C++11:**  The `thread_local` storage class specifier is the recommended way to specify thread-local storage for objects and class members. For more information, see [Storage classes (C++)](../cpp/storage-classes-cpp.md).
+**C++11:**  The **`thread_local`** storage class specifier is the recommended way to specify thread-local storage for objects and class members. For more information, see [Storage classes (C++)](../cpp/storage-classes-cpp.md).
 
-MSVC also provides a Microsoft-specific attribute, [thread](../cpp/thread.md), as extended storage class modifier. Use the **__declspec** keyword to declare a **thread** variable. For example, the following code declares an integer thread local variable and initializes it with a value:
+MSVC also provides a Microsoft-specific attribute, [thread](../cpp/thread.md), as extended storage class modifier. Use the **`__declspec`** keyword to declare a **`thread`** variable. For example, the following code declares an integer thread local variable and initializes it with a value:
 
 ```C
 __declspec( thread ) int tls_i = 1;
@@ -22,13 +22,13 @@ __declspec( thread ) int tls_i = 1;
 
 The following guidelines must be observed when declaring statically bound thread local objects and variables. These guidelines apply both to [thread](../cpp/thread.md) and to [thread_local](../cpp/storage-classes-cpp.md):
 
-- The **thread** attribute can be applied only to class and data declarations and definitions. It can't be used on function declarations or definitions. For example, the following code generates a compiler error:
+- The **`thread`** attribute can be applied only to class and data declarations and definitions. It can't be used on function declarations or definitions. For example, the following code generates a compiler error:
 
     ```C
     __declspec( thread )void func();     // This will generate an error.
     ```
 
-- The **thread** modifier can only be specified on data items with **static** extent. That includes global data objects (both **static** and **extern**), local static objects, and static data members of C++ classes. Automatic data objects can't be declared with the **thread** attribute. The following code generates compiler errors:
+- The **`thread`** modifier can only be specified on data items with **`static`** extent. That includes global data objects (both **`static`** and **`extern`**), local static objects, and static data members of C++ classes. Automatic data objects can't be declared with the **`thread`** attribute. The following code generates compiler errors:
 
     ```C
     void func1()
@@ -42,7 +42,7 @@ The following guidelines must be observed when declaring statically bound thread
     }
     ```
 
-- The declarations and the definition of a thread local object must all specify the **thread** attribute. For example, the following code generates an error:
+- The declarations and the definition of a thread local object must all specify the **`thread`** attribute. For example, the following code generates an error:
 
     ```C
     #define Thread  __declspec( thread )
@@ -50,13 +50,13 @@ The following guidelines must be observed when declaring statically bound thread
     int __declspec( thread )tls_i;        // declaration and definition differ.
     ```
 
-- The **thread** attribute can't be used as a type modifier. For example, the following code generates a compiler error:
+- The **`thread`** attribute can't be used as a type modifier. For example, the following code generates a compiler error:
 
     ```C
     char __declspec( thread ) *ch;        // Error
     ```
 
-- Because the declaration of C++ objects that use the **thread** attribute is permitted, the following two examples are semantically equivalent:
+- Because the declaration of C++ objects that use the **`thread`** attribute is permitted, the following two examples are semantically equivalent:
 
     ```cpp
     __declspec( thread ) class B
@@ -88,7 +88,7 @@ The following guidelines must be observed when declaring statically bound thread
     __declspec( thread )int tls_i = sizeof( tls_i )       // Legal in C and C++
     ```
 
-   A `sizeof` expression that includes the object being initialized doesn't represent a reference to itself, and is enabled in both C and C++.
+   A **`sizeof`** expression that includes the object being initialized doesn't represent a reference to itself, and is enabled in both C and C++.
 
    C++ doesn't allow such dynamic initialization of thread data because of possible future enhancements to the thread local storage facility.
 

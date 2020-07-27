@@ -38,7 +38,7 @@ The **custom** attribute has the same functionality as the [custom](/windows/win
 
 |||
 |-|-|
-|**Applies to**|Non-COM **interface**, **class**, **enum**s, `idl_module` methods, interface members, interface parameters, **typedef**s, **union**s, **struct**s|
+|**Applies to**|Non-COM **interface**, **`class`**, **`enum`**s, `idl_module` methods, interface members, interface parameters, **`typedef`**s, **`union`**s, **`struct`**s|
 |**Repeatable**|Yes|
 |**Required attributes**|**coclass** (when used on class)|
 |**Invalid attributes**|None|

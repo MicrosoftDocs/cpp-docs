@@ -29,7 +29,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
     rs.Bind();
     ```
 
-1. Write a **while** loop to retrieve the data. In the loop, call `MoveNext` to advance the cursor and test the return value against S_OK, as shown in the following example:
+1. Write a **`while`** loop to retrieve the data. In the loop, call `MoveNext` to advance the cursor and test the return value against S_OK, as shown in the following example:
 
     ```cpp
     while (rs.MoveNext() == S_OK)
@@ -39,7 +39,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
     }
     ```
 
-1. Within the **while** loop, you can fetch the data according to your accessor type.
+1. Within the **`while`** loop, you can fetch the data according to your accessor type.
 
    - If you use the [CAccessor](../../data/oledb/caccessor-class.md) class, you should have a user record that contains data members. You can access your data using those data members, as shown in the following example:
 

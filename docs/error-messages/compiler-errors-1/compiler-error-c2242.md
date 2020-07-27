@@ -9,4 +9,4 @@ ms.assetid: e1b687ed-4460-4c26-9f7e-c43e65c6dd65
 
 typedef name cannot follow class/struct/union
 
-A `typedef` name appears at the end of a qualified name.
+A **`typedef`** name appears at the end of a qualified name.

@@ -240,7 +240,7 @@ Visual Studio included C++ sample code in previous versions. The sample code was
 | [ListHdr](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates how to use the common control MFC classes `CListCtrl` and `CHeaderCtrl`. |
 | [MDI](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | MDI application that doesn't use documents and views. |
 | [MDIDocVw](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Updated version of the MDI sample that uses the document/view architecture. |
-| [MMXSwarm](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates how to use `CImage`, the `__m64` data type, and device-independent bitmaps (DIBs). |
+| [MMXSwarm](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates how to use `CImage`, the **`__m64`** data type, and device-independent bitmaps (DIBs). |
 | [Modeless](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates the use of an MFC `CDialog` object as a modeless dialog box. |
 | [Multipad](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Simple text editor that lets the user open and edit multiple text files at one time. |
 | [Npp](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates how to implement an interface (SDI) application similar to Notepad. It allows you to edit text messages and send them to other users or other systems through the Windows messaging API, or MAPI. |

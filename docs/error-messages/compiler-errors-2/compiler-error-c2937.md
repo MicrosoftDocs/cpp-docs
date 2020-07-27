@@ -9,7 +9,7 @@ ms.assetid: 95671ca3-79f7-4b56-a5f2-a92296da1629
 
 'class' : type-class-id redefined as a global typedef
 
-You cannot use a generic or template class as a global `typedef`.
+You cannot use a generic or template class as a global **`typedef`**.
 
 The following sample generates C2937:
 

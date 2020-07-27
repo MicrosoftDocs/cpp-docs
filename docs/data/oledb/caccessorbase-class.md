@@ -95,7 +95,7 @@ bool IsAutoAccessor(ULONG nAccessor) const;
 
 ### Return Value
 
-Returns **true** if the accessor is an autoaccessor. Otherwise, it returns **false**.
+Returns **`true`** if the accessor is an autoaccessor. Otherwise, it returns **`false`**.
 
 ## <a name="release"></a> CAccessorBase::ReleaseAccessors
 

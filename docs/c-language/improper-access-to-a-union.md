@@ -9,7 +9,7 @@ ms.assetid: b273d984-62a8-4003-9a87-bf0149d3f2dd
 
 If a union of two types is declared and one value is stored, but the union is accessed with the other type, the results are unreliable.
 
-For example, a union of **float** and `int` is declared. A **float** value is stored, but the program later accesses the value as an `int`. In such a situation, the value would depend on the internal storage of **float** values. The integer value would not be reliable.
+For example, a union of **`float`** and **`int`** is declared. A **`float`** value is stored, but the program later accesses the value as an **`int`**. In such a situation, the value would depend on the internal storage of **`float`** values. The integer value would not be reliable.
 
 ## See also
 

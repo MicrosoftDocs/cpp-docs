@@ -52,7 +52,7 @@ For an example of this attribute used in an application, see [MultiRead](https:/
 
 ## Example
 
-This sample binds a column in a table to a **long** data member and specifies status and length fields.
+This sample binds a column in a table to a **`long`** data member and specifies status and length fields.
 
 ```cpp
 // db_column_1.cpp
@@ -72,7 +72,7 @@ class CProducts {
 
 ## Example
 
-This sample binds four columns to a **long**, a character string, a timestamp, and a `DB_NUMERIC` integer, in that order.
+This sample binds four columns to a **`long`**, a character string, a timestamp, and a `DB_NUMERIC` integer, in that order.
 
 ```cpp
 // db_column_2.cpp
@@ -96,7 +96,7 @@ class CProducts {
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**, member, method|
+|**Applies to**|**`class`**, **`struct`**, member, method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

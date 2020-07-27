@@ -80,7 +80,7 @@ __thiscall T::~T(void)
 
 ### Description
 
-The previous sample demonstrated the existence of double thunking. This sample shows its effect. The `for` loop calls the virtual function and the program reports execution time. The slowest time is reported when the program is compiled with **/clr**. The fastest times are reported when compiling without **/clr** or if the virtual function is declared with `__clrcall`.
+The previous sample demonstrated the existence of double thunking. This sample shows its effect. The **`for`** loop calls the virtual function and the program reports execution time. The slowest time is reported when the program is compiled with **/clr**. The fastest times are reported when compiling without **/clr** or if the virtual function is declared with `__clrcall`.
 
 ### Code
 

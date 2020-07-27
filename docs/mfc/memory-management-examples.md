@@ -24,13 +24,13 @@ This article describes how MFC performs frame allocations and heap allocations f
 
 #### To allocate an array of bytes (or any primitive data type) on the heap
 
-1. Use the **new** operator with the array syntax shown in this example:
+1. Use the **`new`** operator with the array syntax shown in this example:
 
    [!code-cpp[NVC_MFC_Utilities#2](codesnippet/cpp/memory-management-examples_2.cpp)]
 
 #### To deallocate the arrays from the heap
 
-1. Use the **delete** operator as follows:
+1. Use the **`delete`** operator as follows:
 
    [!code-cpp[NVC_MFC_Utilities#3](codesnippet/cpp/memory-management-examples_3.cpp)]
 
@@ -46,7 +46,7 @@ This article describes how MFC performs frame allocations and heap allocations f
 
 #### To allocate data structures on the heap
 
-1. Use **new** to allocate data structures on the heap and **delete** to deallocate them, as shown by the following examples:
+1. Use **`new`** to allocate data structures on the heap and **`delete`** to deallocate them, as shown by the following examples:
 
    [!code-cpp[NVC_MFC_Utilities#5](codesnippet/cpp/memory-management-examples_5.cpp)]
 
@@ -62,13 +62,13 @@ This article describes how MFC performs frame allocations and heap allocations f
 
 #### To allocate an object on the heap
 
-1. Use the **new** operator, which returns a pointer to the object, to allocate objects on the heap. Use the **delete** operator to delete them.
+1. Use the **`new`** operator, which returns a pointer to the object, to allocate objects on the heap. Use the **`delete`** operator to delete them.
 
    The following heap and frame examples assume that the `CPerson` constructor takes no arguments.
 
    [!code-cpp[NVC_MFC_Utilities#7](codesnippet/cpp/memory-management-examples_7.cpp)]
 
-   If the argument for the `CPerson` constructor is a pointer to **char**, the statement for frame allocation is:
+   If the argument for the `CPerson` constructor is a pointer to **`char`**, the statement for frame allocation is:
 
    [!code-cpp[NVC_MFC_Utilities#8](codesnippet/cpp/memory-management-examples_8.cpp)]
 

@@ -80,7 +80,7 @@ To use a DLL by explicit linking, applications must make a function call to expl
 
 - Call [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) or a similar function to load the DLL and obtain a module handle.
 
-- Call [GetProcAddress](getprocaddress.md) to obtain a function pointer to each exported function that the application calls. Because applications call the DLL functions through a pointer, the compiler doesn't generate external references, so there's no need to link with an import library. However, you must have a `typedef` or `using` statement that defines the call signature of the exported functions that you call.
+- Call [GetProcAddress](getprocaddress.md) to obtain a function pointer to each exported function that the application calls. Because applications call the DLL functions through a pointer, the compiler doesn't generate external references, so there's no need to link with an import library. However, you must have a **`typedef`** or **`using`** statement that defines the call signature of the exported functions that you call.
 
 - Call [FreeLibrary](freelibrary-and-afxfreelibrary.md) when done with the DLL.
 

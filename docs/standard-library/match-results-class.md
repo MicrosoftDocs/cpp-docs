@@ -318,7 +318,7 @@ allocator_type get_allocator() const;
 
 ### Remarks
 
-The member function returns a copy of the allocator object used by `*this` to allocate its `sub_match` objects.
+The member function returns a copy of the allocator object used by **`*this`** to allocate its `sub_match` objects.
 
 ## <a name="iterator"></a> match_results::iterator
 
@@ -398,7 +398,7 @@ The match_results object to copy.
 
 ### Remarks
 
-The member operator replaces the sequence controlled by `*this` with a copy of the sequence controlled by *right*.
+The member operator replaces the sequence controlled by **`*this`** with a copy of the sequence controlled by *right*.
 
 ## <a name="op_at"></a> match_results::operator[]
 
@@ -538,7 +538,7 @@ The match_results object to swap with.
 
 ### Remarks
 
-The member function swaps the contents of `*this` and *right* in constant time and does not throw exceptions.
+The member function swaps the contents of **`*this`** and *right* in constant time and does not throw exceptions.
 
 ## <a name="value_type"></a> match_results::value_type
 

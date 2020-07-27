@@ -43,7 +43,7 @@ This option specifies more aggressive inlining than **/Ob2**, but has the same r
 
 ## Remarks
 
-The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that any function will be expanded inline. You can disable inline expansions, but you can't force the compiler to inline a particular function, even when using the `__forceinline` keyword.
+The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that any function will be expanded inline. You can disable inline expansions, but you can't force the compiler to inline a particular function, even when using the **`__forceinline`** keyword.
 
 To exclude functions from consideration as candidates for inline expansion, you can use [__declspec(noinline)](../../cpp/noinline.md), or a region marked by [#pragma auto_inline(off)](../../preprocessor/auto-inline.md) and [#pragma auto_inline(on)](../../preprocessor/auto-inline.md) directives. For information on another way to provide inlining hints to the compiler, see the [#pragma intrinsic](../../preprocessor/intrinsic.md) directive.
 

@@ -39,7 +39,7 @@ A pointer to the event method from which you unhook the event handler method:
 - Managed events: *SourceClass* is the event source class and *EventMethod* is the event.
 
 *interface*<br/>
-The interface name being unhooked from *receiver*, only for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/attributes/event-receiver.md) attribute is **true**.
+The interface name being unhooked from *receiver*, only for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/attributes/event-receiver.md) attribute is **`true`**.
 
 *source*<br/>
 A pointer to an instance of the event source. Depending on the code `type` specified in `event_receiver`, *source* can be one of the following:
@@ -51,7 +51,7 @@ A pointer to an instance of the event source. Depending on the code `type` speci
 - A managed object pointer (for managed events).
 
 **&** *ReceiverClass* `::` `HandlerMethod`
-A pointer to the event handler method to be unhooked from an event. The handler is specified as a method of a class or a reference to the same; if you do not specify the class name, **__unhook** assumes the class to be that in which it is called.
+A pointer to the event handler method to be unhooked from an event. The handler is specified as a method of a class or a reference to the same; if you do not specify the class name, **`__unhook`** assumes the class to be that in which it is called.
 
 - Native C++ events: *ReceiverClass* is the event receiver class and `HandlerMethod` is the handler.
 
@@ -60,7 +60,7 @@ A pointer to the event handler method to be unhooked from an event. The handler 
 - Managed events: *ReceiverClass* is the event receiver class and `HandlerMethod` is the handler.
 
 *receiver*(optional)
-A pointer to an instance of the event receiver class. If you do not specify a receiver, the default is the receiver class or structure in which **__unhook** is called.
+A pointer to an instance of the event receiver class. If you do not specify a receiver, the default is the receiver class or structure in which **`__unhook`** is called.
 
 ## Usage
 
@@ -68,19 +68,19 @@ Can be use in any function scope, including main, outside the event receiver cla
 
 ## Remarks
 
-Use the intrinsic function **__unhook** in an event receiver to dissociate or "unhook" a handler method from an event method.
+Use the intrinsic function **`__unhook`** in an event receiver to dissociate or "unhook" a handler method from an event method.
 
-There are three forms of **__unhook**. You can use the first (four-argument) form in most cases. You can use the second (two-argument) form of **__unhook** only for a COM event receiver; this unhooks the entire event interface. You can use the third (one-argument) form to unhook all delegates from the specified source.
+There are three forms of **`__unhook`**. You can use the first (four-argument) form in most cases. You can use the second (two-argument) form of **`__unhook`** only for a COM event receiver; this unhooks the entire event interface. You can use the third (one-argument) form to unhook all delegates from the specified source.
 
 A nonzero return value indicates that an error has occurred (managed events will throw an exception).
 
-If you call **__unhook** on an event and event handler that are not already hooked, it will have no effect.
+If you call **`__unhook`** on an event and event handler that are not already hooked, it will have no effect.
 
 At compile time, the compiler verifies that the event exists and does parameter type checking with the specified handler.
 
-With the exception of COM events, **__hook** and **__unhook** can be called outside the event receiver.
+With the exception of COM events, **`__hook`** and **`__unhook`** can be called outside the event receiver.
 
-An alternative to using **__unhook** is to use the -= operator.
+An alternative to using **`__unhook`** is to use the -= operator.
 
 For information on coding managed events in the new syntax, see [event](../extensions/event-cpp-component-extensions.md).
 

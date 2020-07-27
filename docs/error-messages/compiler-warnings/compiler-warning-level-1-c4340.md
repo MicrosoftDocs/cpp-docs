@@ -9,4 +9,4 @@ ms.assetid: ddd5344b-5167-4c55-a318-20615052fd54
 
 'value' : value wrapped from positive to negative value
 
-The `enum` value is greater than the largest `enum` positive value wrapped around to a negative value.
+The **`enum`** value is greater than the largest **`enum`** positive value wrapped around to a negative value.

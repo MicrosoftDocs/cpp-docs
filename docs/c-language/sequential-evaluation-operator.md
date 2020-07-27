@@ -14,7 +14,7 @@ The sequential-evaluation operator, also called the "comma operator," evaluates 
 &nbsp;&nbsp;&nbsp;&nbsp;*assignment-expression*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*
 
-The left operand of the sequential-evaluation operator is evaluated as a `void` expression. The result of the operation has the same value and type as the right operand. Each operand can be of any type. The sequential-evaluation operator does not perform type conversions between its operands, and it does not yield an l-value. There is a sequence point after the first operand, which means all side effects from the evaluation of the left operand are completed before beginning evaluation of the right operand. See [Sequence Points](../c-language/c-sequence-points.md) for more information.
+The left operand of the sequential-evaluation operator is evaluated as a **`void`** expression. The result of the operation has the same value and type as the right operand. Each operand can be of any type. The sequential-evaluation operator does not perform type conversions between its operands, and it does not yield an l-value. There is a sequence point after the first operand, which means all side effects from the evaluation of the left operand are completed before beginning evaluation of the right operand. See [Sequence Points](../c-language/c-sequence-points.md) for more information.
 
 The sequential-evaluation operator is typically used to evaluate two or more expressions in contexts where only one expression is allowed.
 
@@ -28,7 +28,7 @@ This example illustrates the sequential-evaluation operator:
 for ( i = j = 1; i + j < 20; i += i, j-- );
 ```
 
-In this example, each operand of the **for** statement's third expression is evaluated independently. The left operand `i += i` is evaluated first; then the right operand, `j--`, is evaluated.
+In this example, each operand of the **`for`** statement's third expression is evaluated independently. The left operand `i += i` is evaluated first; then the right operand, `j--`, is evaluated.
 
 ```
 func_one( x, y + 2, z );

@@ -15,7 +15,7 @@ The first function attribute requires the second attribute.
 
 1. Interrupt (`__interrupt`) function declared as `near`. Interrupt functions must be `far`.
 
-1. Interrupt function declared with `__stdcall`, or `__fastcall`. Interrupt functions must use C calling conventions.
+1. Interrupt function declared with **`__stdcall`**, or **`__fastcall`**. Interrupt functions must use C calling conventions.
 
 ## Example
 

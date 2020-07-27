@@ -29,7 +29,7 @@ See the example for [defaultvalue](defaultvalue.md) for a sample use of **ptr**.
 
 |||
 |-|-|
-|**Applies to**|Interface parameter, interface method, **typedef**|
+|**Applies to**|Interface parameter, interface method, **`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

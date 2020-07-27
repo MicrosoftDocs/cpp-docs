@@ -57,7 +57,7 @@ The template argument `Rep` describes the type that is used to hold the number o
 |[duration::operator=](#op_eq)|Reduces the stored tick count modulo a specified value.|
 |[duration::operator*=](#op_star_eq)|Multiplies the stored tick count by a specified value.|
 |[duration::operator/=](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|
-|[duration::operator+](#op_add)|Returns `*this`.|
+|[duration::operator+](#op_add)|Returns **`*this`**.|
 |[duration::operator++](#op_add_add)|Increments the stored tick count.|
 |[duration::operator+=](#op_add_eq)|Adds the tick count of a specified `duration` object to the stored tick count.|
 |[duration::operator-=](#operator-_eq)|Subtracts the tick count of a specified `duration` object from the stored tick count.|
@@ -166,9 +166,9 @@ duration operator--(int);
 
 ### Return Value
 
-The first method returns `*this`.
+The first method returns **`*this`**.
 
-The second method returns a copy of `*this` that is made before the decrement.
+The second method returns a copy of **`*this`** that is made before the decrement.
 
 ## <a name="op_eq"></a> duration::operator=
 
@@ -225,7 +225,7 @@ The `duration` object after the division is performed.
 
 ## <a name="op_add"></a> duration::operator+
 
-Returns `*this`.
+Returns **`*this`**.
 
 ```cpp
 constexpr duration operator+() const;
@@ -243,9 +243,9 @@ duration operator++(int);
 
 ### Return Value
 
-The first method returns `*this`.
+The first method returns **`*this`**.
 
-The second method returns a copy of `*this` that is made before the increment.
+The second method returns a copy of **`*this`** that is made before the increment.
 
 ## <a name="op_add_eq"></a> duration::operator+=
 

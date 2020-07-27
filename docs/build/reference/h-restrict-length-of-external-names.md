@@ -26,9 +26,9 @@ If a program contains external names longer than *number*, the extra characters 
 
 The limit on length includes any compiler-created leading underscore (**\_**) or at sign (**\@**). These characters are part of the identifier and take a significant location.
 
-- The compiler adds a leading underscore (**\_**) to names modified by the `__cdecl` (default) and `__stdcall` calling conventions, and a leading at sign (**\@**) to names modified by the `__fastcall` calling convention.
+- The compiler adds a leading underscore (**\_**) to names modified by the **`__cdecl`** (default) and **`__stdcall`** calling conventions, and a leading at sign (**\@**) to names modified by the **`__fastcall`** calling convention.
 
-- The compiler appends argument size information to names modified by the `__fastcall` and `__stdcall` calling conventions, and adds type information to C++ names.
+- The compiler appends argument size information to names modified by the **`__fastcall`** and **`__stdcall`** calling conventions, and adds type information to C++ names.
 
 You may find **/H** useful:
 

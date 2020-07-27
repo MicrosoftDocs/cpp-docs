@@ -97,7 +97,7 @@ Not a boxed int
 100
 ```
 
-This sample shows that the common C++ idiom of using a `void*` pointer to point to an arbitrary object is replaced by `Object^`, which can hold a handle to any reference class. It also shows that all types, such as arrays and delegates, can be converted to an object handle.
+This sample shows that the common C++ idiom of using a **`void*`** pointer to point to an arbitrary object is replaced by `Object^`, which can hold a handle to any reference class. It also shows that all types, such as arrays and delegates, can be converted to an object handle.
 
 ```cpp
 // mcppv2_handle_3.cpp
@@ -188,7 +188,7 @@ Array value: 7
 Cannot access array element 11, size is 10
 ```
 
-This sample shows that a native reference (`&`) can't bind to an **int** member of a managed type, as the **int** might be stored in the garbage collected heap, and native references don't track object movement in the managed heap. The fix is to use a local variable, or to change `&` to `%`, making it a tracking reference.
+This sample shows that a native reference (`&`) can't bind to an **`int`** member of a managed type, as the **`int`** might be stored in the garbage collected heap, and native references don't track object movement in the managed heap. The fix is to use a local variable, or to change `&` to `%`, making it a tracking reference.
 
 ```cpp
 // mcppv2_handle_5.cpp

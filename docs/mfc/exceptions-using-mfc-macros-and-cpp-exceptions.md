@@ -30,7 +30,7 @@ The problem occurs because `e` is deleted when execution passes out of the "inne
 
 ## <a name="_core_try_blocks_inside_catch_blocks"></a> Try Blocks Inside Catch Blocks
 
-You cannot re-throw the current exception from within a **try** block that is inside a **CATCH** block. The following example is invalid:
+You cannot re-throw the current exception from within a **`try`** block that is inside a **CATCH** block. The following example is invalid:
 
 [!code-cpp[NVC_MFCExceptions#12](codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_3.cpp)]
 

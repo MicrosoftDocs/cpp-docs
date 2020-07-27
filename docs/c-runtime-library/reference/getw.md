@@ -32,7 +32,7 @@ Pointer to the **FILE** structure.
 
 ## Remarks
 
-The **_getw** function reads the next binary value of type **int** from the file associated with *stream* and increments the associated file pointer (if there is one) to point to the next unread character. **_getw** does not assume any special alignment of items in the stream. Problems with porting can occur with **_getw** because the size of the **int** type and the ordering of bytes within the **int** type differ across systems.
+The **_getw** function reads the next binary value of type **`int`** from the file associated with *stream* and increments the associated file pointer (if there is one) to point to the next unread character. **_getw** does not assume any special alignment of items in the stream. Problems with porting can occur with **_getw** because the size of the **`int`** type and the ordering of bytes within the **`int`** type differ across systems.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

@@ -55,7 +55,7 @@ This constraint requires that a type argument used for `T` implements `IComparab
 
 Static methods in the type argument's class cannot be called through the type parameter; they can be called only through the actual named type.
 
-A constraint cannot be a value type, including built-in types such as **int** or **double**. Since value types cannot have derived classes, only one class would ever be able to satisfy the constraint. In that case, the generic can be rewritten with the type parameter replaced by the specific value type.
+A constraint cannot be a value type, including built-in types such as **`int`** or **`double`**. Since value types cannot have derived classes, only one class would ever be able to satisfy the constraint. In that case, the generic can be rewritten with the type parameter replaced by the specific value type.
 
 Constraints are required in some cases since the compiler will not allow the use of methods or other features of an unknown type unless the constraints imply that the unknown type supports the methods or interfaces.
 

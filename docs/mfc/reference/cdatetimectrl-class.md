@@ -187,7 +187,7 @@ COLORREF GetMonthCalColor(int iColor) const;
 ### Parameters
 
 *iColor*<br/>
-An **int** value specifying which color area of the month calendar to retrieve. For a list of values, see the *iColor* parameter for [SetMonthCalColor](#setmonthcalcolor).
+An **`int`** value specifying which color area of the month calendar to retrieve. For a list of values, see the *iColor* parameter for [SetMonthCalColor](#setmonthcalcolor).
 
 ### Return Value
 
@@ -402,7 +402,7 @@ COLORREF SetMonthCalColor(
 ### Parameters
 
 *iColor*<br/>
-**int** value specifying which area of the month calendar control to set. This value can be one of the following.
+**`int`** value specifying which area of the month calendar control to set. This value can be one of the following.
 
 |Value|Meaning|
 |-----------|-------------|

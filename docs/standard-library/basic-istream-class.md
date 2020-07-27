@@ -151,7 +151,7 @@ basic_istream(basic_istream&& right);
 An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
 *_Isstd*\
-**true** if it's a standard stream; otherwise, **false**.
+**`true`** if it's a standard stream; otherwise, **`false`**.
 
 *right*\
 A `basic_istream` object to copy.
@@ -247,7 +247,7 @@ A buffer in which to write.
 
 ### Return Value
 
-The parameterless form of get returns the element read as an integer or end of file. The remaining forms return the stream (* `this`).
+The parameterless form of get returns the element read as an integer or end of file. The remaining forms return the stream (* **`this`**).
 
 ### Remarks
 
@@ -485,7 +485,7 @@ basic_istream& operator>>(unsigned long long& val);
 basic_istream& operator>>(void *& val);
 ```
 
-extract a field and convert it to a numeric value by calling `use_facet<num_get<Char_T, InIt>(getloc).`[`get`](#get)`(InIt(rdbuf), Init(0), *this, getloc, val)`. Here, `InIt` is defined as `istreambuf_iterator<Char_T, Tr>`, and *val* has type **long**, **unsigned long**, or **void** <strong>\*</strong> as needed.
+extract a field and convert it to a numeric value by calling `use_facet<num_get<Char_T, InIt>(getloc).`[`get`](#get)`(InIt(rdbuf), Init(0), *this, getloc, val)`. Here, `InIt` is defined as `istreambuf_iterator<Char_T, Tr>`, and *val* has type **`long`**, **`unsigned long`**, or **`void`** <strong>\*</strong> as needed.
 
 If the converted value can't be represented as the type of *val*, the function calls [`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`. In any case, the function returns __*this__.
 
@@ -497,7 +497,7 @@ basic_istream& operator>>(double& val);
 basic_istream& operator>>(long double& val);
 ```
 
-extract a field and convert it to a numeric value by calling `use_facet<num_get<Char_T, InIt>(getloc).get(InIt(rdbuf), Init(0), *this, getloc, val)`. Here, `InIt` is defined as `istreambuf_iterator<Char_T, Tr>`, and *val* has type **double** or **long double** as needed.
+extract a field and convert it to a numeric value by calling `use_facet<num_get<Char_T, InIt>(getloc).get(InIt(rdbuf), Init(0), *this, getloc, val)`. Here, `InIt` is defined as `istreambuf_iterator<Char_T, Tr>`, and *val* has type **`double`** or **`long double`** as needed.
 
 If the converted value can't be represented as the type of *val*, the function calls `setstate(failbit)`. In any case, it returns __*this__.
 
@@ -672,7 +672,7 @@ The number of characters to read.
 
 ### Return Value
 
-The stream ( `*this`).
+The stream ( **`*this`**).
 
 ### Remarks
 

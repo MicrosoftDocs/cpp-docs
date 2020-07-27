@@ -290,13 +290,13 @@ A reference to the last element inserted at the front of the container.
 
 ### Remarks
 
-The first member operator evaluates `container.push_front( val)`, then returns `*this`.
+The first member operator evaluates `container.push_front( val)`, then returns **`*this`**.
 
 The second member operator evaluates
 
 `container->push_front((typename Container::value_type&&) val)`,
 
-then returns `*this`.
+then returns **`*this`**.
 
 ### Example
 

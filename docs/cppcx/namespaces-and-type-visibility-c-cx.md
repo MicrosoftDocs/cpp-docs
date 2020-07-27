@@ -43,7 +43,7 @@ The C++/CX define certain types in these namespaces as part of the projection of
 |||
 |-|-|
 |**Namespace**|**Description**|
-|default|Contains the built-in numeric and char16 types. These types are in scope in every namespace and a `using` statement is never required.|
+|default|Contains the built-in numeric and char16 types. These types are in scope in every namespace and a **`using`** statement is never required.|
 |Platform|Contains primarily public types that correspond to Windows Runtime types such as `Array<T>`, `String`, `Guid`, and `Boolean`. Also includes specialized helper types such as `Platform::Agile<T>` and `Platform::Box<T>`.|
 |Platform::Collections|Contains the concrete collection classes that implement the Windows Runtime collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, collection.h, not in platform.winmd.|
 |Platform::Details|Contains types that are used by the compiler and are not meant for public consumption.|

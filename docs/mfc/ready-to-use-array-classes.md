@@ -19,7 +19,7 @@ Stores elements of type **DWORD** in an array.
 Stores pointers to objects of class `CObject` or to objects of classes derived from `CObject` in an array.
 
 [CPtrArray](../mfc/reference/cptrarray-class.md)<br/>
-Stores pointers to **void** (generic pointers) in an array.
+Stores pointers to **`void`** (generic pointers) in an array.
 
 [CUIntArray](../mfc/reference/cuintarray-class.md)<br/>
 Stores elements of type **UINT** in an array.

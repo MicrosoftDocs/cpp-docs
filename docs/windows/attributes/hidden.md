@@ -29,9 +29,9 @@ See the example for [bindable](bindable.md) for an example of how to use **hidde
 
 |||
 |-|-|
-|**Applies to**|**interface**, **class**, **struct**, method, property|
+|**Applies to**|**interface**, **`class`**, **`struct`**, method, property|
 |**Repeatable**|No|
-|**Required attributes**|**coclass** (when applied to **class** or **struct**)|
+|**Required attributes**|**coclass** (when applied to **`class`** or **`struct`**)|
 |**Invalid attributes**|None|
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).

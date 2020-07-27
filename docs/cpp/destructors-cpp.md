@@ -6,7 +6,7 @@ ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
 ---
 # Destructors (C++)
 
-A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **delete**. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
+A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **`delete`**. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
 
 If you do not define a destructor, the compiler will provide a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
 
@@ -49,7 +49,7 @@ int main() {
 }
 ```
 
-In the preceding example, the destructor `String::~String` uses the **delete** operator to deallocate the space dynamically allocated for text storage.
+In the preceding example, the destructor `String::~String` uses the **`delete`** operator to deallocate the space dynamically allocated for text storage.
 
 ## Declaring destructors
 
@@ -59,11 +59,11 @@ Several rules govern the declaration of destructors. Destructors:
 
 - Do not accept arguments.
 
-- Do not return a value (or **void**).
+- Do not return a value (or **`void`**).
 
-- Cannot be declared as **const**, **volatile**, or **static**. However, they can be invoked for the destruction of objects declared as **const**, **volatile**, or **static**.
+- Cannot be declared as **`const`**, **`volatile`**, or **`static`**. However, they can be invoked for the destruction of objects declared as **`const`**, **`volatile`**, or **`static`**.
 
-- Can be declared as **virtual**. Using virtual destructors, you can destroy objects without knowing their type — the correct destructor for the object is invoked using the virtual function mechanism. Note that destructors can also be declared as pure virtual functions for abstract classes.
+- Can be declared as **`virtual`**. Using virtual destructors, you can destroy objects without knowing their type — the correct destructor for the object is invoked using the virtual function mechanism. Note that destructors can also be declared as pure virtual functions for abstract classes.
 
 ## Using destructors
 
@@ -71,7 +71,7 @@ Destructors are called when one of the following events occurs:
 
 - A local (automatic) object with block scope goes out of scope.
 
-- An object allocated using the **new** operator is explicitly deallocated using **delete**.
+- An object allocated using the **`new`** operator is explicitly deallocated using **`delete`**.
 
 - The lifetime of a temporary object ends.
 
@@ -205,7 +205,7 @@ In the preceding example, the destructor for `Base2` is called before the destru
 
 ## Explicit destructor calls
 
-Calling a destructor explicitly is seldom necessary. However, it can be useful to perform cleanup of objects placed at absolute addresses. These objects are commonly allocated using a user-defined **new** operator that takes a placement argument. The **delete** operator cannot deallocate this memory because it is not allocated from the free store (for more information, see [The new and delete Operators](../cpp/new-and-delete-operators.md)). A call to the destructor, however, can perform appropriate cleanup. To explicitly call the destructor for an object, `s`, of class `String`, use one of the following statements:
+Calling a destructor explicitly is seldom necessary. However, it can be useful to perform cleanup of objects placed at absolute addresses. These objects are commonly allocated using a user-defined **`new`** operator that takes a placement argument. The **`delete`** operator cannot deallocate this memory because it is not allocated from the free store (for more information, see [The new and delete Operators](../cpp/new-and-delete-operators.md)). A call to the destructor, however, can perform appropriate cleanup. To explicitly call the destructor for an object, `s`, of class `String`, use one of the following statements:
 
 ```cpp
 s.String::~String();     // non-virtual call

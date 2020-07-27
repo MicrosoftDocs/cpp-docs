@@ -13,7 +13,7 @@ Parsing error
 
 1. **Accelerator type required (ASCII or VIRTKEY)**
 
-   The `type` field in the **ACCELERATORS** statement must contain either the ASCII or VIRTKEY value.
+   The *type* field in the **ACCELERATORS** statement must contain either the ASCII or VIRTKEY value.
 
 1. **BEGIN expected in accelerator table**
 
@@ -57,11 +57,11 @@ Parsing error
 
 1. **Expected comma in accelerator Table**
 
-   The Resource Compiler requires a comma between the `event` and *idvalue* fields in the **ACCELERATORS** statement.
+   The Resource Compiler requires a comma between the *event* and *idvalue* fields in the **ACCELERATORS** statement.
 
 1. **Expected control class name**
 
-   The `class` field of a **CONTROL** statement in the **DIALOG** statement must be one of the following types: BUTTON, COMBOBOX, EDIT, LISTBOX, SCROLLBAR, STATIC, or user-defined. Make sure the class is spelled correctly.
+   The *class* field of a **CONTROL** statement in the **DIALOG** statement must be one of the following types: BUTTON, COMBOBOX, EDIT, LISTBOX, SCROLLBAR, STATIC, or user-defined. Make sure the class is spelled correctly.
 
 1. **Expected font face name**
 
@@ -97,19 +97,19 @@ Parsing error
 
 1. **Expected string or constant accelerator command**
 
-   The Resource Compiler was not able to determine what kind of key is being set up for the accelerator. The `event` field in the **ACCELERATORS** statement might be invalid.
+   The Resource Compiler was not able to determine what kind of key is being set up for the accelerator. The *event* field in the **ACCELERATORS** statement might be invalid.
 
 1. **Expecting number for ID**
 
-   Expecting a number for the `id` field of a control statement in the **DIALOG** statement. Make sure you have a number or `#define` statement for the control ID.
+   Expecting a number for the *id* field of a control statement in the **DIALOG** statement. Make sure you have a number or `#define` statement for the control ID.
 
 1. **Expecting quoted string in dialog class**
 
-   The `class` field of the CLASS option in the **DIALOG** statement must be an integer or a string, enclosed in double quotation marks.
+   The *class* field of the CLASS option in the **DIALOG** statement must be an integer or a string, enclosed in double quotation marks.
 
 1. **Expecting quoted string in dialog title**
 
-   The `captiontext` field of the CAPTION option in the **DIALOG** statement must be an ASCII character string enclosed in double quotation marks.
+   The *captiontext* field of the CAPTION option in the **DIALOG** statement must be an ASCII character string enclosed in double quotation marks.
 
 1. **File not found: filename**
 
@@ -121,11 +121,11 @@ Parsing error
 
 1. **Invalid accelerator**
 
-   An `event` field in the **ACCELERATORS** statement was not recognized or was more than two characters in length.
+   An *event* field in the **ACCELERATORS** statement was not recognized or was more than two characters in length.
 
 1. **Invalid accelerator type (ASCII or VIRTKEY)**
 
-   The `type` field in the **ACCELERATORS** statement must contain either the ASCII or VIRTKEY value.
+   The *type* field in the **ACCELERATORS** statement must contain either the ASCII or VIRTKEY value.
 
 1. **Invalid control character**
 

@@ -40,7 +40,7 @@ Points to the application-supplied data passed to the `EnumObjects` function.
 
 ### Return Value
 
-The callback function returns an **int**. The value of this return is user-defined. If the callback function returns 0, `EnumObjects` stops enumeration early.
+The callback function returns an **`int`**. The value of this return is user-defined. If the callback function returns 0, `EnumObjects` stops enumeration early.
 
 ### Remarks
 

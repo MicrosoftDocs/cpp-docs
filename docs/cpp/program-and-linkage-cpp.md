@@ -38,7 +38,7 @@ In some cases it may be necessary to declare a global variable or class in a *cp
 
 A *free function* is a function that is defined at global or namespace scope. Non-const global variables and free functions by default have *external linkage*; they are visible from any translation unit in the program. Therefore, no other global object can have that name. A symbol with *internal linkage* or *no linkage* is visible only within the translation unit in which it is declared. When a name has internal linkage, the same name may exist in another translation unit. Variables declared within class definitions or function bodies have no linkage.
 
-You can force a global name to have internal linkage by explicitly declaring it as **static**. This limits its visibility to the same translation unit in which it is declared. In this context, **static** means something different than when applied to local variables.
+You can force a global name to have internal linkage by explicitly declaring it as **`static`**. This limits its visibility to the same translation unit in which it is declared. In this context, **`static`** means something different than when applied to local variables.
 
 The following objects have internal linkage by default:
 
@@ -47,7 +47,7 @@ The following objects have internal linkage by default:
 - typedefs
 - static objects in namespace scope
 
-To give a const object external linkage, declare it as **extern** and assign it a value:
+To give a const object external linkage, declare it as **`extern`** and assign it a value:
 
 ```cpp
 extern const int value = 42;

@@ -47,7 +47,7 @@ A pointer to a buffer to store the character string result. This function assume
 The size of the buffer used to store the result.
 
 *tmSource*<br/>
-Time/date structure. This function assumes a pointer to a valid **struct** **tm** object.
+Time/date structure. This function assumes a pointer to a valid **`struct`** **tm** object.
 
 ## Return Value
 

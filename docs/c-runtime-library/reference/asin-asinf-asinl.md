@@ -45,7 +45,7 @@ By default, if *x* is less than -1 or greater than 1, **asin** returns an indefi
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **asin** with **float** and **long** **double** values. In a C program, **asin** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **asin** with **`float`** and **`long double`** values. In a C program, **asin** always takes and returns a **`double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

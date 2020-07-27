@@ -66,13 +66,13 @@ The syntax for the function body is:
 *compound-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-list*<sub>opt</sub> *statement-list*<sub>opt</sub> **}**
 
-The only storage-class specifiers that can modify a function declaration are **extern** and **static**. The **extern** specifier signifies that the function can be referenced from other files; that is, the function name is exported to the linker. The **static** specifier signifies that the function cannot be referenced from other files; that is, the name is not exported by the linker. If no storage class appears in a function definition, **extern** is assumed. In any case, the function is always visible from the definition point to the end of the file.
+The only storage-class specifiers that can modify a function declaration are **`extern`** and **`static`**. The **`extern`** specifier signifies that the function can be referenced from other files; that is, the function name is exported to the linker. The **`static`** specifier signifies that the function cannot be referenced from other files; that is, the name is not exported by the linker. If no storage class appears in a function definition, **`extern`** is assumed. In any case, the function is always visible from the definition point to the end of the file.
 
 The optional *declaration-specifiers* and mandatory *declarator* together specify the function's return type and name. The *declarator* is a combination of the identifier that names the function and the parentheses following the function name. The optional *attribute-seq* nonterminal is a Microsoft-specific feature defined in [Function Attributes](../c-language/function-attributes.md).
 
 The *direct-declarator* (in the *declarator* syntax) specifies the name of the function being defined and the identifiers of its parameters. If the *direct-declarator* includes a *parameter-type-list*, the list specifies the types of all the parameters. Such a declarator also serves as a function prototype for later calls to the function.
 
-A *declaration* in the *declaration-list* in function definitions cannot contain a *storage-class-specifier* other than **register**. The *type-specifier* in the *declaration-specifiers* syntax can be omitted only if the **register** storage class is specified for a value of **int** type.
+A *declaration* in the *declaration-list* in function definitions cannot contain a *storage-class-specifier* other than **`register`**. The *type-specifier* in the *declaration-specifiers* syntax can be omitted only if the **`register`** storage class is specified for a value of **`int`** type.
 
 The *compound-statement* is the function body containing local variable declarations, references to externally declared items, and statements.
 

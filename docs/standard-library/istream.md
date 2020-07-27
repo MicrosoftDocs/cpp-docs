@@ -19,8 +19,8 @@ Defines the class template basic_istream, which mediates extractions for the ios
 
 |Type name|Description|
 |-|-|
-|[iostream](../standard-library/istream-typedefs.md#iostream)|A type `basic_iostream` specialized on **char**.|
-|[istream](../standard-library/istream-typedefs.md#istream)|A type `basic_istream` specialized on **char**.|
+|[iostream](../standard-library/istream-typedefs.md#iostream)|A type `basic_iostream` specialized on **`char`**.|
+|[istream](../standard-library/istream-typedefs.md#istream)|A type `basic_istream` specialized on **`char`**.|
 |[wiostream](../standard-library/istream-typedefs.md#wiostream)|A type `basic_iostream` specialized on **wchar**.|
 |[wistream](../standard-library/istream-typedefs.md#wistream)|A type `basic_istream` specialized on **wchar**.|
 

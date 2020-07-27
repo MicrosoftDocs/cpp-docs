@@ -9,4 +9,4 @@ ms.assetid: 6f48b91d-635b-4eef-b13c-1bf2056c1053
 
 'void *' type needs explicit cast
 
-A `void` pointer is assigned to a nonvoid pointer by implicit conversion. You must use an explicit cast.
+A **`void`** pointer is assigned to a nonvoid pointer by implicit conversion. You must use an explicit cast.

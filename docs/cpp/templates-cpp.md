@@ -21,7 +21,7 @@ T minimum(const T& lhs, const T& rhs)
 }
 ```
 
-The above code describes a template for a generic function with a single type parameter *T*, whose return value and call parameters (lhs and rhs) are all of this type. You can name a type parameter anything you like, but by convention single upper case letters are most commonly used. *T* is a template parameter; the **typename** keyword says that this parameter is a placeholder for a type. When the function is called, the compiler will replace every instance of `T` with the concrete type argument that is either specified by the user or deduced by the compiler. The process in which the compiler generates a class or function from a template is referred to as  *template instantiation*; `minimum<int>` is an instantiation of the template `minimum<T>`.
+The above code describes a template for a generic function with a single type parameter *T*, whose return value and call parameters (lhs and rhs) are all of this type. You can name a type parameter anything you like, but by convention single upper case letters are most commonly used. *T* is a template parameter; the **`typename`** keyword says that this parameter is a placeholder for a type. When the function is called, the compiler will replace every instance of `T` with the concrete type argument that is either specified by the user or deduced by the compiler. The process in which the compiler generates a class or function from a template is referred to as  *template instantiation*; `minimum<int>` is an instantiation of the template `minimum<T>`.
 
 Elsewhere, a user can declare an instance of the template  that is specialized for int. Assume that get_a() and get_b() are functions that return an int:
 
@@ -37,7 +37,7 @@ However, because this is a function template and the compiler can deduce the typ
 int i = minimum(a, b);
 ```
 
-When the compiler encounters that last statement, it generates a new function in which every occurrence of *T* in the template is replaced with **int**:
+When the compiler encounters that last statement, it generates a new function in which every occurrence of *T* in the template is replaced with **`int`**:
 
 ```cpp
 int minimum(const int& lhs, const int& rhs)
@@ -58,7 +58,7 @@ There is no practical limit to the number of type parameters. Separate multiple 
 template <typename T, typename U, typename V> class Foo{};
 ```
 
-The keyword **class** is equivalent to **typename** in this context. You can express the previous example as:
+The keyword **`class`** is equivalent to **`typename`** in this context. You can express the previous example as:
 
 ```cpp
 template <class T, class U, class V> class Foo{};
@@ -74,7 +74,7 @@ vtclass<int> vtinstance2;
 vtclass<float, bool> vtinstance3;
 ```
 
-Any built-in or user-defined type can be used as a type argument. For example, you can use [std::vector](../standard-library/vector-class.md) in the Standard Library to store variables of type **int**, **double**, [std::string](../standard-library/basic-string-class.md), `MyClass`, **const** `MyClass`*, `MyClass&`, and so on. The primary restriction when using templates is that a type argument must support any operations that are applied to the type parameters. For example, if we call `minimum` using `MyClass` as in this example:
+Any built-in or user-defined type can be used as a type argument. For example, you can use [std::vector](../standard-library/vector-class.md) in the Standard Library to store variables of type **`int`**, **`double`**, [std::string](../standard-library/basic-string-class.md), `MyClass`, **`const`** `MyClass`*, `MyClass&`, and so on. The primary restriction when using templates is that a type argument must support any operations that are applied to the type parameters. For example, if we call `minimum` using `MyClass` as in this example:
 
 ```cpp
 class MyClass
@@ -122,7 +122,7 @@ public:
 };
 ```
 
-Note the syntax in the template declaration. The `size_t` value is passed in as a template argument at compile time and must be **const** or a **constexpr** expression. You use it like this:
+Note the syntax in the template declaration. The `size_t` value is passed in as a template argument at compile time and must be **`const`** or a **`constexpr`** expression. You use it like this:
 
 ```cpp
 MyArray<MyClass*, 10> arr;
@@ -132,7 +132,7 @@ Other kinds of values including pointers and references can be passed in as non-
 
 ### Type deduction for non-type template parameters
 
-In Visual Studio 2017 and later, in **/std:c++17** mode the compiler deduces the type of a non-type template argument that is declared with **auto**:
+In Visual Studio 2017 and later, in **/std:c++17** mode the compiler deduces the type of a non-type template argument that is declared with **`auto`**:
 
 ```cpp
 template <auto x> constexpr auto constant = x;

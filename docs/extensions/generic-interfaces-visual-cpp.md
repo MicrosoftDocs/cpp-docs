@@ -28,7 +28,7 @@ For more information on interfaces, see [interface class](interface-class-cpp-co
 (Optional) Additional declarative information. For more information on attributes and attribute classes, see **Attributes**.
 
 *class-key*<br/>
-**class** or **typename**
+**`class`** or **`typename`**
 
 *type-parameter-identifier(s)*<br/>
 Comma-separated identifiers list.

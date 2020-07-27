@@ -28,7 +28,7 @@ An object of class `Type`:
 
 In particular, no subtle differences may exist between copy construction and default construction followed by assignment. None of the operations on objects of class `Type` may throw exceptions.
 
-Explicit specializations of class template complex exist for the three floating-point types. In this implementation, a value of any other type `Type` is typecast to **double** for actual calculations, with the **double** result assigned back to the stored object of type `Type`.
+Explicit specializations of class template complex exist for the three floating-point types. In this implementation, a value of any other type `Type` is typecast to **`double`** for actual calculations, with the **`double`** result assigned back to the stored object of type `Type`.
 
 ## Members
 

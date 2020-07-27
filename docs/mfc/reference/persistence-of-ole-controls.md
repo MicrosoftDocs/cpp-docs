@@ -17,13 +17,13 @@ One capability of OLE controls is property persistence (or serialization), which
 |[PX_Color](#px_color)|Exchanges a color property of a control.|
 |[PX_Currency](#px_currency)|Exchanges a control property of type **CY**.|
 |[PX_DataPath](#px_datapath)|Exchanges a control property of type `CDataPathProperty`.|
-|[PX_Double](#px_double)|Exchanges a control property of type **double**.|
+|[PX_Double](#px_double)|Exchanges a control property of type **`double`**.|
 |[PX_Font](#px_font)|Exchanges a font property of a control.|
-|[PX_Float](#px_float)|Exchanges a control property of type **float**.|
+|[PX_Float](#px_float)|Exchanges a control property of type **`float`**.|
 |[PX_IUnknown](#px_iunknown)|Exchanges a control property of undefined type.|
-|[PX_Long](#px_long)|Exchanges a control property of type **long**.|
+|[PX_Long](#px_long)|Exchanges a control property of type **`long`**.|
 |[PX_Picture](#px_picture)|Exchanges a picture property of a control.|
-|[PX_Short](#px_short)|Exchanges a control property of type **short**.|
+|[PX_Short](#px_short)|Exchanges a control property of type **`short`**.|
 |[PX_ULong](#px_ulong)|Exchanges a control property of type **ULONG**.|
 |[PX_UShort](#px_ushort)|Exchanges a control property of type **USHORT**.|
 |[PXstring](#px_string)|Exchanges a character string control property.|
@@ -226,7 +226,7 @@ Data path properties implement asynchronous control properties. The property's v
 
 ## <a name="px_double"></a> PX_Double
 
-Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **double**.
+Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **`double`**.
 
 ```cpp
 BOOL PX_Double(
@@ -303,7 +303,7 @@ The property's value is read from or written to `font`, a `CFontHolder` referenc
 
 ## <a name="px_float"></a> PX_Float
 
-Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **float**.
+Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **`float`**.
 
 ```cpp
 BOOL PX_Float(
@@ -380,7 +380,7 @@ The property's value is read from or written to the variable referenced by *pUnk
 
 ## <a name="px_long"></a> PX_Long
 
-Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **long**.
+Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **`long`**.
 
 ```cpp
 BOOL PX_Long(
@@ -458,7 +458,7 @@ The property's value is read from or written to the variable referenced by *pict
 
 ## <a name="px_short"></a> PX_Short
 
-Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **short**.
+Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **`short`**.
 
 ```cpp
 BOOL PX_Short(
@@ -536,7 +536,7 @@ The property's value is read from or written to the variable referenced by *ulVa
 
 ## <a name="px_ushort"></a> PX_UShort
 
-Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **unsigned short**.
+Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type **`unsigned short`**.
 
 ```cpp
 BOOL PX_UShort(

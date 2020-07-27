@@ -48,7 +48,7 @@ public:
 ### Parameters
 
 *IntType*\
-The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
+The integer result type, defaults to **`int`**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
@@ -194,7 +194,7 @@ The lowest value in the distribution range.
 The highest value in the distribution range.
 
 *weightfunc*\
-The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **`double`**.
 
 *parm*\
 The `param_type` structure used to construct the distribution.
@@ -262,7 +262,7 @@ The lowest value in the distribution range.
 The highest value in the distribution range.
 
 *weightfunc*\
-The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **`double`**.
 
 *right*\
 The `param_type` object to compare to this.

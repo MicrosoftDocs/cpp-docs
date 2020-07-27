@@ -32,13 +32,13 @@ New size in bytes.
 
 ## Return Value
 
-**realloc** returns a **void** pointer to the reallocated (and possibly moved) memory block.
+**realloc** returns a **`void`** pointer to the reallocated (and possibly moved) memory block.
 
 If there is not enough available memory to expand the block to the given size, the original block is left unchanged, and **NULL** is returned.
 
 If *size* is zero, then the block pointed to by *memblock* is freed; the return value is **NULL**, and *memblock* is left pointing at a freed block.
 
-The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than **void**, use a type cast on the return value.
+The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than **`void`**, use a type cast on the return value.
 
 ## Remarks
 
@@ -48,7 +48,7 @@ The *size* argument gives the new size of the block, in bytes. The contents of t
 
 **realloc** sets **errno** to **ENOMEM** if the memory allocation fails or if the amount of memory requested exceeds **_HEAP_MAXREQ**. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**realloc** calls **malloc** in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **realloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **new** operator does when it fails for the same reason. To override the default, call
+**realloc** calls **malloc** in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **realloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. To override the default, call
 
 ```C
 _set_new_mode(1);

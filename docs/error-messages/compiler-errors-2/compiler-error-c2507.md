@@ -9,7 +9,7 @@ ms.assetid: f102aff5-de7d-4c3f-9cac-2ddf9ce02b14
 
 'identifier' : too many virtual modifiers on the base class
 
-A class or structure is declared as `virtual` more than once. Only one `virtual` modifier can appear for each class in a list of base classes.
+A class or structure is declared as **`virtual`** more than once. Only one **`virtual`** modifier can appear for each class in a list of base classes.
 
 The following sample generates C2507:
 

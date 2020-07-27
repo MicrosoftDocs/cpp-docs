@@ -80,7 +80,7 @@ An iterator that specifies the first element in the map view.
 
 ### Remarks
 
-A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myMapView->First();`.
+A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **`auto`** type deduction keyword. For example, `auto x = myMapView->First();`.
 
 ## <a name="haskey"></a> MapView::HasKey Method
 
@@ -100,7 +100,7 @@ The key used to locate the MapView element. The type of *key* is typename *K*.
 
 ### Return Value
 
-**true** if the key is found; otherwise, **false**.
+**`true`** if the key is found; otherwise, **`false`**.
 
 ## <a name="lookup"></a> MapView::Lookup Method
 

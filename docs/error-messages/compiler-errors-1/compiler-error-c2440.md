@@ -13,7 +13,7 @@ The compiler cannot cast from `type1` to `type2`.
 
 ## Example
 
-C2440 can be caused if you attempt to initialize a non-const `char*` (or `wchar_t*`) by using a string literal in C++ code, when the compiler conformance option [/Zc:strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) is set. In C, the type of a string literal is array of `char`, but in C++, it is array of `const char`. This sample generates C2440:
+C2440 can be caused if you attempt to initialize a non-const **`char*`** (or `wchar_t*`) by using a string literal in C++ code, when the compiler conformance option [/Zc:strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) is set. In C, the type of a string literal is array of **`char`**, but in C++, it is array of `const char`. This sample generates C2440:
 
 ```cpp
 // C2440s.cpp
@@ -135,7 +135,7 @@ int main() {
 
 ## Example
 
-C2440 can also occur for an incorrect use of a user-defined conversion. For example, when a conversion operator has been defined as `explicit`, the compiler can't use it in an implicit conversion. For more information about user-defined conversions, see [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). This sample generates C2440:
+C2440 can also occur for an incorrect use of a user-defined conversion. For example, when a conversion operator has been defined as **`explicit`**, the compiler can't use it in an implicit conversion. For more information about user-defined conversions, see [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). This sample generates C2440:
 
 ```cpp
 // C2440d.cpp
@@ -207,7 +207,7 @@ int main() {
 
 ## Example
 
-C2440 can occur because of conformance changes to the compiler in Visual Studio 2015 Update 3. Previously, the compiler incorrectly treated certain distinct expressions as the same type when identifying a template match for a `static_cast` operation. Now the compiler distinguishes the types correctly, and code that relied on the previous `static_cast` behavior is broken. To fix this issue, change the template argument to match the template parameter type, or use a `reinterpret_cast` or C-style cast.
+C2440 can occur because of conformance changes to the compiler in Visual Studio 2015 Update 3. Previously, the compiler incorrectly treated certain distinct expressions as the same type when identifying a template match for a **`static_cast`** operation. Now the compiler distinguishes the types correctly, and code that relied on the previous **`static_cast`** behavior is broken. To fix this issue, change the template argument to match the template parameter type, or use a **`reinterpret_cast`** or C-style cast.
 
 This sample generates C2440:
 

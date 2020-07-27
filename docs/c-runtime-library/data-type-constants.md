@@ -18,29 +18,29 @@ These constants give the ranges for the integral data types. To use these consta
 ```
 
 > [!NOTE]
-> The [/J](../build/reference/j-default-char-type-is-unsigned.md) compiler option changes the default **char** type to **unsigned**.
+> The [`/J`](../build/reference/j-default-char-type-is-unsigned.md) compiler option changes the default **`char`** type from **`signed char`** to **`unsigned char`**.
 
 |Constant|Value|Description|
 |--------------|-----------|-------------|
-|**CHAR_BIT**|8|Number of bits in a **char**|
-|**SCHAR_MIN**|(-128)|Minimum signed **char** value|
-|**SCHAR_MAX**|127|Maximum signed **char** value|
-|**UCHAR_MAX**|255 (0xff)|Maximum **unsigned** **char** value|
-|**CHAR_MIN**|(-128) (0 if **/J** option used)|Minimum **char** value|
-|**CHAR_MAX**|127 (255 if **/J** option used)|Maximum **char** value|
-|**MB_LEN_MAX**|5|Maximum number of bytes in multibyte **char**|
-|**SHRT_MIN**|-32768|Minimum signed **short** value|
-|**SHRT_MAX**|32767|Maximum signed **short** value|
-|**USHRT_MAX**|65535 (0xffff)|Maximum **unsigned** **short** value|
-|**INT_MIN**|(-2147483647 - 1)|Minimum signed **int** value|
-|**INT_MAX**|2147483647|Maximum signed **int** value|
-|**UINT_MAX**|4294967295 (0xffffffff)|Maximum **unsigned** **int** value|
-|**LONG_MIN**|(-2147483647L - 1)|Minimum signed **long** value|
-|**LONG_MAX**|2147483647L|Maximum signed **long** value|
-|**ULONG_MAX**|4294967295UL (0xfffffffful)|Maximum **unsigned** **long** value|
-|**LLONG_MIN**|(-9223372036854775807LL - 1)|Minimum signed **long** **long** or **__int64** value|
-|**LLONG_MAX**|9223372036854775807LL|Maximum signed **long** **long** or **__int64** value|
-|**ULLONG_MAX**|0xffffffffffffffffull|Maximum **unsigned** **long** **long** value|
+|**CHAR_BIT**|8|Number of bits in a **`char`**|
+|**SCHAR_MIN**|(-128)|Minimum **`signed char`** value|
+|**SCHAR_MAX**|127|Maximum **`signed char`** value|
+|**UCHAR_MAX**|255 (0xff)|Maximum **`unsigned char`** value|
+|**CHAR_MIN**|(-128) (0 if **`/J`** option used)|Minimum **`char`** value|
+|**CHAR_MAX**|127 (255 if **`/J`** option used)|Maximum **`char`** value|
+|**MB_LEN_MAX**|5|Maximum number of bytes in multibyte **`char`**|
+|**SHRT_MIN**|-32768|Minimum **`signed short`** value|
+|**SHRT_MAX**|32767|Maximum **`signed short`** value|
+|**USHRT_MAX**|65535 (0xffff)|Maximum **`unsigned short`** value|
+|**INT_MIN**|(-2147483647 - 1)|Minimum **`signed int`** value|
+|**INT_MAX**|2147483647|Maximum **`signed int`** value|
+|**UINT_MAX**|4294967295 (0xffffffff)|Maximum **`unsigned int`** value|
+|**LONG_MIN**|(-2147483647L - 1)|Minimum **`signed long`** value|
+|**LONG_MAX**|2147483647L|Maximum **`signed long`** value|
+|**ULONG_MAX**|4294967295UL (0xfffffffful)|Maximum **`unsigned long`** value|
+|**LLONG_MIN**|(-9223372036854775807LL - 1)|Minimum **`signed long long`** or **`__int64`** value|
+|**LLONG_MAX**|9223372036854775807LL|Maximum **`signed long long`** or **`__int64`** value|
+|**ULLONG_MAX**|0xffffffffffffffffull|Maximum **`unsigned long long`** value|
 |**_I8_MIN**|(-127i8 - 1)|Minimum signed 8-bit value|
 |**_I8_MAX**|127i8|Maximum signed 8-bit value|
 |**_UI8_MAX**|0xffui8|Maximum unsigned 8-bit value|
@@ -61,7 +61,7 @@ These constants give the ranges for the integral data types. To use these consta
 
 ## Floating-point type constants
 
-The following constants give the range and other characteristics of the **long** **double**, **double** and **float** data types. To use these constants, include the float.h header in your source file:
+The following constants give the range and other characteristics of the **`long double`**, **`double`** and **`float`** data types. To use these constants, include the float.h header in your source file:
 
 ```C
 #include <float.h>

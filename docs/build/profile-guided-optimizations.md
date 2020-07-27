@@ -60,7 +60,7 @@ The profile-guided optimizations include these checks and improvements:
 
 - **Function Layout** - Based on the call graph and profiled caller/callee behavior, functions that tend to be along the same execution path are placed in the same section.
 
-- **Conditional Branch Optimization** - With the value probes, profile-guided optimizations can find if a given value in a switch statement is used more often than other values.  This value can then be pulled out of the switch statement.  The same can be done with `if`...`else` instructions where the optimizer can order the `if`...`else` so that either the `if` or `else` block is placed first, depending on which block is more frequently true.
+- **Conditional Branch Optimization** - With the value probes, profile-guided optimizations can find if a given value in a switch statement is used more often than other values.  This value can then be pulled out of the switch statement.  The same can be done with **`if`**...**`else`** instructions where the optimizer can order the **`if`**...**`else`** so that either the **`if`** or **`else`** block is placed first, depending on which block is more frequently true.
 
 - **Dead Code Separation** - Code that isn't called during profiling is moved to a special section that's appended to the end of the set of sections. It effectively keeps this section out of the often-used pages.
 

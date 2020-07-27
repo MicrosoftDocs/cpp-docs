@@ -9,7 +9,7 @@ ms.assetid: d9a90df6-87e4-4fe7-ab01-c226ee86bf10
 
 'var' : type data members can only be members of managed types
 
-An [initonly](../../dotnet/initonly-cpp-cli.md) data member was declared in a native class.  An `initonly` data member can only be declared in a CLR class.
+An [initonly](../../dotnet/initonly-cpp-cli.md) data member was declared in a native class.  An **`initonly`** data member can only be declared in a CLR class.
 
 The following sample generates C3898:
 

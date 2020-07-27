@@ -58,7 +58,7 @@ WRL_NOTHROW Event(
 ### Parameters
 
 *h*<br/>
-Handle to an event. By default, *h* is initialized to `nullptr`.
+Handle to an event. By default, *h* is initialized to **`nullptr`**.
 
 ## <a name="operator-assign"></a> Event::operator=
 

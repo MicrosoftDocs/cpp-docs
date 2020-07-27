@@ -13,4 +13,4 @@ Only two operators can take variable parameter lists:
 
 - Function call `()`
 
-- `new`
+- **`new`**

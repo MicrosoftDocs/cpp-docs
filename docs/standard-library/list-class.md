@@ -22,7 +22,7 @@ class list
 The element data type to be stored in the list.
 
 *Allocator*\
-The type that represents the stored allocator object that encapsulates details about the list's allocation and deallocation of memory. This argument is optional, and the default value is **allocator**\<*Type*>.
+The type that represents the stored allocator object that encapsulates details about the list's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Type>`.
 
 ## Remarks
 
@@ -47,14 +47,14 @@ Include the C++ Standard Library standard header \<list> to define the [containe
 |||
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for a list object.|
-|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **const** element in a list.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a list.|
-|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a list for reading and performing **const** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **const** element in a list.|
+|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **`const`** element in a list.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **`const`** element in a list.|
+|[const_reference](#const_reference)|A type that provides a reference to a **`const`** element stored in a list for reading and performing **`const`** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **`const`** element in a list.|
 |[difference_type](#difference_type)|A type that provides the difference between two iterators that refer to elements within the same list.|
 |[iterator](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a list.|
 |[pointer](#pointer)|A type that provides a pointer to an element in a list.|
-|[reference](#reference)|A type that provides a reference to a **const** element stored in a list for reading and performing **const** operations.|
+|[reference](#reference)|A type that provides a reference to a **`const`** element stored in a list for reading and performing **`const`** operations.|
 |[reverse_iterator](#reverse_iterator)|A type that provides a bidirectional iterator that can read or modify an element in a reversed list.|
 |[size_type](#size_type)|A type that counts the number of elements in a list.|
 |[value_type](#value_type)|A type that represents the data type stored in a list.|
@@ -318,7 +318,7 @@ The first element of c1 is now 20
 
 ## <a name="cbegin"></a> cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Returns a **`const`** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -326,13 +326,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A **const** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **`const`** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -344,7 +344,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a> cend
 
-Returns a `const` iterator that addresses the location just beyond the last element in a range.
+Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -352,13 +352,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A `const` bidirectional-access iterator that points just beyond the end of the range.
+A **`const`** bidirectional-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -407,7 +407,7 @@ The size of list after clearing is 0
 
 ## <a name="const_iterator"></a> const_iterator
 
-A type that provides a bidirectional iterator that can read a **const** element in a list.
+A type that provides a bidirectional iterator that can read a **`const`** element in a list.
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -423,7 +423,7 @@ See the example for [back](#back).
 
 ## <a name="const_pointer"></a> const_pointer
 
-Provides a pointer to a **const** element in a list.
+Provides a pointer to a **`const`** element in a list.
 
 ```cpp
 typedef typename Allocator::const_pointer const_pointer;
@@ -437,7 +437,7 @@ In most cases, an [iterator](#iterator) should be used to access the elements in
 
 ## <a name="const_reference"></a> const_reference
 
-A type that provides a reference to a **const** element stored in a list for reading and performing **const** operations.
+A type that provides a reference to a **`const`** element stored in a list for reading and performing **`const`** operations.
 
 ```cpp
 typedef typename Allocator::const_reference const_reference;
@@ -481,7 +481,7 @@ The second element is 20
 
 ## <a name="const_reverse_iterator"></a> const_reverse_iterator
 
-A type that provides a bidirectional iterator that can read any **const** element in a list.
+A type that provides a bidirectional iterator that can read any **`const`** element in a list.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -783,7 +783,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the list is empty; **false** if the list is not empty.
+**`true`** if the list is empty; **`false`** if the list is not empty.
 
 ### Example
 
@@ -2291,7 +2291,7 @@ The first position beyond the last element in the range to be inserted from the 
 
 ### Remarks
 
-The first pair of member functions inserts all elements in the source list into the destination list before the position referred to by *Where* and removes all elements from the source list. (`&Source` must not equal `this`.)
+The first pair of member functions inserts all elements in the source list into the destination list before the position referred to by *Where* and removes all elements from the source list. (`&Source` must not equal **`this`**.)
 
 The second pair of member functions inserts the element referred to by *Iter* before the position in the destination list referred to by *Where* and removes *Iter* from the source list. (If `Where == Iter || Where == ++Iter`, no change occurs.)
 

@@ -217,7 +217,7 @@ A `CDumpContext` reference. Using the return value, you can write multiple inser
 
 ### Remarks
 
-The insertion operator is overloaded for `CObject` pointers as well as for most primitive types. A pointer to character results in a dump of string contents; a pointer to **void** results in a hexadecimal dump of the address only. A LONGLONG results in a dump of a 64-bit signed integer; A ULONGLONG results in a dump of a 64-bit unsigned integer.
+The insertion operator is overloaded for `CObject` pointers as well as for most primitive types. A pointer to character results in a dump of string contents; a pointer to **`void`** results in a hexadecimal dump of the address only. A LONGLONG results in a dump of a 64-bit signed integer; A ULONGLONG results in a dump of a 64-bit unsigned integer.
 
 If you use the IMPLEMENT_DYNAMIC or IMPLEMENT_SERIAL macro in the implementation of your class, then the insertion operator, through `CObject::Dump`, will print the name of your `CObject`-derived class. Otherwise, it will print `CObject`. If you override the `Dump` function of the class, then you can provide a more meaningful output of the object's contents instead of a hexadecimal dump.
 

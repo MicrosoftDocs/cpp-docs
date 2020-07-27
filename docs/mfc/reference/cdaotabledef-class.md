@@ -177,7 +177,7 @@ virtual void Close();
 
 ### Remarks
 
-Usually after calling `Close`, you delete the tabledef object if it was allocated with **new**.
+Usually after calling `Close`, you delete the tabledef object if it was allocated with **`new`**.
 
 You can call [Open](#open) again after calling `Close`. This lets you reuse the tabledef object.
 

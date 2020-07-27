@@ -19,14 +19,14 @@ Defines several classes that support iostreams operations on sequences stored in
 
 |Type name|Description|
 |-|-|
-|[filebuf](../standard-library/fstream-typedefs.md#filebuf)|A type `basic_filebuf` specialized on **char** template parameters.|
-|[fstream](../standard-library/fstream-typedefs.md#fstream)|A type `basic_fstream` specialized on **char** template parameters.|
-|[ifstream](../standard-library/fstream-typedefs.md#ifstream)|A type `basic_ifstream` specialized on **char** template parameters.|
-|[ofstream](../standard-library/fstream-typedefs.md#ofstream)|A type `basic_ofstream` specialized on **char** template parameters.|
-|[wfstream](../standard-library/fstream-typedefs.md#wfstream)|A type `basic_fstream` specialized on **wchar_t** template parameters.|
-|[wifstream](../standard-library/fstream-typedefs.md#wifstream)|A type `basic_ifstream` specialized on **wchar_t** template parameters.|
-|[wofstream](../standard-library/fstream-typedefs.md#wofstream)|A type `basic_ofstream` specialized on **wchar_t** template parameters.|
-|[wfilebuf](../standard-library/fstream-typedefs.md#wfilebuf)|A type `basic_filebuf` specialized on **wchar_t** template parameters.|
+|[filebuf](../standard-library/fstream-typedefs.md#filebuf)|A type `basic_filebuf` specialized on **`char`** template parameters.|
+|[fstream](../standard-library/fstream-typedefs.md#fstream)|A type `basic_fstream` specialized on **`char`** template parameters.|
+|[ifstream](../standard-library/fstream-typedefs.md#ifstream)|A type `basic_ifstream` specialized on **`char`** template parameters.|
+|[ofstream](../standard-library/fstream-typedefs.md#ofstream)|A type `basic_ofstream` specialized on **`char`** template parameters.|
+|[wfstream](../standard-library/fstream-typedefs.md#wfstream)|A type `basic_fstream` specialized on **`wchar_t`** template parameters.|
+|[wifstream](../standard-library/fstream-typedefs.md#wifstream)|A type `basic_ifstream` specialized on **`wchar_t`** template parameters.|
+|[wofstream](../standard-library/fstream-typedefs.md#wofstream)|A type `basic_ofstream` specialized on **`wchar_t`** template parameters.|
+|[wfilebuf](../standard-library/fstream-typedefs.md#wfilebuf)|A type `basic_filebuf` specialized on **`wchar_t`** template parameters.|
 
 ### Classes
 

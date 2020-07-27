@@ -136,14 +136,14 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
 
 ### Remarks
 
-Depending on the threading model used by your application, the **typedef** name `CComGlobalsThreadModel` references either [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) or [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md). These classes provide additional `typedef` names to reference a critical section class.
+Depending on the threading model used by your application, the **`typedef`** name `CComGlobalsThreadModel` references either [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) or [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md). These classes provide additional **`typedef`** names to reference a critical section class.
 
 > [!NOTE]
 > `CComGlobalsThreadModel` does not reference class [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md).
 
 Using `CComGlobalsThreadModel` frees you from specifying a particular threading model class. Regardless of the threading model being used, the appropriate methods will be called.
 
-In addition to `CComGlobalsThreadModel`, ATL provides the **typedef** name [CComObjectThreadModel](#ccomobjectthreadmodel). The class referenced by each `typedef` depends on the threading model used, as shown in the following table:
+In addition to `CComGlobalsThreadModel`, ATL provides the **`typedef`** name [CComObjectThreadModel](#ccomobjectthreadmodel). The class referenced by each **`typedef`** depends on the threading model used, as shown in the following table:
 
 |typedef|Single threading|Apartment threading|Free threading|
 |-------------|----------------------|-------------------------|--------------------|
@@ -176,14 +176,14 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 
 ### Remarks
 
-Depending on the threading model used by your application, the `typedef` name `CComObjectThreadModel` references either [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) or [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md). These classes provide additional `typedef` names to reference a critical section class.
+Depending on the threading model used by your application, the **`typedef`** name `CComObjectThreadModel` references either [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) or [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md). These classes provide additional **`typedef`** names to reference a critical section class.
 
 > [!NOTE]
 > `CComObjectThreadModel` does not reference class [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md).
 
 Using `CComObjectThreadModel` frees you from specifying a particular threading model class. Regardless of the threading model being used, the appropriate methods will be called.
 
-In addition to `CComObjectThreadModel`, ATL provides the **typedef** name [CComGlobalsThreadModel](#ccomglobalsthreadmodel). The class referenced by each **typedef** depends on the threading model used, as shown in the following table:
+In addition to `CComObjectThreadModel`, ATL provides the **`typedef`** name [CComGlobalsThreadModel](#ccomglobalsthreadmodel). The class referenced by each **`typedef`** depends on the threading model used, as shown in the following table:
 
 |typedef|Single threading|Apartment threading|Free threading|
 |-------------|----------------------|-------------------------|--------------------|

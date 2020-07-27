@@ -28,11 +28,11 @@ It is important to note that a postfix increment or decrement expression evaluat
 
 When a postfix operator is applied to a function argument, the value of the argument is not guaranteed to be incremented or decremented before it is passed to the function.  See section 1.9.17 in the C++ standard for more information.
 
-Applying the postfix increment operator to a pointer to an array of objects of type **long** actually adds four to the internal representation of the pointer. This behavior causes the pointer, which previously referred to the *n*th element of the array, to refer to the (*n*+1)th element.
+Applying the postfix increment operator to a pointer to an array of objects of type **`long`** actually adds four to the internal representation of the pointer. This behavior causes the pointer, which previously referred to the *n*th element of the array, to refer to the (*n*+1)th element.
 
-The operands to postfix increment and postfix decrement operators must be modifiable (not **const**) l-values of arithmetic or pointer type. The type of the result is the same as that of the *postfix-expression*, but it is no longer an l-value.
+The operands to postfix increment and postfix decrement operators must be modifiable (not **`const`**) l-values of arithmetic or pointer type. The type of the result is the same as that of the *postfix-expression*, but it is no longer an l-value.
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The operand of a postfix increment  or decrement operator may not be of type **bool**.
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The operand of a postfix increment  or decrement operator may not be of type **`bool`**.
 
 The following code illustrates the postfix increment operator:
 

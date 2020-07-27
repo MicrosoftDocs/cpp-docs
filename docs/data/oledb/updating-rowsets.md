@@ -70,9 +70,9 @@ HRESULT hr = product.SetData();
 HRESULT Insert(int nAccessor = 0, bool bGetRow = false)
 ```
 
-- **false** (the default value) specifies that the current row increment to the next row (in which case it points to the inserted row).
+- **`false`** (the default value) specifies that the current row increment to the next row (in which case it points to the inserted row).
 
-- **true** specifies that the current row stay where it is.
+- **`true`** specifies that the current row stay where it is.
 
 The following code sets the values of data members bound to the columns of the table `Products` and then calls `Insert` to insert a new row with those values after the 100th row of the rowset. It's recommended that you set all column values to avoid undefined data in the new row:
 

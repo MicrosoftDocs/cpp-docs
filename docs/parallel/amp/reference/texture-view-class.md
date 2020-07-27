@@ -6,7 +6,7 @@ ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
 ---
 # texture_view Class
 
-Provides read access and write access to a texture. `texture_view` can only be used to read textures whose value type is `int`, `unsigned int`, or `float` that have default 32-bit bpse. To read other texture formats, use `texture_view<const value_type, _Rank>`.
+Provides read access and write access to a texture. `texture_view` can only be used to read textures whose value type is **`int`**, **`unsigned int`**, or **`float`** that have default 32-bit bpse. To read other texture formats, use `texture_view<const value_type, _Rank>`.
 
 ## Syntax
 
@@ -38,7 +38,7 @@ The rank of the `texture_view`.
 |Name|Description|
 |----------|-----------------|
 |`value_type`|The type of the elements in the texture aggregates.|
-|`coordinates_type`|The type of the coordinate used to specify a texel in the `texture_view`—that is, a `short_vector` that has the same rank as the associated texture that has a value type of `float`.|
+|`coordinates_type`|The type of the coordinate used to specify a texel in the `texture_view`—that is, a `short_vector` that has the same rank as the associated texture that has a value type of **`float`**.|
 |`gather_return_type`|The return type used for gather operations—that is, a rank 4 `short_vector` that holds the four homogenous color components gathered from the four texel values sampled.|
 
 ### Public Constructors

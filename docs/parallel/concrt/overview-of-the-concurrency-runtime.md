@@ -65,7 +65,7 @@ The following sections provide a brief overview of what each component provides 
 
 The Parallel Patterns Library (PPL) provides general-purpose containers and algorithms for performing fine-grained parallelism. The PPL enables *imperative data parallelism* by providing parallel algorithms that distribute computations on collections or on sets of data across computing resources. It also enables *task parallelism* by providing task objects that distribute multiple independent operations across computing resources.
 
-Use the Parallel Patterns Library when you have a local computation that can benefit from parallel execution. For example, you can use the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to transform an existing `for` loop to act in parallel.
+Use the Parallel Patterns Library when you have a local computation that can benefit from parallel execution. For example, you can use the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to transform an existing **`for`** loop to act in parallel.
 
 For more information about the Parallel Patterns Library, see [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md).
 

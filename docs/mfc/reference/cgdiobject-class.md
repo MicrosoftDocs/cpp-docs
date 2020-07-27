@@ -35,7 +35,7 @@ class CGdiObject : public CObject
 |[CGdiObject::FromHandle](#fromhandle)|Returns a pointer to a `CGdiObject` object given a handle to a Windows GDI object.|
 |[CGdiObject::GetObject](#getobject)|Fills a buffer with data that describes the Windows GDI object attached to the `CGdiObject` object.|
 |[CGdiObject::GetObjectType](#getobjecttype)|Retrieves the type of the GDI object.|
-|[CGdiObject::GetSafeHandle](#getsafehandle)|Returns `m_hObject` unless **this** is NULL, in which case NULL is returned.|
+|[CGdiObject::GetSafeHandle](#getsafehandle)|Returns `m_hObject` unless **`this`** is NULL, in which case NULL is returned.|
 |[CGdiObject::UnrealizeObject](#unrealizeobject)|Resets the origin of a brush or resets a logical palette.|
 
 ### Public Operators
@@ -266,7 +266,7 @@ The type of the object, if successful; otherwise 0. The value can be one of the 
 
 ## <a name="getsafehandle"></a> CGdiObject::GetSafeHandle
 
-Returns `m_hObject` unless **this** is NULL, in which case NULL is returned.
+Returns `m_hObject` unless **`this`** is NULL, in which case NULL is returned.
 
 ```
 HGDIOBJ GetSafeHandle() const;

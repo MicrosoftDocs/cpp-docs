@@ -9,7 +9,7 @@ ms.assetid: aadfc83b-1e5f-4229-bd0a-9c10a5d13182
 
 anachronism used : modifiers on data are ignored
 
-Using a Microsoft modifier such as `__cdecl` on a data declaration is an outdated practice.
+Using a Microsoft modifier such as **`__cdecl`** on a data declaration is an outdated practice.
 
 ## Example
 

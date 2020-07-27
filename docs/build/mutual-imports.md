@@ -31,7 +31,7 @@ Linking Two DLLs with Mutual Imports
 
 You can use the `_AFXEXT` preprocessor symbol for your MFC extension DLLs as long as you do not have multiple layers of MFC extension DLLs. If you have MFC extension DLLs that call or derive from classes in your own MFC extension DLLs, which then derive from the MFC classes, you must use your own preprocessor symbol to avoid ambiguity.
 
-The problem is that in Win32, you must explicitly declare any data as **__declspec(dllexport)** if it is to be exported from a DLL, and **__declspec(dllimport)** if it is to be imported from a DLL. When you define `_AFXEXT`, the MFC headers make sure that **AFX_EXT_CLASS** is defined correctly.
+The problem is that in Win32, you must explicitly declare any data as **`__declspec(dllexport)`** if it is to be exported from a DLL, and **`__declspec(dllimport)`** if it is to be imported from a DLL. When you define `_AFXEXT`, the MFC headers make sure that **AFX_EXT_CLASS** is defined correctly.
 
 When you have multiple layers, one symbol such as **AFX_EXT_CLASS** is not sufficient, because an MFC extension DLL might be exporting new classes as well as importing other classes from another MFC extension DLL. To solve this problem, use a special preprocessor symbol that indicates that you are building the DLL itself versus using the DLL. For example, imagine two MFC extension DLLs, A.dll and B.dll. They each export some classes in A.h and B.h, respectively. B.dll uses the classes from A.dll. The header files would look something like this:
 

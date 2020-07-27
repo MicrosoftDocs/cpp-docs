@@ -13,7 +13,7 @@ The compiler detected a situation where the user probably intended a variable to
 
 ## Example
 
-A `__declspec` attribute at the beginning of a user-defined type declaration applies to the variable of that type. C4091 indicates no variable is declared. The following sample generates C4091.
+A **`__declspec`** attribute at the beginning of a user-defined type declaration applies to the variable of that type. C4091 indicates no variable is declared. The following sample generates C4091.
 
 ```cpp
 // C4091.cpp
