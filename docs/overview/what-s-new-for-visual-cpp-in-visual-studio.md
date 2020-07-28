@@ -662,7 +662,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 
 ##### Visual Studio 2017 version 15.7
 
-- Support added for [/analyze:ruleset](../build/reference/analyze-code-analysis.md), which lets you specify the code analysis rules to run.
+- Support added for [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md), which lets you specify the code analysis rules to run.
 - Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## Unit testing in Visual Studio 2017
