@@ -1844,7 +1844,7 @@ New macros have been added to ATL to expand the functionality of PROP_ENTRY_TYPE
 
 #### /analyze Warnings
 
-Most `/analyze` (Enterprise Code Analysis) warnings have been removed from the C Run-Time (CRT), MFC, and ATL libraries.
+Most **`/analyze`** (Enterprise Code Analysis) warnings have been removed from the C Run-Time (CRT), MFC, and ATL libraries.
 
 #### Animation and D2D support
 
