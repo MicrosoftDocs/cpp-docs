@@ -22,11 +22,11 @@ Enables code analysis and control options.
 > **`/analyze:log`** *filename*\
 > **`/analyze:max_paths`** *number*\
 > **`/analyze:only`**\
-> **`/analyze:plugin`** *plugin-dll*
+> **`/analyze:plugin`** *plugin-dll*\
 > **`/analyze:quiet`**\
 > **`/analyze:ruleset`** *ruleset*\
 > **`/analyze:stacksize`** *number*\
-> **`/analyze:WX-`**\
+> **`/analyze:WX-`**
 
 ::: moniker-end
 ::: moniker range="vs-2015"
@@ -39,10 +39,10 @@ Enables code analysis and control options.
 > **`/analyze:log`** *filename*\
 > **`/analyze:max_paths`** *number*\
 > **`/analyze:only`**\
-> **`/analyze:plugin`** *plugin-dll*
+> **`/analyze:plugin`** *plugin-dll*\
 > **`/analyze:quiet`**\
 > **`/analyze:stacksize`** *number*\
-> **`/analyze:WX-`**\
+> **`/analyze:WX-`**
 
 ::: moniker-end
 
