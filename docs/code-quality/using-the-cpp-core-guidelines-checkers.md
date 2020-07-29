@@ -111,41 +111,41 @@ The C++ Core Guidelines are there to help you write better and safer code. Howev
 As new rules are added to the C++ Core Guidelines Checker, the number of warnings that are produced for pre-existing code may increase. You can use predefined rule sets to filter which kinds of rules to enable. You'll find reference articles for most rules under
 [Visual Studio C++ Core Check Reference](code-analysis-for-cpp-corecheck.md).
 
-- **Arithmetic Rules**<sup>15.6</sup>: Rules to detect arithmetic [overflow](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signed-unsigned operations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned), and [bit manipulation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
+- **Arithmetic Rules**: Rules to detect arithmetic [overflow](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signed-unsigned operations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned), and [bit manipulation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).<sup>15.6</sup>
 
 - **Bounds Rules**<sup>15.3</sup>: Enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-- **Class Rules**<sup>15.5</sup>: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
+- **Class Rules**: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).<sup>15.5</sup>
 
-- **Concurrency Rules**<sup>15.5</sup>: A single rule, which catches bad guard object declarations. For more information, see [guidelines related to concurrency](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
+- **Concurrency Rules**: A single rule, which catches bad guard object declarations. For more information, see [guidelines related to concurrency](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).<sup>15.5</sup>
 
-- **Const Rules**<sup>15.3</sup>: Enforce [const-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Const Rules**: Enforce [const-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).<sup>15.3</sup>
 
-- **Declaration Rules**<sup>15.5</sup>: A couple of rules from the [interfaces guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) that focus on how global variables are declared.
+- **Declaration Rules**: A couple of rules from the [interfaces guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) that focus on how global variables are declared.<sup>15.5</sup>
 
-- **Enum Rules**<sup>16.3</sup>: These rules enforce enum-related checks from the C++ Core Guidelines (https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum).
+- **Enum Rules**: These rules enforce [enum-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum).<sup>16.3</sup>
 
-- **Experimental Rules**<sup>16.0</sup> These are experimental C++ Core Check rules that are useful but not ready for everyday use. Try them out and [provide feedback](https://developercommunity.visualstudio.com/content/idea/post.html?space=62).
+- **Experimental Rules** These are experimental C++ Core Check rules that are useful but not ready for everyday use. Try them out and [provide feedback](https://developercommunity.visualstudio.com/content/idea/post.html?space=62).<sup>16.0</sup>
 
-- **Function Rules**<sup>15.5</sup>: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
+- **Function Rules**: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).<sup>15.5</sup>
 
-- **GSL Rules**<sup>15.7</sup>: These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl).
+- **GSL Rules**: These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl).<sup>15.7</sup>
 
-- **Lifetime Rules**<sup>15.7</sup>: These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile).
+- **Lifetime Rules**: These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile).<sup>15.7</sup>
 
-- **Owner Pointer Rules**<sup>15.3</sup>: Enforce [resource-management checks related to owner\<T> from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Owner Pointer Rules**: Enforce [resource-management checks related to owner\<T> from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
 
-- **Raw Pointer Rules**<sup>15.3</sup>: Enforce [resource-management checks related to raw pointers from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Raw Pointer Rules**: Enforce [resource-management checks related to raw pointers from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
 
-- **Shared pointer Rules**<sup>15.5</sup>: It's part of [resource management](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) guidelines enforcement. We added a few rules specific to how shared pointers are passed into functions or used locally.
+- **Shared pointer Rules**: It's part of [resource management](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) guidelines enforcement.<sup>15.5</sup> We added a few rules specific to how shared pointers are passed into functions or used locally.
 
-- **STL Rules**<sup>15.7</sup>: These rules enforce checks related to the [C++ Standard Library (STL) from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib).
+- **STL Rules**: These rules enforce checks related to the [C++ Standard Library (STL) from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib).<sup>15.7</sup>
 
-- **Style Rules**<sup>15.5</sup>: One simple but important check, which bans use of [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). It's the first step to improve your coding style and use of expressions and statements in C++.
+- **Style Rules**: One simple but important check, which bans use of [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto).<sup>15.5</sup> It's the first step to improve your coding style and use of expressions and statements in C++.
 
-- **Type Rules**<sup>15.3</sup>: Enforce the [Type profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Type Rules**: Enforce the [Type profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).<sup>15.3</sup>
 
-- **Unique Pointer Rules**<sup>15.3</sup>: Enforce [resource-management checks related to types with unique pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Unique Pointer Rules**: Enforce [resource-management checks related to types with unique pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
 
 - **C++ Core Check Rules**: This rule set contains all the currently implemented checks from the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines), except for the Experimental rules.
 
