@@ -706,6 +706,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/code-quality/cpp-core-guidelines-warnings.md",
+      "redirect_url": "/cpp/code-quality/using-the-cpp-core-guidelines-checkers",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/cpp/using-arrays-cpp.md",
       "redirect_url": "/cpp/cpp/arrays-cpp",
       "redirect_document_id": false
