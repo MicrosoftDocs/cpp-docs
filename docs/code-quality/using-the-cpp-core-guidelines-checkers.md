@@ -113,7 +113,7 @@ As new rules are added to the C++ Core Guidelines Checker, the number of warning
 
 - **Arithmetic Rules**: Rules to detect arithmetic [overflow](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signed-unsigned operations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned), and [bit manipulation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).<sup>15.6</sup>
 
-- **Bounds Rules**<sup>15.3</sup>: Enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Bounds Rules**: Enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).<sup>15.3</sup>
 
 - **Class Rules**: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).<sup>15.5</sup>
 
