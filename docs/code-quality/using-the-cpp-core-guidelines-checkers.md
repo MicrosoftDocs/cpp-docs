@@ -111,32 +111,50 @@ The C++ Core Guidelines are there to help you write better and safer code. Howev
 As new rules are added to the C++ Core Guidelines Checker, the number of warnings that are produced for pre-existing code may increase. You can use predefined rule sets to filter which kinds of rules to enable. You'll find reference articles for most rules under
 [Visual Studio C++ Core Check Reference](code-analysis-for-cpp-corecheck.md).
 
-In **Visual Studio 2017 version 15.3**, the supported rule sets are:
+- **Arithmetic Rules**<sup>15.6</sup>: Rules to detect arithmetic [overflow](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signed-unsigned operations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned), and [bit manipulation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
 
-- **Owner Pointer Rules** enforce [resource-management checks related to owner\<T> from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Bounds Rules**<sup>15.3</sup>: Enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-- **Const Rules** enforce [const-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Class Rules**<sup>15.5</sup>: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
 
-- **Raw Pointer Rules** enforce [resource-management checks related to raw pointers from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Concurrency Rules**<sup>15.5</sup>: A single rule, which catches bad guard object declarations. For more information, see [guidelines related to concurrency](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
 
-- **Unique Pointer Rules** enforce [resource-management checks related to types with unique pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Const Rules**<sup>15.3</sup>: Enforce [const-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-- **Bounds Rules** enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Declaration Rules**<sup>15.5</sup>: A couple of rules from the [interfaces guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) that focus on how global variables are declared.
 
-- **Type Rules** enforce the [Type profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Enum Rules**<sup>16.3</sup>: These rules enforce enum-related checks from the C++ Core Guidelines (https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum).
 
-**Visual Studio 2017 version 15.5** adds:
+- **Experimental Rules**<sup>16.0</sup> These are experimental C++ Core Check rules that are useful but not ready for everyday use. Try them out and [provide feedback](https://developercommunity.visualstudio.com/content/idea/post.html?space=62).
 
-- **Class rules**: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
-- **Concurrency Rules**: A single rule, which catches bad guard object declarations. For more information, see [guidelines related to concurrency](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
-- **Declaration Rules**: A couple of rules from the [interfaces guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) that focus on how global variables are declared.
-- **Function Rules**: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
-- **Shared pointer Rules**: It's part of [resource management](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) guidelines enforcement. We added a few rules specific to how shared pointers are passed into functions or used locally.
-- **Style Rules**: One simple but important check, which bans use of [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). It's the first step to improve your coding style and use of expressions and statements in C++.
+- **Function Rules**<sup>15.5</sup>: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
 
-**Visual Studio 2017 version 15.6** adds:
+- **GSL Rules**<sup>15.7</sup>: These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl).
 
-- **Arithmetic Rules**: Rules to detect arithmetic [overflow](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signed-unsigned operations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned), and [bit manipulation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
+- **Lifetime Rules**<sup>15.7</sup>: These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile).
+
+- **Owner Pointer Rules**<sup>15.3</sup>: Enforce [resource-management checks related to owner\<T> from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+
+- **Raw Pointer Rules**<sup>15.3</sup>: Enforce [resource-management checks related to raw pointers from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+
+- **Shared pointer Rules**<sup>15.5</sup>: It's part of [resource management](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) guidelines enforcement. We added a few rules specific to how shared pointers are passed into functions or used locally.
+
+- **STL Rules**<sup>15.7</sup>: These rules enforce checks related to the [C++ Standard Library (STL) from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib).
+
+- **Style Rules**<sup>15.5</sup>: One simple but important check, which bans use of [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). It's the first step to improve your coding style and use of expressions and statements in C++.
+
+- **Type Rules**<sup>15.3</sup>: Enforce the [Type profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+
+- **Unique Pointer Rules**<sup>15.3</sup>: Enforce [resource-management checks related to types with unique pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+
+- **C++ Core Check Rules**: This rule set contains all the currently implemented checks from the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines), except for the Experimental rules.
+
+<sup>15.3</sup> These rules first appeared in Visual Studio 2017 version 15.3\
+<sup>15.5</sup> These rules first appeared in Visual Studio 2017 version 15.5\
+<sup>15.6</sup> These rules first appeared in Visual Studio 2017 version 15.6\
+<sup>15.7</sup> These rules first appeared in Visual Studio 2017 version 15.7\
+<sup>16.0</sup> These rules first appeared in Visual Studio 2019 version 16.0\
+<sup>16.3</sup> These rules first appeared in Visual Studio 2019 version 16.3
 
 You can choose to limit warnings to just one or a few of the groups. The **Native Minimum** and **Native Recommended** rule sets include C++ Core Check rules and other PREfast checks.
 
