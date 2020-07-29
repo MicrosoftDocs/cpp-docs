@@ -507,12 +507,11 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 Several C++ operations that use the IntelliSense engine for refactoring and code navigation run much faster. The following numbers are based on the Visual Studio Chromium solution with 3500 projects:
 
-|||
-|-|-|
-|Feature|Performance Improvement|
-|Rename|5.3x|
-|Change Signature |4.5x|
-|Find All References|4.7x|
+| Feature | Performance Improvement |
+|--|--|
+| Rename | 5.3x |
+| Change Signature | 4.5x |
+| Find All References | 4.7x |
 
 C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to definitions easy. The Structure Visualizer from the Productivity Power Tools pack is now also included in the product by default.
 
@@ -662,7 +661,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 
 ##### Visual Studio 2017 version 15.7
 
-- Support added for [/analyze:ruleset](../build/reference/analyze-code-analysis.md), which lets you specify the code analysis rules to run.
+- Support added for [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md), which lets you specify the code analysis rules to run.
 - Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## Unit testing in Visual Studio 2017
