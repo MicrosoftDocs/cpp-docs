@@ -7,19 +7,19 @@ ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
 ---
 # Command-Line Warning D9041
 
-invalid value 'value' for '/option'; assuming 'value'; add '/analyze' to command-line options when specifying this warning
+> invalid value '*option-value*' for '/*option-name*'; assuming '*assumed-value*'; add '/analyze' to command-line options when specifying this warning
 
-A Code Analysis warning number was added to the **/wd**, **/we**, **/wo**, or **/wl** command line option without also specifying the **/analyze** command line option. To remedy this error, either add the **/analyze** command line option, or remove the invalid warning number from the appropriate **/w** command line option.
+A Code Analysis warning number was added to the **`/wd`**, **`/we`**, **`/wo`**, or **`/wl`** command line option without also specifying the **`/analyze`** command line option. To remedy this error, either add the **`/analyze`** command line option, or remove the invalid warning number from the appropriate **`/w`** command line option.
 
 ## Example
 
 The following command line example generates the warning D9041:
 
-```
+```cmd
 cl /EHsc /LD /wd6001 filename.cpp
 ```
 
-To fix the warning, add the **/analyze** command line option. If **/analyze** is not supported on your version of the compiler, remove the invalid warning number from the **/wd** option.
+To fix the warning, add the **`/analyze`** command line option. If **`/analyze`** is not supported on your version of the compiler, remove the invalid warning number from the **`/wd`** option.
 
 ## See also
 

@@ -71,8 +71,7 @@ MyClass::MyClass(int x) {
    // OK
       ;
 
-   #pragma omp parallel reduction(+: x, g_i, MyClass::x_public,
-   MyClass::x_private)
+   #pragma omp parallel reduction(+: x, g_i, MyClass::x_public, MyClass::x_private)
    // OK
       ;
 
