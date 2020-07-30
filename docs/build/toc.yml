@@ -668,7 +668,9 @@
                 - name: /showIncludes (List include files)
                   href: ../build/reference/showincludes-list-include-files.md
                 - name: /source-charset (Set source character set)
-                  href: ../build/reference/source-charset-set-source-character-set.md
+                  href: ../build/reference/
+                - name: /sourceDependencies (Report source-level dependencies)
+                  href: ../build/reference/sourcedependencies.md
                 - name: /std (Specify language standard version)
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: /Tc, /Tp, /TC, /TP (Specify source file type)
