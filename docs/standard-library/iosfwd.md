@@ -22,7 +22,7 @@ typedef T1 streamoff;
 typedef T2 streamsize;
 typedef fpos streampos;
 
-// wchar_t TYPE DEFINITIONS
+// char_t TYPE DEFINITIONS
 typedef basic_ios<char, char_traits<char>> ios;
 typedef basic_streambuf<char, char_traits<char>> streambuf;
 typedef basic_istream<char, char_traits<char>> istream;
