@@ -60,18 +60,20 @@ where `...` represents your other compiler options. This command line produces a
 {
     "Version": "1.0",
     "Data": {
-        "Source": "C:\\users\\username\\projects\\main_project\\main.cpp",
-        "ProvidedModule": "",
+        "Source": "C:\\...\\main.cpp",
+        "PCH": "C:\\...\\pch.pch",
         "Includes": [
-            "C:\\users\\username\\projects\\main_project\\header.h"
+            "C:\\...\\header.h"
         ],
         "Modules": [
-            "C:\\users\\username\\projects\\main_project\\m.ifc",
-            "C:\\users\\username\\projects\\main_project\\other.h.ifc"
+            "C:\\...\\m.ifc",
+            "C:\\...\\other.h.ifc"
         ]
     }
 }
 ```
+
+We've used `...` to abbreviate the reported paths; the report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
 
 ### To set the /sourceDependencies compiler option in Visual Studio
 
