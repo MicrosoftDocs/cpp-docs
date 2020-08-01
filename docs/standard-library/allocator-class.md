@@ -522,7 +522,7 @@ A pointer designating the address of the object to be destroyed.
 
 #### Remarks
 
-The member function destroys the object designated by *ptr*, by calling the destructor `ptr->`**Type**::**~Type**.
+The member function destroys the object designated by *ptr*, by calling the destructor `ptr->Type::~Type`.
 
 #### Example
 
