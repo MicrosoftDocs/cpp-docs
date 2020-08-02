@@ -10,22 +10,22 @@ This book generally uses the forms of the type specifiers listed in the followin
 
 ## Type Specifiers and Equivalents
 
-|Type Specifier|Equivalent(s)|
-|--------------------|---------------------|
-|**`signed char`**1|**`char`**|
-|**`signed int`**|**`signed`**, **`int`**|
-|**`signed short int`**|**`short`**, **`signed short`**|
-|**`signed long int`**|**`long`**, **`signed long`**|
-|**`unsigned char`**|—|
-|**`unsigned int`**|**`unsigned`**|
-|**`unsigned short int`**|**`unsigned short`**|
-|**`unsigned long int`**|**`unsigned long`**|
-|**`float`**|—|
-|**`long double`**2|—|
+| Type Specifier | Equivalent(s) |
+|--|--|
+| **`signed char`**<sup>1</sup> | **`char`** |
+| **`signed int`** | **`signed`**, **`int`** |
+| **`signed short int`** | **`short`**, **`signed short`** |
+| **`signed long int`** | **`long`**, **`signed long`** |
+| **`unsigned char`** | — |
+| **`unsigned int`** | **`unsigned`** |
+| **`unsigned short int`** | **`unsigned short`** |
+| **`unsigned long int`** | **`unsigned long`** |
+| **`float`** | — |
+| **`long double`**<sup>2</sup> | — |
 
-1   When you make the **`char`** type unsigned by default (by specifying the **`/J`** compiler option), you cannot abbreviate **`signed char`** as **`char`**.
+<sup>1</sup> When you make the **`char`** type unsigned by default (by specifying the **`/J`** compiler option), you cannot abbreviate **`signed char`** as **`char`**.
 
-2   In 32-bit and 64-bit operating systems, the Microsoft C compiler maps **`long double`** to type **`double`**.
+<sup>2</sup> In 32-bit and 64-bit operating systems, the Microsoft C compiler maps **`long double`** to type **`double`**.
 
 **Microsoft Specific**
 

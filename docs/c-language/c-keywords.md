@@ -51,7 +51,7 @@ ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
     :::column-end:::
 :::row-end:::
 
-You can`t redefine keywords. However, you can specify text to be substituted for keywords before compilation by using C [preprocessor directives](../preprocessor/preprocessor-directives.md).
+You can't redefine keywords. However, you can specify text to be substituted for keywords before compilation by using C [preprocessor directives](../preprocessor/preprocessor-directives.md).
 
 **Microsoft Specific**
 

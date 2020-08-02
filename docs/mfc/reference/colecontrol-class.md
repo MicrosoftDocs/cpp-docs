@@ -868,7 +868,7 @@ The *pbParams* argument is a space-separated list of **VTS_**. One or more of th
 |VTS_YSIZE_HIMETRIC|OLE_XSIZE_HIMETRIC|
 
 > [!NOTE]
-> Additional variant constants have been defined for all variant types, with the exception of VTS_FONT and VTS_PICTURE, that provide a pointer to the variant data constant. These constants are named using the **VTS_P**`constantname` convention. For example, VTS_PCOLOR is a pointer to a VTS_COLOR constant.
+> Additional variant constants have been defined for all variant types, with the exception of VTS_FONT and VTS_PICTURE, that provide a pointer to the variant data constant. These constants are named using the VTS_P\<CONSTANT-NAME> convention. For example, VTS_PCOLOR is a pointer to a VTS_COLOR constant.
 
 ## <a name="firekeydown"></a> COleControl::FireKeyDown
 

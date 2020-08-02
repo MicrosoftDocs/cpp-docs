@@ -273,7 +273,7 @@ static constexpr float_denorm_style has_denorm = denorm_absent;
 
 #### Return Value
 
-An enumeration value of type **`const`**`float_denorm_style`, indicating whether the type allows denormalized values.
+An enumeration value of type `const float_denorm_style`, indicating whether the type allows denormalized values.
 
 #### Remarks
 

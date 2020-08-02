@@ -45,30 +45,32 @@ int maxValue;                // Not recommended! maxValue contains
 
 ## Fundamental (built-in) types
 
-Unlike some languages, C++ has no universal base type from which all other types are derived. The language includes many *fundamental types*, also known as *built-in types*. This includes numeric types such as **`int`**, **`double`**, **`long`**, **`bool`**, plus the **`char`** and **`wchar_t`** types for ASCII and UNICODE characters, respectively. Most fundamental types (except **`bool`**, **`double`**, **wc`har_t** and related types) all have unsigned versions, which modify the range of values that the variable can store. For example, an **`int`**, which stores a 32-bit signed integer, can represent a value from -2,147,483,648 to 2,147,483,647. An **`unsigned int`**, which is also stored as 32-bits, can store a value from 0 to 4,294,967,295. The total number of possible values in each case is the same; only the range is different.
+Unlike some languages, C++ has no universal base type from which all other types are derived. The language includes many *fundamental types*, also known as *built-in types*. This includes numeric types such as **`int`**, **`double`**, **`long`**, **`bool`**, plus the **`char`** and **`wchar_t`** types for ASCII and UNICODE characters, respectively. Most integral fundamental types (except **`bool`**, **`double`**, **`wchar_t`**, and related types) all have **`unsigned`** versions, which modify the range of values that the variable can store. For example, an **`int`**, which stores a 32-bit signed integer, can represent a value from -2,147,483,648 to 2,147,483,647. An **`unsigned int`**, which is also stored as 32-bits, can store a value from 0 to 4,294,967,295. The total number of possible values in each case is the same; only the range is different.
 
 The fundamental types are recognized by the compiler, which has built-in rules that govern what operations you can perform on them, and how they can be converted to other fundamental types. For a complete list of built-in types and their size and numeric limits, see [Built-in types](../cpp/fundamental-types-cpp.md).
 
-The following illustration shows the relative sizes of the built-in types:
+The following illustration shows the relative sizes of the built-in types in the Microsoft C++ implementation:
 
 ![Size in bytes of built&#45;in types](../cpp/media/built-intypesizes.png "Size in bytes of built&#45;in types")
 
-The following table lists the most frequently used fundamental types:
+The following table lists the most frequently used fundamental types, and their sizes in the Microsoft C++ implementation:
 
-|Type|Size|Comment|
-|----------|----------|-------------|
-|int|4 bytes|The default choice for integral values.|
-|double|8 bytes|The default choice for floating point values.|
-|bool|1 byte|Represents values that can be either true or false.|
-|char|1 byte|Use for ASCII characters in older C-style strings or std::string objects that will never have to be converted to UNICODE.|
-|wchar_t|2 bytes|Represents "wide" character values that may be encoded in UNICODE format (UTF-16 on Windows, other operating systems may differ). This is the character type that is used in strings of type `std::wstring`.|
-|unsigned&nbsp;char|1 byte|C++ has no built-in byte type.  Use **`unsigned char`** to represent a byte value.|
-|unsigned int|4 bytes|Default choice for bit flags.|
-|long long|8 bytes|Represents very large integer values.|
+| Type | Size | Comment |
+|--|--|--|
+| **`int`** | 4 bytes | The default choice for integral values. |
+| **`double`** | 8 bytes | The default choice for floating point values. |
+| **`bool`** | 1 byte | Represents values that can be either true or false. |
+| **`char`** | 1 byte | Use for ASCII characters in older C-style strings or std::string objects that will never have to be converted to UNICODE. |
+| **`wchar_t`** | 2 bytes | Represents "wide" character values that may be encoded in UNICODE format (UTF-16 on Windows, other operating systems may differ). This is the character type that is used in strings of type `std::wstring`. |
+| **`unsigned char`** | 1 byte | C++ has no built-in byte type.  Use **`unsigned char`** to represent a byte value. |
+| **`unsigned int`** | 4 bytes | Default choice for bit flags. |
+| **`long long`** | 8 bytes | Represents very large integer values. |
+
+Other C++ implementations may use different sizes for certain numeric types. For more information on the sizes and size relationships that the C++ standard requires, see [Built-in types](fundamental-types-cpp.md).
 
 ## The void type
 
-The **`void`** type is a special type; you cannot declare a variable of type **`void`**, but you can declare a variable of type __void \*__ (pointer to **`void`**), which is sometimes necessary when allocating raw (un-typed) memory. However, pointers to **`void`** are not type-safe and generally their use is strongly discouraged in modern C++. In a function declaration, a **`void`** return value means that the function does not return a value; this is a common and acceptable use of **`void`**. While the C language required functions that have zero parameters to declare **`void`** in the parameter list, for example, `fou(void)`, this practice is discouraged in modern C++ and should be declared `fou()`. For more information, see [Type Conversions and Type Safety](../cpp/type-conversions-and-type-safety-modern-cpp.md).
+The **`void`** type is a special type; you cannot declare a variable of type **`void`**, but you can declare a variable of type `void *` (pointer to **`void`**), which is sometimes necessary when allocating raw (un-typed) memory. However, pointers to **`void`** are not type-safe and generally their use is strongly discouraged in modern C++. In a function declaration, a **`void`** return value means that the function does not return a value; this is a common and acceptable use of **`void`**. While the C language required functions that have zero parameters to declare **`void`** in the parameter list, for example, `fou(void)`, this practice is discouraged in modern C++ and should be declared `fou()`. For more information, see [Type Conversions and Type Safety](../cpp/type-conversions-and-type-safety-modern-cpp.md).
 
 ## const type qualifier
 

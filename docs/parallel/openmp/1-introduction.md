@@ -49,7 +49,7 @@ The following terms are used in this document:
 
 - private
 
-  A private variable names a block of storage that's unique to the thread making the reference. There are several ways to specify that a variable is private: a definition within a parallel region, a `threadprivate` directive, a `private`, `firstprivate`, `lastprivate`, or `reduction` clause, or use of the variable as a **`for`**loop control variable in a **`for`** loop immediately following a `for` or `parallel for` directive.
+  A private variable names a block of storage that's unique to the thread making the reference. There are several ways to specify that a variable is private: a definition within a parallel region, a `threadprivate` directive, a `private`, `firstprivate`, `lastprivate`, or `reduction` clause, or use of the variable as a **`for`** loop control variable in a **`for`** loop immediately following a `for` or `parallel for` directive.
 
 - region
 
