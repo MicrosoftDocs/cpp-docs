@@ -25,7 +25,7 @@ The compiler ignores this option unless the [/Qpar](../build/reference/qpar-auto
 By default, the auto-vectorizer attempts to vectorize all loops that it evaluates may benefit from it. Specify this pragma to disable the auto-vectorizer for the loop that follows.
 
 **ivdep**\
-A hint to the compiler to ignore vector dependencies for this loop. Use this option together with **hint_parallel**.
+A hint to the compiler to ignore vector dependencies for this loop. Use this option together with **hint_parallel** or separately.
 
 ## Remarks
 
