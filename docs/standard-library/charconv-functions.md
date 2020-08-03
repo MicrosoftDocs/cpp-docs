@@ -87,7 +87,7 @@ A [to_chars_result](to-chars-result-structure.md) containing the result of the c
 ### Remarks
 
 Functions taking a [chars_format](chars-format-class.md) parameter determine the conversion specifier as if they were using `printf()` as follows:
-The conversion specifier is `f` if `fmt` is `chars_format::fixed`, `e` if `fmt` is `chars_format::scientific`, `a` (without leading "0x" in the result) if `fmt` is `chars_format::hex`, and `g` if `fmt` is `chars_format::general`. Specifying the shortest fixed notation may still result in lengthy output because it may be the shortest possible representation when the value is very large or very small.
+The conversion specifier is `'f'` if `fmt` is `chars_format::fixed`, `'e'` if `fmt` is `chars_format::scientific`, `'a'` (without the leading `0x` in the result) if `fmt` is `chars_format::hex`, and `'g'` if `fmt` is `chars_format::general`. Specifying the shortest fixed notation may still result in lengthy output because it may be the shortest possible representation when the value is very large or very small.
 
 The following table describes the conversion behavior given different combinations of `fmt` and `precision` parameters. The term "shortest round-trip" refers to writing the fewest number of digits necessary such that parsing that representation using the corresponding `from_chars` function will recover the value exactly.
 
@@ -229,7 +229,16 @@ int main()
 }
 ```
 
+## Requirements
+
+**Header:** \<charconv>
+
+**Namespace:** std
+
+/std:c++17, or later, is required.
+
 ## See also
 
 [\<charconv>](charconv.md)  
 [The shortest decimal string that round-trips](https://www.exploringbinary.com/the-shortest-decimal-string-that-round-trips-examples/)
+[printf() format specifiers](..\c-runtime-library\format-specification-syntax-printf-and-wprintf-functions.md)
