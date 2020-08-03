@@ -11,7 +11,7 @@ The Universal C Runtime library (UCRT) provides many integral and floating-point
 
 Many of the floating point math library functions have different implementations for different CPU architectures. For example, the 32-bit x86 CRT may have a different implementation than the 64-bit x64 CRT. In addition, some of the functions may have multiple implementations for a given CPU architecture. The most efficient implementation is selected dynamically at run-time depending on the instruction sets supported by the CPU. For example, in the 32-bit x86 CRT, some functions have both an x87 implementation and an SSE2 implementation. When running on a CPU that supports SSE2, the faster SSE2 implementation is used. When running on a CPU that does not support SSE2, the slower x87 implementation is used. Because different implementations of the math library functions may use different CPU instructions and different algorithms to produce their results, the functions may produce different results across CPUs. In most cases, the results are within +/-1 ulp of the correctly rounded result, but the actual results may vary across CPUs.
 
-Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported the **long double** type as an 80-bit precision floating-point data type. In later versions of Visual C++, the **long double** data type is a 64-bit precision floating-point data type identical to the **double** type. The compiler treats **long double** and **double** as distinct types, but the **long double** functions are identical to their **double** counterparts. The CRT provides **long double** versions of the math functions for ISO C99 source code compatibility, but note that the binary representation may differ from other compilers.
+Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported the **`long double`** type as an 80-bit precision floating-point data type. In later versions of Visual C++, the **`long double`** data type is a 64-bit precision floating-point data type identical to the **`double`** type. The compiler treats **`long double`** and **`double`** as distinct types, but the **`long double`** functions are identical to their **`double`** counterparts. The CRT provides **`long double`** versions of the math functions for ISO C99 source code compatibility, but note that the binary representation may differ from other compilers.
 
 ## Supported math and floating-point routines
 
@@ -24,9 +24,9 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [asinh, asinhf, asinhl](../c-runtime-library/reference/asinh-asinhf-asinhl.md)|Computes the hyperbolic arc sine
 [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Computes the arc tangent
 [atanh, atanhf, atanhl](../c-runtime-library/reference/atanh-atanhf-atanhl.md)|Computes the hyperbolic arc tangent
-[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Converts a locale-specific string to a **double**
-[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Converts a string to a **double**
-[_atoflt, _atoflt_l, _atoldbl, _atoldbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Converts a locale-specific string to a **float** or **long double**
+[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Converts a locale-specific string to a **`double`**
+[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Converts a string to a **`double`**
+[_atoflt, _atoflt_l, _atoldbl, _atoldbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Converts a locale-specific string to a **`float`** or **`long double`**
 [cbrt, cbrtf, cbrtl](../c-runtime-library/reference/cbrt-cbrtf-cbrtl.md)|Computes the cube root
 [ceil, ceilf, ceill](../c-runtime-library/reference/ceil-ceilf-ceill.md)|Computes the ceiling
 [_chgsign, _chgsignf, _chgsignl](../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)|Computes the additive inverse
@@ -37,7 +37,7 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)|Computes the sine
 [cosh, coshf, coshl](../c-runtime-library/reference/cosh-coshf-coshl.md)|Computes the hyperbolic sine
 [div, ldiv, lldiv](../c-runtime-library/reference/div.md)|Computes the quotient and the remainder of two integer values
-[_ecvt](../c-runtime-library/reference/ecvt.md), [ecvt](../c-runtime-library/reference/posix-ecvt.md)|Converts a **double** to a string
+[_ecvt](../c-runtime-library/reference/ecvt.md), [ecvt](../c-runtime-library/reference/posix-ecvt.md)|Converts a **`double`** to a string
 [_ecvt_s](../c-runtime-library/reference/ecvt-s.md)|Secure version of **_ecvt**
 [erf, erff, erfl](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)|Computes the error function
 [erfc, erfcf, erfcl](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)|Computes the complementary error function
@@ -84,15 +84,15 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Computes the Bessel function
 [ldexp, ldexpf, ldexpl](../c-runtime-library/reference/ldexp.md)|Computes x*2<sup>n</sup>
 [lgamma, lgammaf, lgammal](../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)|Computes the natural logarithm of the absolute value of the gamma function
-[llrint, llrintf, llrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Rounds a floating-point value to the nearest **long long** value
-[llround, llroundf, llroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Rounds a floating-point value to the nearest **long long** value
+[llrint, llrintf, llrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Rounds a floating-point value to the nearest **`long long`** value
+[llround, llroundf, llroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Rounds a floating-point value to the nearest **`long long`** value
 [log, logf, logl, log10, log10f, log10l](../c-runtime-library/reference/log-logf-log10-log10f.md)|Computes the natural or base-10 logarithm
 [log1p, log1pf, log1pl](../c-runtime-library/reference/log1p-log1pf-log1pl2.md)|Computes the natural logarithm of 1+x
 [log2, log2f, log2l](../c-runtime-library/reference/log2-log2f-log2l.md)|Computes the base-2 logarithm
 [logb, logbf, logbl, _logb, _logbf](../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md)|Returns the exponent of a floating-point value
-[lrint, lrintf, lrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Rounds a floating-point value to the nearest **long** value
+[lrint, lrintf, lrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Rounds a floating-point value to the nearest **`long`** value
 [_lrotl, _lrotr](../c-runtime-library/reference/lrotl-lrotr.md)|Rotates an integer value left or right
-[lround, lroundf, lroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Rounds a floating-point value to the nearest **long** value
+[lround, lroundf, lroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Rounds a floating-point value to the nearest **`long`** value
 [_matherr](../c-runtime-library/reference/matherr.md)|The default math error handler
 [__max](../c-runtime-library/reference/max.md)|Macro that returns the larger of two values
 [__min](../c-runtime-library/reference/min.md)|Macro that returns the smaller of two values
@@ -116,13 +116,13 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Computes the hyperbolic sine
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Computes the square root
 [_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|Gets the floating-point status word
-[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Converts a string to a **float**
-[strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Converts a string to a **long** **double**
+[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Converts a string to a **`float`**
+[strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Converts a string to a **`long double`**
 [tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|Computes the tangent
 [tanh, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|Computes the hyperbolic tangent
 [tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|Computes the gamma function
 [trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|Truncates the fractional part
-[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Converts a wide string to a **double**
+[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Converts a wide string to a **`double`**
 [_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Computes the Bessel function
 
 ## See also

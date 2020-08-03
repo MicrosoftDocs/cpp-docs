@@ -49,7 +49,7 @@ The choice of container type should be based in general on the type of searching
 
 The set should be the associative container of choice when the conditions associating the values with their keys are satisfied by the application. The elements of a set are unique and serve as their own sort keys. A model for this type of structure is an ordered list of, say, words in which the words may occur only once. If multiple occurrences of the words were allowed, then a multiset would be the appropriate container structure. If values need to be attached to a list of unique key words, then a map would be an appropriate structure to contain this data. If instead the keys are not unique, then a multimap would be the container of choice.
 
-The set orders the sequence it controls by calling a stored function object of type [key_compare](#key_compare). This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need to be merely less than comparable to establish this order so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x,y*) is a function object that has two argument objects *x* and *y* and a return value of **true** or **false**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects *x* and *y* are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
+The set orders the sequence it controls by calling a stored function object of type [key_compare](#key_compare). This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need to be merely less than comparable to establish this order so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x,y*) is a function object that has two argument objects *x* and *y* and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects *x* and *y* are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
@@ -66,10 +66,10 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 |||
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the set object.|
-|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **const** element in the set.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a set.|
-|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a set for reading and performing **const** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **const** element in the set.|
+|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **`const`** element in the set.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **`const`** element in a set.|
+|[const_reference](#const_reference)|A type that provides a reference to a **`const`** element stored in a set for reading and performing **`const`** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **`const`** element in the set.|
 |[difference_type](#difference_type)|A signed integer type that can be used to represent the number of elements of a set in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a set.|
 |[key_compare](#key_compare)|A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the set.|
@@ -196,7 +196,7 @@ The first element of s1 is now 2
 
 ## <a name="cbegin"></a> cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Returns a **`const`** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -204,13 +204,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A **const** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **`const`** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -222,7 +222,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a> cend
 
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
+Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -230,13 +230,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A **const** bidirectional-access iterator that points just beyond the end of the range.
+A **`const`** bidirectional-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -288,7 +288,7 @@ The size of the set after clearing is 0.
 
 ## <a name="const_iterator"></a> const_iterator
 
-A type that provides a bidirectional iterator that can read a **const** element in the set.
+A type that provides a bidirectional iterator that can read a **`const`** element in the set.
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -304,7 +304,7 @@ See the example for [begin](#begin) for an example that uses `const_iterator`.
 
 ## <a name="const_pointer"></a> const_pointer
 
-A type that provides a pointer to a **const** element in a set.
+A type that provides a pointer to a **`const`** element in a set.
 
 ```cpp
 typedef typename allocator_type::const_pointer const_pointer;
@@ -318,7 +318,7 @@ In most cases, a [const_iterator](#const_iterator) should be used to access the 
 
 ## <a name="const_reference"></a> const_reference
 
-A type that provides a reference to a **const** element stored in a set for reading and performing **const** operations.
+A type that provides a reference to a **`const`** element stored in a set for reading and performing **`const`** operations.
 
 ```cpp
 typedef typename allocator_type::const_reference const_reference;
@@ -359,7 +359,7 @@ The first element in the set is 10.
 
 ## <a name="const_reverse_iterator"></a> const_reverse_iterator
 
-A type that provides a bidirectional iterator that can read any **const** element in the set.
+A type that provides a bidirectional iterator that can read any **`const`** element in the set.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -760,7 +760,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the set is empty; **false** if the set is nonempty.
+**`true`** if the set is empty; **`false`** if the set is nonempty.
 
 ### Example
 
@@ -1231,7 +1231,7 @@ The [initializer_list](../standard-library/initializer-list.md) from which to co
 
 ### Return Value
 
-The single-element member functions, (1) and (2), return a [pair](../standard-library/pair-structure.md) whose **bool** component is true if an insertion was made, and false if the set already contained an element of equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the **bool** component is true, or to the existing element if the **bool** component is false.
+The single-element member functions, (1) and (2), return a [pair](../standard-library/pair-structure.md) whose **`bool`** component is true if an insertion was made, and false if the set already contained an element of equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the **`bool`** component is true, or to the existing element if the **`bool`** component is false.
 
 The single-element-with-hint member functions, (3) and (4), return an iterator that points to the position where the new element was inserted into the set or, if an element with an equivalent key already exists, to the existing element.
 
@@ -1241,7 +1241,7 @@ No iterators, pointers, or references are invalidated by this function.
 
 During the insertion of just one element, if an exception is thrown, the container's state is not modified. During the insertion of multiple elements, if an exception is thrown, the container is left in an unspecified but valid state.
 
-To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the **bool** component, use `pr.second`. For an example, see the sample code later in this article.
+To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the **`bool`** component, use `pr.second`. For an example, see the sample code later in this article.
 
 The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and, for set, `set<V>::value_type` is type `const V`.
 
@@ -1381,7 +1381,7 @@ The stored object defines the member function:
 
 **bool operator()**(**const Key&**`_xVal`, **const Key&**`_yVal`);
 
-which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
+which returns **`true`** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
 Note that both [key_compare](#key_compare) and [value_compare](#value_compare) are synonyms for the template parameter `Traits`. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
 
@@ -1928,7 +1928,7 @@ All constructors initialize their sets.
 
 All constructors store a function object of type `Traits` that is used to establish an order among the keys of the set and that can later be returned by calling [key_comp](#key_comp).
 
-The first three constructors specify an empty initial set, the second specifying the type of comparison function (`comp`) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (`al`) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
+The first three constructors specify an empty initial set, the second specifying the type of comparison function (`comp`) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (`al`) to be used. The keyword **`explicit`** suppresses certain kinds of automatic type conversion.
 
 The fourth constructor specifies a copy of the set `right`.
 
@@ -2259,7 +2259,7 @@ The stored object defines the member function:
 
 **bool operator**(**const Key&**`_xVal`, **const Key&**`_yVal`);
 
-which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
+which returns **`true`** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
 Note that both [value_compare](#value_compare) and [key_compare](#key_compare) are synonyms for the template parameter `Traits`. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
 

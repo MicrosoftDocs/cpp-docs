@@ -97,11 +97,11 @@ const wchar_t* GetRawBuffer(unsigned int* length) const;
 ### Parameters
 
 *length*
-Pointer to an **int** variable that receives the length of the data.
+Pointer to an **`int`** variable that receives the length of the data.
 
 ### Return Value
 
-A **const** pointer to the underlying string data.
+A **`const`** pointer to the underlying string data.
 
 ## <a name="hstringreference"></a> HStringReference::HStringReference
 
@@ -185,7 +185,7 @@ The second parameter to compare.  *rhs* can be an `HStringReference` object or a
 
 ### Return Value
 
-**true** if the *lhs* and *rhs* parameters are equal; otherwise, **false**.
+**`true`** if the *lhs* and *rhs* parameters are equal; otherwise, **`false`**.
 
 ## <a name="operator-inequality"></a> HStringReference::operator!=
 
@@ -215,7 +215,7 @@ The second parameter to compare.  *rhs* can be an `HStringReference` object or a
 
 ### Return Value
 
-**true** if the *lhs* and *rhs* parameters are not equal; otherwise, **false**.
+**`true`** if the *lhs* and *rhs* parameters are not equal; otherwise, **`false`**.
 
 ## <a name="operator-less-than"></a> HStringReference::operator&lt;
 
@@ -237,4 +237,4 @@ The second parameter to compare.  *rhs* can be a reference to an `HStringReferen
 
 ### Return Value
 
-**true** if the *lhs* parameter is less than the *rhs* parameter; otherwise, **false**.
+**`true`** if the *lhs* parameter is less than the *rhs* parameter; otherwise, **`false`**.

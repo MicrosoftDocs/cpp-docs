@@ -28,15 +28,15 @@ Pointer to a C structured exception translator function that you write.
 
 ## Return Value
 
-Returns a pointer to the previous translator function registered by **_set_se_translator**, so that the previous function can be restored later. If no previous function has been set, the return value can be used to restore the default behavior; this value can be **nullptr**.
+Returns a pointer to the previous translator function registered by **_set_se_translator**, so that the previous function can be restored later. If no previous function has been set, the return value can be used to restore the default behavior; this value can be **`nullptr`**.
 
 ## Remarks
 
-The **_set_se_translator** function provides a way to handle Win32 exceptions (C structured exceptions) as C++ typed exceptions. To allow each C exception to be handled by a C++ **catch** handler, first define a C exception wrapper class that can be used, or derived from, to attribute a specific class type to a C exception. To use this class, install a custom C exception translator function that is called by the internal exception-handling mechanism each time a C exception is raised. Within your translator function, you can throw any typed exception that can be caught by a matching C++ **catch** handler.
+The **_set_se_translator** function provides a way to handle Win32 exceptions (C structured exceptions) as C++ typed exceptions. To allow each C exception to be handled by a C++ **`catch`** handler, first define a C exception wrapper class that can be used, or derived from, to attribute a specific class type to a C exception. To use this class, install a custom C exception translator function that is called by the internal exception-handling mechanism each time a C exception is raised. Within your translator function, you can throw any typed exception that can be caught by a matching C++ **`catch`** handler.
 
 You must use [/EHa](../../build/reference/eh-exception-handling-model.md) when using **_set_se_translator**.
 
-To specify a custom translation function, call **_set_se_translator** using the name of your translation function as its argument. The translator function that you write is called once for each function invocation on the stack that has **try** blocks. There is no default translator function.
+To specify a custom translation function, call **_set_se_translator** using the name of your translation function as its argument. The translator function that you write is called once for each function invocation on the stack that has **`try`** blocks. There is no default translator function.
 
 Your translator function should do no more than throw a C++ typed exception. If it does anything in addition to throwing (such as writing to a log file, for example) your program might not behave as expected, because the number of times the translator function is invoked is platform-dependent.
 

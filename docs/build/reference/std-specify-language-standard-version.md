@@ -4,7 +4,7 @@ ms.date: "06/04/2020"
 f1_keywords: ["/std", "-std", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
 ---
-# /std (Specify Language Standard Version)
+# `/std` (Specify Language Standard Version)
 
 Enable supported C++ language features from the specified version of the C++ language standard.
 
@@ -20,9 +20,9 @@ The **`/std`** option is available in Visual Studio 2017 and later. It's used to
 
 The default **`/std:c++14`** option enables the set of C++14 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are changed or new in more recent versions of the language standard. It doesn't disable some C++17 features already implemented in previous releases of the MSVC compiler. To avoid breaking changes for users who have already taken dependencies on the features available in or before Visual Studio 2015 Update 2, these features remain enabled when the **`/std:c++14`** option is specified:
 
-- [Rules for auto with braced-init-lists](https://wg21.link/n3922)
+- [Rules for `auto` with braced-init-lists](https://wg21.link/n3922)
 
-- [typename in template template-parameters](https://wg21.link/n4051)
+- [`typename` in template template-parameters](https://wg21.link/n4051)
 
 - [Removing trigraphs](https://wg21.link/n4086)
 

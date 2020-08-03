@@ -59,7 +59,7 @@ The stored exception captured by this `nested_exception` object.
 
 #### Remarks
 
-If `nested_ptr()` returns a null pointer, the function calls `std::terminate()`. Otherwise, it throws the stored exception captured by `*this`.
+If `nested_ptr()` returns a null pointer, the function calls `std::terminate()`. Otherwise, it throws the stored exception captured by **`*this`**.
 
 ## Requirements
 

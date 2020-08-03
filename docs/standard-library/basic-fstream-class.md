@@ -156,7 +156,7 @@ bool is_open() const;
 
 ### Return Value
 
-**true** if the file is open, **false** otherwise.
+**`true`** if the file is open, **`false`** otherwise.
 
 ### Remarks
 
@@ -224,7 +224,7 @@ An lvalue reference to a `basic_fstream` object.
 
 ### Return Value
 
-Returns `*this`.
+Returns **`*this`**.
 
 ### Remarks
 

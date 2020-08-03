@@ -7,7 +7,7 @@ ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b
 ---
 # /Qimprecise_fwaits (Remove fwaits Inside Try Blocks)
 
-Removes the `fwait` commands internal to `try` blocks when you use the [/fp:except](fp-specify-floating-point-behavior.md) compiler option.
+Removes the `fwait` commands internal to **`try`** blocks when you use the [/fp:except](fp-specify-floating-point-behavior.md) compiler option.
 
 ## Syntax
 
@@ -17,7 +17,7 @@ Removes the `fwait` commands internal to `try` blocks when you use the [/fp:exce
 
 ## Remarks
 
-This option has no effect if **/fp:except** is not also specified. If you specify the **/fp:except** option, the compiler will insert a `fwait` command around each line of code in a `try` block. In this way, the compiler can identify the specific line of code that produces an exception. **/Qimprecise_fwaits** removes internal `fwait` instructions, leaving only the waits around the `try` block. This improves performance, but the compiler will only be able to say which `try` block causes an exception, not which line.
+This option has no effect if **/fp:except** is not also specified. If you specify the **/fp:except** option, the compiler will insert a `fwait` command around each line of code in a **`try`** block. In this way, the compiler can identify the specific line of code that produces an exception. **/Qimprecise_fwaits** removes internal `fwait` instructions, leaving only the waits around the **`try`** block. This improves performance, but the compiler will only be able to say which **`try`** block causes an exception, not which line.
 
 ### To set this compiler option in the Visual Studio development environment
 

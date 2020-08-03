@@ -7,9 +7,9 @@ ms.assetid: 93fa8c33-0f10-402b-8eec-b0a217a1f8dc
 ---
 # Compiler Error C3386
 
-'type' : __declspec(dllexport)/\__declspec(dllimport) cannot be applied to a managed or WinRTtype
+> '*type-name*' : `__declspec(dllexport)`/`__declspec(dllimport)` cannot be applied to a managed or WinRT type
 
-The `dllimport` and [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` modifiers are not valid on a managed or Windows Runtime type.
+The [`dllimport`](../../cpp/dllexport-dllimport.md) and [`dllexport`](../../cpp/dllexport-dllimport.md) **`__declspec`** modifiers aren't valid on a managed or Windows Runtime type.
 
 The following sample generates C3386 and shows how to fix it:
 

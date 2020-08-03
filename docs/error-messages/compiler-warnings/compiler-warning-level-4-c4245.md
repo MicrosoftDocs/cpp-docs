@@ -7,9 +7,9 @@ ms.assetid: 85083d53-9cc2-4d12-b58c-6dad28f15cbe
 ---
 # Compiler Warning (level 4) C4245
 
-'conversion' : conversion from 'type1' to 'type2', signed/unsigned mismatch
+> '*conversion*' : conversion from '*type1*' to '*type2*', signed/unsigned mismatch
 
-You tried to convert a signed **const** that has a negative value to an `unsigned`.
+You tried to convert a **`signed const`** type that has a negative value to an **`unsigned`** type.
 
 The following sample generates C4245:
 

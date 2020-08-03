@@ -80,7 +80,7 @@ The following image shows the use of macro called `AVERAGE`, which has the defau
 
 ![QuickInfo macro expansion](media/macro-expansion-quick-info.png "QuickInfo tooltip macro expansion")
 
-Because the use of macros is discouraged in modern C++, Visual Studio makes it easy to convert macros to **constexpr** functions:
+Because the use of macros is discouraged in modern C++, Visual Studio makes it easy to convert macros to **`constexpr`** functions:
 
 1. Right-click on `AVERAGE` and choose **Go to Definition**.
 2. Click on the screwdriver icon and choose **Convert macro to constexpr**

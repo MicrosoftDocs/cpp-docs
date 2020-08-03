@@ -14,7 +14,7 @@ Therefore, to be safe, you should check to see which resources are actually open
 
 1. In the **__try** statement block, allocate resources. Handles are set to positive values as the resource is allocated.
 
-1. In the **__finally** statement block, release each resource whose corresponding handle or flag variable is nonzero or not NULL.
+1. In the **`__finally`** statement block, release each resource whose corresponding handle or flag variable is nonzero or not NULL.
 
 ## Example
 

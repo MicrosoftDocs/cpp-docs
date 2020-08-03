@@ -34,7 +34,7 @@ See the example for [first_is](first-is.md) for a sample of how to specify a sec
 
 |||
 |-|-|
-|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|`max_is`|

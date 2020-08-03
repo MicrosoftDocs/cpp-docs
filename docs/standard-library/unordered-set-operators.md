@@ -24,7 +24,7 @@ An object of type `unordered_set`.
 
 ### Return Value
 
-**true** if the unordered_sets are not equal; **false** if they are equal.
+**`true`** if the unordered_sets are not equal; **`false`** if they are equal.
 
 ### Remarks
 
@@ -92,7 +92,7 @@ An object of type `unordered_set`.
 
 ### Return Value
 
-**true** if the unordered_sets are equal; **false** if they are not equal.
+**`true`** if the unordered_sets are equal; **`false`** if they are not equal.
 
 ### Remarks
 
@@ -158,7 +158,7 @@ An object of type `unordered_multiset`.
 
 ### Return Value
 
-**true** if the unordered_multisets are not equal; **false** if they are equal.
+**`true`** if the unordered_multisets are not equal; **`false`** if they are equal.
 
 ### Remarks
 
@@ -227,7 +227,7 @@ An object of type `unordered_multiset`.
 
 ### Return Value
 
-**true** if the unordered_multisets are equal; **false** if they are not equal.
+**`true`** if the unordered_multisets are equal; **`false`** if they are not equal.
 
 ### Remarks
 

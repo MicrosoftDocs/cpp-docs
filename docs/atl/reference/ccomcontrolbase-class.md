@@ -24,7 +24,7 @@ class ATL_NO_VTABLE CComControlBase
 
 |Name|Description|
 |----------|-----------------|
-|[CComControlBase::AppearanceType](#appearancetype)|Override if your `m_nAppearance` stock property isn't of type **short**.|
+|[CComControlBase::AppearanceType](#appearancetype)|Override if your `m_nAppearance` stock property isn't of type **`short`**.|
 
 ### Public Constructors
 
@@ -126,7 +126,7 @@ For more information about creating a control, see the [ATL Tutorial](../../atl/
 
 ## <a name="appearancetype"></a> CComControlBase::AppearanceType
 
-Override if your `m_nAppearance` stock property isn't of type **short**.
+Override if your `m_nAppearance` stock property isn't of type **`short`**.
 
 ```
 typedef short AppearanceType;

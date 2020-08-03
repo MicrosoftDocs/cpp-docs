@@ -9,7 +9,7 @@ ms.assetid: 39b5108c-7230-41b4-b2fe-2293eb6aae28
 
 nonstandard extension used : static function declaration in function scope
 
-With Microsoft extensions (/Ze), **static** functions can be declared inside another function. The function is given global scope.
+With Microsoft extensions (/Ze), **`static`** functions can be declared inside another function. The function is given global scope.
 
 ## Example
 

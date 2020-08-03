@@ -134,7 +134,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Children | None |
 |  | Properties | - The name of the force-inlined function.<br/>- The size of the force-inlined function, represented as an intermediate instruction count. |
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[ForceInlinee](cpp-event-data-types/force-inlinee.md) |
-|  | Description | Occurs when a function is being force-inlined into another function through the use of the `__forceinline` keyword. |
+|  | Description | Occurs when a function is being force-inlined into another function through the use of the **`__forceinline`** keyword. |
 | <a name="front-end-file"></a> FRONT_END_FILE | Type | Activity |
 |  | Parents | [C1_DLL](#c1-dll)<br/>[FRONT_END_FILE](#front-end-file) |
 |  | Children | [FRONT_END_FILE](#front-end-file)<br/>[TEMPLATE_INSTANTIATION](#template-instantiation) |

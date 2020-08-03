@@ -161,7 +161,7 @@ int main() {
 
 The expressions on both sides of a shift operator must be integral types. Integral promotions are performed according to the rules described in [Standard Conversions](standard-conversions.md). The type of the result is the same as the type of the promoted *shift-expression*.
 
-In the following example, a variable of type **char** is promoted to an **int**.
+In the following example, a variable of type **`char`** is promoted to an **`int`**.
 
 ```cpp
 #include <iostream>

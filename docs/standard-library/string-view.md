@@ -22,10 +22,10 @@ The string_view family of template specializations provides an efficient way to 
 
 |Type name|Description|
 |-|-|
-|[string_view](../standard-library/string-view-typedefs.md#string_view)|A specialization of the class template `basic_string_view` with elements of type **char**.|
-|[wstring_view](../standard-library/string-view-typedefs.md#wstring_view)|A specialization of the class template `basic_string_view` with elements of type **wchar_t**.|
-|[u16string_view](../standard-library/string-view-typedefs.md#u16string_view)|A specialization of the class template `basic_string_view` with elements of type `char16_t`.|
-|[u32string_view](../standard-library/string-view-typedefs.md#u32string_view)|A specialization of the class template `basic_string_view` with elements of type `char32_t`.|
+|[string_view](../standard-library/string-view-typedefs.md#string_view)|A specialization of the class template `basic_string_view` with elements of type **`char`**.|
+|[wstring_view](../standard-library/string-view-typedefs.md#wstring_view)|A specialization of the class template `basic_string_view` with elements of type **`wchar_t`**.|
+|[u16string_view](../standard-library/string-view-typedefs.md#u16string_view)|A specialization of the class template `basic_string_view` with elements of type **`char16_t`**.|
+|[u32string_view](../standard-library/string-view-typedefs.md#u32string_view)|A specialization of the class template `basic_string_view` with elements of type **`char32_t`**.|
 
 ### Operators
 

@@ -9,4 +9,4 @@ ms.assetid: b60e5b4a-53ac-4503-8456-235477f48afd
 
 'object' : const object should be initialized
 
-The constant is not initialized. The value of a symbol with the **const** attribute cannot be changed after its definition, it should be given an initialization value.
+The constant is not initialized. The value of a symbol with the **`const`** attribute cannot be changed after its definition, it should be given an initialization value.

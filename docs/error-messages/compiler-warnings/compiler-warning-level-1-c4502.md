@@ -9,6 +9,6 @@ ms.assetid: d8d43153-a40c-4b96-bc11-64028a144d70
 
 'linkage specification' requires use of keyword 'extern' and must precede all other specifiers
 
-A linkage was specified without the `extern` keyword. Linkage is not relevant to non-extern types.
+A linkage was specified without the **`extern`** keyword. Linkage is not relevant to non-extern types.
 
-The compiler assumed the `extern` keyword.
+The compiler assumed the **`extern`** keyword.

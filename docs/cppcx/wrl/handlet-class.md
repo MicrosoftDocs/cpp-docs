@@ -182,11 +182,11 @@ virtual bool InternalClose();
 
 ### Return Value
 
-**true** if the current `HandleT` closed successfully; otherwise, **false**.
+**`true`** if the current `HandleT` closed successfully; otherwise, **`false`**.
 
 ### Remarks
 
-`InternalClose()` is `protected`.
+`InternalClose()` is **`protected`**.
 
 ## <a name="isvalid"></a> HandleT::IsValid
 
@@ -198,7 +198,7 @@ bool IsValid() const;
 
 ### Return Value
 
-**true** if the `HandleT` represents a handle; otherwise, **false**.
+**`true`** if the `HandleT` represents a handle; otherwise, **`false`**.
 
 ## <a name="operator-assign"></a> HandleT::operator=
 

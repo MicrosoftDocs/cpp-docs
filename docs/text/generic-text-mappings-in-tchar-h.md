@@ -10,9 +10,9 @@ To simplify the transporting of code for international use, the Microsoft run-ti
 
 By using the tchar.h, you can build single-byte, Multibyte Character Set (MBCS), and Unicode applications from the same sources. tchar.h defines macros (which have the prefix `_tcs`) that, with the correct preprocessor definitions, map to `str`, `_mbs`, or `wcs` functions, as appropriate. To build MBCS, define the symbol `_MBCS`. To build Unicode, define the symbol `_UNICODE`. To build a single-byte application, define neither (the default). By default, `_UNICODE` is defined for MFC applications.
 
-The `_TCHAR` data type is defined conditionally in tchar.h. If the symbol `_UNICODE` is defined for your build, `_TCHAR` is defined as **wchar_t**; otherwise, for single-byte and MBCS builds, it is defined as **char**. (**wchar_t**, the basic Unicode wide-character data type, is the 16-bit counterpart to an 8-bit signed **char**.) For international applications, use the `_tcs` family of functions, which operate in `_TCHAR` units, not bytes. For example, `_tcsncpy` copies `n` `_TCHARs`, not `n` bytes.
+The `_TCHAR` data type is defined conditionally in tchar.h. If the symbol `_UNICODE` is defined for your build, `_TCHAR` is defined as **`wchar_t`**; otherwise, for single-byte and MBCS builds, it is defined as **`char`**. (**`wchar_t`**, the basic Unicode wide-character data type, is the 16-bit counterpart to an 8-bit **`signed char`**.) For international applications, use the `_tcs` family of functions, which operate in `_TCHAR` units, not bytes. For example, `_tcsncpy` copies `n` `_TCHARs`, not `n` bytes.
 
-Because some Single Byte Character Set (SBCS) string-handling functions take (signed) `char*` parameters, a type mismatch compiler warning results when `_MBCS` is defined. There are three ways to avoid this warning:
+Because some Single Byte Character Set (SBCS) string-handling functions take (signed) **`char*`** parameters, a type mismatch compiler warning results when `_MBCS` is defined. There are three ways to avoid this warning:
 
 1. Use the type-safe inline function thunks in tchar.h. This is the default behavior.
 
@@ -34,11 +34,11 @@ For example, the generic-text function `_tcsrev`, which is defined in tchar.h, m
 
 |Generic-Text<br /> Data Type Name|_UNICODE &<br /> _MBCS Not Defined|_MBCS<br /> Defined|_UNICODE<br /> Defined|
 |--------------------------------------|----------------------------------------|------------------------|---------------------------|
-|`_TCHAR`|**char**|**char**|**wchar_t**|
-|`_TINT`|**int**|**unsigned int**|`wint_t`|
-|`_TSCHAR`|**signed char**|**signed char**|**wchar_t**|
-|`_TUCHAR`|**unsigned char**|**unsigned char**|**wchar_t**|
-|`_TXCHAR`|**char**|**unsigned char**|**wchar_t**|
+|`_TCHAR`|**`char`**|**`char`**|**`wchar_t`**|
+|`_TINT`|**`int`**|**`unsigned int`**|`wint_t`|
+|`_TSCHAR`|**`signed char`**|**`signed char`**|**`wchar_t`**|
+|`_TUCHAR`|**`unsigned char`**|**`unsigned char`**|**`wchar_t`**|
+|`_TXCHAR`|**`char`**|**`unsigned char`**|**`wchar_t`**|
 |`_T` or `_TEXT`|No effect (removed by preprocessor)|No effect (removed by preprocessor)|`L` (converts the following character or string to its Unicode counterpart)|
 
 For a list of generic-text mappings of routines, variables, and other objects, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the Run-Time Library Reference.

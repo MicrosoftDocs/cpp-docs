@@ -76,7 +76,7 @@ The `concurrent_vector` class closely resembles the `vector` class. The complexi
 
 - A `concurrent_vector` object does not relocate its elements when you append to it or resize it. This enables existing pointers and iterators to remain valid during concurrent operations.
 
-- The runtime does not define a specialized version of `concurrent_vector` for type `bool`.
+- The runtime does not define a specialized version of `concurrent_vector` for type **`bool`**.
 
 ### <a name="vector-safety"></a> Concurrency-Safe Operations
 
@@ -116,7 +116,7 @@ The data type of the vector elements, `T`, must meet the following requirements.
 
 - The destructor must not throw.
 
-- If the default or copy constructor throws, the destructor must not be declared by using the `virtual` keyword and it must work correctly with zero-initialized memory.
+- If the default or copy constructor throws, the destructor must not be declared by using the **`virtual`** keyword and it must work correctly with zero-initialized memory.
 
 [[Top](#top)]
 

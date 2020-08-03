@@ -37,13 +37,13 @@ You can limit the number of records you use to obtain aggregate results by filte
 > [!CAUTION]
 > Some aggregation operators return a different data type from the columns over which they are aggregating.
 
-- **SUM** and **AVG** might return the next larger data type (for example, calling with `int` returns **LONG** or **double**).
+- **SUM** and **AVG** might return the next larger data type (for example, calling with **`int`** returns **LONG** or **`double`**).
 
 - **COUNT** usually returns **LONG** regardless of target column type.
 
 - **MAX** and **MIN** return the same data type as the columns they calculate.
 
-     For example, the **Add Class** wizard creates `long` `m_lSales` to accommodate a Sales column, but you need to replace this with a `double m_dblSumSales` data member to accommodate the aggregate result. See the following example.
+     For example, the **Add Class** wizard creates **`long`** `m_lSales` to accommodate a Sales column, but you need to replace this with a `double m_dblSumSales` data member to accommodate the aggregate result. See the following example.
 
 #### To obtain an aggregate result for a recordset
 

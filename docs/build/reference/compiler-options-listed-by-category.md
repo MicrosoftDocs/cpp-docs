@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: 07/08/2020
+ms.date: 07/29/2020
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -34,7 +34,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/EH`](eh-exception-handling-model.md) | Specifies the model of exception handling. |
 | [`/fp`](fp-specify-floating-point-behavior.md) | Specifies floating-point behavior. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Optimizes for Windows applications. |
-| [`/Gd`](gd-gr-gv-gz-calling-convention.md) | Uses the `__cdecl` calling convention. (x86 only) |
+| [`/Gd`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__cdecl`** calling convention. (x86 only) |
 | [`/Ge`](ge-enable-stack-probes.md) | Deprecated. Activates stack probes. |
 | [`/GF`](gf-eliminate-duplicate-strings.md) | Enables string pooling. |
 | [`/Gh`](gh-enable-penter-hook-function.md) | Calls hook function `_penter`. |
@@ -42,23 +42,23 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/GL`](gl-whole-program-optimization.md) | Enables whole program optimization. |
 | [`/Gm`](gm-enable-minimal-rebuild.md) | Deprecated. Enables minimal rebuild. |
 | [`/GR`](gr-enable-run-time-type-information.md) | Enables run-time type information (RTTI). |
-| [`/Gr`](gd-gr-gv-gz-calling-convention.md) | Uses the `__fastcall` calling convention. (x86 only) |
+| [`/Gr`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__fastcall`** calling convention. (x86 only) |
 | [`/GS`](gs-buffer-security-check.md) | Checks buffer security. |
 | [`/Gs`](gs-control-stack-checking-calls.md) | Controls stack probes. |
 | [`/GT`](gt-support-fiber-safe-thread-local-storage.md) | Supports fiber safety for data allocated by using static thread-local storage. |
 | [`/guard:cf`](guard-enable-control-flow-guard.md) | Adds control flow guard security checks. |
 | [`/guard:ehcont`](guard-enable-eh-continuation-metadata.md) | Enables EH continuation metadata. |
-| [`/Gv`](gd-gr-gv-gz-calling-convention.md) | Uses the `__vectorcall` calling convention. (x86 and x64 only) |
+| [`/Gv`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__vectorcall`** calling convention. (x86 and x64 only) |
 | [`/Gw`](gw-optimize-global-data.md) | Enables whole-program global data optimization. |
 | [`/GX`](gx-enable-exception-handling.md) | Deprecated. Enables synchronous exception handling. Use [`/EH`](eh-exception-handling-model.md) instead. |
 | [`/Gy`](gy-enable-function-level-linking.md) | Enables function-level linking. |
 | [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | Deprecated. Enables fast checks. (Same as [`/RTC1`](rtc-run-time-error-checks.md)) |
-| [`/Gz`](gd-gr-gv-gz-calling-convention.md) | Uses the `__stdcall` calling convention. (x86 only) |
+| [`/Gz`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__stdcall`** calling convention. (x86 only) |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hotpatchable image. |
 | [`/Qfast_transcendentals`](qfast-transcendentals-force-fast-transcendentals.md) | Generates fast transcendentals. |
 | [`/QIfist`](qifist-suppress-ftol.md) | Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only) |
-| [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | Removes `fwait` commands inside `try` blocks. |
+| [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | Removes `fwait` commands inside **`try`** blocks. |
 | [`/QIntel-jcc-erratum`](qintel-jcc-erratum.md) | Mitigates the performance impact of the Intel JCC erratum microcode update. |
 | [`/Qpar`](qpar-auto-parallelizer.md) | Enables automatic parallelization of loops. |
 | [`/Qpar-report`](qpar-report-auto-parallelizer-reporting-level.md) | Enables reporting levels for automatic parallelization. |
@@ -107,7 +107,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 | Option | Purpose |
 |--|--|
-| [`/constexpr`](constexpr-control-constexpr-evaluation.md) | Control **constexpr** evaluation at compile time. |
+| [`/constexpr`](constexpr-control-constexpr-evaluation.md) | Control **`constexpr`** evaluation at compile time. |
 | [`/openmp`](openmp-enable-openmp-2-0-support.md) | Enables [`#pragma omp`](../../preprocessor/omp.md) in source code. |
 | [`/vd`](vd-disable-construction-displacements.md) | Suppresses or enables hidden `vtordisp` class members. |
 | [`/vmb`](vmb-vmg-representation-method.md) | Uses best base for pointers to members. |
@@ -157,13 +157,14 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | Forces writes to the PDB file to be serialized through *MSPDBSRV.EXE*. |
 | [`/H`](h-restrict-length-of-external-names.md) | Deprecated. Restricts the length of external (public) names. |
 | [`/HELP`](help-compiler-command-line-help.md) | Lists the compiler options. |
-| [`/J`](j-default-char-type-is-unsigned.md) | Changes the default `char` type. |
+| [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
 | [`/JMC`](jmc.md) | Supports native C++ Just My Code debugging. |
 | [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker will create a binary that can be executed in the Windows kernel. |
 | [`/MP`](mp-build-with-multiple-processes.md) | Builds multiple source files concurrently. |
 | [`/nologo`](nologo-suppress-startup-banner-c-cpp.md) | Suppresses display of sign-on banner. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Enables additional security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of all include files during compilation. |
+| [`/sourceDependencies`](sourcedependencies.md) | List headers, modules, and other source dependencies. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |
 | [`/Tp`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C++ source file. |

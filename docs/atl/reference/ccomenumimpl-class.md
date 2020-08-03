@@ -148,7 +148,7 @@ enum CComEnumFlags
 
 `AtlFlagNoCopy` means that the array's lifetime is not controlled by the enumerator. In this case, either the array will be static or the object identified by *pUnk* will be responsible for freeing the array when it's no longer needed.
 
-`AtlFlagTakeOwnership` means that the destruction of the array is to be controlled by the enumerator. In this case, the array must have been dynamically allocated using **new**. The enumerator will delete the array in its destructor. Typically, you would pass NULL for *pUnk*, although you can still pass a valid pointer if you need to be notified of the destruction of the enumerator for some reason.
+`AtlFlagTakeOwnership` means that the destruction of the array is to be controlled by the enumerator. In this case, the array must have been dynamically allocated using **`new`**. The enumerator will delete the array in its destructor. Typically, you would pass NULL for *pUnk*, although you can still pass a valid pointer if you need to be notified of the destruction of the enumerator for some reason.
 
 `AtlFlagCopy` means that a new array is to be created by copying the array passed to `Init`. The new array's lifetime is to be controlled by the enumerator. The enumerator will delete the array in its destructor. Typically, you would pass NULL for *pUnk*, although you can still pass a valid pointer if you need to be notified of the destruction of the enumerator for some reason.
 

@@ -33,7 +33,7 @@ A variant object holds and manages a value. If the variant holds a value, that v
 |-|-|
 |[get](../standard-library/variant-functions.md#get)|Gets the variant of an object.|
 |[get_if](../standard-library/variant-functions.md#get_if)|Gets the variant of an object if it exists.|
-|[holds_alternative](../standard-library/variant-functions.md#holds_alternative)|Return **true** if a variant exists.|
+|[holds_alternative](../standard-library/variant-functions.md#holds_alternative)|Return **`true`** if a variant exists.|
 |[swap](../standard-library/variant-functions.md#swap)|Swaps a **variant**.|
 |[visit](../standard-library/variant-functions.md#visit)|Moves to the next **variant**.|
 

@@ -5,21 +5,21 @@ f1_keywords: ["/Zc:strictStrings", "strictStrings"]
 helpviewer_keywords: ["/Zc:strictStrings", "-Zc compiler options (C++)", "strictStrings", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
 ---
-# /Zc:strictStrings (Disable string literal type conversion)
+# `/Zc:strictStrings` (Disable string literal type conversion)
 
-When specified, the compiler requires strict `const`-qualification conformance for pointers initialized by using string literals.
+When specified, the compiler requires strict **`const`**-qualification conformance for pointers initialized by using string literals.
 
 ## Syntax
 
-> **/Zc:strictStrings**[**-**]
+> **`/Zc:strictStrings`**[**`-`**]
 
 ## Remarks
 
-If **/Zc:strictStrings** is specified, the compiler enforces the standard C++ `const` qualifications for string literals, as type 'array of `const char`' or 'array of `const wchar_t`', depending on the declaration. String literals are immutable, and an attempt to modify the contents of one results in an access violation error at run time. You must declare a string pointer as `const` to initialize it by using a string literal, or use an explicit `const_cast` to initialize a non-`const` pointer. By default, or if **/Zc:strictStrings-** is specified, the compiler does not enforce the standard C++ `const` qualifications for string pointers initialized by using string literals.
+If **`/Zc:strictStrings`** is specified, the compiler enforces the standard C++ **`const`** qualifications for string literals, as type 'array of `const char`' or 'array of `const wchar_t`', depending on the declaration. String literals are immutable, and an attempt to modify the contents of one results in an access violation error at run time. You must declare a string pointer as **`const`** to initialize it by using a string literal, or use an explicit **`const_cast`** to initialize a non-**`const`** pointer. By default, or if **`/Zc:strictStrings-`** is specified, the compiler does not enforce the standard C++ **`const`** qualifications for string pointers initialized by using string literals.
 
-The **/Zc:strictStrings** option is off by default. The [/permissive-](permissive-standards-conformance.md) compiler option implicitly sets this option, but it can be overridden by using **/Zc:strictStrings-**.
+The **`/Zc:strictStrings`** option is off by default. The [`/permissive-`](permissive-standards-conformance.md) compiler option implicitly sets this option, but it can be overridden by using **`/Zc:strictStrings-`**.
 
-Use the **/Zc:strictStrings** option to prevent compilation of incorrect code. This example shows how a simple declaration error leads to a crash at run time:
+Use the **`/Zc:strictStrings`** option to prevent compilation of incorrect code. This example shows how a simple declaration error leads to a crash at run time:
 
 ```cpp
 // strictStrings_off.cpp
@@ -30,7 +30,7 @@ int main() {
 }
 ```
 
-When **/Zc:strictStrings** is enabled, the same code reports an error in the declaration of `str`.
+When **`/Zc:strictStrings`** is enabled, the same code reports an error in the declaration of `str`.
 
 ```cpp
 // strictStrings_on.cpp
@@ -42,10 +42,10 @@ int main() {
 }
 ```
 
-If you use `auto` to declare a string pointer, the compiler creates the correct `const` pointer type declaration for you. An attempt to modify the contents of a `const` pointer is reported by the compiler as an error.
+If you use **`auto`** to declare a string pointer, the compiler creates the correct **`const`** pointer type declaration for you. An attempt to modify the contents of a **`const`** pointer is reported by the compiler as an error.
 
 > [!NOTE]
-> The C++ Standard Library in Visual Studio 2013 does not support the **/Zc:strictStrings** compiler option in debug builds. If you see several [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) errors in your build output, this may be the cause.
+> The C++ Standard Library in Visual Studio 2013 does not support the **`/Zc:strictStrings`** compiler option in debug builds. If you see several [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) errors in your build output, this may be the cause.
 
 For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 
@@ -55,8 +55,8 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Modify the **Additional Options** property to include **/Zc:strictStrings** and then choose **OK**.
+1. Modify the **Additional Options** property to include **`/Zc:strictStrings`** and then choose **OK**.
 
 ## See also
 
-[/Zc (Conformance)](zc-conformance.md)<br/>
+[`/Zc` (Conformance)](zc-conformance.md)<br/>

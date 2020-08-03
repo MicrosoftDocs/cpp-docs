@@ -88,7 +88,7 @@ Note that [idl_quote](idl-quote.md) lets you use MIDL constructs that are not su
 |[retval](retval.md)|Designates the parameter that receives the return value of the member.|
 |[size_is](size-is.md)|Specifies the size of memory allocated for sized pointers, sized pointers to sized pointers, and single- or multidimensional arrays.|
 |[source](source-cpp.md)|Indicates that a member of a class, property, or method is a source of events.|
-|[string](string-cpp.md)|Indicates that the one-dimensional **char**, **wchar_t**, `byte`, or equivalent array or the pointer to such an array must be treated as a string.|
+|[string](string-cpp.md)|Indicates that the one-dimensional **`char`**, **`wchar_t`**, `byte`, or equivalent array or the pointer to such an array must be treated as a string.|
 |[switch_is](switch-is.md)|Specifies the expression or identifier acting as the union discriminant that selects the union member.|
 |[switch_type](switch-type.md)|Identifies the type of the variable used as the union discriminant.|
 |[transmit_as](transmit-as.md)|Instructs the compiler to associate a presented type, which client and server applications manipulate, with a transmitted type.|

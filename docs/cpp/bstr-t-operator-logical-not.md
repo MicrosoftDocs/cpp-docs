@@ -19,7 +19,7 @@ bool operator!( ) const throw( );
 
 ## Return Value
 
-It returns TRUE if yes, FALSE if not.
+It returns **`true`** if yes, **`false`** if not.
 
 **END Microsoft Specific**
 

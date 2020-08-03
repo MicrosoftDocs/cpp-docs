@@ -9,7 +9,7 @@ ms.assetid: 4316f51a-2c56-4b3f-831e-65d24b83b65c
 
 __declspec(align()) is ignored on enum
 
-Use of the [align](../../cpp/align-cpp.md) keyword of the [__declspec](../../cpp/declspec.md) modifier is not allowed on an `enum`. The following sample generates C4329:
+Use of the [align](../../cpp/align-cpp.md) keyword of the [__declspec](../../cpp/declspec.md) modifier is not allowed on an **`enum`**. The following sample generates C4329:
 
 ```cpp
 // C4329.cpp

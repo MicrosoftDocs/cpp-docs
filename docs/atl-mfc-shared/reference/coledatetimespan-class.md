@@ -48,13 +48,13 @@ class COleDateTimeSpan
 |[operator +=, -=](#operator_add_eq_-_eq)|Add and subtract a `COleDateTimeSpan` value from this `COleDateTimeSpan` value.|
 |[operator =](#operator_eq)|Copies a `COleDateTimeSpan` value.|
 |[operator ==, <, <=](#coledatetimespan_relational_operators)|Compare two `COleDateTimeSpan` values.|
-|[operator double](#operator_double)|Converts this `COleDateTimeSpan` value to a **double**.|
+|[operator double](#operator_double)|Converts this `COleDateTimeSpan` value to a **`double`**.|
 
 ### Public Data Members
 
 |Name|Description|
 |----------|-----------------|
-|[COleDateTimeSpan::m_span](#m_span)|Contains the underlying **double** for this `COleDateTimeSpan` object.|
+|[COleDateTimeSpan::m_span](#m_span)|Contains the underlying **`double`** for this `COleDateTimeSpan` object.|
 |[COleDateTimeSpan::m_status](#m_status)|Contains the status of this `COleDateTimeSpan` object.|
 
 ## Remarks
@@ -523,7 +523,7 @@ See the example for [GetTotalDays](#gettotaldays).
 
 ## <a name="m_span"></a> COleDateTimeSpan::m_span
 
-The underlying **double** value for this `COleDateTime` object.
+The underlying **`double`** value for this `COleDateTime` object.
 
 ```
 double m_span;
@@ -534,7 +534,7 @@ double m_span;
 This value expresses the date/time-span in days.
 
 > [!CAUTION]
-> Changing the value in the **double** data member will change the value of this `COleDateTimeSpan` object. It does not change the status of this `COleDateTimeSpan` object.
+> Changing the value in the **`double`** data member will change the value of this `COleDateTimeSpan` object. It does not change the status of this `COleDateTimeSpan` object.
 
 ## <a name="m_status"></a> COleDateTimeSpan::m_status
 
@@ -636,7 +636,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 ## <a name="operator_double"></a> COleDateTimeSpan::operator double
 
-Converts this `COleDateTimeSpan` value to a **double**.
+Converts this `COleDateTimeSpan` value to a **`double`**.
 
 ```
 operator double() const throw();

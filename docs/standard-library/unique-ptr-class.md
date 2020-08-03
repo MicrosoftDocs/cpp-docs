@@ -93,7 +93,7 @@ Use the [make_unique](../standard-library/memory-functions.md#make_unique) helpe
 
 `unique_ptr` uniquely manages a resource. Each `unique_ptr` object stores a pointer to the object that it owns or stores a null pointer. A resource can be owned by no more than one `unique_ptr` object;  when a `unique_ptr` object that owns a particular resource is destroyed, the resource is freed. A `unique_ptr` object may be moved, but not copied;  for more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter` `default_delete<T>` assumes that the resource pointed to by `ptr` is allocated with `new`, and that it can be freed by calling `delete _Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter` `default_delete<T[]>`, specialized to call delete[] `ptr`.)
+The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter` `default_delete<T>` assumes that the resource pointed to by `ptr` is allocated with **`new`**, and that it can be freed by calling `delete _Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter` `default_delete<T[]>`, specialized to call delete[] `ptr`.)
 
 The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is `Del::pointer` if defined, and `T *` if not. The stored `deleter` object `stored_deleter` occupies no space in the object if the `deleter` is stateless. Note that `Del` can be a reference type.
 
@@ -127,7 +127,7 @@ The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is 
 
 |||
 |-|-|
-|**operator bool**|The operator returns a value of a type that is convertible to **bool**. The result of the conversion to **bool** is **true** when `get() != pointer()`, otherwise **false**.|
+|**operator bool**|The operator returns a value of a type that is convertible to **`bool`**. The result of the conversion to **`bool`** is **`true`** when `get() != pointer()`, otherwise **`false`**.|
 |`operator->`|The member function returns `stored_ptr`.|
 |`operator*`|The member function returns `*stored_ptr`.|
 |[operator=](#unique_ptr_operator_eq)|Assigns the value of a `unique_ptr` (or a `pointer-type`) to the current `unique_ptr`.|
@@ -199,7 +199,7 @@ A `unique_ptr` reference used to assign the value of to the current `unique_ptr`
 
 #### Remarks
 
-The member functions call `reset(right.release())` and move `right.stored_deleter` to `stored_deleter`, then return `*this`.
+The member functions call `reset(right.release())` and move `right.stored_deleter` to `stored_deleter`, then return **`*this`**.
 
 ### <a name="pointer"></a> pointer
 
@@ -215,7 +215,7 @@ The type is a synonym for `Del::pointer` if defined, otherwise `Type *`.
 
 ### <a name="release"></a> release
 
-Releases ownership of the returned stored pointer to the caller and sets the stored pointer value to **nullptr**.
+Releases ownership of the returned stored pointer to the caller and sets the stored pointer value to **`nullptr`**.
 
 ```cpp
 pointer release();
@@ -275,7 +275,7 @@ Deleting Sample(3)
 
 ### <a name="reset"></a> reset
 
-Takes ownership of the pointer parameter, and then deletes the original stored pointer. If the new pointer is the same as the original stored pointer, `reset` deletes the pointer and sets the stored pointer to **nullptr**.
+Takes ownership of the pointer parameter, and then deletes the original stored pointer. If the new pointer is the same as the original stored pointer, `reset` deletes the pointer and sets the stored pointer to **`nullptr`**.
 
 ```cpp
 void reset(pointer ptr = pointer());

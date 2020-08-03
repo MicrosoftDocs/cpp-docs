@@ -25,7 +25,7 @@ To use this pragma, you must set the `/Ob` compiler option to 1 or higher. The d
 
 The inline depth can be decreased during expansion, but not increased. If the inline depth is 6, and during expansion the preprocessor encounters an **inline_depth** pragma with a value of 8, the depth remains 6.
 
-The **inline_depth** pragma has no effect on functions marked with `__forceinline`.
+The **inline_depth** pragma has no effect on functions marked with **`__forceinline`**.
 
 > [!NOTE]
 > Recursive functions can be substituted inline to a maximum depth of 16 calls.

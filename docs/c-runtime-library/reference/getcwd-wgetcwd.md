@@ -33,7 +33,7 @@ wchar_t *_wgetcwd(
 Storage location for the path.
 
 *maxlen*\
-Maximum length of the path in characters: **char** for **_getcwd** and **wchar_t** for **_wgetcwd**.
+Maximum length of the path in characters: **`char`** for **_getcwd** and **`wchar_t`** for **_wgetcwd**.
 
 ## Return Value
 

@@ -38,7 +38,7 @@ Each nonvirtual object contains a copy of the data members defined in the base c
 
 When a base class is specified as a virtual base, it can act as an indirect base more than once without duplication of its data members. A single copy of its data members is shared by all the base classes that use it as a virtual base.
 
-When declaring a virtual base class, the **virtual** keyword appears in the base lists of the derived classes.
+When declaring a virtual base class, the **`virtual`** keyword appears in the base lists of the derived classes.
 
 Consider the class hierarchy in the following figure, which illustrates a simulated lunch line.
 
@@ -61,7 +61,7 @@ class LunchQueue : virtual public Queue {};
 class LunchCashierQueue : public LunchQueue, public CashierQueue {};
 ```
 
-The **virtual** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).
+The **`virtual`** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).
 
 ![Simulated lunch&#45;line object, virtual base classes](../cpp/media/vc38xp3.gif "Simulated lunch&#45;line object, virtual base classes") <br/>
 Simulated lunch-line object with virtual base classes

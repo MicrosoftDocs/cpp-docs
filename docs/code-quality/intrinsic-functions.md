@@ -26,7 +26,7 @@ The following instrinsic function annotations provide general utility for SAL.
 |`_Nullterm_length_(param)`|`param` is the number of elements in the buffer up to but not including a null terminator. It may be applied to any buffer of non-aggregate, non-void type.|
 |`_Old_(expr)`|When it is evaluated in precondition, `_Old_` returns the input value `expr`.  When it is evaluated in post-condition, it returns the value `expr` as it would have been evaluated in precondition.|
 |`_Param_(n)`|The `n`th parameter to a function, counting from 1 to `n`, and `n` is a literal integral constant. If the parameter is named, this annotation is identical to accessing the parameter by name. **Note:**  `n` may refer to the positional parameters that are defined by an ellipsis, or may be used in function prototypes where names are not used.|
-|`return`|The C/C++ reserved keyword `return` can be used in a SAL expression to indicate the return value of a function.  The value is only available in post state; it is a syntax error to use it in pre state.|
+|`return`|The C/C++ reserved keyword **`return`** can be used in a SAL expression to indicate the return value of a function.  The value is only available in post state; it is a syntax error to use it in pre state.|
 
 ## String Specific
 

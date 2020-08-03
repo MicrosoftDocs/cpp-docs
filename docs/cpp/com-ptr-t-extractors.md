@@ -35,7 +35,7 @@ operator bool( ) const throw( );
 
 - **`operator&`** Releases any encapsulated interface pointer, replacing it with NULL, and returns the address of the encapsulated pointer. This operator allows you to pass the smart pointer by address to a function that has an *out* parameter through which it returns an interface pointer.
 
-- **`operator bool`** Allows a smart pointer object to be used in a conditional expression. This operator returns TRUE if the pointer isn't NULL.
+- **`operator bool`** Allows a smart pointer object to be used in a conditional expression. This operator returns **`true`** if the pointer isn't NULL.
 
   > [!NOTE]
   > Because **`operator bool`** is not declared as **`explicit`**, `_com_ptr_t` is implicitly convertible to **`bool`**, which is convertible to any scalar type. This can have unexpected consequences in your code. Enable [Compiler Warning (level 4) C4800](../error-messages/compiler-warnings/compiler-warning-level-3-c4800.md) to prevent unintentional use of this conversion.

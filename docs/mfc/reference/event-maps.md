@@ -129,14 +129,14 @@ The `VTS_` constants and their meanings are as follows:
 
 |Symbol|Parameter type|
 |------------|--------------------|
-|VTS_I2|**short**|
-|VTS_I4|**long**|
-|VTS_R4|**float**|
-|VTS_R8|**double**|
+|VTS_I2|**`short`**|
+|VTS_I4|**`long`**|
+|VTS_R4|**`float`**|
+|VTS_R8|**`double`**|
 |VTS_COLOR|OLE_COLOR|
 |VTS_CY|CURRENCY|
 |VTS_DATE|DATE|
-|VTS_BSTR|**const** __char\*__|
+|VTS_BSTR|**`const`** __char\*__|
 |VTS_DISPATCH|LPDISPATCH|
 |VTS_FONT|`IFontDispatch*`|
 |VTS_HANDLE|HANDLE|

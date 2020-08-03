@@ -11,7 +11,7 @@ ms.assetid: db605e4f-601b-4d05-92a1-c43ca24de08d
 
 You cannot use [dynamic_cast](../../cpp/dynamic-cast-operator.md) to convert from a non-polymorphic class (a class with no virtual functions).
 
-You can use [static_cast](../../cpp/static-cast-operator.md) to perform conversions of non-polymorphic types. However, `static_cast` does not perform a run-time check.
+You can use [static_cast](../../cpp/static-cast-operator.md) to perform conversions of non-polymorphic types. However, **`static_cast`** does not perform a run-time check.
 
 The following sample generates C2683:
 

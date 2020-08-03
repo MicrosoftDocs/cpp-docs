@@ -9,4 +9,4 @@ ms.assetid: bfc19840-4a48-4da5-8e69-7069989f1d2c
 
 'identifier' : cannot initialize extern variables with block scope
 
-An `extern` variable cannot be initialized in a function.
+An **`extern`** variable cannot be initialized in a function.

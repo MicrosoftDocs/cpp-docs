@@ -6,7 +6,7 @@ ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
 ---
 # Constructors (C++)
 
-To customize how class members are initialized, or to invoke functions when an object of your class is created, define a *constructor*. A constructor has the same name as the class and no return value. You can define as many overloaded constructors as needed to customize initialization in various ways. Typically, constructors have public accessibility so that code outside the class definition or inheritance hierarchy can create objects of the class. But you can also declare a constructor as **protected** or **private**.
+To customize how class members are initialized, or to invoke functions when an object of your class is created, define a *constructor*. A constructor has the same name as the class and no return value. You can define as many overloaded constructors as needed to customize initialization in various ways. Typically, constructors have public accessibility so that code outside the class definition or inheritance hierarchy can create objects of the class. But you can also declare a constructor as **`protected`** or **`private`**.
 
 Constructors can optionally take a member init list. This is a more efficient way to initialize class members than assigning values in the constructor body. The following example shows a class `Box` with three overloaded constructors. The last two use member init lists:
 
@@ -53,8 +53,8 @@ int main()
 }
 ```
 
-- Constructors may be declared as **inline**, [explicit](#explicit_constructors), **friend** or [constexpr](#constexpr_constructors).
-- A constructor can initialize an object that has been declared as **const**, **volatile** or **const volatile**. The object becomes **const** after the constructor completes.
+- Constructors may be declared as **`inline`**, [explicit](#explicit_constructors), **`friend`** or [constexpr](#constexpr_constructors).
+- A constructor can initialize an object that has been declared as **`const`**, **`volatile`** or **`const volatile`**. The object becomes **`const`** after the constructor completes.
 - To define a constructor in an implementation file, give it a qualified name as with any other member function: `Box::Box(){...}`.
 
 ## <a name="member_init_list"></a> Member initializer lists
@@ -71,7 +71,7 @@ Using a member initializer list is preferred over assigning values in the body o
 
 The identifier must refer to a class member; it is initialized with the value of the argument. The argument can be one of the constructor parameters, a function call or a [std::initializer_list\<T>](../standard-library/initializer-list-class.md).
 
-**const** members and members of reference type must be initialized in the member initializer list.
+**`const`** members and members of reference type must be initialized in the member initializer list.
 
 Calls to parameterized base class constructors should be made in the initializer list to ensure the base class is fully initialized prior to execution of the derived constructor.
 
@@ -90,7 +90,7 @@ public:
 }
 ```
 
-Default constructors are one of the [special member functions](special-member-functions.md). If no constructors are declared in a class, the compiler provides an implicit **inline** default constructor.
+Default constructors are one of the [special member functions](special-member-functions.md). If no constructors are declared in a class, the compiler provides an implicit **`inline`** default constructor.
 
 ```cpp
 #include <iostream>
@@ -120,7 +120,7 @@ You can prevent the compiler from generating an implicit default constructor by 
     Box() = delete;
 ```
 
-A compiler-generated default constructor will be defined as deleted if any class members are not default-constructible. For example, all members of class type, and their class-type members, must have a default constructor and destructors that are accessible. All data members of reference type, as well as **const** members must have a default member initializer.
+A compiler-generated default constructor will be defined as deleted if any class members are not default-constructible. For example, all members of class type, and their class-type members, must have a default constructor and destructors that are accessible. All data members of reference type, as well as **`const`** members must have a default member initializer.
 
 When you call a compiler-generated default constructor and try to use parentheses, a warning is issued:
 
@@ -354,7 +354,7 @@ private:
     ShippingOrder so(42, 10.8);
 ```
 
-Such conversions can be useful in some cases, but more often they can lead to subtle but serious errors in your code. As a general rule, you should use the **explicit** keyword on a constructor (and user-defined operators) to prevent this kind of implicit type conversion:
+Such conversions can be useful in some cases, but more often they can lead to subtle but serious errors in your code. As a general rule, you should use the **`explicit`** keyword on a constructor (and user-defined operators) to prevent this kind of implicit type conversion:
 
 ```cpp
 explicit Box(int size): m_width(size), m_length(size), m_height(size){}
@@ -583,7 +583,7 @@ The object created by the constructors is fully initialized as soon as any const
 
 ## <a name="inheriting_constructors"></a> Inheriting constructors (C++11)
 
-A derived class can inherit the constructors from a direct base class by using a **using** declaration as shown in the following example:
+A derived class can inherit the constructors from a direct base class by using a **`using`** declaration as shown in the following example:
 
 ```cpp
 #include <iostream>
@@ -634,7 +634,7 @@ Derived d4 calls: Base()*/
 
 ::: moniker range=">=vs-2017"
 
-**Visual Studio 2017 and later**: The **using** statement in **/std:c++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
+**Visual Studio 2017 and later**: The **`using`** statement in **/std:c++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
 
 ::: moniker-end
 

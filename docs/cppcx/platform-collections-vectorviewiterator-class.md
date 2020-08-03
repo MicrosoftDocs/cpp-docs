@@ -107,7 +107,7 @@ The first syntax decrements and then returns the current VectorViewIterator. The
 
 The first VectorViewIterator syntax pre-decrements the current VectorViewIterator.
 
-The second syntax post-decrements the current VectorViewIterator. The `int` type in the second syntax indicates a post-decrement operation, not an actual integer operand.
+The second syntax post-decrements the current VectorViewIterator. The **`int`** type in the second syntax indicates a post-decrement operation, not an actual integer operand.
 
 ## <a name="operator-dereference"></a> VectorViewIterator::operator\* Operator
 
@@ -140,7 +140,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-**true** if the current `VectorViewIterator` is equal to *other*; otherwise, **false**.
+**`true`** if the current `VectorViewIterator` is equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-greater-than"></a> VectorViewIterator::operator&gt; Operator
 
@@ -160,7 +160,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-**true** if the current VectorViewIterator is greater than *other*; otherwise, **false**.
+**`true`** if the current VectorViewIterator is greater than *other*; otherwise, **`false`**.
 
 ## <a name="operator-greater-than-or-equals"></a> VectorViewIterator::operator&gt;= Operator
 
@@ -180,7 +180,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-**true** if the current `VectorViewIterator` is greater than or equal to *other*; otherwise, **false**.
+**`true`** if the current `VectorViewIterator` is greater than or equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-increment"></a> VectorViewIterator::operator++ Operator
 
@@ -202,7 +202,7 @@ The first syntax increments and then returns the current VectorViewIterator. The
 
 The first VectorViewIterator syntax pre-increments the current VectorViewIterator.
 
-The second syntax post-increments the current VectorViewIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
+The second syntax post-increments the current VectorViewIterator. The **`int`** type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
 ## <a name="operator-inequality"></a> VectorViewIterator::operator!= Operator
 
@@ -221,7 +221,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-**true** if the current `VectorViewIterator` is not equal to *other*; otherwise, **false**.
+**`true`** if the current `VectorViewIterator` is not equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-less-than"></a> VectorViewIterator::operator&lt; Operator
 
@@ -240,7 +240,7 @@ Another `VectorIterator`.
 
 ### Return Value
 
-**true** if the current `VectorIterator` is less than *other*; otherwise, **false**.
+**`true`** if the current `VectorIterator` is less than *other*; otherwise, **`false`**.
 
 ## <a name="operator-less-than-or-equals"></a> VectorViewIterator::operator&lt;= Operator
 
@@ -260,7 +260,7 @@ Another `VectorIterator`.
 
 ### Return Value
 
-**true** if the current `VectorIterator` is less than or equal to *other*; otherwise, **false**.
+**`true`** if the current `VectorIterator` is less than or equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-minus"></a> VectorViewIterator::operator- Operator
 

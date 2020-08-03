@@ -8,7 +8,7 @@ ms.assetid: f8a8d568-d175-4e23-9b24-36ef60a4cab3
 
 **Microsoft Specific**
 
-An `__asm` block can call C functions, including C library routines. The following example calls the `printf` library routine:
+An **`__asm`** block can call C functions, including C library routines. The following example calls the `printf` library routine:
 
 ```cpp
 // InlineAssembler_Calling_C_Functions_in_Inline_Assembly.cpp

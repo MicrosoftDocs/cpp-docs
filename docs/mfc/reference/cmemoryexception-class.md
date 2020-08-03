@@ -25,7 +25,7 @@ class CMemoryException : public CSimpleException
 
 ## Remarks
 
-No further qualification is necessary or possible. Memory exceptions are thrown automatically by **new**. If you write your own memory functions, using `malloc`, for example, then you are responsible for throwing memory exceptions.
+No further qualification is necessary or possible. Memory exceptions are thrown automatically by **`new`**. If you write your own memory functions, using `malloc`, for example, then you are responsible for throwing memory exceptions.
 
 For more information on `CMemoryException`, see the article [Exception Handling (MFC)](../../mfc/exception-handling-in-mfc.md).
 

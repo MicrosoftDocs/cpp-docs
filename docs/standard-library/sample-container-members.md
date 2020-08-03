@@ -31,7 +31,7 @@ ms.assetid: dc5a1998-a31b-4adf-b888-8abe5b87a4e0
 |-|-|
 |[begin](../standard-library/container-class-begin.md)|Returns an iterator that points at the first element of the sequence (or just beyond the end of an empty sequence).|
 |[clear](../standard-library/container-class-clear.md)|Calls [erase](../standard-library/container-class-erase.md)( [begin](../standard-library/container-class-begin.md), [end](../standard-library/container-class-end.md)).|
-|[empty](../standard-library/container-class-empty.md)|Returns **true** for an empty controlled sequence.|
+|[empty](../standard-library/container-class-empty.md)|Returns **`true`** for an empty controlled sequence.|
 |[end](../standard-library/container-class-end.md)|Returns an iterator that points just beyond the end of the sequence.|
 |[erase](../standard-library/container-class-erase.md)|Erases an element.|
 |[max_size](../standard-library/container-class-max-size.md)|Returns the length of the longest sequence that the object can control, in constant time regardless of the length of the controlled sequence.|

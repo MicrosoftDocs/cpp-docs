@@ -55,7 +55,7 @@ See the [case](case-cpp.md) example for a sample use of **switch_type**.
 
 |||
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

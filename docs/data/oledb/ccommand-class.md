@@ -107,7 +107,7 @@ HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected,
 [in/out] A pointer to memory where the count of rows affected by a command is returned.
 
 *bBind*<br/>
-[in] Specifies whether to bind the command automatically after being executed. The default is **true**, which causes the command to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the command so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
+[in] Specifies whether to bind the command automatically after being executed. The default is **`true`**, which causes the command to be bound automatically. Setting *bBind* to **`false`** prevents the automatic binding of the command so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
 
 ### Return Value
 
@@ -115,7 +115,7 @@ A standard HRESULT.
 
 ### Remarks
 
-If a result set has been previously fetched, this function releases the previous result set and unbinds the columns. If *bBind* is **true**, it binds the new columns.
+If a result set has been previously fetched, this function releases the previous result set and unbinds the columns. If *bBind* is **`true`**, it binds the new columns.
 
 You should call this function only if you have specified multiple results by setting the `CCommand` template parameter *TMultiple*=`CMultipleResults`.
 
@@ -183,7 +183,7 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 [in] A GUID that specifies the syntax and general rules for the provider to use in parsing the command text. See [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) and [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) in the *OLE DB Programmer's Reference* for details.
 
 *bBind*<br/>
-[in] Specifies whether to bind the command automatically after being executed. The default is **true**, which causes the command to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the command so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
+[in] Specifies whether to bind the command automatically after being executed. The default is **`true`**, which causes the command to be bound automatically. Setting *bBind* to **`false`** prevents the automatic binding of the command so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
 
 *ulPropSets*<br/>
 [in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument.
@@ -200,7 +200,7 @@ The first form of `Open` takes a Unicode command string and has no default value
 
 The second form of `Open` takes an ANSI command string and no default value (provided for backward compatibility with existing ANSI applications).
 
-The third form of `Open` allows the command string to be NULL, because of type **int** with a default value of NULL. It is provided for calling `Open(session, NULL);` or `Open(session);` because NULL is of type **int**. This version requires and asserts that the **int** parameter be NULL.
+The third form of `Open` allows the command string to be NULL, because of type **`int`** with a default value of NULL. It is provided for calling `Open(session, NULL);` or `Open(session);` because NULL is of type **`int`**. This version requires and asserts that the **`int`** parameter be NULL.
 
 Use the fourth form of `Open` when you have already created a command and you want to perform a single [Prepare](../../data/oledb/ccommand-prepare.md) and multiple executions.
 

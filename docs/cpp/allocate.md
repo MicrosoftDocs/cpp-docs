@@ -9,13 +9,11 @@ ms.assetid: 67828b31-de60-4c0e-b0a6-ef3aab22641d
 
 **Microsoft Specific**
 
-The **allocate** declaration specifier names a data segment in which the data item will be allocated.
+The **`allocate`** declaration specifier names a data segment in which the data item will be allocated.
 
 ## Syntax
 
-```
-   __declspec(allocate("segname")) declarator
-```
+> **`__declspec(allocate("`** *segname* **`))`** *declarator*
 
 ## Remarks
 
@@ -46,5 +44,5 @@ int main() {
 
 ## See also
 
-[__declspec](../cpp/declspec.md)<br/>
+[`__declspec`](../cpp/declspec.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

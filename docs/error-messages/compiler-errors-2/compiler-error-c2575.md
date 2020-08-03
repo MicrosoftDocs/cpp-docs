@@ -9,7 +9,7 @@ ms.assetid: 9eb45706-37ef-4481-b373-6d193ba13634
 
 'identifier' : only member functions and bases can be virtual
 
-A global function or class is declared `virtual`. This is not allowed.
+A global function or class is declared **`virtual`**. This is not allowed.
 
 The following sample generates C2575:
 

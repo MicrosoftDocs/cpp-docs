@@ -114,8 +114,8 @@ Select the level of [inline function](../../cpp/inline-functions-cpp.md) expansi
 
 - **Default**
 - **Disabled** - Disables inline expansion, which is on by default.
-- **Only __inline** - Expands only functions marked as **`inline`**, `__forceinline`, or `__inline`. Or, in a C++ member function, defined within a class declaration.
-- **Any Suitable** - Expands functions marked as **`inline`** or `__inline` and any other function that the compiler chooses. (Expansion occurs at the compiler's discretion, often referred to as *auto-inlining*.)
+- **Only __inline** - Expands only functions marked as **`inline`**, **`__forceinline`**, or **`__inline`**. Or, in a C++ member function, defined within a class declaration.
+- **Any Suitable** - Expands functions marked as **`inline`** or **`__inline`** and any other function that the compiler chooses. (Expansion occurs at the compiler's discretion, often referred to as *auto-inlining*.)
 
 ### Enable Intrinsic Functions
 
@@ -311,7 +311,7 @@ Enables or suppresses conformance mode. Sets [`/permissive-`](permissive-standar
 
 ### Treat wchar_t As Built in Type
 
-When specified, the type **`wchar_t`** becomes a native type that maps to `__wchar_t` in the same way that **`short`** maps to `__int16`. [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) is on by default.
+When specified, the type **`wchar_t`** becomes a native type that maps to **`__wchar_t`** in the same way that **`short`** maps to **`__int16`**. [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) is on by default.
 
 ### Force Conformance in For Loop Scope
 
@@ -428,10 +428,10 @@ Select the default calling convention for your application (can be overridden by
 
 #### Choices
 
-- **__cdecl** - Specifies the `__cdecl` calling convention for all functions except C++ member functions and functions marked `__stdcall` or `__fastcall`.
-- **__fastcall** - Specifies the `__fastcall` calling convention for all functions except C++ member functions and functions marked `__cdecl` or `__stdcall`. All `__fastcall` functions must have prototypes.
-- **__stdcall** - Specifies the `__stdcall` calling convention for all functions except C++ member functions and functions marked `__cdecl` or `__fastcall`. All `__stdcall` functions must have prototypes.
-- **__vectorcall** - Specifies the `__vectorcall` calling convention for all functions except C++ member functions and functions marked `__cdecl`, `__fastcall`, or `__stdcall`. All `__vectorcall` functions must have prototypes.
+- **`__cdecl`** - Specifies the **`__cdecl`** calling convention for all functions except C++ member functions and functions marked **`__stdcall`** or **`__fastcall`**.
+- **`__fastcall`** - Specifies the **`__fastcall`** calling convention for all functions except C++ member functions and functions marked **`__cdecl`** or **`__stdcall`**. All **`__fastcall`** functions must have prototypes.
+- **`__stdcall`** - Specifies the **`__stdcall`** calling convention for all functions except C++ member functions and functions marked **`__cdecl`** or **`__fastcall`**. All **`__stdcall`** functions must have prototypes.
+- **`__vectorcall`** - Specifies the **`__vectorcall`** calling convention for all functions except C++ member functions and functions marked **`__cdecl`**, **`__fastcall`**, or **`__stdcall`**. All **`__vectorcall`** functions must have prototypes.
 
 ### Compile As
 

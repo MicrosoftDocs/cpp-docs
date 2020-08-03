@@ -109,7 +109,7 @@ auto i = m.begin(); // modern C++
 
 ## Range-based `for` loops
 
-C-style iteration over arrays and containers is prone to indexing errors and is also tedious to type. To eliminate these errors, and make your code more readable, use range-based `for` loops with both Standard Library containers and raw arrays. For more information, see [Range-based `for` statement](../cpp/range-based-for-statement-cpp.md).
+C-style iteration over arrays and containers is prone to indexing errors and is also tedious to type. To eliminate these errors, and make your code more readable, use range-based **`for`** loops with both Standard Library containers and raw arrays. For more information, see [Range-based `for` statement](../cpp/range-based-for-statement-cpp.md).
 
 ```cpp
 #include <iostream>
@@ -194,7 +194,7 @@ In C-style programming, a function can be passed to another function by using a 
     auto result = find_if(begin(v), end(v), [=](int i) { return i > x && i < y; });
 ```
 
-The lambda expression `[=](int i) { return i > x && i < y; }` can be read as "function that takes a single argument of type `int` and returns a boolean that indicates whether the argument is greater than `x` and less than `y`." Notice that the variables `x` and `y` from the surrounding context can be used in the lambda. The `[=]` specifies that those variables are *captured* by value; in other words, the lambda expression has its own copies of those values.
+The lambda expression `[=](int i) { return i > x && i < y; }` can be read as "function that takes a single argument of type **`int`** and returns a boolean that indicates whether the argument is greater than `x` and less than `y`." Notice that the variables `x` and `y` from the surrounding context can be used in the lambda. The `[=]` specifies that those variables are *captured* by value; in other words, the lambda expression has its own copies of those values.
 
 ## Exceptions
 

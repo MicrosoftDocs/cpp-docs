@@ -9,7 +9,7 @@ ms.assetid: 2b54a1fc-c9c6-4cc9-90be-faa44fc715d5
 
 dynamic_cast from virtual base 'class1' to 'class2' in constructor or destructor could fail with partially-constructed object        Compile with /vd2 or define 'class2' with #pragma vtordisp(2) in effect
 
-The compiler has encountered a `dynamic_cast` operation with the following characteristics.
+The compiler has encountered a **`dynamic_cast`** operation with the following characteristics.
 
 - The cast is from a base class pointer to a derived class pointer.
 
@@ -19,7 +19,7 @@ The compiler has encountered a `dynamic_cast` operation with the following chara
 
 - The cast is found in a constructor or destructor of the derived class, or some class which further inherits from the derived class.
 
-The warning indicates the `dynamic_cast` might not perform correctly, if it is operating on a partially-constructed object.  That happens if the derived constructor/destructor is operating on a sub-object of some further derived object.  If the derived class named in the warning is never further derived, the warning can be ignored.
+The warning indicates the **`dynamic_cast`** might not perform correctly, if it is operating on a partially-constructed object.  That happens if the derived constructor/destructor is operating on a sub-object of some further derived object.  If the derived class named in the warning is never further derived, the warning can be ignored.
 
 ## Example
 

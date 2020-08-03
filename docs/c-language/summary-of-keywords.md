@@ -7,16 +7,48 @@ ms.assetid: 341d8297-03eb-4351-9ed0-138ec59b375c
 
 *keyword* : one of
 
-|||||
-|-|-|-|-|
-|**auto**|**double**|**int**|**struct**|
-|**break**|**else**|**long**|**switch**|
-|**case**|**enum**|**register**|**typedef**|
-|**char**|**extern**|**return**|**union**|
-|**const**|**float**|**short**|**unsigned**|
-|**continue**|**for**|**signed**|**void**|
-|**default**|**goto**|**sizeof**|**volatile**|
-|**do**|**if**|**static**|**while**|
+:::row:::
+    :::column:::
+        **`auto`**<br/>
+        **`double`**<br/>
+        **`int`**<br/>
+        **`struct`**<br/>
+        **`break`**<br/>
+        **`else`**<br/>
+        **`long`**<br/>
+        **`switch`**<br/>
+    :::column-end:::
+    :::column:::
+        **`case`**<br/>
+        **`enum`**<br/>
+        **`register`**<br/>
+        **`typedef`**<br/>
+        **`char`**<br/>
+        **`extern`**<br/>
+        **`return`**<br/>
+        **`union`**<br/>
+    :::column-end:::
+    :::column:::
+        **`const`**<br/>
+        **`float`**<br/>
+        **`short`**<br/>
+        **`unsigned`**<br/>
+        **`continue`**<br/>
+        **`for`**<br/>
+        **`signed`**<br/>
+        **`void`**<br/>
+    :::column-end:::
+    :::column:::
+        **`default`**<br/>
+        **`goto`**<br/>
+        **`sizeof`**<br/>
+        **`volatile`**<br/>
+        **`do`**<br/>
+        **`if`**<br/>
+        **`static`**<br/>
+        **`while`**<br/>
+    :::column-end:::
+:::row-end:::
 
 ## See also
 

@@ -9,9 +9,9 @@ ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
 
 'function' : cannot convert argument n from 'type1' to 'type2'
 
-This parameter conversion problem might happen if an instance of a class is created and an implicit conversion is attempted on a constructor marked with the `explicit` keyword. For more information about explicit conversions, see [User-Defined Type Conversions](../../cpp/user-defined-type-conversions-cpp.md).
+This parameter conversion problem might happen if an instance of a class is created and an implicit conversion is attempted on a constructor marked with the **`explicit`** keyword. For more information about explicit conversions, see [User-Defined Type Conversions](../../cpp/user-defined-type-conversions-cpp.md).
 
-If a temporary object is passed to a function that takes a reference to an object as a parameter, that reference must be a `const` reference.
+If a temporary object is passed to a function that takes a reference to an object as a parameter, that reference must be a **`const`** reference.
 
 If the function is passed a parameter that is not of the type that the function expects, a temporary object is created by using the appropriate constructor. This temporary object is then passed to the function. In this case, the temporary object is used to initialize the reference. In earlier versions of the language, all references could be initialized by temporary objects.
 
@@ -111,7 +111,7 @@ int main() {
 
 ## Example
 
-The compiler enforces the C++ standard requirements for applying `const`. This sample generates C2664:
+The compiler enforces the C++ standard requirements for applying **`const`**. This sample generates C2664:
 
 ```cpp
 // C2664d.cpp
@@ -224,7 +224,7 @@ library myproj1 {
 }
 ```
 
-C2664 is also raised by using `wchar_t` when porting code from Visual C++ 6.0 to later versions. In Visual C++ 6.0 and earlier, `wchar_t` was a `typedef` for `unsigned short` and was therefore implicitly convertible to that type. After Visual C++ 6.0, `wchar_t` is its own built-in type, as specified in the C++ standard, and is no longer implicitly convertible to `unsigned short`. See [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+C2664 is also raised by using **`wchar_t`** when porting code from Visual C++ 6.0 to later versions. In Visual C++ 6.0 and earlier, **`wchar_t`** was a **`typedef`** for **`unsigned short`** and was therefore implicitly convertible to that type. After Visual C++ 6.0, **`wchar_t`** is its own built-in type, as specified in the C++ standard, and is no longer implicitly convertible to **`unsigned short`**. See [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ## Example
 

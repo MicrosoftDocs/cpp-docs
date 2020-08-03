@@ -8,7 +8,7 @@ ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 ---
 # C++ Core Guidelines checker reference
 
-This section lists C++ Core Guidelines Checker warnings. For information about Code Analysis, see [/analyze (Code Analysis)](/cpp/build/reference/analyze-code-analysis) and [Quick Start: Code Analysis for C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+This section lists C++ Core Guidelines Checker warnings. For information about Code Analysis, see [`/analyze` (Code Analysis)](/cpp/build/reference/analyze-code-analysis) and [Quick Start: Code Analysis for C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
 > Some warnings belong to more than one group, and not all warnings have a complete reference topic.
@@ -144,13 +144,13 @@ Avoid `goto`. See [C++ Core Guidelines ES.76](https://github.com/isocpp/CppCoreG
 ## FUNCTION Group
 
 [C26439 SPECIAL_NOEXCEPT](C26439.md)\
-This kind of function may not throw. Declare it `noexcept`. See [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+This kind of function may not throw. Declare it **`noexcept`**. See [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26440 DECLARE_NOEXCEPT](C26440.md)\
-Function '*symbol*' can be declared `noexcept`. See [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+Function '*symbol*' can be declared **`noexcept`**. See [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md)\
-The function is declared **noexcept** but calls a function which may throw exceptions.
+The function is declared **`noexcept`** but calls a function which may throw exceptions.
 See [C++ Core Guidelines:  F.6: If your function may not throw, declare it noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 ## CONCURRENCY Group

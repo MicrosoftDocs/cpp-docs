@@ -9,11 +9,11 @@ ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
 
 cannot deduce type for 'type1' from 'type2'
 
-The type of the variable declared by the `auto` keyword cannot be deduced from the type of the initialization expression. For example, this error occurs if the initialization expression evaluates to `void`, which is not a type.
+The type of the variable declared by the **`auto`** keyword cannot be deduced from the type of the initialization expression. For example, this error occurs if the initialization expression evaluates to **`void`**, which is not a type.
 
 ### To correct this error
 
-1. Ensure that the type of the initialization expression is not `void`.
+1. Ensure that the type of the initialization expression is not **`void`**.
 
 1. Ensure that the declaration is not a pointer to a fundamental type. For more information, see [Fundamental Types](../../cpp/fundamental-types-cpp.md).
 
@@ -21,7 +21,7 @@ The type of the variable declared by the `auto` keyword cannot be deduced from t
 
 ## Example
 
-The following example yields C3535 because the initialization expression evaluates to `void`.
+The following example yields C3535 because the initialization expression evaluates to **`void`**.
 
 ```cpp
 // C3535a.cpp

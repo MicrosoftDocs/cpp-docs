@@ -71,7 +71,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **fdim** that take and return **float** and **long** **double** types. In a C program, **fdim** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **fdim** that take and return **`float`** and **`long double`** types. In a C program, **fdim** always takes and returns a **`double`**.
 
 Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
 

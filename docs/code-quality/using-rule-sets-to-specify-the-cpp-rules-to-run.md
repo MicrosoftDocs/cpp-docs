@@ -1,15 +1,15 @@
 ---
 title: Using Rule Sets to Specify the C++ Rules to Run
-ms.date: 07/13/2020
+ms.date: 07/27/2020
 ms.topic: "conceptual"
 f1_keywords:
   - "vs.codeanalysis.rulesets.native"
 ---
 # Use Rule Sets to Specify the C++ Rules to Run
 
-In Visual Studio, you can create and modify a custom *rule set* to meet specific project needs associated with code analysis. The default rule sets are stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+In Visual Studio, you can create and modify a custom *rule set* to meet specific project needs associated with code analysis. The default rule sets are stored in *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`*.
 
-**Visual Studio 2017 version 15.7 and later:** You can create custom rule sets using any text editor and apply them in command line builds no matter what build system you're using. For more information, see [/analyze:ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 version 15.7 and later:** You can create custom rule sets using any text editor and apply them in command line builds no matter what build system you're using. For more information, see [`/analyze:ruleset`](/cpp/build/reference/analyze-code-analysis).
 
 To create a custom C++ rule set in Visual Studio, a C/C++ project must be open in the Visual Studio IDE. You then open a standard rule set in the rule set editor and then add or remove specific rules and optionally change the action that occurs when code analysis determines a rule has been violated.
 
@@ -17,9 +17,11 @@ To create a new custom rule set, you save it by using a new file name. The custo
 
 ## To create a custom rule from a single existing rule set
 
-1. In the Solution Explorer, open the shortcut menu for the project and then choose **Properties**.
+::: moniker range="<=vs-2017"
 
-1. On the **Properties** tab, choose **Code Analysis**.
+1. In Solution Explorer, open the shortcut menu for the project and then choose **Properties**.
+
+1. In the **Property Pages** dialog box, select the **Configuration Properties** > **Code Analysis** > **General** property page.
 
 1. In the **Rule Set** drop-down list, do one of the following:
 
@@ -30,6 +32,25 @@ To create a new custom rule set, you save it by using a new file name. The custo
    - Choose **\<Browse...>** to specify an existing rule set that isn't in the list.
 
 1. Choose **Open** to display the rules in the rule set editor.
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+
+1. In Solution Explorer, open the shortcut menu for the project and then choose **Properties**.
+
+1. In the **Property Pages** dialog box, select the **Configuration Properties** > **Code Analysis** > **Microsoft** property page.
+
+1. In the **Active Rules** drop-down list, do one of the following:
+
+   - Choose the rule set that you want to customize.
+
+     \- or -
+
+   - Choose **\<Browse...>** to specify an existing rule set that isn't in the list.
+
+1. Choose **Open** to display the rules in the rule set editor.
+
+::: moniker-end
 
 ## To modify a rule set in the rule set editor
 
@@ -71,41 +92,23 @@ To create a new custom rule set, you save it by using a new file name. The custo
 
 ## To create a rule set in a text editor
 
-You can create a custom rule set in a text editor, store it in any location with a `.ruleset` extension, and apply in with the [/analyze:ruleset](/cpp/build/reference/analyze-code-analysis) compiler option.
+You can create a custom rule set in a text editor, store it in any location with a *`.ruleset`* extension, and apply in with the [`/analyze:ruleset`](/cpp/build/reference/analyze-code-analysis) compiler option.
 
 The following example shows a basic rule set file that you can use as a starting point:
 
-::: moniker range="<=vs-2017"
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+<RuleSet Name="New Rule Set" Description="New rules to apply." ToolsVersion="10.0">
   <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
     <Rule Id="C6001" Action="Warning" />
     <Rule Id="C26494" Action="Warning" />
   </Rules>
 </RuleSet>
 ```
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="New Rule Set" Description=" " ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
-    <Rule Id="C6001" Action="Warning" />
-    <Rule Id="C26494" Action="Warning" />
-  </Rules>
-</RuleSet>
-```
-
-::: moniker-end
 
 ## Ruleset schema
 
-The following ruleset schema describes the XML schema of a ruleset file. The ruleset schema is stored in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`. You can use it to author your own rulesets programmatically or to validate whether your custom rulesets adhere to the correct format. For more information, see [How to: Create an XML document based on an XSD schema](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
+The following ruleset schema describes the XML schema of a ruleset file. The ruleset schema is stored in *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`*. You can use it to author your own rulesets programmatically or to validate whether your custom rulesets adhere to the correct format. For more information, see [How to: Create an XML document based on an XSD schema](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

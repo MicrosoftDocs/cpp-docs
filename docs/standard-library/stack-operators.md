@@ -25,7 +25,7 @@ An object of type `stack`.
 
 ### Return Value
 
-**true** if the stacks or stacks are not equal; **false** if stacks or stacks are equal.
+**`true`** if the stacks or stacks are not equal; **`false`** if stacks or stacks are equal.
 
 ### Remarks
 
@@ -90,7 +90,7 @@ An object of type `stack`.
 
 ### Return Value
 
-**true** if the stack on the left side of the operator is less than and not equal to the stack on the right side of the operator; otherwise **false**.
+**`true`** if the stack on the left side of the operator is less than and not equal to the stack on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -174,7 +174,7 @@ An object of type `stack`.
 
 ### Return Value
 
-**true** if the stack on the left side of the operator is less than or equal to the stack on the right side of the operator; otherwise **false**.
+**`true`** if the stack on the left side of the operator is less than or equal to the stack on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -241,7 +241,7 @@ An object of type `stack`.
 
 ### Return Value
 
-**true** if the stacks or stacks are equal; **false** if stacks or stacks are not equal.
+**`true`** if the stacks or stacks are equal; **`false`** if stacks or stacks are not equal.
 
 ### Remarks
 
@@ -306,7 +306,7 @@ An object of type `stack`.
 
 ### Return Value
 
-**true** if the stack on the left side of the operator is greater than and not equal to the stack on the right side of the operator; otherwise **false**.
+**`true`** if the stack on the left side of the operator is greater than and not equal to the stack on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -375,7 +375,7 @@ An object of type `stack`.
 
 ### Return Value
 
-**true** if the stack on the left side of the operator is strictly less than the stack on the right side of the operator; otherwise **false**.
+**`true`** if the stack on the left side of the operator is strictly less than the stack on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

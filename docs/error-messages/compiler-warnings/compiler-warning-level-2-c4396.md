@@ -13,11 +13,11 @@ A specialization of a function template cannot specify any of the [inline](../..
 
 ### To correct this error
 
-- Remove the `inline`, `__inline`, or `__forceinline` specifier from the friend function declaration.
+- Remove the **`inline`**, **`__inline`**, or **`__forceinline`** specifier from the friend function declaration.
 
 ## Example
 
-The following code example shows an invalid friend function declaration with an `inline` specifier.
+The following code example shows an invalid friend function declaration with an **`inline`** specifier.
 
 ```cpp
 // C4396.cpp

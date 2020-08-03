@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 07/08/2020
+ms.date: 07/29/2020
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -52,7 +52,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/FU`](fu-name-forced-hash-using-file.md) | Forces the use of a file name as if it had been passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
 | [`/Fx`](fx-merge-injected-code.md) | Merges injected code with source file. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Optimizes code for Windows application. |
-| [`/Gd`](gd-gr-gv-gz-calling-convention.md) | Uses the `__cdecl` calling convention (x86 only). |
+| [`/Gd`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__cdecl`** calling convention (x86 only). |
 | [`/Ge`](ge-enable-stack-probes.md) | Deprecated. Activates stack probes. |
 | [`/GF`](gf-eliminate-duplicate-strings.md) | Enables string pooling. |
 | [`/GH`](gh-enable-pexit-hook-function.md) | Calls hook function `_pexit`. |
@@ -60,24 +60,24 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/GL`](gl-whole-program-optimization.md) | Enables whole program optimization. |
 | [`/Gm`](gm-enable-minimal-rebuild.md) | Deprecated. Enables minimal rebuild. |
 | [`/GR`](gr-enable-run-time-type-information.md) | Enables run-time type information (RTTI). |
-| [`/Gr`](gd-gr-gv-gz-calling-convention.md) | Uses the `__fastcall` calling convention (x86 only). |
+| [`/Gr`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__fastcall`** calling convention (x86 only). |
 | [`/GS`](gs-buffer-security-check.md) | Buffers security check. |
 | [`/Gs`](gs-control-stack-checking-calls.md) | Controls stack probes. |
 | [`/GT`](gt-support-fiber-safe-thread-local-storage.md) | Supports fiber safety for data allocated using static thread-local storage. |
 | [`/guard:cf`](guard-enable-control-flow-guard.md) | Adds control flow guard security checks. |
 | [`/guard:ehcont`](guard-enable-eh-continuation-metadata.md) | Enables EH continuation metadata. |
-| [`/Gv`](gd-gr-gv-gz-calling-convention.md) | Uses the `__vectorcall` calling convention. (x86 and x64 only) |
+| [`/Gv`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__vectorcall`** calling convention. (x86 and x64 only) |
 | [`/Gw`](gw-optimize-global-data.md) | Enables whole-program global data optimization. |
 | [`/GX`](gx-enable-exception-handling.md) | Deprecated. Enables synchronous exception handling. Use [`/EH`](eh-exception-handling-model.md) instead. |
 | [`/Gy`](gy-enable-function-level-linking.md) | Enables function-level linking. |
 | [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | Deprecated. Same as [`/RTC1`](rtc-run-time-error-checks.md). |
-| [`/Gz`](gd-gr-gv-gz-calling-convention.md) | Uses the `__stdcall` calling convention (x86 only). |
+| [`/Gz`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__stdcall`** calling convention (x86 only). |
 | [`/H`](h-restrict-length-of-external-names.md) | Deprecated. Restricts the length of external (public) names. |
 | [`/HELP`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hot-patchable image. |
 | [`/I`](i-additional-include-directories.md) | Searches a directory for include files. |
-| [`/J`](j-default-char-type-is-unsigned.md) | Changes the default `char` type. |
+| [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
 | [`/JMC`](jmc.md) | Supports native C++ Just My Code debugging. |
 | [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker will create a binary that can be executed in the Windows kernel. |
 | [`/LD`](md-mt-ld-use-run-time-library.md) | Creates a dynamic-link library. |
@@ -105,7 +105,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/permissive-`](permissive-standards-conformance.md) | Set standard-conformance mode. |
 | [`/Qfast_transcendentals`](qfast-transcendentals-force-fast-transcendentals.md) | Generates fast transcendentals. |
 | [`/QIfist`](qifist-suppress-ftol.md) | Deprecated. Suppresses `_ftol` when a conversion from a floating-point type to an integral type is required (x86 only). |
-| [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | Removes `fwait` commands inside `try` blocks. |
+| [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | Removes `fwait` commands inside **`try`** blocks. |
 | [`/QIntel-jcc-erratum`](qintel-jcc-erratum.md) | Mitigates the performance impact of the Intel JCC erratum microcode update. |
 | [/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md) | Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive. |
 | [`/Qsafe_fp_loads`](qsafe-fp-loads.md) | Uses integer move instructions for floating-point values and disables certain floating point load optimizations. |
@@ -117,6 +117,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Enables additional security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of include files during compilation. |
 | [`/source-charset`](source-charset-set-source-character-set.md) | Set source character set. |
+| [`/sourceDependencies`](sourcedependencies.md) | List headers, modules, and other source dependencies. |
 | [`/std`](std-specify-language-standard-version.md) | C++ standard version compatibility selector. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |

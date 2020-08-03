@@ -83,7 +83,7 @@ Now add a couple of `#import` statements to DocProperties.h so that the compiler
 
 [!code-cpp[NVC_ATL_Windowing#74](../atl/codesnippet/cpp/example-implementing-a-property-page_2.h)]
 
-You'll also need to refer to the `IPropertyPageImpl` base class; add the following **typedef** to the `CDocProperties` class:
+You'll also need to refer to the `IPropertyPageImpl` base class; add the following **`typedef`** to the `CDocProperties` class:
 
 [!code-cpp[NVC_ATL_Windowing#75](../atl/codesnippet/cpp/example-implementing-a-property-page_3.h)]
 

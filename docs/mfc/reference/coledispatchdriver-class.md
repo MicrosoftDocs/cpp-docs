@@ -120,11 +120,11 @@ Reference to an existing `COleDispatchDriver` object.
 
 ### Remarks
 
-The form `COleDispatchDriver`( `LPDISPATCH lpDispatch`, **BOOL**`bAutoRelease` = **TRUE**) connects the [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) interface.
+The form `COleDispatchDriver( LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE )` connects the [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) interface.
 
-The form `COleDispatchDriver`( **const**`COleDispatchDriver`& `dispatchSrc`) copies an existing `COleDispatchDriver` object and increments the reference count.
+The form `COleDispatchDriver( const COleDispatchDriver& dispatchSrc )` copies an existing `COleDispatchDriver` object and increments the reference count.
 
-The form `COleDispatchDriver`( ) creates a `COleDispatchDriver` object but does not connect the `IDispatch` interface. Before using `COleDispatchDriver`( ) without arguments, you should connect an `IDispatch` to it using either [COleDispatchDriver::CreateDispatch](#createdispatch) or [COleDispatchDriver::AttachDispatch](#attachdispatch). For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
+The form `COleDispatchDriver( )` creates a `COleDispatchDriver` object but does not connect the `IDispatch` interface. Before using `COleDispatchDriver( )` without arguments, you should connect an `IDispatch` to it using either [COleDispatchDriver::CreateDispatch](#createdispatch) or [COleDispatchDriver::AttachDispatch](#attachdispatch). For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
 ### Example
 
@@ -252,11 +252,11 @@ Possible values for the *vtRet* argument are taken from the VARENUM enumeration.
 
 |Symbol|Return Type|
 |------------|-----------------|
-|VT_EMPTY|**void**|
-|VT_I2|**short**|
-|VT_I4|**long**|
-|VT_R4|**float**|
-|VT_R8|**double**|
+|VT_EMPTY|**`void`**|
+|VT_I2|**`short`**|
+|VT_I4|**`long`**|
+|VT_R4|**`float`**|
+|VT_R8|**`double`**|
 |VT_CY|**CY**|
 |VT_DATE|**DATE**|
 |VT_BSTR|BSTR|

@@ -136,7 +136,7 @@ typedef BufferedIO::BufferedInput BIO_INPUT;
 int BIO_INPUT::read()
 ```
 
-The preceding declaration is equivalent to the previous one, but it uses a **typedef** name in place of the class names.
+The preceding declaration is equivalent to the previous one, but it uses a **`typedef`** name in place of the class names.
 
 ## Friend functions in nested classes
 

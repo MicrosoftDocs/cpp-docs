@@ -55,7 +55,7 @@ The buffer size includes the terminating null. A width specification field may b
 For more information, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> The size parameter is of type **unsigned**, not **size_t**.
+> The size parameter is of type **`unsigned`**, not **size_t**.
 
 The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the **scanf_s** function. If copying occurs between strings that overlap, the behavior is undefined.
 

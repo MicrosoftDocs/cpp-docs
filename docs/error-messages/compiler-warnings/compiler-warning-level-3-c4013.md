@@ -15,4 +15,4 @@ The compiler encountered a call to an undefined function.
 
 1. Incorrect spelling of function name
 
-1. External functions not prototyped as `extern`
+1. External functions not prototyped as **`extern`**

@@ -12,7 +12,7 @@ A function declaration establishes the name, return type, and attributes of a fu
 
 The compiler uses the prototype to compare the types of arguments in subsequent calls to the function with the function's parameters and to convert the types of the arguments to the types of the parameters whenever necessary.
 
-A function call passes execution control from the calling function to the called function. The arguments, if any, are passed by value to the called function. Execution of a `return` statement in the called function returns control and possibly a value to the calling function.
+A function call passes execution control from the calling function to the called function. The arguments, if any, are passed by value to the called function. Execution of a **`return`** statement in the called function returns control and possibly a value to the calling function.
 
 ## See also
 

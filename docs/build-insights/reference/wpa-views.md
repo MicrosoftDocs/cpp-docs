@@ -115,7 +115,7 @@ The Functions view is used to identify functions with an excessively long code g
 
 | Preset Name | Preferred View Mode | How to Use |
 |-------------|---------------------|------------|
-| Statistics  | Table               | See which functions had the highest aggregated code generation time by looking at the list in descending order. They may hint where your code overuses the **__forceinline** keyword, or that some functions may be too large. |
+| Statistics  | Table               | See which functions had the highest aggregated code generation time by looking at the list in descending order. They may hint where your code overuses the **`__forceinline`** keyword, or that some functions may be too large. |
 | Timelines   | Graph               | Look at this bar graph to learn the location and duration of functions that take the most time to generate. See if they align with bottlenecks in the Build Explorer view. If they do, take appropriate action to reduce their code generation time and benefit your build times. |
 
 ## See also

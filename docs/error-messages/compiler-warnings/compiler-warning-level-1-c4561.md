@@ -9,7 +9,7 @@ ms.assetid: 3a10c12c-601b-4b6c-9861-331fd022e021
 
 '__fastcall' incompatible with the '/clr' option: converting to '\__stdcall'
 
-The [__fastcall](../../cpp/fastcall.md) function-calling convention cannot be used with the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) compiler option. The compiler ignores the calls to `__fastcall`. To fix this warning, either remove the calls to **__fastcall** or compile without **/clr**.
+The [__fastcall](../../cpp/fastcall.md) function-calling convention cannot be used with the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) compiler option. The compiler ignores the calls to **`__fastcall`**. To fix this warning, either remove the calls to **`__fastcall`** or compile without **/clr**.
 
 The following sample generates C4561:
 

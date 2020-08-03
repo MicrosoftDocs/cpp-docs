@@ -26,7 +26,7 @@ The '*identifier*' function forces inline expansion of the [`_alloca`](../../c-r
 
 ## Example
 
-The following code example calls `MyFunction` in a loop, and `MyFunction` calls the `_alloca` function. The `__forceinline` modifier causes the inline expansion of the `_alloca` function.
+The following code example calls `MyFunction` in a loop, and `MyFunction` calls the `_alloca` function. The **`__forceinline`** modifier causes the inline expansion of the `_alloca` function.
 
 ```cpp
 // c4750.cpp

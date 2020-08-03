@@ -20,7 +20,7 @@ The **`/EHsc`** option tells the compiler to generate code that calls the destru
 
 When an exception is thrown, it may travel through several stack frames before it's caught. These stack frames must be unwound as the exception passes through them in reverse calling order. The automatic storage objects in each stack frame must be destroyed to recover their resources cleanly. It's the same destruction and recovery process that happens automatically when a function returns normally.
 
-When the **`/EHsc`** option isn't enabled, automatic storage objects in the stack frames between the throwing function and the function where the exception is caught don't get destroyed. Only the automatic storage objects created in a **try** or **catch** block get destroyed, which can lead to significant resource leaks and other unexpected behavior.
+When the **`/EHsc`** option isn't enabled, automatic storage objects in the stack frames between the throwing function and the function where the exception is caught don't get destroyed. Only the automatic storage objects created in a **`try`** or **`catch`** block get destroyed, which can lead to significant resource leaks and other unexpected behavior.
 
 If no exceptions can possibly be thrown in your executable, you may safely ignore this warning. Some code may require other exception handling options. For more information, see [/EH](../../build/reference/eh-exception-handling-model.md).
 

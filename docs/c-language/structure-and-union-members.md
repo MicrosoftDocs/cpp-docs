@@ -13,7 +13,7 @@ A "member-selection expression" refers to members of structures and unions. Such
 
 This list describes the two forms of the member-selection expressions:
 
-1. In the first form, *postfix-expression* represents a value of **struct** or **union** type, and *identifier* names a member of the specified structure or union. The value of the operation is that of *identifier* and is an l-value if *postfix-expression* is an l-value. See [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md) for more information.
+1. In the first form, *postfix-expression* represents a value of **`struct`** or **`union`** type, and *identifier* names a member of the specified structure or union. The value of the operation is that of *identifier* and is an l-value if *postfix-expression* is an l-value. See [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md) for more information.
 
 1. In the second form, *postfix-expression* represents a pointer to a structure or union, and *identifier* names a member of the specified structure or union. The value is that of *identifier* and is an l-value.
 

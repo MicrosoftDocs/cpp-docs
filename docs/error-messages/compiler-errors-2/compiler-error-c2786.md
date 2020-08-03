@@ -13,7 +13,7 @@ The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type 
 
 1. The argument is not a user-defined type.
 
-1. `__uuidof` cannot extract the GUID from the argument.
+1. **`__uuidof`** cannot extract the GUID from the argument.
 
 The following sample generates C2786:
 

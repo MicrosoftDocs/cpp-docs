@@ -60,7 +60,7 @@ Locale to use.
 
 ## Return Value
 
-**_mbsnbcnt** and **_mbsnbcnt_l** return the number of bytes found in the first *count* of multibyte characters of *str*. **_mbsnccnt** and **_mbsnccnt_l** return the number of characters found in the first *count* of bytes of *str*. If a null character is encountered before the examination of *str* has completed, they return the number of bytes or characters found before the null character. If *str* consists of fewer than *count* characters or bytes, they return the number of characters or bytes in the string. If *count* is less than zero, they return 0. In previous versions, these functions had a return value of type **int** rather than **size_t**.
+**_mbsnbcnt** and **_mbsnbcnt_l** return the number of bytes found in the first *count* of multibyte characters of *str*. **_mbsnccnt** and **_mbsnccnt_l** return the number of characters found in the first *count* of bytes of *str*. If a null character is encountered before the examination of *str* has completed, they return the number of bytes or characters found before the null character. If *str* consists of fewer than *count* characters or bytes, they return the number of characters or bytes in the string. If *count* is less than zero, they return 0. In previous versions, these functions had a return value of type **`int`** rather than **size_t**.
 
 **_strncnt** returns the number of characters in the first *count* bytes of the single-byte string *str*. **_wcsncnt** returns the number of characters in the first *count* wide characters of the wide-character string *str*.
 

@@ -54,7 +54,7 @@ This same procedure can also be used to add other custom properties you want. Su
 
 1. For **Implementation Type**, click **Get/Set Methods**.
 
-1. In the **Property Type** box, select **short**.
+1. In the **Property Type** box, select **`short`**.
 
 1. Type unique names for your Get and Set Functions, or accept the default names.
 

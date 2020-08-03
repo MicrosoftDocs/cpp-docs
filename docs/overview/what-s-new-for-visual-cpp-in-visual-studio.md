@@ -243,7 +243,7 @@ We've updated the C++ compiler and standard library in this release with enhance
 
 ##### Visual Studio 2017 version 15.5
 
-The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These features are available under the **`/std:c++17`** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements.md)
+The compiler supports about 75% of the features that are new in C++17, including structured bindings, **`constexpr`** lambdas, `if constexpr`, inline variables, fold expressions, and adding **`noexcept`** to the type system. These features are available under the **`/std:c++17`** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements.md)
 
 ##### Visual Studio 2017 version 15.7
 
@@ -290,7 +290,7 @@ Visual C++ runtime performance continues to improve through better generated cod
 
 The Microsoft C++ compiler supports Intel's AVX-512. It has Vector Length instructions that bring new functions in AVX-512 to 128-bit and 256-bit wide registers.
 
-The [/Zc:noexceptTypes-](../build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This option enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](cpp-conformance-improvements.md#noexcept_removal).
+The [/Zc:noexceptTypes-](../build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of **`noexcept`** while using C++17 mode in general. This option enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](cpp-conformance-improvements.md#noexcept_removal).
 
 ##### Visual Studio 2017 version 15.7
 
@@ -308,7 +308,7 @@ The [/Zc:noexceptTypes-](../build/reference/zc-noexcepttypes.md) option can be u
 - Fixed the `std::promise` move assignment operator, which previously could cause code to block forever.
 - Fixed compiler errors with the `atomic<T*>` implicit conversion to `T*`.
 - `pointer_traits<Ptr>` now correctly detects `Ptr::rebind<U>`.
-- Fixed a missing `const` qualifier in the `move_iterator` subtraction operator.
+- Fixed a missing **`const`** qualifier in the `move_iterator` subtraction operator.
 - Fixed silent bad codegen for stateful user-defined allocators requesting `propagate_on_container_copy_assignment` and `propagate_on_container_move_assignment`.
 - `atomic<T>` now tolerates overloaded `operator&()`.
 - Slightly improved compiler diagnostics for incorrect `bind()` calls.
@@ -329,8 +329,8 @@ There are more standard library improvements in Visual Studio 2017 RTM. For a co
 - Also fixed "exception specification in declaration does not match previous declaration" reported by Clang **-Wmicrosoft-exception-spec**.
 - Also fixed mem-initializer-list ordering warnings reported by Clang and C1XX.
 - The unordered containers didn't swap their hash functions or predicates when the containers themselves were swapped. Now they do.
-- Many container swap operations are now marked `noexcept` (as our standard library never intends to throw an exception when detecting the non-`propagate_on_container_swap` non-equal-allocator undefined behavior condition).
-- Many `vector<bool>` operations are now marked `noexcept`.
+- Many container swap operations are now marked **`noexcept`** (as our standard library never intends to throw an exception when detecting the non-`propagate_on_container_swap` non-equal-allocator undefined behavior condition).
+- Many `vector<bool>` operations are now marked **`noexcept`**.
 - The standard library will now enforce matching allocator `value_type` (in C++17 mode) with an opt-out escape hatch.
 - Fixed some conditions where self-range-insert into `basic_string` would scramble the strings contents. (Note: self-range-insert into vectors is still prohibited by the Standard.)
 - `basic_string::shrink_to_fit()` is no longer affected by the allocator's `propagate_on_container_swap`.
@@ -354,7 +354,7 @@ There are more standard library improvements in Visual Studio 2017 RTM. For a co
 
 - We added \<any\>, \<string_view\>, `apply()`, `make_from_tuple()`.
 - Added \<optional\>, \<variant\>, `shared_ptr::weak_type`, and \<cstdalign\>.
-- Enabled C++14 `constexpr` in `min(initializer_list)`, `max(initializer_list)`, and `minmax(initializer_list)`, and `min_element()`, `max_element()`, and `minmax_element()`.
+- Enabled C++14 **`constexpr`** in `min(initializer_list)`, `max(initializer_list)`, and `minmax(initializer_list)`, and `min_element()`, `max_element()`, and `minmax_element()`.
 
 For more information, see [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md).
 
@@ -362,11 +362,11 @@ For more information, see [Microsoft C++ language conformance table](../visual-c
 
 - Several additional C++17 features have been implemented. For more information, see [Microsoft C++ language conformance table](cpp-conformance-improvements.md#improvements_153).
 - Implemented P0602R0 "variant and optional should propagate copy/move triviality".
-- The standard library now officially tolerates dynamic RTTI being disabled via the [/GR-](../build/reference/gr-enable-run-time-type-information.md) option. Both `dynamic_pointer_cast()` and `rethrow_if_nested()` inherently require `dynamic_cast`, so the standard library now marks them as `=delete` under **`/GR-`**.
+- The standard library now officially tolerates dynamic RTTI being disabled via the [/GR-](../build/reference/gr-enable-run-time-type-information.md) option. Both `dynamic_pointer_cast()` and `rethrow_if_nested()` inherently require **`dynamic_cast`**, so the standard library now marks them as `=delete` under **`/GR-`**.
 - Even when dynamic RTTI has been disabled via **`/GR-`**, "static RTTI" in the form of `typeid(SomeType)` is still available, and powers several standard library components. The standard library now supports disabling this feature too, via **`/D_HAS_STATIC_RTTI=0`**. This flag also disables `std::any`, the `target()` and `target_type()` member functions of `std::function`, and the `get_deleter()` friend member function of `std::shared_ptr` and `std::weak_ptr`.
-- The standard library now uses C++14 `constexpr` unconditionally, instead of conditionally defined macros.
+- The standard library now uses C++14 **`constexpr`** unconditionally, instead of conditionally defined macros.
 - The standard library now uses alias templates internally.
-- The standard library now uses `nullptr` internally, instead of `nullptr_t{}`. (Internal usage of NULL has been eradicated. Internal usage of 0-as-null is being cleaned up gradually.)
+- The standard library now uses **`nullptr`** internally, instead of `nullptr_t{}`. (Internal usage of NULL has been eradicated. Internal usage of 0-as-null is being cleaned up gradually.)
 - The standard library now uses `std::move()` internally, instead of stylistically misusing `std::forward()`.
 - Changed `static_assert(false, "message")` to `#error message`. This change improves compiler diagnostics because `#error` immediately stops compilation.
 - The standard library no longer marks functions as `__declspec(dllimport)`. Modern linker technology no longer requires it.
@@ -433,7 +433,7 @@ For more information, see [Microsoft C++ language conformance table](../visual-c
 
 ##### Visual Studio 2017 version 15.3
 
-- Worked around interactions with `noexcept`, which prevented inlining the `std::atomic` implementation into functions that use Structured Exception Handling (SEH).
+- Worked around interactions with **`noexcept`**, which prevented inlining the `std::atomic` implementation into functions that use Structured Exception Handling (SEH).
 - Changed the standard library's internal `_Deallocate()` function to optimize into smaller code, allowing it to be inlined into more places.
 - Changed `std::try_lock()` to use pack expansion instead of recursion.
 - Improved the `std::lock()` deadlock avoidance algorithm to use `lock()` operations instead of spinning on `try_lock()` on all the locks.
@@ -450,7 +450,7 @@ For more information, see [Microsoft C++ language conformance table](../visual-c
 - The `basic_string` mutating operations now construct reallocated buffers in the preferred state rather than resizing in place. For example, an insert at the beginning of a string now moves the content after the insertion exactly once. It's moved either down or to the newly allocated buffer. It's no longer moved twice in the reallocating case, first to the newly allocated buffer and then down.
 - Operations calling the C standard library in \<string\> now cache the `errno` address to remove repeated interaction with TLS.
 - Simplified the `is_pointer` implementation.
-- Finished changing function-based Expression SFINAE to `struct` and `void_t`-based.
+- Finished changing function-based Expression SFINAE to **`struct`** and `void_t`-based.
 - Standard library algorithms now avoid postincrementing iterators.
 - Fixed truncation warnings when using 32-bit allocators on 64-bit systems.
 - `std::vector` move assignment is now more efficient in the non-POCMA non-equal-allocator case, by reusing the buffer when possible.
@@ -507,12 +507,11 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 Several C++ operations that use the IntelliSense engine for refactoring and code navigation run much faster. The following numbers are based on the Visual Studio Chromium solution with 3500 projects:
 
-|||
-|-|-|
-|Feature|Performance Improvement|
-|Rename|5.3x|
-|Change Signature |4.5x|
-|Find All References|4.7x|
+| Feature | Performance Improvement |
+|--|--|
+| Rename | 5.3x |
+| Change Signature | 4.5x |
+| Find All References | 4.7x |
 
 C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to definitions easy. The Structure Visualizer from the Productivity Power Tools pack is now also included in the product by default.
 
@@ -652,7 +651,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 
 ##### Visual Studio 2017 version 15.5
 
-- New C++ Core Guidelines checks cover smart pointer correctness, correct use of global initializers, and flagging uses of constructs like `goto` and bad casts.
+- New C++ Core Guidelines checks cover smart pointer correctness, correct use of global initializers, and flagging uses of constructs like **`goto`** and bad casts.
 
 - Some warning numbers you may find in 15.3 are no longer available in 15.5. These warnings were replaced with more specific checks.
 
@@ -662,7 +661,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 
 ##### Visual Studio 2017 version 15.7
 
-- Support added for [/analyze:ruleset](../build/reference/analyze-code-analysis.md), which lets you specify the code analysis rules to run.
+- Support added for [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md), which lets you specify the code analysis rules to run.
 - Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## Unit testing in Visual Studio 2017

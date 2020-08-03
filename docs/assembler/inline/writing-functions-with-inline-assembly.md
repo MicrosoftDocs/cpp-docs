@@ -66,7 +66,7 @@ int power2( int num, int power )
 
 The inline version of the `power2` function refers to its arguments by name and appears in the same source file as the rest of the program. This version also requires fewer assembly instructions.
 
-Because the inline version of `power2` doesn't execute a C `return` statement, it causes a harmless warning if you compile at warning level 2 or higher. The function does return a value, but the compiler cannot tell that in the absence of a `return` statement. You can use [#pragma warning](../../preprocessor/warning.md) to disable the generation of this warning.
+Because the inline version of `power2` doesn't execute a C **`return`** statement, it causes a harmless warning if you compile at warning level 2 or higher. The function does return a value, but the compiler cannot tell that in the absence of a **`return`** statement. You can use [#pragma warning](../../preprocessor/warning.md) to disable the generation of this warning.
 
 **END Microsoft Specific**
 

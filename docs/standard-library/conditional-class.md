@@ -32,7 +32,7 @@ The type result when B is false.
 
 ## Remarks
 
-The template member typedef `conditional<B, T1, T2>::type` evaluates to *T1* when *B* evaluates to **true**, and evaluates to *T2* when *B* evaluates to **false**.
+The template member typedef `conditional<B, T1, T2>::type` evaluates to *T1* when *B* evaluates to **`true`**, and evaluates to *T2* when *B* evaluates to **`false`**.
 
 ## Requirements
 

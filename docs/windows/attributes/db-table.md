@@ -60,7 +60,7 @@ For an example of this attribute used in an application, see [MultiRead](https:/
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

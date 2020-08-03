@@ -31,12 +31,12 @@ The **localeconv** function gets detailed information about numeric formatting f
 |-|-|
 decimal_point,<br/>_W_decimal_point|Pointer to decimal-point character for nonmonetary quantities.
 thousands_sep,<br/>_W_thousands_sep|Pointer to character that separates groups of digits to left of decimal point for nonmonetary quantities.
-grouping|Pointer to a **char**-sized integer that contains the size of each group of digits in nonmonetary quantities.
+grouping|Pointer to a **`char`**-sized integer that contains the size of each group of digits in nonmonetary quantities.
 int_curr_symbol,<br/>_W_int_curr_symbol|Pointer to international currency symbol for current locale. First three characters specify alphabetic international currency symbol as defined in the *ISO 4217 Codes for the Representation of Currency and Funds* standard. Fourth character (immediately preceding null character) separates international currency symbol from monetary quantity.
 currency_symbol,<br/>_W_currency_symbol|Pointer to local currency symbol for current locale.
 mon_decimal_point,<br/>_W_mon_decimal_point|Pointer to decimal-point character for monetary quantities.
 mon_thousands_sep,<br/>_W_mon_thousands_sep|Pointer to separator for groups of digits to left of decimal place in monetary quantities.
-mon_grouping|Pointer to a **char**-sized integer that contains the size of each group of digits in monetary quantities.
+mon_grouping|Pointer to a **`char`**-sized integer that contains the size of each group of digits in monetary quantities.
 positive_sign,<br/>_W_positive_sign|String denoting sign for nonnegative monetary quantities.
 negative_sign,<br/>_W_negative_sign|String denoting sign for negative monetary quantities.
 int_frac_digits|Number of digits to right of decimal point in internationally formatted monetary quantities.
@@ -48,9 +48,9 @@ n_sep_by_space|Set to 1 if currency symbol is separated by space from value for 
 p_sign_posn|Position of positive sign in nonnegative formatted monetary quantities.
 n_sign_posn|Position of positive sign in negative formatted monetary quantities.
 
-Except as specified, members of the **lconv** structure that have `char *` and `wchar_t *` versions are pointers to strings. Any of these that equals **""** (or **L""** for **wchar_t** <strong>\*</strong>) is either of zero length or not supported in the current locale. Note that **decimal_point** and **_W_decimal_point** are always supported and of nonzero length.
+Except as specified, members of the **lconv** structure that have `char *` and `wchar_t *` versions are pointers to strings. Any of these that equals **""** (or **L""** for **`wchar_t`** <strong>\*</strong>) is either of zero length or not supported in the current locale. Note that **decimal_point** and **_W_decimal_point** are always supported and of nonzero length.
 
-The **char** members of the structure are small nonnegative numbers, not characters. Any of these that equals **CHAR_MAX** is not supported in the current locale.
+The **`char`** members of the structure are small nonnegative numbers, not characters. Any of these that equals **CHAR_MAX** is not supported in the current locale.
 
 The values of **grouping** and **mon_grouping** are interpreted according to the following rules:
 

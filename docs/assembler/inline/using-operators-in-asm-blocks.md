@@ -8,7 +8,7 @@ ms.assetid: a26ccfd4-40ae-4a61-952f-c417982aa8dd
 
 **Microsoft Specific**
 
-An `__asm` block cannot use C or C++ specific operators, such as the **<<** operator. However, operators shared by C and MASM, such as the \* operator, are interpreted as assembly-language operators. For instance, outside an `__asm` block, square brackets (**[ ]**) are interpreted as enclosing array subscripts, which C automatically scales to the size of an element in the array. Inside an `__asm` block, they are seen as the MASM index operator, which yields an unscaled byte offset from any data object or label (not just an array). The following code illustrates the difference:
+An **`__asm`** block cannot use C or C++ specific operators, such as the **<<** operator. However, operators shared by C and MASM, such as the \* operator, are interpreted as assembly-language operators. For instance, outside an **`__asm`** block, square brackets (**[ ]**) are interpreted as enclosing array subscripts, which C automatically scales to the size of an element in the array. Inside an **`__asm`** block, they are seen as the MASM index operator, which yields an unscaled byte offset from any data object or label (not just an array). The following code illustrates the difference:
 
 ```cpp
 int array[10];

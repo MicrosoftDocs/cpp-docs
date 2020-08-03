@@ -340,7 +340,7 @@ An lvalue reference to the `basic_streambuf` object that is used to assign value
 
 ### Remarks
 
-The protected member operator copies from *right* the pointers that control the input buffer and the output buffer. It also stores `right.`[getloc()](#getloc) in the `locale object`. It returns `*this`.
+The protected member operator copies from *right* the pointers that control the input buffer and the output buffer. It also stores `right.`[getloc()](#getloc) in the `locale object`. It returns **`*this`**.
 
 ## <a name="overflow"></a> basic_streambuf::overflow
 
@@ -690,7 +690,7 @@ Size of the buffer.
 
 ### Return Value
 
-The default behavior is to return **this**.
+The default behavior is to return **`this`**.
 
 ### Remarks
 

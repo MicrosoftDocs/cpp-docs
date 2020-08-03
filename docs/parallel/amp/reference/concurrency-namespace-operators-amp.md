@@ -38,7 +38,7 @@ One of the tuples to compare.
 
 ### Return Value
 
-**true** if the tuples are equal; otherwise, **false**.
+**`true`** if the tuples are equal; otherwise, **`false`**.
 
 ## <a name="operator_neq"></a> operator!=
 
@@ -67,7 +67,7 @@ One of the tuples to compare.
 
 ### Return Value
 
-**true** if the tuples are not equal; otherwise, **false**.
+**`true`** if the tuples are not equal; otherwise, **`false`**.
 
 ## <a name="operator_add"></a> operator+
 

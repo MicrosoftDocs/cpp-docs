@@ -29,7 +29,7 @@ int _pipe(
 ### Parameters
 
 *pfds*<br/>
-Pointer to an array of two **int** to hold read and write file descriptors.
+Pointer to an array of two **`int`** to hold read and write file descriptors.
 
 *psize*<br/>
 Amount of memory to reserve.

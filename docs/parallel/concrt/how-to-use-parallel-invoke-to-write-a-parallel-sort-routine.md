@@ -39,7 +39,7 @@ This section describes how to use the `parallel_invoke` algorithm to perform the
 
 [!code-cpp[concrt-parallel-bitonic-sort#10](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_2.cpp)]
 
-1. Add a `using` directive for the `concurrency` namespace.
+1. Add a **`using`** directive for the `concurrency` namespace.
 
 [!code-cpp[concrt-parallel-bitonic-sort#11](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_3.cpp)]
 

@@ -65,7 +65,7 @@ Returns a pointer to the altered string.
 
 ## Remarks
 
-The **_strset** function sets all characters (except the terminating null character) of *str* to *c*, converted to **char**. **_wcsset** and **_mbsset_l** are wide-character and multibyte-character versions of **_strset**, and the data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
+The **_strset** function sets all characters (except the terminating null character) of *str* to *c*, converted to **`char`**. **_wcsset** and **_mbsset_l** are wide-character and multibyte-character versions of **_strset**, and the data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
 
 **_mbsset** validates its parameters. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbsset** returns **NULL** and sets **errno** to **EINVAL**. **_strset** and **_wcsset** do not validate their parameters.
 

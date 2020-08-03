@@ -62,7 +62,7 @@ The arguments that get perfect-forwarded to *memberFunc* along with the event ty
 
 ### Return Value
 
-A **bool** value that is **true** if matching was successful, or **false** otherwise.
+A **`bool`** value that is **`true`** if matching was successful, or **`false`** otherwise.
 
 ## Remarks
 

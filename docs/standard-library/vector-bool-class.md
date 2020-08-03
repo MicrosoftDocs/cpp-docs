@@ -7,7 +7,7 @@ ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
 ---
 # vector&lt;bool&gt; Class
 
-The `vector<bool>` class is a partial specialization of [vector](../standard-library/vector-class.md) for elements of type **bool**. It has an allocator for the underlying type that's used by the specialization, which provides space optimization by storing one **bool** value per bit.
+The `vector<bool>` class is a partial specialization of [vector](../standard-library/vector-class.md) for elements of type **`bool`**. It has an allocator for the underlying type that's used by the specialization, which provides space optimization by storing one **`bool`** value per bit.
 
 ## Syntax
 
@@ -20,14 +20,14 @@ class vector<bool, Allocator>
 
 This class template specialization behaves like vector, except for the differences explained in this article.
 
-Operations that deal with the **bool** type correspond to values in the container storage. `allocator_traits::construct` is not used to construct these values.
+Operations that deal with the **`bool`** type correspond to values in the container storage. `allocator_traits::construct` is not used to construct these values.
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
 |[const_pointer](#const_pointer)|A typedef to a `const_iterator` that can serve as a constant pointer to a Boolean element of the `vector<bool>`.|
-|[const_reference](#const_reference)|A typedef for **bool**. After initialization, it does not observe updates to the original value.|
+|[const_reference](#const_reference)|A typedef for **`bool`**. After initialization, it does not observe updates to the original value.|
 |[pointer](#pointer)|A typedef to an `iterator` that can serve as a pointer to a Boolean element of the `vector<bool>`.|
 
 ### Member functions
@@ -240,7 +240,7 @@ The vector with first element flipped is:
 
 ### <a name="reference_operator_bool"></a> vector\<bool>::reference::operator bool
 
-Provides an implicit conversion from `vector<bool>::reference` to **bool**.
+Provides an implicit conversion from `vector<bool>::reference` to **`bool`**.
 
 ```cpp
 operator bool() const;

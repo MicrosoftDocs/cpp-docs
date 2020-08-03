@@ -28,7 +28,7 @@ The **`/permissive-`** option sets the [**`/Zc:referenceBinding`**](zc-reference
 
 In versions of the compiler beginning in Visual Studio 2017 version 15.3, the **`/permissive-`** option sets the [**`/Zc:ternary`**](zc-ternary.md) option. The compiler also implements more of the requirements for two-phase name look-up. When the **`/permissive-`** option is set, the compiler parses function and class template definitions, and identifies dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.
 
-Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **`/permissive-`**. For example, the Microsoft-specific `__declspec`, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **`/permissive-`** mode.
+Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **`/permissive-`**. For example, the Microsoft-specific **`__declspec`**, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **`/permissive-`** mode.
 
 The **`/permissive-`** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option doesn't determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [**`/std:c++latest`**](std-specify-language-standard-version.md) option. To restrict the compiler support to the currently implemented C++17 standard, use the [**`/std:c++17`**](std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [**`/std:c++14`**](std-specify-language-standard-version.md) option, which is the default.
 
@@ -228,13 +228,13 @@ In versions of the compiler before Visual Studio 2017 version 15.3, the compiler
 
 Common errors that may result from this change include:
 
-- **`error C2593`**`: 'operator ?' is ambiguous`
+- `error C2593: 'operator ?' is ambiguous`
 
-- **`error C2679`**`: binary '?': no operator found which takes a right-hand operand of type 'B' (or there is no acceptable conversion)`
+- `error C2679: binary '?': no operator found which takes a right-hand operand of type 'B' (or there is no acceptable conversion)`
 
-- **`error C2678`**`: binary '?': no operator found which takes a left-hand operand of type 'A' (or there is no acceptable conversion)`
+- `error C2678: binary '?': no operator found which takes a left-hand operand of type 'A' (or there is no acceptable conversion)`
 
-- **`error C2446`**`: ':': no conversion from 'B' to 'A'`
+- `error C2446: ':': no conversion from 'B' to 'A'`
 
 A typical code pattern that can cause this issue is when some class C provides both a non-explicit constructor from another type T and a non-explicit conversion operator to type T. In this case, both the conversion of the second argument to the type of the third argument, and the conversion of the third argument to the type of the second argument, are valid conversions. Since both are valid, it's ambiguous according to the standard.
 

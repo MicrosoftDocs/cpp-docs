@@ -9,7 +9,7 @@ ms.assetid: 08cbf734-75b3-49f2-9026-9b319947612d
 
 'function' : alloc_text/same_seg applicable only to functions with C linkage
 
-`pragma` `alloc_text` can only be used with functions declared to have C linkage.
+`#pragma alloc_text` can only be used with functions declared to have C linkage.
 
 The following sample generates C2128:
 

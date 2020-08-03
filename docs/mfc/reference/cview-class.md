@@ -741,7 +741,7 @@ A scroll-bar code that indicates the user's scrolling request. This parameter is
 - SB_TOP Scrolls to top.
 
 *nPos*<br/>
-Contains the current scroll-box position if the scroll-bar code is SB_THUMBTRACK; otherwise it is not used. Depending on the initial scroll range, *nPos* may be negative and should be cast to an **int** if necessary.
+Contains the current scroll-box position if the scroll-bar code is SB_THUMBTRACK; otherwise it is not used. Depending on the initial scroll range, *nPos* may be negative and should be cast to an **`int`** if necessary.
 
 *bDoScroll*<br/>
 Determines whether you should actually do the specified scrolling action. If TRUE, then scrolling should take place; if FALSE, then scrolling should not occur.

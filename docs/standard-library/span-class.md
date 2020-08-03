@@ -33,8 +33,8 @@ class span;
 
 | **Type Definitions** | **Description** |
 |-|-|
-| [const_pointer](#pointer) | The type of a pointer to a `const` element. |
-| [const_reference](#reference) | The type of a reference to a `const` element. |
+| [const_pointer](#pointer) | The type of a pointer to a **`const`** element. |
+| [const_reference](#reference) | The type of a reference to a **`const`** element. |
 | [difference_type](#difference_type) | The type of a signed distance between two elements. |
 | [element_type](#element_type) | The type of a span element. |
 | [iterator](#iterator) | The type of an iterator for a span. |
@@ -42,7 +42,7 @@ class span;
 | [reference](#reference) | The type of a reference to an element. |
 | [reverse_iterator](#reverse_iterator) | The type of a reverse iterator for a span. |
 | [size_type](#size_type) | The type for the result of the unsigned distance between two elements in the span. |
-| [value_type](#value_type) | The type of an element, without `const` or `volatile` qualifications. |
+| [value_type](#value_type) | The type of an element, without **`const`** or **`volatile`** qualifications. |
 | **Constructors** | **Description** |
 |[span](#span)| Construct a `span`.|
 | **Iterator support** | **Description** |
@@ -253,7 +253,7 @@ constexpr bool empty() const noexcept;
 
 ### Return value
 
-Returns `true` if `this->size() == 0`. Otherwise `false`.
+Returns **`true`** if `this->size() == 0`. Otherwise **`false`**.
 
 ### Example
 
@@ -566,7 +566,7 @@ int main()
 
 ## <a name="pointer"></a> `span::pointer`
 
-The types for a pointer, and `const` pointer, to a span element.
+The types for a pointer, and **`const`** pointer, to a span element.
 
 ```cpp
 using pointer = T*;
@@ -640,7 +640,7 @@ int main()
 
 ## <a name="reference"></a> `span::reference`
 
-The types for a reference, and a `const` reference, to a span element.
+The types for a reference, and a **`const`** reference, to a span element.
 
 ```cpp
 using reference = T&;
@@ -1005,7 +1005,7 @@ mySpan.subspan<1>: 12
 
 ## <a name="value_type"></a> `span::value_type`
 
-The type of the element in the span, without `const` or `volatile` qualifications.
+The type of the element in the span, without **`const`** or **`volatile`** qualifications.
 
 ```cpp
 using value_type = std::remove_cv_t<T>;

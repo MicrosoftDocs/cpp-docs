@@ -69,7 +69,7 @@ Contains one or more of the following flags:
    You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/win32/com/inprocserver32) in the Windows SDK for more information on threading model registration.
 
 > [!NOTE]
-> In MFC versions before MFC 4.2, the **int** *nRegFlags* parameter was a BOOL parameter, *bInsertable*, that allowed or disallowed the control to be inserted from the Insert Object dialog box.
+> In MFC versions before MFC 4.2, the **`int`** *nRegFlags* parameter was a BOOL parameter, *bInsertable*, that allowed or disallowed the control to be inserted from the Insert Object dialog box.
 
 *dwMiscStatus*<br/>
 Contains one or more of the following status flags (for a description of the flags, see OLEMISC enumeration in the Windows SDK):
@@ -172,7 +172,7 @@ May contain the flag:
 - `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel = Apartment.
 
 > [!NOTE]
-> In MFC versions prior to MFC 4.2, the **int** *nRegFlags* parameter was not available. Note also that the `afxRegInsertable` flag is not a valid option for property pages and will cause an ASSERT in MFC if it is set
+> In MFC versions prior to MFC 4.2, the **`int`** *nRegFlags* parameter was not available. Note also that the `afxRegInsertable` flag is not a valid option for property pages and will cause an ASSERT in MFC if it is set
 
 ### Return Value
 

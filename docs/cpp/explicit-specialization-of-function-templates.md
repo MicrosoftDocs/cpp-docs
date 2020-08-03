@@ -12,7 +12,7 @@ With a function template, you can define special behavior for a specific type by
 template<> void MySwap(double a, double b);
 ```
 
-This declaration enables you to define a different function for **double** variables. Like non-template functions, standard type conversions (such as promoting a variable of type **float** to **double**) are applied.
+This declaration enables you to define a different function for **`double`** variables. Like non-template functions, standard type conversions (such as promoting a variable of type **`float`** to **`double`**) are applied.
 
 ## Example
 

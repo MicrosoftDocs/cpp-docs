@@ -15,11 +15,11 @@ C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/
 
 ## The norm and unorm Types
 
-The `norm` and `unorm` types are scalar types that limit the range of **float** values; this is known as *clamping*. These types can be explicitly constructed from other scalar types. In casting, the value is first cast to **float** and then clamped to the respective region that's allowed by norm [-1.0, 1.0] or unorm [0.0, 1.0]. Casting from +/- infinity returns +/-1. Casting from NaN is undefined. A norm can be implicitly constructed from a unorm and there is no loss of data. The implicit conversion operator to float is defined on these types. Binary operators are defined between these types and other built-in scalar types such as **float** and **int**: +, -, \*, /, ==, !=, >, \<, >=, <=. The compound assignment operators are also supported: +=, -=, \*=, /=. The unary negation operator (-) is defined for norm types.
+The `norm` and `unorm` types are scalar types that limit the range of **`float`** values; this is known as *clamping*. These types can be explicitly constructed from other scalar types. In casting, the value is first cast to **`float`** and then clamped to the respective region that's allowed by norm [-1.0, 1.0] or unorm [0.0, 1.0]. Casting from +/- infinity returns +/-1. Casting from NaN is undefined. A norm can be implicitly constructed from a unorm and there is no loss of data. The implicit conversion operator to float is defined on these types. Binary operators are defined between these types and other built-in scalar types such as **`float`** and **`int`**: +, -, \*, /, ==, !=, >, \<, >=, <=. The compound assignment operators are also supported: +=, -=, \*=, /=. The unary negation operator (-) is defined for norm types.
 
 ## Short Vector Library
 
-The Short Vector Library provides some of the functionality of the [Vector Type](https://go.microsoft.com/fwlink/p/?linkid=248500) that's defined in HLSL and is typically used to define texels. A short vector is a data structure that holds one to four values of the same type. The supported types are **double**, **float**, **int**, `norm`, `uint`, and `unorm`. The type names are shown in the following table. For each type, there is also a corresponding **typedef** that doesn't have an underscore in the name. The types that have the underscores are in the [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). The types that don't have the underscores are in the [Concurrency::graphics::direct3d Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) so that they are clearly separated from the similarly-named fundamental types such as **__int8** and **__int16**.
+The Short Vector Library provides some of the functionality of the [Vector Type](https://go.microsoft.com/fwlink/p/?linkid=248500) that's defined in HLSL and is typically used to define texels. A short vector is a data structure that holds one to four values of the same type. The supported types are **`double`**, **`float`**, **`int`**, `norm`, `uint`, and `unorm`. The type names are shown in the following table. For each type, there is also a corresponding **`typedef`** that doesn't have an underscore in the name. The types that have the underscores are in the [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). The types that don't have the underscores are in the [Concurrency::graphics::direct3d Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) so that they are clearly separated from the similarly-named fundamental types such as **`__int8`** and **`__int16`**.
 
 ||Length 2|Length 3|Length 4|
 |-|--------------|--------------|--------------|
@@ -57,7 +57,7 @@ The Short Vector Library supports the `vector_type.identifier` accessor construc
 
 Many GPUs have hardware and caches that are optimized to fetch pixels and texels and to render images and textures. The [texture\<T,N>](../../parallel/amp/reference/texture-class.md) class, which is a container class for texel objects, exposes the texture functionality of these GPUs. A texel can be:
 
-- An **int**, `uint`, **float**, **double**, `norm`, or `unorm` scalar.
+- An **`int`**, `uint`, **`float`**, **`double`**, `norm`, or `unorm` scalar.
 
 - A short vector that has two or four components. The only exception is `double_4`, which is not allowed.
 
@@ -208,7 +208,7 @@ Use the [texture::set](reference/texture-class.md#set) method to write to `textu
 
 - T has only one scalar component. (Short vectors are not allowed.)
 
-- T is not **double**, `norm`, or `unorm`.
+- T is not **`double`**, `norm`, or `unorm`.
 
 - The `texture::bits_per_scalar_element` property is 32.
 

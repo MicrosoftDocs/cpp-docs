@@ -32,7 +32,7 @@ An object of type `hash_set`.
 
 ### Return Value
 
-**true** if the hash_sets are not equal; **false** if hash_sets are equal.
+**`true`** if the hash_sets are not equal; **`false`** if hash_sets are equal.
 
 ### Remarks
 
@@ -100,7 +100,7 @@ An object of type `hash_set`.
 
 ### Return Value
 
-**true** if the hash_set on the left side of the operator is equal to the hash_set on the right side of the operator; otherwise **false**.
+**`true`** if the hash_set on the left side of the operator is equal to the hash_set on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -166,7 +166,7 @@ An object of type `hash_multiset`.
 
 ### Return Value
 
-**true** if the hash_multisets are not equal; **false** if hash_multisets are equal.
+**`true`** if the hash_multisets are not equal; **`false`** if hash_multisets are equal.
 
 ### Remarks
 
@@ -232,7 +232,7 @@ An object of type `hash_multiset`.
 
 ### Return Value
 
-**true** if the hash_multiset on the left side of the operator is equal to the hash_multiset on the right side of the operator; otherwise **false**.
+**`true`** if the hash_multiset on the left side of the operator is equal to the hash_multiset on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

@@ -102,7 +102,7 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 [in] A [CComBSTR](../../atl/reference/ccombstr-class.md) reference to place a copy of the `DBID` string.
 
 *bIndex*<br/>
-[in] **true** if an index `DBID`; **false** if a table `DBID`.
+[in] **`true`** if an index `DBID`; **`false`** if a table `DBID`.
 
 ### Return Value
 

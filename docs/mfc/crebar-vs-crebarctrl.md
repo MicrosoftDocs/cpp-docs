@@ -15,7 +15,7 @@ Visual C++ provides two ways to take advantage of the rebar common control.
 - Create the rebar using `CReBar`, and then call [CReBar::GetReBarCtrl](reference/crebar-class.md#getrebarctrl) to get access to the `CReBarCtrl` member functions.
 
     > [!NOTE]
-    >  `CReBar::GetReBarCtrl` is an inline member function that casts the **this** pointer of the rebar object. This means that, at run time, the function call has no overhead.
+    >  `CReBar::GetReBarCtrl` is an inline member function that casts the **`this`** pointer of the rebar object. This means that, at run time, the function call has no overhead.
 
 - Create the rebar using [CReBarCtrl](reference/crebarctrl-class.md)'s constructor.
 

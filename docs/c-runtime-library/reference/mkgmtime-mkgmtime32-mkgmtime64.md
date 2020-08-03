@@ -12,7 +12,7 @@ ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
 ---
 # _mkgmtime, _mkgmtime32, _mkgmtime64
 
-Converts a UTC time represented by a **struct** **tm** to a UTC time represented by a **time_t** type.
+Converts a UTC time represented by a **`struct`** **tm** to a UTC time represented by a **time_t** type.
 
 ## Syntax
 
@@ -31,7 +31,7 @@ __time64_t _mkgmtime64(
 ### Parameters
 
 *timeptr*\
-A pointer to the UTC time as a **struct** **tm** to convert.
+A pointer to the UTC time as a **`struct`** **tm** to convert.
 
 ## Return Value
 

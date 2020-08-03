@@ -23,13 +23,13 @@ name :  inherit_accessbase_interface{};interface_accessinterface structname :  i
 ### Parameters
 
 *interface_access*<br/>
-The accessibility of an interface outside the assembly.  Possible values are **public** and **private**.  **private** is the default. Nested interfaces cannot have an *interface_access* specifier.
+The accessibility of an interface outside the assembly.  Possible values are **`public`** and **`private`**.  **`private`** is the default. Nested interfaces cannot have an *interface_access* specifier.
 
 *name*<br/>
 The name of the interface.
 
 *inherit_access*<br/>
-The accessibility of *base_interface*.  The only permitted accessibility for a base interface is **public** (the default).
+The accessibility of *base_interface*.  The only permitted accessibility for a base interface is **`public`** (the default).
 
 *base_interface*<br/>
 (Optional) A base interface for interface *name*.
@@ -54,7 +54,7 @@ For information on other CLR types, see [Classes and Structs](classes-and-struct
 
 You can detect at compile time if a type is an interface with `__is_interface_class(type)`. For more information, see [Compiler Support for Type Traits](compiler-support-for-type-traits-cpp-component-extensions.md).
 
-In the development environment, you can get F1 help on these keywords by highlighting the keyword, (`interface class`, for example) and pressing F1.
+In the development environment, you can get F1 help on these keywords by highlighting the keyword, (**`interface class`**, for example) and pressing F1.
 
 ## Windows Runtime
 

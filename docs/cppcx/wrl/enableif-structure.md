@@ -30,7 +30,7 @@ A Boolean expression.
 
 ## Remarks
 
-Defines a data member of the type specified by the second template parameter if the first template parameter evaluates to **true**.
+Defines a data member of the type specified by the second template parameter if the first template parameter evaluates to **`true`**.
 
 ## Members
 
@@ -38,7 +38,7 @@ Defines a data member of the type specified by the second template parameter if 
 
 |Name|Description|
 |----------|-----------------|
-|`type`|If template parameter *b* evaluates to **true**, the partial specialization defines data member `type` to be of type `T`.|
+|`type`|If template parameter *b* evaluates to **`true`**, the partial specialization defines data member `type` to be of type `T`.|
 
 ## Inheritance Hierarchy
 

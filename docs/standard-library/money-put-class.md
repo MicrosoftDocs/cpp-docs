@@ -94,7 +94,7 @@ virtual iter_type do_put(
 An iterator addressing the first element of the inserted string.
 
 *_Intl*\
-A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+A Boolean value indicating the type of currency symbol expected in the sequence: **`true`** if international, **`false`** if domestic.
 
 *_Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
@@ -216,7 +216,7 @@ iter_type put(
 An iterator addressing the first element of the inserted string.
 
 *_Intl*\
-A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+A Boolean value indicating the type of currency symbol expected in the sequence: **`true`** if international, **`false`** if domestic.
 
 *_Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required

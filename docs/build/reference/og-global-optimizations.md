@@ -34,7 +34,7 @@ The following optimizations are available under **`/Og`**:
 
 - Automatic register allocation
 
-   This optimization allows the compiler to store frequently used variables and subexpressions in registers; the `register` keyword is ignored.
+   This optimization allows the compiler to store frequently used variables and subexpressions in registers; the **`register`** keyword is ignored.
 
 - Loop optimization
 

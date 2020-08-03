@@ -39,7 +39,7 @@ Use these routines to allocate, free, and reallocate memory.
 |[_query_new_mode](../c-runtime-library/reference/query-new-mode.md)|Return integer indicating new handler mode set by **_set_new_mode** for **malloc**|
 |[realloc](../c-runtime-library/reference/realloc.md)|Reallocate block to new size|
 |[_realloc_dbg](../c-runtime-library/reference/realloc-dbg.md)|Debug version of **realloc**; only available in the debug versions of the run-time libraries|
-|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|Enable error-handling mechanism when **new** operator fails (to allocate memory) and enable compilation of C++ Standard Libraries|
+|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|Enable error-handling mechanism when **`new`** operator fails (to allocate memory) and enable compilation of C++ Standard Libraries|
 |[_set_new_mode](../c-runtime-library/reference/set-new-mode.md)|Set new handler mode for **malloc**|
 
 ## See also

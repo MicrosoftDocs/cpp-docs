@@ -742,7 +742,7 @@ Specifies the default value to return if the framework cannot find the entry.
 
 The integer value of the string that follows the specified entry if the function is successful. The return value is the value of the *nDefault* parameter if the function does not find the entry. The return value is 0 if the value that corresponds to the specified entry is not an integer.
 
-This member function supports hexadecimal notation for the value in the .INI file. When you retrieve a signed integer, you should cast the value into an **int**.
+This member function supports hexadecimal notation for the value in the .INI file. When you retrieve a signed integer, you should cast the value into an **`int`**.
 
 ### Remarks
 
@@ -1200,7 +1200,7 @@ int m_nCmdShow;
 
 ### Remarks
 
-You should pass `m_nCmdShow` as an argument when you call [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) for your application's main window. `m_nCmdShow` is a public variable of type **int**.
+You should pass `m_nCmdShow` as an argument when you call [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) for your application's main window. `m_nCmdShow` is a public variable of type **`int`**.
 
 ### Example
 
@@ -1854,7 +1854,7 @@ virtual int Run();
 
 ### Return Value
 
-An **int** value that is returned by `WinMain`.
+An **`int`** value that is returned by `WinMain`.
 
 ### Remarks
 

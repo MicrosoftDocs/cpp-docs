@@ -54,7 +54,7 @@ The arguments that get perfect-forwarded to *callable* along with the matched ev
 
 ### Return Value
 
-A **bool** value that is **true** if matching was successful, or **false** otherwise.
+A **`bool`** value that is **`true`** if matching was successful, or **`false`** otherwise.
 
 ## Remarks
 

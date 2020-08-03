@@ -69,10 +69,10 @@ The iterator provided by the hash_multiset class is a bidirectional iterator, bu
 |Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `hash_multiset` object.|
-|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **const** element in the `hash_multiset`.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a `hash_multiset`.|
-|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a `hash_multiset` for reading and performing **const** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **const** element in the `hash_multiset`.|
+|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **`const`** element in the `hash_multiset`.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **`const`** element in a `hash_multiset`.|
+|[const_reference](#const_reference)|A type that provides a reference to a **`const`** element stored in a `hash_multiset` for reading and performing **`const`** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **`const`** element in the `hash_multiset`.|
 |[difference_type](#difference_type)|A signed integer type that provides the difference between two iterators that address elements within the same `hash_multiset`.|
 |[iterator](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a `hash_multiset`.|
 |[key_compare](#key_compare)|A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the `hash_multiset`.|
@@ -346,7 +346,7 @@ The size of the hash_multiset after clearing is 0.
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
 
-A type that provides a bidirectional iterator that can read a **const** element in the hash_multiset.
+A type that provides a bidirectional iterator that can read a **`const`** element in the hash_multiset.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_iterator const_iterator;
@@ -365,7 +365,7 @@ See example for [begin](#begin) for an example using `const_iterator`.
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
 
-A type that provides a pointer to a **const** element in a hash_multiset.
+A type that provides a pointer to a **`const`** element in a hash_multiset.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_pointer const_pointer;
@@ -375,14 +375,14 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
 
 A type `const_pointer` cannot be used to modify the value of an element.
 
-In most cases, a [const_iterator](#const_iterator) should be used to access the elements in a **const** hash_multiset object.
+In most cases, a [const_iterator](#const_iterator) should be used to access the elements in a **`const`** hash_multiset object.
 
 ## <a name="const_reference"></a> hash_multiset::const_reference
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
 
-A type that provides a reference to a **const** element stored in a hash_multiset for reading and performing **const** operations.
+A type that provides a reference to a **`const`** element stored in a hash_multiset for reading and performing **`const`** operations.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
@@ -429,7 +429,7 @@ The first element in the hash_multiset is 10.
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
 
-A type that provides a bidirectional iterator that can read any **const** element in the hash_multiset.
+A type that provides a bidirectional iterator that can read any **`const`** element in the hash_multiset.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse_iterator const_reverse_iterator;
@@ -810,7 +810,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the hash_multiset is empty; **false** if the hash_multiset is nonempty.
+**`true`** if the hash_multiset is empty; **`false`** if the hash_multiset is nonempty.
 
 ### Remarks
 
@@ -1350,7 +1350,7 @@ All constructors initialize their hash_multisets.
 
 All constructors store a function object of type `Traits` that is used to establish an order among the keys of the `hash_multiset` and that can later be returned by calling [hash_multiset::key_comp](#key_comp). For more information on `Traits` see the [hash_multiset Class](../standard-library/hash-multiset-class.md) topic.
 
-The first three constructors specify an empty initial `hash_multiset`, the second specifying the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (*Al*) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
+The first three constructors specify an empty initial `hash_multiset`, the second specifying the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (*Al*) to be used. The keyword **`explicit`** suppresses certain kinds of automatic type conversion.
 
 The fourth constructor moves the `hash_multiset` `Right`.
 
@@ -1471,7 +1471,7 @@ The stored object defines a member function:
 
 `bool operator<(const Key& _xVal, const Key& _yVal);`
 
-which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
+which returns **`true`** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
 Note that both [key_compare](#key_compare) and [value_compare](#value_compare) are synonyms for the template parameter *Traits*. Both types are provided for the hash_multiset and hash_multiset classes, where they are identical, for compatibility with the hash_map and hash_multimap classes, where they are distinct.
 
@@ -2230,7 +2230,7 @@ The stored object defines a member function:
 
 **bool operator**( **constKey&**`_xVal`, **const Key&** *_yVal*);
 
-which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
+which returns **`true`** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
 Note that both [key_compare](#key_compare) and [value_compare](#value_compare) are synonyms for the template parameter *Traits*. Both types are provided for the hash_multiset and hash_multiset classes, where they are identical, for compatibility with the hash_map and hash_multimap classes, where they are distinct.
 

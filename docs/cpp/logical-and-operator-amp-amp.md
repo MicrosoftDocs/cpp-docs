@@ -1,39 +1,38 @@
 ---
 title: "Logical AND Operator: &amp;&amp;"
-ms.date: "11/04/2016"
-f1_keywords: ["&&"]
+description: "The C++ standard language logical AND operator syntax and use."
+ms.date: 07/23/2020
+f1_keywords: ["&&", "and_cpp"]
 helpviewer_keywords: ["logical AND operator", "AND operator", "&& operator"]
 ms.assetid: 50cfa664-a8c4-4b31-9bab-2f80d7cd2d1f
 ---
-# Logical AND Operator: &amp;&amp;
+# Logical AND operator: &amp;&amp;
 
 ## Syntax
 
-```
-expression && expression
-```
+> *expression* **`&&`** *expression*
 
 ## Remarks
 
-The logical AND operator (**&&**) returns the boolean value TRUE if both operands are TRUE and returns FALSE otherwise. The operands are implicitly converted to type **bool** prior to evaluation, and the result is of type **bool**. Logical AND has left-to-right associativity.
+The logical AND operator (**&&**) returns **`true`** if both operands are **`true`** and returns **`false`** otherwise. The operands are implicitly converted to type **`bool`** before evaluation, and the result is of type **`bool`**. Logical AND has left-to-right associativity.
 
-The operands to the logical AND operator need not be of the same type, but they must be of integral or pointer type. The operands are commonly relational or equality expressions.
+The operands to the logical AND operator don't need to have the same type, but they must have boolean, integral, or pointer type. The operands are commonly relational or equality expressions.
 
-The first operand is completely evaluated and all side effects are completed before continuing evaluation of the logical AND expression.
+The first operand is completely evaluated and all side effects are completed before evaluation of the logical AND expression continues.
 
-The second operand is evaluated only if the first operand evaluates to true (nonzero). This evaluation eliminates needless evaluation of the second operand when the logical AND expression is false. You can use this short-circuit evaluation to prevent null-pointer dereferencing, as shown in the following example:
+The second operand is evaluated only if the first operand evaluates to **`true`** (nonzero). This evaluation eliminates needless evaluation of the second operand when the logical AND expression is **`false`**. You can use this short-circuit evaluation to prevent null-pointer dereferencing, as shown in the following example:
 
 ```cpp
 char *pch = 0;
-...
+// ...
 (pch) && (*pch = 'a');
 ```
 
-If `pch` is null (0), the right side of the expression is never evaluated. Therefore, the assignment through a null pointer is impossible.
+If `pch` is null (0), the right side of the expression is never evaluated. This short-circuit evaluation makes the assignment through a null pointer impossible.
 
-## Operator Keyword for &&
+## Operator keyword for &&
 
-The **and** operator is the text equivalent of **&&**. There are two ways to access the **and** operator in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.
+C++ specifies **`and`** as an alternative spelling for **`&&`**. In C, the alternative spelling is provided as a macro in the \<iso646.h> header. In C++, the alternative spelling is a keyword; use of \<iso646.h> or the C++ equivalent \<ciso646> is deprecated. In Microsoft C++, the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to enable the alternative spelling.
 
 ## Example
 
@@ -59,6 +58,5 @@ int main() {
 
 ## See also
 
-[C++ Built-in Operators Precedence and Associativity](cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Logical Operators](../c-language/c-logical-operators.md)
+[C++ built-in operators, precedence, and associativity](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C logical operators](../c-language/c-logical-operators.md)

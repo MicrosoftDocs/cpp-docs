@@ -14,7 +14,7 @@ For information on calling conventions for x64 processors, see [Calling Conventi
 
 ## Topics in this section
 
-- [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md) (`__cdecl`, `__stdcall`, `__fastcall`, and others)
+- [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md) (**`__cdecl`**, **`__stdcall`**, **`__fastcall`**, and others)
 
 - [Calling Example: Function Prototype and Call](../cpp/calling-example-function-prototype-and-call.md)
 

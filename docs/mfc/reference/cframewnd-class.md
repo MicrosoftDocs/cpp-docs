@@ -99,7 +99,7 @@ There are three ways to construct a frame window:
 
 - Indirectly construct it using a document template.
 
-Before you call either `Create` or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling `Create`, you can also register a window class with the [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.
+Before you call either `Create` or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **`new`** operator. Before calling `Create`, you can also register a window class with the [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.
 
 Use the `Create` member function to pass the frame's creation parameters as immediate arguments.
 
@@ -131,7 +131,7 @@ A `CFrameWnd` contains default implementations to perform the following function
 
 - If the frame window is the main application window, the frame window is the context for running WinHelp. Closing the frame window will shut down WINHELP.EXE if it was launched for help for this application.
 
-Do not use the C++ **delete** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.
+Do not use the C++ **`delete`** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.
 
 For more information on `CFrameWnd`, see [Frame Windows](../../mfc/frame-windows.md).
 
@@ -411,11 +411,11 @@ virtual CFrameWnd* GetActiveFrame();
 
 ### Return Value
 
-A pointer to the active MDI child window. If the application is an SDI application, or the MDI frame window has no active document, the implicit **this** pointer will be returned.
+A pointer to the active MDI child window. If the application is an SDI application, or the MDI frame window has no active document, the implicit **`this`** pointer will be returned.
 
 ### Remarks
 
-If there is no active MDI child or the application is a single document interface (SDI), the implicit **this** pointer is returned.
+If there is no active MDI child or the application is a single document interface (SDI), the implicit **`this`** pointer is returned.
 
 ## <a name="getactiveview"></a> CFrameWnd::GetActiveView
 

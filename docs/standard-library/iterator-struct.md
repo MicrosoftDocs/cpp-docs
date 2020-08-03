@@ -38,7 +38,7 @@ The template struct serves as a base type for all iterators. It defines the memb
 
 - `reference` (a synonym for the template parameter `Reference`).
 
-Note that `value_type` should not be a constant type even if `pointer` points at an object of **const** `Type` and reference designates an object of **const** `Type`.
+Note that `value_type` should not be a constant type even if `pointer` points at an object of **`const`** `Type` and reference designates an object of **`const`** `Type`.
 
 ## Example
 

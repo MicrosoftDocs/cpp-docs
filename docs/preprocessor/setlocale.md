@@ -19,7 +19,7 @@ Because the algorithm for converting multibyte characters to wide characters may
 
 The default *locale-string* is "".
 
-The "C" locale maps each character in the string to its value as a **wchar_t**. Other valid values for `setlocale` are the entries found in the [Language Strings](../c-runtime-library/language-strings.md) list. For example, you could specify:
+The "C" locale maps each character in the string to its value as a **`wchar_t`**. Other valid values for `setlocale` are the entries found in the [Language Strings](../c-runtime-library/language-strings.md) list. For example, you could specify:
 
 ```cpp
 #pragma setlocale("dutch")

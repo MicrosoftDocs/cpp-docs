@@ -9,7 +9,7 @@ ms.assetid: 7079fedd-6059-4125-82ef-ebe275f1f9d1
 
 'identifier' : 'modifier' not permitted on data declarations
 
-The `friend`, `virtual`, and `inline` modifiers cannot be used for data declarations.
+The **`friend`**, **`virtual`**, and **`inline`** modifiers cannot be used for data declarations.
 
 ## Example
 

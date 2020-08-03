@@ -1764,7 +1764,7 @@ Length of the buffer pointed to by *lpszText*.
 
 ### Return Value
 
-The version returning **int** returns the length of the retrieved string.
+The version returning **`int`** returns the length of the retrieved string.
 
 The version returning a `CString` returns the item text.
 
