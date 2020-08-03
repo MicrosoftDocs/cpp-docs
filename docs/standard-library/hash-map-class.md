@@ -1647,11 +1647,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### Remarks
 
-The `iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type **pair\<const Key, Type>,** whose first member is the key to the element and whose second member is the mapped datum held by the element.
+The `iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair<const Key, Type>`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
-To dereference an **iterator**`Iter` pointing to an element in a multimap, use the `->` operator.
+To dereference an iterator named `Iter` pointing to an element in a multimap, use the `->` operator.
 
-To access the value of the key for the element, use `Iter` -> **first**, which is equivalent to (\* `Iter`). **first**. To access the value of the mapped datum for the element, use `Iter` -> **second**, which is equivalent to (\* `Iter`). **second**.
+To access the value of the key for the element, use `Iter->first`, which is equivalent to `(*Iter).first`. To access the value of the mapped datum for the element, use `Iter->second`, which is equivalent to `(*Iter).second`.
 
 A type `iterator` can be used to modify the value of an element.
 
@@ -1678,7 +1678,7 @@ Returns the function object that a hash_map uses to order its elements.
 
 The stored object defines the member function
 
-**bool operator**( **const Key&** `left`**, const Key&** `right`);
+`bool operator( const Key& left, const Key&right );`
 
 that returns **`true`** if `left` precedes and is not equal to `right` in the sort order.
 

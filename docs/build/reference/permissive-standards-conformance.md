@@ -228,13 +228,13 @@ In versions of the compiler before Visual Studio 2017 version 15.3, the compiler
 
 Common errors that may result from this change include:
 
-- **`error C2593`**`: 'operator ?' is ambiguous`
+- `error C2593: 'operator ?' is ambiguous`
 
-- **`error C2679`**`: binary '?': no operator found which takes a right-hand operand of type 'B' (or there is no acceptable conversion)`
+- `error C2679: binary '?': no operator found which takes a right-hand operand of type 'B' (or there is no acceptable conversion)`
 
-- **`error C2678`**`: binary '?': no operator found which takes a left-hand operand of type 'A' (or there is no acceptable conversion)`
+- `error C2678: binary '?': no operator found which takes a left-hand operand of type 'A' (or there is no acceptable conversion)`
 
-- **`error C2446`**`: ':': no conversion from 'B' to 'A'`
+- `error C2446: ':': no conversion from 'B' to 'A'`
 
 A typical code pattern that can cause this issue is when some class C provides both a non-explicit constructor from another type T and a non-explicit conversion operator to type T. In this case, both the conversion of the second argument to the type of the third argument, and the conversion of the third argument to the type of the second argument, are valid conversions. Since both are valid, it's ambiguous according to the standard.
 
