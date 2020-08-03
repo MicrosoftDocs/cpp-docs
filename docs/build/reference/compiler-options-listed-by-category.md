@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: 07/08/2020
+ms.date: 07/29/2020
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -164,6 +164,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/nologo`](nologo-suppress-startup-banner-c-cpp.md) | Suppresses display of sign-on banner. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Enables additional security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of all include files during compilation. |
+| [`/sourceDependencies`](sourcedependencies.md) | List headers, modules, and other source dependencies. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |
 | [`/Tp`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C++ source file. |

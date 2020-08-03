@@ -23,7 +23,7 @@ public:
 
 ## Remarks
 
-The value returned by [exception Class](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#data).
+The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
 
 ## Example
 
