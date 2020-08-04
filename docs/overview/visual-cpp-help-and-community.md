@@ -1,12 +1,12 @@
 ---
 title: "Visual C++ Help and Community"
-ms.date: "11/30/2017"
+ms.date: 08/03/2020
 ms.technology: "cpp-ide"
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
 ---
 # Visual C++ Help and Community
 
-Here's how to getting information about how to write C++ code and use the Visual Studio development tools.
+Here's where to get help and information about how to write C++ code and use the Visual Studio development tools.
 
 ## Samples
 
