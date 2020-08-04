@@ -691,7 +691,7 @@ void ReplaceButton(
 [in] Specifies the command of the button to be replaced.
 
 *button*<br/>
-[in] A **const** reference to the toolbar button object that replaces the old button.
+[in] A **`const`** reference to the toolbar button object that replaces the old button.
 
 ### Remarks
 

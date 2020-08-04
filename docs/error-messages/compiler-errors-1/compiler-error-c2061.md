@@ -11,7 +11,7 @@ syntax error : identifier 'identifier'
 
 The compiler found an identifier where it wasn't expected. Make sure that `identifier` is declared before you use it.
 
-An initializer may be enclosed by parentheses. To avoid this problem, enclose the declarator in parentheses or make it a `typedef`.
+An initializer may be enclosed by parentheses. To avoid this problem, enclose the declarator in parentheses or make it a **`typedef`**.
 
 This error could also be caused when the compiler detects an expression as a class template argument; use [typename](../../cpp/typename.md) to tell the compiler it is a type.
 

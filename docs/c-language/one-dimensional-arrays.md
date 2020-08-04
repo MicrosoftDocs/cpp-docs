@@ -36,11 +36,11 @@ b[a]
 
 According to the conversion rules for the addition operator (given in [Additive Operators](../c-language/c-additive-operators.md)), the integral value is converted to an address offset by multiplying it by the length of the type addressed by the pointer.
 
-For example, suppose the identifier `line` refers to an array of `int` values. The following procedure is used to evaluate the subscript expression `line[ i ]`:
+For example, suppose the identifier `line` refers to an array of **`int`** values. The following procedure is used to evaluate the subscript expression `line[ i ]`:
 
-1. The integer value `i` is multiplied by the number of bytes defined as the length of an `int` item. The converted value of `i` represents `i` `int` positions.
+1. The integer value `i` is multiplied by the number of bytes defined as the length of an **`int`** item. The converted value of `i` represents `i` **`int`** positions.
 
-1. This converted value is added to the original pointer value (`line`) to yield an address that is offset `i` `int` positions from `line`.
+1. This converted value is added to the original pointer value (`line`) to yield an address that is offset `i` **`int`** positions from `line`.
 
 1. The indirection operator is applied to the new address. The result is the value of the array element at that position (intuitively, `line [ i ]`).
 

@@ -92,7 +92,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the stack is empty; **false** if the stack is nonempty.
+**`true`** if the stack is empty; **`false`** if the stack is nonempty.
 
 ### Example
 

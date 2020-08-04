@@ -20,8 +20,8 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`inheritEnvironments`|array|Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *CMakeSettings.json* or *CppProperties.json* and make them available to debug context.  **Visual Studio 16.4:**: Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to "null".|
 |`args`|array|Specifies the command-line arguments passed to the launched program.|
 |`currentDir`|string|Specifies the full directory path to the Build Target. This will automatically be detected unless this parameter is set.|
-|`noDebug`|boolean|Specifies whether to debug the launched program. The default value for this parameter is `false` if not specified.|
-|`stopOnEntry`|boolean|Specifies whether to break a soon as the process is launched and the debugger attaches. The default value for this parameter is `false`.|
+|`noDebug`|boolean|Specifies whether to debug the launched program. The default value for this parameter is **`false`** if not specified.|
+|`stopOnEntry`|boolean|Specifies whether to break a soon as the process is launched and the debugger attaches. The default value for this parameter is **`false`**.|
 |`remoteMachine`|string|Specifies the name of the remote machine where the program is launched.|
 |`env`|array| Specifies a key-value list of custom environment variables. env:{"myEnv":"myVal"}.|
 |`portName`|string|Specifies the name of port when attaching to a running process.|
@@ -51,9 +51,9 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`launchCompleteCommand`|string|The command to execute after the debugger is fully set up, to cause the target process to run. Allowed values are "exec-run", "exec-continue", "None". The default value is "exec-run".|
 |`debugServerPath`|string|Optional full path to debug server to launch. Defaults to null.|
 |`debugServerArgs`|string|Optional debug server args. Defaults to null.|
-|`filterStderr`|boolean|Search stderr stream for server-started pattern and log stderr to debug output. Defaults to `false`.|
+|`filterStderr`|boolean|Search stderr stream for server-started pattern and log stderr to debug output. Defaults to **`false`**.|
 |`coreDumpPath`|string|Optional full path to a core dump file for the specified program. Defaults to null.|
-externalConsole|boolean|If true, a console is launched for the debuggee. If `false`, no console is launched. Defaults to `false`. NOTE: This option is ignored in some cases for technical reasons.|
+externalConsole|boolean|If true, a console is launched for the debuggee. If **`false`**, no console is launched. Defaults to **`false`**. NOTE: This option is ignored in some cases for technical reasons.|
 |`pipeTransport`|string|When present, this tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options).|
 
 ## <a name="launch_setup_commands"></a> Launch setup commands
@@ -64,7 +64,7 @@ Used with the `setupCommands` property:
 |-|-|-|
 |`text`|string|The debugger command to execute.|
 |`description`|string|Optional description for the command.|
-|`ignoreFailures`|boolean|If true, failures from the command should be ignored. Defaults to `false`.|
+|`ignoreFailures`|boolean|If true, failures from the command should be ignored. Defaults to **`false`**.|
 
 ## <a name = "pipe_transport_options"></a> Pipe transport options
 
@@ -77,7 +77,7 @@ Used with the `pipeTransport` property:
 |`pipeArgs`|array|Command line arguments passed to the pipe program to configure the connection.|
 |`debuggerPath`|string|The full path to the debugger on the target machine, for example /usr/bin/gdb.|
 |`pipeEnv`|object|Environment variables passed to the pipe program.|
-|`quoteArgs`|boolean|If individual arguments contain characters (such as spaces or tabs), should it be quoted? If `false`, the debugger command will no longer be automatically quoted. Default is `true`.|
+|`quoteArgs`|boolean|If individual arguments contain characters (such as spaces or tabs), should it be quoted? If **`false`**, the debugger command will no longer be automatically quoted. Default is **`true`**.|
 
 ## <a name="source_file_map_options"></a> Source file map options
 
@@ -86,4 +86,4 @@ Use with the `sourceFileMap` property:
 ||||
 |-|-|-|
 |`editorPath`|string|The location of the source code for the editor to locate.|
-|`useForBreakpoints`|boolean|When setting breakpoints, this source mapping should be used. If `false`, only the filename and line number is used for setting breakpoints. If `true`, breakpoints will be set with the full path to the file and line number only when this source mapping is used. Otherwise just filename and line number will be used when setting breakpoints. Default is `true`.|
+|`useForBreakpoints`|boolean|When setting breakpoints, this source mapping should be used. If **`false`**, only the filename and line number is used for setting breakpoints. If **`true`**, breakpoints will be set with the full path to the file and line number only when this source mapping is used. Otherwise just filename and line number will be used when setting breakpoints. Default is **`true`**.|

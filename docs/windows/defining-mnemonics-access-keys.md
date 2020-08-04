@@ -120,7 +120,7 @@ You can have more than one group of radio buttons on a dialog box. Add each grou
 
    - In the **Variable name** box, type a name for the new member variable.
 
-   - In the **Variable type** list box, select **int** or type *int*.
+   - In the **Variable type** list box, select **`int`** or type *int*.
 
    You can now modify your code to specify which radio button should appear selected. For example, `m_radioBox1 = 0;` selects the first radio button in the group.
 

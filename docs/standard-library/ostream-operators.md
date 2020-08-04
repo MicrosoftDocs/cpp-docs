@@ -159,7 +159,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     Elem _Ch);
 ```
 
-except that *_Ch* is converted to an object of type `Elem` by calling `_Ostr.put`( `_Ostr.widen`( `_Ch`)).
+except that *_Ch* is converted to an object of type `Elem` by calling `_Ostr.put( _Ostr.widen( _Ch ))`.
 
 The template function
 
@@ -210,7 +210,7 @@ basic_ostream<char, _Tr>& operator<<(
     const signed char *str);
 ```
 
-returns `_Ostr` << (`const char *`) `str`.
+returns `_Ostr << (const char *)str`.
 
 The template function
 
@@ -221,7 +221,7 @@ basic_ostream<char, _Tr>& operator<<(
     signed char _Ch);
 ```
 
-returns `_Ostr` << (`char`) `_Ch`.
+returns `_Ostr << (char)_Ch`.
 
 The template function:
 
@@ -232,7 +232,7 @@ basic_ostream<char, _Tr>& operator<<(
     const unsigned char *str);
 ```
 
-returns `_Ostr` << (`const char *`) `str`.
+returns `_Ostr << (const char *)str`.
 
 The template function:
 
@@ -243,7 +243,7 @@ basic_ostream<char, _Tr>& operator<<(
     unsigned char _Ch);
 ```
 
-returns `_Ostr` << (`char`) `_Ch`.
+returns `_Ostr << (char)_Ch`.
 
 The template function:
 
@@ -254,7 +254,7 @@ basic_ostream<_Elem, _Tr>& operator<<(
     T val);
 ```
 
-returns `_Ostr` `<<` `val` (and converts a [RValue Reference](../cpp/rvalue-reference-declarator-amp-amp.md) to `_Ostr` to an lvalue in the process).
+returns `_Ostr << val` (and converts a [RValue Reference](../cpp/rvalue-reference-declarator-amp-amp.md) to `_Ostr` to an lvalue in the process).
 
 ### Example
 

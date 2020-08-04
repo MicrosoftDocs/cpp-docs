@@ -1,35 +1,35 @@
 ---
-title: "for Statement (C++)"
+title: "for statement (C++)"
 description: "Reference to the Standard C++ for statement in Microsoft Visual Studio C++."
 f1_keywords: ["for_cpp"]
-ms.date: "04/14/2020"
+ms.date: 07/31/2020
 helpviewer_keywords: ["for keyword [C++]"]
 ms.assetid: 6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a
 ---
-# for Statement (C++)
+# `for` statement (C++)
 
-Executes a statement repeatedly until the condition becomes false. For information on the range-based for statement, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).
+Executes a statement repeatedly until the condition becomes false. For information on the range-based **`for`** statement, see [Range-based `for` statement (C++)](../cpp/range-based-for-statement-cpp.md).
 
 ## Syntax
 
-> **`for (`** *init-expression* **`;`** *cond-expression* **`;`** *loop-expression* **`)`**\
-> &nbsp;&nbsp;&nbsp;&nbsp;_statement_**`;`**
+> **`for (`** *`init-expression`* **`;`** *`cond-expression`* **`;`** *`loop-expression`* **`)`**\
+> &emsp;*`statement`*
 
 ## Remarks
 
-Use the **for** statement to construct loops that must execute a specified number of times.
+Use the **`for`** statement to construct loops that must execute a specified number of times.
 
-The **for** statement consists of three optional parts, as shown in the following table.
+The **`for`** statement consists of three optional parts, as shown in the following table.
 
-### for Loop Elements
+### for loop elements
 
-|Syntax Name|When Executed|Description|
-|-----------------|-------------------|-----------------|
-|`init-expression`|Before any other element of the **for** statement, `init-expression` is executed only once. Control then passes to `cond-expression`.|Often used to initialize loop indices. It can contain expressions or declarations.|
-|`cond-expression`|Before execution of each iteration of `statement`, including the first iteration. `statement` is executed only if `cond-expression` evaluates to true (nonzero).|An expression that evaluates to an integral type or a class type that has an unambiguous conversion to an integral type. Normally used to test for loop-termination criteria.|
-|`loop-expression`|At the end of each iteration of `statement`. After `loop-expression` is executed, `cond-expression` is evaluated.|Normally used to increment loop indices.|
+| Syntax name | When executed | Description |
+|--|--|--|
+| *`init-expression`* | Before any other element of the **`for`** statement, *`init-expression`* is executed only once. Control then passes to *`cond-expression`*. | Often used to initialize loop indices. It can contain expressions or declarations. |
+| *`cond-expression`* | Before execution of each iteration of *`statement`*, including the first iteration. *`statement`* is executed only if *`cond-expression`* evaluates to true (nonzero). | An expression that evaluates to an integral type or a class type that has an unambiguous conversion to an integral type. Normally used to test for loop-termination criteria. |
+| *`loop-expression`* | At the end of each iteration of *`statement`*. After *`loop-expression`* is executed, *`cond-expression`* is evaluated. | Normally used to increment loop indices. |
 
-The following examples show different ways to use the **for** statement.
+The following examples show different ways to use the **`for`** statement.
 
 ```cpp
 #include <iostream>
@@ -52,11 +52,11 @@ int main() {
     while (i < 2){
         cout << i++;
     }
+    // Output: 01
 }
-    // Output: 012
 ```
 
-`init-expression` and `loop-expression` can contain multiple statements separated by commas. For example:
+*`init-expression`* and *`loop-expression`* can contain multiple statements separated by commas. For example:
 
 ```cpp
 #include <iostream>
@@ -74,7 +74,7 @@ int main(){
     i + j = 19
 ```
 
-`loop-expression` can be incremented or decremented, or modified in other ways.
+*`loop-expression`* can be incremented or decremented, or modified in other ways.
 
 ```cpp
 #include <iostream>
@@ -91,11 +91,11 @@ for (int i = 10; i > 0; i--) {
     // Output: 10 12 14 16 18
 ```
 
-A **for** loop terminates when a [break](../cpp/break-statement-cpp.md), [return](../cpp/return-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md) (to a labeled statement outside the **for** loop) within `statement` is executed. A [continue](../cpp/continue-statement-cpp.md) statement in a **for** loop terminates only the current iteration.
+A **`for`** loop terminates when a [`break`](../cpp/break-statement-cpp.md), [return](../cpp/return-statement-cpp.md), or [`goto`](../cpp/goto-statement-cpp.md) (to a labeled statement outside the **`for`** loop) within *`statement`* is executed. A [`continue`](../cpp/continue-statement-cpp.md) statement in a **`for`** loop terminates only the current iteration.
 
-If `cond-expression` is omitted, it's considered `true`, and the **for** loop won't terminate without a **break**, **return**, or **goto** within `statement`.
+If *`cond-expression`* is omitted, it's considered **`true`**, and the **`for`** loop won't terminate without a **`break`**, **`return`**, or **`goto`** within *`statement`*.
 
-Although the three fields of the **for** statement are normally used for initialization, testing for termination, and incrementing, they're not restricted to these uses. For example, the following code prints the numbers 0 through 4. In this case, `statement` is the null statement:
+Although the three fields of the **`for`** statement are normally used for initialization, testing for termination, and incrementing, they're not restricted to these uses. For example, the following code prints the numbers 0 through 4. In this case, *`statement`* is the null statement:
 
 ```cpp
 #include <iostream>
@@ -110,9 +110,9 @@ int main()
 }
 ```
 
-## for Loops and the C++ Standard
+## `for` loops and the C++ Standard
 
-The C++ standard says that a variable declared in a **for** loop shall go out of scope after the **for** loop ends. For example:
+The C++ standard says that a variable declared in a **`for`** loop shall go out of scope after the **`for`** loop ends. For example:
 
 ```cpp
 for (int i = 0 ; i < 5 ; i++) {
@@ -121,11 +121,11 @@ for (int i = 0 ; i < 5 ; i++) {
 // i is now out of scope under /Za or /Zc:forScope
 ```
 
-By default, under [/Ze](../build/reference/za-ze-disable-language-extensions.md), a variable declared in a **for** loop remains in scope until the **for** loop's enclosing scope ends.
+By default, under [/Ze](../build/reference/za-ze-disable-language-extensions.md), a variable declared in a **`for`** loop remains in scope until the **`for`** loop's enclosing scope ends.
 
 [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) enables standard behavior of variables declared in for loops without needing to specify `/Za`.
 
-It's also possible to use the scoping differences of the **for** loop to redeclare variables under `/Ze` as follows:
+It's also possible to use the scoping differences of the **`for`** loop to redeclare variables under `/Ze` as follows:
 
 ```cpp
 // for_statement5.cpp
@@ -137,12 +137,12 @@ int main(){
 }
 ```
 
-This behavior more closely mimics the standard behavior of a variable declared in a **for** loop, which requires variables declared in a **for** loop to go out of scope after the loop is done. When a variable is declared in a **for** loop, the compiler internally promotes it to a local variable in the **for** loop's enclosing scope. It's promoted even if there's already a local variable with the same name.
+This behavior more closely mimics the standard behavior of a variable declared in a **`for`** loop, which requires variables declared in a **`for`** loop to go out of scope after the loop is done. When a variable is declared in a **`for`** loop, the compiler internally promotes it to a local variable in the **`for`** loop's enclosing scope. It's promoted even if there's already a local variable with the same name.
 
 ## See also
 
-[Iteration Statements](../cpp/iteration-statements-cpp.md)<br/>
+[Iteration statements](../cpp/iteration-statements-cpp.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[while Statement (C++)](../cpp/while-statement-cpp.md)<br/>
-[do-while Statement (C++)](../cpp/do-while-statement-cpp.md)<br/>
-[Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md)
+[while statement (C++)](../cpp/while-statement-cpp.md)<br/>
+[do-while statement (C++)](../cpp/do-while-statement-cpp.md)<br/>
+[Range-based for statement (C++)](../cpp/range-based-for-statement-cpp.md)

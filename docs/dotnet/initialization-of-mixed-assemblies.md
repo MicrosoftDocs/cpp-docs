@@ -73,7 +73,7 @@ There are a number of solutions to deadlock caused by the dynamic initialization
 
 ### User-Supplied Functions Affecting Startup
 
-There are several user-supplied functions on which libraries depend for initialization during startup. For example, when globally overloading operators in C++ such as the `new` and `delete` operators, the user-provided versions are used everywhere, including in C++ Standard Library initialization and destruction. As a result, C++ Standard Library and user-provided static initializers will invoke any user-provided versions of these operators.
+There are several user-supplied functions on which libraries depend for initialization during startup. For example, when globally overloading operators in C++ such as the **`new`** and **`delete`** operators, the user-provided versions are used everywhere, including in C++ Standard Library initialization and destruction. As a result, C++ Standard Library and user-provided static initializers will invoke any user-provided versions of these operators.
 
 If the user-provided versions are compiled to MSIL, then these initializers will be attempting to execute MSIL instructions while the loader lock is held. A user-supplied `malloc` has the same consequences. To resolve this problem, any of these overloads or user-supplied definitions must be implemented as native code using the #pragma `unmanaged` directive.
 

@@ -28,7 +28,7 @@ int main() {
 }
 ```
 
-One way to fix this issue is to create a namespace for your globals, but not use a `using` directive to bring that namespace into scope, so all references must use the unambiguous qualified names:
+One way to fix this issue is to create a namespace for your globals, but not use a **`using`** directive to bring that namespace into scope, so all references must use the unambiguous qualified names:
 
 ```cpp
 // C4459_namespace.cpp

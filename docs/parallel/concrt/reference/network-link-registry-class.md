@@ -27,8 +27,8 @@ The block data type being stored in the `network_link_registry`.
 
 |Name|Description|
 |----------|-----------------|
-|`const_pointer`|A type that provides a pointer to a `const` element in a `network_link_registry` object.|
-|`const_reference`|A type that provides a reference to a `const` element stored in a `network_link_registry` object for reading and performing const operations.|
+|`const_pointer`|A type that provides a pointer to a **`const`** element in a `network_link_registry` object.|
+|`const_reference`|A type that provides a reference to a **`const`** element stored in a `network_link_registry` object for reading and performing const operations.|
 |`iterator`|A type that provides an iterator that can read or modify any element in a `network_link_registry` object.|
 |`type`|A type that represents the block type stored in the `network_link_registry` object.|
 
@@ -100,7 +100,7 @@ A pointer to a block that is being searched for in the `network_link_registry` o
 
 ### Return Value
 
-**true** if the block was found, **false** otherwise.
+**`true`** if the block was found, **`false`** otherwise.
 
 ## <a name="count"></a> count
 
@@ -129,7 +129,7 @@ A pointer to a block to be removed, if found.
 
 ### Return Value
 
-**true** if the link was found and removed, **false** otherwise.
+**`true`** if the link was found and removed, **`false`** otherwise.
 
 ## See also
 

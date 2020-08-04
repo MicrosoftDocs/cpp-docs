@@ -29,7 +29,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2711](compiler-error-c2711.md)|'*function*': this function cannot be compiled as managed, consider using #pragma unmanaged|
 |[Compiler error C2712](compiler-error-c2712.md)|Cannot use __try in functions that require object unwinding|
 |[Compiler error C2713](compiler-error-c2713.md)|Only one form of exception handling permitted per function|
-|[Compiler error C2714](compiler-error-c2714.md)|alignof(void) is not allowed|
+|[Compiler error C2714](compiler-error-c2714.md)| `alignof(void)` is not allowed|
 |[Compiler error C2715](compiler-error-c2715.md)|'*type*': cannot throw or catch this type|
 |Compiler error C2716|Obsolete.|
 |Compiler error C2717|Obsolete.|

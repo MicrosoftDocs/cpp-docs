@@ -9,7 +9,7 @@ ms.assetid: 982b1b35-1a7c-456e-b711-f80cfe2d571e
 
 > a typedef template is illegal
 
-Templates are not allowed in `typedef` definitions.
+Templates are not allowed in **`typedef`** definitions.
 
 ## Example
 

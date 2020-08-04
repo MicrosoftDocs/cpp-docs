@@ -44,14 +44,14 @@ As with any locale facet, the static object ID has an initial stored value of ze
 |-|-|
 |[decimal_point](#decimal_point)|Returns a locale-specific element to use as a decimal point.|
 |[do_decimal_point](#do_decimal_point)|A protected virtual member function that is called to return a locale-specific element to use as a decimal point.|
-|[do_falsename](#do_falsename)|A protected virtual member function that is called to return a string to use as a text representation of the value **false**.|
+|[do_falsename](#do_falsename)|A protected virtual member function that is called to return a string to use as a text representation of the value **`false`**.|
 |[do_grouping](#do_grouping)|A protected virtual member function that is called to return a locale-specific rule for determining how digits are grouped to the left of any decimal point.|
 |[do_thousands_sep](#do_thousands_sep)|A protected virtual member function that is called to return a locale-specific element to use as a thousands separator.|
-|[do_truename](#do_truename)|A protected virtual member function that is called to return a string to use as a text representation of the value **true**.|
-|[falsename](#falsename)|Returns a string to use as a text representation of the value **false**.|
+|[do_truename](#do_truename)|A protected virtual member function that is called to return a string to use as a text representation of the value **`true`**.|
+|[falsename](#falsename)|Returns a string to use as a text representation of the value **`false`**.|
 |[grouping](#grouping)|Returns a locale-specific rule for determining how digits are grouped to the left of any decimal point.|
 |[thousands_sep](#thousands_sep)|Returns a locale-specific element to use as a thousands separator.|
-|[truename](#truename)|Returns a string to use as a text representation of the value **true**.|
+|[truename](#truename)|Returns a string to use as a text representation of the value **`true`**.|
 
 ## Requirements
 
@@ -132,7 +132,7 @@ See the example for [decimal_point](#decimal_point), where the virtual member fu
 
 ## <a name="do_falsename"></a> numpunct::do_falsename
 
-The protected virtual member function returns a sequence to use as a text representation of the value **false**.
+The protected virtual member function returns a sequence to use as a text representation of the value **`false`**.
 
 ```cpp
 virtual string_type do_falsename() const;
@@ -140,11 +140,11 @@ virtual string_type do_falsename() const;
 
 ### Return Value
 
-A string containing a sequence to use as a text representation of the value **false**.
+A string containing a sequence to use as a text representation of the value **`false`**.
 
 ### Remarks
 
-The member function returns the string "false" to represent the value **false** in all locales.
+The member function returns the string "false" to represent the value **`false`** in all locales.
 
 ### Example
 
@@ -192,7 +192,7 @@ See the example for [thousands_sep](#thousands_sep), where the virtual member fu
 
 ## <a name="do_truename"></a> numpunct::do_truename
 
-A protected virtual member function that is called to return a string to use as a text representation of the value **true**.
+A protected virtual member function that is called to return a string to use as a text representation of the value **`true`**.
 
 ```cpp
 virtual string_type do_truename() const;
@@ -200,9 +200,9 @@ virtual string_type do_truename() const;
 
 ### Remarks
 
-A string to use as a text representation of the value **true**.
+A string to use as a text representation of the value **`true`**.
 
-All locales return a string "true" to represent the value **true**.
+All locales return a string "true" to represent the value **`true`**.
 
 ### Example
 
@@ -210,7 +210,7 @@ See the example for [truename](#truename), where the virtual member function is 
 
 ## <a name="falsename"></a> numpunct::falsename
 
-Returns a string to use as a text representation of the value **false**.
+Returns a string to use as a text representation of the value **`false`**.
 
 ```cpp
 string_type falsename() const;
@@ -218,11 +218,11 @@ string_type falsename() const;
 
 ### Return Value
 
-A string containing a sequence of `CharType`s to use as a text representation of the value **false**.
+A string containing a sequence of `CharType`s to use as a text representation of the value **`false`**.
 
 ### Remarks
 
-The member function returns the string "false" to represent the value **false** in all locales.
+The member function returns the string "false" to represent the value **`false`** in all locales.
 
 The member function returns [do_falsename](#do_falsename).
 
@@ -387,7 +387,7 @@ German_Germany.1252 thousands separator .
 
 ## <a name="truename"></a> numpunct::truename
 
-Returns a string to use as a text representation of the value **true**.
+Returns a string to use as a text representation of the value **`true`**.
 
 ```cpp
 string_type falsename() const;
@@ -395,13 +395,13 @@ string_type falsename() const;
 
 ### Return Value
 
-A string to use as a text representation of the value **true**.
+A string to use as a text representation of the value **`true`**.
 
 ### Remarks
 
 The member function returns [do_truename](#do_truename).
 
-All locales return a string "true" to represent the value **true**.
+All locales return a string "true" to represent the value **`true`**.
 
 ### Example
 

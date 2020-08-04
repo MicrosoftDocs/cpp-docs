@@ -17,7 +17,7 @@ The **LENGTH**, **SIZE**, and **TYPE** operators have a limited meaning in inlin
 
 - The **TYPE** operator can return the size of a C or C++ type or variable. If the variable is an array, **TYPE** returns the size of a single element of the array.
 
-For example, if your program has an 8-element **int** array,
+For example, if your program has an 8-element **`int`** array,
 
 ```cpp
 int arr[8];
@@ -27,9 +27,9 @@ the following C and assembly expressions yield the size of `arr` and its element
 
 |__asm|C|Size|
 |-------------|-------|----------|
-|**LENGTH** arr|`sizeof`(arr)/`sizeof`(arr[0])|8|
-|**SIZE** arr|`sizeof`(arr)|32|
-|**TYPE** arr|`sizeof`(arr[0])|4|
+|**LENGTH** arr|`sizeof(arr)/sizeof(arr[0])`|8|
+|**SIZE** arr|`sizeof(arr)`|32|
+|**TYPE** arr|`sizeof(arr[0])`|4|
 
 **END Microsoft Specific**
 

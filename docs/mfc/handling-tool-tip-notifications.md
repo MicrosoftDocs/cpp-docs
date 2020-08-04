@@ -10,7 +10,7 @@ When you specify the **TBSTYLE_TOOLTIPS** style, the toolbar creates and manages
 
 Before the tool tip is displayed, the **TTN_NEEDTEXT** notification message is sent to the toolbar's owner window to retrieve the descriptive text for the button. If the toolbar's owner window is a `CFrameWnd` window, tool tips are displayed without any extra effort, because `CFrameWnd` has a default handler for the **TTN_NEEDTEXT** notification. If the toolbar's owner window is not derived from `CFrameWnd`, such as a dialog box or form view, you must add an entry to your owner window's message map and provide a notification handler in the message map. The entry to your owner window's message map is as follows:
 
-[!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-tool-tip-notifications_1.cpp)]
+[!code-cpp[NVC_MFCControlLadenDialog#40](codesnippet/cpp/handling-tool-tip-notifications_1.cpp)]
 
 ## Remarks
 
@@ -31,9 +31,9 @@ In addition to the **TTN_NEEDTEXT** notification, a tool tip control can send th
 |**TBN_DROPDOWN**|Indicates the user has clicked a button that uses the **TBSTYLE_DROPDOWN** style.|
 |**TBN_GETOBJECT**|Indicates the user moved the pointer over a button that uses the **TBSTYLE_DROPPABLE** style.|
 
-For an example handler function and more information about enabling tool tips, see [Tool Tips](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
+For an example handler function and more information about enabling tool tips, see [Tool Tips](tool-tips-in-windows-not-derived-from-cframewnd.md).
 
 ## See also
 
-[Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CToolBarCtrl](using-ctoolbarctrl.md)<br/>
+[Controls](controls-mfc.md)

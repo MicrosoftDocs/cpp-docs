@@ -46,7 +46,7 @@ For more information on unions, see [Unions](../cpp/unions.md). For information 
 
 |Structures|Classes|Unions|
 |----------------|-------------|------------|
-|class key is **struct**|class key is **class**|class key is **union**|
+|class key is **`struct`**|class key is **`class`**|class key is **`union`**|
 |Default access is public|Default access is private|Default access is public|
 |No usage constraints|No usage constraints|Use only one member at a time|
 

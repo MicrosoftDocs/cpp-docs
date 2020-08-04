@@ -59,10 +59,10 @@ class basic_string_view;
 *CharType*\
 The type of the characters that are stored in the string_view. The C++ Standard Library provides the following typedefs for specializations of this template.
 
-- [string_view](../standard-library/string-view-typedefs.md#string_view) for elements of type **char**
-- [wstring_view](../standard-library/string-view-typedefs.md#wstring_view), for **wchar_t**
-- [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) for **char16_t**
-- [u32string_view](../standard-library/string-view-typedefs.md#u32string_view) for **char32_t**.
+- [string_view](../standard-library/string-view-typedefs.md#string_view) for elements of type **`char`**
+- [wstring_view](../standard-library/string-view-typedefs.md#wstring_view), for **`wchar_t`**
+- [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) for **`char16_t`**
+- [u32string_view](../standard-library/string-view-typedefs.md#u32string_view) for **`char32_t`**.
 
 *Traits*\
 Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
@@ -77,7 +77,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 
 |Type name|Description|
 |-|-|
-|**const_iterator**|Random-access iterator that can read **const** elements.|
+|**const_iterator**|Random-access iterator that can read **`const`** elements.|
 |**const_pointer**|`using const_pointer = const value_type*;`|
 |**const_reference**|`using const_reference = const value_type&;`|
 |**const_reverse_iterator**|`using const_reverse_iterator = std::reverse_iterator<const_iterator>;`|
@@ -269,7 +269,7 @@ constexpr const_iterator cbegin() const noexcept;
 
 ### Return Value
 
-A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **`const`** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ## <a name="cend"></a> basic_string_view::cend
 
@@ -281,7 +281,7 @@ constexpr const_iterator cend() const noexcept;
 
 ### Return Value
 
-A **const** random-access iterator that points just beyond the end of the range.
+A **`const`** random-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
@@ -551,7 +551,7 @@ constexpr bool empty() const noexcept;
 
 ### Return Value
 
-**true** if the string_view object contains no characters; **false** if it has at least one character.
+**`true`** if the string_view object contains no characters; **`false`** if it has at least one character.
 
 ### Remarks
 

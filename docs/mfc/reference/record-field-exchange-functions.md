@@ -244,7 +244,7 @@ A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This 
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **double**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`double`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 ### Example
 
@@ -276,7 +276,7 @@ A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This 
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **int**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`int`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 ### Example
 
@@ -309,7 +309,7 @@ A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This 
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **long**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`long`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 ### Example
 
@@ -373,7 +373,7 @@ A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This 
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **float**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`float`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 ### Example
 
@@ -664,14 +664,14 @@ A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object con
 The name of a data column.
 
 *prgDblVals*<br/>
-A pointer to an array of **double** values. This array will store the data to be transferred from the data source to the recordset.
+A pointer to an array of **`double`** values. This array will store the data to be transferred from the data source to the recordset.
 
 *prgLengths*<br/>
 A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgDblVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.
 
 ### Remarks
 
-The data source column must have an ODBC type of SQL_DOUBLE. The recordset must define a field data member of type pointer to **double**.
+The data source column must have an ODBC type of SQL_DOUBLE. The recordset must define a field data member of type pointer to **`double`**.
 
 If you initialize *prgDblVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.
 
@@ -710,7 +710,7 @@ A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This 
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **int**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`int`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 ### Example
 
@@ -750,7 +750,7 @@ A pointer to an array of long integers. This array will store the length in byte
 
 ### Remarks
 
-The data source column must have an ODBC type of SQL_INTEGER. The recordset must define a field data member of type pointer to **long**.
+The data source column must have an ODBC type of SQL_INTEGER. The recordset must define a field data member of type pointer to **`long`**.
 
 If you initialize *prgLongVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.
 
@@ -790,14 +790,14 @@ A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object con
 The name of a data column.
 
 *prgFltVals*<br/>
-A pointer to an array of **float** values. This array will store the data to be transferred from the data source to the recordset.
+A pointer to an array of **`float`** values. This array will store the data to be transferred from the data source to the recordset.
 
 *prgLengths*<br/>
 A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgFltVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.
 
 ### Remarks
 
-The data source column must have an ODBC type of SQL_REAL. The recordset must define a field data member of type pointer to **float**.
+The data source column must have an ODBC type of SQL_REAL. The recordset must define a field data member of type pointer to **`float`**.
 
 If you initialize *prgFltVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.
 
@@ -1125,7 +1125,7 @@ A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md).
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **double**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`double`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 *dwBindOptions*<br/>
 An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.
@@ -1168,7 +1168,7 @@ A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md).
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **long**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`long`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 *dwBindOptions*<br/>
 An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.
@@ -1178,7 +1178,7 @@ An option that lets you take advantage of MFC's double buffering mechanism for d
 
 ### Remarks
 
-Data is mapped between type DAO_I4 in DAO and type **long** in the recordset.
+Data is mapped between type DAO_I4 in DAO and type **`long`** in the recordset.
 
 ### Example
 
@@ -1258,7 +1258,7 @@ A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md).
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **short**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`short`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 *dwBindOptions*<br/>
 An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.
@@ -1268,7 +1268,7 @@ An option that lets you take advantage of MFC's double buffering mechanism for d
 
 ### Remarks
 
-Data is mapped between type DAO_I2 in DAO and type **short** in the recordset.
+Data is mapped between type DAO_I2 in DAO and type **`short`** in the recordset.
 
 > [!NOTE]
 > `DFX_Short` is equivalent to [RFX_Int](#rfx_int) for the ODBC-based classes.
@@ -1304,7 +1304,7 @@ A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md).
 The name of a data column.
 
 *value*<br/>
-The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **float**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
+The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **`float`**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.
 
 *dwBindOptions*<br/>
 An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.
@@ -1314,7 +1314,7 @@ An option that lets you take advantage of MFC's double buffering mechanism for d
 
 ### Remarks
 
-Data is mapped between type DAO_R4 in DAO and type **float** in the recordset.
+Data is mapped between type DAO_R4 in DAO and type **`float`** in the recordset.
 
 ### Example
 

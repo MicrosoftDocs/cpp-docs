@@ -9,7 +9,7 @@ ms.assetid: c826f8ab-d66a-4b79-a0b2-93b0af8c41ac
 
 'identifier': a static data member is not allowed in an anonymous struct or union
 
-A member of an anonymous struct or union is declared `static`.
+A member of an anonymous struct or union is declared **`static`**.
 
 The following sample generates C2619, and demonstrates how to fix it by removing the static keyword.
 

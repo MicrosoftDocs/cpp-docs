@@ -24,7 +24,7 @@ The `configurations` array contains all the configurations for a CMake project. 
 
 A `configuration` has these properties:
 
-- `addressSanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
+- `addressSanitizerEnabled`: if **`true`** compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
 - `addressSanitizerRuntimeFlags`: runtime flags passed to AddressSanitizer via the ASAN_OPTIONS environment variable. Format: flag1=value:flag2=value2.
 - `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
 - `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where *CMakeCache.txt* will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
@@ -64,7 +64,7 @@ A `configuration` has these properties:
 
 Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate Visual Studio projects instead.
 
-To specify a Visual Studio generator in Visual Studio 2017, open the  from the main menu by choosing **CMake | Change CMake Settings**. Delete "Ninja" and type "V". This activates IntelliSense, which enables you to choose the generator you want.
+To specify a Visual Studio generator in Visual Studio 2017, open the settings editor from the main menu by choosing **CMake | Change CMake Settings**. Delete "Ninja" and type "V". This activates IntelliSense, which enables you to choose the generator you want.
 
 To specify a Visual Studio generator in Visual Studio 2019, right-click on the *CMakeLists.txt* file in **Solution Explorer** and choose **CMake Settings for project** > **Show Advanced Settings** > **CMake Generator**.
 

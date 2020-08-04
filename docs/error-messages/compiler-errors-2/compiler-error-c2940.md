@@ -9,7 +9,7 @@ ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
 
 'class' : type-class-id redefined as a local typedef
 
-You cannot use a generic or template class as a local `typedef`.
+You cannot use a generic or template class as a local **`typedef`**.
 
 The following sample generates C2940:
 

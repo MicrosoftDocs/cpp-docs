@@ -88,7 +88,7 @@ bool AddProperty(DWORD dwPropertyID,
 
 ### Return Value
 
-**true** if the property was successfully added. Otherwise, **false**.
+**`true`** if the property was successfully added. Otherwise, **`false`**.
 
 ## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
 

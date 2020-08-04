@@ -12,7 +12,7 @@ no-loc: [strtol, wcstol, _strtol_l, _wcstol_l, LONG_MAX, LONG_MIN, errno, ERANGE
 ---
 # strtol, wcstol, _strtol_l, _wcstol_l
 
-Convert strings to a **long** integer value.
+Convert strings to a **`long`** integer value.
 
 ## Syntax
 
@@ -63,7 +63,7 @@ Locale to use.
 
 ## Remarks
 
-The **strtol**, **wcstol**, **_strtol_l**, and **_wcstol_l** functions convert *string* to a **long**. They stop reading *string* at the first character not recognized as part of a number. It may be the terminating-null character, or the first alphanumeric character greater than or equal to *base*.
+The **strtol**, **wcstol**, **_strtol_l**, and **_wcstol_l** functions convert *string* to a **`long`**. They stop reading *string* at the first character not recognized as part of a number. It may be the terminating-null character, or the first alphanumeric character greater than or equal to *base*.
 
 **wcstol** and **_wcstol_l** are wide-character versions of **strtol** and **_strtol_l**. Their *string* argument is a wide-character string. These functions behave identically to **strtol** and **_strtol_l** otherwise. The locale's **LC_NUMERIC** category setting determines recognition of the radix character (the fractional marker or decimal point) in *string*. The functions **strtol** and **wcstol** use the current locale. **_strtol_l** and **_wcstol_l** use the locale passed in instead. For more information, see [setlocale] and [Locale](../../c-runtime-library/locale.md).
 

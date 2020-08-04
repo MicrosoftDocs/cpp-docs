@@ -205,7 +205,7 @@ Next:
 
 ## Debugging the CPU Code
 
-In this procedure, you will use the Local Windows Debugger to make sure that the CPU code in this application is correct. The segment of the CPU code in this application that is especially interesting is the `for` loop in the `reduction_sum_gpu_kernel` function. It controls the tree-based parallel reduction that is run on the GPU.
+In this procedure, you will use the Local Windows Debugger to make sure that the CPU code in this application is correct. The segment of the CPU code in this application that is especially interesting is the **`for`** loop in the `reduction_sum_gpu_kernel` function. It controls the tree-based parallel reduction that is run on the GPU.
 
 ### To debug the CPU code
 
@@ -405,4 +405,4 @@ You run all the threads in a given tile to the line that contains the cursor by 
 [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)<br/>
 [How to: Use the GPU Threads Window](/visualstudio/debugger/how-to-use-the-gpu-threads-window)<br/>
 [How to: Use the Parallel Watch Window](/visualstudio/debugger/how-to-use-the-parallel-watch-window)<br/>
-[Analyzing C++ AMP Code with the Concurrency Visualizer](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
+[Analyzing C++ AMP Code with the Concurrency Visualizer](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)

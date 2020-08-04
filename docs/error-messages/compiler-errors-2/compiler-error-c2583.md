@@ -9,7 +9,7 @@ ms.assetid: b1c952dc-872c-47e4-9fc8-4dd72bcee6f9
 
 'identifier' : 'const/volatile' 'this' pointer is illegal for constructors/destructors
 
-A constructor or destructor is declared `const` or `volatile`. This is not allowed.
+A constructor or destructor is declared **`const`** or **`volatile`**. This is not allowed.
 
 The following sample generates C2583:
 

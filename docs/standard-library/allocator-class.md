@@ -41,7 +41,7 @@ Thus, an allocator defines the following types:
 
 These `Type`s specify the form that pointers and references must take for allocated elements. ( [allocator::pointer](#pointer) is not necessarily the same as `Type*` for all allocator objects, even though it has this obvious definition for class `allocator`.)
 
-**C++11 and later:**  To enable move operations in your allocator, use the minimal allocator interface and implement copy constructor, == and != operators, allocate and deallocate. For more information and an example, see [Allocators](../standard-library/allocators.md)
+**C++11 and later:**  To enable move operations in your allocator, use the minimal allocator interface and implement copy constructor, == and != operators, allocate and deallocate. For more information and an example, see [Allocators](allocators.md)
 
 ## Members
 
@@ -432,7 +432,7 @@ The value with which the object being constructed is to be initialized.
 
 #### Remarks
 
-The first member function is equivalent to **new** ((`void` \*) `ptr`) **Type** (`val`).
+The first member function is equivalent to `new ((void *) ptr) Type(val)`.
 
 #### Example
 
@@ -522,7 +522,7 @@ A pointer designating the address of the object to be destroyed.
 
 #### Remarks
 
-The member function destroys the object designated by *ptr*, by calling the destructor `ptr->`**Type**::**~Type**.
+The member function destroys the object designated by *ptr*, by calling the destructor `ptr->Type::~Type`.
 
 #### Example
 
@@ -838,7 +838,7 @@ The type of element for which memory is being allocated.
 
 This structure is useful for allocating memory for type that differs from the element type of the container being implemented.
 
-The member class template defines the type other. Its sole purpose is to provide the type name **allocator**\<_ **Other**>, given the type name **allocator**\< **Type**>.
+The member class template defines the type other. Its sole purpose is to provide the type name `allocator<_Other>`, given the type name `allocator<Type>`.
 
 For example, given an allocator object `al` of type `A`, you can allocate an object of type `_Other` with the expression:
 

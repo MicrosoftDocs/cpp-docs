@@ -9,6 +9,6 @@ ms.assetid: d59868b5-c1ec-46ac-91d6-5d575a4d6b49
 
 use of _based(void) pointer requires :> operator
 
-A pointer based on `void` cannot be used directly. You must form a complete pointer using the **:>** operator.
+A pointer based on **`void`** cannot be used directly. You must form a complete pointer using the **:>** operator.
 
 This error is identical to CAN0044.

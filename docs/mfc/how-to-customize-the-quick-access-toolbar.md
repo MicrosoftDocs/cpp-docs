@@ -47,4 +47,4 @@ Quick Access Toolbar commands do not appear on the design surface. To view them,
 
 ## See also
 
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+[Ribbon Designer (MFC)](ribbon-designer-mfc.md)

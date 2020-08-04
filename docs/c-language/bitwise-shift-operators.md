@@ -17,7 +17,7 @@ The shift operators shift their first operand left (**&lt;&lt;**) or right (**>>
 
 Both operands must be integral values. These operators perform the usual arithmetic conversions; the type of the result is the type of the left operand after conversion.
 
-For leftward shifts, the vacated right bits are set to 0. For rightward shifts, the vacated left bits are filled based on the type of the first operand after conversion. If the type is `unsigned`, they are set to 0. Otherwise, they are filled with copies of the sign bit. For left-shift operators without overflow, the statement
+For leftward shifts, the vacated right bits are set to 0. For rightward shifts, the vacated left bits are filled based on the type of the first operand after conversion. If the type is **`unsigned`**, they are set to 0. Otherwise, they are filled with copies of the sign bit. For left-shift operators without overflow, the statement
 
 ```C
 expr1 << expr2

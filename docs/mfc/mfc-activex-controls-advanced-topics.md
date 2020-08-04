@@ -34,7 +34,7 @@ For a general overview of the MFC database classes, see [MFC Database Classes (D
 
 A parameterized property (sometimes called a property array) is a method for exposing a homogeneous collection of values as a single property of the control. For example, you can use a parameterized property to expose an array or a dictionary as a property. In Visual Basic, such a property is accessed using array notation:
 
-[!code-vb[NVC_MFC_AxVb#1](../mfc/codesnippet/visualbasic/mfc-activex-controls-advanced-topics_1.vb)]
+[!code-vb[NVC_MFC_AxVb#1](codesnippet/visualbasic/mfc-activex-controls-advanced-topics_1.vb)]
 
 Use the Add Property Wizard to implement a parameterized property. The Add Property Wizard implements the property by adding a pair of Get/Set functions that allow the control user to access the property using the above notation or in the standard fashion.
 
@@ -54,7 +54,7 @@ The following procedure adds a parameterized property, called Array, which can b
 
 1. In the **Property Name** box, type `Array`.
 
-1. In the **Property Type** box, select **short**.
+1. In the **Property Type** box, select **`short`**.
 
 1. For **Implementation** Type, click **Get/Set Methods**.
 
@@ -72,21 +72,21 @@ When you add a custom property, the Add Property Wizard makes changes to the con
 
 The following lines are added to the control class .H file:
 
-[!code-cpp[NVC_MFC_AxUI#35](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_2.h)]
+[!code-cpp[NVC_MFC_AxUI#35](codesnippet/cpp/mfc-activex-controls-advanced-topics_2.h)]
 
 This code declares two functions called `GetArray` and `SetArray` that allow the user to request a specific row and column when accessing the property.
 
 In addition, the Add Property Wizard adds the following lines to the control dispatch map, located in the control class implementation (.CPP) file:
 
-[!code-cpp[NVC_MFC_AxUI#36](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_3.cpp)]
+[!code-cpp[NVC_MFC_AxUI#36](codesnippet/cpp/mfc-activex-controls-advanced-topics_3.cpp)]
 
 Finally, the implementations of the `GetArray` and `SetArray` functions are added to the end of the .CPP file. In most cases, you will modify the Get function to return the value of the property. The Set function will usually contain code that should execute, either before or after the property changes.
 
-For this property to be useful, you could declare a two-dimensional array member variable in the control class, of type **short**, to store values for the parameterized property. You could then modify the Get function to return the value stored at the proper row and column, as indicated by the parameters, and modify the Set function to update the value referenced by the row and column parameters.
+For this property to be useful, you could declare a two-dimensional array member variable in the control class, of type **`short`**, to store values for the parameterized property. You could then modify the Get function to return the value stored at the proper row and column, as indicated by the parameters, and modify the Set function to update the value referenced by the row and column parameters.
 
 ## <a name="_core_handling_errors_in_your_activex_control"></a> Handling Errors in Your ActiveX Control
 
-If error conditions occur in the control, you may need to report the error to the control container. There are two methods for reporting errors, depending on the situation in which the error occurs. If the error occurs within a property's Get or Set function, or within the implementation of an OLE Automation method, the control should call [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror), which signals to the control user that an error has occurred. If the error occurs at any other time, the control should call [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror), which fires a stock Error event.
+If error conditions occur in the control, you may need to report the error to the control container. There are two methods for reporting errors, depending on the situation in which the error occurs. If the error occurs within a property's Get or Set function, or within the implementation of an OLE Automation method, the control should call [COleControl::ThrowError](reference/colecontrol-class.md#throwerror), which signals to the control user that an error has occurred. If the error occurs at any other time, the control should call [COleControl::FireError](reference/colecontrol-class.md#fireerror), which fires a stock Error event.
 
 To indicate the kind of error that has occurred, the control must pass an error code to `ThrowError` or `FireError`. An error code is an OLE status code, which has a 32-bit value. When possible, choose an error code from the standard set of codes defined in the OLECTL.H header file. The following table summarizes these codes.
 
@@ -137,7 +137,7 @@ To indicate the kind of error that has occurred, the control must pass an error 
 
 If necessary, use the CUSTOM_CTL_SCODE macro to define a custom error code for a condition that is not covered by one of the standard codes. The parameter for this macro should be an integer between 1000 and 32767, inclusive. For example:
 
-[!code-cpp[NVC_MFC_AxUI#37](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]
+[!code-cpp[NVC_MFC_AxUI#37](codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]
 
 If you are creating an ActiveX control to replace an existing VBX control, define your ActiveX control error codes with the same numeric values the VBX control uses to ensure that the error codes are compatible.
 
@@ -145,17 +145,17 @@ If you are creating an ActiveX control to replace an existing VBX control, defin
 
 In some cases you may want to handle certain keystroke combinations in a special way; for example, insert a new line when the ENTER key is pressed in a multiline text box control or move between a group of edit controls when a directional key ID pressed.
 
-If the base class of your ActiveX control is `COleControl`, you can override [CWnd::PreTranslateMessage](../mfc/reference/cwnd-class.md#pretranslatemessage) to handle messages before the container processes them. When using this technique, always return **TRUE** if you handle the message in your override of `PreTranslateMessage`.
+If the base class of your ActiveX control is `COleControl`, you can override [CWnd::PreTranslateMessage](reference/cwnd-class.md#pretranslatemessage) to handle messages before the container processes them. When using this technique, always return **TRUE** if you handle the message in your override of `PreTranslateMessage`.
 
 The following code example demonstrates a possible way of handling any messages related to the directional keys.
 
-[!code-cpp[NVC_MFC_AxUI#38](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_5.cpp)]
+[!code-cpp[NVC_MFC_AxUI#38](codesnippet/cpp/mfc-activex-controls-advanced-topics_5.cpp)]
 
 For more information on handling keyboard interfaces for an ActiveX control, see the ActiveX SDK documentation.
 
 ## <a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a> Accessing Dialog Controls that Are Invisible at Run Time
 
-You can create dialog controls that have no user interface and are invisible at run time. If you add an invisible at run time ActiveX control to a dialog box and use [CWnd::GetDlgItem](../mfc/reference/cwnd-class.md#getdlgitem) to access the control, the control will not work correctly. Instead, you should use one of the following techniques to obtain an object that represents the control:
+You can create dialog controls that have no user interface and are invisible at run time. If you add an invisible at run time ActiveX control to a dialog box and use [CWnd::GetDlgItem](reference/cwnd-class.md#getdlgitem) to access the control, the control will not work correctly. Instead, you should use one of the following techniques to obtain an object that represents the control:
 
 - Using the Add Member Variable Wizard, select **Control Variable** and then select the control's ID. Enter a member variable name and select the control's wrapper class as the **Control Type**.
 
@@ -163,8 +163,8 @@ You can create dialog controls that have no user interface and are invisible at 
 
 - Declare a local variable and subclass as the dialog item. Insert code that resembles the following (`CMyCtrl` is the wrapper class, IDC_MYCTRL1 is the control's ID):
 
-   [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#19](codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]
 
 ## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Controls](mfc-activex-controls.md)

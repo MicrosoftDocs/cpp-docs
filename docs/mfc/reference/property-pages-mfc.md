@@ -23,7 +23,7 @@ This data-mapping mechanism maps property page controls to the individual proper
 |[DDP_LBStringExact](#ddp_lbstringexact)|Links the selected string in a list box with a control's property. The selected string and the property's string value must match exactly.|
 |[DDP_PostProcessing](#ddp_postprocessing)|Finishes the transfer of property values from your control.|
 |[DDP_Radio](#ddp_radio)|Links a radio button group in the control's property page with a control's property.|
-|[DDP_Text](#ddp_text)|Links a control in the control's property page with a control's property. This function handles several different types of properties, such as **double**, **short**, BSTR, and **long**.|
+|[DDP_Text](#ddp_text)|Links a control in the control's property page with a control's property. This function handles several different types of properties, such as **`double`**, **`short`**, BSTR, and **`long`**.|
 
 For more information about the `DoDataExchange` function and property pages, see the article [ActiveX Controls: Property Pages](../../mfc/mfc-activex-controls-property-pages.md).
 

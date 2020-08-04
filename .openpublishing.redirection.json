@@ -107,22 +107,22 @@
     },
     {
       "source_path": "docs/assembler/arm/index.md",
-      "redirect_url": "/cpp/assembler/arm/arm-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/index.md",
-      "redirect_url": "/cpp/assembler/masm/microsoft-macro-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/inline/index.md",
-      "redirect_url": "/cpp/assembler/inline/inline-assembler",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/masm/index.md",
-      "redirect_url": "/cpp/assembler/masm/microsoft-macro-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
@@ -701,13 +701,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/c-language/index.md",
-      "redirect_url": "/cpp/c-language/c-language-reference",
+      "source_path": "docs/cloud/index.md",
+      "redirect_url": "/cpp/cloud/cloud-and-web-programming-in-visual-cpp",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/cloud/index.md",
-      "redirect_url": "/cpp/cloud/cloud-and-web-programming-in-visual-cpp",
+      "source_path": "docs/code-quality/cpp-core-guidelines-warnings.md",
+      "redirect_url": "/cpp/code-quality/using-the-cpp-core-guidelines-checkers",
       "redirect_document_id": false
     },
     {
@@ -758,11 +758,6 @@
     {
       "source_path": "docs/cpp/character-sets2.md",
       "redirect_url": "/cpp/cpp/character-sets",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/cpp/index.md",
-      "redirect_url": "/cpp/cpp/cpp-language-reference",
       "redirect_document_id": false
     },
     {
@@ -7498,11 +7493,6 @@
     {
       "source_path": "docs/ide/specify-release-configuration.md",
       "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/intrinsics/index.md",
-      "redirect_url": "/cpp/intrinsics/compiler-intrinsics",
       "redirect_document_id": false
     },
     {

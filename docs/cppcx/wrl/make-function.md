@@ -215,7 +215,7 @@ Argument 9 that is passed to the specified runtime class.
 
 ## Return Value
 
-A `ComPtr<T>` object if successful; otherwise, `nullptr`.
+A `ComPtr<T>` object if successful; otherwise, **`nullptr`**.
 
 ## Remarks
 

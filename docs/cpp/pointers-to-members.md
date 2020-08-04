@@ -14,7 +14,7 @@ Declarations of pointers to members are special cases of pointer declarations.  
 
    - An optional storage class specifier.
 
-   - Optional **const** and **volatile** specifiers.
+   - Optional **`const`** and **`volatile`** specifiers.
 
    - The type specifier: the name of a type. It's the type of the member to be pointed to, not the class.
 
@@ -28,7 +28,7 @@ Declarations of pointers to members are special cases of pointer declarations.  
 
    - The __`*`__ operator.
 
-   - Optional **const** and **volatile** specifiers.
+   - Optional **`const`** and **`volatile`** specifiers.
 
    - The identifier naming the pointer to member.
 
@@ -55,8 +55,8 @@ class Window
 public:
    Window();                               // Default constructor.
    Window( int x1, int y1,                 // Constructor specifying
-   int x2, int y2 );                       //  window size.
-bool SetCaption( const char *szTitle ); // Set window caption.
+   int x2, int y2 );                       // Window size.
+   bool SetCaption( const char *szTitle ); // Set window caption.
    const char *GetCaption();               // Get window caption.
    char *szWinCaption;                     // Window caption.
 };
@@ -68,26 +68,27 @@ int main()
 }
 ```
 
-In the preceding example, `pwCaption` is a pointer to any member of class `Window` that's of type `char*`. The type of `pwCaption` is `char * Window::*`. The next code fragment declares pointers to the `SetCaption` and `GetCaption` member functions.
+In the preceding example, `pwCaption` is a pointer to any member of class `Window` that's of type **`char*`**. The type of `pwCaption` is `char * Window::*`. The next code fragment declares pointers to the `SetCaption` and `GetCaption` member functions.
 
 ```cpp
-const char * (Window::*pfnwGC)() = &Window::GetCaption;
-bool (Window::*pfnwSC)( const char * ) = &Window::SetCaption;
+const char * (Window::* pfnwGC)() = &Window::GetCaption;
+bool (Window::* pfnwSC)( const char * ) = &Window::SetCaption;
 ```
 
 The pointers `pfnwGC` and `pfnwSC` point to `GetCaption` and `SetCaption` of the `Window` class, respectively. The code copies information to the window caption directly using the pointer to member `pwCaption`:
 
 ```cpp
-Window wMainWindow;
+Window  wMainWindow;
 Window *pwChildWindow = new Window;
 char   *szUntitled    = "Untitled -  ";
-int    cUntitledLen   = strlen( szUntitled );
+int     cUntitledLen  = strlen( szUntitled );
 
 strcpy_s( wMainWindow.*pwCaption, cUntitledLen, szUntitled );
-(wMainWindow.*pwCaption)[cUntitledLen - 1] = '1';     //same as
-//wMainWindow.SzWinCaption [cUntitledLen - 1] = '1';
+(wMainWindow.*pwCaption)[cUntitledLen - 1] = '1';     // same as
+// wMainWindow.SzWinCaption [cUntitledLen - 1] = '1';
 strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
-(pwChildWindow->*pwCaption)[cUntitledLen - 1] = '2'; //same as //pwChildWindow->szWinCaption[cUntitledLen - 1] = '2';
+(pwChildWindow->*pwCaption)[cUntitledLen - 1] = '2'; // same as
+// pwChildWindow->szWinCaption[cUntitledLen - 1] = '2';
 ```
 
 The difference between the **`.*`** and **`->*`** operators (the pointer-to-member operators) is that the **`.*`** operator selects members given an object or object reference, while the **`->*`** operator selects members through a pointer. For more information about these operators, see [Expressions with Pointer-to-Member Operators](../cpp/pointer-to-member-operators-dot-star-and-star.md).
@@ -131,24 +132,24 @@ using namespace std;
 
 class Base
 {
-    public:
+public:
     virtual void Print();
 };
-void (Base ::* bfnPrint)() = &Base :: Print;
-void Base :: Print()
+void (Base::* bfnPrint)() = &Base::Print;
+void Base::Print()
 {
-    cout << "Print function for class Base\n";
+    cout << "Print function for class Base" << endl;
 }
 
 class Derived : public Base
 {
-    public:
+public:
     void Print();  // Print is still a virtual function.
 };
 
-void Derived :: Print()
+void Derived::Print()
 {
-    cout << "Print function for class Derived\n";
+    cout << "Print function for class Derived" << endl;
 }
 
 int main()
@@ -162,6 +163,7 @@ int main()
     (bPtr->*bfnPrint)();
 }
 
-//Output: Print function for class Base
-Print function for class Derived
+// Output:
+// Print function for class Base
+// Print function for class Derived
 ```

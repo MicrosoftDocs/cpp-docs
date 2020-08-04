@@ -41,7 +41,7 @@ The **asinh** functions return the inverse hyberbolic sine (arc hyperbolic sine)
 
 ## Remarks
 
-When you use C++, you can call overloads of **asinh** that take and return **float** or **long** **double** values. In a C program, **asinh** always takes and returns **double**.
+When you use C++, you can call overloads of **asinh** that take and return **`float`** or **`long double`** values. In a C program, **asinh** always takes and returns **`double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

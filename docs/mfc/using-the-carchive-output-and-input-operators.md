@@ -34,7 +34,7 @@ The library defines **<\<** and **>>** operators for `CArchive` as the first ope
 
 ||||
 |-|-|-|
-|`CObject*`|**SIZE** and `CSize`|**float**|
+|`CObject*`|**SIZE** and `CSize`|**`float`**|
 |**WORD**|`CString`|**POINT** and `CPoint`|
 |`DWORD`|**BYTE**|`RECT` and `CRect`|
 |**Double**|**LONG**|`CTime` and `CTimeSpan`|

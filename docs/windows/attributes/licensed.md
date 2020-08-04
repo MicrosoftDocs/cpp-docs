@@ -46,7 +46,7 @@ public:
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|`coclass`|
 |**Invalid attributes**|None|

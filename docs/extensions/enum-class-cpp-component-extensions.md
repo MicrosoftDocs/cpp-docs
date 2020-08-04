@@ -12,7 +12,7 @@ Declares an enumeration at namespace scope, which is a user-defined type consist
 
 ### Remarks
 
-C++/CX and C++/CLI support **public enum class** and **private enum class** which are similar to the standard C++ **enum class** but with the addition of the accessibility specifier. Under **/clr**, the C++11 **enum class** type is permitted but will generate warning C4472 which is intended to ensure that you really want the ISO enum type and not the C++/CX and C++/CLI type. For more information about the ISO Standard C++ **enum** keyword, see [Enumerations](../cpp/enumerations-cpp.md).
+C++/CX and C++/CLI support **public enum class** and **private enum class** which are similar to the standard C++ **enum class** but with the addition of the accessibility specifier. Under **/clr**, the C++11 **enum class** type is permitted but will generate warning C4472 which is intended to ensure that you really want the ISO enum type and not the C++/CX and C++/CLI type. For more information about the ISO Standard C++ **`enum`** keyword, see [Enumerations](../cpp/enumerations-cpp.md).
 
 ## Windows Runtime
 
@@ -29,7 +29,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 ### Parameters
 
 *access*<br/>
-The accessibility of the enumeration, which can be **public** or **private**.
+The accessibility of the enumeration, which can be **`public`** or **`private`**.
 
 *enumeration-identifier*<br/>
 The name of the enumeration.
@@ -37,7 +37,7 @@ The name of the enumeration.
 *underlying-type*<br/>
 (Optional) The underlying type of the enumeration.
 
-(Optional. Windows Runtime only) The underlying type of the enumeration, which can be **bool**, **char**, `char16`, `int16`, `uint16`, **int**, `uint32`, `int64`, or `uint64`.
+(Optional. Windows Runtime only) The underlying type of the enumeration, which can be **`bool`**, **`char`**, `char16`, `int16`, `uint16`, **`int`**, `uint32`, `int64`, or `uint64`.
 
 *enumerator-list*<br/>
 A comma-delimited list of enumerator names.
@@ -55,7 +55,7 @@ Note that the compiler emits error messages if the constant expression that defi
 
 - If *underlying-type* is numeric, and an enumerator specifies the maximum value for that type, the value of the next implicitly defined enumeratoin cannot be represented.
 
-- If *underlying-type* is **bool**, and more than two enumerators are implicitly defined, the enumerators after the first two cannot be represented.
+- If *underlying-type* is **`bool`**, and more than two enumerators are implicitly defined, the enumerators after the first two cannot be represented.
 
 - If *underlying-type* is `char16`, and the enumeration value ranges from 0xD800 through 0xDFFF, the value can be represented. However, the value logically incorrect because it represents half a Unicode surrogate pair and should not appear in isolation.
 
@@ -77,7 +77,7 @@ accessenum structname [:type] { enumerator-list } var;
 ### Parameters
 
 *access*<br/>
-The accessibility of the enum. Can be either **public** or **private**.
+The accessibility of the enum. Can be either **`public`** or **`private`**.
 
 *enumerator-list*<br/>
 A comma-separated list of the identifiers (enumerators) in the enumeration.
@@ -86,7 +86,7 @@ A comma-separated list of the identifiers (enumerators) in the enumeration.
 The name of the enumeration. Anonymous managed enumerations are not allowed.
 
 *type*<br/>
-(Optional) The underlying type of the *identifiers*. This can be any scalar type, such as signed or unsigned versions of **int**, **short**, or **long**.  **bool** or **char** is also allowed.
+(Optional) The underlying type of the *identifiers*. This can be any scalar type, such as signed or unsigned versions of **`int`**, **`short`**, or **`long`**.  **`bool`** or **`char`** is also allowed.
 
 *var*<br/>
 (Optional) The name of a variable of the enumeration type.
@@ -132,7 +132,7 @@ The enumerators of a standard enum are strongly injected into the enclosing scop
 
 In Visual Studio 2002 and Visual Studio 2003, enumerators were weakly injected (visible in the enclosing scope unless there was another identifier with the same name).
 
-If a standard C++ enum is defined (without **class** or **struct**), compiling with `/clr` will cause the enumeration to be compiled as a managed enum.  The enumeration still has the semantics of an unmanaged enumeration.  Note, the compiler injects an attribute, `Microsoft::VisualC::NativeEnumAttribute` to identify a programmer's intent for the enum to be a native enum.  Other compilers will simply see the standard enum as a managed enum.
+If a standard C++ enum is defined (without **`class`** or **`struct`**), compiling with `/clr` will cause the enumeration to be compiled as a managed enum.  The enumeration still has the semantics of an unmanaged enumeration.  Note, the compiler injects an attribute, `Microsoft::VisualC::NativeEnumAttribute` to identify a programmer's intent for the enum to be a native enum.  Other compilers will simply see the standard enum as a managed enum.
 
 A named, standard enum compiled with `/clr` will be visible in the assembly as a managed enum, and can be consumed by any other managed compiler.   However, an unnamed standard enum will not be publicly visible from the assembly.
 

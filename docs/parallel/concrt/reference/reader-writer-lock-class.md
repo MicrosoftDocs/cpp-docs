@@ -177,7 +177,7 @@ bool try_lock();
 
 ### Return Value
 
-If the lock was acquired, the value **true**; otherwise, the value **false**.
+If the lock was acquired, the value **`true`**; otherwise, the value **`false`**.
 
 ## <a name="try_lock_read"></a> try_lock_read
 
@@ -189,7 +189,7 @@ bool try_lock_read();
 
 ### Return Value
 
-If the lock was acquired, the value **true**; otherwise, the value **false**.
+If the lock was acquired, the value **`true`**; otherwise, the value **`false`**.
 
 ## <a name="unlock"></a> unlock
 

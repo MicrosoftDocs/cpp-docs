@@ -12,7 +12,7 @@ This article shows how to use lambda expressions in your programs. For an overvi
 
 ### Example 1
 
-Because a lambda expression is typed, you can assign it to an **auto** variable or to a [function](../standard-library/function-class.md) object, as shown here:
+Because a lambda expression is typed, you can assign it to an **`auto`** variable or to a [`function`](../standard-library/function-class.md) object, as shown here:
 
 ### Code
 
@@ -48,7 +48,7 @@ int main()
 
 ### Remarks
 
-For more information, see [auto](../cpp/auto-cpp.md), [function Class](../standard-library/function-class.md), and [Function Call](../cpp/function-call-cpp.md).
+For more information, see [`auto`](../cpp/auto-cpp.md), [`function` Class](../standard-library/function-class.md), and [Function Call](../cpp/function-call-cpp.md).
 
 Although lambda expressions are most often declared in the body of a function, you can declare them anywhere that you can initialize a variable.
 
@@ -123,7 +123,7 @@ int main()
 
 ### Example 2
 
-This example passes a lambda expression as an argument to the `find_if` function. The lambda expression returns **true** if its parameter is an even number.
+This example passes a lambda expression as an argument to the `find_if` function. The lambda expression returns **`true`** if its parameter is an even number.
 
 ### Code
 
@@ -168,7 +168,7 @@ The first even number in the list is 42.
 
 ### Remarks
 
-For more information about the `find_if` function, see [find_if](../standard-library/algorithm-functions.md#find_if). For more information about the C++ Standard Library functions that perform common algorithms, see [\<algorithm>](../standard-library/algorithm.md).
+For more information about the `find_if` function, see [`find_if`](../standard-library/algorithm-functions.md#find_if). For more information about the C++ Standard Library functions that perform common algorithms, see [`<algorithm>`](../standard-library/algorithm.md).
 
 [[In This Article](#top)]
 
@@ -214,7 +214,7 @@ In this example, `[](int y) { return y * 2; }` is the nested lambda expression.
 
 ### Example
 
-Many programming languages support the concept of a *higher-order function.* A higher-order function is a lambda expression that takes another lambda expression as its argument or returns a lambda expression. You can use the [function](../standard-library/function-class.md) class to enable a C++ lambda expression to behave like a higher-order function. The following example shows a lambda expression that returns a `function` object and a lambda expression that takes a `function` object as its argument.
+Many programming languages support the concept of a *higher-order function.* A higher-order function is a lambda expression that takes another lambda expression as its argument or returns a lambda expression. You can use the [`function`](../standard-library/function-class.md) class to enable a C++ lambda expression to behave like a higher-order function. The following example shows a lambda expression that returns a `function` object and a lambda expression that takes a `function` object as its argument.
 
 ### Code
 
@@ -263,10 +263,10 @@ int main()
 
 ### Example
 
-You can use lambda expressions in the body of a function. The lambda expression can access any function or data member that the enclosing function can access. You can explicitly or implicitly capture the **this** pointer to provide access to functions and data members of the enclosing class.
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Capture **this** by value (`[*this]`) when the lambda will be used in asynchronous or parallel operations where the code might execute after the original object goes out of scope.
+You can use lambda expressions in the body of a function. The lambda expression can access any function or data member that the enclosing function can access. You can explicitly or implicitly capture the **`this`** pointer to provide access to functions and data members of the enclosing class.
+**Visual Studio 2017 version 15.3 and later** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)): Capture **`this`** by value (`[*this]`) when the lambda will be used in asynchronous or parallel operations where the code might execute after the original object goes out of scope.
 
-You can use the **this** pointer explicitly in a function, as shown here:
+You can use the **`this`** pointer explicitly in a function, as shown here:
 
 ```cpp
 // capture "this" by reference
@@ -284,7 +284,7 @@ void ApplyScale2(const vector<int>& v) const
 }
 ```
 
-You can also capture the **this** pointer implicitly:
+You can also capture the **`this`** pointer implicitly:
 
 ```cpp
 void ApplyScale(const vector<int>& v) const
@@ -348,7 +348,7 @@ int main()
 
 ### Remarks
 
-The `ApplyScale` function uses a lambda expression to print the product of the scale value and each element in a `vector` object. The lambda expression implicitly captures **this** so that it can access the `_scale` member.
+The `ApplyScale` function uses a lambda expression to print the product of the scale value and each element in a `vector` object. The lambda expression implicitly captures **`this`** so that it can access the `_scale` member.
 
 [[In This Article](#top)]
 
@@ -356,7 +356,7 @@ The `ApplyScale` function uses a lambda expression to print the product of the s
 
 ### Example
 
-Because lambda expressions are typed, you can use them with C++ templates. The following example shows the `negate_all` and `print_all` functions. The `negate_all` function applies the unary **operator-** to each element in the `vector` object. The `print_all` function prints each element in the `vector` object to the console.
+Because lambda expressions are typed, you can use them with C++ templates. The following example shows the `negate_all` and `print_all` functions. The `negate_all` function applies the unary **`operator-`** to each element in the `vector` object. The `print_all` function prints each element in the `vector` object to the console.
 
 ### Code
 
@@ -420,7 +420,7 @@ For more information about C++ templates, see [Templates](../cpp/templates-cpp.m
 
 ### Example
 
-The body of a lambda expression follows the rules for both structured exception handling (SEH) and C++ exception handling. You can handle a raised exception in the body of a lambda expression or defer exception handling to the enclosing scope. The following example uses the **for_each** function and a lambda expression to fill a `vector` object with the values of another one. It uses a **try**/**catch** block to handle invalid access to the first vector.
+The body of a lambda expression follows the rules for both structured exception handling (SEH) and C++ exception handling. You can handle a raised exception in the body of a lambda expression or defer exception handling to the enclosing scope. The following example uses the **`for_each`** function and a lambda expression to fill a `vector` object with the values of another one. It uses a **`try`**/**`catch`** block to handle invalid access to the first vector.
 
 ### Code
 
@@ -508,7 +508,7 @@ Hello!
 You can also use lambda expressions with the STL/CLR library. For more information, see [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md).
 
 > [!IMPORTANT]
-> Lambdas are not supported in these common language runtime (CLR) managed entities: **ref class**, **ref struct**, **value class**, and **value struct**.
+> Lambdas are not supported in these common language runtime (CLR) managed entities: **`ref class`**, **`ref struct`**, **`value class`**, and **`value struct`**.
 
 [[In This Article](#top)]
 
@@ -516,10 +516,10 @@ You can also use lambda expressions with the STL/CLR library. For more informati
 
 [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)<br/>
 [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)<br/>
-[auto](../cpp/auto-cpp.md)<br/>
-[function Class](../standard-library/function-class.md)<br/>
-[find_if](../standard-library/algorithm-functions.md#find_if)<br/>
-[\<algorithm>](../standard-library/algorithm.md)<br/>
+[`auto`](../cpp/auto-cpp.md)<br/>
+[`function` Class](../standard-library/function-class.md)<br/>
+[`find_if`](../standard-library/algorithm-functions.md#find_if)<br/>
+[`<algorithm>`](../standard-library/algorithm.md)<br/>
 [Function Call](../cpp/function-call-cpp.md)<br/>
 [Templates](../cpp/templates-cpp.md)<br/>
 [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)<br/>

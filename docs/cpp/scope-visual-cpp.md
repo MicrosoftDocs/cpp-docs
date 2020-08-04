@@ -18,9 +18,9 @@ There are six kinds of scope:
 
 - **Local scope** A name declared within a function or lambda, including the parameter names, have local scope. They are often referred to as "locals". They are only visible from their point of declaration to the end of the function or lambda body. Local scope is a kind of block scope, which is discussed later in this article.
 
-- **Class scope** Names of class members have class scope, which extends throughout the class definition regardless of the point of declaration. Class member accessibility is further controlled by the **public**, **private**, and **protected** keywords. Public or protected members can be accessed only by using the member-selection operators (**.** or **->**) or pointer-to-member operators (**.**<strong>\*</strong> or **->**<strong>\*</strong>).
+- **Class scope** Names of class members have class scope, which extends throughout the class definition regardless of the point of declaration. Class member accessibility is further controlled by the **`public`**, **`private`**, and **`protected`** keywords. Public or protected members can be accessed only by using the member-selection operators (**.** or **->**) or pointer-to-member operators (**.**<strong>\*</strong> or **->**<strong>\*</strong>).
 
-- **Statement scope** Names declared in a **for**, **if**, **while**, or **switch** statement are visible until the end of the statement block.
+- **Statement scope** Names declared in a **`for`**, **`if`**, **`while`**, or **`switch`** statement are visible until the end of the statement block.
 
 - **Function scope** A [label](labeled-statements.md) has function scope, which means it is visible throughout a function body even before its point of declaration. Function scope makes it possible to write statements like `goto cleanup` before the `cleanup` label is declared.
 
@@ -45,7 +45,7 @@ i = 0
 
 ## Hiding class names
 
-You can hide class names by declaring a function, object or variable, or enumerator in the same scope. However, the class name can still be accessed when prefixed by the keyword **class**.
+You can hide class names by declaring a function, object or variable, or enumerator in the same scope. However, the class name can still be accessed when prefixed by the keyword **`class`**.
 
 ```cpp
 // hiding_class_names.cpp
@@ -81,18 +81,18 @@ int main()
 > [!NOTE]
 > Any place the class name (`Account`) is called for, the keyword class must be used to differentiate it from the global-scoped variable Account. This rule does not apply when the class name occurs on the left side of the scope-resolution operator (::). Names on the left side of the scope-resolution operator are always considered class names.
 
-The following example demonstrates how to declare a pointer to an object of type `Account` using the **class** keyword:
+The following example demonstrates how to declare a pointer to an object of type `Account` using the **`class`** keyword:
 
 ```cpp
 class Account *Checking = new class Account( Account );
 ```
 
-The `Account` in the initializer (in parentheses) in the preceding statement has global scope; it is of type **double**.
+The `Account` in the initializer (in parentheses) in the preceding statement has global scope; it is of type **`double`**.
 
 > [!NOTE]
 > The reuse of identifier names as shown in this example is considered poor programming style.
 
-For information about declaration and initialization of class objects, see [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md). For information about using the **new** and **delete** free-store operators, see [new and delete operators](new-and-delete-operators.md).
+For information about declaration and initialization of class objects, see [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md). For information about using the **`new`** and **`delete`** free-store operators, see [new and delete operators](new-and-delete-operators.md).
 
 ## Hiding names with global scope
 

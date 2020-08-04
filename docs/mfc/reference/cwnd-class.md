@@ -141,7 +141,7 @@ class CWnd : public CCmdTarget
 |[CWnd::GetParentOwner](#getparentowner)|Returns a pointer to a child window's parent window.|
 |[CWnd::GetProperty](#getproperty)|Retrieves an ActiveX control property.|
 |[CWnd::GetRenderTarget](#getrendertarget)|Gets a render target that is associated with this window.|
-|[CWnd::GetSafeHwnd](#getsafehwnd)|Returns `m_hWnd`, or NULL if the **this** pointer is NULL.|
+|[CWnd::GetSafeHwnd](#getsafehwnd)|Returns `m_hWnd`, or NULL if the **`this`** pointer is NULL.|
 |[CWnd::GetSafeOwner](#getsafeowner)|Retrieves the safe owner for the given window.|
 |[CWnd::GetScrollBarCtrl](#getscrollbarctrl)|Returns a sibling scroll-bar control.|
 |[CWnd::GetScrollBarInfo](#getscrollbarinfo)|Retrieves information about the specified scroll bar.|
@@ -1118,7 +1118,7 @@ TRUE if the method was successful; otherwise FALSE.
 ### Remarks
 
 > [!WARNING]
-> `CWnd::PreCreateWindow` now assigns the hMenu member of its `CREATESTRUCT` parameter to the **this** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
+> `CWnd::PreCreateWindow` now assigns the hMenu member of its `CREATESTRUCT` parameter to the **`this`** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
 >
 > This change fixes a crash in managed/native interop scenarios. A TRACE statement in `CWnd::Create` alerts the developer of the problem.
 
@@ -1367,7 +1367,7 @@ TRUE if the method was successful; otherwise FALSE.
 ### Remarks
 
 > [!WARNING]
-> `CWnd::PreCreateWindow` now assigns the hMenu member of its `CREATESTRUCT` parameter to the **this** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
+> `CWnd::PreCreateWindow` now assigns the hMenu member of its `CREATESTRUCT` parameter to the **`this`** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
 >
 > This change fixes a crash in managed/native interop scenarios. A `TRACE` statement in `CWnd::Create` alerts the developer of the problem.
 
@@ -3172,7 +3172,7 @@ Specifies whether the value to be retrieved is signed.
 
 ### Return Value
 
-Specifies the translated value of the dialog-box item text. Since 0 is a valid return value, *lpTrans* must be used to detect errors. If a signed return value is desired, cast it as an **int** type.
+Specifies the translated value of the dialog-box item text. Since 0 is a valid return value, *lpTrans* must be used to detect errors. If a signed return value is desired, cast it as an **`int`** type.
 
 The function returns 0 if the translated number is greater than INT_MAX (for signed numbers) or UINT_MAX (for unsigned).
 
@@ -3681,7 +3681,7 @@ Pointer to the render target or NULL.
 
 ## <a name="getsafehwnd"></a> CWnd::GetSafeHwnd
 
-Returns `m_hWnd`, or NULL if the **this** pointer is NULL.
+Returns `m_hWnd`, or NULL if the **`this`** pointer is NULL.
 
 ```
 HWND GetSafeHwnd() const;
@@ -6333,7 +6333,7 @@ Specifies a scroll-bar code that indicates the user's scrolling request. This pa
 - SB_THUMBTRACK Drag scroll box to specified position. The current position is specified by the *nPos* parameter.
 
 *nPos*<br/>
-Specifies the scroll-box position if the scroll-bar code is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise, not used. Depending on the initial scroll range, *nPos* may be negative and should be cast to an **int** if necessary.
+Specifies the scroll-box position if the scroll-bar code is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise, not used. Depending on the initial scroll range, *nPos* may be negative and should be cast to an **`int`** if necessary.
 
 *pScrollBar*<br/>
 If the scroll message came from a scroll-bar control, contains a pointer to the control. If the user clicked a window's scroll bar, this parameter is NULL. The pointer may be temporary and should not be stored for later use.
@@ -9285,7 +9285,7 @@ Specifies a scroll-bar code that indicates the user's scrolling request. This pa
 - SB_TOP Scroll to top.
 
 *nPos*<br/>
-Contains the current scroll-box position if the scroll-bar code is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise not used. Depending on the initial scroll range, *nPos* may be negative and should be cast to an **int** if necessary.
+Contains the current scroll-box position if the scroll-bar code is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise not used. Depending on the initial scroll range, *nPos* may be negative and should be cast to an **`int`** if necessary.
 
 *pScrollBar*<br/>
 If the scroll message came from a scroll-bar control, contains a pointer to the control. If the user clicked a window's scroll bar, this parameter is NULL. The pointer may be temporary and should not be stored for later use.
@@ -9710,7 +9710,7 @@ virtual void PostNcDestroy();
 
 ### Remarks
 
-Derived classes can use this function for custom cleanup such as the deletion of the **this** pointer.
+Derived classes can use this function for custom cleanup such as the deletion of the **`this`** pointer.
 
 ## <a name="precreatewindow"></a> CWnd::PreCreateWindow
 
@@ -9732,7 +9732,7 @@ Nonzero if the window creation should continue; 0 to indicate creation failure.
 ### Remarks
 
 > [!WARNING]
-> `CWnd::PreCreateWindow` now assigns the hMenu member of *cs* to the **this** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
+> `CWnd::PreCreateWindow` now assigns the hMenu member of *cs* to the **`this`** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
 >
 > This change fixes a crash in managed/native interop scenarios. A TRACE statement in `CWnd::Create` alerts the developer of the problem.
 

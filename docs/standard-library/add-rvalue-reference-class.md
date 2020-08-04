@@ -69,6 +69,6 @@ Namespace: std
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)\
-[add_lvalue_reference Class](../standard-library/add-lvalue-reference-class.md)\
-[is_rvalue_reference Class](../standard-library/is-rvalue-reference-class.md)
+[<type_traits>](type-traits.md)\
+[add_lvalue_reference Class](add-lvalue-reference-class.md)\
+[is_rvalue_reference Class](is-rvalue-reference-class.md)

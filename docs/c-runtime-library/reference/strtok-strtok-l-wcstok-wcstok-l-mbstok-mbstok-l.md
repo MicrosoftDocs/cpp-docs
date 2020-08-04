@@ -1,6 +1,6 @@
 ---
 title: "strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l"
-ms.date: "4/2/2020"
+ms.date: "6/24/2020"
 api_name: ["_mbstok_l", "_mbstok", "wcstok", "_mbstok", "strtok", "_wcstok_l", "_o__mbstok", "_o__mbstok_l", "_o_strtok", "_o_wcstok"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -32,6 +32,11 @@ wchar_t *wcstok(
    wchar_t *strToken,
    const wchar_t *strDelimit
 );
+wchar_t *wcstok(
+   wchar_t *strToken,
+   const wchar_t *strDelimit,
+   wchar_t **context
+);
 wchar_t *wcstok_l(
    wchar_t *strToken,
    const wchar_t *strDelimit,
@@ -59,6 +64,9 @@ Set of delimiter characters.
 *locale*<br/>
 Locale to use.
 
+*context*<br/>
+Points to memory used to store the internal state of the parser so that the parser can continue from where it left off the next time you call **wcstok**.
+
 ## Return Value
 
 Returns a pointer to the next token found in *strToken*. The functions return **NULL** when no more tokens are found. Each call modifies *strToken* by substituting a null character for the first delimiter that occurs after the returned token.
@@ -66,6 +74,8 @@ Returns a pointer to the next token found in *strToken*. The functions return **
 ## Remarks
 
 The **strtok** function finds the next token in *strToken*. The set of characters in *strDelimit* specifies possible delimiters of the token to be found in *strToken* on the current call. **wcstok** and **_mbstok** are wide-character and multibyte-character versions of **strtok**. The arguments and return value of **wcstok** are wide-character strings; those of **_mbstok** are multibyte-character strings. These three functions behave identically otherwise.
+
+The two argument version of **wcstok** is not standard. If you need to use that version, you'll need to define `_CRT_NON_CONFORMING_WCSTOK` before you `#include <wchar.h>` (or `#include <string.h>`).
 
 > [!IMPORTANT]
 > These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -94,6 +104,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**strtok**|\<string.h>|
 |**wcstok**|\<string.h> or \<wchar.h>|
+|**_wcstok_l**|<tchar.h>|
 |**_mbstok**, **_mbstok_l**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).

@@ -1,6 +1,6 @@
 ---
 title: "CFileException Class"
-ms.date: "11/04/2016"
+ms.date: "06/09/2020"
 f1_keywords: ["CFileException", "AFX/CFileException", "AFX/CFileException::CFileException", "AFX/CFileException::ErrnoToException", "AFX/CFileException::GetErrorMessage", "AFX/CFileException::OsErrorToException", "AFX/CFileException::ThrowErrno", "AFX/CFileException::ThrowOsError", "AFX/CFileException::m_cause", "AFX/CFileException::m_lOsError", "AFX/CFileException::m_strFileName"]
 helpviewer_keywords: ["CFileException [MFC], CFileException", "CFileException [MFC], ErrnoToException", "CFileException [MFC], GetErrorMessage", "CFileException [MFC], OsErrorToException", "CFileException [MFC], ThrowErrno", "CFileException [MFC], ThrowOsError", "CFileException [MFC], m_cause", "CFileException [MFC], m_lOsError", "CFileException [MFC], m_strFileName"]
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
@@ -159,43 +159,31 @@ int m_cause;
 
 ### Remarks
 
-This data member is a public variable of type **int**. The enumerators and their meanings are as follows:
+This data member is a public variable of type **`int`**. The enumerators and their meanings are as follows:
 
-- `CFileException::none` 0: No error occurred.
+| Error | Value and meaning |
+|--|--|
+| `CFileException::none` | 0: No error occurred. |
+| `CFileException::genericException` | 1: An unspecified error occurred. |
+| `CFileException::fileNotFound` | 2: The file could not be located. |
+| `CFileException::badPath` | 3: All or part of the path is invalid. |
+| `CFileException::tooManyOpenFiles` | 4: The permitted number of open files was exceeded. |
+| `CFileException::accessDenied` | 5: The file could not be accessed. |
+| `CFileException::invalidFile` | 6: There was an attempt to use an invalid file handle. |
+| `CFileException::removeCurrentDir` | 7: The current working directory cannot be removed. |
+| `CFileException::directoryFull` | 8: There are no more directory entries. |
+| `CFileException::badSeek` | 9: There was an error trying to set the file pointer. |
+| `CFileException::hardIO` | 10: There was a hardware error. |
+| `CFileException::sharingViolation` | 11: SHARE.EXE was not loaded, or a shared region was locked. |
+| `CFileException::lockViolation` | 12: There was an attempt to lock a region that was already locked. |
+| `CFileException::diskFull` | 13: The disk is full. |
+| `CFileException::endOfFile` | 14: The end of file was reached. |
 
-- `CFileException::genericException` 1: An unspecified error occurred.
+> [!NOTE]
+> These `CFileException` cause enumerators are distinct from the `CArchiveException` cause enumerators.
 
-- `CFileException::fileNotFound` 2: The file could not be located.
-
-- `CFileException::badPath` 3: All or part of the path is invalid.
-
-- `CFileException::tooManyOpenFiles` 4: The permitted number of open files was exceeded.
-
-- `CFileException::accessDenied` 5: The file could not be accessed.
-
-- `CFileException::invalidFile` 6: There was an attempt to use an invalid file handle.
-
-- `CFileException::removeCurrentDir` 7: The current working directory cannot be removed.
-
-- `CFileException::directoryFull` 8: There are no more directory entries.
-
-- `CFileException::badSeek` 9: There was an error trying to set the file pointer.
-
-- `CFileException::hardIO` 10: There was a hardware error.
-
-- `CFileException::sharingViolation` 11: SHARE.EXE was not loaded, or a shared region was locked.
-
-- `CFileException::lockViolation` 12: There was an attempt to lock a region that was already locked.
-
-- `CFileException::diskFull` 14: The disk is full.
-
-- `CFileException::endOfFile` 15: The end of file was reached.
-
-    > [!NOTE]
-    >  These `CFileException` cause enumerators are distinct from the `CArchiveException` cause enumerators.
-
-    > [!NOTE]
-    > `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, the resulting syntax errors are not easy to decipher.
+> [!NOTE]
+> `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, the resulting syntax errors are not easy to decipher.
 
 ### Example
 

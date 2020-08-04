@@ -407,7 +407,7 @@ bucket_size(7) == 1
 
 ## <a name="cbegin"></a> unordered_multimap::cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Returns a **`const`** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -415,13 +415,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A **const** forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **`const`** forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -433,7 +433,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a> unordered_multimap::cend
 
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
+Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -441,13 +441,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A **const** forward-access iterator that points just beyond the end of the range.
+A **`const`** forward-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -2286,7 +2286,7 @@ The container to swap with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and *right*. If [unordered_multimap::get_allocator](#get_allocator)`() == right.get_allocator()`, it does so in constant time, it throws an exception only as a result of copying the stored traits object of type `Tr`, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
+The member function swaps the controlled sequences between **`*this`** and *right*. If [unordered_multimap::get_allocator](#get_allocator)`() == right.get_allocator()`, it does so in constant time, it throws an exception only as a result of copying the stored traits object of type `Tr`, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
 
 ### Example
 

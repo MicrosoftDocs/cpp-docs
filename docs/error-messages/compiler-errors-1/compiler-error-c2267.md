@@ -9,7 +9,7 @@ ms.assetid: ea63bebb-6208-4367-8440-39be07f9c360
 
 'function' : static functions with block scope are illegal
 
-A local function is declared `static`. Static functions must have global scope.
+A local function is declared **`static`**. Static functions must have global scope.
 
 The following sample generates C2267:
 

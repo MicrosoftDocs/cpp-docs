@@ -15,7 +15,7 @@ When you use OLE drag and drop, you remove two steps from the process. You selec
 
 Using OLE drag and drop, data can be transferred easily from one location to another: Within a document, between different documents, or between applications. It may be implemented in either a container or a server application. Any application could be a drop source, a drop target, or both. If an application implements both drop-source and drop-target support, you can drag and drop between child windows, or within one window. This feature makes your application much easier to use.
 
-The [Data objects and data sources (OLE)](../mfc/data-objects-and-data-sources-ole.md) articles explain how to implement data transfer in your applications. It's also helpful to examine the MFC OLE samples [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md).
+The [Data objects and data sources (OLE)](data-objects-and-data-sources-ole.md) articles explain how to implement data transfer in your applications. It's also helpful to examine the MFC OLE samples [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md).
 
 ## <a name="implement-a-drop-source"></a> Implement a drop source
 
@@ -25,7 +25,7 @@ If your application is a container and the selected data is a linked or an embed
 
 If `DoDragDrop` returns **DROPEFFECT_MOVE**, delete the source data from the source document immediately. No other return value from `DoDragDrop` has any effect on a drop source.
 
-For more information, see [OLE data objects and data sources: Creation and destruction](../mfc/data-objects-and-data-sources-creation-and-destruction.md) and [OLE data objects and data sources: Manipulation](../mfc/data-objects-and-data-sources-manipulation.md)\.
+For more information, see [OLE data objects and data sources: Creation and destruction](data-objects-and-data-sources-creation-and-destruction.md) and [OLE data objects and data sources: Manipulation](data-objects-and-data-sources-manipulation.md)\.
 
 ## <a name="implement-a-drop-target"></a> Implement a drop target
 
@@ -51,7 +51,7 @@ It takes slightly more work to implement a drop target than a drop source, but i
 
 See the MAINVIEW.CPP file that is part of the MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md) for an example of how these functions work together.
 
-For more information, see [OLE data objects and data sources: Creation and destruction](../mfc/data-objects-and-data-sources-creation-and-destruction.md) and [OLE data objects and data sources: Manipulation](../mfc/data-objects-and-data-sources-manipulation.md)\.
+For more information, see [OLE data objects and data sources: Creation and destruction](data-objects-and-data-sources-creation-and-destruction.md) and [OLE data objects and data sources: Manipulation](data-objects-and-data-sources-manipulation.md)\.
 
 ## <a name="customize-drag-and-drop"></a> Customize drag and drop
 
@@ -59,7 +59,7 @@ The default implementation of the drag-and-drop feature is sufficient for most a
 
 If you're customizing standard OLE drag-and-drop behavior, or you have a non-OLE application, you must create a `COleDataSource` object to contain the data. When the user starts a drag-and-drop operation, your code should call the `DoDragDrop` function from this object instead of from other classes that support drag-and-drop operations.
 
-Optionally, you can create a `COleDropSource` object to control the drop and override some of its functions depending on the type of behavior you want to change. This drop-source object is then passed to `COleDataSource::DoDragDrop` to change the default behavior of these functions. These different options allow a great deal of flexibility in how you support drag-and-drop operations in your application. For more information about data sources, see the article [Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md).
+Optionally, you can create a `COleDropSource` object to control the drop and override some of its functions depending on the type of behavior you want to change. This drop-source object is then passed to `COleDataSource::DoDragDrop` to change the default behavior of these functions. These different options allow a great deal of flexibility in how you support drag-and-drop operations in your application. For more information about data sources, see the article [Data Objects and Data Sources (OLE)](data-objects-and-data-sources-ole.md).
 
 You can override the following functions to customize drag-and-drop operations:
 
@@ -71,13 +71,13 @@ You can override the following functions to customize drag-and-drop operations:
 
 ## See also
 
-[OLE](../mfc/ole-in-mfc.md)\
-[OLE Data objects and data sources](../mfc/data-objects-and-data-sources-ole.md)\
-[OLE data objects and data sources: Creation and destruction](../mfc/data-objects-and-data-sources-creation-and-destruction.md)\
-[OLE data objects and data sources: Manipulation](../mfc/data-objects-and-data-sources-manipulation.md)\
-[COleClientItem::DoDragDrop](../mfc/reference/coleclientitem-class.md#dodragdrop)\
-[COleDataSource class](../mfc/reference/coledatasource-class.md)\
-[COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop)\
-[COleDropSource class](../mfc/reference/coledropsource-class.md)\
-[COleDropTarget class](../mfc/reference/coledroptarget-class.md)\
-[CView::OnDragLeave](../mfc/reference/cview-class.md#ondragleave)
+[OLE](ole-in-mfc.md)\
+[OLE Data objects and data sources](data-objects-and-data-sources-ole.md)\
+[OLE data objects and data sources: Creation and destruction](data-objects-and-data-sources-creation-and-destruction.md)\
+[OLE data objects and data sources: Manipulation](data-objects-and-data-sources-manipulation.md)\
+[COleClientItem::DoDragDrop](reference/coleclientitem-class.md#dodragdrop)\
+[COleDataSource class](reference/coledatasource-class.md)\
+[COleDataSource::DoDragDrop](reference/coledatasource-class.md#dodragdrop)\
+[COleDropSource class](reference/coledropsource-class.md)\
+[COleDropTarget class](reference/coledroptarget-class.md)\
+[CView::OnDragLeave](reference/cview-class.md#ondragleave)

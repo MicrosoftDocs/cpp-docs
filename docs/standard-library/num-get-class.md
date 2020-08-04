@@ -183,9 +183,9 @@ virtual iter_type do_get(
     long& val) const;
 ```
 
-matches sequential elements beginning at *first* in the sequence `[first, last)` until it has recognized a complete, nonempty integer input field. If successful, it converts this field to its equivalent value as type **long**, and stores the result in *val*. It returns an iterator designating the first element beyond the numeric input field. Otherwise, the function stores nothing in *val* and sets `ios_base::failbit` in `state`. It returns an iterator designating the first element beyond any prefix of a valid integer input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `state`.
+matches sequential elements beginning at *first* in the sequence `[first, last)` until it has recognized a complete, nonempty integer input field. If successful, it converts this field to its equivalent value as type **`long`**, and stores the result in *val*. It returns an iterator designating the first element beyond the numeric input field. Otherwise, the function stores nothing in *val* and sets `ios_base::failbit` in `state`. It returns an iterator designating the first element beyond any prefix of a valid integer input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `state`.
 
-The integer input field is converted by the same rules used by the scan functions for matching and converting a series of **char** elements from a file. (Each such **char** element is assumed to map to an equivalent element of type `Elem` by a simple, one-to-one, mapping.) The equivalent scan conversion specification is determined as follows:
+The integer input field is converted by the same rules used by the scan functions for matching and converting a series of **`char`** elements from a file. (Each such **`char`** element is assumed to map to an equivalent element of type `Elem` by a simple, one-to-one, mapping.) The equivalent scan conversion specification is determined as follows:
 
 If `iosbase.`[ios_base::flags](../standard-library/ios-base-class.md#flags)`() & ios_base::basefield == ios_base::`[oct](../standard-library/ios-functions.md#oct), the conversion specification is `lo`.
 
@@ -214,7 +214,7 @@ virtual iter_type do_get(
     unsigned long& val) const;
 ```
 
-behaves the same as the first, except that it replaces a conversion specification of `ld` with `lu`. If successful it converts the numeric input field to a value of type **unsigned long** and stores that value in *val*.
+behaves the same as the first, except that it replaces a conversion specification of `ld` with `lu`. If successful it converts the numeric input field to a value of type **`unsigned long`** and stores that value in *val*.
 
 The fifth virtual protected member function:
 
@@ -227,7 +227,7 @@ virtual iter_type do_get(
     long long& val) const;
 ```
 
-behaves the same as the first, except that it replaces a conversion specification of `ld` with `lld`. If successful it converts the numeric input field to a value of type **long long** and stores that value in *val*.
+behaves the same as the first, except that it replaces a conversion specification of `ld` with `lld`. If successful it converts the numeric input field to a value of type **`long long`** and stores that value in *val*.
 
 The sixth virtual protected member function:
 
@@ -240,7 +240,7 @@ virtual iter_type do_get(
     unsigned long long& val) const;
 ```
 
-behaves the same as the first, except that it replaces a conversion specification of `ld` with `llu`. If successful it converts the numeric input field to a value of type **unsigned long long** and stores that value in *val*.
+behaves the same as the first, except that it replaces a conversion specification of `ld` with `llu`. If successful it converts the numeric input field to a value of type **`unsigned long long`** and stores that value in *val*.
 
 The seventh virtual protected member function:
 
@@ -305,7 +305,7 @@ virtual iter_type do_get(
     bool& val) const;
 ```
 
-behaves the same as the first, except that it endeavors to match a complete, nonempty Boolean input field. If successful it converts the Boolean input field to a value of type **bool** and stores that value in *val*.
+behaves the same as the first, except that it endeavors to match a complete, nonempty Boolean input field. If successful it converts the Boolean input field to a value of type **`bool`** and stores that value in *val*.
 
 A Boolean input field takes one of two forms. If `iosbase.flags() & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) is false, it is the same as an integer input field, except that the converted value must be either 0 (for false) or 1 (for true). Otherwise, the sequence must match either `fac.`[numpunct::falsename](../standard-library/numpunct-class.md#falsename)`()` (for false), or `fac.`[numpunct::truename](../standard-library/numpunct-class.md#truename)`()` (for true).
 
@@ -421,9 +421,9 @@ The iterator after the value has been read.
 
 All member functions return [do_get](#do_get)`( first, last, iosbase, state, val)`.
 
-The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty integer input field. If successful, it converts this field to its equivalent value as type **long** and stores the result in *val*. It returns an iterator designating the first element beyond the numeric input field. Otherwise, the function stores nothing in *val* and sets `ios_base::failbit` in *state*. It returns an iterator designating the first element beyond any prefix of a valid integer input field. In either case, if the return value equals *last*, the function sets `ios_base::eofbit` in *state*.
+The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty integer input field. If successful, it converts this field to its equivalent value as type **`long`** and stores the result in *val*. It returns an iterator designating the first element beyond the numeric input field. Otherwise, the function stores nothing in *val* and sets `ios_base::failbit` in *state*. It returns an iterator designating the first element beyond any prefix of a valid integer input field. In either case, if the return value equals *last*, the function sets `ios_base::eofbit` in *state*.
 
-The integer input field is converted by the same rules used by the scan functions for matching and converting a series of **char** elements from a file. Each such **char** element is assumed to map to an equivalent element of type `CharType` by a simple, one-to-one mapping. The equivalent scan conversion specification is determined as follows:
+The integer input field is converted by the same rules used by the scan functions for matching and converting a series of **`char`** elements from a file. Each such **`char`** element is assumed to map to an equivalent element of type `CharType` by a simple, one-to-one mapping. The equivalent scan conversion specification is determined as follows:
 
 - If `iosbase.`[flags](../standard-library/ios-base-class.md#flags)`& ios_base::basefield == ios_base::`[oct](../standard-library/ios-functions.md#oct), the conversion specification is `lo`.
 
@@ -451,7 +451,7 @@ virtual iter_type do_get(iter_type first,
     unsigned long& val) const;
 ```
 
-behaves the same as the first, except that it replaces a conversion specification of `ld` with `lu`. If successful, it converts the numeric input field to a value of type **unsigned long** and stores that value in *val*.
+behaves the same as the first, except that it replaces a conversion specification of `ld` with `lu`. If successful, it converts the numeric input field to a value of type **`unsigned long`** and stores that value in *val*.
 
 The third virtual protected member function:
 
@@ -499,9 +499,9 @@ virtual iter_type do_get(iter_type first,
     bool& val) const;
 ```
 
-behaves the same as the first, except that it tries to match a complete, nonempty boolean input field. If successful it converts the Boolean input field to a value of type **bool** and stores that value in *val*.
+behaves the same as the first, except that it tries to match a complete, nonempty boolean input field. If successful it converts the Boolean input field to a value of type **`bool`** and stores that value in *val*.
 
-A boolean input field takes one of two forms. If `iosbase.flags & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) is **false**, it is the same as an integer input field, except that the converted value must be either 0 (for **false**) or 1 (for **true**). Otherwise, the sequence must match either `fac.`[falsename](../standard-library/numpunct-class.md#falsename) (for **false**), or `fac.`[truename](../standard-library/numpunct-class.md#truename) (for **true**).
+A boolean input field takes one of two forms. If `iosbase.flags & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) is **`false`**, it is the same as an integer input field, except that the converted value must be either 0 (for **`false`**) or 1 (for **`true`**). Otherwise, the sequence must match either `fac.`[falsename](../standard-library/numpunct-class.md#falsename) (for **`false`**), or `fac.`[truename](../standard-library/numpunct-class.md#truename) (for **`true`**).
 
 ### Example
 

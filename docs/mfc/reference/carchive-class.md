@@ -102,7 +102,7 @@ The `CArchive` destructor will normally call `Close`, which will flush any data 
 
 When catching these exceptions, it is a good idea to use `Abort`, so that destructing the `CArchive` object doesn't cause further exceptions. When handling exceptions, `CArchive::Abort` will not throw an exception on failures because, unlike [CArchive::Close](#close), `Abort` ignores failures.
 
-If you used **new** to allocate the `CArchive` object on the heap, then you must delete it after closing the file.
+If you used **`new`** to allocate the `CArchive` object on the heap, then you must delete it after closing the file.
 
 ### Example
 
@@ -395,7 +395,7 @@ The [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) insertion opera
 
 ### Example
 
-This example demonstrates the use of the `CArchive` insertion operator << with the **int** and **long** types.
+This example demonstrates the use of the `CArchive` insertion operator << with the **`int`** and **`long`** types.
 
 [!code-cpp[NVC_MFCSerialization#31](../../mfc/codesnippet/cpp/carchive-class_12.cpp)]
 
@@ -475,7 +475,7 @@ The [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) extraction oper
 
 ### Example
 
-This example demonstrates the use of the `CArchive` extraction operator >> with the **int** type.
+This example demonstrates the use of the `CArchive` extraction operator >> with the **`int`** type.
 
 [!code-cpp[NVC_MFCSerialization#33](../../mfc/codesnippet/cpp/carchive-class_14.cpp)]
 

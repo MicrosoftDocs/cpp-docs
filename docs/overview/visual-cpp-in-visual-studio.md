@@ -92,7 +92,7 @@ Learn how to create traditional native C++ desktop applications for Windows.
 [.NET Programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 Learn how to create DLLs that enable interoperability between native C++ and .NET programs written in languages such as C# or Visual Basic.
 
-[Linux Programming](../linux/index.md)<br/>
+[Linux Programming](../linux/index.yml)<br/>
 Use the Visual Studio IDE to code and deploy to a remote Linux machine for compilation with GCC.
 
 [Create C/C++ DLLs in Visual Studio](../build/dlls-in-visual-cpp.md)<br/>

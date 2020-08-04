@@ -1,7 +1,7 @@
 ---
 title: "floor, floorf, floorl"
-ms.date: "4/2/2020"
-api_name: ["floorf", "floorl", "floor", "_o_floor"]
+ms.date: "6/5/2020"
+api_name: ["floorf", "floorl", "floor", "_o_floor", "_o_floorf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
@@ -50,7 +50,7 @@ The **floor** functions return a floating-point value that represents the larges
 
 ## Remarks
 
-C++ allows overloading, so you can call overloads of **floor** that take and return **float** and **long** **double** values. In a C program, **floor** always takes and returns a **double**.
+C++ allows overloading, so you can call overloads of **floor** that take and return **`float`** and **`long double`** values. In a C program, **floor** always takes and returns a **`double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

@@ -8,15 +8,15 @@ ms.assetid: cc20af37-b658-406d-8148-7670737f4c03
 
 Active documents can be displayed either in the entire client window of a Web browser, such as Internet Explorer 5.5, or in an Active container, such as the Microsoft Office Binder, that supports Active documents.
 
-[CDocObjectServer](../mfc/reference/cdocobjectserver-class.md)<br/>
+[CDocObjectServer](reference/cdocobjectserver-class.md)<br/>
 Maps the Active document interfaces, and initializes and activates an Active document object.
 
-[CDocObjectServerItem](../mfc/reference/cdocobjectserveritem-class.md)<br/>
+[CDocObjectServerItem](reference/cdocobjectserveritem-class.md)<br/>
 Implements OLE server verbs specifically for Active document servers.
 
-[COleDocObjectItem](../mfc/reference/coledocobjectitem-class.md)<br/>
+[COleDocObjectItem](reference/coledocobjectitem-class.md)<br/>
 Implements Active document containment.
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

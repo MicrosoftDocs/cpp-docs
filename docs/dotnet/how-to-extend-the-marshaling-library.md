@@ -64,7 +64,7 @@ namespace msclr {
 
 1. Replace the comment about setting `toObject` with code to set `toObject` to your converted object.
 
-1. Replace the comment about cleaning up native resources with code to free any memory allocated by `toPtr`. If `toPtr` allocated memory by using `new`, use `delete` to free the memory.
+1. Replace the comment about cleaning up native resources with code to free any memory allocated by `toPtr`. If `toPtr` allocated memory by using **`new`**, use **`delete`** to free the memory.
 
 ```
 namespace msclr {

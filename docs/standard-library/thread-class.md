@@ -17,7 +17,7 @@ class thread;
 
 ## Remarks
 
-You can use a **thread** object to observe and manage a thread of execution within an application. A thread object that's created by using the default constructor is not associated with any thread of execution. A thread object that's constructed by using a callable object creates a new thread of execution and calls the callable object in that thread. Thread objects can be moved but not copied. Therefore, a thread of execution can be associated with only one thread object.
+You can use a `thread` object to observe and manage a thread of execution within an application. A thread object that's created by using the default constructor is not associated with any thread of execution. A thread object that's constructed by using a callable object creates a new thread of execution and calls the callable object in that thread. Thread objects can be moved but not copied. Therefore, a thread of execution can be associated with only one thread object.
 
 Every thread of execution has a unique identifier of type `thread::id`. The function `this_thread::get_id` returns the identifier of the calling thread. The member function `thread::get_id` returns the identifier of the thread that's managed by a thread object. For a default-constructed thread object, the `thread::get_id` method returns an object that has a value that's the same for all default-constructed thread objects and different from the value that's returned by `this_thread::get_id` for any thread of execution that could be joined at the time of the call.
 
@@ -33,25 +33,25 @@ Every thread of execution has a unique identifier of type `thread::id`. The func
 
 |Name|Description|
 |----------|-----------------|
-|[thread](#thread)|Constructs a **thread** object.|
+|[thread](#thread)|Constructs a `thread` object.|
 
 ### Public Methods
 
 |Name|Description|
 |----------|-----------------|
-|[detach](#detach)|Detaches the associated thread from the **thread** object.|
+|[detach](#detach)|Detaches the associated thread from the `thread` object.|
 |[get_id](#get_id)|Returns the unique identifier of the associated thread.|
 |[hardware_concurrency](#hardware_concurrency)|Static. Returns an estimate of the number of hardware thread contexts.|
 |[join](#join)|Blocks until the associated thread completes.|
 |[joinable](#joinable)|Specifies whether the associated thread is joinable.|
 |[native_handle](#native_handle)|Returns the implementation-specific type that represents the thread handle.|
-|[swap](#swap)|Swaps the object state with a specified **thread** object.|
+|[swap](#swap)|Swaps the object state with a specified `thread` object.|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
-|[thread::operator=](#op_eq)|Associates a thread with the current **thread** object.|
+|[thread::operator=](#op_eq)|Associates a thread with the current `thread` object.|
 
 ## Requirements
 
@@ -137,7 +137,7 @@ bool joinable() const noexcept;
 
 ### Return Value
 
-**true** if the associated thread is *joinable*; otherwise, **false**.
+**`true`** if the associated thread is *joinable*; otherwise, **`false`**.
 
 ### Remarks
 
@@ -166,7 +166,7 @@ thread& operator=(thread&& Other) noexcept;
 ### Parameters
 
 *Other*\
-A **thread** object.
+A `thread` object.
 
 ### Return Value
 
@@ -180,7 +180,7 @@ After the association is made, `Other` is set to a default-constructed state.
 
 ## <a name="swap"></a> thread::swap
 
-Swaps the object state with that of a specified **thread** object.
+Swaps the object state with that of a specified `thread` object.
 
 ```cpp
 void swap(thread& Other) noexcept;
@@ -189,11 +189,11 @@ void swap(thread& Other) noexcept;
 ### Parameters
 
 *Other*\
-A **thread** object.
+A `thread` object.
 
 ## <a name="thread"></a> thread::thread Constructor
 
-Constructs a **thread** object.
+Constructs a `thread` object.
 
 ```cpp
 thread() noexcept;
@@ -212,7 +212,7 @@ An application-defined function to be executed by the thread.
 A list of arguments to be passed to *F*.
 
 *Other*\
-An existing **thread** object.
+An existing `thread` object.
 
 ### Remarks
 

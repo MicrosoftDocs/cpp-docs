@@ -94,7 +94,7 @@ Potential message-map entries are as follows:
 
 If you create a `CButton` object from a dialog resource, the `CButton` object is automatically destroyed when the user closes the dialog box.
 
-If you create a `CButton` object within a window, you may need to destroy it. If you create the `CButton` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the user closes the Windows button control. If you create the `CButton` object on the stack, or it is embedded in the parent dialog object, it is destroyed automatically.
+If you create a `CButton` object within a window, you may need to destroy it. If you create the `CButton` object on the heap by using the **`new`** function, you must call **`delete`** on the object to destroy it when the user closes the Windows button control. If you create the `CButton` object on the stack, or it is embedded in the parent dialog object, it is destroyed automatically.
 
 ## Inheritance Hierarchy
 
@@ -732,7 +732,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-If a button or command link control requires elevated security permission to perform an action, set the control to `elevation required` state. Subsequently, Windows displays the User Account Control (UAC) shield icon on the control. For more information, see "User Account Control" at [MSDN](https://go.microsoft.com/fwlink/p/?linkid=18507).
+If a button or command link control requires elevated security permission to perform an action, set the control to `elevation required` state. Subsequently, Windows displays the User Account Control (UAC) shield icon on the control. For more information, see [User Account Control](/windows/win32/uxguide/winenv-uac).
 
 This method sends the [BCM_SETSHIELD](/windows/win32/Controls/bcm-setshield) message, which is described in the Windows SDK.
 

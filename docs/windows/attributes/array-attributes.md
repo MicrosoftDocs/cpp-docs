@@ -12,7 +12,7 @@ The following attributes apply to arrays or `SAFEARRAY`s.
 |---------------|-----------------|
 |[library_block](library-block.md)|Places a construct inside the .idl file's library block.|
 |[satype](satype.md)|Specifies the data type of the `SAFEARRAY` structure.|
-|[string](string-cpp.md)|Indicates that the one-dimensional **char**, **wchar_t**, `byte` (or equivalent) array or the pointer to such an array must be treated as a string.|
+|[string](string-cpp.md)|Indicates that the one-dimensional **`char`**, **`wchar_t`**, `byte` (or equivalent) array or the pointer to such an array must be treated as a string.|
 
 ## See also
 

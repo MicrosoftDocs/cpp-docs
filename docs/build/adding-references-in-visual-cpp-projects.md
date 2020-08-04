@@ -89,11 +89,11 @@ The following properties are available on various kinds of references. They enab
 
 - **Copy Local Satellite Assemblies (C++/CLI)**
 
-   Specifies whether to automatically copy the satellite assemblies of the referenced assembly to the target location during a build. Only used if **Copy Local** is **true**.
+   Specifies whether to automatically copy the satellite assemblies of the referenced assembly to the target location during a build. Only used if **Copy Local** is **`true`**.
 
 - **Reference Assembly Output**
 
-   Specifies that this assembly is used in the build process. If **true**, the assembly is used on the compiler command line during the build.
+   Specifies that this assembly is used in the build process. If **`true`**, the assembly is used on the compiler command line during the build.
 
 ### Project-to-project reference properties
 
@@ -149,7 +149,7 @@ The following properties are found on COM and .NET assembly references, and cann
 
 - **Strong Name**
 
-   `true` if the referenced assembly has a strong name. A strong named assembly is uniquely versioned.
+   **`true`** if the referenced assembly has a strong name. A strong named assembly is uniquely versioned.
 
 - **Version**
 

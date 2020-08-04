@@ -38,8 +38,8 @@ class AFX_NOVTABLE CObject
 
 |Name|Description|
 |----------|-----------------|
-|[CObject::operator delete](#operator_delete)|Special **delete** operator.|
-|[CObject::operator new](#operator_new)|Special **new** operator.|
+|[CObject::operator delete](#operator_delete)|Special **`delete`** operator.|
+|[CObject::operator new](#operator_new)|Special **`new`** operator.|
 
 ## Remarks
 
@@ -85,7 +85,7 @@ virtual void AssertValid() const;
 
 When you write your own class, you should override the `AssertValid` function to provide diagnostic services for yourself and other users of your class. The overridden `AssertValid` usually calls the `AssertValid` function of its base class before checking data members unique to the derived class.
 
-Because `AssertValid` is a **const** function, you are not permitted to change the object state during the test. Your own derived class `AssertValid` functions should not throw exceptions but rather should assert whether they detect invalid object data.
+Because `AssertValid` is a **`const`** function, you are not permitted to change the object state during the test. Your own derived class `AssertValid` functions should not throw exceptions but rather should assert whether they detect invalid object data.
 
 The definition of "validity" depends on the object's class. As a rule, the function should perform a "shallow check." That is, if an object contains pointers to other objects, it should check to see whether the pointers are not null, but it should not perform validity testing on the objects referred to by the pointers.
 
@@ -147,7 +147,7 @@ When you write your own class, you should override the `Dump` function to provid
 
 `Dump` calls make sense only in the Debug version of the Microsoft Foundation Class Library. You should bracket calls, function declarations, and function implementations with **#ifdef _DEBUG**/ `#endif` statements for conditional compilation.
 
-Since `Dump` is a **const** function, you are not permitted to change the object state during the dump.
+Since `Dump` is a **`const`** function, you are not permitted to change the object state during the dump.
 
 The [CDumpContext insertion (<<) operator](../../mfc/reference/cdumpcontext-class.md#operator_lt_lt) calls `Dump` when a `CObject` pointer is inserted.
 
@@ -251,7 +251,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 ## <a name="operator_delete"></a> CObject::operator delete
 
-For the Release version of the library, operator **delete** frees the memory allocated by operator **new**.
+For the Release version of the library, operator **`delete`** frees the memory allocated by operator **`new`**.
 
 ```cpp
 void PASCAL operator delete(void* p);
@@ -268,17 +268,17 @@ void PASCAL operator delete(
 
 ### Remarks
 
-In the Debug version, operator **delete** participates in an allocation-monitoring scheme designed to detect memory leaks.
+In the Debug version, operator **`delete`** participates in an allocation-monitoring scheme designed to detect memory leaks.
 
 If you use the code line
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/cobject-class_7.cpp)]
 
-before any of your implementations in a .CPP file, then the third version of **delete** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.
+before any of your implementations in a .CPP file, then the third version of **`delete`** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.
 
 Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.
 
-If you override operators **new** and **delete**, you forfeit this diagnostic capability.
+If you override operators **`new`** and **`delete`**, you forfeit this diagnostic capability.
 
 ### Example
 
@@ -288,7 +288,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 ## <a name="operator_new"></a> CObject::operator new
 
-For the Release version of the library, operator **new** performs an optimal memory allocation in a manner similar to `malloc`.
+For the Release version of the library, operator **`new`** performs an optimal memory allocation in a manner similar to `malloc`.
 
 ```cpp
 void* PASCAL operator new(size_t nSize);
@@ -302,18 +302,18 @@ void* PASCAL operator new(
 
 ### Remarks
 
-In the Debug version, operator **new** participates in an allocation-monitoring scheme designed to detect memory leaks.
+In the Debug version, operator **`new`** participates in an allocation-monitoring scheme designed to detect memory leaks.
 
 If you use the code line
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/cobject-class_7.cpp)]
 
-before any of your implementations in a .CPP file, then the second version of **new** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.
+before any of your implementations in a .CPP file, then the second version of **`new`** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.
 
 Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.
 
 > [!NOTE]
-> If you override this operator, you must also override **delete**. Do not use the standard library `_new_handler` function.
+> If you override this operator, you must also override **`delete`**. Do not use the standard library `_new_handler` function.
 
 ### Example
 

@@ -195,7 +195,7 @@ The default kernel-mode stack in Windows is three pages (12 KB). Be careful not 
 
 Enumerations are 32-bit integer types unless at least one value in the enumeration requires 64-bit double-word storage. In that case, the enumeration is promoted to a 64-bit integer type.
 
-`wchar_t` is defined to be equivalent to `unsigned short`, to preserve compatibility with other platforms.
+**`wchar_t`** is defined to be equivalent to **`unsigned short`**, to preserve compatibility with other platforms.
 
 ## Stack walking
 

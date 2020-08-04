@@ -33,7 +33,7 @@ The type of the object that provides the value.
 
 ### Remarks
 
-The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both *From* and *To* must be complete types, **void**, or arrays of unknown bound.
+The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both *From* and *To* must be complete types, **`void`**, or arrays of unknown bound.
 
 ## <a name="is_copy_assignable"></a> is_copy_assignable
 
@@ -121,7 +121,7 @@ The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type *T* is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type *T* must be a complete type, **void**, or an array of unknown bound.
+An instance of the type predicate holds true if the type *T* is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type *T* must be a complete type, **`void`**, or an array of unknown bound.
 
 ### Example
 
@@ -195,7 +195,7 @@ A type predicate that evaluates to true if the type *T* can be constructed by us
 
 ## <a name="is_nothrow_move_assignable"></a> is_nothrow_move_assignable
 
-Tests whether type has a **nothrow** move assignment operator.
+Tests whether type has a **`nothrow`** move assignment operator.
 
 ```cpp
 template <class Ty>

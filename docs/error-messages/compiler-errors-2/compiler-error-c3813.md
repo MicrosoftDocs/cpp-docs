@@ -9,7 +9,7 @@ ms.assetid: ffdbc489-71bf-4cd6-988c-f824c9ab3ceb
 
 a property declaration can only appear within the definition of a managed or WinRT type
 
-A [property](../../dotnet/how-to-use-properties-in-cpp-cli.md) can only be declared within a managed or Windows Runtime type. Native types do not support the `property` keyword.
+A [property](../../dotnet/how-to-use-properties-in-cpp-cli.md) can only be declared within a managed or Windows Runtime type. Native types do not support the **`property`** keyword.
 
 ## Example
 

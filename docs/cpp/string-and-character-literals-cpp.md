@@ -62,23 +62,23 @@ String literals can have no prefix, or `u8`, `L`, `u`, and  `U` prefixes to deno
 
 A *character literal* is composed of a constant character. It's represented by the character surrounded by single quotation marks. There are five kinds of character literals:
 
-- Ordinary character literals of type **char**, for example `'a'`
+- Ordinary character literals of type **`char`**, for example `'a'`
 
-- UTF-8 character literals of type **char** (**char8_t** in C++20), for example `u8'a'`
+- UTF-8 character literals of type **`char`** (**`char8_t`** in C++20), for example `u8'a'`
 
-- Wide-character literals of type `wchar_t`, for example `L'a'`
+- Wide-character literals of type **`wchar_t`**, for example `L'a'`
 
-- UTF-16 character literals of type `char16_t`, for example `u'a'`
+- UTF-16 character literals of type **`char16_t`**, for example `u'a'`
 
-- UTF-32 character literals of type `char32_t`, for example `U'a'`
+- UTF-32 character literals of type **`char32_t`**, for example `U'a'`
 
-The character used for a character literal may be any character, except for the reserved characters backslash ('\\'), single quotation mark ('), or newline. Reserved characters can be specified by using an escape sequence. Characters may be specified by using universal character names, as long as the type is large enough to hold the character.
+The character used for a character literal may be any character, except for the reserved characters backslash (**`\`**), single quotation mark (**`'`**), or newline. Reserved characters can be specified by using an escape sequence. Characters may be specified by using universal character names, as long as the type is large enough to hold the character.
 
 ### Encoding
 
 Character literals are encoded differently based their prefix.
 
-- A character literal without a prefix is an ordinary character literal. The value of an ordinary character literal containing a single character, escape sequence, or universal character name that can be represented in the execution character set has a value equal to the numerical value of its encoding in the execution character set. An ordinary character literal that contains more than one character, escape sequence, or universal character name is a *multicharacter literal*. A multicharacter literal or an ordinary character literal that can't be represented in the execution character set has type **int**, and its value is implementation-defined. For MSVC, see the **Microsoft-specific** section below.
+- A character literal without a prefix is an ordinary character literal. The value of an ordinary character literal containing a single character, escape sequence, or universal character name that can be represented in the execution character set has a value equal to the numerical value of its encoding in the execution character set. An ordinary character literal that contains more than one character, escape sequence, or universal character name is a *multicharacter literal*. A multicharacter literal or an ordinary character literal that can't be represented in the execution character set has type **`int`**, and its value is implementation-defined. For MSVC, see the **Microsoft-specific** section below.
 
 - A character literal that begins with the `L` prefix is a wide-character literal. The value of a wide-character literal containing a single character, escape sequence, or universal character name has a value equal to the numerical value of its encoding in the execution wide-character set unless the character literal has no representation in the execution wide-character set, in which case the value is implementation-defined. The value of a wide-character literal containing multiple characters, escape sequences, or universal character names is implementation-defined. For MSVC, see the **Microsoft-specific** section below.
 
@@ -142,11 +142,11 @@ Null character:  ending
 */
 ```
 
-The backslash character (\\) is a line-continuation character when it's placed at the end of a line. If you want a backslash character to appear as a character literal, you must type two backslashes in a row (`\\`). For more information about the line continuation character, see [Phases of Translation](../preprocessor/phases-of-translation.md).
+The backslash character (**`\`**) is a line-continuation character when it's placed at the end of a line. If you want a backslash character to appear as a character literal, you must type two backslashes in a row (**`\\`**). For more information about the line continuation character, see [Phases of Translation](../preprocessor/phases-of-translation.md).
 
 #### Microsoft-specific
 
-To create a value from a narrow multicharacter literal, the compiler converts the character or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. The compiler then converts the integer to the destination type following the usual rules. For example, to create a **char** value, the compiler takes the low-order byte. To create a **wchar_t** or `char16_t` value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.
+To create a value from a narrow multicharacter literal, the compiler converts the character or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. The compiler then converts the integer to the destination type following the usual rules. For example, to create a **`char`** value, the compiler takes the low-order byte. To create a **`wchar_t`** or **`char16_t`** value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.
 
 ```cpp
 char c0    = 'abcd';    // C4305, C4309, truncates to 'd'
@@ -236,7 +236,7 @@ const char* str2 = u8"\U0001F607 is O:-)";
 
 ### Wide string literals
 
-A wide string literal is a null-terminated array of constant **wchar_t** that is prefixed by '`L`' and contains any graphic character except the double quotation mark ("), backslash (\\), or newline character. A wide string literal may contain the escape sequences listed above and any universal character name.
+A wide string literal is a null-terminated array of constant **`wchar_t`** that is prefixed by '`L`' and contains any graphic character except the double quotation mark (**`"`**), backslash (**`\`**), or newline character. A wide string literal may contain the escape sequences listed above and any universal character name.
 
 ```cpp
 const wchar_t* wide = L"zyxw";
@@ -245,7 +245,7 @@ const wchar_t* newline = L"hello\ngoodbye";
 
 #### char16_t and char32_t (C++11)
 
-C++11 introduces the portable `char16_t` (16-bit Unicode) and `char32_t` (32-bit Unicode) character types:
+C++11 introduces the portable **`char16_t`** (16-bit Unicode) and **`char32_t`** (32-bit Unicode) character types:
 
 ```cpp
 auto s3 = u"hello"; // const char16_t*
@@ -254,7 +254,7 @@ auto s4 = U"hello"; // const char32_t*
 
 ### Raw string literals (C++11)
 
-A raw string literal is a null-terminated array—of any character type—that contains any graphic character, including the double quotation mark ("), backslash (\\), or newline character. Raw string literals are often used in regular expressions that use character classes, and in HTML strings and XML strings. For examples, see the following article: [Bjarne Stroustrup's FAQ on C++11](http://www.stroustrup.com/C++11FAQ.html).
+A raw string literal is a null-terminated array—of any character type—that contains any graphic character, including the double quotation mark (**`"`**), backslash (**`\`**), or newline character. Raw string literals are often used in regular expressions that use character classes, and in HTML strings and XML strings. For examples, see the following article: [Bjarne Stroustrup's FAQ on C++11](http://www.stroustrup.com/C++11FAQ.html).
 
 ```cpp
 // represents the string: An unescaped \ character
@@ -311,7 +311,7 @@ u32string str6{ UR"(She said "hello.")"s };
 
 ### Size of string literals
 
-For ANSI `char*` strings and other single-byte encodings (but not UTF-8), the size (in bytes) of a string literal is the number of characters plus 1 for the terminating null character. For all other string types, the size isn't strictly related to the number of characters. UTF-8 uses up to four **char** elements to encode some *code units*, and `char16_t` or `wchar_t` encoded as UTF-16 may use two elements (for a total of four bytes) to encode a single *code unit*. This example shows the size of a wide string literal in bytes:
+For ANSI `char*` strings and other single-byte encodings (but not UTF-8), the size (in bytes) of a string literal is the number of characters plus 1 for the terminating null character. For all other string types, the size isn't strictly related to the number of characters. UTF-8 uses up to four **`char`** elements to encode some *code units*, and **`char16_t`** or **`wchar_t`** encoded as UTF-16 may use two elements (for a total of four bytes) to encode a single *code unit*. This example shows the size of a wide string literal in bytes:
 
 ```cpp
 const wchar_t* str = L"Hello!";
@@ -328,21 +328,21 @@ Because string literals (not including `std::string` literals) are constants, tr
 
 #### Microsoft-specific
 
-In Microsoft C++, you can use a string literal to initialize a pointer to non-const **char** or **wchar_t**. This non-const initialization is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:
+In Microsoft C++, you can use a string literal to initialize a pointer to non-const **`char`** or **`wchar_t`**. This non-const initialization is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:
 
 ```cpp
 wchar_t* str = L"hello";
 str[2] = L'a'; // run-time error: access violation
 ```
 
-You can cause the compiler to emit an error when a string literal is converted to a non-const character pointer when you set the [/Zc:strictStrings (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-compliant portable code. It's also a good practice to use the **auto** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:
+You can cause the compiler to emit an error when a string literal is converted to a non-const character pointer when you set the [`/Zc:strictStrings` (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-compliant portable code. It's also a good practice to use the **`auto`** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:
 
 ```cpp
 auto str = L"hello";
 str[2] = L'a'; // C3892: you cannot assign to a variable that is const.
 ```
 
-In some cases, identical string literals may be pooled to save space in the executable file. In string-literal pooling, the compiler causes all references to a particular string literal to point to the same location in memory, instead of having each reference point to a separate instance of the string literal. To enable string pooling, use the [/GF](../build/reference/gf-eliminate-duplicate-strings.md) compiler option.
+In some cases, identical string literals may be pooled to save space in the executable file. In string-literal pooling, the compiler causes all references to a particular string literal to point to the same location in memory, instead of having each reference point to a separate instance of the string literal. To enable string pooling, use the [`/GF`](../build/reference/gf-eliminate-duplicate-strings.md) compiler option.
 
 The **Microsoft-specific** section ends here.
 
@@ -380,7 +380,7 @@ The actual result is a hexadecimal 5F, which is the ASCII code for an underscore
 "\x05" "five"  // Use string splicing.
 ```
 
-`std::string` literals, because they're `std::string` types, can be concatenated with the `+` operator that is defined for [basic_string](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
+`std::string` literals, because they're `std::string` types, can be concatenated with the **`+`** operator that is defined for [`basic_string`](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
 
 ```cpp
 auto x1 = "hello" " " " world"; // OK

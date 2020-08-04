@@ -39,13 +39,13 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 |||
 |-|-|
-|[element_type](#element_type)|A type that is a synonym for the data type **bool** and can be used to reference element bits in a `bitset`.|
+|[element_type](#element_type)|A type that is a synonym for the data type **`bool`** and can be used to reference element bits in a `bitset`.|
 
 ### Functions
 
 |||
 |-|-|
-|[all](#all)|Tests all of the bits in this `bitset` to determine whether they are all set to **true**.|
+|[all](#all)|Tests all of the bits in this `bitset` to determine whether they are all set to **`true`**.|
 |[any](#any)|The member function tests whether any bit in the sequence is set to 1.|
 |[count](#count)|The member function returns the number of bits set in the bit sequence.|
 |[flip](#flip)|Inverts the value of all the bits in a `bitset` or inverts a single bit at a specified position.|
@@ -55,8 +55,8 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |[size](#size)|Returns the number of bits in a `bitset` object.|
 |[test](#test)|Tests whether the bit at a specified position in a `bitset` is set to 1.|
 |[to_string](#to_string)|Converts a `bitset` object to a string representation.|
-|[to_ullong](#to_ullong)|Returns the sum of the bit values in the `bitset` as an **unsigned long long**.|
-|[to_ulong](#to_ulong)|Converts a `bitset` object to the **unsigned long** that would generate the sequence of bits contained if used to initialize the `bitset`.|
+|[to_ullong](#to_ullong)|Returns the sum of the bit values in the `bitset` as an **`unsigned long long`**.|
+|[to_ulong](#to_ulong)|Converts a `bitset` object to the **`unsigned long`** that would generate the sequence of bits contained if used to initialize the `bitset`.|
 
 ### Classes
 
@@ -96,7 +96,7 @@ bool all() const;
 
 #### Return Value
 
-Returns true if all bits in this set are true. Returns **false** if one or more bits are false.
+Returns true if all bits in this set are true. Returns **`false`** if one or more bits are false.
 
 ### <a name="any"></a> any
 
@@ -108,7 +108,7 @@ bool any() const;
 
 #### Return Value
 
-**true** if any bit in the bitset is set to 1; **false** if all the bits are 0.
+**`true`** if any bit in the bitset is set to 1; **`false`** if all the bits are 0.
 
 #### Example
 
@@ -221,7 +221,7 @@ Three constructors can be used to construct obects of class `bitset\<N>`:
 
 - The first constructor accepts no parameters, constructs an object of class `bitset\<N>` and initializes all N bits to a default value of zero.
 
-- The second constructor constructs an object of class `bitset\<N>` and initializes the bits by using the single **unsigned long long** parameter.
+- The second constructor constructs an object of class `bitset\<N>` and initializes the bits by using the single **`unsigned long long`** parameter.
 
 - The third constructor constructs an object of class `bitset\<N>`, initializing the N bits to values that correspond to the characters provided in a c-style character string of zeros and ones. You call the constructor without casting the string into a string type: `bitset<5> b5("01011");`
 
@@ -362,7 +362,7 @@ The number of bits in the bitset set to 1 is: 4.
 
 ### <a name="element_type"></a> element_type
 
-A type that is a synonym for the data type **bool** and can be used to reference element bits in a bitset.
+A type that is a synonym for the data type **`bool`** and can be used to reference element bits in a bitset.
 
 ```cpp
 typedef bool element_type;
@@ -506,7 +506,7 @@ bool none() const;
 
 #### Return Value
 
-**true** if no bit in the bitset has been set to 1; **false** if at least one bit has been set to 1.
+**`true`** if no bit in the bitset has been set to 1; **`false`** if at least one bit has been set to 1.
 
 #### Example
 
@@ -568,7 +568,7 @@ The bitset that is to be compared to the target bitset for inequality.
 
 #### Return Value
 
-**true** if the bitsets are different; **false** if they are the same.
+**`true`** if the bitsets are different; **`false`** if they are the same.
 
 #### Remarks
 
@@ -634,7 +634,7 @@ The modified target bitset that results from the bitwise `AND` operation with th
 
 #### Remarks
 
-Two bits combined by the `AND` operator return **true** if each bit is true; otherwise, their combination returns **false**.
+Two bits combined by the `AND` operator return **`true`** if each bit is true; otherwise, their combination returns **`false`**.
 
 Bitsets must be of the same size to be combined bitwise with the `AND` operator by the member operator function.
 
@@ -796,7 +796,7 @@ The bitset that is to be compared to the target bitset for equality.
 
 #### Return Value
 
-**true** if the bitsets are the same; **false** if they are different.
+**`true`** if the bitsets are the same; **`false`** if they are different.
 
 #### Remarks
 
@@ -1006,7 +1006,7 @@ The modified target bitset that results from the bitwise exclusive `OR` operatio
 
 #### Remarks
 
-Two bits combined by the exclusive **OR** operator return **true** if at least one, but not both, of the bits is **true**; otherwise, their combination returns **false**.
+Two bits combined by the exclusive **OR** operator return **`true`** if at least one, but not both, of the bits is **`true`**; otherwise, their combination returns **`false`**.
 
 Bitsets must be of the same size to be combined bitwise with the exclusive `OR` operator by the member operator function.
 
@@ -1072,7 +1072,7 @@ The modified target bitset that results from the bitwise inclusive `OR` operatio
 
 #### Remarks
 
-Two bits combined by the inclusive `OR` operator return **true** if at least one of the bits is **true**; if both bits are **false**, their combination returns **false**.
+Two bits combined by the inclusive `OR` operator return **`true`** if at least one of the bits is **`true`**; if both bits are **`false`**, their combination returns **`false`**.
 
 Bitsets must be of the same size to be combined bitwise with the inclusive `OR` operator by the member operator function.
 
@@ -1184,25 +1184,25 @@ public:
 #### Parameters
 
 *val*\
-The value of the object of type **bool** to be assigned to a bit in a bitset.
+The value of the object of type **`bool`** to be assigned to a bit in a bitset.
 
 *_Bitref*\
 A reference of the form *x [ i ]* to the bit at position *i* in bitset *x*.
 
 #### Return Value
 
-A reference to the bit in the bitset specified by the argument position for the first, second, and fifth member functions of class reference, and **true** or **false**, to reflect the value of the modified bit in the bitset for the third and fourth member functions of class reference.
+A reference to the bit in the bitset specified by the argument position for the first, second, and fifth member functions of class reference, and **`true`** or **`false`**, to reflect the value of the modified bit in the bitset for the third and fourth member functions of class reference.
 
 #### Remarks
 
-The class `reference` exists only as a helper class for the bitset `operator[]`. The member class describes an object that can access an individual bit within a bitset. Let *b* be an object of type **bool**, *x* and *y* objects of type **bitset\<** *N* **>**, and *i* and *j* valid positions within such an object. The notation *x [i]* references the bit at position *i* in bitset *x*. The member functions of class `reference` provide, in order, the following operations:
+The class `reference` exists only as a helper class for the bitset `operator[]`. The member class describes an object that can access an individual bit within a bitset. Let *b* be an object of type **`bool`**, *x* and *y* objects of type **bitset\<** *N* **>**, and *i* and *j* valid positions within such an object. The notation *x [i]* references the bit at position *i* in bitset *x*. The member functions of class `reference` provide, in order, the following operations:
 
 |Operation|Definition|
 |---------------|----------------|
-|*x*[*i*] = *b*|Stores **bool** value *b* at bit position *i* in bitset *x*.|
+|*x*[*i*] = *b*|Stores **`bool`** value *b* at bit position *i* in bitset *x*.|
 |*x*[*i*] = *y*[*j*]|Stores the value of the bit *y*[ *j*] at bit position *i* in bitset *x*.|
-|*b* = ~ *x*[*i*]|Stores the flipped value of the bit *x*[ *i*] in **bool** *b*.|
-|*b* = *x*[*i*]|Stores the value of the bit *x*[ *i*] in **bool** *b*.|
+|*b* = ~ *x*[*i*]|Stores the flipped value of the bit *x*[ *i*] in **`bool`** *b*.|
+|*b* = *x*[*i*]|Stores the value of the bit *x*[ *i*] in **`bool`** *b*.|
 |*x*[*i*]. `flip`( )|Stores the flipped value of the bit *x*[ *i*] back at bit position *i* in *x*.|
 
 #### Example
@@ -1470,7 +1470,7 @@ The position of the bit in the bitset to be tested for its value.
 
 #### Return Value
 
-**true** if the bit specified by the argument position is set to 1; otherwise, **false**.
+**`true`** if the bit specified by the argument position is set to 1; otherwise, **`false`**.
 
 #### Remarks
 
@@ -1526,7 +1526,7 @@ The string returned from the bitset b1
 
 ### <a name="to_ullong"></a> to_ullong
 
-Returns an **unsigned long long** value that contains the same bits set as the contents of the bitset object.
+Returns an **`unsigned long long`** value that contains the same bits set as the contents of the bitset object.
 
 ```cpp
 unsigned long long to_ullong() const;
@@ -1534,15 +1534,15 @@ unsigned long long to_ullong() const;
 
 #### Return value
 
-Returns the sum of the bit values that are in the bit sequence as an **unsigned long long**. This **unsigned long long** value would re-create the same set bits if it is used to initialize a bitset.
+Returns the sum of the bit values that are in the bit sequence as an **`unsigned long long`**. This **`unsigned long long`** value would re-create the same set bits if it is used to initialize a bitset.
 
 #### Exceptions
 
-Throws an [overflow_error](overflow-error-class.md) object if any bit in the bit sequence has a bit value that cannot be represented as a value of type **unsigned long long**.
+Throws an [overflow_error](overflow-error-class.md) object if any bit in the bit sequence has a bit value that cannot be represented as a value of type **`unsigned long long`**.
 
 #### Remarks
 
-Returns the sum of the bit values that are in the bit sequence as an **unsigned long long**.
+Returns the sum of the bit values that are in the bit sequence as an **`unsigned long long`**.
 
 ### <a name="to_ulong"></a> to_ulong
 
@@ -1560,7 +1560,7 @@ An integer that would generate the bits in a bitset if used in the initializatio
 
 Applying the member function would return the integer that has the same sequence of 1 and 0 digits as is found in sequence of bits contained in the bitset.
 
-The member function throws an [overflow_error](overflow-error-class.md) object if any bit in the bit sequence has a bit value that cannot be represented as a value of type **unsigned long**.
+The member function throws an [overflow_error](overflow-error-class.md) object if any bit in the bit sequence has a bit value that cannot be represented as a value of type **`unsigned long`**.
 
 #### Example
 

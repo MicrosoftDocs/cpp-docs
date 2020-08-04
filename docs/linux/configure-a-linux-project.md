@@ -1,6 +1,6 @@
 ---
 title: "Configure a C++ Linux project in Visual Studio"
-ms.date: "06/11/2019"
+ms.date: "06/22/2020"
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
 # Configure a Linux project
@@ -27,7 +27,7 @@ You can configure a Linux project to target a physical Linux machine, a virtual 
 
 ## General settings
 
-To view configuration options, select the **Project > Properties** menu, or right click on the project in **Solution Explorer** and select **Properties** from the context menu. The **General** settings appear.
+To view configuration options, select the **Project > Properties** menu, or right-click on the project in **Solution Explorer** and select **Properties** from the context menu. The **General** settings appear.
 
 ![General configuration](media/settings_general.png)
 
@@ -37,7 +37,7 @@ For more information about the settings in the property pages, see [Linux Projec
 
 ## Remote settings
 
-To change settings pertaining to the remote Linux computer, configure the remote settings that appear under [General](prop-pages/general-linux.md).
+To change settings related to the remote Linux computer, configure the remote settings that appear under [General](prop-pages/general-linux.md).
 
 - To specify a remote target Linux computer, use the **Remote Build Machine** entry. This will allow you to select one of the connections created previously. To create a new entry, see the [Connecting to Your Remote Linux Computer](connect-to-your-remote-linux-computer.md) section.
 
@@ -66,17 +66,17 @@ To change settings pertaining to the remote Linux computer, configure the remote
 
 ::: moniker range="vs-2019"
 
-This section does not apply when targeting WSL.
+This section doesn't apply when targeting WSL.
 
 ::: moniker-end
 
 When building on remote systems, the source files on your development PC are copied to the Linux computer and compiled there. By default, all sources in the Visual Studio project are copied to the locations set in the settings above. However, additional sources can also be added to the list, or copying sources can be turned off entirely, which is the default for a Makefile project.
 
-- **Sources to copy** determines which sources are copied to the remote computer. By default, the **\@(SourcesToCopyRemotely)** defaults to all source code files in the project, but does not include any asset/resource files, such as images.
+- **Sources to copy** determines which sources are copied to the remote computer. By default, the **\@(SourcesToCopyRemotely)** defaults to all source code files in the project, but doesn't include any asset/resource files, such as images.
 
 - **Copy sources** can be turned on and off to enable and disable the copying of source files to the remote computer.
 
-- **Additional sources to copy** allows you to add additional source files which will be copied to the remote system. You can specify a semi-colon delimited list, or you can use the **:=** syntax to specify a local and remote name to use:
+- **Additional sources to copy** allows you to add additional source files, which will be copied to the remote system. You can specify a semi-colon delimited list, or you can use the **:=** syntax to specify a local and remote name to use:
 
 `C:\Projects\ConsoleApplication1\MyFile.cpp:=~/projects/ConsoleApplication1/ADifferentName.cpp;C:\Projects\ConsoleApplication1\MyFile2.cpp:=~/projects/ConsoleApplication1/ADifferentName2.cpp;`
 
@@ -117,10 +117,14 @@ You can enable logging to help troubleshoot problems:
 
 ::: moniker-end
 
+## <a name="locale"></a> Linux target locale
+
+Visual Studio language settings aren't propagated to Linux targets because Visual Studio doesn't manage or configure installed packages. Messages shown in the **Output** window, such as build errors, are shown using the language and locale of the Linux target. You'll need to configure your Linux targets for the desired locale.
+
 ## See also
 
 [Set compiler and build properties](../build/working-with-project-properties.md)<br/>
-[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)<br/>
-[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
-[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
-[Build Event Properties (Linux C++)](../linux/prop-pages/build-events-linux.md)
+[C++ General Properties (Linux C++)](prop-pages/general-linux.md)<br/>
+[VC++ Directories (Linux C++)](prop-pages/directories-linux.md)<br/>
+[Copy Sources Project Properties (Linux C++)](prop-pages/copy-sources-project.md)<br/>
+[Build Event Properties (Linux C++)](prop-pages/build-events-linux.md)

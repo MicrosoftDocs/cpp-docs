@@ -54,7 +54,7 @@ requestedit] HRESULT get_I([out, retval]long *i);
 
 |||
 |-|-|
-|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

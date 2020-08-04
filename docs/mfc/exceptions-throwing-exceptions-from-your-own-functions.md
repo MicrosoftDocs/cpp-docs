@@ -8,7 +8,7 @@ ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
 
 It is possible to use the MFC exception-handling paradigm solely to catch exceptions thrown by functions in MFC or other libraries. In addition to catching exceptions thrown by library code, you can throw exceptions from your own code if you are writing functions that can encounter exceptional conditions.
 
-When an exception is thrown, execution of the current function is stopped and jumps directly to the **catch** block of the innermost exception frame. The exception mechanism bypasses the normal exit path from a function. Therefore, you must be sure to delete those memory blocks that would be deleted in a normal exit.
+When an exception is thrown, execution of the current function is stopped and jumps directly to the **`catch`** block of the innermost exception frame. The exception mechanism bypasses the normal exit path from a function. Therefore, you must be sure to delete those memory blocks that would be deleted in a normal exit.
 
 #### To throw an exception
 
@@ -16,7 +16,7 @@ When an exception is thrown, execution of the current function is stopped and ju
 
    In the following example, a function tries to allocate two memory blocks and throws an exception if either allocation fails:
 
-   [!code-cpp[NVC_MFCExceptions#17](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_1.cpp)]
+   [!code-cpp[NVC_MFCExceptions#17](codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_1.cpp)]
 
    If the first allocation fails, you can simply throw the memory exception. If the first allocation is successful but the second one fails, you must free the first allocation block before throwing the exception. If both allocations succeed, you can proceed normally and free the blocks when exiting the function.
 
@@ -26,11 +26,11 @@ When an exception is thrown, execution of the current function is stopped and ju
 
    The following example attempts to play a sound through a wave device and throws an exception if there is a failure.
 
-   [!code-cpp[NVC_MFCExceptions#18](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_2.cpp)]
+   [!code-cpp[NVC_MFCExceptions#18](codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_2.cpp)]
 
 > [!NOTE]
 > MFC's default handling of exceptions applies only to pointers to `CException` objects (and objects of `CException`-derived classes). The example above bypasses MFC's exception mechanism.
 
 ## See also
 
-[Exception Handling](../mfc/exception-handling-in-mfc.md)
+[Exception Handling](exception-handling-in-mfc.md)

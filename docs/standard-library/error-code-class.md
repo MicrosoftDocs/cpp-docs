@@ -176,7 +176,7 @@ The object to be tested for equality.
 
 #### Return Value
 
-**true** if the objects are equal; **false** if objects are not equal.
+**`true`** if the objects are equal; **`false`** if objects are not equal.
 
 #### Remarks
 
@@ -197,7 +197,7 @@ The object to be tested for inequality.
 
 #### Return Value
 
-**true** if the `error_code` object is not equal to the `error_code` object passed in *right*; otherwise **false**.
+**`true`** if the `error_code` object is not equal to the `error_code` object passed in *right*; otherwise **`false`**.
 
 #### Remarks
 
@@ -218,7 +218,7 @@ The error_code object to be compared.
 
 #### Return Value
 
-**true** if the `error_code` object is less than the `error_code` object passed in for comparison; Otherwise, **false**.
+**`true`** if the `error_code` object is less than the `error_code` object passed in for comparison; Otherwise, **`false`**.
 
 #### Remarks
 
@@ -245,7 +245,7 @@ A reference to the `error_code` object that is being assigned the new enumeratio
 
 #### Remarks
 
-The member operator stores `(value_type)_Errcode` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns `*this`.
+The member operator stores `(value_type)_Errcode` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns **`*this`**.
 
 ### <a name="op_bool"></a> operator bool
 
@@ -261,7 +261,7 @@ The Boolean value of the `error_code` object.
 
 #### Remarks
 
-The operator returns a value convertible to **true** only if [value](#value) is not equal to zero. The return type is convertible only to **bool**, not to `void *` or other known scalar types.
+The operator returns a value convertible to **`true`** only if [value](#value) is not equal to zero. The return type is convertible only to **`bool`**, not to `void *` or other known scalar types.
 
 ### <a name="value"></a> value
 
@@ -285,4 +285,4 @@ typedef int value_type;
 
 #### Remarks
 
-This type definition is a synonym for **int**.
+This type definition is a synonym for **`int`**.

@@ -1,6 +1,6 @@
 ---
 title: "CAsyncSocket Class"
-ms.date: "09/03/2019"
+ms.date: "06/25/2020"
 f1_keywords: ["CAsyncSocket", "AFXSOCK/CAsyncSocket", "AFXSOCK/CAsyncSocket::CAsyncSocket", "AFXSOCK/CAsyncSocket::Accept", "AFXSOCK/CAsyncSocket::AsyncSelect", "AFXSOCK/CAsyncSocket::Attach", "AFXSOCK/CAsyncSocket::Bind", "AFXSOCK/CAsyncSocket::Close", "AFXSOCK/CAsyncSocket::Connect", "AFXSOCK/CAsyncSocket::Create", "AFXSOCK/CAsyncSocket::Detach", "AFXSOCK/CAsyncSocket::FromHandle", "AFXSOCK/CAsyncSocket::GetLastError", "AFXSOCK/CAsyncSocket::GetPeerName", "AFXSOCK/CAsyncSocket::GetPeerNameEx", "AFXSOCK/CAsyncSocket::GetSockName", "AFXSOCK/CAsyncSocket::GetSockNameEx", "AFXSOCK/CAsyncSocket::GetSockOpt", "AFXSOCK/CAsyncSocket::IOCtl", "AFXSOCK/CAsyncSocket::Listen", "AFXSOCK/CAsyncSocket::Receive", "AFXSOCK/CAsyncSocket::ReceiveFrom", "AFXSOCK/CAsyncSocket::ReceiveFromEx", "AFXSOCK/CAsyncSocket::Send", "AFXSOCK/CAsyncSocket::SendTo", "AFXSOCK/CAsyncSocket::SendToEx", "AFXSOCK/CAsyncSocket::SetSockOpt", "AFXSOCK/CAsyncSocket::ShutDown", "AFXSOCK/CASyncSocket::Socket", "AFXSOCK/CAsyncSocket::OnAccept", "AFXSOCK/CAsyncSocket::OnClose", "AFXSOCK/CAsyncSocket::OnConnect", "AFXSOCK/CAsyncSocket::OnOutOfBandData", "AFXSOCK/CAsyncSocket::OnReceive", "AFXSOCK/CAsyncSocket::OnSend", "AFXSOCK/CAsyncSocket::m_hSocket"]
 helpviewer_keywords: ["CAsyncSocket [MFC], CAsyncSocket", "CAsyncSocket [MFC], Accept", "CAsyncSocket [MFC], AsyncSelect", "CAsyncSocket [MFC], Attach", "CAsyncSocket [MFC], Bind", "CAsyncSocket [MFC], Close", "CAsyncSocket [MFC], Connect", "CAsyncSocket [MFC], Create", "CAsyncSocket [MFC], Detach", "CAsyncSocket [MFC], FromHandle", "CAsyncSocket [MFC], GetLastError", "CAsyncSocket [MFC], GetPeerName", "CAsyncSocket [MFC], GetPeerNameEx", "CAsyncSocket [MFC], GetSockName", "CAsyncSocket [MFC], GetSockNameEx", "CAsyncSocket [MFC], GetSockOpt", "CAsyncSocket [MFC], IOCtl", "CAsyncSocket [MFC], Listen", "CAsyncSocket [MFC], Receive", "CAsyncSocket [MFC], ReceiveFrom", "CAsyncSocket [MFC], ReceiveFromEx", "CAsyncSocket [MFC], Send", "CAsyncSocket [MFC], SendTo", "CAsyncSocket [MFC], SendToEx", "CAsyncSocket [MFC], SetSockOpt", "CAsyncSocket [MFC], ShutDown", "CASyncSocket [MFC], Socket", "CAsyncSocket [MFC], OnAccept", "CAsyncSocket [MFC], OnClose", "CAsyncSocket [MFC], OnConnect", "CAsyncSocket [MFC], OnOutOfBandData", "CAsyncSocket [MFC], OnReceive", "CAsyncSocket [MFC], OnSend", "CAsyncSocket [MFC], m_hSocket"]
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
@@ -34,6 +34,7 @@ class CAsyncSocket : public CObject
 |[CAsyncSocket::Close](#close)|Closes the socket.|
 |[CAsyncSocket::Connect](#connect)|Establishes a connection to a peer socket.|
 |[CAsyncSocket::Create](#create)|Creates a socket.|
+|[CAsyncSocket::CreateEx](#createex)|Creates a socket with advanced options.|
 |[CAsyncSocket::Detach](#detach)|Detaches a socket handle from a `CAsyncSocket` object.|
 |[CAsyncSocket::FromHandle](#fromhandle)|Returns a pointer to a `CAsyncSocket` object, given a socket handle.|
 |[CAsyncSocket::GetLastError](#getlasterror)|Gets the error status for the last operation that failed.|
@@ -461,6 +462,46 @@ Nonzero if the function is successful; otherwise 0, and a specific error code ca
 
 For more information about stream and datagram sockets, see the articles [Windows Sockets: Background](../../mfc/windows-sockets-background.md) and [Windows Sockets: Ports and Socket Addresses](../../mfc/windows-sockets-ports-and-socket-addresses.md) and [Windows Sockets 2 API](/windows/win32/WinSock/windows-sockets-start-page-2).
 
+## <a name="createex"></a> CAsyncSocket::CreateEx
+
+Call the `CreateEx` member function after constructing a socket object to create the Windows socket and attach it.
+
+Use this function when you need to supply advanced options such as the socket type.
+
+```
+BOOL CreateEx(
+    ADDRINFOT* pAI,
+    long lEvent = FD_READ | FD_WRITE | FD_OOB | FD_ACCEPT | FD_CONNECT | FD_CLOSE);
+```
+
+### Parameters
+
+*pAI*<br/>
+A pointer to a [ADDRINFOT](https://docs.microsoft.com/windows/win32/api/ws2def/ns-ws2def-addrinfoa) to hold socket info such as the family and socket type.
+
+*lEvent*<br/>
+A bitmask which specifies a combination of network events in which the application is interested.
+
+- FD_READ Want to receive notification of readiness for reading.
+
+- FD_WRITE Want to receive notification of readiness for writing.
+
+- FD_OOB Want to receive notification of the arrival of out-of-band data.
+
+- FD_ACCEPT Want to receive notification of incoming connections.
+
+- FD_CONNECT Want to receive notification of completed connection.
+
+- FD_CLOSE Want to receive notification of socket closure.
+
+### Return Value
+
+See the return value for [Create()](#return-value-5).
+
+### Remarks
+
+See the remarks for [Create()](#remarks-8).
+
 ## <a name="detach"></a> CAsyncSocket::Detach
 
 Call this member function to detach the SOCKET handle in the *m_hSocket* data member from the `CAsyncSocket` object and set *m_hSocket* to NULL.
@@ -702,7 +743,7 @@ BOOL GetSockOpt(
 The socket option for which the value is to be retrieved.
 
 *lpOptionValue*<br/>
-A pointer to the buffer in which the value for the requested option is to be returned. The value associated with the selected option is returned in the buffer *lpOptionValue*. The integer pointed to by *lpOptionLen* should originally contain the size of this buffer in bytes; and on return, it will be set to the size of the value returned. For SO_LINGER, this will be the size of a `LINGER` structure; for all other options it will be the size of a BOOL or an **int**, depending on the option. See the list of options and their sizes in the Remarks section.
+A pointer to the buffer in which the value for the requested option is to be returned. The value associated with the selected option is returned in the buffer *lpOptionValue*. The integer pointed to by *lpOptionLen* should originally contain the size of this buffer in bytes; and on return, it will be set to the size of the value returned. For SO_LINGER, this will be the size of a `LINGER` structure; for all other options it will be the size of a BOOL or an **`int`**, depending on the option. See the list of options and their sizes in the Remarks section.
 
 *lpOptionLen*<br/>
 A pointer to the size of the *lpOptionValue* buffer in bytes.
@@ -739,26 +780,26 @@ The following options are supported for `GetSockOpt`. The Type identifies the ty
 |SO_DEBUG|BOOL|Debugging is enabled.|
 |SO_DONTLINGER|BOOL|If true, the SO_LINGER option is disabled.|
 |SO_DONTROUTE|BOOL|Routing is disabled.|
-|SO_ERROR|**int**|Retrieve error status and clear.|
+|SO_ERROR|**`int`**|Retrieve error status and clear.|
 |SO_KEEPALIVE|BOOL|Keep-alives are being sent.|
 |SO_LINGER|`struct LINGER`|Returns the current linger options.|
 |SO_OOBINLINE|BOOL|Out-of-band data is being received in the normal data stream.|
 |SO_RCVBUF|int|Buffer size for receives.|
 |SO_REUSEADDR|BOOL|The socket can be bound to an address which is already in use.|
-|SO_SNDBUF|**int**|Buffer size for sends.|
-|SO_TYPE|**int**|The type of the socket (for example, SOCK_STREAM).|
+|SO_SNDBUF|**`int`**|Buffer size for sends.|
+|SO_TYPE|**`int`**|The type of the socket (for example, SOCK_STREAM).|
 |TCP_NODELAY|BOOL|Disables the Nagle algorithm for send coalescing.|
 
 Berkeley Software Distribution (BSD) options not supported for `GetSockOpt` are:
 
 |Value|Type|Meaning|
 |-----------|----------|-------------|
-|SO_RCVLOWAT|**int**|Receive low water mark.|
-|SO_RCVTIMEO|**int**|Receive timeout.|
-|SO_SNDLOWAT|**int**|Send low water mark.|
-|SO_SNDTIMEO|**int**|Send timeout.|
+|SO_RCVLOWAT|**`int`**|Receive low water mark.|
+|SO_RCVTIMEO|**`int`**|Receive timeout.|
+|SO_SNDLOWAT|**`int`**|Send low water mark.|
+|SO_SNDTIMEO|**`int`**|Send timeout.|
 |IP_OPTIONS||Get options in IP header.|
-|TCP_MAXSEG|**int**|Get TCP maximum segment size.|
+|TCP_MAXSEG|**`int`**|Get TCP maximum segment size.|
 
 Calling `GetSockOpt` with an unsupported option will result in an error code of WSAENOPROTOOPT being returned from `GetLastError`.
 
@@ -1648,9 +1689,9 @@ The following options are supported for `SetSockOpt`. The Type identifies the ty
 |SO_KEEPALIVE|BOOL|Send keep-alives.|
 |SO_LINGER|`struct LINGER`|Linger on `Close` if unsent data is present.|
 |SO_OOBINLINE|BOOL|Receive out-of-band data in the normal data stream.|
-|SO_RCVBUF|**int**|Specify buffer size for receives.|
+|SO_RCVBUF|**`int`**|Specify buffer size for receives.|
 |SO_REUSEADDR|BOOL|Allow the socket to be bound to an address which is already in use. (See [Bind](#bind).)|
-|SO_SNDBUF|**int**|Specify buffer size for sends.|
+|SO_SNDBUF|**`int`**|Specify buffer size for sends.|
 |TCP_NODELAY|BOOL|Disables the Nagle algorithm for send coalescing.|
 
 Berkeley Software Distribution (BSD) options not supported for `SetSockOpt` are:
@@ -1658,12 +1699,12 @@ Berkeley Software Distribution (BSD) options not supported for `SetSockOpt` are:
 |Value|Type|Meaning|
 |-----------|----------|-------------|
 |SO_ACCEPTCONN|BOOL|Socket is listening|
-|SO_ERROR|**int**|Get error status and clear.|
-|SO_RCVLOWAT|**int**|Receive low water mark.|
-|SO_RCVTIMEO|**int**|Receive timeout|
-|SO_SNDLOWAT|**int**|Send low water mark.|
-|SO_SNDTIMEO|**int**|Send timeout.|
-|SO_TYPE|**int**|Type of the socket.|
+|SO_ERROR|**`int`**|Get error status and clear.|
+|SO_RCVLOWAT|**`int`**|Receive low water mark.|
+|SO_RCVTIMEO|**`int`**|Receive timeout|
+|SO_SNDLOWAT|**`int`**|Send low water mark.|
+|SO_SNDTIMEO|**`int`**|Send timeout.|
+|SO_TYPE|**`int`**|Type of the socket.|
 |IP_OPTIONS||Set options field in IP header.|
 
 ## <a name="shutdown"></a> CAsyncSocket::ShutDown

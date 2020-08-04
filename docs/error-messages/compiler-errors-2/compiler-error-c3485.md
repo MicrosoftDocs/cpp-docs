@@ -9,15 +9,15 @@ ms.assetid: d67536f9-67a1-4ad9-9a94-d8bbbca3d0dc
 
 a lambda definition cannot have any cv-qualifiers
 
-You cannot use a `const` or `volatile` qualifier as part of the definition of a lambda expression.
+You cannot use a **`const`** or **`volatile`** qualifier as part of the definition of a lambda expression.
 
 ### To correct this error
 
-- Remove the `const` or `volatile` qualifier from the definition of your lambda expression.
+- Remove the **`const`** or **`volatile`** qualifier from the definition of your lambda expression.
 
 ## Example
 
-The following example generates C3485 because it uses the `const` qualifier as part of the definition of a lambda expression:
+The following example generates C3485 because it uses the **`const`** qualifier as part of the definition of a lambda expression:
 
 ```cpp
 // C3485.cpp

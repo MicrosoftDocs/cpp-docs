@@ -9,7 +9,7 @@ ms.assetid: 1517706a-9c27-452e-9b10-3424b3d232bc
 
 'function' : modifiers not allowed on static member functions
 
-A `static` member function is declared with a memory-model specifier, such as [const](../../cpp/const-cpp.md) or [volatile](../../cpp/volatile-cpp.md), and such modifiers are not allowed on `static` member functions.
+A **`static`** member function is declared with a memory-model specifier, such as [const](../../cpp/const-cpp.md) or [volatile](../../cpp/volatile-cpp.md), and such modifiers are not allowed on **`static`** member functions.
 
 The following sample generates C2272:
 

@@ -23,7 +23,7 @@ The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type *Ty* is a pointer to **void**, a pointer to an object, or a pointer to a function, or a `cv-qualified` form of one of them, otherwise it holds false. Note that `is_pointer` holds false if *Ty* is a pointer to member or a pointer to member function.
+An instance of the type predicate holds true if the type *Ty* is a pointer to **`void`**, a pointer to an object, or a pointer to a function, or a `cv-qualified` form of one of them, otherwise it holds false. Note that `is_pointer` holds false if *Ty* is a pointer to member or a pointer to member function.
 
 ## Example
 

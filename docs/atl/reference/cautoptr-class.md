@@ -63,7 +63,7 @@ Further, `CAutoPtr`'s copy constructor and assignment operator transfer ownershi
 
 `CAutoPtr` also simplifies the creation of collections of pointers. Instead of deriving a collection class and overriding the destructor, it's simpler to make a collection of `CAutoPtr` objects. When the collection is deleted, the `CAutoPtr` objects will go out of scope and automatically delete themselves.
 
-[CHeapPtr](../../atl/reference/cheapptr-class.md) and variants work in the same way as `CAutoPtr`, except that they allocate and free memory using different heap functions instead of the C++ **new** and **delete** operators. [CAutoVectorPtr](../../atl/reference/cautovectorptr-class.md) is similar to `CAutoPtr`, the only difference being that it uses **vector new[]** and **vector delete[]** to allocate and free memory.
+[CHeapPtr](../../atl/reference/cheapptr-class.md) and variants work in the same way as `CAutoPtr`, except that they allocate and free memory using different heap functions instead of the C++ **`new`** and **`delete`** operators. [CAutoVectorPtr](../../atl/reference/cautovectorptr-class.md) is similar to `CAutoPtr`, the only difference being that it uses **vector new[]** and **vector delete[]** to allocate and free memory.
 
 See also [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) and [CAutoPtrList](../../atl/reference/cautoptrlist-class.md) when arrays or lists of smart pointers are required.
 

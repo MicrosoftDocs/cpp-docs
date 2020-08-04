@@ -50,7 +50,7 @@ Symbols defined in a file that is compiled as C have different decorated names t
 
 ### A symbol is defined as static and then later referenced outside the file
 
-In C++, unlike C, [global constants](../../error-messages/tool-errors/global-constants-in-cpp.md) have `static` linkage. To get around this limitation, you can include the `const` initializations in a header file and include that header in your .cpp files, or you can make the variable non-constant and use a constant reference to access it.
+In C++, unlike C, [global constants](../../error-messages/tool-errors/global-constants-in-cpp.md) have **`static`** linkage. To get around this limitation, you can include the **`const`** initializations in a header file and include that header in your .cpp files, or you can make the variable non-constant and use a constant reference to access it.
 
 ### A static member of a class isn't defined
 
@@ -78,7 +78,7 @@ Using inlined functions defined in .cpp files and mixing function inlining compi
 
 ### You use automatic variables outside their scope
 
-Automatic (function scope) variables can only be used in the scope of that function. These variables can't be declared `extern` and used in other source files. For an example, see [Automatic (Function Scope) Variables](../../error-messages/tool-errors/automatic-function-scope-variables.md).
+Automatic (function scope) variables can only be used in the scope of that function. These variables can't be declared **`extern`** and used in other source files. For an example, see [Automatic (Function Scope) Variables](../../error-messages/tool-errors/automatic-function-scope-variables.md).
 
 ### You call intrinsic functions or pass argument types to intrinsic functions that aren't supported on your target architecture
 
@@ -86,11 +86,11 @@ For example, if you use an AVX2 intrinsic, but don't specify the [/ARCH:AVX2](..
 
 ### You mix code that uses native wchar_t with code that doesn't
 
-C++ language conformance work that was done in Visual Studio 2005 made **wchar_t** a native type by default. If not all files have been compiled by using the same **/Zc:wchar_t** settings, type references may not resolve to compatible types. Make sure **wchar_t** types in all library and object files are compatible. Either update from a **wchar_t** typedef, or use consistent **/Zc:wchar_t** settings when you compile.
+C++ language conformance work that was done in Visual Studio 2005 made **`wchar_t`** a native type by default. If not all files have been compiled by using the same **/Zc:wchar_t** settings, type references may not resolve to compatible types. Make sure **`wchar_t`** types in all library and object files are compatible. Either update from a **`wchar_t`** typedef, or use consistent **/Zc:wchar_t** settings when you compile.
 
-## Third-party library issues and Vcpkg
+## Third-party library issues and vcpkg
 
-If you see this error when you're trying to configure a third-party library as part of your build, consider using [Vcpkg](../../vcpkg.md), the Visual C++ Package Manager, to install and build the library. Vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project. For more information, see the related [Visual C++ Blog](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) post.
+If you see this error when you're trying to configure a third-party library as part of your build, consider using [vcpkg](../../vcpkg.md), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## Diagnosis tools
 
@@ -120,7 +120,7 @@ int main() {
 }
 ```
 
-Here is another example where a variable and function are declared as `extern` but no definition is provided:
+Here is another example where a variable and function are declared as **`extern`** but no definition is provided:
 
 ```cpp
 // LNK2019c.cpp
@@ -190,7 +190,7 @@ int main() {
 
 ### Inconsistent wchar_t type definitions
 
-This sample creates a DLL that has an export that uses `WCHAR`, which resolves to `wchar_t`.
+This sample creates a DLL that has an export that uses `WCHAR`, which resolves to **`wchar_t`**.
 
 ```cpp
 // LNK2019g.cpp
@@ -213,7 +213,7 @@ int main() {
 }
 ```
 
-To fix this error, change `unsigned short` to `wchar_t` or `WCHAR`, or compile LNK2019g.cpp by using **/Zc:wchar_t-**.
+To fix this error, change **`unsigned short`** to **`wchar_t`** or `WCHAR`, or compile LNK2019g.cpp by using **/Zc:wchar_t-**.
 
 ## Additional resources
 

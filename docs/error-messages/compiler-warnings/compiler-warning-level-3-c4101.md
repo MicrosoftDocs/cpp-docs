@@ -19,7 +19,7 @@ int i;   // C4101
 }
 ```
 
-However, this warning will also occur when calling a **static** member function through an instance of the class:
+However, this warning will also occur when calling a **`static`** member function through an instance of the class:
 
 ```cpp
 // C4101b.cpp
@@ -38,10 +38,10 @@ int main() {
 }
 ```
 
-In this situation, the compiler uses information about `si` to access the **static** function, but the instance of the class is not needed to call the **static** function; hence the warning. To resolve this warning, you could:
+In this situation, the compiler uses information about `si` to access the **`static`** function, but the instance of the class is not needed to call the **`static`** function; hence the warning. To resolve this warning, you could:
 
 - Add a constructor, in which the compiler would use the instance of `si` in the call to `func`.
 
-- Remove the **static** keyword from the definition of `func`.
+- Remove the **`static`** keyword from the definition of `func`.
 
-- Call the **static** function explicitly: `int y = S::func();`.
+- Call the **`static`** function explicitly: `int y = S::func();`.

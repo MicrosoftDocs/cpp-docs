@@ -42,4 +42,4 @@ Finally, when it is time to disassemble the menu, the object removes the inserte
 
 ## See also
 
-[Active Document Containers](../mfc/active-document-containers.md)
+[Active Document Containers](active-document-containers.md)

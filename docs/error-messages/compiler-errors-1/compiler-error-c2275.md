@@ -9,7 +9,7 @@ ms.assetid: c1eafa71-48de-46e0-82f3-b575538ef205
 
 'identifier' : illegal use of this type as an expression
 
-An expression uses the `->` operator with a `typedef` identifier.
+An expression uses the `->` operator with a **`typedef`** identifier.
 
 The following sample generates C2275:
 

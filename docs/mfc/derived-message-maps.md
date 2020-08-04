@@ -15,7 +15,7 @@ A View Hierarchy
 
 So if a message can't be matched in class `CMyView`'s message map, the framework also searches the message map of its immediate base class. The `BEGIN_MESSAGE_MAP` macro at the start of the message map specifies two class names as its arguments:
 
-[!code-cpp[NVC_MFCMessageHandling#2](../mfc/codesnippet/cpp/derived-message-maps_1.cpp)]
+[!code-cpp[NVC_MFCMessageHandling#2](codesnippet/cpp/derived-message-maps_1.cpp)]
 
 The first argument names the class to which the message map belongs. The second argument provides a connection with the immediate base class — `CView` here — so the framework can search its message map, too.
 
@@ -27,4 +27,4 @@ To speed message-map matching, the framework caches recent matches on the likeli
 
 ## See also
 
-[How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md)
+[How the Framework Searches Message Maps](how-the-framework-searches-message-maps.md)

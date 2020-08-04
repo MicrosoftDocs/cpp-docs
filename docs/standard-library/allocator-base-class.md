@@ -21,7 +21,7 @@ class allocator_base
 |Parameter|Description|
 |---------------|-----------------|
 |*Type*|The type of elements allocated by the allocator.|
-|*Sync*|The synchronization policy for the allocator, which is [sync_none Class](../standard-library/sync-none-class.md), [sync_per_container Class](../standard-library/sync-per-container-class.md), [sync_per_thread Class](../standard-library/sync-per-thread-class.md), or [sync_shared Class](../standard-library/sync-shared-class.md).|
+|*Sync*|The synchronization policy for the allocator, which is [sync_none Class](sync-none-class.md), [sync_per_container Class](sync-per-container-class.md), [sync_per_thread Class](sync-per-thread-class.md), or [sync_shared Class](sync-shared-class.md).|
 
 ### Constructors
 
@@ -45,8 +45,8 @@ class allocator_base
 
 |Member function|Description|
 |-|-|
-|[_Charalloc](#charalloc)|Allocates storage for an array of type **char**.|
-|[_Chardealloc](#chardealloc)|Frees storage for the array containing elements of type **char**.|
+|[_Charalloc](#charalloc)|Allocates storage for an array of type **`char`**.|
+|[_Chardealloc](#chardealloc)|Frees storage for the array containing elements of type **`char`**.|
 |[address](#address)|Finds the address of an object whose value is specified.|
 |[allocate](#allocate)|Allocates a block of memory large enough to store at least some specified number of elements.|
 |[construct](#construct)|Constructs a specific type of object at a specified address that is initialized with a specified value.|
@@ -62,7 +62,7 @@ class allocator_base
 
 ## <a name="charalloc"></a> allocator_base::_Charalloc
 
-Allocates storage for an array of type **char**.
+Allocates storage for an array of type **`char`**.
 
 ```cpp
 char *_Charalloc(size_type count);
@@ -84,7 +84,7 @@ This member function is used by containers when compiled with a compiler that ca
 
 ## <a name="chardealloc"></a> allocator_base::_Chardealloc
 
-Frees storage for the array containing elements of type **char**.
+Frees storage for the array containing elements of type **`char`**.
 
 ```cpp
 void _Chardealloc(void* ptr, size_type count);
@@ -99,7 +99,7 @@ void _Chardealloc(void* ptr, size_type count);
 
 ### Remarks
 
-This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Chardealloc` for the user-defined allocator by calling the `deallocate` function of the synchronization filter. The pointer ptr must have been earlier returned by a call to `_Charalloc` for an allocator object that compares equal to `*this`, allocating an array object of the same size and type. `_Chardealloc` never throws an exception.
+This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Chardealloc` for the user-defined allocator by calling the `deallocate` function of the synchronization filter. The pointer ptr must have been earlier returned by a call to `_Charalloc` for an allocator object that compares equal to **`*this`**, allocating an array object of the same size and type. `_Chardealloc` never throws an exception.
 
 ## <a name="address"></a> allocator_base::address
 
@@ -169,7 +169,7 @@ allocator_base(const allocator_base<Other, Sync>& right);
 
 ### Remarks
 
-The first constructor constructs an [allocator_base](../standard-library/allocator-base-class.md) instance. The second constructor constructs an `allocator_base` instance such that for any `allocator_base<Type, _Sync>` instance `a`, `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`.
+The first constructor constructs an [allocator_base](allocator-base-class.md) instance. The second constructor constructs an `allocator_base` instance such that for any `allocator_base<Type, _Sync>` instance `a`, `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`.
 
 ## <a name="const_pointer"></a> allocator_base::const_pointer
 
@@ -301,4 +301,4 @@ typedef Type value_type;
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

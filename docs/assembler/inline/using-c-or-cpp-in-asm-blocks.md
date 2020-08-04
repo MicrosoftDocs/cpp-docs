@@ -10,11 +10,11 @@ ms.assetid: ae8b2b52-6b75-42e3-ac0c-ad02d922ed97
 
 Because inline assembly instructions can be mixed with C or C++ statements, they can refer to C or C++ variables by name and use many other elements of those languages.
 
-An `__asm` block can use the following language elements:
+An **`__asm`** block can use the following language elements:
 
 - Symbols, including labels and variable and function names
 
-- Constants, including symbolic constants and `enum` members
+- Constants, including symbolic constants and **`enum`** members
 
 - Macros and preprocessor directives
 
@@ -22,9 +22,9 @@ An `__asm` block can use the following language elements:
 
 - Type names (wherever a MASM type would be legal)
 
-- `typedef` names, generally used with operators such as **PTR** and **TYPE** or to specify structure or union members
+- **`typedef`** names, generally used with operators such as **PTR** and **TYPE** or to specify structure or union members
 
-Within an `__asm` block, you can specify integer constants with either C notation or assembler radix notation (0x100 and 100h are equivalent, for example). This allows you to define (using `#define`) a constant in C and then use it in both C or C++ and assembly portions of the program. You can also specify constants in octal by preceding them with a 0. For example, 0777 specifies an octal constant.
+Within an **`__asm`** block, you can specify integer constants with either C notation or assembler radix notation (0x100 and 100h are equivalent, for example). This allows you to define (using `#define`) a constant in C and then use it in both C or C++ and assembly portions of the program. You can also specify constants in octal by preceding them with a 0. For example, 0777 specifies an octal constant.
 
 ## What do you want to know more about?
 

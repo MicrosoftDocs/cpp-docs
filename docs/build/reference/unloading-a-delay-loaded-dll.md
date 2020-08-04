@@ -35,7 +35,7 @@ ExternC
 PUnloadInfo __puiHead;
 ```
 
-The UnloadInfo structure is implemented using a C++ class that uses **LocalAlloc** and **LocalFree** implementations as its operator **new** and operator **delete** respectively. These options are kept in a standard linked list using __puiHead as the head of the list.
+The UnloadInfo structure is implemented using a C++ class that uses **LocalAlloc** and **LocalFree** implementations as its operator **`new`** and operator **`delete`** respectively. These options are kept in a standard linked list using __puiHead as the head of the list.
 
 Calling __FUnloadDelayLoadedDLL will attempt to find the name you provide in the list of loaded DLLs (an exact match is required). If found, the copy of the IAT in pUnloadIAT is copied over the top of the running IAT to restore the thunk pointers, the library is freed with **FreeLibrary**, the matching **UnloadInfo** record is unlinked from the list and deleted, and TRUE is returned.
 

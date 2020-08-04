@@ -13,15 +13,15 @@ Use the [Class Wizard](reference/mfc-class-wizard.md) to add notification handle
 
 The following list describes the various notifications sent by the date and time picker control.
 
-- DTN_DROPDOWN Notifies the parent that the embedded month calendar control is about to be displayed. This notification is only sent when the DTS_UPDOWN style has not been set. For more information on this notification, see [Accessing the Embedded Month Calendar Control](../mfc/accessing-the-embedded-month-calendar-control.md).
+- DTN_DROPDOWN Notifies the parent that the embedded month calendar control is about to be displayed. This notification is only sent when the DTS_UPDOWN style has not been set. For more information on this notification, see [Accessing the Embedded Month Calendar Control](accessing-the-embedded-month-calendar-control.md).
 
 - DTN_CLOSEUP Notifies the parent that the embedded month calendar control is about to be closed. This notification is only sent when the DTS_UPDOWN style has not been set.
 
 - DTN_DATETIMECHANGE Notifies the parent that a change has occurred in the control.
 
-- DTN_FORMAT Notifies the parent that text is needed to be displayed in a callback field. For more information on this notification and callback fields, see [Using Callback Fields in a Date and Time Picker Control](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).
+- DTN_FORMAT Notifies the parent that text is needed to be displayed in a callback field. For more information on this notification and callback fields, see [Using Callback Fields in a Date and Time Picker Control](using-callback-fields-in-a-date-and-time-picker-control.md).
 
-- DTN_FORMATQUERY Requests the parent to supply the maximum allowable size of the string that will be displayed in a callback field. Handling this notification allows the control to properly display output at all times, reducing flicker within the control's display. For more information on this notification, see [Using Callback Fields in a Date and Time Picker Control](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).
+- DTN_FORMATQUERY Requests the parent to supply the maximum allowable size of the string that will be displayed in a callback field. Handling this notification allows the control to properly display output at all times, reducing flicker within the control's display. For more information on this notification, see [Using Callback Fields in a Date and Time Picker Control](using-callback-fields-in-a-date-and-time-picker-control.md).
 
 - DTN_USERSTRING Notifies the parent that the user has finished editing the contents of the date and time picker control. This notification is only sent when the DTS_APPCANPARSE style has been set.
 
@@ -29,5 +29,5 @@ The following list describes the various notifications sent by the date and time
 
 ## See also
 
-[Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CDateTimeCtrl](using-cdatetimectrl.md)<br/>
+[Controls](controls-mfc.md)

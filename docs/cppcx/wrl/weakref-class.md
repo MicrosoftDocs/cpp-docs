@@ -41,11 +41,11 @@ class WeakRef : public ComPtr<IWeakReference>;
 
 ## Remarks
 
-A `WeakRef` object maintains a *strong reference*, which is associated with an object, and can be valid or invalid. Call the `As()` or `AsIID()` method to obtain a strong reference. When the strong reference is valid, it can access the associated object. When the strong reference is invalid (`nullptr`), the associated object is inaccessible.
+A `WeakRef` object maintains a *strong reference*, which is associated with an object, and can be valid or invalid. Call the `As()` or `AsIID()` method to obtain a strong reference. When the strong reference is valid, it can access the associated object. When the strong reference is invalid (**`nullptr`**), the associated object is inaccessible.
 
 A `WeakRef` object is typically used to represent an object whose existence is controlled by an external thread or application. For example, construct a `WeakRef` object from a reference to a file object. While the file is open, the strong reference is valid. But if the file is closed, the strong reference becomes invalid.
 
-Note that there is a behavior change in the [As](#as), [AsIID](#asiid) and [CopyTo](#copyto) methods in the Windows 10 SDK. Previously, after calling any of these methods, you could check the `WeakRef` for `nullptr` to determine if a strong reference was successfully obtained, as in the following code:
+Note that there is a behavior change in the [As](#as), [AsIID](#asiid) and [CopyTo](#copyto) methods in the Windows 10 SDK. Previously, after calling any of these methods, you could check the `WeakRef` for **`nullptr`** to determine if a strong reference was successfully obtained, as in the following code:
 
 ```cpp
 WeakRef wr;
@@ -64,7 +64,7 @@ if(wr == nullptr)
 }
 ```
 
-The above code does not work when using the Windows 10 SDK (or later). Instead, check the pointer that was passed in for `nullptr`.
+The above code does not work when using the Windows 10 SDK (or later). Instead, check the pointer that was passed in for **`nullptr`**.
 
 ```cpp
 if (strongRef == nullptr)
@@ -119,11 +119,11 @@ When this operation completes, an object that represents parameter *U*.
 
 ### Return Value
 
-- S_OK if this operation succeeds; otherwise, an HRESULT that indicates the reason the operation failed, and *ptr* is set to `nullptr`.
+- S_OK if this operation succeeds; otherwise, an HRESULT that indicates the reason the operation failed, and *ptr* is set to **`nullptr`**.
 
-- S_OK if this operation succeeds, but the current `WeakRef` object has already been released. Parameter *ptr* is set to `nullptr`.
+- S_OK if this operation succeeds, but the current `WeakRef` object has already been released. Parameter *ptr* is set to **`nullptr`**.
 
-- S_OK if this operation succeeds, but the current `WeakRef` object is not derived from parameter *U*. Parameter *ptr* is set to `nullptr`.
+- S_OK if this operation succeeds, but the current `WeakRef` object is not derived from parameter *U*. Parameter *ptr* is set to **`nullptr`**.
 
 ### Remarks
 
@@ -131,7 +131,7 @@ An error is emitted if parameter *U* is `IWeakReference`, or is not derived from
 
 The first template is the form that you should use in your code. The second template is an internal, helper specialization that supports C++ language features such as the [auto](../../cpp/auto-cpp.md) type deduction keyword.
 
-Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to `nullptr` if the weak reference could not be obtained, so you should avoid error-checking code that checks the `WeakRef` for `nullptr`. Instead, check *ptr* for `nullptr`.
+Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to **`nullptr`** if the weak reference could not be obtained, so you should avoid error-checking code that checks the `WeakRef` for **`nullptr`**. Instead, check *ptr* for **`nullptr`**.
 
 ## <a name="asiid"></a> WeakRef::AsIID Method
 
@@ -154,11 +154,11 @@ When this operation completes, an object that represents parameter *riid*.
 
 ### Return Value
 
-- S_OK if this operation succeeds; otherwise, an HRESULT that indicates the reason the operation failed, and *ptr* is set to `nullptr`.
+- S_OK if this operation succeeds; otherwise, an HRESULT that indicates the reason the operation failed, and *ptr* is set to **`nullptr`**.
 
-- S_OK if this operation succeeds, but the current `WeakRef` object has already been released. Parameter *ptr* is set to `nullptr`.
+- S_OK if this operation succeeds, but the current `WeakRef` object has already been released. Parameter *ptr* is set to **`nullptr`**.
 
-- S_OK if this operation succeeds, but the current `WeakRef` object is not derived from parameter *riid*. Parameter *ptr* is set to `nullptr`. (For more information, see Remarks.)
+- S_OK if this operation succeeds, but the current `WeakRef` object is not derived from parameter *riid*. Parameter *ptr* is set to **`nullptr`**. (For more information, see Remarks.)
 
 ### Remarks
 
@@ -166,7 +166,7 @@ An error is emitted if parameter *riid* is not derived from `IInspectable`. This
 
 The first template is the form that you should use in your code. The second template (not shown here, but declared in the header file) is an internal, helper specialization that supports C++ language features such as the [auto](../../cpp/auto-cpp.md) type deduction keyword.
 
-Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to `nullptr` if the weak reference could not be obtained, so you should avoid error-checking code that checks the `WeakRef` for `nullptr`. Instead, check *ptr* for `nullptr`.
+Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to **`nullptr`** if the weak reference could not be obtained, so you should avoid error-checking code that checks the `WeakRef` for **`nullptr`**. Instead, check *ptr* for **`nullptr`**.
 
 ## <a name="copyto"></a> WeakRef::CopyTo Method
 
@@ -205,9 +205,9 @@ S_OK if successful; otherwise, an HRESULT that describes the failure. For more i
 
 ### Remarks
 
-A return value of S_OK means that this operation succeeded, but doesn't indicate whether the weak reference was resolved to a strong reference. If S_OK is returned, test that parameter *p* is a strong reference; that is, parameter *p* isn't equal to `nullptr`.
+A return value of S_OK means that this operation succeeded, but doesn't indicate whether the weak reference was resolved to a strong reference. If S_OK is returned, test that parameter *p* is a strong reference; that is, parameter *p* isn't equal to **`nullptr`**.
 
-Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to `nullptr` if the weak reference could not be obtained, so you should avoid error checking code that checks the `WeakRef` for `nullptr`. Instead, check *ptr* for `nullptr`.
+Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to **`nullptr`** if the weak reference could not be obtained, so you should avoid error checking code that checks the `WeakRef` for **`nullptr`**. Instead, check *ptr* for **`nullptr`**.
 
 ## <a name="operator-ampersand-operator"></a> WeakRef::operator&amp; Operator
 

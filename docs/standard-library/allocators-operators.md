@@ -32,7 +32,7 @@ bool operator!=(
 
 ### Return Value
 
-**true** if the allocator objects are not equal; **false** if allocator objects are equal.
+**`true`** if the allocator objects are not equal; **`false`** if allocator objects are equal.
 
 ### Remarks
 
@@ -58,7 +58,7 @@ bool operator==(
 
 ### Return Value
 
-**true** if the allocator objects are equal; **false** if allocator objects are not equal.
+**`true`** if the allocator objects are equal; **`false`** if allocator objects are not equal.
 
 ### Remarks
 
@@ -66,4 +66,4 @@ This template operator returns `left.equals(right)`.
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

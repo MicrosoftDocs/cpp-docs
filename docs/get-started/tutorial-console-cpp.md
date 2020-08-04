@@ -1,5 +1,5 @@
 ---
-title: Create a C++ console app project
+title: "Create a console calculator in C++"
 description: "Create a Hello World console app and a calculator app in Visual C++"
 ms.custom: "mvc"
 ms.date: 08/19/2019
@@ -7,11 +7,11 @@ ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
-# Create a C++ console app project
+# Create a console calculator in C++
 
 ::: moniker range=">=vs-2019"
 
-The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create in Visual Studio in this article, and then we'll move on to something more challenging: a calculator app.
+The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create first in Visual Studio in this article, and then we'll move on to something more challenging: a calculator app.
 
 ## Prerequisites
 
@@ -117,7 +117,7 @@ Now let's turn the code in this template into a calculator app.
    > Understanding the code:
    >
    > - The `#include` statements allow you to reference code located in other files. Sometimes, you may see a filename surrounded by angle brackets (**\<\>**); other times, it's surrounded by quotes (**" "**). In general, angle brackets are used when referencing the C++ Standard Library, while quotes are used for other files.
-   > - The `using namespace std;` line tells the compiler to expect stuff from the C++ Standard Library to be used in this file. Without this line, each keyword from the library would have to be preceded with a `std::`, to denote its scope. For instance, without that line, each reference to `cout` would have to be written as `std::cout`. The `using` statement is added to make the code look more clean.
+   > - The `using namespace std;` line tells the compiler to expect stuff from the C++ Standard Library to be used in this file. Without this line, each keyword from the library would have to be preceded with a `std::`, to denote its scope. For instance, without that line, each reference to `cout` would have to be written as `std::cout`. The **`using`** statement is added to make the code look more clean.
    > - The `cout` keyword is used to print to standard output in C++. The **\<\<** operator tells the compiler to send whatever is to the right of it to the standard output.
    > - The **endl** keyword is like the Enter key; it ends the line and moves the cursor to the next line. It is a better practice to put a `\n` inside the string (contained by "") to do the same thing, as `endl` always flushes the buffer and can hurt the performance of the program, but since this is a very small app, `endl` is used instead for better readability.
    > - All C++ statements must end with semicolons and all C++ applications must contain a `main()` function. This function is what the program runs at the start. All code must be accessible from `main()` in order to be used.
@@ -199,7 +199,7 @@ It's time to add some math logic.
    >
    > - The function `Calculate` consumes a number, an operator, and a second number, then performs the requested operation on the numbers.
    > - The switch statement checks which operator was provided, and only executes the case corresponding to that operation. The default: case is a fallback in case the user types an operator that isn't accepted, so the program doesn't break. In general, it's best to handle invalid user input in a more elegant way, but this is beyond the scope of this tutorial.
-   > - The `double` keyword denotes a type of number that supports decimals. This way, the calculator can handle both decimal math and integer math. The `Calculate` function is required to always return such a number due to the `double` at the very start of the code (this denotes the function's return type), which is why we return 0.0 even in the default case.
+   > - The **`double`** keyword denotes a type of number that supports decimals. This way, the calculator can handle both decimal math and integer math. The `Calculate` function is required to always return such a number due to the **`double`** at the very start of the code (this denotes the function's return type), which is why we return 0.0 even in the default case.
    > - The .h file declares the function *prototype*, which tells the compiler upfront what parameters it requires, and what return type to expect from it. The .cpp file has all the implementation details of the function.
 
 If you build and run the code again at this point, it will still exit after asking which operation to perform. Next, you'll modify the `main` function to do some calculations.
@@ -245,7 +245,7 @@ If you build and run the code again at this point, it will still exit after aski
    > - Since C++ programs always start at the `main()` function, we need to call our other code from there, so a `#include` statement is needed.
    > - Some initial variables `x`, `y`, `oper`, and `result` are declared to store the first number, second number, operator, and final result, respectively. It is always good practice to give them some initial values to avoid undefined behavior, which is what is done here.
    > - The `Calculator c;` line declares an object named 'c' as an instance of the `Calculator` class. The class itself is just a blueprint for how calculators work; the object is the specific calculator that does the math.
-   > - The `while (true)` statement is a loop. The code inside the loop continues to execute over and over again as long as the condition inside the `()` holds true. Since the condition is simply listed as `true`, it's always true, so the loop runs forever. To close the program, the user must manually close the console window. Otherwise, the program always waits for new input.
+   > - The `while (true)` statement is a loop. The code inside the loop continues to execute over and over again as long as the condition inside the `()` holds true. Since the condition is simply listed as **`true`**, it's always true, so the loop runs forever. To close the program, the user must manually close the console window. Otherwise, the program always waits for new input.
    > - The `cin` keyword is used to accept input from the user. This input stream is smart enough to process a line of text entered in the console window and place it inside each of the variables listed, in order, assuming the user input matches the required specification. You can modify this line to accept different types of input, for instance, more than two numbers, though the `Calculate()` function would also need to be updated to handle this.
    > - The `c.Calculate(x, oper, y);` expression calls the `Calculate` function defined earlier, and supplies the entered input values. The function then returns a number that gets stored in `result`.
    > - Finally, `result` is printed to the console, so the user sees the result of the calculation.
@@ -375,7 +375,7 @@ Congratulations! You've completed the code for the calculator app, and built and
 
 ## Next steps
 
-[Learn more about Visual Studio for C++](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
+[Learn more about Visual Studio for C++](https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
 ::: moniker-end
 
@@ -481,7 +481,7 @@ Now let's turn the code in this template into a calculator app.
    >
    > - The `#include` statements allow you to reference code located in other files. Sometimes, you may see a filename surrounded by angle brackets (**\<\>**); other times, it's surrounded by quotes (**" "**). In general, angle brackets are used when referencing the C++ Standard Library, while quotes are used for other files.
    > - The `#include "pch.h"` (or in Visual Studio 2017 and earlier, `#include "stdafx.h"`) line references something known as a precompiled header. These are often used by professional programmers to improve compilation times, but they are beyond the scope of this tutorial.
-   > - The `using namespace std;` line tells the compiler to expect stuff from the C++ Standard Library to be used in this file. Without this line, each keyword from the library would have to be preceded with a `std::`, to denote its scope. For instance, without that line, each reference to `cout` would have to be written as `std::cout`. The `using` statement is added to make the code look more clean.
+   > - The `using namespace std;` line tells the compiler to expect stuff from the C++ Standard Library to be used in this file. Without this line, each keyword from the library would have to be preceded with a `std::`, to denote its scope. For instance, without that line, each reference to `cout` would have to be written as `std::cout`. The **`using`** statement is added to make the code look more clean.
    > - The `cout` keyword is used to print to standard output in C++. The **\<\<** operator tells the compiler to send whatever is to the right of it to the standard output.
    > - The **endl** keyword is like the Enter key; it ends the line and moves the cursor to the next line. It is a better practice to put a `\n` inside the string (contained by "") to do the same thing, as `endl` always flushes the buffer and can hurt the performance of the program, but since this is a very small app, `endl` is used instead for better readability.
    > - All C++ statements must end with semicolons and all C++ applications must contain a `main()` function. This function is what the program runs at the start. All code must be accessible from `main()` in order to be used.
@@ -562,7 +562,7 @@ It's time to add some math logic.
    >
    > - The function `Calculate` consumes a number, an operator, and a second number, then performs the requested operation on the numbers.
    > - The switch statement checks which operator was provided, and only executes the case corresponding to that operation. The default: case is a fallback in case the user types an operator that isn't accepted, so the program doesn't break. In general, it's best to handle invalid user input in a more elegant way, but this is beyond the scope of this tutorial.
-   > - The `double` keyword denotes a type of number that supports decimals. This way, the calculator can handle both decimal math and integer math. The `Calculate` function is required to always return such a number due to the `double` at the very start of the code (this denotes the function's return type), which is why we return 0.0 even in the default case.
+   > - The **`double`** keyword denotes a type of number that supports decimals. This way, the calculator can handle both decimal math and integer math. The `Calculate` function is required to always return such a number due to the **`double`** at the very start of the code (this denotes the function's return type), which is why we return 0.0 even in the default case.
    > - The .h file declares the function *prototype*, which tells the compiler upfront what parameters it requires, and what return type to expect from it. The .cpp file has all the implementation details of the function.
 
 If you build and run the code again at this point, it will still exit after asking which operation to perform. Next, you'll modify the `main` function to do some calculations.
@@ -609,7 +609,7 @@ If you build and run the code again at this point, it will still exit after aski
    > - Since C++ programs always start at the `main()` function, we need to call our other code from there, so a `#include` statement is needed.
    > - Some initial variables `x`, `y`, `oper`, and `result` are declared to store the first number, second number, operator, and final result, respectively. It is always good practice to give them some initial values to avoid undefined behavior, which is what is done here.
    > - The `Calculator c;` line declares an object named 'c' as an instance of the `Calculator` class. The class itself is just a blueprint for how calculators work; the object is the specific calculator that does the math.
-   > - The `while (true)` statement is a loop. The code inside the loop continues to execute over and over again as long as the condition inside the `()` holds true. Since the condition is simply listed as `true`, it's always true, so the loop runs forever. To close the program, the user must manually close the console window. Otherwise, the program always waits for new input.
+   > - The `while (true)` statement is a loop. The code inside the loop continues to execute over and over again as long as the condition inside the `()` holds true. Since the condition is simply listed as **`true`**, it's always true, so the loop runs forever. To close the program, the user must manually close the console window. Otherwise, the program always waits for new input.
    > - The `cin` keyword is used to accept input from the user. This input stream is smart enough to process a line of text entered in the console window and place it inside each of the variables listed, in order, assuming the user input matches the required specification. You can modify this line to accept different types of input, for instance, more than two numbers, though the `Calculate()` function would also need to be updated to handle this.
    > - The `c.Calculate(x, oper, y);` expression calls the `Calculate` function defined earlier, and supplies the entered input values. The function then returns a number that gets stored in `result`.
    > - Finally, `result` is printed to the console, so the user sees the result of the calculation.
@@ -746,6 +746,6 @@ Congratulations! You've completed the code for the calculator app, and built and
 
 ## Next steps
 
-[Learn more about Visual Studio for C++](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
+[Learn more about Visual Studio for C++](https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
 ::: moniker-end

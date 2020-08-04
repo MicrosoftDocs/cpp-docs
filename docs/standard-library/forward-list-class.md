@@ -49,7 +49,7 @@ Additions to the controlled sequence might occur by calls to [forward_list::inse
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the allocator class for a forward list object.|
 |[const_iterator](#const_iterator)|A type that provides a constant iterator for the forward list.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a forward list.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **`const`** element in a forward list.|
 |[const_reference](#const_reference)|A type that provides a constant reference to an element in the forward list.|
 |[difference_type](#difference_type)|A signed integer type that can be used to represent the number of elements of a forward list in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A type that provides an iterator for the forward list.|
@@ -146,9 +146,9 @@ The initializer_list to copy.
 
 ### Remarks
 
-If the forward_list is an integer type, the first member function behaves the same as `assign((size_type)First, (Type)Last)`. Otherwise, the first member function replaces the sequence controlled by `*this` with the sequence [ `First, Last)`, which must not overlap the initial controlled sequence.
+If the forward_list is an integer type, the first member function behaves the same as `assign((size_type)First, (Type)Last)`. Otherwise, the first member function replaces the sequence controlled by **`*this`** with the sequence [ `First, Last)`, which must not overlap the initial controlled sequence.
 
-The second member function replaces the sequence controlled by `*this` with a repetition of `Count` elements of value `Val`.
+The second member function replaces the sequence controlled by **`*this`** with a repetition of `Count` elements of value `Val`.
 
 The third member function copies the elements of the initializer_list into the forward_list.
 
@@ -198,7 +198,7 @@ A forward iterator that points just before the first element of the sequence (or
 
 ## <a name="cbegin"></a> cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Returns a **`const`** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -206,13 +206,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A **const** forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **`const`** forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -223,7 +223,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a> cend
 
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
+Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -237,7 +237,7 @@ A forward-access iterator that points just beyond the end of the range.
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -275,7 +275,7 @@ typedef implementation-defined const_iterator;
 
 ## <a name="const_pointer"></a> const_pointer
 
-A type that provides a pointer to a **const** element in a forward list.
+A type that provides a pointer to a **`const`** element in a forward list.
 
 ```cpp
 typedef typename Allocator::const_pointer
@@ -361,7 +361,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the forward list is empty; otherwise, **false**.
+**`true`** if the forward list is empty; otherwise, **`false`**.
 
 ## <a name="end"></a> end
 
@@ -827,7 +827,7 @@ The first position beyond the range to be inserted from the source forward_list.
 
 ### Remarks
 
-The first pair of member functions inserts the sequence controlled by *Source* just after the element in the controlled sequence pointed to by *Where*. It also removes all elements from *Source*. (`&Source` must not equal **this**.)
+The first pair of member functions inserts the sequence controlled by *Source* just after the element in the controlled sequence pointed to by *Where*. It also removes all elements from *Source*. (`&Source` must not equal **`this`**.)
 
 The second pair of member functions removes the element just after *Iter* in the sequence controlled by *Source* and inserts it just after the element in the controlled sequence pointed to by *Where*. (If `Where == Iter || Where == ++Iter`, no change occurs.)
 
@@ -925,7 +925,7 @@ The forward list providing the elements to be exchanged.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and *right*. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
+The member function swaps the controlled sequences between **`*this`** and *right*. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
 
 ## <a name="unique"></a> unique
 

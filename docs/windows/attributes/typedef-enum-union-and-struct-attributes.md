@@ -12,7 +12,7 @@ The following attributes apply to the [typedef](../../cpp/aliases-and-typedefs-c
 
 |Attribute|Description|
 |---------------|-----------------|
-|[case](case-cpp.md)|Used with the [switch_type](switch-type.md) attribute in a **union**.|
+|[case](case-cpp.md)|Used with the [switch_type](switch-type.md) attribute in a **`union`**.|
 |[custom](custom-cpp.md)|Lets you define your own attribute.|
 |[export](export.md)|Causes a data structure to be placed in the .idl file.|
 |[first_is](first-is.md)|Specifies the index of the first array element to be transmitted.|

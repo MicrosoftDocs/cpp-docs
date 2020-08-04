@@ -46,7 +46,7 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 |Title|Description|
 |-----------|-----------------|
 |[Windows Development](/windows/win32/index)|Contains information about the Windows API and COM. (Some Windows APIs and third-party DLLs are implemented as COM objects.)|
-|[Hilo: Developing C++ Applications for Windows 7](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
+|[Hilo: Developing C++ Applications for Windows 7](/previous-versions/msdn10/ff708696(v=msdn.10))|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
 |[Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)|Describes key features of Windows desktop programming in C++.|
 
 ## See also

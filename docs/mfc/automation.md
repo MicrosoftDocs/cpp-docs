@@ -8,7 +8,7 @@ ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
 
 Automation (formerly known as OLE Automation) makes it possible for one application to manipulate objects implemented in another application, or to expose objects so they can be manipulated.
 
-An [Automation server](../mfc/automation-servers.md) is an application (a type of COM server) that exposes its functionality through COM interfaces to other applications, called [Automation clients](../mfc/automation-clients.md). The exposure enables Automation clients to automate certain functions by directly accessing objects and using the services they provide.
+An [Automation server](automation-servers.md) is an application (a type of COM server) that exposes its functionality through COM interfaces to other applications, called [Automation clients](automation-clients.md). The exposure enables Automation clients to automate certain functions by directly accessing objects and using the services they provide.
 
 Automation servers and clients use COM interfaces that are always derived from `IDispatch` and take and return a specific set of data types called Automation types. You can automate any object that exposes an Automation interface, providing methods and properties that you can access from other applications. Automation is available for both OLE and COM objects. The automated object might be local or remote (on another machine accessible across a network); therefore there are two categories of automation:
 
@@ -28,7 +28,7 @@ Many commercial applications, such as Microsoft Excel and Microsoft Visual C++, 
 
 One difficulty in creating Automation methods is helping to provide a uniform "safe" mechanism to pass data between automation servers and clients. Automation uses the **VARIANT** type to pass data. The **VARIANT** type is a tagged union. It has a data member for the value (this is an anonymous C++ union) and a data member indicating the type of information stored in the union. The **VARIANT** type supports a number of standard data types: 2- and 4-byte integers, 4- and 8-byte floating-point numbers, strings, and Boolean values. In addition, it supports the **HRESULT** (OLE error codes), **CURRENCY** (a fixed-point numeric type), and **DATE** (absolute date and time) types, as well as pointers to `IUnknown` and `IDispatch` interfaces.
 
-The **VARIANT** type is encapsulated in the [COleVariant](../mfc/reference/colevariant-class.md) class. The supporting **CURRENCY** and **DATE** classes are encapsulated in the [COleCurrency](../mfc/reference/colecurrency-class.md) and [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) classes.
+The **VARIANT** type is encapsulated in the [COleVariant](reference/colevariant-class.md) class. The supporting **CURRENCY** and **DATE** classes are encapsulated in the [COleCurrency](reference/colecurrency-class.md) and [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) classes.
 
 ## Automation Samples
 
@@ -46,24 +46,24 @@ The **VARIANT** type is encapsulated in the [COleVariant](../mfc/reference/colev
 
 ## What do you want to know more about
 
-- [Automation Clients](../mfc/automation-clients.md)
+- [Automation Clients](automation-clients.md)
 
-- [Automation Servers](../mfc/automation-servers.md)
+- [Automation Servers](automation-servers.md)
 
-- [OLE](../mfc/ole-in-mfc.md)
+- [OLE](ole-in-mfc.md)
 
-- [Active Technology](../mfc/mfc-com.md)
+- [Active Technology](mfc-com.md)
 
 ## What do you want to do
 
-- [Add an Automation class](../mfc/automation-servers.md)
+- [Add an Automation class](automation-servers.md)
 
-- [Use type libraries](../mfc/automation-clients-using-type-libraries.md)
+- [Use type libraries](automation-clients-using-type-libraries.md)
 
-- [Access automation servers](../mfc/automation-servers.md)
+- [Access automation servers](automation-servers.md)
 
-- [Write automation clients in C++](../mfc/automation-clients.md)
+- [Write automation clients in C++](automation-clients.md)
 
 ## See also
 
-[MFC COM](../mfc/mfc-com.md)
+[MFC COM](mfc-com.md)

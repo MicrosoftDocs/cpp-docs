@@ -31,7 +31,7 @@ You can also open existing dialog boxes in the Dialog Box editor for editing.
 
 You can create a runtime dialog box that a user can't exit. This kind of dialog box is useful for logons, and for application or document locks.
 
-1. In the **Properties** pane for the dialog box, set the **System Menu** property to **false**.
+1. In the **Properties** pane for the dialog box, set the **System Menu** property to **`false`**.
 
    This setting disables the dialog box system menu and **Close** button.
 

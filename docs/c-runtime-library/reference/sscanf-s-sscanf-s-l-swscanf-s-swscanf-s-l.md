@@ -90,7 +90,7 @@ sscanf_s(input, "%4c", &c, (unsigned)_countof(c)); // not null terminated
 For more information, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> The size parameter is of type **unsigned**, not **size_t**. When compiling for 64-bit targets, use a static cast to convert **_countof** or **sizeof** results to the correct size.
+> The size parameter is of type **`unsigned`**, not **size_t**. When compiling for 64-bit targets, use a static cast to convert **_countof** or **`sizeof`** results to the correct size.
 
 The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the **scanf_s** function. If copying occurs between strings that overlap, the behavior is undefined.
 

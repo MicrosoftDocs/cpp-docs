@@ -337,7 +337,7 @@ The following sections list the distributions provided in the \<random> header. 
 
 |||
 |-|-|
-|[bernoulli_distribution Class](../standard-library/bernoulli-distribution-class.md)|Produces a Bernoulli distribution of **bool** values.|
+|[bernoulli_distribution Class](../standard-library/bernoulli-distribution-class.md)|Produces a Bernoulli distribution of **`bool`** values.|
 |[binomial_distribution Class](../standard-library/binomial-distribution-class.md)|Produces a binomial distribution of integer values.|
 |[geometric_distribution Class](../standard-library/geometric-distribution-class.md)|Produces a geometric distribution of integer values.|
 |[negative_binomial_distribution Class](../standard-library/negative-binomial-distribution-class.md)|Produces a negative binomial distribution of integer values.|
@@ -402,11 +402,11 @@ This section lists the operators provided in the \<random> header.
 
 Refer to the following sections for information about each of these class template categories defined in \<random>. Both of these class template categories take a type as an argument and use shared template parameter names to describe the properties of the type that are permitted as an actual argument type, as follows:
 
-- `IntType` indicates a **short**, **int**, **long**, **long long**, **unsigned short**, **unsigned int**, **unsigned long**, or **unsigned long long**.
+- `IntType` indicates a **`short`**, **`int`**, **`long`**, **`long long`**, **`unsigned short`**, **`unsigned int`**, **`unsigned long`**, or **`unsigned long long`**.
 
-- `UIntType` indicates **unsigned short**, **unsigned int**, **unsigned long**, or **unsigned long long**.
+- `UIntType` indicates **`unsigned short`**, **`unsigned int`**, **`unsigned long`**, or **`unsigned long long`**.
 
-- `RealType` indicates a **float**, **double**, or **long double**.
+- `RealType` indicates a **`float`**, **`double`**, or **`long double`**.
 
 ### Engines
 
@@ -416,7 +416,7 @@ An *engine* is a class or class template whose instances (generators) act as a s
 
 Every engine and engine adaptor has the following members:
 
-- `typedef` `numeric-type` `result_type` is the type that is returned by the generator's `operator()`. The `numeric-type` is passed as a template parameter on instantiation.
+- **`typedef`** `numeric-type` `result_type` is the type that is returned by the generator's `operator()`. The `numeric-type` is passed as a template parameter on instantiation.
 
 - `result_type operator()` returns values that are uniformly distributed between `min()` and `max()`.
 
@@ -452,13 +452,13 @@ Every engine maintains a *state* that determines the sequence of values that wil
 
 A [Random Number Distributions](#distributions) is a class or class template whose instances transform a stream of uniformly distributed random numbers obtained from an engine into a stream of random numbers that have a particular distribution. Every distribution has the following members:
 
-- `typedef` `numeric-type` `result_type` is the type that is returned by the distribution's `operator()`. The `numeric-type` is passed as a template parameter on instantiation.
+- **`typedef`** `numeric-type` `result_type` is the type that is returned by the distribution's `operator()`. The `numeric-type` is passed as a template parameter on instantiation.
 
 - `template <class URNG> result_type operator()(URNG& gen)` returns values that are distributed according to the distribution's definition, by using `gen` as a source of uniformly distributed random values and the stored *parameters of the distribution*.
 
 - `template <class URNG> result_type operator()(URNG& gen, param_type p)` returns values distributed in accordance with the distribution's definition, using `gen` as a source of uniformly distributed random values and the parameters structure `p`.
 
-- `typedef` `unspecified-type` `param_type` is the package of parameters optionally passed to `operator()` and is used in place of the stored parameters to generate its return value.
+- **`typedef`** `unspecified-type` `param_type` is the package of parameters optionally passed to `operator()` and is used in place of the stored parameters to generate its return value.
 
 - A `const param&` constructor initializes the stored parameters from its argument.
 
@@ -474,7 +474,7 @@ A [Random Number Distributions](#distributions) is a class or class template who
 
 A parameter structure is an object that stores all of the parameters needed for a distribution. It contains:
 
-- `typedef` `distribution-type` `distribution_type`, which is the type of its distribution.
+- **`typedef`** `distribution-type` `distribution_type`, which is the type of its distribution.
 
 - One or more constructors that take the same parameter lists as the distribution constructors take.
 

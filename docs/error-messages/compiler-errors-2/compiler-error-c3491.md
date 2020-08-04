@@ -13,7 +13,7 @@ A non-mutable lambda expression cannot modify the value of a variable that is ca
 
 ### To correct this error
 
-- Declare your lambda expression with the `mutable` keyword, or
+- Declare your lambda expression with the **`mutable`** keyword, or
 
 - Pass the variable by reference to the capture list of the lambda expression.
 
@@ -33,7 +33,7 @@ int main()
 
 ## Example
 
-The following example resolves C3491 by declaring the lambda expression with the `mutable` keyword:
+The following example resolves C3491 by declaring the lambda expression with the **`mutable`** keyword:
 
 ```cpp
 // C3491b.cpp

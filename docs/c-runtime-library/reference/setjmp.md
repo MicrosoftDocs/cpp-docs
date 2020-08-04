@@ -32,7 +32,7 @@ Returns 0 after saving the stack environment. If **setjmp** returns as a result 
 
 ## Remarks
 
-The **setjmp** function saves a stack environment, which you can subsequently restore, using `longjmp`. When used together, **setjmp** and `longjmp` provide a way to execute a non-local **goto**. They are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the normal calling or return conventions.
+The **setjmp** function saves a stack environment, which you can subsequently restore, using `longjmp`. When used together, **setjmp** and `longjmp` provide a way to execute a non-local **`goto`**. They are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the normal calling or return conventions.
 
 A call to **setjmp** saves the current stack environment in *env*. A subsequent call to `longjmp` restores the saved environment and returns control to the point just after the corresponding **setjmp** call. All variables (except register variables) accessible to the routine receiving control contain the values they had when `longjmp` was called.
 
@@ -45,8 +45,8 @@ In Microsoft C++ code on Windows, **longjmp** uses the same stack-unwinding sema
 **END Microsoft Specific**
 
 > [!NOTE]
-> In portable C++ code, you can't assume `setjmp` and `longjmp` support C++ object semantics. Specifically, a `setjmp`/`longjmp` call pair has undefined behavior if replacing the `setjmp` and `longjmp` by **catch**
-and **throw** would invoke any non-trivial destructors for any automatic objects. In C++ programs, we recommend you use the C++ exception-handling mechanism.
+> In portable C++ code, you can't assume `setjmp` and `longjmp` support C++ object semantics. Specifically, a `setjmp`/`longjmp` call pair has undefined behavior if replacing the `setjmp` and `longjmp` by **`catch`**
+and **`throw`** would invoke any non-trivial destructors for any automatic objects. In C++ programs, we recommend you use the C++ exception-handling mechanism.
 
 For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-longjmp.md).
 

@@ -29,7 +29,7 @@ The traits of the basic element of the file buffer (usually `char_traits<Char_T>
 The class template describes a stream buffer that controls the transmission of elements of type *Char_T*, whose character traits are determined by the class *Tr*, to and from a sequence of elements stored in an external file.
 
 > [!NOTE]
-> Objects of type `basic_filebuf` are created with an internal buffer of type __char\*__ regardless of the `char_type` specified by the type parameter *Char_T*. This means that a Unicode string (containing **wchar_t** characters) will be converted to an ANSI string (containing **char** characters) before it is written to the internal buffer. To store Unicode strings in the buffer, create a new buffer of type **wchar_t** and set it using the [`basic_streambuf::pubsetbuf`](../standard-library/basic-streambuf-class.md#pubsetbuf)`()` method. To see an example that demonstrates this behavior, see below.
+> Objects of type `basic_filebuf` are created with an internal buffer of type __char\*__ regardless of the `char_type` specified by the type parameter *Char_T*. This means that a Unicode string (containing **`wchar_t`** characters) will be converted to an ANSI string (containing **`char`** characters) before it is written to the internal buffer. To store Unicode strings in the buffer, create a new buffer of type **`wchar_t`** and set it using the [`basic_streambuf::pubsetbuf`](../standard-library/basic-streambuf-class.md#pubsetbuf)`()` method. To see an example that demonstrates this behavior, see below.
 
 An object of class `basic_filebuf<Char_T, Tr>` stores a file pointer, which designates the `FILE` object that controls the stream associated with an open file. It also stores pointers to two file conversion facets for use by the protected member functions [overflow](#overflow) and [underflow](#underflow). For more information, see [`basic_filebuf::open`](#open).
 
@@ -229,9 +229,9 @@ The member function returns a null pointer if the file pointer is a null pointer
 
 ### Remarks
 
-`close` calls `fclose(fp)`. If that function returns a nonzero value, the function returns a null pointer. Otherwise, it returns **this** to indicate that the file was successfully closed.
+`close` calls `fclose(fp)`. If that function returns a nonzero value, the function returns a null pointer. Otherwise, it returns **`this`** to indicate that the file was successfully closed.
 
-For a wide stream, if any insertions have occurred since the stream was opened, or since the last call to `streampos`, the function calls [`overflow`](#overflow). It also inserts any sequence needed to restore the initial conversion state, by using the file conversion facet `fac` to call `fac.unshift` as needed. Each produced element `byte` of type **char** is written to the associated stream designated by the file pointer `fp` as if by successive calls of the form `fputc(byte, fp)`. If the call to `fac.unshift` or any write fails, the function does not succeed.
+For a wide stream, if any insertions have occurred since the stream was opened, or since the last call to `streampos`, the function calls [`overflow`](#overflow). It also inserts any sequence needed to restore the initial conversion state, by using the file conversion facet `fac` to call `fac.unshift` as needed. Each produced element `byte` of type **`char`** is written to the associated stream designated by the file pointer `fp` as if by successive calls of the form `fputc(byte, fp)`. If the call to `fac.unshift` or any write fails, the function does not succeed.
 
 ### Example
 
@@ -300,7 +300,7 @@ bool is_open() const;
 
 ### Return Value
 
-**true** if the file pointer isn't null.
+**`true`** if the file pointer isn't null.
 
 ### Example
 
@@ -371,29 +371,25 @@ The default file opening protection, equivalent to the *shflag* parameter in [_f
 
 ### Return Value
 
-If the buffer is already open, or if the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **this**.
+If the buffer is already open, or if the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **`this`**.
 
 ### Remarks
 
-The member function opens the file with name *filename*, by calling [`fopen`](../c-runtime-library/reference/fopen-wfopen.md)`(filename, strmode)`. `strmode` is determined from `mode & ~(`[`ate`](../standard-library/ios-base-class.md#openmode) `|` [`binary`](../standard-library/ios-base-class.md#openmode)`)`:
+This function uses a `FILE *` to back the `basic_filebuf` as though you had called [`fopen/wfopen`](../c-runtime-library/reference/fopen-wfopen.md)`(filename, strmode)`. `strmode` is determined from `mode & ~(`[`ate`](../standard-library/ios-base-class.md#openmode) `|` [`binary`](../standard-library/ios-base-class.md#openmode)`)`:
 
 - `ios_base::in` becomes `"r"` (open existing file for reading).
-
 - [ios_base::out](../standard-library/ios-base-class.md#fmtflags) or `ios_base::out | ios_base::trunc` becomes `"w"` (truncate existing file or create for writing).
-
 - `ios_base::out | app` becomes `"a"` (open existing file for appending all writes).
-
 - `ios_base::in | ios_base::out` becomes `"r+"` (open existing file for reading and writing).
-
 - `ios_base::in | ios_base::out | ios_base::trunc` becomes `"w+"` (truncate existing file or create for reading and writing).
-
 - `ios_base::in | ios_base::out | ios_base::app` becomes `"a+"` (open existing file for reading and for appending all writes).
 
-If `mode & ios_base::binary` is nonzero, the function appends `b` to `strmode` to open a binary stream instead of a text stream. It then stores the value returned by `fopen` in the file pointer `fp`. If `mode & ios_base::ate` is nonzero and the file pointer isn't a null pointer, the function calls `fseek(fp, 0, SEEK_END)` to position the stream at end of file. If that positioning operation fails, the function calls [`close`](#close)`(fp)` and stores a null pointer in the file pointer.
+If `mode & ios_base::binary` is nonzero, the function appends `b` to `strmode` to open a binary stream instead of a text stream.
+If `mode & ios_base::ate` is nonzero and the file was succesfully opened, the current location in the stream is positioned at the end of file. If that fails, the file is closed.
 
-If the file pointer isn't a null pointer, the function determines the file conversion facet: `use_facet<codecvt<Char_T, char, traits_type::`[`state_type`](../standard-library/char-traits-struct.md#state_type)`> >(`[`getloc`](../standard-library/basic-streambuf-class.md#getloc)`)`, for use by [underflow](#underflow) and [overflow](#overflow).
+If the above operations completed successfully, the file conversion facet is determined: `use_facet<codecvt<Char_T, char, traits_type::`[`state_type`](../standard-library/char-traits-struct.md#state_type)`> >(`[`getloc`](../standard-library/basic-streambuf-class.md#getloc)`)`, for use by [underflow](#underflow) and [overflow](#overflow).
 
-If the file pointer is a null pointer, the function returns a null pointer. Otherwise, it returns **this**.
+If the file could not be succesfully opened, null is returned.
 
 ### Example
 
@@ -472,7 +468,7 @@ The protected virtual member function puts back an element into the input buffer
 
 - If the function can make a `putback` position available, it can do so, set the next pointer to point at that position, and store `ch` in that position.
 
-- If the function can push back an element onto the input stream, it can do so, such as by calling `ungetc` for an element of type **char**.
+- If the function can push back an element onto the input stream, it can do so, such as by calling `ungetc` for an element of type **`char`**.
 
 ## <a name="pos_type"></a> basic_filebuf::pos_type
 
@@ -544,7 +540,7 @@ The protected virtual member function attempts to alter the current positions fo
 
 For a file opened for both reading and writing, both the input and output streams are positioned in tandem. To switch between inserting and extracting, you must call either [`pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff) or [`pubseekpos`](../standard-library/basic-streambuf-class.md#pubseekpos). Calls to `pubseekoff` (and to `seekoff`) have various limitations for text streams, binary streams, and wide streams.
 
-For a wide stream, if any insertions have occurred since the stream was opened, or since the last call to `streampos`, the function calls [overflow](#overflow). It also inserts any sequence needed to restore the initial conversion state, by using the file conversion facet `fac` to call `fac.unshift` as needed. Each produced element `byte` of type **char** is written to the associated stream designated by the file pointer `fp` as if by successive calls of the form `fputc(byte, fp)`. If the call to `fac.unshift` or any write fails, the function does not succeed.
+For a wide stream, if any insertions have occurred since the stream was opened, or since the last call to `streampos`, the function calls [overflow](#overflow). It also inserts any sequence needed to restore the initial conversion state, by using the file conversion facet `fac` to call `fac.unshift` as needed. Each produced element `byte` of type **`char`** is written to the associated stream designated by the file pointer `fp` as if by successive calls of the form `fputc(byte, fp)`. If the call to `fac.unshift` or any write fails, the function does not succeed.
 
 ## <a name="setbuf"></a> basic_filebuf::setbuf
 
@@ -570,7 +566,7 @@ The protected member function returns zero if the file pointer `fp` is a null po
 
 ### Remarks
 
-`setbuf` calls `setvbuf( fp, (char*) _Buffer, _IOFBF, count * sizeof( Char_T))` to offer the array of `count` elements beginning at *_Buffer* as a buffer for the stream. If that function returns a nonzero value, the function returns a null pointer. Otherwise, it returns **this** to signal success.
+`setbuf` calls `setvbuf( fp, (char*) _Buffer, _IOFBF, count * sizeof( Char_T))` to offer the array of `count` elements beginning at *_Buffer* as a buffer for the stream. If that function returns a nonzero value, the function returns a null pointer. Otherwise, it returns **`this`** to signal success.
 
 ## <a name="swap"></a> basic_filebuf::swap
 
@@ -623,7 +619,7 @@ The protected virtual member function attempts to extract the current element `c
 
 - If a read position is available, it takes `ch` as the element stored in the read position and advances the next pointer for the input buffer.
 
-- It can read one or more elements of type **char**, as if by successive calls of the form `fgetc(fp)`, and convert them to an element `ch` of type `Char_T` by using the file conversion facet `fac` to call `fac.in` as needed. If any read or conversion fails, the function does not succeed.
+- It can read one or more elements of type **`char`**, as if by successive calls of the form `fgetc(fp)`, and convert them to an element `ch` of type `Char_T` by using the file conversion facet `fac` to call `fac.in` as needed. If any read or conversion fails, the function does not succeed.
 
 ## See also
 

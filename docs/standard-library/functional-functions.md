@@ -58,7 +58,7 @@ The values of the bound arguments `v1, v2, ..., vN` and their corresponding type
 
 if `ti` is of type `reference_wrapper<T>` the argument `vi` is `ti.get()` and its type `Vi` is `T&`;
 
-if the value of `std::is_bind_expression<Ti>::value` is **true** the argument `vi` is `ti(u1, u2, ..., uM)` and its type `Vi` is `result_of<Ti` `cv` `(U1&, U2&, ..., UN&>::type`;
+if the value of `std::is_bind_expression<Ti>::value` is **`true`** the argument `vi` is `ti(u1, u2, ..., uM)` and its type `Vi` is `result_of<Ti` `cv` `(U1&, U2&, ..., UN&>::type`;
 
 if the value `j` of `std::is_placeholder<Ti>::value` isn't zero the argument `vi` is `uj` and its type `Vi` is `Uj&`;
 
@@ -549,7 +549,7 @@ The object to call.
 The call arguments.
 
 *specification*\
-The **noexcept** specification `std::is_nothrow_invocable_v<Callable, Args>)`.
+The **`noexcept`** specification `std::is_nothrow_invocable_v<Callable, Args>)`.
 
 ### Remarks
 
@@ -733,7 +733,7 @@ A pointer to the member function of class `Type` to be converted to a function o
 
 ### Return Value
 
-A **const** or **non_const** function object of type `mem_fun_t` or `mem_fun1_t`.
+A **`const`** or **non_const** function object of type `mem_fun_t` or `mem_fun1_t`.
 
 ### Example
 
@@ -820,7 +820,7 @@ A pointer to the member function of class `Type` to be converted to a function o
 
 ### Return Value
 
-A **const** or `non_const` function object of type `mem_fun_ref_t` or `mem_fun1_ref_t`.
+A **`const`** or `non_const` function object of type `mem_fun_ref_t` or `mem_fun1_ref_t`.
 
 ### Example
 

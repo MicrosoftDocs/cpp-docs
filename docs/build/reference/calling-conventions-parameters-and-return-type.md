@@ -18,7 +18,7 @@ FARPROC WINAPI __delayLoadHelper2(
 ### Parameters
 
 *pidd*<br/>
-A `const` pointer to a `ImgDelayDescr` that contains the offsets of various import-related data, a timestamp for binding information, and a set of attributes that provide further information about the descriptor content. Currently there's only one attribute, `dlattrRva`, which indicates that the addresses in the descriptor are relative virtual addresses. For more information, see the declarations in *delayimp.h*.
+A **`const`** pointer to a `ImgDelayDescr` that contains the offsets of various import-related data, a timestamp for binding information, and a set of attributes that provide further information about the descriptor content. Currently there's only one attribute, `dlattrRva`, which indicates that the addresses in the descriptor are relative virtual addresses. For more information, see the declarations in *delayimp.h*.
 
 For the definition of the `PCImgDelayDescr` structure, see [Structure and Constant Definitions](structure-and-constant-definitions.md).
 
@@ -41,7 +41,7 @@ It's your responsibility to handle these exceptions.
 
 ## Remarks
 
-The calling convention for the helper function is `__stdcall`. The type of the return value isn't relevant, so FARPROC is used. This function has C linkage.
+The calling convention for the helper function is **`__stdcall`**. The type of the return value isn't relevant, so FARPROC is used. This function has C linkage.
 
 The return value of the delay load helper needs to be stored in the passed-in function pointer location, unless you want your helper routine to be used as a notification hook. In that case, your code is responsible for finding the appropriate function pointer to return. The thunk code the linker generates then takes that return value as the real target of the import and jumps directly to it.
 

@@ -111,7 +111,7 @@ The right `thread::id` object.
 
 ### Return Value
 
-**true** if *Left* precedes *Right* in the total ordering; otherwise, **false**.
+**`true`** if *Left* precedes *Right* in the total ordering; otherwise, **`false`**.
 
 ### Remarks
 
@@ -165,7 +165,7 @@ The right `thread::id` object.
 
 ### Return Value
 
-**true** if the two objects represent the same thread of execution or if neither object represents a thread of execution; otherwise, **false**.
+**`true`** if the two objects represent the same thread of execution or if neither object represents a thread of execution; otherwise, **`false`**.
 
 ### Remarks
 

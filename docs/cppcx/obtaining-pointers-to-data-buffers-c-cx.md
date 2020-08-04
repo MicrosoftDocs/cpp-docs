@@ -127,7 +127,7 @@ The following steps show how to create a C# Universal Windows Platform app that 
 
 1. In Class1.h
 
-   1. Add this `typedef` at the second line, just after `#pragma once`:
+   1. Add this **`typedef`** at the second line, just after `#pragma once`:
 
         ```cpp
         typedef uint8 byte;

@@ -94,7 +94,7 @@ bool equals(const sync_shared<Cache>& Other) const;
 
 ### Return Value
 
-**true** if the result of `cache.equals(Other.cache)`, where `cache` represents the cache object, is **true**; otherwise, **false**.
+**`true`** if the result of `cache.equals(Other.cache)`, where `cache` represents the cache object, is **`true`**; otherwise, **`false`**.
 
 ### Remarks
 

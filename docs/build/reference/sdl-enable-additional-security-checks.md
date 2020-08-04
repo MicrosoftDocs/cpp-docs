@@ -10,17 +10,15 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 
 ## Syntax
 
-```
-/sdl[-]
-```
+> **`/sdl`**[**`-`**]
 
 ## Remarks
 
-**/sdl** enables a superset of the baseline security checks provided by [/GS](gs-buffer-security-check.md) and overrides **/GS-**. By default, **/sdl** is off. **/sdl-** disables the additional security checks.
+**/sdl** enables a superset of the baseline security checks provided by [`/GS`](gs-buffer-security-check.md) and overrides **`/GS-`**. By default, **`/sdl`** is off. **`/sdl-`** disables the additional security checks.
 
 ## Compile-time Checks
 
-**/sdl** enables these warnings as errors:
+**`/sdl`** enables these warnings as errors:
 
 |Warning enabled by /sdl|Equivalent command-line switch|Description|
 |------------------------------|-------------------------------------|-----------------|
@@ -31,18 +29,18 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 |[C4700](../../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md)|/we4700|Use of an uninitialized local variable.|
 |[C4703](../../error-messages/compiler-warnings/compiler-warning-level-4-c4703.md)|/we4703|Use of a potentially uninitialized local pointer variable.|
 |[C4789](../../error-messages/compiler-warnings/compiler-warning-level-1-c4789.md)|/we4789|Buffer overrun when specific C run-time (CRT) functions are used.|
-|[C4995](../../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md)|/we4995|Use of a function marked with pragma [deprecated](../../preprocessor/deprecated-c-cpp.md).|
-|[C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)|/we4996|Use of a function marked as [deprecated](../../cpp/deprecated-cpp.md).|
+|[C4995](../../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md)|/we4995|Use of a function marked with pragma [`deprecated`](../../preprocessor/deprecated-c-cpp.md).|
+|[C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)|/we4996|Use of a function marked as [`deprecated`](../../cpp/deprecated-cpp.md).|
 
 ## Runtime checks
 
-When **/sdl** is enabled, the compiler generates code to perform these checks at run time:
+When **`/sdl`** is enabled, the compiler generates code to perform these checks at run time:
 
-- Enables the strict mode of **/GS** run-time buffer overrun detection, equivalent to compiling with `#pragma strict_gs_check(push, on)`.
+- Enables the strict mode of **`/GS`** run-time buffer overrun detection, equivalent to compiling with `#pragma strict_gs_check(push, on)`.
 
-- Performs limited pointer sanitization. In expressions that do not involve dereferences and in types that have no user-defined destructor, pointer references are set to a non-valid address after a call to `delete`. This helps to prevent the reuse of stale pointer references.
+- Performs limited pointer sanitization. In expressions that do not involve dereferences and in types that have no user-defined destructor, pointer references are set to a non-valid address after a call to **`delete`**. This helps to prevent the reuse of stale pointer references.
 
-- Performs class member pointer initialization. Automatically initializes class members of pointer type to **nullptr** on object instantiation (before the constructor runs). This helps prevent the use of uninitialized pointers that the constructor does not explicitly initialize. The compiler-generated member pointer initialization is called as long as:
+- Performs class member pointer initialization. Automatically initializes class members of pointer type to **`nullptr`** on object instantiation (before the constructor runs). This helps prevent the use of uninitialized pointers that the constructor does not explicitly initialize. The compiler-generated member pointer initialization is called as long as:
 
   - The object is not allocated using a custom (user defined) `operator new`
 

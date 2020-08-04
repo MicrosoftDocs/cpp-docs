@@ -23,9 +23,9 @@ To call an ODBC API function directly, you must take the same steps you would ta
 
 - Deallocate storage when you finish.
 
-For more information about these steps, see the [Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK in the MSDN documentation.
+For more information about these steps, see the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference).
 
-In addition to these steps, you need to take extra steps to check function return values, ensure that your program is not waiting for an asynchronous call to finish, and so on. You can simplify these last steps by using the AFX_SQL_ASYNC and AFX_SQL_SYNC macros. For more information, see [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *MFC Reference*.
+In addition to these steps, you need to take extra steps to check function return values, ensure that your program is not waiting for an asynchronous call to finish, and so on. You can simplify these last steps by using the AFX_SQL_ASYNC and AFX_SQL_SYNC macros. For more information, see [MFC macros and globals](../../mfc/reference/mfc-macros-and-globals.md).
 
 ## See also
 

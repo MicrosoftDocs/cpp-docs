@@ -31,7 +31,7 @@ The locale to be tested for the presence of a facet.
 
 ### Return Value
 
-**true** if the locale has the facet tested for; **false** if it does not.
+**`true`** if the locale has the facet tested for; **`false`** if it does not.
 
 ### Remarks
 
@@ -77,7 +77,7 @@ The locale containing the alphanumeric element to be tested.
 
 ### Return Value
 
-**true** if the element tested is alphanumeric; **false** if it is not.
+**`true`** if the element tested is alphanumeric; **`false`** if it is not.
 
 ### Example
 
@@ -144,7 +144,7 @@ The locale containing the alphabetic element to be tested.
 
 ### Return Value
 
-**true** if the element tested is alphabetic; **false** if it is not.
+**`true`** if the element tested is alphabetic; **`false`** if it is not.
 
 ### Remarks
 
@@ -209,7 +209,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is a control character; **false** if it is not.
+**`true`** if the element tested is a control character; **`false`** if it is not.
 
 ### Remarks
 
@@ -274,7 +274,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is a numeric character; **false** if it is not.
+**`true`** if the element tested is a numeric character; **`false`** if it is not.
 
 ### Remarks
 
@@ -339,7 +339,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is an alphanumeric or a punctuation character; **false** if it is not.
+**`true`** if the element tested is an alphanumeric or a punctuation character; **`false`** if it is not.
 
 ### Remarks
 
@@ -404,7 +404,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is a lowercase character; **false** if it is not.
+**`true`** if the element tested is a lowercase character; **`false`** if it is not.
 
 ### Remarks
 
@@ -469,7 +469,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is a printable; **false** if it is not.
+**`true`** if the element tested is a printable; **`false`** if it is not.
 
 ### Remarks
 
@@ -533,7 +533,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is a punctuation character; **false** if it is not.
+**`true`** if the element tested is a punctuation character; **`false`** if it is not.
 
 ### Remarks
 
@@ -598,7 +598,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is a whitespace character; **false** if it is not.
+**`true`** if the element tested is a whitespace character; **`false`** if it is not.
 
 ### Remarks
 
@@ -663,7 +663,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is an uppercase character; **false** if it is not.
+**`true`** if the element tested is an uppercase character; **`false`** if it is not.
 
 ### Remarks
 
@@ -728,7 +728,7 @@ The locale containing the element to be tested.
 
 ### Return Value
 
-**true** if the element tested is a character used to represent a hexadecimal number; **false** if it is not.
+**`true`** if the element tested is a character used to represent a hexadecimal number; **`false`** if it is not.
 
 ### Remarks
 

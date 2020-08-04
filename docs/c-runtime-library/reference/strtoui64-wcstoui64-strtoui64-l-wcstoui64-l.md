@@ -11,7 +11,7 @@ ms.assetid: 7fcb537e-4554-4ceb-a5b6-bc09244e72ef
 ---
 # _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
 
-Convert a string to an unsigned **__int64** value.
+Convert a string to an **`unsigned __int64`** value.
 
 ## Syntax
 
@@ -66,7 +66,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The **_strtoui64** function converts *strSource* to an **unsigned** **__int64**. **_wcstoui64** is a wide-character version of **_strtoui64**; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
+The **_strtoui64** function converts *strSource* to an **`unsigned __int64`**. **_wcstoui64** is a wide-character version of **_strtoui64**; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
 
 Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*.
 

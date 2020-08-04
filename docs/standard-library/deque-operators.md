@@ -25,7 +25,7 @@ An object of type `deque`.
 
 ### Return Value
 
-**true** if the deque objects are not equal; **false** if the deque objects are equal.
+**`true`** if the deque objects are not equal; **`false`** if the deque objects are equal.
 
 ### Remarks
 
@@ -76,7 +76,7 @@ An object of type `deque`.
 
 ### Return Value
 
-**true** if the deque on the left side of the operator is less than and not equal to the deque on the right side of the operator; otherwise **false**.
+**`true`** if the deque on the left side of the operator is less than and not equal to the deque on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -131,7 +131,7 @@ An object of type `deque`.
 
 ### Return Value
 
-**true** if the deque on the left side of the operator is less than or equal to the deque on the right side of the operator; otherwise **false**.
+**`true`** if the deque on the left side of the operator is less than or equal to the deque on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -186,7 +186,7 @@ An object of type `deque`.
 
 ### Return Value
 
-**true** if the deque on the left side of the operator is equal to the deque on the right side of the operator; otherwise **false**.
+**`true`** if the deque on the left side of the operator is equal to the deque on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -244,7 +244,7 @@ An object of type `deque`.
 
 ### Return Value
 
-**true** if the deque on the left side of the operator is greater than the deque on the right side of the operator; otherwise **false**.
+**`true`** if the deque on the left side of the operator is greater than the deque on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -300,7 +300,7 @@ An object of type `deque`.
 
 ### Return Value
 
-**true** if the deque on the left side of the operator is greater than or equal to the deque on the right side of the operator; otherwise **false**.
+**`true`** if the deque on the left side of the operator is greater than or equal to the deque on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

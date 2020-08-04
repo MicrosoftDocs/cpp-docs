@@ -18,14 +18,14 @@ This topic lists the standard dialog data validation (DDV) routines used for com
 |[DDV_MaxChars](#ddv_maxchars)|Verifies the number of characters in a given control value does not exceed a given maximum.|
 |[DDV_MinMaxByte](#ddv_minmaxbyte)|Verifies a given control value does not exceed a given **BYTE** range.|
 |[DDV_MinMaxDateTime](#ddv_minmaxdatetime)|Verifies a given control value does not exceed a given time range.|
-|[DDV_MinMaxDouble](#ddv_minmaxdouble)|Verifies a given control value does not exceed a given **double** range.|
+|[DDV_MinMaxDouble](#ddv_minmaxdouble)|Verifies a given control value does not exceed a given **`double`** range.|
 |[DDV_MinMaxDWord](#ddv_minmaxdword)|Verifies a given control value does not exceed a given **DWORD** range.|
-|[DDV_MinMaxFloat](#ddv_minmaxfloat)|Verifies a given control value does not exceed a given **float** range.|
-|[DDV_MinMaxInt](#ddv_minmaxint)|Verifies a given control value does not exceed a given **int** range.|
-|[DDV_MinMaxLong](#ddv_minmaxlong)|Verifies a given control value does not exceed a given **long** range.|
+|[DDV_MinMaxFloat](#ddv_minmaxfloat)|Verifies a given control value does not exceed a given **`float`** range.|
+|[DDV_MinMaxInt](#ddv_minmaxint)|Verifies a given control value does not exceed a given **`int`** range.|
+|[DDV_MinMaxLong](#ddv_minmaxlong)|Verifies a given control value does not exceed a given **`long`** range.|
 |[DDV_MinMaxLongLong](#ddv_minmaxlonglong)|Verifies a given control value does not exceed a given **LONGLONG** range.|
 |[DDV_MinMaxMonth](#ddv_minmaxmonth)|Verifies a given control value does not exceed a given date range.|
-|[DDV_MinMaxShort](#ddv_minmaxshort)|Verifies a given control value does not exceed a given **short** range.|
+|[DDV_MinMaxShort](#ddv_minmaxshort)|Verifies a given control value does not exceed a given **`short`** range.|
 |[DDV_MinMaxSlider](#ddv_minmaxslider)|Verifies a given slider control value falls within the given range.|
 |[DDV_MinMaxUInt](#ddv_minmaxuint)|Verifies a given control value does not exceed a given **UINT** range.|
 |[DDV_MinMaxUnsigned](#ddv_minmaxuint)|Verifies a given control value falls between two specified values.|
@@ -156,10 +156,10 @@ A pointer to a `CDataExchange` object. The framework supplies this object to est
 A reference to a member variable of the dialog box, form view, or control view object with which data is validated.
 
 *minVal*<br/>
-Minimum value (of type **double**) allowed.
+Minimum value (of type **`double`**) allowed.
 
 *maxVal*<br/>
-Maximum value (of type **double**) allowed.
+Maximum value (of type **`double`**) allowed.
 
 ### Remarks
 
@@ -224,10 +224,10 @@ A pointer to a `CDataExchange` object. The framework supplies this object to est
 A reference to a member variable of the dialog box, form view, or control view object with which data is validated.
 
 *minVal*<br/>
-Minimum value (of type **float**) allowed.
+Minimum value (of type **`float`**) allowed.
 
 *maxVal*<br/>
-Maximum value (of type **float**) allowed.
+Maximum value (of type **`float`**) allowed.
 
 ### Remarks
 
@@ -258,10 +258,10 @@ A pointer to a `CDataExchange` object. The framework supplies this object to est
 A reference to a member variable of the dialog box, form view, or control view object with which data is validated.
 
 *minVal*<br/>
-Minimum value (of type **int**) allowed.
+Minimum value (of type **`int`**) allowed.
 
 *maxVal*<br/>
-Maximum value (of type **int**) allowed.
+Maximum value (of type **`int`**) allowed.
 
 ### Remarks
 
@@ -292,10 +292,10 @@ A pointer to a `CDataExchange` object. The framework supplies this object to est
 A reference to a member variable of the dialog box, form view, or control view object with which data is validated.
 
 *minVal*<br/>
-Minimum value (of type **long**) allowed.
+Minimum value (of type **`long`**) allowed.
 
 *maxVal*<br/>
-Maximum value (of type **long**) allowed.
+Maximum value (of type **`long`**) allowed.
 
 ### Remarks
 
@@ -400,10 +400,10 @@ A pointer to a `CDataExchange` object. The framework supplies this object to est
 A reference to a member variable of the dialog box, form view, or control view object with which data is validated.
 
 *minVal*<br/>
-Minimum value (of type **short**) allowed.
+Minimum value (of type **`short`**) allowed.
 
 *maxVal*<br/>
-Maximum value (of type **short**) allowed.
+Maximum value (of type **`short`**) allowed.
 
 ### Remarks
 
@@ -538,10 +538,10 @@ A pointer to a `CDataExchange` object. The framework supplies this object to est
 A reference to a member variable of the dialog box, form view, or control view object with which data is validated.
 
 *minVal*<br/>
-Minimum value (of type **unsigned** ) allowed.
+Minimum value (of type **`unsigned`** ) allowed.
 
 *maxVal*<br/>
-Maximum value (of type **unsigned** ) allowed.
+Maximum value (of type **`unsigned`** ) allowed.
 
 ### Remarks
 

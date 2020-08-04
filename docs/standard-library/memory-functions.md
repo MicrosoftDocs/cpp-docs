@@ -743,7 +743,7 @@ When you see error C2280 in connection with a `unique_ptr`, it is almost certain
 
 ## <a name="owner_less"></a> owner_less
 
-Allows ownership-based mixed comparisons of shared and weak pointers. Returns **true** if the left parameter is ordered before right parameter by the member function `owner_before`.
+Allows ownership-based mixed comparisons of shared and weak pointers. Returns **`true`** if the left parameter is ordered before right parameter by the member function `owner_before`.
 
 ```cpp
 template <class T>
@@ -1086,7 +1086,7 @@ A pointer to the memory address previously marked using [declare_reachable](#dec
 
 ### Remarks
 
-If *ptr* is not **nullptr**, the function informs any garbage collector that *ptr* is no longer reachable. It returns a safely derived pointer that compares equal to *ptr*.
+If *ptr* is not **`nullptr`**, the function informs any garbage collector that *ptr* is no longer reachable. It returns a safely derived pointer that compares equal to *ptr*.
 
 ## <a name="uninitialized_copy"></a> uninitialized_copy
 

@@ -19,7 +19,7 @@ Unary operators appear before their operand and associate from right to left.
 
 *unary-operator cast-expression*
 
-**sizeof**  *unary-expression*
+**`sizeof`**  *unary-expression*
 
 **sizeof (**  *type-name*  **)**
 

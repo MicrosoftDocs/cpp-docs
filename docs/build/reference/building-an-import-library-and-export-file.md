@@ -13,7 +13,7 @@ To build an import library and export file, use the following syntax:
 
 When /DEF is specified, LIB creates the output files from export specifications that are passed in the LIB command. There are three methods for specifying exports, listed in recommended order of use:
 
-1. A **__declspec(dllexport)** definition in one of the *objfiles* or *libraries*
+1. A **`__declspec(dllexport)`** definition in one of the *objfiles* or *libraries*
 
 1. A specification of /EXPORT:*name* on the LIB command line
 

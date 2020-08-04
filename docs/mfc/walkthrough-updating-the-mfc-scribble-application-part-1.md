@@ -207,7 +207,7 @@ The following steps show how to create an instance of the ribbon bar when your a
     CMFCRibbonBar m_wndRibbonBar;
     ```
 
-2. In the mainfrm.cpp file, add the following code before the final `return` statement at the end of the `CMainFrame::OnCreate` function. It creates an instance of the ribbon bar.
+2. In the mainfrm.cpp file, add the following code before the final **`return`** statement at the end of the `CMainFrame::OnCreate` function. It creates an instance of the ribbon bar.
 
     ```cpp
     // Create the ribbon bar

@@ -15,4 +15,4 @@ Code attempts to access a private or protected member.
 
 1. Change the access level of the member.
 
-1. Declare the member a `friend` of the accessing function.
+1. Declare the member a **`friend`** of the accessing function.

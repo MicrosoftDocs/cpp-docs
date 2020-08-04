@@ -17,7 +17,7 @@ Names the code section where the specified function definitions are to reside. T
 
 The **alloc_text** pragma does not handle C++ member functions or overloaded functions. It is applicable only to functions declared with C linkage — that is, functions declared with the **extern "C"** linkage specification. If you attempt to use this pragma on a function with C++ linkage, a compiler error is generated.
 
-Since function addressing using `__based` is not supported, specifying section locations requires the use of the **alloc_text** pragma. The name specified by *textsection* should be enclosed in double quotation marks.
+Since function addressing using **`__based`** is not supported, specifying section locations requires the use of the **alloc_text** pragma. The name specified by *textsection* should be enclosed in double quotation marks.
 
 The **alloc_text** pragma must appear after the declarations of any of the specified functions and before the definitions of these functions.
 

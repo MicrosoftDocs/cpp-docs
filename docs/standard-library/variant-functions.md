@@ -45,7 +45,7 @@ template <class T, class... Types>
 
 ## <a name="holds_alternative"></a> holds_alternative
 
-Return **true** if a variant exists.
+Return **`true`** if a variant exists.
 
 ```cpp
 template <class T, class... Types>

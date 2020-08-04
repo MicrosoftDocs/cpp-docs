@@ -45,7 +45,7 @@ ms.assetid: ed448953-687a-4b57-a1cb-12967bd770ea
 &nbsp;&nbsp;&nbsp;&nbsp;**--**  *unary-expression*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*unary-operator*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*cast-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sizeof**  *unary-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`sizeof`**  *unary-expression*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**sizeof (**  *type-name*  **)**
 
 *unary-operator*: one of<br/>

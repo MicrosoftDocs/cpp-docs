@@ -136,7 +136,7 @@ The tuple to copy from.
 
 ### Remarks
 
-The first two member operators assign the elements of *right* to the corresponding elements of `*this`. The third member operator assigns `right.first` to the element at index 0 of `*this` and `right.second` to the element at index 1. All three member operators return `*this`.
+The first two member operators assign the elements of *right* to the corresponding elements of **`*this`**. The third member operator assigns `right.first` to the element at index 0 of **`*this`** and `right.second` to the element at index 1. All three member operators return **`*this`**.
 
 The remaining member operators are analogs to earlier ones, but with [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 

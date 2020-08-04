@@ -9,7 +9,7 @@ ms.assetid: af1c5b0c-dbf9-4274-b06a-c6c2cdcf2a52
 
 expected a for loop following OpenMP 'directive' directive
 
-It is an error for anything other than a `for` loop to immediately follow a `#pragma omp for` directive.
+It is an error for anything other than a **`for`** loop to immediately follow a `#pragma omp for` directive.
 
 The following sample generates C3014:
 

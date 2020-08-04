@@ -67,7 +67,7 @@ HRESULT Open(const CSession& session,
 [in] Specifies the restrictions on the schema rowset.
 
 *bBind*<br/>
-[in] Specifies whether to bind the column map automatically. The default is **true**, which causes the column map to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the column map so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
+[in] Specifies whether to bind the column map automatically. The default is **`true`**, which causes the column map to be bound automatically. Setting *bBind* to **`false`** prevents the automatic binding of the column map so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
 
 ### Return Value
 

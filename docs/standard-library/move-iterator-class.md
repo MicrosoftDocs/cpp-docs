@@ -32,9 +32,9 @@ A `move_iterator` might be capable of operations that are not defined by the wra
 |Type name|Description|
 |-|-|
 |[iterator_type](#iterator_type)|A synonym for the template parameter `RandomIterator`.|
-|[iterator_category](#iterator_category)|A synonym for a longer **typename** expression of the same name, `iterator_category` identifies the general abilities of the iterator.|
-|[value_type](#value_type)|A synonym for a longer **typename** expression of the same name, `value_type` describes what type the iterator elements are.|
-|[difference_type](#difference_type)|A synonym for a longer **typename** expression of the same name, `difference_type` describes the integral type required to express difference values between elements.|
+|[iterator_category](#iterator_category)|A synonym for a longer **`typename`** expression of the same name, `iterator_category` identifies the general abilities of the iterator.|
+|[value_type](#value_type)|A synonym for a longer **`typename`** expression of the same name, `value_type` describes what type the iterator elements are.|
+|[difference_type](#difference_type)|A synonym for a longer **`typename`** expression of the same name, `difference_type` describes the integral type required to express difference values between elements.|
 |[pointer](#pointer)|A synonym for template parameter `RandomIterator`.|
 |[reference](#reference)|A synonym for the `rvalue` reference `value_type&&`.|
 
@@ -55,8 +55,8 @@ A `move_iterator` might be capable of operations that are not defined by the wra
 |[move_iterator::operator-](#operator-)|Returns `move_iterator(*this) -=` by first subtracting the right-hand value from the current position.|
 |[move_iterator::operator[]](#op_at)|Returns `(reference)*(*this + off)`. Allows you to specify an offset from the current base to obtain the value at that location.|
 |[move_iterator::operator+](#op_add)|Returns `move_iterator(*this) +=` the value. Allows you to add an offset to the base to obtain the value at that location.|
-|[move_iterator::operator+=](#op_add_eq)|Adds the right-hand value to the stored iterator, and returns `*this`.|
-|[move_iterator::operator-=](#operator-_eq)|Subtracts the right-hand value from the stored iterator, and returns `*this`.|
+|[move_iterator::operator+=](#op_add_eq)|Adds the right-hand value to the stored iterator, and returns **`*this`**.|
+|[move_iterator::operator-=](#operator-_eq)|Subtracts the right-hand value from the stored iterator, and returns **`*this`**.|
 
 ## Requirements
 
@@ -78,7 +78,7 @@ The member function returns the stored iterator.
 
 ## <a name="difference_type"></a> move_iterator::difference_type
 
-The type `difference_type` is a `move_iterator` `typedef` based on the iterator trait `difference_type`, and can be used interchangeably with it.
+The type `difference_type` is a `move_iterator` **`typedef`** based on the iterator trait `difference_type`, and can be used interchangeably with it.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::difference_type difference_type;
@@ -90,7 +90,7 @@ The type is a synonym for the iterator trait `typename iterator_traits<RandomIte
 
 ## <a name="iterator_category"></a> move_iterator::iterator_category
 
-The type `iterator_category` is a `move_iterator` `typedef` based on the iterator trait `iterator_category`, and can be used interchangeably with it.
+The type `iterator_category` is a `move_iterator` **`typedef`** based on the iterator trait `iterator_category`, and can be used interchangeably with it.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_category;
@@ -151,7 +151,7 @@ Returns the new current element.
 
 ### Remarks
 
-The operator adds *_Off* to the stored iterator. Then returns `*this`.
+The operator adds *_Off* to the stored iterator. Then returns **`*this`**.
 
 ## <a name="operator-_eq"></a> move_iterator::operator-=
 
@@ -165,7 +165,7 @@ move_iterator& operator-=(difference_type _Off);
 
 ### Remarks
 
-The operator evaluates `*this += -_Off`. Then returns `*this`.
+The operator evaluates `*this += -_Off`. Then returns **`*this`**.
 
 ## <a name="op_add_add"></a> move_iterator::operator++
 
@@ -180,9 +180,9 @@ move_iterator operator++(int);
 
 ### Remarks
 
-The first (preincrement) operator increments the stored iterator. Then returns `*this`.
+The first (preincrement) operator increments the stored iterator. Then returns **`*this`**.
 
-The second (postincrement) operator makes a copy of `*this`, evaluates `++*this`. Then returns the copy.
+The second (postincrement) operator makes a copy of **`*this`**, evaluates `++*this`. Then returns the copy.
 
 ## <a name="op_add"></a> move_iterator::operator+
 
@@ -225,9 +225,9 @@ move_iterator operator--();
 
 ### Remarks
 
-The first member operator (predecrement) decrements the stored iterator. Then returns `*this`.
+The first member operator (predecrement) decrements the stored iterator. Then returns **`*this`**.
 
-The second (postdecrement) operator makes a copy of `*this`, evaluates `--*this`. Then returns the copy.
+The second (postdecrement) operator makes a copy of **`*this`**, evaluates `--*this`. Then returns the copy.
 
 ## <a name="operator-"></a> move_iterator::operator-
 
@@ -269,7 +269,7 @@ The operator returns `&**this`.
 
 ## <a name="pointer"></a> move_iterator::pointer
 
-The type `pointer` is a **typedef** based on the random iterator `RandomIterator` for `move_iterator`, and can be used interchangeably.
+The type `pointer` is a **`typedef`** based on the random iterator `RandomIterator` for `move_iterator`, and can be used interchangeably.
 
 ```cpp
 typedef RandomIterator  pointer;
@@ -281,7 +281,7 @@ The type is a synonym for `RandomIterator`.
 
 ## <a name="reference"></a> move_iterator::reference
 
-The type `reference` is a **typedef** based on `value_type&&` for `move_iterator`, and can be used interchangeably with `value_type&&`.
+The type `reference` is a **`typedef`** based on `value_type&&` for `move_iterator`, and can be used interchangeably with `value_type&&`.
 
 ```cpp
 typedef value_type&& reference;
@@ -293,7 +293,7 @@ The type is a synonym for `value_type&&`, which is an rvalue reference.
 
 ## <a name="value_type"></a> move_iterator::value_type
 
-The type `value_type` is a `move_iterator` `typedef` based on the iterator trait `value_type`, and can be used interchangeably with it.
+The type `value_type` is a `move_iterator` **`typedef`** based on the iterator trait `value_type`, and can be used interchangeably with it.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::value_type   value_type;

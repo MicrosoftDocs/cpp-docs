@@ -40,11 +40,11 @@ class CDBVariant
 |Name|Description|
 |----------|-----------------|
 |[CDBVariant::m_boolVal](#m_boolval)|Contains a value of type **BOOL**.|
-|[CDBVariant::m_chVal](#m_chval)|Contains a value of type **unsigned char**.|
-|[CDBVariant::m_dblVal](#m_dblval)|Contains a value of type **double**.|
-|[CDBVariant::m_fltVal](#m_fltval)|Contains a value of type **float**.|
-|[CDBVariant::m_iVal](#m_ival)|Contains a value of type **short**.|
-|[CDBVariant::m_lVal](#m_lval)|Contains a value of type **long**.|
+|[CDBVariant::m_chVal](#m_chval)|Contains a value of type **`unsigned char`**.|
+|[CDBVariant::m_dblVal](#m_dblval)|Contains a value of type **`double`**.|
+|[CDBVariant::m_fltVal](#m_fltval)|Contains a value of type **`float`**.|
+|[CDBVariant::m_iVal](#m_ival)|Contains a value of type **`short`**.|
+|[CDBVariant::m_lVal](#m_lval)|Contains a value of type **`long`**.|
 |[CDBVariant::m_pbinary](#m_pbinary)|Contains a pointer to an object of type `CLongBinary`.|
 |[CDBVariant::m_pdate](#m_pdate)|Contains a pointer to an object of type **TIMESTAMP_STRUCT**.|
 |[CDBVariant::m_pstring](#m_pstring)|Contains a pointer to an object of type `CString`.|
@@ -103,7 +103,7 @@ The `m_boolVal` data member belongs to a union. Before accessing `m_boolVal`, fi
 
 ## <a name="m_chval"></a> CDBVariant::m_chVal
 
-Stores a value of type **unsigned char**.
+Stores a value of type **`unsigned char`**.
 
 ### Remarks
 
@@ -111,7 +111,7 @@ The `m_chVal` data member belongs to a union. Before accessing `m_chVal`, first 
 
 ## <a name="m_dblval"></a> CDBVariant::m_dblVal
 
-Stores a value of type **double**.
+Stores a value of type **`double`**.
 
 ### Remarks
 
@@ -142,7 +142,7 @@ Before accessing this union, you must check the value of `m_dwType` in order to 
 
 ## <a name="m_fltval"></a> CDBVariant::m_fltVal
 
-Stores a value of type **float**.
+Stores a value of type **`float`**.
 
 ### Remarks
 
@@ -150,7 +150,7 @@ The `m_fltVal` data member belongs to a union. Before accessing `m_fltVal`, firs
 
 ## <a name="m_ival"></a> CDBVariant::m_iVal
 
-Stores a value of type **short**.
+Stores a value of type **`short`**.
 
 ### Remarks
 
@@ -158,7 +158,7 @@ The `m_iVal` data member belongs to a union. Before accessing `m_iVal`, first ch
 
 ## <a name="m_lval"></a> CDBVariant::m_lVal
 
-Stores a value of type **long**.
+Stores a value of type **`long`**.
 
 ### Remarks
 

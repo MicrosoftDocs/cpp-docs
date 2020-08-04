@@ -54,7 +54,7 @@ void freeze(bool _Freezeit = true);
 ### Parameters
 
 *_Freezeit*\
-A **bool** indicating whether you want the stream to be frozen.
+A **`bool`** indicating whether you want the stream to be frozen.
 
 ### Remarks
 

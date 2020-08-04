@@ -38,7 +38,7 @@ Use this technique if you have to bind a `call` or `transformer` object to a spe
 
 [!code-cpp[concrt-call-method#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_3.cpp)]
 
-You can also assign the result of the `bind1st` function to a [std::function](../../standard-library/function-class.md) object or use the `auto` keyword, as shown in the following example.
+You can also assign the result of the `bind1st` function to a [std::function](../../standard-library/function-class.md) object or use the **`auto`** keyword, as shown in the following example.
 
 [!code-cpp[concrt-call-method#2](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_4.cpp)]
 

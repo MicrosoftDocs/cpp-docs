@@ -313,7 +313,7 @@ The first member operator evaluates
 
 `++Iter;`
 
-then returns `*this`.
+then returns **`*this`**.
 
 The second member operator evaluates
 
@@ -321,7 +321,7 @@ The second member operator evaluates
 
 `++Iter;`
 
-then returns `*this`.
+then returns **`*this`**.
 
 ### Example
 

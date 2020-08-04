@@ -46,7 +46,7 @@ __interface IMyI
 
 |||
 |-|-|
-|**Applies to**|**class**, **interface**, interface method|
+|**Applies to**|**`class`**, **interface**, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

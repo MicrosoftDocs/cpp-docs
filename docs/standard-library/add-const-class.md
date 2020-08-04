@@ -57,5 +57,5 @@ add_const<int> == int
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)\
-[remove_const Class](../standard-library/remove-const-class.md)
+[<type_traits>](type-traits.md)\
+[remove_const Class](remove-const-class.md)

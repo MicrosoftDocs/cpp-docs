@@ -40,4 +40,4 @@ The `QueryStatus` method here tests whether a particular set of commands, the se
 
 ## See also
 
-[Active Document Containers](../mfc/active-document-containers.md)
+[Active Document Containers](active-document-containers.md)

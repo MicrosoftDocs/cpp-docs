@@ -28,7 +28,7 @@ The right object.
 
 ## Return Value
 
-**true** if the address of *a* is less than the address of *b*; otherwise, **false**.
+**`true`** if the address of *a* is less than the address of *b*; otherwise, **`false`**.
 
 ## Requirements
 

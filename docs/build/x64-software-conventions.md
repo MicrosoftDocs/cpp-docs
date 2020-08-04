@@ -10,7 +10,7 @@ This section describes the C++ calling convention methodology for x64, the 64-bi
 
 ## Overview of x64 calling conventions
 
-Two important differences between x86 and x64 are the 64-bit addressing capability and a flat set of 16 64-bit registers for general use. Given the expanded register set, x64 uses the [__fastcall](../cpp/fastcall.md) calling convention and a RISC-based exception-handling model. The `__fastcall` convention uses registers for the first four arguments and the stack frame to pass additional arguments. For details on the x64 calling convention, including register usage, stack parameters, return values, and stack unwinding, see [x64 calling convention](x64-calling-convention.md).
+Two important differences between x86 and x64 are the 64-bit addressing capability and a flat set of 16 64-bit registers for general use. Given the expanded register set, x64 uses the [__fastcall](../cpp/fastcall.md) calling convention and a RISC-based exception-handling model. The **`__fastcall`** convention uses registers for the first four arguments and the stack frame to pass additional arguments. For details on the x64 calling convention, including register usage, stack parameters, return values, and stack unwinding, see [x64 calling convention](x64-calling-convention.md).
 
 ## Enable optimization for x64
 
@@ -39,19 +39,19 @@ Although it's possible to access data with any alignment, it's recommended to al
 |||||
 |-|-|-|-|
 |Scalar Type|C Data Type|Storage Size (in bytes)|Recommended Alignment|
-|**INT8**|**char**|1|Byte|
-|**UINT8**|**unsigned char**|1|Byte|
-|**INT16**|**short**|2|Word|
-|**UINT16**|**unsigned short**|2|Word|
-|**INT32**|**int**, **long**|4|Doubleword|
+|**INT8**|**`char`**|1|Byte|
+|**UINT8**|**`unsigned char`**|1|Byte|
+|**INT16**|**`short`**|2|Word|
+|**UINT16**|**`unsigned short`**|2|Word|
+|**INT32**|**`int`**, **`long`**|4|Doubleword|
 |**UINT32**|**unsigned int, unsigned long**|4|Doubleword|
-|**INT64**|**__int64**|8|Quadword|
+|**INT64**|**`__int64`**|8|Quadword|
 |**UINT64**|**unsigned __int64**|8|Quadword|
-|**FP32 (single precision)**|**float**|4|Doubleword|
-|**FP64 (double precision)**|**double**|8|Quadword|
+|**FP32 (single precision)**|**`float`**|4|Doubleword|
+|**FP64 (double precision)**|**`double`**|8|Quadword|
 |**POINTER**|__\*__|8|Quadword|
-|**__m64**|**struct __m64**|8|Quadword|
-|**__m128**|**struct __m128**|16|Octaword|
+|**`__m64`**|**struct __m64**|8|Quadword|
+|**`__m128`**|**struct __m128**|16|Octaword|
 
 ### Aggregates and unions
 
@@ -74,19 +74,19 @@ The following table shows the strongly suggested alignment for the scalar member
 ||||
 |-|-|-|
 |Scalar Type|C Data Type|Required Alignment|
-|**INT8**|**char**|Byte|
-|**UINT8**|**unsigned char**|Byte|
-|**INT16**|**short**|Word|
-|**UINT16**|**unsigned short**|Word|
-|**INT32**|**int**, **long**|Doubleword|
+|**INT8**|**`char`**|Byte|
+|**UINT8**|**`unsigned char`**|Byte|
+|**INT16**|**`short`**|Word|
+|**UINT16**|**`unsigned short`**|Word|
+|**INT32**|**`int`**, **`long`**|Doubleword|
 |**UINT32**|**unsigned int, unsigned long**|Doubleword|
-|**INT64**|**__int64**|Quadword|
+|**INT64**|**`__int64`**|Quadword|
 |**UINT64**|**unsigned __int64**|Quadword|
-|**FP32 (single precision)**|**float**|Doubleword|
-|**FP64 (double precision)**|**double**|Quadword|
+|**FP32 (single precision)**|**`float`**|Doubleword|
+|**FP64 (double precision)**|**`double`**|Quadword|
 |**POINTER**|<strong>\*</strong>|Quadword|
-|**__m64**|**struct __m64**|Quadword|
-|**__m128**|**struct __m128**|Octaword|
+|**`__m64`**|**struct __m64**|Quadword|
+|**`__m128`**|**struct __m128**|Octaword|
 
 The following aggregate alignment rules apply:
 
@@ -198,12 +198,12 @@ The following table describes how each register is used across function calls:
 |RBX|Nonvolatile|Must be preserved by callee|
 |RBP|Nonvolatile|May be used as a frame pointer; must be preserved by callee|
 |RSP|Nonvolatile|Stack pointer|
-|XMM0, YMM0|Volatile|First FP argument; first vector-type argument when `__vectorcall` is used|
-|XMM1, YMM1|Volatile|Second FP argument; second vector-type argument when `__vectorcall` is used|
-|XMM2, YMM2|Volatile|Third FP argument; third vector-type argument when `__vectorcall` is used|
-|XMM3, YMM3|Volatile|Fourth FP argument; fourth vector-type argument when `__vectorcall` is used|
-|XMM4, YMM4|Volatile|Must be preserved as needed by caller; fifth vector-type argument when `__vectorcall` is used|
-|XMM5, YMM5|Volatile|Must be preserved as needed by caller; sixth vector-type argument when `__vectorcall` is used|
+|XMM0, YMM0|Volatile|First FP argument; first vector-type argument when **`__vectorcall`** is used|
+|XMM1, YMM1|Volatile|Second FP argument; second vector-type argument when **`__vectorcall`** is used|
+|XMM2, YMM2|Volatile|Third FP argument; third vector-type argument when **`__vectorcall`** is used|
+|XMM3, YMM3|Volatile|Fourth FP argument; fourth vector-type argument when **`__vectorcall`** is used|
+|XMM4, YMM4|Volatile|Must be preserved as needed by caller; fifth vector-type argument when **`__vectorcall`** is used|
+|XMM5, YMM5|Volatile|Must be preserved as needed by caller; sixth vector-type argument when **`__vectorcall`** is used|
 |XMM6:XMM15, YMM6:YMM15|Nonvolatile (XMM), Volatile (upper half of YMM)|Must be preserved by callee. YMM registers must be preserved as needed by caller.|
 
 On function exit and on function entry to C Runtime Library calls and Windows system calls, the direction flag in the CPU flags register is expected to be cleared.

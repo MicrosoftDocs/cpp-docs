@@ -11,15 +11,15 @@ To enable support for the Windows Runtime in a modern C++ idiom, Microsoft creat
 
 For an in-depth discussion of the C++/CX language projection and how it works under the covers, see these blog posts:
 
-1. [C++/CX Part 0 of \[n\]: An Introduction](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction)
+- [C++/CX Part 0 of \[n\]: An Introduction](https://devblogs.microsoft.com/cppblog/ccx-part-0-of-n-an-introduction/)
 
-1. [C++/CX Part 1 of \[n\]: A Simple Class](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)
+- [C++/CX Part 1 of \[n\]: A Simple Class](https://devblogs.microsoft.com/cppblog/ccx-part-1-of-n-a-simple-class/)
 
-1. [C++/CX Part 2 of \[n\]: Types That Wear Hats](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats)
+- [C++/CX Part 2 of \[n\]: Types That Wear Hats](https://devblogs.microsoft.com/cppblog/ccx-part-2-of-n-types-that-wear-hats/)
 
-1. [C++/CX Part 3 of \[n\]: Under Construction](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)
+- [C++/CX Part 3 of \[n\]: Under Construction](https://devblogs.microsoft.com/cppblog/ccx-part-3-of-n-under-construction/)
 
-1. [C++/CX Part 4 of \[n\]: Static Member Functions](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions)
+- [C++/CX Part 4 of \[n\]: Static Member Functions](https://devblogs.microsoft.com/cppblog/ccx-part-4-of-n-static-member-functions/)
 
 ## Windows metadata (.winmd) files
 
@@ -57,7 +57,7 @@ For more information, see [Namespaces and Type Visibility](../cppcx/namespaces-a
 
 The Windows Runtime defines the following fundamental types, UInt8, Int16, UInt16, Int32, UInt32, Int64, UInt64, Single, Double, Char16, Boolean, and String. C++/CX supports the fundamental numeric types in its default namespace as uint16, uint32, uint64, int16, int32, int64, float32, float64, and char16. Boolean and String are also defined in the Platform namespace.
 
-C++/CX also defines uint8, equivalent to `unsigned char`, which is not supported in the Windows Runtime and cannot be used in public APIs.
+C++/CX also defines uint8, equivalent to **`unsigned char`**, which is not supported in the Windows Runtime and cannot be used in public APIs.
 
 A fundamental type may be made nullable by wrapping it in a [Platform::IBox Interface](../cppcx/platform-ibox-interface.md) interface. For more information, see [Value classes and structs](../cppcx/value-classes-and-structs-c-cx.md).
 
@@ -65,7 +65,7 @@ For more information about fundamental types, see [Fundamental types](../cppcx/f
 
 ### Strings
 
-A Windows Runtime string is an immutable sequence of 16-bit UNICODE characters. A Windows Runtime string is projected as `Platform::String^`. This class provides methods for string construction, manipulation, and conversion to and from `wchar_t`.
+A Windows Runtime string is an immutable sequence of 16-bit UNICODE characters. A Windows Runtime string is projected as `Platform::String^`. This class provides methods for string construction, manipulation, and conversion to and from **`wchar_t`**.
 
 For more information, see [Strings](../cppcx/strings-c-cx.md).
 

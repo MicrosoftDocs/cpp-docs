@@ -823,7 +823,7 @@ To report an error that occurs during a property get function, property set func
 
 The implementation of an OLE control's Stock Error event uses an SCODE value. If your control uses this event, and is intended to be used in Visual Basic 4.0, you will receive errors because the SCODE value is not supported in Visual Basic.
 
-To fix this, manually change the SCODE parameter in the control's .ODL file to a **long**. In addition, any custom event, method, or property that uses an SCODE parameter also causes the same problem.
+To fix this, manually change the SCODE parameter in the control's .ODL file to a **`long`**. In addition, any custom event, method, or property that uses an SCODE parameter also causes the same problem.
 
 ## <a name="fireevent"></a> COleControl::FireEvent
 
@@ -868,7 +868,7 @@ The *pbParams* argument is a space-separated list of **VTS_**. One or more of th
 |VTS_YSIZE_HIMETRIC|OLE_XSIZE_HIMETRIC|
 
 > [!NOTE]
-> Additional variant constants have been defined for all variant types, with the exception of VTS_FONT and VTS_PICTURE, that provide a pointer to the variant data constant. These constants are named using the **VTS_P**`constantname` convention. For example, VTS_PCOLOR is a pointer to a VTS_COLOR constant.
+> Additional variant constants have been defined for all variant types, with the exception of VTS_FONT and VTS_PICTURE, that provide a pointer to the variant data constant. These constants are named using the VTS_P\<CONSTANT-NAME> convention. For example, VTS_PCOLOR is a pointer to a VTS_COLOR constant.
 
 ## <a name="firekeydown"></a> COleControl::FireKeyDown
 
@@ -1204,7 +1204,7 @@ short GetAppearance ();
 
 ### Return Value
 
-The return value specifies the current appearance setting as a **short** (VT_I2) value, if successful. This value is zero if the control's appearance is flat and 1 if the control's appearance is 3D.
+The return value specifies the current appearance setting as a **`short`** (VT_I2) value, if successful. This value is zero if the control's appearance is flat and 1 if the control's appearance is 3D.
 
 ## <a name="getbackcolor"></a> COleControl::GetBackColor
 
@@ -1240,7 +1240,7 @@ CWnd* GetCapture();
 
 ### Return Value
 
-If the control is activated and windowless, returns **this** if the control currently has the mouse capture (as determined by the control's container), or NULL if it does not have the capture.
+If the control is activated and windowless, returns **`this`** if the control currently has the mouse capture (as determined by the control's container), or NULL if it does not have the capture.
 
 Otherwise, returns the `CWnd` object that has the mouse capture (same as `CWnd::GetCapture`).
 
@@ -1450,7 +1450,7 @@ CWnd* GetFocus();
 
 ### Return Value
 
-If the control is activated and windowless, returns **this** if the control currently has the keyboard focus (as determined by the control's container), or NULL if it does not have the focus.
+If the control is activated and windowless, returns **`this`** if the control currently has the keyboard focus (as determined by the control's container), or NULL if it does not have the focus.
 
 Otherwise, returns the `CWnd` object that has the focus (same as `CWnd::GetFocus`).
 
@@ -2842,7 +2842,7 @@ virtual BOOL OnRenderData(
 Points to the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format in which information is requested.
 
 *lpStgMedium*<br/>
-Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in which the data is to be returned.
+Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) structure in which the data is to be returned.
 
 ### Return Value
 
@@ -2965,7 +2965,7 @@ virtual BOOL OnSetData(
 Pointer to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format of the data.
 
 *lpStgMedium*<br/>
-Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in which the data resides.
+Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) structure in which the data resides.
 
 *bRelease*<br/>
 TRUE if the control should free the storage medium; FALSE if the control should not free the storage medium.
@@ -3471,7 +3471,7 @@ void SetAppearance (short sAppearance);
 ### Parameters
 
 *sAppearance*<br/>
-A **short** (VT_I2) value to be used for the appearance of your control. A value of zero sets the control's appearance to flat and a value of 1 sets the control's appearance to 3D.
+A **`short`** (VT_I2) value to be used for the appearance of your control. A value of zero sets the control's appearance to flat and a value of 1 sets the control's appearance to 3D.
 
 ### Remarks
 

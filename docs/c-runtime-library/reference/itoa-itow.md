@@ -129,7 +129,7 @@ To use one of these macros in a string conversion function, declare your convers
 |**_i64toa**, **_i64tow**|16<br/>10<br/>8<br/>2|**_MAX_I64TOSTR_BASE16_COUNT**<br/>**_MAX_I64TOSTR_BASE10_COUNT**<br/>**_MAX_I64TOSTR_BASE8_COUNT**<br/>**_MAX_I64TOSTR_BASE2_COUNT**|
 |**_ui64toa**, **_ui64tow**|16<br/>10<br/>8<br/>2|**_MAX_U64TOSTR_BASE16_COUNT**<br/>**_MAX_U64TOSTR_BASE10_COUNT**<br/>**_MAX_U64TOSTR_BASE8_COUNT**<br/>**_MAX_U64TOSTR_BASE2_COUNT**|
 
-This example uses a conversion count macro to define a buffer large enough to contain an **unsigned long long** in base 2:
+This example uses a conversion count macro to define a buffer large enough to contain an **`unsigned long long`** in base 2:
 
 ```cpp
 #include <wchar.h>

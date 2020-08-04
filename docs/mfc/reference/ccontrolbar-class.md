@@ -366,7 +366,7 @@ BOOL m_bAutoDelete;
 
 A control-bar object is usually embedded in a frame-window object. In this case, *m_bAutoDelete* is 0 because the embedded control-bar object is destroyed when the frame window is destroyed.
 
-Set this variable to a nonzero value if you allocate a `CControlBar` object on the heap and you do not plan to call **delete**.
+Set this variable to a nonzero value if you allocate a `CControlBar` object on the heap and you do not plan to call **`delete`**.
 
 ## <a name="m_pinplaceowner"></a> CControlBar::m_pInPlaceOwner
 

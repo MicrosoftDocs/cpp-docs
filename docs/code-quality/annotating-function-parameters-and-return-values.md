@@ -131,13 +131,13 @@ This article describes typical uses of annotations for simple function parameter
 
 ## Pointer parameters
 
-For the annotations in the following table, when a pointer parameter is being annotated, the analyzer reports an error if the pointer is null. This annotation applies to pointers and to any data item that's pointed to.
+For the annotations in the following table, when a pointer parameter is annotated, the analyzer reports an error if the pointer is null. This annotation applies to pointers and to any data item that's pointed to.
 
 ### Annotations and descriptions
 
 - `_In_`
 
-     Annotates input parameters that are scalars, structures, pointers to structures and the like. Explicitly may be used on simple scalars. The parameter must be valid in pre-state and will not be modified.
+     Annotates input parameters that are scalars, structures, pointers to structures and the like. Explicitly may be used on simple scalars. The parameter must be valid in pre-state and won't be modified.
 
 - `_Out_`
 
@@ -161,7 +161,7 @@ For the annotations in the following table, when a pointer parameter is being an
 
      A pointer to an array, which is read by the function. The array is of size `s` elements, all of which must be valid.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_In_reads_z_(s)`
 
@@ -184,7 +184,7 @@ For the annotations in the following table, when a pointer parameter is being an
 
      In this example, the caller provides a buffer of `size` elements for `p1`. `MyStringCopy` makes some of those elements valid. More importantly, the `_Null_terminated_` annotation on `PWSTR` means that `p1` is null-terminated in post-state. In this way, the number of valid elements is still well-defined, but a specific element count isn't required.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_Out_writes_z_(s)`
 
@@ -196,7 +196,7 @@ For the annotations in the following table, when a pointer parameter is being an
 
      A pointer to an array, which is both read and written to in the function. It's of size `s` elements, and valid in pre-state and post-state.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_Inout_updates_z_(s)`
 
@@ -225,7 +225,7 @@ For the annotations in the following table, when a pointer parameter is being an
 
      A pointer to an array, which is both read and written by the function. It's of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_Inout_updates_all_(s)`
 
@@ -237,7 +237,7 @@ For the annotations in the following table, when a pointer parameter is being an
 
      In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the pre-state and post-state.
 
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.
+     The `_bytes_` variant gives the size in bytes instead of elements. Use this variant only when the size can't be expressed as elements. For example, **`char`** strings would use the `_bytes_` variant only if a similar function that uses **`wchar_t`** would.
 
 - `_In_reads_to_ptr_(p)`
 
@@ -265,9 +265,17 @@ For the annotations in the following table, when a pointer parameter is being an
 
 When a pointer parameter annotation includes `_opt_`, it indicates that the parameter may be null. Otherwise, the annotation behaves the same as the version that doesn't include `_opt_`. Here is a list of the `_opt_` variants of the pointer parameter annotations:
 
-||||
-|-|-|-|
-|`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|
+:::row:::
+    :::column:::
+        `_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`
+    :::column-end:::
+    :::column:::
+        `_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`
+    :::column-end:::
+    :::column:::
+        `_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`
+    :::column-end:::
+:::row-end:::
 
 ## Output pointer parameters
 
@@ -314,7 +322,7 @@ Output pointer parameters require special notation to disambiguate nullness on t
 
    `_COM_Outptr_opt_result_maybenull_`
 
-   The returned pointer has COM semantics, and therefore carries an `_On_failure_` post-condition that the returned pointer is null.
+   The returned pointer has COM semantics, which is why it carries an `_On_failure_` post-condition that the returned pointer is null.
 
 - `_Outptr_result_buffer_(s)`
 
@@ -424,9 +432,14 @@ A common use of the reference parameter is for output parameters. For simple out
 
 The return value of a function resembles an `_Out_` parameter but is at a different level of de-reference, and you don't have to consider the concept of the pointer to the result. For the following annotations, the return value is the annotated object—a scalar, a pointer to a struct, or a pointer to a buffer. These annotations have the same semantics as the corresponding `_Out_` annotation.
 
-|||
-|-|-|
-|`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
+:::row:::
+    :::column:::
+        `_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`
+    :::column-end:::
+    :::column:::
+        `_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`
+    :::column-end:::
+:::row-end:::
 
 ## Format string parameters
 
@@ -516,10 +529,6 @@ The return value of a function resembles an `_Out_` parameter but is at a differ
      The buffer size in bytes of a parameter `pM` of type `MyStruct *` is then taken to be:
 
      `min(pM->nSize, sizeof(MyStruct))`
-
-## Related resources
-
-[Code Analysis Team Blog](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## See also
 

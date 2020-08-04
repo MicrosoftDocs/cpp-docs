@@ -9,7 +9,7 @@ ms.assetid: 392cf748-4f5e-4e62-a364-3118d5658408
 
 'super' : this keyword must be followed by '::'
 
-The only token that can follow the keyword `__super` is `::`.
+The only token that can follow the keyword **`__super`** is `::`.
 
 The following sample generates C2792:
 

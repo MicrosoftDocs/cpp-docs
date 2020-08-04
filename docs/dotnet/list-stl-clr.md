@@ -1554,7 +1554,7 @@ Container to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
 
 ### Example
 
@@ -2405,11 +2405,11 @@ Where in container to splice before.
 
 ### Remarks
 
-The first member function inserts the sequence controlled by *right* before the element in the controlled sequence pointed to by *where*. It also removes all elements from *right*. (`%right` must not equal `this`.) You use it to splice all of one list into another.
+The first member function inserts the sequence controlled by *right* before the element in the controlled sequence pointed to by *where*. It also removes all elements from *right*. (`%right` must not equal **`this`**.) You use it to splice all of one list into another.
 
 The second member function removes the element pointed to by *first* in the sequence controlled by *right* and inserts it before the element in the controlled sequence pointed to by *where*. (If `where` `==` `first` `||` `where` `== ++first`, no change occurs.) You use it to splice a single element of one list into another.
 
-The third member function inserts the subrange designated by [`first`, `last`) from the sequence controlled by *right* before the element in the controlled sequence pointed to by *where*. It also removes the original subrange from the sequence controlled by *right*. (If `right` `==` `this`, the range [`first`, `last`) must not include the element pointed to by *where*.) You use it to splice a subsequence of zero or more elements from one list into another.
+The third member function inserts the subrange designated by [`first`, `last`) from the sequence controlled by *right* before the element in the controlled sequence pointed to by *where*. It also removes the original subrange from the sequence controlled by *right*. (If `right == this`, the range [`first`, `last`) must not include the element pointed to by *where*.) You use it to splice a subsequence of zero or more elements from one list into another.
 
 ### Example
 
@@ -2485,7 +2485,7 @@ Container to swap contents with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
+The member function swaps the controlled sequences between **`*this`** and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
 
 ### Example
 

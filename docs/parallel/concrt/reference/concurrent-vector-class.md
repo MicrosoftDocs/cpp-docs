@@ -33,10 +33,10 @@ The type that represents the stored allocator object that encapsulates details a
 |Name|Description|
 |----------|-----------------|
 |`allocator_type`|A type that represents the allocator class for the concurrent vector.|
-|`const_iterator`|A type that provides a random-access iterator that can read a `const` element in a concurrent vector.|
-|`const_pointer`|A type that provides a pointer to a `const` element in a concurrent vector.|
-|`const_reference`|A type that provides a reference to a `const` element stored in a concurrent vector for reading and performing `const` operations.|
-|`const_reverse_iterator`|A type that provides a random-access iterator that can read any `const` element in the concurrent vector.|
+|`const_iterator`|A type that provides a random-access iterator that can read a **`const`** element in a concurrent vector.|
+|`const_pointer`|A type that provides a pointer to a **`const`** element in a concurrent vector.|
+|`const_reference`|A type that provides a reference to a **`const`** element stored in a concurrent vector for reading and performing **`const`** operations.|
+|`const_reverse_iterator`|A type that provides a random-access iterator that can read any **`const`** element in the concurrent vector.|
 |`difference_type`|A type that provides the signed distance between two elements in a concurrent vector.|
 |`iterator`|A type that provides a random-access iterator that can read any element in a concurrent vector. Modification of an element using the iterator is not concurrency-safe.|
 |`pointer`|A type that provides a pointer to an element in a concurrent vector.|
@@ -58,7 +58,7 @@ The type that represents the stored allocator object that encapsulates details a
 |----------|-----------------|
 |[assign](#assign)|Overloaded. Erases the elements of the concurrent vector and assigns to it either `_N` copies of `_Item`, or values specified by the iterator range [ `_Begin`, `_End`). This method is not concurrency-safe.|
 |[at](#at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as you have ensured that the value `_Index` is less than the size of the concurrent vector.|
-|[back](#back)|Overloaded. Returns a reference or a `const` reference to the last element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.|
+|[back](#back)|Overloaded. Returns a reference or a **`const`** reference to the last element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.|
 |[begin](#begin)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|
 |[capacity](#capacity)|Returns the maximum size to which the concurrent vector can grow without having to allocate more memory. This method is concurrency-safe.|
 |[cbegin](#cbegin)|Returns an iterator of type `const_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|
@@ -68,7 +68,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[crend](#crend)|Returns an iterator of type `const_reverse_iterator` to the end of the concurrent vector. This method is concurrency-safe.|
 |[empty](#empty)|Tests if the concurrent vector is empty at the time this method is called. This method is concurrency-safe.|
 |[end](#end)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the end of the concurrent vector. This method is concurrency-safe.|
-|[front](#front)|Overloaded. Returns a reference or a `const` reference to the first element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.|
+|[front](#front)|Overloaded. Returns a reference or a **`const`** reference to the first element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.|
 |[get_allocator](#get_allocator)|Returns a copy of the allocator used to construct the concurrent vector. This method is concurrency-safe.|
 |[grow_by](#grow_by)|Overloaded. Grows this concurrent vector by `_Delta` elements. This method is concurrency-safe.|
 |[grow_to_at_least](#grow_to_at_least)|Grows this concurrent vector until it has at least `_N` elements. This method is concurrency-safe.|
@@ -163,13 +163,13 @@ A reference to the item at the given index.
 
 ### Remarks
 
-The version of the function `at` that returns a non- `const` reference cannot be used to concurrently write to the element from different threads. A different synchronization object should be used to synchronize concurrent read and write operations to the same data element.
+The version of the function `at` that returns a non- **`const`** reference cannot be used to concurrently write to the element from different threads. A different synchronization object should be used to synchronize concurrent read and write operations to the same data element.
 
 The method throws `out_of_range` if `_Index` is greater than or equal to the size of the concurrent vector, and `range_error` if the index is for a broken portion of the vector. For details on how a vector can become broken, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).
 
 ## <a name="back"></a> back
 
-Returns a reference or a `const` reference to the last element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.
+Returns a reference or a **`const`** reference to the last element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.
 
 ```cpp
 reference back();
@@ -179,7 +179,7 @@ const_reference back() const;
 
 ### Return Value
 
-A reference or a `const` reference to the last element in the concurrent vector.
+A reference or a **`const`** reference to the last element in the concurrent vector.
 
 ## <a name="begin"></a> begin
 
@@ -365,7 +365,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the vector was empty at the moment the function was called, **false** otherwise.
+**`true`** if the vector was empty at the moment the function was called, **`false`** otherwise.
 
 ## <a name="end"></a> end
 
@@ -383,7 +383,7 @@ An iterator of type `iterator` or `const_iterator` to the end of the concurrent 
 
 ## <a name="front"></a> front
 
-Returns a reference or a `const` reference to the first element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.
+Returns a reference or a **`const`** reference to the first element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.
 
 ```cpp
 reference front();
@@ -393,7 +393,7 @@ const_reference front() const;
 
 ### Return Value
 
-A reference or a `const` reference to the first element in the concurrent vector.
+A reference or a **`const`** reference to the first element in the concurrent vector.
 
 ## <a name="get_allocator"></a> get_allocator
 
@@ -514,7 +514,7 @@ A reference to the item at the given index.
 
 ### Remarks
 
-The version of `operator []` that returns a non- `const` reference cannot be used to concurrently write to the element from different threads. A different synchronization object should be used to synchronize concurrent read and write operations to the same data element.
+The version of `operator []` that returns a non- **`const`** reference cannot be used to concurrently write to the element from different threads. A different synchronization object should be used to synchronize concurrent read and write operations to the same data element.
 
 No bounds checking is performed to ensure that `_Index` is a valid index into the concurrent vector.
 

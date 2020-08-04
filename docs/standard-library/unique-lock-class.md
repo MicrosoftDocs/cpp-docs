@@ -19,7 +19,7 @@ class unique_lock;
 
 The template argument `Mutex` must name a *mutex type*.
 
-Internally, a `unique_lock` stores a pointer to an associated `mutex` object and a **bool** that indicates whether the current thread owns the `mutex`.
+Internally, a `unique_lock` stores a pointer to an associated `mutex` object and a **`bool`** that indicates whether the current thread owns the `mutex`.
 
 ## Members
 
@@ -81,7 +81,7 @@ If the stored `mutex` pointer is NULL, this method throws a [system_error](../st
 
 If the calling thread already owns the associated `mutex`, this method throws a `system_error` that has an error code of `resource_deadlock_would_occur`.
 
-Otherwise, this method calls `lock` on the associated `mutex` and sets the internal thread ownership flag to **true**.
+Otherwise, this method calls `lock` on the associated `mutex` and sets the internal thread ownership flag to **`true`**.
 
 ## <a name="mutex"></a> mutex
 
@@ -101,7 +101,7 @@ explicit operator bool() noexcept
 
 ### Return Value
 
-**true** if the thread owns the mutex; otherwise **false**.
+**`true`** if the thread owns the mutex; otherwise **`false`**.
 
 ## <a name="op_eq"></a> operator=
 
@@ -136,7 +136,7 @@ bool owns_lock() const noexcept;
 
 ### Return Value
 
-**true** if the thread owns the `mutex`; otherwise, **false**.
+**`true`** if the thread owns the `mutex`; otherwise, **`false`**.
 
 ## <a name="release"></a> release
 
@@ -152,7 +152,7 @@ The previous value of the stored `mutex` pointer.
 
 ### Remarks
 
-This method sets the value of the stored `mutex` pointer to 0 and sets the internal `mutex` ownership flag to **false**.
+This method sets the value of the stored `mutex` pointer to 0 and sets the internal `mutex` ownership flag to **`false`**.
 
 ## <a name="swap"></a> swap
 
@@ -177,7 +177,7 @@ bool try_lock() noexcept;
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -202,7 +202,7 @@ A [chrono::duration](../standard-library/duration-class.md) object that specifie
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -228,7 +228,7 @@ A point in time that specifies the threshold after which the method no longer at
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -319,7 +319,7 @@ void unlock();
 
 If the calling thread doesn't own the associated `mutex`, this method throws a [system_error](../standard-library/system-error-class.md) that has an error code of `operation_not_permitted`.
 
-Otherwise, this method calls `unlock` on the associated `mutex` and sets the internal thread ownership flag to **false**.
+Otherwise, this method calls `unlock` on the associated `mutex` and sets the internal thread ownership flag to **`false`**.
 
 ## See also
 

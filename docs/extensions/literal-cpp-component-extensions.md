@@ -42,7 +42,7 @@ For more information, see [Static](../cpp/storage-classes-cpp.md) and [const](..
 
 ## Example
 
-This example shows that a **literal** variable implies **static**.
+This example shows that a **literal** variable implies **`static`**.
 
 ```cpp
 // mcppv2_literal.cpp

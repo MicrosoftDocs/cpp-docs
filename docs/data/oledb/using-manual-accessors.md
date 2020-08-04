@@ -28,7 +28,7 @@ To do these things with the OLE DB Consumer Templates, use the `CManualAccessor`
 
 1. For each parameter, call `AddParameterEntry` to add the parameters and set them.
 
-1. Open the rowset but set the bind parameter to **false**.
+1. Open the rowset but set the bind parameter to **`false`**.
 
 1. Call `GetColumnInfo` to retrieve the output columns. Use `AddBindEntry` to add the output column to the binding.
 

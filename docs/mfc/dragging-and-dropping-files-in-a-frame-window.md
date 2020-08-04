@@ -8,8 +8,8 @@ ms.assetid: 85560fe9-121b-4105-bd7b-216b966e19fa
 
 The frame window manages a relationship with File Explorer or File Manager.
 
-By adding a few initializing calls in your override of the `CWinApp` member function `InitInstance`, as described in [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md), you can have your frame window indirectly open files dragged from File Explorer or File Manager and dropped in the frame window. See [File Manager Drag and Drop](../mfc/special-cwinapp-services.md).
+By adding a few initializing calls in your override of the `CWinApp` member function `InitInstance`, as described in [CWinApp: The Application Class](cwinapp-the-application-class.md), you can have your frame window indirectly open files dragged from File Explorer or File Manager and dropped in the frame window. See [File Manager Drag and Drop](special-cwinapp-services.md).
 
 ## See also
 
-[Using Frame Windows](../mfc/using-frame-windows.md)
+[Using Frame Windows](using-frame-windows.md)

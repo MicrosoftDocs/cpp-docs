@@ -89,7 +89,7 @@ A derived type.
 The base type of a derived type.
 
 *hasImplements*<br/>
-A Boolean value that if **true**, means you can't use a [MixIn](mixin-structure.md) structure with a class that does not derive from the [Implements](implements-structure.md) stucture.
+A Boolean value that if **`true`**, means you can't use a [MixIn](mixin-structure.md) structure with a class that does not derive from the [Implements](implements-structure.md) stucture.
 
 ## Members
 
@@ -141,7 +141,7 @@ A pointer to the last interface ID that was cast successfully.
 
 ### Return Value
 
-**true** if all the cast operations succeeded; otherwise, **false**.
+**`true`** if all the cast operations succeeded; otherwise, **`false`**.
 
 ## <a name="casttounknown"></a> ChainInterfaces::CastToUnknown
 
@@ -200,6 +200,6 @@ WRL_NOTHROW __forceinline static void Verify();
 
 ### Remarks
 
-If the verification operation fails, a `static_assert` emits an error message describing the failure.
+If the verification operation fails, a **`static_assert`** emits an error message describing the failure.
 
 Template parameters *I0* and *I1* are required, and parameters *I2* through *I9* are optional.

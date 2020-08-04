@@ -39,17 +39,17 @@ operator unsigned __int64() const;
 
 Extracts raw data from an encapsulated `VARIANT`. If the `VARIANT` is not already the proper type, `VariantChangeType` is used to attempt a conversion, and an error is generated upon failure:
 
-- **operator short( )** Extracts a **short** integer value.
+- **operator short( )** Extracts a **`short`** integer value.
 
-- **operator long( )** Extracts a **long** integer value.
+- **operator long( )** Extracts a **`long`** integer value.
 
-- **operator float( )** Extracts a **float** numerical value.
+- **operator float( )** Extracts a **`float`** numerical value.
 
-- **operator double( )** Extracts a **double** integer value.
+- **operator double( )** Extracts a **`double`** integer value.
 
 - **operator CY( )** Extracts a `CY` object.
 
-- **operator bool( )** Extracts a **bool** value.
+- **operator bool( )** Extracts a **`bool`** value.
 
 - **operator DECIMAL( )** Extracts a `DECIMAL` value.
 

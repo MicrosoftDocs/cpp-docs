@@ -8,7 +8,7 @@ ms.assetid: 7577bf48-88ec-4191-873c-ef4217a4034e
 
 **Microsoft Specific**
 
-The Microsoft C/C++ compiler does not honor user requests for register variables. However, for portability all other semantics associated with the **register** keyword are honored by the compiler. For example, you cannot apply the unary address-of operator (**&**) to a register object nor can the **register** keyword be used on arrays.
+The Microsoft C/C++ compiler does not honor user requests for register variables. However, for portability all other semantics associated with the **`register`** keyword are honored by the compiler. For example, you cannot apply the unary address-of operator (**&**) to a register object nor can the **`register`** keyword be used on arrays.
 
 **END Microsoft Specific**
 

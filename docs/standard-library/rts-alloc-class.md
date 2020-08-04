@@ -98,7 +98,7 @@ bool equals(const sync<_Cache>& _Other) const;
 
 ### Remarks
 
-**true** if the result of `caches[0].equals(other.caches[0])`; otherwise, **false**. `caches` represents the array of cache objects.
+**`true`** if the result of `caches[0].equals(other.caches[0])`; otherwise, **`false`**. `caches` represents the array of cache objects.
 
 ## See also
 

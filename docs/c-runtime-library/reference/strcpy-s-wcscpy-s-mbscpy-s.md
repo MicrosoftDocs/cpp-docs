@@ -1,6 +1,6 @@
 ---
 title: "strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l"
-ms.date: "4/2/2020"
+ms.date: "5/28/2020"
 api_name: ["wcscpy_s", "_mbscpy_s", "_mbscpy_s_l", "strcpy_s", "_o__mbscpy_s", "_o__mbscpy_s_l", "_o_strcpy_s", "_o_wcscpy_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -73,7 +73,7 @@ errno_t _mbscpy_s_l(
 Location of the destination string buffer.
 
 *dest_size*<br/>
-Size of the destination string buffer in **char** units for narrow and multi-byte functions, and **wchar_t** units for wide functions. This value must be greater than zero and not greater than **RSIZE_MAX**.
+Size of the destination string buffer in **`char`** units for narrow and multi-byte functions, and **`wchar_t`** units for wide functions. This value must be greater than zero and not greater than **RSIZE_MAX**. Ensure that this size accounts for the terminating `NULL` following the string.
 
 *src*<br/>
 Null-terminated source string buffer.

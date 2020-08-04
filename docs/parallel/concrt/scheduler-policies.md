@@ -22,12 +22,12 @@ The [concurrency::PolicyElementKey](reference/concurrency-namespace-enums.md#pol
 |Policy Key|Description|Default Value|
 |----------------|-----------------|-------------------|
 |`SchedulerKind`|A [concurrency::SchedulerType](reference/concurrency-namespace-enums.md#schedulertype) value that specifies the type of threads to use to schedule tasks.|`ThreadScheduler` (use normal threads). This is the only valid value for this key.|
-|`MaxConcurrency`|An `unsigned int` value that specifies the maximum number of concurrency resources that the scheduler uses.|[concurrency::MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources)|
-|`MinConcurrency`|An `unsigned int` value that specifies the minimum number of concurrency resources that the scheduler uses.|`1`|
-|`TargetOversubscriptionFactor`|An `unsigned int` value that specifies how many threads to allocate to each processing resource.|`1`|
-|`LocalContextCacheSize`|An `unsigned int` value that specifies the maximum number of contexts that can be cached in the local queue of each virtual processor.|`8`|
-|`ContextStackSize`|An `unsigned int` value that specifies the size of the stack, in kilobytes, to reserve for each context.|`0` (use the default stack size)|
-|`ContextPriority`|An `int` value that specifies the thread priority of each context. This can be any value that you can pass to [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) or `INHERIT_THREAD_PRIORITY`.|`THREAD_PRIORITY_NORMAL`|
+|`MaxConcurrency`|An **`unsigned int`** value that specifies the maximum number of concurrency resources that the scheduler uses.|[concurrency::MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources)|
+|`MinConcurrency`|An **`unsigned int`** value that specifies the minimum number of concurrency resources that the scheduler uses.|`1`|
+|`TargetOversubscriptionFactor`|An **`unsigned int`** value that specifies how many threads to allocate to each processing resource.|`1`|
+|`LocalContextCacheSize`|An **`unsigned int`** value that specifies the maximum number of contexts that can be cached in the local queue of each virtual processor.|`8`|
+|`ContextStackSize`|An **`unsigned int`** value that specifies the size of the stack, in kilobytes, to reserve for each context.|`0` (use the default stack size)|
+|`ContextPriority`|An **`int`** value that specifies the thread priority of each context. This can be any value that you can pass to [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) or `INHERIT_THREAD_PRIORITY`.|`THREAD_PRIORITY_NORMAL`|
 
 |`SchedulingProtocol`|A [concurrency::SchedulingProtocolType](reference/concurrency-namespace-enums.md#schedulingprotocoltype) value that specifies the scheduling algorithm to use.|`EnhanceScheduleGroupLocality`|
 |`DynamicProgressFeedback`|A [concurrency::DynamicProgressFeedbackType](reference/concurrency-namespace-enums.md#dynamicprogressfeedbacktype) value that specifies whether to rebalance resources according to statistics-based progress information.<br /><br /> **Note** Do not set this policy to `ProgressFeedbackDisabled` because it is reserved for use by the runtime.|`ProgressFeedbackEnabled`|

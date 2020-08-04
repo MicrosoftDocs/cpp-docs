@@ -35,7 +35,7 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 ### Parameters
 
 *cv_qualifier*<br/>
-**const** or **volatile** qualifiers.
+**`const`** or **`volatile`** qualifiers.
 
 *type*<br/>
 The type of *initializer*.
@@ -56,7 +56,7 @@ An interior pointer can only be declared on the stack.  An interior pointer cann
 
 Since interior pointers exist only on the stack, taking the address of an interior pointer yields an unmanaged pointer.
 
-**interior_ptr** has an implicit conversion to **bool**, which allows for its use in conditional statements.
+**interior_ptr** has an implicit conversion to **`bool`**, which allows for its use in conditional statements.
 
 For information on how to declare an interior pointer that points into an object that cannot be moved on the garbage-collected heap, see [pin_ptr](pin-ptr-cpp-cli.md).
 

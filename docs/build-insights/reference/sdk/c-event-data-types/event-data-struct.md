@@ -69,7 +69,7 @@ typedef struct EVENT_DATA_TAG
 
 Many fields in `EVENT_DATA` contain tick counts. C++ Build Insights uses Window's performance counter as a source of ticks. A tick count must be used with the `TickFrequency` field to convert it into an appropriate time unit such as seconds. See the example below for performing this conversion. `EVENT_DATA` doesn't contain a field for the regular tick count of an activity. To obtain this value, subtract `StartTimestamp` from `StopTimestamp`. `EVENT_DATA` is a structure that's meant to be used by C API users. For C++ API users, classes like [Event](../cpp-event-data-types/event.md) do time conversions automatically.
 
-The value of the `EVENT_DATA` `Data` field depends on the value of its `EventId` field. The value of `Data` is described in the table below. Some entity identifiers may be missing from the table below. In this case, the `Data` field is set to `nullptr` or zero.
+The value of the `EVENT_DATA` `Data` field depends on the value of its `EventId` field. The value of `Data` is described in the table below. Some entity identifiers may be missing from the table below. In this case, the `Data` field is set to **`nullptr`** or zero.
 
 | `EventId` value | Type pointed to by `Data` |
 |--|--|

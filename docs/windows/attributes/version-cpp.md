@@ -34,7 +34,7 @@ See the [bindable](bindable.md) example for a sample use of **version**.
 
 |||
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|

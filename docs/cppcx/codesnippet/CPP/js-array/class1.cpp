@@ -153,8 +153,8 @@ public:
 
 void DoSomething()
 {
-    Windows::Foundation::Uri msdn("http://www.msdn.microsoft.com");
-    Windows::Foundation::Uri^ devCenter = msdn.CombineUri("/windows/");
+    Windows::Foundation::Uri docs("http://docs.microsoft.com");
+    Windows::Foundation::Uri^ devCenter = docs.CombineUri("/windows/");
     // ... 
 }   // both variables cleaned up here.
 

@@ -8,15 +8,15 @@ ms.assetid: bd18f673-4dda-4bc1-92fd-d1ce10074910
 
 An enumeration consists of a set of named integer constants. An enumeration type declaration gives the name of the (optional) enumeration tag and defines the set of named integer identifiers (called the "enumeration set," "enumerator constants," "enumerators," or "members"). A variable with enumeration type stores one of the values of the enumeration set defined by that type.
 
-Variables of `enum` type can be used in indexing expressions and as operands of all arithmetic and relational operators. Enumerations provide an alternative to the `#define` preprocessor directive with the advantages that the values can be generated for you and obey normal scoping rules.
+Variables of **`enum`** type can be used in indexing expressions and as operands of all arithmetic and relational operators. Enumerations provide an alternative to the `#define` preprocessor directive with the advantages that the values can be generated for you and obey normal scoping rules.
 
-In ANSI C, the expressions that define the value of an enumerator constant always have `int` type; thus, the storage associated with an enumeration variable is the storage required for a single `int` value. An enumeration constant or a value of enumerated type can be used anywhere the C language permits an integer expression.
+In ANSI C, the expressions that define the value of an enumerator constant always have **`int`** type; thus, the storage associated with an enumeration variable is the storage required for a single **`int`** value. An enumeration constant or a value of enumerated type can be used anywhere the C language permits an integer expression.
 
 ## Syntax
 
 *enum-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**enum** *identifier*<sub>opt</sub> **{** *enumerator-list* **}**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**enum** *identifier*
+&nbsp;&nbsp;&nbsp;&nbsp;**`enum`** *identifier*<sub>opt</sub> **{** *enumerator-list* **}**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`enum`** *identifier*
 
 The optional *identifier* names the enumeration type defined by *enumerator-list*. This identifier is often called the "tag" of the enumeration specified by the list. A type specifier of the form
 
@@ -29,7 +29,7 @@ enum identifier
 
 declares *identifier* to be the tag of the enumeration specified by the *enumerator-list* nonterminal. The *enumerator-list* defines the "enumerator content." The *enumerator-list* is described in detail below.
 
-If the declaration of a tag is visible, subsequent declarations that use the tag but omit *enumerator-list* specify the previously declared enumerated type. The tag must refer to a defined enumeration type, and that enumeration type must be in current scope. Since the enumeration type is defined elsewhere, the *enumerator-list* does not appear in this declaration. Declarations of types derived from enumerations and `typedef` declarations for enumeration types can use the enumeration tag before the enumeration type is defined.
+If the declaration of a tag is visible, subsequent declarations that use the tag but omit *enumerator-list* specify the previously declared enumerated type. The tag must refer to a defined enumeration type, and that enumeration type must be in current scope. Since the enumeration type is defined elsewhere, the *enumerator-list* does not appear in this declaration. Declarations of types derived from enumerations and **`typedef`** declarations for enumeration types can use the enumeration tag before the enumeration type is defined.
 
 ## Syntax
 
@@ -46,7 +46,7 @@ If the declaration of a tag is visible, subsequent declarations that use the tag
 
 Each *enumeration-constant* in an *enumeration-list* names a value of the enumeration set. By default, the first *enumeration-constant* is associated with the value 0. The next *enumeration-constant* in the list is associated with the value of ( *constant-expression* + 1 ), unless you explicitly associate it with another value. The name of an *enumeration-constant* is equivalent to its value.
 
-You can use *enumeration-constant = constant-expression* to override the default sequence of values. Thus, if *enumeration-constant = constant-expression* appears in the *enumerator-list*, the *enumeration-constant* is associated with the value given by *constant-expression*. The *constant-expression* must have `int` type and can be negative.
+You can use *enumeration-constant = constant-expression* to override the default sequence of values. Thus, if *enumeration-constant = constant-expression* appears in the *enumerator-list*, the *enumeration-constant* is associated with the value given by *constant-expression*. The *constant-expression* must have **`int`** type and can be negative.
 
 The following rules apply to the members of an enumeration set:
 

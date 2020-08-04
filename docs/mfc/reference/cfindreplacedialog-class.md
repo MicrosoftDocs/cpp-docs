@@ -49,7 +49,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 Unlike the other Windows common dialog boxes, `CFindReplaceDialog` objects are modeless, allowing users to interact with other windows while they are on screen. There are two kinds of `CFindReplaceDialog` objects: Find dialog boxes and Find/Replace dialog boxes. Although the dialog boxes allow the user to input search and search/replace strings, they do not perform any of the searching or replacing functions. You must add these to the application.
 
-To construct a `CFindReplaceDialog` object, use the provided constructor (which has no arguments). Since this is a modeless dialog box, allocate the object on the heap using the **new** operator, rather than on the stack.
+To construct a `CFindReplaceDialog` object, use the provided constructor (which has no arguments). Since this is a modeless dialog box, allocate the object on the heap using the **`new`** operator, rather than on the stack.
 
 Once a `CFindReplaceDialog` object has been constructed, you must call the [Create](#create) member function to create and display the dialog box.
 
@@ -95,9 +95,9 @@ CFindReplaceDialog();
 
 ### Remarks
 
-Because the `CFindReplaceDialog` object is a modeless dialog box, you must construct it on the heap by using the **new** operator.
+Because the `CFindReplaceDialog` object is a modeless dialog box, you must construct it on the heap by using the **`new`** operator.
 
-During destruction, the framework tries to perform a **delete this** on the pointer to the dialog box. If you created the dialog box on the stack, the **this** pointer does not exist and undefined behavior may result.
+During destruction, the framework tries to perform a **delete this** on the pointer to the dialog box. If you created the dialog box on the stack, the **`this`** pointer does not exist and undefined behavior may result.
 
 For more information on the construction of `CFindReplaceDialog` objects, see the [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md) overview. Use the [CFindReplaceDialog::Create](#create) member function to display the dialog box.
 
