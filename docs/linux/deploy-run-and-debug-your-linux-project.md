@@ -97,7 +97,7 @@ There are several ways to interact with and debug your Linux project.
 
 ## Configure other debugging options (CMake projects)
 
-You can specify additional command-line arguments for a CMake project in the launch.vs.json file. For more information, see [Debug the CMake project](cmake-linux-project.md#debug_cmake_project)
+You can specify additional command-line arguments for a CMake project in the launch.vs.json file. For more information, see [Debug a CMake Linux project in Visual Studio](cmake-linux-debug.md)
 
 ## Debug with Attach to Process
 
@@ -132,7 +132,7 @@ By default, the remote debug machine is the same as the remote build machine (**
 
 ![Linux remote debug machine](media/linux-remote-debug-machine.png)
 
-The drop-down menu for **Remote Debug Machine** is populated with all established remote connections. To add a new remote connection, navigate to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or search for "Connection Manager" in **Quick Launch**. You can also specify a new remote deploy directory in the project’s Property Pages (**Configuration Properties** > **General** > **Remote Deploy Directory**).
+The drop-down menu for **Remote Debug Machine** is populated with all established remote connections. To add a new remote connection, navigate to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or search for "Connection Manager" in **Quick Launch**. You can also specify a new remote deploy directory in the project's Property Pages (**Configuration Properties** > **General** > **Remote Deploy Directory**).
 
 By default, only the files necessary for the process to debug will be deployed to the remote debug machine. You can use **Solution Explorer** to configure which source files will be deployed to the remote debug machine. When you click on a source file, you will see a preview of its File Properties directly below the Solution Explorer.
 
@@ -140,7 +140,7 @@ By default, only the files necessary for the process to debug will be deployed t
 
 The **Content** property specifies whether the file will be deployed to the remote debug machine. You can disable deployment entirely by navigating to **Property Pages** > **Configuration Manager** and unchecking **Deploy** for the desired configuration.
 
-In some cases, you may require more control over your project’s deployment. For example, some files that you want to deploy might be outside of your solution or you want to customize your remote deploy directory per file ordirectory. In these cases, append the following code block(s) to your .vcxproj file and replace "example.cpp" with the actual file names:
+In some cases, you may require more control over your project's deployment. For example, some files that you want to deploy might be outside of your solution or you want to customize your remote deploy directory per file ordirectory. In these cases, append the following code block(s) to your .vcxproj file and replace "example.cpp" with the actual file names:
 
 ```xml
 

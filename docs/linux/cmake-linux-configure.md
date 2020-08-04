@@ -1,7 +1,7 @@
 ---
 title: "Configure CMake settings for Linux in Visual Studio"
-description: "How to configure Linux CMake project in Visual Studio"
-ms.date: "07/23/2020"
+description: "How to configure Linux CMake settings in Visual Studio"
+ms.date: "08/05/2020"
 ---
 # Configure CMake settings for Linux in Visual Studio
 
@@ -10,9 +10,11 @@ Linux support is available in Visual Studio 2017 and later. To see the documenta
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
-This topic describes how to configure a C++ Linux project, continuing the series that began with [Create a Linux CMake project in Visual Studio](cmake-linux-project.md). If you are using MSBuild, instead, see [Configure a Linux Project](configure-a-linux-project.md)
+This topic describes how to configure a C++ Linux project, continuing the series that began with [Create a Linux CMake project in Visual Studio](cmake-linux-project.md). If you are using MSBuild, instead, see [Configure a Linux Project in Visual Studio](configure-a-linux-project.md)
 
-To configure the build, you open the CMake Settings Editor. This creates a **CMakeSettings.json** file at the root of your project. Configurations can be used to target different platforms (Windows, WSL, a remote system) with the same source code. They are also used to set your compilers, pass environment variables, and customize how CMake is invoked.
+## Configure a CMAKE build
+
+To configure the build, open the CMake Settings Editor. This creates a **CMakeSettings.json** file at the root of your project. Configurations can be used to target different platforms (Windows, WSL, a remote system) with the same source code. They are also used to set your compilers, pass environment variables, and customize how CMake is invoked.
 
 The *CMakeSettings.json* file in a CMake Linux project specifies some or all of the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine.
 ::: moniker-end

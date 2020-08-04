@@ -16,15 +16,15 @@ Once you have created or opened a Linux C++ CMake project, you can compile, exec
 
  For debugging MSBuild Linux projects, see [Deploy, run, and debug your Linux project](deploy-run-and-debug-your-linux-project.md)
 
-When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings to **Linux-Debug** or **Linux-Release**.
-
 ## Choose a Linux target
+
+When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings to **Linux-Debug** or **Linux-Release**.
 
 ::: moniker-end
 ::: moniker range="vs-2019"
 ### Windows Subsystem for Linux
 
-If you are targeting Windows Subsystem for Linux (WSL), select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
+If you're targeting Windows Subsystem for Linux (WSL), select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
 
 **Visual Studio 2019 version 16.1** When targeting WSL, no copying of sources or headers is necessary. That's because the compiler on Linux has direct access to your source files in the Windows file system. (In Windows 10 version 1903 and later, Windows applications likewise can access the Linux header files directly. Visual Studio doesn't take advantage of this capability yet.)
 ::: moniker-end
@@ -32,9 +32,9 @@ If you are targeting Windows Subsystem for Linux (WSL), select **Manage Configur
 ::: moniker range=">=vs-2017"
 ### Add a remote connection
 
-If you are targeting Windows Subsystem for Linux, you don't need to add a remote connection.
+If you're targeting Windows Subsystem for Linux, you don't need to add a remote connection.
 
-If you are targeting a remote system, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets.
+If you're targeting a remote system, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets.
 
 If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
@@ -52,7 +52,7 @@ To provide IntelliSense support for headers on remote Linux systems, Visual Stud
 
 For more information, see [Linux target locale](configure-a-linux-project.md#locale).
 
-## Debug
+## Debug the CMake project
 
 To debug your code on the specified target system, set a breakpoint. Select the CMake target as the startup item in the toolbar menu next to the project setting. Then choose **&#x23f5; Start** on the toolbar, or press **F5**.
 
@@ -71,13 +71,12 @@ To specify additional arguments, add them in the `args` JSON array. For more inf
 
 ## Next steps
 
-[Deploy, run, and debug your Linux project using MSBuild](deploy-run-and-debug-your-linux-project.md)
+Learn about [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md)
 
 ## See also
 
 [CMake Projects in Visual Studio](../build/cmake-projects-in-visual-studio.md)<br/>
 [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md)<br/>
-[Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md)<br/>
-[Deploy, run, and debug your Linux project](deploy-run-and-debug-your-linux-project.md)
+[Deploy, run, and debug your Linux project using MSBuild](deploy-run-and-debug-your-linux-project.md)
 
 ::: moniker-end
