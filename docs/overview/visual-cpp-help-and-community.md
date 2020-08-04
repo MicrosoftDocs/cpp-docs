@@ -36,4 +36,4 @@ Many sections of the documentation are also available in PDF form. These section
 |[C++ Team Blog](https://devblogs.microsoft.com/cppblog/)|Contains posts on various subjects by the experts on Microsoft's C++ product team.|
 |[Channel 9](https://channel9.msdn.com/)|Contains video interviews and lectures. Use the search box on the Channel 9 home page to find C++ content.|
 |[Visual Studio](https://visualstudio.microsoft.com/)|Contains articles and news about Visual Studio and related development tools.|
-|Microsoft Docs Q&A](https://docs.microsoft.com/answers/topics/c%2B%2B.html) and Visual Studio C++ [Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html)|Official Microsoft forums where you can post questions about C++ and get answers from Microsoft and from experts in the community.|
+|[Microsoft Docs Q&A](https://docs.microsoft.com/answers/topics/c%2B%2B.html) and Visual Studio C++ [Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html)|Official Microsoft forums where you can post questions about C++ and get answers from Microsoft and from experts in the community.|
