@@ -10,46 +10,13 @@ Linux support is available in Visual Studio 2017 and later. To see the documenta
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
-This topic describes how to configure a C++ Linux project as described in [Create a Linux CMake project in Visual Studio](cmake-linux-project.md). For MSBuild Linux projects, see [Configure a Linux Project](configure-a-linux-project.md)
+This topic describes how to configure a C++ Linux project, continuing the series that began with [Create a Linux CMake project in Visual Studio](cmake-linux-project.md). If you are using MSBuild, instead, see [Configure a Linux Project](configure-a-linux-project.md)
 
-A *CMakeSettings.json* file in a CMake Linux project can specify all the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine.
+To configure the build, you open the CMake Settings Editor. This creates a **CMakeSettings.json** file at the root of your project. Configurations can be used to target different platforms (Windows, WSL, a remote system) with the same source code. They are also used to set your compilers, pass environment variables, and customize how CMake is invoked.
+
+The *CMakeSettings.json* file in a CMake Linux project specifies some or all of the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine.
 ::: moniker-end
 
-::: moniker range="vs-2019"
-To change the default CMake settings in Visual Studio 2019, from the main toolbar, open the **Configuration** dropdown and choose **Manage Configurations**.
-
-![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
-
-This command brings up the **CMake Settings Editor**, which you can use to edit the *CMakeSettings.json* file in your root project folder. You can also open the file directly by clicking the **Edit JSON** button in the editor. For more information, see [Customize CMake Settings](../build/customize-cmake-settings.md).
-
-The the default Linux-Debug configuration in Visual Studio 2019 version 16.1 and later is shown here:
-
-```json
-{
-      "name": "Linux-Debug",
-      "generator": "Unix Makefiles",
-      "configurationType": "Debug",
-      "cmakeExecutable": "/usr/bin/cmake",
-      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": "",
-      "inheritEnvironments": [ "linux_x64" ],
-      "remoteMachineName": "${defaultRemoteMachineName}",
-      "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
-      "remoteBuildRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/build/${name}",
-      "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
-      "remoteCopySources": true,
-      "rsyncCommandArgs": "-t --delete --delete-excluded",
-      "remoteCopyBuildOutput": false,
-      "remoteCopySourcesMethod": "rsync",
-      "addressSanitizerRuntimeFlags": "detect_leaks=0",
-      "variables": []
-    }
-  ]
-}
-```
-::: moniker-end
 ::: moniker range="vs-2017"
 To change the default CMake settings in Visual Studio 2017, choose **CMake** > **Change CMake Settings** > **CMakeLists.txt** from the main menu. Or, right-click *CMakeSettings.txt* in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new *CMakeSettings.json* file in your root project folder. You can open the file using the **CMake Settings** editor or modify the file directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
 
@@ -101,8 +68,44 @@ You would see something like this default configuration for Linux-Debug in Visua
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
-
 ::: moniker-end
+
+::: moniker range="vs-2019"
+To change the default CMake settings in Visual Studio 2019, from the main toolbar, open the **Configuration** dropdown and choose **Manage Configurations**.
+
+![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
+
+This command brings up the **CMake Settings Editor**, which you can use to edit the *CMakeSettings.json* file in your root project folder. You can also open the file directly by clicking the **Edit JSON** button in the editor. For more information, see [Customize CMake Settings](../build/customize-cmake-settings.md).
+
+The the default Linux-Debug configuration in Visual Studio 2019 version 16.1 and later is shown here:
+
+```json
+{
+      "name": "Linux-Debug",
+      "generator": "Unix Makefiles",
+      "configurationType": "Debug",
+      "cmakeExecutable": "/usr/bin/cmake",
+      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
+      "remoteBuildRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/build/${name}",
+      "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
+      "remoteCopySources": true,
+      "rsyncCommandArgs": "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput": false,
+      "remoteCopySourcesMethod": "rsync",
+      "addressSanitizerRuntimeFlags": "detect_leaks=0",
+      "variables": []
+    }
+  ]
+}
+```
+::: moniker-end
+
 ::: moniker range=">=vs-2017"
 For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
 
@@ -127,9 +130,8 @@ These options allow you to run commands on the Linux system before and after bui
 ## See also
 
 [Working with Project Properties](../build/working-with-project-properties.md)<br/>
-[CMake Projects in Visual Studio](../build/cmake-projects-in-visual-studio.md)<br/>
-[Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md)<br/>
 [Customize CMake settings](../build/customize-cmake-settings.md)
 <br/>
 [CMake predefined configuration reference](../build/cmake-predefined-configuration-reference.md)
+
 ::: moniker-end

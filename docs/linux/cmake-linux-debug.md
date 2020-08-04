@@ -14,7 +14,7 @@ This topic describes how to debug a C++ Linux project as described in [Create a 
 
 Once you have created or opened a Linux C++ CMake project, you can compile, execute, and debug the code on the remote target.
 
- (For MSBuild Linux projects, see [Deploy, run, and debug your Linux project](deploy-run-and-debug-your-linux-project.md))
+ For debugging MSBuild Linux projects, see [Deploy, run, and debug your Linux project](deploy-run-and-debug-your-linux-project.md)
 
 When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings to **Linux-Debug** or **Linux-Release**.
 
@@ -68,6 +68,10 @@ To customize your program's command-line arguments, press the **Switch Targets**
 ```
 
 To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
+
+## Next steps
+
+[Deploy, run, and debug your Linux project using MSBuild](deploy-run-and-debug-your-linux-project.md)
 
 ## See also
 
