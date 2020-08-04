@@ -15,10 +15,10 @@ The **ref class** or **ref struct** extensions declare a class or struct whose *
 ### Syntax
 
 ```cpp
-class_access ref class name modifier :  inherit_accessbase_type {};
-class_access ref struct name modifier :  inherit_access base_type {};
-class_access value class name modifier :  inherit_access base_type {};
-class_access value struct name modifier :  inherit_access base_type {};
+class_access ref class name modifier : inherit_accessbase_type {};
+class_access ref struct name modifier : inherit_access base_type {};
+class_access value class name modifier : inherit_access base_type {};
+class_access value struct name modifier : inherit_access base_type {};
 ```
 
 ### Parameters
