@@ -28,7 +28,7 @@ Also, make sure the following are installed on the remote machine:
 - gdb
 - rsync
 - zip
-- ninja-build if you're using Visual Studio 2019 or above
+- ninja-build (Visual Studio 2019 or above)
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -58,8 +58,6 @@ Alternatively, you can open your own CMake project in Visual Studio 2019. The fo
 
 ::: moniker range=">=vs-2017"
 ## Open a CMake project folder
-
-You can bring your own CMake project to Visual Studio by opening the folder that contains the `CMakeLists.txt` file.
 
 When you open a folder that contains an existing CMake project, Visual Studio uses variables in the CMake cache to automatically configure IntelliSense and builds. Local configuration and debugging settings get stored in JSON files. You can optionally share these files with others who are using Visual Studio.
 

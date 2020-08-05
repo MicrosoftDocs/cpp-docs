@@ -24,7 +24,7 @@ When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* 
 ::: moniker range="vs-2019"
 ### Windows Subsystem for Linux
 
-If you're targeting Windows Subsystem for Linux (WSL), select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
+To target Windows Subsystem for Linux (WSL), select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
 
 **Visual Studio 2019 version 16.1** When targeting WSL, no copying of sources or headers is necessary. That's because the compiler on Linux has direct access to your source files in the Windows file system. (In Windows 10 version 1903 and later, Windows applications likewise can access the Linux header files directly. Visual Studio doesn't take advantage of this capability yet.)
 ::: moniker-end
@@ -46,7 +46,7 @@ After you select a target, CMake runs automatically on the Linux system to gener
 
 ### Intellisense
 
-To provide IntelliSense support for headers on remote Linux systems, Visual Studio automatically copies them from the Linux machine to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
+Accurate C++ IntelliSense requires access to the C++ headers that are referenced by C++ source files. Visual Studio automatically copies the headers referenced by a CMake project from Linux to Windows to provide a full-fidelity IntelliSense experience. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
 ### Locale
 

@@ -12,9 +12,9 @@ Linux support is available in Visual Studio 2017 and later. To see the documenta
 ::: moniker range=">=vs-2017"
 This topic describes how to configure a C++ Linux project, continuing the series that began with [Create a Linux CMake project in Visual Studio](cmake-linux-project.md). If you are using MSBuild, instead, see [Configure a Linux Project in Visual Studio](configure-a-linux-project.md)
 
-## Configure a CMAKE build
+## Configure a CMake build for Linux
 
-To configure the build, open the CMake Settings Editor. This creates a **CMakeSettings.json** file at the root of your project. Configurations can be used to target different platforms (Windows, WSL, a remote system) with the same source code. They are also used to set your compilers, pass environment variables, and customize how CMake is invoked.
+To configure the build, open the CMake Settings Editor. This creates a *CMakeSettings.json* file at the root of your project. Configurations can be used to target different platforms (Windows, WSL, a remote system) with the same source code. They are also used to set your compilers, pass environment variables, and customize how CMake is invoked.
 
 The *CMakeSettings.json* file in a CMake Linux project specifies some or all of the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine.
 ::: moniker-end
@@ -22,7 +22,7 @@ The *CMakeSettings.json* file in a CMake Linux project specifies some or all of 
 ::: moniker range="vs-2017"
 To change the default CMake settings in Visual Studio 2017, choose **CMake** > **Change CMake Settings** > **CMakeLists.txt** from the main menu. Or, right-click *CMakeSettings.txt* in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new *CMakeSettings.json* file in your root project folder. You can open the file using the **CMake Settings** editor or modify the file directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
 
-Given the following code and CMakeLists.txt file:
+Given the following code and *CMakeLists.txt* file:
 
 ```cpp
 // hello.cpp
@@ -125,7 +125,7 @@ You can use the following optional settings for more control:
 
 These options allow you to run commands on the Linux system before and after building, and before CMake generation. The values can be any command that is valid on the remote system. The output is piped back to Visual Studio.
 
-## Next step
+## Next steps
 
 [Debug a CMake Linux project](cmake-linux-debug.md)
 
