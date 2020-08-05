@@ -3648,4 +3648,4 @@ We have a complete list of conformance improvements up through Visual Studio 201
 
 ## See also
 
-[Microsoft C++ language conformance table](../visual-cpp-language-conformance.md)
+[Microsoft C++ language conformance table](visual-cpp-language-conformance.md)
