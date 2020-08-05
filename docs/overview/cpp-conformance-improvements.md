@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "05/18/2020"
+ms.date: 08/04/2020
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 ---
