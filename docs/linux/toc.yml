@@ -44,11 +44,11 @@
         href: ../linux/prop-pages/remote-ar-linux.md
 - name: Build Linux projects with CMake in Visual Studio
   items:
-  - name: Create a Linux CMake project
+  - name: Create a CMake Linux project
     href: ../linux/cmake-linux-project.md
-  - name: Configure a Linux CMake project
+  - name: Configure a CMake Linux project
     href: ../linux/cmake-linux-configure.md
-  - name: Debug a Linux CMake project
+  - name: Debug a CMake Linux project
     href: ../linux/cmake-linux-debug.md
   - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
     href: ../build/get-started-linux-cmake.md
