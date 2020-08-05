@@ -1,5 +1,5 @@
 ---
-title: "Deploy, run, and debug your MSBuild-based C++ Linux project in Visual Studio"
+title: "Deploy, run, and debug your MSBuild C++ Linux project in Visual Studio"
 description: "Describes how to compile, execute, and debug code on the remote target from inside a MSBuild-based Linux C++ project in Visual Studio."
 ms.date: "08/04/2020"
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
@@ -85,7 +85,7 @@ There are several ways to interact with and debug your Linux project.
 
    ![Linux Console window](media/consolewindow.png)
 
-## Configure other debugging options (MSBuild-based projects)
+## Configure other debugging options (MSBuild projects)
 
 - Command-line arguments can be passed to the executable using the **Program Arguments** item in the project's **Debugging** property page.
 
@@ -126,7 +126,7 @@ The **AttachOptionsForConnection** has most of the attributes you might need. Th
 
 In Visual Studio 2019 version 16.1, you can separate your remote build machine from your remote debug machine for both MSBuild-based Linux projects and CMake projects that target a remote Linux machine. For example, you can now cross-compile on x64 and deploy to an ARM device when targeting IoT scenarios.
 
-### MSBuild-based projects
+### MSBuild projects
 
 By default, the remote debug machine is the same as the remote build machine (**Configuration Properties** > **General** > **Remote Build Machine**). To specify a new remote debug machine, right-click on the project in **Solution Explorer** and go to **Configuration Properties** > **Debugging** > **Remote Debug Machine**.  
 

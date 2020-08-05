@@ -1,10 +1,10 @@
 ---
-title: "Create a MSBuild-based C++ Linux project in Visual Studio"
+title: "Create a MSBuild C++ Linux project in Visual Studio"
 ms.date: "08/04/2020"
 description: "Create a new MSBuild-based Linux project in Visual Studio."
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 ---
-# Create a MSBuild-based C++ Linux project in Visual Studio
+# Create a MSBuild C++ Linux project in Visual Studio
 
 ::: moniker range="vs-2015"
 
@@ -36,7 +36,7 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 
 ## Next steps
 
-[Configure a MSBuild-based Linux project](configure-a-linux-project.md)
+[Configure a MSBuild Linux project](configure-a-linux-project.md)
 
 ::: moniker-end
 
@@ -66,6 +66,6 @@ To create a new Linux project in Visual Studio 2019, follow these steps:
 
 ## Next steps
 
-[Configure a MSBuild-based Linux project](configure-a-linux-project.md)
+[Configure a MSBuild Linux project](configure-a-linux-project.md)
 
 ::: moniker-end
