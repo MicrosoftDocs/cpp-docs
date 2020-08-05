@@ -15,9 +15,8 @@ Declares an interface.  For information on native interfaces, see [__interface](
 ### Syntax
 
 ```cpp
-interface_access
-interface class
-name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};
+interface_access interface class name : inherit_access base_interface {};
+interface_access interface struct name : inherit_access base_interface {};
 ```
 
 ### Parameters
