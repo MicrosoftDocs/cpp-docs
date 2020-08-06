@@ -1,49 +1,26 @@
 ---
-title: "Configure CMake settings for Linux in Visual Studio"
+title: "Configure a Linux CMake project in Visual Studio"
 description: "How to configure Linux CMake settings in Visual Studio"
-ms.date: "08/05/2020"
+ms.date: "08/06/2020"
 ---
-# Configure CMake settings for Linux in Visual Studio
+# Configure a Linux CMake project in Visual Studio
 
 ::: moniker range="vs-2015"
 Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
-This topic describes how to configure a C++ Linux project, continuing the series that began with [Create a Linux CMake project in Visual Studio](cmake-linux-project.md). If you are using MSBuild, instead, see [Configure a Linux Project in Visual Studio](configure-a-linux-project.md)
+This topic describes how to add a Linux configuration to a CMake project that targets either a remote Linux system or Windows Subsystem for Linux (WSL). It continues the series that began with [Create a Linux CMake project in Visual Studio](cmake-linux-project.md). If you are using MSBuild, instead, see [Configure a Linux MSBuild Project in Visual Studio](configure-a-linux-project.md)
 
-## Configure a CMake build for Linux
+## Add a Linux configuration
 
-To configure the build, open the CMake Settings Editor. This creates a *CMakeSettings.json* file at the root of your project. Configurations can be used to target different platforms (Windows, WSL, a remote system) with the same source code. They are also used to set your compilers, pass environment variables, and customize how CMake is invoked.
-
-The *CMakeSettings.json* file in a CMake Linux project specifies some or all of the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine.
+A configuration can be used to target different platforms (Windows, WSL, a remote system) with the same source code. A configuration is also used to set your compilers, pass environment variables, and customize how CMake is invoked. The *CMakeSettings.json* file specifies some or all of the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-To change the default CMake settings in Visual Studio 2017, choose **CMake** > **Change CMake Settings** > **CMakeLists.txt** from the main menu. Or, right-click *CMakeSettings.txt* in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new *CMakeSettings.json* file in your root project folder. You can open the file using the **CMake Settings** editor or modify the file directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
+To change the default CMake settings in Visual Studio 2017, choose **CMake** > **Change CMake Settings** > **CMakeLists.txt** from the main menu. Or, right-click *CMakeSettings.txt* in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new *CMakeSettings.json* file in your root project folder. To make changes, open the file and modify it directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
 
-Given the following code and *CMakeLists.txt* file:
-
-```cpp
-// hello.cpp
-
-#include <iostream>
-
-int main(int argc, char* argv[])
-{
-    std::cout << "Hello from Linux CMake" << std::endl;
-}
-```
-
-*CMakeLists.txt*:
-
-```txt
-cmake_minimum_required(VERSION 3.8)
-project (hello-cmake)
-add_executable(hello-cmake hello.cpp)
-```
-
-You would see something like this default configuration for Linux-Debug in Visual Studio 2017 (and Visual Studio 2019 version 16.0):
+The default configuration for Linux-Debug in Visual Studio 2017 (and Visual Studio 2019 version 16.0) looks like this:
 
 ```json
 {
@@ -77,9 +54,9 @@ To change the default CMake settings in Visual Studio 2019, from the main toolba
 
 ![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
 
-This command brings up the **CMake Settings Editor**, which you can use to edit the *CMakeSettings.json* file in your root project folder. You can also open the file directly by clicking the **Edit JSON** button in the editor. For more information, see [Customize CMake Settings](../build/customize-cmake-settings.md).
+This command opens the **CMake Settings Editor**, which you can use to edit the *CMakeSettings.json* file in your root project folder. You can also open the file directly by clicking the **Edit JSON** button in the editor. For more information, see [Customize CMake Settings](../build/customize-cmake-settings.md).
 
-The the default Linux-Debug configuration in Visual Studio 2019 version 16.1 and later is shown here:
+The default Linux-Debug configuration in Visual Studio 2019 version 16.1, and later, looks like this:
 
 ```json
 {
@@ -106,14 +83,51 @@ The the default Linux-Debug configuration in Visual Studio 2019 version 16.1 and
   ]
 }
 ```
-::: moniker-end
 
+::: moniker-end
 ::: moniker range=">=vs-2017"
 For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
 
-## Optional Settings
+## Choose a Linux target
 
-You can use the following optional settings for more control:
+When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings to **Linux-Debug** or **Linux-Release**.
+
+::: moniker-end
+::: moniker range="vs-2019"
+
+### Target Windows Subsystem for Linux
+
+To target Windows Subsystem for Linux (WSL), select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
+
+**Visual Studio 2019 version 16.1** When you target WSL, you don't need to copy sources or headers because the compiler on Linux has direct access to your source files in the Windows file system. (In Windows 10 version 1903 and later, Windows applications likewise can access the Linux header files directly. Visual Studio doesn't take advantage of this capability yet.)
+::: moniker-end
+::: moniker range=">=vs-2017"
+
+### Add a remote connection
+
+If you're targeting WSL, you don't need to add a remote connection.
+
+If you're targeting a remote system, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets.
+
+If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
+
+If you specify a remote Linux target, your source is copied to the remote system.
+
+After you select a target, CMake runs automatically on the Linux system to generate the CMake cache for your project:
+
+![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
+
+### IntelliSense
+
+Accurate C++ IntelliSense requires access to the C++ headers referenced by your C++ source files. Visual Studio automatically copies the headers referenced by a CMake project from Linux to Windows to provide a full-fidelity IntelliSense experience. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
+
+### Locale setting
+
+Visual Studio language settings aren't propagated to Linux targets because Visual Studio doesn't manage or configure installed packages. Messages shown in the Output window, such as build errors, are shown using the language and locale of the Linux target. You'll need to configure your Linux targets for the desired locale.
+
+## Additional settings
+
+Use the following settings to run commands on the Linux system before and after building, and before CMake generation. The values can be any command that is valid on the remote system. The output is piped back to Visual Studio.
 
 ```json
 {
@@ -123,17 +137,14 @@ You can use the following optional settings for more control:
 }
 ```
 
-These options allow you to run commands on the Linux system before and after building, and before CMake generation. The values can be any command that is valid on the remote system. The output is piped back to Visual Studio.
-
 ## Next steps
 
-[Debug a CMake Linux project](cmake-linux-debug.md)
+[Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md)
 
 ## See also
 
-[Working with Project Properties](../build/working-with-project-properties.md)<br/>
-[Customize CMake settings](../build/customize-cmake-settings.md)
-<br/>
+[Working with project properties](../build/working-with-project-properties.md)<br/>
+[Customize CMake settings](../build/customize-cmake-settings.md)<br/>
 [CMake predefined configuration reference](../build/cmake-predefined-configuration-reference.md)
 
 ::: moniker-end

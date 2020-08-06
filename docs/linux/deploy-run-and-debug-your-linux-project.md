@@ -1,10 +1,10 @@
 ---
-title: "Deploy, run, and debug your MSBuild C++ Linux project in Visual Studio"
+title: "Deploy, run, and debug your Linux MSBuild C++ project in Visual Studio"
 description: "Describes how to compile, execute, and debug code on the remote target from inside a MSBuild-based Linux C++ project in Visual Studio."
-ms.date: "08/04/2020"
+ms.date: "08/06/2020"
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 ---
-# Deploy, run, and debug your MSBuild-based Linux project
+# Deploy, run, and debug your Linux MSBuild project
 
 ::: moniker range="vs-2015"
 
@@ -46,9 +46,9 @@ There are several ways to interact with and debug your Linux project.
 
    ::: moniker-end
 
-   - In **gdbserver** mode, GDB is run locally, which connects to gdbserver on the remote system. This is the only mode that the Linux Console window supports.
+   - In **gdbserver** mode, GDB is run locally, which connects to gdbserver on the remote system.
 
-   - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system. This is a better option if the local version of GDB isn't compatible with the version installed on the target computer. |
+   - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system. This is a better option if the local version of GDB isn't compatible with the version installed on the target computer. This is the only mode that the Linux Console window supports.
 
    > [!NOTE]
    > If you are unable to hit breakpoints in gdbserver debugging mode, try gdb mode. gdb must first be [installed](download-install-and-setup-the-linux-development-workload.md) on the remote target.
@@ -170,7 +170,6 @@ IntelliSense will suggest all a list of all established remote connections. You 
 If you want complete control over your deployment, you can append the following code block(s) to the launch.vs.json file. Remember to replace the placeholder values with real values:
 
 ```json
-
 "disableDeploy": false,
 "deployDirectory": "~\foo",
 "deploy" : [
@@ -182,7 +181,6 @@ If you want complete control over your deployment, you can append the following 
       "executable": "false"
    }
 ]
-
 ```
 
 ::: moniker-end
