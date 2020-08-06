@@ -97,7 +97,7 @@ There are several ways to interact with and debug your Linux project.
 
 ## Configure other debugging options (CMake projects)
 
-You can specify additional command-line arguments for a CMake project in the launch.vs.json file. [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md#launch.vs.json-reference).
+You can specify additional command-line arguments for a CMake project in the launch.vs.json file. [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md#launch.vs.json-reference).
 
 ## Debug with Attach to Process
 
