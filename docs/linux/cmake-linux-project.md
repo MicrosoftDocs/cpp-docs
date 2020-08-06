@@ -1,7 +1,7 @@
 ---
 title: "Create a CMake Linux project in Visual Studio"
 description: "How to create a Linux CMake project in Visual Studio"
-ms.date: "08/05/2020"
+ms.date: "08/06/2020"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
 # Create a CMake Linux project in Visual Studio
@@ -15,8 +15,6 @@ Linux support is available in Visual Studio 2017 and later. To see the documenta
 ::: moniker range=">=vs-2017"
 
 We recommend you use CMake for projects that are cross-platform or you think you might make open-source. You can use CMake projects to build and debug the same source code on Windows, the Windows Subsystem for Linux (WSL), and remote systems.
-
-This is the first article in a series that describes how to create a new CMake project, configure it, and then build and debug on a remote Linux system or WSL.
 
 ## Before you begin
 
@@ -35,6 +33,8 @@ Also, make sure the following are installed on the remote machine:
 The CMake support in Visual Studio requires server mode support introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
 The binaries are installed in `~/.vs/cmake`. After deploying the binaries, your project automatically regenerates. If the CMake specified by the `cmakeExecutable` field in *CMakeSettings.json* is invalid (it doesn't exist or is an unsupported version), and the prebuilt binaries are present, Visual Studio ignores `cmakeExecutable` and uses the prebuilt binaries.
+
+Visual Studio 2017 can't create a CMake project from scratch, but you can open a folder that contains an existing CMake project, as described in the next section.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -61,7 +61,7 @@ Alternatively, you can open your own CMake project in Visual Studio 2019. The fo
 
 When you open a folder that contains an existing CMake project, Visual Studio uses variables in the CMake cache to automatically configure IntelliSense and builds. Local configuration and debugging settings get stored in JSON files. You can optionally share these files with others who are using Visual Studio.
 
-Visual Studio doesn't modify the *CMakeLists.txt* files. It's left alone so that others working on the same project can continue to use their existing tools. Visual Studio does regenerate the cache when you save edits to *CMakeLists.txt* or in some cases to *CMakeSettings.json*. But if you're using an **Existing Cache** configuration, then Visual Studio doesn't modify the cache.
+Visual Studio doesn't modify the *CMakeLists.txt* files. This allows others working on the same project to continue to use their existing tools. Visual Studio does regenerate the cache when you save edits to *CMakeLists.txt*, or in some cases, to *CMakeSettings.json*. If you're using an **Existing Cache** configuration, then Visual Studio doesn't modify the cache.
 
 For general information about CMake support in Visual Studio, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md). Read that before continuing here.
 
@@ -90,7 +90,7 @@ add_executable(hello-cmake hello.cpp)
 
 ## Next steps
 
-[Configure a CMake Linux project](cmake-linux-configure.md)
+[Configure a Linux CMake project](cmake-linux-configure.md)
 
 ## See also
 

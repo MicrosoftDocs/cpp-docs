@@ -12,7 +12,7 @@
       href: ../linux/connectionmanager-reference.md
 - name: Build Linux projects with MSBuild in Visual Studio
   items:
-  - name: Create a MSBuild Linux project
+  - name: Create a Linux MSBuild project
     href: ../linux/create-a-new-linux-project.md
   - name: Configure a Linux MSBuild project
     href: ../linux/configure-a-linux-project.md
