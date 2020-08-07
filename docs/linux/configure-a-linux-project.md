@@ -12,7 +12,7 @@ Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-This topic describes how to add a Linux configuration to a MSBuild project as described in [Create a Linux MSBuild C++ project in Visual Studio](create-a-new-linux-project.md). For Linux CMake projects, see [Configure a Linux CMake project](cmake-linux-project.md).
+This topic describes how to configure a MSBuild-based Linux project as described in [Create a Linux MSBuild C++ project in Visual Studio](create-a-new-linux-project.md). For Linux CMake projects, see [Configure a Linux CMake project](cmake-linux-project.md).
 
 You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about) (WSL).
 

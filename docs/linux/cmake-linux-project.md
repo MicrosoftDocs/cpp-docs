@@ -14,7 +14,7 @@ Linux support is available in Visual Studio 2017 and later. To see the documenta
 
 ::: moniker range=">=vs-2017"
 
-We recommend you use CMake for projects that are cross-platform or you think you might make open-source. You can use CMake projects to build and debug the same source code on Windows, the Windows Subsystem for Linux (WSL), and remote systems.
+We recommend you use CMake for projects that are cross-platform or will be open-source. You can use CMake projects to build and debug the same source code on Windows, the Windows Subsystem for Linux (WSL), and remote systems.
 
 ## Before you begin
 
@@ -40,7 +40,7 @@ Visual Studio 2017 can't create a CMake project from scratch, but you can open a
 ::: moniker range=">=vs-2019"
 You can use Visual Studio 2019 to build and debug on a remote Linux system or WSL, and CMake will be invoked on that system. Cmake version 3.14 or later should be installed on the target machine.
 
-Linux support for CMake projects requires that the target machine has a recent version of CMake. Often, the version offered by a distribution's default package manager isn't recent enough to support all the features required by Visual Studio. Visual Studio 2019 detects whether a recent version of CMake is installed on the Linux system. If none is found, Visual Studio shows an info-bar at the top of the editor pane. It offers to install CMake for you from [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
+Make sure that the target machine has a recent version of CMake. Often, the version offered by a distribution's default package manager isn't recent enough to support all the features required by Visual Studio. Visual Studio 2019 detects whether a recent version of CMake is installed on the Linux system. If none is found, Visual Studio shows an info-bar at the top of the editor pane. It offers to install CMake for you from [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
 With Visual Studio 2019, you can create a CMake project from scratch, or open an existing CMake project. To create a new CMake project, follow the instructions below. Or skip ahead to [Open a CMake project folder](#open-a-cmake-project-folder) if you already have a CMake project.
 
@@ -51,9 +51,15 @@ To create a new Linux CMake project in Visual Studio 2019:
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**.
 1. Set the **Language** to **C++** and search for "CMake". Then choose **Next**. Enter a **Name** and **Location**, and choose **Create**.
 
-Visual Studio creates a minimal *CMakeLists.txt* file with only the name of the executable and the minimum CMake version required. You can manually edit this file however you like; Visual Studio will never overwrite your changes. You can specify CMake command-line arguments and environment variables in this file. Right-click on the root *CMakeLists.txt* file in **Solution Explorer** and choose **CMake settings for project**.
-
 Alternatively, you can open your own CMake project in Visual Studio 2019. The following section explains how.
+
+Visual Studio creates a minimal *CMakeLists.txt* file with only the name of the executable and the minimum CMake version required. You can manually edit this file however you like; Visual Studio will never overwrite your changes.
+
+To help you make sense of, edit, and author your CMake scripts in Visual Studio 2019, refer to the following resources:
+
+- [In-editor documentation for CMake in Visual Studio](https://devblogs.microsoft.com/cppblog/in-editor-documentation-for-cmake-in-visual-studio/)
+- [Code navigation for CMake scripts](https://devblogs.microsoft.com/cppblog/code-navigation-for-cmake-scripts/)
+- [Easily Add, Remove, and Rename Files and Targets in CMake Projects](https://devblogs.microsoft.com/cppblog/easily-add-remove-and-rename-files-and-targets-in-cmake-projects/)
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"

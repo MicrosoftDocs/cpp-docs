@@ -48,6 +48,8 @@
     href: ../linux/cmake-linux-project.md
   - name: Configure a Linux CMake project
     href: ../linux/cmake-linux-configure.md
+  - name: Configure CMake debugging sessions
+    href: ../build/configure-cmake-debugging-sessions.md
   - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
     href: ../build/get-started-linux-cmake.md
 - name: Configure Linux projects to use Address Sanitizer

@@ -18,7 +18,7 @@ A configuration can be used to target different platforms (Windows, WSL, a remot
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-To change the default CMake settings in Visual Studio 2017, choose **CMake** > **Change CMake Settings** > **CMakeLists.txt** from the main menu. Or, right-click *CMakeSettings.txt* in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new *CMakeSettings.json* file in your root project folder. To make changes, open the file and modify it directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
+To change the default CMake settings in Visual Studio 2017, choose **CMake** > **Change CMake Settings** > **CMakeLists.txt** from the main menu. Or, right-click *CMakeLists.txt* in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new *CMakeSettings.json* file in your root project folder. To make changes, open the file and modify it directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
 
 The default configuration for Linux-Debug in Visual Studio 2017 (and Visual Studio 2019 version 16.0) looks like this:
 
@@ -54,7 +54,7 @@ To change the default CMake settings in Visual Studio 2019, from the main toolba
 
 ![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
 
-This command opens the **CMake Settings Editor**, which you can use to edit the *CMakeSettings.json* file in your root project folder. You can also open the file directly by clicking the **Edit JSON** button in the editor. For more information, see [Customize CMake Settings](../build/customize-cmake-settings.md).
+This command opens the **CMake Settings Editor**, which you can use to edit the *CMakeSettings.json* file in your root project folder. You can also open the file with the JSON editor by clicking the **Edit JSON** button in the editor. For more information, see [Customize CMake Settings](../build/customize-cmake-settings.md).
 
 The default Linux-Debug configuration in Visual Studio 2019 version 16.1, and later, looks like this:
 
@@ -84,9 +84,21 @@ The default Linux-Debug configuration in Visual Studio 2019 version 16.1, and la
 }
 ```
 
+In Visual Studio 2019 version 16.6 or later, Ninja is the default generator for configurations targeting a remote system or WSL. For more information, see this post on the [C++ Team Blog](https://devblogs.microsoft.com/cppblog/linux-development-with-visual-studio-first-class-support-for-gdbserver-improved-build-times-with-ninja-and-updates-to-the-connection-manager/).
+
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
+
+When you do a build:
+- If you're targeting a remote system, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets.
+- If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
+
+If you specify a remote Linux target, your source is copied to the remote system.
+
+After you select a target, CMake runs automatically on the Linux system to generate the CMake cache for your project:
+
+![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 
 ## Choose a Linux target
 
@@ -97,29 +109,17 @@ When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* 
 
 ### Target Windows Subsystem for Linux
 
-To target Windows Subsystem for Linux (WSL), select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
+If you're targeting Windows Subsystem for Linux (WSL), you don't need to add a remote connection.
 
-**Visual Studio 2019 version 16.1** When you target WSL, you don't need to copy sources or headers because the compiler on Linux has direct access to your source files in the Windows file system. (In Windows 10 version 1903 and later, Windows applications likewise can access the Linux header files directly. Visual Studio doesn't take advantage of this capability yet.)
+To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
+
+**Visual Studio 2019 version 16.1** When you target WSL, Visual Studio doesn't need to copy source files and maintain two synchronous copies of your build tree because the compiler on Linux has direct access to your source files in the mounted Windows file system.
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-### Add a remote connection
-
-If you're targeting WSL, you don't need to add a remote connection.
-
-If you're targeting a remote system, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets.
-
-If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
-
-If you specify a remote Linux target, your source is copied to the remote system.
-
-After you select a target, CMake runs automatically on the Linux system to generate the CMake cache for your project:
-
-![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
-
 ### IntelliSense
 
-Accurate C++ IntelliSense requires access to the C++ headers referenced by your C++ source files. Visual Studio automatically copies the headers referenced by a CMake project from Linux to Windows to provide a full-fidelity IntelliSense experience. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
+Accurate C++ IntelliSense requires access to the C++ headers referenced by your C++ source files. Visual Studio automatically uses the headers referenced by a CMake project from Linux to Windows to provide a full-fidelity IntelliSense experience. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
 ### Locale setting
 
