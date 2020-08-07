@@ -14,7 +14,7 @@ Linux support is available in Visual Studio 2017 and later. To see the documenta
 
 ::: moniker range=">=vs-2017"
 
-We recommend you use CMake for projects that are cross-platform or will be open-source. You can use CMake projects to build and debug the same source code on Windows, the Windows Subsystem for Linux (WSL), and remote systems.
+We recommend you use CMake for projects that are cross-platform or will be made open-source. You can use CMake projects to build and debug the same source code on Windows, the Windows Subsystem for Linux (WSL), and remote systems.
 
 ## Before you begin
 
