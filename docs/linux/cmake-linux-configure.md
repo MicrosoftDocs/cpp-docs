@@ -94,12 +94,6 @@ When you do a build:
 - If you're targeting a remote system, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets.
 - If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
-If you specify a remote Linux target, your source is copied to the remote system.
-
-After you select a target, CMake runs automatically on the Linux system to generate the CMake cache for your project:
-
-![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
-
 ## Choose a Linux target
 
 When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings to **Linux-Debug** or **Linux-Release**.
@@ -109,6 +103,11 @@ When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* 
 
 ### Target Windows Subsystem for Linux
 
+If you specify a remote Linux target, your source is copied to the remote system.
+
+After you select a target, CMake runs automatically on the Linux system to generate the CMake cache for your project:
+
+![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 If you're targeting Windows Subsystem for Linux (WSL), you don't need to add a remote connection.
 
 To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
