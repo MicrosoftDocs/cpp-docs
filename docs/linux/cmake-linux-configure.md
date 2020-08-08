@@ -6,7 +6,7 @@ ms.date: "08/06/2020"
 # Configure a Linux CMake project in Visual Studio
 
 ::: moniker range="vs-2015"
-Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
+Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on the left-hand side of this page.
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
