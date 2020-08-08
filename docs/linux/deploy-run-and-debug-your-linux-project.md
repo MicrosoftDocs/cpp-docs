@@ -1,15 +1,13 @@
 ---
 title: "Deploy, run, and debug your Linux MSBuild C++ project in Visual Studio"
 description: "Describes how to compile, execute, and debug code on the remote target from inside a MSBuild-based Linux C++ project in Visual Studio."
-ms.date: "08/06/2020"
+ms.date: "08/08/2020"
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 ---
 # Deploy, run, and debug your Linux MSBuild project
 
 ::: moniker range="vs-2015"
-
-Linux support is available in Visual Studio 2017 and later.
-
+Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** drop-down located above the table of contents to **Visual Studio 2017** or **Visual Studio 2019**.
 ::: moniker-end
 
 Once you've created a MSBuild-based Linux C++ project in Visual Studio and you've connected to the project using the [Linux Connection Manager](connect-to-your-remote-linux-computer.md), you can run and debug the project. You compile, execute, and debug the code on the remote target.
