@@ -12,11 +12,11 @@
       href: ../linux/connectionmanager-reference.md
 - name: Build Linux projects with MSBuild in Visual Studio
   items:
-  - name: Create a new Linux project
+  - name: Create a Linux MSBuild project
     href: ../linux/create-a-new-linux-project.md
-  - name: Configure a Linux project
+  - name: Configure a Linux MSBuild project
     href: ../linux/configure-a-linux-project.md
-  - name: Deploy, run, and debug your Linux project
+  - name: Deploy, run, and debug your Linux MSBuild project
     href: ../linux/deploy-run-and-debug-your-linux-project.md
   - name: Linux Project Property Page reference
     items:
@@ -44,8 +44,10 @@
         href: ../linux/prop-pages/remote-ar-linux.md
 - name: Build Linux projects with CMake in Visual Studio
   items:
-  - name: Create and configure a Linux CMake project
+  - name: Create a Linux CMake project
     href: ../linux/cmake-linux-project.md
+  - name: Configure a Linux CMake project
+    href: ../linux/cmake-linux-configure.md
   - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
     href: ../build/get-started-linux-cmake.md
 - name: Configure Linux projects to use Address Sanitizer
