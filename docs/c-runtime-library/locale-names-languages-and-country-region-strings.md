@@ -40,17 +40,7 @@ _wsetlocale(LC_ALL, L"LC_MONETARY=en-GB;LC_TIME=es-ES");
 
 ## UTF-8 Support
 
-Starting in Windows 10 build 17134 (April 2018 Update), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use "UTF-8" as the code page when using `setlocale`. For example, [`setlocale(LC_ALL, ".utf8")`](reference/setlocale-wsetlocale.md) will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
-
-After calling `setlocale(LC_ALL, ".UTF8")`, you may pass "😊" to `mbtowcs` and it will be properly translated to a `wchar_t` string, whereas previously there was not a locale setting available to do this.
-
-UTF-8 mode is also enabled for functions that have historically translated `char` strings using the default Windows ANSI code page (ACP). For example, calling [`_mkdir("😊")`](reference/mkdir-wmkdir.md) while using a UTF-8 code page will correctly produce a directory with that emoji as the folder name, instead of requiring the ACP to be changed to UTF-8 prior to running your program. Likewise, calling [`_getcwd()`](reference/getcwd-wgetcwd.md) inside of that folder will return a UTF-8 encoded string. For compatibility, the ACP is still used if the C locale code page is not set to UTF-8.
-
-The following aspects of the C Runtime that are not able to use UTF-8 because they are set during program startup and must use the default Windows ANSI code page (ACP): [`__argv`](argc-argv-wargv.md), [`_acmdln`](acmdln-tcmdln-wcmdln.md), and [`_pgmptr`](pgmptr-wpgmptr.md).
-
-Previous to this support, [`mbrtoc16`, `mbrtoc32`](reference/mbrtoc16-mbrtoc323.md), [`c16rtomb`, and `c32rtomb`](reference/c16rtomb-c32rtomb1.md) existed to translate between UTF-8 narrow strings, UTF-16 (same encoding as `wchar_t` on Windows platforms) and UTF-32. For compatibility reasons, these APIs still only translate to and from UTF-8 and not the code page set via `setlocale`.
-
-To use this feature on an OS prior to Windows 10, such as Windows 7, you must use [app-local deployment](../windows/universal-crt-deployment.md#local-deployment) or link statically using version 17134 of the Windows SDK or later. For Windows 10 operating systems prior to 17134, only static linking is supported.
+UTF-8 support can be enabled by using the UTF-8 code page in your locale string. See the [UTF-8 Support section of `setlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md#utf-8-support) for more information.
 
 
 ## See also
