@@ -37,6 +37,12 @@ _wsetlocale(LC_ALL, L"de-DE");
 _wsetlocale(LC_ALL, L"LC_MONETARY=en-GB;LC_TIME=es-ES");
 ```
 
+
+## UTF-8 Support
+
+UTF-8 support can be enabled by using the UTF-8 code page in your locale string. See the [UTF-8 Support section of `setlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md#utf-8-support) for more information.
+
+
 ## See also
 
 [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
