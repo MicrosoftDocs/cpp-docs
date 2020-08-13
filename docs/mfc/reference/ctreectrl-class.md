@@ -318,9 +318,8 @@ BOOL EndEditLabelNow(BOOL fCancelWithoutSave);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*fCancelWithoutSave*|[in] TRUE to discard changes to the tree-view item before concluding the edit operation, or FALSE to save changes to the tree-view item before concluding the operation.|
+*fCancelWithoutSave*\
+[in] TRUE to discard changes to the tree-view item before concluding the edit operation, or FALSE to save changes to the tree-view item before concluding the operation.
 
 ### Return Value
 
@@ -642,9 +641,8 @@ int GetItemExpandedImageIndex(HTREEITEM hItem)const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*hItem*|[in] Handle to a tree-view control item.|
+*hItem*\
+[in] Handle to a tree-view control item.
 
 ### Return Value
 
@@ -719,11 +717,14 @@ BOOL GetItemPartRect(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*hItem*|[in] Handle to a tree-view control item.|
-|*nPart*|[in] Identifier for the part. Must be set to TVGIPR_BUTTON.|
-|*lpRect*|[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure. If this method is successful, the structure receives the rectangle coordinates of the part specified by *hItem* and *nPart*.|
+*hItem*\
+[in] Handle to a tree-view control item.
+
+*nPart*\
+[in] Identifier for the part. Must be set to TVGIPR_BUTTON.
+
+*lpRect*\
+[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure. If this method is successful, the structure receives the rectangle coordinates of the part specified by *hItem* and *nPart*.
 
 ### Return Value
 
@@ -813,9 +814,8 @@ UINT GetItemStateEx(HTREEITEM hItem) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*hItem*|[in] Handle to a tree-view control item.|
+*hItem*\
+[in] Handle to a tree-view control item.
 
 ### Return Value
 
@@ -1331,9 +1331,8 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*uAccId*|[in] An accessibility identifier for an element in the tree-view item.|
+*uAccId*\
+[in] An accessibility identifier for an element in the tree-view item.
 
 ### Return Value
 
@@ -1367,9 +1366,8 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*hItem*|[in] A handle of a tree-view item in the control. For more information, see the *hItem* member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.|
+*hItem*\
+[in] A handle of a tree-view item in the control. For more information, see the *hItem* member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.
 
 ### Return Value
 
@@ -1512,10 +1510,11 @@ BOOL SetAutoscrollInfo(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*uPixelsPerSec*|[in] The number of pixels per second to scroll.|
-|*uUpdateTime*|[in] The time interval between updates of the control.|
+*uPixelsPerSec*\
+[in] The number of pixels per second to scroll.
+
+*uUpdateTime*\
+[in] The time interval between updates of the control.
 
 ### Return Value
 
@@ -1608,10 +1607,11 @@ DWORD SetExtendedStyle(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwExMask*|[in] A bitmask that specifies which styles in the current tree-view control are affected by this method. If this parameter is zero, it is ignored and the value of the *dwExStyles* parameter is assigned to the tree-view control.<br /><br /> Specify zero or a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/win32/Controls/tree-view-control-window-extended-styles).|
-|*dwExStyles*|[in] A bitmask that specifies which styles in the current tree-view control to set or clear.<br /><br /> To set a combination of styles, specify a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/win32/Controls/tree-view-control-window-extended-styles). To clear a set of styles, specify zero.|
+*dwExMask*\
+[in] A bitmask that specifies which styles in the current tree-view control are affected by this method. If this parameter is zero, it is ignored and the value of the *dwExStyles* parameter is assigned to the tree-view control. Specify zero or a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/win32/Controls/tree-view-control-window-extended-styles).
+
+*dwExStyles*\
+[in] A bitmask that specifies which styles in the current tree-view control to set or clear. To set a combination of styles, specify a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/win32/Controls/tree-view-control-window-extended-styles). To clear a set of styles, specify zero.
 
 ### Return Value
 
@@ -1828,10 +1828,11 @@ BOOL SetItemExpandedImageIndex(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*hItem*|[in] Handle to a tree-view control item.|
-|*iExpandedImage*|[in] The index of the image to display when the specified item is in the expanded state.|
+*hItem*\
+[in] Handle to a tree-view control item.
+
+*iExpandedImage*\
+[in] The index of the image to display when the specified item is in the expanded state.
 
 ### Return Value
 
@@ -1958,10 +1959,11 @@ BOOL SetItemStateEx(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*hItem*|[in] Handle to a tree-view control item.|
-|*uStateEx*|[in] The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.|
+*hItem*\
+[in] Handle to a tree-view control item.
+
+*uStateEx*\
+[in] The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.
 
 ### Return Value
 
@@ -2111,9 +2113,8 @@ void ShowInfoTip(HTREEITEM hItem);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*hItem*|[in] A handle to a tree-view item in the control. For more information, see the `hItem` member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.|
+*hItem*\
+[in] A handle to a tree-view item in the control. For more information, see the `hItem` member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.
 
 ### Remarks
 

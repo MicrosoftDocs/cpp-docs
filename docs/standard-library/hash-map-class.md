@@ -166,9 +166,8 @@ const Type& at(const Key& key) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*key*|The key value of the element that is to be found.|
+*key*\
+The key value of the element that is to be found.
 
 ### Return Value
 
@@ -799,9 +798,8 @@ emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
+*val*\
+The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).
 
 ### Return Value
 
@@ -858,10 +856,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
-|*_Where*|A hint regarding the place to start searching for the correct point of insertion.|
+*val*\
+The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).
+
+*_Where*\
+A hint regarding the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -1443,14 +1442,23 @@ hash_map(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The storage allocator class to be used for this hash_map object, which defaults to `Allocator`.|
-|*Comp*|The comparison function of type const `Traits` used to order the elements in the hash_map, which defaults to `hash_compare`.|
-|*Right*|The hash_map of which the constructed map is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
-|*IList*|The initializer_list|
+*Al*\
+The storage allocator class to be used for this hash_map object, which defaults to `Allocator`.
+
+*Comp*\
+The comparison function of type const `Traits` used to order the elements in the hash_map, which defaults to `hash_compare`.
+
+*Right*\
+The hash_map of which the constructed map is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
+
+*IList*\
+The initializer_list
 
 ### Remarks
 
@@ -1501,12 +1509,17 @@ iterator insert(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).|
-|*_Where*|A hint regarding the place to start searching for the correct point of insertion.|
-|*first*|The position of the first element to be copied from a hash_map.|
-|*last*|The position just beyond the last element to be copied from a hash_map.|
+*val*\
+The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).
+
+*_Where*\
+A hint regarding the place to start searching for the correct point of insertion.
+
+*first*\
+The position of the first element to be copied from a hash_map.
+
+*last*\
+The position just beyond the last element to be copied from a hash_map.
 
 ### Return Value
 
@@ -1929,9 +1942,8 @@ Type& operator[](Key&& key);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*key*|The key value of the element that is to be inserted.|
+*key*\
+The key value of the element that is to be inserted.
 
 ### Return Value
 
@@ -2026,9 +2038,8 @@ hash_map& operator=(hash_map&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.|
+*right*\
+The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.
 
 ### Remarks
 

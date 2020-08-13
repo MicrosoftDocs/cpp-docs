@@ -77,11 +77,11 @@ void AddCustomCategory(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*lpszName*|[in] Specifies the custom category name.|
-|*lstIDS*|[in] Contains ribbon command IDs to be shown in the custom category.|
+*lpszName*\
+[in] Specifies the custom category name.
+
+*lstIDS*\
+[in] Contains ribbon command IDs to be shown in the custom category.
 
 ### Remarks
 

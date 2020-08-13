@@ -47,9 +47,8 @@ void allocated(std::size_t _Nx = 1);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Nx*|The increment value.|
+*_Nx*\
+The increment value.
 
 ### Remarks
 
@@ -65,9 +64,8 @@ void deallocated(std::size_t _Nx = 1);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Nx*|The increment value.|
+*_Nx*\
+The increment value.
 
 ### Remarks
 
