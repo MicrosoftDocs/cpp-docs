@@ -22,17 +22,23 @@ class SafeInt;
 
 ### Parameters
 
-| Template  |  Description |
-|--------|------------|
-| T         |  The type of integer or Boolean parameter that `SafeInt` replaces. |
-| E         |  An enumerated data type that defines the error handling policy. |
-| U         |  The type of integer or Boolean parameter for the secondary operand. |
+*`T`*\
+The type of integer or Boolean parameter that `SafeInt` replaces.
 
-| Parameter  |  Description |
-|---------|-----------------|
-| *rhs*      |  [in] An input parameter that represents the value on the right side of the operator in several stand-alone functions. |
-| *i*        |  [in] An input parameter that represents the value on the right side of the operator in several stand-alone functions. |
-| *bits*     |  [in] An input parameter that represents the value on the right side of the operator in several stand-alone functions. |
+*`E`*\
+An enumerated data type that defines the error handling policy.
+
+*`U`*\
+The type of integer or Boolean parameter for the secondary operand.
+
+*rhs*\
+[in] An input parameter that represents the value on the right side of the operator in several stand-alone functions.
+
+*i*\
+[in] An input parameter that represents the value on the right side of the operator in several stand-alone functions.
+
+*bits*\
+[in] An input parameter that represents the value on the right side of the operator in several stand-alone functions.
 
 ## Members
 

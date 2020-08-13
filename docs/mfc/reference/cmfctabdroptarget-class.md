@@ -75,13 +75,17 @@ virtual DROPEFFECT OnDragEnter(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] Unused.|
-|*pDataObject*|[in] A pointer to the object that the user drags.|
-|*dwKeyState*|[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|
-|*point*|[in] The location of the cursor in client coordinates.|
+*pWnd*\
+[in] Unused.
+
+*pDataObject*\
+[in] A pointer to the object that the user drags.
+
+*dwKeyState*\
+[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.
+
+*point*\
+[in] The location of the cursor in client coordinates.
 
 ### Return Value
 
@@ -113,10 +117,8 @@ virtual void OnDragLeave(CWnd* pWnd);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] Unused.|
+*pWnd*\
+[in] Unused.
 
 ### Remarks
 
@@ -136,13 +138,17 @@ virtual DROPEFFECT OnDragOver(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] Unused.|
-|*pDataObject*|[in] A pointer to the object that the user drags.|
-|*dwKeyState*|[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|
-|*point*|[in] The location of the mouse pointer in client coordinates.|
+*pWnd*\
+[in] Unused.
+
+*pDataObject*\
+[in] A pointer to the object that the user drags.
+
+*dwKeyState*\
+[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.
+
+*point*\
+[in] The location of the mouse pointer in client coordinates.
 
 ### Return Value
 
@@ -179,14 +185,20 @@ virtual DROPEFFECT OnDropEx(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] Unused.|
-|*pDataObject*|[in] A pointer to the object that the user drags.|
-|*dropEffect*|[in] The default drop operation.|
-|*dropList*|[in] Unused.|
-|*point*|[in] The location of the mouse pointer in client coordinates.|
+*pWnd*\
+[in] Unused.
+
+*pDataObject*\
+[in] A pointer to the object that the user drags.
+
+*dropEffect*\
+[in] The default drop operation.
+
+*dropList*\
+[in] Unused.
+
+*point*\
+[in] The location of the mouse pointer in client coordinates.
 
 ### Return Value
 
@@ -218,10 +230,8 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pOwner*|[in] The tab control to register as a drop target.|
+*pOwner*\
+[in] The tab control to register as a drop target.
 
 ### Return Value
 

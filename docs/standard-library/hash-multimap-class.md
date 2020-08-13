@@ -759,9 +759,8 @@ iterator emplace(ValTy&& val);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md).|
+*val*\
+The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md).
 
 ### Return Value
 
@@ -816,10 +815,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md) unless the `hash_multimap` already contains that element (or, more generally, an element whose key is equivalently ordered).|
-|*_Where*|A hint regarding the place to start searching for the correct point of insertion.|
+*val*\
+The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md) unless the `hash_multimap` already contains that element (or, more generally, an element whose key is equivalently ordered).
+
+*_Where*\
+A hint regarding the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -1425,14 +1425,23 @@ hash_multimap(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The storage allocator class to be used for this hash_multimap object, which defaults to `Allocator`.|
-|*Comp*|The comparison function of type `const Traits` used to order the elements in the map, which defaults to `Traits`.|
-|*Right*|The map of which the constructed set is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
-|*IList*|The initializer_list to copy from.|
+*Al*\
+The storage allocator class to be used for this hash_multimap object, which defaults to `Allocator`.
+
+*Comp*\
+The comparison function of type `const Traits` used to order the elements in the map, which defaults to `Traits`.
+
+*Right*\
+The map of which the constructed set is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
+
+*IList*\
+The initializer_list to copy from.
 
 ### Remarks
 
@@ -1485,12 +1494,17 @@ iterator insert(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the hash_multimap unless it already contains that element, or more generally, unless it already contains an element whose key is equivalently ordered.|
-|*Where*|A hint about where to start searching for the correct point of insertion.|
-|*First*|The position of the first element to be copied from a map.|
-|*Last*|The position just beyond the last element to be copied from a map.|
+*Val*\
+The value of an element to be inserted into the hash_multimap unless it already contains that element, or more generally, unless it already contains an element whose key is equivalently ordered.
+
+*Where*\
+A hint about where to start searching for the correct point of insertion.
+
+*First*\
+The position of the first element to be copied from a map.
+
+*Last*\
+The position just beyond the last element to be copied from a map.
 
 ### Return Value
 
@@ -1816,9 +1830,8 @@ hash_multimap& operator=(hash_multimap&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [hash_multimap](../standard-library/hash-multimap-class.md) being copied into the `hash_multimap`.|
+*right*\
+The [hash_multimap](../standard-library/hash-multimap-class.md) being copied into the `hash_multimap`.
 
 ### Remarks
 

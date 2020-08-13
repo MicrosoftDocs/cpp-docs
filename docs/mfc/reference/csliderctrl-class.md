@@ -627,9 +627,8 @@ void SetThumbLength(int nLength);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*nLength*|[in] Length of the slider, in pixels.|
+*nLength*\
+[in] Length of the slider, in pixels.
 
 ### Remarks
 

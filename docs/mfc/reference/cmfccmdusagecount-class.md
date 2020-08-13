@@ -74,10 +74,8 @@ void AddCmd(UINT uiCmd);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*uiCmd*|[in] Specifies the command counter to increment.|
+*uiCmd*\
+[in] Specifies the command counter to increment.
 
 ### Remarks
 
@@ -101,10 +99,8 @@ UINT GetCount(UINT uiCmd) const;
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*uiCmd*|[in] The ID of the command counter to retrieve.|
+*uiCmd*\
+[in] The ID of the command counter to retrieve.
 
 ### Return Value
 
@@ -138,10 +134,8 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*uiCmd*|[in] Specifies the command to check.|
+*uiCmd*\
+[in] Specifies the command to check.
 
 ### Return Value
 
@@ -175,10 +169,8 @@ virtual void Serialize(CArchive& ar);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*ar*|[in] A `CArchive` object to serialize from or to.|
+*ar*\
+[in] A `CArchive` object to serialize from or to.
 
 ### Remarks
 
@@ -198,11 +190,11 @@ static BOOL __stdcall SetOptions(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*nStartCount*|[in] The new initial count of all tracked commands.|
-|*nMinUsagePercentage*|[in] The new minimum usage percentage.|
+*nStartCount*\
+[in] The new initial count of all tracked commands.
+
+*nMinUsagePercentage*\
+[in] The new minimum usage percentage.
 
 ### Return Value
 

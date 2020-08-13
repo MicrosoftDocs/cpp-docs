@@ -39,7 +39,7 @@ Controls the error output sink by setting the value of **__error_mode**. For exa
 
 The *mode_val* parameter can be set to one of the following values.
 
-|Parameter|Description|
+|Value|Description|
 |---------------|-----------------|
 |**_OUT_TO_DEFAULT**|Error sink is determined by **__app_type**.|
 |**_OUT_TO_STDERR**|Error sink is a standard error.|

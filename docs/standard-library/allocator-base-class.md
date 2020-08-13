@@ -18,10 +18,11 @@ class allocator_base
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Type*|The type of elements allocated by the allocator.|
-|*Sync*|The synchronization policy for the allocator, which is [sync_none Class](sync-none-class.md), [sync_per_container Class](sync-per-container-class.md), [sync_per_thread Class](sync-per-thread-class.md), or [sync_shared Class](sync-shared-class.md).|
+*Type*\
+The type of elements allocated by the allocator.
+
+*Sync*\
+The synchronization policy for the allocator, which is [sync_none Class](sync-none-class.md), [sync_per_container Class](sync-per-container-class.md), [sync_per_thread Class](sync-per-thread-class.md), or [sync_shared Class](sync-shared-class.md).
 
 ### Constructors
 
@@ -70,9 +71,8 @@ char *_Charalloc(size_type count);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*count*|The number of elements in the array to be allocated.|
+*count*\
+The number of elements in the array to be allocated.
 
 ### Return Value
 
@@ -92,10 +92,11 @@ void _Chardealloc(void* ptr, size_type count);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the first object to be deallocated from storage.|
-|*count*|The number of objects to be deallocated from storage.|
+*ptr*\
+A pointer to the first object to be deallocated from storage.
+
+*count*\
+The number of objects to be deallocated from storage.
 
 ### Remarks
 
@@ -137,10 +138,11 @@ pointer allocate(size_type _Nx);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Nx*|The number of elements in the array to be allocated.|
-|*_Hint*|This parameter is ignored.|
+*_Nx*\
+The number of elements in the array to be allocated.
+
+*_Hint*\
+This parameter is ignored.
 
 ### Return Value
 
@@ -163,9 +165,8 @@ allocator_base(const allocator_base<Other, Sync>& right);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*right*|The allocator object to be copied.|
+*right*\
+The allocator object to be copied.
 
 ### Remarks
 
@@ -197,10 +198,11 @@ void construct(pointer ptr, const Type& val);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the location where the object is to be constructed.|
-|*val*|The value with which the object being constructed is to be initialized.|
+*ptr*\
+A pointer to the location where the object is to be constructed.
+
+*val*\
+The value with which the object being constructed is to be initialized.
 
 ### Remarks
 
@@ -216,10 +218,11 @@ void deallocate(pointer ptr, size_type _Nx);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the first object to be deallocated from storage.|
-|*_Nx*|The number of objects to be deallocated from storage.|
+*ptr*\
+A pointer to the first object to be deallocated from storage.
+
+*_Nx*\
+The number of objects to be deallocated from storage.
 
 ### Remarks
 
@@ -235,9 +238,8 @@ void destroy(pointer ptr);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer designating the address of the object to be destroyed.|
+*ptr*\
+A pointer designating the address of the object to be destroyed.
 
 ### Remarks
 
