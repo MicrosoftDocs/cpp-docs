@@ -22,13 +22,20 @@ class unordered_multimap;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Key*|The key type.|
-|*Ty*|The mapped type.|
-|*Hash*|The hash function object type.|
-|*Pred*|The equality comparison function object type.|
-|*Alloc*|The allocator class.|
+*Key*\
+The key type.
+
+*Ty*\
+The mapped type.
+
+*Hash*\
+The hash function object type.
+
+*Pred*\
+The equality comparison function object type.
+
+*Alloc*\
+The allocator class.
 
 ## Members
 
@@ -155,9 +162,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -834,9 +840,8 @@ iterator emplace(Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_multimap.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the `unordered_multimap`.
 
 ### Return Value
 
@@ -865,10 +870,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered.|
-|*where*|A hint regarding the place to start searching for the correct point of insertion.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the unordered.
+
+*where*\
+A hint regarding the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -967,9 +973,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -1346,15 +1351,26 @@ IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the unordered_multimap.|
-|*Where*|The place to start searching for the correct point of insertion.|
-|*ValTy*|Template parameter that specifies the argument type that the unordered_multimap can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the unordered_multimap.
+
+*Where*\
+The place to start searching for the correct point of insertion.
+
+*ValTy*\
+Template parameter that specifies the argument type that the unordered_multimap can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.
+
+*IList*\
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1953,9 +1969,8 @@ unordered_multimap& operator=(unordered_multimap&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The unordered_multimap being copied into the unordered_multimap.|
+*right*\
+The `unordered_multimap` being copied into the `unordered_multimap`.
 
 ### Remarks
 
@@ -2397,15 +2412,26 @@ unordered_multimap(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*InputIterator*|The iterator type.|
-|*Al*|The allocator object to store.|
-|*Comp*|The comparison function object to store.|
-|*Hash*|The hash function object to store.|
-|*Bucket_count*|The minimum number of buckets.|
-|*Right*|The container to copy.|
-|*IList*|The initializer_list from which to copy the elements.|
+*InputIterator*\
+The iterator type.
+
+*Al*\
+The allocator object to store.
+
+*Comp*\
+The comparison function object to store.
+
+*Hash*\
+The hash function object to store.
+
+*Bucket_count*\
+The minimum number of buckets.
+
+*Right*\
+The container to copy.
+
+*IList*\
+The initializer_list from which to copy the elements.
 
 ### Remarks
 

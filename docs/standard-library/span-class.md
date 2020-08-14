@@ -22,10 +22,11 @@ class span;
 
 ### Template parameters
 
-|Parameter|Description|
-|-|-|
-|`T`| The type of the elements in the span. |
-|`Extent`| The number of elements in the span if specified at compile time. Otherwise  `std::dynamic_extent` if the number of elements will be specified at run-time. |
+`T`\
+ The type of the elements in the span.
+
+`Extent`\
+ The number of elements in the span if specified at compile time. Otherwise  `std::dynamic_extent` if the number of elements will be specified at run-time.
 
 [Deduction guide](#deduction_guides)
 

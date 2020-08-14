@@ -188,13 +188,20 @@ virtual BOOL DrawComboDropButton(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pDC*|[in] A pointer to a device context.|
-|*rect*|[in] The bounding rectangle of the combo box drop-down button.|
-|*bDisabled*|[in] Specifies whether the combo box drop-down button is disabled.|
-|*bIsDropped*|[in] Specifies whether the combo box drop-down button is dropped down.|
-|*bIsHighlighted*|[in] Specifies whether the combo box drop-down button is highlighted.|
+*pDC*\
+[in] A pointer to a device context.
+
+*rect*\
+[in] The bounding rectangle of the combo box drop-down button.
+
+*bDisabled*\
+[in] Specifies whether the combo box drop-down button is disabled.
+
+*bIsDropped*\
+[in] Specifies whether the combo box drop-down button is dropped down.
+
+*bIsHighlighted*\
+[in] Specifies whether the combo box drop-down button is highlighted.
 
 ### Return Value
 

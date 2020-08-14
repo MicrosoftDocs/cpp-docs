@@ -210,9 +210,8 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pmcGridInfo*|[out] Pointer to a [MCGRIDINFO](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) structure that receives information about the current month calendar control. The caller is responsible for allocating and initializing this structure.|
+*pmcGridInfo*\
+[out] Pointer to a [MCGRIDINFO](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) structure that receives information about the current month calendar control. The caller is responsible for allocating and initializing this structure.
 
 ### Return Value
 
@@ -722,9 +721,8 @@ void SetCalendarBorder(int cxyBorder);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*cxyBorder*|[in] The width of the border, in pixels.|
+*cxyBorder*\
+[in] The width of the border, in pixels.
 
 ### Remarks
 
@@ -768,9 +766,8 @@ BOOL SetCalID(CALID calid);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*calid*|[in] One of the [calendar identifier](/windows/win32/Intl/calendar-identifiers) constants.|
+*calid*\
+[in] One of the [calendar identifier](/windows/win32/Intl/calendar-identifiers) constants.
 
 ### Return Value
 
@@ -859,9 +856,13 @@ BOOL SetCurrentView(DWORD dwNewView);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwNewView*|[in] One of the following values that specifies a monthly, annual, decade, or century view.<br /><br /> MCMV_MONTH: Monthly view<br /><br /> MCMV_YEAR: Annual view<br /><br /> MCMV_DECADE: Decade view<br /><br /> MCMV_CENTURY: Century view|
+*dwNewView*\
+[in] One of the following values that specifies a monthly, annual, decade, or century view.
+
+- `MCMV_MONTH`: Monthly view
+- `MCMV_YEAR`: Annual view
+- `MCMV_DECADE`: Decade view
+- `MCMV_CENTURY`: Century view
 
 ### Return Value
 
@@ -1196,9 +1197,8 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpRect*|[in] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that defines a rectangle that contains the desired number of calendars.|
+*lpRect*\
+[in] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that defines a rectangle that contains the desired number of calendars.
 
 ### Return Value
 

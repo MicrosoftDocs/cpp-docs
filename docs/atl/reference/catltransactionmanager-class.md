@@ -407,10 +407,11 @@ inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*hKey*|A handle to an open registry key.|
-|*lpSubKey*|The name of the key to be deleted.|
+*hKey*\
+A handle to an open registry key.
+
+*lpSubKey*\
+The name of the key to be deleted.
 
 ### Return Value
 

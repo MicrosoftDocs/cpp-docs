@@ -180,12 +180,14 @@ virtual CPane* CreateTearOffBar(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWndMain*|[in] Pointer to the parent window of the tear-off bar.|
-|*uiID*|[in] The command ID of the tear-off bar.|
-|*lpszName*|[in] The window text of the tear-off bar.|
+*pWndMain*\
+[in] Pointer to the parent window of the tear-off bar.
+
+*uiID*\
+[in] The command ID of the tear-off bar.
+
+*lpszName*\
+[in] The window text of the tear-off bar.
 
 ### Return Value
 

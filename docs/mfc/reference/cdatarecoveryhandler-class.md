@@ -118,11 +118,11 @@ virtual BOOL AutosaveDocumentInfo(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to the `CDocument` to save.|
-|*bResetModifiedFlag*|[in] TRUE indicates that the `CDataRecoveryHandler` considers *pDocument* to be modified; FALSE indicates that the framework considers *pDocument* to be unmodified. See the Remarks section for more information about the effect of this flag.|
+*pDocument*\
+[in] A pointer to the `CDocument` to save.
+
+*bResetModifiedFlag*\
+[in] TRUE indicates that the `CDataRecoveryHandler` considers *pDocument* to be modified; FALSE indicates that the framework considers *pDocument* to be unmodified. See the Remarks section for more information about the effect of this flag.
 
 ### Return Value
 
@@ -151,11 +151,11 @@ CDataRecoveryHandler(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*dwRestartManagerSupportFlags*|[in] Indicates which options of the restart manager are supported.|
-|*nAutosaveInterval*|[in] The time between autosaves. This parameter is in milliseconds.|
+*dwRestartManagerSupportFlags*\
+[in] Indicates which options of the restart manager are supported.
+
+*nAutosaveInterval*\
+[in] The time between autosaves. This parameter is in milliseconds.
 
 ### Remarks
 
@@ -171,10 +171,8 @@ virtual BOOL CreateDocumentInfo(CDocument* pDocument);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to a `CDocument`. This method creates the document information for this `CDocument`.|
+*pDocument*\
+[in] A pointer to a `CDocument`. This method creates the document information for this `CDocument`.
 
 ### Return Value
 
@@ -208,10 +206,8 @@ virtual BOOL DeleteAutosavedFile(const CString& strAutosavedFile);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*strAutosavedFile*|[in] A string that contains the autosaved file name.|
+*strAutosavedFile*\
+[in] A string that contains the autosaved file name.
 
 ### Return Value
 
@@ -276,10 +272,8 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to a `CDocument`. `GetDocumentListName` retrieves the document name from this `CDocument`.|
+*pDocument*\
+[in] A pointer to a `CDocument`. `GetDocumentListName` retrieves the document name from this `CDocument`.
 
 ### Return Value
 
@@ -299,10 +293,8 @@ virtual CString GetNormalDocumentTitle(CDocument* pDocument);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to a `CDocument`.|
+*pDocument*\
+[in] A pointer to a `CDocument`.
 
 ### Return Value
 
@@ -437,10 +429,8 @@ virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to the document to remove.|
+*pDocument*\
+[in] A pointer to the document to remove.
 
 ### Return Value
 
@@ -533,10 +523,8 @@ virtual void SetAutosavePath(const CString& strAutosavePath);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*strAutosavePath*|[in] The path where autosave files are stored.|
+*strAutosavePath*\
+[in] The path where autosave files are stored.
 
 ### Remarks
 
@@ -552,10 +540,8 @@ virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*strRestartIdentifier*|[in] The unique identifier for the restart manager.|
+*strRestartIdentifier*\
+[in] The unique identifier for the restart manager.
 
 ### Remarks
 
@@ -571,10 +557,8 @@ virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*bSaveOnIdle*|[in] TRUE to save document information during the current idle cycle; FALSE to not perform a save.|
+*bSaveOnIdle*\
+[in] TRUE to save document information during the current idle cycle; FALSE to not perform a save.
 
 ## <a name="setshutdownbyrestartmanager"></a> CDataRecoveryHandler::SetShutdownByRestartManager
 
@@ -586,10 +570,8 @@ virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*bShutdownByRestartManager*|[in] TRUE to indicate that the restart manager caused the application to exit; FALSE to indicate that the application exited for another reason.|
+*bShutdownByRestartManager*\
+[in] TRUE to indicate that the restart manager caused the application to exit; FALSE to indicate that the application exited for another reason.
 
 ### Remarks
 
@@ -605,10 +587,8 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to the saved document.|
+*pDocument*\
+[in] A pointer to the saved document.
 
 ### Return Value
 

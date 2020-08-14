@@ -345,10 +345,11 @@ BOOL GetNote(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpszNote*|[out] Pointer to a buffer, which the caller is responsible for allocating and deallocating. If the return value is TRUE, the buffer contains the note text that is associated with the current command link control; otherwise, the buffer is unchanged.|
-|*cchNote*|[in, out] A pointer to an unsigned integer variable.<br /><br /> When this method is called, the variable contains the size of the buffer specified by the *lpszNote* parameter.<br /><br /> When this method returns, if the return value is TRUE the variable contains the size of the note associated with the current command link control. If the return value is FALSE, the variable contains the buffer size required to contain the note.|
+*lpszNote*\
+[out] Pointer to a buffer, which the caller is responsible for allocating and deallocating. If the return value is TRUE, the buffer contains the note text that is associated with the current command link control; otherwise, the buffer is unchanged.
+
+*cchNote*\
+[in, out] A pointer to an unsigned integer variable. When this method is called, the variable contains the size of the buffer specified by the *lpszNote* parameter. When this method returns, if the return value is TRUE the variable contains the size of the note associated with the current command link control. If the return value is FALSE, the variable contains the buffer size required to contain the note.
 
 ### Return Value
 
@@ -430,9 +431,8 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pInfo*|[out] Pointer to a [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure that receives information about the current split button control. The caller is responsible for allocating the structure.|
+*pInfo*\
+[out] Pointer to a [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure that receives information about the current split button control. The caller is responsible for allocating the structure.
 
 ### Return Value
 
@@ -454,9 +454,8 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pSize*|[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that receives the description of a rectangle.|
+*pSize*\
+[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that receives the description of a rectangle.
 
 ### Return Value
 
@@ -686,9 +685,8 @@ BOOL SetDropDownState(BOOL fDropDown);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*fDropDown*|[in] TRUE to set BST_DROPDOWNPUSHED state; otherwise, FALSE.|
+*fDropDown*\
+[in] TRUE to set BST_DROPDOWNPUSHED state; otherwise, FALSE.
 
 ### Return Value
 
@@ -722,9 +720,8 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*fElevationRequired*|[in] TRUE to set `elevation required` state; otherwise, FALSE.|
+*fElevationRequired*\
+[in] TRUE to set `elevation required` state; otherwise, FALSE.
 
 ### Return Value
 
@@ -806,9 +803,8 @@ BOOL SetNote(LPCTSTR lpszNote);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpszNote*|[in] Pointer to a Unicode string that is set as the note text for the command link control.|
+*lpszNote*\
+[in] Pointer to a Unicode string that is set as the note text for the command link control.
 
 ### Return Value
 
@@ -842,9 +838,8 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*chGlyph*|[in] A character that specifies the glyph to use as the split button drop-down arrow.|
+*chGlyph*\
+[in] A character that specifies the glyph to use as the split button drop-down arrow.
 
 ### Return Value
 
@@ -868,9 +863,8 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pSplitImageList*|[in] Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object to assign to the current split button control.|
+*pSplitImageList*\
+[in] Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object to assign to the current split button control.
 
 ### Return Value
 
@@ -892,9 +886,8 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pInfo*|[in] Pointer to a [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure that defines the current split button control.|
+*pInfo*\
+[in] Pointer to a [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure that defines the current split button control.
 
 ### Return Value
 
@@ -928,9 +921,8 @@ BOOL SetSplitSize(LPSIZE pSize);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pSize*|[in] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that describes a bounding rectangle.|
+*pSize*\
+[in] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that describes a bounding rectangle.
 
 ### Return Value
 
@@ -966,9 +958,8 @@ BOOL SetSplitStyle(UINT uSplitStyle);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*uSplitStyle*|[in] A bitwise combination of split button styles. For more information, see the `uSplitStyle` member of the [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure.|
+*uSplitStyle*\
+[in] A bitwise combination of split button styles. For more information, see the `uSplitStyle` member of the [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure.
 
 ### Return Value
 

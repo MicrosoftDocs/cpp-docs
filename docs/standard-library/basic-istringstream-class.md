@@ -177,9 +177,8 @@ void swap(basic_istringstream& right);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*right*|An `lvalue` reference to a `basic_istringstream` object.|
+*right*\
+An lvalue reference to a `basic_istringstream` object.
 
 ### Remarks
 

@@ -111,13 +111,20 @@ wide_string from_bytes(const char* first, const char* last);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Byte*|The single-element byte sequence to be converted.|
-|*ptr*|The C-style, null-terminated sequence of characters to be converted.|
-|*Bstr*|The [byte_string](#byte_string) to be converted.|
-|*first*|The first character in a range of characters to be converted.|
-|*last*|The last character in a range of characters to be converted.|
+*Byte*\
+The single-element byte sequence to be converted.
+
+*ptr*\
+The C-style, null-terminated sequence of characters to be converted.
+
+*Bstr*\
+The [byte_string](#byte_string) to be converted.
+
+*first*\
+The first character in a range of characters to be converted.
+
+*last*\
+The last character in a range of characters to be converted.
 
 ### Return Value
 
@@ -180,13 +187,20 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Char*|The wide character to be converted.|
-|*Wptr*|The C-style, null-terminated sequence, beginning at `wptr`, to be converted.|
-|*Wstr*|The [wide_string](#wide_string) to be converted.|
-|*first*|The first element in a range of elements to be converted.|
-|*last*|The last element in a range of elements to be converted.|
+*Char*\
+The wide character to be converted.
+
+*Wptr*\
+The C-style, null-terminated sequence, beginning at `wptr`, to be converted.
+
+*Wstr*\
+The [wide_string](#wide_string) to be converted.
+
+*first*\
+The first element in a range of elements to be converted.
+
+*last*\
+The last element in a range of elements to be converted.
 
 ### Remarks
 
@@ -218,12 +232,17 @@ wstring_convert(const byte_string& _Berr, const wide_string& Werr = wide_string(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*\*Pcvt*|The object of type `Codecvt` to perform the conversion.|
-|*_State*|The object of type [state_type](#state_type) representing the conversion state.|
-|*_Berr*|The [byte_string](#byte_string) to display on errors.|
-|*Werr*|The [wide_string](#wide_string) to display on errors.|
+*\*Pcvt*\
+The object of type `Codecvt` to perform the conversion.
+
+*_State*\
+The object of type [state_type](#state_type) representing the conversion state.
+
+*_Berr*\
+The [byte_string](#byte_string) to display on errors.
+
+*Werr*\
+The [wide_string](#wide_string) to display on errors.
 
 ### Remarks
 

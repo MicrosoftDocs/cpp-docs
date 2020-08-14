@@ -22,13 +22,20 @@ class unordered_map;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Key*|The key type.|
-|*Ty*|The mapped type.|
-|*Hash*|The hash function object type.|
-|*Pred*|The equality comparison function object type.|
-|*Alloc*|The allocator class.|
+*Key*\
+The key type.
+
+*Ty*\
+The mapped type.
+
+*Hash*\
+The hash function object type.
+
+*Pred*\
+The equality comparison function object type.
+
+*Alloc*\
+The allocator class.
 
 ## Members
 
@@ -152,9 +159,8 @@ const Ty& at(const Key& key) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*key*|The key value to find.|
+*key*\
+The key value to find.
 
 ### Return Value
 
@@ -204,9 +210,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -882,9 +887,8 @@ pair<iterator, bool>  emplace( Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_map unless it already contains an element whose value is equivalently ordered.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the `unordered_map` unless it already contains an element whose value is equivalently ordered.
 
 ### Return Value
 
@@ -911,10 +915,11 @@ iterator emplace_hint(const_iterator where, Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_map unless the unordered_map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.|
-|*where*|A hint regarding the place to start searching for the correct point of insertion.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the unordered_map unless the unordered_map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.
+
+*where*\
+A hint regarding the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -1012,9 +1017,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -1330,15 +1334,26 @@ IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the unordered_map unless it already contains an element whose key is equivalently ordered.|
-|*Where*|The place to start searching for the correct point of insertion.|
-|*ValTy*|Template parameter that specifies the argument type that the unordered_map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the unordered_map unless it already contains an element whose key is equivalently ordered.
+
+*Where*\
+The place to start searching for the correct point of insertion.
+
+*ValTy*\
+Template parameter that specifies the argument type that the unordered_map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.
+
+*IList*\
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1957,9 +1972,8 @@ Ty& operator[](Key&& keyval);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Keyval*|The key value to find or insert.|
+*Keyval*\
+The key value to find or insert.
 
 ### Return Value
 
@@ -2484,16 +2498,29 @@ unordered_map(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The allocator object to store.|
-|*Comp*|The comparison function object to store.|
-|*Hash*|The hash function object to store.|
-|*Bucket_count*|The minimum number of buckets.|
-|*Right*|The container to copy.|
-|*First*||
-|*Last*||
-|*IList*|The initializer_list that contains the elements to be copied.|
+*Al*\
+The allocator object to store.
+
+*Comp*\
+The comparison function object to store.
+
+*Hash*\
+The hash function object to store.
+
+*Bucket_count*\
+The minimum number of buckets.
+
+*Right*\
+The container to copy.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*IList*\
+The initializer_list that contains the elements to be copied.
 
 ### Remarks
 

@@ -123,9 +123,8 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Pos*|The position of the `vector<bool>` element.|
+*Pos*\
+The position of the `vector<bool>` element.
 
 ### Return Value
 
