@@ -9,6 +9,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## Classes
 
+| &nbsp; | &nbsp; |
 |--|--|
 | [CPathT class](../atl/reference/cpatht-class.md) | This class represents a path. |
 | [CDebugReportHook class](../atl/reference/cdebugreporthook-class.md) | Use this class to send debug reports to a named pipe. |
