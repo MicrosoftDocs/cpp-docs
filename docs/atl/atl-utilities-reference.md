@@ -1,15 +1,14 @@
 ---
-title: "ATL Utilities Reference"
+title: "ATL utilities reference"
 ms.date: "11/04/2016"
 ms.assetid: dd8a2888-34f4-461e-9bf4-834218f9b95b
 ---
-# ATL Utilities Reference
+# ATL utilities reference
 
 ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl/reference/cpatht-class.md) and [CUrl](../atl/reference/curl-class.md). A thread pool, [CThreadPool](../atl/reference/cthreadpool-class.md), can be used in your applications. This code can be found in atlpath.h and atlutil.h.
 
-### Classes
+## Classes
 
-| &emsp; | &emsp; |
 |--|--|
 | [CPathT class](../atl/reference/cpatht-class.md) | This class represents a path. |
 | [CDebugReportHook class](../atl/reference/cdebugreporthook-class.md) | Use this class to send debug reports to a named pipe. |
@@ -19,7 +18,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 | [CUrl class](../atl/reference/curl-class.md) | This class represents a URL. It allows you to manipulate each element of the URL independently of the others whether parsing an existing URL string or building a string from scratch. |
 | [CWorkerThread class](../atl/reference/cworkerthread-class.md) | This class creates a worker thread or uses an existing one, waits on one or more kernel object handles, and executes a specified client function when one of the handles is signaled. |
 
-### Typedefs
+## Typedefs
 
 | &emsp; | &emsp; |
 |--|--|
@@ -28,13 +27,13 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 | [CPathW](../atl/reference/atl-typedefs.md#cpathw) | A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CStringW`. |
 | [ATL_URL_PORT](../atl/reference/atl-typedefs.md#atl_url_port) | The type used by [CUrl](../atl/reference/curl-class.md) for specifying a port number. |
 
-### Enums
+## Enums
 
 | &emsp; | &emsp; |
 |--|--|
 | [ATL_URL_SCHEME](../atl/reference/atl-url-scheme-enum.md) | The members of this enumeration provide constants for the schemes understood by [CUrl](../atl/reference/curl-class.md). |
 
-### Functions
+## Functions
 
 | &emsp; | &emsp; |
 |--|--|
