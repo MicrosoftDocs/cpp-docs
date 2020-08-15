@@ -13,9 +13,8 @@ These messages are used in MFC.
 
 The following table lists messages that are used in the MFC library:
 
-||||||
-|-|-|-|-|-|
 |Message|Description|[in] *wParam*|*lParam* (All parameters are [in] unless otherwise stated.)|Return Value|
+|-|-|-|-|-|
 |AFX_WM_ACCGETOBJECT|Not used.|Not used.|Not applicable.|Not applicable.|
 |AFX_WM_ACCGETSTATE|Used for accessibility support. Send this message to `CMFCPopupMenu` or `CMFCRibbonPanelMenu` to retrieve the state of the current element.|Index of element, which could be a menu button or separator.|Not used.|The element state. It is -1 if the index is invalid, 0 if the menu button has no special attributes. Otherwise it is a combination of the following flags:<br /><br /> TBBS_DISABLED — item is disabled<br /><br /> TBBS_CHECKED — item is checked<br /><br /> TBBS_BUTTON — the item is a standard pushbutton<br /><br /> TBBS_PRESSED — button is pressed<br /><br /> TBBS_INDETERMINATE — undefined state<br /><br /> TBBS_SEPARATOR - rather than a menu button, this element forms a separation between other menu items|
 |AFX_WM_CHANGE_ACTIVE_TAB|The framework sends this message to the resizable control bar control. Process this message to receive notifications from `CMFCTabCtrl` objects when a user changes an active tab.|The index of a tab.|Not used.|Nonzero.|

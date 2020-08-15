@@ -38,18 +38,20 @@ The **malloc** function allocates a memory block of at least *size* bytes. The b
 
 The startup code uses **malloc** to allocate storage for the **_environ**, *envp*, and *argv* variables. The following functions and their wide-character counterparts also call **malloc**.
 
-|||||
-|-|-|-|-|
-|[calloc](calloc.md)|[fscanf](fscanf-fscanf-l-fwscanf-fwscanf-l.md)|[_getw](getw.md)|[setvbuf](setvbuf.md)|
-|[_exec functions](../../c-runtime-library/exec-wexec-functions.md)|[fseek](fseek-fseeki64.md)|[_popen](popen-wpopen.md)|[_spawn functions](../../c-runtime-library/spawn-wspawn-functions.md)|
-|[fgetc](fgetc-fgetwc.md)|[fsetpos](fsetpos.md)|[printf](printf-printf-l-wprintf-wprintf-l.md)|[_strdup](strdup-wcsdup-mbsdup.md)|
-|[_fgetchar](fgetc-fgetwc.md)|[_fullpath](fullpath-wfullpath.md)|[putc](putc-putwc.md)|[system](system-wsystem.md)|
-|[fgets](fgets-fgetws.md)|[fwrite](fwrite.md)|[putchar](putc-putwc.md)|[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
-|[fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)|[getc](getc-getwc.md)|[_putenv](putenv-wputenv.md)|[ungetc](ungetc-ungetwc.md)|
-|[fputc](fputc-fputwc.md)|[getchar](getc-getwc.md)|[puts](puts-putws.md)|[vfprintf](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)|
-|[_fputchar](fputc-fputwc.md)|[_getcwd](getcwd-wgetcwd.md)|[_putw](putw.md)|[vprintf](vprintf-vprintf-l-vwprintf-vwprintf-l.md)|
-|[fputs](fputs-fputws.md)|[_getdcwd](getcwd-wgetcwd.md)|[scanf](scanf-scanf-l-wscanf-wscanf-l.md)||
-|[fread](fread.md)|[gets](../../c-runtime-library/gets-getws.md)|[_searchenv](searchenv-wsearchenv.md)||
+:::row:::
+   :::column span="":::
+      [calloc](calloc.md)<br/>[_exec functions](../../c-runtime-library/exec-wexec-functions.md)<br/>[fgetc](fgetc-fgetwc.md)<br/>[_fgetchar](fgetc-fgetwc.md)<br/>[fgets](fgets-fgetws.md)<br/>[fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>[fputc](fputc-fputwc.md)<br/>[_fputchar](fputc-fputwc.md)<br/>[fputs](fputs-fputws.md)<br/>[fread](fread.md)
+   :::column-end:::
+   :::column span="":::
+      [fscanf](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>[fseek](fseek-fseeki64.md)<br/>[fsetpos](fsetpos.md)<br/>[_fullpath](fullpath-wfullpath.md)<br/>[fwrite](fwrite.md)<br/>[getc](getc-getwc.md)<br/>[getchar](getc-getwc.md)<br/>[_getcwd](getcwd-wgetcwd.md)<br/>[_getdcwd](getcwd-wgetcwd.md)<br/>[gets](../../c-runtime-library/gets-getws.md)
+   :::column-end:::
+   :::column span="":::
+      [_getw](getw.md)<br/>[_popen](popen-wpopen.md)<br/>[printf](printf-printf-l-wprintf-wprintf-l.md)<br/>[putc](putc-putwc.md)<br/>[putchar](putc-putwc.md)<br/>[_putenv](putenv-wputenv.md)<br/>[puts](puts-putws.md)<br/>[_putw](putw.md)<br/>[scanf](scanf-scanf-l-wscanf-wscanf-l.md)
+   :::column-end:::
+   :::column span="":::
+      [_searchenv](searchenv-wsearchenv.md)<br/>[setvbuf](setvbuf.md)<br/>[_spawn functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>[_strdup](strdup-wcsdup-mbsdup.md)<br/>[system](system-wsystem.md)<br/>[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>[ungetc](ungetc-ungetwc.md)<br/>[vfprintf](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>[vprintf](vprintf-vprintf-l-vwprintf-vwprintf-l.md)
+   :::column-end:::
+:::row-end:::
 
 The C++ [_set_new_mode](set-new-mode.md) function sets the new handler mode for **malloc**. The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **malloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. To override the default, call `_set_new_mode(1)` early in your program, or link with NEWMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
 

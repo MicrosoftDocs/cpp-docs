@@ -48,9 +48,8 @@ Both of these functions return 0 if successful or an error number on failure.
 
 ### Error Conditions
 
-|||||
-|-|-|-|-|
 |*str*|*sizeInChars*|**Return Value**|**Contents of**  *str*|
+|-|-|-|-|
 |**NULL**|any|**EINVAL**|not modified|
 |not **NULL** (points to valid memory)|too short|**ERANGE**|not modified|
 
