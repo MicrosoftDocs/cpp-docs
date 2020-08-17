@@ -181,9 +181,8 @@ The x64 architecture provides for 16 general-purpose registers (hereafter referr
 
 The following table describes how each register is used across function calls:
 
-||||
-|-|-|-|
 |Register|Status|Use|
+|-|-|-|
 |RAX|Volatile|Return value register|
 |RCX|Volatile|First integer argument|
 |RDX|Volatile|Second integer argument|

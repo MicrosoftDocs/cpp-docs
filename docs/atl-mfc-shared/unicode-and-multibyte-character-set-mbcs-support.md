@@ -21,13 +21,30 @@ These library, debugger, and DLL files are used to support Unicode in MFC:
 
 :::row:::
    :::column span="":::
-      MFC*version*U.LIB<br/>MFC*version*UD.LIB<br/>MFCM*version*U.LIB<br/>MFCM*version*UD.LIB<br/>MFCS*version*U.LIB<br/>MFCS*version*UD.LIB<br/>UAFXCW.LIB<br/>UAFXCWD.LIB
+      MFC*version*U.LIB\
+      MFC*version*UD.LIB\
+      MFCM*version*U.LIB\
+      MFCM*version*UD.LIB\
+      MFCS*version*U.LIB\
+      MFCS*version*UD.LIB\
+      UAFXCW.LIB\
+      UAFXCWD.LIB
    :::column-end:::
    :::column span="":::
-      MFC*version*U.PDB<br/>MFC*version*UD.PDB<br/>MFCM*version*U.PDB<br/>MFCM*version*UD.PDB<br/>MFCS*version*U.PDB<br/>MFCS*version*UD.PDB<br/>UAFXCW.PDB<br/>UAFXCWD.PDB
+      MFC*version*U.PDB\
+      MFC*version*UD.PDB\
+      MFCM*version*U.PDB\
+      MFCM*version*UD.PDB\
+      MFCS*version*U.PDB\
+      MFCS*version*UD.PDB\
+      UAFXCW.PDB\
+      UAFXCWD.PDB
    :::column-end:::
    :::column span="":::
-      MFC*version*U.DLL<br/>MFC*version*UD.DLL<br/>MFCM*version*U.DLL<br/>MFCM*version*UD.DLL
+      MFC*version*U.DLL\
+      MFC*version*UD.DLL\
+      MFCM*version*U.DLL\
+      MFCM*version*UD.DLL
    :::column-end:::
 :::row-end:::
 

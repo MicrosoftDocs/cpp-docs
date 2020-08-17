@@ -14,9 +14,8 @@ A task has a `type` property which may have one of four values: `default`, `laun
 
 The default properties are available on all types of tasks:
 
-||||
+|Property|Type|Description|
 |-|-|-|
-|**Property**|**Type**|**Description**|
 |`taskLabel`|string| (Required.) Specifies the task label used in the user interface.|
 |`appliesTo`|string| (Required.) Specifies which files the command can be performed on. The use of wildcards is supported, for example: "*", "*.cpp", "/*.txt"|
 |`contextType`|string| Allowed values: "custom", "build", "clean", "rebuild". Determines where in the context menu the task will appear. Defaults to "custom".|
@@ -28,9 +27,8 @@ The default properties are available on all types of tasks:
 
 When the task type is `launch`, these properties are available:
 
-||||
+|Property|Type|Description|
 |-|-|-|
-|**Property**|**Type**|**Description**|
 |`command`|string| Specifies the full path of the process or script to launch.|
 |`args`|array| Specifies a comma-separated list of arguments passed to the command.|
 |`launchOption`|string| Allowed values: "None", "ContinueOnError","IgnoreError". Specifies how to proceed with the command when there are errors.|
@@ -81,9 +79,8 @@ Remote tasks are enabled when you install the Linux development with C++ workloa
 
 When the task type is `remote`, these properties are available:
 
-||||
+|Property|Type|Description|
 |-|-|-|
-|**Property**|**Type**|**Description**|
 |`remoteMachineName`|string|The name of the remote machine. Must match a machine name in **Connection Manager**.|
 |`command`|string|The command to send to the remote machine. By default commands are executed in the $HOME directory on the remote system.|
 |`remoteWorkingDirectory`|string|The current working directory on the remote machine.|
@@ -122,9 +119,8 @@ The following task will appear in the context menu when you right-click on *main
 
 When the task type is `msbuild`, these properties are available:
 
-||||
+|Property|Type|Description|
 |-|-|-|
-|**Property**|**Type**|**Description**|
 |`verbosity`|string| Specifies the MSBuild project build output verbosityAllowed values: "Quiet", "Minimal", "Normal", "Detailed", "Diagnostic".|
 |`toolsVersion`|string| Specifies the toolset version to build the project, for example "2.0", "3.5", "4.0", "Current". Defaults to "Current".|
 |`globalProperties`|object|Specifies a key-value list of the global properties to pass into the project, for example, "Configuration":"Release"|

@@ -40,16 +40,50 @@ The startup code uses **malloc** to allocate storage for the **_environ**, *envp
 
 :::row:::
    :::column span="":::
-      [calloc](calloc.md)<br/>[_exec functions](../../c-runtime-library/exec-wexec-functions.md)<br/>[fgetc](fgetc-fgetwc.md)<br/>[_fgetchar](fgetc-fgetwc.md)<br/>[fgets](fgets-fgetws.md)<br/>[fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>[fputc](fputc-fputwc.md)<br/>[_fputchar](fputc-fputwc.md)<br/>[fputs](fputs-fputws.md)<br/>[fread](fread.md)
+      [calloc](calloc.md)\
+      [_exec functions](../../c-runtime-library/exec-wexec-functions.md)\
+      [fgetc](fgetc-fgetwc.md)\
+      [_fgetchar](fgetc-fgetwc.md)\
+      [fgets](fgets-fgetws.md)\
+      [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
+      [fputc](fputc-fputwc.md)\
+      [_fputchar](fputc-fputwc.md)\
+      [fputs](fputs-fputws.md)\
+      [fread](fread.md)
    :::column-end:::
    :::column span="":::
-      [fscanf](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>[fseek](fseek-fseeki64.md)<br/>[fsetpos](fsetpos.md)<br/>[_fullpath](fullpath-wfullpath.md)<br/>[fwrite](fwrite.md)<br/>[getc](getc-getwc.md)<br/>[getchar](getc-getwc.md)<br/>[_getcwd](getcwd-wgetcwd.md)<br/>[_getdcwd](getcwd-wgetcwd.md)<br/>[gets](../../c-runtime-library/gets-getws.md)
+      [fscanf](fscanf-fscanf-l-fwscanf-fwscanf-l.md)\
+      [fseek](fseek-fseeki64.md)\
+      [fsetpos](fsetpos.md)\
+      [_fullpath](fullpath-wfullpath.md)\
+      [fwrite](fwrite.md)\
+      [getc](getc-getwc.md)\
+      [getchar](getc-getwc.md)\
+      [_getcwd](getcwd-wgetcwd.md)\
+      [_getdcwd](getcwd-wgetcwd.md)\
+      [gets](../../c-runtime-library/gets-getws.md)
    :::column-end:::
    :::column span="":::
-      [_getw](getw.md)<br/>[_popen](popen-wpopen.md)<br/>[printf](printf-printf-l-wprintf-wprintf-l.md)<br/>[putc](putc-putwc.md)<br/>[putchar](putc-putwc.md)<br/>[_putenv](putenv-wputenv.md)<br/>[puts](puts-putws.md)<br/>[_putw](putw.md)<br/>[scanf](scanf-scanf-l-wscanf-wscanf-l.md)
+      [_getw](getw.md)\
+      [_popen](popen-wpopen.md)\
+      [printf](printf-printf-l-wprintf-wprintf-l.md)\
+      [putc](putc-putwc.md)\
+      [putchar](putc-putwc.md)\
+      [_putenv](putenv-wputenv.md)\
+      [puts](puts-putws.md)\
+      [_putw](putw.md)\
+      [scanf](scanf-scanf-l-wscanf-wscanf-l.md)
    :::column-end:::
    :::column span="":::
-      [_searchenv](searchenv-wsearchenv.md)<br/>[setvbuf](setvbuf.md)<br/>[_spawn functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>[_strdup](strdup-wcsdup-mbsdup.md)<br/>[system](system-wsystem.md)<br/>[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>[ungetc](ungetc-ungetwc.md)<br/>[vfprintf](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>[vprintf](vprintf-vprintf-l-vwprintf-vwprintf-l.md)
+      [_searchenv](searchenv-wsearchenv.md)\
+      [setvbuf](setvbuf.md)\
+      [_spawn functions](../../c-runtime-library/spawn-wspawn-functions.md)\
+      [_strdup](strdup-wcsdup-mbsdup.md)\
+      [system](system-wsystem.md)\
+      [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)\
+      [ungetc](ungetc-ungetwc.md)\
+      [vfprintf](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)\
+      [vprintf](vprintf-vprintf-l-vwprintf-vwprintf-l.md)
    :::column-end:::
 :::row-end:::
 
