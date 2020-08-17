@@ -23,7 +23,7 @@ class CSession
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Abort](#abort)|Cancels (terminates) the transaction.|
 |[Close](#close)|Closes the session.|

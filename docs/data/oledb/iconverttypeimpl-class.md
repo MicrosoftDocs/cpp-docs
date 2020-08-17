@@ -30,7 +30,7 @@ Your class, derived from `IConvertTypeImpl`.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CanConvert](#canconvert)|Gives information on the availability of type conversions on a command or on a rowset.|
 

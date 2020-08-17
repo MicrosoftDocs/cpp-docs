@@ -12,7 +12,7 @@ These functions provide support for modifying SID and ACL objects.
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlGetDacl](#atlgetdacl)|Call this function to retrieve the discretionary access-control list (DACL) information of a specified object.|
 |[AtlSetDacl](#atlsetdacl)|Call this function to set the discretionary access-control list (DACL) information of a specified object.|

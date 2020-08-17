@@ -19,7 +19,7 @@ struct CStringData
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[AddRef](#addref)|Increments the reference count of the string data object.|
 |[data](#data)|Retrieves the character data of a string object.|
@@ -31,7 +31,7 @@ struct CStringData
 
 ### Data Members
 
-|||
+|Name|Description|
 |-|-|
 |[nAllocLength](#nalloclength)|Length of allocated data in `XCHAR`s (not including terminating null)|
 |[nDataLength](#ndatalength)|Length of currently used data in `XCHAR`s (not including terminating null)|

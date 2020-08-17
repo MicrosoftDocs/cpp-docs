@@ -36,7 +36,7 @@ A pointer to the GUID for the schema.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Open](#open)|Returns a result set according to the user-supplied restrictions.|
 

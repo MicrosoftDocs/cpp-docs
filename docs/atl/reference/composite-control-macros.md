@@ -9,7 +9,7 @@ ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
 
 These macros define event sink maps and entries.
 
-|||
+|Macro|Description|
 |-|-|
 |[BEGIN_SINK_MAP](#begin_sink_map)|Marks the beginning of the event sink map for the composite control.|
 |[END_SINK_MAP](#end_sink_map)|Marks the end of the event sink map for the composite control.|

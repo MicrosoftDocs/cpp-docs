@@ -33,7 +33,7 @@ The storage unit for the `HROW`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[IsSameRow](#issamerow)|Compares two row handles to see if they refer to the same row.|
 

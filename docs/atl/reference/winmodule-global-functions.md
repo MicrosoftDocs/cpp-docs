@@ -11,7 +11,7 @@ These functions provide support for `_AtlCreateWndData` structure operations.
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlWinModuleAddCreateWndData](#atlwinmoduleaddcreatewnddata)|This function is used to initialize and add an `_AtlCreateWndData` structure.|
 |[AtlWinModuleExtractCreateWndData](#atlwinmoduleextractcreatewnddata)|Call this function to extract an existing `_AtlCreateWndData` structure.|

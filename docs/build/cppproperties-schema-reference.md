@@ -11,7 +11,7 @@ Open Folder projects that don't use CMake can store project configuration settin
 
 A configuration may have any of the following properties:
 
-|||
+|Name|Description|
 |-|-|
 |`inheritEnvironments`| Specifies which environments apply to this configuration.|
 |`name`|The configuration name that will appear in the C++ configuration dropdown|
@@ -118,7 +118,7 @@ When you define an **environments** property inside a configuration, it override
 
 You have access to the following built-in macros inside *CppProperties.json*:
 
-|||
+|Macro|Description|
 |-|-|
 |`${workspaceRoot}`| The full path to the workspace folder|
 |`${projectRoot}`| The full path to the folder where *CppProperties.json* is placed|

@@ -35,9 +35,9 @@ See [Platform::WriteOnlyArray Class](../cppcx/platform-writeonlyarray-class.md).
 
 ### Properties
 
-|||
-|-|-|
-|[Array::Value](#value)|Retrieves a handle to the current array.|
+| Name | Description |
+|--|--|
+| [Array::Value](#value) | Retrieves a handle to the current array. |
 
 ### Remarks
 

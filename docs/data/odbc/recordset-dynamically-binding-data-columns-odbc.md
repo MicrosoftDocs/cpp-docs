@@ -81,12 +81,12 @@ Dynamically binding added columns at run time requires the following steps:
 
 The four lists you need to work with are shown in the following table.
 
-|||
-|-|-|
-|**Current-Table-Columns**| (List 1 in the illustration) A list of the columns currently in the table on the data source. This list might match the list of columns currently bound in your recordset.|
-|**Bound-Recordset-Columns**| (List 2 in the illustration) A list of the columns bound in your recordset. These columns already have RFX statements in your `DoFieldExchange` function.|
-|**Columns-To-Bind-Dynamically**| (List 3 in the illustration) A list of columns in the table but not in your recordset. These are the columns you want to bind dynamically.|
-|**Dynamic-Column-Values**| (List 4 in the illustration) A list containing storage for the values retrieved from the columns you bind dynamically. Elements of this list correspond to those in Columns-to-Bind-Dynamically, one to one.|
+| List | Description |
+|--|--|
+| **Current-Table-Columns** | (List 1 in the illustration) A list of the columns currently in the table on the data source. This list might match the list of columns currently bound in your recordset. |
+| **Bound-Recordset-Columns** | (List 2 in the illustration) A list of the columns bound in your recordset. These columns already have RFX statements in your `DoFieldExchange` function. |
+| **Columns-To-Bind-Dynamically** | (List 3 in the illustration) A list of columns in the table but not in your recordset. These are the columns you want to bind dynamically. |
+| **Dynamic-Column-Values** | (List 4 in the illustration) A list containing storage for the values retrieved from the columns you bind dynamically. Elements of this list correspond to those in Columns-to-Bind-Dynamically, one to one. |
 
 ### <a name="_core_building_your_lists"></a> Building Your Lists
 

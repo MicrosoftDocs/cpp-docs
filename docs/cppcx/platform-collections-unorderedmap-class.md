@@ -72,10 +72,9 @@ For more information, see [Collections](../cppcx/collections-c-cx.md).
 
 ### Events
 
-|||
-|-|-|
-|Name|Description|
-|[Map::MapChanged](#mapchanged) event|Occurs when the Map changes.|
+| Name | Description |
+|--|--|
+| [Map::MapChanged](#mapchanged) event | Occurs when the Map changes. |
 
 ## Inheritance Hierarchy
 

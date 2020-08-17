@@ -58,9 +58,8 @@ The following table lists messages that are used in the MFC library:
 
 The following table shows the values for the low word of the *lParam* parameter of the AFX_WM_HSCROLL method:
 
-|||
-|-|-|
 |Value|Meaning|
+|-|-|
 |SB_ENDSCROLL|The user ends the scroll.|
 |SB_LEFT|The user scrolls to the upper-left.|
 |SB_RIGHT|The user scrolls to the lower-right.|
@@ -76,9 +75,8 @@ The following table shows the values for the low word of the *lParam* parameter 
 
 The following table lists the flag values for the *lParam* parameter of the AFX_WM_UPDATETOOLTIPS message:
 
-|||
-|-|-|
 |Flag|Value|
+|-|-|
 |AFX_TOOLTIP_TYPE_DEFAULT|0x0001|
 |AFX_TOOLTIP_TYPE_TOOLBAR|0x0002|
 |AFX_TOOLTIP_TYPE_TAB|0x0004|

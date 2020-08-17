@@ -8,7 +8,7 @@ ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
 
 This macro forwards window messages.
 
-|||
+|Name|Description|
 |-|-|
 |[WM_FORWARDMSG](#wm_forwardmsg)|Use to forward a message received by a window to another window for processing.|
 

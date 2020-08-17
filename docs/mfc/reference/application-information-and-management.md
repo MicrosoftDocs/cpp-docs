@@ -13,7 +13,7 @@ The Microsoft Foundation Class Library provides the following global functions t
 
 ## Application Information and Management Functions
 
-|||
+| Name | Description |
 |-|-|
 |[AfxBeginThread](#afxbeginthread)|Creates a new thread.|
 |[AfxContextMenuManager](#afxcontextmenumanager)|Pointer to the global [context menu manager](ccontextmenumanager-class.md).|

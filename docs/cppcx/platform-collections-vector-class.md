@@ -71,10 +71,9 @@ If you attempt to use a **Vector** type in a public return value or parameter, c
 
 ### Events
 
-|||
-|-|-|
-|Name|Description|
-|event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1)|Occurs when the Vector changes.|
+| Name | Description |
+|--|--|
+| event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1) | Occurs when the Vector changes. |
 
 ## Inheritance Hierarchy
 

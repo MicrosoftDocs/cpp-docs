@@ -31,7 +31,7 @@ In the rare case of needing to handle one of these messages, you should use the 
 
 This message is sent to a window that is being created. This is sent very early in the creation process as a method of determining if the WndProc is **AfxWndProc. AfxWndProc** returns 1.
 
-|||
+| Parameters and return value | Description |
 |-|-|
 |wParam|Not used|
 |lParam|Not used|
@@ -41,7 +41,7 @@ This message is sent to a window that is being created. This is sent very early 
 
 This message is sent by a frame window to its immediate children during resizing (`CFrameWnd::OnSize` calls `CFrameWnd::RecalcLayout` which calls `CWnd::RepositionBars`) to reposition the control bars around the side of the frame. The AFX_SIZEPARENTPARAMS structure contains the current available client rectangle of the parent and a HDWP (which may be NULL) with which to call `DeferWindowPos` to minimize repainting.
 
-|||
+| Parameters and return value | Description |
 |-|-|
 |wParam|Not used|
 |lParam|Address of an AFX_SIZEPARENTPARAMS structure|
@@ -53,7 +53,7 @@ Ignoring the message indicates that the window doesn't take part in the layout.
 
 This message is sent to a frame window to ask it to update the message line in the status bar. Either a string ID or a LPCSTR can be specified (but not both).
 
-|||
+| Parameters and return value | Description |
 |-|-|
 |wParam|String ID (or zero)|
 |lParam|LPCSTR for the string (or NULL)|
@@ -63,7 +63,7 @@ This message is sent to a frame window to ask it to update the message line in t
 
 This message is sent in idle time to implement the idle-time update of update-command UI handlers. If the window (usually a control bar) handles the message, it creates a `CCmdUI` object (or an object of a derived class) and call `CCmdUI::DoUpdate` for each of the "items" in the window. This will in turn check for an ON_UPDATE_COMMAND_UI handler for the objects in the command-handler chain.
 
-|||
+| Parameters and return value | Description |
 |-|-|
 |wParam|BOOL bDisableIfNoHandler|
 |lParam|Not used (0)|
@@ -75,7 +75,7 @@ This message is sent in idle time to implement the idle-time update of update-co
 
 This message is posted to a `CFrameWnd` that to exit context sensitive help mode. The receipt of this message terminates the modal loop started by `CFrameWnd::OnContextHelp`.
 
-|||
+| Parameter and return value | Description |
 |-|-|
 |wParam|Not used (0)|
 |lParam|Not used (0)|
@@ -85,7 +85,7 @@ This message is posted to a `CFrameWnd` that to exit context sensitive help mode
 
 This message is sent by the document template to all descendants of a frame window when it is safe for them to do their initial update. It maps to a call to `CView::OnInitialUpdate` but can be used in other `CWnd`-derived classes for other one-shot updating.
 
-|||
+| Parameters and return value | Description |
 |-|-|
 |wParam|Not used (0)|
 |lParam|Not used (0)|
@@ -97,7 +97,7 @@ This message is sent by a view to its parent window (obtained via `GetParent`) t
 
 If the parent window processes this message it should return TRUE and fill the RECT passed in lParam with the new size of the client area. This is used in `CScrollView` to properly handle scrollbars (place then on the outside of the window when they are added) when a server object is in-place activated.
 
-|||
+| Parameters and return value | Description |
 |-|-|
 |wParam|Not used (0)|
 |lParam|LPRECT rectClient, may be NULL|
@@ -109,7 +109,7 @@ This message is sent by `COleResizeBar` to its owner window (via `GetOwner`) whe
 
 The new rectangle, given in client coordinates relative to the frame window which contains the resize bar, is pointed at by lParam.
 
-|||
+| Parameters and return value | Description |
 |-|-|
 |wParam|Not used (0)|
 |lParam|LPRECT rectNew|
@@ -121,7 +121,7 @@ This message is sent to all pop-up windows owned by a frame window that is being
 
 You can use this to perform special processing in your pop-up window when the frame enters a modal state or to keep certain pop-up windows from getting disabled. Tooltips use this message to destroy themselves when the frame window goes into a modal state, for example.
 
-|||
+| Parameters and return value | Description |
 |-|-|
 |wParam|Not used (0)|
 |lParam|Not used (0)|
@@ -131,7 +131,7 @@ You can use this to perform special processing in your pop-up window when the fr
 
 This message is sent to all pop-up windows owned by a frame window when the frame is either activated or deactivated by another top-level frame window. This is used by the implementation of MFS_SYNCACTIVE in `CMiniFrameWnd`, to keep the activation of these pop-up windows in sync with the activation of the top level frame window.
 
-|||
+| Parameters | Description |
 |-|-|
 |wParam|Is one of the following values:<br /><br /> FS_SHOW<br /><br /> FS_HIDE<br /><br /> FS_ACTIVATE<br /><br /> FS_DEACTIVATE<br /><br /> FS_ENABLEFS_DISABLE<br /><br /> FS_SYNCACTIVE|
 |lParam|Not used (0)|

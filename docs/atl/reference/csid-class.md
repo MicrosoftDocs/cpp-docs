@@ -52,14 +52,14 @@ class CSid
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator =](#operator_eq)|Assignment operator.|
 |[operator const SID *](#operator_const_sid__star)|Casts a `CSid` object to a pointer to a `SID` structure.|
 
 ### Global Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator ==](#operator_eq_eq)|Tests two security descriptor objects for equality|
 |[operator !=](#operator_neq)|Tests two security descriptor objects for inequality|
