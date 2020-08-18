@@ -206,10 +206,11 @@ int GetIdealSize(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*cxMaxWidth*|[in] The maximum width of the link, in pixels.|
-|[out] \* *pSize*|A pointer to a Windows [SIZE](/windows/win32/api/windef/ns-windef-size) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|
+*cxMaxWidth*\
+[in] The maximum width of the link, in pixels.
+
+*pSize*\
+[out] A pointer to a Windows [SIZE](/windows/win32/api/windef/ns-windef-size) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.
 
 ### Return Value
 

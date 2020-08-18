@@ -18,10 +18,11 @@ class cache_freelist
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Sz*|The number of elements in the array to be allocated.|
-|*Max*|The max class representing the maximum size of the free list. This can be [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), or [max_variable_size](../standard-library/max-variable-size-class.md).|
+*Sz*\
+The number of elements in the array to be allocated.
+
+*Max*\
+The max class representing the maximum size of the free list. This can be [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), or [max_variable_size](../standard-library/max-variable-size-class.md).
 
 ## Remarks
 
@@ -58,9 +59,8 @@ void *allocate(std::size_t count);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*count*|The number of elements in the array to be allocated.|
+*count*\
+The number of elements in the array to be allocated.
 
 ### Return Value
 
@@ -88,10 +88,11 @@ void deallocate(void* ptr, std::size_t count);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the first object to be deallocated from storage.|
-|*count*|The number of objects to be deallocated from storage.|
+*ptr*\
+A pointer to the first object to be deallocated from storage.
+
+*count*\
+The number of objects to be deallocated from storage.
 
 ### Remarks
 

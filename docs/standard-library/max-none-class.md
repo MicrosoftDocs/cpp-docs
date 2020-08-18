@@ -18,9 +18,8 @@ class max_none
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Max*|The max class that determines the maximum number of elements to store in the `freelist`.|
+*Max*\
+The max class that determines the maximum number of elements to store in the `freelist`.
 
 ### Member functions
 
@@ -48,9 +47,8 @@ void allocated(std::size_t _Nx = 1);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Nx*|The increment value.|
+*_Nx*\
+The increment value.
 
 ### Remarks
 
@@ -66,9 +64,8 @@ void deallocated(std::size_t _Nx = 1);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Nx*|The increment value.|
+*_Nx*\
+The increment value.
 
 ### Remarks
 

@@ -25,10 +25,11 @@ bool operator!=(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|One of the allocator objects to be tested for inequality.|
-|*right*|One of the allocator objects to be tested for inequality.|
+*left*\
+One of the allocator objects to be tested for inequality.
+
+*right*\
+One of the allocator objects to be tested for inequality.
 
 ### Return Value
 
@@ -51,10 +52,11 @@ bool operator==(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|One of the allocator objects to be tested for equality.|
-|*right*|One of the allocator objects to be tested for equality.|
+*left*\
+One of the allocator objects to be tested for equality.
+
+*right*\
+One of the allocator objects to be tested for equality.
 
 ### Return Value
 

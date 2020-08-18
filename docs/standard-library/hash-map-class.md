@@ -166,9 +166,8 @@ const Type& at(const Key& key) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*key*|The key value of the element that is to be found.|
+*key*\
+The key value of the element that is to be found.
 
 ### Return Value
 
@@ -799,9 +798,8 @@ emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
+*val*\
+The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).
 
 ### Return Value
 
@@ -858,10 +856,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
-|*_Where*|A hint regarding the place to start searching for the correct point of insertion.|
+*val*\
+The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).
+
+*_Where*\
+A hint regarding the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -1443,14 +1442,23 @@ hash_map(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The storage allocator class to be used for this hash_map object, which defaults to `Allocator`.|
-|*Comp*|The comparison function of type const `Traits` used to order the elements in the hash_map, which defaults to `hash_compare`.|
-|*Right*|The hash_map of which the constructed map is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
-|*IList*|The initializer_list|
+*Al*\
+The storage allocator class to be used for this hash_map object, which defaults to `Allocator`.
+
+*Comp*\
+The comparison function of type const `Traits` used to order the elements in the hash_map, which defaults to `hash_compare`.
+
+*Right*\
+The hash_map of which the constructed map is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
+
+*IList*\
+The initializer_list
 
 ### Remarks
 
@@ -1501,12 +1509,17 @@ iterator insert(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).|
-|*_Where*|A hint regarding the place to start searching for the correct point of insertion.|
-|*first*|The position of the first element to be copied from a hash_map.|
-|*last*|The position just beyond the last element to be copied from a hash_map.|
+*val*\
+The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).
+
+*_Where*\
+A hint regarding the place to start searching for the correct point of insertion.
+
+*first*\
+The position of the first element to be copied from a hash_map.
+
+*last*\
+The position just beyond the last element to be copied from a hash_map.
 
 ### Return Value
 
@@ -1647,11 +1660,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### Remarks
 
-The `iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type **pair\<const Key, Type>,** whose first member is the key to the element and whose second member is the mapped datum held by the element.
+The `iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair<const Key, Type>`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
-To dereference an **iterator**`Iter` pointing to an element in a multimap, use the `->` operator.
+To dereference an iterator named `Iter` pointing to an element in a multimap, use the `->` operator.
 
-To access the value of the key for the element, use `Iter` -> **first**, which is equivalent to (\* `Iter`). **first**. To access the value of the mapped datum for the element, use `Iter` -> **second**, which is equivalent to (\* `Iter`). **second**.
+To access the value of the key for the element, use `Iter->first`, which is equivalent to `(*Iter).first`. To access the value of the mapped datum for the element, use `Iter->second`, which is equivalent to `(*Iter).second`.
 
 A type `iterator` can be used to modify the value of an element.
 
@@ -1678,7 +1691,7 @@ Returns the function object that a hash_map uses to order its elements.
 
 The stored object defines the member function
 
-**bool operator**( **const Key&** `left`**, const Key&** `right`);
+`bool operator( const Key& left, const Key&right );`
 
 that returns **`true`** if `left` precedes and is not equal to `right` in the sort order.
 
@@ -1929,9 +1942,8 @@ Type& operator[](Key&& key);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*key*|The key value of the element that is to be inserted.|
+*key*\
+The key value of the element that is to be inserted.
 
 ### Return Value
 
@@ -2026,9 +2038,8 @@ hash_map& operator=(hash_map&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.|
+*right*\
+The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.
 
 ### Remarks
 

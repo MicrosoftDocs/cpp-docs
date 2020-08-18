@@ -14,7 +14,7 @@ ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
 
 ## Remarks
 
-The bitwise exclusive OR operator (**`^`**) compares each bit of its first operand to the corresponding bit of its second operand. If the bit in the first operand is 0 and the other bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.
+The bitwise exclusive OR operator (**`^`**) compares each bit of its first operand to the corresponding bit of its second operand. If the bit in one of the operands is 0 and the bit in the other operand is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.
 
 Both operands to the operator must have integral types. The usual arithmetic conversions covered in [Standard Conversions](standard-conversions.md) are applied to the operands.
 

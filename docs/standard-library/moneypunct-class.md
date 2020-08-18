@@ -253,9 +253,9 @@ The protected virtual member function returns a locale-specific rule for determi
 
 - `value` to match or generate a monetary value.
 
-Components of a monetary output field are generated and components of a monetary input field are matched in the order in which these elements appear in `pattern::field`. Each of the values `sign`, `symbol`, `value`, and either `none` or `space` must appear exactly once. The value `none` must not appear first. The value space **must** not appear first or last. If `Intl` is true, the order is `symbol`, `sign`, `none`, then `value`.
+Components of a monetary output field are generated and components of a monetary input field are matched in the order in which these elements appear in `pattern::field`. Each of the values `sign`, `symbol`, `value`, and either `none` or `space` must appear exactly once. The value `none` must not appear first. The value `space` must not appear first or last. If `Intl` is true, the order is `symbol`, `sign`, `none`, then `value`.
 
-The template version of `moneypunct`\< **CharType**, **Intl**> returns `{`**money_base::symbol**, **money_base::sign**, **money_base::value**, **money_base::none**`}`.
+The template version of `moneypunct< CharType, Intl >` returns `{money_base::symbol, money_base::sign, money_base::value, money_base::none}`.
 
 ### Example
 
@@ -289,7 +289,7 @@ virtual pattern do_pos_format() const;
 
 The protected virtual member function returns a locale-specific rule for determining how to generate a monetary output field for a positive amount. (It also determines how to match the components of a monetary input field.) The encoding is the same as for [do_neg_format](#do_neg_format).
 
-The template version of moneypunct\< **CharType**, **Inputlterator**> returns `{`**money_base::symbol**, **money_base::sign**, **money_base::value**, **money_base::none**`}`.
+The template version of `moneypunct< CharType, Inputlterator >` returns `{ money_base::symbol, money_base::sign, money_base::value, money_base::none }`.
 
 ### Example
 

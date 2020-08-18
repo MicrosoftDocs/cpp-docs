@@ -9,7 +9,7 @@ ms.assetid: 2e209bbe-77ca-4598-86d5-6c2ea213f43c
 
 **Microsoft Specific**
 
-Copies a `BSTR` into the `BSTR` wrapped by a **_**`bstr_t`.
+Copies a `BSTR` into the `BSTR` wrapped by a `_bstr_t`.
 
 ## Syntax
 

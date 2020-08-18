@@ -607,9 +607,8 @@ emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.
 
 ### Return Value
 

@@ -451,10 +451,11 @@ BOOL GetHighlight(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pichStart*|[out] Zero-based index of the first character in the range of text that is highlighted.|
-|*pichEnd*|[out] Zero-based index of the last character in the range of text that is highlighted.|
+*pichStart*\
+[out] Zero-based index of the first character in the range of text that is highlighted.
+
+*pichEnd*\
+[out] Zero-based index of the last character in the range of text that is highlighted.
 
 ### Return Value
 
@@ -1002,10 +1003,11 @@ void SetHighlight(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ichStart*|[in] Zero-based index of the first character in the range of text to highlight.|
-|*ichEnd*|[in] Zero-based index of the last character in the range of text to highlight.|
+*ichStart*\
+[in] Zero-based index of the first character in the range of text to highlight.
+
+*ichEnd*\
+[in] Zero-based index of the last character in the range of text to highlight.
 
 ### Remarks
 
@@ -1302,12 +1304,17 @@ BOOL ShowBalloonTip(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pEditBalloonTip*|[in] Pointer to an [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) structure that describes the balloon tip.|
-|*lpszTitle*|[in] Pointer to a Unicode string that contains the title of the balloon tip.|
-|*lpszText*|[in] Pointer to a Unicode string that contains the balloon tip text.|
-|*ttiIcon*|[in] An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) structure.|
+*pEditBalloonTip*\
+[in] Pointer to an [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) structure that describes the balloon tip.
+
+*lpszTitle*\
+[in] Pointer to a Unicode string that contains the title of the balloon tip.
+
+*lpszText*\
+[in] Pointer to a Unicode string that contains the balloon tip text.
+
+*ttiIcon*\
+[in] An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) structure.
 
 ### Return Value
 

@@ -15,9 +15,8 @@ The **`decltype`** type specifier yields the type of a specified expression. The
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*expression*|An expression. For more information, see [Expressions](../cpp/expressions-cpp.md).|
+*expression*\
+An expression. For more information, see [Expressions](../cpp/expressions-cpp.md).
 
 ## Return Value
 
