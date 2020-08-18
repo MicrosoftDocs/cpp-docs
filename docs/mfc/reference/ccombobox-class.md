@@ -555,10 +555,11 @@ BOOL GetCueBanner(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpszText*|[out] Pointer to a buffer that receives the cue banner text.|
-|*cchText*|[in] Size of the buffer that the *lpszText* parameter points to.|
+*lpszText*\
+[out] Pointer to a buffer that receives the cue banner text.
+
+*cchText*\
+[in] Size of the buffer that the *lpszText* parameter points to.
 
 ### Return Value
 
@@ -1081,9 +1082,8 @@ BOOL SetCueBanner(LPCTSTR lpszText);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpszText*|[in] Pointer to a null-terminated buffer that contains the cue text.|
+*lpszText*\
+[in] Pointer to a null-terminated buffer that contains the cue text.
 
 ### Return Value
 
@@ -1373,9 +1373,8 @@ BOOL SetMinVisibleItems(int iMinVisible);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iMinVisible*|[in] Specifies the minimum number of visible items.|
+*iMinVisible*\
+[in] Specifies the minimum number of visible items.
 
 ### Return Value
 

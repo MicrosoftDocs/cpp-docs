@@ -18,10 +18,11 @@ class freelist : public Max
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Sz*|The number of elements in the array to be allocated.|
-|*Max*|The max class representing the maximum number of elements to be stored in the free list. The max class can be [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md), or [max_variable_size](../standard-library/max-variable-size-class.md).|
+*Sz*\
+The number of elements in the array to be allocated.
+
+*Max*\
+The max class representing the maximum number of elements to be stored in the free list. The max class can be [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md), or [max_variable_size](../standard-library/max-variable-size-class.md).
 
 ## Remarks
 
@@ -82,9 +83,8 @@ bool push(void* ptr);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the memory block to be added to the free list.|
+*ptr*\
+A pointer to the memory block to be added to the free list.
 
 ### Return Value
 

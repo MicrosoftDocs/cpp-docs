@@ -953,8 +953,14 @@ int SetDate(
 
 ### Parameters
 
-*nYear*, *nMonth*, *nDay*<br/>
-Indicate the date components to be copied into this `COleDateTime` object.
+*nYear*\
+Indicates the year to copy into this `COleDateTime` object.
+
+*nMonth*\
+Indicates the month to copy into this `COleDateTime` object.
+
+*nDay*\
+Indicates the day to copy into this `COleDateTime` object.
 
 ### Return Value
 

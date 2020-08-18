@@ -705,9 +705,8 @@ iterator insert(ValTy&& val);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of an element to be inserted into the [hash_multiset](../standard-library/hash-multiset-class.md) unless the `hash_multiset` already contains that element or, more generally, an element whose key is equivalently ordered.|
+*val*\
+The value of an element to be inserted into the [hash_multiset](../standard-library/hash-multiset-class.md) unless the `hash_multiset` already contains that element or, more generally, an element whose key is equivalently ordered.
 
 ### Return Value
 
@@ -1690,9 +1689,8 @@ hash_multiset& operator=(hash_multiset&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [hash_multiset](../standard-library/hash-multiset-class.md) being copied into the `hash_multiset`.|
+*right*\
+The [hash_multiset](../standard-library/hash-multiset-class.md) being copied into the `hash_multiset`.
 
 ### Remarks
 

@@ -1101,10 +1101,11 @@ virtual void OnChangeSelection(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pNewSel*|[in] Pointer to the newly selected property.|
-|*pOldSel*|[in] Pointer to the previously selected property.|
+*pNewSel*\
+[in] Pointer to the newly selected property.
+
+*pOldSel*\
+[in] Pointer to the previously selected property.
 
 ### Remarks
 
@@ -1473,9 +1474,8 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pProp*|[in] Pointer to a property. This parameter is not used.|
+*pProp*\
+[in] Pointer to a property. This parameter is not used.
 
 ### Return Value
 

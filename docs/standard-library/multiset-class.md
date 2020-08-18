@@ -615,9 +615,8 @@ iterator emplace(Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the multiset.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the multiset.
 
 ### Return Value
 
@@ -683,10 +682,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the multiset.|
-|*where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)|
+*args*\
+The arguments forwarded to construct an element to be inserted into the multiset.
+
+*where*\
+The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)
 
 ### Return Value
 
@@ -1078,15 +1078,26 @@ IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the multiset.|
-|*Where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)|
-|*ValTy*|Template parameter that specifies the argument type that the multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the multiset.
+
+*Where*\
+The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)
+
+*ValTy*\
+Template parameter that specifies the argument type that the multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.
+
+*IList*\
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1474,14 +1485,23 @@ multiset (
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The storage allocator class to be used for this multiset object, which defaults to `Allocator`.|
-|*Comp*|The comparison function of type `const Compare` used to order the elements in the multiset, which defaults to `Compare`.|
-|*Right*|The multiset of which the constructed multiset is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
-|*IList*|The initializer_list from which to copy the elements.|
+*Al*\
+The storage allocator class to be used for this multiset object, which defaults to `Allocator`.
+
+*Comp*\
+The comparison function of type `const Compare` used to order the elements in the multiset, which defaults to `Compare`.
+
+*Right*\
+The multiset of which the constructed multiset is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
+
+*IList*\
+The initializer_list from which to copy the elements.
 
 ### Remarks
 
@@ -1614,9 +1634,8 @@ multiset& operator=(multiset&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The `multiset` from which elements are copied or moved.|
+*right*\
+The `multiset` from which elements are copied or moved.
 
 ### Remarks
 
