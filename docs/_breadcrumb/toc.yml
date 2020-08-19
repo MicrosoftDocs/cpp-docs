@@ -89,10 +89,9 @@
     - name: Linux
       tocHref: /cpp/linux/
       topicHref: /cpp/linux/index
-      items:
-      - name: Linux
-        tocHref: /cpp/build/configure-cmake-debugging-sessions
-        topicHref: /cpp/linux/index
+    - name: Linux
+      tocHref: /cpp/build/configure-cmake-debugging-sessions
+      topicHref: /cpp/linux/index
     - name: MFC
       tocHref: /cpp/mfc/
       topicHref: /cpp/mfc/mfc-desktop-applications
