@@ -21,9 +21,8 @@ using make_unsigned_t = typename make_unsigned<T>::type;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*T*|The type to modify.|
+*T*\
+The type to modify.
 
 ## Remarks
 

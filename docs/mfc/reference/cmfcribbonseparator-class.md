@@ -206,15 +206,23 @@ virtual void OnDrawOnList(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDC*|[in] A pointer to a device context.|
-|*strText*|[in] Text displayed on the list.|
-|*nTextOffset*|[in] Spacing between the text and the left side of the bounding rectangle.|
-|*rect*|[in] Specifies the bounding rectangle.|
-|*bIsSelected*|[in] Ignored.|
-|*bHighlighted*|[in] Ignored.|
+*pDC*\
+[in] A pointer to a device context.
+
+*strText*\
+[in] Text displayed on the list.
+
+*nTextOffset*\
+[in] Spacing between the text and the left side of the bounding rectangle.
+
+*rect*\
+[in] Specifies the bounding rectangle.
+
+*bIsSelected*\
+[in] Ignored.
+
+*bHighlighted*\
+[in] Ignored.
 
 ## See also
 

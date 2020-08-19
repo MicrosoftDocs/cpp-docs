@@ -18,10 +18,11 @@ class array;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|`Ty`|The type of an element.|
-|`N`|The number of elements.|
+`Ty`\
+The type of an element.
+
+`N`\
+The number of elements.
 
 ## Members
 
@@ -799,9 +800,8 @@ void fill(const Type& val);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of the element being inserted into the array.|
+*val*\
+The value of the element being inserted into the array.
 
 ### Remarks
 

@@ -74,12 +74,14 @@ void Setup(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*R*|[in] The red component of the RGB value.|
-|*G*|[in] The green component of the RGB value.|
-|*B*|[in] The blue component of the RGB value.|
+*R*\
+[in] The red component of the RGB value.
+
+*G*\
+[in] The green component of the RGB value.
+
+*B*\
+[in] The blue component of the RGB value.
 
 ### Remarks
 

@@ -12,7 +12,7 @@ Enable supported C++ language features from the specified version of the C++ lan
 
 > **`/std:c++14`**\
 > **`/std:c++17`**\
-> **`/std:c++latest`**]
+> **`/std:c++latest`**
 
 ## Remarks
 
