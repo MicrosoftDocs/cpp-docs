@@ -33,7 +33,7 @@ When your class has to pass a sequence container to another Windows Runtime comp
 > [!IMPORTANT]
 > If you are passing a sequence within your own program, then use either `Vector` or `std::vector` because they are more efficient than `IVector`. Use `IVector` only when you pass the container across the ABI.
 >
-> The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an IVector<Platform::Array\<T>> as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.
+> The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an `IVector<Platform::Array<T>>` as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.
 
 `Vector<T>` provides the methods that are required for adding, removing, and accessing items in the collection, and it is implicitly convertible to `IVector<T>`. You can also use STL algorithms on instances of `Vector<T>`. The following example demonstrates some basic usage. The [begin function](../cppcx/begin-function.md) and [end function](../cppcx/end-function.md) here are from the `Platform::Collections` namespace, not the `std` namespace.
 
