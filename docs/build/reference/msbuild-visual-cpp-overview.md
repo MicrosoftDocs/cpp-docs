@@ -16,15 +16,15 @@ By default, the primary Visual Studio support files are located in the following
 
 ### Visual Studio 2019
 
-- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\
+- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\
 
   Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory. The *version* placeholder refers to the Visual Studio version: v160 for Visual Studio 2019, v150 for Visual Studio 2017.
 
-- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\Platforms\\*platform*\\
+- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\Platforms\\*platform*\\
 
   Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory.
 
-- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\VCTargets\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\
+- %VSINSTALLDIR%MSBuild\\Microsoft\\VC\\*version*\\Platforms\\*platform*\\PlatformToolsets\\*toolset*\\
 
   Contains the directories that enable the build to generate C++ applications by using the specified *toolset*. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory.
 
