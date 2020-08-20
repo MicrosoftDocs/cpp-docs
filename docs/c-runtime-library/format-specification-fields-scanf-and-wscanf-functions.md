@@ -2,7 +2,7 @@
 title: "Format Specification Fields: scanf and wscanf Functions"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-ms.custom: 
+ms.custom: contperfq1
 helpviewer_keywords: ["width, specifications in scanf function", "scanf format specifications", "scanf width specifications", "scanf type field characters", "type fields, scanf function", "format specification fields for scanf function", "type fields"]
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
 ---
