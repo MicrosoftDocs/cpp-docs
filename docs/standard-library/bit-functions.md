@@ -23,29 +23,29 @@ The \<bit> header includes the following non-member functions:
 |[countr_one](#countl_one) | Counts the number of consecutive 1 bits, starting from the least significant bit |
 |[popcount](#popcount) | Counts the number of 1 bits in an unsigned integer |
 
-## <a name="as_bytes"></a>`as_bytes`
+## <a name="bit_cast"></a>`bit_cast`
 
-Get a read-only view of the object representation of the elements in the span.
+Reinterpret `From`.
 
 ```cpp
-template <class T, size_t Extent>
-auto as_bytes(span<T, Extent> s) noexcept;
+template <class To, class From>
+To bit_cast(const From& from) noexcept;
 ```
 
 ### Parameters
 
-*T*\
-The type of the elements in the span.
+*To*\
+The type of the output.
 
-*Extent*\
-The number of elements in the span (if known at compile time), otherwise `dynamic_extent` indicating that the number of elements isn't known until runtime.
+*From*\
+The type of the value to convert.
 
-*s*\
-The span to get the raw representation of.
+*from*\
+The value to convert.
 
 ### Return Value
 
-A `span<const byte, S>` to the first item stored in the span where `S` is `{reinterpret_cast<const std::byte*>(s.data()), s.size_bytes()}`
+An object of type `To`.  Each bit in the result matches the corresponding bit in `from`, unless there are padding bits in `To`, in which case those bits in the result are unspecified.
 
 ### Example
 
@@ -62,6 +62,8 @@ void main()
     auto bytes = std::as_bytes(mySpan);
 }
 ```
+
+## Remarks
 
 ## Requirements
 
