@@ -1,5 +1,6 @@
 ---
 title: "union"
+description: "A description of the Standard C++ union class-type and keyword, its use and restrictions."
 ms.date: "08/18/2020"
 f1_keywords: ["union_cpp"]
 helpviewer_keywords: ["class type [C++], union as", "union keyword [C++]"]
