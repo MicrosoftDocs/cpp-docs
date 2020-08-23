@@ -56,9 +56,7 @@ class CMyC3 : public IMyI3 {};
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|

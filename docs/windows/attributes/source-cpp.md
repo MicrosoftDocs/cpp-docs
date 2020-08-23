@@ -62,9 +62,7 @@ class NN : public b
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**, **interface**|
 |**Repeatable**|No|

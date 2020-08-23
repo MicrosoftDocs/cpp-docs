@@ -25,9 +25,7 @@ See [bindable](bindable.md) for an example of how to use **immediatebind**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

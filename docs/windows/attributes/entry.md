@@ -30,9 +30,7 @@ See the example for [idl_module](idl-module.md) for an example use of **entry**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|`idl_module` attribute|
 |**Repeatable**|No|

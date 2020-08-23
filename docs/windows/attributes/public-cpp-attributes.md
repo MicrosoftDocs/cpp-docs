@@ -39,9 +39,7 @@ __interface IFireTabCtrl : IDispatch
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`typedef`**|
 |**Repeatable**|No|

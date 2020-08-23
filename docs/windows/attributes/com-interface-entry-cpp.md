@@ -97,9 +97,7 @@ END_COM_MAP()
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|Yes|

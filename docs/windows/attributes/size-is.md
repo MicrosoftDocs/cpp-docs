@@ -30,9 +30,7 @@ See the example for [first_is](first-is.md) for a sample of how to specify a sec
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|

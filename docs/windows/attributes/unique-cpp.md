@@ -25,9 +25,7 @@ See the [ref](ref-cpp.md) example for a sample use of **unique**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`typedef`**, **`struct`**, **`union`**, interface parameter, interface method|
 |**Repeatable**|No|

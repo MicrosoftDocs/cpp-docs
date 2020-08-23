@@ -36,9 +36,7 @@ enum eList {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Enumerated type|
 |**Repeatable**|No|

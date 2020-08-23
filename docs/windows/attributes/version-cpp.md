@@ -30,9 +30,7 @@ See the [bindable](bindable.md) example for a sample use of **version**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
