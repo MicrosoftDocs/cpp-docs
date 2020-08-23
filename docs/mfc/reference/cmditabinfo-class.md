@@ -179,7 +179,7 @@ CMFCTabCtrl::Style m_style
 
 Specify one of the following styles for the tab labels:
 
-|||
+|Macro|Description|
 |-|-|
 |STYLE_3D|3D style.  |
 |STYLE_3D_ONENOTE|Microsoft OneNote style.  |

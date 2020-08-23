@@ -33,7 +33,7 @@ class high_resolution_clock
 
 ## Functions
 
-|||
+|Name|Description|
 |-|-|
 |`now`|Returns the current time as a `time_point` value.|
 

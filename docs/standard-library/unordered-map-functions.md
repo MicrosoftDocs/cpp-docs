@@ -7,9 +7,8 @@ helpviewer_keywords: ["std::swap (unordered_map/multimap)"]
 ---
 # &lt;unordered_map&gt; functions
 
-|||
-|-|-|
-|[swap (unordered_map)](#swap)|[swap (unordered_multimap)](#swap_function_multimap)|
+[swap (unordered_map)](#swap)
+[swap (unordered_multimap)](#swap_function_multimap)
 
 ## <a name="swap"></a> swap (unordered_map)
 

@@ -61,10 +61,8 @@ This sampling distribution has varying-width intervals with uniform probability 
 
 The following table links to articles about individual members:
 
-||||
-|-|-|-|
-|[piecewise_constant_distribution](#piecewise_constant_distribution)|`piecewise_constant_distribution::intervals`|`piecewise_constant_distribution::param`|
-|`piecewise_constant_distribution::operator()`|`piecewise_constant_distribution::densities`|[param_type](#param_type)|
+[piecewise_constant_distribution](#piecewise_constant_distribution)\
+[param_type](#param_type)
 
 The property function `intervals()` returns a `vector<result_type>` with the set of stored intervals of the distribution.
 

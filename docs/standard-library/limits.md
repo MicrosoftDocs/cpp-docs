@@ -23,14 +23,14 @@ Explicit specializations of the `numeric_limits` class describe many properties 
 
 ### Enumerations
 
-|||
+|Name|Description|
 |-|-|
 |[float_denorm_style](../standard-library/limits-enums.md#float_denorm_style)|The enumeration describes the various methods that an implementation can choose for representing a denormalized floating-point value — one too small to represent as a normalized value:|
 |[float_round_style](../standard-library/limits-enums.md#float_round_style)|The enumeration describes the various methods that an implementation can choose for rounding a floating-point value to an integer value.|
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[numeric_limits Class](../standard-library/numeric-limits-class.md)|The class template describes arithmetic properties of built-in numerical types.|
 

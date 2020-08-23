@@ -25,13 +25,13 @@ template <class T>
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[default_delete](#default_delete)|The constructor for objects of type `default_delete`.|
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator()](#op_paren)|A reference operator to access `default_delete`.|
 

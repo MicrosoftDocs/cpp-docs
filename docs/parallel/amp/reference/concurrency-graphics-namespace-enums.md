@@ -6,7 +6,7 @@ ms.assetid: 1d2e1859-a3d7-4d3d-8e03-1a877a86b3e0
 ---
 # Concurrency::graphics namespace enums
 
-|||
+|Name|Description|
 |-|-|
 |[_mode Enumeration](#address_mode)|[filter_mode Enumeration](#filter_mode)|
 

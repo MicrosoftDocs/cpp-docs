@@ -4860,7 +4860,7 @@ Use the global function [AfxMessageBox](../../mfc/reference/cstring-formatting-a
 
 The following shows the various system icons that can be used in a message box:
 
-|||
+|Icon|Macro|
 |-|-|
 |![Stop &#40;x&#41; icon](../../mfc/reference/media/vc364f1.gif "Stop &#40;x&#41; icon")|MB_ICONHAND, MB_ICONSTOP, and MB_ICONERROR|
 |![Help &#40;?&#41; icon](../../mfc/reference/media/vc364f2.gif "Help &#40;?&#41; icon")|MB_ICONQUESTION|

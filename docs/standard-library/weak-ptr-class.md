@@ -32,7 +32,7 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 
 ## Members
 
-|||
+|Name|Description|
 |-|-|
 | **Constructors** | |
 |[weak_ptr](#weak_ptr)|Constructs a `weak_ptr`.|

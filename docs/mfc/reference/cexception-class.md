@@ -36,7 +36,7 @@ Because `CException` is an abstract base class you cannot create `CException` ob
 
 The derived classes and their descriptions are listed below:
 
-|||
+|Name|Description|
 |-|-|
 |[CSimpleException](../../mfc/reference/csimpleexception-class.md)|A base class for resource-critical MFC exceptions|
 |[CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md)|Invalid argument exception condition|

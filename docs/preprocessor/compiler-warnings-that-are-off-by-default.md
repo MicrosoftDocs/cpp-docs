@@ -32,7 +32,7 @@ You can enable warnings that are normally off by default by using one of the fol
 
 The following warnings are turned off by default in Visual Studio 2015 and later versions:
 
-|||
+|Warning|Message|
 |-|-|
 |[C4061](../error-messages/compiler-warnings/compiler-warning-level-4-c4061.md) (level 4)|enumerator '*identifier*' in a switch of enum '*enumeration*' is not explicitly handled by a case label|
 |[C4062](../error-messages/compiler-warnings/compiler-warning-level-4-c4062.md) (level 4)|enumerator '*identifier*' in a switch of enum '*enumeration*' is not handled|
@@ -155,7 +155,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 
 These warnings were off by default in versions of the compiler before Visual Studio 2015:
 
-|||
+|Warning|Message|
 |-|-|
 |[C4302](../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md) (level 2)|'*conversion*': truncation from '*type1*' to '*type2*'|
 |[C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1)|'*variable*' : pointer truncation from '*type*' to '*type*'|
@@ -164,7 +164,7 @@ These warnings were off by default in versions of the compiler before Visual Stu
 
 This warning was off by default in versions of the compiler before Visual Studio 2012:
 
-|||
+|Warning|Message|
 |-|-|
 |[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (level 4)|missing type specifier - int assumed. Note: C no longer supports default-int|
 

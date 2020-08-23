@@ -18,16 +18,14 @@ class CMFCStandardColorsPropertyPage : public CPropertyPage
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCStandardColorsPropertyPage::CMFCStandardColorsPropertyPage`|Default constructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCStandardColorsPropertyPage::CreateObject`|Used by the framework to create a dynamic instance of this class type.|
 |`CMFCStandardColorsPropertyPage::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|
 

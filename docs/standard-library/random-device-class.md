@@ -35,10 +35,9 @@ public:
 
 ## Members
 
-|||
-|-|-|
-|[random_device](#random_device)|[entropy](#entropy)|
-|[random_device::operator()](#op_call)||
+[random_device](#random_device)\
+[entropy](#entropy)\
+[random_device::operator()](#op_call)
 
 ## Remarks
 

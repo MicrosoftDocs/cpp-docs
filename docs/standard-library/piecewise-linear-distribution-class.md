@@ -61,10 +61,8 @@ This sampling distribution has varying-width intervals with linearly varying pro
 
 The following table links to articles about individual members:
 
-||||
-|-|-|-|
-|[piecewise_linear_distribution](#piecewise_linear_distribution)|`piecewise_linear_distribution::intervals`|`piecewise_linear_distribution::param`|
-|`piecewise_linear_distribution::operator()`|`piecewise_linear_distribution::densities`|[param_type](#param_type)|
+[piecewise_linear_distribution](#piecewise_linear_distribution)\
+[param_type](#param_type)
 
 The property function `intervals()` returns a `vector<result_type>` with the set of stored intervals of the distribution.
 

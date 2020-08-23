@@ -19,9 +19,8 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCImageEditorPaletteBar::GetRowHeight](#getrowheight)|Returns the height of toolbar buttons. (Overrides [CMFCToolBar::GetRowHeight](../../mfc/reference/cmfctoolbar-class.md#getrowheight).)|
 |[CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable](#isbuttonextrasizeavailable)|Determines whether the toolbar can display buttons that have extended borders. (Overrides [CMFCToolBar::IsButtonExtraSizeAvailable](../../mfc/reference/cmfctoolbar-class.md#isbuttonextrasizeavailable).)|
 

@@ -53,10 +53,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
 
 The class template describes a distribution that produces values of a user-specified integral type, or type **`int`** if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[binomial_distribution](#binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|
-|`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#param_type)|
+[binomial_distribution](#binomial_distribution)\
+[param_type](#param_type)
 
 The property members `t()` and `p()` return the currently stored distribution parameter values *t* and *p* respectively.
 

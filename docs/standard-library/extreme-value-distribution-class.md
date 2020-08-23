@@ -53,10 +53,8 @@ The random number generator engine. For possible types, see [\<random>](../stand
 
 The class template describes a distribution that produces values of a user-specified floating-point type, or type **`double`** if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[extreme_value_distribution](#extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|
-|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#param_type)|
+[extreme_value_distribution](#extreme_value_distribution)\
+[param_type](#param_type)
 
 The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.
 

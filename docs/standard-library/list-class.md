@@ -38,13 +38,13 @@ Include the C++ Standard Library standard header \<list> to define the [containe
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[list](#list)|Constructs a list of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other list.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for a list object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **`const`** element in a list.|
@@ -61,7 +61,7 @@ Include the C++ Standard Library standard header \<list> to define the [containe
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[assign](#assign)|Erases elements from a list and copies a new set of elements to the target list.|
 |[back](#back)|Returns a reference to the last element of a list.|
@@ -100,7 +100,7 @@ Include the C++ Standard Library standard header \<list> to define the [containe
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the elements of the list with a copy of another list.|
 
