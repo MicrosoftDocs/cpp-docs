@@ -8,7 +8,7 @@ ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
 
 Virtually all database products, SQL and NoSQL, provide an interface for native C++ applications. The industry standard interface is ODBC which is supported by all major SQL database products and many NoSQL products. For non-Microsoft products, consult the vendor for more information. Third-party libraries with various license terms are also available.
 
-Since 2011 Microsoft has aligned on ODBC as the standard for native applications to connecting to Microsoft SQL Server databases, both on-premises and in the cloud. For more information, see [Data Access Programming \(MFC-ATL\)](data-access-programming-mfc-atl.md). C++/CLI libraries can use either the native ODBC drivers or ADO.NET. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md) and [Accessing data in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
+Since 2011 Microsoft has aligned on ODBC as the standard for native applications to connecting to Microsoft SQL Server databases, both on-premises and in the cloud. For more information, see [Data Access Programming \(MFC-ATL\)](data-access-programming-mfc-atl.md). C++/CLI libraries can use either the native ODBC drivers or ADO.NET. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md) and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).
 
 ## In This Section
 
@@ -38,10 +38,10 @@ The latest OLE DB driver is a stand-alone data access application programming in
 [Microsoft Azure C and C++ Developer Center](https://azure.microsoft.com/develop/cpp/)<br/>
 Azure makes it easy to build C++ applications with increased flexibility, scalability and reliability using tools you love.
 
-[How to use Blob Storage from C++](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
+[How to use Blob Storage from C++](/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
 Azure Blob storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
 
-[ODBC Programmer's Reference](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
+[ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference)<br/>
 The ODBC interface is designed for use with the C programming language. Use of the ODBC interface spans three areas: SQL statements, ODBC function calls, and C programming.
 
 ## See also

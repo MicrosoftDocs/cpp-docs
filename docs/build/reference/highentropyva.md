@@ -24,4 +24,4 @@ By default, the linker enables **`/HIGHENTROPYVA`** for 64-bit executable images
 [EDITBIN Options](editbin-options.md)\
 [`/DYNAMICBASE`](dynamicbase.md)\
 [`/LARGEADDRESSAWARE`](largeaddressaware.md)\
-[Windows ISV Software Security Defenses](https://docs.microsoft.com/previous-versions/bb430720(v=msdn.10))
+[Windows ISV Software Security Defenses](/previous-versions/bb430720(v=msdn.10))

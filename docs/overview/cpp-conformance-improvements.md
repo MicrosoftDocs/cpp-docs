@@ -1932,7 +1932,7 @@ Starting in C++17, the operands of the operators `->*`, `[]`, `>>`, and `<<` mus
 
 - when compiled by using **`/clr`**, and one of the operands is a field of an object or an array element.
 
-The compiler emits warning [C4866](https://docs.microsoft.com/cpp/error-messages/compiler-warnings/c4866?view=vs-2017) when it can't guarantee left-to-right evaluation. The compiler generates this warning only if **`/std:c++17`** or later is specified, as the left-to-right order requirement of these operators was introduced in C++17.
+The compiler emits warning [C4866](../error-messages/compiler-warnings/c4866.md) when it can't guarantee left-to-right evaluation. The compiler generates this warning only if **`/std:c++17`** or later is specified, as the left-to-right order requirement of these operators was introduced in C++17.
 
 To resolve this warning, first consider whether left-to-right evaluation of the operands is necessary. For example, it could be necessary when evaluation of the operands might produce order-dependent side-effects. The order in which operands are evaluated has no observable effect in many cases. If the order of evaluation must be left-to-right, consider whether you can pass the operands by const reference instead. This change eliminates the warning in the following code sample:
 
