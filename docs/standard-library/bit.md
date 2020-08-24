@@ -1,22 +1,15 @@
 ---
 title: "&lt;bit&gt;"
-ms.date: "08/08/2020"
+ms.date: "08/24/2020"
 f1_keywords: ["<bit>"]
 helpviewer_keywords: ["bit header"]
 ---
 
 # &lt;bit&gt;
 
-Quickly convert a character sequence to an integer or floating-point value, and the other way around.
-One way to use this library is to write and roundtrip floating-point values in JSON and text files.
+This header provides functions to access, manipulate, and process individual bits and sequences of bits.
 
-Some of the benefits of using the `<bit>` library are:
-
-- The sequence of chars representing a numeric value doesn't need to be null-terminated. Likewise, when a number is converted to chars, the result isn't null-terminated.
-- Conversion functions don't allocate memory. You own the buffer in all cases.
-- Conversion functions don't throw. They return a structure that contains error information.
-- Conversions aren't runtime rounding-mode sensitive.
-- Conversions aren't locale aware. They always print and parse decimal points as '.' never as ',' for locales that use commas.
+For example, rotate bits, find the number of consecutive set or clear bits, see if a number is an integral power of two, find the smallest number of bits to represent a number, and so on.
 
 ## Requirements
 
@@ -24,7 +17,7 @@ Some of the benefits of using the `<bit>` library are:
 
 **Namespace:** std
 
-/std:c++20, or later, is required.
+/std:c++latest is required
 
 ## Members
 
@@ -38,10 +31,19 @@ Some of the benefits of using the `<bit>` library are:
 
 | Function | Description |
 |-|:-|
-| [from_chars](charconv-functions.md#from_chars) | Convert chars to an integer, float, or double. |
-| [to_chars](charconv-functions.md#to_chars)| Convert an integer, float, or double to chars. |
+|[bit_cast](bit-functions.md#bit_cast) | Reinterpret the object representation of one type as that of another |
+|[bit_ceil](bit-functions.md#bit_ceil) | Finds the smallest power of 2 greater than or equal to the given value |
+|[bit_floor](bit-functions.md#bit_floor) | Finds the largest integral power of two not greater than the given value |
+|[bit_width](bit-functions.md#bit_width) | Finds the smallest number of bits needed to represent the given value |
+|[countl_zero](bit-functions.md#countl_zero) | Counts the number of consecutive 0 bits, starting from the most significant bit |
+|[countl_one](bit-functions.md#countl_one) | Counts the number of consecutive 1 bits, starting from the most significant bit |
+|[countr_zero](bit-functions.md#countr_zero) | Counts the number of consecutive 0 bits, starting from the least significant bit |
+|[countr_one](bit-functions.md#countl_one) | Counts the number of consecutive 1 bits, starting from the least significant bit |
+|[has_single_bit](bit-functions.md#has_single_bit) | Checks if a value has only a single bit set, that is, is an integral power of two. |
+|[popcount](bit-functions.md#popcount) | Counts the number of 1 bits in an unsigned integer |
+|[rotl](bit-functions.md#rotl) | Computes the result of bitwise left-rotation |
+|[rotr](bit-functions.md#rotr) | Computes the result of bitwise right-rotation |
 
 ## See also
 
 [Header Files Reference](cpp-standard-library-header-files.md)
-
