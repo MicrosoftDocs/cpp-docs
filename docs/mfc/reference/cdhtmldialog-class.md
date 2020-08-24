@@ -124,7 +124,7 @@ The DDX_DHtml helper macros allow easy access to the commonly used properties of
 
 ### Data Exchange Macros
 
-|||
+|Name|Description|
 |-|-|
 |[DDX_DHtml_ElementValue](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_elementvalue)|Sets or retrieves the Value property from the selected control.|
 |[DDX_DHtml_ElementInnerText](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_elementinnertext)|Sets or retrieves the text between the start and end tags of the current element.|

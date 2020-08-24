@@ -41,7 +41,7 @@ class CComVariant : public tagVARIANT
 
 ### Public Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[CComVariant::operator <](#operator_lt)|Indicates whether the `CComVariant` object is less than the specified VARIANT.|
 |[CComVariant::operator >](#operator_gt)|Indicates whether the `CComVariant` object is greater than the specified VARIANT.|

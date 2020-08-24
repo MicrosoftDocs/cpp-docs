@@ -10,44 +10,44 @@ ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
 
 :::row:::
     :::column:::
-        **`auto`**<br/>
-        **`double`**<br/>
-        **`int`**<br/>
-        **`struct`**<br/>
-        **`break`**<br/>
-        **`else`**<br/>
-        **`long`**<br/>
-        **`switch`**<br/>
+        **`auto`**\
+        **`double`**\
+        **`int`**\
+        **`struct`**\
+        **`break`**\
+        **`else`**\
+        **`long`**\
+        **`switch`**
     :::column-end:::
     :::column:::
-        **`case`**<br/>
-        **`enum`**<br/>
-        **`register`**<br/>
-        **`typedef`**<br/>
-        **`char`**<br/>
-        **`extern`**<br/>
-        **`return`**<br/>
-        **`union`**<br/>
+        **`case`**\
+        **`enum`**\
+        **`register`**\
+        **`typedef`**\
+        **`char`**\
+        **`extern`**\
+        **`return`**\
+        **`union`**
     :::column-end:::
     :::column:::
-        **`const`**<br/>
-        **`float`**<br/>
-        **`short`**<br/>
-        **`unsigned`**<br/>
-        **`continue`**<br/>
-        **`for`**<br/>
-        **`signed`**<br/>
-        **`void`**<br/>
+        **`const`**\
+        **`float`**\
+        **`short`**\
+        **`unsigned`**\
+        **`continue`**\
+        **`for`**\
+        **`signed`**\
+        **`void`**
     :::column-end:::
     :::column:::
-        **`default`**<br/>
-        **`goto`**<br/>
-        **`sizeof`**<br/>
-        **`volatile`**<br/>
-        **`do`**<br/>
-        **`if`**<br/>
-        **`static`**<br/>
-        **`while`**<br/>
+        **`default`**\
+        **`goto`**\
+        **`sizeof`**\
+        **`volatile`**\
+        **`do`**\
+        **`if`**\
+        **`static`**\
+        **`while`**
     :::column-end:::
 :::row-end:::
 
@@ -61,31 +61,31 @@ The following keywords and special identifiers are recognized by the Microsoft C
 
 :::row:::
     :::column:::
-        **`__asm`**<sup>3</sup><br/>
-        **`dllimport`**<sup>2</sup><br/>
-        **`__int8`**<sup>3</sup><br/>
-        **`naked`**<sup>2</sup><br/>
-        **`__based`**<sup>1, 3</sup><br/>
+        **`__asm`**<sup>3</sup>\
+        **`dllimport`**<sup>2</sup>\
+        **`__int8`**<sup>3</sup>\
+        **`naked`**<sup>2</sup>\
+        **`__based`**<sup>1, 3</sup>
     :::column-end:::
     :::column:::
-        **`__except`**<sup>3</sup><br/>
-        **`__int16`**<sup>3</sup><br/>
-        **`__stdcall`**<sup>3</sup><br/>
-        **`__cdecl`**<sup>3</sup><br/>
-        **`__fastcall`**<br/>
+        **`__except`**<sup>3</sup>\
+        **`__int16`**<sup>3</sup>\
+        **`__stdcall`**<sup>3</sup>\
+        **`__cdecl`**<sup>3</sup>\
+        **`__fastcall`**
     :::column-end:::
     :::column:::
-        **`__int32`**<sup>3</sup><br/>
-        **`thread`**<sup>2</sup><br/>
-        **`__declspec`**<sup>3</sup><br/>
-        **`__finally`**<sup>3</sup><br/>
-        **`__int64`**<sup>3</sup><br/>
+        **`__int32`**<sup>3</sup>\
+        **`thread`**<sup>2</sup>\
+        **`__declspec`**<sup>3</sup>\
+        **`__finally`**<sup>3</sup>\
+        **`__int64`**<sup>3</sup>
     :::column-end:::
     :::column:::
-        **`__try`**<sup>3</sup><br/>
-        **`dllexport`**<sup>2</sup><br/>
-        **`__inline`**<sup>3</sup><br/>
-        **`__leave`**<sup>3</sup><br/>
+        **`__try`**<sup>3</sup>\
+        **`dllexport`**<sup>2</sup>\
+        **`__inline`**<sup>3</sup>\
+        **`__leave`**<sup>3</sup>
     :::column-end:::
 :::row-end:::
 

@@ -23,7 +23,7 @@ class CDataSource
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Close](#close)|Closes the connection.|
 |[GetInitializationString](#getinitializationstring)|Retrieves the initialization string of the data source that is currently open.|

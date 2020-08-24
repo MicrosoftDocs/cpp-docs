@@ -52,10 +52,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
 
 The class template describes a distribution that produces values of a user-specified floating-point type, or type **`double`** if none is provided, distributed according to the Gamma Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[gamma_distribution](#gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|
-|`gamma_distribution::operator()`|`gamma_distribution::beta`|[param_type](#param_type)|
+[gamma_distribution](#gamma_distribution)\
+[param_type](#param_type)
 
 The property functions `alpha()` and `beta()` return their respective values for stored distribution parameters *alpha* and *beta*.
 

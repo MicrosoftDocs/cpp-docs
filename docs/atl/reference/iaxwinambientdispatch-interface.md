@@ -22,7 +22,7 @@ interface IAxWinAmbientDispatch : IDispatch
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[get_AllowContextMenu](#get_allowcontextmenu)|The `AllowContextMenu` property specifies whether the hosted control is allowed to display its own context menu.|
 |[get_AllowShowUI](#get_allowshowui)|The `AllowShowUI` property specifies whether the hosted control is allowed to display its own user interface.|

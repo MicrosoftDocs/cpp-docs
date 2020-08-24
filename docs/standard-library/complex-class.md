@@ -34,26 +34,26 @@ Explicit specializations of class template complex exist for the three floating-
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[complex](#complex)|Constructs a complex number with specified real and imaginary parts or as a copy of some other complex number.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the data type used to represent the real and imaginary parts of a complex number.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[imag](#imag)|Extracts the imaginary component of a complex number.|
 |[real](#real)|Extracts the real component of a complex number.|
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator*=](#op_star_eq)|Multiplies a target complex number by a factor, which may be complex or be the same type as are the real and imaginary parts of the complex number.|
 |[operator+=](#op_add_eq)|Adds a number to a target complex number, where the number added may be complex or of the same type as are the real and imaginary parts of the complex number to which it is added.|

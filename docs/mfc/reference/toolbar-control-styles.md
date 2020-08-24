@@ -12,7 +12,7 @@ ms.assetid: 0f717eb9-fa32-4263-b852-809238863feb
 
 The following values determine the type of button that the control represents:
 
-|||
+|Name|Description|
 |-|-|
 |TBBS_BUTTON|Standard pushbutton (default).  |
 |TBBS_CHECKBOX|Check box.  |
@@ -22,7 +22,7 @@ The following values determine the type of button that the control represents:
 
 The following values represent the current status of the control:
 
-|||
+|Name|Description|
 |-|-|
 |TBBS_CHECKED|Check box is checked.  |
 |TBBS_DISABLED|Control is disabled.  |
@@ -31,7 +31,7 @@ The following values represent the current status of the control:
 
 The following value changes the layout of the button in the toolbar:
 
-|||
+|Name|Description|
 |-|-|
 |TBBS_BREAK|Places the item on a new line or in a new column without separating columns.  |
 

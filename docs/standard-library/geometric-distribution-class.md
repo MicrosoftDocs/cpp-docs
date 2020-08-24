@@ -51,10 +51,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
 
 The class template describes a distribution that produces values of a user-specified integral type with a geometric distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[geometric_distribution](#geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|
-|`geometric_distribution::operator()`||[param_type](#param_type)|
+[geometric_distribution](#geometric_distribution)\
+[param_type](#param_type)
 
 The property function `p()` returns the value for stored distribution parameter `p`.
 

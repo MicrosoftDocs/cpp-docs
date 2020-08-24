@@ -37,7 +37,6 @@ class CBaseTabbedPane : public CDockablePane
 |[CBaseTabbedPane::EnableSetCaptionTextToTabName](#enablesetcaptiontexttotabname)|Enables or disables the ability of the tabbed pane to synchronize caption text with the label text on the active tab.|
 |[CBaseTabbedPane::FillDefaultTabsOrderArray](#filldefaulttabsorderarray)|Restores the internal tab order to a default state.|
 |[CBaseTabbedPane::FindBarByTabNumber](#findbarbytabnumber)|Returns a pane that resides in a tab when the tab is identified by a zero-based tab index.|
-|||
 |[CBaseTabbedPane::FindPaneByID](#findpanebyid)|Returns a pane that is identified by the pane ID.|
 |[CBaseTabbedPane::FloatTab](#floattab)|Floats a pane, but only if the pane currently resides in a detachable tab.|
 |[CBaseTabbedPane::GetDefaultTabsOrder](#getdefaulttabsorder)|Returns the default order of tabs in the pane.|

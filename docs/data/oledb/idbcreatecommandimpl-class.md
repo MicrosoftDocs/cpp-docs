@@ -33,7 +33,7 @@ Your command class.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CreateCommand](#createcommand)|Creates a new command.|
 

@@ -6,10 +6,10 @@ ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
 ---
 # &lt;string&gt; typedefs
 
-||||
-|-|-|-|
-|[string](#string)|[u16string](#u16string)|[u32string](#u32string)|
-|[wstring](#wstring)|
+[string](#string)\
+[u16string](#u16string)\
+[u32string](#u32string)\
+[wstring](#wstring)
 
 ## <a name="string"></a> string
 

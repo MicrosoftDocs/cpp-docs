@@ -23,19 +23,19 @@ An object of type `error_condition` stores an error code value and a pointer to 
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[error_condition](#error_condition)|Constructs an object of type `error_condition`.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the stored error code value.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[assign](#assign)|Assigns an error code value and category to an error condition.|
 |[category](#category)|Returns the error category.|
@@ -44,7 +44,7 @@ An object of type `error_condition` stores an error code value and a pointer to 
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator==](#op_eq_eq)|Tests for equality between `error_condition` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_condition` objects.|

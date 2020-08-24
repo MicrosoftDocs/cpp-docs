@@ -33,7 +33,7 @@ The session object.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CreateSession](#createsession)|Creates a new session from the data source object and returns the requested interface on the newly created session.|
 

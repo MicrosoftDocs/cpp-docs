@@ -12,7 +12,7 @@ These functions provide support for creating dialog boxes, and for creating, hos
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Function|Description|
 |-|-|
 |[AtlAxDialogBox](#atlaxdialogbox)|Creates a modal dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|
 |[AtlAxCreateDialog](#atlaxcreatedialog)|Creates a modeless dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|

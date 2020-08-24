@@ -29,12 +29,11 @@ The metadata in the .winmd file represents the published surface of your code. P
 
 Whether a type or method is visible in metadata depends on what accessibility modifiers are applied to it. To be visible, a type must be declared in a namespace and must be declared as public. A non-public ref class is permitted as an internal helper type in your code; it just isn't visible in the metadata. Even in a public ref class, not all members are necessarily visible. The following table lists the relationship between C++ access specifiers in a public ref class, and Windows Runtime metadata visibility:
 
-|||
-|-|-|
-|**Published in metadata**|**Not published in metadata**|
-|public|private|
-|protected|internal|
-|public protected|private protected|
+| Published in metadata | Not published in metadata |
+|--|--|
+| public | private |
+| protected | internal |
+| public protected | private protected |
 
 You can use the **Object Browser** to view the contents of .winmd files. The Windows Runtime components that are included with Windows are in the Windows.winmd file. The default.winmd file contains the fundamental types that are used in C++/CX, and platform.winmd contains additional types from the Platform namespace. By default, these three .winmd files are included in every C++ project for Universal Windows Platform apps.
 

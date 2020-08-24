@@ -10,7 +10,7 @@ DAO is used with Access databases and is supported through Office 2013. DAO 3.6 
 
 ### DAO Database Engine Initialization and Termination
 
-|||
+|Name|Description|
 |-|-|
 |[AfxDaoInit](#afxdaoinit)|Initializes the DAO database engine.|
 |[AfxDaoTerm](#afxdaoterm)|Terminates the DAO database engine.|

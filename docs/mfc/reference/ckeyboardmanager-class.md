@@ -19,16 +19,14 @@ class CKeyboardManager : public CObject
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CKeyboardManager::CKeyboardManager](#ckeyboardmanager)|Constructs a `CKeyboardManager` object.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CKeyboardManager::CleanUp](#cleanup)|Clears the shortcut key tables.|
 |[CKeyboardManager::FindDefaultAccelerator](#finddefaultaccelerator)|Retrieves the default shortcut key for the specified command and window.|
 |[CKeyboardManager::IsKeyHandled](#iskeyhandled)|Determines whether a key is handled by the accelerator table.|

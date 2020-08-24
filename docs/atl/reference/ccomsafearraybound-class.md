@@ -19,7 +19,7 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[CComSafeArrayBound](#ccomsafearraybound)|The constructor.|
 |[GetCount](#getcount)|Call this method to return the number of elements.|
@@ -30,7 +30,7 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator =](#operator_eq)|Sets the `CComSafeArrayBound` to a new value.|
 

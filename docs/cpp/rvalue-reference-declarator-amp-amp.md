@@ -383,13 +383,12 @@ This version of the `print_type_and_value` function then forwards its parameter 
 
 The following table summarizes the reference collapsing rules for template argument type deduction:
 
-|||
-|-|-|
-|Expanded type|Collapsed type|
-|`T& &`|`T&`|
-|`T& &&`|`T&`|
-|`T&& &`|`T&`|
-|`T&& &&`|`T&&`|
+| Expanded type | Collapsed type |
+|--|--|
+| `T& &` | `T&` |
+| `T& &&` | `T&` |
+| `T&& &` | `T&` |
+| `T&& &&` | `T&&` |
 
 Template argument deduction is an important element of implementing perfect forwarding. The section Perfect Forwarding, which is presented earlier in this topic, describes perfect forwarding in more detail.
 

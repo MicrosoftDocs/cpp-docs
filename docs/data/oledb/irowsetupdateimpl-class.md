@@ -53,13 +53,13 @@ The storage unit for all row handles held by the provider.
 
 ### Interface Methods (Used with IRowsetChange)
 
-|||
+| Name | Description |
 |-|-|
 |[SetData](#setdata)|Sets data values in one or more columns.|
 
 ### Interface Methods (Used with IRowsetUpdate)
 
-|||
+| Name | Description |
 |-|-|
 |[GetOriginalData](#getoriginaldata)|Gets the data most recently transmitted to or obtained from the data source, ignoring pending changes.|
 |[GetPendingRows](#getpendingrows)|Returns a list of rows with pending changes.|
@@ -69,13 +69,13 @@ The storage unit for all row handles held by the provider.
 
 ### Implementation Methods (Callback)
 
-|||
+| Name | Description |
 |-|-|
 |[IsUpdateAllowed](#isupdateallowed)|Used to check for security, integrity, and so on before allowing updates.|
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_mapCachedData](#mapcacheddata)|Contains the original data for the deferred operation.|
 

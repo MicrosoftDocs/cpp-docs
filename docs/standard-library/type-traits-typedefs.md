@@ -6,9 +6,8 @@ ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
 ---
 # &lt;type_traits&gt; typedefs
 
-|||
-|-|-|
-|[false_type](#false_type)|[true_type](#true_type)|
+[false_type](#false_type)\
+[true_type](#true_type)
 
 ## <a name="false_type"></a> false_type Typedef
 

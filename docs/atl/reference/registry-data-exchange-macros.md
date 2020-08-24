@@ -9,7 +9,7 @@ ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
 
 These macros perform Registry Data Exchange operations.
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_RDX_MAP](#begin_rdx_map)|Marks the beginning of the Registry Data Exchange map.|
 |[END_RDX_MAP](#end_rdx_map)|Marks the end of the Registry Data Exchange map.|

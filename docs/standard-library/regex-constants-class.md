@@ -23,7 +23,7 @@ namespace regex_constants {
 
 The namespace `regex_constants` encapsulates several flag types and their associated flag values.
 
-|||
+|Name|Description|
 |-|-|
 |[error_type](#error_type)|Flags for reporting regular expression syntax errors.|
 |[match_flag_type](#match_flag_type)|Flags for regular expression matching options.|

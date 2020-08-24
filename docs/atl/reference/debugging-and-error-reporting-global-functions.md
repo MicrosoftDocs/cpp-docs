@@ -9,7 +9,7 @@ ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
 
 These functions provide useful debugging and trace facilities.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)|Returns a `GetLastError` error code in the form of an HRESULT.|
 |[AtlHresultFromWin32](debugging-and-error-reporting-global-functions.md#atlhresultfromwin32)|Converts a Win32 error code into an HRESULT.|

@@ -19,13 +19,13 @@ class condition_variable_any;
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[condition_variable_any](#condition_variable_any)|Constructs a `condition_variable_any` object.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[notify_all](#notify_all)|Unblocks all threads that are waiting for the `condition_variable_any` object.|
 |[notify_one](#notify_one)|Unblocks one of the threads that are waiting for the `condition_variable_any` object.|

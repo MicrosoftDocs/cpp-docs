@@ -6,14 +6,24 @@ ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
 ---
 # &lt;regex&gt; typedefs
 
-||||
-|-|-|-|
-|[cmatch](#cmatch)|[cregex_iterator](#cregex_iterator)|[cregex_token_iterator](#cregex_token_iterator)|
-|[csub_match](#csub_match)|[regex](#regex)|[smatch](#smatch)|
-|[sregex_iterator](#sregex_iterator)|[sregex_token_iterator](#sregex_token_iterator)|[ssub_match](#ssub_match)|
-|[wcmatch](#wcmatch)|[wcregex_iterator](#wcregex_iterator)|[wcregex_token_iterator](#wcregex_token_iterator)|
-|[wcsub_match](#wcsub_match)|[wregex](#wregex)|[wsmatch](#wsmatch)|
-|[wsregex_iterator](#wsregex_iterator)|[wsregex_token_iterator](#wsregex_token_iterator)|[wssub_match](#wssub_match)|
+[cmatch](#cmatch)\
+[cregex_iterator](#cregex_iterator)\
+[cregex_token_iterator](#cregex_token_iterator)\
+[csub_match](#csub_match)\
+[regex](#regex)\
+[smatch](#smatch)\
+[sregex_iterator](#sregex_iterator)\
+[sregex_token_iterator](#sregex_token_iterator)\
+[ssub_match](#ssub_match)\
+[wcmatch](#wcmatch)\
+[wcregex_iterator](#wcregex_iterator)\
+[wcregex_token_iterator](#wcregex_token_iterator)\
+[wcsub_match](#wcsub_match)\
+[wregex](#wregex)\
+[wsmatch](#wsmatch)\
+[wsregex_iterator](#wsregex_iterator)\
+[wsregex_token_iterator](#wsregex_token_iterator)\
+[wssub_match](#wssub_match)
 
 ## <a name="cmatch"></a> cmatch Typedef
 

@@ -87,9 +87,8 @@ The *format* argument consists of one or more codes; as in **printf**, the forma
 
 The **strftime** functions support these formatting codes:
 
-|||
-|-|-|
 |Code|Replacement string|
+|-|-|
 |**%a**|Abbreviated weekday name in the locale|
 |**%A**|Full weekday name in the locale|
 |**%b**|Abbreviated month name in the locale|

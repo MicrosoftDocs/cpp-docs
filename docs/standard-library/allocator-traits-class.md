@@ -20,7 +20,7 @@ template <class Alloc>
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |`allocator_type`|This type is a synonym for the template parameter `Alloc`.|
 |`const_pointer`|This type is `Alloc::const_pointer`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::rebind<const value_type>`.|
@@ -38,7 +38,7 @@ template <class Alloc>
 
 The following static methods call the corresponding method on a given allocator parameter.
 
-|||
+|Name|Description|
 |-|-|
 |[allocate](#allocate)|Static method that allocates memory by using the given allocator parameter.|
 |[construct](#construct)|Static method that uses a specified allocator to construct an object.|

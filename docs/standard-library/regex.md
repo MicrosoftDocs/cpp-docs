@@ -44,7 +44,7 @@ To modify the details of the grammar of regular expressions, write a class that 
 
 ### Type Definitions
 
-|||
+|Name|Description|
 |-|-|
 |[cmatch](../standard-library/regex-typedefs.md#cmatch)|Type definition for **`char`** `match_results`.|
 |[cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator)|Type definition for **`char`** `regex_iterator`.|

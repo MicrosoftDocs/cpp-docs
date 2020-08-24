@@ -19,7 +19,7 @@ __interface __declspec(uuid("654F7EF5-CFDF-4df9-A450-6C6A13C622C0")) IAtlMemMgr
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[Allocate](#allocate)|Call this method to allocate a block of memory.|
 |[Free](#free)|Call this method to free a block of memory.|

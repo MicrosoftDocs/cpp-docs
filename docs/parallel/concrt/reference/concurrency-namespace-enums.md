@@ -6,13 +6,28 @@ ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
 ---
 # concurrency namespace enums
 
-||||
-|-|-|-|
-|[Agents_EventType](#agents_eventtype)|[ConcRT_EventType](#concrt_eventtype)|[Concrt_TraceFlags](#concrt_traceflags)|
-|[CriticalRegionType](#criticalregiontype)|[DynamicProgressFeedbackType](#dynamicprogressfeedbacktype)|[PolicyElementKey](#policyelementkey)|
-|[SchedulerType](#schedulertype)|[SchedulingProtocolType](#schedulingprotocoltype)|[SwitchingProxyState](#switchingproxystate)|
-|[WinRTInitializationType](#winrtinitializationtype)|[agent_status](#agent_status)|[join_type](#join_type)|
-|[message_status](#message_status)|[task_group_status](#task_group_status)|
+:::row:::
+   :::column span="":::
+      [`agent_status`](#agent_status)\
+      [`Agents_EventType`](#agents_eventtype)\
+      [`ConcRT_EventType`](#concrt_eventtype)\
+      [`Concrt_TraceFlags`](#concrt_traceflags)\
+      [`CriticalRegionType`](#criticalregiontype)
+   :::column-end:::
+   :::column span="":::
+      [`DynamicProgressFeedbackType`](#dynamicprogressfeedbacktype)\
+      [`join_type`](#join_type)\
+      [`message_status`](#message_status)\
+      [`PolicyElementKey`](#policyelementkey)\
+      [`SchedulerType`](#schedulertype)
+   :::column-end:::
+   :::column span="":::
+      [`SchedulingProtocolType`](#schedulingprotocoltype)\
+      [`SwitchingProxyState`](#switchingproxystate)\
+      [`task_group_status`](#task_group_status)\
+      [`WinRTInitializationType`](#winrtinitializationtype)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="agent_status"></a> agent_status Enumeration
 

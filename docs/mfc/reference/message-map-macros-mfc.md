@@ -11,7 +11,7 @@ To support message maps, MFC supplies the following macros:
 
 ### Message-Map Declaration and Demarcation Macros
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_MESSAGE_MAP](#declare_message_map)|Declares that a message map will be used in a class to map messages to functions (must be used in the class declaration).|
 |[BEGIN_MESSAGE_MAP](#begin_message_map)|Begins the definition of a message map (must be used in the class implementation).|
@@ -20,7 +20,7 @@ To support message maps, MFC supplies the following macros:
 
 ### Message-Mapping Macros
 
-|||
+|Name|Description|
 |-|-|
 |[ON_COMMAND](#on_command)|Indicates which function will handle a specified command message.|
 |[ON_COMMAND_EX](#on_command_ex)|Indicates which function will handle a specified command message.|
@@ -34,7 +34,7 @@ To support message maps, MFC supplies the following macros:
 
 ### Message-Map Range Macros
 
-|||
+|Name|Description|
 |-|-|
 |[ON_COMMAND_RANGE](#on_command_range)|Indicates which function will handle the range of command IDs specified in the first two parameters to the macro.|
 |[ON_UPDATE_COMMAND_UI_RANGE](#on_update_command_ui_range)|Indicates which update handler will handle the range of command IDs specified in the first two parameters to the macro.|

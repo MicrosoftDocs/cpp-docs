@@ -12,7 +12,7 @@ These functions provide support for loading and registering a type library.
 > [!IMPORTANT]
 > The functions listed in the following tables cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AfxRegCreateKey](#afxregcreatekey)|Creates the specified registry key.|
 |[AfxRegDeleteKey](#afxregdeletekey)|Deletes the specified registry key.|
@@ -28,7 +28,7 @@ These functions provide support for loading and registering a type library.
 
 These functions control which node in the registry the program uses to store information.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlGetPerUserRegistration](#atlgetperuserregistration)|Retrieves whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|
 |[AtlSetPerUserRegistration](#atlsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|

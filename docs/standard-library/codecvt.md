@@ -35,7 +35,7 @@ For byte streams (stored in a file, transmitted as a byte sequence, or stored wi
 
 ### Enumerations
 
-|||
+|Name|Description|
 |-|-|
 |[codecvt_mode](../standard-library/codecvt-enums.md#codecvt_mode)|Specifies configuration information for locale facets.|
 

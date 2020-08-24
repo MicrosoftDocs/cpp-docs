@@ -19,7 +19,7 @@ interface IAxWinHostWindowLic : IAxWinHostWindow
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[CreateControlLic](#createcontrollic)|Creates a licensed control and attaches it to the host object.|
 |[CreateControlLicEx](#createcontrollicex)|Creates a licensed control, attaches it to the host object, and optionally sets up an event handler.|

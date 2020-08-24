@@ -24,7 +24,7 @@ class CEnumerator :
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Find](#find)|Searches through available providers (data sources) looking for one with the specified name.|
 |[GetMoniker](#getmoniker)|Retrieves the `IMoniker` interface for the current record.|

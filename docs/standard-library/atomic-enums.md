@@ -24,7 +24,7 @@ typedef enum memory_order {
 
 ### Enumeration members
 
-|||
+|Name|Description|
 |-|-|
 |`memory_order_relaxed`|No ordering required.|
 |`memory_order_consume`|A load operation acts as a consume operation on the memory location.|
