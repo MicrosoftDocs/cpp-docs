@@ -51,7 +51,7 @@ MFC provides classes that support Internet programming. You can use [COleControl
 
 ## <a name="_core_web_sites_for_more_information"></a> Websites for more information
 
-For more information about Microsoft Internet technology, see [Microsoft Docs](https://docs.microsoft.com/).
+For more information about Microsoft Internet technology, see [Networking and Internet](/windows/win32/networking).
 
 The [World Wide Web Consortium (W3C)](https://go.microsoft.com/fwlink/p/?linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.
 

@@ -36,4 +36,4 @@ By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICB
 - [MSVC linker reference](linking.md)
 - [MSVC Linker Options](linker-options.md)
 - [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)
-- [Windows ISV Software Security Defenses](https://docs.microsoft.com/previous-versions/bb430720(v=msdn.10))
+- [Windows ISV Software Security Defenses](/previous-versions/bb430720(v=msdn.10))
