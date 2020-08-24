@@ -49,7 +49,7 @@ The behavior of the `DEVMODE` and `TEXTMETRIC` string conversion macros depends 
 
 The following table lists the `DEVMODE` and `TEXTMETRIC` string conversion macros.
 
-|||
+|`DEVMODE` macro|`TEXTMETRIC` macro|
 |-|-|
 |DEVMODEA2W|TEXTMETRICA2W|
 |DEVMODEOLE2T|TEXTMETRICOLE2T|

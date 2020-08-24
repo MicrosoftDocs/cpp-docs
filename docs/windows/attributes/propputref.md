@@ -25,9 +25,7 @@ See the example for [bindable](bindable.md) for a sample use of **propputref**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Method|
 |**Repeatable**|No|

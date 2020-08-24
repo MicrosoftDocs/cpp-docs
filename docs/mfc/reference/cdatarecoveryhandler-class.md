@@ -19,13 +19,13 @@ class CDataRecoveryHandler : public CObject
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[CDataRecoveryHandler::CDataRecoveryHandler](#cdatarecoveryhandler)|Constructs a `CDataRecoveryHandler` object.|
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[CDataRecoveryHandler::AutosaveAllDocumentInfo](#autosavealldocumentinfo)|Autosaves each file registered with the `CDataRecoveryHandler` class.|
 |[CDataRecoveryHandler::AutosaveDocumentInfo](#autosavedocumentinfo)|Autosaves the specified document.|
@@ -57,7 +57,7 @@ class CDataRecoveryHandler : public CObject
 
 ### Data Members
 
-|||
+|Name|Description|
 |-|-|
 |m_bRestoringPreviousOpenDocs|Indicates whether the data recovery handler reopens previously open documents.|
 |m_bSaveDocumentInfoOnIdle|Indicates whether the data recovery handler autosaves documents on the next idle loop.|

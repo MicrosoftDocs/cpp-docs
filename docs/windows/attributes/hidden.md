@@ -25,9 +25,7 @@ See the example for [bindable](bindable.md) for an example of how to use **hidde
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**, **`class`**, **`struct`**, method, property|
 |**Repeatable**|No|

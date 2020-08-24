@@ -32,7 +32,7 @@ A class that represents an OLE DB error object.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetErrorDescriptionString](#geterrordescriptionstring)|Gets the error description string from an error record.|
 |[GetErrorGUID](#geterrorguid)|Gets the error GUID from an error record.|
@@ -42,7 +42,7 @@ A class that represents an OLE DB error object.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddErrorRecord](#adderrorrecord)|Adds a record to the OLE DB error object.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|Returns basic information about the error, such as the return code and provider-specific error number.|
@@ -53,7 +53,7 @@ A class that represents an OLE DB error object.
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_rgErrors](#rgerrors)|An array of error records.|
 

@@ -23,7 +23,7 @@ class CDBPropSet : public tagDBPROPSET
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddProperty](#addproperty)|Adds a property to the property set.|
 |[CDBPropSet](#cdbpropset)|Constructor.|
@@ -31,7 +31,7 @@ class CDBPropSet : public tagDBPROPSET
 
 ### Operators
 
-|||
+| Name | Description |
 |-|-|
 |[operator =](#op_equal)|Assigns the contents of one property set to another.|
 

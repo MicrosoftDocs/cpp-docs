@@ -14,7 +14,7 @@ This topic lists the DDX_Field functions used to exchange data between a [CRecor
 
 ### DDX_Field Functions
 
-|||
+|Name|Description|
 |-|-|
 |[DDX_FieldCBIndex](#ddx_fieldcbindex)|Transfers integer data between a recordset field data member and the index of the current selection in a combo box in a [CRecordView](../../mfc/reference/crecordview-class.md) or [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md).|
 |[DDX_FieldCBString](#ddx_fieldcbstring)|Transfers `CString` data between a recordset field data member and the edit control of a combo box in a `CRecordView` or `CDaoRecordView`. When moving data from the recordset to the control, this function selects the item in the combo box that begins with the characters in the specified string.|

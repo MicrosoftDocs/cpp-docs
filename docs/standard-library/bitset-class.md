@@ -31,19 +31,19 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[bitset](#bitset)|Constructs an object of class `bitset\<N>` and initializes the bits to zero, to some specified value, or to values obtained from characters in a string.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[element_type](#element_type)|A type that is a synonym for the data type **`bool`** and can be used to reference element bits in a `bitset`.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[all](#all)|Tests all of the bits in this `bitset` to determine whether they are all set to **`true`**.|
 |[any](#any)|The member function tests whether any bit in the sequence is set to 1.|
@@ -60,13 +60,13 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[reference](#reference)|A proxy class that provides references to bits contained in a `bitset` that is used to access and manipulate the individual bits as a helper class for the `operator[]` of class `bitset`.|
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator!=](#op_neq)|Tests a target `bitset` for inequality with a specified `bitset`.|
 |[operator&=](#op_and_eq)|Performs a bitwise combination of bitsets with the logical `AND` operation.|
@@ -82,7 +82,7 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 ### Structures
 
-|||
+|Name|Description|
 |-|-|
 |[hash](#hash)||
 

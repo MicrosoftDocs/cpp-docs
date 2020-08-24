@@ -387,25 +387,48 @@ BOOL LoadOEMBitmap(UINT nIDBitmap);
 *nIDBitmap*<br/>
 ID number of the predefined Windows bitmap. The possible values are listed below from WINDOWS.H:
 
-|||
-|-|-|
-|OBM_BTNCORNERS|OBM_OLD_RESTORE|
-|OBM_BTSIZE|OBM_OLD_RGARROW|
-|OBM_CHECK|OBM_OLD_UPARROW|
-|OBM_CHECKBOXES|OBM_OLD_ZOOM|
-|OBM_CLOSE|OBM_REDUCE|
-|OBM_COMBO|OBM_REDUCED|
-|OBM_DNARROW|OBM_RESTORE|
-|OBM_DNARROWD|OBM_RESTORED|
-|OBM_DNARROWI|OBM_RGARROW|
-|OBM_LFARROW|OBM_RGARROWD|
-|OBM_LFARROWD|OBM_RGARROWI|
-|OBM_LFARROWI|OBM_SIZE|
-|OBM_MNARROW|OBM_UPARROW|
-|OBM_OLD_CLOSE|OBM_UPARROWD|
-|OBM_OLD_DNARROW|OBM_UPARROW|
-|OBM_OLD_LFARROW|OBM_ZOOM|
-|OBM_OLD_REDUCE|OBM_ZOOMD|
+:::row:::
+   :::column span="":::
+      OBM_BTNCORNERS\
+      OBM_BTSIZE\
+      OBM_CHECK\
+      OBM_CHECKBOXES\
+      OBM_CLOSE\
+      OBM_COMBO\
+      OBM_DNARROW\
+      OBM_DNARROWD\
+      OBM_DNARROWI\
+      OBM_LFARROW\
+      OBM_LFARROWD\
+      OBM_LFARROWI
+   :::column-end:::
+   :::column span="":::
+      OBM_MNARROW\
+      OBM_OLD_CLOSE\
+      OBM_OLD_DNARROW\
+      OBM_OLD_LFARROW\
+      OBM_OLD_REDUCE\
+      OBM_OLD_RESTORE\
+      OBM_OLD_RGARROW\
+      OBM_OLD_UPARROW\
+      OBM_OLD_ZOOM\
+      OBM_REDUCE\
+      OBM_REDUCED
+   :::column-end:::
+   :::column span="":::
+      OBM_RESTORE\
+      OBM_RESTORED\
+      OBM_RGARROW\
+      OBM_RGARROWD\
+      OBM_RGARROWI\
+      OBM_SIZE\
+      OBM_UPARROW\
+      OBM_UPARROW\
+      OBM_UPARROWD\
+      OBM_ZOOM\
+      OBM_ZOOMD
+   :::column-end:::
+:::row-end:::
 
 ### Return Value
 

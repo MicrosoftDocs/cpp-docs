@@ -29,20 +29,20 @@ Your class, derived from `IDBInitializeImpl`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[IDBInitializeImpl](#idbinitializeimpl)|The constructor.|
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Initialize](#initialize)|Starts the provider.|
 |[Uninitialize](#uninitialize)|Stops the provider.|
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_dwStatus](#dwstatus)|Data source flags.|
 |[m_pCUtlPropInfo](#pcutlpropinfo)|A pointer to implementation of DB Properties information.|
@@ -115,7 +115,7 @@ enum DATASOURCE_FLAGS {
 };
 ```
 
-|||
+| Value | Description |
 |-|-|
 |`DSF_MASK_INIT`|A mask to enable restoration of the uninitialized state.|
 |`DSF_PERSIST_DIRTY`|Set if data source object requires persistence (that is, if there have been changes).|

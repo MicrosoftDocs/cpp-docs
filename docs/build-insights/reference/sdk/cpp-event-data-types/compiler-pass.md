@@ -47,7 +47,7 @@ Along with the inherited members from its [Activity](activity.md) base class, th
 
 #### PassCode
 
-|||
+|Value|Description|
 |-|-|
 |FRONT_END|The front-end pass.|
 |BACK_END|The back-end pass.|

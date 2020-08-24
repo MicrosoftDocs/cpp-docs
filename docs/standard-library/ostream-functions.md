@@ -9,10 +9,10 @@ helpviewer_keywords: ["std::swap [C++]", "std::endl [C++]", "std::ends [C++]", "
 
 These are the global template functions defined in &lt;ostream&gt;. For member functions, see the [basic_ostream Class](basic-ostream-class.md) documentation.
 
-||||
-|-|-|-|
-|[endl](#endl)|[ends](#ends)|[flush](#flush)|
-|[swap](#swap)|
+[endl](#endl)\
+[ends](#ends)\
+[flush](#flush)\
+[swap](#swap)
 
 ## endl
 

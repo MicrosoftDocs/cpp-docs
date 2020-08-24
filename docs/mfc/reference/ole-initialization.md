@@ -11,7 +11,7 @@ Before an application can use OLE system services, it must initialize the OLE sy
 
 ### OLE Initialization
 
-|||
+|Name|Description|
 |-|-|
 |[AfxOleInit](#afxoleinit)|Initializes the OLE libraries.|
 |[AfxEnableControlContainer](#afxenablecontrolcontainer)|Call this function in your application object's `InitInstance` function to enable support for containment of OLE controls.|

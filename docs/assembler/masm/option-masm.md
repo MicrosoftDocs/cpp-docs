@@ -19,16 +19,40 @@ Available options include:
 
 :::row:::
    :::column span="":::
-      **`CASEMAP`**<br/>**`DOTNAME`**<br/>**`NODOTNAME`**<br/>**`EMULATOR`**<br/>**`NOEMULATOR`**<br/>**`EPILOGUE`**<br/>**`EXPR16`**
+      **`CASEMAP`**\
+      **`DOTNAME`**\
+      **`NODOTNAME`**\
+      **`EMULATOR`**\
+      **`NOEMULATOR`**\
+      **`EPILOGUE`**\
+      **`EXPR16`**
    :::column-end:::
    :::column span="":::
-      **`EXPR32`**<br/>**`LANGUAGE`**<br/>**`LJMP`**<br/>**`NOLJMP`**<br/>**`M510`**<br/>**`NOM510`**<br/>**`NOKEYWORD`**
+      **`EXPR32`**\
+      **`LANGUAGE`**\
+      **`LJMP`**\
+      **`NOLJMP`**\
+      **`M510`**\
+      **`NOM510`**\
+      **`NOKEYWORD`**
    :::column-end:::
    :::column span="":::
-      **`NOSIGNEXTEND`**<br/>**`OFFSET`**<br/>**`OLDMACROS`**<br/>**`NOOLDMACROS`**<br/>**`OLDSTRUCTS`**<br/>**`NOOLDSTRUCTS`**<br/>**`PROC`**
+      **`NOSIGNEXTEND`**\
+      **`OFFSET`**\
+      **`OLDMACROS`**\
+      **`NOOLDMACROS`**\
+      **`OLDSTRUCTS`**\
+      **`NOOLDSTRUCTS`**\
+      **`PROC`**
    :::column-end:::
    :::column span="":::
-      **`PROLOGUE`**<br/>**`READONLY`**<br/>**`NOREADONLY`**<br/>**`SCOPED`**<br/>**`NOSCOPED`**<br/>**`SEGMENT`**<br/>**`SETIF2`**
+      **`PROLOGUE`**\
+      **`READONLY`**\
+      **`NOREADONLY`**\
+      **`SCOPED`**\
+      **`NOSCOPED`**\
+      **`SEGMENT`**\
+      **`SETIF2`**
    :::column-end:::
 :::row-end:::
 

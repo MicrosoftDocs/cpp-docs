@@ -656,11 +656,25 @@ After constructing a `CDaoWorkspace` object, call this member function to do one
 
 Although many `CDaoWorkspace` member functions can only be called after the workspace has been opened, the following member functions, which operate on the database engine, are available after construction of the C++ object but before a call to `Open`:
 
-||||
-|-|-|-|
-|[Create](#create)|[GetVersion](#getversion)|[SetDefaultUser](#setdefaultuser)|
-|[GetIniPath](#getinipath)|[Idle](#idle)|[SetIniPath](#setinipath)|
-|[GetLoginTimeout](#getlogintimeout)|[SetDefaultPassword](#setdefaultpassword)|[SetLoginTimeout](#setlogintimeout)|
+:::row:::
+   :::column span="":::
+      [Create](#create)\
+      [GetIniPath](#getinipath)\
+      [GetLoginTimeout](#getlogintimeout)
+   :::column-end:::
+   :::column span="":::
+      [GetVersion](#getversion)\
+      [Idle](#idle)
+   :::column-end:::
+   :::column span="":::
+      [SetDefaultPassword](#setdefaultpassword)\
+      [SetDefaultUser](#setdefaultuser)
+   :::column-end:::
+   :::column span="":::
+      [SetIniPath](#setinipath)\
+      [SetLoginTimeout](#setlogintimeout)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="repairdatabase"></a> CDaoWorkspace::RepairDatabase
 

@@ -22,7 +22,7 @@ For examples and more details, see the article [Exceptions](../../mfc/exception-
 
 ### Exception Macros
 
-|||
+|Name|Description|
 |-|-|
 |[TRY](#try)|Designates a block of code for exception processing.|
 |[CATCH](#catch)|Designates a block of code for catching an exception from the preceding **TRY** block.|
@@ -36,7 +36,7 @@ For examples and more details, see the article [Exceptions](../../mfc/exception-
 
 ### Exception-Throwing Functions
 
-|||
+|Name|Description|
 |-|-|
 |[AfxThrowArchiveException](#afxthrowarchiveexception)|Throws an archive exception.|
 |[AfxThrowFileException](#afxthrowfileexception)|Throws a file exception.|
@@ -50,7 +50,7 @@ MFC provides two exception-throwing functions specifically for OLE exceptions:
 
 ### OLE Exception Functions
 
-|||
+|Name|Description|
 |-|-|
 |[AfxThrowOleDispatchException](#afxthrowoledispatchexception)|Throws an exception within an OLE automation function.|
 |[AfxThrowOleException](#afxthrowoleexception)|Throws an OLE exception.|
@@ -59,7 +59,7 @@ To support database exceptions, the database classes provide two exception class
 
 ### DAO Exception Functions
 
-|||
+|Name|Description|
 |-|-|
 |[AfxThrowDAOException](#afxthrowdaoexception)|Throws a [CDaoException](../../mfc/reference/cdaoexception-class.md) from your own code.|
 |[AfxThrowDBException](#afxthrowdbexception)|Throws a [CDBException](../../mfc/reference/cdbexception-class.md) from your own code.|
@@ -68,7 +68,7 @@ MFC provides the following termination function:
 
 ### Termination Functions
 
-|||
+|Name|Description|
 |-|-|
 |[AfxAbort](#afxabort)|Called to terminate an application when a fatal error occurs.|
 

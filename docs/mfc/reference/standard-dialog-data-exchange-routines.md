@@ -13,7 +13,7 @@ This topic lists the standard dialog data exchange (DDX) routines used for commo
 
 ### DDX Functions
 
-|||
+|Name|Description|
 |-|-|
 |[DDX_CBIndex](#ddx_cbindex)|Initializes or retrieves the index of the current selection of a combo box control.|
 |[DDX_CBString](#ddx_cbstring)|Initializes or retrieves the current contents of the edit field of a combo box control.|

@@ -39,9 +39,7 @@ The following code shows an example of how to use **include**. For this example,
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

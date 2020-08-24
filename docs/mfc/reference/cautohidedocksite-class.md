@@ -19,7 +19,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### Public Constructors
 
-|||
+| Name | Description |
 |-|-|
 |Name|Description|
 |`CAutoHideDockSite::CAutoHideDockSite`|Constructs a `CAutoHideDockSite` object.|
@@ -27,7 +27,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### Public Methods
 
-|||
+| Name | Description |
 |-|-|
 |Name|Description|
 |`CAutoHideDockSite::AllowShowOnPaneMenu`|Indicates whether the `CAutoHideDockSite` is shown on the pane menu.|
@@ -41,7 +41,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |Name|Description|
 |[CAutoHideDockSite::m_nExtraSpace](#m_nextraspace)|Defines the size of the space between the toolbars and the edge of the docking bar. This space is measured from either the left edge or the top edge, depending on the alignment for the dock space.|

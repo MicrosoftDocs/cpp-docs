@@ -36,9 +36,7 @@ See the [bindable](bindable.md) example for a sample use of `uuid`.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|`class`, `struct`, `interface`, `union`, `enum`|
 |**Repeatable**|No|

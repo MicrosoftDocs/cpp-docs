@@ -16,7 +16,7 @@ class bad_any_cast
 
 ### Member functions
 
-|||
+|Name|Description|
 |-|-|
 |[what](#what)|Returns the type.|
 

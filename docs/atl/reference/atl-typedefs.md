@@ -9,7 +9,7 @@ ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
 
 The Active Template Library includes the following typedefs.
 
-|||
+|Typedef|Description|
 |-|-|
 |[_ATL_BASE_MODULE](#_atl_base_module)|Defined as a typedef based on [_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md).|
 |[_ATL_COM_MODULE](#_atl_com_module)|Defined as a typedef based on [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md).|

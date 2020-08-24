@@ -23,7 +23,7 @@ class CDBErrorInfo
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetAllErrorInfo](#getallerrorinfo)|Returns all error information contained in an error record.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) to return basic information about the specified error.|

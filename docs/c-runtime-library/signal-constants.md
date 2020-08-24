@@ -17,7 +17,7 @@ ms.assetid: a3b39281-dae7-4e44-8d68-e6a610c669dd
 
 The `sig` argument must be one of the manifest constants listed below (defined in SIGNAL.H).
 
-|||
+|Constant|Description|
 |-|-|
 |SIGABRT|Abnormal termination. The default action terminates the calling program with exit code 3.  |
 |SIGABRT_COMPAT|Same as SIGABRT. For compatibility with other platforms.  |

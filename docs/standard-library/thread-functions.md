@@ -7,10 +7,11 @@ helpviewer_keywords: ["std::get_id [C++]", "std::sleep_for [C++]", "std::sleep_u
 ---
 # &lt;thread&gt; functions
 
-||||
-|-|-|-|
-|[get_id](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|
-|[swap](#swap)|[yield](#yield)|
+[get_id](#get_id)\
+[sleep_for](#sleep_for)\
+[sleep_until](#sleep_until)\
+[swap](#swap)\
+[yield](#yield)
 
 ## <a name="get_id"></a> get_id
 

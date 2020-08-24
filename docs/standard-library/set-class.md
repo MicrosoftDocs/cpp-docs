@@ -57,13 +57,13 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[set](#set)|Constructs a set that is empty or that is a copy of all or part of some other set.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the set object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **`const`** element in the set.|
@@ -83,7 +83,7 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[begin](#begin)|Returns an iterator that addresses the first element in the set.|
 |[cbegin](#cbegin)|Returns a const iterator that addresses the first element in the set.|
@@ -113,7 +113,7 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the elements of a set with a copy of another set.|
 

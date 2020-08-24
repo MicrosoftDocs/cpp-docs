@@ -19,17 +19,15 @@ class CMFCCmdUsageCount : public CObject
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCCmdUsageCount::CMFCCmdUsageCount`|Default constructor.|
 |`CMFCCmdUsageCount::~CMFCCmdUsageCount`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCCmdUsageCount::AddCmd](#addcmd)|Increments by one the counter that is associated with the given command.|
 |[CMFCCmdUsageCount::GetCount](#getcount)|Retrieves the usage count that is associated with the given command ID.|
 |[CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation)|Determines whether this object has collected the minimum amount of tracking data.|
@@ -40,9 +38,8 @@ class CMFCCmdUsageCount : public CObject
 
 ### Data Members
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`m_CmdUsage`|A `CMap` object that maps commands to their usage counts.|
 |`m_nMinUsagePercentage`|The minimum usage percentage for a command to be frequently used.|
 |`m_nStartCount`|The start counter that is used to determine whether this object has collected the minimum amount of tracking data.|

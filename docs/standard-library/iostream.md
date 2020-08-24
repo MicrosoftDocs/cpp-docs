@@ -34,7 +34,7 @@ This guarantee isn't universal, however. A static constructor may call a functio
 
 ### Global Stream Objects
 
-|||
+|Name|Description|
 |-|-|
 |[cerr](#cerr)|Specifies the `cerr` global stream.|
 |[cin](#cin)|Specifies the `cin` global stream.|

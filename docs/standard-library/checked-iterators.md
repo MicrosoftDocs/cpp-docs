@@ -28,11 +28,26 @@ When _ITERATOR_DEBUG_LEVEL is defined as 1 or 2, these iterator checks are perfo
 
 - The following functions generate a runtime error if there is an access that is outside the bounds of the container:
 
-|||||
-|-|-|-|-|
-|[basic_string::operator\[\]](../standard-library/basic-string-class.md#op_at)|[bitset::operator\[\]](../standard-library/bitset-class.md#op_at)|[back](../standard-library/deque-class.md#back)|[front](../standard-library/deque-class.md#front)|
-|[deque::operator\[\]](../standard-library/deque-class.md#op_at)|[back](../standard-library/list-class.md#back)|[front](../standard-library/list-class.md#front)|[back](../standard-library/queue-class.md#back)|
-|[front](../standard-library/queue-class.md#front)|[vector::operator\[\]](../standard-library/vector-class.md#op_at)|[back](../standard-library/vector-class.md#back)|[front](../standard-library/vector-class.md#front)|
+:::row:::
+   :::column span="":::
+      &emsp;&emsp;[`basic_string::operator[]`](../standard-library/basic-string-class.md#op_at)\
+      &emsp;&emsp;[`bitset::operator[]`](../standard-library/bitset-class.md#op_at)\
+      &emsp;&emsp;[`deque::back`](../standard-library/deque-class.md#back)\
+      &emsp;&emsp;[`deque::front`](../standard-library/deque-class.md#front)
+   :::column-end:::
+   :::column span="":::
+      [`deque::operator[]`](../standard-library/deque-class.md#op_at)\
+      [`list::back`](../standard-library/list-class.md#back)\
+      [`list::front`](../standard-library/list-class.md#front)\
+      [`queue::back`](../standard-library/queue-class.md#back)
+   :::column-end:::
+   :::column span="":::
+      [`queue::front`](../standard-library/queue-class.md#front)\
+      [`vector::back`](../standard-library/vector-class.md#back)\
+      [`vector::front`](../standard-library/vector-class.md#front)\
+      [`vector::operator[]`](../standard-library/vector-class.md#op_at)
+   :::column-end:::
+:::row-end:::
 
 When _ITERATOR_DEBUG_LEVEL is defined as 0:
 

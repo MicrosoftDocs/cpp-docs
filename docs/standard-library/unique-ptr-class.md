@@ -101,13 +101,13 @@ The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is 
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[unique_ptr](#unique_ptr)|There are seven constructors for `unique_ptr`.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[deleter_type](#deleter_type)|A synonym for the template parameter `Del`.|
 |[element_type](#element_type)|A synonym for the template parameter `T`.|
@@ -115,7 +115,7 @@ The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is 
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[get](#get)|Returns `stored_ptr`.|
 |[get_deleter](#get_deleter)|Returns a reference to `stored_deleter`.|
@@ -125,7 +125,7 @@ The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is 
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |**operator bool**|The operator returns a value of a type that is convertible to **`bool`**. The result of the conversion to **`bool`** is **`true`** when `get() != pointer()`, otherwise **`false`**.|
 |`operator->`|The member function returns `stored_ptr`.|

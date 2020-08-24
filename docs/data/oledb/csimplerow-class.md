@@ -23,7 +23,7 @@ class CSimpleRow
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefRow](#addrefrow)|Adds a reference count to an existing row handle.|
 |[Compare](#compare)|Compares two rows to see if they refer to the same row instance.|
@@ -32,7 +32,7 @@ class CSimpleRow
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_dwRef](#dwref)|Reference count to an existing row handle.|
 |[m_iRowset](#irowset)|An index to the rowset representing the cursor.|
