@@ -11,7 +11,7 @@ These functions provide support for registering and unregistering server objects
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlComModuleRegisterServer](#atlcommoduleregisterserver)|This function is called to register every object in the object map.|
 |[AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)|This function is called to unregister every object in the object map.|

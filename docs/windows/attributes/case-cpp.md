@@ -57,9 +57,7 @@ struct SizedValue2 {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Member of a **`class`** or **`struct`**|
 |**Repeatable**|No|

@@ -7,13 +7,21 @@ helpviewer_keywords: ["std::has_facet [C++]", "std::isalnum [C++]", "std::isalph
 ---
 # &lt;locale&gt; functions
 
-||||
-|-|-|-|
-|[has_facet](#has_facet)|[isalnum](#isalnum)|[isalpha](#isalpha)|
-|[iscntrl](#iscntrl)|[isdigit](#isdigit)|[isgraph](#isgraph)|
-|[islower](#islower)|[isprint](#isprint)|[ispunct](#ispunct)|
-|[isspace](#isspace)|[isupper](#isupper)|[isxdigit](#isxdigit)|
-|[tolower](#tolower)|[toupper](#toupper)|[use_facet](#use_facet)|
+[has_facet](#has_facet)\
+[isalnum](#isalnum)\
+[isalpha](#isalpha)\
+[iscntrl](#iscntrl)\
+[isdigit](#isdigit)\
+[isgraph](#isgraph)\
+[islower](#islower)\
+[isprint](#isprint)\
+[ispunct](#ispunct)\
+[isspace](#isspace)\
+[isupper](#isupper)\
+[isxdigit](#isxdigit)\
+[tolower](#tolower)\
+[toupper](#toupper)\
+[use_facet](#use_facet)
 
 ## <a name="has_facet"></a> has_facet
 

@@ -861,7 +861,7 @@ The flags that indicate how much of the ribbon bar is visible.
 
 The following table lists the possible combination of flags for the return value:
 
-|||
+|Flag|Description|
 |-|-|
 |AFX_RIBBONBAR_HIDE_ELEMENTS|The ribbon bar is minimized vertically and only the category tabs, main button, and quick access toolbar are visible.  |
 |AFX_RIBBONBAR_HIDE_ALL|The width of the ribbon bar is less than the minimum width and is completely hidden.  |
@@ -897,7 +897,7 @@ int GetKeyboardNavigationLevel() const;
 
 The current navigation level as the user presses the keytips that are contained on the ribbon bar. The following table lists possible return values:
 
-|||
+|Value|Description|
 |-|-|
 |-1|Keytips are not displayed.|
 |0|Keytips are displayed.|

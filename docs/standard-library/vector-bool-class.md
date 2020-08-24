@@ -43,7 +43,7 @@ Operations that deal with the **`bool`** type correspond to values in the contai
 
 ### Proxy Class
 
-|||
+|Name|Description|
 |-|-|
 |[vector\<bool> reference Class](#reference_class)|A class that acts as a proxy to simulate `bool&` behavior, and whose objects can provide references to elements (single bits) within a `vector<bool>` object.|
 

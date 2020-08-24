@@ -40,7 +40,7 @@ To use an OLE DB command that can return multiple results, specify [CMultipleRes
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Close](#close)|Closes the current command.|
 |[GetNextResult](#getnextresult)|Fetches the next result when using multiple result sets.|
@@ -48,7 +48,7 @@ To use an OLE DB command that can return multiple results, specify [CMultipleRes
 
 ### Inherited Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Create](#create)|Creates a new command for the specified session, then sets the command text.|
 |[CreateCommand](#createcommand)|Creates a new command.|

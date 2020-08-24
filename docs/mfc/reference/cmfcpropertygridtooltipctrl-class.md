@@ -19,17 +19,15 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl](#cmfcpropertygridtooltipctrl)|Constructs a `CMFCPropertyGridToolTipCtrl` object.|
 |`CMFCPropertyGridToolTipCtrl::~CMFCPropertyGridToolTipCtrl`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCPropertyGridToolTipCtrl::Create](#create)|Creates a window for the tooltip control.|
 |[CMFCPropertyGridToolTipCtrl::Deactivate](#deactivate)|Deactivates and hides the tooltip control.|
 |[CMFCPropertyGridToolTipCtrl::GetLastRect](#getlastrect)|Returns the coordinates of the last position of the tooltip control.|

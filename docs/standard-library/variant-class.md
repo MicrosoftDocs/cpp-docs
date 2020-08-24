@@ -19,13 +19,13 @@ template <class... Types>
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[variant](#variant)|Constructs an object of type `variant`.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[emplace](#emplace)|Creates a new contained value.|
 |[index](#index)|Returns the index of a contained value.|
@@ -34,7 +34,7 @@ template <class... Types>
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the variant with a copy of another variant.|
 

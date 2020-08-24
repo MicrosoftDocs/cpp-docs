@@ -50,10 +50,8 @@ The floating-point result type, defaults to **`double`**. For possible types, se
 
 The class template describes a distribution that produces values of a user-specified integral type, or type **`double`** if none is provided, distributed according to the Normal Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[normal_distribution](#normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|
-|`normal_distribution::operator()`|`normal_distribution::stddev`|[param_type](#param_type)|
+[normal_distribution](#normal_distribution)\
+[param_type](#param_type)
 
 The property functions `mean()` and `stddev()` return the values for the stored distribution parameters *mean* and *stddev* respectively.
 

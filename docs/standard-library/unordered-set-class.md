@@ -38,7 +38,7 @@ The allocator class.
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|The type of an allocator for managing storage.|
 |[const_iterator](#const_iterator)|The type of a constant iterator for the controlled sequence.|
@@ -58,7 +58,7 @@ The allocator class.
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[begin](#begin)|Designates the beginning of the controlled sequence.|
 |[bucket](#bucket)|Gets the bucket number for a key value.|
@@ -90,7 +90,7 @@ The allocator class.
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[unordered_set::operator=](#op_eq)|Copies a hash table.|
 

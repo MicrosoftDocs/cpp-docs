@@ -23,7 +23,7 @@ class CDynamicParameterAccessor : public CDynamicAccessor
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CDynamicParameterAccessor](#cdynamicparameteraccessor)|The constructor.|
 |[GetParam](#getparam)|Retrieves the parameter data from the buffer.|

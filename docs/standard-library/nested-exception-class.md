@@ -24,13 +24,13 @@ class nested_exception {
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
-|[operator=](#op_as)||
+|[operator=](#op_as)|Assignment operator.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[rethrow_nested](#rethrow_nested)|Throws the stored exception.|
 |[nested_ptr](#nested_ptr)|Returns the stored exception.|

@@ -32,11 +32,14 @@ The unsigned integer result type. For possible types, see [\<random>](../standar
 
 ## Members
 
-||||
-|-|-|-|
-|`subtract_with_carry_engine::subtract_with_carry_engine`|`subtract_with_carry_engine::min`|`subtract_with_carry_engine::discard`|
-|`subtract_with_carry_engine::operator()`|`subtract_with_carry_engine::max`|`subtract_with_carry_engine::seed`|
-|`default_seed` is a member constant, defined as `19780503u`, used as the default parameter value for `subtract_with_carry_engine::seed` and the single value constructor.|||
+`subtract_with_carry_engine::subtract_with_carry_engine`
+`subtract_with_carry_engine::max`\
+`subtract_with_carry_engine::min`\
+`subtract_with_carry_engine::discard`\
+`subtract_with_carry_engine::operator()`\
+`subtract_with_carry_engine::seed`
+
+`default_seed` is a member constant, defined as `19780503u`, used as the default parameter value for `subtract_with_carry_engine::seed` and the single value constructor.
 
 For more information about engine members, see [\<random>](../standard-library/random.md).
 

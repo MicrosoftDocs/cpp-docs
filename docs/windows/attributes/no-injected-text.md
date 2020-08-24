@@ -26,9 +26,7 @@ The most common use of the **no_injected_text** C++ attribute is by the [/Fx](..
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

@@ -11,13 +11,13 @@ The OLE DB Consumer Templates include the following macros and global functions:
 
 ## Global Functions
 
-|||
+| Name | Description |
 |-|-|
 |[AtlTraceErrorRecords](#atltraceerrorrecords)|Dumps OLE DB Error Record information to the dump device if an error is returned.|
 
 ## Accessor Map Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_ACCESSOR](#begin_accessor)|Marks the beginning of an accessor entry.|
 |[BEGIN_ACCESSOR_MAP](#begin_accessor_map)|Marks the beginning of the accessor map entries.|
@@ -26,7 +26,7 @@ The OLE DB Consumer Templates include the following macros and global functions:
 
 ## Column Map Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_COLUMN_MAP](#begin_column_map)|Marks the beginning of the column map entries in the user record class.|
 |[BLOB_ENTRY](#blob_entry)|Used to bind a binary large object (BLOB).|
@@ -66,14 +66,14 @@ The OLE DB Consumer Templates include the following macros and global functions:
 
 ## Command Macros
 
-|||
+| Name | Description |
 |-|-|
 |[DEFINE_COMMAND](#define_command)|Specifies the command that will be used to create the rowset when using the [CCommand](../../data/oledb/ccommand-class.md) class. Accepts only string types matching the specified application type (ANSI or Unicode). It is recommended that you use [DEFINE_COMMAND_EX](../../data/oledb/define-command-ex.md) instead of DEFINE_COMMAND.|
 |[DEFINE_COMMAND_EX](#define_command_ex)|Specifies the command that will be used to create the rowset when using the [CCommand](../../data/oledb/ccommand-class.md) class. Supports ANSI and Unicode applications.|
 
 ## Parameter Map Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_PARAM_MAP](#begin_param_map)|Marks the beginning of the parameter map entries in the user record class.|
 |[END_PARAM_MAP](#end_param_map)|Marks the end of the parameter map entries.|

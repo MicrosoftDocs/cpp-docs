@@ -476,7 +476,7 @@ The set of flags that affect the behavior of the dialog box.
 
 This method retrieves the value of the *uiFlags* parameter that is passed to the constructor. The return value can be one or more of the following values:
 
-|||
+|Name|Description|
 |-|-|
 |AFX_CUSTOMIZE_MENU_SHADOWS|Allows the user to specify the shadow appearance of the menu.  |
 |AFX_CUSTOMIZE_TEXT_LABELS|Allows the user to specify whether text labels are shown underneath the toolbar button images.  |

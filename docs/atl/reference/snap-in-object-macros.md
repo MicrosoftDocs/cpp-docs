@@ -8,7 +8,7 @@ ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
 
 These macros provide support for snap-in extensions.
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map)|Marks the beginning of the snap-in extension data class map for a Snap-In object.|
 |[BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map)|Marks the beginning of the toolbar map for a Snap-In object.|

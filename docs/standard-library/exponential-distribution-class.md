@@ -52,10 +52,8 @@ The random number generator engine. For possible types, see [\<random>](../stand
 
 The class template describes a distribution that produces values of a user-specified integral type, or type **`double`** if none is provided, distributed according to the Exponential Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[exponential_distribution](#exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|
-|`exponential_distribution::operator()`||[param_type](#param_type)|
+[exponential_distribution](#exponential_distribution)\
+[param_type](#param_type)
 
 The property member function `lambda()` returns the value for the stored distribution parameter `lambda`.
 

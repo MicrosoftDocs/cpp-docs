@@ -29,7 +29,7 @@ An accessor class.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CStreamRowset](#cstreamrowset)|Constructor. Instantiates and initializes the `CStreamRowset` object.|
 |[Close](#close)|Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) interface pointer in the class.|

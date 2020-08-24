@@ -46,7 +46,7 @@ class CTime
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator + -](#operator_add_-)|These operators add and subtract `CTimeSpan` and `CTime` objects.|
 |[operator +=, -=](#operator_add_eq_-_eq)|These operators add and subtract a `CTimeSpan` object to and from this `CTime` object.|

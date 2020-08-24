@@ -50,10 +50,12 @@ The unsigned integer result type. For possible types, see [\<random>](../standar
 
 ## Members
 
-||||
-|-|-|-|
-|`mersenne_twister_engine::mersenne_twister_engine`|`mersenne_twister_engine::min`|`mersenne_twister_engine::discard`|
-|`mersenne_twister_engine::operator()`|`mersenne_twister_engine::max`|`mersenne_twister_engine::seed`|
+`mersenne_twister_engine::mersenne_twister_engine`\
+`mersenne_twister_engine::discard`\
+`mersenne_twister_engine::max`\
+`mersenne_twister_engine::min`\
+`mersenne_twister_engine::operator()`\
+`mersenne_twister_engine::seed`
 
 `default_seed` is a member constant, defined as `5489u`, used as the default parameter value for `mersenne_twister_engine::seed` and the single value constructor.
 

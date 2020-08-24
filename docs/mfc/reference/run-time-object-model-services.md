@@ -20,7 +20,7 @@ For more information on these run-time object services and serialization, see th
 
 ### Run-Time Object Model Services Macros
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_DYNAMIC](#declare_dynamic)|Enables access to run-time class information (must be used in the class declaration).|
 |[DECLARE_DYNCREATE](#declare_dyncreate)|Enables dynamic creation and access to run-time class information (must be used in the class declaration).|
@@ -36,7 +36,7 @@ The Microsoft Foundation Class Library provides two macros specific to OLE.
 
 ### Dynamic Creation of OLE Objects
 
-|||
+|Name|Description|
 |-|-|
 |[AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)|Determines whether the Common Controls library implements the specified API.|
 |[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)|Determines whether the Common Controls library implements the specified API.|

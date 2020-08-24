@@ -65,9 +65,7 @@ This code causes `MYFLOT` and `MYDUB` and the *text* entry to be placed in the g
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

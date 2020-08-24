@@ -185,7 +185,7 @@ The `schedule` clause specifies how iterations of the `for` loop are divided amo
 
 Table 2-1: `schedule` clause *kind* values
 
-|||
+|Value|Description|
 |-|-|
 |static|When `schedule(static,` *chunk_size* `)` is specified, iterations are divided into chunks of a size specified by *chunk_size*. The chunks are statically assigned to threads in the team in a round-robin fashion in the order of the thread number. When no *chunk_size* is specified, the iteration space is divided into chunks that are approximately equal in size, with one chunk assigned to each thread.|
 |dynamic|When `schedule(dynamic,` *chunk_size* `)` is specified, the iterations are divided into a series of chunks, each containing *chunk_size* iterations. Each chunk is assigned to a thread that's waiting for an assignment. The thread executes the chunk of iterations and then waits for its next assignment, until no chunks remain to be assigned. The last chunk to be assigned may have a smaller number of iterations. When no *chunk_size* is specified, it defaults to 1.|

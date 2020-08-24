@@ -21,7 +21,7 @@ Each of these manipulators returns an unspecified type, called `T1` through `T10
 
 ### Manipulators
 
-|||
+|Name|Description|
 |-|-|
 |[get_money](../standard-library/iomanip-functions.md#iomanip_get_money)|Obtains a monetary amount, optionally in international format.|
 |[get_time](../standard-library/iomanip-functions.md#iomanip_get_time)|Obtains a time in a time structure by using a specified format.|

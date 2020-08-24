@@ -69,7 +69,8 @@ ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 
 :::row:::
    :::column span="":::
-      [`$`](dollar.md)<br/>[`?`](q.md)
+      [`$`](dollar.md)\
+      [`?`](q.md)
    :::column-end:::
    :::column span="":::
       [`@@:`](at-at.md)
@@ -86,16 +87,22 @@ ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 
 :::row:::
    :::column span="":::
-      [`@code`](at-code.md)<br/>[`@CodeSize`](at-codesize.md)<br/>[`@CurSeg`](at-curseg.md)
+      [`@code`](at-code.md)\
+      [`@CodeSize`](at-codesize.md)\
+      [`@CurSeg`](at-curseg.md)
    :::column-end:::
    :::column span="":::
-      [`@data`](at-data.md)<br/>[`@DataSize`](at-datasize.md)<br/>[`@fardata`](at-fardata.md)
+      [`@data`](at-data.md)\
+      [`@DataSize`](at-datasize.md)\
+      [`@fardata`](at-fardata.md)
    :::column-end:::
    :::column span="":::
-      [`@fardata?`](at-fardata-q.md)<br/>[`@Model`](at-model.md)
+      [`@fardata?`](at-fardata-q.md)\
+      [`@Model`](at-model.md)
    :::column-end:::
    :::column span="":::
-      [`@stack`](at-stack.md)<br/>[`@WordSize`](at-wordsize.md)
+      [`@stack`](at-stack.md)\
+      [`@WordSize`](at-wordsize.md)
    :::column-end:::
 :::row-end:::
 

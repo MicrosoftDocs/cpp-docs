@@ -23,7 +23,7 @@ For an example of RFX and Bulk RFX functions as they appear in the `DoFieldExcha
 
 ### RFX Functions (ODBC)
 
-|||
+|Name|Description|
 |-|-|
 |[RFX_Binary](#rfx_binary)|Transfers arrays of bytes of type [CByteArray](cbytearray-class.md).|
 |[RFX_Bool](#rfx_bool)|Transfers Boolean data.|
@@ -38,7 +38,7 @@ For an example of RFX and Bulk RFX functions as they appear in the `DoFieldExcha
 
 ### Bulk RFX Functions (ODBC)
 
-|||
+|Name|Description|
 |-|-|
 |[RFX_Binary_Bulk](#rfx_binary_bulk)|Transfers arrays of byte data.|
 |[RFX_Bool_Bulk](#rfx_bool_bulk)|Transfers arrays of Boolean data.|
@@ -52,7 +52,7 @@ For an example of RFX and Bulk RFX functions as they appear in the `DoFieldExcha
 
 ### DFX Functions (DAO)
 
-|||
+|Name|Description|
 |-|-|
 |[DFX_Binary](#dfx_binary)|Transfers arrays of bytes of type [CByteArray](cbytearray-class.md).|
 |[DFX_Bool](#dfx_bool)|Transfers Boolean data.|

@@ -31,22 +31,22 @@ The type of accessor class that you want the rowset to use.
 
 ### Methods
 
-|||
-|-|-|
-|[CArrayRowset](#carrayrowset)|Constructor.|
-|[Snapshot](#snapshot)|Reads the entire rowset into memory.|
+| Name | Description |
+|--|--|
+| [CArrayRowset](#carrayrowset) | Constructor. |
+| [Snapshot](#snapshot) | Reads the entire rowset into memory. |
 
 ### Operators
 
-|||
-|-|-|
-|[Operator&#91;&#93;](#operator)|Accesses an element of the rowset.|
+| Name | Description |
+|--|--|
+| [Operator&#91;&#93;](#operator) | Accesses an element of the rowset. |
 
 ### Data Members
 
-|||
-|-|-|
-|[CArrayRowset::m_nRowsRead](#nrowsread)|The number of rows already read.|
+| Name | Description |
+|--|--|
+| [CArrayRowset::m_nRowsRead](#nrowsread) | The number of rows already read. |
 
 ## <a name="carrayrowset"></a> CArrayRowset::CArrayRowset
 

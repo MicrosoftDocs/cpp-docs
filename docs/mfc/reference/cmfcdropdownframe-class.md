@@ -19,17 +19,15 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCDropDownFrame::CMFCDropDownFrame`|Default constructor.|
 |`CMFCDropDownFrame::~CMFCDropDownFrame`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCDropDownFrame::Create](#create)|Creates a `CMFCDropDownFrame` object.|
 |`CMFCDropDownFrame::CreateObject`|Used by the framework to create a dynamic instance of this class type.|
 |[CMFCDropDownFrame::GetParentMenuBar](#getparentmenubar)|Retrieves the parent menu bar of the drop-down frame.|

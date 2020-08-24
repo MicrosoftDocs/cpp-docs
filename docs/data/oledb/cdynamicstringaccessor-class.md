@@ -24,7 +24,7 @@ class CDynamicStringAccessorT : public CDynamicAccessor
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetString](#getstring)|Retrieves the specified column data as a string.|
 |[SetString](#setstring)|Sets the specified column data as a string.|

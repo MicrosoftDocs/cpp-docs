@@ -48,10 +48,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
 
 The class describes a distribution that produces values of type **`bool`**, distributed according to the Bernoulli distribution discrete probability function. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[bernoulli_distribution](#bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|
-|`bernoulli_distribution::operator()`||[param_type](#param_type)|
+[bernoulli_distribution](#bernoulli_distribution)\
+[param_type](#param_type)
 
 The property member `p()` returns the currently stored distribution parameter value `p`.
 

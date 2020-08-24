@@ -39,13 +39,13 @@ The [vector\<bool> reference class](../standard-library/vector-bool-class.md#ref
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[vector](#vector)|Constructs a vector of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other vector.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the vector object.|
 |[const_iterator](#const_iterator)|A type that provides a random-access iterator that can read a **`const`** element in a vector.|
@@ -62,7 +62,7 @@ The [vector\<bool> reference class](../standard-library/vector-bool-class.md#ref
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[assign](#assign)|Erases a vector and copies the specified elements to the empty vector.|
 |[at](#at)|Returns a reference to the element at a specified location in the vector.|
@@ -96,7 +96,7 @@ The [vector\<bool> reference class](../standard-library/vector-bool-class.md#ref
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator&#91;&#93;](#op_at)|Returns a reference to the vector element at a specified position.|
 |[operator=](#op_eq)|Replaces the elements of the vector with a copy of another vector.|

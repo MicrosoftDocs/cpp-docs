@@ -13,7 +13,7 @@ ms.assetid: dc5a1998-a31b-4adf-b888-8abe5b87a4e0
 
 ## Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[const_iterator](../standard-library/container-class-const-iterator.md)|Describes an object that can serve as a constant iterator for the controlled sequence.|
 |[const_reference](../standard-library/container-class-const-reference.md)|Describes an object that can serve as a constant reference to an element of the controlled sequence.|
@@ -27,7 +27,7 @@ ms.assetid: dc5a1998-a31b-4adf-b888-8abe5b87a4e0
 
 ## Member Functions
 
-|||
+|Name|Description|
 |-|-|
 |[begin](../standard-library/container-class-begin.md)|Returns an iterator that points at the first element of the sequence (or just beyond the end of an empty sequence).|
 |[clear](../standard-library/container-class-clear.md)|Calls [erase](../standard-library/container-class-erase.md)( [begin](../standard-library/container-class-begin.md), [end](../standard-library/container-class-end.md)).|

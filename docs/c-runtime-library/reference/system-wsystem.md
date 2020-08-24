@@ -36,7 +36,7 @@ The command to be executed.
 
 If *command* is **NULL** and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets **errno** to **ENOENT**. If *command* is not **NULL**, **system** returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of - 1 indicates an error, and **errno** is set to one of the following values:
 
-|||
+| Value | Description |
 |-|-|
 | **E2BIG** | The argument list (which is system-dependent) is too big. |
 | **ENOENT** | The command interpreter cannot be found. |

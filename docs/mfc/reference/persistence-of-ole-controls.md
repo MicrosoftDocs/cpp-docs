@@ -10,7 +10,7 @@ One capability of OLE controls is property persistence (or serialization), which
 
 ### Persistence of OLE Controls
 
-|||
+|Name|Description|
 |-|-|
 |[PX_Blob](#px_blob)|Exchanges a control property that stores binary large object (BLOB) data.|
 |[PX_Bool](#px_bool)|Exchanges a control property of type **BOOL**.|

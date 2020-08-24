@@ -35,7 +35,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator =](#operator_eq)|Assignment operator.|
 

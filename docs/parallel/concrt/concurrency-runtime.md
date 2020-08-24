@@ -15,7 +15,7 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 
 ## Choosing Concurrency Runtime Features
 
-|||
+|Article|Description|
 |-|-|
 |[Overview](../../parallel/concrt/overview-of-the-concurrency-runtime.md)|Teaches why the Concurrency Runtime is important and describes its key features.|
 |[Comparing to Other Concurrency Models](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|Shows how the Concurrency Runtime compares to other concurrency models, such as the Windows thread pool and OpenMP, so that you can use the concurrency model that best fits your application requirements.|
@@ -26,7 +26,7 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 
 ## Task Parallelism in the PPL
 
-|||
+|Article|Description|
 |-|-|
 |[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br /><br /> [How to: Use parallel_invoke to Write a Parallel Sort Routine](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br /><br /> [How to: Use parallel_invoke to Execute Parallel Operations](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)<br /><br /> [How to: Create a Task that Completes After a Delay](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|Describes tasks and task groups, which can help you to write asynchronous code and decompose parallel work into smaller pieces.|
 |[Walkthrough: Implementing Futures](../../parallel/concrt/walkthrough-implementing-futures.md)|Demonstrates how to combine Concurrency Runtime features to do something more.|
@@ -35,7 +35,7 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 
 ## Data Parallelism in the PPL
 
-|||
+|Article|Description|
 |-|-|
 |[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br /><br /> [How to: Write a parallel_for Loop](../../parallel/concrt/how-to-write-a-parallel-for-loop.md)<br /><br /> [How to: Write a parallel_for_each Loop](../../parallel/concrt/how-to-write-a-parallel-for-each-loop.md)<br /><br /> [How to: Perform Map and Reduce Operations in Parallel](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md)|Describes `parallel_for`, `parallel_for_each`, `parallel_invoke`, and other parallel algorithms. Use parallel algorithms to solve *data parallel* problems that involve collections of data.|
 |[Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br /><br /> [How to: Use Parallel Containers to Increase Efficiency](../../parallel/concrt/how-to-use-parallel-containers-to-increase-efficiency.md)<br /><br /> [How to: Use combinable to Improve Performance](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br /><br /> [How to: Use combinable to Combine Sets](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)|Describes the `combinable` class, as well as `concurrent_vector`, `concurrent_queue`, `concurrent_unordered_map`, and other parallel containers. Use parallel containers and objects when you require containers that provide thread-safe access to their elements.|
@@ -43,14 +43,14 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 
 ## Canceling Tasks and Parallel Algorithms
 
-|||
+|Article|Description|
 |-|-|
 |[Cancellation in the PPL](cancellation-in-the-ppl.md)|Describes the role of cancellation in the PPL, including how to initiate and respond to cancellation requests.|
 |[How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br /><br /> [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Demonstrates two ways to cancel data-parallel work.|
 
 ## Universal Windows Platform apps
 
-|||
+|Article|Description|
 |-|-|
 |[Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|Describes some of the key points to keep in mind when you use the Concurrency Runtime to produce asynchronous operations in a UWP app.|
 |[Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|Shows how to combine PPL tasks with the `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` interfaces to send HTTP GET and POST requests to a web service in a UWP app.|
@@ -58,7 +58,7 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 
 ## Dataflow Programming in the Asynchronous Agents Library
 
-|||
+|Article|Description|
 |-|-|
 |[Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)<br /><br /> [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br /><br /> [Message Passing Functions](../../parallel/concrt/message-passing-functions.md)<br /><br /> [How to: Implement Various Producer-Consumer Patterns](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br /><br /> [How to: Provide Work Functions to the call and transformer Classes](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)<br /><br /> [How to: Use transformer in a Data Pipeline](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br /><br /> [How to: Select Among Completed Tasks](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br /><br /> [How to: Send a Message at a Regular Interval](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)<br /><br /> [How to: Use a Message Block Filter](../../parallel/concrt/how-to-use-a-message-block-filter.md)|Describes asynchronous agents, message blocks, and message-passing functions, which are the building blocks for performing dataflow operations in the Concurrency Runtime.|
 |[Walkthrough: Creating an Agent-Based Application](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br /><br /> [Walkthrough: Creating a Dataflow Agent](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)|Shows how to create basic agent-based applications.|
@@ -69,14 +69,14 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 
 ## Exception Handling and Debugging
 
-|||
+|Article|Description|
 |-|-|
 |[Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|Describes how to work with exceptions in the Concurrency Runtime.|
 |[Parallel Diagnostic Tools](../../parallel/concrt/parallel-diagnostic-tools-concurrency-runtime.md)|Teaches you how to fine-tune your applications and make the most effective use of the Concurrency Runtime.|
 
 ## Tuning Performance
 
-|||
+|Article|Description|
 |-|-|
 |[Parallel Diagnostic Tools](../../parallel/concrt/parallel-diagnostic-tools-concurrency-runtime.md)|Teaches you how to fine-tune your applications and make the most effective use of the Concurrency Runtime.|
 |[Scheduler Instances](../../parallel/concrt/scheduler-instances.md)<br /><br /> [How to: Manage a Scheduler Instance](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br /><br /> [Scheduler Policies](../../parallel/concrt/scheduler-policies.md)<br /><br /> [How to: Specify Specific Scheduler Policies](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md)<br /><br /> [How to: Create Agents that Use Specific Scheduler Policies](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)|Shows how to work with manage scheduler instances and scheduler policies. For desktop apps, scheduler policies enable you to associate specific rules with specific types of workloads. For example, you can create one scheduler instance to run some tasks at an elevated thread priority and use the default scheduler to run other tasks at the normal thread priority.|
@@ -87,7 +87,7 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 
 ## Additional Resources
 
-|||
+|Article|Description|
 |-|-|
 |[Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](/previous-versions/windows/apps/jj160321(v=win.10))|Learn how we used the Concurrency Runtime to implement asynchronous operations in Hilo, a Windows Runtime app using C++ and XAML.|
 |[Parallel Programming in Native Code blog](/archive/blogs/nativeconcurrency)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|

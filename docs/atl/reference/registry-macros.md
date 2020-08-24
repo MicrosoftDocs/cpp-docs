@@ -9,7 +9,7 @@ ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
 
 These macros define useful type library and registry facilities.
 
-|||
+|Name|Description|
 |-|-|
 |[_ATL_STATIC_REGISTRY](#_atl_static_registry)|Indicates that you want the registration code for your object to be in the object to avoid a dependency on ATL.DLL.|
 |[DECLARE_LIBID](#declare_libid)|Provides a way for ATL to obtain the *libid* of the type library.|

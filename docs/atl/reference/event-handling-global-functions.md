@@ -12,7 +12,7 @@ This function provides an event handler.
 > [!IMPORTANT]
 > The function listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Waits for an object to be signaled, meanwhile dispatching window messages as needed.|
 

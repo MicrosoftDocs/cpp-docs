@@ -19,17 +19,15 @@ class CMFCImagePaintArea : public CButton
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCImagePaintArea::CMFCImagePaintArea](#cmfcimagepaintarea)|Constructs a `CMFCImagePaintArea` object.|
 |`CMFCImagePaintArea::~CMFCImagePaintArea`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCImagePaintArea::GetMode](#getmode)|Retrieves the current drawing mode.|
 |[CMFCImagePaintArea::SetBitmap](#setbitmap)|Sets the bitmap image for the picture area.|
 |[CMFCImagePaintArea::SetColor](#setcolor)|Sets the current drawing color.|
