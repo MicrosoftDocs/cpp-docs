@@ -42,9 +42,7 @@ __interface ICustom{
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

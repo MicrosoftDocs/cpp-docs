@@ -85,9 +85,7 @@ The [source](source-cpp.md) attribute also has an example of how to use **`defau
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**, data member|
 |**Repeatable**|No|

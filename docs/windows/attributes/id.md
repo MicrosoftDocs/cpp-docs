@@ -30,9 +30,7 @@ See the example for [bindable](bindable.md) for an example of how to use **id**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

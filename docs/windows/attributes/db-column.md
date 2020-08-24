@@ -92,9 +92,7 @@ class CProducts {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**, member, method|
 |**Repeatable**|No|
