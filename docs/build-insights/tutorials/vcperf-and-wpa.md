@@ -25,7 +25,7 @@ A version of WPA that supports C++ Build Insights is currently only available in
 
 NOTE: Windows 8 or above is required for installing the Windows Performance Analyzer.
 
-1. Browse to the Windows ADK [download page](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+1. Browse to the Windows ADK [download page](/windows-hardware/get-started/adk-install).
 
 1. Download and install the latest version of the Windows ADK.
 
