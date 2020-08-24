@@ -34,9 +34,7 @@ See the example for [dual](dual.md) for an example use how to use **cpp_quote**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

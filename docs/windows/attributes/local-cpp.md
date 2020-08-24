@@ -25,9 +25,7 @@ See [call_as](call-as.md) for an example of how to use **local**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**, interface method|
 |**Repeatable**|No|

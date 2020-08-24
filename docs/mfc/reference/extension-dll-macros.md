@@ -6,7 +6,7 @@ ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
 ---
 # Macros and Functions for Managing DLLs
 
-|||
+|Name|Description|
 |-|-|
 |[AFX_EXT_CLASS](#afx_ext_class)]|Exports classes.|
 |[AFX_MANAGE_STATE](#afx_manage_state)|Protect an exported function in a DLL.|

@@ -468,7 +468,7 @@ The style of animation for pop-up menus is global for your application. Use [CMF
 
 The following table lists the possible animation types.
 
-|||
+|Value|Description|
 |-|-|
 |NO_ANIMATION|The pop-up menu is not animated and appears immediately.  |
 |UNFOLD|The framework reveals the pop-up menu from the upper-left corner to the lower right corner.  |

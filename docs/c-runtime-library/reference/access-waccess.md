@@ -38,11 +38,11 @@ Read/write attribute.
 
 Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.
 
-|||
-|-|-|
-`EACCES`|Access denied: the file's permission setting does not allow specified access.
-`ENOENT`|File name or path not found.
-`EINVAL`|Invalid parameter.
+| Value | Description |
+|--|--|
+| `EACCES` | Access denied: the file's permission setting does not allow specified access. |
+| `ENOENT` | File name or path not found. |
+| `EINVAL` | Invalid parameter. |
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

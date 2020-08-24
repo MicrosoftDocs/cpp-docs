@@ -23,7 +23,7 @@ class CDynamicAccessor : public CAccessorBase
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddBindEntry](#addbindentry)|Adds a bind entry to the output columns when overriding the default accessor.|
 |[CDynamicAccessor](#cdynamicaccessor)|Instantiates and initializes the `CDynamicAccessor` object.|

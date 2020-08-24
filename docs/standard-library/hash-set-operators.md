@@ -6,10 +6,10 @@ ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
 ---
 # &lt;hash_set&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator!= (hash_multiset)](#op_neq_hash_multiset)|[operator==](#op_eq_eq)|
-|[operator== (hash_multiset)](#op_eq_eq_hash_multiset)|
+[operator!=](#op_neq)\
+[operator!= (hash_multiset)](#op_neq_hash_multiset)\
+[operator==](#op_eq_eq)\
+[operator== (hash_multiset)](#op_eq_eq_hash_multiset)
 
 ## <a name="op_neq"></a> operator!=
 

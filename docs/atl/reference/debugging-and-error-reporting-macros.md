@@ -9,7 +9,7 @@ ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
 
 These macros provide useful debugging and trace facilities.
 
-|||
+|Name|Description|
 |-|-|
 |[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|Writes, to the output window, any interface leaks that are detected when `_Module.Term` is called.|
 |[_ATL_DEBUG_QI](#_atl_debug_qi)|Writes all calls to `QueryInterface` to the output window.|

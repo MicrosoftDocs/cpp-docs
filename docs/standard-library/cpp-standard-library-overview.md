@@ -10,11 +10,12 @@ All C++ library entities are declared or defined in one or more standard headers
 
 A freestanding implementation of the C++ library provides only a subset of these headers:
 
-|||
-|-|-|
-|[\<cstddef>](../standard-library/cstddef.md)|[\<cstdlib>](../standard-library/cstdlib.md) (declaring at least the functions `abort`, `atexit`, and `exit`)|
-|[\<exception>](../standard-library/exception.md)|[\<limits>](../standard-library/limits.md)|
-|[\<new>](../standard-library/new.md)|[\<cstdarg>](../standard-library/cstdarg.md)|
+[\<cstdarg>](../standard-library/cstdarg.md)\
+[\<cstddef>](../standard-library/cstddef.md)\
+[\<cstdlib>](../standard-library/cstdlib.md) (declaring at least the functions `abort`, `atexit`, and `exit`)\
+[\<exception>](../standard-library/exception.md)\
+[\<limits>](../standard-library/limits.md)\
+[\<new>](../standard-library/new.md)
 
 The C++ library headers have two broader subdivisions:
 

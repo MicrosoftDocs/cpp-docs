@@ -8,7 +8,7 @@ ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
 
 These macros define window class utilities.
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_WND_CLASS](#declare_wnd_class)|Allows you to specify the name of a new window class.|
 |[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) Allows you to specify the name of a new window class and the enclosing class whose window procedure the new class will use.|

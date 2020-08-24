@@ -26,7 +26,7 @@ A non-type parameter pack that represents a sequence of values of integral type 
 
 ## Members
 
-|||
+|Name|Description|
 |-|-|
 |`static size_t size() noexcept`|The number of elements in the sequence.|
 |`typedef T value_type`|The type of each element in the sequence. Must be an integral type.|

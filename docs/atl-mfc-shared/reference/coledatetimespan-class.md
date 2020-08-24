@@ -42,7 +42,7 @@ class COleDateTimeSpan
 
 ### Public Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator +, -](#operator_add_-)|Add, subtract, and change sign for `COleDateTimeSpan` values.|
 |[operator +=, -=](#operator_add_eq_-_eq)|Add and subtract a `COleDateTimeSpan` value from this `COleDateTimeSpan` value.|

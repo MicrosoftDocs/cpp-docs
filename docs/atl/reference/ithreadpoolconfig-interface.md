@@ -23,7 +23,7 @@ __interface
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[GetSize](#getsize)|Call this method to get the number of threads in the pool.|
 |[GetTimeout](#gettimeout)|Call this method to get the maximum time in milliseconds that the thread pool will wait for a thread to shut down.|

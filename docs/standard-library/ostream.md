@@ -24,7 +24,7 @@ Defines the class template [basic_ostream](../standard-library/basic-ostream-cla
 
 ### Manipulators
 
-|||
+|Name|Description|
 |-|-|
 |[endl](../standard-library/ostream-functions.md#endl)|Terminates a line and flushes the buffer.|
 |[ends](../standard-library/ostream-functions.md#ends)|Terminates a string.|

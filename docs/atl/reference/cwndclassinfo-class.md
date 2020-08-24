@@ -22,13 +22,13 @@ class CWndClassInfo
 
 ### Public Methods
 
-|||
+|Name|Description|
 |-|-|
 |[Register](#register)|Registers the window class.|
 
 ### Data Members
 
-|||
+|Name|Description|
 |-|-|
 |[m_atom](#m_atom)|Uniquely identifies the registered window class.|
 |[m_bSystemCursor](#m_bsystemcursor)|Specifies whether the cursor resource refers to a system cursor or to a cursor contained in a module resource.|

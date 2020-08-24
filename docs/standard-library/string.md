@@ -50,9 +50,9 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 ### Specialized Template Functions
 
-|||
+|Name|Description|
 |-|-|
-|hash|Produces a hash of a string.|
+|`hash`|Produces a hash of a string.|
 |[swap](../standard-library/string-functions.md#swap)|Exchanges the arrays of characters of two strings.|
 |[stod](../standard-library/string-functions.md#stod)|Converts a character sequence to a **`double`**.|
 |[stof](../standard-library/string-functions.md#stof)|Converts a character sequence to a **`float`**.|
@@ -79,7 +79,7 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 ### Specializations
 
-|||
+|Name|Description|
 |-|-|
 |[char_traits\<char> Struct](../standard-library/char-traits-char-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type **`char`**.|
 |[char_traits<wchar_t> Struct](../standard-library/char-traits-wchar-t-struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type **`wchar_t`**.|

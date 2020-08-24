@@ -28,7 +28,7 @@ The code used to copy or move elements.
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[Add](#add)|Call this method to add an element to the array object.|
 |[Append](#append)|Call this method to add the contents of one array to the end of another.|
@@ -51,13 +51,13 @@ The code used to copy or move elements.
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator &#91;&#93;](#operator_at)|Call this operator to return a reference to an element in the array.|
 
 ### Typedefs
 
-|||
+|Typedef|Description|
 |-|-|
 |[INARGTYPE](#inargtype)|The data type to use for adding elements to the array.|
 |[OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the array.|

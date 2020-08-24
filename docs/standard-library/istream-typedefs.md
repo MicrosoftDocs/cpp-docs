@@ -6,10 +6,10 @@ ms.assetid: 55bc1f84-53a7-46ca-a36f-ac6ef75d0374
 ---
 # &lt;istream&gt; typedefs
 
-||||
-|-|-|-|
-|[iostream](#iostream)|[istream](#istream)|[wiostream](#wiostream)|
-|[wistream](#wistream)|
+[iostream](#iostream)\
+[istream](#istream)\
+[wiostream](#wiostream)\
+[wistream](#wistream)
 
 ## <a name="iostream"></a> iostream
 

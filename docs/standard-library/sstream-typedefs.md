@@ -6,11 +6,14 @@ ms.assetid: d102edd2-ecea-4a35-a398-cf96e58dd422
 ---
 # &lt;sstream&gt; typedefs
 
-||||
-|-|-|-|
-|[istringstream](#istringstream)|[ostringstream](#ostringstream)|[stringbuf](#stringbuf)|
-|[stringstream](#stringstream)|[wistringstream](#wistringstream)|[wostringstream](#wostringstream)|
-|[wstringbuf](#wstringbuf)|[wstringstream](#wstringstream)|
+[istringstream](#istringstream)\
+[ostringstream](#ostringstream)\
+[stringbuf](#stringbuf)\
+[stringstream](#stringstream)\
+[wistringstream](#wistringstream)\
+[wostringstream](#wostringstream)\
+[wstringbuf](#wstringbuf)\
+[wstringstream](#wstringstream)
 
 ## <a name="istringstream"></a> istringstream
 

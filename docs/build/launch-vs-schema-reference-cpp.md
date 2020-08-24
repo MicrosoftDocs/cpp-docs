@@ -9,9 +9,8 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 
 ## Default properties
 
-||||
+|Property|Type|Description|
 |-|-|-|
-|**Property**|**Type**|**Description**|
 |`name`|string|Specifies the name of the entry in the Debug target dropdown.|
 |`type`|string|Specifies whether the project is a dll or .exe (Defaults to .exe)|
 |`project`|string|Specifies the relative path to the project file.|
@@ -29,9 +28,8 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 
 ## C++ Linux properties
 
-||||
+|Property|Type|Description|
 |-|-|-|
-|**Property**|**Type**|**Description**|
 |`program`|string|Full path to program executable on the remote machine. When using CMake, the macro `${debugInfo.fullTargetPath}` can be used as the value of this field.|
 |`processId`|integer|Optional process ID to attach the debugger to.|
 |`sourceFileMap`|object|Optional source file mappings passed to the debug engine. Format: `{ "\<Compiler source location>": "\<Editor source location>" }` or `{ "\<Compiler source location>": { "editorPath": "\<Editor source location>", "useForBreakpoints": true } }`. Example: `{ "/home/user/foo": "C:\\foo" }` or `{ "/home/user/foo": { "editorPath": "c:\\foo", "useForBreakpoints": true } }`. See [Source file map options](#source_file_map_options).|
@@ -60,7 +58,7 @@ externalConsole|boolean|If true, a console is launched for the debuggee. If **`f
 
 Used with the `setupCommands` property:
 
-||||
+|Property|Type|Description|
 |-|-|-|
 |`text`|string|The debugger command to execute.|
 |`description`|string|Optional description for the command.|
@@ -70,7 +68,7 @@ Used with the `setupCommands` property:
 
 Used with the `pipeTransport` property:
 
-||||
+|Property|Type|Description|
 |-|-|-|
 |`pipeCwd`|string|The fully qualified path to the working directory for the pipe program.|
 |`pipeProgram`|string|The fully qualified pipe command to execute.|
@@ -83,7 +81,7 @@ Used with the `pipeTransport` property:
 
 Use with the `sourceFileMap` property:
 
-||||
+|Property|Type|Description|
 |-|-|-|
 |`editorPath`|string|The location of the source code for the editor to locate.|
 |`useForBreakpoints`|boolean|When setting breakpoints, this source mapping should be used. If **`false`**, only the filename and line number is used for setting breakpoints. If **`true`**, breakpoints will be set with the full path to the file and line number only when this source mapping is used. Otherwise just filename and line number will be used when setting breakpoints. Default is **`true`**.|

@@ -8,7 +8,7 @@ ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
 
 These functions support text encoding and decoding.
 
-|||
+|Function|Description|
 |-|-|
 |[AtlGetHexValue](#atlgethexvalue)|Call this function to get the numeric value of a hexadecimal digit.|
 |[AtlGetVersion](#atlgetversion)|Call this function to get the version of the ATL library that you are using.  |

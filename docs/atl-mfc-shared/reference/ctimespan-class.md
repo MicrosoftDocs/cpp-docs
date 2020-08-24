@@ -40,7 +40,7 @@ class CTimeSpan
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator + -](#operator_add_-)|Adds and subtracts `CTimeSpan` objects.|
 |[operator += -=](#operator_add_eq_-_eq)|Adds and subtracts a `CTimeSpan` object to and from this `CTimeSpan`.|

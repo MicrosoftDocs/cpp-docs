@@ -30,9 +30,7 @@ By default, only COM-interfaces that are base classes of the `coclass` are added
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|Yes|

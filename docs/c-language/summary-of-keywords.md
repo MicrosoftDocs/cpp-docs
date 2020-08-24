@@ -9,44 +9,44 @@ ms.assetid: 341d8297-03eb-4351-9ed0-138ec59b375c
 
 :::row:::
     :::column:::
-        **`auto`**<br/>
-        **`double`**<br/>
-        **`int`**<br/>
-        **`struct`**<br/>
-        **`break`**<br/>
-        **`else`**<br/>
-        **`long`**<br/>
-        **`switch`**<br/>
+        **`auto`**\
+        **`double`**\
+        **`int`**\
+        **`struct`**\
+        **`break`**\
+        **`else`**\
+        **`long`**\
+        **`switch`**
     :::column-end:::
     :::column:::
-        **`case`**<br/>
-        **`enum`**<br/>
-        **`register`**<br/>
-        **`typedef`**<br/>
-        **`char`**<br/>
-        **`extern`**<br/>
-        **`return`**<br/>
-        **`union`**<br/>
+        **`case`**\
+        **`enum`**\
+        **`register`**\
+        **`typedef`**\
+        **`char`**\
+        **`extern`**\
+        **`return`**\
+        **`union`**
     :::column-end:::
     :::column:::
-        **`const`**<br/>
-        **`float`**<br/>
-        **`short`**<br/>
-        **`unsigned`**<br/>
-        **`continue`**<br/>
-        **`for`**<br/>
-        **`signed`**<br/>
-        **`void`**<br/>
+        **`const`**\
+        **`float`**\
+        **`short`**\
+        **`unsigned`**\
+        **`continue`**\
+        **`for`**\
+        **`signed`**\
+        **`void`**
     :::column-end:::
     :::column:::
-        **`default`**<br/>
-        **`goto`**<br/>
-        **`sizeof`**<br/>
-        **`volatile`**<br/>
-        **`do`**<br/>
-        **`if`**<br/>
-        **`static`**<br/>
-        **`while`**<br/>
+        **`default`**\
+        **`goto`**\
+        **`sizeof`**\
+        **`volatile`**\
+        **`do`**\
+        **`if`**\
+        **`static`**\
+        **`while`**
     :::column-end:::
 :::row-end:::
 

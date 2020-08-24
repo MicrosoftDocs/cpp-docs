@@ -23,7 +23,7 @@ class CDataConnection
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CDataConnection](#cdataconnection)|Constructor. Instantiates and initializes a `CDataConnection` object.|
 |[Copy](#copy)|Creates a copy of an existing data connection.|
@@ -32,7 +32,7 @@ class CDataConnection
 
 ### Operators
 
-|||
+| Name | Description |
 |-|-|
 |[operator BOOL](#op_bool)|Determines whether the current session is open or not.|
 |[operator bool](#op_bool_ole)|Determines whether the current session is open or not.|

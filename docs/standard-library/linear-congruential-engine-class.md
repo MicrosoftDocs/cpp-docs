@@ -51,10 +51,12 @@ The unsigned integer result type. For possible types, see [\<random>](../standar
 
 ## Members
 
-||||
-|-|-|-|
-|`linear_congruential_engine::linear_congruential_engine`|`linear_congruential_engine::min`|`linear_congruential_engine::discard`|
-|`linear_congruential_engine::operator()`|`linear_congruential_engine::max`|`linear_congruential_engine::seed`|
+`linear_congruential_engine::linear_congruential_engine`
+`linear_congruential_engine::discard`\
+`linear_congruential_engine::max`\
+`linear_congruential_engine::min`\
+`linear_congruential_engine::operator()`\
+`linear_congruential_engine::seed`
 
 `default_seed` is a member constant, defined as `1u`, used as the default parameter value for `linear_congruential_engine::seed` and the single value constructor.
 

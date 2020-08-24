@@ -358,7 +358,7 @@ By default this method does nothing. Override this method in a derived class to 
 
 The following table lists possible values for the *type* parameter:
 
-|||
+|Value|Description|
 |-|-|
 | `RibbonImageLarge`  | Large 32x32 pixel image size.  |
 | `RibbonImageSmall`  | Small 16x16 pixel image size.  |

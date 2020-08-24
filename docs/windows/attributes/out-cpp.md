@@ -25,9 +25,7 @@ See the example for [bindable](bindable.md) for a sample use of **out**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface parameter|
 |**Repeatable**|No|

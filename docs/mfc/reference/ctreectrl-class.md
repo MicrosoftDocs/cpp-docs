@@ -1200,9 +1200,8 @@ The handle of the tree view item that occupies the specified point or NULL if no
 
 When this function is called, the *pt* parameter specifies the coordinates of the point to test. The function returns the handle of the item at the specified point or NULL if no item occupies the point. In addition, the *pFlags* parameter contains a value that indicates the location of the specified point. Possible values are:
 
-|||
+|Value|Description|
 |-|-|
-|Value|Meaning|
 |TVHT_ABOVE|Above the client area.|
 |TVHT_BELOW|Below the client area.|
 |TVHT_NOWHERE|In the client area, but below the last item.|
@@ -1215,7 +1214,6 @@ When this function is called, the *pt* parameter specifies the coordinates of th
 |TVHT_ONITEMSTATEICON|On the state icon for a tree-view item that is in a user-defined state.|
 |TVHT_TOLEFT|To the left of the client area.|
 |TVHT_TORIGHT|To the right of the client area.|
-|||
 
 ### Example
 

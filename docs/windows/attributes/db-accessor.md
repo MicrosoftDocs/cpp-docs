@@ -59,9 +59,7 @@ public:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Attribute blocks|
 |**Repeatable**|No|

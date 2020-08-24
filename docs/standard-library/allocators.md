@@ -93,23 +93,48 @@ void Mallocator<T>::deallocate(T * const p, size_t) const noexcept
 
 In C++03, any allocator used with C++ Standard Library containers must implement the following type definitions:
 
-|||
-|-|-|
-|`const_pointer`|`rebind`|
-|`const_reference`|`reference`|
-|`difference_type`|`size_type`|
-|`pointer`|`value_type`|
+:::row:::
+   :::column:::
+      `const_pointer`\
+      `const_reference`
+   :::column-end:::
+   :::column:::
+      `difference_type`\
+      `pointer`
+   :::column-end:::
+   :::column:::
+      `rebind`\
+      `reference`
+   :::column-end:::
+   :::column:::
+      `size_type`\
+      `value_type`
+   :::column-end:::
+:::row-end:::
 
 In addition, any allocator used with C++ Standard Library containers must implement the following methods:
 
-|||
-|-|-|
-|Constructor|`deallocate`|
-|Copy constructor|`destroy`|
-|Destructor|`max_size`|
-|`address`|`operator==`|
-|`allocate`|`operator!=`|
-|`construct`||
+:::row:::
+   :::column:::
+      Constructor\
+      Copy constructor\
+      Destructor
+   :::column-end:::
+   :::column:::
+      `address`\
+      `allocate`\
+      `construct`
+   :::column-end:::
+   :::column:::
+      `deallocate`\
+      `destroy`\
+      `max_size`
+   :::column-end:::
+   :::column:::
+      `operator!=`\
+      `operator==`
+   :::column-end:::
+:::row-end:::
 
 For more information on these type definitions and methods, see [allocator Class](allocator-class.md).
 

@@ -41,9 +41,7 @@ The following code shows a use of **wire_marshal**:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`typedef`**|
 |**Repeatable**|No|

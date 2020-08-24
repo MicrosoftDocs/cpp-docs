@@ -6,17 +6,42 @@ ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
 ---
 # Concurrency::direct3d namespace functions (AMP)
 
-||||
-|-|-|-|
-|[abs](#abs)|[clamp](#clamp)|[countbits](#countbits)|
-|[create_accelerator_view](#create_accelerator_view)|[d3d_access_lock](#d3d_access_lock)||
-|[d3d_access_try_lock](#d3d_access_try_lock)|[d3d_access_unlock](#d3d_access_unlock)|[firstbithigh](#firstbithigh)|
-|[firstbitlow](#firstbitlow)|[get_buffer](#get_buffer)|[get_device](#get_device)|
-|[imax](#imax)|[imin](#imin)|[is_timeout_disabled](#is_timeout_disabled)|
-|[mad](#mad)|[make_array](#make_array)|[noise](#noise)|
-|[radians](#radians)|[rcp](#rcp)|[reversebits](#reversebits)|
-|[saturate](#saturate)|[sign](#sign)|[smoothstep](#smoothstep)|
-|[step](#step)|[umax](#umax)|[umin](#umin)|
+:::row:::
+   :::column span="":::
+      [abs](#abs)\
+      [clamp](#clamp)\
+      [countbits](#countbits)\
+      [create_accelerator_view](#create_accelerator_view)\
+      [d3d_access_lock](#d3d_access_lock)\
+      [d3d_access_try_lock](#d3d_access_try_lock)\
+      [d3d_access_unlock](#d3d_access_unlock)
+   :::column-end:::
+   :::column span="":::
+      [firstbithigh](#firstbithigh)\
+      [firstbitlow](#firstbitlow)\
+      [get_buffer](#get_buffer)\
+      [get_device](#get_device)\
+      [imax](#imax)\
+      [imin](#imin)\
+      [is_timeout_disabled](#is_timeout_disabled)
+   :::column-end:::
+   :::column span="":::
+      [mad](#mad)\
+      [make_array](#make_array)\
+      [noise](#noise)\
+      [radians](#radians)\
+      [rcp](#rcp)\
+      [reversebits](#reversebits)
+   :::column-end:::
+   :::column span="":::
+      [saturate](#saturate)\
+      [sign](#sign)\
+      [smoothstep](#smoothstep)\
+      [step](#step)\
+      [umax](#umax)\
+      [umin](#umin)
+   :::column-end:::
+:::row-end:::
 
 ## Requirements
 

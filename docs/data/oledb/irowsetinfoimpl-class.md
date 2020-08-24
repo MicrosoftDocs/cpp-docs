@@ -34,7 +34,7 @@ A user-definable property class that defaults to *T*.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the current settings of all properties supported by the rowset.|
 |[GetReferencedRowset](#getreferencedrowset)|Returns an interface pointer to the rowset to which a bookmark applies.|

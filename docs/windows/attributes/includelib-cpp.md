@@ -37,9 +37,7 @@ The following code is shown in a .cpp file:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|Yes|

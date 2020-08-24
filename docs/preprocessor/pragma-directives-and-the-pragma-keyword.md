@@ -26,22 +26,57 @@ The compiler issues a warning when it finds a pragma that it doesn't recognize, 
 
 The Microsoft C and C++ compilers recognize the following pragmas:
 
-||||
-|-|-|-|
-|[alloc_text](../preprocessor/alloc-text.md)|[auto_inline](../preprocessor/auto-inline.md)|[bss_seg](../preprocessor/bss-seg.md)|
-|[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[comment](../preprocessor/comment-c-cpp.md)|
-|[component](../preprocessor/component.md)|[conform](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|
-|[data_seg](../preprocessor/data-seg.md)|[deprecated](../preprocessor/deprecated-c-cpp.md)|[detect_mismatch](../preprocessor/detect-mismatch.md)|
-|[fenv_access](../preprocessor/fenv-access.md)|[float_control](../preprocessor/float-control.md)|[fp_contract](../preprocessor/fp-contract.md)|
-|[function](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|
-|[init_seg](../preprocessor/init-seg.md) <sup>1</sup>|[inline_depth](../preprocessor/inline-depth.md)|[inline_recursion](../preprocessor/inline-recursion.md)|
-|[intrinsic](../preprocessor/intrinsic.md)|[loop](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
-|[managed](../preprocessor/managed-unmanaged.md)|[message](../preprocessor/message.md)|[omp](../preprocessor/omp.md)|
-|[once](../preprocessor/once.md)|[optimize](../preprocessor/optimize.md)|[pack](../preprocessor/pack.md)|
-|[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|
-|[region, endregion](../preprocessor/region-endregion.md)|[runtime_checks](../preprocessor/runtime-checks.md)|[section](../preprocessor/section.md)|
-|[setlocale](../preprocessor/setlocale.md)|[strict_gs_check](../preprocessor/strict-gs-check.md)|[unmanaged](../preprocessor/managed-unmanaged.md)|
-|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|[warning](../preprocessor/warning.md)||
+:::row:::
+   :::column span="":::
+      [`alloc_text`](../preprocessor/alloc-text.md)\
+      [`auto_inline`](../preprocessor/auto-inline.md)\
+      [`bss_seg`](../preprocessor/bss-seg.md)\
+      [`check_stack`](../preprocessor/check-stack.md)\
+      [`code_seg`](../preprocessor/code-seg.md)\
+      [`comment`](../preprocessor/comment-c-cpp.md)\
+      [`component`](../preprocessor/component.md)\
+      [`conform`](../preprocessor/conform.md) <sup>1</sup>\
+      [`const_seg`](../preprocessor/const-seg.md)\
+      [`data_seg`](../preprocessor/data-seg.md)\
+      [`deprecated`](../preprocessor/deprecated-c-cpp.md)
+   :::column-end:::
+   :::column span="":::
+      [`detect_mismatch`](../preprocessor/detect-mismatch.md)\
+      [`fenv_access`](../preprocessor/fenv-access.md)\
+      [`float_control`](../preprocessor/float-control.md)\
+      [`fp_contract`](../preprocessor/fp-contract.md)\
+      [`function`](../preprocessor/function-c-cpp.md)\
+      [`hdrstop`](../preprocessor/hdrstop.md)\
+      [`include_alias`](../preprocessor/include-alias.md)\
+      [`init_seg`](../preprocessor/init-seg.md) <sup>1</sup>\
+      [`inline_depth`](../preprocessor/inline-depth.md)\
+      [`inline_recursion`](../preprocessor/inline-recursion.md)
+   :::column-end:::
+   :::column span="":::
+      [`intrinsic`](../preprocessor/intrinsic.md)\
+      [`loop`](../preprocessor/loop.md) <sup>1</sup>\
+      [`make_public`](../preprocessor/make-public.md)\
+      [`managed`](../preprocessor/managed-unmanaged.md)\
+      [`message`](../preprocessor/message.md)\
+      [`omp`](../preprocessor/omp.md)\
+      [`once`](../preprocessor/once.md)\
+      [`optimize`](../preprocessor/optimize.md)\
+      [`pack`](../preprocessor/pack.md)\
+      [`pointers_to_members`](../preprocessor/pointers-to-members.md) <sup>1</sup>
+   :::column-end:::
+   :::column span="":::
+      [`pop_macro`](../preprocessor/pop-macro.md)\
+      [`push_macro`](../preprocessor/push-macro.md)\
+      [`region`, endregion](../preprocessor/region-endregion.md)\
+      [`runtime_checks`](../preprocessor/runtime-checks.md)\
+      [`section`](../preprocessor/section.md)\
+      [`setlocale`](../preprocessor/setlocale.md)\
+      [`strict_gs_check`](../preprocessor/strict-gs-check.md)\
+      [`unmanaged`](../preprocessor/managed-unmanaged.md)\
+      [`vtordisp`](../preprocessor/vtordisp.md) <sup>1</sup>\
+      [`warning`](../preprocessor/warning.md)
+   :::column-end:::
+:::row-end:::
 
 <sup>1</sup> Supported only by the C++ compiler.
 

@@ -26,7 +26,7 @@ Defines the class template basic_istream, which mediates extractions for the ios
 
 ### Manipulators
 
-|||
+|Name|Description|
 |-|-|
 |[ws](../standard-library/istream-functions.md#ws)|Skips white space in the stream.|
 |[swap](../standard-library/istream-functions.md#istream_swap)|Exchanges two stream objects.|

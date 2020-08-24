@@ -1109,9 +1109,8 @@ DWORD m_dwRestartManagerSupportFlags;
 
 To enable the restart manager, set `m_dwRestartManagerSupportFlags` to the behavior that you want. The following table shows the flags that are available.
 
-|||
-|-|-|
 |Flag|Description|
+|-|-|
 |AFX_RESTART_MANAGER_SUPPORT_RESTART|The application is registered by using [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager). The restart manager is responsible for restarting the application if it unexpectedly exits.|
 |- AFX_RESTART_MANAGER_SUPPORT_RECOVERY|The application is registered with the restart manager and the restart manager calls the recovery callback function when it restarts the application. The default recovery callback function is [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
 |- AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|Autosave is enabled and the restart manager autosaves any open documents when the application restarts.|
