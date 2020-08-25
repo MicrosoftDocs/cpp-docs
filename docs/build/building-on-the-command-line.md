@@ -226,7 +226,7 @@ Use the linker (link.exe) to link compiled object files and libraries into apps 
 [NMAKE](reference/nmake-reference.md)<br/>
 Use NMAKE (nmake.exe) on Windows to build C++ projects based on a traditional makefile.
 
-When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in [docs.microsoft.com](https://docs.microsoft.com/cpp/), enter your query in the search box at the top of any article.
+When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in docs.microsoft.com, enter your query in the search box at the top of any article.
 
 ## Command-line project management tools
 

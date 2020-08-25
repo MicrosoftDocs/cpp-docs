@@ -37,7 +37,7 @@ If **/DRIVER** is specified:
 
 ### To set this linker option programmatically
 
-- See [VCLinkerTool.driver Property](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.driver?view=visualstudiosdk-2017#Microsoft_VisualStudio_VCProjectEngine_VCLinkerTool_driver).
+- See [VCLinkerTool.driver Property](/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.driver?view=visualstudiosdk-2017#Microsoft_VisualStudio_VCProjectEngine_VCLinkerTool_driver).
 
 ## See also
 
