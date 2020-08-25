@@ -53,7 +53,7 @@ When you use **`/EHs`** or **`/EHsc`**, the compiler assumes that exceptions can
 
 ### Structured and standard C++ exception handling
 
-The **`/EHa`** compiler option enables safe stack unwinding for both asynchronous exceptions and C++ exceptions. It supports handling of both standard C++ and structured exceptions by using the native C++ `catch(...)` clause. To implement SEH without specifying **`/EHa`**, you may use the **__try**, **`__except`**, and **`__finally`** syntax. For more information, see [Structured exception handling](../../cpp/structured-exception-handling-c-cpp.md).
+The **`/EHa`** compiler option enables safe stack unwinding for both asynchronous exceptions and C++ exceptions. It supports handling of both standard C++ and structured exceptions by using the native C++ `catch(...)` clause. To implement SEH without specifying **`/EHa`**, you may use the **`__try`**, **`__except`**, and **`__finally`** syntax. For more information, see [Structured exception handling](../../cpp/structured-exception-handling-c-cpp.md).
 
 > [!IMPORTANT]
 > Specifying **`/EHa`** and trying to handle all exceptions by using `catch(...)` can be dangerous. In most cases, asynchronous exceptions are unrecoverable and should be considered fatal. Catching them and proceeding can cause process corruption and lead to bugs that are hard to find and fix.
