@@ -1,5 +1,6 @@
 ---
 title: "&lt;bit&gt;"
+description: "Functions to access, manipulate, and process individual bits and sequences of bits."
 ms.date: "08/24/2020"
 f1_keywords: ["<bit>"]
 helpviewer_keywords: ["bit header"]
@@ -25,7 +26,7 @@ For example, rotate bits, find the number of consecutive set or clear bits, see 
 
 | Type | Description |
 |-|:-|
-| [endian](endian-enum.md) | Specifies the endianness of scalar types. |
+| [endian](bit_enum.md) | Specifies the endianness of scalar types. |
 
 ### Functions
 

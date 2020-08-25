@@ -1,34 +1,34 @@
 ---
 title: "endian enum"
+description: "enum used to specify the endianness of scalar types"
 ms.date: "08/10/2020"
 f1_keywords: ["bit/std::endian"]
 helpviewer_keywords: ["std::endian"]
 ---
 # endian enum
 
-Used with the [\<bit>](charconv.md) library to specify endianess of scalar types.
+Indicates the endianness of all scalar types.
 
 ## Syntax
 
 ```cpp
-enum class chars_format {
-    scientific = unspecified,
-    fixed = unspecified,
-    hex = unspecified,
-    general = fixed | scientific
-};
+enum class endian {
+    little = 0,
+    big = 1,
+    native = little
+ };
 ```
 
 ### Members
 
 |Element|Description|
 |-|-|
-| `scientific` | Causes `from_chars()` to expect and parse an exponent. It is like the `printf()` format specifier `'e'`, which formats for scientific notation, like `"1.729e+01"`. |
+| `little` | Indicates that a scaler types are little-endian. That is, the least significant byte is stored in the smallest address. For example, 1234 is stored 34 12.  |
+| `big` | Indicates that scalar types are big-endian, that is, the most significant byte is stored in the smallest address. For example, 1234 is stored 12 34.  |
 
 ## Remarks
 
-For the [from_chars](charconv-functions.md#from_chars) functions, this enum describes what kind of input to expect.
-For the [to_chars](charconv-functions.md#to_chars) functions, it describes what kind of output to emit.
+All scalar types are little-endian.
 
 ## Requirements
 
@@ -36,7 +36,7 @@ For the [to_chars](charconv-functions.md#to_chars) functions, it describes what 
 
 **Namespace:** std
 
-/std:c++20, or later, is required.
+/std:c++latest is required
 
 ## See also
 

@@ -102,7 +102,7 @@
         - name: <bit> functions
           href: ../standard-library/bit-functions.md
         - name: endian enum
-          href: ../standard-library/endian-enum.md
+          href: ../standard-library/bit-enum.md
     - name: <bitset>
       expanded: false
       items: 

@@ -1,25 +1,26 @@
 ---
 title: "&lt;bit&gt; functions"
-ms.date: "08/26/2020"
+description: "Functions to access, manipulate, and process individual bits and sequences of bits"
+ms.date: "08/25/2020"
 f1_keywords: ["bit/std::bit_cat", "bit/std::has_single_bit", "bit/std::bit_ceil", "bit/std::bit_floor", "bit/std::bit_width", "bit/std::rotl", "bit/std::rotr", "bit/std::countl_zero", "bit/std::countl_one","bit/std::countr_zero","bit/std::countr_one","bit/std::popcount"]
-helpviewer_keywords: ["std::bit [C++], bit_cast", "std::bit [C++], has_single_bit", "std::bit [C++], bit_ceil", "std::bit [C++], bit_floor", "std::bit [C++], bit_width", "std::bit [C++], "rotl", "std::bit [C++], "rotr", "std::bit [C++], "countl_zero", "std::bit [C++], "countl_one", "std::bit [C++], countr_zero", ""std::bit [C++], "countr_one", "std::bit [C++], "popcount"]
+helpviewer_keywords: ["std::bit [C++], bit_cast", "std::bit [C++], has_single_bit", "std::bit [C++], bit_ceil", "std::bit [C++], bit_floor", "std::bit [C++], bit_width", "std::bit [C++], rotl", "std::bit [C++], rotr", "std::bit [C++], countl_zero", "std::bit [C++], countl_one", "std::bit [C++], countr_zero", "std::bit [C++], countr_one", "std::bit [C++], popcount"]
 ---
 # &lt;bit&gt; functions
 
 The \<bit> header includes the following non-member template functions:
 
 | **Non-member functions** | **Description** |
-|-|-|
+|--------|---------|
 |[bit_cast](#bit_cast) | Reinterpret the object representation of one type as that of another |
 |[bit_ceil](#bit_ceil) | Finds the smallest power of 2 greater than or equal to the given value |
 |[bit_floor](#bit_floor) | Finds the largest integral power of two not greater than the given value |
 |[bit_width](#bit_width) | Finds the smallest number of bits needed to represent the given value |
-|[countl_zero](#countl_zero) | Counts the number of consecutive 0 bits, starting from the most significant bit |
-|[countl_one](#countl_one) | Counts the number of consecutive 1 bits, starting from the most significant bit |
-|[countr_zero](#countr_zero) | Counts the number of consecutive 0 bits, starting from the least significant bit |
-|[countr_one](#countl_one) | Counts the number of consecutive 1 bits, starting from the least significant bit |
+|[countl_zero](#countl_zero) | Counts the number of consecutive bits set to zero, starting from the most significant bit |
+|[countl_one](#countl_one) | Counts the number of consecutive bit set to one, starting from the most significant bit |
+|[countr_zero](#countr_zero) | Counts the number of consecutive bits set to zero, starting from the least significant bit |
+|[countr_one](#countl_one) | Counts the number of consecutive bits set to one, starting from the least significant bit |
 |[has_single_bit](#has_single_bit) | Checks if a value has only a single bit set, that is, is an integral power of two. |
-|[popcount](#popcount) | Counts the number of 1 bits in an unsigned integer |
+|[popcount](#popcount) | Counts the number of bits set to one in an unsigned integer |
 |[rotl](#rotl) | Computes the result of bitwise left-rotation |
 |[rotr](#rotr) | Computes the result of bitwise right-rotation |
 
@@ -79,7 +80,7 @@ This overload only participates in overload resolution if:
 -  `sizeof(To) == sizeof(From)`
 - `To` and `From` are [is_trivially_copyable](https://docs.microsoft.com/cpp/standard-library/is-trivially-copyable-class?view=vs-2019`).
 
-This function template is `constexpr` only if `To`, `From` and their subobjects are:
+This function template is `constexpr` only if `To`, `From`, and their subobjects are:
 - not a union or pointer type
 - not a pointer to member type
 - not volatile-qualified
@@ -149,7 +150,8 @@ The unsigned integer value to test.
 
 ### Return Value
 
-The largest integral power of two that is not greater than `value`. If `value` is zero, returns zero.
+The largest integral power of two that isn't greater than `value`. 
+If `value` is zero, returns zero.
 
 ### Example
 
@@ -386,7 +388,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="countr_one"></a>`countr_one`
 
-Counts the number of consecutive 1 bits, starting from the least significant bit
+Counts the number of consecutive bits set to one, starting from the least significant bit.
 
 ```cpp
 template<class T>
@@ -436,7 +438,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="has_single_bit"></a>`has_single_bit`
 
-Checks if a value has only a single bit set, that is, is an integral power of two.
+Checks if a value has only a single bit set, that is, is the value an integral power of two.
  
 ```cpp
 template <class T>
