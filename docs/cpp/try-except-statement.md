@@ -59,7 +59,7 @@ It's not valid to jump into a **`__try`** statement, but valid to jump out of on
 
 For compatibility with previous versions, **_try**, **_except**, and **_leave** are synonyms for **`__try`**, **`__except`**, and **`__leave`** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
-### <a href="__leave"></a> The `__leave` keyword
+### <a name="__leave"></a> The `__leave` keyword
 
 The **`__leave`** keyword is valid only within the guarded section of a `try-except` statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement after the exception handler.
 

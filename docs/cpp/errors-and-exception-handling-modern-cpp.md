@@ -80,7 +80,7 @@ Robust error handling is challenging in any programming language. Although excep
 
 The exception mechanism has a minimal performance cost if no exception is thrown. If an exception is thrown, the cost of the stack traversal and unwinding is roughly comparable to the cost of a function call. Additional data structures are required to track the call stack after a **`try`** block is entered, and additional instructions are required to unwind the stack if an exception is thrown. However, in most scenarios, the cost in performance and memory footprint isn't significant. The adverse effect of exceptions on performance is likely to be significant only on memory-constrained systems. Or, in performance-critical loops, where an error is likely to occur regularly and there's tight coupling between the code to handle it and the code that reports it. In any case, it's impossible to know the actual cost of exceptions without profiling and measuring. Even in those rare cases when the cost is significant, you can weigh it against the increased correctness, easier maintainability, and other advantages that are provided by a well-designed exception policy.
 
-## <a href="exceptions_versus_assertions"></a> Exceptions versus assertions
+## <a name="exceptions_versus_assertions"></a> Exceptions versus assertions
 
 Exceptions and asserts are two distinct mechanisms for detecting run-time errors in a program. Use `assert` statements to test for conditions during development that should never be true if all your code is correct. There's no point in handling such an error by using an exception, because the error indicates that something in the code has to be fixed. It doesn't represent a condition that the program has to recover from at run time. An `assert` stops execution at the statement so that you can inspect the program state in the debugger. An exception continues execution from the first appropriate catch handler. Use exceptions to check error conditions that might occur at run time even if your code is correct, for example, "file not found" or "out of memory." Exceptions can handle these conditions, even if the recovery just outputs a message to a log and ends the program. Always check arguments to public functions by using exceptions. Even if your function is error-free, you might not have complete control over arguments that a user might pass to it.
 
@@ -90,7 +90,7 @@ Both C and C++ programs can use the structured exception handling (SEH) mechanis
 
 For more information about SEH, see [Structured Exception Handling (C/C++)](structured-exception-handling-c-cpp.md).
 
-## <a href="exception_specifications_and_noexcept"></a> Exception specifications and `noexcept`
+## <a name="exception_specifications_and_noexcept"></a> Exception specifications and `noexcept`
 
 Exception specifications were introduced in C++ as a way to specify the exceptions that a function might throw. However, exception specifications proved problematic in practice, and are deprecated in the C++11 draft standard. We recommend that you don't use **`throw`** exception specifications except for `throw()`, which indicates that the function allows no exceptions to escape. If you must use exception specifications of the deprecated form `throw( type-name )`, MSVC support is limited. For more information, see [Exception Specifications (throw)](exception-specifications-throw-cpp.md). The **`noexcept`** specifier is introduced in C++11 as the preferred alternative to `throw()`.
 
