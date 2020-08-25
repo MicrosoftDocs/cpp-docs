@@ -1,5 +1,6 @@
 ---
 title: "x64 exception handling"
+description: "Overview of Microsoft C++ exception handling conventions on x64."
 ms.date: "10/14/2019"
 helpviewer_keywords: ["C++ exception handling, x64", "exception handling, x64"]
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93

@@ -1,5 +1,6 @@
 ---
 title: "Exceptions in C++/CLI"
+description: "Link aggregation page for Microsoft C++/CLI exception handling articles."
 ms.date: "11/04/2016"
 ms.assetid: 0010e205-4487-49a9-a8db-4a8ec63cfc83
 ---
