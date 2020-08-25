@@ -32,6 +32,6 @@ int main() {
 
 ## See also
 
-[The `__leave` keyword](/cpp/cpp/try-except-statement#__leave)\
-[`try-except` statement](/cpp/cpp/try-except-statement)\
-[`try-finally` statement](/cpp/cpp/try-finally-statement)
+[The `__leave` keyword](../../cpp/try-except-statement.md#__leave)\
+[`try-except` statement](../../cpp/try-except-statement.md)\
+[`try-finally` statement](../../cpp/try-finally-statement.md)
