@@ -23,12 +23,12 @@ enum class endian {
 
 |Element|Description|
 |-|-|
-| `little` | Indicates that a scaler types are little-endian. That is, the least significant byte is stored in the smallest address. For example, 1234 is stored 34 12.  |
-| `big` | Indicates that scalar types are big-endian, that is, the most significant byte is stored in the smallest address. For example, 1234 is stored 12 34.  |
+| `little` | Indicates that scaler types are little-endian. That is, the least significant byte is stored in the smallest address. For example, `1234` is stored `34` `12`.  |
+| `big` | Indicates that scalar types are big-endian, that is, the most significant byte is stored in the smallest address. For example, `1234` is stored `12` `34`.  |
 
 ## Remarks
 
-All scalar types are little-endian.
+All native scalar types are little-endian.
 
 ## Requirements
 

@@ -11,18 +11,18 @@ The \<bit> header includes the following non-member template functions:
 
 | **Non-member functions** | **Description** |
 |--------|---------|
-|[bit_cast](#bit_cast) | Reinterpret the object representation of one type as that of another |
-|[bit_ceil](#bit_ceil) | Finds the smallest power of 2 greater than or equal to the given value |
-|[bit_floor](#bit_floor) | Finds the largest integral power of two not greater than the given value |
-|[bit_width](#bit_width) | Finds the smallest number of bits needed to represent the given value |
-|[countl_zero](#countl_zero) | Counts the number of consecutive bits set to zero, starting from the most significant bit |
-|[countl_one](#countl_one) | Counts the number of consecutive bit set to one, starting from the most significant bit |
-|[countr_zero](#countr_zero) | Counts the number of consecutive bits set to zero, starting from the least significant bit |
-|[countr_one](#countl_one) | Counts the number of consecutive bits set to one, starting from the least significant bit |
-|[has_single_bit](#has_single_bit) | Checks if a value has only a single bit set, that is, is an integral power of two. |
-|[popcount](#popcount) | Counts the number of bits set to one in an unsigned integer |
-|[rotl](#rotl) | Computes the result of bitwise left-rotation |
-|[rotr](#rotr) | Computes the result of bitwise right-rotation |
+|[bit_cast](#bit_cast) | Reinterpret the object representation of one type to another. |
+|[bit_ceil](#bit_ceil) | Find the smallest power of two greater than or equal to a value. |
+|[bit_floor](#bit_floor) | Find the largest power of two not greater than a value. |
+|[bit_width](#bit_width) | Find the smallest number of bits needed to represent a value. |
+|[countl_zero](#countl_zero) | Count the number of consecutive bits set to zero, starting from the most significant bit. |
+|[countl_one](#countl_one) | Count the number of consecutive bit set to one, starting from the most significant bit. |
+|[countr_zero](#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
+|[countr_one](#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |
+|[has_single_bit](#has_single_bit) | Check if a value has only one bit set, that is, whether it is a power of two. |
+|[popcount](#popcount) | Count the number of bits set to one in an unsigned integer. |
+|[rotl](#rotl) | Compute the result of bitwise left rotation. |
+|[rotr](#rotr) | Compute the result of bitwise right rotation. |
 
 ## <a name="bit_cast"></a>`bit_cast`
 
@@ -48,7 +48,7 @@ The value to convert.
 
 An object of type `To`
 
-Each bit in the result matches the corresponding bit in `from`, unless there are padding bits in `To`, in which case those bits in the result are unspecified.
+Each bit in the result matches the corresponding bit in `from` unless there are padding bits in `To`, in which case those bits in the result are unspecified.
 
 ### Example
 
@@ -72,9 +72,9 @@ A
 
 ### Remarks
 
-Low-level code often needs to interpret an object of one type as another type. The new object has the same bit representation, but has a different type. But making the bit-for-bit conversion can be error-prone.
+Low-level code often needs to interpret an object of one type as another type. The reinterpreted object has the same bit representation as the original, but is a different type. But making the bit-for-bit conversion can be error-prone.
 
-Instead of using `reinterpret_cast`, or `memcpy()`, `bit_cast()` is a safe way to make these conversions.
+Instead of using `reinterpret_cast`, or `memcpy()`, `bit_cast()` is a safer way to make these conversions.
 
 This overload only participates in overload resolution if:
 -  `sizeof(To) == sizeof(From)`
@@ -88,7 +88,7 @@ This function template is `constexpr` only if `To`, `From`, and their subobjects
 
 ## <a name="bit_ceil"></a>`bit_ceil`
 
-Finds the smallest power of 2 greater than or equal to the given value. For example, given 3, returns 4.
+Find the smallest power of two greater than or equal to a value. For example, given `3`, returns `4`.
 
 ```cpp
 template<class T>
@@ -102,7 +102,7 @@ The unsigned integer value to test.
 
 ### Return Value
 
- The smallest power of 2 greater than or equal to `value`.
+ The smallest power of two greater than or equal to `value`.
 
 ### Example
 
@@ -115,7 +115,8 @@ int main()
     for (auto i = 0u; i < 6u; ++i) // bit_ceil() takes an unsigned integer type
     {
         auto nextClosestPowerOf2 = std::bit_ceil(i);
-        std::cout << "bit_ceil(" << std::bitset<4>(i) << ") = " << std::bitset<4>( nextClosestPowerOf2 ) << '\n';
+        std::cout << "\nbit_ceil(" << std::bitset<4>(i) << ") = "
+                      << std::bitset<4>( nextClosestPowerOf2 );
     }
     return 0;
 }
@@ -136,7 +137,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="bit_floor"></a>`bit_floor`
 
-Finds the largest integral power of two not greater than the given value. For example, given 5, returns 4.
+Find the largest power of two not greater than a value. For example, given `5`, returns `4`.
 
 ```cpp
 template< class T >
@@ -150,7 +151,7 @@ The unsigned integer value to test.
 
 ### Return Value
 
-The largest integral power of two that isn't greater than `value`. 
+The largest power of two that isn't greater than `value`.\
 If `value` is zero, returns zero.
 
 ### Example
@@ -161,10 +162,11 @@ If `value` is zero, returns zero.
 
 int main()
 {
-    for (auto i = 0u; i < 6u; ++i) // ceil() takes an unsigned integer type
+    for (auto i = 0u; i < 6u; ++i) // bit_floor() takes an unsigned integer type
     {
         auto previousPowerOf2 = std::bit_floor(i);
-        std::cout << "bit_floor(" << std::bitset<4>(i) << ") = " << std::bitset<4>(previousPowerOf2) << '\n';
+        std::cout << "\nbit_floor(" << std::bitset<4>(i) << ") = "
+                      << std::bitset<4>(previousPowerOf2);
     }
     return 0;
 }
@@ -185,7 +187,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="bit_width"></a>`bit_width`
 
-Finds the smallest number of bits needed to represent `value`.
+Find the smallest number of bits needed to represent a value.
 
 For example, given 5 (0b101), returns 3 because it takes 3 binary bits to express the value 5.
 
@@ -215,7 +217,8 @@ int main()
 {
     for (unsigned i=0u; i <= 8u; ++i)
     {
-        std::cout << "bit_width( " << i << ") = " << std::bit_width(i) << '\n';
+        std::cout << "\nbit_width( " << i << ") = "
+                      << std::bit_width(i);
     }
     return 0;
 }
@@ -239,7 +242,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="countl_zero"></a>`countl_zero`
 
-Counts the number of consecutive bits set to zero, starting from the most significant bit.
+Count the number of consecutive bits set to zero, starting from the most significant bit.
 
 ```cpp
 template<class T>
@@ -253,7 +256,7 @@ The unsigned integer value to test.
 
 ### Return Value
 
-The number of consecutive zero bits, starting from the most significant bit.
+The number of consecutive zero bits, starting from the most significant bit.\
 If `value` is zero, returns the number of bits in the type of `value`.
 
 ### Example
@@ -266,7 +269,8 @@ int main()
 {
     for (unsigned char i = 1; i < 128; i *= 2)
     {
-        std::cout << "\ncountl_zero(" << std::bitset<8>(i) << ") = " << std::countl_zero(i);
+        std::cout << "\ncountl_zero(" << std::bitset<8>(i)
+                      << ") = " << std::countl_zero(i);
     }
     return 0;
 }
@@ -288,7 +292,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="countl_one"></a>`countl_one`
 
-Counts the number of consecutive bits set to one, starting from the most significant bit.
+Count the number of consecutive bits set to one, starting from the most significant bit.
 
 ```cpp
 template<class T>
@@ -316,7 +320,8 @@ int main()
     for (unsigned char bit=128; bit > 0; bit /= 2 )
     {
         value |= bit;
-        std::cout << "\ncountl_one(" << std::bitset<8>(value) << ") = " << std::countl_one(value);
+        std::cout << "\ncountl_one(" << std::bitset<8>(value) << ") = "
+                      << std::countl_one(value);
     }
     return 0;
 }
@@ -339,7 +344,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="countr_zero"></a>`countr_zero`
 
-Counts the number of consecutive bits set to zero, starting from the least significant bit.
+Count the number of consecutive bits set to zero, starting from the least significant bit.
 
 ```cpp
 template<class T>
@@ -353,7 +358,7 @@ The unsigned integer value to test.
 
 ### Return Value
 
-The number of consecutive zero bits, starting from the least significant bit.
+The number of consecutive zero bits, starting from the least significant bit.\
 If `value` is zero, returns the number of bits in the type of `value`.
 
 ### Example
@@ -366,7 +371,8 @@ int main()
 {
     for (unsigned char i = 1; i < 128; i *= 2)
     {
-        std::cout << "\ncountr_zero(" << std::bitset<8>(i) << ") = " << std::countr_zero(i);
+        std::cout << "\ncountr_zero(" << std::bitset<8>(i) << ") = "
+                      << std::countr_zero(i);
     }
     return 0;
 }
@@ -388,7 +394,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="countr_one"></a>`countr_one`
 
-Counts the number of consecutive bits set to one, starting from the least significant bit.
+Count the number of consecutive bits set to one, starting from the least significant bit.
 
 ```cpp
 template<class T>
@@ -416,7 +422,8 @@ int main()
     for (unsigned char bit = 1; bit < 128; bit *= 2)
     {
         value |= bit;
-        std::cout << "\ncountr_one(" << std::bitset<8>(value) << ") = " << std::countr_one(value);
+        std::cout << "\ncountr_one(" << std::bitset<8>(value) << ") = "
+                      << std::countr_one(value);
     }
     return 0;
 }
@@ -438,7 +445,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="has_single_bit"></a>`has_single_bit`
 
-Checks if a value has only a single bit set, that is, is the value an integral power of two.
+Check if a value has only one bit set; that is, is the value a power of two.
  
 ```cpp
 template <class T>
@@ -452,7 +459,7 @@ The unsigned integer value to test.
 
 ### Return value
 
-`true` if `value` has only a single bit set, that is, `value` is an integral power of two; otherwise `false`.
+`true` if `value` has only one bit set; that is, is `value` is a power of two. Otherwise, `false`.
 
 ### Example
 
@@ -464,8 +471,8 @@ int main()
 {
    for (auto i = 0u; i < 10u; ++i) // has_single_bit() takes an unsigned integer type
     {
-        std::cout << "has_single_bit(" << std::bitset<4>(i) << ") = "
-            << (std::has_single_bit(i) ? "true" : "false") << '\n';
+        std::cout << "\nhas_single_bit(" << std::bitset<4>(i) << ") = "
+            << (std::has_single_bit(i) ? "true" : "false");
     }
     return 0;
 }
@@ -490,7 +497,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="popcount"></a>`popcount`
 
-Count the number of set bits in an unsigned integer.
+Count the number of set bits in an unsigned integer value.
  
 ```cpp
 template<class T>
@@ -516,7 +523,8 @@ int main()
 {
    for (unsigned char value = 0; value < 16; value++)
     {
-        std::cout << "\npopcount(" << std::bitset<4>(value) << ") = " << std::popcount(value);
+        std::cout << "\npopcount(" << std::bitset<4>(value) << ") = " 
+                      << std::popcount(value);
     }
     return 0;
 }
@@ -547,7 +555,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="rotl"></a>`rotl`
 
-Rotates the bits of `value`left, `s` times. Bits that 'fall out' of the leftmost bit are rotated back into the rightmost bit.
+Rotates the bits of  an unsigned integer value left the specified number of times. Bits that "fall out" of the leftmost bit are rotated into the rightmost bit.
  
 ```cpp
 template<class T>
@@ -566,7 +574,7 @@ The number of left rotations.
 
 The result of rotating `value` left, `s` times.
 If `s` is zero, returns `value`.
-If `s` is negative, does `rotr(value, -s)`. Bits that 'fall out' of the rightmost bit are rotated back into the leftmost bit.
+If `s` is negative, does `rotr(value, -s)`. Bits that 'fall out' of the rightmost bit are rotated into the leftmost bit.
 
 ### Example
 
@@ -604,7 +612,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="rotr"></a>`rotr`
 
-Rotates the bits of `value`right, `s` times. Bits that 'fall out' of the rightmost bit are rotated back into the leftmost bit.
+Rotates the bits of `value`right the specified number of times. Bits that 'fall out' of the rightmost bit are rotated back into the leftmost bit.
  
 ```cpp
 template<class T>
