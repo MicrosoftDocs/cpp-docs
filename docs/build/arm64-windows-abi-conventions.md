@@ -199,13 +199,13 @@ Floating-point values are returned in s0, d0, or v0, as appropriate.
 
 HFA and HVA values are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
 
-Types returned by value are handled differently depending on whether they have certain properties. Types which have all of these properties,
+Types returned by value are handled differently depending on whether they have certain properties, and whether the function is a non-static member function. Types which have all of these properties,
 
 - they're *aggregate* by the C++14 standard definition, that is, they have no user-provided constructors, no private or protected non-static data members, no base classes, and no virtual functions, and
 - they have a trivial copy-assignment operator, and
 - they have a trivial destructor,
 
-use the following return style:
+and are returned by non-member functions or static member functions, use the following return style:
 
 - Types less than or equal to 8 bytes are returned in x0.
 - Types less than or equal to 16 bytes are returned in x0 and x1, with x0 containing the lower-order 8 bytes.
