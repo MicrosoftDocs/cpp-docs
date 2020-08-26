@@ -95,7 +95,7 @@ To convert an application that supports a menu to an application that supports a
 
 The next four steps of this walkthrough require bitmap resources. You can get the appropriate bitmaps in various ways:
 
-- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio and can be downloaded from the [Visual Studio image library](https://docs.microsoft.com/visualstudio/designers/the-visual-studio-image-library).
+- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio and can be downloaded from the [Visual Studio image library](/visualstudio/designers/the-visual-studio-image-library).
 
     However, the **Ribbon** user interface requires that certain bitmaps support transparent images. Transparent bitmaps use 32-bit pixels, where 24 bits specify the red, green, and blue components of the color, and 8 bits define an *alpha channel* that specifies the transparency of the color. The current resource editors can view, but not modify bitmaps with 32-bit pixels. Consequently, use an external image editor instead of the resource editors to manipulate transparent bitmaps.
 

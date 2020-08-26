@@ -54,7 +54,7 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 |-|-|
 |[Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|Describes some of the key points to keep in mind when you use the Concurrency Runtime to produce asynchronous operations in a UWP app.|
 |[Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|Shows how to combine PPL tasks with the `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` interfaces to send HTTP GET and POST requests to a web service in a UWP app.|
-|[Windows Runtime app samples](https://docs.microsoft.com/samples/browse/?languages=cpp&expanded=windows&products=windows-uwp)|Contains downloadable code samples and demo apps for Windows Runtime.|
+|[Windows Runtime app samples](/samples/browse/?languages=cpp&expanded=windows&products=windows-uwp)|Contains downloadable code samples and demo apps for Windows Runtime.|
 
 ## Dataflow Programming in the Asynchronous Agents Library
 
