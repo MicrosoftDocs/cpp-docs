@@ -1,6 +1,6 @@
 ---
 title: "strtod, _strtod_l, wcstod, _wcstod_l"
-description: ""API reference for strtod, _strtod_l, wcstod, _wcstod_l, which convert strings to a double-precision value."
+description: "API reference for strtod, _strtod_l, wcstod, _wcstod_l, which convert strings to a double-precision value."
 ms.date: "08/27/2020"
 api_name: ["wcstod", "_wcstod_l", "_strtod_l", "strtod", "_o__strtod_l", "_o__wcstod_l", "_o_strtod", "_o_wcstod"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -50,7 +50,7 @@ The locale to use.
 
 ## Return Value
 
-**strtod** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VAL**. The sign of **HUGE_VAL** matches the sign of the value that cannot be represented. **strtod** returns `0` if no conversion can be performed or an underflow occurs.
+**strtod** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VAL**. The sign of **HUGE_VAL** matches the sign of the value that can't be represented. **strtod** returns `0` if no conversion can be performed or an underflow occurs.
 
 **wcstod** returns values analogously to **strtod**:
 
@@ -61,7 +61,7 @@ For more information on this and other return codes, see [_doserrno, errno, _sys
 
 ## Remarks
 
-Each function converts the input string *strSource* to a **`double`**. The **strtod** function converts *strSource* to a double-precision value. **strtod** stops reading the string *strSource* at the first character it cannot recognize as part of a number. This character may be the terminating null character. **wcstod** is a wide-character version of **strtod**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
+Each function converts the input string *strSource* to a **`double`**. The **strtod** function converts *strSource* to a double-precision value. **strtod** stops reading the string *strSource* at the first character it can't recognize as part of a number. This character may be the terminating null character. **wcstod** is a wide-character version of **strtod**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
