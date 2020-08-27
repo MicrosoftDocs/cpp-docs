@@ -811,8 +811,8 @@ The length (in bytes) of the string, excluding the terminating null character. I
 
 ### Remarks
 
-The second form of this member function fills a `CString` object with the item's text.
-If *nIndex* is invalid, this function throws an `E_INVALIDARG` exception (code -2147024809, 0x80070057).
+The second form of this member function fills a `CString` object with the item's text.\
+If *nIndex* is invalid, this function throws an `E_INVALIDARG` exception (error code: `-2147024809`, `0x80070057`).
 
 ### Example
 
