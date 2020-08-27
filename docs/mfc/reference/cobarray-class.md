@@ -1,6 +1,7 @@
 ---
 title: "CObArray Class"
-ms.date: "08/26/2020"
+description: "API reference for the `CObArray` `MFC` class which stores `CObject` pointers in an array."
+ms.date: "08/27/2020"
 f1_keywords: ["CObArray", "AFXCOLL/CObArray", "AFXCOLL/CObArray::CObArray", "AFXCOLL/CObArray::Add", "AFXCOLL/CObArray::Append", "AFXCOLL/CObArray::Copy", "AFXCOLL/CObArray::ElementAt", "AFXCOLL/CObArray::FreeExtra", "AFXCOLL/CObArray::GetAt", "AFXCOLL/CObArray::GetCount", "AFXCOLL/CObArray::GetData", "AFXCOLL/CObArray::GetSize", "AFXCOLL/CObArray::GetUpperBound", "AFXCOLL/CObArray::InsertAt", "AFXCOLL/CObArray::IsEmpty", "AFXCOLL/CObArray::RemoveAll", "AFXCOLL/CObArray::RemoveAt", "AFXCOLL/CObArray::SetAt", "AFXCOLL/CObArray::SetAtGrow", "AFXCOLL/CObArray::SetSize"]
 helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
 ms.assetid: 27894efd-2370-4776-9ed9-24a98492af17
@@ -110,12 +111,12 @@ The following table shows other member functions that are similar to `CObArray::
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|`INT_PTR Add(BYTE newElement);`<br /><br />`throw(CMemoryException *);`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`INT_PTR Add(DWORD newElement);`<br /><br />`throw(CMemoryException *);`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`INT_PTR Add(BYTE newElement);`<br /><br />`throw(CMemoryException*);`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`INT_PTR Add(DWORD newElement);`<br /><br />`throw(CMemoryException*);`|
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|`INT_PTR Add(void * newElement);`<br /><br />`throw(CMemoryException*);`|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|`INT_PTR Add(LPCTSTR newElement);`<br /><br />`throw(CMemoryException *);`<br /><br />`INT_PTR Add(const CString& newElement);`|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`INT_PTR Add(UINT newElement);`<br /><br />`throw(CMemoryException *);`|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|`INT_PTR Add(WORD newElement);`<br /><br />`throw(CMemoryException *);`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`INT_PTR Add(LPCTSTR newElement); throw(CMemoryException*);`<br /><br />`INT_PTR Add(const CString& newElement);`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`INT_PTR Add(UINT newElement);`<br /><br />`throw(CMemoryException*);`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`INT_PTR Add(WORD newElement);`<br /><br />`throw(CMemoryException*);`|
 
 ### Example
 
@@ -186,7 +187,7 @@ Source of the elements to be copied to the array.
 
 ### Remarks
 
-`Copy` does not free memory; however, if necessary, `Copy` may allocate extra memory to accommodate the elements copied to the array.
+`Copy` doesn't free memory. If necessary, `Copy` may allocate extra memory to accommodate the elements copied to the array.
 
 The following table shows other member functions that are similar to `CObArray::Copy`.
 
@@ -221,12 +222,12 @@ The following table shows other constructors that are similar to `CObArray::CObA
 
 |Class|Constructor|
 |-----------|-----------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|`CByteArray( );`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`CDWordArray( );`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`CPtrArray( );`|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|`CStringArray( );`|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`CUIntArray( );`|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|`CWordArray( );`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`CByteArray();`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`CDWordArray();`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`CPtrArray();`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`CStringArray();`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`CUIntArray();`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`CWordArray();`|
 
 ### Example
 
@@ -251,15 +252,15 @@ A reference to a `CObject` pointer.
 
 ### Remarks
 
-It is used to implement the left-side assignment operator for arrays. Note that this is an advanced function that should be used only to implement special array operators.
+It's used to implement the left-side assignment operator for arrays. This is an advanced function that should be used only to implement special array operators.
 
 The following table shows other member functions that are similar to `CObArray::ElementAt`.
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)`BYTE& ElementAt(INT_PTR nIndex);`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`DOORN& ElementAt(INT_PTR nIndex);`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void\*& ElementAt(INT_PTR nIndex);`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`BYTE& ElementAt(INT_PTR nIndex);`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`DWORD& ElementAt(INT_PTR nIndex);`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void*& ElementAt(INT_PTR nIndex);`|
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|`CString& ElementAt(INT_PTR nIndex);`|
 |[CUIntArray](../../mfc/reference/cuintarray-class.md)|`UINT& ElementAt(INT_PTR nIndex);`|
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|`WORD& ElementAt(INT_PTR nIndex);`|
@@ -284,12 +285,12 @@ The following table shows other member functions that are similar to `CObArray::
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|`void FreeExtra( );`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`void FreeExtra( );`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void FreeExtra( );`|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|`void FreeExtra( );`|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`void FreeExtra( );`|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|`void FreeExtra( );`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`void FreeExtra();`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`void FreeExtra();`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void FreeExtra();`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`void FreeExtra();`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`void FreeExtra();`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`void FreeExtra();`|
 
 ### Example
 
@@ -321,12 +322,12 @@ The following table shows other member functions that are similar to `CObArray::
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|`BYTE GetAt( INT_PTR nIndex) const;`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`DWORD GetAt( INT_PTR nIndex) const;`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void\* GetAt( INT_PTR nIndex) const;`|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|`CString GetAt( INT_PTR nIndex) const;`|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`UINT GetAt( INT_PTR nIndex) const;`|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|`WORD GetAt( INT_PTR nIndex) const;`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`BYTE GetAt(INT_PTR nIndex) const;`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`DWORD GetAt(INT_PTR nIndex) const;`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void* GetAt(INT_PTR nIndex) const;`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`CString GetAt(INT_PTR nIndex) const;`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`UINT GetAt(INT_PTR nIndex) const;`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`WORD GetAt(INT_PTR nIndex) const;`|
 
 ### Example
 
@@ -354,12 +355,12 @@ The following table shows other member functions that are similar to `CObArray::
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|`INT_PTR GetCount( ) const;`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`INT_PTR GetCount( ) const;`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`INT_PTR GetCount( ) const;`|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|`INT_PTR GetCount( ) const;`|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`INT_PTR GetCount( ) const;`|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|`INT_PTR GetCount( ) const;`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`INT_PTR GetCount() const;`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`INT_PTR GetCount() const;`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`INT_PTR GetCount() const;`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`INT_PTR GetCount() const;`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`INT_PTR GetCount() const;`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`INT_PTR GetCount() const;`|
 
 ### Example
 
@@ -455,12 +456,12 @@ The following table shows other member functions that are similar to `CObArray::
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|`INT_PTR GetUpperBound( ) const;`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`INT_PTR GetUpperBound( ) const;`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`INT_PTR GetUpperBound( ) const;`|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|`INT_PTR GetUpperBound( ) const;`|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`INT_PTR GetUpperBound( ) const;`|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|`INT_PTR GetUpperBound( ) const;`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`INT_PTR GetUpperBound() const;`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`INT_PTR GetUpperBound() const;`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`INT_PTR GetUpperBound() const;`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`INT_PTR GetUpperBound() const;`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`INT_PTR GetUpperBound() const;`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`INT_PTR GetUpperBound() const;`|
 
 ### Example
 
@@ -506,18 +507,18 @@ The first version of `InsertAt` inserts one element (or multiple copies of an el
 
 The second version inserts all the elements from another `CObArray` collection, starting at the *nStartIndex* position.
 
-The `SetAt` function, in contrast, replaces one specified array element and does not shift any elements.
+The `SetAt` function, in contrast, replaces one specified array element and doesn't shift any elements.
 
 The following table shows other member functions that are similar to `CObArray::InsertAt`.
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|`void InsertAt(INT_PTR nIndex, BYTE newElement, int nCount= 1 );`<br /><br />`throw(CMemoryException *);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CByteArray * pNewArray);`<br /><br />`throw(CMemoryException *);`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`void InsertAt(INT_PTR nIndex, DWORD newElement, int nCount= 1 );`<br /><br />`throw(CMemoryException *);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CDWordArray * pNewArray);`<br /><br />`throw(CMemoryException *);`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void InsertAt(INT_PTR nIndex, void * newElement, int nCount= 1 );`<br /><br />`throw(CMemoryException *);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CPtrArray * pNewArray);`<br /><br />`throw(CMemoryException *);`|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|`void InsertAt(INT_PTR nIndex, LPCTSTR newElement, int nCount= 1 );`<br /><br />`throw(CMemoryException *);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CStringArray * pNewArray);`<br /><br />`throw(CMemoryException *);`|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`void InsertAt(INT_PTR nIndex, UINT newElement, int nCount= 1 );`<br /><br />`throw(CMemoryException *);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CUIntArray * pNewArray);`<br /><br />`throw(CMemoryException *);`|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|`void InsertAt(INT_PTR nIndex, WORD newElement, int nCount= 1 );`<br /><br />`throw(CMemoryException *);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CWordArray * pNewArray);`<br /><br />`throw(CMemoryException *);`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`void InsertAt(INT_PTR nIndex, BYTE newElement, int nCount = 1 );`<br /><br />`throw(CMemoryException*);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CByteArray* pNewArray);`<br /><br />`throw(CMemoryException*);`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`void InsertAt(INT_PTR nIndex, DWORD newElement, int nCount = 1 );`<br /><br />`throw(CMemoryException*);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CDWordArray* pNewArray);`<br /><br />`throw(CMemoryException*);`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void InsertAt(INT_PTR nIndex, void* newElement, int nCount = 1 );`<br /><br />`throw(CMemoryException*);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CPtrArray* pNewArray);`<br /><br />`throw(CMemoryException*);`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`void InsertAt(INT_PTR nIndex, LPCTSTR newElement, int nCount = 1 );`<br /><br />`throw(CMemoryException*);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CStringArray* pNewArray);`<br /><br />`throw(CMemoryException*);`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`void InsertAt(INT_PTR nIndex, UINT newElement, int nCount = 1 );`<br /><br />`throw(CMemoryException*);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CUIntArray* pNewArray);`<br /><br />`throw(CMemoryException*);`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`void InsertAt(INT_PTR nIndex, WORD newElement, int nCount = 1 );`<br /><br />`throw(CMemoryException*);`<br /><br />`void InsertAt(INT_PTR nStartIndex, CWordArray* pNewArray);`<br /><br />`throw(CMemoryException*);`|
 
 ### Example
 
@@ -557,7 +558,7 @@ CObject* operator[](int_ptr nindex) const;
 
 ### Remarks
 
-The first operator, called for arrays that are not **`const`**, may be used on either the right (r-value) or the left (l-value) of an assignment statement. The second, called for **`const`** arrays, may be used only on the right.
+The first operator, called for arrays that aren't **`const`**, may be used on either the right (r-value) or the left (l-value) of an assignment statement. The second, called for **`const`** arrays, may be used only on the right.
 
 The Debug version of the library asserts if the subscript (either on the left or right side of an assignment statement) is out of bounds.
 
@@ -567,7 +568,7 @@ The following table shows other operators that are similar to `CObArray::operato
 |-----------|--------------|
 |[CByteArray](../../mfc/reference/cbytearray-class.md)|`BYTE& operator [](INT_PTR nindex);`<br /><br />`BYTE operator [](INT_PTR nindex) const;`|
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`DWORD& operator [](INT_PTR nindex);`<br /><br />`DWORD operator [](INT_PTR nindex) const;`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void\*& operator [](INT_PTR nindex);`<br /><br />`void* operator [](INT_PTR nindex) const;`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void*& operator [](INT_PTR nindex);`<br /><br />`void* operator [](INT_PTR nindex) const;`|
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|`CString& operator [](INT_PTR nindex);`<br /><br />`CString operator [](INT_PTR nindex) const;`|
 |[CUIntArray](../../mfc/reference/cuintarray-class.md)|`UINT& operator [](INT_PTR nindex);`<br /><br />`UINT operator [](INT_PTR nindex) const;`|
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|`WORD& operator [](INT_PTR nindex);`<br /><br />`WORD operator [](INT_PTR nindex) const;`|
@@ -580,7 +581,7 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 ## <a name="removeall"></a> CObArray::RemoveAll
 
-Removes all the pointers from this array but does not actually delete the `CObject` objects.
+Removes all the pointers from this array but doesn't actually delete the `CObject` objects.
 
 ```cpp
 void RemoveAll();
@@ -629,11 +630,11 @@ The number of elements to remove.
 
 ### Remarks
 
-In the process, it shifts down all the elements above the removed element(s). It decrements the upper bound of the array but does not free memory.
+In the process, it shifts down all the elements above the removed element(s). It decrements the upper bound of the array but doesn't free memory.
 
 If you try to remove more elements than are contained in the array above the removal point, then the Debug version of the library asserts.
 
-The `RemoveAt` function removes the `CObject` pointer from the array, but it does not delete the object itself.
+The `RemoveAt` function removes the `CObject` pointer from the array, but it doesn't delete the object itself.
 
 The following table shows other member functions that are similar to `CObArray::RemoveAt`.
 
@@ -679,9 +680,9 @@ The object pointer to be inserted in this array. A `NULL` value is allowed.
 
 ### Remarks
 
-`SetAt` will not cause the array to grow. Use `SetAtGrow` if you want the array to grow automatically.
+`SetAt` won't cause the array to grow. Use `SetAtGrow` if you want the array to grow automatically.
 
-You must ensure that your index value represents a valid position in the array. If it is out of bounds, then the Debug version of the library asserts.
+Ensure that your index value represents a valid position in the array. If it's out of bounds, then the Debug version of the library asserts.
 
 The following table shows other member functions that are similar to `CObArray::SetAt`.
 
@@ -734,12 +735,12 @@ The following table shows other member functions that are similar to `CObArray::
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, BYTE** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, DWORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, UINT** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, WORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`void SetAtGrow(INT_PTR nIndex, BYTE newElement );`<br /><br />`throw(CMemoryException*);`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`void SetAtGrow(INT_PTR nIndex, DWORD newElement );`<br /><br />`throw(CMemoryException*);`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void SetAtGrow(INT_PTR nIndex, void* newElement);`<br /><br />`throw( CMemoryException* );`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`void SetAtGrow(INT_PTR nIndex, LPCTSTR newElement );`<br /><br />`throw(CMemoryException*);`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`void SetAtGrow(INT_PTR nIndex, UINT newElement );`<br /><br />`throw(CMemoryException*);`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`void SetAtGrow(INT_PTR nIndex, WORD newElement );`<br /><br />`throw(CMemoryException*);`|
 
 ### Example
 
@@ -781,18 +782,18 @@ If the new size is smaller than the old size, then the array is truncated and al
 
 The *nGrowBy* parameter affects internal memory allocation while the array is growing. Its use never affects the array size as reported by `GetSize` and `GetUpperBound`.
 
-If the size of the array has grown, all newly allocated **CObject** <strong>\*</strong> pointers are set to `NULL`.
+If the size of the array has grown, all newly allocated `CObject *` pointers are set to `NULL`.
 
 The following table shows other member functions that are similar to `CObArray::SetSize`.
 
 |Class|Member Function|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1 );`<br /><br /> `throw(CMemoryException * );`|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1 );`<br /><br /> `throw(CMemoryException * );`|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1 );`<br /><br /> `throw(CMemoryException * );`|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1 );`<br /><br /> `throw(CMemoryException * );`|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1 );`<br /><br /> `throw(CMemoryException * );`|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1 );`<br /><br /> `throw(CMemoryException * );`|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1);`<br /><br /> `throw(CMemoryException* );`|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1);`<br /><br /> `throw(CMemoryException* );`|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1);`<br /><br /> `throw(CMemoryException* );`|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1);`<br /><br /> `throw(CMemoryException* );`|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1);`<br /><br /> `throw(CMemoryException* );`|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|`void SetSize(INT_PTR nNewSize, int nGrowBy = -1);`<br /><br /> `throw(CMemoryException* );`|
 
 ### Example
 
