@@ -1,5 +1,6 @@
 ---
 title: "x64 exception handling"
+description: "Overview of Microsoft C++ exception handling conventions on x64."
 ms.date: "10/14/2019"
 helpviewer_keywords: ["C++ exception handling, x64", "exception handling, x64"]
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
@@ -297,7 +298,7 @@ typedef struct _DISPATCHER_CONTEXT {
 } DISPATCHER_CONTEXT, *PDISPATCHER_CONTEXT;
 ```
 
-**ControlPc** is the value of RIP within this function. This value is either an exception address or the address at which control left the establishing function. The RIP is used to determine if control is within some guarded construct inside this function, for example, a `__try` block for `__try`/**`__except`** or `__try`/**`__finally`**.
+**ControlPc** is the value of RIP within this function. This value is either an exception address or the address at which control left the establishing function. The RIP is used to determine if control is within some guarded construct inside this function, for example, a **`__try`** block for **`__try`**/**`__except`** or **`__try`**/**`__finally`**.
 
 **ImageBase** is the image base (load address) of the module containing this function, to be added to the 32-bit offsets used in the function entry and unwind info to record relative addresses.
 
