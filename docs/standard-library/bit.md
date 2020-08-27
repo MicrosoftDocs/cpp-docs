@@ -1,7 +1,7 @@
 ---
 title: "&lt;bit&gt;"
 description: "Functions to access, manipulate, and process individual bits and sequences of bits."
-ms.date: "08/25/2020"
+ms.date: "08/27/2020"
 f1_keywords: ["<bit>"]
 helpviewer_keywords: ["bit header"]
 ---
@@ -33,10 +33,10 @@ For example, there are functions to rotate bits, find the number of consecutive 
 | Function | Description |
 |-|:-|
 |[bit_cast](bit-functions.md#bit_cast) | Reinterpret the object representation of one type to another. |
-|[bit_ceil](bit-functions.md#bit_ceil) | Find the smallest power of 2 greater than or equal to the given value. |
+|[bit_ceil](bit-functions.md#bit_ceil) | Find the smallest power of two greater than or equal to the given value. |
 |[bit_floor](bit-functions.md#bit_floor) | Find the largest integral power of two not greater than the given value. |
 |[bit_width](bit-functions.md#bit_width) | Find the smallest number of bits needed to represent the given value. |
-|[countl_zero](bit-functions.md#countl_zero) | Count the number of consecutive 0 bits, starting from the most significant bit. |
+|[countl_zero](bit-functions.md#countl_zero) | Count the number of consecutive zero bits, starting from the most significant bit. |
 |[countl_one](bit-functions.md#countl_one) | Count the number of consecutive bits set to one, starting from the most significant bit. |
 |[countr_zero](bit-functions.md#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
 |[countr_one](bit-functions.md#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |

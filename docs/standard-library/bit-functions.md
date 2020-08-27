@@ -2,7 +2,7 @@
 title: "&lt;bit&gt; functions"
 description: "Functions to access, manipulate, and process individual bits and sequences of bits"
 ms.date: "08/25/2020"
-f1_keywords: ["bit/std::bit_cat", "bit/std::has_single_bit", "bit/std::bit_ceil", "bit/std::bit_floor", "bit/std::bit_width", "bit/std::rotl", "bit/std::rotr", "bit/std::countl_zero", "bit/std::countl_one","bit/std::countr_zero","bit/std::countr_one","bit/std::popcount"]
+f1_keywords: ["bit/std::bit_cast", "bit/std::has_single_bit", "bit/std::bit_ceil", "bit/std::bit_floor", "bit/std::bit_width", "bit/std::rotl", "bit/std::rotr", "bit/std::countl_zero", "bit/std::countl_one","bit/std::countr_zero","bit/std::countr_one","bit/std::popcount"]
 helpviewer_keywords: ["std::bit [C++], bit_cast", "std::bit [C++], has_single_bit", "std::bit [C++], bit_ceil", "std::bit [C++], bit_floor", "std::bit [C++], bit_width", "std::bit [C++], rotl", "std::bit [C++], rotr", "std::bit [C++], countl_zero", "std::bit [C++], countl_one", "std::bit [C++], countr_zero", "std::bit [C++], countr_one", "std::bit [C++], popcount"]
 ---
 # &lt;bit&gt; functions
@@ -16,7 +16,7 @@ The \<bit> header includes the following non-member template functions:
 |[bit_floor](#bit_floor) | Find the largest power of two not greater than a value. |
 |[bit_width](#bit_width) | Find the smallest number of bits needed to represent a value. |
 |[countl_zero](#countl_zero) | Count the number of consecutive bits set to zero, starting from the most significant bit. |
-|[countl_one](#countl_one) | Count the number of consecutive bit set to one, starting from the most significant bit. |
+|[countl_one](#countl_one) | Count the number of consecutive bits set to one, starting from the most significant bit. |
 |[countr_zero](#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
 |[countr_one](#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |
 |[has_single_bit](#has_single_bit) | Check if a value has only one bit set, that is, whether it is a power of two. |
@@ -30,7 +30,7 @@ Copy a bit pattern from an object of type `From` to a new object of type `To`.
 
 ```cpp
 template <class To, class From>
-To bit_cast(const From& from) noexcept;
+nodiscard constexpr To bit_cast(const From& from) noexcept;
 ```
 
 ### Parameters
@@ -92,7 +92,7 @@ Find the smallest power of two greater than or equal to a value. For example, gi
 
 ```cpp
 template<class T>
-constexpr T bit_ceil(T value);
+nodiscard constexpr T bit_ceil(T value);
 ```
 
 ### Parameters
@@ -141,7 +141,7 @@ Find the largest power of two not greater than a value. For example, given `5`, 
 
 ```cpp
 template< class T >
-constexpr T bit_floor(T value) noexcept;
+nodiscard constexpr T bit_floor(T value) noexcept;
 ```
 
 ### Parameters
@@ -193,7 +193,7 @@ For example, given 5 (0b101), returns 3 because it takes 3 binary bits to expres
 
 ```cpp
 template<class T>
-constexpr T bit_width(T value) noexcept;
+nodiscard constexpr T bit_width(T value) noexcept;
 ```
 
 ### Parameters
@@ -246,7 +246,7 @@ Count the number of consecutive bits set to zero, starting from the most signifi
 
 ```cpp
 template<class T>
-constexpr int countl_zero(T value) noexcept;
+nodiscard constexpr int countl_zero(T value) noexcept;
 ```
 
 ### Parameters
@@ -296,7 +296,7 @@ Count the number of consecutive bits set to one, starting from the most signific
 
 ```cpp
 template<class T>
-constexpr int countl_one(T value) noexcept;
+nodiscard constexpr int countl_one(T value) noexcept;
 ```
 
 ### Parameters
@@ -348,7 +348,7 @@ Count the number of consecutive bits set to zero, starting from the least signif
 
 ```cpp
 template<class T>
-constexpr int countr_zero(T value) noexcept;
+nodiscard constexpr int countr_zero(T value) noexcept;
 ```
 
 ### Parameters
@@ -398,7 +398,7 @@ Count the number of consecutive bits set to one, starting from the least signifi
 
 ```cpp
 template<class T>
-constexpr int countr_one(T value) noexcept;
+nodiscard constexpr int countr_one(T value) noexcept;
 ```
 
 ### Parameters
@@ -449,7 +449,7 @@ Check if a value has only one bit set; that is, is the value a power of two.
  
 ```cpp
 template <class T>
-constexpr bool has_single_bit(T value) noexcept;
+nodiscard constexpr bool has_single_bit(T value) noexcept;
 ```
 
 ### Parameters
@@ -501,7 +501,7 @@ Count the number of set bits in an unsigned integer value.
  
 ```cpp
 template<class T>
-constexpr int popcount(T value) noexcept;
+nodiscard constexpr int popcount(T value) noexcept;
 ```
 
 ### Parameters
@@ -612,7 +612,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="rotr"></a>`rotr`
 
-Rotates the bits of `value`right the specified number of times. Bits that 'fall out' of the rightmost bit are rotated back into the leftmost bit.
+Rotates the bits of `value` right the specified number of times. Bits that 'fall out' of the rightmost bit are rotated back into the leftmost bit.
  
 ```cpp
 template<class T>
