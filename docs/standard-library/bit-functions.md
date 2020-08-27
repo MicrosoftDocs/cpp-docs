@@ -74,7 +74,9 @@ A
 
 Low-level code often needs to interpret an object of one type as another type. The reinterpreted object has the same bit representation as the original, but is a different type. But making the bit-for-bit conversion can be error-prone.
 
-Instead of using `reinterpret_cast`, or `memcpy()`, `bit_cast()` is a safer way to make these conversions.
+Instead of using `reinterpret_cast`, or `memcpy()`, `bit_cast()` is a better way to make these conversions. It's better because:
+- `bit_cast()` is `constexpr`
+- `bit_cast()` requires that the types involved be trivially copyable and be the same size. This prevents problems with `reinterpret_cast` and `memcpy` because they could be used to inadvertantly, and incorrectly, convert non-trivially-copyable types. Also, `memcpy()` could be used to inadvertantly copy between types that aren't the same size, for example, a double (8 bytes) into an unsigned int (4 bytes) or vice versa.
 
 This overload only participates in overload resolution if:
 -  `sizeof(To) == sizeof(From)`
