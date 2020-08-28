@@ -208,8 +208,7 @@ The unsigned integer value to test.
 
 ### Return Value
 
-The number of bits needed to represent `value`.
-
+The number of bits needed to represent `value`.\
 If `value` is zero, returns zero.
 
 ### Example
@@ -588,8 +587,8 @@ The number of left rotations to perform.
 
 ### Return value
 
-The result of rotating `value` left, `s` times.
-If `s` is zero, returns `value`.
+The result of rotating `value` left, `s` times.\
+If `s` is zero, returns `value`.\
 If `s` is negative, does `rotr(value, -s)`. Bits that 'fall out' of the rightmost bit are rotated into the leftmost bit.
 
 ### Example
@@ -650,8 +649,8 @@ The number of right rotations to perform.
 
 ### Return value
 
-The result of rotating `value` right, `s` times.
-If `s` is zero, returns `value`.
+The result of rotating `value` right, `s` times.\
+If `s` is zero, returns `value`.\
 If `s` is negative, does `rotl(value, -s)`. Bits that 'fall out' of the leftmost bit are rotated back into the rightmost bit.
 
 ### Example
