@@ -1,6 +1,7 @@
 ---
 title: "strtod, _strtod_l, wcstod, _wcstod_l"
-ms.date: "4/2/2020"
+description: "API reference for strtod, _strtod_l, wcstod, _wcstod_l, which convert strings to a double-precision value."
+ms.date: "08/27/2020"
 api_name: ["wcstod", "_wcstod_l", "_strtod_l", "strtod", "_o__strtod_l", "_o__wcstod_l", "_o_strtod", "_o_wcstod"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -49,7 +50,7 @@ The locale to use.
 
 ## Return Value
 
-**strtod** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VAL**. The sign of **HUGE_VAL** matches the sign of the value that cannot be represented. **strtod** returns `0` if no conversion can be performed or an underflow occurs.
+**strtod** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VAL**. The sign of **HUGE_VAL** matches the sign of the value that can't be represented. **strtod** returns `0` if no conversion can be performed or an underflow occurs.
 
 **wcstod** returns values analogously to **strtod**:
 
@@ -60,7 +61,7 @@ For more information on this and other return codes, see [_doserrno, errno, _sys
 
 ## Remarks
 
-Each function converts the input string *strSource* to a **`double`**. The **strtod** function converts *strSource* to a double-precision value. **strtod** stops reading the string *strSource* at the first character it cannot recognize as part of a number. This character may be the terminating null character. **wcstod** is a wide-character version of **strtod**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
+Each function converts the input string *strSource* to a **`double`**. The **strtod** function converts *strSource* to a double-precision value. **strtod** stops reading the string *strSource* at the first character it can't recognize as part of a number. This character may be the terminating null character. **wcstod** is a wide-character version of **strtod**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -78,11 +79,26 @@ If *endptr* isn't **NULL**, a pointer to the character that stopped the scan is 
 **strtod** expects *strSource* to point to a string of one of the following forms:
 
 [*whitespace*] [*sign*] {*digits* [*radix* *digits*] &#124; *radix* *digits*} [{**e** &#124; **E**} [*sign*] *digits*]
-[*whitespace*] [*sign*] {**0x** &#124; **0X**} {*hexdigits* [*radix* *hexdigits*] &#124; *radix* *hexdigits*} [{**p** &#124; **P**} [*sign*] *hexdigits*]
+[*whitespace*] [*sign*] {**0x** &#124; **0X**} {*hexdigits* [*radix* *hexdigits*] &#124; *radix* *hexdigits*} [{**p** &#124; **P**} [*sign*] *digits*]
 [*whitespace*] [*sign*] {**INF** &#124; **INFINITY**}
 [*whitespace*] [*sign*] **NAN** [*sequence*]
 
-The optional leading *whitespace* may consist of space and tab characters, which are ignored; *sign* is either plus (+) or minus (-); *digits* are one or more decimal digits; *hexdigits* are one or more hexadecimal digits; *radix* is the radix point character, either a period (.) in the default "C" locale, or the locale-specific value if the current locale is different or when *locale* is specified; a *sequence* is a sequence of alphanumeric or underscore characters. In both decimal and hexadecimal number forms, if no digits appear before the radix point character, at least one must appear after the radix point character. In the decimal form, the decimal digits can be followed by an exponent, which consists of an introductory letter (**e** or **E**) and an optionally signed integer. In the hexadecimal form, the hexadecimal digits can be followed by an exponent, which consists of an introductory letter (**p** or **P**) and an optionally signed hexadecimal integer that represents the exponent as a power of 2. In either form, if there isn't an exponent part or a radix point character, a radix point character is assumed to follow the last digit in the string. Case is ignored in both the **INF** and **NAN** forms. The first character that doesn't fit one of these forms stops the scan.
+The optional leading *whitespace* may consist of space and tab characters, which are ignored.\
+*sign* is either plus (+) or minus (-).\
+*digits* are one or more decimal digits.\
+*hexdigits* are one or more hexadecimal digits.\
+*radix* is the radix point character, either a period (.) in the default "C" locale, or the locale-specific value if the current locale is different or when *locale* is specified.\
+ A *sequence* is a sequence of alphanumeric or underscore characters.
+
+In both decimal and hexadecimal number forms, if no digits appear before the radix point character, at least one must appear after the radix point character. 
+
+In the decimal form, the decimal digits can be followed by an exponent, which consists of an introductory letter (**e** or **E**) and an optionally signed integer. 
+
+In the hexadecimal form, the hexadecimal digits can be followed by an exponent, which consists of an introductory letter (**p** or **P**) and an optionally signed decimal integer that represents the exponent as a power of 2.
+
+In either form, if there isn't an exponent part or a radix point character, a radix point character is assumed to follow the last digit in the string.
+
+Case is ignored in both the **INF** and **NAN** forms. The first character that doesn't fit one of these forms stops the scan.
 
 The UCRT versions of these functions don't support conversion of Fortran-style (**d** or **D**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code. The UCRT versions support hexadecimal strings and round-tripping of INF and NAN values, which weren't supported in earlier versions. This can also cause breaking changes in your code. For example, the string "0x1a" would be interpreted by **strtod** as 0.0 in previous versions, but as 26.0 in the UCRT version.
 
