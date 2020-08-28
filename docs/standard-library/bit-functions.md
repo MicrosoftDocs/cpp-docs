@@ -1,7 +1,7 @@
 ---
 title: "&lt;bit&gt; functions"
 description: "Functions to access, manipulate, and process individual bits and sequences of bits"
-ms.date: "08/25/2020"
+ms.date: "08/28/2020"
 f1_keywords: ["bit/std::bit_cast", "bit/std::has_single_bit", "bit/std::bit_ceil", "bit/std::bit_floor", "bit/std::bit_width", "bit/std::rotl", "bit/std::rotr", "bit/std::countl_zero", "bit/std::countl_one","bit/std::countr_zero","bit/std::countr_one","bit/std::popcount"]
 helpviewer_keywords: ["std::bit [C++], bit_cast", "std::bit [C++], has_single_bit", "std::bit [C++], bit_ceil", "std::bit [C++], bit_floor", "std::bit [C++], bit_width", "std::bit [C++], rotl", "std::bit [C++], rotr", "std::bit [C++], countl_zero", "std::bit [C++], countl_one", "std::bit [C++], countr_zero", "std::bit [C++], countr_one", "std::bit [C++], popcount"]
 ---
@@ -11,7 +11,7 @@ The \<bit> header includes the following non-member template functions:
 
 | **Non-member functions** | **Description** |
 |--------|---------|
-|[bit_cast](#bit_cast) | Reinterpret the object representation of one type to another. |
+|[bit_cast](#bit_cast) | Reinterpret the object representation from one type to another. |
 |[bit_ceil](#bit_ceil) | Find the smallest power of two greater than or equal to a value. |
 |[bit_floor](#bit_floor) | Find the largest power of two not greater than a value. |
 |[bit_width](#bit_width) | Find the smallest number of bits needed to represent a value. |
@@ -19,10 +19,10 @@ The \<bit> header includes the following non-member template functions:
 |[countl_one](#countl_one) | Count the number of consecutive bits set to one, starting from the most significant bit. |
 |[countr_zero](#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
 |[countr_one](#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |
-|[has_single_bit](#has_single_bit) | Check if a value has only one bit set (which means it is a power of two). |
-|[popcount](#popcount) | Count the number of bits set to one in an unsigned integer. |
-|[rotl](#rotl) | Compute the result of bitwise left rotation. |
-|[rotr](#rotr) | Compute the result of bitwise right rotation. |
+|[has_single_bit](#has_single_bit) | Check if a value has only one bit set. This is the same as testing whether a value is a power of two. |
+|[popcount](#popcount) | Count the number of bits set to one. |
+|[rotl](#rotl) | Compute the result of a bitwise left rotation. |
+|[rotr](#rotr) | Compute the result of a bitwise right rotation. |
 
 ## <a name="bit_cast"></a>`bit_cast`
 
@@ -73,11 +73,11 @@ std::bit_cat<int>(f) = 7f800000
 
 ### Remarks
 
-Low-level code often needs to interpret an object of one type as another type. The reinterpreted object has the same bit representation as the original, but is a different type. But making the bit-for-bit conversion can be error-prone.
+Low-level code often needs to interpret an object of one type as another type. The reinterpreted object has the same bit representation as the original, but is a different type.
 
 Instead of using `reinterpret_cast`, or `memcpy()`, `bit_cast()` is a better way to make these conversions. It's better because:
 - `bit_cast()` is `constexpr`
-- `bit_cast()` requires the types to be trivially copyable and the same size. This prevents potential problems with using `reinterpret_cast` and `memcpy` because they could be used to inadvertently, and incorrectly, convert non-trivially-copyable types. Also, `memcpy()` could be used to inadvertently copy between types that aren't the same size. For example, a double (8 bytes) into an unsigned int (4 bytes), or the other way around.
+- `bit_cast()` requires the types to be trivially copyable and the same size. This prevents potential problems that you could encounter using `reinterpret_cast` and `memcpy` because they could be used to inadvertently, and incorrectly, convert non-trivially-copyable types. Also, `memcpy()` could be used to inadvertently copy between types that aren't the same size. For example, a double (8 bytes) into an unsigned int (4 bytes), or the other way around.
 
 This overload only participates in overload resolution if:
 -  `sizeof(To) == sizeof(From)`
@@ -208,7 +208,7 @@ The unsigned integer value to test.
 
 ### Return Value
 
-The number of bits needed to store `value`.
+The number of bits needed to represent `value`.
 
 If `value` is zero, returns zero.
 
@@ -458,7 +458,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="has_single_bit"></a>`has_single_bit`
 
-Check if a value has only one bit set (which means it is a power of two).
+Check if a value has only one bit set.This is the same as testing whether a value is a power of two.
  
 ```cpp
 template <class T>
@@ -472,7 +472,7 @@ The unsigned integer value to test.
 
 ### Return value
 
-`true` if `value` has only one bit set (which means it is a power of two). Otherwise, `false`.
+`true` if `value` has only one bit set which also means that `value` is a power of two. Otherwise, `false`.
 
 ### Example
 
@@ -512,7 +512,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="popcount"></a>`popcount`
 
-Count the number of set bits in an unsigned integer value.
+Count the number of bits set to one in an unsigned integer value.
  
 ```cpp
 template<class T>
@@ -526,7 +526,7 @@ The unsigned integer value to test.
 
 ### Return value
 
-The number of set bits in `value`.
+The number bits set to one in `value`.
 
 ### Example
 
@@ -584,7 +584,7 @@ nodiscard constexpr T rotl(T value, int s) noexcept;
 The unsigned integer value to rotate.
 
 *s*\
-The number of left rotations.
+The number of left rotations to perform.
 
 ### Return value
 
@@ -608,6 +608,9 @@ int main()
         bits = std::rotl(bits, 1);
         std::cout << std::bitset<8>(bits) << '\n';
     }
+    std::cout << "rotl(" << std::bitset<8>(bits) << ",-1) = ";
+    bits = std::rotl(bits, -1);
+    std::cout << std::bitset<8>(bits);
     return 0;
 }
 ```
@@ -621,6 +624,7 @@ rotl(00010000, 1) = 00100000
 rotl(00100000, 1) = 01000000
 rotl(01000000, 1) = 10000000
 rotl(10000000, 1) = 00000001
+rotl(00000001,-1) = 10000000
 ```
 
 ### Remarks
@@ -642,7 +646,7 @@ nodiscard constexpr T rotr(T value, int s) noexcept;
 The unsigned integer value to rotate.
 
 *s*\
-The number of right rotations.
+The number of right rotations to perform.
 
 ### Return value
 
@@ -666,6 +670,9 @@ int main()
         bits = std::rotr(bits, 1);
         std::cout << std::bitset<8>(bits) << '\n';
     }
+    std::cout << "rotr(" << std::bitset<8>(bits) << ",-1) = ";
+    bits = std::rotr(bits, -1);
+    std::cout << std::bitset<8>(bits);
     return 0;
 }
 ```
@@ -679,6 +686,7 @@ rotr(00001000, 1) = 00000100
 rotr(00000100, 1) = 00000010
 rotr(00000010, 1) = 00000001
 rotr(00000001, 1) = 10000000
+rotr(10000000,-1) = 00000001
 ```
 
 ### Remarks
