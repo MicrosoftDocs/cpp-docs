@@ -83,7 +83,7 @@ This overload only participates in overload resolution if:
 -  `sizeof(To) == sizeof(From)`
 - `To` and `From` are [is_trivially_copyable](https://docs.microsoft.com/cpp/standard-library/is-trivially-copyable-class?view=vs-2019`).
 
-This function template is `constexpr` only if `To`, `From`, and their subobjects are:
+This function template is `constexpr` if and only if `To`, `From`, and their subobjects are:
 - not a union or pointer type
 - not a pointer to member type
 - not volatile-qualified
@@ -127,17 +127,17 @@ int main()
 ```
 
 ```Output
-bit_ceil(0000) = 0001
-bit_ceil(0001) = 0001
-bit_ceil(0010) = 0010
-bit_ceil(0011) = 0100
-bit_ceil(0100) = 0100
-bit_ceil(0101) = 1000
+bit_ceil(0b0000) = 0b0001
+bit_ceil(0b0001) = 0b0001
+bit_ceil(0b0010) = 0b0010
+bit_ceil(0b0011) = 0b0100
+bit_ceil(0b0100) = 0b0100
+bit_ceil(0b0101) = 0b1000
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="bit_floor"></a>`bit_floor`
 
@@ -170,25 +170,25 @@ int main()
     for (auto i = 0u; i < 6u; ++i) // bit_floor() takes an unsigned integer type
     {
         auto previousPowerOf2 = std::bit_floor(i);
-        std::cout << "\nbit_floor(" << std::bitset<4>(i) << ") = "
-                      << std::bitset<4>(previousPowerOf2);
+        std::cout << "\nbit_floor(0b" << std::bitset<4>(i) << ") = 0b"
+            << std::bitset<4>(previousPowerOf2);
     }
     return 0;
 }
 ```
 
 ```Output
-bit_floor(0000) = 0000
-bit_floor(0001) = 0001
-bit_floor(0010) = 0010
-bit_floor(0011) = 0010
-bit_floor(0100) = 0100
-bit_floor(0101) = 0100
+bit_floor(0b0000) = 0b0000
+bit_floor(0b0001) = 0b0001
+bit_floor(0b0010) = 0b0010
+bit_floor(0b0011) = 0b0010
+bit_floor(0b0100) = 0b0100
+bit_floor(0b0101) = 0b0100
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="bit_width"></a>`bit_width`
 
@@ -242,7 +242,7 @@ bit_width(8) = 4
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="countl_zero"></a>`countl_zero`
 
@@ -272,9 +272,9 @@ If `value` is zero, the number of bits in the type of `value`.
 
 int main()
 {
-    for (unsigned char result=0, i = 0; i < 9; i++)
+    for (unsigned char result = 0, i = 0; i < 9; i++)
     {
-        std::cout << "\ncountl_zero(" << std::bitset<8>(result) << ") = " << std::countl_zero(result);
+        std::cout << "\ncountl_zero(0b" << std::bitset<8>(result) << ") = " << std::countl_zero(result);
         result = result == 0 ? 1 : result * 2;
     }
     return 0;
@@ -282,20 +282,20 @@ int main()
 ```
 
 ```Output
-countl_zero(00000000) = 8
-countl_zero(00000001) = 7
-countl_zero(00000010) = 6
-countl_zero(00000100) = 5
-countl_zero(00001000) = 4
-countl_zero(00010000) = 3
-countl_zero(00100000) = 2
-countl_zero(01000000) = 1
-countl_zero(10000000) = 0
+countl_zero(0b00000000) = 8
+countl_zero(0b00000001) = 7
+countl_zero(0b00000010) = 6
+countl_zero(0b00000100) = 5
+countl_zero(0b00001000) = 4
+countl_zero(0b00010000) = 3
+countl_zero(0b00100000) = 2
+countl_zero(0b01000000) = 1
+countl_zero(0b10000000) = 0
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="countl_one"></a>`countl_one`
 
@@ -325,30 +325,30 @@ The number of consecutive bits set to one, starting from the most significant bi
 int main()
 {
     unsigned char value = 0;
-    for (unsigned char bit=128; bit > 0; bit /= 2 )
+        for (unsigned char bit = 128; bit > 0; bit /= 2)
     {
         value |= bit;
-        std::cout << "\ncountl_one(" << std::bitset<8>(value) << ") = "
-                      << std::countl_one(value);
+        std::cout << "\ncountl_one(0b" << std::bitset<8>(value) << ") = "
+            << std::countl_one(value);
     }
     return 0;
 }
 ```
 
 ```Output
-countl_one(10000000) = 1
-countl_one(11000000) = 2
-countl_one(11100000) = 3
-countl_one(11110000) = 4
-countl_one(11111000) = 5
-countl_one(11111100) = 6
-countl_one(11111110) = 7
-countl_one(11111111) = 8
+countl_one(0b10000000) = 1
+countl_one(0b11000000) = 2
+countl_one(0b11100000) = 3
+countl_one(0b11110000) = 4
+countl_one(0b11111000) = 5
+countl_one(0b11111100) = 6
+countl_one(0b11111110) = 7
+countl_one(0b11111111) = 8
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="countr_zero"></a>`countr_zero`
 
@@ -378,29 +378,31 @@ If `value` is zero, the number of bits in the type of `value`.
 
 int main()
 {
-    for (unsigned char i = 1; i < 128; i *= 2)
+    for (unsigned char result = 0, i = 0; i < 9; i++)
     {
-        std::cout << "\ncountr_zero(" << std::bitset<8>(i) << ") = "
-                      << std::countr_zero(i);
+        std::cout << "\ncountr_zero(0b" << std::bitset<8>(result) << ") = "
+            << std::countr_zero(result);
+        result = result == 0 ? 1 : result * 2;
     }
     return 0;
 }
 ```
 
 ```Output
-countr_zero(00000000) = 8
-countr_zero(00000001) = 0
-countr_zero(00000010) = 1
-countr_zero(00000100) = 2
-countr_zero(00001000) = 3
-countr_zero(00010000) = 4
-countr_zero(00100000) = 5
-countr_zero(01000000) = 6
+countr_zero(0b00000000) = 8
+countr_zero(0b00000001) = 0
+countr_zero(0b00000010) = 1
+countr_zero(0b00000100) = 2
+countr_zero(0b00001000) = 3
+countr_zero(0b00010000) = 4
+countr_zero(0b00100000) = 5
+countr_zero(0b01000000) = 6
+countr_zero(0b10000000) = 7
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="countr_one"></a>`countr_one`
 
@@ -433,7 +435,7 @@ int main()
     for (int bit = 1; bit <= 128; bit *= 2)
     {
         value |= bit;
-        std::cout << "\ncountr_one(" << std::bitset<8>(value) << ") = "
+        std::cout << "\ncountr_one(0b" << std::bitset<8>(value) << ") = "
                       << std::countr_one(value);
     }
     return 0;
@@ -441,19 +443,19 @@ int main()
 ```
 
 ```Output
-countr_one(00000001) = 1
-countr_one(00000011) = 2
-countr_one(00000111) = 3
-countr_one(00001111) = 4
-countr_one(00011111) = 5
-countr_one(00111111) = 6
-countr_one(01111111) = 7
-countr_one(11111111) = 8
+countr_one(0b00000001) = 1
+countr_one(0b00000011) = 2
+countr_one(0b00000111) = 3
+countr_one(0b00001111) = 4
+countr_one(0b00011111) = 5
+countr_one(0b00111111) = 6
+countr_one(0b01111111) = 7
+countr_one(0b11111111) = 8
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="has_single_bit"></a>`has_single_bit`
 
@@ -485,7 +487,7 @@ int main()
 {
     for (auto i = 0u; i < 10u; ++i)
     {
-        std::cout << "has_single_bit(" << std::bitset<4>(i) << ") = "
+        std::cout << "has_single_bit(0b" << std::bitset<4>(i) << ") = "
             << std::boolalpha << std::has_single_bit(i) << '\n';
     }
     return 0;
@@ -493,21 +495,21 @@ int main()
 ```
 
 ```Output
-has_single_bit(0000) = false
-has_single_bit(0001) = true
-has_single_bit(0010) = true
-has_single_bit(0011) = false
-has_single_bit(0100) = true
-has_single_bit(0101) = false
-has_single_bit(0110) = false
-has_single_bit(0111) = false
-has_single_bit(1000) = true
-has_single_bit(1001) = false
+has_single_bit(0b0000) = false
+has_single_bit(0b0001) = true
+has_single_bit(0b0010) = true
+has_single_bit(0b0011) = false
+has_single_bit(0b0100) = true
+has_single_bit(0b0101) = false
+has_single_bit(0b0110) = false
+has_single_bit(0b0111) = false
+has_single_bit(0b1000) = true
+has_single_bit(0b1001) = false
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="popcount"></a>`popcount`
 
@@ -538,7 +540,7 @@ int main()
 {
    for (unsigned char value = 0; value < 16; value++)
     {
-        std::cout << "\npopcount(" << std::bitset<4>(value) << ") = " 
+        std::cout << "\npopcount(0b" << std::bitset<4>(value) << ") = "
                       << std::popcount(value);
     }
     return 0;
@@ -546,27 +548,27 @@ int main()
 ```
 
 ```Output
-popcount(0000) = 0
-popcount(0001) = 1
-popcount(0010) = 1
-popcount(0011) = 2
-popcount(0100) = 1
-popcount(0101) = 2
-popcount(0110) = 2
-popcount(0111) = 3
-popcount(1000) = 1
-popcount(1001) = 2
-popcount(1010) = 2
-popcount(1011) = 3
-popcount(1100) = 2
-popcount(1101) = 3
-popcount(1110) = 3
-popcount(1111) = 4
+popcount(0b0000) = 0
+popcount(0b0001) = 1
+popcount(0b0010) = 1
+popcount(0b0011) = 2
+popcount(0b0100) = 1
+popcount(0b0101) = 2
+popcount(0b0110) = 2
+popcount(0b0111) = 3
+popcount(0b1000) = 1
+popcount(0b1001) = 2
+popcount(0b1010) = 2
+popcount(0b1011) = 3
+popcount(0b1100) = 2
+popcount(0b1101) = 3
+popcount(0b1110) = 3
+popcount(0b1111) = 4
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="rotl"></a>`rotl`
 
@@ -603,32 +605,32 @@ int main()
     unsigned char bits = 1;
     for (int i = 0; i < 8; ++i)
     {
-        std::cout << "rotl(" << std::bitset<8>(bits) << ", 1) = ";
+        std::cout << "rotl(0b" << std::bitset<8>(bits) << ", 1) = ";
         bits = std::rotl(bits, 1);
-        std::cout << std::bitset<8>(bits) << '\n';
+        std::cout << "0b" << std::bitset<8>(bits) << '\n';
     }
-    std::cout << "rotl(" << std::bitset<8>(bits) << ",-1) = ";
+    std::cout << "rotl(0b" << std::bitset<8>(bits) << ",-1) = ";
     bits = std::rotl(bits, -1);
-    std::cout << std::bitset<8>(bits);
+    std::cout << "0b" << std::bitset<8>(bits);
     return 0;
 }
 ```
 
 ```Output
-rotl(00000001, 1) = 00000010
-rotl(00000010, 1) = 00000100
-rotl(00000100, 1) = 00001000
-rotl(00001000, 1) = 00010000
-rotl(00010000, 1) = 00100000
-rotl(00100000, 1) = 01000000
-rotl(01000000, 1) = 10000000
-rotl(10000000, 1) = 00000001
-rotl(00000001,-1) = 10000000
+rotl(0b00000001, 1) = 0b00000010
+rotl(0b00000010, 1) = 0b00000100
+rotl(0b00000100, 1) = 0b00001000
+rotl(0b00001000, 1) = 0b00010000
+rotl(0b00010000, 1) = 0b00100000
+rotl(0b00100000, 1) = 0b01000000
+rotl(0b01000000, 1) = 0b10000000
+rotl(0b10000000, 1) = 0b00000001
+rotl(0b00000001,-1) = 0b10000000
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## <a name="rotr"></a>`rotr`
 
@@ -665,32 +667,32 @@ int main()
     unsigned char bits = 128;
     for (int i = 0; i < 8; ++i)
     {
-        std::cout << "rotr(" << std::bitset<8>(bits) << ", 1) = ";
+        std::cout << "rotr(0b" << std::bitset<8>(bits) << ", 1) = ";
         bits = std::rotr(bits, 1);
-        std::cout << std::bitset<8>(bits) << '\n';
+        std::cout << "0b" << std::bitset<8>(bits) << '\n';
     }
-    std::cout << "rotr(" << std::bitset<8>(bits) << ",-1) = ";
+    std::cout << "rotr(0b" << std::bitset<8>(bits) << ",-1) = ";
     bits = std::rotr(bits, -1);
-    std::cout << std::bitset<8>(bits);
+    std::cout << "0b" << std::bitset<8>(bits);
     return 0;
 }
 ```
 
 ```Output
-rotr(10000000, 1) = 01000000
-rotr(01000000, 1) = 00100000
-rotr(00100000, 1) = 00010000
-rotr(00010000, 1) = 00001000
-rotr(00001000, 1) = 00000100
-rotr(00000100, 1) = 00000010
-rotr(00000010, 1) = 00000001
-rotr(00000001, 1) = 10000000
-rotr(10000000,-1) = 00000001
+rotr(0b10000000, 1) = 0b01000000
+rotr(0b01000000, 1) = 0b00100000
+rotr(0b00100000, 1) = 0b00010000
+rotr(0b00010000, 1) = 0b00001000
+rotr(0b00001000, 1) = 0b00000100
+rotr(0b00000100, 1) = 0b00000010
+rotr(0b00000010, 1) = 0b00000001
+rotr(0b00000001, 1) = 0b10000000
+rotr(0b10000000,-1) = 0b00000001
 ```
 
 ### Remarks
 
-This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, and so on.
+This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
 ## Requirements
 
