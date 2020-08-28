@@ -44,7 +44,7 @@ The type of the value to convert.
 *from*\
 The value to convert.
 
-### Return Value
+### Return value
 
 An object of type `To`.
 
@@ -103,7 +103,7 @@ nodiscard constexpr T bit_ceil(T value);
 *value*\
 The unsigned integer value to test.
 
-### Return Value
+### Return value
 
  The smallest power of two greater than or equal to `value`.
 
@@ -153,7 +153,7 @@ nodiscard constexpr T bit_floor(T value) noexcept;
 *value*\
 The unsigned integer value to test.
 
-### Return Value
+### Return value
 
 The largest power of two that isn't greater than `value`.\
 If `value` is zero, returns zero.
@@ -206,7 +206,7 @@ nodiscard constexpr T bit_width(T value) noexcept;
 *value*\
 The unsigned integer value to test.
 
-### Return Value
+### Return value
 
 The number of bits needed to represent `value`.\
 If `value` is zero, returns zero.
@@ -258,7 +258,7 @@ nodiscard constexpr int countl_zero(T value) noexcept;
 *value*\
 The unsigned integer value to test.
 
-### Return Value
+### Return value
 
 The number of consecutive zero bits, starting from the most significant bit.\
 If `value` is zero, the number of bits in the type of `value`.
@@ -311,7 +311,7 @@ nodiscard constexpr int countl_one(T value) noexcept;
 *value*\
 The unsigned integer value to test.
 
-### Return Value
+### Return value
 
 The number of consecutive bits set to one, starting from the most significant bit.
 
@@ -364,7 +364,7 @@ nodiscard constexpr int countr_zero(T value) noexcept;
 *value*\
 The unsigned integer value to test.
 
-### Return Value
+### Return value
 
 The number of consecutive zero bits, starting from the least significant bit.\
 If `value` is zero, the number of bits in the type of `value`.
@@ -418,7 +418,7 @@ nodiscard constexpr int countr_one(T value) noexcept;
 *value*\
 The unsigned integer value to test.
 
-### Return Value
+### Return value
 
 The number of consecutive bits set to one, starting from the least significant bit.
 
