@@ -46,7 +46,7 @@ The value to convert.
 
 ### Return Value
 
-An object of type `To`
+An object of type `To`.
 
 Each bit in the result matches the corresponding bit in `from` unless there are padding bits in `To`, in which case those bits in the result are unspecified.
 
@@ -58,16 +58,17 @@ Each bit in the result matches the corresponding bit in `from` unless there are 
 
 int main()
 {
-    int i = 0b1000001;
-    char ch = std::bit_cast<int>(i);
-    std::cout << ch;
-    
+    float f = std::numeric_limits<float>::infinity();
+    int i = std::bit_cast<int>(f);
+    std::cout << "float f = " << std::hex << f
+              << "\nstd::bit_cat<int>(f) = " << std::hex << i << '\n';
     return 0;
 }
 ```
 
 ```Output
-A
+float f = inf
+std::bit_cat<int>(f) = 7f800000
 ```
 
 ### Remarks
@@ -110,6 +111,7 @@ The unsigned integer value to test.
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
@@ -160,6 +162,7 @@ If `value` is zero, returns zero.
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
@@ -265,20 +268,22 @@ If `value` is zero, returns the number of bits in the type of `value`.
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
 {
-    for (unsigned char i = 1; i < 128; i *= 2)
+    for (unsigned char result=0, i = 0; i < 9; i++)
     {
-        std::cout << "\ncountl_zero(" << std::bitset<8>(i)
-                      << ") = " << std::countl_zero(i);
+        std::cout << "\ncountl_zero(" << std::bitset<8>(result) << ") = " << std::countl_zero(result);
+        result = result == 0 ? 1 : result * 2;
     }
     return 0;
 }
 ```
 
 ```Output
+countl_zero(00000000) = 8
 countl_zero(00000001) = 7
 countl_zero(00000010) = 6
 countl_zero(00000100) = 5
@@ -286,6 +291,7 @@ countl_zero(00001000) = 4
 countl_zero(00010000) = 3
 countl_zero(00100000) = 2
 countl_zero(01000000) = 1
+countl_zero(10000000) = 0
 ```
 
 ### Remarks
@@ -314,6 +320,7 @@ The number of consecutive bits set to one, starting from the most significant bi
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
@@ -367,6 +374,7 @@ If `value` is zero, returns the number of bits in the type of `value`.
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
@@ -381,6 +389,7 @@ int main()
 ```
 
 ```Output
+countr_zero(00000000) = 8
 countr_zero(00000001) = 0
 countr_zero(00000010) = 1
 countr_zero(00000100) = 2
@@ -388,6 +397,7 @@ countr_zero(00001000) = 3
 countr_zero(00010000) = 4
 countr_zero(00100000) = 5
 countr_zero(01000000) = 6
+countr_zero(10000000) = 7
 ```
 
 ### Remarks
@@ -416,12 +426,13 @@ The number of consecutive bits set to one, starting from the least significant b
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
 {
     unsigned char value = 0;
-    for (unsigned char bit = 1; bit < 128; bit *= 2)
+    for (int bit = 1; bit <= 128; bit *= 2)
     {
         value |= bit;
         std::cout << "\ncountr_one(" << std::bitset<8>(value) << ") = "
@@ -439,6 +450,7 @@ countr_one(00001111) = 4
 countr_one(00011111) = 5
 countr_one(00111111) = 6
 countr_one(01111111) = 7
+countr_one(11111111) = 8
 ```
 
 ### Remarks
@@ -447,7 +459,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="has_single_bit"></a>`has_single_bit`
 
-Check if a value has only one bit set; that is, is the value a power of two.
+Check if a value has only one bit set; that is, is a power of two.
  
 ```cpp
 template <class T>
@@ -467,14 +479,16 @@ The unsigned integer value to test.
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
+#include <iomanip>
 
 int main()
 {
-   for (auto i = 0u; i < 10u; ++i) // has_single_bit() takes an unsigned integer type
+    for (auto i = 0u; i < 10u; ++i)
     {
-        std::cout << "\nhas_single_bit(" << std::bitset<4>(i) << ") = "
-            << (std::has_single_bit(i) ? "true" : "false");
+        std::cout << "has_single_bit(" << std::bitset<4>(i) << ") = "
+            << std::boolalpha << std::has_single_bit(i) << '\n';
     }
     return 0;
 }
@@ -519,6 +533,7 @@ The number of set bits in `value`.
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
@@ -582,6 +597,7 @@ If `s` is negative, does `rotr(value, -s)`. Bits that 'fall out' of the rightmos
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
@@ -639,6 +655,7 @@ If `s` is negative, does `rotl(value, -s)`. Bits that 'fall out' of the leftmost
 
 ```cpp
 #include <bit>
+#include <bitset>
 #include <iostream>
 
 int main()
