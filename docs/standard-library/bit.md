@@ -25,13 +25,13 @@ For example, there are functions to rotate bits, find the number of consecutive 
 ### Types
 
 | Type | Description |
-|--------|:---------|
+|--------|----------|
 | [endian](bit-enum.md) | Specifies the endianness of scalar types. |
 
 ### Functions
 
 | Function | Description |
-|-|:-|
+|-----|-----|
 |[bit_cast](bit-functions.md#bit_cast) | Reinterpret the object representation of one type to another. |
 |[bit_ceil](bit-functions.md#bit_ceil) | Find the smallest power of two greater than or equal to the given value. |
 |[bit_floor](bit-functions.md#bit_floor) | Find the largest integral power of two not greater than the given value. |

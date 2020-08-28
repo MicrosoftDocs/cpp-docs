@@ -19,7 +19,7 @@ The \<bit> header includes the following non-member template functions:
 |[countl_one](#countl_one) | Count the number of consecutive bits set to one, starting from the most significant bit. |
 |[countr_zero](#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
 |[countr_one](#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |
-|[has_single_bit](#has_single_bit) | Check if a value has only one bit set, that is, whether it is a power of two. |
+|[has_single_bit](#has_single_bit) | Check if a value has only one bit set (which means it is a power of two). |
 |[popcount](#popcount) | Count the number of bits set to one in an unsigned integer. |
 |[rotl](#rotl) | Compute the result of bitwise left rotation. |
 |[rotr](#rotr) | Compute the result of bitwise right rotation. |
@@ -77,7 +77,7 @@ Low-level code often needs to interpret an object of one type as another type. T
 
 Instead of using `reinterpret_cast`, or `memcpy()`, `bit_cast()` is a better way to make these conversions. It's better because:
 - `bit_cast()` is `constexpr`
-- `bit_cast()` requires that the types involved be trivially copyable and be the same size. This prevents problems with `reinterpret_cast` and `memcpy` because they could be used to inadvertantly, and incorrectly, convert non-trivially-copyable types. Also, `memcpy()` could be used to inadvertantly copy between types that aren't the same size, for example, a double (8 bytes) into an unsigned int (4 bytes) or vice versa.
+- `bit_cast()` requires the types to be trivially copyable and the same size. This prevents potential problems with using `reinterpret_cast` and `memcpy` because they could be used to inadvertently, and incorrectly, convert non-trivially-copyable types. Also, `memcpy()` could be used to inadvertently copy between types that aren't the same size. For example, a double (8 bytes) into an unsigned int (4 bytes), or the other way around.
 
 This overload only participates in overload resolution if:
 -  `sizeof(To) == sizeof(From)`
@@ -262,7 +262,7 @@ The unsigned integer value to test.
 ### Return Value
 
 The number of consecutive zero bits, starting from the most significant bit.\
-If `value` is zero, returns the number of bits in the type of `value`.
+If `value` is zero, the number of bits in the type of `value`.
 
 ### Example
 
@@ -368,7 +368,7 @@ The unsigned integer value to test.
 ### Return Value
 
 The number of consecutive zero bits, starting from the least significant bit.\
-If `value` is zero, returns the number of bits in the type of `value`.
+If `value` is zero, the number of bits in the type of `value`.
 
 ### Example
 
@@ -458,7 +458,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## <a name="has_single_bit"></a>`has_single_bit`
 
-Check if a value has only one bit set; that is, is a power of two.
+Check if a value has only one bit set (which means it is a power of two).
  
 ```cpp
 template <class T>
@@ -472,7 +472,7 @@ The unsigned integer value to test.
 
 ### Return value
 
-`true` if `value` has only one bit set; that is, is `value` is a power of two. Otherwise, `false`.
+`true` if `value` has only one bit set (which means it is a power of two). Otherwise, `false`.
 
 ### Example
 

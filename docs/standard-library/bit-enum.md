@@ -28,7 +28,7 @@ enum class endian {
 
 ## Remarks
 
-All native scalar types are little-endian for the platforms that Microsoft Visual C++ (MSVC) targets (x86, x64, ARM, ARM64). This is not a C++ standard guarantee but is rather the case for the platforms MSVC targets.
+All native scalar types are little-endian for the platforms that Microsoft Visual C++ targets (x86, x64, ARM, ARM64).
 
 ## Requirements
 
