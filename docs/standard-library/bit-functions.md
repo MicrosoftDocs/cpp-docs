@@ -119,8 +119,8 @@ int main()
     for (auto i = 0u; i < 6u; ++i) // bit_ceil() takes an unsigned integer type
     {
         auto nextClosestPowerOf2 = std::bit_ceil(i);
-        std::cout << "\nbit_ceil(" << std::bitset<4>(i) << ") = "
-                      << std::bitset<4>( nextClosestPowerOf2 );
+        std::cout << "\nbit_ceil(0b" << std::bitset<4>(i) << ") = "
+            << "0b" << std::bitset<4>(nextClosestPowerOf2);
     }
     return 0;
 }
