@@ -222,7 +222,7 @@ int main()
 {
     for (unsigned i=0u; i <= 8u; ++i)
     {
-        std::cout << "\nbit_width( " << i << ") = "
+        std::cout << "\nbit_width(" << i << ") = "
                       << std::bit_width(i);
     }
     return 0;
@@ -397,7 +397,6 @@ countr_zero(00001000) = 3
 countr_zero(00010000) = 4
 countr_zero(00100000) = 5
 countr_zero(01000000) = 6
-countr_zero(10000000) = 7
 ```
 
 ### Remarks
