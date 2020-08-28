@@ -18,7 +18,7 @@ For example, there are functions to rotate bits, find the number of consecutive 
 
 **Namespace:** std
 
-/std:c++latest is required
+`/std:c++latest` is required
 
 ## Members
 
@@ -40,7 +40,7 @@ For example, there are functions to rotate bits, find the number of consecutive 
 |[countl_one](bit-functions.md#countl_one) | Count the number of consecutive bits set to one, starting from the most significant bit. |
 |[countr_zero](bit-functions.md#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
 |[countr_one](bit-functions.md#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |
-|[has_single_bit](bit-functions.md#has_single_bit) | Check if a value has only one bit set. This is the same as testing whether a value is a power of two. |
+|[has_single_bit](bit-functions.md#has_single_bit) | Check if a value has only a single bit set to one. This is the same as testing whether a value is a power of two. |
 |[popcount](bit-functions.md#popcount) | Count the number of bits set to one. |
 |[rotl](bit-functions.md#rotl) | Compute the result of a bitwise left-rotation. |
 |[rotr](bit-functions.md#rotr) | Compute the result of a bitwise right-rotation. |

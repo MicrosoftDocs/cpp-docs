@@ -19,7 +19,7 @@ The \<bit> header includes the following non-member template functions:
 |[countl_one](#countl_one) | Count the number of consecutive bits set to one, starting from the most significant bit. |
 |[countr_zero](#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
 |[countr_one](#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |
-|[has_single_bit](#has_single_bit) | Check if a value has only one bit set. This is the same as testing whether a value is a power of two. |
+|[has_single_bit](#has_single_bit) | Check if a value has only a single bit set to one. This is the same as testing whether a value is a power of two. |
 |[popcount](#popcount) | Count the number of bits set to one. |
 |[rotl](#rotl) | Compute the result of a bitwise left rotation. |
 |[rotr](#rotr) | Compute the result of a bitwise right rotation. |
@@ -699,7 +699,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 **Namespace:** std
 
-/std:c++latest is required
+`/std:c++latest` is required
 
 ## See also
 

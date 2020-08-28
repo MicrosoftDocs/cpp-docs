@@ -36,7 +36,7 @@ All native scalar types are little-endian for the platforms that Microsoft Visua
 
 **Namespace:** std
 
-/std:c++latest is required
+`/std:c++latest` is required
 
 ## See also
 
