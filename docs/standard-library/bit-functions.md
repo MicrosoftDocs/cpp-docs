@@ -30,7 +30,7 @@ Copy a bit pattern from an object of type `From` to a new object of type `To`.
 
 ```cpp
 template <class To, class From>
-nodiscard constexpr To bit_cast(const From& from) noexcept;
+[[nodiscard]] constexpr To bit_cast(const From& from) noexcept;
 ```
 
 ### Parameters
@@ -83,7 +83,7 @@ This overload only participates in overload resolution if:
 -  `sizeof(To) == sizeof(From)`
 - `To` and `From` are [is_trivially_copyable](https://docs.microsoft.com/cpp/standard-library/is-trivially-copyable-class?view=vs-2019`).
 
-This function template is `constexpr` if and only if `To`, `From`, and their subobjects are:
+This function template is `constexpr` if and only if `To`, `From`, and the types of their subobjects are:
 - not a union or pointer type
 - not a pointer to member type
 - not volatile-qualified
@@ -95,7 +95,7 @@ Find the smallest power of two greater than or equal to a value. For example, gi
 
 ```cpp
 template<class T>
-nodiscard constexpr T bit_ceil(T value);
+[[nodiscard]] constexpr T bit_ceil(T value);
 ```
 
 ### Parameters
@@ -145,7 +145,7 @@ Find the largest power of two not greater than a value. For example, given `5`, 
 
 ```cpp
 template< class T >
-nodiscard constexpr T bit_floor(T value) noexcept;
+[[nodiscard]] constexpr T bit_floor(T value) noexcept;
 ```
 
 ### Parameters
@@ -198,7 +198,7 @@ For example, given 5 (0b101), returns 3 because it takes 3 binary bits to expres
 
 ```cpp
 template<class T>
-nodiscard constexpr T bit_width(T value) noexcept;
+[[nodiscard]] constexpr T bit_width(T value) noexcept;
 ```
 
 ### Parameters
@@ -250,7 +250,7 @@ Count the number of consecutive bits set to zero, starting from the most signifi
 
 ```cpp
 template<class T>
-nodiscard constexpr int countl_zero(T value) noexcept;
+[[nodiscard]] constexpr int countl_zero(T value) noexcept;
 ```
 
 ### Parameters
@@ -303,7 +303,7 @@ Count the number of consecutive bits set to one, starting from the most signific
 
 ```cpp
 template<class T>
-nodiscard constexpr int countl_one(T value) noexcept;
+[[nodiscard]] constexpr int countl_one(T value) noexcept;
 ```
 
 ### Parameters
@@ -356,7 +356,7 @@ Count the number of consecutive bits set to zero, starting from the least signif
 
 ```cpp
 template<class T>
-nodiscard constexpr int countr_zero(T value) noexcept;
+[[nodiscard]] constexpr int countr_zero(T value) noexcept;
 ```
 
 ### Parameters
@@ -410,7 +410,7 @@ Count the number of consecutive bits set to one, starting from the least signifi
 
 ```cpp
 template<class T>
-nodiscard constexpr int countr_one(T value) noexcept;
+[[nodiscard]] constexpr int countr_one(T value) noexcept;
 ```
 
 ### Parameters
@@ -463,7 +463,7 @@ Check if a value has only one bit set.This is the same as testing whether a valu
  
 ```cpp
 template <class T>
-nodiscard constexpr bool has_single_bit(T value) noexcept;
+[[nodiscard]] constexpr bool has_single_bit(T value) noexcept;
 ```
 
 ### Parameters
@@ -517,7 +517,7 @@ Count the number of bits set to one in an unsigned integer value.
  
 ```cpp
 template<class T>
-nodiscard constexpr int popcount(T value) noexcept;
+[[nodiscard]] constexpr int popcount(T value) noexcept;
 ```
 
 ### Parameters
@@ -576,7 +576,7 @@ Rotates the bits of  an unsigned integer value left the specified number of time
  
 ```cpp
 template<class T>
-nodiscard constexpr T rotl(T value, int s) noexcept;
+[[nodiscard]] constexpr T rotl(T value, int s) noexcept;
 ```
 
 ### Parameters
@@ -638,7 +638,7 @@ Rotates the bits of `value` right the specified number of times. Bits that 'fall
  
 ```cpp
 template<class T>
-nodiscard constexpr T rotr(T value, int s) noexcept;
+[[nodiscard]] constexpr T rotr(T value, int s) noexcept;
 ```
 
 ### Parameters
