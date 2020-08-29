@@ -12,7 +12,7 @@ ms.assetid: 767c83c2-9e4b-4f9e-88c8-02128ba563f4
 
 ## Remarks
 
-A class template specialization wasn't defined before it was used in a return type. Anything that instantiates the class resolves C4686; declaring an instance or accessing a member (for example, `C<int>::some_member_function`) are also options.
+A class template specialization wasn't defined before it was used in a return type. Anything that instantiates the class resolves C4686; declaring an instance or accessing a member (for example, `C<int>::some_member`) are also options.
 
 This warning is off by default. For more information, see [Compiler warnings that are off by default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
