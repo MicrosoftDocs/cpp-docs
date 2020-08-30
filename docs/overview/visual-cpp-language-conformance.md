@@ -176,6 +176,7 @@ For details on Visual Studio 2017 or Visual Studio 2019 MSVC conformance improve
 | &nbsp;&nbsp;[`P1975R0 Fixing the wording of parenthesized aggregate-initialization`](https://wg21.link/P1975R0) | No |
 | &nbsp;&nbsp;[`P1979R0 Resolution to US086`](https://wg21.link/P1979R0) | No |
 | &nbsp;&nbsp;[`P1980R0 CA096: Declaration matching for non-dependent requires-clauses`](https://wg21.link/P1980R0) | No |
+| &nbsp;&nbsp;[`P2082R1 Fixing CTAD for aggregates`](https://wg21.link/P2082R1) | No |
 
 ## Standard library features
 
