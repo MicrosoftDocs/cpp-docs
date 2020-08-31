@@ -120,7 +120,7 @@ int main()
     {
         auto nextClosestPowerOf2 = std::bit_ceil(i);
         std::cout << "\nbit_ceil(0b" << std::bitset<4>(i) << ") = "
-            << "0b" << std::bitset<4>(nextClosestPowerOf2);
+                  << "0b" << std::bitset<4>(nextClosestPowerOf2);
     }
     return 0;
 }
@@ -171,7 +171,7 @@ int main()
     {
         auto previousPowerOf2 = std::bit_floor(i);
         std::cout << "\nbit_floor(0b" << std::bitset<4>(i) << ") = 0b"
-            << std::bitset<4>(previousPowerOf2);
+                  << std::bitset<4>(previousPowerOf2);
     }
     return 0;
 }
@@ -222,7 +222,7 @@ int main()
     for (unsigned i=0u; i <= 8u; ++i)
     {
         std::cout << "\nbit_width(" << i << ") = "
-                      << std::bit_width(i);
+                  << std::bit_width(i);
     }
     return 0;
 }
@@ -325,11 +325,11 @@ The number of consecutive bits set to one, starting from the most significant bi
 int main()
 {
     unsigned char value = 0;
-        for (unsigned char bit = 128; bit > 0; bit /= 2)
+    for (unsigned char bit = 128; bit > 0; bit /= 2)
     {
         value |= bit;
         std::cout << "\ncountl_one(0b" << std::bitset<8>(value) << ") = "
-            << std::countl_one(value);
+                  << std::countl_one(value);
     }
     return 0;
 }
@@ -381,7 +381,7 @@ int main()
     for (unsigned char result = 0, i = 0; i < 9; i++)
     {
         std::cout << "\ncountr_zero(0b" << std::bitset<8>(result) << ") = "
-            << std::countr_zero(result);
+                  << std::countr_zero(result);
         result = result == 0 ? 1 : result * 2;
     }
     return 0;
@@ -436,7 +436,7 @@ int main()
     {
         value |= bit;
         std::cout << "\ncountr_one(0b" << std::bitset<8>(value) << ") = "
-                      << std::countr_one(value);
+                  << std::countr_one(value);
     }
     return 0;
 }
@@ -488,7 +488,7 @@ int main()
     for (auto i = 0u; i < 10u; ++i)
     {
         std::cout << "has_single_bit(0b" << std::bitset<4>(i) << ") = "
-            << std::boolalpha << std::has_single_bit(i) << '\n';
+                  << std::boolalpha << std::has_single_bit(i) << '\n';
     }
     return 0;
 }
@@ -541,7 +541,7 @@ int main()
    for (unsigned char value = 0; value < 16; value++)
     {
         std::cout << "\npopcount(0b" << std::bitset<4>(value) << ") = "
-                      << std::popcount(value);
+                  << std::popcount(value);
     }
     return 0;
 }
